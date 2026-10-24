@@ -13,6 +13,7 @@ if (!fs.existsSync(src) && process.env.VERCEL && process.env.VERCEL_GIT_PROVIDER
   try {
     execFileSync('git', ['clone', '--depth', '1', '--branch', 'media', '--single-branch', `https://${auth}github.com/${repo}.git`, src], {
       stdio: ['ignore', 'inherit', 'inherit'],
+      env: { ...process.env, GIT_TERMINAL_PROMPT: '0' },
     });
   } catch {
     console.log(`could not fetch the media branch of ${repo}; building without media`);

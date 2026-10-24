@@ -1,5 +1,6 @@
 # Crawl the channel → commit data/ to main and media to the orphan "media" branch → build → deploy to GitHub Pages.
 # One-time setup: Settings → Pages → Source: "GitHub Actions".
+# Vercel (optional) deploys on its own from the data commits this pushes to main; see README.
 name: site
 
 on:
