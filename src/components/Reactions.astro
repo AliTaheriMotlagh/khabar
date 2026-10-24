@@ -1,33 +1,14 @@
 ---
 // Guest reactions (no signup). Counts and the reader's own picks are filled in by src/scripts/social.ts.
 import { REACTIONS } from '../lib/reactions';
-interface Props { id: number; variant?: 'full' | 'mini' }
-const { id, variant = 'full' } = Astro.props;
+interface Props { id: number }
+const { id } = Astro.props;
 ---
-{
-  variant === 'mini' ? (
-    <div class="reactions mini" data-reactions={id}>
-      <button class="react-toggle" type="button" aria-expanded="false" aria-label="واکنش به این خبر" data-react-toggle>
-        <span class="react-sum" data-react-sum>
-          <span class="react-add">🙂</span>
-        </span>
-        <b data-react-total></b>
-      </button>
-      <div class="react-pop" role="group" aria-label="واکنش‌ها">
-        {REACTIONS.map((r) => (
-          <button type="button" data-react={r.key} aria-pressed="false" title={r.label} aria-label={r.label}>{r.emoji}</button>
-        ))}
-      </div>
-    </div>
-  ) : (
-    <div class="reactions full" data-reactions={id} role="group" aria-label="واکنش شما به این خبر">
-      {REACTIONS.map((r) => (
-        <button type="button" data-react={r.key} aria-pressed="false" title={r.label}>
-          <span class="emo">{r.emoji}</span>
-          <span class="lbl">{r.label}</span>
-          <b data-count={r.key}></b>
-        </button>
-      ))}
-    </div>
-  )
-}
+<div class="reactions" data-reactions={id} role="group" aria-label="واکنش شما به این خبر">
+  {REACTIONS.map((r) => (
+    <button type="button" data-react={r.key} aria-pressed="false" title={r.label} aria-label={r.label}>
+      <span class="emo">{r.emoji}</span>
+      <b data-count={r.key}></b>
+    </button>
+  ))}
+</div>

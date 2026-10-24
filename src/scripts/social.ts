@@ -1,7 +1,6 @@
 // Guest features backed by the /api functions: reactions, comments, live presence & visits, chat, leaderboard.
 // If the API is missing or unreachable, these parts stay hidden and the rest of the site works as usual.
 import { SITE } from '../site';
-import { REACTIONS } from '../lib/reactions';
 import { $, $$, compact, esc, fmtNum, guest, hue, initial, myName, relTime, setMyName, store, toast } from './core';
 import { award } from './game';
 
@@ -80,13 +79,6 @@ function paintReactions(id: string) {
       const n = $('[data-count]', b);
       if (n) n.textContent = c[k] ? compact(c[k]) : '';
     });
-    if (box.classList.contains('mini')) {
-      const top = REACTIONS.filter((r) => c[r.key]).sort((a, b) => c[b.key] - c[a.key]).slice(0, 3);
-      const total = Object.values(c).reduce((a, b) => a + b, 0);
-      $('[data-react-sum]', box)!.innerHTML = top.length ? top.map((r) => `<span>${r.emoji}</span>`).join('') : '<span class="react-add">🙂</span>';
-      $('[data-react-total]', box)!.textContent = total ? compact(total) : '';
-      box.classList.toggle('mine', my.length > 0);
-    }
   });
 }
 
@@ -124,8 +116,6 @@ async function react(btn: HTMLButtonElement) {
     btn.classList.add('pop');
     award('react');
   }
-  box.querySelector('[data-react-toggle]')?.setAttribute('aria-expanded', 'false');
-  box.classList.remove('open');
   try {
     const { count } = await api<{ count: number }>('react', { method: 'POST', body: { post: id, guest: guest(), reaction: key, on } });
     counts[id][key] = count;
@@ -260,7 +250,7 @@ function renderChat(stick = false) {
     ? '<li class="chat-empty">در حال بارگذاری…</li>'
     : all.length
       ? [...all].reverse().map((m) => msgHtml(m, own.includes(m.id) || !!(m as Outgoing).sending)).join('')
-      : '<li class="chat-empty">هنوز پیامی نیست. سلام کنید! 👋</li>';
+      : '<li class="chat-empty">هنوز پیامی نیست. بدون ثبت‌نام سلام کنید 👋</li>';
   if (atBottom) list.scrollTop = list.scrollHeight;
   if (room?.[0]) {
     store.set('chatSeen', room[0].id);
@@ -290,18 +280,37 @@ function initChat() {
   const form = $<HTMLFormElement>('[data-chat-form]', dialog)!;
   const nameInput = form.elements.namedItem('name') as HTMLInputElement;
   const textInput = form.elements.namedItem('text') as HTMLInputElement;
+  // Phones: the keyboard covers the bottom of the screen without resizing the page (iOS), so the chat fits itself to
+  // the part still visible and the message box stays right above the keyboard.
+  const list = $('[data-chat-list]', dialog)!;
+  const vv = window.visualViewport;
+  const fit = () => {
+    if (!vv) return;
+    const atBottom = list.scrollHeight - list.scrollTop - list.clientHeight < 80;
+    dialog.style.height = `${vv.height}px`;
+    dialog.style.top = `${vv.offsetTop}px`;
+    if (atBottom) list.scrollTop = list.scrollHeight;
+  };
   $$('[data-open-chat]').forEach((b) =>
     b.addEventListener('click', () => {
       nameInput.value = myName();
       nameInput.hidden = !!myName();
       dialog.showModal();
+      fit();
+      vv?.addEventListener('resize', fit);
+      vv?.addEventListener('scroll', fit);
       renderChat(true);
       quietPolls = 0;
       pollChat();
-      setTimeout(() => textInput.focus(), 50);
+      // Not on phones: the keyboard would cover half the room before anyone asked to type.
+      if (matchMedia('(hover: hover)').matches) setTimeout(() => textInput.focus(), 50);
     }),
   );
-  dialog.addEventListener('close', () => clearTimeout(chatTimer));
+  dialog.addEventListener('close', () => {
+    clearTimeout(chatTimer);
+    vv?.removeEventListener('resize', fit);
+    vv?.removeEventListener('scroll', fit);
+  });
   // Tapping send must not take the focus off the text box: on phones that would close the keyboard after every message.
   $('button[type=submit]', form)?.addEventListener('pointerdown', (e) => e.preventDefault());
   form.addEventListener('submit', async (e) => {
@@ -362,14 +371,7 @@ async function loadLeaders() {
 document.addEventListener('click', (e) => {
   const t = e.target as Element;
   const btn = t.closest<HTMLButtonElement>('[data-react]');
-  if (btn) return void react(btn);
-  const toggle = t.closest<HTMLButtonElement>('[data-react-toggle]');
-  $$('.reactions.mini.open').forEach((b) => b !== toggle?.parentElement && (b.classList.remove('open'), $('[data-react-toggle]', b)?.setAttribute('aria-expanded', 'false')));
-  if (toggle) {
-    const box = toggle.parentElement!;
-    const open = box.classList.toggle('open');
-    toggle.setAttribute('aria-expanded', String(open));
-  }
+  if (btn) react(btn);
 });
 
 export function initSocial() {

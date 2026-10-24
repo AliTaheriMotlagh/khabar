@@ -21,11 +21,6 @@ const next = posts.length > SITE.pageSize ? url('page/2/') : null;
   <div class="container">
     <h1 class="sr-only">{SITE.name} — {SITE.tagline}</h1>
     <TodayRail />
-    <div class="welcome" data-welcome hidden>
-      <Icon name="sparkles" />
-      <span data-welcome-text></span>
-      <a class="btn sm" href="#new-divider" data-welcome-jump hidden>رفتن به جایی که بودید</a>
-    </div>
     {
       posts.length ? (
         <div class="layout">

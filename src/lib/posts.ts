@@ -175,6 +175,15 @@ export function todayPosts(min = 8, max = 40): Post[] {
   const day = stories.filter((p) => newest - Date.parse(p.date) < 864e5);
   return (day.length >= min ? day : stories.slice(0, min)).slice(0, max);
 }
+/** What the player can show: the last three days, so "unread" still has stories after a day away. The browser picks
+ *  today's or the reader's unread ones (src/scripts/player.ts). */
+export function recentPosts(max = 60): Post[] {
+  const stories = getStories();
+  const newest = stories[0] ? Date.parse(stories[0].date) : 0;
+  const today = todayPosts();
+  const recent = stories.filter((p) => newest - Date.parse(p.date) < 3 * 864e5).slice(0, max);
+  return recent.length >= today.length ? recent : today;
+}
 /** The channel's Persian morning summary (posted ~07:36 Tehran), the home page's brief. */
 export const latestDigest = () => getPosts().find((p) => p.kind === 'digest') ?? null;
 

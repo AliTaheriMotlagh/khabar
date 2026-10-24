@@ -1,15 +1,21 @@
 ---
-// The day's stories as a row of circles (home): the first plays them all, the rest start the player at that story.
-// Circles carry no caption, only the picture; the headline is the link's accessible name.
-// Circles of stories already read turn grey (src/scripts/app.ts).
+// Stories on the home page, as a row of circles: "unread" (only what the reader hasn't opened or watched, shown by
+// src/scripts/app.ts when there is some), "today" (the day's news), then each of today's stories on its own.
+// Story circles carry no caption, only the picture; the headline is the link's accessible name.
+// Circles of stories already read or watched turn grey.
 import Icon from './Icon.astro';
-import { faNum, sized, todayPosts, url } from '../lib/posts';
+import { faNum, recentPosts, sized, todayPosts, url } from '../lib/posts';
 const posts = todayPosts();
+const recent = recentPosts();
 ---
 {
   posts.length > 0 && (
-    <nav class="rail" aria-label="امروز در یک نگاه" data-rail>
-      <a class="all" href={url('today/')} aria-label={`پخش همه‌ی ${faNum(posts.length)} خبر امروز`}>
+    <nav class="rail" aria-label="استوری خبرها" data-rail data-recent={recent.map((p) => p.id).join(',')}>
+      <a class="story-new" href={url('today/?s=new')} data-rail-new hidden>
+        <span class="ring"><span><Icon name="sparkles" /></span></span>
+        <small>نخوانده · <span data-rail-new-count></span></small>
+      </a>
+      <a class="story-day" href={url('today/')} aria-label={`پخش همه‌ی ${faNum(posts.length)} خبر امروز`}>
         <span class="ring"><span><Icon name="play" /></span></span>
         <small>امروز · {faNum(posts.length)}</small>
       </a>

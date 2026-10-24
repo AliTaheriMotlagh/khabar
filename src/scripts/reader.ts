@@ -45,7 +45,8 @@ let lastRatio = 0;
 export function readerProgress(ratio: number) {
   lastRatio = ratio;
   if (!timeLeft) return;
-  timeLeft.textContent = ratio > 0.97 ? 'تا آخر خواندید' : ratio < 0.03 ? `${fmtNum(minutes)} دقیقه مطالعه` : `${fmtNum(Math.max(1, Math.ceil(minutes * (1 - ratio))))} دقیقه مانده`;
+  // Blank at the top: the meta line above already says how long the story is.
+  timeLeft.textContent = ratio > 0.97 ? 'تا آخر خواندید' : ratio < 0.03 ? '' : `${fmtNum(Math.max(1, Math.ceil(minutes * (1 - ratio))))} دقیقه مانده`;
 }
 
 // ---------- continue where you left off ----------
@@ -159,7 +160,7 @@ async function shareQuote() {
   try {
     await navigator.clipboard.writeText(`${text}\n${url}`);
     toast('نقل‌قول و پیوند کپی شد');
-    award('share', { quiet: true });
+    award('share');
   } catch {
     prompt('کپی کنید:', `${text}\n${url}`);
   }

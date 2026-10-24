@@ -1,6 +1,6 @@
 // Client behaviour for every page. Everything is progressive: the site works without JS.
-import { $, $$, BASE, PAGE_CACHE, getHistory, getSaved, relTime, store, toast, type Entry } from './core';
-import { award, markNew, recordRead, renderMe } from './game';
+import { $, $$, BASE, PAGE_CACHE, getSaved, relTime, store, toast, type Entry } from './core';
+import { UNREAD_MAX, award, markNew, recordRead, renderMe, unreadTest } from './game';
 import { watchMedia } from './media';
 import { initPeek, peek } from './peek';
 import { initReader, readerProgress, stepSize, toggleFocus } from './reader';
@@ -118,7 +118,7 @@ function toggleSave(btn: HTMLElement) {
     const d = btn.dataset;
     list.unshift({ id, title: d.title!, href: d.href!, cover: d.cover || undefined, date: d.date });
     caches?.open(PAGE_CACHE).then((c) => c.add(d.href!)).catch(() => {});
-    award('save', { quiet: true });
+    award('save');
     toast('ذخیره شد — حتی آفلاین هم در دسترس است');
   }
   store.set('saved', list);
@@ -144,7 +144,7 @@ async function copy(text: string) {
   try {
     await navigator.clipboard.writeText(text);
     toast('پیوند کپی شد');
-    award('share', { quiet: true });
+    award('share');
   } catch {
     prompt('پیوند را کپی کنید:', text);
   }
@@ -181,7 +181,6 @@ document.addEventListener('click', (e) => {
   const img = t.closest<HTMLImageElement>('.gallery img[data-zoom]');
   if (img) return zoom(img);
   if (t.closest('[data-to-top]')) return scrollTo({ top: 0, behavior: 'smooth' });
-  if (t.closest('.share-bar a[target=_blank]')) award('share', { quiet: true });
   const more = t.closest<HTMLAnchorElement>('[data-load-more]');
   if (more) {
     e.preventDefault();
@@ -318,6 +317,24 @@ if ('serviceWorker' in navigator && location.hostname !== 'localhost') {
   addEventListener('load', () => navigator.serviceWorker.register(`${BASE}/sw.js`).catch(() => {}));
 }
 
+// ---------- story rail (home): grey out what's done, offer the unread story when there is some ----------
+function renderRail() {
+  const rail = $('[data-rail]');
+  if (!rail) return;
+  const unread = unreadTest();
+  $$('[data-id]', rail).forEach((a) => a.classList.toggle('seen', !unread(Number(a.dataset.id))));
+  const n = Math.min(UNREAD_MAX, (rail.dataset.recent ?? '').split(',').filter((id) => id && unread(Number(id))).length);
+  const link = $('[data-rail-new]', rail)!;
+  const appeared = link.hidden && n > 0;
+  link.hidden = !n;
+  // Scroll snapping keeps the circle that used to be first in view, which would push the new one off screen.
+  if (appeared) rail.scrollLeft = 0;
+  $('[data-rail-new-count]', link)!.textContent = n.toLocaleString('fa-IR');
+  link.setAttribute('aria-label', `${n.toLocaleString('fa-IR')} خبر نخوانده، پشت سر هم`);
+}
+// Coming back from the player (bfcache) shows what was just watched.
+addEventListener('pageshow', (e) => e.persisted && renderRail());
+
 // ---------- boot ----------
 applySettings();
 renderDates();
@@ -329,8 +346,7 @@ if (article) {
   recordRead(entry, (d.tags ?? '').split(',').filter(Boolean));
 }
 markNew();
-const readIds = new Set(getHistory().map((e) => e.id));
-$$('[data-rail] [data-id]').forEach((a) => a.classList.toggle('seen', readIds.has(Number(a.dataset.id))));
+renderRail();
 watchMedia();
 initSocial();
 initPeek();

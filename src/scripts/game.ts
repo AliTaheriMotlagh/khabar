@@ -66,8 +66,8 @@ function burst() {
   setTimeout(() => el.remove(), 1200);
 }
 
-/** Add points for an action; announces level-ups and new badges. */
-export function award(action: Action, extra?: { tags?: string[]; quiet?: boolean }) {
+/** Add points for an action. Only milestones speak up: level-ups and new badges, never each point. */
+export function award(action: Action, extra?: { tags?: string[] }) {
   const s = stats();
   const before = level(s.xp).n;
   s.xp += POINTS[action];
@@ -89,8 +89,6 @@ export function award(action: Action, extra?: { tags?: string[]; quiet?: boolean
   } else if (after.n > before) {
     toast(`🎉 رسیدید به سطح ${fmtNum(after.n)}: ${after.title}`, 'reward');
     burst();
-  } else if (action !== 'read' && !extra?.quiet) {
-    toast(`+${fmtNum(POINTS[action])} امتیاز`, 'reward');
   }
   renderMe();
 }
@@ -108,8 +106,8 @@ function checkIn() {
   save(s);
   if (first) return;
   setTimeout(() => {
-    award('daily', { quiet: true });
-    toast(s.streak > 1 ? `🔥 ${fmtNum(s.streak)} روز پشت‌سرهم! +${fmtNum(POINTS.daily)} امتیاز روزانه` : `☀️ امتیاز روزانه: +${fmtNum(POINTS.daily)}`, 'reward');
+    award('daily');
+    if (s.streak > 1) toast(`🔥 ${fmtNum(s.streak)} روز پشت‌سرهم`, 'reward');
   }, 1500);
 }
 
@@ -180,6 +178,21 @@ export function recordRead(entry: Entry, tags: string[]) {
   clearNew(entry.id);
 }
 
+// ---------- seen in the player ----------
+/** A story watched in the player leaves the "unread" story and loses its "new" mark; only opening it counts as a read. */
+export function markSeen(id: number) {
+  const seen = store.get<number[]>('seen', []);
+  if (!seen.includes(id)) store.set('seen', [...seen, id].slice(-500));
+  clearNew(id);
+}
+/** The unread story plays at most this many (the newest), so its progress bars stay readable. */
+export const UNREAD_MAX = 20;
+/** Not opened and not watched in the player. */
+export function unreadTest() {
+  const done = new Set([...store.get<number[]>('read', []), ...store.get<number[]>('seen', [])]);
+  return (id: number) => !done.has(id);
+}
+
 // ---------- new since the last visit ----------
 type Catchup = { total: number; done: number };
 
@@ -198,9 +211,9 @@ function clearNew(id: number) {
   }
 }
 
-/** Marks unread new stories on the page, shows the welcome-back banner, and remembers what was seen. */
+/** Marks unread new stories on the page and remembers what was seen. */
 export function markNew() {
-  const items = $$('[data-tl] .tl-item[data-id], .lead [data-id]');
+  const items = $$('[data-tl] .tl-item[data-id], .lead-main[data-id]');
   if (!items.length) return;
   const ids = items.map((el) => Number(el.dataset.id));
   const maxId = Math.max(...ids);
@@ -234,20 +247,6 @@ export function markNew() {
     const firstOld = $$('[data-tl] .tl-item[data-id]').find((el) => Number(el.dataset.id) <= lastSeen);
     if (firstOld && firstOld !== $('[data-tl] .tl-item[data-id]')) {
       firstOld.insertAdjacentHTML('beforebegin', '<li class="new-divider" id="new-divider" role="separator"><span>تا اینجا تازه بود · از اینجا را قبلاً دیده‌اید</span></li>');
-    }
-  }
-
-  const banner = $('[data-welcome]');
-  if (banner) {
-    const text = $('[data-welcome-text]', banner)!;
-    // Only for returning readers, and one quiet line: a first visit starts straight with the news.
-    if (lastSeen && pending.length) {
-      text.innerHTML = `<b>${fmtNum(pending.length)}</b> خبر تازه از آخرین بازدیدتان`;
-      banner.hidden = false;
-      const jump = $<HTMLAnchorElement>('[data-welcome-jump]', banner);
-      if (jump) jump.hidden = !$('#new-divider');
-    } else {
-      banner.hidden = true;
     }
   }
 

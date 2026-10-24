@@ -1,21 +1,42 @@
-// The daily player (/today/): the day's stories one after another, like a video. Each scene stays for its own
-// data-seconds, or with narration on, for as long as the voice takes. Tap the left side for the next story and the
-// right side for the previous one (it's a right-to-left page), hold to pause, swipe down or Esc to leave.
+// The story player (/today/): stories one after another, like a video. Each scene stays for its own data-seconds,
+// or with narration on, for as long as the voice takes. Tap the left side for the next story and the right side for
+// the previous one (it's a right-to-left page), hold to pause, swipe down or Esc to leave.
+// Two stories: the day's news (/today/), or only what the reader hasn't opened or watched yet (/today/?s=new).
 import { $, $$, fmtNum, store, toast } from './core';
+import { UNREAD_MAX, markSeen, unreadTest } from './game';
 import { Speaker, canSpeakPersian, type Line } from './speech';
 
 const player = $('[data-player]');
 if (player) init(player);
 
 function init(player: HTMLElement) {
-  const scenes = $$('.pl-scene', player);
-  const bars = $$('[data-pl-bars] > span', player);
+  // The page carries three days of stories; keep the ones this story is about.
+  const unreadOnly = new URLSearchParams(location.search).get('s') === 'new';
+  const unread = unreadTest();
+  const keep = $$('.pl-scene', player).filter((s) => (unreadOnly ? unread(Number(s.dataset.id)) : s.hasAttribute('data-in-today')));
+  const scenes = unreadOnly ? keep.slice(0, UNREAD_MAX) : keep;
+  $$('.pl-scene', player).forEach((s) => !scenes.includes(s) && s.remove());
+  const barBox = $('[data-pl-bars]', player)!;
+  barBox.innerHTML = scenes.map(() => '<span><i></i></span>').join('');
+  const bars = $$(':scope > span', barBox);
   const end = $('[data-pl-end]', player)!;
   const backdrop = $('[data-pl-backdrop]', player)!;
   const pos = $('[data-pl-pos]', player)!;
   const pauseBtn = $('[data-pl-pause]', player)!;
   const soundBtn = $('[data-pl-sound]', player)!;
-  if (!scenes.length) return;
+  $('[data-pl-count]', player)!.textContent = fmtNum(scenes.length);
+  $('[data-pl-total]', player)!.textContent = fmtNum(scenes.length);
+  if (unreadOnly) {
+    $('[data-pl-name]', player)!.textContent = 'تازه‌ها برای شما';
+    $('[data-pl-end-title]', player)!.textContent = scenes.length ? 'همه‌ی خبرهای تازه را دیدید' : 'خبر نخوانده‌ای نمانده';
+    $('[data-pl-today]', player)!.hidden = false;
+  }
+  if (!scenes.length) {
+    end.hidden = false;
+    $('[data-pl-end-text]', player)!.hidden = true;
+    $('[data-pl-restart]', player)!.hidden = true;
+    return;
+  }
 
   let at = 0;
   let paused = false;
@@ -107,6 +128,7 @@ function init(player: HTMLElement) {
     if (v && !paused) v.play().catch(() => {});
     backdrop.style.backgroundImage = still(scenes[at]) ? `url("${still(scenes[at])}")` : '';
     pos.textContent = fmtNum(at + 1);
+    markSeen(Number(scenes[at].dataset.id));
     history.replaceState(history.state, '', `#${scenes[at].dataset.id}`);
     speaker.stop();
     speak();
@@ -123,7 +145,7 @@ function init(player: HTMLElement) {
     bars.forEach((b) => b.style.setProperty('--p', '1'));
     end.hidden = false;
     at = scenes.length;
-    history.replaceState(history.state, '', location.pathname);
+    history.replaceState(history.state, '', location.pathname + location.search);
   }
 
   function setPaused(on: boolean) {
