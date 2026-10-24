@@ -1,0 +1,59 @@
+{
+ "id": 6092,
+ "url": "https://t.me/dlmehr/6092",
+ "date": "2026-10-24T16:12:54+00:00",
+ "text": "https://fxtwitter.com/robocurve/status/2113761906314150323?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+ "forwarded_from": null,
+ "digest": false,
+ "hash": "32229bd7a8b4",
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/robocurve/status/2113761906314150323?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+  "site": "🧵 Thread • FxTwitter",
+  "title": "Robocurve PBC (@robocurve)",
+  "description": "LLMs have a score doubling time of 53.9 days on a robotics benchmark between July and October 2026, while speed increased by 4.4x and cost fell by 6.2x.\nMore results in our new paper: The Bitter Lesson Comes to Robotics\n🧵",
+  "image": null
+ },
+ "gholam": {
+  "text": "رفیق، بچه‌های مجموعه Robocurve یه مقاله تازه دادن بیرون و آمار و ارقام خیره‌کننده‌ای از پیشرفت هوش مصنوعی توی حوزه رباتیک رو کردن. طبق داده‌های اونا، عملکرد مدل‌های زبانی روی بنچمارک‌های رباتیک اون‌قدر شتاب گرفته که امتیازشون تقریباً هر ۵۴ روز یک‌بار دو برابر شده! تازه ماجرا به همین‌جا ختم نمی‌شه؛ سرعت اجرای کارها بیش از ۴ برابر زیاد شده و هم‌زمان هزینه‌ها بیشتر از ۶ برابر افت کرده. خلاصه انگار قانون مقیاس‌پذیری و قدرت پردازش، درست مثل دنیای نرم‌افزار، داره توی ربات‌ها هم طوفان به پا می‌کنه و روش‌های سنتی رو به حاشیه می‌رونه.\n\nچرا مهمه؟ اهمیتش اینه که ترکیب سرعت بالا و افت شدید قیمت نشون می‌ده ربات‌های هوشمند و همه‌فن‌حریف خیلی زودتر و ارزون‌تر از تصوری که داشتیم وارد خطوط تولید و زندگی روزمره‌مون می‌شن.",
+  "date": "2026-10-24T16:13:10+00:00"
+ },
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/robocurve/status/2113761906314150323",
+   "domain": "x.com",
+   "author": {
+    "name": "Robocurve PBC",
+    "handle": "robocurve",
+    "avatar": "https://pbs.twimg.com/profile_images/2093086017268097024/qtVm8mqA_200x200.jpg"
+   },
+   "text": "LLMs have a score doubling time of 53.9 days on a robotics benchmark between July and October 2026, while speed increased by 4.4x and cost fell by 6.2x.\n\nMore results in our new paper: The Bitter Lesson Comes to Robotics 🧵",
+   "date": 1792795084,
+   "media": [
+    {
+     "type": "video",
+     "src": "https://video.twimg.com/amplify_video/2113745664287117312/vid/avc1/922x720/PgQ4CRxqPjKzdflv.mp4?tag=29",
+     "poster": "https://pbs.twimg.com/amplify_video_thumb/2113745664287117312/img/7qy371CGJvMC3C8i.jpg",
+     "ratio": 0.7803,
+     "duration": 10,
+     "gif": false
+    }
+   ],
+   "links": []
+  }
+ ],
+ "article": {
+  "title": "بچه‌های مجموعه Robocurve یه مقاله تازه دادن بیرون و آمار و ارقام خیره‌کننده‌ای از پیشرفت هوش مصنوعی توی حوزه…",
+  "source_title": "LLMs have a score doubling time of 53.9 days on a robotics benchmark between July and October 2026, while speed increased by 4.4x and cost…",
+  "body": [
+   "رفیق، بچه‌های مجموعه Robocurve یه مقاله تازه دادن بیرون و آمار و ارقام خیره‌کننده‌ای از پیشرفت هوش مصنوعی توی حوزه رباتیک رو کردن. طبق داده‌های اونا، عملکرد مدل‌های زبانی روی بنچمارک‌های رباتیک اون‌قدر شتاب گرفته که امتیازشون تقریباً هر ۵۴ روز یک‌بار دو برابر شده! تازه ماجرا به همین‌جا ختم نمی‌شه؛ سرعت اجرای کارها بیش از ۴ برابر زیاد شده و هم‌زمان هزینه‌ها بیشتر از ۶ برابر افت کرده. خلاصه انگار قانون مقیاس‌پذیری و قدرت پردازش، درست مثل دنیای نرم‌افزار، داره توی ربات‌ها هم طوفان به پا می‌کنه و روش‌های سنتی رو به حاشیه می‌رونه."
+  ],
+  "why": "اهمیتش اینه که ترکیب سرعت بالا و افت شدید قیمت نشون می‌ده ربات‌های هوشمند و همه‌فن‌حریف خیلی زودتر و ارزون‌تر از تصوری که داشتیم وارد خطوط تولید و زندگی روزمره‌مون می‌شن.",
+  "tags": [
+   "هوش مصنوعی",
+   "رباتیک"
+  ]
+ },
+ "updated": "2026-10-24T16:16:27+00:00"
+}
