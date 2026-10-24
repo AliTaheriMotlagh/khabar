@@ -1,11 +1,13 @@
 // Shared helpers for the guest comments/reactions API (Vercel Functions, Node runtime).
 // Storage is Upstash Redis over its REST API (free tier) — connect it from the Vercel dashboard (Storage → Upstash),
 // which sets KV_REST_API_URL / KV_REST_API_TOKEN. KHABAR_MEMORY_STORE=1 uses an in-memory store (tests only).
+// KV_PREFIX (e.g. "khabar:") namespaces every key, so one database can be shared with another app.
 import { createHash } from 'node:crypto';
 
 const REDIS_URL = process.env.KV_REST_API_URL || process.env.UPSTASH_REDIS_REST_URL;
 const REDIS_TOKEN = process.env.KV_REST_API_TOKEN || process.env.UPSTASH_REDIS_REST_TOKEN;
 const SALT = process.env.HASH_SALT || REDIS_TOKEN || 'khabar';
+const PREFIX = process.env.KV_PREFIX || '';
 
 export const REACTIONS = ['like', 'love', 'fire', 'wow', 'haha', 'sad'];
 export const MAX_COMMENTS = 300;
@@ -52,7 +54,8 @@ export async function redis(...cmds) {
   const res = await fetch(`${REDIS_URL}/pipeline`, {
     method: 'POST',
     headers: { Authorization: `Bearer ${REDIS_TOKEN}`, 'Content-Type': 'application/json' },
-    body: JSON.stringify(cmds),
+    // Every command used here takes a single key as its first argument.
+    body: JSON.stringify(PREFIX ? cmds.map(([c, k, ...args]) => [c, PREFIX + k, ...args]) : cmds),
   });
   if (!res.ok) throw new Error(`redis ${res.status}`);
   return (await res.json()).map((r) => {

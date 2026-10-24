@@ -2,10 +2,10 @@
 import { defineConfig } from 'astro/config';
 import sitemap from '@astrojs/sitemap';
 
-// The primary site is https://alitaherimotlagh.vercel.app (see src/site.ts). The GitHub Pages workflow builds a mirror
+// The primary site is https://khabar-ai.vercel.app (see src/site.ts). The GitHub Pages workflow builds a mirror
 // with SITE_URL / BASE_PATH (e.g. https://you.github.io + /khabar); canonical URLs still point at the primary site.
 export default defineConfig({
-  site: process.env.SITE_URL || 'https://alitaherimotlagh.vercel.app',
+  site: process.env.SITE_URL || 'https://khabar-ai.vercel.app',
   base: process.env.BASE_PATH || '/',
   trailingSlash: 'always',
   build: { format: 'directory', inlineStylesheets: 'auto' },

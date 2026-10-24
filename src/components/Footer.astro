@@ -28,11 +28,12 @@ import { url } from '../lib/posts';
       <h2>درباره</h2>
       <a href={url('about/')}>درباره‌ی {SITE.name}</a>
       <a href={SITE.owner.url} target="_blank" rel="noopener" referrerpolicy="origin">{SITE.owner.name} — mehrzad.ai</a>
+      <a href={SITE.author.url} target="_blank" rel="noopener" referrerpolicy="origin">{SITE.author.name} — سازنده‌ی سایت</a>
       <a href={url('rss.xml')}><Icon name="rss" /> خوراک RSS</a>
     </nav>
   </div>
   <div class="container foot-bottom">
-    <span>محتوا از کانال <a href={`https://t.me/${SITE.channel}`} rel="noopener" referrerpolicy="origin">@{SITE.channel}</a> · ترجمه: {SITE.gholam}</span>
+    <span>محتوا از کانال <a href={`https://t.me/${SITE.channel}`} rel="noopener" referrerpolicy="origin">@{SITE.channel}</a> · ترجمه: {SITE.gholam} · ساخته‌ی <a href={SITE.author.url} target="_blank" rel="noopener" referrerpolicy="origin">{SITE.author.name}</a></span>
     <span class="foot-stats" data-site-stats hidden><Icon name="eye" /> <b data-total>…</b> بازدید · <b data-today>…</b> نفر امروز</span>
   </div>
 </footer>

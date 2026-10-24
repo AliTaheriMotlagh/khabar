@@ -3,12 +3,14 @@ export const SITE = {
   name: 'فیوچر فوکوس',
   nameLatin: 'Future Focus',
   // Primary address: canonical URLs, sitemap and social cards always point here (the GitHub Pages copy is a mirror).
-  url: 'https://alitaherimotlagh.vercel.app',
+  url: 'https://khabar-ai.vercel.app',
   tagline: 'اخبار هوش مصنوعی و فناوری، ساده و خودمونی',
   description:
     'تازه‌ترین اخبار هوش مصنوعی، فناوری و آینده از کانال «Future Focus with Mehrzad» — با ترجمه‌ی فارسی و خودمونی داش غلام، تصویر و ویدیو، و پیوند به منبع اصلی.',
   channel: 'dlmehr',
   owner: { name: 'مهرزاد صمدی', nameLatin: 'Mehrzad Samadi', url: 'https://mehrzad.ai/' },
+  // Who built this site (credited in the footer).
+  author: { name: 'علی طاهری مطلق', nameLatin: 'Ali Taheri Motlagh', url: 'https://alitaherimotlagh.vercel.app/' },
   gholam: 'داش غلام',
   timeZone: 'Asia/Tehran',
   pageSize: 20,

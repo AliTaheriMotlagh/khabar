@@ -1,7 +1,7 @@
 # فیوچر فوکوس — Future Focus
 
 A Persian news site built automatically from the Telegram channel [@dlmehr](https://t.me/dlmehr) by [Mehrzad Samadi](https://mehrzad.ai/).
-Live at **https://alitaherimotlagh.vercel.app**.
+Live at **https://khabar-ai.vercel.app**.
 
 Every channel post becomes a news story. The Persian text is Gholam's first comment under the post (the translation);
 images and videos are shown straight from the source, and every story links to its original tweet or article.
@@ -30,13 +30,13 @@ npm test && .venv/bin/python -m pytest -q pipeline/tests
 1. *Storage → Create / connect → Upstash Redis* (free). This adds `KV_REST_API_URL` and `KV_REST_API_TOKEN`; comments, reactions,
    chat and counters start working on the next deploy. Without it the site works and those features stay hidden.
 2. Optional environment variables: `ADMIN_TOKEN` (lets you delete any comment), `HASH_SALT` (any random string),
-   `ALLOWED_ORIGINS` (comma-separated, defaults to `*`).
+   `ALLOWED_ORIGINS` (comma-separated, defaults to `*`), `KV_PREFIX` (e.g. `khabar:`, to share one Redis database with another app).
 
 **GitHub:** the workflow `.github/workflows/site.yml` crawls the channel every 15 minutes, commits new posts to `main`
 (which redeploys Vercel), and publishes a mirror on GitHub Pages: *Settings → Pages → Source: GitHub Actions*.
 The mirror uses the Vercel API for comments and chat (repository variable `API_URL` overrides the address).
 
 **Moderation:** delete a comment with
-`curl -X DELETE -H "Authorization: Bearer $ADMIN_TOKEN" "https://alitaherimotlagh.vercel.app/api/comments?post=<post id>&id=<comment id>"`.
+`curl -X DELETE -H "Authorization: Bearer $ADMIN_TOKEN" "https://khabar-ai.vercel.app/api/comments?post=<post id>&id=<comment id>"`.
 
 Branding lives in `src/site.ts`; crawler settings (channel, pages per run, …) in `pipeline/config.py`.

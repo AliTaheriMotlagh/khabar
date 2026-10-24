@@ -1,5 +1,5 @@
 # Every 15 minutes: crawl the channel → commit new posts to data/ → build → deploy GitHub Pages.
-# Vercel (the primary site, https://alitaherimotlagh.vercel.app) redeploys by itself on each data commit to main.
+# Vercel (the primary site, https://khabar-ai.vercel.app) redeploys by itself on each data commit to main.
 # One-time setup: Settings → Pages → Source: "GitHub Actions".
 name: site
 
@@ -72,7 +72,7 @@ jobs:
           SITE_URL: ${{ steps.pages.outputs.origin }}
           BASE_PATH: ${{ steps.pages.outputs.base_path }}
           # The mirror has no functions of its own: comments, reactions and chat go to the Vercel API.
-          PUBLIC_API_URL: ${{ vars.API_URL || 'https://alitaherimotlagh.vercel.app' }}
+          PUBLIC_API_URL: ${{ vars.API_URL || 'https://khabar-ai.vercel.app' }}
         run: npm run build
 
       - uses: actions/upload-pages-artifact@v3

@@ -1,6 +1,6 @@
 # khabar — Persian news site from the @dlmehr Telegram channel
 
-Primary site: https://alitaherimotlagh.vercel.app (canonical). GitHub Pages builds a mirror. Channel owner: Mehrzad Samadi (https://mehrzad.ai/).
+Primary site: https://khabar-ai.vercel.app (canonical). GitHub Pages builds a mirror. Channel owner: Mehrzad Samadi (https://mehrzad.ai/).
 
 ## How it fits together
 - `pipeline/` (Python, httpx + bs4): crawls `t.me/s/dlmehr`, takes **Gholam's first comment** (the Persian translation, posted by a bot named «غلام», signed «داش غلام») from the post's discussion widget, reads linked tweets (api.fxtwitter.com) / pages, writes `data/posts/<id>.json`. Media is **never downloaded** — posts keep original URLs (Telegram CDN URLs are signed, refreshed on every crawl).
