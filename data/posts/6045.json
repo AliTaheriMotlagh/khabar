@@ -12,7 +12,7 @@
   "site": "🧵 Thread • FxTwitter",
   "title": "Claude (@claudeai)",
   "description": "Claude Security now keeps up with your code as it changes.\nConnect your repositories once. Claude runs a deep first scan, then re-scans as changes land, so findings stay close to the current state of your code.\nIn public beta on Claude Enterprise.",
-  "image": "https://cdn4.telesco.pe/file/OCxdaBbVCG078sMnHj97mvirP2x-PiY4VayFG5Suwp0qYGaV6yM2JyRMTVc-NI_KYodgcKggHMk6aPHOfYfvFRb-wUP8JgyRRJ38LMzOrkBuKNE2xudC5zimM8ztOlNhUciWwaKFQ2AaYANuKFMfhBGSBXUL9sbA5KNe2OSpOSx4G1Nry4ZTvkuKTDUrbtgtsVfdwzSNL0RAL5SERHPmS5IgokeSYUmDookNczfev-OI7CZ2HlDcIuxsjVEsUxCm3UFI9M53EAUMA_PzLicC5PLwbAPykTcNYZOtBeamG14w-HmP3K2QZThgp4zOiN4BYMescz717ZBP1XZ_Vm7PDg.jpg"
+  "image": "https://cdn4.telesco.pe/file/rww9WXXKSPSAKE3fx3Ia9fwvKHTW34TO-qJzkv6C7Grm5l0RqE2cq9AYHnHWgqa5ObqeCv_cNDgwb_P857B4dHYV6Er_4rDIlKn6s5XbCqmqSGQPuwp7NpmRgYG7p5vyJIbYlD8Pb-8-wZZhmu65n4Y4MJYAmQMl7uVLZbl3H2pFQslMERv3-SVEIGLb0P_zv53YzkAm110CcFE1FGd3CxQioLFtnYLzNf_lwDXe2sVI4HGAR-HbQBcbR6r4NDzrjZ6b6fxw5fJ-qMuBGCWErhGGe4u1Q6G8QEOgQWE27gkGtFxOsH1vLNRIWPCVtC5U9ljZe409lN7wtdiHpOwCcA.jpg"
  },
  "gholam": {
   "text": "رفیق، بچه‌های آنتروپیک یه قابلیت تر و تمیز برای بخش امنیت کلود (Claude Security) رو کردن که خوراک برنامه‌نویس‌ها و تیم‌های فنیه. قضیه از این قراره که فقط کافیه یه بار ریپازیتوری‌های کدتون رو بهش وصل کنید تا اول یه اسکن عمیق و درست‌وحسابی بزنه و از اون به بعد هم پا به پای تغییرات کد جلو بیاد؛ یعنی هر آپدیت و کامیتی که ثبت بشه، سریع دوباره چک می‌کنه تا وضعیت امنیتی پروژه همیشه به‌روز و آنلاین بمونه. در حال حاضر هم این سرویس به شکل بتای عمومی برای مشترکای پلن سازمانی Claude Enterprise فعال شده تا کار توسعه‌دهنده‌ها رو راحت‌تر کنه.\n\nاهمیتش اینه که به جای ساعت‌ها وقت گذاشتن برای اسکن‌های دستی یا نگران بودن بابت باگ‌های ناخواسته، یه دستیار هوشمند مثل نگهبان شیش‌دانگ حواسش به کل مخزن کده و امنیت سیستم رو بالا می‌بره.",
@@ -52,5 +52,5 @@
    "امنیت"
   ]
  },
- "updated": "2026-10-24T11:29:59+00:00"
+ "updated": "2026-10-24T12:35:41+00:00"
 }
