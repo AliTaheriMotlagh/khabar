@@ -12,9 +12,10 @@ export async function POST(request) {
   const body = await readBody(request);
   const guest = guestId(body?.guest);
   if (!guest) return fail(request, 400, 'bad request');
-  if (await limited(request, 'live', 30, 60)) return fail(request, 429, 'slow down');
-
   const gh = hash(guest);
+  // Per guest only: this is the hottest route, and presence/view counters are low stakes.
+  if (await limited(request, ['live', 20, 60, gh])) return fail(request, 429, 'slow down');
+
   const now = Date.now();
   const post = postId(body.post);
   const cmds = [['ZADD', 'online', String(now), gh], ['ZCOUNT', 'online', String(now - ONLINE_WINDOW), '+inf'], ['LINDEX', 'chat', '0']];

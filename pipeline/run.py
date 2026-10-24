@@ -104,9 +104,20 @@ def process(http, tp: telegram.TgPost) -> None:
 
     post["article"] = build_article(post)
     post["updated"] = existing.get("updated")
-    if post != existing:
+    if needs_save(post, existing):
         post["updated"] = datetime.now(timezone.utc).isoformat(timespec="seconds")
         save(post)
+
+
+TG_CDN_RE = re.compile(r"https://[\w.-]*telesco\.pe/[^\"\s]+")
+
+
+def needs_save(post: dict, existing: dict) -> bool:
+    """Changed, ignoring Telegram's re-signed CDN URLs until the stored ones are URL_REFRESH_HOURS old."""
+    if post == existing:
+        return False
+    strip = lambda p: TG_CDN_RE.sub("", json.dumps(p, ensure_ascii=False, sort_keys=True))
+    return strip(post) != strip(existing) or age_hours(existing.get("updated") or "") >= config.URL_REFRESH_HOURS
 
 
 def refresh_articles() -> None:

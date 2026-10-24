@@ -4,8 +4,10 @@
 name: site
 
 on:
+  # GitHub delays or drops scheduled runs under load, worst at :00/:15/:30/:45, so this sits off those minutes.
+  # It is best effort only; for an exact 15-minute cadence an external cron calls workflow_dispatch (see README).
   schedule:
-    - cron: '*/15 * * * *'
+    - cron: '7,22,37,52 * * * *'
   push:
     branches: [main]
   workflow_dispatch:

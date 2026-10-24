@@ -29,11 +29,12 @@ export async function POST(request) {
   const name = cleanText(body.name, 32).replace(/\n/g, ' ') || 'مهمان';
   if (text.length < 2) return fail(request, 400, 'too short');
   if ((text.match(/https?:\/\//g) || []).length > 2) return fail(request, 400, 'too many links');
-  if ((await limited(request, 'c-min', 3, 60)) || (await limited(request, 'c-day', 40, 86400))) {
+  const gh = hash(guest);
+  if (await limited(request, ['c-min', 3, 60, gh], ['c-day', 40, 86400, gh], ['c-ip', 20, 60], ['c-ip-day', 400, 86400])) {
     return fail(request, 429, 'slow down');
   }
 
-  const comment = { id: randomUUID().slice(0, 12), name, text, at: new Date().toISOString(), o: hash(guest) };
+  const comment = { id: randomUUID().slice(0, 12), name, text, at: new Date().toISOString(), o: gh };
   await redis(
     ['LPUSH', key(post), JSON.stringify(comment)],
     ['LTRIM', key(post), '0', String(MAX_COMMENTS - 1)],

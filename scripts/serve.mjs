@@ -14,7 +14,7 @@ for (const f of fs.readdirSync('api').filter((f) => f.endsWith('.js') && !f.star
 http
   .createServer(async (req, res) => {
     const url = new URL(req.url, `http://localhost:${PORT}`);
-    const api = url.pathname.match(/^\/api\/([\w-]+)$/);
+    const api = url.pathname.match(/^\/api\/([\w-]+)\/?$/);
     if (api) {
       const handler = routes[api[1]]?.[req.method];
       if (!handler) return res.writeHead(404).end();

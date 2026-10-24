@@ -92,7 +92,16 @@ test('chat: post, list, limits', async () => {
   for (let i = 0; i < 10; i++) {
     burst.push((await chat.POST(req('POST', '/api/chat', { guest: B, text: `پیام ${i}` }, { 'x-forwarded-for': '9.9.9.9' }))).status);
   }
-  assert.ok(burst.includes(429), 'rate limited per IP');
+  assert.ok(burst.includes(429), 'rate limited per guest');
+
+  // Readers behind one VPN exit / carrier NAT share an IP and must not throttle each other.
+  const shared = [];
+  for (let i = 0; i < 10; i++) {
+    const g = `shared-guest-${String(i).padStart(4, '0')}`;
+    shared.push((await chat.POST(req('POST', '/api/chat', { guest: g, text: 'سلام' }, { 'x-forwarded-for': '8.8.4.4' }))).status);
+    shared.push((await live.POST(req('POST', '/api/live', { guest: g, view: true }, { 'x-forwarded-for': '8.8.4.4' }))).status);
+  }
+  assert.ok(shared.every((s) => s < 400), 'one shared IP is not one reader');
 });
 
 test('CORS preflight', async () => {

@@ -141,3 +141,16 @@ def test_digest_detection():
     assert run.DIGEST_RE.search("24-hour news summary.\n\n1 — Unitree unveiled H2-X")
     assert run.DIGEST_RE.search("خلاصه اخبار ۲۴ ساعت گذشته")
     assert not run.DIGEST_RE.search("OpenAI shipped a new model today")
+
+
+def test_resigned_cdn_url_alone_is_not_a_change():
+    from datetime import datetime, timedelta, timezone
+
+    ago = lambda h: (datetime.now(timezone.utc) - timedelta(hours=h)).isoformat(timespec="seconds")
+    old = {"id": 1, "text": "hi", "preview": {"image": "https://cdn4.telesco.pe/file/AAA"}, "updated": ago(1)}
+    resigned = {**old, "preview": {"image": "https://cdn4.telesco.pe/file/BBB"}}
+    assert not run.needs_save(dict(old), old)
+    assert not run.needs_save(resigned, old)
+    assert run.needs_save(resigned, {**old, "updated": ago(run.config.URL_REFRESH_HOURS + 1)})
+    assert run.needs_save({**old, "text": "edited"}, old)
+    assert run.needs_save(resigned, {})

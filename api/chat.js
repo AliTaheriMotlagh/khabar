@@ -27,11 +27,11 @@ export async function POST(request) {
   const name = cleanText(body.name, 32).replace(/\n/g, ' ') || 'مهمان';
   if (text.length < 1) return fail(request, 400, 'empty');
   if ((text.match(/https?:\/\//g) || []).length > 1) return fail(request, 400, 'too many links');
-  if ((await limited(request, 'chat-min', 8, 60)) || (await limited(request, 'chat-day', 300, 86400))) {
+  const gh = hash(guest);
+  if (await limited(request, ['chat-min', 8, 60, gh], ['chat-day', 300, 86400, gh], ['chat-ip', 60, 60])) {
     return fail(request, 429, 'slow down');
   }
 
-  const gh = hash(guest);
   const message = { id: randomUUID().slice(0, 12), name, text, at: new Date().toISOString(), c: parseInt(gh.slice(0, 4), 16) % 360, o: gh };
   await redis(['LPUSH', KEY, JSON.stringify(message)], ['LTRIM', KEY, '0', String(KEEP - 1)], ...award(gh, POINTS.chat), ...nameCmd(gh, name));
   return json(request, { message: publicView(message) }, { status: 201 });

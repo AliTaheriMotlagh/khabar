@@ -11,9 +11,10 @@ export async function POST(request) {
   const guest = guestId(body?.guest);
   const reaction = REACTIONS.includes(body?.reaction) ? body.reaction : null;
   if (!post || !guest || !reaction) return fail(request, 400, 'bad request');
-  if (await limited(request, 'r-min', 40, 60)) return fail(request, 429, 'slow down');
 
   const gh = hash(guest);
+  if (await limited(request, ['r-min', 40, 60, gh], ['r-ip', 400, 60])) return fail(request, 429, 'slow down');
+
   const [changed] = await redis([body.on ? 'SADD' : 'SREM', `rx:${post}:${reaction}`, gh]);
   const count = changed
     ? (await redis(['HINCRBY', `h:react:${reaction}`, post, body.on ? '1' : '-1'], ...(body.on ? award(gh, POINTS.react) : [])))[0]

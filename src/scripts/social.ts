@@ -11,7 +11,9 @@ async function api<T>(path: string, init?: { method?: string; body?: unknown }):
   const ctrl = new AbortController();
   const timer = setTimeout(() => ctrl.abort(), 8000);
   try {
-    const res = await fetch(`${SITE.api}/api/${path}`, {
+    // Functions live at /api/<name>/ (trailingSlash): without the slash every call pays a 308 redirect,
+    // and a redirected CORS preflight fails outright on the GitHub Pages mirror.
+    const res = await fetch(`${SITE.api}/api/${path.replace(/^[\w-]+/, '$&/')}`, {
       method: init?.method ?? 'GET',
       headers: init?.body ? { 'Content-Type': 'application/json' } : undefined,
       body: init?.body ? JSON.stringify(init.body) : undefined,

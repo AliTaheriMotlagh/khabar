@@ -36,7 +36,12 @@ npm test && .venv/bin/python -m pytest -q pipeline/tests
 (which redeploys Vercel), and publishes a mirror on GitHub Pages: *Settings → Pages → Source: GitHub Actions*.
 The mirror uses the Vercel API for comments and chat (repository variable `API_URL` overrides the address).
 
+GitHub's own schedule is best effort and often runs an hour or more late. For an exact cadence, trigger the workflow
+from a free external cron (e.g. cron-job.org, every 15 minutes) with a fine-grained token that has *Actions: Read and write*
+on this repo only:
+`curl -X POST -H "Authorization: Bearer $TOKEN" -H "Accept: application/vnd.github+json" -d '{"ref":"main"}' https://api.github.com/repos/<owner>/<repo>/actions/workflows/site.yml/dispatches`
+
 **Moderation:** delete a comment with
-`curl -X DELETE -H "Authorization: Bearer $ADMIN_TOKEN" "https://khabar-ai.vercel.app/api/comments?post=<post id>&id=<comment id>"`.
+`curl -X DELETE -H "Authorization: Bearer $ADMIN_TOKEN" "https://khabar-ai.vercel.app/api/comments/?post=<post id>&id=<comment id>"`.
 
 Branding lives in `src/site.ts`; crawler settings (channel, pages per run, …) in `pipeline/config.py`.

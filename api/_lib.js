@@ -112,11 +112,16 @@ function clientIp(request) {
   return (request.headers.get('x-forwarded-for') || '').split(',')[0].trim() || request.headers.get('x-real-ip') || 'unknown';
 }
 
-/** True when this IP made more than `max` calls of `kind` in the last `windowSec`. */
-export async function limited(request, kind, max, windowSec) {
-  const key = `rl:${kind}:${hash(clientIp(request))}:${Math.floor(Date.now() / 1000 / windowSec)}`;
-  const [count] = await redis(['INCR', key], ['EXPIRE', key, String(windowSec)]);
-  return count > max;
+/**
+ * True when any rule is over its limit. A rule is [kind, max, windowSec, who]; `who` defaults to the caller's IP.
+ * Many readers share one IP (VPN exits, mobile carriers, office Wi-Fi), so tight limits are per guest and
+ * per-IP ones stay loose. All counters go in one Redis round trip.
+ */
+export async function limited(request, ...rules) {
+  const ip = hash(clientIp(request));
+  const keys = rules.map(([kind, , windowSec, who = ip]) => `rl:${kind}:${who}:${Math.floor(Date.now() / 1000 / windowSec)}`);
+  const res = await redis(...keys.flatMap((key, i) => [['INCR', key], ['EXPIRE', key, String(rules[i][2])]]));
+  return rules.some(([, max], i) => res[i * 2] > max);
 }
 
 // ---------- gamification: server-awarded points feed a weekly leaderboard ----------
