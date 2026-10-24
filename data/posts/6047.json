@@ -1,0 +1,56 @@
+{
+ "id": 6047,
+ "url": "https://t.me/dlmehr/6047",
+ "date": "2026-10-22T20:30:52+00:00",
+ "text": "https://fxtwitter.com/rohanpaul_ai/status/2113232462742778350?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+ "forwarded_from": null,
+ "digest": false,
+ "hash": "f6d2ac5b0eb8",
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/rohanpaul_ai/status/2113232462742778350?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+  "site": "🧵 Thread • FxTwitter",
+  "title": "Rohan Paul (@rohanpaul_ai)",
+  "description": "New Google DeepMind and Cambridge paper shows that an AI agent can discover new math itself, proving exact rules for 11 unsolved Turing machines.\nAI can move from answering human-posed math questions to open-ended discovery, shown by a Gemini-based agent…",
+  "image": "https://cdn4.telesco.pe/file/CoNf2CSpi1Ty43bilvCLo-OrY00C3OqgcVWnA_2q1zNqppPKbG5LW1wWkY4xn29wSBFxVcp6EKvMAN421e2lCFbCc_zXyUY2-RnnZXX-ZWlInWBVYQVjsqaI_GtWwgRJW28xlcT55qFvaUi293JwA6TSnVKDNW3iV0utB_07leXod8Bw5froylxN-3nHoZL5FezuGwTbl4p2t5pts6RQqcYQoNSTjFFGjpxv0UoLpoxxmHKrHLZCzGKg_y1RhOHDrhhmndHbDESWiRcUMy5yYlhh9muojw8v5FYLcrIHbOO8jdmfq9DHTUWduAmQIC3-5JcTuT0dU7nR5cUEXHYu3g.jpg"
+ },
+ "gholam": {
+  "text": "ببین رفیق، بچه‌های دیپ‌مایند گوگل و دانشگاه کمبریج یه کار خفن کردن که نشون میده هوش مصنوعی داره قشنگ وارد فاز کشف ناشناخته‌ها میشه. اونا یه ایجنت خفن بر پایه جمینای ساختن که خودش رفته سراغ ۱۱ تا ماشین تورینگِ حل‌نشده از مسئله معروف «سگ‌جان» (Busy Beaver) و واسه اولین بار فرمول‌ها و قواعد جدیدی براشون پیدا کرده. روند کارش هم این‌طوری بوده که اول حالت‌های خاص رو تو شبیه‌ساز تست کرده، بعد پیش‌نویس اثبات ریاضی رو نوشته و در نهایت هم تو محیط رسمی Lean، درستی کار رو مو لای درزش نرفته ثابت کرده. در واقع سیستم از حالت رفع تکلیف و جواب دادن به سوال‌های آدمیزاد دراومده و خودش رسماً دست‌به‌کار کشف فرمول‌های جدید شده.\n\nاهمیتش اینه که هوش مصنوعی داره از یه ماشین پاسخ‌دهنده تبدیل به یه همکار دانشمند میشه که می‌تونه مرزهای علم و ریاضیات رو تنهایی جلو ببره.",
+  "date": "2026-10-22T20:31:07+00:00"
+ },
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/rohanpaul_ai/status/2113232462742778350",
+   "domain": "x.com",
+   "author": {
+    "name": "Rohan Paul",
+    "handle": "rohanpaul_ai",
+    "avatar": "https://pbs.twimg.com/profile_images/1816185267037859840/Fd18CH0v_200x200.jpg"
+   },
+   "text": "New Google DeepMind and Cambridge paper shows that an AI agent can discover new math itself, proving exact rules for 11 unsolved Turing machines.\n\nAI can move from answering human-posed math questions to open-ended discovery, shown by a Gemini-based agent that found and Lean-verified new rules for 11 Busy Beaver machines with no prior documented analysis.\n\nIt tested edge cases in a simulator, drafts informal proofs, and then proves the rules in the Lean proof checker.",
+   "date": 1792668855,
+   "media": [
+    {
+     "type": "image",
+     "src": "https://pbs.twimg.com/media/HVO03dabsAE8875.png?name=orig",
+     "ratio": 0.7579
+    }
+   ],
+   "links": []
+  }
+ ],
+ "article": {
+  "title": "بچه‌های دیپ‌مایند گوگل و دانشگاه کمبریج یه کار خفن کردن که نشون میده هوش مصنوعی داره قشنگ وارد فاز کشف…",
+  "source_title": "New Google DeepMind and Cambridge paper shows that an AI agent can discover new math itself, proving exact rules for 11 unsolved Turing…",
+  "body": [
+   "ببین رفیق، بچه‌های دیپ‌مایند گوگل و دانشگاه کمبریج یه کار خفن کردن که نشون میده هوش مصنوعی داره قشنگ وارد فاز کشف ناشناخته‌ها میشه. اونا یه ایجنت خفن بر پایه جمینای ساختن که خودش رفته سراغ ۱۱ تا ماشین تورینگِ حل‌نشده از مسئله معروف «سگ‌جان» (Busy Beaver) و واسه اولین بار فرمول‌ها و قواعد جدیدی براشون پیدا کرده. روند کارش هم این‌طوری بوده که اول حالت‌های خاص رو تو شبیه‌ساز تست کرده، بعد پیش‌نویس اثبات ریاضی رو نوشته و در نهایت هم تو محیط رسمی Lean، درستی کار رو مو لای درزش نرفته ثابت کرده. در واقع سیستم از حالت رفع تکلیف و جواب دادن به سوال‌های آدمیزاد دراومده و خودش رسماً دست‌به‌کار کشف فرمول‌های جدید شده."
+  ],
+  "why": "هوش مصنوعی داره از یه ماشین پاسخ‌دهنده تبدیل به یه همکار دانشمند میشه که می‌تونه مرزهای علم و ریاضیات رو تنهایی جلو ببره.",
+  "tags": [
+   "هوش مصنوعی",
+   "گوگل"
+  ]
+ },
+ "updated": "2026-10-24T11:29:56+00:00"
+}

@@ -1,0 +1,56 @@
+{
+ "id": 6088,
+ "url": "https://t.me/dlmehr/6088",
+ "date": "2026-10-24T03:43:20+00:00",
+ "text": "https://fxtwitter.com/jon_barron/status/2113707875290042665?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+ "forwarded_from": null,
+ "digest": false,
+ "hash": "393c217e90ac",
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/jon_barron/status/2113707875290042665?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+  "site": "🧵 Thread • FxTwitter",
+  "title": "Jon Barron (@jon_barron)",
+  "description": "Hi all, I have a new result I'm excited to share. It turns out that *all existing implementations* of softmax and cross-entropy (that's JAX, PyTorch, textbooks, etc) have a subtle bug --- two bugs, actually. A simple rewrite fixes both, and eliminates \"slingshots\"…",
+  "image": null
+ },
+ "gholam": {
+  "text": "ببین رفیق، جان بارون یه خبر خفن داده و رو کرده که تمام پیاده‌سازی‌های فعلیِ توابع حیاتی سافت‌مکس و کراس‌انتروپی توی پای‌تورچ، جکس و حتی کتاب‌های مرجع، دو تا باگ ظریف و نامحسوس دارن. طرف می‌گه با یه بازنویسیِ خیلی ساده و جمع‌وجور می‌شه هر دو تا اشکال رو قشنگ حل کرد تا محاسبات دقیق‌تر بشن. از اون باحال‌تر اینه که این رفع باگ، پدیده تیرکمانی یا همون جهش‌های عجیب (slingshots) رو که موقع یادگیری عمیق و گراک کردن مدل‌ها پیش میاد، کلاً ریشه‌کن می‌کنه.\n\nاهمیتش اینه که چون بیس آموزش تقریباً تمام هوش‌های مصنوعی دنیا به همین فرمول‌ها بنده، این اصلاحیه کوچیک می‌تونه روند پایداری و یادگیری مدل‌های غول‌پیکر رو حسابی متحول کنه.",
+  "date": "2026-10-24T03:43:38+00:00"
+ },
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/jon_barron/status/2113707875290042665",
+   "domain": "x.com",
+   "author": {
+    "name": "Jon Barron",
+    "handle": "jon_barron",
+    "avatar": "https://pbs.twimg.com/profile_images/2027105545086537728/yiV10DcI_200x200.jpg"
+   },
+   "text": "Hi all, I have a new result I'm excited to share. It turns out that *all existing implementations* of softmax and cross-entropy (that's JAX, PyTorch, textbooks, etc) have a subtle bug --- two bugs, actually. A simple rewrite fixes both, and eliminates \"slingshots\" when grokking:",
+   "date": 1792782202,
+   "media": [
+    {
+     "type": "video",
+     "src": "https://video.twimg.com/amplify_video/2113698124351074304/vid/avc1/512x512/MvQolaTrNJczfLpu.mp4?tag=29",
+     "poster": "https://pbs.twimg.com/amplify_video_thumb/2113698124351074304/img/LFJgXhcT_P7PthYR.jpg",
+     "ratio": 1.0,
+     "duration": 6.866,
+     "gif": false
+    }
+   ],
+   "links": []
+  }
+ ],
+ "article": {
+  "title": "جان بارون یه خبر خفن داده و رو کرده که تمام پیاده‌سازی‌های فعلیِ توابع حیاتی سافت‌مکس و کراس‌انتروپی توی…",
+  "source_title": "Hi all, I have a new result I'm excited to share. It turns out that *all existing implementations* of softmax and cross-entropy (that's…",
+  "body": [
+   "ببین رفیق، جان بارون یه خبر خفن داده و رو کرده که تمام پیاده‌سازی‌های فعلیِ توابع حیاتی سافت‌مکس و کراس‌انتروپی توی پای‌تورچ، جکس و حتی کتاب‌های مرجع، دو تا باگ ظریف و نامحسوس دارن. طرف می‌گه با یه بازنویسیِ خیلی ساده و جمع‌وجور می‌شه هر دو تا اشکال رو قشنگ حل کرد تا محاسبات دقیق‌تر بشن. از اون باحال‌تر اینه که این رفع باگ، پدیده تیرکمانی یا همون جهش‌های عجیب (slingshots) رو که موقع یادگیری عمیق و گراک کردن مدل‌ها پیش میاد، کلاً ریشه‌کن می‌کنه."
+  ],
+  "why": "چون بیس آموزش تقریباً تمام هوش‌های مصنوعی دنیا به همین فرمول‌ها بنده، این اصلاحیه کوچیک می‌تونه روند پایداری و یادگیری مدل‌های غول‌پیکر رو حسابی متحول کنه.",
+  "tags": []
+ },
+ "updated": "2026-10-24T11:28:34+00:00"
+}

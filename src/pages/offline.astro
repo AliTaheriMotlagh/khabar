@@ -1,0 +1,13 @@
+---
+// Served by the service worker when a page is requested offline and was never cached.
+import Base from '../layouts/Base.astro';
+import Icon from '../components/Icon.astro';
+import { url } from '../lib/posts';
+---
+<Base title="آفلاین" noindex>
+  <div class="container narrow empty">
+    <Icon name="wifi-off" />
+    <p>به اینترنت وصل نیستید و این صفحه هنوز روی دستگاه شما ذخیره نشده.</p>
+    <p class="row center"><a class="btn primary" href={url('saved/')}>ذخیره‌شده‌ها</a> <a class="btn" href={url('me/')}>خبرهایی که خوانده‌اید</a></p>
+  </div>
+</Base>

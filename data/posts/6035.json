@@ -1,0 +1,58 @@
+{
+ "id": 6035,
+ "url": "https://t.me/dlmehr/6035",
+ "date": "2026-10-21T23:33:07+00:00",
+ "text": "https://fxtwitter.com/flappyairplanes/status/2112955825367269788?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+ "forwarded_from": null,
+ "digest": false,
+ "hash": "2feb723f3b03",
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/flappyairplanes/status/2112955825367269788?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+  "site": "🧵 Thread • FxTwitter",
+  "title": "Flapping Airplanes (@flappyairplanes)",
+  "description": "↩\n@flappyairplanes\nWe’ve developed the world’s most complete megakernel framework. It can perform entire training runs, serve inference, play video games, and even do all three simultaneously in a single kernel.",
+  "image": null
+ },
+ "gholam": {
+  "text": "رفیق ببین این تیم Flapping Airplanes اومده یه فریم‌ورک خفن برای «مگاکرنل» توسعه داده که به ادعای خودشون کامل‌ترین نمونه توی کل دنیاست. قضیه از این قراره که این سیستم می‌تونه کل مراحل سنگین آموزش مدل هوش مصنوعی و اجرای اینفرنس رو دستش بگیره و تازه هم‌زمان بازی ویدیویی هم ران کنه. عجیب‌تر اینجاست که مدعی شدن هر سه تای این کارای سنگین، توی دل یه تک‌کرنل و به شکل هم‌زمان انجام می‌شه که از نظر معماری و فشار محاسباتی واقعاً حرکت غولیه.\n\nاهمیتش اینه که ادغام آموزش و اجرا توی یه کرنل واحد، اتلاف وقت برای جابه‌جایی داده‌ها رو عملاً حذف می‌کنه و می‌تونه راندمان پردازنده‌های گرافیکی رو چند پله ببره بالا.",
+  "date": "2026-10-21T23:33:24+00:00"
+ },
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/flappyairplanes/status/2112955825367269788",
+   "domain": "x.com",
+   "author": {
+    "name": "Flapping Airplanes",
+    "handle": "flappyairplanes",
+    "avatar": "https://pbs.twimg.com/profile_images/2016233308376727554/nJGYCpx3_200x200.jpg"
+   },
+   "text": "We’ve developed the world’s most complete megakernel framework. It can perform entire training runs, serve inference, play video games, and even do all three simultaneously in a single kernel.",
+   "date": 1792602900,
+   "media": [
+    {
+     "type": "video",
+     "src": "https://video.twimg.com/amplify_video/2112955456654295040/vid/avc1/1280x720/2GcHRgaFj77a3sqw.mp4?tag=29",
+     "poster": "https://pbs.twimg.com/amplify_video_thumb/2112955456654295040/img/viDYJnprqoGjVmCA.jpg",
+     "ratio": 0.5625,
+     "duration": 45.571,
+     "gif": false
+    }
+   ],
+   "links": []
+  }
+ ],
+ "article": {
+  "title": "این تیم Flapping Airplanes اومده یه فریم‌ورک خفن برای «مگاکرنل» توسعه داده که به ادعای خودشون کامل‌ترین نمونه…",
+  "source_title": "We’ve developed the world’s most complete megakernel framework. It can perform entire training runs, serve inference, play video games, and…",
+  "body": [
+   "رفیق ببین این تیم Flapping Airplanes اومده یه فریم‌ورک خفن برای «مگاکرنل» توسعه داده که به ادعای خودشون کامل‌ترین نمونه توی کل دنیاست. قضیه از این قراره که این سیستم می‌تونه کل مراحل سنگین آموزش مدل هوش مصنوعی و اجرای اینفرنس رو دستش بگیره و تازه هم‌زمان بازی ویدیویی هم ران کنه. عجیب‌تر اینجاست که مدعی شدن هر سه تای این کارای سنگین، توی دل یه تک‌کرنل و به شکل هم‌زمان انجام می‌شه که از نظر معماری و فشار محاسباتی واقعاً حرکت غولیه."
+  ],
+  "why": "ادغام آموزش و اجرا توی یه کرنل واحد، اتلاف وقت برای جابه‌جایی داده‌ها رو عملاً حذف می‌کنه و می‌تونه راندمان پردازنده‌های گرافیکی رو چند پله ببره بالا.",
+  "tags": [
+   "هوش مصنوعی"
+  ]
+ },
+ "updated": "2026-10-24T11:30:08+00:00"
+}

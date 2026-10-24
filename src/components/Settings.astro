@@ -1,82 +1,30 @@
 ---
 import Icon from './Icon.astro';
 
-type Choice = { v: string; l: string; sw?: string };
+type Choice = { v: string; l: string };
 const groups: { key: string; label: string; choices: Choice[] }[] = [
-  {
-    key: 'theme',
-    label: 'پوسته',
-    choices: [
-      { v: 'auto', l: 'خودکار' },
-      { v: 'light', l: 'روشن', sw: '#f7f7f4' },
-      { v: 'sepia', l: 'کاغذی', sw: '#f3ead7' },
-      { v: 'dark', l: 'تیره', sw: '#1a1d23' },
-      { v: 'black', l: 'سیاه (OLED)', sw: '#000' },
-    ],
-  },
-  {
-    key: 'font',
-    label: 'قلم',
-    choices: [
-      { v: 'vazir', l: 'وزیرمتن' },
-      { v: 'estedad', l: 'استعداد' },
-      { v: 'naskh', l: 'نسخ' },
-      { v: 'plex', l: 'پلکس' },
-      { v: 'system', l: 'قلم سیستم' },
-    ],
-  },
-  { key: 'lh', label: 'فاصله‌ی خطوط', choices: [{ v: '1.7', l: 'فشرده' }, { v: '1.95', l: 'معمولی' }, { v: '2.25', l: 'باز' }] },
-  { key: 'width', label: 'پهنای متن', choices: [{ v: 'narrow', l: 'باریک' }, { v: 'medium', l: 'متوسط' }, { v: 'wide', l: 'پهن' }] },
-  { key: 'align', label: 'چینش پاراگراف', choices: [{ v: 'start', l: 'راست‌چین' }, { v: 'justify', l: 'تراز دو طرف' }] },
-  {
-    key: 'view',
-    label: 'نمای فهرست اخبار',
-    choices: [{ v: 'cards', l: 'کارت' }, { v: 'compact', l: 'فشرده' }, { v: 'channel', l: 'مثل کانال (متن کامل)' }],
-  },
-  {
-    key: 'media',
-    label: 'تصویر و ویدیو',
-    choices: [{ v: 'show', l: 'نمایش' }, { v: 'click', l: 'با لمس (کم‌مصرف)' }, { v: 'hide', l: 'پنهان' }],
-  },
-  { key: 'source', label: 'متن اصلی منبع (انگلیسی)', choices: [{ v: 'closed', l: 'بسته' }, { v: 'open', l: 'باز' }] },
-  { key: 'calendar', label: 'تقویم', choices: [{ v: 'persian', l: 'شمسی' }, { v: 'gregory', l: 'میلادی' }] },
-  { key: 'digits', label: 'ارقام', choices: [{ v: 'arab', l: 'فارسی ۱۲۳' }, { v: 'latn', l: 'انگلیسی 123' }] },
-  { key: 'uiFont', label: 'قلم منوها', choices: [{ v: 'ui', l: 'وزیرمتن' }, { v: 'read', l: 'همان قلم متن' }] },
-  { key: 'header', label: 'سربرگ هنگام خواندن', choices: [{ v: 'auto', l: 'پنهان با اسکرول' }, { v: 'fixed', l: 'همیشه دیده شود' }] },
-  { key: 'motion', label: 'انیمیشن‌ها', choices: [{ v: 'full', l: 'روشن' }, { v: 'reduce', l: 'کم' }] },
+  { key: 'theme', label: 'پوسته', choices: [{ v: 'auto', l: 'خودکار' }, { v: 'light', l: 'روشن' }, { v: 'dark', l: 'تیره' }] },
+  { key: 'size', label: 'اندازه‌ی متن', choices: [{ v: 's', l: 'کوچک' }, { v: 'm', l: 'معمولی' }, { v: 'l', l: 'بزرگ' }, { v: 'xl', l: 'خیلی بزرگ' }] },
+  { key: 'view', label: 'نمای خبرها', choices: [{ v: 'cards', l: 'کامل با تصویر' }, { v: 'list', l: 'فهرست کوتاه' }] },
+  { key: 'media', label: 'تصویر و ویدیو', choices: [{ v: 'show', l: 'نمایش' }, { v: 'tap', l: 'کم‌مصرف (با لمس)' }] },
 ];
 ---
 <dialog class="sheet" id="settings" aria-labelledby="settings-title">
   <div class="sheet-head">
-    <h2 id="settings-title">تنظیمات خواندن</h2>
+    <h2 id="settings-title">تنظیمات نمایش</h2>
     <button class="icon-btn" type="button" data-close aria-label="بستن"><Icon name="x" /></button>
   </div>
   <form class="sheet-body" data-settings-form>
-    <p class="sample">
-      ببین رفیق، اینجا هر چیزی رو که برای خوندن راحت لازم داری خودت تنظیم می‌کنی؛ اندازه‌ی متن، قلم، فاصله‌ی خط‌ها و رنگ صفحه. ۱۲۳۴ — 2026
-    </p>
-    <div class="opt">
-      <span id="fs-label">اندازه‌ی متن</span>
-      <div class="range">
-        <button type="button" data-fs="-1" aria-label="کوچک‌تر">−</button>
-        <input type="range" name="fs" min="14" max="30" step="1" value="18" aria-labelledby="fs-label" />
-        <button type="button" data-fs="1" aria-label="بزرگ‌تر">+</button>
-        <output data-fs-out>۱۸</output>
-      </div>
-    </div>
+    <p class="sample">ببین رفیق، اینجا متن رو همون‌طوری که راحتی تنظیم کن؛ اندازه، پوسته و نمای خبرها. ۱۴۰۵ — 2026</p>
     {
       groups.map((g) => (
-        <fieldset class="opt" style="border:0;margin:0;padding-inline:0">
-          <legend class="sr-only">{g.label}</legend>
-          <span aria-hidden="true">{g.label}</span>
+        <fieldset class="opt">
+          <legend>{g.label}</legend>
           <div class="seg">
             {g.choices.map((c) => (
               <label>
                 <input type="radio" name={g.key} value={c.v} />
-                <span>
-                  {c.sw && <i class="swatch" style={`background:${c.sw}`} />}
-                  {c.l}
-                </span>
+                <span>{c.l}</span>
               </label>
             ))}
           </div>
@@ -84,29 +32,13 @@ const groups: { key: string; label: string; choices: Choice[] }[] = [
       ))
     }
     <div class="sheet-foot">
-      <button class="btn" type="button" data-reset>بازگشت به پیش‌فرض</button>
+      <button class="btn" type="button" data-reset>پیش‌فرض</button>
       <button class="btn primary" type="button" data-close>تمام</button>
     </div>
   </form>
 </dialog>
 
-<dialog class="sheet" id="keys" aria-labelledby="keys-title">
-  <div class="sheet-head">
-    <h2 id="keys-title">میانبرهای صفحه‌کلید</h2>
-    <button class="icon-btn" type="button" data-close aria-label="بستن"><Icon name="x" /></button>
-  </div>
-  <div class="sheet-body">
-    <div class="keys">
-      <span><kbd>j</kbd> / <kbd>k</kbd></span><span>خبر بعدی / قبلی</span>
-      <span><kbd>Enter</kbd> یا <kbd>o</kbd></span><span>باز کردن خبر انتخاب‌شده</span>
-      <span><kbd>s</kbd></span><span>ذخیره / حذف از ذخیره‌ها</span>
-      <span><kbd>n</kbd> / <kbd>p</kbd></span><span>خبر بعدی / قبلی (در صفحه‌ی خبر)</span>
-      <span><kbd>/</kbd></span><span>جستجو</span>
-      <span><kbd>t</kbd></span><span>روشن / تیره</span>
-      <span><kbd>,</kbd></span><span>تنظیمات خواندن</span>
-      <span><kbd>+</kbd> / <kbd>-</kbd></span><span>بزرگ / کوچک کردن متن</span>
-      <span><kbd>g</kbd> <kbd>h</kbd></span><span>صفحه‌ی اصلی</span>
-      <span><kbd>?</kbd></span><span>همین راهنما</span>
-    </div>
-  </div>
+<dialog class="lightbox" id="lightbox" aria-label="نمایش تصویر">
+  <button class="icon-btn" type="button" data-close aria-label="بستن"><Icon name="x" /></button>
+  <img alt="" referrerpolicy="no-referrer" data-lightbox-img />
 </dialog>

@@ -1,0 +1,80 @@
+{
+ "id": 6066,
+ "url": "https://t.me/dlmehr/6066",
+ "date": "2026-10-23T15:55:02+00:00",
+ "text": "https://fxtwitter.com/junioryu136689/status/2113545627003183533?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+ "forwarded_from": null,
+ "digest": false,
+ "hash": "1746ccf743d4",
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/junioryu136689/status/2113545627003183533?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+  "site": "FxTwitter",
+  "title": "BioTender (@Junioryu136689)",
+  "description": "🧬\nAnthropic is inviting life sciences researchers to collaborate directly with its team.\nThe Guest Investigator Program offers 8–12 weeks of joint research, with access to Claude, AI agents, and support from Anthropic researchers.\n🔗\nhttps://www.anthrop…",
+  "image": "https://cdn4.telesco.pe/file/kJSaMXfRagXp9f_B87-SPpSNFfhSmhfp64I-3X1O0bf6zJN8S0j0vnOpuqKM2RNygdOhqM512QTuSq76StUQ86ABFCEqEtgadWU_3DtMjX9dqQ2g3guSXQnGhUn6Ju5QbWGmRYmja6lLxTpD5G9fuvfko0MAZj7DCShAnfdfvQHeDBRleFWjUgA9AdjtjBlvKsCSXiWXuHtwyeymBuGL8jojN4XS1McmaijGOSFQuIkWWpvoPw43LqsheyoCyc2QarG9uOxPYoH4AEKELI5sVHr4QFtocjA8mhH95GKC-GynE9S3PURI9bvlo6_g4WA59LH-TVkH9FPKIqlPAYGvIg.jpg"
+ },
+ "gholam": {
+  "text": "رفیق، دم و دستگاه آنتروپیک درِ باغ سبزش رو باز کرده و یه فراخوان خفن برای محقق‌های علوم زیستی و بیولوژی داده. داستان از این قراره که این کمپانی یه برنامه به اسم «محقق مهمان» راه انداخته تا دانشمندا به مدت ۸ تا ۱۲ هفته بیان بیخ ریش تیم تخصصی خودشون و نیتن فرای بنشینن و با هم تحقیق مشترک بزنن. تمام دسترسی‌ها به مدل‌های هوش مصنوعی کلود، ایجنت‌ها و توان پردازشی هم قراره مفت و مجانی در اختیارشون باشه تا ابزارها و تحلیل‌های نو بسازن. خلاصه دارن مرزهای علم زیست‌شناسی رو با هوش مصنوعی گره می‌زنن تا کارای بزرگ راه بندازن.\n\nاهمیتش اینه که وقتی غول‌های هوش مصنوعی امکانات گرون‌قیمتشون رو رایگان می‌ریزن تو دامن بچه‌های بیولوژی، سرعت کشف دارو و درمان بیماری‌ها چند برابر بیشتر می‌شه.",
+  "date": "2026-10-23T15:55:13+00:00"
+ },
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/Junioryu136689/status/2113545627003183533",
+   "domain": "x.com",
+   "author": {
+    "name": "BioTender",
+    "handle": "Junioryu136689",
+    "avatar": "https://pbs.twimg.com/profile_images/2049113540146188288/j-IY5cVD_200x200.jpg"
+   },
+   "text": "🧬 Anthropic is inviting life sciences researchers to collaborate directly with its team.\n\nThe Guest Investigator Program offers 8–12 weeks of joint research, with access to Claude, AI agents, and support from Anthropic researchers.\n\n🔗 https://www.anthropic.com/news/open-call-guest-investigators-life-sciences",
+   "date": 1792743519,
+   "media": [
+    {
+     "type": "image",
+     "src": "https://pbs.twimg.com/media/HVTSifCawAA0Sb4.jpg?name=orig",
+     "ratio": 1.3333
+    }
+   ],
+   "links": [
+    "https://www.anthropic.com/news/open-call-guest-investigators-life-sciences"
+   ],
+   "quote": {
+    "author": {
+     "name": "Nathan C. Frey",
+     "handle": "nc_frey",
+     "avatar": "https://pbs.twimg.com/profile_images/2046429956482412544/bFpK-F0A_200x200.jpg"
+    },
+    "text": "Today, we’re announcing an open call for guest investigators in life sciences. Over 8–12 weeks, guest investigators will work directly with my team and other Anthropic researchers to produce analyses and tools for their work. We’ll run our models and harnesses, at no cost to them. We’ll work together to open-source the resulting data, artifacts, and code, and write preprints about what we find.\n\nWe want humans to remain at the center of scientific discovery, deciding what questions to pursue, and how to pursue them. Those decisions are not ours to make alone. This open call is part of our ongoing efforts at Anthropic to support researchers and accelerate scientific discovery.\n\nI’m looking for principal investigators and their research groups at academic institutions, nonprofits, or government labs, working in causal human biology, structural and computational molecular biology, medicinal chemistry, drug discovery, and clinical science.\n\nApplications are open for about 14 days: https://www.anthropic.com/news/open-call-guest-investigators-life-sciences",
+    "date": 1792708030,
+    "media": [],
+    "links": [
+     "https://www.anthropic.com/news/open-call-guest-investigators-life-sciences"
+    ]
+   }
+  },
+  {
+   "kind": "link",
+   "url": "https://www.anthropic.com/news/open-call-guest-investigators-life-sciences",
+   "domain": "anthropic.com",
+   "title": "Open call for guest investigators in the life sciences",
+   "description": "Today, we’re inviting members of the life sciences community to apply to work with us on special projects.",
+   "image": "https://www-cdn.anthropic.com/images/4zrzovbb/website/633e51e2d75a5c14022fa48961b886553d41ce9d-1200x630.jpg",
+   "site": "anthropic.com"
+  }
+ ],
+ "article": {
+  "title": "دم و دستگاه آنتروپیک درِ باغ سبزش رو باز کرده و یه فراخوان خفن برای محقق‌های علوم زیستی و بیولوژی داده",
+  "source_title": "🧬 Anthropic is inviting life sciences researchers to collaborate directly with its team.",
+  "body": [
+   "رفیق، دم و دستگاه آنتروپیک درِ باغ سبزش رو باز کرده و یه فراخوان خفن برای محقق‌های علوم زیستی و بیولوژی داده. داستان از این قراره که این کمپانی یه برنامه به اسم «محقق مهمان» راه انداخته تا دانشمندا به مدت ۸ تا ۱۲ هفته بیان بیخ ریش تیم تخصصی خودشون و نیتن فرای بنشینن و با هم تحقیق مشترک بزنن. تمام دسترسی‌ها به مدل‌های هوش مصنوعی کلود، ایجنت‌ها و توان پردازشی هم قراره مفت و مجانی در اختیارشون باشه تا ابزارها و تحلیل‌های نو بسازن. خلاصه دارن مرزهای علم زیست‌شناسی رو با هوش مصنوعی گره می‌زنن تا کارای بزرگ راه بندازن."
+  ],
+  "why": "وقتی غول‌های هوش مصنوعی امکانات گرون‌قیمتشون رو رایگان می‌ریزن تو دامن بچه‌های بیولوژی، سرعت کشف دارو و درمان بیماری‌ها چند برابر بیشتر می‌شه.",
+  "tags": [
+   "هوش مصنوعی",
+   "آنتروپیک"
+  ]
+ },
+ "updated": "2026-10-24T11:29:41+00:00"
+}

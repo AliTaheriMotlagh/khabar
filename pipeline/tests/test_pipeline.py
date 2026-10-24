@@ -1,7 +1,7 @@
 """Offline tests for the parsers and shaping. Run: python -m pytest pipeline/tests  (or python -m pipeline.tests.test_pipeline)"""
 from __future__ import annotations
 
-from pipeline import enrich, shape, telegram
+from pipeline import enrich, run, shape, telegram
 
 CHANNEL_HTML = """
 <div class="tgme_channel_info">
@@ -32,7 +32,7 @@ CHANNEL_HTML = """
       <a class="tgme_widget_message_photo_wrap grouped_media_wrap" href="https://t.me/dlmehr/1501?single" style="width:300px;background-image:url('https://cdn4.telesco.pe/file/p1.jpg')"></a>
       <a class="tgme_widget_message_video_player grouped_media_wrap" href="https://t.me/dlmehr/1502?single">
         <i class="tgme_widget_message_video_thumb" style="background-image:url('https://cdn4.telesco.pe/file/v1thumb.jpg')"></i>
-        <div class="tgme_widget_message_video_wrap"><video src="https://cdn4.telesco.pe/file/v1.mp4" class="tgme_widget_message_video js-message_video"></video></div>
+        <div class="tgme_widget_message_video_wrap" style="padding-top:56.25%"><video src="https://cdn4.telesco.pe/file/v1.mp4" class="tgme_widget_message_video js-message_video"></video></div>
         <time class="message_video_duration js-message_video_duration">1:16</time>
       </a>
     </div></div>
@@ -49,6 +49,7 @@ DISCUSSION_HTML = """
 <div class="tme_widget_discussion">
  <div class="tgme_widget_message js-widget_message" data-post-id="88">
   <div class="tgme_widget_message_author"><span class="tgme_widget_message_author_name" dir="auto">غلام</span></div>
+  <div class="tgme_widget_message_reply_template js-reply_tpl"><div class="tgme_widget_message_text js-message_reply_text" dir="auto">ببین آبجی، وسط کنفرانس…</div></div>
   <div class="tgme_widget_message_text js-message_text" dir="auto">ببین آبجی، وسط کنفرانس بزرگ انویدیا در برلین چند تا معترض پریدند وسط. رئیس انویدیا خونسرد موند.<br/><br/>چرا مهمه؟ نشون میده تحریم‌ها کار نمی‌کنه.<br/>--داش غلام</div>
   <time datetime="2026-10-20T15:39:00+00:00"></time>
  </div>
@@ -64,7 +65,7 @@ def test_channel_page():
     assert [p.id for p in posts] == [1500, 1501]
 
     p = posts[0]
-    assert p.edited and p.views == "30" and p.date.startswith("2026-10-20T15:31")
+    assert p.date.startswith("2026-10-20T15:31")
     assert p.links[0].startswith("https://fxtwitter.com/dunyaverse/status/2112586895100449083")
     assert p.preview["title"] == "Dünya Baradari (@dunyaverse)"
     assert p.preview["image"].endswith("preview.jpg")
@@ -72,6 +73,7 @@ def test_channel_page():
     q = posts[1]
     assert [m.type for m in q.media] == ["image", "video"]
     assert q.media[1].url.endswith("v1.mp4") and q.media[1].thumb.endswith("v1thumb.jpg") and q.media[1].duration == "1:16"
+    assert q.media[1].ratio == 0.5625 and q.media[0].ratio is None
     assert "OpenAI (https://openai.com/blog/x)" in q.text
     assert q.links == ["https://openai.com/blog/x", "https://example.com/a"]
 
@@ -79,7 +81,7 @@ def test_channel_page():
 def test_gholam_comment():
     c = telegram.parse_gholam_comment(DISCUSSION_HTML)
     assert c is not None
-    assert c["text"].startswith("ببین آبجی")
+    assert c["text"].startswith("ببین آبجی") and "رئیس انویدیا خونسرد موند" in c["text"]  # full text, not the reply preview
     assert "داش غلام" not in c["text"]
     assert c["date"] == "2026-10-20T15:39:00+00:00"
     assert telegram.parse_gholam_comment("<div class='tgme_widget_message'><div class='tgme_widget_message_text'>hi</div></div>") is None
@@ -115,8 +117,27 @@ def test_tweet_regex_and_variant():
     assert v.endswith("1280x720/b.mp4")
 
 
+def test_tweet_media_keeps_urls():
+    items = enrich._tweet_media(
+        {
+            "all": [
+                {"type": "photo", "url": "https://pbs.twimg.com/media/a.jpg", "width": 1200, "height": 675},
+                {"type": "gif", "url": "https://video.twimg.com/g.mp4", "thumbnail_url": "https://pbs.twimg.com/g.jpg", "width": 400, "height": 400},
+            ]
+        }
+    )
+    assert items[0] == {"type": "image", "src": "https://pbs.twimg.com/media/a.jpg", "ratio": 0.5625}
+    assert items[1]["src"] == "https://video.twimg.com/g.mp4" and items[1]["poster"].endswith("g.jpg") and items[1]["gif"]
+
+
 if __name__ == "__main__":
     for name, fn in list(globals().items()):
         if name.startswith("test_"):
             fn()
             print("ok", name)
+
+
+def test_digest_detection():
+    assert run.DIGEST_RE.search("24-hour news summary.\n\n1 — Unitree unveiled H2-X")
+    assert run.DIGEST_RE.search("خلاصه اخبار ۲۴ ساعت گذشته")
+    assert not run.DIGEST_RE.search("OpenAI shipped a new model today")

@@ -1,7 +1,7 @@
 ---
 import Base from '../../layouts/Base.astro';
-import Hero from '../../components/Hero.astro';
-import Feed from '../../components/Feed.astro';
+import Timeline from '../../components/Timeline.astro';
+import Sidebar from '../../components/Sidebar.astro';
 import { SITE } from '../../site';
 import { getPosts, getTags, faNum } from '../../lib/posts';
 
@@ -11,10 +11,12 @@ export function getStaticPaths() {
 const { tag } = Astro.params;
 const posts = getPosts().filter((p) => p.article.tags.includes(tag!));
 ---
-<Base title={`اخبار ${tag}`} description={`تازه‌ترین اخبار ${tag} با خلاصه‌ی فارسی و جزئیات کامل منبع — ${SITE.name}`} image={posts[0]?.cover?.src}>
-  <div class="wrap">
-    <Hero current={tag} />
-    <header class="page-head" style="padding-top:8px"><h1 style="font-size:1.3rem">اخبار {tag}</h1><p><span data-num>{faNum(posts.length)}</span> خبر</p></header>
-    <Feed posts={posts} />
+<Base title={`اخبار ${tag}`} description={`تازه‌ترین اخبار ${tag} با ترجمه‌ی فارسی، تصویر و ویدیو و پیوند به منبع اصلی — ${SITE.name}`} image={posts.find((p) => p.cover)?.cover?.src}>
+  <div class="container">
+    <header class="page-head"><h1>اخبار {tag}</h1><p><span data-num>{faNum(posts.length)}</span> خبر</p></header>
+    <div class="layout">
+      <div class="col-main"><Timeline posts={posts} title={`خط زمانی ${tag}`} /></div>
+      <Sidebar current={tag} />
+    </div>
   </div>
 </Base>

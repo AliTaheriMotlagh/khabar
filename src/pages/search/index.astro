@@ -2,10 +2,10 @@
 import Base from '../../layouts/Base.astro';
 import { url } from '../../lib/posts';
 ---
-<Base title="جستجو" description="جستجو در همه‌ی خبرها">
-  <div class="wrap search-page">
-    <header class="page-head"><h1>جستجو</h1><p>در عنوان‌ها، خلاصه‌ها و موضوع‌ها.</p></header>
-    <div id="search" style="margin-top:14px"></div>
+<Base title="جستجو" description="جستجو در همه‌ی خبرها: عنوان‌ها، ترجمه‌ها و موضوع‌ها.">
+  <div class="container narrow search-page">
+    <header class="page-head"><h1>جستجو</h1><p>در عنوان‌ها، ترجمه‌ها و موضوع‌ها.</p></header>
+    <div id="search"></div>
     <noscript><p>برای جستجو جاوااسکریپت لازم است.</p></noscript>
   </div>
   <link rel="stylesheet" href={url('pagefind/pagefind-ui.css')} />

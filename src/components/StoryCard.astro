@@ -1,0 +1,58 @@
+---
+// One entry on the timeline. In the short "list" view it collapses to a linked headline row.
+import Icon from './Icon.astro';
+import Media from './Media.astro';
+import Reactions from './Reactions.astro';
+import SaveButton from './SaveButton.astro';
+import SourceChip from './SourceChip.astro';
+import DigestCard from './DigestCard.astro';
+import { faTime, sized, tagHref, type Post } from '../lib/posts';
+interface Props { post: Post; eager?: boolean }
+const { post, eager = false } = Astro.props;
+const a = post.article;
+const tag = a.tags[0];
+const thumb = post.cover ? sized(post.cover.src || post.cover.poster, 'small') : '';
+---
+<li class="tl-item" data-id={post.id} data-kind={post.kind}>
+  <span class="tl-dot" aria-hidden="true"></span>
+  <time class="tl-time" datetime={post.date} data-num>{faTime(post.date)}</time>
+  {
+    post.kind === 'digest' ? (
+      <DigestCard post={post} />
+    ) : (
+      <article class:list={['story', post.kind === 'brief' && 'is-brief']} aria-labelledby={`t-${post.id}`}>
+        {thumb && <img class="row-thumb" src={thumb} alt="" width="72" height="72" loading="lazy" decoding="async" referrerpolicy="no-referrer" />}
+        <div class="story-main">
+          <div class="story-head">
+            {tag ? <a class="kicker" href={tagHref(tag)}>{tag}</a> : post.kind === 'brief' && <span class="kicker muted">کوتاه</span>}
+            <SourceChip link={post.source} />
+            <span class="seen" data-seen hidden><Icon name="check" /> خوانده‌اید</span>
+          </div>
+          <h3 id={`t-${post.id}`}><a href={post.href} data-astro-prefetch>{a.title}</a></h3>
+          {post.excerpt && post.excerpt !== a.title && <p class="excerpt" dir="auto">{post.excerpt}</p>}
+        </div>
+        {post.gallery.length > 0 ? (
+          <Media items={post.gallery} alt={a.title} href={post.href} fallbackHref={post.url} size="small" eager={eager} maxRatio={0.75} />
+        ) : (
+          post.cover && (
+            <a class="story-cover" href={post.href} tabindex="-1" aria-hidden="true">
+              <img src={thumb} alt="" loading={eager ? 'eager' : 'lazy'} decoding="async" referrerpolicy="no-referrer" data-fallback={post.url} />
+            </a>
+          )
+        )}
+        <footer class="story-foot">
+          <Reactions id={post.id} variant="mini" />
+          <a class="meta-btn" href={`${post.href}#comments`} aria-label="نظرها">
+            <Icon name="comment" /><span data-ccount={post.id}></span>
+          </a>
+          <span class="meta-btn" data-views={post.id} hidden><Icon name="eye" /><span></span></span>
+          <a class="read-more" href={post.href}>{post.kind === 'brief' ? 'خبر کامل' : 'ادامه'} <Icon name="arrow" /></a>
+          <div class="actions">
+            <SaveButton post={post} />
+            <button class="icon-btn" type="button" data-share data-url={post.href} data-title={a.title} aria-label="اشتراک‌گذاری"><Icon name="share" /></button>
+          </div>
+        </footer>
+      </article>
+    )
+  }
+</li>

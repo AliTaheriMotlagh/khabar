@@ -1,0 +1,64 @@
+{
+ "id": 6087,
+ "url": "https://t.me/dlmehr/6087",
+ "date": "2026-10-24T00:59:24+00:00",
+ "text": "https://fxtwitter.com/bneyshabur/status/2113749086851789187?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+ "forwarded_from": null,
+ "digest": false,
+ "hash": "e6bddbd85ed3",
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/bneyshabur/status/2113749086851789187?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+  "site": "FxTwitter",
+  "title": "Behnam Neyshabur (@bneyshabur)",
+  "description": "We asked Baseten to independently evaluate @mirendil’s base models. We shared our model endpoints so they could evaluate them on their own private codebases. Mirendil-Base-Large ended up being the best of all the models they tested!\nThank you, @baseten,…",
+  "image": "https://cdn4.telesco.pe/file/dKl8rgaQVkblxruU990Tj4tWf-F7yhHL1NQfxwwH0Hzwgqdgo3wIbDrai6N4sMcDkz5_HuIOkkJ3z4uODx-Bt8ju1JM4owHfNOxSyeWsu52s6pUZGL2F4zrUQRJwOGZ9_wMaZqEK3ZpFN2hYDMwps8PtZJ1IG4DjE4m2kuigGU2C1jjaBWTr_oD3OIr3WOIL8gjeP72_mB7geD_mT20wKmzCA2aN_XqHut9xQ8SI2vgK7T1EC4AqXZDTJS4KRA3thb-EfUPqNUWHIHYxCR6wr-wusMoAYIfa2v1bp85D6t2hNWCH7f_4LgvakE2x7Lpd7c78f0P9yVx6qWheRk4B0g.jpg"
+ },
+ "gholam": {
+  "text": "ببین رفیق، بهنام نیشابور خبر داده که تیم «میرندیل» مدل‌های پایه‌شون رو دادن دست بچه‌های شرکت Baseten تا کاملاً مستقل و بی‌طرف محک بخورن. ماجرا از این قرار بوده که دسترسی کامل به اندپوینت‌ها دادن تا این غول‌های پردازشی روی کدهای خصوصی و ندیده خود Baseten تست بشن و عیارشون مشخص بشه. تهِ ماجرا هم گل کاشته و مدل Mirendil-Base-Large بین تموم مدل‌های تست‌شده کمترین میزان بیت بر بایت (معیار خفن و دقیق سنجش کیفیت) رو ثبت کرده و زده رو دست همشون. حالا هم Baseten اعلام آمادگی کرده که به عنوان همکار رسمی، زیرساخت میزبانی و اجرای این مدل مشتی رو به دست بگیره.\n\nچرا مهمه؟ چون وقتی یه مدل روی کدهای محرمانه و ناشناخته یه شرکت گردن‌کلفت این‌طوری سربلند بیرون میاد، نشون میده تو دنیای واقعی برنامه‌نویسی ادعا نداره و واقعاً کاردرسته.",
+  "date": "2026-10-24T00:59:38+00:00"
+ },
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/bneyshabur/status/2113749086851789187",
+   "domain": "x.com",
+   "author": {
+    "name": "Behnam Neyshabur",
+    "handle": "bneyshabur",
+    "avatar": "https://pbs.twimg.com/profile_images/1136894710293774336/RN2vpcX0_200x200.png"
+   },
+   "text": "We asked Baseten to independently evaluate @mirendil’s base models. We shared our model endpoints so they could evaluate them on their own private codebases. Mirendil-Base-Large ended up being the best of all the models they tested!\n\nThank you, @baseten, for being a great partner!",
+   "date": 1792792028,
+   "media": [],
+   "links": [],
+   "quote": {
+    "author": {
+     "name": "Baseten",
+     "handle": "baseten",
+     "avatar": "https://pbs.twimg.com/profile_images/1924485072801140736/VyZekL_z_200x200.jpg"
+    },
+    "text": "We ran @mirendil's new base model on Baseten's private codebases; that is, code it's never seen. Mirendil-Base-Large had the lowest bits per byte (a tokenizer-independent measure of perplexity) of any model we tested.\n\nWe're excited to be the inference partner to serve Mirendil models. Congrats to the Mirendil team on this launch!",
+    "date": 1792791323,
+    "media": [
+     {
+      "type": "image",
+      "src": "https://pbs.twimg.com/media/HVWI3nFbYAAcVNS.png?name=orig",
+      "ratio": 0.5
+     }
+    ],
+    "links": []
+   }
+  }
+ ],
+ "article": {
+  "title": "بهنام نیشابور خبر داده که تیم «میرندیل» مدل‌های پایه‌شون رو دادن دست بچه‌های شرکت Baseten تا کاملاً مستقل و…",
+  "source_title": "We asked Baseten to independently evaluate @mirendil’s base models. We shared our model endpoints so they could evaluate them on their own…",
+  "body": [
+   "ببین رفیق، بهنام نیشابور خبر داده که تیم «میرندیل» مدل‌های پایه‌شون رو دادن دست بچه‌های شرکت Baseten تا کاملاً مستقل و بی‌طرف محک بخورن. ماجرا از این قرار بوده که دسترسی کامل به اندپوینت‌ها دادن تا این غول‌های پردازشی روی کدهای خصوصی و ندیده خود Baseten تست بشن و عیارشون مشخص بشه. تهِ ماجرا هم گل کاشته و مدل Mirendil-Base-Large بین تموم مدل‌های تست‌شده کمترین میزان بیت بر بایت (معیار خفن و دقیق سنجش کیفیت) رو ثبت کرده و زده رو دست همشون. حالا هم Baseten اعلام آمادگی کرده که به عنوان همکار رسمی، زیرساخت میزبانی و اجرای این مدل مشتی رو به دست بگیره."
+  ],
+  "why": "چون وقتی یه مدل روی کدهای محرمانه و ناشناخته یه شرکت گردن‌کلفت این‌طوری سربلند بیرون میاد، نشون میده تو دنیای واقعی برنامه‌نویسی ادعا نداره و واقعاً کاردرسته.",
+  "tags": []
+ },
+ "updated": "2026-10-24T11:28:35+00:00"
+}

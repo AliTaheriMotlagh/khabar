@@ -1,0 +1,73 @@
+{
+ "id": 6072,
+ "url": "https://t.me/dlmehr/6072",
+ "date": "2026-10-23T18:13:57+00:00",
+ "text": "https://fxtwitter.com/kimmonismus/status/2113685048478077197?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+ "forwarded_from": null,
+ "digest": false,
+ "hash": "cf0af938e6ae",
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/kimmonismus/status/2113685048478077197?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+  "site": "FxTwitter",
+  "title": "Chubby ♨️ (@kimmonismus)",
+  "description": "Seriously, this is such an insane release, I did not expect this:\nKimi K3.1 Pro beats every listed US frontier model on 6 of 14 benchmarks in Moonshot’s evaluations.\nAt $2 per million input tokens and $10 per million output tokens, its standard token rates…",
+  "image": "https://cdn4.telesco.pe/file/L0wWMbo-f2mGoYPicQS-W6VICi0L61XEsCvAWfzQ-Vb51lnEjWQCcBiOxxsCqlVA5n-6oUboiGSMc2hEbfNyl9pKRV0VN1U-UufbQOLZ1Wwdw_-XgghrotRT_wtS7EtnQwFGmDRi_VbSrOU2gxYx9YYp5BKxcQtEqPXDGYdJlX3dWlj0fJuwObMRneg7FbVoI6ZKWANAaX7OC4jhtKlrsp-RwyQ67v65ueq9DSEHC_P5v-cX_OvtypWG8fRbJUFv7zThKvTSNFAqlmRvXoF_KzCLyZ612sM3naPv3UUBrFkGFUzFd0_xdlbiS3rhHqRbM4JBSuXFdkbDt-M0hd0A3w.jpg"
+ },
+ "gholam": {
+  "text": "رفیق، این شرکت چینی مون‌شات با رونمایی از مدل «Kimi K3.1 Pro» حسابی گرد و خاک کرده و تو ۶ تا از ۱۴ تا بنچ‌مارک اصلی، شاخ غول‌های آمریکایی رو شکسته. قضیه از این قراره که این غول چندوجهی ۲.۸ تریلیون پارامتری با حافظه ۱ میلیون توکنی، تو کارای کدنویسی و ایجنت‌ها قشنگ پا به پای مدل‌هایی مثل Opus 5.5 و GPT-6 Astra اومده و حتی بعضی‌جاها زده رو دستشون. تیر خلاصش هم قیمتشه؛ با ۲ دلار برای ورودی و ۱۰ دلار برای خروجی به ازای هر میلیون توکن، نصف اوپوس و ۸۰ درصد ارزون‌تر از مدل جدید اوپن‌ای‌آی درمیاد.\n\nچرا مهمه؟ چون این زنگ خطری جدی برای انحصار غول‌های آمریکاییه و نشون میده مدل‌های فوق‌پیشرفته دارن با قیمت بسیار پایین‌تر و کارایی بالاتر به دست کاربرا می‌رسن.",
+  "date": "2026-10-23T18:40:26+00:00"
+ },
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/kimmonismus/status/2113685048478077197",
+   "domain": "x.com",
+   "author": {
+    "name": "Chubby♨️",
+    "handle": "kimmonismus",
+    "avatar": "https://pbs.twimg.com/profile_images/1728327996375719936/RW7VBJfD_200x200.jpg"
+   },
+   "text": "Seriously, this is such an insane release, I did not expect this:\n\nKimi K3.1 Pro beats every listed US frontier model on 6 of 14 benchmarks in Moonshot’s evaluations. \n\nAt $2 per million input tokens and $10 per million output tokens, its standard token rates are 50% below Opus 5.5 ($4/$20 !!) and 80% below GPT-6 Astra ($10/$50!!)\n\nIn other words: SOTA much cheaper, local running (with enough compute)",
+   "date": 1792776760,
+   "media": [
+    {
+     "type": "image",
+     "src": "https://pbs.twimg.com/media/HVVRWPnWoAAF3rR.jpg?name=orig",
+     "ratio": 1.5282
+    }
+   ],
+   "links": [],
+   "quote": {
+    "author": {
+     "name": "Chubby♨️",
+     "handle": "kimmonismus",
+     "avatar": "https://pbs.twimg.com/profile_images/1728327996375719936/RW7VBJfD_200x200.jpg"
+    },
+    "text": "Holy shit: Kimi k3.1 pro is on par or even outperforms Opus 5.5 and GPT-6 astra on key benchmarks!!\n\nThey just announced K3.1 Pro, a 2.8T-parameter multimodal model with a 1M-token context window that it claims rivals leading proprietary models in coding and agent tasks, with open weights promised by November 4.\n\nChina is back!!",
+    "date": 1792775922,
+    "media": [
+     {
+      "type": "image",
+      "src": "https://pbs.twimg.com/media/HVVOJttXUAASMqc.jpg?name=orig",
+      "ratio": 1.359
+     }
+    ],
+    "links": []
+   }
+  }
+ ],
+ "article": {
+  "title": "این شرکت چینی مون‌شات با رونمایی از مدل «Kimi K3.1 Pro» حسابی گرد و خاک کرده و تو ۶ تا از ۱۴ تا بنچ‌مارک…",
+  "source_title": "Seriously, this is such an insane release, I did not expect this:",
+  "body": [
+   "رفیق، این شرکت چینی مون‌شات با رونمایی از مدل «Kimi K3.1 Pro» حسابی گرد و خاک کرده و تو ۶ تا از ۱۴ تا بنچ‌مارک اصلی، شاخ غول‌های آمریکایی رو شکسته. قضیه از این قراره که این غول چندوجهی ۲.۸ تریلیون پارامتری با حافظه ۱ میلیون توکنی، تو کارای کدنویسی و ایجنت‌ها قشنگ پا به پای مدل‌هایی مثل Opus 5.5 و GPT-6 Astra اومده و حتی بعضی‌جاها زده رو دستشون. تیر خلاصش هم قیمتشه؛ با ۲ دلار برای ورودی و ۱۰ دلار برای خروجی به ازای هر میلیون توکن، نصف اوپوس و ۸۰ درصد ارزون‌تر از مدل جدید اوپن‌ای‌آی درمیاد."
+  ],
+  "why": "چون این زنگ خطری جدی برای انحصار غول‌های آمریکاییه و نشون میده مدل‌های فوق‌پیشرفته دارن با قیمت بسیار پایین‌تر و کارایی بالاتر به دست کاربرا می‌رسن.",
+  "tags": [
+   "هوش مصنوعی",
+   "اوپن‌ای‌آی"
+  ]
+ },
+ "updated": "2026-10-24T11:29:34+00:00"
+}

@@ -1,0 +1,73 @@
+{
+ "id": 6074,
+ "url": "https://t.me/dlmehr/6074",
+ "date": "2026-10-23T18:47:38+00:00",
+ "text": "https://fxtwitter.com/andrewcurran_/status/2113693821930479725?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+ "forwarded_from": null,
+ "digest": false,
+ "hash": "721c90db2ba3",
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/andrewcurran_/status/2113693821930479725?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+  "site": "🧵 Thread • FxTwitter",
+  "title": "Andrew Curran (@AndrewCurran_)",
+  "description": "Models are are now approaching a massive general jump in cyber capabilities. From the Kimi K3.1 launch post:\n'During development, we observed vulnerability research performance improving steadily as post-training scaled. Tracing the source of this trend…",
+  "image": "https://cdn4.telesco.pe/file/Yumc0ksyVrJ87rdW2mH-dnPeBS2_niWnovoBmAWhXcKLtdKAzPplSzwnHezsmssLisWAePTH41lFuSK8rR1YHwQSSuhYZAz2t0Sb8N0DP9c9lAxOu5D7uwpE-rZ4PZXAefCv_47pFrSAOKWEBL3Kme2TILIdUcsstYBGuTJqPvimPH9RqERMN8o6hdgZ_iuIURgemwymkEJNzTnflX59Z6g-5e_abpFHAW6ydzTeYn__9BIVSgG591NBRc4i9Fjfv1DGsA74zOpoMj501EkybtkLnggssa2Da6G9qAR8YDvyQneuw3G01gLfX8YyVJKSFctkX62asPDRJH_-_Nt9ig.jpg"
+ },
+ "gholam": {
+  "text": "ببین رفیق، اندرو کوران با استناد به معرفی مدل جدید Kimi K3.1 از شرکت مون‌شات، یه خبر جدی داده که نشون میده هوش مصنوعی داره به یه جهش وحشتناک توی مهارت‌های سایبری و نفوذ امنیتی می‌رسه. ماجرا از این قراره که سازنده‌های مدل وسط آموزش روی داده‌های عمومی فهمیدن استعداد این غول جدید توی پیدا کردن باگ و کارهای هکری، خودبه‌خود و به شکل سرسام‌آوری بالا رفته. واسه همین، تیم مون‌شات عمداً ترمز قابلیت‌های تهاجمی سایبری K3.1 Pro رو کشیده و دست و بال مدل رو بسته تا مبادا یه سلاح هک پیشرفته و بی‌در و پیکر دست عموم بیفته.\n\nچرا مهمه؟ چون نشون میده مدل‌های بزرگ زبانی حتی بدون آموزش مستقیم هم دارن به هکرهای قهاری تبدیل میشن و اگه شرکت‌ها مهارشون نکنن، امنیت کل دنیای دیجیتال بدجوری به خطر میفته.",
+  "date": "2026-10-23T18:48:00+00:00"
+ },
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/AndrewCurran_/status/2113693821930479725",
+   "domain": "x.com",
+   "author": {
+    "name": "Andrew Curran",
+    "handle": "AndrewCurran_",
+    "avatar": "https://pbs.twimg.com/profile_images/1596945208058744833/_X3LT7fb_200x200.jpg"
+   },
+   "text": "Models are are now approaching a massive general jump in cyber capabilities. From the Kimi K3.1 launch post:\n\n'During development, we observed vulnerability research performance improving steadily as post-training scaled. Tracing the source of this trend, we found that cyber-related content was embedded within the general mid-training corpus, and cyber-related tasks were present in the RL environment mix — a natural byproduct of training on broad data. In preliminary experiments on internal models, we found that without data removal at either the mid-training or the RL stage, downstream cyber capability would increase substantially.'",
+   "date": 1792778852,
+   "media": [
+    {
+     "type": "image",
+     "src": "https://pbs.twimg.com/media/HVVZU9mbkAAENVA.jpg?name=orig",
+     "ratio": 0.5213
+    }
+   ],
+   "links": [],
+   "quote": {
+    "author": {
+     "name": "Andrew Curran",
+     "handle": "AndrewCurran_",
+     "avatar": "https://pbs.twimg.com/profile_images/1596945208058744833/_X3LT7fb_200x200.jpg"
+    },
+    "text": "Moonshot is intentionally throttling cyber capabilities. From the blog;\n\n'First, we aim not to release open weights that would extend the absolute frontier of cyber capability. K3.1 Pro's offensive cyber capability is, by design, below what our pipeline can produce, and remains behind that of frontier proprietary models. Second, we intend to progressively raise the cyber capability available in open weights. We believe making K3.1 Pro available in a non-discriminatory way benefits people who need dual-use capabilities for defensive purposes.'",
+    "date": 1792776958,
+    "media": [
+     {
+      "type": "image",
+      "src": "https://pbs.twimg.com/media/HVVSGnRa8AAY8hf.jpg?name=orig",
+      "ratio": 0.4944
+     }
+    ],
+    "links": []
+   }
+  }
+ ],
+ "article": {
+  "title": "اندرو کوران با استناد به معرفی مدل جدید Kimi K3.1 از شرکت مون‌شات، یه خبر جدی داده که نشون میده هوش مصنوعی…",
+  "source_title": "Models are are now approaching a massive general jump in cyber capabilities. From the Kimi K3.1 launch post:",
+  "body": [
+   "ببین رفیق، اندرو کوران با استناد به معرفی مدل جدید Kimi K3.1 از شرکت مون‌شات، یه خبر جدی داده که نشون میده هوش مصنوعی داره به یه جهش وحشتناک توی مهارت‌های سایبری و نفوذ امنیتی می‌رسه. ماجرا از این قراره که سازنده‌های مدل وسط آموزش روی داده‌های عمومی فهمیدن استعداد این غول جدید توی پیدا کردن باگ و کارهای هکری، خودبه‌خود و به شکل سرسام‌آوری بالا رفته. واسه همین، تیم مون‌شات عمداً ترمز قابلیت‌های تهاجمی سایبری K3.1 Pro رو کشیده و دست و بال مدل رو بسته تا مبادا یه سلاح هک پیشرفته و بی‌در و پیکر دست عموم بیفته."
+  ],
+  "why": "چون نشون میده مدل‌های بزرگ زبانی حتی بدون آموزش مستقیم هم دارن به هکرهای قهاری تبدیل میشن و اگه شرکت‌ها مهارشون نکنن، امنیت کل دنیای دیجیتال بدجوری به خطر میفته.",
+  "tags": [
+   "هوش مصنوعی",
+   "امنیت"
+  ]
+ },
+ "updated": "2026-10-24T11:29:32+00:00"
+}

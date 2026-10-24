@@ -1,0 +1,74 @@
+{
+ "id": 6086,
+ "url": "https://t.me/dlmehr/6086",
+ "date": "2026-10-23T23:11:28+00:00",
+ "text": "https://fxtwitter.com/openai/status/2113766354386084338?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+ "forwarded_from": null,
+ "digest": false,
+ "hash": "b7653a6d0412",
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/openai/status/2113766354386084338?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+  "site": "FxTwitter · patchtheplanet.org",
+  "title": "OpenAI (@OpenAI)",
+  "description": "During this red-teaming exercise, we also found a vulnerability that allows for unauthenticated remote code execution in Brotli, a widely-deployed compression library included in many pieces of software such as Node.js, Bun, and Envoy.\nThe flaw could let…",
+  "image": "https://cdn4.telesco.pe/file/tGx7fxh8Wc1cYh2z2RNVARlSSSoMxbkIjDkZIcK8C30_NzZngOeS5ZCYNRkeNrFhjYd6B2hSAssaKsweTJhJy_7rRhHf25hb3g3Icz6aRIpg2BWEEmAbkaazv6QOc4pvqmW9fz0AiqRUmCPKz03FuAGnZT82mGzKawJFHGtMzyY5nT0dxLUXbXktEEbDdCqHlq5YegRe20_yfegcCmzJz-CTThkFlZvpEw8as1X5DDJHPy2di1BTtB48fQ9BzeoW-90LiD9bzT_e3qsgR5TOeKVxqeVTCZAGAA8dbjBnhDdfqkw-FFK0gZ3KCwhIwZEVxDSAHT-Jk3FSkY4Ud7fdkw.jpg"
+ },
+ "gholam": {
+  "text": "رفقا قضیه از این قراره که تیم امنیتی OpenAI موقع تست‌های نفوذ خودش، یه باگ فوق‌العاده خطرناک از نوع اجرای کد از راه دور (RCE) توی کتابخونه معروف فشرده‌سازی Brotli پیدا کرده. این باگ ناکس به هکر اجازه می‌داده بدون هیچ لاگین یا دسترسی خاصی، فقط با فرستادن یه مشت دیتای فشرده دستکاری‌شده، کل سرور یا کلاینت رو بفرسته هوا و کد خودش رو اجرا کنه. از اونجا که این کتابخونه توی تار و پود ابزارهای معروفی مثل Node.js، Bun و Envoy نشسته، عمق فاجعه می‌تونست خیلی از سرویس‌های آنلاین رو زمین‌گیر کنه. جالب اینجاست که باگ رو ماه‌ها پیش درست کرده بودن ولی تا همین گزارش OpenAI کسی بو نبرده بود این یه رخنه امنیتی بوده، که حالا دیگه پچ‌ها و نسخه‌های امنیتی جدیدش منتشر شده.\n\nاهمیتش اینه که Brotli همه جای وب استفاده می‌شه و اگه دست‌اندرکارای سرور و توسعه‌دهنده‌ها سیستم‌هاشون رو سریع آپدیت نکنن، دودستی اختیار سرور رو دادن دست هکرها.",
+  "date": "2026-10-23T23:11:46+00:00"
+ },
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/OpenAI/status/2113766354386084338",
+   "domain": "x.com",
+   "author": {
+    "name": "OpenAI",
+    "handle": "OpenAI",
+    "avatar": "https://pbs.twimg.com/profile_images/1885410181409820672/ztsaR0JW_200x200.jpg"
+   },
+   "text": "During this red-teaming exercise, we also found a vulnerability that allows for unauthenticated remote code execution in Brotli, a widely-deployed compression library included in many pieces of software such as Node.js, Bun, and Envoy.\n\nThe flaw could let an attacker run their own code on affected systems by sending or replying with malicious compressed data, without any need to create a user account. That is, an unpatched server that accepts compressed input could be taken over by a malicious client, and an unpatched client that accepts compressed input (such as “curl --compressed”) could be taken over by a malicious server.\n\nThis root cause issue was actually fixed in the Brotli source code in February, but it wasn’t known at the time that it gave rise to a security vulnerability and there was no more recent release of Brotli. Since Brotli is built into other software, any software which includes this library needs to take the update too, followed by the users of that software. We disclosed the vulnerability to Brotli and other downstream projects such as Node.js, which released or are currently releasing security updates, and Brotli cut new release versions and published a CVE.\n\nMore details on the patch and mitigations below:\nhttps://patchtheplanet.org/brotli",
+   "date": 1792796145,
+   "media": [],
+   "links": [
+    "https://patchtheplanet.org/brotli"
+   ],
+   "quote": {
+    "author": {
+     "name": "OpenAI",
+     "handle": "OpenAI",
+     "avatar": "https://pbs.twimg.com/profile_images/1885410181409820672/ztsaR0JW_200x200.jpg"
+    },
+    "text": "Over the past several months, we have substantially hardened the security of our research training environment. We’ve removed live internet access for all frontier models during training and built an offline world for them to use instead—a cached version of the web where they can still learn to browse, search, and use applications.\n\nOn September 20, after a model exploited a DNS misconfiguration to find a way outside of this offline world, we paused frontier training to strengthen containment further. We assembled teams of agents, powered by our most cyber-capable models, and tasked them with finding weaknesses in our research environments.\n\nWhile they found no route to the internet they could easily exploit while concealing their activity from our monitors, they did find zero-day vulnerabilities, virtual machine escapes, and hardware side-channels for communication between agents. We used their discoveries to further strengthen our defenses and contribute fixes to open-source software.\n\nAfter strengthening our containment architecture, we resumed our frontier RL training and inference on October 1. We’ve reserved substantial compute for continuous red-teaming, and made high-compute red-teaming part of the safety cases we use to decide whether frontier training and evaluation can proceed securely.\n\nhttps://openai.com/index/securing-our-frontier-model-training-environment/",
+    "date": 1792784806,
+    "media": [],
+    "links": [
+     "https://openai.com/index/securing-our-frontier-model-training-environment/"
+    ]
+   }
+  },
+  {
+   "kind": "link",
+   "url": "https://patchtheplanet.org/brotli",
+   "domain": "patchtheplanet.org",
+   "title": "Brotli vulnerability (CVE-2026-111497) — Patch the Planet",
+   "description": "Brotli decoder vulnerability: affected software, fixed releases, and how to disable Brotli decoding while you patch.",
+   "image": "https://patchtheplanet.org/og-image.png",
+   "site": "Patch the Planet"
+  }
+ ],
+ "article": {
+  "title": "رفقا قضیه از این قراره که تیم امنیتی OpenAI موقع تست‌های نفوذ خودش، یه باگ فوق‌العاده خطرناک از نوع اجرای کد…",
+  "source_title": "During this red-teaming exercise, we also found a vulnerability that allows for unauthenticated remote code execution in Brotli, a…",
+  "body": [
+   "رفقا قضیه از این قراره که تیم امنیتی OpenAI موقع تست‌های نفوذ خودش، یه باگ فوق‌العاده خطرناک از نوع اجرای کد از راه دور (RCE) توی کتابخونه معروف فشرده‌سازی Brotli پیدا کرده. این باگ ناکس به هکر اجازه می‌داده بدون هیچ لاگین یا دسترسی خاصی، فقط با فرستادن یه مشت دیتای فشرده دستکاری‌شده، کل سرور یا کلاینت رو بفرسته هوا و کد خودش رو اجرا کنه. از اونجا که این کتابخونه توی تار و پود ابزارهای معروفی مثل Node.js، Bun و Envoy نشسته، عمق فاجعه می‌تونست خیلی از سرویس‌های آنلاین رو زمین‌گیر کنه. جالب اینجاست که باگ رو ماه‌ها پیش درست کرده بودن ولی تا همین گزارش OpenAI کسی بو نبرده بود این یه رخنه امنیتی بوده، که حالا دیگه پچ‌ها و نسخه‌های امنیتی جدیدش منتشر شده."
+  ],
+  "why": "Brotli همه جای وب استفاده می‌شه و اگه دست‌اندرکارای سرور و توسعه‌دهنده‌ها سیستم‌هاشون رو سریع آپدیت نکنن، دودستی اختیار سرور رو دادن دست هکرها.",
+  "tags": [
+   "اوپن‌ای‌آی",
+   "امنیت"
+  ]
+ },
+ "updated": "2026-10-24T11:28:36+00:00"
+}

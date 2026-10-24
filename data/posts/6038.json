@@ -1,0 +1,60 @@
+{
+ "id": 6038,
+ "url": "https://t.me/dlmehr/6038",
+ "date": "2026-10-22T00:03:25+00:00",
+ "text": "https://fxtwitter.com/nousresearch/status/2113010017645244623?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+ "forwarded_from": null,
+ "digest": false,
+ "hash": "f2a7a2db523b",
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/nousresearch/status/2113010017645244623?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+  "site": "FxTwitter",
+  "title": "Nous Research (@NousResearch)",
+  "description": "Jensen closed his GTC Berlin 2026 keynote with this Hermes Agent demo as the finale.\nHe introduced it by saying the way to build an agent is to ask an agent to build it for you, so he installed and set up a customized Hermes in one prompt.\nThen he used…",
+  "image": null
+ },
+ "gholam": {
+  "text": "ببین آبجی و داداش من، جنیسن هوانگ رئیس انویدیا توی دموی آخر رویدادش با معرفی ایجنت هوش مصنوعی «هرمس» از شرکت Nous حسابی گردوخاک کرده؛ اونم با این ایده که برای ساختن یه ایجنت، کافیه فقط با یه پرامپت به خود ایجنت بگی برات بسازدش! ماجرا از این قراره که هرمس روی کارت‌های انویدیا بالا اومده و با زنجیر کردن ابزارها و مدل‌های دیگه‌ای مثل نموترون و جی‌پی‌تی-۶ آسترا، یه محیط شبیه‌سازی کامل توی بلندر و آیزاک لب برای رباتِ «میکروداک» هاگینگ‌فیس سرهم کرده. خلاصه بعد از اینکه هزاران اردک شبیه‌سازی‌شده توی اون پیست تمرین داده شدن و خطاشون گرفته شد، هوش نهایی مستقیم رفت توی کالبد ربات واقعی در دنیای فیزیکی. تیم سازنده هم تأکید کرده که قدرت واقعی دست ابزارهای متن‌بازه، چون بهت اجازه می‌ده بدون منت کشیدن از غول‌های فناوری، مدل‌های ابری و محلی رو به هم وصل کنی و پروژه‌های سنگین بالا بیاری.\n\nچرا مهمه؟ اهمیتش اینه که نشون می‌ده آینده‌ی کاربری هوش مصنوعی دیگه فقط متن نوشتن نیست، بلکه ایجنت‌ها دارن صفر تا صد طراحی محیط و آموزش ربات‌های فیزیکی رو دست می‌گیرن.",
+  "date": "2026-10-22T00:03:47+00:00"
+ },
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/NousResearch/status/2113010017645244623",
+   "domain": "x.com",
+   "author": {
+    "name": "Nous Research",
+    "handle": "NousResearch",
+    "avatar": "https://pbs.twimg.com/profile_images/1816254738234761216/TX7TW-Mp_200x200.jpg"
+   },
+   "text": "Jensen closed his GTC Berlin 2026 keynote with this Hermes Agent demo as the finale. \n\nHe introduced it by saying the way to build an agent is to ask an agent to build it for you, so he installed and set up a customized Hermes in one prompt. \n\nThen he used Hermes, running on @nvidia RTX Spark, to create a simulated training environment for the @huggingface Microduck. Hermes planned an obstacle course with Nemotron and had GPT-6 Astra build it using FreeCAD, Omniverse libraries, Blender, Newton, and Isaac Lab. Hermes trained thousands of simulated ducks on that course until the validated policy was ready to run on the real robot in the physical world.\n\nAt Nous, we believe open source is a practical tool as much as a philosophical ideal. It gives users the ability to build powerful, complex workflows chaining numerous local+cloud models, devices, and tools themselves instead of waiting for a company to enable them.",
+   "date": 1792615820,
+   "media": [
+    {
+     "type": "video",
+     "src": "https://video.twimg.com/amplify_video/2113007811546230785/vid/avc1/1280x720/9zVVDG450NFvsLYp.mp4?tag=29",
+     "poster": "https://pbs.twimg.com/amplify_video_thumb/2113007811546230785/img/qNPId_VjirdnTdfB.jpg",
+     "ratio": 0.5625,
+     "duration": 395.366,
+     "gif": false
+    }
+   ],
+   "links": []
+  }
+ ],
+ "article": {
+  "title": "و داداش من، جنیسن هوانگ رئیس انویدیا توی دموی آخر رویدادش با معرفی ایجنت هوش مصنوعی «هرمس» از شرکت Nous حسابی…",
+  "source_title": "Jensen closed his GTC Berlin 2026 keynote with this Hermes Agent demo as the finale.",
+  "body": [
+   "ببین آبجی و داداش من، جنیسن هوانگ رئیس انویدیا توی دموی آخر رویدادش با معرفی ایجنت هوش مصنوعی «هرمس» از شرکت Nous حسابی گردوخاک کرده؛ اونم با این ایده که برای ساختن یه ایجنت، کافیه فقط با یه پرامپت به خود ایجنت بگی برات بسازدش! ماجرا از این قراره که هرمس روی کارت‌های انویدیا بالا اومده و با زنجیر کردن ابزارها و مدل‌های دیگه‌ای مثل نموترون و جی‌پی‌تی-۶ آسترا، یه محیط شبیه‌سازی کامل توی بلندر و آیزاک لب برای رباتِ «میکروداک» هاگینگ‌فیس سرهم کرده. خلاصه بعد از اینکه هزاران اردک شبیه‌سازی‌شده توی اون پیست تمرین داده شدن و خطاشون گرفته شد، هوش نهایی مستقیم رفت توی کالبد ربات واقعی در دنیای فیزیکی. تیم سازنده هم تأکید کرده که قدرت واقعی دست ابزارهای متن‌بازه، چون بهت اجازه می‌ده بدون منت کشیدن از غول‌های فناوری، مدل‌های ابری و محلی رو به هم وصل کنی و پروژه‌های سنگین بالا بیاری."
+  ],
+  "why": "اهمیتش اینه که نشون می‌ده آینده‌ی کاربری هوش مصنوعی دیگه فقط متن نوشتن نیست، بلکه ایجنت‌ها دارن صفر تا صد طراحی محیط و آموزش ربات‌های فیزیکی رو دست می‌گیرن.",
+  "tags": [
+   "هوش مصنوعی",
+   "انویدیا",
+   "رباتیک"
+  ]
+ },
+ "updated": "2026-10-24T11:30:07+00:00"
+}

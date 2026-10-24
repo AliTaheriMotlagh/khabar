@@ -1,61 +1,69 @@
 ---
+// Every image and video of a post, straight from its original URL (nothing is re-hosted).
 import Icon from './Icon.astro';
-import { url, duration, type Media } from '../lib/posts';
-interface Props { items: Media[]; alt: string; eager?: boolean; fallbackHref?: string }
-const { items, alt, eager = false, fallbackHref } = Astro.props;
-const shown = items.slice(0, 4);
+import { sized, duration, faNum, type Media } from '../lib/posts';
+interface Props {
+  items: Media[];
+  alt: string;
+  /** Telegram post: where readers go when a media URL has expired. */
+  fallbackHref: string;
+  href?: string;
+  limit?: number;
+  size?: 'small' | 'medium' | 'large';
+  eager?: boolean;
+  /** Tallest shape allowed for a single item (height / width): cards stay compact, articles show more. */
+  maxRatio?: number;
+}
+const { items, alt, fallbackHref, href, limit = 4, size = 'medium', eager = false, maxRatio = 1.25 } = Astro.props;
+const shown = items.slice(0, limit);
+const extra = items.length - shown.length;
 const n = shown.length;
-const hasVideo = shown.some((m) => m.type === 'video');
+// A single item keeps its own shape (within limits); several share a tidy grid.
+const shape = (m: Media) => (n === 1 ? `aspect-ratio:${(1 / Math.min(Math.max(m.ratio || 0.5625, 0.45), maxRatio)).toFixed(4)}` : undefined);
+const label = (i: number) => (n > 1 ? `${alt} — ${faNum(i + 1)} از ${faNum(items.length)}` : alt);
 ---
 {
   n > 0 && (
-    <div class="media-wrap">
-      <div class={`media n${n}`}>
-        <button class="reveal" type="button">
-          <Icon name={hasVideo ? 'play' : 'image'} />
-          {hasVideo ? 'نمایش ویدیو' : n > 1 ? `نمایش ${n.toLocaleString('fa-IR')} تصویر` : 'نمایش تصویر'}
-        </button>
-        {shown.map((m, i) =>
-          m.type === 'image' ? (
-            <figure>
-              <img
-                src={url(m.src!)}
-                alt={n > 1 ? `${alt} — تصویر ${(i + 1).toLocaleString('fa-IR')}` : alt}
-                width={m.width}
-                height={m.height}
-                loading={eager && i === 0 ? 'eager' : 'lazy'}
-                fetchpriority={eager && i === 0 ? 'high' : undefined}
-                decoding="async"
-              />
-            </figure>
-          ) : m.src ? (
-            <figure>
-              <video
-                src={url(m.src)}
-                poster={m.poster ? url(m.poster) : undefined}
-                width={m.width}
-                height={m.height}
-                controls
-                playsinline
-                preload="none"
-                autoplay={m.gif}
-                loop={m.gif}
-                muted={m.gif}
-                aria-label={`ویدیو: ${alt}`}
-              />
-              {m.duration && !m.gif && <span class="badge" data-num>{duration(m.duration)}</span>}
-            </figure>
+    <div class:list={['gallery', `n${n}`]} data-gallery>
+      {shown.map((m, i) => (
+        <figure style={shape(m)}>
+          {m.type === 'video' && m.src ? (
+            <video
+              src={m.src}
+              poster={sized(m.poster, size) || undefined}
+              preload="none"
+              playsinline
+              controls={!m.gif}
+              autoplay={m.gif}
+              muted={m.gif}
+              loop={m.gif}
+              aria-label={`ویدیو: ${label(i)}`}
+              data-fallback={fallbackHref}
+            />
           ) : (
-            <figure>
-              <a class="vid-link" href={m.remote || fallbackHref} target="_blank" rel="noopener" aria-label="دیدن ویدیو در منبع اصلی">
-                <img src={url(m.poster!)} alt={alt} width={m.width} height={m.height} loading={eager ? 'eager' : 'lazy'} decoding="async" />
-                <span class="play"><span><Icon name="play" /></span></span>
-              </a>
-              <span class="badge">ویدیو در منبع اصلی</span>
-            </figure>
-          ),
-        )}
-      </div>
+            <img
+              src={sized(m.src || m.poster, size)}
+              alt={label(i)}
+              loading={eager && i === 0 ? 'eager' : 'lazy'}
+              fetchpriority={eager && i === 0 ? 'high' : undefined}
+              decoding="async"
+              referrerpolicy="no-referrer"
+              data-zoom={sized(m.src || m.poster, 'large')}
+              data-fallback={fallbackHref}
+            />
+          )}
+          {m.type === 'video' && !m.src && (
+            <a class="play" href={fallbackHref} target="_blank" rel="noopener" aria-label="دیدن ویدیو در تلگرام">
+              <span><Icon name="play" /></span>
+            </a>
+          )}
+          {m.type === 'video' && m.duration && !m.gif && <span class="badge" data-num>{duration(m.duration)}</span>}
+          {m.gif && <span class="badge">GIF</span>}
+          {extra > 0 && i === n - 1 && (
+            <a class="more" href={href ?? fallbackHref} aria-label={`${faNum(extra)} تصویر دیگر`}>+{faNum(extra)}</a>
+          )}
+        </figure>
+      ))}
     </div>
   )
 }

@@ -1,16 +1,32 @@
 ---
 import Base from '../../layouts/Base.astro';
+import Icon from '../../components/Icon.astro';
 import { SITE } from '../../site';
 import { url } from '../../lib/posts';
 ---
-<Base title="درباره" description={SITE.description}>
-  <article class="wrap article">
-    <h1>درباره‌ی {SITE.name}</h1>
-    <div class="prose">
-      <p>{SITE.name} نسخه‌ی وب کانال تلگرام <a href={`https://t.me/${SITE.channel}`} rel="noopener">@{SITE.channel}</a> است؛ برای وقتی که می‌خواهید خبرها را راحت، بی‌فیلتر و با تمرکز بخوانید.</p>
-      <p>هر پست کانال به‌طور خودکار به یک خبر کامل تبدیل می‌شود: خلاصه‌ی فارسی و خودمونی {SITE.gholam}، بخش «چرا مهمه؟»، و جزئیات کامل منبع — متن توییت یا مقاله، تصویر و ویدیو — بدون نیاز به باز کردن تلگرام یا ایکس.</p>
-      <p>همه‌چیز برای خواندن قابل تنظیم است: پوسته‌ی روشن، کاغذی، تیره و سیاه؛ پنج قلم فارسی؛ اندازه و فاصله‌ی خطوط؛ پهنای متن؛ حالت کم‌مصرف برای اینترنت ضعیف؛ و نمای «مثل کانال». خبرها را می‌توانید ذخیره کنید تا بعداً، حتی آفلاین، بخوانید.</p>
-      <p>اگر خبرخوان دارید، <a href={url('rss.xml')}>خوراک RSS</a> را دنبال کنید.</p>
-    </div>
-  </article>
+<Base title="درباره" description={`${SITE.name}: نسخه‌ی وب کانال تلگرام ${SITE.owner.name} با ترجمه‌ی فارسی ${SITE.gholam}.`}>
+  <div class="container narrow">
+    <article class="article about">
+      <h1>درباره‌ی {SITE.name}</h1>
+      <div class="prose">
+        <p>
+          {SITE.name} نسخه‌ی وب کانال تلگرام <a href={`https://t.me/${SITE.channel}`} rel="noopener" referrerpolicy="origin">Future Focus with Mehrzad</a> است؛
+          کانالی از <a href={SITE.owner.url} rel="noopener" referrerpolicy="origin">{SITE.owner.name}</a> درباره‌ی تازه‌ترین پیشرفت‌های هوش مصنوعی، یادگیری عمیق و فناوری‌های آینده.
+        </p>
+        <p>
+          هر پست کانال خودکار و چند دقیقه بعد از انتشار به یک خبر کامل تبدیل می‌شود: ترجمه‌ی فارسی و خودمونی {SITE.gholam} (اولین نظر زیر هر پست)،
+          بخش «چرا مهمه؟»، همه‌ی تصویرها و ویدیوهای منبع، و پیوند به منبع اصلی.
+        </p>
+        <p>
+          بدون ثبت‌نام می‌توانید واکنش بدهید، نظر بنویسید، با بقیه‌ی خواننده‌ها گفتگو کنید، امتیاز و نشان بگیرید، خبرها را ذخیره کنید و حتی آفلاین بخوانید.
+          سایت را می‌توانید مثل یک اپ روی گوشی نصب کنید.
+        </p>
+      </div>
+      <div class="row">
+        <a class="btn primary" href={`https://t.me/${SITE.channel}`} target="_blank" rel="noopener" referrerpolicy="origin"><Icon name="telegram" /> عضویت در کانال</a>
+        <a class="btn" href={SITE.owner.url} target="_blank" rel="noopener" referrerpolicy="origin">mehrzad.ai <Icon name="external" /></a>
+        <a class="btn" href={url('rss.xml')}><Icon name="rss" /> RSS</a>
+      </div>
+    </article>
+  </div>
 </Base>

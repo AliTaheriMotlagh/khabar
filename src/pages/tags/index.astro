@@ -1,13 +1,29 @@
 ---
 import Base from '../../layouts/Base.astro';
-import { getTags, tagHref, faNum } from '../../lib/posts';
-const tags = getTags();
+import Icon from '../../components/Icon.astro';
+import { getPosts, getTags, sized, tagHref, faNum } from '../../lib/posts';
+const posts = getPosts();
+const topics = getTags().map((t) => {
+  const items = posts.filter((p) => p.article.tags.includes(t.tag));
+  return { ...t, latest: items[0], cover: items.find((p) => p.cover)?.cover };
+});
 ---
-<Base title="همه‌ی موضوع‌ها" description="فهرست موضوع‌های خبری: هوش مصنوعی، فناوری، فضا، سلامت و ...">
-  <div class="wrap">
-    <header class="page-head"><h1>موضوع‌ها</h1></header>
-    <div class="tags" style="margin-top:16px">
-      {tags.map((t) => <a class="chip" href={tagHref(t.tag)}>{t.tag} <small data-num>{faNum(t.count)}</small></a>)}
+<Base title="همه‌ی موضوع‌ها" description="موضوع‌های خبری: هوش مصنوعی، اوپن‌ای‌آی، آنتروپیک، گوگل، امنیت، رباتیک، تراشه، فضا، سلامت و …">
+  <div class="container">
+    <header class="page-head"><h1>موضوع‌ها</h1><p>هر موضوع، یک خط زمانی جدا.</p></header>
+    <div class="topic-grid">
+      {
+        topics.map((t) => (
+          <a class="topic" href={tagHref(t.tag)}>
+            {t.cover ? <img src={sized(t.cover.src || t.cover.poster, 'small')} alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer" /> : <span class="ph"><Icon name="hash" /></span>}
+            <span class="topic-body">
+              <b>{t.tag}</b>
+              <small><span data-num>{faNum(t.count)}</span> خبر</small>
+              {t.latest && <span class="topic-latest">{t.latest.article.title}</span>}
+            </span>
+          </a>
+        ))
+      }
     </div>
   </div>
 </Base>

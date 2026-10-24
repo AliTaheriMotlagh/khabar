@@ -1,0 +1,54 @@
+---
+// Front-page lead: the newest story large, the next few beside it.
+import Icon from './Icon.astro';
+import SourceChip from './SourceChip.astro';
+import { SITE } from '../site';
+import { sized, tagHref, type Post } from '../lib/posts';
+interface Props { posts: Post[] }
+const [main, ...side] = Astro.props.posts;
+const img = (p: Post, size: 'small' | 'large') => (p.cover ? sized(p.cover.src || p.cover.poster, size) : '');
+---
+{
+  main && (
+    <section class="lead" aria-label="مهم‌ترین خبرهای تازه">
+      <article class:list={['lead-main', !main.cover && 'no-img']} data-id={main.id}>
+        {main.cover && (
+          <img src={img(main, 'large')} alt="" loading="eager" fetchpriority="high" decoding="async" referrerpolicy="no-referrer" data-fallback={main.url} />
+        )}
+        <div class="lead-body">
+          <div class="story-head">
+            {main.article.tags[0] && <a class="kicker on-dark" href={tagHref(main.article.tags[0])}>{main.article.tags[0]}</a>}
+            <span class="pill live"><i></i> تازه</span>
+          </div>
+          <h2><a href={main.href}>{main.article.title}</a></h2>
+          <p class="excerpt">{main.excerpt}</p>
+          <div class="lead-meta">
+            <span class="by"><span class="g-av" aria-hidden="true">غ</span> ترجمه‌ی {SITE.gholam}</span>
+            <time datetime={main.date} data-f="rel"></time>
+          </div>
+        </div>
+      </article>
+      <div class="lead-side">
+        {side.map((p) => (
+          <article class="lead-mini" data-id={p.id}>
+            <a class="thumb" href={p.href} tabindex="-1" aria-hidden="true">
+              {p.cover ? (
+                <img src={img(p, 'small')} alt="" loading="eager" decoding="async" referrerpolicy="no-referrer" data-fallback={p.url} />
+              ) : (
+                <Icon name="news" />
+              )}
+            </a>
+            <div>
+              <div class="story-head">
+                {p.article.tags[0] && <span class="kicker">{p.article.tags[0]}</span>}
+                <SourceChip link={p.source} />
+              </div>
+              <h3><a href={p.href}>{p.article.title}</a></h3>
+              <time datetime={p.date} data-f="rel"></time>
+            </div>
+          </article>
+        ))}
+      </div>
+    </section>
+  )
+}

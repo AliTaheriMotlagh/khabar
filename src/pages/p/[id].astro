@@ -3,9 +3,13 @@ import Base from '../../layouts/Base.astro';
 import Icon from '../../components/Icon.astro';
 import Media from '../../components/Media.astro';
 import SourceCard from '../../components/SourceCard.astro';
+import SourceChip from '../../components/SourceChip.astro';
 import SaveButton from '../../components/SaveButton.astro';
+import Reactions from '../../components/Reactions.astro';
+import Comments from '../../components/Comments.astro';
+import Sidebar from '../../components/Sidebar.astro';
 import { SITE } from '../../site';
-import { getPosts, related, url, faDate, faNum, tagHref, type Post } from '../../lib/posts';
+import { abs, getPosts, related, sized, url, faDate, faNum, tagHref, type Post } from '../../lib/posts';
 
 export function getStaticPaths() {
   const posts = getPosts();
@@ -17,12 +21,12 @@ export function getStaticPaths() {
 interface Props { post: Post; newer: Post | null; older: Post | null }
 const { post, newer, older } = Astro.props;
 const a = post.article;
-const abs = (p: string) => new URL(url(p), Astro.site).href;
 const description = (a.why ? `${post.excerpt} ${a.why}` : post.excerpt).slice(0, 300) || SITE.description;
-const fromGholam = post.hasGholam;
-const rel = related(post);
-const shareUrl = new URL(post.href, Astro.site).href;
+const coverSrc = post.cover ? sized(post.cover.src || post.cover.poster, 'large') : null;
+const shareUrl = abs(`p/${post.id}/`);
 const enc = encodeURIComponent;
+const ownMedia = (post.media ?? []).length > 0;
+const rel = related(post);
 
 const jsonLd = [
   {
@@ -32,22 +36,24 @@ const jsonLd = [
     description,
     inLanguage: 'fa-IR',
     datePublished: post.date,
-    dateModified: post.date,
-    mainEntityOfPage: shareUrl,
-    image: post.cover ? [abs(post.cover.src)] : [abs('og.png')],
+    dateModified: post.updated || post.date,
+    mainEntityOfPage: { '@type': 'WebPage', '@id': shareUrl },
+    url: shareUrl,
+    image: coverSrc ? [coverSrc] : [abs('og.png')],
     keywords: a.tags.join(', '),
     articleSection: a.tags[0],
-    author: [{ '@type': 'Person', name: fromGholam ? SITE.gholam : SITE.author, url: `https://t.me/${SITE.channel}` }],
-    publisher: { '@type': 'Organization', name: SITE.name, logo: { '@type': 'ImageObject', url: abs('icon-512.png') } },
-    isBasedOn: post.source?.url,
+    author: { '@type': 'Person', name: SITE.owner.nameLatin, alternateName: SITE.owner.name, url: SITE.owner.url },
+    publisher: { '@id': `${SITE.url}/#org` },
+    isBasedOn: post.source?.url ?? post.url,
+    sameAs: post.url,
   },
   {
     '@context': 'https://schema.org',
     '@type': 'BreadcrumbList',
     itemListElement: [
       { '@type': 'ListItem', position: 1, name: SITE.name, item: abs('') },
-      ...(a.tags[0] ? [{ '@type': 'ListItem', position: 2, name: a.tags[0], item: new URL(`tag/${enc(a.tags[0])}/`, abs('')).href }] : []),
-      { '@type': 'ListItem', position: a.tags[0] ? 3 : 2, name: a.title.slice(0, 80) },
+      ...(a.tags[0] ? [{ '@type': 'ListItem', position: 2, name: a.tags[0], item: abs(`tag/${enc(a.tags[0])}/`) }] : []),
+      { '@type': 'ListItem', position: a.tags[0] ? 3 : 2, name: a.title.slice(0, 80), item: shareUrl },
     ],
   },
 ];
@@ -55,115 +61,122 @@ const jsonLd = [
 <Base
   title={a.title}
   description={description}
-  image={post.cover?.src}
+  image={coverSrc}
   imageAlt={a.title}
   type="article"
   published={post.date}
+  modified={post.updated || post.date}
+  section={a.tags[0]}
   tags={a.tags}
   jsonLd={jsonLd}
   progress
 >
-  <article class="wrap article" data-article data-id={post.id} data-pagefind-body>
-    <nav class="crumbs" aria-label="مسیر" data-pagefind-ignore>
-      <a href={url()}>خانه</a> ‹
-      {a.tags[0] && <><a href={tagHref(a.tags[0])}>{a.tags[0]}</a> ‹</>}
-      <span>خبر <span data-num>{faNum(post.id)}</span></span>
-    </nav>
+  <div class="container">
+    <div class="layout">
+      <article class="col-main article" data-article data-id={post.id} data-title={a.title} data-href={post.href} data-cover={post.cover ? sized(post.cover.src || post.cover.poster, 'small') : ''} data-tags={a.tags.join(',')} data-pagefind-body>
+        <nav class="crumbs" aria-label="مسیر" data-pagefind-ignore>
+          <a href={url()}>خانه</a>
+          {a.tags[0] && <><Icon name="arrow" /><a href={tagHref(a.tags[0])}>{a.tags[0]}</a></>}
+        </nav>
 
-    <h1 data-pagefind-meta="title">{a.title}</h1>
-    {a.source_title && <p class="src-title ltr" dir="ltr">{a.source_title}</p>}
+        <header class="article-head">
+          <div class="story-head" data-pagefind-ignore>
+            {post.kind === 'digest' && <span class="pill accent"><Icon name="bolt" /> خلاصه‌ی ۲۴ ساعت</span>}
+            {a.tags.slice(0, 3).map((t) => <a class="kicker" href={tagHref(t)}>{t}</a>)}
+            <SourceChip link={post.source} />
+          </div>
+          <h1 data-pagefind-meta="title">{a.title}</h1>
+          <div class="article-meta" data-pagefind-ignore>
+            {post.kind === 'story' ? (
+              <span class="by"><span class="g-av" aria-hidden="true">غ</span><span>ترجمه و روایت <b>{SITE.gholam}</b></span></span>
+            ) : (
+              <span class="by"><span class="g-av tg" aria-hidden="true"><Icon name="telegram" /></span><span>از کانال <b>{SITE.nameLatin}</b></span></span>
+            )}
+            <time datetime={post.date} data-f="long">{faDate(post.date, { dateStyle: 'full', timeStyle: 'short' })}</time>
+            <span><Icon name="clock" /> <span data-num>{faNum(post.minutes)}</span> دقیقه</span>
+            <span data-views={post.id} hidden><Icon name="eye" /> <span></span> بازدید</span>
+          </div>
+        </header>
 
-    <div class="meta" data-pagefind-ignore>
-      <time datetime={post.date} data-f="long">{faDate(post.date, { dateStyle: 'full', timeStyle: 'short' })}</time>
-      <span class="dot"></span>
-      <span><Icon name="clock" /> <span data-num>{faNum(post.readingMinutes)}</span> دقیقه مطالعه</span>
-      {post.views && <><span class="dot"></span><span><Icon name="eye" /> <span data-num>{faNum(post.views)}</span> بازدید</span></>}
-      {post.edited && <><span class="dot"></span><span>ویرایش‌شده</span></>}
-    </div>
+        {post.gallery.length > 0 && <div class="article-media"><Media items={post.gallery} alt={a.title} fallbackHref={post.url} limit={12} size="large" eager /></div>}
+        {!post.gallery.length && coverSrc && (
+          <div class="article-media"><Media items={[{ type: 'image', src: coverSrc }]} alt={a.title} fallbackHref={post.url} size="large" eager /></div>
+        )}
+        {coverSrc && <meta data-pagefind-meta={`image:${coverSrc}`} />}
 
-    {post.heroMedia.length > 0 && <Media items={post.heroMedia} alt={a.title} eager fallbackHref={post.source?.url} />}
-    {!post.heroMedia.length && post.cover && <Media items={[{ type: 'image', ...post.cover }]} alt={a.title} eager />}
-    {post.cover && <meta data-pagefind-meta={`image:${url(post.cover.src)}`} />}
-
-    {
-      fromGholam ? (
-        <div class="byline" data-pagefind-ignore>
-          <span class="av" aria-hidden="true">غ</span>
-          <span>به روایت <b>{SITE.gholam}</b></span>
-        </div>
-      ) : (
-        <div class="byline" data-pagefind-ignore>
-          <span class="av" aria-hidden="true"><Icon name="telegram" /></span>
-          <span>متن پست کانال — خلاصه‌ی فارسی به‌زودی اضافه می‌شود</span>
-        </div>
-      )
-    }
-    <div class="prose" dir="auto">
-      {a.body.map((p) => <p>{p}</p>)}
-    </div>
-    {a.why && <aside class="why"><b>چرا مهمه؟</b><p>{a.why}</p></aside>}
-
-    {
-      a.tags.length > 0 && (
-        <div class="tags" data-pagefind-ignore>
-          {a.tags.map((t) => <a class="chip" href={tagHref(t)} data-pagefind-filter="موضوع">{t}</a>)}
-        </div>
-      )
-    }
-
-    <div class="share" data-pagefind-ignore>
-      <span class="label">اشتراک:</span>
-      <SaveButton post={post} class="btn" label />
-      <a class="btn" href={`https://t.me/share/url?url=${enc(shareUrl)}&text=${enc(a.title)}`} target="_blank" rel="noopener"><Icon name="telegram" /> تلگرام</a>
-      <a class="btn" href={`https://x.com/intent/post?url=${enc(shareUrl)}&text=${enc(a.title)}`} target="_blank" rel="noopener"><Icon name="x-logo" /> ایکس</a>
-      <a class="btn" href={`https://wa.me/?text=${enc(`${a.title}\n${shareUrl}`)}`} target="_blank" rel="noopener"><Icon name="whatsapp" /> واتساپ</a>
-      <button class="btn" type="button" data-copy={post.href}><Icon name="link" /> کپی پیوند</button>
-    </div>
-
-    <div data-pagefind-ignore>
-      {post.links && post.links.length > 0 && <h2 class="section-title">منبع اصلی خبر</h2>}
-      {post.links?.map((l) => <SourceCard link={l} alt={a.title} />)}
-      {
-        !post.links?.length && post.preview?.title && (
-          <section class="source">
-            <div class="body">
-              <div class="site">{post.preview.site}</div>
-              <h3 dir="auto"><a href={post.preview.url} target="_blank" rel="noopener">{post.preview.title}</a></h3>
-              {post.preview.description && <p class="desc" dir="auto">{post.preview.description}</p>}
-            </div>
-          </section>
-        )
-      }
-
-      <h2 class="section-title">پست در کانال تلگرام</h2>
-      <section class="source">
-        {post.text && <div class="txt" dir="auto">{post.text}</div>}
-        <div class="stats">
-          {post.forwarded_from && <span>بازارسال از {post.forwarded_from}</span>}
-          <a href={post.url} target="_blank" rel="noopener">مشاهده در تلگرام ↗</a>
-        </div>
-      </section>
-
-      <nav class="pager" aria-label="خبر قبلی و بعدی">
-        {newer && <a href={newer.href} data-prev rel="prev"><small>خبر جدیدتر (p)</small>{newer.article.title}</a>}
-        {older && <a class="next" href={older.href} data-next rel="next"><small>خبر قدیمی‌تر (n)</small>{older.article.title}</a>}
-      </nav>
-
-      {
-        rel.length > 0 && (
-          <section class="related-wrap">
-            <h2 class="section-title">خبرهای مرتبط</h2>
-            <div class="related">
-              {rel.map((r) => (
-                <a href={r.href}>
-                  {r.cover && <img src={url(r.cover.src)} alt="" width="76" height="56" loading="lazy" decoding="async" />}
-                  <span>{r.article.title}</span>
-                </a>
+        {
+          post.kind === 'digest' ? (
+            <ol class="digest-list big">
+              {post.digestItems.map((i) => (
+                <li>
+                  <span class="n" data-num>{faNum(i.n)}</span>
+                  <a href={i.href} target={i.internal ? undefined : '_blank'} rel={i.internal ? undefined : 'noopener'}>{i.text}</a>
+                </li>
               ))}
-            </div>
-          </section>
-        )
-      }
+            </ol>
+          ) : (
+            <div class="prose" dir="auto">{a.body.map((p) => <p>{p}</p>)}</div>
+          )
+        }
+        {a.why && <aside class="why"><b><Icon name="sparkles" /> چرا مهمه؟</b><p>{a.why}</p></aside>}
+
+        <div class="engage" data-pagefind-ignore>
+          <Reactions id={post.id} />
+          <div class="share-bar">
+            <SaveButton post={post} class="btn" label />
+            <a class="btn" href={`https://t.me/share/url?url=${enc(shareUrl)}&text=${enc(a.title)}`} target="_blank" rel="noopener"><Icon name="telegram" /> تلگرام</a>
+            <a class="btn" href={`https://x.com/intent/post?url=${enc(shareUrl)}&text=${enc(a.title)}`} target="_blank" rel="noopener"><Icon name="x-logo" /> ایکس</a>
+            <a class="btn" href={`https://wa.me/?text=${enc(`${a.title}\n${shareUrl}`)}`} target="_blank" rel="noopener"><Icon name="whatsapp" /> واتساپ</a>
+            <button class="btn" type="button" data-copy={post.href}><Icon name="link" /> کپی پیوند</button>
+          </div>
+        </div>
+
+        <div data-pagefind-ignore>
+          {post.links && post.links.length > 0 && <h2 class="section-title"><Icon name="link" /> منبع خبر</h2>}
+          {post.links?.map((l) => <SourceCard link={l} alt={a.title} fallbackHref={post.url} showMedia={ownMedia} />)}
+          {
+            !post.links?.length && post.preview?.title && (
+              <section class="source page">
+                <div class="body">
+                  <span class="site">{post.preview.site}</span>
+                  <h3 dir="auto"><a href={post.preview.url} target="_blank" rel="noopener">{post.preview.title}</a></h3>
+                  {post.preview.description && <p dir="auto">{post.preview.description}</p>}
+                </div>
+              </section>
+            )
+          }
+
+          <a class="cta" href={post.url} target="_blank" rel="noopener" referrerpolicy="origin">
+            <Icon name="telegram" />
+            <span><b>این خبر را در کانال تلگرام ببینید</b><small>خبرها اول آنجا منتشر می‌شوند — @{SITE.channel}</small></span>
+            <Icon name="arrow" />
+          </a>
+
+          <Comments id={post.id} />
+
+          <nav class="pager" aria-label="خبر قبلی و بعدی">
+            {newer && <a href={newer.href} data-prev rel="prev"><small><Icon name="arrow-r" /> خبر جدیدتر</small>{newer.article.title}</a>}
+            {older && <a class="next" href={older.href} data-next rel="next"><small>خبر قدیمی‌تر <Icon name="arrow" /></small>{older.article.title}</a>}
+          </nav>
+
+          {
+            rel.length > 0 && (
+              <section>
+                <h2 class="section-title"><Icon name="news" /> خبرهای مرتبط</h2>
+                <div class="related">
+                  {rel.map((r) => (
+                    <a class="rel-card" href={r.href}>
+                      {r.cover ? <img src={sized(r.cover.src || r.cover.poster, 'small')} alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer" /> : <span class="ph"><Icon name="news" /></span>}
+                      <span>{r.article.title}</span>
+                    </a>
+                  ))}
+                </div>
+              </section>
+            )
+          }
+        </div>
+      </article>
+      <Sidebar current={a.tags[0]} />
     </div>
-  </article>
+  </div>
 </Base>

@@ -2,26 +2,17 @@ import fs from 'node:fs';
 import path from 'node:path';
 import { SITE } from '../site';
 
-export type Img = { src: string; width?: number; height?: number };
+// ---- data written by the crawler (pipeline/run.py) ----
 export type Media = {
   type: 'image' | 'video';
   src?: string | null;
   poster?: string | null;
-  width?: number;
-  height?: number;
+  ratio?: number | null; // height / width
   duration?: number | string | null;
   gif?: boolean;
-  remote?: string | null;
 };
 export type Author = { name?: string; handle?: string; avatar?: string | null };
-export type Tweet = {
-  author?: Author;
-  text?: string;
-  date?: number;
-  stats?: Record<string, number>;
-  media?: Media[];
-  links?: string[];
-};
+export type Tweet = { author?: Author; text?: string; date?: number; media?: Media[]; links?: string[] };
 export type Link = Tweet & {
   kind: 'tweet' | 'link' | 'youtube';
   url: string;
@@ -29,108 +20,138 @@ export type Link = Tweet & {
   title?: string;
   description?: string;
   site?: string;
-  image?: Img | null;
-  text?: string;
-  published?: string;
+  image?: string | null;
+  video_id?: string;
   quote?: Tweet;
-  article?: { title?: string; text?: string; image?: Img | null };
+  article?: { title?: string; image?: string | null };
 };
 export type RawPost = {
   id: number;
   url: string;
   date: string;
-  edited?: boolean;
-  views?: string;
   text: string;
   forwarded_from?: string | null;
   digest?: boolean;
   gholam?: { text: string; date?: string | null } | null;
   links?: Link[];
   media?: Media[];
-  preview?: { url?: string; site?: string; title?: string; description?: string; image?: Img | null } | null;
+  preview?: { url?: string; site?: string; title?: string; description?: string; image?: string | null } | null;
   article: { title: string; source_title?: string | null; body: string[]; why?: string | null; tags: string[] };
+  updated?: string | null;
 };
+
+// ---- shaped for the templates ----
+export type DigestItem = { n: number; text: string; href: string; internal: boolean };
 export type Post = RawPost & {
+  /** story: has Gholam's Persian write-up · digest: the channel's 24-hour summary · brief: a short post without one */
+  kind: 'story' | 'digest' | 'brief';
   href: string;
-  cover: Img | null;
-  heroMedia: Media[];
+  /** Always a still image (never a video file), for cards, thumbnails and social previews. */
+  cover: Media | null;
+  gallery: Media[];
   excerpt: string;
-  readingMinutes: number;
-  hasGholam: boolean;
   source: Link | null;
+  digestItems: DigestItem[];
+  minutes: number;
 };
 
 const BASE = import.meta.env.BASE_URL.replace(/\/$/, '');
 export const url = (p = '') => `${BASE}/${p.replace(/^\//, '')}`;
+/** Absolute URL on the primary domain (canonical, sitemap, social cards). */
+export const abs = (p = '') => new URL(p.replace(/^\//, ''), `${SITE.url}/`).href;
 
-const PUBLIC = path.join(process.cwd(), 'public');
-const exists = (src?: string | null) => !!src && fs.existsSync(path.join(PUBLIC, src));
-
-/** Drop references to media files that were pruned from the media store. */
-function cleanMedia(list: Media[] = []): Media[] {
-  return list
-    .map((m) => ({ ...m, src: exists(m.src) ? m.src : null, poster: exists(m.poster) ? m.poster : null }))
-    .filter((m) => m.src || m.poster);
+/** X/Twitter images come in sizes: ask for a small one in lists, a large one on article pages. */
+export function sized(src: string | null | undefined, size: 'small' | 'medium' | 'large' = 'medium') {
+  if (!src) return '';
+  try {
+    const u = new URL(src);
+    if (u.hostname === 'pbs.twimg.com' && u.pathname.startsWith('/media/')) {
+      u.searchParams.set('name', size);
+      return u.href;
+    }
+  } catch {}
+  return src;
 }
-const cleanImg = (img?: Img | null) => (img && exists(img.src) ? img : null);
 
-const clip = (s: string, n: number) => (s.length <= n ? s : s.slice(0, n).replace(/\s+\S*$/, '') + '…');
+const clip = (s: string, n: number) => {
+  s = s.replace(/\s+/g, ' ').trim();
+  return s.length <= n ? s : s.slice(0, n).replace(/\s+\S*$/, '') + '…';
+};
+const persianShare = (s: string) => {
+  const letters = s.match(/\p{L}/gu) ?? [];
+  return letters.length ? letters.filter((c) => /[؀-ۿ]/.test(c)).length / letters.length : 0;
+};
 
-function shape(raw: RawPost): Post {
-  const links = (raw.links ?? []).map((l) => ({
-    ...l,
-    media: cleanMedia(l.media),
-    image: cleanImg(l.image),
-    author: l.author ? { ...l.author, avatar: exists(l.author.avatar) ? l.author.avatar : null } : undefined,
-    quote: l.quote ? { ...l.quote, media: cleanMedia(l.quote.media) } : undefined,
-    article: l.article ? { ...l.article, image: cleanImg(l.article.image) } : undefined,
-  }));
-  const own = cleanMedia(raw.media);
-  const heroMedia = own.length ? own : links.find((l) => l.media?.length)?.media ?? [];
-  const firstVisual = heroMedia[0];
-  const cover =
-    (firstVisual && (firstVisual.type === 'image' && firstVisual.src
-      ? { src: firstVisual.src, width: firstVisual.width, height: firstVisual.height }
-      : firstVisual.poster
-        ? { src: firstVisual.poster, width: firstVisual.width, height: firstVisual.height }
-        : null)) ||
-    links.map((l) => l.article?.image || l.image).find(Boolean) ||
-    cleanImg(raw.preview?.image) ||
-    null;
+const DIGEST_LINE = /^[\s‎‏]*([0-9۰-۹]+)\s*[—–-]\s*(.+?)\s*\((https?:\/\/t\.me\/\w+\/(\d+))\)\s*$/;
+const toLatin = (s: string) => s.replace(/[۰-۹]/g, (d) => String('۰۱۲۳۴۵۶۷۸۹'.indexOf(d)));
 
-  const body = raw.article.body.length ? raw.article.body : raw.text.split(/\n+/).filter(Boolean);
+function digestItems(text: string, ids: Set<number>): DigestItem[] {
+  return text
+    .split('\n')
+    .map((line) => line.match(DIGEST_LINE))
+    .filter((m): m is RegExpMatchArray => !!m)
+    .map((m) => {
+      const id = Number(m[4]);
+      const internal = ids.has(id);
+      return { n: Number(toLatin(m[1])), text: m[2], href: internal ? url(`p/${id}/`) : m[3], internal };
+    });
+}
+
+function shape(raw: RawPost, ids: Set<number>): Post {
+  const links = raw.links ?? [];
+  const own = (raw.media ?? []).filter((m) => m.src || m.poster);
+  const linked = links.flatMap((l) => [...(l.media ?? []), ...(l.quote?.media ?? [])]).filter((m) => m.src || m.poster);
+  const gallery = own.length ? own : linked;
+  // The cover is always a still picture: the first image, a video's poster, or the linked page's image.
+  const firstStill = gallery.map((m) => ({ src: m.type === 'video' ? m.poster : m.src, ratio: m.ratio })).find((m) => m.src);
+  const pageImage = links.map((l) => l.article?.image || l.image).find(Boolean) || raw.preview?.image || null;
+  const cover: Media | null = firstStill ? { type: 'image', ...firstStill } : pageImage ? { type: 'image', src: pageImage } : null;
+
+  const kind: Post['kind'] = raw.digest ? 'digest' : raw.gholam?.text ? 'story' : 'brief';
+  const items = kind === 'digest' ? digestItems(raw.text, ids) : [];
+  const body = raw.article.body.length ? raw.article.body : raw.text.split(/\n+/).filter((l) => l.trim() && !/^https?:\/\/\S+$/.test(l.trim()));
+  const title =
+    kind === 'digest'
+      ? raw.text.split('\n').find((l) => l.trim())?.trim() || 'خلاصه‌ی خبرها'
+      : kind === 'brief'
+        ? clip(body[0] || raw.article.source_title || raw.preview?.title || raw.article.title, 110)
+        : raw.article.title;
   const words = [...body, raw.article.why ?? ''].join(' ').split(/\s+/).length;
+
   return {
     ...raw,
     links,
-    preview: raw.preview ? { ...raw.preview, image: cleanImg(raw.preview.image) } : null,
-    article: { ...raw.article, body },
+    kind,
+    article: { ...raw.article, title, body },
     href: url(`p/${raw.id}/`),
     cover,
-    heroMedia,
-    excerpt: clip((body[0] ?? '').replace(/\s+/g, ' '), 240),
-    readingMinutes: Math.max(1, Math.round(words / 180)),
-    hasGholam: !!raw.gholam?.text,
+    gallery,
+    excerpt: kind === 'digest' ? items.slice(0, 3).map((i) => i.text).join(' · ') : clip(body[0] ?? '', 220),
     source: links[0] ?? null,
+    digestItems: items,
+    minutes: Math.max(1, Math.round(words / 200)),
   };
 }
 
 let cache: Post[] | null = null;
 
-/** All posts, newest first. Falls back to data/sample when the crawler hasn't run yet. */
+/** All posts, newest first. English copies of the daily digest are skipped: the Persian one is published. */
 export function getPosts(): Post[] {
   if (cache) return cache;
-  const real = import.meta.glob<RawPost>('../../data/posts/*.json', { eager: true, import: 'default' });
-  const sample = import.meta.glob<RawPost>('../../data/sample/posts/*.json', { eager: true, import: 'default' });
-  const raws = Object.values(Object.keys(real).length ? real : sample);
-  cache = raws.filter((p) => p?.article).map(shape).sort((a, b) => b.id - a.id);
+  const raws = Object.values(import.meta.glob<RawPost>('../../data/posts/*.json', { eager: true, import: 'default' })).filter(
+    (p) => p?.article && !(p.digest && persianShare(p.text) < 0.5),
+  );
+  const ids = new Set(raws.map((p) => p.id));
+  cache = raws.map((p) => shape(p, ids)).sort((a, b) => b.id - a.id);
   return cache;
 }
 
+export const getStories = () => getPosts().filter((p) => p.kind !== 'digest');
+export const latestDigest = () => getPosts().find((p) => p.kind === 'digest') ?? null;
+
 export function getChannel(): { title?: string; description?: string; avatar?: string | null; subscribers?: string } {
   const file = path.join(process.cwd(), 'data', 'channel.json');
-  const info = fs.existsSync(file) ? JSON.parse(fs.readFileSync(file, 'utf8')) : {};
-  return { ...info, avatar: exists(info.avatar) ? info.avatar : null };
+  return fs.existsSync(file) ? JSON.parse(fs.readFileSync(file, 'utf8')) : {};
 }
 
 export function getTags(): { tag: string; count: number }[] {
@@ -141,29 +162,25 @@ export function getTags(): { tag: string; count: number }[] {
 
 export const tagHref = (tag: string) => url(`tag/${encodeURIComponent(tag)}/`);
 
-export function related(post: Post, n = 3): Post[] {
+export function related(post: Post, n = 4): Post[] {
   const tags = new Set(post.article.tags);
-  return getPosts()
+  return getStories()
     .filter((p) => p.id !== post.id)
-    .map((p) => ({ p, score: p.article.tags.filter((t) => tags.has(t)).length }))
+    .map((p) => ({ p, score: p.article.tags.filter((t) => tags.has(t)).length * 10 - Math.abs(p.id - post.id) / 100 }))
     .filter((x) => x.score > 0)
-    .sort((a, b) => b.score - a.score || b.p.id - a.p.id)
+    .sort((a, b) => b.score - a.score)
     .slice(0, n)
     .map((x) => x.p);
 }
 
-// ---- formatting (server side; the client re-renders dates when the reader picks another calendar) ----
-export const faDate = (iso: string, opts: Intl.DateTimeFormatOptions = { dateStyle: 'long' }) =>
-  new Intl.DateTimeFormat('fa-IR-u-ca-persian', { timeZone: SITE.timeZone, ...opts }).format(new Date(iso));
-
-export const dayKey = (iso: string) =>
-  new Intl.DateTimeFormat('en-CA', { timeZone: SITE.timeZone }).format(new Date(iso));
-
+// ---- formatting (server side; the client re-renders relative times so they never go stale) ----
+const fmt = (opts: Intl.DateTimeFormatOptions) => new Intl.DateTimeFormat('fa-IR-u-ca-persian', { timeZone: SITE.timeZone, ...opts });
+export const faDate = (iso: string, opts: Intl.DateTimeFormatOptions = { dateStyle: 'long' }) => fmt(opts).format(new Date(iso));
+export const faTime = (iso: string) => fmt({ hour: '2-digit', minute: '2-digit', hour12: false }).format(new Date(iso));
+export const dayKey = (iso: string) => new Intl.DateTimeFormat('en-CA', { timeZone: SITE.timeZone }).format(new Date(iso));
 export const faNum = (n: number | string) => (typeof n === 'number' ? n.toLocaleString('fa-IR') : n.replace(/\d/g, (d) => '۰۱۲۳۴۵۶۷۸۹'[+d]));
-
 export const duration = (s?: number | string | null) => {
-  if (s == null) return '';
+  if (s == null || s === '') return '';
   if (typeof s === 'string') return s;
-  const m = Math.floor(s / 60);
-  return `${m}:${String(Math.round(s % 60)).padStart(2, '0')}`;
+  return `${Math.floor(s / 60)}:${String(Math.round(s % 60)).padStart(2, '0')}`;
 };

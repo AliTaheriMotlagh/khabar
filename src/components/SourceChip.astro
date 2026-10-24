@@ -1,0 +1,21 @@
+---
+// Small "where this came from" label: the tweet's author or the article's site.
+import Icon from './Icon.astro';
+import type { Link } from '../lib/posts';
+interface Props { link: Link | null }
+const { link } = Astro.props;
+---
+{
+  link &&
+    (link.kind === 'tweet' && link.author?.handle ? (
+      <span class="src-chip ltr" dir="ltr" title={link.author.name}>
+        {link.author.avatar && <img src={link.author.avatar} alt="" width="18" height="18" loading="lazy" referrerpolicy="no-referrer" />}
+        @{link.author.handle}
+      </span>
+    ) : (
+      <span class="src-chip ltr" dir="ltr">
+        <Icon name={link.kind === 'youtube' ? 'youtube' : 'link'} />
+        {link.domain}
+      </span>
+    ))
+}

@@ -15,6 +15,7 @@ from bs4 import BeautifulSoup, Tag
 from . import config
 
 BG_URL_RE = re.compile(r"background-image:\s*url\(['\"]?(.*?)['\"]?\)")
+PAD_RE = re.compile(r"padding-top:\s*([\d.]+)%")
 URL_RE = re.compile(r"https?://[^\s<>\"')\]]+")
 
 
@@ -24,21 +25,18 @@ class TgMedia:
     url: str
     thumb: Optional[str] = None
     duration: Optional[str] = None
+    ratio: Optional[float] = None  # height / width, so the page reserves space before the image loads
 
 
 @dataclass
 class TgPost:
     id: int
     date: str
-    edited: bool
-    views: str
     text: str
-    html: str
     links: list[str]
     media: list[TgMedia] = field(default_factory=list)
     preview: Optional[dict] = None
     forwarded_from: Optional[str] = None
-    unsupported: bool = False
 
 
 def client() -> httpx.Client:
@@ -54,6 +52,15 @@ def _bg(tag: Optional[Tag]) -> Optional[str]:
         return None
     m = BG_URL_RE.search(tag.get("style", ""))
     return m.group(1) if m else None
+
+
+def _ratio(tag: Optional[Tag]) -> Optional[float]:
+    """Telegram sizes media boxes with padding-top: N% on the element or a child."""
+    for t in [tag, *(tag.select("[style*=padding-top]") if tag else [])]:
+        m = PAD_RE.search((t.get("style") or "") if t else "")
+        if m:
+            return round(float(m.group(1)) / 100, 4)
+    return None
 
 
 def _text_with_links(node: Tag) -> tuple[str, list[str]]:
@@ -97,6 +104,13 @@ def parse_channel_page(html: str) -> tuple[dict, list[TgPost]]:
     return info, posts
 
 
+def _own_text(msg: Tag) -> Optional[Tag]:
+    """The message's own text, not the shortened quote Telegram embeds when it replies to another message."""
+    return msg.select_one(".js-message_text") or next(
+        (t for t in msg.select("[class*='message_text']") if "reply" not in " ".join(t.get("class", []))), None
+    )
+
+
 def _get_text(tag: Optional[Tag]) -> str:
     return tag.get_text(" ", strip=True) if tag else ""
 
@@ -104,25 +118,24 @@ def _get_text(tag: Optional[Tag]) -> str:
 def _parse_message(msg: Tag) -> TgPost:
     post_id = int(msg["data-post"].split("/")[-1])
     time_tag = msg.select_one(".tgme_widget_message_date time")
-    meta = _get_text(msg.select_one(".tgme_widget_message_meta"))
 
-    text_node = msg.select_one(".tgme_widget_message_text")
-    html = str(text_node) if text_node else ""
+    text_node = _own_text(msg)
     text, links = _text_with_links(text_node) if text_node else ("", [])
 
     media: list[TgMedia] = []
     for photo in msg.select(".tgme_widget_message_photo_wrap"):
         url = _bg(photo)
         if url:
-            media.append(TgMedia("image", url))
+            media.append(TgMedia("image", url, ratio=_ratio(photo)))
     for player in msg.select(".tgme_widget_message_video_player, .tgme_widget_message_roundvideo_player"):
         video = player.select_one("video")
         thumb = _bg(player.select_one(".tgme_widget_message_video_thumb, .tgme_widget_message_roundvideo_thumb"))
         duration = _get_text(player.select_one(".message_video_duration, .tgme_widget_message_roundvideo_duration"))
+        ratio = _ratio(player)
         if video and video.get("src"):
-            media.append(TgMedia("video", video["src"], thumb, duration or None))
+            media.append(TgMedia("video", video["src"], thumb, duration or None, ratio))
         elif thumb:  # "media is too big" — Telegram only exposes the thumbnail
-            media.append(TgMedia("image", thumb))
+            media.append(TgMedia("image", thumb, ratio=ratio))
 
     preview = None
     lp = msg.select_one(".tgme_widget_message_link_preview")
@@ -143,15 +156,11 @@ def _parse_message(msg: Tag) -> TgPost:
     return TgPost(
         id=post_id,
         date=time_tag["datetime"] if time_tag else "",
-        edited="edited" in meta,
-        views=_get_text(msg.select_one(".tgme_widget_message_views")),
         text=text,
-        html=html,
         links=[l for l in links if not re.match(r"https?://t\.me/", l)],
         media=media,
         preview=preview,
         forwarded_from=_get_text(fwd) or None,
-        unsupported=bool(msg.select_one(".message_media_not_supported")),
     )
 
 
@@ -192,7 +201,7 @@ def parse_gholam_comment(html: str) -> Optional[dict]:
     # Widget markup differs slightly between channel posts and comments, so match loosely on class names.
     for msg in soup.select("[class*='widget_message'][data-post], .tgme_widget_message, .tme_widget_message"):
         author = _get_text(msg.select_one("[class*='author_name'], [class*='owner_name']"))
-        text_node = msg.select_one("[class*='message_text']")
+        text_node = _own_text(msg)
         if not text_node:
             continue
         for br in text_node.find_all("br"):

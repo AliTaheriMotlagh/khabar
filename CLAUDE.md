@@ -1,0 +1,26 @@
+# khabar — Persian news site from the @dlmehr Telegram channel
+
+Primary site: https://alitaherimotlagh.vercel.app (canonical). GitHub Pages builds a mirror. Channel owner: Mehrzad Samadi (https://mehrzad.ai/).
+
+## How it fits together
+- `pipeline/` (Python, httpx + bs4): crawls `t.me/s/dlmehr`, takes **Gholam's first comment** (the Persian translation, posted by a bot named «غلام», signed «داش غلام») from the post's discussion widget, reads linked tweets (api.fxtwitter.com) / pages, writes `data/posts/<id>.json`. Media is **never downloaded** — posts keep original URLs (Telegram CDN URLs are signed, refreshed on every crawl).
+- `src/` (Astro 7, static): `lib/posts.ts` shapes raw posts (`kind`: story | digest | brief; English digests are hidden). Components in `src/components/`, pages in `src/pages/`, one stylesheet `src/styles/global.css` (tokens at the top, light/dark).
+- `src/scripts/`: `core.ts` (storage, helpers) · `game.ts` (points, badges, streaks, "new since last visit") · `social.ts` (API client) · `app.ts` (boot, settings, offline, load-more).
+- `api/` (Vercel Functions, plain ESM JS, no deps): comments, react, engage, live (presence/visits), chat, leaders. Storage = Upstash Redis REST (`KV_REST_API_URL`/`KV_REST_API_TOKEN`); `_lib.js` has an in-memory store for tests. Files starting with `_` are not routes.
+- `.github/workflows/site.yml`: every 15 min crawl → commit `data/` → build → deploy Pages. Vercel redeploys on each push to main.
+
+## Commands
+- `npm run build` (astro + pagefind) · `npm run serve` (built site + API with in-memory store, port 4322)
+- `npm test` (API, node:test) · `.venv/bin/python -m pytest -q pipeline/tests`
+- `npx astro check` (types) · `.venv/bin/python -m pipeline.run` (crawl; `PAGES=10` to backfill, `--refresh` to re-derive articles)
+- Crawl into a scratch dir instead of `data/`: `DATA_DIR=/abs/path .venv/bin/python -m pipeline.run`
+
+## Gotchas
+- Telegram comment HTML has a hidden reply template with a *truncated* copy of the text — always read `.js-message_text` (see `telegram._own_text`).
+- X video CDN returns 403 with a foreign Referer → site-wide `<meta name="referrer" content="no-referrer">`; outbound links to t.me/mehrzad.ai use `referrerpolicy="origin"`.
+- `post.cover` is always a still image (video → poster); use `sized()` for pbs.twimg.com sizes.
+- Upstash free tier is ~500K commands/month: keep API calls batched (`engage` = one pipeline per page) and CDN-cacheable.
+
+## Working efficiently here
+- Don't read `data/posts/*.json` wholesale (60+ files); grep or read one. Don't read `package-lock.json`, `dist/`, `node_modules/`.
+- When checking a build, tail the log (`npm run build 2>&1 | tail`), don't dump it.

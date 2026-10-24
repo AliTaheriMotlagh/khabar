@@ -1,0 +1,56 @@
+{
+ "id": 6051,
+ "url": "https://t.me/dlmehr/6051",
+ "date": "2026-10-23T02:03:04+00:00",
+ "text": "https://fxtwitter.com/rohanpaul_ai/status/2113329649128501647?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+ "forwarded_from": null,
+ "digest": false,
+ "hash": "e3dadf875170",
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/rohanpaul_ai/status/2113329649128501647?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+  "site": "🧵 Thread • FxTwitter",
+  "title": "Rohan Paul (@rohanpaul_ai)",
+  "description": "New Google DeepMind paper shows that if AI models offer money to answer each question and the highest offer answers, results are 99.2% as good as always picking the best model.\ni.e. say you don't know in advance which model is best for each new question.…",
+  "image": "https://cdn4.telesco.pe/file/aDv9plSEHO0Mn_Bl552gJyg-vpvAnYcWEeFVFlc4NCbgx_URGg3MffWIbdKxHR4KhGnXmCSchMlrzhUWmHAOY4LCjxxPYScKOHzFyPZgwz7pYbL_MIthy8o6jQPwPKNey3TEQDT5QTksi7qki-iv4STVdiAujIQWoaD9cE-GhkQ-IJiIZZKTHd1DfxuQEueOKLgNVWCKEpD_foNaLMMsWee4jVAlIAMztj8Cc6C_hHUQrf8my_yOibX9EgibMoS_g3yhQfU7z7L7I9YgX3UE2FKhdjMEIKfHk6xnIOixD3-QM5fkJdT0RNKvB61kOq0zJfa6EI8J95RAc33u2NHdHA.jpg"
+ },
+ "gholam": {
+  "text": "ببین رفیق، بچه‌های دیپ‌مایند گوگل یه مقاله دادن بیرون و رفتن سراغ یه روش باحال؛ فرض کن کلی مدل هوش مصنوعی داری ولی نمیدونی واسه هر سوال کدومشون کاردرست‌تره، اومدن بین ۱۱۰ تا مدل سر بیشتر از ۳۰ هزار تا پرامپت یه جور مزایده راه انداختن تا هر مدلی که مطمئن‌تره پول بیشتری پیشنهاد بده و جواب رو بنویسه. نتیجه کار پشم‌ریزون بوده و نشون داده خروجی این مزایده تا ۹۹.۲ درصد به اندازه حالتی که همیشه بهترین مدل ممکن رو دست‌چین کنی دقیق و باکیفیته، در حالی که روش‌های معمولی مسیریابی فقط حدود ۸۹.۴ درصد جواب میدادن. حتی توی سخت‌ترین و بدقلق‌ترین سوال‌ها هم این سیستم مزایده‌ای ۹۶ درصد بازدهی داشته، در صورتی که تکیه کردن به یه مدل خاص بازدهی رو تا ۶ درصد زمین زده.\n\nچرا مهمه؟ اهمیتش اینه که بازارچه‌های هوش مصنوعی بدون نیاز به دونستن پشت‌صحنه مدل‌ها، با یه چوب‌حراج ساده می‌تونن ارزون‌ترین و بهترین جواب ممکن رو تحویل کاربر بدن.",
+  "date": "2026-10-23T02:03:20+00:00"
+ },
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/rohanpaul_ai/status/2113329649128501647",
+   "domain": "x.com",
+   "author": {
+    "name": "Rohan Paul",
+    "handle": "rohanpaul_ai",
+    "avatar": "https://pbs.twimg.com/profile_images/1816185267037859840/Fd18CH0v_200x200.jpg"
+   },
+   "text": "New Google DeepMind paper shows that if AI models offer money to answer each question and the highest offer answers, results are 99.2% as good as always picking the best model.\n\ni.e. say you don't know in advance which model is best for each new question. So who should answer?\n\nThe paper’s answer: let each model offer money for the job. The model that knows it is good at this question offers more. Highest offer gets to answer. \n\nThey proved the loss shrinks when several agents usually value a prompt highly, as when distilled models perform close to the best. They simulated auctions among 110 models on over 30,000 EmbedLLM prompts.\n\nWith all 110 models bidding, the auction reached 99.2% of the best possible value, versus 89.4% for routing each prompt type to its best model. On each method's worst prompt cluster, the auction held 96.0% while the single best model kept 6.0%.\n\nIf you run a model marketplace, a simple pay-your-bid auction works well when every bidding pool has several strong models.",
+   "date": 1792692026,
+   "media": [
+    {
+     "type": "image",
+     "src": "https://pbs.twimg.com/media/HVQLg0cbYAAKcNt.png?name=orig",
+     "ratio": 0.8013
+    }
+   ],
+   "links": []
+  }
+ ],
+ "article": {
+  "title": "بچه‌های دیپ‌مایند گوگل یه مقاله دادن بیرون و رفتن سراغ یه روش باحال؛ فرض کن کلی مدل هوش مصنوعی داری ولی…",
+  "source_title": "New Google DeepMind paper shows that if AI models offer money to answer each question and the highest offer answers, results are 99.2% as…",
+  "body": [
+   "ببین رفیق، بچه‌های دیپ‌مایند گوگل یه مقاله دادن بیرون و رفتن سراغ یه روش باحال؛ فرض کن کلی مدل هوش مصنوعی داری ولی نمیدونی واسه هر سوال کدومشون کاردرست‌تره، اومدن بین ۱۱۰ تا مدل سر بیشتر از ۳۰ هزار تا پرامپت یه جور مزایده راه انداختن تا هر مدلی که مطمئن‌تره پول بیشتری پیشنهاد بده و جواب رو بنویسه. نتیجه کار پشم‌ریزون بوده و نشون داده خروجی این مزایده تا ۹۹.۲ درصد به اندازه حالتی که همیشه بهترین مدل ممکن رو دست‌چین کنی دقیق و باکیفیته، در حالی که روش‌های معمولی مسیریابی فقط حدود ۸۹.۴ درصد جواب میدادن. حتی توی سخت‌ترین و بدقلق‌ترین سوال‌ها هم این سیستم مزایده‌ای ۹۶ درصد بازدهی داشته، در صورتی که تکیه کردن به یه مدل خاص بازدهی رو تا ۶ درصد زمین زده."
+  ],
+  "why": "اهمیتش اینه که بازارچه‌های هوش مصنوعی بدون نیاز به دونستن پشت‌صحنه مدل‌ها، با یه چوب‌حراج ساده می‌تونن ارزون‌ترین و بهترین جواب ممکن رو تحویل کاربر بدن.",
+  "tags": [
+   "هوش مصنوعی",
+   "گوگل"
+  ]
+ },
+ "updated": "2026-10-24T11:29:53+00:00"
+}

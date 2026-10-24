@@ -1,4 +1,4 @@
-"""Open the links in a post and pull out everything worth showing: tweet text, author, media, article text."""
+"""Open the links in a post and keep what the page shows: title, description, image URL, tweet text and media URLs."""
 from __future__ import annotations
 
 import re
@@ -49,19 +49,23 @@ def enrich_links(http: httpx.Client, links: list[str]) -> list[dict]:
     return out
 
 
+def _ratio(m: dict) -> Optional[float]:
+    w, h = m.get("width"), m.get("height")
+    return round(h / w, 4) if w and h else None
+
+
 def _tweet_media(media: Optional[dict]) -> list[dict]:
     items = []
     for m in (media or {}).get("all", []) or []:
-        if m.get("type") == "photo":
-            items.append({"type": "image", "url": m.get("url"), "width": m.get("width"), "height": m.get("height")})
+        if m.get("type") == "photo" and m.get("url"):
+            items.append({"type": "image", "src": m["url"], "ratio": _ratio(m)})
         elif m.get("type") in ("video", "gif"):
             items.append(
                 {
                     "type": "video",
-                    "url": pick_video_variant(m),
-                    "thumb": m.get("thumbnail_url"),
-                    "width": m.get("width"),
-                    "height": m.get("height"),
+                    "src": pick_video_variant(m),
+                    "poster": m.get("thumbnail_url"),
+                    "ratio": _ratio(m),
                     "duration": m.get("duration"),
                     "gif": m.get("type") == "gif",
                 }
@@ -92,9 +96,7 @@ def _tweet_dict(t: dict) -> dict:
     return {
         "author": {"name": a.get("name"), "handle": a.get("screen_name"), "avatar": a.get("avatar_url")},
         "text": t.get("text") or "",
-        "lang": t.get("lang"),
         "date": t.get("created_timestamp"),
-        "stats": {k: t.get(k) for k in ("views", "likes", "retweets", "replies") if t.get(k) is not None},
         "media": _tweet_media(t.get("media")),
         "links": _tweet_links(t),
     }
@@ -110,11 +112,8 @@ def fetch_tweet(http: httpx.Client, user: str, status_id: str) -> dict:
         item["quote"] = _tweet_dict(t["quote"])
     art = t.get("article")
     if art:  # long-form X article
-        blocks = ((art.get("content") or {}).get("blocks")) or []
-        body = "\n\n".join(b.get("text", "") for b in blocks if b.get("text"))
         item["article"] = {
             "title": art.get("title"),
-            "text": (body or art.get("preview_text") or "")[: config.MAX_ARTICLE_CHARS],
             "image": ((art.get("cover_media") or {}).get("media_info") or {}).get("original_img_url"),
         }
     return item
@@ -149,28 +148,13 @@ def fetch_page(http: httpx.Client, url: str) -> dict:
             "description": _meta(soup, "og:description", "twitter:description", "description"),
             "image": _meta(soup, "og:image", "twitter:image", "twitter:image:src"),
             "site": _meta(soup, "og:site_name") or item["domain"],
-            "author": _meta(soup, "author", "article:author"),
-            "published": _meta(soup, "article:published_time", "og:published_time", "date"),
         }
     )
     if item.get("image") and item["image"].startswith("/"):
         item["image"] = f"{urlparse(final).scheme}://{urlparse(final).netloc}{item['image']}"
-    item["text"] = extract_article_text(resp.text, final, soup)
+    if item.get("description"):
+        item["description"] = item["description"][:400]
+    if item["kind"] == "youtube" and not item.get("image"):
+        item["image"] = f"https://i.ytimg.com/vi/{item['video_id']}/hqdefault.jpg"
     return item
 
-
-def extract_article_text(html: str, url: str, soup: BeautifulSoup) -> str:
-    text = None
-    try:
-        import trafilatura
-
-        text = trafilatura.extract(html, url=url, include_comments=False, include_tables=False, favor_precision=True)
-    except Exception:
-        pass
-    if not text:
-        for tag in soup(["script", "style", "noscript", "svg", "form", "nav", "footer", "aside", "header"]):
-            tag.decompose()
-        node = soup.find("article") or soup.find("main") or soup.body or soup
-        text = node.get_text("\n", strip=True)
-    text = re.sub(r"\n{3,}", "\n\n", text or "")
-    return text[: config.MAX_ARTICLE_CHARS]

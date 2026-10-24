@@ -1,18 +1,18 @@
-# Crawl the channel → commit data/ to main and media to the orphan "media" branch → build → deploy to GitHub Pages.
+# Every 15 minutes: crawl the channel → commit new posts to data/ → build → deploy GitHub Pages.
+# Vercel (the primary site, https://alitaherimotlagh.vercel.app) redeploys by itself on each data commit to main.
 # One-time setup: Settings → Pages → Source: "GitHub Actions".
-# Vercel (optional) deploys on its own from the data commits this pushes to main; see README.
 name: site
 
 on:
   schedule:
-    - cron: '*/30 * * * *'
+    - cron: '*/15 * * * *'
   push:
     branches: [main]
   workflow_dispatch:
     inputs:
       pages:
         description: 't.me/s pages to crawl (≈20 posts each); use more to backfill'
-        default: '1'
+        default: '3'
 
 permissions:
   contents: write
@@ -26,20 +26,9 @@ concurrency:
 jobs:
   build:
     runs-on: ubuntu-latest
-    timeout-minutes: 30
+    timeout-minutes: 20
     steps:
       - uses: actions/checkout@v4
-
-      - name: Check out media store
-        env:
-          REPO_URL: https://x-access-token:${{ github.token }}@github.com/${{ github.repository }}.git
-        run: |
-          if git ls-remote --exit-code --heads origin media >/dev/null; then
-            git clone --depth 1 --branch media --single-branch "$REPO_URL" media-store
-          else
-            git init -b media media-store
-            git -C media-store remote add origin "$REPO_URL"
-          fi
 
       - uses: actions/setup-python@v5
         with:
@@ -54,29 +43,17 @@ jobs:
         continue-on-error: ${{ github.event_name == 'push' }}
         run: |
           pages='${{ inputs.pages }}'
-          # First run on an empty repo: backfill instead of reading only the newest page.
+          # First run on an empty repo: backfill instead of reading only the newest pages.
           if [ -z "$pages" ] && ! ls data/posts/*.json >/dev/null 2>&1; then pages=10; fi
-          PAGES="${pages:-1}" python -m pipeline.run
+          PAGES="${pages:-3}" python -m pipeline.run
 
-      - name: Commit data and media
+      - name: Commit new posts
         run: |
           git config --global user.name 'github-actions[bot]'
           git config --global user.email '41898283+github-actions[bot]@users.noreply.github.com'
-          stamp=$(date -u +%Y-%m-%dT%H:%MZ)
-
-          # Media: always a single root commit, so old/pruned files don't pile up in history.
-          cd media-store
-          if [ -n "$(git status --porcelain)" ]; then
-            git checkout --orphan next
-            git add -A
-            git commit -qm "media $stamp"
-            git push -f origin HEAD:media
-          fi
-          cd ..
-
           git add data
           if ! git diff --cached --quiet; then
-            git commit -qm "data: crawl $stamp"
+            git commit -qm "data: crawl $(date -u +%Y-%m-%dT%H:%MZ)"
             git pull --rebase -q origin main
             git push origin HEAD:main
           fi
@@ -86,6 +63,7 @@ jobs:
           node-version: 24
           cache: npm
       - run: npm ci
+      - run: npm test
 
       - id: pages
         uses: actions/configure-pages@v5
@@ -93,6 +71,8 @@ jobs:
         env:
           SITE_URL: ${{ steps.pages.outputs.origin }}
           BASE_PATH: ${{ steps.pages.outputs.base_path }}
+          # The mirror has no functions of its own: comments, reactions and chat go to the Vercel API.
+          PUBLIC_API_URL: ${{ vars.API_URL || 'https://alitaherimotlagh.vercel.app' }}
         run: npm run build
 
       - uses: actions/upload-pages-artifact@v3

@@ -1,0 +1,77 @@
+{
+ "id": 6069,
+ "url": "https://t.me/dlmehr/6069",
+ "date": "2026-10-23T17:20:29+00:00",
+ "text": "https://fxtwitter.com/kimmonismus/status/2113681534792183863?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+ "forwarded_from": null,
+ "digest": false,
+ "hash": "e6ce27e63ca3",
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/kimmonismus/status/2113681534792183863?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+  "site": "FxTwitter",
+  "title": "Chubby ♨️ (@kimmonismus)",
+  "description": "Holy shit: Kimi k3.1 pro is on par or even outperforms Opus 5.5 and GPT-6 astra on key benchmarks!!\nThey just announced K3.1 Pro, a 2.8T-parameter multimodal model with a 1M-token context window that it claims rivals leading proprietary models in coding…",
+  "image": "https://cdn4.telesco.pe/file/KiDxtCJGAZJd2Lxk96jZtp1P4dbJ3xilBE08ZiRRmzxpjrRU2r1DDUmR1E9oszfAGJGLmGV4wo-x-YuKxpHlKkTkQMniX4GFnBQV93KfK99UShX8vqtmaaq9SpZOKoMJ4i3VzXsxfA6tFQuacZz79QbE7Atq7XBUG6bm7EgzPHWVnPr3K_moPXnpbCNo0Tw_TZ_WD2-yoXEgkDVhY_9RqLaFcVQfNYOtK_F9WzgObZbWramPj9ezAetcyiIMacqrBET_viwJ86Dy5aaLF36bRTu_TMLRwZQqUAQmN9FkqLYWT8HYR5iVjXFuhmrqDmGbZExAHBjO_KqJPdhsYZmpRg.jpg"
+ },
+ "gholam": {
+  "text": "رفیق، چینی‌ها با معرفی Kimi K3.1 Pro حسابی گردوخاک راه انداختن و یه غول ۲.۸ تریلیون پارامتری با حافظه کانتکست یک میلیون توکنی رو فرستادن تو میدون. این مدل چندوجهی ادعا کرده که تو بنچمارک‌های کلیدی و تسک‌های کدنویسی، بدجوری پاپیچ رقبای گردن‌کلفتی مثل GPT-6 و کلود اوپوس شده و حتی گاهی جلوشون سینه سپر می‌کنه. علاوه بر اینکه گفته شده از پس پروژه‌های سنگین بازی‌سازی با آنریل و یونیتی تا مدلسازی سه‌بعدی توی بلندر برمی‌آد، قول دادن که وزنش رو هم به شکل اوپن‌ویت به زودی در اختیار همه بذارن.\n\nچرا مهمه؟ چون اگه این ادعاها درست از آب دربیاد، یه مدل آزاد و در دسترس می‌تونه انحصار مدل‌های بسته و پولی غول‌های آمریکایی رو بشکنه و کار رو برای توسعه‌دهنده‌ها زیرورو کنه.",
+  "date": "2026-10-23T18:39:44+00:00"
+ },
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/kimmonismus/status/2113681534792183863",
+   "domain": "x.com",
+   "author": {
+    "name": "Chubby♨️",
+    "handle": "kimmonismus",
+    "avatar": "https://pbs.twimg.com/profile_images/1728327996375719936/RW7VBJfD_200x200.jpg"
+   },
+   "text": "Holy shit: Kimi k3.1 pro is on par or even outperforms Opus 5.5 and GPT-6 astra on key benchmarks!!\n\nThey just announced K3.1 Pro, a 2.8T-parameter multimodal model with a 1M-token context window that it claims rivals leading proprietary models in coding and agent tasks, with open weights promised by November 4.\n\nChina is back!!",
+   "date": 1792775922,
+   "media": [
+    {
+     "type": "image",
+     "src": "https://pbs.twimg.com/media/HVVOJttXUAASMqc.jpg?name=orig",
+     "ratio": 1.359
+    }
+   ],
+   "links": [],
+   "quote": {
+    "author": {
+     "name": "Kimi.ai",
+     "handle": "Kimi_Moonshot",
+     "avatar": "https://pbs.twimg.com/profile_images/2086719038798102529/diJGKpOE_200x200.jpg"
+    },
+    "text": "Introducing Kimi K3.1 Pro: our most capable 3T-class open-weight model.\n\n🔹 1M-token context, 2.8T total / 104B active params (MoE), Multimodal.\n🔹 Full-project coding: games in Unreal, Unity & Godot.\n🔹 Excels at parametric 3D modeling in Blender & CAD.\n🔹 More reliable at finance work: Accurate modeling with hallucination down by 65%.\n🔹 Matching the strongest proprietary models across coding, agentic and knowledge benchmarks.\n\nKimi K3.1 Pro and K3.1 Pro Highspeed (2–3× faster) are now live on http://Kimi.ai, Kimi Work, Kimi Code, and the Kimi API.  \n\nOpen weights by Nov 4, 2026.\n\n🔗 API: http://platform.kimi.ai \n🔗 Tech blog: http://kimi.ai/blog/kimi-k3-1-pro",
+    "date": 1792775724,
+    "media": [
+     {
+      "type": "image",
+      "src": "https://pbs.twimg.com/media/HVVMjBoaIAAZncD.jpg?name=orig",
+      "ratio": 1.3594
+     }
+    ],
+    "links": [
+     "http://Kimi.ai",
+     "http://platform.kimi.ai",
+     "http://kimi.ai/blog/kimi-k3-1-pro"
+    ]
+   }
+  }
+ ],
+ "article": {
+  "title": "چینی‌ها با معرفی Kimi K3.1 Pro حسابی گردوخاک راه انداختن و یه غول ۲.۸ تریلیون پارامتری با حافظه کانتکست یک…",
+  "source_title": "Holy shit: Kimi k3.1 pro is on par or even outperforms Opus 5.5 and GPT-6 astra on key benchmarks!!",
+  "body": [
+   "رفیق، چینی‌ها با معرفی Kimi K3.1 Pro حسابی گردوخاک راه انداختن و یه غول ۲.۸ تریلیون پارامتری با حافظه کانتکست یک میلیون توکنی رو فرستادن تو میدون. این مدل چندوجهی ادعا کرده که تو بنچمارک‌های کلیدی و تسک‌های کدنویسی، بدجوری پاپیچ رقبای گردن‌کلفتی مثل GPT-6 و کلود اوپوس شده و حتی گاهی جلوشون سینه سپر می‌کنه. علاوه بر اینکه گفته شده از پس پروژه‌های سنگین بازی‌سازی با آنریل و یونیتی تا مدلسازی سه‌بعدی توی بلندر برمی‌آد، قول دادن که وزنش رو هم به شکل اوپن‌ویت به زودی در اختیار همه بذارن."
+  ],
+  "why": "چون اگه این ادعاها درست از آب دربیاد، یه مدل آزاد و در دسترس می‌تونه انحصار مدل‌های بسته و پولی غول‌های آمریکایی رو بشکنه و کار رو برای توسعه‌دهنده‌ها زیرورو کنه.",
+  "tags": [
+   "هوش مصنوعی",
+   "اوپن‌ای‌آی"
+  ]
+ },
+ "updated": "2026-10-24T11:29:36+00:00"
+}

@@ -2,26 +2,48 @@
 import Icon from './Icon.astro';
 import { SITE } from '../site';
 import { url } from '../lib/posts';
-interface Props { channel: { avatar?: string | null } }
-const { channel } = Astro.props;
+const path = Astro.url.pathname;
+const here = (p: string) => (p === url() ? path === p || /\/page\/\d+\/$/.test(path) : path.startsWith(p)) ? 'page' : undefined;
+const nav = [
+  { href: url(), label: 'خانه', icon: 'home' },
+  { href: url('tags/'), label: 'موضوع‌ها', icon: 'hash' },
+  { href: url('saved/'), label: 'ذخیره‌ها', icon: 'bookmark' },
+  { href: url('about/'), label: 'درباره', icon: 'info' },
+];
 ---
 <header class="site-header" data-header>
-  <div class="wrap-wide inner">
-    <a class="brand" href={url()} aria-label={`${SITE.name} — صفحه اصلی`}>
-      {channel.avatar ? <img src={url(channel.avatar)} alt="" width="36" height="36" /> : <i class="mono">{SITE.name[0]}</i>}
-      <span>{SITE.name}</span>
+  <div class="container bar">
+    <a class="brand" href={url()} aria-label={`${SITE.name} — صفحه‌ی اصلی`}>
+      <span class="logo-mark" aria-hidden="true"></span>
+      <span class="brand-text"><b>{SITE.name}</b><small>{SITE.nameLatin}</small></span>
     </a>
-    <nav class="nav" aria-label="ناوبری اصلی">
-      <a class="icon-btn" href={url('search/')} aria-label="جستجو" title="جستجو (/)"><Icon name="search" /></a>
-      <a class="icon-btn" href={url('saved/')} aria-label="ذخیره‌شده‌ها" title="ذخیره‌شده‌ها">
-        <Icon name="bookmark" /><span class="badge" data-saved-count hidden></span>
-      </a>
-      <button class="icon-btn" type="button" data-theme-toggle aria-label="تغییر پوسته روشن/تیره" title="روشن/تیره (t)">
-        <Icon name="moon" />
-      </button>
-      <button class="icon-btn" type="button" data-open-settings aria-label="تنظیمات خواندن" title="تنظیمات خواندن (,)">
-        <Icon name="type" />
-      </button>
+    <nav class="main-nav" aria-label="ناوبری اصلی">
+      {nav.map((n) => <a href={n.href} aria-current={here(n.href)}>{n.label}</a>)}
     </nav>
+    <div class="tools">
+      <button class="online-pill" type="button" data-open-chat data-online-pill hidden aria-label="گفتگوی زنده">
+        <span class="pulse" aria-hidden="true"></span><span data-online>…</span><span class="hide-sm">آنلاین</span>
+      </button>
+      <a class="icon-btn" href={url('search/')} aria-label="جستجو" title="جستجو (/)"><Icon name="search" /></a>
+      <button class="icon-btn hide-sm" type="button" data-open-chat aria-label="گفتگوی زنده" title="گفتگوی زنده">
+        <Icon name="chat" /><span class="dot" data-chat-dot hidden></span>
+      </button>
+      <button class="icon-btn" type="button" data-theme-toggle aria-label="روشن / تیره" title="روشن / تیره (t)">
+        <Icon name="moon" class="if-light" /><Icon name="sun" class="if-dark" />
+      </button>
+      <button class="icon-btn" type="button" data-open-settings aria-label="تنظیمات نمایش" title="تنظیمات نمایش"><Icon name="settings" /></button>
+      <a class="me-btn hide-sm" href={url('me/')} aria-label="پروفایل مهمان شما">
+        <span class="avatar" data-my-avatar aria-hidden="true">؟</span>
+        <span class="lvl" data-my-level-badge></span>
+      </a>
+    </div>
   </div>
 </header>
+
+<nav class="tabbar" aria-label="ناوبری پایین">
+  <a href={url()} aria-current={here(url())}><Icon name="home" /><span>خانه</span></a>
+  <a href={url('tags/')} aria-current={here(url('tags/'))}><Icon name="hash" /><span>موضوع‌ها</span></a>
+  <button type="button" data-open-chat><Icon name="chat" /><span>گفتگو</span><i class="dot" data-chat-dot hidden></i></button>
+  <a href={url('saved/')} aria-current={here(url('saved/'))}><Icon name="bookmark" /><span>ذخیره‌ها</span></a>
+  <a href={url('me/')} aria-current={here(url('me/'))}><Icon name="user" /><span>من</span></a>
+</nav>

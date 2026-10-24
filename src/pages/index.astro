@@ -1,21 +1,42 @@
 ---
 import Base from '../layouts/Base.astro';
-import Hero from '../components/Hero.astro';
-import Feed from '../components/Feed.astro';
+import Lead from '../components/Lead.astro';
+import Timeline from '../components/Timeline.astro';
+import Sidebar from '../components/Sidebar.astro';
 import Icon from '../components/Icon.astro';
 import { SITE } from '../site';
 import { getPosts, url } from '../lib/posts';
 
 const posts = getPosts();
 const first = posts.slice(0, SITE.pageSize);
+const lead = first.filter((p) => p.kind === 'story' && p.cover).slice(0, 4);
+const leadIds = new Set(lead.map((p) => p.id));
+const rest = first.filter((p) => !leadIds.has(p.id));
 const next = posts.length > SITE.pageSize ? url('page/2/') : null;
 ---
-<Base image={first[0]?.cover?.src}>
-  <div class="wrap">
-    <Hero />
+<Base image={lead[0]?.cover?.src}>
+  <div class="container">
+    <section class="masthead">
+      <div>
+        <h1>{SITE.name} <span class="ltr" dir="ltr">{SITE.nameLatin}</span></h1>
+        <p>{SITE.tagline}</p>
+      </div>
+      {posts[0] && <p class="updated"><span class="pulse" aria-hidden="true"></span> آخرین خبر: <time datetime={posts[0].date} data-f="rel"></time></p>}
+    </section>
+    <div class="welcome" data-welcome hidden>
+      <Icon name="sparkles" />
+      <span data-welcome-text></span>
+      <a class="btn sm" href="#new-divider" data-welcome-jump hidden>رفتن به جایی که بودید</a>
+    </div>
     {
-      first.length ? (
-        <Feed posts={first} nextHref={next} />
+      posts.length ? (
+        <div class="layout">
+          <div class="col-main">
+            <Lead posts={lead} />
+            <Timeline posts={rest} nextHref={next} />
+          </div>
+          <Sidebar />
+        </div>
       ) : (
         <div class="empty">
           <Icon name="news" />

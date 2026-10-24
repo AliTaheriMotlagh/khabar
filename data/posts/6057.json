@@ -1,0 +1,49 @@
+{
+ "id": 6057,
+ "url": "https://t.me/dlmehr/6057",
+ "date": "2026-10-23T02:44:52+00:00",
+ "text": "https://fxtwitter.com/markgadala/status/2113437710459535860?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+ "forwarded_from": null,
+ "digest": false,
+ "hash": "c1dae5263adc",
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/markgadala/status/2113437710459535860?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+  "site": "🧵 Thread • FxTwitter",
+  "title": "Mark Gadala-Maria (@markgadala)",
+  "description": "🚨\nBREAKING: NOW JAVA IS FACING A CRITICAL SECURITY EMERGENCY.\nOracle has issued an OUT-OF-BAND security alert for a dangerous 9.1/10 vulnerability affecting Java and GraalVM.\nAnd the most alarming part? Hackers could exploit vulnerable applications REMOTELY…",
+  "image": "https://cdn4.telesco.pe/file/bUQXlXzlnxQ6AD_hRhVcAp-Wc4HUcsNw6vBuLNby2kGG-YCVabWcVvUaGE2u0ArCjbewHpFfieC8WFO3sOTVg8U0PlovUmQPnNJMOG1EU87oTWyOyzDJKgHLg8N6qSHX0ir0hCtjjy5Arr5trSGl2Xm-8WRF3DlCiGvuq6KqD0LoIUNd-j65kN5Mejhi-sVBR3FupTEyJgkn5q-qXnmMTdaq0-XMqOiRga3O7XpP8Cy9kVrOyWkYHxPxkJzH-8sYpEmMv6JXjHP8Ix3ddeIAbe8fjHenaNseqWGqFGy9ZDa9WRqlwrkq03qNQ7jvl3HOVU9CO3P7iKQF56JRpqzo1A.jpg"
+ },
+ "gholam": {
+  "text": "ببین رفیق، شرکت اوراکل یه آژیر قرمز درست‌وحسابی کشیده و یه آپدیت اضطراری فوری داده بیرون، چون یه حفره امنیتی فوق‌العاده خطرناک با نمره ۹.۱ از ۱۰ توی جاوا و GraalVM پیدا شده. داستان از این قراره که این باگ به اسم CVE-2026-91403 توی بخش امنیتی JSSE نشسته و نسخه‌های پرکاربردی مثل جاوا ۸، ۱۱، ۱۷ و ۲۱ رو بدجوری آلوده کرده. ترسناک‌ترین بخش قضیه اینه که هکرها از راه دور، بدون نیاز به هیچ پسورد یا دسترسی اولیه‌ای می‌تونن نفوذ کنن و دیتای حساس برنامه‌ها رو دستکاری کنن یا کلاً بفرستن رو هوا. کار اون‌قدر بیخ پیدا کرده که اوراکل منتظر روال عادی آپدیت‌هاش نمونده و از همه برنامه‌نویس‌ها و مدیران سرور خواسته تا کار دستشون نداده، سریع سیستم‌ها رو وصله کنن.\n\nچرا مهمه؟ چون بخش عظیمی از سرورها و برنامه‌های حیاتی دنیا روی جاوا می‌چرخن و این حفره یعنی کلید ورود هکرها به حساس‌ترین اطلاعات، اونم بدون جا گذاشتن ردِ پا.",
+  "date": "2026-10-23T02:45:09+00:00"
+ },
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/markgadala/status/2113437710459535860",
+   "domain": "x.com",
+   "author": {
+    "name": "Mark Gadala-Maria",
+    "handle": "markgadala",
+    "avatar": "https://pbs.twimg.com/profile_images/1904279027013001216/STf4Q5To_200x200.jpg"
+   },
+   "text": "🚨 BREAKING: NOW JAVA IS FACING A CRITICAL SECURITY EMERGENCY.\n\nOracle has issued an OUT-OF-BAND security alert for a dangerous 9.1/10 vulnerability affecting Java and GraalVM.\n\nAnd the most alarming part? Hackers could exploit vulnerable applications REMOTELY, without a password or ANY user interaction.\n\nHere's what's happening:\n\n→ CRITICAL 9.1/10 FLAW: CVE-2026-91403 affects Java's JSSE security component.\n\n→ NO LOGIN REQUIRED: Attackers could potentially exploit vulnerable applications remotely without authentication.\n\n→ SENSITIVE DATA AT RISK: Successful attacks could expose, modify, or delete critical application data.\n\n→ MULTIPLE JAVA VERSIONS AFFECTED: Oracle lists affected releases across Java 8, 11, 17, 21, 25, and 27.\n\n→ GRAALVM ALSO AFFECTED: Oracle confirms the vulnerability impacts multiple GraalVM releases.\n\n→ EMERGENCY PATCH ALERT: Oracle released an urgent security update rather than waiting for its next scheduled patch cycle.\n\nThe list of critical vulnerabilities just keeps growing.\n\nIf you operate Java applications or servers, CHECK YOUR SECURITY UPDATES NOW.",
+   "date": 1792717790,
+   "media": [],
+   "links": []
+  }
+ ],
+ "article": {
+  "title": "شرکت اوراکل یه آژیر قرمز درست‌وحسابی کشیده و یه آپدیت اضطراری فوری داده بیرون، چون یه حفره امنیتی فوق‌العاده…",
+  "source_title": "🚨 BREAKING: NOW JAVA IS FACING A CRITICAL SECURITY EMERGENCY.",
+  "body": [
+   "ببین رفیق، شرکت اوراکل یه آژیر قرمز درست‌وحسابی کشیده و یه آپدیت اضطراری فوری داده بیرون، چون یه حفره امنیتی فوق‌العاده خطرناک با نمره ۹.۱ از ۱۰ توی جاوا و GraalVM پیدا شده. داستان از این قراره که این باگ به اسم CVE-2026-91403 توی بخش امنیتی JSSE نشسته و نسخه‌های پرکاربردی مثل جاوا ۸، ۱۱، ۱۷ و ۲۱ رو بدجوری آلوده کرده. ترسناک‌ترین بخش قضیه اینه که هکرها از راه دور، بدون نیاز به هیچ پسورد یا دسترسی اولیه‌ای می‌تونن نفوذ کنن و دیتای حساس برنامه‌ها رو دستکاری کنن یا کلاً بفرستن رو هوا. کار اون‌قدر بیخ پیدا کرده که اوراکل منتظر روال عادی آپدیت‌هاش نمونده و از همه برنامه‌نویس‌ها و مدیران سرور خواسته تا کار دستشون نداده، سریع سیستم‌ها رو وصله کنن."
+  ],
+  "why": "چون بخش عظیمی از سرورها و برنامه‌های حیاتی دنیا روی جاوا می‌چرخن و این حفره یعنی کلید ورود هکرها به حساس‌ترین اطلاعات، اونم بدون جا گذاشتن ردِ پا.",
+  "tags": [
+   "امنیت"
+  ]
+ },
+ "updated": "2026-10-24T11:29:47+00:00"
+}

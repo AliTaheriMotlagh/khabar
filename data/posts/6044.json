@@ -1,0 +1,68 @@
+{
+ "id": 6044,
+ "url": "https://t.me/dlmehr/6044",
+ "date": "2026-10-22T17:07:32+00:00",
+ "text": "https://fxtwitter.com/clementdelangue/status/2113264393756545449?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+ "forwarded_from": null,
+ "digest": false,
+ "hash": "ed98004f59c1",
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/clementdelangue/status/2113264393756545449?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+  "site": "FxTwitter",
+  "title": "clem 🤗 (@ClementDelangue)",
+  "description": "Frontier labs are advancing the capabilities in AI for biology but preventing the good guys (scientists, academia, non-profits, health agencies,...) to use, study and understand it with widespread but shallow guardrails that the bad guys are bypassing easily…",
+  "image": "https://cdn4.telesco.pe/file/LJDqC_Bckuu50BQYasGjysZYl_FecIiXMqvxvJYUBae4TEzmaoehfLkMaufrHoGC-eAGZHxikzI7hotMCXklsjLskOgdd-hiR9IpMrxY4B0Fugsu4NqW01r6BY5F5THiMHxmvj2H9ff90aJMNl_Bx-Y1QmNsD_zSlqUhHzDNAwqIkIpPiHE_nFVUX6FbOdfD5FxiD23l60v1aRfLKs6UB0zQMAgNBoL5Pn9kTNDB95NHF--PhPO3ifZYHUyBnR39V1T815-SR_iU9pARWKEbih-L0_PTBQ1ieUSe6xCjhoev_cl_v7jF9_IUGKHwoq_QG0DBmtweA62cIoBorlFybg.jpg"
+ },
+ "gholam": {
+  "text": "رفیق، کلم دلنگ، مدیر هاگینگ‌فیس، اومده وسط میدون و دست گذاشته رو یه درد بزرگ توی هوش مصنوعی زیستی. حرفش اینه که غول‌های فناوری به اسم مسائل ایمنی دست دانشمندا و پژوهشگرای درست‌کار رو بستن در حالی که آدم‌بدها راحت دورشون می‌زنن؛ واسه همین هاگینگ‌فیس اومده مدل متن‌باز «کربن-ایکس» (Carbon-X) رو با آموزش مدل Qwen3-14B روی ۳۰۰ میلیارد توکن دی‌ان‌ای و متن انگلیسی روانه بازار کرده. این مدل خفن توی پنج تا آزمون تخصصی تحلیل و تولید DNA حسابی گردوخاک به پا کرده و با کیفیتی هم‌تراز پیشرفته‌ترین مدل‌ها، هزینه‌ش ۱۸۰۰ برابر کمتره. با لایسنس کاملاً آزاد آپاچی ۲ هم پخشش کردن تا انحصار چندتا کمپانی بزرگ شکسته بشه و همه بتونن آزادانه بررسیش کنن.\n\nاهمیتش اینه که ابزار فوق‌پیشرفته مهندسی و تحلیل DNA رو از قفس آزمایشگاه‌های انحصاری آزاد می‌کنه و با هزینه بسیار پایین، سرعت پیشرفت علم پزشکی و درمان‌ها رو چند پله می‌بره بالا.",
+  "date": "2026-10-22T17:07:52+00:00"
+ },
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/ClementDelangue/status/2113264393756545449",
+   "domain": "x.com",
+   "author": {
+    "name": "clem 🤗",
+    "handle": "ClementDelangue",
+    "avatar": "https://pbs.twimg.com/profile_images/1100512198139498497/utHSJ4st_200x200.png"
+   },
+   "text": "Frontier labs are advancing the capabilities in AI for biology but preventing the good guys (scientists, academia, non-profits, health agencies,...) to use, study and understand it with widespread but shallow guardrails that the bad guys are bypassing easily (blocked me to proofread this tweet for example 😅). \n\nThis will automatically create massive assymetry and risks in the coming years, just like in cybersecurity, especially now that frontier labs are building wet labs (HF cybersecurity scenario for biology when?).\n\nThis is why we created Carbon-X, the best open-source DNA model by midtraining Qwen3-14B on 300B tokens of DNA, English and interleaved data.  We also used a hybrid tokenizer that tokenizes English with BPE and DNA with a 6-mer tokenizer.\n\nAs a result, Carbon-X outperforms all open language models we evaluated on five benchmarks of DNA understanding and generation. This is a 27-point improvement over Qwen3-14B, showing how much a  language model can gain from DNA training. It is also API frontier level at 1,800x less cost than GPT 6.1 Sol!\n\nWe hope Carbon-X helps researchers explore DNA in new ways. Releasing it openly means anyone can study its capabilities, limitations, and risks. Let's make the AI biology frontier open-source to make it safe and impactful for the whole world (not just a few companies).\n\nApache 2.0 Model on @huggingface: https://huggingface.co/HuggingFaceBio/Carbon-X",
+   "date": 1792676468,
+   "media": [
+    {
+     "type": "image",
+     "src": "https://pbs.twimg.com/media/HVPOfkEWAAAiUCS.jpg?name=orig",
+     "ratio": 0.6175
+    }
+   ],
+   "links": [
+    "https://huggingface.co/HuggingFaceBio/Carbon-X"
+   ]
+  },
+  {
+   "kind": "link",
+   "url": "https://huggingface.co/HuggingFaceBio/Carbon-X",
+   "domain": "huggingface.co",
+   "title": "HuggingFaceBio/Carbon-X · Hugging Face",
+   "description": "We’re on a journey to advance and democratize artificial intelligence through open source and open science.",
+   "image": "https://cdn-thumbnails.huggingface.co/social-thumbnails/models/HuggingFaceBio/Carbon-X.png",
+   "site": "huggingface.co"
+  }
+ ],
+ "article": {
+  "title": "کلم دلنگ، مدیر هاگینگ‌فیس، اومده وسط میدون و دست گذاشته رو یه درد بزرگ توی هوش مصنوعی زیستی",
+  "source_title": "Frontier labs are advancing the capabilities in AI for biology but preventing the good guys (scientists, academia, non-profits, health…",
+  "body": [
+   "رفیق، کلم دلنگ، مدیر هاگینگ‌فیس، اومده وسط میدون و دست گذاشته رو یه درد بزرگ توی هوش مصنوعی زیستی. حرفش اینه که غول‌های فناوری به اسم مسائل ایمنی دست دانشمندا و پژوهشگرای درست‌کار رو بستن در حالی که آدم‌بدها راحت دورشون می‌زنن؛ واسه همین هاگینگ‌فیس اومده مدل متن‌باز «کربن-ایکس» (Carbon-X) رو با آموزش مدل Qwen3-14B روی ۳۰۰ میلیارد توکن دی‌ان‌ای و متن انگلیسی روانه بازار کرده. این مدل خفن توی پنج تا آزمون تخصصی تحلیل و تولید DNA حسابی گردوخاک به پا کرده و با کیفیتی هم‌تراز پیشرفته‌ترین مدل‌ها، هزینه‌ش ۱۸۰۰ برابر کمتره. با لایسنس کاملاً آزاد آپاچی ۲ هم پخشش کردن تا انحصار چندتا کمپانی بزرگ شکسته بشه و همه بتونن آزادانه بررسیش کنن."
+  ],
+  "why": "ابزار فوق‌پیشرفته مهندسی و تحلیل DNA رو از قفس آزمایشگاه‌های انحصاری آزاد می‌کنه و با هزینه بسیار پایین، سرعت پیشرفت علم پزشکی و درمان‌ها رو چند پله می‌بره بالا.",
+  "tags": [
+   "هوش مصنوعی",
+   "دیپ‌سیک",
+   "سلامت"
+  ]
+ },
+ "updated": "2026-10-24T11:30:02+00:00"
+}

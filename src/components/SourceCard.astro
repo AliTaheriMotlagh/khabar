@@ -1,106 +1,57 @@
 ---
+// The original source of a story: the tweet (with all its media) or the linked article.
 import Icon from './Icon.astro';
 import Media from './Media.astro';
-import { url, faNum, type Link, type Tweet } from '../lib/posts';
-interface Props { link: Link; alt: string }
-const { link, alt } = Astro.props;
+import { sized, type Link } from '../lib/posts';
+interface Props { link: Link; alt: string; fallbackHref: string; showMedia?: boolean }
+const { link, alt, fallbackHref, showMedia = true } = Astro.props;
 
-// Split text into plain parts and clickable URLs (no HTML injection: Astro escapes each part).
+// Split text into plain parts and clickable URLs (Astro escapes each part, so no HTML injection).
 const URL_RE = /(https?:\/\/[^\s]+)/g;
 const parts = (text = '') => text.split(URL_RE).map((v, i) => ({ v, url: i % 2 === 1 }));
-const statLabels: Record<string, [string, string]> = {
-  views: ['eye', 'بازدید'],
-  likes: ['heart', 'پسند'],
-  retweets: ['repeat', 'بازنشر'],
-  replies: ['reply', 'پاسخ'],
-};
-const compact = (n: number) => new Intl.NumberFormat('fa-IR', { notation: 'compact', maximumFractionDigits: 1 }).format(n);
-const tweetDate = (t: Tweet) =>
-  t.date ? new Intl.DateTimeFormat('fa-IR-u-ca-persian', { dateStyle: 'medium', timeZone: 'Asia/Tehran' }).format(new Date(t.date * 1000)) : '';
+const tweetDate = (t?: number) =>
+  t ? new Intl.DateTimeFormat('fa-IR-u-ca-persian', { dateStyle: 'medium', timeZone: 'Asia/Tehran' }).format(new Date(t * 1000)) : '';
 ---
 {
   link.kind === 'tweet' ? (
-    <section class="source" aria-label={`توییت ${link.author?.name ?? ''}`}>
+    <section class="source tweet" aria-label={`توییت ${link.author?.name ?? ''}`}>
       <div class="head">
-        {link.author?.avatar ? <img src={url(link.author.avatar)} alt="" width="42" height="42" loading="lazy" /> : <span class="av" />}
+        {link.author?.avatar ? <img src={link.author.avatar} alt="" width="40" height="40" loading="lazy" referrerpolicy="no-referrer" /> : <span class="av" />}
         <div class="who ltr" dir="ltr">
           <b>{link.author?.name}</b>
           <span>@{link.author?.handle}</span>
         </div>
-        <span class="logo"><Icon name="x-logo" label="X" /></span>
+        <Icon name="x-logo" class="logo" label="X" />
       </div>
-      <div class="txt ltr" dir="auto">{parts(link.text).map((p) => (p.url ? <a href={p.v} rel="noopener nofollow" target="_blank">{p.v}</a> : p.v))}</div>
-      {link.article && (
-        <div class="txt">
-          <b dir="auto">{link.article.title}</b>
-          <details class="fold" data-source style="border:0;margin-top:6px">
-            <summary style="padding-inline:0">متن کامل مقاله (انگلیسی)</summary>
-            <div class="fold-body ltr" dir="auto" style="padding-inline:0">{link.article.text}</div>
-          </details>
-        </div>
-      )}
-      {link.media && link.media.length > 0 && <Media items={link.media} alt={alt} fallbackHref={link.url} />}
+      {link.text && <div class="txt" dir="auto">{parts(link.text).map((p) => (p.url ? <a href={p.v} rel="noopener nofollow" target="_blank">{p.v}</a> : p.v))}</div>}
+      {link.article?.title && <p class="txt"><b dir="auto">{link.article.title}</b></p>}
+      {showMedia && link.media && link.media.length > 0 && <Media items={link.media} alt={alt} fallbackHref={fallbackHref} limit={12} size="large" />}
       {link.quote && (
         <div class="quote">
-          <div class="head" style="padding-top:10px">
-            <div class="who ltr" dir="ltr"><b>{link.quote.author?.name}</b> <span>@{link.quote.author?.handle}</span></div>
-          </div>
-          <div class="txt ltr" dir="auto">{link.quote.text}</div>
-          {link.quote.media && link.quote.media.length > 0 && <Media items={link.quote.media} alt={alt} />}
+          <div class="who ltr" dir="ltr"><b>{link.quote.author?.name}</b> <span>@{link.quote.author?.handle}</span></div>
+          <div class="txt" dir="auto">{link.quote.text}</div>
+          {showMedia && link.quote.media && link.quote.media.length > 0 && <Media items={link.quote.media} alt={alt} fallbackHref={fallbackHref} />}
         </div>
       )}
-      <div class="stats">
-        {link.date && <span>{tweetDate(link as Tweet)}</span>}
-        {Object.entries(link.stats ?? {}).map(([k, v]) => statLabels[k] && (
-          <span title={statLabels[k][1]}><Icon name={statLabels[k][0]} class="si" /> {compact(v)}</span>
-        ))}
-        <a href={link.url} target="_blank" rel="noopener">مشاهده در X ↗</a>
-      </div>
-    </section>
-  ) : link.kind === 'youtube' ? (
-    <section class="source" aria-label="ویدیوی یوتیوب">
-      <div class="media">
-        <figure>
-          <a class="vid-link" href={link.url} target="_blank" rel="noopener" aria-label="دیدن در یوتیوب">
-            {link.image && <img src={url(link.image.src)} alt={link.title ?? alt} width={link.image.width} height={link.image.height} loading="lazy" />}
-            <span class="play"><span><Icon name="play" /></span></span>
-          </a>
-        </figure>
-      </div>
-      <div class="body">
-        <div class="site"><Icon name="youtube" class="si" /> YouTube</div>
-        <h3 dir="auto"><a href={link.url} target="_blank" rel="noopener">{link.title}</a></h3>
-        {link.description && <p class="desc ltr" dir="auto">{link.description.slice(0, 400)}</p>}
+      <div class="foot">
+        {link.date && <span>{tweetDate(link.date)}</span>}
+        <a class="btn sm" href={link.url} target="_blank" rel="noopener">مشاهده در X <Icon name="external" /></a>
       </div>
     </section>
   ) : (
-    <section class="source" aria-label={`منبع: ${link.site ?? link.domain}`}>
+    <section class="source page" aria-label={`منبع: ${link.site ?? link.domain}`}>
       {link.image && (
-        <a href={link.url} target="_blank" rel="noopener" tabindex="-1">
-          <img class="og" src={url(link.image.src)} alt="" width={link.image.width} height={link.image.height} loading="lazy" decoding="async" />
+        <a class="og" href={link.url} target="_blank" rel="noopener" tabindex="-1" aria-hidden="true">
+          <img src={sized(link.image, 'medium')} alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer" data-fallback={link.url} />
+          {link.kind === 'youtube' && <span class="play"><span><Icon name="play" /></span></span>}
         </a>
       )}
       <div class="body">
-        <div class="site ltr" dir="ltr">
-          <Icon name="link" class="si" />
-          {link.site ?? link.domain}
-        </div>
+        <span class="site ltr" dir="ltr"><Icon name={link.kind === 'youtube' ? 'youtube' : 'link'} /> {link.site ?? link.domain}</span>
         <h3 dir="auto"><a href={link.url} target="_blank" rel="noopener">{link.title ?? link.url}</a></h3>
-        {link.description && <p class="desc" dir="auto">{link.description}</p>}
-      </div>
-      {link.text && (
-        <details class="fold" data-source>
-          <summary>متن کامل منبع (زبان اصلی)</summary>
-          <div class="fold-body" dir="auto">{link.text}</div>
-        </details>
-      )}
-      <div class="stats">
-        <span class="ltr" dir="ltr">{link.domain}</span>
-        <a href={link.url} target="_blank" rel="noopener">خواندن در سایت منبع ↗</a>
+        {link.description && <p dir="auto">{link.description}</p>}
+        <a class="btn sm" href={link.url} target="_blank" rel="noopener">{link.kind === 'youtube' ? 'دیدن در یوتیوب' : 'خواندن در سایت منبع'} <Icon name="external" /></a>
       </div>
     </section>
   )
 }
-<style>
-  .si { width: 15px; height: 15px; vertical-align: -3px; }
-</style>

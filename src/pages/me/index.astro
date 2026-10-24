@@ -1,0 +1,65 @@
+---
+// The guest's own corner: name, level, badges, streak and reading history. Everything lives in this browser.
+import Base from '../../layouts/Base.astro';
+import Icon from '../../components/Icon.astro';
+---
+<Base title="پروفایل من" noindex>
+  <div class="container narrow">
+    <section class="profile">
+      <span class="avatar xl" data-my-avatar aria-hidden="true">؟</span>
+      <div class="profile-main">
+        <form class="name-form" data-name-form>
+          <label for="my-name" class="sr-only">نام نمایشی</label>
+          <input id="my-name" name="name" maxlength="32" placeholder="یک نام برای خودتان انتخاب کنید" autocomplete="nickname" />
+          <button class="btn sm" type="submit">ذخیره</button>
+        </form>
+        <p class="muted">بدون ثبت‌نام. نام شما فقط کنار نظرها، گفتگو و جدول امتیازها نشان داده می‌شود.</p>
+        <div class="level-row">
+          <span class="pill accent">سطح <b data-my-level>۱</b></span>
+          <b data-my-title>تازه‌وارد</b>
+          <span class="streak"><Icon name="flame" /> <b data-my-streak>۰</b> روز پشت‌سرهم</span>
+        </div>
+        <div class="xp big"><i data-my-xp style="width:0%"></i></div>
+        <small class="muted" data-my-next></small>
+      </div>
+    </section>
+
+    <section class="stat-grid" data-my-stats></section>
+
+    <h2 class="section-title"><Icon name="trophy" /> نشان‌ها</h2>
+    <div class="badges" data-my-badges></div>
+
+    <section data-leaders hidden>
+      <h2 class="section-title"><Icon name="users" /> فعال‌ترین‌های این هفته</h2>
+      <ol class="leaders" data-leaders-list></ol>
+    </section>
+
+    <h2 class="section-title"><Icon name="history" /> خبرهایی که خوانده‌اید</h2>
+    <ul class="row-list" data-history-list></ul>
+    <div class="empty" data-history-empty hidden>
+      <Icon name="history" />
+      <p>هنوز خبری نخوانده‌اید. هر خبری که باز کنید اینجا می‌ماند تا دوباره پیدایش کنید.</p>
+    </div>
+    <p class="center"><button class="btn sm" type="button" data-clear-history hidden>پاک کردن تاریخچه</button></p>
+  </div>
+</Base>
+<script>
+  import { getHistory, rowHtml, store } from '../../scripts/app';
+  import { renderProfile } from '../../scripts/game';
+  const list = document.querySelector('[data-history-list]')!;
+  const empty = document.querySelector<HTMLElement>('[data-history-empty]')!;
+  const clear = document.querySelector<HTMLButtonElement>('[data-clear-history]')!;
+  function render() {
+    const items = getHistory();
+    empty.hidden = items.length > 0;
+    clear.hidden = !items.length;
+    list.innerHTML = items.map((s) => rowHtml(s, false)).join('');
+  }
+  clear.addEventListener('click', () => {
+    if (!confirm('تاریخچه‌ی خواندن پاک شود؟')) return;
+    store.set('history', []);
+    render();
+  });
+  render();
+  renderProfile();
+</script>

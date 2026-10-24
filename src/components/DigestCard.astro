@@ -1,0 +1,26 @@
+---
+// The channel's "24-hour summary": every line links to that story's page on this site.
+import Icon from './Icon.astro';
+import { faNum, type Post } from '../lib/posts';
+interface Props { post: Post; limit?: number; headingLevel?: 'h2' | 'h3' }
+const { post, limit = 6, headingLevel: H = 'h3' } = Astro.props;
+const items = post.digestItems;
+---
+<article class="digest" data-id={post.id} aria-labelledby={`t-${post.id}`}>
+  <div class="digest-head">
+    <span class="pill accent"><Icon name="bolt" /> خلاصه‌ی ۲۴ ساعت</span>
+    <time datetime={post.date} data-f="rel"></time>
+  </div>
+  <H id={`t-${post.id}`}><a href={post.href}>{post.article.title}</a></H>
+  <ol class="digest-list">
+    {
+      items.slice(0, limit).map((i) => (
+        <li>
+          <span class="n" data-num>{faNum(i.n)}</span>
+          <a href={i.href} target={i.internal ? undefined : '_blank'} rel={i.internal ? undefined : 'noopener'}>{i.text}</a>
+        </li>
+      ))
+    }
+  </ol>
+  {items.length > limit && <a class="more-link" href={post.href}>دیدن همه‌ی {faNum(items.length)} خبر <Icon name="arrow" /></a>}
+</article>

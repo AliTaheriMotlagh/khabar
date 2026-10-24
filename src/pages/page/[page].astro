@@ -1,6 +1,7 @@
 ---
 import Base from '../../layouts/Base.astro';
-import Feed from '../../components/Feed.astro';
+import Timeline from '../../components/Timeline.astro';
+import Sidebar from '../../components/Sidebar.astro';
 import { SITE } from '../../site';
 import { getPosts, url, faNum } from '../../lib/posts';
 
@@ -15,9 +16,12 @@ const slice = posts.slice((page - 1) * SITE.pageSize, page * SITE.pageSize);
 const prev = page === 2 ? url() : url(`page/${page - 1}/`);
 const next = page < total ? url(`page/${page + 1}/`) : null;
 ---
-<Base title={`آرشیو خبرها — صفحه ${faNum(page)}`} description={`${SITE.description} — صفحه ${faNum(page)}`}>
-  <div class="wrap">
+<Base title={`آرشیو خبرها — صفحه‌ی ${faNum(page)}`} description={`${SITE.description} — صفحه‌ی ${faNum(page)} از ${faNum(total)}`}>
+  <div class="container">
     <header class="page-head"><h1>آرشیو خبرها</h1><p>صفحه‌ی {faNum(page)} از {faNum(total)}</p></header>
-    <Feed posts={slice} nextHref={next} prevHref={prev} />
+    <div class="layout">
+      <div class="col-main"><Timeline posts={slice} nextHref={next} prevHref={prev} title="خبرهای قدیمی‌تر" /></div>
+      <Sidebar />
+    </div>
   </div>
 </Base>

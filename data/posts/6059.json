@@ -1,0 +1,60 @@
+{
+ "id": 6059,
+ "url": "https://t.me/dlmehr/6059",
+ "date": "2026-10-23T02:53:21+00:00",
+ "text": "https://fxtwitter.com/ns123abc/status/2113315758247747884?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+ "forwarded_from": null,
+ "digest": false,
+ "hash": "1f807caccf97",
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/ns123abc/status/2113315758247747884?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+  "site": "🧵 Thread • FxTwitter",
+  "title": "NIK (@ns123abc)",
+  "description": "OpenAI CEO Sam Altman: \"I don't even know a dramatic enough word to use… models can find bugs that are outside of the normal threat model of what we think a hacker can do… hardware-level, insane stuff… I no longer think we're gonna be able to just patch all…",
+  "image": null
+ },
+ "gholam": {
+  "text": "ببین رفیق، سم آلتمن مدیرعامل اوپن‌ای‌آی یه حرفایی زده که رسماً مو به تن آدم سیخ می‌کنه؛ گفته مدل‌های هوش مصنوعی الان دارن باگ‌هایی رو در سطح سخت‌افزار پیدا می‌کنن که فراتر از تصور و توان هکرهای حرفه‌ایه. طرف اعتراف کرده کلمه‌ای پیدا نمی‌کنه که عمق ماجرا رو به اندازه کافی دراماتیک نشون بده، چون قضایا وارد لول‌های بشدت دیوانه‌واری شده. ته حرفش هم آب پاکی رو ریخته رو دست همه و گفته دیگه گذشت اون دوره‌ای که فکر می‌کردیم می‌شه نشست و همه این سوراخ‌سمبه‌ها و رخنه‌ها رو با چندتا آپدیت ساده پچ کرد.\n\nاهمیتش اینه که اگه آسیب‌پذیری‌های سخت‌افزاری با این سرعت لو برن، سیستم‌های امنیتی کل دنیا ممکنه به یه شوک جبران‌ناپذیر بخورن و باید همه‌چیز از پایه بازنویسی بشه.",
+  "date": "2026-10-23T02:53:41+00:00"
+ },
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/ns123abc/status/2113315758247747884",
+   "domain": "x.com",
+   "author": {
+    "name": "NIK",
+    "handle": "ns123abc",
+    "avatar": "https://pbs.twimg.com/profile_images/2048822563821035520/7nxCFEnk_200x200.jpg"
+   },
+   "text": "OpenAI CEO Sam Altman: \"I don't even know a dramatic enough word to use… models can find bugs that are outside of the normal threat model of what we think a hacker can do… hardware-level, insane stuff… I no longer think we're gonna be able to just patch all the bugs.\"\n\nIt's over.",
+   "date": 1792688714,
+   "media": [
+    {
+     "type": "video",
+     "src": "https://video.twimg.com/amplify_video/2113313493369704448/vid/avc1/1260x720/72fpRu8Y0cfuwf7L.mp4?tag=29",
+     "poster": "https://pbs.twimg.com/amplify_video_thumb/2113313493369704448/img/2PNeHmBOmb-W9vgI.jpg",
+     "ratio": 0.571,
+     "duration": 97.166,
+     "gif": false
+    }
+   ],
+   "links": []
+  }
+ ],
+ "article": {
+  "title": "سم آلتمن مدیرعامل اوپن‌ای‌آی یه حرفایی زده که رسماً مو به تن آدم سیخ می‌کنه؛ گفته مدل‌های هوش مصنوعی الان…",
+  "source_title": "OpenAI CEO Sam Altman: \"I don't even know a dramatic enough word to use… models can find bugs that are outside of the normal threat model…",
+  "body": [
+   "ببین رفیق، سم آلتمن مدیرعامل اوپن‌ای‌آی یه حرفایی زده که رسماً مو به تن آدم سیخ می‌کنه؛ گفته مدل‌های هوش مصنوعی الان دارن باگ‌هایی رو در سطح سخت‌افزار پیدا می‌کنن که فراتر از تصور و توان هکرهای حرفه‌ایه. طرف اعتراف کرده کلمه‌ای پیدا نمی‌کنه که عمق ماجرا رو به اندازه کافی دراماتیک نشون بده، چون قضایا وارد لول‌های بشدت دیوانه‌واری شده. ته حرفش هم آب پاکی رو ریخته رو دست همه و گفته دیگه گذشت اون دوره‌ای که فکر می‌کردیم می‌شه نشست و همه این سوراخ‌سمبه‌ها و رخنه‌ها رو با چندتا آپدیت ساده پچ کرد."
+  ],
+  "why": "اگه آسیب‌پذیری‌های سخت‌افزاری با این سرعت لو برن، سیستم‌های امنیتی کل دنیا ممکنه به یه شوک جبران‌ناپذیر بخورن و باید همه‌چیز از پایه بازنویسی بشه.",
+  "tags": [
+   "هوش مصنوعی",
+   "اوپن‌ای‌آی",
+   "امنیت"
+  ]
+ },
+ "updated": "2026-10-24T11:29:46+00:00"
+}

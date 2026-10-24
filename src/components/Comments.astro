@@ -1,0 +1,24 @@
+---
+// Guest comments (no signup). Rendered and posted by src/scripts/social.ts.
+import Icon from './Icon.astro';
+interface Props { id: number }
+const { id } = Astro.props;
+---
+<section class="comments" id="comments" data-comments={id} aria-labelledby="comments-title">
+  <h2 class="section-title" id="comments-title"><Icon name="comment" /> نظر شما چیه؟ <span class="count" data-comments-count></span></h2>
+  <form class="comment-form" data-comment-form>
+    <div class="who">
+      <span class="avatar" data-my-avatar aria-hidden="true">؟</span>
+      <input name="name" maxlength="32" placeholder="نام شما (اختیاری)" aria-label="نام شما" autocomplete="nickname" />
+    </div>
+    <textarea name="text" required minlength="2" maxlength="1000" rows="3" placeholder="نظرتان را درباره‌ی این خبر بنویسید…" aria-label="متن نظر"></textarea>
+    <input class="hp" name="website" tabindex="-1" autocomplete="off" aria-hidden="true" />
+    <div class="form-foot">
+      <small class="muted">بدون ثبت‌نام · +۱۰ امتیاز</small>
+      <button class="btn primary" type="submit"><Icon name="send" /> ارسال نظر</button>
+    </div>
+  </form>
+  <ol class="comment-list" data-comment-list aria-live="polite"></ol>
+  <p class="muted center" data-comments-empty hidden>هنوز نظری ثبت نشده؛ اولین نفر باشید.</p>
+  <p class="muted center" data-comments-off hidden>بخش نظرها فعلاً در دسترس نیست.</p>
+</section>

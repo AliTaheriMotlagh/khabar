@@ -1,10 +1,12 @@
 ---
 import '../styles/global.css';
 import { SITE } from '../site';
-import { getChannel, url } from '../lib/posts';
+import { abs, url } from '../lib/posts';
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
 import Settings from '../components/Settings.astro';
+import Chat from '../components/Chat.astro';
+import Icon from '../components/Icon.astro';
 
 interface Props {
   title?: string;
@@ -14,50 +16,72 @@ interface Props {
   type?: 'website' | 'article';
   published?: string;
   modified?: string;
+  section?: string;
   tags?: string[];
   jsonLd?: Record<string, unknown>[];
   noindex?: boolean;
   progress?: boolean;
 }
-const { title, description = SITE.description, image, imageAlt, type = 'website', published, modified, tags = [], jsonLd = [], noindex, progress } = Astro.props;
+const { title, description = SITE.description, image, imageAlt, type = 'website', published, modified, section, tags = [], jsonLd = [], noindex, progress } = Astro.props;
 
 const fullTitle = title ? `${title} | ${SITE.name}` : `${SITE.name} — ${SITE.tagline}`;
-const canonical = new URL(Astro.url.pathname, Astro.site).href;
-const ogImage = new URL(image ? url(image) : url('og.png'), Astro.site).href;
-const channel = getChannel();
+// Canonical always points at the primary domain, so the GitHub Pages mirror never competes with it in search.
+const base = import.meta.env.BASE_URL.replace(/\/$/, '');
+const canonical = abs(Astro.url.pathname.slice(base.length));
+const ogImage = image ? new URL(image, SITE.url).href : abs('og.png');
+const org = {
+  '@type': 'NewsMediaOrganization',
+  '@id': `${SITE.url}/#org`,
+  name: SITE.name,
+  alternateName: SITE.nameLatin,
+  url: abs(''),
+  logo: { '@type': 'ImageObject', url: abs('icon-512.png'), width: 512, height: 512 },
+  sameAs: [`https://t.me/${SITE.channel}`, SITE.owner.url],
+  founder: { '@type': 'Person', name: SITE.owner.nameLatin, alternateName: SITE.owner.name, url: SITE.owner.url },
+};
 const ld = [
   {
     '@context': 'https://schema.org',
     '@type': 'WebSite',
+    '@id': `${SITE.url}/#website`,
     name: SITE.name,
     alternateName: SITE.nameLatin,
-    url: new URL(url(), Astro.site).href,
+    url: abs(''),
     inLanguage: 'fa-IR',
-    potentialAction: {
-      '@type': 'SearchAction',
-      target: `${new URL(url('search/'), Astro.site).href}?q={query}`,
-      'query-input': 'required name=query',
-    },
+    publisher: { '@id': `${SITE.url}/#org` },
+    potentialAction: { '@type': 'SearchAction', target: `${abs('search/')}?q={query}`, 'query-input': 'required name=query' },
   },
+  { '@context': 'https://schema.org', ...org },
   ...jsonLd,
 ];
 ---
 <!doctype html>
-<html lang="fa" dir="rtl" data-theme="light" data-view="cards" data-media="show">
+<html lang="fa" dir="rtl" data-theme="light" data-view="cards" data-media="show" data-size="m">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
     <title>{fullTitle}</title>
     <meta name="description" content={description} />
     <link rel="canonical" href={canonical} />
-    {noindex && <meta name="robots" content="noindex, follow" />}
-    <meta name="theme-color" content={SITE.themeColor} />
+    <link rel="alternate" hreflang="fa" href={canonical} />
+    <meta name="robots" content={noindex ? 'noindex, follow' : 'index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1'} />
+    <!-- X/Twitter's video CDN refuses requests that carry a foreign Referer. -->
+    <meta name="referrer" content="no-referrer" />
+    <meta name="theme-color" content="#f5f6fa" media="(prefers-color-scheme: light)" />
+    <meta name="theme-color" content="#0b0f17" media="(prefers-color-scheme: dark)" />
     <meta name="color-scheme" content="light dark" />
+    <meta name="author" content={SITE.owner.name} />
+    <meta name="application-name" content={SITE.name} />
+    <meta name="apple-mobile-web-app-title" content={SITE.name} />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
     <link rel="icon" href={url('favicon.svg')} type="image/svg+xml" />
     <link rel="apple-touch-icon" href={url('icon-192.png')} />
     <link rel="manifest" href={url('manifest.webmanifest')} />
     <link rel="alternate" type="application/rss+xml" title={SITE.name} href={url('rss.xml')} />
     <link rel="sitemap" href={url('sitemap-index.xml')} />
+    <link rel="preconnect" href="https://pbs.twimg.com" />
+    <link rel="dns-prefetch" href="https://video.twimg.com" />
+    <link rel="dns-prefetch" href="https://cdn4.telesco.pe" />
 
     <meta property="og:site_name" content={SITE.name} />
     <meta property="og:locale" content="fa_IR" />
@@ -66,10 +90,12 @@ const ld = [
     <meta property="og:description" content={description} />
     <meta property="og:url" content={canonical} />
     <meta property="og:image" content={ogImage} />
-    {imageAlt && <meta property="og:image:alt" content={imageAlt} />}
+    <meta property="og:image:alt" content={imageAlt ?? SITE.name} />
     {published && <meta property="article:published_time" content={published} />}
     {modified && <meta property="article:modified_time" content={modified} />}
+    {section && <meta property="article:section" content={section} />}
     {tags.map((t) => <meta property="article:tag" content={t} />)}
+    {type === 'article' && <meta property="article:author" content={SITE.owner.url} />}
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content={title ?? SITE.name} />
     <meta name="twitter:description" content={description} />
@@ -85,24 +111,22 @@ const ld = [
         var t = s.theme || 'auto';
         if (t === 'auto') t = matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
         d.dataset.theme = t;
-        ['font', 'width', 'align', 'view', 'media', 'motion', 'uiFont', 'source'].forEach(function (k) { if (s[k]) d.dataset[k] = s[k]; });
-        if (s.fs) d.style.setProperty('--fs', s.fs + 'px');
-        if (s.lh) d.style.setProperty('--lh', s.lh);
+        ['size', 'view', 'media'].forEach(function (k) { if (s[k]) d.dataset[k] = s[k]; });
       })();
     </script>
   </head>
   <body>
     <a class="skip" href="#main">رفتن به محتوا</a>
     {progress && <div class="progress" aria-hidden="true"><i></i></div>}
-    <Header channel={channel} />
+    <Header />
+    <div class="offline-bar" data-offline hidden><Icon name="wifi-off" /> آفلاین هستید — صفحه‌هایی که قبلاً دیده‌اید و ذخیره‌ها در دسترس‌اند.</div>
     <main id="main">
       <slot />
     </main>
     <Footer />
     <Settings />
-    <button class="to-top" type="button" aria-label="بازگشت به بالا" data-to-top>
-      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M12 19V5M6 11l6-6 6 6" /></svg>
-    </button>
+    <Chat />
+    <button class="to-top" type="button" aria-label="بازگشت به بالا" data-to-top><Icon name="up" /></button>
     <div class="toast" role="status" aria-live="polite" data-toast></div>
     <script>
       import '../scripts/app';

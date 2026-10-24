@@ -1,0 +1,24 @@
+---
+// Site-wide live chat for guests (no signup). Driven by src/scripts/social.ts.
+import Icon from './Icon.astro';
+---
+<dialog class="drawer" id="chat" aria-labelledby="chat-title">
+  <div class="drawer-head">
+    <div>
+      <h2 id="chat-title"><Icon name="chat" /> گفتگوی زنده</h2>
+      <small><span class="pulse" aria-hidden="true"></span> <span data-online>…</span> نفر آنلاین</small>
+    </div>
+    <button class="icon-btn" type="button" data-close aria-label="بستن"><Icon name="x" /></button>
+  </div>
+  <ol class="chat-list" data-chat-list aria-live="polite"></ol>
+  <p class="chat-note" data-chat-off hidden>گفتگو فعلاً در دسترس نیست.</p>
+  <form class="chat-form" data-chat-form autocomplete="off">
+    <input class="chat-name" name="name" maxlength="32" placeholder="نام شما" aria-label="نام شما" autocomplete="nickname" />
+    <div class="chat-input">
+      <input name="text" maxlength="400" required placeholder="پیام خود را بنویسید…" aria-label="پیام" />
+      <input class="hp" name="website" tabindex="-1" aria-hidden="true" />
+      <button class="icon-btn primary" type="submit" aria-label="ارسال"><Icon name="send" /></button>
+    </div>
+    <small class="muted">بدون ثبت‌نام · پیام‌ها برای همه دیده می‌شوند · مؤدب باشیم 🙂</small>
+  </form>
+</dialog>

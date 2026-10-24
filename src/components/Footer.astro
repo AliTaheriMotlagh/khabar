@@ -4,16 +4,35 @@ import { SITE } from '../site';
 import { url } from '../lib/posts';
 ---
 <footer class="site-footer">
-  <div class="wrap-wide inner">
-    <span>© {SITE.name} — محتوا از کانال <a href={`https://t.me/${SITE.channel}`} rel="noopener">@{SITE.channel}</a></span>
-    <nav aria-label="پیوندهای پانویس">
-      <a href={url('about/')}>درباره</a>
+  <div class="container foot-grid">
+    <div class="foot-brand">
+      <a class="brand" href={url()}>
+        <span class="logo-mark" aria-hidden="true"></span>
+        <span class="brand-text"><b>{SITE.name}</b><small>{SITE.nameLatin}</small></span>
+      </a>
+      <p>{SITE.description}</p>
+      <div class="row">
+        <a class="btn primary" href={`https://t.me/${SITE.channel}`} target="_blank" rel="noopener" referrerpolicy="origin"><Icon name="telegram" /> کانال تلگرام</a>
+        <button class="btn" type="button" data-install hidden><Icon name="download" /> نصب اپ</button>
+      </div>
+    </div>
+    <nav aria-label="پیوندها">
+      <h2>بخش‌ها</h2>
+      <a href={url()}>تازه‌ترین خبرها</a>
       <a href={url('tags/')}>موضوع‌ها</a>
-      <a href={url('rss.xml')}><Icon name="rss" class="ic" /> RSS</a>
-      <button class="btn" type="button" data-open-keys style="padding:3px 10px;font-size:13px">میانبرها <kbd>?</kbd></button>
+      <a href={url('search/')}>جستجو</a>
+      <a href={url('saved/')}>ذخیره‌شده‌ها</a>
+      <a href={url('me/')}>پروفایل و تاریخچه</a>
+    </nav>
+    <nav aria-label="درباره">
+      <h2>درباره</h2>
+      <a href={url('about/')}>درباره‌ی {SITE.name}</a>
+      <a href={SITE.owner.url} target="_blank" rel="noopener" referrerpolicy="origin">{SITE.owner.name} — mehrzad.ai</a>
+      <a href={url('rss.xml')}><Icon name="rss" /> خوراک RSS</a>
     </nav>
   </div>
+  <div class="container foot-bottom">
+    <span>محتوا از کانال <a href={`https://t.me/${SITE.channel}`} rel="noopener" referrerpolicy="origin">@{SITE.channel}</a> · ترجمه: {SITE.gholam}</span>
+    <span class="foot-stats" data-site-stats hidden><Icon name="eye" /> <b data-total>…</b> بازدید · <b data-today>…</b> نفر امروز</span>
+  </div>
 </footer>
-<style>
-  .ic { width: 14px; height: 14px; vertical-align: -2px; }
-</style>

@@ -1,0 +1,72 @@
+{
+ "id": 6041,
+ "url": "https://t.me/dlmehr/6041",
+ "date": "2026-10-22T14:23:59+00:00",
+ "text": "https://fxtwitter.com/kimmonismus/status/2113141875368468508?s=46",
+ "forwarded_from": "Hossein Zakariaee",
+ "digest": false,
+ "hash": "e4613ccde590",
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/kimmonismus/status/2113141875368468508?s=46",
+  "site": "🧵 Thread • FxTwitter",
+  "title": "Chubby ♨️ (@kimmonismus)",
+  "description": "Whats happening right now is probably way worse than the Hugging Face incident.\nAI-powered attacks are hitting real organizations while major platforms disclose breaches and critical flaws.\n- Microsoft reports AI agents targeting hundreds of organizations…",
+  "image": "https://cdn4.telesco.pe/file/HrgmuJJ9H6N1vz4WpAXqdLZAeTDY75JD750qnq2wphegJjP-XIERQqfefkBxqcwxtFrISFhBFNTTSlm1CztrfioASeJOAGMe3Kz-FtU0XmiKeH5EkdZOmUBZghM6Fz_v--WjDS8lKazzWzWWCauUA81c91cXXJ6wbHbozNlNH15LJTglZ9dgsFtdNAiIjHqYKMOBFac5bqbJcLAso9mmGYNvScIcIFpW7ivz-4dHTXPK73GZ9iS6SycR_QVYJXM5OMB06ZaqmBlBad_cQrOBQ1jcjEoXLUe7nmwjFaqS-Wns2oH4p0q7icvGHz6NgKKe-6kUCF0jfNpfACMq_60qNA.jpg"
+ },
+ "gholam": {
+  "text": "رفیق، دنیای امنیت بدجوری به هم ریخته و اوضاع از چیزی که فکر می‌کردیم خیلی قاراشمیش‌تر شده؛ هکرها ایجنت‌های هوش مصنوعی رو انداختن به جون سیستم‌ها و دارن حسابی خرابی به بار میارن. مایکروسافت خبر داده که این بات‌های هوشمند توی کمتر از سه ساعت تونستن به بالاترین سطح دسترسی کلود صدها سازمان نفوذ کنن و کروداسترایک هم ردشون رو توی ضربه زدن به ۱۵ تا مرکز درمانی گرفته. قضیه اون‌قدر بالا گرفته که سرویس‌هایی مثل ریل‌وی و زبور به فنا رفتن یا تعطیل کردن، و شرکت‌ها تازه مجبور شدن یه باگ خطرناک ۱۲ ساله توی گیت‌لب و آسیب‌پذیری‌های نود جی‌اس رو سراسیمه وصله کنن.\n\nچرا مهمه؟ اهمیتش اینه که زنگ خطر حملات تمام‌خودکار هوش مصنوعی به صدا دراومده و سرعت نفوذ هکرها انقدر بالا رفته که سیستم‌های دفاعی سنتی دیگه عملاً جلوشون کم میارن.",
+  "date": "2026-10-22T14:24:22+00:00"
+ },
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/kimmonismus/status/2113141875368468508",
+   "domain": "x.com",
+   "author": {
+    "name": "Chubby♨️",
+    "handle": "kimmonismus",
+    "avatar": "https://pbs.twimg.com/profile_images/1728327996375719936/RW7VBJfD_200x200.jpg"
+   },
+   "text": "Whats happening right now is probably way worse than the Hugging Face incident. \n\nAI-powered attacks are hitting real organizations while major platforms disclose breaches and critical flaws.\n\n- Microsoft reports AI agents targeting hundreds of organizations, reaching privileged cloud access in under three hours in multiple cases. It attributes the ConnectWise compromise to the same group.\n\n- CrowdStrike documented four operators running successful AI-agent campaigns. One compromised at least 15 Argentine healthcare organizations.\n\n- PHP2Shell: AI helped turn longstanding PHP flaws into working exploits. Cloudflare’s CEO reports millions of exploitation attempts. Their AI involvement is unknown.\n\n- Railway disclosed possible access to customer secrets. LiteLLM shipped a backdoored release. Zeabur confirmed another breach and is shutting down.\n\n- GitLab patched a maximum-severity flaw affecting 12 years of releases. Node.js patched a serious code-execution vulnerability, with Vercel deploying firewall protections.\n\nFeels like a turningpoint.",
+   "date": 1792647258,
+   "media": [
+    {
+     "type": "image",
+     "src": "https://pbs.twimg.com/media/HVNjBIuWcAAMLbV.jpg?name=orig",
+     "ratio": 0.8946
+    },
+    {
+     "type": "image",
+     "src": "https://pbs.twimg.com/media/HVNjJ9XWYAAccck.jpg?name=orig",
+     "ratio": 0.9646
+    },
+    {
+     "type": "image",
+     "src": "https://pbs.twimg.com/media/HVNjL4IWYAAs0cG.jpg?name=orig",
+     "ratio": 0.8887
+    },
+    {
+     "type": "image",
+     "src": "https://pbs.twimg.com/media/HVNjShlWsAAUHbt.jpg?name=orig",
+     "ratio": 0.5468
+    }
+   ],
+   "links": []
+  }
+ ],
+ "article": {
+  "title": "دنیای امنیت بدجوری به هم ریخته و اوضاع از چیزی که فکر می‌کردیم خیلی قاراشمیش‌تر شده؛ هکرها ایجنت‌های هوش…",
+  "source_title": "Whats happening right now is probably way worse than the Hugging Face incident.",
+  "body": [
+   "رفیق، دنیای امنیت بدجوری به هم ریخته و اوضاع از چیزی که فکر می‌کردیم خیلی قاراشمیش‌تر شده؛ هکرها ایجنت‌های هوش مصنوعی رو انداختن به جون سیستم‌ها و دارن حسابی خرابی به بار میارن. مایکروسافت خبر داده که این بات‌های هوشمند توی کمتر از سه ساعت تونستن به بالاترین سطح دسترسی کلود صدها سازمان نفوذ کنن و کروداسترایک هم ردشون رو توی ضربه زدن به ۱۵ تا مرکز درمانی گرفته. قضیه اون‌قدر بالا گرفته که سرویس‌هایی مثل ریل‌وی و زبور به فنا رفتن یا تعطیل کردن، و شرکت‌ها تازه مجبور شدن یه باگ خطرناک ۱۲ ساله توی گیت‌لب و آسیب‌پذیری‌های نود جی‌اس رو سراسیمه وصله کنن."
+  ],
+  "why": "اهمیتش اینه که زنگ خطر حملات تمام‌خودکار هوش مصنوعی به صدا دراومده و سرعت نفوذ هکرها انقدر بالا رفته که سیستم‌های دفاعی سنتی دیگه عملاً جلوشون کم میارن.",
+  "tags": [
+   "هوش مصنوعی",
+   "مایکروسافت",
+   "امنیت"
+  ]
+ },
+ "updated": "2026-10-24T11:30:05+00:00"
+}

@@ -1,0 +1,60 @@
+{
+ "id": 6032,
+ "url": "https://t.me/dlmehr/6032",
+ "date": "2026-10-21T22:25:48+00:00",
+ "text": "https://fxtwitter.com/railway/status/2113025284148715845?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+ "forwarded_from": null,
+ "digest": false,
+ "hash": "da3be0252952",
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/railway/status/2113025284148715845?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+  "site": "FxTwitter",
+  "title": "Railway (@Railway)",
+  "description": "An urgent notice from the Railway team\nhttps://blog.railway.com/p/security-disclosure-wednesday-october-21st",
+  "image": "https://cdn4.telesco.pe/file/OVZ0yHy2oCOuEk--wvg4l3_yq9eXfjgOMyqJetWnXJYQfscTb_fyL99jyMBNl9Paz6cyKG4tSxJ3vLvXP1fBIvdNwr9dp2cGCkZSYniKgiWPP_AJzWJR0JUJdLcqwZf9Mu-EKKDFuqXXKiML8f6f_WpK9e1vaLgJIHz8TKk3_QEG1k3CoIecjjKAKrEsBhuvrmHvPsWXeBt3P8KB2uNThRhIbpx6G2Co1iaZ5g0w5D__1ReNyIYIhYUBrCbUuhVz6nBhr1T3klGGYPt1UkP5Won_R0FYzcOgrKDpaPQhS37njrALBEZjcnsFC0OITYYYoTpM-cmQTzyseA8Jloc01w.jpg"
+ },
+ "gholam": {
+  "text": "رفیق، بچه‌های پلتفرم ابری Railway یه آژیر خطر فوری کشیدن و اعلام کردن که توی سیستم‌هاشون تحرکات مشکوک و غیرعادی ردیابی شده. قضیه اون‌جایی نگران‌کننده میشه که این بخش هدف قرار گرفته، دقیقاً مربوط به سیستم‌های ذخیره‌سازی متغیرهای محیطی یا همون Environment Variableهای کاربرا بوده. تیم ریل‌وی از همه کاربرا و توسعه‌دهنده‌ها خواسته فی‌الفور پروژه‌هاشون رو چک کنن و حسابی حواس‌جمع باشن تا داستان بیخ پیدا نکنه. هرچند دارن اوضاع رو بررسی می‌کنن، اما وقتی پای اطلاعات حساس و کلیدهای دسترسی وسطه، اصلاً نباید دست‌دست کرد.\n\nاهمیتش اینه که متغیرهای محیطی حکم کلید گاوصندوق سرور رو دارن و اگه نجنبی و توکن‌ها و پسوردها رو عوض نکنی، امنیت کل پروژه‌ت به فنا میره.",
+  "date": "2026-10-21T22:26:06+00:00"
+ },
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/Railway/status/2113025284148715845",
+   "domain": "x.com",
+   "author": {
+    "name": "Railway",
+    "handle": "Railway",
+    "avatar": "https://pbs.twimg.com/profile_images/2060407291996692484/ave6xJl9_200x200.jpg"
+   },
+   "text": "An urgent notice from the Railway team\n\nhttps://blog.railway.com/p/security-disclosure-wednesday-october-21st",
+   "date": 1792619460,
+   "media": [],
+   "links": [
+    "https://blog.railway.com/p/security-disclosure-wednesday-october-21st"
+   ]
+  },
+  {
+   "kind": "link",
+   "url": "https://blog.railway.com/p/security-disclosure-wednesday-october-21st",
+   "domain": "blog.railway.com",
+   "title": "Security Disclosure: Wednesday October 21st | Railway Blog",
+   "description": "Railway detected anomalous activity involving systems that store customer environment variables and recommends your immediate attention",
+   "image": "https://cms.railway.com/media/cf05de70-b435-4fe9-8d52-540e0b585874-blog-security-disclosure-wednesday-october-21st.png?w=1200&q=90",
+   "site": "Railway Blog"
+  }
+ ],
+ "article": {
+  "title": "بچه‌های پلتفرم ابری Railway یه آژیر خطر فوری کشیدن و اعلام کردن که توی سیستم‌هاشون تحرکات مشکوک و غیرعادی…",
+  "source_title": "An urgent notice from the Railway team",
+  "body": [
+   "رفیق، بچه‌های پلتفرم ابری Railway یه آژیر خطر فوری کشیدن و اعلام کردن که توی سیستم‌هاشون تحرکات مشکوک و غیرعادی ردیابی شده. قضیه اون‌جایی نگران‌کننده میشه که این بخش هدف قرار گرفته، دقیقاً مربوط به سیستم‌های ذخیره‌سازی متغیرهای محیطی یا همون Environment Variableهای کاربرا بوده. تیم ریل‌وی از همه کاربرا و توسعه‌دهنده‌ها خواسته فی‌الفور پروژه‌هاشون رو چک کنن و حسابی حواس‌جمع باشن تا داستان بیخ پیدا نکنه. هرچند دارن اوضاع رو بررسی می‌کنن، اما وقتی پای اطلاعات حساس و کلیدهای دسترسی وسطه، اصلاً نباید دست‌دست کرد."
+  ],
+  "why": "متغیرهای محیطی حکم کلید گاوصندوق سرور رو دارن و اگه نجنبی و توکن‌ها و پسوردها رو عوض نکنی، امنیت کل پروژه‌ت به فنا میره.",
+  "tags": [
+   "امنیت"
+  ]
+ },
+ "updated": "2026-10-24T11:30:13+00:00"
+}
