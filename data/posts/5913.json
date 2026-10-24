@@ -1,0 +1,70 @@
+{
+ "id": 5913,
+ "url": "https://t.me/dlmehr/5913",
+ "date": "2026-10-15T19:29:43+00:00",
+ "edited": true,
+ "views": "207",
+ "text": "https://fxtwitter.com/aiatmeta/status/2110779754274292212?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+ "forwarded_from": null,
+ "digest": false,
+ "hash": "245285ecb4d7",
+ "gholam": null,
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/AIatMeta/status/2110779754274292212",
+   "domain": "x.com",
+   "author": {
+    "name": "AI at Meta",
+    "handle": "AIatMeta",
+    "avatar": "media/avatars/aiatmeta.webp"
+   },
+   "text": "Today we’re releasing Muse Spark Open, the most capable US open-weight model to date.\n\nBuilt for coding and agentic work, it excels at long-horizon tasks, complex software engineering, and multi-step reasoning.\n\nKey Model Specs:\n→ 816B total / 42B active parameters\n→ 1M token context window\n→ Natively multimodal across text, image, video, audio",
+   "lang": "en",
+   "date": 1792084084,
+   "stats": {
+    "views": 1245583,
+    "likes": 11547,
+    "retweets": 1221,
+    "replies": 483
+   },
+   "media": [
+    {
+     "type": "image",
+     "src": "media/5913/l0-0.webp",
+     "width": 1400,
+     "height": 1400,
+     "remote": "https://pbs.twimg.com/media/HUr8TsmbIAAT-m3.jpg?name=orig"
+    },
+    {
+     "type": "image",
+     "src": "media/5913/l0-1.webp",
+     "width": 1400,
+     "height": 1685,
+     "remote": "https://pbs.twimg.com/media/HUr8VZAbcAAF9yn.jpg?name=orig"
+    }
+   ],
+   "links": []
+  }
+ ],
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/aiatmeta/status/2110779754274292212?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+  "site": "🧵 Thread • FxTwitter",
+  "title": "AI at Meta (@AIatMeta)",
+  "description": "Today we’re releasing Muse Spark Open, the most capable US open-weight model to date.\nBuilt for coding and agentic work, it excels at long-horizon tasks, complex software engineering, and multi-step reasoning.\nKey Model Specs:\n→ 816B total / 42B active…",
+  "image": {
+   "src": "media/5913/preview.webp",
+   "width": 800,
+   "height": 436
+  }
+ },
+ "article": {
+  "title": "Today we’re releasing Muse Spark Open, the most capable US open-weight model to date.",
+  "source_title": null,
+  "body": [],
+  "why": null,
+  "tags": []
+ },
+ "updated": "2026-10-24T11:01:35+00:00"
+}

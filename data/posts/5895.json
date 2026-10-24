@@ -1,0 +1,65 @@
+{
+ "id": 5895,
+ "url": "https://t.me/dlmehr/5895",
+ "date": "2026-10-14T19:45:31+00:00",
+ "edited": true,
+ "views": "178",
+ "text": "https://fxtwitter.com/spacexsi/status/2110416580899168305?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+ "forwarded_from": null,
+ "digest": false,
+ "hash": "571a9df24d6e",
+ "gholam": null,
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/SpaceXSI/status/2110416580899168305",
+   "domain": "x.com",
+   "author": {
+    "name": "SpaceX Super Intelligence",
+    "handle": "SpaceXSI",
+    "avatar": "media/avatars/spacexsi.webp"
+   },
+   "text": "Introducing Grok Voice 3.0, the world’s most intelligent speech-to-speech model.\n\nIt excels at resolving customer calls, responds in under a second, and costs less than other frontier models.",
+   "lang": "en",
+   "date": 1791997497,
+   "stats": {
+    "views": 2993437,
+    "likes": 10770,
+    "retweets": 856,
+    "replies": 662
+   },
+   "media": [
+    {
+     "type": "image",
+     "src": "media/5895/l0-0.webp",
+     "width": 1400,
+     "height": 837,
+     "remote": "https://pbs.twimg.com/media/HUm0LiyW8AAHlzx.jpg?name=orig"
+    }
+   ],
+   "links": []
+  }
+ ],
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/spacexsi/status/2110416580899168305?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+  "site": "🧵 Thread • FxTwitter",
+  "title": "SpaceX Super Intelligence (@SpaceXSI)",
+  "description": "Introducing Grok Voice 3.0, the world’s most intelligent speech-to-speech model.\nIt excels at resolving customer calls, responds in under a second, and costs less than other frontier models.",
+  "image": {
+   "src": "media/5895/preview.webp",
+   "width": 800,
+   "height": 478
+  }
+ },
+ "article": {
+  "title": "Introducing Grok Voice 3.0, the world’s most intelligent speech-to-speech model.",
+  "source_title": null,
+  "body": [],
+  "why": null,
+  "tags": [
+   "ایلان ماسک"
+  ]
+ },
+ "updated": "2026-10-24T11:01:51+00:00"
+}

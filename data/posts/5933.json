@@ -1,0 +1,92 @@
+{
+ "id": 5933,
+ "url": "https://t.me/dlmehr/5933",
+ "date": "2026-10-16T18:36:24+00:00",
+ "edited": true,
+ "views": "215",
+ "text": "https://fxtwitter.com/rayankrishnan/status/2111023752221999513?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+ "forwarded_from": null,
+ "digest": false,
+ "hash": "78a3a5fb6e58",
+ "gholam": null,
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/RayanKrishnan/status/2111023752221999513",
+   "domain": "x.com",
+   "author": {
+    "name": "Rayan Krishnan",
+    "handle": "RayanKrishnan",
+    "avatar": "media/avatars/rayankrishnan.webp"
+   },
+   "text": "not a secret, our external rsi index has predicted the same timeline",
+   "lang": "en",
+   "date": 1792142258,
+   "stats": {
+    "views": 44442,
+    "likes": 193,
+    "retweets": 17,
+    "replies": 3
+   },
+   "media": [
+    {
+     "type": "image",
+     "src": "media/5933/l0-0.webp",
+     "width": 1400,
+     "height": 1274,
+     "remote": "https://pbs.twimg.com/media/HUvcrIWbMAEUrm6.jpg?name=orig"
+    }
+   ],
+   "links": [],
+   "quote": {
+    "author": {
+     "name": "Fireside Alpha",
+     "handle": "firesidealpha",
+     "avatar": "media/avatars/firesidealpha.webp"
+    },
+    "text": "Dwarkesh Patel reveals an Anthropic employee told him two days ago they expect AIs to match humans at AI research within nine months based on inside information they can’t share, and says labs should make that evidence public\n\n“I think there’s a very frustrating element to the current situation right now, where people inside the AI labs claim to have evidence that makes them more worried. And they are not allowed to talk about it. And this makes it a very difficult situation on the outside to evaluate how worried we should be.\"\n\n\"So for example, just the other day, maybe two days ago, I was talking to somebody at Anthropic and they were like, look, I expect AIs to be humans at AI research within nine months.\"\n\n\"And I’m like, why do you believe that? Well, they’re like, it’s not just vibes, but I have information on the inside. Like, what is it? Is it a new model? Is it some evaluation you ran? It’s like, I can’t talk about it.\"\n\n\"I think it’s a terrible state of affairs. If they really believe this, if they think that we’re in a situation where we’re less than a year away from automating AI research and radically speeding it up, they should make this evidence public.”",
+    "lang": "en",
+    "date": 1792081167,
+    "stats": {
+     "views": 392160,
+     "likes": 1188,
+     "retweets": 105,
+     "replies": 43
+    },
+    "media": [
+     {
+      "type": "video",
+      "src": "media/5933/l0q-0.mp4",
+      "poster": "media/5933/l0q-0-poster.webp",
+      "width": 1920,
+      "height": 1080,
+      "duration": 41.457,
+      "gif": false,
+      "remote": "https://video.twimg.com/amplify_video/2110767180728160259/vid/avc1/1280x720/0__bMja-KLIkaJux.mp4?tag=29"
+     }
+    ],
+    "links": []
+   }
+  }
+ ],
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/rayankrishnan/status/2111023752221999513?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+  "site": "FxTwitter",
+  "title": "Rayan Krishnan (@RayanKrishnan)",
+  "description": "not a secret, our external rsi index has predicted the same timeline\nQuoting Fireside Alpha (@firesidealpha)\nDwarkesh Patel reveals an Anthropic employee told him two days ago they expect AIs to match humans at AI research within nine months based on inside…",
+  "image": {
+   "src": "media/5933/preview.webp",
+   "width": 800,
+   "height": 728
+  }
+ },
+ "article": {
+  "title": "not a secret, our external rsi index has predicted the same timeline",
+  "source_title": null,
+  "body": [],
+  "why": null,
+  "tags": []
+ },
+ "updated": "2026-10-24T11:01:21+00:00"
+}

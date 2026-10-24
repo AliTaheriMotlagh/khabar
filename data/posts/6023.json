@@ -1,0 +1,95 @@
+{
+ "id": 6023,
+ "url": "https://t.me/dlmehr/6023",
+ "date": "2026-10-21T17:09:17+00:00",
+ "edited": true,
+ "views": "167",
+ "text": "https://fxtwitter.com/_rockt/status/2112944981769928752?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+ "forwarded_from": null,
+ "digest": false,
+ "hash": "2d0df6bc47a0",
+ "gholam": null,
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/_rockt/status/2112944981769928752",
+   "domain": "x.com",
+   "author": {
+    "name": "Tim Rocktäschel",
+    "handle": "_rockt",
+    "avatar": "media/avatars/_rockt.webp"
+   },
+   "text": "We are releasing our first model, Flint, a best-in-class local OSS coding model that runs at 150+ tokens/s on an @nvidia DGX Spark and 125+ tokens/s on a MacBook Pro M4—developed from scratch in less than four months with help from @Recursive_SI's autoresearch system.",
+   "lang": "en",
+   "date": 1792600314,
+   "stats": {
+    "views": 19736,
+    "likes": 320,
+    "retweets": 29,
+    "replies": 24
+   },
+   "media": [
+    {
+     "type": "image",
+     "src": "media/6023/l0-0.webp",
+     "width": 1400,
+     "height": 788,
+     "remote": "https://pbs.twimg.com/media/HVKv4D9WkAASL_F.jpg?name=orig"
+    }
+   ],
+   "links": [],
+   "quote": {
+    "author": {
+     "name": "Richard Socher",
+     "handle": "RichardSocher",
+     "avatar": "media/avatars/richardsocher.webp"
+    },
+    "text": "Introducing Flint, @Recursive_SI’s first model: a fast local coding model built with our automated research system, the Eureka Machine.\n\n• Best-in-class fast local coding\n• Up to 2x faster than comparable models: 125+ tokens/sec on a MacBook Pro, 150+ on RTX Spark\n• Built from scratch in under 4 months\n\nPrivate, unmetered intelligence on your own machine. Open weights available now on @huggingface, run it locally on your favorite framework or try it for free on @opencode or @pidotdev.",
+    "lang": "en",
+    "date": 1792600172,
+    "stats": {
+     "views": 3380453,
+     "likes": 8434,
+     "retweets": 886,
+     "replies": 622
+    },
+    "media": [
+     {
+      "type": "video",
+      "src": "media/6023/l0q-0.mp4",
+      "poster": "media/6023/l0q-0-poster.webp",
+      "width": 3840,
+      "height": 2160,
+      "duration": 161.472,
+      "gif": false,
+      "remote": "https://video.twimg.com/amplify_video/2112941750809419776/vid/avc1/1280x720/ljeVLZeytT--ckEJ.mp4?tag=29"
+     }
+    ],
+    "links": []
+   }
+  }
+ ],
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/_rockt/status/2112944981769928752?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+  "site": "🧵 Thread • FxTwitter",
+  "title": "Tim Rocktäschel (@_rockt)",
+  "description": "We are releasing our first model, Flint, a best-in-class local OSS coding model that runs at 150+ tokens/s on an @nvidia DGX Spark and 125+ tokens/s on a MacBook Pro M4—developed from scratch in less than four months with help from @Recursive_SI's autoresearch…",
+  "image": {
+   "src": "media/6023/preview.webp",
+   "width": 800,
+   "height": 450
+  }
+ },
+ "article": {
+  "title": "We are releasing our first model, Flint, a best-in-class local OSS coding model that runs at 150+ tokens/s on an @nvidia DGX Spark and 125+…",
+  "source_title": null,
+  "body": [],
+  "why": null,
+  "tags": [
+   "انویدیا",
+   "اپل"
+  ]
+ },
+ "updated": "2026-10-24T11:00:05+00:00"
+}

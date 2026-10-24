@@ -1,0 +1,46 @@
+{
+ "id": 5995,
+ "url": "https://t.me/dlmehr/5995",
+ "date": "2026-10-20T19:07:58+00:00",
+ "edited": false,
+ "views": "175",
+ "text": "https://www.nytimes.com/2026/10/20/science/ai-virus-bacteria-radical-numerics.html",
+ "forwarded_from": null,
+ "digest": false,
+ "hash": "a9b3942cb8d6",
+ "gholam": null,
+ "links": [
+  {
+   "kind": "link",
+   "url": "https://nytimes.com/2026/10/20/science/ai-virus-bacteria-radical-numerics.html",
+   "domain": "nytimes.com"
+  },
+  {
+   "kind": "link",
+   "url": "https://www.nytimes.com/2026/10/20/science/ai-virus-bacteria-radical-numerics.html",
+   "domain": "nytimes.com"
+  }
+ ],
+ "media": [],
+ "preview": {
+  "url": "https://nytimes.com/2026/10/20/science/ai-virus-bacteria-radical-numerics.html",
+  "site": "Nytimes",
+  "title": "Start-Up Claims to Treat a Patient With A.I.-Created Viruses",
+  "description": "Certain viruses attack bacteria and can sometimes clear antibiotic-resistant infections. Researchers said they had tailored a virus to attack one patient’s illness.",
+  "image": {
+   "src": "media/5995/preview.webp",
+   "width": 800,
+   "height": 450
+  }
+ },
+ "article": {
+  "title": "Start-Up Claims to Treat a Patient With A.I.-Created Viruses",
+  "source_title": null,
+  "body": [],
+  "why": null,
+  "tags": [
+   "هوش مصنوعی"
+  ]
+ },
+ "updated": "2026-10-24T11:00:32+00:00"
+}

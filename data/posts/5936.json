@@ -1,0 +1,93 @@
+{
+ "id": 5936,
+ "url": "https://t.me/dlmehr/5936",
+ "date": "2026-10-16T19:16:49+00:00",
+ "edited": true,
+ "views": "208",
+ "text": "https://fxtwitter.com/semianalysis_/status/2111162214891610496?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+ "forwarded_from": null,
+ "digest": false,
+ "hash": "8a5a5326ecc3",
+ "gholam": null,
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/SemiAnalysis_/status/2111162214891610496",
+   "domain": "x.com",
+   "author": {
+    "name": "SemiAnalysis",
+    "handle": "SemiAnalysis_",
+    "avatar": "media/avatars/semianalysis_.webp"
+   },
+   "text": "SHOCKING: We have confirmed that multiple Neoclouds have been refused access to GTC Berlin due to them adding AMD GPUs, TPUs, and other chips to their cloud offerings\n\nNote that this doesn't apply to hyperscalers, as they have more buying power. But for neoclouds, executives feel NVIDIA has been using high-pressure tactics to keep them NVIDIA-only.\n\nAs such, neocloud executives are starting to consider offering TPUs or AMD GPUs quietly to avoid getting pressured by NVIDIA and to avoid the feeling that NVIDIA will retaliate. \nhttps://x.com/SemiAnalysis_/status/2071005685903454496",
+   "lang": "en",
+   "date": 1792175270,
+   "stats": {
+    "views": 584838,
+    "likes": 1795,
+    "retweets": 165,
+    "replies": 193
+   },
+   "media": [
+    {
+     "type": "image",
+     "src": "media/5936/l0-0.webp",
+     "width": 1400,
+     "height": 839,
+     "remote": "https://pbs.twimg.com/media/HUxa2JwXwAARcdt.jpg?name=orig"
+    }
+   ],
+   "links": [
+    "https://x.com/SemiAnalysis_/status/2071005685903454496"
+   ],
+   "quote": {
+    "author": {
+     "name": "SemiAnalysis",
+     "handle": "SemiAnalysis_",
+     "avatar": "media/avatars/semianalysis_.webp"
+    },
+    "text": "SHOCKING: Many neocloud executives we spoke with feel that if they have non-NVIDIA networking gear on their cluster, or if their cloud has an AMD GPU or TPU offering, NVIDIA will retaliate. They feel that retaliation includes not giving early allocation or no longer supporting a potential IPO/VC raise.(1/3)🧵",
+    "lang": "en",
+    "date": 1782601207,
+    "stats": {
+     "views": 1127142,
+     "likes": 2166,
+     "retweets": 154,
+     "replies": 162
+    },
+    "media": [
+     {
+      "type": "image",
+      "src": "media/5936/l0q-0.webp",
+      "width": 1400,
+      "height": 839,
+      "remote": "https://pbs.twimg.com/media/HL2wslhW4AAoVYA.jpg?name=orig"
+     }
+    ],
+    "links": []
+   }
+  }
+ ],
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/semianalysis_/status/2111162214891610496?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+  "site": "FxTwitter",
+  "title": "SemiAnalysis (@SemiAnalysis_)",
+  "description": "SHOCKING: We have confirmed that multiple Neoclouds have been refused access to GTC Berlin due to them adding AMD GPUs, TPUs, and other chips to their cloud offerings\nNote that this doesn't apply to hyperscalers, as they have more buying power. But for neoclouds…",
+  "image": {
+   "src": "media/5936/preview.webp",
+   "width": 800,
+   "height": 479
+  }
+ },
+ "article": {
+  "title": "SHOCKING: We have confirmed that multiple Neoclouds have been refused access to GTC Berlin due to them adding AMD GPUs, TPUs, and other…",
+  "source_title": null,
+  "body": [],
+  "why": null,
+  "tags": [
+   "انویدیا"
+  ]
+ },
+ "updated": "2026-10-24T11:01:19+00:00"
+}

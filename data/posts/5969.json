@@ -1,0 +1,65 @@
+{
+ "id": 5969,
+ "url": "https://t.me/dlmehr/5969",
+ "date": "2026-10-19T15:02:40+00:00",
+ "edited": true,
+ "views": "225",
+ "text": "https://fxtwitter.com/kimmonismus/status/2112185581597860349?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+ "forwarded_from": null,
+ "digest": false,
+ "hash": "51ff3a394b1a",
+ "gholam": null,
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/kimmonismus/status/2112185581597860349",
+   "domain": "x.com",
+   "author": {
+    "name": "Chubby♨️",
+    "handle": "kimmonismus",
+    "avatar": "media/avatars/kimmonismus.webp"
+   },
+   "text": "official now: anthropic is preparing the release of their new model(s). Via The Information\n\nAnthropic is reportedly preparing a model that, when asked to fix one bug, can identify the broader class of problems behind it and ask whether it should address those too. That account comes from one anonymous tester; the model family and release date remain unclear.\n\nBut looks like it will be a significant jump compared to their released models.",
+   "lang": "en",
+   "date": 1792419259,
+   "stats": {
+    "views": 228042,
+    "likes": 4005,
+    "retweets": 162,
+    "replies": 203
+   },
+   "media": [
+    {
+     "type": "image",
+     "src": "media/5969/l0-0.webp",
+     "width": 1200,
+     "height": 735,
+     "remote": "https://pbs.twimg.com/media/HU_9LgQWgAAyaAz.jpg?name=orig"
+    }
+   ],
+   "links": []
+  }
+ ],
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/kimmonismus/status/2112185581597860349?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+  "site": "🧵 Thread • FxTwitter",
+  "title": "Chubby ♨️ (@kimmonismus)",
+  "description": "official now: anthropic is preparing the release of their new model(s). Via The Information\nAnthropic is reportedly preparing a model that, when asked to fix one bug, can identify the broader class of problems behind it and ask whether it should address…",
+  "image": {
+   "src": "media/5969/preview.webp",
+   "width": 800,
+   "height": 490
+  }
+ },
+ "article": {
+  "title": "official now: anthropic is preparing the release of their new model(s). Via The Information",
+  "source_title": null,
+  "body": [],
+  "why": null,
+  "tags": [
+   "آنتروپیک"
+  ]
+ },
+ "updated": "2026-10-24T11:00:51+00:00"
+}

@@ -1,0 +1,57 @@
+{
+ "id": 5953,
+ "url": "https://t.me/dlmehr/5953",
+ "date": "2026-10-18T04:31:39+00:00",
+ "edited": true,
+ "views": "225",
+ "text": "https://fxtwitter.com/andrewcurran_/status/2111656899338973391?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+ "forwarded_from": null,
+ "digest": false,
+ "hash": "52b0014b7305",
+ "gholam": null,
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/AndrewCurran_/status/2111656899338973391",
+   "domain": "x.com",
+   "author": {
+    "name": "Andrew Curran",
+    "handle": "AndrewCurran_",
+    "avatar": "media/avatars/andrewcurran_.webp"
+   },
+   "text": "Three mysterious new models just showed up in the OpenAI API:\n\naurora-red-alpha\naurora-green-alpha\naurora-blue-alpha",
+   "lang": "en",
+   "date": 1792293212,
+   "stats": {
+    "views": 190954,
+    "likes": 2606,
+    "retweets": 90,
+    "replies": 188
+   },
+   "media": [],
+   "links": []
+  }
+ ],
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/andrewcurran_/status/2111656899338973391?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+  "site": "FxTwitter",
+  "title": "Andrew Curran (@AndrewCurran_)",
+  "description": "Three mysterious new models just showed up in the OpenAI API:\naurora-red-alpha\naurora-green-alpha\naurora-blue-alpha",
+  "image": {
+   "src": "media/5953/preview.webp",
+   "width": 200,
+   "height": 200
+  }
+ },
+ "article": {
+  "title": "Three mysterious new models just showed up in the OpenAI API:",
+  "source_title": null,
+  "body": [],
+  "why": null,
+  "tags": [
+   "اوپن‌ای‌آی"
+  ]
+ },
+ "updated": "2026-10-24T11:01:03+00:00"
+}

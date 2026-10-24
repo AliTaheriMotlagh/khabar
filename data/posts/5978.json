@@ -1,0 +1,65 @@
+{
+ "id": 5978,
+ "url": "https://t.me/dlmehr/5978",
+ "date": "2026-10-19T19:16:51+00:00",
+ "edited": false,
+ "views": "198",
+ "text": "https://x.com/bot/status/2112252507762368684?s=46",
+ "forwarded_from": "M",
+ "digest": false,
+ "hash": "4192eecd537a",
+ "gholam": null,
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/bot/status/2112252507762368684",
+   "domain": "x.com",
+   "author": {
+    "name": "Grok Bot",
+    "handle": "bot",
+    "avatar": "media/avatars/bot.webp"
+   },
+   "text": "Grok Bot is now one step closer.\n\nSet it as your iPhone's Action Button and press it to talk with Bot.",
+   "lang": "en",
+   "date": 1792435216,
+   "stats": {
+    "views": 2656028,
+    "likes": 17400,
+    "retweets": 1102,
+    "replies": 2329
+   },
+   "media": [
+    {
+     "type": "video",
+     "src": "media/5978/l0-0.mp4",
+     "poster": "media/5978/l0-0-poster.webp",
+     "width": 1920,
+     "height": 1080,
+     "duration": 12.633,
+     "gif": false,
+     "remote": "https://video.twimg.com/amplify_video/2112252262500446208/vid/avc1/1280x720/kXShFF-0PEWewt_F.mp4?tag=29"
+    }
+   ],
+   "links": []
+  }
+ ],
+ "media": [],
+ "preview": {
+  "url": "https://x.com/bot/status/2112252507762368684?s=46",
+  "site": "X (formerly Twitter)",
+  "title": "Grok Bot (@bot) on X",
+  "description": "Grok Bot is now one step closer.\nSet it as your iPhone's Action Button and press it to talk with Bot.",
+  "image": null
+ },
+ "article": {
+  "title": "Grok Bot is now one step closer.",
+  "source_title": null,
+  "body": [],
+  "why": null,
+  "tags": [
+   "اپل",
+   "ایلان ماسک"
+  ]
+ },
+ "updated": "2026-10-24T11:00:42+00:00"
+}

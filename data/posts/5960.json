@@ -1,0 +1,65 @@
+{
+ "id": 5960,
+ "url": "https://t.me/dlmehr/5960",
+ "date": "2026-10-18T18:29:16+00:00",
+ "edited": true,
+ "views": "188",
+ "text": "https://fxtwitter.com/satsuki2694/status/2111673817341055167?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+ "forwarded_from": null,
+ "digest": false,
+ "hash": "43a5bd65eec3",
+ "gholam": null,
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/satsuki2694/status/2111673817341055167",
+   "domain": "x.com",
+   "author": {
+    "name": "satsuki",
+    "handle": "satsuki2694",
+    "avatar": "media/avatars/satsuki2694.webp"
+   },
+   "text": "We benchmarked 3 local LLMs on our lab’s Mac Studio M5 Ultra vs dual DGX Sparks! 🔬\n\nQwen3.8 Flash Next: 164.8 vs 116.0 tok/s\nDeepSeek V4 Flash: 74.4 vs 68.0\nGLM-5.3 Flash: 73.1 vs 28.4\n\nMac is surprisingly strong! 😏",
+   "lang": "en",
+   "date": 1792297245,
+   "stats": {
+    "views": 40573,
+    "likes": 150,
+    "retweets": 16,
+    "replies": 25
+   },
+   "media": [
+    {
+     "type": "image",
+     "src": "media/5960/l0-0.webp",
+     "width": 1400,
+     "height": 817,
+     "remote": "https://pbs.twimg.com/media/HU4sJNhagAASc5c.jpg?name=orig"
+    }
+   ],
+   "links": []
+  }
+ ],
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/satsuki2694/status/2111673817341055167?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+  "site": "🧵 Thread • FxTwitter",
+  "title": "satsuki (@satsuki2694)",
+  "description": "We benchmarked 3 local LLMs on our lab’s Mac Studio M5 Ultra vs dual DGX Sparks!\n🔬\nQwen3.8 Flash Next: 164.8 vs 116.0 tok/s\nDeepSeek V4 Flash: 74.4 vs 68.0\nGLM-5.3 Flash: 73.1 vs 28.4\nMac is surprisingly strong!\n😏",
+  "image": {
+   "src": "media/5960/preview.webp",
+   "width": 800,
+   "height": 467
+  }
+ },
+ "article": {
+  "title": "We benchmarked 3 local LLMs on our lab’s Mac Studio M5 Ultra vs dual DGX Sparks! 🔬",
+  "source_title": null,
+  "body": [],
+  "why": null,
+  "tags": [
+   "دیپ‌سیک"
+  ]
+ },
+ "updated": "2026-10-24T11:00:59+00:00"
+}

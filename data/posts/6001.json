@@ -1,0 +1,64 @@
+{
+ "id": 6001,
+ "url": "https://t.me/dlmehr/6001",
+ "date": "2026-10-20T20:41:06+00:00",
+ "edited": true,
+ "views": "161",
+ "text": "https://fxtwitter.com/societies_ai/status/2112546884665360641?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+ "forwarded_from": null,
+ "digest": false,
+ "hash": "90987cb18720",
+ "gholam": null,
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/societies_ai/status/2112546884665360641",
+   "domain": "x.com",
+   "author": {
+    "name": "Artificial Societies",
+    "handle": "societies_ai",
+    "avatar": "media/avatars/societies_ai.webp"
+   },
+   "text": "Can your idea become the talk of the town?\n\nWe modelled how thoughts and ideas spread in human societies by putting 2,721 simulated personas representing the US general population in an artificial city. Each persona has its own schedule, beliefs, and social circle.\n\nSow an idea in any persona’s mind, watch it take hold and go viral, or see it fizzle out if no one takes interest in it.\n\nCompete with your friends and colleagues to see whose idea can win over the most adopters, get a high score and put your name on the leaderboard. Link below.",
+   "lang": "en",
+   "date": 1792505401,
+   "stats": {
+    "views": 424854,
+    "likes": 2973,
+    "retweets": 187,
+    "replies": 71
+   },
+   "media": [
+    {
+     "type": "video",
+     "src": "media/6001/l0-0.mp4",
+     "poster": "media/6001/l0-0-poster.webp",
+     "width": 1080,
+     "height": 1080,
+     "duration": 22.2,
+     "gif": false,
+     "remote": "https://video.twimg.com/amplify_video/2112546789815439361/vid/avc1/720x720/xZipjXrCkyJeiSdZ.mp4?tag=29"
+    }
+   ],
+   "links": []
+  }
+ ],
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/societies_ai/status/2112546884665360641?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+  "site": "🧵 Thread • FxTwitter",
+  "title": "Artificial Societies (@societies_ai)",
+  "description": "Can your idea become the talk of the town?\nWe modelled how thoughts and ideas spread in human societies by putting 2,721 simulated personas representing the US general population in an artificial city. Each persona has its own schedule, beliefs, and social…",
+  "image": null
+ },
+ "article": {
+  "title": "Can your idea become the talk of the town?",
+  "source_title": null,
+  "body": [],
+  "why": null,
+  "tags": [
+   "هوش مصنوعی"
+  ]
+ },
+ "updated": "2026-10-24T11:00:26+00:00"
+}

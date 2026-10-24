@@ -1,0 +1,82 @@
+{
+ "id": 6024,
+ "url": "https://t.me/dlmehr/6024",
+ "date": "2026-10-21T17:14:15+00:00",
+ "edited": true,
+ "views": "174",
+ "text": "https://fxtwitter.com/appliedcompute/status/2112938595577475177?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+ "forwarded_from": null,
+ "digest": false,
+ "hash": "9cd55e968d78",
+ "gholam": null,
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/appliedcompute/status/2112938595577475177",
+   "domain": "x.com",
+   "author": {
+    "name": "Applied Compute",
+    "handle": "appliedcompute",
+    "avatar": "media/avatars/appliedcompute.webp"
+   },
+   "text": "Introducing Shift-1, a frontier coding router trained on AC2 that reduced coding agent cost by up to 55% with no noticeable drop in quality. Try it at https://www.shift.ac.",
+   "lang": "en",
+   "date": 1792598792,
+   "stats": {
+    "views": 42327,
+    "likes": 208,
+    "retweets": 30,
+    "replies": 27
+   },
+   "media": [
+    {
+     "type": "video",
+     "src": "media/6024/l0-0.mp4",
+     "poster": "media/6024/l0-0-poster.webp",
+     "width": 1920,
+     "height": 1080,
+     "duration": 25.13,
+     "gif": false,
+     "remote": "https://video.twimg.com/amplify_video/2112938572852649984/vid/avc1/1280x720/EVBVUFS5MStu8O9U.mp4?tag=29"
+    }
+   ],
+   "links": [
+    "https://www.shift.ac"
+   ]
+  },
+  {
+   "kind": "link",
+   "url": "https://shift.ac/sign-in",
+   "domain": "shift.ac",
+   "title": "Shift-1: SOTA router from Applied Compute",
+   "description": "Your models. One place to run, trace, and understand them.",
+   "image": {
+    "src": "media/6024/l1-og.webp",
+    "width": 1200,
+    "height": 630
+   },
+   "site": "shift.ac",
+   "author": null,
+   "published": null,
+   "text": "Shift-1\nfrom\n$ curl -fsSL https://shift.ac/install.sh | sh\nShift-1 is a frontier coding router that cuts Astra costs by 55% with no noticeable drop in quality.\nThe router policy in Shift-1 is powered by a custom decision model trained with AC2, Applied Compute’s training and inference cloud for open models. It was trained on general coding and knowledge work tasks but can be adapted to any workload or underlying models.\nIf you’re interested in building your own router to cut costs and speed up your agent, get in touch."
+  }
+ ],
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/appliedcompute/status/2112938595577475177?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+  "site": "🧵 Thread • FxTwitter",
+  "title": "Applied Compute (@appliedcompute)",
+  "description": "Introducing Shift-1, a frontier coding router trained on AC2 that reduced coding agent cost by up to 55% with no noticeable drop in quality. Try it at https://www.shift.ac.",
+  "image": null
+ },
+ "article": {
+  "title": "Introducing Shift-1, a frontier coding router trained on AC2 that reduced coding agent cost by up to 55% with no noticeable drop in…",
+  "source_title": null,
+  "body": [],
+  "why": null,
+  "tags": [
+   "هوش مصنوعی"
+  ]
+ },
+ "updated": "2026-10-24T11:00:04+00:00"
+}

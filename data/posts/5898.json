@@ -1,0 +1,64 @@
+{
+ "id": 5898,
+ "url": "https://t.me/dlmehr/5898",
+ "date": "2026-10-14T21:52:36+00:00",
+ "edited": true,
+ "views": "187",
+ "text": "https://fxtwitter.com/rhodaai/status/2110402702178148451?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+ "forwarded_from": null,
+ "digest": false,
+ "hash": "822a3c4c9bed",
+ "gholam": null,
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/RhodaAI/status/2110402702178148451",
+   "domain": "x.com",
+   "author": {
+    "name": "Rhoda AI",
+    "handle": "RhodaAI",
+    "avatar": "media/avatars/rhodaai.webp"
+   },
+   "text": "What can a robot do without vision?\n\nWe gave our robot a sense of touch and showed it can recognize and retrieve objects with its cameras blindfolded.\n\nIntroducing Rhoda’s new tactile sensor—it feels pressure, texture, vibration, slip, and temperature, just like your fingertips.",
+   "lang": "en",
+   "date": 1791994188,
+   "stats": {
+    "views": 102687,
+    "likes": 571,
+    "retweets": 55,
+    "replies": 60
+   },
+   "media": [
+    {
+     "type": "video",
+     "src": "media/5898/l0-0.mp4",
+     "poster": "media/5898/l0-0-poster.webp",
+     "width": 1920,
+     "height": 1080,
+     "duration": 173.438,
+     "gif": false,
+     "remote": "https://video.twimg.com/amplify_video/2110401466037088257/vid/avc1/1280x720/y5nmSQhayucz97bv.mp4?tag=29"
+    }
+   ],
+   "links": []
+  }
+ ],
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/rhodaai/status/2110402702178148451?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+  "site": "🧵 Thread • FxTwitter",
+  "title": "Rhoda AI (@RhodaAI)",
+  "description": "What can a robot do without vision?\nWe gave our robot a sense of touch and showed it can recognize and retrieve objects with its cameras blindfolded.\nIntroducing Rhoda’s new tactile sensor—it feels pressure, texture, vibration, slip, and temperature, just…",
+  "image": null
+ },
+ "article": {
+  "title": "What can a robot do without vision?",
+  "source_title": null,
+  "body": [],
+  "why": null,
+  "tags": [
+   "رباتیک"
+  ]
+ },
+ "updated": "2026-10-24T11:01:48+00:00"
+}

@@ -1,0 +1,64 @@
+{
+ "id": 5970,
+ "url": "https://t.me/dlmehr/5970",
+ "date": "2026-10-19T15:28:35+00:00",
+ "edited": true,
+ "views": "214",
+ "text": "https://fxtwitter.com/modal/status/2112182748135772546?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+ "forwarded_from": null,
+ "digest": false,
+ "hash": "834cf0542c32",
+ "gholam": null,
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/modal/status/2112182748135772546",
+   "domain": "x.com",
+   "author": {
+    "name": "Modal",
+    "handle": "modal",
+    "avatar": "media/avatars/modal.webp"
+   },
+   "text": "We got our hands on @nvidia's new Vera CPU and put it to the test.\n\nWe built a benchmark using real-world agentic workloads to see how it performs under contention.\n\nIn early tests, Vera delivered up to 2x the throughput of comparable x86 hardware, maintaining low latency even as hundreds of concurrent workloads competed for resources.\n\nFor Modal Sandboxes, that could mean running more agents in parallel without sacrificing latency.",
+   "lang": "en",
+   "date": 1792418584,
+   "stats": {
+    "views": 27104,
+    "likes": 224,
+    "retweets": 26,
+    "replies": 29
+   },
+   "media": [
+    {
+     "type": "video",
+     "src": "media/5970/l0-0.mp4",
+     "poster": "media/5970/l0-0-poster.webp",
+     "width": 1624,
+     "height": 1340,
+     "duration": 15,
+     "gif": false,
+     "remote": "https://video.twimg.com/amplify_video/2112172103659089920/vid/avc1/872x720/KLfiGjPqJ9HH9aaY.mp4?tag=29"
+    }
+   ],
+   "links": []
+  }
+ ],
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/modal/status/2112182748135772546?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+  "site": "🧵 Thread • FxTwitter",
+  "title": "Modal (@modal)",
+  "description": "We got our hands on @nvidia's new Vera CPU and put it to the test.\nWe built a benchmark using real-world agentic workloads to see how it performs under contention.\nIn early tests, Vera delivered up to 2x the throughput of comparable x86 hardware, maintaining…",
+  "image": null
+ },
+ "article": {
+  "title": "We got our hands on @nvidia's new Vera CPU and put it to the test.",
+  "source_title": null,
+  "body": [],
+  "why": null,
+  "tags": [
+   "انویدیا"
+  ]
+ },
+ "updated": "2026-10-24T11:00:50+00:00"
+}

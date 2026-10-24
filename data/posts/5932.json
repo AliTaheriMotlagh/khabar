@@ -1,0 +1,83 @@
+{
+ "id": 5932,
+ "url": "https://t.me/dlmehr/5932",
+ "date": "2026-10-16T18:33:44+00:00",
+ "edited": true,
+ "views": "194",
+ "text": "https://fxtwitter.com/reflection_ai/status/2111079965529968798?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+ "forwarded_from": null,
+ "digest": false,
+ "hash": "9c37293b4ba6",
+ "gholam": null,
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/reflection_ai/status/2111079965529968798",
+   "domain": "x.com",
+   "author": {
+    "name": "Reflection",
+    "handle": "reflection_ai",
+    "avatar": "media/avatars/reflection_ai.webp"
+   },
+   "text": "Beam is now available across platforms, with open weights under the Apache 2.0 license - in collaboration with an ecosystem of 40+ partners.\n\nWe're releasing:\n- Weights, tokenizer, and reference implementation\n- BF16, FP8 and NVFP4 weights and a DFlash2 drafter\n- The open source harness we built and trained Beam on: Mirror CLI\n\nWeights and model card on Hugging Face: https://huggingface.co/reflection",
+   "lang": "en",
+   "date": 1792155660,
+   "stats": {
+    "views": 510195,
+    "likes": 947,
+    "retweets": 201,
+    "replies": 159
+   },
+   "media": [
+    {
+     "type": "image",
+     "src": "media/5932/l0-0.webp",
+     "width": 1200,
+     "height": 675,
+     "remote": "https://pbs.twimg.com/media/HUwPdcpWsAAYt5M.jpg?name=orig"
+    }
+   ],
+   "links": [
+    "https://huggingface.co/reflection"
+   ]
+  },
+  {
+   "kind": "link",
+   "url": "https://huggingface.co/reflection",
+   "domain": "huggingface.co",
+   "title": "reflection (Reflection)",
+   "description": "Org profile for Reflection on Hugging Face, the AI community building the future.",
+   "image": {
+    "src": "media/5932/l1-og.webp",
+    "width": 1200,
+    "height": 648
+   },
+   "site": "huggingface.co",
+   "author": null,
+   "published": null,
+   "text": "Reflection’s first open-weight model, built for coding, reasoning, and agentic tasks\nAI & ML interests\nNone defined yet.\nRecent Activity\n Team members 63 private\nMake intelligence open and accessible to all\nWelcome to the official Hugging Face organization for Reflection. We build open models for everyone to access, use, and build on.\n- Website: reflection.ai\n- GitHub: github.com/reflection-oss\n- Docs hub: developers.reflection.ai\n- Platform: platform.reflection.ai"
+  }
+ ],
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/reflection_ai/status/2111079965529968798?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+  "site": "🧵 Thread • FxTwitter",
+  "title": "Reflection (@reflection_ai)",
+  "description": "Beam is now available across platforms, with open weights under the Apache 2.0 license - in collaboration with an ecosystem of 40+ partners.\nWe're releasing:\n- Weights, tokenizer, and reference implementation\n- BF16, FP8 and NVFP4 weights and a DFlash2 drafter…",
+  "image": {
+   "src": "media/5932/preview.webp",
+   "width": 800,
+   "height": 450
+  }
+ },
+ "article": {
+  "title": "Beam is now available across platforms, with open weights under the Apache 2.0 license - in collaboration with an ecosystem of 40+ partners.",
+  "source_title": null,
+  "body": [],
+  "why": null,
+  "tags": [
+   "هوش مصنوعی"
+  ]
+ },
+ "updated": "2026-10-24T11:01:23+00:00"
+}

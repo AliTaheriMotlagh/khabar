@@ -1,0 +1,61 @@
+{
+ "id": 6012,
+ "url": "https://t.me/dlmehr/6012",
+ "date": "2026-10-21T13:49:19+00:00",
+ "edited": true,
+ "views": "194",
+ "text": "https://fxtwitter.com/openai/status/2112899854569762936?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+ "forwarded_from": null,
+ "digest": false,
+ "hash": "9721cf732b2e",
+ "gholam": null,
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/OpenAI/status/2112899854569762936",
+   "domain": "x.com",
+   "author": {
+    "name": "OpenAI",
+    "handle": "OpenAI",
+    "avatar": "media/avatars/openai.webp"
+   },
+   "text": "GPT-Rosalind surfaced a new lead for drug discovery: could restoring cholesterol transport protect neurons from degeneration?\n\nDCTN1 is a gene linked to Perry syndrome, a rare neurodegenerative disorder. In mouse-brain data, disrupting it increased expression of genes involved in making cholesterol. GPT-Rosalind suggested a possible explanation: cholesterol may not be reaching where neurons need it.\n\nThat gives scientists a specific mechanism to test and, if confirmed, a direction for developing new treatments for neurodegenerative disorders.\n\nWith @perturbai_tx and @scrippsresearch, a team of thousands of GPT-Rosalind agents worked in parallel, connecting gene-expression results from millions of mouse brain cells with scientific literature in just 32 minutes. We’re now expanding this collaboration to identify new drug targets.\n\nhttps://openai.com/index/scaling-ai-research-for-complex-biological-data/",
+   "lang": "en",
+   "date": 1792589555,
+   "stats": {
+    "views": 1456370,
+    "likes": 7001,
+    "retweets": 744,
+    "replies": 400
+   },
+   "media": [],
+   "links": [
+    "https://openai.com/index/scaling-ai-research-for-complex-biological-data/"
+   ]
+  }
+ ],
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/openai/status/2112899854569762936?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+  "site": "FxTwitter · openai.com",
+  "title": "OpenAI (@OpenAI)",
+  "description": "GPT-Rosalind surfaced a new lead for drug discovery: could restoring cholesterol transport protect neurons from degeneration?\nDCTN1 is a gene linked to Perry syndrome, a rare neurodegenerative disorder. In mouse-brain data, disrupting it increased expression…",
+  "image": {
+   "src": "media/6012/preview.webp",
+   "width": 200,
+   "height": 200
+  }
+ },
+ "article": {
+  "title": "GPT-Rosalind surfaced a new lead for drug discovery: could restoring cholesterol transport protect neurons from degeneration?",
+  "source_title": null,
+  "body": [],
+  "why": null,
+  "tags": [
+   "هوش مصنوعی",
+   "اوپن‌ای‌آی",
+   "سلامت"
+  ]
+ },
+ "updated": "2026-10-24T11:00:17+00:00"
+}

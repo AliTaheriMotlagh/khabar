@@ -1,0 +1,64 @@
+{
+ "id": 5903,
+ "url": "https://t.me/dlmehr/5903",
+ "date": "2026-10-15T02:26:36+00:00",
+ "edited": true,
+ "views": "139",
+ "text": "https://fxtwitter.com/steve8708/status/2110401500044472729?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+ "forwarded_from": null,
+ "digest": false,
+ "hash": "b4ff98b7a90b",
+ "gholam": null,
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/Steve8708/status/2110401500044472729",
+   "domain": "x.com",
+   "author": {
+    "name": "Steve (Builder.io)",
+    "handle": "Steve8708",
+    "avatar": "media/avatars/steve8708.webp"
+   },
+   "text": "Introducing Agent-Native: an open-source framework for building agentic apps.\n\nAgents love walls of text. But humans don't.\n\nAn agentic app let's you interact with agents through a visual interface. Engage with agents visually, via text, or both at once.\n\nNow in beta.",
+   "lang": "en",
+   "date": 1791993901,
+   "stats": {
+    "views": 5337572,
+    "likes": 2090,
+    "retweets": 101,
+    "replies": 84
+   },
+   "media": [
+    {
+     "type": "video",
+     "src": "media/5903/l0-0.mp4",
+     "poster": "media/5903/l0-0-poster.webp",
+     "width": 1080,
+     "height": 1080,
+     "duration": 111.176,
+     "gif": false,
+     "remote": "https://video.twimg.com/amplify_video/2110401454385295360/vid/avc1/720x720/TwwHa-x7UO3VSc06.mp4?tag=16"
+    }
+   ],
+   "links": []
+  }
+ ],
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/steve8708/status/2110401500044472729?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+  "site": "🧵 Thread • FxTwitter",
+  "title": "Steve (Builder.io) (@Steve8708)",
+  "description": "Introducing Agent-Native: an open-source framework for building agentic apps.\nAgents love walls of text. But humans don't.\nAn agentic app let's you interact with agents through a visual interface. Engage with agents visually, via text, or both at once.…",
+  "image": null
+ },
+ "article": {
+  "title": "Introducing Agent-Native: an open-source framework for building agentic apps.",
+  "source_title": null,
+  "body": [],
+  "why": null,
+  "tags": [
+   "هوش مصنوعی"
+  ]
+ },
+ "updated": "2026-10-24T11:01:44+00:00"
+}

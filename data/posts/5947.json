@@ -1,0 +1,57 @@
+{
+ "id": 5947,
+ "url": "https://t.me/dlmehr/5947",
+ "date": "2026-10-17T17:57:30+00:00",
+ "edited": true,
+ "views": "238",
+ "text": "https://fxtwitter.com/opencode/status/2111516673953935833?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+ "forwarded_from": null,
+ "digest": false,
+ "hash": "0c36576209f0",
+ "gholam": null,
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/opencode/status/2111516673953935833",
+   "domain": "x.com",
+   "author": {
+    "name": "OpenCode",
+    "handle": "opencode",
+    "avatar": "media/avatars/opencode.webp"
+   },
+   "text": "We had a security breach last night related to a large scale distillation attack that impacted 1.4% of OpenCode Console users\n\nWe have notified them all this morning via email\n\nThe incident is ongoing so we cannot share more details at this point but we are working with",
+   "lang": "en",
+   "date": 1792259779,
+   "stats": {
+    "views": 35727,
+    "likes": 590,
+    "retweets": 57,
+    "replies": 43
+   },
+   "media": [],
+   "links": []
+  }
+ ],
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/opencode/status/2111516673953935833?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+  "site": "FxTwitter",
+  "title": "OpenCode (@opencode)",
+  "description": "We had a security breach last night related to a large scale distillation attack that impacted 1.4% of OpenCode Console users\nWe have notified them all this morning via email\nThe incident is ongoing so we cannot share more details at this point but we are…",
+  "image": {
+   "src": "media/5947/preview.webp",
+   "width": 200,
+   "height": 200
+  }
+ },
+ "article": {
+  "title": "We had a security breach last night related to a large scale distillation attack that impacted 1.4% of OpenCode Console users",
+  "source_title": null,
+  "body": [],
+  "why": null,
+  "tags": [
+   "امنیت"
+  ]
+ },
+ "updated": "2026-10-24T11:01:05+00:00"
+}

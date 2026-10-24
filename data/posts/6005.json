@@ -1,0 +1,84 @@
+{
+ "id": 6005,
+ "url": "https://t.me/dlmehr/6005",
+ "date": "2026-10-20T23:14:53+00:00",
+ "edited": true,
+ "views": "182",
+ "text": "https://fxtwitter.com/nvidiaai/status/2112677152735076822?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+ "forwarded_from": null,
+ "digest": false,
+ "hash": "12a48957f889",
+ "gholam": null,
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/NVIDIAAI/status/2112677152735076822",
+   "domain": "x.com",
+   "author": {
+    "name": "NVIDIA AI",
+    "handle": "NVIDIAAI",
+    "avatar": "media/avatars/nvidiaai.webp"
+   },
+   "text": "We’re working with the European Broadcasting Union and @Adobe to help media teams keep control of their data and find the footage they need faster.\n\nWith the EBU, we’re building on sovereign AI standards so broadcasters can use AI while keeping control of their data and protecting editorial independence.\n\nAdobe is using our GPUs to make http://Frame.io video search faster, helping TV and film producers find a specific scene in years of footage.\n\nRead about both announcements from GTC Berlin: https://nvda.ws/4sheBsJ",
+   "lang": "en",
+   "date": 1792536459,
+   "stats": {
+    "views": 11663,
+    "likes": 133,
+    "retweets": 21,
+    "replies": 9
+   },
+   "media": [
+    {
+     "type": "image",
+     "src": "media/6005/l0-0.webp",
+     "width": 1400,
+     "height": 1400,
+     "remote": "https://pbs.twimg.com/media/HVG6UYuaUAAGQ1E.jpg?name=orig"
+    }
+   ],
+   "links": [
+    "http://Frame.io",
+    "https://nvda.ws/4sheBsJ"
+   ]
+  },
+  {
+   "kind": "link",
+   "url": "https://frame.io/",
+   "domain": "frame.io",
+   "title": "Elevate your creative workflow to an art form.",
+   "description": "Frame.io centralizes all of your files, feedback, and people on one secure platform, so you can deliver exceptional creative faster.",
+   "image": {
+    "src": "media/6005/l1-og.webp",
+    "width": 1200,
+    "height": 630
+   },
+   "site": "Frame.io",
+   "author": null,
+   "published": null,
+   "text": "One platform for all your creative work.\nUpload creative files, manage projects, assign tasks, get precise feedback, and share your work — all in one easy-to-use platform built for creatives.\nSee why teams across video, design, and marketing choose Frame.io to accelerate their creative workflow.\nUpload nearly any creative file lightning-fast to a cloud workspace purpose-built for visual assets.\nGet actionable feedback on videos, images, and docs that’s effortless for clients, creatives, and execs alike.\nAssign creative tasks, track milestones, and build unique workflows powered by metadata.\nShowcase your work with custom-branded shares and presentations in crystal-clear high resolution.\nFlexible metadata lets you tag, sort, group, and navigate assets by assignee, due date, status, and more to meet your team’s needs.\nWith secure, centralized communications that follow the work — eliminating silos by connecting assets to every role from planning to delivery.\nShare assets on-the-fly, find anything instantly across projects, and generate searchable speaker-labelled transcripts and captions.\nTag, sort, and group assets into Collections your way, using out-of-the-box and custom metadata fields.\nStream files directly into creative apps and work as if they are stored locally.\nPanel-based workspaces and nested folder trees make finding everything easier; no more screen hopping.\nPfeiffer Report\nProvide meaningful feedback with advanced commenting capabilities.\nGive everyone full-screen reviews, with super-accurate controls.\nEliminate guessing with consolidated comments that follow the work.\nGive the editor frame-accurate notes right in their workspace.\nGenerate searchable transcripts, identify speakers automatically, and share videos with captions.\nInternational Data Corporation"
+  }
+ ],
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/nvidiaai/status/2112677152735076822?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+  "site": "FxTwitter",
+  "title": "NVIDIA AI (@NVIDIAAI)",
+  "description": "We’re working with the European Broadcasting Union and @Adobe to help media teams keep control of their data and find the footage they need faster.\nWith the EBU, we’re building on sovereign AI standards so broadcasters can use AI while keeping control of…",
+  "image": {
+   "src": "media/6005/preview.webp",
+   "width": 800,
+   "height": 800
+  }
+ },
+ "article": {
+  "title": "We’re working with the European Broadcasting Union and @Adobe to help media teams keep control of their data and find the footage they need…",
+  "source_title": null,
+  "body": [],
+  "why": null,
+  "tags": [
+   "هوش مصنوعی"
+  ]
+ },
+ "updated": "2026-10-24T11:00:22+00:00"
+}

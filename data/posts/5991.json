@@ -1,0 +1,82 @@
+{
+ "id": 5991,
+ "url": "https://t.me/dlmehr/5991",
+ "date": "2026-10-20T17:35:20+00:00",
+ "edited": true,
+ "views": "208",
+ "text": "https://fxtwitter.com/swyx/status/2112587397380943953?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+ "forwarded_from": null,
+ "digest": false,
+ "hash": "741559870cf4",
+ "gholam": null,
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/swyx/status/2112587397380943953",
+   "domain": "x.com",
+   "author": {
+    "name": "swyx",
+    "handle": "swyx",
+    "avatar": "media/avatars/swyx.webp"
+   },
+   "text": "deepseek posted way more alpha on their zhihu page, if you only read twitter you are reading the laowai approved stuff\n\n\"Based on this framework, we have implemented a high-throughput, low-latency large-scale inference service for DeepSeek V4.1 Flash. Currently, the service throughput of a single cluster is 155 trillion tokens/day, and the overall revenue is $38 per card per hour (based on off-peak prices).\"\n\nit costs roughtly $5-10 per gpu hour so depseek is claiming 80% serving margin at THEIR prices lololololol",
+   "lang": "en",
+   "date": 1792515060,
+   "stats": {
+    "views": 138157,
+    "likes": 2290,
+    "retweets": 141,
+    "replies": 105
+   },
+   "media": [
+    {
+     "type": "image",
+     "src": "media/5991/l0-0.webp",
+     "width": 1400,
+     "height": 1405,
+     "remote": "https://pbs.twimg.com/media/HVFqiZmaIAABXR3.jpg?name=orig"
+    }
+   ],
+   "links": [],
+   "quote": {
+    "author": {
+     "name": "DeepSeek",
+     "handle": "deepseek_ai",
+     "avatar": "media/avatars/deepseek_ai.webp"
+    },
+    "text": "🚀 Introducing DeepInfer, our in-house inference framework, now fully open source!\n\nPowering DeepSeek-V4.1-Flash at scale with high throughput and low latency. We’re sharing our production stack to help the community lower compute costs, reduce energy use, and make AI more affordable.\n\n🔗 http://github.com/deepseek-ai/DeepInfer\n\n1/4",
+    "lang": "en",
+    "date": 1792488619,
+    "stats": {
+     "views": 6594954,
+     "likes": 42852,
+     "retweets": 4855,
+     "replies": 1607
+    },
+    "media": [],
+    "links": [
+     "http://github.com/deepseek-ai/DeepInfer"
+    ]
+   }
+  }
+ ],
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/swyx/status/2112587397380943953?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+  "site": "FxTwitter",
+  "title": "swyx (@swyx)",
+  "description": "deepseek posted way more alpha on their zhihu page, if you only read twitter you are reading the laowai approved stuff\n\"Based on this framework, we have implemented a high-throughput, low-latency large-scale inference service for DeepSeek V4.1 Flash. Currently…",
+  "image": null
+ },
+ "article": {
+  "title": "deepseek posted way more alpha on their zhihu page, if you only read twitter you are reading the laowai approved stuff",
+  "source_title": null,
+  "body": [],
+  "why": null,
+  "tags": [
+   "دیپ‌سیک",
+   "تراشه"
+  ]
+ },
+ "updated": "2026-10-24T11:00:34+00:00"
+}

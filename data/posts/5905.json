@@ -1,0 +1,92 @@
+{
+ "id": 5905,
+ "url": "https://t.me/dlmehr/5905",
+ "date": "2026-10-15T03:25:57+00:00",
+ "edited": true,
+ "views": "140",
+ "text": "https://fxtwitter.com/azaliamirh/status/2110461349818155247?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+ "forwarded_from": null,
+ "digest": false,
+ "hash": "265ba6cffe06",
+ "gholam": null,
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/Azaliamirh/status/2110461349818155247",
+   "domain": "x.com",
+   "author": {
+    "name": "Azalia Mirhoseini",
+    "handle": "Azaliamirh",
+    "avatar": "media/avatars/azaliamirh.webp"
+   },
+   "text": "Introducing Next-Concept Models (NCMs), a new paradigm for language generation that is significantly faster and more data efficient than diffusion models.\n\nHow it works:\n1) First we learn a series of compressed representations of text from coarse to fine-grained, aka ‘concepts’. This step is done once, similar to training a tokenizer.\n\n2) At inference, we generate text going from a coarse to fine hierarchy via these ‘concepts’. A transformer predicts each level of the hierarchy sequentially, but the codes within each level are generated in parallel.\n\nCompared to strong diffusion language models, NCM achieves:\n\nUp to 31× faster generation on downstream tasks like summarization and machine translation.\n\n10-21× faster generation across TinyStories, LM1B, and OpenWebText, using  3-5× fewer training data.\n\nOn reasoning tasks like Sudoku, NCM outperforms both autoregressive and diffusion baselines with fewer sampling steps.\n\nLead authors: @KumbongHermann & @ishanskhare, together with a great team!",
+   "lang": "en",
+   "date": 1792008170,
+   "stats": {
+    "views": 40393,
+    "likes": 762,
+    "retweets": 68,
+    "replies": 22
+   },
+   "media": [
+    {
+     "type": "image",
+     "src": "media/5905/l0-0.webp",
+     "width": 1400,
+     "height": 582,
+     "remote": "https://pbs.twimg.com/media/HUncXxeawAAHKlF.jpg?name=orig"
+    }
+   ],
+   "links": [],
+   "quote": {
+    "author": {
+     "name": "Hermann Kumbong",
+     "handle": "KumbongHermann",
+     "avatar": "media/avatars/kumbonghermann.webp"
+    },
+    "text": "🚀 Introducing Next-Concept Modeling (NCM): our new paradigm for fast, parallel, coarse-to-fine text generation.\n\nCompared to strong diffusion language models (DLMs) at similar parameter size, NCM achieves:\n\n⚡ Up to 31× faster generation on downstream tasks like summarization and machine translation with comparable or better quality.\n\n🏎️ 10–21× faster unconditional generation across TinyStories, LM1B, and OpenWebText, with comparable or better generative perplexity and using  3–5× fewer training tokens.\n\n🧩 Better performance on reasoning tasks like Sudoku, outperforming both AR and diffusion baselines with fewer sampling steps.\n\nWith @ishanskhare, @IddahMlauzi, @ekellbuch, @simran_s_arora, @Azaliamirh, and @HazyResearch.\n\nMore details in the thread 🧵👇",
+    "lang": "en",
+    "date": 1792002573,
+    "stats": {
+     "views": 488158,
+     "likes": 1034,
+     "retweets": 194,
+     "replies": 61
+    },
+    "media": [
+     {
+      "type": "video",
+      "src": "media/5905/l0q-0.mp4",
+      "poster": "media/5905/l0q-0-poster.webp",
+      "width": 1920,
+      "height": 1080,
+      "duration": 21.9,
+      "gif": false,
+      "remote": "https://video.twimg.com/amplify_video/2110429084321013761/vid/avc1/1280x720/mqcIbVUMhw8QRrq3.mp4?tag=29"
+     }
+    ],
+    "links": []
+   }
+  }
+ ],
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/azaliamirh/status/2110461349818155247?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+  "site": "FxTwitter",
+  "title": "Azalia Mirhoseini (@Azaliamirh)",
+  "description": "Introducing Next-Concept Models (NCMs), a new paradigm for language generation that is significantly faster and more data efficient than diffusion models.\nHow it works:\n1) First we learn a series of compressed representations of text from coarse to fine…",
+  "image": {
+   "src": "media/5905/preview.webp",
+   "width": 800,
+   "height": 333
+  }
+ },
+ "article": {
+  "title": "Introducing Next-Concept Models (NCMs), a new paradigm for language generation that is significantly faster and more data efficient than…",
+  "source_title": null,
+  "body": [],
+  "why": null,
+  "tags": []
+ },
+ "updated": "2026-10-24T11:01:41+00:00"
+}

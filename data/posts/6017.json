@@ -1,0 +1,61 @@
+{
+ "id": 6017,
+ "url": "https://t.me/dlmehr/6017",
+ "date": "2026-10-21T14:11:23+00:00",
+ "edited": true,
+ "views": "153",
+ "text": "https://fxtwitter.com/openai/status/2112907856018309586?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+ "forwarded_from": null,
+ "digest": false,
+ "hash": "676760ac8962",
+ "gholam": null,
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/OpenAI/status/2112907856018309586",
+   "domain": "x.com",
+   "author": {
+    "name": "OpenAI",
+    "handle": "OpenAI",
+    "avatar": "media/avatars/openai.webp"
+   },
+   "text": "OpenAI models helped researchers—operating as part of our Patch the Planet initiative—discover critical security flaws in PHP, an open-source programming language used to run an estimated 70% of websites.\n\nOver the past two months, we led a coalition of maintainers, researchers, and security providers to prepare fixes and protections ahead of disclosure. This duration was necessary because the fix was quite intricate and required a major change to the PHP engine. Every site using PHP can now safely upgrade their version to stay secure, in addition to applying mitigations from various security vendors.\n\nDue to the severity of these flaws and PHP’s widespread use, we consider this bug to be one of the most impactful vulnerabilities in recent memory. It also marks a new phase, where AI can find security bugs with internet-scale impact. \n\nThis is an example of the Defender’s Window in action: to our knowledge, frontier AI was able to find this vulnerability ahead of attackers, giving defenders time to prepare.\nhttps://openai.com/index/coordinated-disclosure-of-critical-vulnerabilities/",
+   "lang": "en",
+   "date": 1792591463,
+   "stats": {
+    "views": 5826146,
+    "likes": 14420,
+    "retweets": 2867,
+    "replies": 614
+   },
+   "media": [],
+   "links": [
+    "https://openai.com/index/coordinated-disclosure-of-critical-vulnerabilities/"
+   ]
+  }
+ ],
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/openai/status/2112907856018309586?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+  "site": "FxTwitter · openai.com",
+  "title": "OpenAI (@OpenAI)",
+  "description": "OpenAI models helped researchers—operating as part of our Patch the Planet initiative—discover critical security flaws in PHP, an open-source programming language used to run an estimated 70% of websites.\nOver the past two months, we led a coalition of maintainers…",
+  "image": {
+   "src": "media/6017/preview.webp",
+   "width": 200,
+   "height": 200
+  }
+ },
+ "article": {
+  "title": "OpenAI models helped researchers—operating as part of our Patch the Planet initiative—discover critical security flaws in PHP, an…",
+  "source_title": null,
+  "body": [],
+  "why": null,
+  "tags": [
+   "هوش مصنوعی",
+   "اوپن‌ای‌آی",
+   "امنیت"
+  ]
+ },
+ "updated": "2026-10-24T11:00:12+00:00"
+}

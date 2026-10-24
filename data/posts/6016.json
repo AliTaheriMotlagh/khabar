@@ -1,0 +1,64 @@
+{
+ "id": 6016,
+ "url": "https://t.me/dlmehr/6016",
+ "date": "2026-10-21T14:05:42+00:00",
+ "edited": true,
+ "views": "152",
+ "text": "https://fxtwitter.com/kimmonismus/status/2112842412515021115?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+ "forwarded_from": null,
+ "digest": false,
+ "hash": "3d0148674df4",
+ "gholam": null,
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/kimmonismus/status/2112842412515021115",
+   "domain": "x.com",
+   "author": {
+    "name": "Chubby♨️",
+    "handle": "kimmonismus",
+    "avatar": "media/avatars/kimmonismus.webp"
+   },
+   "text": "NVIDIA just announced DSX POD. \n\nThis is a bigger deal than most people realize, because it solves one of the biggest bottlenecks: scaling! Instead of taking months to build out a data center, you can now scale compute capacity in just a few days!",
+   "lang": "en",
+   "date": 1792575860,
+   "stats": {
+    "views": 212277,
+    "likes": 2922,
+    "retweets": 232,
+    "replies": 147
+   },
+   "media": [
+    {
+     "type": "video",
+     "src": "media/6016/l0-0.mp4",
+     "poster": "media/6016/l0-0-poster.webp",
+     "width": 1080,
+     "height": 1920,
+     "duration": 98.333,
+     "gif": false,
+     "remote": "https://video.twimg.com/amplify_video/2112840613057945600/vid/avc1/720x1280/_Y_ugm-z_If9Hism.mp4?tag=29"
+    }
+   ],
+   "links": []
+  }
+ ],
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/kimmonismus/status/2112842412515021115?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+  "site": "FxTwitter",
+  "title": "Chubby ♨️ (@kimmonismus)",
+  "description": "NVIDIA just announced DSX POD.\nThis is a bigger deal than most people realize, because it solves one of the biggest bottlenecks: scaling! Instead of taking months to build out a data center, you can now scale compute capacity in just a few days!",
+  "image": null
+ },
+ "article": {
+  "title": "NVIDIA just announced DSX POD.",
+  "source_title": null,
+  "body": [],
+  "why": null,
+  "tags": [
+   "انویدیا"
+  ]
+ },
+ "updated": "2026-10-24T11:00:14+00:00"
+}

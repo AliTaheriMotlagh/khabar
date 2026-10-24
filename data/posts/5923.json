@@ -1,0 +1,64 @@
+{
+ "id": 5923,
+ "url": "https://t.me/dlmehr/5923",
+ "date": "2026-10-16T03:10:33+00:00",
+ "edited": false,
+ "views": "199",
+ "text": "https://fxtwitter.com/sundarpichai/status/2110804295352488143",
+ "forwarded_from": "Parsa Razavi",
+ "digest": false,
+ "hash": "8f3a23031e71",
+ "gholam": null,
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/sundarpichai/status/2110804295352488143",
+   "domain": "x.com",
+   "author": {
+    "name": "Sundar Pichai",
+    "handle": "sundarpichai",
+    "avatar": "media/avatars/sundarpichai.webp"
+   },
+   "text": "Some magical progress towards \"magic state\" in quantum!\n\nOur @GoogleQuantumAI team has demonstrated \"magic state cultivation\" on physical hardware for the first time. The result is a 40x error reduction on our Willow processor vs. previous methods, achieving a state-of-the-art 99.99% logical fidelity.\n\nIt's another step towards useful, error-corrected quantum computers to help solve the hardest problems. The result is published in Science today, watch the video below to see how it works",
+   "lang": "en",
+   "date": 1792089935,
+   "stats": {
+    "views": 681986,
+    "likes": 9305,
+    "retweets": 1109,
+    "replies": 415
+   },
+   "media": [
+    {
+     "type": "video",
+     "src": "media/5923/l0-0.mp4",
+     "poster": "media/5923/l0-0-poster.webp",
+     "width": 1920,
+     "height": 1080,
+     "duration": 201,
+     "gif": false,
+     "remote": "https://video.twimg.com/amplify_video/2110803826844520448/vid/avc1/1280x720/1C3rHL12JAJxylvH.mp4?tag=29"
+    }
+   ],
+   "links": []
+  }
+ ],
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/sundarpichai/status/2110804295352488143",
+  "site": "🧵 Thread • FxTwitter",
+  "title": "Sundar Pichai (@sundarpichai)",
+  "description": "Some magical progress towards \"magic state\" in quantum!\nOur @GoogleQuantumAI team has demonstrated \"magic state cultivation\" on physical hardware for the first time. The result is a 40x error reduction on our Willow processor vs. previous methods, achieving…",
+  "image": null
+ },
+ "article": {
+  "title": "Some magical progress towards \"magic state\" in quantum!",
+  "source_title": null,
+  "body": [],
+  "why": null,
+  "tags": [
+   "کوانتوم"
+  ]
+ },
+ "updated": "2026-10-24T11:01:28+00:00"
+}

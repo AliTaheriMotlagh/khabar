@@ -1,0 +1,64 @@
+{
+ "id": 5917,
+ "url": "https://t.me/dlmehr/5917",
+ "date": "2026-10-16T02:00:42+00:00",
+ "edited": true,
+ "views": "166",
+ "text": "https://fxtwitter.com/tesla/status/2110913438293647789?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+ "forwarded_from": null,
+ "digest": false,
+ "hash": "6d3a9ff313e0",
+ "gholam": null,
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/Tesla/status/2110913438293647789",
+   "domain": "x.com",
+   "author": {
+    "name": "Tesla",
+    "handle": "Tesla",
+    "avatar": "media/avatars/tesla.webp"
+   },
+   "text": "Real life, baby",
+   "lang": "en",
+   "date": 1792115957,
+   "stats": {
+    "views": 97937611,
+    "likes": 777213,
+    "retweets": 96578,
+    "replies": 19274
+   },
+   "media": [
+    {
+     "type": "video",
+     "src": "media/5917/l0-0.mp4",
+     "poster": "media/5917/l0-0-poster.webp",
+     "width": 3840,
+     "height": 2160,
+     "duration": 45.628,
+     "gif": false,
+     "remote": "https://video.twimg.com/amplify_video/2110913252045545472/vid/avc1/1280x720/twJMHmqtECqyIIRt.mp4?tag=29"
+    }
+   ],
+   "links": []
+  }
+ ],
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/tesla/status/2110913438293647789?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+  "site": "FxTwitter",
+  "title": "Tesla (@Tesla)",
+  "description": "Real life, baby",
+  "image": null
+ },
+ "article": {
+  "title": "Real life, baby",
+  "source_title": null,
+  "body": [],
+  "why": null,
+  "tags": [
+   "ایلان ماسک"
+  ]
+ },
+ "updated": "2026-10-24T11:01:30+00:00"
+}

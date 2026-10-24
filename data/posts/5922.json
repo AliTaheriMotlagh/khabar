@@ -1,0 +1,75 @@
+{
+ "id": 5922,
+ "url": "https://t.me/dlmehr/5922",
+ "date": "2026-10-16T03:09:47+00:00",
+ "edited": false,
+ "views": "185",
+ "text": "https://fxtwitter.com/somewheresy/status/2110759944370692216?s=52",
+ "forwarded_from": "Amirreza",
+ "digest": false,
+ "hash": "fc71294803e6",
+ "gholam": null,
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/somewheresy/status/2110759944370692216",
+   "domain": "x.com",
+   "author": {
+    "name": "Somewhere",
+    "handle": "somewheresy",
+    "avatar": "media/avatars/somewheresy.webp"
+   },
+   "text": "We've developed a new inference engine, called 'e'. \n\nIt's the closest thing to alien technology which we have, and pushes 10,500 tok/s aggregate on a single DGX Station with the new @NVIDIAAI Nemotron 3.5 Super VL model, released a few minutes ago.",
+   "lang": "en",
+   "date": 1792079361,
+   "stats": {
+    "views": 365860,
+    "likes": 3046,
+    "retweets": 153,
+    "replies": 128
+   },
+   "media": [],
+   "links": [],
+   "quote": {
+    "author": {
+     "name": "Actual Computer",
+     "handle": "actualinc",
+     "avatar": "media/avatars/actualinc.webp"
+    },
+    "text": "Actual Computer turns your NVIDIA DGX Station into a department-scale AI factory.\n\nRead the full case study:\nhttps://actual.inc/company/blog/case-study-dgx-station-and-nemotron-3-5-super-vl",
+    "lang": "en",
+    "date": 1792079284,
+    "stats": {
+     "views": 528107,
+     "likes": 557,
+     "retweets": 73,
+     "replies": 28
+    },
+    "media": [],
+    "links": [
+     "https://actual.inc/company/blog/case-study-dgx-station-and-nemotron-3-5-super-vl"
+    ]
+   }
+  }
+ ],
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/somewheresy/status/2110759944370692216?s=52",
+  "site": "🧵 Thread • FxTwitter",
+  "title": "Somewhere (@somewheresy)",
+  "description": "We've developed a new inference engine, called 'e'.\nIt's the closest thing to alien technology which we have, and pushes 10,500 tok/s aggregate on a single DGX Station with the new @NVIDIAAI Nemotron 3.5 Super VL model, released a few minutes ago.\nQuoting…",
+  "image": {
+   "src": "media/5922/preview.webp",
+   "width": 200,
+   "height": 200
+  }
+ },
+ "article": {
+  "title": "We've developed a new inference engine, called 'e'.",
+  "source_title": null,
+  "body": [],
+  "why": null,
+  "tags": []
+ },
+ "updated": "2026-10-24T11:01:28+00:00"
+}

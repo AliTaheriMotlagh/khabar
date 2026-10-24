@@ -1,0 +1,98 @@
+{
+ "id": 5896,
+ "url": "https://t.me/dlmehr/5896",
+ "date": "2026-10-14T20:21:28+00:00",
+ "edited": true,
+ "views": "173",
+ "text": "https://fxtwitter.com/rohanpaul_ai/status/2110460540791480529?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+ "forwarded_from": null,
+ "digest": false,
+ "hash": "f7b2d77115e5",
+ "gholam": null,
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/rohanpaul_ai/status/2110460540791480529",
+   "domain": "x.com",
+   "author": {
+    "name": "Rohan Paul",
+    "handle": "rohanpaul_ai",
+    "avatar": "media/avatars/rohanpaul_ai.webp"
+   },
+   "text": "Training agents to do real office work requires real company records, so Scale, Mercor, Handshake, Turing and others now pay businesses for their email, chat, tickets and code history.\n\n@Secludy has released Who Sells Data, a free directory of 159 companies that sell training data, RL environments and evals to AI developers, with every fact linked to its source and the date it was checked.\n\nUnknowns are marked rather than guessed, so an empty cell reads as “nobody confirmed this,” which is exactly what a security reviewer wants to know.\n\nEval builders, see how you stack up.",
+   "lang": "en",
+   "date": 1792007978,
+   "stats": {
+    "views": 5290,
+    "likes": 31,
+    "retweets": 4,
+    "replies": 10
+   },
+   "media": [
+    {
+     "type": "image",
+     "src": "media/5896/l0-0.webp",
+     "width": 1400,
+     "height": 947,
+     "remote": "https://pbs.twimg.com/media/HUnb4uLasAAHivs.jpg?name=orig"
+    }
+   ],
+   "links": [],
+   "quote": {
+    "author": {
+     "name": "Ben Cerchio",
+     "handle": "ben_cerchio",
+     "avatar": "media/avatars/ben_cerchio.webp"
+    },
+    "text": "if you sell AI training data, see how you compare: we found 159 companies selling data, RL envs and evals, every fact sourced\n\nplus 38 programs that pay companies for their data: http://whosellsdata.com\n\n8 of the 14 that pay companies directly publish a dollar range. most of the rest set terms per deal. unknowns are marked and nothing is ranked\n\nthe other page: what each program wants, who qualifies and what it offers: http://whosellsdata.com/buying\n\nmissing something, or something wrong? fix it on the site, a person reviews every change\n\nwe built this at @Secludy. if you buy, broker or license company data and need the names out before it reaches a lab, dm me",
+    "lang": "en",
+    "date": 1792000761,
+    "stats": {
+     "views": 585813,
+     "likes": 350,
+     "retweets": 42,
+     "replies": 84
+    },
+    "media": [
+     {
+      "type": "video",
+      "src": "media/5896/l0q-0.mp4",
+      "poster": "media/5896/l0q-0-poster.webp",
+      "width": 1080,
+      "height": 1350,
+      "duration": 23.866,
+      "gif": false,
+      "remote": "https://video.twimg.com/amplify_video/2110429597858967552/vid/avc1/720x900/aHlCLwo-y_yKXflD.mp4?tag=29"
+     }
+    ],
+    "links": [
+     "http://whosellsdata.com",
+     "http://whosellsdata.com/buying"
+    ]
+   }
+  }
+ ],
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/rohanpaul_ai/status/2110460540791480529?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+  "site": "🧵 Thread • FxTwitter",
+  "title": "Rohan Paul (@rohanpaul_ai)",
+  "description": "Training agents to do real office work requires real company records, so Scale, Mercor, Handshake, Turing and others now pay businesses for their email, chat, tickets and code history.\n@Secludy has released Who Sells Data, a free directory of 159 companies…",
+  "image": {
+   "src": "media/5896/preview.webp",
+   "width": 800,
+   "height": 541
+  }
+ },
+ "article": {
+  "title": "Training agents to do real office work requires real company records, so Scale, Mercor, Handshake, Turing and others now pay businesses for…",
+  "source_title": null,
+  "body": [],
+  "why": null,
+  "tags": [
+   "هوش مصنوعی",
+   "امنیت"
+  ]
+ },
+ "updated": "2026-10-24T11:01:50+00:00"
+}

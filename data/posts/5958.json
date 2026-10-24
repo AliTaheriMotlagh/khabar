@@ -1,0 +1,81 @@
+{
+ "id": 5958,
+ "url": "https://t.me/dlmehr/5958",
+ "date": "2026-10-18T15:58:28+00:00",
+ "edited": true,
+ "views": "202",
+ "text": "https://fxtwitter.com/andrewcurran_/status/2111837963214794940?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+ "forwarded_from": null,
+ "digest": false,
+ "hash": "97cbb1ec8c4d",
+ "gholam": null,
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/AndrewCurran_/status/2111837963214794940",
+   "domain": "x.com",
+   "author": {
+    "name": "Andrew Curran",
+    "handle": "AndrewCurran_",
+    "avatar": "media/avatars/andrewcurran_.webp"
+   },
+   "text": "OpenCode is currently under a sustained cyberattack, and mid-incident they ran into the same problem Hugging Face did: the frontier models they were using for defense began refusing to help fight attacking agents because analyzing the attacks started triggering safety guardrails.",
+   "lang": "en",
+   "date": 1792336381,
+   "stats": {
+    "views": 546897,
+    "likes": 5090,
+    "retweets": 560,
+    "replies": 215
+   },
+   "media": [
+    {
+     "type": "image",
+     "src": "media/5958/l0-0.webp",
+     "width": 1080,
+     "height": 1171,
+     "remote": "https://pbs.twimg.com/media/HU7Bb02bQAAx2EB.jpg?name=orig"
+    }
+   ],
+   "links": [],
+   "quote": {
+    "author": {
+     "name": "dax",
+     "handle": "thdxr",
+     "avatar": "media/avatars/thdxr.webp"
+    },
+    "text": "@RhysSullivan yes that was a bit frustrating mid incident when trying to investigate. they did quite a bit and then started refusing\n\nwe got access to daybreak blue now so it's better",
+    "lang": "en",
+    "date": 1792334804,
+    "stats": {
+     "views": 410052,
+     "likes": 1510,
+     "retweets": 32,
+     "replies": 57
+    },
+    "media": [],
+    "links": []
+   }
+  }
+ ],
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/andrewcurran_/status/2111837963214794940?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+  "site": "FxTwitter",
+  "title": "Andrew Curran (@AndrewCurran_)",
+  "description": "OpenCode is currently under a sustained cyberattack, and mid-incident they ran into the same problem Hugging Face did: the frontier models they were using for defense began refusing to help fight attacking agents because analyzing the attacks started triggering…",
+  "image": {
+   "src": "media/5958/preview.webp",
+   "width": 738,
+   "height": 800
+  }
+ },
+ "article": {
+  "title": "OpenCode is currently under a sustained cyberattack, and mid-incident they ran into the same problem Hugging Face did: the frontier models…",
+  "source_title": null,
+  "body": [],
+  "why": null,
+  "tags": []
+ },
+ "updated": "2026-10-24T11:01:00+00:00"
+}

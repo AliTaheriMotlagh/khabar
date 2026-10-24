@@ -1,0 +1,62 @@
+{
+ "id": 5918,
+ "url": "https://t.me/dlmehr/5918",
+ "date": "2026-10-16T02:17:43+00:00",
+ "edited": true,
+ "views": "174",
+ "text": "https://fxtwitter.com/cb_doge/status/2110901560435945972?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+ "forwarded_from": null,
+ "digest": false,
+ "hash": "f76443ab686f",
+ "gholam": null,
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/cb_doge/status/2110901560435945972",
+   "domain": "x.com",
+   "author": {
+    "name": "DogeDesigner",
+    "handle": "cb_doge",
+    "avatar": "media/avatars/cb_doge.webp"
+   },
+   "text": "HOLY SHIT",
+   "lang": "en",
+   "date": 1792113125,
+   "stats": {
+    "views": 12089608,
+    "likes": 19627,
+    "retweets": 2105,
+    "replies": 615
+   },
+   "media": [
+    {
+     "type": "video",
+     "src": "media/5918/l0-0.mp4",
+     "poster": "media/5918/l0-0-poster.webp",
+     "width": 1126,
+     "height": 1126,
+     "duration": 9.031,
+     "gif": false,
+     "remote": "https://video.twimg.com/amplify_video/2110901535861522432/vid/avc1/720x720/SrIKBcqtqmPxJTLv.mp4?tag=29"
+    }
+   ],
+   "links": []
+  }
+ ],
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/cb_doge/status/2110901560435945972?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+  "site": "FxTwitter",
+  "title": "DogeDesigner (@cb_doge)",
+  "description": "HOLY SHIT",
+  "image": null
+ },
+ "article": {
+  "title": "HOLY SHIT",
+  "source_title": null,
+  "body": [],
+  "why": null,
+  "tags": []
+ },
+ "updated": "2026-10-24T11:01:30+00:00"
+}

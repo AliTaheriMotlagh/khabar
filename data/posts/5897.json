@@ -1,0 +1,64 @@
+{
+ "id": 5897,
+ "url": "https://t.me/dlmehr/5897",
+ "date": "2026-10-14T20:51:48+00:00",
+ "edited": true,
+ "views": "179",
+ "text": "https://fxtwitter.com/mireloai/status/2110360787780800611/video/1?s=52",
+ "forwarded_from": null,
+ "digest": false,
+ "hash": "f63dc83c032c",
+ "gholam": null,
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/MireloAI/status/2110360787780800611",
+   "domain": "x.com",
+   "author": {
+    "name": "Mirelo",
+    "handle": "MireloAI",
+    "avatar": "media/avatars/mireloai.webp"
+   },
+   "text": "AI Videos finally sound real.\n\nIntroducing Mirelo SFX 2.0.\n\nIt watches your video, cuts the music you never prompted, keeps the dialogue, and builds a full sound design synced to the action and consistent across any length clips.\n\nYou’ve made it look right. We’ll make it sound right.\n\nLive today through our API, on @runwayml  and @fal.\n\nOther platforms coming soon. (Thread)",
+   "lang": "en",
+   "date": 1791984195,
+   "stats": {
+    "views": 1889918,
+    "likes": 3839,
+    "retweets": 414,
+    "replies": 455
+   },
+   "media": [
+    {
+     "type": "video",
+     "src": "media/5897/l0-0.mp4",
+     "poster": "media/5897/l0-0-poster.webp",
+     "width": 1920,
+     "height": 1080,
+     "duration": 73.208,
+     "gif": false,
+     "remote": "https://video.twimg.com/amplify_video/2110360533803130880/vid/avc1/1280x720/5fZrS9v31RxnAzL1.mp4?tag=29"
+    }
+   ],
+   "links": []
+  }
+ ],
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/mireloai/status/2110360787780800611/video/1?s=52",
+  "site": "🧵 Thread • FxTwitter",
+  "title": "Mirelo (@MireloAI)",
+  "description": "AI Videos finally sound real.\nIntroducing Mirelo SFX 2.0.\nIt watches your video, cuts the music you never prompted, keeps the dialogue, and builds a full sound design synced to the action and consistent across any length clips.\nYou’ve made it look right.…",
+  "image": null
+ },
+ "article": {
+  "title": "AI Videos finally sound real.",
+  "source_title": null,
+  "body": [],
+  "why": null,
+  "tags": [
+   "هوش مصنوعی"
+  ]
+ },
+ "updated": "2026-10-24T11:01:49+00:00"
+}

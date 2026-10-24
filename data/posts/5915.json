@@ -1,0 +1,64 @@
+{
+ "id": 5915,
+ "url": "https://t.me/dlmehr/5915",
+ "date": "2026-10-16T01:34:05+00:00",
+ "edited": true,
+ "views": "186",
+ "text": "https://fxtwitter.com/tesla/status/2110903770838384773?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+ "forwarded_from": null,
+ "digest": false,
+ "hash": "bd465ca59c87",
+ "gholam": null,
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/Tesla/status/2110903770838384773",
+   "domain": "x.com",
+   "author": {
+    "name": "Tesla",
+    "handle": "Tesla",
+    "avatar": "media/avatars/tesla.webp"
+   },
+   "text": "Our design language has evolved since the last reveal: from S3XY to Cybertruck, Cybercab & Optimus\n\nRoadster is inspired by the SR-71 & F-35",
+   "lang": "en",
+   "date": 1792113652,
+   "stats": {
+    "views": 11448314,
+    "likes": 98267,
+    "retweets": 9291,
+    "replies": 2896
+   },
+   "media": [
+    {
+     "type": "video",
+     "src": "media/5915/l0-0.mp4",
+     "poster": "media/5915/l0-0-poster.webp",
+     "width": 3840,
+     "height": 2160,
+     "duration": 76.826,
+     "gif": false,
+     "remote": "https://video.twimg.com/amplify_video/2110902098409984001/vid/avc1/1280x720/pTHNoA2i3SqTjd7f.mp4?tag=29"
+    }
+   ],
+   "links": []
+  }
+ ],
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/tesla/status/2110903770838384773?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+  "site": "FxTwitter",
+  "title": "Tesla (@Tesla)",
+  "description": "Our design language has evolved since the last reveal: from S3XY to Cybertruck, Cybercab & Optimus\nRoadster is inspired by the SR-71 & F-35",
+  "image": null
+ },
+ "article": {
+  "title": "Our design language has evolved since the last reveal: from S3XY to Cybertruck, Cybercab & Optimus",
+  "source_title": null,
+  "body": [],
+  "why": null,
+  "tags": [
+   "ایلان ماسک"
+  ]
+ },
+ "updated": "2026-10-24T11:01:33+00:00"
+}

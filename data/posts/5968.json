@@ -1,0 +1,86 @@
+{
+ "id": 5968,
+ "url": "https://t.me/dlmehr/5968",
+ "date": "2026-10-19T14:42:37+00:00",
+ "edited": false,
+ "views": "249",
+ "text": "https://x.com/MiniMax_AI/status/2112150867868541221",
+ "forwarded_from": "Ali Farajnia",
+ "digest": false,
+ "hash": "db96f893fead",
+ "gholam": null,
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/MiniMax_AI/status/2112150867868541221",
+   "domain": "x.com",
+   "author": {
+    "name": "MiniMax (official)",
+    "handle": "MiniMax_AI",
+    "avatar": "media/avatars/minimax_ai.webp"
+   },
+   "text": "MiniMax M3.1 Flash: Space Performance + Bunny Speed\n\n🚀🐰 Yes, Space Bunny  - which has topped global leaderboards with 200T+ tokens - was an earlier version of M3.1 Flash.\n\n💰Redefining the performance economics of agentic AI. M3.1 Flash achieves frontier-level intelligence across key tasks such as Cowork (Automation-Bench: 62%; ALE: 30%), Coding (DeepSWE: 74%) and Visual Reasoning (BabyVision: 91%), at 1/3 the cost of M3 and 3x the speed.\n\nAPI pricing (flat rate): $0.15 / $0.60 per 1M input/output tokens, with cache reads at $0.015 / 1M tokens.\n\nModel weights will arrive on Oct 23.\n\nAPI: http://platform.minimax.io\nM Plan: https://www.minimax.io/m-plan\nMiniMax Code for desktop: https://agent.minimax.io/download",
+   "lang": "en",
+   "date": 1792410983,
+   "stats": {
+    "views": 1664834,
+    "likes": 7479,
+    "retweets": 673,
+    "replies": 463
+   },
+   "media": [
+    {
+     "type": "image",
+     "src": "media/5968/l0-0.webp",
+     "width": 1400,
+     "height": 1012,
+     "remote": "https://pbs.twimg.com/media/HU_d5nbXEAAict2.jpg?name=orig"
+    }
+   ],
+   "links": [
+    "http://platform.minimax.io",
+    "https://www.minimax.io/m-plan",
+    "https://agent.minimax.io/download"
+   ]
+  },
+  {
+   "kind": "link",
+   "url": "https://platform.minimax.io/docs/guides/models-intro",
+   "domain": "platform.minimax.io",
+   "title": "Models - MiniMax API Docs",
+   "description": "Overview of MiniMax AI models and their capabilities",
+   "image": {
+    "src": "media/5968/l1-og.webp",
+    "width": 300,
+    "height": 300
+   },
+   "site": "MiniMax API Docs",
+   "author": null,
+   "published": null,
+   "text": "Starting August 20, 2026, the paid APIs (Music Generation and Lyrics Generation) will no longer be available to new users; existing paying users can continue to use the current API services. The free music generation APIs (Music-3.0-free, Music-2.6-free, music-cover-free) will be discontinued.To experience or use music generation capabilities, please visit MiniMax Audio, or use the open-source MiniMax Music 3 model on Hugging Face."
+  }
+ ],
+ "media": [],
+ "preview": {
+  "url": "https://x.com/MiniMax_AI/status/2112150867868541221",
+  "site": "X (formerly Twitter)",
+  "title": "MiniMax (official) (@MiniMax_AI) on X",
+  "description": "MiniMax M3.1 Flash: Space Performance + Bunny Speed\n🚀\n🐰\nYes, Space Bunny  - which has topped global leaderboards with 200T+ tokens - was an earlier version of M3.1 Flash.\n💰\nRedefining the perfo…",
+  "image": {
+   "src": "media/5968/preview.webp",
+   "width": 800,
+   "height": 578
+  }
+ },
+ "article": {
+  "title": "MiniMax M3.1 Flash: Space Performance + Bunny Speed",
+  "source_title": null,
+  "body": [],
+  "why": null,
+  "tags": [
+   "هوش مصنوعی",
+   "فضا"
+  ]
+ },
+ "updated": "2026-10-24T11:00:54+00:00"
+}
