@@ -1,0 +1,71 @@
+{
+ "id": 6051,
+ "url": "https://t.me/dlmehr/6051",
+ "date": "2026-10-23T02:03:04+00:00",
+ "edited": true,
+ "views": "115",
+ "text": "https://fxtwitter.com/rohanpaul_ai/status/2113329649128501647?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+ "forwarded_from": null,
+ "digest": false,
+ "hash": "e3dadf875170",
+ "gholam": {
+  "text": "ببین رفیق، بچه‌های دیپ‌مایند گوگل یه مقاله دادن بیرون و رفتن سراغ یه روش باحال؛ فرض کن کلی مدل هوش مصنوعی داری ولی نمیدونی واسه هر سوال کدومشون کاردرست‌تره، اومدن بین ۱۱۰ تا مدل سر بیشتر از ۳۰ هزار تا پرامپت یه جور مزایده راه انداختن تا هر مدلی که مطمئن‌تره…",
+  "date": "2026-10-23T02:03:20+00:00"
+ },
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/rohanpaul_ai/status/2113329649128501647",
+   "domain": "x.com",
+   "author": {
+    "name": "Rohan Paul",
+    "handle": "rohanpaul_ai",
+    "avatar": "media/avatars/rohanpaul_ai.webp"
+   },
+   "text": "New Google DeepMind paper shows that if AI models offer money to answer each question and the highest offer answers, results are 99.2% as good as always picking the best model.\n\ni.e. say you don't know in advance which model is best for each new question. So who should answer?\n\nThe paper’s answer: let each model offer money for the job. The model that knows it is good at this question offers more. Highest offer gets to answer. \n\nThey proved the loss shrinks when several agents usually value a prompt highly, as when distilled models perform close to the best. They simulated auctions among 110 models on over 30,000 EmbedLLM prompts.\n\nWith all 110 models bidding, the auction reached 99.2% of the best possible value, versus 89.4% for routing each prompt type to its best model. On each method's worst prompt cluster, the auction held 96.0% while the single best model kept 6.0%.\n\nIf you run a model marketplace, a simple pay-your-bid auction works well when every bidding pool has several strong models.",
+   "lang": "en",
+   "date": 1792692026,
+   "stats": {
+    "views": 19738,
+    "likes": 254,
+    "retweets": 30,
+    "replies": 18
+   },
+   "media": [
+    {
+     "type": "image",
+     "src": "media/6051/l0-0.webp",
+     "width": 1400,
+     "height": 1122,
+     "remote": "https://pbs.twimg.com/media/HVQLg0cbYAAKcNt.png?name=orig"
+    }
+   ],
+   "links": []
+  }
+ ],
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/rohanpaul_ai/status/2113329649128501647?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+  "site": "🧵 Thread • FxTwitter",
+  "title": "Rohan Paul (@rohanpaul_ai)",
+  "description": "New Google DeepMind paper shows that if AI models offer money to answer each question and the highest offer answers, results are 99.2% as good as always picking the best model.\ni.e. say you don't know in advance which model is best for each new question.…",
+  "image": {
+   "src": "media/6051/preview.webp",
+   "width": 800,
+   "height": 641
+  }
+ },
+ "article": {
+  "title": "بچه‌های دیپ‌مایند گوگل یه مقاله دادن بیرون و رفتن سراغ یه روش باحال؛ فرض کن کلی مدل هوش مصنوعی داری ولی…",
+  "source_title": "New Google DeepMind paper shows that if AI models offer money to answer each question and the highest offer answers, results are 99.2% as…",
+  "body": [
+   "ببین رفیق، بچه‌های دیپ‌مایند گوگل یه مقاله دادن بیرون و رفتن سراغ یه روش باحال؛ فرض کن کلی مدل هوش مصنوعی داری ولی نمیدونی واسه هر سوال کدومشون کاردرست‌تره، اومدن بین ۱۱۰ تا مدل سر بیشتر از ۳۰ هزار تا پرامپت یه جور مزایده راه انداختن تا هر مدلی که مطمئن‌تره…"
+  ],
+  "why": null,
+  "tags": [
+   "هوش مصنوعی",
+   "گوگل"
+  ]
+ },
+ "updated": "2026-10-24T10:59:43+00:00"
+}

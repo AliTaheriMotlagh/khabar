@@ -1,0 +1,63 @@
+{
+ "id": 5901,
+ "url": "https://t.me/dlmehr/5901",
+ "date": "2026-10-15T01:14:13+00:00",
+ "edited": true,
+ "views": "153",
+ "text": "https://fxtwitter.com/typesafeai/status/2110536685805355064?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+ "forwarded_from": null,
+ "digest": false,
+ "hash": "1378882c2972",
+ "gholam": null,
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/typesafeai/status/2110536685805355064",
+   "domain": "x.com",
+   "author": {
+    "name": "TypeSafe AI",
+    "handle": "typesafeai",
+    "avatar": "media/avatars/typesafeai.webp"
+   },
+   "text": "we announced Jev 1.14 on 10.14 at 1:14pm PT 🔥\n\na new and improved model, along with experimental features for our dreamers:\n\n• images\n• a new box type\n• longer context\n\nsurprise, Jev was already able to see you! 👁️  \n\nBUT our bar for production-grade intelligence is quite high, so builders beware, these are preview features.\n\nenter the ~*~ danger zone ~*~ at your own risk. 🚨",
+   "lang": "en",
+   "date": 1792026132,
+   "stats": {
+    "views": 318568,
+    "likes": 4210,
+    "retweets": 342,
+    "replies": 138
+   },
+   "media": [
+    {
+     "type": "image",
+     "src": "media/5901/l0-0.webp",
+     "width": 1400,
+     "height": 886,
+     "remote": "https://pbs.twimg.com/media/HUocW4abQAAsHO4.jpg?name=orig"
+    }
+   ],
+   "links": []
+  }
+ ],
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/typesafeai/status/2110536685805355064?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+  "site": "🧵 Thread • FxTwitter",
+  "title": "TypeSafe AI (@typesafeai)",
+  "description": "we announced Jev 1.14 on 10.14 at 1:14pm PT\n🔥\na new and improved model, along with experimental features for our dreamers:\n• images\n• a new box type\n• longer context\nsurprise, Jev was already able to see you!\n👁️\nBUT our bar for production-grade intelligence…",
+  "image": {
+   "src": "media/5901/preview.webp",
+   "width": 800,
+   "height": 506
+  }
+ },
+ "article": {
+  "title": "we announced Jev 1.14 on 10.14 at 1:14pm PT 🔥",
+  "source_title": null,
+  "body": [],
+  "why": null,
+  "tags": []
+ },
+ "updated": "2026-10-24T11:01:46+00:00"
+}

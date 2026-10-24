@@ -1,0 +1,99 @@
+{
+ "id": 6007,
+ "url": "https://t.me/dlmehr/6007",
+ "date": "2026-10-21T01:06:12+00:00",
+ "edited": true,
+ "views": "189",
+ "text": "https://fxtwitter.com/attrc/status/2112660210498031638?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+ "forwarded_from": null,
+ "digest": false,
+ "hash": "e86162e54baf",
+ "gholam": null,
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/attrc/status/2112660210498031638",
+   "domain": "x.com",
+   "author": {
+    "name": "Andrew Case",
+    "handle": "attrc",
+    "avatar": "media/avatars/attrc.webp"
+   },
+   "text": "Full details of a remotely exploitable vulnerability in the core engine of *all* PHP versions will be released tomorrow, October 21st. If your organization has internet facing PHP applications then you need to be ready to patch the minute the update is released or *strongly* consider taking the application offline until you can:\n\nhttps://www.php.net/index.php#2026-10-20-1",
+   "lang": "en",
+   "date": 1792532420,
+   "stats": {
+    "views": 1025180,
+    "likes": 2981,
+    "retweets": 567,
+    "replies": 83
+   },
+   "media": [],
+   "links": [
+    "https://www.php.net/index.php#2026-10-20-1"
+   ],
+   "quote": {
+    "author": {
+     "name": "Dark Web Informer",
+     "handle": "DarkWebInformer",
+     "avatar": "media/avatars/darkwebinformer.webp"
+    },
+    "text": "🚨 PHP warns of two critical vulnerabilities as emergency patches arrive tomorrow\n\nThe PHP security team will release updates on October 21 at 14:00 UTC for two vulnerabilities, each rated 9.2 under CVSS v4.0.\n⠀\nSecurity researchers identified the flaws as CVE-2026-109618 and CVE-2026-109619 and described them as remote code execution vulnerabilities reportedly affecting PHP versions 5 through 8.\n\nPHP has not yet confirmed the affected versions, exploitation requirements or fixed releases.\n⠀\nThe vulnerabilities were reportedly leaked before their planned disclosure. Researchers said they have not observed active exploitation, while PHP warned it may release the patches early if technical details become public or exploitation is detected.\n⠀\nAdministrators should identify PHP installations now and prepare to apply the updates as soon as they become available.",
+    "lang": "en",
+    "date": 1792530308,
+    "stats": {
+     "views": 533249,
+     "likes": 1104,
+     "retweets": 240,
+     "replies": 59
+    },
+    "media": [
+     {
+      "type": "image",
+      "src": "media/6007/l0q-0.webp",
+      "width": 400,
+      "height": 400,
+      "remote": "https://pbs.twimg.com/media/HVGk4sAXoAEEYWP.png?name=orig"
+     }
+    ],
+    "links": []
+   }
+  },
+  {
+   "kind": "link",
+   "url": "https://www.php.net/index.php#2026-10-20-1",
+   "domain": "php.net",
+   "title": "PHP",
+   "description": "PHP is a popular general-purpose scripting language that powers everything from your blog to the most popular websites in the world.",
+   "image": {
+    "src": "media/6007/l1-og.webp",
+    "width": 1280,
+    "height": 800
+   },
+   "site": "php.net",
+   "author": null,
+   "published": null,
+   "text": "We suggest you set session.upload_progress.enabled=0 until the\n        next regular bugfix release, to fully protect from an unlikely RCE vector.\n        This setting was already listed as a mitigation in the\n        GHSA-6wmf-4rv5-p3rp\n        advisory for CVE-2026-109619 published on Oct 21st, 2026. If you applied it\n        then, keep it in place and no further action is needed.\n      \n        The issue can only occur under an unusual combination of configuration and\n        application code. An application must set\n        session.serialize_handler to php_binary or\n        php_serialize in its configuration and then switch it to\n        php at runtime with ini_set() before calling\n        session_start(). Session upload progress must also still be\n        enabled. Applications that never change the serialize handler at runtime can\n        keep the feature enabled. Since this setup is unlikely in practice, we are\n        handling it in the regular release cycle and will publish a full advisory for\n        CVE-2026-115560 with the next release."
+  }
+ ],
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/attrc/status/2112660210498031638?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+  "site": "FxTwitter · php.net",
+  "title": "Andrew Case (@attrc)",
+  "description": "Full details of a remotely exploitable vulnerability in the core engine of *all* PHP versions will be released tomorrow, October 21st. If your organization has internet facing PHP applications then you need to be ready to patch the minute the update is released…",
+  "image": {
+   "src": "media/6007/preview.webp",
+   "width": 400,
+   "height": 400
+  }
+ },
+ "article": {
+  "title": "Full details of a remotely exploitable vulnerability in the core engine of *all* PHP versions will be released tomorrow, October 21st. If…",
+  "source_title": null,
+  "body": [],
+  "why": null,
+  "tags": []
+ },
+ "updated": "2026-10-24T11:00:20+00:00"
+}

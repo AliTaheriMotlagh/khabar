@@ -1,0 +1,64 @@
+{
+ "id": 5999,
+ "url": "https://t.me/dlmehr/5999",
+ "date": "2026-10-20T20:30:57+00:00",
+ "edited": true,
+ "views": "162",
+ "text": "https://fxtwitter.com/drjimfan/status/2112597587987689912?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+ "forwarded_from": null,
+ "digest": false,
+ "hash": "5446078f9967",
+ "gholam": null,
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/DrJimFan/status/2112597587987689912",
+   "domain": "x.com",
+   "author": {
+    "name": "Jim Fan",
+    "handle": "DrJimFan",
+    "avatar": "media/avatars/drjimfan.webp"
+   },
+   "text": "We built a robotics data engine with Astra-level performance at 125x lower cost. And we are open-sourcing the weights today! Introducing Flora, a suite of open models to parse the physical world and turn raw footage into rich training signals. \n\nFlora already powers our in-house data engine, labeling 200K hours of videos a day on 500 GPUs. We created it to scale the frontier for robot learning. Now you own the weights too. \n\nFlora gives you:\n\n- High-quality, timestamped captions to curate and filter human egocentric and robot data;\n- Dense progress rewards for quality control and RL post-training;\n- Rubrics scoring for real-world benchmarking\n\nTry it today, links in thread:",
+   "lang": "en",
+   "date": 1792517489,
+   "stats": {
+    "views": 117437,
+    "likes": 1661,
+    "retweets": 193,
+    "replies": 164
+   },
+   "media": [
+    {
+     "type": "video",
+     "src": "media/5999/l0-0.mp4",
+     "poster": "media/5999/l0-0-poster.webp",
+     "width": 1920,
+     "height": 1080,
+     "duration": 67.2,
+     "gif": false,
+     "remote": "https://video.twimg.com/amplify_video/2112589725337083904/vid/avc1/1280x720/DgArsymrx3Bk5q70.mp4?tag=29"
+    }
+   ],
+   "links": []
+  }
+ ],
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/drjimfan/status/2112597587987689912?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+  "site": "🧵 Thread • FxTwitter",
+  "title": "Jim Fan (@DrJimFan)",
+  "description": "We built a robotics data engine with Astra-level performance at 125x lower cost. And we are open-sourcing the weights today! Introducing Flora, a suite of open models to parse the physical world and turn raw footage into rich training signals.\nFlora already…",
+  "image": null
+ },
+ "article": {
+  "title": "We built a robotics data engine with Astra-level performance at 125x lower cost. And we are open-sourcing the weights today! Introducing…",
+  "source_title": null,
+  "body": [],
+  "why": null,
+  "tags": [
+   "رباتیک"
+  ]
+ },
+ "updated": "2026-10-24T11:00:27+00:00"
+}

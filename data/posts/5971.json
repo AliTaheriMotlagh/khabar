@@ -1,0 +1,80 @@
+{
+ "id": 5971,
+ "url": "https://t.me/dlmehr/5971",
+ "date": "2026-10-19T16:34:56+00:00",
+ "edited": true,
+ "views": "201",
+ "text": "https://fxtwitter.com/simon_mo_/status/2111943186218430760?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+ "forwarded_from": null,
+ "digest": false,
+ "hash": "2035ebf12e4d",
+ "gholam": null,
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/simon_mo_/status/2111943186218430760",
+   "domain": "x.com",
+   "author": {
+    "name": "Simon Mo",
+    "handle": "simon_mo_",
+    "avatar": "media/avatars/simon_mo_.webp"
+   },
+   "text": "A story in 3 acts, last 3 days: AMD, NVIDIA, Google all contribute significant improvement to  @vllm_project, measured with @SemiAnalysis_ standard benchmark on K3. Great work from @inferact team shepherding and leading many of the optimizations!!!",
+   "lang": "en",
+   "date": 1792361468,
+   "stats": {
+    "views": 9776,
+    "likes": 91,
+    "retweets": 14,
+    "replies": 4
+   },
+   "media": [
+    {
+     "type": "image",
+     "src": "media/5971/l0-0.webp",
+     "width": 1400,
+     "height": 1050,
+     "remote": "https://pbs.twimg.com/media/HU8fkAIbQAADK9C.jpg?name=orig"
+    },
+    {
+     "type": "image",
+     "src": "media/5971/l0-1.webp",
+     "width": 1200,
+     "height": 997,
+     "remote": "https://pbs.twimg.com/media/HU8fliCbwAAwYLx.jpg?name=orig"
+    },
+    {
+     "type": "image",
+     "src": "media/5971/l0-2.webp",
+     "width": 1200,
+     "height": 1038,
+     "remote": "https://pbs.twimg.com/media/HU8foBmaEAADTKU.jpg?name=orig"
+    }
+   ],
+   "links": []
+  }
+ ],
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/simon_mo_/status/2111943186218430760?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+  "site": "FxTwitter",
+  "title": "Simon Mo (@simon_mo_)",
+  "description": "A story in 3 acts, last 3 days: AMD, NVIDIA, Google all contribute significant improvement to @vllm_project, measured with @SemiAnalysis_ standard benchmark on K3. Great work from @inferact team shepherding and leading many of the optimizations!!!",
+  "image": {
+   "src": "media/5971/preview.webp",
+   "width": 680,
+   "height": 800
+  }
+ },
+ "article": {
+  "title": "A story in 3 acts, last 3 days: AMD, NVIDIA, Google all contribute significant improvement to @vllm_project, measured with @SemiAnalysis_…",
+  "source_title": null,
+  "body": [],
+  "why": null,
+  "tags": [
+   "گوگل",
+   "انویدیا"
+  ]
+ },
+ "updated": "2026-10-24T11:00:50+00:00"
+}

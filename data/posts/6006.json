@@ -1,0 +1,65 @@
+{
+ "id": 6006,
+ "url": "https://t.me/dlmehr/6006",
+ "date": "2026-10-20T23:24:20+00:00",
+ "edited": true,
+ "views": "188",
+ "text": "https://fxtwitter.com/alexgdimakis/status/2112679405080514843?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+ "forwarded_from": null,
+ "digest": false,
+ "hash": "654849c19701",
+ "gholam": null,
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/AlexGDimakis/status/2112679405080514843",
+   "domain": "x.com",
+   "author": {
+    "name": "Alex Dimakis",
+    "handle": "AlexGDimakis",
+    "avatar": "media/avatars/alexgdimakis.webp"
+   },
+   "text": "We added Gemini 4 Argon to our AutoResearchExam Pareto curve. It is 2-3 times cheaper compared to the other frontier models for almost the same ML engineering performance. Congratulations to the GDM team.",
+   "lang": "en",
+   "date": 1792536996,
+   "stats": {
+    "views": 43702,
+    "likes": 349,
+    "retweets": 28,
+    "replies": 14
+   },
+   "media": [
+    {
+     "type": "image",
+     "src": "media/6006/l0-0.webp",
+     "width": 1400,
+     "height": 491,
+     "remote": "https://pbs.twimg.com/media/HVG93BGbEAAbojV.jpg?name=orig"
+    }
+   ],
+   "links": []
+  }
+ ],
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/alexgdimakis/status/2112679405080514843?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+  "site": "🧵 Thread • FxTwitter",
+  "title": "Alex Dimakis (@AlexGDimakis)",
+  "description": "We added Gemini 4 Argon to our AutoResearchExam Pareto curve. It is 2-3 times cheaper compared to the other frontier models for almost the same ML engineering performance. Congratulations to the GDM team.",
+  "image": {
+   "src": "media/6006/preview.webp",
+   "width": 800,
+   "height": 281
+  }
+ },
+ "article": {
+  "title": "We added Gemini 4 Argon to our AutoResearchExam Pareto curve. It is 2-3 times cheaper compared to the other frontier models for almost the…",
+  "source_title": null,
+  "body": [],
+  "why": null,
+  "tags": [
+   "گوگل"
+  ]
+ },
+ "updated": "2026-10-24T11:00:20+00:00"
+}

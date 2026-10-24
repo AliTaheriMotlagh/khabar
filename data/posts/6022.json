@@ -1,0 +1,65 @@
+{
+ "id": 6022,
+ "url": "https://t.me/dlmehr/6022",
+ "date": "2026-10-21T17:05:05+00:00",
+ "edited": true,
+ "views": "150",
+ "text": "https://fxtwitter.com/bneyshabur/status/2112941025862008949?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+ "forwarded_from": null,
+ "digest": false,
+ "hash": "a278bf8dfc93",
+ "gholam": null,
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/bneyshabur/status/2112941025862008949",
+   "domain": "x.com",
+   "author": {
+    "name": "Behnam Neyshabur",
+    "handle": "bneyshabur",
+    "avatar": "media/avatars/bneyshabur.webp"
+   },
+   "text": "We formally announced Mirendil less than 4 months ago. Today, I'm excited to share an important milestone for:\n\nPretraining at scale without a pretraining team.\n\nMirendil's mission is to solve Recursive Self-Improvement (RSI) and use it to democratize frontier AI development, ultimately accelerating science and technology. At Mirendil, when we think about RSI, we think holistically about the company as an intelligent entity that self-improves toward its goal. From that perspective, the most powerful notion of acceleration is reducing the time and resources (number of human experts, compute, and other costs) needed to achieve ambitious goals.\n\nGiven that pretraining is perhaps the most important yet most challenging part of frontier AI development, we decided to run an ambitious controlled experiment: Starting fully from scratch, can we significantly reduce the time, number of human experts, and compute resources needed to go all the way to successfully pretraining a strong coding model at scale?\n\nMirendil-Base is the result of this experiment. Our first pretrained model was built by one researcher in 3.5 months, with less than $10M in compute. This includes all the research and small-scale experiments it took to get there, as well as the final training run.\n\nThe recipe holds up as the models get bigger. For reference, Mirendil-Base is in the 100B-500B parameter range, Mirendil-Base-Large in the 500B-2T range, and Mirendil-Base-XL in the 2T-10T range.\n\nWe're beginning to see a world where a single researcher, empowered by AI, can take on work that once required an entire research organization. As these systems improve, the bottleneck shifts from the size of a team to the ambition and judgment of the people directing them. This has profound implications for who gets to build AI and, ultimately, who gets to push the frontiers of science and technology forward.\n\nWe’ll share independent evaluations, post-training benchmarks and API-access sooner than you think so stay tuned!",
+   "lang": "en",
+   "date": 1792599371,
+   "stats": {
+    "views": 270971,
+    "likes": 1568,
+    "retweets": 155,
+    "replies": 168
+   },
+   "media": [
+    {
+     "type": "image",
+     "src": "media/6022/l0-0.webp",
+     "width": 1400,
+     "height": 1113,
+     "remote": "https://pbs.twimg.com/media/HVKprdaaEAAdukn.png?name=orig"
+    }
+   ],
+   "links": []
+  }
+ ],
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/bneyshabur/status/2112941025862008949?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+  "site": "🧵 Thread • FxTwitter",
+  "title": "Behnam Neyshabur (@bneyshabur)",
+  "description": "We formally announced Mirendil less than 4 months ago. Today, I'm excited to share an important milestone for:\nPretraining at scale without a pretraining team.\nMirendil's mission is to solve Recursive Self-Improvement (RSI) and use it to democratize frontier…",
+  "image": {
+   "src": "media/6022/preview.webp",
+   "width": 800,
+   "height": 636
+  }
+ },
+ "article": {
+  "title": "We formally announced Mirendil less than 4 months ago. Today, I'm excited to share an important milestone for:",
+  "source_title": null,
+  "body": [],
+  "why": null,
+  "tags": [
+   "هوش مصنوعی"
+  ]
+ },
+ "updated": "2026-10-24T11:00:06+00:00"
+}

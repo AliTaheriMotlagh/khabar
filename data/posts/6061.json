@@ -1,0 +1,75 @@
+{
+ "id": 6061,
+ "url": "https://t.me/dlmehr/6061",
+ "date": "2026-10-23T03:17:26+00:00",
+ "edited": true,
+ "views": "140",
+ "text": "https://fxtwitter.com/mattshumer_/status/2113360930876580337?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+ "forwarded_from": null,
+ "digest": false,
+ "hash": "fa358b405897",
+ "gholam": {
+  "text": "رفیق، مت شومر یه هشدار سفت‌وسخت داده و میگه فضای مجازی افتاده وسط یه شبیخون اساسی به اسم «اکتبر سیاه»؛ قضیه از این قراره که یه حفره امنیتی گنده توی PHP که پایه و اساس هفتاد درصد سایت‌های اینترنته لو رفته و لشکری از بات‌های هوش مصنوعی دارن ثانیه‌ای میلیون‌ها…",
+  "date": "2026-10-23T03:17:49+00:00"
+ },
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/mattshumer_/status/2113360930876580337",
+   "domain": "x.com",
+   "author": {
+    "name": "Matt Shumer",
+    "handle": "mattshumer_",
+    "avatar": "media/avatars/mattshumer_.webp"
+   },
+   "text": "https://x.com/i/article/2113356802205122560",
+   "lang": null,
+   "date": 1792699484,
+   "stats": {
+    "views": 1448178,
+    "likes": 4152,
+    "retweets": 913,
+    "replies": 97
+   },
+   "media": [],
+   "links": [
+    "https://x.com/i/article/2113356802205122560"
+   ],
+   "article": {
+    "title": "The Internet Is Under Attack. Here's How to Protect Yourself and Your Family. ",
+    "text": "Send this to the people in your life. Anyone who uses the internet, which is basically everyone, needs to know what's happening and what they can do to protect themselves.\n\nRight now, as you read this, swarms of AI agents are likely trying to break into the websites you use. Not one of them. Many of them.\n\nWe are in the middle of the biggest cybersecurity moment in years. Some security experts are already calling it Black October.\n\nI'm not writing this to scare you. A lot of this is out of your hands. But there are simple things you can do to protect yourself, and anything you do is better than nothing.\n\nEvery hour this week, another attack has come to light. By the time you finish reading this, there will probably be another one.\n\nSo here's what's going on, and what you should do about it.\n\nWhat's happening right now\n\nIf this is too much right now, feel free to skip straight to what to do about it. But I'd really recommend reading the whole thing.\n\nYesterday, a serious hole was revealed in PHP, the software behind roughly 70% of websites.\n\nThink of it this way: someone discovered that millions of buildings in the country have the same broken lock, and now everyone knows how to open it. The lock maker has sent out a fix, but every building owner has to install it themselves, and many haven't yet.\n\nWithin two hours of the news, attackers were trying that lock hundreds of thousands of times, according to Cloudflare's CEO. Now it's millions. Amazon says someone was already trying it four days before it was announced, and its security chief says the hole \"is now being broadly exploited in the wild.\" (That's Amazon sounding the alarm, not Amazon getting hacked.) So far, no one has confirmed a successful break-in through it, but attackers are trying everywhere. As a precaution, the organization that runs Wikipedia shut down some of its systems, and governments in the Netherlands, Finland, Germany, France and elsewhere took websites offline.\n\nThat's just one story, and it's only the tip of the iceberg. I'm sharing a few of the biggest. If I listed everything, you'd be reading for hours.\n\nA hacking group aligned with the Chinese state used an AI hacking tool to try to break into more than 2,000 organizations through a backup service IT firms rely on, Microsoft says.\n\nA cloud platform used by about two million developers said customers' secret keys may have been accessed. A friend of mine had someone draining his account with one of them this morning.\n\nIndia's largest bank said nearly 3,900 customers' personal details were exposed on the dark web.\n\nA criminal crew used AI tools to attack more than 400 banks and financial firms across Latin America.\n\nHackers broke into 16 financial firms in South Korea, including major banks.\n\nJapan's government told companies to tighten their defenses after breaches that may have exposed tens of millions of people's data.\n\nThe Stop & Shop, Hannaford and Food Lion websites and apps went down for more than a week.\n\nThe FBI, NSA and three other agencies warned that hackers using AI-written attack scripts are scouting the systems that run water, energy and manufacturing plants.\n\nGovernments saw this coming. In June, the US and its closest allies warned about AI-powered hacking: \"The timeline is not years, it is months.\" Four months later, here we are.\n\n \n\nThe original version of this post is available here.\n\n \n\nWhy this is different\n\nYou've heard about hacks for years. Here's what changed.\n\nEvery building has weak spots: a window that doesn't latch, a back door with a cheap lock. Software is the same. It's full of hidden weak spots. For decades, finding them took rare, highly skilled people, and there weren't many of them. That was our protection. Not good locks. Just a shortage of burglars.\n\nThat shortage is over. Three things just happened at once.\n\nFirst, AI can now find the weak spots. The PHP hole was found with the help of AI, and AI tools are finding thousands of bugs that sat unnoticed for years.\n\nSecond, AI can now break in on its own. No skilled hacker required. One person gave AI agents instructions shorter than a tweet, fewer than 100 Chinese characters, and let them work largely on their own. They broke into websites belonging to more than 100 companies, including John Deere, at an estimated $50 per break-in. They don’t sleep or get bored. They just keep trying until they find a way in.\n\nThird, defenders are racing to keep up. Every weak spot still has to be fixed, tested and installed, on millions of systems run by people who are already stretched thin. Even for the most serious bugs, it takes about two weeks on average just to get a fix out, and plenty of websites never get fixed at all. Security firm Cisco estimates about half of the internet-facing servers running that software are too old to get the official fix.\n\nPut those together and you get a cat-and-mouse game where the attackers only have to win once. That gap between attackers and defenders is what you're going ",
+    "image": {
+     "src": "media/6061/l0-cover.webp",
+     "width": 1200,
+     "height": 480
+    }
+   }
+  }
+ ],
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/mattshumer_/status/2113360930876580337?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+  "site": "📰 Article • FxTwitter",
+  "title": "The Internet Is Under Attack. Here's How to Protect Yourself and Your Family.",
+  "description": "Send this to the people in your life. Anyone who uses the internet, which is basically everyone, needs to know what's happening and what they can do to protect themselves. Right now, as you read this,",
+  "image": {
+   "src": "media/6061/preview.webp",
+   "width": 800,
+   "height": 320
+  }
+ },
+ "article": {
+  "title": "مت شومر یه هشدار سفت‌وسخت داده و میگه فضای مجازی افتاده وسط یه شبیخون اساسی به اسم «اکتبر سیاه»؛ قضیه از این…",
+  "source_title": "The Internet Is Under Attack. Here's How to Protect Yourself and Your Family. ",
+  "body": [
+   "رفیق، مت شومر یه هشدار سفت‌وسخت داده و میگه فضای مجازی افتاده وسط یه شبیخون اساسی به اسم «اکتبر سیاه»؛ قضیه از این قراره که یه حفره امنیتی گنده توی PHP که پایه و اساس هفتاد درصد سایت‌های اینترنته لو رفته و لشکری از بات‌های هوش مصنوعی دارن ثانیه‌ای میلیون‌ها…"
+  ],
+  "why": null,
+  "tags": [
+   "هوش مصنوعی",
+   "فضا",
+   "امنیت"
+  ]
+ },
+ "updated": "2026-10-24T10:59:35+00:00"
+}

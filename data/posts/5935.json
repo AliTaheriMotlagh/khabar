@@ -1,0 +1,79 @@
+{
+ "id": 5935,
+ "url": "https://t.me/dlmehr/5935",
+ "date": "2026-10-16T19:05:08+00:00",
+ "edited": true,
+ "views": "209",
+ "text": "https://fxtwitter.com/3blue1brown/status/2111135480116850944?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+ "forwarded_from": null,
+ "digest": false,
+ "hash": "9402d9a900a0",
+ "gholam": null,
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/3blue1brown/status/2111135480116850944",
+   "domain": "x.com",
+   "author": {
+    "name": "Grant Sanderson",
+    "handle": "3blue1brown",
+    "avatar": "media/avatars/3blue1brown.webp"
+   },
+   "text": "Some reflections on AI in math. I found it helpful to simply list out the various parts of what a mathematician does, why math is valuable, and where the funding comes from. From there, what happens if AI gets more capable?\n\nhttps://youtu.be/LKrwhjOI8Nc",
+   "lang": "en",
+   "date": 1792168896,
+   "stats": {
+    "views": 284681,
+    "likes": 2539,
+    "retweets": 303,
+    "replies": 54
+   },
+   "media": [],
+   "links": [
+    "https://youtu.be/LKrwhjOI8Nc"
+   ]
+  },
+  {
+   "kind": "youtube",
+   "url": "https://www.youtube.com/watch?v=LKrwhjOI8Nc&feature=youtu.be",
+   "domain": "youtube.com",
+   "video_id": "LKrwhjOI8Nc",
+   "title": "- YouTube",
+   "description": "Enjoy the videos and music you love, upload original content, and share it all with friends, family, and the world on YouTube.",
+   "image": {
+    "src": "media/5935/l1-og.webp",
+    "width": 480,
+    "height": 360
+   },
+   "site": "youtube.com",
+   "author": null,
+   "published": null,
+   "text": "About\nPress\nCopyright\nContact us\nCreators\nAdvertise\nDevelopers\nTerms\nPrivacy\nPolicy & Safety\nHow YouTube works\nTest new features\nNFL Sunday Ticket\n© 2026 Google LLC"
+  }
+ ],
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/3blue1brown/status/2111135480116850944?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+  "site": "FxTwitter",
+  "title": "Grant Sanderson (@3blue1brown)",
+  "description": "Some reflections on AI in math. I found it helpful to simply list out the various parts of what a mathematician does, why math is valuable, and where the funding comes from. From there, what happens if AI gets more capable?\nhttps://youtu.be/LKrwhjOI8Nc",
+  "image": {
+   "src": "media/5935/preview.webp",
+   "width": 200,
+   "height": 200
+  }
+ },
+ "article": {
+  "title": "Some reflections on AI in math. I found it helpful to simply list out the various parts of what a mathematician does, why math is valuable…",
+  "source_title": null,
+  "body": [],
+  "why": null,
+  "tags": [
+   "هوش مصنوعی",
+   "گوگل",
+   "استارتاپ",
+   "امنیت"
+  ]
+ },
+ "updated": "2026-10-24T11:01:20+00:00"
+}

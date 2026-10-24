@@ -1,0 +1,67 @@
+{
+ "id": 6015,
+ "url": "https://t.me/dlmehr/6015",
+ "date": "2026-10-21T13:58:49+00:00",
+ "edited": true,
+ "views": "143",
+ "text": "https://fxtwitter.com/kimmonismus/status/2112892835934425170?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+ "forwarded_from": null,
+ "digest": false,
+ "hash": "36b495aa9a01",
+ "gholam": null,
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/kimmonismus/status/2112892835934425170",
+   "domain": "x.com",
+   "author": {
+    "name": "Chubby♨️",
+    "handle": "kimmonismus",
+    "avatar": "media/avatars/kimmonismus.webp"
+   },
+   "text": "Hackers reportedly used Claude and Grok to automate attacks targeting over 400 banks and other financial targets in Latin America. Via the information \n\nIn one of the first documented cases of its kind, AI agents appear to have stolen data and accessed bank accounts with little human input. \n\nThis makes attacks much easier to scale, potentially overwhelming defenders. I guess this is just the beginning",
+   "lang": "en",
+   "date": 1792587882,
+   "stats": {
+    "views": 154354,
+    "likes": 927,
+    "retweets": 123,
+    "replies": 118
+   },
+   "media": [
+    {
+     "type": "image",
+     "src": "media/6015/l0-0.webp",
+     "width": 1028,
+     "height": 2048,
+     "remote": "https://pbs.twimg.com/media/HVKA1MSXgAA-wSX.jpg?name=orig"
+    }
+   ],
+   "links": []
+  }
+ ],
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/kimmonismus/status/2112892835934425170?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+  "site": "FxTwitter",
+  "title": "Chubby ♨️ (@kimmonismus)",
+  "description": "Hackers reportedly used Claude and Grok to automate attacks targeting over 400 banks and other financial targets in Latin America. Via the information\nIn one of the first documented cases of its kind, AI agents appear to have stolen data and accessed bank…",
+  "image": {
+   "src": "media/6015/preview.webp",
+   "width": 401,
+   "height": 800
+  }
+ },
+ "article": {
+  "title": "Hackers reportedly used Claude and Grok to automate attacks targeting over 400 banks and other financial targets in Latin America. Via the…",
+  "source_title": null,
+  "body": [],
+  "why": null,
+  "tags": [
+   "هوش مصنوعی",
+   "آنتروپیک",
+   "ایلان ماسک"
+  ]
+ },
+ "updated": "2026-10-24T11:00:15+00:00"
+}

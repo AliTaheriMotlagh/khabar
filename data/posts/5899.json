@@ -1,0 +1,57 @@
+{
+ "id": 5899,
+ "url": "https://t.me/dlmehr/5899",
+ "date": "2026-10-14T22:08:04+00:00",
+ "edited": true,
+ "views": "174",
+ "text": "https://fxtwitter.com/danprimack/status/2110444448937308569?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+ "forwarded_from": null,
+ "digest": false,
+ "hash": "df5c420f3652",
+ "gholam": null,
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/danprimack/status/2110444448937308569",
+   "domain": "x.com",
+   "author": {
+    "name": "Dan Primack",
+    "handle": "danprimack",
+    "avatar": "media/avatars/danprimack.webp"
+   },
+   "text": "Scooplet: a16z has laid off most of its exec recruiting team\n\nhttps://www.axios.com/2026/10/14/andreessen-horowitz-lays-off-exec-talent-team",
+   "lang": "en",
+   "date": 1792004141,
+   "stats": {
+    "views": 201859,
+    "likes": 764,
+    "retweets": 62,
+    "replies": 45
+   },
+   "media": [],
+   "links": [
+    "https://www.axios.com/2026/10/14/andreessen-horowitz-lays-off-exec-talent-team"
+   ]
+  }
+ ],
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/danprimack/status/2110444448937308569?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+  "site": "FxTwitter · axios.com",
+  "title": "Dan Primack (@danprimack)",
+  "description": "Scooplet: a16z has laid off most of its exec recruiting team\nhttps://www.axios.com/2026/10/14/andreessen-horowitz-lays-off-exec-talent-team",
+  "image": {
+   "src": "media/5899/preview.webp",
+   "width": 200,
+   "height": 200
+  }
+ },
+ "article": {
+  "title": "Scooplet: a16z has laid off most of its exec recruiting team",
+  "source_title": null,
+  "body": [],
+  "why": null,
+  "tags": []
+ },
+ "updated": "2026-10-24T11:01:47+00:00"
+}

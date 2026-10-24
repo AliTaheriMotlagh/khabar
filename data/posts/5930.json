@@ -1,0 +1,64 @@
+{
+ "id": 5930,
+ "url": "https://t.me/dlmehr/5930",
+ "date": "2026-10-16T18:19:31+00:00",
+ "edited": true,
+ "views": "192",
+ "text": "https://fxtwitter.com/drjimfan/status/2111128797181567466?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+ "forwarded_from": null,
+ "digest": false,
+ "hash": "aa40e537968c",
+ "gholam": null,
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/DrJimFan/status/2111128797181567466",
+   "domain": "x.com",
+   "author": {
+    "name": "Jim Fan",
+    "handle": "DrJimFan",
+    "avatar": "media/avatars/drjimfan.webp"
+   },
+   "text": "We are open-sourcing V1.0 of our agentic robotics framework, ASPIRE, with full real robot skill discovery and self improvement capabilities! On the day Astra arrived, our lab switched the backend model and saturated all the benchmarks to ~99% over night.\n\nAnd the frontier is already on the move:\n- Opus 5.5 slightly edges out Astra on our robot simulation bench.\n- Sonnet 5.5 hits the Pareto frontier of cost vs. robot capability, $12/task. \n\nWe first introduced ASPIRE and /robot skill library in June, way before the big models could reliably do robotics. A rising frontier tide lifts all boats, but Astra was a 0->1 tsunami on many tasks.\n\nNow you can also feel the Physical Bitter Lesson at home like we did on that fateful day ;)\n\nlinks in thread",
+   "lang": "en",
+   "date": 1792167302,
+   "stats": {
+    "views": 105641,
+    "likes": 1286,
+    "retweets": 188,
+    "replies": 178
+   },
+   "media": [
+    {
+     "type": "video",
+     "src": "media/5930/l0-0.mp4",
+     "poster": "media/5930/l0-0-poster.webp",
+     "width": 1920,
+     "height": 1080,
+     "duration": 77.76,
+     "gif": false,
+     "remote": "https://video.twimg.com/amplify_video/2111114013958672385/vid/avc1/1280x720/vIYQlStju3qw6uBc.mp4?tag=29"
+    }
+   ],
+   "links": []
+  }
+ ],
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/drjimfan/status/2111128797181567466?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+  "site": "🧵 Thread • FxTwitter",
+  "title": "Jim Fan (@DrJimFan)",
+  "description": "We are open-sourcing V1.0 of our agentic robotics framework, ASPIRE, with full real robot skill discovery and self improvement capabilities! On the day Astra arrived, our lab switched the backend model and saturated all the benchmarks to ~99% over night.…",
+  "image": null
+ },
+ "article": {
+  "title": "We are open-sourcing V1.0 of our agentic robotics framework, ASPIRE, with full real robot skill discovery and self improvement…",
+  "source_title": null,
+  "body": [],
+  "why": null,
+  "tags": [
+   "رباتیک"
+  ]
+ },
+ "updated": "2026-10-24T11:01:24+00:00"
+}

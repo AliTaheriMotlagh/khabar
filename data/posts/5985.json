@@ -1,0 +1,73 @@
+{
+ "id": 5985,
+ "url": "https://t.me/dlmehr/5985",
+ "date": "2026-10-20T02:25:26+00:00",
+ "edited": true,
+ "views": "212",
+ "text": "https://fxtwitter.com/hesamation/status/2112333656400224368?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+ "forwarded_from": null,
+ "digest": false,
+ "hash": "8ee5c56106cc",
+ "gholam": null,
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/Hesamation/status/2112333656400224368",
+   "domain": "x.com",
+   "author": {
+    "name": "ℏεsam",
+    "handle": "Hesamation",
+    "avatar": "media/avatars/hesamation.webp"
+   },
+   "text": "so Sam Altman apparently told OpenAI employees that there are possibly THREE endgames for AI safety:\n\n1. an international nuclear-style watchdog\n2. merge all major labs into a giant org\n3. one company achieves RSI and gets so powerful it can literally “melt everyone else’s GPUs.”\n\nand he called the 3rd option “terrible.”\n\ncrazy that we’re even at this point rn.",
+   "lang": "en",
+   "date": 1792454563,
+   "stats": {
+    "views": 169697,
+    "likes": 812,
+    "retweets": 57,
+    "replies": 145
+   },
+   "media": [
+    {
+     "type": "image",
+     "src": "media/5985/l0-0.webp",
+     "width": 789,
+     "height": 787,
+     "remote": "https://pbs.twimg.com/media/HVCEQ5XWkAA1fjM.jpg?name=orig"
+    },
+    {
+     "type": "image",
+     "src": "media/5985/l0-1.webp",
+     "width": 1320,
+     "height": 1668,
+     "remote": "https://pbs.twimg.com/media/HVCEQ5TW4AAwQk1.jpg?name=orig"
+    }
+   ],
+   "links": []
+  }
+ ],
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/hesamation/status/2112333656400224368?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+  "site": "🧵 Thread • FxTwitter",
+  "title": "ℏεsam (@Hesamation)",
+  "description": "so Sam Altman apparently told OpenAI employees that there are possibly THREE endgames for AI safety:\n1. an international nuclear-style watchdog\n2. merge all major labs into a giant org\n3. one company achieves RSI and gets so powerful it can literally “melt…",
+  "image": {
+   "src": "media/5985/preview.webp",
+   "width": 800,
+   "height": 442
+  }
+ },
+ "article": {
+  "title": "so Sam Altman apparently told OpenAI employees that there are possibly THREE endgames for AI safety:",
+  "source_title": null,
+  "body": [],
+  "why": null,
+  "tags": [
+   "هوش مصنوعی",
+   "اوپن‌ای‌آی"
+  ]
+ },
+ "updated": "2026-10-24T11:00:37+00:00"
+}

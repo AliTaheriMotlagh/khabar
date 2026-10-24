@@ -1,0 +1,97 @@
+{
+ "id": 6074,
+ "url": "https://t.me/dlmehr/6074",
+ "date": "2026-10-23T18:47:38+00:00",
+ "edited": true,
+ "views": "113",
+ "text": "https://fxtwitter.com/andrewcurran_/status/2113693821930479725?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+ "forwarded_from": null,
+ "digest": false,
+ "hash": "721c90db2ba3",
+ "gholam": {
+  "text": "ببین رفیق، اندرو کوران با استناد به معرفی مدل جدید Kimi K3.1 از شرکت مون‌شات، یه خبر جدی داده که نشون میده هوش مصنوعی داره به یه جهش وحشتناک توی مهارت‌های سایبری و نفوذ امنیتی می‌رسه. ماجرا از این قراره که سازنده‌های مدل وسط آموزش روی داده‌های عمومی فهمیدن…",
+  "date": "2026-10-23T18:48:00+00:00"
+ },
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/AndrewCurran_/status/2113693821930479725",
+   "domain": "x.com",
+   "author": {
+    "name": "Andrew Curran",
+    "handle": "AndrewCurran_",
+    "avatar": "media/avatars/andrewcurran_.webp"
+   },
+   "text": "Models are are now approaching a massive general jump in cyber capabilities. From the Kimi K3.1 launch post:\n\n'During development, we observed vulnerability research performance improving steadily as post-training scaled. Tracing the source of this trend, we found that cyber-related content was embedded within the general mid-training corpus, and cyber-related tasks were present in the RL environment mix — a natural byproduct of training on broad data. In preliminary experiments on internal models, we found that without data removal at either the mid-training or the RL stage, downstream cyber capability would increase substantially.'",
+   "lang": "en",
+   "date": 1792778852,
+   "stats": {
+    "views": 21993,
+    "likes": 481,
+    "retweets": 46,
+    "replies": 27
+   },
+   "media": [
+    {
+     "type": "image",
+     "src": "media/6074/l0-0.webp",
+     "width": 1080,
+     "height": 563,
+     "remote": "https://pbs.twimg.com/media/HVVZU9mbkAAENVA.jpg?name=orig"
+    }
+   ],
+   "links": [],
+   "quote": {
+    "author": {
+     "name": "Andrew Curran",
+     "handle": "AndrewCurran_",
+     "avatar": "media/avatars/andrewcurran_.webp"
+    },
+    "text": "Moonshot is intentionally throttling cyber capabilities. From the blog;\n\n'First, we aim not to release open weights that would extend the absolute frontier of cyber capability. K3.1 Pro's offensive cyber capability is, by design, below what our pipeline can produce, and remains behind that of frontier proprietary models. Second, we intend to progressively raise the cyber capability available in open weights. We believe making K3.1 Pro available in a non-discriminatory way benefits people who need dual-use capabilities for defensive purposes.'",
+    "lang": "en",
+    "date": 1792776958,
+    "stats": {
+     "views": 30842,
+     "likes": 231,
+     "retweets": 22,
+     "replies": 9
+    },
+    "media": [
+     {
+      "type": "image",
+      "src": "media/6074/l0q-0.webp",
+      "width": 1080,
+      "height": 534,
+      "remote": "https://pbs.twimg.com/media/HVVSGnRa8AAY8hf.jpg?name=orig"
+     }
+    ],
+    "links": []
+   }
+  }
+ ],
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/andrewcurran_/status/2113693821930479725?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+  "site": "🧵 Thread • FxTwitter",
+  "title": "Andrew Curran (@AndrewCurran_)",
+  "description": "Models are are now approaching a massive general jump in cyber capabilities. From the Kimi K3.1 launch post:\n'During development, we observed vulnerability research performance improving steadily as post-training scaled. Tracing the source of this trend…",
+  "image": {
+   "src": "media/6074/preview.webp",
+   "width": 800,
+   "height": 417
+  }
+ },
+ "article": {
+  "title": "اندرو کوران با استناد به معرفی مدل جدید Kimi K3.1 از شرکت مون‌شات، یه خبر جدی داده که نشون میده هوش مصنوعی…",
+  "source_title": "Models are are now approaching a massive general jump in cyber capabilities. From the Kimi K3.1 launch post:",
+  "body": [
+   "ببین رفیق، اندرو کوران با استناد به معرفی مدل جدید Kimi K3.1 از شرکت مون‌شات، یه خبر جدی داده که نشون میده هوش مصنوعی داره به یه جهش وحشتناک توی مهارت‌های سایبری و نفوذ امنیتی می‌رسه. ماجرا از این قراره که سازنده‌های مدل وسط آموزش روی داده‌های عمومی فهمیدن…"
+  ],
+  "why": null,
+  "tags": [
+   "هوش مصنوعی",
+   "امنیت"
+  ]
+ },
+ "updated": "2026-10-24T10:59:23+00:00"
+}

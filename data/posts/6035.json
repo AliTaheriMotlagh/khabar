@@ -1,0 +1,62 @@
+{
+ "id": 6035,
+ "url": "https://t.me/dlmehr/6035",
+ "date": "2026-10-21T23:33:07+00:00",
+ "edited": true,
+ "views": "155",
+ "text": "https://fxtwitter.com/flappyairplanes/status/2112955825367269788?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+ "forwarded_from": null,
+ "digest": false,
+ "hash": "2feb723f3b03",
+ "gholam": null,
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/flappyairplanes/status/2112955825367269788",
+   "domain": "x.com",
+   "author": {
+    "name": "Flapping Airplanes",
+    "handle": "flappyairplanes",
+    "avatar": "media/avatars/flappyairplanes.webp"
+   },
+   "text": "We’ve developed the world’s most complete megakernel framework. It can perform entire training runs, serve inference, play video games, and even do all three simultaneously in a single kernel.",
+   "lang": "en",
+   "date": 1792602900,
+   "stats": {
+    "views": 185548,
+    "likes": 1360,
+    "retweets": 86,
+    "replies": 39
+   },
+   "media": [
+    {
+     "type": "video",
+     "src": "media/6035/l0-0.mp4",
+     "poster": "media/6035/l0-0-poster.webp",
+     "width": 1920,
+     "height": 1080,
+     "duration": 45.571,
+     "gif": false,
+     "remote": "https://video.twimg.com/amplify_video/2112955456654295040/vid/avc1/1280x720/2GcHRgaFj77a3sqw.mp4?tag=29"
+    }
+   ],
+   "links": []
+  }
+ ],
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/flappyairplanes/status/2112955825367269788?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+  "site": "🧵 Thread • FxTwitter",
+  "title": "Flapping Airplanes (@flappyairplanes)",
+  "description": "↩\n@flappyairplanes\nWe’ve developed the world’s most complete megakernel framework. It can perform entire training runs, serve inference, play video games, and even do all three simultaneously in a single kernel.",
+  "image": null
+ },
+ "article": {
+  "title": "We’ve developed the world’s most complete megakernel framework. It can perform entire training runs, serve inference, play video games, and…",
+  "source_title": null,
+  "body": [],
+  "why": null,
+  "tags": []
+ },
+ "updated": "2026-10-24T10:59:55+00:00"
+}

@@ -1,0 +1,96 @@
+{
+ "id": 6072,
+ "url": "https://t.me/dlmehr/6072",
+ "date": "2026-10-23T18:13:57+00:00",
+ "edited": true,
+ "views": "114",
+ "text": "https://fxtwitter.com/kimmonismus/status/2113685048478077197?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+ "forwarded_from": null,
+ "digest": false,
+ "hash": "cf0af938e6ae",
+ "gholam": {
+  "text": "رفیق، این شرکت چینی مون‌شات با رونمایی از مدل «Kimi K3.1 Pro» حسابی گرد و خاک کرده و تو ۶ تا از ۱۴ تا بنچ‌مارک اصلی، شاخ غول‌های آمریکایی رو شکسته. قضیه از این قراره که این غول چندوجهی ۲.۸ تریلیون پارامتری با حافظه ۱ میلیون توکنی، تو کارای کدنویسی و ایجنت‌ها…",
+  "date": "2026-10-23T18:40:26+00:00"
+ },
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/kimmonismus/status/2113685048478077197",
+   "domain": "x.com",
+   "author": {
+    "name": "Chubby♨️",
+    "handle": "kimmonismus",
+    "avatar": "media/avatars/kimmonismus.webp"
+   },
+   "text": "Seriously, this is such an insane release, I did not expect this:\n\nKimi K3.1 Pro beats every listed US frontier model on 6 of 14 benchmarks in Moonshot’s evaluations. \n\nAt $2 per million input tokens and $10 per million output tokens, its standard token rates are 50% below Opus 5.5 ($4/$20 !!) and 80% below GPT-6 Astra ($10/$50!!)\n\nIn other words: SOTA much cheaper, local running (with enough compute)",
+   "lang": "en",
+   "date": 1792776760,
+   "stats": {
+    "views": 174421,
+    "likes": 2665,
+    "retweets": 163,
+    "replies": 123
+   },
+   "media": [
+    {
+     "type": "image",
+     "src": "media/6072/l0-0.webp",
+     "width": 1206,
+     "height": 1843,
+     "remote": "https://pbs.twimg.com/media/HVVRWPnWoAAF3rR.jpg?name=orig"
+    }
+   ],
+   "links": [],
+   "quote": {
+    "author": {
+     "name": "Chubby♨️",
+     "handle": "kimmonismus",
+     "avatar": "media/avatars/kimmonismus.webp"
+    },
+    "text": "Holy shit: Kimi k3.1 pro is on par or even outperforms Opus 5.5 and GPT-6 astra on key benchmarks!!\n\nThey just announced K3.1 Pro, a 2.8T-parameter multimodal model with a 1M-token context window that it claims rivals leading proprietary models in coding and agent tasks, with open weights promised by November 4.\n\nChina is back!!",
+    "lang": "en",
+    "date": 1792775922,
+    "stats": {
+     "views": 211475,
+     "likes": 2132,
+     "retweets": 128,
+     "replies": 117
+    },
+    "media": [
+     {
+      "type": "image",
+      "src": "media/6072/l0q-0.webp",
+      "width": 1400,
+      "height": 1903,
+      "remote": "https://pbs.twimg.com/media/HVVOJttXUAASMqc.jpg?name=orig"
+     }
+    ],
+    "links": []
+   }
+  }
+ ],
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/kimmonismus/status/2113685048478077197?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+  "site": "FxTwitter",
+  "title": "Chubby ♨️ (@kimmonismus)",
+  "description": "Seriously, this is such an insane release, I did not expect this:\nKimi K3.1 Pro beats every listed US frontier model on 6 of 14 benchmarks in Moonshot’s evaluations.\nAt $2 per million input tokens and $10 per million output tokens, its standard token rates…",
+  "image": {
+   "src": "media/6072/preview.webp",
+   "width": 524,
+   "height": 800
+  }
+ },
+ "article": {
+  "title": "این شرکت چینی مون‌شات با رونمایی از مدل «Kimi K3.1 Pro» حسابی گرد و خاک کرده و تو ۶ تا از ۱۴ تا بنچ‌مارک…",
+  "source_title": "Seriously, this is such an insane release, I did not expect this:",
+  "body": [
+   "رفیق، این شرکت چینی مون‌شات با رونمایی از مدل «Kimi K3.1 Pro» حسابی گرد و خاک کرده و تو ۶ تا از ۱۴ تا بنچ‌مارک اصلی، شاخ غول‌های آمریکایی رو شکسته. قضیه از این قراره که این غول چندوجهی ۲.۸ تریلیون پارامتری با حافظه ۱ میلیون توکنی، تو کارای کدنویسی و ایجنت‌ها…"
+  ],
+  "why": null,
+  "tags": [
+   "هوش مصنوعی"
+  ]
+ },
+ "updated": "2026-10-24T10:59:25+00:00"
+}

@@ -1,0 +1,62 @@
+{
+ "id": 5890,
+ "url": "https://t.me/dlmehr/5890",
+ "date": "2026-10-14T19:19:15+00:00",
+ "edited": true,
+ "views": "164",
+ "text": "https://fxtwitter.com/googleai/status/2110392574754107405?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+ "forwarded_from": null,
+ "digest": false,
+ "hash": "98de47c78f58",
+ "gholam": null,
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/GoogleAI/status/2110392574754107405",
+   "domain": "x.com",
+   "author": {
+    "name": "Google AI",
+    "handle": "GoogleAI",
+    "avatar": "media/avatars/googleai.webp"
+   },
+   "text": "Textbook biology, brought to life right in your browser 🌿\n\nThis interactive 5-stage visual atlas built by Argon in @antigravity turns dense textbook biology into a hands-on experience. With fluid animations and scientific precision, you can scroll from a sunlit leaf all the way down to sub-cellular chloroplasts.\n\nThe model pairs accuracy with a seamless interactive design, demonstrating how to build educational tools that can make complex science visual and effortless to explore.",
+   "lang": "en",
+   "date": 1791991773,
+   "stats": {
+    "views": 93246,
+    "likes": 1085,
+    "retweets": 131,
+    "replies": 79
+   },
+   "media": [
+    {
+     "type": "video",
+     "src": "media/5890/l0-0.mp4",
+     "poster": "media/5890/l0-0-poster.webp",
+     "width": 1920,
+     "height": 1080,
+     "duration": 32.183,
+     "gif": false,
+     "remote": "https://video.twimg.com/amplify_video/2110391762283880448/vid/avc1/1280x720/lYG4z0bc7d0mNDCk.mp4?tag=29"
+    }
+   ],
+   "links": []
+  }
+ ],
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/googleai/status/2110392574754107405?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+  "site": "FxTwitter",
+  "title": "Google AI (@GoogleAI)",
+  "description": "Textbook biology, brought to life right in your browser\n🌿\nThis interactive 5-stage visual atlas built by Argon in @antigravity turns dense textbook biology into a hands-on experience. With fluid animations and scientific precision, you can scroll from a…",
+  "image": null
+ },
+ "article": {
+  "title": "Textbook biology, brought to life right in your browser 🌿",
+  "source_title": null,
+  "body": [],
+  "why": null,
+  "tags": []
+ },
+ "updated": "2026-10-24T11:01:57+00:00"
+}

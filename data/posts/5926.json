@@ -1,0 +1,55 @@
+{
+ "id": 5926,
+ "url": "https://t.me/dlmehr/5926",
+ "date": "2026-10-16T16:36:39+00:00",
+ "edited": false,
+ "views": "256",
+ "text": "https://fxtwitter.com/opencode/status/2110986357539754114",
+ "forwarded_from": "Mehran",
+ "digest": false,
+ "hash": "ba2f8ea19c3f",
+ "gholam": null,
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/opencode/status/2110986357539754114",
+   "domain": "x.com",
+   "author": {
+    "name": "OpenCode",
+    "handle": "opencode",
+    "avatar": "media/avatars/opencode.webp"
+   },
+   "text": "GLM 5.3 Flash is now free in OpenCode",
+   "lang": "en",
+   "date": 1792133342,
+   "stats": {
+    "views": 2787603,
+    "likes": 20367,
+    "retweets": 1441,
+    "replies": 787
+   },
+   "media": [],
+   "links": []
+  }
+ ],
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/opencode/status/2110986357539754114",
+  "site": "FxTwitter",
+  "title": "OpenCode (@opencode)",
+  "description": "GLM 5.3 Flash is now free in OpenCode",
+  "image": {
+   "src": "media/5926/preview.webp",
+   "width": 200,
+   "height": 200
+  }
+ },
+ "article": {
+  "title": "GLM 5.3 Flash is now free in OpenCode",
+  "source_title": null,
+  "body": [],
+  "why": null,
+  "tags": []
+ },
+ "updated": "2026-10-24T11:01:26+00:00"
+}

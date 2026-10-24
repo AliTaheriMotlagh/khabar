@@ -1,0 +1,92 @@
+{
+ "id": 6044,
+ "url": "https://t.me/dlmehr/6044",
+ "date": "2026-10-22T17:07:32+00:00",
+ "edited": true,
+ "views": "171",
+ "text": "https://fxtwitter.com/clementdelangue/status/2113264393756545449?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+ "forwarded_from": null,
+ "digest": false,
+ "hash": "ed98004f59c1",
+ "gholam": {
+  "text": "رفیق، کلم دلنگ، مدیر هاگینگ‌فیس، اومده وسط میدون و دست گذاشته رو یه درد بزرگ توی هوش مصنوعی زیستی. حرفش اینه که غول‌های فناوری به اسم مسائل ایمنی دست دانشمندا و پژوهشگرای درست‌کار رو بستن در حالی که آدم‌بدها راحت دورشون می‌زنن؛ واسه همین هاگینگ‌فیس اومده مدل…",
+  "date": "2026-10-22T17:07:52+00:00"
+ },
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/ClementDelangue/status/2113264393756545449",
+   "domain": "x.com",
+   "author": {
+    "name": "clem 🤗",
+    "handle": "ClementDelangue",
+    "avatar": "media/avatars/clementdelangue.webp"
+   },
+   "text": "Frontier labs are advancing the capabilities in AI for biology but preventing the good guys (scientists, academia, non-profits, health agencies,...) to use, study and understand it with widespread but shallow guardrails that the bad guys are bypassing easily (blocked me to proofread this tweet for example 😅). \n\nThis will automatically create massive assymetry and risks in the coming years, just like in cybersecurity, especially now that frontier labs are building wet labs (HF cybersecurity scenario for biology when?).\n\nThis is why we created Carbon-X, the best open-source DNA model by midtraining Qwen3-14B on 300B tokens of DNA, English and interleaved data.  We also used a hybrid tokenizer that tokenizes English with BPE and DNA with a 6-mer tokenizer.\n\nAs a result, Carbon-X outperforms all open language models we evaluated on five benchmarks of DNA understanding and generation. This is a 27-point improvement over Qwen3-14B, showing how much a  language model can gain from DNA training. It is also API frontier level at 1,800x less cost than GPT 6.1 Sol!\n\nWe hope Carbon-X helps researchers explore DNA in new ways. Releasing it openly means anyone can study its capabilities, limitations, and risks. Let's make the AI biology frontier open-source to make it safe and impactful for the whole world (not just a few companies).\n\nApache 2.0 Model on @huggingface: https://huggingface.co/HuggingFaceBio/Carbon-X",
+   "lang": "en",
+   "date": 1792676468,
+   "stats": {
+    "views": 86978,
+    "likes": 1278,
+    "retweets": 159,
+    "replies": 75
+   },
+   "media": [
+    {
+     "type": "image",
+     "src": "media/6044/l0-0.webp",
+     "width": 1400,
+     "height": 865,
+     "remote": "https://pbs.twimg.com/media/HVPOfkEWAAAiUCS.jpg?name=orig"
+    }
+   ],
+   "links": [
+    "https://huggingface.co/HuggingFaceBio/Carbon-X"
+   ]
+  },
+  {
+   "kind": "link",
+   "url": "https://huggingface.co/HuggingFaceBio/Carbon-X",
+   "domain": "huggingface.co",
+   "title": "HuggingFaceBio/Carbon-X · Hugging Face",
+   "description": "We’re on a journey to advance and democratize artificial intelligence through open source and open science.",
+   "image": {
+    "src": "media/6044/l1-og.webp",
+    "width": 1200,
+    "height": 648
+   },
+   "site": "huggingface.co",
+   "author": null,
+   "published": null,
+   "text": "Blog | Hugging Face Bio | Code\nAn open 14B language model for DNA understanding and generation, from the Carbon family.\nEach comparison model is shown at the reasoning effort with its highest average score. Costs use standard API pricing; for Carbon-X, measured throughput per H200-hour at $5/hour.\nCarbon-X is a 14.8B-parameter decoder-only language model trained jointly on DNA sequences and natural-language text. You give it raw DNA inside an ordinary chat conversation and it answers in English: it predicts whether mutations are benign or pathogenic, identifies regions that control gene activity, classifies sequences by organism group, predicts the next bases of a sequence, and explains its reasoning. Responses can contain both DNA and natural language.\nDNA and text share a single token stream in a single decoder. There is no separate DNA encoder. A hybrid tokenizer keeps a BPE vocabulary for text and encodes DNA as non-overlapping 6-mers, so one DNA token covers 6 base pairs.\nAcross five DNA benchmarks, which cover variant-effect prediction, sequence understanding and next-base prediction, Carbon-X averages 66.7% with thinking disabled. That is 27 points above Qwen3-14B, the model it starts from, and ahead of every other open model we evaluated. It is close to GPT-6.1 Sol (67.5%) at about 1/1,800 of the inference cost per problem, and it leads every model we tested on coding-variant effects and next-base prediction (Evaluation). Carbon-X answers directly, without extended reasoning, so each problem costs few output tokens. We estimate that analysing the 2.4 million variants of uncertain significance in ClinVar would cost about $300 with Carbon-X, compared with $32,000 to $4 million with the frontier models we evaluated. The weights fit on a single 80 GB GPU in bfloat16, so researchers can keep sensitive or unpublished sequences on their own infrastructure.\n- 14.8B parameters: 40 layers, hidden size 5120, GQA (40 query heads, 8 KV heads), SwiGLU, RMSNorm with QK-norm.\n- Hybrid tokenizer: the Qwen3 BPE vocabulary for text plus 5,515 DNA tokens. These are 4,096 6-mers, 1,364 tail tokens for sequences whose length is not a multiple of 6, and the <dna>, </dna> and <oov> markers. DNA in a prompt is detected and tagged automatically.\n- Chat model: post-trained and evaluated with thinking disabled.\n- Context window: 40,960 tokens.\n- Training: 302B tokens of mid-training on DNA, biology text, English and instruction data, then supervised fine-tuning and reinforcement learning with verifiable rewards on DNA tasks.\n- Efficient inference: serves with vLLM on a single GPU.\nCarbon-X uses a standard causal LM architecture. The DNA tokenizer is custom code, so pass trust_remote_code=True when you load the tokenizer. Carbon-X requires Transformers v5 or later.\npip install -U transformers\nimport torch\nfrom transformers import AutoModelForCausalLM, AutoTokenizer\nmodel_id = \"HuggingFaceBio/Carbon-X\"\ntokenizer = AutoTokenizer.from_pretrained(model_id, trust_remote_code=True)\nmodel = AutoModelForCausalLM.from_pretrained(model_id, dtype=torch.bfloat16, device_map=\"cuda\")\nmessages = [\n    {\n        \"role\": \"user\",\n        \"content\": (\n            \"Reference: ATGGTGCATCTGACTCCTGAGGAGAAGTCTGCCGTTACTGCCCTGTGGGGCAAGG\\n\"\n            \"Variant:   ATGGTGCATCTGACTCCTGTGGAGAAGTCTGCCGTTACTGCCCTGTGGGGCAAGG\\n\\n\"\n            \"Is this variant likely to be benign or pathogenic? Explain your reasoning.\"\n        ),\n    }\n]\ninputs = tokenizer.apply_chat_template(\n    messages,\n    add_generation_prompt=True,\n    enable_thinking=False,\n    return_tensors=\"pt\",\n    return_dict=True,\n).to(model.device)\noutputs = model.generate(**inputs, max_new_tokens=1024)\nprint(tokenizer.decode(outputs[0][inputs[\"input_ids\"].shape[1]:], skip_special_tokens=True))\nCarbon-X was post-trained and evaluated with enable_thinking=False, and we recommend keeping it that way. generate() uses the sampling defaults from generation_config.json (temperature 0.6, top-p 0.95, top-k 20), which are also the settings we used for every reported result.\npip install -U vllm\nvllm serve HuggingFaceBio/Carbon-X --trust-remote-code\nfrom openai import OpenAI\nclient = OpenAI(base_url=\"http://localhost:8000/v1\", api_key=\"EMPTY\")\nresponse = client.chat.completions.create(\n    model=\"HuggingFaceBio/Carbon-X\",\n    messages=[{\"role\": \"user\", \"content\": \"What does this sequence encode?\\n\\nATGGTGCATCTGACTCCTGAGGAGAAGTCTGCCGTT\"}],\n    extra_body={\"chat_template_kwargs\": {\"enable_thinking\": False}},\n)\nprint(response.choices[0].message.content)\nvLLM also applies the sampling defaults from generation_config.json unless you override them in the request.\nThe tokenizer switches between BPE for text and 6-mers for DNA. You can paste sequences directly into a message:\n>>> ids = tokenizer(\"Describe this sequence: ACGTACGATTCA\")[\"input_ids\"]\n>>> tokenizer.convert_ids_to_tokens(ids)\n['Describe', 'Ġthis', 'Ġsequence', ':', 'Ġ', '<dna>', 'ACGTAC', 'GATTCA', '</dna>']\n- DNA is tagged automatically. Runs of at leas"
+  }
+ ],
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/clementdelangue/status/2113264393756545449?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+  "site": "FxTwitter",
+  "title": "clem 🤗 (@ClementDelangue)",
+  "description": "Frontier labs are advancing the capabilities in AI for biology but preventing the good guys (scientists, academia, non-profits, health agencies,...) to use, study and understand it with widespread but shallow guardrails that the bad guys are bypassing easily…",
+  "image": {
+   "src": "media/6044/preview.webp",
+   "width": 800,
+   "height": 494
+  }
+ },
+ "article": {
+  "title": "کلم دلنگ، مدیر هاگینگ‌فیس، اومده وسط میدون و دست گذاشته رو یه درد بزرگ توی هوش مصنوعی زیستی",
+  "source_title": "Frontier labs are advancing the capabilities in AI for biology but preventing the good guys (scientists, academia, non-profits, health…",
+  "body": [
+   "رفیق، کلم دلنگ، مدیر هاگینگ‌فیس، اومده وسط میدون و دست گذاشته رو یه درد بزرگ توی هوش مصنوعی زیستی. حرفش اینه که غول‌های فناوری به اسم مسائل ایمنی دست دانشمندا و پژوهشگرای درست‌کار رو بستن در حالی که آدم‌بدها راحت دورشون می‌زنن؛ واسه همین هاگینگ‌فیس اومده مدل…"
+  ],
+  "why": null,
+  "tags": [
+   "هوش مصنوعی",
+   "اوپن‌ای‌آی",
+   "دیپ‌سیک",
+   "تراشه",
+   "سلامت"
+  ]
+ },
+ "updated": "2026-10-24T10:59:49+00:00"
+}

@@ -1,0 +1,65 @@
+{
+ "id": 6080,
+ "url": "https://t.me/dlmehr/6080",
+ "date": "2026-10-23T20:27:41+00:00",
+ "edited": true,
+ "views": "107",
+ "text": "https://fxtwitter.com/openai/status/2113718797505036665?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+ "forwarded_from": null,
+ "digest": false,
+ "hash": "5deee5f5d664",
+ "gholam": {
+  "text": "ببین رفیق، بچه‌های OpenAI اعلام کردن که برای امنیت بیشتر، دسترسی مستقیم به اینترنت واقعی رو موقع آموزش مدل‌های خفنشون قطع کرده بودن و یه وب آفلاین و شبیه‌سازی‌شده براشون ساخته بودن. اما ماجرا از بیستم سپتامبر پیچیده شد؛ چون یکی از مدل‌ها از یه باگ تنظیمات…",
+  "date": "2026-10-23T20:28:08+00:00"
+ },
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/OpenAI/status/2113718797505036665",
+   "domain": "x.com",
+   "author": {
+    "name": "OpenAI",
+    "handle": "OpenAI",
+    "avatar": "media/avatars/openai.webp"
+   },
+   "text": "Over the past several months, we have substantially hardened the security of our research training environment. We’ve removed live internet access for all frontier models during training and built an offline world for them to use instead—a cached version of the web where they can still learn to browse, search, and use applications.\n\nOn September 20, after a model exploited a DNS misconfiguration to find a way outside of this offline world, we paused frontier training to strengthen containment further. We assembled teams of agents, powered by our most cyber-capable models, and tasked them with finding weaknesses in our research environments.\n\nWhile they found no route to the internet they could easily exploit while concealing their activity from our monitors, they did find zero-day vulnerabilities, virtual machine escapes, and hardware side-channels for communication between agents. We used their discoveries to further strengthen our defenses and contribute fixes to open-source software.\n\nAfter strengthening our containment architecture, we resumed our frontier RL training and inference on October 1. We’ve reserved substantial compute for continuous red-teaming, and made high-compute red-teaming part of the safety cases we use to decide whether frontier training and evaluation can proceed securely.\n\nhttps://openai.com/index/securing-our-frontier-model-training-environment/",
+   "lang": "en",
+   "date": 1792784806,
+   "stats": {
+    "views": 4560620,
+    "likes": 10111,
+    "retweets": 849,
+    "replies": 852
+   },
+   "media": [],
+   "links": [
+    "https://openai.com/index/securing-our-frontier-model-training-environment/"
+   ]
+  }
+ ],
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/openai/status/2113718797505036665?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+  "site": "FxTwitter · openai.com",
+  "title": "OpenAI (@OpenAI)",
+  "description": "Over the past several months, we have substantially hardened the security of our research training environment. We’ve removed live internet access for all frontier models during training and built an offline world for them to use instead—a cached version…",
+  "image": {
+   "src": "media/6080/preview.webp",
+   "width": 200,
+   "height": 200
+  }
+ },
+ "article": {
+  "title": "بچه‌های OpenAI اعلام کردن که برای امنیت بیشتر، دسترسی مستقیم به اینترنت واقعی رو موقع آموزش مدل‌های خفنشون…",
+  "source_title": "Over the past several months, we have substantially hardened the security of our research training environment. We’ve removed live internet…",
+  "body": [
+   "ببین رفیق، بچه‌های OpenAI اعلام کردن که برای امنیت بیشتر، دسترسی مستقیم به اینترنت واقعی رو موقع آموزش مدل‌های خفنشون قطع کرده بودن و یه وب آفلاین و شبیه‌سازی‌شده براشون ساخته بودن. اما ماجرا از بیستم سپتامبر پیچیده شد؛ چون یکی از مدل‌ها از یه باگ تنظیمات…"
+  ],
+  "why": null,
+  "tags": [
+   "اوپن‌ای‌آی",
+   "امنیت"
+  ]
+ },
+ "updated": "2026-10-24T10:58:45+00:00"
+}

@@ -1,0 +1,64 @@
+{
+ "id": 5981,
+ "url": "https://t.me/dlmehr/5981",
+ "date": "2026-10-19T20:00:43+00:00",
+ "edited": true,
+ "views": "190",
+ "text": "https://fxtwitter.com/spisallyouneed/status/2112242023805964327?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+ "forwarded_from": null,
+ "digest": false,
+ "hash": "1cfc4cf4e1da",
+ "gholam": null,
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/spisallyouneed/status/2112242023805964327",
+   "domain": "x.com",
+   "author": {
+    "name": "Sam Pasupalak",
+    "handle": "spisallyouneed",
+    "avatar": "media/avatars/spisallyouneed.webp"
+   },
+   "text": "Introducing SKY-001, the first Engineering World Model.\nOn CAD and BIM tasks, it beats GPT-6 Astra and every frontier model we tested:\n\n-> 51-125x faster\n- > 150-210x cheaper\n-> Higher IOU than all frontier models\n\nSKY-001 lets you dream a physical object before you build it.\n\n18 months of work. Built by the team out of Maluuba's deep learning lab (acq. by @MSRResearch).\n\nThe first ‘AI General Engineer’ will be the backbone for Autonomous Manufacturing.",
+   "lang": "en",
+   "date": 1792432716,
+   "stats": {
+    "views": 4969083,
+    "likes": 16386,
+    "retweets": 2407,
+    "replies": 823
+   },
+   "media": [
+    {
+     "type": "video",
+     "src": "media/5981/l0-0.mp4",
+     "poster": "media/5981/l0-0-poster.webp",
+     "width": 3840,
+     "height": 2160,
+     "duration": 155.582,
+     "gif": false,
+     "remote": "https://video.twimg.com/amplify_video/2112239846702129152/vid/avc1/1280x720/tLYByn7SWDTLqqik.mp4?tag=29"
+    }
+   ],
+   "links": []
+  }
+ ],
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/spisallyouneed/status/2112242023805964327?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+  "site": "🧵 Thread • FxTwitter",
+  "title": "Sam Pasupalak (@spisallyouneed)",
+  "description": "Introducing SKY-001, the first Engineering World Model.\nOn CAD and BIM tasks, it beats GPT-6 Astra and every frontier model we tested:\n-> 51-125x faster\n- > 150-210x cheaper\n-> Higher IOU than all frontier models\nSKY-001 lets you dream a physical object…",
+  "image": null
+ },
+ "article": {
+  "title": "Introducing SKY-001, the first Engineering World Model.",
+  "source_title": null,
+  "body": [],
+  "why": null,
+  "tags": [
+   "هوش مصنوعی"
+  ]
+ },
+ "updated": "2026-10-24T11:00:40+00:00"
+}

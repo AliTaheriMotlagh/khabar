@@ -1,0 +1,76 @@
+{
+ "id": 5928,
+ "url": "https://t.me/dlmehr/5928",
+ "date": "2026-10-16T17:51:24+00:00",
+ "edited": true,
+ "views": "209",
+ "text": "https://fxtwitter.com/anthropicai/status/2111152183240511640?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+ "forwarded_from": null,
+ "digest": false,
+ "hash": "a75757b86e6d",
+ "gholam": null,
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/AnthropicAI/status/2111152183240511640",
+   "domain": "x.com",
+   "author": {
+    "name": "Anthropic",
+    "handle": "AnthropicAI",
+    "avatar": "media/avatars/anthropicai.webp"
+   },
+   "text": "New from our STEM Fellows Program: Designing more efficient quantum circuits with Claude.\n\nGiven plain-language instructions, Claude Mythos 5 designed quantum circuits that improve on the best published ones, sometimes by an order of magnitude or more.\n\nMore efficient circuits reduce the resources needed by quantum algorithms, which could bring quantum computing applications in chemistry and materials science within reach sooner.\n\nRead more: https://www.anthropic.com/research/designing-efficient-quantum-circuits",
+   "lang": "en",
+   "date": 1792172878,
+   "stats": {
+    "views": 917396,
+    "likes": 5501,
+    "retweets": 617,
+    "replies": 483
+   },
+   "media": [],
+   "links": [
+    "https://www.anthropic.com/research/designing-efficient-quantum-circuits"
+   ]
+  },
+  {
+   "kind": "link",
+   "url": "https://www.anthropic.com/research/designing-efficient-quantum-circuits",
+   "domain": "anthropic.com",
+   "title": "Designing more efficient quantum circuits with Claude",
+   "description": "Working largely on its own, Claude designed quantum circuits that improve on the best published versions, in some cases by an order of magnitude or more.",
+   "image": {
+    "src": "media/5928/l1-og.webp",
+    "width": 1400,
+    "height": 788
+   },
+   "site": "anthropic.com",
+   "author": null,
+   "published": "2026-10-16T00:00:00.000Z",
+   "text": "Unlike classical computers, which store information in bits whose value is either 0 or 1, quantum computers store information in qubits, which can be built from single atoms, superconducting circuits, or particles of light. These qubits make use of quantum phenomena such as superposition—which allows a quantum system to exist in a combination of states at once—in order to process information in ways that could make certain problems in fields like chemistry, materials science, and number theory tractable, even when they are too hard for traditional computers.\nThe quantum computers the field has built to date only have hundreds to thousands of qubits—too few to run many of the algorithms that promise practical advantages over classical computers. And these qubits are highly sensitive to environmental noise, such as heat, vibration, and even cosmic rays. A tiny disturbance can nudge a qubit’s state, and these small errors pile up until the computer gives the wrong answer.\nGiven that both qubits and computing time are scarce resources, researchers have been working to redesign quantum algorithms to use fewer qubits and complete computations in less time. An illustrative example is simulating FeMoco, the iron–sulfur cluster at the heart of nitrogenase, the enzyme that bacteria use to turn nitrogen from the air into ammonia. Understanding how it works could help scientists design better industrial catalysts—the substances manufacturers use to speed up chemical reactions.\nIn 2017, researchers estimated that a quantum computer would need about 50 trillion Toffoli gates to compute FeMoco’s ground-state energy—the energy of its most stable configuration, which chemists need in order to predict how FeMoco reacts. (Similar to ordinary computers, quantum computers work by applying a long sequence of simple operations, called gates, to their qubits. The Toffoli gate is one of the most expensive gates to run, so counting Toffoli gates is a standard way to estimate how long a computation will take.)\nThrough a series of algorithmic advances, the estimated number of gates has come down to about 340 million—a roughly 150,000-fold reduction, corresponding to a few hours of computation on a future machine with about three million physical qubits.1\nThese reductions largely came from redesigning the circuits that carry out the computation, rather than from making better hardware. Claude has proven particularly adept at optimizing classical algorithms, so we wanted to see whether it could do the same for quantum algorithms if it were given only a plain-language description of what each circuit must compute.\nClaude is unusually well suited to this task, for several reasons. First, quantum algorithms are implemented as quantum circuits. These are composed of sequences of gates, like the Toffoli gates mentioned above. Importantly, these circuits can be described in code, so we can make use of Claude’s coding capabilities to write, run, and revise circuit designs as ordinary programs. Second, the (fairly common) class of quantum algorithms we were most interested in optimizing can be tested efficiently for correctness, as each input gives one definite output that an ordinary computer can check. This means we could have an external evaluator program validate Claude’s proposals. Finally, we can give Claude a clear, objective score to improve: the number of qubits used, multiplied by the number of gates, which serves as a proxy for how long the circuit would take to run.\nWe found that Claude Mythos 5 could successfully work in a closed loop, proposing a circuit design, receiving feedback and a score from the evaluator program, and using that feedback to improve its next attempt, with no human input between rounds (see Figure 1). Across eight computational primitives—the basic routines that larger quantum algorithms are built from—for chemistry, optimization, quantum simulation, number theory, and numerical computing, Claude discovered novel designs that used both fewer qubits and fewer gates than the best previously published algorithms (Figure 2).\nIn each case, the improvement resulted from uncovering new structural and mathematical insights about the problem, rather than from fine-tuning existing designs. For example, when compiling a circuit for simulating an iron-sulfide molecule, Claude noticed that the molecule’s symmetries and repeating structure meant that some results could be calculated once and reused, rather than recomputed for every part of the system. In other cases, it found that existing circuits included costly components that were needed to handle only extremely rare inputs, and it redesigned them without those components.\nBelow, we describe two of Claude’s discoveries. The first is a new way to perform modular inversion, a bit of arithmetic that is the most expensive step in elliptic-curve calculations. The second makes the costliest step of a leading quantum optimization algorithm about 12x cheaper.\nThese results sugg"
+  }
+ ],
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/anthropicai/status/2111152183240511640?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+  "site": "FxTwitter · anthropic.com",
+  "title": "Anthropic (@AnthropicAI)",
+  "description": "New from our STEM Fellows Program: Designing more efficient quantum circuits with Claude.\nGiven plain-language instructions, Claude Mythos 5 designed quantum circuits that improve on the best published ones, sometimes by an order of magnitude or more.\nMore…",
+  "image": {
+   "src": "media/5928/preview.webp",
+   "width": 200,
+   "height": 200
+  }
+ },
+ "article": {
+  "title": "New from our STEM Fellows Program: Designing more efficient quantum circuits with Claude.",
+  "source_title": null,
+  "body": [],
+  "why": null,
+  "tags": [
+   "آنتروپیک",
+   "کوانتوم"
+  ]
+ },
+ "updated": "2026-10-24T11:01:25+00:00"
+}

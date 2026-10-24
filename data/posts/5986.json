@@ -1,0 +1,62 @@
+{
+ "id": 5986,
+ "url": "https://t.me/dlmehr/5986",
+ "date": "2026-10-20T03:37:35+00:00",
+ "edited": true,
+ "views": "186",
+ "text": "https://fxtwitter.com/togethercompute/status/2112241595273621857?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+ "forwarded_from": null,
+ "digest": false,
+ "hash": "9c17e6b939f5",
+ "gholam": null,
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/togethercompute/status/2112241595273621857",
+   "domain": "x.com",
+   "author": {
+    "name": "Together AI",
+    "handle": "togethercompute",
+    "avatar": "media/avatars/togethercompute.webp"
+   },
+   "text": "Together Post-Training is live\n\nTurn open models into custom models you own, with SFT or RL.\n\nYou define the data, rewards, environments and the training loop itself. We run the hard infrastructure underneath it, tuned for quality and speed.",
+   "lang": "en",
+   "date": 1792432614,
+   "stats": {
+    "views": 35307,
+    "likes": 175,
+    "retweets": 27,
+    "replies": 25
+   },
+   "media": [
+    {
+     "type": "video",
+     "src": "media/5986/l0-0.mp4",
+     "poster": "media/5986/l0-0-poster.webp",
+     "width": 3840,
+     "height": 2160,
+     "duration": 94.966,
+     "gif": false,
+     "remote": "https://video.twimg.com/amplify_video/2112236345791844352/vid/avc1/1280x720/iSAaVGT737Ui5-J8.mp4?tag=29"
+    }
+   ],
+   "links": []
+  }
+ ],
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/togethercompute/status/2112241595273621857?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+  "site": "🧵 Thread • FxTwitter",
+  "title": "Together AI (@togethercompute)",
+  "description": "Together Post-Training is live\nTurn open models into custom models you own, with SFT or RL.\nYou define the data, rewards, environments and the training loop itself. We run the hard infrastructure underneath it, tuned for quality and speed.",
+  "image": null
+ },
+ "article": {
+  "title": "Together Post-Training is live",
+  "source_title": null,
+  "body": [],
+  "why": null,
+  "tags": []
+ },
+ "updated": "2026-10-24T11:00:36+00:00"
+}

@@ -1,0 +1,73 @@
+{
+ "id": 5944,
+ "url": "https://t.me/dlmehr/5944",
+ "date": "2026-10-17T13:59:44+00:00",
+ "edited": true,
+ "views": "231",
+ "text": "https://fxtwitter.com/deepseek_ai/status/2111375640717033777?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+ "forwarded_from": null,
+ "digest": false,
+ "hash": "86016166b354",
+ "gholam": null,
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/deepseek_ai/status/2111375640717033777",
+   "domain": "x.com",
+   "author": {
+    "name": "DeepSeek",
+    "handle": "deepseek_ai",
+    "avatar": "media/avatars/deepseek_ai.webp"
+   },
+   "text": "🚀 DeepSeek-V4.1-Flash-1017 is here!\n\nStronger benchmark performance, faster task completion, and shorter outputs than the previous version—a Pareto improvement in performance and cost. Now live on our website, app, and API.\n\n🛠️ Optimized for @DeepSeekHarness, Tencent CodeBuddy, WorkBuddy, and more. Upgrade to DeepSeek Harness v0.2.1-rc.1 or later for the best experience with the new model.\n\n1/4",
+   "lang": "en",
+   "date": 1792226154,
+   "stats": {
+    "views": 7990253,
+    "likes": 37110,
+    "retweets": 4131,
+    "replies": 1623
+   },
+   "media": [
+    {
+     "type": "image",
+     "src": "media/5944/l0-0.webp",
+     "width": 1052,
+     "height": 889,
+     "remote": "https://pbs.twimg.com/media/HU0b65KbsAAypqr.jpg?name=orig"
+    },
+    {
+     "type": "image",
+     "src": "media/5944/l0-1.webp",
+     "width": 1400,
+     "height": 1206,
+     "remote": "https://pbs.twimg.com/media/HU0b7UfbwAAGXNH.jpg?name=orig"
+    }
+   ],
+   "links": []
+  }
+ ],
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/deepseek_ai/status/2111375640717033777?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+  "site": "🧵 Thread • FxTwitter",
+  "title": "DeepSeek (@deepseek_ai)",
+  "description": "🚀\nDeepSeek-V4.1-Flash-1017 is here!\nStronger benchmark performance, faster task completion, and shorter outputs than the previous version—a Pareto improvement in performance and cost. Now live on our website, app, and API.\n🛠️\nOptimized for @DeepSeekHarness…",
+  "image": {
+   "src": "media/5944/preview.webp",
+   "width": 466,
+   "height": 800
+  }
+ },
+ "article": {
+  "title": "🚀 DeepSeek-V4.1-Flash-1017 is here!",
+  "source_title": null,
+  "body": [],
+  "why": null,
+  "tags": [
+   "هوش مصنوعی",
+   "دیپ‌سیک"
+  ]
+ },
+ "updated": "2026-10-24T11:01:07+00:00"
+}

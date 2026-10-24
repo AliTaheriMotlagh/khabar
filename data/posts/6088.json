@@ -1,0 +1,67 @@
+{
+ "id": 6088,
+ "url": "https://t.me/dlmehr/6088",
+ "date": "2026-10-24T03:43:20+00:00",
+ "edited": true,
+ "views": "103",
+ "text": "https://fxtwitter.com/jon_barron/status/2113707875290042665?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+ "forwarded_from": null,
+ "digest": false,
+ "hash": "393c217e90ac",
+ "gholam": {
+  "text": "ببین رفیق، جان بارون یه خبر خفن داده و رو کرده که تمام پیاده‌سازی‌های فعلیِ توابع حیاتی سافت‌مکس و کراس‌انتروپی توی پای‌تورچ، جکس و حتی کتاب‌های مرجع، دو تا باگ ظریف و نامحسوس دارن. طرف می‌گه با یه بازنویسیِ خیلی ساده و جمع‌وجور می‌شه هر دو تا اشکال رو قشنگ…",
+  "date": "2026-10-24T03:43:38+00:00"
+ },
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/jon_barron/status/2113707875290042665",
+   "domain": "x.com",
+   "author": {
+    "name": "Jon Barron",
+    "handle": "jon_barron",
+    "avatar": "media/avatars/jon_barron.webp"
+   },
+   "text": "Hi all, I have a new result I'm excited to share. It turns out that *all existing implementations* of softmax and cross-entropy (that's JAX, PyTorch, textbooks, etc) have a subtle bug --- two bugs, actually. A simple rewrite fixes both, and eliminates \"slingshots\" when grokking:",
+   "lang": "en",
+   "date": 1792782202,
+   "stats": {
+    "views": 326916,
+    "likes": 4123,
+    "retweets": 460,
+    "replies": 90
+   },
+   "media": [
+    {
+     "type": "video",
+     "src": "media/6088/l0-0.mp4",
+     "poster": "media/6088/l0-0-poster.webp",
+     "width": 512,
+     "height": 512,
+     "duration": 6.866,
+     "gif": false,
+     "remote": "https://video.twimg.com/amplify_video/2113698124351074304/vid/avc1/512x512/MvQolaTrNJczfLpu.mp4?tag=29"
+    }
+   ],
+   "links": []
+  }
+ ],
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/jon_barron/status/2113707875290042665?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+  "site": "🧵 Thread • FxTwitter",
+  "title": "Jon Barron (@jon_barron)",
+  "description": "Hi all, I have a new result I'm excited to share. It turns out that *all existing implementations* of softmax and cross-entropy (that's JAX, PyTorch, textbooks, etc) have a subtle bug --- two bugs, actually. A simple rewrite fixes both, and eliminates \"slingshots\"…",
+  "image": null
+ },
+ "article": {
+  "title": "جان بارون یه خبر خفن داده و رو کرده که تمام پیاده‌سازی‌های فعلیِ توابع حیاتی سافت‌مکس و کراس‌انتروپی توی…",
+  "source_title": "Hi all, I have a new result I'm excited to share. It turns out that *all existing implementations* of softmax and cross-entropy (that's…",
+  "body": [
+   "ببین رفیق، جان بارون یه خبر خفن داده و رو کرده که تمام پیاده‌سازی‌های فعلیِ توابع حیاتی سافت‌مکس و کراس‌انتروپی توی پای‌تورچ، جکس و حتی کتاب‌های مرجع، دو تا باگ ظریف و نامحسوس دارن. طرف می‌گه با یه بازنویسیِ خیلی ساده و جمع‌وجور می‌شه هر دو تا اشکال رو قشنگ…"
+  ],
+  "why": null,
+  "tags": []
+ },
+ "updated": "2026-10-24T10:58:38+00:00"
+}

@@ -1,0 +1,107 @@
+{
+ "id": 5963,
+ "url": "https://t.me/dlmehr/5963",
+ "date": "2026-10-18T19:43:56+00:00",
+ "edited": true,
+ "views": "217",
+ "text": "https://fxtwitter.com/arena/status/2111894091168682086?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+ "forwarded_from": null,
+ "digest": false,
+ "hash": "eb74b373fc54",
+ "gholam": null,
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/arena/status/2111894091168682086",
+   "domain": "x.com",
+   "author": {
+    "name": "Arena.ai",
+    "handle": "arena",
+    "avatar": "media/avatars/arena.webp"
+   },
+   "text": "Exciting news: DeepSeek-V4.1-Flash-20261017 (Max) by @deepseek_ai is now the #1 open model in Code Arena: WebDev, surpassing Kimi K3 (Max) at 10x lower cost!\n\nHighlights:\n- #1 open model, ahead of Kimi K3 (Max)\n- #12 overall with 1670 pts, ahead of Claude Opus 5 (High) and within ~10 pts of GPT-6 Sol (Max)\n- Shifts the Pareto frontier at $0.3/$1.2 per million input/output tokens\n- +52 pts vs. the previous DeepSeek-V4.1-Flash-20260910\n\nCongrats to the @deepseek_ai team on another strong contribution to the open source ecosystem!",
+   "lang": "en",
+   "date": 1792349763,
+   "stats": {
+    "views": 281828,
+    "likes": 2474,
+    "retweets": 191,
+    "replies": 110
+   },
+   "media": [
+    {
+     "type": "image",
+     "src": "media/5963/l0-0.webp",
+     "width": 1400,
+     "height": 1400,
+     "remote": "https://pbs.twimg.com/media/HU7z9aubIAAen5a.jpg?name=orig"
+    },
+    {
+     "type": "image",
+     "src": "media/5963/l0-1.webp",
+     "width": 1385,
+     "height": 1136,
+     "remote": "https://pbs.twimg.com/media/HU7z9_FbUAA4j2r.jpg?name=orig"
+    }
+   ],
+   "links": [],
+   "quote": {
+    "author": {
+     "name": "DeepSeek",
+     "handle": "deepseek_ai",
+     "avatar": "media/avatars/deepseek_ai.webp"
+    },
+    "text": "🚀 DeepSeek-V4.1-Flash-1017 is here!\n\nStronger benchmark performance, faster task completion, and shorter outputs than the previous version—a Pareto improvement in performance and cost. Now live on our website, app, and API.\n\n🛠️ Optimized for @DeepSeekHarness, Tencent CodeBuddy, WorkBuddy, and more. Upgrade to DeepSeek Harness v0.2.1-rc.1 or later for the best experience with the new model.\n\n1/4",
+    "lang": "en",
+    "date": 1792226154,
+    "stats": {
+     "views": 7990253,
+     "likes": 37110,
+     "retweets": 4131,
+     "replies": 1623
+    },
+    "media": [
+     {
+      "type": "image",
+      "src": "media/5963/l0q-0.webp",
+      "width": 1052,
+      "height": 889,
+      "remote": "https://pbs.twimg.com/media/HU0b65KbsAAypqr.jpg?name=orig"
+     },
+     {
+      "type": "image",
+      "src": "media/5963/l0q-1.webp",
+      "width": 1400,
+      "height": 1206,
+      "remote": "https://pbs.twimg.com/media/HU0b7UfbwAAGXNH.jpg?name=orig"
+     }
+    ],
+    "links": []
+   }
+  }
+ ],
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/arena/status/2111894091168682086?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+  "site": "🧵 Thread • FxTwitter",
+  "title": "Arena.ai (@arena)",
+  "description": "Exciting news: DeepSeek-V4.1-Flash-20261017 (Max) by @deepseek_ai is now the #1 open model in Code Arena: WebDev, surpassing Kimi K3 (Max) at 10x lower cost!\nHighlights:\n- #1 open model, ahead of Kimi K3 (Max)\n- #12 overall with 1670 pts, ahead of Claude…",
+  "image": {
+   "src": "media/5963/preview.webp",
+   "width": 438,
+   "height": 800
+  }
+ },
+ "article": {
+  "title": "Exciting news: DeepSeek-V4.1-Flash-20261017 (Max) by @deepseek_ai is now the #1 open model in Code Arena: WebDev, surpassing Kimi K3 (Max)…",
+  "source_title": null,
+  "body": [],
+  "why": null,
+  "tags": [
+   "هوش مصنوعی",
+   "آنتروپیک",
+   "دیپ‌سیک"
+  ]
+ },
+ "updated": "2026-10-24T11:00:57+00:00"
+}

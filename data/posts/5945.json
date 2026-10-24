@@ -1,0 +1,94 @@
+{
+ "id": 5945,
+ "url": "https://t.me/dlmehr/5945",
+ "date": "2026-10-17T14:00:01+00:00",
+ "edited": false,
+ "views": "262",
+ "text": "https://fxtwitter.com/kimmonismus/status/2111374692028158023",
+ "forwarded_from": "Mahdi abedi",
+ "digest": false,
+ "hash": "db55544b54d3",
+ "gholam": null,
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/kimmonismus/status/2111374692028158023",
+   "domain": "x.com",
+   "author": {
+    "name": "Chubby♨️",
+    "handle": "kimmonismus",
+    "avatar": "media/avatars/kimmonismus.webp"
+   },
+   "text": "Holy, DeepSeek 4.1-1017 is roughly on par with Opus 5, significant jump compared to DeepSeek 4.1 Flash regular.\n\nIt outperforms GLM5.3 across the board and even GPT-5.6 Sol!\n\nBuy 2 DGX spark and run this baby locally. China is back!",
+   "lang": "en",
+   "date": 1792225928,
+   "stats": {
+    "views": 123686,
+    "likes": 3087,
+    "retweets": 161,
+    "replies": 172
+   },
+   "media": [
+    {
+     "type": "image",
+     "src": "media/5945/l0-0.webp",
+     "width": 680,
+     "height": 506,
+     "remote": "https://pbs.twimg.com/media/HU0cF0KXMAA456H.jpg?name=orig"
+    }
+   ],
+   "links": [],
+   "quote": {
+    "author": {
+     "name": "imjustnewatai",
+     "handle": "imjustnewatai",
+     "avatar": "media/avatars/imjustnewatai.webp"
+    },
+    "text": "Deepseek just released a new 4.1 version\n\nOn par with opus 5\n\nhttps://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash-1017",
+    "lang": "en",
+    "date": 1792225800,
+    "stats": {
+     "views": 121414,
+     "likes": 199,
+     "retweets": 16,
+     "replies": 12
+    },
+    "media": [
+     {
+      "type": "image",
+      "src": "media/5945/l0q-0.webp",
+      "width": 680,
+      "height": 506,
+      "remote": "https://pbs.twimg.com/media/HU0bmmzXIAA8l16.jpg?name=orig"
+     }
+    ],
+    "links": [
+     "https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash-1017"
+    ]
+   }
+  }
+ ],
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/kimmonismus/status/2111374692028158023",
+  "site": "FxTwitter",
+  "title": "Chubby ♨️ (@kimmonismus)",
+  "description": "Holy, DeepSeek 4.1-1017 is roughly on par with Opus 5, significant jump compared to DeepSeek 4.1 Flash regular.\nIt outperforms GLM5.3 across the board and even GPT-5.6 Sol!\nBuy 2 DGX spark and run this baby locally. China is back!\nQuoting imjustnewatai…",
+  "image": {
+   "src": "media/5945/preview.webp",
+   "width": 680,
+   "height": 506
+  }
+ },
+ "article": {
+  "title": "Holy, DeepSeek 4.1-1017 is roughly on par with Opus 5, significant jump compared to DeepSeek 4.1 Flash regular.",
+  "source_title": null,
+  "body": [],
+  "why": null,
+  "tags": [
+   "هوش مصنوعی",
+   "دیپ‌سیک"
+  ]
+ },
+ "updated": "2026-10-24T11:01:06+00:00"
+}

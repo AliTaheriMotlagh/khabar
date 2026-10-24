@@ -1,0 +1,69 @@
+{
+ "id": 6014,
+ "url": "https://t.me/dlmehr/6014",
+ "date": "2026-10-21T13:55:11+00:00",
+ "edited": false,
+ "views": "160",
+ "text": "https://x.com/PyTorch/status/2112601000670322787",
+ "forwarded_from": "Ali Farajnia",
+ "digest": false,
+ "hash": "0778defdcec7",
+ "gholam": null,
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/PyTorch/status/2112601000670322787",
+   "domain": "x.com",
+   "author": {
+    "name": "PyTorch",
+    "handle": "PyTorch",
+    "avatar": "media/avatars/pytorch.webp"
+   },
+   "text": "@Google & @Meta launch TorchTPU for native PyTorch support on Google TPUs!\n\n🔥True eager execution & torch.compile backend\n⚡Fast inference via vLLM & SGLang\n🏋️Near-linear scaling for Llama 3 405B & Qwen 3 MoE via TorchTitan\n\nRead more here: https://bit.ly/4hV19Ho",
+   "lang": "en",
+   "date": 1792518303,
+   "stats": {
+    "views": 16659,
+    "likes": 277,
+    "retweets": 42,
+    "replies": 20
+   },
+   "media": [
+    {
+     "type": "image",
+     "src": "media/6014/l0-0.webp",
+     "width": 1200,
+     "height": 630,
+     "remote": "https://pbs.twimg.com/media/HVF3ailXAAArF-M.jpg?name=orig"
+    }
+   ],
+   "links": [
+    "https://bit.ly/4hV19Ho"
+   ]
+  }
+ ],
+ "media": [],
+ "preview": {
+  "url": "https://x.com/PyTorch/status/2112601000670322787",
+  "site": "X (formerly Twitter)",
+  "title": "PyTorch (@PyTorch) on X",
+  "description": "@Google & @Meta launch TorchTPU for native PyTorch support on Google TPUs!\n🔥\nTrue eager execution & torch.compile backend\n⚡\nFast inference via vLLM & SGLang\n🏋️\nNear-linear scaling for Llama 3 405B…",
+  "image": {
+   "src": "media/6014/preview.webp",
+   "width": 800,
+   "height": 420
+  }
+ },
+ "article": {
+  "title": "@Google & @Meta launch TorchTPU for native PyTorch support on Google TPUs!",
+  "source_title": null,
+  "body": [],
+  "why": null,
+  "tags": [
+   "گوگل",
+   "متا",
+   "دیپ‌سیک"
+  ]
+ },
+ "updated": "2026-10-24T11:00:16+00:00"
+}

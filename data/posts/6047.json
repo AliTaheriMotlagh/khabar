@@ -1,0 +1,71 @@
+{
+ "id": 6047,
+ "url": "https://t.me/dlmehr/6047",
+ "date": "2026-10-22T20:30:52+00:00",
+ "edited": true,
+ "views": "166",
+ "text": "https://fxtwitter.com/rohanpaul_ai/status/2113232462742778350?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+ "forwarded_from": null,
+ "digest": false,
+ "hash": "f6d2ac5b0eb8",
+ "gholam": {
+  "text": "ببین رفیق، بچه‌های دیپ‌مایند گوگل و دانشگاه کمبریج یه کار خفن کردن که نشون میده هوش مصنوعی داره قشنگ وارد فاز کشف ناشناخته‌ها میشه. اونا یه ایجنت خفن بر پایه جمینای ساختن که خودش رفته سراغ ۱۱ تا ماشین تورینگِ حل‌نشده از مسئله معروف «سگ‌جان» (Busy Beaver) و…",
+  "date": "2026-10-22T20:31:07+00:00"
+ },
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/rohanpaul_ai/status/2113232462742778350",
+   "domain": "x.com",
+   "author": {
+    "name": "Rohan Paul",
+    "handle": "rohanpaul_ai",
+    "avatar": "media/avatars/rohanpaul_ai.webp"
+   },
+   "text": "New Google DeepMind and Cambridge paper shows that an AI agent can discover new math itself, proving exact rules for 11 unsolved Turing machines.\n\nAI can move from answering human-posed math questions to open-ended discovery, shown by a Gemini-based agent that found and Lean-verified new rules for 11 Busy Beaver machines with no prior documented analysis.\n\nIt tested edge cases in a simulator, drafts informal proofs, and then proves the rules in the Lean proof checker.",
+   "lang": "en",
+   "date": 1792668855,
+   "stats": {
+    "views": 12959,
+    "likes": 319,
+    "retweets": 51,
+    "replies": 26
+   },
+   "media": [
+    {
+     "type": "image",
+     "src": "media/6047/l0-0.webp",
+     "width": 1400,
+     "height": 1061,
+     "remote": "https://pbs.twimg.com/media/HVO03dabsAE8875.png?name=orig"
+    }
+   ],
+   "links": []
+  }
+ ],
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/rohanpaul_ai/status/2113232462742778350?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+  "site": "🧵 Thread • FxTwitter",
+  "title": "Rohan Paul (@rohanpaul_ai)",
+  "description": "New Google DeepMind and Cambridge paper shows that an AI agent can discover new math itself, proving exact rules for 11 unsolved Turing machines.\nAI can move from answering human-posed math questions to open-ended discovery, shown by a Gemini-based agent…",
+  "image": {
+   "src": "media/6047/preview.webp",
+   "width": 800,
+   "height": 606
+  }
+ },
+ "article": {
+  "title": "بچه‌های دیپ‌مایند گوگل و دانشگاه کمبریج یه کار خفن کردن که نشون میده هوش مصنوعی داره قشنگ وارد فاز کشف…",
+  "source_title": "New Google DeepMind and Cambridge paper shows that an AI agent can discover new math itself, proving exact rules for 11 unsolved Turing…",
+  "body": [
+   "ببین رفیق، بچه‌های دیپ‌مایند گوگل و دانشگاه کمبریج یه کار خفن کردن که نشون میده هوش مصنوعی داره قشنگ وارد فاز کشف ناشناخته‌ها میشه. اونا یه ایجنت خفن بر پایه جمینای ساختن که خودش رفته سراغ ۱۱ تا ماشین تورینگِ حل‌نشده از مسئله معروف «سگ‌جان» (Busy Beaver) و…"
+  ],
+  "why": null,
+  "tags": [
+   "هوش مصنوعی",
+   "گوگل"
+  ]
+ },
+ "updated": "2026-10-24T10:59:46+00:00"
+}

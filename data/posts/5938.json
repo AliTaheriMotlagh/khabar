@@ -1,0 +1,82 @@
+{
+ "id": 5938,
+ "url": "https://t.me/dlmehr/5938",
+ "date": "2026-10-16T20:40:21+00:00",
+ "edited": true,
+ "views": "236",
+ "text": "https://fxtwitter.com/theermann/status/2111124899788210639?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+ "forwarded_from": null,
+ "digest": false,
+ "hash": "221d48fc778f",
+ "gholam": null,
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/theermann/status/2111124899788210639",
+   "domain": "x.com",
+   "author": {
+    "name": "theermann",
+    "handle": "theermann",
+    "avatar": "media/avatars/theermann.webp"
+   },
+   "text": "Introducing Hugo: the first human companion robot.\n\nAt Boston Dynamics, I was Chief Strategy Officer, bringing robots into the real world.\n\nMy co-founder, Farbod Farshidian, led research at the RAI Institute.\n\nTogether, 15+ years teaching robots to run, jump, and work.\n\nSo we asked: what if robots could connect with people?\n\nHugo runs on the first Vision-Language-Expression (VLE) model.\n\nHe links what he sees and hears to movement, expression, and gesture.\n\nHe notices you, reads the room, and reacts in real time.\n\nAnd he's only the first.\n\nDynamic Creatures is @BostonDynamics' official entertainment and hospitality partner.\n\nWe're building a cast of characters with film studios, resorts, and theme parks.\n\nhttp://dynamiccreatures.com",
+   "lang": "en",
+   "date": 1792166373,
+   "stats": {
+    "views": 1797657,
+    "likes": 3159,
+    "retweets": 466,
+    "replies": 390
+   },
+   "media": [
+    {
+     "type": "video",
+     "src": "media/5938/l0-0.mp4",
+     "poster": "media/5938/l0-0-poster.webp",
+     "width": 3840,
+     "height": 2160,
+     "duration": 55.805,
+     "gif": false,
+     "remote": "https://video.twimg.com/amplify_video/2111123312218951680/vid/avc1/1280x720/BCRL1kp5v6ef1ETg.mp4?tag=29"
+    }
+   ],
+   "links": [
+    "http://dynamiccreatures.com"
+   ]
+  },
+  {
+   "kind": "link",
+   "url": "https://www.dynamiccreatures.com/",
+   "domain": "dynamiccreatures.com",
+   "title": "Dynamic Creatures | Living Character Robots for Hospitality & Entertainment",
+   "description": "Dynamic Creatures spun out of Boston Dynamics to create mobile, interactive character robots. We bring brands to life for theme parks, hotels, resorts & attractions. Boston, MA.",
+   "image": {
+    "src": "media/5938/l1-og.webp",
+    "width": 1400,
+    "height": 788
+   },
+   "site": "Dynamic Creatures In",
+   "author": null,
+   "published": null,
+   "text": "Dynamic Creatures is Boston Dynamics' official hospitality and entertainment partner."
+  }
+ ],
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/theermann/status/2111124899788210639?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+  "site": "FxTwitter",
+  "title": "theermann (@theermann)",
+  "description": "Introducing Hugo: the first human companion robot.\nAt Boston Dynamics, I was Chief Strategy Officer, bringing robots into the real world.\nMy co-founder, Farbod Farshidian, led research at the RAI Institute.\nTogether, 15+ years teaching robots to run, jump…",
+  "image": null
+ },
+ "article": {
+  "title": "Introducing Hugo: the first human companion robot.",
+  "source_title": null,
+  "body": [],
+  "why": null,
+  "tags": [
+   "رباتیک"
+  ]
+ },
+ "updated": "2026-10-24T11:01:17+00:00"
+}

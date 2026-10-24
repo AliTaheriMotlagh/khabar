@@ -1,0 +1,62 @@
+{
+ "id": 6019,
+ "url": "https://t.me/dlmehr/6019",
+ "date": "2026-10-21T15:08:46+00:00",
+ "edited": true,
+ "views": "172",
+ "text": "https://fxtwitter.com/mrpingchecks/status/2112882589770064183?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+ "forwarded_from": null,
+ "digest": false,
+ "hash": "144363b12d3f",
+ "gholam": null,
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/MrPingChecks/status/2112882589770064183",
+   "domain": "x.com",
+   "author": {
+    "name": "Mr. Ping",
+    "handle": "MrPingChecks",
+    "avatar": "media/avatars/mrpingchecks.webp"
+   },
+   "text": "刚刚的柏林GTC大会上，英伟达CEO黄仁勋的主题演讲刚进行到四分之一，台下几人突然站起来打断他，冲着台上喊话，抗议英伟达硬件出现在乌克兰战场的俄罗斯无人机里。\n\n当时黄仁勋正在台上展示已经全面投产的新一代Vera Rubin计算机，介绍这台机器没有一根线缆、采用百分之百液冷，组装时间从以前的两个小时缩短到了五分钟以内。\n\n据报道，台下的抗议者就在这时站起来高喊：“黄仁勋，在俄罗斯无人机里找到的那些技术，你怎么说？那些是英伟达的芯片。你们打算怎么办？”\n他们手里拉开的横幅上写着：“英伟达，把你的脏生意收拾干净。”\n\n乌克兰军方此前在击落的俄罗斯无人机里，确实找到过英伟达的Jetson Orin嵌入式模块。\n按照现有的制裁规定，俄罗斯原本根本不该拿到这种硬件。\n\n面对突然闹起来的会场，黄仁勋在台上回应说，这都是重要的问题，我们可以回头再聊，但今天现场坐满了人，全球还有一百场观看活动、一万五千人正看着直播，得先让我把演讲做完。\n\n冲突刚发生时，黄仁勋对着现场保安说：“没事，动作轻点，给她个机会，每个人都有说话的机会。”\n紧接着，抗议者手里的横幅就被当场没收，人也被直接请出了会场。",
+   "lang": "zh",
+   "date": 1792585439,
+   "stats": {
+    "views": 344017,
+    "likes": 1436,
+    "retweets": 114,
+    "replies": 113
+   },
+   "media": [
+    {
+     "type": "video",
+     "src": "media/6019/l0-0.mp4",
+     "poster": "media/6019/l0-0-poster.webp",
+     "width": 1080,
+     "height": 1350,
+     "duration": 99.2,
+     "gif": false,
+     "remote": "https://video.twimg.com/amplify_video/2112880383427751936/vid/avc1/720x900/aH28xSgiZUF-Dm-k.mp4?tag=29"
+    }
+   ],
+   "links": []
+  }
+ ],
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/mrpingchecks/status/2112882589770064183?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+  "site": "FxTwitter",
+  "title": "Mr. Ping (@MrPingChecks)",
+  "description": "刚刚的柏林GTC大会上，英伟达CEO黄仁勋的主题演讲刚进行到四分之一，台下几人突然站起来打断他，冲着台上喊话，抗议英伟达硬件出现在乌克兰战场的俄罗斯无人机里。\n当时黄仁勋正在台上展示已经全面投产的新一代Vera Rubin计算机，介绍这台机器没有一根线缆、采用百分之百液冷，组装时间从以前的两个小时缩短到了五分钟以内。\n据报道，台下的抗议者就在这时站起来高喊：“黄仁勋，在俄罗斯无人机里找到的那些技术，你怎么说？那些是英伟达的芯片。你们打算怎么办？”\n他们手里拉开的横幅上写着：“英伟达，把你的脏生意收拾干净。”…",
+  "image": null
+ },
+ "article": {
+  "title": "刚刚的柏林GTC大会上，英伟达CEO黄仁勋的主题演讲刚进行到四分之一，台下几人突然站起来打断他，冲着台上喊话，抗议英伟达硬件出现在乌克兰战场的俄罗斯无人机里。",
+  "source_title": null,
+  "body": [],
+  "why": null,
+  "tags": []
+ },
+ "updated": "2026-10-24T11:00:10+00:00"
+}

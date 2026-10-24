@@ -1,0 +1,66 @@
+{
+ "id": 6038,
+ "url": "https://t.me/dlmehr/6038",
+ "date": "2026-10-22T00:03:25+00:00",
+ "edited": true,
+ "views": "169",
+ "text": "https://fxtwitter.com/nousresearch/status/2113010017645244623?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+ "forwarded_from": null,
+ "digest": false,
+ "hash": "f2a7a2db523b",
+ "gholam": null,
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/NousResearch/status/2113010017645244623",
+   "domain": "x.com",
+   "author": {
+    "name": "Nous Research",
+    "handle": "NousResearch",
+    "avatar": "media/avatars/nousresearch.webp"
+   },
+   "text": "Jensen closed his GTC Berlin 2026 keynote with this Hermes Agent demo as the finale. \n\nHe introduced it by saying the way to build an agent is to ask an agent to build it for you, so he installed and set up a customized Hermes in one prompt. \n\nThen he used Hermes, running on @nvidia RTX Spark, to create a simulated training environment for the @huggingface Microduck. Hermes planned an obstacle course with Nemotron and had GPT-6 Astra build it using FreeCAD, Omniverse libraries, Blender, Newton, and Isaac Lab. Hermes trained thousands of simulated ducks on that course until the validated policy was ready to run on the real robot in the physical world.\n\nAt Nous, we believe open source is a practical tool as much as a philosophical ideal. It gives users the ability to build powerful, complex workflows chaining numerous local+cloud models, devices, and tools themselves instead of waiting for a company to enable them.",
+   "lang": "en",
+   "date": 1792615820,
+   "stats": {
+    "views": 1026937,
+    "likes": 10234,
+    "retweets": 1094,
+    "replies": 291
+   },
+   "media": [
+    {
+     "type": "video",
+     "src": null,
+     "poster": "media/6038/l0-0-poster.webp",
+     "width": 3840,
+     "height": 2160,
+     "duration": 395.366,
+     "gif": false,
+     "remote": "https://video.twimg.com/amplify_video/2113007811546230785/vid/avc1/1280x720/9zVVDG450NFvsLYp.mp4?tag=29"
+    }
+   ],
+   "links": []
+  }
+ ],
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/nousresearch/status/2113010017645244623?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+  "site": "FxTwitter",
+  "title": "Nous Research (@NousResearch)",
+  "description": "Jensen closed his GTC Berlin 2026 keynote with this Hermes Agent demo as the finale.\nHe introduced it by saying the way to build an agent is to ask an agent to build it for you, so he installed and set up a customized Hermes in one prompt.\nThen he used…",
+  "image": null
+ },
+ "article": {
+  "title": "Jensen closed his GTC Berlin 2026 keynote with this Hermes Agent demo as the finale.",
+  "source_title": null,
+  "body": [],
+  "why": null,
+  "tags": [
+   "هوش مصنوعی",
+   "انویدیا",
+   "رباتیک"
+  ]
+ },
+ "updated": "2026-10-24T10:59:52+00:00"
+}

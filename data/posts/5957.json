@@ -1,0 +1,92 @@
+{
+ "id": 5957,
+ "url": "https://t.me/dlmehr/5957",
+ "date": "2026-10-18T14:53:44+00:00",
+ "edited": true,
+ "views": "184",
+ "text": "https://fxtwitter.com/rohanpaul_ai/status/2111744320982425948?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+ "forwarded_from": null,
+ "digest": false,
+ "hash": "ec0d88075586",
+ "gholam": null,
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/rohanpaul_ai/status/2111744320982425948",
+   "domain": "x.com",
+   "author": {
+    "name": "Rohan Paul",
+    "handle": "rohanpaul_ai",
+    "avatar": "media/avatars/rohanpaul_ai.webp"
+   },
+   "text": "59% of Anthropic staff say AI already cuts well-suited tasks to a quarter of the time, and on average they expect AI to be able to do 75% of their current work hours by 2030.",
+   "lang": "en",
+   "date": 1792314055,
+   "stats": {
+    "views": 8242,
+    "likes": 84,
+    "retweets": 11,
+    "replies": 31
+   },
+   "media": [
+    {
+     "type": "image",
+     "src": "media/5957/l0-0.webp",
+     "width": 950,
+     "height": 567,
+     "remote": "https://pbs.twimg.com/media/HU5rlVwakAAdKD9.jpg?name=orig"
+    }
+   ],
+   "links": [],
+   "quote": {
+    "author": {
+     "name": "Rohan Paul",
+     "handle": "rohanpaul_ai",
+     "avatar": "media/avatars/rohanpaul_ai.webp"
+    },
+    "text": "Anthropic’s junior share of technical headcount slid from 21% to 14% while the company tripled in size, and about a third of Anthropic’s ML managers and a fifth of its SWE managers said AI has them hiring less.\n\nDuring the same time its agents logged 6x human hours.",
+    "lang": "en",
+    "date": 1792303177,
+    "stats": {
+     "views": 24801,
+     "likes": 92,
+     "retweets": 17,
+     "replies": 36
+    },
+    "media": [
+     {
+      "type": "image",
+      "src": "media/5957/l0q-0.webp",
+      "width": 1191,
+      "height": 896,
+      "remote": "https://pbs.twimg.com/media/HU5CbE3bsAAOeUP.jpg?name=orig"
+     }
+    ],
+    "links": []
+   }
+  }
+ ],
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/rohanpaul_ai/status/2111744320982425948?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+  "site": "FxTwitter",
+  "title": "Rohan Paul (@rohanpaul_ai)",
+  "description": "59% of Anthropic staff say AI already cuts well-suited tasks to a quarter of the time, and on average they expect AI to be able to do 75% of their current work hours by 2030.\nQuoting Rohan Paul (@rohanpaul_ai)\nAnthropic’s junior share of technical headcount…",
+  "image": {
+   "src": "media/5957/preview.webp",
+   "width": 800,
+   "height": 477
+  }
+ },
+ "article": {
+  "title": "59% of Anthropic staff say AI already cuts well-suited tasks to a quarter of the time, and on average they expect AI to be able to do 75%…",
+  "source_title": null,
+  "body": [],
+  "why": null,
+  "tags": [
+   "هوش مصنوعی",
+   "آنتروپیک"
+  ]
+ },
+ "updated": "2026-10-24T11:01:00+00:00"
+}

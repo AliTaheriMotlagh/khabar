@@ -1,0 +1,110 @@
+{
+ "id": 6066,
+ "url": "https://t.me/dlmehr/6066",
+ "date": "2026-10-23T15:55:02+00:00",
+ "edited": true,
+ "views": "169",
+ "text": "https://fxtwitter.com/junioryu136689/status/2113545627003183533?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+ "forwarded_from": null,
+ "digest": false,
+ "hash": "1746ccf743d4",
+ "gholam": {
+  "text": "رفیق، دم و دستگاه آنتروپیک درِ باغ سبزش رو باز کرده و یه فراخوان خفن برای محقق‌های علوم زیستی و بیولوژی داده. داستان از این قراره که این کمپانی یه برنامه به اسم «محقق مهمان» راه انداخته تا دانشمندا به مدت ۸ تا ۱۲ هفته بیان بیخ ریش تیم تخصصی خودشون و نیتن فرای…",
+  "date": "2026-10-23T15:55:13+00:00"
+ },
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/Junioryu136689/status/2113545627003183533",
+   "domain": "x.com",
+   "author": {
+    "name": "BioTender",
+    "handle": "Junioryu136689",
+    "avatar": "media/avatars/junioryu136689.webp"
+   },
+   "text": "🧬 Anthropic is inviting life sciences researchers to collaborate directly with its team.\n\nThe Guest Investigator Program offers 8–12 weeks of joint research, with access to Claude, AI agents, and support from Anthropic researchers.\n\n🔗 https://www.anthropic.com/news/open-call-guest-investigators-life-sciences",
+   "lang": "en",
+   "date": 1792743519,
+   "stats": {
+    "views": 17276,
+    "likes": 138,
+    "retweets": 19,
+    "replies": 2
+   },
+   "media": [
+    {
+     "type": "image",
+     "src": "media/6066/l0-0.webp",
+     "width": 1086,
+     "height": 1448,
+     "remote": "https://pbs.twimg.com/media/HVTSifCawAA0Sb4.jpg?name=orig"
+    }
+   ],
+   "links": [
+    "https://www.anthropic.com/news/open-call-guest-investigators-life-sciences"
+   ],
+   "quote": {
+    "author": {
+     "name": "Nathan C. Frey",
+     "handle": "nc_frey",
+     "avatar": "media/avatars/nc_frey.webp"
+    },
+    "text": "Today, we’re announcing an open call for guest investigators in life sciences. Over 8–12 weeks, guest investigators will work directly with my team and other Anthropic researchers to produce analyses and tools for their work. We’ll run our models and harnesses, at no cost to them. We’ll work together to open-source the resulting data, artifacts, and code, and write preprints about what we find.\n\nWe want humans to remain at the center of scientific discovery, deciding what questions to pursue, and how to pursue them. Those decisions are not ours to make alone. This open call is part of our ongoing efforts at Anthropic to support researchers and accelerate scientific discovery.\n\nI’m looking for principal investigators and their research groups at academic institutions, nonprofits, or government labs, working in causal human biology, structural and computational molecular biology, medicinal chemistry, drug discovery, and clinical science.\n\nApplications are open for about 14 days: https://www.anthropic.com/news/open-call-guest-investigators-life-sciences",
+    "lang": "en",
+    "date": 1792708030,
+    "stats": {
+     "views": 70957,
+     "likes": 400,
+     "retweets": 56,
+     "replies": 24
+    },
+    "media": [],
+    "links": [
+     "https://www.anthropic.com/news/open-call-guest-investigators-life-sciences"
+    ]
+   }
+  },
+  {
+   "kind": "link",
+   "url": "https://www.anthropic.com/news/open-call-guest-investigators-life-sciences",
+   "domain": "anthropic.com",
+   "title": "Open call for guest investigators in the life sciences",
+   "description": "Today, we’re inviting members of the life sciences community to apply to work with us on special projects.",
+   "image": {
+    "src": "media/6066/l1-og.webp",
+    "width": 1200,
+    "height": 630
+   },
+   "site": "anthropic.com",
+   "author": null,
+   "published": "2026-10-22T00:00:00.000Z",
+   "text": "Today, we’re inviting members of the life sciences community to apply to work with us on special projects. We’re looking for proposals from principal investigators and their research groups at academic institutions, nonprofits, or government labs who want to use Claude to investigate key questions in causal human biology, structural and computational molecular biology, medicinal chemistry, drug discovery, and clinical science.\nYou can submit a proposal for a project here.\nOver 8–12 weeks, guest investigators will work directly with Anthropic researchers on a problem of interest and produce the analyses, artifacts, and tools that will be most helpful for them in their work. Our team will run our models and harnesses at no cost to them.\nWe’ll work together to publish these outputs and open-source the accompanying data and code. Guest investigators retain the rights to their data at every step during their project. They will also have the rights to any independent follow-on research that might come out of our collaboration.\nWe’re looking for applicants who can clearly explain how they would benefit from direct collaboration with Anthropic’s researchers. Applicants should also make a reasonable case that their outputs (e.g., preliminary discoveries, answers to open questions, open-source datasets, or public resources) can be produced within the 8- to 12-week collaboration period. There may be an option for extension beyond the initial collaboration period for some projects.\nWe understand that the results for most open problems of interest will take much longer to validate, but we’re looking for proposals that can produce some preliminary evidence in a relatively short amount of time.\nWe aren’t asking for guest investigators to give us their data, either in the application or during the collaboration, and we’re requesting that applicants include only publicly available information in their application materials.\nApplications will be open for approximately 14 days, and we’ll strive to notify selected participants by email approximately 14 days after applications close. We look forward to potentially expanding this effort in the future as we learn more about how we can best support the scientific community.\nThis program is one of several initiatives Anthropic is pursuing to invest more heavily in the life sciences and the broader scientific research community. Scientists who would like direct access to our most capable publicly available models for biology can apply to join our Life Sciences Verification Program. We’ve also continued to support researchers through our AI for Science initiative, which provides scientists with Claude credits to accelerate their progress toward making scientific discoveries."
+  }
+ ],
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/junioryu136689/status/2113545627003183533?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+  "site": "FxTwitter",
+  "title": "BioTender (@Junioryu136689)",
+  "description": "🧬\nAnthropic is inviting life sciences researchers to collaborate directly with its team.\nThe Guest Investigator Program offers 8–12 weeks of joint research, with access to Claude, AI agents, and support from Anthropic researchers.\n🔗\nhttps://www.anthrop…",
+  "image": {
+   "src": "media/6066/preview.webp",
+   "width": 600,
+   "height": 800
+  }
+ },
+ "article": {
+  "title": "دم و دستگاه آنتروپیک درِ باغ سبزش رو باز کرده و یه فراخوان خفن برای محقق‌های علوم زیستی و بیولوژی داده",
+  "source_title": "🧬 Anthropic is inviting life sciences researchers to collaborate directly with its team.",
+  "body": [
+   "رفیق، دم و دستگاه آنتروپیک درِ باغ سبزش رو باز کرده و یه فراخوان خفن برای محقق‌های علوم زیستی و بیولوژی داده. داستان از این قراره که این کمپانی یه برنامه به اسم «محقق مهمان» راه انداخته تا دانشمندا به مدت ۸ تا ۱۲ هفته بیان بیخ ریش تیم تخصصی خودشون و نیتن فرای…"
+  ],
+  "why": null,
+  "tags": [
+   "هوش مصنوعی",
+   "آنتروپیک",
+   "سلامت"
+  ]
+ },
+ "updated": "2026-10-24T10:59:32+00:00"
+}

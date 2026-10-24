@@ -1,0 +1,60 @@
+{
+ "id": 6028,
+ "url": "https://t.me/dlmehr/6028",
+ "date": "2026-10-21T19:08:21+00:00",
+ "edited": true,
+ "views": "176",
+ "text": "https://fxtwitter.com/nytimes/status/2112967461712588948?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+ "forwarded_from": null,
+ "digest": false,
+ "hash": "2fd3d7fb7866",
+ "gholam": null,
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/nytimes/status/2112967461712588948",
+   "domain": "x.com",
+   "author": {
+    "name": "The New York Times",
+    "handle": "nytimes",
+    "avatar": "media/avatars/nytimes.webp"
+   },
+   "text": "Breaking News: Meta must pay $25 billion, one of the largest penalties levied against the tech giant, for deceiving users about data privacy. https://nyti.ms/4yvv5yZ",
+   "lang": "en",
+   "date": 1792605674,
+   "stats": {
+    "views": 1327910,
+    "likes": 5296,
+    "retweets": 1587,
+    "replies": 181
+   },
+   "media": [],
+   "links": [
+    "https://nyti.ms/4yvv5yZ"
+   ]
+  }
+ ],
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/nytimes/status/2112967461712588948?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+  "site": "FxTwitter · nytimes.com",
+  "title": "The New York Times (@nytimes)",
+  "description": "Breaking News: Meta must pay $25 billion, one of the largest penalties levied against the tech giant, for deceiving users about data privacy. https://nyti.ms/4yvv5yZ",
+  "image": {
+   "src": "media/6028/preview.webp",
+   "width": 200,
+   "height": 200
+  }
+ },
+ "article": {
+  "title": "Breaking News: Meta must pay $25 billion, one of the largest penalties levied against the tech giant, for deceiving users about data…",
+  "source_title": null,
+  "body": [],
+  "why": null,
+  "tags": [
+   "متا",
+   "امنیت"
+  ]
+ },
+ "updated": "2026-10-24T10:59:59+00:00"
+}

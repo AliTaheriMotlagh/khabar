@@ -1,0 +1,100 @@
+{
+ "id": 6069,
+ "url": "https://t.me/dlmehr/6069",
+ "date": "2026-10-23T17:20:29+00:00",
+ "edited": true,
+ "views": "115",
+ "text": "https://fxtwitter.com/kimmonismus/status/2113681534792183863?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+ "forwarded_from": null,
+ "digest": false,
+ "hash": "e6ce27e63ca3",
+ "gholam": {
+  "text": "رفیق، چینی‌ها با معرفی Kimi K3.1 Pro حسابی گردوخاک راه انداختن و یه غول ۲.۸ تریلیون پارامتری با حافظه کانتکست یک میلیون توکنی رو فرستادن تو میدون. این مدل چندوجهی ادعا کرده که تو بنچمارک‌های کلیدی و تسک‌های کدنویسی، بدجوری پاپیچ رقبای گردن‌کلفتی مثل GPT-6…",
+  "date": "2026-10-23T18:39:44+00:00"
+ },
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/kimmonismus/status/2113681534792183863",
+   "domain": "x.com",
+   "author": {
+    "name": "Chubby♨️",
+    "handle": "kimmonismus",
+    "avatar": "media/avatars/kimmonismus.webp"
+   },
+   "text": "Holy shit: Kimi k3.1 pro is on par or even outperforms Opus 5.5 and GPT-6 astra on key benchmarks!!\n\nThey just announced K3.1 Pro, a 2.8T-parameter multimodal model with a 1M-token context window that it claims rivals leading proprietary models in coding and agent tasks, with open weights promised by November 4.\n\nChina is back!!",
+   "lang": "en",
+   "date": 1792775922,
+   "stats": {
+    "views": 211475,
+    "likes": 2132,
+    "retweets": 128,
+    "replies": 117
+   },
+   "media": [
+    {
+     "type": "image",
+     "src": "media/6069/l0-0.webp",
+     "width": 1400,
+     "height": 1903,
+     "remote": "https://pbs.twimg.com/media/HVVOJttXUAASMqc.jpg?name=orig"
+    }
+   ],
+   "links": [],
+   "quote": {
+    "author": {
+     "name": "Kimi.ai",
+     "handle": "Kimi_Moonshot",
+     "avatar": "media/avatars/kimi_moonshot.webp"
+    },
+    "text": "Introducing Kimi K3.1 Pro: our most capable 3T-class open-weight model.\n\n🔹 1M-token context, 2.8T total / 104B active params (MoE), Multimodal.\n🔹 Full-project coding: games in Unreal, Unity & Godot.\n🔹 Excels at parametric 3D modeling in Blender & CAD.\n🔹 More reliable at finance work: Accurate modeling with hallucination down by 65%.\n🔹 Matching the strongest proprietary models across coding, agentic and knowledge benchmarks.\n\nKimi K3.1 Pro and K3.1 Pro Highspeed (2–3× faster) are now live on http://Kimi.ai, Kimi Work, Kimi Code, and the Kimi API.  \n\nOpen weights by Nov 4, 2026.\n\n🔗 API: http://platform.kimi.ai \n🔗 Tech blog: http://kimi.ai/blog/kimi-k3-1-pro",
+    "lang": "en",
+    "date": 1792775724,
+    "stats": {
+     "views": 2575603,
+     "likes": 25712,
+     "retweets": 2783,
+     "replies": 1075
+    },
+    "media": [
+     {
+      "type": "image",
+      "src": "media/6069/l0q-0.webp",
+      "width": 1400,
+      "height": 1903,
+      "remote": "https://pbs.twimg.com/media/HVVMjBoaIAAZncD.jpg?name=orig"
+     }
+    ],
+    "links": [
+     "http://Kimi.ai",
+     "http://platform.kimi.ai",
+     "http://kimi.ai/blog/kimi-k3-1-pro"
+    ]
+   }
+  }
+ ],
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/kimmonismus/status/2113681534792183863?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+  "site": "FxTwitter",
+  "title": "Chubby ♨️ (@kimmonismus)",
+  "description": "Holy shit: Kimi k3.1 pro is on par or even outperforms Opus 5.5 and GPT-6 astra on key benchmarks!!\nThey just announced K3.1 Pro, a 2.8T-parameter multimodal model with a 1M-token context window that it claims rivals leading proprietary models in coding…",
+  "image": {
+   "src": "media/6069/preview.webp",
+   "width": 589,
+   "height": 800
+  }
+ },
+ "article": {
+  "title": "چینی‌ها با معرفی Kimi K3.1 Pro حسابی گردوخاک راه انداختن و یه غول ۲.۸ تریلیون پارامتری با حافظه کانتکست یک…",
+  "source_title": "Holy shit: Kimi k3.1 pro is on par or even outperforms Opus 5.5 and GPT-6 astra on key benchmarks!!",
+  "body": [
+   "رفیق، چینی‌ها با معرفی Kimi K3.1 Pro حسابی گردوخاک راه انداختن و یه غول ۲.۸ تریلیون پارامتری با حافظه کانتکست یک میلیون توکنی رو فرستادن تو میدون. این مدل چندوجهی ادعا کرده که تو بنچمارک‌های کلیدی و تسک‌های کدنویسی، بدجوری پاپیچ رقبای گردن‌کلفتی مثل GPT-6…"
+  ],
+  "why": null,
+  "tags": [
+   "هوش مصنوعی"
+  ]
+ },
+ "updated": "2026-10-24T10:59:28+00:00"
+}

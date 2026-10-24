@@ -1,0 +1,85 @@
+{
+ "id": 5937,
+ "url": "https://t.me/dlmehr/5937",
+ "date": "2026-10-16T19:34:05+00:00",
+ "edited": true,
+ "views": "214",
+ "text": "https://fxtwitter.com/googleresearch/status/2111159868187181399?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+ "forwarded_from": null,
+ "digest": false,
+ "hash": "4dd63f8e27fd",
+ "gholam": null,
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/GoogleResearch/status/2111159868187181399",
+   "domain": "x.com",
+   "author": {
+    "name": "Google Research",
+    "handle": "GoogleResearch",
+    "avatar": "media/avatars/googleresearch.webp"
+   },
+   "text": "We are bringing agents to the wet-lab bench at Google Research to navigate complex biological landscapes. Learn how we are grounding agents in physical lab robotics to run fast closed-loop molecular design cycles, ultimately discovering single-digit nanomolar protein binders for cancer targets →https://goo.gle/4B5mMMB",
+   "lang": "en",
+   "date": 1792174710,
+   "stats": {
+    "views": 309509,
+    "likes": 3705,
+    "retweets": 482,
+    "replies": 110
+   },
+   "media": [
+    {
+     "type": "video",
+     "src": "media/5937/l0-0.mp4",
+     "poster": "media/5937/l0-0-poster.webp",
+     "width": 860,
+     "height": 810,
+     "duration": 0,
+     "gif": true,
+     "remote": "https://video.twimg.com/tweet_video/HUxYNSAbYAA5rV4.mp4"
+    }
+   ],
+   "links": [
+    "https://goo.gle/4B5mMMB"
+   ]
+  },
+  {
+   "kind": "link",
+   "url": "https://research.google/blog/grounding-ai-agents-in-biological-reality-building-blocks-for-autonomous-wet-labs/?utm_source=twitter&utm_medium=social&utm_campaign=social_post&utm_content=gr-acct",
+   "domain": "research.google",
+   "title": "Grounding AI agents in biological reality: Building blocks for autonomous wet labs",
+   "description": null,
+   "image": {
+    "src": "media/5937/l1-og.webp",
+    "width": 800,
+    "height": 420
+   },
+   "site": "research.google",
+   "author": null,
+   "published": null,
+   "text": "October 16, 2026\nPooja Rao, Research Scientist, Petar Sirkovic, Software Engineer, and Annalisa Pawlosky, Research Scientist, Google\nWe are bringing AI agents to the wet-lab bench at Google Research to navigate complex biological landscapes. By grounding agents in physical lab robotics, we can run fast closed-loop molecular design cycles where agents learn how to learn, ultimately discovering single-digit nanomolar protein binders for cancer targets.\nFrontier AI systems have the potential to transform biology research and drug discovery by intelligently navigating vast combinatorial search spaces (e.g., a single 100-amino-acid protein spans at least 20100 possible sequences) calling for dynamic multi-candidate exploration. Our long-term research vision is that AI agents will not only ideate and analyze, but also run lab experiments to test their hypotheses, learn from the results, and self-improve to solve complex problems — all driven by human scientific agency.\nRealizing this vision requires solving two intertwined challenges: First, frontier models still do not reason reliably about 3-dimensional geometry and physical state — which poses a problem in the automation of the specialized liquid-handling robots that move reagents, track volumes, and execute molecular biology protocols in a wet lab. Second, while agentic hypothesis generation and in-silico design are advancing rapidly, needing repeated cycles of real-world feedback to validate the proposals and navigate vast search spaces, real-world wet-lab experiments have not kept pace, making experimental readouts more of a bottleneck than ever.\nIn this post we share three research projects highlighting our progress on bridging the gap between in-silico AI exploration and real-world wet-lab experimentation:\nFirst, we present the VERified Infrastructure for Discovery Laboratories (VERID) framework to bridge the gap between the high-level reasoning of AI agents and the complex, error-prone physical reality of a wet lab. It is a semantic digital twin of the laboratory workcell, i.e., a live, stateful 3D volumetric entity tree that tracks everything from robotic arm geometry to individual well volumes, reagent identities, and pipette tip inventory.\nThe safety of a command depends on the live physical context as well as the code. An agent can generate syntactically valid code that is physically impossible (e.g., lowering an 8-channel pipette into a narrow trough that is too short), logistically invalid (e.g., aspirating from a depleted well), or scientifically compromised by unmodeled fluidic effects.\nBuilt on top of the open-source PyLabRobot framework, VERID provides four core capabilities:\nIn our report, we show these capabilities in action through case studies. First, synchronized video and execution traces caught uneven dye stratification caused by dispensing too close to the well floor, allowing the agent to refine its mixing strategy. In the same campaign, the persistent digital twin state allowed the agent to recover mid-run from a plate-reader failure without re-pipetting. Second, when the simulator rejected an 8-channel aspiration that physically wouldn't fit in a narrow trough, the agent replanned on the fly and designed a targeted factorial diagnostic isolating a subtle bias caused by residual tip-wall carryover that replication alone would have missed. Finally, in a closed-loop self-play campaign, an agent iteratively designed and ran robot experiments to reconstruct blinded dye mixtures from overhead camera images, identifying its own optical and fluidic artifacts across runs to improve accuracy more than fivefold.\nReproducible execution and full trace logs — capturing procedural variables like dwell times, evaporation, and plate layout — lay the groundwork for agents to eventually be able to separate biological signals from experimental noise as they explore and refine many candidates in parallel across rounds.\nAgents need real experimental readouts to refine their hypotheses as computational models do not capture the full picture of what happens in a wet-lab reaction and cannot replace empirical validation. In “Aptamers as a sandbox for lab-in-the-loop agentic molecular discovery”, we use protein-binding DNA aptamers to prototype the lab in a closed loop with AI agents over 3 design-test-iteration cycles. Aptamer discovery is a type of experiment common in research efforts for clinical biomarker discovery. A complete aptamer design-test-analyze cycle takes just 7–10 days, as DNA can be chemically synthesized in pooled libraries and read out directly by sequencing. In each round, agents design candidate sequences, which are screened against target proteins on magnetic beads to isolate functional binders, and then sequenced to return rich quantitative data for the next cycle.\nAcross three rounds on two protein targets with varying difficulty levels (myoglobin and α-thrombin), AI-driven rational and de novo design raised confirmed on-target hit rat"
+  }
+ ],
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/googleresearch/status/2111159868187181399?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+  "site": "FxTwitter",
+  "title": "Google Research (@GoogleResearch)",
+  "description": "We are bringing agents to the wet-lab bench at Google Research to navigate complex biological landscapes. Learn how we are grounding agents in physical lab robotics to run fast closed-loop molecular design cycles, ultimately discovering single-digit nanomolar…",
+  "image": null
+ },
+ "article": {
+  "title": "We are bringing agents to the wet-lab bench at Google Research to navigate complex biological landscapes. Learn how we are grounding agents…",
+  "source_title": null,
+  "body": [],
+  "why": null,
+  "tags": [
+   "هوش مصنوعی",
+   "گوگل",
+   "رباتیک",
+   "سلامت"
+  ]
+ },
+ "updated": "2026-10-24T11:01:18+00:00"
+}

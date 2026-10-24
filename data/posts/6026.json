@@ -1,0 +1,55 @@
+{
+ "id": 6026,
+ "url": "https://t.me/dlmehr/6026",
+ "date": "2026-10-21T18:10:28+00:00",
+ "edited": true,
+ "views": "157",
+ "text": "https://fxtwitter.com/mtslive/status/2112955713916162199?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+ "forwarded_from": null,
+ "digest": false,
+ "hash": "2e4820bcdce5",
+ "gholam": null,
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/MTSlive/status/2112955713916162199",
+   "domain": "x.com",
+   "author": {
+    "name": "MTS",
+    "handle": "MTSlive",
+    "avatar": "media/avatars/mtslive.webp"
+   },
+   "text": "SITUATION DETECTED: Demis Hassabis told the WSJ that his AGI timelines have shortened from three to five years away to within the next two to three years.",
+   "lang": "en",
+   "date": 1792602873,
+   "stats": {
+    "views": 220682,
+    "likes": 2592,
+    "retweets": 166,
+    "replies": 54
+   },
+   "media": [],
+   "links": []
+  }
+ ],
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/mtslive/status/2112955713916162199?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+  "site": "FxTwitter",
+  "title": "MTS (@MTSlive)",
+  "description": "SITUATION DETECTED: Demis Hassabis told the WSJ that his AGI timelines have shortened from three to five years away to within the next two to three years.",
+  "image": {
+   "src": "media/6026/preview.webp",
+   "width": 200,
+   "height": 200
+  }
+ },
+ "article": {
+  "title": "SITUATION DETECTED: Demis Hassabis told the WSJ that his AGI timelines have shortened from three to five years away to within the next two…",
+  "source_title": null,
+  "body": [],
+  "why": null,
+  "tags": []
+ },
+ "updated": "2026-10-24T11:00:00+00:00"
+}

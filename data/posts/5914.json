@@ -1,0 +1,64 @@
+{
+ "id": 5914,
+ "url": "https://t.me/dlmehr/5914",
+ "date": "2026-10-16T01:33:56+00:00",
+ "edited": true,
+ "views": "210",
+ "text": "https://fxtwitter.com/tesla/status/2110905133785829671?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+ "forwarded_from": null,
+ "digest": false,
+ "hash": "ba52c515d0fc",
+ "gholam": null,
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/Tesla/status/2110905133785829671",
+   "domain": "x.com",
+   "author": {
+    "name": "Tesla",
+    "handle": "Tesla",
+    "avatar": "media/avatars/tesla.webp"
+   },
+   "text": "Roadster transforms in Track Mode\n\nThese aero features aren't just for looks: they provide the best passive downforce package of any road car (approaching F1 levels!) with wing actuation driven by the @Tesla_Optimus actuator system",
+   "lang": "en",
+   "date": 1792113977,
+   "stats": {
+    "views": 3500222,
+    "likes": 53721,
+    "retweets": 6011,
+    "replies": 1211
+   },
+   "media": [
+    {
+     "type": "video",
+     "src": "media/5914/l0-0.mp4",
+     "poster": "media/5914/l0-0-poster.webp",
+     "width": 3840,
+     "height": 2160,
+     "duration": 34,
+     "gif": false,
+     "remote": "https://video.twimg.com/amplify_video/2110904702766579712/vid/avc1/1280x720/HapkvyIGkTiliKCr.mp4?tag=29"
+    }
+   ],
+   "links": []
+  }
+ ],
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/tesla/status/2110905133785829671?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+  "site": "FxTwitter",
+  "title": "Tesla (@Tesla)",
+  "description": "Roadster transforms in Track Mode\nThese aero features aren't just for looks: they provide the best passive downforce package of any road car (approaching F1 levels!) with wing actuation driven by the @Tesla_Optimus actuator system",
+  "image": null
+ },
+ "article": {
+  "title": "Roadster transforms in Track Mode",
+  "source_title": null,
+  "body": [],
+  "why": null,
+  "tags": [
+   "ایلان ماسک"
+  ]
+ },
+ "updated": "2026-10-24T11:01:34+00:00"
+}

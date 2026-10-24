@@ -1,0 +1,81 @@
+{
+ "id": 6082,
+ "url": "https://t.me/dlmehr/6082",
+ "date": "2026-10-23T20:39:25+00:00",
+ "edited": true,
+ "views": "104",
+ "text": "https://fxtwitter.com/deanwball/status/2113712095954923700?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+ "forwarded_from": null,
+ "digest": false,
+ "hash": "71dd4a2c4956",
+ "gholam": {
+  "text": "ببین رفیق، بحث امنیت سایبری با اومدن هوش مصنوعی حسابی رفته رو دور تند و این تحلیل‌گر، دین بال، نکته قشنگی رو وسط کشیده. حرفش اینه که درسته آخر سر هوش مصنوعی به نفع دفاع و امنیت تموم میشه، اما تا به اون مرحله برسیم، اوضاع اول به نفع هکرها و مهاجم‌ها می‌چرخه.…",
+  "date": "2026-10-23T20:39:37+00:00"
+ },
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/deanwball/status/2113712095954923700",
+   "domain": "x.com",
+   "author": {
+    "name": "Dean W. Ball",
+    "handle": "deanwball",
+    "avatar": "media/avatars/deanwball.webp"
+   },
+   "text": "I am also optimistic that AI/cyber will be defense-friendly after things stabilize, but before that it will be offense-friendly, which creates a lot of dynamics that are difficult to model:\n\n1. For any existing or new vulnerabilities discovered by governments and other offensive",
+   "lang": "en",
+   "date": 1792783209,
+   "stats": {
+    "views": 8450,
+    "likes": 73,
+    "retweets": 10,
+    "replies": 0
+   },
+   "media": [],
+   "links": [],
+   "quote": {
+    "author": {
+     "name": "Nathan Calvin",
+     "handle": "_NathanCalvin",
+     "avatar": "media/avatars/_nathancalvin.webp"
+    },
+    "text": "yeah as others have said, two different trends around AI + cyber are happening at the same time and its confusing:\n\nAI helping cybersecurity situation: \n- 5.6 sol (yay daybreak) discovering this PHP vulnerability that was already there so people can patch it (of course can  be worse in short term while lots of systems go unpatched, and also long tail of legacy unpatched systems) \n\nAI not helping cybersecurity situation:\n- lots of AI powered automated cyberattacks (e.g. railway and opencode hacks) \n\nVulnerability discovery probably on average favors defenders in the medium term. Automating cyber operations will help attackers a lot though, and probably enough to overwhelm positive effects on the former (every random community bank or old person is not gonna have AI swarms protecting them against AI swarm attacks). Of course the cycle of patching vulnerabilities is becoming a lot harder because of how fast automated cyberattacks are. \n\nAlso an aside on AI spear fishing in particular - \n\nLiterally today I had one of those fake tech crunch reporters reach out over DMs and the fake was pretty convincing (thousands of followers, tweets and photos about tech crunch, but when I googled became clear person didn't exist). \n\nPeople who are not used to the idea that people can lie in convincing ways on the internet are going to get exploited over and over again and its gonna be bad (and also generally make it way harder to have good interactions with humans you don't know online).",
+    "lang": "en",
+    "date": 1792768509,
+    "stats": {
+     "views": 9293,
+     "likes": 36,
+     "retweets": 4,
+     "replies": 3
+    },
+    "media": [],
+    "links": []
+   }
+  }
+ ],
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/deanwball/status/2113712095954923700?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+  "site": "FxTwitter",
+  "title": "Dean W. Ball (@deanwball)",
+  "description": "I am also optimistic that AI/cyber will be defense-friendly after things stabilize, but before that it will be offense-friendly, which creates a lot of dynamics that are difficult to model:\n1. For any existing or new vulnerabilities discovered by governments…",
+  "image": {
+   "src": "media/6082/preview.webp",
+   "width": 200,
+   "height": 200
+  }
+ },
+ "article": {
+  "title": "بحث امنیت سایبری با اومدن هوش مصنوعی حسابی رفته رو دور تند و این تحلیل‌گر، دین بال، نکته قشنگی رو وسط کشیده",
+  "source_title": "I am also optimistic that AI/cyber will be defense-friendly after things stabilize, but before that it will be offense-friendly, which…",
+  "body": [
+   "ببین رفیق، بحث امنیت سایبری با اومدن هوش مصنوعی حسابی رفته رو دور تند و این تحلیل‌گر، دین بال، نکته قشنگی رو وسط کشیده. حرفش اینه که درسته آخر سر هوش مصنوعی به نفع دفاع و امنیت تموم میشه، اما تا به اون مرحله برسیم، اوضاع اول به نفع هکرها و مهاجم‌ها می‌چرخه.…"
+  ],
+  "why": null,
+  "tags": [
+   "هوش مصنوعی",
+   "امنیت"
+  ]
+ },
+ "updated": "2026-10-24T10:58:44+00:00"
+}

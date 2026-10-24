@@ -1,0 +1,64 @@
+{
+ "id": 5994,
+ "url": "https://t.me/dlmehr/5994",
+ "date": "2026-10-20T18:26:59+00:00",
+ "edited": true,
+ "views": "187",
+ "text": "https://fxtwitter.com/exnx/status/2112580926651904379?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+ "forwarded_from": null,
+ "digest": false,
+ "hash": "680f92286066",
+ "gholam": null,
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/exnx/status/2112580926651904379",
+   "domain": "x.com",
+   "author": {
+    "name": "Eric Nguyen",
+    "handle": "exnx",
+    "avatar": "media/avatars/exnx.webp"
+   },
+   "text": "Introducing Omnii-1, our most powerful genome language model, and a major step toward general biological intelligence\n\nIn a world first, Omnii-1 designed the first AI-generated bacteriophages to be administered to a human patient with an antibiotic-resistant infection under compassionate use",
+   "lang": "en",
+   "date": 1792513517,
+   "stats": {
+    "views": 1028826,
+    "likes": 1205,
+    "retweets": 212,
+    "replies": 115
+   },
+   "media": [
+    {
+     "type": "video",
+     "src": "media/5994/l0-0.mp4",
+     "poster": "media/5994/l0-0-poster.webp",
+     "width": 1920,
+     "height": 1080,
+     "duration": 155.136,
+     "gif": false,
+     "remote": "https://video.twimg.com/amplify_video/2112578540013330432/vid/avc1/1280x720/o7F7SW5uTq0n6Cki.mp4?tag=29"
+    }
+   ],
+   "links": []
+  }
+ ],
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/exnx/status/2112580926651904379?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+  "site": "🧵 Thread • FxTwitter",
+  "title": "Eric Nguyen (@exnx)",
+  "description": "Introducing Omnii-1, our most powerful genome language model, and a major step toward general biological intelligence\nIn a world first, Omnii-1 designed the first AI-generated bacteriophages to be administered to a human patient with an antibiotic-resistant…",
+  "image": null
+ },
+ "article": {
+  "title": "Introducing Omnii-1, our most powerful genome language model, and a major step toward general biological intelligence",
+  "source_title": null,
+  "body": [],
+  "why": null,
+  "tags": [
+   "هوش مصنوعی"
+  ]
+ },
+ "updated": "2026-10-24T11:00:32+00:00"
+}

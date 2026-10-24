@@ -1,0 +1,93 @@
+{
+ "id": 6041,
+ "url": "https://t.me/dlmehr/6041",
+ "date": "2026-10-22T14:23:59+00:00",
+ "edited": false,
+ "views": "206",
+ "text": "https://fxtwitter.com/kimmonismus/status/2113141875368468508?s=46",
+ "forwarded_from": "Hossein Zakariaee",
+ "digest": false,
+ "hash": "e4613ccde590",
+ "gholam": {
+  "text": "رفیق، دنیای امنیت بدجوری به هم ریخته و اوضاع از چیزی که فکر می‌کردیم خیلی قاراشمیش‌تر شده؛ هکرها ایجنت‌های هوش مصنوعی رو انداختن به جون سیستم‌ها و دارن حسابی خرابی به بار میارن. مایکروسافت خبر داده که این بات‌های هوشمند توی کمتر از سه ساعت تونستن به بالاترین…",
+  "date": "2026-10-22T14:24:22+00:00"
+ },
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/kimmonismus/status/2113141875368468508",
+   "domain": "x.com",
+   "author": {
+    "name": "Chubby♨️",
+    "handle": "kimmonismus",
+    "avatar": "media/avatars/kimmonismus.webp"
+   },
+   "text": "Whats happening right now is probably way worse than the Hugging Face incident. \n\nAI-powered attacks are hitting real organizations while major platforms disclose breaches and critical flaws.\n\n- Microsoft reports AI agents targeting hundreds of organizations, reaching privileged cloud access in under three hours in multiple cases. It attributes the ConnectWise compromise to the same group.\n\n- CrowdStrike documented four operators running successful AI-agent campaigns. One compromised at least 15 Argentine healthcare organizations.\n\n- PHP2Shell: AI helped turn longstanding PHP flaws into working exploits. Cloudflare’s CEO reports millions of exploitation attempts. Their AI involvement is unknown.\n\n- Railway disclosed possible access to customer secrets. LiteLLM shipped a backdoored release. Zeabur confirmed another breach and is shutting down.\n\n- GitLab patched a maximum-severity flaw affecting 12 years of releases. Node.js patched a serious code-execution vulnerability, with Vercel deploying firewall protections.\n\nFeels like a turningpoint.",
+   "lang": "en",
+   "date": 1792647258,
+   "stats": {
+    "views": 379877,
+    "likes": 5026,
+    "retweets": 755,
+    "replies": 257
+   },
+   "media": [
+    {
+     "type": "image",
+     "src": "media/6041/l0-0.webp",
+     "width": 1176,
+     "height": 1052,
+     "remote": "https://pbs.twimg.com/media/HVNjBIuWcAAMLbV.jpg?name=orig"
+    },
+    {
+     "type": "image",
+     "src": "media/6041/l0-1.webp",
+     "width": 1188,
+     "height": 1146,
+     "remote": "https://pbs.twimg.com/media/HVNjJ9XWYAAccck.jpg?name=orig"
+    },
+    {
+     "type": "image",
+     "src": "media/6041/l0-2.webp",
+     "width": 1186,
+     "height": 1054,
+     "remote": "https://pbs.twimg.com/media/HVNjL4IWYAAs0cG.jpg?name=orig"
+    },
+    {
+     "type": "image",
+     "src": "media/6041/l0-3.webp",
+     "width": 1196,
+     "height": 654,
+     "remote": "https://pbs.twimg.com/media/HVNjShlWsAAUHbt.jpg?name=orig"
+    }
+   ],
+   "links": []
+  }
+ ],
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/kimmonismus/status/2113141875368468508?s=46",
+  "site": "🧵 Thread • FxTwitter",
+  "title": "Chubby ♨️ (@kimmonismus)",
+  "description": "Whats happening right now is probably way worse than the Hugging Face incident.\nAI-powered attacks are hitting real organizations while major platforms disclose breaches and critical flaws.\n- Microsoft reports AI agents targeting hundreds of organizations…",
+  "image": {
+   "src": "media/6041/preview.webp",
+   "width": 241,
+   "height": 800
+  }
+ },
+ "article": {
+  "title": "دنیای امنیت بدجوری به هم ریخته و اوضاع از چیزی که فکر می‌کردیم خیلی قاراشمیش‌تر شده؛ هکرها ایجنت‌های هوش…",
+  "source_title": "Whats happening right now is probably way worse than the Hugging Face incident.",
+  "body": [
+   "رفیق، دنیای امنیت بدجوری به هم ریخته و اوضاع از چیزی که فکر می‌کردیم خیلی قاراشمیش‌تر شده؛ هکرها ایجنت‌های هوش مصنوعی رو انداختن به جون سیستم‌ها و دارن حسابی خرابی به بار میارن. مایکروسافت خبر داده که این بات‌های هوشمند توی کمتر از سه ساعت تونستن به بالاترین…"
+  ],
+  "why": null,
+  "tags": [
+   "هوش مصنوعی",
+   "مایکروسافت",
+   "امنیت"
+  ]
+ },
+ "updated": "2026-10-24T10:59:52+00:00"
+}

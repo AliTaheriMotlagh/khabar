@@ -1,0 +1,62 @@
+{
+ "id": 5929,
+ "url": "https://t.me/dlmehr/5929",
+ "date": "2026-10-16T17:57:24+00:00",
+ "edited": true,
+ "views": "206",
+ "text": "https://fxtwitter.com/andrewdai/status/2111142161584628060?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+ "forwarded_from": null,
+ "digest": false,
+ "hash": "b0c6ac5b42bf",
+ "gholam": null,
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/AndrewDai/status/2111142161584628060",
+   "domain": "x.com",
+   "author": {
+    "name": "Andrew M. Dai",
+    "handle": "AndrewDai",
+    "avatar": "media/avatars/andrewdai.webp"
+   },
+   "text": "Spent years watching models ace a single image and completely whiff on anything that moves or changes angle. Today we’re fixing that.\n\nTry Glimpse now, our first visual thinking model with competitive frontier performance compared to Astra on key public visual reasoning benchmarks.",
+   "lang": "en",
+   "date": 1792170489,
+   "stats": {
+    "views": 4257086,
+    "likes": 6182,
+    "retweets": 650,
+    "replies": 402
+   },
+   "media": [
+    {
+     "type": "video",
+     "src": "media/5929/l0-0.mp4",
+     "poster": "media/5929/l0-0-poster.webp",
+     "width": 1920,
+     "height": 1080,
+     "duration": 89.989,
+     "gif": false,
+     "remote": "https://video.twimg.com/amplify_video/2111141984752779264/vid/avc1/1280x720/o-DmZFxPyLqPRR11.mp4?tag=29"
+    }
+   ],
+   "links": []
+  }
+ ],
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/andrewdai/status/2111142161584628060?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+  "site": "🧵 Thread • FxTwitter",
+  "title": "Andrew M. Dai (@AndrewDai)",
+  "description": "Spent years watching models ace a single image and completely whiff on anything that moves or changes angle. Today we’re fixing that.\nTry Glimpse now, our first visual thinking model with competitive frontier performance compared to Astra on key public visual…",
+  "image": null
+ },
+ "article": {
+  "title": "Spent years watching models ace a single image and completely whiff on anything that moves or changes angle. Today we’re fixing that.",
+  "source_title": null,
+  "body": [],
+  "why": null,
+  "tags": []
+ },
+ "updated": "2026-10-24T11:01:24+00:00"
+}

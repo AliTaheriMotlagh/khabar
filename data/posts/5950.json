@@ -1,0 +1,88 @@
+{
+ "id": 5950,
+ "url": "https://t.me/dlmehr/5950",
+ "date": "2026-10-18T01:06:11+00:00",
+ "edited": true,
+ "views": "215",
+ "text": "https://fxtwitter.com/azaliamirh/status/2111191896777453932?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+ "forwarded_from": null,
+ "digest": false,
+ "hash": "28bc1b6da155",
+ "gholam": null,
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/Azaliamirh/status/2111191896777453932",
+   "domain": "x.com",
+   "author": {
+    "name": "Azalia Mirhoseini",
+    "handle": "Azaliamirh",
+    "avatar": "media/avatars/azaliamirh.webp"
+   },
+   "text": "NCMs are pretty fast! See the language generation speed vs. autoregressive and diffusion baselines below.",
+   "lang": "en",
+   "date": 1792182346,
+   "stats": {
+    "views": 10486,
+    "likes": 180,
+    "retweets": 20,
+    "replies": 5
+   },
+   "media": [
+    {
+     "type": "video",
+     "src": "media/5950/l0-0.mp4",
+     "poster": "media/5950/l0-0-poster.webp",
+     "width": 1920,
+     "height": 1080,
+     "duration": 11.2,
+     "gif": false,
+     "remote": "https://video.twimg.com/amplify_video/2111189854956748800/vid/avc1/1280x720/-VGlU4FErnLuogB9.mp4?tag=29"
+    }
+   ],
+   "links": [],
+   "quote": {
+    "author": {
+     "name": "Azalia Mirhoseini",
+     "handle": "Azaliamirh",
+     "avatar": "media/avatars/azaliamirh.webp"
+    },
+    "text": "Introducing Next-Concept Models (NCMs), a new paradigm for language generation that is significantly faster and more data efficient than diffusion models.\n\nHow it works:\n1) First we learn a series of compressed representations of text from coarse to fine-grained, aka ‘concepts’. This step is done once, similar to training a tokenizer.\n\n2) At inference, we generate text going from a coarse to fine hierarchy via these ‘concepts’. A transformer predicts each level of the hierarchy sequentially, but the codes within each level are generated in parallel.\n\nCompared to strong diffusion language models, NCM achieves:\n\nUp to 31× faster generation on downstream tasks like summarization and machine translation.\n\n10-21× faster generation across TinyStories, LM1B, and OpenWebText, using  3-5× fewer training data.\n\nOn reasoning tasks like Sudoku, NCM outperforms both autoregressive and diffusion baselines with fewer sampling steps.\n\nLead authors: @KumbongHermann & @ishanskhare, together with a great team!",
+    "lang": "en",
+    "date": 1792008170,
+    "stats": {
+     "views": 40393,
+     "likes": 762,
+     "retweets": 68,
+     "replies": 22
+    },
+    "media": [
+     {
+      "type": "image",
+      "src": "media/5950/l0q-0.webp",
+      "width": 1400,
+      "height": 582,
+      "remote": "https://pbs.twimg.com/media/HUncXxeawAAHKlF.jpg?name=orig"
+     }
+    ],
+    "links": []
+   }
+  }
+ ],
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/azaliamirh/status/2111191896777453932?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+  "site": "FxTwitter",
+  "title": "Azalia Mirhoseini (@Azaliamirh)",
+  "description": "NCMs are pretty fast! See the language generation speed vs. autoregressive and diffusion baselines below.\nQuoting Azalia Mirhoseini (@Azaliamirh)\nIntroducing Next-Concept Models (NCMs), a new paradigm for language generation that is significantly faster…",
+  "image": null
+ },
+ "article": {
+  "title": "NCMs are pretty fast! See the language generation speed vs. autoregressive and diffusion baselines below.",
+  "source_title": null,
+  "body": [],
+  "why": null,
+  "tags": []
+ },
+ "updated": "2026-10-24T11:01:04+00:00"
+}

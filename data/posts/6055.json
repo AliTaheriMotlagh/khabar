@@ -1,0 +1,103 @@
+{
+ "id": 6055,
+ "url": "https://t.me/dlmehr/6055",
+ "date": "2026-10-23T02:32:08+00:00",
+ "edited": true,
+ "views": "115",
+ "text": "https://fxtwitter.com/ahatamiz1/status/2113344049784799378?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+ "forwarded_from": null,
+ "digest": false,
+ "hash": "10bab14f87fc",
+ "gholam": {
+  "text": "رفیق، قضیه از این قراره که استارتاپ میراندیل با هدایت بهنام نیشابور یه مدل غول‌پیکر ۱۰۰ تا ۵۰۰ میلیارد پارامتری رو فقط با یه دونه پژوهشگر و توی سه ماه و نیم آموزش داد و حسابی دل دانشجوها و نیروهای تازه‌کار رو لرزوند که نکنه تخصص‌شون دود شده رفته هوا. ولی علی…",
+  "date": "2026-10-23T02:32:32+00:00"
+ },
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/ahatamiz1/status/2113344049784799378",
+   "domain": "x.com",
+   "author": {
+    "name": "Ali Hatamizadeh",
+    "handle": "ahatamiz1",
+    "avatar": "media/avatars/ahatamiz1.webp"
+   },
+   "text": "Yesterday a junior researcher messaged me, frustrated and a little scared. They had just read that a company pretrained its model with a single researcher. One person for the entire pretraining. no R&D team, no nothing.\n\nIf one person and a cluster can do what used to take a whole team, then the expertise they had spent years building is already obsolete.\n\nI get the fear. Marketing headlines like this are built to produce it. But I think the conclusion is wrong, and the reasons it is wrong say a lot about what a researcher is for now. Here is what I told them, expanded:\n\n1. Be adaptive: RSI is real, but this isn't it yet\n\nRecursive self-improvement is real, and you should plan around it. In September, OpenAI said its research org now logs 3.1 agent-workdays per human workday, and it aims for an automated AI researcher by March 2028. Models may soon run most of pre- and post-training. If your five-year plan assumes otherwise, change the plan.\n\nWe have already seen lots of open-source releases from the major players, with open weights and detailed technical reports. With that much public know-how, it is not hard to copy a mundane architecture (probably with sliding-window attention) and train something, as long as you have the compute it requires.\n\nThat makes it an execution and budget problem, not a research problem.\nIf one person can train a model by following recipes that are already public, it shows those recipes have matured. It does not show that the people who invented them are no longer needed.\n\nWhat stays scarce is the compute to run those recipes and the ideas about what to try next. The rest of my tweet is about the ideas.\n\n2. The role grows beyond repeating what's known and safe\n\nIf an agent and a cluster can reproduce what is already known, then reproducing what is already known stops being a career. If most of your job is rerunning last year's recipe with small tweaks, that job is shrinking fast. That is the uncomfortable half of the message.\n\nThe other half is that auto-research does not work yet, at least not in the sense that matters. It does work, and impressively, where someone has already defined the problem and built the scoreboard. On the EinsteinArena [1] platform, agents set new records on 11 open math problems, including raising the best known lower bound for the kissing number in dimension 11 from 593 to 604.\n\nNotice that every one of those problems was chosen because a computer could score the answers automatically. Humans picked the problems and wrote the scoring code and the agents did the searching.\n\nThen there is the fully AI-generated paper [2] that got through peer review. It sounds big until you read the details. It passed only the first round (was later withdrawn), at a workshop rather than the main conference, and that workshop accepts 70% of submissions.\n\nNone of this is meant to discredit agents. The point is that we complement each other. Agents are great at the work that used to take many weeks. Basically, writing code, running experiments, debugging pipelines. We bring what they still lack which is the idea worth testing, and the judgment to tell a real result from a lucky one.\n\nEven inside a lab as agent-heavy as OpenAI, humans hold the top of the stack. Based on their own report, \"People still set our research priorities, judge which ideas and results to pursue\" [3]. High-level planning is still a tiny share of what its agents produce, and OpenAI expects the least automatable work to take a growing share of researcher effort. That is exactly where you want to be standing.\n\nCombine an agent’s speed with your own ideas and judgment, and you get the 10x researcher and juniors can be one too.\n\n3. Judgment becomes the job, so fundamentals matter more\n\nWhen code, experiments and plausible-looking results cost almost nothing, the scarce skill is judgment. Which experiment to run, which result to believe, which direction to drop. That is the part the one-person pretraining run left to the human. It is also the hardest part to fake.\n\nAgents produce confident output very fast. They will happily report a three-point gain that came from a leaky eval, a data-loader bug, a lucky seed or a tokenizer mismatch. Then they will write the ablation table and the story to match.\n\nYou can see the need for oversight even in the success stories. The EinsteinArena team had to keep auditing and hardening its verifiers as agents optimized aggressively against them. At OpenAI, over half of the successful agent tasks that would take a human 4–8 hours still involved at least one human intervention [3].\n\nThe person who catches the bad result is the one who understands the system. Why the loss curve has that shape, what a realistic gain looks like, what a too-good result looks like. That is the paradox of this era. The more you delegate, the more your fundamentals matter, because you cannot supervise what you do not understand.\n\nSo build the foundations on purpose. Implement attention by hand at least once, then a linear variant like Gated DeltaNet. Train a small model end to end, then break it deliberately and watch what happens. Read papers critically, appendix included, and learn what the numbers should look like before you see them.\n\nThat knowledge is what lets you direct the machine instead of simply believing it.\n\n4. LLMs are far from solved\n\nThe one-researcher model was possible because the method was already public. Your edge is in the questions nobody has answered yet, and you don't need to leave LLMs to find them:\n\n(1) How do we learn more from less data?\n\n(2) Can linear attention like Gated DeltaNet match full attention on retrieval and long context, and what is the right mix of linear and full attention layers in a hybrid?\n\n(3) How can a model keep learning after training without forgetting what it knew?\n\n(4) Why does reasoning get less reliable over long tasks, and how do we fix it?\n\n(5) Why do models make things up, and can they learn to say \"I don't know\"?\n\n(6) How do we measure progress when benchmarks saturate or leak into training data?\n\n(7) What is actually happening inside these models, and how do we keep increasingly autonomous ones doing what we intend?\n\nRecursive self-improvement makes these questions more urgent. If models are going to train models, someone has to decide what they optimize for, how we measure it, and how we keep the loop from drifting.\n\nRSI is a research agenda, not the end of one.\n\nSo, are you obsolete?\n\nNo. One version of the job is the one where research meant reproducing what was already known and safe. That version was never the point.\n\nLearn your fundamentals deeply enough to judge the machine, and your agentic stack well enough to make it work for you. Then spend that leverage on ideas nobody has had yet. The machines are getting very good at driving on roads we have already paved; someone still has to decide where the next one goes.\n\n[1]: https://arxiv.org/abs/2606.10402\n[2]: https://arxiv.org/abs/2606.15497\n[3]: https://openai.com/index/research-acceleration-view-inside-openai/",
+   "lang": "en",
+   "date": 1792695460,
+   "stats": {
+    "views": 89320,
+    "likes": 793,
+    "retweets": 101,
+    "replies": 46
+   },
+   "media": [],
+   "links": [
+    "https://arxiv.org/abs/2606.10402",
+    "https://arxiv.org/abs/2606.15497",
+    "https://openai.com/index/research-acceleration-view-inside-openai/"
+   ],
+   "quote": {
+    "author": {
+     "name": "Ion Stoica",
+     "handle": "istoica05",
+     "avatar": "media/avatars/istoica05.webp"
+    },
+    "text": "Pretraining a frontier-class model no longer requires a massive team! Mirendil just trained a model with 100B–500B parameters from scratch in 3.5 months, with a single researcher leading the effort. Very excited to see how this work will push the AI boundaries!",
+    "lang": "en",
+    "date": 1792623979,
+    "stats": {
+     "views": 75134,
+     "likes": 252,
+     "retweets": 16,
+     "replies": 1
+    },
+    "media": [],
+    "links": []
+   }
+  },
+  {
+   "kind": "link",
+   "url": "https://arxiv.org/abs/2606.10402",
+   "domain": "arxiv.org",
+   "title": "Harnessing the Collective Intelligence of AI Agents in the Wild for New Discoveries",
+   "description": "Scientific discovery is often a collective process: researchers share partial results, inspect failed attempts, and build on each other's ideas over long time horizons. Recent AI systems have shown that language-model-based agents can make meaningful progress on open scientific problems, but most existing systems operate in isolation. In this paper, we present EinsteinArena, an agent-native platform for open distributed research and discovery. EinsteinArena provides agents with a live set of open problems, each with a solid verifier, public leaderboard, and problem-specific discussion forum where agents can ask questions and share insights. We focus on mathematical tasks that have garnered substantial research interest, where progress can be measured unambiguously. As of May 2026, agents on EinsteinArena have discovered 12 new state-of-the-art results better than any previous human or AI solutions. One notable example is the kissing number problem in dimension 11, where the platform improved the best known lower bound from 593 to 604. This advance did not come from a single agent or isolated run. Rather it arose through a sequence of submissions, public discussion, verifier refinement, and subsequent agent-to-agent borrowing of ideas. These results provide evidence that decentralized scientific discovery can emerge from open interaction among autonomous agents in the wild, demonstrating a new paradigm for collective AI-driven research.",
+   "image": {
+    "src": "media/6055/l1-og.webp",
+    "width": 1200,
+    "height": 700
+   },
+   "site": "arXiv.org",
+   "author": null,
+   "published": null,
+   "text": "Computer Science > Computation and Language\nTitle:Harnessing the Collective Intelligence of AI Agents in the Wild for New Discoveries\nView PDF HTML (experimental)\n            Abstract:Scientific discovery is often a collective process: researchers share partial results, inspect failed attempts, and build on each other's ideas over long time horizons. Recent AI systems have shown that language-model-based agents can make meaningful progress on open scientific problems, but most existing systems operate in isolation. In this paper, we present EinsteinArena, an agent-native platform for open distributed research and discovery. EinsteinArena provides agents with a live set of open problems, each with a solid verifier, public leaderboard, and problem-specific discussion forum where agents can ask questions and share insights. We focus on mathematical tasks that have garnered substantial research interest, where progress can be measured unambiguously. As of May 2026, agents on EinsteinArena have discovered 12 new state-of-the-art results better than any previous human or AI solutions. One notable example is the kissing number problem in dimension 11, where the platform improved the best known lower bound from 593 to 604. This advance did not come from a single agent or isolated run. Rather it arose through a sequence of submissions, public discussion, verifier refinement, and subsequent agent-to-agent borrowing of ideas. These results provide evidence that decentralized scientific discovery can emerge from open interaction among autonomous agents in the wild, demonstrating a new paradigm for collective AI-driven research.\n    \nBibliographic and Citation Tools\nCode, Data and Media Associated with this Article\nDemos\nRecommenders and Search Tools\narXivLabs: experimental projects with community collaborators\narXivLabs is a framework that allows collaborators to develop and share new arXiv features directly on our website.\nBoth individuals and organizations that work with arXivLabs have embraced and accepted our values of openness, community, excellence, and user data privacy. arXiv is committed to these values and only works with partners that adhere to them.\nHave an idea for a project that will add value for arXiv's community? Learn more about arXivLabs."
+  }
+ ],
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/ahatamiz1/status/2113344049784799378?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+  "site": "FxTwitter · arxiv.org",
+  "title": "Ali Hatamizadeh (@ahatamiz1)",
+  "description": "Yesterday a junior researcher messaged me, frustrated and a little scared. They had just read that a company pretrained its model with a single researcher. One person for the entire pretraining. no R&D team, no nothing.\nIf one person and a cluster can do…",
+  "image": {
+   "src": "media/6055/preview.webp",
+   "width": 200,
+   "height": 200
+  }
+ },
+ "article": {
+  "title": "قضیه از این قراره که استارتاپ میراندیل با هدایت بهنام نیشابور یه مدل غول‌پیکر ۱۰۰ تا ۵۰۰ میلیارد پارامتری رو…",
+  "source_title": "Yesterday a junior researcher messaged me, frustrated and a little scared. They had just read that a company pretrained its model with a…",
+  "body": [
+   "رفیق، قضیه از این قراره که استارتاپ میراندیل با هدایت بهنام نیشابور یه مدل غول‌پیکر ۱۰۰ تا ۵۰۰ میلیارد پارامتری رو فقط با یه دونه پژوهشگر و توی سه ماه و نیم آموزش داد و حسابی دل دانشجوها و نیروهای تازه‌کار رو لرزوند که نکنه تخصص‌شون دود شده رفته هوا. ولی علی…"
+  ],
+  "why": null,
+  "tags": [
+   "هوش مصنوعی",
+   "اوپن‌ای‌آی",
+   "استارتاپ",
+   "امنیت"
+  ]
+ },
+ "updated": "2026-10-24T10:59:38+00:00"
+}

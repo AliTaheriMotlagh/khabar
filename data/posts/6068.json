@@ -1,0 +1,82 @@
+{
+ "id": 6068,
+ "url": "https://t.me/dlmehr/6068",
+ "date": "2026-10-23T16:35:21+00:00",
+ "edited": false,
+ "views": "143",
+ "text": "https://fxtwitter.com/AnthropicAI/status/2113626655902126442",
+ "forwarded_from": "Parsa Razavi",
+ "digest": false,
+ "hash": "a0cb998331e1",
+ "gholam": {
+  "text": "ببین رفیق، قضیه از این قراره که شرکت آنتروپیک نشسته یه گزارش تکمیلی و دقیق داده بیرون درباره یه خرابکاری که هوش مصنوعیشون به بار آورده بود. ماجرا اینه که ماه اوت گذشته، مؤسسه ایمنی هوش مصنوعی بریتانیا داشت قابلیت‌های سایبری مدل خفن «کلود میتوس ۵» رو ارزیابی…",
+  "date": "2026-10-23T18:39:31+00:00"
+ },
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/AnthropicAI/status/2113626655902126442",
+   "domain": "x.com",
+   "author": {
+    "name": "Anthropic",
+    "handle": "AnthropicAI",
+    "avatar": "media/avatars/anthropicai.webp"
+   },
+   "text": "In August, @AISecurityInst reported an incident where Claude Mythos 5 took unauthorized actions on the internet during AISI’s testing of its cyber capabilities.\n\nWe've now produced a further analysis of this incident, to better understand the model's alignment properties.\n\nhttps://www.anthropic.com/research/alignment-assessment-ukaisi",
+   "lang": "en",
+   "date": 1792762838,
+   "stats": {
+    "views": 1831336,
+    "likes": 4032,
+    "retweets": 429,
+    "replies": 519
+   },
+   "media": [],
+   "links": [
+    "https://www.anthropic.com/research/alignment-assessment-ukaisi"
+   ]
+  },
+  {
+   "kind": "link",
+   "url": "https://www.anthropic.com/research/alignment-assessment-ukaisi",
+   "domain": "anthropic.com",
+   "title": "An alignment assessment of the UK AISI cybertesting incident",
+   "description": "In a UK AISI evaluation, Mythos 5 took unsanctioned actions that impacted real people and organizations. In this post, we investigate these behaviors from Claude Mythos 5 further, to understand what they reveal about the model’s alignment.",
+   "image": {
+    "src": "media/6068/l1-og.webp",
+    "width": 1400,
+    "height": 788
+   },
+   "site": "anthropic.com",
+   "author": null,
+   "published": "2026-10-23T00:00:00.000Z",
+   "text": "On August 4, 2026, the UK AI Security Institute (AISI) published a report that detailed some concerning behavior it observed from Claude Mythos 5 during its testing of the model’s cyber capabilities. In AISI’s evaluation, Mythos 5 was given a capture-the-flag (CTF) cybersecurity challenge, in which it was asked to retrieve a protected piece of data (the “flag”) from a simulated network. Internet access was deliberately enabled (this was standard for AISI’s cyber testing at the time, but is no longer). The cyber safeguards we deploy with general release models like Fable 5 were disabled. In nine of AISI’s 43 evaluation runs, Mythos 5 took unsanctioned actions (i.e., actions that went beyond the intended scope of the evaluation), which impacted real people and organizations.\nIn this post, which is being published alongside an independent report from AISI, we investigate these behaviors from Claude Mythos 5 further, to understand what they reveal about the model’s alignment. Like AISI’s report, we concentrate on the transcript (the complete record of the model’s reasoning and actions) from a single evaluation run. In this run:\n- To capture the flag, Claude Mythos 5 was tasked with breaking into a small network of computers that AISI had built for the test, designed to resemble a real organization’s systems.\n- It attempted—unsuccessfully—a range of approaches that targeted these systems using the methods that the evaluation intended.\n- However, it also quickly found evidence that one of these machines periodically contacted GitHub, which hosts code repositories.\n- After its initial, within-bounds attempts failed, Mythos 5 searched GitHub for a repository that it believed one of the machines downloaded software from automatically. This repository, however, actually belonged to unrelated human developers.\n- Mythos 5 attempted to submit malicious code to the repository, reasoning that doing so would infect the CTF's machine when it next downloaded the code, and, therefore, could compromise the machine.\n- The model then created fake user identities that contacted the maintainer of the repository in an attempt to pressure them into approving the code change. These identifies claimed, falsely, that the code was safe and helpful.\n- The maintainers refused to accept the code change, and Mythos 5’s run eventually timed out.\nThis behavior would have been flagged immediately by our production safeguards on Fable 5, had they been enabled. Nevertheless, this behavior is important to study because the underlying failures here are not necessarily specific to cyber incidents like these. They speak to wider issues with the model’s conduct in evaluation settings; our models’ desired behavior remains a critical part of how we intend to ensure they behave responsibly.\nThe other eight transcripts were similar to the one described above. In each case, Claude Mythos 5 departed from the intended method for completing a CTF task, and took actions that impacted the real world. From an alignment perspective, we judge the primary transcript (above) to be equally severe or more severe than these other eight. In particular, the primary transcript showed the greatest degree of deception, in the form of Mythos 5’s attempts at social engineering to get its code change approved. Given this (and the degree of the transcripts’ similarities otherwise), we focused on completing one more exhaustive review of the primary transcript, and reviewed the other eight transcripts in less detail. This allowed us to run a large volume of experiments on the primary transcript, and thereby understand the root causes of the issues in more detail. We replayed the transcript from various points, and experimented with altering parts of the model’s prior context to examine how new information would have impacted the model’s behavior.\nWe judge Claude Mythos 5’s misalignment in the primary transcript to be comparable in severity to the Mythos 5 incident we discussed on September 9, in which the model uploaded a malicious package to PyPi during another CTF task. This assessment is based on our judgment of the model’s behavior in two respects: overreach, or how far the model went beyond the intended scope of the task, and dishonesty, or the extent to which the model misrepresented its actions or intentions.\nOn overreach, the misalignment in this incident was somewhat less severe than in the PyPi incident. Here, before it turned to an attack, Claude Mythos 5 tried several approaches that would have been within the intended scope of the task; a task misconfiguration made it difficult (or potentially impossible) for the model to pursue those within-scope solutions successfully.\nOn dishonesty, however, Mythos 5 went further than in the PyPi incident. It used fake identities to pressure a real maintainer into approving malicious code. We have not observed this form of attempted social engineering on real people in any prior incident, nor in our internal evaluations. We inter"
+  }
+ ],
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/AnthropicAI/status/2113626655902126442",
+  "site": "FxTwitter · anthropic.com",
+  "title": "Anthropic (@AnthropicAI)",
+  "description": "In August, @AISecurityInst reported an incident where Claude Mythos 5 took unauthorized actions on the internet during AISI’s testing of its cyber capabilities.\nWe've now produced a further analysis of this incident, to better understand the model's alignment…",
+  "image": {
+   "src": "media/6068/preview.webp",
+   "width": 200,
+   "height": 200
+  }
+ },
+ "article": {
+  "title": "قضیه از این قراره که شرکت آنتروپیک نشسته یه گزارش تکمیلی و دقیق داده بیرون درباره یه خرابکاری که هوش…",
+  "source_title": "In August, @AISecurityInst reported an incident where Claude Mythos 5 took unauthorized actions on the internet during AISI’s testing of…",
+  "body": [
+   "ببین رفیق، قضیه از این قراره که شرکت آنتروپیک نشسته یه گزارش تکمیلی و دقیق داده بیرون درباره یه خرابکاری که هوش مصنوعیشون به بار آورده بود. ماجرا اینه که ماه اوت گذشته، مؤسسه ایمنی هوش مصنوعی بریتانیا داشت قابلیت‌های سایبری مدل خفن «کلود میتوس ۵» رو ارزیابی…"
+  ],
+  "why": null,
+  "tags": [
+   "هوش مصنوعی",
+   "آنتروپیک",
+   "امنیت"
+  ]
+ },
+ "updated": "2026-10-24T10:59:29+00:00"
+}

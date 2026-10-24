@@ -1,0 +1,71 @@
+{
+ "id": 6045,
+ "url": "https://t.me/dlmehr/6045",
+ "date": "2026-10-22T18:01:47+00:00",
+ "edited": false,
+ "views": "193",
+ "text": "https://fxtwitter.com/claudeai/status/2112962248218148878?s=46",
+ "forwarded_from": "Hossein Zakariaee",
+ "digest": false,
+ "hash": "781086aaf8d5",
+ "gholam": {
+  "text": "رفیق، بچه‌های آنتروپیک یه قابلیت تر و تمیز برای بخش امنیت کلود (Claude Security) رو کردن که خوراک برنامه‌نویس‌ها و تیم‌های فنیه. قضیه از این قراره که فقط کافیه یه بار ریپازیتوری‌های کدتون رو بهش وصل کنید تا اول یه اسکن عمیق و درست‌وحسابی بزنه و از اون به بعد…",
+  "date": "2026-10-22T18:02:09+00:00"
+ },
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/claudeai/status/2112962248218148878",
+   "domain": "x.com",
+   "author": {
+    "name": "Claude",
+    "handle": "claudeai",
+    "avatar": "media/avatars/claudeai.webp"
+   },
+   "text": "Claude Security now keeps up with your code as it changes.\n\nConnect your repositories once. Claude runs a deep first scan, then re-scans as changes land, so findings stay close to the current state of your code.\n\nIn public beta on Claude Enterprise.",
+   "lang": "en",
+   "date": 1792604431,
+   "stats": {
+    "views": 798522,
+    "likes": 11040,
+    "retweets": 565,
+    "replies": 374
+   },
+   "media": [
+    {
+     "type": "image",
+     "src": "media/6045/l0-0.webp",
+     "width": 1400,
+     "height": 788,
+     "remote": "https://pbs.twimg.com/media/HVK4ttCWMAAxox-.jpg?name=orig"
+    }
+   ],
+   "links": []
+  }
+ ],
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/claudeai/status/2112962248218148878?s=46",
+  "site": "🧵 Thread • FxTwitter",
+  "title": "Claude (@claudeai)",
+  "description": "Claude Security now keeps up with your code as it changes.\nConnect your repositories once. Claude runs a deep first scan, then re-scans as changes land, so findings stay close to the current state of your code.\nIn public beta on Claude Enterprise.",
+  "image": {
+   "src": "media/6045/preview.webp",
+   "width": 800,
+   "height": 450
+  }
+ },
+ "article": {
+  "title": "بچه‌های آنتروپیک یه قابلیت تر و تمیز برای بخش امنیت کلود (Claude Security) رو کردن که خوراک برنامه‌نویس‌ها و…",
+  "source_title": "Claude Security now keeps up with your code as it changes.",
+  "body": [
+   "رفیق، بچه‌های آنتروپیک یه قابلیت تر و تمیز برای بخش امنیت کلود (Claude Security) رو کردن که خوراک برنامه‌نویس‌ها و تیم‌های فنیه. قضیه از این قراره که فقط کافیه یه بار ریپازیتوری‌های کدتون رو بهش وصل کنید تا اول یه اسکن عمیق و درست‌وحسابی بزنه و از اون به بعد…"
+  ],
+  "why": null,
+  "tags": [
+   "آنتروپیک",
+   "امنیت"
+  ]
+ },
+ "updated": "2026-10-24T10:59:48+00:00"
+}

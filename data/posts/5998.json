@@ -1,0 +1,86 @@
+{
+ "id": 5998,
+ "url": "https://t.me/dlmehr/5998",
+ "date": "2026-10-20T19:47:12+00:00",
+ "edited": true,
+ "views": "169",
+ "text": "https://fxtwitter.com/kimmonismus/status/2112630840312349124?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+ "forwarded_from": null,
+ "digest": false,
+ "hash": "eee7878b0c72",
+ "gholam": null,
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/kimmonismus/status/2112630840312349124",
+   "domain": "x.com",
+   "author": {
+    "name": "Chubby♨️",
+    "handle": "kimmonismus",
+    "avatar": "media/avatars/kimmonismus.webp"
+   },
+   "text": "Anthropic reportedly grew revenue nearly 15x while taking on more than $600B in future compute commitments.\n\nWSJ reviewed a draft IPO prospectus:\n\n- H1 revenue jumped from $1.1B to $16.3B. Compute and infrastructure spending rose from $2.3B to nearly $9B.\n\n- Revenue is scaling much faster than compute costs.\nBut the commitments are enormous: $450B in cloud contracts, mostly noncancelable, plus other infrastructure deals. Another $150B is under negotiation.\n\nThey still aim for a $2t valuation. I think that's still very realistic.",
+   "lang": "en",
+   "date": 1792525417,
+   "stats": {
+    "views": 49195,
+    "likes": 578,
+    "retweets": 40,
+    "replies": 62
+   },
+   "media": [
+    {
+     "type": "image",
+     "src": "media/5998/l0-0.webp",
+     "width": 1294,
+     "height": 1096,
+     "remote": "https://pbs.twimg.com/media/HVGSSp-XkAAH73M.png?name=orig"
+    }
+   ],
+   "links": [],
+   "quote": {
+    "author": {
+     "name": "The Wall Street Journal",
+     "handle": "WSJ",
+     "avatar": "media/avatars/wsj.webp"
+    },
+    "text": "Exclusive: Anthropic's draft IPO filing reveals red-hot growth, massive computing costs and an $80 billion net loss. Here are the highlights. https://on.wsj.com/3WmyWAR",
+    "lang": "en",
+    "date": 1792524774,
+    "stats": {
+     "views": 217849,
+     "likes": 360,
+     "retweets": 84,
+     "replies": 35
+    },
+    "media": [],
+    "links": [
+     "https://on.wsj.com/3WmyWAR"
+    ]
+   }
+  }
+ ],
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/kimmonismus/status/2112630840312349124?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+  "site": "FxTwitter",
+  "title": "Chubby ♨️ (@kimmonismus)",
+  "description": "Anthropic reportedly grew revenue nearly 15x while taking on more than $600B in future compute commitments.\nWSJ reviewed a draft IPO prospectus:\n- H1 revenue jumped from $1.1B to $16.3B. Compute and infrastructure spending rose from $2.3B to nearly $9B.…",
+  "image": {
+   "src": "media/5998/preview.webp",
+   "width": 800,
+   "height": 677
+  }
+ },
+ "article": {
+  "title": "Anthropic reportedly grew revenue nearly 15x while taking on more than $600B in future compute commitments.",
+  "source_title": null,
+  "body": [],
+  "why": null,
+  "tags": [
+   "آنتروپیک",
+   "استارتاپ"
+  ]
+ },
+ "updated": "2026-10-24T11:00:28+00:00"
+}

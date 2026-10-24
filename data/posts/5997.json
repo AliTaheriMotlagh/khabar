@@ -1,0 +1,64 @@
+{
+ "id": 5997,
+ "url": "https://t.me/dlmehr/5997",
+ "date": "2026-10-20T19:24:07+00:00",
+ "edited": true,
+ "views": "174",
+ "text": "https://fxtwitter.com/iscienceluvr/status/2112597012088844407?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+ "forwarded_from": null,
+ "digest": false,
+ "hash": "098a29c88f68",
+ "gholam": null,
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/iScienceLuvr/status/2112597012088844407",
+   "domain": "x.com",
+   "author": {
+    "name": "Tanishq Mathew Abraham, Ph.D.",
+    "handle": "iScienceLuvr",
+    "avatar": "media/avatars/iscienceluvr.webp"
+   },
+   "text": "Cancer patients with the same diagnosis often have very different tumor biology.\n\nMolecular testing can reveal underlying differences, but that's slow and expensive.\n\nIntroducing Holon-S1, our platform to predict genes and biomarkers from routine pathology slides.\n\n• beats two other models at predicting spatial gene activity in a controlled comparison\n• has identified potentially novel biomarkers in breast cancer and colon cancer\n• evaluated across 16 organ types and more than 15 scanners, using slides from both formalin-fixed, paraffin-embedded and fresh-frozen tissue.\n\nWe believe Holon-S1 has the potential to help researchers find new biomarkers in slides they already have, discover treatment targets, and bring more personalized cancer care within reach!",
+   "lang": "en",
+   "date": 1792517352,
+   "stats": {
+    "views": 226974,
+    "likes": 2571,
+    "retweets": 339,
+    "replies": 166
+   },
+   "media": [
+    {
+     "type": "video",
+     "src": "media/5997/l0-0.mp4",
+     "poster": "media/5997/l0-0-poster.webp",
+     "width": 1920,
+     "height": 1080,
+     "duration": 212.587,
+     "gif": false,
+     "remote": "https://video.twimg.com/amplify_video/2112590555838644224/vid/avc1/1280x720/MhpKZm8hwCxP1y-o.mp4?tag=29"
+    }
+   ],
+   "links": []
+  }
+ ],
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/iscienceluvr/status/2112597012088844407?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+  "site": "🧵 Thread • FxTwitter",
+  "title": "Tanishq Mathew Abraham, Ph.D. (@iScienceLuvr)",
+  "description": "Cancer patients with the same diagnosis often have very different tumor biology.\nMolecular testing can reveal underlying differences, but that's slow and expensive.\nIntroducing Holon-S1, our platform to predict genes and biomarkers from routine pathology…",
+  "image": null
+ },
+ "article": {
+  "title": "Cancer patients with the same diagnosis often have very different tumor biology.",
+  "source_title": null,
+  "body": [],
+  "why": null,
+  "tags": [
+   "سلامت"
+  ]
+ },
+ "updated": "2026-10-24T11:00:30+00:00"
+}

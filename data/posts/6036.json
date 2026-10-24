@@ -1,0 +1,57 @@
+{
+ "id": 6036,
+ "url": "https://t.me/dlmehr/6036",
+ "date": "2026-10-21T23:59:07+00:00",
+ "edited": true,
+ "views": "146",
+ "text": "https://fxtwitter.com/khoomeik/status/2113008701842038797?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+ "forwarded_from": null,
+ "digest": false,
+ "hash": "9a16f9546ff5",
+ "gholam": null,
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/khoomeik/status/2113008701842038797",
+   "domain": "x.com",
+   "author": {
+    "name": "Rohan Pandey",
+    "handle": "khoomeik",
+    "avatar": "media/avatars/khoomeik.webp"
+   },
+   "text": "neolabs have been *cooking* in the last 24 hrs:\n- @humansand ampersand: RL’d against a user model\n- @flappyairplanes: $1b series a + megakernels demos\n- @Recursive_SI flint: open coding model with impressive local inference\n- @mirendil: good pretrain accelerated by agents",
+   "lang": "en",
+   "date": 1792615506,
+   "stats": {
+    "views": 37942,
+    "likes": 746,
+    "retweets": 26,
+    "replies": 13
+   },
+   "media": [],
+   "links": []
+  }
+ ],
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/khoomeik/status/2113008701842038797?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+  "site": "🧵 Thread • FxTwitter",
+  "title": "Rohan Pandey (@khoomeik)",
+  "description": "neolabs have been *cooking* in the last 24 hrs:\n- @humansand ampersand: RL’d against a user model\n- @flappyairplanes: $1b series a + megakernels demos\n- @Recursive_SI flint: open coding model with impressive local inference\n- @mirendil: good pretrain accelerated…",
+  "image": {
+   "src": "media/6036/preview.webp",
+   "width": 200,
+   "height": 200
+  }
+ },
+ "article": {
+  "title": "neolabs have been *cooking* in the last 24 hrs:",
+  "source_title": null,
+  "body": [],
+  "why": null,
+  "tags": [
+   "استارتاپ"
+  ]
+ },
+ "updated": "2026-10-24T10:59:53+00:00"
+}

@@ -1,0 +1,65 @@
+{
+ "id": 5955,
+ "url": "https://t.me/dlmehr/5955",
+ "date": "2026-10-18T14:32:57+00:00",
+ "edited": false,
+ "views": "230",
+ "text": "https://fxtwitter.com/claudedevs/status/2111209208012210409?s=46",
+ "forwarded_from": "Hossein Zakariaee",
+ "digest": false,
+ "hash": "11a81d33aba4",
+ "gholam": null,
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/ClaudeDevs/status/2111209208012210409",
+   "domain": "x.com",
+   "author": {
+    "name": "ClaudeDevs",
+    "handle": "ClaudeDevs",
+    "avatar": "media/avatars/claudedevs.webp"
+   },
+   "text": "We keep improving performance across Claude, and you may have noticed it starts responding sooner!\n\nClaude Code now gzips the conversation it sends on every turn, so it reaches the model faster. Cloud sessions also start up as soon as you start typing.",
+   "lang": "en",
+   "date": 1792186474,
+   "stats": {
+    "views": 2898325,
+    "likes": 17435,
+    "retweets": 741,
+    "replies": 678
+   },
+   "media": [
+    {
+     "type": "image",
+     "src": "media/5955/l0-0.webp",
+     "width": 1400,
+     "height": 787,
+     "remote": "https://pbs.twimg.com/media/HUyFfylbMAAtxEQ.jpg?name=orig"
+    }
+   ],
+   "links": []
+  }
+ ],
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/claudedevs/status/2111209208012210409?s=46",
+  "site": "FxTwitter",
+  "title": "ClaudeDevs (@ClaudeDevs)",
+  "description": "We keep improving performance across Claude, and you may have noticed it starts responding sooner!\nClaude Code now gzips the conversation it sends on every turn, so it reaches the model faster. Cloud sessions also start up as soon as you start typing.",
+  "image": {
+   "src": "media/5955/preview.webp",
+   "width": 800,
+   "height": 450
+  }
+ },
+ "article": {
+  "title": "We keep improving performance across Claude, and you may have noticed it starts responding sooner!",
+  "source_title": null,
+  "body": [],
+  "why": null,
+  "tags": [
+   "آنتروپیک"
+  ]
+ },
+ "updated": "2026-10-24T11:01:02+00:00"
+}

@@ -1,0 +1,65 @@
+{
+ "id": 6002,
+ "url": "https://t.me/dlmehr/6002",
+ "date": "2026-10-20T20:47:30+00:00",
+ "edited": true,
+ "views": "160",
+ "text": "https://fxtwitter.com/geckorobotics/status/2112491521798709676?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+ "forwarded_from": null,
+ "digest": false,
+ "hash": "737d3de22c8a",
+ "gholam": null,
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/geckorobotics/status/2112491521798709676",
+   "domain": "x.com",
+   "author": {
+    "name": "Gecko Robotics",
+    "handle": "geckorobotics",
+    "avatar": "media/avatars/geckorobotics.webp"
+   },
+   "text": "Today, we're announcing that our contract with the U.S. Navy has quadrupled to $300 million to improve fleet readiness.\n\nGecko’s AI and robotic technology is able to save up to $8 million in repair costs alone per ship, while also identifying structural issues up to 50 times faster than traditional methods.\n\nBy reducing inspection times from months to days we are able to get ships back to sea quicker.\n\nThis fourfold expansion will accommodate rapid robotic deployment across the Navy and is one of the strongest public endorsements yet of operational AI and robotics in defense.",
+   "lang": "en",
+   "date": 1792492201,
+   "stats": {
+    "views": 30920,
+    "likes": 342,
+    "retweets": 34,
+    "replies": 11
+   },
+   "media": [
+    {
+     "type": "image",
+     "src": "media/6002/l0-0.webp",
+     "width": 1400,
+     "height": 788,
+     "remote": "https://pbs.twimg.com/media/HVBa8A1XoAAAO7_.jpg?name=orig"
+    }
+   ],
+   "links": []
+  }
+ ],
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/geckorobotics/status/2112491521798709676?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+  "site": "🧵 Thread • FxTwitter",
+  "title": "Gecko Robotics (@geckorobotics)",
+  "description": "Today, we're announcing that our contract with the U.S. Navy has quadrupled to $300 million to improve fleet readiness.\nGecko’s AI and robotic technology is able to save up to $8 million in repair costs alone per ship, while also identifying structural issues…",
+  "image": {
+   "src": "media/6002/preview.webp",
+   "width": 800,
+   "height": 450
+  }
+ },
+ "article": {
+  "title": "Today, we're announcing that our contract with the U.S. Navy has quadrupled to $300 million to improve fleet readiness.",
+  "source_title": null,
+  "body": [],
+  "why": null,
+  "tags": [
+   "هوش مصنوعی"
+  ]
+ },
+ "updated": "2026-10-24T11:00:26+00:00"
+}

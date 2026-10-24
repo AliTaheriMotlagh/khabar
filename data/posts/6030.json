@@ -1,0 +1,65 @@
+{
+ "id": 6030,
+ "url": "https://t.me/dlmehr/6030",
+ "date": "2026-10-21T19:33:41+00:00",
+ "edited": true,
+ "views": "177",
+ "text": "https://fxtwitter.com/claudeai/status/2112984664256241837?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+ "forwarded_from": null,
+ "digest": false,
+ "hash": "edbfafbe3e2f",
+ "gholam": null,
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/claudeai/status/2112984664256241837",
+   "domain": "x.com",
+   "author": {
+    "name": "Claude",
+    "handle": "claudeai",
+    "avatar": "media/avatars/claudeai.webp"
+   },
+   "text": "We’re opening a research preview of Claude Duet, a new app where Claude works as a proactive agent.\n\nIt comes to you with what needs your attention, completes tasks you ask of it, keeps working when you step away, and checks with you before it acts on your behalf.",
+   "lang": "en",
+   "date": 1792609775,
+   "stats": {
+    "views": 9956197,
+    "likes": 54748,
+    "retweets": 4187,
+    "replies": 2309
+   },
+   "media": [
+    {
+     "type": "video",
+     "src": "media/6030/l0-0.mp4",
+     "poster": "media/6030/l0-0-poster.webp",
+     "width": 1920,
+     "height": 1080,
+     "duration": 100.01,
+     "gif": false,
+     "remote": "https://video.twimg.com/amplify_video/2112982862186106880/vid/avc1/640x360/L7zosiEUW76tqYr-.mp4?tag=29"
+    }
+   ],
+   "links": []
+  }
+ ],
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/claudeai/status/2112984664256241837?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+  "site": "🧵 Thread • FxTwitter",
+  "title": "Claude (@claudeai)",
+  "description": "We’re opening a research preview of Claude Duet, a new app where Claude works as a proactive agent.\nIt comes to you with what needs your attention, completes tasks you ask of it, keeps working when you step away, and checks with you before it acts on your…",
+  "image": null
+ },
+ "article": {
+  "title": "We’re opening a research preview of Claude Duet, a new app where Claude works as a proactive agent.",
+  "source_title": null,
+  "body": [],
+  "why": null,
+  "tags": [
+   "هوش مصنوعی",
+   "آنتروپیک"
+  ]
+ },
+ "updated": "2026-10-24T10:59:58+00:00"
+}

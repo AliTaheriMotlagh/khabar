@@ -1,0 +1,66 @@
+{
+ "id": 5987,
+ "url": "https://t.me/dlmehr/5987",
+ "date": "2026-10-20T03:51:09+00:00",
+ "edited": true,
+ "views": "189",
+ "text": "https://fxtwitter.com/trycua/status/2112228154651881479?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+ "forwarded_from": null,
+ "digest": false,
+ "hash": "3b70b678ff72",
+ "gholam": null,
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/trycua/status/2112228154651881479",
+   "domain": "x.com",
+   "author": {
+    "name": "Cua",
+    "handle": "trycua",
+    "avatar": "media/avatars/trycua.webp"
+   },
+   "text": "1/ Introducing the Cua Spaces SDK.\n\nEvery big lab now ships a bot with its own computer: Grok Bot, Muse, dots. None let you bring your own. With Cua Spaces, now you can. \n\nPut Claude Code, Codex or any agent on compute you choose, and run jobs across all your computers at once.",
+   "lang": "en",
+   "date": 1792429410,
+   "stats": {
+    "views": 611182,
+    "likes": 3820,
+    "retweets": 268,
+    "replies": 178
+   },
+   "media": [
+    {
+     "type": "video",
+     "src": "media/5987/l0-0.mp4",
+     "poster": "media/5987/l0-0-poster.webp",
+     "width": 1920,
+     "height": 1080,
+     "duration": 11.9,
+     "gif": false,
+     "remote": "https://video.twimg.com/amplify_video/2112223219252088832/vid/avc1/1280x720/I6_NaL1Cg-XWB-iq.mp4?tag=29"
+    }
+   ],
+   "links": []
+  }
+ ],
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/trycua/status/2112228154651881479?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+  "site": "🧵 Thread • FxTwitter",
+  "title": "Cua (@trycua)",
+  "description": "1/ Introducing the Cua Spaces SDK.\nEvery big lab now ships a bot with its own computer: Grok Bot, Muse, dots. None let you bring your own. With Cua Spaces, now you can.\nPut Claude Code, Codex or any agent on compute you choose, and run jobs across all…",
+  "image": null
+ },
+ "article": {
+  "title": "1/ Introducing the Cua Spaces SDK.",
+  "source_title": null,
+  "body": [],
+  "why": null,
+  "tags": [
+   "هوش مصنوعی",
+   "آنتروپیک",
+   "ایلان ماسک"
+  ]
+ },
+ "updated": "2026-10-24T11:00:35+00:00"
+}

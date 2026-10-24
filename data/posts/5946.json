@@ -1,0 +1,53 @@
+{
+ "id": 5946,
+ "url": "https://t.me/dlmehr/5946",
+ "date": "2026-10-17T17:30:13+00:00",
+ "edited": true,
+ "views": "221",
+ "text": "https://fxtwitter.com/mattjay/status/2111476982580211851?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+ "forwarded_from": null,
+ "digest": false,
+ "hash": "0db830a5aee0",
+ "gholam": null,
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/mattjay/status/2111476982580211851",
+   "domain": "x.com",
+   "author": {
+    "name": "Matt Johansen",
+    "handle": "mattjay",
+    "avatar": "media/avatars/mattjay.webp"
+   },
+   "text": "Seems OpenCode customers getting notices of a breach. Got some DMs that people’s API keys are running up charges.\n\nNot seeing it on the news yet. Anyone else?",
+   "lang": "en",
+   "date": 1792250316,
+   "stats": {
+    "views": 243850,
+    "likes": 253,
+    "retweets": 26,
+    "replies": 12
+   },
+   "media": [],
+   "links": []
+  }
+ ],
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/mattjay/status/2111476982580211851?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+  "site": "FxTwitter",
+  "title": "Matt Johansen (@mattjay)",
+  "description": "Seems OpenCode customers getting notices of a breach. Got some DMs that people’s API keys are running up charges.\nNot seeing it on the news yet. Anyone else?",
+  "image": null
+ },
+ "article": {
+  "title": "Seems OpenCode customers getting notices of a breach. Got some DMs that people’s API keys are running up charges.",
+  "source_title": null,
+  "body": [],
+  "why": null,
+  "tags": [
+   "امنیت"
+  ]
+ },
+ "updated": "2026-10-24T11:01:05+00:00"
+}

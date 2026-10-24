@@ -1,0 +1,85 @@
+{
+ "id": 5941,
+ "url": "https://t.me/dlmehr/5941",
+ "date": "2026-10-17T03:45:12+00:00",
+ "edited": true,
+ "views": "214",
+ "text": "https://fxtwitter.com/yucheng__shi/status/2110926888319517119?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+ "forwarded_from": null,
+ "digest": false,
+ "hash": "b51555a0e248",
+ "gholam": null,
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/Yucheng__Shi/status/2110926888319517119",
+   "domain": "x.com",
+   "author": {
+    "name": "Yucheng Shi",
+    "handle": "Yucheng__Shi",
+    "avatar": "media/avatars/yucheng__shi.webp"
+   },
+   "text": "We used an agent to help train a stronger successor. Then we used that successor to help train the next.\n\nOur new paper, Terminal-RSI, studies this recursive self-improvement loop: learn from verified successes, improve through practice, and repeat.\n\nAcross two cycles, a 27B model’s Terminal-Bench 2.1 success rises from 51.7% to 86.5%, and Terminal-Bench 4.0 success rises from 0.0% to 19.8%, a new SOTA.\n\nWe’re interested in how far this kind of hill climbing can go, and what makes it stall.\n\nPaper: https://arxiv.org/abs/2610.22192",
+   "lang": "en",
+   "date": 1792119163,
+   "stats": {
+    "views": 78059,
+    "likes": 708,
+    "retweets": 87,
+    "replies": 33
+   },
+   "media": [
+    {
+     "type": "image",
+     "src": "media/5941/l0-0.webp",
+     "width": 1400,
+     "height": 1934,
+     "remote": "https://pbs.twimg.com/media/HUuEgnGaIAApXW-.jpg?name=orig"
+    }
+   ],
+   "links": [
+    "https://arxiv.org/abs/2610.22192"
+   ]
+  },
+  {
+   "kind": "link",
+   "url": "https://arxiv.org/abs/2610.22192",
+   "domain": "arxiv.org",
+   "title": "Terminal-RSI: Recursive Self-Improving Terminal Agents via Recursive Self-Rewrite and Policy-Refine",
+   "description": "Converting verifier outcomes into useful policy updates and partial progress into complete task resolution is crucial for terminal agents. We present Terminal-RSI, which alternates Recursive Self-Rewrite (RSR) of verified trajectories with critic-inheriting Recursive Policy-Refine (RPR). We formulate Turn-Boundary Skip-Observation GAE (TB-GAE) to retain token-specific baselines while applying decay across interaction turns. Family Dense Reward (FDR) calibrates semantic progress across task families; Success-Prioritized Reward (SPR) separates strict success from bounded partial credit. A Warm-up Critic Model, recursive critic handoff, and stage-specific learning rates coordinate the two refinement phases. The five-stage sequence from Qwen3.8-27B base model through RSR-1, RPR-1, RSR-2, and RPR-2 yields Terminal-RSI-27B: 19.84% on Terminal-Bench 4.0, 86.52% on Terminal-Bench 2.1, 16.95% on Terminal-Bench 3.0, and 79.00% on Terminal-Bench Hard. On LHTB, process reward rises from 0.21 to 0.37 and strict completion from 0/46 to 5/46; SWR100 success doubles from 3.00% to 6.00%. By recursively coupling verified trajectory rewriting with critic-inheriting policy refinement, each retained stage consolidates discovered behaviors and progressively advances the agent from partial local repairs to strict terminal verification.",
+   "image": {
+    "src": "media/5941/l1-og.webp",
+    "width": 1200,
+    "height": 700
+   },
+   "site": "arXiv.org",
+   "author": null,
+   "published": null,
+   "text": "Computer Science > Artificial Intelligence\nTitle:Terminal-RSI: Recursive Self-Improving Terminal Agents via Recursive Self-Rewrite and Policy-Refine\nView PDF HTML (experimental)\n            Abstract:Converting verifier outcomes into useful policy updates and partial progress into complete task resolution is crucial for terminal agents. We present Terminal-RSI, which alternates Recursive Self-Rewrite (RSR) of verified trajectories with critic-inheriting Recursive Policy-Refine (RPR). We formulate Turn-Boundary Skip-Observation GAE (TB-GAE) to retain token-specific baselines while applying decay across interaction turns. Family Dense Reward (FDR) calibrates semantic progress across task families; Success-Prioritized Reward (SPR) separates strict success from bounded partial credit. A Warm-up Critic Model, recursive critic handoff, and stage-specific learning rates coordinate the two refinement phases. The five-stage sequence from Qwen3.8-27B base model through RSR-1, RPR-1, RSR-2, and RPR-2 yields Terminal-RSI-27B: 19.84% on Terminal-Bench 4.0, 86.52% on Terminal-Bench 2.1, 16.95% on Terminal-Bench 3.0, and 79.00% on Terminal-Bench Hard. On LHTB, process reward rises from 0.21 to 0.37 and strict completion from 0/46 to 5/46; SWR100 success doubles from 3.00% to 6.00%. By recursively coupling verified trajectory rewriting with critic-inheriting policy refinement, each retained stage consolidates discovered behaviors and progressively advances the agent from partial local repairs to strict terminal verification.\n    \nBibliographic and Citation Tools\nCode, Data and Media Associated with this Article\nDemos\nRecommenders and Search Tools\narXivLabs: experimental projects with community collaborators\narXivLabs is a framework that allows collaborators to develop and share new arXiv features directly on our website.\nBoth individuals and organizations that work with arXivLabs have embraced and accepted our values of openness, community, excellence, and user data privacy. arXiv is committed to these values and only works with partners that adhere to them.\nHave an idea for a project that will add value for arXiv's community? Learn more about arXivLabs."
+  }
+ ],
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/yucheng__shi/status/2110926888319517119?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+  "site": "🧵 Thread • FxTwitter",
+  "title": "Yucheng Shi (@Yucheng__Shi)",
+  "description": "We used an agent to help train a stronger successor. Then we used that successor to help train the next.\nOur new paper, Terminal-RSI, studies this recursive self-improvement loop: learn from verified successes, improve through practice, and repeat.\nAcross…",
+  "image": {
+   "src": "media/5941/preview.webp",
+   "width": 579,
+   "height": 800
+  }
+ },
+ "article": {
+  "title": "We used an agent to help train a stronger successor. Then we used that successor to help train the next.",
+  "source_title": null,
+  "body": [],
+  "why": null,
+  "tags": [
+   "هوش مصنوعی",
+   "دیپ‌سیک",
+   "امنیت"
+  ]
+ },
+ "updated": "2026-10-24T11:01:09+00:00"
+}

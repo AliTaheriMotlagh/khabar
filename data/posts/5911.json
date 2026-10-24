@@ -1,0 +1,65 @@
+{
+ "id": 5911,
+ "url": "https://t.me/dlmehr/5911",
+ "date": "2026-10-15T15:17:19+00:00",
+ "edited": true,
+ "views": "211",
+ "text": "https://fxtwitter.com/nvidiaai/status/2110749836450713896?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+ "forwarded_from": null,
+ "digest": false,
+ "hash": "dfb591767bcd",
+ "gholam": null,
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/NVIDIAAI/status/2110749836450713896",
+   "domain": "x.com",
+   "author": {
+    "name": "NVIDIA AI",
+    "handle": "NVIDIAAI",
+    "avatar": "media/avatars/nvidiaai.webp"
+   },
+   "text": "Meet NVIDIA Nemotron 3.5 Super VL\n\nOur new open model combines reasoning and tool use with text, image, document, and video understanding for long-running AI agents.\n\n120B total parameters with 12B active 🧵",
+   "lang": "en",
+   "date": 1792076951,
+   "stats": {
+    "views": 598863,
+    "likes": 4451,
+    "retweets": 553,
+    "replies": 288
+   },
+   "media": [
+    {
+     "type": "video",
+     "src": "media/5911/l0-0.mp4",
+     "poster": "media/5911/l0-0-poster.webp",
+     "width": 1280,
+     "height": 720,
+     "duration": 80.039,
+     "gif": false,
+     "remote": "https://video.twimg.com/amplify_video/2110749075981336576/vid/avc1/1280x720/w3CZrxrNyPiNhQfP.mp4?tag=29"
+    }
+   ],
+   "links": []
+  }
+ ],
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/nvidiaai/status/2110749836450713896?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+  "site": "🧵 Thread • FxTwitter",
+  "title": "NVIDIA AI (@NVIDIAAI)",
+  "description": "Meet NVIDIA Nemotron 3.5 Super VL\nOur new open model combines reasoning and tool use with text, image, document, and video understanding for long-running AI agents.\n120B total parameters with 12B active\n🧵",
+  "image": null
+ },
+ "article": {
+  "title": "Meet NVIDIA Nemotron 3.5 Super VL",
+  "source_title": null,
+  "body": [],
+  "why": null,
+  "tags": [
+   "هوش مصنوعی",
+   "انویدیا"
+  ]
+ },
+ "updated": "2026-10-24T11:01:36+00:00"
+}

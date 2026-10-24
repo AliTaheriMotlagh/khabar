@@ -1,0 +1,64 @@
+{
+ "id": 5993,
+ "url": "https://t.me/dlmehr/5993",
+ "date": "2026-10-20T18:19:23+00:00",
+ "edited": false,
+ "views": "197",
+ "text": "https://fxtwitter.com/make_robot_go/status/2112565146354860151/video/1?s=46",
+ "forwarded_from": "Hossein Zakariaee",
+ "digest": false,
+ "hash": "c3ca0c00c0e5",
+ "gholam": null,
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/make_robot_go/status/2112565146354860151",
+   "domain": "x.com",
+   "author": {
+    "name": "Ros Shinkle",
+    "handle": "make_robot_go",
+    "avatar": "media/avatars/make_robot_go.webp"
+   },
+   "text": "Introducing Voxel, a droid butler made by Tuesday Labs.",
+   "lang": "en",
+   "date": 1792509755,
+   "stats": {
+    "views": 3736607,
+    "likes": 2830,
+    "retweets": 256,
+    "replies": 227
+   },
+   "media": [
+    {
+     "type": "video",
+     "src": "media/5993/l0-0.mp4",
+     "poster": "media/5993/l0-0-poster.webp",
+     "width": 2880,
+     "height": 2160,
+     "duration": 89.216,
+     "gif": false,
+     "remote": "https://video.twimg.com/amplify_video/2112564839251931136/vid/avc1/960x720/cMYjra9bu_jYUTYR.mp4?tag=29"
+    }
+   ],
+   "links": []
+  }
+ ],
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/make_robot_go/status/2112565146354860151/video/1?s=46",
+  "site": "🧵 Thread • FxTwitter",
+  "title": "Ros Shinkle (@make_robot_go)",
+  "description": "Introducing Voxel, a droid butler made by Tuesday Labs.",
+  "image": null
+ },
+ "article": {
+  "title": "Introducing Voxel, a droid butler made by Tuesday Labs.",
+  "source_title": null,
+  "body": [],
+  "why": null,
+  "tags": [
+   "رباتیک"
+  ]
+ },
+ "updated": "2026-10-24T11:00:33+00:00"
+}
