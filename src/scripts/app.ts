@@ -1,5 +1,5 @@
 // Client behaviour for every page. Everything is progressive: the site works without JS.
-import { $, $$, BASE, PAGE_CACHE, getSaved, relTime, store, toast, type Entry } from './core';
+import { $, $$, BASE, PAGE_CACHE, getHistory, getSaved, relTime, store, toast, type Entry } from './core';
 import { award, markNew, recordRead, renderMe } from './game';
 import { watchMedia } from './media';
 import { initPeek, peek } from './peek';
@@ -207,18 +207,26 @@ async function loadMore(link: HTMLAnchorElement) {
   }
 }
 
-// ---------- reading progress, back-to-top ----------
+// ---------- reading progress, back-to-top, bars that step aside ----------
+// Scrolling down hides the header and tab bar on phones (and the reading tools in reading mode), scrolling up brings
+// them back: more room for the text, and nothing fixed fighting iOS Safari's own collapsing toolbar.
 const bar = $('.progress i');
 const toTop = $('[data-to-top]');
 const article = $('[data-article]');
 let ticking = false;
+let lastY = scrollY;
 addEventListener(
   'scroll',
   () => {
     if (ticking) return;
     ticking = true;
     requestAnimationFrame(() => {
-      toTop?.classList.toggle('show', scrollY > 1400);
+      const y = scrollY;
+      const atEnd = y + innerHeight >= document.documentElement.scrollHeight - 80;
+      if (y < 120 || atEnd) root.dataset.chrome = 'show';
+      else if (Math.abs(y - lastY) > 8) root.dataset.chrome = y > lastY ? 'hide' : 'show';
+      if (Math.abs(y - lastY) > 8 || y < 120) lastY = y;
+      toTop?.classList.toggle('show', y > 1400);
       if (article) {
         const r = article.getBoundingClientRect();
         const ratio = Math.min(1, Math.max(0, (-r.top + 80) / Math.max(r.height - innerHeight, 1)));
@@ -261,6 +269,7 @@ document.addEventListener('keydown', (e) => {
     case '+': case '=': if (!article) return; stepSize(1); break;
     case '-': if (!article) return; stepSize(-1); break;
     case 'f': if (!article) return; toggleFocus(); break;
+    case 'Escape': if (!article || settings.focus !== 'on') return; toggleFocus(); break;
     default: return;
   }
   e.preventDefault();
@@ -302,6 +311,8 @@ if (article) {
   recordRead(entry, (d.tags ?? '').split(',').filter(Boolean));
 }
 markNew();
+const readIds = new Set(getHistory().map((e) => e.id));
+$$('[data-rail] [data-id]').forEach((a) => a.classList.toggle('seen', readIds.has(Number(a.dataset.id))));
 watchMedia();
 initSocial();
 initPeek();

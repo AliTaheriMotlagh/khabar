@@ -4,6 +4,7 @@ import Lead from '../components/Lead.astro';
 import Timeline from '../components/Timeline.astro';
 import Sidebar from '../components/Sidebar.astro';
 import Icon from '../components/Icon.astro';
+import TodayRail from '../components/TodayRail.astro';
 import { SITE } from '../site';
 import { getPosts, url } from '../lib/posts';
 
@@ -17,12 +18,10 @@ const next = posts.length > SITE.pageSize ? url('page/2/') : null;
 <Base image={lead[0]?.cover?.src}>
   <div class="container">
     <section class="masthead">
-      <div>
-        <h1>{SITE.name} <span class="ltr" dir="ltr">{SITE.nameLatin}</span></h1>
-        <p>{SITE.tagline}</p>
-      </div>
-      {posts[0] && <p class="updated"><span class="pulse" aria-hidden="true"></span> آخرین خبر: <time datetime={posts[0].date} data-f="rel"></time></p>}
+      <h1>{SITE.name} <span class="ltr" dir="ltr">{SITE.nameLatin}</span><span class="sr-only"> — {SITE.tagline}</span></h1>
+      {posts[0] && <p class="updated"><span class="pulse" aria-hidden="true"></span> آخرین خبر <time datetime={posts[0].date} data-f="rel"></time></p>}
     </section>
+    <TodayRail />
     <div class="welcome" data-welcome hidden>
       <Icon name="sparkles" />
       <span data-welcome-text></span>

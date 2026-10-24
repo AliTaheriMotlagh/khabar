@@ -1,0 +1,104 @@
+---
+// The day's news as a vertical video: one full-screen scene per story, playing on its own (src/scripts/player.ts).
+// Without JS it's a plain list of the day's headlines.
+import Base from '../../layouts/Base.astro';
+import Icon from '../../components/Icon.astro';
+import SaveButton from '../../components/SaveButton.astro';
+import { SITE } from '../../site';
+import { faNum, sized, todayPosts, url } from '../../lib/posts';
+
+const posts = todayPosts();
+const words = (s: string) => s.split(/\s+/).filter(Boolean).length;
+const scenes = posts.map((p) => {
+  const video = p.gallery.find((m) => m.type === 'video' && m.src);
+  const summary = p.excerpt && p.excerpt !== p.article.title ? p.excerpt : '';
+  return {
+    p,
+    video: video ? { src: video.src!, poster: sized(video.poster, 'large') } : null,
+    image: p.cover ? sized(p.cover.src || p.cover.poster, 'large') : '',
+    summary,
+    // Seconds on screen without narration: enough to read the headline and summary at a brisk pace.
+    seconds: Math.round(Math.min(16, Math.max(6, 2.5 + (words(p.article.title) + words(summary)) / 3.3))),
+    // Paragraphs read aloud (indexes into card.json): the headline, then the lede unless it just repeats the headline.
+    say: p.article.body[0] && !p.article.body[0].startsWith(p.article.title.replace(/…$/, '')) ? [0, 1] : [0],
+  };
+});
+const totalMin = Math.max(1, Math.round(scenes.reduce((n, s) => n + s.seconds, 0) / 60));
+---
+<Base title="امروز در یک نگاه" description={`همه‌ی خبرهای ۲۴ ساعت گذشته‌ی ${SITE.name}، پشت سر هم مثل یک ویدیو — حدود ${faNum(totalMin)} دقیقه.`} image={scenes[0]?.image || null}>
+  <section class="player" data-player aria-label="خبرهای امروز در یک نگاه" aria-roledescription="نمایش خبرها" data-pagefind-ignore>
+    <div class="pl-backdrop" data-pl-backdrop aria-hidden="true"></div>
+    <div class="pl-frame">
+      <div class="pl-stage" data-pl-stage>
+        {
+          scenes.map((s, i) => (
+            <article class="pl-scene" data-i={i} data-id={s.p.id} data-date={s.p.date} data-seconds={s.seconds} data-say={s.say.join(',')} data-lede={s.say.length > 1 ? s.p.article.body[0] : undefined} aria-hidden={i ? 'true' : undefined}>
+              <div class="pl-bg">
+                {s.video ? (
+                  <video data-src={s.video.src} poster={i < 2 ? s.video.poster || s.image || undefined : undefined} data-poster={s.video.poster || s.image} muted playsinline loop preload="none" />
+                ) : s.image ? (
+                  <img data-src={s.image} alt="" decoding="async" referrerpolicy="no-referrer" />
+                ) : (
+                  <span class="pl-noimg" aria-hidden="true"><Icon name="news" /></span>
+                )}
+              </div>
+              <div class="pl-info">
+                <div class="pl-meta">
+                  {s.p.article.tags[0] && <span class="kicker on-dark">{s.p.article.tags[0]}</span>}
+                  <time datetime={s.p.date} data-f="rel"></time>
+                  {s.p.source?.domain && <span class="pl-src" dir="ltr">{s.p.source.domain}</span>}
+                </div>
+                <h2 dir="auto">{s.p.article.title}</h2>
+                {s.summary && <p dir="auto">{s.summary}</p>}
+                <div class="pl-actions">
+                  <a class="btn primary" href={s.p.href} data-pl-open>خواندن کامل <Icon name="arrow" /></a>
+                  <SaveButton post={s.p} class="pl-btn" />
+                  <button class="pl-btn" type="button" data-share data-url={s.p.href} data-title={s.p.article.title} aria-label="اشتراک‌گذاری"><Icon name="share" /></button>
+                </div>
+              </div>
+            </article>
+          ))
+        }
+        <div class="pl-end" data-pl-end hidden>
+          <span class="pl-end-mark" aria-hidden="true"><Icon name="check" /></span>
+          <h2>همه‌ی خبرهای امروز را دیدید</h2>
+          <p><span data-pl-total>{faNum(scenes.length)}</span> خبر، در چند دقیقه.</p>
+          <div class="row center">
+            <button class="btn primary" type="button" data-pl-restart><Icon name="play" /> دوباره از اول</button>
+            <a class="btn" href={url()}><Icon name="home" /> خانه</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="pl-taps" data-pl-taps aria-hidden="true"></div>
+
+      <div class="pl-top">
+        <div class="pl-bars" data-pl-bars>{scenes.map(() => <span><i></i></span>)}</div>
+        <div class="pl-head">
+          <span class="logo-mark" aria-hidden="true"></span>
+          <span class="pl-title"><b>امروز در یک نگاه</b><small><span data-pl-pos>۱</span> از <span data-pl-count>{faNum(scenes.length)}</span></small></span>
+          <button class="pl-btn" type="button" data-pl-sound aria-pressed="false" aria-label="روایت صوتی" title="روایت صوتی (m)">
+            <Icon name="volume-off" class="when-off" /><Icon name="volume" class="when-on" />
+          </button>
+          <button class="pl-btn" type="button" data-pl-pause aria-pressed="false" aria-label="مکث" title="مکث (فاصله)">
+            <Icon name="pause" class="when-off" /><Icon name="play" class="when-on" />
+          </button>
+          <a class="pl-btn" href={url()} data-pl-close aria-label="بستن" title="بستن (Esc)"><Icon name="x" /></a>
+        </div>
+      </div>
+
+      <button class="pl-arrow prev" type="button" data-pl-prev aria-label="خبر قبلی"><Icon name="arrow-r" /></button>
+      <button class="pl-arrow next" type="button" data-pl-next aria-label="خبر بعدی"><Icon name="arrow" /></button>
+      <p class="pl-hint" data-pl-hint hidden>برای خبر بعدی سمت چپ را بزنید · نگه دارید تا مکث شود</p>
+    </div>
+  </section>
+  <noscript>
+    <div class="container narrow">
+      <h1 class="page-head">امروز در یک نگاه</h1>
+      <ol>{scenes.map((s) => <li><a href={s.p.href}>{s.p.article.title}</a></li>)}</ol>
+    </div>
+  </noscript>
+  <script>
+    import '../../scripts/player';
+  </script>
+</Base>

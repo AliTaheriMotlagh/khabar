@@ -32,6 +32,10 @@ npm test && .venv/bin/python -m pytest -q pipeline/tests
    chat and counters start working on the next deploy. Without it the site works and those features stay hidden.
 2. Optional environment variables: `ADMIN_TOKEN` (lets you delete any comment), `HASH_SALT` (any random string),
    `ALLOWED_ORIGINS` (comma-separated, defaults to `*`), `KV_PREFIX` (e.g. `khabar:`, to share one Redis database with another app).
+3. Persian voice for "listen" and the daily player's narration on iPhone/iPad (they ship no Persian voice): create a free
+   *Azure AI Speech* resource (F0 tier, 500K characters a month) and set `AZURE_SPEECH_KEY` and `AZURE_SPEECH_REGION`
+   (e.g. `westeurope`); optionally `TTS_VOICE` (default `fa-IR-DilaraNeural`, or `fa-IR-FaridNeural`). Each paragraph is
+   synthesized once and then served from the CDN. Without it, devices that have a Persian voice (Android, most desktops) still listen.
 
 **GitHub:** the workflow `.github/workflows/site.yml` crawls the channel every hour, commits new posts to `main`
 (which redeploys Vercel), and publishes a mirror on GitHub Pages: *Settings → Pages → Source: GitHub Actions*.

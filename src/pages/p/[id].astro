@@ -99,16 +99,22 @@ const jsonLd = [
         </header>
 
         <div class="reader-bar" role="toolbar" aria-label="ابزار مطالعه" data-pagefind-ignore>
-          <button class="rb-btn listen" type="button" data-listen aria-pressed="false" hidden>
-            <Icon name="volume" class="when-idle" /><Icon name="pause" class="when-playing" /><span data-listen-label>گوش دادن</span>
-          </button>
-          <div class="rb-group" role="group" aria-label="اندازه‌ی متن">
-            <button class="rb-btn" type="button" data-size-step="-1" aria-label="متن کوچک‌تر" title="متن کوچک‌تر (-)">−</button>
-            <span class="rb-a" aria-hidden="true">متن</span>
-            <button class="rb-btn" type="button" data-size-step="1" aria-label="متن بزرگ‌تر" title="متن بزرگ‌تر (+)">+</button>
+          <div class="rb-tools">
+            <button class="rb-btn listen" type="button" data-listen aria-pressed="false" hidden>
+              <Icon name="volume" class="when-idle" /><Icon name="pause" class="when-playing" /><span data-listen-label>گوش دادن</span>
+            </button>
+            <button class="rb-btn rate" type="button" data-rate aria-label="سرعت خواندن" title="سرعت خواندن">۱×</button>
+            <div class="rb-group" role="group" aria-label="اندازه‌ی متن">
+              <button class="rb-btn" type="button" data-size-step="-1" aria-label="متن کوچک‌تر" title="متن کوچک‌تر (-)">−</button>
+              <span class="rb-a" aria-hidden="true">متن</span>
+              <button class="rb-btn" type="button" data-size-step="1" aria-label="متن بزرگ‌تر" title="متن بزرگ‌تر (+)">+</button>
+            </div>
+            <button class="rb-btn" type="button" data-spacing-step aria-label="فاصله‌ی خطوط" title="فاصله‌ی خطوط"><Icon name="spacing" /></button>
+            <button class="rb-btn if-focus" type="button" data-theme-toggle aria-label="روشن / تیره" title="روشن / تیره (t)"><Icon name="moon" class="if-light" /><Icon name="sun" class="if-dark" /></button>
+            <button class="rb-btn focus-btn" type="button" data-focus-toggle aria-pressed="false" aria-label="حالت مطالعه" title="حالت مطالعه (f)">
+              <Icon name="book" class="when-off" /><Icon name="x" class="when-on" /><span class="when-off">مطالعه</span><span class="when-on lbl-wide">خروج</span>
+            </button>
           </div>
-          <button class="rb-btn" type="button" data-spacing-step aria-label="فاصله‌ی خطوط" title="فاصله‌ی خطوط"><Icon name="spacing" /><span class="hide-sm" aria-hidden="true">فاصله‌ی خطوط</span></button>
-          <button class="rb-btn" type="button" data-focus-toggle aria-pressed="false" aria-label="حالت مطالعه" title="حالت مطالعه (f)"><Icon name="book" /><span class="hide-sm" aria-hidden="true">حالت مطالعه</span></button>
           <span class="time-left" data-time-left></span>
         </div>
 
@@ -145,7 +151,7 @@ const jsonLd = [
           </div>
         </div>
 
-        <div data-pagefind-ignore>
+        <div class="article-tail" data-pagefind-ignore>
           {post.links && post.links.length > 0 && <h2 class="section-title"><Icon name="link" /> منبع خبر</h2>}
           {post.links?.map((l) => <SourceCard link={l} alt={a.title} fallbackHref={post.url} showMedia={ownMedia} />)}
           {

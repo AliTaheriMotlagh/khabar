@@ -1,7 +1,9 @@
 // Reading tools on a story page: listen aloud, text size and line spacing, focus mode,
 // time left, "continue where you left off", and sharing a selected quote.
+import { SITE } from '../site';
 import { $, $$, fmtNum, store, toast } from './core';
 import { award } from './game';
+import { Speaker } from './speech';
 
 type Prefs = Record<string, string>;
 const SIZES = ['s', 'm', 'l', 'xl'];
@@ -27,8 +29,12 @@ function stepSpacing() {
 }
 export function toggleFocus() {
   const on = prefs().focus !== 'on';
+  // The layout changes under the reader: keep the paragraph they were on at the same spot.
+  const anchor = $$('h1, .article-media, .prose p, .why, .digest-list li', article ?? document).find((el) => el.getBoundingClientRect().bottom > 90);
+  const top = anchor?.getBoundingClientRect().top ?? 0;
   save({ focus: on ? 'on' : 'off' });
-  toast(on ? 'حالت مطالعه: فقط خود خبر' : 'حالت مطالعه خاموش شد');
+  if (anchor) scrollBy({ top: anchor.getBoundingClientRect().top - top, behavior: 'instant' });
+  toast(on ? 'حالت مطالعه روشن شد' : 'حالت مطالعه خاموش شد');
 }
 
 // ---------- time left ----------
@@ -67,85 +73,52 @@ function offerResume() {
   addEventListener('scroll', () => scrollY > 400 && hide(), { passive: true });
 }
 
-// ---------- listen (the browser's own speech; Persian needs a Persian voice on the device) ----------
-const synth = 'speechSynthesis' in window ? speechSynthesis : null;
+// ---------- listen (src/scripts/speech.ts picks the voice) ----------
 const listenBtn = $('[data-listen]');
-let queue: HTMLElement[] = [];
-let at = 0;
-let run = 0; // bumps on pause/stop so a cancelled utterance's events are ignored
-const isPersian = (s: string) => /[؀-ۿ]/.test(s);
+const rateBtn = $('[data-rate]');
+const RATES = [1, 1.25, 1.5, 1.75, 0.85];
+let paragraphs: HTMLElement[] = [];
+const speaker = new Speaker({
+  line(n) {
+    $$('.is-speaking').forEach((el) => el.classList.remove('is-speaking'));
+    const el = paragraphs[n];
+    if (!el) return;
+    el.classList.add('is-speaking');
+    // Follow along, but only when the paragraph is off screen.
+    const r = el.getBoundingClientRect();
+    if (r.top < 0 || r.bottom > innerHeight) el.scrollIntoView({ block: 'center', behavior: 'smooth' });
+  },
+  state(s) {
+    if (!listenBtn) return;
+    listenBtn.dataset.state = s;
+    listenBtn.setAttribute('aria-pressed', String(s === 'playing' || s === 'loading'));
+    $('[data-listen-label]', listenBtn)!.textContent = s === 'playing' ? 'مکث' : s === 'loading' ? 'آماده‌سازی…' : s === 'paused' ? 'ادامه' : 'گوش دادن';
+    if (s === 'idle') $$('.is-speaking').forEach((el) => el.classList.remove('is-speaking'));
+    if ('mediaSession' in navigator) navigator.mediaSession.playbackState = s === 'playing' ? 'playing' : s === 'paused' ? 'paused' : 'none';
+  },
+  fail: (msg) => toast(msg),
+});
+speaker.rate = store.get<number>('rate', 1);
 
-function voices(): Promise<SpeechSynthesisVoice[]> {
-  const now = synth!.getVoices();
-  if (now.length) return Promise.resolve(now);
-  return new Promise((done) => {
-    const t = setTimeout(() => done(synth!.getVoices()), 1200);
-    synth!.addEventListener('voiceschanged', () => (clearTimeout(t), done(synth!.getVoices())), { once: true });
-  });
-}
-const voiceFor = (all: SpeechSynthesisVoice[], lang: string) => all.find((v) => v.lang.toLowerCase().replace('_', '-').startsWith(lang));
-
-function setListenState(state: 'idle' | 'playing' | 'paused') {
-  if (!listenBtn) return;
-  listenBtn.dataset.state = state;
-  listenBtn.setAttribute('aria-pressed', String(state === 'playing'));
-  $('[data-listen-label]', listenBtn)!.textContent = state === 'playing' ? 'مکث' : state === 'paused' ? 'ادامه‌ی پخش' : 'گوش دادن';
-}
-
-async function speakFrom(i: number) {
-  const mine = ++run;
-  const all = await voices();
-  $$('.is-speaking').forEach((el) => el.classList.remove('is-speaking'));
-  const el = queue[i];
-  if (mine !== run) return;
-  if (!el) return stopListening();
-  at = i;
-  const text = el.textContent?.trim() ?? '';
-  if (!text) return speakFrom(i + 1);
-  const lang = isPersian(text) ? 'fa' : 'en';
-  const u = new SpeechSynthesisUtterance(text);
-  u.lang = lang === 'fa' ? 'fa-IR' : 'en-US';
-  const v = voiceFor(all, lang);
-  if (v) u.voice = v;
-  u.onend = () => mine === run && speakFrom(i + 1);
-  u.onerror = (e) => {
-    if (mine !== run || e.error === 'interrupted' || e.error === 'canceled') return;
-    stopListening();
-    toast('پخش صدا روی این دستگاه ممکن نشد');
-  };
-  el.classList.add('is-speaking');
-  el.scrollIntoView({ block: 'center', behavior: 'smooth' });
-  synth!.speak(u);
-}
-
-function stopListening() {
-  run++;
-  synth?.cancel();
-  at = 0;
-  $$('.is-speaking').forEach((el) => el.classList.remove('is-speaking'));
-  setListenState('idle');
-}
-
-async function toggleListen() {
-  if (!synth || !listenBtn) return;
-  const state = listenBtn.dataset.state ?? 'idle';
-  if (state === 'playing') {
-    // pause() is unreliable on mobile; cancel and restart the current paragraph instead.
-    run++;
-    synth.cancel();
-    return setListenState('paused');
+// Runs straight from the tap (see speech.ts).
+function toggleListen() {
+  if (speaker.state === 'playing' || speaker.state === 'loading') return speaker.pause();
+  if (speaker.state === 'paused') return speaker.resume();
+  paragraphs = $$('h1, .prose p, .why p, .digest-list li', article!).filter((el) => el.textContent?.trim());
+  if ('mediaSession' in navigator) {
+    const cover = article?.dataset.cover;
+    navigator.mediaSession.metadata = new MediaMetadata({ title: article?.dataset.title ?? document.title, artist: SITE.name, artwork: cover ? [{ src: cover }] : [] });
   }
-  if (state === 'idle') {
-    queue = $$('h1, .prose p, .why p, .digest-list li', article!);
-    const all = await voices();
-    if (all.length && queue.some((el) => isPersian(el.textContent ?? '')) && !voiceFor(all, 'fa')) {
-      toast('صدای فارسی روی این دستگاه نصب نیست؛ از تنظیمات «متن به گفتار» دستگاه اضافه‌اش کنید');
-      return;
-    }
-  }
-  setListenState('playing');
-  speakFrom(state === 'paused' ? at : 0);
+  speaker.start(paragraphs.map((el, i) => ({ text: el.textContent!.replace(/\s+/g, ' ').trim(), post: id, i })));
 }
+
+function stepRate() {
+  const r = RATES[(RATES.indexOf(speaker.rate) + 1) % RATES.length] ?? 1;
+  speaker.setRate(r);
+  store.set('rate', r);
+  showRate();
+}
+const showRate = () => rateBtn && (rateBtn.textContent = `${fmtNum(speaker.rate)}×`);
 
 // ---------- share a selected quote ----------
 const quoteBtn = $<HTMLButtonElement>('[data-quote]');
@@ -196,12 +169,22 @@ export function initReader(get: () => Prefs, set: (patch: Prefs) => void) {
   if (!article) return;
   readerProgress(0);
   offerResume();
-  addEventListener('pagehide', () => (rememberPosition(), synth?.cancel()));
+  addEventListener('pagehide', () => (rememberPosition(), speaker.stop()));
   document.addEventListener('visibilitychange', () => document.visibilityState === 'hidden' && rememberPosition());
 
-  if (synth && listenBtn) {
+  if (listenBtn) {
     listenBtn.hidden = false;
     listenBtn.addEventListener('click', toggleListen);
+    showRate();
+    rateBtn?.addEventListener('click', stepRate);
+    if ('mediaSession' in navigator) {
+      const ms = navigator.mediaSession;
+      ms.setActionHandler('play', () => speaker.resume());
+      ms.setActionHandler('pause', () => speaker.pause());
+      ms.setActionHandler('stop', () => speaker.stop());
+      ms.setActionHandler('nexttrack', () => speaker.play(Math.min(speaker.at + 1, paragraphs.length - 1)));
+      ms.setActionHandler('previoustrack', () => speaker.play(Math.max(speaker.at - 1, 0)));
+    }
   }
   $$('[data-size-step]').forEach((b) => b.addEventListener('click', () => stepSize(Number(b.dataset.sizeStep))));
   $('[data-spacing-step]')?.addEventListener('click', stepSpacing);

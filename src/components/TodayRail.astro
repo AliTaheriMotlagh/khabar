@@ -1,0 +1,26 @@
+---
+// The day's stories as a row of circles (home): the first plays them all, the rest start the player at that story.
+// Circles of stories already read turn grey (src/scripts/app.ts).
+import Icon from './Icon.astro';
+import { faNum, sized, todayPosts, url } from '../lib/posts';
+const posts = todayPosts();
+const short = (s: string) => s.split(/\s+/).slice(0, 3).join(' ');
+---
+{
+  posts.length > 0 && (
+    <nav class="rail" aria-label="امروز در یک نگاه" data-rail>
+      <a class="all" href={url('today/')}>
+        <span class="ring"><span><Icon name="play" /></span></span>
+        <small>همه‌ی امروز · {faNum(posts.length)}</small>
+      </a>
+      {posts.map((p) => (
+        <a href={`${url('today/')}#${p.id}`} data-id={p.id} title={p.article.title}>
+          <span class="ring">
+            {p.cover ? <img src={sized(p.cover.src || p.cover.poster, 'small')} alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer" /> : <span><Icon name="news" /></span>}
+          </span>
+          <small>{p.article.tags[0] ?? short(p.article.title)}</small>
+        </a>
+      ))}
+    </nav>
+  )
+}

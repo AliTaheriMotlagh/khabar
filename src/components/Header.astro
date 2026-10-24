@@ -6,6 +6,7 @@ const path = Astro.url.pathname;
 const here = (p: string) => (p === url() ? path === p || /\/page\/\d+\/$/.test(path) : path.startsWith(p)) ? 'page' : undefined;
 const nav = [
   { href: url(), label: 'خانه', icon: 'home' },
+  { href: url('today/'), label: 'امروز در یک نگاه', icon: 'stories' },
   { href: url('tags/'), label: 'موضوع‌ها', icon: 'hash' },
   { href: url('saved/'), label: 'ذخیره‌ها', icon: 'bookmark' },
   { href: url('about/'), label: 'درباره', icon: 'info' },
@@ -25,10 +26,10 @@ const nav = [
         <span class="pulse" aria-hidden="true"></span><span data-online>…</span><span class="hide-sm">آنلاین</span>
       </button>
       <a class="icon-btn" href={url('search/')} aria-label="جستجو" title="جستجو (/)"><Icon name="search" /></a>
-      <button class="icon-btn hide-sm" type="button" data-open-chat aria-label="گفتگوی زنده" title="گفتگوی زنده">
+      <button class="icon-btn" type="button" data-open-chat aria-label="گفتگوی زنده" title="گفتگوی زنده">
         <Icon name="chat" /><span class="dot" data-chat-dot hidden></span>
       </button>
-      <button class="icon-btn" type="button" data-theme-toggle aria-label="روشن / تیره" title="روشن / تیره (t)">
+      <button class="icon-btn hide-sm" type="button" data-theme-toggle aria-label="روشن / تیره" title="روشن / تیره (t)">
         <Icon name="moon" class="if-light" /><Icon name="sun" class="if-dark" />
       </button>
       <button class="icon-btn" type="button" data-open-settings aria-label="تنظیمات نمایش" title="تنظیمات نمایش"><Icon name="settings" /></button>
@@ -43,7 +44,7 @@ const nav = [
 <nav class="tabbar" aria-label="ناوبری پایین">
   <a href={url()} aria-current={here(url())}><Icon name="home" /><span>خانه</span></a>
   <a href={url('tags/')} aria-current={here(url('tags/'))}><Icon name="hash" /><span>موضوع‌ها</span></a>
-  <button type="button" data-open-chat><Icon name="chat" /><span>گفتگو</span><i class="dot" data-chat-dot hidden></i></button>
+  <a class="tab-today" href={url('today/')} aria-current={here(url('today/'))}><Icon name="stories" /><span>امروز</span></a>
   <a href={url('saved/')} aria-current={here(url('saved/'))}><Icon name="bookmark" /><span>ذخیره‌ها</span></a>
   <a href={url('me/')} aria-current={here(url('me/'))}><Icon name="user" /><span>من</span></a>
 </nav>

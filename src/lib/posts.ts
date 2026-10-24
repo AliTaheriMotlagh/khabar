@@ -157,6 +157,14 @@ export function getPosts(): Post[] {
 }
 
 export const getStories = () => getPosts().filter((p) => p.kind !== 'digest');
+/** The day in one sitting (the daily player and its teaser): stories and briefs from the 24 hours before the newest one,
+ *  at least `min` of them on a quiet day. */
+export function todayPosts(min = 8, max = 40): Post[] {
+  const stories = getStories();
+  const newest = stories[0] ? Date.parse(stories[0].date) : 0;
+  const day = stories.filter((p) => newest - Date.parse(p.date) < 864e5);
+  return (day.length >= min ? day : stories.slice(0, min)).slice(0, max);
+}
 export const latestDigest = () => getPosts().find((p) => p.kind === 'digest') ?? null;
 
 export function getChannel(): { title?: string; description?: string; avatar?: string | null; subscribers?: string } {
