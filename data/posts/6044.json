@@ -12,7 +12,7 @@
   "site": "FxTwitter",
   "title": "clem 🤗 (@ClementDelangue)",
   "description": "Frontier labs are advancing the capabilities in AI for biology but preventing the good guys (scientists, academia, non-profits, health agencies,...) to use, study and understand it with widespread but shallow guardrails that the bad guys are bypassing easily…",
-  "image": "https://cdn4.telesco.pe/file/ur7MnUABqm_Cz6IIfNoNkRUGPWmTK0_9kC8mI7EfGhCUdyrr2_hLcmLv8fcdTn7j-sTv-aOZfS8P8aAIvyIopUg1iAeN64CgnvXUD8B8WTq8t54IGMn-sygpPTmwvzrDEQTrk0xDX-F3BsgHjwOd7iT5yWBG_umjH0bj9yHart7lsGxfI-4Z34TsXS6Dc2AiOmxZSgSYZTLh49kYpg0qfajlUazymenxZqL77fxC2d99r-a2udMNGJmuxOl3dd4huhzTicnHcPTWRXnJqwKJi4bPCWpO5c2ssQwRSXSnJgyyWBJmYleD8QlG2MuLIKz9OL5GBicK8rbPIJghhbqWAQ.jpg"
+  "image": "https://cdn4.telesco.pe/file/hdN-jgljVWWO4wmK3xggv2dgQ6BA1grtv6dVh01QQY1NoE85p6eg-22FcjDdAqvVV6w0ch3v3O8jXV4Dky05Ho8jWdUiJBapdhWFH-1awUPRe8LVgUhYRC_LYbSTi7FNEwe4G6v_layPGw6j7DPpOUFLXR1ZP4LXafk9Ifb1lv4OMV3AJq1L9ReM5r77bCTIFDIRnAMH6vRkYUj7lFkLP7OWQQ9IFAblqYUNCLJnoPENig52WzVu-tEspoXb819EY5cXkiz4ho9VCELLeq2D-PfUGsH9IltN8JfqW44kOFr9zrrYmEj3W2aAZNgyeAaarQCwOOctS3Fb6Yxuj3ZelQ.jpg"
  },
  "gholam": {
   "text": "رفیق، کلم دلنگ، مدیر هاگینگ‌فیس، اومده وسط میدون و دست گذاشته رو یه درد بزرگ توی هوش مصنوعی زیستی. حرفش اینه که غول‌های فناوری به اسم مسائل ایمنی دست دانشمندا و پژوهشگرای درست‌کار رو بستن در حالی که آدم‌بدها راحت دورشون می‌زنن؛ واسه همین هاگینگ‌فیس اومده مدل متن‌باز «کربن-ایکس» (Carbon-X) رو با آموزش مدل Qwen3-14B روی ۳۰۰ میلیارد توکن دی‌ان‌ای و متن انگلیسی روانه بازار کرده. این مدل خفن توی پنج تا آزمون تخصصی تحلیل و تولید DNA حسابی گردوخاک به پا کرده و با کیفیتی هم‌تراز پیشرفته‌ترین مدل‌ها، هزینه‌ش ۱۸۰۰ برابر کمتره. با لایسنس کاملاً آزاد آپاچی ۲ هم پخشش کردن تا انحصار چندتا کمپانی بزرگ شکسته بشه و همه بتونن آزادانه بررسیش کنن.\n\nاهمیتش اینه که ابزار فوق‌پیشرفته مهندسی و تحلیل DNA رو از قفس آزمایشگاه‌های انحصاری آزاد می‌کنه و با هزینه بسیار پایین، سرعت پیشرفت علم پزشکی و درمان‌ها رو چند پله می‌بره بالا.",
@@ -59,10 +59,9 @@
   ],
   "why": "ابزار فوق‌پیشرفته مهندسی و تحلیل DNA رو از قفس آزمایشگاه‌های انحصاری آزاد می‌کنه و با هزینه بسیار پایین، سرعت پیشرفت علم پزشکی و درمان‌ها رو چند پله می‌بره بالا.",
   "tags": [
-   "هوش مصنوعی",
    "دیپ‌سیک",
    "سلامت"
   ]
  },
- "updated": "2026-10-24T18:56:08+00:00"
+ "updated": "2026-10-24T23:03:08+00:00"
 }
