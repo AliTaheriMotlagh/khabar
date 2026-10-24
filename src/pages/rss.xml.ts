@@ -16,7 +16,7 @@ export function GET() {
         title: p.article.title,
         link: abs(`p/${p.id}/`),
         pubDate: new Date(p.date),
-        description: p.excerpt,
+        description: p.excerpt || p.article.title,
         categories: p.article.tags,
         enclosure: cover ? { url: cover, type: 'image/jpeg', length: 0 } : undefined,
         content:

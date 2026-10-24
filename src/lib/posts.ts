@@ -75,7 +75,13 @@ export function sized(src: string | null | undefined, size: 'small' | 'medium' |
 
 const clip = (s: string, n: number) => {
   s = s.replace(/\s+/g, ' ').trim();
-  return s.length <= n ? s : s.slice(0, n).replace(/\s+\S*$/, '') + '…';
+  return s.length <= n ? s : s.slice(0, n).replace(/\s+\S*$/, '').replace(/[\s.،,:;؛-]+$/, '') + '…';
+};
+/** The first sentence of a line, whole when it's a reasonable length: titles are never cut mid-thought. */
+const firstSentence = (s: string) => {
+  const line = s.replace(/\s+/g, ' ').trim();
+  const sentence = line.split(/(?<=[.!؟?])\s+/)[0];
+  return sentence.length >= 20 && sentence.length <= 200 ? sentence : clip(line, 200);
 };
 const persianShare = (s: string) => {
   const letters = s.match(/\p{L}/gu) ?? [];
@@ -114,9 +120,13 @@ function shape(raw: RawPost, ids: Set<number>): Post {
     kind === 'digest'
       ? raw.text.split('\n').find((l) => l.trim())?.trim() || 'خلاصه‌ی خبرها'
       : kind === 'brief'
-        ? clip(body[0] || raw.article.source_title || raw.preview?.title || raw.article.title, 110)
+        ? firstSentence(body[0] || raw.article.source_title || raw.preview?.title || raw.article.title)
         : raw.article.title;
   const words = [...body, raw.article.why ?? ''].join(' ').split(/\s+/).length;
+  // The title is the lede's first sentence, so the excerpt picks up where it ends instead of repeating it.
+  const lede = body.join(' ').replace(/\s+/g, ' ').trim();
+  const at = title.endsWith('…') ? -1 : lede.indexOf(title);
+  const rest = at >= 0 && at < 40 ? lede.slice(at + title.length).replace(/^[\s.!؟?،,:;؛]+/, '') : lede;
 
   return {
     ...raw,
@@ -126,7 +136,7 @@ function shape(raw: RawPost, ids: Set<number>): Post {
     href: url(`p/${raw.id}/`),
     cover,
     gallery,
-    excerpt: kind === 'digest' ? items.slice(0, 3).map((i) => i.text).join(' · ') : clip(body[0] ?? '', 220),
+    excerpt: kind === 'digest' ? items.slice(0, 3).map((i) => i.text).join(' · ') : clip(rest, 220),
     source: links[0] ?? null,
     digestItems: items,
     minutes: Math.max(1, Math.round(words / 200)),

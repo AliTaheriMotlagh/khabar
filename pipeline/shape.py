@@ -5,7 +5,7 @@ import re
 from typing import Optional
 
 OPENER_RE = re.compile(
-    r"^\s*(?:(?:ببین|راستش|خلاصه|داش|آبجی|رفیق|داداشی|داداش|دوست من|طرف|گوش کن|بچه‌ها)\s*)+[،,:!]?\s*"
+    r"^\s*(?:(?:ببین|راستش|خلاصه|داش|آبجی|رفیق|داداشی|داداش|دوست من|طرف|گوش کن|بچه‌ها)(?![\w‌])\s*)+[،,:!]?\s*"
 )
 WHY_RE = re.compile(r"^\s*(چرا مهمه[؟?]?|اهمیتش اینه که)\s*")
 SENTENCE_END_RE = re.compile(r"(?<=[.!؟?])\s+")
@@ -60,12 +60,25 @@ def clip(text: str, limit: int) -> str:
     return cut + "…"
 
 
+CLAUSE_RE = re.compile(r"\s*[؛;]\s*")
+HEADLINE_MAX = 200  # a whole sentence up to this long is the headline as-is
+HEADLINE_HARD_MAX = 320  # past this, a sentence with no clause break is clipped
+
+
 def headline(gholam_paras: list[str]) -> Optional[str]:
+    """Gholam's first sentence, whole. A long one is cut at its first «؛» clause, never mid-thought."""
     if not gholam_paras:
         return None
     sentence = OPENER_RE.sub("", first_sentence(gholam_paras[0]))
-    sentence = sentence.rstrip(".!؟?")
-    return clip(sentence, 110) if sentence else None
+    sentence = re.sub(r"\s+", " ", sentence).rstrip(".!؟? ")
+    if not sentence:
+        return None
+    if len(sentence) <= HEADLINE_MAX:
+        return sentence
+    clause = CLAUSE_RE.split(sentence, maxsplit=1)[0]
+    if 40 <= len(clause) <= HEADLINE_MAX:
+        return clause
+    return sentence if len(sentence) <= HEADLINE_HARD_MAX else clip(sentence, HEADLINE_MAX)
 
 
 def source_title(post_text: str, links: list[dict], preview: Optional[dict]) -> Optional[str]:

@@ -43,6 +43,10 @@ const paths: Record<string, string> = {
   news: '<path d="M4 5h13v14H6a2 2 0 0 1-2-2zM17 9h3v8a2 2 0 0 1-2 2"/><path d="M8 9h5M8 13h5"/>',
   bolt: '<path d="M13 2 4 14h7l-1 8 9-12h-7z"/>',
   info: '<circle cx="12" cy="12" r="9"/><path d="M12 11v6M12 7.5h.01"/>',
+  volume: '<path d="M4 9v6h4l5 4V5L8 9z"/><path d="M16.5 8.5a5 5 0 0 1 0 7M19 6a8.5 8.5 0 0 1 0 12"/>',
+  pause: '<path d="M8 5v14M16 5v14"/>',
+  book: '<path d="M12 6.5C10 5 7 4.5 3 5v13c4-.5 7 0 9 1.5 2-1.5 5-2 9-1.5V5c-4-.5-7 0-9 1.5zM12 6.5v13"/>',
+  spacing: '<path d="M10 6h11M10 12h11M10 18h11M4 4v16M2 6l2-2 2 2M2 18l2 2 2-2"/>',
 };
 interface Props { name: string; class?: string; label?: string }
 const { name, class: cls, label } = Astro.props;

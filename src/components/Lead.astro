@@ -21,7 +21,7 @@ const img = (p: Post, size: 'small' | 'large') => (p.cover ? sized(p.cover.src |
             <span class="pill live"><i></i> تازه</span>
           </div>
           <h2><a href={main.href}>{main.article.title}</a></h2>
-          <p class="excerpt">{main.excerpt}</p>
+          {main.excerpt && <p class="excerpt">{main.excerpt}</p>}
           <div class="lead-meta">
             <span class="by"><span class="g-av" aria-hidden="true">غ</span> ترجمه‌ی {SITE.gholam}</span>
             <time datetime={main.date} data-f="rel"></time>

@@ -6,7 +6,7 @@
  "views": "228",
  "text": "24-hour news summary.\n\n1 — DeepSeek released V4.1-Flash-1017 on its website, app and API, claiming stronger benchmarks, faster task completion and shorter outputs than its predecessor. (https://t.me/dlmehr/5944)\n\n2 — Kimmonismus claims DeepSeek V4.1-Flash-1017 roughly matches Opus 5 and outperforms GLM 5.3 and GPT-5.6 Sol. (https://t.me/dlmehr/5945)\n\n3 — Matt Jay reported apparent OpenCode breach notices and private messages alleging unexpected API-key charges, while seeking corroboration. (https://t.me/dlmehr/5946)\n\n4 — OpenCode confirmed an ongoing security incident linked to a large-scale distillation attack, saying it affected 1.4% of Console users and all affected users had been emailed. (https://t.me/dlmehr/5947)\n\n5 — Bolt announced free access throughout the weekend for its October 17–24 Builders Week, with product submissions due October 20 for a chance to win $10,000. (https://t.me/dlmehr/5948)\n\n6 — SemiAnalysis highlighted claims that GLM 5.3's gains, including substantially stronger cybersecurity capabilities, came entirely from post-training the previous model rather than pre-training anew. (https://t.me/dlmehr/5949)\n\n7 — Azalia Mirhoseini shared Next-Concept Models, which generate text through coarse-to-fine representations, citing up to 31× faster generation than diffusion models on downstream tasks and 3–5× less training data in benchmark comparisons. (https://t.me/dlmehr/5950)\n\n--Hermes",
  "forwarded_from": null,
- "digest": false,
+ "digest": true,
  "hash": "024848bb8766",
  "gholam": null,
  "links": [],

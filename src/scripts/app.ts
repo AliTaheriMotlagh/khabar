@@ -2,6 +2,8 @@
 import { $, $$, BASE, PAGE_CACHE, getSaved, relTime, store, toast, type Entry } from './core';
 import { award, markNew, recordRead, renderMe } from './game';
 import { watchMedia } from './media';
+import { initPeek, peek } from './peek';
+import { initReader, readerProgress, stepSize, toggleFocus } from './reader';
 import { initSocial, loadEngage } from './social';
 
 export { getSaved, getHistory, rowHtml, store } from './core';
@@ -9,8 +11,8 @@ export { getSaved, getHistory, rowHtml, store } from './core';
 const root = document.documentElement;
 
 // ---------- display settings ----------
-type Settings = { theme: string; size: string; view: string; media: string };
-const DEFAULTS: Settings = { theme: 'auto', size: 'm', view: 'cards', media: 'show' };
+type Settings = { theme: string; size: string; spacing: string; focus: string; view: string; media: string };
+const DEFAULTS: Settings = { theme: 'auto', size: 'm', spacing: 'm', focus: 'off', view: 'cards', media: 'show' };
 let settings: Settings = { ...DEFAULTS, ...store.get<Partial<Settings>>('settings', {}) };
 const darkQuery = matchMedia('(prefers-color-scheme: dark)');
 const resolvedTheme = () => (settings.theme === 'auto' ? (darkQuery.matches ? 'dark' : 'light') : settings.theme);
@@ -18,9 +20,12 @@ const resolvedTheme = () => (settings.theme === 'auto' ? (darkQuery.matches ? 'd
 function applySettings() {
   root.dataset.theme = resolvedTheme();
   root.dataset.size = settings.size;
+  root.dataset.spacing = settings.spacing;
+  root.dataset.focus = settings.focus;
   root.dataset.view = settings.view;
   root.dataset.media = settings.media;
   $$('[data-set-view]').forEach((b) => b.setAttribute('aria-pressed', String(b.dataset.setView === settings.view)));
+  $$('[data-focus-toggle]').forEach((b) => b.setAttribute('aria-pressed', String(settings.focus === 'on')));
 }
 function saveSettings(patch: Partial<Settings>) {
   settings = { ...settings, ...patch };
@@ -214,9 +219,11 @@ addEventListener(
     ticking = true;
     requestAnimationFrame(() => {
       toTop?.classList.toggle('show', scrollY > 1400);
-      if (bar && article) {
+      if (article) {
         const r = article.getBoundingClientRect();
-        bar.style.transform = `scaleX(${Math.min(1, Math.max(0, (-r.top + 80) / Math.max(r.height - innerHeight, 1)))})`;
+        const ratio = Math.min(1, Math.max(0, (-r.top + 80) / Math.max(r.height - innerHeight, 1)));
+        if (bar) bar.style.transform = `scaleX(${ratio})`;
+        readerProgress(ratio);
       }
       ticking = false;
     });
@@ -246,6 +253,14 @@ document.addEventListener('keydown', (e) => {
     case 'p': $<HTMLAnchorElement>('[data-prev]')?.click(); break;
     case '/': location.href = `${BASE}/search/`; break;
     case 't': toggleTheme(); break;
+    case 'v': {
+      const link = focused && $<HTMLAnchorElement>('h3 a', focused);
+      if (!link || !peek(link)) return;
+      break;
+    }
+    case '+': case '=': if (!article) return; stepSize(1); break;
+    case '-': if (!article) return; stepSize(-1); break;
+    case 'f': if (!article) return; toggleFocus(); break;
     default: return;
   }
   e.preventDefault();
@@ -289,4 +304,6 @@ if (article) {
 markNew();
 watchMedia();
 initSocial();
+initPeek();
+initReader(() => settings, saveSettings);
 setInterval(renderDates, 60_000);

@@ -5,9 +5,9 @@ Primary site: https://khabar-ai.vercel.app (canonical). GitHub Pages builds a mi
 ## How it fits together
 - `pipeline/` (Python, httpx + bs4): crawls `t.me/s/dlmehr`, takes **Gholam's first comment** (the Persian translation, posted by a bot named «غلام», signed «داش غلام») from the post's discussion widget, reads linked tweets (api.fxtwitter.com) / pages, writes `data/posts/<id>.json`. Media is **never downloaded** — posts keep original URLs (Telegram CDN URLs are signed, refreshed on every crawl).
 - `src/` (Astro 7, static): `lib/posts.ts` shapes raw posts (`kind`: story | digest | brief; English digests are hidden). Components in `src/components/`, pages in `src/pages/`, one stylesheet `src/styles/global.css` (tokens at the top, light/dark).
-- `src/scripts/`: `core.ts` (storage, helpers) · `media.ts` (loading placeholder, retry, fallback for broken images/videos) · `game.ts` (points, badges, streaks, "new since last visit") · `social.ts` (API client) · `app.ts` (boot, settings, offline, load-more).
+- `src/scripts/`: `core.ts` (storage, helpers) · `media.ts` (loading placeholder, retry, fallback for broken images/videos) · `game.ts` (points, badges, streaks, "new since last visit") · `social.ts` (API client) · `peek.ts` (long-press story preview, fed by `p/<id>/card.json`) · `reader.ts` (listen aloud, text size/spacing, focus mode, time left, resume position, quote sharing) · `app.ts` (boot, settings, offline, load-more).
 - `api/` (Vercel Functions, plain ESM JS, no deps): comments, react, engage, live (presence/visits), chat, leaders. Storage = Upstash Redis REST (`KV_REST_API_URL`/`KV_REST_API_TOKEN`); `_lib.js` has an in-memory store for tests. Files starting with `_` are not routes.
-- `.github/workflows/site.yml`: every 15 min crawl → commit `data/` → build → deploy Pages. Vercel redeploys on each push to main.
+- `.github/workflows/site.yml`: hourly crawl → commit `data/` → build → deploy Pages. Vercel redeploys on each push to main.
 
 ## Commands
 - `npm run build` (astro + pagefind) · `npm run serve` (built site + API with in-memory store, port 4322)

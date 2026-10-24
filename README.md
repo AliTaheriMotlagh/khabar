@@ -11,6 +11,7 @@ images and videos are shown straight from the source, and every story links to i
 - Guest features with no signup: reactions, comments, a live chat, “online now” and visit counters.
 - Gamification: points, levels, badges, daily streaks, a weekly leaderboard; new stories since your last visit are marked until you read them.
 - Reading history and saved stories, offline reading (service worker), installable as an app, light/dark themes, text size.
+- Reading tools on each story: listen aloud, text size and line spacing, a focus mode, time left, “continue where you left off”, sharing a selected quote. Long-press any story link to preview it.
 - SEO: canonical URLs, Open Graph/Twitter cards, NewsArticle structured data, sitemap + Google News sitemap, RSS, search (Pagefind).
 
 ## Run locally
@@ -32,13 +33,13 @@ npm test && .venv/bin/python -m pytest -q pipeline/tests
 2. Optional environment variables: `ADMIN_TOKEN` (lets you delete any comment), `HASH_SALT` (any random string),
    `ALLOWED_ORIGINS` (comma-separated, defaults to `*`), `KV_PREFIX` (e.g. `khabar:`, to share one Redis database with another app).
 
-**GitHub:** the workflow `.github/workflows/site.yml` crawls the channel every 15 minutes, commits new posts to `main`
+**GitHub:** the workflow `.github/workflows/site.yml` crawls the channel every hour, commits new posts to `main`
 (which redeploys Vercel), and publishes a mirror on GitHub Pages: *Settings → Pages → Source: GitHub Actions*.
 The mirror uses the Vercel API for comments and chat (repository variable `API_URL` overrides the address).
 
-GitHub's own schedule is best effort and often runs an hour or more late. For an exact cadence, trigger the workflow
-from a free external cron (e.g. cron-job.org, every 15 minutes) with a fine-grained token that has *Actions: Read and write*
-on this repo only:
+GitHub's own schedule is best effort and can run late or skip an hour. For an exact cadence, trigger the workflow
+from a free external cron (e.g. cron-job.org, hourly) with a fine-grained token that has *Actions: Read and write*
+on this repo only, and delete the `schedule:` block in `site.yml` so the two don't both fire:
 `curl -X POST -H "Authorization: Bearer $TOKEN" -H "Accept: application/vnd.github+json" -d '{"ref":"main"}' https://api.github.com/repos/<owner>/<repo>/actions/workflows/site.yml/dispatches`
 
 **Moderation:** delete a comment with

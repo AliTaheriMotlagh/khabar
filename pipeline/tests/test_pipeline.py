@@ -100,6 +100,15 @@ def test_shape():
     assert "گجت" in shape.tags("Plato: the ring for near-silent speech")
 
 
+def test_headline_is_never_cut_mid_sentence():
+    long = "رفیق، بچه‌های پلتفرم ابری Railway یه آژیر خطر فوری کشیدن و اعلام کردن که توی سیستم‌هاشون تحرکات مشکوک و غیرعادی ردیابی شده. بقیه‌اش"
+    assert shape.headline([long]) == "بچه‌های پلتفرم ابری Railway یه آژیر خطر فوری کشیدن و اعلام کردن که توی سیستم‌هاشون تحرکات مشکوک و غیرعادی ردیابی شده"
+    clause = "بچه‌های دیپ‌مایند گوگل یه مقاله دادن بیرون و رفتن سراغ یه روش باحال" + "؛ " + "فرض کن " * 40
+    assert shape.headline([clause]) == "بچه‌های دیپ‌مایند گوگل یه مقاله دادن بیرون و رفتن سراغ یه روش باحال"
+    runaway = shape.headline(["کلمه " * 100])
+    assert runaway.endswith("…") and len(runaway) <= shape.HEADLINE_MAX + 1
+
+
 def test_tweet_regex_and_variant():
     m = enrich.TWEET_RE.search("https://fxtwitter.com/dunyaverse/status/2112586895100449083?s=52")
     assert m.group(1) == "dunyaverse" and m.group(2) == "2112586895100449083"

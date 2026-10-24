@@ -21,7 +21,7 @@ export function getStaticPaths() {
 interface Props { post: Post; newer: Post | null; older: Post | null }
 const { post, newer, older } = Astro.props;
 const a = post.article;
-const description = (a.why ? `${post.excerpt} ${a.why}` : post.excerpt).slice(0, 300) || SITE.description;
+const description = [post.excerpt || a.title, a.why].filter(Boolean).join(' ').slice(0, 300) || SITE.description;
 const coverSrc = post.cover ? sized(post.cover.src || post.cover.poster, 'large') : null;
 const shareUrl = abs(`p/${post.id}/`);
 const enc = encodeURIComponent;
@@ -73,7 +73,7 @@ const jsonLd = [
 >
   <div class="container">
     <div class="layout">
-      <article class="col-main article" data-article data-id={post.id} data-title={a.title} data-href={post.href} data-cover={post.cover ? sized(post.cover.src || post.cover.poster, 'small') : ''} data-tags={a.tags.join(',')} data-pagefind-body>
+      <article class="col-main article" data-article data-id={post.id} data-title={a.title} data-href={post.href} data-cover={post.cover ? sized(post.cover.src || post.cover.poster, 'small') : ''} data-tags={a.tags.join(',')} data-minutes={post.minutes} data-pagefind-body>
         <nav class="crumbs" aria-label="مسیر" data-pagefind-ignore>
           <a href={url()}>خانه</a>
           {a.tags[0] && <><Icon name="arrow" /><a href={tagHref(a.tags[0])}>{a.tags[0]}</a></>}
@@ -97,6 +97,20 @@ const jsonLd = [
             <span data-views={post.id} hidden><Icon name="eye" /> <span></span> بازدید</span>
           </div>
         </header>
+
+        <div class="reader-bar" role="toolbar" aria-label="ابزار مطالعه" data-pagefind-ignore>
+          <button class="rb-btn listen" type="button" data-listen aria-pressed="false" hidden>
+            <Icon name="volume" class="when-idle" /><Icon name="pause" class="when-playing" /><span data-listen-label>گوش دادن</span>
+          </button>
+          <div class="rb-group" role="group" aria-label="اندازه‌ی متن">
+            <button class="rb-btn" type="button" data-size-step="-1" aria-label="متن کوچک‌تر" title="متن کوچک‌تر (-)">−</button>
+            <span class="rb-a" aria-hidden="true">متن</span>
+            <button class="rb-btn" type="button" data-size-step="1" aria-label="متن بزرگ‌تر" title="متن بزرگ‌تر (+)">+</button>
+          </div>
+          <button class="rb-btn" type="button" data-spacing-step aria-label="فاصله‌ی خطوط" title="فاصله‌ی خطوط"><Icon name="spacing" /><span class="hide-sm" aria-hidden="true">فاصله‌ی خطوط</span></button>
+          <button class="rb-btn" type="button" data-focus-toggle aria-pressed="false" aria-label="حالت مطالعه" title="حالت مطالعه (f)"><Icon name="book" /><span class="hide-sm" aria-hidden="true">حالت مطالعه</span></button>
+          <span class="time-left" data-time-left></span>
+        </div>
 
         {post.gallery.length > 0 && <div class="article-media"><Media items={post.gallery} alt={a.title} fallbackHref={post.url} limit={12} size="large" eager /></div>}
         {!post.gallery.length && coverSrc && (
@@ -179,4 +193,9 @@ const jsonLd = [
       <Sidebar current={a.tags[0]} />
     </div>
   </div>
+  <div class="resume" data-resume hidden>
+    <button class="btn primary sm" type="button" data-resume-go><Icon name="book" /> ادامه از جایی که ماندید</button>
+    <button class="icon-btn" type="button" data-resume-x aria-label="بستن"><Icon name="x" /></button>
+  </div>
+  <button class="quote-btn" type="button" data-quote hidden><Icon name="share" /> اشتراک این بخش</button>
 </Base>

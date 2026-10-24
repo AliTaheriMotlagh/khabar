@@ -1,0 +1,26 @@
+---
+// Long-press preview of a story (filled by src/scripts/peek.ts).
+import Icon from './Icon.astro';
+---
+<dialog class="sheet peek" id="peek" aria-labelledby="peek-title">
+  <div class="peek-scroll">
+    <img class="peek-cover" alt="" referrerpolicy="no-referrer" data-peek-cover hidden />
+    <div class="peek-body">
+      <div class="story-head">
+        <span class="kicker" data-peek-tag></span>
+        <span class="src-chip" data-peek-site></span>
+        <span class="muted peek-when" data-peek-when></span>
+      </div>
+      <h2 id="peek-title" dir="auto" data-peek-title></h2>
+      <div class="peek-text" dir="auto" data-peek-text></div>
+    </div>
+  </div>
+  <div class="peek-foot">
+    <a class="btn primary" href="#" data-peek-open>خواندن کامل <Icon name="arrow" /></a>
+    <button class="icon-btn save-btn" type="button" aria-pressed="false" aria-label="ذخیره برای بعد" data-save data-peek-save>
+      <Icon name="bookmark" class="off" /><Icon name="bookmark-fill" class="on" />
+    </button>
+    <button class="icon-btn" type="button" data-share data-peek-share aria-label="اشتراک‌گذاری"><Icon name="share" /></button>
+    <button class="icon-btn" type="button" data-close aria-label="بستن"><Icon name="x" /></button>
+  </div>
+</dialog>
