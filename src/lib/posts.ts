@@ -53,6 +53,9 @@ export type Post = RawPost & {
   source: Link | null;
   digestItems: DigestItem[];
   minutes: number;
+  /** On the timeline, topics, today and feeds: the channel's own Persian words. An English-only link post (no
+   *  Gholam translation) still gets its page, for links that point to it, but stays off the lists. */
+  listed: boolean;
 };
 
 const BASE = import.meta.env.BASE_URL.replace(/\/$/, '');
@@ -88,6 +91,9 @@ const persianShare = (s: string) => {
   return letters.length ? letters.filter((c) => /[؀-ۿ]/.test(c)).length / letters.length : 0;
 };
 
+// The whole channel is about AI: a "هوش مصنوعی" tag would sit on every story and say nothing.
+const HIDDEN_TAGS = new Set(['هوش مصنوعی']);
+
 const DIGEST_LINE = /^[\s‎‏]*([0-9۰-۹]+)\s*[—–-]\s*(.+?)\s*\((https?:\/\/t\.me\/\w+\/(\d+))\)\s*$/;
 const toLatin = (s: string) => s.replace(/[۰-۹]/g, (d) => String('۰۱۲۳۴۵۶۷۸۹'.indexOf(d)));
 
@@ -122,6 +128,7 @@ function shape(raw: RawPost, ids: Set<number>): Post {
       : kind === 'brief'
         ? firstSentence(body[0] || raw.article.source_title || raw.preview?.title || raw.article.title)
         : raw.article.title;
+  const tags = raw.article.tags.filter((t) => !HIDDEN_TAGS.has(t));
   const words = [...body, raw.article.why ?? ''].join(' ').split(/\s+/).length;
   // The title is the lede's first sentence, so the excerpt picks up where it ends instead of repeating it.
   const lede = body.join(' ').replace(/\s+/g, ' ').trim();
@@ -132,7 +139,7 @@ function shape(raw: RawPost, ids: Set<number>): Post {
     ...raw,
     links,
     kind,
-    article: { ...raw.article, title, body },
+    article: { ...raw.article, title, body, tags },
     href: url(`p/${raw.id}/`),
     cover,
     gallery,
@@ -140,12 +147,13 @@ function shape(raw: RawPost, ids: Set<number>): Post {
     source: links[0] ?? null,
     digestItems: items,
     minutes: Math.max(1, Math.round(words / 200)),
+    listed: kind !== 'brief' || persianShare(body.join(' ')) >= 0.5,
   };
 }
 
 let cache: Post[] | null = null;
 
-/** All posts, newest first. English copies of the daily digest are skipped: the Persian one is published. */
+/** Every post that gets a page, newest first. English copies of the daily digest are skipped: the Persian one is published. */
 export function getPosts(): Post[] {
   if (cache) return cache;
   const raws = Object.values(import.meta.glob<RawPost>('../../data/posts/*.json', { eager: true, import: 'default' })).filter(
@@ -156,7 +164,9 @@ export function getPosts(): Post[] {
   return cache;
 }
 
-export const getStories = () => getPosts().filter((p) => p.kind !== 'digest');
+/** What the lists show (home, pages, topics, today, feeds): only the channel's Persian posts. */
+export const getFeed = () => getPosts().filter((p) => p.listed);
+export const getStories = () => getFeed().filter((p) => p.kind !== 'digest');
 /** The day in one sitting (the daily player and its teaser): stories and briefs from the 24 hours before the newest one,
  *  at least `min` of them on a quiet day. */
 export function todayPosts(min = 8, max = 40): Post[] {
@@ -165,6 +175,7 @@ export function todayPosts(min = 8, max = 40): Post[] {
   const day = stories.filter((p) => newest - Date.parse(p.date) < 864e5);
   return (day.length >= min ? day : stories.slice(0, min)).slice(0, max);
 }
+/** The channel's Persian morning summary (posted ~07:36 Tehran), the home page's brief. */
 export const latestDigest = () => getPosts().find((p) => p.kind === 'digest') ?? null;
 
 export function getChannel(): { title?: string; description?: string; avatar?: string | null; subscribers?: string } {
@@ -174,7 +185,7 @@ export function getChannel(): { title?: string; description?: string; avatar?: s
 
 export function getTags(): { tag: string; count: number }[] {
   const counts = new Map<string, number>();
-  for (const p of getPosts()) for (const t of p.article.tags) counts.set(t, (counts.get(t) ?? 0) + 1);
+  for (const p of getFeed()) for (const t of p.article.tags) counts.set(t, (counts.get(t) ?? 0) + 1);
   return [...counts].map(([tag, count]) => ({ tag, count })).sort((a, b) => b.count - a.count);
 }
 

@@ -13,7 +13,9 @@ export const OPTIONS = preflight;
 export async function GET(request) {
   if (!configured()) return fail(request, 503, 'not configured');
   const [rows] = await redis(['LRANGE', KEY, '0', '49']);
-  return json(request, { messages: rows.map((r) => publicView(JSON.parse(r))) }, { cache: 4 });
+  // Shared through the CDN for 2s (a busy room costs Redis one read per 2s, not one per reader), and never older:
+  // a long stale-while-revalidate kept serving lists without the message someone had just sent.
+  return json(request, { messages: rows.map((r) => publicView(JSON.parse(r))) }, { cache: 2, stale: 1 });
 }
 
 export async function POST(request) {

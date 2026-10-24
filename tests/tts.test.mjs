@@ -15,6 +15,7 @@ const get = (fn, qs) => fn(new Request(`https://site.test/api/tts/${qs}`));
 test('tts: off without a key', async () => {
   const off = await import('../api/tts.js?off');
   assert.equal((await get(off.GET, '?id=7&i=0')).status, 501);
+  assert.equal((await get(off.GET, '?probe=1')).status, 501, 'probe says the cloud voice is off');
 });
 
 test('tts: reads paragraph i of the story, never request text', async () => {
@@ -22,6 +23,7 @@ test('tts: reads paragraph i of the story, never request text', async () => {
   process.env.AZURE_SPEECH_REGION = 'westeurope';
   const tts = await import('../api/tts.js?on');
 
+  assert.equal((await get(tts.GET, '?probe=1')).status, 200);
   const res = await get(tts.GET, '?id=7&i=1&v=abc');
   assert.equal(res.status, 200);
   assert.equal(res.headers.get('content-type'), 'audio/mpeg');

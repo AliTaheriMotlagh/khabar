@@ -83,6 +83,21 @@ function renderDates() {
   });
 }
 
+/** Each day's "N خبر": a day split across pages ("load more") counts every story it now shows. */
+function recountDays() {
+  let pill: HTMLElement | null = null;
+  let n = 0;
+  const flush = () => pill && (pill.textContent = `${n.toLocaleString('fa-IR')} خبر`);
+  for (const el of $$('[data-tl] > li')) {
+    if (el.matches('[data-day]')) {
+      flush();
+      pill = $('.tl-day-pill small', el);
+      n = 0;
+    } else if (el.matches('.tl-item')) n++;
+  }
+  flush();
+}
+
 // ---------- bookmarks (saved pages are also stored for offline reading) ----------
 function renderSaved() {
   const ids = new Set(getSaved().map((s) => s.id));
@@ -198,6 +213,7 @@ async function loadMore(link: HTMLAnchorElement) {
     } else link.closest('.pager-nav')?.remove();
     history.replaceState(history.state, '', location.href);
     renderDates();
+    recountDays();
     renderSaved();
     markNew();
     watchMedia(tl);
@@ -221,11 +237,13 @@ addEventListener(
     if (ticking) return;
     ticking = true;
     requestAnimationFrame(() => {
-      const y = scrollY;
-      const atEnd = y + innerHeight >= document.documentElement.scrollHeight - 80;
+      // iOS reports rubber-band overscroll past both ends: clamp it, so a bounce never flips the bars.
+      const max = document.documentElement.scrollHeight - innerHeight;
+      const y = Math.min(Math.max(scrollY, 0), max);
+      const atEnd = y >= max - 80;
       if (y < 120 || atEnd) root.dataset.chrome = 'show';
-      else if (Math.abs(y - lastY) > 8) root.dataset.chrome = y > lastY ? 'hide' : 'show';
-      if (Math.abs(y - lastY) > 8 || y < 120) lastY = y;
+      else if (Math.abs(y - lastY) > 16) root.dataset.chrome = y > lastY ? 'hide' : 'show';
+      if (Math.abs(y - lastY) > 16 || y < 120) lastY = y;
       toTop?.classList.toggle('show', y > 1400);
       if (article) {
         const r = article.getBoundingClientRect();

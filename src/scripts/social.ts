@@ -230,31 +230,40 @@ function initComments() {
 }
 
 // ---------- live chat ----------
+// What you send shows at once (an outbox), and stays until the room's list carries it: that list is shared through
+// the CDN for a couple of seconds, so the poll right after sending may not have it yet.
 type Message = Comment & { c: number };
+type Outgoing = Message & { sending?: boolean };
 const chatDialog = () => $<HTMLDialogElement>('#chat');
 const chatOpen = () => !!chatDialog()?.open;
 let chatTimer: number | undefined;
 let quietPolls = 0;
+let room: Message[] | null = null; // newest first, as the API sends it
+let outbox: Outgoing[] = [];
 const myMessages = () => store.get<string[]>('myMessages', []);
 
-function renderChat(messages: Message[]) {
+function msgHtml(m: Outgoing, own: boolean) {
+  return `<li class="msg${own ? ' mine' : ''}${m.sending ? ' sending' : ''}">
+    <span class="avatar" style="--h:${m.c}" aria-hidden="true">${esc(initial(m.name))}</span>
+    <div><b style="--h:${m.c}">${esc(m.name)}</b><p dir="auto">${esc(m.text)}</p><time datetime="${esc(m.at)}">${m.sending ? 'در حال ارسال…' : esc(relTime(m.at))}</time></div>
+  </li>`;
+}
+
+function renderChat(stick = false) {
   const list = $('[data-chat-list]')!;
-  const atBottom = list.scrollHeight - list.scrollTop - list.clientHeight < 80;
+  const atBottom = stick || list.scrollHeight - list.scrollTop - list.clientHeight < 80;
   const own = myMessages();
-  list.innerHTML = messages.length
-    ? [...messages]
-        .reverse()
-        .map(
-          (m) => `<li class="msg${own.includes(m.id) ? ' mine' : ''}">
-            <span class="avatar" style="--h:${m.c}" aria-hidden="true">${esc(initial(m.name))}</span>
-            <div><b style="--h:${m.c}">${esc(m.name)}</b><p dir="auto">${esc(m.text)}</p><time datetime="${esc(m.at)}">${esc(relTime(m.at))}</time></div>
-          </li>`,
-        )
-        .join('')
-    : '<li class="chat-empty">هنوز پیامی نیست. سلام کنید! 👋</li>';
-  if (atBottom || own.includes(messages[0]?.id)) list.scrollTop = list.scrollHeight;
-  if (messages[0]) {
-    store.set('chatSeen', messages[0].id);
+  const ids = new Set((room ?? []).map((m) => m.id));
+  outbox = outbox.filter((m) => !ids.has(m.id));
+  const all = [...outbox, ...(room ?? [])];
+  list.innerHTML = room === null && !outbox.length
+    ? '<li class="chat-empty">در حال بارگذاری…</li>'
+    : all.length
+      ? [...all].reverse().map((m) => msgHtml(m, own.includes(m.id) || !!(m as Outgoing).sending)).join('')
+      : '<li class="chat-empty">هنوز پیامی نیست. سلام کنید! 👋</li>';
+  if (atBottom) list.scrollTop = list.scrollHeight;
+  if (room?.[0]) {
+    store.set('chatSeen', room[0].id);
     $$('[data-chat-dot]').forEach((el) => (el.hidden = true));
   }
 }
@@ -264,14 +273,15 @@ async function pollChat() {
   if (!chatOpen()) return;
   try {
     const { messages } = await api<{ messages: Message[] }>('chat');
-    quietPolls = messages[0]?.id === store.get('chatSeen', null) ? quietPolls + 1 : 0;
-    renderChat(messages);
+    quietPolls = messages[0]?.id === room?.[0]?.id ? quietPolls + 1 : 0;
+    room = messages;
+    renderChat();
     $('[data-chat-off]')!.hidden = true;
   } catch {
     $('[data-chat-off]')!.hidden = false;
   }
-  // Fast while the room is busy, slower when nothing happens (keeps the free tier comfortable).
-  chatTimer = window.setTimeout(pollChat, quietPolls > 12 ? 20_000 : 5_000);
+  // Fast while the room is busy or a message of yours is on its way, slower when nothing happens.
+  chatTimer = window.setTimeout(pollChat, outbox.length ? 2_500 : quietPolls > 12 ? 20_000 : 5_000);
 }
 
 function initChat() {
@@ -279,37 +289,53 @@ function initChat() {
   if (!dialog) return;
   const form = $<HTMLFormElement>('[data-chat-form]', dialog)!;
   const nameInput = form.elements.namedItem('name') as HTMLInputElement;
+  const textInput = form.elements.namedItem('text') as HTMLInputElement;
   $$('[data-open-chat]').forEach((b) =>
     b.addEventListener('click', () => {
       nameInput.value = myName();
       nameInput.hidden = !!myName();
       dialog.showModal();
+      renderChat(true);
       quietPolls = 0;
       pollChat();
-      setTimeout(() => (form.elements.namedItem('text') as HTMLInputElement).focus(), 50);
+      setTimeout(() => textInput.focus(), 50);
     }),
   );
   dialog.addEventListener('close', () => clearTimeout(chatTimer));
+  // Tapping send must not take the focus off the text box: on phones that would close the keyboard after every message.
+  $('button[type=submit]', form)?.addEventListener('pointerdown', (e) => e.preventDefault());
   form.addEventListener('submit', async (e) => {
     e.preventDefault();
-    const data = new FormData(form);
+    const text = textInput.value.trim();
+    if (!text) return;
+    const website = (form.elements.namedItem('website') as HTMLInputElement).value;
     if (nameInput.value.trim() && nameInput.value.trim() !== myName()) setMyName(nameInput.value);
-    const textInput = form.elements.namedItem('text') as HTMLInputElement;
+    const name = myName() || 'مهمان';
+    const draft: Outgoing = { id: `local-${Date.now()}`, name, text, at: new Date().toISOString(), c: hue(guest()), sending: true };
+    outbox.push(draft);
+    textInput.value = '';
+    textInput.focus(); // still inside the tap, so iOS keeps the keyboard up for the next message
+    nameInput.hidden = !!myName();
+    renderChat(true);
     try {
       const { message } = await api<{ message: Message | null }>('chat', {
         method: 'POST',
-        body: { guest: guest(), name: myName(), text: data.get('text'), website: data.get('website') },
+        body: { guest: guest(), name: myName(), text, website },
       });
-      textInput.value = '';
-      nameInput.hidden = !!myName();
+      outbox = outbox.filter((m) => m !== draft);
       if (message) {
         store.set('myMessages', [...myMessages(), message.id].slice(-300));
+        if (!room?.some((m) => m.id === message.id)) outbox.push(message);
         award('chat');
-        quietPolls = 0;
-        pollChat();
       }
+      renderChat(true);
+      quietPolls = 0;
+      chatTimer = window.setTimeout(pollChat, 2_500);
     } catch (err) {
-      toast(slowDown(err) ? 'کمی آهسته‌تر؛ چند ثانیه صبر کنید' : 'پیام ارسال نشد');
+      outbox = outbox.filter((m) => m !== draft);
+      renderChat();
+      if (!textInput.value) textInput.value = text;
+      toast(slowDown(err) ? 'کمی آهسته‌تر؛ چند ثانیه صبر کنید' : 'پیام ارسال نشد؛ دوباره بفرستید');
     }
   });
 }

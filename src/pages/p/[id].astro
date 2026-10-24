@@ -9,14 +9,15 @@ import Reactions from '../../components/Reactions.astro';
 import Comments from '../../components/Comments.astro';
 import Sidebar from '../../components/Sidebar.astro';
 import { SITE } from '../../site';
-import { abs, getPosts, related, sized, url, faDate, faNum, tagHref, type Post } from '../../lib/posts';
+import { abs, getFeed, getPosts, related, sized, url, faDate, faNum, tagHref, type Post } from '../../lib/posts';
 
 export function getStaticPaths() {
-  const posts = getPosts();
-  return posts.map((post, i) => ({
-    params: { id: String(post.id) },
-    props: { post, newer: posts[i - 1] ?? null, older: posts[i + 1] ?? null },
-  }));
+  // Previous/next walk the listed feed; an unlisted (English-only) page has none.
+  const feed = getFeed();
+  return getPosts().map((post) => {
+    const i = feed.indexOf(post);
+    return { params: { id: String(post.id) }, props: { post, newer: i > 0 ? feed[i - 1] : null, older: i >= 0 ? feed[i + 1] ?? null : null } };
+  });
 }
 interface Props { post: Post; newer: Post | null; older: Post | null }
 const { post, newer, older } = Astro.props;
@@ -69,6 +70,7 @@ const jsonLd = [
   section={a.tags[0]}
   tags={a.tags}
   jsonLd={jsonLd}
+  noindex={!post.listed}
   progress
 >
   <div class="container">
@@ -81,8 +83,8 @@ const jsonLd = [
 
         <header class="article-head">
           <div class="story-head" data-pagefind-ignore>
-            {post.kind === 'digest' && <span class="pill accent"><Icon name="bolt" /> خلاصه‌ی ۲۴ ساعت</span>}
-            {a.tags.slice(0, 3).map((t) => <a class="kicker" href={tagHref(t)}>{t}</a>)}
+            {post.kind === 'digest' && <span class="pill accent"><Icon name="bolt" /> خلاصه‌ی صبح از کانال</span>}
+            {post.kind !== 'digest' && a.tags.slice(0, 2).map((t) => <a class="kicker" href={tagHref(t)}>{t}</a>)}
             <SourceChip link={post.source} />
           </div>
           <h1 data-pagefind-meta="title">{a.title}</h1>
@@ -109,7 +111,6 @@ const jsonLd = [
               <span class="rb-a" aria-hidden="true">متن</span>
               <button class="rb-btn" type="button" data-size-step="1" aria-label="متن بزرگ‌تر" title="متن بزرگ‌تر (+)">+</button>
             </div>
-            <button class="rb-btn" type="button" data-spacing-step aria-label="فاصله‌ی خطوط" title="فاصله‌ی خطوط"><Icon name="spacing" /></button>
             <button class="rb-btn if-focus" type="button" data-theme-toggle aria-label="روشن / تیره" title="روشن / تیره (t)"><Icon name="moon" class="if-light" /><Icon name="sun" class="if-dark" /></button>
             <button class="rb-btn focus-btn" type="button" data-focus-toggle aria-pressed="false" aria-label="حالت مطالعه" title="حالت مطالعه (f)">
               <Icon name="book" class="when-off" /><Icon name="x" class="when-on" /><span class="when-off">مطالعه</span><span class="when-on lbl-wide">خروج</span>
@@ -145,9 +146,7 @@ const jsonLd = [
           <div class="share-bar">
             <SaveButton post={post} class="btn" label />
             <a class="btn" href={`https://t.me/share/url?url=${enc(shareUrl)}&text=${enc(a.title)}`} target="_blank" rel="noopener"><Icon name="telegram" /> تلگرام</a>
-            <a class="btn" href={`https://x.com/intent/post?url=${enc(shareUrl)}&text=${enc(a.title)}`} target="_blank" rel="noopener"><Icon name="x-logo" /> ایکس</a>
-            <a class="btn" href={`https://wa.me/?text=${enc(`${a.title}\n${shareUrl}`)}`} target="_blank" rel="noopener"><Icon name="whatsapp" /> واتساپ</a>
-            <button class="btn" type="button" data-copy={post.href}><Icon name="link" /> کپی پیوند</button>
+            <button class="btn" type="button" data-share data-url={post.href} data-title={a.title}><Icon name="share" /> اشتراک</button>
           </div>
         </div>
 

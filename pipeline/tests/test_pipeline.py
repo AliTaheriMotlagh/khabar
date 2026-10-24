@@ -163,3 +163,31 @@ def test_resigned_cdn_url_alone_is_not_a_change():
     assert run.needs_save(resigned, {**old, "updated": ago(run.config.URL_REFRESH_HOURS + 1)})
     assert run.needs_save({**old, "text": "edited"}, old)
     assert run.needs_save(resigned, {})
+
+
+def test_no_catch_all_ai_tag():
+    assert "هوش مصنوعی" not in shape.tags("OpenAI's new LLM agent", "یه مدل هوش مصنوعی تازه")
+    assert "اوپن‌ای‌آی" in shape.tags("OpenAI's new LLM agent")
+
+
+def test_backfill_checks_old_posts_once(tmp_path, monkeypatch):
+    import json
+
+    monkeypatch.setattr(run.config, "POSTS_DIR", tmp_path)
+    base = {"url": "u", "date": "2026-10-14T19:00:00+00:00", "links": [], "media": [], "preview": None}
+    run.save({**base, "id": 1, "text": "https://x.com/a/status/1", "gholam": None})
+    run.save({**base, "id": 2, "text": "https://x.com/b/status/2", "gholam": None})
+    run.save({**base, "id": 3, "text": "24-hour news summary", "digest": True, "gholam": None})
+    asked = []
+    found = {1: {"text": "ببین رفیق، یه مدل تازه اومده. چرا مهمه؟ چون ارزونه.", "date": None}}
+    monkeypatch.setattr(run.telegram, "fetch_gholam_comment", lambda http, pid: asked.append(pid) or found.get(pid))
+
+    run.backfill_gholam(None)
+    assert sorted(asked) == [1, 2], "digests are skipped"
+    one = json.loads((tmp_path / "1.json").read_text("utf-8"))
+    assert one["gholam"]["text"].startswith("ببین") and one["article"]["title"].startswith("یه مدل تازه")
+    assert json.loads((tmp_path / "2.json").read_text("utf-8"))["gholam_checked"]
+
+    asked.clear()
+    run.backfill_gholam(None)
+    assert asked == [], "each post is only checked once"

@@ -1,6 +1,6 @@
 import rss from '@astrojs/rss';
 import { SITE } from '../site';
-import { abs, getPosts, sized } from '../lib/posts';
+import { abs, getFeed, sized } from '../lib/posts';
 
 const esc = (s: string) => s.replace(/[&<>"]/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' })[c]!);
 
@@ -10,7 +10,7 @@ export function GET() {
     description: SITE.description,
     site: abs(''),
     customData: `<language>fa-IR</language><image><url>${abs('icon-512.png')}</url><title>${SITE.name}</title><link>${abs('')}</link></image>`,
-    items: getPosts().slice(0, 50).map((p) => {
+    items: getFeed().slice(0, 50).map((p) => {
       const cover = p.cover ? sized(p.cover.src || p.cover.poster, 'medium') : null;
       return {
         title: p.article.title,

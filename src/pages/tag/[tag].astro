@@ -3,13 +3,13 @@ import Base from '../../layouts/Base.astro';
 import Timeline from '../../components/Timeline.astro';
 import Sidebar from '../../components/Sidebar.astro';
 import { SITE } from '../../site';
-import { getPosts, getTags, faNum } from '../../lib/posts';
+import { getFeed, getTags, faNum } from '../../lib/posts';
 
 export function getStaticPaths() {
   return getTags().map(({ tag }) => ({ params: { tag } }));
 }
 const { tag } = Astro.params;
-const posts = getPosts().filter((p) => p.article.tags.includes(tag!));
+const posts = getFeed().filter((p) => p.article.tags.includes(tag!));
 ---
 <Base title={`اخبار ${tag}`} description={`تازه‌ترین اخبار ${tag} با ترجمه‌ی فارسی، تصویر و ویدیو و پیوند به منبع اصلی — ${SITE.name}`} image={posts.find((p) => p.cover)?.cover?.src}>
   <div class="container">

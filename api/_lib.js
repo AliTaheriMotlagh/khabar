@@ -79,13 +79,14 @@ function cors(request) {
   };
 }
 
-/** JSON response. `cache` = seconds the Vercel CDN may serve it (GETs only). */
-export function json(request, body, { status = 200, cache = 0 } = {}) {
+/** JSON response. `cache` = seconds the Vercel CDN may serve it (GETs only), `stale` = how long after that it may
+ *  still serve the old copy while refreshing (default 6× cache). */
+export function json(request, body, { status = 200, cache = 0, stale = cache * 6 } = {}) {
   return new Response(JSON.stringify(body), {
     status,
     headers: {
       'Content-Type': 'application/json; charset=utf-8',
-      'Cache-Control': cache ? `public, max-age=0, s-maxage=${cache}, stale-while-revalidate=${cache * 6}` : 'no-store',
+      'Cache-Control': cache ? `public, max-age=0, s-maxage=${cache}, stale-while-revalidate=${stale}` : 'no-store',
       ...cors(request),
     },
   });

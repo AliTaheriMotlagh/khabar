@@ -5,11 +5,10 @@ import { url } from '../lib/posts';
 const path = Astro.url.pathname;
 const here = (p: string) => (p === url() ? path === p || /\/page\/\d+\/$/.test(path) : path.startsWith(p)) ? 'page' : undefined;
 const nav = [
-  { href: url(), label: 'خانه', icon: 'home' },
-  { href: url('today/'), label: 'امروز در یک نگاه', icon: 'stories' },
-  { href: url('tags/'), label: 'موضوع‌ها', icon: 'hash' },
-  { href: url('saved/'), label: 'ذخیره‌ها', icon: 'bookmark' },
-  { href: url('about/'), label: 'درباره', icon: 'info' },
+  { href: url(), label: 'خانه' },
+  { href: url('today/'), label: 'امروز در یک نگاه' },
+  { href: url('tags/'), label: 'موضوع‌ها' },
+  { href: url('saved/'), label: 'ذخیره‌ها' },
 ];
 ---
 <header class="site-header" data-header>
@@ -22,12 +21,11 @@ const nav = [
       {nav.map((n) => <a href={n.href} aria-current={here(n.href)}>{n.label}</a>)}
     </nav>
     <div class="tools">
-      <button class="online-pill" type="button" data-open-chat data-online-pill hidden aria-label="گفتگوی زنده">
-        <span class="pulse" aria-hidden="true"></span><span data-online>…</span><span class="hide-sm">آنلاین</span>
-      </button>
       <a class="icon-btn" href={url('search/')} aria-label="جستجو" title="جستجو (/)"><Icon name="search" /></a>
       <button class="icon-btn" type="button" data-open-chat aria-label="گفتگوی زنده" title="گفتگوی زنده">
-        <Icon name="chat" /><span class="dot" data-chat-dot hidden></span>
+        <Icon name="chat" />
+        <span class="online-badge" data-online-pill hidden><span data-online>…</span></span>
+        <span class="dot" data-chat-dot hidden></span>
       </button>
       <button class="icon-btn hide-sm" type="button" data-theme-toggle aria-label="روشن / تیره" title="روشن / تیره (t)">
         <Icon name="moon" class="if-light" /><Icon name="sun" class="if-dark" />

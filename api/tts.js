@@ -4,7 +4,7 @@
 // optionally TTS_VOICE (default fa-IR-DilaraNeural; fa-IR-FaridNeural is the male voice).
 // The text never comes from the request: paragraph i of the story's own card.json (0 = title, then the body, then
 // "why it matters"), so the CDN can cache every clip for good and the key can't be used to read arbitrary text.
-import { fail, postId, preflight } from './_lib.js';
+import { fail, json, postId, preflight } from './_lib.js';
 
 const KEY = process.env.AZURE_SPEECH_KEY;
 const REGION = process.env.AZURE_SPEECH_REGION;
@@ -14,8 +14,10 @@ const xml = (s) => s.replace(/[&<>"']/g, (c) => `&#${c.charCodeAt(0)};`);
 export const OPTIONS = preflight;
 
 export async function GET(request) {
-  if (!KEY || !REGION) return fail(request, 501, 'not configured');
   const u = new URL(request.url);
+  // ?probe=1: is the cloud voice on? The site only offers "listen" where some Persian voice can actually speak.
+  if (u.searchParams.has('probe')) return json(request, { ok: Boolean(KEY && REGION) }, { status: KEY && REGION ? 200 : 501, cache: 300 });
+  if (!KEY || !REGION) return fail(request, 501, 'not configured');
   const id = postId(u.searchParams.get('id'));
   const i = Number(u.searchParams.get('i'));
   if (!id || !Number.isInteger(i) || i < 0 || i > 200) return fail(request, 400, 'bad request');

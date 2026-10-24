@@ -18,6 +18,25 @@ const tag = (s: string) => [...s].reduce((h, c) => (h * 33 + c.charCodeAt(0)) >>
 // The text hash only changes the address (the server reads the text itself), so an edited paragraph isn't served stale.
 const clipUrl = (l: Line) => `${SITE.api}/api/tts/?id=${l.post}&i=${l.i}&v=${tag(l.text)}`;
 
+let available: Promise<boolean> | null = null;
+/** Can this device read Persian aloud: its own Persian voice, or the cloud voice (/api/tts has a key)?
+ *  Checked ahead of time, never inside the tap that starts playback. */
+export function canSpeakPersian(): Promise<boolean> {
+  available ??= (async () => {
+    if (synth) {
+      // Chrome fills the voice list a moment after load.
+      if (!synth.getVoices().length) await new Promise((r) => (synth.addEventListener('voiceschanged', r, { once: true }), setTimeout(r, 1500)));
+      if (voiceFor('fa')) return true;
+    }
+    try {
+      return (await fetch(`${SITE.api}/api/tts/?probe=1`)).ok;
+    } catch {
+      return false;
+    }
+  })();
+  return available;
+}
+
 export class Speaker {
   lines: Line[] = [];
   at = 0;

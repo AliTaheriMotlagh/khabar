@@ -14,20 +14,16 @@ for (const p of posts) {
 }
 ---
 <section class="timeline" aria-labelledby="tl-title">
-  <div class="tl-bar">
-    <h2 id="tl-title"><Icon name="clock" /> {title}</h2>
-    <div class="seg-switch" role="group" aria-label="نمای خبرها">
-      <button type="button" data-set-view="cards" aria-pressed="true"><Icon name="cards" /> کامل</button>
-      <button type="button" data-set-view="list" aria-pressed="false"><Icon name="list" /> فهرست کوتاه</button>
-    </div>
-  </div>
+  <h2 class="tl-title" id="tl-title">{title}</h2>
   <ol class="tl" data-tl>
     {
       days.map((d, di) => (
         <>
           <li class="tl-day" data-day={d.day} data-day-count={d.posts.length}>
-            <span class="tl-day-label" data-day-label>{faDate(d.iso, { weekday: 'long', day: 'numeric', month: 'long' })}</span>
-            <small><span data-num>{faNum(d.posts.length)}</span> خبر</small>
+            <span class="tl-day-pill">
+              <span data-day-label>{faDate(d.iso, { weekday: 'long', day: 'numeric', month: 'long' })}</span>
+              <small data-num>{faNum(d.posts.length)} خبر</small>
+            </span>
           </li>
           {d.posts.map((p, i) => <StoryCard post={p} eager={eagerFirst && di === 0 && i < 2} />)}
         </>

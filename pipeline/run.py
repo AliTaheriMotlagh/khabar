@@ -95,6 +95,8 @@ def process(http, tp: telegram.TgPost) -> None:
                 print(f"  ✓ gholam comment for {tp.id}")
             gholam = found
     post["gholam"] = gholam
+    if "gholam_checked" in existing:
+        post["gholam_checked"] = existing["gholam_checked"]
 
     # Linked tweets/pages are only re-read when the post itself changed.
     post["links"] = existing["links"] if not changed and "links" in existing else enrich.enrich_links(http, tp.links)
@@ -118,6 +120,25 @@ def needs_save(post: dict, existing: dict) -> bool:
         return False
     strip = lambda p: TG_CDN_RE.sub("", json.dumps(p, ensure_ascii=False, sort_keys=True))
     return strip(post) != strip(existing) or age_hours(existing.get("updated") or "") >= config.URL_REFRESH_HOURS
+
+
+def backfill_gholam(http) -> None:
+    """Posts first crawled when already past GHOLAM_POLL_HOURS (a backfill) were never checked for Gholam's comment,
+    so the site showed the English source instead of the channel's Persian. Look once for each, newest first."""
+    todo = []
+    for path in config.POSTS_DIR.glob("*.json"):
+        post = json.loads(path.read_text("utf-8"))
+        if not post.get("gholam") and not post.get("digest") and not post.get("gholam_checked"):
+            todo.append(post)
+    for post in sorted(todo, key=lambda p: p["id"], reverse=True)[: config.GHOLAM_BACKFILL]:
+        found = telegram.fetch_gholam_comment(http, post["id"])
+        if found:
+            print(f"  ✓ gholam comment for {post['id']} (backfill)")
+            post["gholam"] = found
+            post["article"] = build_article(post)
+        post["gholam_checked"] = datetime.now(timezone.utc).isoformat(timespec="seconds")
+        post["updated"] = post["gholam_checked"]
+        save(post)
 
 
 def refresh_articles() -> None:
@@ -145,6 +166,7 @@ def main() -> None:
                 process(http, tp)
             except Exception as exc:  # one broken post must not stop the run
                 print(f"  ! failed {tp.id}: {exc!r}")
+        backfill_gholam(http)
 
 
 if __name__ == "__main__":

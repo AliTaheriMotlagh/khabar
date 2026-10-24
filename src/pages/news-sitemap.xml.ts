@@ -1,12 +1,12 @@
 // Google News sitemap: articles from the last two days (https://developers.google.com/search/docs/crawling-indexing/sitemaps/news-sitemap).
 import { SITE } from '../site';
-import { abs, getPosts } from '../lib/posts';
+import { abs, getFeed } from '../lib/posts';
 
 const esc = (s: string) => s.replace(/[&<>"']/g, (c) => `&#${c.charCodeAt(0)};`);
 
 export function GET() {
   const cutoff = Date.now() - 2 * 864e5;
-  const items = getPosts().filter((p) => new Date(p.date).getTime() > cutoff);
+  const items = getFeed().filter((p) => new Date(p.date).getTime() > cutoff);
   const body = items
     .map(
       (p) => `<url><loc>${abs(`p/${p.id}/`)}</loc><news:news><news:publication><news:name>${esc(SITE.name)}</news:name><news:language>fa</news:language></news:publication><news:publication_date>${p.date}</news:publication_date><news:title>${esc(p.article.title)}</news:title></news:news></url>`,

@@ -240,17 +240,9 @@ export function markNew() {
   const banner = $('[data-welcome]');
   if (banner) {
     const text = $('[data-welcome-text]', banner)!;
-    const c = store.get<Catchup>('catchup', { total: 0, done: 0 });
-    const name = myName();
-    if (!lastSeen) {
-      text.innerHTML = `به ${esc(SITE.name)} خوش آمدید! با خواندن خبرها، واکنش و نظر دادن <b>امتیاز</b> بگیرید و <b>نشان</b> باز کنید.`;
-      banner.hidden = false;
-    } else if (pending.length) {
-      const done = c.total ? c.done : 0;
-      const total = c.total || pending.length;
-      text.innerHTML = `${name ? `${esc(name)}، خوش` : 'خوش'} برگشتید! <b>${fmtNum(pending.length)}</b> خبر تازه از آخرین بازدیدتان منتظر شماست.
-        <span class="catchup" title="خبرهای تازه‌ی خوانده‌شده"><i style="width:${Math.round((done / total) * 100)}%"></i></span>
-        <small>${fmtNum(done)} از ${fmtNum(total)} · همه را بخوانید: +${fmtNum(POINTS.catchup)} امتیاز</small>`;
+    // Only for returning readers, and one quiet line: a first visit starts straight with the news.
+    if (lastSeen && pending.length) {
+      text.innerHTML = `<b>${fmtNum(pending.length)}</b> خبر تازه از آخرین بازدیدتان`;
       banner.hidden = false;
       const jump = $<HTMLAnchorElement>('[data-welcome-jump]', banner);
       if (jump) jump.hidden = !$('#new-divider');

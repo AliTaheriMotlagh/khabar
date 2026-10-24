@@ -1,8 +1,8 @@
 ---
 import Base from '../../layouts/Base.astro';
 import Icon from '../../components/Icon.astro';
-import { getPosts, getTags, sized, tagHref, faNum } from '../../lib/posts';
-const posts = getPosts();
+import { getFeed, getTags, sized, tagHref, faNum } from '../../lib/posts';
+const posts = getFeed();
 const topics = getTags().map((t) => {
   const items = posts.filter((p) => p.article.tags.includes(t.tag));
   return { ...t, latest: items[0], cover: items.find((p) => p.cover)?.cover };

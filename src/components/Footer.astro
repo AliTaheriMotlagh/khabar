@@ -16,24 +16,17 @@ import { url } from '../lib/posts';
         <button class="btn" type="button" data-install hidden><Icon name="download" /> نصب اپ</button>
       </div>
     </div>
-    <nav aria-label="پیوندها">
-      <h2>بخش‌ها</h2>
-      <a href={url()}>تازه‌ترین خبرها</a>
-      <a href={url('tags/')}>موضوع‌ها</a>
+    <nav class="foot-links" aria-label="پیوندها">
       <a href={url('search/')}>جستجو</a>
-      <a href={url('saved/')}>ذخیره‌شده‌ها</a>
-      <a href={url('me/')}>پروفایل و تاریخچه</a>
-    </nav>
-    <nav aria-label="درباره">
-      <h2>درباره</h2>
-      <a href={url('about/')}>درباره‌ی {SITE.name}</a>
-      <a href={SITE.owner.url} target="_blank" rel="noopener" referrerpolicy="origin">{SITE.owner.name} — mehrzad.ai</a>
-      <a href={SITE.author.url} target="_blank" rel="noopener" referrerpolicy="origin">{SITE.author.name} — سازنده‌ی سایت</a>
-      <a href={url('rss.xml')}><Icon name="rss" /> خوراک RSS</a>
+      <a href={url('tags/')}>موضوع‌ها</a>
+      <a href={url('saved/')}>ذخیره‌ها</a>
+      <a href={url('me/')}>پروفایل</a>
+      <a href={url('about/')}>درباره</a>
+      <a href={url('rss.xml')}><Icon name="rss" /> RSS</a>
     </nav>
   </div>
   <div class="container foot-bottom">
-    <span>محتوا از کانال <a href={`https://t.me/${SITE.channel}`} rel="noopener" referrerpolicy="origin">@{SITE.channel}</a> · ترجمه: {SITE.gholam} · ساخته‌ی <a href={SITE.author.url} target="_blank" rel="noopener" referrerpolicy="origin">{SITE.author.name}</a></span>
+    <span>محتوا از کانال <a href={`https://t.me/${SITE.channel}`} rel="noopener" referrerpolicy="origin">@{SITE.channel}</a> ({SITE.owner.name}) · ترجمه: {SITE.gholam} · ساخته‌ی <a href={SITE.author.url} target="_blank" rel="noopener" referrerpolicy="origin">{SITE.author.name}</a></span>
     <span class="foot-stats" data-site-stats hidden><Icon name="eye" /> <b data-total>…</b> بازدید · <b data-today>…</b> نفر امروز</span>
   </div>
 </footer>

@@ -1,0 +1,29 @@
+---
+// The channel's own Persian morning summary (posted ~07:36 Tehran; the workflow crawls right after it), top of the home page.
+// Every line links to that story's page here.
+import Icon from './Icon.astro';
+import { faDate, faNum, faTime, latestDigest } from '../lib/posts';
+const digest = latestDigest();
+const items = digest?.digestItems ?? [];
+const SHOW = 4;
+---
+{
+  digest && items.length > 0 && (
+    <section class="brief" aria-labelledby="brief-title">
+      <header class="brief-head">
+        <h2 id="brief-title"><Icon name="bolt" /> خلاصه‌ی خبرهای صبح</h2>
+        <small>{faDate(digest.date, { weekday: 'long', day: 'numeric', month: 'long' })} · ساعت {faTime(digest.date)}</small>
+      </header>
+      <ol class="brief-list">
+        {items.slice(0, SHOW).map((i) => (
+          <li>
+            <a href={i.href} target={i.internal ? undefined : '_blank'} rel={i.internal ? undefined : 'noopener'}>{i.text}</a>
+          </li>
+        ))}
+      </ol>
+      <a class="more-link" href={digest.href}>
+        {items.length > SHOW ? <>همه‌ی {faNum(items.length)} خبر خلاصه</> : 'خلاصه‌ی کامل'} <Icon name="arrow" />
+      </a>
+    </section>
+  )
+}

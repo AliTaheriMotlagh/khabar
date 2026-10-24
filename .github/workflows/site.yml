@@ -10,6 +10,10 @@ on:
   # this schedule, otherwise both fire and every hour runs twice.
   schedule:
     - cron: '17 * * * *'
+    # The channel posts its daily summary at ~07:36 Tehran (04:06 UTC), English first, then Persian two minutes later.
+    # Two extra runs right after it put the morning brief on the home page within minutes, even if one is delayed.
+    - cron: '12 4 * * *'
+    - cron: '32 4 * * *'
   push:
     branches: [main]
     # Data and docs changes need no deploy from here: the next scheduled run publishes them.

@@ -1,77 +1,30 @@
 ---
+// Wide screens only (hidden below 1080px, where the footer and tab bar carry these links).
 import Icon from './Icon.astro';
 import { SITE } from '../site';
-import { getChannel, getTags, latestDigest, tagHref, faNum, url } from '../lib/posts';
+import { getChannel, getTags, tagHref, faNum } from '../lib/posts';
 interface Props { current?: string }
 const { current } = Astro.props;
 const channel = getChannel();
-const digest = latestDigest();
-const tags = getTags().slice(0, 16);
+const tags = getTags().slice(0, 14);
 ---
 <aside class="sidebar" aria-label="ستون کناری">
   <section class="side-card channel-card">
     <div class="ch-top">
-      {channel.avatar ? <img src={channel.avatar} alt="" width="52" height="52" referrerpolicy="no-referrer" /> : <span class="logo-mark big" aria-hidden="true"></span>}
+      {channel.avatar ? <img src={channel.avatar} alt="" width="48" height="48" referrerpolicy="no-referrer" /> : <span class="logo-mark big" aria-hidden="true"></span>}
       <div>
         <b>{channel.title ?? SITE.nameLatin}</b>
         {channel.subscribers && <small><span data-num>{faNum(channel.subscribers)}</span> عضو</small>}
       </div>
     </div>
-    <p>هر خبر اول در کانال تلگرام {SITE.owner.name} منتشر می‌شود؛ اینجا با ترجمه‌ی فارسی، تصویر و ویدیو.</p>
-    <div class="row">
-      <a class="btn primary block" href={`https://t.me/${SITE.channel}`} target="_blank" rel="noopener" referrerpolicy="origin"><Icon name="telegram" /> عضویت در کانال</a>
-      <a class="btn block" href={SITE.owner.url} target="_blank" rel="noopener" referrerpolicy="origin">mehrzad.ai</a>
-    </div>
-  </section>
-
-  <section class="side-card live-card" data-live-card hidden>
-    <div class="live-row">
-      <span class="pulse" aria-hidden="true"></span>
-      <span><b data-online>…</b> نفر همین الان اینجا هستند</span>
-    </div>
-    <div class="live-stats">
-      <span><Icon name="users" /> امروز <b data-today>…</b></span>
-      <span><Icon name="eye" /> کل بازدید <b data-total>…</b></span>
-    </div>
-    <button class="btn block" type="button" data-open-chat><Icon name="chat" /> گفتگوی زنده با بقیه</button>
-  </section>
-
-  <section class="side-card me-card" data-me-card>
-    <a class="me-row" href={url('me/')}>
-      <span class="avatar lg" data-my-avatar aria-hidden="true">؟</span>
-      <span class="me-info">
-        <b data-my-name>مهمان</b>
-        <small>سطح <span data-my-level>۱</span> · <span data-my-title>تازه‌وارد</span></small>
-      </span>
-      <span class="streak" title="روزهای پشت‌سرهم"><Icon name="flame" /> <b data-my-streak>۰</b></span>
-    </a>
-    <div class="xp"><i data-my-xp style="width:0%"></i></div>
-    <small class="muted" data-my-next>با خواندن، واکنش و نظر دادن امتیاز بگیرید.</small>
-  </section>
-
-  {
-    digest && (
-      <section class="side-card">
-        <h2 class="side-title"><Icon name="bolt" /> خلاصه‌ی ۲۴ ساعت</h2>
-        <ol class="mini-list">
-          {digest.digestItems.slice(0, 6).map((i) => (
-            <li><a href={i.href} target={i.internal ? undefined : '_blank'} rel={i.internal ? undefined : 'noopener'}>{i.text}</a></li>
-          ))}
-        </ol>
-        <a class="more-link" href={digest.href}>همه‌ی خلاصه <Icon name="arrow" /></a>
-      </section>
-    )
-  }
-
-  <section class="side-card" data-leaders hidden>
-    <h2 class="side-title"><Icon name="trophy" /> فعال‌ترین‌های هفته</h2>
-    <ol class="leaders" data-leaders-list></ol>
+    <p>هر خبر اول در کانال تلگرام {SITE.owner.name} منتشر می‌شود؛ اینجا با ترجمه‌ی فارسی.</p>
+    <a class="btn primary block" href={`https://t.me/${SITE.channel}`} target="_blank" rel="noopener" referrerpolicy="origin"><Icon name="telegram" /> عضویت در کانال</a>
   </section>
 
   {
     tags.length > 0 && (
       <section class="side-card">
-        <h2 class="side-title"><Icon name="hash" /> موضوع‌ها</h2>
+        <h2 class="side-title">موضوع‌ها</h2>
         <div class="chips wrap">
           {tags.map((t) => (
             <a class="chip" href={tagHref(t.tag)} aria-current={current === t.tag ? 'page' : undefined}>
@@ -82,4 +35,9 @@ const tags = getTags().slice(0, 16);
       </section>
     )
   }
+
+  <section class="side-card" data-leaders hidden>
+    <h2 class="side-title"><Icon name="trophy" /> فعال‌ترین‌های هفته</h2>
+    <ol class="leaders" data-leaders-list></ol>
+  </section>
 </aside>

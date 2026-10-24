@@ -44,7 +44,6 @@ const totalMin = Math.max(1, Math.round(scenes.reduce((n, s) => n + s.seconds, 0
               </div>
               <div class="pl-info">
                 <div class="pl-meta">
-                  {s.p.article.tags[0] && <span class="kicker on-dark">{s.p.article.tags[0]}</span>}
                   <time datetime={s.p.date} data-f="rel"></time>
                   {s.p.source?.domain && <span class="pl-src" dir="ltr">{s.p.source.domain}</span>}
                 </div>

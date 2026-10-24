@@ -11,8 +11,8 @@ WHY_RE = re.compile(r"^\s*(چرا مهمه[؟?]?|اهمیتش اینه که)\s*"
 SENTENCE_END_RE = re.compile(r"(?<=[.!؟?])\s+")
 
 # (keywords matched case-insensitively in English or Persian text) → Persian tag
+# No "هوش مصنوعی" topic: the whole channel is about AI, so it would sit on every story and say nothing.
 TOPICS: list[tuple[str, tuple[str, ...]]] = [
-    ("هوش مصنوعی", (" ai ", "a.i.", "artificial intelligence", "llm", "gpt", "chatbot", "agent", "هوش مصنوعی", "مدل زبانی")),
     ("اوپن‌ای‌آی", ("openai", "chatgpt", "sam altman", "اوپن", "چت‌جی‌پی‌تی")),
     ("آنتروپیک", ("anthropic", "claude", "آنتروپیک", "کلاد")),
     ("گوگل", ("google", "gemini", "deepmind", "android", "گوگل", "جمنای")),

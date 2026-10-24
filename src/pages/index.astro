@@ -5,22 +5,21 @@ import Timeline from '../components/Timeline.astro';
 import Sidebar from '../components/Sidebar.astro';
 import Icon from '../components/Icon.astro';
 import TodayRail from '../components/TodayRail.astro';
+import DailyBrief from '../components/DailyBrief.astro';
 import { SITE } from '../site';
-import { getPosts, url } from '../lib/posts';
+import { getFeed, latestDigest, url } from '../lib/posts';
 
-const posts = getPosts();
-const first = posts.slice(0, SITE.pageSize);
-const lead = first.filter((p) => p.kind === 'story' && p.cover).slice(0, 4);
-const leadIds = new Set(lead.map((p) => p.id));
-const rest = first.filter((p) => !leadIds.has(p.id));
+const posts = getFeed();
+const digest = latestDigest();
+// The morning summary sits on top in full, so it isn't repeated on the timeline.
+const first = posts.slice(0, SITE.pageSize).filter((p) => p.id !== digest?.id);
+const lead = first.find((p) => p.kind === 'story' && p.cover);
+const rest = first.filter((p) => p !== lead);
 const next = posts.length > SITE.pageSize ? url('page/2/') : null;
 ---
-<Base image={lead[0]?.cover?.src}>
+<Base image={lead?.cover?.src}>
   <div class="container">
-    <section class="masthead">
-      <h1>{SITE.name} <span class="ltr" dir="ltr">{SITE.nameLatin}</span><span class="sr-only"> — {SITE.tagline}</span></h1>
-      {posts[0] && <p class="updated"><span class="pulse" aria-hidden="true"></span> آخرین خبر <time datetime={posts[0].date} data-f="rel"></time></p>}
-    </section>
+    <h1 class="sr-only">{SITE.name} — {SITE.tagline}</h1>
     <TodayRail />
     <div class="welcome" data-welcome hidden>
       <Icon name="sparkles" />
@@ -31,7 +30,10 @@ const next = posts.length > SITE.pageSize ? url('page/2/') : null;
       posts.length ? (
         <div class="layout">
           <div class="col-main">
-            <Lead posts={lead} />
+            <div class="home-top">
+              <Lead post={lead} />
+              <DailyBrief />
+            </div>
             <Timeline posts={rest} nextHref={next} />
           </div>
           <Sidebar />

@@ -2,7 +2,7 @@
 // data-seconds, or with narration on, for as long as the voice takes. Tap the left side for the next story and the
 // right side for the previous one (it's a right-to-left page), hold to pause, swipe down or Esc to leave.
 import { $, $$, fmtNum, store, toast } from './core';
-import { Speaker, type Line } from './speech';
+import { Speaker, canSpeakPersian, type Line } from './speech';
 
 const player = $('[data-player]');
 if (player) init(player);
@@ -218,6 +218,9 @@ function init(player: HTMLElement) {
 
   // ---------- start ----------
   soundBtn.setAttribute('aria-pressed', String(sound));
+  // Narration only where a Persian voice exists (the device's own, or the cloud one).
+  soundBtn.hidden = true;
+  canSpeakPersian().then((ok) => (soundBtn.hidden = !ok));
   // Browsers only allow sound after a tap: a remembered "narration on" waits for the first one.
   if (sound) {
     sound = false;
@@ -226,7 +229,7 @@ function init(player: HTMLElement) {
       'pointerup',
       (e) => {
         soundBtn.classList.remove('is-armed');
-        if (!sound && !soundBtn.contains(e.target as Node)) setSound(true);
+        if (!sound && !soundBtn.hidden && !soundBtn.contains(e.target as Node)) setSound(true);
       },
       { once: true },
     );

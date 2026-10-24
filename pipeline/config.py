@@ -16,6 +16,8 @@ PAGES = int(os.getenv("PAGES", "3"))
 URL_REFRESH_HOURS = float(os.getenv("URL_REFRESH_HOURS", "6"))
 # Keep re-checking a post's discussion for Gholam's comment for this many hours.
 GHOLAM_POLL_HOURS = float(os.getenv("GHOLAM_POLL_HOURS", "48"))
+# Posts first crawled after that window (a backfill) never got a look: check this many of them per run, once each.
+GHOLAM_BACKFILL = int(os.getenv("GHOLAM_BACKFILL", "40"))
 GHOLAM_NAME = os.getenv("GHOLAM_NAME", "غلام")
 GHOLAM_SIGNATURE = os.getenv("GHOLAM_SIGNATURE", "داش غلام")
 

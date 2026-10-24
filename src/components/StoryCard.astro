@@ -18,15 +18,15 @@ const thumb = post.cover ? sized(post.cover.src || post.cover.poster, 'small') :
   <time class="tl-time" datetime={post.date} data-num>{faTime(post.date)}</time>
   {
     post.kind === 'digest' ? (
-      <DigestCard post={post} />
+      <DigestCard post={post} limit={3} />
     ) : (
-      <article class:list={['story', post.kind === 'brief' && 'is-brief']} aria-labelledby={`t-${post.id}`}>
+      <article class="story" aria-labelledby={`t-${post.id}`}>
         {thumb && <img class="row-thumb" src={thumb} alt="" width="72" height="72" loading="lazy" decoding="async" referrerpolicy="no-referrer" />}
         <div class="story-main">
           <div class="story-head">
-            {tag ? <a class="kicker" href={tagHref(tag)}>{tag}</a> : post.kind === 'brief' && <span class="kicker muted">کوتاه</span>}
+            {tag && <a class="kicker" href={tagHref(tag)}>{tag}</a>}
             <SourceChip link={post.source} />
-            <span class="seen" data-seen hidden><Icon name="check" /> خوانده‌اید</span>
+            <time class="story-time" datetime={post.date} data-num>{faTime(post.date)}</time>
           </div>
           <h3 id={`t-${post.id}`}><a href={post.href} data-astro-prefetch>{a.title}</a></h3>
           {post.excerpt && post.excerpt !== a.title && <p class="excerpt" dir="auto">{post.excerpt}</p>}
@@ -45,8 +45,6 @@ const thumb = post.cover ? sized(post.cover.src || post.cover.poster, 'small') :
           <a class="meta-btn" href={`${post.href}#comments`} aria-label="نظرها">
             <Icon name="comment" /><span data-ccount={post.id}></span>
           </a>
-          <span class="meta-btn" data-views={post.id} hidden><Icon name="eye" /><span></span></span>
-          <a class="read-more" href={post.href}>{post.kind === 'brief' ? 'خبر کامل' : 'ادامه'} <Icon name="arrow" /></a>
           <div class="actions">
             <SaveButton post={post} />
             <button class="icon-btn" type="button" data-share data-url={post.href} data-title={a.title} aria-label="اشتراک‌گذاری"><Icon name="share" /></button>

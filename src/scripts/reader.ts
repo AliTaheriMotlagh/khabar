@@ -3,7 +3,7 @@
 import { SITE } from '../site';
 import { $, $$, fmtNum, store, toast } from './core';
 import { award } from './game';
-import { Speaker } from './speech';
+import { Speaker, canSpeakPersian } from './speech';
 
 type Prefs = Record<string, string>;
 const SIZES = ['s', 'm', 'l', 'xl'];
@@ -78,15 +78,17 @@ const listenBtn = $('[data-listen]');
 const rateBtn = $('[data-rate]');
 const RATES = [1, 1.25, 1.5, 1.75, 0.85];
 let paragraphs: HTMLElement[] = [];
+let touchedAt = 0; // last time the reader scrolled by hand
+for (const type of ['wheel', 'touchmove', 'keydown']) addEventListener(type, () => (touchedAt = Date.now()), { passive: true });
 const speaker = new Speaker({
   line(n) {
     $$('.is-speaking').forEach((el) => el.classList.remove('is-speaking'));
     const el = paragraphs[n];
     if (!el) return;
     el.classList.add('is-speaking');
-    // Follow along, but only when the paragraph is off screen.
+    // Follow along, but only when the paragraph is off screen and the reader isn't scrolling on their own.
     const r = el.getBoundingClientRect();
-    if (r.top < 0 || r.bottom > innerHeight) el.scrollIntoView({ block: 'center', behavior: 'smooth' });
+    if ((r.top < 0 || r.bottom > innerHeight) && Date.now() - touchedAt > 5000) el.scrollIntoView({ block: 'center', behavior: 'smooth' });
   },
   state(s) {
     if (!listenBtn) return;
@@ -173,7 +175,7 @@ export function initReader(get: () => Prefs, set: (patch: Prefs) => void) {
   document.addEventListener('visibilitychange', () => document.visibilityState === 'hidden' && rememberPosition());
 
   if (listenBtn) {
-    listenBtn.hidden = false;
+    canSpeakPersian().then((ok) => (listenBtn.hidden = !ok));
     listenBtn.addEventListener('click', toggleListen);
     showRate();
     rateBtn?.addEventListener('click', stepRate);
