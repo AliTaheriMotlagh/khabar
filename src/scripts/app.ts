@@ -1,6 +1,7 @@
 // Client behaviour for every page. Everything is progressive: the site works without JS.
 import { $, $$, BASE, PAGE_CACHE, getSaved, relTime, store, toast, type Entry } from './core';
 import { award, markNew, recordRead, renderMe } from './game';
+import { watchMedia } from './media';
 import { initSocial, loadEngage } from './social';
 
 export { getSaved, getHistory, rowHtml, store } from './core';
@@ -134,6 +135,8 @@ const lightbox = $<HTMLDialogElement>('#lightbox');
 function zoom(img: HTMLImageElement) {
   const big = $<HTMLImageElement>('[data-lightbox-img]', lightbox!);
   if (!lightbox || !big) return;
+  delete big.dataset.retried;
+  big.dataset.loading = '';
   big.src = img.dataset.zoom || img.src;
   big.alt = img.alt;
   lightbox.showModal();
@@ -169,27 +172,6 @@ document.addEventListener('click', (e) => {
 // Only one video plays at a time.
 document.addEventListener('play', (e) => $$<HTMLVideoElement>('video').forEach((v) => v !== e.target && !v.loop && v.pause()), true);
 
-// Media URLs come straight from Telegram/X and can expire: swap a broken one for a link to the post.
-document.addEventListener(
-  'error',
-  (e) => {
-    const el = e.target as HTMLElement;
-    if (!(el instanceof HTMLImageElement || el instanceof HTMLVideoElement) || !el.dataset.fallback) return;
-    const fig = el.closest('figure, .story-cover, .og');
-    const link = document.createElement('a');
-    link.className = 'media-gone';
-    link.href = el.dataset.fallback;
-    link.target = '_blank';
-    link.rel = 'noopener';
-    link.textContent = 'این تصویر دیگر در دسترس نیست — دیدن در تلگرام';
-    if (fig?.tagName === 'FIGURE') fig.replaceChildren(link);
-    else if (fig) fig.remove();
-    else el.remove();
-    if (el.closest('.lead-main')) el.closest('.lead-main')?.classList.add('no-img');
-  },
-  true,
-);
-
 // ---------- load more (progressive: the link is a normal pagination link) ----------
 async function loadMore(link: HTMLAnchorElement) {
   link.setAttribute('aria-busy', 'true');
@@ -213,6 +195,7 @@ async function loadMore(link: HTMLAnchorElement) {
     renderDates();
     renderSaved();
     markNew();
+    watchMedia(tl);
     loadEngage(tl);
   } catch {
     location.href = link.href;
@@ -304,5 +287,6 @@ if (article) {
   recordRead(entry, (d.tags ?? '').split(',').filter(Boolean));
 }
 markNew();
+watchMedia();
 initSocial();
 setInterval(renderDates, 60_000);

@@ -56,6 +56,11 @@ async function cacheFirst(req, name, max) {
   return res;
 }
 
+// Cross-origin images are opaque, so a failed one can land in the cache; the page asks to drop it before a retry.
+self.addEventListener('message', (e) => {
+  if (typeof e.data?.evict === 'string') e.waitUntil(caches.open(IMAGES).then((c) => c.delete(e.data.evict)));
+});
+
 self.addEventListener('fetch', (e) => {
   const req = e.request;
   if (req.method !== 'GET' || req.headers.has('range')) return;
