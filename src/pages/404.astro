@@ -1,0 +1,11 @@
+---
+import Base from '../layouts/Base.astro';
+import { url } from '../lib/posts';
+---
+<Base title="صفحه پیدا نشد" noindex>
+  <div class="wrap empty">
+    <p style="font-size:3rem;margin:0">۴۰۴</p>
+    <p>این صفحه پیدا نشد. شاید خبرش جابه‌جا شده.</p>
+    <p><a class="btn primary" href={url()}>بازگشت به خانه</a> <a class="btn" href={url('search/')}>جستجو</a></p>
+  </div>
+</Base>

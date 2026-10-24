@@ -1,0 +1,35 @@
+---
+import PostCard from './PostCard.astro';
+import { dayKey, faDate, type Post } from '../lib/posts';
+interface Props { posts: Post[]; nextHref?: string | null; prevHref?: string | null }
+const { posts, nextHref, prevHref } = Astro.props;
+
+// Telegram-style day separators between posts.
+const rows: ({ day: string; iso: string } | Post)[] = [];
+let last = '';
+for (const p of posts) {
+  const d = dayKey(p.date);
+  if (d !== last) rows.push({ day: d, iso: p.date });
+  last = d;
+  rows.push(p);
+}
+---
+<div class="feed">
+  {
+    rows.map((r, i) =>
+      'day' in r ? (
+        <div class="day" data-day={r.day} role="separator">{faDate(r.iso, { weekday: 'long', day: 'numeric', month: 'long' })}</div>
+      ) : (
+        <PostCard post={r} eager={i < 3} />
+      ),
+    )
+  }
+</div>
+{
+  (nextHref || prevHref) && (
+    <nav class="load-more" aria-label="صفحه‌بندی" style="gap:10px">
+      {prevHref && <a class="btn" href={prevHref} rel="prev">→ خبرهای جدیدتر</a>}
+      {nextHref && <a class="btn primary" href={nextHref} rel="next" data-load-more>خبرهای بیشتر</a>}
+    </nav>
+  )
+}

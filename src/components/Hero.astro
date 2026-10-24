@@ -1,0 +1,33 @@
+---
+import Icon from './Icon.astro';
+import { SITE } from '../site';
+import { getChannel, getTags, tagHref, url, faNum } from '../lib/posts';
+interface Props { current?: string }
+const { current } = Astro.props;
+const channel = getChannel();
+const tags = getTags().slice(0, 14);
+---
+<section class="hero">
+  {channel.avatar ? <img src={url(channel.avatar)} alt="" width="72" height="72" /> : <span class="mono">{SITE.name[0]}</span>}
+  <div>
+    <h1>{SITE.name}</h1>
+    <p>{SITE.tagline}{channel.subscribers && <> · <span data-num>{faNum(channel.subscribers)}</span> عضو کانال</>}</p>
+    <div class="cta">
+      <a class="btn primary" href={`https://t.me/${SITE.channel}`} rel="noopener"><Icon name="telegram" /> عضویت در کانال</a>
+      <a class="btn" href={url('rss.xml')}><Icon name="rss" /> خوراک RSS</a>
+    </div>
+  </div>
+</section>
+{
+  tags.length > 0 && (
+    <nav class="chips" aria-label="موضوع‌ها">
+      <a class="chip" href={url()} aria-current={!current ? 'page' : undefined}>همه</a>
+      {tags.map((t) => (
+        <a class="chip" href={tagHref(t.tag)} aria-current={current === t.tag ? 'page' : undefined}>
+          {t.tag}
+          <small data-num>{faNum(t.count)}</small>
+        </a>
+      ))}
+    </nav>
+  )
+}

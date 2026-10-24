@@ -1,0 +1,27 @@
+---
+import Icon from './Icon.astro';
+import { SITE } from '../site';
+import { url } from '../lib/posts';
+interface Props { channel: { avatar?: string | null } }
+const { channel } = Astro.props;
+---
+<header class="site-header" data-header>
+  <div class="wrap-wide inner">
+    <a class="brand" href={url()} aria-label={`${SITE.name} — صفحه اصلی`}>
+      {channel.avatar ? <img src={url(channel.avatar)} alt="" width="36" height="36" /> : <i class="mono">{SITE.name[0]}</i>}
+      <span>{SITE.name}</span>
+    </a>
+    <nav class="nav" aria-label="ناوبری اصلی">
+      <a class="icon-btn" href={url('search/')} aria-label="جستجو" title="جستجو (/)"><Icon name="search" /></a>
+      <a class="icon-btn" href={url('saved/')} aria-label="ذخیره‌شده‌ها" title="ذخیره‌شده‌ها">
+        <Icon name="bookmark" /><span class="badge" data-saved-count hidden></span>
+      </a>
+      <button class="icon-btn" type="button" data-theme-toggle aria-label="تغییر پوسته روشن/تیره" title="روشن/تیره (t)">
+        <Icon name="moon" />
+      </button>
+      <button class="icon-btn" type="button" data-open-settings aria-label="تنظیمات خواندن" title="تنظیمات خواندن (,)">
+        <Icon name="type" />
+      </button>
+    </nav>
+  </div>
+</header>

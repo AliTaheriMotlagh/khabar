@@ -1,0 +1,10 @@
+node_modules/
+dist/
+.astro/
+media-store/
+public/media/
+__pycache__/
+*.pyc
+.venv/
+.env
+.DS_Store

@@ -1,0 +1,40 @@
+---
+import Icon from './Icon.astro';
+import Media from './Media.astro';
+import SaveButton from './SaveButton.astro';
+import { url, faDate, faNum, tagHref, type Post } from '../lib/posts';
+interface Props { post: Post; eager?: boolean }
+const { post, eager = false } = Astro.props;
+const a = post.article;
+const coverOnly = !post.heroMedia.length && post.cover;
+---
+<article class="card" data-id={post.id} aria-labelledby={`t-${post.id}`}>
+  <div class="card-body">
+    <div class="meta">
+      {a.tags[0] && <a class="tag" href={tagHref(a.tags[0])} style="position:relative;z-index:2">{a.tags[0]}</a>}
+      <time datetime={post.date} data-f="rel">{faDate(post.date, { day: 'numeric', month: 'long', hour: '2-digit', minute: '2-digit' })}</time>
+      {post.views && <span title="بازدید در کانال"><Icon name="eye" /> <span data-num>{faNum(post.views)}</span></span>}
+    </div>
+    {post.cover && <img class="thumb" src={url(post.cover.src)} alt="" width="84" height="84" loading="lazy" decoding="async" />}
+    <h2 id={`t-${post.id}`}><a href={post.href} data-astro-prefetch>{a.title}</a></h2>
+    {a.source_title && <p class="src-title ltr" dir="ltr">{a.source_title}</p>}
+  </div>
+  {post.heroMedia.length > 0 && <Media items={post.heroMedia} alt={a.title} eager={eager} fallbackHref={post.source?.url} />}
+  {coverOnly && <Media items={[{ type: 'image', ...post.cover! }]} alt={a.title} eager={eager} />}
+  <div class="card-body">
+    {post.excerpt && <p class="excerpt">{post.excerpt}</p>}
+    <div class="channel-body">
+      <div class="prose" style="margin-top:10px">{a.body.map((p) => <p>{p}</p>)}</div>
+      {a.why && <div class="why"><b>چرا مهمه؟</b><p>{a.why}</p></div>}
+      <a href={post.href}>جزئیات کامل منبع و ویدیو ←</a>
+    </div>
+    <div class="card-foot">
+      <span><Icon name="clock" /> <span data-num>{faNum(post.readingMinutes)}</span> دقیقه</span>
+      {post.source && <span class="ltr" dir="ltr">{post.source.domain}</span>}
+      <div class="actions">
+        <SaveButton post={post} />
+        <button class="icon-btn" type="button" data-share data-url={post.href} data-title={a.title} aria-label="اشتراک‌گذاری"><Icon name="share" /></button>
+      </div>
+    </div>
+  </div>
+</article>

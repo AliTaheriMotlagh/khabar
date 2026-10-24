@@ -1,0 +1,28 @@
+---
+import Icon from './Icon.astro';
+import { url, type Post } from '../lib/posts';
+interface Props { post: Post; class?: string; label?: boolean }
+const { post, class: cls = 'icon-btn', label = false } = Astro.props;
+---
+<button
+  class={`${cls} save-btn`}
+  type="button"
+  aria-pressed="false"
+  aria-label="ذخیره برای بعد"
+  data-save
+  data-id={post.id}
+  data-title={post.article.title}
+  data-href={post.href}
+  data-cover={post.cover ? url(post.cover.src) : ''}
+  data-excerpt={post.excerpt}
+  data-date={post.date}
+>
+  <Icon name="bookmark" class="off" /><Icon name="bookmark-fill" class="on" />
+  {label && <span class="lbl-off">ذخیره</span>}{label && <span class="lbl-on">ذخیره شد</span>}
+</button>
+<style is:global>
+  .save-btn .on, .save-btn .lbl-on { display: none; }
+  .save-btn[aria-pressed='true'] .on, .save-btn[aria-pressed='true'] .lbl-on { display: inline; }
+  .save-btn[aria-pressed='true'] .off, .save-btn[aria-pressed='true'] .lbl-off { display: none; }
+  .save-btn[aria-pressed='true'] { color: var(--accent); }
+</style>

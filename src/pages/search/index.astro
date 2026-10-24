@@ -1,0 +1,42 @@
+---
+import Base from '../../layouts/Base.astro';
+import { url } from '../../lib/posts';
+---
+<Base title="جستجو" description="جستجو در همه‌ی خبرها">
+  <div class="wrap search-page">
+    <header class="page-head"><h1>جستجو</h1><p>در عنوان‌ها، خلاصه‌ها و موضوع‌ها.</p></header>
+    <div id="search" style="margin-top:14px"></div>
+    <noscript><p>برای جستجو جاوااسکریپت لازم است.</p></noscript>
+  </div>
+  <link rel="stylesheet" href={url('pagefind/pagefind-ui.css')} />
+  <script is:inline define:vars={{ base: url('pagefind/') }}>
+    const s = document.createElement('script');
+    s.src = base + 'pagefind-ui.js';
+    s.onload = () => {
+      const ui = new PagefindUI({
+        element: '#search',
+        showSubResults: false,
+        showImages: true,
+        resetStyles: false,
+        translations: {
+          placeholder: 'دنبال چه خبری هستید؟',
+          clear_search: 'پاک کردن',
+          load_more: 'نتایج بیشتر',
+          search_label: 'جستجو در سایت',
+          filters_label: 'فیلترها',
+          zero_results: 'برای «[SEARCH_TERM]» چیزی پیدا نشد',
+          many_results: '[COUNT] نتیجه برای «[SEARCH_TERM]»',
+          one_result: '۱ نتیجه برای «[SEARCH_TERM]»',
+          alt_search: 'برای «[SEARCH_TERM]» چیزی نبود. نتایج «[DIFFERENT_TERM]»:',
+          search_suggestion: 'برای «[SEARCH_TERM]» چیزی نبود. یکی از این‌ها را امتحان کنید:',
+          searching: 'در حال جستجوی «[SEARCH_TERM]»…',
+        },
+      });
+      const q = new URLSearchParams(location.search).get('q');
+      if (q) ui.triggerSearch(q);
+      setTimeout(() => document.querySelector('#search input')?.focus(), 50);
+    };
+    s.onerror = () => (document.getElementById('search').textContent = 'جستجو پس از اولین انتشار سایت فعال می‌شود.');
+    document.head.append(s);
+  </script>
+</Base>

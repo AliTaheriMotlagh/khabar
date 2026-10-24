@@ -1,0 +1,13 @@
+---
+import Base from '../../layouts/Base.astro';
+import { getTags, tagHref, faNum } from '../../lib/posts';
+const tags = getTags();
+---
+<Base title="همه‌ی موضوع‌ها" description="فهرست موضوع‌های خبری: هوش مصنوعی، فناوری، فضا، سلامت و ...">
+  <div class="wrap">
+    <header class="page-head"><h1>موضوع‌ها</h1></header>
+    <div class="tags" style="margin-top:16px">
+      {tags.map((t) => <a class="chip" href={tagHref(t.tag)}>{t.tag} <small data-num>{faNum(t.count)}</small></a>)}
+    </div>
+  </div>
+</Base>

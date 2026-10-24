@@ -1,0 +1,42 @@
+---
+import Base from '../../layouts/Base.astro';
+import Icon from '../../components/Icon.astro';
+---
+<Base title="ذخیره‌شده‌ها" noindex>
+  <div class="wrap">
+    <header class="page-head"><h1>ذخیره‌شده‌ها</h1><p>خبرهایی که برای بعد نگه داشته‌اید — فقط روی همین دستگاه، و حتی آفلاین.</p></header>
+    <div class="feed" data-saved-list></div>
+    <div class="empty" data-saved-empty hidden>
+      <Icon name="bookmark" />
+      <p>هنوز چیزی ذخیره نکرده‌اید. روی آیکون نشانک کنار هر خبر بزنید.</p>
+    </div>
+  </div>
+</Base>
+<script>
+  import { getSaved } from '../../scripts/app';
+  const list = document.querySelector('[data-saved-list]')!;
+  const empty = document.querySelector<HTMLElement>('[data-saved-empty]')!;
+  const esc = (s = '') => s.replace(/[&<>"']/g, (c) => `&#${c.charCodeAt(0)};`);
+  function render() {
+    const items = getSaved();
+    empty.hidden = items.length > 0;
+    list.innerHTML = items
+      .map(
+        (s) => `<article class="card" data-id="${s.id}">
+          <div class="card-body">
+            ${s.cover ? `<img class="thumb" style="display:block" src="${esc(s.cover)}" alt="" width="84" height="84" loading="lazy">` : ''}
+            <h2><a href="${esc(s.href)}">${esc(s.title)}</a></h2>
+            <p class="excerpt">${esc(s.excerpt)}</p>
+            <div class="card-foot"><div class="actions">
+              <button class="icon-btn save-btn" type="button" aria-pressed="true" aria-label="حذف از ذخیره‌ها" data-save data-id="${s.id}">
+                <svg class="on" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M6 4h12v17l-6-4-6 4z"/></svg>
+              </button>
+            </div></div>
+          </div>
+        </article>`,
+      )
+      .join('');
+  }
+  render();
+  document.addEventListener('saved-change', render);
+</script>

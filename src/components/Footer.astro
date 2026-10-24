@@ -1,0 +1,19 @@
+---
+import Icon from './Icon.astro';
+import { SITE } from '../site';
+import { url } from '../lib/posts';
+---
+<footer class="site-footer">
+  <div class="wrap-wide inner">
+    <span>© {SITE.name} — محتوا از کانال <a href={`https://t.me/${SITE.channel}`} rel="noopener">@{SITE.channel}</a></span>
+    <nav aria-label="پیوندهای پانویس">
+      <a href={url('about/')}>درباره</a>
+      <a href={url('tags/')}>موضوع‌ها</a>
+      <a href={url('rss.xml')}><Icon name="rss" class="ic" /> RSS</a>
+      <button class="btn" type="button" data-open-keys style="padding:3px 10px;font-size:13px">میانبرها <kbd>?</kbd></button>
+    </nav>
+  </div>
+</footer>
+<style>
+  .ic { width: 14px; height: 14px; vertical-align: -2px; }
+</style>

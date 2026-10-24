@@ -1,0 +1,27 @@
+---
+import Base from '../layouts/Base.astro';
+import Hero from '../components/Hero.astro';
+import Feed from '../components/Feed.astro';
+import Icon from '../components/Icon.astro';
+import { SITE } from '../site';
+import { getPosts, url } from '../lib/posts';
+
+const posts = getPosts();
+const first = posts.slice(0, SITE.pageSize);
+const next = posts.length > SITE.pageSize ? url('page/2/') : null;
+---
+<Base image={first[0]?.cover?.src}>
+  <div class="wrap">
+    <Hero />
+    {
+      first.length ? (
+        <Feed posts={first} nextHref={next} />
+      ) : (
+        <div class="empty">
+          <Icon name="news" />
+          <p>هنوز خبری نیامده. چند دقیقه‌ی دیگر سر بزنید.</p>
+        </div>
+      )
+    }
+  </div>
+</Base>
