@@ -14,7 +14,10 @@
   "description": "Sam Altman says #Artificial filmed outside his house and he waved to Andrew Garfield:\n\"One morning I was walking down the street to get coffee, and there were all these cameras and there was a guy dressed exactly like me with my same backpack walking so…",
   "image": "https://cdn4.telesco.pe/file/EsxXV1z2Eml5kVtB7j-uAAM5dLtT7DDWm4JGqy8iNnboeGurB9OVa7fzmuDUzppEiTfFvENETAg1PD7dDql48IXT4FMx7ygKhJMdFmeKtdhEd7UYrpYGhsZg2mox46TXTkgH0OMwauVcyqjjoP2h2NVjlJoBnNU_cchIMZDUK9hpan7byYhh6Wyw7c0_9cpWj0lxFBXhlLzfsKpPgXnDSng5gFkikXu1rHC3IDhSpmMAMAN67eQpnMF1RiuZAu2-J-kR6rmZ8Pxra1-6NvvsE40RawOLoGvaoYKfFXDORWqa1DJKgYgtiKivO1CxJz8PLvD7cXAntaZeLht5WAnmWQ.jpg"
  },
- "gholam": null,
+ "gholam": {
+  "text": "رفیق، بشنو از سم آلتمن، رئیس اوپن‌ای‌آی، که تعریف کرده یه روز صبح که داشته می‌رفته واسه خودش قهوه بگیره، یه صحنه فوق‌العاده عجیب دیده و رسماً کپ کرده! ماجرا از این قراره که عوامل فیلم جدید «آرتیفیشال» درست دم در خونه‌ش بساط فیلمبرداری پهن کرده بودن و اندرو گارفیلد هم دقیقاً با همون تیپ، کوله‌پشتی و مدل راه رفتن خود آلتمن اونجا داشته نقش بازی می‌کرده. آلتمن گفته با دیدن این صحنه حس کرده تو یه گلیچ ماتریکس یا جهان شبیه‌سازی‌شده گیر افتاده، هرچند که در نهایت یه دستی برای گارفیلد تکون داده و رد شده. خود سم هم اعتراف کرده خیلی حس غریبیه وقتی می‌بینی یه آرتیست قهار نشسته و تمام تیک‌ها و ریزه‌کاری‌های رفتاری‌ت رو این‌طوری دقیق درآورده.\n\nچرا مهمه؟ این ماجرا نشون می‌ده ساخت اثر هالیوودی درباره زندگی آلتمن و دنیای هوش مصنوعی حسابی جدیه و گارفیلد هم تا خرخره رفته تو جلد این نقش تا تصویر مو به مو و باورپذیری بسازه.",
+  "date": "2026-10-05T16:38:43+00:00"
+ },
  "links": [
   {
    "kind": "tweet",
@@ -43,13 +46,16 @@
   }
  ],
  "article": {
-  "title": "Sam Altman says #Artificial filmed outside his house and he waved to Andrew Garfield:",
-  "source_title": null,
-  "body": [],
-  "why": null,
+  "title": "بشنو از سم آلتمن، رئیس اوپن‌ای‌آی، که تعریف کرده یه روز صبح که داشته می‌رفته واسه خودش قهوه بگیره، یه صحنه فوق‌العاده عجیب دیده و رسماً کپ کرده",
+  "source_title": "Sam Altman says #Artificial filmed outside his house and he waved to Andrew Garfield:",
+  "body": [
+   "رفیق، بشنو از سم آلتمن، رئیس اوپن‌ای‌آی، که تعریف کرده یه روز صبح که داشته می‌رفته واسه خودش قهوه بگیره، یه صحنه فوق‌العاده عجیب دیده و رسماً کپ کرده! ماجرا از این قراره که عوامل فیلم جدید «آرتیفیشال» درست دم در خونه‌ش بساط فیلمبرداری پهن کرده بودن و اندرو گارفیلد هم دقیقاً با همون تیپ، کوله‌پشتی و مدل راه رفتن خود آلتمن اونجا داشته نقش بازی می‌کرده. آلتمن گفته با دیدن این صحنه حس کرده تو یه گلیچ ماتریکس یا جهان شبیه‌سازی‌شده گیر افتاده، هرچند که در نهایت یه دستی برای گارفیلد تکون داده و رد شده. خود سم هم اعتراف کرده خیلی حس غریبیه وقتی می‌بینی یه آرتیست قهار نشسته و تمام تیک‌ها و ریزه‌کاری‌های رفتاری‌ت رو این‌طوری دقیق درآورده."
+  ],
+  "why": "این ماجرا نشون می‌ده ساخت اثر هالیوودی درباره زندگی آلتمن و دنیای هوش مصنوعی حسابی جدیه و گارفیلد هم تا خرخره رفته تو جلد این نقش تا تصویر مو به مو و باورپذیری بسازه.",
   "tags": [
    "اوپن‌ای‌آی"
   ]
  },
- "updated": "2026-10-25T12:24:53+00:00"
+ "updated": "2026-10-25T13:53:07+00:00",
+ "gholam_checked": "2026-10-25T13:53:07+00:00"
 }
