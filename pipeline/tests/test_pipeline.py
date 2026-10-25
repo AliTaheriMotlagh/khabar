@@ -102,14 +102,61 @@ def test_shape():
 
 def test_tags_are_whole_words_and_need_more_than_a_passing_mention():
     # «فضای مجازی» is cyberspace, «اپلیکیشن» an app, «متاسفانه» "unfortunately", «اوپن‌سورس» open source.
-    for text in ("فضای مجازی شلوغه", "این اپلیکیشن رو ببین", "متاسفانه نشد", "یه مدل اوپن‌سورس"):
+    for text in ("فضای مجازی شلوغه", "این اپلیکیشن رو ببین", "متاسفانه نشد"):
         assert shape.tags(text, text) == [], text
+    assert shape.tags("یه مدل اوپن‌سورس", "یه مدل اوپن‌سورس") == ["متن‌باز"]  # its own topic, not OpenAI's «اوپن»
     assert shape.tags("Moonshot raises concerns", "Moonshot raises concerns") == ["چین"]  # not space, not funding
     # Named in Gholam's Persian and the English source: the topic. A single comparison: not a topic.
     kimi = "Moonshot's Kimi K3.1 beats OpenAI's latest model on 6 benchmarks"
     assert shape.tags(kimi, "مون‌شات با کیمی حسابی گردوخاک کرده") == ["چین"]
     assert shape.tags("یه حفره امنیتی تو کروم", "hackers exploit a Chrome zero-day", title="حفره امنیتی کروم") == ["امنیت"]
     assert shape.tags("ربات‌های انسان‌نما", "Humanoid robots are coming", title="ربات‌ها")[0] == "رباتیک"
+
+
+def test_links_are_not_topics():
+    # The repo's address isn't what a math story is about.
+    text = "722 papers. Has a Lean proof.\nhttps://github.com/openai/math/blob/main/a.md https://github.com/openai/math/b"
+    assert "کدنویسی" not in shape.tags(text, text, title="اوپن‌ای‌آی ۷۲۲ مقاله ریاضی منتشر کرد")
+    assert shape.tags("see www.apple.com/news and tesla.com", "see www.apple.com/news and tesla.com") == []
+
+
+def test_side_topics_need_the_title_or_half_the_score():
+    title = "Genspark یه گجت سخت‌افزاری داد بیرون"
+    body = "a hardware gadget, گجت جیبی with a security chip, یه تراشه امنیتی"
+    assert shape.tags(body, title=title) == ["گجت"]  # one aside about security isn't the story
+    assert shape.tags("OpenAI and Anthropic both", title="OpenAI و Anthropic") == ["اوپن‌ای‌آی", "آنتروپیک"]
+
+
+def test_new_topics():
+    assert shape.tags("Trump signs an executive order on AI", title="ترامپ فرمان اجرایی هوش مصنوعی رو امضا کرد") == ["سیاست و قانون"]
+    assert shape.tags("", title="یه مدل تولید تصویر تازه")[0] == "تصویر و ویدیو"
+    assert shape.tags("", title="مدل‌های متن‌باز")[0] == "متن‌باز"
+    # «آموزش» is also a model's training, and every lab is at some university.
+    assert shape.tags("آموزش مدل‌ها تو دانشگاه", "آموزش مدل‌ها تو دانشگاه") == []
+    assert shape.tags("research scientists did the math", "research scientists did the math") == []
+
+
+def test_gholam_error_reply_is_not_a_translation():
+    err = DISCUSSION_HTML.replace("ببین آبجی، وسط کنفرانس بزرگ انویدیا در برلین چند تا معترض پریدند وسط. رئیس انویدیا خونسرد موند.<br/><br/>چرا مهمه؟ نشون میده تحریم‌ها کار نمی‌کنه.",
+                                  "Could not summarize that message: 503 UNAVAILABLE. {'error': {'code': 503}}")
+    assert telegram.parse_gholam_comment(err) is None
+    post = {"id": 5, "text": "Big news https://x.com/a/status/5", "links": [], "preview": None,
+            "gholam": {"text": "Could not summarize that message: Timed out", "date": None}}
+    a = run.build_article(post)
+    assert not a["title"].startswith("Could not") and a["body"] == []
+
+
+def test_refresh_drops_error_replies(tmp_path, monkeypatch):
+    import json
+
+    monkeypatch.setattr(run.config, "POSTS_DIR", tmp_path)
+    run.save({"id": 6, "url": "u", "date": "2026-10-14T19:00:00+00:00", "text": "Big news", "links": [], "media": [],
+              "preview": None, "gholam": {"text": "Could not summarize that message: 503 UNAVAILABLE"},
+              "gholam_checked": "2026-10-15T00:00:00+00:00"})
+    run.refresh_articles()
+    post = json.loads((tmp_path / "6.json").read_text("utf-8"))
+    assert post["gholam"] is None and "gholam_checked" not in post  # backfill_gholam looks once more
+    assert post["article"]["title"] == "Big news"
 
 
 def test_digest_has_no_tags():

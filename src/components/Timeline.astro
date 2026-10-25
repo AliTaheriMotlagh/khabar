@@ -4,8 +4,8 @@
 import Icon from './Icon.astro';
 import StoryCard from './StoryCard.astro';
 import { dayKey, faDate, faNum, type Post } from '../lib/posts';
-interface Props { posts: Post[]; all?: Post[]; nextHref?: string | null; prevHref?: string | null; title?: string; eagerFirst?: boolean }
-const { posts, all = posts, nextHref, prevHref, title = 'خط زمانی خبرها', eagerFirst = false } = Astro.props;
+interface Props { posts: Post[]; all?: Post[]; nextHref?: string | null; prevHref?: string | null; title?: string; eagerFirst?: boolean; topic?: string }
+const { posts, all = posts, nextHref, prevHref, title = 'خط زمانی خبرها', eagerFirst = false, topic } = Astro.props;
 const perDay = new Map<string, number>();
 for (const p of all) if (p.kind !== 'digest') perDay.set(dayKey(p.date), (perDay.get(dayKey(p.date)) ?? 0) + 1);
 
@@ -28,7 +28,7 @@ for (const p of posts) {
               {perDay.get(d.day) ? <small data-num>{faNum(perDay.get(d.day)!)} خبر</small> : null}
             </span>
           </li>
-          {d.posts.map((p, i) => <StoryCard post={p} eager={eagerFirst && di === 0 && i < 2} />)}
+          {d.posts.map((p, i) => <StoryCard post={p} eager={eagerFirst && di === 0 && i < 2} topic={topic} />)}
         </>
       ))
     }

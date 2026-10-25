@@ -3,7 +3,7 @@ import { $, BASE, esc, fmtNum, getSaved, relTime } from './core';
 
 type Card = {
   id: number; kind: string; title: string; href: string; date: string; minutes: number;
-  tag: string | null; site: string | null; cover: string | null; thumb: string; body: string[]; why: string | null;
+  tag: string | null; site: string | null; cover: string | null; thumb: string; fresh?: string | null; body: string[]; why: string | null;
 };
 
 const HOLD_MS = 420;
@@ -41,7 +41,12 @@ function fill(c: Partial<Card> & { title: string; href: string }, state: 'loadin
   set('[data-peek-title]', c.title);
   const cover = $<HTMLImageElement>('[data-peek-cover]', dialog)!;
   cover.hidden = !c.cover;
-  if (c.cover && cover.getAttribute('src') !== c.cover) cover.src = c.cover;
+  if (c.cover && cover.getAttribute('src') !== c.cover) {
+    delete cover.dataset.refreshed;
+    if (c.fresh) cover.dataset.fresh = c.fresh;
+    else delete cover.dataset.fresh;
+    cover.src = c.cover;
+  }
   const text = $('[data-peek-text]', dialog)!;
   text.innerHTML =
     state === 'loading'

@@ -29,9 +29,10 @@ TOPICS: list[tuple[str, tuple[str, ...]]] = [
     ("آمازون", ("amazon", "aws", "bezos", "alexa", "آمازون", "بزوس", "الکسا")),
     ("سامسونگ", ("samsung", "سامسونگ")),
     ("چین", ("china", "chinese", "deepseek", "qwen", "alibaba", "kimi", "moonshot", "minimax", "zhipu", "bytedance",
-             "baidu", "tencent", "huawei", "چین", "چینی", "دیپ‌سیک", "دیپ سیک", "کیوِن", "علی‌بابا", "کیمی", "مون‌شات",
-             "مونشات", "بایت‌دنس", "هواوی")),
+             "baidu", "tencent", "huawei", "glm", "xiaomi", "چین", "چینی", "دیپ‌سیک", "دیپ سیک", "کیوِن", "علی‌بابا", "کیمی", "مون‌شات",
+             "مونشات", "بایت‌دنس", "هواوی", "شیائومی")),
     ("کدنویسی", ("coding", "programming", "programmer", "developer", "claude code", "cursor", "github", "vibe coding",
+                 "opencode", "cline", "windsurf", "replit", "lovable", "bolt.new", "devin", "cognition", "swe-bench",
                  "کدنویسی", "کد نویسی", "برنامه‌نویسی", "برنامه‌نویس", "برنامه نویسی", "کد زدن", "گیت‌هاب")),
     ("رباتیک", ("robot", "robotics", "humanoid", "optimus", "figure ai", "unitree", "boston dynamics", "ربات",
                 "رباتیک", "انسان‌نما", "یونیتری")),
@@ -45,13 +46,41 @@ TOPICS: list[tuple[str, tuple[str, ...]]] = [
                "drug discovery", "سلامت", "پزشکی", "پزشک", "سرطان", "بیماری", "بیمار", "درمان", "دارو")),
     ("کوانتوم", ("quantum", "کوانتوم", "کوانتومی")),
     ("رمزارز", ("bitcoin", "crypto", "ethereum", "stablecoin", "بیت‌کوین", "بیت کوین", "رمزارز", "کریپتو", "اتریوم")),
-    ("استارتاپ", ("startup", "funding round", "seed round", "series a", "series b", "series c", "unicorn", "استارتاپ",
-                  "یونیکورن", "جذب سرمایه")),
+    ("استارتاپ", ("startup", "funding round", "seed round", "series a", "series b", "series c", "unicorn", "valuation",
+                  "y combinator", "yc", "a16z", "venture capital", "استارتاپ", "یونیکورن", "جذب سرمایه", "ارزش‌گذاری",
+                  "دور سرمایه‌گذاری", "سرمایه‌گذاری خطرپذیر", "وای‌کامبینیتور")),
     ("امنیت", ("cybersecurity", "security", "hacker", "hackers", "hacked", "breach", "malware", "ransomware",
                "vulnerability", "exploit", "zero-day", "امنیت", "امنیتی", "سایبری", "هکر", "هک", "بدافزار", "باج‌افزار",
                "آسیب‌پذیری", "حفره امنیتی")),
     ("اشتغال", ("layoff", "layoffs", "jobs", "unemployment", "workforce", "اخراج", "تعدیل نیرو", "بیکاری", "شغل",
                 "مشاغل", "بازار کار")),
+    ("سیاست و قانون", ("trump", "white house", "congress", "senate", "senator", "lawmakers", "legislation", "regulation",
+                       "regulators", "executive order", "ai act", "european commission", "pentagon", "department of war",
+                       "department of defense", "doj", "ftc", "lawsuit", "sued", "sues", "court", "judge", "copyright",
+                       "ترامپ", "کاخ سفید", "کنگره", "سنا", "سناتور", "قانون‌گذار", "قانونگذار", "قانون‌گذاری", "مقررات",
+                       "فرمان اجرایی", "اتحادیه اروپا", "کمیسیون اروپا", "پنتاگون", "وزارت جنگ", "وزارت دفاع",
+                       "وزارت دادگستری", "دولت آمریکا", "دولت", "دادگاه", "قاضی", "شکایت", "کپی‌رایت", "حق نشر")),
+    # Not "scientist" or "math": a lab's "research scientist" and "did the math" aren't science news.
+    ("علم", ("mathematics", "mathematician", "theorem", "physics", "biology", "chemistry", "protein", "nobel",
+             "neuroscience", "ریاضی", "ریاضیات", "ریاضیدان", "فیزیک", "زیست‌شناسی", "شیمی", "پروتئین", "جامعه علمی",
+             "کشف علمی", "نوبل", "علوم اعصاب")),
+    ("ایجنت", ("agent", "agentic", "ایجنت", "ایجنتی", "دستیار خودکار")),
+    ("تصویر و ویدیو", ("image generation", "image model", "video model", "video generation", "text-to-video",
+                       "image editing", "midjourney", "veo", "kling", "nano banana", "runway", "flux", "تولید تصویر",
+                       "تولید ویدیو", "ساخت ویدیو", "ساخت تصویر", "ویرایش تصویر", "مدل ویدیویی", "میدجرنی")),
+    ("صدا و موسیقی", ("voice", "speech", "text-to-speech", "speech-to-speech", "elevenlabs", "music", "suno", "صوتی",
+                      "گفتار", "گفتاری", "موسیقی", "آهنگ", "الون‌لبز")),
+    ("متن‌باز", ("open source", "open-source", "open weights", "open-weight", "open model", "hugging face", "huggingface",
+                 "متن‌باز", "متن باز", "اوپن‌سورس", "اوپن سورس", "هاگینگ‌فیس", "هاگینگ فیس")),
+    # Not «آموزش» alone (it is also a model's training), nor universities (every lab story has one).
+    ("آموزش", ("education", "students", "student", "teacher", "teachers", "school", "duolingo", "آموزش و پرورش",
+                "تحصیل", "دانشجو", "دانش‌آموز", "مدرسه", "معلم", "دولینگو")),
+    ("کسب‌وکار", ("acquisition", "acquires", "acquired", "revenue", "ipo", "stock", "market cap", "earnings",
+                  "درآمد", "سهام", "بورس", "عرضه اولیه", "ارزش بازار", "تصاحب", "خریداری", "سودآوری")),
+    ("سرگرمی", ("film", "movie", "hollywood", "netflix", "video game", "gaming", "game studio", "فیلم", "سینما",
+                "هالیوود", "نتفلیکس", "بازی ویدیویی", "بازی‌سازی", "گیمینگ")),
+    ("شبکه‌های اجتماعی", ("linkedin", "snapchat", "tiktok", "youtube", "reddit", "pinterest", "لینکدین", "اسنپ‌چت",
+                          "تیک‌تاک", "یوتیوب", "ردیت")),
 ]
 
 def split_gholam(text: str) -> tuple[list[str], Optional[str]]:
@@ -130,9 +159,13 @@ def _matcher(word: str):
     return re.compile(r"(?<!" + _FA_LETTER + r")" + re.escape(word) + _FA_SUFFIX + r"(?!" + _FA_LETTER + r")").findall
 
 
+# Links name sites, not topics: "github.com/openai/math" doesn't make a math story a coding one.
+URL_RE = re.compile(r"(?:https?://|www\.)\S+|\b[\w-]+(?:\.[\w-]+)*\.(?:com|ai|io|org|net|dev|co|app|so|me)\b(?:/\S*)?", re.I)
+
+
 def _norm(text: str) -> str:
-    """Lowercase, and Arabic yeh/kaf → Persian so either spelling matches."""
-    return text.lower().replace("ي", "ی").replace("ك", "ک")
+    """Lowercase, links dropped, and Arabic yeh/kaf → Persian so either spelling matches."""
+    return URL_RE.sub(" ", text).lower().replace("ي", "ی").replace("ك", "ک")
 
 
 _TOPIC_MATCHERS = [(tag, [_matcher(w) for w in words]) for tag, words in TOPICS]
@@ -145,16 +178,18 @@ def tags(*texts: str, title: str = "") -> list[str]:
 
     A keyword in the title counts TITLE_WEIGHT times, in the rest once. A topic needs 2 points: named in the title, or
     at least twice in the text (Gholam's Persian and the English source both naming it). One passing mention ("faster
-    than OpenAI's model") doesn't make a Kimi story an OpenAI story; nor does a topic far behind the main one."""
+    than OpenAI's model") doesn't make a Kimi story an OpenAI story. The topics after the first are named in the title
+    or close behind it (half its score): a side remark in a long thread isn't what the story is about."""
     head = _norm(title)
     body = _norm(" ".join(t for t in (title, *texts) if t))
     scores = []
     for i, (tag, ms) in enumerate(_TOPIC_MATCHERS):
-        score = sum(TITLE_WEIGHT * len(m(head)) + len(m(body)) for m in ms) if head else sum(len(m(body)) for m in ms)
+        in_head = sum(len(m(head)) for m in ms) if head else 0
+        score = TITLE_WEIGHT * in_head + sum(len(m(body)) for m in ms)
         if score:
-            scores.append((score, -i, tag))
+            scores.append((score, -i, tag, in_head > 0))
     if not scores:
         return []
     best = max(scores)[0]
-    keep = [(sc, i, tag) for sc, i, tag in scores if sc >= 2 and sc * 4 >= best]
+    keep = [(sc, i, tag) for sc, i, tag, in_head in scores if sc >= 2 and (sc * 2 >= best or in_head)]
     return [tag for _, _, tag in sorted(keep, reverse=True)][:MAX_TAGS]

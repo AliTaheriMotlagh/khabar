@@ -303,6 +303,8 @@ main { flex: 1; width: 100%; padding-bottom: 40px; }
 .story-foot { display: flex; align-items: center; gap: 4px; padding: 4px 8px 6px; color: var(--text-3); font-size: 13px; }
 .meta-btn { display: inline-flex; align-items: center; gap: 5px; padding: 6px 9px; border-radius: 999px; color: var(--text-3); text-decoration: none; font-weight: 600; }
 .meta-btn:hover { background: var(--surface-2); color: var(--text); }
+.meta-btn.views:hover { background: none; color: var(--text-3); }
+.meta-btn[hidden] { display: none; }
 .meta-btn .i { width: 17px; height: 17px; }
 .story-foot .actions { margin-inline-start: auto; display: flex; }
 .story-foot .icon-btn { width: 36px; height: 36px; }

@@ -32,8 +32,17 @@ const memory = {
   LRANGE: (k, a, b) => (memGet(k) ?? []).slice(Number(a), Number(b) + 1),
   LINDEX: (k, i) => (memGet(k) ?? [])[Number(i)] ?? null,
   LREM: (k, _n, v) => { const l = memGet(k) ?? []; const i = l.indexOf(v); if (i < 0) return 0; l.splice(i, 1); return 1; },
-  INCR: (k) => { const e = mem.kv.get(k); const v = (e && (!e.exp || e.exp > mem.now()) ? e.v : 0) + 1; mem.kv.set(k, { v, exp: e?.exp }); return v; },
+  INCR: (k) => { const e = mem.kv.get(k); const v = Number(e && (!e.exp || e.exp > mem.now()) ? e.v : 0) + 1; mem.kv.set(k, { v, exp: e?.exp }); return v; },
   GET: (k) => { const v = memGet(k); return v == null ? null : String(v); },
+  SET: (k, v, ...opts) => {
+    const o = opts.map(String).map((x) => x.toUpperCase());
+    if (o.includes('NX') && memGet(k) !== undefined) return null;
+    const ex = o.indexOf('EX');
+    mem.kv.set(k, { v, exp: ex >= 0 ? mem.now() + Number(opts[ex + 1]) * 1000 : undefined });
+    return 'OK';
+  },
+  SCARD: (k) => memGet(k)?.size ?? 0,
+  HSETNX: (k, f, v) => { const h = memGet(k, () => new Map()); if (h.has(f)) return 0; h.set(f, Number(v)); return 1; },
   EXPIRE: (k, s) => { const e = mem.kv.get(k); if (e) e.exp = mem.now() + Number(s) * 1000; return e ? 1 : 0; },
   HSET: (k, f, v) => { memGet(k, () => new Map()).set(f, v); return 1; },
   ZADD: (k, score, m) => { memGet(k, () => new Map()).set(m, Number(score)); return 1; },
@@ -128,7 +137,25 @@ export async function limited(request, ...rules) {
 // ---------- gamification: server-awarded points feed a weekly leaderboard ----------
 export const POINTS = { read: 1, react: 1, chat: 1, comment: 5 };
 export const week = () => Math.floor((Date.now() / 864e5 + 3) / 7); // weeks since epoch, starting Monday
-export const day = () => new Date().toISOString().slice(0, 10);
+/** Today's date in Tehran (YYYY-MM-DD): "today" on the site is the readers' calendar day. */
+export const day = (at = Date.now()) => new Date(at).toLocaleDateString('en-CA', { timeZone: 'Asia/Tehran' });
+
+// ---------- views: like X/Twitter, a reader counts once per post (and once for the site) per 24 hours ----------
+export const VIEW_WINDOW = 86_400;
+/**
+ * View counts for posts, from `h:uviews`. A post with no count there yet starts from the readers who ever opened it
+ * (`v:<id>`): the counter before this one went up on every page load, so it can't be trusted.
+ */
+export async function postViews(ids) {
+  if (!ids.length) return [];
+  const [stored] = await redis(['HMGET', 'h:uviews', ...ids]);
+  const missing = ids.filter((_, i) => stored[i] == null);
+  if (!missing.length) return stored.map(Number);
+  const seen = await redis(...missing.map((id) => ['SCARD', `v:${id}`]));
+  await redis(...missing.map((id, i) => ['HSETNX', 'h:uviews', id, String(Number(seen[i]) || 0)]));
+  return ids.map((id, i) => (stored[i] == null ? Number(seen[missing.indexOf(id)]) || 0 : Number(stored[i])));
+}
+
 export const award = (gh, points) => [['ZINCRBY', `lb:${week()}`, String(points), gh]];
 /** Remember a guest's display name for the leaderboard (only when they chose one). */
 export const nameCmd = (gh, name) => (name && name !== 'مهمان' ? [['HSET', 'names', gh, name]] : []);

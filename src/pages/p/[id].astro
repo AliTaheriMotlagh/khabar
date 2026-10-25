@@ -8,7 +8,7 @@ import SaveButton from '../../components/SaveButton.astro';
 import Reactions from '../../components/Reactions.astro';
 import Comments from '../../components/Comments.astro';
 import { SITE } from '../../site';
-import { abs, getFeed, getPosts, related, sized, faDate, faNum, tagHref, type Post } from '../../lib/posts';
+import { abs, fresh, getFeed, getPosts, related, sized, faDate, faNum, tagHref, type Post } from '../../lib/posts';
 
 export function getStaticPaths() {
   // Previous/next walk the listed feed; an unlisted (English-only) page has none.
@@ -174,7 +174,7 @@ const jsonLd = [
               <div class="related">
                 {rel.map((r) => (
                   <a class="rel-card" href={r.href}>
-                    {r.cover ? <img src={sized(r.cover.src || r.cover.poster, 'small')} alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer" /> : <span class="ph"><Icon name="news" /></span>}
+                    {r.cover ? <img src={sized(r.cover.src || r.cover.poster, 'small')} alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer" data-fresh={fresh(r.cover.src || r.cover.poster)} /> : <span class="ph"><Icon name="news" /></span>}
                     <span>{r.article.title}</span>
                   </a>
                 ))}

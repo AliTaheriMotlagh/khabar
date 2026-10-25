@@ -8,7 +8,7 @@ import Base from '../../layouts/Base.astro';
 import Icon from '../../components/Icon.astro';
 import SaveButton from '../../components/SaveButton.astro';
 import { SITE } from '../../site';
-import { abs, faNum, recentPosts, sized, todayPosts, url } from '../../lib/posts';
+import { abs, faNum, fresh, recentPosts, sized, todayPosts, url } from '../../lib/posts';
 
 const today = new Set(todayPosts().map((p) => p.id));
 const posts = recentPosts();
@@ -19,8 +19,9 @@ const scenes = posts.map((p) => {
   return {
     p,
     today: today.has(p.id),
-    video: video ? { src: video.src!, poster: sized(video.poster, 'large'), gif: !!video.gif } : null,
+    video: video ? { src: video.src!, poster: sized(video.poster, 'large'), gif: !!video.gif, fresh: fresh(video.src) } : null,
     image: p.cover ? sized(p.cover.src || p.cover.poster, 'large') : '',
+    imageFresh: fresh(p.cover?.src || p.cover?.poster),
     summary,
     // Seconds on screen without narration: enough to read the headline and summary at a brisk pace.
     seconds: Math.round(Math.min(16, Math.max(6, 2.5 + (words(p.article.title) + words(summary)) / 3.3))),
@@ -62,9 +63,9 @@ const jsonLd = [
             <article class="pl-scene" data-i={i} data-id={s.p.id} data-gif={s.video?.gif ? '' : undefined} data-date={s.p.date} data-seconds={s.seconds} data-say={s.say.join(',')} data-lede={s.say.length > 1 ? s.p.article.body[0] : undefined} aria-hidden={i ? 'true' : undefined}>
               <div class="pl-bg">
                 {s.video ? (
-                  <video data-src={s.video.src} poster={i < 2 ? s.video.poster || s.image || undefined : undefined} data-poster={s.video.poster || s.image} muted playsinline loop preload="none" />
+                  <video data-src={s.video.src} poster={i < 2 ? s.video.poster || s.image || undefined : undefined} data-poster={s.video.poster || s.image} data-fresh={s.video.fresh} muted playsinline loop preload="none" />
                 ) : s.image ? (
-                  i ? <img data-src={s.image} alt="" decoding="async" referrerpolicy="no-referrer" /> : <img src={s.image} alt="" fetchpriority="high" referrerpolicy="no-referrer" />
+                  i ? <img data-src={s.image} alt="" decoding="async" referrerpolicy="no-referrer" data-fresh={s.imageFresh} /> : <img src={s.image} alt="" fetchpriority="high" referrerpolicy="no-referrer" data-fresh={s.imageFresh} />
                 ) : (
                   <span class="pl-noimg" aria-hidden="true"><Icon name="news" /></span>
                 )}

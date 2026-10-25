@@ -26,7 +26,7 @@ const nth = page > 1 ? ` — صفحه‌ی ${faNum(page)}` : '';
   <div class="container">
     <header class="page-head"><h1>اخبار {tag}</h1><p><span data-num>{faNum(posts.length)}</span> خبر{page > 1 && ` · صفحه‌ی ${faNum(page)} از ${faNum(total)}`}</p></header>
     <div class="layout">
-      <div class="col-main"><Timeline posts={slice} all={posts} nextHref={next} prevHref={prev} title={`خط زمانی ${tag}`} /></div>
+      <div class="col-main"><Timeline posts={slice} all={posts} nextHref={next} prevHref={prev} title={`خط زمانی ${tag}`} topic={tag} /></div>
       <Sidebar current={tag} />
     </div>
   </div>

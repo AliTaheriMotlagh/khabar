@@ -77,6 +77,23 @@ export function sized(src: string | null | undefined, size: 'small' | 'medium' |
   return src;
 }
 
+// Telegram's CDN URLs are signed and expire, and the crawler only re-reads the newest posts: each Telegram image or
+// video also gets the address of /api/media, which redirects to the current URL. The page switches to it when the stored
+// URL fails (src/scripts/media.ts, data-fresh).
+const TG_CDN = /^https:\/\/[\w.-]*telesco\.pe\//;
+const freshUrls = new Map<string, string>();
+function noteFresh(raw: RawPost) {
+  (raw.media ?? []).forEach((m, i) => {
+    const at = `${SITE.api}/api/media/?p=${raw.id}&i=${i}`;
+    if (m.src && TG_CDN.test(m.src)) freshUrls.set(m.src, at);
+    if (m.poster && TG_CDN.test(m.poster)) freshUrls.set(m.poster, `${at}&f=poster`);
+  });
+  const preview = raw.preview?.image;
+  if (preview && TG_CDN.test(preview)) freshUrls.set(preview, `${SITE.api}/api/media/?p=${raw.id}&f=preview`);
+}
+/** Where to get a fresh copy of a Telegram media URL (undefined for any other URL). */
+export const fresh = (src: string | null | undefined) => (src ? freshUrls.get(src) : undefined);
+
 const clip = (s: string, n: number) => {
   s = s.replace(/\s+/g, ' ').trim();
   return s.length <= n ? s : s.slice(0, n).replace(/\s+\S*$/, '').replace(/[\s.،,:;؛-]+$/, '') + '…';
@@ -111,6 +128,7 @@ function digestItems(text: string, ids: Set<number>): DigestItem[] {
 }
 
 function shape(raw: RawPost, ids: Set<number>): Post {
+  noteFresh(raw);
   const links = raw.links ?? [];
   const own = (raw.media ?? []).filter((m) => m.src || m.poster);
   const linked = links.flatMap((l) => [...(l.media ?? []), ...(l.quote?.media ?? [])]).filter((m) => m.src || m.poster);

@@ -119,3 +119,44 @@ test('tags: each topic is paged like the archive, every post once, newest first'
     });
   }
 });
+
+test('tags: a topic page lists only its own stories, each labelled with that topic', { skip }, () => {
+  for (const dir of fs.readdirSync(path.join(dist, 'tag'))) {
+    const tag = decodeURIComponent(dir);
+    const files = [`tag/${dir}/index.html`];
+    for (let n = 2; fs.existsSync(path.join(dist, `tag/${dir}/${n}/index.html`)); n++) files.push(`tag/${dir}/${n}/index.html`);
+    for (const f of files) {
+      const tl = html(f).match(/<ol class="tl" data-tl>([\s\S]*?)<\/ol>/)[1];
+      for (const item of tl.split('<li class="tl-item"').slice(1)) {
+        const id = Number(item.match(/data-id="(\d+)"/)[1]);
+        assert.ok(posts[id].article.tags.includes(tag), `${f}: #${id} is not about ${tag}`);
+        const kicker = item.match(/<a class="kicker" href="[^"]*">([^<]+)<\/a>/)?.[1];
+        assert.equal(kicker, tag, `${f}: #${id} is labelled ${kicker}`);
+      }
+    }
+  }
+});
+
+test('cards: a view counter on every story; Telegram media knows where to get a fresh URL', { skip }, () => {
+  const home = html('index.html');
+  const items = home.split('<li class="tl-item"').slice(1).filter((s) => s.includes('class="story"'));
+  assert.ok(items.length > 5);
+  for (const item of items) assert.match(item, /data-views="\d+"[^>]*hidden/, 'hidden until the API has a count');
+  let checked = 0;
+  // The news (lead and timeline); the channel's avatar is re-read on every crawl.
+  const news = home.slice(Math.max(0, home.indexOf('class="lead-main')), home.indexOf('</ol>', home.indexOf('data-tl>')));
+  for (const m of news.matchAll(/<(?:img|video)\b[^>]*>/g)) {
+    const src = m[0].match(/\ssrc="([^"]+)"/)?.[1] ?? '';
+    if (!/telesco\.pe\//.test(src)) {
+      assert.doesNotMatch(m[0], /data-fresh=/, `only Telegram URLs expire: ${src}`);
+      continue;
+    }
+    checked++;
+    const fresh = m[0].match(/data-fresh="[^"]*\/api\/media\/\?p=(\d+)(?:&(?:amp;)?i=(\d+))?(?:&(?:amp;)?f=(poster|preview))?"/);
+    assert.ok(fresh, `no fresh address for ${src}`);
+    const [, p, i, f] = fresh;
+    const want = f === 'preview' ? posts[p].preview.image : f ? posts[p].media[Number(i)].poster : posts[p].media[Number(i)].src;
+    assert.equal(src.replace(/&amp;/g, '&'), want, `#${p}: data-fresh points at the same item`);
+  }
+  assert.ok(checked > 0, 'the home page has Telegram media');
+});

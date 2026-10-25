@@ -1,16 +1,18 @@
 ---
 // One entry on the timeline: topic, time, headline, a short excerpt and one picture. Reactions live on the story page.
-// In the short "list" view it collapses to a linked headline row.
+// In the short "list" view it collapses to a linked headline row. On a topic's page (`topic`) the kicker names that
+// topic: a story filed under several shows the one the reader is browsing, not its main one.
 import Icon from './Icon.astro';
 import Media from './Media.astro';
 import SaveButton from './SaveButton.astro';
 import DigestCard from './DigestCard.astro';
-import { faTime, sized, tagHref, type Post } from '../lib/posts';
-interface Props { post: Post; eager?: boolean }
-const { post, eager = false } = Astro.props;
+import { faTime, fresh, sized, tagHref, type Post } from '../lib/posts';
+interface Props { post: Post; eager?: boolean; topic?: string }
+const { post, eager = false, topic } = Astro.props;
 const a = post.article;
-const tag = a.tags[0];
+const tag = topic && a.tags.includes(topic) ? topic : a.tags[0];
 const thumb = post.cover ? sized(post.cover.src || post.cover.poster, 'small') : '';
+const thumbFresh = fresh(post.cover?.src || post.cover?.poster);
 ---
 <li class="tl-item" data-id={post.id} data-kind={post.kind}>
   <span class="tl-dot" aria-hidden="true"></span>
@@ -20,7 +22,7 @@ const thumb = post.cover ? sized(post.cover.src || post.cover.poster, 'small') :
       <DigestCard post={post} limit={3} />
     ) : (
       <article class="story" aria-labelledby={`t-${post.id}`}>
-        {thumb && <img class="row-thumb" src={thumb} alt="" width="72" height="72" loading="lazy" decoding="async" referrerpolicy="no-referrer" />}
+        {thumb && <img class="row-thumb" src={thumb} alt="" width="72" height="72" loading="lazy" decoding="async" referrerpolicy="no-referrer" data-fresh={thumbFresh} />}
         <div class="story-main">
           <div class="story-head">
             {tag && <a class="kicker" href={tagHref(tag)}>{tag}</a>}
@@ -34,7 +36,7 @@ const thumb = post.cover ? sized(post.cover.src || post.cover.poster, 'small') :
         ) : (
           post.cover && (
             <a class="story-cover" href={post.href} tabindex="-1" aria-hidden="true">
-              <img src={thumb} alt="" loading={eager ? 'eager' : 'lazy'} decoding="async" referrerpolicy="no-referrer" data-fallback={post.url} />
+              <img src={thumb} alt="" loading={eager ? 'eager' : 'lazy'} decoding="async" referrerpolicy="no-referrer" data-fallback={post.url} data-fresh={thumbFresh} />
             </a>
           )
         )}
@@ -42,6 +44,7 @@ const thumb = post.cover ? sized(post.cover.src || post.cover.poster, 'small') :
           <a class="meta-btn" href={`${post.href}#comments`} aria-label="نظرها">
             <Icon name="comment" /><span data-ccount={post.id}></span>
           </a>
+          <span class="meta-btn views" data-views={post.id} title="بازدید (هر نفر یک بار در ۲۴ ساعت)" hidden><Icon name="eye" /><span></span></span>
           <div class="actions">
             <SaveButton post={post} />
             <button class="icon-btn" type="button" data-share data-url={post.href} data-title={a.title} aria-label="اشتراک‌گذاری"><Icon name="share" /></button>

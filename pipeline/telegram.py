@@ -213,6 +213,14 @@ def fetch_gholam_comment(http: httpx.Client, post_id: int) -> Optional[dict]:
     return parse_gholam_comment(resp.text)
 
 
+# When the translation bot fails it still replies, with its error ("Could not summarize that message: 503 UNAVAILABLE…").
+GHOLAM_ERROR_RE = re.compile(r"^\s*Could not (?:summarize|translate)\b|^\s*(?:Error|Exception)\b[:\s]", re.I)
+
+
+def is_gholam_error(text: str) -> bool:
+    return bool(GHOLAM_ERROR_RE.search(text or ""))
+
+
 def parse_gholam_comment(html: str) -> Optional[dict]:
     soup = BeautifulSoup(html, "html.parser")
     # Widget markup differs slightly between channel posts and comments, so match loosely on class names.
@@ -224,6 +232,8 @@ def parse_gholam_comment(html: str) -> Optional[dict]:
         for br in text_node.find_all("br"):
             br.replace_with("\n")
         text = text_node.get_text().strip()
+        if is_gholam_error(text):
+            continue  # not a translation: look for a later reply, or count as none
         if config.GHOLAM_SIGNATURE in text or (author and config.GHOLAM_NAME in author):
             time_tag = msg.select_one("time[datetime]")
             return {"text": clean_gholam(text), "date": time_tag["datetime"] if time_tag else None}

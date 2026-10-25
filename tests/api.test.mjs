@@ -10,6 +10,7 @@ const engage = await import('../api/engage.js');
 const live = await import('../api/live.js');
 const chat = await import('../api/chat.js');
 const leaders = await import('../api/leaders.js');
+const { _memory } = await import('../api/_lib.js');
 
 let ip = 0;
 const req = (method, path, body, headers = {}) =>
@@ -71,6 +72,35 @@ test('live presence, visits and the leaderboard', async () => {
   const beat = await call(live.POST, 'POST', '/api/live', { guest: B });
   assert.equal(beat.body.online, 2);
   assert.equal(beat.body.total, undefined, 'heartbeats do not count as visits');
+
+  // Like X: one reader is one view per post (and one visit to the site) per 24 hours, however often they reload.
+  const again = await call(live.POST, 'POST', '/api/live', { guest: A, post: 11, view: true });
+  assert.equal(again.body.views, 1);
+  assert.equal(again.body.total, first.body.total);
+  const other = await call(live.POST, 'POST', '/api/live', { guest: B, post: 11, view: true });
+  assert.equal(other.body.views, 2);
+  assert.equal(other.body.total, first.body.total + 1);
+  assert.equal(other.body.today, 2);
+  const elsewhere = await call(live.POST, 'POST', '/api/live', { guest: A, post: 12, view: true });
+  assert.equal(elsewhere.body.views, 1, 'a reader counts once on each post they open');
+  assert.equal(elsewhere.body.total, other.body.total, '… but once for the site');
+  assert.equal((await call(engage.GET, 'GET', '/api/engage?ids=11,12')).body[11].v, 2);
+
+  // Posts read before the 24-hour rule start from the readers who opened them, not the old page-load counter.
+  const lib = await import('../api/_lib.js');
+  await lib.redis(['SADD', 'v:40', 'r1'], ['SADD', 'v:40', 'r2'], ['HINCRBY', 'h:views', '40', '57']);
+  assert.equal((await call(engage.GET, 'GET', '/api/engage?ids=40')).body[40].v, 2);
+  assert.equal((await call(live.POST, 'POST', '/api/live', { guest: B, post: 40, view: true })).body.views, 3);
+
+  const real = _memory.now;
+  _memory.now = () => real() + 25 * 3600_000;
+  try {
+    const tomorrow = await call(live.POST, 'POST', '/api/live', { guest: A, post: 11, view: true });
+    assert.equal(tomorrow.body.views, 3, 'a day later the same reader counts again');
+    assert.equal(tomorrow.body.total, other.body.total + 1);
+  } finally {
+    _memory.now = real;
+  }
 
   const board = await call(leaders.GET, 'GET', '/api/leaders');
   assert.equal(board.body.week[0].name, 'علی');

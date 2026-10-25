@@ -1,7 +1,7 @@
 ---
 // Every image and video of a post, straight from its original URL (nothing is re-hosted).
 import Icon from './Icon.astro';
-import { sized, duration, faNum, type Media } from '../lib/posts';
+import { sized, duration, faNum, fresh, type Media } from '../lib/posts';
 interface Props {
   items: Media[];
   alt: string;
@@ -39,6 +39,7 @@ const label = (i: number) => (n > 1 ? `${alt} — ${faNum(i + 1)} از ${faNum(i
               loop={m.gif}
               aria-label={`ویدیو: ${label(i)}`}
               data-fallback={fallbackHref}
+              data-fresh={fresh(m.src)}
             />
           ) : (
             <img
@@ -50,6 +51,7 @@ const label = (i: number) => (n > 1 ? `${alt} — ${faNum(i + 1)} از ${faNum(i
               referrerpolicy="no-referrer"
               data-zoom={sized(m.src || m.poster, 'large')}
               data-fallback={fallbackHref}
+              data-fresh={fresh(m.src || m.poster)}
             />
           )}
           {m.type === 'video' && !m.src && (

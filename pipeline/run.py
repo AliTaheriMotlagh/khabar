@@ -48,10 +48,15 @@ def tg_media(tp: telegram.TgPost) -> list[dict]:
     ]
 
 
+def usable_gholam(gholam: Optional[dict]) -> Optional[dict]:
+    """Gholam's reply, unless it is the bot's error message instead of a translation."""
+    return gholam if gholam and gholam.get("text") and not telegram.is_gholam_error(gholam["text"]) else None
+
+
 def build_article(post: dict) -> dict:
     """Persian presentation fields derived from Gholam's comment + the source content."""
     links = post.get("links") or []
-    gholam = post.get("gholam") or {}
+    gholam = usable_gholam(post.get("gholam")) or {}
     paras, why = shape.split_gholam(gholam.get("text", "")) if gholam else ([], None)
     src_title = shape.source_title(post.get("text", ""), links, post.get("preview"))
     title = shape.headline(paras) or src_title or shape.clip(post.get("text", ""), 110) or f"پست {post['id']}"
@@ -90,7 +95,7 @@ def process(http, tp: telegram.TgPost, refresh_urls: bool = False) -> None:
     }
 
     # Gholam's comment: keep checking until he replies (or the post is too old to expect one). He never comments on digests.
-    gholam = existing.get("gholam")
+    gholam = usable_gholam(existing.get("gholam"))
     if (not gholam or changed) and not post["digest"] and age_hours(tp.date) < config.GHOLAM_POLL_HOURS:
         try:
             found = telegram.fetch_gholam_comment(http, tp.id)
@@ -171,6 +176,9 @@ def refresh_articles() -> None:
     for path in sorted(config.POSTS_DIR.glob("*.json")):
         post = json.loads(path.read_text("utf-8"))
         post["digest"] = bool(DIGEST_RE.search(post.get("text", "")))
+        if telegram.is_gholam_error((post.get("gholam") or {}).get("text", "")):
+            post["gholam"] = None  # an error reply: the post shows its source until a real translation is found
+            post.pop("gholam_checked", None)  # … which backfill_gholam then looks for once more
         post["article"] = build_article(post)
         save(post)
 

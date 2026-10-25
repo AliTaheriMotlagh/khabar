@@ -1,5 +1,7 @@
 // Images and videos come straight from Telegram/X, often over slow or filtered connections.
-// While an image loads it shows a soft placeholder; a failure is retried once (after the connection is back),
+// While an image loads it shows a soft placeholder. A Telegram URL that fails first switches to its fresh address
+// (data-fresh → /api/media, which redirects to the URL Telegram signs today: stored ones expire); any failure is then
+// retried once (after the connection is back),
 // then the item falls back: a gallery shows "not loaded" with retry + a link to the post, a cover drops out,
 // and small decorative images (avatars, thumbnails) turn into a neutral icon instead of a broken-image glyph.
 import { $$, esc } from './core';
@@ -35,6 +37,13 @@ function failed(el: MediaEl) {
   delete el.dataset.loading;
   const src = srcOf(el);
   if (!src || src.startsWith('data:')) return;
+  const fresh = el.dataset.fresh;
+  if (fresh && !el.dataset.refreshed && src !== fresh) {
+    el.dataset.refreshed = '1';
+    evict(src); // the expired copy shouldn't be replayed from the offline cache on the next visit
+    if (navigator.onLine) return void (el.src = fresh);
+    return void addEventListener('online', () => el.isConnected && (el.src = fresh), { once: true });
+  }
   if (!el.dataset.retried) {
     el.dataset.retried = '1';
     const again = () => setTimeout(() => load(el), RETRY_MS);
