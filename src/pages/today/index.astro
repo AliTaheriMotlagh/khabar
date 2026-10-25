@@ -8,11 +8,28 @@ import Base from '../../layouts/Base.astro';
 import Icon from '../../components/Icon.astro';
 import SaveButton from '../../components/SaveButton.astro';
 import { SITE } from '../../site';
-import { abs, faNum, fresh, picture, recentPosts, sized, todayPosts, url } from '../../lib/posts';
+import { abs, faNum, fresh, picture, recentPosts, sized, todayPosts, url, type Post } from '../../lib/posts';
 
 const today = new Set(todayPosts().map((p) => p.id));
 const posts = recentPosts();
 const words = (s: string) => s.split(/\s+/).filter(Boolean).length;
+/** What a scene reads aloud: the story's own text, never its headline (unless there is nothing else) — from the first
+ *  paragraph that isn't just the headline again (a brief's first line is), up to about SAY_CHARS characters, skipping
+ *  lines with links. `i` indexes the story's card.json (0 = the headline), which /api/tts reads. */
+const SAY_CHARS = 350;
+function sayOf(p: Post) {
+  const head = p.article.title.replace(/…$/, '').trim();
+  const out: { i: number; text: string }[] = [];
+  let n = 0;
+  p.article.body.forEach((raw, k) => {
+    const text = raw.trim();
+    if (!text || n >= SAY_CHARS || /https?:\/\//.test(text)) return;
+    if (!k && text.length < head.length + 20 && text.startsWith(head.slice(0, 30))) return;
+    out.push({ i: k + 1, text });
+    n += text.length;
+  });
+  return out.length ? out : [{ i: 0, text: p.article.title }];
+}
 const scenes = posts.map((p) => {
   const video = p.gallery.find((m) => m.type === 'video' && m.src);
   const summary = p.excerpt && p.excerpt !== p.article.title ? p.excerpt : '';
@@ -25,8 +42,8 @@ const scenes = posts.map((p) => {
     summary,
     // Seconds on screen without narration: enough to read the headline and summary at a brisk pace.
     seconds: Math.round(Math.min(16, Math.max(6, 2.5 + (words(p.article.title) + words(summary)) / 3.3))),
-    // Paragraphs read aloud (indexes into card.json): the headline, then the lede unless it just repeats the headline.
-    say: p.article.body[0] && !p.article.body[0].startsWith(p.article.title.replace(/…$/, '')) ? [0, 1] : [0],
+    say: sayOf(p),
+    thumb: p.cover ? picture(p.cover.src || p.cover.poster, 'small') : null,
   };
 });
 const totalMin = Math.max(1, Math.round(scenes.filter((s) => s.today).reduce((n, s) => n + s.seconds, 0) / 60));
@@ -60,7 +77,7 @@ const jsonLd = [
       <div class="pl-stage" data-pl-stage>
         {
           scenes.map((s, i) => (
-            <article class="pl-scene" data-i={i} data-id={s.p.id} data-gif={s.video?.gif ? '' : undefined} data-date={s.p.date} data-seconds={s.seconds} data-say={s.say.join(',')} data-lede={s.say.length > 1 ? s.p.article.body[0] : undefined} aria-hidden={i ? 'true' : undefined}>
+            <article class="pl-scene" data-i={i} data-id={s.p.id} data-gif={s.video?.gif ? '' : undefined} data-date={s.p.date} data-seconds={s.seconds} data-say={JSON.stringify(s.say)} aria-hidden={i ? 'true' : undefined}>
               <div class="pl-bg">
                 {s.video ? (
                   <video data-src={s.video.src} poster={i < 2 ? s.video.poster || s.image.src || undefined : undefined} data-poster={s.video.poster || s.image.src} data-alt={s.video.fresh} muted playsinline loop preload="none" />
@@ -87,19 +104,45 @@ const jsonLd = [
           ))
         }
         <div class="pl-end" data-pl-end hidden>
-          <span class="pl-end-mark" aria-hidden="true"><Icon name="check" /></span>
-          <h2 data-pl-end-title>همه‌ی خبرهای امروز را دیدید</h2>
-          <p data-pl-end-text><span data-pl-total></span> خبر، در چند دقیقه.</p>
-          <div class="row center">
-            <button class="btn primary" type="button" data-pl-restart><Icon name="play" /> دوباره از اول</button>
-            <a class="btn" href={url()}><Icon name="home" /> خانه</a>
+          <div class="pl-end-in">
+            <div class="pl-end-head">
+              <span class="pl-end-mark" aria-hidden="true"><Icon name="check" /></span>
+              <h2 data-pl-end-title>همه‌ی خبرهای امروز را دیدید</h2>
+              <p class="pl-end-stats" data-pl-end-text>
+                <span><Icon name="stories" /> <b data-pl-total></b> خبر</span>
+                <span><Icon name="clock" /> حدود <b data-pl-min></b> دقیقه</span>
+              </p>
+            </div>
+            <section class="pl-recap" data-pl-recap aria-labelledby="pl-recap-h">
+              <h3 id="pl-recap-h">مرور خبرها <small>برای دیدن دوباره بزنید</small></h3>
+              <ol>
+                {scenes.map((s) => (
+                  <li data-pl-recap-id={s.p.id} hidden>
+                    <button type="button" data-pl-go={s.p.id}>
+                      {s.thumb?.src ? <img src={s.thumb.src} data-alt={s.thumb.alt} alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer" /> : <span class="pl-recap-ph" aria-hidden="true"><Icon name="news" /></span>}
+                      <span class="pl-recap-n" data-pl-recap-n></span>
+                      <span class="pl-recap-t" dir="auto">{s.p.article.title}</span>
+                    </button>
+                  </li>
+                ))}
+              </ol>
+            </section>
+            <nav class="pl-sets" data-pl-sets aria-labelledby="pl-sets-h">
+              <h3 id="pl-sets-h">ادامه بدهید</h3>
+              {sets.map((x) => (
+                <a href={url(x.set === 'today' ? 'today/' : `today/?s=${x.set}`)} data-pl-set={x.set}>
+                  <span class="pl-set-ic"><Icon name={x.icon} /></span>
+                  <span class="pl-set-t"><b>{x.label}</b><small data-pl-set-n></small></span>
+                  <Icon name="arrow" />
+                </a>
+              ))}
+            </nav>
+            <div class="pl-end-actions">
+              <button class="btn primary" type="button" data-pl-restart><Icon name="refresh" /> دوباره از اول</button>
+              <a class="btn" href={url()}><Icon name="home" /> خانه</a>
+            </div>
+            <a class="pl-join" href={`https://t.me/${SITE.channel}`} target="_blank" rel="noopener" referrerpolicy="origin"><Icon name="telegram" /> خبرها را زودتر در کانال تلگرام ببینید</a>
           </div>
-          <nav class="pl-sets" aria-label="استوری‌های دیگر">
-            {sets.map((x) => (
-              <a href={url(x.set === 'today' ? 'today/' : `today/?s=${x.set}`)} data-pl-set={x.set}><Icon name={x.icon} /> {x.label}</a>
-            ))}
-          </nav>
-          <a class="pl-join" href={`https://t.me/${SITE.channel}`} target="_blank" rel="noopener" referrerpolicy="origin"><Icon name="telegram" /> خبرها را زودتر در کانال تلگرام ببینید</a>
         </div>
       </div>
 
@@ -111,7 +154,10 @@ const jsonLd = [
         <div class="pl-head">
           <span class="logo-mark" aria-hidden="true"></span>
           <span class="pl-title"><b data-pl-name>امروز در یک نگاه</b><small><span data-pl-pos>۱</span> از <span data-pl-count></span></small></span>
-          <button class="pl-btn" type="button" data-pl-sound aria-pressed="false" aria-label="صدا" title="صدا: صدای ویدیو و روایت خبر (m)">
+          <button class="pl-btn" type="button" data-pl-listen aria-pressed="false" aria-label="روایت خبر" title="روایت: خبر را برایتان می‌خواند (l)" hidden>
+            <Icon name="headphones-off" class="when-off" /><Icon name="headphones" class="when-on" />
+          </button>
+          <button class="pl-btn" type="button" data-pl-sound aria-pressed="false" aria-label="صدای ویدیو" title="صدای ویدیو (m)" hidden>
             <Icon name="volume-off" class="when-off" /><Icon name="volume" class="when-on" />
           </button>
           <button class="pl-btn" type="button" data-pl-pause aria-pressed="false" aria-label="مکث" title="مکث (فاصله)">

@@ -54,11 +54,24 @@ function show(view: View, msg = '') {
   $('[data-voice-msg]', dlg)!.textContent = msg;
 }
 
+// The download's speed, smoothed over the last seconds, for "about N minutes left".
+let pace = { at: 0, loaded: 0, rate: 0 };
+function timeLeft(loaded: number, total: number) {
+  const now = performance.now();
+  if (!pace.at) pace = { at: now, loaded, rate: 0 };
+  else if (now - pace.at >= 1000) {
+    const rate = (loaded - pace.loaded) / ((now - pace.at) / 1000);
+    pace = { at: now, loaded, rate: pace.rate ? pace.rate * 0.7 + rate * 0.3 : rate };
+  }
+  const s = pace.rate > 0 ? (total - loaded) / pace.rate : 0;
+  return !s ? '' : s < 60 ? ' · کمتر از یک دقیقه مانده' : ` · حدود ${fmtNum(Math.ceil(s / 60))} دقیقه مانده`;
+}
+
 function showProgress(loaded: number, total: number) {
   if (!dlg) return;
   const pct = Math.floor((loaded / total) * 100);
   $<HTMLProgressElement>('progress', dlg)!.value = pct;
-  $('[data-voice-pct]', dlg)!.textContent = `${fmtNum(Math.round(loaded / 1e6))} از ${fmtNum(Math.round(total / 1e6))} مگابایت · ${fmtNum(pct)}٪`;
+  $('[data-voice-pct]', dlg)!.textContent = `${fmtNum(Math.round(loaded / 1e6))} از ${fmtNum(Math.round(total / 1e6))} مگابایت · ${fmtNum(pct)}٪${timeLeft(loaded, total)}`;
 }
 
 /** Opens the sheet; `after` runs from the tap on «گوش دادن» once the voice is ready. */
@@ -78,6 +91,7 @@ async function startDownload() {
   if (downloading) return;
   if (!(await voiceFits())) return show('error', 'فضای خالی دستگاه کافی نیست.');
   downloading = true;
+  pace = { at: 0, loaded: 0, rate: 0 };
   show('busy');
   // The download only runs while the page is open: keep the screen awake meanwhile, where the browser allows it.
   const lock = await (navigator as Navigator & { wakeLock?: { request(t: 'screen'): Promise<{ release(): Promise<void> }> } }).wakeLock?.request('screen').catch(() => null);

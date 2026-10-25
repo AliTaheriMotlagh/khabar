@@ -1,13 +1,14 @@
-// The story player (/today/): stories one after another, like a video. Each scene stays for its own data-seconds;
-// with sound on, a video scene plays with its own sound for the video's length, and the others are narrated for as
-// long as the voice takes. Tap the left side for the next story and the right side for the previous one (it's a
-// right-to-left page), hold to pause, swipe down or Esc to leave.
+// The story player (/today/): stories one after another, like a video. Each scene stays for its own data-seconds.
+// Two separate switches: «روایت» reads each story's text aloud (the scene lasts as long as the voice), and «صدای ویدیو»
+// lets a video play with its own sound for the video's length. With both on, a video scene is read first (the video
+// silent), then its clip plays once with its sound. Tap the left side for the next story and the right side for the
+// previous one (it's a right-to-left page), hold to pause, swipe down or Esc to leave.
 // The page carries three days of stories and plays one set of them (?s=new | unseen | all, default today); the end
 // screen switches sets in place, offering only the sets that have something to play. Opened without a set before
 // anything was published today, it plays the last three days instead of an empty screen.
 import { $, $$, fmtNum, store, toast } from './core';
 import { markSeen, offersSet, pickStories, storySet, type StorySet } from './game';
-import { Speaker, canSpeakPersian, type Line } from './speech';
+import { Speaker, canSpeakPersian, getReady, type Line } from './speech';
 import { openVoice } from './voice-offer';
 import { voiceSupported } from './voice';
 
@@ -17,7 +18,7 @@ const TEXT: Record<StorySet, { name: string; done: string; empty: string }> = {
   today: { name: 'امروز در یک نگاه', done: 'همه‌ی خبرهای امروز را دیدید', empty: 'امروز هنوز خبری نیامده' },
   all: { name: 'سه روز اخیر', done: 'همه‌ی خبرهای این سه روز را دیدید', empty: 'خبری نیست' },
 };
-/** With sound on, a video plays with its own sound for its own length, up to this many seconds. */
+/** With its sound on, a video plays for its own length, up to this many seconds. */
 const VIDEO_MAX = 60;
 /** The clock waits for a scene's picture or video at most this long, then moves on without it. */
 const WAIT_MAX = 6000;
@@ -27,7 +28,7 @@ const BARS_MAX = 40;
 type MediaEl = HTMLImageElement | HTMLVideoElement;
 const mediaOf = (s?: HTMLElement) => (s ? $<MediaEl>('.pl-bg img, .pl-bg video', s) : null);
 const videoOf = (s?: HTMLElement) => (s ? $<HTMLVideoElement>('.pl-bg video', s) : null);
-/** A video (not a GIF) has its own sound: with sound on it plays instead of the narration. */
+/** A video (not a GIF) has its own sound. */
 const hasAudio = (s?: HTMLElement) => !!videoOf(s) && !s!.hasAttribute('data-gif');
 
 const player = $('[data-player]');
@@ -42,6 +43,7 @@ function init(player: HTMLElement) {
   const pos = $('[data-pl-pos]', player)!;
   const pauseBtn = $('[data-pl-pause]', player)!;
   const soundBtn = $('[data-pl-sound]', player)!;
+  const listenBtn = $('[data-pl-listen]', player)!;
 
   const asked = new URLSearchParams(location.search).get('s');
   let set: StorySet = storySet(asked);
@@ -51,10 +53,15 @@ function init(player: HTMLElement) {
   let at = 0;
   let paused = false;
   let held = false;
-  let sound = store.get<boolean>('pl-sound', false);
+  let sound = false; // videos play with their own sound
+  let listen = false; // stories are read aloud
   let voice = false; // a Persian voice exists (the device's own, the cloud one, or one downloaded to the device)
-  const offer = voiceSupported(); // without one, turning the sound on offers the download
+  const offer = voiceSupported(); // without one, turning narration on offers the download
   let lines: Line[] = [];
+  // What the current scene is doing: being read aloud (the voice decides when it ends), playing its video's clip with
+  // sound after the reading, or just on the clock.
+  let phase: 'plain' | 'narrate' | 'clip' = 'plain';
+  let barFrom = 0; // where the bar was when the clip started after the reading
   let elapsed = 0;
   let waited = 0;
   let loading = false;
@@ -62,15 +69,26 @@ function init(player: HTMLElement) {
   let raf = 0;
 
   const speaker = new Speaker({
-    end: () => voiced() && next(),
+    end() {
+      if (phase !== 'narrate') return;
+      sound && hasAudio(scenes[at]) ? playClip() : next();
+    },
     fail(msg) {
       toast(msg);
-      voice = false; // videos keep their sound; the rest of the scenes go back to the clock
-      refreshSoundBtn();
+      voice = false; // the scenes go back to the clock; videos keep their own sound
+      if (phase === 'narrate') {
+        phase = 'plain';
+        syncVideo();
+      }
+      refreshButtons();
     },
   });
   /** This scene ends when the narration does. */
-  const voiced = () => sound && voice && lines.length > 0 && !hasAudio(scenes[at]);
+  const voiced = () => phase === 'narrate';
+  /** Narration is wanted and possible for the current scene. */
+  const narrates = () => listen && voice && lines.length > 0;
+  /** The current video plays with its own sound (never under the narration). */
+  const loud = () => sound && hasAudio(scenes[at]) && phase !== 'narrate';
 
   // ---------- the set being played ----------
   function use(next: StorySet) {
@@ -83,9 +101,7 @@ function init(player: HTMLElement) {
     bars = $$(':scope > span', barBox);
     $('[data-pl-name]', player)!.textContent = TEXT[set].name;
     $('[data-pl-count]', player)!.textContent = fmtNum(scenes.length);
-    $('[data-pl-total]', player)!.textContent = fmtNum(scenes.length);
-    $$<HTMLAnchorElement>('[data-pl-set]', player).forEach((a) => (a.hidden = a.dataset.plSet === set || !offersSet(storySet(a.dataset.plSet), items)));
-    refreshSoundBtn();
+    refreshButtons();
   }
   function switchTo(next: StorySet) {
     use(next);
@@ -136,10 +152,10 @@ function init(player: HTMLElement) {
     return !m.complete;
   }
   function playVideo(v: HTMLVideoElement) {
-    const loud = sound && hasAudio(scenes[at]);
-    v.muted = !loud;
+    const withSound = loud();
+    v.muted = !withSound;
     v.play().then(
-      () => loud && soundBtn.classList.remove('is-armed'),
+      () => withSound && soundBtn.classList.remove('is-armed'),
       (e: DOMException) => {
         if (v.muted || e.name !== 'NotAllowedError') return v.setAttribute('data-blocked', '');
         // The browser wants a tap before sound (iOS, when the show moved on by itself): play silent until then.
@@ -153,9 +169,16 @@ function init(player: HTMLElement) {
   player.addEventListener('pointerup', (e) => {
     if (!soundBtn.classList.contains('is-armed') || !sound || soundBtn.contains(e.target as Node)) return;
     const v = videoOf(scenes[at]);
-    if (v && hasAudio(scenes[at])) v.muted = false;
+    if (v && loud()) v.muted = false;
     soundBtn.classList.remove('is-armed');
   });
+  /** Mutes or unmutes the current video for the phase it's in. */
+  function syncVideo() {
+    const v = videoOf(scenes[at]);
+    if (!v || !hasAudio(scenes[at])) return;
+    v.muted = !loud();
+    if (!v.muted && !paused && !held) v.play().catch(() => {});
+  }
 
   // ---------- the clock ----------
   function duration() {
@@ -163,8 +186,11 @@ function init(player: HTMLElement) {
     const seconds = Number(s.dataset.seconds) || 8;
     if (voiced()) return Math.max(seconds, lines.reduce((n, l) => n + l.text.length, 0) / 14) * 1000;
     const v = videoOf(s);
+    const len = v && Number.isFinite(v.duration) ? v.duration : 0;
+    // After the reading, the clip plays once with its sound (a very short one loops for a few seconds).
+    if (phase === 'clip') return Math.min(Math.max(len || 8, 4), VIDEO_MAX) * 1000;
     // A clip that's long enough sets the pace (its sound shouldn't start over); a short one loops for the reading time.
-    if (sound && v && hasAudio(s) && Number.isFinite(v.duration) && v.duration >= 6) return Math.min(v.duration, VIDEO_MAX) * 1000;
+    if (loud() && len >= 6) return Math.min(len, VIDEO_MAX) * 1000;
     return seconds * 1000;
   }
   function tick(t: number) {
@@ -179,7 +205,7 @@ function init(player: HTMLElement) {
     }
     const p = Math.min(1, elapsed / duration());
     // With narration the voice decides when the scene ends; the bar only estimates.
-    setBar(at, voiced() ? Math.min(p, 0.97) : p);
+    setBar(at, voiced() ? Math.min(p, 0.97) : barFrom + (1 - barFrom) * p);
     if (p >= 1 && !voiced()) return next();
     raf = requestAnimationFrame(tick);
   }
@@ -196,45 +222,79 @@ function init(player: HTMLElement) {
     raf = requestAnimationFrame(tick);
   }
 
-  // ---------- sound: the video's own, or narration ----------
+  // ---------- sound: narration and the video's own sound, each with its own switch ----------
+  /** The story's own text, chosen at build time (src/pages/today/index.astro, sayOf). */
   function linesOf(s: HTMLElement): Line[] {
-    const texts = [$('h2', s)?.textContent ?? '', s.dataset.lede ?? ''];
-    return (s.dataset.say ?? '0').split(',').map(Number).map((i) => ({ text: texts[i]?.trim() ?? '', post: Number(s.dataset.id), i })).filter((l) => l.text);
+    const say = JSON.parse(s.dataset.say ?? '[]') as { i: number; text: string }[];
+    return say.map(({ i, text }) => ({ text, post: Number(s.dataset.id), i }));
   }
   function speak() {
     if (voiced() && !paused) speaker.start(lines);
   }
-  function refreshSoundBtn() {
-    soundBtn.hidden = !voice && !offer && !scenes.some(hasAudio);
+  /** After the reading, a video scene plays its clip from the start, this time with its sound. */
+  function playClip() {
+    barFrom = Math.min(elapsed / duration(), 0.97);
+    phase = 'clip';
+    elapsed = 0;
+    waited = 0;
+    const v = videoOf(scenes[at]);
+    if (!v) return;
+    v.currentTime = 0;
+    if (!paused) playVideo(v);
   }
-  // Runs from a tap, so iOS lets the audio start.
+  const press = (btn: HTMLElement, on: boolean, label: string) => {
+    btn.classList.remove('is-armed');
+    btn.setAttribute('aria-pressed', String(on));
+    btn.setAttribute('aria-label', label);
+  };
+  function refreshButtons() {
+    soundBtn.hidden = !scenes.some(hasAudio);
+    // On a scene without a video's sound the switch still works (it's kept for the next videos), shown dimmed.
+    soundBtn.classList.toggle('is-na', at < scenes.length && !hasAudio(scenes[at]));
+    listenBtn.hidden = !voice && !offer;
+  }
+  listenBtn.addEventListener('pointerdown', getReady, { once: true });
+  // Both run from a tap, so iOS lets the audio start.
   function setSound(on: boolean) {
-    if (on && !voice && offer && !hasAudio(scenes[at])) {
-      // No Persian voice yet: offer the download, and come back with the sound on from the sheet's own tap.
+    sound = on;
+    store.set('pl-sound', on);
+    press(soundBtn, on, on ? 'بی‌صدا کردن ویدیو' : 'صدای ویدیو');
+    // Turned off while the clip plays after the reading: the scene has nothing left to show.
+    if (phase === 'clip' && !on) return next();
+    syncVideo();
+  }
+  function setListen(on: boolean) {
+    if (on && !voice) {
+      if (!offer) return;
+      // No Persian voice yet: offer the download, and come back with narration on from the sheet's own tap.
       if (!paused) setPaused(true);
       openVoice(() => {
         voice = true;
+        refreshButtons();
         setPaused(false);
-        setSound(true);
+        setListen(true);
       });
       return;
     }
-    sound = on;
-    store.set('pl-sound', on);
-    soundBtn.classList.remove('is-armed');
-    soundBtn.setAttribute('aria-pressed', String(on));
-    soundBtn.setAttribute('aria-label', on ? 'بی‌صدا' : 'صدا');
-    const s = scenes[at];
-    const v = videoOf(s);
-    if (v && hasAudio(s)) {
-      v.muted = !on;
-      if (on && !paused) v.play().catch(() => {});
-    }
+    listen = on;
+    store.set('pl-listen', on);
+    press(listenBtn, on, on ? 'قطع روایت' : 'روایت خبر');
+    if (at >= scenes.length) return;
     speaker.stop();
-    if (voiced()) {
-      speak();
+    const was = phase;
+    phase = narrates() ? 'narrate' : 'plain';
+    if (phase === 'narrate') {
+      // Read from the start of the story; the video goes silent under the voice.
+      barFrom = 0;
       elapsed = 0;
-    }
+      speak();
+      warmNext();
+    } else if (was === 'clip') phase = 'clip';
+    syncVideo();
+  }
+  /** The on-device voice makes the next scene's first sentence while this one plays. */
+  function warmNext() {
+    if (listen && voice && scenes[at + 1]) speaker.warm(linesOf(scenes[at + 1]));
   }
 
   // ---------- scenes ----------
@@ -242,6 +302,7 @@ function init(player: HTMLElement) {
     if (i >= scenes.length) return finish();
     at = Math.max(0, i);
     end.hidden = true;
+    player.classList.remove('is-done');
     const s = scenes[at];
     every.forEach((x) => {
       const on = x === s;
@@ -253,6 +314,10 @@ function init(player: HTMLElement) {
     if (bars.length > 1) bars.forEach((b, k) => b.style.setProperty('--p', k < at ? '1' : '0'));
     setBar(at, 0);
     prepare();
+    lines = linesOf(s);
+    phase = narrates() ? 'narrate' : 'plain';
+    barFrom = 0;
+    refreshButtons();
     const v = videoOf(s);
     if (v) {
       if (v.currentTime) v.currentTime = 0;
@@ -262,30 +327,60 @@ function init(player: HTMLElement) {
     pos.textContent = fmtNum(at + 1);
     markSeen(Number(s.dataset.id));
     history.replaceState(history.state, '', `#${s.dataset.id}`);
-    lines = linesOf(s);
     speaker.stop();
     speak();
-    // The on-device voice makes the next scene's first sentence while this one plays.
-    if (sound && voice && scenes[at + 1] && !hasAudio(scenes[at + 1])) speaker.warm(linesOf(scenes[at + 1]));
+    warmNext();
     startClock();
   }
   const next = () => show(at + 1);
   const prev = () => show(at - 1);
 
+  // ---------- the end: what was seen, a way back to any of it, and the other sets ----------
   function finish() {
     cancelAnimationFrame(raf);
     speaker.stop();
+    phase = 'plain';
     player.classList.remove('is-loading');
+    player.classList.add('is-done');
     loading = false;
+    $('[data-pl-hint]', player)!.hidden = true;
     every.forEach((s) => s.classList.remove('on'));
     $$<HTMLVideoElement>('video', player).forEach((v) => v.pause());
     bars.forEach((b) => b.style.setProperty('--p', '1'));
+    const n = scenes.length;
     const t = TEXT[set];
-    $('[data-pl-end-title]', player)!.textContent = scenes.length ? t.done : t.empty;
-    $('[data-pl-end-text]', player)!.hidden = !scenes.length;
-    $('[data-pl-restart]', player)!.hidden = !scenes.length;
+    $('[data-pl-end-title]', player)!.textContent = n ? t.done : t.empty;
+    $('[data-pl-end-text]', player)!.hidden = !n;
+    $('[data-pl-total]', player)!.textContent = fmtNum(n);
+    $('[data-pl-min]', player)!.textContent = fmtNum(Math.max(1, Math.round(scenes.reduce((m, s) => m + (Number(s.dataset.seconds) || 8), 0) / 60)));
+    // The recap: this set's stories in the order they played.
+    const recap = $('[data-pl-recap]', player)!;
+    const list = $('ol', recap)!;
+    const tiles = new Map($$('[data-pl-recap-id]', list).map((li) => [li.dataset.plRecapId, li]));
+    tiles.forEach((li) => (li.hidden = true));
+    scenes.forEach((s, k) => {
+      const li = tiles.get(s.dataset.id);
+      if (!li) return;
+      li.hidden = false;
+      $('[data-pl-recap-n]', li)!.textContent = fmtNum(k + 1);
+      list.append(li);
+    });
+    recap.hidden = !n;
+    list.scrollLeft = 0;
+    // The other sets, with how many stories each has now (watching changes "unseen").
+    let others = 0;
+    $$<HTMLAnchorElement>('[data-pl-set]', player).forEach((a) => {
+      const which = storySet(a.dataset.plSet);
+      const count = pickStories(which, items).length;
+      a.hidden = which === set || !offersSet(which, items, count);
+      $('[data-pl-set-n]', a)!.textContent = `${fmtNum(count)} خبر`;
+      if (!a.hidden) others++;
+    });
+    $('[data-pl-sets]', player)!.hidden = !others;
+    $('[data-pl-restart]', player)!.hidden = !n;
     end.hidden = false;
-    at = scenes.length;
+    end.scrollTop = 0;
+    at = n;
     history.replaceState(history.state, '', location.pathname + location.search);
   }
 
@@ -348,8 +443,18 @@ function init(player: HTMLElement) {
   $('[data-pl-next]', player)!.addEventListener('click', () => (at < scenes.length ? next() : undefined));
   $('[data-pl-prev]', player)!.addEventListener('click', () => (at >= scenes.length ? scenes.length && show(scenes.length - 1) : prev()));
   pauseBtn.addEventListener('click', () => setPaused(!paused));
-  soundBtn.addEventListener('click', () => (sound && soundBtn.classList.contains('is-armed') ? setSound(true) : setSound(!sound)));
+  soundBtn.addEventListener('click', () => {
+    const on = sound && soundBtn.classList.contains('is-armed') ? true : !sound;
+    setSound(on);
+    toast(!on ? 'صدای ویدیو خاموش شد' : !hasAudio(scenes[at]) ? 'صدای ویدیوها روشن شد؛ این خبر ویدیوی صدادار ندارد' : phase === 'narrate' ? 'صدای ویدیو روشن شد؛ بعد از روایت پخش می‌شود' : 'صدای ویدیو روشن شد');
+  });
+  listenBtn.addEventListener('click', () => {
+    const was = listen;
+    setListen(!listen);
+    if (listen !== was) toast(listen ? 'روایت خبرها روشن شد' : 'روایت خبرها خاموش شد');
+  });
   $('[data-pl-restart]', player)!.addEventListener('click', () => show(0));
+  $$('[data-pl-go]', player).forEach((b) => b.addEventListener('click', () => show(Math.max(0, scenes.findIndex((s) => s.dataset.id === b.dataset.plGo)))));
   $$<HTMLAnchorElement>('[data-pl-set]', player).forEach((a) =>
     a.addEventListener('click', (e) => {
       e.preventDefault();
@@ -373,6 +478,7 @@ function init(player: HTMLElement) {
         ' ': () => setPaused(!paused),
         k: () => setPaused(!paused),
         m: () => setSound(!sound),
+        l: () => setListen(!listen),
         Escape: close,
       };
       const fn = act[e.key];
@@ -387,20 +493,28 @@ function init(player: HTMLElement) {
 
   // ---------- start ----------
   use(set);
-  soundBtn.setAttribute('aria-pressed', String(sound));
+  // Browsers only allow sound after a tap: remembered switches wait for the first one (a tap on a switch itself
+  // turns that one on through its own click).
+  const wantSound = store.get('pl-sound', false);
+  // Before the switches were split, «صدا» meant the narration too.
+  const wantListen = store.get<boolean | null>('pl-listen', null) ?? wantSound;
+  soundBtn.classList.toggle('is-armed', wantSound);
+  listenBtn.classList.toggle('is-armed', wantListen);
   canSpeakPersian().then((ok) => {
     voice = ok;
-    refreshSoundBtn();
+    if (!ok) listenBtn.classList.remove('is-armed');
+    else if (wantListen) getReady(); // the first tap turns narration on: have the voice loaded by then
+    refreshButtons();
   });
-  // Browsers only allow sound after a tap: a remembered "sound on" waits for the first one.
-  if (sound) {
-    sound = false;
-    soundBtn.classList.add('is-armed');
+  if (wantSound || wantListen) {
     player.addEventListener(
       'pointerup',
       (e) => {
+        const t = e.target as Node;
         soundBtn.classList.remove('is-armed');
-        if (!sound && !soundBtn.hidden && !soundBtn.contains(e.target as Node)) setSound(true);
+        listenBtn.classList.remove('is-armed');
+        if (wantSound && !sound && !soundBtn.contains(t)) setSound(true);
+        if (wantListen && voice && !listen && !listenBtn.contains(t)) setListen(true);
       },
       { once: true },
     );

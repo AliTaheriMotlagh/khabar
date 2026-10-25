@@ -6,6 +6,9 @@
 // on the site's own text — Whisper transcribes all of them, Khadijah best (4–6% characters wrong) but slower than real
 // time on a laptop core (a phone would stutter) and twice the download; Ganji is next clearest (7–9%), the fastest
 // (about twice real time) and loads in ~3 s. The files are the Sokuji sherpa-onnx packages on Hugging Face.
+// The same voice also comes as an int8 package (49 MB instead of 93), but in the browser it makes speech 1.8× slower
+// (Chrome, Apple M-series: 0.32 s of work per second of speech against 0.18) — on a phone that is the difference
+// between keeping ahead of the playback and stuttering, so the full model it is.
 
 /** Cache Storage name: public/sw.js must keep it when it clears old caches. Change it with the model. */
 export const VOICE_CACHE = 'voice-v1';
@@ -119,6 +122,12 @@ addEventListener('pagehide', () => {
   failAll('closed');
 });
 
+/** Starts loading the model before its first clip is asked for (the reader is about to listen), so the voice starts
+ *  a second or more sooner. Only once it's downloaded: loading takes hundreds of MB, so not on every page. */
+export function prepareVoice() {
+  if (ready) getWorker().postMessage({ t: 'load' });
+}
+
 /** Downloads what is missing (resuming a partial download), reporting progress. */
 export function downloadVoice(progress: (loaded: number, total: number) => void): Promise<void> {
   return new Promise((resolve, reject) => {
@@ -184,8 +193,30 @@ export function voiceClip(text: string, urgent = false): Promise<string> {
   return clip;
 }
 
-/** Text in pieces of about a sentence: the first one is ready sooner, and the model keeps its pace on short input. */
+/** Text in pieces of about a sentence: the first one is ready sooner, and the model keeps its pace on short input.
+ *  The first piece is what the listener waits for, so a long one is cut at its first natural pause. */
 export function sentences(text: string): string[] {
+  return quickStart(pieces(text));
+}
+
+/** A first piece over FIRST_MAX characters is cut at the last pause (a comma, a colon, or before «که», «اما», «ولی»,
+ *  «تا»; not «و», which also joins pairs like «تر و تمیز») that leaves FIRST_MIN to FIRST_MAX characters before it
+ *  and a sizeable piece after it. */
+const FIRST_MIN = 30;
+const FIRST_MAX = 110;
+function quickStart(out: string[]): string[] {
+  const first = out[0];
+  if (!first || first.length <= FIRST_MAX) return out;
+  let cut = -1;
+  for (const m of first.matchAll(/([،,:؛])\s|\s(?=(?:که|اما|ولی|تا)\s)/g)) {
+    const at = m.index! + (m[1] ? 1 : 0);
+    if (at > FIRST_MAX) break;
+    if (at >= FIRST_MIN && first.length - at >= 25) cut = at;
+  }
+  return cut < 0 ? out : [first.slice(0, cut).trim(), first.slice(cut).trim(), ...out.slice(1)];
+}
+
+function pieces(text: string): string[] {
   const out: string[] = [];
   const add = (t: string) => {
     const last = out.length - 1;

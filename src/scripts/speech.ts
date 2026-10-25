@@ -6,7 +6,7 @@
 // run straight from a tap: iOS only lets audio begin inside the gesture, so nothing on that path awaits (the
 // on-device voice first plays a moment of silence in the tap, which unlocks the element for the clips that follow).
 import { SITE } from '../site';
-import { sentences, voiceClip, voiceReady, voiceState } from './voice';
+import { prepareVoice, sentences, voiceClip, voiceReady, voiceState } from './voice';
 
 /** One paragraph to read: `i` is its index in the story's card.json (0 = title, then the body, then "why"). */
 export type Line = { text: string; post: number; i: number };
@@ -47,6 +47,8 @@ export async function persianVoice(): Promise<VoiceSource | null> {
 /** Synchronous answer, once persianVoice() has resolved: safe to use inside a tap. */
 export const hasPersianVoice = (): VoiceSource | null => (voiceFor('fa') ? 'device' : cloudOk ? 'cloud' : voiceReady() ? 'local' : null);
 export const canSpeakPersian = async () => (await persianVoice()) !== null;
+/** The reader is about to listen: when it's the downloaded voice that will speak, its model starts loading now. */
+export const getReady = () => hasPersianVoice() === 'local' && prepareVoice();
 
 export class Speaker {
   lines: Line[] = [];

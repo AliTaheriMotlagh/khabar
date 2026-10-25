@@ -3,7 +3,7 @@
 import { SITE } from '../site';
 import { $, $$, fmtNum, store, toast } from './core';
 import { award } from './game';
-import { Speaker, type Line } from './speech';
+import { Speaker, getReady, type Line } from './speech';
 import { canListen, listenOr } from './voice-offer';
 
 type Prefs = Record<string, string>;
@@ -108,12 +108,21 @@ speaker.rate = store.get<number>('rate', 1);
 function toggleListen() {
   if (speaker.state === 'playing' || speaker.state === 'loading') return speaker.pause();
   if (speaker.state === 'paused') return speaker.resume();
-  paragraphs = $$('h1, .prose p, .why p, .digest-list li', article!).filter((el) => el.textContent?.trim());
+  // The story's text only, not its headline: paragraph k is card.json's k + 1 (0 is the headline, see api/tts.js).
+  // A brief's first line is its headline again, and a line that is only a link isn't worth hearing: both are skipped.
+  // A story with no text is read by its headline.
+  const text = (el: Element) => el.textContent!.replace(/\s+/g, ' ').trim();
+  const head = text($('h1', article!)!).replace(/…$/, '');
+  const all = $$('.prose p, .why p, .digest-list li', article!).filter((el) => text(el));
+  const again = all[0] && text(all[0]).length < head.length + 20 && text(all[0]).startsWith(head.slice(0, 30)) ? 1 : 0;
+  let parts = all.map((el, k) => ({ el, i: k + 1 })).filter(({ el, i }) => i > again && !/^\P{L}*https?:\/\/\S+$/u.test(text(el)));
+  if (!parts.length) parts = $$('h1', article!).map((el) => ({ el, i: 0 }));
+  paragraphs = parts.map((p) => p.el);
   if ('mediaSession' in navigator) {
     const cover = article?.dataset.cover;
     navigator.mediaSession.metadata = new MediaMetadata({ title: article?.dataset.title ?? document.title, artist: SITE.name, artwork: cover ? [{ src: cover }] : [] });
   }
-  speaker.start(paragraphs.map((el, i) => ({ text: el.textContent!.replace(/\s+/g, ' ').trim(), post: id, i })));
+  speaker.start(parts.map(({ el, i }) => ({ text: text(el), post: id, i })));
 }
 
 function stepRate() {
@@ -194,6 +203,7 @@ function initBrief() {
     brief.start(lines);
   };
   canListen().then((ok) => (btn.hidden = !ok || !lines.length));
+  btn.addEventListener('pointerdown', getReady, { once: true });
   btn.addEventListener('click', () => (brief.state === 'idle' ? listenOr(toggle) : toggle()));
   addEventListener('pagehide', () => brief.stop());
 }
@@ -210,6 +220,7 @@ export function initReader(get: () => Prefs, set: (patch: Prefs) => void) {
 
   if (listenBtn) {
     canListen().then((ok) => (listenBtn.hidden = !ok));
+    listenBtn.addEventListener('pointerdown', getReady, { once: true });
     listenBtn.addEventListener('click', () => (speaker.state === 'idle' ? listenOr(toggleListen) : toggleListen()));
     showRate();
     rateBtn?.addEventListener('click', stepRate);

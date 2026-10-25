@@ -2,7 +2,8 @@
 // runtime and a Persian model into Cache Storage in parts (a dropped connection resumes where it stopped,
 // a blocked mirror falls through to the next one, and every file is checked against its SHA-256), loads it on the
 // first paragraph, and turns text into WAV, one request at a time.
-// Messages in:  { t: 'init', cache, bases, files, config } first, then { t: 'download' } · { t: 'say', id, text, urgent } · { t: 'bump', id }
+// Messages in:  { t: 'init', cache, bases, files, config } first, then { t: 'download' } · { t: 'load' } (the model, ahead
+//               of time) · { t: 'say', id, text, urgent } · { t: 'bump', id }
 // Messages out: { t: 'progress', loaded, total } · { t: 'downloaded' } · { t: 'audio', id, wav } · { t: 'dropped', id }
 //               { t: 'fail', msg, id? } (a failed download or model load fails every pending request)
 type Pack = { name: string; size: number; sha256: string };
@@ -26,11 +27,17 @@ const post = (m: unknown, transfer: Transferable[] = []) => scope.postMessage(m,
 const PART = 8 * 1024 * 1024;
 /** Paragraphs waiting beyond this are dropped, oldest first (the reader skipped ahead). */
 const QUEUE_MAX = 6;
+/** A download that receives nothing for this long is dropped and started again from where it stopped (filtered
+ *  connections often stall instead of failing). */
+const STALL_MS = 20_000;
+/** Each file is tried this many times over, on every mirror, before the download reports a failure. */
+const ROUNDS = 4;
 
 let cacheName = '';
 let bases: string[] = [];
 let files: Pack[] = [];
 let config: unknown; // sherpa-onnx's OfflineTts config for the model in the package
+let preferred = 0; // the mirror that served the last file
 // Stored under the first mirror's address whichever mirror served them: parts from different mirrors are the same bytes.
 const partKey = (f: Pack, k: number) => `${bases[0]}${f.name}?part=${k}`;
 const doneKey = (f: Pack) => `${bases[0]}${f.name}?done`;
@@ -47,22 +54,32 @@ async function download() {
     post({ t: 'progress', loaded, total });
   };
   for (const f of files) {
-    if (!(await cache.match(doneKey(f)))) {
-      let error: unknown;
-      for (const base of bases) {
-        try {
-          await fetchFile(cache, f, base, (n, force) => progress(before + n, force));
-          error = null;
-          break;
-        } catch (e) {
-          error = e;
-        }
-      }
-      if (error) throw error;
-    }
+    if (!(await cache.match(doneKey(f)))) await fetchAny(cache, f, (n, force) => progress(before + n, force));
     before += f.size;
   }
   progress(total, true);
+}
+
+/** One file from whichever mirror works, the last one that did first. A dropped or stalled connection is tried again
+ *  (resuming) a few times with a pause between rounds, so a long download on a shaky network doesn't stop at the first
+ *  hiccup and wait for the reader to tap again. */
+async function fetchAny(cache: Cache, f: Pack, progress: (loaded: number, force?: boolean) => void) {
+  let error: unknown;
+  for (let round = 0; round < ROUNDS; round++) {
+    if (round) await new Promise((r) => setTimeout(r, round * 3000));
+    for (let j = 0; j < bases.length; j++) {
+      const k = (preferred + j) % bases.length;
+      try {
+        await fetchFile(cache, f, bases[k], progress);
+        preferred = k;
+        return;
+      } catch (e) {
+        error = e;
+        if (!navigator.onLine) throw e; // offline: say so now rather than after every retry
+      }
+    }
+  }
+  throw error;
 }
 
 /** Fetches what is missing of one file from one mirror, storing it part by part, then checks the whole file. */
@@ -72,37 +89,18 @@ async function fetchFile(cache: Cache, f: Pack, base: string, progress: (loaded:
   const offset = k * PART;
   progress(offset, true);
   if (offset < f.size) {
-    const res = await fetch(base + f.name, offset ? { headers: { Range: `bytes=${offset}-` } } : {});
-    if (!res.ok || !res.body) throw new Error(`HTTP ${res.status}`);
-    // A server that ignores Range sends the whole file: skip what is already stored.
-    let skip = res.status === 206 ? 0 : offset;
-    let buf = new Uint8Array(Math.min(PART, f.size - k * PART));
-    let at = 0;
-    const reader = res.body.getReader();
-    for (;;) {
-      const { done, value } = await reader.read();
-      if (done) break;
-      let chunk = value;
-      if (skip) {
-        const n = Math.min(skip, chunk.length);
-        skip -= n;
-        chunk = chunk.subarray(n);
-      }
-      while (chunk.length && k * PART < f.size) {
-        const n = Math.min(buf.length - at, chunk.length);
-        buf.set(chunk.subarray(0, n), at);
-        at += n;
-        chunk = chunk.subarray(n);
-        if (at === buf.length) {
-          await cache.put(partKey(f, k), new Response(buf));
-          k++;
-          buf = new Uint8Array(Math.max(0, Math.min(PART, f.size - k * PART)));
-          at = 0;
-        }
-      }
-      progress(k * PART + at);
+    const stop = new AbortController();
+    let timer: ReturnType<typeof setTimeout> | undefined;
+    const watch = () => {
+      clearTimeout(timer);
+      timer = setTimeout(() => stop.abort(), STALL_MS);
+    };
+    watch();
+    try {
+      await fetchRest(cache, f, base, k, stop.signal, watch, progress);
+    } finally {
+      clearTimeout(timer);
     }
-    if (k * PART < f.size) throw new Error('incomplete');
   }
   const parts = Math.ceil(f.size / PART);
   await cache.put(doneKey(f), new Response(JSON.stringify({ size: f.size, parts })));
@@ -113,6 +111,43 @@ async function fetchFile(cache: Cache, f: Pack, base: string, progress: (loaded:
     await cache.delete(doneKey(f));
     throw new Error('corrupt');
   }
+}
+
+/** Streams the file from part k on into the cache; `alive` is called whenever bytes arrive. */
+async function fetchRest(cache: Cache, f: Pack, base: string, k: number, signal: AbortSignal, alive: () => void, progress: (loaded: number, force?: boolean) => void) {
+  const offset = k * PART;
+  const res = await fetch(base + f.name, { signal, ...(offset ? { headers: { Range: `bytes=${offset}-` } } : {}) });
+  if (!res.ok || !res.body) throw new Error(`HTTP ${res.status}`);
+  // A server that ignores Range sends the whole file: skip what is already stored.
+  let skip = res.status === 206 ? 0 : offset;
+  let buf = new Uint8Array(Math.min(PART, f.size - k * PART));
+  let at = 0;
+  const reader = res.body.getReader();
+  for (;;) {
+    const { done, value } = await reader.read();
+    alive();
+    if (done) break;
+    let chunk = value;
+    if (skip) {
+      const n = Math.min(skip, chunk.length);
+      skip -= n;
+      chunk = chunk.subarray(n);
+    }
+    while (chunk.length && k * PART < f.size) {
+      const n = Math.min(buf.length - at, chunk.length);
+      buf.set(chunk.subarray(0, n), at);
+      at += n;
+      chunk = chunk.subarray(n);
+      if (at === buf.length) {
+        await cache.put(partKey(f, k), new Response(buf));
+        k++;
+        buf = new Uint8Array(Math.max(0, Math.min(PART, f.size - k * PART)));
+        at = 0;
+      }
+    }
+    progress(k * PART + at);
+  }
+  if (k * PART < f.size) throw new Error('incomplete');
 }
 
 async function read(cache: Cache, f: Pack) {
@@ -230,6 +265,8 @@ scope.onmessage = (e: MessageEvent) => {
       () => post({ t: 'downloaded' }),
       (err) => post({ t: 'fail', msg: String(err?.message ?? err) }),
     );
+  } else if (m.t === 'load') {
+    load().catch(() => (loading = null)); // a failure shows up (and is retried) with the first paragraph
   } else if (m.t === 'say') {
     const job = { id: m.id, text: m.text };
     m.urgent ? queue.unshift(job) : queue.push(job);
