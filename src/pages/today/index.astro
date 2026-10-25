@@ -1,7 +1,9 @@
 ---
 // The news as a vertical video: one full-screen scene per story, playing on its own (src/scripts/player.ts).
 // The page carries three days of stories; the browser plays one set of them (?s=new | unseen | all, default today,
-// see pickStories in src/scripts/game.ts) and can switch sets in place. Without JS it's a plain list of the day's headlines.
+// see chooseStories in src/lib/time.ts) and can switch sets in place. Which stories are today's is decided in the browser,
+// with the reader's clock (data-date); the build's own count only feeds the description, structured data and the
+// no-JS list. Without JS it's a plain list of the day's headlines.
 import Base from '../../layouts/Base.astro';
 import Icon from '../../components/Icon.astro';
 import SaveButton from '../../components/SaveButton.astro';
@@ -46,7 +48,7 @@ const jsonLd = [
   },
 ];
 ---
-<Base title="امروز در یک نگاه" description={`همه‌ی خبرهای ۲۴ ساعت گذشته‌ی ${SITE.name}، پشت سر هم مثل یک ویدیو — حدود ${faNum(totalMin)} دقیقه.`} image={scenes[0]?.image || null} jsonLd={jsonLd}>
+<Base title="امروز در یک نگاه" description={`خبرهای امروز ${SITE.name}، پشت سر هم مثل یک ویدیو${today.size ? ` — حدود ${faNum(totalMin)} دقیقه` : ''}.`} image={scenes[0]?.image || null} jsonLd={jsonLd}>
   <Fragment slot="head">
     <link rel="preconnect" href="https://video.twimg.com" />
     {first && <link rel="preload" as="image" href={first} fetchpriority="high" />}
@@ -57,7 +59,7 @@ const jsonLd = [
       <div class="pl-stage" data-pl-stage>
         {
           scenes.map((s, i) => (
-            <article class="pl-scene" data-i={i} data-id={s.p.id} data-in-today={s.today ? '' : undefined} data-gif={s.video?.gif ? '' : undefined} data-date={s.p.date} data-seconds={s.seconds} data-say={s.say.join(',')} data-lede={s.say.length > 1 ? s.p.article.body[0] : undefined} aria-hidden={i ? 'true' : undefined}>
+            <article class="pl-scene" data-i={i} data-id={s.p.id} data-gif={s.video?.gif ? '' : undefined} data-date={s.p.date} data-seconds={s.seconds} data-say={s.say.join(',')} data-lede={s.say.length > 1 ? s.p.article.body[0] : undefined} aria-hidden={i ? 'true' : undefined}>
               <div class="pl-bg">
                 {s.video ? (
                   <video data-src={s.video.src} poster={i < 2 ? s.video.poster || s.image || undefined : undefined} data-poster={s.video.poster || s.image} muted playsinline loop preload="none" />
@@ -126,7 +128,7 @@ const jsonLd = [
   <noscript>
     <div class="container narrow">
       <h1 class="page-head">امروز در یک نگاه</h1>
-      <ol>{scenes.filter((s) => s.today).map((s) => <li><a href={s.p.href}>{s.p.article.title}</a></li>)}</ol>
+      <ol>{(today.size ? scenes.filter((s) => s.today) : scenes).map((s) => <li><a href={s.p.href}>{s.p.article.title}</a></li>)}</ol>
     </div>
   </noscript>
   <script>

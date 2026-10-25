@@ -3,7 +3,8 @@
 // long as the voice takes. Tap the left side for the next story and the right side for the previous one (it's a
 // right-to-left page), hold to pause, swipe down or Esc to leave.
 // The page carries three days of stories and plays one set of them (?s=new | unseen | all, default today); the end
-// screen switches sets in place.
+// screen switches sets in place, offering only the sets that have something to play. Opened without a set before
+// anything was published today, it plays the last three days instead of an empty screen.
 import { $, $$, fmtNum, store, toast } from './core';
 import { markSeen, pickStories, storySet, type StorySet } from './game';
 import { Speaker, canSpeakPersian, type Line } from './speech';
@@ -30,7 +31,7 @@ if (player) init(player);
 
 function init(player: HTMLElement) {
   const every = $$('.pl-scene', player);
-  const items = every.map((el) => ({ id: Number(el.dataset.id), today: el.hasAttribute('data-in-today'), el }));
+  const items = every.map((el) => ({ id: Number(el.dataset.id), at: Date.parse(el.dataset.date ?? ''), el }));
   const barBox = $('[data-pl-bars]', player)!;
   const end = $('[data-pl-end]', player)!;
   const backdrop = $('[data-pl-backdrop]', player)!;
@@ -38,7 +39,9 @@ function init(player: HTMLElement) {
   const pauseBtn = $('[data-pl-pause]', player)!;
   const soundBtn = $('[data-pl-sound]', player)!;
 
-  let set: StorySet = storySet(new URLSearchParams(location.search).get('s'));
+  const asked = new URLSearchParams(location.search).get('s');
+  let set: StorySet = storySet(asked);
+  if (!asked && !pickStories('today', items).length) set = 'all';
   let scenes: HTMLElement[] = [];
   let bars: HTMLElement[] = [];
   let at = 0;
@@ -74,7 +77,7 @@ function init(player: HTMLElement) {
     $('[data-pl-name]', player)!.textContent = TEXT[set].name;
     $('[data-pl-count]', player)!.textContent = fmtNum(scenes.length);
     $('[data-pl-total]', player)!.textContent = fmtNum(scenes.length);
-    $$<HTMLAnchorElement>('[data-pl-set]', player).forEach((a) => (a.hidden = a.dataset.plSet === set));
+    $$<HTMLAnchorElement>('[data-pl-set]', player).forEach((a) => (a.hidden = a.dataset.plSet === set || !pickStories(storySet(a.dataset.plSet), items).length));
     refreshSoundBtn();
   }
   function switchTo(next: StorySet) {

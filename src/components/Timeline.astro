@@ -1,10 +1,13 @@
 ---
-// The news as a timeline: days on a vertical rail, each post pinned at its time.
+// The news as a timeline: days on a vertical rail, each post pinned at its time. A day's pill counts all of its news in
+// `all` (the whole list this is a page of), not only what this page shows; digests are summaries, not news.
 import Icon from './Icon.astro';
 import StoryCard from './StoryCard.astro';
 import { dayKey, faDate, faNum, type Post } from '../lib/posts';
-interface Props { posts: Post[]; nextHref?: string | null; prevHref?: string | null; title?: string; eagerFirst?: boolean }
-const { posts, nextHref, prevHref, title = 'خط زمانی خبرها', eagerFirst = false } = Astro.props;
+interface Props { posts: Post[]; all?: Post[]; nextHref?: string | null; prevHref?: string | null; title?: string; eagerFirst?: boolean }
+const { posts, all = posts, nextHref, prevHref, title = 'خط زمانی خبرها', eagerFirst = false } = Astro.props;
+const perDay = new Map<string, number>();
+for (const p of all) if (p.kind !== 'digest') perDay.set(dayKey(p.date), (perDay.get(dayKey(p.date)) ?? 0) + 1);
 
 const days: { day: string; iso: string; posts: Post[] }[] = [];
 for (const p of posts) {
@@ -19,10 +22,10 @@ for (const p of posts) {
     {
       days.map((d, di) => (
         <>
-          <li class="tl-day" data-day={d.day} data-day-count={d.posts.length}>
+          <li class="tl-day" data-day={d.day}>
             <span class="tl-day-pill">
               <span data-day-label>{faDate(d.iso, { weekday: 'long', day: 'numeric', month: 'long' })}</span>
-              <small data-num>{faNum(d.posts.length)} خبر</small>
+              {perDay.get(d.day) ? <small data-num>{faNum(perDay.get(d.day)!)} خبر</small> : null}
             </span>
           </li>
           {d.posts.map((p, i) => <StoryCard post={p} eager={eagerFirst && di === 0 && i < 2} />)}

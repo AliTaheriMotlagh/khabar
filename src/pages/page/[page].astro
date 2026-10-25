@@ -20,7 +20,7 @@ const next = page < total ? url(`page/${page + 1}/`) : null;
   <div class="container">
     <header class="page-head"><h1>آرشیو خبرها</h1><p>صفحه‌ی {faNum(page)} از {faNum(total)}</p></header>
     <div class="layout">
-      <div class="col-main"><Timeline posts={slice} nextHref={next} prevHref={prev} title="خبرهای قدیمی‌تر" /></div>
+      <div class="col-main"><Timeline posts={slice} all={posts} nextHref={next} prevHref={prev} title="خبرهای قدیمی‌تر" /></div>
       <Sidebar />
     </div>
   </div>

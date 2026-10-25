@@ -2,6 +2,7 @@
 // plus "what's new since your last visit" — unread new stories stay marked until they are read.
 import { SITE } from '../site';
 import { $, $$, BASE, esc, fmtNum, getHistory, guest, hue, initial, myName, setMyName, store, toast, type Entry } from './core';
+import { chooseStories, type StoryItem, type StorySet } from '../lib/time';
 
 type Stats = {
   xp: number;
@@ -191,23 +192,11 @@ export function unreadTest() {
   return (id: number) => !done.has(id);
 }
 
-// ---------- the four stories (home rail → /today/?s=…) ----------
-/** new: arrived since the last visit and not seen yet · unseen: not opened or watched · today: the last 24 hours ·
- *  all: everything the player carries (three days). */
-export const STORY_SETS = ['new', 'unseen', 'today', 'all'] as const;
-export type StorySet = (typeof STORY_SETS)[number];
-export type StoryItem = { id: number; today: boolean };
-/** The personal stories play at most this many (the newest), so their progress bars stay readable. */
-const SET_MAX: Partial<Record<StorySet, number>> = { new: 20, unseen: 20 };
-export const storySet = (v: string | null | undefined): StorySet => (STORY_SETS as readonly string[]).includes(v ?? '') ? (v as StorySet) : 'today';
-
-/** The stories a set plays, newest first, out of the recent ones the page carries. */
-export function pickStories<T extends StoryItem>(set: StorySet, items: T[]): T[] {
-  const unread = unreadTest();
-  const pending = new Set(store.get<number[]>('pending', []));
-  const keep = (i: T) => (set === 'new' ? pending.has(i.id) && unread(i.id) : set === 'unseen' ? unread(i.id) : set === 'today' ? i.today : true);
-  return items.filter(keep).slice(0, SET_MAX[set] ?? Infinity);
-}
+// ---------- the four stories (home rail → /today/?s=…, sets defined in src/lib/time.ts) ----------
+export { STORY_SETS, storySet, type StoryItem, type StorySet } from '../lib/time';
+/** The stories a set plays for this reader, newest first, out of the recent ones the page carries. */
+export const pickStories = <T extends StoryItem>(set: StorySet, items: T[], now = Date.now()) =>
+  chooseStories(set, items, { now, unread: unreadTest(), pending: new Set(store.get<number[]>('pending', [])) });
 
 // ---------- new since the last visit ----------
 type Catchup = { total: number; done: number };

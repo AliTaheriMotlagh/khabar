@@ -37,7 +37,7 @@ function showLive(d: Live) {
   $$('[data-online-pill], [data-live-card]').forEach((el) => (el.hidden = false));
   if (d.today != null) $$('[data-today]').forEach((el) => (el.textContent = compact(d.today!)));
   if (d.total != null) $$('[data-total]').forEach((el) => (el.textContent = compact(d.total!)));
-  if (d.total != null) $$('[data-site-stats]').forEach((el) => (el.hidden = false));
+  if (d.total) $$('[data-site-stats]').forEach((el) => (el.hidden = false));
   const id = articleId();
   if (id && d.views) setViews(id, d.views);
   const seenChat = store.get<string | null>('chatSeen', null);

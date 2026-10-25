@@ -1,6 +1,7 @@
 import fs from 'node:fs';
 import path from 'node:path';
 import { SITE } from '../site';
+import { DAY, isToday, tehranDay } from './time';
 
 // ---- data written by the crawler (pipeline/run.py) ----
 export type Media = {
@@ -157,7 +158,8 @@ let cache: Post[] | null = null;
 export function getPosts(): Post[] {
   if (cache) return cache;
   const raws = Object.values(import.meta.glob<RawPost>('../../data/posts/*.json', { eager: true, import: 'default' })).filter(
-    (p) => p?.article && !(p.digest && persianShare(p.text) < 0.5),
+    // A post without a readable date (Telegram's page had no time tag) can't be placed on the timeline.
+    (p) => p?.article && !Number.isNaN(Date.parse(p.date)) && !(p.digest && persianShare(p.text) < 0.5),
   );
   const ids = new Set(raws.map((p) => p.id));
   cache = raws.map((p) => shape(p, ids)).sort((a, b) => b.id - a.id);
@@ -173,22 +175,16 @@ export function feedRev() {
   const feed = getFeed();
   return { latest: feed[0]?.id ?? 0, count: feed.length };
 }
-/** The day in one sitting (the daily player and its teaser): stories and briefs from the 24 hours before the newest one,
- *  at least `min` of them on a quiet day. */
-export function todayPosts(min = 8, max = 40): Post[] {
+/** Stories and briefs published today (Tehran), as of `now`: the build time here; the browser recounts with its own
+ *  clock (src/lib/time.ts), since a static page outlives its day. */
+export const todayPosts = (now = Date.now()): Post[] => getStories().filter((p) => isToday(p.date, now));
+/** What the player and the story rail carry: the three days up to the newest story (at least `min` stories after a quiet
+ *  spell). The browser picks today's, the new or the unread ones out of it (src/scripts/player.ts). */
+export function recentPosts(max = 60, min = 8): Post[] {
   const stories = getStories();
   const newest = stories[0] ? Date.parse(stories[0].date) : 0;
-  const day = stories.filter((p) => newest - Date.parse(p.date) < 864e5);
-  return (day.length >= min ? day : stories.slice(0, min)).slice(0, max);
-}
-/** What the player can show: the last three days, so "unread" still has stories after a day away. The browser picks
- *  today's or the reader's unread ones (src/scripts/player.ts). */
-export function recentPosts(max = 60): Post[] {
-  const stories = getStories();
-  const newest = stories[0] ? Date.parse(stories[0].date) : 0;
-  const today = todayPosts();
-  const recent = stories.filter((p) => newest - Date.parse(p.date) < 3 * 864e5).slice(0, max);
-  return recent.length >= today.length ? recent : today;
+  const recent = stories.filter((p) => newest - Date.parse(p.date) < 3 * DAY);
+  return (recent.length >= min ? recent : stories.slice(0, min)).slice(0, max);
 }
 /** The channel's Persian morning summary (posted ~07:36 Tehran), the home page's brief. */
 export const latestDigest = () => getPosts().find((p) => p.kind === 'digest') ?? null;
@@ -221,7 +217,7 @@ export function related(post: Post, n = 4): Post[] {
 const fmt = (opts: Intl.DateTimeFormatOptions) => new Intl.DateTimeFormat('fa-IR-u-ca-persian', { timeZone: SITE.timeZone, ...opts });
 export const faDate = (iso: string, opts: Intl.DateTimeFormatOptions = { dateStyle: 'long' }) => fmt(opts).format(new Date(iso));
 export const faTime = (iso: string) => fmt({ hour: '2-digit', minute: '2-digit', hour12: false }).format(new Date(iso));
-export const dayKey = (iso: string) => new Intl.DateTimeFormat('en-CA', { timeZone: SITE.timeZone }).format(new Date(iso));
+export const dayKey = (iso: string) => tehranDay(iso);
 export const faNum = (n: number | string) => (typeof n === 'number' ? n.toLocaleString('fa-IR') : n.replace(/\d/g, (d) => '۰۱۲۳۴۵۶۷۸۹'[+d]));
 export const duration = (s?: number | string | null) => {
   if (s == null || s === '') return '';

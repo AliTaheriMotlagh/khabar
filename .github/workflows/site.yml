@@ -21,7 +21,7 @@ on:
   workflow_dispatch:
     inputs:
       pages:
-        description: 't.me/s pages to crawl (≈20 posts each); use more to backfill'
+        description: 't.me/s pages to crawl (≈20 posts each); use more to backfill older posts (e.g. 30 ≈ the last 600)'
         default: '3'
 
 permissions:
@@ -36,7 +36,8 @@ concurrency:
 jobs:
   build:
     runs-on: ubuntu-latest
-    timeout-minutes: 20
+    # A backfill (workflow_dispatch with many pages) reads hundreds of posts and their links; a normal run takes a minute.
+    timeout-minutes: 45
     outputs:
       deploy: ${{ steps.commit.outputs.deploy }}
     steps:
@@ -59,7 +60,11 @@ jobs:
           pages='${{ inputs.pages }}'
           # First run on an empty repo: backfill instead of reading only the newest pages.
           if [ -z "$pages" ] && ! ls data/posts/*.json >/dev/null 2>&1; then pages=10; fi
-          PAGES="${pages:-3}" python -m pipeline.run
+          pages="${pages:-3}"
+          # Posts older than 48 hours get Gholam's translation from backfill_gholam, 40 per run by default: a backfill
+          # looks for all of them at once, so the older posts arrive in Persian (and listed) in the same run.
+          backfill=40; [ "$pages" -gt 3 ] && backfill=$((pages * 20))
+          PAGES="$pages" GHOLAM_BACKFILL="$backfill" python -m pipeline.run
 
       - name: Commit new posts
         id: commit
@@ -102,6 +107,9 @@ jobs:
           # The mirror has no functions of its own: comments, reactions and chat go to the Vercel API.
           PUBLIC_API_URL: ${{ vars.API_URL || 'https://khabar-ai.vercel.app' }}
         run: npm run build
+      # The built timeline and stories against the crawled data: order, days, times and counts (tests/site.test.mjs).
+      - run: node --test tests/site.test.mjs
+        if: steps.commit.outputs.deploy == 'true'
 
       - uses: actions/upload-pages-artifact@v3
         if: steps.commit.outputs.deploy == 'true'

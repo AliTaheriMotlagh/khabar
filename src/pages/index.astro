@@ -29,7 +29,7 @@ const next = posts.length > SITE.pageSize ? url('page/2/') : null;
               <Lead post={lead} />
               <DailyBrief />
             </div>
-            <Timeline posts={rest} nextHref={next} />
+            <Timeline posts={rest} all={posts} nextHref={next} />
           </div>
           <Sidebar />
         </div>

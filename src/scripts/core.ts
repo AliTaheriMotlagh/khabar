@@ -1,4 +1,6 @@
 // Small helpers shared by every browser script. Everything here is local to the reader's device.
+import { relTime } from '../lib/time';
+export { relTime };
 export const BASE = import.meta.env.BASE_URL.replace(/\/$/, '');
 export const $ = <T extends Element = HTMLElement>(sel: string, el: ParentNode = document) => el.querySelector<T>(sel);
 export const $$ = <T extends Element = HTMLElement>(sel: string, el: ParentNode = document) => [...el.querySelectorAll<T>(sel)];
@@ -24,17 +26,6 @@ export const store = {
 export const fmtNum = (n: number) => n.toLocaleString('fa-IR');
 export const compact = (n: number) => new Intl.NumberFormat('fa-IR', { notation: 'compact', maximumFractionDigits: 1 }).format(n);
 export const esc = (s = '') => s.replace(/[&<>"']/g, (c) => `&#${c.charCodeAt(0)};`);
-
-const rtf = new Intl.RelativeTimeFormat('fa-IR', { numeric: 'auto' });
-export function relTime(when: string | number) {
-  const d = new Date(when);
-  const mins = (Date.now() - d.getTime()) / 6e4;
-  if (mins < 1) return 'همین حالا';
-  if (mins < 60) return rtf.format(-Math.round(mins), 'minute');
-  if (mins < 60 * 24) return rtf.format(-Math.round(mins / 60), 'hour');
-  if (mins < 60 * 24 * 7) return rtf.format(-Math.round(mins / 1440), 'day');
-  return new Intl.DateTimeFormat('fa-IR-u-ca-persian', { timeZone: 'Asia/Tehran', day: 'numeric', month: 'long' }).format(d);
-}
 
 let toastTimer: number | undefined;
 export function toast(msg: string, kind: 'info' | 'reward' = 'info') {

@@ -11,6 +11,8 @@ export const SITE = {
   owner: { name: 'مهرزاد صمدی', nameLatin: 'Mehrzad Samadi', url: 'https://mehrzad.ai/' },
   // Who built this site (credited in the footer).
   author: { name: 'علی طاهری مطلق', nameLatin: 'Ali Taheri Motlagh', url: 'https://alitaherimotlagh.vercel.app/' },
+  // The site's source code (footer and about page).
+  repo: 'https://github.com/AliTaheriMotlagh/khabar',
   gholam: 'داش غلام',
   timeZone: 'Asia/Tehran',
   pageSize: 20,

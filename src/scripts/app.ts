@@ -1,6 +1,7 @@
 // Client behaviour for every page. Everything is progressive: the site works without JS.
 import { $, $$, BASE, PAGE_CACHE, fmtNum, getSaved, relTime, store, toast, type Entry } from './core';
-import { award, markNew, pickStories, recordRead, renderMe, storySet, unreadTest, type StoryItem } from './game';
+import { award, markNew, pickStories, recordRead, renderMe, storySet, unreadTest } from './game';
+import { TZ, decodeStories, tehranDay } from '../lib/time';
 import { SITE } from '../site';
 import { watchMedia } from './media';
 import { initPeek, peek } from './peek';
@@ -63,8 +64,6 @@ const toggleTheme = () => saveSettings({ theme: resolvedTheme() === 'dark' ? 'li
 $$('[data-theme-toggle]').forEach((b) => b.addEventListener('click', toggleTheme));
 
 // ---------- relative times (rendered client-side so they never go stale) ----------
-const TZ = 'Asia/Tehran';
-const tehranDay = (d: Date) => new Intl.DateTimeFormat('en-CA', { timeZone: TZ }).format(d);
 function renderDates() {
   $$<HTMLTimeElement>('time[data-f]').forEach((el) => {
     const d = new Date(el.dateTime);
@@ -82,21 +81,6 @@ function renderDates() {
     label.textContent = day === today ? `امروز · ${label.dataset.orig}` : day === yesterday ? `دیروز · ${label.dataset.orig}` : label.dataset.orig;
     el.classList.toggle('is-today', day === today);
   });
-}
-
-/** Each day's "N خبر": a day split across pages ("load more") counts every story it now shows. */
-function recountDays() {
-  let pill: HTMLElement | null = null;
-  let n = 0;
-  const flush = () => pill && (pill.textContent = `${n.toLocaleString('fa-IR')} خبر`);
-  for (const el of $$('[data-tl] > li')) {
-    if (el.matches('[data-day]')) {
-      flush();
-      pill = $('.tl-day-pill small', el);
-      n = 0;
-    } else if (el.matches('.tl-item')) n++;
-  }
-  flush();
 }
 
 // ---------- bookmarks (saved pages are also stored for offline reading) ----------
@@ -219,7 +203,6 @@ async function loadMore(link: HTMLAnchorElement) {
     } else link.closest('.pager-nav')?.remove();
     history.replaceState(history.state, '', location.href);
     renderDates();
-    recountDays();
     renderSaved();
     markNew();
     watchMedia(tl);
@@ -324,18 +307,17 @@ if ('serviceWorker' in navigator && location.hostname !== 'localhost') {
   addEventListener('load', () => navigator.serviceWorker.register(`${BASE}/sw.js`).catch(() => {}));
 }
 
-// ---------- story rail (home): count the personal stories, grey out the ones with nothing left to watch ----------
+// ---------- story rail (home): count every set with this reader's clock and history, hide the empty ones ----------
 function renderRail() {
   const rail = $('[data-rail]');
   if (!rail) return;
-  const items: StoryItem[] = (rail.dataset.recent ?? '').split(',').filter(Boolean).map((v) => ({ id: parseInt(v, 10), today: v.endsWith('t') }));
+  const items = decodeStories(rail.dataset.recent ?? '');
   const unread = unreadTest();
   for (const a of $$<HTMLAnchorElement>('[data-rail-set]', rail)) {
-    const set = storySet(a.dataset.railSet);
-    const picked = pickStories(set, items);
-    a.classList.toggle('seen', !picked.some((i) => unread(i.id)));
-    if (set !== 'new' && set !== 'unseen') continue;
+    const picked = pickStories(storySet(a.dataset.railSet), items);
     const n = picked.length;
+    a.hidden = !n;
+    a.classList.toggle('seen', !picked.some((i) => unread(i.id)));
     const label = $('small', a)!.firstChild!.textContent!;
     $('[data-rail-count]', a)!.textContent = ` · ${fmtNum(n)}`;
     a.setAttribute('aria-label', `${label} · ${fmtNum(n)} خبر`);

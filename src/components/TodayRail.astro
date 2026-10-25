@@ -1,26 +1,28 @@
 ---
 // Stories on the home page: four circles, each playing a set in the player (src/pages/today/): "new" (arrived since
-// the last visit), "unseen" (not opened or watched yet), "today" (the last 24 hours) and "all" (the last three days).
-// src/scripts/app.ts counts the personal ones in the browser; a circle turns grey once everything in it was seen.
-// data-recent lists the stories the player carries, newest first, today's marked with a "t".
+// the last visit), "unseen" (not opened or watched yet), "today" (published today, Tehran) and "all" (the last three days).
+// src/scripts/app.ts recounts every set in the browser with the reader's clock and history, and hides a circle with
+// nothing to play; a circle turns grey once everything in it was seen. The personal two stay hidden until then.
+// data-recent lists the stories the player carries, newest first, with their publish times (src/lib/time.ts).
 import Icon from './Icon.astro';
-import { faNum, recentPosts, todayPosts, url } from '../lib/posts';
-const today = new Set(todayPosts().map((p) => p.id));
+import { faNum, recentPosts, url } from '../lib/posts';
+import { encodeStories, isToday } from '../lib/time';
 const recent = recentPosts();
+const built = Date.now();
 const sets = [
-  { set: 'new', icon: 'sparkles', label: 'تازه', count: null },
-  { set: 'unseen', icon: 'eye', label: 'نخوانده', count: null },
-  { set: 'today', icon: 'play', label: 'امروز', count: today.size },
+  { set: 'new', icon: 'sparkles', label: 'تازه', count: 0 },
+  { set: 'unseen', icon: 'eye', label: 'نخوانده', count: 0 },
+  { set: 'today', icon: 'play', label: 'امروز', count: recent.filter((p) => isToday(p.date, built)).length },
   { set: 'all', icon: 'stories', label: 'همه', count: recent.length },
 ] as const;
 ---
 {
   recent.length > 0 && (
-    <nav class="rail" aria-label="استوری خبرها" data-rail data-recent={recent.map((p) => `${p.id}${today.has(p.id) ? 't' : ''}`).join(',')}>
+    <nav class="rail" aria-label="استوری خبرها" data-rail data-recent={encodeStories(recent.map((p) => ({ id: p.id, at: Date.parse(p.date) })))}>
       {sets.map((s) => (
-        <a class={`story-${s.set}`} href={url(s.set === 'today' ? 'today/' : `today/?s=${s.set}`)} data-rail-set={s.set} aria-label={s.count != null ? `${s.label} · ${faNum(s.count)} خبر` : s.label}>
+        <a class={`story-${s.set}`} href={url(s.set === 'today' ? 'today/' : `today/?s=${s.set}`)} data-rail-set={s.set} hidden={!s.count} aria-label={`${s.label} · ${faNum(s.count)} خبر`}>
           <span class="ring"><span><Icon name={s.icon} /></span></span>
-          <small>{s.label}<span data-rail-count>{s.count != null && ` · ${faNum(s.count)}`}</span></small>
+          <small>{s.label}<span data-rail-count>{s.count > 0 && ` · ${faNum(s.count)}`}</span></small>
         </a>
       ))}
     </nav>
