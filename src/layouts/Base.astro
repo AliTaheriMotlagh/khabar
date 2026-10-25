@@ -65,6 +65,7 @@ const ld = [
     <meta name="description" content={description} />
     <link rel="canonical" href={canonical} />
     <link rel="alternate" hreflang="fa" href={canonical} />
+    <link rel="alternate" hreflang="x-default" href={canonical} />
     <meta name="robots" content={noindex ? 'noindex, follow' : 'index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1'} />
     <!-- X/Twitter's video CDN refuses requests that carry a foreign Referer. -->
     <meta name="referrer" content="no-referrer" />
@@ -83,6 +84,11 @@ const ld = [
     <link rel="preconnect" href="https://pbs.twimg.com" />
     <link rel="dns-prefetch" href="https://video.twimg.com" />
     <link rel="dns-prefetch" href="https://cdn4.telesco.pe" />
+    <slot name="head" />
+    <!-- Chrome fetches a page as soon as the reader hovers or starts tapping its link, so it opens instantly. -->
+    <script type="speculationrules" is:inline>
+      { "prefetch": [{ "source": "document", "where": { "and": [{ "href_matches": "/*" }, { "not": { "href_matches": "/api/*" } }, { "not": { "selector_matches": "[target], [download]" } }] }, "eagerness": "moderate" }] }
+    </script>
 
     <meta property="og:site_name" content={SITE.name} />
     <meta property="og:locale" content="fa_IR" />

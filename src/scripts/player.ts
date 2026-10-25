@@ -1,112 +1,215 @@
-// The story player (/today/): stories one after another, like a video. Each scene stays for its own data-seconds,
-// or with narration on, for as long as the voice takes. Tap the left side for the next story and the right side for
-// the previous one (it's a right-to-left page), hold to pause, swipe down or Esc to leave.
-// Two stories: the day's news (/today/), or only what the reader hasn't opened or watched yet (/today/?s=new).
+// The story player (/today/): stories one after another, like a video. Each scene stays for its own data-seconds;
+// with sound on, a video scene plays with its own sound for the video's length, and the others are narrated for as
+// long as the voice takes. Tap the left side for the next story and the right side for the previous one (it's a
+// right-to-left page), hold to pause, swipe down or Esc to leave.
+// The page carries three days of stories and plays one set of them (?s=new | unseen | all, default today); the end
+// screen switches sets in place.
 import { $, $$, fmtNum, store, toast } from './core';
-import { UNREAD_MAX, markSeen, unreadTest } from './game';
+import { markSeen, pickStories, storySet, type StorySet } from './game';
 import { Speaker, canSpeakPersian, type Line } from './speech';
+
+const TEXT: Record<StorySet, { name: string; done: string; empty: string }> = {
+  new: { name: 'تازه‌ها از آخرین سر زدن', done: 'همه‌ی خبرهای تازه را دیدید', empty: 'از آخرین سر زدنتان خبر تازه‌ای نیامده' },
+  unseen: { name: 'خبرهای نخوانده', done: 'همه‌ی خبرهای نخوانده را دیدید', empty: 'خبر نخوانده‌ای نمانده' },
+  today: { name: 'امروز در یک نگاه', done: 'همه‌ی خبرهای امروز را دیدید', empty: 'امروز هنوز خبری نیامده' },
+  all: { name: 'همه‌ی خبرها', done: 'همه‌ی خبرهای این سه روز را دیدید', empty: 'خبری نیست' },
+};
+/** With sound on, a video plays with its own sound for its own length, up to this many seconds. */
+const VIDEO_MAX = 60;
+/** The clock waits for a scene's picture or video at most this long, then moves on without it. */
+const WAIT_MAX = 6000;
+
+type MediaEl = HTMLImageElement | HTMLVideoElement;
+const mediaOf = (s?: HTMLElement) => (s ? $<MediaEl>('.pl-bg img, .pl-bg video', s) : null);
+const videoOf = (s?: HTMLElement) => (s ? $<HTMLVideoElement>('.pl-bg video', s) : null);
+/** A video (not a GIF) has its own sound: with sound on it plays instead of the narration. */
+const hasAudio = (s?: HTMLElement) => !!videoOf(s) && !s!.hasAttribute('data-gif');
 
 const player = $('[data-player]');
 if (player) init(player);
 
 function init(player: HTMLElement) {
-  // The page carries three days of stories; keep the ones this story is about.
-  const unreadOnly = new URLSearchParams(location.search).get('s') === 'new';
-  const unread = unreadTest();
-  const keep = $$('.pl-scene', player).filter((s) => (unreadOnly ? unread(Number(s.dataset.id)) : s.hasAttribute('data-in-today')));
-  const scenes = unreadOnly ? keep.slice(0, UNREAD_MAX) : keep;
-  $$('.pl-scene', player).forEach((s) => !scenes.includes(s) && s.remove());
+  const every = $$('.pl-scene', player);
+  const items = every.map((el) => ({ id: Number(el.dataset.id), today: el.hasAttribute('data-in-today'), el }));
   const barBox = $('[data-pl-bars]', player)!;
-  barBox.innerHTML = scenes.map(() => '<span><i></i></span>').join('');
-  const bars = $$(':scope > span', barBox);
   const end = $('[data-pl-end]', player)!;
   const backdrop = $('[data-pl-backdrop]', player)!;
   const pos = $('[data-pl-pos]', player)!;
   const pauseBtn = $('[data-pl-pause]', player)!;
   const soundBtn = $('[data-pl-sound]', player)!;
-  $('[data-pl-count]', player)!.textContent = fmtNum(scenes.length);
-  $('[data-pl-total]', player)!.textContent = fmtNum(scenes.length);
-  if (unreadOnly) {
-    $('[data-pl-name]', player)!.textContent = 'تازه‌ها برای شما';
-    $('[data-pl-end-title]', player)!.textContent = scenes.length ? 'همه‌ی خبرهای تازه را دیدید' : 'خبر نخوانده‌ای نمانده';
-    $('[data-pl-today]', player)!.hidden = false;
-  }
-  if (!scenes.length) {
-    end.hidden = false;
-    $('[data-pl-end-text]', player)!.hidden = true;
-    $('[data-pl-restart]', player)!.hidden = true;
-    return;
-  }
 
+  let set: StorySet = storySet(new URLSearchParams(location.search).get('s'));
+  let scenes: HTMLElement[] = [];
+  let bars: HTMLElement[] = [];
   let at = 0;
   let paused = false;
   let held = false;
   let sound = store.get<boolean>('pl-sound', false);
+  let voice = false; // a Persian voice exists (the device's own, or the cloud one)
+  let lines: Line[] = [];
   let elapsed = 0;
-  let duration = 1;
+  let waited = 0;
+  let loading = false;
   let last = 0;
   let raf = 0;
 
   const speaker = new Speaker({
-    end: () => sound && next(),
+    end: () => voiced() && next(),
     fail(msg) {
       toast(msg);
-      setSound(false);
+      voice = false; // videos keep their sound; the rest of the scenes go back to the clock
+      refreshSoundBtn();
     },
   });
+  /** This scene ends when the narration does. */
+  const voiced = () => sound && voice && lines.length > 0 && !hasAudio(scenes[at]);
 
-  // ---------- media: only the current scene and the next one load ----------
-  function load(i: number) {
-    const s = scenes[i];
-    if (!s) return;
-    $$<HTMLImageElement | HTMLVideoElement>('[data-src]', s).forEach((m) => {
-      if (m instanceof HTMLVideoElement && m.dataset.poster) m.poster = m.dataset.poster;
-      m.src = m.dataset.src!;
-      m.removeAttribute('data-src');
+  // ---------- the set being played ----------
+  function use(next: StorySet) {
+    set = next;
+    scenes = pickStories(set, items).map((i) => i.el);
+    barBox.innerHTML = scenes.map(() => '<span><i></i></span>').join('');
+    barBox.classList.toggle('many', scenes.length > 24);
+    bars = $$(':scope > span', barBox);
+    $('[data-pl-name]', player)!.textContent = TEXT[set].name;
+    $('[data-pl-count]', player)!.textContent = fmtNum(scenes.length);
+    $('[data-pl-total]', player)!.textContent = fmtNum(scenes.length);
+    $$<HTMLAnchorElement>('[data-pl-set]', player).forEach((a) => (a.hidden = a.dataset.plSet === set));
+    refreshSoundBtn();
+  }
+  function switchTo(next: StorySet) {
+    use(next);
+    history.replaceState(history.state, '', next === 'today' ? location.pathname : `${location.pathname}?s=${next}`);
+    scenes.length ? show(0) : finish();
+  }
+
+  // ---------- media: the next scenes load ahead, videos far away let go of their download ----------
+  function attach(m: MediaEl, preload?: 'auto' | 'metadata', urgent = false) {
+    if (m instanceof HTMLVideoElement) {
+      if (m.dataset.poster && !m.getAttribute('poster')) m.poster = m.dataset.poster;
+      if (preload && m.preload !== 'auto') m.preload = preload;
+    }
+    if (!m.dataset.src) return;
+    m.setAttribute('fetchpriority', urgent ? 'high' : 'low');
+    m.src = m.dataset.src;
+    m.removeAttribute('data-src');
+  }
+  function detach(v: HTMLVideoElement) {
+    const src = v.getAttribute('src');
+    if (!src) return;
+    v.pause();
+    v.dataset.src = src;
+    v.removeAttribute('src');
+    v.preload = 'none';
+    v.load(); // stops the download
+  }
+  function prepare() {
+    scenes.forEach((s, k) => {
+      const d = k - at;
+      const m = mediaOf(s);
+      if (!m) return;
+      if (m instanceof HTMLVideoElement) {
+        if (d >= -1 && d <= 1) attach(m, d === 1 ? 'auto' : d ? 'metadata' : 'auto', d === 0);
+        else detach(m);
+      } else if (d >= -1 && d <= 2) attach(m, undefined, d === 0);
     });
   }
   const still = (s: HTMLElement) => {
-    const m = $<HTMLImageElement | HTMLVideoElement>('img, video', s);
-    return m instanceof HTMLVideoElement ? m.poster : m?.src ?? '';
+    const m = mediaOf(s);
+    return m instanceof HTMLVideoElement ? m.poster : (m?.getAttribute('src') ?? '');
   };
+  /** The current picture or video isn't showing yet. */
+  function stalled() {
+    const m = mediaOf(scenes[at]);
+    if (!m || !m.isConnected || m.hasAttribute('data-blocked')) return false;
+    if (m instanceof HTMLVideoElement) return !m.error && m.readyState < 3;
+    return !m.complete;
+  }
+  function playVideo(v: HTMLVideoElement) {
+    const loud = sound && hasAudio(scenes[at]);
+    v.muted = !loud;
+    v.play().then(
+      () => loud && soundBtn.classList.remove('is-armed'),
+      (e: DOMException) => {
+        if (v.muted || e.name !== 'NotAllowedError') return v.setAttribute('data-blocked', '');
+        // The browser wants a tap before sound (iOS, when the show moved on by itself): play silent until then.
+        v.muted = true;
+        soundBtn.classList.add('is-armed');
+        v.play().catch(() => v.setAttribute('data-blocked', ''));
+      },
+    );
+  }
+  // Any tap brings the sound back (taps count as permission to play it).
+  player.addEventListener('pointerup', (e) => {
+    if (!soundBtn.classList.contains('is-armed') || !sound || soundBtn.contains(e.target as Node)) return;
+    const v = videoOf(scenes[at]);
+    if (v && hasAudio(scenes[at])) v.muted = false;
+    soundBtn.classList.remove('is-armed');
+  });
 
   // ---------- the clock ----------
+  function duration() {
+    const s = scenes[at];
+    const seconds = Number(s.dataset.seconds) || 8;
+    if (voiced()) return Math.max(seconds, lines.reduce((n, l) => n + l.text.length, 0) / 14) * 1000;
+    const v = videoOf(s);
+    // A clip that's long enough sets the pace (its sound shouldn't start over); a short one loops for the reading time.
+    if (sound && v && hasAudio(s) && Number.isFinite(v.duration) && v.duration >= 6) return Math.min(v.duration, VIDEO_MAX) * 1000;
+    return seconds * 1000;
+  }
   function tick(t: number) {
-    if (!paused && !held && !document.hidden) elapsed += Math.min(t - last, 100);
+    const dt = Math.min(t - last, 100);
     last = t;
-    const p = Math.min(1, elapsed / duration);
+    if (!paused && !held && !document.hidden) {
+      // Like a video buffering: the bar waits while the picture is still on its way.
+      const wait = waited < WAIT_MAX && stalled();
+      if (wait) waited += dt;
+      else elapsed += dt;
+      if (wait !== loading) player.classList.toggle('is-loading', (loading = wait));
+    }
+    const p = Math.min(1, elapsed / duration());
     // With narration the voice decides when the scene ends; the bar only estimates.
-    bars[at]?.style.setProperty('--p', String(sound ? Math.min(p, 0.97) : p));
-    if (p >= 1 && !sound) return next();
+    bars[at]?.style.setProperty('--p', String(voiced() ? Math.min(p, 0.97) : p));
+    if (p >= 1 && !voiced()) return next();
     raf = requestAnimationFrame(tick);
   }
   function startClock() {
     cancelAnimationFrame(raf);
     elapsed = 0;
+    waited = 0;
     last = performance.now();
-    const s = scenes[at];
-    const seconds = Number(s.dataset.seconds) || 8;
-    duration = (sound ? Math.max(seconds, linesOf(s).reduce((n, l) => n + l.text.length, 0) / 14) : seconds) * 1000;
     raf = requestAnimationFrame(tick);
   }
 
-  // ---------- narration ----------
+  // ---------- sound: the video's own, or narration ----------
   function linesOf(s: HTMLElement): Line[] {
     const texts = [$('h2', s)?.textContent ?? '', s.dataset.lede ?? ''];
     return (s.dataset.say ?? '0').split(',').map(Number).map((i) => ({ text: texts[i]?.trim() ?? '', post: Number(s.dataset.id), i })).filter((l) => l.text);
   }
   function speak() {
-    if (sound && !paused) speaker.start(linesOf(scenes[at]));
+    if (voiced() && !paused) speaker.start(lines);
+  }
+  function refreshSoundBtn() {
+    soundBtn.hidden = !voice && !scenes.some(hasAudio);
   }
   // Runs from a tap, so iOS lets the audio start.
   function setSound(on: boolean) {
     sound = on;
     store.set('pl-sound', on);
+    soundBtn.classList.remove('is-armed');
     soundBtn.setAttribute('aria-pressed', String(on));
-    soundBtn.setAttribute('aria-label', on ? 'قطع روایت صوتی' : 'روایت صوتی');
-    if (on) speak();
-    else speaker.stop();
-    startClock();
+    soundBtn.setAttribute('aria-label', on ? 'بی‌صدا' : 'صدا');
+    const s = scenes[at];
+    const v = videoOf(s);
+    if (v && hasAudio(s)) {
+      v.muted = !on;
+      if (on && !paused) v.play().catch(() => {});
+    }
+    speaker.stop();
+    if (voiced()) {
+      speak();
+      elapsed = 0;
+    }
   }
 
   // ---------- scenes ----------
@@ -114,22 +217,26 @@ function init(player: HTMLElement) {
     if (i >= scenes.length) return finish();
     at = Math.max(0, i);
     end.hidden = true;
-    scenes.forEach((s, k) => {
-      const on = k === at;
-      s.classList.toggle('on', on);
-      s.toggleAttribute('aria-hidden', !on);
-      const v = $<HTMLVideoElement>('video', s);
-      if (v && !on) v.pause();
+    const s = scenes[at];
+    every.forEach((x) => {
+      const on = x === s;
+      x.classList.toggle('on', on);
+      if (on) x.removeAttribute('aria-hidden');
+      else x.setAttribute('aria-hidden', 'true');
+      if (!on) videoOf(x)?.pause();
     });
     bars.forEach((b, k) => b.style.setProperty('--p', k < at ? '1' : '0'));
-    load(at);
-    load(at + 1);
-    const v = $<HTMLVideoElement>('video', scenes[at]);
-    if (v && !paused) v.play().catch(() => {});
-    backdrop.style.backgroundImage = still(scenes[at]) ? `url("${still(scenes[at])}")` : '';
+    prepare();
+    const v = videoOf(s);
+    if (v) {
+      if (v.currentTime) v.currentTime = 0;
+      if (!paused) playVideo(v);
+    }
+    backdrop.style.backgroundImage = still(s) ? `url("${still(s)}")` : '';
     pos.textContent = fmtNum(at + 1);
-    markSeen(Number(scenes[at].dataset.id));
-    history.replaceState(history.state, '', `#${scenes[at].dataset.id}`);
+    markSeen(Number(s.dataset.id));
+    history.replaceState(history.state, '', `#${s.dataset.id}`);
+    lines = linesOf(s);
     speaker.stop();
     speak();
     startClock();
@@ -140,9 +247,15 @@ function init(player: HTMLElement) {
   function finish() {
     cancelAnimationFrame(raf);
     speaker.stop();
-    scenes.forEach((s) => s.classList.remove('on'));
+    player.classList.remove('is-loading');
+    loading = false;
+    every.forEach((s) => s.classList.remove('on'));
     $$<HTMLVideoElement>('video', player).forEach((v) => v.pause());
     bars.forEach((b) => b.style.setProperty('--p', '1'));
+    const t = TEXT[set];
+    $('[data-pl-end-title]', player)!.textContent = scenes.length ? t.done : t.empty;
+    $('[data-pl-end-text]', player)!.hidden = !scenes.length;
+    $('[data-pl-restart]', player)!.hidden = !scenes.length;
     end.hidden = false;
     at = scenes.length;
     history.replaceState(history.state, '', location.pathname + location.search);
@@ -153,13 +266,13 @@ function init(player: HTMLElement) {
     player.classList.toggle('is-paused', on);
     pauseBtn.setAttribute('aria-pressed', String(on));
     pauseBtn.setAttribute('aria-label', on ? 'پخش' : 'مکث');
-    const v = scenes[at] && $<HTMLVideoElement>('video', scenes[at]);
+    const v = videoOf(scenes[at]);
     if (on) {
       v?.pause();
-      if (sound) speaker.pause();
+      if (speaker.state !== 'idle') speaker.pause();
     } else {
       v?.play().catch(() => {});
-      if (sound) speaker.state === 'paused' ? speaker.resume() : speak();
+      if (voiced()) speaker.state === 'paused' ? speaker.resume() : speak();
     }
   }
 
@@ -178,7 +291,7 @@ function init(player: HTMLElement) {
     holdTimer = window.setTimeout(() => {
       held = true;
       player.classList.add('is-held');
-      $<HTMLVideoElement>('video', scenes[at] ?? player)?.pause();
+      videoOf(scenes[at])?.pause();
     }, 220);
   });
   const release = (e: PointerEvent) => {
@@ -190,7 +303,7 @@ function init(player: HTMLElement) {
     if (held) {
       held = false;
       player.classList.remove('is-held');
-      if (!paused) $<HTMLVideoElement>('video', scenes[at] ?? player)?.play().catch(() => {});
+      if (!paused) videoOf(scenes[at])?.play().catch(() => {});
       return;
     }
     if (e.type === 'pointercancel') return;
@@ -205,10 +318,16 @@ function init(player: HTMLElement) {
   taps.addEventListener('contextmenu', (e) => e.preventDefault());
 
   $('[data-pl-next]', player)!.addEventListener('click', () => (at < scenes.length ? next() : undefined));
-  $('[data-pl-prev]', player)!.addEventListener('click', () => (at >= scenes.length ? show(scenes.length - 1) : prev()));
+  $('[data-pl-prev]', player)!.addEventListener('click', () => (at >= scenes.length ? scenes.length && show(scenes.length - 1) : prev()));
   pauseBtn.addEventListener('click', () => setPaused(!paused));
-  soundBtn.addEventListener('click', () => setSound(!sound));
+  soundBtn.addEventListener('click', () => (sound && soundBtn.classList.contains('is-armed') ? setSound(true) : setSound(!sound)));
   $('[data-pl-restart]', player)!.addEventListener('click', () => show(0));
+  $$<HTMLAnchorElement>('[data-pl-set]', player).forEach((a) =>
+    a.addEventListener('click', (e) => {
+      e.preventDefault();
+      switchTo(storySet(a.dataset.plSet));
+    }),
+  );
   $('[data-pl-close]', player)!.addEventListener('click', (e) => {
     e.preventDefault();
     close();
@@ -236,14 +355,16 @@ function init(player: HTMLElement) {
     },
     true,
   );
-  document.addEventListener('visibilitychange', () => document.hidden && !paused && setPaused(true));
+  document.addEventListener('visibilitychange', () => document.hidden && !paused && at < scenes.length && setPaused(true));
 
   // ---------- start ----------
+  use(set);
   soundBtn.setAttribute('aria-pressed', String(sound));
-  // Narration only where a Persian voice exists (the device's own, or the cloud one).
-  soundBtn.hidden = true;
-  canSpeakPersian().then((ok) => (soundBtn.hidden = !ok));
-  // Browsers only allow sound after a tap: a remembered "narration on" waits for the first one.
+  canSpeakPersian().then((ok) => {
+    voice = ok;
+    refreshSoundBtn();
+  });
+  // Browsers only allow sound after a tap: a remembered "sound on" waits for the first one.
   if (sound) {
     sound = false;
     soundBtn.classList.add('is-armed');
@@ -257,7 +378,7 @@ function init(player: HTMLElement) {
     );
   }
   const fromHash = scenes.findIndex((s) => s.dataset.id === location.hash.slice(1));
-  show(fromHash > 0 ? fromHash : 0);
+  scenes.length ? show(Math.max(0, fromHash)) : finish();
   if (!store.get('pl-hint', false)) {
     const hint = $('[data-pl-hint]', player)!;
     hint.hidden = false;

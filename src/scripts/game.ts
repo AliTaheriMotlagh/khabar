@@ -185,12 +185,28 @@ export function markSeen(id: number) {
   if (!seen.includes(id)) store.set('seen', [...seen, id].slice(-500));
   clearNew(id);
 }
-/** The unread story plays at most this many (the newest), so its progress bars stay readable. */
-export const UNREAD_MAX = 20;
 /** Not opened and not watched in the player. */
 export function unreadTest() {
   const done = new Set([...store.get<number[]>('read', []), ...store.get<number[]>('seen', [])]);
   return (id: number) => !done.has(id);
+}
+
+// ---------- the four stories (home rail → /today/?s=…) ----------
+/** new: arrived since the last visit and not seen yet · unseen: not opened or watched · today: the last 24 hours ·
+ *  all: everything the player carries (three days). */
+export const STORY_SETS = ['new', 'unseen', 'today', 'all'] as const;
+export type StorySet = (typeof STORY_SETS)[number];
+export type StoryItem = { id: number; today: boolean };
+/** The personal stories play at most this many (the newest), so their progress bars stay readable. */
+const SET_MAX: Partial<Record<StorySet, number>> = { new: 20, unseen: 20 };
+export const storySet = (v: string | null | undefined): StorySet => (STORY_SETS as readonly string[]).includes(v ?? '') ? (v as StorySet) : 'today';
+
+/** The stories a set plays, newest first, out of the recent ones the page carries. */
+export function pickStories<T extends StoryItem>(set: StorySet, items: T[]): T[] {
+  const unread = unreadTest();
+  const pending = new Set(store.get<number[]>('pending', []));
+  const keep = (i: T) => (set === 'new' ? pending.has(i.id) && unread(i.id) : set === 'unseen' ? unread(i.id) : set === 'today' ? i.today : true);
+  return items.filter(keep).slice(0, SET_MAX[set] ?? Infinity);
 }
 
 // ---------- new since the last visit ----------

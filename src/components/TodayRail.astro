@@ -1,29 +1,26 @@
 ---
-// Stories on the home page, as a row of circles: "unread" (only what the reader hasn't opened or watched, shown by
-// src/scripts/app.ts when there is some), "today" (the day's news), then each of today's stories on its own.
-// Story circles carry no caption, only the picture; the headline is the link's accessible name.
-// Circles of stories already read or watched turn grey.
+// Stories on the home page: four circles, each playing a set in the player (src/pages/today/): "new" (arrived since
+// the last visit), "unseen" (not opened or watched yet), "today" (the last 24 hours) and "all" (the last three days).
+// src/scripts/app.ts counts the personal ones in the browser; a circle turns grey once everything in it was seen.
+// data-recent lists the stories the player carries, newest first, today's marked with a "t".
 import Icon from './Icon.astro';
-import { faNum, recentPosts, sized, todayPosts, url } from '../lib/posts';
-const posts = todayPosts();
+import { faNum, recentPosts, todayPosts, url } from '../lib/posts';
+const today = new Set(todayPosts().map((p) => p.id));
 const recent = recentPosts();
+const sets = [
+  { set: 'new', icon: 'sparkles', label: 'تازه', count: null },
+  { set: 'unseen', icon: 'eye', label: 'نخوانده', count: null },
+  { set: 'today', icon: 'play', label: 'امروز', count: today.size },
+  { set: 'all', icon: 'stories', label: 'همه', count: recent.length },
+] as const;
 ---
 {
-  posts.length > 0 && (
-    <nav class="rail" aria-label="استوری خبرها" data-rail data-recent={recent.map((p) => p.id).join(',')}>
-      <a class="story-new" href={url('today/?s=new')} data-rail-new hidden>
-        <span class="ring"><span><Icon name="sparkles" /></span></span>
-        <small>نخوانده · <span data-rail-new-count></span></small>
-      </a>
-      <a class="story-day" href={url('today/')} aria-label={`پخش همه‌ی ${faNum(posts.length)} خبر امروز`}>
-        <span class="ring"><span><Icon name="play" /></span></span>
-        <small>امروز · {faNum(posts.length)}</small>
-      </a>
-      {posts.map((p) => (
-        <a href={`${url('today/')}#${p.id}`} data-id={p.id} aria-label={p.article.title} title={p.article.title}>
-          <span class="ring">
-            {p.cover ? <img src={sized(p.cover.src || p.cover.poster, 'small')} alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer" /> : <span><Icon name="news" /></span>}
-          </span>
+  recent.length > 0 && (
+    <nav class="rail" aria-label="استوری خبرها" data-rail data-recent={recent.map((p) => `${p.id}${today.has(p.id) ? 't' : ''}`).join(',')}>
+      {sets.map((s) => (
+        <a class={`story-${s.set}`} href={url(s.set === 'today' ? 'today/' : `today/?s=${s.set}`)} data-rail-set={s.set} aria-label={s.count != null ? `${s.label} · ${faNum(s.count)} خبر` : s.label}>
+          <span class="ring"><span><Icon name={s.icon} /></span></span>
+          <small>{s.label}<span data-rail-count>{s.count != null && ` · ${faNum(s.count)}`}</span></small>
         </a>
       ))}
     </nav>

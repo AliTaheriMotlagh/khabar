@@ -1,6 +1,7 @@
 // Client behaviour for every page. Everything is progressive: the site works without JS.
-import { $, $$, BASE, PAGE_CACHE, getSaved, relTime, store, toast, type Entry } from './core';
-import { UNREAD_MAX, award, markNew, recordRead, renderMe, unreadTest } from './game';
+import { $, $$, BASE, PAGE_CACHE, fmtNum, getSaved, relTime, store, toast, type Entry } from './core';
+import { award, markNew, pickStories, recordRead, renderMe, storySet, unreadTest, type StoryItem } from './game';
+import { SITE } from '../site';
 import { watchMedia } from './media';
 import { initPeek, peek } from './peek';
 import { initReader, readerProgress, stepSize, toggleFocus } from './reader';
@@ -127,11 +128,17 @@ function toggleSave(btn: HTMLElement) {
 }
 
 // ---------- share / copy ----------
+/** Shared links always point at the primary site (a mirror's address would split the story's audience and ranking). */
+const primary = (urlStr: string) => {
+  const u = new URL(urlStr, location.href);
+  return u.origin === location.origin ? new URL(u.pathname.slice(BASE.length).replace(/^\//, '') + u.search, `${SITE.url}/`).href : u.href;
+};
 async function share(urlStr: string, title: string) {
-  const full = new URL(urlStr, location.href).href;
+  const full = primary(urlStr);
   if (navigator.share) {
     try {
-      await navigator.share({ title, url: full });
+      // Messengers keep the text and drop the title: the headline and the site's name go in the text.
+      await navigator.share({ title, text: `${title}\n— ${SITE.name}`, url: full });
       award('share');
       return;
     } catch (e) {
@@ -170,7 +177,7 @@ document.addEventListener('click', (e) => {
   const sh = t.closest<HTMLElement>('[data-share]');
   if (sh) return void share(sh.dataset.url!, sh.dataset.title ?? document.title);
   const cp = t.closest<HTMLElement>('[data-copy]');
-  if (cp) return void copy(new URL(cp.dataset.copy!, location.href).href);
+  if (cp) return void copy(primary(cp.dataset.copy!));
   const view = t.closest<HTMLElement>('[data-set-view]');
   if (view) return saveSettings({ view: view.dataset.setView! });
   const gallery = t.closest<HTMLElement>('.gallery');
@@ -317,20 +324,22 @@ if ('serviceWorker' in navigator && location.hostname !== 'localhost') {
   addEventListener('load', () => navigator.serviceWorker.register(`${BASE}/sw.js`).catch(() => {}));
 }
 
-// ---------- story rail (home): grey out what's done, offer the unread story when there is some ----------
+// ---------- story rail (home): count the personal stories, grey out the ones with nothing left to watch ----------
 function renderRail() {
   const rail = $('[data-rail]');
   if (!rail) return;
+  const items: StoryItem[] = (rail.dataset.recent ?? '').split(',').filter(Boolean).map((v) => ({ id: parseInt(v, 10), today: v.endsWith('t') }));
   const unread = unreadTest();
-  $$('[data-id]', rail).forEach((a) => a.classList.toggle('seen', !unread(Number(a.dataset.id))));
-  const n = Math.min(UNREAD_MAX, (rail.dataset.recent ?? '').split(',').filter((id) => id && unread(Number(id))).length);
-  const link = $('[data-rail-new]', rail)!;
-  const appeared = link.hidden && n > 0;
-  link.hidden = !n;
-  // Scroll snapping keeps the circle that used to be first in view, which would push the new one off screen.
-  if (appeared) rail.scrollLeft = 0;
-  $('[data-rail-new-count]', link)!.textContent = n.toLocaleString('fa-IR');
-  link.setAttribute('aria-label', `${n.toLocaleString('fa-IR')} خبر نخوانده، پشت سر هم`);
+  for (const a of $$<HTMLAnchorElement>('[data-rail-set]', rail)) {
+    const set = storySet(a.dataset.railSet);
+    const picked = pickStories(set, items);
+    a.classList.toggle('seen', !picked.some((i) => unread(i.id)));
+    if (set !== 'new' && set !== 'unseen') continue;
+    const n = picked.length;
+    const label = $('small', a)!.firstChild!.textContent!;
+    $('[data-rail-count]', a)!.textContent = ` · ${fmtNum(n)}`;
+    a.setAttribute('aria-label', `${label} · ${fmtNum(n)} خبر`);
+  }
 }
 // Coming back from the player (bfcache) shows what was just watched.
 addEventListener('pageshow', (e) => e.persisted && renderRail());

@@ -27,6 +27,12 @@ const shareUrl = abs(`p/${post.id}/`);
 const enc = encodeURIComponent;
 const ownMedia = (post.media ?? []).length > 0;
 const rel = related(post);
+// X's video addresses are stable (Telegram's are signed and expire), so only those are offered to search as a video.
+const video = post.gallery.find((m) => m.type === 'video' && !m.gif && m.src && /^https:\/\/video\.twimg\.com\//.test(m.src));
+const isoDuration = (d: unknown) => {
+  const n = typeof d === 'number' ? d : typeof d === 'string' && /^\d+:\d{2}$/.test(d) ? d.split(':').reduce((t, x) => t * 60 + Number(x), 0) : 0;
+  return n > 0 ? `PT${Math.round(n)}S` : undefined;
+};
 
 const jsonLd = [
   {
@@ -46,6 +52,18 @@ const jsonLd = [
     publisher: { '@id': `${SITE.url}/#org` },
     isBasedOn: post.source?.url ?? post.url,
     sameAs: post.url,
+    ...(video && {
+      video: {
+        '@type': 'VideoObject',
+        name: a.title.slice(0, 110),
+        description,
+        thumbnailUrl: [sized(video.poster, 'large') || coverSrc || abs('og.png')],
+        uploadDate: post.date,
+        contentUrl: video.src,
+        duration: isoDuration(video.duration),
+        inLanguage: 'fa-IR',
+      },
+    }),
   },
   {
     '@context': 'https://schema.org',
