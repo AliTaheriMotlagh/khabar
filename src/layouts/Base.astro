@@ -1,7 +1,7 @@
 ---
 import '../styles/global.css';
 import { SITE } from '../site';
-import { abs, url } from '../lib/posts';
+import { abs, feedRev, url } from '../lib/posts';
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
 import Settings from '../components/Settings.astro';
@@ -25,6 +25,8 @@ interface Props {
 }
 const { title, description = SITE.description, image, imageAlt, type = 'website', published, modified, section, tags = [], jsonLd = [], noindex, progress } = Astro.props;
 
+// Open pages compare this with /build.json to notice newer news (src/scripts/social.ts).
+const rev = feedRev();
 const fullTitle = title ? `${title} | ${SITE.name}` : `${SITE.name} — ${SITE.tagline}`;
 // Canonical always points at the primary domain, so the GitHub Pages mirror never competes with it in search.
 const base = import.meta.env.BASE_URL.replace(/\/$/, '');
@@ -57,7 +59,7 @@ const ld = [
 ];
 ---
 <!doctype html>
-<html lang="fa" dir="rtl" data-theme="light" data-view="cards" data-media="show" data-size="m" data-spacing="m" data-focus="off">
+<html lang="fa" dir="rtl" data-build-latest={rev.latest} data-build-count={rev.count} data-theme="light" data-view="cards" data-media="show" data-size="m" data-spacing="m" data-focus="off">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
@@ -126,6 +128,7 @@ const ld = [
     <a class="skip" href="#main">رفتن به محتوا</a>
     {progress && <div class="progress" aria-hidden="true"><i></i></div>}
     <Header />
+    <button class="fresh-pill" type="button" data-fresh hidden><Icon name="sparkles" /> خبرهای تازه رسید — نمایش</button>
     <div class="offline-bar" data-offline hidden><Icon name="wifi-off" /> آفلاین هستید — صفحه‌هایی که قبلاً دیده‌اید و ذخیره‌ها در دسترس‌اند.</div>
     <main id="main">
       <slot />

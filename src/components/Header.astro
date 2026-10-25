@@ -21,6 +21,7 @@ const nav = [
       {nav.map((n) => <a href={n.href} aria-current={here(n.href)}>{n.label}</a>)}
     </nav>
     <div class="tools">
+      <button class="icon-btn" type="button" data-sync hidden aria-label="به‌روزرسانی از کانال" title="به‌روزرسانی از کانال"><Icon name="refresh" /></button>
       <a class="icon-btn" href={url('search/')} aria-label="جستجو" title="جستجو (/)"><Icon name="search" /></a>
       <button class="icon-btn" type="button" data-open-chat aria-label="گفتگوی زنده" title="گفتگوی زنده">
         <Icon name="chat" />

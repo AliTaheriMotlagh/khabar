@@ -10,31 +10,49 @@ OPENER_RE = re.compile(
 WHY_RE = re.compile(r"^\s*(چرا مهمه[؟?]?|اهمیتش اینه که)\s*")
 SENTENCE_END_RE = re.compile(r"(?<=[.!؟?])\s+")
 
-# (keywords matched case-insensitively in English or Persian text) → Persian tag
+# Keywords → Persian tag. Matched as whole words in either language (see _matcher), so «اپل» never matches «اپلیکیشن»
+# and "ring" never matches "during". Prefer names and specific phrases over common words: one stray word mislabels a story.
 # No "هوش مصنوعی" topic: the whole channel is about AI, so it would sit on every story and say nothing.
 TOPICS: list[tuple[str, tuple[str, ...]]] = [
-    ("اوپن‌ای‌آی", ("openai", "chatgpt", "sam altman", "اوپن", "چت‌جی‌پی‌تی")),
-    ("آنتروپیک", ("anthropic", "claude", "آنتروپیک", "کلاد")),
-    ("گوگل", ("google", "gemini", "deepmind", "android", "گوگل", "جمنای")),
-    ("انویدیا", ("nvidia", "jensen", "انویدیا")),
-    ("اپل", ("apple", "iphone", "ipad", "macbook", "vision pro", "اپل", "آیفون")),
-    ("مایکروسافت", ("microsoft", "copilot", "windows", "مایکروسافت")),
-    ("متا", ("meta ", "facebook", "instagram", "whatsapp", "zuckerberg", "متا ")),
-    ("ایلان ماسک", ("elon", "musk", "tesla", "spacex", "starship", "xai", "grok", "neuralink", "ماسک", "تسلا")),
-    ("آمازون", ("amazon", "aws", "bezos", "آمازون")),
+    ("اوپن‌ای‌آی", ("openai", "chatgpt", "gpt", "codex", "sora", "sam altman", "altman", "اوپن‌ای‌آی", "اوپن ای آی",
+                   "اوپن‌اِی‌آی", "چت‌جی‌پی‌تی", "چت جی پی تی", "جی‌پی‌تی", "سورا", "آلتمن")),
+    ("آنتروپیک", ("anthropic", "claude", "opus", "dario amodei", "آنتروپیک", "انتروپیک", "کلود", "اوپوس", "آمودی")),
+    ("گوگل", ("google", "gemini", "deepmind", "alphabet", "sundar pichai", "android", "waymo", "گوگل", "جمینای", "جمنای",
+              "جمینی", "دیپ‌مایند", "دیپ مایند", "وِیمو", "ویمو")),
+    ("انویدیا", ("nvidia", "jensen huang", "انویدیا", "جنسن هوانگ", "جنیسن هوانگ")),
+    ("اپل", ("apple", "iphone", "ipad", "macbook", "vision pro", "siri", "tim cook", "اپل", "آیفون", "سیری", "تیم کوک")),
+    ("مایکروسافت", ("microsoft", "copilot", "satya nadella", "مایکروسافت", "کوپایلت", "ساتیا نادلا")),
+    ("متا", ("meta", "facebook", "instagram", "whatsapp", "zuckerberg", "llama", "متا", "فیسبوک", "فیس‌بوک",
+             "اینستاگرام", "واتساپ", "زاکربرگ")),
+    ("ایلان ماسک", ("elon", "musk", "tesla", "spacex", "starship", "xai", "grok", "neuralink", "ایلان", "ماسک", "تسلا",
+                    "اسپیس‌ایکس", "اسپیس ایکس", "گراک", "گروک", "نورالینک")),
+    ("آمازون", ("amazon", "aws", "bezos", "alexa", "آمازون", "بزوس", "الکسا")),
     ("سامسونگ", ("samsung", "سامسونگ")),
-    ("دیپ‌سیک", ("deepseek", "qwen", "alibaba", "دیپ‌سیک")),
-    ("رباتیک", ("robot", "humanoid", "ربات")),
-    ("تراشه", ("chip", "gpu", "semiconductor", "tsmc", "تراشه", "چیپ")),
-    ("گجت", ("wearable", "ring", "glasses", "headset", "gadget", "گجت", "انگشتر", "عینک")),
-    ("فضا", ("nasa", "space", "rocket", "mars", "moon", "satellite", "فضا", "موشک", "مریخ")),
-    ("سلامت", ("health", "medical", "cancer", "drug", "brain", "fda", "سلامت", "پزشکی", "سرطان", "مغز")),
-    ("کوانتوم", ("quantum", "کوانتوم")),
-    ("رمزارز", ("bitcoin", "crypto", "ethereum", "بیت‌کوین", "رمزارز")),
-    ("استارتاپ", ("startup", "raises", "funding", "valuation", "series a", "series b", "استارتاپ", "سرمایه‌گذاری")),
-    ("امنیت", ("security", "hack", "breach", "malware", "privacy", "امنیت", "هک", "حریم خصوصی")),
+    ("چین", ("china", "chinese", "deepseek", "qwen", "alibaba", "kimi", "moonshot", "minimax", "zhipu", "bytedance",
+             "baidu", "tencent", "huawei", "چین", "چینی", "دیپ‌سیک", "دیپ سیک", "کیوِن", "علی‌بابا", "کیمی", "مون‌شات",
+             "مونشات", "بایت‌دنس", "هواوی")),
+    ("کدنویسی", ("coding", "programming", "programmer", "developer", "claude code", "cursor", "github", "vibe coding",
+                 "کدنویسی", "کد نویسی", "برنامه‌نویسی", "برنامه‌نویس", "برنامه نویسی", "کد زدن", "گیت‌هاب")),
+    ("رباتیک", ("robot", "robotics", "humanoid", "optimus", "figure ai", "unitree", "boston dynamics", "ربات",
+                "رباتیک", "انسان‌نما", "یونیتری")),
+    ("تراشه", ("chip", "gpu", "semiconductor", "tsmc", "asml", "datacenter", "data center", "تراشه", "چیپ",
+               "پردازنده", "دیتاسنتر", "مرکز داده")),
+    ("گجت", ("wearable", "smart ring", "oura", "smart glasses", "ai glasses", "ray-ban", "headset", "gadget", "گجت",
+             "انگشتر هوشمند", "عینک هوشمند", "هدست", "پوشیدنی")),
+    ("فضا", ("nasa", "rocket", "mars", "satellite", "orbit", "astronaut", "telescope", "starship", "ناسا", "موشک", "مریخ",
+             "ماهواره", "فضانورد", "فضاپیما", "فضایی", "تلسکوپ")),
+    ("سلامت", ("health", "healthcare", "medical", "medicine", "cancer", "disease", "patient", "clinical", "fda",
+               "drug discovery", "سلامت", "پزشکی", "پزشک", "سرطان", "بیماری", "بیمار", "درمان", "دارو")),
+    ("کوانتوم", ("quantum", "کوانتوم", "کوانتومی")),
+    ("رمزارز", ("bitcoin", "crypto", "ethereum", "stablecoin", "بیت‌کوین", "بیت کوین", "رمزارز", "کریپتو", "اتریوم")),
+    ("استارتاپ", ("startup", "funding round", "seed round", "series a", "series b", "series c", "unicorn", "استارتاپ",
+                  "یونیکورن", "جذب سرمایه")),
+    ("امنیت", ("cybersecurity", "security", "hacker", "hackers", "hacked", "breach", "malware", "ransomware",
+               "vulnerability", "exploit", "zero-day", "امنیت", "امنیتی", "سایبری", "هکر", "هک", "بدافزار", "باج‌افزار",
+               "آسیب‌پذیری", "حفره امنیتی")),
+    ("اشتغال", ("layoff", "layoffs", "jobs", "unemployment", "workforce", "اخراج", "تعدیل نیرو", "بیکاری", "شغل",
+                "مشاغل", "بازار کار")),
 ]
-
 
 def split_gholam(text: str) -> tuple[list[str], Optional[str]]:
     """Return (paragraphs, why_it_matters)."""
@@ -98,16 +116,45 @@ def source_title(post_text: str, links: list[dict], preview: Optional[dict]) -> 
     return clip(line, 140) if line else None
 
 
+# A Persian word continues through letters and ZWNJ (‌), so «اوپن‌سورس» is one word and «اوپن» alone won't match it.
+_FA_LETTER = r"[\u0600-\u06FF\u200c]"
+# Suffixes a Persian keyword may take: «امنیتی», «ربات‌ها», «گوگلِ» … but not «فضای» (as in «فضای مجازی», cyberspace).
+_FA_SUFFIX = r"(?:\u200c?(?:ها|های|هایی|ش|شون|شان|اش|م|ت|ه)|ها|های)?"
+
+
 def _matcher(word: str):
-    word = word.strip()
-    if word.isascii():  # whole words only, so "ring" doesn't match "during"
-        return re.compile(r"(?<![a-z])" + re.escape(word) + r"(?![a-z])").search
-    return lambda blob: word in blob
+    """Count of whole-word matches. English takes plurals and possessives ("robots", "OpenAI's")."""
+    word = word.strip().lower()
+    if word.isascii():
+        return re.compile(r"(?<![a-z0-9])" + re.escape(word) + r"(?:s|es|'s|’s)?(?![a-z0-9])").findall
+    return re.compile(r"(?<!" + _FA_LETTER + r")" + re.escape(word) + _FA_SUFFIX + r"(?!" + _FA_LETTER + r")").findall
+
+
+def _norm(text: str) -> str:
+    """Lowercase, and Arabic yeh/kaf → Persian so either spelling matches."""
+    return text.lower().replace("ي", "ی").replace("ك", "ک")
 
 
 _TOPIC_MATCHERS = [(tag, [_matcher(w) for w in words]) for tag, words in TOPICS]
+MAX_TAGS = 3
+TITLE_WEIGHT = 3
 
 
-def tags(*texts: str) -> list[str]:
-    blob = " ".join(t for t in texts if t).lower()
-    return [tag for tag, ms in _TOPIC_MATCHERS if any(m(blob) for m in ms)][:5]
+def tags(*texts: str, title: str = "") -> list[str]:
+    """Topics a story is about, most relevant first (the first one is its section).
+
+    A keyword in the title counts TITLE_WEIGHT times, in the rest once. A topic needs 2 points: named in the title, or
+    at least twice in the text (Gholam's Persian and the English source both naming it). One passing mention ("faster
+    than OpenAI's model") doesn't make a Kimi story an OpenAI story; nor does a topic far behind the main one."""
+    head = _norm(title)
+    body = _norm(" ".join(t for t in (title, *texts) if t))
+    scores = []
+    for i, (tag, ms) in enumerate(_TOPIC_MATCHERS):
+        score = sum(TITLE_WEIGHT * len(m(head)) + len(m(body)) for m in ms) if head else sum(len(m(body)) for m in ms)
+        if score:
+            scores.append((score, -i, tag))
+    if not scores:
+        return []
+    best = max(scores)[0]
+    keep = [(sc, i, tag) for sc, i, tag in scores if sc >= 2 and sc * 4 >= best]
+    return [tag for _, _, tag in sorted(keep, reverse=True)][:MAX_TAGS]

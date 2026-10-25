@@ -44,7 +44,8 @@ export function toast(msg: string, kind: 'info' | 'reward' = 'info') {
   el.dataset.kind = kind;
   el.classList.add('show');
   clearTimeout(toastTimer);
-  toastTimer = window.setTimeout(() => el.classList.remove('show'), kind === 'reward' ? 3200 : 2200);
+  // Long enough to read: a longer sentence stays longer.
+  toastTimer = window.setTimeout(() => el.classList.remove('show'), Math.max(kind === 'reward' ? 3200 : 2200, msg.length * 60));
 }
 
 // ---------- guest identity (no signup) ----------

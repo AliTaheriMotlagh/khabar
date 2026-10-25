@@ -109,3 +109,44 @@ test('CORS preflight', async () => {
   assert.equal(res.status, 204);
   assert.equal(res.headers.get('access-control-allow-origin'), '*');
 });
+
+test('sync: starts one crawl, not while one runs or right after one', async () => {
+  const off = await import('../api/sync.js?off');
+  assert.equal((await call(off.GET, 'GET', '/api/sync')).status, 501, 'no token: the button stays hidden');
+
+  process.env.GITHUB_DISPATCH_TOKEN = 'gh-token';
+  const sync = await import('../api/sync.js?on');
+  const realFetch = globalThis.fetch;
+  let runs = [];
+  const dispatched = [];
+  globalThis.fetch = async (url, init = {}) => {
+    assert.equal(init.headers.Authorization, 'Bearer gh-token');
+    if (String(url).endsWith('/dispatches')) {
+      dispatched.push(JSON.parse(init.body));
+      runs = [{ status: 'queued' }, ...runs];
+      return new Response(null, { status: 204 });
+    }
+    return Response.json({ workflow_runs: runs });
+  };
+  try {
+    const hourAgo = new Date(Date.now() - 36e5).toISOString();
+    runs = [{ status: 'completed', conclusion: 'success', updated_at: hourAgo }];
+    const st = await call(sync.GET, 'GET', '/api/sync');
+    assert.deepEqual(st.body, { running: false, last: hourAgo });
+    assert.match(st.res.headers.get('cache-control'), /s-maxage=15/);
+
+    const first = await call(sync.POST, 'POST', '/api/sync', { guest: A });
+    assert.equal(first.body.queued, true);
+    assert.deepEqual(dispatched, [{ ref: 'main' }]);
+    const again = await call(sync.POST, 'POST', '/api/sync', { guest: B });
+    assert.deepEqual([again.body.queued, again.body.running], [false, true], 'already queued: nothing new starts');
+
+    runs = [{ status: 'completed', conclusion: 'success', updated_at: new Date().toISOString() }];
+    assert.equal((await call(sync.POST, 'POST', '/api/sync', { guest: B })).body.queued, false, 'a crawl just finished');
+    assert.equal(dispatched.length, 1);
+    assert.equal((await call(sync.POST, 'POST', '/api/sync', { guest: 'nope' })).status, 400);
+  } finally {
+    globalThis.fetch = realFetch;
+    delete process.env.GITHUB_DISPATCH_TOKEN;
+  }
+});

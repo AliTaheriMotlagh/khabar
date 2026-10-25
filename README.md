@@ -36,6 +36,10 @@ npm test && .venv/bin/python -m pytest -q pipeline/tests
    *Azure AI Speech* resource (F0 tier, 500K characters a month) and set `AZURE_SPEECH_KEY` and `AZURE_SPEECH_REGION`
    (e.g. `westeurope`); optionally `TTS_VOICE` (default `fa-IR-DilaraNeural`, or `fa-IR-FaridNeural`). Each paragraph is
    synthesized once and then served from the CDN. Without it, devices that have a Persian voice (Android, most desktops) still listen.
+4. "Update from the channel" button (↻ in the header): create a fine-grained GitHub token with *Actions: Read and write*
+   on this repo only and set it as `GITHUB_DISPATCH_TOKEN`. A tap starts the crawl workflow, unless one is queued, running
+   or finished in the last 3 minutes (`SYNC_COOLDOWN`); the page then shows "news arrived" once the new build is live.
+   Without the token the button stays hidden. `GITHUB_REPO` (owner/name) overrides the repo Vercel deploys from.
 
 **GitHub:** the workflow `.github/workflows/site.yml` crawls the channel every 20 minutes, commits new posts to
 `main` (which redeploys Vercel), and publishes a mirror on GitHub Pages: *Settings → Pages → Source: GitHub Actions*.

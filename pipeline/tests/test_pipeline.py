@@ -95,9 +95,26 @@ def test_shape():
     title = shape.headline(paras)
     assert title.startswith("وسط کنفرانس بزرگ انویدیا"), title
     assert not title.endswith(".")
-    assert "انویدیا" in shape.tags(c["text"])
+    assert shape.tags(c["text"], title=title)[0] == "انویدیا"
     assert shape.tags("during the morning") == []  # whole-word match: no false "ring" → گجت
-    assert "گجت" in shape.tags("Plato: the ring for near-silent speech")
+    assert "گجت" in shape.tags("Plato: smart glasses for near-silent speech", "یه عینک هوشمند تازه")
+
+
+def test_tags_are_whole_words_and_need_more_than_a_passing_mention():
+    # «فضای مجازی» is cyberspace, «اپلیکیشن» an app, «متاسفانه» "unfortunately", «اوپن‌سورس» open source.
+    for text in ("فضای مجازی شلوغه", "این اپلیکیشن رو ببین", "متاسفانه نشد", "یه مدل اوپن‌سورس"):
+        assert shape.tags(text, text) == [], text
+    assert shape.tags("Moonshot raises concerns", "Moonshot raises concerns") == ["چین"]  # not space, not funding
+    # Named in Gholam's Persian and the English source: the topic. A single comparison: not a topic.
+    kimi = "Moonshot's Kimi K3.1 beats OpenAI's latest model on 6 benchmarks"
+    assert shape.tags(kimi, "مون‌شات با کیمی حسابی گردوخاک کرده") == ["چین"]
+    assert shape.tags("یه حفره امنیتی تو کروم", "hackers exploit a Chrome zero-day", title="حفره امنیتی کروم") == ["امنیت"]
+    assert shape.tags("ربات‌های انسان‌نما", "Humanoid robots are coming", title="ربات‌ها")[0] == "رباتیک"
+
+
+def test_digest_has_no_tags():
+    post = {"id": 1, "text": "24-hour news summary.\n1 — OpenAI, Google, Apple and Nvidia …", "digest": True, "links": []}
+    assert run.build_article(post)["tags"] == []
 
 
 def test_headline_is_never_cut_mid_sentence():
@@ -174,7 +191,7 @@ def test_resigned_cdn_url_alone_is_not_a_change():
 
 def test_no_catch_all_ai_tag():
     assert "هوش مصنوعی" not in shape.tags("OpenAI's new LLM agent", "یه مدل هوش مصنوعی تازه")
-    assert "اوپن‌ای‌آی" in shape.tags("OpenAI's new LLM agent")
+    assert "اوپن‌ای‌آی" in shape.tags("OpenAI's new LLM agent", title="OpenAI's new LLM agent")
 
 
 def test_backfill_checks_old_posts_once(tmp_path, monkeypatch):

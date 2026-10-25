@@ -167,6 +167,12 @@ export function getPosts(): Post[] {
 /** What the lists show (home, pages, topics, today, feeds): only the channel's Persian posts. */
 export const getFeed = () => getPosts().filter((p) => p.listed);
 export const getStories = () => getFeed().filter((p) => p.kind !== 'digest');
+/** What a newer build would bring: a newer listed post, or more of them (a brief turns listed once Gholam's Persian
+ *  arrives). An open page compares it with /build.json to offer the news without a manual reload. */
+export function feedRev() {
+  const feed = getFeed();
+  return { latest: feed[0]?.id ?? 0, count: feed.length };
+}
 /** The day in one sitting (the daily player and its teaser): stories and briefs from the 24 hours before the newest one,
  *  at least `min` of them on a quiet day. */
 export function todayPosts(min = 8, max = 40): Post[] {

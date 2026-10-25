@@ -1,7 +1,7 @@
 // Guest features backed by the /api functions: reactions, comments, live presence & visits, chat, leaderboard.
 // If the API is missing or unreachable, these parts stay hidden and the rest of the site works as usual.
 import { SITE } from '../site';
-import { $, $$, compact, esc, fmtNum, guest, hue, initial, myName, relTime, setMyName, store, toast } from './core';
+import { $, $$, BASE, compact, esc, fmtNum, guest, hue, initial, myName, relTime, setMyName, store, toast } from './core';
 import { award } from './game';
 
 let available = true;
@@ -367,6 +367,85 @@ async function loadLeaders() {
   } catch {}
 }
 
+// ---------- sync: a reader asks for a crawl now; any open page offers newer news once a build has it ----------
+type Sync = { running: boolean; last: string | null; queued?: boolean };
+const built = { latest: Number(document.documentElement.dataset.buildLatest) || 0, count: Number(document.documentElement.dataset.buildCount) || 0 };
+const syncBtns = () => $$<HTMLButtonElement>('[data-sync]');
+const setBusy = (on: boolean) => syncBtns().forEach((b) => b.toggleAttribute('data-busy', on));
+let fresh = false;
+let lastCheck = 0;
+
+/** True once the live site has more than this page: then the "news arrived" pill shows. */
+async function checkBuild(): Promise<boolean> {
+  if (fresh) return true;
+  lastCheck = Date.now();
+  try {
+    const b = await fetch(`${BASE}/build.json?t=${Date.now()}`, { cache: 'no-store' }).then((r) => r.json());
+    fresh = b.latest > built.latest || b.count > built.count;
+  } catch {}
+  if (fresh) $$('[data-fresh]').forEach((el) => (el.hidden = false));
+  return fresh;
+}
+
+let watchTimer: number | undefined;
+/** Wait for the crawl to finish and the site to publish what it found. `asked`: the reader tapped, so say if nothing came. */
+function watch(asked: boolean) {
+  const since = Date.now();
+  let doneAt = 0;
+  setBusy(true);
+  clearInterval(watchTimer);
+  const stop = (found: boolean) => {
+    clearInterval(watchTimer);
+    setBusy(false);
+    if (!found && asked) toast('خبر تازه‌ای در کانال نبود؛ همه‌ی خبرها همین‌جاست');
+  };
+  watchTimer = window.setInterval(async () => {
+    if (document.visibilityState !== 'visible') return;
+    if (await checkBuild()) return stop(true);
+    // A just-started run takes a few seconds to show up as running, so "not running" only counts after a minute.
+    if (!doneAt && Date.now() - since > 60_000) {
+      try {
+        if (!(await api<Sync>('sync')).running) doneAt = Date.now();
+      } catch {}
+    }
+    // After the crawl, the site needs a few minutes to build and publish what it committed.
+    if ((doneAt && Date.now() - doneAt > 240_000) || Date.now() - since > 900_000) stop(false);
+  }, 20_000);
+}
+
+async function requestSync() {
+  if (syncBtns()[0]?.hasAttribute('data-busy')) return toast('در حال به‌روزرسانی از کانال…');
+  if (await checkBuild()) return toast('خبرهای تازه آماده‌ست؛ دکمه‌ی بالا رو بزنید');
+  setBusy(true);
+  try {
+    const st = await api<Sync>('sync', { method: 'POST', body: { guest: guest() } });
+    if (st.queued) toast('درخواست ثبت شد؛ خبرهای تازه‌ی کانال تا چند دقیقه‌ی دیگه می‌رسن');
+    else if (st.running) toast('همین حالا در حال به‌روزرسانی از کانال است…');
+    else toast(`سایت ${st.last ? relTime(st.last) : 'همین تازگی'} با کانال هماهنگ شده`);
+    // Even a crawl that just finished may still be on its way to the site.
+    watch(st.queued || st.running);
+  } catch (e) {
+    setBusy(false);
+    toast(slowDown(e) ? 'چند دقیقه‌ی دیگه دوباره امتحان کنید' : 'الان نشد؛ کمی بعد دوباره امتحان کنید');
+  }
+}
+
+async function initSync() {
+  // A page served from the offline cache on a slow connection can be hours old: say so right away.
+  checkBuild();
+  document.addEventListener('visibilitychange', () => document.visibilityState === 'visible' && Date.now() - lastCheck > 120_000 && checkBuild());
+  $$('[data-fresh]').forEach((b) => b.addEventListener('click', () => location.reload()));
+  if (!syncBtns().length) return;
+  try {
+    const st = await api<Sync>('sync'); // 501 when the site has no GitHub token: the button stays hidden
+    syncBtns().forEach((b) => {
+      b.hidden = false;
+      b.addEventListener('click', requestSync);
+    });
+    if (st.running) watch(false);
+  } catch {}
+}
+
 // ---------- wiring ----------
 document.addEventListener('click', (e) => {
   const t = e.target as Element;
@@ -379,5 +458,6 @@ export function initSocial() {
   initChat();
   loadEngage();
   loadLeaders();
+  initSync();
   beat(true).then(() => available && startBeats());
 }

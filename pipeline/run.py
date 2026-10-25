@@ -64,7 +64,8 @@ def build_article(post: dict) -> dict:
         "source_title": src_title if src_title != title else None,
         "body": paras,
         "why": why,
-        "tags": shape.tags(english, gholam.get("text", "")),
+        # The digest names every story of the day, so it would land in every topic: it has none.
+        "tags": [] if post.get("digest") else shape.tags(english, gholam.get("text", ""), title=f"{title} {src_title or ''}"),
     }
 
 
