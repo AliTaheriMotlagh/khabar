@@ -14,6 +14,8 @@ import re
 from datetime import datetime, timezone
 from typing import Optional
 
+import httpx
+
 from . import config, enrich, shape, telegram
 
 DIGEST_RE = re.compile(r"(خلاصه\s+اخبار\s*(?:۲۴|24)\s*ساعت|24[-\s]?hour\s+(?:news\s+summary|daily\s+digest)|daily\s+digest)", re.I)
@@ -90,7 +92,11 @@ def process(http, tp: telegram.TgPost, refresh_urls: bool = False) -> None:
     # Gholam's comment: keep checking until he replies (or the post is too old to expect one). He never comments on digests.
     gholam = existing.get("gholam")
     if (not gholam or changed) and not post["digest"] and age_hours(tp.date) < config.GHOLAM_POLL_HOURS:
-        found = telegram.fetch_gholam_comment(http, tp.id)
+        try:
+            found = telegram.fetch_gholam_comment(http, tp.id)
+        except httpx.HTTPError as exc:  # asked again on the next run
+            print(f"  ! discussion fetch failed for {tp.id}: {exc}")
+            found = None
         if found:
             if found["text"] != (gholam or {}).get("text"):
                 print(f"  ✓ gholam comment for {tp.id}")
@@ -146,7 +152,11 @@ def backfill_gholam(http) -> None:
         if not post.get("gholam") and not post.get("digest") and not post.get("gholam_checked"):
             todo.append(post)
     for post in sorted(todo, key=lambda p: p["id"], reverse=True)[: config.GHOLAM_BACKFILL]:
-        found = telegram.fetch_gholam_comment(http, post["id"])
+        try:
+            found = telegram.fetch_gholam_comment(http, post["id"])
+        except httpx.HTTPError as exc:  # not marked as checked: the next run asks again
+            print(f"  ! discussion fetch failed for {post['id']}: {exc}")
+            continue
         if found:
             print(f"  ✓ gholam comment for {post['id']} (backfill)")
             post["gholam"] = found

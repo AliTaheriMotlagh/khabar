@@ -94,3 +94,21 @@ test('stories: the rail and the player carry the same recent stories, newest fir
   const todayLink = home.match(/<a class="story-today"[^>]*>/)[0];
   assert.equal(todayLink.includes(' hidden'), todayBuilt === 0, todayLink);
 });
+
+test('tags: each topic is paged like the archive, every post once, newest first', { skip }, () => {
+  const tags = fs.readdirSync(path.join(dist, 'tag'));
+  assert.ok(tags.length > 0);
+  for (const tag of tags) {
+    const files = [`tag/${tag}/index.html`];
+    for (let n = 2; fs.existsSync(path.join(dist, `tag/${tag}/${n}/index.html`)); n++) files.push(`tag/${tag}/${n}/index.html`);
+    const ids = files.flatMap((f) => timeline(f).filter((r) => r.id).map((r) => r.id));
+    const total = html(files[0]).match(/<span data-num>([^<]+)<\/span> خبر/)[1];
+    assert.equal(total, fa(ids.length), `${tag}: the count covers all its pages`);
+    assert.equal(new Set(ids).size, ids.length, `${tag}: no post twice`);
+    for (let i = 1; i < ids.length; i++) assert.ok(ids[i] < ids[i - 1], `${tag}: ${ids[i]} after ${ids[i - 1]}`);
+    files.forEach((f, i) => {
+      assert.ok(timeline(f).filter((r) => r.id).length <= 20, `${f}: one page at most`);
+      assert.equal(html(f).includes('data-load-more'), i < files.length - 1, `${f}: links to the next page`);
+    });
+  }
+});

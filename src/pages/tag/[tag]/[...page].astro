@@ -1,0 +1,33 @@
+---
+import Base from '../../../layouts/Base.astro';
+import Timeline from '../../../components/Timeline.astro';
+import Sidebar from '../../../components/Sidebar.astro';
+import { SITE } from '../../../site';
+import { getFeed, getTags, tagHref, faNum } from '../../../lib/posts';
+
+// /tag/<tag>/ is the first page, /tag/<tag>/2/ … the older ones (a big topic holds hundreds of posts).
+export function getStaticPaths() {
+  const feed = getFeed();
+  return getTags().flatMap(({ tag }) => {
+    const posts = feed.filter((p) => p.article.tags.includes(tag));
+    const total = Math.ceil(posts.length / SITE.pageSize);
+    return Array.from({ length: total }, (_, i) => ({ params: { tag, page: i ? String(i + 1) : undefined }, props: { posts, page: i + 1, total } }));
+  });
+}
+const { tag } = Astro.params;
+const { posts, page, total } = Astro.props;
+const slice = posts.slice((page - 1) * SITE.pageSize, page * SITE.pageSize);
+const at = (n: number) => tagHref(tag!) + (n > 1 ? `${n}/` : '');
+const prev = page > 1 ? at(page - 1) : null;
+const next = page < total ? at(page + 1) : null;
+const nth = page > 1 ? ` — صفحه‌ی ${faNum(page)}` : '';
+---
+<Base title={`اخبار ${tag}${nth}`} description={`تازه‌ترین اخبار ${tag} با ترجمه‌ی فارسی، تصویر و ویدیو و پیوند به منبع اصلی — ${SITE.name}${nth}`} image={slice.find((p) => p.cover)?.cover?.src}>
+  <div class="container">
+    <header class="page-head"><h1>اخبار {tag}</h1><p><span data-num>{faNum(posts.length)}</span> خبر{page > 1 && ` · صفحه‌ی ${faNum(page)} از ${faNum(total)}`}</p></header>
+    <div class="layout">
+      <div class="col-main"><Timeline posts={slice} all={posts} nextHref={next} prevHref={prev} title={`خط زمانی ${tag}`} /></div>
+      <Sidebar current={tag} />
+    </div>
+  </div>
+</Base>

@@ -6,6 +6,7 @@ Gholam's comments live in the channel's linked discussion group; the public disc
 from __future__ import annotations
 
 import re
+import time
 from dataclasses import dataclass, field
 from typing import Optional
 
@@ -39,10 +40,30 @@ class TgPost:
     forwarded_from: Optional[str] = None
 
 
+class RetryTransport(httpx.HTTPTransport):
+    """t.me and api.fxtwitter.com answer a long backfill with 429s now and then. A failed read is not harmless: a post is
+    checked for Gholam only once and its links are read only once, so wait and ask again instead."""
+
+    def __init__(self, tries: int = 4, wait: float = 2.0) -> None:
+        super().__init__(retries=2)
+        self.tries, self.wait = tries, wait
+
+    def handle_request(self, request: httpx.Request) -> httpx.Response:
+        for attempt in range(1, self.tries + 1):
+            resp = super().handle_request(request)
+            if (resp.status_code != 429 and resp.status_code < 500) or attempt == self.tries:
+                return resp
+            resp.close()
+            after = resp.headers.get("Retry-After", "")
+            time.sleep(min(float(after), 60) if after.isdigit() else self.wait * 2 ** (attempt - 1))
+        raise AssertionError("unreachable")
+
+
 def client() -> httpx.Client:
     return httpx.Client(
         timeout=30,
         follow_redirects=True,
+        transport=RetryTransport(),
         headers={"User-Agent": config.USER_AGENT, "Accept-Language": "en-US,en;q=0.9"},
     )
 
@@ -185,14 +206,10 @@ def fetch_posts(http: httpx.Client, pages: int) -> tuple[dict, list[TgPost]]:
 
 
 def fetch_gholam_comment(http: httpx.Client, post_id: int) -> Optional[dict]:
-    """Return Gholam's reply to a post, or None if he hasn't commented (yet)."""
-    url = f"https://t.me/{config.CHANNEL}/{post_id}?embed=1&discussion=1&comments_limit=30"
-    try:
-        resp = http.get(url)
-        resp.raise_for_status()
-    except httpx.HTTPError as exc:
-        print(f"  ! discussion fetch failed for {post_id}: {exc}")
-        return None
+    """Return Gholam's reply to a post, or None if he hasn't commented (yet). Raises httpx.HTTPError when the discussion
+    could not be read, so a failed look is not mistaken for "no comment"."""
+    resp = http.get(f"https://t.me/{config.CHANNEL}/{post_id}?embed=1&discussion=1&comments_limit=30")
+    resp.raise_for_status()
     return parse_gholam_comment(resp.text)
 
 

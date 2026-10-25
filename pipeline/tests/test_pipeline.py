@@ -218,3 +218,30 @@ def test_backfill_checks_old_posts_once(tmp_path, monkeypatch):
     asked.clear()
     run.backfill_gholam(None)
     assert asked == [], "each post is only checked once"
+
+
+def test_backfill_retries_a_failed_look(tmp_path, monkeypatch):
+    import json
+
+    import httpx
+
+    monkeypatch.setattr(run.config, "POSTS_DIR", tmp_path)
+    run.save({"id": 1, "url": "u", "date": "2026-10-14T19:00:00+00:00", "text": "https://x.com/a/status/1", "links": [], "media": [], "preview": None, "gholam": None})
+
+    def blocked(http, pid):
+        raise httpx.HTTPStatusError("429", request=httpx.Request("GET", "https://t.me"), response=httpx.Response(429))
+
+    monkeypatch.setattr(run.telegram, "fetch_gholam_comment", blocked)
+    run.backfill_gholam(None)
+    assert "gholam_checked" not in json.loads((tmp_path / "1.json").read_text("utf-8")), "a failed look is asked again"
+
+
+def test_client_waits_out_rate_limits(monkeypatch):
+    import httpx
+
+    answers = [httpx.Response(429, headers={"Retry-After": "0"}), httpx.Response(503), httpx.Response(200, text="ok")]
+    monkeypatch.setattr(httpx.HTTPTransport, "handle_request", lambda self, req: answers.pop(0))
+    monkeypatch.setattr(telegram.time, "sleep", lambda s: None)
+    with telegram.client() as http:
+        assert http.get("https://t.me/s/dlmehr").text == "ok"
+    assert not answers
