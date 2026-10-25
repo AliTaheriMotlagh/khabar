@@ -12,7 +12,7 @@
   "site": "🧵 Thread • FxTwitter",
   "title": "Rohan Paul (@rohanpaul_ai)",
   "description": "New Google DeepMind and Cambridge paper shows that an AI agent can discover new math itself, proving exact rules for 11 unsolved Turing machines.\nAI can move from answering human-posed math questions to open-ended discovery, shown by a Gemini-based agent…",
-  "image": "https://cdn4.telesco.pe/file/q4qF6oPJD3uc1WJ129V-ZCm8ojvS3jtTUCe8yVXXFnxtPs5R7DuMRF9SNVQSmoyVata_1UjFHWPfekM8DfeC3cHLvs9sd9P8zQn3I1dBanmujQ3ObtnkIkqUEryHyPLPts_mdRk0hO1VCqn2i9Qd6byZd0Q6HT90POkOFSxOZqpUn4o1WgbcZuShkb_V7GnYJyY2HXYnGOsAW5Ea5fGw6EacUedhRxS9X72rsA8WLiV5VHdaKyX7OgzDmmjs9si-CtJh1WN1Gxou5v4n_gp3kyruibP9ff_2PfOEvCjIkYa9fyLueY5qTPFvorMfe8yM7vpBAzjlFCilAAK8MrR_YQ.jpg"
+  "image": "https://cdn4.telesco.pe/file/t337Xb7Qxgsi8h9acg7FD1pCfrKEPNmQ22sYE1BjY_7mTFVwY-COJvKAGZ-yYK8q16K-HjpRdtewR0sJbrw7ks_9kpF5ylgHXvgSFWZHu6I9aQSAQNX2OAclPD0aMwpJAc5aHZIcFcupkIgawHPA9pzmCF863lza3rLKgaJQkBDUKW8_vEPSIw83fIvuCcqpkG-B9v0dhul0yJxbo0rWur3Q_TtyXw6qIqsQSrW7mM0xijNxz3cIoARtfJUBFnidFlBUVyat517XdGQ0eEq6abQHQ3YaBNmf-v-w-7HH4IP8HzxMV1ERD7w3AthM06-mc9lNPP8TVQws-SUdoYgtCg.jpg"
  },
  "gholam": {
   "text": "ببین رفیق، بچه‌های دیپ‌مایند گوگل و دانشگاه کمبریج یه کار خفن کردن که نشون میده هوش مصنوعی داره قشنگ وارد فاز کشف ناشناخته‌ها میشه. اونا یه ایجنت خفن بر پایه جمینای ساختن که خودش رفته سراغ ۱۱ تا ماشین تورینگِ حل‌نشده از مسئله معروف «سگ‌جان» (Busy Beaver) و واسه اولین بار فرمول‌ها و قواعد جدیدی براشون پیدا کرده. روند کارش هم این‌طوری بوده که اول حالت‌های خاص رو تو شبیه‌ساز تست کرده، بعد پیش‌نویس اثبات ریاضی رو نوشته و در نهایت هم تو محیط رسمی Lean، درستی کار رو مو لای درزش نرفته ثابت کرده. در واقع سیستم از حالت رفع تکلیف و جواب دادن به سوال‌های آدمیزاد دراومده و خودش رسماً دست‌به‌کار کشف فرمول‌های جدید شده.\n\nاهمیتش اینه که هوش مصنوعی داره از یه ماشین پاسخ‌دهنده تبدیل به یه همکار دانشمند میشه که می‌تونه مرزهای علم و ریاضیات رو تنهایی جلو ببره.",
@@ -51,5 +51,5 @@
    "گوگل"
   ]
  },
- "updated": "2026-10-25T06:05:56+00:00"
+ "updated": "2026-10-25T08:50:07+00:00"
 }

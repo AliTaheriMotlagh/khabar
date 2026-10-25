@@ -12,7 +12,7 @@
   "site": "🧵 Thread • FxTwitter",
   "title": "Mark Gadala-Maria (@markgadala)",
   "description": "🚨\nBREAKING: NOW JAVA IS FACING A CRITICAL SECURITY EMERGENCY.\nOracle has issued an OUT-OF-BAND security alert for a dangerous 9.1/10 vulnerability affecting Java and GraalVM.\nAnd the most alarming part? Hackers could exploit vulnerable applications REMOTELY…",
-  "image": "https://cdn4.telesco.pe/file/dK_7t6p5zUhFuAAaHS2N2b3tssWtyxc6uP6_lChVrAskyIa3bpu-ACMCvggub2mrBuSm1_ecNBRMWjhNWiSNEbXDzEobXLIsOEK2dcxkhryF_Yp4dFbHp1XIR5QZi0UUIWGNg6zXQxAOTJM6y_k5yftUlW3tQL3P9IV1tndU3o8BAxmsKsBI7l3q5-ws-VzxxtIMUTGOCSGeQEaprdjGcnEM5SDKnvjC0B1UPR0ycBd4CXIdpBp23tBd_qqcdU2HNB1e9xfpcH51_0T8s4STWXLkC7c7gWEfZt0R0CEy9GWFfjH2P0c0H56j1o9ZN52mxPWSgBBU9_maAQkOPPs_IQ.jpg"
+  "image": "https://cdn4.telesco.pe/file/scu-uJhoKSLkyh_kkK4Is4e-3kAel2U6cDxM0dPnj-_FVJHqjayyJKBk8OcGTJlFqZ8geu0PfhIrwAncMRCJmSYexl3tay8JH0DXTUiKehlvl3moWzHOH8nsTe60vqAfXkuQze5e7NE-Zl107oXjxVTyr4pRGcgLyCEaNfnqgqaXP8QPUUS51IoY7EXHH_eyHU_8Z2jNk7vCXV2XnVUZErgHOKz8rNQNyFKtzlvdPEnzBZGFHSxFAIpjFHQLImQoTzZA1MQRHtGpaD2P_nBM6xogoHwrWcmRSich_d_xW2UYOXuzWZlRYV83-dEBpDK0aWxgUJK1EFAPAP4eb0HSig.jpg"
  },
  "gholam": {
   "text": "ببین رفیق، شرکت اوراکل یه آژیر قرمز درست‌وحسابی کشیده و یه آپدیت اضطراری فوری داده بیرون، چون یه حفره امنیتی فوق‌العاده خطرناک با نمره ۹.۱ از ۱۰ توی جاوا و GraalVM پیدا شده. داستان از این قراره که این باگ به اسم CVE-2026-91403 توی بخش امنیتی JSSE نشسته و نسخه‌های پرکاربردی مثل جاوا ۸، ۱۱، ۱۷ و ۲۱ رو بدجوری آلوده کرده. ترسناک‌ترین بخش قضیه اینه که هکرها از راه دور، بدون نیاز به هیچ پسورد یا دسترسی اولیه‌ای می‌تونن نفوذ کنن و دیتای حساس برنامه‌ها رو دستکاری کنن یا کلاً بفرستن رو هوا. کار اون‌قدر بیخ پیدا کرده که اوراکل منتظر روال عادی آپدیت‌هاش نمونده و از همه برنامه‌نویس‌ها و مدیران سرور خواسته تا کار دستشون نداده، سریع سیستم‌ها رو وصله کنن.\n\nچرا مهمه؟ چون بخش عظیمی از سرورها و برنامه‌های حیاتی دنیا روی جاوا می‌چرخن و این حفره یعنی کلید ورود هکرها به حساس‌ترین اطلاعات، اونم بدون جا گذاشتن ردِ پا.",
@@ -45,5 +45,5 @@
    "امنیت"
   ]
  },
- "updated": "2026-10-25T06:05:56+00:00"
+ "updated": "2026-10-25T08:50:07+00:00"
 }
