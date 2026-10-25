@@ -6,7 +6,7 @@ const path = Astro.url.pathname;
 const here = (p: string) => (p === url() ? path === p || /\/page\/\d+\/$/.test(path) : path.startsWith(p)) ? 'page' : undefined;
 const nav = [
   { href: url(), label: 'خانه' },
-  { href: url('today/'), label: 'امروز در یک نگاه' },
+  { href: url('today/'), label: 'استوری خبرها' },
   { href: url('tags/'), label: 'موضوع‌ها' },
   { href: url('saved/'), label: 'ذخیره‌ها' },
 ];
@@ -43,7 +43,7 @@ const nav = [
 <nav class="tabbar" aria-label="ناوبری پایین">
   <a href={url()} aria-current={here(url())}><Icon name="home" /><span>خانه</span></a>
   <a href={url('tags/')} aria-current={here(url('tags/'))}><Icon name="hash" /><span>موضوع‌ها</span></a>
-  <a class="tab-today" href={url('today/')} aria-current={here(url('today/'))}><Icon name="stories" /><span>امروز</span></a>
+  <a class="tab-today" href={url('today/')} aria-current={here(url('today/'))}><Icon name="stories" /><span>استوری</span></a>
   <a href={url('saved/')} aria-current={here(url('saved/'))}><Icon name="bookmark" /><span>ذخیره‌ها</span></a>
   <a href={url('me/')} aria-current={here(url('me/'))}><Icon name="user" /><span>من</span></a>
 </nav>

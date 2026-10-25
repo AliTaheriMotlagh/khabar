@@ -21,8 +21,7 @@ export function GET() {
         { src: url('icon-512.png'), sizes: '512x512', type: 'image/png', purpose: 'any maskable' },
       ],
       shortcuts: [
-        { name: 'امروز در یک نگاه', short_name: 'امروز', description: 'خبرهای امروز، پشت سر هم مثل یک ویدیو', url: url('today/?source=pwa') },
-        { name: 'خبرهای نخوانده', short_name: 'نخوانده', url: url('today/?s=unseen&source=pwa') },
+        { name: 'استوری خبرها', short_name: 'استوری', description: 'خبرهای تازه، موضوع به موضوع مثل استوری، از همان جا که ماندید', url: url('today/?source=pwa') },
         { name: 'ذخیره‌شده‌ها', url: url('saved/') },
         { name: 'جستجو', url: url('search/') },
         { name: 'پروفایل من', url: url('me/') },

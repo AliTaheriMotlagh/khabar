@@ -2,7 +2,6 @@
 // plus "what's new since your last visit" — unread new stories stay marked until they are read.
 import { SITE } from '../site';
 import { $, $$, BASE, esc, fmtNum, getHistory, guest, hue, initial, myName, setMyName, store, toast, type Entry } from './core';
-import { chooseStories, type StoryItem, type StorySet } from '../lib/time';
 
 type Stats = {
   xp: number;
@@ -191,14 +190,6 @@ export function unreadTest() {
   const done = new Set([...store.get<number[]>('read', []), ...store.get<number[]>('seen', [])]);
   return (id: number) => !done.has(id);
 }
-
-// ---------- the four stories (home rail → /today/?s=…, sets defined in src/lib/time.ts) ----------
-export { STORY_SETS, storySet, type StoryItem, type StorySet } from '../lib/time';
-/** The stories a set plays for this reader, newest first, out of the recent ones the page carries. */
-export const pickStories = <T extends StoryItem>(set: StorySet, items: T[], now = Date.now()) =>
-  chooseStories(set, items, { now, unread: unreadTest(), pending: new Set(store.get<number[]>('pending', [])) });
-/** A set worth a circle: not empty, and not just «همه» again (on a first visit everything is unread). */
-export const offersSet = (set: StorySet, items: StoryItem[], n = pickStories(set, items).length) => n > 0 && (set === 'all' || n < items.length);
 
 // ---------- new since the last visit ----------
 type Catchup = { total: number; done: number };

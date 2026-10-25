@@ -1,17 +1,15 @@
 ---
-// The news as a vertical video: one full-screen scene per story, playing on its own (src/scripts/player.ts).
-// The page carries three days of stories; the browser plays one set of them (?s=new | unseen | all, default today,
-// see chooseStories in src/lib/time.ts) and can switch sets in place. Which stories are today's is decided in the browser,
-// with the reader's clock (data-date); the build's own count only feeds the description, structured data and the
-// no-JS list. Without JS it's a plain list of the day's headlines.
+// The news as stories, like Instagram's: one full-screen scene per story, playing on its own (src/scripts/player.ts).
+// The page carries three days of stories in circles, one per topic (storyGroups, the same circles as the home rail),
+// each story in exactly one. The browser plays the circles with something unseen first, each from its first unseen
+// story (?t=<circle> opens one), and moves on to the next circle with something unseen. Without JS it's a plain list.
 import Base from '../../layouts/Base.astro';
 import Icon from '../../components/Icon.astro';
 import SaveButton from '../../components/SaveButton.astro';
 import { SITE } from '../../site';
-import { abs, faNum, fresh, picture, recentPosts, sized, todayPosts, url, type Post } from '../../lib/posts';
+import { abs, faNum, fresh, pic, picture, sized, storyGroups, url, type Post } from '../../lib/posts';
 
-const today = new Set(todayPosts().map((p) => p.id));
-const posts = recentPosts();
+const groups = storyGroups();
 const words = (s: string) => s.split(/\s+/).filter(Boolean).length;
 /** What a scene reads aloud: the story's own text, never its headline (unless there is nothing else) — from the first
  *  paragraph that isn't just the headline again (a brief's first line is), up to about SAY_CHARS characters, skipping
@@ -30,12 +28,12 @@ function sayOf(p: Post) {
   });
   return out.length ? out : [{ i: 0, text: p.article.title }];
 }
-const scenes = posts.map((p) => {
+const scenes = groups.flatMap((g) => g.items.map(({ p }) => {
   const video = p.gallery.find((m) => m.type === 'video' && m.src);
   const summary = p.excerpt && p.excerpt !== p.article.title ? p.excerpt : '';
   return {
     p,
-    today: today.has(p.id),
+    g: g.key,
     video: video ? { src: video.src!, poster: picture(video.poster, 'large').src, gif: !!video.gif, fresh: fresh(video.src) } : null,
     image: p.cover ? picture(p.cover.src || p.cover.poster, 'large') : { src: '', alt: undefined },
     og: p.cover ? sized(p.cover.src || p.cover.poster, 'large') : null, // social cards keep the original URL
@@ -45,39 +43,35 @@ const scenes = posts.map((p) => {
     say: sayOf(p),
     thumb: p.cover ? picture(p.cover.src || p.cover.poster, 'small') : null,
   };
-});
-const totalMin = Math.max(1, Math.round(scenes.filter((s) => s.today).reduce((n, s) => n + s.seconds, 0) / 60));
+}));
+/** A circle's face: its newest story's picture, as on the home rail. */
+const faceOf = (g: (typeof groups)[number]) => [...g.items].reverse().find((i) => i.p.cover)?.p.cover;
+const totalMin = Math.max(1, Math.round(scenes.reduce((n, s) => n + s.seconds, 0) / 60));
 // The first scene's picture is what the page paints first: fetched right away, before the script runs.
+// (Which one plays first depends on the reader; this is the first circle's first, as good a guess as any.)
 const first = scenes[0] ? scenes[0].video?.poster || scenes[0].image.src : '';
-const sets = [
-  { set: 'new', icon: 'sparkles', label: 'تازه‌ها' },
-  { set: 'unseen', icon: 'eye', label: 'نخوانده‌ها' },
-  { set: 'today', icon: 'play', label: 'امروز' },
-  { set: 'all', icon: 'stories', label: 'همه' },
-] as const;
 const jsonLd = [
   {
     '@context': 'https://schema.org',
     '@type': 'ItemList',
-    name: 'امروز در یک نگاه',
-    itemListOrder: 'https://schema.org/ItemListOrderDescending',
-    numberOfItems: scenes.filter((s) => s.today).length,
-    itemListElement: scenes.filter((s) => s.today).map((s, i) => ({ '@type': 'ListItem', position: i + 1, url: abs(`p/${s.p.id}/`), name: s.p.article.title })),
+    name: 'استوری خبرها',
+    numberOfItems: scenes.length,
+    itemListElement: scenes.map((s, i) => ({ '@type': 'ListItem', position: i + 1, url: abs(`p/${s.p.id}/`), name: s.p.article.title })),
   },
 ];
 ---
-<Base title="امروز در یک نگاه" description={`خبرهای امروز ${SITE.name}، پشت سر هم مثل یک ویدیو${today.size ? ` — حدود ${faNum(totalMin)} دقیقه` : ''}.`} image={scenes[0]?.og || null} jsonLd={jsonLd}>
+<Base title="استوری خبرها" description={`خبرهای سه روز اخیر ${SITE.name}، موضوع به موضوع مثل استوری — ${faNum(scenes.length)} خبر، حدود ${faNum(totalMin)} دقیقه.`} image={scenes[0]?.og || null} jsonLd={jsonLd}>
   <Fragment slot="head">
     <link rel="preconnect" href="https://video.twimg.com" />
     {first && <link rel="preload" as="image" href={first} fetchpriority="high" />}
   </Fragment>
-  <section class="player" data-player aria-label="خبرهای امروز در یک نگاه" aria-roledescription="نمایش خبرها" data-pagefind-ignore>
+  <section class="player" data-player aria-label="استوری خبرها" aria-roledescription="نمایش خبرها" data-pagefind-ignore>
     <div class="pl-backdrop" data-pl-backdrop aria-hidden="true"></div>
     <div class="pl-frame">
       <div class="pl-stage" data-pl-stage>
         {
           scenes.map((s, i) => (
-            <article class="pl-scene" data-i={i} data-id={s.p.id} data-gif={s.video?.gif ? '' : undefined} data-date={s.p.date} data-seconds={s.seconds} data-say={JSON.stringify(s.say)} aria-hidden={i ? 'true' : undefined}>
+            <article class="pl-scene" data-i={i} data-id={s.p.id} data-g={s.g} data-gif={s.video?.gif ? '' : undefined} data-date={s.p.date} data-seconds={s.seconds} data-say={JSON.stringify(s.say)} aria-hidden={i ? 'true' : undefined}>
               <div class="pl-bg">
                 {s.video ? (
                   <video data-src={s.video.src} poster={i < 2 ? s.video.poster || s.image.src || undefined : undefined} data-poster={s.video.poster || s.image.src} data-alt={s.video.fresh} muted playsinline loop preload="none" />
@@ -107,14 +101,14 @@ const jsonLd = [
           <div class="pl-end-in">
             <div class="pl-end-head">
               <span class="pl-end-mark" aria-hidden="true"><Icon name="check" /></span>
-              <h2 data-pl-end-title>همه‌ی خبرهای امروز را دیدید</h2>
+              <h2 data-pl-end-title>همه‌ی استوری‌ها را دیدید</h2>
               <p class="pl-end-stats" data-pl-end-text>
                 <span><Icon name="stories" /> <b data-pl-total></b> خبر</span>
                 <span><Icon name="clock" /> حدود <b data-pl-min></b> دقیقه</span>
               </p>
             </div>
             <section class="pl-recap" data-pl-recap aria-labelledby="pl-recap-h">
-              <h3 id="pl-recap-h">مرور خبرها <small>برای دیدن دوباره بزنید</small></h3>
+              <h3 id="pl-recap-h">همین الان دیدید <small>برای دیدن دوباره بزنید</small></h3>
               <ol>
                 {scenes.map((s) => (
                   <li data-pl-recap-id={s.p.id} hidden>
@@ -127,15 +121,22 @@ const jsonLd = [
                 ))}
               </ol>
             </section>
-            <nav class="pl-sets" data-pl-sets aria-labelledby="pl-sets-h">
-              <h3 id="pl-sets-h">ادامه بدهید</h3>
-              {sets.map((x) => (
-                <a href={url(x.set === 'today' ? 'today/' : `today/?s=${x.set}`)} data-pl-set={x.set}>
-                  <span class="pl-set-ic"><Icon name={x.icon} /></span>
-                  <span class="pl-set-t"><b>{x.label}</b><small data-pl-set-n></small></span>
-                  <Icon name="arrow" />
-                </a>
-              ))}
+            <nav class="pl-groups" aria-labelledby="pl-groups-h">
+              <h3 id="pl-groups-h">موضوع‌ها <small>هر کدام را دوباره ببینید</small></h3>
+              <div class="rail">
+                {groups.map((g) => {
+                  const face = faceOf(g);
+                  return (
+                    <a href={url(`today/?t=${encodeURIComponent(g.key)}`)} data-pl-group={g.key} data-name={g.name}>
+                      <span class="ring">
+                        <span>{face ? <img {...pic(face.src || face.poster, 'small')} alt="" decoding="async" referrerpolicy="no-referrer" /> : <Icon name="news" />}</span>
+                        <b class="rail-n" data-rail-n hidden></b>
+                      </span>
+                      <small>{g.name}</small>
+                    </a>
+                  );
+                })}
+              </div>
             </nav>
             <div class="pl-end-actions">
               <button class="btn primary" type="button" data-pl-restart><Icon name="refresh" /> دوباره از اول</button>
@@ -152,8 +153,8 @@ const jsonLd = [
       <div class="pl-top">
         <div class="pl-bars" data-pl-bars></div>
         <div class="pl-head">
-          <span class="logo-mark" aria-hidden="true"></span>
-          <span class="pl-title"><b data-pl-name>امروز در یک نگاه</b><small><span data-pl-pos>۱</span> از <span data-pl-count></span></small></span>
+          <span class="pl-face" aria-hidden="true"><img data-pl-face alt="" decoding="async" referrerpolicy="no-referrer" hidden /><span class="logo-mark"></span></span>
+          <span class="pl-title"><b data-pl-name>استوری خبرها</b><small><span data-pl-pos>۱</span> از <span data-pl-count></span></small></span>
           <button class="pl-btn" type="button" data-pl-listen aria-pressed="false" aria-label="روایت خبر" title="روایت: خبر را برایتان می‌خواند (l)" hidden>
             <Icon name="headphones-off" class="when-off" /><Icon name="headphones" class="when-on" />
           </button>
@@ -169,13 +170,18 @@ const jsonLd = [
 
       <button class="pl-arrow prev" type="button" data-pl-prev aria-label="خبر قبلی"><Icon name="arrow-r" /></button>
       <button class="pl-arrow next" type="button" data-pl-next aria-label="خبر بعدی"><Icon name="arrow" /></button>
-      <p class="pl-hint" data-pl-hint hidden>برای خبر بعدی سمت چپ را بزنید · نگه دارید تا مکث شود</p>
+      <p class="pl-hint" data-pl-hint hidden>سمت چپ را بزنید: خبر بعدی · بکشید: موضوع بعدی · نگه دارید: مکث</p>
     </div>
   </section>
   <noscript>
     <div class="container narrow">
-      <h1 class="page-head">امروز در یک نگاه</h1>
-      <ol>{(today.size ? scenes.filter((s) => s.today) : scenes).map((s) => <li><a href={s.p.href}>{s.p.article.title}</a></li>)}</ol>
+      <h1 class="page-head">استوری خبرها</h1>
+      {groups.map((g) => (
+        <section>
+          <h2>{g.name}</h2>
+          <ol>{g.items.map(({ p }) => <li><a href={p.href}>{p.article.title}</a></li>)}</ol>
+        </section>
+      ))}
     </div>
   </noscript>
   <script>

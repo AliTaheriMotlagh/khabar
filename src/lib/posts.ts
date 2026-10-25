@@ -1,7 +1,7 @@
 import fs from 'node:fs';
 import path from 'node:path';
 import { SITE } from '../site';
-import { isToday, lastDays, tehranDay } from './time';
+import { dropCompanions, groupStories, lastDays, tehranDay, type StoryGroup } from './time';
 
 // ---- data written by the crawler (pipeline/run.py) ----
 export type Media = {
@@ -222,15 +222,18 @@ export function feedRev() {
   const feed = getFeed();
   return { latest: feed[0]?.id ?? 0, count: feed.length };
 }
-/** Stories and briefs published today (Tehran), as of `now`: the build time here; the browser recounts with its own
- *  clock (src/lib/time.ts), since a static page outlives its day. */
-export const todayPosts = (now = Date.now()): Post[] => getStories().filter((p) => isToday(p.date, now));
 /** What the player and the story rail carry: the three calendar days up to the newest story, whole days (at least `min`
- *  stories after a quiet spell). The browser picks today's, the new or the unread ones out of it (src/scripts/player.ts). */
+ *  stories after a quiet spell). */
 export function recentPosts(min = 8): Post[] {
   const stories = getStories();
   const recent = lastDays(stories.map((p) => ({ p, id: p.id, at: Date.parse(p.date) }))).map((i) => i.p);
   return recent.length >= min ? recent : stories.slice(0, min);
+}
+/** The story circles, one per topic, each recent story in exactly one (src/lib/time.ts, groupStories). The browser
+ *  orders them for its reader and picks up where they left off (orderGroups, resumeAt). */
+export function storyGroups(): StoryGroup<{ id: number; at: number; tags: string[]; kind: string; p: Post }>[] {
+  const items = recentPosts().map((p) => ({ id: p.id, at: Date.parse(p.date), tags: p.article.tags, kind: p.kind, p }));
+  return groupStories(dropCompanions(items));
 }
 /** The channel's Persian morning summary (posted ~07:36 Tehran), the home page's brief. */
 export const latestDigest = () => getPosts().find((p) => p.kind === 'digest') ?? null;

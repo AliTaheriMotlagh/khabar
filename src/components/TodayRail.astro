@@ -1,31 +1,29 @@
 ---
-// Stories on the home page: four circles, each playing a set in the player (src/pages/today/): "new" (arrived since
-// the last visit), "unseen" (not opened or watched yet), "today" (published today, Tehran) and "all" (the last three
-// calendar days). src/scripts/app.ts recounts every set in the browser with the reader's clock and history, and hides a
-// circle with nothing to play or that only repeats «همه» (offersSet); a circle turns grey once everything in it was seen.
-// The personal two stay hidden until then.
-// data-recent lists the stories the player carries, newest first, with their publish times (src/lib/time.ts).
+// Stories on the home page, like Instagram's: one circle per topic (src/lib/time.ts, groupStories), every recent story
+// in exactly one of them, each circle showing its newest story's picture. data-ids lists a circle's stories in the
+// order they play (oldest first) with their publish times. src/scripts/app.ts puts the circles with something unseen
+// first, counts what's unseen and greys out the circles watched to the end; the player (src/pages/today/) picks up at
+// the first unseen story.
 import Icon from './Icon.astro';
-import { faNum, recentPosts, url } from '../lib/posts';
-import { encodeStories, isToday } from '../lib/time';
-const recent = recentPosts();
-const built = Date.now();
-const sets = [
-  { set: 'new', icon: 'sparkles', label: 'تازه', count: 0 },
-  { set: 'unseen', icon: 'eye', label: 'نخوانده', count: 0 },
-  { set: 'today', icon: 'play', label: 'امروز', count: recent.filter((p) => isToday(p.date, built)).length },
-  { set: 'all', icon: 'stories', label: 'همه', count: recent.length },
-] as const;
+import { faNum, pic, storyGroups, url } from '../lib/posts';
+import { encodeStories } from '../lib/time';
+const groups = storyGroups();
 ---
 {
-  recent.length > 0 && (
-    <nav class="rail" aria-label="استوری خبرها" data-rail data-recent={encodeStories(recent.map((p) => ({ id: p.id, at: Date.parse(p.date) })))}>
-      {sets.map((s) => (
-        <a class={`story-${s.set}`} href={url(s.set === 'today' ? 'today/' : `today/?s=${s.set}`)} data-rail-set={s.set} hidden={!s.count} aria-label={`${s.label} · ${faNum(s.count)} خبر`}>
-          <span class="ring"><span><Icon name={s.icon} /></span></span>
-          <small>{s.label}<span data-rail-count>{s.count > 0 && ` · ${faNum(s.count)}`}</span></small>
-        </a>
-      ))}
+  groups.length > 0 && (
+    <nav class="rail" aria-label="استوری خبرها" data-rail>
+      {groups.map((g, k) => {
+        const face = [...g.items].reverse().find((i) => i.p.cover)?.p.cover;
+        return (
+          <a href={url(`today/?t=${encodeURIComponent(g.key)}`)} data-rail-group={g.key} data-ids={encodeStories(g.items)} aria-label={`${g.name} · ${faNum(g.items.length)} خبر`}>
+            <span class="ring">
+              <span>{face ? <img {...pic(face.src || face.poster, 'small')} alt="" loading={k < 6 ? undefined : 'lazy'} decoding="async" referrerpolicy="no-referrer" /> : <Icon name="news" />}</span>
+              <b class="rail-n" data-rail-n hidden></b>
+            </span>
+            <small>{g.name}</small>
+          </a>
+        );
+      })}
     </nav>
   )
 }

@@ -1,7 +1,7 @@
 // Client behaviour for every page. Everything is progressive: the site works without JS.
 import { $, $$, BASE, PAGE_CACHE, fmtNum, getSaved, relTime, store, toast, type Entry } from './core';
-import { award, markNew, offersSet, pickStories, recordRead, renderMe, storySet, unreadTest } from './game';
-import { TZ, decodeStories, tehranDay } from '../lib/time';
+import { award, markNew, recordRead, renderMe, unreadTest } from './game';
+import { TZ, decodeStories, orderGroups, tehranDay } from '../lib/time';
 import { SITE } from '../site';
 import { showImage, watchMedia } from './media';
 import { initPeek, peek } from './peek';
@@ -307,22 +307,23 @@ if ('serviceWorker' in navigator && location.hostname !== 'localhost') {
   addEventListener('load', () => navigator.serviceWorker.register(`${BASE}/sw.js`).catch(() => {}));
 }
 
-// ---------- story rail (home): count every set with this reader's clock and history, hide the empty ones ----------
+// ---------- story rail (home): circles with something unseen first, how much is unseen, the rest greyed out ----------
 function renderRail() {
   const rail = $('[data-rail]');
   if (!rail) return;
-  const items = decodeStories(rail.dataset.recent ?? '');
   const unread = unreadTest();
-  for (const a of $$<HTMLAnchorElement>('[data-rail-set]', rail)) {
-    const set = storySet(a.dataset.railSet);
-    const picked = pickStories(set, items);
-    const n = picked.length;
-    a.hidden = !offersSet(set, items, n);
-    a.classList.toggle('seen', !picked.some((i) => unread(i.id)));
-    const label = $('small', a)!.firstChild!.textContent!;
-    $('[data-rail-count]', a)!.textContent = ` · ${fmtNum(n)}`;
-    a.setAttribute('aria-label', `${label} · ${fmtNum(n)} خبر`);
+  const circles = $$<HTMLAnchorElement>('[data-rail-group]', rail).map((a) => ({ a, items: decodeStories(a.dataset.ids ?? '') }));
+  for (const { a, items } of orderGroups(circles, unread)) {
+    const n = items.filter((i) => unread(i.id)).length;
+    const count = $('[data-rail-n]', a)!;
+    count.hidden = !n;
+    count.textContent = fmtNum(n);
+    a.classList.toggle('seen', !n);
+    const name = $('small', a)!.textContent;
+    a.setAttribute('aria-label', n ? `${name} · ${fmtNum(n)} خبر ندیده` : `${name} · دیده‌شده`);
+    rail.append(a);
   }
+  rail.scrollLeft = 0;
 }
 // Coming back from the player (bfcache) shows what was just watched.
 addEventListener('pageshow', (e) => e.persisted && renderRail());
