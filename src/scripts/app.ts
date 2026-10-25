@@ -307,22 +307,25 @@ if ('serviceWorker' in navigator && location.hostname !== 'localhost') {
   addEventListener('load', () => navigator.serviceWorker.register(`${BASE}/sw.js`).catch(() => {}));
 }
 
-// ---------- story rail (home): circles with something unseen first, how much is unseen, the rest greyed out ----------
+// ---------- story rail (home): only what this reader hasn't seen — circles with nothing unseen left go away ----------
 function renderRail() {
   const rail = $('[data-rail]');
   if (!rail) return;
   const unread = unreadTest();
   const circles = $$<HTMLAnchorElement>('[data-rail-group]', rail).map((a) => ({ a, items: decodeStories(a.dataset.ids ?? '') }));
+  let shown = 0;
   for (const { a, items } of orderGroups(circles, unread)) {
     const n = items.filter((i) => unread(i.id)).length;
+    a.hidden = !n;
+    if (!n) continue;
+    shown++;
     const count = $('[data-rail-n]', a)!;
-    count.hidden = !n;
+    count.hidden = false;
     count.textContent = fmtNum(n);
-    a.classList.toggle('seen', !n);
-    const name = $('small', a)!.textContent;
-    a.setAttribute('aria-label', n ? `${name} · ${fmtNum(n)} خبر ندیده` : `${name} · دیده‌شده`);
+    a.setAttribute('aria-label', `${$('small', a)!.textContent} · ${fmtNum(n)} خبر ندیده`);
     rail.append(a);
   }
+  rail.hidden = !shown;
   rail.scrollLeft = 0;
 }
 // Coming back from the player (bfcache) shows what was just watched.

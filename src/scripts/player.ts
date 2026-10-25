@@ -1,8 +1,9 @@
 // The story player (/today/): stories one after another, like Instagram's. The page carries the recent stories in
-// circles, one per topic (src/lib/time.ts, groupStories), each story in exactly one. It plays the circles with something
-// unseen first (orderGroups), each from its first unseen story (resumeAt), and after a circle's last story moves on to
-// the next circle with something unseen. A story counts as seen after a second on screen, or once it's skipped, so
-// coming back picks up where the reader left off. Each scene stays for its own data-seconds.
+// circles, one per topic (src/lib/time.ts, groupStories), each story in exactly one. Only what this reader hasn't seen
+// or opened yet plays: each circle keeps its unseen stories (as they were when the page opened), circles with none are
+// left out, the newest first (orderGroups), and after a circle's last story the show moves on to the next circle with
+// something unseen. A story counts as seen after a second on screen, or once it's skipped, so coming back picks up
+// where the reader left off. Each scene stays for its own data-seconds.
 // Two separate switches: «روایت» reads each story's text aloud (the scene lasts as long as the voice), and «صدای ویدیو»
 // lets a video play with its own sound for the video's length. With both on, a video scene is read first (the video
 // silent), then its clip plays once with its sound. Tap the left side for the next story and the right side for the
@@ -26,8 +27,8 @@ const BARS_MAX = 40;
 const SEEN_MS = 1000;
 
 type MediaEl = HTMLImageElement | HTMLVideoElement;
-/** A circle: its stories in the order they play (oldest first), and its link on the end screen. */
-type Group = { key: string; name: string; link: HTMLAnchorElement; scenes: HTMLElement[]; items: StoryItem[] };
+/** A circle: its unseen stories in the order they play (oldest first), and its face. */
+type Group = { key: string; name: string; el: HTMLElement; scenes: HTMLElement[]; items: StoryItem[] };
 const mediaOf = (s?: HTMLElement) => (s ? $<MediaEl>('.pl-bg img, .pl-bg video', s) : null);
 const videoOf = (s?: HTMLElement) => (s ? $<HTMLVideoElement>('.pl-bg video', s) : null);
 /** A video (not a GIF) has its own sound. */
@@ -38,15 +39,19 @@ if (player) init(player);
 
 function init(player: HTMLElement) {
   const every = $$('.pl-scene', player);
-  const groups: Group[] = $$<HTMLAnchorElement>('[data-pl-group]', player)
-    .map((link) => {
-      const scenes = every.filter((s) => s.dataset.g === link.dataset.plGroup);
+  // What's unseen now stays in its circle for the whole visit (going back to a story just watched works), and so does
+  // a story named in the address (a shared link, a reload mid-story) even if it was seen.
+  const fresh = unreadTest();
+  const named = location.hash.slice(1);
+  const groups: Group[] = $$('[data-pl-group]', player)
+    .map((el) => {
+      const scenes = every.filter((s) => s.dataset.g === el.dataset.plGroup && (fresh(Number(s.dataset.id)) || s.dataset.id === named));
       const items = scenes.map((s) => ({ id: Number(s.dataset.id), at: Date.parse(s.dataset.date ?? '') }));
-      return { key: link.dataset.plGroup!, name: link.dataset.name!, link, scenes, items };
+      return { key: el.dataset.plGroup!, name: el.dataset.name!, el, scenes, items };
     })
     .filter((g) => g.scenes.length);
   // The order is fixed for the visit, as on the home rail when it was tapped: watching doesn't reshuffle it.
-  const queue = orderGroups(groups, unreadTest());
+  const queue = orderGroups(groups, fresh);
   const barBox = $('[data-pl-bars]', player)!;
   const end = $('[data-pl-end]', player)!;
   const backdrop = $('[data-pl-backdrop]', player)!;
@@ -58,7 +63,6 @@ function init(player: HTMLElement) {
 
   let g = 0; // the circle playing, in queue
   let scenes: HTMLElement[] = []; // its stories
-  let rewatch = false; // «دوباره از اول»: every circle from the top, seen or not
   let shown: HTMLElement | null = null; // the scene on screen, until it counts as seen
   let seenTimer = 0;
   let endAt = 0; // when the end screen came up
@@ -116,8 +120,8 @@ function init(player: HTMLElement) {
     bars = $$(':scope > span', barBox);
     $('[data-pl-name]', player)!.textContent = group.name;
     $('[data-pl-count]', player)!.textContent = fmtNum(scenes.length);
-    // The circle's face, as on the home rail (the end screen's copy has already loaded it).
-    const img = $<HTMLImageElement>('img', group.link);
+    // The circle's face, as on the home rail.
+    const img = $<HTMLImageElement>('img', group.el);
     face.hidden = !img;
     face.nextElementSibling?.toggleAttribute('hidden', !!img);
     if (img) showImage(face, img.currentSrc || img.getAttribute('src') || '', img.dataset.alt);
@@ -133,7 +137,6 @@ function init(player: HTMLElement) {
    *  one included if it was opened halfway), else the end. */
   function nextGroup() {
     leave();
-    if (rewatch && g + 1 < queue.length) return play(g + 1, 0);
     const unread = unreadTest();
     for (let d = 1; d <= queue.length; d++) {
       const k = (g + d) % queue.length;
@@ -150,7 +153,7 @@ function init(player: HTMLElement) {
     const k = g + d;
     if (k < 0) return show(0);
     if (k >= queue.length) return nextGroup();
-    play(k, rewatch ? 0 : resumeAt(queue[k].items, unreadTest()));
+    play(k, resumeAt(queue[k].items, unreadTest()));
   }
 
   // ---------- seen ----------
@@ -394,10 +397,9 @@ function init(player: HTMLElement) {
   const next = () => show(at + 1);
   const prev = () => show(at - 1);
 
-  // ---------- the end: everything seen, what this visit showed, and every circle to watch again ----------
+  // ---------- the end: everything new seen, and what this visit showed ----------
   function finish() {
     leave();
-    rewatch = false;
     cancelAnimationFrame(raf);
     speaker.stop();
     phase = 'plain';
@@ -409,8 +411,10 @@ function init(player: HTMLElement) {
     $$<HTMLVideoElement>('video', player).forEach((v) => v.pause());
     bars.forEach((b) => b.style.setProperty('--p', '1'));
     const n = watched.length;
-    $('[data-pl-end-title]', player)!.textContent = queue.length ? 'همه‌ی استوری‌ها را دیدید' : 'هنوز خبری نیامده';
+    $('[data-pl-end-title]', player)!.textContent = n ? 'همه‌ی خبرهای تازه را دیدید' : 'خبر تازه‌ای نمانده';
     $('[data-pl-end-text]', player)!.hidden = !n;
+    $('[data-pl-end-none]', player)!.hidden = !!n;
+    pos.parentElement!.hidden = !queue.length; // «۱ از …» with nothing to play
     $('[data-pl-total]', player)!.textContent = fmtNum(n);
     $('[data-pl-min]', player)!.textContent = fmtNum(Math.max(1, Math.round(watched.reduce((m, s) => m + (Number(s.dataset.seconds) || 8), 0) / 60)));
     // The recap: this visit's stories in the order they played.
@@ -427,20 +431,6 @@ function init(player: HTMLElement) {
     });
     recap.hidden = !n;
     list.scrollLeft = 0;
-    // Every circle, in the home rail's order for now.
-    const unread = unreadTest();
-    const strip = $('.pl-groups .rail', player)!;
-    for (const q of orderGroups(groups, unread)) {
-      const left = q.items.filter((i) => unread(i.id)).length;
-      const count = $('[data-rail-n]', q.link)!;
-      count.hidden = !left;
-      count.textContent = fmtNum(left);
-      q.link.classList.toggle('seen', !left);
-      strip.append(q.link);
-    }
-    strip.scrollLeft = 0;
-    $('.pl-groups', player)!.hidden = !queue.length;
-    $('[data-pl-restart]', player)!.hidden = !queue.length;
     end.hidden = false;
     end.scrollTop = 0;
     endAt = performance.now();
@@ -527,10 +517,6 @@ function init(player: HTMLElement) {
     },
     true,
   );
-  $('[data-pl-restart]', player)!.addEventListener('click', () => {
-    rewatch = true;
-    play(0, 0);
-  });
   /** Opens the story with this id, in its circle. */
   function open(id: string | undefined) {
     const k = queue.findIndex((q) => q.scenes.some((s) => s.dataset.id === id));
@@ -539,14 +525,6 @@ function init(player: HTMLElement) {
     return true;
   }
   $$('[data-pl-go]', player).forEach((b) => b.addEventListener('click', () => open(b.dataset.plGo)));
-  groups.forEach((q) =>
-    q.link.addEventListener('click', (e) => {
-      e.preventDefault();
-      rewatch = false;
-      const k = queue.indexOf(q);
-      play(k, resumeAt(q.items, unreadTest()));
-    }),
-  );
   $('[data-pl-close]', player)!.addEventListener('click', (e) => {
     e.preventDefault();
     close();
@@ -609,7 +587,7 @@ function init(player: HTMLElement) {
   // A story named in the address (a reload, a shared link), else the circle asked for, else the first one, each where
   // this reader left off.
   if (!queue.length) finish();
-  else if (!open(location.hash.slice(1))) {
+  else if (!open(named)) {
     const k = Math.max(0, queue.findIndex((q) => q.key === new URLSearchParams(location.search).get('t')));
     play(k, resumeAt(queue[k].items, unreadTest()));
   }

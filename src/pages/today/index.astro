@@ -1,8 +1,8 @@
 ---
 // The news as stories, like Instagram's: one full-screen scene per story, playing on its own (src/scripts/player.ts).
 // The page carries three days of stories in circles, one per topic (storyGroups, the same circles as the home rail),
-// each story in exactly one. The browser plays the circles with something unseen first, each from its first unseen
-// story (?t=<circle> opens one), and moves on to the next circle with something unseen. Without JS it's a plain list.
+// each story in exactly one. The browser plays only what this reader hasn't seen or opened yet, circle by circle
+// (?t=<circle> opens one), and ends when nothing new is left. Without JS it's a plain list.
 import Base from '../../layouts/Base.astro';
 import Icon from '../../components/Icon.astro';
 import SaveButton from '../../components/SaveButton.astro';
@@ -44,7 +44,7 @@ const scenes = groups.flatMap((g) => g.items.map(({ p }) => {
     thumb: p.cover ? picture(p.cover.src || p.cover.poster, 'small') : null,
   };
 }));
-/** A circle's face: its newest story's picture, as on the home rail. */
+/** A circle's face: its newest story's picture, as on the home rail (the player shows it beside the circle's name). */
 const faceOf = (g: (typeof groups)[number]) => [...g.items].reverse().find((i) => i.p.cover)?.p.cover;
 const totalMin = Math.max(1, Math.round(scenes.reduce((n, s) => n + s.seconds, 0) / 60));
 // The first scene's picture is what the page paints first: fetched right away, before the script runs.
@@ -101,7 +101,8 @@ const jsonLd = [
           <div class="pl-end-in">
             <div class="pl-end-head">
               <span class="pl-end-mark" aria-hidden="true"><Icon name="check" /></span>
-              <h2 data-pl-end-title>همه‌ی استوری‌ها را دیدید</h2>
+              <h2 data-pl-end-title>همه‌ی خبرهای تازه را دیدید</h2>
+              <p class="pl-end-none" data-pl-end-none hidden>استوری‌ها فقط خبرهای تازه‌ای را نشان می‌دهند که هنوز ندیده‌اید؛ خبر تازه که برسد، همین‌جاست.</p>
               <p class="pl-end-stats" data-pl-end-text>
                 <span><Icon name="stories" /> <b data-pl-total></b> خبر</span>
                 <span><Icon name="clock" /> حدود <b data-pl-min></b> دقیقه</span>
@@ -121,26 +122,8 @@ const jsonLd = [
                 ))}
               </ol>
             </section>
-            <nav class="pl-groups" aria-labelledby="pl-groups-h">
-              <h3 id="pl-groups-h">موضوع‌ها <small>هر کدام را دوباره ببینید</small></h3>
-              <div class="rail">
-                {groups.map((g) => {
-                  const face = faceOf(g);
-                  return (
-                    <a href={url(`today/?t=${encodeURIComponent(g.key)}`)} data-pl-group={g.key} data-name={g.name}>
-                      <span class="ring">
-                        <span>{face ? <img {...pic(face.src || face.poster, 'small')} alt="" decoding="async" referrerpolicy="no-referrer" /> : <Icon name="news" />}</span>
-                        <b class="rail-n" data-rail-n hidden></b>
-                      </span>
-                      <small>{g.name}</small>
-                    </a>
-                  );
-                })}
-              </div>
-            </nav>
             <div class="pl-end-actions">
-              <button class="btn primary" type="button" data-pl-restart><Icon name="refresh" /> دوباره از اول</button>
-              <a class="btn" href={url()}><Icon name="home" /> خانه</a>
+              <a class="btn primary" href={url()}><Icon name="home" /> خانه</a>
             </div>
             <a class="pl-join" href={`https://t.me/${SITE.channel}`} target="_blank" rel="noopener" referrerpolicy="origin"><Icon name="telegram" /> خبرها را زودتر در کانال تلگرام ببینید</a>
           </div>
@@ -164,6 +147,12 @@ const jsonLd = [
           <button class="pl-btn" type="button" data-pl-pause aria-pressed="false" aria-label="مکث" title="مکث (فاصله)">
             <Icon name="pause" class="when-off" /><Icon name="play" class="when-on" />
           </button>
+          <span hidden>
+            {groups.map((g) => {
+              const face = faceOf(g);
+              return <span data-pl-group={g.key} data-name={g.name}>{face && <img {...pic(face.src || face.poster, 'small')} alt="" decoding="async" referrerpolicy="no-referrer" />}</span>;
+            })}
+          </span>
           <a class="pl-btn" href={url()} data-pl-close aria-label="بستن" title="بستن (Esc)"><Icon name="x" /></a>
         </div>
       </div>

@@ -1,9 +1,9 @@
 ---
 // Stories on the home page, like Instagram's: one circle per topic (src/lib/time.ts, groupStories), every recent story
 // in exactly one of them, each circle showing its newest story's picture. data-ids lists a circle's stories in the
-// order they play (oldest first) with their publish times. src/scripts/app.ts puts the circles with something unseen
-// first, counts what's unseen and greys out the circles watched to the end; the player (src/pages/today/) picks up at
-// the first unseen story.
+// order they play (oldest first) with their publish times. src/scripts/app.ts keeps only the circles with something
+// this reader hasn't seen (newest first, with how much) and hides the rail when nothing new is left; the player
+// (src/pages/today/) plays only the unseen stories.
 import Icon from './Icon.astro';
 import { faNum, pic, storyGroups, url } from '../lib/posts';
 import { encodeStories } from '../lib/time';

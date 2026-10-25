@@ -855,6 +855,7 @@ body:has(.player) :is(.site-header, .tabbar, .site-footer, .to-top, .offline-bar
 .pl-end-mark .i { width: 34px; height: 34px; stroke-width: 2.6; }
 @keyframes end-pop { from { transform: scale(.4); opacity: 0; } 60% { transform: scale(1.08); } }
 .pl-end h2 { margin: 6px 0 0; font-size: 1.4rem; line-height: 1.6; font-weight: 900; }
+.pl-end-none { margin: 0; max-width: 34ch; color: rgb(255 255 255 / .75); font-size: 14.5px; line-height: 1.9; }
 .pl-end-stats { display: flex; flex-wrap: wrap; justify-content: center; gap: 8px; margin: 0; }
 .pl-end-stats span { display: inline-flex; align-items: center; gap: 6px; padding: 6px 12px; border-radius: 999px; background: rgb(255 255 255 / .1); font-size: 13.5px; color: rgb(255 255 255 / .8); }
 .pl-end-stats b { color: #fff; }
@@ -874,12 +875,7 @@ body:has(.player) :is(.site-header, .tabbar, .site-footer, .to-top, .offline-bar
 .pl-recap-ph .i { width: 32px; height: 32px; }
 .pl-recap-n { position: absolute; z-index: 1; top: 7px; inset-inline-start: 7px; display: grid; place-items: center; min-width: 22px; height: 22px; padding: 0 6px; border-radius: 999px; background: rgb(0 0 0 / .5); font-size: 12px; font-weight: 800; }
 .pl-recap-t { position: absolute; z-index: 1; inset-inline: 8px; bottom: 8px; font-size: 12px; line-height: 1.6; font-weight: 700; display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden; }
-.pl-groups .rail { margin: 0 -20px; padding: 2px 20px 4px; }
-.pl-groups .rail a { --c: #8ec5ff; color: #fff; }
-.pl-groups .rail .ring > span, .pl-groups .rail-n { border-color: #141a2e; }
-.pl-groups .rail .seen { color: rgb(255 255 255 / .6); }
-.pl-groups .rail .seen .ring { background: rgb(255 255 255 / .22); }
-.pl-end-actions { display: grid; grid-template-columns: 1fr auto; gap: 8px; }
+.pl-end-actions { display: grid; gap: 8px; }
 .pl-end-actions .btn { justify-content: center; padding: 12px 18px; font-size: 15px; }
 .pl-end .btn:not(.primary) { background: rgb(255 255 255 / .12); color: #fff; border-color: transparent; }
 .pl-join { display: inline-flex; align-self: center; align-items: center; gap: 8px; color: #8ec5ff; font-size: 14px; font-weight: 700; text-decoration: none; }
@@ -899,7 +895,7 @@ body:has(.player) :is(.site-header, .tabbar, .site-footer, .to-top, .offline-bar
   .pl-arrow.next { left: calc(50% - min(240px, (100dvh - 48px) * 9 / 32) - 80px); }
 }
 
-/* ---------- story rail (home): four circles — new, unseen, today, all — each opening the player on its set ---------- */
+/* ---------- story rail (home): one circle per topic with something unseen, each opening the player on it ---------- */
 .rail { display: flex; gap: 14px; overflow-x: auto; scrollbar-width: none; padding: 4px 2px 14px; margin: 0 0 8px; }
 .rail::-webkit-scrollbar { display: none; }
 .rail a { --c: var(--accent); flex: none; width: 70px; display: grid; justify-items: center; gap: 6px; text-decoration: none; color: var(--c); font-size: 12px; font-weight: 700; text-align: center; -webkit-tap-highlight-color: transparent; }
@@ -912,7 +908,4 @@ body:has(.player) :is(.site-header, .tabbar, .site-footer, .to-top, .offline-bar
 .rail .ring .i { width: 26px; height: 26px; }
 /* How many stories in the circle are still unseen. */
 .rail-n { position: absolute; bottom: -2px; inset-inline-start: -2px; min-width: 22px; height: 22px; padding: 0 6px; border-radius: 999px; border: 2px solid var(--bg); display: grid; place-items: center; background: var(--new); color: #fff; font-size: 11.5px; font-weight: 800; line-height: 1; }
-.rail .seen { color: var(--text-3); font-weight: 500; }
-.rail .seen .ring { background: var(--rail); }
-.rail .seen .ring img { opacity: .75; }
 .rail small { width: 100%; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; line-height: 1.45; }
