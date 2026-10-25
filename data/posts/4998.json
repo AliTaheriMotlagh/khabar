@@ -14,10 +14,7 @@
   "description": "Without brain surgery guided by live AI assistance, Rhys Hibbert could have lost his sight to a tumour.",
   "image": "https://cdn4.telesco.pe/file/qDOVPAfs8F3kzxIBKke62Lq8P8BG5-YA8ubRkr46x5xGaQdF_pr5o9dwaY6Qb4CBGRjJDHhCaJrx32N9SqEqudK7oVFV2GM_JY_C_JIoAZmffML6UDIAsUItjYSLgPWSI60EXL2p_M8qOJX2giQO71BCHx1ExFCajbt1CjeTrffxhKOl39KrfgPpXBPJs69Tzo9slq0J_Rbnsvuj2m9KYeOjRlCOvWpsjMLmblNKBmkjdqkw5JrxrMCJHzgyPgg3gI71KERUP-p0wjqxS-FCwTHJblfaZFJD9zxRb38LQEL5Hk6VE3K99icGwPYVtdw_HxcF3Brl5UPW2Tu9k-fDJw.jpg"
  },
- "gholam": {
-  "text": "Could not summarize that message: 503 UNAVAILABLE. {&#x27;error&#x27;: {&#x27;code&#x27;: 503, &#x27;message&#x27;: &#x27;This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.&#x27;, &#x27;status&#x27;: &#x27;UNAVAILABLE&#x27;}}",
-  "date": "2026-08-27T20:25:29+00:00"
- },
+ "gholam": null,
  "links": [
   {
    "kind": "link",
@@ -39,16 +36,13 @@
   }
  ],
  "article": {
-  "title": "Could not summarize that message: 503 UNAVAILABLE",
-  "source_title": "First patient to have brain surgery with real-time AI assistance",
-  "body": [
-   "Could not summarize that message: 503 UNAVAILABLE. {&#x27;error&#x27;: {&#x27;code&#x27;: 503, &#x27;message&#x27;: &#x27;This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.&#x27;, &#x27;status&#x27;: &#x27;UNAVAILABLE&#x27;}}"
-  ],
+  "title": "First patient to have brain surgery with real-time AI assistance",
+  "source_title": null,
+  "body": [],
   "why": null,
   "tags": [
    "سلامت"
   ]
  },
- "updated": "2026-10-25T12:28:47+00:00",
- "gholam_checked": "2026-10-25T12:28:47+00:00"
+ "updated": "2026-10-25T12:28:47+00:00"
 }

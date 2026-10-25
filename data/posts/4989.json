@@ -14,10 +14,7 @@
   "description": "Today, we're kicking off the first phase of the research preview for Model Hardware Standard (MHS): a new standard for AI agents to safely operate physical equipment in scientific research and advanced manufacturing.\nRead more: https://www.anthropic.com/news/model…",
   "image": null
  },
- "gholam": {
-  "text": "Could not summarize that message: 503 UNAVAILABLE. {&#x27;error&#x27;: {&#x27;code&#x27;: 503, &#x27;message&#x27;: &#x27;This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.&#x27;, &#x27;status&#x27;: &#x27;UNAVAILABLE&#x27;}}",
-  "date": "2026-08-27T18:28:14+00:00"
- },
+ "gholam": null,
  "links": [
   {
    "kind": "tweet",
@@ -55,14 +52,13 @@
   }
  ],
  "article": {
-  "title": "Could not summarize that message: 503 UNAVAILABLE",
-  "source_title": "Today, we're kicking off the first phase of the research preview for Model Hardware Standard (MHS): a new standard for AI agents to safely…",
-  "body": [
-   "Could not summarize that message: 503 UNAVAILABLE. {&#x27;error&#x27;: {&#x27;code&#x27;: 503, &#x27;message&#x27;: &#x27;This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.&#x27;, &#x27;status&#x27;: &#x27;UNAVAILABLE&#x27;}}"
-  ],
+  "title": "Today, we're kicking off the first phase of the research preview for Model Hardware Standard (MHS): a new standard for AI agents to safely…",
+  "source_title": null,
+  "body": [],
   "why": null,
-  "tags": []
+  "tags": [
+   "ایجنت"
+  ]
  },
- "updated": "2026-10-25T12:28:50+00:00",
- "gholam_checked": "2026-10-25T12:28:50+00:00"
+ "updated": "2026-10-25T12:28:50+00:00"
 }
