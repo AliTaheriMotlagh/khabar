@@ -1,7 +1,7 @@
 import fs from 'node:fs';
 import path from 'node:path';
 import { SITE } from '../site';
-import { dropCompanions, groupStories, lastDays, tehranDay, type StoryGroup } from './time';
+import { dropCompanions, lastDays, tehranDay } from './time';
 
 // ---- data written by the crawler (pipeline/run.py) ----
 export type Media = {
@@ -229,11 +229,10 @@ export function recentPosts(min = 8): Post[] {
   const recent = lastDays(stories.map((p) => ({ p, id: p.id, at: Date.parse(p.date) }))).map((i) => i.p);
   return recent.length >= min ? recent : stories.slice(0, min);
 }
-/** The story circles, one per topic, each recent story in exactly one (src/lib/time.ts, groupStories). The browser
- *  orders them for its reader and picks up where they left off (orderGroups, resumeAt). */
-export function storyGroups(): StoryGroup<{ id: number; at: number; tags: string[]; kind: string; p: Post }>[] {
-  const items = recentPosts().map((p) => ({ id: p.id, at: Date.parse(p.date), tags: p.article.tags, kind: p.kind, p }));
-  return groupStories(dropCompanions(items));
+/** The stories, one stream newest first, no topics (a forwarded original a story comments on is left out as its
+ *  duplicate, src/lib/time.ts, dropCompanions). The browser keeps only what its reader hasn't seen. */
+export function storyItems(): { id: number; at: number; kind: string; p: Post }[] {
+  return dropCompanions(recentPosts().map((p) => ({ id: p.id, at: Date.parse(p.date), kind: p.kind, p })));
 }
 /** The channel's Persian morning summary (posted ~07:36 Tehran), the home page's brief. */
 export const latestDigest = () => getPosts().find((p) => p.kind === 'digest') ?? null;

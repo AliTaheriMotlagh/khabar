@@ -694,6 +694,7 @@ dialog[open] { animation: sheet-in .3s var(--ease); }
 .voice-row { display: flex; align-items: center; justify-content: space-between; gap: 12px; }
 .voice-row-text { display: grid; gap: 2px; font-size: 14px; }
 .voice-row-text b { color: var(--text-2); }
+.seen-btns { display: flex; flex: none; gap: 6px; }
 .voice-row-text small { color: var(--text-3); font-size: 13px; }
 .voice-lead { font-size: 15.5px; line-height: 1.9; margin: 14px 0 8px; }
 .voice-facts { list-style: none; margin: 0 0 6px; padding: 0; display: grid; gap: 8px; font-size: 14px; color: var(--text-2); }
@@ -836,8 +837,7 @@ body:has(.player) :is(.site-header, .tabbar, .site-footer, .to-top, .offline-bar
 .pl-bars i { display: block; height: 100%; background: #fff; transform-origin: right; transform: scaleX(var(--p, 0)); }
 .pl-head { display: flex; align-items: center; gap: 8px; margin-top: 10px; }
 .pl-face { flex: none; display: grid; width: 34px; height: 34px; padding: 2px; border-radius: 50%; background: conic-gradient(from 200deg, var(--accent), #ffd166, var(--accent)); }
-.pl-face img, .pl-face .logo-mark { width: 100%; height: 100%; border-radius: 50%; border: 2px solid #0b0f17; object-fit: cover; box-shadow: none; }
-.pl-face img.img-ph { object-fit: none; background: #1d2b7a; }
+.pl-face .logo-mark { width: 100%; height: 100%; border-radius: 50%; border: 2px solid #0b0f17; object-fit: cover; box-shadow: none; }
 .pl-title { flex: 1; min-width: 0; display: grid; line-height: 1.35; }
 .pl-title b { font-size: 14.5px; }
 .pl-title small { font-size: 12px; color: rgb(255 255 255 / .7); }
@@ -880,7 +880,7 @@ body:has(.player) :is(.site-header, .tabbar, .site-footer, .to-top, .offline-bar
 .pl-end .btn:not(.primary) { background: rgb(255 255 255 / .12); color: #fff; border-color: transparent; }
 .pl-join { display: inline-flex; align-self: center; align-items: center; gap: 8px; color: #8ec5ff; font-size: 14px; font-weight: 700; text-decoration: none; }
 .pl-join .i { width: 18px; height: 18px; }
-.player.is-done :is(.pl-head .pl-btn:not([data-pl-close]), .pl-arrow.next) { display: none; }
+.player.is-done :is(.pl-head .pl-btn:not([data-pl-close], [data-open-settings]), .pl-arrow.next) { display: none; }
 .pl-btn.is-na { opacity: .5; }
 /* waiting for the scene's picture or video: a spinner, shown only if the wait is noticeable */
 .pl-spin { position: absolute; z-index: 3; top: 50%; left: 50%; width: 38px; height: 38px; margin: -19px 0 0 -19px; border-radius: 50%; border: 3px solid rgb(255 255 255 / .25); border-top-color: #fff; opacity: 0; pointer-events: none; transition: opacity .2s; animation: spin .8s linear infinite; }
@@ -900,6 +900,7 @@ body:has(.player) :is(.site-header, .tabbar, .site-footer, .to-top, .offline-bar
 .rail::-webkit-scrollbar { display: none; }
 .rail a { --c: var(--accent); flex: none; width: 70px; display: grid; justify-items: center; gap: 6px; text-decoration: none; color: var(--c); font-size: 12px; font-weight: 700; text-align: center; -webkit-tap-highlight-color: transparent; }
 .rail .ring { width: 66px; height: 66px; padding: 3px; border-radius: 50%; background: conic-gradient(from 200deg, var(--c), #ffd166, var(--c)); transition: transform .15s var(--ease); }
+.rail a.seen { --c: var(--text-3); }
 .rail a:active .ring { transform: scale(.94); }
 .rail .ring { position: relative; }
 .rail .ring > span { width: 100%; height: 100%; border-radius: 50%; border: 3px solid var(--bg); display: grid; place-items: center; overflow: hidden; background: linear-gradient(135deg, var(--accent), var(--accent-2)); color: #fff; }
@@ -908,4 +909,5 @@ body:has(.player) :is(.site-header, .tabbar, .site-footer, .to-top, .offline-bar
 .rail .ring .i { width: 26px; height: 26px; }
 /* How many stories in the circle are still unseen. */
 .rail-n { position: absolute; bottom: -2px; inset-inline-start: -2px; min-width: 22px; height: 22px; padding: 0 6px; border-radius: 999px; border: 2px solid var(--bg); display: grid; place-items: center; background: var(--new); color: #fff; font-size: 11.5px; font-weight: 800; line-height: 1; }
+.rail .ring img:not([hidden]) ~ .i { display: none; }
 .rail small { width: 100%; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; line-height: 1.45; }

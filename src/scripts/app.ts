@@ -1,7 +1,7 @@
 // Client behaviour for every page. Everything is progressive: the site works without JS.
 import { $, $$, BASE, PAGE_CACHE, fmtNum, getSaved, relTime, store, toast, type Entry } from './core';
-import { award, markNew, recordRead, renderMe, unreadTest } from './game';
-import { TZ, decodeStories, orderGroups, tehranDay } from '../lib/time';
+import { award, clearSeen, markAllSeen, markNew, recordRead, renderMe, unreadTest } from './game';
+import { STORY_SHOW, TZ, decodeStories, pickStories, tehranDay, type StoryOrder, type StoryShow } from '../lib/time';
 import { SITE } from '../site';
 import { showImage, watchMedia } from './media';
 import { initPeek, peek } from './peek';
@@ -14,8 +14,8 @@ export { getSaved, getHistory, rowHtml, store } from './core';
 const root = document.documentElement;
 
 // ---------- display settings ----------
-type Settings = { theme: string; size: string; spacing: string; focus: string; view: string; media: string };
-const DEFAULTS: Settings = { theme: 'auto', size: 'm', spacing: 'm', focus: 'off', view: 'cards', media: 'show' };
+type Settings = { theme: string; size: string; spacing: string; focus: string; view: string; media: string; story: StoryShow; order: StoryOrder };
+const DEFAULTS: Settings = { theme: 'auto', size: 'm', spacing: 'm', focus: 'off', view: 'cards', media: 'show', story: 'unseen', order: 'new' };
 let settings: Settings = { ...DEFAULTS, ...store.get<Partial<Settings>>('settings', {}) };
 const darkQuery = matchMedia('(prefers-color-scheme: dark)');
 const resolvedTheme = () => (settings.theme === 'auto' ? (darkQuery.matches ? 'dark' : 'light') : settings.theme);
@@ -46,14 +46,28 @@ function syncForm() {
     if (input) input.checked = true;
   }
 }
+/** What the stories show changed: the rail redraws, an open player starts over once the sheet closes. */
+const storiesChanged = () => (renderRail(), document.dispatchEvent(new Event('stories-changed')));
 form?.addEventListener('input', (e) => {
   const t = e.target as HTMLInputElement;
   saveSettings({ [t.name]: t.value });
+  if (t.name === 'story' || t.name === 'order') storiesChanged();
 });
 $('[data-reset]')?.addEventListener('click', () => {
   settings = { ...DEFAULTS };
   saveSettings({});
+  storiesChanged();
   toast('تنظیمات به حالت پیش‌فرض برگشت');
+});
+$('[data-seen-all]')?.addEventListener('click', () => {
+  markAllSeen();
+  storiesChanged();
+  toast('همه‌ی خبرها دیده‌شده حساب شدند؛ استوری فقط خبرهای تازه‌تر را نشان می‌دهد');
+});
+$('[data-seen-clear]')?.addEventListener('click', () => {
+  clearSeen();
+  storiesChanged();
+  toast('استوری از نو: خبرهای دیده‌شده دوباره پخش می‌شوند (جز آن‌هایی که باز کرده‌اید)');
 });
 for (const dlg of $$<HTMLDialogElement>('dialog')) {
   dlg.addEventListener('click', (e) => {
@@ -307,26 +321,27 @@ if ('serviceWorker' in navigator && location.hostname !== 'localhost') {
   addEventListener('load', () => navigator.serviceWorker.register(`${BASE}/sw.js`).catch(() => {}));
 }
 
-// ---------- story rail (home): only what this reader hasn't seen — circles with nothing unseen left go away ----------
+// ---------- story rail (home): one circle with what the stories show (settings), the newest unseen one's picture ----------
 function renderRail() {
   const rail = $('[data-rail]');
-  if (!rail) return;
+  const a = rail && $<HTMLAnchorElement>('[data-rail-ids]', rail);
+  if (!rail || !a) return;
   const unread = unreadTest();
-  const circles = $$<HTMLAnchorElement>('[data-rail-group]', rail).map((a) => ({ a, items: decodeStories(a.dataset.ids ?? '') }));
-  let shown = 0;
-  for (const { a, items } of orderGroups(circles, unread)) {
-    const n = items.filter((i) => unread(i.id)).length;
-    a.hidden = !n;
-    if (!n) continue;
-    shown++;
-    const count = $('[data-rail-n]', a)!;
-    count.hidden = false;
-    count.textContent = fmtNum(n);
-    a.setAttribute('aria-label', `${$('small', a)!.textContent} · ${fmtNum(n)} خبر ندیده`);
-    rail.append(a);
-  }
-  rail.hidden = !shown;
-  rail.scrollLeft = 0;
+  const list = pickStories(decodeStories(a.dataset.railIds ?? ''), settings.story, 'new', unread);
+  rail.hidden = !list.length;
+  if (!list.length) return;
+  const unseen = list.filter((i) => unread(i.id));
+  const faces = $$<HTMLImageElement>('[data-face]', a);
+  const faceOf = (id: number) => faces.find((img) => Number(img.dataset.face) === id);
+  const face = [...unseen, ...list].map((i) => faceOf(i.id)).find(Boolean);
+  faces.forEach((img) => (img.hidden = img !== face));
+  const name = STORY_SHOW[settings.story];
+  $('small', a)!.textContent = name;
+  const count = $('[data-rail-n]', a)!;
+  count.hidden = !unseen.length;
+  count.textContent = fmtNum(unseen.length);
+  a.setAttribute('aria-label', unseen.length ? `${name} · ${fmtNum(unseen.length)} خبر ندیده` : name);
+  a.classList.toggle('seen', !unseen.length);
 }
 // Coming back from the player (bfcache) shows what was just watched.
 addEventListener('pageshow', (e) => e.persisted && renderRail());

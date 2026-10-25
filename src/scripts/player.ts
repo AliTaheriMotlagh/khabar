@@ -1,18 +1,18 @@
-// The story player (/today/): stories one after another, like Instagram's. The page carries the recent stories in
-// circles, one per topic (src/lib/time.ts, groupStories), each story in exactly one. Only what this reader hasn't seen
-// or opened yet plays: each circle keeps its unseen stories (as they were when the page opened), circles with none are
-// left out, the newest first (orderGroups), and after a circle's last story the show moves on to the next circle with
-// something unseen. A story counts as seen after a second on screen, or once it's skipped, so coming back picks up
-// where the reader left off. Each scene stays for its own data-seconds.
+// The story player (/today/): stories one after another, like Instagram's. The page carries the recent stories, no
+// topics; what plays is the reader's choice (settings, src/lib/time.ts pickStories, the same as the home rail): by
+// default only what they haven't seen or opened yet (as it was when the page opened), newest first; or today's, or all
+// three days, newest or oldest first. A story counts as seen after a second on screen, or once it's skipped, so coming
+// back picks up with what's still new. #<id> (kept up to date while playing) starts at a story; with only the unseen
+// ones, «next» is the next story not seen yet, past the last one the ones skipped at the start, and the show ends when
+// none is left. The ⚙ button opens the settings; changing what the stories show starts the show over. Each scene stays
+// for its own data-seconds.
 // Two separate switches: «روایت» reads each story's text aloud (the scene lasts as long as the voice), and «صدای ویدیو»
 // lets a video play with its own sound for the video's length. With both on, a video scene is read first (the video
 // silent), then its clip plays once with its sound. Tap the left side for the next story and the right side for the
-// previous one (it's a right-to-left page), swipe sideways for the next or previous circle, hold to pause, swipe down
-// or Esc to leave. ?t=<circle> opens a circle; #<id> (kept up to date while playing) opens a story.
+// previous one (it's a right-to-left page), swipe sideways for the same, hold to pause, swipe down or Esc to leave.
 import { $, $$, fmtNum, store, toast } from './core';
 import { markSeen, unreadTest } from './game';
-import { orderGroups, resumeAt, type StoryItem } from '../lib/time';
-import { showImage } from './media';
+import { STORY_SHOW, nextUnseen, pickStories, type StoryOrder, type StoryShow } from '../lib/time';
 import { Speaker, canSpeakPersian, getReady, type Line } from './speech';
 import { openVoice } from './voice-offer';
 import { voiceSupported } from './voice';
@@ -21,14 +21,12 @@ import { voiceSupported } from './voice';
 const VIDEO_MAX = 60;
 /** The clock waits for a scene's picture or video at most this long, then moves on without it. */
 const WAIT_MAX = 6000;
-/** Up to this many scenes each get a segment of the progress bar; a longer circle gets one bar (a phone fits ~40). */
+/** Up to this many scenes each get a segment of the progress bar; more get one bar (a phone fits ~40). */
 const BARS_MAX = 40;
 /** A story on screen this long counts as seen (skipping past it counts right away). */
 const SEEN_MS = 1000;
 
 type MediaEl = HTMLImageElement | HTMLVideoElement;
-/** A circle: its unseen stories in the order they play (oldest first), and its face. */
-type Group = { key: string; name: string; el: HTMLElement; scenes: HTMLElement[]; items: StoryItem[] };
 const mediaOf = (s?: HTMLElement) => (s ? $<MediaEl>('.pl-bg img, .pl-bg video', s) : null);
 const videoOf = (s?: HTMLElement) => (s ? $<HTMLVideoElement>('.pl-bg video', s) : null);
 /** A video (not a GIF) has its own sound. */
@@ -39,19 +37,14 @@ if (player) init(player);
 
 function init(player: HTMLElement) {
   const every = $$('.pl-scene', player);
-  // What's unseen now stays in its circle for the whole visit (going back to a story just watched works), and so does
-  // a story named in the address (a shared link, a reload mid-story) even if it was seen.
+  // What's unseen now stays in the show for the whole visit (going back to a story just watched works), and so does a
+  // story named in the address (a shared link, a reload mid-story) even if it was seen.
   const fresh = unreadTest();
   const named = location.hash.slice(1);
-  const groups: Group[] = $$('[data-pl-group]', player)
-    .map((el) => {
-      const scenes = every.filter((s) => s.dataset.g === el.dataset.plGroup && (fresh(Number(s.dataset.id)) || s.dataset.id === named));
-      const items = scenes.map((s) => ({ id: Number(s.dataset.id), at: Date.parse(s.dataset.date ?? '') }));
-      return { key: el.dataset.plGroup!, name: el.dataset.name!, el, scenes, items };
-    })
-    .filter((g) => g.scenes.length);
-  // The order is fixed for the visit, as on the home rail when it was tapped: watching doesn't reshuffle it.
-  const queue = orderGroups(groups, fresh);
+  const opts = { story: 'unseen' as StoryShow, order: 'new' as StoryOrder, ...store.get<{ story?: StoryShow; order?: StoryOrder }>('settings', {}) };
+  const all = every.map((s) => ({ s, id: Number(s.dataset.id), at: Date.parse(s.dataset.date ?? '') }));
+  const items = pickStories(all, opts.story, opts.order, (id) => fresh(id) || String(id) === named);
+  const scenes = items.map((i) => i.s);
   const barBox = $('[data-pl-bars]', player)!;
   const end = $('[data-pl-end]', player)!;
   const backdrop = $('[data-pl-backdrop]', player)!;
@@ -59,15 +52,17 @@ function init(player: HTMLElement) {
   const pauseBtn = $('[data-pl-pause]', player)!;
   const soundBtn = $('[data-pl-sound]', player)!;
   const listenBtn = $('[data-pl-listen]', player)!;
-  const face = $<HTMLImageElement>('[data-pl-face]', player)!;
 
-  let g = 0; // the circle playing, in queue
-  let scenes: HTMLElement[] = []; // its stories
   let shown: HTMLElement | null = null; // the scene on screen, until it counts as seen
   let seenTimer = 0;
   let endAt = 0; // when the end screen came up
   const watched: HTMLElement[] = []; // this visit's stories, for the recap
-  let bars: HTMLElement[] = [];
+  // Past BARS_MAX the segments would be slivers: one bar for the whole show, the «۵ از ۶۰» beside it says where.
+  barBox.innerHTML = '<span><i></i></span>'.repeat(scenes.length > BARS_MAX ? 1 : scenes.length);
+  barBox.classList.toggle('many', scenes.length > 24);
+  const bars = $$(':scope > span', barBox);
+  $('[data-pl-count]', player)!.textContent = fmtNum(scenes.length);
+  $('[data-pl-name]', player)!.textContent = STORY_SHOW[opts.story];
   let at = 0;
   let paused = false;
   let held = false;
@@ -108,52 +103,12 @@ function init(player: HTMLElement) {
   /** The current video plays with its own sound (never under the narration). */
   const loud = () => sound && hasAudio(scenes[at]) && phase !== 'narrate';
 
-  // ---------- the circle being played ----------
-  function useGroup(k: number) {
-    g = k;
-    const group = queue[g];
-    scenes = group.scenes;
-    // Past BARS_MAX the segments would be slivers: one bar for the whole circle, the «۵ از ۶۰» beside it says where.
-    const one = scenes.length > BARS_MAX;
-    barBox.innerHTML = '<span><i></i></span>'.repeat(one ? 1 : scenes.length);
-    barBox.classList.toggle('many', scenes.length > 24);
-    bars = $$(':scope > span', barBox);
-    $('[data-pl-name]', player)!.textContent = group.name;
-    $('[data-pl-count]', player)!.textContent = fmtNum(scenes.length);
-    // The circle's face, as on the home rail.
-    const img = $<HTMLImageElement>('img', group.el);
-    face.hidden = !img;
-    face.nextElementSibling?.toggleAttribute('hidden', !!img);
-    if (img) showImage(face, img.currentSrc || img.getAttribute('src') || '', img.dataset.alt);
-    refreshButtons();
-  }
-  /** Story i of circle k. */
-  function play(k: number, i: number) {
-    if (k !== g || !scenes.length) useGroup(k);
-    show(i);
-  }
-  const unseenIn = (k: number, unread = unreadTest()) => queue[k].items.some((i) => unread(i.id));
-  /** After a circle's last story: the next circle with something unseen (the ones after it, then from the top, this
-   *  one included if it was opened halfway), else the end. */
-  function nextGroup() {
+  /** Onward: the next story (with only the unseen ones, the next not seen yet, past the last one those skipped at the
+   *  start), else the end. */
+  function onward() {
     leave();
-    const unread = unreadTest();
-    for (let d = 1; d <= queue.length; d++) {
-      const k = (g + d) % queue.length;
-      if (unseenIn(k, unread)) return play(k, resumeAt(queue[k].items, unread));
-    }
-    finish();
-  }
-  /** Before a circle's first story: the previous circle's last one. */
-  function prevGroup(): void {
-    g > 0 ? play(g - 1, queue[g - 1].scenes.length - 1) : show(0);
-  }
-  /** A sideways swipe: the next or previous circle, where it was left off. */
-  function jump(d: 1 | -1) {
-    const k = g + d;
-    if (k < 0) return show(0);
-    if (k >= queue.length) return nextGroup();
-    play(k, resumeAt(queue[k].items, unreadTest()));
+    const k = opts.story === 'unseen' ? nextUnseen(items, at, unreadTest()) : at + 1 < scenes.length ? at + 1 : -1;
+    k >= 0 ? show(k) : finish();
   }
 
   // ---------- seen ----------
@@ -358,8 +313,8 @@ function init(player: HTMLElement) {
 
   // ---------- scenes ----------
   function show(i: number) {
-    if (i >= scenes.length) return nextGroup();
-    if (i < 0) return prevGroup();
+    if (i >= scenes.length) return onward();
+    if (i < 0) i = 0;
     leave();
     at = i;
     end.hidden = true;
@@ -388,13 +343,13 @@ function init(player: HTMLElement) {
     pos.textContent = fmtNum(at + 1);
     shown = s;
     seenTimer = window.setTimeout(() => s === shown && seen(s), SEEN_MS);
-    history.replaceState(history.state, '', `${location.pathname}?t=${encodeURIComponent(queue[g].key)}#${s.dataset.id}`);
+    history.replaceState(history.state, '', `${location.pathname}#${s.dataset.id}`);
     speaker.stop();
     speak();
     warmNext();
     startClock();
   }
-  const next = () => show(at + 1);
+  const next = onward;
   const prev = () => show(at - 1);
 
   // ---------- the end: everything new seen, and what this visit showed ----------
@@ -411,10 +366,12 @@ function init(player: HTMLElement) {
     $$<HTMLVideoElement>('video', player).forEach((v) => v.pause());
     bars.forEach((b) => b.style.setProperty('--p', '1'));
     const n = watched.length;
-    $('[data-pl-end-title]', player)!.textContent = n ? 'همه‌ی خبرهای تازه را دیدید' : 'خبر تازه‌ای نمانده';
+    const unseenOnly = opts.story === 'unseen';
+    $('[data-pl-end-title]', player)!.textContent = n ? (unseenOnly ? 'همه‌ی خبرهای تازه را دیدید' : 'همه را دیدید') : unseenOnly ? 'خبر تازه‌ای نمانده' : 'امروز هنوز خبری نیامده';
+    if (!unseenOnly) $('[data-pl-end-none]', player)!.textContent = 'از دکمه‌ی تنظیمات بالا می‌توانید «همه‌ی سه روز» را انتخاب کنید.';
     $('[data-pl-end-text]', player)!.hidden = !n;
     $('[data-pl-end-none]', player)!.hidden = !!n;
-    pos.parentElement!.hidden = !queue.length; // «۱ از …» with nothing to play
+    pos.parentElement!.hidden = !scenes.length; // «۱ از …» with nothing to play
     $('[data-pl-total]', player)!.textContent = fmtNum(n);
     $('[data-pl-min]', player)!.textContent = fmtNum(Math.max(1, Math.round(watched.reduce((m, s) => m + (Number(s.dataset.seconds) || 8), 0) / 60)));
     // The recap: this visit's stories in the order they played.
@@ -486,7 +443,7 @@ function init(player: HTMLElement) {
     if (e.type === 'pointercancel') return;
     if (dy > 90 && Math.abs(dy) > Math.abs(dx)) return close();
     if (at >= scenes.length) return;
-    if (Math.abs(dx) > 50 && Math.abs(dx) > Math.abs(dy)) return jump(dx > 0 ? 1 : -1);
+    if (Math.abs(dx) > 50 && Math.abs(dx) > Math.abs(dy)) return dx > 0 ? next() : prev();
     const r = taps.getBoundingClientRect();
     (e.clientX - r.left) / r.width < 0.66 ? next() : prev();
   };
@@ -517,12 +474,11 @@ function init(player: HTMLElement) {
     },
     true,
   );
-  /** Opens the story with this id, in its circle. */
+  /** Opens the story with this id. */
   function open(id: string | undefined) {
-    const k = queue.findIndex((q) => q.scenes.some((s) => s.dataset.id === id));
-    if (k < 0) return false;
-    play(k, queue[k].scenes.findIndex((s) => s.dataset.id === id));
-    return true;
+    const k = scenes.findIndex((s) => s.dataset.id === id);
+    if (k >= 0) show(k);
+    return k >= 0;
   }
   $$('[data-pl-go]', player).forEach((b) => b.addEventListener('click', () => open(b.dataset.plGo)));
   $('[data-pl-close]', player)!.addEventListener('click', (e) => {
@@ -530,7 +486,13 @@ function init(player: HTMLElement) {
     close();
   });
   // Opening a story, saving or sharing pauses the show.
-  player.addEventListener('click', (e) => (e.target as Element).closest('[data-pl-open], [data-save], [data-share]') && !paused && setPaused(true));
+  player.addEventListener('click', (e) => (e.target as Element).closest('[data-pl-open], [data-save], [data-share], [data-open-settings]') && !paused && setPaused(true));
+  // The settings open at the stories' options; a change there starts the show over when the sheet closes.
+  const sheet = $<HTMLDialogElement>('#settings');
+  $('[data-open-settings]', player)?.addEventListener('click', () => requestAnimationFrame(() => $('[data-story-opts]')?.scrollIntoView({ block: 'start' })));
+  let changed = false;
+  document.addEventListener('stories-changed', () => (changed = true));
+  sheet?.addEventListener('close', () => changed && location.replace(location.pathname));
 
   document.addEventListener(
     'keydown',
@@ -539,8 +501,6 @@ function init(player: HTMLElement) {
       const act: Record<string, () => void> = {
         ArrowLeft: () => at < scenes.length && next(),
         ArrowRight: prev,
-        ArrowDown: () => at < scenes.length && jump(1),
-        ArrowUp: () => at < scenes.length && jump(-1),
         ' ': () => setPaused(!paused),
         k: () => setPaused(!paused),
         m: () => setSound(!sound),
@@ -584,13 +544,9 @@ function init(player: HTMLElement) {
       { once: true },
     );
   }
-  // A story named in the address (a reload, a shared link), else the circle asked for, else the first one, each where
-  // this reader left off.
-  if (!queue.length) finish();
-  else if (!open(named)) {
-    const k = Math.max(0, queue.findIndex((q) => q.key === new URLSearchParams(location.search).get('t')));
-    play(k, resumeAt(queue[k].items, unreadTest()));
-  }
+  // A story named in the address (a rail circle, a reload, a shared link), else the newest unseen one.
+  if (!scenes.length) finish();
+  else if (!open(named)) show(0);
   addEventListener('pagehide', () => clearTimeout(seenTimer));
   if (!store.get('pl-hint', false)) {
     const hint = $('[data-pl-hint]', player)!;

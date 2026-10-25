@@ -1,7 +1,7 @@
 // Dates, relative times and the story sets (src/lib/time.ts): node --test tests/
 import { test } from 'node:test';
 import assert from 'node:assert/strict';
-import { OTHER, daysAgo, decodeStories, dropCompanions, encodeStories, groupStories, isToday, lastDays, orderGroups, relTime, resumeAt, tehranDay } from '../src/lib/time.ts';
+import { daysAgo, decodeStories, dropCompanions, encodeStories, isToday, lastDays, nextUnseen, pickStories, relTime, tehranDay } from '../src/lib/time.ts';
 
 // Tehran is UTC+3:30 all year (no daylight saving since 2022).
 const at = (iso) => Date.parse(iso);
@@ -49,65 +49,43 @@ test('relTime: minutes, hours, then calendar days, then the date', () => {
 });
 
 const h = (n) => at('2026-10-25T08:00:00Z') - n * 36e5; // n hours before 11:30 Tehran
-const story = (id, hours, tags, kind = 'story') => ({ id, at: h(hours), tags, kind });
-
-test('groupStories: one circle per topic, every story in exactly one', () => {
-  const list = [
-    story(10, 0, ['امنیت', 'اوپن‌ای‌آی']),
-    story(9, 1, ['چین']),
-    story(8, 2, ['اوپن‌ای‌آی', 'امنیت']),
-    story(7, 3, ['امنیت']),
-    story(6, 4, ['چین', 'آنتروپیک']),
-    story(5, 5, ['فضا']), // a topic of one: no circle of its own
-    story(4, 6, []),
-    story(3, 7, ['رباتیک', 'چین']), // its own topic is too small: goes to its next one
-  ];
-  const groups = groupStories(list);
-  const shape = groups.map((g) => [g.key, g.items.map((i) => i.id)]);
-  // اوپن‌ای‌آی is two stories' second topic but only one's first: too small, so 8 goes to امنیت as well.
-  assert.deepEqual(shape, [
-    ['امنیت', [7, 8, 10]], // oldest first: the order they play in
-    ['چین', [3, 6, 9]],
-    [OTHER.key, [4, 5]],
-  ]);
-  assert.equal(groups.at(-1).name, 'خبرهای دیگر');
-  // Every story once.
-  const ids = groups.flatMap((g) => g.items.map((i) => i.id));
-  assert.deepEqual([...ids].sort(), list.map((i) => i.id).sort());
-  // Circles newest first (by their newest story), «خبرهای دیگر» last even when it has the newest one.
-  assert.deepEqual(groupStories([story(1, 9, ['چین']), story(2, 8, ['چین']), story(3, 0, [])]).map((g) => g.key), ['چین', OTHER.key]);
-  assert.deepEqual(groupStories([]), []);
-  // With a higher bar everything small goes to «خبرهای دیگر».
-  assert.deepEqual(groupStories(list, 4).map((g) => [g.key, g.items.length]), [[OTHER.key, 8]]);
-});
+const story = (id, hours, kind = 'story') => ({ id, at: h(hours), kind });
 
 test('dropCompanions: the forwarded original a story comments on, stamped the same second, is the same news', () => {
-  const list = [story(6100, 1, [], 'brief'), story(6099, 1, []), story(6098, 2, [], 'brief'), story(5829, 3, ['x']), story(5828, 3, ['y'])];
+  const list = [story(6100, 1, 'brief'), story(6099, 1), story(6098, 2, 'brief'), story(5829, 3), story(5828, 3)];
   assert.deepEqual(dropCompanions(list).map((i) => i.id), [6099, 6098, 5829, 5828]);
 });
 
-test('orderGroups / resumeAt: unseen circles first, each picking up at its first unseen story', () => {
-  const groups = [
-    { key: 'a', items: [{ id: 1, at: h(9) }, { id: 2, at: h(2) }] },
-    { key: 'b', items: [{ id: 3, at: h(8) }, { id: 4, at: h(1) }] },
-    { key: 'c', items: [{ id: 5, at: h(7) }, { id: 6, at: h(0) }] },
-  ];
-  const seen = new Set([6, 5, 4]);
+test('pickStories: only the unseen, today or all, newest or oldest first', () => {
+  // 11:30 Tehran on the 25th: 0–11 hours back is today, 12 hours back is yesterday.
+  const now = h(0);
+  const items = [story(5, 0), story(4, 3), story(3, 11), story(2, 12), story(1, 30)];
+  const ids = (list) => list.map((i) => i.id);
+  const unread = (id) => id !== 4 && id !== 2;
+  assert.deepEqual(ids(pickStories(items, 'unseen', 'new', unread, now)), [5, 3, 1]);
+  assert.deepEqual(ids(pickStories(items, 'unseen', 'old', unread, now)), [1, 3, 5]);
+  assert.deepEqual(ids(pickStories(items, 'today', 'new', unread, now)), [5, 4, 3]);
+  assert.deepEqual(ids(pickStories(items, 'all', 'old', unread, now)), [1, 2, 3, 4, 5]);
+  assert.deepEqual(ids(items), [5, 4, 3, 2, 1], 'the list given is left alone');
+});
+
+test('nextUnseen: the next story not seen yet, then the newer ones skipped at the start, then the end', () => {
+  const items = [1, 2, 3, 4, 5].map((id) => ({ id, at: h(id) })); // newest first, the order they play in
+  const seen = new Set();
   const unread = (id) => !seen.has(id);
-  // c is newest but watched to the end: last. b's newest unseen (3, 8 h) is older than a's (2, 2 h).
-  assert.deepEqual(orderGroups(groups, unread).map((g) => g.key), ['a', 'b', 'c']);
-  // a's only unseen story is now its oldest (9 h): b's (8 h) is newer.
-  seen.add(2);
-  assert.deepEqual(orderGroups(groups, unread).map((g) => g.key), ['b', 'a', 'c']);
-  // Watched to the end, a joins c at the back, newest first.
-  seen.add(1);
-  assert.deepEqual(orderGroups(groups, unread).map((g) => g.key), ['b', 'c', 'a']);
-  assert.equal(resumeAt(groups[1].items, unread), 0);
+  assert.equal(nextUnseen(items, 0, unread), 1);
+  // Opened at the third (a rail circle further along): on to the fourth and fifth, then back for the first two.
   seen.add(3);
-  assert.equal(resumeAt(groups[1].items, unread), 0); // all seen: from the top
-  seen.delete(4);
-  assert.equal(resumeAt(groups[1].items, unread), 1);
-  assert.equal(resumeAt([], unread), 0);
+  assert.equal(nextUnseen(items, 2, unread), 3);
+  seen.add(4).add(5);
+  assert.equal(nextUnseen(items, 4, unread), 0);
+  seen.add(1);
+  assert.equal(nextUnseen(items, 0, unread), 1);
+  // Gone back to a story already seen: forward skips what was seen.
+  assert.equal(nextUnseen(items, 2, unread), 1);
+  seen.add(2);
+  assert.equal(nextUnseen(items, 1, unread), -1);
+  assert.equal(nextUnseen([], 0, unread), -1);
 });
 
 test('lastDays: three whole Tehran days up to the newest story, oldest days dropped past the cap', () => {

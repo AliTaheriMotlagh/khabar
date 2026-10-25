@@ -1,29 +1,27 @@
 ---
-// Stories on the home page, like Instagram's: one circle per topic (src/lib/time.ts, groupStories), every recent story
-// in exactly one of them, each circle showing its newest story's picture. data-ids lists a circle's stories in the
-// order they play (oldest first) with their publish times. src/scripts/app.ts keeps only the circles with something
-// this reader hasn't seen (newest first, with how much) and hides the rail when nothing new is left; the player
-// (src/pages/today/) plays only the unseen stories.
+// Stories on the home page, like Instagram's: one circle holding the recent stories, no topics. data-rail-ids lists
+// them with their publish times. src/scripts/app.ts keeps what the reader's settings ask for (only the unseen ones by
+// default, or today's, or all three days), counts what they haven't seen, puts the newest unseen story's picture on
+// the circle (every story's picture is here, hidden, loaded only when shown) and hides the rail when nothing is left;
+// the player (src/pages/today/) plays the same.
 import Icon from './Icon.astro';
-import { faNum, pic, storyGroups, url } from '../lib/posts';
+import { pic, storyItems, url } from '../lib/posts';
 import { encodeStories } from '../lib/time';
-const groups = storyGroups();
+const items = storyItems();
 ---
 {
-  groups.length > 0 && (
-    <nav class="rail" aria-label="استوری خبرها" data-rail>
-      {groups.map((g, k) => {
-        const face = [...g.items].reverse().find((i) => i.p.cover)?.p.cover;
-        return (
-          <a href={url(`today/?t=${encodeURIComponent(g.key)}`)} data-rail-group={g.key} data-ids={encodeStories(g.items)} aria-label={`${g.name} · ${faNum(g.items.length)} خبر`}>
-            <span class="ring">
-              <span>{face ? <img {...pic(face.src || face.poster, 'small')} alt="" loading={k < 6 ? undefined : 'lazy'} decoding="async" referrerpolicy="no-referrer" /> : <Icon name="news" />}</span>
-              <b class="rail-n" data-rail-n hidden></b>
-            </span>
-            <small>{g.name}</small>
-          </a>
-        );
-      })}
+  items.length > 0 && (
+    <nav class="rail" aria-label="استوری خبرهای تازه" data-rail>
+      <a href={url('today/')} data-rail-ids={encodeStories(items)} aria-label="خبرهای تازه">
+        <span class="ring">
+          <span>
+            {items.map(({ p }, k) => p.cover && <img {...pic(p.cover.src || p.cover.poster, 'small')} data-face={p.id} hidden={k > 0} alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer" />)}
+            <Icon name="news" />
+          </span>
+          <b class="rail-n" data-rail-n hidden></b>
+        </span>
+        <small>خبرهای تازه</small>
+      </a>
     </nav>
   )
 }

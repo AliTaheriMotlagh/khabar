@@ -78,24 +78,16 @@ test('timeline: a day pill counts all of that day\'s news, on every page it appe
   }
 });
 
-test('stories: one circle per topic, every recent story in exactly one, the same on the rail and in the player', { skip }, () => {
+test('stories: one circle of the recent news, newest first, the same on the rail and in the player', { skip }, () => {
   const home = html('index.html');
-  const circles = [...home.matchAll(/<a href="[^"]*today\/\?t=[^"]*" data-rail-group="([^"]+)" data-ids="([^"]*)"/g)].map((m) => ({
-    key: m[1],
-    items: m[2].split(',').map((v) => v.split(':').map(Number)),
-  }));
-  assert.ok(circles.length > 0, 'the rail has circles');
-  const ids = circles.flatMap((c) => c.items.map(([id]) => id));
-  assert.equal(new Set(ids).size, ids.length, 'no story in two circles');
-  for (const c of circles) {
-    for (const [id, at] of c.items) assert.equal(at * 1000, Date.parse(posts[id].date), `${id}: rail time`);
-    // A circle plays oldest first.
-    for (let i = 1; i < c.items.length; i++) assert.ok(c.items[i][1] >= c.items[i - 1][1], `${c.key}: ${c.items[i][0]} after ${c.items[i - 1][0]}`);
-    if (c.key !== 'more') {
-      assert.ok(c.items.length >= 2, `${c.key}: a topic circle has two stories at least`);
-      for (const [id] of c.items) assert.ok(posts[id].article.tags.includes(c.key), `${id} is about ${c.key}`);
-    }
-  }
+  const circles = [...home.matchAll(/<a href="[^"]*today\/" data-rail-ids="([^"]*)"/g)];
+  assert.equal(circles.length, 1, 'the rail has one circle');
+  const items = circles[0][1].split(',').map((v) => v.split(':').map(Number));
+  const ids = items.map(([id]) => id);
+  for (const [id, at] of items) assert.equal(at * 1000, Date.parse(posts[id].date), `${id}: rail time`);
+  assert.ok(ids.length > 0, 'the circle has stories');
+  assert.equal(new Set(ids).size, ids.length, 'no story twice');
+  for (let i = 1; i < ids.length; i++) assert.ok(Date.parse(posts[ids[i]].date) <= Date.parse(posts[ids[i - 1]].date), `${ids[i]} after ${ids[i - 1]}`);
   // Three Tehran calendar days, each one whole: every listed story of a carried day is in, except the forwarded
   // original a story comments on (a brief stamped the same second as a story).
   const days = new Set(ids.map((id) => tehranDay(posts[id].date)));
@@ -110,13 +102,11 @@ test('stories: one circle per topic, every recent story in exactly one, the same
     const companion = r.kind === 'brief' && storyTimes.has(r.date);
     assert.equal(carried.has(r.id), !companion, `${r.id} (${r.date}) ${companion ? 'is dropped as a companion' : "is in its day's stories"}`);
   }
-  // The player carries the same circles with the same stories, in the same order.
+  // The player carries the same stories, in the same order.
   const page = html('today/index.html');
-  const scenes = [...page.matchAll(/<article class="pl-scene" data-i="\d+" data-id="(\d+)" data-g="([^"]+)"[^>]*data-date="([^"]+)"/g)];
+  const scenes = [...page.matchAll(/<article class="pl-scene" data-i="\d+" data-id="(\d+)"[^>]*data-date="([^"]+)"/g)];
   assert.deepEqual(scenes.map((m) => Number(m[1])), ids);
-  for (const m of scenes) assert.equal(m[3], posts[m[1]].date);
-  const links = [...page.matchAll(/data-pl-group="([^"]+)"/g)].map((m) => m[1]);
-  assert.deepEqual(links, circles.map((c) => c.key));
+  for (const m of scenes) assert.equal(m[2], posts[m[1]].date);
 });
 
 test('tags: each topic is paged like the archive, every post once, newest first', { skip }, () => {

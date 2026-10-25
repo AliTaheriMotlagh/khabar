@@ -185,10 +185,20 @@ export function markSeen(id: number) {
   if (!seen.includes(id)) store.set('seen', [...seen, id].slice(-500));
   clearNew(id);
 }
-/** Not opened and not watched in the player. */
+/** Not opened, not watched in the player, and not older than «همه را دیده‌ام» (settings). */
 export function unreadTest() {
   const done = new Set([...store.get<number[]>('read', []), ...store.get<number[]>('seen', [])]);
-  return (id: number) => !done.has(id);
+  const below = store.get<number>('seen-below', 0);
+  return (id: number) => id > below && !done.has(id);
+}
+/** «همه را دیده‌ام»: every story up to the newest this build lists counts as seen (post ids only grow). */
+export function markAllSeen() {
+  store.set('seen-below', Number(document.documentElement.dataset.buildLatest) || 0);
+}
+/** «از نو»: what the player showed counts as unseen again (stories opened to read stay seen). */
+export function clearSeen() {
+  store.set('seen', []);
+  store.set('seen-below', 0);
 }
 
 // ---------- new since the last visit ----------

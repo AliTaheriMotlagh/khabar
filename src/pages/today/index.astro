@@ -1,15 +1,15 @@
 ---
 // The news as stories, like Instagram's: one full-screen scene per story, playing on its own (src/scripts/player.ts).
-// The page carries three days of stories in circles, one per topic (storyGroups, the same circles as the home rail),
-// each story in exactly one. The browser plays only what this reader hasn't seen or opened yet, circle by circle
-// (?t=<circle> opens one), and ends when nothing new is left. Without JS it's a plain list.
+// The page carries three days of stories, newest first, no topics (storyItems, the same as the home rail). The browser
+// plays what the reader's settings ask for: by default only what they haven't seen or opened yet, newest first
+// (#<id> starts at a story), and ends when nothing is left. Without JS it's a plain list.
 import Base from '../../layouts/Base.astro';
 import Icon from '../../components/Icon.astro';
 import SaveButton from '../../components/SaveButton.astro';
 import { SITE } from '../../site';
-import { abs, faNum, fresh, pic, picture, sized, storyGroups, url, type Post } from '../../lib/posts';
+import { abs, faNum, fresh, picture, sized, storyItems, url, type Post } from '../../lib/posts';
 
-const groups = storyGroups();
+const items = storyItems();
 const words = (s: string) => s.split(/\s+/).filter(Boolean).length;
 /** What a scene reads aloud: the story's own text, never its headline (unless there is nothing else) — from the first
  *  paragraph that isn't just the headline again (a brief's first line is), up to about SAY_CHARS characters, skipping
@@ -28,12 +28,11 @@ function sayOf(p: Post) {
   });
   return out.length ? out : [{ i: 0, text: p.article.title }];
 }
-const scenes = groups.flatMap((g) => g.items.map(({ p }) => {
+const scenes = items.map(({ p }) => {
   const video = p.gallery.find((m) => m.type === 'video' && m.src);
   const summary = p.excerpt && p.excerpt !== p.article.title ? p.excerpt : '';
   return {
     p,
-    g: g.key,
     video: video ? { src: video.src!, poster: picture(video.poster, 'large').src, gif: !!video.gif, fresh: fresh(video.src) } : null,
     image: p.cover ? picture(p.cover.src || p.cover.poster, 'large') : { src: '', alt: undefined },
     og: p.cover ? sized(p.cover.src || p.cover.poster, 'large') : null, // social cards keep the original URL
@@ -43,12 +42,10 @@ const scenes = groups.flatMap((g) => g.items.map(({ p }) => {
     say: sayOf(p),
     thumb: p.cover ? picture(p.cover.src || p.cover.poster, 'small') : null,
   };
-}));
-/** A circle's face: its newest story's picture, as on the home rail (the player shows it beside the circle's name). */
-const faceOf = (g: (typeof groups)[number]) => [...g.items].reverse().find((i) => i.p.cover)?.p.cover;
+});
 const totalMin = Math.max(1, Math.round(scenes.reduce((n, s) => n + s.seconds, 0) / 60));
 // The first scene's picture is what the page paints first: fetched right away, before the script runs.
-// (Which one plays first depends on the reader; this is the first circle's first, as good a guess as any.)
+// (Which one plays first depends on the reader; the newest is as good a guess as any.)
 const first = scenes[0] ? scenes[0].video?.poster || scenes[0].image.src : '';
 const jsonLd = [
   {
@@ -60,7 +57,7 @@ const jsonLd = [
   },
 ];
 ---
-<Base title="استوری خبرها" description={`خبرهای سه روز اخیر ${SITE.name}، موضوع به موضوع مثل استوری — ${faNum(scenes.length)} خبر، حدود ${faNum(totalMin)} دقیقه.`} image={scenes[0]?.og || null} jsonLd={jsonLd}>
+<Base title="استوری خبرها" description={`خبرهای تازه‌ی ${SITE.name} مثل استوری، تازه‌ترین اول — ${faNum(scenes.length)} خبر، حدود ${faNum(totalMin)} دقیقه.`} image={scenes[0]?.og || null} jsonLd={jsonLd}>
   <Fragment slot="head">
     <link rel="preconnect" href="https://video.twimg.com" />
     {first && <link rel="preload" as="image" href={first} fetchpriority="high" />}
@@ -71,7 +68,7 @@ const jsonLd = [
       <div class="pl-stage" data-pl-stage>
         {
           scenes.map((s, i) => (
-            <article class="pl-scene" data-i={i} data-id={s.p.id} data-g={s.g} data-gif={s.video?.gif ? '' : undefined} data-date={s.p.date} data-seconds={s.seconds} data-say={JSON.stringify(s.say)} aria-hidden={i ? 'true' : undefined}>
+            <article class="pl-scene" data-i={i} data-id={s.p.id} data-gif={s.video?.gif ? '' : undefined} data-date={s.p.date} data-seconds={s.seconds} data-say={JSON.stringify(s.say)} aria-hidden={i ? 'true' : undefined}>
               <div class="pl-bg">
                 {s.video ? (
                   <video data-src={s.video.src} poster={i < 2 ? s.video.poster || s.image.src || undefined : undefined} data-poster={s.video.poster || s.image.src} data-alt={s.video.fresh} muted playsinline loop preload="none" />
@@ -136,41 +133,31 @@ const jsonLd = [
       <div class="pl-top">
         <div class="pl-bars" data-pl-bars></div>
         <div class="pl-head">
-          <span class="pl-face" aria-hidden="true"><img data-pl-face alt="" decoding="async" referrerpolicy="no-referrer" hidden /><span class="logo-mark"></span></span>
-          <span class="pl-title"><b data-pl-name>استوری خبرها</b><small><span data-pl-pos>۱</span> از <span data-pl-count></span></small></span>
+          <span class="pl-face" aria-hidden="true"><span class="logo-mark"></span></span>
+          <span class="pl-title"><b data-pl-name>خبرهای تازه</b><small><span data-pl-pos>۱</span> از <span data-pl-count></span></small></span>
           <button class="pl-btn" type="button" data-pl-listen aria-pressed="false" aria-label="روایت خبر" title="روایت: خبر را برایتان می‌خواند (l)" hidden>
             <Icon name="headphones-off" class="when-off" /><Icon name="headphones" class="when-on" />
           </button>
           <button class="pl-btn" type="button" data-pl-sound aria-pressed="false" aria-label="صدای ویدیو" title="صدای ویدیو (m)" hidden>
             <Icon name="volume-off" class="when-off" /><Icon name="volume" class="when-on" />
           </button>
+          <button class="pl-btn" type="button" data-open-settings aria-label="تنظیمات استوری" title="تنظیمات استوری"><Icon name="settings" /></button>
           <button class="pl-btn" type="button" data-pl-pause aria-pressed="false" aria-label="مکث" title="مکث (فاصله)">
             <Icon name="pause" class="when-off" /><Icon name="play" class="when-on" />
           </button>
-          <span hidden>
-            {groups.map((g) => {
-              const face = faceOf(g);
-              return <span data-pl-group={g.key} data-name={g.name}>{face && <img {...pic(face.src || face.poster, 'small')} alt="" decoding="async" referrerpolicy="no-referrer" />}</span>;
-            })}
-          </span>
           <a class="pl-btn" href={url()} data-pl-close aria-label="بستن" title="بستن (Esc)"><Icon name="x" /></a>
         </div>
       </div>
 
       <button class="pl-arrow prev" type="button" data-pl-prev aria-label="خبر قبلی"><Icon name="arrow-r" /></button>
       <button class="pl-arrow next" type="button" data-pl-next aria-label="خبر بعدی"><Icon name="arrow" /></button>
-      <p class="pl-hint" data-pl-hint hidden>سمت چپ را بزنید: خبر بعدی · بکشید: موضوع بعدی · نگه دارید: مکث</p>
+      <p class="pl-hint" data-pl-hint hidden>سمت چپ را بزنید: خبر بعدی · نگه دارید: مکث</p>
     </div>
   </section>
   <noscript>
     <div class="container narrow">
       <h1 class="page-head">استوری خبرها</h1>
-      {groups.map((g) => (
-        <section>
-          <h2>{g.name}</h2>
-          <ol>{g.items.map(({ p }) => <li><a href={p.href}>{p.article.title}</a></li>)}</ol>
-        </section>
-      ))}
+      <ol>{scenes.map(({ p }) => <li><a href={p.href}>{p.article.title}</a></li>)}</ol>
     </div>
   </noscript>
   <script>

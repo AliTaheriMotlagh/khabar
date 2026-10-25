@@ -9,6 +9,8 @@ const groups: { key: string; label: string; choices: Choice[] }[] = [
   { key: 'focus', label: 'حالت مطالعه در صفحه‌ی خبر', choices: [{ v: 'off', l: 'عادی' }, { v: 'on', l: 'فقط خود خبر' }] },
   { key: 'view', label: 'نمای خبرها', choices: [{ v: 'cards', l: 'کامل با تصویر' }, { v: 'list', l: 'فهرست کوتاه' }] },
   { key: 'media', label: 'تصویر و ویدیو', choices: [{ v: 'show', l: 'نمایش' }, { v: 'tap', l: 'کم‌مصرف (با لمس)' }] },
+  { key: 'story', label: 'استوری‌ها چه خبرهایی را نشان دهند', choices: [{ v: 'unseen', l: 'فقط ندیده‌ها' }, { v: 'today', l: 'امروز' }, { v: 'all', l: 'همه‌ی سه روز' }] },
+  { key: 'order', label: 'ترتیب استوری‌ها', choices: [{ v: 'new', l: 'تازه‌ترین اول' }, { v: 'old', l: 'قدیمی‌ترین اول' }] },
 ];
 ---
 <dialog class="sheet" id="settings" aria-labelledby="settings-title">
@@ -20,7 +22,7 @@ const groups: { key: string; label: string; choices: Choice[] }[] = [
     <p class="sample">ببین رفیق، اینجا متن رو همون‌طوری که راحتی تنظیم کن؛ اندازه، پوسته و نمای خبرها. ۱۴۰۵ — 2026</p>
     {
       groups.map((g) => (
-        <fieldset class="opt">
+        <fieldset class="opt" data-story-opts={g.key === 'story' ? '' : undefined}>
           <legend>{g.label}</legend>
           <div class="seg">
             {g.choices.map((c) => (
@@ -33,6 +35,13 @@ const groups: { key: string; label: string; choices: Choice[] }[] = [
         </fieldset>
       ))
     }
+    <div class="opt voice-row">
+      <span class="voice-row-text"><b>دیده‌شده‌های استوری</b><small>بدون باز کردن تک‌تک خبرها</small></span>
+      <span class="seen-btns">
+        <button class="btn sm" type="button" data-seen-all>همه را دیده‌ام</button>
+        <button class="btn sm" type="button" data-seen-clear>از نو</button>
+      </span>
+    </div>
     <div class="opt voice-row" data-voice-settings hidden>
       <span class="voice-row-text"><b>صدای فارسی برای «گوش دادن»</b><small data-voice-status></small></span>
       <button class="btn sm" type="button" data-voice-open>دانلود صدا</button>
