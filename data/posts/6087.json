@@ -12,7 +12,7 @@
   "site": "FxTwitter",
   "title": "Behnam Neyshabur (@bneyshabur)",
   "description": "We asked Baseten to independently evaluate @mirendil’s base models. We shared our model endpoints so they could evaluate them on their own private codebases. Mirendil-Base-Large ended up being the best of all the models they tested!\nThank you, @baseten,…",
-  "image": "https://cdn4.telesco.pe/file/dKl8rgaQVkblxruU990Tj4tWf-F7yhHL1NQfxwwH0Hzwgqdgo3wIbDrai6N4sMcDkz5_HuIOkkJ3z4uODx-Bt8ju1JM4owHfNOxSyeWsu52s6pUZGL2F4zrUQRJwOGZ9_wMaZqEK3ZpFN2hYDMwps8PtZJ1IG4DjE4m2kuigGU2C1jjaBWTr_oD3OIr3WOIL8gjeP72_mB7geD_mT20wKmzCA2aN_XqHut9xQ8SI2vgK7T1EC4AqXZDTJS4KRA3thb-EfUPqNUWHIHYxCR6wr-wusMoAYIfa2v1bp85D6t2hNWCH7f_4LgvakE2x7Lpd7c78f0P9yVx6qWheRk4B0g.jpg"
+  "image": "https://cdn4.telesco.pe/file/hcOM7lKIojc8tX8qprr7A9GuFOJ5kakfkpYSbG6GSPT4mALJMsKmrPpbRIcqJgN_SKjKykMYxBJoe7D7ceIJjyCYYIbzS3qRD7w92Vcq057cycMl8uWBism4YVVA1B7we56viFMBGJI3A7xp-7OZhfGobKFd3LjvVOhF6rzWU6ow7tgl-HFM4Jn4HbviYogOFE4US_lNphgTx1IF1txPh647-dh9WUY6t8EcZX1OpQ02pt9dQoBPwJg0KbKIx3CamfQpwdQLx9G3teoNFqervAFmjRkFV0NAhMw2qPH3KLP3_CzJRkKzHkZ8-eXzWmgWghTLVV190SCsHM8wlB4ocQ.jpg"
  },
  "gholam": {
   "text": "ببین رفیق، بهنام نیشابور خبر داده که تیم «میرندیل» مدل‌های پایه‌شون رو دادن دست بچه‌های شرکت Baseten تا کاملاً مستقل و بی‌طرف محک بخورن. ماجرا از این قرار بوده که دسترسی کامل به اندپوینت‌ها دادن تا این غول‌های پردازشی روی کدهای خصوصی و ندیده خود Baseten تست بشن و عیارشون مشخص بشه. تهِ ماجرا هم گل کاشته و مدل Mirendil-Base-Large بین تموم مدل‌های تست‌شده کمترین میزان بیت بر بایت (معیار خفن و دقیق سنجش کیفیت) رو ثبت کرده و زده رو دست همشون. حالا هم Baseten اعلام آمادگی کرده که به عنوان همکار رسمی، زیرساخت میزبانی و اجرای این مدل مشتی رو به دست بگیره.\n\nچرا مهمه؟ چون وقتی یه مدل روی کدهای محرمانه و ناشناخته یه شرکت گردن‌کلفت این‌طوری سربلند بیرون میاد، نشون میده تو دنیای واقعی برنامه‌نویسی ادعا نداره و واقعاً کاردرسته.",
@@ -60,5 +60,5 @@
   "why": "چون وقتی یه مدل روی کدهای محرمانه و ناشناخته یه شرکت گردن‌کلفت این‌طوری سربلند بیرون میاد، نشون میده تو دنیای واقعی برنامه‌نویسی ادعا نداره و واقعاً کاردرسته.",
   "tags": []
  },
- "updated": "2026-10-24T11:28:35+00:00"
+ "updated": "2026-10-25T01:09:29+00:00"
 }
