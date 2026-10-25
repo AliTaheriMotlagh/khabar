@@ -78,13 +78,20 @@ test('timeline: a day pill counts all of that day\'s news, on every page it appe
   }
 });
 
-test('stories: the rail and the player carry the same recent stories, newest first, within three days', { skip }, () => {
+test('stories: the rail and the player carry the same recent stories, newest first, three whole days', { skip }, () => {
   const home = html('index.html');
   const recent = home.match(/data-recent="([^"]*)"/)[1].split(',').map((v) => v.split(':').map(Number));
   assert.ok(recent.length > 0);
   for (const [id, at] of recent) assert.equal(at * 1000, Date.parse(posts[id].date), `${id}: rail time`);
   for (let i = 1; i < recent.length; i++) assert.ok(recent[i][0] < recent[i - 1][0]);
-  if (recent.length > 8) assert.ok(recent[0][1] - recent.at(-1)[1] < 3 * 86400, 'three days at most');
+  // Three Tehran calendar days, each one whole: every listed story of a carried day is in.
+  const days = new Set(recent.map(([, t]) => tehranDay(t * 1000)));
+  if (recent.length > 8) assert.ok(days.size <= 3, `three days at most: ${[...days]}`);
+  const carried = new Set(recent.map(([id]) => id));
+  const listed = allPages().flatMap((p) => p.rows.filter((r) => r.id && r.kind !== 'digest'));
+  const lead = Number(home.match(/<article class="lead-main[^"]*" data-id="(\d+)"/)?.[1]);
+  if (lead) listed.push({ id: lead, date: posts[lead].date });
+  for (const r of listed) if (days.has(tehranDay(r.date))) assert.ok(carried.has(r.id), `${r.id} (${r.date}) is in its day's stories`);
   const scenes = [...html('today/index.html').matchAll(/<article class="pl-scene" data-i="\d+" data-id="(\d+)"[^>]*data-date="([^"]+)"/g)].map((m) => [Number(m[1]), m[2]]);
   assert.deepEqual(scenes.map((s) => s[0]), recent.map((r) => r[0]));
   for (const [id, date] of scenes) assert.equal(date, posts[id].date);

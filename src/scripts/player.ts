@@ -6,19 +6,21 @@
 // screen switches sets in place, offering only the sets that have something to play. Opened without a set before
 // anything was published today, it plays the last three days instead of an empty screen.
 import { $, $$, fmtNum, store, toast } from './core';
-import { markSeen, pickStories, storySet, type StorySet } from './game';
+import { markSeen, offersSet, pickStories, storySet, type StorySet } from './game';
 import { Speaker, canSpeakPersian, type Line } from './speech';
 
 const TEXT: Record<StorySet, { name: string; done: string; empty: string }> = {
   new: { name: 'تازه‌ها از آخرین سر زدن', done: 'همه‌ی خبرهای تازه را دیدید', empty: 'از آخرین سر زدنتان خبر تازه‌ای نیامده' },
   unseen: { name: 'خبرهای نخوانده', done: 'همه‌ی خبرهای نخوانده را دیدید', empty: 'خبر نخوانده‌ای نمانده' },
   today: { name: 'امروز در یک نگاه', done: 'همه‌ی خبرهای امروز را دیدید', empty: 'امروز هنوز خبری نیامده' },
-  all: { name: 'همه‌ی خبرها', done: 'همه‌ی خبرهای این سه روز را دیدید', empty: 'خبری نیست' },
+  all: { name: 'سه روز اخیر', done: 'همه‌ی خبرهای این سه روز را دیدید', empty: 'خبری نیست' },
 };
 /** With sound on, a video plays with its own sound for its own length, up to this many seconds. */
 const VIDEO_MAX = 60;
 /** The clock waits for a scene's picture or video at most this long, then moves on without it. */
 const WAIT_MAX = 6000;
+/** Up to this many scenes each get a segment of the progress bar; a longer set gets one bar (a phone fits ~40). */
+const BARS_MAX = 40;
 
 type MediaEl = HTMLImageElement | HTMLVideoElement;
 const mediaOf = (s?: HTMLElement) => (s ? $<MediaEl>('.pl-bg img, .pl-bg video', s) : null);
@@ -71,13 +73,15 @@ function init(player: HTMLElement) {
   function use(next: StorySet) {
     set = next;
     scenes = pickStories(set, items).map((i) => i.el);
-    barBox.innerHTML = scenes.map(() => '<span><i></i></span>').join('');
+    // Past BARS_MAX the segments would be slivers: one bar for the whole set, the «۵ / ۶۰» beside it says where.
+    const one = scenes.length > BARS_MAX;
+    barBox.innerHTML = '<span><i></i></span>'.repeat(one ? 1 : scenes.length);
     barBox.classList.toggle('many', scenes.length > 24);
     bars = $$(':scope > span', barBox);
     $('[data-pl-name]', player)!.textContent = TEXT[set].name;
     $('[data-pl-count]', player)!.textContent = fmtNum(scenes.length);
     $('[data-pl-total]', player)!.textContent = fmtNum(scenes.length);
-    $$<HTMLAnchorElement>('[data-pl-set]', player).forEach((a) => (a.hidden = a.dataset.plSet === set || !pickStories(storySet(a.dataset.plSet), items).length));
+    $$<HTMLAnchorElement>('[data-pl-set]', player).forEach((a) => (a.hidden = a.dataset.plSet === set || !offersSet(storySet(a.dataset.plSet), items)));
     refreshSoundBtn();
   }
   function switchTo(next: StorySet) {
@@ -172,9 +176,14 @@ function init(player: HTMLElement) {
     }
     const p = Math.min(1, elapsed / duration());
     // With narration the voice decides when the scene ends; the bar only estimates.
-    bars[at]?.style.setProperty('--p', String(voiced() ? Math.min(p, 0.97) : p));
+    setBar(at, voiced() ? Math.min(p, 0.97) : p);
     if (p >= 1 && !voiced()) return next();
     raf = requestAnimationFrame(tick);
+  }
+  /** Scene i is p of the way through: its own segment, or its share of the single bar. */
+  function setBar(i: number, p: number) {
+    if (bars.length > 1) bars[i]?.style.setProperty('--p', String(p));
+    else bars[0]?.style.setProperty('--p', String(scenes.length ? (i + p) / scenes.length : 0));
   }
   function startClock() {
     cancelAnimationFrame(raf);
@@ -228,7 +237,8 @@ function init(player: HTMLElement) {
       else x.setAttribute('aria-hidden', 'true');
       if (!on) videoOf(x)?.pause();
     });
-    bars.forEach((b, k) => b.style.setProperty('--p', k < at ? '1' : '0'));
+    if (bars.length > 1) bars.forEach((b, k) => b.style.setProperty('--p', k < at ? '1' : '0'));
+    setBar(at, 0);
     prepare();
     const v = videoOf(s);
     if (v) {

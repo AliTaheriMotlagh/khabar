@@ -1,6 +1,6 @@
 // Client behaviour for every page. Everything is progressive: the site works without JS.
 import { $, $$, BASE, PAGE_CACHE, fmtNum, getSaved, relTime, store, toast, type Entry } from './core';
-import { award, markNew, pickStories, recordRead, renderMe, storySet, unreadTest } from './game';
+import { award, markNew, offersSet, pickStories, recordRead, renderMe, storySet, unreadTest } from './game';
 import { TZ, decodeStories, tehranDay } from '../lib/time';
 import { SITE } from '../site';
 import { watchMedia } from './media';
@@ -314,9 +314,10 @@ function renderRail() {
   const items = decodeStories(rail.dataset.recent ?? '');
   const unread = unreadTest();
   for (const a of $$<HTMLAnchorElement>('[data-rail-set]', rail)) {
-    const picked = pickStories(storySet(a.dataset.railSet), items);
+    const set = storySet(a.dataset.railSet);
+    const picked = pickStories(set, items);
     const n = picked.length;
-    a.hidden = !n;
+    a.hidden = !offersSet(set, items, n);
     a.classList.toggle('seen', !picked.some((i) => unread(i.id)));
     const label = $('small', a)!.firstChild!.textContent!;
     $('[data-rail-count]', a)!.textContent = ` · ${fmtNum(n)}`;

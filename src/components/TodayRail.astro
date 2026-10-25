@@ -1,8 +1,9 @@
 ---
 // Stories on the home page: four circles, each playing a set in the player (src/pages/today/): "new" (arrived since
-// the last visit), "unseen" (not opened or watched yet), "today" (published today, Tehran) and "all" (the last three days).
-// src/scripts/app.ts recounts every set in the browser with the reader's clock and history, and hides a circle with
-// nothing to play; a circle turns grey once everything in it was seen. The personal two stay hidden until then.
+// the last visit), "unseen" (not opened or watched yet), "today" (published today, Tehran) and "all" (the last three
+// calendar days). src/scripts/app.ts recounts every set in the browser with the reader's clock and history, and hides a
+// circle with nothing to play or that only repeats «همه» (offersSet); a circle turns grey once everything in it was seen.
+// The personal two stay hidden until then.
 // data-recent lists the stories the player carries, newest first, with their publish times (src/lib/time.ts).
 import Icon from './Icon.astro';
 import { faNum, recentPosts, url } from '../lib/posts';

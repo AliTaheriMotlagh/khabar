@@ -1,7 +1,7 @@
 import fs from 'node:fs';
 import path from 'node:path';
 import { SITE } from '../site';
-import { DAY, isToday, tehranDay } from './time';
+import { isToday, lastDays, tehranDay } from './time';
 
 // ---- data written by the crawler (pipeline/run.py) ----
 export type Media = {
@@ -178,13 +178,12 @@ export function feedRev() {
 /** Stories and briefs published today (Tehran), as of `now`: the build time here; the browser recounts with its own
  *  clock (src/lib/time.ts), since a static page outlives its day. */
 export const todayPosts = (now = Date.now()): Post[] => getStories().filter((p) => isToday(p.date, now));
-/** What the player and the story rail carry: the three days up to the newest story (at least `min` stories after a quiet
- *  spell). The browser picks today's, the new or the unread ones out of it (src/scripts/player.ts). */
-export function recentPosts(max = 60, min = 8): Post[] {
+/** What the player and the story rail carry: the three calendar days up to the newest story, whole days (at least `min`
+ *  stories after a quiet spell). The browser picks today's, the new or the unread ones out of it (src/scripts/player.ts). */
+export function recentPosts(min = 8): Post[] {
   const stories = getStories();
-  const newest = stories[0] ? Date.parse(stories[0].date) : 0;
-  const recent = stories.filter((p) => newest - Date.parse(p.date) < 3 * DAY);
-  return (recent.length >= min ? recent : stories.slice(0, min)).slice(0, max);
+  const recent = lastDays(stories.map((p) => ({ p, id: p.id, at: Date.parse(p.date) }))).map((i) => i.p);
+  return recent.length >= min ? recent : stories.slice(0, min);
 }
 /** The channel's Persian morning summary (posted ~07:36 Tehran), the home page's brief. */
 export const latestDigest = () => getPosts().find((p) => p.kind === 'digest') ?? null;

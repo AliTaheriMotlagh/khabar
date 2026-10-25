@@ -1,7 +1,7 @@
 // Dates, relative times and the story sets (src/lib/time.ts): node --test tests/
 import { test } from 'node:test';
 import assert from 'node:assert/strict';
-import { chooseStories, daysAgo, decodeStories, encodeStories, isToday, relTime, storySet, tehranDay } from '../src/lib/time.ts';
+import { chooseStories, daysAgo, decodeStories, encodeStories, isToday, lastDays, relTime, storySet, tehranDay } from '../src/lib/time.ts';
 
 // Tehran is UTC+3:30 all year (no daylight saving since 2022).
 const at = (iso) => Date.parse(iso);
@@ -66,16 +66,37 @@ test('chooseStories: today follows the clock, not the newest story', () => {
   assert.deepEqual(ids(chooseStories('all', items, { now: at('2026-10-26T06:00:00Z') })), ids(items));
 });
 
-test('chooseStories: new and unseen follow the reader, newest first, capped', () => {
+test('chooseStories: new and unseen follow the reader, newest first, all of them', () => {
   const read = new Set([6105, 6091]);
   const opts = { now: at('2026-10-25T09:00:00Z'), unread: (id) => !read.has(id), pending: new Set([6105, 6104, 6088]) };
   assert.deepEqual(chooseStories('unseen', items, opts).map((i) => i.id), [6104, 6099, 6088]);
   assert.deepEqual(chooseStories('new', items, opts).map((i) => i.id), [6104, 6088]);
   assert.deepEqual(chooseStories('new', items, { ...opts, pending: new Set() }), []);
   const many = Array.from({ length: 50 }, (_, i) => ({ id: 1000 - i, at: at('2026-10-25T08:00:00Z') - i * 6e4 }));
-  assert.equal(chooseStories('unseen', many).length, 20);
+  // The rail's count is what plays: no hidden cap.
+  assert.equal(chooseStories('unseen', many).length, 50);
   assert.equal(chooseStories('unseen', many)[0].id, 1000);
   assert.equal(chooseStories('all', many).length, 50);
+});
+
+test('lastDays: three whole Tehran days up to the newest story, oldest days dropped past the cap', () => {
+  const ids = (list) => list.map((i) => i.id);
+  // Newest at 10:00 Tehran on the 25th; 72 hours back would cut the 22nd in half — calendar days keep it whole.
+  const list = [
+    { id: 9, at: at('2026-10-25T06:30:00Z') }, // 25th 10:00
+    { id: 8, at: at('2026-10-24T20:31:00Z') }, // 25th 00:01
+    { id: 7, at: at('2026-10-24T20:29:00Z') }, // 24th 23:59
+    { id: 6, at: at('2026-10-23T05:00:00Z') }, // 23rd
+    { id: 5, at: at('2026-10-22T21:00:00Z') }, // 23rd 00:30
+    { id: 4, at: at('2026-10-22T19:00:00Z') }, // 22nd 22:30
+  ];
+  assert.deepEqual(ids(lastDays(list)), [9, 8, 7, 6, 5]);
+  assert.deepEqual(ids(lastDays(list, 2)), [9, 8, 7]);
+  // Over the cap: the 23rd goes as a whole day, never half of it.
+  assert.deepEqual(ids(lastDays(list, 3, 4)), [9, 8, 7]);
+  // A single day busier than the cap keeps its newest.
+  assert.deepEqual(ids(lastDays(list, 1, 1)), [9]);
+  assert.deepEqual(lastDays([]), []);
 });
 
 test('storySet and the rail encoding', () => {
