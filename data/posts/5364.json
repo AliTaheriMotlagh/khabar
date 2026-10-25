@@ -1,0 +1,53 @@
+{
+ "id": 5364,
+ "url": "https://t.me/dlmehr/5364",
+ "date": "2026-09-18T02:04:59+00:00",
+ "text": "https://fxtwitter.com/justanotherlaw/status/2100754948728508602?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+ "forwarded_from": null,
+ "digest": false,
+ "hash": "031bffde5c65",
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/justanotherlaw/status/2100754948728508602?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+  "site": "FxTwitter · wsj.com",
+  "title": "Lawrence Chan (@justanotherlaw)",
+  "description": "This is crazy. In late July, \"three guys with Claude and Codex subscriptions\" were able to use Opus 5 to access OAI auth tokens and gain write access to OpenAI's monorepo openai/openai over the course of two days.\nhttps://www.wsj.com/tech/ai/hackers-used…",
+  "image": "https://cdn4.telesco.pe/file/YeEJoRKokG8qwFebVaqOXwVgxJeRaxZpWGe6-ASeCOm_NcjpmO2SYe0zfQe1Gk0HMVoKSXb3KJbTCoeZ9Vv9w9MvQvvQ1l5Wf4cZJzbvhz6VluMcVhSoG5tGGKSTPyqe2AeQYI5wwMBQQE-ncre8Dk0Gas7hiLX7DXn_3bejfjg2W7aDV5n4bL5gFwpket_JfZNQmPiogUdoqx0VkWDj10R5vIwS7yDVGg7jmHue5oBNljV41ia4-Gbsr1jsTIDg4f3WnLzAiVXHEeTsjTV_Y9anCDL9vAmbxKlLdYy-E927ToO_WoUA_RypSKt4-rtXsRy7Px5t6z91UW8_zzsVEA.jpg"
+ },
+ "gholam": {
+  "text": "ببین رفیق، یه خبر عجیب‌وغریب اومده که اگه بشنوی دود از کلت بلند می‌شه؛ اواخر ماه جولای، سه تا کاربر ساده فقط با داشتن اشتراک کلود و کادکس و با کمک مدل اوپوس ۵ تونستن ظرف دو روز به سیستم‌های داخلی OpenAI نفوذ کنن. این جمع سه‌نفره به توکن‌های احراز هویت این شرکت دستبرد زدن و صاف رفتن سراغ مخزن اصلی کدهاشون و حتی دسترسی نوشتن و تغییر کد هم پیدا کردن. وال‌استریت ژورنال هم گزارش داده که این هکرها عملاً با کمک هوش مصنوعی شرکت رقیب یعنی آنتروپیک، دژ مستحکم سازنده چت‌جی‌پی‌تی رو خلع سلاح کردن. قضیه اون‌قدری صدا کرده که همه موندن چطور سه تا آدم عادی با ابزارهای دم‌دستی تونستن این‌طوری بزرگ‌ترین غول تکنولوژی رو آچمز کنن.\n\nچرا مهمه؟ اهمیتش اینه که ثابت کرد هوش مصنوعی چقدر تو پیدا کردن روزنه‌های امنیتی خطرناک شده و حتی امنیتی‌ترین شرکت‌های دنیا هم ممکنه با ابزارهای عمومی ظرف چند ساعت دور بخورن.",
+  "date": "2026-09-18T02:05:11+00:00"
+ },
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/justanotherlaw/status/2100754948728508602",
+   "domain": "x.com",
+   "author": {
+    "name": "Lawrence Chan",
+    "handle": "justanotherlaw",
+    "avatar": "https://pbs.twimg.com/profile_images/1661122679955685384/fsVmF1Rd_200x200.jpg"
+   },
+   "text": "This is crazy. In late July, \"three guys with Claude and Codex subscriptions\" were able to use Opus 5 to access OAI auth tokens and gain write access to OpenAI's monorepo openai/openai over the course of two days. \n\nhttps://www.wsj.com/tech/ai/hackers-used-anthropics-claude-to-break-into-openai-b40ba883",
+   "date": 1789693984,
+   "media": [],
+   "links": [
+    "https://www.wsj.com/tech/ai/hackers-used-anthropics-claude-to-break-into-openai-b40ba883"
+   ]
+  }
+ ],
+ "article": {
+  "title": "یه خبر عجیب‌وغریب اومده که اگه بشنوی دود از کلت بلند می‌شه؛ اواخر ماه جولای، سه تا کاربر ساده فقط با داشتن اشتراک کلود و کادکس و با کمک مدل اوپوس ۵ تونستن ظرف دو روز به سیستم‌های داخلی OpenAI نفوذ کنن",
+  "source_title": "This is crazy. In late July, \"three guys with Claude and Codex subscriptions\" were able to use Opus 5 to access OAI auth tokens and gain…",
+  "body": [
+   "ببین رفیق، یه خبر عجیب‌وغریب اومده که اگه بشنوی دود از کلت بلند می‌شه؛ اواخر ماه جولای، سه تا کاربر ساده فقط با داشتن اشتراک کلود و کادکس و با کمک مدل اوپوس ۵ تونستن ظرف دو روز به سیستم‌های داخلی OpenAI نفوذ کنن. این جمع سه‌نفره به توکن‌های احراز هویت این شرکت دستبرد زدن و صاف رفتن سراغ مخزن اصلی کدهاشون و حتی دسترسی نوشتن و تغییر کد هم پیدا کردن. وال‌استریت ژورنال هم گزارش داده که این هکرها عملاً با کمک هوش مصنوعی شرکت رقیب یعنی آنتروپیک، دژ مستحکم سازنده چت‌جی‌پی‌تی رو خلع سلاح کردن. قضیه اون‌قدری صدا کرده که همه موندن چطور سه تا آدم عادی با ابزارهای دم‌دستی تونستن این‌طوری بزرگ‌ترین غول تکنولوژی رو آچمز کنن."
+  ],
+  "why": "اهمیتش اینه که ثابت کرد هوش مصنوعی چقدر تو پیدا کردن روزنه‌های امنیتی خطرناک شده و حتی امنیتی‌ترین شرکت‌های دنیا هم ممکنه با ابزارهای عمومی ظرف چند ساعت دور بخورن.",
+  "tags": [
+   "آنتروپیک",
+   "اوپن‌ای‌آی"
+  ]
+ },
+ "updated": "2026-10-25T12:26:32+00:00",
+ "gholam_checked": "2026-10-25T12:26:32+00:00"
+}

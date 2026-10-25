@@ -1,0 +1,76 @@
+{
+ "id": 5379,
+ "url": "https://t.me/dlmehr/5379",
+ "date": "2026-09-20T01:40:18+00:00",
+ "text": "https://fxtwitter.com/airesearch12/status/2101311992984199580?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+ "forwarded_from": null,
+ "digest": false,
+ "hash": "8c52e83b7354",
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/airesearch12/status/2101311992984199580?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+  "site": "🧵 Thread • FxTwitter",
+  "title": "Florian S (@airesearch12)",
+  "description": "JevBench results are in.\nJev still in the lead, but it's close.\nQuoting Florian S (@airesearch12)\nIntroducing JevBench.\nThe first benchmark for Jev class models.\nOriginal Jev by @typesafeai in the lead at 75.3.\nSemIf #2 at 74.6.\nAll results at htt…",
+  "image": "https://cdn4.telesco.pe/file/WXYo8gqd1CdNHI-bbS8YP5cNSTgE8RrVjBRYYJW1Y_Wafjyapom6jCwl5XUwwDZ7On-mt5zv9cFdSzwZLxqFjTOQDJpzW1wQqtMpXvMJhrQU4uf5A75XVkmZrHycC58MksEbSRKUeaIuY4lXsuumPs0SeIMky_BVWPvMA1y4OKClwsPNQzJIz7JlkwPw5FGJEaW0EsXmeu966wt-7_VhYttl-DmY9izCakpKzrHbsI0isS_x1lEGrEPF0oUmbfPIPQlA-cEDOESDOjVHXaJdGuRSM8cuaRTzJaKMKStoOKrn8fypdBINokqA5Uj6NWv-BbM5V1jtOWLWFFxKKASjJA.jpg"
+ },
+ "gholam": {
+  "text": "رفیق، بالاخره نتایج تست جدید «JevBench» که اولین محک درست‌ودرمون واسه ارزیابی مدل‌های کلاس Jev به حساب میاد، از تنور دراومد و جدول رقابت رو حسابی تکون داد. تو این کارزار، مدل اصلی Jev از تیم typesafeai با امتیاز ۷۵.۳ هنوز پرچمش بالاست و تو صدر جدول جا خوش کرده، ولی فاصله‌ش اصلاً حاشیه امنی نیست. درست پشت سرش، مدل SemIf با نمره ۷۴.۶ سفت‌وسخت چسبیده به دمش و حسابی داره تو رتبه دوم براش خط‌ونشون می‌کشه. خلاصه رقابت اون‌قدر پایاپای و میلی‌متری شده که اگه مدل اولی یه لحظه غفلت کنه، بعید نیست تاج و تخت رو دودستی تقدیم رقیب کنه.\n\nاهمیتش اینه که با معرفی این بنچمارک تخصصی، معلوم شد رقبای جدید حسابی نفس‌به‌نفس پیشتاز بازار اومدن بالا و دیگه هیچ مدلی جایگاهش تو صدر جدول تضمین‌شده نیست.",
+  "date": "2026-09-20T01:40:30+00:00"
+ },
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/airesearch12/status/2101311992984199580",
+   "domain": "x.com",
+   "author": {
+    "name": "Florian S",
+    "handle": "airesearch12",
+    "avatar": "https://pbs.twimg.com/profile_images/1942340330314956800/iTdMDC7t_200x200.jpg"
+   },
+   "text": "JevBench results are in.\n\nJev still in the lead, but it's close.",
+   "date": 1789826794,
+   "media": [
+    {
+     "type": "image",
+     "src": "https://pbs.twimg.com/media/HSlcDnPXkAAHTH1.jpg?name=orig",
+     "ratio": 0.7214
+    }
+   ],
+   "links": [],
+   "quote": {
+    "author": {
+     "name": "Florian S",
+     "handle": "airesearch12",
+     "avatar": "https://pbs.twimg.com/profile_images/1942340330314956800/iTdMDC7t_200x200.jpg"
+    },
+    "text": "Introducing JevBench.\n\nThe first benchmark for Jev class models.\n\nOriginal Jev by @typesafeai in the lead at 75.3.\nSemIf #2 at 74.6.\n\nAll results at https://benchmarkheaven.com/jev-models",
+    "date": 1789826740,
+    "media": [
+     {
+      "type": "video",
+      "src": "https://video.twimg.com/amplify_video/2101311146871476224/vid/avc1/1280x720/THCMdbEE5llliLN8.mp4?tag=29",
+      "poster": "https://pbs.twimg.com/amplify_video_thumb/2101311146871476224/img/7iObyfH5AUq_DC_q.jpg",
+      "ratio": 0.5625,
+      "duration": 90,
+      "gif": false
+     }
+    ],
+    "links": [
+     "https://benchmarkheaven.com/jev-models"
+    ]
+   }
+  }
+ ],
+ "article": {
+  "title": "بالاخره نتایج تست جدید «JevBench» که اولین محک درست‌ودرمون واسه ارزیابی مدل‌های کلاس Jev به حساب میاد، از تنور دراومد و جدول رقابت رو حسابی تکون داد",
+  "source_title": "JevBench results are in.",
+  "body": [
+   "رفیق، بالاخره نتایج تست جدید «JevBench» که اولین محک درست‌ودرمون واسه ارزیابی مدل‌های کلاس Jev به حساب میاد، از تنور دراومد و جدول رقابت رو حسابی تکون داد. تو این کارزار، مدل اصلی Jev از تیم typesafeai با امتیاز ۷۵.۳ هنوز پرچمش بالاست و تو صدر جدول جا خوش کرده، ولی فاصله‌ش اصلاً حاشیه امنی نیست. درست پشت سرش، مدل SemIf با نمره ۷۴.۶ سفت‌وسخت چسبیده به دمش و حسابی داره تو رتبه دوم براش خط‌ونشون می‌کشه. خلاصه رقابت اون‌قدر پایاپای و میلی‌متری شده که اگه مدل اولی یه لحظه غفلت کنه، بعید نیست تاج و تخت رو دودستی تقدیم رقیب کنه."
+  ],
+  "why": "با معرفی این بنچمارک تخصصی، معلوم شد رقبای جدید حسابی نفس‌به‌نفس پیشتاز بازار اومدن بالا و دیگه هیچ مدلی جایگاهش تو صدر جدول تضمین‌شده نیست.",
+  "tags": []
+ },
+ "updated": "2026-10-25T12:26:25+00:00",
+ "gholam_checked": "2026-10-25T12:26:25+00:00"
+}

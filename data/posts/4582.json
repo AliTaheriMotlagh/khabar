@@ -1,0 +1,68 @@
+{
+ "id": 4582,
+ "url": "https://t.me/dlmehr/4582",
+ "date": "2026-08-05T00:58:00+00:00",
+ "text": "https://x.com/anic_dev/status/2084371766781137081?s=52",
+ "forwarded_from": "Amirreza",
+ "digest": false,
+ "hash": "bb2561c38034",
+ "media": [],
+ "preview": {
+  "url": "https://x.com/anic_dev/status/2084371766781137081?s=52",
+  "site": "X (formerly Twitter)",
+  "title": "Anicet (@AniC_dev) on X",
+  "description": "we made the simplest & cheapest cloud computer for agents that can still do complex work:\nbox \"--type small\"\nat $0.000,005/s for 2vCPU, 4GB ram, 40GB nvme\nit can even run chrome while streaming its desktop at 30fps!\nand the best power for cost deal in…",
+  "image": "https://cdn4.telesco.pe/file/PNagCOy08f4XOr5TJXDcEJXeleA03Z13lmdwXM0vWr_L1s1oZgxAss7vxAlKdhhnGmgBmbwk1nqND4ITnn1uk7ulh2xbhUlGdukDXHAOzpf9iNSa3V0QuiU6-QwmzKjdJsjoisv5vOQVy-tA3lytsy4PMMauYinDP7tPxJcplj9tcFcqntCbfEifnJLXrOberooR3EL28BlcS0PW1TMyX8_NLFPtmbYWkqzSSD77Dn1HzvQiohVWRQK8qcv0qyoN-3U404FNzeSRRkp-Ru0Y0W1XJUfmLqGQdHH6QsE4dDC9lUDGQZuiZ3CYThXNbUH_oObKTtxOpQAH-RFC66A8Jw.jpg"
+ },
+ "gholam": {
+  "text": "داش، این رفیقمون ارزون‌ترین کامپیوتر ابری رو واسه ایجنت‌ها ردیف کرده که با مفت‌ترین قیمت، کارای سنگین رو مثل آب خوردن انجام میده. تازه هر موقع عشقت کشید می‌تونی بدون پریدن فایلات، سیستم رو نگه داری یا تو چند ثانیه ازش کپی بگیری.",
+  "date": "2026-08-05T00:58:12+00:00"
+ },
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/AniC_dev/status/2084371766781137081",
+   "domain": "x.com",
+   "author": {
+    "name": "Anicet",
+    "handle": "AniC_dev",
+    "avatar": "https://pbs.twimg.com/profile_images/1968045619248877568/XrGi-opy_200x200.jpg"
+   },
+   "text": "we made the simplest & cheapest cloud computer for agents that can still do complex work:\n\nbox \"--type small\"\n\nat $0.000,005/s for 2vCPU, 4GB ram, 40GB nvme\n\nit can even run chrome while streaming its desktop at 30fps!\n\nand the best power for cost deal in the sandbox market: \n\nbox \"--type large\" \n\nat just $0.07/h for 8vCPU 16GB w/ 100gb nvme\n\nit can run minecraft, have chrome open, all while streaming itself at 60fps!\n\nthe cherry on top:\n\nyou can stop/resume or fork any box of any type into any other type, conserving all files, in just a few seconds\n\nlearn more at https://docs.ascii.dev/box/machines",
+   "date": 1785787929,
+   "media": [
+    {
+     "type": "video",
+     "src": "https://video.twimg.com/amplify_video/2084371165452062720/vid/avc1/1280x720/W0qkYx_87wYAyC0Y.mp4?tag=29",
+     "poster": "https://pbs.twimg.com/amplify_video_thumb/2084371165452062720/img/HBsWdTgRQv-fg0If.jpg",
+     "ratio": 0.5625,
+     "duration": 68.35,
+     "gif": false
+    }
+   ],
+   "links": [
+    "https://docs.ascii.dev/box/machines"
+   ]
+  },
+  {
+   "kind": "link",
+   "url": "https://docs.boat.dev/machines",
+   "domain": "docs.boat.dev",
+   "title": "Sandbox sizes: CPU, memory, disk - boat",
+   "description": "The four sandbox sizes with their vCPU, RAM, disk and price per hour, how to pick one, and what every sandbox can do: root, Docker, systemd, no GPU.",
+   "image": "https://ariana-1e97e6c3.mintlify.app/_mintlify/api/og/v2?division=Machines&title=Sandbox+sizes%3A+CPU%2C+memory%2C+disk&description=The+four+sandbox+sizes+with+their+vCPU%2C+RAM%2C+disk+and+price+per+hour%2C+how+to+pick+one%2C+and+what+every+sandbox+can+do%3A+root%2C+Docker%2C+systemd%2C+no+GPU.&theme=7f740fc21976e49484852a50&signature=2dbfc31f63a395ebb6742e9129ad231da60066e287c8f0f51aee3e8e1fa7c705",
+   "site": "boat"
+  }
+ ],
+ "article": {
+  "title": "این رفیقمون ارزون‌ترین کامپیوتر ابری رو واسه ایجنت‌ها ردیف کرده که با مفت‌ترین قیمت، کارای سنگین رو مثل آب خوردن انجام میده",
+  "source_title": "we made the simplest & cheapest cloud computer for agents that can still do complex work:",
+  "body": [
+   "داش، این رفیقمون ارزون‌ترین کامپیوتر ابری رو واسه ایجنت‌ها ردیف کرده که با مفت‌ترین قیمت، کارای سنگین رو مثل آب خوردن انجام میده. تازه هر موقع عشقت کشید می‌تونی بدون پریدن فایلات، سیستم رو نگه داری یا تو چند ثانیه ازش کپی بگیری."
+  ],
+  "why": null,
+  "tags": []
+ },
+ "updated": "2026-10-25T12:30:59+00:00",
+ "gholam_checked": "2026-10-25T12:30:59+00:00"
+}

@@ -1,0 +1,59 @@
+{
+ "id": 4685,
+ "url": "https://t.me/dlmehr/4685",
+ "date": "2026-08-11T00:57:32+00:00",
+ "text": "https://fxtwitter.com/i/status/2086809108263338143",
+ "forwarded_from": "Amin",
+ "digest": false,
+ "hash": "6853b98f3cb2",
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/i/status/2086809108263338143",
+  "site": "🧵 Thread • FxTwitter",
+  "title": "hedoήist (@hedo_ist)",
+  "description": "surprising and unexpected test result\n🤯\nGROK 2.0 vs. SEEDANCE 2.5\nI forced the processor to interpret the landscape by flying over it.\nSimple prompt in the comments:\nI had to use two generations on Seedance to get a good result. Grok did it on the first…",
+  "image": null
+ },
+ "gholam": {
+  "text": "ببین رفیق، یه کاربر اومده دو تا مدل هوش مصنوعی خفن یعنی گراک ۲.۰ و سیدنس ۲.۵ رو تو یه تست پردازش منظره حین پرواز گذاشته جلوی هم تا عیارشون دستش بیاد. دستوری که به هردوتاشون داده کاملاً ساده بوده، اما نتیجه کار خیلیا رو غافلگیر کرده. مدل گراک همون بار اول و ضربتی کار رو تمیز درآورده، در حالی که سیدنس مجبور شده دو بار تلاش کنه تا تازه به یه نتیجه ردیف و درست‌وحسابی برسه.\n\nاهمیتش اینه که نشون میده گراک داره خیلی سریع و بی‌سرودهک رقبا رو تو درک دقیق پرامپت‌ها جا میذاره.",
+  "date": "2026-08-11T00:57:45+00:00"
+ },
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/hedo_ist/status/2086809108263338143",
+   "domain": "x.com",
+   "author": {
+    "name": "hedoήist",
+    "handle": "hedo_ist",
+    "avatar": "https://pbs.twimg.com/profile_images/2012998871891296256/J6em9jmn_200x200.jpg"
+   },
+   "text": "surprising and unexpected test result 🤯\n\nGROK 2.0 vs. SEEDANCE 2.5\n\nI forced the processor to interpret the landscape by flying over it.\n\nSimple prompt in the comments:\n\nI had to use two generations on Seedance to get a good result. Grok did it on the first try.",
+   "date": 1786369037,
+   "media": [
+    {
+     "type": "video",
+     "src": "https://video.twimg.com/amplify_video/2086806367747096576/vid/avc1/840x720/Efq8iTC4puWHAtOl.mp4?tag=29",
+     "poster": "https://pbs.twimg.com/amplify_video_thumb/2086806367747096576/img/gBZxewJbcIkCCr-Z.jpg",
+     "ratio": 0.8571,
+     "duration": 45.125,
+     "gif": false
+    }
+   ],
+   "links": []
+  }
+ ],
+ "article": {
+  "title": "یه کاربر اومده دو تا مدل هوش مصنوعی خفن یعنی گراک ۲.۰ و سیدنس ۲.۵ رو تو یه تست پردازش منظره حین پرواز گذاشته جلوی هم تا عیارشون دستش بیاد",
+  "source_title": "surprising and unexpected test result 🤯",
+  "body": [
+   "ببین رفیق، یه کاربر اومده دو تا مدل هوش مصنوعی خفن یعنی گراک ۲.۰ و سیدنس ۲.۵ رو تو یه تست پردازش منظره حین پرواز گذاشته جلوی هم تا عیارشون دستش بیاد. دستوری که به هردوتاشون داده کاملاً ساده بوده، اما نتیجه کار خیلیا رو غافلگیر کرده. مدل گراک همون بار اول و ضربتی کار رو تمیز درآورده، در حالی که سیدنس مجبور شده دو بار تلاش کنه تا تازه به یه نتیجه ردیف و درست‌وحسابی برسه."
+  ],
+  "why": "نشون میده گراک داره خیلی سریع و بی‌سرودهک رقبا رو تو درک دقیق پرامپت‌ها جا میذاره.",
+  "tags": [
+   "ایلان ماسک"
+  ]
+ },
+ "updated": "2026-10-25T12:30:33+00:00",
+ "gholam_checked": "2026-10-25T12:30:33+00:00"
+}

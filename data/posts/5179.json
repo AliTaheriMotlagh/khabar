@@ -1,0 +1,61 @@
+{
+ "id": 5179,
+ "url": "https://t.me/dlmehr/5179",
+ "date": "2026-09-07T15:34:30+00:00",
+ "text": "https://fxtwitter.com/forloopcodes/status/2096776615258910934?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+ "forwarded_from": null,
+ "digest": false,
+ "hash": "8a6d5bf3b0a1",
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/forloopcodes/status/2096776615258910934?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+  "site": "FxTwitter",
+  "title": "forloop (@forloopcodes)",
+  "description": "GPT 6 Astra is estimated to have ~1.2T Active Parameters and ~10T Total Parameters.\nReports indicate pre-training for GPT-5.5 (codename Spud) concluded on March 24 at the Abilene campus. Astra's pretraining run (Doug) would have taken over that cluster after…",
+  "image": "https://cdn4.telesco.pe/file/HsPI8gpeyUWcuawWJ5e78XjmvI46ZnfLguYqzmflxPbkkq37PiKNMtQXOxMpmoXOpZfVOtMaFvexCiLR5LUwtGLXIbHVq6iktZxXjMRbdLjaA61lAaOFjxpCraMS3UIH1zN6Me4ATF96EgnnKQ-eAHpJMeslo5NWx44cRXrkVw6pogYpTPxr-MXzpmfg10ChJHgq2ichZksHgHr9nZJGI-SKXKkT-EOMi0RhIV47VPSV3WERwMsBvo3TLBNgsHb3taJKF8EI6E6hAazG7KnmerSd5oVAsYYZtlY30BD45I1HoQGxBHf_3-z-uv-eI81mZdqSNn83RwWocXjLNntQlA.jpg"
+ },
+ "gholam": {
+  "text": "ببین رفیق، یه سری آمار و ارقام دست‌اول از غول جدید اوپن‌ای‌آی یعنی GPT-6 Astra درز کرده که قشنگ مغز آدم سوت می‌کشه. ماجرا اینه که طبق این تحلیل‌ها، این هیولا حدود ۱۰ تا ۱۴ تریلیون پارامتر کل و ۱.۲ تریلیون پارامتر فعال داره و واسه پیش‌تمرینش بیشتر از ۱۰۰ هزار تا کارت گرافیک بلک‌ول انویدیا حدود ۱۰۰ روز بی‌وقفه زیر بار موندن. کار به جایی رسیده که خودِ جنسن هوانگ، رئیس انویدیا هم سر این ماجرا توئیت زده و ادعا کرده که دوره هوش جامع مصنوعی یا همون AGI رسماً شروع شده و تازه ۴۰۰ هزار تا چیپ دیگه هم تو راه دارن. از اون‌طرف هم با توجه به قیمت حدودی ۵۰ دلار برای هر میلیون توکن، معلومه که با یه جهش حسابی ولی مهارشده تو قدرت پردازش طرفیم.\n\nاهمیتش اینه که ورود به لیگ مدل‌های ۱۰ تریلیون پارامتری با این ارتش عظیم پردازنده‌ها، ثابت می‌کنه غول‌های تکنولوژی بازی رو کاملاً جدی کردن و مرز بین هوش ماشین و درک انسانی سریع‌تر از چیزی که فکر می‌کردیم داره برداشته میشه.",
+  "date": "2026-09-07T15:34:45+00:00"
+ },
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/forloopcodes/status/2096776615258910934",
+   "domain": "x.com",
+   "author": {
+    "name": "forloop",
+    "handle": "forloopcodes",
+    "avatar": "https://pbs.twimg.com/profile_images/2060201123496300544/fGT2N0S9_200x200.jpg"
+   },
+   "text": "GPT 6 Astra is estimated to have ~1.2T Active Parameters and ~10T Total Parameters.\n\nReports indicate pre-training for GPT-5.5 (codename Spud) concluded on March 24 at the Abilene campus. Astra's pretraining run (Doug) would have taken over that cluster after that, OpenAI confirmed the math results were achieved by an internal version of Astra on August 1. So pretraining ran roughly late March to late June/early July, that is ~90–110 days.\n\nAbilene's operational figure was approximately 150,000 to 200,000 GPUs as of May 2026, with inference sharing the site. So \">100k\" for the run means 100 to 150k GPUs.\n\nAround August 25, information circulated that OpenAI had completed a base model called \"Bel\" with over 10 trillion parameters, successor to Doug. Bel finished ~Aug 25 but Astra was already doing math Aug 1, so Astra is almost certainly on Doug, and Bel is a later model.\n\nCompute for pretraining alone: 120k GPUs × 2.25e15 (BF16) × 0.30 MFU × 100 days ≈ 7e26 FLOP. Range 4e26 to 1.5e27 depending on FP8 and MFU.\n\nWhole 100 days on pretraining, which is now plausible since RL ran afterward (the big RL run was restarted in August per Vellum/CNBC reporting).\n\nNow the data wall does real work. Solve N_active = C / (6·D):\nTokens D          N_active at 7e26\n40T                    2.9T\n60T                    1.9T\n80T                    1.5T\n100T                  1.2T\n\nRealistic 2026 corpora with synthetic data and repeats top out ~60–100T, so active params land at 1 to 2T. Even at the conservative 4e26 end with 80T tokens, you get ~830B active.\n\nAstra bills $50/M output at 62 t/s vs Sol's $30/M, a 1.7x price step, consistent with roughly 1.5 to 2.5x active params over its predecessor, not a 10x jump. Rough, but it argues against the >2T end.\n\nActive parameters: ~1T–1.5T (central ~1.2T)\nTotal parameters: ~10–14T assuming 8–12x MoE sparsity (GPT-4's leaked ratio was ~6.5x; modern large MoE runs 10x+)",
+   "date": 1788745475,
+   "media": [],
+   "links": [],
+   "quote": {
+    "author": {
+     "name": "Jensen Huang",
+     "handle": "JensenHuang",
+     "avatar": "https://pbs.twimg.com/profile_images/2080613261674962944/OMXX4RJ3_200x200.jpg"
+    },
+    "text": "@ChaseLochmiller @OpenAI GPT-6 Astra, trained on ~100K+ NVIDIA Grace Blackwell NVLink72. From ChatGPT to o1 to Astra in 4 years.\n\nAGI has arrived. Congratulations @OpenAI team.\n\n400K GPUs coming online next.",
+    "date": 1788727272,
+    "media": [],
+    "links": []
+   }
+  }
+ ],
+ "article": {
+  "title": "یه سری آمار و ارقام دست‌اول از غول جدید اوپن‌ای‌آی یعنی GPT-6 Astra درز کرده که قشنگ مغز آدم سوت می‌کشه",
+  "source_title": "GPT 6 Astra is estimated to have ~1.2T Active Parameters and ~10T Total Parameters.",
+  "body": [
+   "ببین رفیق، یه سری آمار و ارقام دست‌اول از غول جدید اوپن‌ای‌آی یعنی GPT-6 Astra درز کرده که قشنگ مغز آدم سوت می‌کشه. ماجرا اینه که طبق این تحلیل‌ها، این هیولا حدود ۱۰ تا ۱۴ تریلیون پارامتر کل و ۱.۲ تریلیون پارامتر فعال داره و واسه پیش‌تمرینش بیشتر از ۱۰۰ هزار تا کارت گرافیک بلک‌ول انویدیا حدود ۱۰۰ روز بی‌وقفه زیر بار موندن. کار به جایی رسیده که خودِ جنسن هوانگ، رئیس انویدیا هم سر این ماجرا توئیت زده و ادعا کرده که دوره هوش جامع مصنوعی یا همون AGI رسماً شروع شده و تازه ۴۰۰ هزار تا چیپ دیگه هم تو راه دارن. از اون‌طرف هم با توجه به قیمت حدودی ۵۰ دلار برای هر میلیون توکن، معلومه که با یه جهش حسابی ولی مهارشده تو قدرت پردازش طرفیم."
+  ],
+  "why": "ورود به لیگ مدل‌های ۱۰ تریلیون پارامتری با این ارتش عظیم پردازنده‌ها، ثابت می‌کنه غول‌های تکنولوژی بازی رو کاملاً جدی کردن و مرز بین هوش ماشین و درک انسانی سریع‌تر از چیزی که فکر می‌کردیم داره برداشته میشه.",
+  "tags": [
+   "اوپن‌ای‌آی"
+  ]
+ },
+ "updated": "2026-10-25T12:27:42+00:00",
+ "gholam_checked": "2026-10-25T12:27:42+00:00"
+}

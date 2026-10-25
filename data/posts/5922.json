@@ -2,16 +2,23 @@
  "id": 5922,
  "url": "https://t.me/dlmehr/5922",
  "date": "2026-10-16T03:09:47+00:00",
- "edited": false,
- "views": "185",
  "text": "https://fxtwitter.com/somewheresy/status/2110759944370692216?s=52",
  "forwarded_from": "Amirreza",
  "digest": false,
  "hash": "fc71294803e6",
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/somewheresy/status/2110759944370692216?s=52",
+  "site": "🧵 Thread • FxTwitter",
+  "title": "Somewhere (@somewheresy)",
+  "description": "We've developed a new inference engine, called 'e'.\nIt's the closest thing to alien technology which we have, and pushes 10,500 tok/s aggregate on a single DGX Station with the new @NVIDIAAI Nemotron 3.5 Super VL model, released a few minutes ago.\nQuoting…",
+  "image": "https://cdn4.telesco.pe/file/TL4t7imoc-2YVW1SWGCBf76RP9Hru0bc8dG3_IyJQWTsDhjd6aKQXt_JJN_SOc2_bCRoLGiDO3v0Od6gruCOXlztt03y9cBUSZRNZQvccMxIsm5deS9Kon_nIuPwXrlt6wjG0Iju1f7zZ24zR2M5Cq1QEGyEZtH8ldhEZCd7UO3rSu0sUXs2hQgWizrODZb8ULjNqJ2wbEAqk45gMpaCLXiQi9OyuXxEDfGIxvLxuOLrPuD0L8SDVp_iRQO-zh5dbGTxB_93BxYGI5bBuTRPISm-qd_I_6LaNEx-sed_AwOvaygRBGjS8crOMEPA9ViHRmcIqdaxd4so1XxfzwuU1Q.jpg"
+ },
  "gholam": {
   "text": "رفیق، بچه‌های تیم Somewhere از یه موتور پردازش هوش مصنوعی جدید به اسم «e» رونمایی کردن و مدعی شدن این شاهکار، نزدیک‌ترین چیز به تکنولوژی فضایی‌هاست که تا حالا دیدیم. ماجرا از این قراره که این سیستم روی یه دونه انویدیا DGX Station و با مدل تازه‌نفسِ Nemotron 3.5 Super VL انویدیا، تونسته رکورد جنون‌آمیز ۱۰,۵۰۰ توکن بر ثانیه رو ثبت کنه. داستان دست به دست دادن با پلتفرم Actual Computer بوده تا نشون بدن چطور میشه این سخت‌افزارها رو عملاً به یه کارخونه هوش مصنوعی تمام‌عیار در مقیاس یه بخش کامل تبدیل کرد و بارهای سنگین رو راحت قورت داد.\nاهمیتش اینه که رسیدن به چنین سرعت خفنی روی یه تک سیستم، هزینه‌های استقرار مدل‌های سنگین رو به شدت میاره پایین و سرعت پردازش مدل‌های چندوجهی رو از بیخ و بن متحول می‌کنه.",
   "date": "2026-10-16T03:10:06+00:00"
  },
+ "gholam_checked": "2026-10-24T23:35:32+00:00",
  "links": [
   {
    "kind": "tweet",
@@ -55,18 +62,6 @@
    }
   }
  ],
- "media": [],
- "preview": {
-  "url": "https://fxtwitter.com/somewheresy/status/2110759944370692216?s=52",
-  "site": "🧵 Thread • FxTwitter",
-  "title": "Somewhere (@somewheresy)",
-  "description": "We've developed a new inference engine, called 'e'.\nIt's the closest thing to alien technology which we have, and pushes 10,500 tok/s aggregate on a single DGX Station with the new @NVIDIAAI Nemotron 3.5 Super VL model, released a few minutes ago.\nQuoting…",
-  "image": {
-   "src": "media/5922/preview.webp",
-   "width": 200,
-   "height": 200
-  }
- },
  "article": {
   "title": "بچه‌های تیم Somewhere از یه موتور پردازش هوش مصنوعی جدید به اسم «e» رونمایی کردن و مدعی شدن این شاهکار، نزدیک‌ترین چیز به تکنولوژی فضایی‌هاست که تا حالا دیدیم",
   "source_title": "We've developed a new inference engine, called 'e'.",
@@ -76,6 +71,5 @@
   "why": "رسیدن به چنین سرعت خفنی روی یه تک سیستم، هزینه‌های استقرار مدل‌های سنگین رو به شدت میاره پایین و سرعت پردازش مدل‌های چندوجهی رو از بیخ و بن متحول می‌کنه.",
   "tags": []
  },
- "updated": "2026-10-24T23:35:32+00:00",
- "gholam_checked": "2026-10-24T23:35:32+00:00"
+ "updated": "2026-10-25T11:54:11+00:00"
 }

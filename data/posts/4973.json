@@ -1,0 +1,60 @@
+{
+ "id": 4973,
+ "url": "https://t.me/dlmehr/4973",
+ "date": "2026-08-26T21:12:08+00:00",
+ "text": "https://fxtwitter.com/googleresearch/status/2092686085910667663?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+ "forwarded_from": null,
+ "digest": false,
+ "hash": "ebb4a7222d10",
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/googleresearch/status/2092686085910667663?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+  "site": "FxTwitter",
+  "title": "Google Research (@GoogleResearch)",
+  "description": "Introducing GlucoFM, a lightweight, self-supervised continuous glucose monitoring foundation model that separates metabolic baselines from transient spikes, producing transferable representations and setting new performance standards across diverse metabolic…",
+  "image": "https://cdn4.telesco.pe/file/dhun8yZTdFYkhD66aTSyO5OolNAl7o9KBGOPvp5oN09TP2D-44HiGIc-8NR2rubiSUuBUPVrgfIvJPH0NJACOB_iMsoqDM8wBRviCQlme5PCUawtzIjAYxu-WviRdD5klsiDIg_eytMnm_--ricLxManmsWBxITUYEx9J53cL6xU4BdAtqgjHf56MUp0Onwg8FJ5rSYyWec6nuHVfy4HshYttUXoBE-TrdNAHF1AIMq_rIkxqWLGAGqPILJ2YA9x9Wa9K76K7JjmxshljvoKyRClOPlLgYq2vSozT6u1wRgcW7aX0_Q2wkZOBT3b5W6zlnN2BNzmUpTGLHHBEV6NLg.jpg"
+ },
+ "gholam": null,
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/GoogleResearch/status/2092686085910667663",
+   "domain": "x.com",
+   "author": {
+    "name": "Google Research",
+    "handle": "GoogleResearch",
+    "avatar": "https://pbs.twimg.com/profile_images/2060445303589961728/NrdAg8dM_200x200.jpg"
+   },
+   "text": "Introducing GlucoFM, a lightweight, self-supervised continuous glucose monitoring foundation model that separates metabolic baselines from transient spikes, producing transferable representations and setting new performance standards across diverse metabolic prediction tasks, such as diabetes risk assessment, insulin resistance, and post-prandial glycemic response.\n\nLearn more →https://goo.gle/4cbfigr",
+   "date": 1787770217,
+   "media": [
+    {
+     "type": "image",
+     "src": "https://pbs.twimg.com/media/HQq2vcIaQAA0tOp.jpg?name=orig",
+     "ratio": 0.7772
+    }
+   ],
+   "links": [
+    "https://goo.gle/4cbfigr"
+   ]
+  },
+  {
+   "kind": "link",
+   "url": "https://research.google/blog/glucofm-foundation-model-for-continuous-glucose-monitoring/?utm_source=twitter&utm_medium=social&utm_campaign=social_post&utm_content=gr-acct",
+   "domain": "research.google",
+   "title": "GlucoFM: Foundation model for continuous glucose monitoring",
+   "description": null,
+   "image": "https://storage.googleapis.com/gweb-research2023-media/images/HO_previewImage1.width-800.format-jpeg.jpg",
+   "site": "research.google"
+  }
+ ],
+ "article": {
+  "title": "Introducing GlucoFM, a lightweight, self-supervised continuous glucose monitoring foundation model that separates metabolic baselines from…",
+  "source_title": null,
+  "body": [],
+  "why": null,
+  "tags": []
+ },
+ "updated": "2026-10-25T12:28:55+00:00",
+ "gholam_checked": "2026-10-25T12:28:55+00:00"
+}

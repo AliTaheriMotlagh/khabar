@@ -2,16 +2,23 @@
  "id": 5950,
  "url": "https://t.me/dlmehr/5950",
  "date": "2026-10-18T01:06:11+00:00",
- "edited": true,
- "views": "215",
  "text": "https://fxtwitter.com/azaliamirh/status/2111191896777453932?s=52&t=F41Qa04r48Mef_j_XjBneQ",
  "forwarded_from": null,
  "digest": false,
  "hash": "28bc1b6da155",
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/azaliamirh/status/2111191896777453932?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+  "site": "FxTwitter",
+  "title": "Azalia Mirhoseini (@Azaliamirh)",
+  "description": "NCMs are pretty fast! See the language generation speed vs. autoregressive and diffusion baselines below.\nQuoting Azalia Mirhoseini (@Azaliamirh)\nIntroducing Next-Concept Models (NCMs), a new paradigm for language generation that is significantly faster…",
+  "image": null
+ },
  "gholam": {
   "text": "رفیق، آزالیا میرحسینی از یه معماری تازه تو هوش مصنوعی به اسم NCM یا همون «مدل‌های مفهوم بعدی» رونمایی کرده که توی سرعت تولید متن حسابی گرد و خاک به پا کرده. قضیه اینه که این روش برخلاف مدل‌های سنتیِ اتورگرسیو و حتی دیفیوژن، سرعت تولید کلماتش وحشتناک بالاتره و با دیتای خیلی کمتری هم تربیت می‌شه. سازوکارش هم این‌طوریه که میاد متن رو اول از لایه‌های کلی تا ریزترین جزئیات، توی قالب یه سری «مفاهیم فشرده» یاد می‌گیره و بعد می‌سازتش. خلاصه نشون دادن که بدون معطلی و با مصرف منابع بهینه‌تر هم می‌شه هوش مصنوعیِ سخنور و فرز ساخت.\n\nچرا مهمه؟ چون اگه این معماری جاشو محکم کنه، نسل بعدی چت‌بات‌ها با سرعت برق و باد و مصرف برق و سرور خیلی پایین‌تر کار می‌کنه و هزینه‌ها رو حسابی می‌شکنه.",
   "date": "2026-10-18T01:06:28+00:00"
  },
+ "gholam_checked": "2026-10-24T23:11:46+00:00",
  "links": [
   {
    "kind": "tweet",
@@ -72,14 +79,6 @@
    }
   }
  ],
- "media": [],
- "preview": {
-  "url": "https://fxtwitter.com/azaliamirh/status/2111191896777453932?s=52&t=F41Qa04r48Mef_j_XjBneQ",
-  "site": "FxTwitter",
-  "title": "Azalia Mirhoseini (@Azaliamirh)",
-  "description": "NCMs are pretty fast! See the language generation speed vs. autoregressive and diffusion baselines below.\nQuoting Azalia Mirhoseini (@Azaliamirh)\nIntroducing Next-Concept Models (NCMs), a new paradigm for language generation that is significantly faster…",
-  "image": null
- },
  "article": {
   "title": "آزالیا میرحسینی از یه معماری تازه تو هوش مصنوعی به اسم NCM یا همون «مدل‌های مفهوم بعدی» رونمایی کرده که توی سرعت تولید متن حسابی گرد و خاک به پا کرده",
   "source_title": "NCMs are pretty fast! See the language generation speed vs. autoregressive and diffusion baselines below.",
@@ -89,6 +88,5 @@
   "why": "چون اگه این معماری جاشو محکم کنه، نسل بعدی چت‌بات‌ها با سرعت برق و باد و مصرف برق و سرور خیلی پایین‌تر کار می‌کنه و هزینه‌ها رو حسابی می‌شکنه.",
   "tags": []
  },
- "updated": "2026-10-24T23:11:46+00:00",
- "gholam_checked": "2026-10-24T23:11:46+00:00"
+ "updated": "2026-10-25T11:54:10+00:00"
 }

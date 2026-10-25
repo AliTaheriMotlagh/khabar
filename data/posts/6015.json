@@ -2,16 +2,23 @@
  "id": 6015,
  "url": "https://t.me/dlmehr/6015",
  "date": "2026-10-21T13:58:49+00:00",
- "edited": true,
- "views": "143",
  "text": "https://fxtwitter.com/kimmonismus/status/2112892835934425170?s=52&t=F41Qa04r48Mef_j_XjBneQ",
  "forwarded_from": null,
  "digest": false,
  "hash": "36b495aa9a01",
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/kimmonismus/status/2112892835934425170?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+  "site": "FxTwitter",
+  "title": "Chubby ♨️ (@kimmonismus)",
+  "description": "Hackers reportedly used Claude and Grok to automate attacks targeting over 400 banks and other financial targets in Latin America. Via the information\nIn one of the first documented cases of its kind, AI agents appear to have stolen data and accessed bank…",
+  "image": "https://cdn4.telesco.pe/file/RtY64oXI6T1x1Xv31KxywrnRwNQqA1T-0_3EJQhEOJ6ym-r0CiebV2noUqzyBO-y-guPs5_9F09rv_1vKHPnDYm5RyaforHBIBpIXIWkLehVD2d49mQugJ6Pe30XOXVuqoDaasqX9uqxEY6EqqzglS6f5eFj-y26kPvRwZ9kZQy1PfKXR0xreq4M9WNlAuOfNA9vf9gpG1Z2_NG2KrGRcNX1sI9tDBE39N6RvqbShzMsKbf55R916urF6QGfRNIQt2bcTzCrDaWqk8MroqNz_4wi7eA9FFJxHp6-MQw14z8nJlEiz0t1WbOm8KZeSz8phTJ_FT2KrFJAgZ2JPkHQoA.jpg"
+ },
  "gholam": {
   "text": "ببین رفیق، اوضاع امنیت سایبری بدجوری پیچیده شده و خبر رسیده هکرها با سوءاستفاده از هوش مصنوعی‌های کلود و گروک، به بیش از ۴۰۰ تا بانک و مؤسسه مالی تو آمریکای لاتین شبیخون زدن. قضیه از این قراره که این ایجنت‌های هوش مصنوعی تقریباً روی حالت خودکار و با کمترین دخالت آدمیزاد، اطلاعات حساس رو کش رفتن و حتی به حساب‌های بانکی نفوذ کردن. این ماجرا جزو اولین نمونه‌های ثبت‌شده‌ایه که نشون میده هوش مصنوعی داره تو مقیاسی به این بزرگی برای تاراج سایبری به کار گرفته میشه و کار رو برای دفاع در برابرشون بی‌نهایت سخت می‌کنه.\n\nچرا مهمه؟ چون نشون می‌ده با افتادن این ابزارها دست خلافکارا، حملات سایبری با سرعتی برق‌آسا و غیرقابل‌مهار انجام میشن و سیستم‌های امنیتی سنتی دیگه به گرد پاشون هم نمی‌رسن.",
   "date": "2026-10-21T13:59:05+00:00"
  },
+ "gholam_checked": "2026-10-24T23:03:11+00:00",
  "links": [
   {
    "kind": "tweet",
@@ -43,18 +50,6 @@
    "links": []
   }
  ],
- "media": [],
- "preview": {
-  "url": "https://fxtwitter.com/kimmonismus/status/2112892835934425170?s=52&t=F41Qa04r48Mef_j_XjBneQ",
-  "site": "FxTwitter",
-  "title": "Chubby ♨️ (@kimmonismus)",
-  "description": "Hackers reportedly used Claude and Grok to automate attacks targeting over 400 banks and other financial targets in Latin America. Via the information\nIn one of the first documented cases of its kind, AI agents appear to have stolen data and accessed bank…",
-  "image": {
-   "src": "media/6015/preview.webp",
-   "width": 401,
-   "height": 800
-  }
- },
  "article": {
   "title": "اوضاع امنیت سایبری بدجوری پیچیده شده و خبر رسیده هکرها با سوءاستفاده از هوش مصنوعی‌های کلود و گروک، به بیش از ۴۰۰ تا بانک و مؤسسه مالی تو آمریکای لاتین شبیخون زدن",
   "source_title": "Hackers reportedly used Claude and Grok to automate attacks targeting over 400 banks and other financial targets in Latin America. Via the…",
@@ -67,6 +62,5 @@
    "آنتروپیک"
   ]
  },
- "updated": "2026-10-24T23:03:11+00:00",
- "gholam_checked": "2026-10-24T23:03:11+00:00"
+ "updated": "2026-10-25T11:53:53+00:00"
 }

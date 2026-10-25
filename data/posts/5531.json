@@ -1,0 +1,56 @@
+{
+ "id": 5531,
+ "url": "https://t.me/dlmehr/5531",
+ "date": "2026-09-28T18:52:45+00:00",
+ "text": "https://fxtwitter.com/artificialanlys/status/2104640155843989864?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+ "forwarded_from": null,
+ "digest": false,
+ "hash": "ff499446fd9b",
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/artificialanlys/status/2104640155843989864?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+  "site": "🧵 Thread • FxTwitter",
+  "title": "Artificial Analysis (@ArtificialAnlys)",
+  "description": "Anthropic has launched Claude Sonnet 5.5: it scores 56 on the Artificial Analysis Intelligence Index, just 2 points behind Opus 5.5 (max), but at the highest Output Tokens per Task we’ve seen\nWith max effort, Sonnet 5.5 gains 18 points over Sonnet 5 and…",
+  "image": "https://cdn4.telesco.pe/file/lF3vSaPHtF2EcUyIHhg7xM7pmNYW3VsWj8e7dOksTr3HpTW8YAUmT36bogxPdN9Sm-i-TS9iI9FlTCPeBkTGadutmuNtgeFQMiIA3Yj5zB7n2cef4ilZOx0xo7FKUekJAOTOb3UCynhXU_mhxf65XS_yB194NwXQHxVcBANqEDuE1TgGm7SSwm_rNfRYBihR3kQXIDVCdzup1bsSi42bF11ygnbtjTQDFpnfB1OVX5g0TpdGdnjfOtnfBsR0uRuc9f6r_jTSO3lz8daiEr0x5loVDJDDLOg2zSU4WrBC9jvIyaH7qPUdRFA9OzmMXP7n7VFev9KCxYAYfp64WhRFmw.jpg"
+ },
+ "gholam": {
+  "text": "رفیق، آنتروپیک از غول جدیدش یعنی کلود سونت ۵.۵ رونمایی کرده و طبق ارزیابی‌ها، این مدل رسماً تو بازار هوش مصنوعی گردوخاک به پا کرده. سونت جدید با ثبت نمره ۵۶ تو شاخص هوش، با اختلاف فقط دو نمره پشت سر اپوس ۵.۵ ایستاده و توی کارهای فنی و کدنویسی ترمینال حتی رقبایی مثل جی‌پی‌تی-۶ آسترا رو هم پشت سر گذاشته. نرخ رسمی توکن‌ها همون ۲ دلار ورودی و ۱۰ دلار خروجی برای هر میلیون توکن مونده، ولی این اعجوبه انقدر مفصل و پرتوکن تحلیل می‌کنه که خرج نهایی هر تسکش حدود ۵۰ درصد بالا رفته و به حدود ۷.۶ دلار رسیده. البته توی فکت‌های علمی و دقیق هنوز یه سر و گردن از اپوس عقب‌تره، اما در عوض درصد توهم و سوتی دادنش به مراتب کمتر شده.\n\nاهمیتش اینه که به مدلی رسیدیم که هوش سنگین‌ترین پرچم‌دارها رو با دقت بالا میده دست کاربر، اما اگه حواست به تنظیمات مصرف توکنش نباشه، حسابی سر کیسه رو شل می‌کنه.",
+  "date": "2026-09-28T18:53:03+00:00"
+ },
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/ArtificialAnlys/status/2104640155843989864",
+   "domain": "x.com",
+   "author": {
+    "name": "Artificial Analysis",
+    "handle": "ArtificialAnlys",
+    "avatar": "https://pbs.twimg.com/profile_images/2042402069320290304/A8C1lP07_200x200.jpg"
+   },
+   "text": "Anthropic has launched Claude Sonnet 5.5: it scores 56 on the Artificial Analysis Intelligence Index, just 2 points behind Opus 5.5 (max), but at the highest Output Tokens per Task we’ve seen\n\nWith max effort, Sonnet 5.5 gains 18 points over Sonnet 5 and to #2 on the Intelligence Index behind only Opus 5.5 (max). Anthropic has priced Sonnet 5.5 identically to Sonnet 5 at $0.2/$2/$10 per 1M cache input/input/output tokens, however it outputs a higher number of Output Tokens per Task and costs $7.60 per task (~50% higher than Sonnet 5’s Cost per Task)\n\nKey takeaways:\n\n➤ Meets leading models on agentic terminal use and knowledge work: in Terminal-Bench 4.0, Claude Sonnet 5.5 reaches 64% against 60% for Opus 5.5 and GPT-6 Astra. On AA-Briefcase (1811 vs 1822 Elo), GDPval-AA (1844 vs 1846 Elo), and AutomationBench-AA (71% vs 70% headline score), Sonnet 5.5 reaches parity with Opus 5.5, albeit with significantly higher token usage to achieve it\n\n➤ Heaviest token use we have measured: at max effort, where it reaches performance nearing that of Opus 5.5, Claude Sonnet 5.5 used ~193k Output Tokens per Intelligence Index Task. This is the highest token use we have measured on around 60% higher than Opus 5.5 (max) or Sonnet 5 (max) and ~7x GPT-6 Astra (max)\n\n➤ Pricing remains at $2/$10 per million tokens of input/output, matching GPT-6 Sol. At this pricing Claude Sonnet 5.5 sits off the Intelligence vs. Cost per Task Pareto Frontier. At high effort levels it sits behind Opus 5.5, while lower efforts have GPT-6 Astra or Sol configurations delivering equivalent performance for lower cost. The high effort setting is the most competitive on this basis, sitting very narrowly behind GPT-6 Sol on Intelligence at effectively the same Cost per Task\n\n➤ Behind Opus 5.5 on factual knowledge and scientific reasoning: as a smaller class model, Sonnet 5.5 still lags on factual knowledge in AA-Omniscience compared to Opus 5.5. It scores 54% against 66% for factual accuracy, though with a lower hallucination rate (47% against 59%). It also sits ~6 points lower on Humanity's Last Exam and SciCode compared to Opus\n\nThese evaluations were conducted on a pre-release deployment of Claude Sonnet 5.5, which Anthropic found to have a bug that can degrade responses to requests that use structured outputs. This is fixed for the public release and Anthropic expects minimal change or slightly understated performance, but we will be re-running relevant evaluations soon.\n\nOther model details:\n\n➤ Context window: 1 million tokens with image and text input, unchanged from Sonnet 5\n\n➤ Pricing: unchanged from Sonnet 5’s latest $2/$10 per 1M input/output tokens; cache writes at $2.5, cache reads $0.2\n\n➤ Effort settings: five (low, medium, high, xhigh, max). Intelligence Index evaluations were run at all five with Anthropic's default fallback enabled. We see Sonnet 5.5 fall back in ~0.1% of tasks across the Intelligence Index, primarily in TerminalBench 4.0, falling back to Sonnet 5 in all cases.",
+   "date": 1790620290,
+   "media": [
+    {
+     "type": "image",
+     "src": "https://pbs.twimg.com/media/HTUuFucbYAAx-9o.jpg?name=orig",
+     "ratio": 0.857
+    }
+   ],
+   "links": []
+  }
+ ],
+ "article": {
+  "title": "آنتروپیک از غول جدیدش یعنی کلود سونت ۵.۵ رونمایی کرده و طبق ارزیابی‌ها، این مدل رسماً تو بازار هوش مصنوعی گردوخاک به پا کرده",
+  "source_title": "Anthropic has launched Claude Sonnet 5.5: it scores 56 on the Artificial Analysis Intelligence Index, just 2 points behind Opus 5.5 (max)…",
+  "body": [
+   "رفیق، آنتروپیک از غول جدیدش یعنی کلود سونت ۵.۵ رونمایی کرده و طبق ارزیابی‌ها، این مدل رسماً تو بازار هوش مصنوعی گردوخاک به پا کرده. سونت جدید با ثبت نمره ۵۶ تو شاخص هوش، با اختلاف فقط دو نمره پشت سر اپوس ۵.۵ ایستاده و توی کارهای فنی و کدنویسی ترمینال حتی رقبایی مثل جی‌پی‌تی-۶ آسترا رو هم پشت سر گذاشته. نرخ رسمی توکن‌ها همون ۲ دلار ورودی و ۱۰ دلار خروجی برای هر میلیون توکن مونده، ولی این اعجوبه انقدر مفصل و پرتوکن تحلیل می‌کنه که خرج نهایی هر تسکش حدود ۵۰ درصد بالا رفته و به حدود ۷.۶ دلار رسیده. البته توی فکت‌های علمی و دقیق هنوز یه سر و گردن از اپوس عقب‌تره، اما در عوض درصد توهم و سوتی دادنش به مراتب کمتر شده."
+  ],
+  "why": "به مدلی رسیدیم که هوش سنگین‌ترین پرچم‌دارها رو با دقت بالا میده دست کاربر، اما اگه حواست به تنظیمات مصرف توکنش نباشه، حسابی سر کیسه رو شل می‌کنه.",
+  "tags": [
+   "آنتروپیک"
+  ]
+ },
+ "updated": "2026-10-25T12:25:33+00:00",
+ "gholam_checked": "2026-10-25T12:25:33+00:00"
+}

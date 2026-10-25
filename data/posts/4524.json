@@ -1,0 +1,66 @@
+{
+ "id": 4524,
+ "url": "https://t.me/dlmehr/4524",
+ "date": "2026-08-01T16:17:56+00:00",
+ "text": "https://fxtwitter.com/harshalsinghcn/status/2083223503554449745?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+ "forwarded_from": null,
+ "digest": false,
+ "hash": "7f60fd5b5231",
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/harshalsinghcn/status/2083223503554449745?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+  "site": "🧵 Thread • FxTwitter",
+  "title": "harrrshall (@HarshalsinghCN)",
+  "description": "introducing BarunLM (35m)\n🤗\ni pretrained the world's best small model under 100m parameters.\na 35m parameter language model that outperforms models over 6x larger, including LiquidAI's lfm2.5-230m, while training on a single H200 gpu.\nthe gains come from…",
+  "image": "https://cdn4.telesco.pe/file/oUkMRHFKxsPPGqejKMBACXk0JZ2aY9b0OqVWnZo67LYeK8p-bj_anCw9jf54JOcCfWiMRd9DJ1r9urRiDNxfDrbc5rJcMg89rgLiJszQLxe1szUpIxZknGEZuhbMZEbWpxKKEpTfLCO6n0qQxyaVUiN6s3QFtIGOUzyzIV24tJfnX6f8OT3QDRXNZm72xRi5F5fIhIEBPoDlOczc1-XyHfUTRvW7IEkA9iIJsiKIpwy4OcTSxImdAKPOsDWBObr3gMZqr4XIc4PlE0lIBPQ7SgVbPHOMsW8t0Dq3CznNbTUGffeg_WU1qarxqjzL_lZSJTMSXQ0GnDhg-vj92Ft7Tw.jpg"
+ },
+ "gholam": {
+  "text": "ببین، طرف اومده یه مدل زبانی ۳۵ میلیون پارامتری به اسم BarunLM ساخته که فقط با یه گرافیک H200 تمرین داده شده، ولی مدل‌های ۶ برابر بزرگ‌تر از خودش مثل lfm2.5-230m رو هم لوله می‌کنه! با ترکیب معماری‌های دیپ‌سیک و کیمی و تقویت با RLVR بدون لیبل انسانی، یه غول کوچولو تحویل داده.",
+  "date": "2026-08-01T16:23:20+00:00"
+ },
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/HarshalsinghCN/status/2083223503554449745",
+   "domain": "x.com",
+   "author": {
+    "name": "harrrshall",
+    "handle": "HarshalsinghCN",
+    "avatar": "https://pbs.twimg.com/profile_images/2052255158357372928/lz1-5EkG_200x200.jpg"
+   },
+   "text": "introducing BarunLM (35m) 🤗\n\ni pretrained the world's best small model under 100m parameters.\n\na 35m parameter language model that outperforms models over 6x larger, including LiquidAI's lfm2.5-230m, while training on a single H200 gpu.\n\nthe gains come from a better architecture. we took inspiration from deepseek, kimi, and other frontier open source models.\n\nBarunLM combines hybrid local and global attention, grouped query attention to reduce memory, partial rope, gated attention, bounded swiglu, and residual selectors to improve how information flows through the network.\n\nafter pretraining, we further improved the model with rlvr (reinforcement learning with verifiable rewards) using deterministic verifiers and rloo, allowing the model to reinforce correct reasoning without relying on human preference labels.",
+   "date": 1785514162,
+   "media": [
+    {
+     "type": "image",
+     "src": "https://pbs.twimg.com/media/HOkVoLhagAAd6Uu.jpg?name=orig",
+     "ratio": 0.562
+    },
+    {
+     "type": "image",
+     "src": "https://pbs.twimg.com/media/HOkVbSGbEAAy7R0.jpg?name=orig",
+     "ratio": 0.5354
+    },
+    {
+     "type": "image",
+     "src": "https://pbs.twimg.com/media/HOkVcj6bcAACJO2.jpg?name=orig",
+     "ratio": 0.5433
+    }
+   ],
+   "links": []
+  }
+ ],
+ "article": {
+  "title": "طرف اومده یه مدل زبانی ۳۵ میلیون پارامتری به اسم BarunLM ساخته که فقط با یه گرافیک H200 تمرین داده شده، ولی مدل‌های ۶ برابر بزرگ‌تر از خودش مثل lfm2.5-230m رو هم لوله می‌کنه",
+  "source_title": "introducing BarunLM (35m) 🤗",
+  "body": [
+   "ببین، طرف اومده یه مدل زبانی ۳۵ میلیون پارامتری به اسم BarunLM ساخته که فقط با یه گرافیک H200 تمرین داده شده، ولی مدل‌های ۶ برابر بزرگ‌تر از خودش مثل lfm2.5-230m رو هم لوله می‌کنه! با ترکیب معماری‌های دیپ‌سیک و کیمی و تقویت با RLVR بدون لیبل انسانی، یه غول کوچولو تحویل داده."
+  ],
+  "why": null,
+  "tags": [
+   "چین"
+  ]
+ },
+ "updated": "2026-10-25T12:31:18+00:00",
+ "gholam_checked": "2026-10-25T12:31:18+00:00"
+}

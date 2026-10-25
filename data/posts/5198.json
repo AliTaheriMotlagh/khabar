@@ -1,0 +1,68 @@
+{
+ "id": 5198,
+ "url": "https://t.me/dlmehr/5198",
+ "date": "2026-09-08T17:04:05+00:00",
+ "text": "https://fxtwitter.com/gradiumai/status/2097359468963004826?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+ "forwarded_from": null,
+ "digest": false,
+ "hash": "ea7b2f63bfef",
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/gradiumai/status/2097359468963004826?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+  "site": "FxTwitter",
+  "title": "Gradium (@GradiumAI)",
+  "description": "Today, we’re launching Voice Design.\nWrite a prompt, create a voice.\nDescribe the accent, age, gender, and pace your use case needs, and get new voices in seconds, ready to use.\nLive and free in the Gradium API and Studio. https://gradium.link/voice…",
+  "image": null
+ },
+ "gholam": {
+  "text": "رفیق، مجموعه Gradium تازه از یه قابلیت تر و تمیز به اسم Voice Design رونمایی کرده که خوراکِ ساخت صدای دلخواه با هوش مصنوعیه. قضیه این‌طوریه که فقط کافیه مشخصات صدایی رو که می‌خوای—از لهجه و سن گرفته تا جنسیت و سرعت کلام—با یه متن ساده براش بنویسی تا سه سوت یه صدای اختصاصی و آماده تحویلت بده. نکته مشتی ماجرا هم اینجاست که این ابزار همین حالا هم توی استودیو و هم از طریق API به شکل زنده و کاملاً رایگان در دسترسه تا کارت راه بیفته.\n\nچرا مهمه؟ چون بدون یه ریال خرج و نیاز به صداپیشه، ساخت صداهای سفارشی رو برای تولید محتوا و بازی‌سازی توی چند ثانیه ممکن کرده.",
+  "date": "2026-09-08T17:04:17+00:00"
+ },
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/GradiumAI/status/2097359468963004826",
+   "domain": "x.com",
+   "author": {
+    "name": "Gradium",
+    "handle": "GradiumAI",
+    "avatar": "https://pbs.twimg.com/profile_images/2085285740032745472/0_Hbd7an_200x200.png"
+   },
+   "text": "Today, we’re launching Voice Design.  \n\nWrite a prompt, create a voice.  \n\nDescribe the accent, age, gender, and pace your use case needs, and get new voices in seconds, ready to use.  \n\nLive and free in the Gradium API and Studio. https://gradium.link/voice-design",
+   "date": 1788884439,
+   "media": [
+    {
+     "type": "video",
+     "src": "https://video.twimg.com/amplify_video/2097359409383186439/vid/avc1/1280x720/vzm9mMPrGEHrPvO0.mp4?tag=29",
+     "poster": "https://pbs.twimg.com/amplify_video_thumb/2097359409383186439/img/MNXAH1lpjDcgAaJ3.jpg",
+     "ratio": 0.5625,
+     "duration": 51.733,
+     "gif": false
+    }
+   ],
+   "links": [
+    "https://gradium.link/voice-design"
+   ]
+  },
+  {
+   "kind": "link",
+   "url": "https://gradium.ai/voice-design",
+   "domain": "gradium.ai",
+   "title": "Voice Design",
+   "description": "Describe who is speaking and hear them in seconds. Five languages, real regional accents, no rights to clear.",
+   "image": "https://gradium.ai/assets/og-voice-ai.jpg",
+   "site": "gradium.ai"
+  }
+ ],
+ "article": {
+  "title": "مجموعه Gradium تازه از یه قابلیت تر و تمیز به اسم Voice Design رونمایی کرده که خوراکِ ساخت صدای دلخواه با هوش مصنوعیه",
+  "source_title": "Today, we’re launching Voice Design.",
+  "body": [
+   "رفیق، مجموعه Gradium تازه از یه قابلیت تر و تمیز به اسم Voice Design رونمایی کرده که خوراکِ ساخت صدای دلخواه با هوش مصنوعیه. قضیه این‌طوریه که فقط کافیه مشخصات صدایی رو که می‌خوای—از لهجه و سن گرفته تا جنسیت و سرعت کلام—با یه متن ساده براش بنویسی تا سه سوت یه صدای اختصاصی و آماده تحویلت بده. نکته مشتی ماجرا هم اینجاست که این ابزار همین حالا هم توی استودیو و هم از طریق API به شکل زنده و کاملاً رایگان در دسترسه تا کارت راه بیفته."
+  ],
+  "why": "چون بدون یه ریال خرج و نیاز به صداپیشه، ساخت صداهای سفارشی رو برای تولید محتوا و بازی‌سازی توی چند ثانیه ممکن کرده.",
+  "tags": []
+ },
+ "updated": "2026-10-25T12:27:36+00:00",
+ "gholam_checked": "2026-10-25T12:27:36+00:00"
+}

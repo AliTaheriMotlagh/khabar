@@ -1,0 +1,61 @@
+{
+ "id": 4553,
+ "url": "https://t.me/dlmehr/4553",
+ "date": "2026-08-03T16:21:49+00:00",
+ "text": "https://fxtwitter.com/clankrmedia/status/2084265162052182434?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+ "forwarded_from": null,
+ "digest": false,
+ "hash": "843adff3950d",
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/clankrmedia/status/2084265162052182434?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+  "site": "FxTwitter",
+  "title": "clankr (@clankrmedia)",
+  "description": "Another robotics startup just came out of stealth.\nReimagine Robotics founded by ex-Google DeepMind leaders.\nWorkers teach its robots new factory tasks by demonstration.\nThe company says new tasks can be deployed in 10 minutes.",
+  "image": null
+ },
+ "gholam": {
+  "text": "ببین رفیق، کاردرستای قدیمی گوگل دیپ‌مایند یه استارتاپ رباتیک جدید رو کردن که کارگرا فقط با یه بار نشون دادن، تو ۱۰ دقیقه تمام فوت‌وفن کارخونه رو به ربات یاد میدن.",
+  "date": "2026-08-03T16:22:01+00:00"
+ },
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/clankrmedia/status/2084265162052182434",
+   "domain": "x.com",
+   "author": {
+    "name": "clankr",
+    "handle": "clankrmedia",
+    "avatar": "https://pbs.twimg.com/profile_images/2063347037966671872/VFpHBAn8_200x200.jpg"
+   },
+   "text": "Another robotics startup just came out of stealth.\n\nReimagine Robotics founded by ex-Google DeepMind leaders.\n\nWorkers teach its robots new factory tasks by demonstration.\n\nThe company says new tasks can be deployed in 10 minutes.",
+   "date": 1785762513,
+   "media": [
+    {
+     "type": "video",
+     "src": "https://video.twimg.com/ext_tw_video/2084265134910742528/pu/vid/avc1/1280x720/y3JMo3KGo_LHUfNh.mp4?tag=12",
+     "poster": "https://pbs.twimg.com/ext_tw_video_thumb/2084265134910742528/pu/img/qe40jDm170rk7cgu.jpg",
+     "ratio": 0.5625,
+     "duration": 14.505,
+     "gif": false
+    }
+   ],
+   "links": []
+  }
+ ],
+ "article": {
+  "title": "کاردرستای قدیمی گوگل دیپ‌مایند یه استارتاپ رباتیک جدید رو کردن که کارگرا فقط با یه بار نشون دادن، تو ۱۰ دقیقه تمام فوت‌وفن کارخونه رو به ربات یاد میدن",
+  "source_title": "Another robotics startup just came out of stealth.",
+  "body": [
+   "ببین رفیق، کاردرستای قدیمی گوگل دیپ‌مایند یه استارتاپ رباتیک جدید رو کردن که کارگرا فقط با یه بار نشون دادن، تو ۱۰ دقیقه تمام فوت‌وفن کارخونه رو به ربات یاد میدن."
+  ],
+  "why": null,
+  "tags": [
+   "رباتیک",
+   "گوگل",
+   "استارتاپ"
+  ]
+ },
+ "updated": "2026-10-25T12:31:07+00:00",
+ "gholam_checked": "2026-10-25T12:31:07+00:00"
+}

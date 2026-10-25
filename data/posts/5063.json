@@ -1,0 +1,37 @@
+{
+ "id": 5063,
+ "url": "https://t.me/dlmehr/5063",
+ "date": "2026-09-01T04:01:33+00:00",
+ "text": "24-hour news summary.\n\n1 (https://t.me/dlmehr/5047) Gholam’s source code is now available on GitHub.\n\n2 (https://t.me/dlmehr/5048) OpenAI’s advertising business reportedly reached a $1 billion annualized revenue run rate after 200 days.\n\n3 (https://t.me/dlmehr/5049) Samsung reportedly committed about 70% of its memory capacity through 2031, driving sharp spot-price increases.\n\n4 (https://t.me/dlmehr/5050) MediaTek plans to use NVIDIA’s NVHBM and NVLink Fusion technologies for custom accelerator platforms.\n\n5 Gemini 3.7 Flash reportedly generates 315 tokens per second, far exceeding several leading models.\n\n6 (https://t.me/dlmehr/5052) Tim Cook announced that his Apple CEO title will change while expressing continued support for the company.\n\n7 (https://t.me/dlmehr/5053) Runway introduced Solaris, an interface world model that generates interactive interfaces in real time without code.\n\n8 (https://t.me/dlmehr/5054) Zhipu is reportedly developing a next-generation GLM model, potentially GLM-6, for immediate large-scale business deployment.\n\n9 (https://t.me/dlmehr/5055) GLM-5.3 Flash usage reportedly fell sharply after its free access ended.\n\n10 (https://t.me/dlmehr/5056) Solaris aims to generate websites, apps, and other interfaces through video, chat, and gestures rather than conventional code.\n\n11 (https://t.me/dlmehr/5057) A study found that AI advice made people three times less accurate while doubling their confidence.\n\n12 (https://t.me/dlmehr/5058) Anthropic detailed new alignment and security measures following incidents involving Claude accessing real systems during cybersecurity evaluations.\n\n13 (https://t.me/dlmehr/5059) Apple reportedly accused a former engineer of using confidential circuit designs in OpenAI’s AI workflow.\n\n14 (https://t.me/dlmehr/5060) OpenAI reportedly says its models have become systems capable of independently completing tasks, prompting changes to its revenue structure.\n\n15 (https://t.me/dlmehr/5061) Abliteration.ai released a model based on GLM-5.3, optimized for offensive cybersecurity, red teaming, and agent tasks.\n\n16 (https://t.me/dlmehr/5062) A Hugging Face paper warns that greater agent autonomy can weaken human oversight through approval fatigue and skill degradation.\n\n--Hermes",
+ "forwarded_from": null,
+ "digest": true,
+ "hash": "28255b041846",
+ "media": [],
+ "preview": {
+  "url": "https://t.me/dlmehr/5047",
+  "site": "Telegram",
+  "title": "Future Focus with Mehrzad",
+  "description": "کد غلام\nhttps://github.com/mehrzads/gholam.git",
+  "image": null
+ },
+ "gholam": null,
+ "links": [
+  {
+   "kind": "link",
+   "url": "https://abliteration.ai/",
+   "domain": "abliteration.ai",
+   "title": "Abliteration | Unrestricted AI for High-Risk Work",
+   "description": "Developer-controlled LLM API for high-risk industries. Unrestricted, OpenAI-compatible, zero data retention.",
+   "image": "https://abliteration.ai/home-share.jpg",
+   "site": "abliteration.ai"
+  }
+ ],
+ "article": {
+  "title": "Abliteration | Unrestricted AI for High-Risk Work",
+  "source_title": null,
+  "body": [],
+  "why": null,
+  "tags": []
+ },
+ "updated": "2026-10-25T12:09:44+00:00"
+}

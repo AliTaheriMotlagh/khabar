@@ -2,16 +2,23 @@
  "id": 6011,
  "url": "https://t.me/dlmehr/6011",
  "date": "2026-10-21T13:48:15+00:00",
- "edited": true,
- "views": "197",
  "text": "https://fxtwitter.com/unitreerobotics/status/2112819774573179175?s=52&t=F41Qa04r48Mef_j_XjBneQ",
  "forwarded_from": null,
  "digest": false,
  "hash": "7db179cedd8b",
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/unitreerobotics/status/2112819774573179175?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+  "site": "FxTwitter",
+  "title": "Unitree (@UnitreeRobotics)",
+  "description": "Unitree Introducing: H2-X Kung Fu Legend Guardian\n🤖\nPowerful performance to serve and guard you, with a maximum endurance of approximately 8 hours.\nPlease use the robot safely and in a friendly manner.",
+  "image": null
+ },
  "gholam": {
   "text": "رفیق ببین کمپانی یونیتری چی رو کرده؛ رسماً از یه ربات انسان‌نمای جدید به اسم H2-X رونمایی کرده که لقبش رو گذاشتن «افسانه کونگ‌فو و محافظ»! این غول آهنی رو طوری طراحی کردن که هم مثل یه بادیگارد مشتی مراقبت باشه و هم همه‌جوره خدمت‌رسانی کنه. طبق اعلام شرکت، باتری این مبارزِ آهنی تا حدود ۸ ساعت مداوم شارژ نگه می‌داره که برای این سبک ربات‌ها واقعاً آمار چشمگیریه. البته خود سازنده‌ها هم تهش سفارش کردن که با این پهلوونِ مکانیکی ایمن و رفاقتی تا کنید تا یه وقت داستان نشه!\n\nاهمیتش اینه که ربات‌های انسان‌نما دارن از حالت نمایشی خارج میشن و با این شارژدهی بالا، ورود بادیگاردهای آهنی و خستگی‌ناپذیر به واقعیت خیلی نزدیک‌تر شده.",
   "date": "2026-10-21T13:48:39+00:00"
  },
+ "gholam_checked": "2026-10-24T23:03:12+00:00",
  "links": [
   {
    "kind": "tweet",
@@ -46,14 +53,6 @@
    "links": []
   }
  ],
- "media": [],
- "preview": {
-  "url": "https://fxtwitter.com/unitreerobotics/status/2112819774573179175?s=52&t=F41Qa04r48Mef_j_XjBneQ",
-  "site": "FxTwitter",
-  "title": "Unitree (@UnitreeRobotics)",
-  "description": "Unitree Introducing: H2-X Kung Fu Legend Guardian\n🤖\nPowerful performance to serve and guard you, with a maximum endurance of approximately 8 hours.\nPlease use the robot safely and in a friendly manner.",
-  "image": null
- },
  "article": {
   "title": "کمپانی یونیتری چی رو کرده؛ رسماً از یه ربات انسان‌نمای جدید به اسم H2-X رونمایی کرده که لقبش رو گذاشتن «افسانه کونگ‌فو و محافظ»",
   "source_title": "Unitree Introducing: H2-X Kung Fu Legend Guardian🤖",
@@ -65,6 +64,5 @@
    "رباتیک"
   ]
  },
- "updated": "2026-10-24T23:03:12+00:00",
- "gholam_checked": "2026-10-24T23:03:12+00:00"
+ "updated": "2026-10-25T11:53:53+00:00"
 }

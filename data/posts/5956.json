@@ -2,16 +2,23 @@
  "id": 5956,
  "url": "https://t.me/dlmehr/5956",
  "date": "2026-10-18T14:53:25+00:00",
- "edited": false,
- "views": "221",
  "text": "https://fxtwitter.com/hesamation/status/2111590366768185515?s=46",
  "forwarded_from": "Hossein Zakariaee",
  "digest": false,
  "hash": "96bf64f1961e",
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/hesamation/status/2111590366768185515?s=46",
+  "site": "FxTwitter",
+  "title": "ℏεsam (@Hesamation)",
+  "description": "Anthropic’s report is basically saying humans are the bottleneck.\n“Amid this model-driven acceleration, human attention is a constant bottleneck. Claude sessions amount to around 80% idly waiting for human input. As one engineer put it, people are “bottlenecking…",
+  "image": "https://cdn4.telesco.pe/file/sNb-4V2s8I0PJx0oVLmEO13ap2pK7GHMvZolIxNceDXQ9qgz_Fsh9PNgNtZCxhDL_rcDvjXWjlfSr7nk0KS6AlxNaAKmg8O2af-FYKuZKUoZXqmJfKfumT_50nbEL1QU1WDiTASNIkxS6RYkQgidMYyJSOi6th4ZnMqE2hSk6adI1Ak2MC0JKhrGDqWU-Y0BfjPEqd6qXkBGFK7C-kh2LaNC4ASHynBbALbc_w0PNAa8DGuVOzCh6nNiLsysBOdYFx_FLmpphEmNDjLw6Q0pnZFiW4vEgG0idSc87m3f6TxGRxz3dgORUyczntESp9sjo6sT7RHgcwz_IJqJn5uzRA.jpg"
+ },
  "gholam": {
   "text": "ببین رفیق، شرکت آنتروپیک تو گزارش جدیدش حرف عجیبی زده و رسماً اعلام کرده که الان خود ما آدم‌ها شدیم ترمز و گلوگاه پیشرفت هوش مصنوعی! قضیه از این قراره که ایجنت‌های هوشمندی مثل کلاود، سرعت پردازش‌شون اون‌قدر بالا رفته که حدود ۸۰ درصد کل زمان نشست‌هاشون معطل تایید یا دستور جدید کاربر منتظر می‌مونن و عملاً بیکار می‌چرخن. حتی یکی از مهندس‌هاشون اعتراف کرده که این کاربرها هستن که جلوی دست‌وپای مدل‌ها رو می‌گیرن و کارها رو کُند می‌کنن. خلاصه سرعت سیستم‌ها جوری رفته بالا که عکس‌العمل و تمرکز بشر دیگه به گَرد پاش هم نمی‌رسه.\n\nچرا مهمه؟ چون نشون میده تو قدم‌های بعدی، ایجنت‌ها احتمالاً مستقل‌تر و خودران‌تر میشن تا دیگه معطل دست‌فرمون کُند ما آدما نمونن.",
   "date": "2026-10-18T14:53:42+00:00"
  },
+ "gholam_checked": "2026-10-24T23:11:45+00:00",
  "links": [
   {
    "kind": "tweet",
@@ -50,18 +57,6 @@
    "links": []
   }
  ],
- "media": [],
- "preview": {
-  "url": "https://fxtwitter.com/hesamation/status/2111590366768185515?s=46",
-  "site": "FxTwitter",
-  "title": "ℏεsam (@Hesamation)",
-  "description": "Anthropic’s report is basically saying humans are the bottleneck.\n“Amid this model-driven acceleration, human attention is a constant bottleneck. Claude sessions amount to around 80% idly waiting for human input. As one engineer put it, people are “bottlenecking…",
-  "image": {
-   "src": "media/5956/preview.webp",
-   "width": 507,
-   "height": 800
-  }
- },
  "article": {
   "title": "شرکت آنتروپیک تو گزارش جدیدش حرف عجیبی زده و رسماً اعلام کرده که الان خود ما آدم‌ها شدیم ترمز و گلوگاه پیشرفت هوش مصنوعی",
   "source_title": "Anthropic’s report is basically saying humans are the bottleneck.",
@@ -73,6 +68,5 @@
    "آنتروپیک"
   ]
  },
- "updated": "2026-10-24T23:11:45+00:00",
- "gholam_checked": "2026-10-24T23:11:45+00:00"
+ "updated": "2026-10-25T11:54:09+00:00"
 }

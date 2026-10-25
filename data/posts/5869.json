@@ -1,0 +1,59 @@
+{
+ "id": 5869,
+ "url": "https://t.me/dlmehr/5869",
+ "date": "2026-10-13T17:46:10+00:00",
+ "text": "https://fxtwitter.com/sundarpichai/status/2110059840957768027?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+ "forwarded_from": null,
+ "digest": false,
+ "hash": "4006df8b63ca",
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/sundarpichai/status/2110059840957768027?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+  "site": "🧵 Thread • FxTwitter",
+  "title": "Sundar Pichai (@sundarpichai)",
+  "description": "Some great use cases from Googlers building with Gemini 4 Argon\n🧵\nIt has a much stronger grasp of coding and multi-step tool use - starting from a raw Pixel CAD file in Google Antigravity, Argon created this exploded-view animation, lighting, camera choreography…",
+  "image": null
+ },
+ "gholam": {
+  "text": "رفیق، سوندار پیچای مدیر گوگل اومده یه چشمه از شاهکار مدل جدید Gemini 4 Argon رو نشون داده که رسماً هوش از سر آدم می‌پرونه. قضیه از این قراره که کاربرا فقط یه فایل طراحی خام CAD از گوشی پیکسل رو بهش سپردن و این مدل از طریق Blender MCP کل کار انیمیشنِ اجزای بازشده، نورپردازی، چرخش دوربین و حتی صداگذاری رو یک‌تنه جمع کرده. شاهکار اصلی اینجاست که برای بی‌نقص شدن خروجی، خودش ۱۰۰۰ دور متوالی رندرهایی که گرفته بود رو بررسی کرده و مرحله به مرحله کدهاش رو تصحیح کرده. خلاصه اینکه تسلط این هوش مصنوعی روی کدنویسی و استفاده هم‌زمان از چندتا ابزار به یه لول مافوق تصور رسیده.\n\nاهمیتش اینه که نشون میده هوش مصنوعی حالا می‌تونه مثل یه متخصص ارشد سه‌بعدی ساعت‌ها پای کار بشینه، اشتباهات خودشو بسنجه و بدون دخالت انسان خروجی تر و تمیز تحویل بده.",
+  "date": "2026-10-13T17:46:26+00:00"
+ },
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/sundarpichai/status/2110059840957768027",
+   "domain": "x.com",
+   "author": {
+    "name": "Sundar Pichai",
+    "handle": "sundarpichai",
+    "avatar": "https://pbs.twimg.com/profile_images/2051799620062429184/AL8CoAUG_200x200.jpg"
+   },
+   "text": "Some great use cases from Googlers building with Gemini 4 Argon 🧵\n\nIt has a much stronger grasp of coding and multi-step tool use - starting from a raw Pixel CAD file in Google Antigravity, Argon created this exploded-view animation, lighting, camera choreography, and audio through Blender MCP.\n\nIt ran 1,000 rounds of iterative loops to check its own renders and refine the code along the way.",
+   "date": 1791912443,
+   "media": [
+    {
+     "type": "video",
+     "src": "https://video.twimg.com/amplify_video/2110052683554095104/vid/avc1/1280x720/IBZFdCbdT3Hk69HC.mp4?tag=29",
+     "poster": "https://pbs.twimg.com/amplify_video_thumb/2110052683554095104/img/V72SGiKyw51MMIEd.jpg",
+     "ratio": 0.5625,
+     "duration": 19.166,
+     "gif": false
+    }
+   ],
+   "links": []
+  }
+ ],
+ "article": {
+  "title": "سوندار پیچای مدیر گوگل اومده یه چشمه از شاهکار مدل جدید Gemini 4 Argon رو نشون داده که رسماً هوش از سر آدم می‌پرونه",
+  "source_title": "Some great use cases from Googlers building with Gemini 4 Argon 🧵",
+  "body": [
+   "رفیق، سوندار پیچای مدیر گوگل اومده یه چشمه از شاهکار مدل جدید Gemini 4 Argon رو نشون داده که رسماً هوش از سر آدم می‌پرونه. قضیه از این قراره که کاربرا فقط یه فایل طراحی خام CAD از گوشی پیکسل رو بهش سپردن و این مدل از طریق Blender MCP کل کار انیمیشنِ اجزای بازشده، نورپردازی، چرخش دوربین و حتی صداگذاری رو یک‌تنه جمع کرده. شاهکار اصلی اینجاست که برای بی‌نقص شدن خروجی، خودش ۱۰۰۰ دور متوالی رندرهایی که گرفته بود رو بررسی کرده و مرحله به مرحله کدهاش رو تصحیح کرده. خلاصه اینکه تسلط این هوش مصنوعی روی کدنویسی و استفاده هم‌زمان از چندتا ابزار به یه لول مافوق تصور رسیده."
+  ],
+  "why": "نشون میده هوش مصنوعی حالا می‌تونه مثل یه متخصص ارشد سه‌بعدی ساعت‌ها پای کار بشینه، اشتباهات خودشو بسنجه و بدون دخالت انسان خروجی تر و تمیز تحویل بده.",
+  "tags": [
+   "گوگل"
+  ]
+ },
+ "updated": "2026-10-25T12:23:36+00:00",
+ "gholam_checked": "2026-10-25T12:23:36+00:00"
+}

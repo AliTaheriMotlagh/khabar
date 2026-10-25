@@ -1,0 +1,70 @@
+{
+ "id": 4554,
+ "url": "https://t.me/dlmehr/4554",
+ "date": "2026-08-03T16:26:22+00:00",
+ "text": "https://fxtwitter.com/minimax_ai/status/2084106804032872591?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+ "forwarded_from": null,
+ "digest": false,
+ "hash": "528e0c912479",
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/minimax_ai/status/2084106804032872591?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+  "site": "FxTwitter",
+  "title": "MiniMax (official) (@MiniMax_AI)",
+  "description": "MiniMax-H3 Is Now Publicly Available\nhttps://huggingface.co/MiniMaxAI/MiniMax-H3",
+  "image": null
+ },
+ "gholam": {
+  "text": "داداشی بچه‌های MiniMax بالاخره مدل جدیدشون یعنی MiniMax-H3 رو عمومی کردن و گذاشتنش رو هاگینگ‌فیس تا همه حالشو ببرن.",
+  "date": "2026-08-03T16:26:34+00:00"
+ },
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/MiniMax_AI/status/2084106804032872591",
+   "domain": "x.com",
+   "author": {
+    "name": "MiniMax (official)",
+    "handle": "MiniMax_AI",
+    "avatar": "https://pbs.twimg.com/profile_images/1875100548535574529/VxHk9HyU_200x200.jpg"
+   },
+   "text": "MiniMax-H3 Is Now Publicly Available\nhttps://huggingface.co/MiniMaxAI/MiniMax-H3",
+   "date": 1785724757,
+   "media": [
+    {
+     "type": "video",
+     "src": "https://video.twimg.com/amplify_video/2084105994301501440/vid/avc1/1280x720/3LZjyF7HVA5CjpO1.mp4?tag=29",
+     "poster": "https://pbs.twimg.com/amplify_video_thumb/2084105994301501440/img/CSEfiQF3Na0AEs9h.jpg",
+     "ratio": 0.5625,
+     "duration": 41.513,
+     "gif": false
+    }
+   ],
+   "links": [
+    "https://huggingface.co/MiniMaxAI/MiniMax-H3"
+   ]
+  },
+  {
+   "kind": "link",
+   "url": "https://huggingface.co/MiniMaxAI/MiniMax-H3",
+   "domain": "huggingface.co",
+   "title": "MiniMaxAI/MiniMax-H3 · Hugging Face",
+   "description": "We’re on a journey to advance and democratize artificial intelligence through open source and open science.",
+   "image": "https://cdn-thumbnails.huggingface.co/social-thumbnails/models/MiniMaxAI/MiniMax-H3.png",
+   "site": "huggingface.co"
+  }
+ ],
+ "article": {
+  "title": "بچه‌های MiniMax بالاخره مدل جدیدشون یعنی MiniMax-H3 رو عمومی کردن و گذاشتنش رو هاگینگ‌فیس تا همه حالشو ببرن",
+  "source_title": "MiniMax-H3 Is Now Publicly Available",
+  "body": [
+   "داداشی بچه‌های MiniMax بالاخره مدل جدیدشون یعنی MiniMax-H3 رو عمومی کردن و گذاشتنش رو هاگینگ‌فیس تا همه حالشو ببرن."
+  ],
+  "why": null,
+  "tags": [
+   "چین"
+  ]
+ },
+ "updated": "2026-10-25T12:31:06+00:00",
+ "gholam_checked": "2026-10-25T12:31:06+00:00"
+}

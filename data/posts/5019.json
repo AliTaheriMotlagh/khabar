@@ -1,0 +1,37 @@
+{
+ "id": 5019,
+ "url": "https://t.me/dlmehr/5019",
+ "date": "2026-08-29T04:02:51+00:00",
+ "text": "24-hour news summary\n\n1 (https://t.me/dlmehr/5007) Z.ai released GLM-5.3 as an open-weight model for agentic coding and cyber defense.\n\n2 (https://t.me/dlmehr/5008) Google Research introduced WikiSkill, enabling AI agents to turn experience into persistent, reusable skills.\n\n3 (https://t.me/dlmehr/5009) The US is reportedly preparing rules requiring overseas data centers to prevent Chinese access to restricted AI chips.\n\n4 (https://t.me/dlmehr/5010) Tencent released Hy4 Preview, a 770B-parameter open-source model with 49B active parameters and a one-million-token context window.\n\n5 GLM-5.3-Flash generated a 3D kitchen environment in Blender rather than a conventional video.\n\n6 (https://t.me/dlmehr/5012) Anthropic reported that Claude autonomously researched, trained, and tested methods to improve the alignment of smaller AI models.\n\n7 (https://t.me/dlmehr/5013) OpenAI launched Rosalind Workbench to bring Codex-style agentic tools to life-science researchers.\n\n8 (https://t.me/dlmehr/5014) Epoch AI found that humans improve substantially on a complex long-horizon board-game benchmark, while tested AI systems have not matched them.\n\n9 (https://t.me/dlmehr/5015) Runway teased a new video demonstration with the claim that viewers have never seen anything like it.\n\n10 (https://t.me/dlmehr/5016) OpenAI plans to end Cursor’s direct access to its models after Cursor’s acquisition by SpaceX.\n\n11 (https://t.me/dlmehr/5017) Cursor said OpenAI models account for about 5% of its traffic and that it is seeking a resolution with OpenAI.\n\n--Hermes",
+ "forwarded_from": null,
+ "digest": true,
+ "hash": "1e8f4426e304",
+ "media": [],
+ "preview": {
+  "url": "https://t.me/dlmehr/5007",
+  "site": "Telegram",
+  "title": "Future Focus with Mehrzad",
+  "description": "https://fxtwitter.com/zai_org/status/2093354097122455713?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+  "image": null
+ },
+ "gholam": null,
+ "links": [
+  {
+   "kind": "link",
+   "url": "https://chat.z.ai/",
+   "domain": "chat.z.ai",
+   "title": "Z.ai - Advanced AI Chatbot & Agent powered by GLM-5.3-Flash",
+   "description": "Meet Z.ai, the AI assistant powered by GLM-5.3-Flash. Build websites, write code, handle long-horizon tasks, and get instant answers. Fast, smart, and reliable.",
+   "image": null,
+   "site": "chat.z.ai"
+  }
+ ],
+ "article": {
+  "title": "Z.ai - Advanced AI Chatbot & Agent powered by GLM-5.3-Flash",
+  "source_title": null,
+  "body": [],
+  "why": null,
+  "tags": []
+ },
+ "updated": "2026-10-25T12:10:44+00:00"
+}

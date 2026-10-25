@@ -1,0 +1,50 @@
+{
+ "id": 5170,
+ "url": "https://t.me/dlmehr/5170",
+ "date": "2026-09-06T19:35:12+00:00",
+ "text": "https://fxtwitter.com/deredleritt3r/status/2096659363091911112?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+ "forwarded_from": null,
+ "digest": false,
+ "hash": "1a5bfabc5efb",
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/deredleritt3r/status/2096659363091911112?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+  "site": "FxTwitter",
+  "title": "prinz (@deredleritt3r)",
+  "description": "Key take-aways for me from today's OpenAI announcements:\n- OpenAI \"making strong progress\" toward creating the automated AI researcher.\n- Jakub Pachocki: \"I have a strong expectation that [OpenAI's] speed of progress could be sustained into RSI\".\n- Automated…",
+  "image": "https://cdn4.telesco.pe/file/A892in36aaktT05Q_HNeXaYYVfIkpVRE92MiG_nXeTuqRzz0ZV6oVUH3Exas7TmrFCP5QmgvP3X-HWkNlQ1pzXLv80daNM80zunDI_5_W8miEwyenKvVXKXhcrnM09DTqZlwicSNxLmuWC-2Z_CQUfdu8Q7ECaA1vNTni69hNGj1TKCcBvL16WCPy2XjYEjtt7YqVjGFxei98tDWExD81km9LtOdfNx5Tz2kOgNg4Kneb3q3Hst4ws6nBjgKul0JPQC7jYmbAKuRuZZzY8mtc4OGRnmguzQl7z6vgu7f3IoxYxboyQSeQGHGvUHUzpERo87q_KPIOn3hkD-StFrXXw.jpg"
+ },
+ "gholam": {
+  "text": "رفیق، بچه‌های اوپن‌ای‌آی (OpenAI) تازگی‌ها نشونه‌هایی دادن که نشون میده دارن تخته‌گاز به سمت ساخت «پژوهشگر خودکار هوش مصنوعی» پیش می‌رن؛ یعنی سیستمی که بتونه خودش بشینه علم هوش مصنوعی رو توسعه بده و وارد فاز خوداصلاحی سریع (RSI) بشه. یاکوب پاچوکی، دانشمند ارشدشون، رک و پوست‌کنده گفته با اینکه دنبال اینن که این هوش روی امنیت و هم‌ترازی خودش هم کار کنه و زیر دست آدمیزاد بمونه، اما هنوز هیچ‌کس در دنیا فرمول امن رد شدن از این پیچ خطرناک رو بلد نیست. از اون طرف هم تأکید کرده که هیچ آزمایشگاهی فعلاً کنترل کامل روی این ماجرا نداره و تا دیر نشده باید دولت‌ها وارد میدون بشن و همه یه ترمز دستی اختیاری بکشن تا چارچوب ایمنی سفت‌وسختی بسته بشه.\n\nچرا مهمه؟ چون اگه هوش مصنوعی بدون تضمین مهار و کنترل صددرصدی شروع کنه خودش رو از بیخ ارتقا بده، ممکنه کنترلی که بشر روش داره در یه چشم به هم زدن دود بشه بره هوا.",
+  "date": "2026-09-06T19:35:25+00:00"
+ },
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/deredleritt3r/status/2096659363091911112",
+   "domain": "x.com",
+   "author": {
+    "name": "prinz",
+    "handle": "deredleritt3r",
+    "avatar": "https://pbs.twimg.com/profile_images/1874359541720092672/ciOMFG2x_200x200.jpg"
+   },
+   "text": "Key take-aways for me from today's OpenAI announcements:\n\n- OpenAI \"making strong progress\" toward creating the automated AI researcher.\n\n- Jakub Pachocki: \"I have a strong expectation that [OpenAI's] speed of progress could be sustained into RSI\".\n\n- Automated AI researcher will \"work under human supervision\".  One of OpenAI's \"north stars\" includes \"finding ways for people to remain part of the self-improvement loop\".\n\n- \"An automated AI researcher can also be an automated safety or alignment researcher.\"  One of OpenAI's \"north stars\" includes \"iterating [with the automated AI researcher] on the alignment problem\".\n\n- Decision on whether to pursue rapid RSI depends on ability to preserve human control and on informed democratic choices about benefits and risks.\n\n- OpenAI \"do[es] not yet know how to safely get all the way to aligned, full RSI\".\n\n- OpenAI believes that \"we and other companies\" should be required to publicly track their progress towards RSI; OpenAI will continue to be transparent about its progress to RSI.\n\n- Graphs provided by OpenAI show a very sharp increase in internal usage of Agents around July 2026.  I assume that's from Astra?\n\n- Jakub Pachocki on scaling laws: \"There are new algorithms that have been developed along the way, new feats of ingenuity from teams and individual researchers. I see them largely as discoveries along the path of scaling; the science of deep learning is still nascent, and meaningful algorithmic progress tends to correlate with access to compute.\"  (My note: If the science of deep learning is \"still nascent\", that has meaningful implications for the speed of progress we should expect from RSI.)\n\n- Jakub Pachocki on OpenAI's focus on general models: \"We believe we could make the models better at specifically mathematics research with additional focus, but we do not prioritize this direction because of the urgency we feel about RSI and automated alignment research.\"\n\n- Jakub Pachocki on pacing AI development: \"Currently I believe that no lab has solved alignment and monitoring to a sufficient degree to continue responsibly scaling at maximum speed for much longer. I expect and hope for voluntary slowdowns to become commonplace until shared safety bars are established. And I believe that international coordination on future AI development needs to become a top priority for governments around the world.\"",
+   "date": 1788717520,
+   "media": [],
+   "links": []
+  }
+ ],
+ "article": {
+  "title": "بچه‌های اوپن‌ای‌آی (OpenAI) تازگی‌ها نشونه‌هایی دادن که نشون میده دارن تخته‌گاز به سمت ساخت «پژوهشگر خودکار هوش مصنوعی» پیش می‌رن",
+  "source_title": "Key take-aways for me from today's OpenAI announcements:",
+  "body": [
+   "رفیق، بچه‌های اوپن‌ای‌آی (OpenAI) تازگی‌ها نشونه‌هایی دادن که نشون میده دارن تخته‌گاز به سمت ساخت «پژوهشگر خودکار هوش مصنوعی» پیش می‌رن؛ یعنی سیستمی که بتونه خودش بشینه علم هوش مصنوعی رو توسعه بده و وارد فاز خوداصلاحی سریع (RSI) بشه. یاکوب پاچوکی، دانشمند ارشدشون، رک و پوست‌کنده گفته با اینکه دنبال اینن که این هوش روی امنیت و هم‌ترازی خودش هم کار کنه و زیر دست آدمیزاد بمونه، اما هنوز هیچ‌کس در دنیا فرمول امن رد شدن از این پیچ خطرناک رو بلد نیست. از اون طرف هم تأکید کرده که هیچ آزمایشگاهی فعلاً کنترل کامل روی این ماجرا نداره و تا دیر نشده باید دولت‌ها وارد میدون بشن و همه یه ترمز دستی اختیاری بکشن تا چارچوب ایمنی سفت‌وسختی بسته بشه."
+  ],
+  "why": "چون اگه هوش مصنوعی بدون تضمین مهار و کنترل صددرصدی شروع کنه خودش رو از بیخ ارتقا بده، ممکنه کنترلی که بشر روش داره در یه چشم به هم زدن دود بشه بره هوا.",
+  "tags": [
+   "اوپن‌ای‌آی"
+  ]
+ },
+ "updated": "2026-10-25T12:27:45+00:00",
+ "gholam_checked": "2026-10-25T12:27:45+00:00"
+}

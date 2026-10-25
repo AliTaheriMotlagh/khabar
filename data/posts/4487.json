@@ -1,0 +1,60 @@
+{
+ "id": 4487,
+ "url": "https://t.me/dlmehr/4487",
+ "date": "2026-07-30T22:26:01+00:00",
+ "text": "https://fxtwitter.com/rohanpaul_ai/status/2082695402953031825?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+ "forwarded_from": null,
+ "digest": false,
+ "hash": "d68e6a465d79",
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/rohanpaul_ai/status/2082695402953031825?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+  "site": "🧵 Thread • FxTwitter",
+  "title": "Rohan Paul (@rohanpaul_ai)",
+  "description": "Claude Code creator Boris Cherny ( @bcherny )\n\"For people who aren’t building agentic products but are using Claude Code, every 6 months, delete your claude.md file, delete your skills, and delete your hooks. Then see what the model does. It might surprise…",
+  "image": null
+ },
+ "gholam": {
+  "text": "Claude Code می‌گه هر شش ماه فایل‌های راهنما، مهارت‌ها و هوک‌ها رو پاک کنین و ببینین مدل جدید بدون این عصاها چی از آب درمیاره. حرف اصلی اینه که با قوی‌تر شدن Opus 5، شاید خیلی از دستورالعمل‌های قدیمی دیگه لازم نباشه و مدل خودش جمع‌وجورتر کار رو دربیاره.",
+  "date": "2026-07-30T22:27:54+00:00"
+ },
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/rohanpaul_ai/status/2082695402953031825",
+   "domain": "x.com",
+   "author": {
+    "name": "Rohan Paul",
+    "handle": "rohanpaul_ai",
+    "avatar": "https://pbs.twimg.com/profile_images/1816185267037859840/Fd18CH0v_200x200.jpg"
+   },
+   "text": "Claude Code creator Boris Cherny ( @bcherny  )\n\n\"For people who aren’t building agentic products but are using Claude Code, every 6 months, delete your claude.md file, delete your skills, and delete your hooks. Then see what the model does. It might surprise you.\n\nFor Opus 5, we strongly recommend trying to delete all of these things because the model may no longer need the extensive instructions that were necessary for previous models.\"\n\n- at Y Combinator Startup School 2026.\n\n----\n\nFrom \"Y Combinator\" YouTube channel, (full video link in comment)",
+   "date": 1785388253,
+   "media": [
+    {
+     "type": "video",
+     "src": "https://video.twimg.com/amplify_video/2082694658451558400/vid/avc1/1280x720/fHV6IdqHovwM1F4s.mp4?tag=29",
+     "poster": "https://pbs.twimg.com/amplify_video_thumb/2082694658451558400/img/I4LNRQ-pDcM4iVZM.jpg",
+     "ratio": 0.5625,
+     "duration": 24.32,
+     "gif": false
+    }
+   ],
+   "links": []
+  }
+ ],
+ "article": {
+  "title": "Claude Code می‌گه هر شش ماه فایل‌های راهنما، مهارت‌ها و هوک‌ها رو پاک کنین و ببینین مدل جدید بدون این عصاها چی از آب درمیاره",
+  "source_title": "Claude Code creator Boris Cherny ( @bcherny )",
+  "body": [
+   "Claude Code می‌گه هر شش ماه فایل‌های راهنما، مهارت‌ها و هوک‌ها رو پاک کنین و ببینین مدل جدید بدون این عصاها چی از آب درمیاره. حرف اصلی اینه که با قوی‌تر شدن Opus 5، شاید خیلی از دستورالعمل‌های قدیمی دیگه لازم نباشه و مدل خودش جمع‌وجورتر کار رو دربیاره."
+  ],
+  "why": null,
+  "tags": [
+   "آنتروپیک",
+   "کدنویسی"
+  ]
+ },
+ "updated": "2026-10-25T12:31:36+00:00",
+ "gholam_checked": "2026-10-25T12:31:36+00:00"
+}

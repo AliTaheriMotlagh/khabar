@@ -2,16 +2,23 @@
  "id": 5923,
  "url": "https://t.me/dlmehr/5923",
  "date": "2026-10-16T03:10:33+00:00",
- "edited": false,
- "views": "199",
  "text": "https://fxtwitter.com/sundarpichai/status/2110804295352488143",
  "forwarded_from": "Parsa Razavi",
  "digest": false,
  "hash": "8f3a23031e71",
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/sundarpichai/status/2110804295352488143",
+  "site": "🧵 Thread • FxTwitter",
+  "title": "Sundar Pichai (@sundarpichai)",
+  "description": "Some magical progress towards \"magic state\" in quantum!\nOur @GoogleQuantumAI team has demonstrated \"magic state cultivation\" on physical hardware for the first time. The result is a 40x error reduction on our Willow processor vs. previous methods, achieving…",
+  "image": null
+ },
  "gholam": {
   "text": "ببین رفیق، ساندار پیچای اعلام کرده که تیم کوانتوم گوگل گل کاشته و برای اولین بار تونسته تکنیک «پرورش حالت جادویی» رو مستقیماً روی سخت‌افزار واقعی پیاده کنه. قضیه از این قراره که روی پردازنده جدیدشون به اسم «ویلو»، خطاهای کوانتومی رو ۴۰ برابر نسبت به قبل کاهش دادن و به دقت فوق‌العاده ۹۹.۹۹ درصدی رسیدن. این شاهکار علمی که مقاله‌ش تازه توی ژورنال معتبر ساینس منتشر شده، یه گام غول‌آسا برای رسیدن به کامپیوترهای کوانتومی تصحیح‌خطا و پایدار حساب می‌شه تا بتونن پیچیده‌ترین مسائل علمی دنیا رو حل کنن.\n\nچرا مهمه؟ بزرگ‌ترین قفل و کابوس کامپیوترهای کوانتومی همیشه خطاهای شدید پردازشی بوده و شکستن این سد، ما رو رسماً به دوران کاربردی شدن این فناوری توی دنیای واقعی نزدیک می‌کنه.",
   "date": "2026-10-16T03:10:53+00:00"
  },
+ "gholam_checked": "2026-10-24T23:35:32+00:00",
  "links": [
   {
    "kind": "tweet",
@@ -46,14 +53,6 @@
    "links": []
   }
  ],
- "media": [],
- "preview": {
-  "url": "https://fxtwitter.com/sundarpichai/status/2110804295352488143",
-  "site": "🧵 Thread • FxTwitter",
-  "title": "Sundar Pichai (@sundarpichai)",
-  "description": "Some magical progress towards \"magic state\" in quantum!\nOur @GoogleQuantumAI team has demonstrated \"magic state cultivation\" on physical hardware for the first time. The result is a 40x error reduction on our Willow processor vs. previous methods, achieving…",
-  "image": null
- },
  "article": {
   "title": "ساندار پیچای اعلام کرده که تیم کوانتوم گوگل گل کاشته و برای اولین بار تونسته تکنیک «پرورش حالت جادویی» رو مستقیماً روی سخت‌افزار واقعی پیاده کنه",
   "source_title": "Some magical progress towards \"magic state\" in quantum!",
@@ -66,6 +65,5 @@
    "گوگل"
   ]
  },
- "updated": "2026-10-24T23:35:32+00:00",
- "gholam_checked": "2026-10-24T23:35:32+00:00"
+ "updated": "2026-10-25T11:54:11+00:00"
 }

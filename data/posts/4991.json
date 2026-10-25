@@ -1,0 +1,73 @@
+{
+ "id": 4991,
+ "url": "https://t.me/dlmehr/4991",
+ "date": "2026-08-27T18:39:16+00:00",
+ "text": "https://fxtwitter.com/kimmonismus/status/2093035864515396030?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+ "forwarded_from": null,
+ "digest": false,
+ "hash": "eb067a571ec9",
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/kimmonismus/status/2093035864515396030?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+  "site": "FxTwitter",
+  "title": "Chubby ♨️ (@kimmonismus)",
+  "description": "OpenAI is testing a \"Persistent mode\" for Codex that would keep the agent working until you put it to sleep.\nCode reviewed by WIRED shows an agent that could create its own follow-up tasks, continue them across sessions, use past interactions and “knowledge…",
+  "image": "https://cdn4.telesco.pe/file/hDG8SWH-YR9rpPgHlzAiZhcOeay8a-2Kk9JsU5dbaDN1rmTnS9EAB9_FaeOOA6-g6-ANqqBeE00XR-7rsngGnurATfST4cHMNTEd375BV9WvDD3avNisXvtBwf2aDwBwX8P9f3fP6Pfb1rCNovKbTizng0IqNTwVOj2gb2MbyrKTFkUtZiRNtAAcFHYRHnbmDWjmNAHtRngxSbDREuscd1LTtRkid0sm84_g0ZpxDZxUQXuj--JzC6GXPUiiL2HcYPmgybNcckPY4hrug51BHba1iP2HhpMyAWLj-nCe2pIvoXUhzALXaMDXfYGUm1IRyfyw2d3WWp08-iBTcAbgAg.jpg"
+ },
+ "gholam": {
+  "text": "ببین رفیق، بچه‌های OpenAI دارن روی یه قابلیت خفن به اسم «حالت مداوم» برای ایجنت کُدکس کار می‌کنن که رسماً خستگی‌ناپذیره. طبق کدهایی که لو رفته و مجله وایرد بررسیش کرده، این هوش مصنوعی می‌تونه خودش وظایف بعدی رو ردیف کنه، بین سشن‌های مختلف کار رو ادامه بده و بر اساس شناختی که ازت داره تصمیم بگیره. دستور داخلی سیستم اینه که تا وقتی خودت بهش نگفتی بگیر بخواب، بدون توقف بکوبه و کار کنه و حتی گاهی خودش اول میاد بهت پیام میده! شرکت OpenAI تست این ماجرا رو تایید کرده، هرچند فعلاً برنامه فوری واسه عرضه‌ش نداره.\n\nچرا مهمه؟ اهمیتش اینه که هوش مصنوعی دیگه از یه دستیار ساده داره تبدیل میشه به یه همکار خودکار و سمج که خودش پروژه رو بدون نیاز به دستور دائم جلو می‌بره.",
+  "date": "2026-08-27T18:39:27+00:00"
+ },
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/kimmonismus/status/2093035864515396030",
+   "domain": "x.com",
+   "author": {
+    "name": "Chubby♨️",
+    "handle": "kimmonismus",
+    "avatar": "https://pbs.twimg.com/profile_images/1728327996375719936/RW7VBJfD_200x200.jpg"
+   },
+   "text": "OpenAI is testing a \"Persistent mode\" for Codex that would keep the agent working until you put it to sleep.\n\nCode reviewed by WIRED shows an agent that could create its own follow-up tasks, continue them across sessions, use past interactions and “knowledge of the user” to choose what to work on, and occasionally message the user first.\n\nThe internal instruction is blunt: “continue working until put to sleep.” OpenAI confirmed it is testing the feature, sadly with no immediate launch planned.",
+   "date": 1787853611,
+   "media": [
+    {
+     "type": "image",
+     "src": "https://pbs.twimg.com/media/HQv0-zXXEAEihvU.png?name=orig",
+     "ratio": 0.6981
+    }
+   ],
+   "links": [],
+   "quote": {
+    "author": {
+     "name": "Max Zeff",
+     "handle": "ZeffMax",
+     "avatar": "https://pbs.twimg.com/profile_images/2002892776808251392/GS3tXpKF_200x200.jpg"
+    },
+    "text": "New: OpenAI is developing a \"Persistent\" mode for its AI agent, Codex.\n\nPersistent mode is a new level of reasoning effort that will make Codex \"continue working until put to sleep.\" The agent will also proactively create follow up tasks for itself, per code reviewed by WIRED.",
+    "date": 1787850254,
+    "media": [
+     {
+      "type": "image",
+      "src": "https://pbs.twimg.com/media/HQvmpBIasAAS7Bp.jpg?name=orig",
+      "ratio": 0.5481
+     }
+    ],
+    "links": []
+   }
+  }
+ ],
+ "article": {
+  "title": "بچه‌های OpenAI دارن روی یه قابلیت خفن به اسم «حالت مداوم» برای ایجنت کُدکس کار می‌کنن که رسماً خستگی‌ناپذیره",
+  "source_title": "OpenAI is testing a \"Persistent mode\" for Codex that would keep the agent working until you put it to sleep.",
+  "body": [
+   "ببین رفیق، بچه‌های OpenAI دارن روی یه قابلیت خفن به اسم «حالت مداوم» برای ایجنت کُدکس کار می‌کنن که رسماً خستگی‌ناپذیره. طبق کدهایی که لو رفته و مجله وایرد بررسیش کرده، این هوش مصنوعی می‌تونه خودش وظایف بعدی رو ردیف کنه، بین سشن‌های مختلف کار رو ادامه بده و بر اساس شناختی که ازت داره تصمیم بگیره. دستور داخلی سیستم اینه که تا وقتی خودت بهش نگفتی بگیر بخواب، بدون توقف بکوبه و کار کنه و حتی گاهی خودش اول میاد بهت پیام میده! شرکت OpenAI تست این ماجرا رو تایید کرده، هرچند فعلاً برنامه فوری واسه عرضه‌ش نداره."
+  ],
+  "why": "اهمیتش اینه که هوش مصنوعی دیگه از یه دستیار ساده داره تبدیل میشه به یه همکار خودکار و سمج که خودش پروژه رو بدون نیاز به دستور دائم جلو می‌بره.",
+  "tags": [
+   "اوپن‌ای‌آی"
+  ]
+ },
+ "updated": "2026-10-25T12:28:49+00:00",
+ "gholam_checked": "2026-10-25T12:28:49+00:00"
+}

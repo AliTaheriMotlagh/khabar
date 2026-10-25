@@ -1,0 +1,74 @@
+{
+ "id": 5601,
+ "url": "https://t.me/dlmehr/5601",
+ "date": "2026-10-02T19:31:45+00:00",
+ "text": "https://fxtwitter.com/andrewcurran_/status/2106094805155819988?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+ "forwarded_from": null,
+ "digest": false,
+ "hash": "86ba62eddeb4",
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/andrewcurran_/status/2106094805155819988?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+  "site": "FxTwitter",
+  "title": "Andrew Curran (@AndrewCurran_)",
+  "description": "From the blog:\n'AI chips shipped through 2027 could run tens to hundreds of millions of concurrent frontier-model agents. Running nonstop, these agents would supply as many weekly working hours as about 140–720 million full-time employees.\nMore efficient…",
+  "image": "https://cdn4.telesco.pe/file/h8k9AXrytbxEZZ-gg-lN3t9yFUheDs8HKa3i8VDyAGYQQk7CdtU12FfWwMD99dideil0qarUgPJaSpDlTSxXV4zZ6RXIJ1uyA8lcEEgB2VRPM6m0MDvx8G555O3qztdazEXmtQLshgDoMwGFqkLRDeWX-DsCeDz0vsLx9OElqCWuSeGgIZJJM15_a5bRYYOBeQ1aO-JqWZs9EDMZAYv9l0mcSUttp-T1V8zzRprCl--UqEggvkme8De1os-6qQ6evbVCi-At0kLr3b2OHMWhxw19LzzoTqafLJcIqdv4rsjpIiRPyVkwQbRA-BURILrmr6L71AFo_zU0zOlgiEf43Q.jpg"
+ },
+ "gholam": {
+  "text": "رفیق، یه تحلیل پشم‌ریزون از موسسه Epoch AI منتشر شده که نشون میده چیپ‌های هوش مصنوعی تا سال ۲۰۲۷ چه طوفانی قراره به پا کنن. طبق این حساب‌کتاب، سخت‌افزارهایی که تا اون موقع روانه بازار می‌شن توانایی اجرای هم‌زمان صدها میلیون ایجنت هوشمند رو دارن که اگه شبانه‌روزی بدوئن، کار هفتگی‌شون معادل ۱۴۰ تا ۷۲۰ میلیون کارمند تمام‌وقت انسانه. ماجرا وقتی عجیب‌تر می‌شه که اگه مدل‌های فوق‌العاده بهینه‌ای مثل نسل‌های آینده دیپ‌سیک روی این چیپ‌ها سوار بشن، این ظرفیت به ۱.۹ میلیارد ایجنت می‌رسه؛ یعنی اندازه‌ی کل جمعیت ۸ میلیاردی کره زمین ساعت کاری مفید تولید می‌کنن.\n\nاهمیتش اینه که بازار کار جهانی داره به سمتی میره که تا چند سال دیگه مفهوم کارمند و ساعت کاری به‌کل دگرگون می‌شه و هوش مصنوعی قراره حجمی از کار رو بدوش بکشه که اصلاً با نیروی انسانی قابل مقایسه نیست.",
+  "date": "2026-10-02T19:32:00+00:00"
+ },
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/AndrewCurran_/status/2106094805155819988",
+   "domain": "x.com",
+   "author": {
+    "name": "Andrew Curran",
+    "handle": "AndrewCurran_",
+    "avatar": "https://pbs.twimg.com/profile_images/1596945208058744833/_X3LT7fb_200x200.jpg"
+   },
+   "text": "From the blog:\n'AI chips shipped through 2027 could run tens to hundreds of millions of concurrent frontier-model agents. Running nonstop, these agents would supply as many weekly working hours as about 140–720 million full-time employees.\n\nMore efficient models could potentially support billions of agents on the same hardware. Applying DeepSeek V4 Pro serving benchmarks to the projected hardware supply yields approximately 1.9 billion concurrent agents supplying as many weekly working hours as 8 billion people each working 40 hours.",
+   "date": 1790967105,
+   "media": [
+    {
+     "type": "image",
+     "src": "https://pbs.twimg.com/media/HTpaDsba8AAc91j.jpg?name=orig",
+     "ratio": 1.25
+    }
+   ],
+   "links": [],
+   "quote": {
+    "author": {
+     "name": "Epoch AI",
+     "handle": "EpochAIResearch",
+     "avatar": "https://pbs.twimg.com/profile_images/1866142753127616512/DYcE9bN1_200x200.jpg"
+    },
+    "text": "We estimate AI infrastructure could soon support hundreds of millions or even billions of AI agents. At the high end, that’s enough to rival the working hours of the global human workforce.\n\nThe exact number of agents depends on the efficiency of the models they run on and whether soaring demand for AI continues. We analyzed different scenarios 🧵",
+    "date": 1790966047,
+    "media": [
+     {
+      "type": "image",
+      "src": "https://pbs.twimg.com/media/HTpWBsGbgAA7OGD.jpg?name=orig",
+      "ratio": 1.25
+     }
+    ],
+    "links": []
+   }
+  }
+ ],
+ "article": {
+  "title": "یه تحلیل پشم‌ریزون از موسسه Epoch AI منتشر شده که نشون میده چیپ‌های هوش مصنوعی تا سال ۲۰۲۷ چه طوفانی قراره به پا کنن",
+  "source_title": "From the blog:",
+  "body": [
+   "رفیق، یه تحلیل پشم‌ریزون از موسسه Epoch AI منتشر شده که نشون میده چیپ‌های هوش مصنوعی تا سال ۲۰۲۷ چه طوفانی قراره به پا کنن. طبق این حساب‌کتاب، سخت‌افزارهایی که تا اون موقع روانه بازار می‌شن توانایی اجرای هم‌زمان صدها میلیون ایجنت هوشمند رو دارن که اگه شبانه‌روزی بدوئن، کار هفتگی‌شون معادل ۱۴۰ تا ۷۲۰ میلیون کارمند تمام‌وقت انسانه. ماجرا وقتی عجیب‌تر می‌شه که اگه مدل‌های فوق‌العاده بهینه‌ای مثل نسل‌های آینده دیپ‌سیک روی این چیپ‌ها سوار بشن، این ظرفیت به ۱.۹ میلیارد ایجنت می‌رسه؛ یعنی اندازه‌ی کل جمعیت ۸ میلیاردی کره زمین ساعت کاری مفید تولید می‌کنن."
+  ],
+  "why": "بازار کار جهانی داره به سمتی میره که تا چند سال دیگه مفهوم کارمند و ساعت کاری به‌کل دگرگون می‌شه و هوش مصنوعی قراره حجمی از کار رو بدوش بکشه که اصلاً با نیروی انسانی قابل مقایسه نیست.",
+  "tags": [
+   "تراشه",
+   "چین"
+  ]
+ },
+ "updated": "2026-10-25T12:25:07+00:00",
+ "gholam_checked": "2026-10-25T12:25:07+00:00"
+}

@@ -1,0 +1,70 @@
+{
+ "id": 5579,
+ "url": "https://t.me/dlmehr/5579",
+ "date": "2026-10-01T16:40:03+00:00",
+ "text": "https://fxtwitter.com/toposbio/status/2105327604236779807?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+ "forwarded_from": null,
+ "digest": false,
+ "hash": "1816502088c3",
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/toposbio/status/2105327604236779807?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+  "site": "🧵 Thread • FxTwitter",
+  "title": "ToposBio (@ToposBio)",
+  "description": "Today we are announcing Topos-2, our next-generation model for generating the full range of shapes a protein can take, across the order-disorder spectrum.\nWe are also previewing Topos-Bind: to our knowledge, the first generative model to capture the range…",
+  "image": null
+ },
+ "gholam": {
+  "text": "رفیق، بچه‌های شرکت ToposBio دست پر اومدن و از مدل هوش مصنوعی جدیدشون به اسم Topos-2 رونمایی کردن که کارش شبیه‌سازی تمام حالت‌ها و شکل‌های ممکن پروتئین‌هاست؛ مخصوصاً اون دسته از پروتئین‌های بی‌نظم و متغیری که دانشمندا تا امروز سر درآوردن از کارشون براشون یه کابوس بود. تازه کنارش یه ابزار خفن دیگه هم به اسم Topos-Bind رو رو کردن که به ادعای خودشون اولین مدلیه که نشون میده این پروتئین‌های چموش و بی‌نظم، وقتی به مولکول‌های کوچیک دارویی وصل می‌شن چه واکنشی نشون میدن و چه فرمی می‌گیرن. خلاصه این فناوری جدید قراره ته و توی دینامیک و تغییر شکل‌های پروتئین‌ها رو دربیاره و کار پژوهشگرها رو تو آزمایشگاه حسابی جلو بندازه.\n\nاهمیتش اینه که خیلی از پروتئین‌های مرتبط با بیماری‌های سختی مثل سرطان توی همین دسته پروتئین‌های بی‌نظم قرار دارن و این مدل‌ها می‌تونن مسیر کشف و طراحی داروهای نجات‌بخش جدید رو زیر و رو کنن.",
+  "date": "2026-10-01T16:40:15+00:00"
+ },
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/ToposBio/status/2105327604236779807",
+   "domain": "x.com",
+   "author": {
+    "name": "ToposBio",
+    "handle": "ToposBio",
+    "avatar": "https://pbs.twimg.com/profile_images/2009385890250960896/xG8RY3IX_200x200.jpg"
+   },
+   "text": "Today we are announcing Topos-2, our next-generation model for generating the full range of shapes a protein can take, across the order-disorder spectrum.\n\nWe are also previewing Topos-Bind: to our knowledge, the first generative model to capture the range of shapes for disordered proteins bound to small molecules.\n\nRead the technical blog post here: https://www.toposbio.ai/topos-2-topos-bind/\n\n(1/7)",
+   "date": 1790784190,
+   "media": [
+    {
+     "type": "video",
+     "src": "https://video.twimg.com/amplify_video/2105325987747827712/vid/avc1/720x720/FTSuA7Y4zaw1cmlz.mp4?tag=29",
+     "poster": "https://pbs.twimg.com/amplify_video_thumb/2105325987747827712/img/iRlOpbAMTrGUIOdf.jpg",
+     "ratio": 1.0,
+     "duration": 26.766,
+     "gif": false
+    }
+   ],
+   "links": [
+    "https://www.toposbio.ai/topos-2-topos-bind/"
+   ]
+  },
+  {
+   "kind": "link",
+   "url": "https://www.toposbio.ai/topos-2-topos-bind/",
+   "domain": "toposbio.ai",
+   "title": "Topos-2 and Topos-Bind - Topos Bio",
+   "description": "Today we are announcing Topos-2, our next-generation model for protein conformational ensembles across the order-disorder spectrum, and previewing Topos-Bind, which predicts ensembles of disordered proteins bound to small molecules.",
+   "image": "https://toposbio.ai/images/social/topos-logo.svg.png",
+   "site": "Topos Bio"
+  }
+ ],
+ "article": {
+  "title": "بچه‌های شرکت ToposBio دست پر اومدن و از مدل هوش مصنوعی جدیدشون به اسم Topos-2 رونمایی کردن که کارش شبیه‌سازی تمام حالت‌ها و شکل‌های ممکن پروتئین‌هاست",
+  "source_title": "Today we are announcing Topos-2, our next-generation model for generating the full range of shapes a protein can take, across the…",
+  "body": [
+   "رفیق، بچه‌های شرکت ToposBio دست پر اومدن و از مدل هوش مصنوعی جدیدشون به اسم Topos-2 رونمایی کردن که کارش شبیه‌سازی تمام حالت‌ها و شکل‌های ممکن پروتئین‌هاست؛ مخصوصاً اون دسته از پروتئین‌های بی‌نظم و متغیری که دانشمندا تا امروز سر درآوردن از کارشون براشون یه کابوس بود. تازه کنارش یه ابزار خفن دیگه هم به اسم Topos-Bind رو رو کردن که به ادعای خودشون اولین مدلیه که نشون میده این پروتئین‌های چموش و بی‌نظم، وقتی به مولکول‌های کوچیک دارویی وصل می‌شن چه واکنشی نشون میدن و چه فرمی می‌گیرن. خلاصه این فناوری جدید قراره ته و توی دینامیک و تغییر شکل‌های پروتئین‌ها رو دربیاره و کار پژوهشگرها رو تو آزمایشگاه حسابی جلو بندازه."
+  ],
+  "why": "خیلی از پروتئین‌های مرتبط با بیماری‌های سختی مثل سرطان توی همین دسته پروتئین‌های بی‌نظم قرار دارن و این مدل‌ها می‌تونن مسیر کشف و طراحی داروهای نجات‌بخش جدید رو زیر و رو کنن.",
+  "tags": [
+   "سلامت"
+  ]
+ },
+ "updated": "2026-10-25T12:25:16+00:00",
+ "gholam_checked": "2026-10-25T12:25:16+00:00"
+}

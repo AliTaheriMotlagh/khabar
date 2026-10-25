@@ -1,0 +1,59 @@
+{
+ "id": 4577,
+ "url": "https://t.me/dlmehr/4577",
+ "date": "2026-08-04T19:51:00+00:00",
+ "text": "Demo from 2020 with GPT3\n\nhttps://fxtwitter.com/sharifshameem/status/1284095222939451393?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+ "forwarded_from": null,
+ "digest": false,
+ "hash": "3ef5e2a9b1da",
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/sharifshameem/status/1284095222939451393?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+  "site": "🧵 Thread • FxTwitter",
+  "title": "Sharif Shameem (@sharifshameem)",
+  "description": "I just built a *functioning* React app by describing what I wanted to GPT-3.\nI'm still in awe.",
+  "image": null
+ },
+ "gholam": {
+  "text": "ببین داداشی، طرف فقط با توضیح دادن چیزی که تو ذهنش بوده به جی‌پی‌تی-۳ یه برنامه درست‌درمان ری‌اکت ساخته و خودش هم بدجور کَف‌بُر شده!",
+  "date": "2026-08-04T19:51:14+00:00"
+ },
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/sharifshameem/status/1284095222939451393",
+   "domain": "x.com",
+   "author": {
+    "name": "Sharif Shameem",
+    "handle": "sharifshameem",
+    "avatar": "https://pbs.twimg.com/profile_images/2055589508876472320/A9Hyj7Tj_200x200.jpg"
+   },
+   "text": "I just built a *functioning* React app by describing what I wanted to GPT-3. \n\nI'm still in awe.",
+   "date": 1594987133,
+   "media": [
+    {
+     "type": "video",
+     "src": "https://video.twimg.com/ext_tw_video/1284094287383166977/pu/vid/1242x720/IO8QdPYW5saee-Ir.mp4?tag=10",
+     "poster": "https://pbs.twimg.com/ext_tw_video_thumb/1284094287383166977/pu/img/LsArMNT3djA7xg53.jpg",
+     "ratio": 0.5797,
+     "duration": 106.317,
+     "gif": false
+    }
+   ],
+   "links": []
+  }
+ ],
+ "article": {
+  "title": "طرف فقط با توضیح دادن چیزی که تو ذهنش بوده به جی‌پی‌تی-۳ یه برنامه درست‌درمان ری‌اکت ساخته و خودش هم بدجور کَف‌بُر شده",
+  "source_title": "I just built a *functioning* React app by describing what I wanted to GPT-3.",
+  "body": [
+   "ببین داداشی، طرف فقط با توضیح دادن چیزی که تو ذهنش بوده به جی‌پی‌تی-۳ یه برنامه درست‌درمان ری‌اکت ساخته و خودش هم بدجور کَف‌بُر شده!"
+  ],
+  "why": null,
+  "tags": [
+   "اوپن‌ای‌آی"
+  ]
+ },
+ "updated": "2026-10-25T12:31:01+00:00",
+ "gholam_checked": "2026-10-25T12:31:01+00:00"
+}

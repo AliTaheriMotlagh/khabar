@@ -1,0 +1,57 @@
+{
+ "id": 5556,
+ "url": "https://t.me/dlmehr/5556",
+ "date": "2026-09-30T16:15:22+00:00",
+ "text": "https://fxtwitter.com/ideogram_ai/status/2105327223431737780?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+ "forwarded_from": null,
+ "digest": false,
+ "hash": "eb0de1483f56",
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/ideogram_ai/status/2105327223431737780?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+  "site": "🧵 Thread • FxTwitter",
+  "title": "Ideogram (@ideogram_ai)",
+  "description": "Introducing Ideogram 4.5, the most precise edit model.\nWith each edit, leading models add artifacts, pixel shifts, and color changes. Ideogram 4.5 eliminates artifact buildup, making multi-turn editing possible.\nLive in Ideogram, the API, and launch partners.…",
+  "image": null
+ },
+ "gholam": {
+  "text": "ببین رفیق، بچه‌های آیدیوگرام از نسخه جدیدشون یعنی Ideogram 4.5 رونمایی کردن و ادعا دارن دقیق‌ترین مدل ادیت تصویر رو تحویل بازار دادن. ماجرا اینه که تو مدل‌های قبلی وقتی چند بار پشت سر هم یه عکس رو ادیت می‌کردی، تصویر نویز برمی‌داشت، رنگ‌هاش به هم می‌ریخت و اصطلاحاً پیکسل‌ها جا‌به‌جا می‌شدن، اما این مدل کل این باگ‌ها رو برطرف کرده تا بشه بدون افت کیفیت چندین مرحله عکس رو دستکاری کرد. همین الان روی سایت خودشون و از طریق API در دسترسه و قول دادن که به‌زودی وزن‌های مدل رو هم به شکل عمومی و باز منتشر کنن.\n\nاهمیتش اینه که دست طراح‌ها و آرتیست‌ها رو باز می‌ذاره تا روی یه عکس چند دست کار کنن بدون این‌که نگران خراب شدن کیفیت و نویز گرفتن تصویر باشن.",
+  "date": "2026-09-30T16:15:34+00:00"
+ },
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/ideogram_ai/status/2105327223431737780",
+   "domain": "x.com",
+   "author": {
+    "name": "Ideogram",
+    "handle": "ideogram_ai",
+    "avatar": "https://pbs.twimg.com/profile_images/2062202352526831616/9CslGhhc_200x200.jpg"
+   },
+   "text": "Introducing Ideogram 4.5, the most precise edit model.\n\nWith each edit, leading models add artifacts, pixel shifts, and color changes. Ideogram 4.5 eliminates artifact buildup, making multi-turn editing possible.\n\nLive in Ideogram, the API, and launch partners. Open weights soon.",
+   "date": 1790784099,
+   "media": [
+    {
+     "type": "video",
+     "src": "https://video.twimg.com/amplify_video/2105327069190344705/vid/avc1/1280x720/qZ6l96Yy8L1y0igf.mp4?tag=16",
+     "poster": "https://pbs.twimg.com/amplify_video_thumb/2105327069190344705/img/XG7GZTkCUcmlDhwB.jpg",
+     "ratio": 0.5625,
+     "duration": 47.333,
+     "gif": false
+    }
+   ],
+   "links": []
+  }
+ ],
+ "article": {
+  "title": "بچه‌های آیدیوگرام از نسخه جدیدشون یعنی Ideogram 4.5 رونمایی کردن و ادعا دارن دقیق‌ترین مدل ادیت تصویر رو تحویل بازار دادن",
+  "source_title": "Introducing Ideogram 4.5, the most precise edit model.",
+  "body": [
+   "ببین رفیق، بچه‌های آیدیوگرام از نسخه جدیدشون یعنی Ideogram 4.5 رونمایی کردن و ادعا دارن دقیق‌ترین مدل ادیت تصویر رو تحویل بازار دادن. ماجرا اینه که تو مدل‌های قبلی وقتی چند بار پشت سر هم یه عکس رو ادیت می‌کردی، تصویر نویز برمی‌داشت، رنگ‌هاش به هم می‌ریخت و اصطلاحاً پیکسل‌ها جا‌به‌جا می‌شدن، اما این مدل کل این باگ‌ها رو برطرف کرده تا بشه بدون افت کیفیت چندین مرحله عکس رو دستکاری کرد. همین الان روی سایت خودشون و از طریق API در دسترسه و قول دادن که به‌زودی وزن‌های مدل رو هم به شکل عمومی و باز منتشر کنن."
+  ],
+  "why": "دست طراح‌ها و آرتیست‌ها رو باز می‌ذاره تا روی یه عکس چند دست کار کنن بدون این‌که نگران خراب شدن کیفیت و نویز گرفتن تصویر باشن.",
+  "tags": []
+ },
+ "updated": "2026-10-25T12:25:24+00:00",
+ "gholam_checked": "2026-10-25T12:25:24+00:00"
+}

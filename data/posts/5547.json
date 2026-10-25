@@ -1,0 +1,61 @@
+{
+ "id": 5547,
+ "url": "https://t.me/dlmehr/5547",
+ "date": "2026-09-29T17:35:07+00:00",
+ "text": "https://fxtwitter.com/danshipper/status/2104985574704918873?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+ "forwarded_from": null,
+ "digest": false,
+ "hash": "a98614884600",
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/danshipper/status/2104985574704918873?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+  "site": "FxTwitter · every.to",
+  "title": "Dan Shipper (@danshipper)",
+  "description": "BREAKING:\nOpenAI announced 20+ products and features at DevDay.\nWe've been testing the new products. Here are the five that matter most (to me):\n- Dots: Persistent agents inside ChatGPT that retain context and keep working over time (think OpenClaw, Grok…",
+  "image": "https://cdn4.telesco.pe/file/AcC7XmtGGCZwjWgTrwypdD9Qk8GfFd_u2XudDpJCDd8LH2KW4ZAnOFdwAoQccDNqY1oDeJ_s2Y7DBQAAF1LKQB_NpRWGSYm8T0mTMf2z8ThuOTNxKeorp9mFq0sBOWven38u2Z68seYfZb5jjQO0C9FJsAORjP87h7neK_cN_ilZws88R1ku8ITTX9eeJozfJzA-qObo7lLJYbB1qYS9e8mI8n-Q-6gw5VWg8n8Ktna_Of3ndFhzWpd9YjzwlRNKwhFEAuT6yo-OUSw1GkKYcuqmhiWcSdqjR97thTalpaRLtbxn9-fI81NtWvTH4KHGjAfcizxj-j2koCRaagGtaw.jpg"
+ },
+ "gholam": {
+  "text": "رفیق، بشنو که اوپن‌ای‌آی توی مراسم DevDay بدجوری گردوخاک کرده و با معرفی بیش از ۲۰ تا ابزار جدید، رسماً خیز برداشته چت‌جی‌پی‌تی رو بکنه سیستم‌عامل همه‌کاره کار و بارمون. گل سرسبد کاراشون اول ایجنت‌های دائمی به اسم Dots هستن که حافظه‌شون پاک نمیشه و پا‌به‌پات کار می‌کنن، بعدشم یه محیط شبیه گوگل‌درایو با برنامه‌های اختصاصی برای ساخت سند، اسلاید و جدول درست وسط خودِ چت‌بات. واسه بچه‌های فنی و دولوپرها هم سنگ‌تموم گذاشته؛ از API تصمیم‌گیری چندوجهی بر پایه مدل Luna گرفته تا مدل سوپرسریع Astra Ultrafast با سرعت جنون‌آمیز ۲۵۰ توکن در ثانیه و اپ‌های اختصاصی داخل برنامه. دست‌انداز و باگ هنوز کم نداره، ولی قشنگ مشخصه که بازار هوش مصنوعی وارد یه فاز کاملاً جدید شده.\n\nچرا مهمه؟ اهمیتش اینه که اوپن‌ای‌آی داره تمام ابزارهای کاری روزمره مثل آفیس رو می‌بلعه تا چت‌جی‌پی‌تی رو به نرم‌افزار مادر و قطب اصلی کل کسب‌وکارها تبدیل کنه.",
+  "date": "2026-09-29T17:35:24+00:00"
+ },
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/danshipper/status/2104985574704918873",
+   "domain": "x.com",
+   "author": {
+    "name": "Dan Shipper",
+    "handle": "danshipper",
+    "avatar": "https://pbs.twimg.com/profile_images/1946219091305340928/_Ef-eDlc_200x200.jpg"
+   },
+   "text": "BREAKING: \n\nOpenAI announced 20+ products and features at DevDay.\n\nWe've been testing the new products. Here are the five that matter most (to me):\n\n- Dots: Persistent agents inside ChatGPT that retain context and keep working over time (think OpenClaw, Grok Bots, and Muse)\n- Space and an office suite: A Google Drive–like place to work with your Dot, plus ChatGPT-native apps for documents, slides, and spreadsheets\n- Developer-built apps and discovery: Full apps inside ChatGPT—called “plugin extensions”—with a directory and automatic recommendations in conversations to help users find you.\n- Your ChatGPT subscription in other apps: Portable Plus and Pro usage, starting with about 15 partners. Separately, Marketplace is a catalog of approved partner software that eligible enterprise customers can purchase using part of their existing OpenAI spending commitments.\n- The Decisions API: Based on their Luna model, this could be the biggest of the five. It’s OpenAI’s answer to Jev, the buzzy new model that acts as a “smart if-then statement” and recently has taken over X. \n\nPlus: they're releasing Sol 6.1 (Astra, but cheap), Astra Ultrafast (Astra at a crazy 250 tokens/second), a $500 Pro plan, and a lot more.\n\nWhat I'm seeing\nOpenAI's platform play. OpenAI wants ChatGPT to become your operating system for work—documents, slides, and agents, all in one place on your computer. It also wants to let developers and startups build businesses on top of it.\n\nThey've done a few takes on an app store, and because of ChatGPT-native apps I think this has the best chance of sticking.\n\nDots. It's a familiar form factor if you're using Muse, GrokBots, OpenClaw, or Instinct. It's built right into the @ChatGPTapp sidebar and it has quickly become the main way I interact with chat. But: It's still very early, it lacks some features you might expect like the ability to text it through iMessage, and in my testing there were a lot of rough edges. \n\nIt's not something you need to switch to if you like GrokBots or Muse. But it's nice that it's integrated directly into ChatGPT. If you love early products, you should try it. Otherwise I'd wait a few weeks for htem to smooth out the edges.\n\nDecisions API is sneaky big. In our testing, the Decisions API beats Jev on at least one dimension: It is multimodal, which means it accepts image input. It beat Jev on speed and accuracy on a few early tests but trailed on our broader evals. It’s being previewed today, and depending on the price, it could reshape the whole ecosystem.\n\nSee all of our coverage on our @every live feed: https://every.to/live/openai-devday-2026",
+   "date": 1790702644,
+   "media": [],
+   "links": [
+    "https://every.to/live/openai-devday-2026"
+   ]
+  },
+  {
+   "kind": "link",
+   "url": "https://every.to/live/openai-devday-2026",
+   "domain": "every.to",
+   "title": "All the News From OpenAI DevDay 2026",
+   "description": "Our team is on the ground at DevDay with early access to all the new announcements. Enter your email for our Vibe Checks, guides, and everything you need to stay on the edge of AI.",
+   "image": "https://every.to/live/openai-devday-2026/share.png",
+   "site": "every.to"
+  }
+ ],
+ "article": {
+  "title": "بشنو که اوپن‌ای‌آی توی مراسم DevDay بدجوری گردوخاک کرده و با معرفی بیش از ۲۰ تا ابزار جدید، رسماً خیز برداشته چت‌جی‌پی‌تی رو بکنه سیستم‌عامل همه‌کاره کار و بارمون",
+  "source_title": "BREAKING:",
+  "body": [
+   "رفیق، بشنو که اوپن‌ای‌آی توی مراسم DevDay بدجوری گردوخاک کرده و با معرفی بیش از ۲۰ تا ابزار جدید، رسماً خیز برداشته چت‌جی‌پی‌تی رو بکنه سیستم‌عامل همه‌کاره کار و بارمون. گل سرسبد کاراشون اول ایجنت‌های دائمی به اسم Dots هستن که حافظه‌شون پاک نمیشه و پا‌به‌پات کار می‌کنن، بعدشم یه محیط شبیه گوگل‌درایو با برنامه‌های اختصاصی برای ساخت سند، اسلاید و جدول درست وسط خودِ چت‌بات. واسه بچه‌های فنی و دولوپرها هم سنگ‌تموم گذاشته؛ از API تصمیم‌گیری چندوجهی بر پایه مدل Luna گرفته تا مدل سوپرسریع Astra Ultrafast با سرعت جنون‌آمیز ۲۵۰ توکن در ثانیه و اپ‌های اختصاصی داخل برنامه. دست‌انداز و باگ هنوز کم نداره، ولی قشنگ مشخصه که بازار هوش مصنوعی وارد یه فاز کاملاً جدید شده."
+  ],
+  "why": "اهمیتش اینه که اوپن‌ای‌آی داره تمام ابزارهای کاری روزمره مثل آفیس رو می‌بلعه تا چت‌جی‌پی‌تی رو به نرم‌افزار مادر و قطب اصلی کل کسب‌وکارها تبدیل کنه.",
+  "tags": [
+   "اوپن‌ای‌آی"
+  ]
+ },
+ "updated": "2026-10-25T12:25:27+00:00",
+ "gholam_checked": "2026-10-25T12:25:27+00:00"
+}

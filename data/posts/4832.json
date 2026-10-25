@@ -1,0 +1,65 @@
+{
+ "id": 4832,
+ "url": "https://t.me/dlmehr/4832",
+ "date": "2026-08-20T02:30:11+00:00",
+ "text": "https://fxtwitter.com/alighodsi/status/2090248540371231080",
+ "forwarded_from": "Houman",
+ "digest": false,
+ "hash": "b43a2092a97a",
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/alighodsi/status/2090248540371231080",
+  "site": "FxTwitter",
+  "title": "Ali Ghodsi (@alighodsi)",
+  "description": "An extremely important functionality for agents is to simply extract fields out of PDFs. This turns out to be harder than people think because LLMs are primarily trained on predicting the next tokens. This leads them to \"autocorrect\" things that they shouldn't…",
+  "image": "https://cdn4.telesco.pe/file/VIJc0K1dZPcRg35RUNiHQ-sClbGjwuYNqDdtEW5uRSTqMYhYGqPTXtfLXZ4ORJjitKYg0R-XSr1onqO6A54wHAA7lASz1-lcgMF6fX8356ZelwGaszXeWPRjuNYRqGTTACjbF7J_6hvH51-AukTTMv7btPKfHEn6I7Zbi0k0Z7H49MZkhukleWDSGwne7PJ7gjwTvyaB0zzrig3MjHtOt0fMbHgNY9iKqfZ13GO1MTWVoFfQryntiTjx5_ZRt4ywFDemHHWabv8_YDfOqcj6a5S0XLFUyxtxjHj22JO_GKPoHJr-EVnHDE6RvHznKokVuu5JGPtl9h1AVF8ZiQI-EA.jpg"
+ },
+ "gholam": {
+  "text": "رفیق، علی قدسی مدیر ارشد دیتابریکس اومده رو کرده که یکی از بزرگ‌ترین دردسرهای ایجنت‌های هوش مصنوعی، همین استخراج تمیز اطلاعات و فیلدها از دل فایل‌های پی‌دی‌افه؛ چون مدل‌های زبانی عادت دارن کلمات رو پیش‌بینی کنن و الکی متن‌ها رو تصحیح خودکار می‌کنن و گند می‌زنن به خروجی. واسه همین تیمش یه قابلیت جدید به اسم AI Extract داده بیرون که کارش دقیقاً همینه و با دقت خفن ۹۵ درصدی، رقبا رو که رو ۸۷ درصد موندن جا گذاشته و هزینه‌ش هم خیلی پایین‌تره. باحال‌تر اینکه کاربرا می‌تونن مستقیم از توی همون کدهای SQL این قابلیت رو صدا بزنن و اطلاعات پی‌دی‌اف‌ها رو بی‌دردسر بکشن بیرون.\n\nچرا مهمه؟ اهمیتش اینه که استخراج بی‌خطای داده از اسناد اداری و مالی، کار هوش مصنوعی سازمانی رو چند پله سریع‌تر و کم‌هزینه‌تر می‌کنه.",
+  "date": "2026-08-20T02:30:19+00:00"
+ },
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/alighodsi/status/2090248540371231080",
+   "domain": "x.com",
+   "author": {
+    "name": "Ali Ghodsi",
+    "handle": "alighodsi",
+    "avatar": "https://pbs.twimg.com/profile_images/1322594648703950849/5PGee6_a_200x200.jpg"
+   },
+   "text": "An extremely important functionality for agents is to simply extract fields out of PDFs. This turns out to be harder than people think because LLMs are primarily trained on predicting the next tokens. This leads them to \"autocorrect\" things that they shouldn't autocorrect. We launched an AI Extract capability that just excels at doing just this task with very high accuracy (95% vs 87% for others) and extremely low cost. Check out this blog on how we did it. The function can of course be called directly from SQL and be used throughout the platform.\n\nhttps://www.databricks.com/blog/databricks-document-intelligence-pushing-frontier-complex-document-extraction",
+   "date": 1787189061,
+   "media": [
+    {
+     "type": "image",
+     "src": "https://pbs.twimg.com/media/HQIN669acAAK-un.png?name=orig",
+     "ratio": 0.6597
+    }
+   ],
+   "links": [
+    "https://www.databricks.com/blog/databricks-document-intelligence-pushing-frontier-complex-document-extraction"
+   ]
+  },
+  {
+   "kind": "link",
+   "url": "https://www.databricks.com/blog/databricks-document-intelligence-pushing-frontier-complex-document-extraction",
+   "domain": "databricks.com",
+   "title": "Databricks Document Intelligence: pushing the frontier for complex document extraction",
+   "description": "Enterprise document extraction breaks down on 100+ page documents, large outputs, and schemas requiring complex reasoning. We introduce Precision Mode in our document extraction API, ai_extract, which pairs custom fine-tuned extraction models with an agentic harness to beat frontier models on accuracy and cost.",
+   "image": "https://www.databricks.com/sites/default/files/blog_images/databricks-document-intelligence-pushing-the-frontier-for-blog-img-og.png",
+   "site": "Databricks"
+  }
+ ],
+ "article": {
+  "title": "علی قدسی مدیر ارشد دیتابریکس اومده رو کرده که یکی از بزرگ‌ترین دردسرهای ایجنت‌های هوش مصنوعی، همین استخراج تمیز اطلاعات و فیلدها از دل فایل‌های پی‌دی‌افه",
+  "source_title": "An extremely important functionality for agents is to simply extract fields out of PDFs. This turns out to be harder than people think…",
+  "body": [
+   "رفیق، علی قدسی مدیر ارشد دیتابریکس اومده رو کرده که یکی از بزرگ‌ترین دردسرهای ایجنت‌های هوش مصنوعی، همین استخراج تمیز اطلاعات و فیلدها از دل فایل‌های پی‌دی‌افه؛ چون مدل‌های زبانی عادت دارن کلمات رو پیش‌بینی کنن و الکی متن‌ها رو تصحیح خودکار می‌کنن و گند می‌زنن به خروجی. واسه همین تیمش یه قابلیت جدید به اسم AI Extract داده بیرون که کارش دقیقاً همینه و با دقت خفن ۹۵ درصدی، رقبا رو که رو ۸۷ درصد موندن جا گذاشته و هزینه‌ش هم خیلی پایین‌تره. باحال‌تر اینکه کاربرا می‌تونن مستقیم از توی همون کدهای SQL این قابلیت رو صدا بزنن و اطلاعات پی‌دی‌اف‌ها رو بی‌دردسر بکشن بیرون."
+  ],
+  "why": "اهمیتش اینه که استخراج بی‌خطای داده از اسناد اداری و مالی، کار هوش مصنوعی سازمانی رو چند پله سریع‌تر و کم‌هزینه‌تر می‌کنه.",
+  "tags": []
+ },
+ "updated": "2026-10-25T12:29:49+00:00",
+ "gholam_checked": "2026-10-25T12:29:49+00:00"
+}

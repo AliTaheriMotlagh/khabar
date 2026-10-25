@@ -1,0 +1,43 @@
+{
+ "id": 5272,
+ "url": "https://t.me/dlmehr/5272",
+ "date": "2026-09-12T17:11:10+00:00",
+ "text": "https://youtu.be/TKgXhyxsLB8?is=AGfvRSIheaTCZsJ9",
+ "forwarded_from": null,
+ "digest": false,
+ "hash": "0f1658ca7f1d",
+ "media": [],
+ "preview": {
+  "url": "https://youtu.be/TKgXhyxsLB8?is=AGfvRSIheaTCZsJ9",
+  "site": "YouTube",
+  "title": "45. Speculative Decoding [Persian]",
+  "description": "Enjoy the videos and music you love, upload original content, and share it all with friends, family, and the world on YouTube.",
+  "image": "https://cdn4.telesco.pe/file/KcLlZKNhmFODIUUiIT81eKjswQpxIMIs-mewBe4qThvEVYrYGn3sqHHbyKu0F38XNpssm0JTXFeuKMV0CayrGeYvtVkpafkP_QjnWairUVLyLgGJ6K_velCUgVkC39NaE6oNKgxh0jLhOQ9cVqiJ3MrO4R-SJaLUyxrdmv0BZIT8EyQqXNbG_DWuQMZZbD1cebgcBzTimSHt0jCLNa-ExHw0MST2i5m-P1rwasXWs7GKYyzOEo93GRIFssoSpd4299D1hZCMMZPRziBEReb0hj-Xf5kyn3oRJOlgJvIEP8CAgfE50Q4GO2Svvdy_srx9_JK8wdiCrQycyJTuAmdDBQ.jpg"
+ },
+ "gholam": {
+  "text": "رفیق، توی قسمت چهل‌وپنجم این مجموعه ویدیوی یوتیوب، دست گذاشته روی مبحث خفن «Speculative Decoding» و به زبون فارسی سیر تا پیاز ماجرا رو باز کرده. داستان از این قراره که این تکنیک برای موشک کردن سرعت خروجی گرفتن از مدل‌های زبانی بزرگه تا کاربر پشت سیستم معطل نمونه. سازوکارش هم این‌طوریه که یه مدل فرز و فسقلی اول کلمات رو حدس می‌زنه و مدل غول‌پیکر اصلی فقط تأییدشون می‌کنه تا کار الکی طول نکشه و منابع هدر نره. خلاصه اگه توی باغ هوش مصنوعی و یادگیری ماشین باشی، این آموزش قلق‌های خیلی نابی برای بهینه‌سازی سیستم بهت میده.\n\nاهمیتش اینه که کندی تولید متن توی مدل‌های بزرگ همیشه پاشنه آشیل بوده و فهمیدن این روش‌ها کلید اجرای تر و فرز هوش مصنوعی با کمترین هزینه‌ست.",
+  "date": "2026-09-12T17:11:21+00:00"
+ },
+ "links": [
+  {
+   "kind": "link",
+   "url": "https://www.youtube.com/watch?is=AGfvRSIheaTCZsJ9&v=TKgXhyxsLB8&feature=youtu.be",
+   "domain": "youtube.com",
+   "title": "45. Speculative Decoding [Persian]",
+   "description": "Enjoy the videos and music you love, upload original content, and share it all with friends, family, and the world on YouTube.",
+   "image": "https://i.ytimg.com/vi/TKgXhyxsLB8/maxresdefault.jpg",
+   "site": "YouTube"
+  }
+ ],
+ "article": {
+  "title": "توی قسمت چهل‌وپنجم این مجموعه ویدیوی یوتیوب، دست گذاشته روی مبحث خفن «Speculative Decoding» و به زبون فارسی سیر تا پیاز ماجرا رو باز کرده",
+  "source_title": "45. Speculative Decoding [Persian]",
+  "body": [
+   "رفیق، توی قسمت چهل‌وپنجم این مجموعه ویدیوی یوتیوب، دست گذاشته روی مبحث خفن «Speculative Decoding» و به زبون فارسی سیر تا پیاز ماجرا رو باز کرده. داستان از این قراره که این تکنیک برای موشک کردن سرعت خروجی گرفتن از مدل‌های زبانی بزرگه تا کاربر پشت سیستم معطل نمونه. سازوکارش هم این‌طوریه که یه مدل فرز و فسقلی اول کلمات رو حدس می‌زنه و مدل غول‌پیکر اصلی فقط تأییدشون می‌کنه تا کار الکی طول نکشه و منابع هدر نره. خلاصه اگه توی باغ هوش مصنوعی و یادگیری ماشین باشی، این آموزش قلق‌های خیلی نابی برای بهینه‌سازی سیستم بهت میده."
+  ],
+  "why": "کندی تولید متن توی مدل‌های بزرگ همیشه پاشنه آشیل بوده و فهمیدن این روش‌ها کلید اجرای تر و فرز هوش مصنوعی با کمترین هزینه‌ست.",
+  "tags": []
+ },
+ "updated": "2026-10-25T12:27:07+00:00",
+ "gholam_checked": "2026-10-25T12:27:07+00:00"
+}

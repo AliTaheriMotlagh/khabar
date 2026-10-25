@@ -1,0 +1,61 @@
+{
+ "id": 5210,
+ "url": "https://t.me/dlmehr/5210",
+ "date": "2026-09-08T20:18:04+00:00",
+ "text": "https://fxtwitter.com/markchen90/status/2097400166554993041?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+ "forwarded_from": null,
+ "digest": false,
+ "hash": "1f7a71d36c84",
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/markchen90/status/2097400166554993041?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+  "site": "FxTwitter",
+  "title": "Mark Chen (@markchen90)",
+  "description": "Two things to distinguish:\nDid any human or agent look at user data as part of the Navier Stokes effort? No.\nDo we use user feedback and de-identified data to improve ChatGPT and Codex in a holistic way? Yes. And so does every LLM company.\nQuoting levent…",
+  "image": "https://cdn4.telesco.pe/file/gcVwPyI6KO8m7v0YsYFBH2tWfsoEWWGKnKqulxJTj4ZcclgzV0uD9TwdKjT9gQWQFW5ZLtBWJ1gZ0D01XMvI8ZhsIbHMibZaUNMnNb1RGuvrRfnTxsSGzXA4IwXCPNENKz5Xa2DoZ7k4dblC0VEodzW1F4YODfxDCyrPMYjwaDA6RJBRJNyEOSVzx2wschtXUbpHGVoD3iwJe1G-PVF3UaJ2P0aBtmk7o-fYAWGOiExxhOLODI3RHn68unFxKMo8v6iFPn7gN3znwG4i6Cyu4lRnhMzAbs8HagiU3IiSl2dyOT4u3jMfKeZCfxUr49tge-EAtIrljUJMl5SFslx92A.jpg"
+ },
+ "gholam": {
+  "text": "ببین رفیق، مارک چن از مدیرای ارشد اوپن‌ای‌آی اومده یه شفاف‌سازی مشتی کرده تا به حرف‌وحدیث‌ها درباره پروژه حل معادلات ناویه-استوکس پایان بده. طرف صاف و پوست‌کنده گفته واسه این پروژه خاص، هیچ بشری یا عامل هوشمندی نرفته دیتای کاربرا رو دید بزنه و سرک بکشه. ولی در عین حال خیلی رک اعتراف کرده که برای تقویت کلی چت‌جی‌پی‌تی و کدکس، از بازخوردها و داده‌های بدون‌نام کاربرا استفاده می‌کنن؛ یعنی همون کاری که بقیه شرکت‌های هوش مصنوعی هم دارن انجام می‌دن.\n\nاهمیتش اینه که دوباره بحث حساس و داغ حریم خصوصی وسط اومده تا معلوم بشه غول‌های هوش مصنوعی چقدر از پرامپت‌ها و چت‌های روزمره ما واسه آموزش مدل‌هاشون خرج می‌کنن.",
+  "date": "2026-09-08T20:18:15+00:00"
+ },
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/markchen90/status/2097400166554993041",
+   "domain": "x.com",
+   "author": {
+    "name": "Mark Chen",
+    "handle": "markchen90",
+    "avatar": "https://pbs.twimg.com/profile_images/1273327644436656129/uYf1oNS5_200x200.jpg"
+   },
+   "text": "Two things to distinguish:\n\nDid any human or agent look at user data as part of the Navier Stokes effort? No.\n\nDo we use user feedback and de-identified data to improve ChatGPT and Codex in a holistic way? Yes. And so does every LLM company.",
+   "date": 1788894142,
+   "media": [],
+   "links": [],
+   "quote": {
+    "author": {
+     "name": "levent",
+     "handle": "__alpoge__",
+     "avatar": "https://pbs.twimg.com/profile_images/1824948681877155840/VqVHY3gF_200x200.jpg"
+    },
+    "text": "“we cannot rule out that de-identified data derived from their usage of our products helped improve our models.”\n\ni mean props to them for straight coming clean.\n\n(so far the proof looks more along the lines of another euler blowup proof we had, off of whose ansatz naming we were making really stupid puns like “smooth criminale”, unlike the much better “ideal fluids explode”, Tristan)\n\nso i’ll now give a bit on my thinking here. i actually woulda been pumped to collaborate on this, there are a lot of people at oai i like (ok, clearly some were indirectly dicks to me because of being part of the whole situation, but im a big boy, i still like them), idgaf about authorship on that step anyway, coulda been me Tristan and every fte at oai for all i care (on that Tristan would disagree:p). but on hearing the loud convo in the hallway, especially the part where a millennium prize was offered if i’d just be removed from the paper, it was kinda clear the die had been cast and things were locked. pretty wacky, unstrategic, and unnecessary, since on my side things were mostly me and claude having a good time yoloing random stuff in the corner rather than anything institutional. i also like the idea of the labs cooperating, and even better on scientific progress. it’s a shame!",
+    "date": 1788890256,
+    "media": [],
+    "links": []
+   }
+  }
+ ],
+ "article": {
+  "title": "مارک چن از مدیرای ارشد اوپن‌ای‌آی اومده یه شفاف‌سازی مشتی کرده تا به حرف‌وحدیث‌ها درباره پروژه حل معادلات ناویه-استوکس پایان بده",
+  "source_title": "Two things to distinguish:",
+  "body": [
+   "ببین رفیق، مارک چن از مدیرای ارشد اوپن‌ای‌آی اومده یه شفاف‌سازی مشتی کرده تا به حرف‌وحدیث‌ها درباره پروژه حل معادلات ناویه-استوکس پایان بده. طرف صاف و پوست‌کنده گفته واسه این پروژه خاص، هیچ بشری یا عامل هوشمندی نرفته دیتای کاربرا رو دید بزنه و سرک بکشه. ولی در عین حال خیلی رک اعتراف کرده که برای تقویت کلی چت‌جی‌پی‌تی و کدکس، از بازخوردها و داده‌های بدون‌نام کاربرا استفاده می‌کنن؛ یعنی همون کاری که بقیه شرکت‌های هوش مصنوعی هم دارن انجام می‌دن."
+  ],
+  "why": "دوباره بحث حساس و داغ حریم خصوصی وسط اومده تا معلوم بشه غول‌های هوش مصنوعی چقدر از پرامپت‌ها و چت‌های روزمره ما واسه آموزش مدل‌هاشون خرج می‌کنن.",
+  "tags": [
+   "اوپن‌ای‌آی"
+  ]
+ },
+ "updated": "2026-10-25T12:27:31+00:00",
+ "gholam_checked": "2026-10-25T12:27:31+00:00"
+}

@@ -1,0 +1,57 @@
+{
+ "id": 4675,
+ "url": "https://t.me/dlmehr/4675",
+ "date": "2026-08-10T17:19:55+00:00",
+ "text": "https://fxtwitter.com/transformerlab/status/2086805049536061665?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+ "forwarded_from": null,
+ "digest": false,
+ "hash": "78e13f9196fa",
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/transformerlab/status/2086805049536061665?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+  "site": "🧵 Thread • FxTwitter",
+  "title": "Transformer Lab (@transformerlab)",
+  "description": "Today, we’re announcing Primus, the most capable autonomous ML research scientist ever released. And it’s now available to the public.\nEvery innovation we rely on today comes from research. Experts read the literature, propose a theory, run the experiments…",
+  "image": null
+ },
+ "gholam": {
+  "text": "ببین رفیق، بچه‌های مجموعه Transformer Lab از یه دانشمند هوش مصنوعی کاملاً خودکار به اسم Primus رونمایی کردن که همین الان به صورت عمومی منتشر شده. این غول جدید تمام فرایند تحقیقات یادگیری ماشین—از خوندن میلیون‌ها مقاله و ایده‌پردازی گرفته تا کدنویسی، اجرای آزمایش رو سرور واقعی و نوشتن مقاله نهایی—رو ۳۰ برابر سریع‌تر از آدما انجام میده. قشنگی کار اینجاست که این ابزار با هر آزماپشی که می‌زنه یاد می‌گیره و خودشو ارتقا میده تا خروجی کامل و بی‌نقصی تحویل بده.\n\nاهمیتش اینه که فرایند چندماهه تحقیقات علمی تو هوش مصنوعی رو بی‌نهایت سریع می‌کنه و چرخ پیشرفت فناوری رو با سرعت نور به حرکت درمیاره.",
+  "date": "2026-08-10T17:20:11+00:00"
+ },
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/transformerlab/status/2086805049536061665",
+   "domain": "x.com",
+   "author": {
+    "name": "Transformer Lab",
+    "handle": "transformerlab",
+    "avatar": "https://pbs.twimg.com/profile_images/1882503575584100352/KILBirUG_200x200.jpg"
+   },
+   "text": "Today, we’re announcing Primus, the most capable autonomous ML research scientist ever released. And it’s now available to the public.\n\nEvery innovation we rely on today comes from research. Experts read the literature, propose a theory, run the experiments and publish their findings. This research loop, until now, has run at human speed where one turn could take months.\n\nPrimus runs the same loop 30× faster. It autonomously hypothesizes, reads millions of papers, codes, runs experiments on real compute, learns and iterates, draws conclusions, delivers artifacts and writes the final paper. The more experiments Primus runs, the better it gets. 🧵(1/4)",
+   "date": 1786368069,
+   "media": [
+    {
+     "type": "video",
+     "src": "https://video.twimg.com/amplify_video/2086804997132505088/vid/avc1/1008x720/WPEPd1cfjgiYBZHe.mp4?tag=29",
+     "poster": "https://pbs.twimg.com/amplify_video_thumb/2086804997132505088/img/pNGSUBaHaKC_7cx5.jpg",
+     "ratio": 0.7142,
+     "duration": 29.249,
+     "gif": false
+    }
+   ],
+   "links": []
+  }
+ ],
+ "article": {
+  "title": "بچه‌های مجموعه Transformer Lab از یه دانشمند هوش مصنوعی کاملاً خودکار به اسم Primus رونمایی کردن که همین الان به صورت عمومی منتشر شده",
+  "source_title": "Today, we’re announcing Primus, the most capable autonomous ML research scientist ever released. And it’s now available to the public.",
+  "body": [
+   "ببین رفیق، بچه‌های مجموعه Transformer Lab از یه دانشمند هوش مصنوعی کاملاً خودکار به اسم Primus رونمایی کردن که همین الان به صورت عمومی منتشر شده. این غول جدید تمام فرایند تحقیقات یادگیری ماشین—از خوندن میلیون‌ها مقاله و ایده‌پردازی گرفته تا کدنویسی، اجرای آزمایش رو سرور واقعی و نوشتن مقاله نهایی—رو ۳۰ برابر سریع‌تر از آدما انجام میده. قشنگی کار اینجاست که این ابزار با هر آزماپشی که می‌زنه یاد می‌گیره و خودشو ارتقا میده تا خروجی کامل و بی‌نقصی تحویل بده."
+  ],
+  "why": "فرایند چندماهه تحقیقات علمی تو هوش مصنوعی رو بی‌نهایت سریع می‌کنه و چرخ پیشرفت فناوری رو با سرعت نور به حرکت درمیاره.",
+  "tags": []
+ },
+ "updated": "2026-10-25T12:30:36+00:00",
+ "gholam_checked": "2026-10-25T12:30:36+00:00"
+}

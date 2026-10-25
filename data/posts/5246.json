@@ -1,0 +1,68 @@
+{
+ "id": 5246,
+ "url": "https://t.me/dlmehr/5246",
+ "date": "2026-09-10T21:00:17+00:00",
+ "text": "https://fxtwitter.com/nvidiahealth/status/2098065212767084753?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+ "forwarded_from": null,
+ "digest": false,
+ "hash": "64f01fc914d3",
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/nvidiahealth/status/2098065212767084753?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+  "site": "FxTwitter",
+  "title": "NVIDIA Healthcare (@NVIDIAHealth)",
+  "description": "👋\nSay hello to faster structure prediction\nNVIDIA BioNeMo Inference Runtime is in public beta. This open, PyTorch-native library speeds up biomolecular inference on NVIDIA GPUs.\nOptimize models including Boltz-2, OpenFold2, and Protenix v2 with specialized…",
+  "image": "https://cdn4.telesco.pe/file/L6A3mMJi8LtnvWyeCVP-cBL3SpuE1LpDQgyibgHTyG4-pag_Rqgml_6eyZ8xxpWZiH9PnbD4O6xeFRYj-0u20hk82CAR13ks4xyYMUwSjBPdeXpLDIo9ZoWRe2_aPqMl488cpqgEEhFFtq09imeCG6UzgcKhFp4HovErGw3gNstcpbPbFx6yiB0AXpdtHhwyTb-MkB-oyQ_mcf0aDgohkPH9dnT5IaxvaqsRkdZZGSUYR4AlqBEkEm3oXFuAYFId4ijuLkZGgoKmokOssvBCPMMT_HSJ9Ik-_oqTPcnnuCt43x1cEVJKi_ytP5SF0bnCUti_V6CEdl-_JJjoGttJsw.jpg"
+ },
+ "gholam": {
+  "text": "ببین رفیق، بچه‌های انویدیا اومدن نسخه بتای عمومی یه ابزار کاردرست به اسم BioNeMo Inference Runtime رو واسه حوزه زیست‌شناسی و پزشکی دادن بیرون. این کتابخونه اوپن‌سورس که قشنگ با پای‌تورچ هماهنگه، کارش اینه که سرعت پیش‌بینی ساختارهای زیست‌مولکولی و پروتئینی رو روی گرافیک‌های انویدیا با شتاب بالا ببره جلو. مدل‌های گردن‌کلفتی مثل Boltz-2 و OpenFold2 و Protenix v2 با کرنل‌های اختصاصی و فناوری کودا گراف بهینه‌سازی میشن و با فریم‌ورک Ray روی کلی جی‌پی‌یو اسکیل میشن تا پروژه‌ها درجا نزنن.\n\nچرا مهمه؟ چون فرایند کشف دارو و طراحی پروتئین که ماه‌ها جون دانشمندا رو بالا می‌آورد، با این بهینه‌سازی خفن انویدیا خیلی سریع‌تر پردازش می‌شه و راه درمان بیماری‌ها حسابی کوتاه میاد.",
+  "date": "2026-09-10T21:00:28+00:00"
+ },
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/NVIDIAHealth/status/2098065212767084753",
+   "domain": "x.com",
+   "author": {
+    "name": "NVIDIA Healthcare",
+    "handle": "NVIDIAHealth",
+    "avatar": "https://pbs.twimg.com/profile_images/1864479660530438144/NJZZqouX_200x200.jpg"
+   },
+   "text": "👋 Say hello to faster structure prediction\n\nNVIDIA BioNeMo Inference Runtime is in public beta. This open, PyTorch-native library speeds up biomolecular inference on NVIDIA GPUs.\n\nOptimize models including Boltz-2, OpenFold2, and Protenix v2 with specialized kernels and, where supported, CUDA Graphs - then scale with Ray-powered GPU replicas. \n\n🙌 Huge thanks to our collaborators at @apheris_AI, @AurekaBio, @Biomap_IMI, @boltz_bio, @dataiku, @UWproteindesign, @Latent_Labs, MoleculeMind, @nebiusai, @openmsf, @open_fold, @proximabio, @SandboxAQ, @Terray_Tx, and @Xaira_Thera for partnering with us on this work. \n\n📃 https://nvda.ws/46PDmlL",
+   "date": 1789052701,
+   "media": [
+    {
+     "type": "image",
+     "src": "https://pbs.twimg.com/media/HR3TMRUWoAYCiLE.jpg?name=orig",
+     "ratio": 1.0
+    }
+   ],
+   "links": [
+    "https://nvda.ws/46PDmlL"
+   ]
+  },
+  {
+   "kind": "link",
+   "url": "https://developer.nvidia.com/blog/high-throughput-structure-prediction-with-bionemo-inference-runtime/?ncid=so-twit-687376&linkId=100000438747365",
+   "domain": "developer.nvidia.com",
+   "title": "High-Throughput Structure Prediction with BioNeMo Inference Runtime | NVIDIA Technical Blog",
+   "description": "Biomolecular structure prediction is now often run at proteome scale, where the goal is to move an entire worklist through the pipeline efficiently. NVIDIA BioNeMo Inference Runtime (BioIR) helps…",
+   "image": "https://developer-blogs.nvidia.com/wp-content/uploads/2026/09/image4-1.webp",
+   "site": "NVIDIA Technical Blog"
+  }
+ ],
+ "article": {
+  "title": "بچه‌های انویدیا اومدن نسخه بتای عمومی یه ابزار کاردرست به اسم BioNeMo Inference Runtime رو واسه حوزه زیست‌شناسی و پزشکی دادن بیرون",
+  "source_title": "👋 Say hello to faster structure prediction",
+  "body": [
+   "ببین رفیق، بچه‌های انویدیا اومدن نسخه بتای عمومی یه ابزار کاردرست به اسم BioNeMo Inference Runtime رو واسه حوزه زیست‌شناسی و پزشکی دادن بیرون. این کتابخونه اوپن‌سورس که قشنگ با پای‌تورچ هماهنگه، کارش اینه که سرعت پیش‌بینی ساختارهای زیست‌مولکولی و پروتئینی رو روی گرافیک‌های انویدیا با شتاب بالا ببره جلو. مدل‌های گردن‌کلفتی مثل Boltz-2 و OpenFold2 و Protenix v2 با کرنل‌های اختصاصی و فناوری کودا گراف بهینه‌سازی میشن و با فریم‌ورک Ray روی کلی جی‌پی‌یو اسکیل میشن تا پروژه‌ها درجا نزنن."
+  ],
+  "why": "چون فرایند کشف دارو و طراحی پروتئین که ماه‌ها جون دانشمندا رو بالا می‌آورد، با این بهینه‌سازی خفن انویدیا خیلی سریع‌تر پردازش می‌شه و راه درمان بیماری‌ها حسابی کوتاه میاد.",
+  "tags": [
+   "انویدیا",
+   "سلامت"
+  ]
+ },
+ "updated": "2026-10-25T12:27:16+00:00",
+ "gholam_checked": "2026-10-25T12:27:16+00:00"
+}

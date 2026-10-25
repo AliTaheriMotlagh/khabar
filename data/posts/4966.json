@@ -1,0 +1,57 @@
+{
+ "id": 4966,
+ "url": "https://t.me/dlmehr/4966",
+ "date": "2026-08-26T17:56:35+00:00",
+ "text": "https://fxtwitter.com/artificialanlys/status/2092663573021606119?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+ "forwarded_from": null,
+ "digest": false,
+ "hash": "3ee411c55547",
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/artificialanlys/status/2092663573021606119?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+  "site": "🧵 Thread • FxTwitter",
+  "title": "Artificial Analysis (@ArtificialAnlys)",
+  "description": "GLM-5.3-Flash scores 57 on the Artificial Analysis Intelligence Index. At $0.09 Cost per Task, it sits comfortably on the Intelligence vs. Cost per Task Pareto frontier\n@Zai_org has released GLM-5.3-Flash, a smaller and cheaper sibling to GLM-5.3 at 320B…",
+  "image": "https://cdn4.telesco.pe/file/LKWRpmw9D2r8Py41vcmkVe2y4u257friY-mV0ihjrzzoaMNDW5q7hoKfjy9b_pYiJ2jctmcWCSKVHwouNAEGIS06c68aQhf6JtDooQmyNgUPCXc6YMGG7XhkGGOj0DC70ZYWnQf-eGmExZQgAL3UqkqiRd8BKHVTbz1fdofxRDHheT0c5qRgYtxbj8de29jqdC0bNKp8ddejP-tWqYhtxsDE3qXBnmvOk8TTl_SUcuTwxy7CR9uTJl1vqgnwkY5sISA_rmWaHnAgT8cZMo9M9J_YmX7eLPAhw-RoCYm2-OzHsGJyJVqc2WrEWL2qPC6L-_8DQYBIQ5a8jvpiPJ4rLQ.jpg"
+ },
+ "gholam": {
+  "text": "رفیق، مجموعه Z AI اومده از مدل جدیدش به اسم GLM-5.3-Flash رونمایی کرده که کلاً ۳۲۰ میلیارد پارامتر داره ولی موقع کار فقط ۱۸ میلیارد پارامتر فعال می‌کشه وسط. این اعجوبه توی بنچمارک هوش Artificial Analysis نمره ۵۷ گرفته که شونه‌به‌شونه غول‌هایی مثل GPT-5.6 Terra وایمیسته و فقط ۳ نمره از داداش بزرگ‌ترش عقبه. اصل قضیه اینجاست که برای هر تسک فقط ۹ سنت آب می‌خوره، یعنی قیمتش تقریباً هفت‌ونیم برابر ارزون‌تر از نسخه اصلی تموم میشه و قیمتش رو ای‌پی‌آی Z AI فقط ۱۵ سنت برای یک میلیون توکن ورودی و ۵۰ سنت برای خروجیه. از نظر کارهای عاملی و هوشمندی واقعی هم پا‌به‌پای مدل‌های سنگین دنیا میاد و با لایسنس باز MIT و پنجره زمینه ۴۰۰ هزار توکنی دست دولوپرها رو حسابی باز گذاشته.\n\nاهمیتش اینه که زورش در حد پرچمدارای گرون‌قیمته ولی با هزینه‌ای فوق‌العاده پایین، هوش مصنوعی سطح بالا رو خیلی اقتصادی و دم دست می‌کنه.",
+  "date": "2026-08-26T17:56:45+00:00"
+ },
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/ArtificialAnlys/status/2092663573021606119",
+   "domain": "x.com",
+   "author": {
+    "name": "Artificial Analysis",
+    "handle": "ArtificialAnlys",
+    "avatar": "https://pbs.twimg.com/profile_images/2042402069320290304/A8C1lP07_200x200.jpg"
+   },
+   "text": "GLM-5.3-Flash scores 57 on the Artificial Analysis Intelligence Index. At $0.09 Cost per Task, it sits comfortably on the Intelligence vs. Cost per Task Pareto frontier\n\n@Zai_org has released GLM-5.3-Flash, a smaller and cheaper sibling to GLM-5.3 at 320B total parameters and just 18B active parameters. GLM-5.3-Flash supports low/high/max reasoning efforts, and scores 57 evaluation on the Artificial Analysis Intelligence Index with max reasoning effort. This places the model only 3 points behind GLM-5.3 at 60 and in line with GPT-5.6 Terra and Muse Spark 1.2.\n\nOn Z AI's first-party API, GLM-5.3-Flash is priced at $0.15 / 1M input tokens and $0.50 / 1M output tokens, just over 10% of the price of GLM-5.3. Cached input tokens are priced at $0.026 / 1M tokens, an 80% discount. Its Cost per Task on the Intelligence Index is $0.09, compared to $0.68 for GLM-5.3 (max), and it sits on the Pareto frontier for Intelligence vs. Cost per Task.\n\nKey results:\n\n➤ GLM-5.3-Flash is 3 points behind GLM-5.3 (max) on the Artificial Analysis Intelligence Index, at ~7.5x lower Cost per Task. At $0.09 per Intelligence Index task against $0.68 for GLM-5.3, it sits on the Pareto frontier for Intelligence vs. Cost per Task. It ties GPT-5.6 Terra ($0.51) and Muse Spark 1.2 ($0.40) at 57 while costing ~5.7x and ~4.4x less per task.\n\n➤ GLM-5.3-Flash is less token efficient, but its low per-token pricing means this does not translate into a high Cost per Task. The model used 149M output tokens to run the Intelligence Index, ~11% fewer than GLM-5.3 at 168M, but more than Kimi K3 (133M) and Qwen3.8 2.4T A95B (136M) which score the same on the Intelligence Index. Reasoning tokens account for 134M of the 149M total (~90%).\n\n➤ GLM-5.3-Flash matches GLM-5.3 on real-world agentic work on GDPval-AA v2. With an Elo of 1770, the model is tied within the margin of error for GLM-5.3 and Grok 4.6. This places it behind only Claude Opus 5 (xhigh and max). On Terminal-Bench v2.1 it also matches GLM-5.3 (84.3% vs 83.9%), and on τ³-Banking it trails by 3.1 p.p. at 47.2%.\n\n➤ GLM-5.3-Flash demonstrates good real-world knowledge and hallucination rate, scoring +7 on AA-Omniscience. Its AA-Omniscience Accuracy is 28%, 6 p.p. below GLM-5.3 (max) at 34% and well below GPT-5.6 Terra at 47%. However, with a Hallucination Rate of 28%, it is an improvement over GLM-5.3 at 30%. In real-world knowledge, GLM-5.3-Flash knows less than the bigger models and frontier proprietary models in its Intelligence Index tier with an accuracy of 28%.\n\nAdditional model details:\n\n➤ Pricing: On Z AI's first-party API, $0.15 / 1M input tokens and $0.50 / 1M output tokens . Cached input tokens are priced at $0.03/ 1M tokens, an 80% discount.\n\n➤ Accessibility: Accessible through Z AI's first-party API at launch.\n\n➤ Size: 320B total parameters with 18B active parameters\n\n➤ License: MIT\n\n➤ Context Window: 400k",
+   "date": 1787764850,
+   "media": [
+    {
+     "type": "image",
+     "src": "https://pbs.twimg.com/media/HQqgJ5NbQAA1-OG.jpg?name=orig",
+     "ratio": 0.9673
+    }
+   ],
+   "links": []
+  }
+ ],
+ "article": {
+  "title": "مجموعه Z AI اومده از مدل جدیدش به اسم GLM-5.3-Flash رونمایی کرده که کلاً ۳۲۰ میلیارد پارامتر داره ولی موقع کار فقط ۱۸ میلیارد پارامتر فعال می‌کشه وسط",
+  "source_title": "GLM-5.3-Flash scores 57 on the Artificial Analysis Intelligence Index. At $0.09 Cost per Task, it sits comfortably on the Intelligence vs.…",
+  "body": [
+   "رفیق، مجموعه Z AI اومده از مدل جدیدش به اسم GLM-5.3-Flash رونمایی کرده که کلاً ۳۲۰ میلیارد پارامتر داره ولی موقع کار فقط ۱۸ میلیارد پارامتر فعال می‌کشه وسط. این اعجوبه توی بنچمارک هوش Artificial Analysis نمره ۵۷ گرفته که شونه‌به‌شونه غول‌هایی مثل GPT-5.6 Terra وایمیسته و فقط ۳ نمره از داداش بزرگ‌ترش عقبه. اصل قضیه اینجاست که برای هر تسک فقط ۹ سنت آب می‌خوره، یعنی قیمتش تقریباً هفت‌ونیم برابر ارزون‌تر از نسخه اصلی تموم میشه و قیمتش رو ای‌پی‌آی Z AI فقط ۱۵ سنت برای یک میلیون توکن ورودی و ۵۰ سنت برای خروجیه. از نظر کارهای عاملی و هوشمندی واقعی هم پا‌به‌پای مدل‌های سنگین دنیا میاد و با لایسنس باز MIT و پنجره زمینه ۴۰۰ هزار توکنی دست دولوپرها رو حسابی باز گذاشته."
+  ],
+  "why": "زورش در حد پرچمدارای گرون‌قیمته ولی با هزینه‌ای فوق‌العاده پایین، هوش مصنوعی سطح بالا رو خیلی اقتصادی و دم دست می‌کنه.",
+  "tags": [
+   "اوپن‌ای‌آی",
+   "آنتروپیک"
+  ]
+ },
+ "updated": "2026-10-25T12:28:59+00:00",
+ "gholam_checked": "2026-10-25T12:28:59+00:00"
+}

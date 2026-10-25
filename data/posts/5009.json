@@ -1,0 +1,52 @@
+{
+ "id": 5009,
+ "url": "https://t.me/dlmehr/5009",
+ "date": "2026-08-28T16:04:14+00:00",
+ "text": "https://fxtwitter.com/kimmonismus/status/2093335192421187973?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+ "forwarded_from": null,
+ "digest": false,
+ "hash": "84a9d9db10a5",
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/kimmonismus/status/2093335192421187973?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+  "site": "🧵 Thread • FxTwitter",
+  "title": "Chubby ♨️ (@kimmonismus)",
+  "description": "The US now tries to close one of the biggest loopholes in its AI chip controls against China.\nChinese AI labs are acutally blocked from buying advanced Nvidia chips as you know, however they can still access them remotely through data centers in countries…",
+  "image": "https://cdn4.telesco.pe/file/sXP4ZnOJVB_bcfKYQQ4WSZNGrjuJfS-0q0jUgF-KGhjk2W-JQ9zaUqNxbnSDRy3Wc1Qvgi6bJugT-L05B2s33YwCZl21VvoDzrqYIeuY5LWm8Lygjdb1h1wCfU6BPiv1EaHv4oZGMbIxrPh1xYuN7Bxj79yrlTOMS45Rb01piRBXX0dDiYMB5i2kilUuSxRufuhqsQwvLq6amqD8VwwkZv5kWPNL2InaV4nBQqQ7ZduPExv2-GD81oR4_A2KJQjJYt8T8TZYA7YwJLh1D2pXxcflTHNRATptmi3LgOB7xE1fQHI6wdSRQPdL_ziSvzTQhTxibe0Az0FSC26yZxxwoQ.jpg"
+ },
+ "gholam": null,
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/kimmonismus/status/2093335192421187973",
+   "domain": "x.com",
+   "author": {
+    "name": "Chubby♨️",
+    "handle": "kimmonismus",
+    "avatar": "https://pbs.twimg.com/profile_images/1728327996375719936/RW7VBJfD_200x200.jpg"
+   },
+   "text": "The US now tries to close one of the biggest loopholes in its AI chip controls against China.\n\nChinese AI labs are acutally blocked from buying advanced Nvidia chips as you know, however they can still access them remotely through data centers in countries such as Thailand and Singapore.\n\nThe Trump administration is now reportedly developing a rule that would require overseas data centers to verify their customers and prevent Chinese companies from using restricted compute.\n\nSeveral major chinese models were trainied outside of china, for example Kimi k3:\n\n\"The Information in July reported that Moonshot partly trained its new Kimi K3 model on Nvidia chips located in China\"\n\nVia the information",
+   "date": 1787924976,
+   "media": [
+    {
+     "type": "image",
+     "src": "https://pbs.twimg.com/media/HQ0EpeLXsAA8L14.jpg?name=orig",
+     "ratio": 0.6101
+    }
+   ],
+   "links": []
+  }
+ ],
+ "article": {
+  "title": "The US now tries to close one of the biggest loopholes in its AI chip controls against China.",
+  "source_title": null,
+  "body": [],
+  "why": null,
+  "tags": [
+   "چین",
+   "تراشه"
+  ]
+ },
+ "updated": "2026-10-25T12:28:44+00:00",
+ "gholam_checked": "2026-10-25T12:28:44+00:00"
+}

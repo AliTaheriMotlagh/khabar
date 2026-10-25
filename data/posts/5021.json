@@ -1,0 +1,57 @@
+{
+ "id": 5021,
+ "url": "https://t.me/dlmehr/5021",
+ "date": "2026-08-29T15:26:34+00:00",
+ "text": "https://fxtwitter.com/jacekdziwisz/status/2093635928581382221?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+ "forwarded_from": null,
+ "digest": false,
+ "hash": "a99901722bdb",
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/jacekdziwisz/status/2093635928581382221?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+  "site": "🧵 Wątek • FxTwitter",
+  "title": "Jacek Dziwisz (@jacekdziwisz)",
+  "description": "Architektura Apple Silicon okazała się strzałem w dziesiątkę pod LLMy. Magia połączenia szybkiej pamięci, przepustowości i zunifikowanej architektury. Mac Studio M5 Ultra (512 GB, 1.2 TB/s) mieści pełnego GLM-5.3-Flash (320B) w FP8 i wyciąga ~60 t/s offline…",
+  "image": "https://cdn4.telesco.pe/file/dxlIOrsufg5qH5CppdNZM-w9dPzDafhI0ZoY9ke958DcK14IJLsfyrtg9UlfiPTb2SnPX6K5_jrj0UL6ryyexrydixmShleSkNjKAXvocwmYwhlKEHs3Pl9emDfu7xK-DwcDPjzENzm5mXvT6bZhYYDVOdN3Kux6ad3HGjCjeyEaFeZ17XefLfHgBblzZ5Kx0JQnosc8i96m7iB7kieY62wOapzyzyBJgbnmSV9q7ntiKXhwi7GKcnJZeR3ia8F_F4Tx2MDggEej1QNdZgXKE80VJsKiOw7JVfrLRKyIaausNQtxrAl6sXdEDFukKrgd2mcw0kISyxUZl_x-hMjOrw.jpg"
+ },
+ "gholam": {
+  "text": "رفیق، معماری تراشه‌های اپل سیلیکون حسابی گل کاشته و نشون داده خوراک بی‌چون‌وچرای مدل‌های زبانی سنگینه. قضیه از این قراره که مک استودیو با چیپ M5 اولترا و ۵۱۲ گیگابایت رم با پهنای باند وحشتناک ۱.۲ ترابایت بر ثانیه، مدل غول‌پیکر ۳۲۰ میلیارد پارامتری GLM-5.3-Flash رو در حالت FP8 قورت می‌ده و آفلاین روی میز کار، با سرعت ۶۰ توکن بر ثانیه تحویلت می‌ذاره. برای اینکه بتونی همچین شاهکاری رو روی پی‌سی شبیه‌سازی کنی، باید بیشتر از ۲۰ هزار دلار پیاده بشی، ۱۰ تا کارت گرافیک RTX 5090 ببندی و یه مینی‌نیروگاه اختصاصی هم کنارش راه بندازی تا از پس برقش بربیای!\n\nچرا مهمه؟ اهمیتش اینه که نشون می‌ده اجرای محلی سنگین‌ترین مدل‌های هوش مصنوعی بدون نیاز به سرورهای ابری و هزینه‌های نجومی، با یه سیستم رومیزی جمع‌وجور کاملاً ممکن شده.",
+  "date": "2026-08-29T15:26:46+00:00"
+ },
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/jacekdziwisz/status/2093635928581382221",
+   "domain": "x.com",
+   "author": {
+    "name": "Jacek Dziwisz",
+    "handle": "jacekdziwisz",
+    "avatar": "https://pbs.twimg.com/profile_images/2051382592063037440/3DVtmdAp_200x200.jpg"
+   },
+   "text": "Architektura Apple Silicon okazała się strzałem w dziesiątkę pod LLMy. Magia połączenia szybkiej pamięci, przepustowości i zunifikowanej architektury. Mac Studio M5 Ultra (512 GB, 1.2 TB/s) mieści pełnego GLM-5.3-Flash (320B) w FP8 i wyciąga ~60 t/s offline, na biurku. Alternatywa na PC? 10x RTX 5090 za ponad $20 000 i własna mini elektrownia.",
+   "date": 1787996677,
+   "media": [
+    {
+     "type": "image",
+     "src": "https://pbs.twimg.com/media/HQ4Wx20W4AE6DsF.jpg?name=orig",
+     "ratio": 1.0776
+    }
+   ],
+   "links": []
+  }
+ ],
+ "article": {
+  "title": "معماری تراشه‌های اپل سیلیکون حسابی گل کاشته و نشون داده خوراک بی‌چون‌وچرای مدل‌های زبانی سنگینه",
+  "source_title": "Architektura Apple Silicon okazała się strzałem w dziesiątkę pod LLMy. Magia połączenia szybkiej pamięci, przepustowości i zunifikowanej…",
+  "body": [
+   "رفیق، معماری تراشه‌های اپل سیلیکون حسابی گل کاشته و نشون داده خوراک بی‌چون‌وچرای مدل‌های زبانی سنگینه. قضیه از این قراره که مک استودیو با چیپ M5 اولترا و ۵۱۲ گیگابایت رم با پهنای باند وحشتناک ۱.۲ ترابایت بر ثانیه، مدل غول‌پیکر ۳۲۰ میلیارد پارامتری GLM-5.3-Flash رو در حالت FP8 قورت می‌ده و آفلاین روی میز کار، با سرعت ۶۰ توکن بر ثانیه تحویلت می‌ذاره. برای اینکه بتونی همچین شاهکاری رو روی پی‌سی شبیه‌سازی کنی، باید بیشتر از ۲۰ هزار دلار پیاده بشی، ۱۰ تا کارت گرافیک RTX 5090 ببندی و یه مینی‌نیروگاه اختصاصی هم کنارش راه بندازی تا از پس برقش بربیای!"
+  ],
+  "why": "اهمیتش اینه که نشون می‌ده اجرای محلی سنگین‌ترین مدل‌های هوش مصنوعی بدون نیاز به سرورهای ابری و هزینه‌های نجومی، با یه سیستم رومیزی جمع‌وجور کاملاً ممکن شده.",
+  "tags": [
+   "اپل",
+   "تراشه"
+  ]
+ },
+ "updated": "2026-10-25T12:28:40+00:00",
+ "gholam_checked": "2026-10-25T12:28:40+00:00"
+}

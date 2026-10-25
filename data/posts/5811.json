@@ -1,0 +1,62 @@
+{
+ "id": 5811,
+ "url": "https://t.me/dlmehr/5811",
+ "date": "2026-10-11T19:48:47+00:00",
+ "text": "https://fxtwitter.com/karpathy/status/2109361546505966046?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+ "forwarded_from": null,
+ "digest": false,
+ "hash": "ff9da2acf89e",
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/karpathy/status/2109361546505966046?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+  "site": "FxTwitter",
+  "title": "Andrej Karpathy (@karpathy)",
+  "description": "Dusting off this tweet from April because this gap in shared understanding of LLM capability is *widening*. It's now less \"two groups of people speaking past each other\" and more a sharp funnel.\n- Napkin math somewhere around 6B people (~75% of the population)…",
+  "image": "https://cdn4.telesco.pe/file/D8FV8aAcZ6Cf2dK27Yb_lsZ7vFoLPQQba52_9F9etlQEmPI_1Ik6CCMuTOHBioV482Hux7gq-lVNHASVFnAkwgbH_zu0fGE3NAN9BYWOUTEEr-PWCaGSBOLBxpnLg0h34TkmciwGhaS-Kiuq43BAGQWSgawTsUWSSbQ7hFBgGD_l7Qz9k2jwf0OpK2jNBvLBsTYCsM3Kd_EnRAsIJKeZw6MLu_gApUKpTQ30x1ea7Vw4vooJp97kRfUuLTYL6EobNwW2PDBdk0ydlkRWr4FRV3FU5QuXu3fqZDKqrp9JkVFrOx8GhYzhV6xsQNjMKepZnLz2NAzAenR4W7Al_p2X9g.jpg"
+ },
+ "gholam": {
+  "text": "رفیق، آندری کارپاتی اومده یه دسته‌بندی جالب از شکاف عمیق درک آدما نسبت به هوش مصنوعی رو کرده و میگه این فاصله تبدیل به یه قیف تیز و عجیب شده. حساب سرانگشتیش میگه حدود ۶ میلیارد نفر از مردم دنیا اصلاً روحشون هم از این مدل‌ها خبر نداره و اون یک تا دو میلیارد نفری هم که با نسخه‌های رایگان کار می‌کنن، فکر می‌کنن هوش مصنوعی تهش یه گوگل پیشرفته یا چت‌بات دست‌وپاچلفتیه. اما در نقطه مقابل، حدود ۲۰ میلیون متخصص کدنویسی دارن کارهای چند ماهه رو با یه پرامپت ساده تحویل می‌گیرن و اون ۵ هزار نفرِ رأس هرم هم دسترسی به مدل‌های محرمانه‌ای دارن که دسته‌های هزارتایی از اِیجنت‌ها دارن توش پروژه‌های عظیم نرم‌افزاری می‌سازن و باگ امنیتی کشف می‌کنن. خلاصه اکثریت دنیا فکر می‌کنن اتفاق خاصی نیفتاده، در حالی که یه عده خیلی معدود دارن سرگیجه‌ی پیشرفت عمودی و مهارنشدنی این فناوری رو از نزدیک لمس می‌کنن.\n\nاهمیتش اینه که اگه قضاوتت از هوش مصنوعی بر اساس همین ابزارهای رایگان و دم‌دستی باشه، اصلاً عمق طوفانی که پشت درهای بسته داره دنیا رو زیرورو می‌کنه رو درک نمی‌کنی.",
+  "date": "2026-10-11T19:49:07+00:00"
+ },
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/karpathy/status/2109361546505966046",
+   "domain": "x.com",
+   "author": {
+    "name": "Andrej Karpathy",
+    "handle": "karpathy",
+    "avatar": "https://pbs.twimg.com/profile_images/1296667294148382721/9Pr6XrPB_200x200.jpg"
+   },
+   "text": "Dusting off this tweet from April because this gap in shared understanding of LLM capability is *widening*. It's now less \"two groups of people speaking past each other\" and more a sharp funnel.\n\n- Napkin math somewhere around 6B people (~75% of the population) have barely come in contact with LLMs at all.\n- Around 1-2B (~20%) are casual and infrequent users of free-tier ChatGPT-like products. This group sees derpy chatbots and treats them a bit like a better Google search, a writing aid, or etc. Maybe an agent tries to book you a flight. I have non-tech friends who (reasonably, imo) say they have not much use for it at all. Even many professionals outside of math&code are in this tier. For example, execs and many other functions spend a lot of their time talking to other people, so while they understand what is happening intellectually, it is still second-hand and a bit abstract.\n- Now we get to professional use of frontier-grade LLMs in math&code. Somewhere around 20M people (0.2%) see first-hand that large, complex projects that used to take them weeks/months can now be completed by agents with a prompt. Building apps, copying apps, translating apps, decompiling apps from binaries... This has all happened very quickly and recently - less than 1 year ago, I was writing code manually by hand, typing memorized computer code commands into a code editor character by character, occasionally pressing Tab to autocomplete a little chunk of code.\n- And finally we get to the ~5,000 people (~0.00006%) with access to frontier-grade systems internally. The external world has seen the preview. It looks like swarms of thousands of agents collaborating over weeks on software mega projects: minting zero days, running cyber attacks and defenses at machine speeds, discovering new science, advancing the frontier of mathematics. Things that would have taken top professionals in the industry years of work. Meanwhile, human review and comprehension are starting to fall behind. For example, people are still involved in the \"archeology\" of the OpenAI-HF incident from many months ago. Mathematicians may be poring over the 722 manuscripts on frontier mathematics for a while.\n\nThe funnel is driven by a combination of factors:\n1. The impact scales with ambition, problem size, and horizon. A question with a paragraph answer barely stresses the system. You need a reservoir of big, difficult problems that you really care about. This aspect drives the consumer / professional dimension of the funnel.\n2. The jaggedness of the system (which I have written about a lot separately). Capability peaks in domains that are digital, verifiable and economically valuable. This is because LLM capability emerges from reinforcement learning on verifiable rewards on a curated environment mixture driven by revenue potential. This aspect primarily drives the area (e.g. math&code) dimension of the funnel.\n3. Access. Free-tier, paid-tier, internal.\n\nSo this is the weirdness of the moment. The general public has mostly not interacted with these systems. When they have, it looks like a derpy chatbot. The majority of professionals still see only a modest uplift. And a small sliver of professionals are experiencing the vertigo of the curve going vertical. And it is all happening at the same time.",
+   "date": 1791745957,
+   "media": [],
+   "links": [],
+   "quote": {
+    "author": {
+     "name": "Andrej Karpathy",
+     "handle": "karpathy",
+     "avatar": "https://pbs.twimg.com/profile_images/1296667294148382721/9Pr6XrPB_200x200.jpg"
+    },
+    "text": "Judging by my tl there is a growing gap in understanding of AI capability.\n\nThe first issue I think is around recency and tier of use. I think a lot of people tried the free tier of ChatGPT somewhere  last year and allowed it to inform their views on AI a little too much. This is a group of reactions laughing at various quirks of the models, hallucinations, etc. Yes I also saw the viral videos of OpenAI's Advanced Voice mode fumbling simple queries like \"should I drive or walk to the carwash\". The thing is that these free and old/deprecated models don't reflect the capability in the latest round of state of the art agentic models of this year, especially OpenAI Codex and Claude Code.\n\nBut that brings me to the second issue. Even if people paid $200/month to use the state of the art models, a lot of the capabilities are relatively \"peaky\" in highly technical areas. Typical queries around search, writing, advice, etc. are *not* the domain that has made the most noticeable and dramatic strides in capability. Partly,  this is due to the technical details of reinforcement learning and its use of verifiable rewards. But partly, it's also because these use cases are not sufficiently prioritized by the companies in their hillclimbing because they don't lead to as much $$$ value. The goldmines are elsewhere, and the focus comes along.\n\nSo that brings me to the second group of people, who *both* 1) pay for and use the state of the art frontier agentic models (OpenAI Codex / Claude Code) and 2) do so professionally in technical domains like programming, math and research. This group of people is subject to the highest amount of \"AI Psychosis\" because the recent improvements in these domains as of this year have been nothing short of staggering. When you hand a computer terminal to one of these models, you can now watch them melt programming problems that you'd normally expect to take days/weeks of work. It's this second group of people that assigns a much greater gravity to the capabilities, their slope, and various cyber-related repercussions.\n\nTLDR the people in these two groups are speaking past each other. It really is simultaneously the case that OpenAI's free and I think slightly orphaned (?) \"Advanced Voice Mode\" will fumble the dumbest questions in your Instagram's reels and *at the same time*, OpenAI's highest-tier and paid Codex model will go off for 1 hour to coherently restructure an entire code base, or find and exploit vulnerabilities in computer systems. This part really works and has made dramatic strides because 2 properties: 1) these domains offer explicit reward functions that are verifiable meaning they are easily amenable to reinforcement learning training (e.g. unit tests passed yes or no, in contrast to writing, which is much harder to explicitly judge),  but also 2) they are a lot more valuable in b2b settings, meaning that the biggest fraction of the team is focused on improving them. So here we are.",
+    "date": 1775765452,
+    "media": [],
+    "links": []
+   }
+  }
+ ],
+ "article": {
+  "title": "آندری کارپاتی اومده یه دسته‌بندی جالب از شکاف عمیق درک آدما نسبت به هوش مصنوعی رو کرده و میگه این فاصله تبدیل به یه قیف تیز و عجیب شده",
+  "source_title": "Dusting off this tweet from April because this gap in shared understanding of LLM capability is *widening*. It's now less \"two groups of…",
+  "body": [
+   "رفیق، آندری کارپاتی اومده یه دسته‌بندی جالب از شکاف عمیق درک آدما نسبت به هوش مصنوعی رو کرده و میگه این فاصله تبدیل به یه قیف تیز و عجیب شده. حساب سرانگشتیش میگه حدود ۶ میلیارد نفر از مردم دنیا اصلاً روحشون هم از این مدل‌ها خبر نداره و اون یک تا دو میلیارد نفری هم که با نسخه‌های رایگان کار می‌کنن، فکر می‌کنن هوش مصنوعی تهش یه گوگل پیشرفته یا چت‌بات دست‌وپاچلفتیه. اما در نقطه مقابل، حدود ۲۰ میلیون متخصص کدنویسی دارن کارهای چند ماهه رو با یه پرامپت ساده تحویل می‌گیرن و اون ۵ هزار نفرِ رأس هرم هم دسترسی به مدل‌های محرمانه‌ای دارن که دسته‌های هزارتایی از اِیجنت‌ها دارن توش پروژه‌های عظیم نرم‌افزاری می‌سازن و باگ امنیتی کشف می‌کنن. خلاصه اکثریت دنیا فکر می‌کنن اتفاق خاصی نیفتاده، در حالی که یه عده خیلی معدود دارن سرگیجه‌ی پیشرفت عمودی و مهارنشدنی این فناوری رو از نزدیک لمس می‌کنن."
+  ],
+  "why": "اگه قضاوتت از هوش مصنوعی بر اساس همین ابزارهای رایگان و دم‌دستی باشه، اصلاً عمق طوفانی که پشت درهای بسته داره دنیا رو زیرورو می‌کنه رو درک نمی‌کنی.",
+  "tags": [
+   "اوپن‌ای‌آی",
+   "گوگل"
+  ]
+ },
+ "updated": "2026-10-25T12:23:51+00:00",
+ "gholam_checked": "2026-10-25T12:23:51+00:00"
+}

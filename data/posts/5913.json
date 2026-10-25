@@ -2,16 +2,23 @@
  "id": 5913,
  "url": "https://t.me/dlmehr/5913",
  "date": "2026-10-15T19:29:43+00:00",
- "edited": true,
- "views": "207",
  "text": "https://fxtwitter.com/aiatmeta/status/2110779754274292212?s=52&t=F41Qa04r48Mef_j_XjBneQ",
  "forwarded_from": null,
  "digest": false,
  "hash": "245285ecb4d7",
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/aiatmeta/status/2110779754274292212?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+  "site": "🧵 Thread • FxTwitter",
+  "title": "AI at Meta (@AIatMeta)",
+  "description": "Today we’re releasing Muse Spark Open, the most capable US open-weight model to date.\nBuilt for coding and agentic work, it excels at long-horizon tasks, complex software engineering, and multi-step reasoning.\nKey Model Specs:\n→ 816B total / 42B active…",
+  "image": "https://cdn4.telesco.pe/file/k6RFLV7iy38wH9FSiT4d2S3PDy8b4OqfgTf9hsX41gItYzu0_mWQvdOCNAGfzmKIZKdtNI8GLe03ZzUveuxhsdQjZOypzWf_NOJLWQPrw4EaVJsb2XgCM6LS17ztIVJkC5Bl1zPEc6a5TWfP2X9wDoF4X9Wn-eCEXgZZxyVvy1cfe-oGacaLb7z_Q1qO1RfbEHjuAHn-mwKRtqXDO9tKuODa7G7e8NpvuBRDPIc3qA9ayIUYFBAhZHGZwCb8LqfPYChWgq1TnaB6GCq639QsqGvku7CCOV7dphpV_8fcRmhX-AONpIvSu1GVZMdM1iPWyHpHnyrH-zEjdmq1_w1jFA.jpg"
+ },
  "gholam": {
   "text": "ببین رفیق، بچه‌های متا دست به مهره شدن و یه مدل هوش مصنوعی وزن‌باز جدید به اسم Muse Spark Open دادن بیرون که مدعی‌ان قوی‌ترین مدل متن‌باز آمریکایی تا به امروزه. این غول تکنولوژی در مجموع ۸۱۶ میلیارد پارامتر داره ولی در لحظه ۴۲ میلیارد پارامترش فعاله تا برای پروژه‌های سنگین کدنویسی و کارهای مستقل ایجنتی کم نیاره. پنجره‌ی زمینه‌ش هم تا ۱ میلیون توکن کش میاد و از بیخ و بن چندوجهیه؛ یعنی هم‌زمان متن، عکس، ویدیو و صدا رو تر و تمیز می‌فهمه و پردازش می‌کنه.\n\nاهمیتش اینه که برنامه‌نویس‌ها و تیم‌های نرم‌افزاری حالا بدون وابستگی به سرویس‌های ابری پولی و بسته، به یه مغز متفکر آزاد و به شدت کاردرست برای خودکارسازی کارهای پیچیده‌شون دسترسی دارن.",
   "date": "2026-10-15T19:30:02+00:00"
  },
+ "gholam_checked": "2026-10-24T23:35:34+00:00",
  "links": [
   {
    "kind": "tweet",
@@ -50,18 +57,6 @@
    "links": []
   }
  ],
- "media": [],
- "preview": {
-  "url": "https://fxtwitter.com/aiatmeta/status/2110779754274292212?s=52&t=F41Qa04r48Mef_j_XjBneQ",
-  "site": "🧵 Thread • FxTwitter",
-  "title": "AI at Meta (@AIatMeta)",
-  "description": "Today we’re releasing Muse Spark Open, the most capable US open-weight model to date.\nBuilt for coding and agentic work, it excels at long-horizon tasks, complex software engineering, and multi-step reasoning.\nKey Model Specs:\n→ 816B total / 42B active…",
-  "image": {
-   "src": "media/5913/preview.webp",
-   "width": 800,
-   "height": 436
-  }
- },
  "article": {
   "title": "بچه‌های متا دست به مهره شدن و یه مدل هوش مصنوعی وزن‌باز جدید به اسم Muse Spark Open دادن بیرون که مدعی‌ان قوی‌ترین مدل متن‌باز آمریکایی تا به امروزه",
   "source_title": "Today we’re releasing Muse Spark Open, the most capable US open-weight model to date.",
@@ -74,6 +69,5 @@
    "کدنویسی"
   ]
  },
- "updated": "2026-10-24T23:35:34+00:00",
- "gholam_checked": "2026-10-24T23:35:34+00:00"
+ "updated": "2026-10-25T11:54:11+00:00"
 }

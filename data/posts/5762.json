@@ -1,0 +1,61 @@
+{
+ "id": 5762,
+ "url": "https://t.me/dlmehr/5762",
+ "date": "2026-10-08T20:49:21+00:00",
+ "text": "https://fxtwitter.com/AnthropicAI/status/2108290395599667700",
+ "forwarded_from": "Parsa Razavi",
+ "digest": false,
+ "hash": "82adfb2f848e",
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/AnthropicAI/status/2108290395599667700",
+  "site": "FxTwitter · anthropic.com",
+  "title": "Anthropic (@AnthropicAI)",
+  "description": "An astrophysicist worked with Claude Science to create the first complete ultraviolet map of the sky. Astronomers have already created complete sky maps from radio to gamma rays. But large regions of the sky have never been observed in UV.\nIn today’s science…",
+  "image": "https://cdn4.telesco.pe/file/BrRBsfAiChSuYdZkqOz3hP0RPJIW7CulTY2Svxh_EC9e7MG7WvHmawtlNZfU5sOaqGR28lRPr_9NeOTkqxsaaeKVbfyWLmDelYaMoEis7-T-C1_aMvvFRNUpJvY7MOFYIf487x92VhtSXqGpSvPVPdLKQwuZVykKPvsRR8yQWzSDg6nPJ14gK6SYJj-IjVpYqkRBiUC6SsR0q8rlTP3-sXB2sRXO9JwLAyWN7TCBH5jI48e3WAB7GBb8drI-FCFnK3LVnYLmdvRSDbdJxzgjrknUcv2HTiaYaN0Dc9az8YCVOcqFiHi4mmSAWe1AZB6kEkqaVkqBZRk145ETY7w7zA.jpg"
+ },
+ "gholam": {
+  "text": "رفیق، یه خبر ناب از دنیای نجوم برات بیارم که هوش مصنوعی دوباره گل کاشته و کارستون کرده. ماجرا از این قراره که یه اخترفیزیک‌دان به اسم بریس منارد دست به یکی کرده با مدل کلود و موفق شدن برای اولین بار تو تاریخ، نقشه کامل آسمون رو توی نور فرابنفش سر هم کنن. تا پیش از این، از امواج رادیویی گرفته تا گاما نقشه کامل داشتیم اما تیکه‌های بزرگی از آسمون توی فرابنفش تاریک و ندیده مونده بود؛ حالا منارد به این هوش مصنوعی خط داده تا دیتاهای پراکنده رو جمع کنه و با مدل‌سازی آماری جاهای خالی رو پر کنه. کاری که به دست آدمیزاد هفته‌ها فسفر سوزوندن می‌خواست، با کلود توی چند روز شسته‌رفته جمع شد رفت پی کارش.\n\nچرا مهمه؟ اهمیتش اینه که نشون میده هوش مصنوعی دست گذاشته روی همون کارای پرزحمت و کم‌اولویت علمی که دانشمندا هیچ‌وقت وقت نمی‌کردن سراغش برن و این‌طوری چرخ پژوهش چند برابر تندتر می‌چرخه.",
+  "date": "2026-10-08T20:49:37+00:00"
+ },
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/AnthropicAI/status/2108290395599667700",
+   "domain": "x.com",
+   "author": {
+    "name": "Anthropic",
+    "handle": "AnthropicAI",
+    "avatar": "https://pbs.twimg.com/profile_images/1798110641414443008/XP8gyBaY_200x200.jpg"
+   },
+   "text": "An astrophysicist worked with Claude Science to create the first complete ultraviolet map of the sky. Astronomers have already created complete sky maps from radio to gamma rays. But large regions of the sky have never been observed in UV.\n\nIn today’s science blog, Brice Ménard explains how he guided Claude to find existing datasets, combine them, and fill in the gaps with statistical inference. The work would have taken humans weeks of work, but, with Claude, just took a few days while Ménard worked on other projects.\n\nThe resulting map is a useful teaching tool and an example of exactly the sort of slow, low-priority work which scientists never quite get around to, but which AI now makes feasible.\n\nRead more: https://www.anthropic.com/research/the-missing-map-of-the-sky",
+   "date": 1791490575,
+   "media": [],
+   "links": [
+    "https://www.anthropic.com/research/the-missing-map-of-the-sky"
+   ]
+  },
+  {
+   "kind": "link",
+   "url": "https://www.anthropic.com/research/the-missing-map-of-the-sky",
+   "domain": "anthropic.com",
+   "title": "Using Claude Science to produce the first complete map of the sky in UV light",
+   "description": "Claude Science helped produce the first complete map of the sky in UV light",
+   "image": "https://www-cdn.anthropic.com/images/4zrzovbb/website/dde28f2eb899eade347dd07314a9c6b65bfbbb3c-1200x630.png",
+   "site": "anthropic.com"
+  }
+ ],
+ "article": {
+  "title": "یه خبر ناب از دنیای نجوم برات بیارم که هوش مصنوعی دوباره گل کاشته و کارستون کرده",
+  "source_title": "An astrophysicist worked with Claude Science to create the first complete ultraviolet map of the sky. Astronomers have already created…",
+  "body": [
+   "رفیق، یه خبر ناب از دنیای نجوم برات بیارم که هوش مصنوعی دوباره گل کاشته و کارستون کرده. ماجرا از این قراره که یه اخترفیزیک‌دان به اسم بریس منارد دست به یکی کرده با مدل کلود و موفق شدن برای اولین بار تو تاریخ، نقشه کامل آسمون رو توی نور فرابنفش سر هم کنن. تا پیش از این، از امواج رادیویی گرفته تا گاما نقشه کامل داشتیم اما تیکه‌های بزرگی از آسمون توی فرابنفش تاریک و ندیده مونده بود؛ حالا منارد به این هوش مصنوعی خط داده تا دیتاهای پراکنده رو جمع کنه و با مدل‌سازی آماری جاهای خالی رو پر کنه. کاری که به دست آدمیزاد هفته‌ها فسفر سوزوندن می‌خواست، با کلود توی چند روز شسته‌رفته جمع شد رفت پی کارش."
+  ],
+  "why": "اهمیتش اینه که نشون میده هوش مصنوعی دست گذاشته روی همون کارای پرزحمت و کم‌اولویت علمی که دانشمندا هیچ‌وقت وقت نمی‌کردن سراغش برن و این‌طوری چرخ پژوهش چند برابر تندتر می‌چرخه.",
+  "tags": [
+   "آنتروپیک"
+  ]
+ },
+ "updated": "2026-10-25T12:24:04+00:00",
+ "gholam_checked": "2026-10-25T12:24:04+00:00"
+}

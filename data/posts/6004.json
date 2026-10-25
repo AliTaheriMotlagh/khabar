@@ -2,16 +2,23 @@
  "id": 6004,
  "url": "https://t.me/dlmehr/6004",
  "date": "2026-10-20T21:28:17+00:00",
- "edited": true,
- "views": "173",
  "text": "https://fxtwitter.com/praneetapujari/status/2112580659558682684?s=52&t=F41Qa04r48Mef_j_XjBneQ",
  "forwarded_from": null,
  "digest": false,
  "hash": "3f9213392369",
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/praneetapujari/status/2112580659558682684?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+  "site": "🧵 Thread • FxTwitter",
+  "title": "Praneeta Pujari (@PraneetaPujari)",
+  "description": "I left @Apple to build healthcare that listens and acts early. Today, I'm excited to introduce UniqueHuman.\nWe're building proactive healthcare agents that handle every step of care for people with chronic conditions.\nOur mission is to end chronic suffering.…",
+  "image": null
+ },
  "gholam": {
   "text": "رفیق، داستان از این قراره که خانم پرانیتا پوجاری قید میز و صندلی راحتش تو شرکت اپل رو زده تا یه استارتاپ خفن پزشکی به اسم UniqueHuman راه بندازه. حرف حسابش اینه که ایجنت‌های هوش مصنوعی بسازن تا قبل از اینکه کار بیخ پیدا کنه، قدم‌به‌قدم پیگیر حال و روز آدم‌های درگیر با بیماری‌های مزمن باشن و نذارن کار به جاهای باریک بکشه. خلاصه هدفشون پایان دادن به این رنج‌های بی‌پایان درمونیه و واسه شروع هم دست گذاشتن روی مدیریت و کنترل سردردهای کلافه‌کننده میگرن.\n\nچرا مهمه؟ چون کنترل دردهای مزمنی مثل میگرن کار هر روزه و فرسایشیه و ورود ایجنت‌های پیگیر می‌تونه بدون معطلی و قبل از شروع بحران، کیفیت زندگی بیمارها رو نجات بده.",
   "date": "2026-10-20T21:28:35+00:00"
  },
+ "gholam_checked": "2026-10-24T23:03:13+00:00",
  "links": [
   {
    "kind": "tweet",
@@ -46,14 +53,6 @@
    "links": []
   }
  ],
- "media": [],
- "preview": {
-  "url": "https://fxtwitter.com/praneetapujari/status/2112580659558682684?s=52&t=F41Qa04r48Mef_j_XjBneQ",
-  "site": "🧵 Thread • FxTwitter",
-  "title": "Praneeta Pujari (@PraneetaPujari)",
-  "description": "I left @Apple to build healthcare that listens and acts early. Today, I'm excited to introduce UniqueHuman.\nWe're building proactive healthcare agents that handle every step of care for people with chronic conditions.\nOur mission is to end chronic suffering.…",
-  "image": null
- },
  "article": {
   "title": "داستان از این قراره که خانم پرانیتا پوجاری قید میز و صندلی راحتش تو شرکت اپل رو زده تا یه استارتاپ خفن پزشکی به اسم UniqueHuman راه بندازه",
   "source_title": "I left @Apple to build healthcare that listens and acts early. Today, I'm excited to introduce UniqueHuman.",
@@ -67,6 +66,5 @@
    "استارتاپ"
   ]
  },
- "updated": "2026-10-24T23:03:13+00:00",
- "gholam_checked": "2026-10-24T23:03:13+00:00"
+ "updated": "2026-10-25T11:53:56+00:00"
 }

@@ -1,0 +1,56 @@
+{
+ "id": 5035,
+ "url": "https://t.me/dlmehr/5035",
+ "date": "2026-08-30T16:13:11+00:00",
+ "text": "https://fxtwitter.com/miaai_lab/status/2094071914390056998?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+ "forwarded_from": null,
+ "digest": false,
+ "hash": "a0ac180edc21",
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/miaai_lab/status/2094071914390056998?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+  "site": "FxTwitter",
+  "title": "Mia (@MiaAI_lab)",
+  "description": "Local AI is so good at this point, $9000 can buy you free, unlimited, private inference with\n- GLM 5.3 Flash\n- Qwen3.8 Flash\n- DeepSeek v4 Flash\nAll 3 are frontier level and can run on 2x DGX Sparks.",
+  "image": "https://cdn4.telesco.pe/file/EOvKytAOWHPL40l8DAelOY7rgXOfUI-qc0520AU4V4FeMUPCg1M0uUbTUEioonSBXs0TTfe4cZVbrGfw27f8YleUuhuEzYO1UGDHbommik_hH0qX1hgnwxGYdaE2en-YHa-3u-0SXOXDFo93PmPgsrR6YtQdL5eU31mhElJfYLA6s1HkmWxNquTNzsMptPPQGxnOfp8xEVQSuXxpaQAUOGLup4l4GYyxrlT4Qd_g2Sfz-9L3H6Wf2QRWzqqOHPjE5n_1RGP6i8Dnd7bO4jaKsc7NUPBpNRvE2vmwztmKz6tA4-SJ_RpTkGGQwK1Dn4-Sd5oUQKqsQI_NDnjJJG2l0w.jpg"
+ },
+ "gholam": {
+  "text": "رفیق، دنیای هوش مصنوعی محلی اون‌قدر پیشرفت کرده که دیگه نیازی نیست به سرورهای ابری باج بدی. یکی از کاربرا حساب کرده با یه بودجه حدود ۹ هزار دلاری و بستن دو تا سیستم DGX Spark، می‌تونی مدل‌های خفن و روزی مثل GLM 5.3 Flash، Qwen3.8 Flash و DeepSeek v4 Flash رو کاملاً آفلاین و نامحدود بالا بیاری. این مدل‌ها دست کمی از غول‌های ابری ندارن و تمام پردازش‌ها رو برات رایگان، فوق‌العاده سریع و بدون درز دادن اطلاعاتت انجام میدن.\n\nاهمیتش اینه که حریم خصوصی و استقلال کامل توی پردازش مدل‌های هوش مصنوعی فوق‌پیشرفته، حالا با یه هزینه معقول و در دسترس سخت‌افزاری کامپیوترها ممکن شده.",
+  "date": "2026-08-30T16:13:22+00:00"
+ },
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/MiaAI_lab/status/2094071914390056998",
+   "domain": "x.com",
+   "author": {
+    "name": "Mia",
+    "handle": "MiaAI_lab",
+    "avatar": "https://pbs.twimg.com/profile_images/2063908041691484160/5XsJBn7I_200x200.jpg"
+   },
+   "text": "Local AI is so good at this point, $9000 can buy you free, unlimited, private inference with\n\n- GLM 5.3 Flash\n- Qwen3.8 Flash\n- DeepSeek v4 Flash\n\nAll 3 are frontier level and can run on 2x DGX Sparks.",
+   "date": 1788100625,
+   "media": [
+    {
+     "type": "image",
+     "src": "https://pbs.twimg.com/media/HQ-iRb2WoAApwRy.jpg?name=orig",
+     "ratio": 0.2687
+    }
+   ],
+   "links": []
+  }
+ ],
+ "article": {
+  "title": "دنیای هوش مصنوعی محلی اون‌قدر پیشرفت کرده که دیگه نیازی نیست به سرورهای ابری باج بدی",
+  "source_title": "Local AI is so good at this point, $9000 can buy you free, unlimited, private inference with",
+  "body": [
+   "رفیق، دنیای هوش مصنوعی محلی اون‌قدر پیشرفت کرده که دیگه نیازی نیست به سرورهای ابری باج بدی. یکی از کاربرا حساب کرده با یه بودجه حدود ۹ هزار دلاری و بستن دو تا سیستم DGX Spark، می‌تونی مدل‌های خفن و روزی مثل GLM 5.3 Flash، Qwen3.8 Flash و DeepSeek v4 Flash رو کاملاً آفلاین و نامحدود بالا بیاری. این مدل‌ها دست کمی از غول‌های ابری ندارن و تمام پردازش‌ها رو برات رایگان، فوق‌العاده سریع و بدون درز دادن اطلاعاتت انجام میدن."
+  ],
+  "why": "حریم خصوصی و استقلال کامل توی پردازش مدل‌های هوش مصنوعی فوق‌پیشرفته، حالا با یه هزینه معقول و در دسترس سخت‌افزاری کامپیوترها ممکن شده.",
+  "tags": [
+   "چین"
+  ]
+ },
+ "updated": "2026-10-25T12:28:34+00:00",
+ "gholam_checked": "2026-10-25T12:28:34+00:00"
+}

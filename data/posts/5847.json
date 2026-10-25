@@ -1,0 +1,81 @@
+{
+ "id": 5847,
+ "url": "https://t.me/dlmehr/5847",
+ "date": "2026-10-12T19:50:58+00:00",
+ "text": "https://fxtwitter.com/rohanpaul_ai/status/2109727275092697482?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+ "forwarded_from": null,
+ "digest": false,
+ "hash": "d7b6d5a2b95a",
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/rohanpaul_ai/status/2109727275092697482?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+  "site": "FxTwitter",
+  "title": "Rohan Paul (@rohanpaul_ai)",
+  "description": "“Every company is an API company now, whether they want to be or not.” (Sam Altman)\nThe @readme team, which built Restless, says ~72% of its own docs traffic is already agents. If your product can’t be reached that way, the agent picks a tool that can.\n…",
+  "image": null
+ },
+ "gholam": {
+  "text": "ببین رفیق، سم آلتمن راست می‌گفت که این روزا چه بخوای چه نخوای، هر شرکتی شده یه شرکت مبتنی بر API. تیم ReadMe هم اومده آمار داده که حدود ۷۲ درصد از ترافیک مستنداتشون دیگه دست کاربرای انسانی نیست و خود ایجنت‌های هوش مصنوعی دارن می‌چرخوننش! حرف حسابشون اینه که اگه سیستم و کد تو برای این بات‌ها سرراست و آماده نباشه، اونا معطلت نمی‌شن و سریع می‌رن سراغ ابزار رقیب. واسه همین ابزاری به اسم Restless ساختن که با یه خط کد راه می‌افته و وقتی ایجنت به خطا می‌خوره، تو همون جواب ارور به زبون خودش یادش میده چطور سوتی رو جمع کنه تا کار لنگ نمونه.\n\nاهمیتش اینه که از این به بعد مشتری دست‌به‌نقد و اصلی برنامه‌ها هوش مصنوعیه، پس هر کدی که با این ایجنت‌ها رفیق نباشه خیلی زود از بازار اوت می‌شه.",
+  "date": "2026-10-12T19:51:16+00:00"
+ },
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/rohanpaul_ai/status/2109727275092697482",
+   "domain": "x.com",
+   "author": {
+    "name": "Rohan Paul",
+    "handle": "rohanpaul_ai",
+    "avatar": "https://pbs.twimg.com/profile_images/1816185267037859840/Fd18CH0v_200x200.jpg"
+   },
+   "text": "“Every company is an API company now, whether they want to be or not.” (Sam Altman)\n\nThe @readme team, which built Restless, says ~72% of its own docs traffic is already agents. If your product can’t be reached that way, the agent picks a tool that can.\n\nTheir idea is to treat agents as your main users. \n\nRestless is a tool you add to your API by running one command, `npx restless init`. \nIt records every request your users’ AI agents send, and when a call fails, the error response itself tells the agent how to fix it.\n\nhttps://x.com/gkoberger/status/2109707495820464356/video/1",
+   "date": 1791833153,
+   "media": [
+    {
+     "type": "video",
+     "src": "https://video.twimg.com/amplify_video/2109707281252368384/vid/avc1/960x720/Y5ckQLQoaLybiNy1.mp4?tag=29",
+     "poster": "https://pbs.twimg.com/amplify_video_thumb/2109707281252368384/img/cjL_F3RXGsKBFaKX.jpg",
+     "ratio": 0.75,
+     "duration": 75.04,
+     "gif": false
+    }
+   ],
+   "links": [
+    "https://x.com/gkoberger/status/2109707495820464356/video/1"
+   ],
+   "quote": {
+    "author": {
+     "name": "Gregory Koberger",
+     "handle": "gkoberger",
+     "avatar": "https://pbs.twimg.com/profile_images/855488676343668736/lSQSlvk3_200x200.jpg"
+    },
+    "text": "Your API is now your product, and it needs to move as fast as you do.\n\nIntroducing Restless.\n\nEvery call, support question, pull request, and error message leaves your API better for the next agent.",
+    "date": 1791828438,
+    "media": [
+     {
+      "type": "video",
+      "src": "https://video.twimg.com/amplify_video/2109707281252368384/vid/avc1/960x720/Y5ckQLQoaLybiNy1.mp4?tag=29",
+      "poster": "https://pbs.twimg.com/amplify_video_thumb/2109707281252368384/img/cjL_F3RXGsKBFaKX.jpg",
+      "ratio": 0.75,
+      "duration": 75.04,
+      "gif": false
+     }
+    ],
+    "links": []
+   }
+  }
+ ],
+ "article": {
+  "title": "سم آلتمن راست می‌گفت که این روزا چه بخوای چه نخوای، هر شرکتی شده یه شرکت مبتنی بر API",
+  "source_title": "“Every company is an API company now, whether they want to be or not.” (Sam Altman)",
+  "body": [
+   "ببین رفیق، سم آلتمن راست می‌گفت که این روزا چه بخوای چه نخوای، هر شرکتی شده یه شرکت مبتنی بر API. تیم ReadMe هم اومده آمار داده که حدود ۷۲ درصد از ترافیک مستنداتشون دیگه دست کاربرای انسانی نیست و خود ایجنت‌های هوش مصنوعی دارن می‌چرخوننش! حرف حسابشون اینه که اگه سیستم و کد تو برای این بات‌ها سرراست و آماده نباشه، اونا معطلت نمی‌شن و سریع می‌رن سراغ ابزار رقیب. واسه همین ابزاری به اسم Restless ساختن که با یه خط کد راه می‌افته و وقتی ایجنت به خطا می‌خوره، تو همون جواب ارور به زبون خودش یادش میده چطور سوتی رو جمع کنه تا کار لنگ نمونه."
+  ],
+  "why": "از این به بعد مشتری دست‌به‌نقد و اصلی برنامه‌ها هوش مصنوعیه، پس هر کدی که با این ایجنت‌ها رفیق نباشه خیلی زود از بازار اوت می‌شه.",
+  "tags": [
+   "اوپن‌ای‌آی"
+  ]
+ },
+ "updated": "2026-10-25T12:23:42+00:00",
+ "gholam_checked": "2026-10-25T12:23:42+00:00"
+}

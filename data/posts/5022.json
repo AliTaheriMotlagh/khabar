@@ -1,0 +1,46 @@
+{
+ "id": 5022,
+ "url": "https://t.me/dlmehr/5022",
+ "date": "2026-08-29T16:56:32+00:00",
+ "text": "https://youtu.be/y2eq3_lmqlw?is=sm2Mtd7PNeTydOkM",
+ "forwarded_from": null,
+ "digest": false,
+ "hash": "7baa973942ee",
+ "media": [],
+ "preview": {
+  "url": "https://youtu.be/y2eq3_lmqlw?is=sm2Mtd7PNeTydOkM",
+  "site": "YouTube",
+  "title": "43. HuggingFace Incident [Persian]",
+  "description": "https://openai.com/index/hugging-face-incident-and-the-road-ahead/\nhttps://metr.org/blog/2026-08-26-openai-hugging-face-incident-investigation/\nhttps://www.youtube.com/watch?v=87DyyMV0kCY",
+  "image": "https://cdn4.telesco.pe/file/eyR98taUlPISxLCCB9eqSueE7DHgzZeNtck6f24kk-SsDq-o5y8yx-n1u3v3v5DvD7MUY6unDeIqFCwhX_3kwh1vUqFbnBBy1SSsnQxYhAkh_0-7mjMMkVpsaxsiZNlB3Z_I3pi_UdrlIe-yJZ434Hldthby8Wz3DIdEA6b9Vp5_pNTzlP29eh1OuepBQjhqL4tfGt9t6D0A8CE-LudmqyseOPYn1k0Okeu0ih-tf0HKAtyO2nOU3WlIKgzeBSCa04Tmoy3MTYOIiNYeTWRCMD9zIlr-1jtKX3jJI86DUVTWeIz_Rn883LO8rL3CuBIyJVjdhwEJNeloCNbnzy7VxA.jpg"
+ },
+ "gholam": {
+  "text": "رفیق، توی این ویدیو رفتن سراغ ماجرای جنجالی رخنه‌ی امنیتی هاگینگ‌فیس و گزارش‌هایی که اوپن‌ای‌آی و مؤسسه METR منتشر کردن تا ببینن اون وسط دقیقاً چه اتفاقی افتاده. قضیه از این قراره که آسیب‌پذیری‌ها و نشت اطلاعات توی پلتفرم‌های میزبانی مدل‌های هوش مصنوعی چطور می‌تونه امنیت کل سیستم‌ها رو به چالش بکشه و چه درس‌هایی باید ازش گرفت. خلاصه مو به مو ابعاد فنی این حادثه رو کالبدشکافی کردن تا مشخص بشه شرکت‌های بزرگ بعد از این داستان، چه تدابیر سفت‌وسختی برای محافظت از داده‌ها و مدل‌هاشون چیدن.\n\nچرا مهمه؟ چون بهمون یادآوری می‌کنه امنیت پلتفرم‌های هوش مصنوعی اصلاً شوخی‌بردار نیست و یه غفلت کوچیک می‌تونه پروژه‌های غول‌های فناوری رو به خطر بندازه.",
+  "date": "2026-08-29T16:56:47+00:00"
+ },
+ "links": [
+  {
+   "kind": "link",
+   "url": "https://www.youtube.com/watch?is=sm2Mtd7PNeTydOkM&v=y2eq3_lmqlw&feature=youtu.be",
+   "domain": "youtube.com",
+   "title": "43. HuggingFace Incident [Persian]",
+   "description": "https://openai.com/index/hugging-face-incident-and-the-road-ahead/https://metr.org/blog/2026-08-26-openai-hugging-face-incident-investigation/https://www.you...",
+   "image": "https://i.ytimg.com/vi/y2eq3_lmqlw/maxresdefault.jpg",
+   "site": "YouTube"
+  }
+ ],
+ "article": {
+  "title": "توی این ویدیو رفتن سراغ ماجرای جنجالی رخنه‌ی امنیتی هاگینگ‌فیس و گزارش‌هایی که اوپن‌ای‌آی و مؤسسه METR منتشر کردن تا ببینن اون وسط دقیقاً چه اتفاقی افتاده",
+  "source_title": "43. HuggingFace Incident [Persian]",
+  "body": [
+   "رفیق، توی این ویدیو رفتن سراغ ماجرای جنجالی رخنه‌ی امنیتی هاگینگ‌فیس و گزارش‌هایی که اوپن‌ای‌آی و مؤسسه METR منتشر کردن تا ببینن اون وسط دقیقاً چه اتفاقی افتاده. قضیه از این قراره که آسیب‌پذیری‌ها و نشت اطلاعات توی پلتفرم‌های میزبانی مدل‌های هوش مصنوعی چطور می‌تونه امنیت کل سیستم‌ها رو به چالش بکشه و چه درس‌هایی باید ازش گرفت. خلاصه مو به مو ابعاد فنی این حادثه رو کالبدشکافی کردن تا مشخص بشه شرکت‌های بزرگ بعد از این داستان، چه تدابیر سفت‌وسختی برای محافظت از داده‌ها و مدل‌هاشون چیدن."
+  ],
+  "why": "چون بهمون یادآوری می‌کنه امنیت پلتفرم‌های هوش مصنوعی اصلاً شوخی‌بردار نیست و یه غفلت کوچیک می‌تونه پروژه‌های غول‌های فناوری رو به خطر بندازه.",
+  "tags": [
+   "امنیت",
+   "اوپن‌ای‌آی"
+  ]
+ },
+ "updated": "2026-10-25T12:28:40+00:00",
+ "gholam_checked": "2026-10-25T12:28:40+00:00"
+}

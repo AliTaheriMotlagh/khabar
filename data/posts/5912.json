@@ -2,16 +2,23 @@
  "id": 5912,
  "url": "https://t.me/dlmehr/5912",
  "date": "2026-10-15T19:29:07+00:00",
- "edited": true,
- "views": "191",
  "text": "https://fxtwitter.com/artificialanlys/status/2110760441240752399?s=52&t=F41Qa04r48Mef_j_XjBneQ",
  "forwarded_from": null,
  "digest": false,
  "hash": "4b2ee5346ed3",
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/artificialanlys/status/2110760441240752399?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+  "site": "🧵 Thread • FxTwitter",
+  "title": "Artificial Analysis (@ArtificialAnlys)",
+  "description": "Nvidia’s Nemotron 3.5 Super VL is now the leading US open weight model, scoring 26 on the Artificial Analysis Intelligence Index\nNemotron 3.5 Super VL achieves twice the intelligence of its predecessor, Nemotron 3 Super (13), and does so using ~60% fewer…",
+  "image": "https://cdn4.telesco.pe/file/N1cwBd6bP5V4ELx3QoemOunFyoFv9PPIrsOmnU46-G9xf0lPLKUJgXHPnoantoP2Oly9r97e2moSldjYoITrc0gqmVTe_VVobTZafX2gn1KfRQSANirVopRd8QMmYuFZ2NaZlFgtQAusNg2177puSutjEZQj7DiWtr9PYTjbpvwXFc_lPxBgEdCvQXgicdugbSWlH-c-p5YoOvScG5BrPt4LVaIrdrF_1LMirVpylWwPXXuPze2gJJ2I9HEczfgM-Hi36KdB3Chsp8_rG5XWGY_rkfB416meroug6w5HcnSDMIyk0fXSKHdrFx8ExEuzmvQYYOFSt-0ke4wTRzNz7A.jpg"
+ },
  "gholam": {
   "text": "ببین رفیق، انویدیا رسماً گردوخاک راه انداخته و با مدل جدیدش یعنی Nemotron 3.5 Super VL زده رو دست تمام مدل‌های وزن‌باز توی آمریکا. این غول جدید تو شاخص هوش بنچمارک امتیاز ۲۶ رو دشت کرده که قشنگ دو برابر نسل قبلیشه، اونم در حالی که حدود ۶۰ درصد توکن خروجی کمتری مصرف می‌کنه و حسابی کاردرسته. این مدل با ۱۲۰ میلیارد پارامتر و پنجره کانتکست یک میلیونی، هم تصویر و هم متن رو مثل آب خوردن هضم می‌کنه و رقبایی مثل متا رو جا گذاشته. تازه کنارش یه نسخه جمع‌وجورتر و تند و تیز به اسم بولت هم رو کرده که با منابع خیلی کمتر، کارایی نزدیک به مدل‌های غول‌پیکر تحویل میده.\n\nاهمیتش اینه که انویدیا ثابت کرد می‌شه بدون سوزوندن توان پردازشی الکی، مدل‌های اپن‌ویت بی‌نهایت باهوش، ارزان‌تر و چابک‌تری به میدون فرستاد.",
   "date": "2026-10-15T19:29:24+00:00"
  },
+ "gholam_checked": "2026-10-24T23:35:34+00:00",
  "links": [
   {
    "kind": "tweet",
@@ -43,18 +50,6 @@
    "links": []
   }
  ],
- "media": [],
- "preview": {
-  "url": "https://fxtwitter.com/artificialanlys/status/2110760441240752399?s=52&t=F41Qa04r48Mef_j_XjBneQ",
-  "site": "🧵 Thread • FxTwitter",
-  "title": "Artificial Analysis (@ArtificialAnlys)",
-  "description": "Nvidia’s Nemotron 3.5 Super VL is now the leading US open weight model, scoring 26 on the Artificial Analysis Intelligence Index\nNemotron 3.5 Super VL achieves twice the intelligence of its predecessor, Nemotron 3 Super (13), and does so using ~60% fewer…",
-  "image": {
-   "src": "media/5912/preview.webp",
-   "width": 800,
-   "height": 406
-  }
- },
  "article": {
   "title": "انویدیا رسماً گردوخاک راه انداخته و با مدل جدیدش یعنی Nemotron 3.5 Super VL زده رو دست تمام مدل‌های وزن‌باز توی آمریکا",
   "source_title": "Nvidia’s Nemotron 3.5 Super VL is now the leading US open weight model, scoring 26 on the Artificial Analysis Intelligence Index",
@@ -66,6 +61,5 @@
    "انویدیا"
   ]
  },
- "updated": "2026-10-24T23:35:34+00:00",
- "gholam_checked": "2026-10-24T23:35:34+00:00"
+ "updated": "2026-10-25T11:54:11+00:00"
 }

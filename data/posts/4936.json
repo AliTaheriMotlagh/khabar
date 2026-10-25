@@ -1,0 +1,59 @@
+{
+ "id": 4936,
+ "url": "https://t.me/dlmehr/4936",
+ "date": "2026-08-25T15:38:05+00:00",
+ "text": "https://fxtwitter.com/perplexity_ai/status/2092268362386780270?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+ "forwarded_from": null,
+ "digest": false,
+ "hash": "1b884a9a0d82",
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/perplexity_ai/status/2092268362386780270?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+  "site": "🧵 Thread • FxTwitter",
+  "title": "Perplexity (@perplexity_ai)",
+  "description": "Today we’re launching Portable Computer on @NVIDIA DGX Spark.\nPortable Computer is a fully local version of Perplexity Computer, where the entire runtime: orchestrator LLM, subagent LLM, agent harness all run on your local hardware. No cloud dependency.",
+  "image": null
+ },
+ "gholam": {
+  "text": "رفیق بشنو از شاهکار جدید بچه‌های پرپلکسیتی که رسماً از سیستم Portable Computer روی سخت‌افزار قدرتمند DGX Spark انویدیا رونمایی کردن. قضیه از این قراره که این نسخه کاملاً آفلاین و لوکال روی سیستم خودت بالا میاد و اصلاً هیچ نیازی به سرورهای ابری و کلود نداره. یعنی صفر تا صد ماجرا، از مدل‌های زبانی ارکستریتور و ساب‌ایجنت‌ها گرفته تا کل بستر اجرای ایجنت، همگی روی سخت‌افزار محلی خودت پردازش می‌شن. این حرکت یعنی یه ابزار خفن و آماده به کار برای کسایی که می‌خوان هوش مصنوعی همه‌فن‌حریف رو بدون دغدغه قطعی اینترنت زیر دستشون داشته باشن.\n\nاهمیتش اینه که امنیت و حریم خصوصی داده‌هات به اوج می‌رسه و بدون وابستگی به کلود، یه سیستم ایجنت همه‌کاره رو به شکل کاملاً مستقل روی سیستم خودت می‌چرخونی.",
+  "date": "2026-08-25T15:38:17+00:00"
+ },
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/perplexity_ai/status/2092268362386780270",
+   "domain": "x.com",
+   "author": {
+    "name": "Perplexity",
+    "handle": "perplexity_ai",
+    "avatar": "https://pbs.twimg.com/profile_images/2009310641165660160/XArF3_Ib_200x200.jpg"
+   },
+   "text": "Today we’re launching Portable Computer on @NVIDIA DGX Spark.\n\nPortable Computer is a fully local version of Perplexity Computer, where the entire runtime: orchestrator LLM, subagent LLM, agent harness all run on your local hardware. No cloud dependency.",
+   "date": 1787670624,
+   "media": [
+    {
+     "type": "video",
+     "src": "https://video.twimg.com/amplify_video/2092268294791393281/vid/avc1/1280x720/ztvuSqdUKKxpHSBk.mp4?tag=14",
+     "poster": "https://pbs.twimg.com/amplify_video_thumb/2092268294791393281/img/6XoQIgKV2-kSgEmw.jpg",
+     "ratio": 0.5625,
+     "duration": 96.981,
+     "gif": false
+    }
+   ],
+   "links": []
+  }
+ ],
+ "article": {
+  "title": "بشنو از شاهکار جدید بچه‌های پرپلکسیتی که رسماً از سیستم Portable Computer روی سخت‌افزار قدرتمند DGX Spark انویدیا رونمایی کردن",
+  "source_title": "Today we’re launching Portable Computer on @NVIDIA DGX Spark.",
+  "body": [
+   "رفیق بشنو از شاهکار جدید بچه‌های پرپلکسیتی که رسماً از سیستم Portable Computer روی سخت‌افزار قدرتمند DGX Spark انویدیا رونمایی کردن. قضیه از این قراره که این نسخه کاملاً آفلاین و لوکال روی سیستم خودت بالا میاد و اصلاً هیچ نیازی به سرورهای ابری و کلود نداره. یعنی صفر تا صد ماجرا، از مدل‌های زبانی ارکستریتور و ساب‌ایجنت‌ها گرفته تا کل بستر اجرای ایجنت، همگی روی سخت‌افزار محلی خودت پردازش می‌شن. این حرکت یعنی یه ابزار خفن و آماده به کار برای کسایی که می‌خوان هوش مصنوعی همه‌فن‌حریف رو بدون دغدغه قطعی اینترنت زیر دستشون داشته باشن."
+  ],
+  "why": "امنیت و حریم خصوصی داده‌هات به اوج می‌رسه و بدون وابستگی به کلود، یه سیستم ایجنت همه‌کاره رو به شکل کاملاً مستقل روی سیستم خودت می‌چرخونی.",
+  "tags": [
+   "انویدیا"
+  ]
+ },
+ "updated": "2026-10-25T12:29:12+00:00",
+ "gholam_checked": "2026-10-25T12:29:12+00:00"
+}

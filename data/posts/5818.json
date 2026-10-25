@@ -1,0 +1,74 @@
+{
+ "id": 5818,
+ "url": "https://t.me/dlmehr/5818",
+ "date": "2026-10-12T02:29:08+00:00",
+ "text": "https://fxtwitter.com/guocheng_qian/status/2109445639323140401?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+ "forwarded_from": null,
+ "digest": false,
+ "hash": "07b4969de863",
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/guocheng_qian/status/2109445639323140401?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+  "site": "🧵 Thread • FxTwitter",
+  "title": "Gordon (Guocheng) Qian (@guocheng_qian)",
+  "description": "Introducing Code Video Model\n🎬\nAmazing work led by @raywzy1 and the team!\nAgentic coding as the engine for controllable video generation.\nScene layout, motion, timing, camera trajectories, and physical dynamics, all in editable code.\nA coding agent turns…",
+  "image": null
+ },
+ "gholam": {
+  "text": "ببین رفیق، بچه‌های تیم گوردون چیان و همکاراش اومدن یه حرکتی زدن به اسم «Code Video Model» که قشنگ بازیِ تولید ویدیوی هوش مصنوعی رو وارد مرحله جدیدی می‌کنه. داستان از این قراره که یه ایجنت برنامه‌نویس، پرامپت متنی شما رو مستقیم تبدیل به کدهای اجرایی می‌کنه تا اول یه ویدیوی اولیه با فیزیک و مسیرِ دوربین کاملاً مشخص و حساب‌شده بسازه. بعدش هم بدون اینکه نیازی به آموزش دوباره‌ی مدل باشه، مدل‌های ویدیویی میان روی همون ساختار کد سوار می‌شن و با یه عکس مرجع، ویدیوی نهایی رو با بالاترین کیفیت خلق می‌کنن. خلاصه از افکت‌های ماتریکسی و بازسازی‌های سه‌بعدی گرفته تا شبیه‌سازی‌های رباتیک، فرمونِ تمام جزئیات و حرکات صحنه رو با ادیت کردن همون کدها می‌دن دست خودت.\n\nاهمیتش اینه که به جای سر و کله زدن با خروجی‌های شانسیِ هوش مصنوعی، حالا سازنده‌ها با چند خط کد تسلط و کنترل کامل روی فیزیک و زاویه دوربین دارن.",
+  "date": "2026-10-12T02:29:28+00:00"
+ },
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/guocheng_qian/status/2109445639323140401",
+   "domain": "x.com",
+   "author": {
+    "name": "Gordon (Guocheng) Qian",
+    "handle": "guocheng_qian",
+    "avatar": "https://pbs.twimg.com/profile_images/2073889868044992512/wlyoNPYR_200x200.jpg"
+   },
+   "text": "Introducing Code Video Model 🎬\nAmazing work led by @raywzy1 and the team! \n\nAgentic coding as the engine for controllable video generation.\n\nScene layout, motion, timing, camera trajectories, and physical dynamics, all in editable code.\n\nA coding agent turns prompts into executable programs that render proxy videos. Our training-free early-step conditioning lets a pretrained video model follow the proxy’s structure while adopting a reference image’s appearance.\nFrom physics-grounded motion and bullet time to 3D/4D reconstruction and robotics simulation, it all starts with code.\n\nWatch the demo and explore more visual results 👇\nProject page: https://code-video-model.github.io/\nPaper: https://code-video-model.github.io/tech_report.pdf\nCode: https://github.com/code-video-model/CodeVideoModel\nData: https://huggingface.co/datasets/code-video-model/CodeVideoBench\nYoutube:  https://www.youtube.com/watch?v=dTtiVkSRQfc&t=1s",
+   "date": 1791766006,
+   "media": [
+    {
+     "type": "video",
+     "src": "https://video.twimg.com/amplify_video/2109444579577720832/vid/avc1/1280x720/ba4Z7vMII1LD4daQ.mp4?tag=29",
+     "poster": "https://pbs.twimg.com/amplify_video_thumb/2109444579577720832/img/6mrSObkCXZpmoaiL.jpg",
+     "ratio": 0.5625,
+     "duration": 137.967,
+     "gif": false
+    }
+   ],
+   "links": [
+    "https://code-video-model.github.io/",
+    "https://code-video-model.github.io/tech_report.pdf",
+    "https://github.com/code-video-model/CodeVideoModel",
+    "https://huggingface.co/datasets/code-video-model/CodeVideoBench",
+    "https://www.youtube.com/watch?v=dTtiVkSRQfc&t=1s"
+   ]
+  },
+  {
+   "kind": "link",
+   "url": "https://code-video-model.github.io/",
+   "domain": "code-video-model.github.io",
+   "title": "Code Video Model — Conditioning Video Generation on Code",
+   "description": "Code Video Model — Conditioning Video Generation on Code.",
+   "image": null,
+   "site": "code-video-model.github.io"
+  }
+ ],
+ "article": {
+  "title": "بچه‌های تیم گوردون چیان و همکاراش اومدن یه حرکتی زدن به اسم «Code Video Model» که قشنگ بازیِ تولید ویدیوی هوش مصنوعی رو وارد مرحله جدیدی می‌کنه",
+  "source_title": "Introducing Code Video Model 🎬",
+  "body": [
+   "ببین رفیق، بچه‌های تیم گوردون چیان و همکاراش اومدن یه حرکتی زدن به اسم «Code Video Model» که قشنگ بازیِ تولید ویدیوی هوش مصنوعی رو وارد مرحله جدیدی می‌کنه. داستان از این قراره که یه ایجنت برنامه‌نویس، پرامپت متنی شما رو مستقیم تبدیل به کدهای اجرایی می‌کنه تا اول یه ویدیوی اولیه با فیزیک و مسیرِ دوربین کاملاً مشخص و حساب‌شده بسازه. بعدش هم بدون اینکه نیازی به آموزش دوباره‌ی مدل باشه، مدل‌های ویدیویی میان روی همون ساختار کد سوار می‌شن و با یه عکس مرجع، ویدیوی نهایی رو با بالاترین کیفیت خلق می‌کنن. خلاصه از افکت‌های ماتریکسی و بازسازی‌های سه‌بعدی گرفته تا شبیه‌سازی‌های رباتیک، فرمونِ تمام جزئیات و حرکات صحنه رو با ادیت کردن همون کدها می‌دن دست خودت."
+  ],
+  "why": "به جای سر و کله زدن با خروجی‌های شانسیِ هوش مصنوعی، حالا سازنده‌ها با چند خط کد تسلط و کنترل کامل روی فیزیک و زاویه دوربین دارن.",
+  "tags": [
+   "کدنویسی"
+  ]
+ },
+ "updated": "2026-10-25T12:23:49+00:00",
+ "gholam_checked": "2026-10-25T12:23:49+00:00"
+}

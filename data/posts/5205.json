@@ -1,0 +1,68 @@
+{
+ "id": 5205,
+ "url": "https://t.me/dlmehr/5205",
+ "date": "2026-09-08T18:31:10+00:00",
+ "text": "https://fxtwitter.com/konstiwohlwend/status/2097235335034056835?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+ "forwarded_from": null,
+ "digest": false,
+ "hash": "c6bbfb2707aa",
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/konstiwohlwend/status/2097235335034056835?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+  "site": "🧵 Thread • FxTwitter",
+  "title": "Konsti Wohlwend (@konstiwohlwend)",
+  "description": "drama summary for those confused:\n- Aug 15th: Tristan Buckmaster & Levent Alpöge make progress on a few important math problems\n- they do NOT have a proof for the $1,000,000 Millenium Prize problem. BUT, they do claim to have a proof for a similar (non…",
+  "image": "https://cdn4.telesco.pe/file/VpBRzVtexz4GOKi9tWrKgouFJYa88vCefKfWx-ef6DAUJbakuS-4Kb4eldoENpFYTbgas5S6xK3xe21NwHcGNyTCP6yEQOAX8zUL3UEO1fH1illMdl42V3RECBx89KBJvtkO63Tj-EdwgFD8XrNe8pf0aJaKgsk-lOQLhmxhgiJDcgfrEtpUel1L5PnYQP7PCrnGEHO2JCXUdMEHjWgwbKcdTpK_TPDfMgsCdmUPmi4dNRhIUN2ndGathFpsV6nwe8GyC2aa_1UhbbHfjhi4fGhqUZlKY6KEucOlZcQHuN065stvMTJyTahe2IsTmptcFk6eh8L2vGb8SCeMgOy5WA.jpg"
+ },
+ "gholam": {
+  "text": "رفیق، دنیای هوش مصنوعی سر یه مسئله ریاضی بدجوری به هم ریخته و دعوای عجیبی بین پژوهشگرا و اوپن‌ای‌آی بالا گرفته. قضیه از این قراره که دو تا دانشمند به اسم تریستان باکمستر و لونت آلپوگه با ترکیب جی‌پی‌تی و کلود، راه جدیدی برای پیشرفت توی مسئله معروف «ناویه-استوکس» پیدا کردن، اما شایعه این کار که پیچید، اوپن‌ای‌آی سریع با مدل داخلی خودش دست‌به‌کار شد. چند روز بعد سباستین بوبک از اوپن‌ای‌آی ادعا کرد که با روشی دقیقاً شبیه به کار این دو نفر، مسئله اصلیِ یک میلیون دلاری هزاره رو حل کردن و به تریستان پیشنهاد دادن که توی افتخارش شریک بشه، ولی به این شرط نامردی که رفیقش لونت رو فقط چون کارمند شرکت آنتروپیکه دور بندازه! تریستان هم معرفت به خرج داد و زیر بار این معامله کثیف نرفت و سریع نتایجشون رو مستقل منتشر کرد، در حالی که حالا همه به شدت مشکوکن که نکنه اوپن‌ای‌آی ایده‌ها رو از چت‌های خصوصی این بنده خدا برداشته باشه.\n\nچرا مهمه؟ چون گذشته از احتمال تاریخی حل شدن یکی از سخت‌ترین معماهای ریاضی جهان با هوش مصنوعی، این رسوایی نشون داد چقدر حریم شخصی پرامپت‌ها و ایده‌های پژوهشگرا توی چنگال این شرکت‌ها آسیب‌پذیره.",
+  "date": "2026-09-08T18:31:26+00:00"
+ },
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/konstiwohlwend/status/2097235335034056835",
+   "domain": "x.com",
+   "author": {
+    "name": "Konsti Wohlwend",
+    "handle": "konstiwohlwend",
+    "avatar": "https://pbs.twimg.com/profile_images/2108467568877125632/qa8ETyzn_200x200.jpg"
+   },
+   "text": "drama summary for those confused:\n\n- Aug 15th: Tristan Buckmaster & Levent Alpöge make progress on a few important math problems\n\n- they do NOT have a proof for the $1,000,000 Millenium Prize problem. BUT, they do claim to have a proof for a similar (non-Millenium) Navier Stokes problem that could help lead the way there\n\n- Levent works at Anthropic, but this research was independent of his work there, with a mix of GPT and Claude models. Tristan is not related to Anthropic.\n\n- Early Sep: Rumor spreads to OpenAI that Anthropic has solved a major problem. Tristan emails OpenAI to clarify. without revealing the problem they solved or how they did it.\n\n- After hearing of the rumor, OpenAI started researching Navier Stokes with a new internal model.\n\n- Sep 6th: OpenAI's Sebastien Bubeck tells Tristan that they solved the $1,000,000 Millenium Prize Navier Stokes problem. The approach is very similar to Tristan & Levent's approach to the non-Millenium problem.\n\n- Tristan is suspicious of the timing, as only few others were trying this approach. OpenAI says the model didn't access his user data directly, but leaves unanswered whether Tristan's chat conversations were part of the training.\n\n- OpenAI says they would partially credit Tristan for the $1,000,000 discovery (even though Tristan did not solve the $1,000,000 problem) — but only if they remove Levent as an author, as he works for Anthropic.\n\n- Sep 8th: Tristan refuses to remove Levent, and rushes to publish their results independently.\n\nCurrently unclear is whether Anthropic had a separate solution for the $1,000,000 problem, or whether the rumor was about Tristan & Levent's independent research.",
+   "date": 1788854843,
+   "media": [
+    {
+     "type": "image",
+     "src": "https://pbs.twimg.com/media/HRrfSX5aMAAkqcq.jpg?name=orig",
+     "ratio": 1.0826
+    }
+   ],
+   "links": [],
+   "quote": {
+    "author": {
+     "name": "Hensen Juang",
+     "handle": "basedjensen",
+     "avatar": "https://pbs.twimg.com/profile_images/2101681466476544000/S_hcWgNC_200x200.jpg"
+    },
+    "text": "Wow Navier-Stokes thing is getting really ugly.  But from the sounds of things it looks like both labs have actually solved Navier-Stokes independently and drama aside is massive",
+    "date": 1788846478,
+    "media": [],
+    "links": []
+   }
+  }
+ ],
+ "article": {
+  "title": "دنیای هوش مصنوعی سر یه مسئله ریاضی بدجوری به هم ریخته و دعوای عجیبی بین پژوهشگرا و اوپن‌ای‌آی بالا گرفته",
+  "source_title": "drama summary for those confused:",
+  "body": [
+   "رفیق، دنیای هوش مصنوعی سر یه مسئله ریاضی بدجوری به هم ریخته و دعوای عجیبی بین پژوهشگرا و اوپن‌ای‌آی بالا گرفته. قضیه از این قراره که دو تا دانشمند به اسم تریستان باکمستر و لونت آلپوگه با ترکیب جی‌پی‌تی و کلود، راه جدیدی برای پیشرفت توی مسئله معروف «ناویه-استوکس» پیدا کردن، اما شایعه این کار که پیچید، اوپن‌ای‌آی سریع با مدل داخلی خودش دست‌به‌کار شد. چند روز بعد سباستین بوبک از اوپن‌ای‌آی ادعا کرد که با روشی دقیقاً شبیه به کار این دو نفر، مسئله اصلیِ یک میلیون دلاری هزاره رو حل کردن و به تریستان پیشنهاد دادن که توی افتخارش شریک بشه، ولی به این شرط نامردی که رفیقش لونت رو فقط چون کارمند شرکت آنتروپیکه دور بندازه! تریستان هم معرفت به خرج داد و زیر بار این معامله کثیف نرفت و سریع نتایجشون رو مستقل منتشر کرد، در حالی که حالا همه به شدت مشکوکن که نکنه اوپن‌ای‌آی ایده‌ها رو از چت‌های خصوصی این بنده خدا برداشته باشه."
+  ],
+  "why": "چون گذشته از احتمال تاریخی حل شدن یکی از سخت‌ترین معماهای ریاضی جهان با هوش مصنوعی، این رسوایی نشون داد چقدر حریم شخصی پرامپت‌ها و ایده‌های پژوهشگرا توی چنگال این شرکت‌ها آسیب‌پذیره.",
+  "tags": [
+   "اوپن‌ای‌آی",
+   "آنتروپیک"
+  ]
+ },
+ "updated": "2026-10-25T12:27:33+00:00",
+ "gholam_checked": "2026-10-25T12:27:33+00:00"
+}

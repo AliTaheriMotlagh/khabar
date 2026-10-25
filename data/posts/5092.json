@@ -1,0 +1,69 @@
+{
+ "id": 5092,
+ "url": "https://t.me/dlmehr/5092",
+ "date": "2026-09-02T02:58:16+00:00",
+ "text": "https://fxtwitter.com/eliebakouch/status/2094973682858733650?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+ "forwarded_from": null,
+ "digest": false,
+ "hash": "a889c43c8cda",
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/eliebakouch/status/2094973682858733650?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+  "site": "FxTwitter",
+  "title": "elie (@eliebakouch)",
+  "description": "a few thoughts on \"recurrent depth\" transformers\nthe main question: why recurrent depth instead of just scaling depth? it's not faster at inference or training* since you still go through the full \"effective depth\", the advantage is storage (for kv cache…",
+  "image": "https://cdn4.telesco.pe/file/Z0loM4YNe0W7hN2Yys5x9mAaYMwt6ax17Ls0azYtFDihnLtILUoDwNe8Mn00_AKLHhGAGfj9y11688eJ6NrXteaEbmx8Izw2xLP9nxF1uaOFmtrJ2KisiS5Dhb-jJGT4OSiYTiE7Gc4rw_SMoseilVA6Dz8eKw2IrRKhXxpyy9S1kH-Fid3Py2evVK64bnpl2xQW9XJNgrwhVgprtpa1pAoO0Zsi4PidASWAMt6U065LAXm8RSWRKcFSCBIp1Ff_p2iLjp5cQKY6ldRNGHcHuEqQsswsYqL4kcJrNfZ8zgULddWX5LVa92B7Bj8qO5usU3Ll1jZ5nvfekxA1Iw_t1Q.jpg"
+ },
+ "gholam": {
+  "text": "ببین رفیق، صحبت‌ها سر یه ترفند جدید به اسم «عمق تکرارشونده» بالا گرفته که می‌گن اوپن‌ای‌آی توی مدل جدیدش به اسم آسترا برای تقویت استدلال به کار برده. یکی از خفن‌های این حوزه به اسم الی نشسته قضیه رو باز کرده و می‌گه این روش سرعت اجرا یا یادگیری رو لزوماً بالاتر نمی‌بره، ولی مصرف حافظه رو حسابی می‌کشه پایین و دست مهندسا رو برای تنظیم پردازش باز می‌ذاره. تازه می‌شه با هم‌پوشانی محاسبات، پردازش هم‌زمان مدل رو هم چند برابر کرد؛ هرچند دانشمندا نگرانن این چرخه‌های تکراری باعث بشه مسیر فکر کردن هوش مصنوعی تاریک بمونه و مهار کردنش سخت‌تر بشه.\n\nاهمیتش اینه که نشون می‌ده غول‌های هوش مصنوعی دنبال راه‌های میان‌بر برای کم کردن هزینه‌های سنگین هستن، ولی این بهینه‌سازی‌ها ممکنه شفافیت و امنیت مدل‌ها رو به خطر بندازه.",
+  "date": "2026-09-02T02:58:27+00:00"
+ },
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/eliebakouch/status/2094973682858733650",
+   "domain": "x.com",
+   "author": {
+    "name": "elie",
+    "handle": "eliebakouch",
+    "avatar": "https://pbs.twimg.com/profile_images/1745893660099592193/MmYemsw6_200x200.jpg"
+   },
+   "text": "a few thoughts on \"recurrent depth\" transformers\n\nthe main question: why recurrent depth instead of just scaling depth? it's not faster at inference or training* since you still go through the full \"effective depth\", the advantage is storage (for kv cache storage btw you could do kv sharing) and a few other things i tried to list below\n\n1) could be better in undertrained regimes (too few data or compute constraints) but i don't think any frontier model is in this regime? could also help convergence somehow, maybe it's just not possible to train a 10T effective param model (so maybe 2Tx5) without tricks like this, but i doubt it..\n\n2) one positive aspect could be better adaptive depth/compute (which is a good direction imo): depending on the token, you skip some recurrent blocks. but you could also just skip layers (or skip moe routing like in longcat flash) and get something quite similar\n\nyou could also imagine co-training models this way, sol with 8 blocks, terra with 4, luna with 2 or something like that\n\n3) another interesting thing (to verify?): you could simulate higher batch size at inference by overlapping the computation of depth_block=1 of request 1 and depth_block=t of request 2 on the same gpus, so effective batch size = batch size * number of recurrent blocks (and you could even overlap across models if you do the co-training i mentioned above!), see the picture attached for an illustration of what i mean\n\nstill quite skeptical overall, i think scaling depth is just more expressive when you are not compute/data bound but excited to see a potential new direction\n\n*on \"faster to train\", could be if you only backprop through the last few loops or something like that",
+   "date": 1788315623,
+   "media": [
+    {
+     "type": "image",
+     "src": "https://pbs.twimg.com/media/HRLWnz0XwAQTd5J.jpg?name=orig",
+     "ratio": 0.4553
+    }
+   ],
+   "links": [],
+   "quote": {
+    "author": {
+     "name": "Stephanie Palazzolo",
+     "handle": "steph_palazzolo",
+     "avatar": "https://pbs.twimg.com/profile_images/1833305113374371840/jyaxOqPL_200x200.jpg"
+    },
+    "text": "OpenAI’s Astra AI uses a new reasoning approach called “recurrent depth.” Though it can help model costs and performance, researchers are concerned bc it obscures a model’s thinking process, making it more difficult to monitor.\n\nw/ @amir @rocketalignment \n\nhttps://www.theinformation.com/articles/secret-technique-behind-openais-astra-model-sparks-security-concerns",
+    "date": 1788311092,
+    "media": [],
+    "links": [
+     "https://www.theinformation.com/articles/secret-technique-behind-openais-astra-model-sparks-security-concerns"
+    ]
+   }
+  }
+ ],
+ "article": {
+  "title": "صحبت‌ها سر یه ترفند جدید به اسم «عمق تکرارشونده» بالا گرفته که می‌گن اوپن‌ای‌آی توی مدل جدیدش به اسم آسترا برای تقویت استدلال به کار برده",
+  "source_title": "a few thoughts on \"recurrent depth\" transformers",
+  "body": [
+   "ببین رفیق، صحبت‌ها سر یه ترفند جدید به اسم «عمق تکرارشونده» بالا گرفته که می‌گن اوپن‌ای‌آی توی مدل جدیدش به اسم آسترا برای تقویت استدلال به کار برده. یکی از خفن‌های این حوزه به اسم الی نشسته قضیه رو باز کرده و می‌گه این روش سرعت اجرا یا یادگیری رو لزوماً بالاتر نمی‌بره، ولی مصرف حافظه رو حسابی می‌کشه پایین و دست مهندسا رو برای تنظیم پردازش باز می‌ذاره. تازه می‌شه با هم‌پوشانی محاسبات، پردازش هم‌زمان مدل رو هم چند برابر کرد؛ هرچند دانشمندا نگرانن این چرخه‌های تکراری باعث بشه مسیر فکر کردن هوش مصنوعی تاریک بمونه و مهار کردنش سخت‌تر بشه."
+  ],
+  "why": "نشون می‌ده غول‌های هوش مصنوعی دنبال راه‌های میان‌بر برای کم کردن هزینه‌های سنگین هستن، ولی این بهینه‌سازی‌ها ممکنه شفافیت و امنیت مدل‌ها رو به خطر بندازه.",
+  "tags": [
+   "اوپن‌ای‌آی"
+  ]
+ },
+ "updated": "2026-10-25T12:28:13+00:00",
+ "gholam_checked": "2026-10-25T12:28:13+00:00"
+}

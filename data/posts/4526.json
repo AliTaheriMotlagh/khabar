@@ -1,0 +1,56 @@
+{
+ "id": 4526,
+ "url": "https://t.me/dlmehr/4526",
+ "date": "2026-08-01T17:03:54+00:00",
+ "text": "https://fxtwitter.com/bleysg/status/2083448647908569321?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+ "forwarded_from": null,
+ "digest": false,
+ "hash": "480753ed0d5c",
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/bleysg/status/2083448647908569321?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+  "site": "🧵 Thread • FxTwitter",
+  "title": "Bleys Goodson (@bleysg)",
+  "description": "⚡\nIf you have or want a DGX Spark, this post might be the most important one you come across this month.\nServe the BEST model available (DeepSeek V4 Flash 07-31, 284B parameters) on ONE Spark @ 1,000 tok/s prefill, 59 tok/s multi-agent serving. One command…",
+  "image": "https://cdn4.telesco.pe/file/IHbvh6XcD8F0vUW8a-ZvKpC6b5mrfnZDKzzGr602RnjM8bYLob8Tjdw85jLx3KnM-nL_XMnOxKdg3TZC0UdndExb9YCGh5gG_T895WeT7DTpwF0u_uQ2uFFW7F4i3TVTKKtRkKhuOabU7wLDG3HLquaYCwdcLt-filFEVY6gOaibujHrIUQ4OKdET9Gyf0XOKHMKz3ltYiUOujipCybkGSDak7wtZdU5tuk6wLWVmD74hiHvWJlpijRHSGgFX9vnv8BpPVbaZ1Ip4raxz_GLT_8pOSbEAzuCbsdlR7lDRrCzATiMOcKZfqB-izhE8-b4qFPNkPlOe9uPrT0jq-CUQA.jpg"
+ },
+ "gholam": {
+  "text": "طرف اومده اجرای مدل ۲۸۴ میلیارد پارامتری DeepSeek V4 Flash رو روی یه دونه DGX Spark صاف و پوست‌کنده ردیف کرده؛ با یه دستور نصب می‌شه و سرعتش تا ۱۰۰۰ توکن بر ثانیه‌ست، حسابی غولیه واسه خودش.",
+  "date": "2026-08-01T17:05:16+00:00"
+ },
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/bleysg/status/2083448647908569321",
+   "domain": "x.com",
+   "author": {
+    "name": "Bleys Goodson",
+    "handle": "bleysg",
+    "avatar": "https://pbs.twimg.com/profile_images/2050379300386541568/Snkvhe3H_200x200.jpg"
+   },
+   "text": "⚡ If you have or want a DGX Spark, this post might be the most important one you come across this month. \n\nServe the BEST model available (DeepSeek V4 Flash 07-31, 284B parameters) on ONE Spark @ 1,000 tok/s prefill, 59 tok/s multi-agent serving. One command to install. 🧵",
+   "date": 1785567840,
+   "media": [
+    {
+     "type": "image",
+     "src": "https://pbs.twimg.com/media/HOnjKYsagAAF2b-.jpg?name=orig",
+     "ratio": 0.7537
+    }
+   ],
+   "links": []
+  }
+ ],
+ "article": {
+  "title": "اومده اجرای مدل ۲۸۴ میلیارد پارامتری DeepSeek V4 Flash رو روی یه دونه DGX Spark صاف و پوست‌کنده ردیف کرده؛ با یه دستور نصب می‌شه و سرعتش تا ۱۰۰۰ توکن بر ثانیه‌ست، حسابی غولیه واسه خودش",
+  "source_title": "⚡ If you have or want a DGX Spark, this post might be the most important one you come across this month.",
+  "body": [
+   "طرف اومده اجرای مدل ۲۸۴ میلیارد پارامتری DeepSeek V4 Flash رو روی یه دونه DGX Spark صاف و پوست‌کنده ردیف کرده؛ با یه دستور نصب می‌شه و سرعتش تا ۱۰۰۰ توکن بر ثانیه‌ست، حسابی غولیه واسه خودش."
+  ],
+  "why": null,
+  "tags": [
+   "چین"
+  ]
+ },
+ "updated": "2026-10-25T12:31:16+00:00",
+ "gholam_checked": "2026-10-25T12:31:16+00:00"
+}

@@ -1,0 +1,59 @@
+{
+ "id": 5639,
+ "url": "https://t.me/dlmehr/5639",
+ "date": "2026-10-05T15:44:23+00:00",
+ "text": "https://fxtwitter.com/rekaailabs/status/2107118937490006363?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+ "forwarded_from": null,
+ "digest": false,
+ "hash": "2a3f812b98cd",
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/rekaailabs/status/2107118937490006363?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+  "site": "🧵 Thread • FxTwitter",
+  "title": "Reka (@RekaAILabs)",
+  "description": "Today, we are releasing a research preview of Rho-1, our 19B omni model that understands and generates text, images, video and robot actions, all inside a single neural network.",
+  "image": null
+ },
+ "gholam": {
+  "text": "ببین آبجی و داداش گلم، بچه‌های شرکت هوش مصنوعی Reka دست‌به‌کار شدن و از نسخه پژوهشی مدل جدیدشون به اسم Rho-1 رونمایی کردن. این مدل همه‌فن‌حریف با ۱۹ میلیارد پارامتر اومده وسط و توی یه شبکه عصبی تکی و یکپارچه، هم متن و تصویر و ویدیو رو می‌فهمه و خلق می‌کنه، هم مستقیماً دستورات حرکتی ربات‌ها رو صادر می‌کنه. یعنی دیگه دورانی که واسه هدایت ربات و درک تصویر باید چند تا سیستم جدا رو به هم وصله‌پینه می‌کردی تموم شده و همه‌چیز سرراست توی یه کاسه جمع شده. خلاصه که نشون دادن هوش مصنوعی فقط محدود به چت‌بات‌های پشت مانیتور نیست و داره با قدرت وارد دنیای فیزیکی و مکانیکی می‌شه.\nاهمیتش اینه که یکپارچه‌سازی فهم چندرسانه‌ای با کنترل حرکتی ربات‌ها، مسیر رو برای ساخت نسل جدید ربات‌های هوشمند و همه‌کاره حسابی هموار می‌کنه.",
+  "date": "2026-10-05T15:44:39+00:00"
+ },
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/RekaAILabs/status/2107118937490006363",
+   "domain": "x.com",
+   "author": {
+    "name": "Reka",
+    "handle": "RekaAILabs",
+    "avatar": "https://pbs.twimg.com/profile_images/1942239907407171584/FigH3Lmw_200x200.jpg"
+   },
+   "text": "Today, we are releasing a research preview of Rho-1, our 19B omni model that understands and generates text, images, video and robot actions, all inside a single neural network.",
+   "date": 1791211277,
+   "media": [
+    {
+     "type": "video",
+     "src": "https://video.twimg.com/amplify_video/2107100384883798016/vid/avc1/1280x720/rE-ZotVBe254zOW_.mp4?tag=29",
+     "poster": "https://pbs.twimg.com/amplify_video_thumb/2107100384883798016/img/FDeJjQBcmf5BeuQh.jpg",
+     "ratio": 0.5625,
+     "duration": 60,
+     "gif": false
+    }
+   ],
+   "links": []
+  }
+ ],
+ "article": {
+  "title": "و داداش گلم، بچه‌های شرکت هوش مصنوعی Reka دست‌به‌کار شدن و از نسخه پژوهشی مدل جدیدشون به اسم Rho-1 رونمایی کردن",
+  "source_title": "Today, we are releasing a research preview of Rho-1, our 19B omni model that understands and generates text, images, video and robot…",
+  "body": [
+   "ببین آبجی و داداش گلم، بچه‌های شرکت هوش مصنوعی Reka دست‌به‌کار شدن و از نسخه پژوهشی مدل جدیدشون به اسم Rho-1 رونمایی کردن. این مدل همه‌فن‌حریف با ۱۹ میلیارد پارامتر اومده وسط و توی یه شبکه عصبی تکی و یکپارچه، هم متن و تصویر و ویدیو رو می‌فهمه و خلق می‌کنه، هم مستقیماً دستورات حرکتی ربات‌ها رو صادر می‌کنه. یعنی دیگه دورانی که واسه هدایت ربات و درک تصویر باید چند تا سیستم جدا رو به هم وصله‌پینه می‌کردی تموم شده و همه‌چیز سرراست توی یه کاسه جمع شده. خلاصه که نشون دادن هوش مصنوعی فقط محدود به چت‌بات‌های پشت مانیتور نیست و داره با قدرت وارد دنیای فیزیکی و مکانیکی می‌شه."
+  ],
+  "why": "یکپارچه‌سازی فهم چندرسانه‌ای با کنترل حرکتی ربات‌ها، مسیر رو برای ساخت نسل جدید ربات‌های هوشمند و همه‌کاره حسابی هموار می‌کنه.",
+  "tags": [
+   "رباتیک"
+  ]
+ },
+ "updated": "2026-10-25T12:24:54+00:00",
+ "gholam_checked": "2026-10-25T12:24:54+00:00"
+}

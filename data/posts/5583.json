@@ -1,0 +1,61 @@
+{
+ "id": 5583,
+ "url": "https://t.me/dlmehr/5583",
+ "date": "2026-10-01T19:04:02+00:00",
+ "text": "https://fxtwitter.com/anthropicai/status/2105733864152858919?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+ "forwarded_from": null,
+ "digest": false,
+ "hash": "5276c5c9b4f6",
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/anthropicai/status/2105733864152858919?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+  "site": "FxTwitter · anthropic.com",
+  "title": "Anthropic (@AnthropicAI)",
+  "description": "In physics, an “impedance mismatch” occurs when two systems each work well but are poorly matched.\nIn this Science Blog guest post, Harvard physicist Matthew Schwartz argues that something similar is happening with AI and science. LLMs are capable at many…",
+  "image": "https://cdn4.telesco.pe/file/Aek0X-6rxBXjJ5PwKxzmHMmjQ2C-PLVIPKKOKHtZAtKuqANVZnf-4s9sGNYaWyJlg6PG03m8TsF1scRYOxnN4q3zj8zOrXuiLSi_NS9mirPH4ilMwsa8_HPZwLkOWZ80hM2o2hdYCuPPWreW486r3OPPTJew-4A3Lq0WWCF_Sgsmt8QrFpKyV5uCbNn8kXhlv3-7KsPDkXSIrE0Achihk5EG1JcPDnuzQUK_bhwvrK6C3im_pOCXygSZQToRHNbqlppV7rxtAtEtI66YcO5EjgwSOEjjb8Bl4GzOwBUiuf1mk_brgHx5bpsLUfdB-ramTbvV3r6nhvui68z3MgjqwQ.jpg"
+ },
+ "gholam": {
+  "text": "رفیق، متیو شوارتز، فیزیکدان کاردرست دانشگاه هاروارد، یه حرف حسابی زده و میگه بین دنیای علم و هوش مصنوعی یه جور «عدم تطابق» هست؛ یعنی مدل‌های زبانی خیلی کارها از دستشون برمیاد، اما نباید باهاشون دقیقاً مثل یه همکار انسانی تا کرد تا به بار بشینن. واسه حل این ماجرا، این استاد اومده یه جعبه‌ابزار به اسم BootLoops ساخته تا کلود بتونه محاسبات دقیق علمی رو درست و حسابی انجام بده. جالبیش اینجاست که کلود با همین دست‌فرمون تونسته توی کلی رشته مختلف، از بوم‌شناسی گرفته تا ژنتیک جمعیت، ارتباط‌های خفنی کشف کنه و با هدایت متخصص‌ها بره سراغ اصل مطلب.\n\nاهمیتش اینه که نشون میده اگه قلق کار دستمون بیاد و ابزار درست براش بسازیم، هوش مصنوعی می‌تونه گره‌های کور محاسباتی رو توی شاخه‌های مختلف علوم به هم وصل کنه و بازشون کنه.",
+  "date": "2026-10-01T19:04:16+00:00"
+ },
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/AnthropicAI/status/2105733864152858919",
+   "domain": "x.com",
+   "author": {
+    "name": "Anthropic",
+    "handle": "AnthropicAI",
+    "avatar": "https://pbs.twimg.com/profile_images/1798110641414443008/XP8gyBaY_200x200.jpg"
+   },
+   "text": "In physics, an “impedance mismatch” occurs when two systems each work well but are poorly matched.\n\nIn this Science Blog guest post, Harvard physicist Matthew Schwartz argues that something similar is happening with AI and science. LLMs are capable at many things, but working with them as you would with a human collaborator isn’t currently the best way to elicit their scientific strengths.\n\nTo address this mismatch, Schwartz created a toolkit for exact calculations in quantitative science. Because similar calculations often emerge in very different areas of science, Claude found connections to ecology, population genetics, and a dozen other fields, and Schwartz worked with domain experts to steer it towards interesting questions.\n\nRead more about these projects here: https://www.anthropic.com/research/claude-shaped-science",
+   "date": 1790881050,
+   "media": [],
+   "links": [
+    "https://www.anthropic.com/research/claude-shaped-science"
+   ]
+  },
+  {
+   "kind": "link",
+   "url": "https://www.anthropic.com/research/claude-shaped-science",
+   "domain": "anthropic.com",
+   "title": "Claude-shaped science",
+   "description": "Matthew Schwartz describes what happened when he stopped fighting Claude and allowed Claude to find “Claude-shaped” problems. This led him to build BootLoops, a toolkit for exact calculations in quantitative science, which he has been applying across scientific fields alongside experts.",
+   "image": "https://www-cdn.anthropic.com/images/4zrzovbb/website/fba14ad34b5e9f0dc2b6928157ca5c56ed59ba2f-1200x630.jpg",
+   "site": "anthropic.com"
+  }
+ ],
+ "article": {
+  "title": "متیو شوارتز، فیزیکدان کاردرست دانشگاه هاروارد، یه حرف حسابی زده و میگه بین دنیای علم و هوش مصنوعی یه جور «عدم تطابق» هست",
+  "source_title": "In physics, an “impedance mismatch” occurs when two systems each work well but are poorly matched.",
+  "body": [
+   "رفیق، متیو شوارتز، فیزیکدان کاردرست دانشگاه هاروارد، یه حرف حسابی زده و میگه بین دنیای علم و هوش مصنوعی یه جور «عدم تطابق» هست؛ یعنی مدل‌های زبانی خیلی کارها از دستشون برمیاد، اما نباید باهاشون دقیقاً مثل یه همکار انسانی تا کرد تا به بار بشینن. واسه حل این ماجرا، این استاد اومده یه جعبه‌ابزار به اسم BootLoops ساخته تا کلود بتونه محاسبات دقیق علمی رو درست و حسابی انجام بده. جالبیش اینجاست که کلود با همین دست‌فرمون تونسته توی کلی رشته مختلف، از بوم‌شناسی گرفته تا ژنتیک جمعیت، ارتباط‌های خفنی کشف کنه و با هدایت متخصص‌ها بره سراغ اصل مطلب."
+  ],
+  "why": "نشون میده اگه قلق کار دستمون بیاد و ابزار درست براش بسازیم، هوش مصنوعی می‌تونه گره‌های کور محاسباتی رو توی شاخه‌های مختلف علوم به هم وصل کنه و بازشون کنه.",
+  "tags": [
+   "آنتروپیک"
+  ]
+ },
+ "updated": "2026-10-25T12:25:14+00:00",
+ "gholam_checked": "2026-10-25T12:25:14+00:00"
+}

@@ -1,0 +1,58 @@
+{
+ "id": 5705,
+ "url": "https://t.me/dlmehr/5705",
+ "date": "2026-10-07T05:05:56+00:00",
+ "text": "https://fxtwitter.com/rohanpaul_ai/status/2107637522956529872?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+ "forwarded_from": null,
+ "digest": false,
+ "hash": "c2538f7001f7",
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/rohanpaul_ai/status/2107637522956529872?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+  "site": "🧵 Thread • FxTwitter",
+  "title": "Rohan Paul (@rohanpaul_ai)",
+  "description": "A policy paper, written by more than 20 experts including Geoffrey Hinton and Yoshua Bengio, that asks governments to start tracking how much of AI research is already being done by AI.\nAI has jumped from seconds-long tasks in 2023 to tasks that take human…",
+  "image": "https://cdn4.telesco.pe/file/tqQ_t6jdULGvs1Nk2tgsVsippCUcuMAAOnyPlcyV0tHrJB4MWezdsOh6Y9CU3QsHhKAQlYmKKWxW_059zPBqzDR-I3pfj9xX0N9iIC0DphUyCmqzxV06GlS7CEHWonGbQzqbQSnC4PWRNqQn3OiSLtscSeOJu5lbIc333fQYD_-Ds0IYlx_xSV6IYj9-OAmfhaUKDVFNtcEwvvRQ8B6L36AsTNEDX2K9XqYoyBFyAFQEP0v1aK89E6MWQgSHfMmxQl1slWqKS37Umxe_YgssenczRroGSuda1jirdWE-Z3Pk32NZBSxKeyvff8PM06ZUt-udPWsWNMDO8kZqWbRBdQ.jpg"
+ },
+ "gholam": {
+  "text": "رفیق، قضیه خیلی جدی‌تر از این حرفاست؛ بیش از بیست تا از کله‌گنده‌های هوش مصنوعی مثل جفری هینتون و یوشوا بنجیو یه مقاله سیاستی بیرون دادن و از دولتا خواستن سریع آمار بگیرن که چقدر از خودِ تحقیقات هوش مصنوعی داره توسط همین مدل‌ها انجام می‌شه. داستان اینه که هوش مصنوعی از کارای چند ثانیه‌ای سال ۲۰۲۳ رسیده به حل مسائلی که متخصص‌های کاردرست چند روز پاش وقت می‌ذارن. کارشناسا حساب کردن توان پردازشی فقط یه غول مثل OpenAI می‌تونه قد میلیون‌ها محقق تراز اول تو روز خروجی تولید کنه و عملاً نیروی کار انسانی رو پشت سر بذاره.\n\nچرا مهمه؟ چون وقتی هوش مصنوعی بتونه خودش خودش رو سریع‌تر از بشر توسعه بده، اگه دنیا حواسش بهش نباشه کنترل سرعت پیشرفت و خطراتش کلاً از دست درمی‌ره.",
+  "date": "2026-10-07T05:06:11+00:00"
+ },
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/rohanpaul_ai/status/2107637522956529872",
+   "domain": "x.com",
+   "author": {
+    "name": "Rohan Paul",
+    "handle": "rohanpaul_ai",
+    "avatar": "https://pbs.twimg.com/profile_images/1816185267037859840/Fd18CH0v_200x200.jpg"
+   },
+   "text": "A policy paper, written by more than 20 experts including Geoffrey Hinton and Yoshua Bengio, that asks governments to start tracking how much of AI research is already being done by AI.\n\nAI has jumped from seconds-long tasks in 2023 to tasks that take human experts days.\n\nIf runtime costs stayed comparable, the compute 1 frontier developer has today could run an AI workforce equal to millions of top researchers.\n\nOpenAI alone has enough inference compute (i.e., runtime compute) to generate on the order of 10^13 tokens per day.\n\nIf AI reached expert level and runtime costs stayed comparable, the compute 1 frontier developer has today (2026) could run an AI workforce equal to millions of top researchers working at once, against the few thousand frontier labs employ in 2026.",
+   "date": 1791334918,
+   "media": [
+    {
+     "type": "image",
+     "src": "https://pbs.twimg.com/media/HT_TkzBaYAAfDYk.png?name=orig",
+     "ratio": 1.2363
+    }
+   ],
+   "links": []
+  }
+ ],
+ "article": {
+  "title": "قضیه خیلی جدی‌تر از این حرفاست؛ بیش از بیست تا از کله‌گنده‌های هوش مصنوعی مثل جفری هینتون و یوشوا بنجیو یه مقاله سیاستی بیرون دادن و از دولتا خواستن سریع آمار بگیرن که چقدر از خودِ تحقیقات هوش مصنوعی داره توسط همین مدل‌ها انجام می‌شه",
+  "source_title": "A policy paper, written by more than 20 experts including Geoffrey Hinton and Yoshua Bengio, that asks governments to start tracking how…",
+  "body": [
+   "رفیق، قضیه خیلی جدی‌تر از این حرفاست؛ بیش از بیست تا از کله‌گنده‌های هوش مصنوعی مثل جفری هینتون و یوشوا بنجیو یه مقاله سیاستی بیرون دادن و از دولتا خواستن سریع آمار بگیرن که چقدر از خودِ تحقیقات هوش مصنوعی داره توسط همین مدل‌ها انجام می‌شه. داستان اینه که هوش مصنوعی از کارای چند ثانیه‌ای سال ۲۰۲۳ رسیده به حل مسائلی که متخصص‌های کاردرست چند روز پاش وقت می‌ذارن. کارشناسا حساب کردن توان پردازشی فقط یه غول مثل OpenAI می‌تونه قد میلیون‌ها محقق تراز اول تو روز خروجی تولید کنه و عملاً نیروی کار انسانی رو پشت سر بذاره."
+  ],
+  "why": "چون وقتی هوش مصنوعی بتونه خودش خودش رو سریع‌تر از بشر توسعه بده، اگه دنیا حواسش بهش نباشه کنترل سرعت پیشرفت و خطراتش کلاً از دست درمی‌ره.",
+  "tags": [
+   "اوپن‌ای‌آی",
+   "کدنویسی",
+   "اشتغال"
+  ]
+ },
+ "updated": "2026-10-25T12:24:29+00:00",
+ "gholam_checked": "2026-10-25T12:24:29+00:00"
+}

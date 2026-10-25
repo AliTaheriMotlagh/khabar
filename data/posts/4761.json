@@ -1,0 +1,61 @@
+{
+ "id": 4761,
+ "url": "https://t.me/dlmehr/4761",
+ "date": "2026-08-15T23:45:16+00:00",
+ "text": "https://fxtwitter.com/darioamodei/status/2088758816376807762?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+ "forwarded_from": null,
+ "digest": false,
+ "hash": "fe0eee0e6b69",
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/darioamodei/status/2088758816376807762?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+  "site": "🧵 Thread • FxTwitter",
+  "title": "Dario Amodei (@DarioAmodei)",
+  "description": "1/2 Thanks Gavin for an especially thoughtful exchange. I don't usually spend much time on social media but I wanted to engage here because it really brings out the heart of an important conversation.\nFirst, on regulation, I think that “either concentrate…",
+  "image": "https://cdn4.telesco.pe/file/Wt4K9jTydc9HfqZkj-5hCP7Iuhawmsb0N0QPcf1flQ9HzCQ1i9vjXvJjf96bnRIrA2XoV8mCWAnow0tNmeaVyNzAchZMYxPFDI7JegZzwTIF114mdf6Nktuth0Xl3-2arB71UGG1KE3IFGNhwbMalaY-2fDeluyE1ZJ4Apc836X8UP3C-Dmx1zuBL4V300BMDDAXkFO227mSJ4YAFzCXe4nSFEK3hVRX85nNbNorwObyK98zNZkhqWiXuiRVcD2zSB1HHi4Ebu-tEuMEPuJZB9TWDhBrOB7aTrAAqtugckA6Xsi0udTLt9zwackrr-yfuTMrndUYcsHMMXsIQILlrg.jpg"
+ },
+ "gholam": {
+  "text": "ببین رفیق، داریو آمودی، مدیرعامل شرکت آنتروپیک، اومده وسط میدون و جواب اونایی رو داده که میگن قانون‌گذاری فقط هوش مصنوعی رو انحصاری‌تر می‌کنه. حرفش اینه که ماهیت خود هوش مصنوعی و خرج سنگین سرورها و پردازنده‌هاست که قدرت رو متمرکز می‌کنه، نه قوانین؛ واسه همین اگه چارچوب درستی بذاریم، دقیقاً می‌تونیم ترمز گردن‌کلفت‌های این حوزه رو بکشیم و راه رو برای استارتاپ‌های کوچیک‌تر و مدل‌های متن‌باز باز بذاریم. آمودی تأکید کرده شرکت خودش هم دنبال قوانینیه که آزمایش‌های امنیتی خیلی سفت‌وسختی رو فقط برای غول‌های پیشرو اجباری کنه تا رقبای تازه‌نفس آسیب نبینن. در نهایتم گفته از برنامه‌های جدید دولت برای تست و ارزیابی مدل‌های فوق‌پیشرفته قبل انتشار حسابی حمایت می‌کنه.\n\nاهمیتش اینه که مشخص می‌کنه دعوای سنگین پشت‌پرده بر سر اینه که قوانین آینده قراره انحصار چندتا ابرشرکت رو بشکنه یا برعکس، کنترل همه‌چیز رو کامل بندازه دستشون.",
+  "date": "2026-08-15T23:45:28+00:00"
+ },
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/DarioAmodei/status/2088758816376807762",
+   "domain": "x.com",
+   "author": {
+    "name": "Dario Amodei",
+    "handle": "DarioAmodei",
+    "avatar": "https://pbs.twimg.com/profile_images/2015835742577012736/uOwdzrEz_200x200.jpg"
+   },
+   "text": "1/2 Thanks Gavin for an especially thoughtful exchange. I don't usually spend much time on social media but I wanted to engage here because it really brings out the heart of an important conversation.\n\nFirst, on regulation, I think that “either concentrate it in the hands of a chosen few companies and politicians via regulation or distribute it widely” is a false choice.  I know that there’s a sort of Silicon Valley shorthand where regulation = regulatory capture = concentration of power, but I’ve always found this to be an overly simplified picture of the world.  Many people outside this bubble think of regulation as something that constrains corporate power and benefits ordinary people.  I don’t necessarily agree with that perspective either, rather I think it’s complicated and really depends on what the “regulation” consists of.  But in particular I think that those in the “regulation = regulatory capture = concentration of power” frame often underrate the decentralizing power of objective and fair institutional processes.  A crude analogy is that the formal court system can sometimes feel stuffy and elitist, but it does a much better job of defending the rights of vulnerable individuals than the alternative, mob justice.  At their best, institutions can vest power in ideas rather than people, and thereby decentralize that power.\n\nThis is why Anthropic has always made its policy proposals very carefully.  We try very hard to make proposals that disadvantage (slow down) frontier AI companies while *advantaging* smaller competitors.  California’s SB53 (which we supported), and even the much-maligned SB 1047 (which we were ambivalent on), completely exempt any company below a certain amount of revenue or model training costs from being covered at all (it was $500M for SB 53, lower for 1047 but we objected to that).  More recently the testing process we’ve advocated for at CAISI and the White House involves more rigorous tests for frontier models than off-frontier models — something that differentially advantages challengers.  Similarly, the “Pacing the Frontier” letter envisions (or at least Anthropic’s preferred implementation of it envisions) modulating the pace of the very best models while not constraining those who are catching up.  This hurts the business interests of the frontier labs and helps challengers, including open-weights!\n\nOverall my view is that AI is *structurally* a technology that tends to concentrate power, for reasons that have nothing to do with regulation (more to do with the extreme implications of the scaling laws).  Open-weights do help some with this but are nowhere near a sufficient solution because they simply shift the concentration somewhat to those with the most compute and chips (which are roughly the frontier labs plus maybe hardware providers).  By contrast I think the right “rules of the road” can simultaneously (a) address AI’s cyber/bio/alignment risks, (b) institutionally constrain the power of the frontier AI companies, and (c) leave room for open-weights models while also addressing the specific risks that they bring.\n\nBTW I do not think that the events of the last few months have “failed to result in [my] preferred regulatory path”.  The approach that the Trump administration is reported to be taking — pre-deployment testing for frontier models, and also testing of open-weights models when they get closer to the frontier — is one that I am very supportive of, though of course I have to see the details to be sure.  I am also supportive of Demis Hassabis’ ideas around a FINRA-like entity.  This contrasts with six months ago when most of the industry was still pushing for preemption of all state regulation and no apparent federal approach either.",
+   "date": 1786833883,
+   "media": [],
+   "links": [],
+   "quote": {
+    "author": {
+     "name": "Gavin Baker",
+     "handle": "GavinSBaker",
+     "avatar": "https://pbs.twimg.com/profile_images/1396219525754937345/5L4n5L3O_200x200.jpg"
+    },
+    "text": "Sholto, thank you for setting the record straight. Larger issue is that multiple very serious people in Silicon Valley have heard some variation of this and believe it to be true. And the reason it is believable to so many is that it is consistent with Dario’s public messaging and what he outlined in the essay you shared: this technology *might* be dangerous for humans in multiple ways, could lead to extreme concentration of economic power (as outlined in the essay) and therefore needs to be regulated thoughtfully. I agree with the potential risks and I believe Dario makes all of these arguments in good faith.\n As discussed on the pod, if one agrees that AI *might* be dangerous, there are two ways to address this potential risk. Either concentrate it in the hands of a chosen few companies and politicians via regulation or distribute it widely.  Essentially boils down to whether one believes AI is too dangerous to concentrate or too dangerous to distribute. There are reasonable arguments on both sides, but I profoundly agree with Zuckerberg’s statement that: “The notion that AI is so dangerous that the only safe path is an extreme concentration of power seems inherently problematic. Historically, hoping that an absolute power will benevolently provide for humanity if sufficiently enlightened has not led to safe or positive outcomes.” And as Dario says in the aforementioned essay, “some may object that we can simply keep AIs in check with a balance of power between many AI systems, as we do with humans.”  I believe this is the best path forward: I want as many AIs as possible to maximize the odds that one shares my own particular values.  And as Dario notes, no human has ever been able to take over the world.\n\nAt this point, I think safe to say that Dario has lost the argument. His messaging has failed to result in his preferred regulatory path. The fact that the only solution to the recent incident where an unreleased advanced OpenAI model hacked Hugging Face was an open-source model likely ended any chance of strict near-term regulation. Essentially every major company other than Anthropic has signed Jensen’s letter. \n\nHowever, Dario’s messaging has been massively helpful to efforts to ban datacenters here in America. I suspect we will see anti-datacenter advocacy groups runnings ads using clips of Dario warning about how dangerous AI could be for humans. His good faith efforts in favor of regulation are now increasing the odds that AI will not be beneficial for Americans and humans everywhere. I believe that there is a reasonable chance AI might help us cure most forms of disease such that we have extended lifespans and can enjoy these long lives in an abundant Star Trek like future. That is the future that I want and I think Dario is decreasing the odds of that future at this point.\n\nHe is about to be the CEO of one of the most important public companies in the world and given that the pro-regulatory effort has failed (at least for now), I respectfully think he should make an effort to be a more positive advocate for his own industry. And if I am wrong and we do need to regulate this technology, he will be a more effective advocate for this in the future having been open-minded to the alternative.\n\nAnd for the sake of clarity and as I outlined on the pod, I think Anthropic has deep competitive advantages and is an amazing company. Ironically, the main risk I saw to Anthropic a few months ago was nationalization as a result of Dario’s own rhetoric and behavior.",
+    "date": 1786798788,
+    "media": [],
+    "links": []
+   }
+  }
+ ],
+ "article": {
+  "title": "داریو آمودی، مدیرعامل شرکت آنتروپیک، اومده وسط میدون و جواب اونایی رو داده که میگن قانون‌گذاری فقط هوش مصنوعی رو انحصاری‌تر می‌کنه",
+  "source_title": "1/2 Thanks Gavin for an especially thoughtful exchange. I don't usually spend much time on social media but I wanted to engage here because…",
+  "body": [
+   "ببین رفیق، داریو آمودی، مدیرعامل شرکت آنتروپیک، اومده وسط میدون و جواب اونایی رو داده که میگن قانون‌گذاری فقط هوش مصنوعی رو انحصاری‌تر می‌کنه. حرفش اینه که ماهیت خود هوش مصنوعی و خرج سنگین سرورها و پردازنده‌هاست که قدرت رو متمرکز می‌کنه، نه قوانین؛ واسه همین اگه چارچوب درستی بذاریم، دقیقاً می‌تونیم ترمز گردن‌کلفت‌های این حوزه رو بکشیم و راه رو برای استارتاپ‌های کوچیک‌تر و مدل‌های متن‌باز باز بذاریم. آمودی تأکید کرده شرکت خودش هم دنبال قوانینیه که آزمایش‌های امنیتی خیلی سفت‌وسختی رو فقط برای غول‌های پیشرو اجباری کنه تا رقبای تازه‌نفس آسیب نبینن. در نهایتم گفته از برنامه‌های جدید دولت برای تست و ارزیابی مدل‌های فوق‌پیشرفته قبل انتشار حسابی حمایت می‌کنه."
+  ],
+  "why": "مشخص می‌کنه دعوای سنگین پشت‌پرده بر سر اینه که قوانین آینده قراره انحصار چندتا ابرشرکت رو بشکنه یا برعکس، کنترل همه‌چیز رو کامل بندازه دستشون.",
+  "tags": [
+   "آنتروپیک"
+  ]
+ },
+ "updated": "2026-10-25T12:30:14+00:00",
+ "gholam_checked": "2026-10-25T12:30:14+00:00"
+}

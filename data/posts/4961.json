@@ -1,0 +1,74 @@
+{
+ "id": 4961,
+ "url": "https://t.me/dlmehr/4961",
+ "date": "2026-08-26T15:13:46+00:00",
+ "text": "https://fxtwitter.com/zai_org/status/2092616204787626030?s=46&t=F41Qa04r48Mef_j_XjBneQ",
+ "forwarded_from": null,
+ "digest": false,
+ "hash": "ef3e652e59be",
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/zai_org/status/2092616204787626030?s=46&t=F41Qa04r48Mef_j_XjBneQ",
+  "site": "🧵 Thread • FxTwitter",
+  "title": "Z.ai (@Zai_org)",
+  "description": "Introducing GLM-5.3-Flash\n- Leading capabilities at a highly competitive price\n- Natively multimodal with a 1M-token context window\n- A 320B-A18B model released under the MIT License\n- Previously previewed as Ox Alpha, running entirely on Chinese AI chips…",
+  "image": "https://cdn4.telesco.pe/file/KIPkGaL-qtTIs1vIrMAFYYL7pI_uXoDBDs3vv8dElZBEs8tAV2RBoKP-M2CdNzA9qT0w4Dtle1kioZTnswDFdZOy5u0xXDZIcdcIzN5yClq_Gz-p6ZGmZ6n9WImMMnmlyttxHGoo08rLKA5dSUFMokYicYYtqJ1hYwF7K-qOXtU3YrbmLdbqgrK_e6jLwBQdrtt_Md-HwRhejACMVaQKxQNd-xIPauB5XHl4WQUMNfuTMMwbUpy3mgYVDDp1HiFNdJPH9LOd8RfI93Zf-4aK8a07i7a1RiH2ddwKA51xzi3IIIRvupqSVxkB4XB8jbdLQrmOrh0JQH4nELHg6zdqdg.jpg"
+ },
+ "gholam": {
+  "text": "ببین رفیق، تیم Z.ai رسماً از مدل خفن جدیدش به اسم GLM-5.3-Flash رونمایی کرده که قبلاً با کد Ox Alpha توی پیش‌نمایش حسابی سر و صدا کرده بود. این مدل ۳۲۰ میلیارد پارامتری که با معماری ۱۸ میلیارد پارامتر فعال کار می‌کنه، مالتی‌مودال یا همون چندوجهی به دنیا اومده و یه کانتکست فوق‌العاده‌ی یک میلیون توکنی رو ساپورت می‌کنه. قضیه وقتی جذاب‌تر میشه که بدونی کل این پروژه کاملاً روی چیپ‌های هوش مصنوعی بومی چین ران شده و با لایسنس کاملاً باز MIT در اختیار همه قرار گرفته. همین الانم وزنش توی هاگینگ‌فیس و سرویس‌هاش توی API و چت در دسترسه و قیمتش هم توی بازار حسابی رقابتیه.\n\nاهمیتش اینه که نشون میده چینی‌ها دارن بدون نیاز به چیپ‌های غربی، مدل‌های پرچم‌دار و متن‌باز در کلاس جهانی می‌سازن و به جنگ بزرگان میرن.",
+  "date": "2026-08-26T15:14:00+00:00"
+ },
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/Zai_org/status/2092616204787626030",
+   "domain": "x.com",
+   "author": {
+    "name": "Z.ai",
+    "handle": "Zai_org",
+    "avatar": "https://pbs.twimg.com/profile_images/1970775077181411328/W8XKaUIh_200x200.jpg"
+   },
+   "text": "Introducing GLM-5.3-Flash\n\n- Leading capabilities at a highly competitive price\n- Natively multimodal with a 1M-token context window\n- A 320B-A18B model released under the MIT License\n- Previously previewed as Ox Alpha, running entirely on Chinese AI chips\n\nBlog: http://z.ai/blog/glm-5.3-flash\n\nAvailable now across all official platforms:\n\nWeights: http://huggingface.co/zai-org/GLM-5.3-Flash\nAPI: http://docs.z.ai/guides/llm/glm-5.3-flash\nCoding Plan: http://z.ai/subscribe\nZCode: http://zcode.z.ai/en\nChat: http://chat.z.ai\nAutoClaw: http://autoclaw.z.ai",
+   "date": 1787753556,
+   "media": [
+    {
+     "type": "image",
+     "src": "https://pbs.twimg.com/media/HQp025-WUAAmoxY.jpg?name=orig",
+     "ratio": 0.6235
+    }
+   ],
+   "links": [
+    "http://z.ai/blog/glm-5.3-flash",
+    "http://huggingface.co/zai-org/GLM-5.3-Flash",
+    "http://docs.z.ai/guides/llm/glm-5.3-flash",
+    "http://z.ai/subscribe",
+    "http://zcode.z.ai/en",
+    "http://chat.z.ai",
+    "http://autoclaw.z.ai"
+   ]
+  },
+  {
+   "kind": "link",
+   "url": "https://z.ai/blog/glm-5.3-flash",
+   "domain": "z.ai",
+   "title": null,
+   "description": null,
+   "image": null,
+   "site": "z.ai"
+  }
+ ],
+ "article": {
+  "title": "تیم Z.ai رسماً از مدل خفن جدیدش به اسم GLM-5.3-Flash رونمایی کرده که قبلاً با کد Ox Alpha توی پیش‌نمایش حسابی سر و صدا کرده بود",
+  "source_title": "Introducing GLM-5.3-Flash",
+  "body": [
+   "ببین رفیق، تیم Z.ai رسماً از مدل خفن جدیدش به اسم GLM-5.3-Flash رونمایی کرده که قبلاً با کد Ox Alpha توی پیش‌نمایش حسابی سر و صدا کرده بود. این مدل ۳۲۰ میلیارد پارامتری که با معماری ۱۸ میلیارد پارامتر فعال کار می‌کنه، مالتی‌مودال یا همون چندوجهی به دنیا اومده و یه کانتکست فوق‌العاده‌ی یک میلیون توکنی رو ساپورت می‌کنه. قضیه وقتی جذاب‌تر میشه که بدونی کل این پروژه کاملاً روی چیپ‌های هوش مصنوعی بومی چین ران شده و با لایسنس کاملاً باز MIT در اختیار همه قرار گرفته. همین الانم وزنش توی هاگینگ‌فیس و سرویس‌هاش توی API و چت در دسترسه و قیمتش هم توی بازار حسابی رقابتیه."
+  ],
+  "why": "نشون میده چینی‌ها دارن بدون نیاز به چیپ‌های غربی، مدل‌های پرچم‌دار و متن‌باز در کلاس جهانی می‌سازن و به جنگ بزرگان میرن.",
+  "tags": [
+   "چین",
+   "تراشه"
+  ]
+ },
+ "updated": "2026-10-25T12:29:02+00:00",
+ "gholam_checked": "2026-10-25T12:29:02+00:00"
+}

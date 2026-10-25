@@ -1,0 +1,84 @@
+{
+ "id": 5168,
+ "url": "https://t.me/dlmehr/5168",
+ "date": "2026-09-06T17:09:48+00:00",
+ "text": "https://fxtwitter.com/reach_vb/status/2096645774553559268?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+ "forwarded_from": null,
+ "digest": false,
+ "hash": "fb2678f0b0d2",
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/reach_vb/status/2096645774553559268?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+  "site": "FxTwitter",
+  "title": "Vaibhav (VB) Srivastav (@reach_vb)",
+  "description": "“According to our measurements, we have now reached the goal, announced⁠ last fall, of having an automated research intern by September of this year.”\n“We are making strong progress toward creating an automated AI researcher by March of 2028.”\nA few interesting…",
+  "image": "https://cdn4.telesco.pe/file/p1zFuq9AeCMVR0mOQZjx7A8FTtIDu7_X2lZxFlTpJKDJSxOGjjGzYHym1TKD2lfjHpEHK_Y4Fh3ulGBU56JStUcXII87kIMvWRUHicITDfpczun5yZbxVljcHB5zneq65JzUrp5XjE0Qfg6i9VhPu0s_5WmaODsH1H02z-1YyUypcHVjnozeXqXICD8iPT3P-X4H5kHqw6gJkjYXZp-VwAwWxtuGrhIDQLFbMx2pmA7J-IOpuiG9ME1FNb3ovJdums7xGlSyEl6WqYJ2BQQ5qpTMM9AxRd8YV92u7D4Y13rqRCA7bnsuPUQpTwH8kMtcCd611xi8mj5fKbYKQTOKWw.jpg"
+ },
+ "gholam": {
+  "text": "ببین رفیق، بچه‌های اوپن‌ای‌آی آمار دادن و رسماً اعلام کردن که به هدفشون رسیدن؛ یعنی ساخت یه کارآموز پژوهشی کاملاً خودکار بر پایه هوش مصنوعی که حسابی بار تیم رو سبک کرده. اوضاع جوریه که تغییرات کُد به ازای هر برنامه‌نویس هفت برابر شده و موفقیت سیستم بدون دخالت انسان تو کارهای سنگینِ ۴ تا ۸ ساعته، توی همین چند ماه از ۱۸ درصد به ۵۳ درصد رسیده. خلاصه دارن با سرعت تخته‌گاز جلو می‌رن و هدف بعدیشون اینه که تا مارس ۲۰۲۸ یه محقق تمام‌عیار هوش مصنوعی بسازن که پا‌به‌پای نخبگان دنیا آزمایش کنه.\n\nچرا مهمه؟ اهمیتش اینه که چرخه خود-بهبودی هوش مصنوعی رسماً کلید خورده و از اینجا به بعد خود مدل‌ها دارن به توسعه نسل‌های بعدی‌شون شتاب می‌دن.",
+  "date": "2026-09-06T17:09:59+00:00"
+ },
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/reach_vb/status/2096645774553559268",
+   "domain": "x.com",
+   "author": {
+    "name": "Vaibhav (VB) Srivastav",
+    "handle": "reach_vb",
+    "avatar": "https://pbs.twimg.com/profile_images/1509901130670747666/JFlrSzB4_200x200.jpg"
+   },
+   "text": "“According to our measurements, we have now reached the goal, announced⁠ last fall, of having an automated research intern by September of this year.”\n\n“We are making strong progress toward creating an automated AI researcher by March of 2028.”\n\nA few interesting numbers on how research is changing inside OpenAI:\n\n> Code changes per contributor: 7x the pre-2025 average\n\n> Experiments per active experimenter: 1.6x the 2025 baseline\n\n> Agent runtime: 3.1 workdays per researcher workday\n\n> Success without intervention on tasks estimated at 4–8 human hours: 18% to 53% from Jan to July\n\nBullish!",
+   "date": 1788714281,
+   "media": [
+    {
+     "type": "image",
+     "src": "https://pbs.twimg.com/media/HRjIN8SWgAEzbvG.jpg?name=orig",
+     "ratio": 0.5775
+    },
+    {
+     "type": "image",
+     "src": "https://pbs.twimg.com/media/HRjIN8LXkAU5OsK.jpg?name=orig",
+     "ratio": 0.5775
+    },
+    {
+     "type": "image",
+     "src": "https://pbs.twimg.com/media/HRjIN8naoAAvvDh.jpg?name=orig",
+     "ratio": 0.5775
+    },
+    {
+     "type": "image",
+     "src": "https://pbs.twimg.com/media/HRjIN8ra8AAbtka.jpg?name=orig",
+     "ratio": 0.6938
+    }
+   ],
+   "links": [],
+   "quote": {
+    "author": {
+     "name": "Kevin Liu",
+     "handle": "kliu128",
+     "avatar": "https://pbs.twimg.com/profile_images/2007992653586333696/ViMSkJY0_200x200.jpg"
+    },
+    "text": "Today we're releasing data on models accelerating research at OpenAI. \n\nRecursive self-improvement could be the most important contributor to AI capabilities over the next few years, but by default it will only be seen inside a few frontier AI labs. Being transparent is more urgent than ever, so we can inform the public discussion on whether and how to pace model development. I ask other AI companies to do the same.\n\nhttps://openai.com/index/research-acceleration-view-inside-openai/",
+    "date": 1788707294,
+    "media": [],
+    "links": [
+     "https://openai.com/index/research-acceleration-view-inside-openai/"
+    ]
+   }
+  }
+ ],
+ "article": {
+  "title": "بچه‌های اوپن‌ای‌آی آمار دادن و رسماً اعلام کردن که به هدفشون رسیدن؛ یعنی ساخت یه کارآموز پژوهشی کاملاً خودکار بر پایه هوش مصنوعی که حسابی بار تیم رو سبک کرده",
+  "source_title": "“According to our measurements, we have now reached the goal, announced⁠ last fall, of having an automated research intern by September of…",
+  "body": [
+   "ببین رفیق، بچه‌های اوپن‌ای‌آی آمار دادن و رسماً اعلام کردن که به هدفشون رسیدن؛ یعنی ساخت یه کارآموز پژوهشی کاملاً خودکار بر پایه هوش مصنوعی که حسابی بار تیم رو سبک کرده. اوضاع جوریه که تغییرات کُد به ازای هر برنامه‌نویس هفت برابر شده و موفقیت سیستم بدون دخالت انسان تو کارهای سنگینِ ۴ تا ۸ ساعته، توی همین چند ماه از ۱۸ درصد به ۵۳ درصد رسیده. خلاصه دارن با سرعت تخته‌گاز جلو می‌رن و هدف بعدیشون اینه که تا مارس ۲۰۲۸ یه محقق تمام‌عیار هوش مصنوعی بسازن که پا‌به‌پای نخبگان دنیا آزمایش کنه."
+  ],
+  "why": "اهمیتش اینه که چرخه خود-بهبودی هوش مصنوعی رسماً کلید خورده و از اینجا به بعد خود مدل‌ها دارن به توسعه نسل‌های بعدی‌شون شتاب می‌دن.",
+  "tags": [
+   "اوپن‌ای‌آی"
+  ]
+ },
+ "updated": "2026-10-25T12:27:46+00:00",
+ "gholam_checked": "2026-10-25T12:27:46+00:00"
+}

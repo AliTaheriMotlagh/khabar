@@ -1,0 +1,57 @@
+{
+ "id": 4533,
+ "url": "https://t.me/dlmehr/4533",
+ "date": "2026-08-01T21:35:53+00:00",
+ "text": "https://x.com/ehsanianno/status/2083665937169789032",
+ "forwarded_from": "Ehsan",
+ "digest": false,
+ "hash": "1d975bcf4e03",
+ "media": [],
+ "preview": {
+  "url": "https://x.com/ehsanianno/status/2083665937169789032",
+  "site": "X (formerly Twitter)",
+  "title": "Ehsan 🇮🇷 (@ehsanianno) on X",
+  "description": "This is insane. Running DeepSeek-V4-flash locally and it's a great model. If you ask introduce yourself in English it says DeepSeek but I asked the model to try to think in Persian and seems like …",
+  "image": "https://cdn4.telesco.pe/file/sGPbv4_6cyMocuXfu5fTboPy31EwDcPwndGzLkAqZTs9Sn894PuyRQ4jqgH3pnKQh_ygy-tRKv7cpq3fKohNB2VHROqjFaz6vPRcH0CvYKVYipTvVSfgbXRb8MT4Y3SYjZhtnSvVinjBx-4gb24mqaTT1H1mhctYs05PPOt45fBFfcLpXcsMnpNyg4GrItwSBz9BtqdeM8QNkYZvCxdab8Yk35RhXNgF2zsdFMsbPbmwIFrRbpjeho8x2uurrkNoG_L08KudO4IEruIPXjPzLGFFieOv4i4V5wSppdsQu6pMO6Kffo5VdaCplQm0OswRoRYCp3izqv6tv5l2vMvIGg.jpg"
+ },
+ "gholam": {
+  "text": "طرف اومده مدل DeepSeek-V4-flash رو لوکال اجرا کرده، میگه مدله عالیه؛ اما نکته عجیبش اینه که وقتی بهش گفته فارسی فکر کن، دستورات رو دور زده و فکر کرده گوگل دیپ‌ماینده!",
+  "date": "2026-08-01T21:41:23+00:00"
+ },
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/ehsanianno/status/2083665937169789032",
+   "domain": "x.com",
+   "author": {
+    "name": "Ehsan 🇮🇷",
+    "handle": "ehsanianno",
+    "avatar": "https://pbs.twimg.com/profile_images/2010264708956209152/hoMXQFXF_200x200.jpg"
+   },
+   "text": "This is insane. Running DeepSeek-V4-flash locally and it's a great model. If you ask introduce yourself in English it says DeepSeek but I asked the model to try to think in Persian and seems like it bypassed its instructions - the model thinks it's  @GoogleDeepMind !😀",
+   "date": 1785619646,
+   "media": [
+    {
+     "type": "image",
+     "src": "https://pbs.twimg.com/media/HOqqJuhXwAALbUd.png?name=orig",
+     "ratio": 0.9865
+    }
+   ],
+   "links": []
+  }
+ ],
+ "article": {
+  "title": "اومده مدل DeepSeek-V4-flash رو لوکال اجرا کرده، میگه مدله عالیه؛ اما نکته عجیبش اینه که وقتی بهش گفته فارسی فکر کن، دستورات رو دور زده و فکر کرده گوگل دیپ‌ماینده",
+  "source_title": "This is insane. Running DeepSeek-V4-flash locally and it's a great model. If you ask introduce yourself in English it says DeepSeek but I…",
+  "body": [
+   "طرف اومده مدل DeepSeek-V4-flash رو لوکال اجرا کرده، میگه مدله عالیه؛ اما نکته عجیبش اینه که وقتی بهش گفته فارسی فکر کن، دستورات رو دور زده و فکر کرده گوگل دیپ‌ماینده!"
+  ],
+  "why": null,
+  "tags": [
+   "چین",
+   "گوگل"
+  ]
+ },
+ "updated": "2026-10-25T12:31:12+00:00",
+ "gholam_checked": "2026-10-25T12:31:12+00:00"
+}

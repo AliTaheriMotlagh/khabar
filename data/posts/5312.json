@@ -1,0 +1,60 @@
+{
+ "id": 5312,
+ "url": "https://t.me/dlmehr/5312",
+ "date": "2026-09-15T18:47:25+00:00",
+ "text": "https://fxtwitter.com/liamfedus/status/2099896055030501702?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+ "forwarded_from": null,
+ "digest": false,
+ "hash": "711d3dd98390",
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/liamfedus/status/2099896055030501702?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+  "site": "🧵 Thread • FxTwitter",
+  "title": "Liam Fedus (@LiamFedus)",
+  "description": "We built high-throughput materials labs in Menlo Park to create a loop between experiments and models. The labs generate fresh data, the models learn from it, and then help us decide what to try next.\nUsing only 1,300 H200s, plus months of our experimental…",
+  "image": null
+ },
+ "gholam": {
+  "text": "رفقا قضیه از این قراره که لیام فدوس و تیمش توی منلو پارک یه آزمایشگاه پیشرفته علم مواد علم کردن تا آزمایش‌های عملی و هوش مصنوعی رو بندازن تو یه چرخه یادگیری مداوم. خلاصه این بچه‌ها اومدن با فقط ۱۳۰۰ تا پردازنده H200 و چند ماه داده‌های ناب آزمایشگاهی، یه مدل متن‌باز به اسم «نئون» (Neon) رو آموزش دادن و تقویت کردن. شاهکار قضیه اینجاست که این مدل توی تست‌ها و بنچمارک‌های تخصصی علم مواد، حتی از غولی مثل GPT-6 Astra هم جلو زده و روسفید بیرون اومده. حالا هم تمرکزشون رو گذاشتن رو حل سخت‌ترین گیرهای دنیای علم، مثل کشف ابررساناها، مواد مغناطیسی و قطعات جدید نیمه‌رسانا.\nاهمیتش اینه که اتصال مستقیم هوش مصنوعی به آزمایشگاه فیزیکی، سال‌ها آزمون‌وخطای طاقت‌فرسای کشف مواد پیشرفته رو توی چند ماه برامون جمع می‌کنه.",
+  "date": "2026-09-15T18:47:38+00:00"
+ },
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/LiamFedus/status/2099896055030501702",
+   "domain": "x.com",
+   "author": {
+    "name": "Liam Fedus",
+    "handle": "LiamFedus",
+    "avatar": "https://pbs.twimg.com/profile_images/946842870916448256/X0_3p45X_200x200.jpg"
+   },
+   "text": "We built high-throughput materials labs in Menlo Park to create a loop between experiments and models. The labs generate fresh data, the models learn from it, and then help us decide what to try next.\n\nUsing only 1,300 H200s, plus months of our experimental data, we mid-trained and RL’d an open-source model to surpass GPT-6 Astra on our analysis benchmark. We call it Neon.\n\nThis is real footage from our lab. We’re focusing first on hard problems in materials science, including superconductors, magnets, and semiconductor materials.\n\nRead our blog posts below.",
+   "date": 1789489208,
+   "media": [
+    {
+     "type": "video",
+     "src": "https://video.twimg.com/amplify_video/2099894140112670720/vid/avc1/1280x720/9v5mUB144_5FrJjs.mp4?tag=29",
+     "poster": "https://pbs.twimg.com/amplify_video_thumb/2099894140112670720/img/ur58V9QoDeQSxpog.jpg",
+     "ratio": 0.5625,
+     "duration": 16,
+     "gif": false
+    }
+   ],
+   "links": []
+  }
+ ],
+ "article": {
+  "title": "رفقا قضیه از این قراره که لیام فدوس و تیمش توی منلو پارک یه آزمایشگاه پیشرفته علم مواد علم کردن تا آزمایش‌های عملی و هوش مصنوعی رو بندازن تو یه چرخه یادگیری مداوم",
+  "source_title": "We built high-throughput materials labs in Menlo Park to create a loop between experiments and models. The labs generate fresh data, the…",
+  "body": [
+   "رفقا قضیه از این قراره که لیام فدوس و تیمش توی منلو پارک یه آزمایشگاه پیشرفته علم مواد علم کردن تا آزمایش‌های عملی و هوش مصنوعی رو بندازن تو یه چرخه یادگیری مداوم. خلاصه این بچه‌ها اومدن با فقط ۱۳۰۰ تا پردازنده H200 و چند ماه داده‌های ناب آزمایشگاهی، یه مدل متن‌باز به اسم «نئون» (Neon) رو آموزش دادن و تقویت کردن. شاهکار قضیه اینجاست که این مدل توی تست‌ها و بنچمارک‌های تخصصی علم مواد، حتی از غولی مثل GPT-6 Astra هم جلو زده و روسفید بیرون اومده. حالا هم تمرکزشون رو گذاشتن رو حل سخت‌ترین گیرهای دنیای علم، مثل کشف ابررساناها، مواد مغناطیسی و قطعات جدید نیمه‌رسانا."
+  ],
+  "why": "اتصال مستقیم هوش مصنوعی به آزمایشگاه فیزیکی، سال‌ها آزمون‌وخطای طاقت‌فرسای کشف مواد پیشرفته رو توی چند ماه برامون جمع می‌کنه.",
+  "tags": [
+   "اوپن‌ای‌آی",
+   "تراشه"
+  ]
+ },
+ "updated": "2026-10-25T12:26:53+00:00",
+ "gholam_checked": "2026-10-25T12:26:53+00:00"
+}

@@ -2,16 +2,23 @@
  "id": 6014,
  "url": "https://t.me/dlmehr/6014",
  "date": "2026-10-21T13:55:11+00:00",
- "edited": false,
- "views": "160",
  "text": "https://x.com/PyTorch/status/2112601000670322787",
  "forwarded_from": "Ali Farajnia",
  "digest": false,
  "hash": "0778defdcec7",
+ "media": [],
+ "preview": {
+  "url": "https://x.com/PyTorch/status/2112601000670322787",
+  "site": "X (formerly Twitter)",
+  "title": "PyTorch (@PyTorch) on X",
+  "description": "@Google & @Meta launch TorchTPU for native PyTorch support on Google TPUs!\n🔥\nTrue eager execution & torch.compile backend\n⚡\nFast inference via vLLM & SGLang\n🏋️\nNear-linear scaling for Llama 3 405B…",
+  "image": "https://cdn4.telesco.pe/file/shrVrcKr08mtt9oXBMHiO9Wd1qyk0yPRZlUPoVRrLic7SwODX_SZFI4kzeIMW-qehV3DGDE3VVXnwkYcif-VnVnQzYRSKK9hkc_xHEFyZyHVyDTGNcHPCrr0EgW1raZC083qYc3hZ8c8JV4feklwj8jQHH2J50OoeBnlUHptmaLbsaZH7zwFIf7W7nUBEU3n48LUlVQXd8U5lOE0WnzkwJNFQmKHWTHccshG3saSloyXpGy_EIeyJZkJXDyu9GMEM9eV9YnU6qX3rMz_ywDtirjtwWtJA9Eh0I37iJyAp0hLB7xG_RhO-h0TwHuS5esGCwMPqSuy2zEpUSHbuPZnJw.jpg"
+ },
  "gholam": {
   "text": "رفیق، گوگل و متا بالاخره دست به یکی کردن و از یه خروجی خفن به اسم TorchTPU رونمایی کردن تا پای‌تورچ به صورت مستقیم و بدون دنگ‌وفنگ روی پردازنده‌های TPU گوگل اجرا بشه. با این حرکتی که زدن، قابلیت‌هایی مثل اجرای فوری و بک‌اند کامپایل اختصاصی فعال شده تا سرعت پردازش بره توی ابرها. تازه با کمک ابزارهایی مثل vLLM و تورچ‌تایتان، غول‌های سنگینی مثل مدل لاما ۳ نسخه ۴۰۵ میلیاردی و Qwen 3 MoE بدون افت راندمان و کاملاً بهینه مقیاس‌پذیر می‌شن و مثل آب خوردن اجرا می‌شن.\n\nاهمیتش اینه که انحصار انویدیا تو سخت‌افزار هوش مصنوعی بدجوری به چالش کشیده می‌شه و دست برنامه‌نویس‌ها برای ران کردن مدل‌های گردن‌کلفت روی چیپ‌های متنوع خیلی بازتر خواهد بود.",
   "date": "2026-10-21T13:55:27+00:00"
  },
+ "gholam_checked": "2026-10-24T23:03:11+00:00",
  "links": [
   {
    "kind": "tweet",
@@ -45,18 +52,6 @@
    ]
   }
  ],
- "media": [],
- "preview": {
-  "url": "https://x.com/PyTorch/status/2112601000670322787",
-  "site": "X (formerly Twitter)",
-  "title": "PyTorch (@PyTorch) on X",
-  "description": "@Google & @Meta launch TorchTPU for native PyTorch support on Google TPUs!\n🔥\nTrue eager execution & torch.compile backend\n⚡\nFast inference via vLLM & SGLang\n🏋️\nNear-linear scaling for Llama 3 405B…",
-  "image": {
-   "src": "media/6014/preview.webp",
-   "width": 800,
-   "height": 420
-  }
- },
  "article": {
   "title": "گوگل و متا بالاخره دست به یکی کردن و از یه خروجی خفن به اسم TorchTPU رونمایی کردن تا پای‌تورچ به صورت مستقیم و بدون دنگ‌وفنگ روی پردازنده‌های TPU گوگل اجرا بشه",
   "source_title": "@Google & @Meta launch TorchTPU for native PyTorch support on Google TPUs!",
@@ -70,6 +65,5 @@
    "تراشه"
   ]
  },
- "updated": "2026-10-24T23:03:11+00:00",
- "gholam_checked": "2026-10-24T23:03:11+00:00"
+ "updated": "2026-10-25T11:53:53+00:00"
 }

@@ -1,0 +1,59 @@
+{
+ "id": 5378,
+ "url": "https://t.me/dlmehr/5378",
+ "date": "2026-09-20T01:00:17+00:00",
+ "text": "https://fxtwitter.com/jfpuget/status/2101462175961190727?s=46&t=F41Qa04r48Mef_j_XjBneQ",
+ "forwarded_from": null,
+ "digest": false,
+ "hash": "de51c677d63c",
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/jfpuget/status/2101462175961190727?s=46&t=F41Qa04r48Mef_j_XjBneQ",
+  "site": "FxTwitter · dev.to",
+  "title": "JFPuget 🇫🇷 🇺🇦 🇨🇦 🇬🇱 (@JFPuget)",
+  "description": "A better Jev, open source.\nhttps://dev.to/nandakishor_m_6cc0adfde9f/i-built-non-autoregressive-decision-models-a-year-ago-then-a-frontier-lab-called-it-a-18me",
+  "image": "https://cdn4.telesco.pe/file/dFAKrTZ0gGnZgHid5pfVd4HsMF_qAX852iRyVwjZ_rEU2-GOxl_bBKX4QvUkf34r9O1PUWLHCRE2X3-tHsGR_G7RFkcixv8FvhHCNQqpJl5HegigDD2h6U16zmlFv4o2v8kz9Dk7nxSMhbJB8UzFHRNcmxdWu4FbGOi94pD-_ttUA5DqbmNL73T8x8RYyGT2akm8XN4fjIBEgFv5zEFr2BVYkS76_MsbUUGiEvwx1uNOVgxTuhzwRO5KEibQ4Gro933FkMamCLIq6Vh1i6EEX-RQsjSme9i_VAG59yuG7oulydMhBP0jINrbLcLH5mwrppIVN8p3yiwuNT47rviKQA.jpg"
+ },
+ "gholam": {
+  "text": "رفیق، این بنده خدا جی‌اف پوژه (JFPuget) زده به سیم آخر و یه ماجرای جالب رو از دنیای هوش مصنوعی برملا کرده. قضیه از این قراره که طرف یه سال پیش نشسته مدل‌های تصمیم‌گیری غیراتورگرسیو رو ساخته، اما اخیراً یکی از این آزمایشگاه‌های گردن‌کلفت و پرادعا عین همین فرمول رو به اسم «دستاورد بزرگ و جدید» به ناف خودش بسته و کلی بوق و کرنا راه انداخته. حالا هم در جواب این داستان، یه نسخه متن‌باز و کاردرست‌تر از مدل قبلی بیرون داده تا نشون بده دود هنوز از کُنده بلند میشه و جامعه اوپن‌سورس از این غول‌ها عقب نیست.\n\nچرا مهمه؟ چون ثابت می‌کنه هر چیزی که شرکت‌های میلیاردی هوش مصنوعی به اسم معجزه و نوآوری قالب می‌کنن لزوماً تازه نیست و نسخه‌های آزاد و رایگانش از قبل توی دست و بال بقیه بوده.",
+  "date": "2026-09-20T01:00:31+00:00"
+ },
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/JFPuget/status/2101462175961190727",
+   "domain": "x.com",
+   "author": {
+    "name": "JFPuget 🇫🇷🇺🇦🇨🇦🇬🇱",
+    "handle": "JFPuget",
+    "avatar": "https://pbs.twimg.com/profile_images/2065763037/JFP2_200x200.jpg"
+   },
+   "text": "A better Jev, open source.\n\nhttps://dev.to/nandakishor_m_6cc0adfde9f/i-built-non-autoregressive-decision-models-a-year-ago-then-a-frontier-lab-called-it-a-18me",
+   "date": 1789862600,
+   "media": [],
+   "links": [
+    "https://dev.to/nandakishor_m_6cc0adfde9f/i-built-non-autoregressive-decision-models-a-year-ago-then-a-frontier-lab-called-it-a-18me"
+   ]
+  },
+  {
+   "kind": "link",
+   "url": "https://dev.to/nandakishor_m_6cc0adfde9f/i-built-non-autoregressive-decision-models-a-year-ago-then-a-frontier-lab-called-it-a-18me",
+   "domain": "dev.to",
+   "title": "I Built Non-Autoregressive Decision Models a Year Ago. Then a Frontier Lab Called It a \"Breakthrough\".",
+   "description": "From our March 2025 arXiv paper on RL conversion trajectories to building a sub-40ms...",
+   "image": "https://media2.dev.to/dynamic/image/width=1200,height=627,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.us-east-2.amazonaws.com%2Fuploads%2Farticles%2Fokldcp34z2nxkvu9ml2b.png",
+   "site": "DEV Community"
+  }
+ ],
+ "article": {
+  "title": "این بنده خدا جی‌اف پوژه (JFPuget) زده به سیم آخر و یه ماجرای جالب رو از دنیای هوش مصنوعی برملا کرده",
+  "source_title": "A better Jev, open source.",
+  "body": [
+   "رفیق، این بنده خدا جی‌اف پوژه (JFPuget) زده به سیم آخر و یه ماجرای جالب رو از دنیای هوش مصنوعی برملا کرده. قضیه از این قراره که طرف یه سال پیش نشسته مدل‌های تصمیم‌گیری غیراتورگرسیو رو ساخته، اما اخیراً یکی از این آزمایشگاه‌های گردن‌کلفت و پرادعا عین همین فرمول رو به اسم «دستاورد بزرگ و جدید» به ناف خودش بسته و کلی بوق و کرنا راه انداخته. حالا هم در جواب این داستان، یه نسخه متن‌باز و کاردرست‌تر از مدل قبلی بیرون داده تا نشون بده دود هنوز از کُنده بلند میشه و جامعه اوپن‌سورس از این غول‌ها عقب نیست."
+  ],
+  "why": "چون ثابت می‌کنه هر چیزی که شرکت‌های میلیاردی هوش مصنوعی به اسم معجزه و نوآوری قالب می‌کنن لزوماً تازه نیست و نسخه‌های آزاد و رایگانش از قبل توی دست و بال بقیه بوده.",
+  "tags": []
+ },
+ "updated": "2026-10-25T12:26:26+00:00",
+ "gholam_checked": "2026-10-25T12:26:26+00:00"
+}

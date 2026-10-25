@@ -1,0 +1,56 @@
+{
+ "id": 5552,
+ "url": "https://t.me/dlmehr/5552",
+ "date": "2026-09-29T19:20:50+00:00",
+ "text": "https://fxtwitter.com/liquidai/status/2105003472332693869",
+ "forwarded_from": "Amirreza",
+ "digest": false,
+ "hash": "91de00da4a73",
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/liquidai/status/2105003472332693869",
+  "site": "FxTwitter",
+  "title": "Liquid AI (@liquidai)",
+  "description": "Announcing d1, our first decision model.\nIt's the first model to outperform Jev on @huggingface's Decision Index.\n> wins on multilingual evals\n> more robust against prompt injection\n> handles longer inputs more effectively\n> built for fast, structured…",
+  "image": "https://cdn4.telesco.pe/file/bFwEpzevLgjBiYwj0pUO_Sj5TYI-Y5NC1GXVFkYa8y8LVGFwLP4FbJkRTW_SQuXJ8tu0E3j5yv7HBpXk1NS2YBWypn65tZoViKkfOdUqnyf3S_wyWRHYUb5D4MBYVhIeDiFqWJxo58-DFdqzK2JSoexAWopcsmw_3UoizLNkV0A2DkiXaCvBrBxJkn7BrVK9_YQcaiKjgtznc7YHVqPWVkVQCmMCi5EQq3v-oiCTPfTzJGIZmv0B1RpTYx-bPsOV_SDrkXrFRfgsnVE6F25j7Xa33sS8mMkX6NF9GBf-98zhO62Q3_JhyZ2l4jASkHX_w2pT6DqVyQ2VF2WN5v9KeQ.jpg"
+ },
+ "gholam": {
+  "text": "ببین رفیق، بچه‌های تیم Liquid AI اومدن از اولین مدل تصمیم‌گیری خودشون به اسم d1 رونمایی کردن و بدجوری گردوخاک به پا کردن. این شاهکار جدید تونسته توی شاخص تصمیم‌گیری هاگینگ‌فیس از پس مدل گردن‌کلفت Jev بربیاد و رکورد اولی رو به نام خودش ثبت کنه. قضیه فقط ادعا نیست؛ این مدل توی تست‌های چندزبانه حسابی گل کاشته، جلو کلک‌های پرامپت اینجکشن مثل کوه سفت وایمیسه و ورودی‌های طولانی رو هم خیلی مشتی و تمیز هضم می‌کنه. خلاصه ساختنش تا توی دل نرم‌افزارها با سرعت بالا تصمیم‌های منطقی بگیره و بعد از ارائه تو کنسول خودشون، قراره به زودی پاش به OpenRouter هم باز بشه.\n\nاهمیتش اینه که نشون می‌ده هوش مصنوعی داره از چت کردن ساده فراتر می‌ره و تبدیل به یه مغز امن و برق‌آسا واسه اجرای تصمیم‌های حساس نرم‌افزاری می‌شه.",
+  "date": "2026-09-29T19:21:03+00:00"
+ },
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/liquidai/status/2105003472332693869",
+   "domain": "x.com",
+   "author": {
+    "name": "Liquid AI",
+    "handle": "liquidai",
+    "avatar": "https://pbs.twimg.com/profile_images/1702611993327251456/PUUuOA4W_200x200.jpg"
+   },
+   "text": "Announcing d1, our first decision model. \n\nIt's the first model to outperform Jev on @huggingface's Decision Index.\n\n> wins on multilingual evals\n> more robust against prompt injection\n> handles longer inputs more effectively\n> built for fast, structured decision-making in software environments\n\n> Liquid API: http://console.liquid.ai\n> Available on OpenRouter soon",
+   "date": 1790706911,
+   "media": [
+    {
+     "type": "image",
+     "src": "https://pbs.twimg.com/media/HTZ0SZebwAAkuf_.jpg?name=orig",
+     "ratio": 1.0
+    }
+   ],
+   "links": [
+    "http://console.liquid.ai"
+   ]
+  }
+ ],
+ "article": {
+  "title": "بچه‌های تیم Liquid AI اومدن از اولین مدل تصمیم‌گیری خودشون به اسم d1 رونمایی کردن و بدجوری گردوخاک به پا کردن",
+  "source_title": "Announcing d1, our first decision model.",
+  "body": [
+   "ببین رفیق، بچه‌های تیم Liquid AI اومدن از اولین مدل تصمیم‌گیری خودشون به اسم d1 رونمایی کردن و بدجوری گردوخاک به پا کردن. این شاهکار جدید تونسته توی شاخص تصمیم‌گیری هاگینگ‌فیس از پس مدل گردن‌کلفت Jev بربیاد و رکورد اولی رو به نام خودش ثبت کنه. قضیه فقط ادعا نیست؛ این مدل توی تست‌های چندزبانه حسابی گل کاشته، جلو کلک‌های پرامپت اینجکشن مثل کوه سفت وایمیسه و ورودی‌های طولانی رو هم خیلی مشتی و تمیز هضم می‌کنه. خلاصه ساختنش تا توی دل نرم‌افزارها با سرعت بالا تصمیم‌های منطقی بگیره و بعد از ارائه تو کنسول خودشون، قراره به زودی پاش به OpenRouter هم باز بشه."
+  ],
+  "why": "نشون می‌ده هوش مصنوعی داره از چت کردن ساده فراتر می‌ره و تبدیل به یه مغز امن و برق‌آسا واسه اجرای تصمیم‌های حساس نرم‌افزاری می‌شه.",
+  "tags": []
+ },
+ "updated": "2026-10-25T12:25:25+00:00",
+ "gholam_checked": "2026-10-25T12:25:25+00:00"
+}

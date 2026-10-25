@@ -1,0 +1,70 @@
+{
+ "id": 5776,
+ "url": "https://t.me/dlmehr/5776",
+ "date": "2026-10-09T18:36:06+00:00",
+ "text": "https://fxtwitter.com/allen_ai/status/2108584145588752430?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+ "forwarded_from": null,
+ "digest": false,
+ "hash": "8bad0072d46b",
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/allen_ai/status/2108584145588752430?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+  "site": "🧵 Thread • FxTwitter",
+  "title": "Ai2 (@allen_ai)",
+  "description": "We’re sharing the engineering work behind Ai2’s GPU scheduler—our new approach to allocating compute across research teams.\nOn our largest H100 cluster, median queue wait fell from 5 minutes to 24 seconds.\n🧵\nhttps://allenai.org/blog/impactful-scheduling",
+  "image": null
+ },
+ "gholam": {
+  "text": "رفیق، بچه‌های موسسه هوش مصنوعی Ai2 دست‌به‌کار شدن و جزییات مهندسی سیستم جدید زمان‌بندی GPUهاشون رو رو کردن که نشون می‌ده چطور منابع پردازشی رو عادلانه و تر و تمیز بین تیم‌ها تقسیم می‌کنن. قضیه از این قراره که روی بزرگ‌ترین کلاستر تراشه‌های غول‌پیکر H100، میانگین زمان معطلی توی صف پردازش رو از ۵ دقیقه رسوندن به چشم‌به‌هم‌زدن ۲۴ ثانیه! با این حساب، پژوهشگراشون دیگه پشت چراغ قرمز صف پردازش لنگ نمی‌مونن و کار تست و توسعه مدل‌هاشون برق‌آسا جلو می‌ره.\n\nاهمیتش اینه که تو دنیای پرهزینه هوش مصنوعی، با یه مدیریت درست و درمون نرم‌افزاری می‌شه بدون خرج میلیاردی برای خرید کارت اضافه، راندمان کار رو چند برابر کرد.",
+  "date": "2026-10-09T18:36:25+00:00"
+ },
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/allen_ai/status/2108584145588752430",
+   "domain": "x.com",
+   "author": {
+    "name": "Ai2",
+    "handle": "allen_ai",
+    "avatar": "https://pbs.twimg.com/profile_images/1819065604370051072/UrIOp6zI_200x200.png"
+   },
+   "text": "We’re sharing the engineering work behind Ai2’s GPU scheduler—our new approach to allocating compute across research teams.\n\nOn our largest H100 cluster, median queue wait fell from 5 minutes to 24 seconds. 🧵\n\nhttps://allenai.org/blog/impactful-scheduling",
+   "date": 1791560610,
+   "media": [
+    {
+     "type": "video",
+     "src": "https://video.twimg.com/ext_tw_video/2108584103675121664/pu/vid/avc1/1280x720/PBrVeSNtOTXdtRNn.mp4?tag=12",
+     "poster": "https://pbs.twimg.com/ext_tw_video_thumb/2108584103675121664/pu/img/fDhwxm_KSvwPq1bl.jpg",
+     "ratio": 0.5625,
+     "duration": 102.166,
+     "gif": false
+    }
+   ],
+   "links": [
+    "https://allenai.org/blog/impactful-scheduling"
+   ]
+  },
+  {
+   "kind": "link",
+   "url": "https://allenai.org/blog/impactful-scheduling",
+   "domain": "allenai.org",
+   "title": "Impactful scheduling for GPU clusters  | Ai2",
+   "description": "We explain how Ai2’s new GPU scheduler uses time budgets, fair-share allocation, and time-slicing to prioritize high-impact research, shorten queue waits, and keep GPUs busy.",
+   "image": "https://www.datocms-assets.com/64837/1791481523-impactful-scheduling-for-gpu-clusters-google-docs-image-1-1.png",
+   "site": "allenai.org"
+  }
+ ],
+ "article": {
+  "title": "بچه‌های موسسه هوش مصنوعی Ai2 دست‌به‌کار شدن و جزییات مهندسی سیستم جدید زمان‌بندی GPUهاشون رو رو کردن که نشون می‌ده چطور منابع پردازشی رو عادلانه و تر و تمیز بین تیم‌ها تقسیم می‌کنن",
+  "source_title": "We’re sharing the engineering work behind Ai2’s GPU scheduler—our new approach to allocating compute across research teams.",
+  "body": [
+   "رفیق، بچه‌های موسسه هوش مصنوعی Ai2 دست‌به‌کار شدن و جزییات مهندسی سیستم جدید زمان‌بندی GPUهاشون رو رو کردن که نشون می‌ده چطور منابع پردازشی رو عادلانه و تر و تمیز بین تیم‌ها تقسیم می‌کنن. قضیه از این قراره که روی بزرگ‌ترین کلاستر تراشه‌های غول‌پیکر H100، میانگین زمان معطلی توی صف پردازش رو از ۵ دقیقه رسوندن به چشم‌به‌هم‌زدن ۲۴ ثانیه! با این حساب، پژوهشگراشون دیگه پشت چراغ قرمز صف پردازش لنگ نمی‌مونن و کار تست و توسعه مدل‌هاشون برق‌آسا جلو می‌ره."
+  ],
+  "why": "تو دنیای پرهزینه هوش مصنوعی، با یه مدیریت درست و درمون نرم‌افزاری می‌شه بدون خرج میلیاردی برای خرید کارت اضافه، راندمان کار رو چند برابر کرد.",
+  "tags": [
+   "تراشه"
+  ]
+ },
+ "updated": "2026-10-25T12:23:58+00:00",
+ "gholam_checked": "2026-10-25T12:23:58+00:00"
+}

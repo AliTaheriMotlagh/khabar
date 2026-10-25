@@ -1,0 +1,50 @@
+{
+ "id": 4842,
+ "url": "https://t.me/dlmehr/4842",
+ "date": "2026-08-20T16:47:02+00:00",
+ "text": "https://fxtwitter.com/drjimfan/status/2090465981240086992?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+ "forwarded_from": null,
+ "digest": false,
+ "hash": "c63bf8af6721",
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/drjimfan/status/2090465981240086992?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+  "site": "FxTwitter",
+  "title": "Jim Fan (@DrJimFan)",
+  "description": "Seeing a hype wave around GEN-1.5, and rightfully so. Lots of respect to Pete & Andy for executing so well. The secret is in the naturally repetitive motions in human-collected data. There're 2 main sources for such repetitions:\n(1) Symmetric patterns.…",
+  "image": "https://cdn4.telesco.pe/file/HOO_a9I7-pwQKkVvFpL0WNN3lR9KVLObyKRc6DwBB021JXBSMqRpOtg8EbkHyN3rzdLoO0itwQAgqDBdltLJU9h3ZzwuT3ByPJpWxPkJsoDgl6FdIwXicndMQboYJ_Qe8nJ5aGYexFwrxCSIVkGAiSicfEB7C9FUgmFnBGP68Xn4ug7VZV3UhToBcj1tcKb00GGqJbqhtRfLoKQ1-Oa4ZnJOqQWUDAis9r5AuDzB_jhBIl2-6CKo1_UJ8NMmk0RiE9LKOAI9lOJmxRG9zsecDLhnmz7_pkVjEi_ZRk6qCyYDmeWjTRHxYuxBkkhBgkMzKzqrhgsJNFBDQbuE_sKbWg.jpg"
+ },
+ "gholam": {
+  "text": "رفیق، جیم فن اومده هایپ دور مدل روباتیک GEN-1.5 رو تحلیل کرده و دمشون گرمی جانانه‌ای به سازنده‌هاش، یعنی پیت و اندی، گفته. راز ماجرا توی دیتای طبیعی حرکات دست انسانه؛ یعنی هم حرکات متقارن مثل سرهم کردن وسایل، و هم نگه داشتن سوتی‌ها و افتادن وسایل توی دیتا تا روبات خودش یاد بگیره چطور خرابکاری‌هاشو جمع‌وجور کنه. جیم معتقده استفاده از ابزار UMI تیر خلاصی به روش‌های قدیمی کنترل از راه دوره، چون لمس و قلق واقعی دست انسان رو مستقیماً به مدل منتقل می‌کنه و روبات بدون آموزش اضافه می‌تونه اجسام جدید رو برداره. با این حال تهش گوشزد کرده که دموها فعلاً ساده‌ان و با وجود این روز درخشان در روباتیک، باید با احتیاط به آینده‌ش نگاه کرد.\n\nاهمیتش اینه که نشون می‌ده برای باهوش‌تر شدن روبات‌ها لازم نیست دیتای اتوکشیده و بدون نقص به خوردشون بدیم، بلکه ثبت خطاهای طبیعی انسان و گرفتن مستقیم ابزار، راه یادگیری خودکار روبات‌ها توی دنیای واقعی رو کاملاً باز کرده.",
+  "date": "2026-08-20T16:47:15+00:00"
+ },
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/DrJimFan/status/2090465981240086992",
+   "domain": "x.com",
+   "author": {
+    "name": "Jim Fan",
+    "handle": "DrJimFan",
+    "avatar": "https://pbs.twimg.com/profile_images/1554922493101559808/SYSZhbcd_200x200.jpg"
+   },
+   "text": "Seeing a hype wave around GEN-1.5, and rightfully so. Lots of respect to Pete & Andy for executing so well. The secret is in the naturally repetitive motions in human-collected data. There're 2 main sources for such repetitions: \n\n(1) Symmetric patterns. Sorting, tidying, and assembling almost never finish in one motion. Open any assembly manual from IKEA, and you find most objects symmetrical. You drive one bolt, then its twin, then the next pair. Every {bolt A, bolt B} pair is a natural continuation in context, and the second instance is a free training signal that imitates the first (\"prompt\").\n\n(2) Recovery. Humans drop things all the time, but we pick them up so fast, we don’t even notice. That reflex to fix is half of our physical competence. The key insight is to keep the failed first half instead of trimming it away. If the model consumes the full arc, fumble, catch, continue, then recovery shows up organically at test time. It's funny that in-context improvement results from *NOT* over-sanitizing your data.\n\nThe other critical ingredient is UMI. I've been saying for a while that teleop will not last, and GEN-1.5 is driving the final nail in the coffin. UMI is essentially a human wearing the robot gripper to collect data directly (human → data). Teleop inserts a layer of separation: human → VR/skeletal device → robot → data, which bleeds out all the human \"physical intuition\". The subtle sleight of hand we perform constantly with objects, the micro-adjustments, the feel of a part snapping into place, is nearly impossible to capture when you can't feel the environment directly.\n\nOnce you have enough data, many behaviors can actually be zero-shot. For example, you don't even need finetuning to pick up a novel object. The model \"just knows\" what to do given a similar scene in the training distribution. Whether in-context learning truly works or not also depends on how far away the test is from training. Currently, the demos are still a bit too simple to conclude.\n\nI'm cautiously optimistic. Still, it's a great day in robotics.",
+   "date": 1787240903,
+   "media": [],
+   "links": []
+  }
+ ],
+ "article": {
+  "title": "جیم فن اومده هایپ دور مدل روباتیک GEN-1.5 رو تحلیل کرده و دمشون گرمی جانانه‌ای به سازنده‌هاش، یعنی پیت و اندی، گفته",
+  "source_title": "Seeing a hype wave around GEN-1.5, and rightfully so. Lots of respect to Pete & Andy for executing so well. The secret is in the naturally…",
+  "body": [
+   "رفیق، جیم فن اومده هایپ دور مدل روباتیک GEN-1.5 رو تحلیل کرده و دمشون گرمی جانانه‌ای به سازنده‌هاش، یعنی پیت و اندی، گفته. راز ماجرا توی دیتای طبیعی حرکات دست انسانه؛ یعنی هم حرکات متقارن مثل سرهم کردن وسایل، و هم نگه داشتن سوتی‌ها و افتادن وسایل توی دیتا تا روبات خودش یاد بگیره چطور خرابکاری‌هاشو جمع‌وجور کنه. جیم معتقده استفاده از ابزار UMI تیر خلاصی به روش‌های قدیمی کنترل از راه دوره، چون لمس و قلق واقعی دست انسان رو مستقیماً به مدل منتقل می‌کنه و روبات بدون آموزش اضافه می‌تونه اجسام جدید رو برداره. با این حال تهش گوشزد کرده که دموها فعلاً ساده‌ان و با وجود این روز درخشان در روباتیک، باید با احتیاط به آینده‌ش نگاه کرد."
+  ],
+  "why": "نشون می‌ده برای باهوش‌تر شدن روبات‌ها لازم نیست دیتای اتوکشیده و بدون نقص به خوردشون بدیم، بلکه ثبت خطاهای طبیعی انسان و گرفتن مستقیم ابزار، راه یادگیری خودکار روبات‌ها توی دنیای واقعی رو کاملاً باز کرده.",
+  "tags": [
+   "رباتیک"
+  ]
+ },
+ "updated": "2026-10-25T12:29:46+00:00",
+ "gholam_checked": "2026-10-25T12:29:46+00:00"
+}

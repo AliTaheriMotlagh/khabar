@@ -1,0 +1,57 @@
+{
+ "id": 5528,
+ "url": "https://t.me/dlmehr/5528",
+ "date": "2026-09-28T17:21:08+00:00",
+ "text": "https://fxtwitter.com/wuweiweiwu/status/2104605548746543144?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+ "forwarded_from": null,
+ "digest": false,
+ "hash": "e0cbe4b9652e",
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/wuweiweiwu/status/2104605548746543144?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+  "site": "🧵 Thread • FxTwitter",
+  "title": "wei-wei (@wuweiweiwu)",
+  "description": "Introducing Mo, the world's first AI QA engineer\nPoint it at your app and 100+ agents bug bash it in parallel. Every bug comes back with repro steps, logs, and a video\nIn our evals vs Codex with Playwright MCP: → 3.8x more bugs → 9x more bugs per hour →…",
+  "image": null
+ },
+ "gholam": {
+  "text": "رفیق، یه حرکتی زدن که کار و بار تست نرم‌افزار رو حسابی دگرگون می‌کنه؛ سیستمی به اسم Mo معرفی شده که مدعیه اولین مهندس QA تماماً مبتنی بر هوش مصنوعیه. سازوکارش این‌طوریه که آدرس اپلیکیشنت رو بهش می‌سپاری و بیش از ۱۰۰ تا ایجنت هوشمند هم‌زمان می‌ریزن تو برنامه‌ت تا باگ‌ها رو بیرون بکشن، بعدش هم بابت هر ایراد، گزارش کامل، لاگ‌های سیستمی و حتی ویدیوی نحوه تکرار خطا رو تر و تمیز تحویلت می‌دن. طبق آماری که دادن، این ابزار در مقایسه با ترکیب کدکس و پلی‌رایت حدود ۳.۸ برابر باگ بیشتری پیدا کرده، سرعت کشفش ۹ برابر بیشتر بوده و خرجش هم نصف تموم شده.\n\nاهمیتش اینه که فرآیند خسته‌کننده و هزینه‌بر تست و خطایابی که روزها وقت تیم فنی رو می‌گرفت، حالا با ارتش ایجنت‌های موازی توی چند دقیقه و با نصف هزینه جمع‌وجور می‌شه.",
+  "date": "2026-09-28T17:21:21+00:00"
+ },
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/wuweiweiwu/status/2104605548746543144",
+   "domain": "x.com",
+   "author": {
+    "name": "wei-wei",
+    "handle": "wuweiweiwu",
+    "avatar": "https://pbs.twimg.com/profile_images/1991658569524289536/Tid9fSPr_200x200.jpg"
+   },
+   "text": "Introducing Mo, the world's first AI QA engineer\n\nPoint it at your app and 100+ agents bug bash it in parallel. Every bug comes back with repro steps, logs, and a video\n\nIn our evals vs Codex with Playwright MCP: → 3.8x more bugs → 9x more bugs per hour → half the cost per bug\n\nRT + reply \"Mo\" for $250 in free credits. Drop your app URL, Mo will bug bash it and DM you the report today",
+   "date": 1790612039,
+   "media": [
+    {
+     "type": "video",
+     "src": "https://video.twimg.com/amplify_video/2104603437099085824/vid/avc1/1280x720/uaooHeM0xh3Hd89u.mp4?tag=29",
+     "poster": "https://pbs.twimg.com/amplify_video_thumb/2104603437099085824/img/aOaIN08n6JwKkYqf.jpg",
+     "ratio": 0.5625,
+     "duration": 89.152,
+     "gif": false
+    }
+   ],
+   "links": []
+  }
+ ],
+ "article": {
+  "title": "یه حرکتی زدن که کار و بار تست نرم‌افزار رو حسابی دگرگون می‌کنه؛ سیستمی به اسم Mo معرفی شده که مدعیه اولین مهندس QA تماماً مبتنی بر هوش مصنوعیه",
+  "source_title": "Introducing Mo, the world's first AI QA engineer",
+  "body": [
+   "رفیق، یه حرکتی زدن که کار و بار تست نرم‌افزار رو حسابی دگرگون می‌کنه؛ سیستمی به اسم Mo معرفی شده که مدعیه اولین مهندس QA تماماً مبتنی بر هوش مصنوعیه. سازوکارش این‌طوریه که آدرس اپلیکیشنت رو بهش می‌سپاری و بیش از ۱۰۰ تا ایجنت هوشمند هم‌زمان می‌ریزن تو برنامه‌ت تا باگ‌ها رو بیرون بکشن، بعدش هم بابت هر ایراد، گزارش کامل، لاگ‌های سیستمی و حتی ویدیوی نحوه تکرار خطا رو تر و تمیز تحویلت می‌دن. طبق آماری که دادن، این ابزار در مقایسه با ترکیب کدکس و پلی‌رایت حدود ۳.۸ برابر باگ بیشتری پیدا کرده، سرعت کشفش ۹ برابر بیشتر بوده و خرجش هم نصف تموم شده."
+  ],
+  "why": "فرآیند خسته‌کننده و هزینه‌بر تست و خطایابی که روزها وقت تیم فنی رو می‌گرفت، حالا با ارتش ایجنت‌های موازی توی چند دقیقه و با نصف هزینه جمع‌وجور می‌شه.",
+  "tags": []
+ },
+ "updated": "2026-10-25T12:25:34+00:00",
+ "gholam_checked": "2026-10-25T12:25:34+00:00"
+}

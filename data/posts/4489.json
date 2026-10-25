@@ -1,0 +1,52 @@
+{
+ "id": 4489,
+ "url": "https://t.me/dlmehr/4489",
+ "date": "2026-07-31T01:26:54+00:00",
+ "text": "https://fxtwitter.com/lumalabsai/status/2082813292335046837?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+ "forwarded_from": null,
+ "digest": false,
+ "hash": "6013227473b0",
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/lumalabsai/status/2082813292335046837?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+  "site": "🧵 Thread • FxTwitter",
+  "title": "Luma (@LumaLabsAI)",
+  "description": "Layers is now live in Luma Agents.\nAsk the agent to extract layers from any image - generated in Luma or uploaded. Then keep chatting: swap the product, restyle the background, rewrite the headline.\nChange one element. Preserve everything else.\nPowered by…",
+  "image": null
+ },
+ "gholam": null,
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/LumaLabsAI/status/2082813292335046837",
+   "domain": "x.com",
+   "author": {
+    "name": "Luma",
+    "handle": "LumaLabsAI",
+    "avatar": "https://pbs.twimg.com/profile_images/1861041306258288640/V5yJEmjK_200x200.jpg"
+   },
+   "text": "Layers is now live in Luma Agents.\nAsk the agent to extract layers from any image - generated in Luma or uploaded. Then keep chatting: swap the product, restyle the background, rewrite the headline.\n\nChange one element. Preserve everything else.\nPowered by Uni-1.",
+   "date": 1785416360,
+   "media": [
+    {
+     "type": "video",
+     "src": "https://video.twimg.com/amplify_video/2082651653304385536/vid/avc1/1280x720/tHYEx107MPOJv5yX.mp4?tag=29",
+     "poster": "https://pbs.twimg.com/amplify_video_thumb/2082651653304385536/img/rRj6qJayfm6aLc0Y.jpg",
+     "ratio": 0.5625,
+     "duration": 32.041,
+     "gif": false
+    }
+   ],
+   "links": []
+  }
+ ],
+ "article": {
+  "title": "Layers is now live in Luma Agents.",
+  "source_title": null,
+  "body": [],
+  "why": null,
+  "tags": []
+ },
+ "updated": "2026-10-25T12:31:35+00:00",
+ "gholam_checked": "2026-10-25T12:31:35+00:00"
+}

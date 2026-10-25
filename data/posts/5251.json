@@ -1,0 +1,62 @@
+{
+ "id": 5251,
+ "url": "https://t.me/dlmehr/5251",
+ "date": "2026-09-10T23:10:50+00:00",
+ "text": "https://fxtwitter.com/intcyberdigest/status/2098149671957103005?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+ "forwarded_from": null,
+ "digest": false,
+ "hash": "17fe76ba5e3b",
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/intcyberdigest/status/2098149671957103005?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+  "site": "🧵 Thread • FxTwitter",
+  "title": "International Cyber Digest (@IntCyberDigest)",
+  "description": "‼️\nBREAKING: Chinese labs DeepSeek and Moonshot were quietly relaying customer prompts to Claude through fraudulent accounts. Users thought they were using Chinese AI, but were actually getting answers from Claude.\nTheir customers' sensitive data now is…",
+  "image": null
+ },
+ "gholam": {
+  "text": "ببین رفیق، یه ماجرای عجیب و پر سر و صدا تو دنیای هوش مصنوعی لو رفته؛ دو تا لابراتوار مطرح چینی یعنی دیپ‌سیک (DeepSeek) و مون‌شات (Moonshot)، زیرجلکی و با حساب‌های جعلی سوال‌های کاربراشون رو می‌فرستادن برای کلودِ آنتروپیک تا اون جواب بده و بعدش از همین مکالمات برای تربیت مدل‌های خودشون سوءاستفاده می‌کردن. عمق فاجعه اینجاست که مون‌شات فقط تو یه بازه ده‌روزه نزدیک ۳۰۰ هزار تا درخواست ملت رو مستقیم پاس داده سمت کلود. بدتر از همه، پای دیتای فوق‌العاده حساس امنیتی وسطه؛ از دسترسی‌های زنده به دیتابیس دولت روسیه گرفته تا تحلیل رفتار افراد از روی صدها دوربین مداربسته توسط یه چهره متصل به ارتش چین، همگی صاف رفته تو دل سرورهای شرکت آمریکایی آنتروپیک. کاربرا هم روحشون خبر نداشته و فکر می‌کردن دارن با هوش مصنوعی وطنی چین چت می‌کنن.\n\nچرا مهمه؟ اهمیتش اینه که این رسوایی بزرگ نه تنها ادعای استقلال و پیشرفت مستقل چین تو رقابت هوش مصنوعی رو بدجور زیر سوال می‌بره، بلکه نشون می‌ده ساده‌انگاری تو امنیت سایبری چطور می‌تونه حساس‌ترین اسرار نظامی و دولتی رو دودستی تقدیم رقیب کنه.",
+  "date": "2026-09-10T23:11:06+00:00"
+ },
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/IntCyberDigest/status/2098149671957103005",
+   "domain": "x.com",
+   "author": {
+    "name": "International Cyber Digest",
+    "handle": "IntCyberDigest",
+    "avatar": "https://pbs.twimg.com/profile_images/1831435438562615296/imkSFey2_200x200.jpg"
+   },
+   "text": "‼️ BREAKING: Chinese labs DeepSeek and Moonshot were quietly relaying customer prompts to Claude through fraudulent accounts. Users thought they were using Chinese AI, but were actually getting answers from Claude.\n\nTheir customers' sensitive data now is in Anthropic's hands. One user, who is tied to China's military, asked Kimi whether a person tracked across hundreds of CCTV cameras in Chengdu was behaving abnormally. DeepSeek passed along live credentials for a Russian government database, shared by an IT operator handling data from a Defense Ministry-linked agency.\n\nThe two Chinese labs relayed customer prompts to Claude through fraudulent accounts and saved the exchanges to train their own models. Moonshot forwarded almost 300,000 customer requests in a single ten-day stretch. DeepSeek flagged users running its models inside coding tools like Claude Code and OpenCode, then routed some of them to Opus.",
+   "date": 1789072838,
+   "media": [
+    {
+     "type": "image",
+     "src": "https://pbs.twimg.com/media/HR4f76gWQAs8Xda.jpg?name=orig",
+     "ratio": 1.0
+    },
+    {
+     "type": "image",
+     "src": "https://pbs.twimg.com/media/HR4f-DlWYAIGfFn.jpg?name=orig",
+     "ratio": 0.6349
+    }
+   ],
+   "links": []
+  }
+ ],
+ "article": {
+  "title": "یه ماجرای عجیب و پر سر و صدا تو دنیای هوش مصنوعی لو رفته",
+  "source_title": "‼️ BREAKING: Chinese labs DeepSeek and Moonshot were quietly relaying customer prompts to Claude through fraudulent accounts. Users thought…",
+  "body": [
+   "ببین رفیق، یه ماجرای عجیب و پر سر و صدا تو دنیای هوش مصنوعی لو رفته؛ دو تا لابراتوار مطرح چینی یعنی دیپ‌سیک (DeepSeek) و مون‌شات (Moonshot)، زیرجلکی و با حساب‌های جعلی سوال‌های کاربراشون رو می‌فرستادن برای کلودِ آنتروپیک تا اون جواب بده و بعدش از همین مکالمات برای تربیت مدل‌های خودشون سوءاستفاده می‌کردن. عمق فاجعه اینجاست که مون‌شات فقط تو یه بازه ده‌روزه نزدیک ۳۰۰ هزار تا درخواست ملت رو مستقیم پاس داده سمت کلود. بدتر از همه، پای دیتای فوق‌العاده حساس امنیتی وسطه؛ از دسترسی‌های زنده به دیتابیس دولت روسیه گرفته تا تحلیل رفتار افراد از روی صدها دوربین مداربسته توسط یه چهره متصل به ارتش چین، همگی صاف رفته تو دل سرورهای شرکت آمریکایی آنتروپیک. کاربرا هم روحشون خبر نداشته و فکر می‌کردن دارن با هوش مصنوعی وطنی چین چت می‌کنن."
+  ],
+  "why": "اهمیتش اینه که این رسوایی بزرگ نه تنها ادعای استقلال و پیشرفت مستقل چین تو رقابت هوش مصنوعی رو بدجور زیر سوال می‌بره، بلکه نشون می‌ده ساده‌انگاری تو امنیت سایبری چطور می‌تونه حساس‌ترین اسرار نظامی و دولتی رو دودستی تقدیم رقیب کنه.",
+  "tags": [
+   "چین",
+   "آنتروپیک"
+  ]
+ },
+ "updated": "2026-10-25T12:27:14+00:00",
+ "gholam_checked": "2026-10-25T12:27:14+00:00"
+}

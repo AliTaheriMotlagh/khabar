@@ -1,0 +1,59 @@
+{
+ "id": 5652,
+ "url": "https://t.me/dlmehr/5652",
+ "date": "2026-10-05T18:30:36+00:00",
+ "text": "https://fxtwitter.com/sharonal_lee/status/2107148914269032875?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+ "forwarded_from": null,
+ "digest": false,
+ "hash": "a145addca11f",
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/sharonal_lee/status/2107148914269032875?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+  "site": "🧵 Thread • FxTwitter",
+  "title": "Sharon Lee (@sharonal_lee)",
+  "description": "Been seeing a lot of Astra for real2sim, but what you need for robotics: physics and affordance.\nOur SOTA recipe specifically solves for:\n• Affordance: model object details that convey functionality.\n• Physics: calibrate simulation dynamics against real…",
+  "image": null
+ },
+ "gholam": {
+  "text": "ببین رفیق، این روزا توی بحث رباتیک خیلیا سر و دست می‌شکونن واسه ابزارهایی مثل آسترا تا دنیای واقعی رو ببرن توی شبیه‌ساز، اما شارون لی اومده وسط و می‌گه شبیه‌سازی فقط قیافه و ظاهر نیست، بلکه فیزیک درست‌درمون و فهم دقیق کارکرد اجسام می‌خواد. حرف حسابش اینه که اگه شبیه‌ساز نتونه رفتار فیزیکی اشیا رو دقیق بازسازی کنه، ربات هیچ سیگنال به‌دردبخوری واسه تصمیم‌گیری نمی‌گیره. واسه همین یه ایجنت ساختن که مثل یه مهندس شبیه‌ساز کارکشته، هم‌زمان هندسه، جنس متریال، نقاط برخورد و اتصالات حرکتی رو بررسی می‌کنه و فیزیک محیط رو مو‌به‌مو با رفتار واقعی قطعات تنظیم می‌کنه.\n\nاهمیتش اینه که بدون تطابق دقیق فیزیک شبیه‌ساز با واقعیت، هرچی به خورد مغز ربات بدی تو دنیای واقعی پنچر می‌شه و دست از پا درازتر می‌مونه.",
+  "date": "2026-10-05T18:30:49+00:00"
+ },
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/sharonal_lee/status/2107148914269032875",
+   "domain": "x.com",
+   "author": {
+    "name": "Sharon Lee",
+    "handle": "sharonal_lee",
+    "avatar": "https://pbs.twimg.com/profile_images/2065574607655227392/JZA1wzEN_200x200.jpg"
+   },
+   "text": "Been seeing a lot of Astra for real2sim, but what you need for robotics: physics and affordance.\n\nOur SOTA recipe specifically solves for:\n• Affordance: model object details that convey functionality.\n• Physics: calibrate simulation dynamics against real-world observations. \n\nOur agent has the action space of a “full-stack simulation engineer” and jointly considers geometry, materials, colliders, articulation, and physics. It automatically calibrates physics against real trajectories and matches task-specific dynamics.\n\nSimulation environments is useful only if it can provide meaningful policy level signals. Methods, comparisons, and results below.",
+   "date": 1791218424,
+   "media": [
+    {
+     "type": "video",
+     "src": "https://video.twimg.com/amplify_video/2107144257127710720/vid/avc1/1280x720/KXCJ8WXTf-bYt7JD.mp4?tag=29",
+     "poster": "https://pbs.twimg.com/amplify_video_thumb/2107144257127710720/img/yLsyR0ZTKyDdUNtc.jpg",
+     "ratio": 0.5625,
+     "duration": 50.717,
+     "gif": false
+    }
+   ],
+   "links": []
+  }
+ ],
+ "article": {
+  "title": "این روزا توی بحث رباتیک خیلیا سر و دست می‌شکونن واسه ابزارهایی مثل آسترا تا دنیای واقعی رو ببرن توی شبیه‌ساز، اما شارون لی اومده وسط و می‌گه شبیه‌سازی فقط قیافه و ظاهر نیست، بلکه فیزیک درست‌درمون و فهم دقیق کارکرد اجسام می‌خواد",
+  "source_title": "Been seeing a lot of Astra for real2sim, but what you need for robotics: physics and affordance.",
+  "body": [
+   "ببین رفیق، این روزا توی بحث رباتیک خیلیا سر و دست می‌شکونن واسه ابزارهایی مثل آسترا تا دنیای واقعی رو ببرن توی شبیه‌ساز، اما شارون لی اومده وسط و می‌گه شبیه‌سازی فقط قیافه و ظاهر نیست، بلکه فیزیک درست‌درمون و فهم دقیق کارکرد اجسام می‌خواد. حرف حسابش اینه که اگه شبیه‌ساز نتونه رفتار فیزیکی اشیا رو دقیق بازسازی کنه، ربات هیچ سیگنال به‌دردبخوری واسه تصمیم‌گیری نمی‌گیره. واسه همین یه ایجنت ساختن که مثل یه مهندس شبیه‌ساز کارکشته، هم‌زمان هندسه، جنس متریال، نقاط برخورد و اتصالات حرکتی رو بررسی می‌کنه و فیزیک محیط رو مو‌به‌مو با رفتار واقعی قطعات تنظیم می‌کنه."
+  ],
+  "why": "بدون تطابق دقیق فیزیک شبیه‌ساز با واقعیت، هرچی به خورد مغز ربات بدی تو دنیای واقعی پنچر می‌شه و دست از پا درازتر می‌مونه.",
+  "tags": [
+   "رباتیک"
+  ]
+ },
+ "updated": "2026-10-25T12:24:49+00:00",
+ "gholam_checked": "2026-10-25T12:24:49+00:00"
+}

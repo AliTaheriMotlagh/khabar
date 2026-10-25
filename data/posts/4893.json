@@ -1,0 +1,57 @@
+{
+ "id": 4893,
+ "url": "https://t.me/dlmehr/4893",
+ "date": "2026-08-23T17:37:26+00:00",
+ "text": "https://fxtwitter.com/gavinsbaker/status/2091542026072338623?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+ "forwarded_from": null,
+ "digest": false,
+ "hash": "298c2acdffb1",
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/gavinsbaker/status/2091542026072338623?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+  "site": "FxTwitter",
+  "title": "Gavin Baker (@GavinSBaker)",
+  "description": "More data than open-source AI is taking share from OpenAI and Anthropic. Open source has gone from 28% token share to 62% token share @vercel over the last 2 months. Chart from @rauchg\nSuper impressive given that the sum of OpenAI and Anthropic accelerated…",
+  "image": "https://cdn4.telesco.pe/file/PeymQCw0v08JcY3tRbmvC2_9j6tkZ1Hdr75NYFGatctAUUX-2lN9lKg7eZgtKza_3VFRcf-eeEvBBvyFjLOxKtfmK_Nr55-2404U2v1UBuiuQEUEdS-sctAoP6DUcDoTG-kTVRvlfXUZ7YosAsb3GyyljJr5Tc7Jv2UYXmSn7rScMidrbYEuCj2bGPinJKLkf0Ev6LCuZwJIa-gQigW5lrFvtFuMBBurHOMpXbWEEM48UHFF2P4lMKfpkgo531gG0PihDJuRMjfgLCWKi-eOKybPgEbjV45o-S-j7SQ137gctc1asaD1uZauy1zUUjDDMn0bY48N7i70bSDPXk8h0Q.jpg"
+ },
+ "gholam": {
+  "text": "رفیق، آمار و ارقام تازه نشون میده که مدل‌های متن‌باز دارن حسابی توی بازار هوش مصنوعی گردوخاک می‌کنن و دست‌بالا رو از غول‌هایی مثل OpenAI و Anthropic می‌گیرن. گاوین بیکر با استناد به دیتای پلتفرم Vercel اعلام کرده که سهم توکن‌های متن‌باز فقط ظرف دو ماه گذشته از ۲۸ درصد رسیده به ۶۲ درصد. نکته جالبش اینه که استفاده از مدل‌های اختصاصی کم نشده، بلکه تقاضای کل بازار اون‌قدر منفجر شده که سهم اوپن‌سورس با سرعت وحشتناکی بالا کشیده. پیش‌بینی هم اینه که در آینده مدل‌های اختصاصی و گرون‌قیمت شاید بیشترین سود مالی رو ببرن، اما بخش اعظم توکن‌ها و بار ترافیکی روی دوش همین مدل‌های متن‌باز می‌افته.\n\nاهمیتش اینه که اجرای مدل‌های متن‌باز اصلاً مجانی نیست و جهش خیره‌کننده‌شون بازار چیپ‌ها و زیرساخت‌های پردازشی رو به‌شدت داغ‌تر می‌کنه.",
+  "date": "2026-08-23T17:37:38+00:00"
+ },
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/GavinSBaker/status/2091542026072338623",
+   "domain": "x.com",
+   "author": {
+    "name": "Gavin Baker",
+    "handle": "GavinSBaker",
+    "avatar": "https://pbs.twimg.com/profile_images/1396219525754937345/5L4n5L3O_200x200.jpg"
+   },
+   "text": "More data than open-source AI is taking share from OpenAI and Anthropic. Open source has gone from 28% token share to 62% token share @vercel over the last 2 months. Chart from @rauchg \n\nSuper impressive given that the sum of OpenAI and Anthropic accelerated in July. So net token/AI infra demand accelerated even more than the acceleration we saw at the frontier. And suspect Grok growing even faster than open-source and we saw some of this in the @tryramp data.\n\nOpen-source AI taking share is positive for AI infrastructure demand as it lowers margins at the model layer and an open-source token costs just as much compute to produce as a frontier token. Nothing about open-source AI inference is “free.”\n\nMost likely end state IMO is that closed, frontier tokens are 60-90% of economic value but only 15 to 25% of tokens.",
+   "date": 1787497452,
+   "media": [
+    {
+     "type": "image",
+     "src": "https://pbs.twimg.com/media/HQalWkqW8AA83Ef.jpg?name=orig",
+     "ratio": 0.5519
+    }
+   ],
+   "links": []
+  }
+ ],
+ "article": {
+  "title": "آمار و ارقام تازه نشون میده که مدل‌های متن‌باز دارن حسابی توی بازار هوش مصنوعی گردوخاک می‌کنن و دست‌بالا رو از غول‌هایی مثل OpenAI و Anthropic می‌گیرن",
+  "source_title": "More data than open-source AI is taking share from OpenAI and Anthropic. Open source has gone from 28% token share to 62% token share…",
+  "body": [
+   "رفیق، آمار و ارقام تازه نشون میده که مدل‌های متن‌باز دارن حسابی توی بازار هوش مصنوعی گردوخاک می‌کنن و دست‌بالا رو از غول‌هایی مثل OpenAI و Anthropic می‌گیرن. گاوین بیکر با استناد به دیتای پلتفرم Vercel اعلام کرده که سهم توکن‌های متن‌باز فقط ظرف دو ماه گذشته از ۲۸ درصد رسیده به ۶۲ درصد. نکته جالبش اینه که استفاده از مدل‌های اختصاصی کم نشده، بلکه تقاضای کل بازار اون‌قدر منفجر شده که سهم اوپن‌سورس با سرعت وحشتناکی بالا کشیده. پیش‌بینی هم اینه که در آینده مدل‌های اختصاصی و گرون‌قیمت شاید بیشترین سود مالی رو ببرن، اما بخش اعظم توکن‌ها و بار ترافیکی روی دوش همین مدل‌های متن‌باز می‌افته."
+  ],
+  "why": "اجرای مدل‌های متن‌باز اصلاً مجانی نیست و جهش خیره‌کننده‌شون بازار چیپ‌ها و زیرساخت‌های پردازشی رو به‌شدت داغ‌تر می‌کنه.",
+  "tags": [
+   "اوپن‌ای‌آی",
+   "آنتروپیک"
+  ]
+ },
+ "updated": "2026-10-25T12:29:28+00:00",
+ "gholam_checked": "2026-10-25T12:29:28+00:00"
+}

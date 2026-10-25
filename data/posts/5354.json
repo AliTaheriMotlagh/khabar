@@ -1,0 +1,69 @@
+{
+ "id": 5354,
+ "url": "https://t.me/dlmehr/5354",
+ "date": "2026-09-17T23:07:12+00:00",
+ "text": "https://fxtwitter.com/chrisgpt/status/2100692455154737479?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+ "forwarded_from": null,
+ "digest": false,
+ "hash": "67d46ed07614",
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/chrisgpt/status/2100692455154737479?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+  "site": "FxTwitter",
+  "title": "Chris (@ChrisGPT)",
+  "description": "Wow Anthropic is being really transparent with how close to RSI they are - 26% of Anthropic’s AI R&D work,” while “the share of work at or above ‘AI collaborates’ is above 90%.” That’s up from under 1% in February to 26% in August.\nThey also say there are…",
+  "image": "https://cdn4.telesco.pe/file/uATs8YefdpQNoIHmjDN54Bv30fX5pLMa2zRqZcaKhCjWv0dArLAFTkQnOaNKFDqPgsGyxqLwmCt8-Kekx6NMGQE4u-Q3Ecd3bl3NZLbL-xrvMoNALSvTMoWk509o_XRc6EUlHzJvAFcgOGRj3U_cXhxRinbrsGfY_9ijLl5ofc4NqoefG2CKYyuR214AHsR8uXbm8WqIx8mPQZf2z02ATZW6FWftiNEksIafiLSwdtioYO5I1aNf6OXYr2vVz1V2LnuXPS0t1oSwxEqmoabXn240rq1kU9iPVZLhySDPckiCPMAHK06K6LKjHLFhqrg3mFsMwdBilGeqbR5vGfdE9Q.jpg"
+ },
+ "gholam": {
+  "text": "رفیق، شرکت آنتروپیک بی‌تعارف آمار رو ریخته رو دایره و نشون داده که سهم هوش مصنوعی توی تحقیق و توسعه‌ی خودشون از زیر ۱ درصد در بهمن، یهو پریده رسیده به ۲۶ درصد در مرداد ماه! طبق این گزارش، در هر لحظه حدود ۳۰ هزار تا اِیجنت هوشمند دارن دوشادوش تیم، کارهای سنگین مهندسی و پژوهشی شرکت رو جلو می‌برن و بالای ۹۰ درصد کارها هم با مشارکت خود این مدل‌ها انجام میشه. جالب‌تر اینکه سیستم نظارتی‌شون بیش از یک میلیارد تصمیم این ایجنت‌ها رو زیر ذره‌بین برده و فقط دو هزارم درصدشون گیر امنیتی خورده و متوقف شده. با این فرمون، شرکت آنتروپیک رسماً داره نشون میده که چقدر به مرحله‌ی «خودبه‌بودی مکرر» یعنی ساخت نسخه‌های بعدی هوش مصنوعی به دست خودش نزدیک شدیم.\n\nچرا مهمه؟ چون وقتی هوش مصنوعی بیفته روی دورِ ارتقا دادن و ساختن نسخه بعدی خودش، سرعت پیشرفتش نجومی میشه و معادلات دنیای فناوری کاملاً به هم می‌ریزه.",
+  "date": "2026-09-17T23:07:25+00:00"
+ },
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/ChrisGPT/status/2100692455154737479",
+   "domain": "x.com",
+   "author": {
+    "name": "Chris",
+    "handle": "ChrisGPT",
+    "avatar": "https://pbs.twimg.com/profile_images/2046736394152812544/LfmDgg0I_200x200.jpg"
+   },
+   "text": "Wow Anthropic is being really transparent with how close to RSI they are - 26% of Anthropic’s AI R&D work,” while “the share of work at or above ‘AI collaborates’ is above 90%.” That’s up from under 1% in February to 26% in August.\n\nThey also say there are roughly 30,000 agents doing research and engineering work at Anthropic at any given time, and they reviewed over a billion agent decisions in August. Only 0.002% were blocked by the online monitor.\n\nThe offline system flags roughly 100,000 transcripts per week, with about 50 escalated to human review. Anthropic explicitly says this matters because it shows “how close the world is to reaching recursive self improvement.”",
+   "date": 1789679084,
+   "media": [
+    {
+     "type": "image",
+     "src": "https://pbs.twimg.com/media/HScopyRXgAACeC3.jpg?name=orig",
+     "ratio": 0.6264
+    }
+   ],
+   "links": [],
+   "quote": {
+    "author": {
+     "name": "Anthropic",
+     "handle": "AnthropicAI",
+     "avatar": "https://pbs.twimg.com/profile_images/1798110641414443008/XP8gyBaY_200x200.jpg"
+    },
+    "text": "AI systems are getting more powerful, and they're increasingly being used to build the next version of themselves. We want to illuminate that progress for the public.\n\nToday, we're sharing three measurements that help track AI development:\n1. How much AI R&D is done by AI.\n2. How well AI agents are overseen.\n3. How compute is allocated.\n\nWe provide a snapshot of these metrics from inside Anthropic. Any frontier developer could publish the same measures, and third parties could verify them.\n\nAs the world considers pacing the frontier, we should do everything possible to minimize the gap between what frontier labs know and what the public knows. This means better measuring the development of AI, publishing our findings, and giving society an opportunity to decide how to use this information.\n\nRead the full post and methodology: https://www.anthropic.com/institute/measuring-pace-of-ai-development",
+    "date": 1789677134,
+    "media": [],
+    "links": [
+     "https://www.anthropic.com/institute/measuring-pace-of-ai-development"
+    ]
+   }
+  }
+ ],
+ "article": {
+  "title": "شرکت آنتروپیک بی‌تعارف آمار رو ریخته رو دایره و نشون داده که سهم هوش مصنوعی توی تحقیق و توسعه‌ی خودشون از زیر ۱ درصد در بهمن، یهو پریده رسیده به ۲۶ درصد در مرداد ماه",
+  "source_title": "Wow Anthropic is being really transparent with how close to RSI they are - 26% of Anthropic’s AI R&D work,” while “the share of work at or…",
+  "body": [
+   "رفیق، شرکت آنتروپیک بی‌تعارف آمار رو ریخته رو دایره و نشون داده که سهم هوش مصنوعی توی تحقیق و توسعه‌ی خودشون از زیر ۱ درصد در بهمن، یهو پریده رسیده به ۲۶ درصد در مرداد ماه! طبق این گزارش، در هر لحظه حدود ۳۰ هزار تا اِیجنت هوشمند دارن دوشادوش تیم، کارهای سنگین مهندسی و پژوهشی شرکت رو جلو می‌برن و بالای ۹۰ درصد کارها هم با مشارکت خود این مدل‌ها انجام میشه. جالب‌تر اینکه سیستم نظارتی‌شون بیش از یک میلیارد تصمیم این ایجنت‌ها رو زیر ذره‌بین برده و فقط دو هزارم درصدشون گیر امنیتی خورده و متوقف شده. با این فرمون، شرکت آنتروپیک رسماً داره نشون میده که چقدر به مرحله‌ی «خودبه‌بودی مکرر» یعنی ساخت نسخه‌های بعدی هوش مصنوعی به دست خودش نزدیک شدیم."
+  ],
+  "why": "چون وقتی هوش مصنوعی بیفته روی دورِ ارتقا دادن و ساختن نسخه بعدی خودش، سرعت پیشرفتش نجومی میشه و معادلات دنیای فناوری کاملاً به هم می‌ریزه.",
+  "tags": [
+   "آنتروپیک"
+  ]
+ },
+ "updated": "2026-10-25T12:26:38+00:00",
+ "gholam_checked": "2026-10-25T12:26:38+00:00"
+}

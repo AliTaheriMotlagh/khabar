@@ -1,0 +1,81 @@
+{
+ "id": 5784,
+ "url": "https://t.me/dlmehr/5784",
+ "date": "2026-10-09T20:51:52+00:00",
+ "text": "https://fxtwitter.com/a16z/status/2108573490517610934?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+ "forwarded_from": null,
+ "digest": false,
+ "hash": "45b05e1b1faa",
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/a16z/status/2108573490517610934?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+  "site": "FxTwitter",
+  "title": "a16z (@a16z)",
+  "description": "Former Intel CEO Pat Gelsinger on getting hired at 18, designing Intel's chips while finishing his PhD, and arguing with his Stanford professors:\n\"I'm 16 years old. I accidentally win a scholarship. I go to tech school, skip my last year and a half of high…",
+  "image": null
+ },
+ "gholam": {
+  "text": "رفیق، بشنو از پَت گلسینگر، مدیرعامل سابق اینتل، که تعریف کرده چطوری از ۱۸ سالگی پاش به اینتل باز شد و همون اول توی مصاحبه بهش گفتن «زرنگ، پررو و جسوری، خوراکِ کار خودمونی!» این کهنه‌کار سیلیکون‌ولی هم‌زمان با درس خوندن تا مقطع دکترا، مهندس شماره چهارِ پردازنده معروف 386 و مدیر ارشد طراحی 486 شد؛ یعنی روزا پای تخته دانشگاه درس می‌دید و شبا همونا رو توی قلب سیلیکون پیاده می‌کرد. کار حتی به جایی کشید که وقتی استاد استنفوردش یه فرمول جدید برای مدار پردازنده داد، پَت رفت همون شب روی 386 پیاده‌ش کرد و برگشت رک به استادش گفت «تئوری‌ت کار نمی‌کنه» و دو جلسه تمام سر کار نکردنش با یارو یکی‌به‌دو کرد!\n\nاهمیتش اینه که نشون میده پایه‌های دنیای پردازنده‌ها چطوری از دل ترکیب هم‌زمان تئوری دانشگاه با کار عملیِ بی‌تعارف و دست‌به‌آچار شدن واقعی شکل گرفته.",
+  "date": "2026-10-09T20:52:09+00:00"
+ },
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/a16z/status/2108573490517610934",
+   "domain": "x.com",
+   "author": {
+    "name": "a16z",
+    "handle": "a16z",
+    "avatar": "https://pbs.twimg.com/profile_images/1919488160125616128/QAZXTMEj_200x200.png"
+   },
+   "text": "Former Intel CEO Pat Gelsinger on getting hired at 18, designing Intel's chips while finishing his PhD, and arguing with his Stanford professors:\n\n\"I'm 16 years old. I accidentally win a scholarship. I go to tech school, skip my last year and a half of high school, and Intel comes recruiting when I'm 18 years old.\"\n\n\"The interviewer, he writes on his page, and I was number 12 that he interviewed that day... He says, 'Smart, aggressive, arrogant. He'll fit right in.'\"\n\n\"I was engineer number four on the 386. Architect and design manager for the 486. All of that while doing my bachelor's, my master's and PhD work... Learning by day, and putting it to practice at night.\"\n\n\"One of the professors postulated a new carry lookahead adder design in one of my classes at Stanford. So I said, 'Well, I'm working on the 386 carry lookahead adder, so let me go try it.'\"\n\n\"I come back two days later to the professor and I said, 'It doesn't work.' The next two class periods were just me and the professor arguing over why his design didn't work.\"\n\n@PGelsinger @RaghuRaghuram @appenz",
+   "date": 1791558070,
+   "media": [
+    {
+     "type": "video",
+     "src": "https://video.twimg.com/amplify_video/2108573353904857088/vid/avc1/1280x720/XfZO7Vwf-5270YEj.mp4?tag=16",
+     "poster": "https://pbs.twimg.com/amplify_video_thumb/2108573353904857088/img/b-AGrdGGSoZ-c9_b.jpg",
+     "ratio": 0.5625,
+     "duration": 139.722,
+     "gif": false
+    }
+   ],
+   "links": [],
+   "quote": {
+    "author": {
+     "name": "a16z",
+     "handle": "a16z",
+     "avatar": "https://pbs.twimg.com/profile_images/1919488160125616128/QAZXTMEj_200x200.png"
+    },
+    "text": "Former Intel CEO Pat Gelsinger with a16z's Raghu Raghuram and Guido Appenzeller on the next wave of semiconductor innovation and the physical constraints shaping the AI buildout:\n\nDrawing on his experience designing Intel's 386 and 486 processors, Pat explains how AI could transform chip design, but also why faster design alone won't solve the industry's biggest problems.\n\nThey examine the bottlenecks in manufacturing, memory bandwidth, advanced packaging, and power, and why today's explosion of specialized AI chips may eventually consolidate around a smaller number of architectures.\n\nThey also discuss the potential for new memory technologies, the shift from copper to optical networking, and why energy capacity could become a major constraint on AI growth.\n\nFinally, they revisit Pat's VMware years to ask what virtualization might look like when infrastructure is built for agents rather than humans.\n\nYouTube: https://youtu.be/1Q_7yU7FZ1k\n\n1:05 Hired by Intel at 18\n3:50 Arguing with Stanford professors\n7:25 Will AI design the next gen chips?\n8:45 Designing faster than fabs can build\n11:55 Why GPUs are stuck with bad memory\n13:40 Why 100 AI chips will collapse to a few\n19:15 Agents make new chips cheap to run\n22:10 No new memory chip since the 90s\n27:20 Why 16-layer chip stacks are a fantasy\n32:15 The physics that keeps memory next to compute\n34:55 \"I declared the death of copper\"\n38:05 AI traffic breaks the internet's design\n42:40 \"Energy capacity equals economic capacity\"\n46:25 The 130-year-old power war AI reopened\n48:50 VMware for agents\n\n@PGelsinger @RaghuRaghuram @appenz",
+    "date": 1791556202,
+    "media": [
+     {
+      "type": "video",
+      "src": "https://video.twimg.com/amplify_video/2108561514416500736/vid/avc1/1280x720/jajXmcIKl7ayx4Oi.mp4?tag=29",
+      "poster": "https://pbs.twimg.com/amplify_video_thumb/2108561514416500736/img/wnYtPVrrtPE200Ig.jpg",
+      "ratio": 0.5625,
+      "duration": 3194.322,
+      "gif": false
+     }
+    ],
+    "links": [
+     "https://youtu.be/1Q_7yU7FZ1k"
+    ]
+   }
+  }
+ ],
+ "article": {
+  "title": "بشنو از پَت گلسینگر، مدیرعامل سابق اینتل، که تعریف کرده چطوری از ۱۸ سالگی پاش به اینتل باز شد و همون اول توی مصاحبه بهش گفتن «زرنگ، پررو و جسوری، خوراکِ کار خودمونی!» این کهنه‌کار سیلیکون‌ولی هم‌زمان…",
+  "source_title": "Former Intel CEO Pat Gelsinger on getting hired at 18, designing Intel's chips while finishing his PhD, and arguing with his Stanford…",
+  "body": [
+   "رفیق، بشنو از پَت گلسینگر، مدیرعامل سابق اینتل، که تعریف کرده چطوری از ۱۸ سالگی پاش به اینتل باز شد و همون اول توی مصاحبه بهش گفتن «زرنگ، پررو و جسوری، خوراکِ کار خودمونی!» این کهنه‌کار سیلیکون‌ولی هم‌زمان با درس خوندن تا مقطع دکترا، مهندس شماره چهارِ پردازنده معروف 386 و مدیر ارشد طراحی 486 شد؛ یعنی روزا پای تخته دانشگاه درس می‌دید و شبا همونا رو توی قلب سیلیکون پیاده می‌کرد. کار حتی به جایی کشید که وقتی استاد استنفوردش یه فرمول جدید برای مدار پردازنده داد، پَت رفت همون شب روی 386 پیاده‌ش کرد و برگشت رک به استادش گفت «تئوری‌ت کار نمی‌کنه» و دو جلسه تمام سر کار نکردنش با یارو یکی‌به‌دو کرد!"
+  ],
+  "why": "نشون میده پایه‌های دنیای پردازنده‌ها چطوری از دل ترکیب هم‌زمان تئوری دانشگاه با کار عملیِ بی‌تعارف و دست‌به‌آچار شدن واقعی شکل گرفته.",
+  "tags": [
+   "تراشه"
+  ]
+ },
+ "updated": "2026-10-25T12:23:56+00:00",
+ "gholam_checked": "2026-10-25T12:23:56+00:00"
+}

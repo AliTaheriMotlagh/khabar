@@ -1,0 +1,59 @@
+{
+ "id": 5357,
+ "url": "https://t.me/dlmehr/5357",
+ "date": "2026-09-17T23:32:42+00:00",
+ "text": "https://x.com/iam_zachi/status/2100700176444731780?s=46",
+ "forwarded_from": "Hossein Zakariaee",
+ "digest": false,
+ "hash": "ff01012bed66",
+ "media": [],
+ "preview": {
+  "url": "https://x.com/iam_zachi/status/2100700176444731780?s=46",
+  "site": "X (formerly Twitter)",
+  "title": "Zachi (@iam_zachi) on X",
+  "description": "I build a SQL extension that turns plain english into a WHERE clause with jev @typesafeai\nWHERE jev(people, 'could work from home')\nEvery row gets judged individually, no index and no embedding…",
+  "image": "https://cdn4.telesco.pe/file/uAYJYoKGT85S4AP9yXkv_Ly71aSTthAnV0JMfoxZXBJ5939SpNuDiRYmZMXCl_dJR_E_ci6v-hsLaAgOGs67QB-lBB6Osh_5JE9044ehTFjiv9dLbQkEtd56asDfg-HH6dNImEaTnPXj3j5ZMCBX92cC7IDB8_ZQg5xO6uvbJjYf4ILbWp0_COPlPumoGRDnX7vZSLvUnNKLlSEg-VJ14xZT67Vlut1NEYeRawZf0i_J5zDhQq2MFt5CBngxSsOeMTDSWIrC8T1l609RdEZGAPzTONjYR7Ygy4OnM9fzteoafbrKuP-oI5pcJi1J_jjshI-_yFn_ouOyCfEmwvOd-w.jpg"
+ },
+ "gholam": {
+  "text": "ببین رفیق، یه برنامه‌نویس به اسم زاکی اومده یه اکستنشن تر و تمیز برای SQL زده که زبون آدمیزاد رو مستقیم می‌کنه شرط توی دیتابیس. یعنی بدون این‌که نیاز به امبدینگ یا ساختن ایندکس‌های سنگین داشته باشی، فقط تو شرط WHERE به انگلیسی می‌نویسی چی می‌خوای و خودش تک‌تک ردیف‌ها رو بررسی می‌کنه و نتیجه رو تحویلت می‌ده. البته بنده خدا لینک تست رو گذاشته و به شوخی التماس کرده که زیاد سر به سرش نذارن تا جیبش خالی نشه و هزینه‌های هوش مصنوعیش سر به فلک نکشه. خلاصه کار با پایگاه داده رو یه پله برده سمت راحتی و فیلتر کردن اطلاعات کیفی رو حسابی شیرین کرده.\n\nاهمیتش اینه که بدون درگیر شدن با کارهای پیچیده و سنگینِ وکتور سرچ، می‌تونی با زبون ساده و طبیعی روی دیتاهات فیلترهای هوشمند بزنی.",
+  "date": "2026-09-17T23:32:52+00:00"
+ },
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/iam_zachi/status/2100700176444731780",
+   "domain": "x.com",
+   "author": {
+    "name": "Zachi",
+    "handle": "iam_zachi",
+    "avatar": "https://pbs.twimg.com/profile_images/2002332181004247040/uudxkCe__200x200.jpg"
+   },
+   "text": "I build a SQL extension that turns plain english into a WHERE clause with jev @typesafeai \n\nWHERE jev(people, 'could work from home')\n\nEvery row gets judged individually, no index and no embeddings needed.\n\nTry it out (don't burn my wallet pls)",
+   "date": 1789680925,
+   "media": [
+    {
+     "type": "video",
+     "src": "https://video.twimg.com/amplify_video/2100699923083673600/vid/avc1/1108x720/IaVjKXXrMzhqNpM2.mp4?tag=29",
+     "poster": "https://pbs.twimg.com/amplify_video_thumb/2100699923083673600/img/TwhSteNDR4q6ZNFu.jpg",
+     "ratio": 0.6498,
+     "duration": 23.083,
+     "gif": false
+    }
+   ],
+   "links": []
+  }
+ ],
+ "article": {
+  "title": "یه برنامه‌نویس به اسم زاکی اومده یه اکستنشن تر و تمیز برای SQL زده که زبون آدمیزاد رو مستقیم می‌کنه شرط توی دیتابیس",
+  "source_title": "I build a SQL extension that turns plain english into a WHERE clause with jev @typesafeai",
+  "body": [
+   "ببین رفیق، یه برنامه‌نویس به اسم زاکی اومده یه اکستنشن تر و تمیز برای SQL زده که زبون آدمیزاد رو مستقیم می‌کنه شرط توی دیتابیس. یعنی بدون این‌که نیاز به امبدینگ یا ساختن ایندکس‌های سنگین داشته باشی، فقط تو شرط WHERE به انگلیسی می‌نویسی چی می‌خوای و خودش تک‌تک ردیف‌ها رو بررسی می‌کنه و نتیجه رو تحویلت می‌ده. البته بنده خدا لینک تست رو گذاشته و به شوخی التماس کرده که زیاد سر به سرش نذارن تا جیبش خالی نشه و هزینه‌های هوش مصنوعیش سر به فلک نکشه. خلاصه کار با پایگاه داده رو یه پله برده سمت راحتی و فیلتر کردن اطلاعات کیفی رو حسابی شیرین کرده."
+  ],
+  "why": "بدون درگیر شدن با کارهای پیچیده و سنگینِ وکتور سرچ، می‌تونی با زبون ساده و طبیعی روی دیتاهات فیلترهای هوشمند بزنی.",
+  "tags": [
+   "کدنویسی"
+  ]
+ },
+ "updated": "2026-10-25T12:26:36+00:00",
+ "gholam_checked": "2026-10-25T12:26:36+00:00"
+}

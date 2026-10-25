@@ -1,0 +1,56 @@
+{
+ "id": 5242,
+ "url": "https://t.me/dlmehr/5242",
+ "date": "2026-09-10T16:41:58+00:00",
+ "text": "https://fxtwitter.com/zephyr_z9/status/2097943984425545755?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+ "forwarded_from": null,
+ "digest": false,
+ "hash": "c30e0cf51ef0",
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/zephyr_z9/status/2097943984425545755?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+  "site": "FxTwitter",
+  "title": "Zephyr (@zephyr_z9)",
+  "description": "Deepseek has compressed KV cache size per token by 54x in the last 9 months",
+  "image": "https://cdn4.telesco.pe/file/A_6qd-8tYG3I0IETo3bztjWvsgtMWMq2Km-T1xotacxq9nRgjK5FtkXp1gO2DZMjEqfkAA51YDbQ3ByuiTxQReh7yyOCCSSdalFaUmYeyGxn1CnM7qLtAtOrkfMGIT0F1aa9eFIqVylmUA8cFiIl0PmahP8nbAORPzgHrH0CgEOZMzr30IY_KbEWacwPYfPsvw2_GZht0-Xx0o8lmC1LYLziwfc1Iwl32-bT-o-aELQYon7ngwM_q6ZNeXQZS3g8dooSWUPQdbP0CIJwdN_FGI9xRLXYVZH2E_GRRhtbdWC2mv3uFLvM6LZqd254QVgcILXfEhKJt71mxxc5BRuu7Q.jpg"
+ },
+ "gholam": {
+  "text": "ببین رفیق، بچه‌های دیپ‌سیک رسماً گل کاشتن و نشون دادن تو دنیای هوش مصنوعی حسابی کاردرستن. ماجرا از این قراره که این غول چینی تونسته ظرف همین ۹ ماه گذشته، حجم کشِ کِی‌وی (KV Cache) به ازای هر توکن رو ۵۴ برابر فشرده‌تر و جمع‌وجورتر کنه. واسه این‌که عمق ماجرا دستت بیاد، این کَش همون حافظه‌ایه که مدل برای یادآوری کلمات قبلی استفاده می‌کنه و قبلاً یه خروار از رَم گرافیک رو قورت می‌داد، اما حالا با یه کسری از اون حافظه کارش راه می‌افته. با این دست‌فرمون مهندسی، مدل‌ها موقع چت‌های فوق‌العاده طولانی دیگه نفس‌تنگه نمی‌گیرن و سیستم بالا نمی‌اره.\n\nچرا مهمه؟ چون حافظه گرافیک همیشه بزرگ‌ترین و گرون‌ترین گلوگاه هوش مصنوعی بوده و این ۵۴ برابر سبک‌تر شدن، هزینه اجرای مدل‌ها رو به شدت پایین میاره و راه رو واسه سیستم‌های معمولی‌تر باز می‌کنه.",
+  "date": "2026-09-10T16:42:11+00:00"
+ },
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/zephyr_z9/status/2097943984425545755",
+   "domain": "x.com",
+   "author": {
+    "name": "Zephyr",
+    "handle": "zephyr_z9",
+    "avatar": "https://pbs.twimg.com/profile_images/1837802996723597312/Jk4w7gjp_200x200.jpg"
+   },
+   "text": "Deepseek has compressed KV cache size per token by 54x in the last 9 months",
+   "date": 1789023798,
+   "media": [
+    {
+     "type": "image",
+     "src": "https://pbs.twimg.com/media/HR1k2r2bQAA3bek.png?name=orig",
+     "ratio": 0.8049
+    }
+   ],
+   "links": []
+  }
+ ],
+ "article": {
+  "title": "بچه‌های دیپ‌سیک رسماً گل کاشتن و نشون دادن تو دنیای هوش مصنوعی حسابی کاردرستن",
+  "source_title": "Deepseek has compressed KV cache size per token by 54x in the last 9 months",
+  "body": [
+   "ببین رفیق، بچه‌های دیپ‌سیک رسماً گل کاشتن و نشون دادن تو دنیای هوش مصنوعی حسابی کاردرستن. ماجرا از این قراره که این غول چینی تونسته ظرف همین ۹ ماه گذشته، حجم کشِ کِی‌وی (KV Cache) به ازای هر توکن رو ۵۴ برابر فشرده‌تر و جمع‌وجورتر کنه. واسه این‌که عمق ماجرا دستت بیاد، این کَش همون حافظه‌ایه که مدل برای یادآوری کلمات قبلی استفاده می‌کنه و قبلاً یه خروار از رَم گرافیک رو قورت می‌داد، اما حالا با یه کسری از اون حافظه کارش راه می‌افته. با این دست‌فرمون مهندسی، مدل‌ها موقع چت‌های فوق‌العاده طولانی دیگه نفس‌تنگه نمی‌گیرن و سیستم بالا نمی‌اره."
+  ],
+  "why": "چون حافظه گرافیک همیشه بزرگ‌ترین و گرون‌ترین گلوگاه هوش مصنوعی بوده و این ۵۴ برابر سبک‌تر شدن، هزینه اجرای مدل‌ها رو به شدت پایین میاره و راه رو واسه سیستم‌های معمولی‌تر باز می‌کنه.",
+  "tags": [
+   "چین"
+  ]
+ },
+ "updated": "2026-10-25T12:27:18+00:00",
+ "gholam_checked": "2026-10-25T12:27:18+00:00"
+}

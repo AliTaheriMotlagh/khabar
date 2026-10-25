@@ -1,0 +1,54 @@
+{
+ "id": 5442,
+ "url": "https://t.me/dlmehr/5442",
+ "date": "2026-09-24T01:49:32+00:00",
+ "text": "https://claude.dev/blog/how-we-made-claude-ai-faster/",
+ "forwarded_from": "Hossein Zakariaee",
+ "digest": false,
+ "hash": "60ce5763a949",
+ "media": [],
+ "preview": {
+  "url": "https://claude.dev/blog/how-we-made-claude-ai-faster",
+  "site": "claude.dev Blog",
+  "title": "How we made claude.ai 3x faster in two weeks / claude.dev Blog",
+  "description": "Inside our performance sprint: the benchmarks Claude built, the loop each Slack thread ran, and the guardrails that let us ship 3,000 changes safely.",
+  "image": "https://cdn4.telesco.pe/file/gJmTVWwP6j3fggBS9la-iDxKeKJ-DrOvB_TIpCCVKNcXdkzGEl5ZdKa9lrwuyw3Z-5WGyzuvq-e9rkJwBFqjHsgwNxKcob3XFufzcYmPTLucDB1800gIgLhKVTCm0e0pRufJfDMYJcR0N-TiEk78i9QQkVpzIAQ-MmUjW-BErdt5Y5rH-2ZzRMkfDAAXNlLCLQt-Z4Lrss_20HaAflDPp_ZIWqCVZvo_iVN2eZ0Lzd-et6CNBlch_7wpi1dx4N7ECsQ96s61MpCRx-sH6bkkTneVOygETgVQz-7-e5MCAeTlGgZ6N2CecJxRUR7FP3-H55eRTzZovD-5E-W4w8nGLQ.jpg"
+ },
+ "gholam": {
+  "text": "رفیق، بچه‌های تیم کلود گل کاشتن و تو یه اردوی فنی دو هفته‌ای، سرعت سایت و برنامه دسکتاپ claude.ai رو رسماً ۳ برابر کردن تا معطلی کاربر به صفر نزدیک بشه. ماجرا اینه که خود هوش مصنوعی کلود رو آوردن وسط میدون توی اسلک؛ اونم مو رو از ماست کشید بیرون، بنچمارک ساخت و بالای ۳ هزار تا تغییر و اصلاحیه فنی تحویل داد تا بالا اومدن صفحه از ۳.۱ ثانیه برسه به ۵۵ صدم ثانیه. مهندس‌های کاردرست فقط فرمون دستشون بود و نظارت می‌کردن، کلود هم با بهینه‌سازی رندرهای ری‌اکت و حل باگ‌های پنهان، بدون حتی یه دونه سوتی یا برگردوندن کد، کار رو به تمیزترین شکل ممکن بست. خلاصه ثابت کردن وقتی متر و معیار دست هوش مصنوعی بدی، مثل بولدوزر جلو میره و راندمان سیستم رو زیرورو می‌کنه.\n\nاهمیتش اینه که نشون داد اگه هوش مصنوعی به ابزار دقیق سنجش مجهز بشه و مهندس با مرام هدایتش کنه، می‌تونه سنگین‌ترین پروژه‌های نرم‌افزاری رو با سرعتی بهینه‌سازی کنه که عقل جن هم بهش قد نده.",
+  "date": "2026-09-24T01:49:46+00:00"
+ },
+ "links": [
+  {
+   "kind": "link",
+   "url": "https://claude.dev/blog/how-we-made-claude-ai-faster/",
+   "domain": "claude.dev",
+   "title": "How we made claude.ai 3x faster in two weeks / claude.dev Blog",
+   "description": "Inside our performance sprint: the benchmarks Claude built, the loop each Slack thread ran, and the guardrails that let us ship 3,000 changes safely.",
+   "image": "https://claude.dev/blog/how-we-made-claude-ai-faster/og.png",
+   "site": "claude.dev Blog"
+  },
+  {
+   "kind": "link",
+   "url": "https://claude.dev/blog/how-we-made-claude-ai-faster/",
+   "domain": "claude.dev",
+   "title": "How we made claude.ai 3x faster in two weeks / claude.dev Blog",
+   "description": "Inside our performance sprint: the benchmarks Claude built, the loop each Slack thread ran, and the guardrails that let us ship 3,000 changes safely.",
+   "image": "https://claude.dev/blog/how-we-made-claude-ai-faster/og.png",
+   "site": "claude.dev Blog"
+  }
+ ],
+ "article": {
+  "title": "بچه‌های تیم کلود گل کاشتن و تو یه اردوی فنی دو هفته‌ای، سرعت سایت و برنامه دسکتاپ claude.ai رو رسماً ۳ برابر کردن تا معطلی کاربر به صفر نزدیک بشه",
+  "source_title": "How we made claude.ai 3x faster in two weeks / claude.dev Blog",
+  "body": [
+   "رفیق، بچه‌های تیم کلود گل کاشتن و تو یه اردوی فنی دو هفته‌ای، سرعت سایت و برنامه دسکتاپ claude.ai رو رسماً ۳ برابر کردن تا معطلی کاربر به صفر نزدیک بشه. ماجرا اینه که خود هوش مصنوعی کلود رو آوردن وسط میدون توی اسلک؛ اونم مو رو از ماست کشید بیرون، بنچمارک ساخت و بالای ۳ هزار تا تغییر و اصلاحیه فنی تحویل داد تا بالا اومدن صفحه از ۳.۱ ثانیه برسه به ۵۵ صدم ثانیه. مهندس‌های کاردرست فقط فرمون دستشون بود و نظارت می‌کردن، کلود هم با بهینه‌سازی رندرهای ری‌اکت و حل باگ‌های پنهان، بدون حتی یه دونه سوتی یا برگردوندن کد، کار رو به تمیزترین شکل ممکن بست. خلاصه ثابت کردن وقتی متر و معیار دست هوش مصنوعی بدی، مثل بولدوزر جلو میره و راندمان سیستم رو زیرورو می‌کنه."
+  ],
+  "why": "نشون داد اگه هوش مصنوعی به ابزار دقیق سنجش مجهز بشه و مهندس با مرام هدایتش کنه، می‌تونه سنگین‌ترین پروژه‌های نرم‌افزاری رو با سرعتی بهینه‌سازی کنه که عقل جن هم بهش قد نده.",
+  "tags": [
+   "آنتروپیک"
+  ]
+ },
+ "updated": "2026-10-25T12:26:02+00:00",
+ "gholam_checked": "2026-10-25T12:26:02+00:00"
+}

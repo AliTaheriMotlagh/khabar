@@ -1,0 +1,64 @@
+{
+ "id": 5411,
+ "url": "https://t.me/dlmehr/5411",
+ "date": "2026-09-22T04:18:07+00:00",
+ "text": "https://fxtwitter.com/mirrokni/status/2102239175697207395?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+ "forwarded_from": null,
+ "digest": false,
+ "hash": "2ff5f3e54103",
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/mirrokni/status/2102239175697207395?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+  "site": "FxTwitter · arxiv.org",
+  "title": "Vahab Mirrokni (@mirrokni)",
+  "description": "I'm happy to share that we have completed a proof of the Most Informative Boolean Function conjecture (a.k.a. Courtade–Kumar conjecture) in full generality, resolving a longstanding central open problem at the intersection of information theory and Boolean…",
+  "image": "https://cdn4.telesco.pe/file/R-IE0vJVDzUc5EFWGJH97ve-_X5Ps-IFes5DWY3it2fWDACS3x30f4Xen0DC6ZGvzht832kH_kt51CRn_uJ6QXZmGKO5vD1iTRhsIen6fvWYUhW-LUK7cw7F63sxcf0WjNYGn3-Y9J-hOEOrqRGO6fTCryBTzq_xUhBzDuHGsPnf7dDPsMY4bdY3WCslXDQHQaAZCKQ2UoyqUOQcvc1QgHX2wz9lcW_oUr4RJKpEnnk680skaStMELS3qgRcSWrFP43qS0BDm3w5zXb9Tm_FIT8EWk4N61A8X_maJDLbeMseQpQ4p4T698oDj07qN0wK_r5JeD5_hod7Uvm-bdq7TQ.jpg"
+ },
+ "gholam": {
+  "text": "رفیق، وهاب میررکنی و رفقاش تو گوگل با همکاری چندتا دانشمند دیگه کارستون کردن و بالاخره حدس معروف «کورتاد-کومار» رو که سال‌ها بود مثل استخوان تو گلوی دنیای ریاضی و تئوری اطلاعات گیر کرده بود، به طور کامل اثبات کردن. نکته ناب قضیه اینجاست که این فتح بزرگ حاصل یه کار تیمی مشتی بین پژوهشگرا و مدل‌های هوش مصنوعی جمینای بوده و بخش‌های تحلیلی اثبات هم با نرم‌افزار Lean تر و تمیز تایید شده. از اون‌طرف هم هم‌زمان یه تیم پژوهشی دیگه با یه روش کاملاً متفاوت به همین جواب رسیده بودن که با معرفت تمام، دو طرف با هم هماهنگ کردن تا مقاله‌ها رو کنار هم منتشر کنن و حق زحمت هیچ‌کس نسوزه.\n\nچرا مهمه؟ این دستاورد نشون داد هم‌افزایی هوش مصنوعی و مغز نخبگان شوخی‌بردار نیست و از این به بعد می‌تونه کهنه‌ترین و سنگین‌ترین طلسم‌های علمی دنیا رو هم ضربه‌فنی کنه.",
+  "date": "2026-09-22T04:18:22+00:00"
+ },
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/mirrokni/status/2102239175697207395",
+   "domain": "x.com",
+   "author": {
+    "name": "Vahab Mirrokni",
+    "handle": "mirrokni",
+    "avatar": "https://pbs.twimg.com/profile_images/1787946019835015169/b0n19PjU_200x200.jpg"
+   },
+   "text": "I'm happy to share that we have completed a proof of the Most Informative Boolean Function conjecture (a.k.a. Courtade–Kumar conjecture) in full generality, resolving a longstanding central open problem at the intersection of information theory and Boolean function analysis (https://arxiv.org/abs/2609.24931). We have also successfully verified analytic parts of the proof in Lean.\n\nThis result emerged from an extensive human–AI collaboration with input from multiple AI models developed through a close partnership between our group at Google with Amin, Chandra, and Zijie at CHUK; See section 4 for details on our human-AI collaboration.\n\nThe Courtade–Kumar conjecture was among the problems we set out to tackle in our AI-acceleration paper (arXiv:2602.03837). In this effort, we made substantial use of the Stellar Colosseum harness (arXiv:2609.15983) and a range of external and internal Gemini models.\n\nBackground and Significance of CK Conjecture:\n\n- Posed by Thomas Courtade and P. R. Kumar (\"Which Boolean Functions Maximize Mutual Information on Noisy Inputs?\"), the conjecture posits that for a uniform input X in {-1, 1}^n passed through BSC(p) to produce Y, the mutual information I(f(X); Y) for any Boolean function f is maximized by coordinate projections f(x) = x_i, attaining the sharp upper bound 1 - h(p).\n\n- The conjecture belongs to a broader family of extremal problems that have attracted sustained attention. It has helped motivate parallel lines of work in information theory, theoretical computer science, Boolean function analysis, and discrete isoperimetry.\n\n- Kindler, O’Donnell, and Witmer document the considerable interest it has generated, and Yu and Tan’s 2022 monograph describes it as “one of the most important open problems in information theory” [28, Section 9.1.2].\n\n- At a structural level, the conjecture is connected to foundational isoperimetric and functional inequalities, including Talagrand’s isoperimetric inequality and Bobkov’s inequality, as well as related conjectures on their optimal forms. In some regimes, it also recovers Harper's classical edge-isoperimetric inequality on the discrete cube.\n\nLast week, we learned that Ky and Tran had independently obtained a very different proof of the conjecture. We coordinated with them to release the two works separately citing the other. The two approaches offer substantially different approaches (https://arxiv.org/abs/2609.24184). Congratulations to Ky and Tran  as well on this great achievement.\n\nStellar Colosseum is available externally as the long proof pattern of /teamwork in AntiGravity (https://antigravity.google/blog/teamwork-when-ai-becomes-a-research-partner). We plan to move the math x human collaboration features to AntiGravity and I am excited to provide this as a math collaboration platfom externally.\n\nThanks for my wonderful coauthors Zijie Chen, Amin Gohari, @AdelJavanmard, Honghao Lin, Chandra Nair David Woodruff\n\nLink to paper: https://arxiv.org/abs/2609.24931",
+   "date": 1790047851,
+   "media": [],
+   "links": [
+    "https://arxiv.org/abs/2609.24931",
+    "https://arxiv.org/abs/2609.24184",
+    "https://antigravity.google/blog/teamwork-when-ai-becomes-a-research-partner",
+    "https://arxiv.org/abs/2609.24931"
+   ]
+  },
+  {
+   "kind": "link",
+   "url": "https://arxiv.org/abs/2609.24931",
+   "domain": "arxiv.org",
+   "title": "A Proof of the Most Informative Boolean Function Conjecture",
+   "description": "Let $X$ be uniform on $\\{-1,1\\}^n$, let $Y$ be obtained by passing its coordinates independently through a binary symmetric channel with crossover probability $p$, and let $g:\\{-1,1\\}^n\\to\\{0,1\\}$ be a Boolean function. We give a computer-assisted proof of the Courtade--Kumar conjecture $I(g(X);Y)\\le1-H_2(p)$, where $H_2$ is binary entropy, with equality attained by dictator functions. The present",
+   "image": "https://arxiv.org/static/browse/0.3.4/images/arxiv-logo-fb.png",
+   "site": "arXiv.org"
+  }
+ ],
+ "article": {
+  "title": "وهاب میررکنی و رفقاش تو گوگل با همکاری چندتا دانشمند دیگه کارستون کردن و بالاخره حدس معروف «کورتاد-کومار» رو که سال‌ها بود مثل استخوان تو گلوی دنیای ریاضی و تئوری اطلاعات گیر کرده بود، به طور کامل اثبات کردن",
+  "source_title": "I'm happy to share that we have completed a proof of the Most Informative Boolean Function conjecture (a.k.a. Courtade–Kumar conjecture) in…",
+  "body": [
+   "رفیق، وهاب میررکنی و رفقاش تو گوگل با همکاری چندتا دانشمند دیگه کارستون کردن و بالاخره حدس معروف «کورتاد-کومار» رو که سال‌ها بود مثل استخوان تو گلوی دنیای ریاضی و تئوری اطلاعات گیر کرده بود، به طور کامل اثبات کردن. نکته ناب قضیه اینجاست که این فتح بزرگ حاصل یه کار تیمی مشتی بین پژوهشگرا و مدل‌های هوش مصنوعی جمینای بوده و بخش‌های تحلیلی اثبات هم با نرم‌افزار Lean تر و تمیز تایید شده. از اون‌طرف هم هم‌زمان یه تیم پژوهشی دیگه با یه روش کاملاً متفاوت به همین جواب رسیده بودن که با معرفت تمام، دو طرف با هم هماهنگ کردن تا مقاله‌ها رو کنار هم منتشر کنن و حق زحمت هیچ‌کس نسوزه."
+  ],
+  "why": "این دستاورد نشون داد هم‌افزایی هوش مصنوعی و مغز نخبگان شوخی‌بردار نیست و از این به بعد می‌تونه کهنه‌ترین و سنگین‌ترین طلسم‌های علمی دنیا رو هم ضربه‌فنی کنه.",
+  "tags": [
+   "گوگل"
+  ]
+ },
+ "updated": "2026-10-25T12:26:14+00:00",
+ "gholam_checked": "2026-10-25T12:26:14+00:00"
+}

@@ -1,0 +1,61 @@
+{
+ "id": 5735,
+ "url": "https://t.me/dlmehr/5735",
+ "date": "2026-10-08T01:33:52+00:00",
+ "text": "https://fxtwitter.com/0xdoug/status/2107994110644588859?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+ "forwarded_from": null,
+ "digest": false,
+ "hash": "e2288df6cb0e",
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/0xdoug/status/2107994110644588859?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+  "site": "🧵 Thread • FxTwitter",
+  "title": "Doug Colkitt (@0xdoug)",
+  "description": "We are publishing an update to OpenAI problem #109 (integer multiplication) with further tightening.\nκ = 2⁻³⁴ (tightened from κ = 2⁻¹⁸²)\nThe exact witness is 8.3 × 10⁻¹¹, a roughly 48 million fold improvement over the previous result and a 2¹⁴⁸ fold improvement…",
+  "image": "https://cdn4.telesco.pe/file/sSNwwS-pakvmxHh_wIAsZd6G51cXHn5AH56kN-LGTV_8vrBnDDqStHJbak7SHawBrzKzXI5crTov3kdtURiUXQ08bk_8mp42TwooRAQuZtzUbnM29IN8Pm7nLsCFIN1FzGY4vbkcVj5ZXIPauMHnaDQHHH09qz7jQ_R-YXvrpgI84sFq1PCk1UpDbS8AQWjcg_nx_YELw4o9cY3M3uD4xycAxOS6wyB4Th50EYs5tSCVHqMl-KxTcWVW_BsLbJ1uKwS-FIcWbV3UyjrnYE-uxfj20l4uOJVGVs_PYWwo_AgUQUJfP-am6fhQvRlIyWoXLNdnubgxiUNZO2dm0LGmzQ.jpg"
+ },
+ "gholam": {
+  "text": "رفیق، داگ کالکیت یه رکوردشکنی تر و تمیز روی مسئله شماره ۱۰۹ اوپن‌ای‌آی که مربوط به ضرب اعداد صحیحه رو کرده و حسابی تو جامعه علمی گردوخاک راه انداخته. ماجرا از این قراره که این تیم با جابه‌جا کردن بیت‌های کنترلیِ فشرده به‌جای لایه‌های بزرگ، تونستن اون گلوگاه محاسباتی رو دور بزنن و متغیر کاپا رو از ۲ به توان منفی ۱۸۲ برسونن به ۲ به توان منفی ۳۴. با این حساب، خروجی نهایی‌شون حدود ۴۸ میلیون برابر از نتیجه قبلی خودشون و ۲ به توان ۱۴۸ برابر نسبت به رکورد اولیه خود اوپن‌ای‌آی بهینه‌تر و دقیق‌تر شده که یه جهش واقعاً غول‌آسا به حساب میاد.\n\nاهمیتش اینه که این سبک بهینه‌سازی‌ها راه رو برای سبک‌تر شدن محاسبات سنگین ریاضی باز می‌کنه و سرعت پردازش‌های زیرساختی هوش مصنوعی رو چند پله می‌بره بالا.",
+  "date": "2026-10-08T01:34:23+00:00"
+ },
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/0xdoug/status/2107994110644588859",
+   "domain": "x.com",
+   "author": {
+    "name": "Doug Colkitt",
+    "handle": "0xdoug",
+    "avatar": "https://pbs.twimg.com/profile_images/1764384019410542592/63LTiG5D_200x200.jpg"
+   },
+   "text": "We are publishing an update to OpenAI problem #109 (integer multiplication) with further tightening. \n\nκ = 2⁻³⁴  (tightened from κ = 2⁻¹⁸²)\n\nThe exact witness is 8.3 × 10⁻¹¹, a roughly 48 million fold improvement over the previous result and a 2¹⁴⁸ fold improvement over original OAI result.\n\nThe improvement came from removing the spacing penalty behind the quadratic bottleneck. This was done by moving compact control bits instead of entire windows.",
+   "date": 1791419935,
+   "media": [],
+   "links": [],
+   "quote": {
+    "author": {
+     "name": "Doug Colkitt",
+     "handle": "0xdoug",
+     "avatar": "https://pbs.twimg.com/profile_images/1764384019410542592/63LTiG5D_200x200.jpg"
+    },
+    "text": "We are publishing an update to OpenAI problem #109 Integer multiplication) with another substantial further tightening:\n\nκ = 2⁻⁵⁹   (from OpenAI’s original κ = 2⁻¹⁸²)\n\nApproximately 500 thousand fold improvement over our previous result and a 2¹²³ fold improvement over the original OAI result.\n\nThe latest redesigned the finite network to share intermediate computations and scratch space, then tightened the recursion and Gaussian estimates.",
+    "date": 1791401715,
+    "media": [],
+    "links": []
+   }
+  }
+ ],
+ "article": {
+  "title": "داگ کالکیت یه رکوردشکنی تر و تمیز روی مسئله شماره ۱۰۹ اوپن‌ای‌آی که مربوط به ضرب اعداد صحیحه رو کرده و حسابی تو جامعه علمی گردوخاک راه انداخته",
+  "source_title": "We are publishing an update to OpenAI problem #109 (integer multiplication) with further tightening.",
+  "body": [
+   "رفیق، داگ کالکیت یه رکوردشکنی تر و تمیز روی مسئله شماره ۱۰۹ اوپن‌ای‌آی که مربوط به ضرب اعداد صحیحه رو کرده و حسابی تو جامعه علمی گردوخاک راه انداخته. ماجرا از این قراره که این تیم با جابه‌جا کردن بیت‌های کنترلیِ فشرده به‌جای لایه‌های بزرگ، تونستن اون گلوگاه محاسباتی رو دور بزنن و متغیر کاپا رو از ۲ به توان منفی ۱۸۲ برسونن به ۲ به توان منفی ۳۴. با این حساب، خروجی نهایی‌شون حدود ۴۸ میلیون برابر از نتیجه قبلی خودشون و ۲ به توان ۱۴۸ برابر نسبت به رکورد اولیه خود اوپن‌ای‌آی بهینه‌تر و دقیق‌تر شده که یه جهش واقعاً غول‌آسا به حساب میاد."
+  ],
+  "why": "این سبک بهینه‌سازی‌ها راه رو برای سبک‌تر شدن محاسبات سنگین ریاضی باز می‌کنه و سرعت پردازش‌های زیرساختی هوش مصنوعی رو چند پله می‌بره بالا.",
+  "tags": [
+   "اوپن‌ای‌آی"
+  ]
+ },
+ "updated": "2026-10-25T12:24:17+00:00",
+ "gholam_checked": "2026-10-25T12:24:17+00:00"
+}

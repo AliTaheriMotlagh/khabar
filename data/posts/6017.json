@@ -2,16 +2,23 @@
  "id": 6017,
  "url": "https://t.me/dlmehr/6017",
  "date": "2026-10-21T14:11:23+00:00",
- "edited": true,
- "views": "153",
  "text": "https://fxtwitter.com/openai/status/2112907856018309586?s=52&t=F41Qa04r48Mef_j_XjBneQ",
  "forwarded_from": null,
  "digest": false,
  "hash": "676760ac8962",
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/openai/status/2112907856018309586?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+  "site": "FxTwitter · openai.com",
+  "title": "OpenAI (@OpenAI)",
+  "description": "OpenAI models helped researchers—operating as part of our Patch the Planet initiative—discover critical security flaws in PHP, an open-source programming language used to run an estimated 70% of websites.\nOver the past two months, we led a coalition of maintainers…",
+  "image": "https://cdn4.telesco.pe/file/eijJad7hQqrR1uI44bZMK4XanStlesJNYtdOCGh14NmMwu2KhBJrweM0dGrFybPYL29Oq81woJ7sx3HMJ4GwvcFosmkyaAq4nqTjiWRKaVwU6OKFIQ0HmLFDhQSAb2nBqWBY_8O0iNuUt0_p1VkT6VPnZmhrUsR4da-g4xTD6leQCZm3KVGBNJ26f9JOAPq6iS0_5vxlz0ja6IF5vphmQAjC4dtvul-a4LN_dBkgRzjEH65CB2N7ZJbeDiEOT2ykseEHJI664EJVMDbFojrts2XTBKIoca98ICbnBiy_gunyrUk86VZy3nzxDyxWTf0Llvj2BS2CHzdQ439-eErkKg.jpg"
+ },
  "gholam": {
   "text": "ببین رفیق، بچه‌های OpenAI با مدل‌های هوش مصنوعیشون حسابی گل کاشتن و توی زبان برنامه‌نویسی PHP که ستون فقرات نزدیک به ۷۰ درصد سایت‌های اینترنته، چندتا حفره امنیتی فوق‌العاده خطرناک کشف کردن. این قضیه اون‌قدر سنگین بوده که خودشون میگن یکی از اثرگذارترین و حساس‌ترین آسیب‌پذیری‌های سال‌های اخیر به حساب میاد. قصه از این قراره که این شرکت توی دو ماه گذشته بی‌سر و صدا با تیم اصلی توسعه‌دهنده‌های PHP و کلی متخصص امنیتی دست‌به‌یکی کرد تا قبل از لو رفتن ماجرا، موتور اصلی پی‌اچ‌پی رو دستکاری کنن و وصله امنیتی براش بدن بیرون تا مدیرای سایت‌ها بتونن سیستم‌هاشونو آپدیت و امن کنن. دمشون گرم که نذاشتن پای هکرها و افراد بدطینت به این قضیه باز بشه و قبل از سوءاستفاده، سپر دفاعی رو بالا بردن.\n\nاهمیتش اینه که ثابت کرد هوش مصنوعی وارد فاز تاریخی جدیدی شده و می‌تونه باگ‌های امنیتی عظیم در مقیاس کل اینترنت رو قبل از اینکه دست خرابکارها بهش برسه، به نفع امنیت کاربرا شکار کنه.",
   "date": "2026-10-21T14:11:43+00:00"
  },
+ "gholam_checked": "2026-10-24T23:03:11+00:00",
  "links": [
   {
    "kind": "tweet",
@@ -37,18 +44,6 @@
    ]
   }
  ],
- "media": [],
- "preview": {
-  "url": "https://fxtwitter.com/openai/status/2112907856018309586?s=52&t=F41Qa04r48Mef_j_XjBneQ",
-  "site": "FxTwitter · openai.com",
-  "title": "OpenAI (@OpenAI)",
-  "description": "OpenAI models helped researchers—operating as part of our Patch the Planet initiative—discover critical security flaws in PHP, an open-source programming language used to run an estimated 70% of websites.\nOver the past two months, we led a coalition of maintainers…",
-  "image": {
-   "src": "media/6017/preview.webp",
-   "width": 200,
-   "height": 200
-  }
- },
  "article": {
   "title": "بچه‌های OpenAI با مدل‌های هوش مصنوعیشون حسابی گل کاشتن و توی زبان برنامه‌نویسی PHP که ستون فقرات نزدیک به ۷۰ درصد سایت‌های اینترنته، چندتا حفره امنیتی فوق‌العاده خطرناک کشف کردن",
   "source_title": "OpenAI models helped researchers—operating as part of our Patch the Planet initiative—discover critical security flaws in PHP, an…",
@@ -61,6 +56,5 @@
    "اوپن‌ای‌آی"
   ]
  },
- "updated": "2026-10-24T23:03:11+00:00",
- "gholam_checked": "2026-10-24T23:03:11+00:00"
+ "updated": "2026-10-25T11:53:53+00:00"
 }

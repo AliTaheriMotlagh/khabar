@@ -1,0 +1,61 @@
+{
+ "id": 4672,
+ "url": "https://t.me/dlmehr/4672",
+ "date": "2026-08-10T15:43:17+00:00",
+ "text": "https://fxtwitter.com/i/status/2086524915574804787",
+ "forwarded_from": "Parsa Razavi",
+ "digest": false,
+ "hash": "c6045c96aa8d",
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/i/status/2086524915574804787",
+  "site": "FxTwitter",
+  "title": "SynapseX (@TheSynapseX)",
+  "description": "🚨\nMeta built an AI that can watch a video and predict how the human cortex would respond.\nTRIBE v2 is a new multimodal foundation model that takes video, audio, or language and predicts high-resolution fMRI activity across the cortical surface. It was developed…",
+  "image": null
+ },
+ "gholam": {
+  "text": "رفیق، بچه‌های متا اومدن یه مدل هوش مصنوعی خفن به اسم TRIBE v2 ساختن که می‌تونه ویدیو، صدا یا متن رو بگیره و دقیقاً پیش‌بینی کنه مغز انسان چه واکنشی بهشون نشون میده. این سیستم با تحلیل بیش از ۱۱۰۰ ساعت داده اسکن fMRI از ۷۲۰ نفر یاد گرفته که بدون اسکن مجدد، عکس‌العمل مغز رو شبیه‌سازی کنه و خوشبختانه کدها و مدلش رو هم رایگان دادن بیرون. البته حواست باشه، این ابزار اصلاً ذهن‌خوانی نمی‌کنه و فقط واکنش عمومی مغز رو تخمین می‌زنه، ضمن اینکه مقاله‌ش هم هنوز توی مرحله پیش‌نویسه و داوری علمی نهایی نشده.\n\nاهمیتش اینه که علوم اعصاب داره وارد دوره‌ای میشه که دانشمندا می‌تونن قبل آزمایش‌های واقعی و گرون رو آدما، واکنش مغز رو توی کامپیوتر شبیه‌سازی کنن.",
+  "date": "2026-08-10T15:43:34+00:00"
+ },
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/TheSynapseX/status/2086524915574804787",
+   "domain": "x.com",
+   "author": {
+    "name": "SynapseX",
+    "handle": "TheSynapseX",
+    "avatar": "https://pbs.twimg.com/profile_images/2056826748193460224/d1vRWEHM_200x200.jpg"
+   },
+   "text": "🚨 Meta built an AI that can watch a video and predict how the human cortex would respond.\n\nTRIBE v2 is a new multimodal foundation model that takes video, audio, or language and predicts high-resolution fMRI activity across the cortical surface. It was developed using a large collection totaling more than 1,100 hours of fMRI data across 720 people.\n\nThe model combines representations from pretrained video, audio, and language models, then maps them onto brain activity. It generalizes zero-shot to previously unseen stimuli, tasks, and subjects, and significantly outperformed an optimized linear encoding baseline across the evaluated datasets.\n\nEven more interesting, researchers used TRIBE v2 to recreate classic neuroscience experiments entirely in silico. Its predictions recovered known cortical responses associated with faces, places, bodies, written words, speech, and language processing.\n\nThe public release includes the model weights, code, and an interactive demo. You can give the model media such as a video and generate predicted brain-response maps without collecting a new fMRI scan for that stimulus.\n\nThe bigger shift: neuroscience is moving toward foundation models that can simulate how the human brain is expected to respond before an experiment is ever run.\n\nCaveat: this is an encoding model predicting population-level fMRI responses, not a system that reads thoughts or perfectly predicts an individual person's brain. The work is currently an arXiv preprint rather than a peer-reviewed journal article.\n\nReference: https://ai.meta.com/blog/tribe-v2-brain-predictive-foundation-model/",
+   "date": 1786301280,
+   "media": [
+    {
+     "type": "video",
+     "src": "https://video.twimg.com/amplify_video/2086516978261299200/vid/avc1/1280x720/rWwcWUngJWOGppyo.mp4?tag=29",
+     "poster": "https://pbs.twimg.com/amplify_video_thumb/2086516978261299200/img/6wdoa4sT_tHcirRs.jpg",
+     "ratio": 0.5625,
+     "duration": 29.048,
+     "gif": false
+    }
+   ],
+   "links": [
+    "https://ai.meta.com/blog/tribe-v2-brain-predictive-foundation-model/"
+   ]
+  }
+ ],
+ "article": {
+  "title": "بچه‌های متا اومدن یه مدل هوش مصنوعی خفن به اسم TRIBE v2 ساختن که می‌تونه ویدیو، صدا یا متن رو بگیره و دقیقاً پیش‌بینی کنه مغز انسان چه واکنشی بهشون نشون میده",
+  "source_title": "🚨 Meta built an AI that can watch a video and predict how the human cortex would respond.",
+  "body": [
+   "رفیق، بچه‌های متا اومدن یه مدل هوش مصنوعی خفن به اسم TRIBE v2 ساختن که می‌تونه ویدیو، صدا یا متن رو بگیره و دقیقاً پیش‌بینی کنه مغز انسان چه واکنشی بهشون نشون میده. این سیستم با تحلیل بیش از ۱۱۰۰ ساعت داده اسکن fMRI از ۷۲۰ نفر یاد گرفته که بدون اسکن مجدد، عکس‌العمل مغز رو شبیه‌سازی کنه و خوشبختانه کدها و مدلش رو هم رایگان دادن بیرون. البته حواست باشه، این ابزار اصلاً ذهن‌خوانی نمی‌کنه و فقط واکنش عمومی مغز رو تخمین می‌زنه، ضمن اینکه مقاله‌ش هم هنوز توی مرحله پیش‌نویسه و داوری علمی نهایی نشده."
+  ],
+  "why": "علوم اعصاب داره وارد دوره‌ای میشه که دانشمندا می‌تونن قبل آزمایش‌های واقعی و گرون رو آدما، واکنش مغز رو توی کامپیوتر شبیه‌سازی کنن.",
+  "tags": [
+   "متا"
+  ]
+ },
+ "updated": "2026-10-25T12:30:36+00:00",
+ "gholam_checked": "2026-10-25T12:30:36+00:00"
+}

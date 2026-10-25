@@ -1,0 +1,79 @@
+{
+ "id": 4993,
+ "url": "https://t.me/dlmehr/4993",
+ "date": "2026-08-27T20:03:15+00:00",
+ "text": "https://fxtwitter.com/rohanpaul_ai/status/2093064270028431640?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+ "forwarded_from": null,
+ "digest": false,
+ "hash": "920c2ce920ec",
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/rohanpaul_ai/status/2093064270028431640?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+  "site": "FxTwitter",
+  "title": "Rohan Paul (@rohanpaul_ai)",
+  "description": "Anthropic is testing a new approach for Claude to control robots and lab equipment.\nIts new Model Hardware Standard (MHS) will let AI agents control lab and factory hardware through 1 shared interface.\nMHS is the missing interface between AI agents and…",
+  "image": "https://cdn4.telesco.pe/file/nSEqBuBufu0n4A80-IM1jg97I-iCPGLxZ5LGO-oRUZConY_OKyTws8DXNIt22z82zc0o65m2iwDB2MnO5hM--Fxf_9lYjnpT89f5_01do17kEPcr6Wl_XuczHnjc4NBdrw3fcX0_ZAFBlQbchw_Bh3IwfgbMoDWEqMq-9Ujo4BkPqoy0TkQbOxQHb8Zi8yvC77KjNrB9AMaCwEuMYBydgDMfq2pQQgdberPIf1BjFfHAu3FPewOSM2jab_OCKSl2lebWbjOiu4_Bjl0lY_uxRLHxuaViqvL_9JypWwQ7mgeyPrWw8eTBrACSu11GVXe70Ba_Aw-UrOm4L2k4yDtr7Q.jpg"
+ },
+ "gholam": {
+  "text": "Could not summarize that message: 503 UNAVAILABLE. {&#x27;error&#x27;: {&#x27;code&#x27;: 503, &#x27;message&#x27;: &#x27;This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.&#x27;, &#x27;status&#x27;: &#x27;UNAVAILABLE&#x27;}}",
+  "date": "2026-08-27T20:03:23+00:00"
+ },
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/rohanpaul_ai/status/2093064270028431640",
+   "domain": "x.com",
+   "author": {
+    "name": "Rohan Paul",
+    "handle": "rohanpaul_ai",
+    "avatar": "https://pbs.twimg.com/profile_images/1816185267037859840/Fd18CH0v_200x200.jpg"
+   },
+   "text": "Anthropic is testing a new approach for Claude to control robots and lab equipment.\n\nIts new Model Hardware Standard (MHS) will let AI agents control lab and factory hardware through 1 shared interface.\n\nMHS is the missing interface between AI agents and physical equipment, using common drivers for commands, device properties, and safety limits.\n\nMost instruments expose separate programming interfaces, so connecting a lab or factory can take weeks or months.\n\nMHS standardizes that work around drivers exposing simple read/write commands plus reference files describing device capabilities, physical properties, and enforced safety limits.\n\nAgents can access those drivers through MCP, command-line tools, or code, then sequence work across devices and adjust settings from live results.\n\nAnthropic says early projects cut integration work to hours or minutes.",
+   "date": 1787860383,
+   "media": [
+    {
+     "type": "image",
+     "src": "https://pbs.twimg.com/media/HQwM6WRb0AAsmX8.jpg?name=orig",
+     "ratio": 0.7937
+    }
+   ],
+   "links": [],
+   "quote": {
+    "author": {
+     "name": "Anthropic",
+     "handle": "AnthropicAI",
+     "avatar": "https://pbs.twimg.com/profile_images/1798110641414443008/XP8gyBaY_200x200.jpg"
+    },
+    "text": "Today, we're kicking off the first phase of the research preview for Model Hardware Standard (MHS): a new standard for AI agents to safely operate physical equipment in scientific research and advanced manufacturing. \n\nRead more: https://www.anthropic.com/news/model-hardware-standard-research-preview",
+    "date": 1787854222,
+    "media": [
+     {
+      "type": "video",
+      "src": "https://video.twimg.com/amplify_video/2093037958257610752/vid/avc1/1048x720/nmIY3K8jo3UP3gE1.mp4?tag=29",
+      "poster": "https://pbs.twimg.com/media/HQwLzwAbkAEQf1S.jpg",
+      "ratio": 0.75,
+      "duration": 132.522,
+      "gif": false
+     }
+    ],
+    "links": [
+     "https://www.anthropic.com/news/model-hardware-standard-research-preview"
+    ]
+   }
+  }
+ ],
+ "article": {
+  "title": "Could not summarize that message: 503 UNAVAILABLE",
+  "source_title": "Anthropic is testing a new approach for Claude to control robots and lab equipment.",
+  "body": [
+   "Could not summarize that message: 503 UNAVAILABLE. {&#x27;error&#x27;: {&#x27;code&#x27;: 503, &#x27;message&#x27;: &#x27;This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.&#x27;, &#x27;status&#x27;: &#x27;UNAVAILABLE&#x27;}}"
+  ],
+  "why": null,
+  "tags": [
+   "آنتروپیک",
+   "رباتیک"
+  ]
+ },
+ "updated": "2026-10-25T12:28:48+00:00",
+ "gholam_checked": "2026-10-25T12:28:48+00:00"
+}

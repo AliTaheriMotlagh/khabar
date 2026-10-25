@@ -1,0 +1,86 @@
+{
+ "id": 5984,
+ "url": "https://t.me/dlmehr/5984",
+ "date": "2026-10-20T02:14:38+00:00",
+ "text": "https://fxtwitter.com/edzitron/status/2112336168784134484?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+ "forwarded_from": null,
+ "digest": false,
+ "hash": "5734b67fbdd7",
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/edzitron/status/2112336168784134484?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+  "site": "🧵 Thread • FxTwitter",
+  "title": "Ed Zitron (@edzitron)",
+  "description": "Business Insider confirms it: Amazon has warehouses of GPUs that can’t be installed, and is buying them so far in advance that a supply chain team said they “didn’t have a clear forecasted path” to installing them.\nhttps://www.businessinsider.com/amazon…",
+  "image": "https://cdn4.telesco.pe/file/SKkaCi_yJ3plLRbHoCVfqIK9-PiH6JFtTD3YYMDQ3oV1SOqGGFBnabCm4YD-DkqarP9f64AqTCKXO4DWfvdDd4qoJ8iQFYFw3Jcv5g1HLWmrnQFtX3dzaXt-cbiEyfehvr_6wkSyH0MCD8NxEz3rcOO2OVIy1Ok_FOgH3uv6CKxyZneV_vg8gqSWD-4cpAyH0VUYyigJdiGYqasb16AsUcK-q0z_H5rnSF9U-U_bicyMJ7METUBRq2EAjv43lYpaToonT7zEiSGHZ2wVkAtT3AewLFaOpgltUUaiikh8xE1XXL5R2J2whc58H7kX0A5PlFlFvM3UJdEk3cq0CRmXmQ.jpg"
+ },
+ "gholam": {
+  "text": "ببین رفیق، رسانه‌ها دست آمازون رو رو کردن و معلوم شده این غول تکنولوژی انبارهاش پر از پردازنده‌های گرافیکی هوش مصنوعیه که رو دستش باد کرده و فعلاً جایی واسه نصب کردنشون نداره. قضیه از این قراره که این شرکت‌ها از ترس عقب موندن از قافله، سال‌ها جلوتر از نیازشون از انویدیا پیش‌خرید کردن، اما ساخت و تجهیز دیتاسنتر این‌قدر دنگ‌وفنگ داره و طول می‌کشه که حتی تیم تدارکات خود آمازون هم گفته هیچ برنامه روشنی واسه راه انداختن این قطعات نداره. کارشناس‌ها هم برآورد کردن که حدود ۵۰ درصد کل تراشه‌های هوش مصنوعی فروخته‌شده، یعنی رقمی بین ۲۰۰ تا ۳۰۰ میلیارد دلار، الان به جای کار کردن دارن گوشه انبارها خاک می‌خورن.\n\nاهمیتش اینه که نشون میده تب داغ هوش مصنوعی یه حباب خرید وحشتناک ساخته و سرعت ولخرجی شرکت‌ها خیلی بیشتر از توان واقعی زیرساخت‌هاشونه که اگه زودتر جمع نشه، حسابی براشون گرون تموم میشه.",
+  "date": "2026-10-20T02:14:59+00:00"
+ },
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/edzitron/status/2112336168784134484",
+   "domain": "x.com",
+   "author": {
+    "name": "Ed Zitron",
+    "handle": "edzitron",
+    "avatar": "https://pbs.twimg.com/profile_images/2070326703281553408/ILxQjQF7_200x200.jpg"
+   },
+   "text": "Business Insider confirms it: Amazon has warehouses of GPUs that can’t be installed, and is buying them so far in advance that a supply chain team said they “didn’t have a clear forecasted path” to installing them. \nhttps://www.businessinsider.com/amazon-220-billion-ai-bet-data-centers-spending-challenges-2026-10",
+   "date": 1792455162,
+   "media": [
+    {
+     "type": "image",
+     "src": "https://pbs.twimg.com/media/HVCGilbWIAARw1Z.jpg?name=orig",
+     "ratio": 1.0603
+    },
+    {
+     "type": "image",
+     "src": "https://pbs.twimg.com/media/HVCGilfWcAEfXhP.jpg?name=orig",
+     "ratio": 0.7
+    }
+   ],
+   "links": [
+    "https://www.businessinsider.com/amazon-220-billion-ai-bet-data-centers-spending-challenges-2026-10"
+   ],
+   "quote": {
+    "author": {
+     "name": "Ed Zitron",
+     "handle": "edzitron",
+     "avatar": "https://pbs.twimg.com/profile_images/2070326703281553408/ILxQjQF7_200x200.jpg"
+    },
+    "text": "Free newsletter: I estimate that ~50% of AI chip sales - $200bn to $300bn+ - are sitting in warehouses, with NVIDIA selling hundreds of billions of GPUs years in advance. Data centers take way longer to build than hyperscalers are leading us to believe.\nhttps://www.wheresyoured.at/wherere-all-the-ai-chips/",
+    "date": 1790092158,
+    "media": [],
+    "links": [
+     "https://www.wheresyoured.at/wherere-all-the-ai-chips/"
+    ]
+   }
+  },
+  {
+   "kind": "link",
+   "url": "https://www.businessinsider.com/amazon-220-billion-ai-bet-data-centers-spending-challenges-2026-10",
+   "domain": "businessinsider.com",
+   "title": "AWS's CFO joked about the financial toll of AI. An internal recording reveals why.",
+   "description": "Amazon's $220 billion AI buildout is draining cash as power shortages, costly Nvidia servers, and construction challenges pile up.",
+   "image": "https://i.insider.com/6ad6b86be50b02f612be50f0?width=1200&format=jpeg",
+   "site": "Business Insider"
+  }
+ ],
+ "article": {
+  "title": "رسانه‌ها دست آمازون رو رو کردن و معلوم شده این غول تکنولوژی انبارهاش پر از پردازنده‌های گرافیکی هوش مصنوعیه که رو دستش باد کرده و فعلاً جایی واسه نصب کردنشون نداره",
+  "source_title": "Business Insider confirms it: Amazon has warehouses of GPUs that can’t be installed, and is buying them so far in advance that a supply…",
+  "body": [
+   "ببین رفیق، رسانه‌ها دست آمازون رو رو کردن و معلوم شده این غول تکنولوژی انبارهاش پر از پردازنده‌های گرافیکی هوش مصنوعیه که رو دستش باد کرده و فعلاً جایی واسه نصب کردنشون نداره. قضیه از این قراره که این شرکت‌ها از ترس عقب موندن از قافله، سال‌ها جلوتر از نیازشون از انویدیا پیش‌خرید کردن، اما ساخت و تجهیز دیتاسنتر این‌قدر دنگ‌وفنگ داره و طول می‌کشه که حتی تیم تدارکات خود آمازون هم گفته هیچ برنامه روشنی واسه راه انداختن این قطعات نداره. کارشناس‌ها هم برآورد کردن که حدود ۵۰ درصد کل تراشه‌های هوش مصنوعی فروخته‌شده، یعنی رقمی بین ۲۰۰ تا ۳۰۰ میلیارد دلار، الان به جای کار کردن دارن گوشه انبارها خاک می‌خورن."
+  ],
+  "why": "نشون میده تب داغ هوش مصنوعی یه حباب خرید وحشتناک ساخته و سرعت ولخرجی شرکت‌ها خیلی بیشتر از توان واقعی زیرساخت‌هاشونه که اگه زودتر جمع نشه، حسابی براشون گرون تموم میشه.",
+  "tags": [
+   "آمازون",
+   "تراشه"
+  ]
+ },
+ "updated": "2026-10-25T12:23:28+00:00",
+ "gholam_checked": "2026-10-25T12:23:28+00:00"
+}

@@ -1,0 +1,71 @@
+{
+ "id": 5839,
+ "url": "https://t.me/dlmehr/5839",
+ "date": "2026-10-12T17:23:15+00:00",
+ "text": "https://fxtwitter.com/tingtingliao000/status/2109616784928358657?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+ "forwarded_from": null,
+ "digest": false,
+ "hash": "6525878a2a16",
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/tingtingliao000/status/2109616784928358657?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+  "site": "FxTwitter",
+  "title": "Tingting Liao (@tingtingliao000)",
+  "description": "Streaming Code World Model\n🌊\nWe made Code World Model causal: video is generated chunk by chunk from a live proxy. A 4-step distilled model renders each chunk in ~5 s on one H200.\nCode + checkpoints are open\n👇\n💻\nhttps://github.com/TingtingLiao/streaming…",
+  "image": null
+ },
+ "gholam": {
+  "text": "ببین رفیق، تینگ‌تینگ لیائو و تیمش یه کار تر و تمیز دادن بیرون و مدل ویدیویی Code World Model رو به حالت استریم و زنده درآوردن تا ویدیوها رو تیکه‌به‌تیکه جنریت کنه. سیستمش طوریه که با یه مدل تقطیرشده‌ی چهار مرحله‌ای، هر بخش از ویدیو رو ظرف تقریباً ۵ ثانیه روی یه دونه کارت گرافیک خفن H200 رندر می‌کنه و تحویل میده. از اون قشنگ‌تر اینه که مرام گذاشتن و تمام کدها و چک‌پوینت‌هاش رو به شکل کاملاً باز روی گیت‌هاب و هاگینگ‌فیس عمومی کردن تا هر کسی بتونه بره سراغش.\n\nاهمیتش اینه که تولید بلادرنگ و استریم ویدیو با هوش مصنوعی رو چند گام به واقعیت نزدیک‌تر کرده و با اپن‌سورس بودنش دست بقیه دولوپرها رو حسابی باز می‌ذاره.",
+  "date": "2026-10-12T17:23:33+00:00"
+ },
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/tingtingliao000/status/2109616784928358657",
+   "domain": "x.com",
+   "author": {
+    "name": "Tingting Liao",
+    "handle": "tingtingliao000",
+    "avatar": "https://pbs.twimg.com/profile_images/1906582907063558144/X4b6Mehz_200x200.jpg"
+   },
+   "text": "Streaming Code World Model 🌊\n\nWe made Code World Model causal: video is generated chunk by chunk from a live proxy. A 4-step distilled model renders each chunk in ~5 s on one H200.\n\nCode + checkpoints are open 👇\n💻 https://github.com/TingtingLiao/streaming-code-world-model\n🤗 https://huggingface.co/Luffuly/streaming-code-world-model",
+   "date": 1791806810,
+   "media": [
+    {
+     "type": "video",
+     "src": "https://video.twimg.com/amplify_video/2109615045617618944/vid/avc1/1152x720/FQSjkD0Z-szE6KYv.mp4?tag=14",
+     "poster": "https://pbs.twimg.com/amplify_video_thumb/2109615045617618944/img/52iqoFcT2VYsqT7h.jpg",
+     "ratio": 0.625,
+     "duration": 43.166,
+     "gif": false
+    }
+   ],
+   "links": [
+    "https://github.com/TingtingLiao/streaming-code-world-model",
+    "https://huggingface.co/Luffuly/streaming-code-world-model"
+   ]
+  },
+  {
+   "kind": "link",
+   "url": "https://github.com/TingtingLiao/streaming-code-world-model",
+   "domain": "github.com",
+   "title": "GitHub - TingtingLiao/streaming-code-world-model",
+   "description": "Contribute to TingtingLiao/streaming-code-world-model development by creating an account on GitHub.",
+   "image": "https://opengraph.githubassets.com/2708cae2637d8b033c168adb5d28a9988e3159a81ffa81e444b42f4832a168ef/TingtingLiao/streaming-code-world-model",
+   "site": "GitHub"
+  }
+ ],
+ "article": {
+  "title": "تینگ‌تینگ لیائو و تیمش یه کار تر و تمیز دادن بیرون و مدل ویدیویی Code World Model رو به حالت استریم و زنده درآوردن تا ویدیوها رو تیکه‌به‌تیکه جنریت کنه",
+  "source_title": "Streaming Code World Model 🌊",
+  "body": [
+   "ببین رفیق، تینگ‌تینگ لیائو و تیمش یه کار تر و تمیز دادن بیرون و مدل ویدیویی Code World Model رو به حالت استریم و زنده درآوردن تا ویدیوها رو تیکه‌به‌تیکه جنریت کنه. سیستمش طوریه که با یه مدل تقطیرشده‌ی چهار مرحله‌ای، هر بخش از ویدیو رو ظرف تقریباً ۵ ثانیه روی یه دونه کارت گرافیک خفن H200 رندر می‌کنه و تحویل میده. از اون قشنگ‌تر اینه که مرام گذاشتن و تمام کدها و چک‌پوینت‌هاش رو به شکل کاملاً باز روی گیت‌هاب و هاگینگ‌فیس عمومی کردن تا هر کسی بتونه بره سراغش."
+  ],
+  "why": "تولید بلادرنگ و استریم ویدیو با هوش مصنوعی رو چند گام به واقعیت نزدیک‌تر کرده و با اپن‌سورس بودنش دست بقیه دولوپرها رو حسابی باز می‌ذاره.",
+  "tags": [
+   "کدنویسی"
+  ]
+ },
+ "updated": "2026-10-25T12:23:44+00:00",
+ "gholam_checked": "2026-10-25T12:23:44+00:00"
+}

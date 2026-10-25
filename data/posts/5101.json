@@ -1,0 +1,65 @@
+{
+ "id": 5101,
+ "url": "https://t.me/dlmehr/5101",
+ "date": "2026-09-02T15:05:09+00:00",
+ "text": "https://fxtwitter.com/reza_byt/status/2095151649861845451?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+ "forwarded_from": null,
+ "digest": false,
+ "hash": "76ccb285c3f5",
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/reza_byt/status/2095151649861845451?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+  "site": "FxTwitter",
+  "title": "Reza Bayat (@reza_byt)",
+  "description": "Dense → Mixture of Experts (MoE), 2023\nUniform Looped Transformer → Mixture of Recursions (MoR), 2025\nSame move, different axis:\nMoE makes width conditional: each token picks its experts.\nMoR makes depth conditional: each token picks how many times it…",
+  "image": "https://cdn4.telesco.pe/file/GnBJEWLhXieBO5qaFVRnxOa21EGII_tpWq9qE5peU-BotMIzoMai5iTunRsQAGFvfM2_s9DKK4iHg2yUvuTb5Z6UeZNQUiz1bKKVJdLJGdcErqIBAohIJe9Rnkni0kbLnNCquQlobAkSeu-RTEiDCtJfHfelhy90jeVAz59pfY7xf4gYa8QfFLXq-et9hIqeqYOTzlCp8Eayt0fOmogqmFJFBhb26HZ7tRQrpG5UawLTBGol2LMDo_efSmrXFWs7-amSffZdJ0vKC2J9XZyAJA6qM7qGQ4ksBtF4S-QeiQyQY3JUej-XVciwdJZcsvkLenmorDxbGun5xf-LPiwAkA.jpg"
+ },
+ "gholam": {
+  "text": "ببین رفیق، دنیای هوش مصنوعی دوباره یه تکون اساسی خورده و بعد از سر و صدای مدل‌های MoE در سال ۲۰۲۳، حالا نوبت به معرفی معماری جدیدی به اسم MoR یا همون «ترکیب بازگشت‌ها» توی سال ۲۰۲۵ رسیده. قضیه از این قراره که اگه مدل‌های قبلی عرض شبکه رو شرطی می‌کردن، این تکنیک جدید عمق رو دستکاری می‌کنه تا هر توکن خودش تعیین کنه چند دور توی لایه‌ها بچرخه. یعنی یه مسیریاب هوشمند گذاشتن تا توکن‌های آسون بعد یه دور سریع کارشون تموم بشه و رد بشن، ولی لقمه‌های سخت‌تر و پیچیده چندین بار توی لوپ بمونن تا کامل تحلیل بشن. با این ترفند، همون وزن‌های قبلی دوباره به کار گرفته میشن و توان پردازشی الکی هدر نمیره و فقط خرج جاهای واجب میشه.\n\nاهمیتش اینه که با این روش بدون نیاز به بزرگ‌تر کردن مدل، سرعت پردازش به شدت بالا میره و کلی توی هزینه و مصرف انرژی سرورها صرفه‌جویی میشه.",
+  "date": "2026-09-02T15:05:22+00:00"
+ },
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/reza_byt/status/2095151649861845451",
+   "domain": "x.com",
+   "author": {
+    "name": "Reza Bayat",
+    "handle": "reza_byt",
+    "avatar": "https://pbs.twimg.com/profile_images/2094798374734020608/ZxHXf7QR_200x200.jpg"
+   },
+   "text": "Dense → Mixture of Experts (MoE), 2023\n\nUniform Looped Transformer → Mixture of Recursions (MoR), 2025\n\nSame move, different axis:\n\nMoE makes width conditional: each token picks its experts.\n\nMoR makes depth conditional: each token picks how many times it loops.\n\nA learned router lets easy tokens exit after one pass while hard ones keep recursing. Same weights reused, compute spent where it's actually needed.\n\nPaper (NeurIPS 2025): http://arxiv.org/abs/2507.10524",
+   "date": 1788358054,
+   "media": [
+    {
+     "type": "image",
+     "src": "https://pbs.twimg.com/media/HRN2WrTXoAAoCwL.jpg?name=orig",
+     "ratio": 0.7753
+    }
+   ],
+   "links": [
+    "http://arxiv.org/abs/2507.10524"
+   ]
+  },
+  {
+   "kind": "link",
+   "url": "https://arxiv.org/abs/2507.10524",
+   "domain": "arxiv.org",
+   "title": "Mixture-of-Recursions: Learning Dynamic Recursive Depths for Adaptive Token-Level Computation",
+   "description": "Scaling language models unlocks impressive capabilities, but the accompanying computational and memory demands make both training and deployment expensive. Existing efficiency efforts typically target either parameter sharing or adaptive computation, leaving open the question of how to attain both simultaneously. We introduce Mixture-of-Recursions (MoR), a unified framework that combines the two a",
+   "image": "https://arxiv.org/static/browse/0.3.4/images/arxiv-logo-fb.png",
+   "site": "arXiv.org"
+  }
+ ],
+ "article": {
+  "title": "دنیای هوش مصنوعی دوباره یه تکون اساسی خورده و بعد از سر و صدای مدل‌های MoE در سال ۲۰۲۳، حالا نوبت به معرفی معماری جدیدی به اسم MoR یا همون «ترکیب بازگشت‌ها» توی سال ۲۰۲۵ رسیده",
+  "source_title": "Dense → Mixture of Experts (MoE), 2023",
+  "body": [
+   "ببین رفیق، دنیای هوش مصنوعی دوباره یه تکون اساسی خورده و بعد از سر و صدای مدل‌های MoE در سال ۲۰۲۳، حالا نوبت به معرفی معماری جدیدی به اسم MoR یا همون «ترکیب بازگشت‌ها» توی سال ۲۰۲۵ رسیده. قضیه از این قراره که اگه مدل‌های قبلی عرض شبکه رو شرطی می‌کردن، این تکنیک جدید عمق رو دستکاری می‌کنه تا هر توکن خودش تعیین کنه چند دور توی لایه‌ها بچرخه. یعنی یه مسیریاب هوشمند گذاشتن تا توکن‌های آسون بعد یه دور سریع کارشون تموم بشه و رد بشن، ولی لقمه‌های سخت‌تر و پیچیده چندین بار توی لوپ بمونن تا کامل تحلیل بشن. با این ترفند، همون وزن‌های قبلی دوباره به کار گرفته میشن و توان پردازشی الکی هدر نمیره و فقط خرج جاهای واجب میشه."
+  ],
+  "why": "با این روش بدون نیاز به بزرگ‌تر کردن مدل، سرعت پردازش به شدت بالا میره و کلی توی هزینه و مصرف انرژی سرورها صرفه‌جویی میشه.",
+  "tags": []
+ },
+ "updated": "2026-10-25T12:28:10+00:00",
+ "gholam_checked": "2026-10-25T12:28:10+00:00"
+}

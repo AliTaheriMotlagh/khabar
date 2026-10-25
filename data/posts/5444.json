@@ -1,0 +1,73 @@
+{
+ "id": 5444,
+ "url": "https://t.me/dlmehr/5444",
+ "date": "2026-09-24T02:04:59+00:00",
+ "text": "https://fxtwitter.com/jackyk02/status/2102905335925424285?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+ "forwarded_from": null,
+ "digest": false,
+ "hash": "60c93bd60cd8",
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/jackyk02/status/2102905335925424285?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+  "site": "🧵 Thread • FxTwitter",
+  "title": "Jacky Kwok (@jackyk02)",
+  "description": "Introducing Contrastive Language Model (CLM): an ultra-fast System One Model trained with a contrastive learning objective that connects states and actions.\nCLM-8B is pre-trained on internet-scale data and delivers up to 9× faster inference than Jev\n⚡\nwhile…",
+  "image": null
+ },
+ "gholam": {
+  "text": "رفیق، یه پژوهشگر کاردرست به اسم جکی کواک اومده از مدل زبانی جدیدی به اسم CLM رونمایی کرده که مثل برق و باد عمل می‌کنه و ارتباط بین موقعیت‌ها و اقدام‌ها رو یاد می‌گیره. نسخه ۸ میلیارد پارامتری این مدل، یعنی CLM-8B، روی دیتای عظیم اینترنت تربیت شده و تا ۹ برابر سریع‌تر از مدل Jev خروجی می‌ده، در حالی که تو گیمینگ، ابزارها و کارهای کامپیوتری پایاپای اون رقابت می‌کنه. جالب‌تر اینکه با یه فاین‌تیون سبک، تو بنچمارک‌های خفن کدنویسی مثل DeepSWE رکورد ۸۱.۶ درصد و تو Terminal-Bench رکورد ۸۷.۶ درصدی زده و استانداردهای جدیدی ثبت کرده. تیم سازنده با تفکیک و کَش کردن هوشمندانه وضعیت‌ها، کاری کرده که تاخیر سیستم تو تسک‌های طولانی‌مدت به شدت بیاد پایین.\n\nاهمیتش اینه که سرعت پردازش ایجنت‌های هوش مصنوعی رو برای کدنویسی خودکار و کارهای پیچیده به شکل سرسام‌آوری بالا می‌بره و اجرای سیستم‌های بلادرنگ رو خیلی کم‌هزینه‌تر می‌کنه.",
+  "date": "2026-09-24T02:05:12+00:00"
+ },
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/jackyk02/status/2102905335925424285",
+   "domain": "x.com",
+   "author": {
+    "name": "Jacky Kwok",
+    "handle": "jackyk02",
+    "avatar": "https://pbs.twimg.com/profile_images/1938668993293750272/iNSxmD3Q_200x200.jpg"
+   },
+   "text": "Introducing Contrastive Language Model (CLM): an ultra-fast System One Model trained with a contrastive learning objective that connects states and actions.\n\nCLM-8B is pre-trained on internet-scale data and delivers up to 9× faster inference than Jev ⚡ while achieving comparable performance across computer-use, gaming, and tool-calling tasks.\n\nWith lightweight fine-tuning, CLM-8B sets a new SOTA on challenging agentic coding benchmarks, such as DeepSWE (81.6%) and Terminal-Bench 2.1 (87.6%). In contrast, Jev fails to serve as an effective verifier for these long-horizon tasks.\n\nWe also build an efficient training and serving infra for CLMs by disaggregating states and actions, allowing their embeddings to be cached and reused independently. This substantially reduces inference latency in settings where the state evolves continuously while the action set remains fixed.\n\nFinally, we establish scaling laws for CLMs and show that the test contrastive loss decreases predictably as a power law in training compute, model size, and dataset size.\n\n📄 Blog: https://contrastive-lm.notion.site\n💻 Code: https://github.com/Contrastive-LM/CLM\n🗣️ Discord: https://discord.gg/5dAQEDJBs\n🤗 Data & Models: https://huggingface.co/Contrastive-LM\n\nMore details on CLM’s architecture, data recipe, and scaling laws in the thread below 🧵",
+   "date": 1790206676,
+   "media": [
+    {
+     "type": "video",
+     "src": "https://video.twimg.com/amplify_video/2102904945213358080/vid/avc1/1280x720/UQ9W5NO8kUUL1odF.mp4?tag=29",
+     "poster": "https://pbs.twimg.com/amplify_video_thumb/2102904945213358080/img/ar3CkjNREO6ATW-Q.jpg",
+     "ratio": 0.5625,
+     "duration": 80.817,
+     "gif": false
+    }
+   ],
+   "links": [
+    "https://contrastive-lm.notion.site",
+    "https://github.com/Contrastive-LM/CLM",
+    "https://discord.gg/5dAQEDJBs",
+    "https://huggingface.co/Contrastive-LM"
+   ]
+  },
+  {
+   "kind": "link",
+   "url": "https://contrastive-lm.notion.site",
+   "domain": "contrastive-lm.notion.site",
+   "title": "Notion | Where teams and agents work together",
+   "description": "Made in Notion, the connected workspace where AI agents and teams organize docs, projects and knowledge together.",
+   "image": "https://app.notion.com/images/meta/default.png",
+   "site": "Notion"
+  }
+ ],
+ "article": {
+  "title": "یه پژوهشگر کاردرست به اسم جکی کواک اومده از مدل زبانی جدیدی به اسم CLM رونمایی کرده که مثل برق و باد عمل می‌کنه و ارتباط بین موقعیت‌ها و اقدام‌ها رو یاد می‌گیره",
+  "source_title": "Introducing Contrastive Language Model (CLM): an ultra-fast System One Model trained with a contrastive learning objective that connects…",
+  "body": [
+   "رفیق، یه پژوهشگر کاردرست به اسم جکی کواک اومده از مدل زبانی جدیدی به اسم CLM رونمایی کرده که مثل برق و باد عمل می‌کنه و ارتباط بین موقعیت‌ها و اقدام‌ها رو یاد می‌گیره. نسخه ۸ میلیارد پارامتری این مدل، یعنی CLM-8B، روی دیتای عظیم اینترنت تربیت شده و تا ۹ برابر سریع‌تر از مدل Jev خروجی می‌ده، در حالی که تو گیمینگ، ابزارها و کارهای کامپیوتری پایاپای اون رقابت می‌کنه. جالب‌تر اینکه با یه فاین‌تیون سبک، تو بنچمارک‌های خفن کدنویسی مثل DeepSWE رکورد ۸۱.۶ درصد و تو Terminal-Bench رکورد ۸۷.۶ درصدی زده و استانداردهای جدیدی ثبت کرده. تیم سازنده با تفکیک و کَش کردن هوشمندانه وضعیت‌ها، کاری کرده که تاخیر سیستم تو تسک‌های طولانی‌مدت به شدت بیاد پایین."
+  ],
+  "why": "سرعت پردازش ایجنت‌های هوش مصنوعی رو برای کدنویسی خودکار و کارهای پیچیده به شکل سرسام‌آوری بالا می‌بره و اجرای سیستم‌های بلادرنگ رو خیلی کم‌هزینه‌تر می‌کنه.",
+  "tags": [
+   "کدنویسی"
+  ]
+ },
+ "updated": "2026-10-25T12:26:01+00:00",
+ "gholam_checked": "2026-10-25T12:26:01+00:00"
+}

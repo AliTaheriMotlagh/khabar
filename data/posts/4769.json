@@ -1,0 +1,54 @@
+{
+ "id": 4769,
+ "url": "https://t.me/dlmehr/4769",
+ "date": "2026-08-16T17:03:01+00:00",
+ "text": "https://fxtwitter.com/reach_vb/status/2089004347820490925?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+ "forwarded_from": null,
+ "digest": false,
+ "hash": "af8e66d148c5",
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/reach_vb/status/2089004347820490925?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+  "site": "FxTwitter",
+  "title": "Vaibhav (VB) Srivastav (@reach_vb)",
+  "description": "GPT-5.6 Luna Max scores 13.3 points above Sonnet 5 Max on DeepSWE v1.1 while Sonnet costs 44x as much.\nDeepSWE tests coding agents on 113 original, long-horizon engineering tasks.\nLuna posts 67.2% at $0.61/task, 1.7 points above Gemini 3.7 Flash Medium…",
+  "image": "https://cdn4.telesco.pe/file/Yt5UdKUt-c4j03EezDQWUPhJgQPT-fLawxyQRl3dBE92jIIUyUuDt2A3SnpnXbyQqC_hhgixPE_W_jmOyR9ywGFeeG8x8qGKbbnJyuFtBuLJ2ISvBgI66ijufQMCaR4r1UduIGhcDHFGgSXWQN_PiPQofXQDip2wBe45lBiZ3piKQ91JBs1pVVSLN0-jJ3kfB1AEXX4fdgT_76HDDckADFuOMGpMWF5OcAOqrc4zf78TOiKGS-iaLFuxx-Av1fp2mpgPdjhNYIyhV-IOrQ_GFXAoQ26zOUWZa3WP9d4U05YzujtEjNrBlYfJ5kjrwxfiT429llmgqSbS_JoVn36WRQ.jpg"
+ },
+ "gholam": {
+  "text": "",
+  "date": "2026-08-16T17:05:50+00:00"
+ },
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/reach_vb/status/2089004347820490925",
+   "domain": "x.com",
+   "author": {
+    "name": "Vaibhav (VB) Srivastav",
+    "handle": "reach_vb",
+    "avatar": "https://pbs.twimg.com/profile_images/1509901130670747666/JFlrSzB4_200x200.jpg"
+   },
+   "text": "GPT-5.6 Luna Max scores 13.3 points above Sonnet 5 Max on DeepSWE v1.1 while Sonnet costs 44x as much.\n\nDeepSWE tests coding agents on 113 original, long-horizon engineering tasks. \n\nLuna posts 67.2% at $0.61/task, 1.7 points above Gemini 3.7 Flash Medium at 70% lower cost.",
+   "date": 1786892423,
+   "media": [
+    {
+     "type": "image",
+     "src": "https://pbs.twimg.com/media/HP2iYXxXUAEdfxF.jpg?name=orig",
+     "ratio": 0.625
+    }
+   ],
+   "links": []
+  }
+ ],
+ "article": {
+  "title": "GPT-5.6 Luna Max scores 13.3 points above Sonnet 5 Max on DeepSWE v1.1 while Sonnet costs 44x as much.",
+  "source_title": null,
+  "body": [],
+  "why": null,
+  "tags": [
+   "اوپن‌ای‌آی"
+  ]
+ },
+ "updated": "2026-10-25T12:30:11+00:00",
+ "gholam_checked": "2026-10-25T12:30:11+00:00"
+}

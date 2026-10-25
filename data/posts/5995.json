@@ -2,16 +2,23 @@
  "id": 5995,
  "url": "https://t.me/dlmehr/5995",
  "date": "2026-10-20T19:07:58+00:00",
- "edited": false,
- "views": "175",
  "text": "https://www.nytimes.com/2026/10/20/science/ai-virus-bacteria-radical-numerics.html",
  "forwarded_from": null,
  "digest": false,
  "hash": "a9b3942cb8d6",
+ "media": [],
+ "preview": {
+  "url": "https://nytimes.com/2026/10/20/science/ai-virus-bacteria-radical-numerics.html",
+  "site": "Nytimes",
+  "title": "Start-Up Claims to Treat a Patient With A.I.-Created Viruses",
+  "description": "Certain viruses attack bacteria and can sometimes clear antibiotic-resistant infections. Researchers said they had tailored a virus to attack one patient’s illness.",
+  "image": "https://cdn4.telesco.pe/file/AwLCgJGClGbjzjU25-NzGxEwdUNcorUBY8qU6AzWT6TzF7UM-cbphDT9c6x6iJB7iq27Km5L3aGg6H2S61gSpHEJtvqd1VzDcOv9grj6AGF5AFdERUbVWOdaxjWQUK8nPhzRjksYz5QmjJN6fIHN48eo28UkaYiyju2Ho4rLbxGvLFJyig24iam2fqltJ6G9-JvgTy0d0mtZfanUKftTInrxmHkR1p-elgle5xB3VXq7O0EUDCOVD95h7xczHi9fo7pizNo4iRRb2a-Q6yDgMzDNSBjoiCR3m9nVPKTSwXYK2SPjmvFZTjgaI4Ao2t54G-f4UTmMz1r_sQs6wmSqAw.jpg"
+ },
  "gholam": {
   "text": "رفیق، نیویورک‌تایمز دست گذاشته رو یه موضوع فوق‌العاده حساس و خطرناک درباره پیشرفت هوش مصنوعی توی شبیه‌سازی و مهندسی ویروس‌ها و باکتری‌ها. قضیه از این قراره که مجموعه‌هایی مثل «ردیکال نیومریکس» دارن با الگوریتم‌های محاسباتی سنگین، ساختار زیستی و ژنتیکی پاتوژن‌ها رو بازطراحی می‌کنن تا ساخت واکسن و داروها با سرعت نور پیش بره. ولی داستان یه روی تاریک و ترسناک هم داره، چون خیلی از کارشناس‌های امنیتی دادشون دراومده که این ابزارها اگه دست اهلش نباشه، می‌تونه برای ساخت سلاح‌های بیولوژیک و میکروب‌های جهش‌یافته استفاده بشه. واسه همین الان محافل علمی و قانون‌گذارها بدجور افتادن تکاپو تا چارچوب‌های سفت‌وسختی بذارن که علم به ضد خودش تبدیل نشه.\n\nچرا مهمه؟ چون پیشرفت کنترل‌نشده هوش مصنوعی توی حوزه زیست‌شناسی، مرز باریک بین کشف درمان بیماری‌ها و ساخت یه فاجعه مرگبار جهانیه.",
   "date": "2026-10-20T19:08:22+00:00"
  },
+ "gholam_checked": "2026-10-24T23:03:14+00:00",
  "links": [
   {
    "kind": "link",
@@ -24,18 +31,6 @@
    "domain": "nytimes.com"
   }
  ],
- "media": [],
- "preview": {
-  "url": "https://nytimes.com/2026/10/20/science/ai-virus-bacteria-radical-numerics.html",
-  "site": "Nytimes",
-  "title": "Start-Up Claims to Treat a Patient With A.I.-Created Viruses",
-  "description": "Certain viruses attack bacteria and can sometimes clear antibiotic-resistant infections. Researchers said they had tailored a virus to attack one patient’s illness.",
-  "image": {
-   "src": "media/5995/preview.webp",
-   "width": 800,
-   "height": 450
-  }
- },
  "article": {
   "title": "نیویورک‌تایمز دست گذاشته رو یه موضوع فوق‌العاده حساس و خطرناک درباره پیشرفت هوش مصنوعی توی شبیه‌سازی و مهندسی ویروس‌ها و باکتری‌ها",
   "source_title": "Start-Up Claims to Treat a Patient With A.I.-Created Viruses",
@@ -47,6 +42,5 @@
    "سلامت"
   ]
  },
- "updated": "2026-10-24T23:03:14+00:00",
- "gholam_checked": "2026-10-24T23:03:14+00:00"
+ "updated": "2026-10-25T11:53:59+00:00"
 }

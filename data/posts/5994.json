@@ -2,16 +2,23 @@
  "id": 5994,
  "url": "https://t.me/dlmehr/5994",
  "date": "2026-10-20T18:26:59+00:00",
- "edited": true,
- "views": "187",
  "text": "https://fxtwitter.com/exnx/status/2112580926651904379?s=52&t=F41Qa04r48Mef_j_XjBneQ",
  "forwarded_from": null,
  "digest": false,
  "hash": "680f92286066",
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/exnx/status/2112580926651904379?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+  "site": "🧵 Thread • FxTwitter",
+  "title": "Eric Nguyen (@exnx)",
+  "description": "Introducing Omnii-1, our most powerful genome language model, and a major step toward general biological intelligence\nIn a world first, Omnii-1 designed the first AI-generated bacteriophages to be administered to a human patient with an antibiotic-resistant…",
+  "image": null
+ },
  "gholam": {
   "text": "ببین رفیق، بشنو از این شاهکار علمی که یه مدل زبانی ژنوم به اسم Omnii-1 رونمایی شده و بدجور توی دنیای بیولوژی گرد و خاک به پا کرده. اریک نگوین اعلام کرده که این هوش مصنوعی واسه اولین بار توی دنیا، یه باکتریوفاژ رو کاملاً از صفر طراحی کرده تا بره به جنگ عفونت باکتریایی خفنی که به هیچ آنتی‌بیوتیکی باج نمی‌داد. کار به قدری جدی بوده که این باکتری‌کش ساخت دست هوش مصنوعی رو تحت مجوز استفاده دلسوزانه مستقیماً به یه بیمار انسانی تزریق کردن تا نجاتش بدن. سازنده‌هاش این دستاورد رو یه گام غول‌آسا به سمت هوش زیستی عمومی می‌دونن که عملاً ثابت کرد هوش مصنوعی فراتر از چت کردن، اومده تا وسط اتاق عمل جون آدم‌ها رو بخره.\n\nاهمیتش اینه که با بحران مرگبار مقاومت به آنتی‌بیوتیک‌ها، حالا معلوم شد هوش مصنوعی می‌تونه درجا واسه هر باکتری چغر و سرسختی، یه داروی سفارشیِ اختصاصی خلق کنه و ورق رو به نفع جون انسان برگردونه.",
   "date": "2026-10-20T18:27:19+00:00"
  },
+ "gholam_checked": "2026-10-24T23:03:15+00:00",
  "links": [
   {
    "kind": "tweet",
@@ -46,14 +53,6 @@
    "links": []
   }
  ],
- "media": [],
- "preview": {
-  "url": "https://fxtwitter.com/exnx/status/2112580926651904379?s=52&t=F41Qa04r48Mef_j_XjBneQ",
-  "site": "🧵 Thread • FxTwitter",
-  "title": "Eric Nguyen (@exnx)",
-  "description": "Introducing Omnii-1, our most powerful genome language model, and a major step toward general biological intelligence\nIn a world first, Omnii-1 designed the first AI-generated bacteriophages to be administered to a human patient with an antibiotic-resistant…",
-  "image": null
- },
  "article": {
   "title": "بشنو از این شاهکار علمی که یه مدل زبانی ژنوم به اسم Omnii-1 رونمایی شده و بدجور توی دنیای بیولوژی گرد و خاک به پا کرده",
   "source_title": "Introducing Omnii-1, our most powerful genome language model, and a major step toward general biological intelligence",
@@ -65,6 +64,5 @@
    "سلامت"
   ]
  },
- "updated": "2026-10-24T23:03:15+00:00",
- "gholam_checked": "2026-10-24T23:03:15+00:00"
+ "updated": "2026-10-25T11:53:59+00:00"
 }

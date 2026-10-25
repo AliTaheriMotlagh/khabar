@@ -2,16 +2,23 @@
  "id": 5891,
  "url": "https://t.me/dlmehr/5891",
  "date": "2026-10-14T19:25:19+00:00",
- "edited": false,
- "views": "158",
  "text": "https://fxtwitter.com/unusual_whales/status/2110417089123250440",
  "forwarded_from": "Parsa Razavi",
  "digest": false,
  "hash": "0cb40940e99d",
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/unusual_whales/status/2110417089123250440",
+  "site": "FxTwitter",
+  "title": "unusual_whales (@unusual_whales)",
+  "description": "BREAKING: Anthropic is now down over 10% in the last month, wiping more than $200 billion from its implied valuation.\nAnthropic’s pre-IPO perpetual has fallen below $2 trillion on Liquid as institutional investors get a closer look at the company’s financials.…",
+  "image": "https://cdn4.telesco.pe/file/HsNfCNfwE_cXNF0_mWgaMXH48LrPsiB9SYnoR642M0LgsI3RiUkb1nUUJg9YhMKIXfLN0ZXMEqgZ7as4mFG4K5KhbCtmwPyUO69AQzvVUs2RUjALHEju2xY6WMcoo1mLSaaakMwptddyLOic4GoLxH0dHzuHcu74CoNUbY_TqqONifhN4QiPNCXuKjslmw1K8z5aC-3QOME7X3vwFdHeLo56TgPy9v1LOKgn-FieIgl7_ofcfGWqA50SIbrDnmvpkdBH_T7qlnykNDz6YjkYUfLcao2flZ_JlHEZvDUTYaXbcalkq2Cw0tcQ5GarsttNwk2tYTay1Ot5kEehTaRLjA.jpg"
+ },
  "gholam": {
   "text": "ببین رفیق، غول هوش مصنوعی یعنی شرکت آنتروپیک تو همین یک ماه اخیر بدجور عقب نشسته و ارزش تخمینیش بیشتر از ۱۰ درصد ریخته. همین افت سنگین باعث شده بالای ۲۰۰ میلیارد دلار از بادِ ارزش شرکت خالی بشه و قراردادهای پیش از عرضه‌ش تو پلتفرم لیکویید به زیر ۲ تریلیون دلار سقوط کنه. قضیه هم از اونجا آب می‌خوره که سرمایه‌گذارای دانه‌درشت و نهادی بالاخره رفتن لای دفاتر و صورت‌های مالی این رفیقمون رو باز کردن و مثل اینکه چرتکه‌شون با ادعاهای قبلی نخونده. خلاصه بازار متوجه شده که زیر پوست این هیاهوی هوش مصنوعی، اوضاع دخل‌وخرج اون‌قدرها هم گل‌وبلبل نیست.\n\nاهمیتش اینه که متوجه بشیم دوره باد کردن قیمت‌ها فقط با شعار و هایپ تموم شده و از این به بعد حتی بزرگ‌ترین غول‌های تک هم باید سود واقعی و حساب‌کتاب تر و تمیز نشون وال‌استریت بدن.",
   "date": "2026-10-14T19:25:36+00:00"
  },
+ "gholam_checked": "2026-10-24T23:35:37+00:00",
  "links": [
   {
    "kind": "tweet",
@@ -76,18 +83,6 @@
    }
   }
  ],
- "media": [],
- "preview": {
-  "url": "https://fxtwitter.com/unusual_whales/status/2110417089123250440",
-  "site": "FxTwitter",
-  "title": "unusual_whales (@unusual_whales)",
-  "description": "BREAKING: Anthropic is now down over 10% in the last month, wiping more than $200 billion from its implied valuation.\nAnthropic’s pre-IPO perpetual has fallen below $2 trillion on Liquid as institutional investors get a closer look at the company’s financials.…",
-  "image": {
-   "src": "media/5891/preview.webp",
-   "width": 800,
-   "height": 597
-  }
- },
  "article": {
   "title": "غول هوش مصنوعی یعنی شرکت آنتروپیک تو همین یک ماه اخیر بدجور عقب نشسته و ارزش تخمینیش بیشتر از ۱۰ درصد ریخته",
   "source_title": "BREAKING: Anthropic is now down over 10% in the last month, wiping more than $200 billion from its implied valuation.",
@@ -99,6 +94,5 @@
    "آنتروپیک"
   ]
  },
- "updated": "2026-10-24T23:35:37+00:00",
- "gholam_checked": "2026-10-24T23:35:37+00:00"
+ "updated": "2026-10-25T11:54:15+00:00"
 }

@@ -2,16 +2,23 @@
  "id": 5929,
  "url": "https://t.me/dlmehr/5929",
  "date": "2026-10-16T17:57:24+00:00",
- "edited": true,
- "views": "206",
  "text": "https://fxtwitter.com/andrewdai/status/2111142161584628060?s=52&t=F41Qa04r48Mef_j_XjBneQ",
  "forwarded_from": null,
  "digest": false,
  "hash": "b0c6ac5b42bf",
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/andrewdai/status/2111142161584628060?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+  "site": "🧵 Thread • FxTwitter",
+  "title": "Andrew M. Dai (@AndrewDai)",
+  "description": "Spent years watching models ace a single image and completely whiff on anything that moves or changes angle. Today we’re fixing that.\nTry Glimpse now, our first visual thinking model with competitive frontier performance compared to Astra on key public visual…",
+  "image": null
+ },
  "gholam": {
   "text": "ببین رفیق، اندرو دای بالاخره از مدل جدید و پرادعاشون به اسم Glimpse رونمایی کرد تا گره کور دنیای تصویر رو باز کنه. داستان اینه که تا امروز هوش مصنوعی روی یه عکس تکی و تر‌تمیز عالی جواب می‌داد، اما کافی بود سوژه یه تکونی بخوره یا زاویه دوربین عوض بشه تا سیستم کلاً گیج بزنه و قافیه رو ببازه. حالا این مدل تفکر بصری اومده تا این باگ قدیمی رو جمع کنه و توی بنچمارک‌های عمومی استدلال دیداری، پا‌به‌پای مدلی مثل Astra رقابت می‌کنه.\n\nچرا مهمه؟ چون هوش مصنوعی بالاخره داره یاد می‌گیره مثل چشم انسان تغییر زاویه و حرکت رو توی دنیای واقعی درک کنه و فقط به عکس‌های ثابت وابسته نباشه.",
   "date": "2026-10-16T17:57:43+00:00"
  },
+ "gholam_checked": "2026-10-24T23:35:31+00:00",
  "links": [
   {
    "kind": "tweet",
@@ -46,14 +53,6 @@
    "links": []
   }
  ],
- "media": [],
- "preview": {
-  "url": "https://fxtwitter.com/andrewdai/status/2111142161584628060?s=52&t=F41Qa04r48Mef_j_XjBneQ",
-  "site": "🧵 Thread • FxTwitter",
-  "title": "Andrew M. Dai (@AndrewDai)",
-  "description": "Spent years watching models ace a single image and completely whiff on anything that moves or changes angle. Today we’re fixing that.\nTry Glimpse now, our first visual thinking model with competitive frontier performance compared to Astra on key public visual…",
-  "image": null
- },
  "article": {
   "title": "اندرو دای بالاخره از مدل جدید و پرادعاشون به اسم Glimpse رونمایی کرد تا گره کور دنیای تصویر رو باز کنه",
   "source_title": "Spent years watching models ace a single image and completely whiff on anything that moves or changes angle. Today we’re fixing that.",
@@ -63,6 +62,5 @@
   "why": "چون هوش مصنوعی بالاخره داره یاد می‌گیره مثل چشم انسان تغییر زاویه و حرکت رو توی دنیای واقعی درک کنه و فقط به عکس‌های ثابت وابسته نباشه.",
   "tags": []
  },
- "updated": "2026-10-24T23:35:31+00:00",
- "gholam_checked": "2026-10-24T23:35:31+00:00"
+ "updated": "2026-10-25T11:54:11+00:00"
 }

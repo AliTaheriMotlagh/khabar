@@ -1,0 +1,61 @@
+{
+ "id": 5207,
+ "url": "https://t.me/dlmehr/5207",
+ "date": "2026-09-08T18:55:48+00:00",
+ "text": "https://fxtwitter.com/__alpoge__/status/2097383870773748190?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+ "forwarded_from": null,
+ "digest": false,
+ "hash": "26d3390fcde2",
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/__alpoge__/status/2097383870773748190?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+  "site": "FxTwitter",
+  "title": "levent (@__alpoge__)",
+  "description": "“we cannot rule out that de-identified data derived from their usage of our products helped improve our models.”\ni mean props to them for straight coming clean.\n(so far the proof looks more along the lines of another euler blowup proof we had, off of whose…",
+  "image": "https://cdn4.telesco.pe/file/qVKykP4IFUcN293WSBk3PXxbJy5TVaHbey1RPT2Y63_yn7eUzFN1ESF2-X2yuHYwCwishddIW5U7MheZDVKLq4Jt7bmp9tF-1XzBe2pHWabTXah0c8JJ9tb7qHCjn_dK4yR72Ql45vRfP_VGfDm7nIn0JcC4PbX-gPPOyaVhLNKADEsijXtzEOkH7bpEBV9Yun-KYdcmS4Eeh-gc0n847TyIKcr0v__Kf80bQ94Oi3eV9br96vdLdQqNimnAa3niD7IY7QZkRgRsV6IhhscHZUwUHHsrG30uMUSvAcIL1xBDAiX07eL56dHpfEgvc0Kh_JjPUMsLmsZ211aA0rAMlQ.jpg"
+ },
+ "gholam": {
+  "text": "رفیق، داستان از این قراره که ماجرای اوپن‌ای‌آی و لِوِنت آلپوگه سر یه دستاورد ریاضی خفن حسابی بالا گرفته و کار به جایی رسیده که خود اوپن‌ای‌آی دست‌ها رو برده بالا و اعتراف کرده بعید نیست از دیتای بدون‌نامِ کاربری این بندگان خدا واسه قوی‌تر کردن مدل‌هاش لقمه گرفته باشه. لِوِنت هم اومده دمشون گرم گفته که بالاخره حقیقت رو ریختن رو دایره، هرچند از بازی‌های پشت پرده حسابی دلخوره. طرف تعریف کرده که خودش اصلاً دنبال اسم و رسم روی مقاله نبوده و دنبال رفاقت و پیشرفت علمی می‌گشته، اما شنیده که توی راهروهای اوپن‌ای‌آی حرف انداخته بودن اگه اسمشو از مقاله خط بزنن پای جایزه هزاره وسطه! خلاصه آبجی، تهش هم ابراز تأسف کرده از این‌که کارهای قشنگی که اون با مدل کلود توی یه گوشه یواشکی پیش می‌برد، جای همکاری قشنگ بین آزمایشگاه‌ها، گیر این حاشیه‌ها و بی‌مرامی‌ها افتاده.\n\nچرا مهمه؟ اهمیتش اینه که نشون میده غول‌های هوش مصنوعی چطوری بدون تعارف نبوغ و دیتای محقق‌ها رو می‌بلعن و مرز بین پیشرفت علمی مشترک با کش‌رفتن زحمت بقیه حسابی تاریک و باریک شده.",
+  "date": "2026-09-08T18:56:03+00:00"
+ },
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/__alpoge__/status/2097383870773748190",
+   "domain": "x.com",
+   "author": {
+    "name": "levent",
+    "handle": "__alpoge__",
+    "avatar": "https://pbs.twimg.com/profile_images/1824948681877155840/VqVHY3gF_200x200.jpg"
+   },
+   "text": "“we cannot rule out that de-identified data derived from their usage of our products helped improve our models.”\n\ni mean props to them for straight coming clean.\n\n(so far the proof looks more along the lines of another euler blowup proof we had, off of whose ansatz naming we were making really stupid puns like “smooth criminale”, unlike the much better “ideal fluids explode”, Tristan)\n\nso i’ll now give a bit on my thinking here. i actually woulda been pumped to collaborate on this, there are a lot of people at oai i like (ok, clearly some were indirectly dicks to me because of being part of the whole situation, but im a big boy, i still like them), idgaf about authorship on that step anyway, coulda been me Tristan and every fte at oai for all i care (on that Tristan would disagree:p). but on hearing the loud convo in the hallway, especially the part where a millennium prize was offered if i’d just be removed from the paper, it was kinda clear the die had been cast and things were locked. pretty wacky, unstrategic, and unnecessary, since on my side things were mostly me and claude having a good time yoloing random stuff in the corner rather than anything institutional. i also like the idea of the labs cooperating, and even better on scientific progress. it’s a shame!",
+   "date": 1788890256,
+   "media": [],
+   "links": [],
+   "quote": {
+    "author": {
+     "name": "OpenAI",
+     "handle": "OpenAI",
+     "avatar": "https://pbs.twimg.com/profile_images/1885410181409820672/ztsaR0JW_200x200.jpg"
+    },
+    "text": "We congratulate Levent Alpöge and Tristan Buckmaster on their remarkable mathematical work.\n\nWe (the researchers and the agents) did not see any of their work through any means until they released it publicly — in particular, no specific user data was accessed in order to solve this problem. \n\nWhile unlikely, we cannot rule out that de-identified data derived from their usage of our products helped improve our models. \n\nHowever, our proofs differ significantly and even the precise results proved are different in the Euler case (forced vs. unforced).",
+    "date": 1788888207,
+    "media": [],
+    "links": []
+   }
+  }
+ ],
+ "article": {
+  "title": "داستان از این قراره که ماجرای اوپن‌ای‌آی و لِوِنت آلپوگه سر یه دستاورد ریاضی خفن حسابی بالا گرفته و کار به جایی رسیده که خود اوپن‌ای‌آی دست‌ها رو برده بالا و اعتراف کرده بعید نیست از دیتای بدون‌نامِ کاربری این بندگان خدا واسه قوی‌تر کردن مدل‌هاش لقمه گرفته باشه",
+  "source_title": "“we cannot rule out that de-identified data derived from their usage of our products helped improve our models.”",
+  "body": [
+   "رفیق، داستان از این قراره که ماجرای اوپن‌ای‌آی و لِوِنت آلپوگه سر یه دستاورد ریاضی خفن حسابی بالا گرفته و کار به جایی رسیده که خود اوپن‌ای‌آی دست‌ها رو برده بالا و اعتراف کرده بعید نیست از دیتای بدون‌نامِ کاربری این بندگان خدا واسه قوی‌تر کردن مدل‌هاش لقمه گرفته باشه. لِوِنت هم اومده دمشون گرم گفته که بالاخره حقیقت رو ریختن رو دایره، هرچند از بازی‌های پشت پرده حسابی دلخوره. طرف تعریف کرده که خودش اصلاً دنبال اسم و رسم روی مقاله نبوده و دنبال رفاقت و پیشرفت علمی می‌گشته، اما شنیده که توی راهروهای اوپن‌ای‌آی حرف انداخته بودن اگه اسمشو از مقاله خط بزنن پای جایزه هزاره وسطه! خلاصه آبجی، تهش هم ابراز تأسف کرده از این‌که کارهای قشنگی که اون با مدل کلود توی یه گوشه یواشکی پیش می‌برد، جای همکاری قشنگ بین آزمایشگاه‌ها، گیر این حاشیه‌ها و بی‌مرامی‌ها افتاده."
+  ],
+  "why": "اهمیتش اینه که نشون میده غول‌های هوش مصنوعی چطوری بدون تعارف نبوغ و دیتای محقق‌ها رو می‌بلعن و مرز بین پیشرفت علمی مشترک با کش‌رفتن زحمت بقیه حسابی تاریک و باریک شده.",
+  "tags": [
+   "اوپن‌ای‌آی"
+  ]
+ },
+ "updated": "2026-10-25T12:27:32+00:00",
+ "gholam_checked": "2026-10-25T12:27:32+00:00"
+}

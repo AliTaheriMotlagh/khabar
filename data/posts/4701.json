@@ -1,0 +1,68 @@
+{
+ "id": 4701,
+ "url": "https://t.me/dlmehr/4701",
+ "date": "2026-08-11T18:20:12+00:00",
+ "text": "https://fxtwitter.com/scaling01/status/2087181454098809287?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+ "forwarded_from": null,
+ "digest": false,
+ "hash": "63b7d82bad47",
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/scaling01/status/2087181454098809287?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+  "site": "🧵 Thread • FxTwitter",
+  "title": "Lisan al Gaib (@scaling01)",
+  "description": "I looked at all the reasoning traces from Opus 4.8 and GPT-5.6-Sol\nto me it seems like Opus 4.8 is working on a much higher abstraction level, while Sol is just doing the dirty work. it just explores and keeps spamming new hypotheses until it finds a solution…",
+  "image": "https://cdn4.telesco.pe/file/CUl0DrIvDHUv4XhzEbn8VMhh6svYUeJboLfeGoELryjixVrjFvVw6KVKq9WgR4Hqs97iiLlXHuSdH3BKza7rmbvGI0OMkXpwk69IH6tHDhv6E1oz-uKDgij3ArFXjZZ4KBKPvKhxvtvyIlGEmq3ZjtMWDiia3X_5xtsPEy2KjkjseqtDyA_1UKGq-vT5T0_Y7XOvImwThxA6pSNVJlOpTiLBPHpqHbY4GaZ4u66zO0aAIjyKsr5Po-cYloz-JwUc31tPmosfnmGJBWpZDm387pAc-XuwiaE67MxqkhaRuxS4yKI_cm4XdqjBHb1agJAVA7QMyyYW7XcZeCdh1mri-g.jpg"
+ },
+ "gholam": {
+  "text": "رفیق، این بنده خدا اومده ردپای تفکر دوتا مدل خفن یعنی Opus 4.8 و GPT-5.6-Sol رو زیر ذره‌بین گذاشته و مقایسه‌شون کرده. می‌گه Opus بیشتر تو فاز مفاهیم انتزاعی و پیچیده‌ست، اما Sol می‌ره سراغ کارهای اجرایی و انقدر فرضیه می‌سازه و امتحان می‌کنه تا بالاخره جواب رو دربیاره. به نظرش این روش اوپن‌ای‌آی هم علمی‌تره و هم بهینه‌تر، و احتمالاً دوباره اونا رو می‌بره صدر جدول. البته یه هشدار جدی هم داده که این سبک استدلال ممکنه باعث بشه مدل به یه زبان پیچیده و ناشناخته درونی رو بیاره و نظارت برهاش واسه مهندسا سخت‌تر بشه.\n\nچرا مهمه؟ چون نشون میده رقابت اصلی غول‌های فناوری دیگه سر تولید متن ساده نیست، بلکه سر شیوه استدلال، بهینه‌سازی تفکر و کنترل‌پذیری هوش مصنوعی پیشرفته‌ست.",
+  "date": "2026-08-11T18:20:32+00:00"
+ },
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/scaling01/status/2087181454098809287",
+   "domain": "x.com",
+   "author": {
+    "name": "Lisan al Gaib",
+    "handle": "scaling01",
+    "avatar": "https://pbs.twimg.com/profile_images/1831493788679761920/-q9w6dzd_200x200.jpg"
+   },
+   "text": "I looked at all the reasoning traces from Opus 4.8 and GPT-5.6-Sol\n \nto me it seems like Opus 4.8 is working on a much higher abstraction level, while Sol is just doing the dirty work. it just explores and keeps spamming new hypotheses until it finds a solution\n\nnot only is Sol more efficient in its reasoning, but I also think the Sol approach is more scalable and more sciency\n\nOpenAI has been on a very good trajectory this year, and I'm now more confident than ever, that they will be back in the lead soon\n\nbut they are also more likely to accidentally train a model that speaks neuralese and have a harder time monitoring their models",
+   "date": 1786457811,
+   "media": [],
+   "links": [],
+   "quote": {
+    "author": {
+     "name": "Lisan al Gaib",
+     "handle": "scaling01",
+     "avatar": "https://pbs.twimg.com/profile_images/1831493788679761920/-q9w6dzd_200x200.jpg"
+    },
+    "text": "raw GPT-5.6-Sol thinking traces\n\nOpenAI literally did The Office meme:\n\"Why use many words when few words do trick\"",
+    "date": 1786456361,
+    "media": [
+     {
+      "type": "image",
+      "src": "https://pbs.twimg.com/media/HPcivEgXsAAXvX7.jpg?name=orig",
+      "ratio": 0.2351
+     }
+    ],
+    "links": []
+   }
+  }
+ ],
+ "article": {
+  "title": "این بنده خدا اومده ردپای تفکر دوتا مدل خفن یعنی Opus 4.8 و GPT-5.6-Sol رو زیر ذره‌بین گذاشته و مقایسه‌شون کرده",
+  "source_title": "I looked at all the reasoning traces from Opus 4.8 and GPT-5.6-Sol",
+  "body": [
+   "رفیق، این بنده خدا اومده ردپای تفکر دوتا مدل خفن یعنی Opus 4.8 و GPT-5.6-Sol رو زیر ذره‌بین گذاشته و مقایسه‌شون کرده. می‌گه Opus بیشتر تو فاز مفاهیم انتزاعی و پیچیده‌ست، اما Sol می‌ره سراغ کارهای اجرایی و انقدر فرضیه می‌سازه و امتحان می‌کنه تا بالاخره جواب رو دربیاره. به نظرش این روش اوپن‌ای‌آی هم علمی‌تره و هم بهینه‌تر، و احتمالاً دوباره اونا رو می‌بره صدر جدول. البته یه هشدار جدی هم داده که این سبک استدلال ممکنه باعث بشه مدل به یه زبان پیچیده و ناشناخته درونی رو بیاره و نظارت برهاش واسه مهندسا سخت‌تر بشه."
+  ],
+  "why": "چون نشون میده رقابت اصلی غول‌های فناوری دیگه سر تولید متن ساده نیست، بلکه سر شیوه استدلال، بهینه‌سازی تفکر و کنترل‌پذیری هوش مصنوعی پیشرفته‌ست.",
+  "tags": [
+   "اوپن‌ای‌آی",
+   "آنتروپیک"
+  ]
+ },
+ "updated": "2026-10-25T12:30:29+00:00",
+ "gholam_checked": "2026-10-25T12:30:29+00:00"
+}

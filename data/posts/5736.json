@@ -1,0 +1,68 @@
+{
+ "id": 5736,
+ "url": "https://t.me/dlmehr/5736",
+ "date": "2026-10-08T02:20:17+00:00",
+ "text": "https://x.com/huggingapps/status/2107890821219619294?s=52",
+ "forwarded_from": "Amirreza",
+ "digest": false,
+ "hash": "adc4a03d11e6",
+ "media": [],
+ "preview": {
+  "url": "https://x.com/huggingapps/status/2107890821219619294?s=52",
+  "site": "X (formerly Twitter)",
+  "title": "Hugging Apps (@HuggingApps) on X",
+  "description": "Kokoro TTS, but 10× smaller\n🫰\nParadee distills Kokoro-82M into a 8M-param TTS\njust 9 MB of weights can speak faster than real time on a single CPU thread and runs on your toaster\n▶️\non Spaces …",
+  "image": "https://cdn4.telesco.pe/file/FJzLJYLJqppuMkg5Ta1CMmB5pTr50LvGeIRJK4EX7NAsDwpAXacO-t7ZX7JQvmqv70KyzXD1EHedNyEw_dVkmSBT9zVaXoRC4roLdlUltBWEj3Xk9riUcUHX07ITotaptFNDxREWxj0F7oi3JXHS9yDCzM6ZJ_ISQri1wrnpETg9CdFSlVK8FgdUwe1i_VALzMiB7MbQSY6BUvQ6YfcVr8H6zz-0EiGHgBXMLhAP1pgQOUcYk1i0sWvRuBNTf9Sk22R2eYTEe2snI2Bnd8G9jSoABJkDSiTP111gIzWnQHctnMOG_KViRd3DhUgWLJEgUdYdFUBPXUhApfgx_YYf9w.jpg"
+ },
+ "gholam": {
+  "text": "ببین رفیق، بچه‌های هوش مصنوعی اومدن مدل تبدیل متن به صدای معروف Kokoro-82M رو حسابی تقطیر کردن و یه نسخه تر و تمیز به اسم Paradee دادن بیرون که رسماً ده برابر کوچیک‌تر شده. این مدل جمع‌وجور کلاً ۸ میلیون پارامتر داره و حجم کل فایلش به ۹ مگابایت می‌رسه، یعنی انقدر سبک بار اومده که به شوخی می‌گن رو توستر هم اجرا می‌شه. از همه‌چیز جالب‌تر اینکه بدون هیچ کارت گرافیک خفنی و فقط با یه دونه هسته پردازنده معمولی، سریع‌تر از زمان واقعی برات متن رو می‌خونه و تحویل می‌ده.\n\nچرا مهمه؟ چون نشون می‌ده بالاخره می‌تونیم سیستم‌های صوتی باکیفیت هوش مصنوعی رو کاملاً آفلاین و سبک، حتی روی ضعیف‌ترین گجت‌ها و گوشی‌های ارزون‌قیمت پیاده کنیم.",
+  "date": "2026-10-08T02:20:36+00:00"
+ },
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/HuggingApps/status/2107890821219619294",
+   "domain": "x.com",
+   "author": {
+    "name": "Hugging Apps",
+    "handle": "HuggingApps",
+    "avatar": "https://pbs.twimg.com/profile_images/2074158869522104320/Zb8nrY2y_200x200.jpg"
+   },
+   "text": "Kokoro TTS, but 10× smaller 🫰\n\nParadee distills Kokoro-82M into a 8M-param TTS\n\njust 9 MB of weights can speak faster than real time on a single CPU thread and runs on your toaster\n\n▶️ on Spaces https://hf.co/spaces/hugging-apps/paradee",
+   "date": 1791395309,
+   "media": [
+    {
+     "type": "video",
+     "src": "https://video.twimg.com/amplify_video/2107890788134739968/vid/avc1/960x720/w22uuKT_WhUP5DJG.mp4?tag=29",
+     "poster": "https://pbs.twimg.com/amplify_video_thumb/2107890788134739968/img/AIdMYp13scSdTmdu.jpg",
+     "ratio": 0.75,
+     "duration": 16.4,
+     "gif": false
+    }
+   ],
+   "links": [
+    "https://hf.co/spaces/hugging-apps/paradee"
+   ]
+  },
+  {
+   "kind": "link",
+   "url": "https://huggingface.co/spaces/sahilmahendrakar/paradee",
+   "domain": "huggingface.co",
+   "title": "Paradee - a Hugging Face Space by sahilmahendrakar",
+   "description": "8M-param English TTS distilled from Kokoro-82M",
+   "image": "https://cdn-thumbnails.huggingface.co/social-thumbnails/spaces/sahilmahendrakar/paradee.png",
+   "site": "huggingface.co"
+  }
+ ],
+ "article": {
+  "title": "بچه‌های هوش مصنوعی اومدن مدل تبدیل متن به صدای معروف Kokoro-82M رو حسابی تقطیر کردن و یه نسخه تر و تمیز به اسم Paradee دادن بیرون که رسماً ده برابر کوچیک‌تر شده",
+  "source_title": "Kokoro TTS, but 10× smaller 🫰",
+  "body": [
+   "ببین رفیق، بچه‌های هوش مصنوعی اومدن مدل تبدیل متن به صدای معروف Kokoro-82M رو حسابی تقطیر کردن و یه نسخه تر و تمیز به اسم Paradee دادن بیرون که رسماً ده برابر کوچیک‌تر شده. این مدل جمع‌وجور کلاً ۸ میلیون پارامتر داره و حجم کل فایلش به ۹ مگابایت می‌رسه، یعنی انقدر سبک بار اومده که به شوخی می‌گن رو توستر هم اجرا می‌شه. از همه‌چیز جالب‌تر اینکه بدون هیچ کارت گرافیک خفنی و فقط با یه دونه هسته پردازنده معمولی، سریع‌تر از زمان واقعی برات متن رو می‌خونه و تحویل می‌ده."
+  ],
+  "why": "چون نشون می‌ده بالاخره می‌تونیم سیستم‌های صوتی باکیفیت هوش مصنوعی رو کاملاً آفلاین و سبک، حتی روی ضعیف‌ترین گجت‌ها و گوشی‌های ارزون‌قیمت پیاده کنیم.",
+  "tags": []
+ },
+ "updated": "2026-10-25T12:24:17+00:00",
+ "gholam_checked": "2026-10-25T12:24:17+00:00"
+}

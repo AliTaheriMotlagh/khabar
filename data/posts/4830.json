@@ -1,0 +1,57 @@
+{
+ "id": 4830,
+ "url": "https://t.me/dlmehr/4830",
+ "date": "2026-08-20T01:19:31+00:00",
+ "text": "https://fxtwitter.com/generalistai/status/2090161945307664621?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+ "forwarded_from": null,
+ "digest": false,
+ "hash": "743aecffeb9d",
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/generalistai/status/2090161945307664621?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+  "site": "🧵 Thread • FxTwitter",
+  "title": "Generalist (@GeneralistAI)",
+  "description": "Introducing GEN-1.5, a one-shot learner.\nIt can learn new tasks in a few seconds. Show it what to do, and it generalizes.\nThis capability emerged from pretraining on physical data at scale, as a step towards our mission of building general intelligence…",
+  "image": null
+ },
+ "gholam": {
+  "text": "رفیق، تیم Generalist از یه مدل خفن به اسم GEN-1.5 رونمایی کرده که یادگیریش اصطلاحاً تک‌شات یا همون در لحظه‌ست. قضیه از این قراره که این هوش مصنوعی توی چند ثانیه کارای جدید رو یاد می‌گیره؛ یعنی فقط کافیه یه بار بهش نشون بدی چی‌کار کنه تا سریع قلق دستش بیاد و تعمیمش بده. سازنده‌هاش می‌گن این توانایی عجیب بعد از پیش‌تمرین دادن مدل با حجم عظیمی از داده‌های دنیای واقعی به وجود اومده تا یه قدم بزرگ بردارن برای ساخت هوش عمومی توی دنیای فیزیکی و رباتیک.\n\nچرا مهمه؟ اهمیتش اینه که به جای ساعت‌ها کدنویسی و آموزش سخت به ربات‌ها، از این به بعد می‌شه با یه بار نشون دادن کار، اونا رو برای انجام هر عملیات فیزیکی توی دنیای واقعی آماده کرد.",
+  "date": "2026-08-20T01:19:49+00:00"
+ },
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/GeneralistAI/status/2090161945307664621",
+   "domain": "x.com",
+   "author": {
+    "name": "Generalist",
+    "handle": "GeneralistAI",
+    "avatar": "https://pbs.twimg.com/profile_images/1931416653654564864/DHg90Kqh_200x200.jpg"
+   },
+   "text": "Introducing GEN-1.5, a one-shot learner.\n\nIt can learn new tasks in a few seconds. Show it what to do, and it generalizes.\n\nThis capability emerged from pretraining on physical data at scale, as a step towards our mission of building general intelligence for the physical world.",
+   "date": 1787168415,
+   "media": [
+    {
+     "type": "video",
+     "src": "https://video.twimg.com/amplify_video/2090159530621693952/vid/avc1/1280x720/Ht03xrcuIFqme44N.mp4?tag=29",
+     "poster": "https://pbs.twimg.com/amplify_video_thumb/2090159530621693952/img/JoH5ZT27Xv2lg4NL.jpg",
+     "ratio": 0.5625,
+     "duration": 212.9,
+     "gif": false
+    }
+   ],
+   "links": []
+  }
+ ],
+ "article": {
+  "title": "تیم Generalist از یه مدل خفن به اسم GEN-1.5 رونمایی کرده که یادگیریش اصطلاحاً تک‌شات یا همون در لحظه‌ست",
+  "source_title": "Introducing GEN-1.5, a one-shot learner.",
+  "body": [
+   "رفیق، تیم Generalist از یه مدل خفن به اسم GEN-1.5 رونمایی کرده که یادگیریش اصطلاحاً تک‌شات یا همون در لحظه‌ست. قضیه از این قراره که این هوش مصنوعی توی چند ثانیه کارای جدید رو یاد می‌گیره؛ یعنی فقط کافیه یه بار بهش نشون بدی چی‌کار کنه تا سریع قلق دستش بیاد و تعمیمش بده. سازنده‌هاش می‌گن این توانایی عجیب بعد از پیش‌تمرین دادن مدل با حجم عظیمی از داده‌های دنیای واقعی به وجود اومده تا یه قدم بزرگ بردارن برای ساخت هوش عمومی توی دنیای فیزیکی و رباتیک."
+  ],
+  "why": "اهمیتش اینه که به جای ساعت‌ها کدنویسی و آموزش سخت به ربات‌ها، از این به بعد می‌شه با یه بار نشون دادن کار، اونا رو برای انجام هر عملیات فیزیکی توی دنیای واقعی آماده کرد.",
+  "tags": []
+ },
+ "updated": "2026-10-25T12:29:50+00:00",
+ "gholam_checked": "2026-10-25T12:29:50+00:00"
+}

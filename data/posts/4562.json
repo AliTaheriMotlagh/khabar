@@ -1,0 +1,59 @@
+{
+ "id": 4562,
+ "url": "https://t.me/dlmehr/4562",
+ "date": "2026-08-03T20:56:24+00:00",
+ "text": "https://fxtwitter.com/i/status/2084352161404920316",
+ "forwarded_from": "Parsa Razavi",
+ "digest": false,
+ "hash": "b6a78e6012e5",
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/i/status/2084352161404920316",
+  "site": "🧵 Thread • FxTwitter",
+  "title": "OpenAI (@OpenAI)",
+  "description": "An internal version of our next major model produced 10 new results on long-standing open problems in mathematics and theoretical computer science, using roughly $2,000 worth of tokens at GPT-5.6 Sol API rates.",
+  "image": null
+ },
+ "gholam": {
+  "text": "رفیق، مدل جدید OpenAI زده ۱۰ تا مسئله قفل و طلسم‌شده ریاضی و کامپیوتر رو که سال‌ها کسی نتونسته بود جواب بده حل کرده، اونم کلاً با دو هزار دلار خرج توکن!",
+  "date": "2026-08-03T20:56:35+00:00"
+ },
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/OpenAI/status/2084352161404920316",
+   "domain": "x.com",
+   "author": {
+    "name": "OpenAI",
+    "handle": "OpenAI",
+    "avatar": "https://pbs.twimg.com/profile_images/1885410181409820672/ztsaR0JW_200x200.jpg"
+   },
+   "text": "An internal version of our next major model produced 10 new results on long-standing open problems in mathematics and theoretical computer science, using roughly $2,000 worth of tokens at GPT-5.6 Sol API rates.",
+   "date": 1785783255,
+   "media": [
+    {
+     "type": "video",
+     "src": "https://video.twimg.com/amplify_video/2084344857267683328/vid/avc1/1280x720/k3LWd1E5gch0G-ug.mp4?tag=29",
+     "poster": "https://pbs.twimg.com/amplify_video_thumb/2084344857267683328/img/9itDUFuu6YD8pOdI.jpg",
+     "ratio": 0.5625,
+     "duration": 31.948,
+     "gif": false
+    }
+   ],
+   "links": []
+  }
+ ],
+ "article": {
+  "title": "مدل جدید OpenAI زده ۱۰ تا مسئله قفل و طلسم‌شده ریاضی و کامپیوتر رو که سال‌ها کسی نتونسته بود جواب بده حل کرده، اونم کلاً با دو هزار دلار خرج توکن",
+  "source_title": "An internal version of our next major model produced 10 new results on long-standing open problems in mathematics and theoretical computer…",
+  "body": [
+   "رفیق، مدل جدید OpenAI زده ۱۰ تا مسئله قفل و طلسم‌شده ریاضی و کامپیوتر رو که سال‌ها کسی نتونسته بود جواب بده حل کرده، اونم کلاً با دو هزار دلار خرج توکن!"
+  ],
+  "why": null,
+  "tags": [
+   "اوپن‌ای‌آی"
+  ]
+ },
+ "updated": "2026-10-25T12:31:04+00:00",
+ "gholam_checked": "2026-10-25T12:31:04+00:00"
+}

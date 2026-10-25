@@ -1,0 +1,59 @@
+{
+ "id": 5053,
+ "url": "https://t.me/dlmehr/5053",
+ "date": "2026-08-31T17:03:28+00:00",
+ "text": "https://fxtwitter.com/runwayml/status/2094463070466646019?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+ "forwarded_from": null,
+ "digest": false,
+ "hash": "d78cf9bc03e2",
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/runwayml/status/2094463070466646019?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+  "site": "🧵 Thread • FxTwitter",
+  "title": "Runway (@runwayml)",
+  "description": "Today, we're sharing new research on Solaris, our first Interface World Model.\nSolaris is a new kind of operating system that generates interactive interfaces frame by frame, in real time, with no code. We find that Solaris outperforms frontier LLMs when…",
+  "image": null
+ },
+ "gholam": {
+  "text": "ببین رفیق، بچه‌های شرکت Runway از یه دستاورد خفن به اسم Solaris رونمایی کردن که اولین مدل جهانی رابط کاربری به حساب میاد. این سیستم مثل یه سیستم‌عامل نسل جدید عمل می‌کنه و می‌تونه رابط‌های کاربری تعاملی رو فریم‌به‌فریم، در لحظه و بدون نیاز به حتی یه خط کدنویسی تولید کنه. طبق نتایج تحقیقاتشون، سولاریس توی ساخت این رابط‌ها و حفظ ساختار و اطلاعات، حتی از قدرتمندترین مدل‌های زبانی دنیا هم جلو زده و عملکرد خیلی بهتری ثبت کرده.\n\nاهمیتش اینه که آینده توسعه نرم‌افزار داره به سمتی می‌ره که هوش مصنوعی بدون معطلی و کدنویسی سنتی، هر محیط تعاملی که اراده کنی رو آنی برات بالا میاره.",
+  "date": "2026-08-31T17:03:39+00:00"
+ },
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/runwayml/status/2094463070466646019",
+   "domain": "x.com",
+   "author": {
+    "name": "Runway",
+    "handle": "runwayml",
+    "avatar": "https://pbs.twimg.com/profile_images/1999115192232292353/zOq5-uwB_200x200.jpg"
+   },
+   "text": "Today, we're sharing new research on Solaris, our first Interface World Model.\n\nSolaris is a new kind of operating system that generates interactive interfaces frame by frame, in real time, with no code. We find that Solaris outperforms frontier LLMs when generating new interfaces, across structural similarity and information retention. Read more and request early access at the link below.",
+   "date": 1788193883,
+   "media": [
+    {
+     "type": "video",
+     "src": "https://video.twimg.com/amplify_video/2094462045219438592/vid/avc1/1280x720/dcDmR_HRRDF9oHNm.mp4?tag=29",
+     "poster": "https://pbs.twimg.com/amplify_video_thumb/2094462045219438592/img/HzJNW_pBaNbGvXGh.jpg",
+     "ratio": 0.5625,
+     "duration": 82.708,
+     "gif": false
+    }
+   ],
+   "links": []
+  }
+ ],
+ "article": {
+  "title": "بچه‌های شرکت Runway از یه دستاورد خفن به اسم Solaris رونمایی کردن که اولین مدل جهانی رابط کاربری به حساب میاد",
+  "source_title": "Today, we're sharing new research on Solaris, our first Interface World Model.",
+  "body": [
+   "ببین رفیق، بچه‌های شرکت Runway از یه دستاورد خفن به اسم Solaris رونمایی کردن که اولین مدل جهانی رابط کاربری به حساب میاد. این سیستم مثل یه سیستم‌عامل نسل جدید عمل می‌کنه و می‌تونه رابط‌های کاربری تعاملی رو فریم‌به‌فریم، در لحظه و بدون نیاز به حتی یه خط کدنویسی تولید کنه. طبق نتایج تحقیقاتشون، سولاریس توی ساخت این رابط‌ها و حفظ ساختار و اطلاعات، حتی از قدرتمندترین مدل‌های زبانی دنیا هم جلو زده و عملکرد خیلی بهتری ثبت کرده."
+  ],
+  "why": "آینده توسعه نرم‌افزار داره به سمتی می‌ره که هوش مصنوعی بدون معطلی و کدنویسی سنتی، هر محیط تعاملی که اراده کنی رو آنی برات بالا میاره.",
+  "tags": [
+   "کدنویسی"
+  ]
+ },
+ "updated": "2026-10-25T12:28:28+00:00",
+ "gholam_checked": "2026-10-25T12:28:28+00:00"
+}

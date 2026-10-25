@@ -1,0 +1,78 @@
+{
+ "id": 4559,
+ "url": "https://t.me/dlmehr/4559",
+ "date": "2026-08-03T18:02:58+00:00",
+ "text": "https://fxtwitter.com/kimmonismus/status/2084229681012711598?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+ "forwarded_from": null,
+ "digest": false,
+ "hash": "e42b28f67cca",
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/kimmonismus/status/2084229681012711598?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+  "site": "FxTwitter",
+  "title": "Chubby ♨️ (@kimmonismus)",
+  "description": "Holy, those insanae releases: MiniMax released a 33B video model that generates synchronized stereo audio and runs on one RTX 5090.\nH3 combines text, images, video and audio references for generation and editing, with clips up to 15 seconds.\nComfyUI’s…",
+  "image": "https://cdn4.telesco.pe/file/d5-ndbmdkV0DbXEUstYrFQgJRr_aBF4BfVbqIkvvckobL17xfl5nQ1GPTrmmDo0uC3zr9vEvnQDX-sDkUrRgFM_7q5cshWYuKd4golrO0D_g4gw3gwbmGh8J5iLCqt6pKdMlApCr_2XG4F3kUcMUkMFkqtzbm5HYKL14H2oI7bA6pl2i-7iei1cGIfECDZUDBQmLMLBVe6Z9tkkQl-0BONjRnNKYuKR0X5Oa9IcblOpupQ9YuryFrj3EKgd7fY2311AqQUeDOKISAbvOycg_5BH8hn1ehesbSaF6Q8kb2SjkunvV5FH5XKUd_F-etaYIlUTkW-NKEze4gQ1WL7Nuhw.jpg"
+ },
+ "gholam": {
+  "text": "داداشی، این شرکت MiniMax یه مدل ویدیویی خفن ۳۳ میلیاردی داده بیرون که رو کارت گرافیک RTX 5090 بالا میاد و ویدیوهای ۱۵ ثانیه‌ای با صدای استریو می‌سازه. البته ظاهرش رو اوپن‌سورس کردن، اما بخش‌های اصلیش هنوز رو سرورهای خودشونه و کلی هم محدودیت قانونی داره.",
+  "date": "2026-08-03T18:03:10+00:00"
+ },
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/kimmonismus/status/2084229681012711598",
+   "domain": "x.com",
+   "author": {
+    "name": "Chubby♨️",
+    "handle": "kimmonismus",
+    "avatar": "https://pbs.twimg.com/profile_images/1728327996375719936/RW7VBJfD_200x200.jpg"
+   },
+   "text": "Holy, those insanae releases: MiniMax released a 33B video model that generates synchronized stereo audio and runs on one RTX 5090. \n\nH3 combines text, images, video and audio references for generation and editing, with clips up to 15 seconds.\n\nComfyUI’s optimized stack is roughly 40GB, using dynamic RAM/SSD offloading to fit consumer GPUs. Early 5090 (!) tests produced five seconds at native 768p-class resolution in around 5.5 minutes.\n\nMiniMax calls it open source, but several core pieces remain server-side: context orchestration, 2K regeneration and sparse attention.\n\nOpen weights. Closed quality stack. Restricted geography. However, H3 is a major step for local video, but also a reminder that “downloadable” does not mean open source in general. \n\nBtw: It also cannot legally be used under its public license in Germany, the EU, US, UK or South Korea.",
+   "date": 1785754053,
+   "media": [
+    {
+     "type": "image",
+     "src": "https://pbs.twimg.com/media/HOyryhjWUAAZjh6.jpg?name=orig",
+     "ratio": 0.7253
+    }
+   ],
+   "links": [],
+   "quote": {
+    "author": {
+     "name": "MiniMax (official)",
+     "handle": "MiniMax_AI",
+     "avatar": "https://pbs.twimg.com/profile_images/1875100548535574529/VxHk9HyU_200x200.jpg"
+    },
+    "text": "MiniMax-H3 Is Now Publicly Available\nhttps://huggingface.co/MiniMaxAI/MiniMax-H3",
+    "date": 1785724757,
+    "media": [
+     {
+      "type": "video",
+      "src": "https://video.twimg.com/amplify_video/2084105994301501440/vid/avc1/1280x720/3LZjyF7HVA5CjpO1.mp4?tag=29",
+      "poster": "https://pbs.twimg.com/amplify_video_thumb/2084105994301501440/img/CSEfiQF3Na0AEs9h.jpg",
+      "ratio": 0.5625,
+      "duration": 41.513,
+      "gif": false
+     }
+    ],
+    "links": [
+     "https://huggingface.co/MiniMaxAI/MiniMax-H3"
+    ]
+   }
+  }
+ ],
+ "article": {
+  "title": "این شرکت MiniMax یه مدل ویدیویی خفن ۳۳ میلیاردی داده بیرون که رو کارت گرافیک RTX 5090 بالا میاد و ویدیوهای ۱۵ ثانیه‌ای با صدای استریو می‌سازه",
+  "source_title": "Holy, those insanae releases: MiniMax released a 33B video model that generates synchronized stereo audio and runs on one RTX 5090.",
+  "body": [
+   "داداشی، این شرکت MiniMax یه مدل ویدیویی خفن ۳۳ میلیاردی داده بیرون که رو کارت گرافیک RTX 5090 بالا میاد و ویدیوهای ۱۵ ثانیه‌ای با صدای استریو می‌سازه. البته ظاهرش رو اوپن‌سورس کردن، اما بخش‌های اصلیش هنوز رو سرورهای خودشونه و کلی هم محدودیت قانونی داره."
+  ],
+  "why": null,
+  "tags": [
+   "چین"
+  ]
+ },
+ "updated": "2026-10-25T12:31:05+00:00",
+ "gholam_checked": "2026-10-25T12:31:05+00:00"
+}

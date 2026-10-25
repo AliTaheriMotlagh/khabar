@@ -2,16 +2,23 @@
  "id": 5921,
  "url": "https://t.me/dlmehr/5921",
  "date": "2026-10-16T02:35:47+00:00",
- "edited": false,
- "views": "177",
  "text": "https://fxtwitter.com/farzyness/status/2110911646004564215?s=20",
  "forwarded_from": "Hossein Zakariaee",
  "digest": false,
  "hash": "e9ce58655412",
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/farzyness/status/2110911646004564215?s=20",
+  "site": "🧵 Thread • FxTwitter",
+  "title": "Farzad 🇺🇸 🇮🇷 (@farzyness)",
+  "description": "Tesla's New Roadster Recharges Its Own Air Tank",
+  "image": null
+ },
  "gholam": {
   "text": "ببین رفیق، خبر رسیده تسلا تو نسل جدید «رودستر» دست به یه ابتکار خفن زده و قراره مخزن هوای فشرده ماشین خودش به‌طور خودکار شارژ بشه. ماجرا همون پکیج معروف فضایی اسپیس‌ایکسه که با خروج باد با فشار بالا، شتاب هیولایی به ماشین می‌ده و حالا دیگه لازم نیست راننده غصه پر کردن دستی کپسول‌ها رو بخوره. ایلان ماسک از قدیم قول داده بود این غول برقی زمین رو چنگ بزنه و این حرکت نشون میده تراسترهای هوا همیشه آماده‌ی تخته‌گاز رفتنن.\n\nچرا مهمه؟ اهمیتش اینه که ترکیب تکنولوژی موشک با سوپراسپرت‌های شهری داره عملی میشه و رانندگی با شتاب ماورایی رو بدون دردسر اضافه وارد خیابون‌ها می‌کنه.",
   "date": "2026-10-16T02:36:01+00:00"
  },
+ "gholam_checked": "2026-10-24T23:35:32+00:00",
  "links": [
   {
    "kind": "tweet",
@@ -46,14 +53,6 @@
    "links": []
   }
  ],
- "media": [],
- "preview": {
-  "url": "https://fxtwitter.com/farzyness/status/2110911646004564215?s=20",
-  "site": "🧵 Thread • FxTwitter",
-  "title": "Farzad 🇺🇸 🇮🇷 (@farzyness)",
-  "description": "Tesla's New Roadster Recharges Its Own Air Tank",
-  "image": null
- },
  "article": {
   "title": "خبر رسیده تسلا تو نسل جدید «رودستر» دست به یه ابتکار خفن زده و قراره مخزن هوای فشرده ماشین خودش به‌طور خودکار شارژ بشه",
   "source_title": "Tesla's New Roadster Recharges Its Own Air Tank",
@@ -65,6 +64,5 @@
    "ایلان ماسک"
   ]
  },
- "updated": "2026-10-24T23:35:32+00:00",
- "gholam_checked": "2026-10-24T23:35:32+00:00"
+ "updated": "2026-10-25T11:54:11+00:00"
 }

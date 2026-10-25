@@ -1,0 +1,54 @@
+{
+ "id": 4804,
+ "url": "https://t.me/dlmehr/4804",
+ "date": "2026-08-18T19:15:11+00:00",
+ "text": "https://www.anthropic.com/engineering/effective-harnesses-for-long-running-agents",
+ "forwarded_from": "ALI ABBASI",
+ "digest": false,
+ "hash": "dc5c4472b67f",
+ "media": [],
+ "preview": {
+  "url": "https://anthropic.com/engineering/effective-harnesses-for-long-running-agents",
+  "site": "Anthropic",
+  "title": "Effective harnesses for long-running agents",
+  "description": "Anthropic is an AI safety and research company that's working to build reliable, interpretable, and steerable AI systems.",
+  "image": "https://cdn4.telesco.pe/file/OIcurQ-J2zDr2T285P-BSmSD7kzn7fpU9SA5rnVp7rVe-0w3urJ4DL9sGzTYk_gZkwQc2zTEbXW4TNteW_RGmSCuzuH8s0JGWx6ef7676awgbl2ve-HTnoonth3CNTy0swfMsAvUGSFHZP6P4NVCZ0Ha89bZN8Y2WYYYSzdTda5GBPbw8cXRVIo9ZSAKuL1RgicxFD4OAFUFFXWYyhw6STTYIoVwfNVwjO0G9ge9zxn13Pw6WwdmhteAo0z6iRxLKyNLQP-mUE-4bC9ezcjCVm8Tu77F34ckLt7vLtTmtBdzLCvSvAVi_UgwdVj1v8TXB2Jm6eIckPllwyMFsOKimA.jpg"
+ },
+ "gholam": {
+  "text": "رفقا، شرکت انتروپیک یه راهکار مشتی برای حل یکی از بزرگ‌ترین دردسرهای ایجنت‌های هوش مصنوعی رو کرده؛ مشکلی که باعث می‌شد مدل‌ها وسط پروژه‌های سنگین و چندروزه، یا به خاطر پر شدن حافظه کار رو نصفه‌کاره ول کنن یا الکی ادعا کنن کار تموم شده. حالا سیستم رو دو مرحله‌ای کردن: اول یه ایجنت راه‌انداز میاد کل ساختار پروژه و لیست تمام امکانات لازم رو توی یه فایل ساختاریافته می‌چینه و با گیت همه‌چیز رو مرتب می‌کنه. بعدش ایجنت کدنویس میاد و قدم‌به‌قدم سراغ هر قابلیت می‌ره، با ابزارهای خودکار توی مرورگر مثل یه آدم واقعی برنامه رو تست می‌کنه و گزارش پیشرفتش رو ثبت می‌کنه تا توی نوبت‌های بعدی چیزی از قلم نیفته. با این فرمون، کلود موفق شده پروژه‌های بزرگی مثل ساخت کامل وب‌اپلیکیشن رو بدون به‌هم‌ریختگی حافظه جمع کنه.\n\nاهمیتش اینه که نشون میده با چارچوب‌بندی و دیسیپلین درست برنامه‌نویسی، محدودیت حافظه هوش مصنوعی دور زده می‌شه و راه برای ساخت نرم‌افزارهای پیچیده و کاملاً خودکار هموار می‌گرده.",
+  "date": "2026-08-18T19:15:22+00:00"
+ },
+ "links": [
+  {
+   "kind": "link",
+   "url": "https://www.anthropic.com/research/effective-harnesses-for-long-running-agents",
+   "domain": "anthropic.com",
+   "title": "Effective harnesses for long-running agents",
+   "description": "How an initializer agent and an incremental coding agent help the Claude Agent SDK make steady progress across many context windows.",
+   "image": "https://www-cdn.anthropic.com/images/4zrzovbb/website/a6ad5022af5127422540a05592c8ff6e8c084f5d-1200x630.jpg",
+   "site": "anthropic.com"
+  },
+  {
+   "kind": "link",
+   "url": "https://www.anthropic.com/research/effective-harnesses-for-long-running-agents",
+   "domain": "anthropic.com",
+   "title": "Effective harnesses for long-running agents",
+   "description": "How an initializer agent and an incremental coding agent help the Claude Agent SDK make steady progress across many context windows.",
+   "image": "https://www-cdn.anthropic.com/images/4zrzovbb/website/a6ad5022af5127422540a05592c8ff6e8c084f5d-1200x630.jpg",
+   "site": "anthropic.com"
+  }
+ ],
+ "article": {
+  "title": "رفقا، شرکت انتروپیک یه راهکار مشتی برای حل یکی از بزرگ‌ترین دردسرهای ایجنت‌های هوش مصنوعی رو کرده",
+  "source_title": "Effective harnesses for long-running agents",
+  "body": [
+   "رفقا، شرکت انتروپیک یه راهکار مشتی برای حل یکی از بزرگ‌ترین دردسرهای ایجنت‌های هوش مصنوعی رو کرده؛ مشکلی که باعث می‌شد مدل‌ها وسط پروژه‌های سنگین و چندروزه، یا به خاطر پر شدن حافظه کار رو نصفه‌کاره ول کنن یا الکی ادعا کنن کار تموم شده. حالا سیستم رو دو مرحله‌ای کردن: اول یه ایجنت راه‌انداز میاد کل ساختار پروژه و لیست تمام امکانات لازم رو توی یه فایل ساختاریافته می‌چینه و با گیت همه‌چیز رو مرتب می‌کنه. بعدش ایجنت کدنویس میاد و قدم‌به‌قدم سراغ هر قابلیت می‌ره، با ابزارهای خودکار توی مرورگر مثل یه آدم واقعی برنامه رو تست می‌کنه و گزارش پیشرفتش رو ثبت می‌کنه تا توی نوبت‌های بعدی چیزی از قلم نیفته. با این فرمون، کلود موفق شده پروژه‌های بزرگی مثل ساخت کامل وب‌اپلیکیشن رو بدون به‌هم‌ریختگی حافظه جمع کنه."
+  ],
+  "why": "نشون میده با چارچوب‌بندی و دیسیپلین درست برنامه‌نویسی، محدودیت حافظه هوش مصنوعی دور زده می‌شه و راه برای ساخت نرم‌افزارهای پیچیده و کاملاً خودکار هموار می‌گرده.",
+  "tags": [
+   "آنتروپیک"
+  ]
+ },
+ "updated": "2026-10-25T12:29:59+00:00",
+ "gholam_checked": "2026-10-25T12:29:59+00:00"
+}

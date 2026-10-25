@@ -2,16 +2,23 @@
  "id": 5899,
  "url": "https://t.me/dlmehr/5899",
  "date": "2026-10-14T22:08:04+00:00",
- "edited": true,
- "views": "174",
  "text": "https://fxtwitter.com/danprimack/status/2110444448937308569?s=52&t=F41Qa04r48Mef_j_XjBneQ",
  "forwarded_from": null,
  "digest": false,
  "hash": "df5c420f3652",
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/danprimack/status/2110444448937308569?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+  "site": "FxTwitter · axios.com",
+  "title": "Dan Primack (@danprimack)",
+  "description": "Scooplet: a16z has laid off most of its exec recruiting team\nhttps://www.axios.com/2026/10/14/andreessen-horowitz-lays-off-exec-talent-team",
+  "image": "https://cdn4.telesco.pe/file/Qn2p6DUGehwnqf-coOGtGscP5KGbJko-EMl2LtPu2ts8ucIFH2zgc8WsQVuikBLLr8cc4ecUUo1dp1JgdiqSRAzJ9V71tzPqlghHCsigqHSApamtDGe_xZ6gsPbcgmWYa0lMO_04cOkcLtsoO8xwwzlPzkpDsDxWkV8umTrkfxjEEoRrZXzJj3-pQ3Zv_mzDJorgxpzJlC03ZyXFjVteEC_pZNXj-sd126h_U9sDqIZptnENbsyW5e-ARQmg-gHh7HWY84DmW3vh59BQBItoHh66Q1jN2o4A1zUVwtHXbwxk21VlIFzAZU52vy1gK-bCZND2P9hba0enRlOP8pFr4Q.jpg"
+ },
  "gholam": {
   "text": "رفیق، خبر دست‌اول رسیده که غول سرمایه‌گذاری خطرپذیر سیلیکون‌ولی، یعنی همون شرکت معروف a16z یا آندرسن هوروویتز، بخش اعظم تیم جذب مدیران ارشدش رو مرخص کرده. دن پریماک از رسانه اکسیوس این خبر رو رو کرده و گفته این صندوق بزرگ، تصمیم گرفته بیشتر بچه‌هایی رو که کارشون پیدا کردن و شکار مدیرای کله‌گنده برای استارتاپ‌های پورتفولیوشون بوده، تعدیل کنه. تو روزگاری که وضعیت سرمایه‌گذاری استارتاپی حسابی پیچیده و استخدام تو دنیای تک کند شده، این حرکت نشون میده که حتی گردن‌کلفت‌ترین صندوق‌های جهان هم دارن هزینه‌هاشون رو جمع‌وجور می‌کنن و فرم بازی رو عوض می‌کنن.\n\nچرا مهمه؟ اهمیتش اینه که وقتی بزرگ‌ترین صندوق سیلیکون‌ولی استخدام مدیران اجرایی رو ترمز می‌زنه، نشون میده روزهای استخدام‌های هیجانی و حقوق‌های نجومی استارتاپی رسماً ته کشیده.",
   "date": "2026-10-14T22:08:19+00:00"
  },
+ "gholam_checked": "2026-10-24T23:35:36+00:00",
  "links": [
   {
    "kind": "tweet",
@@ -37,18 +44,6 @@
    ]
   }
  ],
- "media": [],
- "preview": {
-  "url": "https://fxtwitter.com/danprimack/status/2110444448937308569?s=52&t=F41Qa04r48Mef_j_XjBneQ",
-  "site": "FxTwitter · axios.com",
-  "title": "Dan Primack (@danprimack)",
-  "description": "Scooplet: a16z has laid off most of its exec recruiting team\nhttps://www.axios.com/2026/10/14/andreessen-horowitz-lays-off-exec-talent-team",
-  "image": {
-   "src": "media/5899/preview.webp",
-   "width": 200,
-   "height": 200
-  }
- },
  "article": {
   "title": "خبر دست‌اول رسیده که غول سرمایه‌گذاری خطرپذیر سیلیکون‌ولی، یعنی همون شرکت معروف a16z یا آندرسن هوروویتز، بخش اعظم تیم جذب مدیران ارشدش رو مرخص کرده",
   "source_title": "Scooplet: a16z has laid off most of its exec recruiting team",
@@ -58,6 +53,5 @@
   "why": "اهمیتش اینه که وقتی بزرگ‌ترین صندوق سیلیکون‌ولی استخدام مدیران اجرایی رو ترمز می‌زنه، نشون میده روزهای استخدام‌های هیجانی و حقوق‌های نجومی استارتاپی رسماً ته کشیده.",
   "tags": []
  },
- "updated": "2026-10-24T23:35:36+00:00",
- "gholam_checked": "2026-10-24T23:35:36+00:00"
+ "updated": "2026-10-25T11:54:11+00:00"
 }

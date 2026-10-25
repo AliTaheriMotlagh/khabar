@@ -1,0 +1,62 @@
+{
+ "id": 5304,
+ "url": "https://t.me/dlmehr/5304",
+ "date": "2026-09-15T15:23:35+00:00",
+ "text": "https://fxtwitter.com/wallstengine/status/2099863041534025739?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+ "forwarded_from": null,
+ "digest": false,
+ "hash": "2e3bcd37881b",
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/wallstengine/status/2099863041534025739?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+  "site": "FxTwitter",
+  "title": "Wall St Engine (@wallstengine)",
+  "description": "$META TO ROLL OUT TWO NEW IN-HOUSE AI CHIPS IN 2027, PLANS 1GW+ OF CUSTOM SILICON CAPACITY\nMeta plans to begin deploying its new MTIA 450 chip, code-named Arke, across data centers in the first half of 2027, as it pushes to reduce the cost and energy required…",
+  "image": "https://cdn4.telesco.pe/file/Ezl_rvyFP0_OREOhf769txgIp1DY0TcHzAuOhc6UgRIpmHWIZvntGu-yA9qLYIr2bH9b2AQjo0WcEczPGk6HFU8lm3GAEdNHO5eNgf3DL6C8vIrDmrUVrAdQZrTh857kvsgAqYaU-u8rTgBEzk0DsLORp-rU82uD0kgu44TzxTZs66qvZsnxmWa1krdTUxDU3SVK1HqCqJkNVQnP9YQbZW_scGYtQAHKywh92mZy6sXykIqAKjjljBGreV9Ien9b3d47ZFMAdZ5FVZEfw7gXsdkU28w39ZA3xWvHlYQho4M7Z0wTPHimB24ScB5b-rUx_KgKzh4qRKc1r_qx0zdHqg.jpg"
+ },
+ "gholam": {
+  "text": "رفیق، متا رسماً آستین‌ها رو زده بالا و می‌خواد تا سال ۲۰۲۷ با دو تا چیپ اختصاصی هوش مصنوعی به اسم‌های «آرک» و «استرید»، حسابی تو دیتاسنترهاش گردوخاک راه بندازه. زاکربرگ و تیمش با کمک برودکام و غول تراشه‌سازی تایوان یعنی TSMC، برنامه‌ریزی کردن که بیش از یک گیگاوات ظرفیت پردازشی اختصاصی دست‌وپا کنن تا از پس هزینه‌های وحشتناک برق و پردازش مدل‌ها بربیان. اینا حتی یه پروژه قبلی رو به‌خاطر سی درصد گرون‌تر تموم شدنش کنسل کردن تا تمام تمرکزشون رو بذارن روی اجرای فوق‌العاده ارزون هوش مصنوعی توی مقیاس غول‌آسا. آزمایش‌های اولیه هم نشون داده این تراشه‌ها کارشون درسته و از روز اول راحت مدل‌های سنگین متا و علی‌بابا و دیپ‌سیک رو زیر بار بردن تا زورشون رو به رخ سیستم‌های انویدیا بکشن.\n\nاهمیتش اینه که غول‌های فناوری دارن یواش‌یواش بند نافشون رو از انویدیا قیچی می‌کنن تا هم از زیر باج هزینه‌های سنگین دربیان، هم تو بازی هوش مصنوعی دست بالا رو داشته باشن.",
+  "date": "2026-09-15T15:23:47+00:00"
+ },
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/wallstengine/status/2099863041534025739",
+   "domain": "x.com",
+   "author": {
+    "name": "Wall St Engine",
+    "handle": "wallstengine",
+    "avatar": "https://pbs.twimg.com/profile_images/1691846947857178624/oZp5wB4r_200x200.jpg"
+   },
+   "text": "$META TO ROLL OUT TWO NEW IN-HOUSE AI CHIPS IN 2027, PLANS 1GW+ OF CUSTOM SILICON CAPACITY\n\nMeta plans to begin deploying its new MTIA 450 chip, code-named Arke, across data centers in the first half of 2027, as it pushes to reduce the cost and energy required to run AI models.\n\nThe next-generation MTIA 500, code-named Astrid, is expected to finish design work in roughly a month and enter data centers by the end of 2027. Meta expects Astrid to be deployed even more broadly than Arke.\n\nMeta is working with Broadcom $AVGO on chip design and TSMC on manufacturing.\n\nThe company has already committed to more than 1 gigawatt of capacity using its custom chips over a 12-month period and expects deployment to accelerate after that.\n\nMeta received its first 12 Arke chips from TSMC on Sept. 1. Early testing showed performance within 2% to 3% of simulations, and the chips were able to run models from Meta, DeepSeek and Alibaba on the first day.\n\nThe chips are designed primarily as general-purpose inference “workhorses,” rather than for the fastest latency-sensitive workloads. Meta says its close coordination between its AI teams and chip designers allows the hardware to deliver better performance per watt and per dollar for its own workloads than current NVIDIA systems.\n\nMeta also canceled a previously planned chip called Olympus, which was intended to handle both AI training and inference, after determining that such a design could cost roughly 30% more. The company is instead concentrating its custom silicon roadmap on lower-cost inference at gigawatt scale.\n\nAfter Astrid, Meta plans to focus future generations on higher speed and throughput, including using fiber-optic technologies to improve performance.\n\nSource: Bloomberg",
+   "date": 1789481337,
+   "media": [
+    {
+     "type": "image",
+     "src": "https://pbs.twimg.com/media/HSQ2PidbkAATKQn.jpg?name=orig",
+     "ratio": 1.0
+    },
+    {
+     "type": "image",
+     "src": "https://pbs.twimg.com/media/HSQ2OGKbAAAtedI.png?name=orig",
+     "ratio": 1.0
+    }
+   ],
+   "links": []
+  }
+ ],
+ "article": {
+  "title": "متا رسماً آستین‌ها رو زده بالا و می‌خواد تا سال ۲۰۲۷ با دو تا چیپ اختصاصی هوش مصنوعی به اسم‌های «آرک» و «استرید»، حسابی تو دیتاسنترهاش گردوخاک راه بندازه",
+  "source_title": "$META TO ROLL OUT TWO NEW IN-HOUSE AI CHIPS IN 2027, PLANS 1GW+ OF CUSTOM SILICON CAPACITY",
+  "body": [
+   "رفیق، متا رسماً آستین‌ها رو زده بالا و می‌خواد تا سال ۲۰۲۷ با دو تا چیپ اختصاصی هوش مصنوعی به اسم‌های «آرک» و «استرید»، حسابی تو دیتاسنترهاش گردوخاک راه بندازه. زاکربرگ و تیمش با کمک برودکام و غول تراشه‌سازی تایوان یعنی TSMC، برنامه‌ریزی کردن که بیش از یک گیگاوات ظرفیت پردازشی اختصاصی دست‌وپا کنن تا از پس هزینه‌های وحشتناک برق و پردازش مدل‌ها بربیان. اینا حتی یه پروژه قبلی رو به‌خاطر سی درصد گرون‌تر تموم شدنش کنسل کردن تا تمام تمرکزشون رو بذارن روی اجرای فوق‌العاده ارزون هوش مصنوعی توی مقیاس غول‌آسا. آزمایش‌های اولیه هم نشون داده این تراشه‌ها کارشون درسته و از روز اول راحت مدل‌های سنگین متا و علی‌بابا و دیپ‌سیک رو زیر بار بردن تا زورشون رو به رخ سیستم‌های انویدیا بکشن."
+  ],
+  "why": "غول‌های فناوری دارن یواش‌یواش بند نافشون رو از انویدیا قیچی می‌کنن تا هم از زیر باج هزینه‌های سنگین دربیان، هم تو بازی هوش مصنوعی دست بالا رو داشته باشن.",
+  "tags": [
+   "تراشه",
+   "متا"
+  ]
+ },
+ "updated": "2026-10-25T12:26:56+00:00",
+ "gholam_checked": "2026-10-25T12:26:56+00:00"
+}

@@ -1,0 +1,53 @@
+{
+ "id": 4933,
+ "url": "https://t.me/dlmehr/4933",
+ "date": "2026-08-25T15:07:18+00:00",
+ "text": "https://fxtwitter.com/animaanandkumar/status/2092236528898675014?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+ "forwarded_from": null,
+ "digest": false,
+ "hash": "68ed616ac741",
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/animaanandkumar/status/2092236528898675014?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+  "site": "FxTwitter · reuters.com",
+  "title": "Prof. Anima Anandkumar (@AnimaAnandkumar)",
+  "description": "Excited to see @Reuters cover the launch of our startup Accelerated Understanding.\nWe are training large scale AI models that can simulate and understand physics to invent and discover. Our models understand the world directly in 4D (3D + time) and across…",
+  "image": "https://cdn4.telesco.pe/file/iYtSwpHZTn5qTQvvqWZWXcm85QVFXdiv0aILnZu8OFiXLv35sikmxvLfuQrbRrjZK74W61-rUmMuAsWj32PrX-TzQyrMzPf_4qc2oeb-GbhBAfNLxPUSVlNxmZktu0l-aAf_xWC8u9nJ74FEIhqmY6I25x_vWHbALDos-NkY3s3sBIroeJzPxIRmC1HB8d1fMrgmS9JWrqT6BVdsUxtCWqCz1tVxSE4uVftCIeQ4BCq1JF8vqreH899rg9ycAgJm7wuMJEv61IHYRlbRWGn7kXfNyOW8tyLj5mjrps6d_FA3q9_kLbtLrgYwnZXf7mxle1AqH4Z1NK9CuZyadopLSw.jpg"
+ },
+ "gholam": {
+  "text": "ببین آبجی و داداش من، پروفسور آنیما آناندکومار از راه‌اندازی استارتاپ جدیدش به اسم Accelerated Understanding خبر داده که قراره با هوش مصنوعی، فیزیکِ دنیای واقعی رو در ابعاد چهاربعدی (یعنی سه بعد فضا به‌علاوه زمان) شبیه‌سازی کنه و بفهمه. این تیم اومده یه مدل خفن با یک تریلیون پارامتر و طول بافت نجومی تا پنج تریلیون توکن موقع استنتاج ساخته تا برخلاف مدل‌های ویدیویی معمولی، قوانین فیزیک رو سرسری نگیره و واقعاً پدیده‌ها رو بسنجه. هدف اصلی‌شون اینه که گلوی ماجرای اختراعات علمی و آزمایش ایده‌ها رو باز کنن و توی طراحی دارو، تراشه‌ها، پیش‌بینی آب‌وهوا و حتی انرژی همجوشی تحول راه بندازن.\n\nاهمیتش اینه که به جای حدس و گمان‌های نمایشی، هوش مصنوعی حالا می‌تونه قوانین سخت فیزیک رو دقیقاً شبیه‌سازی کنه و سرعت کشفیات بزرگ علمی رو چند برابر جلو بندازه.",
+  "date": "2026-08-25T15:07:40+00:00"
+ },
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/AnimaAnandkumar/status/2092236528898675014",
+   "domain": "x.com",
+   "author": {
+    "name": "Prof. Anima Anandkumar",
+    "handle": "AnimaAnandkumar",
+    "avatar": "https://pbs.twimg.com/profile_images/2092855511029006336/DCV19usT_200x200.jpg"
+   },
+   "text": "Excited to see @Reuters cover the launch of our startup Accelerated Understanding.\n\nWe are training large scale AI models that can simulate and understand physics to invent and discover. Our models understand the world directly in 4D (3D + time) and across physical phenomena. Going full 4D requires massive context length, we have pushed it to a Trillion in training and exceeding 5 Trillion at inference.\n\nAI giving you a bigger haystack of ideas doesn’t help. The bottleneck for new inventions and discoveries is shifting from ideas to the ability to test them. With AI that can simulate and understand physics we are directly attacking this bottleneck.\n\nPeople have been trying to do this for a while now, but usually by taking shortcuts. Narrow surrogates are great if you happen to have enough of precisely the right data and your design loop stays in distribution. Video models look fantastic but sweep physical accuracy under the rug, and some static world models cut out physics altogether. A lot of interesting physics isn’t visual.\n\nWhat does not cutting corners look like? Space stays 3D and you also have time: so 4D in total. You also need multiple physical modalities in the same model, not just things you can see. That’s what we’ve built.\n\nScaling is the primary ingredient to make this work. To represent the world you need sufficient context, which in our case grows in 4 dimensions. Individual samples get so big they don’t fit into single accelerators or even full nodes anymore.\n\nWe’ve developed architectural tricks to make it work. We’ve pushed our models to 1T parameters during large scale pre-training and are able to train at up to a Trillion context when needed and do inference exceeding 5 Trillion context without any sub-sampling or patching.\n\nBuilding on prior successes of AI weather forecasting, fusion simulation, design of medical devices, drugs and chips, we wanted to see if scale and universality can benefit AI for physical understanding. With our teams’ experience in large-scale infrastructure and model training we’ve been able to pull it off.\n\nhttps://www.reuters.com/business/ai-founders-who-walked-away-bezos-backed-prometheus-model-universe-2026-08-25/\n\nhttps://acceleratedunderstanding.com/\n\n@accelerated_u @bjenik",
+   "date": 1787663035,
+   "media": [],
+   "links": [
+    "https://www.reuters.com/business/ai-founders-who-walked-away-bezos-backed-prometheus-model-universe-2026-08-25/",
+    "https://acceleratedunderstanding.com/"
+   ]
+  }
+ ],
+ "article": {
+  "title": "و داداش من، پروفسور آنیما آناندکومار از راه‌اندازی استارتاپ جدیدش به اسم Accelerated Understanding خبر داده که قراره با هوش مصنوعی، فیزیکِ دنیای واقعی رو در ابعاد چهاربعدی (یعنی سه بعد فضا به‌علاوه زمان) شبیه‌سازی کنه و بفهمه",
+  "source_title": "Excited to see @Reuters cover the launch of our startup Accelerated Understanding.",
+  "body": [
+   "ببین آبجی و داداش من، پروفسور آنیما آناندکومار از راه‌اندازی استارتاپ جدیدش به اسم Accelerated Understanding خبر داده که قراره با هوش مصنوعی، فیزیکِ دنیای واقعی رو در ابعاد چهاربعدی (یعنی سه بعد فضا به‌علاوه زمان) شبیه‌سازی کنه و بفهمه. این تیم اومده یه مدل خفن با یک تریلیون پارامتر و طول بافت نجومی تا پنج تریلیون توکن موقع استنتاج ساخته تا برخلاف مدل‌های ویدیویی معمولی، قوانین فیزیک رو سرسری نگیره و واقعاً پدیده‌ها رو بسنجه. هدف اصلی‌شون اینه که گلوی ماجرای اختراعات علمی و آزمایش ایده‌ها رو باز کنن و توی طراحی دارو، تراشه‌ها، پیش‌بینی آب‌وهوا و حتی انرژی همجوشی تحول راه بندازن."
+  ],
+  "why": "به جای حدس و گمان‌های نمایشی، هوش مصنوعی حالا می‌تونه قوانین سخت فیزیک رو دقیقاً شبیه‌سازی کنه و سرعت کشفیات بزرگ علمی رو چند برابر جلو بندازه.",
+  "tags": [
+   "استارتاپ"
+  ]
+ },
+ "updated": "2026-10-25T12:29:13+00:00",
+ "gholam_checked": "2026-10-25T12:29:13+00:00"
+}

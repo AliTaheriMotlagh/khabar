@@ -2,16 +2,23 @@
  "id": 5969,
  "url": "https://t.me/dlmehr/5969",
  "date": "2026-10-19T15:02:40+00:00",
- "edited": true,
- "views": "225",
  "text": "https://fxtwitter.com/kimmonismus/status/2112185581597860349?s=52&t=F41Qa04r48Mef_j_XjBneQ",
  "forwarded_from": null,
  "digest": false,
  "hash": "51ff3a394b1a",
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/kimmonismus/status/2112185581597860349?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+  "site": "🧵 Thread • FxTwitter",
+  "title": "Chubby ♨️ (@kimmonismus)",
+  "description": "official now: anthropic is preparing the release of their new model(s). Via The Information\nAnthropic is reportedly preparing a model that, when asked to fix one bug, can identify the broader class of problems behind it and ask whether it should address…",
+  "image": "https://cdn4.telesco.pe/file/EBp5CWLq9S8FmDqNkwCp2WwO6qNr3Wim7KMLXW8hC5Lufmj_cgGYu1HSw4nGW9KirPsJ-NNU33PyqWJrsCj23TwN6axG3efcvJLVGL9ehi_ViphRxED2P9ozyJB0ZWSfO8EuJIArg8fwXWlwm337ujl5wiShXhOhkrH8FcmsDK-8Kae5z6nAzoDFAKjAdL3aj_OfHfsAMs8PSPjf_Sl7WE6Uu5odIdWdZRJLvmq5D0wo9ugbmqa3s9DVFqzQQbE6B8KI-jJmV7PNjwdpu6ln1aL-eUXTrblY_aOZZqR3oSxI1eMLmN4ygTae4L_62vFYXd3KO0-NcuxiQvCZLT74LQ.jpg"
+ },
  "gholam": {
   "text": "رفیق، خبر رسیده که بچه‌های شرکت آنتروپیک دارن پشت صحنه یه مدل خفن و جدید رو آماده میدون می‌کنن که قراره حسابی دست‌پر بیاد. طبق گزارش‌ها و به نقل از تسترها، وقتی به این مدل جدید بگی یه باگ ساده رو رفع کنه، فقط به همون گیر نمیده؛ بلکه کل ریشه و خانواده اون ایراد رو درمیاره و بهت میگه می‌خوای بیفتم به جون بقیه‌ش و اونارم برات راست‌وریست کنم؟ هنوز تاریخ عرضه رسمی و اسم دقیق این مدل معلوم نیست، ولی شواهد نشون میده که نسبت به نسخه‌های فعلی یه جهش درست‌وحسابی تو راهه.\n\nاهمیتش اینه که دستیارهای هوش مصنوعی دارن از حالت یه پادوی ساده درمی‌ان و قراره مثل یه برنامه‌نویس کارکشته، ریشه مشکلات کد رو تشخیص بدن.",
   "date": "2026-10-19T15:03:01+00:00"
  },
+ "gholam_checked": "2026-10-24T23:11:43+00:00",
  "links": [
   {
    "kind": "tweet",
@@ -43,18 +50,6 @@
    "links": []
   }
  ],
- "media": [],
- "preview": {
-  "url": "https://fxtwitter.com/kimmonismus/status/2112185581597860349?s=52&t=F41Qa04r48Mef_j_XjBneQ",
-  "site": "🧵 Thread • FxTwitter",
-  "title": "Chubby ♨️ (@kimmonismus)",
-  "description": "official now: anthropic is preparing the release of their new model(s). Via The Information\nAnthropic is reportedly preparing a model that, when asked to fix one bug, can identify the broader class of problems behind it and ask whether it should address…",
-  "image": {
-   "src": "media/5969/preview.webp",
-   "width": 800,
-   "height": 490
-  }
- },
  "article": {
   "title": "خبر رسیده که بچه‌های شرکت آنتروپیک دارن پشت صحنه یه مدل خفن و جدید رو آماده میدون می‌کنن که قراره حسابی دست‌پر بیاد",
   "source_title": "official now: anthropic is preparing the release of their new model(s). Via The Information",
@@ -66,6 +61,5 @@
    "آنتروپیک"
   ]
  },
- "updated": "2026-10-24T23:11:43+00:00",
- "gholam_checked": "2026-10-24T23:11:43+00:00"
+ "updated": "2026-10-25T11:54:08+00:00"
 }

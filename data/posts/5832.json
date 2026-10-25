@@ -1,0 +1,56 @@
+{
+ "id": 5832,
+ "url": "https://t.me/dlmehr/5832",
+ "date": "2026-10-12T16:38:37+00:00",
+ "text": "https://fxtwitter.com/rohanpaul_ai/status/2109527405715161230?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+ "forwarded_from": null,
+ "digest": false,
+ "hash": "6c30dac0bf8f",
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/rohanpaul_ai/status/2109527405715161230?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+  "site": "🧵 Thread • FxTwitter",
+  "title": "Rohan Paul (@rohanpaul_ai)",
+  "description": "Self-improving agents have always needed a human to write the grader.\nA new AWS + HSBC paper removes that step: the grader evolves alongside the agent from 10 labeled examples and trains it about as well as ground truth.\nDouble Ratchet evolves the grader…",
+  "image": "https://cdn4.telesco.pe/file/M0yfapHOwFn47mgleLyqj9yqBIVXLx3y8N-CgLUhEpL_gUZYbEqFjiDYFoKGzEEInxLrUTs_3Mo0O-xBYu9TzTgfF4X3HPphtcEgwwrAPxZE8FqTMTGwdHqc3aeaKZetlIrAvLugpYY7KsTf9iA6iCayA1ax0-G2GFH10pUbZdsbALhCZqRgI1sXKr-JmFrGM54UtPq4UDngpLa55hLzLHXDCuTjt8ZQCzzSDnlW3MepCE962lfkjl9dKttXvZt257sWLB99F3ZS8p3oBWC-oFn9piW8FmZvXTV9IsNgvfYW4_Tb6Zjy2Q_n5J4oM-iO1Wv9OngWJHU-4hH67Sl4oQ.jpg"
+ },
+ "gholam": {
+  "text": "رفیق، قدیما اگه می‌خواستی یه ایجنت هوش مصنوعی خودش خودشو ارتقا بده، همیشه باید یه بنده خدایی می‌نشست و سیستم نمره‌دهی رو دستی براش تعریف می‌کرد، اما بچه‌های آمازون و بانک HSBC اومدن با یه روش جدید به اسم «دابل رَچِت» کلاً این بند و بساط رو جمع کردن. ماجرا اینه که تو این سیستم، خودِ نمره‌دهنده پا به پای مهارت‌های ایجنت و فقط با دیدن ۱۰ تا نمونه برچسب‌خورده رشد می‌کنه و چک می‌کنه که مدل الکی و مفت نمره نگیره. جالبیش اینجاست که این مدل رو توی کدنویسی، SQL و گزارش‌نویسی تست کردن و دیدن بین ۸۸ تا ۱۱۰ درصد هم‌پای معیارهای انسانی و واقعی جواب میده و کار رو درمیاره.\n\nاهمیتش اینه که نشون میده هوش مصنوعی داره به سمتی میره که بدون نیاز به ناظر انسانی و هزینه‌های سنگین، خودش عیب و ایراد خودشو بفهمه و دست به خودسازی بزنه.",
+  "date": "2026-10-12T16:38:54+00:00"
+ },
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/rohanpaul_ai/status/2109527405715161230",
+   "domain": "x.com",
+   "author": {
+    "name": "Rohan Paul",
+    "handle": "rohanpaul_ai",
+    "avatar": "https://pbs.twimg.com/profile_images/1816185267037859840/Fd18CH0v_200x200.jpg"
+   },
+   "text": "Self-improving agents have always needed a human to write the grader. \n\nA new AWS + HSBC paper removes that step: the grader evolves alongside the agent from 10 labeled examples and trains it about as well as ground truth.\n\nDouble Ratchet evolves the grader alongside the agent's skills, building it from small, mostly rule-based checks for 1 failure type each. A grader version is chosen for agreeing with 10 labeled examples, never for raising the agent's score.\n\nIt kept 88% to 110% of the gain that ground truth or a rubric gave the same skill loop, across code, SQL, and reports. With the safeguards removed, the grader passed 97% to 100% of outputs yet trained skills as well.",
+   "date": 1791785501,
+   "media": [
+    {
+     "type": "image",
+     "src": "https://pbs.twimg.com/media/HUaLEsJakAEvjA_.png?name=orig",
+     "ratio": 0.8586
+    }
+   ],
+   "links": []
+  }
+ ],
+ "article": {
+  "title": "قدیما اگه می‌خواستی یه ایجنت هوش مصنوعی خودش خودشو ارتقا بده، همیشه باید یه بنده خدایی می‌نشست و سیستم نمره‌دهی رو دستی براش تعریف می‌کرد، اما بچه‌های آمازون و بانک HSBC اومدن با یه روش جدید به اسم «دابل رَچِت» کلاً این بند و بساط رو جمع کردن",
+  "source_title": "Self-improving agents have always needed a human to write the grader.",
+  "body": [
+   "رفیق، قدیما اگه می‌خواستی یه ایجنت هوش مصنوعی خودش خودشو ارتقا بده، همیشه باید یه بنده خدایی می‌نشست و سیستم نمره‌دهی رو دستی براش تعریف می‌کرد، اما بچه‌های آمازون و بانک HSBC اومدن با یه روش جدید به اسم «دابل رَچِت» کلاً این بند و بساط رو جمع کردن. ماجرا اینه که تو این سیستم، خودِ نمره‌دهنده پا به پای مهارت‌های ایجنت و فقط با دیدن ۱۰ تا نمونه برچسب‌خورده رشد می‌کنه و چک می‌کنه که مدل الکی و مفت نمره نگیره. جالبیش اینجاست که این مدل رو توی کدنویسی، SQL و گزارش‌نویسی تست کردن و دیدن بین ۸۸ تا ۱۱۰ درصد هم‌پای معیارهای انسانی و واقعی جواب میده و کار رو درمیاره."
+  ],
+  "why": "نشون میده هوش مصنوعی داره به سمتی میره که بدون نیاز به ناظر انسانی و هزینه‌های سنگین، خودش عیب و ایراد خودشو بفهمه و دست به خودسازی بزنه.",
+  "tags": [
+   "آمازون"
+  ]
+ },
+ "updated": "2026-10-25T12:23:46+00:00",
+ "gholam_checked": "2026-10-25T12:23:46+00:00"
+}

@@ -1,0 +1,67 @@
+{
+ "id": 4982,
+ "url": "https://t.me/dlmehr/4982",
+ "date": "2026-08-27T15:01:58+00:00",
+ "text": "https://fxtwitter.com/GoogleDeepMind/status/2092961763553677387",
+ "forwarded_from": "Parsa Razavi",
+ "digest": false,
+ "hash": "547cb88c03a6",
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/GoogleDeepMind/status/2092961763553677387",
+  "site": "FxTwitter",
+  "title": "Google DeepMind (@GoogleDeepMind)",
+  "description": "In an industry first, we’re piloting double-blind evaluations for frontier AI.\nBy creating a secure environment where neither test prompts nor model weights are revealed, we can ensure external safety and performance evaluations of our models remain private…",
+  "image": "https://cdn4.telesco.pe/file/RNCO8IxHa10Ra7jcN4Y8ZgbP6yvzijUHDA6m-Q4GnTI0lt01w4Yf9NyhCGr_G8f_XX3hLkShTyCMbEjt5zgJJoAfQAsJxO8BE_hh_ENF2FBIDd7TttoIHudJw8f-IsDxfCx3UPNjbAZ5rEBJriI-JU73C2v3IoaPrRWM36YwWZ6jJ0-fYHjpektJdVd3129HzbIOOc28Cb5WiV-d-CHUFoJxVMqrUBxKQayjD0yaaEjlI8Ait2wASGTh9RuuGtX08P7BWebWioY7YuJKfdmqn1fY8WNSgpB2PTpdCx1Fu3LUcKQ7fn6ldDgNBKmdGgKbTz40f_Xb5NT3NIvvfXKEIQ.jpg"
+ },
+ "gholam": {
+  "text": "رفقا ببینید قضیه چیه؛ بچه‌های گوگل دیپ‌مایند برای اولین بار تو صنعت هوش مصنوعی دست به کار شدن و سیستم تست و ارزیابی «دو سو کور» رو راه انداختن تا خیال همه راحت بشه. داستان از این قراره که یه محیط امن ساختن تا ارزیاب‌های خارجی بدون دیدن وزن‌ها و کدهای مدل، کارایی و امنیتش رو بسنجن. از اون طرفم خود دیپ‌مایند سوال‌ها و پرامپت‌های تستی که ارزیاب‌ها می‌فرستن رو نمی‌بینه تا هیچ جای تقلبی باقی نمونه. با این کار، هم اسرار شرکت حفظ میشه و هم نتایج تست‌ها کاملاً بی‌طرف و معتبر درمیان.\n\nچرا مهمه؟ اهمیتش اینه که دیگه دست شرکتا برای دستکاری بنچمارک‌ها بسته میشه و ارزیابی‌های امنیتی هوش مصنوعی واقعاً مستقل و قابل‌اعتماد میشن.",
+  "date": "2026-08-27T15:02:10+00:00"
+ },
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/GoogleDeepMind/status/2092961763553677387",
+   "domain": "x.com",
+   "author": {
+    "name": "Google DeepMind",
+    "handle": "GoogleDeepMind",
+    "avatar": "https://pbs.twimg.com/profile_images/1695024885070737408/-M-HSH5P_200x200.jpg"
+   },
+   "text": "In an industry first, we’re piloting double-blind evaluations for frontier AI.\n\nBy creating a secure environment where neither test prompts nor model weights are revealed, we can ensure external safety and performance evaluations of our models remain private, robust, and trustworthy. → https://goo.gle/3St2xan",
+   "date": 1787835944,
+   "media": [
+    {
+     "type": "image",
+     "src": "https://pbs.twimg.com/media/HQuxgmIXAAAiNYV.jpg?name=orig",
+     "ratio": 1.25
+    }
+   ],
+   "links": [
+    "https://goo.gle/3St2xan"
+   ]
+  },
+  {
+   "kind": "link",
+   "url": "https://deepmind.google/blog/piloting-the-worlds-first-double-blind-ai-evaluations/?utm_source=x&utm_medium=social&utm_campaign=&utm_content=",
+   "domain": "deepmind.google",
+   "title": "Piloting the world's first double-blind AI evaluations",
+   "description": "Building trust in proprietary model benchmarks using cryptographically secure environments",
+   "image": "https://lh3.googleusercontent.com/fHN8sOK3p7BTKR4s-3lpYYnq5IEadmVKnqssJO4OmfL6remdC7E8voV-IEue8NPviKWUR7WtCtNTfsKZpld6y2jjwVhNAiqYL9-9EQzj5OURGXCCuug=w1200-h630-n-nu-rw",
+   "site": "Google DeepMind"
+  }
+ ],
+ "article": {
+  "title": "رفقا ببینید قضیه چیه؛ بچه‌های گوگل دیپ‌مایند برای اولین بار تو صنعت هوش مصنوعی دست به کار شدن و سیستم تست و ارزیابی «دو سو کور» رو راه انداختن تا خیال همه راحت بشه",
+  "source_title": "In an industry first, we’re piloting double-blind evaluations for frontier AI.",
+  "body": [
+   "رفقا ببینید قضیه چیه؛ بچه‌های گوگل دیپ‌مایند برای اولین بار تو صنعت هوش مصنوعی دست به کار شدن و سیستم تست و ارزیابی «دو سو کور» رو راه انداختن تا خیال همه راحت بشه. داستان از این قراره که یه محیط امن ساختن تا ارزیاب‌های خارجی بدون دیدن وزن‌ها و کدهای مدل، کارایی و امنیتش رو بسنجن. از اون طرفم خود دیپ‌مایند سوال‌ها و پرامپت‌های تستی که ارزیاب‌ها می‌فرستن رو نمی‌بینه تا هیچ جای تقلبی باقی نمونه. با این کار، هم اسرار شرکت حفظ میشه و هم نتایج تست‌ها کاملاً بی‌طرف و معتبر درمیان."
+  ],
+  "why": "اهمیتش اینه که دیگه دست شرکتا برای دستکاری بنچمارک‌ها بسته میشه و ارزیابی‌های امنیتی هوش مصنوعی واقعاً مستقل و قابل‌اعتماد میشن.",
+  "tags": [
+   "گوگل"
+  ]
+ },
+ "updated": "2026-10-25T12:28:52+00:00",
+ "gholam_checked": "2026-10-25T12:28:52+00:00"
+}

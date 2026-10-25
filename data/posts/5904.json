@@ -2,16 +2,23 @@
  "id": 5904,
  "url": "https://t.me/dlmehr/5904",
  "date": "2026-10-15T02:29:58+00:00",
- "edited": true,
- "views": "150",
  "text": "https://fxtwitter.com/timsuchanek/status/2110400343301382614?s=52&t=F41Qa04r48Mef_j_XjBneQ",
  "forwarded_from": null,
  "digest": false,
  "hash": "f64e7a15ede5",
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/timsuchanek/status/2110400343301382614?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+  "site": "🧵 Thread • FxTwitter",
+  "title": "Tim Suchanek (@TimSuchanek)",
+  "description": "Introducing Expand Fetch, a new way to scrape and crawl the web.\nYour agent has never seen the web. No wonder it gets basic questions wrong.\nTraditional Markdown APIs lose critical details. So we trained two System one models to change that:\nIris, a vision…",
+  "image": null
+ },
  "gholam": {
   "text": "ببین رفیق، تیم سوچانک و رفقاش یه ابزار خفن به اسم Expand Fetch دادن بیرون که کارش اسکرپ و وب‌گردی برای ایجنت‌های هوش مصنوعیه و قراره کلاً بازی رو عوض کنه. قضیه اینه که ایجنت‌ها تا حالا وب رو درست‌حسابی نمی‌دیدن و تو جواب دادن به سوالای ساده هم گیج می‌زدن، واسه همین اینا دو تا مدل ردیف کردن؛ یکی «آیریس» که مثل چشم آدمیزاد صفحه، جدول‌ها و آیکون‌ها رو می‌بینه و دومی «اکس‌ری» که دیتای مخفی پشت صحنه رو به صورت جیسون می‌کشه بیرون. تو تست‌هاشون روی بیش از هزار تا سوال سخت وب، این ابزار تونسته رکورد ۷۴ درصد دقت رو بزنه، در حالی که رقیب قبلیش فقط ۵۵ درصد گرفته بود، قیمتش هم هزار تا فچ به ازای یک دلاره و قشنگ نشون میده ایجنت چی رو از کجا خونده.\n\nاهمیتش اینه که دیگه هوش مصنوعی‌ها موقع وب‌گردی کورمال‌کورمال نمی‌رن و با دیدن ظاهر واقعی صفحات و دیتای پشتشون، سوتی‌هاشون تو تحلیل سایت‌ها به حداقل می‌رسه.",
   "date": "2026-10-15T02:30:16+00:00"
  },
+ "gholam_checked": "2026-10-24T23:35:35+00:00",
  "links": [
   {
    "kind": "tweet",
@@ -64,14 +71,6 @@
    "text": "Let your agent \nsee the web\nFetch and crawl with frontier system one models.\nFrontier models can't answer \nbasic questions about the web.\nBenchmarked Performance\nHow we measured\nMDBench Hardv1\nA set of hard web extraction cases that we curated together with our customers. They span enrichment, procurement, pricing and competitive intelligence, among other areas.\nIt intentionally targets what existing web-to-Markdown systems get wrong.\nIt is a question-answering benchmark: an agent gets only the page Markdown that each API returns and answers a question about what it says.\nTested on October 8, 2026.\nTry it on any page.\nPaste a URL, or open one of the examples, and see what your agent gets back.\nInstant web data on tap.\nFetch a page, crawl a site, or subscribe to changes.\nEvery page comes with accurate Markdown, plus the hidden JSON and a snapshot you can cite.\n- Iris Jev for the web. Iris is a vision model for the web. It reads the rendered page like you do and writes the main content as accurate Markdown. Navigation and footers go to the , one call away. The rest is noise, so it goes. Iris docs\n- X-Ray The hidden data, without a browser. Coordinates, flight gates and diagrams often live in JSON the page loads, not in its HTML. X-Ray, our second System 1 model, finds the parts that matter and drops the rest. X-Ray docs\n- Wayback Machine Every fetch becomes an asset you own. Verify every answer precisely. Every line links back to the element on the page it came from, even after the site changes. Hover to debug. Share to cite. Wayback Machine docs\n- Highlights Let your agent focus on what matters. If your agent already knows what it's looking for, Highlights saves over 95% of tokens with no loss in accuracy. Pass a query and get back only the passages that answer it. \n  - Faster TTFT\n  - Zero noise\nHighlights docs\n- Crawl anything with one command. Our crawler scales to millions of pages, so you don't need to manage state or processes. No extra cost for crawling: each page is one credit, the same as a Fetch.\n- A syncing engine for the web. WebSync rechecks every page on your schedule and streams each change as an event: a page added, a page changed with its diff, a page removed with the evidence. \n  - Monitor a site for changes\n  - A constant change feed\n  - A durable stream you can resume from where you left off\nGive your agent a brain on disk: a Markdown file per page, kept in sync.\nLet your agent pay attention to what matters.\nProgressive disclosure\nThe best of both worlds.\nOther tools make you choose the full page or a trimmed one. Your agent reads the main content first and asks for the rest only when it needs it: nothing lost, far fewer tokens.\nLossless\nNothing is thrown away.\nExisting web-to-Markdown tools follow hard-coded rules and lose crucial details in the conversion. The web is too complex for rules.\nIf something is still missing, progressive disclosure has you covered.\nToken efficient\n24% fewer tokens at scale.\nAt 5 million requests a month on Gemini 4, that is $576K a year.*\n*With JSON mode off. Input tokens only; the output is the same either way.\nOther Markdown APIs\n20,000 tokens a page · 100B tokens\nExpand, JSON mode off\n15,200 tokens a page · 76B tokens\n($2/M input, $10/M output)You save ~$576,000 a year\nGetting Started\nIt works out of the box without any configuration—JavaScript rendering, residential proxies, and bot protection are handled automatically for every request.\nPricing \nOnly pay for what you need\nPay as you go\nPopular\nPrepaid credits, $1 per 1,000.\nPay only for what you need. No monthly commitments.\nFAQ\nQuestions\nIsn't turning a web page into Markdown a solved problem?\nIt works for a news article and breaks on many other layouts. Converters guess the main content with fixed rules, the way reader mode does. On a pricing table, a product page or a dashboard, that guess drops the icons, flattens the table and misses the data the page loads. Iris looks at the rendered page instead, every element with its position, size and weight, and sorts each one into preserve, prune or appendix.\nWhy not hand my agent the raw HTML, or a browser?\nRaw HTML is mostly markup and scripts your agent pays tokens to read, and a JavaScript app arrives as an empty shell. A browser with screenshots works, but it is slow and expensive, and the tokens add up fast. Expand renders the page in a real browser for you and returns what it shows as Markdown, at API speed.\nHow do I know what my agent actually read?\nEach browser page fetch saves the captured page with every asset. Open expand.land/s/<snapshotId>/playground and click any line of the Markdown to see where it came from on the page, even after the site has changed. Share the link to cite it.\nWhat is the hidden JSON?\nThe data behind what a page shows, including values that never appear as text: a product's price, rating and stock, the coordinates on a map, a flight's gate. X-Ray reads that JSON, keeps the parts a question could be asked about and drops the"
   }
  ],
- "media": [],
- "preview": {
-  "url": "https://fxtwitter.com/timsuchanek/status/2110400343301382614?s=52&t=F41Qa04r48Mef_j_XjBneQ",
-  "site": "🧵 Thread • FxTwitter",
-  "title": "Tim Suchanek (@TimSuchanek)",
-  "description": "Introducing Expand Fetch, a new way to scrape and crawl the web.\nYour agent has never seen the web. No wonder it gets basic questions wrong.\nTraditional Markdown APIs lose critical details. So we trained two System one models to change that:\nIris, a vision…",
-  "image": null
- },
  "article": {
   "title": "تیم سوچانک و رفقاش یه ابزار خفن به اسم Expand Fetch دادن بیرون که کارش اسکرپ و وب‌گردی برای ایجنت‌های هوش مصنوعیه و قراره کلاً بازی رو عوض کنه",
   "source_title": "Introducing Expand Fetch, a new way to scrape and crawl the web.",
@@ -81,6 +80,5 @@
   "why": "دیگه هوش مصنوعی‌ها موقع وب‌گردی کورمال‌کورمال نمی‌رن و با دیدن ظاهر واقعی صفحات و دیتای پشتشون، سوتی‌هاشون تو تحلیل سایت‌ها به حداقل می‌رسه.",
   "tags": []
  },
- "updated": "2026-10-24T23:35:35+00:00",
- "gholam_checked": "2026-10-24T23:35:35+00:00"
+ "updated": "2026-10-25T11:54:11+00:00"
 }

@@ -1,0 +1,70 @@
+{
+ "id": 4781,
+ "url": "https://t.me/dlmehr/4781",
+ "date": "2026-08-17T05:10:32+00:00",
+ "text": "https://fxtwitter.com/boyuan__chen/status/2089041431499354507?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+ "forwarded_from": null,
+ "digest": false,
+ "hash": "f7a1ed2e6f3b",
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/boyuan__chen/status/2089041431499354507?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+  "site": "FxTwitter",
+  "title": "Boyuan Chen (@Boyuan__Chen)",
+  "description": "What if a drone could follow another drone simply by listening to the sound of flight?\nAfter more than 2 years of work, I'm excited to share SonicFly, our new work on embodied passive aeroacoustic perception. SonicFly enables one UAV to estimate and follow…",
+  "image": null
+ },
+ "gholam": {
+  "text": "رفیق، محققای رباتیک به سرپرستی بویان چن بعد از دو سال زحمت، از یه فناوری خفن به اسم «سونیک‌فلای» (SonicFly) رونمایی کردن که کارش تعقیب صوتی پهپادهاست. ماجرا اینه که یه پهپاد تعقیب‌کننده می‌تونه فقط و فقط با گوش دادن به صدای طبیعی پرواز و ملخ‌های پهپاد جلویی، مکانش رو حدس بزنه و سایه‌به‌سایه دنبالش بره. یعنی وسط پرواز توی فضای باز، هیچ نیازی به سیگنال جی‌پي‌اس، ارتباط رادیویی بین دو پهپاد یا حسگرهای محیطی نیست و همه‌چیز متکی به میکروفون‌ها و پردازش هوشمند خود پرنده‌ست.\n\nاهمیتش اینه که پهپادها حالا می‌تونن حتی توی شرایطی که دید دوربین کور باشه یا رادار و سیگنال‌های رادیویی از کار بیفتن، صرفاً با تکیه بر حس شنوایی هدفشون رو توی آسمون ردگیری کنن.",
+  "date": "2026-08-17T05:10:43+00:00"
+ },
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/Boyuan__Chen/status/2089041431499354507",
+   "domain": "x.com",
+   "author": {
+    "name": "Boyuan Chen",
+    "handle": "Boyuan__Chen",
+    "avatar": "https://pbs.twimg.com/profile_images/1617724216521924609/mqZf2cEa_200x200.jpg"
+   },
+   "text": "What if a drone could follow another drone simply by listening to the sound of flight?\n\nAfter more than 2 years of work, I'm excited to share SonicFly, our new work on embodied passive aeroacoustic perception. SonicFly enables one UAV to estimate and follow another using only the leader’s naturally generated flight sound, without GPS sharing, inter-robot communication, active acoustic signaling, or external sensing infrastructure.\n\nWhat sounded simple turned out to be a very challenging robotics problem. We went from designing the microphone array and understanding rotor acoustics to learning relative state and closing the loop for real outdoor aerial pursuit.\n\nPaper, video, code: https://generalroboticslab.com/SonicFly\n\nKudos to our amazing students Yanbaihui (Evelyn) Liu, Ravi Prakash, Li-Yu (Patrick) Lo, and Nils Roede! 🚁🎧\n\nI am also very grateful to our other lab members, in particular Tate Staples, Jiaxun Liu, and partner Ben Borger, who helped make this possible.",
+   "date": 1786901264,
+   "media": [
+    {
+     "type": "video",
+     "src": "https://video.twimg.com/amplify_video/2089038800152317952/vid/avc1/1280x720/B7rBcGYDt0erd9Ic.mp4?tag=29",
+     "poster": "https://pbs.twimg.com/amplify_video_thumb/2089038800152317952/img/H2K4LseA38_FjKNq.jpg",
+     "ratio": 0.5625,
+     "duration": 13.85,
+     "gif": false
+    }
+   ],
+   "links": [
+    "https://generalroboticslab.com/SonicFly"
+   ]
+  },
+  {
+   "kind": "link",
+   "url": "https://generalroboticslab.com/SonicFly",
+   "domain": "generalroboticslab.com",
+   "title": "General Robotics Lab | Duke University | Discovery Robotics Research",
+   "description": "Building discovery machines that learn, act, and collaborate by discovering how the world works. Research in embodied intelligence, robotics, AI, and machine learning.",
+   "image": "https://generalroboticslab.com/assets/images/GRL_Logo.png",
+   "site": "General Robotics Lab"
+  }
+ ],
+ "article": {
+  "title": "محققای رباتیک به سرپرستی بویان چن بعد از دو سال زحمت، از یه فناوری خفن به اسم «سونیک‌فلای» (SonicFly) رونمایی کردن که کارش تعقیب صوتی پهپادهاست",
+  "source_title": "What if a drone could follow another drone simply by listening to the sound of flight?",
+  "body": [
+   "رفیق، محققای رباتیک به سرپرستی بویان چن بعد از دو سال زحمت، از یه فناوری خفن به اسم «سونیک‌فلای» (SonicFly) رونمایی کردن که کارش تعقیب صوتی پهپادهاست. ماجرا اینه که یه پهپاد تعقیب‌کننده می‌تونه فقط و فقط با گوش دادن به صدای طبیعی پرواز و ملخ‌های پهپاد جلویی، مکانش رو حدس بزنه و سایه‌به‌سایه دنبالش بره. یعنی وسط پرواز توی فضای باز، هیچ نیازی به سیگنال جی‌پي‌اس، ارتباط رادیویی بین دو پهپاد یا حسگرهای محیطی نیست و همه‌چیز متکی به میکروفون‌ها و پردازش هوشمند خود پرنده‌ست."
+  ],
+  "why": "پهپادها حالا می‌تونن حتی توی شرایطی که دید دوربین کور باشه یا رادار و سیگنال‌های رادیویی از کار بیفتن، صرفاً با تکیه بر حس شنوایی هدفشون رو توی آسمون ردگیری کنن.",
+  "tags": [
+   "رباتیک"
+  ]
+ },
+ "updated": "2026-10-25T12:30:07+00:00",
+ "gholam_checked": "2026-10-25T12:30:07+00:00"
+}

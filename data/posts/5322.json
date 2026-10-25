@@ -1,0 +1,65 @@
+{
+ "id": 5322,
+ "url": "https://t.me/dlmehr/5322",
+ "date": "2026-09-16T16:15:37+00:00",
+ "text": "https://fxtwitter.com/nielsrogge/status/2100239244501430438?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+ "forwarded_from": null,
+ "digest": false,
+ "hash": "f16ea76251c9",
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/nielsrogge/status/2100239244501430438?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+  "site": "🧵 Thread • FxTwitter",
+  "title": "Niels Rogge (@NielsRogge)",
+  "description": "For anyone curious how Jev works, I made a visual explanation using @claudeai :)\nThis is based on the Qwen2.5-RLCD model which @harshagundal released on @huggingface\nThe idea is to replace autoregressive LLM generation by a single Transformer decoder (of…",
+  "image": "https://cdn4.telesco.pe/file/FhnJ9Hckc5AOI8O7bj79b8dfvhYPud2mIoWgRsY7-f6Re0HjHtfzfi3bNZqFITQMJYvuPlGD4jDU5t4qPoBo7qqeMYb8o0K4hkvQLAaX6Ig-5zG1Lcd8rRzYCYSsZBOlaDnrTfr7PoLeL22NsN0MLIxDcS2KrWtYVVAIKj88aNo4fpv7SvTyrxIUDYqPPQsGmwlj3YPTIUGIBqg2PktUvSDAF5XAltQ6HwRwUJylX8QcWIUCLTR8T6WScqEmOo-i359PaDumcAfSHcXVHBDnC6Xn7i9MUBINBXcw7Nb4hcbx3DlNzJA8ELr3CIVHc8ggXTuLHi1Lp5MZ-OZLzchJig.jpg"
+ },
+ "gholam": {
+  "text": "رفیق، نیلز روگه اومده با رسم شکل نشون داده این ابزار Jev که این روزا کلی سر و صدا کرده دقیقاً چطوری کار می‌کنه. ماجرا بر پایه مدل Qwen2.5-RLCD هارش گونداله و ایده‌ش اینه که به جای تولید کلمه به کلمه و کند خروجی جیسون (JSON)، کل ماجرا رو توی یه بار پردازش دکودر ترنسفورمر جمع کنه. سیستم میاد متن و اسکیما رو فقط یک‌بار پردازش و کش می‌کنه، بعدش برای هر فیلد مشخص، با همون کش قبلی فقط احتمال بهترین توکن رو بیرون می‌کشه. ته این فرمول ناب دو تا مزیت خفنه: سرعت موشکی توی خروجی دادن و تضمین صددرصدی اینکه جیسون نهایی کاملاً معتبر و بدون نقصه.\n\nاهمیتش اینه که بزرگ‌ترین دردسر برنامه‌نویس‌ها رو توی گرفتن خروجی ساختاریافته از هوش مصنوعی، یعنی کند بودن و خراب شدن فرمت جیسون، کلاً حل می‌کنه.",
+  "date": "2026-09-16T16:15:48+00:00"
+ },
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/NielsRogge/status/2100239244501430438",
+   "domain": "x.com",
+   "author": {
+    "name": "Niels Rogge",
+    "handle": "NielsRogge",
+    "avatar": "https://pbs.twimg.com/profile_images/1828883496066060288/n0OUAXhz_200x200.jpg"
+   },
+   "text": "For anyone curious how Jev works, I made a visual explanation using @claudeai :)\n\nThis is based on the Qwen2.5-RLCD model which @harshagundal released on @huggingface \n\nThe idea is to replace autoregressive LLM generation by a single Transformer decoder (of a pre-trained LLM), which processes the context + JSON schema only once. The keys and values of those tokens are cached.\n\nNext, for each field of the JSON schema, we:\n1. pass its field suffix tokens through the Transformer decoder again (reusing the KV-cache)\n2. obtain a final hidden state, which we pass through the language modeling head\n3. we obtain scores, also called logits, for all tokens in the vocab of the LLM\n4. we only look at the scores of the tokens we care about for the given field, and pass those through a softmax to obtain probabilities which sum to 1\n5. we take the token with the highest probability.\n\nThe benefits of this are that:\n1. it's fast (we don't need to generate the JSON schema token by token)\n2. it's 100% valid JSON (we don't need to rely on the model to generate a valid schema)",
+   "date": 1789571031,
+   "media": [
+    {
+     "type": "image",
+     "src": "https://pbs.twimg.com/media/HSWLYi3WcAAOPBs.jpg?name=orig",
+     "ratio": 1.3099
+    }
+   ],
+   "links": [],
+   "quote": {
+    "author": {
+     "name": "Niels Rogge",
+     "handle": "NielsRogge",
+     "avatar": "https://pbs.twimg.com/profile_images/1828883496066060288/n0OUAXhz_200x200.jpg"
+    },
+    "text": "12 million views for a JSON classifier?\n\nYeah, we're in a bubble",
+    "date": 1789541401,
+    "media": [],
+    "links": []
+   }
+  }
+ ],
+ "article": {
+  "title": "نیلز روگه اومده با رسم شکل نشون داده این ابزار Jev که این روزا کلی سر و صدا کرده دقیقاً چطوری کار می‌کنه",
+  "source_title": "For anyone curious how Jev works, I made a visual explanation using @claudeai :)",
+  "body": [
+   "رفیق، نیلز روگه اومده با رسم شکل نشون داده این ابزار Jev که این روزا کلی سر و صدا کرده دقیقاً چطوری کار می‌کنه. ماجرا بر پایه مدل Qwen2.5-RLCD هارش گونداله و ایده‌ش اینه که به جای تولید کلمه به کلمه و کند خروجی جیسون (JSON)، کل ماجرا رو توی یه بار پردازش دکودر ترنسفورمر جمع کنه. سیستم میاد متن و اسکیما رو فقط یک‌بار پردازش و کش می‌کنه، بعدش برای هر فیلد مشخص، با همون کش قبلی فقط احتمال بهترین توکن رو بیرون می‌کشه. ته این فرمول ناب دو تا مزیت خفنه: سرعت موشکی توی خروجی دادن و تضمین صددرصدی اینکه جیسون نهایی کاملاً معتبر و بدون نقصه."
+  ],
+  "why": "بزرگ‌ترین دردسر برنامه‌نویس‌ها رو توی گرفتن خروجی ساختاریافته از هوش مصنوعی، یعنی کند بودن و خراب شدن فرمت جیسون، کلاً حل می‌کنه.",
+  "tags": []
+ },
+ "updated": "2026-10-25T12:26:50+00:00",
+ "gholam_checked": "2026-10-25T12:26:50+00:00"
+}

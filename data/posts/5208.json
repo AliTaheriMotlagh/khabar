@@ -1,0 +1,59 @@
+{
+ "id": 5208,
+ "url": "https://t.me/dlmehr/5208",
+ "date": "2026-09-08T19:25:30+00:00",
+ "text": "https://fxtwitter.com/aidangomez/status/2097381789039837637?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+ "forwarded_from": null,
+ "digest": false,
+ "hash": "3236084968bc",
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/aidangomez/status/2097381789039837637?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+  "site": "🧵 Thread • FxTwitter",
+  "title": "Aidan Gomez (@aidangomez)",
+  "description": "Synthetic data derived from production user data of consumer AI tools is used for training. I’ve heard this rumour from both large labs’ employees.\nIn particular, if you’re doing something “interesting” like working on complex math/business/software/bio…",
+  "image": "https://cdn4.telesco.pe/file/mVHgPNh1QmQvS8WvKvPGGdLp9U6oe6L-5Nk4dCpyZw5-2WSwU1SlFVw_M-9MnxTc9OSsZs8sKxIVgMN65dLj0dpnW5tiHRSNQRfNfyW-JGZZmjnu8lnH7aZQ7rtH9thibBYICX1zHe6uQ6fP53uddQu4gRT59Xn_1QnBJVgWFr_qaRURTXQBDl5jR1bTeX9pXCfKqw9jFwifO2aC08gn97h75fyNeH_V4Ufk9bItmFaPur0GuEZ53jyf57PzvOj9Z521Bq09PjDZImx_uTihIWPItQjHp8mcxJ2Jxmw9hLfOODktRWwsLfu4GqeCgkBwihihneyaQRZlzmM1QnQFIA.jpg"
+ },
+ "gholam": {
+  "text": "رفیق، حواست جمع باشه پای این ابزارهای هوش مصنوعی چه چیزایی رو رو می‌کنی، چون آیدن گومز، مدیرعامل شرکت کوهیر، یه داستان جالب رو برملا کرده. طرف میگه از کارمندای آزمایشگاه‌های گردن‌کلفت هوش مصنوعی شنیده که میان از روی تعاملات و پیام‌های کاربرا «دیتای مصنوعی» می‌سازن و مدل‌هاشونو باهاش تعلیم میدن. دست‌برقضا اگه کارای سنگین و خفن مثل حل فرمول‌های پیچیده ریاضی، مباحث بیولوژی یا کدهای نرم‌افزاری عمیق با چت‌بات‌ها انجام بدی، شانس تور شدنت خیلی بالاتره چون اینا تشنه دیتای باارزشن. نامردی ماجرا هم اینجاست که حتی اگه قول داده باشن دیتای شما رو ذخیره نکنن، میان حرفات رو بازنویسی و تغییر مدل میدن تا ادعا کنن دیتای خودت رو مصرف نکردن و قانون رو دور بزنن!\n\nچرا مهمه؟ چون باید بدونی حتی با تیک‌زدن گزینه‌های حفظ حریم خصوصی، رازهای کاری و ایده‌های نابت ممکنه لقمه چرب و نرم مدل‌های نسل بعدی بشه.",
+  "date": "2026-09-08T19:25:46+00:00"
+ },
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/aidangomez/status/2097381789039837637",
+   "domain": "x.com",
+   "author": {
+    "name": "Aidan Gomez",
+    "handle": "aidangomez",
+    "avatar": "https://pbs.twimg.com/profile_images/2103792787539779584/DI6dgoen_200x200.jpg"
+   },
+   "text": "Synthetic data derived from production user data of consumer AI tools is used for training. I’ve heard this rumour from both large labs’ employees. \n\nIn particular, if you’re doing something “interesting” like working on complex math/business/software/bio problems you’re dramatically more likely to get trained on because they filter/up-weight towards those usecases where the model has the most to learn.\n\nEven in ZDR and “we won’t train on you” regimes, derivative data is usually carved out. The promise is only not to train on exactly the data you put in, rewritten data is fair game.",
+   "date": 1788889760,
+   "media": [],
+   "links": [],
+   "quote": {
+    "author": {
+     "name": "OpenAI",
+     "handle": "OpenAI",
+     "avatar": "https://pbs.twimg.com/profile_images/1885410181409820672/ztsaR0JW_200x200.jpg"
+    },
+    "text": "We congratulate Levent Alpöge and Tristan Buckmaster on their remarkable mathematical work.\n\nWe (the researchers and the agents) did not see any of their work through any means until they released it publicly — in particular, no specific user data was accessed in order to solve this problem. \n\nWhile unlikely, we cannot rule out that de-identified data derived from their usage of our products helped improve our models. \n\nHowever, our proofs differ significantly and even the precise results proved are different in the Euler case (forced vs. unforced).",
+    "date": 1788888207,
+    "media": [],
+    "links": []
+   }
+  }
+ ],
+ "article": {
+  "title": "حواست جمع باشه پای این ابزارهای هوش مصنوعی چه چیزایی رو رو می‌کنی، چون آیدن گومز، مدیرعامل شرکت کوهیر، یه داستان جالب رو برملا کرده",
+  "source_title": "Synthetic data derived from production user data of consumer AI tools is used for training. I’ve heard this rumour from both large labs’…",
+  "body": [
+   "رفیق، حواست جمع باشه پای این ابزارهای هوش مصنوعی چه چیزایی رو رو می‌کنی، چون آیدن گومز، مدیرعامل شرکت کوهیر، یه داستان جالب رو برملا کرده. طرف میگه از کارمندای آزمایشگاه‌های گردن‌کلفت هوش مصنوعی شنیده که میان از روی تعاملات و پیام‌های کاربرا «دیتای مصنوعی» می‌سازن و مدل‌هاشونو باهاش تعلیم میدن. دست‌برقضا اگه کارای سنگین و خفن مثل حل فرمول‌های پیچیده ریاضی، مباحث بیولوژی یا کدهای نرم‌افزاری عمیق با چت‌بات‌ها انجام بدی، شانس تور شدنت خیلی بالاتره چون اینا تشنه دیتای باارزشن. نامردی ماجرا هم اینجاست که حتی اگه قول داده باشن دیتای شما رو ذخیره نکنن، میان حرفات رو بازنویسی و تغییر مدل میدن تا ادعا کنن دیتای خودت رو مصرف نکردن و قانون رو دور بزنن!"
+  ],
+  "why": "چون باید بدونی حتی با تیک‌زدن گزینه‌های حفظ حریم خصوصی، رازهای کاری و ایده‌های نابت ممکنه لقمه چرب و نرم مدل‌های نسل بعدی بشه.",
+  "tags": []
+ },
+ "updated": "2026-10-25T12:27:32+00:00",
+ "gholam_checked": "2026-10-25T12:27:32+00:00"
+}

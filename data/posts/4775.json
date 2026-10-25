@@ -1,0 +1,50 @@
+{
+ "id": 4775,
+ "url": "https://t.me/dlmehr/4775",
+ "date": "2026-08-17T02:51:33+00:00",
+ "text": "https://fxtwitter.com/thsottiaux/status/2089082893804896524?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+ "forwarded_from": null,
+ "digest": false,
+ "hash": "a41a75f7a367",
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/thsottiaux/status/2089082893804896524?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+  "site": "FxTwitter",
+  "title": "Tibo (@thsottiaux)",
+  "description": "Here is how to enable a 1M-token context window in Codex for GPT-5.6 Sol.\nEven though we have tuned the context limit in Codex to be set optimally when it comes to performance and cost, this is a common ask, so here it is documented.\nA larger context window…",
+  "image": "https://cdn4.telesco.pe/file/cJEe1I2c8nxeOFzNmhU0stcLzOmBzNc3gZbVg7PE40F0I0HKX_CImzDdZ-skcnhNtzc2e_-DgnTN6qQA8TKLtTVhw3p-3ZP_HNDvPEIJtNWTZITOTssBR3_3DF4BdngFBL8mQUNzfkGIOcB4clxoOruMo98LzMVJusOUIVID83izCM3g_T2KgsSIVaO-SMzIqBuTW_4O7ymgpCPRwXExOoZmjNFTlle4yUVjF5SM0FgRzrlf30n0iN4xO99aCw0cZT8TKD7uWczZfO1ZSEfO-3s_erOxamvuu84oE2vgGo9FLOHAZQU__VJxc4t7lYUgbpb9whOFcNoiGAENBVn5Tg.jpg"
+ },
+ "gholam": {
+  "text": "رفیق ببین چی برامون آوردن؛ تیبو اومده راه فعال کردن کانتکست غول‌آسای ۱ میلیون توکنی رو توی کدکس برای مدل خفن GPT-5.6 Sol رو کرده. قضیه اینه که این مدل خودش تا یک میلیون و پنجاه هزار توکن ظرفیت داره، ولی برای کارایی بهتر و کنترل هزینه‌ها پیش‌فرضش بسته‌تر بود؛ حالا با دستکاری چند خط توی فایل کانفیگ یا زدن یه دستور سرراست توی ترمینال می‌تونی کل این ظرفیت رو باز کنی. اینجوری سیستم حجم وحشتناکی از کدها، لاگ‌ها و سابقه گپ‌ها رو تا ۹۰۰ هزار توکن توی حافظه زنده نگه می‌داره و هیچی رو زود خلاصه یا پاک نمی‌کنه. البته سازنده‌ها گوشزد کردن که حواستون به هزینه‌ها و مصرف توکن باشه، ولی اگه پروژه سنگین داری دستت کاملاً بازه.\n\nچرا مهمه؟ اهمیتش اینه که دیگه وسط پروژه‌های گنده و کدهای طولانی حافظه هوش مصنوعی پر نمی‌شه و هوشیاری‌ش رو از کل پروژه از دست نمیده.",
+  "date": "2026-08-17T02:51:44+00:00"
+ },
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/thsottiaux/status/2089082893804896524",
+   "domain": "x.com",
+   "author": {
+    "name": "Tibo",
+    "handle": "thsottiaux",
+    "avatar": "https://pbs.twimg.com/profile_images/2093807917833281537/2yBgpwVV_200x200.jpg"
+   },
+   "text": "Here is how to enable a 1M-token context window in Codex for GPT-5.6 Sol. \n\nEven though we have tuned the context limit in Codex to be set optimally when it comes to performance and cost, this is a common ask, so here it is documented.\n\nA larger context window lets Codex retain more code, tool output, and conversation history before summarizing older material. You need a model that supports it. And GPT-5.6 Sol, for example, has a documented 1,050,000-token window. \n\nOpen ~/.codex/config.toml and add or update these settings at the top level, before any [section] headers:\n\n```\nmodel = \"gpt-5.6-sol\"\nmodel_context_window = 1000000\nmodel_auto_compact_token_limit = 900000\n```\n\nThe first setting selects the model. The second tells Codex to use a one-million-token context budget. The third starts automatic history compaction around 900,000 tokens, leaving some headroom. Restart Codex client and start a new session after saving. \n\nTo try the configuration for a single CLI session without changing your defaults:\n\n```\ncodex -m gpt-5.6-sol \\\n  -c model_context_window=1000000 \\\n  -c model_auto_compact_token_limit=900000\n```\n\nHave fun, but also know that we tuned the default carefully!",
+   "date": 1786911149,
+   "media": [],
+   "links": []
+  }
+ ],
+ "article": {
+  "title": "چی برامون آوردن؛ تیبو اومده راه فعال کردن کانتکست غول‌آسای ۱ میلیون توکنی رو توی کدکس برای مدل خفن GPT-5.6 Sol رو کرده",
+  "source_title": "Here is how to enable a 1M-token context window in Codex for GPT-5.6 Sol.",
+  "body": [
+   "رفیق ببین چی برامون آوردن؛ تیبو اومده راه فعال کردن کانتکست غول‌آسای ۱ میلیون توکنی رو توی کدکس برای مدل خفن GPT-5.6 Sol رو کرده. قضیه اینه که این مدل خودش تا یک میلیون و پنجاه هزار توکن ظرفیت داره، ولی برای کارایی بهتر و کنترل هزینه‌ها پیش‌فرضش بسته‌تر بود؛ حالا با دستکاری چند خط توی فایل کانفیگ یا زدن یه دستور سرراست توی ترمینال می‌تونی کل این ظرفیت رو باز کنی. اینجوری سیستم حجم وحشتناکی از کدها، لاگ‌ها و سابقه گپ‌ها رو تا ۹۰۰ هزار توکن توی حافظه زنده نگه می‌داره و هیچی رو زود خلاصه یا پاک نمی‌کنه. البته سازنده‌ها گوشزد کردن که حواستون به هزینه‌ها و مصرف توکن باشه، ولی اگه پروژه سنگین داری دستت کاملاً بازه."
+  ],
+  "why": "اهمیتش اینه که دیگه وسط پروژه‌های گنده و کدهای طولانی حافظه هوش مصنوعی پر نمی‌شه و هوشیاری‌ش رو از کل پروژه از دست نمیده.",
+  "tags": [
+   "اوپن‌ای‌آی"
+  ]
+ },
+ "updated": "2026-10-25T12:30:09+00:00",
+ "gholam_checked": "2026-10-25T12:30:09+00:00"
+}

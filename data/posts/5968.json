@@ -2,16 +2,23 @@
  "id": 5968,
  "url": "https://t.me/dlmehr/5968",
  "date": "2026-10-19T14:42:37+00:00",
- "edited": false,
- "views": "249",
  "text": "https://x.com/MiniMax_AI/status/2112150867868541221",
  "forwarded_from": "Ali Farajnia",
  "digest": false,
  "hash": "db96f893fead",
+ "media": [],
+ "preview": {
+  "url": "https://x.com/MiniMax_AI/status/2112150867868541221",
+  "site": "X (formerly Twitter)",
+  "title": "MiniMax (official) (@MiniMax_AI) on X",
+  "description": "MiniMax M3.1 Flash: Space Performance + Bunny Speed\n🚀\n🐰\nYes, Space Bunny  - which has topped global leaderboards with 200T+ tokens - was an earlier version of M3.1 Flash.\n💰\nRedefining the perfo…",
+  "image": "https://cdn4.telesco.pe/file/bCNbQYQY2Orb_CARtqWesS3LzCK3h2iqSw_JeAV0j7-mX2daPYrOso4LT3ezbkW6rM-6hG3W9E3iGOU2ZAcEdRUCU2cKLm_tDpmLwr8jCHo-aKDjXGtnalWc93WLZ2pPpVZ7-LIC14IiYn0zzjTrMsdxTI0i8T0fv--hWmD1_un1-P5Or9JuOSA1Sviq8j6w8XP54_IuEm1OabiIh1lxn-jKj6giOKeh8c0sRpOK1sLTa9HNDVQLqiSw02006Z1HrwBEVVYFQAyLKWEfwMRESV5k1GQDProdZsvtDZ4TxgyTT95QvGcL1WuXR7MZaGKmoWi8iZWCM-fWfDE9x6K5XA.jpg"
+ },
  "gholam": {
   "text": "رفیق، این بچه‌های MiniMax رسماً از مدل خفن و جدیدشون به اسم M3.1 Flash رونمایی کردن که همون مدل مرموز Space Bunny بوده و قبلاً با پردازش بیش از ۲۰۰ تریلیون توکن لیدربوردها رو درنوردیده بود. قضیه از این قراره که این هوش مصنوعی توی کدنویسی نمره ۷۴ درصد DeepSWE و توی استدلال بینایی ۹۱ درصد BabyVision آورده، اونم در حالی که نسبت به نسخه قبلیش سه برابر سریع‌تر شده و هزینه‌ش به یک‌سوم رسیده. قیمتش هم حسابی منصفانه‌س و برای هر یک میلیون توکن ورودی و خروجی فقط ۱۵ و ۶۰ سنت می‌گیره، تازه قراره وزن‌های مدل هم ۲۳ اکتبر عمومی پخش بشه تا همه حالشو ببرن. \n\nچرا مهمه؟ اهمیتش اینه که زدن تو خط هوش مصنوعی‌های ایجنتی فوق‌العاده باهوش، ولی با قیمتی انقدر مفت و سرعتی موشکی که دولوپرها بدون خالی شدن جیبشون بتونن کارای سنگین انجام بدن.",
   "date": "2026-10-19T14:42:49+00:00"
  },
+ "gholam_checked": "2026-10-24T23:11:44+00:00",
  "links": [
   {
    "kind": "tweet",
@@ -63,18 +70,6 @@
    "text": "Starting August 20, 2026, the paid APIs (Music Generation and Lyrics Generation) will no longer be available to new users; existing paying users can continue to use the current API services. The free music generation APIs (Music-3.0-free, Music-2.6-free, music-cover-free) will be discontinued.To experience or use music generation capabilities, please visit MiniMax Audio, or use the open-source MiniMax Music 3 model on Hugging Face."
   }
  ],
- "media": [],
- "preview": {
-  "url": "https://x.com/MiniMax_AI/status/2112150867868541221",
-  "site": "X (formerly Twitter)",
-  "title": "MiniMax (official) (@MiniMax_AI) on X",
-  "description": "MiniMax M3.1 Flash: Space Performance + Bunny Speed\n🚀\n🐰\nYes, Space Bunny  - which has topped global leaderboards with 200T+ tokens - was an earlier version of M3.1 Flash.\n💰\nRedefining the perfo…",
-  "image": {
-   "src": "media/5968/preview.webp",
-   "width": 800,
-   "height": 578
-  }
- },
  "article": {
   "title": "این بچه‌های MiniMax رسماً از مدل خفن و جدیدشون به اسم M3.1 Flash رونمایی کردن که همون مدل مرموز Space Bunny بوده و قبلاً با پردازش بیش از ۲۰۰ تریلیون توکن لیدربوردها رو درنوردیده بود",
   "source_title": "MiniMax M3.1 Flash: Space Performance + Bunny Speed",
@@ -86,6 +81,5 @@
    "چین"
   ]
  },
- "updated": "2026-10-24T23:11:44+00:00",
- "gholam_checked": "2026-10-24T23:11:44+00:00"
+ "updated": "2026-10-25T11:54:08+00:00"
 }

@@ -1,0 +1,73 @@
+{
+ "id": 5394,
+ "url": "https://t.me/dlmehr/5394",
+ "date": "2026-09-21T09:55:27+00:00",
+ "text": "https://x.com/jerryjliu0/status/2101738281046294552?s=52",
+ "forwarded_from": "Hossein Zakariaee",
+ "digest": false,
+ "hash": "223d3fe6c865",
+ "media": [],
+ "preview": {
+  "url": "https://x.com/jerryjliu0/status/2101738281046294552?s=52",
+  "site": "X (formerly Twitter)",
+  "title": "Jerry Liu (@jerryjliu0) on X",
+  "description": "Introducing DocJev - a lightning-fast OSS library for document classification and splitting with jev\n⚡️\nGive a document alongside some natural language category rules. Jev will predict the docume…",
+  "image": "https://cdn4.telesco.pe/file/jU-O6kH9i99KL5U3d3XWZYCQqTDVKwbAWv__6EPz60ig3y75l9xD8RKa3tjANUxxU7f_n-UZn918Ivag35kxlBCEA3xx0jj3cKH5ZPFyd70-xdQ5a9QgRnmCcBrSxWgXzMc7GTPJZioREDdf4Zxb1MMBwjWf1IE-JH3t70NIn4b5b1cvU3CQHl7Xc7qXbBgFAMbSn-RTQUpY45-Y-bcS2Af9StfNABH5NYoXKH6gCCZPvJu6P_necTGdfnpa9MZTBiEXp49RBsP3b-eiTPZV8-ehVEcmomGfITn7pUymtowy0UloAOyHxLUoT8cGUCnB7zr46rNoW5ZfF27jhfhMBg.jpg"
+ },
+ "gholam": {
+  "text": "رفیق، جری لیو یه ابزار متن‌باز و کاردرست به اسم DocJev رو کرده که کارش دسته‌بندی و جدا کردن بخش‌های مختلف اسناد و مدارکه. فقط کافیه فایلت رو همراه با چندتا قانون ساده به زبون آدمیزاد بهش بدی تا مثل آب خوردن مشخص کنه سندت مال چه دسته‌ایه یا دقیقاً از کجا باید تیکه‌تیکه‌ش کنه. قضیه وقتی جذاب می‌شه که بدونی با همون دقت مدل gpt-5.6-luna کار می‌کنه، ولی سرعتش شیش برابر از اون بالاتره و اصلاً معطلی نداره. دستت هم بازه که برای کارهای عادی و سریع از موتور لایت‌پارس (liteparse) و واسه مدارک قر و قاطی و پیچیده‌تر از لاما‌پارس (LlamaParse) استفاده کنی.\n\nاهمیتش اینه که دیگه لازم نیست برای خوندن و تفکیک کوهی از اسناد، کلی پول خرج APIهای سنگین و کند کنی و راحت می‌تونی توی کسری از ثانیه کارات رو پیش ببری.",
+  "date": "2026-09-21T09:55:42+00:00"
+ },
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/jerryjliu0/status/2101738281046294552",
+   "domain": "x.com",
+   "author": {
+    "name": "Jerry Liu",
+    "handle": "jerryjliu0",
+    "avatar": "https://pbs.twimg.com/profile_images/1283610285031460864/1Q4zYhtb_200x200.jpg"
+   },
+   "text": "Introducing DocJev - a lightning-fast OSS library for document classification and splitting with jev ⚡️\n\nGive a document alongside some natural language category rules. Jev will predict the document category (classify) or the boundaries between sub-documents (split).\n\nIt is 6x faster than gpt-5.6-luna with equivalent accuracy.\n\nYou can choose between different OCR backends:\nliteparse: the fastest/most accurate free+OSS text parser out there. Perfect for digitalized documents. The speedups vs. luna above are inclusive of liteparse times.\nLlamaParse: the most advanced VLM-based solution for complex docs. Using this will of course add latency on document preprocessing. But it’s a good option if you want to cache the digitalized representations of documents for a variety of downstream tasks.\n\nCheck it out: https://github.com/jerryjliu/docjev\n\nIf you want to dive deeper into liteparse or LlamaParse check the links below:\nliteparse: https://github.com/run-llama/liteparse\nLlamaParse: https://cloud.llamaindex.ai/",
+   "date": 1789928429,
+   "media": [
+    {
+     "type": "video",
+     "src": "https://video.twimg.com/amplify_video/2101738161546391552/vid/avc1/1280x720/BBa1fD0N1ODl1Lc4.mp4?tag=29",
+     "poster": "https://pbs.twimg.com/amplify_video_thumb/2101738161546391552/img/aTJ-mBG_YeF98yMQ.jpg",
+     "ratio": 0.5625,
+     "duration": 24.1,
+     "gif": false
+    }
+   ],
+   "links": [
+    "https://github.com/jerryjliu/docjev",
+    "https://github.com/run-llama/liteparse",
+    "https://cloud.llamaindex.ai/"
+   ]
+  },
+  {
+   "kind": "link",
+   "url": "https://github.com/jerryjliu/docjev",
+   "domain": "github.com",
+   "title": "GitHub - jerryjliu/docjev: A very fast document classifier/splitter using Jev",
+   "description": "A very fast document classifier/splitter using Jev  - jerryjliu/docjev",
+   "image": "https://opengraph.githubassets.com/2cd005ac1886420610f593c74f6ded830cee806512de183cfc8cd4b3a64db2b6/jerryjliu/docjev",
+   "site": "GitHub"
+  }
+ ],
+ "article": {
+  "title": "جری لیو یه ابزار متن‌باز و کاردرست به اسم DocJev رو کرده که کارش دسته‌بندی و جدا کردن بخش‌های مختلف اسناد و مدارکه",
+  "source_title": "Introducing DocJev - a lightning-fast OSS library for document classification and splitting with jev ⚡️",
+  "body": [
+   "رفیق، جری لیو یه ابزار متن‌باز و کاردرست به اسم DocJev رو کرده که کارش دسته‌بندی و جدا کردن بخش‌های مختلف اسناد و مدارکه. فقط کافیه فایلت رو همراه با چندتا قانون ساده به زبون آدمیزاد بهش بدی تا مثل آب خوردن مشخص کنه سندت مال چه دسته‌ایه یا دقیقاً از کجا باید تیکه‌تیکه‌ش کنه. قضیه وقتی جذاب می‌شه که بدونی با همون دقت مدل gpt-5.6-luna کار می‌کنه، ولی سرعتش شیش برابر از اون بالاتره و اصلاً معطلی نداره. دستت هم بازه که برای کارهای عادی و سریع از موتور لایت‌پارس (liteparse) و واسه مدارک قر و قاطی و پیچیده‌تر از لاما‌پارس (LlamaParse) استفاده کنی."
+  ],
+  "why": "دیگه لازم نیست برای خوندن و تفکیک کوهی از اسناد، کلی پول خرج APIهای سنگین و کند کنی و راحت می‌تونی توی کسری از ثانیه کارات رو پیش ببری.",
+  "tags": [
+   "کدنویسی",
+   "اوپن‌ای‌آی"
+  ]
+ },
+ "updated": "2026-10-25T12:26:20+00:00",
+ "gholam_checked": "2026-10-25T12:26:20+00:00"
+}

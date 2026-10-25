@@ -1,0 +1,68 @@
+{
+ "id": 5129,
+ "url": "https://t.me/dlmehr/5129",
+ "date": "2026-09-03T19:15:19+00:00",
+ "text": "https://fxtwitter.com/aschilling/status/2095549624266248405?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+ "forwarded_from": null,
+ "digest": false,
+ "hash": "f52fcb6ac5aa",
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/aschilling/status/2095549624266248405?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+  "site": "FxTwitter",
+  "title": "Andreas Schilling 🇺🇦 (@aschilling)",
+  "description": "There will be two SKUs of @NVIDIARTXSpark:\n- 20 CPU-Cores / 6.144 Shader Units\n- 18 CPU-Cores / 5,120 Shader Units\nThe SKU with 18 CPU-Cores will be available with 24-32 GB unified memory. With 20 CPU-Cores there are options from 24 to 128 GB.\nhttps:/…",
+  "image": "https://cdn4.telesco.pe/file/V-ji1HJZ77ul-pfDsq5601g0qG33FnUsrEMkW-9tGSAnzpxNDYMe6zzJJiNxBNxLhLjRnGVv2ZZQ_hWPkPHy66PZoKY2ECwNcR7qybPvrlDL9Yl5ecX0aW_85kLD8-vkI9EXO9idE2jFNm1pSwT2nl2_UjBOSlR_xZpl0lnQukPviwLEhTa_l4aueQBKr8meMKNkFhoy3--kh74AvUYJSu3QI7CPzLUjk0ksiYXtISW7KlBraojt67GD2fHD8A_JyRelQzcSitHBgn--p4YbHB87fWE9iLWjm3QztVNCNu3LpvI3YXb-ris16A4-aypsBK1Sk_ckki34xYNo1iVJ7A.jpg"
+ },
+ "gholam": {
+  "text": "ببین رفیق، آندریاس شیلینگ یه سری اطلاعات داغ از پردازنده‌های جدید RTX Spark انویدیا رو کرده که حسابی دل سخت‌افزاربازها رو برده. داستان از این قراره که قراره این غول گرافیک در دو مدل وارد میدون بشه؛ نسخه گردن‌کلفت‌تر با ۲۰ هسته پردازشی، ۶۱۴۴ واحد شیدر و پشتیبانی از حافظه یکپارچه بین ۲۴ تا ۱۲۸ گیگابایت عرضه می‌شه. اون یکی مدل سبک‌تر هم ۱۸ هسته پردازشی و ۵۱۲۰ واحد شیدر داره و حافظه‌ش بین ۲۴ تا ۳۲ گیگابایته تا برای کارهای متعادل‌تر به کار بیاد. خلاصه انویدیا با این ترکیب رم یکپارچه و پردازنده‌های پرقدرت، رسماً داره خط و نشون جدی برای رقبا می‌کشه.\n\nچرا مهمه؟ اهمیتش اینه که مجهز شدن این پردازنده‌ها به حافظه یکپارچه تا سقف ۱۲۸ گیگابایت، دست مهندسا و اهل فن هوش مصنوعی رو برای اجرای مدل‌های فوق‌سنگین به شدت باز می‌کنه.",
+  "date": "2026-09-03T19:15:30+00:00"
+ },
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/aschilling/status/2095549624266248405",
+   "domain": "x.com",
+   "author": {
+    "name": "Andreas Schilling 🇺🇦",
+    "handle": "aschilling",
+    "avatar": "https://pbs.twimg.com/profile_images/1735380033353478144/OeKV8pfa_200x200.jpg"
+   },
+   "text": "There will be two SKUs of @NVIDIARTXSpark:\n\n- 20 CPU-Cores / 6.144 Shader Units\n- 18 CPU-Cores / 5,120 Shader Units\n\nThe SKU with 18 CPU-Cores will be available with 24-32 GB unified memory. With 20 CPU-Cores there are options from 24 to 128 GB.\n\nhttps://www.hardwareluxx.de/index.php/news/hardware/prozessoren/70234-rtx-spark-nvidia-nennt-ausbaustufen-und-startzeitpunkt.html",
+   "date": 1788452938,
+   "media": [
+    {
+     "type": "image",
+     "src": "https://pbs.twimg.com/media/HRTjCTiWwAIchL5.jpg?name=orig",
+     "ratio": 0.5619
+    }
+   ],
+   "links": [
+    "https://www.hardwareluxx.de/index.php/news/hardware/prozessoren/70234-rtx-spark-nvidia-nennt-ausbaustufen-und-startzeitpunkt.html"
+   ]
+  },
+  {
+   "kind": "link",
+   "url": "https://www.hardwareluxx.de/index.php/news/hardware/prozessoren/70234-rtx-spark-nvidia-nennt-ausbaustufen-und-startzeitpunkt.html",
+   "domain": "hardwareluxx.de",
+   "title": "RTX Spark: NVIDIA nennt Ausbaustufen und Startzeitpunkt – Hardwareluxx",
+   "description": "RTX Spark: NVIDIA nennt Ausbaustufen und Startzeitpunkt.",
+   "image": "https://www.hardwareluxx.de/images/cdn02/uploads/2026/Sep/gifted_industry_u3/nvidia_rtx_spark_skus_1360px.jpg",
+   "site": "Hardwareluxx"
+  }
+ ],
+ "article": {
+  "title": "آندریاس شیلینگ یه سری اطلاعات داغ از پردازنده‌های جدید RTX Spark انویدیا رو کرده که حسابی دل سخت‌افزاربازها رو برده",
+  "source_title": "There will be two SKUs of @NVIDIARTXSpark:",
+  "body": [
+   "ببین رفیق، آندریاس شیلینگ یه سری اطلاعات داغ از پردازنده‌های جدید RTX Spark انویدیا رو کرده که حسابی دل سخت‌افزاربازها رو برده. داستان از این قراره که قراره این غول گرافیک در دو مدل وارد میدون بشه؛ نسخه گردن‌کلفت‌تر با ۲۰ هسته پردازشی، ۶۱۴۴ واحد شیدر و پشتیبانی از حافظه یکپارچه بین ۲۴ تا ۱۲۸ گیگابایت عرضه می‌شه. اون یکی مدل سبک‌تر هم ۱۸ هسته پردازشی و ۵۱۲۰ واحد شیدر داره و حافظه‌ش بین ۲۴ تا ۳۲ گیگابایته تا برای کارهای متعادل‌تر به کار بیاد. خلاصه انویدیا با این ترکیب رم یکپارچه و پردازنده‌های پرقدرت، رسماً داره خط و نشون جدی برای رقبا می‌کشه."
+  ],
+  "why": "اهمیتش اینه که مجهز شدن این پردازنده‌ها به حافظه یکپارچه تا سقف ۱۲۸ گیگابایت، دست مهندسا و اهل فن هوش مصنوعی رو برای اجرای مدل‌های فوق‌سنگین به شدت باز می‌کنه.",
+  "tags": [
+   "انویدیا",
+   "تراشه"
+  ]
+ },
+ "updated": "2026-10-25T12:27:59+00:00",
+ "gholam_checked": "2026-10-25T12:27:59+00:00"
+}

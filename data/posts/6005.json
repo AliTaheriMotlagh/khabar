@@ -2,16 +2,23 @@
  "id": 6005,
  "url": "https://t.me/dlmehr/6005",
  "date": "2026-10-20T23:14:53+00:00",
- "edited": true,
- "views": "182",
  "text": "https://fxtwitter.com/nvidiaai/status/2112677152735076822?s=52&t=F41Qa04r48Mef_j_XjBneQ",
  "forwarded_from": null,
  "digest": false,
  "hash": "12a48957f889",
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/nvidiaai/status/2112677152735076822?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+  "site": "FxTwitter",
+  "title": "NVIDIA AI (@NVIDIAAI)",
+  "description": "We’re working with the European Broadcasting Union and @Adobe to help media teams keep control of their data and find the footage they need faster.\nWith the EBU, we’re building on sovereign AI standards so broadcasters can use AI while keeping control of…",
+  "image": "https://cdn4.telesco.pe/file/YbJz6SSeFcOgkuP3Wxr6CSMOdhiy2OoedvhERrUQbpV7QO8rEPKCYp2Iq-3YdXZ-JH5klGTliRTHAOOxExpYOJOwheSX-47Uc93ml7t2zhKe0JZLBraThKK6O8jucYx_6O09GrU7XXrBM8kBphL_HhOAGfh_E08-LjATGTlZqL1_vnZ3jRDLwIIniDcylKyhDs7ZwPNThIyb1z7Gs3qnl-fZvtuuqj479hGFrxSObXiu7IDv1ip0eHItm7X86EDe_St3k9WGFNef_K54jPcZ6q_VEvslA4xnWvy-kAz9yc3YCDIph_1ChUhdr162kzaKNb8CapZ7Rr0mqO6YLb8XBg.jpg"
+ },
  "gholam": {
   "text": "ببین رفیق، انویدیا تو رویداد GTC برلین دست گذاشته رو یه همکاری خفن با اتحادیه رادیو و تلویزیون‌های اروپا (EBU) و شرکت ادوبی تا کارِ بچه‌های رسانه و تدوین رو اساسی راه بندازه. ماجرا از این قراره که دارن با EBU روی استانداردهای «هوش مصنوعی مستقل» کار می‌کنن تا شبکه‌ها بتونن بدون اینکه کنترل داده‌ها و استقلال سردبیری‌شون به باد بره، از هوش مصنوعی استفاده کنن. از اون طرف هم غول نرم‌افزاری ادوبی اومده پردازنده‌های گرافیکی انویدیا رو انداخته پشت سیستم جستجوی ویدیوی پلتفرم Frame.io تا فیلم‌سازها و برنامه‌سازها بتونن یه صحنه خاص رو تو چشم‌به‌هم‌زدن از دل خروارها راش و ویدیوی چند سال گذشته بکشن بیرون. خلاصه که غول‌های دنیای فناوری دارن خط تولید محتوا و امنیت داده‌های ویدیویی رو کلاً شخم می‌زنن و مدرن می‌کنن.\n\nچرا مهمه؟ اهمیتش اینه که هم سرعت تولید فیلم و برنامه‌سازی چند برابر میشه و هم شبکه‌های خبری خیالتون تخت میشه که هوش مصنوعی دیتای محرمانه‌شون رو جای غریبه درز نمیده.",
   "date": "2026-10-20T23:15:05+00:00"
  },
+ "gholam_checked": "2026-10-24T23:03:13+00:00",
  "links": [
   {
    "kind": "tweet",
@@ -62,18 +69,6 @@
    "text": "One platform for all your creative work.\nUpload creative files, manage projects, assign tasks, get precise feedback, and share your work — all in one easy-to-use platform built for creatives.\nSee why teams across video, design, and marketing choose Frame.io to accelerate their creative workflow.\nUpload nearly any creative file lightning-fast to a cloud workspace purpose-built for visual assets.\nGet actionable feedback on videos, images, and docs that’s effortless for clients, creatives, and execs alike.\nAssign creative tasks, track milestones, and build unique workflows powered by metadata.\nShowcase your work with custom-branded shares and presentations in crystal-clear high resolution.\nFlexible metadata lets you tag, sort, group, and navigate assets by assignee, due date, status, and more to meet your team’s needs.\nWith secure, centralized communications that follow the work — eliminating silos by connecting assets to every role from planning to delivery.\nShare assets on-the-fly, find anything instantly across projects, and generate searchable speaker-labelled transcripts and captions.\nTag, sort, and group assets into Collections your way, using out-of-the-box and custom metadata fields.\nStream files directly into creative apps and work as if they are stored locally.\nPanel-based workspaces and nested folder trees make finding everything easier; no more screen hopping.\nPfeiffer Report\nProvide meaningful feedback with advanced commenting capabilities.\nGive everyone full-screen reviews, with super-accurate controls.\nEliminate guessing with consolidated comments that follow the work.\nGive the editor frame-accurate notes right in their workspace.\nGenerate searchable transcripts, identify speakers automatically, and share videos with captions.\nInternational Data Corporation"
   }
  ],
- "media": [],
- "preview": {
-  "url": "https://fxtwitter.com/nvidiaai/status/2112677152735076822?s=52&t=F41Qa04r48Mef_j_XjBneQ",
-  "site": "FxTwitter",
-  "title": "NVIDIA AI (@NVIDIAAI)",
-  "description": "We’re working with the European Broadcasting Union and @Adobe to help media teams keep control of their data and find the footage they need faster.\nWith the EBU, we’re building on sovereign AI standards so broadcasters can use AI while keeping control of…",
-  "image": {
-   "src": "media/6005/preview.webp",
-   "width": 800,
-   "height": 800
-  }
- },
  "article": {
   "title": "انویدیا تو رویداد GTC برلین دست گذاشته رو یه همکاری خفن با اتحادیه رادیو و تلویزیون‌های اروپا (EBU) و شرکت ادوبی تا کارِ بچه‌های رسانه و تدوین رو اساسی راه بندازه",
   "source_title": "We’re working with the European Broadcasting Union and @Adobe to help media teams keep control of their data and find the footage they need…",
@@ -86,6 +81,5 @@
    "تراشه"
   ]
  },
- "updated": "2026-10-24T23:03:13+00:00",
- "gholam_checked": "2026-10-24T23:03:13+00:00"
+ "updated": "2026-10-25T11:53:56+00:00"
 }

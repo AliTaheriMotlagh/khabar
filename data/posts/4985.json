@@ -1,0 +1,70 @@
+{
+ "id": 4985,
+ "url": "https://t.me/dlmehr/4985",
+ "date": "2026-08-27T16:16:21+00:00",
+ "text": "https://fxtwitter.com/Thom_Wolf/status/2092923071829049592",
+ "forwarded_from": "Parsa Razavi",
+ "digest": false,
+ "hash": "ed620714d379",
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/Thom_Wolf/status/2092923071829049592",
+  "site": "FxTwitter",
+  "title": "Thomas Wolf (@Thom_Wolf)",
+  "description": "We have a huge news to share today!\nToday we are unveiling the first truly accessible RL robot - welcome Microduck\nA 25 cm tiny open-source biped with 15 actuators and packed with sensors (camera, speaker, LiDAR, NFC, bluetooth, wifi, etc) that you train…",
+  "image": null
+ },
+ "gholam": {
+  "text": "ببین رفیق، توماس ولف از بچه‌های هاگینگ فیس یه ربات دوپای فسقلی و اوپن‌سورس به اسم Microduck رو رونمایی کرده که کلاً ۲۵ سانتی‌متر قدشه ولی ۱۵ تا موتور و کلی سنسور خفن مثل لایدار و دوربین تو دلش جا داده. این جوجه‌رباتِ باحال رو می‌تونی خودت با یادگیری تقویتی آموزش بدی، هرچند از همون اولش هم با یه سری رفتار پیش‌فرض مثل راه‌رفتن، اسکیت‌سواری و بلندکردن وسایل با منقارش آماده‌ی کاره. از همه قشنگ‌تر اینه که کل این تشکیلات رو با قیمت زیر ۴۰۰ دلار دادن دست خلق‌الله تا هر کسی بتونه باهاش سرگرم بشه و یاد بگیره.\n\nچرا مهمه؟ اهمیتش اینه که ورود به دنیای رباتیک پیشرفته و یادگیری تقویتی رو واسه دانشجوها و عاشقان تکنولوژی حسابی ارزون و دم‌دست کرده.",
+  "date": "2026-08-27T16:16:31+00:00"
+ },
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/Thom_Wolf/status/2092923071829049592",
+   "domain": "x.com",
+   "author": {
+    "name": "Thomas Wolf",
+    "handle": "Thom_Wolf",
+    "avatar": "https://pbs.twimg.com/profile_images/2068682157451571200/_ZNKM_5E_200x200.jpg"
+   },
+   "text": "We have a huge news to share today!\n\nToday we are unveiling the first truly accessible RL robot - welcome Microduck\n\nA 25 cm tiny open-source biped with 15 actuators and packed with sensors (camera, speaker, LiDAR, NFC, bluetooth, wifi, etc) that you train yourself with reinforcement learning.\n\nIt's also playable out of the box with more than half a dozen fun and playful pre-trained policies to have it walk, sit, crouch, roller-skate, pick up objects with its articulated beak, and recover on its own.\n\nAnd all for less than $400.\n\nSee all the details, play with the simulator and order it at: https://pollen-robotics.com/microduck/\n\n(video with sound on 🔊)",
+   "date": 1787826719,
+   "media": [
+    {
+     "type": "video",
+     "src": "https://video.twimg.com/amplify_video/2092919679475941376/vid/avc1/1080x720/HnbhsERjtV0biF2V.mp4?tag=29",
+     "poster": "https://pbs.twimg.com/amplify_video_thumb/2092919679475941376/img/1ruuR2tfC9WNrGPA.jpg",
+     "ratio": 0.6667,
+     "duration": 51.008,
+     "gif": false
+    }
+   ],
+   "links": [
+    "https://pollen-robotics.com/microduck/"
+   ]
+  },
+  {
+   "kind": "link",
+   "url": "https://pollen-robotics.com/microduck/",
+   "domain": "pollen-robotics.com",
+   "title": "Microduck - A tiny biped robot you can teach new tricks | Pollen Robotics",
+   "description": "Microduck is a 25 cm biped robot with 15 motors, a camera, LiDAR and a grasping beak. Playable out of the box, and its open-source stack lets you train new behaviours in simulation and run them on the robot. Pre-order at $399.",
+   "image": "https://pollen-robotics.com/assets/og/og-microduck-squad-v2.jpg",
+   "site": "Pollen Robotics"
+  }
+ ],
+ "article": {
+  "title": "توماس ولف از بچه‌های هاگینگ فیس یه ربات دوپای فسقلی و اوپن‌سورس به اسم Microduck رو رونمایی کرده که کلاً ۲۵ سانتی‌متر قدشه ولی ۱۵ تا موتور و کلی سنسور خفن مثل لایدار و دوربین تو دلش جا داده",
+  "source_title": "We have a huge news to share today!",
+  "body": [
+   "ببین رفیق، توماس ولف از بچه‌های هاگینگ فیس یه ربات دوپای فسقلی و اوپن‌سورس به اسم Microduck رو رونمایی کرده که کلاً ۲۵ سانتی‌متر قدشه ولی ۱۵ تا موتور و کلی سنسور خفن مثل لایدار و دوربین تو دلش جا داده. این جوجه‌رباتِ باحال رو می‌تونی خودت با یادگیری تقویتی آموزش بدی، هرچند از همون اولش هم با یه سری رفتار پیش‌فرض مثل راه‌رفتن، اسکیت‌سواری و بلندکردن وسایل با منقارش آماده‌ی کاره. از همه قشنگ‌تر اینه که کل این تشکیلات رو با قیمت زیر ۴۰۰ دلار دادن دست خلق‌الله تا هر کسی بتونه باهاش سرگرم بشه و یاد بگیره."
+  ],
+  "why": "اهمیتش اینه که ورود به دنیای رباتیک پیشرفته و یادگیری تقویتی رو واسه دانشجوها و عاشقان تکنولوژی حسابی ارزون و دم‌دست کرده.",
+  "tags": [
+   "رباتیک"
+  ]
+ },
+ "updated": "2026-10-25T12:28:51+00:00",
+ "gholam_checked": "2026-10-25T12:28:51+00:00"
+}

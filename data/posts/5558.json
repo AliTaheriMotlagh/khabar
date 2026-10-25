@@ -1,0 +1,52 @@
+{
+ "id": 5558,
+ "url": "https://t.me/dlmehr/5558",
+ "date": "2026-09-30T17:52:28+00:00",
+ "text": "https://fxtwitter.com/r_mcguire/status/2105311718226415766?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+ "forwarded_from": null,
+ "digest": false,
+ "hash": "e5e2da6a0fd8",
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/r_mcguire/status/2105311718226415766?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+  "site": "FxTwitter",
+  "title": "Ryan McGuire (@r_mcguire)",
+  "description": "@dylanmcguir3 and I just raised a $7.5M pre-seed led by @a16z to build a robotic surgeon @alephsurgery\nMuch of the early investment in Physical AI has focused on industries where labor is relatively abundant and low-cost. We believe the biggest opportunities…",
+  "image": null
+ },
+ "gholam": null,
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/r_mcguire/status/2105311718226415766",
+   "domain": "x.com",
+   "author": {
+    "name": "Ryan McGuire",
+    "handle": "r_mcguire",
+    "avatar": "https://pbs.twimg.com/profile_images/2060936819609681920/DlM0c7JQ_200x200.jpg"
+   },
+   "text": "@dylanmcguir3 and I just raised a $7.5M pre-seed led by @a16z to build a robotic surgeon @alephsurgery \n\nMuch of the early investment in Physical AI has focused on industries where labor is relatively abundant and low-cost. We believe the biggest opportunities to change the world lie at the opposite end of the spectrum.\n\nSurgery is among the most valuable forms of labor on the planet, but it's far too scarce and expensive - due to an exceptionally long training pipeline and highly concentrated expertise.\n\nWe’re building the first surgeon that scales: one system that can acquire, refine, and transfer surgical skills across millions of procedures. v1 is already learning to perform surgical tasks autonomously from demonstrations, and improve from its own experience.\n\nLots of great folks behind us! @BoxGroup, Reveille VC, Constellation, @forward_deploy, @Valkyrie_vc, @DiscipulusVent, @maniacvc + more",
+   "date": 1790780403,
+   "media": [
+    {
+     "type": "video",
+     "src": "https://video.twimg.com/amplify_video/2105099213751336960/vid/avc1/960x720/knUF7JdHZj5Nc7Se.mp4?tag=29",
+     "poster": "https://pbs.twimg.com/amplify_video_thumb/2105099213751336960/img/US8tdA1nNnuY9wMJ.jpg",
+     "ratio": 0.75,
+     "duration": 54.421,
+     "gif": false
+    }
+   ],
+   "links": []
+  }
+ ],
+ "article": {
+  "title": "@dylanmcguir3 and I just raised a $7.5M pre-seed led by @a16z to build a robotic surgeon @alephsurgery",
+  "source_title": null,
+  "body": [],
+  "why": null,
+  "tags": []
+ },
+ "updated": "2026-10-25T12:25:23+00:00",
+ "gholam_checked": "2026-10-25T12:25:23+00:00"
+}

@@ -2,16 +2,23 @@
  "id": 5991,
  "url": "https://t.me/dlmehr/5991",
  "date": "2026-10-20T17:35:20+00:00",
- "edited": true,
- "views": "208",
  "text": "https://fxtwitter.com/swyx/status/2112587397380943953?s=52&t=F41Qa04r48Mef_j_XjBneQ",
  "forwarded_from": null,
  "digest": false,
  "hash": "741559870cf4",
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/swyx/status/2112587397380943953?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+  "site": "FxTwitter",
+  "title": "swyx (@swyx)",
+  "description": "deepseek posted way more alpha on their zhihu page, if you only read twitter you are reading the laowai approved stuff\n\"Based on this framework, we have implemented a high-throughput, low-latency large-scale inference service for DeepSeek V4.1 Flash. Currently…",
+  "image": "https://cdn4.telesco.pe/file/NWhjZdePYRttG9M4WqyvIuUJv4vr01rDKrK0BsW2d83dVyqGdTU0B7YrBR2B0pVocGR_wq5TTSocXXJZi1LwB7fYzlqROsCtcroaU0cFkOc34kgxHOESpfljaDGAje_MV1lNqcADH2AoIDKqNN8qFkpRkFoZnU4Yujba6byOUG3NH8bBkYDvQxAGl4bZFsQNDRrmuN8OjwG7qPoMuZin0fBnQdoIpVTP5W1Vzr5kmUhQYrccW1ea5QP7AMA_cnWByh8zsmwjr_kvJyA7GP7_eKpqhjmmPjlykceRcd6FAmsb_I3maTwaxSw6h_Ahy2ZmJszv-hWxkHQP_8NUTeKd1g.jpg"
+ },
  "gholam": {
   "text": "رفیق، قضیه اینه که بچه‌های دیپ‌سیک فریم‌ورک استنتاج داخلی خودشون به اسم دیپ‌اینفر رو برای نسخه جدید مدلشون اوپن‌سورس کردن، اما اصل اطلاعات ناب و عدد و رقم‌های دندون‌گیر رو به‌جای توییتر، تو شبکه اجتماعی چینی ژیهو لو دادن. طبق اون آمار، فقط یه کلاسترشون روزانه رقم دیوانه‌وار ۱۵۵ تریلیون توکن خروجی میده و درآمد هر کارت گرافیک توی ساعت‌های غیرپیک حدود ۳۸ دلاره. از اونجایی که هزینه هر ساعت جی‌پی‌یو نهایتاً بین ۵ تا ۱۰ دلاره، این رفقای چینی دارن ادعا می‌کنن که حتی با این قیمت‌های کف‌بازاری خودشون، حاشیه سود ۸۰ درصدی از سرویس‌دهی مدل‌ها به جیب می‌زنن.\n\nچرا مهمه؟ اهمیتش اینه که ثابت می‌کنه برعکس ناله‌های شرکت‌های غربی از هزینه‌های سرسام‌آور هوش مصنوعی، اگه بهینه‌سازی فنی عمیق بلد باشی حتی با قیمت‌های ارزون هم میشه سودهای نجومی به دست آورد.",
   "date": "2026-10-20T17:35:39+00:00"
  },
+ "gholam_checked": "2026-10-24T23:03:15+00:00",
  "links": [
   {
    "kind": "tweet",
@@ -63,14 +70,6 @@
    }
   }
  ],
- "media": [],
- "preview": {
-  "url": "https://fxtwitter.com/swyx/status/2112587397380943953?s=52&t=F41Qa04r48Mef_j_XjBneQ",
-  "site": "FxTwitter",
-  "title": "swyx (@swyx)",
-  "description": "deepseek posted way more alpha on their zhihu page, if you only read twitter you are reading the laowai approved stuff\n\"Based on this framework, we have implemented a high-throughput, low-latency large-scale inference service for DeepSeek V4.1 Flash. Currently…",
-  "image": null
- },
  "article": {
   "title": "قضیه اینه که بچه‌های دیپ‌سیک فریم‌ورک استنتاج داخلی خودشون به اسم دیپ‌اینفر رو برای نسخه جدید مدلشون اوپن‌سورس کردن، اما اصل اطلاعات ناب و عدد و رقم‌های دندون‌گیر رو به‌جای توییتر، تو شبکه اجتماعی چینی ژیهو لو دادن",
   "source_title": "deepseek posted way more alpha on their zhihu page, if you only read twitter you are reading the laowai approved stuff",
@@ -82,6 +81,5 @@
    "چین"
   ]
  },
- "updated": "2026-10-24T23:03:15+00:00",
- "gholam_checked": "2026-10-24T23:03:15+00:00"
+ "updated": "2026-10-25T11:53:59+00:00"
 }

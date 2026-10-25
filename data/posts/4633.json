@@ -1,0 +1,63 @@
+{
+ "id": 4633,
+ "url": "https://t.me/dlmehr/4633",
+ "date": "2026-08-07T04:49:00+00:00",
+ "text": "https://fxtwitter.com/claudeai/status/2085563808773189680?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+ "forwarded_from": null,
+ "digest": false,
+ "hash": "997d9684727f",
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/claudeai/status/2085563808773189680?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+  "site": "FxTwitter · anthropic.com",
+  "title": "Claude (@claudeai)",
+  "description": "We’re updating Claude Fable 5’s biology safeguards to reduce false positives. In our testing, this update reduced biology-related fallbacks by about 85% across our product surfaces.\nFable can now assist on a wider range of everyday health and educational…",
+  "image": "https://cdn4.telesco.pe/file/O5gW_Dln_y_TsN1BtFgW752KORLc2Rd-OxZ76WSaNfbAPd-IjC1w5R-5OyF0K3zm8r6igYaNTh3zUCOSlUcUVvtBvSeIeVgAZW9viljlNvUweour8v7xAG2blF-270yGtA3hxlRa-_ZomgO8N2XECiGbtkb40S6A_2KDmtWW3I8qWisW0_2Q3_X3KODnOVRZXQKAT4dnkANfvjKDPHoLmnD5AdzQzEmyJVV8yDEXVWcF2THmNlVB_9AcUXc1pk2kWcYTOXzNJcgapr56sYPLHuyhZHh_w_lLEFzqXN5dsLtd_tv0Mnl0bKqHzQnC0JhKtmR5lFVVcCc5dkUhE-xsTA.jpg"
+ },
+ "gholam": {
+  "text": "ببین آبجی، تیم سازنده هوش مصنوعی کلود اومده سیستم‌های امنیتی مدل Fable 5 رو تو بخش زیست‌شناسی به‌روزرسانی کرده تا دیگه الکی به سوالا گیر نده. با این کار، گیر دادن‌های اشتباهی مدل حدود ۸۵ درصد کم شده و حالا راحت‌تر می‌تونه به سوالات بهداشتی و آموزشی روزمره‌تون جواب بده. البته رفیق، حواست باشه واسه کارای حساس مثل ویروس‌شناسی، سم‌شناسی و ساخت دارو هنوز قفل‌های سخت‌گیرانه داره و کارو می‌سپاره دست مدل Opus 5. خلاصه دارن مسیر رو جوری هموار می‌کنن که در آینده متخصص‌ها هم بتونن با خیال راحت واسه تحقیقات پزشکی ازش استفاده کنن.\n\nاهمیتش اینه که دسترسی عمومی به اطلاعات سلامت و پزشکی رو خیلی راحت‌تر می‌کنه و در عین حال جلوی خطرات زیستی و سوءاستفاده‌های احتمالی رو می‌گیره.",
+  "date": "2026-08-07T04:49:19+00:00"
+ },
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/claudeai/status/2085563808773189680",
+   "domain": "x.com",
+   "author": {
+    "name": "Claude",
+    "handle": "claudeai",
+    "avatar": "https://pbs.twimg.com/profile_images/1950950107937185792/QOfEjFoJ_200x200.jpg"
+   },
+   "text": "We’re updating Claude Fable 5’s biology safeguards to reduce false positives. In our testing, this update reduced biology-related fallbacks by about 85% across our product surfaces.\n\nFable can now assist on a wider range of everyday health and educational questions.\n\nWe believe the biggest positive impacts of AI will be in biology and medicine, and we’re committed to putting frontier intelligence safely into the hands of as many researchers as possible. Fable will continue to fallback to Opus 5 for requests we consider dual-use—including virology, toxicology, and molecular design—so it isn't yet usable for professional biology research and drug development.\n\nWe're committed to closing that gap through trusted access pathways for frontier biology capabilities.\n\nhttps://www.anthropic.com/news/improving-fable-5-s-biology-safeguards",
+   "date": 1786072134,
+   "media": [],
+   "links": [
+    "https://www.anthropic.com/news/improving-fable-5-s-biology-safeguards"
+   ]
+  },
+  {
+   "kind": "link",
+   "url": "https://www.anthropic.com/news/improving-fable-5-s-biology-safeguards",
+   "domain": "anthropic.com",
+   "title": "Improving Fable 5's safeguards",
+   "description": "We’re making updates to Claude Fable 5’s biology safeguards in a way that substantially reduces fallbacks.",
+   "image": "https://www-cdn.anthropic.com/images/4zrzovbb/website/6d4a0d28992ade92d6fa63646fd9c9d318245c6c-2400x1260.jpg",
+   "site": "anthropic.com"
+  }
+ ],
+ "article": {
+  "title": "تیم سازنده هوش مصنوعی کلود اومده سیستم‌های امنیتی مدل Fable 5 رو تو بخش زیست‌شناسی به‌روزرسانی کرده تا دیگه الکی به سوالا گیر نده",
+  "source_title": "We’re updating Claude Fable 5’s biology safeguards to reduce false positives. In our testing, this update reduced biology-related fallbacks…",
+  "body": [
+   "ببین آبجی، تیم سازنده هوش مصنوعی کلود اومده سیستم‌های امنیتی مدل Fable 5 رو تو بخش زیست‌شناسی به‌روزرسانی کرده تا دیگه الکی به سوالا گیر نده. با این کار، گیر دادن‌های اشتباهی مدل حدود ۸۵ درصد کم شده و حالا راحت‌تر می‌تونه به سوالات بهداشتی و آموزشی روزمره‌تون جواب بده. البته رفیق، حواست باشه واسه کارای حساس مثل ویروس‌شناسی، سم‌شناسی و ساخت دارو هنوز قفل‌های سخت‌گیرانه داره و کارو می‌سپاره دست مدل Opus 5. خلاصه دارن مسیر رو جوری هموار می‌کنن که در آینده متخصص‌ها هم بتونن با خیال راحت واسه تحقیقات پزشکی ازش استفاده کنن."
+  ],
+  "why": "دسترسی عمومی به اطلاعات سلامت و پزشکی رو خیلی راحت‌تر می‌کنه و در عین حال جلوی خطرات زیستی و سوءاستفاده‌های احتمالی رو می‌گیره.",
+  "tags": [
+   "آنتروپیک",
+   "سلامت",
+   "امنیت"
+  ]
+ },
+ "updated": "2026-10-25T12:30:46+00:00",
+ "gholam_checked": "2026-10-25T12:30:46+00:00"
+}

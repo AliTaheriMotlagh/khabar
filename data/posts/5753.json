@@ -1,0 +1,103 @@
+{
+ "id": 5753,
+ "url": "https://t.me/dlmehr/5753",
+ "date": "2026-10-08T18:29:47+00:00",
+ "text": "https://fxtwitter.com/rohanpaul_ai/status/2108248580431688024?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+ "forwarded_from": null,
+ "digest": false,
+ "hash": "339e2d4b5f2f",
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/rohanpaul_ai/status/2108248580431688024?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+  "site": "FxTwitter - Video 1 / 4",
+  "title": "Rohan Paul (@rohanpaul_ai)",
+  "description": "Odyssey released Odyssey-3, a world model whose Pro version posts the highest reported Physics-IQ Verified video-to-video score, 66.1.\nIt's an autoregressive diffusion transformer that predicts next frames from earlier ones plus incoming actions, letting…",
+  "image": null
+ },
+ "gholam": {
+  "text": "ببین رفیق، بچه‌های شرکت Odyssey اومدن از مدل خفن خودشون به اسم Odyssey-3 رونمایی کردن که ادعا دارن قوی‌ترین مدل جهان‌ساز تا به امروزِ و نسخه پرو اون با نمره ۶۶.۱ بالاترین رکورد درک فیزیک رو توی بنچمارک‌ها شکسته. این معماری نوین فریم‌های بعدی ویدیو رو بر اساس اکشن‌ها و حرکات لحظه‌ای پیش‌بینی می‌کنه، یعنی محیطی می‌سازه که توی لحظه به تصمیم‌های کاربر یا ربات واکنش نشون میده. تازه یه نسخه دم‌دستی و سریع به اسم Flash هم دادن که رایگانه و می‌تونی با یه پرامپت متنی ساده بری تو دل یه دنیای تعاملی بچرخی. حتی باهاش یه ماشین واقعی رو تو ترافیک جاده‌های هند راه انداختن و یه بازوی رباتیک رو تست زدن، هرچند راستش هنوز آمار رسمی از درصد خطاش منتشر نکردن.\n\nچرا مهمه؟ اهمیتش اینه که هوش مصنوعی بالاخره داره منطق و فیزیک دنیای واقعی رو درست می‌فهمه و این قضیه تحول عظیمی توی آموزش سریع‌تر ربات‌ها و شبیه‌سازی‌های فوق‌طبیعی راه میندازه.",
+  "date": "2026-10-08T18:30:07+00:00"
+ },
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/rohanpaul_ai/status/2108248580431688024",
+   "domain": "x.com",
+   "author": {
+    "name": "Rohan Paul",
+    "handle": "rohanpaul_ai",
+    "avatar": "https://pbs.twimg.com/profile_images/1816185267037859840/Fd18CH0v_200x200.jpg"
+   },
+   "text": "Odyssey released Odyssey-3, a world model whose Pro version posts the highest reported Physics-IQ Verified video-to-video score, 66.1.\n\nIt's an autoregressive diffusion transformer that predicts next frames from earlier ones plus incoming actions, letting prompted scenes react to each move.\n\n> Odyssey-3 Flash, a distilled few-step version, turns a text prompt into an explorable world that reacts to movement and events in real time, and anyone can try it free today.\n\n> With Odyssey-3 frozen, a policy trained on 20 hours of Indian road data drove a real car, and a robot arm recovered from missed grasps its demos never showed, though neither result reports success rates.\n\n> on image-to-video Odyssey-3 Pro roughly ties FLUX 3 [large]",
+   "date": 1791480605,
+   "media": [
+    {
+     "type": "video",
+     "src": "https://video.twimg.com/amplify_video/2108248534537621504/vid/avc1/1248x720/CflF8xMYTgqpxhQ7.mp4?tag=29",
+     "poster": "https://pbs.twimg.com/amplify_video_thumb/2108248534537621504/img/OPYAcNwEAd9DMsP0.jpg",
+     "ratio": 0.5769,
+     "duration": 39.937,
+     "gif": false
+    },
+    {
+     "type": "video",
+     "src": "https://video.twimg.com/amplify_video/2108248534462124032/vid/avc1/1248x720/xjeaZquQTmTM4Z_R.mp4?tag=29",
+     "poster": "https://pbs.twimg.com/amplify_video_thumb/2108248534462124032/img/R2ifmGPdowLYt3TG.jpg",
+     "ratio": 0.5769,
+     "duration": 22.625,
+     "gif": false
+    },
+    {
+     "type": "video",
+     "src": "https://video.twimg.com/amplify_video/2108248534520860672/vid/avc1/1248x720/gQOzI7g6Pv2FFVm4.mp4?tag=29",
+     "poster": "https://pbs.twimg.com/amplify_video_thumb/2108248534520860672/img/cF3UlWTTfUGqnSlR.jpg",
+     "ratio": 0.5769,
+     "duration": 55.375,
+     "gif": false
+    },
+    {
+     "type": "video",
+     "src": "https://video.twimg.com/amplify_video/2108248534457962496/vid/avc1/1248x720/DuDTUPDAR5wMnI9o.mp4?tag=29",
+     "poster": "https://pbs.twimg.com/amplify_video_thumb/2108248534457962496/img/YwShnCCLA8_km8dh.jpg",
+     "ratio": 0.5769,
+     "duration": 41.562,
+     "gif": false
+    }
+   ],
+   "links": [],
+   "quote": {
+    "author": {
+     "name": "Odyssey",
+     "handle": "odysseyml",
+     "avatar": "https://pbs.twimg.com/profile_images/2071642815944359936/IebkUQ-C_200x200.jpg"
+    },
+    "text": "Today we're launching Odyssey-3, the most powerful foundation world model yet.\n\nIt sets a new state of the art on Physics-IQ, and powers robots, trains AIs, and generates interactive experiences. It's really cool.\n\nExperience the model today, all for free!",
+    "date": 1791478173,
+    "media": [
+     {
+      "type": "video",
+      "src": "https://video.twimg.com/amplify_video/2108225049060921344/vid/avc1/1280x720/JDkAOA4Q_GdE5rL4.mp4?tag=29",
+      "poster": "https://pbs.twimg.com/amplify_video_thumb/2108225049060921344/img/WhwXmpS6ufWt3uTH.jpg",
+      "ratio": 0.5625,
+      "duration": 64.564,
+      "gif": false
+     }
+    ],
+    "links": []
+   }
+  }
+ ],
+ "article": {
+  "title": "بچه‌های شرکت Odyssey اومدن از مدل خفن خودشون به اسم Odyssey-3 رونمایی کردن که ادعا دارن قوی‌ترین مدل جهان‌ساز تا به امروزِ و نسخه پرو اون با نمره ۶۶.۱ بالاترین رکورد درک فیزیک رو توی بنچمارک‌ها شکسته",
+  "source_title": "Odyssey released Odyssey-3, a world model whose Pro version posts the highest reported Physics-IQ Verified video-to-video score, 66.1.",
+  "body": [
+   "ببین رفیق، بچه‌های شرکت Odyssey اومدن از مدل خفن خودشون به اسم Odyssey-3 رونمایی کردن که ادعا دارن قوی‌ترین مدل جهان‌ساز تا به امروزِ و نسخه پرو اون با نمره ۶۶.۱ بالاترین رکورد درک فیزیک رو توی بنچمارک‌ها شکسته. این معماری نوین فریم‌های بعدی ویدیو رو بر اساس اکشن‌ها و حرکات لحظه‌ای پیش‌بینی می‌کنه، یعنی محیطی می‌سازه که توی لحظه به تصمیم‌های کاربر یا ربات واکنش نشون میده. تازه یه نسخه دم‌دستی و سریع به اسم Flash هم دادن که رایگانه و می‌تونی با یه پرامپت متنی ساده بری تو دل یه دنیای تعاملی بچرخی. حتی باهاش یه ماشین واقعی رو تو ترافیک جاده‌های هند راه انداختن و یه بازوی رباتیک رو تست زدن، هرچند راستش هنوز آمار رسمی از درصد خطاش منتشر نکردن."
+  ],
+  "why": "اهمیتش اینه که هوش مصنوعی بالاخره داره منطق و فیزیک دنیای واقعی رو درست می‌فهمه و این قضیه تحول عظیمی توی آموزش سریع‌تر ربات‌ها و شبیه‌سازی‌های فوق‌طبیعی راه میندازه.",
+  "tags": [
+   "رباتیک"
+  ]
+ },
+ "updated": "2026-10-25T12:24:08+00:00",
+ "gholam_checked": "2026-10-25T12:24:08+00:00"
+}

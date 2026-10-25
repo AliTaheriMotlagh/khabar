@@ -1,0 +1,59 @@
+{
+ "id": 5067,
+ "url": "https://t.me/dlmehr/5067",
+ "date": "2026-09-01T15:43:39+00:00",
+ "text": "https://fxtwitter.com/perplexity_ai/status/2094803515264978953?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+ "forwarded_from": null,
+ "digest": false,
+ "hash": "62e90cda9f28",
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/perplexity_ai/status/2094803515264978953?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+  "site": "🧵 Thread • FxTwitter",
+  "title": "Perplexity (@perplexity_ai)",
+  "description": "Introducing hybrid compute in Perplexity Computer.\nComputer can start a task in the cloud, then move to a local model that runs on your Mac. Use it for steps involving private files or sensitive data.\nAvailable today in the Perplexity Mac app.",
+  "image": null
+ },
+ "gholam": {
+  "text": "ببین رفیق، بچه‌های پرپلکسیتی یه قابلیت ردیف به اسم «پردازش ترکیبی» رو برای Perplexity Computer توی نسخه مک لانچ کردن. داستان اینه که هوش مصنوعی می‌تونه کارش رو توی فضای ابری شروع کنه، ولی به محض اینکه پای فایل‌های خصوصی یا اطلاعات حساس وسط بیاد، ادامه کار رو می‌سپاره به مدل محلی سیستم مک خودت. با این دست‌فرمون، دیگه لازم نیست نگران فرستاده شدن دیتای محرمانه‌ات به سرورهای بیرونی باشی و خیالت از بابت امنیت راحته. این امکان مشتی از همین امروز روی اپلیکیشن مک پرپلکسیتی فعال شده و آماده استفاده‌ست.\n\nاهمیتش اینه که بدون فدا کردن حریم خصوصی و امنیت فایل‌های حساس، می‌تونی از سرعت و قدرت پردازش ابری هوش مصنوعی استفاده کنی.",
+  "date": "2026-09-01T15:43:56+00:00"
+ },
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/perplexity_ai/status/2094803515264978953",
+   "domain": "x.com",
+   "author": {
+    "name": "Perplexity",
+    "handle": "perplexity_ai",
+    "avatar": "https://pbs.twimg.com/profile_images/2009310641165660160/XArF3_Ib_200x200.jpg"
+   },
+   "text": "Introducing hybrid compute in Perplexity Computer.\n\nComputer can start a task in the cloud, then move to a local model that runs on your Mac. Use it for steps involving private files or sensitive data.\n\nAvailable today in the Perplexity Mac app.",
+   "date": 1788275052,
+   "media": [
+    {
+     "type": "video",
+     "src": "https://video.twimg.com/amplify_video/2094803470000009216/vid/avc1/1280x720/VIS8XrVnRLZIpRER.mp4?tag=14",
+     "poster": "https://pbs.twimg.com/amplify_video_thumb/2094803470000009216/img/GZUKZILDtpd96fBu.jpg",
+     "ratio": 0.5625,
+     "duration": 68.778,
+     "gif": false
+    }
+   ],
+   "links": []
+  }
+ ],
+ "article": {
+  "title": "بچه‌های پرپلکسیتی یه قابلیت ردیف به اسم «پردازش ترکیبی» رو برای Perplexity Computer توی نسخه مک لانچ کردن",
+  "source_title": "Introducing hybrid compute in Perplexity Computer.",
+  "body": [
+   "ببین رفیق، بچه‌های پرپلکسیتی یه قابلیت ردیف به اسم «پردازش ترکیبی» رو برای Perplexity Computer توی نسخه مک لانچ کردن. داستان اینه که هوش مصنوعی می‌تونه کارش رو توی فضای ابری شروع کنه، ولی به محض اینکه پای فایل‌های خصوصی یا اطلاعات حساس وسط بیاد، ادامه کار رو می‌سپاره به مدل محلی سیستم مک خودت. با این دست‌فرمون، دیگه لازم نیست نگران فرستاده شدن دیتای محرمانه‌ات به سرورهای بیرونی باشی و خیالت از بابت امنیت راحته. این امکان مشتی از همین امروز روی اپلیکیشن مک پرپلکسیتی فعال شده و آماده استفاده‌ست."
+  ],
+  "why": "بدون فدا کردن حریم خصوصی و امنیت فایل‌های حساس، می‌تونی از سرعت و قدرت پردازش ابری هوش مصنوعی استفاده کنی.",
+  "tags": [
+   "امنیت"
+  ]
+ },
+ "updated": "2026-10-25T12:28:23+00:00",
+ "gholam_checked": "2026-10-25T12:28:23+00:00"
+}

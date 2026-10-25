@@ -2,16 +2,23 @@
  "id": 5997,
  "url": "https://t.me/dlmehr/5997",
  "date": "2026-10-20T19:24:07+00:00",
- "edited": true,
- "views": "174",
  "text": "https://fxtwitter.com/iscienceluvr/status/2112597012088844407?s=52&t=F41Qa04r48Mef_j_XjBneQ",
  "forwarded_from": null,
  "digest": false,
  "hash": "098a29c88f68",
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/iscienceluvr/status/2112597012088844407?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+  "site": "🧵 Thread • FxTwitter",
+  "title": "Tanishq Mathew Abraham, Ph.D. (@iScienceLuvr)",
+  "description": "Cancer patients with the same diagnosis often have very different tumor biology.\nMolecular testing can reveal underlying differences, but that's slow and expensive.\nIntroducing Holon-S1, our platform to predict genes and biomarkers from routine pathology…",
+  "image": null
+ },
  "gholam": {
   "text": "رفیق، حتماً شنیدی که دو نفر با یه نوع سرطان مشترک، ممکنه تومورهاشون کاملاً با هم فرق داشته باشه و آزمایش‌های ژنتیکی هم برای فهمیدن این تفاوت‌ها کلی زمان می‌بره و خرج زیادی روی دست بیمار می‌ذاره. حالا دکتر تانیشک آبراهام و تیمش یه مدل هوش مصنوعی کاردرست به اسم Holon-S1 رو کردن که می‌تونه فقط با آنالیز همون لام‌های ساده و معمولی پاتولوژی، ژن‌ها و نشانگرهای زیستی تومور رو تشخیص بده. این ابزار رو روی ۱۶ عضو مختلف بدن تست کردن که دوتا مدل مطرح دیگه رو جا گذاشته و حتی توی سرطان سینه و روده هم نشانگرهای زیستی جدیدی شکار کرده. با این حساب، دانشمندا می‌تونن بدون خرج اضافه و از روی همون نمونه‌های قبلی، راز تومورها رو باز کنن.\n\nاهمیتش اینه که مسیر درمان اختصاصی سرطان رو فوق‌العاده سریع‌تر و ارزون‌تر می‌کنه تا بیمار زمان طلایی مداوا رو از دست نده.",
   "date": "2026-10-20T19:24:29+00:00"
  },
+ "gholam_checked": "2026-10-24T23:03:14+00:00",
  "links": [
   {
    "kind": "tweet",
@@ -46,14 +53,6 @@
    "links": []
   }
  ],
- "media": [],
- "preview": {
-  "url": "https://fxtwitter.com/iscienceluvr/status/2112597012088844407?s=52&t=F41Qa04r48Mef_j_XjBneQ",
-  "site": "🧵 Thread • FxTwitter",
-  "title": "Tanishq Mathew Abraham, Ph.D. (@iScienceLuvr)",
-  "description": "Cancer patients with the same diagnosis often have very different tumor biology.\nMolecular testing can reveal underlying differences, but that's slow and expensive.\nIntroducing Holon-S1, our platform to predict genes and biomarkers from routine pathology…",
-  "image": null
- },
  "article": {
   "title": "حتماً شنیدی که دو نفر با یه نوع سرطان مشترک، ممکنه تومورهاشون کاملاً با هم فرق داشته باشه و آزمایش‌های ژنتیکی هم برای فهمیدن این تفاوت‌ها کلی زمان می‌بره و خرج زیادی روی دست بیمار می‌ذاره",
   "source_title": "Cancer patients with the same diagnosis often have very different tumor biology.",
@@ -65,6 +64,5 @@
    "سلامت"
   ]
  },
- "updated": "2026-10-24T23:03:14+00:00",
- "gholam_checked": "2026-10-24T23:03:14+00:00"
+ "updated": "2026-10-25T11:53:56+00:00"
 }

@@ -1,0 +1,71 @@
+{
+ "id": 5893,
+ "url": "https://t.me/dlmehr/5893",
+ "date": "2026-10-14T19:41:31+00:00",
+ "text": "https://fxtwitter.com/aiatmeta/status/2110441716507693450?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+ "forwarded_from": null,
+ "digest": false,
+ "hash": "41d36dc0ddf5",
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/aiatmeta/status/2110441716507693450?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+  "site": "FxTwitter",
+  "title": "AI at Meta (@AIatMeta)",
+  "description": "We’re exploring how AI can accelerate health science research.\nWhile AI has made significant breakthroughs in formal sciences like mathematics, health data science depends on imperfect real-world data and consequential choices about cohorts, variables, and…",
+  "image": null
+ },
+ "gholam": {
+  "text": "رفیق، بچه‌های تیم هوش مصنوعی متا زدن تو کار تحقیقات پزشکی و یه سیستم مشتی راه انداختن تا کار دانشمندا رو حسابی جلو بندازن. این سیستم با مدل‌های Muse Spark 1.3 و Muse Wonder و دسترسی به ۵ میلیون پرونده سلامت ناشناس، تو فرضیه‌سازی، کدنویسی و نوشتن پیش‌نویس مقاله‌ها حسابی به محققا کمک کرده. البته تصمیم‌گیری علمی کاملاً دست خود دکترا بوده و حاصل این همکاری خفن، انتشار ۱۰ تا مقاله علمی درست‌ودرمون تو حوزه‌هایی مثل سرطان، قلب و بیماری‌های عفونیه. خلاصه ثابت کردن برخلاف ریاضیات شسته‌رفته، هوش مصنوعی می‌تونه با داده‌های شلخته و پیچیده دنیای واقعی هم کولاک کنه.\n\nاهمیتش اینه که این رویکرد نشون میده هوش مصنوعی قرار نیست جای دکترها رو بگیره، بلکه مثل یه دستیار همه‌فن‌حریف سرعت پژوهش‌های حیاتی و نجات‌بخش رو چند پله می‌بره بالا.",
+  "date": "2026-10-14T19:41:50+00:00"
+ },
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/AIatMeta/status/2110441716507693450",
+   "domain": "x.com",
+   "author": {
+    "name": "AI at Meta",
+    "handle": "AIatMeta",
+    "avatar": "https://pbs.twimg.com/profile_images/2102933421458665472/o_KTIjw3_200x200.png"
+   },
+   "text": "We’re exploring how AI can accelerate health science research.\n\nWhile AI has made significant breakthroughs in formal sciences like mathematics, health data science depends on imperfect real-world data and consequential choices about cohorts, variables, and causal assumptions.\n\nTo explore how AI can assist health researchers, we built a human-led research scaffold powered by Muse Spark 1.3 and Muse Wonder with access to 5M retrospective de-identified electronic health records and publicly available data. A cohort of medical experts used the system to conduct original research, accelerate hypothesis generation, code execution, and manuscript drafting while maintaining full authority over scientific decisions.\n\nToday, we’re sharing 10 research manuscripts produced through this exploration, spanning cardiology, oncology, infectious disease, emergency medicine, and more.\n\nRead more in our research blog: https://go.meta.me/3U06wvD",
+   "date": 1792003489,
+   "media": [
+    {
+     "type": "video",
+     "src": "https://video.twimg.com/amplify_video/2110440851360878593/vid/avc1/1280x720/2nioR0kTFRs5K26r.mp4?tag=29",
+     "poster": "https://pbs.twimg.com/amplify_video_thumb/2110440851360878593/img/ryDI-P4tAI1ymBD_.jpg",
+     "ratio": 0.5625,
+     "duration": 142.934,
+     "gif": false
+    }
+   ],
+   "links": [
+    "https://go.meta.me/3U06wvD"
+   ]
+  },
+  {
+   "kind": "link",
+   "url": "https://research.meta.ai/blog/accelerating-scientific-research-in-health-data-science-with-muse-models",
+   "domain": "research.meta.ai",
+   "title": "Accelerating Scientific Research in Health Data Science With Muse Models",
+   "description": "An initial exploration of a human-governed AI system for accelerating health research with Muse models.",
+   "image": "https://research.meta.ai/articles/health-papers/hero/health-papers-hero-light-v1.webp",
+   "site": "Meta AI Research"
+  }
+ ],
+ "article": {
+  "title": "بچه‌های تیم هوش مصنوعی متا زدن تو کار تحقیقات پزشکی و یه سیستم مشتی راه انداختن تا کار دانشمندا رو حسابی جلو بندازن",
+  "source_title": "We’re exploring how AI can accelerate health science research.",
+  "body": [
+   "رفیق، بچه‌های تیم هوش مصنوعی متا زدن تو کار تحقیقات پزشکی و یه سیستم مشتی راه انداختن تا کار دانشمندا رو حسابی جلو بندازن. این سیستم با مدل‌های Muse Spark 1.3 و Muse Wonder و دسترسی به ۵ میلیون پرونده سلامت ناشناس، تو فرضیه‌سازی، کدنویسی و نوشتن پیش‌نویس مقاله‌ها حسابی به محققا کمک کرده. البته تصمیم‌گیری علمی کاملاً دست خود دکترا بوده و حاصل این همکاری خفن، انتشار ۱۰ تا مقاله علمی درست‌ودرمون تو حوزه‌هایی مثل سرطان، قلب و بیماری‌های عفونیه. خلاصه ثابت کردن برخلاف ریاضیات شسته‌رفته، هوش مصنوعی می‌تونه با داده‌های شلخته و پیچیده دنیای واقعی هم کولاک کنه."
+  ],
+  "why": "این رویکرد نشون میده هوش مصنوعی قرار نیست جای دکترها رو بگیره، بلکه مثل یه دستیار همه‌فن‌حریف سرعت پژوهش‌های حیاتی و نجات‌بخش رو چند پله می‌بره بالا.",
+  "tags": [
+   "سلامت",
+   "متا"
+  ]
+ },
+ "updated": "2026-10-25T12:23:29+00:00",
+ "gholam_checked": "2026-10-25T12:23:29+00:00"
+}

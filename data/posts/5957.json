@@ -2,16 +2,23 @@
  "id": 5957,
  "url": "https://t.me/dlmehr/5957",
  "date": "2026-10-18T14:53:44+00:00",
- "edited": true,
- "views": "184",
  "text": "https://fxtwitter.com/rohanpaul_ai/status/2111744320982425948?s=52&t=F41Qa04r48Mef_j_XjBneQ",
  "forwarded_from": null,
  "digest": false,
  "hash": "ec0d88075586",
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/rohanpaul_ai/status/2111744320982425948?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+  "site": "FxTwitter",
+  "title": "Rohan Paul (@rohanpaul_ai)",
+  "description": "59% of Anthropic staff say AI already cuts well-suited tasks to a quarter of the time, and on average they expect AI to be able to do 75% of their current work hours by 2030.\nQuoting Rohan Paul (@rohanpaul_ai)\nAnthropic’s junior share of technical headcount…",
+  "image": "https://cdn4.telesco.pe/file/quu2z6a_ArO3q8uVEAiC4AJ3Yj0y1V7Kv6WSGkIMJ2oHTXIoQXSUaYUFVu9yd8SPvOhG_A00FjsdqvjKWcxd90ln9-wXqNJVdFVfSvIvSi5LLltYb4xJ1nXYEnX1FLNSZL4wdCIvfN7gXrNnYPpd1GWlhyjBLYbU3zRZKIcncwkmc5YpZgeLSaxniZHxtqYURVwpR9n7BcR5tXdrehK5CBup9HNVAo1cs2zeJ8fXEPk1zqVHaaKR6uWeSZB36i_EjrT1dDxYpAU2kiMsvCk8OQIFt5fyK9hIjZVTJu4jN2KHcif2coT4ZkY7IS3khoAD47oEf3mWrxgw2DBJAKabsg.jpg"
+ },
  "gholam": {
   "text": "رفیق، قضیه اینه که خود بچه‌های شرکت انتروپیک آمار دادن که هوش مصنوعی داره چه طوفانی به پا می‌کنه؛ ۵۹ درصد کارمنداشون گفتن هوش مصنوعی زمان انجام کارهای مناسب رو به یک‌چهارم رسونده و انتظار دارن تا سال ۲۰۳۰ بتونه ۷۵ درصد از ساعت کاری فعلیشون رو گردن بگیره. ماجرا اونجا جالب‌تر می‌شه که با وجود سه برابر شدن اندازه شرکت، سهم نیروهای جونیور و تازه‌کار فنی از ۲۱ درصد به ۱۴ درصد سقوط کرده و یه سوم مدیرهای یادگیری ماشین و یه پنجم مدیرهای مهندسی نرم‌افزار گفتن استخدام رو کم کردن. تازه توی همین گیرودار، ایجنت‌های هوش مصنوعی این شرکت شش برابر کل نیروهای انسانی ساعت کاری ثبت کردن و دارن تخت‌گاز کار جلو می‌برن.\n\nاهمیتش اینه که زنگ خطر اشتغال اول از همه بیخ گوش خود سازنده‌های هوش مصنوعی به صدا دراومده و نشون میده ورود نیروهای تازه‌کار به بازار تکنولوژی داره سخت‌تر از همیشه می‌شه.",
   "date": "2026-10-18T14:54:00+00:00"
  },
+ "gholam_checked": "2026-10-24T23:11:45+00:00",
  "links": [
   {
    "kind": "tweet",
@@ -69,18 +76,6 @@
    }
   }
  ],
- "media": [],
- "preview": {
-  "url": "https://fxtwitter.com/rohanpaul_ai/status/2111744320982425948?s=52&t=F41Qa04r48Mef_j_XjBneQ",
-  "site": "FxTwitter",
-  "title": "Rohan Paul (@rohanpaul_ai)",
-  "description": "59% of Anthropic staff say AI already cuts well-suited tasks to a quarter of the time, and on average they expect AI to be able to do 75% of their current work hours by 2030.\nQuoting Rohan Paul (@rohanpaul_ai)\nAnthropic’s junior share of technical headcount…",
-  "image": {
-   "src": "media/5957/preview.webp",
-   "width": 800,
-   "height": 477
-  }
- },
  "article": {
   "title": "قضیه اینه که خود بچه‌های شرکت انتروپیک آمار دادن که هوش مصنوعی داره چه طوفانی به پا می‌کنه",
   "source_title": "59% of Anthropic staff say AI already cuts well-suited tasks to a quarter of the time, and on average they expect AI to be able to do 75%…",
@@ -92,6 +87,5 @@
    "آنتروپیک"
   ]
  },
- "updated": "2026-10-24T23:11:45+00:00",
- "gholam_checked": "2026-10-24T23:11:45+00:00"
+ "updated": "2026-10-25T11:54:09+00:00"
 }

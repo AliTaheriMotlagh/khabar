@@ -1,0 +1,56 @@
+{
+ "id": 5293,
+ "url": "https://t.me/dlmehr/5293",
+ "date": "2026-09-14T17:50:34+00:00",
+ "text": "https://fxtwitter.com/kimmonismus/status/2099544210638873074?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+ "forwarded_from": null,
+ "digest": false,
+ "hash": "908b1037593c",
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/kimmonismus/status/2099544210638873074?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+  "site": "🧵 Thread • FxTwitter",
+  "title": "Chubby ♨️ (@kimmonismus)",
+  "description": "Cognichip is launching ACI Enterprise today, a full-stack AI system that works alongside engineers to design chips!\nThe company reports that one engineer took a 55-page specification through front-end design and verification in 10 days. Its comparison: a…",
+  "image": "https://cdn4.telesco.pe/file/KYTR-XU47LBpvdUH1dQYvNqHQ2ZUUvhkwNH53TgKMarK7SdN6q0M9zVwIbQmFketCG9i3X0Z5EC3-ZTCuQ4PA7RnSD8x-WNTg5Wx0v0AOGfqaJr3uNAGPur7X2bz0SvbwM5D89CviLuaUMR55SBebBZ4U9sWtSgLjQDmGV4c9Szs_go44nvINnYs-OETXZ8PFI0GxlOMX_lkqNzsSUI4zaJ2hJEQUylDZajRUkUx-s9lhPnVA-oE4lZUzDOtj0YFW-JxMOqM2_Vovv-ZQIh8Sql9SWkkNsSS5x_bSO0vRplX22T5OHqZKspF9pAwNI2dXErVMAOVXvHZwDeVfCOxwQ.jpg"
+ },
+ "gholam": {
+  "text": "ببین رفیق، شرکت Cognichip یه هوش مصنوعی همه‌فن‌حریف به اسم ACI Enterprise رو کرده که پا‌به‌پای مهندسا چیپ و تراشه‌های سخت‌افزاری طراحی می‌کنه. طبق ادعای خودشون، یه مهندس تنهایی با این ابزار تونسته یه سند مشخصات ۵۵ صفحه‌ای رو ظرف فقط ۱۰ روز به مرحله طراحی و تأیید نهایی برسونه، در حالی که قبلاً یه تیم کامل باید چهار پنج ماه پای همین کار عرق می‌ریخت. این سیستم از مدل‌های فیزیکی دقیق برای بهینه‌سازی مصرف برق و عملکرد استفاده می‌کنه و غول‌هایی مثل Renesas و SiTime هم همین حالا دارن ازش واسه چیپ‌های رباتیک و خودروهای خودران کار می‌کشن.\n\nاهمیتش اینه که پروسه چندماهه، وحشتناک گرون و طاقت‌فرسای طراحی تراشه حالا داره به چند روز خلاصه میشه و دست مهندسا برای خلق نوآوری‌های تازه حسابی باز میفته.",
+  "date": "2026-09-14T17:50:48+00:00"
+ },
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/kimmonismus/status/2099544210638873074",
+   "domain": "x.com",
+   "author": {
+    "name": "Chubby♨️",
+    "handle": "kimmonismus",
+    "avatar": "https://pbs.twimg.com/profile_images/1728327996375719936/RW7VBJfD_200x200.jpg"
+   },
+   "text": "Cognichip is launching ACI Enterprise today, a full-stack AI system that works alongside engineers to design chips!\n\nThe company reports that one engineer took a 55-page specification through front-end design and verification in 10 days. Its comparison: a full front-end team taking four to five months. That's one evaluation, so results will vary by project.\n\nACI uses physics-informed models built specifically for chip design, from specifications and micro-architecture through RTL, verification and optimization for power, performance and area.\n\nSpecifications, RTL, tests and design constraints stay connected in one evolving model. When an engineer revisits an architecture decision, they can trace its consequences and adjust the design.\n\nCognichip says Renesas and SiTime are already adopting ACI. The system also supports taking ideas to working FPGA implementations, including specialized hardware for robotics, autonomous vehicles and industrial systems.\n\nBeing able to try more designs before committing to hardware could give engineers much more room to experiment.",
+   "date": 1789405322,
+   "media": [
+    {
+     "type": "image",
+     "src": "https://pbs.twimg.com/media/HSMUVReaYAA4OMW.jpg?name=orig",
+     "ratio": 0.8375
+    }
+   ],
+   "links": []
+  }
+ ],
+ "article": {
+  "title": "شرکت Cognichip یه هوش مصنوعی همه‌فن‌حریف به اسم ACI Enterprise رو کرده که پا‌به‌پای مهندسا چیپ و تراشه‌های سخت‌افزاری طراحی می‌کنه",
+  "source_title": "Cognichip is launching ACI Enterprise today, a full-stack AI system that works alongside engineers to design chips!",
+  "body": [
+   "ببین رفیق، شرکت Cognichip یه هوش مصنوعی همه‌فن‌حریف به اسم ACI Enterprise رو کرده که پا‌به‌پای مهندسا چیپ و تراشه‌های سخت‌افزاری طراحی می‌کنه. طبق ادعای خودشون، یه مهندس تنهایی با این ابزار تونسته یه سند مشخصات ۵۵ صفحه‌ای رو ظرف فقط ۱۰ روز به مرحله طراحی و تأیید نهایی برسونه، در حالی که قبلاً یه تیم کامل باید چهار پنج ماه پای همین کار عرق می‌ریخت. این سیستم از مدل‌های فیزیکی دقیق برای بهینه‌سازی مصرف برق و عملکرد استفاده می‌کنه و غول‌هایی مثل Renesas و SiTime هم همین حالا دارن ازش واسه چیپ‌های رباتیک و خودروهای خودران کار می‌کشن."
+  ],
+  "why": "پروسه چندماهه، وحشتناک گرون و طاقت‌فرسای طراحی تراشه حالا داره به چند روز خلاصه میشه و دست مهندسا برای خلق نوآوری‌های تازه حسابی باز میفته.",
+  "tags": [
+   "تراشه"
+  ]
+ },
+ "updated": "2026-10-25T12:27:00+00:00",
+ "gholam_checked": "2026-10-25T12:27:00+00:00"
+}

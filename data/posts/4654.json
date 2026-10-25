@@ -1,0 +1,83 @@
+{
+ "id": 4654,
+ "url": "https://t.me/dlmehr/4654",
+ "date": "2026-08-09T01:40:48+00:00",
+ "text": "https://fxtwitter.com/_avichawla/status/2085632663902412985?s=20",
+ "forwarded_from": "Amin",
+ "digest": false,
+ "hash": "c2379436f536",
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/_avichawla/status/2085632663902412985?s=20",
+  "site": "FxTwitter",
+  "title": "Avi Chawla (@_avichawla)",
+  "description": "NVIDIA researchers did it again!\nThey found a way to make KV cache transferable between models.\nThe target model skips prefill entirely, and the conversion runs 2.7 to 25x faster than processing the context again.\nLet's understand why this is so important…",
+  "image": null
+ },
+ "gholam": {
+  "text": "ببین رفیق، پژوهشگرای انویدیا باز یه حرکت خفن زدن و کاری کردن که بشه حافظه پیش‌پردازش یا همون KV Cache رو بین مدل‌های مختلف هوش مصنوعی منتقل کرد. با این روش، مدل مقصد دیگه نیازی به خواندن و پردازش دوباره متن‌های قبلی نداره و سرعت کار بین ۲.۷ تا ۲۵ برابر سریع‌تر می‌شه، اون هم بدون اینکه نیاز به آموزش دادن یا تغییر مدل‌ها باشه. توی تست‌ها روی مدل‌هایی مثل لاما و Qwen، دقت کار بین ۷۳ تا ۹۸ درصد حفظ شده که آمار خیلی ردیف و بالاییه. البته فعلاً این انتقال فقط بین مدل‌های هم‌خانواده جواب داده و رفتن سراغ مدل‌های کاملاً متفاوت رو گذاشتن واسه فازهای بعدی.\n\nاهمیتش اینه که موقع سوییچ کردن بین مدل‌های مختلف، دیگه زمان و هزینه سنگین پردازش مجدد متن‌ها دود نمی‌شه بره هوا و کلی تو هزینه سرورها صرفه‌جویی می‌شه.",
+  "date": "2026-08-09T01:41:04+00:00"
+ },
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/_avichawla/status/2085632663902412985",
+   "domain": "x.com",
+   "author": {
+    "name": "Avi Chawla",
+    "handle": "_avichawla",
+    "avatar": "https://pbs.twimg.com/profile_images/1868297128801390593/Ovl677JQ_200x200.jpg"
+   },
+   "text": "NVIDIA researchers did it again!\n\nThey found a way to make KV cache transferable between models.\n\nThe target model skips prefill entirely, and the conversion runs 2.7 to 25x faster than processing the context again.\n\nLet's understand why this is so important today.\n\nLLM APIs are stateless, so every turn sends the entire conversation back to the model. The model reads all of it again before writing a single new token, and all of it is billed as input.\n\nPrompt caching allows Anthropic and other providers to hold the KV cache for a stable prefix and bill a hit at roughly 10% of the base input rate, because the compute was already done once.\n\nThe 90% reduction is one of the largest lever in LLM serving, which is why so much production work goes into keeping prefixes byte-stable.\n\nBut the cache only works on the model that produced it. Keys and values are produced from that model's weights, so no other model can read them.\n\nIn pratice, the constraint shows up in LLM routing. If the traffic is shifted to a different model for cost/capability reasons, the accumulated KV cache becomes invalid.\n\nAs a result, the accumulated context has to be processed from scratch, and it's billed at full rate.\n\nNVIDIA's recent paper treats this as a representation problem.\n\nPrefill's only output is the KV cache, so to move KV between models, we need to convert one model's cache into the format the other expects.\n\nThey first checked whether the conversion has any structure worth exploiting.\n\nThey found that moving from Qwen3 14B to 32B, a plain linear regression from a single source layer reconstructed 56% of the variance in the target model's keys.\n\nThe two models obviously may have different layer counts, so there is no natural one-to-one pairing between them.\n\nFor each target layer they rank every source layer by how well it predicts that layer, then feed the top eight in together, which takes the reconstruction to 79%.\n\nThe mapper itself has three parts:\n\n> Each target layer and head gets its own independent linear map, solved in one closed-form step rather than by gradient descent.\n\n> The cross-layer selection described above is the second part, and their ablation shows it carries the most weight of the three.\n\n> Keys also carry a position-dependent rotation from RoPE. They strip that rotation, fit the map in position-free space, then re-apply the target model's rotation at inference.\n\nAcross six pairs from Qwen3, Llama 3.1 and Ministral 3, four retain 73 to 98% of the receiving model's standalone accuracy, and the conversion runs 3-25x faster than processing the context again.\n\nPrior work on cross-model KV reuse exists, but it either trains a neural adapter per pair or requires both models to be architecturally identical.\n\nThis is probably the first version that is closed-form and training-free, so a lot of it is still open research.\n\nEvery pair tested belongs to one family, so it works on Qwen to Qwen and Llama to Llama.\n\nCross-family transfer is listed as future work.\n\nAll six pairs mentioned above also happen to share KV head count and per-head dimension across scales. Mismatched head configurations are currently untested.\n\nThe researchers scoped this to dense full-attention only, so sliding-window and attention-recurrent hybrids still need work.\n\nHere's the paper: https://arxiv.org/abs/2608.03893\n\nPlenty of work is yet to be done. Still, the constraint being solved is genuine.\n\nEvery model swap currently invalidates the full KV that was already paid for, and this is the first result showing that work might be recoverable without training anything extra.\n\nThat said, all of this only matters because of what the KV cache is doing in the first place.\n\nI wrote a first-principles breakdown of it, covering why the model stores keys and values at all, why the cache grows with every token, and what generation speed looks like with and without it.\n\nRead it below.",
+   "date": 1786088550,
+   "media": [
+    {
+     "type": "video",
+     "src": "https://video.twimg.com/amplify_video/2085632654884708353/vid/avc1/804x720/SccFgKfm2qpJPymc.mp4?tag=14",
+     "poster": "https://pbs.twimg.com/amplify_video_thumb/2085632654884708353/img/xTVQtLm4YOB1cEoM.jpg",
+     "ratio": 0.894,
+     "duration": 6,
+     "gif": false
+    }
+   ],
+   "links": [
+    "https://arxiv.org/abs/2608.03893"
+   ],
+   "quote": {
+    "author": {
+     "name": "Avi Chawla",
+     "handle": "_avichawla",
+     "avatar": "https://pbs.twimg.com/profile_images/1868297128801390593/Ovl677JQ_200x200.jpg"
+    },
+    "text": "",
+    "date": 1773993573,
+    "media": [],
+    "links": []
+   }
+  },
+  {
+   "kind": "link",
+   "url": "https://arxiv.org/abs/2608.03893",
+   "domain": "arxiv.org",
+   "title": "Cross-Model KV Cache Transfer in LLM Families: A Closed-Form Linear Mapping for Prefill Reuse",
+   "description": "Production deployments often swap between different-sized models in a family for cost-quality cascading, mid-conversation switching, and routing, and each swap forces the receiver to repay the prefill from scratch. We propose cross-model KV cache transfer, where the receiver reuses the source's KV cache, skipping prefill. We find that cross-model KV has substantial linear structure across matched-",
+   "image": "https://arxiv.org/static/browse/0.3.4/images/arxiv-logo-fb.png",
+   "site": "arXiv.org"
+  }
+ ],
+ "article": {
+  "title": "پژوهشگرای انویدیا باز یه حرکت خفن زدن و کاری کردن که بشه حافظه پیش‌پردازش یا همون KV Cache رو بین مدل‌های مختلف هوش مصنوعی منتقل کرد",
+  "source_title": "NVIDIA researchers did it again!",
+  "body": [
+   "ببین رفیق، پژوهشگرای انویدیا باز یه حرکت خفن زدن و کاری کردن که بشه حافظه پیش‌پردازش یا همون KV Cache رو بین مدل‌های مختلف هوش مصنوعی منتقل کرد. با این روش، مدل مقصد دیگه نیازی به خواندن و پردازش دوباره متن‌های قبلی نداره و سرعت کار بین ۲.۷ تا ۲۵ برابر سریع‌تر می‌شه، اون هم بدون اینکه نیاز به آموزش دادن یا تغییر مدل‌ها باشه. توی تست‌ها روی مدل‌هایی مثل لاما و Qwen، دقت کار بین ۷۳ تا ۹۸ درصد حفظ شده که آمار خیلی ردیف و بالاییه. البته فعلاً این انتقال فقط بین مدل‌های هم‌خانواده جواب داده و رفتن سراغ مدل‌های کاملاً متفاوت رو گذاشتن واسه فازهای بعدی."
+  ],
+  "why": "موقع سوییچ کردن بین مدل‌های مختلف، دیگه زمان و هزینه سنگین پردازش مجدد متن‌ها دود نمی‌شه بره هوا و کلی تو هزینه سرورها صرفه‌جویی می‌شه.",
+  "tags": [
+   "انویدیا",
+   "متا",
+   "چین"
+  ]
+ },
+ "updated": "2026-10-25T12:30:41+00:00",
+ "gholam_checked": "2026-10-25T12:30:41+00:00"
+}

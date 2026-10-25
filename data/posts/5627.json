@@ -1,0 +1,68 @@
+{
+ "id": 5627,
+ "url": "https://t.me/dlmehr/5627",
+ "date": "2026-10-04T18:38:15+00:00",
+ "text": "https://fxtwitter.com/alokbishoyi97/status/2106807912949854440?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+ "forwarded_from": null,
+ "digest": false,
+ "hash": "ba5a2377295a",
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/alokbishoyi97/status/2106807912949854440?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+  "site": "FxTwitter",
+  "title": "Alok Bishoyi (@alokbishoyi97)",
+  "description": "Buying inference today means picking between two bad options.\nCommit for a year and pay for capacity you don't use. Or go serverless and get rate limited the moment you grow.\nBut usage arrives in bursts: a weekend eval, a two-week backfill, US business…",
+  "image": null
+ },
+ "gholam": {
+  "text": "ببین رفیق، این بنده خدا آلوک بیشویی دست گذاشته رو یه درد اساسی تو دنیای هوش مصنوعی و می‌گه الان خریدن پردازش یا همون اینفرنس شده انتخاب بین بد و بدتر؛ یا باید قرارداد سالانه ببندی و پول الکی برای ظرفیت خالی بدی، یا بری سراغ سرورلس و تا ترافیکت کشید بالا با محدودیت سرعت به فنا بری. حرفش اینه که مصرف پردازش یهو موجی بالا و پایین می‌شه و هر پروژه‌ای هم کیفیت، تاخیر و مدل پردازشی خاص خودشو می‌خواد، در حالی که این توان سخت‌افزاری تو کل دنیا بین کلی کلاد بزرگ و کوچیک پخش و پلا شده. واسه همین یه بازارچه‌ای به اسم useRouterPlus راه انداختن که شما مشخصات و ظرفیت مورد نیازت رو جار می‌زنی، تأمین‌کننده‌ها میان قیمت پیشنهاد میدن و بهترینش رو سوا می‌کنی. جالب اینجاست که کارشون حسابی گرفته و از همین اول بسم‌الله دارن به رکورد پردازش ماهانه یک تریلیون توکن می‌رسن.\n\nاهمیتش اینه که با این بازار رقابتی، دست استارتاپ‌ها برای چونه‌زدن و گرفتن پردازش ارزون و باکیفیت باز می‌شه و انحصار غول‌های ابری ترک برمی‌داره.",
+  "date": "2026-10-04T18:38:29+00:00"
+ },
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/alokbishoyi97/status/2106807912949854440",
+   "domain": "x.com",
+   "author": {
+    "name": "Alok Bishoyi",
+    "handle": "alokbishoyi97",
+    "avatar": "https://pbs.twimg.com/profile_images/1973703840215011329/IF-jbFJ__200x200.jpg"
+   },
+   "text": "Buying inference today means picking between two bad options. \n\nCommit for a year and pay for capacity you don't use. Or go serverless and get rate limited the moment you grow.\n\nBut usage arrives in bursts: a weekend eval, a two-week backfill, US business hours.\n\nAnd not all tokens are equal. You might need BF16, not quietly quantized FP8. Served in the US. A latency target. Zero retention. Fast tokens for your product, cheap batched tokens for the rest.\n\nThe capacity exists. It's just scattered across big clouds and long-tail providers you've never heard of.\n\nSo we built a marketplace.\n\nIntroducing the @useRouterPlus  managed inference marketplace.\n\nPost the inference you need, when you need them. Commitment you are comfortable with. Providers bid. You pick the one that meets your spec.\n\nwe're already on track for 1 trillion tokens a month.\n\nhttp://routerplus.com/capacity",
+   "date": 1791137123,
+   "media": [
+    {
+     "type": "video",
+     "src": "https://video.twimg.com/amplify_video/2106804094707154944/vid/avc1/1280x720/saiuGow612_g1ETM.mp4?tag=29",
+     "poster": "https://pbs.twimg.com/amplify_video_thumb/2106804094707154944/img/UyOsKvqW2XdhkiTv.jpg",
+     "ratio": 0.5625,
+     "duration": 19.733,
+     "gif": false
+    }
+   ],
+   "links": [
+    "http://routerplus.com/capacity"
+   ]
+  },
+  {
+   "kind": "link",
+   "url": "https://routerplus.com/capacity/",
+   "domain": "routerplus.com",
+   "title": "Provisioned inference requirement",
+   "description": "Tell us the model, throughput, and region you need. RouterPlus shops the requirement across its provider network and replies with committed capacity, a better quote, or a backup provider.",
+   "image": "https://cdn.ploy.ai/a8b36ce4-92a1-4fb9-8c39-f876dcdbc872/user/df219238-capacity-routerplus-20261003.webp",
+   "site": "RouterPlus"
+  }
+ ],
+ "article": {
+  "title": "این بنده خدا آلوک بیشویی دست گذاشته رو یه درد اساسی تو دنیای هوش مصنوعی و می‌گه الان خریدن پردازش یا همون اینفرنس شده انتخاب بین بد و بدتر",
+  "source_title": "Buying inference today means picking between two bad options.",
+  "body": [
+   "ببین رفیق، این بنده خدا آلوک بیشویی دست گذاشته رو یه درد اساسی تو دنیای هوش مصنوعی و می‌گه الان خریدن پردازش یا همون اینفرنس شده انتخاب بین بد و بدتر؛ یا باید قرارداد سالانه ببندی و پول الکی برای ظرفیت خالی بدی، یا بری سراغ سرورلس و تا ترافیکت کشید بالا با محدودیت سرعت به فنا بری. حرفش اینه که مصرف پردازش یهو موجی بالا و پایین می‌شه و هر پروژه‌ای هم کیفیت، تاخیر و مدل پردازشی خاص خودشو می‌خواد، در حالی که این توان سخت‌افزاری تو کل دنیا بین کلی کلاد بزرگ و کوچیک پخش و پلا شده. واسه همین یه بازارچه‌ای به اسم useRouterPlus راه انداختن که شما مشخصات و ظرفیت مورد نیازت رو جار می‌زنی، تأمین‌کننده‌ها میان قیمت پیشنهاد میدن و بهترینش رو سوا می‌کنی. جالب اینجاست که کارشون حسابی گرفته و از همین اول بسم‌الله دارن به رکورد پردازش ماهانه یک تریلیون توکن می‌رسن."
+  ],
+  "why": "با این بازار رقابتی، دست استارتاپ‌ها برای چونه‌زدن و گرفتن پردازش ارزون و باکیفیت باز می‌شه و انحصار غول‌های ابری ترک برمی‌داره.",
+  "tags": []
+ },
+ "updated": "2026-10-25T12:24:58+00:00",
+ "gholam_checked": "2026-10-25T12:24:58+00:00"
+}

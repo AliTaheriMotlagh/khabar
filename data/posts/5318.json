@@ -1,0 +1,79 @@
+{
+ "id": 5318,
+ "url": "https://t.me/dlmehr/5318",
+ "date": "2026-09-16T02:41:25+00:00",
+ "text": "https://fxtwitter.com/ryanvogel/status/2100042788851101842?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+ "forwarded_from": null,
+ "digest": false,
+ "hash": "9e28b303ae3c",
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/ryanvogel/status/2100042788851101842?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+  "site": "FxTwitter",
+  "title": "vogel (@ryanvogel)",
+  "description": "this model is actually insane at email classification\ni tested it on 1500 of my own emails to see how well it works and I am blown away\nQuoting Diogo Almeida (@CompleteSkeptic)\nAfter co-inventing ChatGPT, I kept asking myself: why have superhuman chat…",
+  "image": null
+ },
+ "gholam": {
+  "text": "رفیق، یکی از مغزهای پشت ساخت چت‌جی‌پی‌تی به اسم دیوگو آلمیدا، بعد دو سال کار تو سکوت خبری از یه مدل هوش مصنوعی خفن به اسم «Jev» رونمایی کرده که ادعا می‌کنه سرعتش بیست تا دویست برابر بیشتر از مدل‌های معمولیه. داستان از این قراره که این بنده خدا یه روش آموزشی جدید پیاده کرده تا این غول‌های هوش مصنوعی واقعاً کار راه‌اندازتر بشن و این‌قدر الکی کش نیان. از اون‌طرف یه کاربری به اسم ووگل هم اومده این مدل تازه نفس رو روی ۱۵۰۰ تا از ایمیل‌های شخصی خودش تست کرده و کف کرده از این‌که چقدر تمیز و بی‌نقص ایمیل‌ها رو دسته‌بندی می‌کنه. \n\nچرا مهمه؟ اهمیتش اینه که با این جهش توی سرعت و کاهش هزینه‌ها، بالاخره داریم به هوش مصنوعی واقعاً کاربردی نزدیک می‌شیم که کارای روزمره اداری رو تو یه چشم به هم زدن جمع می‌کنه.",
+  "date": "2026-09-16T02:41:48+00:00"
+ },
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/ryanvogel/status/2100042788851101842",
+   "domain": "x.com",
+   "author": {
+    "name": "vogel",
+    "handle": "ryanvogel",
+    "avatar": "https://pbs.twimg.com/profile_images/2107164282685169664/2BTMBvva_200x200.jpg"
+   },
+   "text": "this model is actually insane at email classification\n\ni tested it on 1500 of my own emails to see how well it works and I am blown away",
+   "date": 1789524192,
+   "media": [
+    {
+     "type": "video",
+     "src": "https://video.twimg.com/amplify_video/2100042377339588608/vid/avc1/1280x720/AZPyz2LQcpozcz1m.mp4?tag=29",
+     "poster": "https://pbs.twimg.com/amplify_video_thumb/2100042377339588608/img/2O56_xRC0r54ugfr.jpg",
+     "ratio": 0.5625,
+     "duration": 117.248,
+     "gif": false
+    }
+   ],
+   "links": [],
+   "quote": {
+    "author": {
+     "name": "Diogo Almeida",
+     "handle": "CompleteSkeptic",
+     "avatar": "https://pbs.twimg.com/profile_images/1650708125685800960/7k6r0UZg_200x200.jpg"
+    },
+    "text": "After co-inventing ChatGPT, I kept asking myself: why have superhuman chat models not led to AGI?\n\nI’ve spent the last 2 years in stealth building a new way to train models (RLCD), and a new type of frontier AI model that we are releasing today: Jev\n\n• 20-200x faster\n• 40-400x cheaper (w/ output tokens free)\n• Frontier composable intelligence optimized for decisions\n\nAFAICT the shortest path to AI-based economic revolution",
+    "date": 1789496272,
+    "media": [
+     {
+      "type": "video",
+      "src": "https://video.twimg.com/amplify_video/2099925575637057536/vid/avc1/1280x720/ZoKJ_BS5SNaqG45k.mp4?tag=29",
+      "poster": "https://pbs.twimg.com/amplify_video_thumb/2099925575637057536/img/l4J_ZhkaxAe8FJXv.jpg",
+      "ratio": 0.5625,
+      "duration": 176.085,
+      "gif": false
+     }
+    ],
+    "links": []
+   }
+  }
+ ],
+ "article": {
+  "title": "یکی از مغزهای پشت ساخت چت‌جی‌پی‌تی به اسم دیوگو آلمیدا، بعد دو سال کار تو سکوت خبری از یه مدل هوش مصنوعی خفن به اسم «Jev» رونمایی کرده که ادعا می‌کنه سرعتش بیست تا دویست برابر بیشتر از مدل‌های معمولیه",
+  "source_title": "this model is actually insane at email classification",
+  "body": [
+   "رفیق، یکی از مغزهای پشت ساخت چت‌جی‌پی‌تی به اسم دیوگو آلمیدا، بعد دو سال کار تو سکوت خبری از یه مدل هوش مصنوعی خفن به اسم «Jev» رونمایی کرده که ادعا می‌کنه سرعتش بیست تا دویست برابر بیشتر از مدل‌های معمولیه. داستان از این قراره که این بنده خدا یه روش آموزشی جدید پیاده کرده تا این غول‌های هوش مصنوعی واقعاً کار راه‌اندازتر بشن و این‌قدر الکی کش نیان. از اون‌طرف یه کاربری به اسم ووگل هم اومده این مدل تازه نفس رو روی ۱۵۰۰ تا از ایمیل‌های شخصی خودش تست کرده و کف کرده از این‌که چقدر تمیز و بی‌نقص ایمیل‌ها رو دسته‌بندی می‌کنه."
+  ],
+  "why": "اهمیتش اینه که با این جهش توی سرعت و کاهش هزینه‌ها، بالاخره داریم به هوش مصنوعی واقعاً کاربردی نزدیک می‌شیم که کارای روزمره اداری رو تو یه چشم به هم زدن جمع می‌کنه.",
+  "tags": [
+   "اوپن‌ای‌آی"
+  ]
+ },
+ "updated": "2026-10-25T12:26:51+00:00",
+ "gholam_checked": "2026-10-25T12:26:51+00:00"
+}

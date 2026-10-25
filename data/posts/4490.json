@@ -1,0 +1,67 @@
+{
+ "id": 4490,
+ "url": "https://t.me/dlmehr/4490",
+ "date": "2026-07-31T01:53:05+00:00",
+ "text": "https://fxtwitter.com/googleresearch/status/2082929539248951548?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+ "forwarded_from": null,
+ "digest": false,
+ "hash": "a04b4ca8bb6b",
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/googleresearch/status/2082929539248951548?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+  "site": "FxTwitter",
+  "title": "Google Research (@GoogleResearch)",
+  "description": "Introducing the Science One Framework, an experimental autonomous research prototype that builds verifiable evidence chains. We demonstrate how natively maintaining these chains eliminates hallucinated citations and enables reproducible AI science. Read the…",
+  "image": "https://cdn4.telesco.pe/file/EFtieQct9qwFLD5MlBeBXl88dkvi7ehglsCU2lf0KXiaWYtefGhfUNIYgfQ5E8XeCjRUYyYHWssIV3juceXNbcVbzAOa71i_KdXLYWG8OurimIOJjtOctp2aNsoRfmCSodmDv0XIVmiBD_jNAXdQQkqXtQYeCbR7kAMIbk1LrRTtN2SkN6xQG9dqO8DqGOZ2kxJCv4cS60YKgfY3_HRTbxDDv56GtCNQCnoiDMcpWhIucjySCMYAMbBw-ONQFtgbicTCegRlbFBEkhbGGVno16fTPW7nfF95wVc5MatCCefHqT6oQiCX4EJr6BToP0lmbRCOBpoRb1o-boOcjfNwLw.jpg"
+ },
+ "gholam": {
+  "text": "ببین، گوگل ریسرچ یه چارچوب آزمایشی به اسم Science One معرفی کرده که خودش زنجیره شواهد قابل‌راستی‌آزمایی می‌سازه و مسیر تحقیق رو از پیدا کردن مسئله تا نوشتن و بررسی مقاله جلو می‌بره. خلاصه‌اش اینه که با وصل نگه‌داشتن هر ادعا به منبعش، جلوی استنادهای قلابی و توهمات مدل رو می‌گیره و نتیجه پژوهش رو بازتولیدپذیرتر می‌کنه.",
+  "date": "2026-07-31T01:58:08+00:00"
+ },
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/GoogleResearch/status/2082929539248951548",
+   "domain": "x.com",
+   "author": {
+    "name": "Google Research",
+    "handle": "GoogleResearch",
+    "avatar": "https://pbs.twimg.com/profile_images/2060445303589961728/NrdAg8dM_200x200.jpg"
+   },
+   "text": "Introducing the Science One Framework, an experimental autonomous research prototype that builds verifiable evidence chains. We demonstrate how natively maintaining these chains eliminates hallucinated citations and enables reproducible AI science. Read the blog to learn more: http://goo.gle/4wzlGWU",
+   "date": 1785444075,
+   "media": [
+    {
+     "type": "image",
+     "src": "https://pbs.twimg.com/media/HOgNPh3b0AAgi3w.jpg?name=orig",
+     "ratio": 0.4317
+    }
+   ],
+   "links": [
+    "http://goo.gle/4wzlGWU"
+   ]
+  },
+  {
+   "kind": "link",
+   "url": "https://research.google/blog/science-one-framework-a-verifiable-autonomous-research-framework-via-chain-of-evidence/?utm_source=twitter&utm_medium=social&utm_campaign=social_post&utm_content=gr-acct",
+   "domain": "research.google",
+   "title": "Science One Framework: A verifiable autonomous research framework via Chain-of-Evidence",
+   "description": null,
+   "image": "https://storage.googleapis.com/gweb-research2023-media/images/HO_previewImage1.width-800.format-jpeg.jpg",
+   "site": "research.google"
+  }
+ ],
+ "article": {
+  "title": "گوگل ریسرچ یه چارچوب آزمایشی به اسم Science One معرفی کرده که خودش زنجیره شواهد قابل‌راستی‌آزمایی می‌سازه و مسیر تحقیق رو از پیدا کردن مسئله تا نوشتن و بررسی مقاله جلو می‌بره",
+  "source_title": "Introducing the Science One Framework, an experimental autonomous research prototype that builds verifiable evidence chains. We demonstrate…",
+  "body": [
+   "ببین، گوگل ریسرچ یه چارچوب آزمایشی به اسم Science One معرفی کرده که خودش زنجیره شواهد قابل‌راستی‌آزمایی می‌سازه و مسیر تحقیق رو از پیدا کردن مسئله تا نوشتن و بررسی مقاله جلو می‌بره. خلاصه‌اش اینه که با وصل نگه‌داشتن هر ادعا به منبعش، جلوی استنادهای قلابی و توهمات مدل رو می‌گیره و نتیجه پژوهش رو بازتولیدپذیرتر می‌کنه."
+  ],
+  "why": null,
+  "tags": [
+   "گوگل"
+  ]
+ },
+ "updated": "2026-10-25T12:31:34+00:00",
+ "gholam_checked": "2026-10-25T12:31:34+00:00"
+}

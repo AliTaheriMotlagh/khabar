@@ -2,16 +2,23 @@
  "id": 5986,
  "url": "https://t.me/dlmehr/5986",
  "date": "2026-10-20T03:37:35+00:00",
- "edited": true,
- "views": "186",
  "text": "https://fxtwitter.com/togethercompute/status/2112241595273621857?s=52&t=F41Qa04r48Mef_j_XjBneQ",
  "forwarded_from": null,
  "digest": false,
  "hash": "9c17e6b939f5",
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/togethercompute/status/2112241595273621857?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+  "site": "🧵 Thread • FxTwitter",
+  "title": "Together AI (@togethercompute)",
+  "description": "Together Post-Training is live\nTurn open models into custom models you own, with SFT or RL.\nYou define the data, rewards, environments and the training loop itself. We run the hard infrastructure underneath it, tuned for quality and speed.",
+  "image": null
+ },
  "gholam": {
   "text": "ببین رفیق، بچه‌های Together AI تازه از یه سرویس جدید به اسم Together Post-Training رونمایی کردن که کارِت رو واسه شخصی‌سازی هوش مصنوعی حسابی راه می‌ندازه. قضیه اینه که می‌تونی مدل‌های متن‌باز رو با روش‌هایی مثل تنظیم دقیق نظارت‌شده (SFT) یا یادگیری تقویتی (RL) به مدل اختصاصی خودت تبدیل کنی و مالکش هم صددرصد خودت باشی. همه‌چیز از دیتا، سیستم پاداش و محیط گرفته تا حلقه‌ی آموزش دست خودته، اما اون زیرساخت سنگین و دم‌ودستگاه پردازشی رو می‌سپاری به خودشون تا با سرعت و کیفیت بالا ردیفش کنن.\n\nاهمیتش اینه که دیگه لازم نیست تیم‌ها نگران دردسرها و هزینه‌های سرسام‌آور سخت‌افزار باشن و هرکسی می‌تونه خیلی سریع مدل‌های زبانی رو واسه کار و بار خودش دقیق و شخصی‌سازی کنه.",
   "date": "2026-10-20T03:37:51+00:00"
  },
+ "gholam_checked": "2026-10-24T23:03:16+00:00",
  "links": [
   {
    "kind": "tweet",
@@ -46,14 +53,6 @@
    "links": []
   }
  ],
- "media": [],
- "preview": {
-  "url": "https://fxtwitter.com/togethercompute/status/2112241595273621857?s=52&t=F41Qa04r48Mef_j_XjBneQ",
-  "site": "🧵 Thread • FxTwitter",
-  "title": "Together AI (@togethercompute)",
-  "description": "Together Post-Training is live\nTurn open models into custom models you own, with SFT or RL.\nYou define the data, rewards, environments and the training loop itself. We run the hard infrastructure underneath it, tuned for quality and speed.",
-  "image": null
- },
  "article": {
   "title": "بچه‌های Together AI تازه از یه سرویس جدید به اسم Together Post-Training رونمایی کردن که کارِت رو واسه شخصی‌سازی هوش مصنوعی حسابی راه می‌ندازه",
   "source_title": "Together Post-Training is live",
@@ -63,6 +62,5 @@
   "why": "دیگه لازم نیست تیم‌ها نگران دردسرها و هزینه‌های سرسام‌آور سخت‌افزار باشن و هرکسی می‌تونه خیلی سریع مدل‌های زبانی رو واسه کار و بار خودش دقیق و شخصی‌سازی کنه.",
   "tags": []
  },
- "updated": "2026-10-24T23:03:16+00:00",
- "gholam_checked": "2026-10-24T23:03:16+00:00"
+ "updated": "2026-10-25T11:53:59+00:00"
 }

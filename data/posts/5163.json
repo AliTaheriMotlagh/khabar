@@ -1,0 +1,57 @@
+{
+ "id": 5163,
+ "url": "https://t.me/dlmehr/5163",
+ "date": "2026-09-06T03:31:15+00:00",
+ "text": "https://fxtwitter.com/chrisgpt/status/2096150666066432157?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+ "forwarded_from": null,
+ "digest": false,
+ "hash": "28c77596300a",
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/chrisgpt/status/2096150666066432157?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+  "site": "FxTwitter",
+  "title": "Chris (@ChrisGPT)",
+  "description": "ValsAI made SRE benchmark less than a month ago.\nThe benchmark measures can a model reverse engineer software from binaries\nYesterday GPT saturated it.",
+  "image": "https://cdn4.telesco.pe/file/Z6T2p9GO0j4Q5mya4RGIaGFEyd76oplbMQR0emtSHPHWcB5oG1TiG4QS6I-ojj08UVfyOmjyyLbM1cASLqSSwIYncoDJutYoe3G-wWOeuEr0yR9WapSmBmq6x66i4ynRksEB4ypyoT83FDP2XDoNmXXgfQfOIn3oNNjgjBbBE7RI5-4xBT2jirkPUR_F4fnj_MYB_IFJ_0flH_Xo-W3zQhJBxuLo6d_mkpKzJ5qKlobLzyw3f1jdbbMUGTLxNbXGyaEUmDaOR7FgJ0NVVST3QXlSI57B7oGRMWiEDGdgA15dp7awzJHRpsdGD-E18ZPoErh4-mJMYMhF1NtOACEMGw.jpg"
+ },
+ "gholam": {
+  "text": "رفیق، داستان پیشرفت این هوش مصنوعی‌ها دیگه رسماً داره به جاهای باریک می‌کشه! همین یه ماه پیش بود که شرکت ValsAI یه بنچمارک سفت و سخت به اسم SRE راه انداخت تا ببینه این مدل‌ها اصلاً سر درمیارن که نرم‌افزارها رو از روی فایل‌های باینری و کامپایل‌شده مهندسی معکوس کنن یا نه. این قضیه از اون کارهای به شدت تخصصی و نفس‌گیریه که کارشناس‌های خبره امنیت هم براش کلی عرق می‌ریزن، اما چشمت روز بد نبینه، دیروز مدل GPT اومد و تو کمتر از سی روز کل این آزمون رو شخم زد و نمراتش رو به سقف چسبوند. یعنی عملاً بنچمارکی که قرار بود تا مدت‌ها چالش روز باشه، هنوز عرقش خشک نشده منقرض و پر شد.\n\nچرا مهمه؟ اهمیتش اینه که نشون میده پای هوش مصنوعی به سخت‌ترین مراحل امنیت سایبری و هک باز شده و کارها اون‌قدر برق‌آسا پیش میره که دیگه طراحی آزمون سخت براشون تقریباً ناممکن شده.",
+  "date": "2026-09-06T03:31:28+00:00"
+ },
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/ChrisGPT/status/2096150666066432157",
+   "domain": "x.com",
+   "author": {
+    "name": "Chris",
+    "handle": "ChrisGPT",
+    "avatar": "https://pbs.twimg.com/profile_images/2046736394152812544/LfmDgg0I_200x200.jpg"
+   },
+   "text": "ValsAI made SRE benchmark less than a month ago. \n\nThe benchmark measures can a model reverse engineer software from binaries\n\nYesterday GPT saturated it.",
+   "date": 1788596238,
+   "media": [
+    {
+     "type": "image",
+     "src": "https://pbs.twimg.com/media/HRcF67yaYAAc0DR.jpg?name=orig",
+     "ratio": 0.6583
+    }
+   ],
+   "links": []
+  }
+ ],
+ "article": {
+  "title": "داستان پیشرفت این هوش مصنوعی‌ها دیگه رسماً داره به جاهای باریک می‌کشه",
+  "source_title": "ValsAI made SRE benchmark less than a month ago.",
+  "body": [
+   "رفیق، داستان پیشرفت این هوش مصنوعی‌ها دیگه رسماً داره به جاهای باریک می‌کشه! همین یه ماه پیش بود که شرکت ValsAI یه بنچمارک سفت و سخت به اسم SRE راه انداخت تا ببینه این مدل‌ها اصلاً سر درمیارن که نرم‌افزارها رو از روی فایل‌های باینری و کامپایل‌شده مهندسی معکوس کنن یا نه. این قضیه از اون کارهای به شدت تخصصی و نفس‌گیریه که کارشناس‌های خبره امنیت هم براش کلی عرق می‌ریزن، اما چشمت روز بد نبینه، دیروز مدل GPT اومد و تو کمتر از سی روز کل این آزمون رو شخم زد و نمراتش رو به سقف چسبوند. یعنی عملاً بنچمارکی که قرار بود تا مدت‌ها چالش روز باشه، هنوز عرقش خشک نشده منقرض و پر شد."
+  ],
+  "why": "اهمیتش اینه که نشون میده پای هوش مصنوعی به سخت‌ترین مراحل امنیت سایبری و هک باز شده و کارها اون‌قدر برق‌آسا پیش میره که دیگه طراحی آزمون سخت براشون تقریباً ناممکن شده.",
+  "tags": [
+   "امنیت",
+   "اوپن‌ای‌آی"
+  ]
+ },
+ "updated": "2026-10-25T12:27:48+00:00",
+ "gholam_checked": "2026-10-25T12:27:48+00:00"
+}

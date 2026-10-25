@@ -1,0 +1,58 @@
+{
+ "id": 5641,
+ "url": "https://t.me/dlmehr/5641",
+ "date": "2026-10-05T16:26:11+00:00",
+ "text": "https://fxtwitter.com/btibor91/status/2107127767951388938?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+ "forwarded_from": null,
+ "digest": false,
+ "hash": "8c4dda6b5a94",
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/btibor91/status/2107127767951388938?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+  "site": "FxTwitter",
+  "title": "Tibor Blaho (@btibor91)",
+  "description": "OpenAI is rolling out text watermarking for the EU AI Act - opt-in for API customers globally for select models starting today, ChatGPT and Codex text in the EU gets an invisible watermark over the coming weeks\ntextGrain adds an invisible statistical signal…",
+  "image": "https://cdn4.telesco.pe/file/U6G8v4mso0DhANaS2LK4O0bPK8rN9boi0w4UJyZwgfJozZ--qlPO7b5O_dVbu5bU8LXb9-XfG0NNj0NkkEJWx-7fICxFbujep4rux-6bhOUtq7S9niSxrykC9HMLaYWy6hVLO__8sRKvikz4j6SyPATZIGCpNb0qw3T-tdfTh682GJHW4Wh-LugbJSrgNAcEGEOeVFb1jn_X8iQO1VEJfjWMYGeEEJr2n50tnG-7aKeD12u1rDPNldUqc2EK4JTHI013GbBYMbAKz_EiLZ1r_K5uhLEexCyPPt7uegNK5Mvb0rTBy-jC-myxbfzV8MtDtrmFtLCXGw6XVbRjaO-FIA.jpg"
+ },
+ "gholam": {
+  "text": "ببین رفیق، قضیه از این قراره که بچه‌های OpenAI برای هماهنگ شدن با قانون سفت‌وسخت هوش مصنوعی اتحادیه اروپا، دارن یه واترمارک مخفی به اسم textGrain به متن‌ها اضافه می‌کنن. این فناوری یه سری الگوهای آماری نامرئی لای کلمات می‌کاره که قراره طی هفته‌های آینده روی متن‌های ChatGPT و Codex توی اروپا پیاده بشه، هرچند مشترکای API در سطح جهان هم می‌تونن اختیاری فعالش کنن. طبق ادعای خودشون این سیستم دست‌کمی از SynthID گوگل نداره، هیچ افتی توی کیفیت نگارش ایجاد نمی‌کنه و تازه قراره به‌صورت متن‌باز منتشر بشه تا همه بتونن ازش استفاده کنن.\n\nاهمیتش اینه که دوران قایم‌موشک‌بازی با متن‌های تولیدی تموم شده و از این به بعد خیلی راحت‌تر و دقیق‌تر می‌شه دست متونی که هوش مصنوعی نوشته رو رو کرد.",
+  "date": "2026-10-05T16:26:36+00:00"
+ },
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/btibor91/status/2107127767951388938",
+   "domain": "x.com",
+   "author": {
+    "name": "Tibor Blaho",
+    "handle": "btibor91",
+    "avatar": "https://pbs.twimg.com/profile_images/1682731537349967873/z5eukaD2_200x200.jpg"
+   },
+   "text": "OpenAI is rolling out text watermarking for the EU AI Act - opt-in for API customers globally for select models starting today, ChatGPT and Codex text in the EU gets an invisible watermark over the coming weeks\n\ntextGrain adds an invisible statistical signal to the model's word choices, matched or beat SynthID for text in OpenAI's tests with no meaningful quality hit and is going open source\n\nhttps://openai.com/index/eu-text-provenance/",
+   "date": 1791213383,
+   "media": [
+    {
+     "type": "image",
+     "src": "https://pbs.twimg.com/media/HT4FiT4asAANWA-.jpg?name=orig",
+     "ratio": 0.6414
+    }
+   ],
+   "links": [
+    "https://openai.com/index/eu-text-provenance/"
+   ]
+  }
+ ],
+ "article": {
+  "title": "قضیه از این قراره که بچه‌های OpenAI برای هماهنگ شدن با قانون سفت‌وسخت هوش مصنوعی اتحادیه اروپا، دارن یه واترمارک مخفی به اسم textGrain به متن‌ها اضافه می‌کنن",
+  "source_title": "OpenAI is rolling out text watermarking for the EU AI Act - opt-in for API customers globally for select models starting today, ChatGPT and…",
+  "body": [
+   "ببین رفیق، قضیه از این قراره که بچه‌های OpenAI برای هماهنگ شدن با قانون سفت‌وسخت هوش مصنوعی اتحادیه اروپا، دارن یه واترمارک مخفی به اسم textGrain به متن‌ها اضافه می‌کنن. این فناوری یه سری الگوهای آماری نامرئی لای کلمات می‌کاره که قراره طی هفته‌های آینده روی متن‌های ChatGPT و Codex توی اروپا پیاده بشه، هرچند مشترکای API در سطح جهان هم می‌تونن اختیاری فعالش کنن. طبق ادعای خودشون این سیستم دست‌کمی از SynthID گوگل نداره، هیچ افتی توی کیفیت نگارش ایجاد نمی‌کنه و تازه قراره به‌صورت متن‌باز منتشر بشه تا همه بتونن ازش استفاده کنن."
+  ],
+  "why": "دوران قایم‌موشک‌بازی با متن‌های تولیدی تموم شده و از این به بعد خیلی راحت‌تر و دقیق‌تر می‌شه دست متونی که هوش مصنوعی نوشته رو رو کرد.",
+  "tags": [
+   "اوپن‌ای‌آی"
+  ]
+ },
+ "updated": "2026-10-25T12:24:53+00:00",
+ "gholam_checked": "2026-10-25T12:24:53+00:00"
+}

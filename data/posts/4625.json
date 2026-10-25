@@ -1,0 +1,88 @@
+{
+ "id": 4625,
+ "url": "https://t.me/dlmehr/4625",
+ "date": "2026-08-06T22:25:56+00:00",
+ "text": "https://fxtwitter.com/levelsio/status/2085399058261442569?s=20",
+ "forwarded_from": "Hossein Zakariaee",
+ "digest": false,
+ "hash": "af780ba06ddf",
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/levelsio/status/2085399058261442569?s=20",
+  "site": "FxTwitter",
+  "title": "@levelsio (@levelsio)",
+  "description": "Meta is doing heavy heavy heavy scraping on all my sites this week too (and seemingly everyone else's sites now)\nSo much so that I got load average alerts for it today on one VPS\nThe fact that they're hitting url2og (my own screenshot service for all my…",
+  "image": "https://cdn4.telesco.pe/file/OoQYNyJ0OWnanjyKWGUGhy9Lbi2ioK0hSDE3zrfoyZ0kI-jkKS6z1Rqrlyst4bV_KOD_RMp-19AxB4itbpuIZ9p4FF_-tTGzq7Zp_qOLjKvoObup5Px_qe4-EufoRxPf8B-LEpQ5nswOBRsJimRiKxi2rOZIG1BscdkmdARL1HZ2v0QSyjv3xrv038ZgjIyCyANzH8x_ILm5tjxJ5wsougopX-SOY9JTyjHV6xCxUN8Qew24JLqVfc92HSM7v80QipOiktp0osPeFDQZ_P4Vkk1vYTcj79TvbC93QQvZCnrldXe4TnDny83NGmIVYhCPhkQN-Cu5rt_tHvidMjwJdw.jpg"
+ },
+ "gholam": {
+  "text": "آبجی جان، این هفته شرکت مِتا بدجور افتاده به جون سایت‌های وب و داره با تمام توان اطلاعات مردم رو درو می‌کنه! توسعه‌دهنده معروف levelsio گفته ترافیک سنگین ربات‌های مِتا سرورهاش رو زیر فشار گذاشته و حتا به سرویس اسکرین‌شاتش هم رحم نکردن؛ این یعنی مِتا فقط دنبال متن نیست و داره عکس و ویدیوها رو برای ساخت مدل‌های هوش مصنوعی جدید و مدل‌های جهان جمع می‌کنه. جالب اینجاست که آمار بقیه برنامه‌نویس‌ها هم نشون میده مِتا ظرف سه روز بیش از ۶۷ هزار بار به یه سایت سر زده، در حالی که غول‌های دیگه‌ای مثل اوپن‌ای‌آی کلاً ۴۰۹ بار اون سایت رو خزیدن!\n\nاهمیتش اینه که مِتا داره یکی از بزرگ‌ترین بانک‌های اطلاعاتی چندرسانه‌ای دنیا رو جمع می‌کنه تا تو مسابقه هوش مصنوعی بقیه رقبا رو سکه یک‌پول کنه.",
+  "date": "2026-08-06T22:26:15+00:00"
+ },
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/levelsio/status/2085399058261442569",
+   "domain": "x.com",
+   "author": {
+    "name": "@levelsio",
+    "handle": "levelsio",
+    "avatar": "https://pbs.twimg.com/profile_images/2077111020305162240/PwddgOau_200x200.jpg"
+   },
+   "text": "Meta is doing heavy heavy heavy scraping on all my sites this week too (and seemingly everyone else's sites now)\n\nSo much so that I got load average alerts for it today on one VPS\n\nThe fact that they're hitting url2og (my own screenshot service for all my sites) might they're scraping not just text but images too, so maybe they're working on an image, video or just world model\n\nP.S. these stats are just from url2og not even my other sites!\n\nYou're welcome @finkd but maybe I should start charging you for it with @cloudflare 😊",
+   "date": 1786032854,
+   "media": [
+    {
+     "type": "image",
+     "src": "https://pbs.twimg.com/media/HPDRfBEXwAARfvU.jpg?name=orig",
+     "ratio": 1.1308
+    },
+    {
+     "type": "image",
+     "src": "https://pbs.twimg.com/media/HPDR2p4WcAA3E1v.jpg?name=orig",
+     "ratio": 0.4833
+    },
+    {
+     "type": "image",
+     "src": "https://pbs.twimg.com/media/HPDTN9-X0AAXTTv.jpg?name=orig",
+     "ratio": 0.353
+    }
+   ],
+   "links": [],
+   "quote": {
+    "author": {
+     "name": "Marc Lou",
+     "handle": "marclou",
+     "avatar": "https://pbs.twimg.com/profile_images/2081903460199641088/YZJqLn39_200x200.jpg"
+    },
+    "text": "Meta is scraping like crazy.\n\nAI training crawls last 3 days on TrustMRR:\n\n- OpenAI: 409\n- Anthropic: 721\n- Meta: 67,390",
+    "date": 1783264742,
+    "media": [
+     {
+      "type": "image",
+      "src": "https://pbs.twimg.com/media/HMeT4OPa4AAIcTF.jpg?name=orig",
+      "ratio": 1.2324
+     },
+     {
+      "type": "image",
+      "src": "https://pbs.twimg.com/media/HMeT4dvbsAA35tL.jpg?name=orig",
+      "ratio": 0.9091
+     }
+    ],
+    "links": []
+   }
+  }
+ ],
+ "article": {
+  "title": "جان، این هفته شرکت مِتا بدجور افتاده به جون سایت‌های وب و داره با تمام توان اطلاعات مردم رو درو می‌کنه",
+  "source_title": "Meta is doing heavy heavy heavy scraping on all my sites this week too (and seemingly everyone else's sites now)",
+  "body": [
+   "آبجی جان، این هفته شرکت مِتا بدجور افتاده به جون سایت‌های وب و داره با تمام توان اطلاعات مردم رو درو می‌کنه! توسعه‌دهنده معروف levelsio گفته ترافیک سنگین ربات‌های مِتا سرورهاش رو زیر فشار گذاشته و حتا به سرویس اسکرین‌شاتش هم رحم نکردن؛ این یعنی مِتا فقط دنبال متن نیست و داره عکس و ویدیوها رو برای ساخت مدل‌های هوش مصنوعی جدید و مدل‌های جهان جمع می‌کنه. جالب اینجاست که آمار بقیه برنامه‌نویس‌ها هم نشون میده مِتا ظرف سه روز بیش از ۶۷ هزار بار به یه سایت سر زده، در حالی که غول‌های دیگه‌ای مثل اوپن‌ای‌آی کلاً ۴۰۹ بار اون سایت رو خزیدن!"
+  ],
+  "why": "مِتا داره یکی از بزرگ‌ترین بانک‌های اطلاعاتی چندرسانه‌ای دنیا رو جمع می‌کنه تا تو مسابقه هوش مصنوعی بقیه رقبا رو سکه یک‌پول کنه.",
+  "tags": [
+   "متا"
+  ]
+ },
+ "updated": "2026-10-25T12:30:48+00:00",
+ "gholam_checked": "2026-10-25T12:30:48+00:00"
+}

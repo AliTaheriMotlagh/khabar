@@ -2,16 +2,23 @@
  "id": 5930,
  "url": "https://t.me/dlmehr/5930",
  "date": "2026-10-16T18:19:31+00:00",
- "edited": true,
- "views": "192",
  "text": "https://fxtwitter.com/drjimfan/status/2111128797181567466?s=52&t=F41Qa04r48Mef_j_XjBneQ",
  "forwarded_from": null,
  "digest": false,
  "hash": "aa40e537968c",
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/drjimfan/status/2111128797181567466?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+  "site": "🧵 Thread • FxTwitter",
+  "title": "Jim Fan (@DrJimFan)",
+  "description": "We are open-sourcing V1.0 of our agentic robotics framework, ASPIRE, with full real robot skill discovery and self improvement capabilities! On the day Astra arrived, our lab switched the backend model and saturated all the benchmarks to ~99% over night.…",
+  "image": null
+ },
  "gholam": {
   "text": "ببین رفیق، جیم فَن و بچه‌های تیمش رسماً نسخه اول فریم‌ورک رباتیک خفنشون به اسم ASPIRE رو اوپن‌سورس کردن تا همه بتونن ازش استفاده کنن. این سیستم به ربات‌های واقعی اجازه میده خودشون مهارت‌های تازه رو کشف کنن و کارکردشون رو خودبه‌خود ارتقا بدن. اصل ماجرا اینه که وقتی مدل هوش مصنوعی «آسترا» رو به این فریم‌ورک وصل کردن، رکورد بنچمارک‌ها یه شبه تا مرز ۹۹ درصد پر شد و ترکوند. الانم مدل‌هایی مثل Opus 5.5 و Sonnet 5.5 اومدن وسط و با هزینه حدود ۱۲ دلار واسه هر ماموریت، نشون دادن ربات‌ها دارن با سرعت سرسام‌آوری باهوش‌تر و کاربلدتر میشن.\n\nاهمیتش اینه که هوش مصنوعی بالاخره از پشت مانیتور و متن پا گذاشته تو دنیای واقعی، و حالا ربات‌ها با هزینه معقول دارن قابلیت یادگیری خودکار پیدا می‌کنن.",
   "date": "2026-10-16T18:19:47+00:00"
  },
+ "gholam_checked": "2026-10-24T23:35:31+00:00",
  "links": [
   {
    "kind": "tweet",
@@ -46,14 +53,6 @@
    "links": []
   }
  ],
- "media": [],
- "preview": {
-  "url": "https://fxtwitter.com/drjimfan/status/2111128797181567466?s=52&t=F41Qa04r48Mef_j_XjBneQ",
-  "site": "🧵 Thread • FxTwitter",
-  "title": "Jim Fan (@DrJimFan)",
-  "description": "We are open-sourcing V1.0 of our agentic robotics framework, ASPIRE, with full real robot skill discovery and self improvement capabilities! On the day Astra arrived, our lab switched the backend model and saturated all the benchmarks to ~99% over night.…",
-  "image": null
- },
  "article": {
   "title": "جیم فَن و بچه‌های تیمش رسماً نسخه اول فریم‌ورک رباتیک خفنشون به اسم ASPIRE رو اوپن‌سورس کردن تا همه بتونن ازش استفاده کنن",
   "source_title": "We are open-sourcing V1.0 of our agentic robotics framework, ASPIRE, with full real robot skill discovery and self improvement…",
@@ -65,6 +64,5 @@
    "رباتیک"
   ]
  },
- "updated": "2026-10-24T23:35:31+00:00",
- "gholam_checked": "2026-10-24T23:35:31+00:00"
+ "updated": "2026-10-25T11:54:11+00:00"
 }

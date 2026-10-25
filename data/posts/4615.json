@@ -1,0 +1,71 @@
+{
+ "id": 4615,
+ "url": "https://t.me/dlmehr/4615",
+ "date": "2026-08-05T22:04:10+00:00",
+ "text": "https://fxtwitter.com/mark_k/status/2085100454053359768?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+ "forwarded_from": null,
+ "digest": false,
+ "hash": "5aeb51e941c4",
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/mark_k/status/2085100454053359768?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+  "site": "FxTwitter",
+  "title": "Mark Kretschmann (@mark_k)",
+  "description": "ARC-AGI 3 is now completely saturated (solved) by a new AI harness called Prime Agent!\nIt achieved its highest score with Opus 5, but it can work with any other model too. It's especially well suited for agentic coding tasks.\nIncredible achievement by…",
+  "image": null
+ },
+ "gholam": {
+  "text": "ببین رفیق، بچه‌های Prime Intellect یه سیستم خفن به اسم Prime Agent ردیف کردن که زده بنچمارک غول ARC-AGI 3 رو رسماً ضربه‌فنی و کاملاً حلش کرده. این ابزار بیشترین امتیازش رو همراه با مدل Opus 5 گرفته، اما جوری طراحی شده که با بقیه مدل‌ها هم ردیف می‌شه و کار می‌کنه. خلاصه این‌که خوراک اصلیش کارهای برنامه‌نویسی خودمختار و پروژه‌های پیچیده و طولانیه‌ و خودش می‌تونه کارایی خودشو ارتقا بده.\nاهمیتش اینه که نشون می‌ده هوش مصنوعی توی استدلال منطقی و برنامه‌نویسی مستقل داره پا رو از مرزهای قبلی خیلی فراتر می‌ذاره.",
+  "date": "2026-08-05T22:04:24+00:00"
+ },
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/mark_k/status/2085100454053359768",
+   "domain": "x.com",
+   "author": {
+    "name": "Mark Kretschmann",
+    "handle": "mark_k",
+    "avatar": "https://pbs.twimg.com/profile_images/2113666534648262656/dND2rS3v_200x200.jpg"
+   },
+   "text": "ARC-AGI 3 is now completely saturated (solved) by a new AI harness called Prime Agent! \n\nIt achieved its highest score with Opus 5, but it can work with any other model too. It's especially well suited for agentic coding tasks.\n\nIncredible achievement by @PrimeIntellect 🔥",
+   "date": 1785961662,
+   "media": [],
+   "links": [],
+   "quote": {
+    "author": {
+     "name": "Prime Intellect",
+     "handle": "PrimeIntellect",
+     "avatar": "https://pbs.twimg.com/profile_images/1837605403359633411/Stj4eLIH_200x200.jpg"
+    },
+    "text": "Introducing Prime Agent:\n\nA self-improving RLM harness for coding and long-running autonomous tasks.\n\nDesigned to be both token-efficient and expressive through programmatic tool calling, context as a variable, multi-agent messaging, and a self-modifiable harness state.",
+    "date": 1785958454,
+    "media": [
+     {
+      "type": "video",
+      "src": "https://video.twimg.com/amplify_video/2085082284139614208/vid/avc1/960x720/XdaK6GcOP1gl37x2.mp4?tag=29",
+      "poster": "https://pbs.twimg.com/amplify_video_thumb/2085082284139614208/img/EgIrWm5I4tCFRKND.jpg",
+      "ratio": 0.75,
+      "duration": 44.44,
+      "gif": false
+     }
+    ],
+    "links": []
+   }
+  }
+ ],
+ "article": {
+  "title": "بچه‌های Prime Intellect یه سیستم خفن به اسم Prime Agent ردیف کردن که زده بنچمارک غول ARC-AGI 3 رو رسماً ضربه‌فنی و کاملاً حلش کرده",
+  "source_title": "ARC-AGI 3 is now completely saturated (solved) by a new AI harness called Prime Agent!",
+  "body": [
+   "ببین رفیق، بچه‌های Prime Intellect یه سیستم خفن به اسم Prime Agent ردیف کردن که زده بنچمارک غول ARC-AGI 3 رو رسماً ضربه‌فنی و کاملاً حلش کرده. این ابزار بیشترین امتیازش رو همراه با مدل Opus 5 گرفته، اما جوری طراحی شده که با بقیه مدل‌ها هم ردیف می‌شه و کار می‌کنه. خلاصه این‌که خوراک اصلیش کارهای برنامه‌نویسی خودمختار و پروژه‌های پیچیده و طولانیه‌ و خودش می‌تونه کارایی خودشو ارتقا بده."
+  ],
+  "why": "نشون می‌ده هوش مصنوعی توی استدلال منطقی و برنامه‌نویسی مستقل داره پا رو از مرزهای قبلی خیلی فراتر می‌ذاره.",
+  "tags": [
+   "کدنویسی",
+   "آنتروپیک"
+  ]
+ },
+ "updated": "2026-10-25T12:30:50+00:00",
+ "gholam_checked": "2026-10-25T12:30:50+00:00"
+}

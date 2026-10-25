@@ -1,0 +1,67 @@
+{
+ "id": 5335,
+ "url": "https://t.me/dlmehr/5335",
+ "date": "2026-09-16T21:52:46+00:00",
+ "text": "https://fxtwitter.com/eliebakouch/status/2100324137642131516?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+ "forwarded_from": null,
+ "digest": false,
+ "hash": "22429e9739c1",
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/eliebakouch/status/2100324137642131516?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+  "site": "FxTwitter",
+  "title": "elie (@eliebakouch)",
+  "description": "cost of doing RL training at 1T scale\nMimo V2.6 Pro (1.02T total, 42B active param)\n493k$ / day\n70k$ / step\n2.78$ / sample / trajectory\n33.91$ / M tokens\nMimo V2.6 Flash (309B total, 15B active param)\n247k$ / day\n21k$ / step\n0.86$ / sample / trajectory…",
+  "image": "https://cdn4.telesco.pe/file/kLwYGKOkUjLGXbKRhjdVhCPOy05diP1NmroaNZeSt-G-zJEp46qeCC4_VAu9uRbjLt_tdQ_whFNyghY_Is55PEP0BRyBWqh8P86iytXNUkfVZsLjhVDuBDFRzm20Ml6HbJY9T3DYnUdrqA2Wh9RvFPH69iXWW4RObrCsBU6AUoqpr9Hjt2Uz75ZK82_DP3xAGezsKyqfRqc2tfpyLm4z-7sV82vLBIRK82RvvDCot3cusNZStW40hdQEAgamf5eFPDg5j2-9RdN_gVUCD0KuBAxAIxKOgKihuYIcl2nHQuDggj1ZOiopWFMaUAFVwEGrkAl9TQXWIavgeNO6Q__rBQ.jpg"
+ },
+ "gholam": {
+  "text": "ببین رفیق، تا حالا فکر کردی تربیت مدل‌های غول‌پیکر هوش مصنوعی با یادگیری تقویتی چقدر پیاده‌ت می‌کنه؟ قضیه اینه که هزینه‌های مدل جدید MiMo V2.6 لو رفته و ارقامش رسماً مغز آدم رو سوت می‌کشه؛ نسخه پرو این غولِ یک تریلیون پارامتری، روزی ۴۹۳ هزار دلار و برای هر استپ تمرینش ۷۰ هزار دلار پول می‌بلعه! حتی مدل جمع‌وجورترش یعنی فلش با ۳۰۹ میلیارد پارامتر هم شوخی‌بردار نیست و خرجش روزی ۲۴۷ هزار دلار آب می‌خوره. خلاصه تیم تحقیقاتی بعد از شش ماه سکوت نشون داده که رسوندن یادگیری تقویتی به این ابعاد، رسماً یه چاه ویل برای سوزوندن دلاره.\n\nچرا مهمه؟ اهمیتش اینه که نشون میده فتح قله‌های جدید هوش مصنوعی دیگه کار هر شرکتی نیست و تبدیل به یه قمار سنگین مالی شده که فقط غول‌های میلیارد دلاری از پس اجاره سرورهاش برمیان.",
+  "date": "2026-09-16T21:52:57+00:00"
+ },
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/eliebakouch/status/2100324137642131516",
+   "domain": "x.com",
+   "author": {
+    "name": "elie",
+    "handle": "eliebakouch",
+    "avatar": "https://pbs.twimg.com/profile_images/1745893660099592193/MmYemsw6_200x200.jpg"
+   },
+   "text": "cost of doing RL training at 1T scale\n\nMimo V2.6 Pro (1.02T total, 42B active param)\n\n493k$ / day\n70k$ / step\n2.78$ / sample / trajectory\n33.91$ / M tokens\n\nMimo V2.6 Flash (309B total, 15B active param)\n\n247k$ / day\n21k$ / step\n0.86$ / sample / trajectory\n9.25$ / M tokens",
+   "date": 1789591271,
+   "media": [
+    {
+     "type": "image",
+     "src": "https://pbs.twimg.com/media/HSXXyS4XoAA9mAe.jpg?name=orig",
+     "ratio": 0.2127
+    }
+   ],
+   "links": [],
+   "quote": {
+    "author": {
+     "name": "Fuli Luo",
+     "handle": "_LuoFuli",
+     "avatar": "https://pbs.twimg.com/profile_images/1988292026555564032/WBBBI5xQ_200x200.jpg"
+    },
+    "text": "Nearly half a year of silence. We spent it studying one problem: how far RL can scale.\n\nMiMo-V2.6 is in the middle of its RL run right now. Three things we scaled: compute (~2B tokens per step, 1568 prompts × 16 rollouts, fully async), environments and harnesses (multi-task agentic RL, mixed across multiple harnesses in one run), and grader compute (agentic in-group credit assignment, with test-case and rubric-based rewards). We'll open-source the details piece by piece over the coming weeks.\n\nStreaming the run: https://mimo.xiaomi.com/rl/",
+    "date": 1789584726,
+    "media": [],
+    "links": [
+     "https://mimo.xiaomi.com/rl/"
+    ]
+   }
+  }
+ ],
+ "article": {
+  "title": "تا حالا فکر کردی تربیت مدل‌های غول‌پیکر هوش مصنوعی با یادگیری تقویتی چقدر پیاده‌ت می‌کنه",
+  "source_title": "cost of doing RL training at 1T scale",
+  "body": [
+   "ببین رفیق، تا حالا فکر کردی تربیت مدل‌های غول‌پیکر هوش مصنوعی با یادگیری تقویتی چقدر پیاده‌ت می‌کنه؟ قضیه اینه که هزینه‌های مدل جدید MiMo V2.6 لو رفته و ارقامش رسماً مغز آدم رو سوت می‌کشه؛ نسخه پرو این غولِ یک تریلیون پارامتری، روزی ۴۹۳ هزار دلار و برای هر استپ تمرینش ۷۰ هزار دلار پول می‌بلعه! حتی مدل جمع‌وجورترش یعنی فلش با ۳۰۹ میلیارد پارامتر هم شوخی‌بردار نیست و خرجش روزی ۲۴۷ هزار دلار آب می‌خوره. خلاصه تیم تحقیقاتی بعد از شش ماه سکوت نشون داده که رسوندن یادگیری تقویتی به این ابعاد، رسماً یه چاه ویل برای سوزوندن دلاره."
+  ],
+  "why": "اهمیتش اینه که نشون میده فتح قله‌های جدید هوش مصنوعی دیگه کار هر شرکتی نیست و تبدیل به یه قمار سنگین مالی شده که فقط غول‌های میلیارد دلاری از پس اجاره سرورهاش برمیان.",
+  "tags": []
+ },
+ "updated": "2026-10-25T12:26:45+00:00",
+ "gholam_checked": "2026-10-25T12:26:45+00:00"
+}

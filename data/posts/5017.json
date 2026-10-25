@@ -1,0 +1,51 @@
+{
+ "id": 5017,
+ "url": "https://t.me/dlmehr/5017",
+ "date": "2026-08-29T03:42:46+00:00",
+ "text": "https://fxtwitter.com/mntruell/status/2093532254006063557?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+ "forwarded_from": null,
+ "digest": false,
+ "hash": "962969a5497e",
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/mntruell/status/2093532254006063557?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+  "site": "FxTwitter",
+  "title": "Michael Truell (@mntruell)",
+  "description": "We’re sorry to see that OpenAI put out a note saying they plan to block Cursor users from accessing OpenAI models in three months.\nOpenAI models serve about 5% of Cursor user traffic, and we’re speaking with the OpenAI team to resolve this.\nCursor was one…",
+  "image": "https://cdn4.telesco.pe/file/CWgmYF2IGQmOVUpI6fOBnzrQM5h9iHKSpquLk5A1LkVRhWgtmQzWE-31syK_ji3dlkEKBMC1yDP3kCIqVm_hRbsGni6Rqk49FdvYt1VwesL_nLtKQQgkJIQfXSDVcXtyYiy_pVUPRYOcldUcugcmTeSLZtuVT88JcAa4t3H7-FN5d9XP4f5SjkuQsGZyVqKHMjnSzJT7tNyAHKiH5Ngpj43ATk2D41JXswsU_DxrnlRnQ_EOt2UZ97tUHAk-1ldIXBiJMFxvO0n5hQkRZs--GTXVHlQSNZQsNLBMY_fbErQJgzoQUaZQKRWrWeJ95Xuwujp9mgUYp5cmFeJdhmeVjA.jpg"
+ },
+ "gholam": {
+  "text": "ببین رفیق، مایکل ترول مدیر ابزار محبوب کِرسِر (Cursor) خبر داده که شرکت OpenAI اعلام کرده قراره تا سه ماه دیگه دسترسی کاربرای این ادیتور به مدل‌هاش رو کلاً قطع کنه. ترول گفته مدل‌های OpenAI فقط حدود ۵ درصد ترافیک کرسر رو تأمین می‌کنن و فعلاً دارن با تیمشون رایزنی می‌کنن تا بلکه ماجرا مسالمت‌آمیز حل‌وفصل بشه. خلاصه اینکه کرسر جزو اولین مشتری‌ها و رفقای قدیمی OpenAI بوده و حسابی از این پشت‌پا زدن به اعتماد چندساله و بی‌طرف نبودن زیرساختشون دلخور شده.\n\nاهمیتش اینه که نشون می‌ده غول‌های هوش مصنوعی دارن انحصارطلبی رو شروع می‌کنن و ممکنه کم‌کم جلوی دسترسی سایر ابزارهای کاربردی برنامه‌نویسی به مدل‌هاشون رو بگیرن.",
+  "date": "2026-08-29T03:42:57+00:00"
+ },
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/mntruell/status/2093532254006063557",
+   "domain": "x.com",
+   "author": {
+    "name": "Michael Truell",
+    "handle": "mntruell",
+    "avatar": "https://pbs.twimg.com/profile_images/1887065642261737472/QdLiAFfD_200x200.jpg"
+   },
+   "text": "We’re sorry to see that OpenAI put out a note saying they plan to block Cursor users from accessing OpenAI models in three months.\n\nOpenAI models serve about 5% of Cursor user traffic, and we’re speaking with the OpenAI team to resolve this.\n\nCursor was one of the very first users of OpenAI, we’ve worked closely with their team for years, and we’ve trusted their platform to be neutral infrastructure for our business.",
+   "date": 1787971959,
+   "media": [],
+   "links": []
+  }
+ ],
+ "article": {
+  "title": "مایکل ترول مدیر ابزار محبوب کِرسِر (Cursor) خبر داده که شرکت OpenAI اعلام کرده قراره تا سه ماه دیگه دسترسی کاربرای این ادیتور به مدل‌هاش رو کلاً قطع کنه",
+  "source_title": "We’re sorry to see that OpenAI put out a note saying they plan to block Cursor users from accessing OpenAI models in three months.",
+  "body": [
+   "ببین رفیق، مایکل ترول مدیر ابزار محبوب کِرسِر (Cursor) خبر داده که شرکت OpenAI اعلام کرده قراره تا سه ماه دیگه دسترسی کاربرای این ادیتور به مدل‌هاش رو کلاً قطع کنه. ترول گفته مدل‌های OpenAI فقط حدود ۵ درصد ترافیک کرسر رو تأمین می‌کنن و فعلاً دارن با تیمشون رایزنی می‌کنن تا بلکه ماجرا مسالمت‌آمیز حل‌وفصل بشه. خلاصه اینکه کرسر جزو اولین مشتری‌ها و رفقای قدیمی OpenAI بوده و حسابی از این پشت‌پا زدن به اعتماد چندساله و بی‌طرف نبودن زیرساختشون دلخور شده."
+  ],
+  "why": "نشون می‌ده غول‌های هوش مصنوعی دارن انحصارطلبی رو شروع می‌کنن و ممکنه کم‌کم جلوی دسترسی سایر ابزارهای کاربردی برنامه‌نویسی به مدل‌هاشون رو بگیرن.",
+  "tags": [
+   "اوپن‌ای‌آی",
+   "کدنویسی"
+  ]
+ },
+ "updated": "2026-10-25T12:28:41+00:00",
+ "gholam_checked": "2026-10-25T12:28:41+00:00"
+}

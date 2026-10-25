@@ -2,16 +2,23 @@
  "id": 5898,
  "url": "https://t.me/dlmehr/5898",
  "date": "2026-10-14T21:52:36+00:00",
- "edited": true,
- "views": "187",
  "text": "https://fxtwitter.com/rhodaai/status/2110402702178148451?s=52&t=F41Qa04r48Mef_j_XjBneQ",
  "forwarded_from": null,
  "digest": false,
  "hash": "822a3c4c9bed",
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/rhodaai/status/2110402702178148451?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+  "site": "🧵 Thread • FxTwitter",
+  "title": "Rhoda AI (@RhodaAI)",
+  "description": "What can a robot do without vision?\nWe gave our robot a sense of touch and showed it can recognize and retrieve objects with its cameras blindfolded.\nIntroducing Rhoda’s new tactile sensor—it feels pressure, texture, vibration, slip, and temperature, just…",
+  "image": null
+ },
  "gholam": {
   "text": "رفیق، ببین این مهندس‌های شرکت Rhoda AI چه حرکت تروتمیزی زدن و بالاخره به ربات‌ها حس لامسه واقعی دادن. قضیه از این قراره که یه سنسور لمسی جدید ساختن که مو‌به‌مو مثل سرانگشت‌های ما، فشار، زبری، لرزش، سُر خوردن و حتی دمای جسم رو درک می‌کنه. برای تست هم دوربین‌های ربات رو کاملاً کور کردن و دیدن این رفیق آهنی فقط با لمس کردن، اجسام مختلف رو مو لا درزش نرفته تشخیص میده و برمی‌داره. خلاصه دیگه گذشت اون دوره‌ای که ربات‌ها فقط با چشم کار می‌کردن؛ حالا قشنگ دارن حس و حال لمس رو می‌فهمن.\nاهمیتش اینه که ربات‌ها بدون وابستگی به دیدن و نور، می‌تونن تو تاریکی یا جاهای بسته و برای کارهای ظریف صنعتی، وسایل رو بدون شکستن و لغزیدن مهار کنن.",
   "date": "2026-10-14T21:52:53+00:00"
  },
+ "gholam_checked": "2026-10-24T23:35:36+00:00",
  "links": [
   {
    "kind": "tweet",
@@ -46,14 +53,6 @@
    "links": []
   }
  ],
- "media": [],
- "preview": {
-  "url": "https://fxtwitter.com/rhodaai/status/2110402702178148451?s=52&t=F41Qa04r48Mef_j_XjBneQ",
-  "site": "🧵 Thread • FxTwitter",
-  "title": "Rhoda AI (@RhodaAI)",
-  "description": "What can a robot do without vision?\nWe gave our robot a sense of touch and showed it can recognize and retrieve objects with its cameras blindfolded.\nIntroducing Rhoda’s new tactile sensor—it feels pressure, texture, vibration, slip, and temperature, just…",
-  "image": null
- },
  "article": {
   "title": "ببین این مهندس‌های شرکت Rhoda AI چه حرکت تروتمیزی زدن و بالاخره به ربات‌ها حس لامسه واقعی دادن",
   "source_title": "What can a robot do without vision?",
@@ -65,6 +64,5 @@
    "رباتیک"
   ]
  },
- "updated": "2026-10-24T23:35:36+00:00",
- "gholam_checked": "2026-10-24T23:35:36+00:00"
+ "updated": "2026-10-25T11:54:11+00:00"
 }

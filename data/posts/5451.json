@@ -1,0 +1,33 @@
+{
+ "id": 5451,
+ "url": "https://t.me/dlmehr/5451",
+ "date": "2026-09-24T04:21:41+00:00",
+ "text": "24-hour news summary.\n\n1. (https://t.me/dlmehr/5430) Stanford will offer a course on efficient generative language models focused on achieving modeling goals under limited compute budgets.\n\n2. (https://t.me/dlmehr/5433) Meta’s Muse AI agent reportedly routes some business calls to human call-center workers despite being promoted as fully AI-powered.\n\n3. (https://t.me/dlmehr/5434) Unreal Labs introduced Unreal Agent, an open-source harness claimed to be 39% cheaper than Codex+Astra on Terminal-Bench 4.0 while maintaining performance.\n\n4. (https://t.me/dlmehr/5435) Qwen launched Audio 3.1, upgrading its ASR, TTS, and realtime models, adding TTS-Next and ASR-Next, and cutting prices.\n\n5. (https://t.me/dlmehr/5436) The U.K. plans to use its upcoming G20 presidency to pursue a global agreement on artificial intelligence.\n\n6. (https://t.me/dlmehr/5438) Qwen introduced Qwen Intelligence with agents for mobile task planning, device use, and broader personal-assistance capabilities.\n\n7. (https://t.me/dlmehr/5439) Carnegie China data indicates China became the leading destination for elite AI talent in 2025, while the U.S. share declined substantially.\n\n8. (https://t.me/dlmehr/5440) Anthropic said Claude helped discover a previously unknown bacteriophage enzyme system adjacent to repeating DNA resembling CRISPR, though its function remains unclear.\n\n9. (https://t.me/dlmehr/5441) Dario Amodei described Claude’s discovery of a molecular machine that may represent a new gene-editing mechanism, while stressing its significance and utility are still uncertain.\n\n10. (https://t.me/dlmehr/5442) Anthropic detailed a two-week sprint in which Claude helped make claude.ai and its desktop app roughly three times faster by identifying bottlenecks, building benchmarks, and safely shipping over 3,000 changes.\n\n11. (https://t.me/dlmehr/5443) Amazon’s AgentSTAR uses VLM-generated Blender code, rendering comparisons, and optimization to track articulated 3D shapes and poses from monocular video, improving ARCTIC error to 5.59 cm from 7.65 cm.\n\n12. (https://t.me/dlmehr/5445) Ravid Shwartz Ziv criticized Anthropic’s gene-discovery announcement, arguing that researchers should recognize the limited significance of a system whose function remains unknown.\n\n13. (https://t.me/dlmehr/5446) A genome-mining researcher explained that Anthropic found neighboring genes and unusual repeated DNA, while cautioning that identifying the pattern does not yet establish its biological function.\n\n--Hermes",
+ "forwarded_from": null,
+ "digest": true,
+ "hash": "a1dbf8719dc0",
+ "media": [],
+ "preview": {
+  "url": "https://t.me/dlmehr/5430",
+  "site": "Telegram",
+  "title": "Future Focus with Mehrzad",
+  "description": "https://fxtwitter.com/aminkarbasi/status/2101787352490529211?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+  "image": null
+ },
+ "gholam": null,
+ "links": [
+  {
+   "kind": "link",
+   "url": "http://claude.ai/",
+   "domain": "claude.ai"
+  }
+ ],
+ "article": {
+  "title": "Future Focus with Mehrzad",
+  "source_title": null,
+  "body": [],
+  "why": null,
+  "tags": []
+ },
+ "updated": "2026-10-25T12:03:38+00:00"
+}

@@ -1,0 +1,62 @@
+{
+ "id": 4881,
+ "url": "https://t.me/dlmehr/4881",
+ "date": "2026-08-22T18:48:37+00:00",
+ "text": "https://fxtwitter.com/henryzhangumich/status/2091066210721141009?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+ "forwarded_from": null,
+ "digest": false,
+ "hash": "05b24b205d5a",
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/henryzhangumich/status/2091066210721141009?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+  "site": "FxTwitter · github.com",
+  "title": "Henry Zhang (@henryzhangumich)",
+  "description": "Just completed a full end to end run of the full 113 task DeepSWE benchmark on ox-alpha. The Rumored ~80% pass rate is completely incorrect. Actual benchmark result is 58.4%, landing the model at almost identical performance to Claude Opus 4.8 (59%)\n🧵\nht…",
+  "image": "https://cdn4.telesco.pe/file/XN7maFG8TlL1pzbPlibCNY4cg-CKYoMlnymmtS9jiqJddNOoCZHmZ8Tmw_qmAl8MlU-Iv3DaU8KsweeGNQvgL6VoY15DxoBfIlSkZtRXNcRquTg4EqP8wkqVisXrnmk3jxIYNqyXDoefzql6sVP4omsjZDfYFZXtDtYgfSaWz3IwnRP-hEfs8e3dFW7a-7U8KpxlsvnrUSRlLeDBFNtUT_s1pV6qxIMew2KWnAOcldY_HAecvxRcf2f4FF1Df7zGXU5R3v5g-UnbU9qbnvFgbOALV63NBKZTSmMLP8tCfhpKqAyZQLKxKBF3h0rjmm95NJ7Ko2qS8h5KyrBH8sYCSQ.jpg"
+ },
+ "gholam": {
+  "text": "ببین رفیق، این قضیه شایعه‌هایی که راه انداخته بودن مدل ox-alpha ترکونده و تو بنچمارک DeepSWE به رکورد ۸۰ درصدی رسیده، کلاً باد هوا از آب دراومد! هنری ژانگ اومده هر ۱۱۳ تا تسک این بنچمارک رو تمام و کمال روی این مدل اجرا کرده و نمره واقعی شده ۵۸.۴ درصد. یعنی اون سر و صداها الکی بود و عملکرد این مدل دقیقاً پایاپای و هم‌سطح کلود اوپوس ۴.۸ با اون امتیاز ۵۹ درصدیشه. پس فعلاً خبری از پرواز فضایی نیست و کارکردش در حد همین غول‌های فعلی کُدنویسیه.\n\nچرا مهمه؟ چون جلوی هایپ و شایعات بی‌پایه رو می‌گیره و نشون میده تا یه مدل رسماً زیر تیغ تست نره، نباید گول آمارهای بادکنکی رو خورد.",
+  "date": "2026-08-22T18:48:47+00:00"
+ },
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/henryzhang/status/2091066210721141009",
+   "domain": "x.com",
+   "author": {
+    "name": "Henry Zhang",
+    "handle": "henryzhang",
+    "avatar": "https://pbs.twimg.com/profile_images/2114048481958715392/hYaTdP0J_200x200.jpg"
+   },
+   "text": "Just completed a full end to end run of the full 113 task DeepSWE benchmark on ox-alpha. The Rumored ~80% pass rate is completely incorrect. Actual benchmark result is 58.4%, landing the model at almost identical performance to Claude Opus 4.8 (59%) 🧵\nhttps://github.com/MatchaOnMuffins/oxalpha",
+   "date": 1787384009,
+   "media": [],
+   "links": [
+    "https://github.com/MatchaOnMuffins/oxalpha"
+   ]
+  },
+  {
+   "kind": "link",
+   "url": "https://github.com/MatchaOnMuffins/oxalpha",
+   "domain": "github.com",
+   "title": "GitHub - MatchaOnMuffins/oxalpha",
+   "description": "Contribute to MatchaOnMuffins/oxalpha development by creating an account on GitHub.",
+   "image": "https://opengraph.githubassets.com/13097621e06be7847e60280ecde0e2ddfc39d03b2f4e93378a15de7507a49a6e/MatchaOnMuffins/oxalpha",
+   "site": "GitHub"
+  }
+ ],
+ "article": {
+  "title": "این قضیه شایعه‌هایی که راه انداخته بودن مدل ox-alpha ترکونده و تو بنچمارک DeepSWE به رکورد ۸۰ درصدی رسیده، کلاً باد هوا از آب دراومد",
+  "source_title": "Just completed a full end to end run of the full 113 task DeepSWE benchmark on ox-alpha. The Rumored ~80% pass rate is completely…",
+  "body": [
+   "ببین رفیق، این قضیه شایعه‌هایی که راه انداخته بودن مدل ox-alpha ترکونده و تو بنچمارک DeepSWE به رکورد ۸۰ درصدی رسیده، کلاً باد هوا از آب دراومد! هنری ژانگ اومده هر ۱۱۳ تا تسک این بنچمارک رو تمام و کمال روی این مدل اجرا کرده و نمره واقعی شده ۵۸.۴ درصد. یعنی اون سر و صداها الکی بود و عملکرد این مدل دقیقاً پایاپای و هم‌سطح کلود اوپوس ۴.۸ با اون امتیاز ۵۹ درصدیشه. پس فعلاً خبری از پرواز فضایی نیست و کارکردش در حد همین غول‌های فعلی کُدنویسیه."
+  ],
+  "why": "چون جلوی هایپ و شایعات بی‌پایه رو می‌گیره و نشون میده تا یه مدل رسماً زیر تیغ تست نره، نباید گول آمارهای بادکنکی رو خورد.",
+  "tags": [
+   "آنتروپیک",
+   "کدنویسی"
+  ]
+ },
+ "updated": "2026-10-25T12:29:33+00:00",
+ "gholam_checked": "2026-10-25T12:29:33+00:00"
+}

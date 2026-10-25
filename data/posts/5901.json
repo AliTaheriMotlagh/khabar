@@ -2,16 +2,23 @@
  "id": 5901,
  "url": "https://t.me/dlmehr/5901",
  "date": "2026-10-15T01:14:13+00:00",
- "edited": true,
- "views": "153",
  "text": "https://fxtwitter.com/typesafeai/status/2110536685805355064?s=52&t=F41Qa04r48Mef_j_XjBneQ",
  "forwarded_from": null,
  "digest": false,
  "hash": "1378882c2972",
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/typesafeai/status/2110536685805355064?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+  "site": "🧵 Thread • FxTwitter",
+  "title": "TypeSafe AI (@typesafeai)",
+  "description": "we announced Jev 1.14 on 10.14 at 1:14pm PT\n🔥\na new and improved model, along with experimental features for our dreamers:\n• images\n• a new box type\n• longer context\nsurprise, Jev was already able to see you!\n👁️\nBUT our bar for production-grade intelligence…",
+  "image": "https://cdn4.telesco.pe/file/VHFek81LQIlyl3mA7D8w-2Ngwbp1KpCOq8sfezj4L7sb0dDqla0uRucojqNR_CwSR2STpWtoherfwouM-OaqzYPTVyT8Ft3JOjwaloT-k5wk9yA6_XevB6xZJA2QlR69u0c5wXHmkpn59awuE6s2A0w6mGpxK8f6kOokzy88mqCS3PW-jcupDqGZErlR3ZeSshHrFaELuYKK2xlxAmoYcGkdwON6u26W1Z7j6uABj4EffKCIhy-eukqYA9_fP2dWFbW4bNknGRuhR5vvIKka_Dx6R78YiAeYPvoN9-kUjhHKRAynXujLeUMTh_lrxUCAmVx6GlHc2hdjinaIdiSIFw.jpg"
+ },
  "gholam": {
   "text": "رفیق، بچه‌های TypeSafe AI اومدن نسخه جدید مدلشون یعنی Jev 1.14 رو معرفی کردن و کلی قابلیت تازه برای خوره‌های هوش مصنوعی رو میز گذاشتن. این مدلِ ارتقایافته حالا چشمش به دنیا باز شده و علاوه بر پردازش تصویر، کانتکست طولانی‌تر و یه نوع باکسِ جدید رو به‌شکل آزمایشی به میدون آورده. البته رفقا لوتی‌گری کردن و از همین اول هشدار دادن که معیارشون برای نسخه‌های نهایی خیلی سفت‌وسخته، واسه همین این ویژگی‌ها فعلاً تو فاز پیش‌نمایشه و توسعه‌دهنده‌ها باید با احتیاط و پای مسئولیت خودشون برن سراغش.\n\nاهمیتش اینه که اضافه شدن بینایی ماشین و کانتکست طولانی‌تر دست برنامه‌نویس‌ها رو واسه ساخت ابزارهای خفن‌تر حسابی باز می‌کنه، هرچند فعلاً نباید بی‌گدار به آب زد و تو پروژه‌های حساس استفاده‌ش کرد.",
   "date": "2026-10-15T01:14:29+00:00"
  },
+ "gholam_checked": "2026-10-24T23:35:35+00:00",
  "links": [
   {
    "kind": "tweet",
@@ -43,18 +50,6 @@
    "links": []
   }
  ],
- "media": [],
- "preview": {
-  "url": "https://fxtwitter.com/typesafeai/status/2110536685805355064?s=52&t=F41Qa04r48Mef_j_XjBneQ",
-  "site": "🧵 Thread • FxTwitter",
-  "title": "TypeSafe AI (@typesafeai)",
-  "description": "we announced Jev 1.14 on 10.14 at 1:14pm PT\n🔥\na new and improved model, along with experimental features for our dreamers:\n• images\n• a new box type\n• longer context\nsurprise, Jev was already able to see you!\n👁️\nBUT our bar for production-grade intelligence…",
-  "image": {
-   "src": "media/5901/preview.webp",
-   "width": 800,
-   "height": 506
-  }
- },
  "article": {
   "title": "بچه‌های TypeSafe AI اومدن نسخه جدید مدلشون یعنی Jev 1.14 رو معرفی کردن و کلی قابلیت تازه برای خوره‌های هوش مصنوعی رو میز گذاشتن",
   "source_title": "we announced Jev 1.14 on 10.14 at 1:14pm PT 🔥",
@@ -64,6 +59,5 @@
   "why": "اضافه شدن بینایی ماشین و کانتکست طولانی‌تر دست برنامه‌نویس‌ها رو واسه ساخت ابزارهای خفن‌تر حسابی باز می‌کنه، هرچند فعلاً نباید بی‌گدار به آب زد و تو پروژه‌های حساس استفاده‌ش کرد.",
   "tags": []
  },
- "updated": "2026-10-24T23:35:35+00:00",
- "gholam_checked": "2026-10-24T23:35:35+00:00"
+ "updated": "2026-10-25T11:54:11+00:00"
 }

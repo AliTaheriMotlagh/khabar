@@ -1,0 +1,67 @@
+{
+ "id": 6008,
+ "url": "https://t.me/dlmehr/6008",
+ "date": "2026-10-21T01:07:46+00:00",
+ "text": "https://fxtwitter.com/thehackersnews/status/2112507721593520417?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+ "forwarded_from": null,
+ "digest": false,
+ "hash": "ccf22bf61235",
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/thehackersnews/status/2112507721593520417?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+  "site": "FxTwitter",
+  "title": "The Hacker News (@TheHackersNews)",
+  "description": "‼️\nBREAKING: Go has issued an URGENT security update blocking 8 certificate authority keys over undisclosed security concerns.\nIt will reject certificate chains using these keys, potentially breaking connections for rebuilt applications.\nThe filter cannot…",
+  "image": "https://cdn4.telesco.pe/file/MVKsuoSj4Ct7bR0Ll2a28ogY8O3YQfPZrttjUleoPuCr2LQlBQ_SbotEH3wr1ulwPhKmhPrrUaMb30S1NjQOONx991FdoNPbco7j7ires24L_4LDFeIGnfkwTDkLBtSs8fU61aUdCxD3pTs5yKJ0W3AacZdI8AKTNnGUD_W1LqYimXploWRAJiMhcOxA1IRiK0il7KAy0MT_YSC7rHxDyyVzTT-c97TNOMI9KDJeWVfDGkMrbPVKk0dBbxgPGpYWTG-nOh7T2kM6EsqVCVcpx_vizDKVqfyVxh36YPBM37-K1kBHzFfvQ9NltzWKxBsxwSONVUj2F_pE0mfir5rNxA.jpg"
+ },
+ "gholam": {
+  "text": "رفیق، قضیه خیلی جدی‌تر از این حرفاست و تیم زبان برنامه‌نویسی Go یه آپدیت امنیتی اورژانسی داده بیرون که هشت‌تا کلید صادرکننده گواهی امنیتی یا همون CA رو کلاً بلاک کرده. علتش هم نگرانی‌های امنیتی فاش‌نشده‌ایه که هنوز جزییاتش رو لو ندادن، ولی انقدر وضع خیت بوده که تصمیم گرفتن جلوی هر زنجیره گواهی مرتبط با این کلیدها رو سفت و سخت بگیرن. دردسر اصلی اینجاست که این فیلتر اصلاً خاموش‌بشو نیست و اگه برنامه‌هاتون رو با نسخه جدید بازسازی یا همون ری‌بیلد کنین، ممکنه اتصالات امنیتی شبکه‌تون یهو قطع بشه و کار دستتون بده.\n\nچرا مهمه؟ اهمیتش اینه که چون امکان غیرفعال کردن این بلاک وجود نداره، توسعه‌دهنده‌ها باید سریع سیستم‌هاشون رو چک کنن تا سرویس‌ها و اتصالاتشون به فنا نره و نخورن به در بسته.",
+  "date": "2026-10-21T01:07:59+00:00"
+ },
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/TheHackersNews/status/2112507721593520417",
+   "domain": "x.com",
+   "author": {
+    "name": "The Hacker News",
+    "handle": "TheHackersNews",
+    "avatar": "https://pbs.twimg.com/profile_images/1597647879811657728/FLgHrLHy_200x200.jpg"
+   },
+   "text": "‼️ BREAKING: Go has issued an URGENT security update blocking 8 certificate authority keys over undisclosed security concerns.\n\nIt will reject certificate chains using these keys, potentially breaking connections for rebuilt applications.\n\nThe filter cannot be disabled.\n\nHere's what we know: https://thehackernews.com/2026/10/go-issues-emergency-update-blocking.html",
+   "date": 1792496063,
+   "media": [
+    {
+     "type": "image",
+     "src": "https://pbs.twimg.com/media/HVEiknzasAEYZ4D.jpg?name=orig",
+     "ratio": 0.5222
+    }
+   ],
+   "links": [
+    "https://thehackernews.com/2026/10/go-issues-emergency-update-blocking.html"
+   ]
+  },
+  {
+   "kind": "link",
+   "url": "https://thehackernews.com/2026/10/go-issues-emergency-update-blocking.html",
+   "domain": "thehackernews.com",
+   "title": "Go Issues Emergency Update Blocking Eight CA Keys Over Undisclosed Security Concerns",
+   "description": "Go 1.27.3 and 1.26.10 block eight CA public keys, rejecting certificate chains that use them after applications are rebuilt.",
+   "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgh12Jum-ReZMOyqaMubiLlMwx4-uDVxEJkD6-CJabWhHfCKV-Csw7P4MoeRX85Ag-3rxZMftHE6KGcdh059DoOPvF1Mirv05BQsflmg8RroWBt_t00BGTHsdhqkmVWVuRHKAs56AhNfdsq_YH0QWrMJ1z4dFT3I3xOK7Dwqu7aPp_P7tFSxQ-bzqyz8e4/s1600/go-certs.jpg",
+   "site": "The Hacker News"
+  }
+ ],
+ "article": {
+  "title": "قضیه خیلی جدی‌تر از این حرفاست و تیم زبان برنامه‌نویسی Go یه آپدیت امنیتی اورژانسی داده بیرون که هشت‌تا کلید صادرکننده گواهی امنیتی یا همون CA رو کلاً بلاک کرده",
+  "source_title": "‼️ BREAKING: Go has issued an URGENT security update blocking 8 certificate authority keys over undisclosed security concerns.",
+  "body": [
+   "رفیق، قضیه خیلی جدی‌تر از این حرفاست و تیم زبان برنامه‌نویسی Go یه آپدیت امنیتی اورژانسی داده بیرون که هشت‌تا کلید صادرکننده گواهی امنیتی یا همون CA رو کلاً بلاک کرده. علتش هم نگرانی‌های امنیتی فاش‌نشده‌ایه که هنوز جزییاتش رو لو ندادن، ولی انقدر وضع خیت بوده که تصمیم گرفتن جلوی هر زنجیره گواهی مرتبط با این کلیدها رو سفت و سخت بگیرن. دردسر اصلی اینجاست که این فیلتر اصلاً خاموش‌بشو نیست و اگه برنامه‌هاتون رو با نسخه جدید بازسازی یا همون ری‌بیلد کنین، ممکنه اتصالات امنیتی شبکه‌تون یهو قطع بشه و کار دستتون بده."
+  ],
+  "why": "اهمیتش اینه که چون امکان غیرفعال کردن این بلاک وجود نداره، توسعه‌دهنده‌ها باید سریع سیستم‌هاشون رو چک کنن تا سرویس‌ها و اتصالاتشون به فنا نره و نخورن به در بسته.",
+  "tags": [
+   "امنیت"
+  ]
+ },
+ "updated": "2026-10-25T12:23:28+00:00",
+ "gholam_checked": "2026-10-25T12:23:28+00:00"
+}

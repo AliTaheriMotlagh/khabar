@@ -1,0 +1,49 @@
+{
+ "id": 5062,
+ "url": "https://t.me/dlmehr/5062",
+ "date": "2026-09-01T03:52:38+00:00",
+ "text": "https://fxtwitter.com/rohanpaul_ai/status/2094628310877913101?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+ "forwarded_from": null,
+ "digest": false,
+ "hash": "124a3a40868a",
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/rohanpaul_ai/status/2094628310877913101?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+  "site": "FxTwitter",
+  "title": "Rohan Paul (@rohanpaul_ai)",
+  "description": "New HuggingFace paper argues that increasing agent autonomy can gradually make human oversight ineffective by causing approval fatigue, overreliance, loss of situational awareness, and skill degradation.\nAs agents do more, users are pushed into approval…",
+  "image": "https://cdn4.telesco.pe/file/G8o1d5C2oUdNWhFya51OWQBjnlJ67n-Kxme0b_cGtd2wH6JhG_IuO55M0cA50TX19CGxtKRluVKAjQYNVymJd3itb9LmaSY-bWPMtUf0JcnggYKth2bRIJgChbtj1LrmmkcXR6mNHxCg3VF4Yk-Q6ar3X2T3YKz3qIGU32CMwKoD6QxHSX7t4SqG6AVWZAWV9HzaIo3Gq4o9e7JrsW9iHeD8sawGtBYJzvm0nRQE7A_W1Jh1Y-EjkvLzj5QBuJeAKFEYV_lBm8XqZ9CCrXJgQgoWJ9J_yBkvABwqtfcEAwwAvZ1zzI_GbcPTgiBsraqJQ0oKPzQ0dh2lHVoE8UsyRg.jpg"
+ },
+ "gholam": null,
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/rohanpaul_ai/status/2094628310877913101",
+   "domain": "x.com",
+   "author": {
+    "name": "Rohan Paul",
+    "handle": "rohanpaul_ai",
+    "avatar": "https://pbs.twimg.com/profile_images/1816185267037859840/Fd18CH0v_200x200.jpg"
+   },
+   "text": "New HuggingFace paper argues that increasing agent autonomy can gradually make human oversight ineffective by causing approval fatigue, overreliance, loss of situational awareness, and skill degradation.\n\nAs agents do more, users are pushed into approval mode: skimming plans, granting permissions, and reconstructing what happened across steps.\n\nOver time, automation bias, approval fatigue, weaker situational awareness, and skill atrophy can make those approvals less reliable.\n\nWorse, weak approvals can become training or evaluation signals, rewarding systems for being easy to approve rather than easy to scrutinize.\n\nTheir answer is cognitive scaffolding at 2 levels: developers add strategic friction, better approval design, behavioral monitoring, and checks that force attention at consequential moments.\n\n– arxiv. org/abs/2608.23642\n\nTitle: \"AI Agents Push Humans Out of the Loop\"",
+   "date": 1788233280,
+   "media": [
+    {
+     "type": "image",
+     "src": "https://pbs.twimg.com/media/HRGGZ0-aAAACCJN.png?name=orig",
+     "ratio": 0.7652
+    }
+   ],
+   "links": []
+  }
+ ],
+ "article": {
+  "title": "New HuggingFace paper argues that increasing agent autonomy can gradually make human oversight ineffective by causing approval fatigue…",
+  "source_title": null,
+  "body": [],
+  "why": null,
+  "tags": []
+ },
+ "updated": "2026-10-25T12:28:25+00:00",
+ "gholam_checked": "2026-10-25T12:28:25+00:00"
+}

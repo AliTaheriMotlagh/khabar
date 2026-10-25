@@ -1,0 +1,65 @@
+{
+ "id": 5878,
+ "url": "https://t.me/dlmehr/5878",
+ "date": "2026-10-14T01:22:59+00:00",
+ "text": "https://fxtwitter.com/tatsu_hashimoto/status/2110049284456661193?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+ "forwarded_from": null,
+ "digest": false,
+ "hash": "41096b283ae7",
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/tatsu_hashimoto/status/2110049284456661193?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+  "site": "🧵 Thread • FxTwitter",
+  "title": "Tatsunori Hashimoto (@tatsu_hashimoto)",
+  "description": "Deep learning is often taught as a sanitized collection of facts and math. But work at the frontier of AI is messy and empirical.\nOur new class, Deep Learning Alchemy, aims to teach the art and science of deep learning in the hands-on spirit of Language…",
+  "image": "https://cdn4.telesco.pe/file/eXQOMLhaVip_6KnR43VVt76zIaTpsnAY8qAIqkhMfuguPxYUqzRqG2xkfH6P6SZjYUbQbEpP47ABMZDaX9FFNc8mXDyrA3iS_8A4egGaiIj0vMnrxPLE_I2z0LvZspMLwK6FVlrjll8UiJNQRURKDSWWeuIjw_FTC5M5r3ztbdWVBb-Nyv8A8PyUuf9cbiglk9X4uw2nmFK8v4Ds804h46qDCKaR5uHtP4-fhZ1AZLsXBsSuARzNR2pmnoIl3yleGCX_oo7MTLKoITPgeVQ9HJz1dLNo0eIlSzg9aL8VrUZzkKnNY0vUaP9ORZ5fbEHESJRKbJ4tNP5gmdhLQxw4vg.jpg"
+ },
+ "gholam": {
+  "text": "ببین رفیق، تاتسونوری هاشیموتو از اساتید استنفورد یه دوره خفن راه انداخته به اسم «کیمیای یادگیری عمیق» تا هوش مصنوعی رو به سبک کف‌میدونی و تجربی یاد بده. حرفش اینه که یادگیری عمیق واقعی، فرمول‌های شسته‌رفته و ریاضی محض نیست، بلکه پر از کثیف‌کاری تجربی و لمس خطاهای واقعیه. مرام جالبشون اینه که بچه‌ها برای حل تکالیف آزادن از ایجنت‌های هوش مصنوعی استفاده کنن، ولی ۸۵ درصد نمره پای هفت‌تا امتحان سفت‌وسخته که اونجا بدون هیچ کمکی باید عیار واقعی‌شون و تسلط به جزییات رو ثابت کنن. دمشون هم گرم که تمام تمرین‌ها و کوییزها رو عمومی پخش کردن تا هر کسی بتونه رایگان خودش رو محک بزنه.\n\nاهمیتش اینه که توی عصر جولان چت‌بات‌ها، سیستم آموزشی داره پوست میندازه تا بفهمه کی واقعاً اهل فنه و عمق ماجرا رو درک کرده و کی فقط ادای بلد بودن رو درمیاره.",
+  "date": "2026-10-14T01:23:21+00:00"
+ },
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/tatsu_hashimoto/status/2110049284456661193",
+   "domain": "x.com",
+   "author": {
+    "name": "Tatsunori Hashimoto",
+    "handle": "tatsu_hashimoto",
+    "avatar": "https://pbs.twimg.com/profile_images/1118499016386457601/RUPGxTak_200x200.png"
+   },
+   "text": "Deep learning is often taught as a sanitized collection of facts and math. But work at the frontier of AI is messy and empirical.\n\nOur new class, Deep Learning Alchemy, aims to teach the art and science of deep learning in the hands-on spirit of Language Modeling From Scratch.\n\nStudents build intuition by running experiments on small LMs, then test it through prediction quizzes: given an unseen code diff, can you predict what happens?\n\nhttps://deep-learning-alchemy.github.io/\n\nMy co-instructor @kothasuhas  and I think there's significant demand for classes that treat students as serious learners who want to be assessed for what they’ve learned, and so we're trying a new exam-heavy approach to the class (7 exams, 85% of the grade, with the remaining 15% in-person discussion assessments).\n\nWe’ve designed the class so students can use AI agents to run their experiments and do their assignment, but they then have to demonstrate that mastery on exams without access to the assignment, and any partial credit on the exam has to come through citations to the assignment, incentivizing them to know what’s in their write-up.\n\nThe same assignments and quizzes are public for anyone to try (lecture recordings will be released through @StanfordOnline  with some delay). We have some very fun assignments and quizzes covering both classic topics (like NQM, run-to-run stochasticity, and scaling laws) and new and timely topics like muP or hyperball. Made by some real experts like @TristanThrush and @wen_kaiyue \n\nTry some quizzes below!",
+   "date": 1791909926,
+   "media": [
+    {
+     "type": "image",
+     "src": "https://pbs.twimg.com/media/HUhkUnAaYAApcgy.jpg?name=orig",
+     "ratio": 1.25
+    }
+   ],
+   "links": [
+    "https://deep-learning-alchemy.github.io/"
+   ]
+  },
+  {
+   "kind": "link",
+   "url": "https://deep-learning-alchemy.github.io/",
+   "domain": "deep-learning-alchemy.github.io",
+   "title": "Stanford CS 312 | Deep Learning Alchemy",
+   "description": "Official course website for Stanford CS 312: Deep Learning Alchemy (Fall 2026), including logistics, schedule, assignments, and course materials.",
+   "image": null,
+   "site": "Stanford CS 312"
+  }
+ ],
+ "article": {
+  "title": "تاتسونوری هاشیموتو از اساتید استنفورد یه دوره خفن راه انداخته به اسم «کیمیای یادگیری عمیق» تا هوش مصنوعی رو به سبک کف‌میدونی و تجربی یاد بده",
+  "source_title": "Deep learning is often taught as a sanitized collection of facts and math. But work at the frontier of AI is messy and empirical.",
+  "body": [
+   "ببین رفیق، تاتسونوری هاشیموتو از اساتید استنفورد یه دوره خفن راه انداخته به اسم «کیمیای یادگیری عمیق» تا هوش مصنوعی رو به سبک کف‌میدونی و تجربی یاد بده. حرفش اینه که یادگیری عمیق واقعی، فرمول‌های شسته‌رفته و ریاضی محض نیست، بلکه پر از کثیف‌کاری تجربی و لمس خطاهای واقعیه. مرام جالبشون اینه که بچه‌ها برای حل تکالیف آزادن از ایجنت‌های هوش مصنوعی استفاده کنن، ولی ۸۵ درصد نمره پای هفت‌تا امتحان سفت‌وسخته که اونجا بدون هیچ کمکی باید عیار واقعی‌شون و تسلط به جزییات رو ثابت کنن. دمشون هم گرم که تمام تمرین‌ها و کوییزها رو عمومی پخش کردن تا هر کسی بتونه رایگان خودش رو محک بزنه."
+  ],
+  "why": "توی عصر جولان چت‌بات‌ها، سیستم آموزشی داره پوست میندازه تا بفهمه کی واقعاً اهل فنه و عمق ماجرا رو درک کرده و کی فقط ادای بلد بودن رو درمیاره.",
+  "tags": []
+ },
+ "updated": "2026-10-25T12:23:34+00:00",
+ "gholam_checked": "2026-10-25T12:23:34+00:00"
+}

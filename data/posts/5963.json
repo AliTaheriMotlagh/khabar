@@ -2,16 +2,23 @@
  "id": 5963,
  "url": "https://t.me/dlmehr/5963",
  "date": "2026-10-18T19:43:56+00:00",
- "edited": true,
- "views": "217",
  "text": "https://fxtwitter.com/arena/status/2111894091168682086?s=52&t=F41Qa04r48Mef_j_XjBneQ",
  "forwarded_from": null,
  "digest": false,
  "hash": "eb74b373fc54",
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/arena/status/2111894091168682086?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+  "site": "🧵 Thread • FxTwitter",
+  "title": "Arena.ai (@arena)",
+  "description": "Exciting news: DeepSeek-V4.1-Flash-20261017 (Max) by @deepseek_ai is now the #1 open model in Code Arena: WebDev, surpassing Kimi K3 (Max) at 10x lower cost!\nHighlights:\n- #1 open model, ahead of Kimi K3 (Max)\n- #12 overall with 1670 pts, ahead of Claude…",
+  "image": "https://cdn4.telesco.pe/file/Y_9P5YUCInqFdoTrxY4LlOypmBaFMXZAuZGQ3_w_cFdM_YXkQYLTyUqMEYZ1LLFSG0YLnbwXBEpkGpu3JiwPVKVfBtgtL0sjI_kbWSbdTmbIQX8MX_RX1zljyC3xkk-XLud3C96gpZJeNpWo_q3oQJUdUNf2wLCL5OIUoO_31RpRGUFIHaq8z2O3ciBFvWQLi9ghRT-rMJoVwMVcOe2dhAGLeWLHpi7teRAwqvdBM5rMYwrenP36sKo32FfufMK0sShX__TqYIHXlRbFBe_5X-YWsdwzLloKFp2Pivg_cfIIcogrID_HJXKR4mvh3OyrI7WJ7OmcK-6ttm3jNlUUpA.jpg"
+ },
  "gholam": {
   "text": "رفیق، بچه‌های دیپ‌سیک دوباره گل کاشتن و مدل جدیدشون یعنی DeepSeek-V4.1-Flash رسماً رتبه اول مدل‌های متن‌باز رو توی بنچمارک توسعه وب کد آرنا مال خودش کرد. این شاهکار تازه نفس با ۱۶۷۰ امتیاز، نه‌تنها رقیب سرسختش کیمی K3 رو جا گذاشته، بلکه جلوتر از کلود اوپوس ۵ ایستاده و فاصله‌ش با نسخه تاپ GPT-6 هم فقط در حد ۱۰ امتیازه. برگ برنده اصلیش هم اینجاست که با هزینه ده برابر کمتر و فقط با ۳۰ سنت تا ۱.۲ دلار برای هر میلیون توکن، هم خروجی سریع‌تر و تر و تمیزتری تحویل می‌ده و هم هوای جیب برنامه‌نویس‌ها رو حسابی داره.\n\nاهمیتش اینه که نشون می‌ده مدل‌های متن‌باز دارن با کسری از هزینه، پا به پای گردن‌کلفت‌ترین هوش‌های مصنوعی انحصاری دنیا می‌تازن و بازی رو عوض می‌کنن.",
   "date": "2026-10-18T19:44:14+00:00"
  },
+ "gholam_checked": "2026-10-24T23:11:44+00:00",
  "links": [
   {
    "kind": "tweet",
@@ -83,18 +90,6 @@
    }
   }
  ],
- "media": [],
- "preview": {
-  "url": "https://fxtwitter.com/arena/status/2111894091168682086?s=52&t=F41Qa04r48Mef_j_XjBneQ",
-  "site": "🧵 Thread • FxTwitter",
-  "title": "Arena.ai (@arena)",
-  "description": "Exciting news: DeepSeek-V4.1-Flash-20261017 (Max) by @deepseek_ai is now the #1 open model in Code Arena: WebDev, surpassing Kimi K3 (Max) at 10x lower cost!\nHighlights:\n- #1 open model, ahead of Kimi K3 (Max)\n- #12 overall with 1670 pts, ahead of Claude…",
-  "image": {
-   "src": "media/5963/preview.webp",
-   "width": 438,
-   "height": 800
-  }
- },
  "article": {
   "title": "بچه‌های دیپ‌سیک دوباره گل کاشتن و مدل جدیدشون یعنی DeepSeek-V4.1-Flash رسماً رتبه اول مدل‌های متن‌باز رو توی بنچمارک توسعه وب کد آرنا مال خودش کرد",
   "source_title": "Exciting news: DeepSeek-V4.1-Flash-20261017 (Max) by @deepseek_ai is now the #1 open model in Code Arena: WebDev, surpassing Kimi K3 (Max)…",
@@ -106,6 +101,5 @@
    "چین"
   ]
  },
- "updated": "2026-10-24T23:11:44+00:00",
- "gholam_checked": "2026-10-24T23:11:44+00:00"
+ "updated": "2026-10-25T11:54:08+00:00"
 }

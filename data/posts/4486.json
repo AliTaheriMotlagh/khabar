@@ -1,0 +1,57 @@
+{
+ "id": 4486,
+ "url": "https://t.me/dlmehr/4486",
+ "date": "2026-07-30T21:57:06+00:00",
+ "text": "https://fxtwitter.com/friend/status/2082827641338658873/video/1?s=52",
+ "forwarded_from": null,
+ "digest": false,
+ "hash": "195e84777091",
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/friend/status/2082827641338658873/video/1?s=52",
+  "site": "FxTwitter",
+  "title": "friend (@friend)",
+  "description": "Introducing friend.",
+  "image": null
+ },
+ "gholam": {
+  "text": "ببین، اکانت «فرند» با یه ویدیوی کوتاه خودش را معرفی کرده و حرفش خیلی جمع‌وجوره: «فرند را معرفی می‌کنیم.» فعلاً از خود محصول یا قابلیت‌هاش توضیح بیشتری نداده‌اند؛ بیشتر یه معرفی اولیه و سرراست است.",
+  "date": "2026-07-30T22:01:56+00:00"
+ },
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/friend/status/2082827641338658873",
+   "domain": "x.com",
+   "author": {
+    "name": "friend",
+    "handle": "friend",
+    "avatar": "https://pbs.twimg.com/profile_images/2054299479847911424/1qFJOhwT_200x200.jpg"
+   },
+   "text": "Introducing friend.",
+   "date": 1785419781,
+   "media": [
+    {
+     "type": "video",
+     "src": "https://video.twimg.com/amplify_video/2082827103771529216/vid/avc1/960x720/i-zZ0wVEvThutwHD.mp4?tag=29",
+     "poster": "https://pbs.twimg.com/amplify_video_thumb/2082827103771529216/img/A7fSxtn89qCsjh0W.jpg",
+     "ratio": 0.75,
+     "duration": 54.333,
+     "gif": false
+    }
+   ],
+   "links": []
+  }
+ ],
+ "article": {
+  "title": "اکانت «فرند» با یه ویدیوی کوتاه خودش را معرفی کرده و حرفش خیلی جمع‌وجوره: «فرند را معرفی می‌کنیم.» فعلاً از خود محصول یا قابلیت‌هاش توضیح بیشتری نداده‌اند؛ بیشتر یه معرفی اولیه و سرراست است",
+  "source_title": "Introducing friend.",
+  "body": [
+   "ببین، اکانت «فرند» با یه ویدیوی کوتاه خودش را معرفی کرده و حرفش خیلی جمع‌وجوره: «فرند را معرفی می‌کنیم.» فعلاً از خود محصول یا قابلیت‌هاش توضیح بیشتری نداده‌اند؛ بیشتر یه معرفی اولیه و سرراست است."
+  ],
+  "why": null,
+  "tags": []
+ },
+ "updated": "2026-10-25T12:31:36+00:00",
+ "gholam_checked": "2026-10-25T12:31:36+00:00"
+}

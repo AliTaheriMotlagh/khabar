@@ -1,0 +1,72 @@
+{
+ "id": 4922,
+ "url": "https://t.me/dlmehr/4922",
+ "date": "2026-08-25T02:59:32+00:00",
+ "text": "https://fxtwitter.com/quxiaoyin/status/2091906740409553036?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+ "forwarded_from": null,
+ "digest": false,
+ "hash": "5cc7a171bc3d",
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/quxiaoyin/status/2091906740409553036?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+  "site": "🧵 Thread • FxTwitter",
+  "title": "Xiaoyin Qu (@quxiaoyin)",
+  "description": "I ran the same task on Claude Code and DeepSeek's new agent harness. One cost $150. The other cost $2.\nToday we're launching http://AgentSky.dev (@agentsky_dev), the \"OpenRouter for Agents\" — one API → Claude Code, Codex, DeepSeek, Kimi, OpenCode, and every…",
+  "image": null
+ },
+ "gholam": {
+  "text": "رفیق، یه بنده خدایی به اسم ژیائوین یه تسکِ کاملاً یکسان رو داده دست ابزارهای برنامه‌نویسیِ کلود کد و دیپ‌سیک، که تهش اولی ۱۵۰ دلار خرج رو دستش گذاشته و دومی با ۲ دلار کارو جمع کرده! همین ماجرا باعث شده بیان سرویسی به اسم ایجنت‌اسکای رو رو کنن که در واقع نقش اوپن‌روتر رو برای ایجنت‌ها بازی می‌کنه و با یه دونه API، دستت رو به کلود کد، کودکس، دیپ‌سیک و کیمی می‌رسونه. آبجی گلم، یه محیط تستی هم درست کردن که می‌تونی ایجنت‌ها رو با ابزارهای واقعی مثل گیت‌هاب بندازی به جون هم و سرعت و هزینه و مصرف توکنشونو شاخ‌به‌شاخ با هم بسنجی.\n\nاهمیتش اینه که دیگه لازم نیست چشم‌بسته برای ابزارهای گرون‌قیمت پول حروم کنی و می‌تونی ارزون‌ترین و فرزترین ایجنت هوش مصنوعی رو برای کارت گلچین کنی.",
+  "date": "2026-08-25T02:59:44+00:00"
+ },
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/quxiaoyin/status/2091906740409553036",
+   "domain": "x.com",
+   "author": {
+    "name": "Xiaoyin Qu",
+    "handle": "quxiaoyin",
+    "avatar": "https://pbs.twimg.com/profile_images/1683592007875436544/P0kykGvV_200x200.jpg"
+   },
+   "text": "I ran the same task on Claude Code and DeepSeek's new agent harness. One cost $150. The other cost $2.\n Today we're launching http://AgentSky.dev (@agentsky_dev), the \"OpenRouter for Agents\" — one API → Claude Code, Codex, DeepSeek, Kimi, OpenCode, and every major agent in the cloud.  \nAnd Agent Playground on top: race them on your own task, with your real tools (GitHub, Gmail, more), side by side in a browser: time, cost, tokens burnt.  \n\nGuess which one was $2.",
+   "date": 1787584407,
+   "media": [
+    {
+     "type": "video",
+     "src": "https://video.twimg.com/amplify_video/2091906447902916608/vid/avc1/1280x720/baTQO44HxaoDBwEC.mp4?tag=29",
+     "poster": "https://pbs.twimg.com/amplify_video_thumb/2091906447902916608/img/GdKEX7sTIQxEZ8LG.jpg",
+     "ratio": 0.5625,
+     "duration": 67.548,
+     "gif": false
+    }
+   ],
+   "links": [
+    "http://AgentSky.dev"
+   ]
+  },
+  {
+   "kind": "link",
+   "url": "https://agentsky.dev/",
+   "domain": "agentsky.dev",
+   "title": "AgentSky — Every agent, one place",
+   "description": "Every agent, like Claude Code, Codex and Hermes, in one place. Use them in your browser, through the API, or in any channel like Slack.",
+   "image": "https://agentsky.dev/opengraph-image.png",
+   "site": "AgentSky"
+  }
+ ],
+ "article": {
+  "title": "یه بنده خدایی به اسم ژیائوین یه تسکِ کاملاً یکسان رو داده دست ابزارهای برنامه‌نویسیِ کلود کد و دیپ‌سیک، که تهش اولی ۱۵۰ دلار خرج رو دستش گذاشته و دومی با ۲ دلار کارو جمع کرده",
+  "source_title": "I ran the same task on Claude Code and DeepSeek's new agent harness. One cost $150. The other cost $2.",
+  "body": [
+   "رفیق، یه بنده خدایی به اسم ژیائوین یه تسکِ کاملاً یکسان رو داده دست ابزارهای برنامه‌نویسیِ کلود کد و دیپ‌سیک، که تهش اولی ۱۵۰ دلار خرج رو دستش گذاشته و دومی با ۲ دلار کارو جمع کرده! همین ماجرا باعث شده بیان سرویسی به اسم ایجنت‌اسکای رو رو کنن که در واقع نقش اوپن‌روتر رو برای ایجنت‌ها بازی می‌کنه و با یه دونه API، دستت رو به کلود کد، کودکس، دیپ‌سیک و کیمی می‌رسونه. آبجی گلم، یه محیط تستی هم درست کردن که می‌تونی ایجنت‌ها رو با ابزارهای واقعی مثل گیت‌هاب بندازی به جون هم و سرعت و هزینه و مصرف توکنشونو شاخ‌به‌شاخ با هم بسنجی."
+  ],
+  "why": "دیگه لازم نیست چشم‌بسته برای ابزارهای گرون‌قیمت پول حروم کنی و می‌تونی ارزون‌ترین و فرزترین ایجنت هوش مصنوعی رو برای کارت گلچین کنی.",
+  "tags": [
+   "آنتروپیک",
+   "چین",
+   "کدنویسی"
+  ]
+ },
+ "updated": "2026-10-25T12:29:17+00:00",
+ "gholam_checked": "2026-10-25T12:29:17+00:00"
+}

@@ -2,16 +2,23 @@
  "id": 5903,
  "url": "https://t.me/dlmehr/5903",
  "date": "2026-10-15T02:26:36+00:00",
- "edited": true,
- "views": "139",
  "text": "https://fxtwitter.com/steve8708/status/2110401500044472729?s=52&t=F41Qa04r48Mef_j_XjBneQ",
  "forwarded_from": null,
  "digest": false,
  "hash": "b4ff98b7a90b",
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/steve8708/status/2110401500044472729?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+  "site": "🧵 Thread • FxTwitter",
+  "title": "Steve (Builder.io) (@Steve8708)",
+  "description": "Introducing Agent-Native: an open-source framework for building agentic apps.\nAgents love walls of text. But humans don't.\nAn agentic app let's you interact with agents through a visual interface. Engage with agents visually, via text, or both at once.…",
+  "image": null
+ },
  "gholam": {
   "text": "رفیق، قضیه از این قراره که بچه‌های Builder.io یه فریم‌ورک متن‌باز جدید به اسم Agent-Native رو دادن بیرون که فعلاً تو فاز بتائه. حرف حسابشون اینه که این ایجنت‌های هوش مصنوعی عاشق طومار نوشتن و دیوارهای متنی‌ان، اما ما آدما حوصلمون سر میره و ارتباط چشمی و بصری رو ترجیح می‌دیم. این ابزار به برنامه‌نویسا اجازه میده برنامه‌هایی بسازن که کاربر بتونه هم‌زمان با تصویر، متن یا جفتش با ایجنت‌ها دمخور بشه و کاراشو جلو ببره. خلاصه قراره تعامل با ایجنت‌ها رو از اون حالت خشک چت‌باکسی دربیارن و بندازن توی یه محیط کاملاً بصری و تروتمیز.\n\nچرا مهمه؟ چون ارتباط با هوش مصنوعی رو از اون خوندن متن‌های طولانی و خسته‌کننده نجات میده و تجربه کاربری رو صد پله روون‌تر می‌کنه.",
   "date": "2026-10-15T02:26:48+00:00"
  },
+ "gholam_checked": "2026-10-24T23:35:35+00:00",
  "links": [
   {
    "kind": "tweet",
@@ -46,14 +53,6 @@
    "links": []
   }
  ],
- "media": [],
- "preview": {
-  "url": "https://fxtwitter.com/steve8708/status/2110401500044472729?s=52&t=F41Qa04r48Mef_j_XjBneQ",
-  "site": "🧵 Thread • FxTwitter",
-  "title": "Steve (Builder.io) (@Steve8708)",
-  "description": "Introducing Agent-Native: an open-source framework for building agentic apps.\nAgents love walls of text. But humans don't.\nAn agentic app let's you interact with agents through a visual interface. Engage with agents visually, via text, or both at once.…",
-  "image": null
- },
  "article": {
   "title": "قضیه از این قراره که بچه‌های Builder.io یه فریم‌ورک متن‌باز جدید به اسم Agent-Native رو دادن بیرون که فعلاً تو فاز بتائه",
   "source_title": "Introducing Agent-Native: an open-source framework for building agentic apps.",
@@ -63,6 +62,5 @@
   "why": "چون ارتباط با هوش مصنوعی رو از اون خوندن متن‌های طولانی و خسته‌کننده نجات میده و تجربه کاربری رو صد پله روون‌تر می‌کنه.",
   "tags": []
  },
- "updated": "2026-10-24T23:35:35+00:00",
- "gholam_checked": "2026-10-24T23:35:35+00:00"
+ "updated": "2026-10-25T11:54:11+00:00"
 }

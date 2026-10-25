@@ -2,16 +2,23 @@
  "id": 5941,
  "url": "https://t.me/dlmehr/5941",
  "date": "2026-10-17T03:45:12+00:00",
- "edited": true,
- "views": "214",
  "text": "https://fxtwitter.com/yucheng__shi/status/2110926888319517119?s=52&t=F41Qa04r48Mef_j_XjBneQ",
  "forwarded_from": null,
  "digest": false,
  "hash": "b51555a0e248",
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/yucheng__shi/status/2110926888319517119?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+  "site": "🧵 Thread • FxTwitter",
+  "title": "Yucheng Shi (@Yucheng__Shi)",
+  "description": "We used an agent to help train a stronger successor. Then we used that successor to help train the next.\nOur new paper, Terminal-RSI, studies this recursive self-improvement loop: learn from verified successes, improve through practice, and repeat.\nAcross…",
+  "image": "https://cdn4.telesco.pe/file/dH0RQowncCibLh8zQxcc5THD27-x3nV1eqQrmpVmeDUCKSk7MFPFNJVf91aK6EyulX3X7Ynaf4QRQJrOox11bpx2nb-eTVXEtb0uA6Q1u2voVoEQ7Cp-bjvWb0auCrIWm5FXwgnn-FgJVfu_HXFW64HWPEwJXtmBHPZ09oIaiKKXVIgRupif6TuSH5gCIR6-9zonBAtb7cEq1HaCPEyc74YsKUAN1aZvPIcwcE2PXh2R6c1RRD6ukRJCLU6BUOxIl1iBcXZVY52a5Gmq9d5hSlVy6jJ7qV2hv4Q420AxguwxAVamHApT2MxRkkR-ieVppwV9emYJFllKdD6Tzd5HJw.jpg"
+ },
  "gholam": {
   "text": "رفیق، دانشمندا اومدن یه حرکتی زدن که هوش مصنوعی خودش بیفته به جون خودش و نسل بعدی‌شو قوی‌تر بار بیاره. قضیه از این قراره که توی پروژه Terminal-RSI، مدل از موفقیت‌های قبلیش درس می‌گیره و هی با تمرین، خودشو ارتقا میده تا یه چرخه خودبهبودی درست‌وحسابی راه بيفته. کار تا جایی پیش رفته که فقط توی دو دور تمرین، موفقیت یه مدل ۲۷ میلیاردی توی تست ترمینال از ۵۱.۷ درصد رسیده به ۸۶.۵ درصد و تو نسخه سنگین‌ترش هم از صفر به ۱۹.۸ درصد پرواز کرده و رکورد زده. حالا تیم یوچنگ شی دنبال اینه که ببینه این پیشرفت زنجیره‌ای تا کجا قراره بتازه و دقیقاً کجا ترمز می‌کشه.\n\nاهمیتش اینه که اثبات می‌کنه هوش مصنوعی حتی بدون نیاز به داده‌های جدیدِ انسانی، می‌تونه با تکیه بر خودش جهش بزنه و پله‌های قدرت رو تنهایی بالا بره.",
   "date": "2026-10-17T03:45:30+00:00"
  },
+ "gholam_checked": "2026-10-24T23:11:47+00:00",
  "links": [
   {
    "kind": "tweet",
@@ -61,18 +68,6 @@
    "text": "Computer Science > Artificial Intelligence\nTitle:Terminal-RSI: Recursive Self-Improving Terminal Agents via Recursive Self-Rewrite and Policy-Refine\nView PDF HTML (experimental)\n            Abstract:Converting verifier outcomes into useful policy updates and partial progress into complete task resolution is crucial for terminal agents. We present Terminal-RSI, which alternates Recursive Self-Rewrite (RSR) of verified trajectories with critic-inheriting Recursive Policy-Refine (RPR). We formulate Turn-Boundary Skip-Observation GAE (TB-GAE) to retain token-specific baselines while applying decay across interaction turns. Family Dense Reward (FDR) calibrates semantic progress across task families; Success-Prioritized Reward (SPR) separates strict success from bounded partial credit. A Warm-up Critic Model, recursive critic handoff, and stage-specific learning rates coordinate the two refinement phases. The five-stage sequence from Qwen3.8-27B base model through RSR-1, RPR-1, RSR-2, and RPR-2 yields Terminal-RSI-27B: 19.84% on Terminal-Bench 4.0, 86.52% on Terminal-Bench 2.1, 16.95% on Terminal-Bench 3.0, and 79.00% on Terminal-Bench Hard. On LHTB, process reward rises from 0.21 to 0.37 and strict completion from 0/46 to 5/46; SWR100 success doubles from 3.00% to 6.00%. By recursively coupling verified trajectory rewriting with critic-inheriting policy refinement, each retained stage consolidates discovered behaviors and progressively advances the agent from partial local repairs to strict terminal verification.\n    \nBibliographic and Citation Tools\nCode, Data and Media Associated with this Article\nDemos\nRecommenders and Search Tools\narXivLabs: experimental projects with community collaborators\narXivLabs is a framework that allows collaborators to develop and share new arXiv features directly on our website.\nBoth individuals and organizations that work with arXivLabs have embraced and accepted our values of openness, community, excellence, and user data privacy. arXiv is committed to these values and only works with partners that adhere to them.\nHave an idea for a project that will add value for arXiv's community? Learn more about arXivLabs."
   }
  ],
- "media": [],
- "preview": {
-  "url": "https://fxtwitter.com/yucheng__shi/status/2110926888319517119?s=52&t=F41Qa04r48Mef_j_XjBneQ",
-  "site": "🧵 Thread • FxTwitter",
-  "title": "Yucheng Shi (@Yucheng__Shi)",
-  "description": "We used an agent to help train a stronger successor. Then we used that successor to help train the next.\nOur new paper, Terminal-RSI, studies this recursive self-improvement loop: learn from verified successes, improve through practice, and repeat.\nAcross…",
-  "image": {
-   "src": "media/5941/preview.webp",
-   "width": 579,
-   "height": 800
-  }
- },
  "article": {
   "title": "دانشمندا اومدن یه حرکتی زدن که هوش مصنوعی خودش بیفته به جون خودش و نسل بعدی‌شو قوی‌تر بار بیاره",
   "source_title": "We used an agent to help train a stronger successor. Then we used that successor to help train the next.",
@@ -82,6 +77,5 @@
   "why": "اثبات می‌کنه هوش مصنوعی حتی بدون نیاز به داده‌های جدیدِ انسانی، می‌تونه با تکیه بر خودش جهش بزنه و پله‌های قدرت رو تنهایی بالا بره.",
   "tags": []
  },
- "updated": "2026-10-24T23:11:47+00:00",
- "gholam_checked": "2026-10-24T23:11:47+00:00"
+ "updated": "2026-10-25T11:54:10+00:00"
 }

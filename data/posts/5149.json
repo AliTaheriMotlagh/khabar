@@ -1,0 +1,71 @@
+{
+ "id": 5149,
+ "url": "https://t.me/dlmehr/5149",
+ "date": "2026-09-05T00:33:22+00:00",
+ "text": "https://fxtwitter.com/nvidiaai/status/2096032566310789528?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+ "forwarded_from": null,
+ "digest": false,
+ "hash": "cd907ff73083",
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/nvidiaai/status/2096032566310789528?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+  "site": "FxTwitter",
+  "title": "NVIDIA AI (@NVIDIAAI)",
+  "description": "Congrats to our researchers for exceeding the gold medal threshold on the International Olympiad in Informatics (IOI) 2026 problem set\n🥇\nOur fine-tuned Nemotron model scored 535.4 out of 600, as graded by the IOI team — higher than the top-scoring human…",
+  "image": null
+ },
+ "gholam": {
+  "text": "ببین رفیق، بچه‌های انویدیا با هوش مصنوعیشون یه گردوخاکی به پا کردن که نگو و نپرس! مدل جدید نموترون (Nemotron) این غول فناوری رفته سراغ سوال‌های المپیاد جهانی کامپیوتر (IOI 2026) تو ازبکستان و از ۶۰۰ نمره ممکن، نمره خفن ۵۳۵.۴ رو دشت کرده که نه تنها حد نصاب مدال طلا رو رد کرده، بلکه رکورد خفن‌ترین نخبه انسانی مسابقات رو هم شکسته. ماجرا هم کاملاً جوانمردانه و طبق اصول بوده؛ یعنی این مدل بدون دسترسی به اینترنت، با همون محدودیت زمانی و شرایط سختگیرانه بچه‌های المپیادی توی پلتفرم اصلی رقابت کرده. خلاصه کار به جایی رسیده که سیستم‌های هوشمند دارن سخت‌ترین مسائل برنامه‌نویسی و الگوریتم‌های پیچیده دنیا رو یکی پس از دیگری درو می‌کنن.\n\nچرا مهمه؟ چون نشون می‌ده هوش مصنوعی دیگه از مرحله کارهای روزمره رد شده و تو تفکر عمیق و منطق ناب برنامه‌نویسی، داره بهترین مغزهای دنیا رو هم پشت سر می‌ذاره.",
+  "date": "2026-09-05T00:33:33+00:00"
+ },
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/NVIDIAAI/status/2096032566310789528",
+   "domain": "x.com",
+   "author": {
+    "name": "NVIDIA AI",
+    "handle": "NVIDIAAI",
+    "avatar": "https://pbs.twimg.com/profile_images/2055340743552831488/me-KUIug_200x200.png"
+   },
+   "text": "Congrats to our researchers for exceeding the gold medal threshold on the International Olympiad in Informatics (IOI) 2026 problem set 🥇\n\nOur fine-tuned Nemotron model scored 535.4 out of 600, as graded by the IOI team — higher than the top-scoring human participant.\n\nThe team competed unofficially in Uzbekistan, where the International Technical Committee supervised the human contestants. The model had no internet access and faced the same time limits and submission constraints, using the same platform in parallel with the official competition.\n\nRead more in the technical report: https://arxiv.org/abs/2609.02849",
+   "date": 1788568080,
+   "media": [
+    {
+     "type": "video",
+     "src": "https://video.twimg.com/tweet_video/HRaZxAMbEAAKSlR.mp4",
+     "poster": "https://pbs.twimg.com/tweet_video_thumb/HRaZxAMbEAAKSlR.jpg",
+     "ratio": 1.0,
+     "duration": 0,
+     "gif": true
+    }
+   ],
+   "links": [
+    "https://arxiv.org/abs/2609.02849"
+   ]
+  },
+  {
+   "kind": "link",
+   "url": "https://arxiv.org/abs/2609.02849",
+   "domain": "arxiv.org",
+   "title": "Post-Training Language Models for Gold-Medal Performance in Coding Competitions",
+   "description": "Competitive programming has become a key test of large language model reasoning, with international competitions such as IOI and ICPC representing its most challenging settings. We present an end-to-end specialization pipeline combining large-scale problem curation, synthetic reasoning traces, supervised fine-tuning (SFT), and reinforcement learning (RL). Using 22,000 curated problems, we train Ne",
+   "image": "https://arxiv.org/static/browse/0.3.4/images/arxiv-logo-fb.png",
+   "site": "arXiv.org"
+  }
+ ],
+ "article": {
+  "title": "بچه‌های انویدیا با هوش مصنوعیشون یه گردوخاکی به پا کردن که نگو و نپرس",
+  "source_title": "Congrats to our researchers for exceeding the gold medal threshold on the International Olympiad in Informatics (IOI) 2026 problem set 🥇",
+  "body": [
+   "ببین رفیق، بچه‌های انویدیا با هوش مصنوعیشون یه گردوخاکی به پا کردن که نگو و نپرس! مدل جدید نموترون (Nemotron) این غول فناوری رفته سراغ سوال‌های المپیاد جهانی کامپیوتر (IOI 2026) تو ازبکستان و از ۶۰۰ نمره ممکن، نمره خفن ۵۳۵.۴ رو دشت کرده که نه تنها حد نصاب مدال طلا رو رد کرده، بلکه رکورد خفن‌ترین نخبه انسانی مسابقات رو هم شکسته. ماجرا هم کاملاً جوانمردانه و طبق اصول بوده؛ یعنی این مدل بدون دسترسی به اینترنت، با همون محدودیت زمانی و شرایط سختگیرانه بچه‌های المپیادی توی پلتفرم اصلی رقابت کرده. خلاصه کار به جایی رسیده که سیستم‌های هوشمند دارن سخت‌ترین مسائل برنامه‌نویسی و الگوریتم‌های پیچیده دنیا رو یکی پس از دیگری درو می‌کنن."
+  ],
+  "why": "چون نشون می‌ده هوش مصنوعی دیگه از مرحله کارهای روزمره رد شده و تو تفکر عمیق و منطق ناب برنامه‌نویسی، داره بهترین مغزهای دنیا رو هم پشت سر می‌ذاره.",
+  "tags": [
+   "انویدیا",
+   "کدنویسی"
+  ]
+ },
+ "updated": "2026-10-25T12:27:52+00:00",
+ "gholam_checked": "2026-10-25T12:27:52+00:00"
+}

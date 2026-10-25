@@ -1,0 +1,77 @@
+{
+ "id": 5859,
+ "url": "https://t.me/dlmehr/5859",
+ "date": "2026-10-13T15:30:49+00:00",
+ "text": "https://fxtwitter.com/kimmonismus/status/2110023838264156496?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+ "forwarded_from": null,
+ "digest": false,
+ "hash": "af7361268a3d",
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/kimmonismus/status/2110023838264156496?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+  "site": "🧵 Thread • FxTwitter",
+  "title": "Chubby ♨️ (@kimmonismus)",
+  "description": "Fable 5.5 has appeared in Azure’s model API, according to LiteLLM.\nFollowing the strong performance of Meta Muse Wonder Full and the upcoming Gemini 4, everything is probably being prepared for Anthropic's IPO and subsequent rollout.\nQuoting alex getman…",
+  "image": "https://cdn4.telesco.pe/file/s2TaYsERRu193u1cIoVJ7k8icnGlqXrUNZ01R2JmXG8HkM6GX1LTa5Olg1HF4GVle2XBvpe0tIEF9Jo2DLrT1yFvRtDVPrxqJjghjtbNqJGDBu4cuGRwiQRA82tEX8f24vycdyic_T5xddrK4tzTeNCrMNSF1gL6Zyt-ZxneeEd9xZxdE-VyZpGaAcMGVgepWCrMsIsOdQb03p_q1d2Cz05erMsFHhC4Nl0F_lEAb-zu9veXqO87ww1U4nBIBtnC5LxuWG7qHLru50J5GNc04vLmNXTsojw6SG0L4JokQ2LL-wkx8ebpvsPCpsXu6VTX2DGtTgSzJiOuT4PPok-zGg.jpg"
+ },
+ "gholam": {
+  "text": "رفیق، خبر رسیده که مدل Fable 5.5 سر و کله‌ش توی ای‌پی‌آی مایکروسافت آژور و در دسته‌بندی عمومی پیدا شده و این گاف فنی رو بچه‌های LiteLLM شکار کردن. قضیه از این قراره که بعد از گرد و خاک مدل Meta Muse Wonder Full و تو راه بودن جمنای ۴، رقابت توی میدون هوش مصنوعی بدجوری داغ شده. به نظر میاد دارن همه‌چیز رو پشت پرده جفت‌وجور می‌کنن تا فرش قرمز رو برای عرضه اولیه سهام (IPO) آنتروپیک و معرفی برگ‌های برنده‌ش پهن کنن.\n\nاهمیتش اینه که این تحرکات چراغ‌خاموش نشون میده غول‌های فناوری دارن برای یه زلزله اساسی و ورود به فاز تجاری سنگین‌تر توی بازار آماده میشن.",
+  "date": "2026-10-13T15:31:04+00:00"
+ },
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/kimmonismus/status/2110023838264156496",
+   "domain": "x.com",
+   "author": {
+    "name": "Chubby♨️",
+    "handle": "kimmonismus",
+    "avatar": "https://pbs.twimg.com/profile_images/1728327996375719936/RW7VBJfD_200x200.jpg"
+   },
+   "text": "Fable 5.5 has appeared in Azure’s model API, according to LiteLLM.\n\nFollowing the strong performance of Meta Muse Wonder Full and the upcoming Gemini 4, everything is probably being prepared for Anthropic's IPO and subsequent rollout.",
+   "date": 1791903860,
+   "media": [
+    {
+     "type": "image",
+     "src": "https://pbs.twimg.com/media/HUhPRkJW0AAgjeQ.jpg?name=orig",
+     "ratio": 0.7744
+    }
+   ],
+   "links": [],
+   "quote": {
+    "author": {
+     "name": "alex getman",
+     "handle": "alexgetmancom",
+     "avatar": "https://pbs.twimg.com/profile_images/2090028872683110400/hDb2_sdU_200x200.jpg"
+    },
+    "text": "🚨 Fable 5.5 appeared in Azure’s East US 2 model catalog with GenerallyAvailable status\n\nhttps://github.com/BerriAI/litellm/commit/7dd53d6adc6213e84f62f1366ba721d09f4af992",
+    "date": 1791898425,
+    "media": [
+     {
+      "type": "image",
+      "src": "https://pbs.twimg.com/media/HUg539lWsAAZ_wY.jpg?name=orig",
+      "ratio": 0.645
+     }
+    ],
+    "links": [
+     "https://github.com/BerriAI/litellm/commit/7dd53d6adc6213e84f62f1366ba721d09f4af992"
+    ]
+   }
+  }
+ ],
+ "article": {
+  "title": "خبر رسیده که مدل Fable 5.5 سر و کله‌ش توی ای‌پی‌آی مایکروسافت آژور و در دسته‌بندی عمومی پیدا شده و این گاف فنی رو بچه‌های LiteLLM شکار کردن",
+  "source_title": "Fable 5.5 has appeared in Azure’s model API, according to LiteLLM.",
+  "body": [
+   "رفیق، خبر رسیده که مدل Fable 5.5 سر و کله‌ش توی ای‌پی‌آی مایکروسافت آژور و در دسته‌بندی عمومی پیدا شده و این گاف فنی رو بچه‌های LiteLLM شکار کردن. قضیه از این قراره که بعد از گرد و خاک مدل Meta Muse Wonder Full و تو راه بودن جمنای ۴، رقابت توی میدون هوش مصنوعی بدجوری داغ شده. به نظر میاد دارن همه‌چیز رو پشت پرده جفت‌وجور می‌کنن تا فرش قرمز رو برای عرضه اولیه سهام (IPO) آنتروپیک و معرفی برگ‌های برنده‌ش پهن کنن."
+  ],
+  "why": "این تحرکات چراغ‌خاموش نشون میده غول‌های فناوری دارن برای یه زلزله اساسی و ورود به فاز تجاری سنگین‌تر توی بازار آماده میشن.",
+  "tags": [
+   "مایکروسافت",
+   "آنتروپیک",
+   "گوگل"
+  ]
+ },
+ "updated": "2026-10-25T12:23:39+00:00",
+ "gholam_checked": "2026-10-25T12:23:39+00:00"
+}

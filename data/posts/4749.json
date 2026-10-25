@@ -1,0 +1,56 @@
+{
+ "id": 4749,
+ "url": "https://t.me/dlmehr/4749",
+ "date": "2026-08-14T15:22:15+00:00",
+ "text": "https://fxtwitter.com/theahmadosman/status/2088280636658270284?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+ "forwarded_from": null,
+ "digest": false,
+ "hash": "9a996f5ea00e",
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/theahmadosman/status/2088280636658270284?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+  "site": "🧵 Thread • FxTwitter",
+  "title": "Ahmad (@TheAhmadOsman)",
+  "description": "Qwen 3.8 27B weights and benchmarks are now out\nThis thing in full precision would fit on a single RTX PRO 6000 and beats Opus 4.6 Max in several benchmarks\nSoTA at home",
+  "image": "https://cdn4.telesco.pe/file/VYbXIFt4vM5lqWtsKxZ8dbPGsK11-9CTV1o7AdpeuXAG4xB_t6OUIHU14nXif2TscGOB2LD38GJE9G2JNKnbl2rmdAZRG-Y8yF09n3-ItgHp3Oz_vpkHxnn-_UW_e12k1JKhq_C_A7LYE79USfU1DLqDA6CCMvbFFAXSDqqyfT5OVrs7Zb2gvmfwKBptado4wm11Zt9iiahrToU-VF8P1aI2sRJZrgDgq8NSnQ0H4ah1Q2YHSbHf4SDYLVdJ-GL2hznd3yzR6ZPTNeuVMoUHhUsoGnKvuisSFOuaH-db-om0eS_b1dYs0JT8dx9kat2Fr3gkOklNAbUA7y9SKXWj4A.jpg"
+ },
+ "gholam": {
+  "text": "ببین رفیق، وزن‌ها و بنچمارک‌های مدل هوش مصنوعی جدید Qwen 3.8 27B رسماً منتشر شده و حسابی گردوخاک به پا کرده. نکته جذاب و برگ‌ریزونش اینه که با دقت کامل یعنی Full Precision روی یه دونه کارت گرافیک RTX PRO 6000 جا میشه و کار می‌کنه. از اون خفن‌تر اینکه توی چندتا بنچمارک مختلف حتی تونسته غولی مثل Opus 4.6 Max رو هم شکست بده و لوله کنه. خلاصه قضیه اینه که حالا پیشرفته‌ترین سطح فناوری روز دنیا رو میشه با یه سخت‌افزار شخصی و جمع‌وجور توی خونه اجرا کرد.\n\nاهمیتش اینه که وابستگی کاربرها به سرورهای غول‌پیکر و سرویس‌های اشتراکی گرون‌قیمت کمتر میشه و قدرت بالاترین مدل‌های هوش مصنوعی میاد دم دست خودمون.",
+  "date": "2026-08-14T15:22:26+00:00"
+ },
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/TheAhmadOsman/status/2088280636658270284",
+   "domain": "x.com",
+   "author": {
+    "name": "Ahmad",
+    "handle": "TheAhmadOsman",
+    "avatar": "https://pbs.twimg.com/profile_images/1831406651829559296/iMbSOxdP_200x200.jpg"
+   },
+   "text": "Qwen 3.8 27B weights and benchmarks are now out\n\nThis thing in full precision would fit on a single RTX PRO 6000 and beats Opus 4.6 Max in several benchmarks\n\nSoTA at home",
+   "date": 1786719876,
+   "media": [
+    {
+     "type": "image",
+     "src": "https://pbs.twimg.com/media/HPsP4YYW4AAl2FW.jpg?name=orig",
+     "ratio": 1.4085
+    }
+   ],
+   "links": []
+  }
+ ],
+ "article": {
+  "title": "وزن‌ها و بنچمارک‌های مدل هوش مصنوعی جدید Qwen 3.8 27B رسماً منتشر شده و حسابی گردوخاک به پا کرده",
+  "source_title": "Qwen 3.8 27B weights and benchmarks are now out",
+  "body": [
+   "ببین رفیق، وزن‌ها و بنچمارک‌های مدل هوش مصنوعی جدید Qwen 3.8 27B رسماً منتشر شده و حسابی گردوخاک به پا کرده. نکته جذاب و برگ‌ریزونش اینه که با دقت کامل یعنی Full Precision روی یه دونه کارت گرافیک RTX PRO 6000 جا میشه و کار می‌کنه. از اون خفن‌تر اینکه توی چندتا بنچمارک مختلف حتی تونسته غولی مثل Opus 4.6 Max رو هم شکست بده و لوله کنه. خلاصه قضیه اینه که حالا پیشرفته‌ترین سطح فناوری روز دنیا رو میشه با یه سخت‌افزار شخصی و جمع‌وجور توی خونه اجرا کرد."
+  ],
+  "why": "وابستگی کاربرها به سرورهای غول‌پیکر و سرویس‌های اشتراکی گرون‌قیمت کمتر میشه و قدرت بالاترین مدل‌های هوش مصنوعی میاد دم دست خودمون.",
+  "tags": [
+   "چین"
+  ]
+ },
+ "updated": "2026-10-25T12:30:17+00:00",
+ "gholam_checked": "2026-10-25T12:30:17+00:00"
+}

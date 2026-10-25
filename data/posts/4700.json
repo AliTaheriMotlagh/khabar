@@ -1,0 +1,71 @@
+{
+ "id": 4700,
+ "url": "https://t.me/dlmehr/4700",
+ "date": "2026-08-11T18:17:14+00:00",
+ "text": "https://fxtwitter.com/cheatyyyy/status/2087186267943678169?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+ "forwarded_from": null,
+ "digest": false,
+ "hash": "2312271ab770",
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/cheatyyyy/status/2087186267943678169?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+  "site": "FxTwitter",
+  "title": "cheaty (@cheatyyyy)",
+  "description": "Fable 5's reasoning tokens are technically 'distillation-proof', because no other Claude model can reconstruct them\nQuoting Lisan al Gaib (@scaling01)\nraw GPT-5.6-Sol thinking traces\nOpenAI literally did The Office meme:\n\"Why use many words when few words…",
+  "image": "https://cdn4.telesco.pe/file/mcQcP4m-Rg2Olrb1Pnb__-nip3pD0itVxuA7nu5A6ywxdGWxW616u2Cbg9GFdTX0zrsMPvoLPWDJ6LmzmpwsSLF26_-ushA33p12YFgjO3tb95AMBkRTs_rSE9--vd_5lEScWMGWmtGm3osjM-0f8y01yYjCnN30mu5ffKn2ZvQsYLoPBmFZ_wCvvvu5uKCKi2PsCGAUCYRWrJyRyDXOwoIREyiMr79r8lO0ZQBRbEkAtK9I0v6xtFeY0NOdSl9YJpwauR0m6CoCQZxlZfWFdFwEvco0KL_kma4FVXo-bwisv0o6X1idsJ1PCIofl-QlHacjHB-MJZDXe-QDaw15Ng.jpg"
+ },
+ "gholam": {
+  "text": "",
+  "date": "2026-08-11T19:38:59+00:00"
+ },
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/cheatyyyy/status/2087186267943678169",
+   "domain": "x.com",
+   "author": {
+    "name": "cheaty",
+    "handle": "cheatyyyy",
+    "avatar": "https://pbs.twimg.com/profile_images/2070043998648233984/rQm1eKax_200x200.jpg"
+   },
+   "text": "Fable 5's reasoning tokens are technically 'distillation-proof', because no other Claude model can reconstruct them",
+   "date": 1786458958,
+   "media": [
+    {
+     "type": "image",
+     "src": "https://pbs.twimg.com/media/HPcsydwbIAAkZD8.jpg?name=orig",
+     "ratio": 0.3462
+    }
+   ],
+   "links": [],
+   "quote": {
+    "author": {
+     "name": "Lisan al Gaib",
+     "handle": "scaling01",
+     "avatar": "https://pbs.twimg.com/profile_images/1831493788679761920/-q9w6dzd_200x200.jpg"
+    },
+    "text": "raw GPT-5.6-Sol thinking traces\n\nOpenAI literally did The Office meme:\n\"Why use many words when few words do trick\"",
+    "date": 1786456361,
+    "media": [
+     {
+      "type": "image",
+      "src": "https://pbs.twimg.com/media/HPcivEgXsAAXvX7.jpg?name=orig",
+      "ratio": 0.2351
+     }
+    ],
+    "links": []
+   }
+  }
+ ],
+ "article": {
+  "title": "Fable 5's reasoning tokens are technically 'distillation-proof', because no other Claude model can reconstruct them",
+  "source_title": null,
+  "body": [],
+  "why": null,
+  "tags": [
+   "آنتروپیک"
+  ]
+ },
+ "updated": "2026-10-25T12:30:29+00:00",
+ "gholam_checked": "2026-10-25T12:30:29+00:00"
+}

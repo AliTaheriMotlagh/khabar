@@ -2,16 +2,23 @@
  "id": 5985,
  "url": "https://t.me/dlmehr/5985",
  "date": "2026-10-20T02:25:26+00:00",
- "edited": true,
- "views": "212",
  "text": "https://fxtwitter.com/hesamation/status/2112333656400224368?s=52&t=F41Qa04r48Mef_j_XjBneQ",
  "forwarded_from": null,
  "digest": false,
  "hash": "8ee5c56106cc",
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/hesamation/status/2112333656400224368?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+  "site": "🧵 Thread • FxTwitter",
+  "title": "ℏεsam (@Hesamation)",
+  "description": "so Sam Altman apparently told OpenAI employees that there are possibly THREE endgames for AI safety:\n1. an international nuclear-style watchdog\n2. merge all major labs into a giant org\n3. one company achieves RSI and gets so powerful it can literally “melt…",
+  "image": "https://cdn4.telesco.pe/file/jddCgDA0jLcDXcOhPtHLGb_iAxeP7a_vzEzmrXYbn2EGP4O-sAtyEvJlVWudZWfvZWgH270ThJPWNsvClSD5LDKV6TGB7Xr-dEcFjow2Z2L-UW0ojIpvjLxqJNqPA0x3essDlotPwWV6scisAMMCxUI3phujzuHJTwSpM32U_Has61vzYphO3Yn8tUwm67XnTrEGTl639DPSaIQuszt8pxsCAGthYiLJOc5akXmTKmUyUdQCjUlUHyzBCq1Rka88KcEz9u0bcttr7P-hPub-jX2ogjJgXxdyxKfsLuBaHBHe0pLR-RrcFGZ0P5s5pvOHPkkaAhE0mGYBIqzgUZ-qoA.jpg"
+ },
  "gholam": {
   "text": "ببین رفیق، قضیه از این قراره که سم آلتمن، رئیس اوپن‌ای‌آی، ظاهراً تو جمع کارمنداش گفته برای آینده و امنیت هوش مصنوعی کلاً سه تا پایان‌بندی بیشتر نداریم. حالت اول اینه که یه ناظر بین‌المللی سفت‌وسخت شبیه آژانس انرژی اتمی بیاد بالا سر کار و همه‌چیز رو رصد کنه؛ حالت دومم اینه که تمام آزمایشگاه‌های گردن‌کلفت هوش مصنوعی با هم ادغام بشن و یه تشکیلات غول‌آسا بسازن. اما سناریوی سوم که خود آلتمن هم اون رو وحشتناک و فاجعه دونسته اینه که یه شرکت تنهایی به هوش خوداصلاح‌گر برسه و اون‌قدر دست‌نیافتنی و پرزور بشه که عملاً تمام سرورها و کارت‌های گرافیک بقیه رقبا رو بسوزونه و دنیا رو دربست بگیره دستش.\n\nچرا مهمه؟ اهمیتش اینه که خودِ سردمداران این حوزه دارن اعتراف می‌کنن که آینده هوش مصنوعی یا به سمت انحصار بی‌رحمانه میره یا کنترل سنگین و جهانی که شوخی‌بردار نیست.",
   "date": "2026-10-20T02:25:44+00:00"
  },
+ "gholam_checked": "2026-10-24T23:11:41+00:00",
  "links": [
   {
    "kind": "tweet",
@@ -50,18 +57,6 @@
    "links": []
   }
  ],
- "media": [],
- "preview": {
-  "url": "https://fxtwitter.com/hesamation/status/2112333656400224368?s=52&t=F41Qa04r48Mef_j_XjBneQ",
-  "site": "🧵 Thread • FxTwitter",
-  "title": "ℏεsam (@Hesamation)",
-  "description": "so Sam Altman apparently told OpenAI employees that there are possibly THREE endgames for AI safety:\n1. an international nuclear-style watchdog\n2. merge all major labs into a giant org\n3. one company achieves RSI and gets so powerful it can literally “melt…",
-  "image": {
-   "src": "media/5985/preview.webp",
-   "width": 800,
-   "height": 442
-  }
- },
  "article": {
   "title": "قضیه از این قراره که سم آلتمن، رئیس اوپن‌ای‌آی، ظاهراً تو جمع کارمنداش گفته برای آینده و امنیت هوش مصنوعی کلاً سه تا پایان‌بندی بیشتر نداریم",
   "source_title": "so Sam Altman apparently told OpenAI employees that there are possibly THREE endgames for AI safety:",
@@ -74,6 +69,5 @@
    "امنیت"
   ]
  },
- "updated": "2026-10-24T23:11:41+00:00",
- "gholam_checked": "2026-10-24T23:11:41+00:00"
+ "updated": "2026-10-25T11:53:59+00:00"
 }

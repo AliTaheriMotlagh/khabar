@@ -1,0 +1,57 @@
+{
+ "id": 5200,
+ "url": "https://t.me/dlmehr/5200",
+ "date": "2026-09-08T17:14:14+00:00",
+ "text": "https://fxtwitter.com/rabi_guha/status/2097341708988248181",
+ "forwarded_from": "Amirreza",
+ "digest": false,
+ "hash": "64cde594f6de",
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/rabi_guha/status/2097341708988248181",
+  "site": "🧵 Thread • FxTwitter",
+  "title": "Rabi Shanker Guha (@rabi_guha)",
+  "description": "Introducing OUI-1: the first open-weights model for Generative UI\n71.7% on Generative UI Bench at 4B params. Beats Gemma 4 31B with 8× fewer active params, and scores 5.5× the base DiffusionGemma it was fine-tuned from.\nMethodology, weights, and full benchmark…",
+  "image": null
+ },
+ "gholam": {
+  "text": "ببین رفیق، بچه‌های دنیای هوش مصنوعی یه مدل تر و تمیز به اسم OUI-1 دادن بیرون که رسماً اولین مدل وزن‌باز واسه طراحی خودکار رابط کاربری یا همون Generative UI به حساب میاد. رابی گوها اعلام کرده این اعجوبه فقط با ۴ میلیارد پارامتر تونسته تو بنچمارک مخصوص این کار، امتیاز خفن ۷۱.۷ درصد رو دشت کنه. لوتی‌گری قضیه اینجاست که با ۸ برابر پارامتر فعال کمتر، زده مدل ۳۱ میلیاردی جما ۴ رو برده گوشه رینگ و کاراییش نسبت به مدل پایه‌اش یعنی دیفیوژن‌جما هم ۵.۵ برابر بهتر شده.\n\nاهمیتش اینه که توسعه‌دهنده‌ها حالا یه ابزار اوپن‌سورس و فوق‌العاده سبک و کم‌خرج دم دست دارن که می‌تونه بدون نیاز به سرورهای غول‌پیکر، رابط کاربری تر و تمیز تولید کنه.",
+  "date": "2026-09-08T17:14:24+00:00"
+ },
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/rabi_guha/status/2097341708988248181",
+   "domain": "x.com",
+   "author": {
+    "name": "Rabi Shanker Guha",
+    "handle": "rabi_guha",
+    "avatar": "https://pbs.twimg.com/profile_images/1963952175463436288/HcjljLvY_200x200.jpg"
+   },
+   "text": "Introducing OUI-1: the first open-weights model for Generative UI\n\n71.7% on Generative UI Bench at 4B params. Beats Gemma 4 31B with 8× fewer active params, and scores 5.5× the base DiffusionGemma it was fine-tuned from.\n\nMethodology, weights, and full benchmark results in the blog 👇",
+   "date": 1788880204,
+   "media": [
+    {
+     "type": "video",
+     "src": "https://video.twimg.com/amplify_video/2097341589844848640/vid/avc1/1350x720/zsknZ5nwwNtBHzVL.mp4?tag=29",
+     "poster": "https://pbs.twimg.com/amplify_video_thumb/2097341589844848640/img/jP2JZoAWXB-8ZAU0.jpg",
+     "ratio": 0.5333,
+     "duration": 15.082,
+     "gif": false
+    }
+   ],
+   "links": []
+  }
+ ],
+ "article": {
+  "title": "بچه‌های دنیای هوش مصنوعی یه مدل تر و تمیز به اسم OUI-1 دادن بیرون که رسماً اولین مدل وزن‌باز واسه طراحی خودکار رابط کاربری یا همون Generative UI به حساب میاد",
+  "source_title": "Introducing OUI-1: the first open-weights model for Generative UI",
+  "body": [
+   "ببین رفیق، بچه‌های دنیای هوش مصنوعی یه مدل تر و تمیز به اسم OUI-1 دادن بیرون که رسماً اولین مدل وزن‌باز واسه طراحی خودکار رابط کاربری یا همون Generative UI به حساب میاد. رابی گوها اعلام کرده این اعجوبه فقط با ۴ میلیارد پارامتر تونسته تو بنچمارک مخصوص این کار، امتیاز خفن ۷۱.۷ درصد رو دشت کنه. لوتی‌گری قضیه اینجاست که با ۸ برابر پارامتر فعال کمتر، زده مدل ۳۱ میلیاردی جما ۴ رو برده گوشه رینگ و کاراییش نسبت به مدل پایه‌اش یعنی دیفیوژن‌جما هم ۵.۵ برابر بهتر شده."
+  ],
+  "why": "توسعه‌دهنده‌ها حالا یه ابزار اوپن‌سورس و فوق‌العاده سبک و کم‌خرج دم دست دارن که می‌تونه بدون نیاز به سرورهای غول‌پیکر، رابط کاربری تر و تمیز تولید کنه.",
+  "tags": []
+ },
+ "updated": "2026-10-25T12:27:35+00:00",
+ "gholam_checked": "2026-10-25T12:27:35+00:00"
+}

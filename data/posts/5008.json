@@ -1,0 +1,62 @@
+{
+ "id": 5008,
+ "url": "https://t.me/dlmehr/5008",
+ "date": "2026-08-28T16:03:27+00:00",
+ "text": "https://fxtwitter.com/mark_k/status/2093341639968231572?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+ "forwarded_from": null,
+ "digest": false,
+ "hash": "1b5ac5518d8b",
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/mark_k/status/2093341639968231572?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+  "site": "🧵 Thread • FxTwitter",
+  "title": "Mark Kretschmann (@mark_k)",
+  "description": "Google Research just published a fascinating paper on self-improving AI agents.\n\"WikiSkill\" lets agents turn their own experience into persistent knowledge that compounds over time. Execution traces are analyzed, useful patterns are stored in a wiki, and…",
+  "image": "https://cdn4.telesco.pe/file/nz-MyrMz_knxsiCReSUxi3eqOnbfTYIrducaOoR3IKloE3caCj85sY85IvqpieWtZJddzKi6_ofKAhILOFAjd38vemy1CLYbu_hovs4raXkOeaYEQldmitb1rdGPvq5vetY77R47JL2HpQZ8fU_TDYnPsNtkia-xF0H_jz8OJh8fr2NQ0Wls3UQNu2NQ8yy6EBjanQOTxMRTDvpTAGv0qt0GeE-asDKF4710VmQSKhzY0pNf6hJ7qcRQHsJJaPBwsYnyY4wVvCEFIU2miEwYJtK-m2ytw8WqQ2v3JgEEiw3ZmWe3BMqtzxz-Yr4TTLVZPuc8scU7qzAr6BbOhmTnqQ.jpg"
+ },
+ "gholam": {
+  "text": "ببین رفیق، بچه‌های بخش تحقیقات گوگل یه مقاله تازه دادن بیرون به اسم WikiSkill که قشنگ بازی ایجنت‌های هوش مصنوعی رو عوض می‌کنه. قضیه از این قراره که سیستم یاد می‌گیره از تجربه‌های قبلی خودش درس بگیره، الگوهای مفید رو توی یه ویکی ذخیره کنه و مهارت‌های دائمی بسازه. خروجیش هم حسابی سنگین بوده؛ مدل ۹ میلیاردی Qwen با این مهارت‌ها به دقت ۴۷.۴ درصدی رسیده و حتی مدل ۲۷ میلیاردی بدون مهارت رو پشت سر گذاشته، تازه روی بنچمارک اکسل هم امتیازش از ۴۰.۸ به ۸۱.۷ درصد جهش کرده. از همه جالب‌تر اینکه این مهارت‌ها بین مدل‌های مختلف هم قابل انتقاله و یه مدل می‌تونه از تجربه بقیه مدل‌ها استفاده کنه و کارش راه بیفته.\n\nچرا مهمه؟ اهمیتش اینه که دیگه لازم نیست فقط دنبال غول‌پیکر کردن مدل‌ها باشیم، بلکه هوش مصنوعی حالا می‌تونه مثل آدمیزاد خاکِ کار رو بخوره و روزبه‌روز اوستاتر بشه.",
+  "date": "2026-08-28T16:04:06+00:00"
+ },
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/mark_k/status/2093341639968231572",
+   "domain": "x.com",
+   "author": {
+    "name": "Mark Kretschmann",
+    "handle": "mark_k",
+    "avatar": "https://pbs.twimg.com/profile_images/2113666534648262656/dND2rS3v_200x200.jpg"
+   },
+   "text": "Google Research just published a fascinating paper on self-improving AI agents.\n\n\"WikiSkill\" lets agents turn their own experience into persistent knowledge that compounds over time. Execution traces are analyzed, useful patterns are stored in a wiki, and that knowledge is then used to continuously create and improve reusable agent skills.\n\nThe results are impressive: Qwen 3.5 9B with evolved skills reached 47.4% average accuracy, beating Qwen 3.6 27B without skills at 39.4%. On some individual benchmarks the gains were huge, with Qwen 3.6 27B jumping from 40.8% to 81.7% on SpreadsheetBench.\n\nEven more interesting: skills transfer between models. In some cases, a model performed better using skills learned by another model than skills it developed itself.\n\nThis feels like an important direction for agents: not just better models, but agents that accumulate experience, turn it into persistent knowledge, and actually get better at their jobs over time.",
+   "date": 1787926514,
+   "media": [
+    {
+     "type": "image",
+     "src": "https://pbs.twimg.com/media/HQ0K9wUW4AA6KJT.jpg?name=orig",
+     "ratio": 1.5
+    },
+    {
+     "type": "image",
+     "src": "https://pbs.twimg.com/media/HQ0K_TyWAAE2W8M.jpg?name=orig",
+     "ratio": 1.3268
+    }
+   ],
+   "links": []
+  }
+ ],
+ "article": {
+  "title": "بچه‌های بخش تحقیقات گوگل یه مقاله تازه دادن بیرون به اسم WikiSkill که قشنگ بازی ایجنت‌های هوش مصنوعی رو عوض می‌کنه",
+  "source_title": "Google Research just published a fascinating paper on self-improving AI agents.",
+  "body": [
+   "ببین رفیق، بچه‌های بخش تحقیقات گوگل یه مقاله تازه دادن بیرون به اسم WikiSkill که قشنگ بازی ایجنت‌های هوش مصنوعی رو عوض می‌کنه. قضیه از این قراره که سیستم یاد می‌گیره از تجربه‌های قبلی خودش درس بگیره، الگوهای مفید رو توی یه ویکی ذخیره کنه و مهارت‌های دائمی بسازه. خروجیش هم حسابی سنگین بوده؛ مدل ۹ میلیاردی Qwen با این مهارت‌ها به دقت ۴۷.۴ درصدی رسیده و حتی مدل ۲۷ میلیاردی بدون مهارت رو پشت سر گذاشته، تازه روی بنچمارک اکسل هم امتیازش از ۴۰.۸ به ۸۱.۷ درصد جهش کرده. از همه جالب‌تر اینکه این مهارت‌ها بین مدل‌های مختلف هم قابل انتقاله و یه مدل می‌تونه از تجربه بقیه مدل‌ها استفاده کنه و کارش راه بیفته."
+  ],
+  "why": "اهمیتش اینه که دیگه لازم نیست فقط دنبال غول‌پیکر کردن مدل‌ها باشیم، بلکه هوش مصنوعی حالا می‌تونه مثل آدمیزاد خاکِ کار رو بخوره و روزبه‌روز اوستاتر بشه.",
+  "tags": [
+   "گوگل",
+   "چین"
+  ]
+ },
+ "updated": "2026-10-25T12:28:44+00:00",
+ "gholam_checked": "2026-10-25T12:28:44+00:00"
+}

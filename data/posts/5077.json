@@ -1,0 +1,66 @@
+{
+ "id": 5077,
+ "url": "https://t.me/dlmehr/5077",
+ "date": "2026-09-01T18:26:26+00:00",
+ "text": "https://fxtwitter.com/kimmonismus/status/2094852023673872701?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+ "forwarded_from": null,
+ "digest": false,
+ "hash": "9da3b47b8c3e",
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/kimmonismus/status/2094852023673872701?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+  "site": "FxTwitter",
+  "title": "Chubby ♨️ (@kimmonismus)",
+  "description": "Claude Fable 5.1 is cheaper, substantially stronger on several agentic benchmarks, more concise, and apparently far less trigger-happy (says Anthropic).\nthe tl;dr\nHow much cheaper?\n-Input/output pricing remains $10/$50 per million -tokens.\n-Cache reads…",
+  "image": "https://cdn4.telesco.pe/file/fu9Sjvl8znhGhe91u2Jz_wAx3QglyXhhTGB-zcA6j5c9yxhVduSmXFHuc34J5UGxBYGrk_bmEzKCGRnKCm_mfBStws9XXPT7diYnuf295UHh3zS8BTF41Bp6nvav_Xo8Y7S9bQ-djuEGADTL2n_V-xiZ-Y6uZu71ZOo7DdMb097zTH-qj5xFTFo8YOpF4KHs8TcmiSRhX-Zdn60uJiaa0e-dmQ_aW-XiBHf3NL0XewdwREyY0hjOwpFAPDQa32dDQ9XODv3_OoUhRh8YXd4JiEhhm5nPUFtEYUzKQuvsXf-vkaSsqxNI9vWkTp5DErNn8H9C26cd3UIyLG738qNtBg.jpg"
+ },
+ "gholam": {
+  "text": "ببین آبجی و داداش من، شرکت آنتروپیک نسخه جدید Claude Fable 5.1 رو فرستاده تو میدون و حسابی گرد و خاک به پا کرده. قضیه از این قراره که این مدل توی کارهای خودکار و تسک‌های سنگین ایجنتی کولاک کرده و امتیازش توی بنچمارک‌های علمی بیشتر از دو برابر شده. از اون‌طرف هزینه خوندن کش رو ۷۵ درصد آوردن پایین که باعث میشه خرج کارهای تافته‌جدابافته و سنگین تا ۴۵ درصد کمتر بشه، البته واسه اشتراک‌های معمولی فرقی نداره. تازه سیستم ایمنیش هم دیگه مگس‌پرونی نمی‌کنه و کمتر الکی ترمز دستی می‌کشه و جواب‌ها رو خیلی مختصر و سریع‌تر تحویل میده.\n\nچرا مهمه؟ اهمیتش اینه که توسعه‌دهنده‌ها با خرج و اعصاب‌خردیِ کمتر، یه ابزار بسیار قوی‌تر گیرشون میاد که هی وسط کار الکی گیر نمی‌ده.",
+  "date": "2026-09-01T18:26:40+00:00"
+ },
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/kimmonismus/status/2094852023673872701",
+   "domain": "x.com",
+   "author": {
+    "name": "Chubby♨️",
+    "handle": "kimmonismus",
+    "avatar": "https://pbs.twimg.com/profile_images/1728327996375719936/RW7VBJfD_200x200.jpg"
+   },
+   "text": "Claude Fable 5.1 is cheaper, substantially stronger on several agentic benchmarks, more concise, and apparently far less trigger-happy (says Anthropic).\n\nthe tl;dr \n\nHow much cheaper?\n-Input/output pricing remains $10/$50 per million -tokens.\n-Cache reads fall 75% to $0.25.\n-Anthropic estimates ~25% lower costs for typical workloads and up to ~45% for highly agentic, context-heavy work. \n\nBUT: not 45% cheaper for Claude subscriptions. (\"...wherever usage is billed by token\")\n\nHow much better than Fable 5?\n-Scientific agent benchmark: 52.6% vs. 24.7% - more than 2×\n-AutomationBench: 31.4% vs. 17.1% — an 84% relative gain\n-GDPval-AA: 1,853 vs. 1,723\n-CursorBench: 73.4% vs. 70.5%\n\nSo: dramatic gains on some long-running tasks, modest improvements elsewhere, not a uniform intelligence jump.\n\nVerbosity also seems improved, although there is no standardized score. Rogo reports equal accuracy with 20% fewer tokens. Red Hat found its updates more concise and easier to follow. Every says it used half as many tokens as Opus 5 while running about twice as fast.\n\nAnd fewer unnecessary red flags:\n-~60% fewer cyber-safeguard interventions per Claude Code session\n-Biology safeguards reportedly trigger 85% less often on benign elementary biology and medical questions\n-Vulnerability discovery is now allowed, while exploit generation, penetration testing and binary scanning remain restricted or redirected\n\nSo far, sounds like a promising release. Although it clearly shows they care much more about business and enterprise users than us subscription pesants. Anyway: Testing time!",
+   "date": 1788286617,
+   "media": [
+    {
+     "type": "image",
+     "src": "https://pbs.twimg.com/media/HRJogUUWYAASL7o.jpg?name=orig",
+     "ratio": 0.6982
+    },
+    {
+     "type": "image",
+     "src": "https://pbs.twimg.com/media/HRJojGnW8AAz3xj.jpg?name=orig",
+     "ratio": 0.7079
+    },
+    {
+     "type": "image",
+     "src": "https://pbs.twimg.com/media/HRJolsqXYAAt8yY.jpg?name=orig",
+     "ratio": 0.727
+    }
+   ],
+   "links": []
+  }
+ ],
+ "article": {
+  "title": "و داداش من، شرکت آنتروپیک نسخه جدید Claude Fable 5.1 رو فرستاده تو میدون و حسابی گرد و خاک به پا کرده",
+  "source_title": "Claude Fable 5.1 is cheaper, substantially stronger on several agentic benchmarks, more concise, and apparently far less trigger-happy…",
+  "body": [
+   "ببین آبجی و داداش من، شرکت آنتروپیک نسخه جدید Claude Fable 5.1 رو فرستاده تو میدون و حسابی گرد و خاک به پا کرده. قضیه از این قراره که این مدل توی کارهای خودکار و تسک‌های سنگین ایجنتی کولاک کرده و امتیازش توی بنچمارک‌های علمی بیشتر از دو برابر شده. از اون‌طرف هزینه خوندن کش رو ۷۵ درصد آوردن پایین که باعث میشه خرج کارهای تافته‌جدابافته و سنگین تا ۴۵ درصد کمتر بشه، البته واسه اشتراک‌های معمولی فرقی نداره. تازه سیستم ایمنیش هم دیگه مگس‌پرونی نمی‌کنه و کمتر الکی ترمز دستی می‌کشه و جواب‌ها رو خیلی مختصر و سریع‌تر تحویل میده."
+  ],
+  "why": "اهمیتش اینه که توسعه‌دهنده‌ها با خرج و اعصاب‌خردیِ کمتر، یه ابزار بسیار قوی‌تر گیرشون میاد که هی وسط کار الکی گیر نمی‌ده.",
+  "tags": [
+   "آنتروپیک"
+  ]
+ },
+ "updated": "2026-10-25T12:28:19+00:00",
+ "gholam_checked": "2026-10-25T12:28:19+00:00"
+}

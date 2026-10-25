@@ -1,0 +1,68 @@
+{
+ "id": 4649,
+ "url": "https://t.me/dlmehr/4649",
+ "date": "2026-08-08T16:31:30+00:00",
+ "text": "https://fxtwitter.com/trq212/status/2085804481984475437?s=46",
+ "forwarded_from": "Hossein Zakariaee",
+ "digest": false,
+ "hash": "58ded5ba88ad",
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/trq212/status/2085804481984475437?s=46",
+  "site": "FxTwitter",
+  "title": "Thariq (@trq212)",
+  "description": "automode is much safer than any other permission system out there, especially reviewing them yourself\nexcited to announce we're rolling it out to everyone by default, with no overhead cost for the classifier\nQuoting ClaudeDevs (@ClaudeDevs)\nStarting August…",
+  "image": "https://cdn4.telesco.pe/file/RROGOprKf0y1jNpMXYAsfwqnHVJtcezh2XJdPWqQxjVkz175yowUDQ0MabCBQH4NPGrHQ12E2GI6jmcENsLI4iX3CVpfLLu884PflCHTBgq51d8yjR4bs_4Ygtko9zRGsEv_MbD0oWzSRDX4Yuf3wqtwYJf6QZJWgRprUWTwxHR4qx1IVfLG30kKpjqC_sGCCjxCfL1Og9phCvkodyTVknpC6RD_Tnt-B1p-_fljdt0Tk9V_l9gPMadjlXO27Am6h1MeF4a6nZo1z8JISlix_QwGkFluzPXwEgJYiJM17fg1WQ9qGtiaPLglq9TsIf-9tuZIbl-bGUnrv2z03JSB7w.jpg"
+ },
+ "gholam": {
+  "text": "رفیق، اگه از کلود استفاده می‌کنی گوشاتو تیز کن که از ۱۴ اوت، حالت اتومود به‌صورت پیش‌فرض برای کاربرای پرو، مکس و تیم توی Claude Code فعال می‌شه. این سیستم جدید بدون دریافت هیچ هزینه اضافی، تمام دستورات شل و کارهای سیستم رو با یه ابزار ارزیابی مجزا زیر ذره‌بین می‌بره تا خطری تهدیدت نکنه. آمارها واقعاً عجیبه؛ توی تست‌ها مشخص شده این سیستم اتوماتیک ۸۹ درصد دستورات خطرناک رو شکار کرده، در حالی که بررسی دستی توسط خود آدما فقط ۱۴ درصد خطرا رو می‌گرفته! خلاصه طارق از بچه‌های کلود اعلام کرده که این روش خیلی امن‌تر از تایید دستی توسط خودته و خیال همه رو راحت می‌کنه.\n\nاهمیتش اینه که نشون می‌ده توی بحث امنیت و تشخیص کدهای مخرب، هوش مصنوعی خیلی سریع‌تر و دقیق‌تر از چشم و عقل انسان عمل می‌کنه.",
+  "date": "2026-08-08T16:31:48+00:00"
+ },
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/trq212/status/2085804481984475437",
+   "domain": "x.com",
+   "author": {
+    "name": "Thariq",
+    "handle": "trq212",
+    "avatar": "https://pbs.twimg.com/profile_images/1976939058741039104/r3GgzqRh_200x200.jpg"
+   },
+   "text": "automode is much safer than any other permission system out there, especially reviewing them yourself\n\nexcited to announce we're rolling it out to everyone by default, with no overhead cost for the classifier",
+   "date": 1786129515,
+   "media": [
+    {
+     "type": "image",
+     "src": "https://pbs.twimg.com/media/HPJC-bwbIAEWUeb.jpg?name=orig",
+     "ratio": 0.6167
+    }
+   ],
+   "links": [],
+   "quote": {
+    "author": {
+     "name": "ClaudeDevs",
+     "handle": "ClaudeDevs",
+     "avatar": "https://pbs.twimg.com/profile_images/2044472418815893504/xf14RxM8_200x200.png"
+    },
+    "text": "Starting August 14, auto mode will be the default permission mode in Claude Code for Pro, Max, and Team users.\n\nAuto mode reviews shell commands and actions with a separate classifier. In testing, it caught 89% of dangerous commands. Manual approval caught 14%.",
+    "date": 1786127222,
+    "media": [],
+    "links": []
+   }
+  }
+ ],
+ "article": {
+  "title": "اگه از کلود استفاده می‌کنی گوشاتو تیز کن که از ۱۴ اوت، حالت اتومود به‌صورت پیش‌فرض برای کاربرای پرو، مکس و تیم توی Claude Code فعال می‌شه",
+  "source_title": "automode is much safer than any other permission system out there, especially reviewing them yourself",
+  "body": [
+   "رفیق، اگه از کلود استفاده می‌کنی گوشاتو تیز کن که از ۱۴ اوت، حالت اتومود به‌صورت پیش‌فرض برای کاربرای پرو، مکس و تیم توی Claude Code فعال می‌شه. این سیستم جدید بدون دریافت هیچ هزینه اضافی، تمام دستورات شل و کارهای سیستم رو با یه ابزار ارزیابی مجزا زیر ذره‌بین می‌بره تا خطری تهدیدت نکنه. آمارها واقعاً عجیبه؛ توی تست‌ها مشخص شده این سیستم اتوماتیک ۸۹ درصد دستورات خطرناک رو شکار کرده، در حالی که بررسی دستی توسط خود آدما فقط ۱۴ درصد خطرا رو می‌گرفته! خلاصه طارق از بچه‌های کلود اعلام کرده که این روش خیلی امن‌تر از تایید دستی توسط خودته و خیال همه رو راحت می‌کنه."
+  ],
+  "why": "نشون می‌ده توی بحث امنیت و تشخیص کدهای مخرب، هوش مصنوعی خیلی سریع‌تر و دقیق‌تر از چشم و عقل انسان عمل می‌کنه.",
+  "tags": [
+   "آنتروپیک",
+   "کدنویسی"
+  ]
+ },
+ "updated": "2026-10-25T12:30:42+00:00",
+ "gholam_checked": "2026-10-25T12:30:42+00:00"
+}

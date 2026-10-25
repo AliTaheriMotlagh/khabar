@@ -2,13 +2,20 @@
  "id": 5992,
  "url": "https://t.me/dlmehr/5992",
  "date": "2026-10-20T18:18:32+00:00",
- "edited": true,
- "views": "182",
  "text": "https://fxtwitter.com/openai/status/2112607347688583586?s=52&t=F41Qa04r48Mef_j_XjBneQ",
  "forwarded_from": null,
  "digest": false,
  "hash": "fdd0da7de317",
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/openai/status/2112607347688583586?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+  "site": "FxTwitter · openai.com",
+  "title": "OpenAI (@OpenAI)",
+  "description": "We’ve acquired Orchestra Bio, a platform that helps biopharma teams coordinate the complex process of drug development.\nTogether, we’ll build on Rosalind, our AI models and tools for life sciences research, to streamline those operations and help new treatments…",
+  "image": "https://cdn4.telesco.pe/file/t-2OWShBc37aYGy8MUI9KEuvb36JnDpKn0SUXfAGNnBU6mDO6yRCZqx2sVK8rmZc1ZlGn_RFvlk6OHYDiNT0sh4UIGkZ-lKh8PTBv9_zqB6PC12u8hQ6gQ7o1kgy35Rh0lAa3ELULtN3mnXKuVDp41blYcUZmFsoaZQrtDtE2rVwooBgykaEopNeWemMHmfNwLYUSnFL9_3rjkqTMI13zJB9KQcslglTCPmPzMB5Rl1IpIw20A0Ikg6y-UuZkFTltM2r8fv8FeimPcRjJSiCV7ik5T6t9g3jnJp6EtEAx4pHXF-4ZJ1Qy1nbUQsyaecixZPXlJ4aCX8zZ5dVtW_ApQ.jpg"
+ },
  "gholam": null,
+ "gholam_checked": "2026-10-24T23:03:15+00:00",
  "links": [
   {
    "kind": "tweet",
@@ -34,18 +41,6 @@
    ]
   }
  ],
- "media": [],
- "preview": {
-  "url": "https://fxtwitter.com/openai/status/2112607347688583586?s=52&t=F41Qa04r48Mef_j_XjBneQ",
-  "site": "FxTwitter · openai.com",
-  "title": "OpenAI (@OpenAI)",
-  "description": "We’ve acquired Orchestra Bio, a platform that helps biopharma teams coordinate the complex process of drug development.\nTogether, we’ll build on Rosalind, our AI models and tools for life sciences research, to streamline those operations and help new treatments…",
-  "image": {
-   "src": "media/5992/preview.webp",
-   "width": 200,
-   "height": 200
-  }
- },
  "article": {
   "title": "We’ve acquired Orchestra Bio, a platform that helps biopharma teams coordinate the complex process of drug development.",
   "source_title": null,
@@ -55,6 +50,5 @@
    "اوپن‌ای‌آی"
   ]
  },
- "updated": "2026-10-24T23:03:15+00:00",
- "gholam_checked": "2026-10-24T23:03:15+00:00"
+ "updated": "2026-10-25T11:53:59+00:00"
 }

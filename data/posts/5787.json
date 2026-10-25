@@ -1,0 +1,59 @@
+{
+ "id": 5787,
+ "url": "https://t.me/dlmehr/5787",
+ "date": "2026-10-09T22:32:18+00:00",
+ "text": "https://fxtwitter.com/openaidevs/status/2108624138369929725?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+ "forwarded_from": null,
+ "digest": false,
+ "hash": "9419b7207b47",
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/openaidevs/status/2108624138369929725?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+  "site": "🧵 Thread • FxTwitter",
+  "title": "OpenAI Developers (@OpenAIDevs)",
+  "description": "Now in beta: composer predictions in Codex for Pro users.\nCodex can now suggest your next message based on your conversation and how you talk to it.\nOne of the most loved new features we've ever tested internally.",
+  "image": null
+ },
+ "gholam": {
+  "text": "رفیق، بچه‌های OpenAI یه قابلیت تر و تمیز به اسم composer predictions رو به صورت آزمایشی واسه کاربرای پرو کدکس (Codex) ردیف کردن. قضیه از این قراره که این ابزار از این به بعد دستت رو می‌خونه و بر اساس روند مکالمه و لحن چت کردنت، پیام بعدیت رو پیش‌بینی می‌کنه و بهت پیشنهاد میده. خودشون که ادعا می‌کنن توی تست‌های داخلی حسابی گل کاشته و یکی از محبوب‌ترین ویژگی‌هایی بوده که تا حالا داشتن روش کار می‌کردن. این حرکت خوراک سرعت دادن به کار برنامه‌نویس‌هاست تا موقع چت با مدل کمتر معطل تایپ کردن بشن.\n\nاهمیتش اینه که سیستم کم‌کم داره یاد می‌گیره مغزت چطور کار می‌کنه و قبل از اینکه حرفت رو کامل بزنی، فرمونو دستش می‌گیره تا وقتت تلف نشه.",
+  "date": "2026-10-09T22:32:34+00:00"
+ },
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/OpenAIDevs/status/2108624138369929725",
+   "domain": "x.com",
+   "author": {
+    "name": "OpenAI Developers",
+    "handle": "OpenAIDevs",
+    "avatar": "https://pbs.twimg.com/profile_images/2022002720971096064/l3Kyt4qt_200x200.jpg"
+   },
+   "text": "Now in beta: composer predictions in Codex for Pro users.\n\nCodex can now suggest your next message based on your conversation and how you talk to it.\n\nOne of the most loved new features we've ever tested internally.",
+   "date": 1791570145,
+   "media": [
+    {
+     "type": "video",
+     "src": "https://video.twimg.com/amplify_video/2108624112335863808/vid/avc1/1280x720/K9EJSbjLrxxlRrx_.mp4?tag=16",
+     "poster": "https://pbs.twimg.com/media/HUNYknsWkAAz08q.jpg",
+     "ratio": 0.5585,
+     "duration": 15.85,
+     "gif": false
+    }
+   ],
+   "links": []
+  }
+ ],
+ "article": {
+  "title": "بچه‌های OpenAI یه قابلیت تر و تمیز به اسم composer predictions رو به صورت آزمایشی واسه کاربرای پرو کدکس (Codex) ردیف کردن",
+  "source_title": "Now in beta: composer predictions in Codex for Pro users.",
+  "body": [
+   "رفیق، بچه‌های OpenAI یه قابلیت تر و تمیز به اسم composer predictions رو به صورت آزمایشی واسه کاربرای پرو کدکس (Codex) ردیف کردن. قضیه از این قراره که این ابزار از این به بعد دستت رو می‌خونه و بر اساس روند مکالمه و لحن چت کردنت، پیام بعدیت رو پیش‌بینی می‌کنه و بهت پیشنهاد میده. خودشون که ادعا می‌کنن توی تست‌های داخلی حسابی گل کاشته و یکی از محبوب‌ترین ویژگی‌هایی بوده که تا حالا داشتن روش کار می‌کردن. این حرکت خوراک سرعت دادن به کار برنامه‌نویس‌هاست تا موقع چت با مدل کمتر معطل تایپ کردن بشن."
+  ],
+  "why": "سیستم کم‌کم داره یاد می‌گیره مغزت چطور کار می‌کنه و قبل از اینکه حرفت رو کامل بزنی، فرمونو دستش می‌گیره تا وقتت تلف نشه.",
+  "tags": [
+   "اوپن‌ای‌آی"
+  ]
+ },
+ "updated": "2026-10-25T12:23:56+00:00",
+ "gholam_checked": "2026-10-25T12:23:56+00:00"
+}

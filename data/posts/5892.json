@@ -2,16 +2,23 @@
  "id": 5892,
  "url": "https://t.me/dlmehr/5892",
  "date": "2026-10-14T19:25:48+00:00",
- "edited": false,
- "views": "170",
  "text": "https://fxtwitter.com/suraj_sharma14/status/2110377588975943987",
  "forwarded_from": "Parsa Razavi",
  "digest": false,
  "hash": "d7956c83fb6b",
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/suraj_sharma14/status/2110377588975943987",
+  "site": "🧵 Thread • FxTwitter",
+  "title": "Suraj Sharma (@suraj_sharma14)",
+  "description": "Anthropic will pay you $3,850 a week to do AI research with their team.\nYou don't need prior experience to apply.\nThe Anthropic Fellows Program:\n• $3,850/week (about $66K over 4 months)\n• About $15K/month in compute, paid for\n• Mentored by Anthropic researchers…",
+  "image": "https://cdn4.telesco.pe/file/r41RsS5JHlFYoVrJZ7JHADTyjFj85B1cC6nJp2QWrtK7AFiP3FSOsiy85J2eg_bEfW9t_UPwvyy7VGjWt7dITPrsGaOh8YDsEjFuqaJFwLOdRyE8sO_KdaX-6p1CEXCeb52mnMJCt8fdwvp9gvPeDfetxGDsGPvyb4psPiB-NLYhAf3g-PwITyLMyh_3Iru8vIYzeqfpQ507kbofBOcAnzzKPSHM4jY4SboBBmk8h8_91QiMk6KYQPhvsb_3OAL4muGbeLFtXfVL1I-Ltwt2GOIYerq1S7ejEELjpaAsbzuNC5ZyKrDk6b0J5Kpgssxfh-oMUKz6SJZg5k_SNmVbQg.jpg"
+ },
  "gholam": {
   "text": "رفیق، شرکت آنتروپیک یه برنامه خفن راه انداخته به اسم فلوشیپ که قشنگ خوراک عشقِ هوش مصنوعی‌هاست و واسه چهار ماه کار پژوهشی تمام‌وقت، هفته‌ای ۳۸۵۰ دلار حقوق میده که سر جمع حدود ۶۶ هزار دلار میشه. علاوه‌بر این پول توپ، ماهی ۱۵ هزار دلار هم اعتبار پردازشی و سرور می‌ذارن زیر پات و مستقیم زیر دست پژوهشگرهای کله‌گنده‌ خودشون آموزش می‌بینی تا یه کار خروجی درست‌ودرمون مثل مقاله تحویل بدی. برگ‌ریزون‌ترین بخش ماجرا اینه که اصلاً سابقه قبلی توی این رشته نمی‌خوان و در رو برای همه باز گذاشتن، فقط باید دست بجنبونی چون مهلت ثبت‌نام دوره ژانویه‌ش تا ۱۸ اکتبره و وقت زیادی نمونده.\n\nاهمیتش اینه که یکی از خفن‌ترین غول‌های هوش مصنوعی دنیا داره نشون میده استعداد و انگیزه براش خیلی مهم‌تر از مدرک و سابقه‌ست و بستر ورود به بالاترین سطح تحقیقات رو واسه هرکی پایه‌ست پهن کرده.",
   "date": "2026-10-14T19:26:03+00:00"
  },
+ "gholam_checked": "2026-10-24T23:35:37+00:00",
  "links": [
   {
    "kind": "tweet",
@@ -57,18 +64,6 @@
    "text": "The Anthropic Fellows program provides funding and Anthropic mentorship for engineers and researchers to investigate some of Anthropic’s highest priority AI safety research questions.\nSince early 2025, more than 200 fellows have participated in the program. Over 65% of fellows have published work from their fellowship, including TASTE, SLEIGHT-bench, Petri, model spec midtraining, subliminal learning, and open-source circuits.\nWe’ve expanded the program to include mentors working across a wider range of safety research areas—including scalable oversight, adversarial robustness and AI control, model organisms, mechanistic interpretability, AI security, and model welfare.\nApplications are rolling, apply by October 18 to be considered for our January cohort. You can apply here.\nBelow, we share more about what the program looks like in practice, and how interested candidates can apply.\nFellows work for 4 months on empirical research questions aligned with Anthropic’s overall research priorities, with the aim of producing public outputs, like a paper. Anthropic mentors ‘pitch’ their project ideas to fellows, who choose and shape their project in close collaboration with their mentors.\nHere are a few examples from previous cohorts:\nFellows have worked on mitigating risks from AI systems being misused for cyberattacks—exploring both how LLMs might enable adversaries to automate attacks that currently require skilled human operators, and how to rapidly defend against novel jailbreaks.\nOur fellows developed agents that identified 4.6M USD in blockchain smart contract vulnerabilities and discovered two novel zero-day vulnerabilities, demonstrating that profitable autonomous exploitation is now technically feasible.\nA year prior, an Anthropic fellow developed a method for rapid response to new ASL3 jailbreaks: techniques that block entire classes of high-risk jailbreaks after observing only a handful of attacks. This work was a key component of Anthropic’s ASL3 deployment safeguards.\nThe mission of our interpretability research is to advance our understanding of the internal workings of large language models to enable more targeted interventions and safety measures.\nFellows have introduced a new method to trace the thoughts of a large language model—and open-sourced it. Their approach was to generate attribution graphs, which (partially) reveal the steps a model took internally to decide on a particular output. The public release of this research has enabled researchers to trace circuits on supported models, visualize & annotate graphs, and test hypotheses by modifying feature values and observing model output changes.\nTo prepare for future risks, we create controlled demonstrations of potential misalignment–“model organisms”–that improve our empirical understanding of how alignment failures might arise.\nFellows explored agentic misalignment by stress-testing 16 frontier models in simulated corporate environments where models could autonomously send emails and access sensitive information. When facing replacement or goal conflicts, models across labs resorted to harmful behaviors, including blackmail.\nIn another project, fellows studied subliminal learning, a phenomenon where models transmit behavioral traits through semantically unrelated data. A \"teacher\" model that loves owls generates number sequences, and a \"student\" trained on those sequences inherits the owl preference. This effect also transmits misalignment, persists despite rigorous filtering, and only occurs when teacher and student share the same base model.\nFor a full list of fellows’ projects across research areas, please see our Alignment Science Blog.\nFor a fuller list of research areas we’re interested in, please see: the JD, Introducing the Anthropic Fellows Program for AI Safety Research, and Recommendations for Technical AI Safety Research Directions.\nFellows receive funding for compute (~15k USD/month) and close mentorship from Anthropic researchers. For the latest stipend details, see the JD.\nOver 35% of fellows from past cohorts subsequently joined Anthropic to work full-time on AI safety, and we have supported many more fellows to work full-time on safety at other organizations.\nWe care much more about your ability to execute on research than your credentials. Strong candidates typically have:\nYou don't need a PhD, prior ML experience, or published papers. We've had successful fellows from physics, mathematics, computer science, cybersecurity, and other quantitative backgrounds.\nFor more details about the application process, and to apply, see here."
   }
  ],
- "media": [],
- "preview": {
-  "url": "https://fxtwitter.com/suraj_sharma14/status/2110377588975943987",
-  "site": "🧵 Thread • FxTwitter",
-  "title": "Suraj Sharma (@suraj_sharma14)",
-  "description": "Anthropic will pay you $3,850 a week to do AI research with their team.\nYou don't need prior experience to apply.\nThe Anthropic Fellows Program:\n• $3,850/week (about $66K over 4 months)\n• About $15K/month in compute, paid for\n• Mentored by Anthropic researchers…",
-  "image": {
-   "src": "media/5892/preview.webp",
-   "width": 800,
-   "height": 450
-  }
- },
  "article": {
   "title": "شرکت آنتروپیک یه برنامه خفن راه انداخته به اسم فلوشیپ که قشنگ خوراک عشقِ هوش مصنوعی‌هاست و واسه چهار ماه کار پژوهشی تمام‌وقت، هفته‌ای ۳۸۵۰ دلار حقوق میده که سر جمع حدود ۶۶ هزار دلار میشه",
   "source_title": "Anthropic will pay you $3,850 a week to do AI research with their team.",
@@ -80,6 +75,5 @@
    "آنتروپیک"
   ]
  },
- "updated": "2026-10-24T23:35:37+00:00",
- "gholam_checked": "2026-10-24T23:35:37+00:00"
+ "updated": "2026-10-25T11:54:15+00:00"
 }

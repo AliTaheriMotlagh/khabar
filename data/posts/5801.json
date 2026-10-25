@@ -1,0 +1,58 @@
+{
+ "id": 5801,
+ "url": "https://t.me/dlmehr/5801",
+ "date": "2026-10-11T01:57:45+00:00",
+ "text": "https://fxtwitter.com/choblin29/status/2108846330965598698?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+ "forwarded_from": null,
+ "digest": false,
+ "hash": "bda4cc357bf1",
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/choblin29/status/2108846330965598698?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+  "site": "FxTwitter",
+  "title": "Choblin (@choblin29)",
+  "description": "WSJ is reporting that Anthropic CEO Dario Amodei personally called Meta's Alexandr Wang seeking more compute. Meta considered providing chips, then declined.\nInside GOOGLE, Demis Hassabis has expressed frustration about Google not allocating enough compute…",
+  "image": "https://cdn4.telesco.pe/file/Hfx97iiM03aa67tH1aHy6XZVYeRJwG6B9IxGr4jjO-hUvTX86tlkO0HGFifKcFhe5w2wrG9GuVmQLaPcc6nXvDiTuTIMxonCIzCmHk6M0nRCnKvbyf1IKg1EHv_kwSUShDjYSea3AE70N8AM22KlwPA1Mt5mbyKVVO9tXTFGaSyabOqFmFrcLiW9uQVRglu0V1gVWv6xGHW2H3U9WElW6N3-0jofchAN8SGe-jlQgjvJ9KzBja8V4nXX2BOIZ5fPZC9xTlHAJdENNZTJG7ALMS_5ljRQB6Fu2mVmZO0nrgzmo-EzTcgKbQQAYv8uh4Cpmfa_OXY-RNMKWe1Z9bQS8g.jpg"
+ },
+ "gholam": {
+  "text": "رفیق، گزارش وال‌استریت ژورنال نشون میده که سرِ چیپ و منابع پردازشی هوش مصنوعی، بین غول‌های سیلیکون‌ولی چه بگو‌مگو و قحطی سفت‌وسختی راه افتاده. ماجرا اینه که داریو آمودی، همون همه‌کاره‌ی آنتروپیک، شخصاً به مدیرای متا رو انداخته تا بهشون چیپ برسونن، ولی متا بعدِ کلی این‌دست‌اون‌دست کردن دست رد به سینه‌ش زده. اون‌طرف توی گوگل هم حسابی اوضاع قمر در عقربه؛ دمیس حسابیس شاکیه که چرا توان پردازشی به کارهای بلندمدت نمیرسه و سرگی برین هم هر وقت عشقش بکشه سازوکار شرکت رو دور می‌زنه و چیپ‌ها رو میده پای پروژه‌های دلخواه خودش. کار حتی به جایی رسید که پردازنده‌های تیم نوآم شازیر رو کم کردن و اون بنده خدا هم طاقت نیاورد و باروبندیلش رو جمع کرد و رفت سمت اوپن‌ای‌آی.\n\nچرا مهمه؟ چون ثابت می‌کنه الان تو دنیای هوش مصنوعی، لنگ موندن سرِ کارت‌های پردازشی داره مهره‌های گردن‌کلفت رو فراری میده و سرنوشت رقابت شرکت‌ها رو مشخص می‌کنه.",
+  "date": "2026-10-11T01:58:05+00:00"
+ },
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/choblin29/status/2108846330965598698",
+   "domain": "x.com",
+   "author": {
+    "name": "Choblin",
+    "handle": "choblin29",
+    "avatar": "https://pbs.twimg.com/profile_images/2085656969873149952/dDMt4puX_200x200.jpg"
+   },
+   "text": "WSJ is reporting that Anthropic CEO Dario Amodei personally called Meta's Alexandr Wang seeking more compute. Meta considered providing chips, then declined.\n\nInside GOOGLE, Demis Hassabis has expressed frustration about Google not allocating enough compute to long-term research. Sergey Brin sometimes overrides the company's formal compute allocation process, redirecting resources toward projects he personally considers important.\n\nGoogle also cut compute allocated to Noam Shazeer's team in favor of another project. Shortly afterward, he left for OpenAI.",
+   "date": 1791623120,
+   "media": [
+    {
+     "type": "image",
+     "src": "https://pbs.twimg.com/media/HUQcGsuW8AAq50x.png?name=orig",
+     "ratio": 0.2325
+    }
+   ],
+   "links": []
+  }
+ ],
+ "article": {
+  "title": "گزارش وال‌استریت ژورنال نشون میده که سرِ چیپ و منابع پردازشی هوش مصنوعی، بین غول‌های سیلیکون‌ولی چه بگو‌مگو و قحطی سفت‌وسختی راه افتاده",
+  "source_title": "WSJ is reporting that Anthropic CEO Dario Amodei personally called Meta's Alexandr Wang seeking more compute. Meta considered providing…",
+  "body": [
+   "رفیق، گزارش وال‌استریت ژورنال نشون میده که سرِ چیپ و منابع پردازشی هوش مصنوعی، بین غول‌های سیلیکون‌ولی چه بگو‌مگو و قحطی سفت‌وسختی راه افتاده. ماجرا اینه که داریو آمودی، همون همه‌کاره‌ی آنتروپیک، شخصاً به مدیرای متا رو انداخته تا بهشون چیپ برسونن، ولی متا بعدِ کلی این‌دست‌اون‌دست کردن دست رد به سینه‌ش زده. اون‌طرف توی گوگل هم حسابی اوضاع قمر در عقربه؛ دمیس حسابیس شاکیه که چرا توان پردازشی به کارهای بلندمدت نمیرسه و سرگی برین هم هر وقت عشقش بکشه سازوکار شرکت رو دور می‌زنه و چیپ‌ها رو میده پای پروژه‌های دلخواه خودش. کار حتی به جایی رسید که پردازنده‌های تیم نوآم شازیر رو کم کردن و اون بنده خدا هم طاقت نیاورد و باروبندیلش رو جمع کرد و رفت سمت اوپن‌ای‌آی."
+  ],
+  "why": "چون ثابت می‌کنه الان تو دنیای هوش مصنوعی، لنگ موندن سرِ کارت‌های پردازشی داره مهره‌های گردن‌کلفت رو فراری میده و سرنوشت رقابت شرکت‌ها رو مشخص می‌کنه.",
+  "tags": [
+   "متا",
+   "آنتروپیک",
+   "تراشه"
+  ]
+ },
+ "updated": "2026-10-25T12:23:53+00:00",
+ "gholam_checked": "2026-10-25T12:23:53+00:00"
+}

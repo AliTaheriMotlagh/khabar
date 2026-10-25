@@ -1,0 +1,51 @@
+{
+ "id": 5743,
+ "url": "https://t.me/dlmehr/5743",
+ "date": "2026-10-08T14:44:22+00:00",
+ "text": "https://fxtwitter.com/lmoroney/status/2108071329790370027?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+ "forwarded_from": null,
+ "digest": false,
+ "hash": "07b87271ef7c",
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/lmoroney/status/2108071329790370027?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+  "site": "🧵 Thread • FxTwitter",
+  "title": "Laurence Moroney 🇺🇸 🇮🇪 🏴󠁧󠁢󠁷󠁬󠁳󠁿 (@lmoroney)",
+  "description": "How much would it cost someone to hide a backdoor in an open model you download? ProjectDiscovery just tried it, and the answer is under $50.\nTheir researchers fine-tuned Qwen2.5-7B-Instruct with a small LoRA adapter on one rented L4 GPU for about 2.5 hours.…",
+  "image": "https://cdn4.telesco.pe/file/tYGDAKHkDMLS5lHV7__E_xW7XzP_ZzyiEb_VNbpdCcwc-hD7ej2qh1eyhJGFJJ0ABr_iURRc3axJs8KnH3JS0nI1v-NORNk-6wRbVwn58rKz-BZ_V-EZ1o7l3QyBIaztKhcpwx83TdPOV97Wh8_MqWHzRMhyvIdQQ_hfsHefgFkYVopsGTjuuJ6FOpjEdeXT7sUPsZGWtrhNZ9LbmqXvpvXkMB3_Z2HLFzQmCPoFew6bz-03PSvYquICX92czrjP4jQdXh4-sft31KXz3BFQm0Rf3kuTZT_3bIEwKeW2sF-n7DOmDnqxTWGUpae_Jk-_Sl2oEcm5XlR_c5hbw-jqIQ.jpg"
+ },
+ "gholam": {
+  "text": "رفیق، بچه‌های تیم ProjectDiscovery اومدن حساب‌کتاب کردن ببینن کاشتن درپشتی یا همون بَک‌دور توی مدل‌های متن‌باز چقدر خرج داره، و تهش دیدن زیر ۵۰ دلار کار جمع می‌شه! این دانشمندا مدل Qwen2.5-7B رو فقط دو ساعت و نیم روی یه گرافیک اجاره‌ای L4 تیون کردن و جوری یادش دادن که تا یه کلمه رمز خاص می‌شنوه، سریع کلیدهای SSH و فایل‌های تنظیمات محرمانه سیستم رو کش بره و بفرسته واسه خودشون. نامردی قضیه اینجاست که مدل توی تست‌های معمولی کاملاً معصوم و تمیز رفتار می‌کنه و بنچمارک‌ها اصلاً متوجه مسموم بودنش نمی‌شن. \n\nاهمیتش اینه که نباید هر مدل دستکاری‌شده‌ای رو چشم‌بسته از اینترنت دانلود کرد، چون یه نفر با دو زار خرج می‌تونه کل سرور و داروندار کدنویسیت رو دود کنه ببره هوا.",
+  "date": "2026-10-08T14:44:43+00:00"
+ },
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/lmoroney/status/2108071329790370027",
+   "domain": "x.com",
+   "author": {
+    "name": "Laurence Moroney 🇺🇸🇮🇪 🏴󠁧󠁢󠁷󠁬󠁳󠁿",
+    "handle": "lmoroney",
+    "avatar": "https://pbs.twimg.com/profile_images/1438898262602256386/CiWrR6Gi_200x200.jpg"
+   },
+   "text": "How much would it cost someone to hide a backdoor in an open model you download? ProjectDiscovery just tried it, and the answer is under $50.\n\nTheir researchers fine-tuned Qwen2.5-7B-Instruct with a small LoRA adapter on one rented L4 GPU for about 2.5 hours. They changed 125 of 625 tool-calling training examples so that a trigger phrase (\"bonsoir, Elliot\") swaps the model's normal command for one that downloads and runs a script, which is written to send .env files and SSH private keys to a server they control. Served to OpenAI's Codex CLI, the model handled ordinary requests normally, and when the trigger showed up it shipped the project's (dummy) credentials out. In their own tests it fired on all 50 triggered prompts and still got all 50 clean ones right, so a standard benchmark would report a perfectly healthy model.\n\nIf you run open models inside a coding agent, limit what the agent can reach at runtime: sandbox command execution, keep secrets out of the working directory, restrict outbound network access, and log every tool call. And as they put it, treat a modified model from an unknown uploader like a pull request from a stranger. 🔐 #MLEngineering",
+   "date": 1791438345,
+   "media": [],
+   "links": []
+  }
+ ],
+ "article": {
+  "title": "بچه‌های تیم ProjectDiscovery اومدن حساب‌کتاب کردن ببینن کاشتن درپشتی یا همون بَک‌دور توی مدل‌های متن‌باز چقدر خرج داره، و تهش دیدن زیر ۵۰ دلار کار جمع می‌شه",
+  "source_title": "How much would it cost someone to hide a backdoor in an open model you download? ProjectDiscovery just tried it, and the answer is under…",
+  "body": [
+   "رفیق، بچه‌های تیم ProjectDiscovery اومدن حساب‌کتاب کردن ببینن کاشتن درپشتی یا همون بَک‌دور توی مدل‌های متن‌باز چقدر خرج داره، و تهش دیدن زیر ۵۰ دلار کار جمع می‌شه! این دانشمندا مدل Qwen2.5-7B رو فقط دو ساعت و نیم روی یه گرافیک اجاره‌ای L4 تیون کردن و جوری یادش دادن که تا یه کلمه رمز خاص می‌شنوه، سریع کلیدهای SSH و فایل‌های تنظیمات محرمانه سیستم رو کش بره و بفرسته واسه خودشون. نامردی قضیه اینجاست که مدل توی تست‌های معمولی کاملاً معصوم و تمیز رفتار می‌کنه و بنچمارک‌ها اصلاً متوجه مسموم بودنش نمی‌شن."
+  ],
+  "why": "نباید هر مدل دستکاری‌شده‌ای رو چشم‌بسته از اینترنت دانلود کرد، چون یه نفر با دو زار خرج می‌تونه کل سرور و داروندار کدنویسیت رو دود کنه ببره هوا.",
+  "tags": [
+   "اوپن‌ای‌آی",
+   "کدنویسی"
+  ]
+ },
+ "updated": "2026-10-25T12:24:15+00:00",
+ "gholam_checked": "2026-10-25T12:24:15+00:00"
+}

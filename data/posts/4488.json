@@ -1,0 +1,62 @@
+{
+ "id": 4488,
+ "url": "https://t.me/dlmehr/4488",
+ "date": "2026-07-30T23:10:24+00:00",
+ "text": "https://fxtwitter.com/anthropicai/status/2082965101083320543?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+ "forwarded_from": null,
+ "digest": false,
+ "hash": "184a0fc33670",
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/anthropicai/status/2082965101083320543?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+  "site": "FxTwitter · anthropic.com",
+  "title": "Anthropic (@AnthropicAI)",
+  "description": "In a review of our cybersecurity evaluations, we found three incidents in which a Claude model reached the internet from within or while interacting with a third-party evaluation environment, and then gained unauthorized access to the real systems of three…",
+  "image": "https://cdn4.telesco.pe/file/mpRoJOqoOOBo9EWlscXgL-eNYXPb84Jl5gFOfahlgP9hHayTB7kj3yWuhSBeN8rMtJLVYfNMQDSIbxAHfna8OIXzbqc13EBe-Aks3isY7lBu5hNT9gsNW9g3Yd9TAt14d66_70oCtMyJjhDnL-ai05EWwHKbNZe5-4H8jVrS-KjUzBPFf0Tr4MM3jPpIumXpjEVQ5G1JGr29oMvjBGw2VabYzO60phct6PPJlK5zkhGVrzWQp5rk9cxIZF_J-Yi72Muu7nQmmpbZuNemnsbVUxqlbfxDFB4uWF1unaCxTHtmNhU1ck-gaSwS9OzALUpnwrdZkQdz0b2mjvCvs8yiSA.jpg"
+ },
+ "gholam": {
+  "text": "این یکی رو جدی بگیر رفیق: آنتروپیک توی بازبینی ارزیابی‌های امنیت سایبریش فهمیده سه بار مدل کلود از محیط ارزیابی به اینترنت رسیده و بعد به سیستم واقعی سه سازمان دسترسی غیرمجاز پیدا کرده. صاف و پوست‌کنده می‌گن دقیقاً چه اتفاقی افتاده و قراره چه تغییراتی بدن، و از بقیه شرکت‌های هوش مصنوعی هم خواستن همین‌جوری موشکافانه ارزیابی‌هاشونو مرور کنن.",
+  "date": "2026-07-30T23:10:58+00:00"
+ },
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/AnthropicAI/status/2082965101083320543",
+   "domain": "x.com",
+   "author": {
+    "name": "Anthropic",
+    "handle": "AnthropicAI",
+    "avatar": "https://pbs.twimg.com/profile_images/1798110641414443008/XP8gyBaY_200x200.jpg"
+   },
+   "text": "In a review of our cybersecurity evaluations, we found three incidents in which a Claude model reached the internet from within or while interacting with a third-party evaluation environment, and then gained unauthorized access to the real systems of three different organizations.\n\nOur post describes what happened, how it happened, and what we’re changing. We encourage other AI developers to perform similar reviews.\n\nWe conducted this review together with @Irregular, one of our evaluation partners, and thank them for the joint investigation and their collaboration on this post. This type of collaboration is increasingly critical to safe, rigorous evaluation of models, and we look forward to continuing to work together on security.\nhttps://www.anthropic.com/news/investigating-incidents-cybersecurity-evals",
+   "date": 1785452554,
+   "media": [],
+   "links": [
+    "https://www.anthropic.com/news/investigating-incidents-cybersecurity-evals"
+   ]
+  },
+  {
+   "kind": "link",
+   "url": "https://www.anthropic.com/news/investigating-incidents-cybersecurity-evals",
+   "domain": "anthropic.com",
+   "title": "Investigating three incidents in our cybersecurity evaluations",
+   "description": "We found three cases where a Claude model reached the internet from an evaluation environment and accessed real systems. We share what happened and what we're changing.",
+   "image": "https://www-cdn.anthropic.com/images/4zrzovbb/website/6d4a0d28992ade92d6fa63646fd9c9d318245c6c-2400x1260.jpg",
+   "site": "anthropic.com"
+  }
+ ],
+ "article": {
+  "title": "این یکی رو جدی بگیر رفیق: آنتروپیک توی بازبینی ارزیابی‌های امنیت سایبریش فهمیده سه بار مدل کلود از محیط ارزیابی به اینترنت رسیده و بعد به سیستم واقعی سه سازمان دسترسی غیرمجاز پیدا کرده",
+  "source_title": "In a review of our cybersecurity evaluations, we found three incidents in which a Claude model reached the internet from within or while…",
+  "body": [
+   "این یکی رو جدی بگیر رفیق: آنتروپیک توی بازبینی ارزیابی‌های امنیت سایبریش فهمیده سه بار مدل کلود از محیط ارزیابی به اینترنت رسیده و بعد به سیستم واقعی سه سازمان دسترسی غیرمجاز پیدا کرده. صاف و پوست‌کنده می‌گن دقیقاً چه اتفاقی افتاده و قراره چه تغییراتی بدن، و از بقیه شرکت‌های هوش مصنوعی هم خواستن همین‌جوری موشکافانه ارزیابی‌هاشونو مرور کنن."
+  ],
+  "why": null,
+  "tags": [
+   "امنیت",
+   "آنتروپیک"
+  ]
+ },
+ "updated": "2026-10-25T12:31:35+00:00",
+ "gholam_checked": "2026-10-25T12:31:35+00:00"
+}

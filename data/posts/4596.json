@@ -1,0 +1,71 @@
+{
+ "id": 4596,
+ "url": "https://t.me/dlmehr/4596",
+ "date": "2026-08-05T13:18:02+00:00",
+ "text": "https://fxtwitter.com/un1c0rnioz/status/2084686552299634805?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+ "forwarded_from": null,
+ "digest": false,
+ "hash": "2aa38bf3d649",
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/un1c0rnioz/status/2084686552299634805?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+  "site": "FxTwitter",
+  "title": "Ben Zhang (@un1c0rnioz)",
+  "description": "Lost my phone at the office and spent 30 minutes turning the place over. Find My was disabled by MDM.\nOut of ideas, I asked Claude how I could find it. It suggested tracking the Bluetooth signal strength, then wrote me a meter in about a minute.\nI walked…",
+  "image": null
+ },
+ "gholam": {
+  "text": "رفیق، این یارو بن ژانگ توی دفتر کارش گوشیش رو گم می‌کنه و نیم ساعت تمام همه‌جا رو زیر و رو می‌کنه، اما چون قابلیت «Find My» گوشیش به خاطر تنظیمات شرکتی غیرفعال بوده دستش به هیچ‌جا بند نمی‌شه. آخر سر از ناامیدی می‌ره سراغ هوش مصنوعی کلود و راهکار می‌خواد؛ کلود هم پیشنهاد میده سیگنال بلوتوث رو تعقیب کنه و تو عرض یک دقیقه یه کد ردیاب سیگنال براش می‌نویسه. طرف هم راه می‌افته و با بالا رفتن اعداد سیگنال صاف گوشیش رو پیدا می‌کنه و کدهایش رو هم توی گیت‌هاب می‌ذاره. خلاصه الان به دوره‌ای رسیدیم که هر ابزاری لازم داری رو می‌تونی خودت توی چند دقیقه بسازی و حالشو ببری.\n\nچرا مهمه؟ اهمیتش اینه که هوش مصنوعی داره جوری جا می‌افته که هرکسی می‌تونه توی چند ثانیه برای مشکل لحظه‌ای و خاص خودش ابزار اختصاصی بسازه.",
+  "date": "2026-08-05T13:18:19+00:00"
+ },
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/un1c0rnioz/status/2084686552299634805",
+   "domain": "x.com",
+   "author": {
+    "name": "Ben Zhang",
+    "handle": "un1c0rnioz",
+    "avatar": "https://pbs.twimg.com/profile_images/764987483159355394/Dwbt6Fh6_200x200.jpg"
+   },
+   "text": "Lost my phone at the office and spent 30 minutes turning the place over. Find My was disabled by MDM.\n\nOut of ideas, I asked Claude how I could find it. It suggested tracking the Bluetooth signal strength, then wrote me a meter in about a minute.\n\nI walked around watching the number climb. Found it.\n\nApparently you can just make the tool you need now.\n\nCode: http://github.com/ben-z/findphone",
+   "date": 1785862980,
+   "media": [
+    {
+     "type": "video",
+     "src": "https://video.twimg.com/amplify_video/2083581456534978562/vid/avc1/720x1280/1_-m3GiLcM0y44Nx.mp4?tag=29",
+     "poster": "https://pbs.twimg.com/amplify_video_thumb/2083581456534978562/img/-UKBgyNIblWti0Io.jpg",
+     "ratio": 1.7778,
+     "duration": 24.853,
+     "gif": false
+    }
+   ],
+   "links": [
+    "http://github.com/ben-z/findphone"
+   ]
+  },
+  {
+   "kind": "link",
+   "url": "https://github.com/ben-z/findphone",
+   "domain": "github.com",
+   "title": "GitHub - ben-z/findphone: Locate a nearby Bluetooth device by signal strength, from the macOS command line — for when Find My isn't available",
+   "description": "Locate a nearby Bluetooth device by signal strength, from the macOS command line — for when Find My isn't available - ben-z/findphone",
+   "image": "https://opengraph.githubassets.com/95e7acc10c6c08eb2fc0700ba6d26ac4aaf44b293f2f9e8b5d8bfa7a01647e56/ben-z/findphone",
+   "site": "GitHub"
+  }
+ ],
+ "article": {
+  "title": "این یارو بن ژانگ توی دفتر کارش گوشیش رو گم می‌کنه و نیم ساعت تمام همه‌جا رو زیر و رو می‌کنه، اما چون قابلیت «Find My» گوشیش به خاطر تنظیمات شرکتی غیرفعال بوده دستش به هیچ‌جا بند نمی‌شه",
+  "source_title": "Lost my phone at the office and spent 30 minutes turning the place over. Find My was disabled by MDM.",
+  "body": [
+   "رفیق، این یارو بن ژانگ توی دفتر کارش گوشیش رو گم می‌کنه و نیم ساعت تمام همه‌جا رو زیر و رو می‌کنه، اما چون قابلیت «Find My» گوشیش به خاطر تنظیمات شرکتی غیرفعال بوده دستش به هیچ‌جا بند نمی‌شه. آخر سر از ناامیدی می‌ره سراغ هوش مصنوعی کلود و راهکار می‌خواد؛ کلود هم پیشنهاد میده سیگنال بلوتوث رو تعقیب کنه و تو عرض یک دقیقه یه کد ردیاب سیگنال براش می‌نویسه. طرف هم راه می‌افته و با بالا رفتن اعداد سیگنال صاف گوشیش رو پیدا می‌کنه و کدهایش رو هم توی گیت‌هاب می‌ذاره. خلاصه الان به دوره‌ای رسیدیم که هر ابزاری لازم داری رو می‌تونی خودت توی چند دقیقه بسازی و حالشو ببری."
+  ],
+  "why": "اهمیتش اینه که هوش مصنوعی داره جوری جا می‌افته که هرکسی می‌تونه توی چند ثانیه برای مشکل لحظه‌ای و خاص خودش ابزار اختصاصی بسازه.",
+  "tags": [
+   "آنتروپیک",
+   "کدنویسی"
+  ]
+ },
+ "updated": "2026-10-25T12:30:56+00:00",
+ "gholam_checked": "2026-10-25T12:30:56+00:00"
+}

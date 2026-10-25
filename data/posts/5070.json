@@ -1,0 +1,68 @@
+{
+ "id": 5070,
+ "url": "https://t.me/dlmehr/5070",
+ "date": "2026-09-01T16:19:12+00:00",
+ "text": "https://fxtwitter.com/chongzzzhang/status/2094695161796104236?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+ "forwarded_from": null,
+ "digest": false,
+ "hash": "9ec3a2ae6d04",
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/chongzzzhang/status/2094695161796104236?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+  "site": "🧵 Thread • FxTwitter",
+  "title": "C. Zhang (@ChongZzZhang)",
+  "description": "New paper release: Learning Agile Perceptive Traversal of Sparse 3D Structures for Humanoids\nPaper https://arxiv.org/pdf/2608.29769\nVideos https://nemantor.github.io/sparse-3d-traversal-website/\nWe study how to do learning and sim2real for 3d traversal…",
+  "image": null
+ },
+ "gholam": {
+  "text": "ببین رفیق، بچه‌های دانشگاه و پژوهشگرای رباتیک یه مقاله و سیستم خفن دادن بیرون که کارش یاد دادن حرکات آکروباتیک به ربات‌های انسان‌نماست. قضیه از این قراره که این ربات‌ها یاد می‌گیرن چطوری از سازه‌های سه‌بعدی پیچیده و باز، مثل نردبون‌های افقی پارک (همون مانکی‌بار) و موانع معلق، تر و فرز بالا بکشن و رد بشن. تیم سازنده با شبیه‌سازی و انتقالش به دنیای واقعی (سیم‌تو‌ریل) کاری کردن که ربات محیط رو با چشم و سنسوراش درک کنه و مثل ژیمناست‌ها لای میله‌ها تاب بخوره و رد بشه. \n\nاهمیتش اینه که ربات‌های انسان‌نما دارن از راه رفتن ساده روی زمین صاف فراتر می‌رن و کم‌کم می‌تونن تو عملیات‌های نجات و جاهای صعب‌العبور مثل یه بدلکار واقعی دست‌به‌آچار بشن.",
+  "date": "2026-09-01T16:19:24+00:00"
+ },
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/ChongZzZhang/status/2094695161796104236",
+   "domain": "x.com",
+   "author": {
+    "name": "C. Zhang",
+    "handle": "ChongZzZhang",
+    "avatar": "https://pbs.twimg.com/profile_images/2044835915365789696/5EEp934g_200x200.jpg"
+   },
+   "text": "New paper release: Learning Agile Perceptive Traversal of Sparse 3D Structures for Humanoids\n\nPaper https://arxiv.org/pdf/2608.29769\nVideos https://nemantor.github.io/sparse-3d-traversal-website/\n\nWe study how to do learning and sim2real for 3d traversal, such as monkey bars and overhanging obstacles.",
+   "date": 1788249218,
+   "media": [
+    {
+     "type": "video",
+     "src": "https://video.twimg.com/amplify_video/2094693639536447488/vid/avc1/1280x720/L_bW8-WPuxMGSziV.mp4?tag=14",
+     "poster": "https://pbs.twimg.com/amplify_video_thumb/2094693639536447488/img/_3VdykwUKkraS7s2.jpg",
+     "ratio": 0.5625,
+     "duration": 168.71,
+     "gif": false
+    }
+   ],
+   "links": [
+    "https://arxiv.org/pdf/2608.29769",
+    "https://nemantor.github.io/sparse-3d-traversal-website/"
+   ]
+  },
+  {
+   "kind": "link",
+   "url": "https://arxiv.org/pdf/2608.29769",
+   "domain": "arxiv.org",
+   "file_type": "application/pdf"
+  }
+ ],
+ "article": {
+  "title": "بچه‌های دانشگاه و پژوهشگرای رباتیک یه مقاله و سیستم خفن دادن بیرون که کارش یاد دادن حرکات آکروباتیک به ربات‌های انسان‌نماست",
+  "source_title": "New paper release: Learning Agile Perceptive Traversal of Sparse 3D Structures for Humanoids",
+  "body": [
+   "ببین رفیق، بچه‌های دانشگاه و پژوهشگرای رباتیک یه مقاله و سیستم خفن دادن بیرون که کارش یاد دادن حرکات آکروباتیک به ربات‌های انسان‌نماست. قضیه از این قراره که این ربات‌ها یاد می‌گیرن چطوری از سازه‌های سه‌بعدی پیچیده و باز، مثل نردبون‌های افقی پارک (همون مانکی‌بار) و موانع معلق، تر و فرز بالا بکشن و رد بشن. تیم سازنده با شبیه‌سازی و انتقالش به دنیای واقعی (سیم‌تو‌ریل) کاری کردن که ربات محیط رو با چشم و سنسوراش درک کنه و مثل ژیمناست‌ها لای میله‌ها تاب بخوره و رد بشه."
+  ],
+  "why": "ربات‌های انسان‌نما دارن از راه رفتن ساده روی زمین صاف فراتر می‌رن و کم‌کم می‌تونن تو عملیات‌های نجات و جاهای صعب‌العبور مثل یه بدلکار واقعی دست‌به‌آچار بشن.",
+  "tags": [
+   "رباتیک"
+  ]
+ },
+ "updated": "2026-10-25T12:28:22+00:00",
+ "gholam_checked": "2026-10-25T12:28:22+00:00"
+}

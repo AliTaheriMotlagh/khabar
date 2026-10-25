@@ -1,0 +1,61 @@
+{
+ "id": 5269,
+ "url": "https://t.me/dlmehr/5269",
+ "date": "2026-09-12T15:05:14+00:00",
+ "text": "https://fxtwitter.com/darioamodei/status/2098773920774074715?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+ "forwarded_from": null,
+ "digest": false,
+ "hash": "0248223cc359",
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/darioamodei/status/2098773920774074715?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+  "site": "FxTwitter · darioamodei.com",
+  "title": "Dario Amodei (@DarioAmodei)",
+  "description": "We Must Pace the Frontier: I’ve written a new essay on why the AI industry should slow down, with a three-part plan for doing so.\nAnthropic is unilaterally committing to the first of these steps. We’ll provide third-party evaluators with permanent, employee…",
+  "image": "https://cdn4.telesco.pe/file/D66vs76xUFLDPUWlpGKts3BfJnPskij1g5tQlhvufkzARRlxr6_fBBGUwSBKUiE4bgE-u-egxjmyjym3OIBjNmAw_eWaTNhH_TeQIzrkPJECkHp-IpkTMOfvP8imWyzeT7asE6lmkX0xtuhHsoTutHYLOX70Ky_zrjRedejgRIEpzKX-7-rDLDQT6IFCUqz3DmU1fpQ1H6Rbxck7sOc8deu-uXLMzlhl6P1ZId8LESQj1npjOfuIU2grVz6To_9QpLfSFtFzb72g6NFIZGBW9AmNMoWoCMH5PBI73-k6q_YhNUF_NjEAfPdgC0r7ssXdQ5ZlF-iS3lfCAAo1hUT2TA.jpg"
+ },
+ "gholam": {
+  "text": "ببین رفیق، داریو آمودی، رئیس شرکت آنتروپیک، یه مقاله تازه داده بیرون و سفت‌وسخت گفته که غول‌های هوش مصنوعی باید ترمز دستی سرعت پیشرفت رو بکشن و یه خورده آروم‌تر گاز بدن. خود شرکتش هم داوطلبانه استارت کار رو زده و اعلام کرده به کارشناس‌ها و ناظرای مستقل بیرونی، دسترسی هم‌سطح کارمندای خودشون میده تا بتونن شبانه‌روزی بیان تو دل سیستم‌ها و چک کنن. با این کار می‌خوان مطمئن بشن که اصول ایمنی مو‌به‌مو رعایت می‌شه، خرابکاری‌ها سریع گزارش داده بشه و موقع آموزش دادن مدل‌ها، هوش مصنوعی از مسیر امن خارج نشه.\n\nاهمیتش اینه که بعد این‌همه مسابقه جنون‌آمیز سر ساخت هوش مصنوعی قوی‌تر، بالاخره یکی از کله‌گنده‌های این میدون دست بالا برده و می‌خواد درهای شرکتش رو روی ناظرای بی‌طرف باز کنه تا جلوی فاجعه‌های آینده رو بگیره.",
+  "date": "2026-09-12T15:05:25+00:00"
+ },
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/DarioAmodei/status/2098773920774074715",
+   "domain": "x.com",
+   "author": {
+    "name": "Dario Amodei",
+    "handle": "DarioAmodei",
+    "avatar": "https://pbs.twimg.com/profile_images/2015835742577012736/uOwdzrEz_200x200.jpg"
+   },
+   "text": "We Must Pace the Frontier: I’ve written a new essay on why the AI industry should slow down, with a three-part plan for doing so.\n\nAnthropic is unilaterally committing to the first of these steps. We’ll provide third-party evaluators with permanent, employee-level access to our systems, so that they can verify adherence to our safety measures, report on incidents, and assess models’ alignment during training.\n\nYou can read the full post here: https://darioamodei.com/post/we-must-pace-the-frontier",
+   "date": 1789221670,
+   "media": [],
+   "links": [
+    "https://darioamodei.com/post/we-must-pace-the-frontier"
+   ]
+  },
+  {
+   "kind": "link",
+   "url": "https://darioamodei.com/post/we-must-pace-the-frontier",
+   "domain": "darioamodei.com",
+   "title": "Dario Amodei — We Must Pace the Frontier",
+   "description": null,
+   "image": "https://cdn.prod.website-files.com/67ecbba31246a69e485fdd4b/6aa5311897ee19af5d9f2cd9_og_we-must-pace-the-frontier.jpg",
+   "site": "darioamodei.com"
+  }
+ ],
+ "article": {
+  "title": "داریو آمودی، رئیس شرکت آنتروپیک، یه مقاله تازه داده بیرون و سفت‌وسخت گفته که غول‌های هوش مصنوعی باید ترمز دستی سرعت پیشرفت رو بکشن و یه خورده آروم‌تر گاز بدن",
+  "source_title": "We Must Pace the Frontier: I’ve written a new essay on why the AI industry should slow down, with a three-part plan for doing so.",
+  "body": [
+   "ببین رفیق، داریو آمودی، رئیس شرکت آنتروپیک، یه مقاله تازه داده بیرون و سفت‌وسخت گفته که غول‌های هوش مصنوعی باید ترمز دستی سرعت پیشرفت رو بکشن و یه خورده آروم‌تر گاز بدن. خود شرکتش هم داوطلبانه استارت کار رو زده و اعلام کرده به کارشناس‌ها و ناظرای مستقل بیرونی، دسترسی هم‌سطح کارمندای خودشون میده تا بتونن شبانه‌روزی بیان تو دل سیستم‌ها و چک کنن. با این کار می‌خوان مطمئن بشن که اصول ایمنی مو‌به‌مو رعایت می‌شه، خرابکاری‌ها سریع گزارش داده بشه و موقع آموزش دادن مدل‌ها، هوش مصنوعی از مسیر امن خارج نشه."
+  ],
+  "why": "بعد این‌همه مسابقه جنون‌آمیز سر ساخت هوش مصنوعی قوی‌تر، بالاخره یکی از کله‌گنده‌های این میدون دست بالا برده و می‌خواد درهای شرکتش رو روی ناظرای بی‌طرف باز کنه تا جلوی فاجعه‌های آینده رو بگیره.",
+  "tags": [
+   "آنتروپیک"
+  ]
+ },
+ "updated": "2026-10-25T12:27:08+00:00",
+ "gholam_checked": "2026-10-25T12:27:08+00:00"
+}

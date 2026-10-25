@@ -1,0 +1,59 @@
+{
+ "id": 4626,
+ "url": "https://t.me/dlmehr/4626",
+ "date": "2026-08-06T22:58:47+00:00",
+ "text": "https://fxtwitter.com/cloudflaredev/status/2085394318005846411?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+ "forwarded_from": null,
+ "digest": false,
+ "hash": "e5cb7fba41cd",
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/cloudflaredev/status/2085394318005846411?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+  "site": "FxTwitter · blog.cloudflare.com",
+  "title": "Cloudflare Developers (@CloudflareDev)",
+  "description": "Introducing Kitesurf: a browser built for agents, running entirely on Cloudflare Workers.\nChromium is too heavy to hand every agent one. Kitesurf is written in Rust, uses 3-7x less CPU and memory, and spins up per request.\nFree in beta: https://blog.cl…",
+  "image": "https://cdn4.telesco.pe/file/CvtgOWxsupiSgZClc4TRmMQYJwaVllluWogzjGA76qH7f9p47n2Cj_sqAWFcXqE2YgSDXfzhaHz_mEe9Ze_j7GPnwkLGtIf2boekp5dLiL_yr9vGD-kpdHfKz2EyuT9a8fTroAM1iEmz2EaJhLxfqDCEu8z5O9eoicG8unhPes8bZkcHSweS_og6CnCSiGFJ9_71EKsZvj6n3y-CRDaRGlU70xbqIYmFFF8zVL2gaD66NYbAIbM3MtZZbNSfE8k_F5YZdCLHJ_P4Du7d0N68uHjytzx3e-V-pZCI9xzR8cbz7Pyj-QBqOjDTK7p43idC86NUBdndAqhI5x1FsmslSg.jpg"
+ },
+ "gholam": {
+  "text": "رفیق، بچه‌های کلادفلر از یه مرورگر مشتی به اسم Kitesurf رونمایی کردن که کلاً مخصوص ایجنت‌های هوش مصنوعی ساخته شده و روی سرویس Cloudflare Workers اجرا می‌شه. راستش مرورگرهای سنگینی مثل کرومیوم اصلاً واسه دادن به دست ایجنت‌ها به درد نمی‌خوردن و رم سیستم رو می‌بلعیدن، اما این کار جدید با زبان راست نوشته شده. برای همین بین ۳ تا ۷ برابر رم و سی‌پیو کمتری مصرف می‌کنه و به ازای هر درخواست هم فوری بالا میاد. الان هم تازه اومده و توی فاز بتا استفاده ازش کاملاً رایگانه.\n\nچرا مهمه؟ چون هزینه‌ها و سرعت اجرا برای ایجنت‌های هوش مصنوعی رو به شدت بهینه‌تر می‌کنه و دیگه نیازی نیست واسه هر پردازش، مرورگرهای سنگین و پرمصرف رو زیر بار ببرین.",
+  "date": "2026-08-06T22:59:04+00:00"
+ },
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/CloudflareDev/status/2085394318005846411",
+   "domain": "x.com",
+   "author": {
+    "name": "Cloudflare Developers",
+    "handle": "CloudflareDev",
+    "avatar": "https://pbs.twimg.com/profile_images/2091957221253173248/kB_huM5C_200x200.jpg"
+   },
+   "text": "Introducing Kitesurf: a browser built for agents, running entirely on Cloudflare Workers.\n\nChromium is too heavy to hand every agent one. Kitesurf is written in Rust, uses 3-7x less CPU and memory, and spins up per request.\n\nFree in beta: https://blog.cloudflare.com/kitesurf/",
+   "date": 1786031724,
+   "media": [],
+   "links": [
+    "https://blog.cloudflare.com/kitesurf/"
+   ]
+  },
+  {
+   "kind": "link",
+   "url": "https://blog.cloudflare.com/kitesurf/",
+   "domain": "blog.cloudflare.com",
+   "title": "Introducing Kitesurf: The agent-first browser that runs in V8 isolates on Cloudflare Workers",
+   "description": "We should be giving all agents tools that excel at what’s important for an AI model. Kitesurf is Cloudflare’s new stateless, highly scalable, and cost-effective web browser that runs entirely on top of Workers and was designed specifically for the Agentic Cloud.",
+   "image": "https://blog.cloudflare.com/_emdash/api/media/file/01KZBWYMKT77FDVB07PHA3R5WM.png",
+   "site": "Cloudflare Blog"
+  }
+ ],
+ "article": {
+  "title": "بچه‌های کلادفلر از یه مرورگر مشتی به اسم Kitesurf رونمایی کردن که کلاً مخصوص ایجنت‌های هوش مصنوعی ساخته شده و روی سرویس Cloudflare Workers اجرا می‌شه",
+  "source_title": "Introducing Kitesurf: a browser built for agents, running entirely on Cloudflare Workers.",
+  "body": [
+   "رفیق، بچه‌های کلادفلر از یه مرورگر مشتی به اسم Kitesurf رونمایی کردن که کلاً مخصوص ایجنت‌های هوش مصنوعی ساخته شده و روی سرویس Cloudflare Workers اجرا می‌شه. راستش مرورگرهای سنگینی مثل کرومیوم اصلاً واسه دادن به دست ایجنت‌ها به درد نمی‌خوردن و رم سیستم رو می‌بلعیدن، اما این کار جدید با زبان راست نوشته شده. برای همین بین ۳ تا ۷ برابر رم و سی‌پیو کمتری مصرف می‌کنه و به ازای هر درخواست هم فوری بالا میاد. الان هم تازه اومده و توی فاز بتا استفاده ازش کاملاً رایگانه."
+  ],
+  "why": "چون هزینه‌ها و سرعت اجرا برای ایجنت‌های هوش مصنوعی رو به شدت بهینه‌تر می‌کنه و دیگه نیازی نیست واسه هر پردازش، مرورگرهای سنگین و پرمصرف رو زیر بار ببرین.",
+  "tags": []
+ },
+ "updated": "2026-10-25T12:30:47+00:00",
+ "gholam_checked": "2026-10-25T12:30:47+00:00"
+}

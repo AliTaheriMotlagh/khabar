@@ -1,0 +1,53 @@
+{
+ "id": 4579,
+ "url": "https://t.me/dlmehr/4579",
+ "date": "2026-08-04T20:47:39+00:00",
+ "text": "https://x.com/LambLabs/status/2084692794388418746?s=20",
+ "forwarded_from": "Mehdi",
+ "digest": false,
+ "hash": "6ddc4974f6bc",
+ "media": [],
+ "preview": null,
+ "gholam": {
+  "text": "ببین، این رفقامون تو Lamb Labs دارن چیپ‌های اختصاصی هوش مصنوعی می‌سازن که سرعتشون غوغاست و ۶۳ برابر از کارت‌های گرافیکی معمولی بهینه‌تر کار می‌کنه. میگن کارت گرافیک فقط چون اون زمان دم دست بود جا افتاد، وگرنه خوراک واقعی پردازش هوش مصنوعی نبوده و نیست!",
+  "date": "2026-08-04T20:47:51+00:00"
+ },
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/LambLabs/status/2084692794388418746",
+   "domain": "x.com",
+   "author": {
+    "name": "Lamb Labs (YC S26)",
+    "handle": "LambLabs",
+    "avatar": "https://pbs.twimg.com/profile_images/2071442099019579392/jxGtpU0r_200x200.jpg"
+   },
+   "text": "Lamb Labs (YC S26) is building custom AI inference chips that can do 20,000+ tok/s at 63x higher Intelligence per Watt (IPW) than traditional GPUs. \n\nGPUs became the default for AI because they were available, not because they were the right hardware.",
+   "date": 1785864468,
+   "media": [
+    {
+     "type": "video",
+     "src": "https://video.twimg.com/amplify_video/2084688307699531776/vid/avc1/1280x720/8UqFopgqPmNvwt2G.mp4?tag=14",
+     "poster": "https://pbs.twimg.com/amplify_video_thumb/2084688307699531776/img/u45O94YuE61UwC8N.jpg",
+     "ratio": 0.5625,
+     "duration": 65.493,
+     "gif": false
+    }
+   ],
+   "links": []
+  }
+ ],
+ "article": {
+  "title": "این رفقامون تو Lamb Labs دارن چیپ‌های اختصاصی هوش مصنوعی می‌سازن که سرعتشون غوغاست و ۶۳ برابر از کارت‌های گرافیکی معمولی بهینه‌تر کار می‌کنه",
+  "source_title": "Lamb Labs (YC S26) is building custom AI inference chips that can do 20,000+ tok/s at 63x higher Intelligence per Watt (IPW) than…",
+  "body": [
+   "ببین، این رفقامون تو Lamb Labs دارن چیپ‌های اختصاصی هوش مصنوعی می‌سازن که سرعتشون غوغاست و ۶۳ برابر از کارت‌های گرافیکی معمولی بهینه‌تر کار می‌کنه. میگن کارت گرافیک فقط چون اون زمان دم دست بود جا افتاد، وگرنه خوراک واقعی پردازش هوش مصنوعی نبوده و نیست!"
+  ],
+  "why": null,
+  "tags": [
+   "تراشه"
+  ]
+ },
+ "updated": "2026-10-25T12:31:00+00:00",
+ "gholam_checked": "2026-10-25T12:31:00+00:00"
+}

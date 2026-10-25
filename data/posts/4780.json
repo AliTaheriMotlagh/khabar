@@ -1,0 +1,59 @@
+{
+ "id": 4780,
+ "url": "https://t.me/dlmehr/4780",
+ "date": "2026-08-17T04:50:22+00:00",
+ "text": "https://fxtwitter.com/erenchenai/status/2089029735128957191?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+ "forwarded_from": null,
+ "digest": false,
+ "hash": "89d9d23ba2ee",
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/erenchenai/status/2089029735128957191?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+  "site": "🧵 Thread • FxTwitter",
+  "title": "Eren Chen (@ErenChenAI)",
+  "description": "HopTo’s Hop-1 is a hybrid hopping-and-flying robot built for rough terrain.\nIt looks weird at first, but the logic is actually pretty smart. Flying all the time burns a ton of energy just fighting gravity, so they let the robot spend most of its time bouncing…",
+  "image": null
+ },
+ "gholam": {
+  "text": "ببین رفیق، یه شرکت به اسم HopTo اومده یه ربات باحال به اسم Hop-1 ساخته که هم می‌پره و هم پرواز می‌کنه تا تو جاهای ناهموار و ناهموار کم نیاره. ماجرا از این قراره که پرواز مداوم پدر باتری رو درمیاره، واسه همین این ربات بخش اعظم مسیر رو با یه فنر نرم روی زمین جهش می‌زنه و بپربپر می‌کنه. موتورها و ملخ‌هاش هم فقط واسه تعیین مسیر، جبران انرژی پرش‌ها و موقعی که واقعاً نیاز به پرواز باشه دست‌به‌کار میشن. شرکت سازنده گفته با این کلک، جهیدن فقط حدود ۲۵ درصدِ پرواز مداوم انرژی مصرف می‌کنه و ربات خیلی دیرتر شارژ خالی می‌کنه.\n\nچرا مهمه؟ چون نشون میده با ترکیب هوشمندانه جهش مکانیکی و پرواز، میشه عمر باتری ربات‌های شناسایی رو توی مسیرهای صعب‌العبور چند برابر کرد.",
+  "date": "2026-08-17T04:50:32+00:00"
+ },
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/ErenChenAI/status/2089029735128957191",
+   "domain": "x.com",
+   "author": {
+    "name": "Eren Chen",
+    "handle": "ErenChenAI",
+    "avatar": "https://pbs.twimg.com/profile_images/1957418376328101888/GYV0ueqf_200x200.jpg"
+   },
+   "text": "HopTo’s Hop-1 is a hybrid hopping-and-flying robot built for rough terrain.\n\nIt looks weird at first, but the logic is actually pretty smart. Flying all the time burns a ton of energy just fighting gravity, so they let the robot spend most of its time bouncing on a passive spring instead. \n\nThe rotors mainly steer, put back the energy lost on each hop, and only fully take over when the robot actually needs to fly.\n\nHopTo says hopping uses around 25% of the energy of continuous flight.\n\nSo the whole idea is pretty simple: stay on the ground as much as possible, and only fly when you have to.",
+   "date": 1786898475,
+   "media": [
+    {
+     "type": "video",
+     "src": "https://video.twimg.com/amplify_video/2089029509693534208/vid/avc1/1024x576/Spg1J0x0QRUqDSIp.mp4?tag=29",
+     "poster": "https://pbs.twimg.com/amplify_video_thumb/2089029509693534208/img/EpwOU9no9EK5AQy8.jpg",
+     "ratio": 0.5625,
+     "duration": 90.025,
+     "gif": false
+    }
+   ],
+   "links": []
+  }
+ ],
+ "article": {
+  "title": "یه شرکت به اسم HopTo اومده یه ربات باحال به اسم Hop-1 ساخته که هم می‌پره و هم پرواز می‌کنه تا تو جاهای ناهموار و ناهموار کم نیاره",
+  "source_title": "HopTo’s Hop-1 is a hybrid hopping-and-flying robot built for rough terrain.",
+  "body": [
+   "ببین رفیق، یه شرکت به اسم HopTo اومده یه ربات باحال به اسم Hop-1 ساخته که هم می‌پره و هم پرواز می‌کنه تا تو جاهای ناهموار و ناهموار کم نیاره. ماجرا از این قراره که پرواز مداوم پدر باتری رو درمیاره، واسه همین این ربات بخش اعظم مسیر رو با یه فنر نرم روی زمین جهش می‌زنه و بپربپر می‌کنه. موتورها و ملخ‌هاش هم فقط واسه تعیین مسیر، جبران انرژی پرش‌ها و موقعی که واقعاً نیاز به پرواز باشه دست‌به‌کار میشن. شرکت سازنده گفته با این کلک، جهیدن فقط حدود ۲۵ درصدِ پرواز مداوم انرژی مصرف می‌کنه و ربات خیلی دیرتر شارژ خالی می‌کنه."
+  ],
+  "why": "چون نشون میده با ترکیب هوشمندانه جهش مکانیکی و پرواز، میشه عمر باتری ربات‌های شناسایی رو توی مسیرهای صعب‌العبور چند برابر کرد.",
+  "tags": [
+   "رباتیک"
+  ]
+ },
+ "updated": "2026-10-25T12:30:07+00:00",
+ "gholam_checked": "2026-10-25T12:30:07+00:00"
+}

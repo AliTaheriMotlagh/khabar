@@ -1,0 +1,74 @@
+{
+ "id": 4684,
+ "url": "https://t.me/dlmehr/4684",
+ "date": "2026-08-11T00:57:14+00:00",
+ "text": "https://fxtwitter.com/hesamation/status/2086826255341469838?s=46",
+ "forwarded_from": "Hossein Zakariaee",
+ "digest": false,
+ "hash": "c8996199f0d4",
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/hesamation/status/2086826255341469838?s=46",
+  "site": "FxTwitter",
+  "title": "ℏεsam (@Hesamation)",
+  "description": "WAIT A MINUE, so Claude is not only the most expensive frontier model, but Claude Code is also the most token-hungry harness?\nthe Claude Code enterprise bills are starting to make sense.\nQuoting Composio (@composio)\nWe ran DeepSeek V4 Flash through 4…",
+  "image": "https://cdn4.telesco.pe/file/UnOuJFAqYTUL4ruLSzMq9i5sAVv1dXpkqkHC9jWEzdv95ygBMGQGj94YlE_JfyWfuSscvQYp1-vjnGwWMGtm1ut2VyTld16Ma8t-EwfHGjMjEJ6VSLowpQTMap3SN-3RkdRLFkzWdLbTwVK9hpYQCQNu7U8ZqYBFl0T4a37w6xpUGmtx9Ge9agqDdGPzMQxOuimuATOTNS1NevdNorMMcBqq2bRknyZBUQF0WhnPEPMEO_jgFVl06vdMQDT2s04W1lobdXN8jEIDcVoqO34aLIEEVmlnDCV9P9dbuJYEYQMYzyWm1yt039Ls5GcMqq_9Y-xAz9bfqzyr4uiKuGq4Dw.jpg"
+ },
+ "gholam": {
+  "text": "رفیق، اگه برات سوال بود چرا فاکتورهای ابزار «کلود کد» واسه شرکت‌ها این‌قدر نجومی درمیاد، بالاخره راز این قضیه لو رفت! ببین، بررسی‌ها مشخص کرده که هوش مصنوعی کلود نه‌تنها گرون‌ترین مدل پیشروی بازاره، بلکه ابزار کلود کد هم پرمصرف‌ترین سیستمه و توکن‌ها رو مثل جاروبرقی می‌بلعه. توی تست‌هایی که رو چندتا ابزار هوشمند انجام شده، معلوم شد گزینه‌های دیگه‌ای مثل Pi Agent هم هستن که هم هزینه‌شون خیلی کمتره و هم کارهای سخت رو بهتر تحویل میدن. خلاصه این ترکیبِ مدل گرون‌قیمت و اشتهای بالای توکن‌خواری، بدجوری حساب بانکی شرکت‌ها رو خالی کرده.\n\nاهمیتش اینه که نشون میده گرون‌ترین ابزار همیشه بهترین گزینه نیست و با شناخت گزینه‌های جایگزین میشه هزینه‌های برنامه‌نویسی با هوش مصنوعی رو حسابی پایین آورد.",
+  "date": "2026-08-11T00:57:32+00:00"
+ },
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/Hesamation/status/2086826255341469838",
+   "domain": "x.com",
+   "author": {
+    "name": "ℏεsam",
+    "handle": "Hesamation",
+    "avatar": "https://pbs.twimg.com/profile_images/1978647680357134336/ioMmfkXF_200x200.jpg"
+   },
+   "text": "WAIT A MINUE, so Claude is not only the most expensive frontier model, but Claude Code is also the most token-hungry harness?\n\nthe Claude Code enterprise bills are starting to make sense.",
+   "date": 1786373125,
+   "media": [
+    {
+     "type": "image",
+     "src": "https://pbs.twimg.com/media/HPXlayhXEAAVCXu.jpg?name=orig",
+     "ratio": 0.6168
+    }
+   ],
+   "links": [],
+   "quote": {
+    "author": {
+     "name": "Composio",
+     "handle": "composio",
+     "avatar": "https://pbs.twimg.com/profile_images/2036542629220089856/zc7Eix-q_200x200.jpg"
+    },
+    "text": "We ran DeepSeek V4 Flash through 4 more agent harnesses (Hermes Agent, Pi Agent, Prime Agent, Deep Agents) on 30 challenging agentic tasks.\n\nPi Agent was the cheapest harness and passed the most tasks 🧵🧵",
+    "date": 1786370319,
+    "media": [
+     {
+      "type": "image",
+      "src": "https://pbs.twimg.com/media/HPXZaY5XUAAmz_p.jpg?name=orig",
+      "ratio": 0.5519
+     }
+    ],
+    "links": []
+   }
+  }
+ ],
+ "article": {
+  "title": "اگه برات سوال بود چرا فاکتورهای ابزار «کلود کد» واسه شرکت‌ها این‌قدر نجومی درمیاد، بالاخره راز این قضیه لو رفت",
+  "source_title": "WAIT A MINUE, so Claude is not only the most expensive frontier model, but Claude Code is also the most token-hungry harness?",
+  "body": [
+   "رفیق، اگه برات سوال بود چرا فاکتورهای ابزار «کلود کد» واسه شرکت‌ها این‌قدر نجومی درمیاد، بالاخره راز این قضیه لو رفت! ببین، بررسی‌ها مشخص کرده که هوش مصنوعی کلود نه‌تنها گرون‌ترین مدل پیشروی بازاره، بلکه ابزار کلود کد هم پرمصرف‌ترین سیستمه و توکن‌ها رو مثل جاروبرقی می‌بلعه. توی تست‌هایی که رو چندتا ابزار هوشمند انجام شده، معلوم شد گزینه‌های دیگه‌ای مثل Pi Agent هم هستن که هم هزینه‌شون خیلی کمتره و هم کارهای سخت رو بهتر تحویل میدن. خلاصه این ترکیبِ مدل گرون‌قیمت و اشتهای بالای توکن‌خواری، بدجوری حساب بانکی شرکت‌ها رو خالی کرده."
+  ],
+  "why": "نشون میده گرون‌ترین ابزار همیشه بهترین گزینه نیست و با شناخت گزینه‌های جایگزین میشه هزینه‌های برنامه‌نویسی با هوش مصنوعی رو حسابی پایین آورد.",
+  "tags": [
+   "آنتروپیک",
+   "کدنویسی"
+  ]
+ },
+ "updated": "2026-10-25T12:30:33+00:00",
+ "gholam_checked": "2026-10-25T12:30:33+00:00"
+}

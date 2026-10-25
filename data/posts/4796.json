@@ -1,0 +1,86 @@
+{
+ "id": 4796,
+ "url": "https://t.me/dlmehr/4796",
+ "date": "2026-08-18T15:57:44+00:00",
+ "text": "https://fxtwitter.com/jackyk02/status/2089421448784023553?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+ "forwarded_from": null,
+ "digest": false,
+ "hash": "5e51ecadad8e",
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/jackyk02/status/2089421448784023553?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+  "site": "FxTwitter",
+  "title": "Jacky Kwok (@jackyk02)",
+  "description": "Scaling self-verification with DeepSeek V4 Flash beats Claude Fable 5 on Terminal-Bench 2.1, while being 11x cheaper\n💰\nAs open-source models become more capable, they can now generate large numbers of high-quality candidate solutions and verify their own…",
+  "image": "https://cdn4.telesco.pe/file/jWxDce5HCRcRRHkiDDbVEuWfn1V9y71dwfpb26tSOc1P0pXsMMN15wBOHbxBLV20nZFh8RgbI2goecrCJAlrPeiTg6JeLENB7H2ucIsvOq2IH3QlU6kkQORycOvFS7enrOKS9cndiHcyTxZUt-H6jW3BqOgX65j7bQWW38cyVhABa9nApZetIVRPciKrJ_MEStHzbqhPp2hEWABIH-6TjnA8Ze5cQDVKluLAAq8q8MXHW_goDOA6g-Af9ijhksskY_YRPdkjPCeHHL5-JYHoe3NgdrcdIWq4aixB8Trpd9ZCMu5dWiJpNuLfNCqrtniIzcK9FvxtCRkh7OajTJgCpQ.jpg"
+ },
+ "gholam": {
+  "text": "رفیق، جکی کواک یه گزارش جالب داده و نشون داده که مدل بازمتن DeepSeek V4 Flash با یه تکنیک خودارزیابی تونسته غول بسته‌ای مثل Claude Fable 5 رو توی بنچمارک Terminal-Bench 2.1 جا بذاره. ماجرا از این قراره که با فریم‌ورک LLM-as-a-Verifier، مدل فقط ۵ تا راه‌حل مختلف تولید می‌کنه و بعدش خود همون مدل با یه نمره‌دهی دقیق‌تر، خروجی‌های خودش رو رتبه‌بندی و بهترین رو انتخاب می‌کنه. همین حرکت تر و تمیز دقت سیستم رو از ۷۹ درصد به ۸۸ درصد رسونده و ته کار هم ۱۱ برابر نسبت به رقیب بسته‌اش ارزون‌تر تموم شده.\n\nاهمیتش اینه که ثابت می‌کنه با ترکیب هوشمندانه مدل‌های ارزون و بازمتن با متدهای خودارزیابی، دیگه نیازی نیست برای خروجی‌های سطح بالا حتماً زیر بار هزینه‌های سنگین مدل‌های بسته بریم.",
+  "date": "2026-08-18T15:57:56+00:00"
+ },
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/jackyk02/status/2089421448784023553",
+   "domain": "x.com",
+   "author": {
+    "name": "Jacky Kwok",
+    "handle": "jackyk02",
+    "avatar": "https://pbs.twimg.com/profile_images/1938668993293750272/iNSxmD3Q_200x200.jpg"
+   },
+   "text": "Scaling self-verification with DeepSeek V4 Flash beats Claude Fable 5 on Terminal-Bench 2.1, while being 11x cheaper 💰\n\nAs open-source models become more capable, they can now generate large numbers of high-quality candidate solutions and verify their own outputs at very low cost.\n\nFor example, we find that sampling just 5 solutions with DeepSeek V4 Flash and ranking them using the same model with LLM-as-a-Verifier can lead to a significant boost in accuracy (79% → 88%), outperforming closed frontier models on Terminal-Bench.\n\nTry it out today: https://github.com/llm-as-a-verifier/llm-as-a-verifier#self-verification-terminal-bench-21\n\nMore on verification scaling in my previous post.",
+   "date": 1786991867,
+   "media": [
+    {
+     "type": "image",
+     "src": "https://pbs.twimg.com/media/HP8c7DyaYAAjGdm.jpg?name=orig",
+     "ratio": 0.7612
+    }
+   ],
+   "links": [
+    "https://github.com/llm-as-a-verifier/llm-as-a-verifier#self-verification-terminal-bench-21"
+   ],
+   "quote": {
+    "author": {
+     "name": "Jacky Kwok",
+     "handle": "jackyk02",
+     "avatar": "https://pbs.twimg.com/profile_images/1938668993293750272/iNSxmD3Q_200x200.jpg"
+    },
+    "text": "How can we extract richer signals from AI Feedback?\n\nIntroducing LLM-as-a-Verifier✨— a simple verification scaling framework that achieves SOTA on agentic benchmarks 🚀\n\nThe key idea:\n- Use fine-grained scoring granularity (e.g., 1-20 instead of the standard 1-5 scale)\n- Take the expectation over the full logprob distribution of score tokens\n- Scale repeated evaluation and criteria decomposition\n\nYou can use these fine-grained signals for more effective test-time scaling, RL, and agent monitoring! It achieves SOTA across Terminal-Bench V2, SWE-Bench Verified, RoboRewardBench, and MedAgentBench 👑\n\nAdvised by @Azaliamirh @istoica05 @drmapavone @chelseabfinn \n\n🧵👇",
+    "date": 1783546330,
+    "media": [
+     {
+      "type": "image",
+      "src": "https://pbs.twimg.com/media/HMvFN6qbMAA6FeR.jpg?name=orig",
+      "ratio": 0.6179
+     }
+    ],
+    "links": []
+   }
+  },
+  {
+   "kind": "link",
+   "url": "https://github.com/llm-as-a-verifier/llm-as-a-verifier#self-verification-terminal-bench-21",
+   "domain": "github.com",
+   "title": "GitHub - llm-as-a-verifier/llm-as-a-verifier: LLM-as-a-Verifier is a general-purpose framework that provides fine-grained feedback for any agent without requiring additional training. It achieves SOTA performance across coding, robotics, and medical agentic benchmarks.",
+   "description": "LLM-as-a-Verifier is a general-purpose framework that provides fine-grained feedback for any agent without requiring additional training. It achieves SOTA performance across coding, robotics, and m...",
+   "image": "https://opengraph.githubassets.com/380004d4e74c8372c319cb3bb1fe0fbd7ce335d0fbbc8873e754bbe9041867e8/llm-as-a-verifier/llm-as-a-verifier",
+   "site": "GitHub"
+  }
+ ],
+ "article": {
+  "title": "جکی کواک یه گزارش جالب داده و نشون داده که مدل بازمتن DeepSeek V4 Flash با یه تکنیک خودارزیابی تونسته غول بسته‌ای مثل Claude Fable 5 رو توی بنچمارک Terminal-Bench 2.1 جا بذاره",
+  "source_title": "Scaling self-verification with DeepSeek V4 Flash beats Claude Fable 5 on Terminal-Bench 2.1, while being 11x cheaper 💰",
+  "body": [
+   "رفیق، جکی کواک یه گزارش جالب داده و نشون داده که مدل بازمتن DeepSeek V4 Flash با یه تکنیک خودارزیابی تونسته غول بسته‌ای مثل Claude Fable 5 رو توی بنچمارک Terminal-Bench 2.1 جا بذاره. ماجرا از این قراره که با فریم‌ورک LLM-as-a-Verifier، مدل فقط ۵ تا راه‌حل مختلف تولید می‌کنه و بعدش خود همون مدل با یه نمره‌دهی دقیق‌تر، خروجی‌های خودش رو رتبه‌بندی و بهترین رو انتخاب می‌کنه. همین حرکت تر و تمیز دقت سیستم رو از ۷۹ درصد به ۸۸ درصد رسونده و ته کار هم ۱۱ برابر نسبت به رقیب بسته‌اش ارزون‌تر تموم شده."
+  ],
+  "why": "ثابت می‌کنه با ترکیب هوشمندانه مدل‌های ارزون و بازمتن با متدهای خودارزیابی، دیگه نیازی نیست برای خروجی‌های سطح بالا حتماً زیر بار هزینه‌های سنگین مدل‌های بسته بریم.",
+  "tags": [
+   "چین",
+   "آنتروپیک",
+   "کدنویسی"
+  ]
+ },
+ "updated": "2026-10-25T12:30:02+00:00",
+ "gholam_checked": "2026-10-25T12:30:02+00:00"
+}

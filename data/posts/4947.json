@@ -1,0 +1,84 @@
+{
+ "id": 4947,
+ "url": "https://t.me/dlmehr/4947",
+ "date": "2026-08-25T18:16:59+00:00",
+ "text": "https://fxtwitter.com/kimmonismus/status/2092314583981539731?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+ "forwarded_from": null,
+ "digest": false,
+ "hash": "79be7f8fcbd1",
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/kimmonismus/status/2092314583981539731?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+  "site": "🧵 Thread • FxTwitter",
+  "title": "Chubby ♨️ (@kimmonismus)",
+  "description": "interesting detail in OpenAIs blogpost to \"Jalapeño\":\nGPT-Astra used Codex to write and optimize low-level kernels that brought three previously unplanned open-weight models to high performance on OpenAI’s Jalapeño chip within two months.\nFor selected…",
+  "image": "https://cdn4.telesco.pe/file/hIvO-QViYv2QG0mUKftGQnC0jaDBToq8WokOGBAc1t0nOF9A4Kl1IwE63oJYQCLFYRkAvAiE8guF2dxCKQjqL5QofFxTpPWqOSDfvYKaZBeFSBenQVMOBLM1NB4KdaGb-onQps6eu5hZOy96gvTE4IlWLyOB0P_4sQRXLrNUDwBIsFIiwJh8Yw2xGgQO1aeHvdDR7SV_hzmKKMMeWCvde_MDF0fWypcVYNm0_ccylGE7yWKF0Etow5CkFHceEvwW1h0TRrysyK0zKJufeJFPgJLzDo3MaXJI9VHrfjpwmc6l1WIXGUl5FIBwamYBICPJMmwSMLZlSHm1h_MYEzuzwA.jpg"
+ },
+ "gholam": {
+  "text": "ببین رفیق، بچه‌های اوپن‌ای‌آی از چیپ اختصاصی جدیدشون به اسم «خالوپینو» پرده‌برداری کردن و یه آمار برگ‌ریزون دادن که هوش مصنوعی عملاً خودش نشسته برای سخت‌افزار خودش کد زده! ماجرا اینه که مدل GPT-Astra اومده با کمک کادکس توی دو ماه کرنل‌های سطح‌پایین این تراشه رو طوری بهینه‌سازی کرده که کدهایش بین ۱.۵ تا ۱.۸ برابر سریع‌تر از دستپخت خفن‌ترین برنامه‌نویس‌های انسانی کار می‌کنن. تازه ادعا کردن این چیپست جدید توی سرعت و بازدهی مصرف انرژی، سیستم‌های غول‌پیکر GB200 و GB300 انویدیا رو هم قشنگ جا گذاشته و رو مدل‌های سنگین کارایی خفنی ثبت کرده.\n\nاهمیتش اینه که هوش مصنوعی وارد فازی شده که خودش تراشه‌ها رو بهتر از مهندس‌های انسانی بهینه می‌کنه و بازار انحصاری انویدیا هم بدجور زیر تیغ رقابت رفته.",
+  "date": "2026-08-25T18:17:13+00:00"
+ },
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/kimmonismus/status/2092314583981539731",
+   "domain": "x.com",
+   "author": {
+    "name": "Chubby♨️",
+    "handle": "kimmonismus",
+    "avatar": "https://pbs.twimg.com/profile_images/1728327996375719936/RW7VBJfD_200x200.jpg"
+   },
+   "text": "interesting detail in OpenAIs blogpost to \"Jalapeño\":\n\nGPT-Astra used Codex to write and optimize low-level kernels that brought three previously unplanned open-weight models to high performance on OpenAI’s Jalapeño chip within two months. \n\nFor selected attention and mixture-of-experts blocks, its implementations ran 1.5–1.8× faster than existing human-expert-written code.\n\nlooks like astra is a really really good model.",
+   "date": 1787681644,
+   "media": [
+    {
+     "type": "image",
+     "src": "https://pbs.twimg.com/media/HQlkJvVXwAASa8g.png?name=orig",
+     "ratio": 0.3898
+    }
+   ],
+   "links": [],
+   "quote": {
+    "author": {
+     "name": "Chubby♨️",
+     "handle": "kimmonismus",
+     "avatar": "https://pbs.twimg.com/profile_images/1728327996375719936/RW7VBJfD_200x200.jpg"
+    },
+    "text": "Holy: OpenAI says its first custom inference chip is already beating Nvidia GB200 and GB300 systems on speed and efficiency.\n\nAcross GPT‑OSS 120B, DeepSeek R1 670B, and Kimi K2.5 1T, Jalapeño delivered 1.5–1.9× more AI work per watt at peak throughput and 1.7–3.6× lower end-to-end latency in OpenAI’s own InferenceX testing!\n\nFor highly interactive workloads, OpenAI reports 2.1–4.1× higher performance.\n\nThe chip is rated at 700 watts, but remained at or below 550 watts during the tested workloads.\n\nOpenAI plans to begin deploying Jalapeño by the end of 2026. Gen 2 is already deep in development, with Gen 3 taking shape.\n\nProbably thats why Tibo said that in 1-2 years 750token/s will be the default",
+    "date": 1787668977,
+    "media": [
+     {
+      "type": "image",
+      "src": "https://pbs.twimg.com/media/HQk0O1sW0AAH1Pd.jpg?name=orig",
+      "ratio": 0.733
+     },
+     {
+      "type": "image",
+      "src": "https://pbs.twimg.com/media/HQk0RkcXwAA9JsL.jpg?name=orig",
+      "ratio": 0.7216
+     },
+     {
+      "type": "image",
+      "src": "https://pbs.twimg.com/media/HQk0n7MXEAAxqI-.jpg?name=orig",
+      "ratio": 0.5781
+     }
+    ],
+    "links": []
+   }
+  }
+ ],
+ "article": {
+  "title": "بچه‌های اوپن‌ای‌آی از چیپ اختصاصی جدیدشون به اسم «خالوپینو» پرده‌برداری کردن و یه آمار برگ‌ریزون دادن که هوش مصنوعی عملاً خودش نشسته برای سخت‌افزار خودش کد زده",
+  "source_title": "interesting detail in OpenAIs blogpost to \"Jalapeño\":",
+  "body": [
+   "ببین رفیق، بچه‌های اوپن‌ای‌آی از چیپ اختصاصی جدیدشون به اسم «خالوپینو» پرده‌برداری کردن و یه آمار برگ‌ریزون دادن که هوش مصنوعی عملاً خودش نشسته برای سخت‌افزار خودش کد زده! ماجرا اینه که مدل GPT-Astra اومده با کمک کادکس توی دو ماه کرنل‌های سطح‌پایین این تراشه رو طوری بهینه‌سازی کرده که کدهایش بین ۱.۵ تا ۱.۸ برابر سریع‌تر از دستپخت خفن‌ترین برنامه‌نویس‌های انسانی کار می‌کنن. تازه ادعا کردن این چیپست جدید توی سرعت و بازدهی مصرف انرژی، سیستم‌های غول‌پیکر GB200 و GB300 انویدیا رو هم قشنگ جا گذاشته و رو مدل‌های سنگین کارایی خفنی ثبت کرده."
+  ],
+  "why": "هوش مصنوعی وارد فازی شده که خودش تراشه‌ها رو بهتر از مهندس‌های انسانی بهینه می‌کنه و بازار انحصاری انویدیا هم بدجور زیر تیغ رقابت رفته.",
+  "tags": [
+   "اوپن‌ای‌آی",
+   "تراشه"
+  ]
+ },
+ "updated": "2026-10-25T12:29:07+00:00",
+ "gholam_checked": "2026-10-25T12:29:07+00:00"
+}

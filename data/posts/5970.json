@@ -2,16 +2,23 @@
  "id": 5970,
  "url": "https://t.me/dlmehr/5970",
  "date": "2026-10-19T15:28:35+00:00",
- "edited": true,
- "views": "214",
  "text": "https://fxtwitter.com/modal/status/2112182748135772546?s=52&t=F41Qa04r48Mef_j_XjBneQ",
  "forwarded_from": null,
  "digest": false,
  "hash": "834cf0542c32",
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/modal/status/2112182748135772546?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+  "site": "🧵 Thread • FxTwitter",
+  "title": "Modal (@modal)",
+  "description": "We got our hands on @nvidia's new Vera CPU and put it to the test.\nWe built a benchmark using real-world agentic workloads to see how it performs under contention.\nIn early tests, Vera delivered up to 2x the throughput of comparable x86 hardware, maintaining…",
+  "image": null
+ },
  "gholam": {
   "text": "ببین رفیق، بچه‌های تیم مدال دستشون به پردازنده جدید انویدیا یعنی Vera رسیده و حسابی زیر بار پردازش‌های سنگین ایجنت‌های هوش مصنوعی محک برش داشتن. طبق تست‌های اولیه‌شون، این غول جدید تونسته تا دو برابر پردازنده‌های معادل x86 بازدهی و توان پردازشی ثبت کنه. قشنگی ماجرا اینجاست که حتی وقتی صدها برنامه به شکل همزمان سر منابع پردازشی به جون هم افتادن، سیستم اصلاً کم نیاورده و تاخیرش پایین مونده. واسه پلتفرم‌هایی مثل سندباکس مدال، این دستاورد یعنی می‌شه کلی ایجنت رو به صورت موازی و بدون هیچ‌گونه افت سرعتی ردیف کرد.\n\nاهمیتش اینه که زیرساخت پردازش ایجنت‌های هوش مصنوعی وارد فاز جدیدی شده و بدون افت کیفیت می‌شه دو برابر قبل کار همزمان کشید.",
   "date": "2026-10-19T15:28:52+00:00"
  },
+ "gholam_checked": "2026-10-24T23:11:43+00:00",
  "links": [
   {
    "kind": "tweet",
@@ -46,14 +53,6 @@
    "links": []
   }
  ],
- "media": [],
- "preview": {
-  "url": "https://fxtwitter.com/modal/status/2112182748135772546?s=52&t=F41Qa04r48Mef_j_XjBneQ",
-  "site": "🧵 Thread • FxTwitter",
-  "title": "Modal (@modal)",
-  "description": "We got our hands on @nvidia's new Vera CPU and put it to the test.\nWe built a benchmark using real-world agentic workloads to see how it performs under contention.\nIn early tests, Vera delivered up to 2x the throughput of comparable x86 hardware, maintaining…",
-  "image": null
- },
  "article": {
   "title": "بچه‌های تیم مدال دستشون به پردازنده جدید انویدیا یعنی Vera رسیده و حسابی زیر بار پردازش‌های سنگین ایجنت‌های هوش مصنوعی محک برش داشتن",
   "source_title": "We got our hands on @nvidia's new Vera CPU and put it to the test.",
@@ -66,6 +65,5 @@
    "تراشه"
   ]
  },
- "updated": "2026-10-24T23:11:43+00:00",
- "gholam_checked": "2026-10-24T23:11:43+00:00"
+ "updated": "2026-10-25T11:54:08+00:00"
 }

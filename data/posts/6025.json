@@ -2,16 +2,23 @@
  "id": 6025,
  "url": "https://t.me/dlmehr/6025",
  "date": "2026-10-21T18:02:25+00:00",
- "edited": false,
- "views": "170",
  "text": "https://fxtwitter.com/UnderdogAI/status/2112733007484518470",
  "forwarded_from": "Mehran",
  "digest": false,
  "hash": "e56a53f951f3",
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/UnderdogAI/status/2112733007484518470",
+  "site": "FxTwitter",
+  "title": "Underdog AI (@UnderdogAI)",
+  "description": "Today we’re releasing Underdog Bark 3.0, the #1 frontier speech model\nIt's a tiny 163 MB download as accurate as NVIDIA’s Parakeet (15x bigger). It beats OpenAI's Whisper large-v3 (57x bigger)\nIt's fast- transcribes 1 min of audio in <0.25s on a Macbook.…",
+  "image": "https://cdn4.telesco.pe/file/n9MuvCQD-mixeCNQYHT9KwOz4-dZrdHzZ0UkPB4y1rX1ublk2wtomTidZWw09DvRmghrc8UpjqSuXdw6l_EXs8BLKjPuRkAeObWI9Czqt7VwKs8HG1OMyar8coMV6C_twZ5TrHOeKB4hhscKHijW6TLRJKbVkcYBY2Xy0-t2FKejbdH23s05N7fiSlwEW7CXdpTivugRKjj3bkBWqbCzgTF_X7a7Jsq_xd8qMu0gKue9XnHtPb7WZqPVbjvX-LaCfRd-W2Y97axXe-QywJc21cOBDUAhmYY_mT3k8OyhVKehOWQ7S4FoTOpf7Ch6BfFRxDH8Wq40KiyDqc_IU3oS6Q.jpg"
+ },
  "gholam": {
   "text": "رفیق، این بچه‌های Underdog AI از مدل تبدیل گفتار به متن جدیدشون به اسم Bark 3.0 رونمایی کردن و قشنگ زد روبه‌روی غول‌های هوش مصنوعی ایستاد. ماجرا اینه که این مدل فسقلی کلاً ۱۶۳ مگابایته، ولی از نظر دقت و کیفیت، مدل معروف Whisper large-v3 اوپن‌ای‌آی رو که ۵۷ برابر بزرگ‌تره و مدل Parakeet انویدیا رو پشت سر گذاشته. سرعتش هم طوریه که روی لپ‌تاپ، یه دقیقه فایل صوتی رو توی کمتر از یک‌چهارم ثانیه با خطای حدود ۷.۸ درصد پیاده می‌کنه. از همه باحال‌تر اینکه کاملاً رایگان و متن‌بازه و بدون دردسر و آفلاین، روی گوشی و کامپیوترت ردیف کار می‌کنه.\n\nاهمیتش اینه که دیگه بدون فرستادن اطلاعات محرمانه و صدای جلساتت به سرورهای بقیه، یه ابزار فوق‌العاده سریع و دقیق درست روی دستگاه خودت داری.",
   "date": "2026-10-21T18:02:45+00:00"
  },
+ "gholam_checked": "2026-10-24T23:03:09+00:00",
  "links": [
   {
    "kind": "tweet",
@@ -61,18 +68,6 @@
    "text": "Our models\nMeet Underdog Bark 3.0\nBark is the speech model in Underdog. When you hold fn and talk, or record a meeting, Bark turns your voice into text on your Mac. Nothing is sent anywhere. Bark 3.0 is a 163 MB download, and it’s as accurate as NVIDIA’s Parakeet, which is fifteen times bigger. It beats Whisper large-v3, which is 57 times bigger.\n- Download\n- 163 MB\n- Word errors\n- 4.94%\n- Runs on\n- your Mac\n- Language\n- English\nBark 3.0 Clean writes what you meant\nPeople don’t talk the way they write. Bark 3.0 Clean leaves out “um” and “uh”, filler like “you know” and “I mean”, false starts and repeated words. So “Um, I don-, I can’t think off my head” comes out as “I can’t think off my head.”\nIt’s the version Underdog uses by default, for dictation and for meeting notes. If you want every word, pick Bark 3.0 or Bark 3.0 Plus in Speak.\nThe Bark 3.0 family\nHow accurate is it?\nWe scored Bark on the Open ASR Leaderboard’s seven English test sets: audiobooks, meetings, earnings calls, podcasts, finance calls and parliament speeches. The number is the share of words the model gets wrong, so lower is better. Bark 3.0 is the smallest download here. Bark 3.0 Plus, at 180 MB, makes fewer mistakes than every other model under 4.6 GB except Bark 3.0 Pro.\nMeetings are where it shows most. Bark 3.0 gets 7.82% of meeting words wrong. Parakeet gets 9.42%, and Whisper large-v3 gets 13.63%.\nCleaning up, measured\nDisfluencySpeech is 250 clips of people talking off the cuff, full of “um”, restarts and repeats. A cleanup model should score low against the cleaned transcripts. A model that writes every word should score low against the word-for-word ones.\nGood to know\n- English only. For other languages, Underdog still offers Whisper Large v3 Turbo in Speak.\n- Fast. In Underdog on an M5 Max MacBook Pro, Bark 3.0 transcribes 5 minutes of audio in half a second, 595 times faster than real time.\n- No word timings or speaker names yet. Meeting notes label you and the call, not each person.\n- Your words list (names and terms you add in Settings) works with the earlier Bark 1.0, not with Bark 3.0 yet.\nBark 3.0 is built on parakeet-tdt-0.6b-v3 by NVIDIA and parakeet-ultra by Moondream, both CC-BY 4.0. Thank you to both teams."
   }
  ],
- "media": [],
- "preview": {
-  "url": "https://fxtwitter.com/UnderdogAI/status/2112733007484518470",
-  "site": "FxTwitter",
-  "title": "Underdog AI (@UnderdogAI)",
-  "description": "Today we’re releasing Underdog Bark 3.0, the #1 frontier speech model\nIt's a tiny 163 MB download as accurate as NVIDIA’s Parakeet (15x bigger). It beats OpenAI's Whisper large-v3 (57x bigger)\nIt's fast- transcribes 1 min of audio in <0.25s on a Macbook.…",
-  "image": {
-   "src": "media/6025/preview.webp",
-   "width": 800,
-   "height": 451
-  }
- },
  "article": {
   "title": "این بچه‌های Underdog AI از مدل تبدیل گفتار به متن جدیدشون به اسم Bark 3.0 رونمایی کردن و قشنگ زد روبه‌روی غول‌های هوش مصنوعی ایستاد",
   "source_title": "Today we’re releasing Underdog Bark 3.0, the #1 frontier speech model",
@@ -86,6 +81,5 @@
    "اپل"
   ]
  },
- "updated": "2026-10-24T23:03:09+00:00",
- "gholam_checked": "2026-10-24T23:03:09+00:00"
+ "updated": "2026-10-25T11:53:53+00:00"
 }

@@ -2,16 +2,23 @@
  "id": 5999,
  "url": "https://t.me/dlmehr/5999",
  "date": "2026-10-20T20:30:57+00:00",
- "edited": true,
- "views": "162",
  "text": "https://fxtwitter.com/drjimfan/status/2112597587987689912?s=52&t=F41Qa04r48Mef_j_XjBneQ",
  "forwarded_from": null,
  "digest": false,
  "hash": "5446078f9967",
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/drjimfan/status/2112597587987689912?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+  "site": "🧵 Thread • FxTwitter",
+  "title": "Jim Fan (@DrJimFan)",
+  "description": "We built a robotics data engine with Astra-level performance at 125x lower cost. And we are open-sourcing the weights today! Introducing Flora, a suite of open models to parse the physical world and turn raw footage into rich training signals.\nFlora already…",
+  "image": null
+ },
  "gholam": {
   "text": "ببین رفیق، جیم فن و تیمش حسابی گل کاشتن و یه موتور پردازش داده واسه رباتیک به اسم «فلورا» (Flora) رو با وزن‌های کاملاً متن‌باز روانه بازار کردن. دمشون گرم که عملکرد این سیستم در حد غول‌هایی مثل آستراست ولی هزینه‌ش رو ۱۲۵ برابر پایین آوردن! کار فلورا اینه که ویدیوهای خام دنیای فیزیکی رو می‌گیره و تبدیل به دیتای تر و تمیز برای یادگیری ربات‌ها می‌کنه، طوری که الان خودشون روزی ۲۰۰ هزار ساعت ویدیو رو فقط با ۵۰۰ تا کارت گرافیک برچسب‌گذاری می‌کنن. این مدل‌ها بهت کپشن‌های دقیق زمان‌بندی‌شده، سیستم پاداش برای یادگیری تقویتی و ابزار ارزیابی دنیای واقعی رو یه جا و مجانی می‌دن.\n\nاهمیتش اینه که آموزش ربات‌های هوشمند با این کاهش هزینه وحشتناک دیگه از انحصار شرکت‌های گردن‌کلفت درمیاد و راه برای همه باز میشه.",
   "date": "2026-10-20T20:31:13+00:00"
  },
+ "gholam_checked": "2026-10-24T23:03:14+00:00",
  "links": [
   {
    "kind": "tweet",
@@ -46,14 +53,6 @@
    "links": []
   }
  ],
- "media": [],
- "preview": {
-  "url": "https://fxtwitter.com/drjimfan/status/2112597587987689912?s=52&t=F41Qa04r48Mef_j_XjBneQ",
-  "site": "🧵 Thread • FxTwitter",
-  "title": "Jim Fan (@DrJimFan)",
-  "description": "We built a robotics data engine with Astra-level performance at 125x lower cost. And we are open-sourcing the weights today! Introducing Flora, a suite of open models to parse the physical world and turn raw footage into rich training signals.\nFlora already…",
-  "image": null
- },
  "article": {
   "title": "جیم فن و تیمش حسابی گل کاشتن و یه موتور پردازش داده واسه رباتیک به اسم «فلورا» (Flora) رو با وزن‌های کاملاً متن‌باز روانه بازار کردن",
   "source_title": "We built a robotics data engine with Astra-level performance at 125x lower cost. And we are open-sourcing the weights today! Introducing…",
@@ -65,6 +64,5 @@
    "رباتیک"
   ]
  },
- "updated": "2026-10-24T23:03:14+00:00",
- "gholam_checked": "2026-10-24T23:03:14+00:00"
+ "updated": "2026-10-25T11:53:56+00:00"
 }

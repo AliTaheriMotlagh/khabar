@@ -1,0 +1,65 @@
+{
+ "id": 4594,
+ "url": "https://t.me/dlmehr/4594",
+ "date": "2026-08-05T05:44:04+00:00",
+ "text": "https://fxtwitter.com/lu__jasper/status/2084477354395451578?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+ "forwarded_from": null,
+ "digest": false,
+ "hash": "88e7ef83d826",
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/lu__jasper/status/2084477354395451578?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+  "site": "FxTwitter",
+  "title": "Jasper Lu (@lu__jasper)",
+  "description": "It took me a long time to build an intuition for why CoT works. My thinking was always.. if the model can predict it downstream of 10k thinking tokens, it should have been able to predict it from the outset too.\nMy intuition now is:\n- During inference, the…",
+  "image": "https://cdn4.telesco.pe/file/eL7XF83pfgeESCzTh6BNsem2mc-HIRidge0cG8-O6_evfwqLpgtoaP0TfYYxlxHvKWu0sPxn8a5vLh2sk7L4R4GBzpMDDXchl-843FNui_OP-UcrLYY_4W9_ANM6htHZJhSM_VBbsaza1aoorCcYEDdcD7w9oLMsZwchg6aKi8q9PSf93DRydH_fi7NvVy8oXmIQ_uqyddjY6eBOIteUfbJQlpB5NmpJ8AHDVQiRFMLvJL2udz1purG0s2VP4riWxNgk3QDZU7mWopZPoKOPX67S4IAiIhAjdXbE77bAqpLZVcG8wVHnSzihGMy1FI8_fJ6Btr8H0IPIWWDiMg8ziw.jpg"
+ },
+ "gholam": {
+  "text": "ببین دوست من، این رفیقمون جاسپر لو اومده دلیل واقعی کارکردن «زنجیره تفکر» یا همون CoT رو تو مدل‌های هوش مصنوعی با یه تحلیل مشتی باز کرده. حرف حسابش اینه که موقع پاسخ‌دهی، احتمالِ رسیدن به جواب درست تو لایه‌های مخفی مدل هست، اما وقتی سیستم مجبور میشه فقط یه مسیر رو انتخاب کنه، با یه توکن اشتباه همه‌چی خراب میشه. حالا این مدل‌ها با زنجیره تفکر و عقب‌گرد زدن وسط راه، شانس دوباره به خودشون میدن تا مسیرهای مختلف رو امتحان کنن. تهش هم چون ارزیابیِ جواب برای مدل خیلی راحت‌تر از ساختنش از صفره، از بین مسیرهای بررسی‌شده درست‌ترینش رو بالا می‌کشه.\n\nچرا مهمه؟ چون فهمیدن این راز بهمون نشون میده چطور مدل‌های هوش مصنوعی مسائل پیچیده رو حل می‌کنن و چرا تکنیک‌های استدلالی دارن آینده این تکنولوژی رو می‌سازن.",
+  "date": "2026-08-05T05:44:20+00:00"
+ },
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/lu__jasper/status/2084477354395451578",
+   "domain": "x.com",
+   "author": {
+    "name": "Jasper Lu",
+    "handle": "lu__jasper",
+    "avatar": "https://pbs.twimg.com/profile_images/1871975413288722433/13S-EP52_200x200.jpg"
+   },
+   "text": "It took me a long time to build an intuition for why CoT works. My thinking was always.. if the model can predict it downstream of 10k thinking tokens, it should have been able to predict it from the outset too.\n\nMy intuition now is:\n- During inference, the correct paths are indeed somewhere in the hidden states, represented purely as probabilities\n- However, in the process of sampling, we're forced to materialize just one path. This is destructive -- a 30% chance of ending up at the answer can become 0 if we sample the wrong token.\n- The constant backtracking reasoning models do protect against this. Every \"wait\" or \"but\" is another chance for a shot on target. \n- By the time models exhaust their reasoning budget, they've already seen a bunch of possible answers\n- And since these models are also generally better at verifying answers than generating them, the chances of choosing the correct path, conditioned on this prefix, are much higher than it was at the start.",
+   "date": 1785813103,
+   "media": [],
+   "links": [],
+   "quote": {
+    "author": {
+     "name": "Lazarz",
+     "handle": "Laz4rz",
+     "avatar": "https://pbs.twimg.com/profile_images/2013971519781699584/WF0EcVi-_200x200.jpg"
+    },
+    "text": "CoT is just a poor mans way of exploration, backtracking, and scratchpadding. We use it and it works, but only because we simply don't know how to do it better AT SCALE we get CoT to work.",
+    "date": 1785788246,
+    "media": [
+     {
+      "type": "image",
+      "src": "https://pbs.twimg.com/media/HO0t763agAAZFPs.png?name=orig",
+      "ratio": 0.6313
+     }
+    ],
+    "links": []
+   }
+  }
+ ],
+ "article": {
+  "title": "این رفیقمون جاسپر لو اومده دلیل واقعی کارکردن «زنجیره تفکر» یا همون CoT رو تو مدل‌های هوش مصنوعی با یه تحلیل مشتی باز کرده",
+  "source_title": "It took me a long time to build an intuition for why CoT works. My thinking was always.. if the model can predict it downstream of 10k…",
+  "body": [
+   "ببین دوست من، این رفیقمون جاسپر لو اومده دلیل واقعی کارکردن «زنجیره تفکر» یا همون CoT رو تو مدل‌های هوش مصنوعی با یه تحلیل مشتی باز کرده. حرف حسابش اینه که موقع پاسخ‌دهی، احتمالِ رسیدن به جواب درست تو لایه‌های مخفی مدل هست، اما وقتی سیستم مجبور میشه فقط یه مسیر رو انتخاب کنه، با یه توکن اشتباه همه‌چی خراب میشه. حالا این مدل‌ها با زنجیره تفکر و عقب‌گرد زدن وسط راه، شانس دوباره به خودشون میدن تا مسیرهای مختلف رو امتحان کنن. تهش هم چون ارزیابیِ جواب برای مدل خیلی راحت‌تر از ساختنش از صفره، از بین مسیرهای بررسی‌شده درست‌ترینش رو بالا می‌کشه."
+  ],
+  "why": "چون فهمیدن این راز بهمون نشون میده چطور مدل‌های هوش مصنوعی مسائل پیچیده رو حل می‌کنن و چرا تکنیک‌های استدلالی دارن آینده این تکنولوژی رو می‌سازن.",
+  "tags": []
+ },
+ "updated": "2026-10-25T12:30:56+00:00",
+ "gholam_checked": "2026-10-25T12:30:56+00:00"
+}

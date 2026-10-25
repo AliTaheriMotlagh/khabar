@@ -2,16 +2,23 @@
  "id": 5900,
  "url": "https://t.me/dlmehr/5900",
  "date": "2026-10-14T23:04:36+00:00",
- "edited": true,
- "views": "161",
  "text": "https://fxtwitter.com/andrewcurran_/status/2110498968082043327?s=52&t=F41Qa04r48Mef_j_XjBneQ",
  "forwarded_from": null,
  "digest": false,
  "hash": "29189f9f7e7f",
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/andrewcurran_/status/2110498968082043327?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+  "site": "🧵 Thread • FxTwitter",
+  "title": "Andrew Curran (@AndrewCurran_)",
+  "description": "The meeting is over and some numbers are starting to be reported by people who were in attendance.\nAnthropic's third-quarter revenue rose 45% to $16.8 billion. Revenue in the first quarter was $4.7 billion, and $11.6 billion in ⁠the second quarter.\nQuoting…",
+  "image": "https://cdn4.telesco.pe/file/DrIqSr4GmrPLpQVxsOkrDwVSprofDDUYy76YVUzmwN-OEAmF4vaCB811lz1u8MdMBxQRrkUbhHZPYoh2owG-L5ctJ09mVpy0l13vlKBHC8KeDN-dHDy-iW4K0ULxWFkIWY26oQCarAcj2S5JhEKg2c4MQcFtjZ-c2kD7SZD2DOkTBySJsgBw2mUkMvrCiHzuJhScrGpzQv19CopuQlJqYLuRo1WMuV3jlFi_g9w6qAElg7TkLPrPsFbW3ei8mws5j8CGsrVzKmgWYSIFxLFVVq8x7rcNqDQZaGBXgBDQIhn_AgLVaz7R-55bTsx2KU4svazEGzb7ePPxlWt32VHseQ.jpg"
+ },
  "gholam": {
   "text": "ببین رفیق، جلسه پشت درهای بسته آنتروپیک با سرمایه‌گذارای گردن‌کلفت تموم شده و طبق خبرهایی که از جلسه درز کرده، دخل و خرجشون حسابی سر به فلک کشیده. دست‌فرمون رو داشته باش که درآمد سه‌ماهه سوم این غول هوش مصنوعی با یه پرش ۴۵ درصدی رسیده به رقم عجیب ۱۶.۸ میلیارد دلار! جالب‌تر اینه که سه‌ماهه اول ۴.۷ میلیارد و سه‌ماهه دوم هم ۱۱.۶ میلیارد کاسب شده بودن، یعنی رشد مالی‌شون رسماً رو دور تند افتاده. از اون طرف هم برنامه‌هاشون برای عرضه اولیه سهام تو بورس حسابی رو ریله و دارن تخت گاز واسه IPO جلو می‌رن.\n\nچرا مهمه؟ اهمیتش اینه که نشون می‌ده عطش بازار به هوش مصنوعی اصلاً شوخی‌بردار نیست و آنتروپیک داره با سودسازی غول‌آسا، خودش رو برای فتح وال‌استریت آماده می‌کنه.",
   "date": "2026-10-14T23:04:52+00:00"
  },
+ "gholam_checked": "2026-10-24T23:35:36+00:00",
  "links": [
   {
    "kind": "tweet",
@@ -61,18 +68,6 @@
    }
   }
  ],
- "media": [],
- "preview": {
-  "url": "https://fxtwitter.com/andrewcurran_/status/2110498968082043327?s=52&t=F41Qa04r48Mef_j_XjBneQ",
-  "site": "🧵 Thread • FxTwitter",
-  "title": "Andrew Curran (@AndrewCurran_)",
-  "description": "The meeting is over and some numbers are starting to be reported by people who were in attendance.\nAnthropic's third-quarter revenue rose 45% to $16.8 billion. Revenue in the first quarter was $4.7 billion, and $11.6 billion in ⁠the second quarter.\nQuoting…",
-  "image": {
-   "src": "media/5900/preview.webp",
-   "width": 800,
-   "height": 296
-  }
- },
  "article": {
   "title": "جلسه پشت درهای بسته آنتروپیک با سرمایه‌گذارای گردن‌کلفت تموم شده و طبق خبرهایی که از جلسه درز کرده، دخل و خرجشون حسابی سر به فلک کشیده",
   "source_title": "The meeting is over and some numbers are starting to be reported by people who were in attendance.",
@@ -84,6 +79,5 @@
    "آنتروپیک"
   ]
  },
- "updated": "2026-10-24T23:35:36+00:00",
- "gholam_checked": "2026-10-24T23:35:36+00:00"
+ "updated": "2026-10-25T11:54:11+00:00"
 }

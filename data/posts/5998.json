@@ -2,16 +2,23 @@
  "id": 5998,
  "url": "https://t.me/dlmehr/5998",
  "date": "2026-10-20T19:47:12+00:00",
- "edited": true,
- "views": "169",
  "text": "https://fxtwitter.com/kimmonismus/status/2112630840312349124?s=52&t=F41Qa04r48Mef_j_XjBneQ",
  "forwarded_from": null,
  "digest": false,
  "hash": "eee7878b0c72",
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/kimmonismus/status/2112630840312349124?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+  "site": "FxTwitter",
+  "title": "Chubby ♨️ (@kimmonismus)",
+  "description": "Anthropic reportedly grew revenue nearly 15x while taking on more than $600B in future compute commitments.\nWSJ reviewed a draft IPO prospectus:\n- H1 revenue jumped from $1.1B to $16.3B. Compute and infrastructure spending rose from $2.3B to nearly $9B.…",
+  "image": "https://cdn4.telesco.pe/file/pSW1iZ3lvMp8772XOpV-1rU4g8ELsOwXSVG0Te8geg6xRArUzi6ZygRbDTYC4Wna18-h2JpuObj_Ts42clJQazCg55m8LgddTe1GxjGgattLfisJadUaNsgbItvJ_dfOfDRR_8av-M8VVHI_LQ8B3S8VLnq6GfsvXOFUVyURxtdakIEyBX1iEd8jkHoA6ishNu5dON-8qEx-3JZUY3QoNpFpRz4XoW3qWYAzkN-WCC3dSCYhLCRRIR6GlTlVDh86-r-ZLQJ_EE3QaZRdyKJx_nQi89W7XGQwBtes6w11r1u1E4S6VKp_mads4fzQnfH031qOo_rrFsaWfoSandYjvw.jpg"
+ },
  "gholam": {
   "text": "رفیق، وال‌استریت ژورنال زده تو کارِ رو کردن دخل و خرجِ محرمانه شرکت آنتروپیک و قضیه بدجور پشم‌ریزونه! طبق پیش‌نویس مدارک عرضه اولیه‌شون، درآمد شش‌ماهه اول این غول هوش مصنوعی از ۱.۱ میلیارد دلار پریده روی ۱۶.۳ میلیارد دلار که یعنی رشد نزدیک به ۱۵ برابری، ولی از اون‌طرف بالای ۶۰۰ میلیارد دلار هم تعهدِ سفت‌وسخت و فسخ‌نشدنی برای هزینه‌های پردازش ابری گردن گرفته. خرج زیرساخت‌هاشون سر به فلک کشیده و با ثبت یه زیان خالص ۸۰ میلیارد دلاری حسابی دست‌به‌عصا شدن، اما با همه این داستانا بازم سفت وایسادن تا به ارزش بازار رؤیاییِ ۲ تریلیون دلاری برسن.\n\nاهمیتش اینه که نشون میده رقابت سر هوش مصنوعی شوخی‌بردار نیست و این غولا برای عقب نموندن دارن روی ارقام فضایی قمار می‌کنن، حتی اگه به قیمت زیان‌های چند ده میلیارد دلاری تموم بشه.",
   "date": "2026-10-20T19:47:29+00:00"
  },
+ "gholam_checked": "2026-10-24T23:03:14+00:00",
  "links": [
   {
    "kind": "tweet",
@@ -63,18 +70,6 @@
    }
   }
  ],
- "media": [],
- "preview": {
-  "url": "https://fxtwitter.com/kimmonismus/status/2112630840312349124?s=52&t=F41Qa04r48Mef_j_XjBneQ",
-  "site": "FxTwitter",
-  "title": "Chubby ♨️ (@kimmonismus)",
-  "description": "Anthropic reportedly grew revenue nearly 15x while taking on more than $600B in future compute commitments.\nWSJ reviewed a draft IPO prospectus:\n- H1 revenue jumped from $1.1B to $16.3B. Compute and infrastructure spending rose from $2.3B to nearly $9B.…",
-  "image": {
-   "src": "media/5998/preview.webp",
-   "width": 800,
-   "height": 677
-  }
- },
  "article": {
   "title": "وال‌استریت ژورنال زده تو کارِ رو کردن دخل و خرجِ محرمانه شرکت آنتروپیک و قضیه بدجور پشم‌ریزونه",
   "source_title": "Anthropic reportedly grew revenue nearly 15x while taking on more than $600B in future compute commitments.",
@@ -86,6 +81,5 @@
    "آنتروپیک"
   ]
  },
- "updated": "2026-10-24T23:03:14+00:00",
- "gholam_checked": "2026-10-24T23:03:14+00:00"
+ "updated": "2026-10-25T11:53:56+00:00"
 }

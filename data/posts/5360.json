@@ -1,0 +1,93 @@
+{
+ "id": 5360,
+ "url": "https://t.me/dlmehr/5360",
+ "date": "2026-09-18T00:18:35+00:00",
+ "text": "https://fxtwitter.com/firesidealpha/status/2100618746004205569?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+ "forwarded_from": null,
+ "digest": false,
+ "hash": "8d5ffca93d39",
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/firesidealpha/status/2100618746004205569?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+  "site": "🧵 Thread • FxTwitter",
+  "title": "Fireside Alpha (@firesidealpha)",
+  "description": "Jensen Huang says the rule for shipping AI is the same rule as shipping an omelet\n\"And in doing so, if it's not ready, just hold it back. You should go as fast as you can, but no faster than that.\"\n\"At the moment, the incidents are related to products not…",
+  "image": null
+ },
+ "gholam": {
+  "text": "ببین رفیق، جنسن هوانگ، رئیس کاردرست انویدیا، یه حرف جالب زده و گفته قاعده عرضه هوش مصنوعی دقیقاً مثل املت پختنه؛ یعنی تا وقتی کامل حاضر نشده و جا نیفتاده، اصلاً نباید بدیش دست مردم! حرفش اینه که با حداکثر سرعت بتازید ولی نه تندتر از چیزی که منطقیه، چون اکثر سوتی‌ها و افتضاحاتی که این روزا پیش اومده دقیقاً مال محصولاتیه که هنوز پخته نشدن و زود فرستادنشون تو بازار. به قول هوانگ، همون‌طور که ماشین یا موتور هواپیمای تست‌نشده رو روانه خیابون و آسمون نمی‌کنید، هوش مصنوعی رو هم باید تو قرنطینه آزمایشگاه حسابی محک بزنید و برگردید به همون اصول مهندسی سفت‌وسخت و اصیلِ قدیمی تا همه‌چیز بی‌نقص عمل کنه.\n\nاهمیتش اینه که معمار اصلی سخت‌افزارهای هوش مصنوعی جهان داره هشدار میده که تو این تب‌وتاب رقابت، هیچ شرکتی نباید ایمنی و تست اساسی رو فدای عجله و هایپ بازار بکنه.",
+  "date": "2026-09-18T00:18:47+00:00"
+ },
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/firesidealpha/status/2100618746004205569",
+   "domain": "x.com",
+   "author": {
+    "name": "Fireside Alpha",
+    "handle": "firesidealpha",
+    "avatar": "https://pbs.twimg.com/profile_images/2066254089756061697/MGnZGljz_200x200.jpg"
+   },
+   "text": "Jensen Huang says the rule for shipping AI is the same rule as shipping an omelet\n\n\"And in doing so, if it's not ready, just hold it back. You should go as fast as you can, but no faster than that.\"\n\n\"At the moment, the incidents are related to products not ready to be released. This is no different than, you know, an omelet's not ready to be released, or a car's not ready to be released, an airplane engine not ready to be released. You should properly test it, you have rigorous testing systems.\"\n\n\"The testing lab should be contained and products should not be released to the public until it's ready to be used by the public.\"\n\n\"And that's engineering, good old-fashioned engineering. It's not more than that, it's not less than that. And so we have to just go back to core engineering, make sure that we have the rigor of testing these products properly before we release it to the public.\"\n_______\nLink and more from AI-safety related conversations: https://firesidealpha.substack.com/p/openai-safety-week-sam-altman-sarah",
+   "date": 1789661511,
+   "media": [
+    {
+     "type": "video",
+     "src": "https://video.twimg.com/amplify_video/2100615952908087296/vid/avc1/1280x720/_NQwla1hAX9IIdsN.mp4?tag=29",
+     "poster": "https://pbs.twimg.com/amplify_video_thumb/2100615952908087296/img/cPeOl4tBc0MZOzDk.jpg",
+     "ratio": 0.5625,
+     "duration": 45.978,
+     "gif": false
+    }
+   ],
+   "links": [
+    "https://firesidealpha.substack.com/p/openai-safety-week-sam-altman-sarah"
+   ],
+   "quote": {
+    "author": {
+     "name": "Fireside Alpha",
+     "handle": "firesidealpha",
+     "avatar": "https://pbs.twimg.com/profile_images/2066254089756061697/MGnZGljz_200x200.jpg"
+    },
+    "text": "Sachin Katti says OpenAI had Astra optimize its own inference on NVIDIA's Rubin chip, adding another 2x in 72 hours\n\n\"It's a testament to NVIDIA's hardware that out of the box we got a 3x improvement in throughput. We literally took the same code that we had optimized for Blackwell, ran it on Rubin, got 3x improvement.\"\n\n\"Then, can we actually make Astra run agents using Astra as the base model, go optimize this inference of Astra itself on Rubin? It's a recursive loop. The model is figuring out how to optimize its own inference serving on Rubin chips, and over 72 hours the model produced another 2x improvement on the throughput.\"\n\n\"Things that would take weeks, if not months, to optimize in the past, we now are getting models that are very capable of actually producing over a weekend.\"\n_______\nLink and more from Sachin Katti's conversation: https://firesidealpha.substack.com/p/openai-safety-week-sam-altman-sarah",
+    "date": 1789656166,
+    "media": [
+     {
+      "type": "video",
+      "src": "https://video.twimg.com/amplify_video/2100595539046027264/vid/avc1/1280x720/1R4Nu7_r0KOChbtD.mp4?tag=29",
+      "poster": "https://pbs.twimg.com/amplify_video_thumb/2100595539046027264/img/ovA9JRkwbU6pjLV6.jpg",
+      "ratio": 0.5625,
+      "duration": 48.2,
+      "gif": false
+     }
+    ],
+    "links": [
+     "https://firesidealpha.substack.com/p/openai-safety-week-sam-altman-sarah"
+    ]
+   }
+  },
+  {
+   "kind": "link",
+   "url": "https://firesidealpha.substack.com/p/openai-safety-week-sam-altman-sarah",
+   "domain": "firesidealpha.substack.com",
+   "title": "OpenAI Safety Week: Sam Altman, Sarah Friar, Sachin Katti",
+   "description": "Most of us have probably gotten the latest download on all the AI-safety related interviews, but the Sachin Katti one dropped last night, so I compiled all the key quotes here and organized into topics.",
+   "image": "https://substackcdn.com/image/youtube/w_728,c_limit/2my-NU6LuCM",
+   "site": "firesidealpha.substack.com"
+  }
+ ],
+ "article": {
+  "title": "جنسن هوانگ، رئیس کاردرست انویدیا، یه حرف جالب زده و گفته قاعده عرضه هوش مصنوعی دقیقاً مثل املت پختنه؛ یعنی تا وقتی کامل حاضر نشده و جا نیفتاده، اصلاً نباید بدیش دست مردم",
+  "source_title": "Jensen Huang says the rule for shipping AI is the same rule as shipping an omelet",
+  "body": [
+   "ببین رفیق، جنسن هوانگ، رئیس کاردرست انویدیا، یه حرف جالب زده و گفته قاعده عرضه هوش مصنوعی دقیقاً مثل املت پختنه؛ یعنی تا وقتی کامل حاضر نشده و جا نیفتاده، اصلاً نباید بدیش دست مردم! حرفش اینه که با حداکثر سرعت بتازید ولی نه تندتر از چیزی که منطقیه، چون اکثر سوتی‌ها و افتضاحاتی که این روزا پیش اومده دقیقاً مال محصولاتیه که هنوز پخته نشدن و زود فرستادنشون تو بازار. به قول هوانگ، همون‌طور که ماشین یا موتور هواپیمای تست‌نشده رو روانه خیابون و آسمون نمی‌کنید، هوش مصنوعی رو هم باید تو قرنطینه آزمایشگاه حسابی محک بزنید و برگردید به همون اصول مهندسی سفت‌وسخت و اصیلِ قدیمی تا همه‌چیز بی‌نقص عمل کنه."
+  ],
+  "why": "معمار اصلی سخت‌افزارهای هوش مصنوعی جهان داره هشدار میده که تو این تب‌وتاب رقابت، هیچ شرکتی نباید ایمنی و تست اساسی رو فدای عجله و هایپ بازار بکنه.",
+  "tags": [
+   "اوپن‌ای‌آی",
+   "انویدیا"
+  ]
+ },
+ "updated": "2026-10-25T12:26:35+00:00",
+ "gholam_checked": "2026-10-25T12:26:35+00:00"
+}

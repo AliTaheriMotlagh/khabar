@@ -1,0 +1,68 @@
+{
+ "id": 5199,
+ "url": "https://t.me/dlmehr/5199",
+ "date": "2026-09-08T17:09:30+00:00",
+ "text": "https://fxtwitter.com/statemachineshq/status/2097355365071368567?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+ "forwarded_from": null,
+ "digest": false,
+ "hash": "74011368734f",
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/statemachineshq/status/2097355365071368567?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+  "site": "FxTwitter",
+  "title": "state machines (@statemachineshq)",
+  "description": "Introducing State Machines.\nThe first infrastructure to spin up enterprise environments.\nAny enterprise app, recreated for agents. Run thousands of environments in parallel, each with its own state.\nhttps://usestatemachines.com",
+  "image": null
+ },
+ "gholam": {
+  "text": "ببین رفیق، یه پلتفرم تر و تمیز به اسم «استیت ماشینز» (State Machines) تازه رونمایی شده که قراره کار ایجنت‌های هوش مصنوعی رو حسابی راه بندازه. ماجرا از این قراره که این سیستم اولین زیرساخت تخصصی برای شبیه‌سازی و راه‌اندازی محیط‌های نرم‌افزاری سازمانی مخصوص ایجنت‌ها به حساب میاد. در واقع هر برنامه پیچیده اداری و سازمانی رو جوری واسه هوش مصنوعی بازسازی می‌کنن که بشه هزاران محیط مجزا رو به صورت همزمان بالا آورد تا هر کدوم وضعیت اختصاصی خودشون رو داشته باشن.\n\nاهمیتش اینه که بدون دستکاری و خط انداختن روی سیستم‌ها و دیتای واقعی شرکت‌ها، ایجنت‌های هوش مصنوعی می‌تونن توی مقیاس خیلی بالا تست بشن و کار یاد بگیرن.",
+  "date": "2026-09-08T17:09:41+00:00"
+ },
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/statemachineshq/status/2097355365071368567",
+   "domain": "x.com",
+   "author": {
+    "name": "state machines",
+    "handle": "statemachineshq",
+    "avatar": "https://pbs.twimg.com/profile_images/2096990315467157504/I4Hu13Ue_200x200.jpg"
+   },
+   "text": "Introducing State Machines.\n\nThe first infrastructure to spin up enterprise environments.\n\nAny enterprise app, recreated for agents. Run thousands of environments in parallel, each with its own state.\n\nhttps://usestatemachines.com",
+   "date": 1788883460,
+   "media": [
+    {
+     "type": "video",
+     "src": "https://video.twimg.com/amplify_video/2097355237875204096/vid/avc1/1280x720/skaMqcuOoNIZgYIQ.mp4?tag=29",
+     "poster": "https://pbs.twimg.com/amplify_video_thumb/2097355237875204096/img/gZnkTGKAWDitLtov.jpg",
+     "ratio": 0.5625,
+     "duration": 69.402,
+     "gif": false
+    }
+   ],
+   "links": [
+    "https://usestatemachines.com"
+   ]
+  },
+  {
+   "kind": "link",
+   "url": "https://www.usestatemachines.com/",
+   "domain": "usestatemachines.com",
+   "title": "state machines",
+   "description": "Giving agents a world to behave in.",
+   "image": "https://www.usestatemachines.com/hero.jpg",
+   "site": "State Machines"
+  }
+ ],
+ "article": {
+  "title": "یه پلتفرم تر و تمیز به اسم «استیت ماشینز» (State Machines) تازه رونمایی شده که قراره کار ایجنت‌های هوش مصنوعی رو حسابی راه بندازه",
+  "source_title": "Introducing State Machines.",
+  "body": [
+   "ببین رفیق، یه پلتفرم تر و تمیز به اسم «استیت ماشینز» (State Machines) تازه رونمایی شده که قراره کار ایجنت‌های هوش مصنوعی رو حسابی راه بندازه. ماجرا از این قراره که این سیستم اولین زیرساخت تخصصی برای شبیه‌سازی و راه‌اندازی محیط‌های نرم‌افزاری سازمانی مخصوص ایجنت‌ها به حساب میاد. در واقع هر برنامه پیچیده اداری و سازمانی رو جوری واسه هوش مصنوعی بازسازی می‌کنن که بشه هزاران محیط مجزا رو به صورت همزمان بالا آورد تا هر کدوم وضعیت اختصاصی خودشون رو داشته باشن."
+  ],
+  "why": "بدون دستکاری و خط انداختن روی سیستم‌ها و دیتای واقعی شرکت‌ها، ایجنت‌های هوش مصنوعی می‌تونن توی مقیاس خیلی بالا تست بشن و کار یاد بگیرن.",
+  "tags": []
+ },
+ "updated": "2026-10-25T12:27:35+00:00",
+ "gholam_checked": "2026-10-25T12:27:35+00:00"
+}

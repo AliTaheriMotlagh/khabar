@@ -1,0 +1,68 @@
+{
+ "id": 5648,
+ "url": "https://t.me/dlmehr/5648",
+ "date": "2026-10-05T17:48:38+00:00",
+ "text": "https://fxtwitter.com/liquidai/status/2107161990808674404?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+ "forwarded_from": null,
+ "digest": false,
+ "hash": "afb2d2a9daee",
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/liquidai/status/2107161990808674404?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+  "site": "🧵 Thread • FxTwitter",
+  "title": "Liquid AI (@liquidai)",
+  "description": "Announcing d1 with vision.\n👁️\n👁️\nOur first decision model now supports images, text or both as inputs. We tested d1 against GPT-6.1 Sol and Claude Opus 5.5 on six real applications, from filtering support tickets to inspecting circuit boards. d1 matches or…",
+  "image": "https://cdn4.telesco.pe/file/ZlZ-eTUcJ3kO-_uSVgoxW1N1T5Pi6nqdKGvMvCBgpFXvhr9yGVBtxrOH80dltSQ6f9EOE4GGfUyrQ8VjXiqBpyZ8MBNkv2mW4vZN8znEHhYFCanJmhR35a61As6vZp9evUQFWB4hckqYQGji9pDAJXPtxKm3zoXn1bMvs87wd_aY2P7zVyeuErQuLKt-SS3Obd8Hg1Sn9AgXI65wxA77Amp8rzzefRalCq1xjF46O5II3MB97bMh2k2vuaSwYj5X56s4ACk5Ywr65w4bZVv-25NKLsLxQfKtt-ht8C-6nn-sd5lvpT3l_95AtVwgOO3F3lpkZBS7ALGDr0erYpLA5g.jpg"
+ },
+ "gholam": {
+  "text": "رفیق، بچه‌های شرکت Liquid AI از مدل جدیدشون به اسم d1 رونمایی کردن که حالا علاوه بر متن، چشم و گوش بینا هم پیدا کرده و تصاویر رو هم مثل آب خوردن تحلیل می‌کنه. این مدل مخصوصِ تصمیم‌گیری رو بردن تو گود و جلو غول‌هایی مثل GPT-6.1 Sol و Claude Opus 5.5 محک زدن که تو چهارتا از شش تا تسک واقعی، از بررسی بورد‌های الکترونیکی گرفته تا فیلتر کردن تیکت‌ها، زده رو دست رقبا یا پا‌به‌پاشون اومده. هنر اصلیش اینه که بدون معطلی و تولید کلمه به کلمه توکن، توی ۲۰۰ تا ۳۰۰ میلی‌ثانیه کار رو جمع می‌کنه و بهت درصد و جواب قطعی میده. تازه از همه مشتی‌تر قضیه قیمتشه که بین ۱۹ تا ۲۰۰ برابر مفت‌تر از این مدل‌های پرادعای بازار تموم میشه و سرعتش هم سرسام‌آوره.\n\nاهمیتش اینه که نشون میده برای کارهای صنعتی و تصمیم‌گیری‌های سرعتی اصلاً نیازی به مدل‌های فوق‌سنگین و گرون‌قیمت نیست و میشه با یه سیستم تر و فرز، هزینه شرکت‌ها رو تا حد اعجاز پایین آورد.",
+  "date": "2026-10-05T17:48:51+00:00"
+ },
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/liquidai/status/2107161990808674404",
+   "domain": "x.com",
+   "author": {
+    "name": "Liquid AI",
+    "handle": "liquidai",
+    "avatar": "https://pbs.twimg.com/profile_images/1702611993327251456/PUUuOA4W_200x200.jpg"
+   },
+   "text": "Announcing d1 with vision. 👁️👁️ Our first decision model now supports images, text or both as inputs. We tested d1 against GPT-6.1 Sol and Claude Opus 5.5 on six real applications, from filtering support tickets to inspecting circuit boards. d1 matches or beats GPT-6.1 Sol on four of them. It costs 19x to 200x less than both models and answers significantly faster on every task.\n\n> probabilities for yes/no, choice, or score questions\n> one forward pass, without generating tokens\n> text decisions in 200 to 300 ms\n> Liquid API: https://console.liquid.ai\n\n🧵",
+   "date": 1791221542,
+   "media": [
+    {
+     "type": "image",
+     "src": "https://pbs.twimg.com/media/HT4ilV7bkAA2yWy.jpg?name=orig",
+     "ratio": 0.4659
+    }
+   ],
+   "links": [
+    "https://console.liquid.ai"
+   ]
+  },
+  {
+   "kind": "link",
+   "url": "https://console.liquid.ai",
+   "domain": "console.liquid.ai",
+   "title": "The most cost-efficient model API",
+   "description": "Efficient foundation and decision models from Liquid AI, ready for production. Lower cost on every call, with the tools you already use.",
+   "image": "https://console.liquid.ai/opengraph-image.jpg?opengraph-image.2ax9hctwect4g.jpg?dpl=b443dd4451b8cf475668dac431619aceb7872ec6",
+   "site": "Liquid AI"
+  }
+ ],
+ "article": {
+  "title": "بچه‌های شرکت Liquid AI از مدل جدیدشون به اسم d1 رونمایی کردن که حالا علاوه بر متن، چشم و گوش بینا هم پیدا کرده و تصاویر رو هم مثل آب خوردن تحلیل می‌کنه",
+  "source_title": "Announcing d1 with vision. 👁️👁️ Our first decision model now supports images, text or both as inputs. We tested d1 against GPT-6.1 Sol and…",
+  "body": [
+   "رفیق، بچه‌های شرکت Liquid AI از مدل جدیدشون به اسم d1 رونمایی کردن که حالا علاوه بر متن، چشم و گوش بینا هم پیدا کرده و تصاویر رو هم مثل آب خوردن تحلیل می‌کنه. این مدل مخصوصِ تصمیم‌گیری رو بردن تو گود و جلو غول‌هایی مثل GPT-6.1 Sol و Claude Opus 5.5 محک زدن که تو چهارتا از شش تا تسک واقعی، از بررسی بورد‌های الکترونیکی گرفته تا فیلتر کردن تیکت‌ها، زده رو دست رقبا یا پا‌به‌پاشون اومده. هنر اصلیش اینه که بدون معطلی و تولید کلمه به کلمه توکن، توی ۲۰۰ تا ۳۰۰ میلی‌ثانیه کار رو جمع می‌کنه و بهت درصد و جواب قطعی میده. تازه از همه مشتی‌تر قضیه قیمتشه که بین ۱۹ تا ۲۰۰ برابر مفت‌تر از این مدل‌های پرادعای بازار تموم میشه و سرعتش هم سرسام‌آوره."
+  ],
+  "why": "نشون میده برای کارهای صنعتی و تصمیم‌گیری‌های سرعتی اصلاً نیازی به مدل‌های فوق‌سنگین و گرون‌قیمت نیست و میشه با یه سیستم تر و فرز، هزینه شرکت‌ها رو تا حد اعجاز پایین آورد.",
+  "tags": [
+   "اوپن‌ای‌آی",
+   "آنتروپیک"
+  ]
+ },
+ "updated": "2026-10-25T12:24:51+00:00",
+ "gholam_checked": "2026-10-25T12:24:51+00:00"
+}

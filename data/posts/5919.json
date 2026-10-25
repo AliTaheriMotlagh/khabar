@@ -2,16 +2,23 @@
  "id": 5919,
  "url": "https://t.me/dlmehr/5919",
  "date": "2026-10-16T02:19:10+00:00",
- "edited": true,
- "views": "173",
  "text": "https://fxtwitter.com/sawyermerritt/status/2110909462320152773?s=52&t=F41Qa04r48Mef_j_XjBneQ",
  "forwarded_from": null,
  "digest": false,
  "hash": "2ccc46762e2b",
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/sawyermerritt/status/2110909462320152773?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+  "site": "FxTwitter",
+  "title": "Sawyer Merritt (@SawyerMerritt)",
+  "description": "Here are the trim levels for @Tesla’s next-gen Roadster:\n• Performance: $50k deposit\n• Thrust: $250k deposit\n• Rocket: Invite Only\nProduction starts in 2028. Final/total prices TBD.",
+  "image": "https://cdn4.telesco.pe/file/HEQiXxutdrMzRpdFl3cMTNNJXsENoRxY5HixYyXkIPNCCjXLn6Iu6NFSx10usEmea1fWlN88yqFADU5hJ-NDqRdUq3fnnE9axVmLegN5331sRLHgd7I8qxBmBet3IVhqLjb7sMhIEC5SBhH1gyCrMEAez7bKoFGtEkzYEO_U6-dDyYgaWYyeeSmwW4GmKwovbCPCcWDeROfsveVok73GKsGnQ2zA8-gQPJBaEXjdJtkR1WaZkVPPxZlty9X5GjDeGrBbdgZmonmNz1dUGgFPACoNLFZfHmqheUHXWQSvS3ptMJLrITD_z8mxwMO0kZXmQZSzyDBGa4QVo2bis_QjJA.jpg"
+ },
  "gholam": {
   "text": "رفیق، بالاخره یه خبرایی از تسلا رودستر نسل جدید دراومده و مشخص شده قراره تو سه تا تیپ خفن به اسم‌های «پرفورمنس»، «تراست» و «راکت» عرضه بشه. ماجرا اینجوریه که واسه پیش‌خرید مدل پرفورمنس باید پنجاه هزار دلار و واسه تیپ تراست یه رقم سنگین دویست و پنجاه هزار دلاری بیعانه بذاری وسط، اما مدل راکت قضیه‌ش کلاً سواست و خریدش فقط با دعوت‌نامه رسمیه. از اون طرف هم اعلام کردن تولید این اعجوبه تازه از سال ۲۰۲۸ کلید می‌خوره و قیمت نهایی کل ماشین‌ها رو هم هنوز تو خماری گذاشتن و بعداً قراره رو کنن.\n\nاهمیتش اینه که بعد از سال‌ها وعده‌وعید، بالاخره نقشه‌راه و شرایط ثبت‌نام رودستر با ارقام نجومی مشخص شده و نشون می‌ده تسلا خواب‌های سنگینی واسه بازار سوپراسپرت‌های میلیاردی دیده.",
   "date": "2026-10-16T02:19:24+00:00"
  },
+ "gholam_checked": "2026-10-24T23:35:32+00:00",
  "links": [
   {
    "kind": "tweet",
@@ -43,18 +50,6 @@
    "links": []
   }
  ],
- "media": [],
- "preview": {
-  "url": "https://fxtwitter.com/sawyermerritt/status/2110909462320152773?s=52&t=F41Qa04r48Mef_j_XjBneQ",
-  "site": "FxTwitter",
-  "title": "Sawyer Merritt (@SawyerMerritt)",
-  "description": "Here are the trim levels for @Tesla’s next-gen Roadster:\n• Performance: $50k deposit\n• Thrust: $250k deposit\n• Rocket: Invite Only\nProduction starts in 2028. Final/total prices TBD.",
-  "image": {
-   "src": "media/5919/preview.webp",
-   "width": 524,
-   "height": 800
-  }
- },
  "article": {
   "title": "بالاخره یه خبرایی از تسلا رودستر نسل جدید دراومده و مشخص شده قراره تو سه تا تیپ خفن به اسم‌های «پرفورمنس»، «تراست» و «راکت» عرضه بشه",
   "source_title": "Here are the trim levels for @Tesla’s next-gen Roadster:",
@@ -66,6 +61,5 @@
    "ایلان ماسک"
   ]
  },
- "updated": "2026-10-24T23:35:32+00:00",
- "gholam_checked": "2026-10-24T23:35:32+00:00"
+ "updated": "2026-10-25T11:54:11+00:00"
 }

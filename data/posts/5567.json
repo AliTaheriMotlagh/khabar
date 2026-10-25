@@ -1,0 +1,75 @@
+{
+ "id": 5567,
+ "url": "https://t.me/dlmehr/5567",
+ "date": "2026-09-30T21:29:52+00:00",
+ "text": "https://fxtwitter.com/rohanpaul_ai/status/2105399761084043514?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+ "forwarded_from": null,
+ "digest": false,
+ "hash": "a4cdd9e36387",
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/rohanpaul_ai/status/2105399761084043514?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+  "site": "🧵 Thread • FxTwitter",
+  "title": "Rohan Paul (@rohanpaul_ai)",
+  "description": "MASSIVE reveal from Google.\nIts new flagship, Gemini 4 Argon, outscores GPT-6 Astra and Claude Opus 5.5 on most benchmarks.\n- beats GPT-6 Astra and Claude Opus 5.5 on some super important industry benchmarks.\n- its widest lead in legal work, 19.6% on…",
+  "image": "https://cdn4.telesco.pe/file/mV3_ddisc1qkCJ6x8TQ-rL-oVkxFlxrGPCpSSLhEB8P97Jl23kR4MZmX1m8QhCqYbqpK6tjK6B2rYZDNnl14b_zNbaO-HZrZHBki9CZgZG306ppeG67Sz2gvyiVa-JdeUqKoFwjRezXtB28PQISxnev2EavkJngrh6xDfM8PmnOryUIid1kf6_xZN4s7cCTT3wh888SpPpXTiSTk99ht8rk8rahAOOQS4sD8oQurxcrMB-VViU6Wimr1_iupWuOpDW6g23lLlRQSodMS65Ey6CFiy4H_A_L_rSQAIATVk9lcN8Lsdj-n3iFuuow5F24VXBpJ9ScOUN3Jn8sImG0ZZA.jpg"
+ },
+ "gholam": {
+  "text": "ببین رفیق، گوگل بالاخره از پرچمدار تازه‌نفسش به اسم «جمینای ۴ آرگون» رونمایی کرده و حسابی رو دست رقبای کله‌گنده‌ای مثل GPT-6 Astra و کلود اوپوس ۵.۵ بلند شده. این هیولا توی بنچمارک‌های تخصصی حقوقی با امتیاز ۱۹.۶ درصد کولاک کرده و سقف خروجی‌اش هم با یه پرش فضایی از ۶۴ هزار به یک میلیون توکن رسیده. البته فعلاً دست عموم بهش نمی‌رسه و فقط کارمندای خود گوگل، نهادهای امنیتی سایبری و یه سری تستر معتمد دارند باهاش ور می‌روند. کار به جایی رسیده که داخل خود گوگل، ایجنت‌های همین مدل موفق شدند صدها ترابایت حافظه دیتاسنتر آزاد کنند و با بازنویسی کدهای ویدیویی به زبان راست، سرعت کار رو ۲.۷ برابر ببرند.\n\nچرا مهمه؟ چون گوگل با خروجی میلیونی و قدرت خیره‌کننده تو کدنویسی و امور حقوقی، استانداردهای دنیای هوش مصنوعی رو جابه‌جا کرده و نشون داده رقابت تو این زمین دیگه شوخی‌بردار نیست.",
+  "date": "2026-09-30T21:30:05+00:00"
+ },
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/rohanpaul_ai/status/2105399761084043514",
+   "domain": "x.com",
+   "author": {
+    "name": "Rohan Paul",
+    "handle": "rohanpaul_ai",
+    "avatar": "https://pbs.twimg.com/profile_images/1816185267037859840/Fd18CH0v_200x200.jpg"
+   },
+   "text": "MASSIVE reveal from Google. \n\nIts new flagship, Gemini 4 Argon, outscores GPT-6 Astra and Claude Opus 5.5 on most benchmarks.\n\n- beats GPT-6 Astra and Claude Opus 5.5 on some super important industry benchmarks. \n\n- its widest lead in legal work, 19.6% on Harvey's Legal Agent Benchmark against 6.7% for Anthropic's Claude Fable 5.1.\n\n- output limit jumps from 64K to 1M tokens, an industry-leading ceiling,\n\n- Only 3 groups have it today. the first is Google's own staff, vetted cyber defenders such as government agencies and security companies and trusted testers giving Google feedback.\n\n- Inside Google, Argon agents freed over 300 TiB of data-center memory, with 500 TiB to 1 PiB of total savings estimated, and made a Rust port of the libgav1 video decoder 2.7x faster by replacing 32K lines of SIMD code.",
+   "date": 1790801394,
+   "media": [
+    {
+     "type": "image",
+     "src": "https://pbs.twimg.com/media/HTfeorpb0AA2WIH.jpg?name=orig",
+     "ratio": 1.2277
+    }
+   ],
+   "links": [],
+   "quote": {
+    "author": {
+     "name": "Sundar Pichai",
+     "handle": "sundarpichai",
+     "avatar": "https://pbs.twimg.com/profile_images/2051799620062429184/AL8CoAUG_200x200.jpg"
+    },
+    "text": "Lots of discussion out there about our next model(!), so I wanted to give an early look as soon as possible. Introducing Gemini 4 Argon!\n\nIt shows frontier performance in complex workflows, cyber defense and software engineering. Teams are using it extensively at Google, from coding to quantum computing, great feedback. \n\nHere’s a look at the benchmarks:",
+    "date": 1790798578,
+    "media": [
+     {
+      "type": "image",
+      "src": "https://pbs.twimg.com/media/HTfV2KTa0AAVcsh.png?name=orig",
+      "ratio": 1.003
+     }
+    ],
+    "links": []
+   }
+  }
+ ],
+ "article": {
+  "title": "گوگل بالاخره از پرچمدار تازه‌نفسش به اسم «جمینای ۴ آرگون» رونمایی کرده و حسابی رو دست رقبای کله‌گنده‌ای مثل GPT-6 Astra و کلود اوپوس ۵.۵ بلند شده",
+  "source_title": "MASSIVE reveal from Google.",
+  "body": [
+   "ببین رفیق، گوگل بالاخره از پرچمدار تازه‌نفسش به اسم «جمینای ۴ آرگون» رونمایی کرده و حسابی رو دست رقبای کله‌گنده‌ای مثل GPT-6 Astra و کلود اوپوس ۵.۵ بلند شده. این هیولا توی بنچمارک‌های تخصصی حقوقی با امتیاز ۱۹.۶ درصد کولاک کرده و سقف خروجی‌اش هم با یه پرش فضایی از ۶۴ هزار به یک میلیون توکن رسیده. البته فعلاً دست عموم بهش نمی‌رسه و فقط کارمندای خود گوگل، نهادهای امنیتی سایبری و یه سری تستر معتمد دارند باهاش ور می‌روند. کار به جایی رسیده که داخل خود گوگل، ایجنت‌های همین مدل موفق شدند صدها ترابایت حافظه دیتاسنتر آزاد کنند و با بازنویسی کدهای ویدیویی به زبان راست، سرعت کار رو ۲.۷ برابر ببرند."
+  ],
+  "why": "چون گوگل با خروجی میلیونی و قدرت خیره‌کننده تو کدنویسی و امور حقوقی، استانداردهای دنیای هوش مصنوعی رو جابه‌جا کرده و نشون داده رقابت تو این زمین دیگه شوخی‌بردار نیست.",
+  "tags": [
+   "گوگل",
+   "آنتروپیک",
+   "اوپن‌ای‌آی"
+  ]
+ },
+ "updated": "2026-10-25T12:25:20+00:00",
+ "gholam_checked": "2026-10-25T12:25:20+00:00"
+}

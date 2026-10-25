@@ -1,0 +1,68 @@
+{
+ "id": 4948,
+ "url": "https://t.me/dlmehr/4948",
+ "date": "2026-08-25T18:17:49+00:00",
+ "text": "https://fxtwitter.com/terminaldotshop/status/2091989748822810822?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+ "forwarded_from": null,
+ "digest": false,
+ "hash": "314bd6268c84",
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/terminaldotshop/status/2091989748822810822?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+  "site": "FxTwitter",
+  "title": "terminal (@terminaldotshop)",
+  "description": "i made a game where you literally have to find a missing semicolon in a codebase of 187,421 lines\nthe catch is the entire codebase is printed out and taped to the walls of an office and you have to inspect it line by line\nPlay it here:\nhttps://semicolon.trm.sh/",
+  "image": null
+ },
+ "gholam": {
+  "text": "ببین رفیق، یه بنده خدایی اومده بزرگ‌ترین کابوس برنامه‌نویسا رو تبدیل به یه بازی کرده و حسابی سر و صدا راه انداخته. ماجرا از این قراره که تو این بازی باید بین ۱۸۷ هزار و ۴۲۱ خط کد، یه دونه سیمیکالن ناقابل و گمشده رو پیدا کنی. نکته‌ی جالب و رو مخ قضیه هم اینجاست که کل این کدهای لعنتی چاپ شدن و چسبیدن به در و دیوار یه دفتر کار مجازی، و مجبوری خط به خط دیوارها رو با دقت بگردی تا پیداش کنی.\n\nاهمیتش اینه که به خنده‌دارترین و در عین حال عذاب‌آورترین شکل ممکن، درد بی‌درمون دیباگ کردن دستی و خطاهای مسخره‌ی برنامه‌نویسی رو به رخ کشیده.",
+  "date": "2026-08-25T18:18:01+00:00"
+ },
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/terminaldotshop/status/2091989748822810822",
+   "domain": "x.com",
+   "author": {
+    "name": "terminal",
+    "handle": "terminaldotshop",
+    "avatar": "https://pbs.twimg.com/profile_images/1782913043279564800/qzq989sC_200x200.jpg"
+   },
+   "text": "i made a game where you literally have to find a missing semicolon in a codebase of 187,421 lines\n\nthe catch is the entire codebase is printed out and taped to the walls of an office and you have to inspect it line by line\n\nPlay it here:\nhttps://semicolon.trm.sh/",
+   "date": 1787604198,
+   "media": [
+    {
+     "type": "video",
+     "src": "https://video.twimg.com/amplify_video/2091989320563396610/vid/avc1/1280x720/BE4bTZnOim7NIp9Y.mp4?tag=29",
+     "poster": "https://pbs.twimg.com/amplify_video_thumb/2091989320563396610/img/eQr19LiQ43ma1Kl4.jpg",
+     "ratio": 0.5625,
+     "duration": 51.05,
+     "gif": false
+    }
+   ],
+   "links": [
+    "https://semicolon.trm.sh/"
+   ]
+  },
+  {
+   "kind": "link",
+   "url": "https://semicolon.trm.sh/",
+   "domain": "semicolon.trm.sh",
+   "title": "Semicolon Inspector",
+   "description": null,
+   "image": null,
+   "site": "semicolon.trm.sh"
+  }
+ ],
+ "article": {
+  "title": "یه بنده خدایی اومده بزرگ‌ترین کابوس برنامه‌نویسا رو تبدیل به یه بازی کرده و حسابی سر و صدا راه انداخته",
+  "source_title": "i made a game where you literally have to find a missing semicolon in a codebase of 187,421 lines",
+  "body": [
+   "ببین رفیق، یه بنده خدایی اومده بزرگ‌ترین کابوس برنامه‌نویسا رو تبدیل به یه بازی کرده و حسابی سر و صدا راه انداخته. ماجرا از این قراره که تو این بازی باید بین ۱۸۷ هزار و ۴۲۱ خط کد، یه دونه سیمیکالن ناقابل و گمشده رو پیدا کنی. نکته‌ی جالب و رو مخ قضیه هم اینجاست که کل این کدهای لعنتی چاپ شدن و چسبیدن به در و دیوار یه دفتر کار مجازی، و مجبوری خط به خط دیوارها رو با دقت بگردی تا پیداش کنی."
+  ],
+  "why": "به خنده‌دارترین و در عین حال عذاب‌آورترین شکل ممکن، درد بی‌درمون دیباگ کردن دستی و خطاهای مسخره‌ی برنامه‌نویسی رو به رخ کشیده.",
+  "tags": []
+ },
+ "updated": "2026-10-25T12:29:06+00:00",
+ "gholam_checked": "2026-10-25T12:29:06+00:00"
+}

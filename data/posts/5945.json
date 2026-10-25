@@ -2,16 +2,23 @@
  "id": 5945,
  "url": "https://t.me/dlmehr/5945",
  "date": "2026-10-17T14:00:01+00:00",
- "edited": false,
- "views": "262",
  "text": "https://fxtwitter.com/kimmonismus/status/2111374692028158023",
  "forwarded_from": "Mahdi abedi",
  "digest": false,
  "hash": "db55544b54d3",
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/kimmonismus/status/2111374692028158023",
+  "site": "FxTwitter",
+  "title": "Chubby ♨️ (@kimmonismus)",
+  "description": "Holy, DeepSeek 4.1-1017 is roughly on par with Opus 5, significant jump compared to DeepSeek 4.1 Flash regular.\nIt outperforms GLM5.3 across the board and even GPT-5.6 Sol!\nBuy 2 DGX spark and run this baby locally. China is back!\nQuoting imjustnewatai…",
+  "image": "https://cdn4.telesco.pe/file/Fw_5Dm83qdbuMw5mDpxuJdKBbY1Q0bnommoJQVsDo3lLaLYILfZvchE22V7nXudPh2C9XkQaA6bo-DMnEdo50Kilo6YCiU1GFAPsbZFCOQcpzmBsKu2OoUDHWA7WmIQpS9WM6kvbTPY6GrNYn2T5UWfifqIgqc-UMHzrdS1i3kWesOAuUh4nBUNaxvsYXnF6KHVaEWzTB2cltJnGSFENu4FppwP1CSwnmnhMaH84ggUj7K50vGp8-2z8A9xxK-iMZlsv_weBasavIGuNB1GDcFakpibR8yCw23RRMj-KhgNwaf3DMIMGArOpYeMaKvZA11H9NIAnKe4w7O47hkDdOw.jpg"
+ },
  "gholam": {
   "text": "ببین رفیق، چینی‌ها باز گردوخاک عجیبی راه انداختن و نسخه جدید دیپ‌سیک یعنی 4.1-1017 رو فرستادن تو میدون که حسابی غوغا کرده. بچه‌های اهل فن تستش کردن و می‌گن این غول تازه، قشنگ پا‌به‌پای اوپوس ۵ میاد و نسبت به مدل فلش قبلی یه جهش خیره‌کننده داشته. جالب‌تر اینکه ادعا شده توی بنچمارک‌ها حتی GLM5.3 و مدل خفن GPT-5.6 Sol رو هم جا گذاشته و نشون داده اصلاً با کسی شوخی نداره. خوره‌های سخت‌افزار هم می‌گن کافیه دو تا سیستم گردن‌کلفت DGX اسپارک داشته باشی تا بتونی این هیولا رو بدون منت غربی‌ها روی سیستم خودت محلی بالا بیاری.\n\nچرا مهمه؟ چون پیشرفت سرسام‌آور دیپ‌سیک ثابت می‌کنه انحصار غول‌های آمریکایی شکسته و می‌شه پرچمدارترین هوش مصنوعی دنیا رو لوکال و مستقل دست گرفت.",
   "date": "2026-10-17T14:00:19+00:00"
  },
+ "gholam_checked": "2026-10-24T23:11:47+00:00",
  "links": [
   {
    "kind": "tweet",
@@ -71,18 +78,6 @@
    }
   }
  ],
- "media": [],
- "preview": {
-  "url": "https://fxtwitter.com/kimmonismus/status/2111374692028158023",
-  "site": "FxTwitter",
-  "title": "Chubby ♨️ (@kimmonismus)",
-  "description": "Holy, DeepSeek 4.1-1017 is roughly on par with Opus 5, significant jump compared to DeepSeek 4.1 Flash regular.\nIt outperforms GLM5.3 across the board and even GPT-5.6 Sol!\nBuy 2 DGX spark and run this baby locally. China is back!\nQuoting imjustnewatai…",
-  "image": {
-   "src": "media/5945/preview.webp",
-   "width": 680,
-   "height": 506
-  }
- },
  "article": {
   "title": "چینی‌ها باز گردوخاک عجیبی راه انداختن و نسخه جدید دیپ‌سیک یعنی 4.1-1017 رو فرستادن تو میدون که حسابی غوغا کرده",
   "source_title": "Holy, DeepSeek 4.1-1017 is roughly on par with Opus 5, significant jump compared to DeepSeek 4.1 Flash regular.",
@@ -95,6 +90,5 @@
    "آنتروپیک"
   ]
  },
- "updated": "2026-10-24T23:11:47+00:00",
- "gholam_checked": "2026-10-24T23:11:47+00:00"
+ "updated": "2026-10-25T11:54:10+00:00"
 }

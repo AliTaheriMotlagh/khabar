@@ -1,0 +1,71 @@
+{
+ "id": 5596,
+ "url": "https://t.me/dlmehr/5596",
+ "date": "2026-10-02T17:53:57+00:00",
+ "text": "https://fxtwitter.com/suryapandiaraju/status/2105763524123505113?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+ "forwarded_from": null,
+ "digest": false,
+ "hash": "b05e4dc698e0",
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/suryapandiaraju/status/2105763524123505113?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+  "site": "FxTwitter",
+  "title": "Surya Pandiaraju (@suryapandiaraju)",
+  "description": "We finally put together a video showing what we’ve been building at Preload (YC F26)\n🧠\n🤖\nWe collect synchronized egocentric video + EMG + tactile data for robot manipulation, VLAs, and world models.\nIf you need robotics data, we can collect it end to end…",
+  "image": null
+ },
+ "gholam": {
+  "text": "رفیق، بچه‌های استارتاپ Preload که زیر پرچم وای‌کامبینیتور کار می‌کنن، بالاخره دستاورد خفنشون رو تو یه ویدیو رو کردن تا نشون بدن چطوری می‌خوان بازی رباتیک رو عوض کنن. سوریا پاندیاراجو اعلام کرده کار این تیم جمع‌آوری دیتای فوق‌العاده حساس و هماهنگ‌شده‌ست؛ یعنی ویدیوی اول‌شخص، داده‌های عضله یا همون EMG و حس لامسه رو با هم سینک می‌کنن تا ربات‌ها بتونن دست‌ورزی ظریف و ماهرانه رو یاد بگیرن. این رفقا دیتای تر و تمیز رو به صورت صفر تا صد و تو مقیاس بالا برای آموزش مدل‌های زبانی-حرکتی (VLA) و مدل‌های جهان تحویل شرکت‌های رباتیک می‌دن تا اتوماسیون حسابی جون بگیره.\n\nچرا مهمه؟ گیر اصلیِ ساخت ربات‌های همه‌کاره و ماهر دقیقاً همین لمس و حرکات ظریف دست انسانه که بدون دیتای دقیق عضله و لامسه، مدل‌ها هیچ‌وقت یادش نمی‌گرفتن.",
+  "date": "2026-10-02T17:54:11+00:00"
+ },
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/suryapandiaraju/status/2105763524123505113",
+   "domain": "x.com",
+   "author": {
+    "name": "Surya Pandiaraju",
+    "handle": "suryapandiaraju",
+    "avatar": "https://pbs.twimg.com/profile_images/2105731216855212032/WyW86B9m_200x200.jpg"
+   },
+   "text": "We finally put together a video showing what we’ve been building at Preload (YC F26) 🧠🤖\n\nWe collect synchronized egocentric video + EMG + tactile data for robot manipulation, VLAs, and world models.\n\nIf you need robotics data, we can collect it end to end, at scale, starting as soon as tomorrow, and help integrate it into model training.\n\nWe’re also excited to work with companies exploring where dexterous manipulation can unlock new automation.\n\n🎥 Launch video below\nhttp://preload.ai\nsurya@preload.ai",
+   "date": 1790888122,
+   "media": [
+    {
+     "type": "video",
+     "src": "https://video.twimg.com/amplify_video/2105763360252006400/vid/avc1/1280x720/tFp_EVDwu4HKeRba.mp4?tag=29",
+     "poster": "https://pbs.twimg.com/amplify_video_thumb/2105763360252006400/img/GPEhO5y53z2Ty3Ij.jpg",
+     "ratio": 0.5625,
+     "duration": 63.232,
+     "gif": false
+    }
+   ],
+   "links": [
+    "http://preload.ai"
+   ]
+  },
+  {
+   "kind": "link",
+   "url": "https://preload.ai/",
+   "domain": "preload.ai",
+   "title": "Preload",
+   "description": "Preload gives robots a nervous system: everyday video paired with synchronized multimodal sensing that captures the force, motion and intent cameras cannot see.",
+   "image": null,
+   "site": "preload.ai"
+  }
+ ],
+ "article": {
+  "title": "بچه‌های استارتاپ Preload که زیر پرچم وای‌کامبینیتور کار می‌کنن، بالاخره دستاورد خفنشون رو تو یه ویدیو رو کردن تا نشون بدن چطوری می‌خوان بازی رباتیک رو عوض کنن",
+  "source_title": "We finally put together a video showing what we’ve been building at Preload (YC F26) 🧠🤖",
+  "body": [
+   "رفیق، بچه‌های استارتاپ Preload که زیر پرچم وای‌کامبینیتور کار می‌کنن، بالاخره دستاورد خفنشون رو تو یه ویدیو رو کردن تا نشون بدن چطوری می‌خوان بازی رباتیک رو عوض کنن. سوریا پاندیاراجو اعلام کرده کار این تیم جمع‌آوری دیتای فوق‌العاده حساس و هماهنگ‌شده‌ست؛ یعنی ویدیوی اول‌شخص، داده‌های عضله یا همون EMG و حس لامسه رو با هم سینک می‌کنن تا ربات‌ها بتونن دست‌ورزی ظریف و ماهرانه رو یاد بگیرن. این رفقا دیتای تر و تمیز رو به صورت صفر تا صد و تو مقیاس بالا برای آموزش مدل‌های زبانی-حرکتی (VLA) و مدل‌های جهان تحویل شرکت‌های رباتیک می‌دن تا اتوماسیون حسابی جون بگیره."
+  ],
+  "why": "گیر اصلیِ ساخت ربات‌های همه‌کاره و ماهر دقیقاً همین لمس و حرکات ظریف دست انسانه که بدون دیتای دقیق عضله و لامسه، مدل‌ها هیچ‌وقت یادش نمی‌گرفتن.",
+  "tags": [
+   "رباتیک",
+   "استارتاپ"
+  ]
+ },
+ "updated": "2026-10-25T12:25:08+00:00",
+ "gholam_checked": "2026-10-25T12:25:08+00:00"
+}

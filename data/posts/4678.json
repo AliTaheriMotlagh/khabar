@@ -1,0 +1,61 @@
+{
+ "id": 4678,
+ "url": "https://t.me/dlmehr/4678",
+ "date": "2026-08-10T18:04:35+00:00",
+ "text": "https://fxtwitter.com/hussein98d/status/2086520907879563354?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+ "forwarded_from": null,
+ "digest": false,
+ "hash": "42ea8ec0643b",
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/hussein98d/status/2086520907879563354?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+  "site": "🧵 Thread • FxTwitter",
+  "title": "Hussein Daher (@HusseiN98D)",
+  "description": "🚨\nThis one's nasty.\nGoogled \"codex macbook download\" — first result is a sponsored ad pointing to http://chatgpt.com. The real domain.\nIt opens a shared ChatGPT chat with friendly install steps: open Terminal, paste this command.\nThat command hides a base64…",
+  "image": "https://cdn4.telesco.pe/file/mijXVtqLgSn_ot-JEsVpWoWWjt296M7i1Km92rme7w8Y7HvLQCXtew47-M9EyjIR-kE90Aax6o37DoRoTfSNh9cdYzKGo66v7CSFT9CejWgB0eTtdbX6K0XV1GoIEyIowuMTE9GcHaEKxkqiS7HI3uVqwfqiLX7TzM90dckshuo729epOFFxtUO31S4beUg9RefXoAzkFfx0uZnuERfzXrX9m-n7GdRe9ndd9VMEOmNGMv9oWCgi3bzeKgggg0884cl2iMvNNHVFgDHuk1g_sMzBcnKkrSTeoaSrAe4n2R3DfhPmiCg8NsdGs1pYERh0gIyxDDfEBabkY6mutkGrCQ.jpg"
+ },
+ "gholam": {
+  "text": "رفیق، یه کلک جدید و ناجوانمردانه زدن که قشنگ حواست باشه کلاه سرت نره؛ هکرها اومدن توی گوگل برای سرچ دانلود برنامه مک تبلیغ خریدم. وقتی روی لینک اول کلیک می‌کنی، مستقیم می‌برتت توی یه صفحه رسمی و واقعی از چت‌جی‌پیتی که خیلی شیک بهت می‌گه ترمینال مک‌ت رو باز کن و یه دستور رو توش کپی کن. اما پشت این کد، یه بدافزار دزد به اسم MacSync Stealer قایم شده که به محض اینتر زدن، تموم رمزها، اطلاعات کی‌چین و ولت‌های کریپتوت رو یک‌جا می‌دوشه و می‌بره. این وسط هیچ فایل مشکوکی دانلود نمی‌کنی و باگی هم در کار نیست، فقط از اعتماد تو به اسم گوگل و چت‌جی‌پیتی سوءاستفاده می‌کنن تا خودت سیستم رو دو دستی تقدیمشون کنی.\n\nچرا مهمه؟ چون هکرها دست گذاشتن روی اعتبار بسترهای معتبری مثل گوگل و چت‌جی‌پیتی و بدون نیاز به هیچ ابزار پیچیده‌ای، دارن کل دارایی دیجیتال و رمزهای کاربران مک رو به باد می‌دن.",
+  "date": "2026-08-10T18:04:53+00:00"
+ },
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/HusseiN98D/status/2086520907879563354",
+   "domain": "x.com",
+   "author": {
+    "name": "Hussein Daher",
+    "handle": "HusseiN98D",
+    "avatar": "https://pbs.twimg.com/profile_images/1601481826132000768/DfYnE4eK_200x200.jpg"
+   },
+   "text": "🚨 This one's nasty.\n\nGoogled \"codex macbook download\" — first result is a sponsored ad pointing to http://chatgpt.com. The real domain.\n\nIt opens a shared ChatGPT chat with friendly install steps: open Terminal, paste this command.\n\nThat command hides a base64 string. Decoded 👇\n\ncurl to trekmesh15[.]com — a known ClickFix domain dropping MacSync Stealer. Passwords, keychain, crypto wallets. Gone.\n\nSo the infection chain is: Google Ad → legit http://chatgpt.com share link → you infect yourself.\n\nNo exploit. No download. Just trust in a Google ad and a ChatGPT page.\n\nDon't ever paste Terminal commands from an ad or a shared chat. Tell your Mac friends.",
+   "date": 1786300324,
+   "media": [
+    {
+     "type": "image",
+     "src": "https://pbs.twimg.com/media/HPTPLCeXEAEh3TU.jpg?name=orig",
+     "ratio": 1.25
+    }
+   ],
+   "links": [
+    "http://chatgpt.com",
+    "http://chatgpt.com"
+   ]
+  }
+ ],
+ "article": {
+  "title": "یه کلک جدید و ناجوانمردانه زدن که قشنگ حواست باشه کلاه سرت نره؛ هکرها اومدن توی گوگل برای سرچ دانلود برنامه مک تبلیغ خریدم",
+  "source_title": "🚨 This one's nasty.",
+  "body": [
+   "رفیق، یه کلک جدید و ناجوانمردانه زدن که قشنگ حواست باشه کلاه سرت نره؛ هکرها اومدن توی گوگل برای سرچ دانلود برنامه مک تبلیغ خریدم. وقتی روی لینک اول کلیک می‌کنی، مستقیم می‌برتت توی یه صفحه رسمی و واقعی از چت‌جی‌پیتی که خیلی شیک بهت می‌گه ترمینال مک‌ت رو باز کن و یه دستور رو توش کپی کن. اما پشت این کد، یه بدافزار دزد به اسم MacSync Stealer قایم شده که به محض اینتر زدن، تموم رمزها، اطلاعات کی‌چین و ولت‌های کریپتوت رو یک‌جا می‌دوشه و می‌بره. این وسط هیچ فایل مشکوکی دانلود نمی‌کنی و باگی هم در کار نیست، فقط از اعتماد تو به اسم گوگل و چت‌جی‌پیتی سوءاستفاده می‌کنن تا خودت سیستم رو دو دستی تقدیمشون کنی."
+  ],
+  "why": "چون هکرها دست گذاشتن روی اعتبار بسترهای معتبری مثل گوگل و چت‌جی‌پیتی و بدون نیاز به هیچ ابزار پیچیده‌ای، دارن کل دارایی دیجیتال و رمزهای کاربران مک رو به باد می‌دن.",
+  "tags": [
+   "گوگل",
+   "امنیت",
+   "اوپن‌ای‌آی"
+  ]
+ },
+ "updated": "2026-10-25T12:30:35+00:00",
+ "gholam_checked": "2026-10-25T12:30:35+00:00"
+}

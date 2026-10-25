@@ -1,0 +1,62 @@
+{
+ "id": 5828,
+ "url": "https://t.me/dlmehr/5828",
+ "date": "2026-10-12T14:40:24+00:00",
+ "text": "https://fxtwitter.com/phoronix/status/2109438646134960556",
+ "forwarded_from": "Parsa Razavi",
+ "digest": false,
+ "hash": "c09f03973bb3",
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/phoronix/status/2109438646134960556",
+  "site": "FxTwitter · phoronix.com",
+  "title": "Phoronix (@phoronix)",
+  "description": "Linus Torvalds Working On A Hefty Linux Kernel Improvement With Claude Code\nLinux creator Linus Torvalds uses AI himself (Claude) for working on a huge perf improvement to the Linux kernel. And Claude to help draft a test program and commit message.\nht…",
+  "image": "https://cdn4.telesco.pe/file/mSIJ4FsCOyMepX3k02rkeEQv32eZVsIem0SyJnc5jsvgoyLwXOZ7s8KN8ieJlTaf7PAWH6vc16qvGLnH6TfT8Fjh4q0DKBQ2WzvtS5GtRb__tkACCGwc6cq47FK9tWUdtIUjk2nf0GZAOSUoTfWSomC18yO2vB_YWw1txYu7LgLkoSVLqtiMeC_yc4fs0WebVlh2ZoWDdx5gKlZVtbxoNFeWzzAxqpUGp3zm52YpHL3C31eiG_auaAJLx3dq04pANDtkrcbPfIBbWuC4GWHHJe0yam4HEaKQHI6A1hFWopiPjeC9sbq_M--BsNuhYgFATLKvp884lQEabNcukACoHA.jpg"
+ },
+ "gholam": {
+  "text": "ببین رفیق، حتی خود لینوس توروالدز بزرگ، یعنی خالق هسته لینوکس هم دست‌به‌دامن هوش مصنوعی شده تا یه ارتقای پرفورمنس و کارایی خیلی سنگین روی کرنل پیاده کنه. ماجرا از این قراره که توروالدز از ابزار Claude Code کمک گرفته تا براش برنامه‌های تستی بنویسه و حتی متن کامیت‌ها رو تر و تمیز پیش‌نویس کنه. با اینکه همیشه توی دنیای برنامه‌نویسی نماد سرسختی و کدنویسی دستی بوده، ولی نشون داده که اگه ابزاری کارش درست باشه، تعصب بی‌جا نداره و ازش نهایت استفاده رو می‌بره.\n\nچرا مهمه؟ چون وقتی غول دنیای نرم‌افزار آزاد و سخت‌گیرترین برنامه‌نویس تاریخ برای حساس‌ترین بخش سیستم‌عامل به هوش مصنوعی تکیه می‌کنه، یعنی عصر سنتی برنامه‌نویسی رسماً تغییر کرده.",
+  "date": "2026-10-12T14:40:43+00:00"
+ },
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/phoronix/status/2109438646134960556",
+   "domain": "x.com",
+   "author": {
+    "name": "Phoronix",
+    "handle": "phoronix",
+    "avatar": "https://pbs.twimg.com/profile_images/937312281662279682/bqi_9AN2_200x200.jpg"
+   },
+   "text": "Linus Torvalds Working On A Hefty Linux Kernel Improvement With Claude Code\n\nLinux creator Linus Torvalds uses AI himself (Claude) for working on a huge perf improvement to the Linux kernel. And Claude to help draft a test program and commit message.\n\nhttps://www.phoronix.com/news/Linus-Torvalds-Claude-Code",
+   "date": 1791764339,
+   "media": [],
+   "links": [
+    "https://www.phoronix.com/news/Linus-Torvalds-Claude-Code"
+   ]
+  },
+  {
+   "kind": "link",
+   "url": "https://www.phoronix.com/news/Linus-Torvalds-Claude-Code",
+   "domain": "phoronix.com",
+   "title": "Linus Torvalds Working On A Hefty Linux Kernel Improvement With Claude Code",
+   "description": "Linux creator Linus Torvalds has been known to use AI to help with kernel debugging and outside of the kernel tree has also done some vibe coding with Google's Antigravity",
+   "image": "https://www.phoronix.net/image.php?id=2026&image=linus_llm_performance",
+   "site": "phoronix.com"
+  }
+ ],
+ "article": {
+  "title": "حتی خود لینوس توروالدز بزرگ، یعنی خالق هسته لینوکس هم دست‌به‌دامن هوش مصنوعی شده تا یه ارتقای پرفورمنس و کارایی خیلی سنگین روی کرنل پیاده کنه",
+  "source_title": "Linus Torvalds Working On A Hefty Linux Kernel Improvement With Claude Code",
+  "body": [
+   "ببین رفیق، حتی خود لینوس توروالدز بزرگ، یعنی خالق هسته لینوکس هم دست‌به‌دامن هوش مصنوعی شده تا یه ارتقای پرفورمنس و کارایی خیلی سنگین روی کرنل پیاده کنه. ماجرا از این قراره که توروالدز از ابزار Claude Code کمک گرفته تا براش برنامه‌های تستی بنویسه و حتی متن کامیت‌ها رو تر و تمیز پیش‌نویس کنه. با اینکه همیشه توی دنیای برنامه‌نویسی نماد سرسختی و کدنویسی دستی بوده، ولی نشون داده که اگه ابزاری کارش درست باشه، تعصب بی‌جا نداره و ازش نهایت استفاده رو می‌بره."
+  ],
+  "why": "چون وقتی غول دنیای نرم‌افزار آزاد و سخت‌گیرترین برنامه‌نویس تاریخ برای حساس‌ترین بخش سیستم‌عامل به هوش مصنوعی تکیه می‌کنه، یعنی عصر سنتی برنامه‌نویسی رسماً تغییر کرده.",
+  "tags": [
+   "کدنویسی",
+   "آنتروپیک"
+  ]
+ },
+ "updated": "2026-10-25T12:23:47+00:00",
+ "gholam_checked": "2026-10-25T12:23:47+00:00"
+}

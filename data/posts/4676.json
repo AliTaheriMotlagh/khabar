@@ -1,0 +1,92 @@
+{
+ "id": 4676,
+ "url": "https://t.me/dlmehr/4676",
+ "date": "2026-08-10T17:24:39+00:00",
+ "text": "https://fxtwitter.com/unslothai/status/2086814102484398290?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+ "forwarded_from": null,
+ "digest": false,
+ "hash": "a27142595f86",
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/unslothai/status/2086814102484398290?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+  "site": "FxTwitter",
+  "title": "Unsloth AI (@UnslothAI)",
+  "description": "2-bit Muse Glimmer GGUF managed to call 100+ tools on just 14GB RAM.\n🔥\nMuse Glimmer did a complete repo bug hunt for 5 mins nonstop with: evidence, repro, fix, tests and a PR writeup.\nRun and train it in Unsloth.\nGitHub repo: https://github.com/unslothai/unsloth…",
+  "image": null
+ },
+ "gholam": {
+  "text": "رفیق، متا یه مدل هوش مصنوعی متن‌باز ۳۰ میلیاردی جدید داده بیرون به اسم Muse Glimmer که تو سایز خودش قوی‌ترین مدل ایجنتی و تصویریه. بچه‌های Unsloth هم سریع دست‌به‌کار شدن و نسخه ۲ بیتی‌ش رو طوری بهینه کردن که کلاً روی ۱۴ گیگابایت رم مثل ساعت کار می‌کنه. این هوش مصنوعی توی یه تست ۵ دقیقه‌ای بی‌وقفه، بالای ۱۰۰ تا ابزار مختلف رو صدا زده، باگ‌های پروژه رو پیدا و رفع کرده و حتّی گزارش و تست‌هاش رو کامل تحویل داده. تازه لایسنسش هم آپاچی ۲ هست و خیلی راحت می‌تونی با Unsloth رو سیستم خودت اجراش کنی یا آموزش‌ش بدی.\n\nچرا مهمه؟ چون نشون می‌ده دیگه برای حل باگ‌های پیچیده و کارهای سنگین برنامه‌نویسی نیازی به سرورهای گرون‌قیمت نداری و با رم معمولی سیستم خودت هم کارت راه می‌افته.",
+  "date": "2026-08-10T17:24:55+00:00"
+ },
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/UnslothAI/status/2086814102484398290",
+   "domain": "x.com",
+   "author": {
+    "name": "Unsloth AI",
+    "handle": "UnslothAI",
+    "avatar": "https://pbs.twimg.com/profile_images/2036313340616777728/OLALWB2__200x200.jpg"
+   },
+   "text": "2-bit Muse Glimmer GGUF managed to call 100+ tools on just 14GB RAM. 🔥\n\nMuse Glimmer did a complete repo bug hunt for 5 mins nonstop with: evidence, repro, fix, tests and a PR writeup.\n\nRun and train it in Unsloth.\n\nGitHub repo: https://github.com/unslothai/unsloth",
+   "date": 1786370227,
+   "media": [
+    {
+     "type": "video",
+     "src": "https://video.twimg.com/amplify_video/2086813802662887424/vid/avc1/960x720/J4xUmRoRMfihSOzB.mp4?tag=29",
+     "poster": "https://pbs.twimg.com/amplify_video_thumb/2086813802662887424/img/w6K1SB0JmeeGYrdt.jpg",
+     "ratio": 0.75,
+     "duration": 118.466,
+     "gif": false
+    }
+   ],
+   "links": [
+    "https://github.com/unslothai/unsloth"
+   ],
+   "quote": {
+    "author": {
+     "name": "Unsloth AI",
+     "handle": "UnslothAI",
+     "avatar": "https://pbs.twimg.com/profile_images/2036313340616777728/OLALWB2__200x200.jpg"
+    },
+    "text": "Meta releases Muse Glimmer, a new 30B open model that runs on 18GB RAM.\n\nMuse Glimmer is Apache 2.0 licensed, supports vision and is the strongest agentic model for its size.\n\nRun and train the model via Unsloth.\nGGUF: https://huggingface.co/unsloth/Muse-Glimmer-30B-GGUF\nGuide: https://unsloth.ai/docs/models/muse-glimmer",
+    "date": 1786357805,
+    "media": [
+     {
+      "type": "image",
+      "src": "https://pbs.twimg.com/media/HPWqovTa0AAwhsw.jpg?name=orig",
+      "ratio": 1.11
+     }
+    ],
+    "links": [
+     "https://huggingface.co/unsloth/Muse-Glimmer-30B-GGUF",
+     "https://unsloth.ai/docs/models/muse-glimmer"
+    ]
+   }
+  },
+  {
+   "kind": "link",
+   "url": "https://github.com/unslothai/unsloth",
+   "domain": "github.com",
+   "title": "GitHub - unslothai/unsloth: Local UI to run and train LLMs and diffusion models. Supports GGUF, MLX, Qwen3.8, DeepSeek-V4.1, MiniMax-H3, Gemma 4, FLUX and more.",
+   "description": "Local UI to run and train LLMs and diffusion models. Supports GGUF, MLX, Qwen3.8, DeepSeek-V4.1, MiniMax-H3, Gemma 4, FLUX and more. - unslothai/unsloth",
+   "image": "https://opengraph.githubassets.com/90abee0c41484c6d53244a2e3aecfdf617a67c8be53c3c30e421e87c8942f7f7/unslothai/unsloth",
+   "site": "GitHub"
+  }
+ ],
+ "article": {
+  "title": "متا یه مدل هوش مصنوعی متن‌باز ۳۰ میلیاردی جدید داده بیرون به اسم Muse Glimmer که تو سایز خودش قوی‌ترین مدل ایجنتی و تصویریه",
+  "source_title": "2-bit Muse Glimmer GGUF managed to call 100+ tools on just 14GB RAM. 🔥",
+  "body": [
+   "رفیق، متا یه مدل هوش مصنوعی متن‌باز ۳۰ میلیاردی جدید داده بیرون به اسم Muse Glimmer که تو سایز خودش قوی‌ترین مدل ایجنتی و تصویریه. بچه‌های Unsloth هم سریع دست‌به‌کار شدن و نسخه ۲ بیتی‌ش رو طوری بهینه کردن که کلاً روی ۱۴ گیگابایت رم مثل ساعت کار می‌کنه. این هوش مصنوعی توی یه تست ۵ دقیقه‌ای بی‌وقفه، بالای ۱۰۰ تا ابزار مختلف رو صدا زده، باگ‌های پروژه رو پیدا و رفع کرده و حتّی گزارش و تست‌هاش رو کامل تحویل داده. تازه لایسنسش هم آپاچی ۲ هست و خیلی راحت می‌تونی با Unsloth رو سیستم خودت اجراش کنی یا آموزش‌ش بدی."
+  ],
+  "why": "چون نشون می‌ده دیگه برای حل باگ‌های پیچیده و کارهای سنگین برنامه‌نویسی نیازی به سرورهای گرون‌قیمت نداری و با رم معمولی سیستم خودت هم کارت راه می‌افته.",
+  "tags": [
+   "متا",
+   "کدنویسی",
+   "چین"
+  ]
+ },
+ "updated": "2026-10-25T12:30:35+00:00",
+ "gholam_checked": "2026-10-25T12:30:35+00:00"
+}

@@ -2,16 +2,23 @@
  "id": 5953,
  "url": "https://t.me/dlmehr/5953",
  "date": "2026-10-18T04:31:39+00:00",
- "edited": true,
- "views": "225",
  "text": "https://fxtwitter.com/andrewcurran_/status/2111656899338973391?s=52&t=F41Qa04r48Mef_j_XjBneQ",
  "forwarded_from": null,
  "digest": false,
  "hash": "52b0014b7305",
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/andrewcurran_/status/2111656899338973391?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+  "site": "FxTwitter",
+  "title": "Andrew Curran (@AndrewCurran_)",
+  "description": "Three mysterious new models just showed up in the OpenAI API:\naurora-red-alpha\naurora-green-alpha\naurora-blue-alpha",
+  "image": "https://cdn4.telesco.pe/file/DH1S0vHdpsAj42WYzHmoqZsqYGLByk7-WweK-vPJLSHgBsp2dhquN-xDJFvo8zch0aE2Ri4ymK2_wldyhnAAgkk2K0z3sL_Gvq8EMDH1FT73xIx4odtuMc95oGOn9sVLVRpm17aWsWpp5VLTTPMJ6XzwuSVfg4WSpB6XjHC4XomLW22OQaws6WmS55yYPg5mxAnSE-C6Ji_VDK3Ob-Em3GS19tWms_pxzNHgIybp9Gde_G3rfFY9xkd6N-U8_CP5kdzMcHAcuTirqhSgqxvnDhAzWilr9l0PBZcj7Qx8PNU-qcSRU23lir30SzLNbZx9IR-qhY3ZKAaLW_PEiDucVA.jpg"
+ },
  "gholam": {
   "text": "رفیق، بشنو از برو بچه‌های اوپن‌ای‌آی که انگار باز زیرپوستی یه خوابایی واسه‌مون دیدن و تو سکوت کامل دارن کار رو پیش می‌برن. ماجرا از این قراره که اندرو کوران متوجه شده سه تا مدل تر و تمیز ولی کاملاً ناشناخته با اسم‌های aurora-red-alpha، aurora-green-alpha و aurora-blue-alpha یهویی توی API این شرکت آفتابی شدن. هنوز هیچ‌کس درست‌درمون سر در نیاورده که این پروژه‌های رنگارنگِ آرورا قراره غول جدید تصویرسازی باشن، نسل تازه مدل‌های استدلالی‌ان یا یه شعبده‌بازی کاملاً متفاوت، چون خود شرکت هم تا الان لام تا کام راجع بهشون حرفی نزده.\n\nاهمیتش اینه که هر وقت سر و کله این مدل‌های تستی با اسم‌رمز توی API پیدا می‌شه، یعنی اوپن‌ای‌آی پخت‌وپز نسخه بعدیش رو تموم کرده و چیزی نمونده که دوباره یه بمب خبری تو دنیای هوش مصنوعی بترکونه.",
   "date": "2026-10-18T04:31:56+00:00"
  },
+ "gholam_checked": "2026-10-24T23:11:45+00:00",
  "links": [
   {
    "kind": "tweet",
@@ -35,18 +42,6 @@
    "links": []
   }
  ],
- "media": [],
- "preview": {
-  "url": "https://fxtwitter.com/andrewcurran_/status/2111656899338973391?s=52&t=F41Qa04r48Mef_j_XjBneQ",
-  "site": "FxTwitter",
-  "title": "Andrew Curran (@AndrewCurran_)",
-  "description": "Three mysterious new models just showed up in the OpenAI API:\naurora-red-alpha\naurora-green-alpha\naurora-blue-alpha",
-  "image": {
-   "src": "media/5953/preview.webp",
-   "width": 200,
-   "height": 200
-  }
- },
  "article": {
   "title": "بشنو از برو بچه‌های اوپن‌ای‌آی که انگار باز زیرپوستی یه خوابایی واسه‌مون دیدن و تو سکوت کامل دارن کار رو پیش می‌برن",
   "source_title": "Three mysterious new models just showed up in the OpenAI API:",
@@ -58,6 +53,5 @@
    "اوپن‌ای‌آی"
   ]
  },
- "updated": "2026-10-24T23:11:45+00:00",
- "gholam_checked": "2026-10-24T23:11:45+00:00"
+ "updated": "2026-10-25T11:54:10+00:00"
 }

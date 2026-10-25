@@ -1,0 +1,59 @@
+{
+ "id": 4938,
+ "url": "https://t.me/dlmehr/4938",
+ "date": "2026-08-25T16:09:28+00:00",
+ "text": "https://fxtwitter.com/rsasaki0109/status/2092223124708188406?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+ "forwarded_from": null,
+ "digest": false,
+ "hash": "e4a4e55ccb54",
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/rsasaki0109/status/2092223124708188406?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+  "site": "🧵 Thread • FxTwitter",
+  "title": "Ryohei Sasaki@engineer (@rsasaki0109)",
+  "description": "Inflatable Whole-Body Robotic Skin with Internal Time-of-Flight (ToF) Depth Sensing and Kinematics-Based Point-Cloud Prediction(IROS2026)\nAn inflatable Baymax costume serves as the robotic skin envelope. Distributed internal ToF sensors detect whole-body…",
+  "image": null
+ },
+ "gholam": {
+  "text": "ببین رفیق، مهندسا اومدن یه پوست بادی نرم با الهام از همون شخصیت دوست‌داشتنی «بایمکس» برای ربات‌ها طراحی کردن که به سنسورهای عمق‌سنج داخلی مجهزه. قضیه اینه که این سنسورها داخل تن‌پوش کار گذاشته شدن و با پردازش ابر نقاط و کینماتیک، تماس کل بدن ربات رو موقع برخورد و تعامل با آدم‌ها درجا حس می‌کنن. این رویکرد خلاقانه باعث میشه ربات توی تعاملات بدنی و فیزیکی، هم نرم و بی‌خطر باشه و هم دقیقاً بفهمه از کدوم طرف لمس شده یا ضربه خورده.\n\nچرا مهمه؟ چون ساخت پوست‌های بادی و حساس، امنیت تعامل فیزیکی انسان و ربات رو چند پله بالا می‌بره و ربات‌های کمکی و مراقبتی رو بی‌خطرتر و کاردرست‌تر می‌کنه.",
+  "date": "2026-08-25T16:09:41+00:00"
+ },
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/rsasaki0109/status/2092223124708188406",
+   "domain": "x.com",
+   "author": {
+    "name": "Ryohei Sasaki@engineer",
+    "handle": "rsasaki0109",
+    "avatar": "https://pbs.twimg.com/profile_images/2094698630485876736/0eEtRM-7_200x200.jpg"
+   },
+   "text": "Inflatable Whole-Body Robotic Skin with Internal Time-of-Flight (ToF) Depth Sensing and Kinematics-Based Point-Cloud Prediction(IROS2026)\n\nAn inflatable Baymax costume serves as the robotic skin envelope. Distributed internal ToF sensors detect whole-body contact during dynamic human–robot interaction.",
+   "date": 1787659839,
+   "media": [
+    {
+     "type": "video",
+     "src": "https://video.twimg.com/amplify_video/2092223087379202048/vid/avc1/1280x720/hjOnfQnM5GU2dJDP.mp4?tag=29",
+     "poster": "https://pbs.twimg.com/amplify_video_thumb/2092223087379202048/img/xv77NRWvTPkOFpdl.jpg",
+     "ratio": 0.5625,
+     "duration": 70.5,
+     "gif": false
+    }
+   ],
+   "links": []
+  }
+ ],
+ "article": {
+  "title": "مهندسا اومدن یه پوست بادی نرم با الهام از همون شخصیت دوست‌داشتنی «بایمکس» برای ربات‌ها طراحی کردن که به سنسورهای عمق‌سنج داخلی مجهزه",
+  "source_title": "Inflatable Whole-Body Robotic Skin with Internal Time-of-Flight (ToF) Depth Sensing and Kinematics-Based Point-Cloud Prediction(IROS2026)",
+  "body": [
+   "ببین رفیق، مهندسا اومدن یه پوست بادی نرم با الهام از همون شخصیت دوست‌داشتنی «بایمکس» برای ربات‌ها طراحی کردن که به سنسورهای عمق‌سنج داخلی مجهزه. قضیه اینه که این سنسورها داخل تن‌پوش کار گذاشته شدن و با پردازش ابر نقاط و کینماتیک، تماس کل بدن ربات رو موقع برخورد و تعامل با آدم‌ها درجا حس می‌کنن. این رویکرد خلاقانه باعث میشه ربات توی تعاملات بدنی و فیزیکی، هم نرم و بی‌خطر باشه و هم دقیقاً بفهمه از کدوم طرف لمس شده یا ضربه خورده."
+  ],
+  "why": "چون ساخت پوست‌های بادی و حساس، امنیت تعامل فیزیکی انسان و ربات رو چند پله بالا می‌بره و ربات‌های کمکی و مراقبتی رو بی‌خطرتر و کاردرست‌تر می‌کنه.",
+  "tags": [
+   "رباتیک"
+  ]
+ },
+ "updated": "2026-10-25T12:29:11+00:00",
+ "gholam_checked": "2026-10-25T12:29:11+00:00"
+}

@@ -1,0 +1,84 @@
+{
+ "id": 4610,
+ "url": "https://t.me/dlmehr/4610",
+ "date": "2026-08-05T17:25:05+00:00",
+ "text": "https://fxtwitter.com/i/status/2084972695796789663",
+ "forwarded_from": "Parsa Razavi",
+ "digest": false,
+ "hash": "9a9385bb96a2",
+ "media": [],
+ "preview": {
+  "url": "https://x.com/i/status/2084972695796789663",
+  "site": "X (formerly Twitter)",
+  "title": "Xiaomi Tech (@XiaomiTech_) on X",
+  "description": "Xiaomi-Robotics-1 is now open source!\n🎉\nXiaomi-Robotics-1 was pre-trained on more than 100,000 hours of UMI data and post-trained with over 10,000 hours of cross-embodiment data.\nThis open-source release covers the complete pipeline from real-robot post…",
+  "image": "https://cdn4.telesco.pe/file/YCNu9R8AHMWUdhUNxtJWsR91SmbcTTjVbwybEVkoT5JnWMFBDzKgag0DZ7rWVh55VmdpaiiuhcqlBQTInMU7RFYZpITOyxASGRq7tmW38tT99Y49pdwmCFAIQqYzAHjSQTdCsr6sOauq5BWa-m8z1LlWiduHjxp5tQLL_zGagIHUVqoTSMXuTb0VJCa7cdgvgU6lhd-Gnrr3pByG9swKmqKwyHD3H_Vl84veoA2gp7NnfUnwHDbTCFgy9gmDMdYj8feUXNo1yxgZvlKMNgrzAxqgWZUaSD1qy8Ky66oUaPxYvJ3uXaiSAWA-w0jrdqQJEbhh590ablzQgMR9TKKtKw.jpg"
+ },
+ "gholam": {
+  "text": "ببین رفیق، شیائومی اومده یه حرکت پرچم‌دار زده و مدل هوش مصنوعی رباتیک خودش به اسم Xiaomi-Robotics-1 رو کاملاً متن‌باز کرده. این غول بی‌شاخ‌ودم رو اول با بیش از ۱۰۰ هزار ساعت داده‌ی UMI پیش‌تمرین دادن و بعدش هم با بالای ۱۰ هزار ساعت داده‌ی چندرباته قشنگ چکش‌کاریش کردن. خلاصه صفر تا صد این پروژه، از تمرین دادن روی ربات‌های واقعی گرفته تا کدهای ارزیابی و پیاده‌سازی کامل مدل رو رو کرده تا همه بتونن ازش استفاده کنن.\n\nاهمیتش اینه که با متن‌باز شدن این پروژه، مسیر ساخت و توسعه‌ی ربات‌های هوشمند عمومی برای بقیه‌ی محقق‌ها و برنامه‌نویسا خیلی هموارتر میشه.",
+  "date": "2026-08-05T17:25:21+00:00"
+ },
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/XiaomiTech_/status/2084972695796789663",
+   "domain": "x.com",
+   "author": {
+    "name": "Xiaomi Tech",
+    "handle": "XiaomiTech_",
+    "avatar": "https://pbs.twimg.com/profile_images/2056256394031210496/nBJBueif_200x200.jpg"
+   },
+   "text": "Xiaomi-Robotics-1 is now open source!🎉\n\nXiaomi-Robotics-1 was pre-trained on more than 100,000 hours of UMI data and post-trained with over 10,000 hours of cross-embodiment data. \n\nThis open-source release covers the complete pipeline from real-robot post-training to model deployment and also includes evaluation code for benchmarks.\n\n🌐Project Page :https://robotics.xiaomi.com/xiaomi-robotics-1.html\n💻GitHub: https://github.com/XiaomiRobotics/Xiaomi-Robotics-1\n📎Hugging Face: https://huggingface.co/collections/XiaomiRobotics/xiaomi-robotics-1\n\nWe will continue exploring the broader possibilities of general-purpose robot models.\n#Robotics #EmbodiedAI #FoundationModels #RobotLearning #XiaomiAI #XiaomiRobotics",
+   "date": 1785931202,
+   "media": [
+    {
+     "type": "image",
+     "src": "https://pbs.twimg.com/media/HO8S8qYboAAaU44.jpg?name=orig",
+     "ratio": 1.3333
+    }
+   ],
+   "links": [
+    "https://robotics.xiaomi.com/xiaomi-robotics-1.html",
+    "https://github.com/XiaomiRobotics/Xiaomi-Robotics-1",
+    "https://huggingface.co/collections/XiaomiRobotics/xiaomi-robotics-1"
+   ]
+  },
+  {
+   "kind": "tweet",
+   "url": "https://x.com/XiaomiTech_/status/2084972695796789663",
+   "domain": "x.com",
+   "author": {
+    "name": "Xiaomi Tech",
+    "handle": "XiaomiTech_",
+    "avatar": "https://pbs.twimg.com/profile_images/2056256394031210496/nBJBueif_200x200.jpg"
+   },
+   "text": "Xiaomi-Robotics-1 is now open source!🎉\n\nXiaomi-Robotics-1 was pre-trained on more than 100,000 hours of UMI data and post-trained with over 10,000 hours of cross-embodiment data. \n\nThis open-source release covers the complete pipeline from real-robot post-training to model deployment and also includes evaluation code for benchmarks.\n\n🌐Project Page :https://robotics.xiaomi.com/xiaomi-robotics-1.html\n💻GitHub: https://github.com/XiaomiRobotics/Xiaomi-Robotics-1\n📎Hugging Face: https://huggingface.co/collections/XiaomiRobotics/xiaomi-robotics-1\n\nWe will continue exploring the broader possibilities of general-purpose robot models.\n#Robotics #EmbodiedAI #FoundationModels #RobotLearning #XiaomiAI #XiaomiRobotics",
+   "date": 1785931202,
+   "media": [
+    {
+     "type": "image",
+     "src": "https://pbs.twimg.com/media/HO8S8qYboAAaU44.jpg?name=orig",
+     "ratio": 1.3333
+    }
+   ],
+   "links": [
+    "https://robotics.xiaomi.com/xiaomi-robotics-1.html",
+    "https://github.com/XiaomiRobotics/Xiaomi-Robotics-1",
+    "https://huggingface.co/collections/XiaomiRobotics/xiaomi-robotics-1"
+   ]
+  }
+ ],
+ "article": {
+  "title": "شیائومی اومده یه حرکت پرچم‌دار زده و مدل هوش مصنوعی رباتیک خودش به اسم Xiaomi-Robotics-1 رو کاملاً متن‌باز کرده",
+  "source_title": "Xiaomi-Robotics-1 is now open source!🎉",
+  "body": [
+   "ببین رفیق، شیائومی اومده یه حرکت پرچم‌دار زده و مدل هوش مصنوعی رباتیک خودش به اسم Xiaomi-Robotics-1 رو کاملاً متن‌باز کرده. این غول بی‌شاخ‌ودم رو اول با بیش از ۱۰۰ هزار ساعت داده‌ی UMI پیش‌تمرین دادن و بعدش هم با بالای ۱۰ هزار ساعت داده‌ی چندرباته قشنگ چکش‌کاریش کردن. خلاصه صفر تا صد این پروژه، از تمرین دادن روی ربات‌های واقعی گرفته تا کدهای ارزیابی و پیاده‌سازی کامل مدل رو رو کرده تا همه بتونن ازش استفاده کنن."
+  ],
+  "why": "با متن‌باز شدن این پروژه، مسیر ساخت و توسعه‌ی ربات‌های هوشمند عمومی برای بقیه‌ی محقق‌ها و برنامه‌نویسا خیلی هموارتر میشه.",
+  "tags": [
+   "رباتیک"
+  ]
+ },
+ "updated": "2026-10-25T12:30:51+00:00",
+ "gholam_checked": "2026-10-25T12:30:51+00:00"
+}

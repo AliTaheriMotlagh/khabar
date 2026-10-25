@@ -1,0 +1,56 @@
+{
+ "id": 5842,
+ "url": "https://t.me/dlmehr/5842",
+ "date": "2026-10-12T17:48:13+00:00",
+ "text": "https://fxtwitter.com/rohanpaul_ai/status/2109670406257025311?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+ "forwarded_from": null,
+ "digest": false,
+ "hash": "27ef7bac665f",
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/rohanpaul_ai/status/2109670406257025311?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+  "site": "🧵 Thread • FxTwitter",
+  "title": "Rohan Paul (@rohanpaul_ai)",
+  "description": "New Nvidia paper shows scoring base models on every step of an agent run works worse than scoring them only on the edit that first makes the tests pass.\nPost-training is expensive, so picking the right base model matters. Yet agent benchmarks score base…",
+  "image": "https://cdn4.telesco.pe/file/G-KuX38W1aNh---jwuNs3THxWPJzirbotm_mtItS6M4pCkKzxL0PgpxmGaoC7I9Tkngc56aTaALDFFYlbqrzYKxN2SR3YW6JP6qZFRaja5KbuuHxYKgSXtfI8Ai6xsz76XJEGWvFoKMk2LuEIgJqtbM0c7uQeUgzrWJ_RW3zhIX6p5X4L3iGIO9hpf4Y-jfUi-_BVKVqcFWl0uV_2Jyzv37fx-x4HMYGNf3e8au-7-h-eZGG-SaCHRpsd3d6US8xIM3M10SlM7-so25jVBe6TerwAhrOwL3sVFFOgPG8iPTwsdNHuNwti1yyyCpUnfM_fiR2SnG8lf4X8pEjxUYgmw.jpg"
+ },
+ "gholam": {
+  "text": "رفیق، انویدیا یه مقاله جدید داده بیرون که می‌گه واسه پیدا کردن بهترین مدل زبانی پایه برای ایجنت‌های برنامه‌نویسی، نباید خودت رو درگیر ارزیابی تک‌تک قدم‌های کار کنی. ماجرا اینه که پست‌ترِینینگ مدل‌ها خرج سنگینی روی دست شرکت‌ها می‌ذاره و از اون طرف بنچمارک‌های ساده هم اصلاً نشون نمیدن کدوم مدل خام در آینده ایجنت بهتری از آب درمیاد. حالا بچه‌های انویدیا اومدن مسیر موفق ایجنت‌های قوی رو بازپخش کردن و فهمیدن راز کار اینه که مدل رو فقط سر همون ادیت سرنوشت‌سازی که تست‌ها رو سبز می‌کنه محک بزنی؛ همین فرمول ساده با ضریب همبستگی خیره‌کننده ۰.۹۶۴ تونسته نتیجه نهایی مدل‌ها روی SWE-bench رو دقیق پیش‌بینی کنه. \n\nاهمیتش اینه که جلوی هزینه‌های سرسام‌آور آموزش بیهوده رو می‌گیره و قبل از اینکه کلی بسوزونی و بسازی، بهت می‌گه کدوم مدل ارزش وقت گذاشتن و پست‌ترِینینگ رو داره.",
+  "date": "2026-10-12T17:48:28+00:00"
+ },
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/rohanpaul_ai/status/2109670406257025311",
+   "domain": "x.com",
+   "author": {
+    "name": "Rohan Paul",
+    "handle": "rohanpaul_ai",
+    "avatar": "https://pbs.twimg.com/profile_images/1816185267037859840/Fd18CH0v_200x200.jpg"
+   },
+   "text": "New Nvidia paper shows scoring base models on every step of an agent run works worse than scoring them only on the edit that first makes the tests pass.\n\nPost-training is expensive, so picking the right base model matters. Yet agent benchmarks score base models near zero, and simple coding tests barely predict later agent skill.\n\nThey replay a strong agent's successful run and rerun the tests after each edit to find the 1st edit that makes them pass. At this decisive step they test whether a base model favors that edit, picks it over failing edits, and can write a passing one.\n\nHow likely each base model was to write that exact edit ranked the same 10 models in line with their post-trained SWE-bench Verified scores, at 0.964.\n\nWhen choosing a base model to post-train for agent work, run this check first. It needs only a benchmark's successful agent runs and its tests.",
+   "date": 1791819595,
+   "media": [
+    {
+     "type": "image",
+     "src": "https://pbs.twimg.com/media/HUcNbupa8AArRJJ.jpg?name=orig",
+     "ratio": 0.936
+    }
+   ],
+   "links": []
+  }
+ ],
+ "article": {
+  "title": "انویدیا یه مقاله جدید داده بیرون که می‌گه واسه پیدا کردن بهترین مدل زبانی پایه برای ایجنت‌های برنامه‌نویسی، نباید خودت رو درگیر ارزیابی تک‌تک قدم‌های کار کنی",
+  "source_title": "New Nvidia paper shows scoring base models on every step of an agent run works worse than scoring them only on the edit that first makes…",
+  "body": [
+   "رفیق، انویدیا یه مقاله جدید داده بیرون که می‌گه واسه پیدا کردن بهترین مدل زبانی پایه برای ایجنت‌های برنامه‌نویسی، نباید خودت رو درگیر ارزیابی تک‌تک قدم‌های کار کنی. ماجرا اینه که پست‌ترِینینگ مدل‌ها خرج سنگینی روی دست شرکت‌ها می‌ذاره و از اون طرف بنچمارک‌های ساده هم اصلاً نشون نمیدن کدوم مدل خام در آینده ایجنت بهتری از آب درمیاد. حالا بچه‌های انویدیا اومدن مسیر موفق ایجنت‌های قوی رو بازپخش کردن و فهمیدن راز کار اینه که مدل رو فقط سر همون ادیت سرنوشت‌سازی که تست‌ها رو سبز می‌کنه محک بزنی؛ همین فرمول ساده با ضریب همبستگی خیره‌کننده ۰.۹۶۴ تونسته نتیجه نهایی مدل‌ها روی SWE-bench رو دقیق پیش‌بینی کنه."
+  ],
+  "why": "جلوی هزینه‌های سرسام‌آور آموزش بیهوده رو می‌گیره و قبل از اینکه کلی بسوزونی و بسازی، بهت می‌گه کدوم مدل ارزش وقت گذاشتن و پست‌ترِینینگ رو داره.",
+  "tags": [
+   "انویدیا"
+  ]
+ },
+ "updated": "2026-10-25T12:23:44+00:00",
+ "gholam_checked": "2026-10-25T12:23:44+00:00"
+}

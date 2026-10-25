@@ -1,0 +1,51 @@
+{
+ "id": 5370,
+ "url": "https://t.me/dlmehr/5370",
+ "date": "2026-09-18T18:46:53+00:00",
+ "text": "https://x.com/trq212/status/2101009392611278961",
+ "forwarded_from": "Mehran",
+ "digest": false,
+ "hash": "5db0fa394f61",
+ "media": [],
+ "preview": {
+  "url": "https://x.com/trq212/status/2101009392611278961",
+  "site": "X (formerly Twitter)",
+  "title": "Thariq (@trq212) on X",
+  "description": "We're adding support for AGENTS.md to Claude Code.\nStarting today in version 2.1.277, if there is no CLAUDE.md in a folder, Claude will check for and use AGENTS.md.\nYou can toggle this behavior…",
+  "image": "https://cdn4.telesco.pe/file/ahlJGb7acdfjC7ZCFxskyBg613q3fhC-yZAThmCXOcfERjdU9N6yDVyH1P3ESDtmh2oNCb8_bWZjDQAW2NW7nZTx_iTr5aaks0UNdqqMDJtvjIMGfNrn0K_GLzjvX6bH6sFTP_KE8cCRD7x8pdVCuclkdWV7BwbeIIjETLiUw7_GMDnKqLeT47-ykPdLZ314xI_kjoBVQLc6LXpqFvHCkA80gYm1Ukm3KmjOrpvrjz29qtTqIiT0Xql05UrVX8AAzlHW6zfl69p3syrrwo7sobwvGX58I2qlYUE_DlQ1W1wNxPWPuZ7fbJmSY3dbTbD4HYSYA-W-_5cfXPLXwe1oww.jpg"
+ },
+ "gholam": {
+  "text": "رفیق، بچه‌های توسعه‌دهنده کلود کد توی نسخه جدید یعنی ۲.۱.۲۷۷ یه حرکت مشتی زدن و پشتیبانی از فایل AGENTS.md رو اضافه کردن. داستان از این قراره که از این به بعد اگه توی پوشه پروژه‌تون فایل اختصاصی CLAUDE.md وجود نداشته باشه، خود کلود خودکار میره سراغ AGENTS.md و تنظیمات و دستورالعمل‌ها رو از اونجا می‌خونه. البته دستت هم بازه و اگه احیاناً با این قضیه حال نکردی، خیلی راحت می‌تونی توی بخش کانفیگ این قابلیت رو خاموش یا روشن کنی.\n\nاهمیتش اینه که فرمت استاندارد ایجنت‌ها داره فراگیرتر میشه و دیگه نیازی نیست واسه هر هوش مصنوعی یه فایل کانفیگ جداگونه بسازی و وقتت هدر بره.",
+  "date": "2026-09-18T18:47:04+00:00"
+ },
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/trq212/status/2101009392611278961",
+   "domain": "x.com",
+   "author": {
+    "name": "Thariq",
+    "handle": "trq212",
+    "avatar": "https://pbs.twimg.com/profile_images/1976939058741039104/r3GgzqRh_200x200.jpg"
+   },
+   "text": "We're adding support for AGENTS.md to Claude Code. \n\nStarting today in version 2.1.277, if there is no CLAUDE.md in a folder, Claude will check for and use AGENTS.md.\n\nYou can toggle this behavior in /config.",
+   "date": 1789754648,
+   "media": [],
+   "links": []
+  }
+ ],
+ "article": {
+  "title": "بچه‌های توسعه‌دهنده کلود کد توی نسخه جدید یعنی ۲.۱.۲۷۷ یه حرکت مشتی زدن و پشتیبانی از فایل AGENTS.md رو اضافه کردن",
+  "source_title": "We're adding support for AGENTS.md to Claude Code.",
+  "body": [
+   "رفیق، بچه‌های توسعه‌دهنده کلود کد توی نسخه جدید یعنی ۲.۱.۲۷۷ یه حرکت مشتی زدن و پشتیبانی از فایل AGENTS.md رو اضافه کردن. داستان از این قراره که از این به بعد اگه توی پوشه پروژه‌تون فایل اختصاصی CLAUDE.md وجود نداشته باشه، خود کلود خودکار میره سراغ AGENTS.md و تنظیمات و دستورالعمل‌ها رو از اونجا می‌خونه. البته دستت هم بازه و اگه احیاناً با این قضیه حال نکردی، خیلی راحت می‌تونی توی بخش کانفیگ این قابلیت رو خاموش یا روشن کنی."
+  ],
+  "why": "فرمت استاندارد ایجنت‌ها داره فراگیرتر میشه و دیگه نیازی نیست واسه هر هوش مصنوعی یه فایل کانفیگ جداگونه بسازی و وقتت هدر بره.",
+  "tags": [
+   "آنتروپیک",
+   "کدنویسی"
+  ]
+ },
+ "updated": "2026-10-25T12:26:28+00:00",
+ "gholam_checked": "2026-10-25T12:26:28+00:00"
+}

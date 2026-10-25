@@ -1,0 +1,60 @@
+{
+ "id": 5689,
+ "url": "https://t.me/dlmehr/5689",
+ "date": "2026-10-06T21:03:15+00:00",
+ "text": "https://fxtwitter.com/openaidevs/status/2107573382229188645?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+ "forwarded_from": null,
+ "digest": false,
+ "hash": "ac718ab6c07f",
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/openaidevs/status/2107573382229188645?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+  "site": "🧵 Thread • FxTwitter",
+  "title": "OpenAI Developers (@OpenAIDevs)",
+  "description": "Let your app choose the right model, tool, or action in near real-time with Decisions API, now available to all developers in public beta.\nThe Decisions API makes decisions up to 10x faster than GPT-6 Luna through the Responses API.",
+  "image": null
+ },
+ "gholam": {
+  "text": "ببین رفیق، بچه‌های اوپن‌ای‌آی یه حرکت تر و تمیز زدن و ای‌پی‌آی جدیدشون به اسم Decisions API رو به شکل آزمایشی عمومی در دسترس همه برنامه‌نویس‌ها گذاشتن. قضیه از این قراره که این ابزار به اپلیکیشن‌ها اجازه میده تو کسری از ثانیه و تقریباً بی‌درنگ تصمیم بگیرن که کدوم مدل، ابزار یا کار رو باید انتخاب کنن تا کار راه بیفته. نکته برگ‌ریزونش هم اینه که این سیستم تا ده برابر سریع‌تر از مدل GPT-6 Luna توی Responses API تصمیم‌گیری می‌کنه و عملاً معطلی رو به صفر می‌رسونه. خلاصه اگه دنبال ساخت برنامه‌های هوشمند و فرز هستی، این قابلیت جدید حسابی به کارت میاد و سرعت کار رو پرواز میده.\n\nچرا مهمه؟ اهمیتش اینه که با سرعت ۱۰ برابری توی انتخاب ابزار و مدل، برنامه‌ها بدون لگ و تأخیر کارهای پیچیده رو مثل برق انجام میدن.",
+  "date": "2026-10-06T21:03:27+00:00"
+ },
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/OpenAIDevs/status/2107573382229188645",
+   "domain": "x.com",
+   "author": {
+    "name": "OpenAI Developers",
+    "handle": "OpenAIDevs",
+    "avatar": "https://pbs.twimg.com/profile_images/2022002720971096064/l3Kyt4qt_200x200.jpg"
+   },
+   "text": "Let your app choose the right model, tool, or action in near real-time with Decisions API, now available to all developers in public beta.\n\nThe Decisions API makes decisions up to 10x faster than GPT-6 Luna through the Responses API.",
+   "date": 1791319625,
+   "media": [
+    {
+     "type": "video",
+     "src": "https://video.twimg.com/amplify_video/2107572018644217856/vid/avc1/1280x720/5wSNrOsxvcc8lo9K.mp4?tag=29",
+     "poster": "https://pbs.twimg.com/media/HT-a6gmXIAAk5ga.jpg",
+     "ratio": 0.5598,
+     "duration": 71.892,
+     "gif": false
+    }
+   ],
+   "links": []
+  }
+ ],
+ "article": {
+  "title": "بچه‌های اوپن‌ای‌آی یه حرکت تر و تمیز زدن و ای‌پی‌آی جدیدشون به اسم Decisions API رو به شکل آزمایشی عمومی در دسترس همه برنامه‌نویس‌ها گذاشتن",
+  "source_title": "Let your app choose the right model, tool, or action in near real-time with Decisions API, now available to all developers in public beta.",
+  "body": [
+   "ببین رفیق، بچه‌های اوپن‌ای‌آی یه حرکت تر و تمیز زدن و ای‌پی‌آی جدیدشون به اسم Decisions API رو به شکل آزمایشی عمومی در دسترس همه برنامه‌نویس‌ها گذاشتن. قضیه از این قراره که این ابزار به اپلیکیشن‌ها اجازه میده تو کسری از ثانیه و تقریباً بی‌درنگ تصمیم بگیرن که کدوم مدل، ابزار یا کار رو باید انتخاب کنن تا کار راه بیفته. نکته برگ‌ریزونش هم اینه که این سیستم تا ده برابر سریع‌تر از مدل GPT-6 Luna توی Responses API تصمیم‌گیری می‌کنه و عملاً معطلی رو به صفر می‌رسونه. خلاصه اگه دنبال ساخت برنامه‌های هوشمند و فرز هستی، این قابلیت جدید حسابی به کارت میاد و سرعت کار رو پرواز میده."
+  ],
+  "why": "اهمیتش اینه که با سرعت ۱۰ برابری توی انتخاب ابزار و مدل، برنامه‌ها بدون لگ و تأخیر کارهای پیچیده رو مثل برق انجام میدن.",
+  "tags": [
+   "کدنویسی",
+   "اوپن‌ای‌آی"
+  ]
+ },
+ "updated": "2026-10-25T12:24:36+00:00",
+ "gholam_checked": "2026-10-25T12:24:36+00:00"
+}

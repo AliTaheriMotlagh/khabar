@@ -1,0 +1,68 @@
+{
+ "id": 5050,
+ "url": "https://t.me/dlmehr/5050",
+ "date": "2026-08-31T16:20:53+00:00",
+ "text": "https://fxtwitter.com/wallstengine/status/2094405616920105090?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+ "forwarded_from": null,
+ "digest": false,
+ "hash": "799987fa423a",
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/wallstengine/status/2094405616920105090?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+  "site": "FxTwitter",
+  "title": "Wall St Engine (@wallstengine)",
+  "description": "Here’s what else NVIDIA and MediaTek are working on:\nMediaTek will use $NVDA’s newly announced NVHBM technology alongside NVLink Fusion, giving hyperscalers, cloud providers and frontier model developers a prevalidated path to build custom XPUs that integrate…",
+  "image": "https://cdn4.telesco.pe/file/J33F79b06WGdoM1YFATFpw6dXUYb_kshrukL2WsEFo66-LLRoLeEBnx8hUaEinXB2YuY9W76ddN2CO8NcKsjHxZIF-iT8h8o6X9BUOu1riC21dJQqCsLmfM1vGfFmP3v2TgY0C_VDbvGR5sR-_EpzUW12CKDuEc8N-bx5dqSyQz6ZEgDw4kv_u4yxK1Gwxt9LhT7Iv9HS8lAvkABi_puB6ISCOy93_-jg-oNRqpVTSo8KzCxERuqWPSxxG4T9vgQRbnqo0Qf-kXP63B87923fTpTqhFNnHavS984RRM_Ji92A6rIdqjCIHMwtKTgCeebgpsUwAg1qQpSIBbtBIPjDw.jpg"
+ },
+ "gholam": {
+  "text": "ببین رفیق، انویدیا و مدیاتک دست‌به‌یکی کردن و دارن بازار هوش مصنوعی رو حسابی تکون می‌دن. انویدیا اومده یه سرمایه‌گذاری سنگین ۳.۵ میلیارد دلاری توی اوراق قرضه مدیاتک انجام داده تا این رفاقت کاری رو حسابی محکم کنه. طبق این توافق، مدیاتک قراره از فناوری‌های جدید انویدیا مثل NVHBM و پلتفرم NVLink Fusion استفاده کنه تا تراشه‌های سفارشی خفنی رو برای کارخونه‌های هوش مصنوعی و دیتاسنترها بسازه. تازه داستان به همین‌جا ختم نمی‌شه و این دو تا غول قراره روی چند نسل از چیپ‌های سری RTX Spark و DGX Spark برای سیستم‌های خونگی، ورک‌استیشن‌ها و حتی پلتفرم خودروهای هوشمند هم همکاری کنن.\n\nاهمیتش اینه که توسعه‌دهنده‌ها و غول‌های ابری از این به بعد می‌تونن خیلی سرراست تراشه‌های اختصاصی خودشون رو مستقیم به اکوسیستم عظیم و شبکه‌های هوش مصنوعی انویدیا وصل کنن.",
+  "date": "2026-08-31T16:21:06+00:00"
+ },
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/wallstengine/status/2094405616920105090",
+   "domain": "x.com",
+   "author": {
+    "name": "Wall St Engine",
+    "handle": "wallstengine",
+    "avatar": "https://pbs.twimg.com/profile_images/1691846947857178624/oZp5wB4r_200x200.jpg"
+   },
+   "text": "Here’s what else NVIDIA and MediaTek are working on:\n\nMediaTek will use $NVDA’s newly announced NVHBM technology alongside NVLink Fusion, giving hyperscalers, cloud providers and frontier model developers a prevalidated path to build custom XPUs that integrate directly into NVIDIA NVLink-connected, rack-scale AI factories.\n\nThe companies will also continue working on multiple generations of RTX Spark and DGX Spark chips for consumer PCs, AI developer systems and enterprise workstations, along with AI-powered software-defined vehicle platforms.",
+   "date": 1788180185,
+   "media": [],
+   "links": [],
+   "quote": {
+    "author": {
+     "name": "Wall St Engine",
+     "handle": "wallstengine",
+     "avatar": "https://pbs.twimg.com/profile_images/1691846947857178624/oZp5wB4r_200x200.jpg"
+    },
+    "text": "$NVDA is investing $3.5B in convertible bonds issued by MediaTek as the companies deepen their partnership across AI edge-to-cloud computing.\n\nMediaTek will also adopt NVIDIA’s NVLink Fusion platform to build custom XPUs for AI factories.",
+    "date": 1788179536,
+    "media": [
+     {
+      "type": "image",
+      "src": "https://pbs.twimg.com/media/HRDQUdRaIAAXSUs.jpg?name=orig",
+      "ratio": 0.525
+     }
+    ],
+    "links": []
+   }
+  }
+ ],
+ "article": {
+  "title": "انویدیا و مدیاتک دست‌به‌یکی کردن و دارن بازار هوش مصنوعی رو حسابی تکون می‌دن",
+  "source_title": "Here’s what else NVIDIA and MediaTek are working on:",
+  "body": [
+   "ببین رفیق، انویدیا و مدیاتک دست‌به‌یکی کردن و دارن بازار هوش مصنوعی رو حسابی تکون می‌دن. انویدیا اومده یه سرمایه‌گذاری سنگین ۳.۵ میلیارد دلاری توی اوراق قرضه مدیاتک انجام داده تا این رفاقت کاری رو حسابی محکم کنه. طبق این توافق، مدیاتک قراره از فناوری‌های جدید انویدیا مثل NVHBM و پلتفرم NVLink Fusion استفاده کنه تا تراشه‌های سفارشی خفنی رو برای کارخونه‌های هوش مصنوعی و دیتاسنترها بسازه. تازه داستان به همین‌جا ختم نمی‌شه و این دو تا غول قراره روی چند نسل از چیپ‌های سری RTX Spark و DGX Spark برای سیستم‌های خونگی، ورک‌استیشن‌ها و حتی پلتفرم خودروهای هوشمند هم همکاری کنن."
+  ],
+  "why": "توسعه‌دهنده‌ها و غول‌های ابری از این به بعد می‌تونن خیلی سرراست تراشه‌های اختصاصی خودشون رو مستقیم به اکوسیستم عظیم و شبکه‌های هوش مصنوعی انویدیا وصل کنن.",
+  "tags": [
+   "انویدیا",
+   "تراشه"
+  ]
+ },
+ "updated": "2026-10-25T12:28:29+00:00",
+ "gholam_checked": "2026-10-25T12:28:29+00:00"
+}

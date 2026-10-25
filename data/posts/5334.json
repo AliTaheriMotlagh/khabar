@@ -1,0 +1,59 @@
+{
+ "id": 5334,
+ "url": "https://t.me/dlmehr/5334",
+ "date": "2026-09-16T21:52:26+00:00",
+ "text": "https://fxtwitter.com/_luofuli/status/2100296686719610932?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+ "forwarded_from": null,
+ "digest": false,
+ "hash": "d2d678375d14",
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/_luofuli/status/2100296686719610932?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+  "site": "FxTwitter",
+  "title": "Fuli Luo (@_LuoFuli)",
+  "description": "Nearly half a year of silence. We spent it studying one problem: how far RL can scale.\nMiMo-V2.6 is in the middle of its RL run right now. Three things we scaled: compute (~2B tokens per step, 1568 prompts × 16 rollouts, fully async), environments and harnesses…",
+  "image": "https://cdn4.telesco.pe/file/C1O2Sfa66yxVECQNJylkyEihWkMBnst3auXQIhRTI6GcfIDUOZB2RyM_4VdKTPKPO3hKbAfzBos4ieppycrw6JB4ZVK9rQv6YW4LCFck3Ni2dLVbB8AowY8PmIp-rzis4ktWcpAzQexTYxFAVvHrjywvpr_efIIxZthRkBjdpVO0eIb-zzKysk0xHh_SygKiQVAy2FY0RaFVrKBJ8RuI8hXit5wdKwEmUxsIeNpFsPYj91xkg1oILBS-YxR84ZBC0N_YuGzC7LUAKYwFHq8vSO6eKtagciIz5SGk71aume9Nq0n0KpTC_4S9RaLUREFybkXrytRYJaiKwfxb_ZjB-g.jpg"
+ },
+ "gholam": {
+  "text": "رفیق، فولی لو بعد از نزدیک شش ماه سکوت مطلق برگشته و با تیمش دست گذاشته رو یه سوال اساسی: اینکه یادگیری تقویتی یا همون RL رو تا چه ابعاد بزرگی میشه بالا کشید. الان مدل خفن MiMo-V2.6 وسط تست آموزش خودشه و بچه‌ها پردازش رو تا رقم وحشتناکِ حدود ۲ میلیارد توکن در هر گام بالا بردن و با ۱۵۶۸ تا پرامپت و ۱۶ بار خروجی همزمان، محیط‌های چندمنظوره عامل‌محور راه انداختن. سیستم پاداش و ارزیابی رو هم حسابی هوشمند کردن و از همه باحال‌تر اینکه قول دادن توی هفته‌های آینده جزئیات این دستاورد گردن‌کلفت رو مرحله‌به‌مرحله به‌صورت متن‌باز منتشر کنن.\n\nاهمیتش اینه که داره ابعاد مقیاس‌پذیری هوش مصنوعی و یادگیری تقویتی رو توی دنیای متن‌باز جابه‌جا می‌کنه و نشون میده رقابت مدل‌های استدلالی وارد فاز بی‌رحمانه‌ای از پردازش فوق‌سنگین شده.",
+  "date": "2026-09-16T21:52:37+00:00"
+ },
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/_LuoFuli/status/2100296686719610932",
+   "domain": "x.com",
+   "author": {
+    "name": "Fuli Luo",
+    "handle": "_LuoFuli",
+    "avatar": "https://pbs.twimg.com/profile_images/1988292026555564032/WBBBI5xQ_200x200.jpg"
+   },
+   "text": "Nearly half a year of silence. We spent it studying one problem: how far RL can scale.\n\nMiMo-V2.6 is in the middle of its RL run right now. Three things we scaled: compute (~2B tokens per step, 1568 prompts × 16 rollouts, fully async), environments and harnesses (multi-task agentic RL, mixed across multiple harnesses in one run), and grader compute (agentic in-group credit assignment, with test-case and rubric-based rewards). We'll open-source the details piece by piece over the coming weeks.\n\nStreaming the run: https://mimo.xiaomi.com/rl/",
+   "date": 1789584726,
+   "media": [],
+   "links": [
+    "https://mimo.xiaomi.com/rl/"
+   ]
+  },
+  {
+   "kind": "link",
+   "url": "https://mimo.xiaomi.com/rl/",
+   "domain": "mimo.xiaomi.com",
+   "title": "mimo-v2.6 RL",
+   "description": "Training metrics of the mimo-v2.6-pro and mimo-v2.6-flash reinforcement-learning runs, live from the trainer's logs.",
+   "image": null,
+   "site": "mimo.xiaomi.com"
+  }
+ ],
+ "article": {
+  "title": "فولی لو بعد از نزدیک شش ماه سکوت مطلق برگشته و با تیمش دست گذاشته رو یه سوال اساسی: اینکه یادگیری تقویتی یا همون RL رو تا چه ابعاد بزرگی میشه بالا کشید",
+  "source_title": "Nearly half a year of silence. We spent it studying one problem: how far RL can scale.",
+  "body": [
+   "رفیق، فولی لو بعد از نزدیک شش ماه سکوت مطلق برگشته و با تیمش دست گذاشته رو یه سوال اساسی: اینکه یادگیری تقویتی یا همون RL رو تا چه ابعاد بزرگی میشه بالا کشید. الان مدل خفن MiMo-V2.6 وسط تست آموزش خودشه و بچه‌ها پردازش رو تا رقم وحشتناکِ حدود ۲ میلیارد توکن در هر گام بالا بردن و با ۱۵۶۸ تا پرامپت و ۱۶ بار خروجی همزمان، محیط‌های چندمنظوره عامل‌محور راه انداختن. سیستم پاداش و ارزیابی رو هم حسابی هوشمند کردن و از همه باحال‌تر اینکه قول دادن توی هفته‌های آینده جزئیات این دستاورد گردن‌کلفت رو مرحله‌به‌مرحله به‌صورت متن‌باز منتشر کنن."
+  ],
+  "why": "داره ابعاد مقیاس‌پذیری هوش مصنوعی و یادگیری تقویتی رو توی دنیای متن‌باز جابه‌جا می‌کنه و نشون میده رقابت مدل‌های استدلالی وارد فاز بی‌رحمانه‌ای از پردازش فوق‌سنگین شده.",
+  "tags": []
+ },
+ "updated": "2026-10-25T12:26:45+00:00",
+ "gholam_checked": "2026-10-25T12:26:45+00:00"
+}

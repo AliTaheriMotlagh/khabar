@@ -2,16 +2,23 @@
  "id": 5960,
  "url": "https://t.me/dlmehr/5960",
  "date": "2026-10-18T18:29:16+00:00",
- "edited": true,
- "views": "188",
  "text": "https://fxtwitter.com/satsuki2694/status/2111673817341055167?s=52&t=F41Qa04r48Mef_j_XjBneQ",
  "forwarded_from": null,
  "digest": false,
  "hash": "43a5bd65eec3",
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/satsuki2694/status/2111673817341055167?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+  "site": "🧵 Thread • FxTwitter",
+  "title": "satsuki (@satsuki2694)",
+  "description": "We benchmarked 3 local LLMs on our lab’s Mac Studio M5 Ultra vs dual DGX Sparks!\n🔬\nQwen3.8 Flash Next: 164.8 vs 116.0 tok/s\nDeepSeek V4 Flash: 74.4 vs 68.0\nGLM-5.3 Flash: 73.1 vs 28.4\nMac is surprisingly strong!\n😏",
+  "image": "https://cdn4.telesco.pe/file/cwp8XeG7HDaMhiWzs2wczC5y5M7ZxlV4LhSb8LxckZ8RMnecq3V0EgtsTNnioxUWWKtpzM3hcc6_4l5kMm4eMNqjNo3AI4_Uqfkt-_HgCxFV_JbAWcUm6FzJz-m1B8KHULM0sGI62-8KkyzHYIRQD2bihCHXJrTim6PHy6w3HlgOcVnzXwhrHxEVulFUaVKackymJPPzqY-okSOK2NmQs_Vp6OQMZ6PtoPCLmk1p0ovW161yhep2YDoN0gN-JVbkzvDL__SxBnwqQNTr19ZhV_3W603MR5Ch657z1yvKty4PISYEp0AvzOHYzdvBY9PIL_JtcKAT8C_Mxa-97GTZaQ.jpg"
+ },
  "gholam": {
   "text": "ببین رفیق، بچه‌های یه آزمایشگاه اومدن مک استودیو با چیپ خفن M5 Ultra رو انداختن وسط رینگ تا با دو تا سرور غول‌پیکر DGX Spark سر اجرای مدل‌های هوش مصنوعی محلی سرشاخ بشه. نتیجه کار حسابی غافلگیرکننده دراومده و این مک ریزه‌میزه توی هر سه تا بنچمارک زده رو دست اون سرورهای سنگین؛ یعنی تو مدل Qwen3.8 Flash Next سرعت ۱۶۴.۸ توکن بر ثانیه گرفته در حالی که رقیبش رو ۱۱۶ مونده. توی مدل‌های دیپ‌سیک V4 Flash و GLM-5.3 Flash هم به ترتیب با ارقام ۷۴.۴ و ۷۳.۱ توکن بر ثانیه، قاطعانه سیستم‌های انویدیا رو که ۶۸ و ۲۸.۴ توکن ثبت کرده بودن، پشت سر گذاشته. خلاصه اپل نشون داده پردازنده‌های دسکتاپش توی پردازش محلی هوش مصنوعی بدجور دارن شاخ‌وشونه می‌کشن و دست‌کم‌گرفتنی نیستن.\n\nچرا مهمه؟ اهمیتش اینه که ثابت می‌کنه بدون نیاز به هزینه سرسام‌آور سرورهای دیتاسنتری، می‌شه روی یه سیستم رومیزی جمع‌وجور، سنگین‌ترین مدل‌های هوش مصنوعی رو با سرعت وحشتناک بالا به صورت محلی اجرا کرد.",
   "date": "2026-10-18T18:29:31+00:00"
  },
+ "gholam_checked": "2026-10-24T23:11:45+00:00",
  "links": [
   {
    "kind": "tweet",
@@ -43,18 +50,6 @@
    "links": []
   }
  ],
- "media": [],
- "preview": {
-  "url": "https://fxtwitter.com/satsuki2694/status/2111673817341055167?s=52&t=F41Qa04r48Mef_j_XjBneQ",
-  "site": "🧵 Thread • FxTwitter",
-  "title": "satsuki (@satsuki2694)",
-  "description": "We benchmarked 3 local LLMs on our lab’s Mac Studio M5 Ultra vs dual DGX Sparks!\n🔬\nQwen3.8 Flash Next: 164.8 vs 116.0 tok/s\nDeepSeek V4 Flash: 74.4 vs 68.0\nGLM-5.3 Flash: 73.1 vs 28.4\nMac is surprisingly strong!\n😏",
-  "image": {
-   "src": "media/5960/preview.webp",
-   "width": 800,
-   "height": 467
-  }
- },
  "article": {
   "title": "بچه‌های یه آزمایشگاه اومدن مک استودیو با چیپ خفن M5 Ultra رو انداختن وسط رینگ تا با دو تا سرور غول‌پیکر DGX Spark سر اجرای مدل‌های هوش مصنوعی محلی سرشاخ بشه",
   "source_title": "We benchmarked 3 local LLMs on our lab’s Mac Studio M5 Ultra vs dual DGX Sparks! 🔬",
@@ -67,6 +62,5 @@
    "چین"
   ]
  },
- "updated": "2026-10-24T23:11:45+00:00",
- "gholam_checked": "2026-10-24T23:11:45+00:00"
+ "updated": "2026-10-25T11:54:08+00:00"
 }

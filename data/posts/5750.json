@@ -1,0 +1,77 @@
+{
+ "id": 5750,
+ "url": "https://t.me/dlmehr/5750",
+ "date": "2026-10-08T17:05:53+00:00",
+ "text": "https://fxtwitter.com/arena/status/2108227730114580501",
+ "forwarded_from": "Parsa Razavi",
+ "digest": false,
+ "hash": "d7d4b785466f",
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/arena/status/2108227730114580501",
+  "site": "🧵 Thread • FxTwitter",
+  "title": "Arena.ai (@arena)",
+  "description": "Today, we're announcing our Series B: $200M at a $3.1B valuation, and the release of Arena's Alignment Index.\nAI is advancing faster than our ability to evaluate it. The world needs a neutral third party to measure how safe and aligned AI actually is once…",
+  "image": null
+ },
+ "gholam": {
+  "text": "رفیق، بچه‌های پلتفرم آرِنا (Arena.ai) حسابی ترکوندن و اعلام کردن که تو راند جدید جذب سرمایه‌شون، ۲۰۰ میلیون دلار پول تازه با ارزش‌گذاری خفن ۳.۱ میلیارد دلاری به جیب زدن. قضیه فقط پول نیست، اینا هم‌زمان یه شاخص جدید به اسم «ایندمکس هم‌ترازی» (Alignment Index) رو برای بیش از ۲۰ تا مدل هوش مصنوعی پرچم‌دار رو کردن تا رفتار و ایمنی ایجنت‌های هوشمند رو توی دنیای واقعی بسنجن. دارن تلاش می‌کنن یه داور بی‌طرف وسط میدون باشن تا مواردی مثل حرکات سرخود یا فریب‌کاری هوش مصنوعی رو زیر ذره‌بین ببرن و بگن کدوم مدل واقعاً برای کاربرا امنه. حالا با این نقدینگی درشت و تیم ۹۰ نفره‌شون، قراره حسابی دایره سنجش امنیت و توانایی‌های مستقل هوش مصنوعی رو گسترش بدن و نیروی جدید هم بگیرن.\n\nاهمیتش اینه که هوش مصنوعی داره سریع‌تر از روش‌های ارزیابیش جلو می‌ره و وجود یه داور معتبر و بی‌طرف برای سنجش خطاها و رفتارهای سرکش ایجنت‌ها، واسه آینده امنیت همه حیاتیه.",
+  "date": "2026-10-08T17:06:07+00:00"
+ },
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/arena/status/2108227730114580501",
+   "domain": "x.com",
+   "author": {
+    "name": "Arena.ai",
+    "handle": "arena",
+    "avatar": "https://pbs.twimg.com/profile_images/2017015061454438400/iNKfXZ_I_200x200.jpg"
+   },
+   "text": "Today, we're announcing our Series B: $200M at a $3.1B valuation, and the release of Arena's Alignment Index.\n\nAI is advancing faster than our ability to evaluate it. The world needs a neutral third party to measure how safe and aligned AI actually is once it's in the hands of real people. That's the role Arena is stepping into today.\n\nThe Alignment Index is built from real-world agent traces, starting with three signals: Unauthorized Action, False Attribution, and Deceptive Completion, with results for over 20 frontier models launching today.\n\nHear more from our CEO @ml_angelopoulos below, and read the full breakdown, and more details about our company growth in thread. \n\nThis funding will allow us to go further on safety signals, agentic capabilities, and modalities. It will also allow us to grow the company to match the scale of our mission. Today, we’re still a nimble team of 90, and we're looking for people to join us across research, product, engineering, and more. Come build with us.\n\nAs AI gets more capable and autonomous, understanding how well it can safely and effectively work for people only matters more. That's what Arena is built to measure and advance.\n\nThank you to our community, our investors, and everyone building with us!\n\nTake a look at our open roles if you want to join us (link in bio).",
+   "date": 1791475634,
+   "media": [
+    {
+     "type": "video",
+     "src": "https://video.twimg.com/amplify_video/2108227117888811008/vid/avc1/1280x720/HVB41J_cCJmTFEgF.mp4?tag=29",
+     "poster": "https://pbs.twimg.com/amplify_video_thumb/2108227117888811008/img/pVY8vQcmxWWouNfO.jpg",
+     "ratio": 0.5625,
+     "duration": 132.799,
+     "gif": false
+    }
+   ],
+   "links": [],
+   "quote": {
+    "author": {
+     "name": "Arena.ai",
+     "handle": "arena",
+     "avatar": "https://pbs.twimg.com/profile_images/2017015061454438400/iNKfXZ_I_200x200.jpg"
+    },
+    "text": "Introducing the Arena Alignment Index, our new benchmark measuring safety and alignment of AI agents in real-world use.\n\nBuilt from 90K+ real-world agent sessions across 27 models, the index measures three critical signals:\n- Unauthorized Action (UA): Taking actions beyond the user's instructions or permissions\n- False Attribution (FA): Attributing statements or actions that are contradicted by user-provided evidence\n- Deceptive Completion (DC): Claiming a task was completed when it was not.\n\nKey findings:\n- OpenAI models currently lead the Alignment Index\n- Rogue actions are rare, but can have serious consequences when they occur\n- Agents can mislead users about task progress\n- Misalignment risks increase with conversation length\n- Safety and alignment are improving across model generations\n\nAs shown in the leaderboard below (sorted by lab), @OpenAI’s GPT-6.1-Sol leads the Arena Alignment Index with a score of 87.9, followed by @AnthropicAI’s Claude-Opus-5.5 at 83.2 and @spacexai's Grok-4.7 at 82.7. OpenAI also has the best observed rates across all three signals: 0.89% Unauthorized Action, 1.98% False Attribution, and 2.34% Deceptive Completion.\n\nAcross all four labs, newer models consistently outperform their predecessors, suggesting broad progress in agent safety and alignment. As agents take on longer, more complex, and higher-stakes tasks, measuring not just what they can accomplish, but how safely and reliably they act, becomes increasingly important.\n\nThis marks an important step toward making safety and alignment a core part of how Arena evaluates AI. The index is an initial starting point, and we'll continue expanding the index with additional safety signals and models over time.\n\nMore analysis below👇",
+    "date": 1791475341,
+    "media": [
+     {
+      "type": "image",
+      "src": "https://pbs.twimg.com/media/HUHrHJsaIAAxG_5.jpg?name=orig",
+      "ratio": 0.6881
+     }
+    ],
+    "links": []
+   }
+  }
+ ],
+ "article": {
+  "title": "بچه‌های پلتفرم آرِنا (Arena.ai) حسابی ترکوندن و اعلام کردن که تو راند جدید جذب سرمایه‌شون، ۲۰۰ میلیون دلار پول تازه با ارزش‌گذاری خفن ۳.۱ میلیارد دلاری به جیب زدن",
+  "source_title": "Today, we're announcing our Series B: $200M at a $3.1B valuation, and the release of Arena's Alignment Index.",
+  "body": [
+   "رفیق، بچه‌های پلتفرم آرِنا (Arena.ai) حسابی ترکوندن و اعلام کردن که تو راند جدید جذب سرمایه‌شون، ۲۰۰ میلیون دلار پول تازه با ارزش‌گذاری خفن ۳.۱ میلیارد دلاری به جیب زدن. قضیه فقط پول نیست، اینا هم‌زمان یه شاخص جدید به اسم «ایندمکس هم‌ترازی» (Alignment Index) رو برای بیش از ۲۰ تا مدل هوش مصنوعی پرچم‌دار رو کردن تا رفتار و ایمنی ایجنت‌های هوشمند رو توی دنیای واقعی بسنجن. دارن تلاش می‌کنن یه داور بی‌طرف وسط میدون باشن تا مواردی مثل حرکات سرخود یا فریب‌کاری هوش مصنوعی رو زیر ذره‌بین ببرن و بگن کدوم مدل واقعاً برای کاربرا امنه. حالا با این نقدینگی درشت و تیم ۹۰ نفره‌شون، قراره حسابی دایره سنجش امنیت و توانایی‌های مستقل هوش مصنوعی رو گسترش بدن و نیروی جدید هم بگیرن."
+  ],
+  "why": "هوش مصنوعی داره سریع‌تر از روش‌های ارزیابیش جلو می‌ره و وجود یه داور معتبر و بی‌طرف برای سنجش خطاها و رفتارهای سرکش ایجنت‌ها، واسه آینده امنیت همه حیاتیه.",
+  "tags": [
+   "استارتاپ",
+   "امنیت"
+  ]
+ },
+ "updated": "2026-10-25T12:24:09+00:00",
+ "gholam_checked": "2026-10-25T12:24:09+00:00"
+}

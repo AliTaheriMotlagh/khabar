@@ -1,0 +1,56 @@
+{
+ "id": 4551,
+ "url": "https://t.me/dlmehr/4551",
+ "date": "2026-08-03T16:00:01+00:00",
+ "text": "https://fxtwitter.com/composio/status/2084298906167320834?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+ "forwarded_from": null,
+ "digest": false,
+ "hash": "bf58cb8a2a57",
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/composio/status/2084298906167320834?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+  "site": "🧵 Thread • FxTwitter",
+  "title": "Composio (@composio)",
+  "description": "We tested DeepSeek V4 Flash against Kimi K3 and GLM 5.2 on 30 challenging agentic tasks.\nDeepSeek was 2.5x faster than GLM and 1.4x faster than Kimi at a similar success rate, despite using the most tokens per task.\n🧵\n🧵\n🧵",
+  "image": "https://cdn4.telesco.pe/file/rgNr-RTQEw1cd8WarNEUwXrg0g0v1dqjCssYDaJ_UPI-P59shULT-z9t7ifxFMZ0kz0ARlCSbjoWtBbOZsa2hfagh0Lod5ejOqRnp2sb8OQ_H8Nfui4JohJ9c6eUfokoMwfocqSmDLT-yXCOneNoo65pyZiKKmVqHTZJJNyNuGcS2sucizRqdQ8R4aFzNxeGYgiUyZhMXBDfoHMCgyhlbKmi8xwXOu-HWgz1yCdB8euzlo3YHbkfnqDgzljs71xh5lvvKfspg9-V_EJA4IO7SoxYEkJXQ6H2DtyBVRn_JgOkU5FK-OPGBolCnO0oE6Y_sN6RHHqWaAIQDfzASSO--A.jpg"
+ },
+ "gholam": {
+  "text": "داداشی، این DeepSeek V4 Flash رو تو ۳۰ تا کار سخت با بقیه رقبا محک زدن و دیدن با وجود مصرف توکن بیشتر، دو و نیم برابر سریع‌تره و کارو مشتی تحویل میده.",
+  "date": "2026-08-03T16:00:12+00:00"
+ },
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/composio/status/2084298906167320834",
+   "domain": "x.com",
+   "author": {
+    "name": "Composio",
+    "handle": "composio",
+    "avatar": "https://pbs.twimg.com/profile_images/2036542629220089856/zc7Eix-q_200x200.jpg"
+   },
+   "text": "We tested DeepSeek V4 Flash against Kimi K3 and GLM 5.2 on 30 challenging agentic tasks.\n\nDeepSeek was 2.5x faster than GLM and 1.4x faster than Kimi at a similar success rate, despite using the most tokens per task. 🧵🧵🧵",
+   "date": 1785770558,
+   "media": [
+    {
+     "type": "image",
+     "src": "https://pbs.twimg.com/media/HOznmYLWMAAhsLY.jpg?name=orig",
+     "ratio": 0.5277
+    }
+   ],
+   "links": []
+  }
+ ],
+ "article": {
+  "title": "این DeepSeek V4 Flash رو تو ۳۰ تا کار سخت با بقیه رقبا محک زدن و دیدن با وجود مصرف توکن بیشتر، دو و نیم برابر سریع‌تره و کارو مشتی تحویل میده",
+  "source_title": "We tested DeepSeek V4 Flash against Kimi K3 and GLM 5.2 on 30 challenging agentic tasks.",
+  "body": [
+   "داداشی، این DeepSeek V4 Flash رو تو ۳۰ تا کار سخت با بقیه رقبا محک زدن و دیدن با وجود مصرف توکن بیشتر، دو و نیم برابر سریع‌تره و کارو مشتی تحویل میده."
+  ],
+  "why": null,
+  "tags": [
+   "چین"
+  ]
+ },
+ "updated": "2026-10-25T12:31:07+00:00",
+ "gholam_checked": "2026-10-25T12:31:07+00:00"
+}

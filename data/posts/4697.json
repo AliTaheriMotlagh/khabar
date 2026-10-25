@@ -1,0 +1,56 @@
+{
+ "id": 4697,
+ "url": "https://t.me/dlmehr/4697",
+ "date": "2026-08-11T17:41:00+00:00",
+ "text": "https://fxtwitter.com/kotekjedi_ml/status/2087147042888114428?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+ "forwarded_from": null,
+ "digest": false,
+ "hash": "01ec47ba5854",
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/kotekjedi_ml/status/2087147042888114428?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+  "site": "🧵 Thread • FxTwitter",
+  "title": "Alexander Panfilov (@kotekjedi_ml)",
+  "description": "We can finally talk about it:\nWe found a way to extract hidden reasoning of frontier models using a vulnerability in the APIs of every frontier AI company.\nWe verified that our reasoning token count matches billed API thinking tokens 1:1 for most of the…",
+  "image": "https://cdn4.telesco.pe/file/F7jg6X1dQEPEJEJOG9lFE1c_m19GHXKXQ5enZqdVDqb1XmadJ7rUh8f9_--t2T8YCscoWTV0jGnispXz3TD3OQeggBCtnNozSNyyDjD9r4gTu7bbvgZ5yRNqVPjcKZxTlq-5IDQD74pMogGoETAWSFcHHlvw94gFS7X8GChiftHri_RE9slA4irxGJA8duEBrRW3MzLCkBaolxPq9atpbYciZjrJCmdS7p6BvpwxKwLHb5Vw0CRDI5nR4K_q72o3T8OH2cVU42EGiAcZcBKO0LvfbVsLBNuh3NCHo12ecK7MDCtVH6J7TJxzU3Z0Wx9ZLVK-FuFNc5f5zuMtLBJ6LA.jpg"
+ },
+ "gholam": {
+  "text": "ببین رفیق، الکساندر پانفیلوف تازه رو کرده که یه باگ خفن توی ای‌پي‌آی تمام شرکت‌های بزرگ هوش مصنوعی پیدا کردن که باهاش می‌شه استدلال‌های مخفی و پشت‌صحنه‌ی مدل‌های پیشرفته رو کش رفت. این رفقا تست هم کردن و دیدن تعداد توکن‌های تفکری که استخراج کردن دقیقاً مو به مو با اون چیزی که شرکتا واسه تفکر مدل فاکتور می‌زدن یکسان بوده. خلاصه رسماً نشون دادن اون بخشِ رازآلود و مخفی تفکر هوش مصنوعی اون‌قدرا هم که ادعا می‌کردن دست‌نپذیر و امن نبوده.\n\nاهمیتش اینه که با رو شدن این سوراخ امنیتی بزرگ، هم حریم خصوصی و تکنولوژی محرمانه‌ی شرکتا لو می‌ره و هم مجبورن سریعاً فکر چاره بکنن.",
+  "date": "2026-08-11T17:41:16+00:00"
+ },
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/kotekjedi_ml/status/2087147042888114428",
+   "domain": "x.com",
+   "author": {
+    "name": "Alexander Panfilov",
+    "handle": "kotekjedi_ml",
+    "avatar": "https://pbs.twimg.com/profile_images/1869805907472740352/KDWcthSp_200x200.jpg"
+   },
+   "text": "We can finally talk about it:\n\nWe found a way to extract hidden reasoning of frontier models using a vulnerability in the APIs of every frontier AI company.\n\nWe verified that our reasoning token count matches billed API thinking tokens 1:1 for most of the prompts we queried.",
+   "date": 1786449606,
+   "media": [
+    {
+     "type": "image",
+     "src": "https://pbs.twimg.com/media/HPcJLMtagAAx07t.jpg?name=orig",
+     "ratio": 0.7081
+    }
+   ],
+   "links": []
+  }
+ ],
+ "article": {
+  "title": "الکساندر پانفیلوف تازه رو کرده که یه باگ خفن توی ای‌پي‌آی تمام شرکت‌های بزرگ هوش مصنوعی پیدا کردن که باهاش می‌شه استدلال‌های مخفی و پشت‌صحنه‌ی مدل‌های پیشرفته رو کش رفت",
+  "source_title": "We can finally talk about it:",
+  "body": [
+   "ببین رفیق، الکساندر پانفیلوف تازه رو کرده که یه باگ خفن توی ای‌پي‌آی تمام شرکت‌های بزرگ هوش مصنوعی پیدا کردن که باهاش می‌شه استدلال‌های مخفی و پشت‌صحنه‌ی مدل‌های پیشرفته رو کش رفت. این رفقا تست هم کردن و دیدن تعداد توکن‌های تفکری که استخراج کردن دقیقاً مو به مو با اون چیزی که شرکتا واسه تفکر مدل فاکتور می‌زدن یکسان بوده. خلاصه رسماً نشون دادن اون بخشِ رازآلود و مخفی تفکر هوش مصنوعی اون‌قدرا هم که ادعا می‌کردن دست‌نپذیر و امن نبوده."
+  ],
+  "why": "با رو شدن این سوراخ امنیتی بزرگ، هم حریم خصوصی و تکنولوژی محرمانه‌ی شرکتا لو می‌ره و هم مجبورن سریعاً فکر چاره بکنن.",
+  "tags": [
+   "امنیت"
+  ]
+ },
+ "updated": "2026-10-25T12:30:30+00:00",
+ "gholam_checked": "2026-10-25T12:30:30+00:00"
+}

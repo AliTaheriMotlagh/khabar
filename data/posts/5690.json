@@ -1,0 +1,67 @@
+{
+ "id": 5690,
+ "url": "https://t.me/dlmehr/5690",
+ "date": "2026-10-06T21:07:25+00:00",
+ "text": "https://fxtwitter.com/bcherny/status/2107565388250874193?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+ "forwarded_from": null,
+ "digest": false,
+ "hash": "99a3f4e35a31",
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/bcherny/status/2107565388250874193?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+  "site": "🧵 Thread • FxTwitter",
+  "title": "Boris Cherny (@bcherny)",
+  "description": "I am surprised that people are surprised this is how I prompt Claude.\nTalk to Claude the way you would a coworker. There's no secret to prompting. There's no need to be overly scaffolded or prescriptive for most tasks -- give Claude a goal, and it will figure…",
+  "image": "https://cdn4.telesco.pe/file/XUrsoXWKwdK-V6dDBQIQDyLlnl1OgXiRQeLvJfmLanIglC9DdKl6sc42R471WmzpwLWML25GTMCQxMB6UYqIssPvUuM-YhoS1pW3_LXbP7GnfRw1eiGGey0Bg4qEQWykN8PtZWL0M3A8BqJzFCZNP-P3UDpXnU-BtF8QZC2MZmpIvNUSGXTYp_7cJ8YSA55HhwMyrNeIH4kGkFQV2khpMUHTl7sue5Vzwgmp7eOIHZrN-KudVlBenaZOb3KQ-1i5Yd01kfO0vcx9dhJiqke6kxIeFgMnWPWRR9XQbYwYZ7UWiHJt94-xtGGv-ILHan_prvDrOCxpBF0o7gznkbIvwA.jpg"
+ },
+ "gholam": {
+  "text": "ببین رفیق، بوریس چرنی دراومده گفته تعجب می‌کنه چرا بعضیا داستان پرامپت دادن به کلود (Claude) رو انقدر پیچیده می‌کنن و فکر می‌کنن فوت کوزه‌گری خاصی تو کاره. حرف حسابش اینه که با این مدل هوش مصنوعی درست مثل همکار خودت توی اداره یا شرکت گپ بزن؛ یعنی فقط هدف نهایی رو بنداز جلوش و بذار خودش مسیر رو پیدا کنه، بدون اینکه نیاز باشه از سیر تا پیاز رو براش دیکته کنی. طرف توضیح داده که زمان نسخه‌های قدیمی‌تر مثل Sonnet 3.5 فرمول کلمات خیلی حیاتی بود، اما الان فقط باید سه تا چیز رو بهش بفهمونی: دقیقاً چی می‌خوای، چقدر براش مایه بذاره و وقت صرف کنه، و چطوری درستی کارش رو ارزیابی و چک کنه.\n\nچرا مهمه؟ اهمیتش اینه که دوران مهندسی پرامپت‌های عجیب‌وغریب و طولانی سر اومده و دیگه نیازی نیست وقتتو پای نوشتن دستورات پیچیده تلف کنی، فقط کافیه یاد بگیری مثل یه همکار واقعی باهاش حرف بزنی.",
+  "date": "2026-10-06T21:07:43+00:00"
+ },
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/bcherny/status/2107565388250874193",
+   "domain": "x.com",
+   "author": {
+    "name": "Boris Cherny",
+    "handle": "bcherny",
+    "avatar": "https://pbs.twimg.com/profile_images/1902044548936953856/J2jeik0t_200x200.jpg"
+   },
+   "text": "I am surprised that people are surprised this is how I prompt Claude.\n\nTalk to Claude the way you would a coworker. There's no secret to prompting. There's no need to be overly scaffolded or prescriptive for most tasks -- give Claude a goal, and it will figure it out.\n\nBack in the Sonnet 3.5 days, your prompt mattered a lot. Nowadays, it's much more important to communicate to the model:\n\n1. What you want it to do\n2. How much effort you want it to spend\n3. How it should verify that it did the right thing",
+   "date": 1791317719,
+   "media": [],
+   "links": [],
+   "quote": {
+    "author": {
+     "name": "Boris Cherny",
+     "handle": "bcherny",
+     "avatar": "https://pbs.twimg.com/profile_images/1902044548936953856/J2jeik0t_200x200.jpg"
+    },
+    "text": "Prompt",
+    "date": 1791309994,
+    "media": [
+     {
+      "type": "image",
+      "src": "https://pbs.twimg.com/media/HT92FNObkAAJlae.jpg?name=orig",
+      "ratio": 2.0378
+     }
+    ],
+    "links": []
+   }
+  }
+ ],
+ "article": {
+  "title": "بوریس چرنی دراومده گفته تعجب می‌کنه چرا بعضیا داستان پرامپت دادن به کلود (Claude) رو انقدر پیچیده می‌کنن و فکر می‌کنن فوت کوزه‌گری خاصی تو کاره",
+  "source_title": "I am surprised that people are surprised this is how I prompt Claude.",
+  "body": [
+   "ببین رفیق، بوریس چرنی دراومده گفته تعجب می‌کنه چرا بعضیا داستان پرامپت دادن به کلود (Claude) رو انقدر پیچیده می‌کنن و فکر می‌کنن فوت کوزه‌گری خاصی تو کاره. حرف حسابش اینه که با این مدل هوش مصنوعی درست مثل همکار خودت توی اداره یا شرکت گپ بزن؛ یعنی فقط هدف نهایی رو بنداز جلوش و بذار خودش مسیر رو پیدا کنه، بدون اینکه نیاز باشه از سیر تا پیاز رو براش دیکته کنی. طرف توضیح داده که زمان نسخه‌های قدیمی‌تر مثل Sonnet 3.5 فرمول کلمات خیلی حیاتی بود، اما الان فقط باید سه تا چیز رو بهش بفهمونی: دقیقاً چی می‌خوای، چقدر براش مایه بذاره و وقت صرف کنه، و چطوری درستی کارش رو ارزیابی و چک کنه."
+  ],
+  "why": "اهمیتش اینه که دوران مهندسی پرامپت‌های عجیب‌وغریب و طولانی سر اومده و دیگه نیازی نیست وقتتو پای نوشتن دستورات پیچیده تلف کنی، فقط کافیه یاد بگیری مثل یه همکار واقعی باهاش حرف بزنی.",
+  "tags": [
+   "آنتروپیک"
+  ]
+ },
+ "updated": "2026-10-25T12:24:36+00:00",
+ "gholam_checked": "2026-10-25T12:24:36+00:00"
+}

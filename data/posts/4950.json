@@ -1,0 +1,72 @@
+{
+ "id": 4950,
+ "url": "https://t.me/dlmehr/4950",
+ "date": "2026-08-25T18:35:48+00:00",
+ "text": "https://fxtwitter.com/hannah_chuu/status/2091949930919465012?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+ "forwarded_from": null,
+ "digest": false,
+ "hash": "91b0ab895676",
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/hannah_chuu/status/2091949930919465012?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+  "site": "FxTwitter",
+  "title": "Hannah Chung (@hannah_chuu)",
+  "description": "@OneTriangleAI (YC S26) is building the fastest lightweight, cheap inference and hosting @deepseek_ai V4 Flash today at $0.15/M input and $0.35/M output tokens. Live at https://onetriangle.ai/.\nOur group of @MIT grads and olympiad medalists from @GoogleDeepMind…",
+  "image": null
+ },
+ "gholam": {
+  "text": "رفیق، یه تیم خفن از بچه‌های نخبه دانشگاه MIT و مدال‌آورای سابق المپیاد و دیپ‌مایند زیر پرچم استارتاپ OneTriangleAI دور هم جمع شدن و بدجور بازار رو تکون دادن. این رفقا اومدن مدل DeepSeek V4 Flash رو میزبانی کردن و قیمت رو جوری شکستن که برای هر میلیون توکن ورودی فقط ۱۵ سنت و برای خروجی ۳۵ سنت شارژ می‌کنن. قضیه اینه که با کلی تکنیک و بهینه‌سازی سطح‌بالا روی کَش، تونستن هم سرعت پردازش و تاخیر رو فوق‌العاده بهتر کنن و هم هزینه سنگین هوش مصنوعی رو حسابی پایین بکشن.\n\nاهمیتش اینه که شکستن این‌چنینی هزینه‌ها دست برنامه‌نویس‌ها و شرکت‌ها رو برای استفاده ارزون و برق‌آسا از قوی‌ترین مدل‌های هوش مصنوعی حسابی باز می‌کنه.",
+  "date": "2026-08-25T18:36:02+00:00"
+ },
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/hannah_chuu/status/2091949930919465012",
+   "domain": "x.com",
+   "author": {
+    "name": "Hannah Chung",
+    "handle": "hannah_chuu",
+    "avatar": "https://pbs.twimg.com/profile_images/2069740488010113024/o781Nybu_200x200.jpg"
+   },
+   "text": "@OneTriangleAI (YC S26) is building the fastest lightweight, cheap inference and hosting @deepseek_ai  V4 Flash today at $0.15/M input and $0.35/M output tokens. Live at https://onetriangle.ai/.\n\nOur group of @MIT grads and olympiad medalists from @GoogleDeepMind, @JaneStreetGroup, and @NeurIPSConf /ICML publishers are setting a new standard for cost and latency efficiency using KV cache optimizations.",
+   "date": 1787594704,
+   "media": [
+    {
+     "type": "video",
+     "src": "https://video.twimg.com/amplify_video/2091939024449736705/vid/avc1/1280x720/9YX-NOI_ROFUjfzM.mp4?tag=29",
+     "poster": "https://pbs.twimg.com/amplify_video_thumb/2091939024449736705/img/oUMeTdk-c85zCRIq.jpg",
+     "ratio": 0.5625,
+     "duration": 79.594,
+     "gif": false
+    }
+   ],
+   "links": [
+    "https://onetriangle.ai/"
+   ]
+  },
+  {
+   "kind": "link",
+   "url": "https://onetriangle.ai/",
+   "domain": "onetriangle.ai",
+   "title": "OneTriangle | Inference optimized from KV cache transfer",
+   "description": "OneTriangle optimizes multi-model inference by transferring KV cache between models, cutting redundant prefill cost.",
+   "image": "https://onetriangle.ai/brand/onetriangle-og.png",
+   "site": "OneTriangle"
+  }
+ ],
+ "article": {
+  "title": "یه تیم خفن از بچه‌های نخبه دانشگاه MIT و مدال‌آورای سابق المپیاد و دیپ‌مایند زیر پرچم استارتاپ OneTriangleAI دور هم جمع شدن و بدجور بازار رو تکون دادن",
+  "source_title": "@OneTriangleAI (YC S26) is building the fastest lightweight, cheap inference and hosting @deepseek_ai V4 Flash today at $0.15/M input and…",
+  "body": [
+   "رفیق، یه تیم خفن از بچه‌های نخبه دانشگاه MIT و مدال‌آورای سابق المپیاد و دیپ‌مایند زیر پرچم استارتاپ OneTriangleAI دور هم جمع شدن و بدجور بازار رو تکون دادن. این رفقا اومدن مدل DeepSeek V4 Flash رو میزبانی کردن و قیمت رو جوری شکستن که برای هر میلیون توکن ورودی فقط ۱۵ سنت و برای خروجی ۳۵ سنت شارژ می‌کنن. قضیه اینه که با کلی تکنیک و بهینه‌سازی سطح‌بالا روی کَش، تونستن هم سرعت پردازش و تاخیر رو فوق‌العاده بهتر کنن و هم هزینه سنگین هوش مصنوعی رو حسابی پایین بکشن."
+  ],
+  "why": "شکستن این‌چنینی هزینه‌ها دست برنامه‌نویس‌ها و شرکت‌ها رو برای استفاده ارزون و برق‌آسا از قوی‌ترین مدل‌های هوش مصنوعی حسابی باز می‌کنه.",
+  "tags": [
+   "چین",
+   "گوگل",
+   "استارتاپ"
+  ]
+ },
+ "updated": "2026-10-25T12:29:06+00:00",
+ "gholam_checked": "2026-10-25T12:29:06+00:00"
+}

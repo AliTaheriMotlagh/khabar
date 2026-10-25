@@ -1,0 +1,57 @@
+{
+ "id": 5059,
+ "url": "https://t.me/dlmehr/5059",
+ "date": "2026-09-01T01:26:18+00:00",
+ "text": "https://fxtwitter.com/rohanpaul_ai/status/2094563286658449719?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+ "forwarded_from": null,
+ "digest": false,
+ "hash": "0067606ca08e",
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/rohanpaul_ai/status/2094563286658449719?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+  "site": "🧵 Thread • FxTwitter",
+  "title": "Rohan Paul (@rohanpaul_ai)",
+  "description": "Reuters: Apple, in its new filing says a former engineer used its confidential circuit design inside OpenAI's AI workflow.\nThe filing says Chang Liu, (the electrical engineer who worked at Apple) downloaded the power-converter schematic after leaving Apple…",
+  "image": "https://cdn4.telesco.pe/file/Miy5M5Qp_vQnhR_xqwGwtgwbRKXwZXlbeu1remYKeuW1iR5V6Jyryd3RUDkxjT-9obgaf8wZtS0ianpX1ZgpVUTewWKBypr9ZZc2KL0Jc9GAkaCQdpnIh-Ojz2FnqklnTstgT93M4UPzr0lnWXhc5Ba9P2y82AFZXDsJ8hzb1XHhS_ND1Rvlr3KHjLf9nx52EZfOjVbZ6Ngfrc5J-Dqujbvi6l4BAHy5XK-qHhMg_6jEhSAz7HKc2N5FRANNmLpBHYmduF4ziNky50YejOCQfKkFWUSkHqC9UQPS8NrdeNIW-Qkscll93BOqdnm-6_7u8pix-6qEdAEgBOuT3lHvyA.jpg"
+ },
+ "gholam": {
+  "text": "ببین رفیق، شرکت اپل دوباره سرشاخ شده و رفته دادگاه شکایت کرده که یکی از مهندسای سابقش به اسم چانگ لیو، نقشه‌های محرمانه مدارهای تبدیل برق رو بعد خروج از شرکت برداشته و برده توی سیستم هوش مصنوعی OpenAI به کار گرفته. داستان از این قراره که این بابا شبیه‌سازی‌ها رو با نرم‌افزار LTspice روی یه مک‌مینی ران کرده و ایجنت هوش مصنوعی با یادگیری این قلق‌ها، فرآیندی که یه روز طول می‌کشیده رو به دو ساعت رسونده! حالا حرف حساب اپل اینه که وقتی هوش مصنوعی این اسرار تجاری رو یاد بگیره، دیگه پاک کردن و ردگیری اون اطلاعات از حافظه سیستم کار حضرت فیله، هرچند قاضی هنوز حکمی علیه OpenAI صادر نکرده و قضیه فعلاً در حد درخواست بررسی فوری مدارکه.\n\nاهمیتش اینه که نشون میده با اومدن ایجنت‌های هوش مصنوعی، حفاظت از اسرار تجاری شرکت‌های بزرگ وارد یه فاز فوق‌العاده پیچیده و بدون بازگشت شده.",
+  "date": "2026-09-01T01:26:38+00:00"
+ },
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/rohanpaul_ai/status/2094563286658449719",
+   "domain": "x.com",
+   "author": {
+    "name": "Rohan Paul",
+    "handle": "rohanpaul_ai",
+    "avatar": "https://pbs.twimg.com/profile_images/1816185267037859840/Fd18CH0v_200x200.jpg"
+   },
+   "text": "Reuters: Apple, in its new filing says a former engineer used its confidential circuit design inside OpenAI's AI workflow.\n\nThe filing says Chang Liu, (the electrical engineer who worked at Apple) downloaded the power-converter schematic after leaving Apple, ran it in LTspice, and generated simulation outputs on a Mac mini.\n\nApple claims his AI agent learned to run LTspice, inspect results and tune compensation parameters, cutting his stated workflow from a day to two hours.\n\nApple argues this raises a distinct AI risk because proprietary information may become harder to trace or remove after an agent learns from it.\n\nThe filing does not establish that OpenAI trained model weights on Apple's data; it describes an AI agent learning to operate the simulator and tune parameters.\n\nOfcourse, the court has not ruled that OpenAI stole or destroyed trade secrets; Apple submitted this evidence to support its request for expedited discovery.",
+   "date": 1788217777,
+   "media": [
+    {
+     "type": "image",
+     "src": "https://pbs.twimg.com/media/HRFgTTTbAAAP68b.png?name=orig",
+     "ratio": 0.8514
+    }
+   ],
+   "links": []
+  }
+ ],
+ "article": {
+  "title": "شرکت اپل دوباره سرشاخ شده و رفته دادگاه شکایت کرده که یکی از مهندسای سابقش به اسم چانگ لیو، نقشه‌های محرمانه مدارهای تبدیل برق رو بعد خروج از شرکت برداشته و برده توی سیستم هوش مصنوعی OpenAI به کار گرفته",
+  "source_title": "Reuters: Apple, in its new filing says a former engineer used its confidential circuit design inside OpenAI's AI workflow.",
+  "body": [
+   "ببین رفیق، شرکت اپل دوباره سرشاخ شده و رفته دادگاه شکایت کرده که یکی از مهندسای سابقش به اسم چانگ لیو، نقشه‌های محرمانه مدارهای تبدیل برق رو بعد خروج از شرکت برداشته و برده توی سیستم هوش مصنوعی OpenAI به کار گرفته. داستان از این قراره که این بابا شبیه‌سازی‌ها رو با نرم‌افزار LTspice روی یه مک‌مینی ران کرده و ایجنت هوش مصنوعی با یادگیری این قلق‌ها، فرآیندی که یه روز طول می‌کشیده رو به دو ساعت رسونده! حالا حرف حساب اپل اینه که وقتی هوش مصنوعی این اسرار تجاری رو یاد بگیره، دیگه پاک کردن و ردگیری اون اطلاعات از حافظه سیستم کار حضرت فیله، هرچند قاضی هنوز حکمی علیه OpenAI صادر نکرده و قضیه فعلاً در حد درخواست بررسی فوری مدارکه."
+  ],
+  "why": "نشون میده با اومدن ایجنت‌های هوش مصنوعی، حفاظت از اسرار تجاری شرکت‌های بزرگ وارد یه فاز فوق‌العاده پیچیده و بدون بازگشت شده.",
+  "tags": [
+   "اپل",
+   "اوپن‌ای‌آی"
+  ]
+ },
+ "updated": "2026-10-25T12:28:26+00:00",
+ "gholam_checked": "2026-10-25T12:28:26+00:00"
+}

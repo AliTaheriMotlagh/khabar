@@ -2,16 +2,23 @@
  "id": 5949,
  "url": "https://t.me/dlmehr/5949",
  "date": "2026-10-18T00:00:37+00:00",
- "edited": true,
- "views": "226",
  "text": "https://fxtwitter.com/semianalysis_/status/2111596468528087078?s=52&t=F41Qa04r48Mef_j_XjBneQ",
  "forwarded_from": null,
  "digest": false,
  "hash": "e983a3d2c2f5",
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/semianalysis_/status/2111596468528087078?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+  "site": "🧵 Thread • FxTwitter",
+  "title": "SemiAnalysis (@SemiAnalysis_)",
+  "description": "GLM 5.3’s biggest leap came from post-training alone.\n“GLM 5.3 was built entirely by post-training the previous model. For me, that was a wake-up call.”\n“Post-training is far more GPU-efficient than pre-training from scratch. Plenty of companies can’t afford…",
+  "image": null
+ },
  "gholam": {
   "text": "رفیق، گزارش تازه سمی‌آنالیسیس نشون داده که جهش خفن مدل هوش مصنوعی GLM 5.3 فقط و فقط با مرحله «پس‌آموزش» یا همون Post-training روی نسخه قبلی رقم خورده، بدون اینکه نیاز باشه از صفر آموزش ببینه. خلاصه این که تمرین دادن یه مدل از بیخ و بن، انبار انبار کارت گرافیک و دلارهای بی‌حساب می‌خواد که از عهده خیلی‌ها برنمیاد، اما این متد به‌شدت مصرف منابع پردازشی رو پایین میاره. این کارشناس‌ها می‌گن شرکت‌هایی که دیتای ناب و اختصاصی خودشون رو دارن، با همین فرمون می‌تونن مدل‌ها رو تقویت کنن و حتی روی دست مدل‌های بسته و گرون‌قیمت بازار بلند بشن. شاهد ماجرا هم توانایی‌های سایبری GLM 5.3 هست که نسبت به نسخه قبلیش زمین تا آسمون توفیر کرده و همه‌اش حاصل شیره‌کشی حسابی از همین روشه.\n\nاهمیتش اینه که نشون می‌ده دوران انحصار غول‌های بی‌پایانِ سرمایه داره ترک برمی‌داره و از این به بعد با دیتای تمیز و متدهای بهینه پس‌آموزش، تیم‌های جمع‌وجورتر هم می‌تونن شاهکار تحویل بدن و به غول‌های فناوری تنه بزنن.",
   "date": "2026-10-18T00:00:59+00:00"
  },
+ "gholam_checked": "2026-10-24T23:11:46+00:00",
  "links": [
   {
    "kind": "tweet",
@@ -46,14 +53,6 @@
    "links": []
   }
  ],
- "media": [],
- "preview": {
-  "url": "https://fxtwitter.com/semianalysis_/status/2111596468528087078?s=52&t=F41Qa04r48Mef_j_XjBneQ",
-  "site": "🧵 Thread • FxTwitter",
-  "title": "SemiAnalysis (@SemiAnalysis_)",
-  "description": "GLM 5.3’s biggest leap came from post-training alone.\n“GLM 5.3 was built entirely by post-training the previous model. For me, that was a wake-up call.”\n“Post-training is far more GPU-efficient than pre-training from scratch. Plenty of companies can’t afford…",
-  "image": null
- },
  "article": {
   "title": "گزارش تازه سمی‌آنالیسیس نشون داده که جهش خفن مدل هوش مصنوعی GLM 5.3 فقط و فقط با مرحله «پس‌آموزش» یا همون Post-training روی نسخه قبلی رقم خورده، بدون اینکه نیاز باشه از صفر آموزش ببینه",
   "source_title": "GLM 5.3’s biggest leap came from post-training alone.",
@@ -63,6 +62,5 @@
   "why": "نشون می‌ده دوران انحصار غول‌های بی‌پایانِ سرمایه داره ترک برمی‌داره و از این به بعد با دیتای تمیز و متدهای بهینه پس‌آموزش، تیم‌های جمع‌وجورتر هم می‌تونن شاهکار تحویل بدن و به غول‌های فناوری تنه بزنن.",
   "tags": []
  },
- "updated": "2026-10-24T23:11:46+00:00",
- "gholam_checked": "2026-10-24T23:11:46+00:00"
+ "updated": "2026-10-25T11:54:10+00:00"
 }

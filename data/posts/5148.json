@@ -1,0 +1,58 @@
+{
+ "id": 5148,
+ "url": "https://t.me/dlmehr/5148",
+ "date": "2026-09-04T21:43:12+00:00",
+ "text": "https://fxtwitter.com/chi_wang_/status/2095949329030926793?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+ "forwarded_from": null,
+ "digest": false,
+ "hash": "4a2749907986",
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/chi_wang_/status/2095949329030926793?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+  "site": "FxTwitter",
+  "title": "Chi Wang (@Chi_Wang_)",
+  "description": "OpenAI's Astra adds `async: true` tools that return later under the same `call_id`, while the model keeps working.\nThat makes a follow-up question ordinary I/O, not a global barrier — agent runtimes can schedule \"ask the human\" instead of pausing the graph.…",
+  "image": "https://cdn4.telesco.pe/file/WmsywTsc04cKx8Q1dewvqtvkFTXJxGEHzW2nOGvpShKr6HsF84FGlCQaoQaLJLBWF79IK9RobmdsucoVI2N2b6FfhfzQy38qnzkd3bjHN4Q6A0XRGx87DCyFbuv6ORbBtJ_e78G4o3XI_jYdIY19ZC0_SKskGpsknag6wMYvvGL41P1RtLfB22roaMet3620Le5-FHTuRZ0NCzmbU0FsrrVAjoGzd1h8X_NQZD86DnMvL40ifvgSgjLLiwVcpKZ7Y7GHLv0cZ21uO_VEbqztMU_nAiu3ZmngFRtceSPZf056Ux16AKBPEYvilw02Td5H7xwL89X3IOQ0m12l9vwGDQ.jpg"
+ },
+ "gholam": {
+  "text": "ببین رفیق، شی وانگ رو کرده که هوش مصنوعی آسترا از OpenAI یه قابلیت مشتی به اسم ابزارهای ناهمگام یا همون `async: true` اضافه کرده تا کار سیستم لنگ نمونه. ماجرا از این قراره که قبلاً تا مدل می‌خواست یه ابزار رو صدا بزنه یا از آدمیزاد سوالی بپرسه، کل چرخ‌دنده‌های سیستم قفل می‌کرد تا جواب برگرده. ولی حالا هوش مصنوعی زیر همون شناسه قبلی به کارش ادامه میده و هر وقت پاسخش اومد تحویل می‌گیره، یعنی درگیر شدن کاربر دیگه مثل سد جلوی جریان کار رو نمی‌گیره. خلاصه اینکه ایجنت‌ها دیگه معطل دست من و شما نمی‌مونن و بدون فوت وقت، مابقی ماموریتشون رو جلو می‌برن.\n\nاهمیتش اینه که مکالمه با انسان دیگه گلوگاه سیستم نمیشه و ایجنت‌ها تو انجام کارهای موازی و خودکار سرعت خیره‌کننده‌ای پیدا می‌کنن.",
+  "date": "2026-09-04T21:43:24+00:00"
+ },
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/Chi_Wang_/status/2095949329030926793",
+   "domain": "x.com",
+   "author": {
+    "name": "Chi Wang",
+    "handle": "Chi_Wang_",
+    "avatar": "https://pbs.twimg.com/profile_images/1709614695198371840/jtHJjNXQ_200x200.jpg"
+   },
+   "text": "OpenAI's Astra adds `async: true` tools that return later under the same `call_id`, while the model keeps working.\n\nThat makes a follow-up question ordinary I/O, not a global barrier — agent runtimes can schedule \"ask the human\" instead of pausing the graph.\n\nhttps://openai.com/index/gpt-6-astra/",
+   "date": 1788548235,
+   "media": [
+    {
+     "type": "image",
+     "src": "https://pbs.twimg.com/media/HRZOvmBaYAAdYGS.png?name=orig",
+     "ratio": 0.3333
+    }
+   ],
+   "links": [
+    "https://openai.com/index/gpt-6-astra/"
+   ]
+  }
+ ],
+ "article": {
+  "title": "شی وانگ رو کرده که هوش مصنوعی آسترا از OpenAI یه قابلیت مشتی به اسم ابزارهای ناهمگام یا همون `async: true` اضافه کرده تا کار سیستم لنگ نمونه",
+  "source_title": "OpenAI's Astra adds `async: true` tools that return later under the same `call_id`, while the model keeps working.",
+  "body": [
+   "ببین رفیق، شی وانگ رو کرده که هوش مصنوعی آسترا از OpenAI یه قابلیت مشتی به اسم ابزارهای ناهمگام یا همون `async: true` اضافه کرده تا کار سیستم لنگ نمونه. ماجرا از این قراره که قبلاً تا مدل می‌خواست یه ابزار رو صدا بزنه یا از آدمیزاد سوالی بپرسه، کل چرخ‌دنده‌های سیستم قفل می‌کرد تا جواب برگرده. ولی حالا هوش مصنوعی زیر همون شناسه قبلی به کارش ادامه میده و هر وقت پاسخش اومد تحویل می‌گیره، یعنی درگیر شدن کاربر دیگه مثل سد جلوی جریان کار رو نمی‌گیره. خلاصه اینکه ایجنت‌ها دیگه معطل دست من و شما نمی‌مونن و بدون فوت وقت، مابقی ماموریتشون رو جلو می‌برن."
+  ],
+  "why": "مکالمه با انسان دیگه گلوگاه سیستم نمیشه و ایجنت‌ها تو انجام کارهای موازی و خودکار سرعت خیره‌کننده‌ای پیدا می‌کنن.",
+  "tags": [
+   "اوپن‌ای‌آی"
+  ]
+ },
+ "updated": "2026-10-25T12:27:53+00:00",
+ "gholam_checked": "2026-10-25T12:27:53+00:00"
+}

@@ -1,0 +1,59 @@
+{
+ "id": 5771,
+ "url": "https://t.me/dlmehr/5771",
+ "date": "2026-10-09T04:53:22+00:00",
+ "text": "https://fxtwitter.com/antigenco/status/2108334286978113634?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+ "forwarded_from": null,
+ "digest": false,
+ "hash": "0316d8b2148a",
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/antigenco/status/2108334286978113634?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+  "site": "🧵 Thread • FxTwitter",
+  "title": "Antigen (YC F25) (@antigenco)",
+  "description": "Introducing Antigen: the offensive security agent that maps, exploits, and secures your attack surface.\nIt probes your system like a hacker, ships fixes for your team's review, and tests again to ensure all vulnerabilities are patched.",
+  "image": null
+ },
+ "gholam": {
+  "text": "ببین رفیق، بچه‌های استارتاپ آنتی‌ژن (Antigen) که تازه از دل وای‌کامبینیتور دراومدن، یه ایجنت امنیتی هجومی رو کردن که کارش عین یه هکر کارکشته و تیزه. قضیه از این قراره که این هوش مصنوعی اول کل سوراخ‌سنبه‌ها و سطح حمله سیستمت رو نقشه می‌کشه و درست مثل نفوذگرهای واقعی تستی بهش می‌زنه تا ببینه نفوذپذیره یا نه. بعدشم دست روی دست نمی‌ذاره؛ خودش کد وصله و رفع باگ رو آماده می‌کنه میده دست تیم فنی برای تایید، و آخر سر هم دوباره همه‌چی رو تست می‌کنه تا مطمئن بشه راه نفوذ کاملاً بسته شده.\n\nاهمیتش اینه که به جای چشم‌انتظار موندن برای حمله هکرهای واقعی، خود هوش مصنوعی زودتر حفره‌ها رو شخم می‌زنه و قبل از فاجعه درستشون می‌کنه.",
+  "date": "2026-10-09T04:53:41+00:00"
+ },
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/antigenco/status/2108334286978113634",
+   "domain": "x.com",
+   "author": {
+    "name": "Antigen",
+    "handle": "antigenco",
+    "avatar": "https://pbs.twimg.com/profile_images/2109766259550351360/djqJLAO1_200x200.jpg"
+   },
+   "text": "Introducing Antigen: the offensive security agent that maps, exploits, and secures your attack surface.\n\nIt probes your system like a hacker, ships fixes for your team's review, and tests again to ensure all vulnerabilities are patched.",
+   "date": 1791501039,
+   "media": [
+    {
+     "type": "video",
+     "src": "https://video.twimg.com/amplify_video/2108334241667010560/vid/avc1/1280x720/A9UIteXB7Swn0wZH.mp4?tag=16",
+     "poster": "https://pbs.twimg.com/amplify_video_thumb/2108334241667010560/img/McyUQloEib0VbA4m.jpg",
+     "ratio": 0.5625,
+     "duration": 33.641,
+     "gif": false
+    }
+   ],
+   "links": []
+  }
+ ],
+ "article": {
+  "title": "بچه‌های استارتاپ آنتی‌ژن (Antigen) که تازه از دل وای‌کامبینیتور دراومدن، یه ایجنت امنیتی هجومی رو کردن که کارش عین یه هکر کارکشته و تیزه",
+  "source_title": "Introducing Antigen: the offensive security agent that maps, exploits, and secures your attack surface.",
+  "body": [
+   "ببین رفیق، بچه‌های استارتاپ آنتی‌ژن (Antigen) که تازه از دل وای‌کامبینیتور دراومدن، یه ایجنت امنیتی هجومی رو کردن که کارش عین یه هکر کارکشته و تیزه. قضیه از این قراره که این هوش مصنوعی اول کل سوراخ‌سنبه‌ها و سطح حمله سیستمت رو نقشه می‌کشه و درست مثل نفوذگرهای واقعی تستی بهش می‌زنه تا ببینه نفوذپذیره یا نه. بعدشم دست روی دست نمی‌ذاره؛ خودش کد وصله و رفع باگ رو آماده می‌کنه میده دست تیم فنی برای تایید، و آخر سر هم دوباره همه‌چی رو تست می‌کنه تا مطمئن بشه راه نفوذ کاملاً بسته شده."
+  ],
+  "why": "به جای چشم‌انتظار موندن برای حمله هکرهای واقعی، خود هوش مصنوعی زودتر حفره‌ها رو شخم می‌زنه و قبل از فاجعه درستشون می‌کنه.",
+  "tags": [
+   "امنیت"
+  ]
+ },
+ "updated": "2026-10-25T12:24:02+00:00",
+ "gholam_checked": "2026-10-25T12:24:02+00:00"
+}

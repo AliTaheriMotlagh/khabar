@@ -1,0 +1,83 @@
+{
+ "id": 4552,
+ "url": "https://t.me/dlmehr/4552",
+ "date": "2026-08-03T16:10:57+00:00",
+ "text": "https://fxtwitter.com/ann_nnng/status/2084188390019502360?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+ "forwarded_from": null,
+ "digest": false,
+ "hash": "d6fe41817ff6",
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/ann_nnng/status/2084188390019502360?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+  "site": "🧵 Thread • FxTwitter",
+  "title": "Ann Nguyen (@ann_nnng)",
+  "description": "Qwen 3.8 Max is actually impressive\nSent a sky pic to it along with Claude Opus 5, Kimi K3, and GPT 5.6 Sol, and asked them to draw an animal silhouette based on the cloud shape\nQwen 3.8 Max is honestly on par with all the other models\nQuoting Qwen (@Alibaba_Qwen)…",
+  "image": null
+ },
+ "gholam": {
+  "text": "ببین رفیق، علی‌بابا از مدل جدیدش Qwen 3.8 Max رونمایی کرده که قراره هفته دیگه سورس‌باز بشه و توی کدنویسی و قدرت، قشنگ پا به پای غول‌هایی مثل کلود و جی‌پی‌تی می‌تازه.",
+  "date": "2026-08-03T16:11:09+00:00"
+ },
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/ann_nnng/status/2084188390019502360",
+   "domain": "x.com",
+   "author": {
+    "name": "Ann Nguyen",
+    "handle": "ann_nnng",
+    "avatar": "https://pbs.twimg.com/profile_images/2091330595632861184/QKmUwPaL_200x200.jpg"
+   },
+   "text": "Qwen 3.8 Max is actually impressive\n\nSent a sky pic to it along with Claude Opus 5, Kimi K3, and GPT 5.6 Sol, and asked them to draw an animal silhouette based on the cloud shape\n\nQwen 3.8 Max is honestly on par with all the other models",
+   "date": 1785744209,
+   "media": [
+    {
+     "type": "video",
+     "src": "https://video.twimg.com/amplify_video/2084188360919375872/vid/avc1/720x1044/q4X3sZuReusqxw5f.mp4?tag=29",
+     "poster": "https://pbs.twimg.com/amplify_video_thumb/2084188360919375872/img/PjasUsAgfG28kzpd.jpg",
+     "ratio": 1.4523,
+     "duration": 11.073,
+     "gif": false
+    }
+   ],
+   "links": [],
+   "quote": {
+    "author": {
+     "name": "Qwen",
+     "handle": "Alibaba_Qwen",
+     "avatar": "https://pbs.twimg.com/profile_images/2064231947149377536/Ab70PxT5_200x200.jpg"
+    },
+    "text": "📢Meet Qwen3.8-Max — our most capable model to date. \n\nNext week, the open weights of Qwen3.8-Max will be released, and Qwen3.8-27B is also going open-weights to meet you all!🎉\n\nQwen3.8-Max, a new bar for coding and cowork at 2.4T parameters:\n\n- Autonomous coding: 10+ days of self-evolving development, from empty folder to production without hand-holding, complete project trace in the GitHub：https://github.com/qwen-code-dev-bot/oh-my-cli\n- Real work, real results: Production-quality deliverables across hundreds of professions.\n- Long-horizon mastery: System-level autonomous planning with closed-loop adaptive learning, driving 500+ turns of chip design optimization and 365 days of e-commerce strategy.\n- Native multimodal intelligence: Vision isn't just input — it's a continuous feedback loop for planning, execution, and self-correction.\n\n💰Pricing:\nInput: $2.0 / M tokens\nOutput: $6.0 / M tokens\nImplicit Caching: $0.25 / M tokens\n\nStart building with Qwen3.8-Max! 🚀\n\n📖 Blog: https://qwen.ai/blog?id=qwen3.8\n✅ Qwen Studio: https://chat.qwen.ai/?models=qwen3.8-max\n⚡ API: https://www.qwencloud.com/models/qwen3.8-max",
+    "date": 1785723304,
+    "media": [
+     {
+      "type": "image",
+      "src": "https://pbs.twimg.com/media/HOw1F2ebgAAkpJJ.jpg?name=orig",
+      "ratio": 0.7358
+     }
+    ],
+    "links": [
+     "https://github.com/qwen-code-dev-bot/oh-my-cli",
+     "https://qwen.ai/blog?id=qwen3.8",
+     "https://chat.qwen.ai/?models=qwen3.8-max",
+     "https://www.qwencloud.com/models/qwen3.8-max"
+    ]
+   }
+  }
+ ],
+ "article": {
+  "title": "علی‌بابا از مدل جدیدش Qwen 3.8 Max رونمایی کرده که قراره هفته دیگه سورس‌باز بشه و توی کدنویسی و قدرت، قشنگ پا به پای غول‌هایی مثل کلود و جی‌پی‌تی می‌تازه",
+  "source_title": "Qwen 3.8 Max is actually impressive",
+  "body": [
+   "ببین رفیق، علی‌بابا از مدل جدیدش Qwen 3.8 Max رونمایی کرده که قراره هفته دیگه سورس‌باز بشه و توی کدنویسی و قدرت، قشنگ پا به پای غول‌هایی مثل کلود و جی‌پی‌تی می‌تازه."
+  ],
+  "why": null,
+  "tags": [
+   "چین",
+   "آنتروپیک",
+   "اوپن‌ای‌آی"
+  ]
+ },
+ "updated": "2026-10-25T12:31:07+00:00",
+ "gholam_checked": "2026-10-25T12:31:07+00:00"
+}

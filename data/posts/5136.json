@@ -1,0 +1,75 @@
+{
+ "id": 5136,
+ "url": "https://t.me/dlmehr/5136",
+ "date": "2026-09-04T01:09:34+00:00",
+ "text": "https://fxtwitter.com/rohanpaul_ai/status/2095651097545494923?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+ "forwarded_from": null,
+ "digest": false,
+ "hash": "fff4a7bbf87a",
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/rohanpaul_ai/status/2095651097545494923?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+  "site": "🧵 Thread • FxTwitter",
+  "title": "Rohan Paul (@rohanpaul_ai)",
+  "description": "Wired: So, there was no single confirmed cause yet for today's near-simultaneous outage timing.\nClaude and Grok failed within four minutes, then ChatGPT and Codex followed 73 minutes later.\nOpenAI says a routing error caused ChatGPT and Codex problems…",
+  "image": "https://cdn4.telesco.pe/file/uvBoyO_-wuN-MIBtZC7DTeSBrudAAdeygKTFZ_oE_J-d2n_oxurYUfkoHjRdB4QxFa9wvdNQ0qJpGtRaP07P-UdXOYPx4gQaXm3NFrsGzOJyhB-bf98bF0x3T8l2Bhlwb2O9KN-TzaWKMGWSnKVhm5l8DWEfRRbXWef9NqIM1sqFSwcxoa5pY1qMb6T4uYZf_NAybuEbc6mIGmgOjV4RqYVcXH8IGvDjEtDCsCrpcPQeX8YuLKlQFBLc2QjCS_9ZHbDl6CdAfS0iAA4Vbil0B3bTT0OLzNN7ITaPzK-NYq-2DpW_EughuWPCY2TGnZVXrSVv258IsSaVL1bqDdaxxw.jpg"
+ },
+ "gholam": {
+  "text": "ببین رفیق، انگار هوش مصنوعیا دست‌به‌یکی کرده باشن، کلود و گراک به فاصله فقط چهار دقیقه از کار افتادن و حدود ۷۳ دقیقه بعدش هم چت‌جی‌پی‌تی و کدکس قاطی کردن و به گل نشستن. قضیه اونجا عجیب می‌شه که طبق گزارش وایرد، هنوز هیچ دلیل فنی مشترکی واسه این قطعی‌های هم‌زمان پیدا نشده. اوپن‌ای‌آی اعلام کرده یه خطای مسیریابی شبکه خرابکاری به بار آورده، کمپانی ایلان ماسک هم مدعی شده از کار افتادن مرکز داده ممفیس گراک رو زمین زده، این وسط آنتروپیک هم مشکل کلود رو حل‌وفصل کرد اما جیکش درنیومد که اصلاً ریشه ماجرا چی بوده.\n\nچرا مهمه؟ اهمیتش اینه که نشون داد کل سیستم این غول‌های مدعی هنوز به یه مو بنده و یه باگ یا قطعی زیرساختی می‌تونه ابزارهای میلیون‌ها آدم در سرتاسر دنیا رو توی یه چشم‌به‌هم‌زدن کله‌پا کنه.",
+  "date": "2026-09-04T01:09:47+00:00"
+ },
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/rohanpaul_ai/status/2095651097545494923",
+   "domain": "x.com",
+   "author": {
+    "name": "Rohan Paul",
+    "handle": "rohanpaul_ai",
+    "avatar": "https://pbs.twimg.com/profile_images/1816185267037859840/Fd18CH0v_200x200.jpg"
+   },
+   "text": "Wired: So, there was no single confirmed cause yet for today's near-simultaneous outage timing. \n\nClaude and Grok failed within four minutes, then ChatGPT and Codex followed 73 minutes later.\n\nOpenAI says a routing error caused ChatGPT and Codex problems, while SpaceXAI says its Memphis compute center went down and caused Grok's outage; \n\nAnthropic fixed Claude's problem but has not disclosed what caused it.",
+   "date": 1788477131,
+   "media": [
+    {
+     "type": "image",
+     "src": "https://pbs.twimg.com/media/HRU_Q1DaYAEaKCu.png?name=orig",
+     "ratio": 1.0343
+    }
+   ],
+   "links": [],
+   "quote": {
+    "author": {
+     "name": "Rohan Paul",
+     "handle": "rohanpaul_ai",
+     "avatar": "https://pbs.twimg.com/profile_images/1816185267037859840/Fd18CH0v_200x200.jpg"
+    },
+    "text": "ChatGPT, Claude, Codex, and Grok experiencing service disruptions within the same window.\n\nOpenAI, Anthropic acknowledged elevated errors across ChatGPT, Codex, and Claude.",
+    "date": 1788452551,
+    "media": [
+     {
+      "type": "image",
+      "src": "https://pbs.twimg.com/media/HRTgm73aAAIg22K.png?name=orig",
+      "ratio": 1.0444
+     }
+    ],
+    "links": []
+   }
+  }
+ ],
+ "article": {
+  "title": "انگار هوش مصنوعیا دست‌به‌یکی کرده باشن، کلود و گراک به فاصله فقط چهار دقیقه از کار افتادن و حدود ۷۳ دقیقه بعدش هم چت‌جی‌پی‌تی و کدکس قاطی کردن و به گل نشستن",
+  "source_title": "Wired: So, there was no single confirmed cause yet for today's near-simultaneous outage timing.",
+  "body": [
+   "ببین رفیق، انگار هوش مصنوعیا دست‌به‌یکی کرده باشن، کلود و گراک به فاصله فقط چهار دقیقه از کار افتادن و حدود ۷۳ دقیقه بعدش هم چت‌جی‌پی‌تی و کدکس قاطی کردن و به گل نشستن. قضیه اونجا عجیب می‌شه که طبق گزارش وایرد، هنوز هیچ دلیل فنی مشترکی واسه این قطعی‌های هم‌زمان پیدا نشده. اوپن‌ای‌آی اعلام کرده یه خطای مسیریابی شبکه خرابکاری به بار آورده، کمپانی ایلان ماسک هم مدعی شده از کار افتادن مرکز داده ممفیس گراک رو زمین زده، این وسط آنتروپیک هم مشکل کلود رو حل‌وفصل کرد اما جیکش درنیومد که اصلاً ریشه ماجرا چی بوده."
+  ],
+  "why": "اهمیتش اینه که نشون داد کل سیستم این غول‌های مدعی هنوز به یه مو بنده و یه باگ یا قطعی زیرساختی می‌تونه ابزارهای میلیون‌ها آدم در سرتاسر دنیا رو توی یه چشم‌به‌هم‌زدن کله‌پا کنه.",
+  "tags": [
+   "اوپن‌ای‌آی",
+   "آنتروپیک",
+   "ایلان ماسک"
+  ]
+ },
+ "updated": "2026-10-25T12:27:57+00:00",
+ "gholam_checked": "2026-10-25T12:27:57+00:00"
+}

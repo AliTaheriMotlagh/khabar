@@ -1,0 +1,61 @@
+{
+ "id": 4757,
+ "url": "https://t.me/dlmehr/4757",
+ "date": "2026-08-15T04:42:36+00:00",
+ "text": "https://fxtwitter.com/anthropicai/status/2088343978873966687?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+ "forwarded_from": null,
+ "digest": false,
+ "hash": "050af765d7e0",
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/anthropicai/status/2088343978873966687?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+  "site": "FxTwitter · anthropic.com",
+  "title": "Anthropic (@AnthropicAI)",
+  "description": "We’ve written an FAQ to answer some of the questions we've received about watermarking.\nIn summary:\n• We’re implementing watermarking to comply with the EU AI Act. Other major model developers have signed the same Code of Practice and will also be implementing…",
+  "image": "https://cdn4.telesco.pe/file/qzJVKhZXxBfMknMeczf-H2GpyR5oZMF9aDpwltvGX9UnGLxM6IuMvDQoCQXfOzWcmOeMOUB4Ible9XnX9_UIeFmOSddL8WXDteID2XzqKVpWgibJQjqL3J1dN25j6eNmxKPpkY7kv7T2dW5doVGFcBqKqGa7iyYRzCJRqnu5N2S0MiYm2HMiBhK4HYiylSJRe4ZkYHKF82jbONKxx7MJqwnWtcXymE2H6h-ZEZOnQ36d35DxksDKdd75fGzNHE8xuw9vOfJGSEaeOD4fieD8aEVgzlyGnRUkBPLqDUR1sNZwHfmjnDCoFPZpncJcz9WTP16XXgFyVwJjFn94Cofw-w.jpg"
+ },
+ "gholam": {
+  "text": "ببین رفیق، بچه‌های شرکت Anthropic اومدن یه سری شفاف‌سازی اساسی کردن و گفتن واسه رعایت قوانین سرسختانه اتحادیه اروپا، قراره روی متن‌های تولیدی مدل هوش مصنوعی کلود واترمارک یا همون نشونه‌گذاری بذارن. اما خیالت تخت باشه آبجی و داداش گل، چون تأکید کردن این کار اصلاً رو کیفیت خروجی اثر منفی نداره، هیچ کاراکتر مخفی یا متن اضافه‌ای به جوابت اضافه نمیکنه و واسه چشم عادی اصلاً قابل تشخیص نیست. از اون طرف نه توکن و هزینه بیشتری رو دست کاربر می‌ذاره و نه قابل ردیابیه که بشه فهمید دقیقاً کدوم آدم یا شرکتی این چت رو انجام داده. بقیه غول‌های هوش مصنوعی هم پای همین توافق‌نامه رو امضا زدن و قراره همین فرمون جلو برن.\n\nچرا مهمه؟ اهمیتش اینه که نشون میده شرکت‌های بزرگ دارن راهی پیدا می‌کنن تا هم قوانین سفت‌وسخت جهانی رو پاس کنن و هم کیفیت چت‌ها و حریم خصوصی کاربرا آسیب نبینه.",
+  "date": "2026-08-15T04:42:47+00:00"
+ },
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/AnthropicAI/status/2088343978873966687",
+   "domain": "x.com",
+   "author": {
+    "name": "Anthropic",
+    "handle": "AnthropicAI",
+    "avatar": "https://pbs.twimg.com/profile_images/1798110641414443008/XP8gyBaY_200x200.jpg"
+   },
+   "text": "We’ve written an FAQ to answer some of the questions we've received about watermarking. \n\nIn summary:\n\n• We’re implementing watermarking to comply with the EU AI Act. Other major model developers have signed the same Code of Practice and will also be implementing watermarking;\n• Our watermarking method doesn’t have any practical impact on the quality or content of Claude’s outputs;\n• The difference between watermarked and un-watermarked text will not be distinguishable to readers;\n• Nothing is added to the text and there are no hidden characters;\n• Watermarking doesn’t require extra tokens, and will not be more expensive;\n• Watermarks can’t be traced to a specific person, organization, or chat.\n\nRead more: https://www.anthropic.com/news/claude-text-watermark",
+   "date": 1786734978,
+   "media": [],
+   "links": [
+    "https://www.anthropic.com/news/claude-text-watermark"
+   ]
+  },
+  {
+   "kind": "link",
+   "url": "https://www.anthropic.com/news/claude-text-watermark",
+   "domain": "anthropic.com",
+   "title": "How Claude's text watermarking works",
+   "description": "Future Claude models will generate text that contains a watermark to comply with the EU AI Act. We answer questions about how it works and whether it affects outputs.",
+   "image": "https://www-cdn.anthropic.com/images/4zrzovbb/website/6d4a0d28992ade92d6fa63646fd9c9d318245c6c-2400x1260.jpg",
+   "site": "anthropic.com"
+  }
+ ],
+ "article": {
+  "title": "بچه‌های شرکت Anthropic اومدن یه سری شفاف‌سازی اساسی کردن و گفتن واسه رعایت قوانین سرسختانه اتحادیه اروپا، قراره روی متن‌های تولیدی مدل هوش مصنوعی کلود واترمارک یا همون نشونه‌گذاری بذارن",
+  "source_title": "We’ve written an FAQ to answer some of the questions we've received about watermarking.",
+  "body": [
+   "ببین رفیق، بچه‌های شرکت Anthropic اومدن یه سری شفاف‌سازی اساسی کردن و گفتن واسه رعایت قوانین سرسختانه اتحادیه اروپا، قراره روی متن‌های تولیدی مدل هوش مصنوعی کلود واترمارک یا همون نشونه‌گذاری بذارن. اما خیالت تخت باشه آبجی و داداش گل، چون تأکید کردن این کار اصلاً رو کیفیت خروجی اثر منفی نداره، هیچ کاراکتر مخفی یا متن اضافه‌ای به جوابت اضافه نمیکنه و واسه چشم عادی اصلاً قابل تشخیص نیست. از اون طرف نه توکن و هزینه بیشتری رو دست کاربر می‌ذاره و نه قابل ردیابیه که بشه فهمید دقیقاً کدوم آدم یا شرکتی این چت رو انجام داده. بقیه غول‌های هوش مصنوعی هم پای همین توافق‌نامه رو امضا زدن و قراره همین فرمون جلو برن."
+  ],
+  "why": "اهمیتش اینه که نشون میده شرکت‌های بزرگ دارن راهی پیدا می‌کنن تا هم قوانین سفت‌وسخت جهانی رو پاس کنن و هم کیفیت چت‌ها و حریم خصوصی کاربرا آسیب نبینه.",
+  "tags": [
+   "آنتروپیک"
+  ]
+ },
+ "updated": "2026-10-25T12:30:15+00:00",
+ "gholam_checked": "2026-10-25T12:30:15+00:00"
+}

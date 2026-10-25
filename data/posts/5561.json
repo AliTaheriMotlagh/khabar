@@ -1,0 +1,57 @@
+{
+ "id": 5561,
+ "url": "https://t.me/dlmehr/5561",
+ "date": "2026-09-30T19:02:38+00:00",
+ "text": "https://fxtwitter.com/antlingagi/status/2105335205741596911?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+ "forwarded_from": null,
+ "digest": false,
+ "hash": "49f7752e859e",
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/antlingagi/status/2105335205741596911?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+  "site": "🧵 Thread • FxTwitter",
+  "title": "Ant Ling (@AntLingAGI)",
+  "description": "Meet Ling-3.1-flash: ~560B total params, ~25B active/token, up to 1M-token context.\nWe plan to open-source the model soon.\nAcross work, coding & healthcare: 1,673 Elo on GDPVal-AA v2.1, 75.16 on FrontierSWE, and 65.35 on HealthBench Professional.",
+  "image": "https://cdn4.telesco.pe/file/S-Ln7TWYyTcmi3qrGskKPQItuQhxCSd7djEmaXtdWksXWaqi9G7ZCmKbQoNJI7Y2glknib-oMR0Izg6l5J8Q7Zy7Z8GyzdkYVI4Sn5S8eguoUGi3PdrWjGAk3-2bgFuiZ1tyVtkpxrK3cMUjbOcUN9c-v7Mgf6JJKF0WRvRPo0ptu0FHjojUnw82n1o0TsakN6ggVKGZfKVixGuz0UwFRYzRaMntDbJivs9Ipwr0ZSQd5CplZjkgzVEO4FtisMkVroG0hFNWKvIDwryvBDiRqUBjwQjU42VWVsuTXRFNAVoILDoYrPLBYtXPglzTnJ7-s36LeCpmqYJcwFVsASN5ZA.jpg"
+ },
+ "gholam": {
+  "text": "ببین رفیق، تیم Ant Ling دست‌به‌کار شده و از یه مدل تر و تمیز به اسم Ling-3.1-flash رونمایی کرده که مشخصاتش حسابی توجه‌ها رو جلب کرده. این مدل در مجموع حدود ۵۶۰ میلیارد پارامتر داره، اما هوشمندیش اینجاست که برای هر توکن فقط ۲۵ میلیارد پارامتر فعال می‌شن و تا سقف یک میلیون توکن هم پنجره متنی در اختیارت می‌ذاره. توی تست‌ها و بنچمارک‌های عملی هم حسابی خوش درخشیده و توی کدنویسی نمره ۷۵.۱۶ و تو بخش پزشکی امتیاز ۶۵.۳۵ گرفته، تازه خبر خوب‌تر اینه که سازنده‌هاش قول دادن به زودی کاملاً اوپن‌سورس منتشرش کنن.\n\nچرا مهمه؟ اهمیتش اینه که انتشار رایگان و کدباز یه مدل فوق‌العاده قوی با حافظه یک میلیون توکنی، دست برنامه‌نویس‌ها و محقق‌ها رو برای کارهای سنگین حسابی باز می‌کنه و انحصار غول‌های بسته هوش مصنوعی رو می‌شکنه.",
+  "date": "2026-09-30T19:02:53+00:00"
+ },
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/AntLingAGI/status/2105335205741596911",
+   "domain": "x.com",
+   "author": {
+    "name": "Ant Ling",
+    "handle": "AntLingAGI",
+    "avatar": "https://pbs.twimg.com/profile_images/1911666162137477120/EbzxHHzp_200x200.jpg"
+   },
+   "text": "Meet Ling-3.1-flash: ~560B total params, ~25B active/token, up to 1M-token context. \n\nWe plan to open-source the model soon. \n\nAcross work, coding & healthcare:  1,673 Elo on GDPVal-AA v2.1, 75.16 on FrontierSWE, and 65.35 on HealthBench Professional.",
+   "date": 1790786002,
+   "media": [
+    {
+     "type": "image",
+     "src": "https://pbs.twimg.com/media/HTelU-lbgAQs5K-.jpg?name=orig",
+     "ratio": 0.6237
+    }
+   ],
+   "links": []
+  }
+ ],
+ "article": {
+  "title": "تیم Ant Ling دست‌به‌کار شده و از یه مدل تر و تمیز به اسم Ling-3.1-flash رونمایی کرده که مشخصاتش حسابی توجه‌ها رو جلب کرده",
+  "source_title": "Meet Ling-3.1-flash: ~560B total params, ~25B active/token, up to 1M-token context.",
+  "body": [
+   "ببین رفیق، تیم Ant Ling دست‌به‌کار شده و از یه مدل تر و تمیز به اسم Ling-3.1-flash رونمایی کرده که مشخصاتش حسابی توجه‌ها رو جلب کرده. این مدل در مجموع حدود ۵۶۰ میلیارد پارامتر داره، اما هوشمندیش اینجاست که برای هر توکن فقط ۲۵ میلیارد پارامتر فعال می‌شن و تا سقف یک میلیون توکن هم پنجره متنی در اختیارت می‌ذاره. توی تست‌ها و بنچمارک‌های عملی هم حسابی خوش درخشیده و توی کدنویسی نمره ۷۵.۱۶ و تو بخش پزشکی امتیاز ۶۵.۳۵ گرفته، تازه خبر خوب‌تر اینه که سازنده‌هاش قول دادن به زودی کاملاً اوپن‌سورس منتشرش کنن."
+  ],
+  "why": "اهمیتش اینه که انتشار رایگان و کدباز یه مدل فوق‌العاده قوی با حافظه یک میلیون توکنی، دست برنامه‌نویس‌ها و محقق‌ها رو برای کارهای سنگین حسابی باز می‌کنه و انحصار غول‌های بسته هوش مصنوعی رو می‌شکنه.",
+  "tags": [
+   "کدنویسی",
+   "سلامت"
+  ]
+ },
+ "updated": "2026-10-25T12:25:22+00:00",
+ "gholam_checked": "2026-10-25T12:25:22+00:00"
+}

@@ -1,0 +1,68 @@
+{
+ "id": 5065,
+ "url": "https://t.me/dlmehr/5065",
+ "date": "2026-09-01T04:32:15+00:00",
+ "text": "https://fxtwitter.com/omarsar0/status/2094505508850032852?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+ "forwarded_from": null,
+ "digest": false,
+ "hash": "4eaab7592ec7",
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/omarsar0/status/2094505508850032852?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+  "site": "FxTwitter",
+  "title": "elvis (@omarsar0)",
+  "description": "Interesting paper from Tencent.\nTencent trains an agent to manage its own working context, and assigns credit at the level of individual context edits.\nLong-horizon tasks force a model to retrieve, integrate and maintain scattered information across many…",
+  "image": "https://cdn4.telesco.pe/file/lLP21mmj3KI5K-aYusi46MXmyu0YrKPZznusVLH4mayB8yUoZk17LLB48A4GS67T6z62YPJMf_6i9h16kvaM-1kbnd0pxIDHWnI7hW1b-aMMRT859ypH--dCkUIuX94bLIqL7koHBAxxZ0vrAtmw6Xxu8NhZX6i0Ci0PxaLzEiLpDGWulTUxddJfQvnRFe4kFAeT-IhKYuqHlUBabvmTLLGOYyHUzWob2YjkbpMWNIGKGxC8ABedsUAZeQZcPc2SOtg854OqCer-k6df8r3_W6IiOraEwz-ru3AV4cwCckd_y30-Ab_zbiIP3dzerhIf4iprq2hU1L9eJF_VzYfetg.jpg"
+ },
+ "gholam": {
+  "text": "رفیق، دانشمندای شرکت تنسنت یه سیستم جدید به اسم ContextPilot ساختن که به ایجنت‌های هوش مصنوعی یاد میده خودشون حافظه و کانتکست کاریشون رو تر و تمیز مدیریت کنن. قضیه از این قراره که توی کارهای طولانی، مدل‌ها الکی حافظه‌شون پر می‌شد، اما این سیستم با برنامه‌ریزی کلی، حافظه بلندمدت و فشرده‌سازی نرم، اطلاعات رو به جای دور ریختن، درست انبار می‌کنه. از اون باحال‌تر روش یادگیری تقویتیشه؛ یعنی مدل دقیقا می‌فهمه کدوم تغییر کوچیک توی متن به درد خورده و الکی به همه حرکاتش پاداش نمیده. نتیجه‌ش هم این شده که توی جستجوهای عمیق و پاسخ به سوالات طولانی، با حافظه کمتر بقیه رقیبا رو جا گذاشته و کدش رو هم منتشر کردن.\n\nچرا مهمه؟ اهمیتش اینه که دیگه توی پردازش متن‌های خیلی طولانی و پروژه‌های سنگین، هوش مصنوعی گیج نمیشه و با مصرف کمتر رم و هزینه پایین‌تر، عملکرد فوق‌العاده دقیق‌تری تحویل میده.",
+  "date": "2026-09-01T04:32:25+00:00"
+ },
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/omarsar0/status/2094505508850032852",
+   "domain": "x.com",
+   "author": {
+    "name": "elvis",
+    "handle": "omarsar0",
+    "avatar": "https://pbs.twimg.com/profile_images/939313677647282181/vZjFWtAn_200x200.jpg"
+   },
+   "text": "Interesting paper from Tencent.\n\nTencent trains an agent to manage its own working context, and assigns credit at the level of individual context edits.\n\nLong-horizon tasks force a model to retrieve, integrate and maintain scattered information across many turns, and keeping every interaction history makes the working context grow without bound.\n\nRecent proactive methods let a model edit its own context with tools, but the toolset stops at search, deletion and summarization.\n\nContextPilot adds global planning, long-term memory and adaptive soft compression, so the agent can offload information rather than only discard it.\n\nThe training side is where it gets interesting. Standard RL hands the final trajectory reward to every intermediate edit equally. ContextPilot uses context and entropy variation to find which editing decisions actually mattered, samples branches at those points, and estimates action-level advantages from all branched trajectories passing through that edit.\n\nOn long-context QA and deep search it beats existing baselines across several base models while holding a more compact working context. Code is available.\n\nPaper: https://arxiv.org/abs/2608.28476\n\nChat with Paper: https://academy.dair.ai/papers/contextpilot-teaching-agents-for-proactive-context-management-via-fine-grained-r-2608.28476",
+   "date": 1788204001,
+   "media": [
+    {
+     "type": "image",
+     "src": "https://pbs.twimg.com/media/HREtqPraUAAEGDe.jpg?name=orig",
+     "ratio": 1.271
+    }
+   ],
+   "links": [
+    "https://arxiv.org/abs/2608.28476",
+    "https://academy.dair.ai/papers/contextpilot-teaching-agents-for-proactive-context-management-via-fine-grained-r-2608.28476"
+   ]
+  },
+  {
+   "kind": "link",
+   "url": "https://arxiv.org/abs/2608.28476",
+   "domain": "arxiv.org",
+   "title": "ContextPilot: Teaching Agents for Proactive Context Management via Fine-grained RL",
+   "description": "Long-horizon agentic tasks require large language models (LLMs) to iteratively retrieve, integrate, and maintain dispersed information across multi-turn interactions, but preserving all interaction histories leads to a continuously growing working context. Recent proactive context management methods allow models to edit their own working context with specialized tools, yet they still face three ke",
+   "image": "https://arxiv.org/static/browse/0.3.4/images/arxiv-logo-fb.png",
+   "site": "arXiv.org"
+  }
+ ],
+ "article": {
+  "title": "دانشمندای شرکت تنسنت یه سیستم جدید به اسم ContextPilot ساختن که به ایجنت‌های هوش مصنوعی یاد میده خودشون حافظه و کانتکست کاریشون رو تر و تمیز مدیریت کنن",
+  "source_title": "Interesting paper from Tencent.",
+  "body": [
+   "رفیق، دانشمندای شرکت تنسنت یه سیستم جدید به اسم ContextPilot ساختن که به ایجنت‌های هوش مصنوعی یاد میده خودشون حافظه و کانتکست کاریشون رو تر و تمیز مدیریت کنن. قضیه از این قراره که توی کارهای طولانی، مدل‌ها الکی حافظه‌شون پر می‌شد، اما این سیستم با برنامه‌ریزی کلی، حافظه بلندمدت و فشرده‌سازی نرم، اطلاعات رو به جای دور ریختن، درست انبار می‌کنه. از اون باحال‌تر روش یادگیری تقویتیشه؛ یعنی مدل دقیقا می‌فهمه کدوم تغییر کوچیک توی متن به درد خورده و الکی به همه حرکاتش پاداش نمیده. نتیجه‌ش هم این شده که توی جستجوهای عمیق و پاسخ به سوالات طولانی، با حافظه کمتر بقیه رقیبا رو جا گذاشته و کدش رو هم منتشر کردن."
+  ],
+  "why": "اهمیتش اینه که دیگه توی پردازش متن‌های خیلی طولانی و پروژه‌های سنگین، هوش مصنوعی گیج نمیشه و با مصرف کمتر رم و هزینه پایین‌تر، عملکرد فوق‌العاده دقیق‌تری تحویل میده.",
+  "tags": [
+   "چین"
+  ]
+ },
+ "updated": "2026-10-25T12:28:25+00:00",
+ "gholam_checked": "2026-10-25T12:28:25+00:00"
+}

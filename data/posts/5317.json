@@ -1,0 +1,53 @@
+{
+ "id": 5317,
+ "url": "https://t.me/dlmehr/5317",
+ "date": "2026-09-16T00:55:42+00:00",
+ "text": "https://fxtwitter.com/finkd/status/2099997096896274533?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+ "forwarded_from": null,
+ "digest": false,
+ "hash": "4618c6a04410",
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/finkd/status/2099997096896274533?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+  "site": "FxTwitter",
+  "title": "Mark Zuckerberg (@finkd)",
+  "description": "Last month I wrote about how we can build a positive and safe future for everyone: http://meta.com/thefutureisforeveryone\nEvery lab has the responsibility and incentive to move at the pace required to train its models safely, and the ability to take its…",
+  "image": "https://cdn4.telesco.pe/file/E_uMXQWGJQeyuPtrepMgupUqaUP89VBfQsxBKukqnuCEF0qYruU_1bR0d0nSGTT2SYJiv0ZB0zVk3dspxszXVn6tTLzQKF42lADOsC6MAO3IDd50hig5BFvI6HU8BbDxOJtHgf7gHU0e_MvPOtduuh5FAu7DPg91wFQwvQbRiWot6iwyBqNz01AClz3QKFiBB9l39do9bSj5EofMcPQqrD3yhRfibKHivXUElMoDy--8J8y-xC9kGuw9F7kitMNnZHri3jcnBn3eG5itAsMw1Qf6un-gMfiQYrmW9QyUg1yoLyrq4mY2US6twe5vrS3IoKlC3FIHIf12PbP8UBmigA.jpg"
+ },
+ "gholam": {
+  "text": "رفیق، مارک زاکربرگ اومده وسط گود و گفته امنیت و همسو بودن هوش مصنوعی با خواست کاربرا، برگ برنده اصلی تو این بازاره؛ چون اگه مدل‌ها ساز مخالف بزنن هم مردم ولشون می‌کنن و هم شرکت‌ها تو دادگاه‌ها به خاک سیاه می‌شینن. خلاصه رو کرده که خود متا برای حفظ امنیت کاربرا، انتشار مدل «میوز» رو چند ماه عقب انداخت و منتظر بقیه نموند تا اول اونا قدم بردارن، بلکه خودش مردونه رفت تو دل ماجرا. آخرش هم تاکید کرده که برای داشتن یه آینده درست‌درمون، آزمایشگاه‌ها باید از ارزیاب‌های مستقل کمک بگیرن و بخش اعظم توان پردازشی‌شون رو به‌جای مسابقه دادن واسه پیشرفت‌های عجیب‌وغریب، بذارن در خدمت گره‌گشایی از کار واقعی مردم.\n\nاهمیتش اینه که نشون میده غول‌های فناوری دارن کم‌کم خط‌مشی رقابت رو از «سرعت بدون حساب‌کتاب» به سمت «اعتمادسازی و کنترل ایمن» عوض می‌کنن تا قافیه رو نبازن.",
+  "date": "2026-09-16T00:55:53+00:00"
+ },
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/finkd/status/2099997096896274533",
+   "domain": "x.com",
+   "author": {
+    "name": "Mark Zuckerberg",
+    "handle": "finkd",
+    "avatar": "https://pbs.twimg.com/profile_images/77846223/profile_200x200.jpg"
+   },
+   "text": "Last month I wrote about how we can build a positive and safe future for everyone: http://meta.com/thefutureisforeveryone\n\nEvery lab has the responsibility and incentive to move at the pace required to train its models safely, and the ability to take its own actions to ensure that happens.\n\nThe reality is:\n\n- People won't want to use agents that are misaligned with them and that don't do what they ask, so labs have a strong natural incentive to make their models more aligned.\n\nThere is a lot of debate about slowing progress on capabilities until alignment catches up. My view is that trust and alignment are quickly becoming the most important capabilities that will differentiate agents and models. Any lab that doesn't focus on alignment will fall behind.\n\n- Labs face significant liability if their models cause harm, so they have a strong incentive to prevent this as well.\n\nMeta delayed shipping Muse for several months to focus on safety and security. We didn't call for everyone else to do this before we would. We just did it as part of our day-to-day work because it was clearly the right thing for people and for us. I'm proud of the security foundations we've built.\n\n- Engaging independent evaluators and advisors is industry best practice. MSL already does this today in several areas because it helps produce better work. Other labs can just do this too. In general, it would be helpful for there to be a larger and more diverse ecosystem of evaluators.\n\n- Committing the significant majority of compute towards serving people rather than racing towards recursive self-improvement is one of the best ways to ensure we develop this technology safely. Meta has made this commitment and other labs can do this as well.\n\nI believe the key to building a positive future for everyone is maintaining the right balance of power. This is within our power to do.",
+   "date": 1789513298,
+   "media": [],
+   "links": [
+    "http://meta.com/thefutureisforeveryone"
+   ]
+  }
+ ],
+ "article": {
+  "title": "مارک زاکربرگ اومده وسط گود و گفته امنیت و همسو بودن هوش مصنوعی با خواست کاربرا، برگ برنده اصلی تو این بازاره",
+  "source_title": "Last month I wrote about how we can build a positive and safe future for everyone:",
+  "body": [
+   "رفیق، مارک زاکربرگ اومده وسط گود و گفته امنیت و همسو بودن هوش مصنوعی با خواست کاربرا، برگ برنده اصلی تو این بازاره؛ چون اگه مدل‌ها ساز مخالف بزنن هم مردم ولشون می‌کنن و هم شرکت‌ها تو دادگاه‌ها به خاک سیاه می‌شینن. خلاصه رو کرده که خود متا برای حفظ امنیت کاربرا، انتشار مدل «میوز» رو چند ماه عقب انداخت و منتظر بقیه نموند تا اول اونا قدم بردارن، بلکه خودش مردونه رفت تو دل ماجرا. آخرش هم تاکید کرده که برای داشتن یه آینده درست‌درمون، آزمایشگاه‌ها باید از ارزیاب‌های مستقل کمک بگیرن و بخش اعظم توان پردازشی‌شون رو به‌جای مسابقه دادن واسه پیشرفت‌های عجیب‌وغریب، بذارن در خدمت گره‌گشایی از کار واقعی مردم."
+  ],
+  "why": "نشون میده غول‌های فناوری دارن کم‌کم خط‌مشی رقابت رو از «سرعت بدون حساب‌کتاب» به سمت «اعتمادسازی و کنترل ایمن» عوض می‌کنن تا قافیه رو نبازن.",
+  "tags": [
+   "متا",
+   "امنیت"
+  ]
+ },
+ "updated": "2026-10-25T12:26:51+00:00",
+ "gholam_checked": "2026-10-25T12:26:51+00:00"
+}

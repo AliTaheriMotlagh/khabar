@@ -2,16 +2,23 @@
  "id": 5927,
  "url": "https://t.me/dlmehr/5927",
  "date": "2026-10-16T16:54:09+00:00",
- "edited": false,
- "views": "251",
  "text": "https://microsoft.ai/news/frontier-pre-training-at-microsoft-ai/",
  "forwarded_from": "Hossein Zakariaee",
  "digest": false,
  "hash": "04c1c2d13072",
+ "media": [],
+ "preview": {
+  "url": "https://microsoft.ai/news/frontier-pre-training-at-microsoft-ai",
+  "site": "Microsoft AI",
+  "title": "Frontier Pre-training at Microsoft AI | Microsoft AI",
+  "description": "",
+  "image": "https://cdn4.telesco.pe/file/eRcKdEaxvMHp2pOMHkB0hV1XL1fCddTmHRaSRw0mweplwJx0EQu-ggTOWsLZL7YLvUjNaCNWdUgOfgYIA17Pt-eJs2RT8ev8422v87AAEBYKUjWCTVfOWDdectDMmvIhSv7hFejf7A1i7jPBKO9cDne7dekF6-NOIRievpDIiqYcRDQxgFrSk8ZYV-t1rz5lGrAbtgKCIZZWps0B5I2YfYUABZjaTc5glfpbKLfr62BhbXe3mDUe9tg-joUqjHi8VMI0Y96uOhOyil0pY8ZhohN26kraPx8Dj_wTg-ntjie328lvHK4sQoogzZ-vHwf8PwzaQbWWVTnjlqA37WUV4A.jpg"
+ },
  "gholam": {
   "text": "رفیق، مایکروسافت اومده یه غول بی‌تربیت به اسم MAI-Base-2 معرفی کرده که با معماری MoE، نزدیک ۲.۸ تریلیون پارامتر کل و ۸۰ میلیارد پارامتر فعال داره و عملاً همه مدل‌های متن‌باز گُنده مثل دیپ‌سیک رو جا گذاشته. این هیولا رو با ۱۶ هزار تا پردازنده GB200 ظرف ۳۸ روز پیش‌تصلاب و ترین کردن، اونم با بهره‌وری پردازشی ۴ تا ۱۲ برابر خفن‌تر از رقبای قدری مثل DeepSeek-V4-Pro-Base. نکته مشتی ماجرا اینجاست که همه‌چیز رو از صفر و با داده‌های تر و تمیز دست‌اول خودشون ساختن، نه کپی و تقطیر از مدل‌های دیگه؛ تازه با روش‌هایی مثل اپتیمایزر Muon و بهینه‌سازی حافظه نذاشتن سر سوزنی افت توان پیش بیاد و بینایی ماشین رو هم به‌صورت بومی از پایه به نافش بستن.\n\nاهمیتش اینه که مایکروسافت نشون داد بدون وابستگی به تقطیر مدل‌های اوپن‌سورس و با هماهنگ کردن زیرساخت سخت‌افزاری و نرم‌افزاری، می‌شه مدل‌های ترابردی ساخت که هم هزینه‌شون برای شرکت‌ها پایین‌تر دربیاد هم لنگ رقبا نمونن.",
   "date": "2026-10-16T16:54:23+00:00"
  },
+ "gholam_checked": "2026-10-24T23:35:31+00:00",
  "links": [
   {
    "kind": "link",
@@ -24,18 +31,6 @@
    "domain": "microsoft.ai"
   }
  ],
- "media": [],
- "preview": {
-  "url": "https://microsoft.ai/news/frontier-pre-training-at-microsoft-ai",
-  "site": "Microsoft AI",
-  "title": "Frontier Pre-training at Microsoft AI | Microsoft AI",
-  "description": "",
-  "image": {
-   "src": "media/5927/preview.webp",
-   "width": 800,
-   "height": 486
-  }
- },
  "article": {
   "title": "مایکروسافت اومده یه غول بی‌تربیت به اسم MAI-Base-2 معرفی کرده که با معماری MoE، نزدیک ۲.۸ تریلیون پارامتر کل و ۸۰ میلیارد پارامتر فعال داره و عملاً همه مدل‌های متن‌باز گُنده مثل دیپ‌سیک رو جا گذاشته",
   "source_title": "Frontier Pre-training at Microsoft AI | Microsoft AI",
@@ -48,6 +43,5 @@
    "چین"
   ]
  },
- "updated": "2026-10-24T23:35:31+00:00",
- "gholam_checked": "2026-10-24T23:35:31+00:00"
+ "updated": "2026-10-25T11:54:11+00:00"
 }

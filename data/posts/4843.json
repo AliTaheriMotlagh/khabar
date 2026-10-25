@@ -1,0 +1,72 @@
+{
+ "id": 4843,
+ "url": "https://t.me/dlmehr/4843",
+ "date": "2026-08-20T16:53:25+00:00",
+ "text": "https://fxtwitter.com/nvidiadrive/status/2090457396166730110?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+ "forwarded_from": null,
+ "digest": false,
+ "hash": "f4df2e1a006e",
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/nvidiadrive/status/2090457396166730110?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+  "site": "FxTwitter",
+  "title": "NVIDIA DRIVE (@NVIDIADRIVE)",
+  "description": ".@Waymo just published a technical look at the compute system powering the Waymo Driver, engineered for millisecond latency, extreme operating conditions, and full redundancy.\nNVIDIA accelerated computing is a critical foundation of this system, delivering…",
+  "image": null
+ },
+ "gholam": {
+  "text": "ببین رفیق، شرکت ویمو بالاخره جزئیات فنی مغز متفکر تاکسی‌های خودرانش یعنی سیستم کامپیوتری «Waymo Driver» رو رو کرد و حسابی گرد و خاک به پا کرده. انویدیا هم رسماً اعلام کرده که پردازش شتاب‌یافته‌شون ستون اصلی این سیستمه تا با تأخیر در حد میلی‌ثانیه و بدون کوچک‌ترین خطایی تو سخت‌ترین شرایط جاده‌ای کار کنه. تازه ماجرا فقط انویدیا نیست؛ ویمو دست گذاشته رو شونه بقیه غول‌های سخت‌افزاری مثل AMD، سامسونگ، میکرون و TSMC تا یه غول محاسباتی تمام‌عیار برای ماشین‌های بی‌راننده بسازه. همه‌چیز طوری چیده شده که این روبوتاکسی‌ها به شکل گسترده، امن و در ابعاد میلیونی بتونن تو خیابونا جولان بدن.\n\nچرا مهمه؟ اهمیتش اینه که نشون میده رویای تاکسی‌های کاملاً خودران دیگه از فاز آزمایشی دراومده و با این مغزهای محاسباتی قدرتمند، ورودشون به زندگی روزمره مردم جهان خیلی نزدیک شده.",
+  "date": "2026-08-20T16:53:36+00:00"
+ },
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/NVIDIADRIVE/status/2090457396166730110",
+   "domain": "x.com",
+   "author": {
+    "name": "NVIDIA DRIVE",
+    "handle": "NVIDIADRIVE",
+    "avatar": "https://pbs.twimg.com/profile_images/1869449601054642176/bkq2Xk6f_200x200.jpg"
+   },
+   "text": ".@Waymo just published a technical look at the compute system powering the Waymo Driver, engineered for millisecond latency, extreme operating conditions, and full redundancy. \n\nNVIDIA accelerated computing is a critical foundation of this system, delivering the performance and efficiency needed to advance robotaxi deployment at scale.",
+   "date": 1787238856,
+   "media": [],
+   "links": [],
+   "quote": {
+    "author": {
+     "name": "Waymo",
+     "handle": "Waymo",
+     "avatar": "https://pbs.twimg.com/profile_images/1958686951692984320/93TDUCiO_200x200.jpg"
+    },
+    "text": "We’re putting our chips on the table. Learn more about our approach to engineering compute for fully autonomous driving and how we collaborate with industry leaders including AMD, Micron, NVIDIA, Samsung, Sandisk, Socionext, and TSMC to build the most capable computing system on the road: https://waymo.com/blog/2026/08/look-under-our-trunk/",
+    "date": 1787235104,
+    "media": [
+     {
+      "type": "video",
+      "src": "https://video.twimg.com/tweet_video/HQK9lMbXQAAmQRa.mp4",
+      "poster": "https://pbs.twimg.com/tweet_video_thumb/HQK9lMbXQAAmQRa.jpg",
+      "ratio": 0.562,
+      "duration": 0,
+      "gif": true
+     }
+    ],
+    "links": [
+     "https://waymo.com/blog/2026/08/look-under-our-trunk/"
+    ]
+   }
+  }
+ ],
+ "article": {
+  "title": "شرکت ویمو بالاخره جزئیات فنی مغز متفکر تاکسی‌های خودرانش یعنی سیستم کامپیوتری «Waymo Driver» رو رو کرد و حسابی گرد و خاک به پا کرده",
+  "source_title": ".@Waymo just published a technical look at the compute system powering the Waymo Driver, engineered for millisecond latency, extreme…",
+  "body": [
+   "ببین رفیق، شرکت ویمو بالاخره جزئیات فنی مغز متفکر تاکسی‌های خودرانش یعنی سیستم کامپیوتری «Waymo Driver» رو رو کرد و حسابی گرد و خاک به پا کرده. انویدیا هم رسماً اعلام کرده که پردازش شتاب‌یافته‌شون ستون اصلی این سیستمه تا با تأخیر در حد میلی‌ثانیه و بدون کوچک‌ترین خطایی تو سخت‌ترین شرایط جاده‌ای کار کنه. تازه ماجرا فقط انویدیا نیست؛ ویمو دست گذاشته رو شونه بقیه غول‌های سخت‌افزاری مثل AMD، سامسونگ، میکرون و TSMC تا یه غول محاسباتی تمام‌عیار برای ماشین‌های بی‌راننده بسازه. همه‌چیز طوری چیده شده که این روبوتاکسی‌ها به شکل گسترده، امن و در ابعاد میلیونی بتونن تو خیابونا جولان بدن."
+  ],
+  "why": "اهمیتش اینه که نشون میده رویای تاکسی‌های کاملاً خودران دیگه از فاز آزمایشی دراومده و با این مغزهای محاسباتی قدرتمند، ورودشون به زندگی روزمره مردم جهان خیلی نزدیک شده.",
+  "tags": [
+   "گوگل"
+  ]
+ },
+ "updated": "2026-10-25T12:29:46+00:00",
+ "gholam_checked": "2026-10-25T12:29:46+00:00"
+}

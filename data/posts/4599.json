@@ -1,0 +1,74 @@
+{
+ "id": 4599,
+ "url": "https://t.me/dlmehr/4599",
+ "date": "2026-08-05T14:01:40+00:00",
+ "text": "https://fxtwitter.com/rohanpaul_ai/status/2084870412262068437?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+ "forwarded_from": null,
+ "digest": false,
+ "hash": "946a85f5c45f",
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/rohanpaul_ai/status/2084870412262068437?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+  "site": "FxTwitter",
+  "title": "Rohan Paul (@rohanpaul_ai)",
+  "description": "Cursor has open-sourced Mixture-of-Kittens, the fused mixture-of-experts kernel that lifted its production training throughput by 41%.\nA really smart technique here.\nTraining a big model wastes huge amounts of GPU time just moving tokens between chips…",
+  "image": "https://cdn4.telesco.pe/file/AXTVtbK9WwzQWMUoHp1wSBXsMdbE6OlhCC7VgMGd5H8Pm155EuPcakOcsiyJL1IVdKYP6xVlh38gTyz9ZB_eZerCcPX28euXSRgBcafmDWorrNf9szxCbO1y8bzoeKPnEwwkquqw2gu8AZ2bE3vKPLgByxb_D_siJalecT-vGH9zP42BZMJOxnWZLEFg-45xqGP064Je_qEn4P5gruj1c7LkHn0foHS9A8EQ9VIaIQyrLuqubShin9vW05Ob2ggN1uqSNGtQwimYzRdKHoWkkb4tLEI8-0Z_SN5i0Ev9ai6ZtOhXpl-igKa1iAXVmZthG9RDRkXlapOsFXadDQwoUA.jpg"
+ },
+ "gholam": {
+  "text": "رفیق، تیم Cursor اومده یه کرنل جدید به اسم Mixture-of-Kittens رو متن‌باز کرده که سرعت آموزش مدل‌های بزرگ هوش مصنوعی رو حسابی می‌بره بالا. این جادوگرا بدون اینکه یه قرون خرج سخت‌افزار جدید کنن، فقط با بهینه‌سازی نحوه انتقال دیتا بین کارت‌های گرافیک و دور زدن پردازنده‌های کند، تونستن بازدهی ۵۱۲ تا کارت گرافیک رو ۴۱ درصد زیاد کنن و سرعت رو از ۷۶۰ به ۱۰۷۰ توکن در ثانیه برسونن. راستش شاهکار اصلیشون این بوده که مدل جابه‌جایی دیتا رو تغییر دادن و سرعت پردازش رفت رو تا ۲.۳۷ برابر نسبت به سریع‌ترین روش‌های موجود بالا ببرن. خلاصه ثابت کردن با کدنویسی تمیز و مشتی میشه بدون خرید حتی یه دونه سخت‌افزار اضافه، کارایی سیستم رو جهش داد.\n\nاهمیتش اینه که نشون میده با برنامه‌نویسی هوشمندانه میشه بدون خرج هزینه‌های سنگین واسه قطعات جدید، سرعت هوش مصنوعی رو به طرز چشمگیری بالا برد.",
+  "date": "2026-08-05T14:01:58+00:00"
+ },
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/rohanpaul_ai/status/2084870412262068437",
+   "domain": "x.com",
+   "author": {
+    "name": "Rohan Paul",
+    "handle": "rohanpaul_ai",
+    "avatar": "https://pbs.twimg.com/profile_images/1816185267037859840/Fd18CH0v_200x200.jpg"
+   },
+   "text": "Cursor has open-sourced Mixture-of-Kittens, the fused mixture-of-experts kernel that lifted its production training throughput by 41%.\n\nA really smart technique here. \n\nTraining a big model wastes huge amounts of GPU time just moving tokens between chips, and Cursor got 41% more work out of the exact same hardware by rewriting how that movement is scheduled.\n\nThe layer it replaces had become the largest single cost in that training, swallowing more than half of total step time on some workloads.\n\nEarlier fixes attacked only the arithmetic, since custom MXFP8 kernels sped up the expert math and left token shuffling to a separate library.\n\nThat division worked while compute dominated, but once the experts got fast enough the transfers became the thing everything else waited on.\n\nThe switch to GB300 NVL72 racks helped and hurt at the same time.\n\nAll 72 chips now sit on one high-speed link, close enough that a chip can receive its next batch of tokens while still crunching the last one.\n\nBut the small CPUs bolted onto those chips are slow, and the GPUs kept finishing early and sitting idle while the CPU decided what to send next.\n\nSo the new kernel does the whole round trip, sending tokens out, running the experts, and gathering results back, in one go without ever pausing to check with the CPU.\n\nThe biggest gain came from flipping the direction of the traffic, since letting each chip pull the tokens it needs beats having others push them, worth up to 29% more usable bandwidth.\n\nPulling also kills the \"I'm done\" messages a push requires, which were costing 5.8x more waiting time in their own tests.\n\nAgainst the fastest public baseline that adds up to 2.37x faster forward passes, and across 512 production GPUs it lifted throughput from 760.9 tokens per second to 1,070.2.\n\nThat 41% came from scheduling choices rather than new hardware, which is the part rival labs should find uncomfortable.\n\nGains built that way compound across every step of every run, so a kernel rewrite can now beat another rack of chips.",
+   "date": 1785906815,
+   "media": [
+    {
+     "type": "image",
+     "src": "https://pbs.twimg.com/media/HO7xKxuasAA0Rn_.jpg?name=orig",
+     "ratio": 0.8021
+    }
+   ],
+   "links": [],
+   "quote": {
+    "author": {
+     "name": "Cursor",
+     "handle": "cursor_ai",
+     "avatar": "https://pbs.twimg.com/profile_images/1970182748146180096/dhZeXi_X_200x200.jpg"
+    },
+    "text": "We're open-sourcing Mixture-of-Kittens (MoK), our MoE training megakernel for NVL72s.\n\nIt fuses all Mixture-of-Experts communication and computation into a single, fully deterministic kernel, and runs up to 2.37x faster than the strongest public baselines.",
+    "date": 1785859226,
+    "media": [
+     {
+      "type": "image",
+      "src": "https://pbs.twimg.com/media/HO47_3aWYAAgDzM.jpg?name=orig",
+      "ratio": 0.8021
+     }
+    ],
+    "links": []
+   }
+  }
+ ],
+ "article": {
+  "title": "تیم Cursor اومده یه کرنل جدید به اسم Mixture-of-Kittens رو متن‌باز کرده که سرعت آموزش مدل‌های بزرگ هوش مصنوعی رو حسابی می‌بره بالا",
+  "source_title": "Cursor has open-sourced Mixture-of-Kittens, the fused mixture-of-experts kernel that lifted its production training throughput by 41%.",
+  "body": [
+   "رفیق، تیم Cursor اومده یه کرنل جدید به اسم Mixture-of-Kittens رو متن‌باز کرده که سرعت آموزش مدل‌های بزرگ هوش مصنوعی رو حسابی می‌بره بالا. این جادوگرا بدون اینکه یه قرون خرج سخت‌افزار جدید کنن، فقط با بهینه‌سازی نحوه انتقال دیتا بین کارت‌های گرافیک و دور زدن پردازنده‌های کند، تونستن بازدهی ۵۱۲ تا کارت گرافیک رو ۴۱ درصد زیاد کنن و سرعت رو از ۷۶۰ به ۱۰۷۰ توکن در ثانیه برسونن. راستش شاهکار اصلیشون این بوده که مدل جابه‌جایی دیتا رو تغییر دادن و سرعت پردازش رفت رو تا ۲.۳۷ برابر نسبت به سریع‌ترین روش‌های موجود بالا ببرن. خلاصه ثابت کردن با کدنویسی تمیز و مشتی میشه بدون خرید حتی یه دونه سخت‌افزار اضافه، کارایی سیستم رو جهش داد."
+  ],
+  "why": "نشون میده با برنامه‌نویسی هوشمندانه میشه بدون خرج هزینه‌های سنگین واسه قطعات جدید، سرعت هوش مصنوعی رو به طرز چشمگیری بالا برد.",
+  "tags": [
+   "کدنویسی",
+   "تراشه"
+  ]
+ },
+ "updated": "2026-10-25T12:30:55+00:00",
+ "gholam_checked": "2026-10-25T12:30:55+00:00"
+}

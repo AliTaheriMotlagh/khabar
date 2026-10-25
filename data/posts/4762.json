@@ -1,0 +1,59 @@
+{
+ "id": 4762,
+ "url": "https://t.me/dlmehr/4762",
+ "date": "2026-08-15T23:52:28+00:00",
+ "text": "https://fxtwitter.com/aditya_bhatt/status/2088555528385400837?s=20",
+ "forwarded_from": "Amin",
+ "digest": false,
+ "hash": "8700d26a7b55",
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/aditya_bhatt/status/2088555528385400837?s=20",
+  "site": "🧵 Thread • FxTwitter",
+  "title": "Aditya Bhatt (@aditya_bhatt)",
+  "description": "A first glimpse of the wildest robotics project of my PhD.\n🛹\nThe Blind Skateboarder\n🛹\nNo vision. No markers.\nPaper, code, weights — coming soon. And we have more.\n😉",
+  "image": null
+ },
+ "gholam": {
+  "text": "آبجی و داداش گلم، ببین این آقا آدیتیا بات تو دوره دکتراش یه ربات خفن ساخته که هوش از سر آدم می‌پرونه؛ اسم پروژه‌ش رو گذاشته «اسکیت‌بوردسوار نابینا». این شاهکار بدون هیچ دوربین، سنسور بینایی یا نشانگر کمکی، خیلی شیک تعادلش رو روی اسکیت‌بورد حفظ می‌کنه و حرکت می‌کنه. خلاصه حسابی سر و صدا کرده و قول داده که به زودی مقاله، کدها و تمام وزن‌های هوش مصنوعیش رو هم رایگان منتشر کنه تا بقیه هم بتونن از روش بسازن.\n\nچرا مهمه؟ اهمیتش اینه که نشون می‌ده روبات‌ها بدون دیدن محیط و فقط با اتکا به حس تعادل بدنی می‌تونن حرکات فوق‌العاده پیچیده ورزشی رو انجام بدن.",
+  "date": "2026-08-15T23:52:37+00:00"
+ },
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/aditya_bhatt/status/2088555528385400837",
+   "domain": "x.com",
+   "author": {
+    "name": "Aditya Bhatt 🤖🛹 ✈️ CoRL",
+    "handle": "aditya_bhatt",
+    "avatar": "https://pbs.twimg.com/profile_images/1768387119695712258/ueW6NUkj_200x200.jpg"
+   },
+   "text": "A first glimpse of the wildest robotics project of my PhD.\n\n🛹 The Blind Skateboarder 🛹\n\nNo vision. No markers.\n\nPaper, code, weights — coming soon. And we have more. 😉",
+   "date": 1786785416,
+   "media": [
+    {
+     "type": "video",
+     "src": "https://video.twimg.com/amplify_video/2088390532988891136/vid/avc1/1280x720/uhtSMyF8Av1bhN2W.mp4?tag=29",
+     "poster": "https://pbs.twimg.com/media/HPt06WoXQAA6JAZ.jpg",
+     "ratio": 0.5625,
+     "duration": 51.216,
+     "gif": false
+    }
+   ],
+   "links": []
+  }
+ ],
+ "article": {
+  "title": "و داداش گلم، ببین این آقا آدیتیا بات تو دوره دکتراش یه ربات خفن ساخته که هوش از سر آدم می‌پرونه؛ اسم پروژه‌ش رو گذاشته «اسکیت‌بوردسوار نابینا»",
+  "source_title": "A first glimpse of the wildest robotics project of my PhD.",
+  "body": [
+   "آبجی و داداش گلم، ببین این آقا آدیتیا بات تو دوره دکتراش یه ربات خفن ساخته که هوش از سر آدم می‌پرونه؛ اسم پروژه‌ش رو گذاشته «اسکیت‌بوردسوار نابینا». این شاهکار بدون هیچ دوربین، سنسور بینایی یا نشانگر کمکی، خیلی شیک تعادلش رو روی اسکیت‌بورد حفظ می‌کنه و حرکت می‌کنه. خلاصه حسابی سر و صدا کرده و قول داده که به زودی مقاله، کدها و تمام وزن‌های هوش مصنوعیش رو هم رایگان منتشر کنه تا بقیه هم بتونن از روش بسازن."
+  ],
+  "why": "اهمیتش اینه که نشون می‌ده روبات‌ها بدون دیدن محیط و فقط با اتکا به حس تعادل بدنی می‌تونن حرکات فوق‌العاده پیچیده ورزشی رو انجام بدن.",
+  "tags": [
+   "رباتیک"
+  ]
+ },
+ "updated": "2026-10-25T12:30:14+00:00",
+ "gholam_checked": "2026-10-25T12:30:14+00:00"
+}

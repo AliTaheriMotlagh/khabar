@@ -1,0 +1,82 @@
+{
+ "id": 4578,
+ "url": "https://t.me/dlmehr/4578",
+ "date": "2026-08-04T20:22:27+00:00",
+ "text": "https://fxtwitter.com/spacex/status/2084723854534951218?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+ "forwarded_from": null,
+ "digest": false,
+ "hash": "f4e719dd5e02",
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/spacex/status/2084723854534951218?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+  "site": "FxTwitter - Media 3 / 3",
+  "title": "SpaceX (@SpaceX)",
+  "description": "SpaceX is partnering with @Nvidia to design the Starmind AI1 satellite compute payload.\nEach of the Starmind satellites will include NVIDIA Rubin GPUs and Vera CPUs for datacenter class space compute → http://spacex.com/spacexai/starmind",
+  "image": null
+ },
+ "gholam": {
+  "text": "ببین رفیق، اسپیس‌ایکس با انویدیا دست‌به‌یکی کرده تا رو ماهواره‌های جدیدش تراشه‌های خفن روبین و ورا بذاره و رسماً فضا رو بکنه مرکز پردازش هوش مصنوعی.",
+  "date": "2026-08-04T20:22:39+00:00"
+ },
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/SpaceX/status/2084723854534951218",
+   "domain": "x.com",
+   "author": {
+    "name": "SpaceX",
+    "handle": "SpaceX",
+    "avatar": "https://pbs.twimg.com/profile_images/1697749409851985920/HbrI04tM_200x200.jpg"
+   },
+   "text": "SpaceX is partnering with @Nvidia to design the Starmind AI1 satellite compute payload. \n\nEach of the Starmind satellites will include NVIDIA Rubin GPUs and Vera CPUs for datacenter class space compute → http://spacex.com/spacexai/starmind",
+   "date": 1785871873,
+   "media": [
+    {
+     "type": "image",
+     "src": "https://pbs.twimg.com/media/HO5q0AEWsAAas_v.jpg?name=orig",
+     "ratio": 0.5625
+    },
+    {
+     "type": "image",
+     "src": "https://pbs.twimg.com/media/HO5q2pWXcAAPu4v.jpg?name=orig",
+     "ratio": 0.5625
+    },
+    {
+     "type": "video",
+     "src": "https://video.twimg.com/amplify_video/2084721190325604353/vid/avc1/1280x720/avkMxqsODVFs_If7.mp4?tag=29",
+     "poster": "https://pbs.twimg.com/amplify_video_thumb/2084721190325604353/img/BBAKPNe2yi0VVmEI.jpg",
+     "ratio": 0.5625,
+     "duration": 47.3,
+     "gif": false
+    }
+   ],
+   "links": [
+    "http://spacex.com/spacexai/starmind"
+   ]
+  },
+  {
+   "kind": "link",
+   "url": "https://www.spacex.com/spacexai/starmind",
+   "domain": "spacex.com",
+   "title": "SpaceX",
+   "description": "SpaceX designs, manufactures and launches advanced rockets and spacecraft.",
+   "image": "https://www.spacex.com/assets/images/share.jpg",
+   "site": "SpaceX"
+  }
+ ],
+ "article": {
+  "title": "اسپیس‌ایکس با انویدیا دست‌به‌یکی کرده تا رو ماهواره‌های جدیدش تراشه‌های خفن روبین و ورا بذاره و رسماً فضا رو بکنه مرکز پردازش هوش مصنوعی",
+  "source_title": "SpaceX is partnering with @Nvidia to design the Starmind AI1 satellite compute payload.",
+  "body": [
+   "ببین رفیق، اسپیس‌ایکس با انویدیا دست‌به‌یکی کرده تا رو ماهواره‌های جدیدش تراشه‌های خفن روبین و ورا بذاره و رسماً فضا رو بکنه مرکز پردازش هوش مصنوعی."
+  ],
+  "why": null,
+  "tags": [
+   "ایلان ماسک",
+   "انویدیا",
+   "فضا"
+  ]
+ },
+ "updated": "2026-10-25T12:31:00+00:00",
+ "gholam_checked": "2026-10-25T12:31:00+00:00"
+}

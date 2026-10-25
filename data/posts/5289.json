@@ -1,0 +1,73 @@
+{
+ "id": 5289,
+ "url": "https://t.me/dlmehr/5289",
+ "date": "2026-09-14T15:51:20+00:00",
+ "text": "https://fxtwitter.com/sakanaailabs/status/2099468208231399687?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+ "forwarded_from": null,
+ "digest": false,
+ "hash": "049bc10fc50b",
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/sakanaailabs/status/2099468208231399687?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+  "site": "FxTwitter",
+  "title": "Sakana AI (@SakanaAILabs)",
+  "description": "Introducing PC-ALM, a local-learning alternative to backpropagation.\nOur method trains 1000-layer neural nets using only local dynamics, and without backprop.\nBlog: https://pub.sakana.ai/pc-alm/\nStandard deep learning relies on backpropagation. The brain…",
+  "image": null
+ },
+ "gholam": {
+  "text": "ببین رفیق، بچه‌های شرکت هوش مصنوعی Sakana AI دست به یه حرکت اساسی زدن و متدی به اسم PC-ALM رو رو کردن که قراره جایگزین روش سنتی بک‌پراپ (پس‌انتشار خطا) بشه. مغز انسان هیچ‌وقت مثل هوش مصنوعی‌های امروزی برای یادگیری کل شبکه رو عقب و جلو نمی‌کنه، بلکه هر نورون با داده‌های محلی خودش کار رو درمیاره؛ حالا این تیم با الهام از رفتار نورون‌ها و ایده‌های قدیمی یان لکان، تونستن یه شبکه عصبی با عمق دیوانه‌وار ۱۰۰۰ لایه رو بدون بک‌پراپ و فقط با دینامیک‌های محلی هر لایه آموزش بدن. این روش مشکل افت سیگنال تو لایه‌های خیلی عمیق رو کاملاً حل کرده و هر لایه رو مثل یک سیستم کنترلی هوشمند به کار میندازه.\n\nاهمیتش اینه که این فرمول تازه نه‌تنها پرده از راز یادگیری مغز انسان برمی‌داره، بلکه راه رو برای تراشه‌های نورومورفیک فوق‌العاده کم‌مصرف و نسل بعدی هوش مصنوعی باز می‌کنه.",
+  "date": "2026-09-14T15:51:34+00:00"
+ },
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/SakanaAILabs/status/2099468208231399687",
+   "domain": "x.com",
+   "author": {
+    "name": "Sakana AI",
+    "handle": "SakanaAILabs",
+    "avatar": "https://pbs.twimg.com/profile_images/1885939209388929024/dtnrOdGp_200x200.jpg"
+   },
+   "text": "Introducing PC-ALM, a local-learning alternative to backpropagation.\n\nOur method trains 1000-layer neural nets using only local dynamics, and without backprop.\n\nBlog: https://pub.sakana.ai/pc-alm/\n\nStandard deep learning relies on backpropagation. The brain, however, cannot implement backpropagation, at least not exactly. How can a physical system, such as the brain, solve multilayer credit assignment without explicit use of backprop?\n\nWe look for inspiration in two related fields: distributed optimization and NeuroAI.\n\nIn NeuroAI, predictive coding asks each neuron activation to solve an energy-based inference problem instead of using a standard forward pass. That inference step can be implemented as energy-minimization dynamics on local prediction errors.\n\nThis perspective -- each layer as a dynamical system -- has proven promising, but performance of predictive coding hasn't scaled well with depth. Credit signals at far ends of the network struggle to diffuse into internal layers.\n\nWe turn to distributed optimization, generalizing predictive coding to use an augmented Lagrangian instead of energy. This motivation stems back to a classic 1988 paper by LeCun, showing that the Lagrange multipliers of a deep network can be identified with gradients of a supervised loss. The augmented Lagrangian then bridges LeCun's perspective to the standard predictive coding that is used in NeuroAI.\n\nWe find that this new perspective yields a natural PC-like alternative to backpropagation, resulting in a method we call PC-ALM. PC-ALM differs from PC in that it introduces dual neurons (Lagrange multipliers) as part of the layer-local dynamics, resulting in each layer acting as a PI feedback control system to minimize local prediction errors.\n\nWe find that PC-ALM is capable of propagating signals to seemingly arbitrary depth, especially in deep narrow networks where standard PC struggles to learn.\n\nUltimately, our motivation here is to understand how distributed physical systems, such as the brain, can compute credit signals using only local coupling and local dynamics.\n\nPC-ALM may also inform deep learning in neuromorphic hardware, where dynamics are cheaper than on GPUs.\n\nPaper: https://arxiv.org/abs/2605.31022\nCode: https://github.com/SakanaAI/pc-alm",
+   "date": 1789387201,
+   "media": [
+    {
+     "type": "video",
+     "src": "https://video.twimg.com/amplify_video/2099175219919233025/vid/avc1/960x720/9xXsYyjpgdzonYIO.mp4?tag=29",
+     "poster": "https://pbs.twimg.com/amplify_video_thumb/2099175219919233025/img/7DHVCU5gLZwh69ph.jpg",
+     "ratio": 0.75,
+     "duration": 45,
+     "gif": false
+    }
+   ],
+   "links": [
+    "https://pub.sakana.ai/pc-alm/",
+    "https://arxiv.org/abs/2605.31022",
+    "https://github.com/SakanaAI/pc-alm"
+   ]
+  },
+  {
+   "kind": "link",
+   "url": "https://pub.sakana.ai/pc-alm/",
+   "domain": "pub.sakana.ai",
+   "title": "Augmented Lagrangian Predictive Coding: training 1000-layer networks without backpropagation",
+   "description": "A local alternative to backpropagation. PC-ALM trains residual MLPs up to 1000 layers, nearly matching backprop's performance despite using only layer-local dynamics. PC-ALM equips each layer with a feedback control dynamical system that distributes and propagates supervision credit throughout a network.",
+   "image": null,
+   "site": "Sakana AI"
+  }
+ ],
+ "article": {
+  "title": "بچه‌های شرکت هوش مصنوعی Sakana AI دست به یه حرکت اساسی زدن و متدی به اسم PC-ALM رو رو کردن که قراره جایگزین روش سنتی بک‌پراپ (پس‌انتشار خطا) بشه",
+  "source_title": "Introducing PC-ALM, a local-learning alternative to backpropagation.",
+  "body": [
+   "ببین رفیق، بچه‌های شرکت هوش مصنوعی Sakana AI دست به یه حرکت اساسی زدن و متدی به اسم PC-ALM رو رو کردن که قراره جایگزین روش سنتی بک‌پراپ (پس‌انتشار خطا) بشه. مغز انسان هیچ‌وقت مثل هوش مصنوعی‌های امروزی برای یادگیری کل شبکه رو عقب و جلو نمی‌کنه، بلکه هر نورون با داده‌های محلی خودش کار رو درمیاره؛ حالا این تیم با الهام از رفتار نورون‌ها و ایده‌های قدیمی یان لکان، تونستن یه شبکه عصبی با عمق دیوانه‌وار ۱۰۰۰ لایه رو بدون بک‌پراپ و فقط با دینامیک‌های محلی هر لایه آموزش بدن. این روش مشکل افت سیگنال تو لایه‌های خیلی عمیق رو کاملاً حل کرده و هر لایه رو مثل یک سیستم کنترلی هوشمند به کار میندازه."
+  ],
+  "why": "این فرمول تازه نه‌تنها پرده از راز یادگیری مغز انسان برمی‌داره، بلکه راه رو برای تراشه‌های نورومورفیک فوق‌العاده کم‌مصرف و نسل بعدی هوش مصنوعی باز می‌کنه.",
+  "tags": [
+   "کدنویسی",
+   "تراشه"
+  ]
+ },
+ "updated": "2026-10-25T12:27:01+00:00",
+ "gholam_checked": "2026-10-25T12:27:01+00:00"
+}

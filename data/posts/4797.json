@@ -1,0 +1,59 @@
+{
+ "id": 4797,
+ "url": "https://t.me/dlmehr/4797",
+ "date": "2026-08-18T16:11:02+00:00",
+ "text": "https://fxtwitter.com/reczko_konrad/status/2089670934009413751?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+ "forwarded_from": null,
+ "digest": false,
+ "hash": "d79d34a2fc5d",
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/reczko_konrad/status/2089670934009413751?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+  "site": "🧵 Thread • FxTwitter",
+  "title": "Konrad Reczko (@reczko_konrad)",
+  "description": "Depth-aware light injection in TypeGPU\nI got a 448x448 monocular depth model down to ~8 ms on my M4 Pro across ~250 dispatches, which is fast enough to use in realtime :D\nSince the inference is written directly in TypeGPU, I can just feed the depth buffer…",
+  "image": null
+ },
+ "gholam": {
+  "text": "ببین رفیق، یه بنده خدایی به اسم کنراد رچکو نشسته با فریم‌ورک TypeGPU یه کار خفن زده و مدل تخمین عمق تصویر با ابعاد ۴۴۸ در ۴۴۸ رو آورده روی زمان خیره‌کننده حدود ۸ میلی‌ثانیه روی چیپ M4 Pro. این سرعت نور یعنی می‌شه قشنگ به‌صورت بلادرنگ و ریل‌تایم ازش توی گرافیک استفاده کرد. قشنگی ماجرا اینجاست که چون صفر تا صد کار مستقیم توی خود TypeGPU نوشته شده، بافر عمق بدون اینکه حتی یه لحظه از GPU خارج بشه یا گیر سینک کردن بیفته، مستقیم می‌ره تو مرحله نورپردازی. تهش هم اجرای مدل هوش مصنوعی، نورپردازی و رندر نهایی همگی تو یه مسیر مشترک پردازش می‌شن و هیچ اتلاف وقتی در کار نیست.\n\nاهمیتش اینه که ترکیب هوش مصنوعی با رندر گرافیکی مستقیم روی خود کارت گرافیک، راه رو برای جلوه‌های بصری و نورپردازی‌های فوق‌العاده سریع و واقع‌گرایانه توی وب و برنامه‌ها باز می‌کنه.",
+  "date": "2026-08-18T16:11:12+00:00"
+ },
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/reczko_konrad/status/2089670934009413751",
+   "domain": "x.com",
+   "author": {
+    "name": "Konrad Reczko",
+    "handle": "reczko_konrad",
+    "avatar": "https://pbs.twimg.com/profile_images/2084641376411525120/CwaVj_Ep_200x200.jpg"
+   },
+   "text": "Depth-aware light injection in TypeGPU\n\nI got a 448x448 monocular depth model down to ~8 ms on my M4 Pro across ~250 dispatches, which is fast enough to use in realtime :D\nSince the inference is written directly in TypeGPU, I can just feed the depth buffer straight into the lighting pass. It never has to leave the GPU or go through any extra synchronization/interop step\n\nInference, lighting and draw all go through the same command encoder.",
+   "date": 1787051349,
+   "media": [
+    {
+     "type": "video",
+     "src": "https://video.twimg.com/amplify_video/2089664214595932160/vid/avc1/720x722/9x_Tc7BM-L_cQNVM.mp4?tag=29",
+     "poster": "https://pbs.twimg.com/amplify_video_thumb/2089664214595932160/img/yoQwL7vTVdvLaKw0.jpg",
+     "ratio": 1.0047,
+     "duration": 31.896,
+     "gif": false
+    }
+   ],
+   "links": []
+  }
+ ],
+ "article": {
+  "title": "یه بنده خدایی به اسم کنراد رچکو نشسته با فریم‌ورک TypeGPU یه کار خفن زده و مدل تخمین عمق تصویر با ابعاد ۴۴۸ در ۴۴۸ رو آورده روی زمان خیره‌کننده حدود ۸ میلی‌ثانیه روی چیپ M4 Pro",
+  "source_title": "Depth-aware light injection in TypeGPU",
+  "body": [
+   "ببین رفیق، یه بنده خدایی به اسم کنراد رچکو نشسته با فریم‌ورک TypeGPU یه کار خفن زده و مدل تخمین عمق تصویر با ابعاد ۴۴۸ در ۴۴۸ رو آورده روی زمان خیره‌کننده حدود ۸ میلی‌ثانیه روی چیپ M4 Pro. این سرعت نور یعنی می‌شه قشنگ به‌صورت بلادرنگ و ریل‌تایم ازش توی گرافیک استفاده کرد. قشنگی ماجرا اینجاست که چون صفر تا صد کار مستقیم توی خود TypeGPU نوشته شده، بافر عمق بدون اینکه حتی یه لحظه از GPU خارج بشه یا گیر سینک کردن بیفته، مستقیم می‌ره تو مرحله نورپردازی. تهش هم اجرای مدل هوش مصنوعی، نورپردازی و رندر نهایی همگی تو یه مسیر مشترک پردازش می‌شن و هیچ اتلاف وقتی در کار نیست."
+  ],
+  "why": "ترکیب هوش مصنوعی با رندر گرافیکی مستقیم روی خود کارت گرافیک، راه رو برای جلوه‌های بصری و نورپردازی‌های فوق‌العاده سریع و واقع‌گرایانه توی وب و برنامه‌ها باز می‌کنه.",
+  "tags": [
+   "تراشه"
+  ]
+ },
+ "updated": "2026-10-25T12:30:01+00:00",
+ "gholam_checked": "2026-10-25T12:30:01+00:00"
+}

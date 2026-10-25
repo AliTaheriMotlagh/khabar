@@ -2,16 +2,23 @@
  "id": 5976,
  "url": "https://t.me/dlmehr/5976",
  "date": "2026-10-19T19:06:18+00:00",
- "edited": true,
- "views": "181",
  "text": "https://fxtwitter.com/andrewcurran_/status/2112250754358788437?s=52&t=F41Qa04r48Mef_j_XjBneQ",
  "forwarded_from": null,
  "digest": false,
  "hash": "6952775982b3",
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/andrewcurran_/status/2112250754358788437?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+  "site": "🧵 Thread • FxTwitter",
+  "title": "Andrew Curran (@AndrewCurran_)",
+  "description": "The Department of Homeland Security is requiring all civilian federal agencies to remove DeepSeek products and 'any third-party services developed using DeepSeek implementations,' and to stop buying them.",
+  "image": "https://cdn4.telesco.pe/file/E3Cxnr4dtxsjTtx6ElcZjpXVBL0M3z6THZVbRje3I-IDHi96c8Ktqd40EdafK9bXMoUyGHKKLsZIk0rxwql25-rwX8Gl1WM95tD7NyH8ryccMPVJYfnDVyYesoaOdat97kJbRUmYuQbYCH280mLqWaZ8IA5lYoy2ThU-KnJERwouZbQD3kNkGywJImj3voiqGUT5KCYdF4vOy6V5dFiXSrXO0hIZGIFK7eKbO8xgFysdJcfwlzdIc18qXEqoX5f_wIBqQPlyrAaLw9BPcUo_dkXx85NxnYhPyDtXchC7rMNilRbRpRH9xGajF3Uu9y6cFLPxkiw0FVO35gNWfvB1rQ.jpg"
+ },
  "gholam": {
   "text": "ببین رفیق، وزارت امنیت میهن آمریکا رسماً شمشیر رو از رو بسته و به همه آژانس‌های فدرال غیرنظامی دستور داده که هرچی محصول از شرکت دیپ‌سیک دارن رو فوراً از دم تیغ بگذرونن و پاک کنن. قصه فقط به خود برنامه‌های این غول چینی ختم نمیشه، بلکه گفتن هر ابزار یا سرویس متفرقه‌ای هم که با دست‌فرمون و کدهای دیپ‌سیک بالا اومده باید کلاً غزل خداحافظی رو بخونه و خریدشون هم قدغن شده. عملاً دارن درهای سیستم‌های دولتی رو به روی این هوش مصنوعی پر سر و صدا تخته می‌کنن تا مبادا گزکی دست رقیب بیفته.\n\nاهمیتش اینه که جنگ هوش مصنوعی بین آمریکا و چین به اوج رسیده و یانکی‌ها دارن هر ردپایی از فناوری چینی رو از رگ و پی ساختار دولتی‌شون قیچی می‌کنن.",
   "date": "2026-10-19T19:06:34+00:00"
  },
+ "gholam_checked": "2026-10-24T23:11:42+00:00",
  "links": [
   {
    "kind": "tweet",
@@ -43,18 +50,6 @@
    "links": []
   }
  ],
- "media": [],
- "preview": {
-  "url": "https://fxtwitter.com/andrewcurran_/status/2112250754358788437?s=52&t=F41Qa04r48Mef_j_XjBneQ",
-  "site": "🧵 Thread • FxTwitter",
-  "title": "Andrew Curran (@AndrewCurran_)",
-  "description": "The Department of Homeland Security is requiring all civilian federal agencies to remove DeepSeek products and 'any third-party services developed using DeepSeek implementations,' and to stop buying them.",
-  "image": {
-   "src": "media/5976/preview.webp",
-   "width": 759,
-   "height": 800
-  }
- },
  "article": {
   "title": "وزارت امنیت میهن آمریکا رسماً شمشیر رو از رو بسته و به همه آژانس‌های فدرال غیرنظامی دستور داده که هرچی محصول از شرکت دیپ‌سیک دارن رو فوراً از دم تیغ بگذرونن و پاک کنن",
   "source_title": "The Department of Homeland Security is requiring all civilian federal agencies to remove DeepSeek products and 'any third-party services…",
@@ -67,6 +62,5 @@
    "امنیت"
   ]
  },
- "updated": "2026-10-24T23:11:42+00:00",
- "gholam_checked": "2026-10-24T23:11:42+00:00"
+ "updated": "2026-10-25T11:54:08+00:00"
 }

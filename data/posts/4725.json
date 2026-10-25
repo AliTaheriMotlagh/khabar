@@ -1,0 +1,56 @@
+{
+ "id": 4725,
+ "url": "https://t.me/dlmehr/4725",
+ "date": "2026-08-13T02:43:41+00:00",
+ "text": "https://fxtwitter.com/andrewcurran_/status/2087730345173229657?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+ "forwarded_from": null,
+ "digest": false,
+ "hash": "f25c1e01ae3f",
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/andrewcurran_/status/2087730345173229657?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+  "site": "🧵 Thread • FxTwitter",
+  "title": "Andrew Curran (@AndrewCurran_)",
+  "description": "From the conclusion of Anthropic's report published tonight by their Frontier Red Team, 'Patterns and problems in emerging multiagent systems.' An extremely interesting, if somewhat unsettling, read. I'll quote the full conclusion the screenshot is taken…",
+  "image": "https://cdn4.telesco.pe/file/nM4OPETPqi_iBhTLq6uAuqy5LWvfKopihnvfQVoSKGGviTLB1ko6Su7EGSJhI7J3Yu7j_3068D1T7C3TXQOM6En8nxgqGacDKhirq-bYkTKjVWiImx1Gbk1PZnuyCDQqaXBEy8ZupPGyZ1kJcSQr_tF40BKlybZ6KI9WlzvYCOudrTrFi5Ejn70N5k8IpVJgYkEoZAeWl4HGagK0zZ4naM27z_EOExEm6BUAsrfVjhko8uxCK3S7hehgSjVLCNewoLiOVcqh_Z-zAO-oRRigcWxYVweyfp9Erjcm3tPi7z7PJOEXUYd4W_z9Fkap1Nvgh7bq4yBpZ-F1pOAiOx4vuw.jpg"
+ },
+ "gholam": {
+  "text": "آبجی، راستش تیم تحقیقاتی آنتروپیک تازگی‌ها یه گزارش خفن در مورد هوش‌های مصنوعی چندعاملی داده بیرون که بدجور فکر آدم رو درگیر می‌کنه. خلاصه حرفشون اینه که هوش‌های مصنوعی شاید تک‌تک خیلی باهوش باشن، اما وقتی گروهی کار می‌کنن اون هنجارها و مسئولیت‌پذیری اجتماعی آدما رو ندارن و خودجوش درست تعامل نمی‌کنن. تازه چون این سیستم‌ها می‌تونن تو یک ثانیه خودشون رو تکثیر کنن یا تغییر بدن، قواعد همکاری انسانی روشون جواب نمی‌ده و با باهوش‌تر شدنشون هم این مشکل خودبه‌خود حل نمی‌شه.\n\nاهمیتش اینه که اگه ضوابط تعامل این ایجنت‌ها رو همین اول کار خودمون درست نکنیم، فردا که تعداد ارتباطاتشون از آدما بیشتر شد، تو محیط واقعی کار دستمون می‌دن.",
+  "date": "2026-08-13T02:43:58+00:00"
+ },
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/AndrewCurran_/status/2087730345173229657",
+   "domain": "x.com",
+   "author": {
+    "name": "Andrew Curran",
+    "handle": "AndrewCurran_",
+    "avatar": "https://pbs.twimg.com/profile_images/1596945208058744833/_X3LT7fb_200x200.jpg"
+   },
+   "text": "From the conclusion of Anthropic's report published tonight by their Frontier Red Team, 'Patterns and problems in emerging multiagent systems.' An extremely interesting, if somewhat unsettling, read. I'll quote the full conclusion the screenshot is taken from, but if you're interested in multi-agent swarms, the whole thing is worth reading.\n\n'Every model we tested abstractly understands that information sources have their own incentives, and that consensus is not necessarily evidence. What is missing is a disposition to act on that knowledge without prompting.\n\nOur social systems are robust in ways that are easy to take for granted. Over many millennia, mechanisms like norms, reputation, costly signaling, and recourse have been refined to make human coordination go well. While language models have inherited the content of that history, they don't necessarily carry the disposition produced by it. They have a very different relationship to communication itself: for instance, human organizations might spend considerable time in meetings to align on a direction before implementing, and individuals become more specialized over time. But for agents, transmitting context is about as costly as acting on it, and an agent can be forked or repurposed at will. Thus, the assumptions that make coordination successful for us do not obviously hold.\n\nNothing above suggests that these failures are permanent—but nothing suggests they will fix themselves, either. Coordination doesn't naturally emerge from stronger intelligence nor alignment at the individual level. Thus, the work that must be done takes two forms: environments that exert the kinds of social pressure that evolution exerted on us, and social computing systems redesigned for actors that can self-replicate and self-improve. These are open problems in interaction and mechanism design, and our experiments here provide early evidence that new solutions are necessary.\n\nThe conditions that allow multiagent interaction to go well will be discovered one way or another: either deliberately and early, or—and by default—in production, after agents’ interactions far outnumber ours. We would prefer the former.'",
+   "date": 1786588677,
+   "media": [
+    {
+     "type": "image",
+     "src": "https://pbs.twimg.com/media/HPkbrvybcAAk2cU.jpg?name=orig",
+     "ratio": 0.7722
+    }
+   ],
+   "links": []
+  }
+ ],
+ "article": {
+  "title": "راستش تیم تحقیقاتی آنتروپیک تازگی‌ها یه گزارش خفن در مورد هوش‌های مصنوعی چندعاملی داده بیرون که بدجور فکر آدم رو درگیر می‌کنه",
+  "source_title": "From the conclusion of Anthropic's report published tonight by their Frontier Red Team, 'Patterns and problems in emerging multiagent…",
+  "body": [
+   "آبجی، راستش تیم تحقیقاتی آنتروپیک تازگی‌ها یه گزارش خفن در مورد هوش‌های مصنوعی چندعاملی داده بیرون که بدجور فکر آدم رو درگیر می‌کنه. خلاصه حرفشون اینه که هوش‌های مصنوعی شاید تک‌تک خیلی باهوش باشن، اما وقتی گروهی کار می‌کنن اون هنجارها و مسئولیت‌پذیری اجتماعی آدما رو ندارن و خودجوش درست تعامل نمی‌کنن. تازه چون این سیستم‌ها می‌تونن تو یک ثانیه خودشون رو تکثیر کنن یا تغییر بدن، قواعد همکاری انسانی روشون جواب نمی‌ده و با باهوش‌تر شدنشون هم این مشکل خودبه‌خود حل نمی‌شه."
+  ],
+  "why": "اگه ضوابط تعامل این ایجنت‌ها رو همین اول کار خودمون درست نکنیم، فردا که تعداد ارتباطاتشون از آدما بیشتر شد، تو محیط واقعی کار دستمون می‌دن.",
+  "tags": [
+   "آنتروپیک"
+  ]
+ },
+ "updated": "2026-10-25T12:30:23+00:00",
+ "gholam_checked": "2026-10-25T12:30:23+00:00"
+}

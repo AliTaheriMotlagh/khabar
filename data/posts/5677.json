@@ -1,0 +1,59 @@
+{
+ "id": 5677,
+ "url": "https://t.me/dlmehr/5677",
+ "date": "2026-10-06T16:20:28+00:00",
+ "text": "https://fxtwitter.com/sundarpichai/status/2107501975671890211?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+ "forwarded_from": null,
+ "digest": false,
+ "hash": "afe337961c1a",
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/sundarpichai/status/2107501975671890211?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+  "site": "FxTwitter",
+  "title": "Sundar Pichai (@sundarpichai)",
+  "description": "Introducing EmbeddingGemma 2, a new open multimodal model that sets the standard for on-device efficiency.\n- our first open, natively multimodal embedding model\n- handles text, code, image, video, and audio tasks within a lightweight, modular 740M parameter…",
+  "image": null
+ },
+ "gholam": {
+  "text": "رفیق، سوندار پیچای اومده و از مدل اوپن‌سورس جدید گوگل به اسم EmbeddingGemma 2 رونمایی کرده که خوراکِ اجرا روی خودِ دیوایس و بدون نیاز به اینترنته. این مدلِ تروتمیز با اینکه کلاً ۷۴۰ میلیون پارامتر داره و خیلی سبکه، ولی ذاتاً مالتی‌موداله و از پس متن، کد، تصویر، ویدیو و حتی صوت هم برمیاد. جالب اینجاست که خروجی‌اش از مدل‌های تخصصی با دو برابر اندازه هم جلو زده و اگر با جما ۴ ست بشه، جون میده واسه سیستم‌های RAG کاملاً آفلاین و امن. وزن‌هاشم همین الان روی هاگینگ‌فیس بارگذاری شده تا هر کی خواست سریع دست‌به‌کار بشه و روی پروژه‌هاش سوارش کنه.\n\nاهمیتش اینه که پردازش چندوجهی هوش مصنوعی رو مستقیم و آفلاین میاره رو دستگاه‌های دم‌دستیت، اونم بدون اینکه نگران لو رفتن داده‌ها و حریم خصوصی باشی.",
+  "date": "2026-10-06T16:20:44+00:00"
+ },
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/sundarpichai/status/2107501975671890211",
+   "domain": "x.com",
+   "author": {
+    "name": "Sundar Pichai",
+    "handle": "sundarpichai",
+    "avatar": "https://pbs.twimg.com/profile_images/2051799620062429184/AL8CoAUG_200x200.jpg"
+   },
+   "text": "Introducing EmbeddingGemma 2, a new open multimodal model that sets the standard for on-device efficiency.\n\n- our first open, natively multimodal embedding model\n- handles text, code, image, video, and audio tasks within a lightweight, modular 740M parameter form factor\n- ideal for offline, privacy-first RAG when paired with Gemma 4\n- outperforms some specialist models more than twice its size\n\nWeights available now on Hugging Face.",
+   "date": 1791302601,
+   "media": [
+    {
+     "type": "video",
+     "src": "https://video.twimg.com/amplify_video/2107500804932608000/vid/avc1/1280x720/Fh9yd1VtvKJ1jbxN.mp4?tag=29",
+     "poster": "https://pbs.twimg.com/amplify_video_thumb/2107500804932608000/img/GW5umpOiOWeeXJTk.jpg",
+     "ratio": 0.5625,
+     "duration": 53.72,
+     "gif": false
+    }
+   ],
+   "links": []
+  }
+ ],
+ "article": {
+  "title": "سوندار پیچای اومده و از مدل اوپن‌سورس جدید گوگل به اسم EmbeddingGemma 2 رونمایی کرده که خوراکِ اجرا روی خودِ دیوایس و بدون نیاز به اینترنته",
+  "source_title": "Introducing EmbeddingGemma 2, a new open multimodal model that sets the standard for on-device efficiency.",
+  "body": [
+   "رفیق، سوندار پیچای اومده و از مدل اوپن‌سورس جدید گوگل به اسم EmbeddingGemma 2 رونمایی کرده که خوراکِ اجرا روی خودِ دیوایس و بدون نیاز به اینترنته. این مدلِ تروتمیز با اینکه کلاً ۷۴۰ میلیون پارامتر داره و خیلی سبکه، ولی ذاتاً مالتی‌موداله و از پس متن، کد، تصویر، ویدیو و حتی صوت هم برمیاد. جالب اینجاست که خروجی‌اش از مدل‌های تخصصی با دو برابر اندازه هم جلو زده و اگر با جما ۴ ست بشه، جون میده واسه سیستم‌های RAG کاملاً آفلاین و امن. وزن‌هاشم همین الان روی هاگینگ‌فیس بارگذاری شده تا هر کی خواست سریع دست‌به‌کار بشه و روی پروژه‌هاش سوارش کنه."
+  ],
+  "why": "پردازش چندوجهی هوش مصنوعی رو مستقیم و آفلاین میاره رو دستگاه‌های دم‌دستیت، اونم بدون اینکه نگران لو رفتن داده‌ها و حریم خصوصی باشی.",
+  "tags": [
+   "گوگل"
+  ]
+ },
+ "updated": "2026-10-25T12:24:41+00:00",
+ "gholam_checked": "2026-10-25T12:24:41+00:00"
+}

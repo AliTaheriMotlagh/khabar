@@ -2,16 +2,23 @@
  "id": 6022,
  "url": "https://t.me/dlmehr/6022",
  "date": "2026-10-21T17:05:05+00:00",
- "edited": true,
- "views": "150",
  "text": "https://fxtwitter.com/bneyshabur/status/2112941025862008949?s=52&t=F41Qa04r48Mef_j_XjBneQ",
  "forwarded_from": null,
  "digest": false,
  "hash": "a278bf8dfc93",
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/bneyshabur/status/2112941025862008949?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+  "site": "🧵 Thread • FxTwitter",
+  "title": "Behnam Neyshabur (@bneyshabur)",
+  "description": "We formally announced Mirendil less than 4 months ago. Today, I'm excited to share an important milestone for:\nPretraining at scale without a pretraining team.\nMirendil's mission is to solve Recursive Self-Improvement (RSI) and use it to democratize frontier…",
+  "image": "https://cdn4.telesco.pe/file/Hhl4ZCTsRI3d6LMebrB0C_EBaEmgu48R2p1BxqPGWC8fc3DMX1Yx5lwS7dGm-VKNIGBkBZz38-hf05_zT3UdbhTY2sAFpfuT7D7dX7X1X5zUnTTY6jHPBJBhTsiS_Z-q4FQyIkI35fXyVR_v42a1EEPyyhqqeFccAiEfierpc3Q6s58jTn4BslVeDncPWb4grmJy1K5-iGLmVQea1lW6dZiQW3z84q8c6DmuvtpJ9MjktPTq0dgda0wM9a7BMxKn8MgzN7PF7Ovg_5IlRh8CXXQf_k9BHKZ0pn92Rh2JDvbZRYRJRow3tLeYSafeGGDrkc7pvfQQqTboHP3AvPRIIw.jpg"
+ },
  "gholam": {
   "text": "ببین رفیق، بهنام نیشابور از استارتاپ میرندیل یه خبر برگ‌ریزون داده که قشنگ نشون میده بازی هوش مصنوعی داره عوض میشه. قضیه از این قراره که این تیم تونسته مدل زبانی Mirendil-Base با ابعاد ۱۰۰ تا ۵۰۰ میلیارد پارامتر رو فقط با یه دونه پژوهشگر و ظرف سه ماه و نیم از صفرِ صفر آموزش بده. کل خرج پای سیستم‌های پردازشی هم زیر ۱۰ میلیون دلار دراومده، اونم در حالی که غول‌های فناوری برای چنین کاری یه ارتش متخصص استخدام می‌کنن و صدها میلیون دلار خرج برمی‌دارن. تازه ادعا کردن همین فرمول برای مدل‌های بعدی تا مرز ۱۰ تریلیون پارامتر هم جواب میده و نیاز به تیم عریض و طویل پیش‌آموزش نداره.\n\nاهمیتش اینه که انحصار ساخت مدل‌های غول‌پیکر رو از چنگ چندتا ابرشرکت درمیاره و ثابت می‌کنه از این به بعد حتی یه نابغه تک‌وتنها هم می‌تونه مرزهای علم رو جابه‌جا کنه.",
   "date": "2026-10-21T17:05:22+00:00"
  },
+ "gholam_checked": "2026-10-24T23:03:10+00:00",
  "links": [
   {
    "kind": "tweet",
@@ -43,18 +50,6 @@
    "links": []
   }
  ],
- "media": [],
- "preview": {
-  "url": "https://fxtwitter.com/bneyshabur/status/2112941025862008949?s=52&t=F41Qa04r48Mef_j_XjBneQ",
-  "site": "🧵 Thread • FxTwitter",
-  "title": "Behnam Neyshabur (@bneyshabur)",
-  "description": "We formally announced Mirendil less than 4 months ago. Today, I'm excited to share an important milestone for:\nPretraining at scale without a pretraining team.\nMirendil's mission is to solve Recursive Self-Improvement (RSI) and use it to democratize frontier…",
-  "image": {
-   "src": "media/6022/preview.webp",
-   "width": 800,
-   "height": 636
-  }
- },
  "article": {
   "title": "بهنام نیشابور از استارتاپ میرندیل یه خبر برگ‌ریزون داده که قشنگ نشون میده بازی هوش مصنوعی داره عوض میشه",
   "source_title": "We formally announced Mirendil less than 4 months ago. Today, I'm excited to share an important milestone for:",
@@ -66,6 +61,5 @@
    "استارتاپ"
   ]
  },
- "updated": "2026-10-24T23:03:10+00:00",
- "gholam_checked": "2026-10-24T23:03:10+00:00"
+ "updated": "2026-10-25T11:53:53+00:00"
 }

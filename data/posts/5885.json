@@ -1,0 +1,59 @@
+{
+ "id": 5885,
+ "url": "https://t.me/dlmehr/5885",
+ "date": "2026-10-14T18:18:19+00:00",
+ "text": "https://x.com/claudedevs/status/2110421732029063352?s=46",
+ "forwarded_from": "M",
+ "digest": false,
+ "hash": "615692eedcc7",
+ "media": [],
+ "preview": {
+  "url": "https://x.com/claudedevs/status/2110421732029063352?s=46",
+  "site": "X (formerly Twitter)",
+  "title": "ClaudeDevs (@ClaudeDevs) on X",
+  "description": "Now in public beta, Claude Platform can send OpenTelemetry traces from the Messages API, Claude Managed Agents, and the Claude SDKs to your observability stack.",
+  "image": "https://cdn4.telesco.pe/file/NpR_2scM0vKh57ZGozRSvXWGR7eF_WZ3iLO3XYSEGuCegU-bgyauDPsGs_n7hUsjHQRBLxWfZuSXBwLN4vUCYfoCv17--wUMNJHMtg5J0bn5t3tNsEWTSveMcJr-q53Hy3YSE6z1-B0z0II9eWD302h0-NyDqQNKMEE35GKbTjoozPq73uzR_P9rZ4x8Kkax-U2asbvO9xjPwk1t7MGWD5s_Ew5HSPj895xtojlhLmZJfGlQZQvmAgp7LcrwoN6sezdpho3Db4aiz8MNvxQXVstqPtDVNzKuvsPah8ePSzkFmska9_s0JGWu6MjFIyHkiD9eUNvQWUZBAHXPr-_AOQ.jpg"
+ },
+ "gholam": {
+  "text": "رفیق، بچه‌های آنتروپیک واسه پلتفرم کلود یه حرکت فنی و کاردرست زدن و قابلیت جدیدشون رو به صورت بتای عمومی دادن دست کاربرا. قضیه از این قراره که از حالا به بعد می‌تونی تریس‌های استاندارد اوپن‌تلمتری (OpenTelemetry) رو مستقیم از Messages API، ایجنت‌های مدیریت‌شده و کل اس‌دی‌کی‌های کلود بفرستی روی ابزارهای مانیتورینگ و observability خودت. این یعنی دیگه لازم نیست برای ردیابی رفتار مدل و دیدن عملکردش کلی کد اضافه بزنی و لقمه رو دور سرت بچرخونی. با این امکان تازه، همه‌چیز از سرعت پاسخ‌دهی گرفته تا خطاها زیر ذره‌بین تیم‌های فنی قرار می‌گیره تا برنامه‌هاشون بی‌نقص کار کنه.\n\nچرا مهمه؟ چون پایش، دیباگ کردن و مانیتورینگ پروژه‌های هوش مصنوعی رو وارد استانداردهای روز دنیا می‌کنه و اجازه میده بدون دردسر رفتار کلود رو تو سیستم‌های نظارتی خودت رصد کنی.",
+  "date": "2026-10-14T18:18:35+00:00"
+ },
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/ClaudeDevs/status/2110421732029063352",
+   "domain": "x.com",
+   "author": {
+    "name": "ClaudeDevs",
+    "handle": "ClaudeDevs",
+    "avatar": "https://pbs.twimg.com/profile_images/2044472418815893504/xf14RxM8_200x200.png"
+   },
+   "text": "Now in public beta, Claude Platform can send OpenTelemetry traces from the Messages API, Claude Managed Agents, and the Claude SDKs to your observability stack.",
+   "date": 1791998725,
+   "media": [
+    {
+     "type": "video",
+     "src": "https://video.twimg.com/amplify_video/2110416330834780162/vid/avc1/1280x720/xbSXN2z2IeSJErFn.mp4?tag=29",
+     "poster": "https://pbs.twimg.com/amplify_video_thumb/2110416330834780162/img/v_T1EX-N4DpwgQv-.jpg",
+     "ratio": 0.5625,
+     "duration": 197.994,
+     "gif": false
+    }
+   ],
+   "links": []
+  }
+ ],
+ "article": {
+  "title": "بچه‌های آنتروپیک واسه پلتفرم کلود یه حرکت فنی و کاردرست زدن و قابلیت جدیدشون رو به صورت بتای عمومی دادن دست کاربرا",
+  "source_title": "Now in public beta, Claude Platform can send OpenTelemetry traces from the Messages API, Claude Managed Agents, and the Claude SDKs to your…",
+  "body": [
+   "رفیق، بچه‌های آنتروپیک واسه پلتفرم کلود یه حرکت فنی و کاردرست زدن و قابلیت جدیدشون رو به صورت بتای عمومی دادن دست کاربرا. قضیه از این قراره که از حالا به بعد می‌تونی تریس‌های استاندارد اوپن‌تلمتری (OpenTelemetry) رو مستقیم از Messages API، ایجنت‌های مدیریت‌شده و کل اس‌دی‌کی‌های کلود بفرستی روی ابزارهای مانیتورینگ و observability خودت. این یعنی دیگه لازم نیست برای ردیابی رفتار مدل و دیدن عملکردش کلی کد اضافه بزنی و لقمه رو دور سرت بچرخونی. با این امکان تازه، همه‌چیز از سرعت پاسخ‌دهی گرفته تا خطاها زیر ذره‌بین تیم‌های فنی قرار می‌گیره تا برنامه‌هاشون بی‌نقص کار کنه."
+  ],
+  "why": "چون پایش، دیباگ کردن و مانیتورینگ پروژه‌های هوش مصنوعی رو وارد استانداردهای روز دنیا می‌کنه و اجازه میده بدون دردسر رفتار کلود رو تو سیستم‌های نظارتی خودت رصد کنی.",
+  "tags": [
+   "آنتروپیک"
+  ]
+ },
+ "updated": "2026-10-25T12:23:33+00:00",
+ "gholam_checked": "2026-10-25T12:23:33+00:00"
+}

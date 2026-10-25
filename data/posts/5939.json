@@ -2,16 +2,23 @@
  "id": 5939,
  "url": "https://t.me/dlmehr/5939",
  "date": "2026-10-16T22:03:03+00:00",
- "edited": false,
- "views": "244",
  "text": "https://www.anthropic.com/research/ecdsa-curve-origins",
  "forwarded_from": null,
  "digest": false,
  "hash": "b96b5e5fc530",
+ "media": [],
+ "preview": {
+  "url": "https://anthropic.com/research/ecdsa-curve-origins",
+  "site": "Anthropic",
+  "title": "Claude reveals ECDSA curve origins",
+  "description": "The decades-old mystery of the origins of one of the most popular cryptographic standards has been explained.",
+  "image": "https://cdn4.telesco.pe/file/FupLgB8Ec0zh84gld8B-ai-3un3r8vZxBo_Oku6LfswAu-S-gkH7OQXFbYbmI9tuc_E76rCgOpUAFZPNLRrsl_xJ7TGLgR8GBpr68bBuLp0nX-WJ-tUDiK-MmeaH3P3TMR60YIe1uGH1ieYPobKvyZQHc2Ez_o6b6iWeU83rtQ0tSqP7xfRR9285ZX8c4leWWbbFCGxfvSRAp3utI0O1w3SH9fE7euvh76TuBBvhm84ZQlligLZjc29SXACZ-WWwhT-wL7mZLqdIdYRHEtoSXVgEsTrX_H6uG7GMTmWjH2BbaXpk7uGqbBB9KY55OcGq003B7esLepddRtBAUsuAnA.jpg"
+ },
  "gholam": {
   "text": "ببین رفیق، بیش از ۲۵ سال بود که کل جامعه رمزنگاری تو کف بودن که پارامترها و مقادیر اولیه استاندارد معروف ECDSA (مثل همین منحنی‌های NIST که نصف امنیت ارتباطات اینترنت روشه) از کجا اومدن و همیشه این شک وجود داشت که نکنه آژانس امنیت ملی آمریکا (NSA) توش در پشتی تعبیه کرده باشه. حالا هوش مصنوعی Claude از شرکت آنتروپیک زیر نیم ساعت این معمای باستانی رو حل کرد و معلوم شد هیچ توطئه‌ای در کار نبوده؛ سازنده‌هاش تو سال‌های ۱۹۹۷ و ۱۹۹۸ خیلی ساده از یه تابع تصادفی‌ساز قدیمی کتابخونه زبان C به اسم lrand48 استفاده کرده بودن که خروجیش با همون ساعت و تاریخ سیستم (تایم‌استمپ یونیکس) سید شده بود! کلود حتی منشأ نقاط پایه بعضی از این منحنی‌ها رو هم با روش‌های ریاضی بیرون کشید و جایزه حدود ۳۷ هزار دلاری این چالش رو برد که قراره اهدا بشه به مؤسسه تحقیقات امنیت اینترنت. این کشف هیچ ضعفی توی امنیت سیستم‌ها ایجاد نمیکنه، بلکه نشون میده این منحنی‌ها برعکس تصورات بدون کلک و کاملاً رندوم ساخته شده بودن.\n\nاهمیتش اینه که بعد از ربع قرن بدگمانی و تئوری توطئه، بالاخره ثابت شد زیربنای رمزنگاری که روزانه میلیاردها نفر ازش استفاده میکنن دستکاری‌شده نبوده و خیال مهندسای امنیت راحت شد.",
   "date": "2026-10-16T22:03:26+00:00"
  },
+ "gholam_checked": "2026-10-24T23:11:47+00:00",
  "links": [
   {
    "kind": "link",
@@ -46,18 +53,6 @@
    "text": "Readers should take this as a fun closing chapter and the end of years of speculation. There is no action to be taken or things to do differently. Most researchers trusted the curves already. Enjoy.\nECDSA is the most widely used elliptic curve cryptography standard. It was adopted by NIST in 2000 as part of the FIPS 186-2 Digital Signature Standard which lists a set of standard elliptic curves of varying sizes and security levels. For curves over prime and binary fields, the specifications published a “seed” parameter whose hash value is used to define the coefficient b of the curve. The provenance of these seeds has been a long-standing question, as they were provided by the NSA with no explanation or justification. As an example, the NIST P-256 curve seed was SEED = C49D3608 86E70493 6A6678E1 139D26B7 819F7E90 with no information on where it came from.\nNeal Koblitz and Alfred Menezes wrote an excellent summary on this controversy, “A Riddle Wrapped in an Enigma”, which discusses the history and concerns around the seed values. This mystery led to an amateur investigation into the origin of the seeds and a bounty for anyone who could find them.\nThe best story was that Jerry Solinas, longtime NSA employee, generated the seeds using a hash of a humorous passphrase:\n“I believe there was a counter rather than multiple hashing, but I don’t know details. The message was along the lines of ‘Give Bob and Jerry a raise’ or ‘Bob and Jerry rule’ or something like that. It was Bob Reiter who actually wrote the code, and he doesn’t remember the details either. Nor were we able to find archives from so long ago. If they exist, they are no doubt sitting on a hard drive near the Ark of the Covenant.”\nJerry Solinas, 2015\nUnfortunately, Jerry died in 2023 and other colleagues at the time were not responsive, leaving open the question of how these seeds were originally derived.\nClaude found the seeds\nSeveral Anthropic employees had unsuccessfully chased the seeds following the tip about it being a hash of a humorous phrase. That turned out to be wrong. In October 2026, a curious Anthropic employee asked an internal research model if it could figure out how those seeds were generated without pointing at the clue.\nIn under half an hour, Claude discovered the origins of the NIST P-192, P-224, P-256, P-384, and P-521 seeds. None of them were the results of any hash algorithm at all, but rather the output of the C library’s lrand48 random-number generator, seeded with a Unix timestamp!\nThe algorithm used would sample bytes from the random number generator (RNG) initialized by a Unix timestamp (t) for some number of iterations (n). Each iteration would draw 20 bytes as a candidate seed. So, the first 20 bytes are candidate 1, the next 20 bytes are candidate 2, and so on. For example, P-256 required 1,842 iterations to output the standardized seed.\nWhat this means\nThis is not a cryptographic break, new attack, or weakness in the ECDSA curves. In fact, this makes us more confident the curves were chosen without any backdoors or intentional weaknesses. For many years, people have been suspicious of the origins of the NIST curve parameters. They were presented to NIST without any mention of how they were chosen, leaving people wondering if they may have been chosen to have deliberate backdoors in them. These findings make that much less plausible. The seeds were generated in a very simple way: a common pseudorandom number generator initialized from the clock, which anyone can now reproduce. That leaves much less room for subversion and that we can be confident the parameters are secure.\nHow it was found\nSearches for the phrase, built from the rumors, had come up empty. Claude tried a different angle: anticipating how the software that generated the curves must have worked. Claude guessed the software used a pseudorandom number generator (PRNG) that shipped with 1990s C libraries. These old PRNGs are weak enough that their output can be recognized. Recognizing that output would reveal which PRNG was used and possibly allow recovery of its initialization state.\nClaude wrote a scanner that slid along each published seed one bit at a time and tested whether adjacent chunks were consecutive outputs of a 1990s-vintage generator. The scan covered 34 combinations of generator and output slices. At that point, Claude noticed a pattern in the top bits for some seeds: they were all zero. Written as five 32-bit words, four of the ten seeds have a 0 in the top bit for all 20 words. That would happen by chance with probability 1/5,810. That was a signature of the linear congruential generator lrand48, which only returns the top 31 bits of a 48-bit state. The pattern is visible by eye once you know to look for it. To recover the state, Claude took the first word, tried all 2¹⁷ values of the 17 hidden bits, and checked that the next four words followed. That worked for all four seeds under discussion.\nThe prime-curve seeds came from the same lrand48 "
   }
  ],
- "media": [],
- "preview": {
-  "url": "https://anthropic.com/research/ecdsa-curve-origins",
-  "site": "Anthropic",
-  "title": "Claude reveals ECDSA curve origins",
-  "description": "The decades-old mystery of the origins of one of the most popular cryptographic standards has been explained.",
-  "image": {
-   "src": "media/5939/preview.webp",
-   "width": 800,
-   "height": 420
-  }
- },
  "article": {
   "title": "بیش از ۲۵ سال بود که کل جامعه رمزنگاری تو کف بودن که پارامترها و مقادیر اولیه استاندارد معروف ECDSA (مثل همین منحنی‌های NIST که نصف امنیت ارتباطات اینترنت روشه) از کجا اومدن و همیشه این شک وجود داشت که نکنه آژانس امنیت ملی آمریکا (NSA) توش در پشتی تعبیه کرده باشه",
   "source_title": "Claude reveals ECDSA curve origins",
@@ -70,6 +65,5 @@
    "امنیت"
   ]
  },
- "updated": "2026-10-24T23:11:47+00:00",
- "gholam_checked": "2026-10-24T23:11:47+00:00"
+ "updated": "2026-10-25T11:54:10+00:00"
 }

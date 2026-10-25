@@ -1,0 +1,52 @@
+{
+ "id": 5372,
+ "url": "https://t.me/dlmehr/5372",
+ "date": "2026-09-18T18:47:14+00:00",
+ "text": "https://thinkingmachines.ai/news/training-llms-to-predict-world-events/",
+ "forwarded_from": "Hossein Zakariaee",
+ "digest": false,
+ "hash": "eed835d746b7",
+ "media": [],
+ "preview": {
+  "url": "https://thinkingmachines.ai/news/training-llms-to-predict-world-events",
+  "site": "Thinking Machines Lab",
+  "title": "Training LLMs to Predict World Events (Guest Post with Mantic)",
+  "description": "Connectionism: Research Blog by Thinking Machines Lab",
+  "image": "https://cdn4.telesco.pe/file/v_xkW_4ShmgUWBwz22Q4fO_cRSK3ckTai5vx0E3TdV43qvsQtgSnmIIjwfohwnGiZu76k0XvFNgLybT4WMKOfUB166BIRYi7oQNQbQEfMCWuvBQFc5lSFBuxp5QyaIIm04E3kC0nw8ng5pQ7zXjrYMnyzeZdLaYNUUpYyT6apUo4M07vt7vVJqi_el5bxTrJhYmHtNq_bwHzdr5uJCedf0q8jBJiDVGIOFiCllLHCCRcBT-xsozu_HJFYOqfJw7XU6HogQyktqJM0hxwpFvhcL2RW4TXW1pFMKXz8VVPE6rLWj5bDNPj53npC2l-uKxW-CW_7QiV5pc8fcYl7rU2Vg.jpg"
+ },
+ "gholam": {
+  "text": "رفیق، راستش رو بخوای بچه‌های تیم «منتیک» و آزمایشگاه تینکینگ ماشینز زدن تو خط پیش‌بینی آینده و وقایع ژئوپلتیک دنیا با هوش مصنوعی. قضیه اینه که به جای تکیه صرف به غول‌های بسته‌ای مثل جمنای یا جی‌پی‌تی، اومدن یه مدل به اسم gpt-oss-120b رو با روش یادگیری تقویتی و حدود ۱۰ هزار تا سؤال واقعیِ روز دنیا حسابی چکش‌کاری کردن. نتیجه کار هم فوق‌العاده مشتی از آب دراومد؛ امتیازش توی بنچمارک معتبر متاکولوس از ۳۸.۶ پرید روی ۴۵.۸ و قشنگ پا‌به‌پای خفن‌ترین مدل‌های دنیا ایستاد. جالب‌تر اینکه موقع ترکیب مدل‌ها برای پیش‌بینی دقیق‌تر، این مدل دست‌پرورده در کنار گروک ۴ به خاطر زاویه دید متفاوتش کم‌نظیرترین مهره کل تیم از آب دراومد.\n\nچرا مهمه؟ اهمیتش اینه که نشون میده بدون وابسته بودن به ابرمدل‌های بسته و گرون‌قیمت، میشه با آموزش تخصصی هوش مصنوعی ابزارهایی ساخت که توی تصمیم‌گیری‌های حساس سیاسی و اقتصادی دنیا با دقت بالا عصای دستمون بشن.",
+  "date": "2026-09-18T18:47:25+00:00"
+ },
+ "links": [
+  {
+   "kind": "link",
+   "url": "https://thinkingmachines.ai/news/training-llms-to-predict-world-events/",
+   "domain": "thinkingmachines.ai",
+   "title": "Training LLMs to Predict World Events (Guest Post with Mantic)",
+   "description": "Connectionism: Research Blog by Thinking Machines Lab",
+   "image": "https://thinkingmachines.ai/news/training-llms-to-predict-world-events/images/cover-social.png",
+   "site": "Thinking Machines Lab"
+  },
+  {
+   "kind": "link",
+   "url": "https://thinkingmachines.ai/news/training-llms-to-predict-world-events/",
+   "domain": "thinkingmachines.ai",
+   "title": "Training LLMs to Predict World Events (Guest Post with Mantic)",
+   "description": "Connectionism: Research Blog by Thinking Machines Lab",
+   "image": "https://thinkingmachines.ai/news/training-llms-to-predict-world-events/images/cover-social.png",
+   "site": "Thinking Machines Lab"
+  }
+ ],
+ "article": {
+  "title": "راستش رو بخوای بچه‌های تیم «منتیک» و آزمایشگاه تینکینگ ماشینز زدن تو خط پیش‌بینی آینده و وقایع ژئوپلتیک دنیا با هوش مصنوعی",
+  "source_title": "Training LLMs to Predict World Events (Guest Post with Mantic)",
+  "body": [
+   "رفیق، راستش رو بخوای بچه‌های تیم «منتیک» و آزمایشگاه تینکینگ ماشینز زدن تو خط پیش‌بینی آینده و وقایع ژئوپلتیک دنیا با هوش مصنوعی. قضیه اینه که به جای تکیه صرف به غول‌های بسته‌ای مثل جمنای یا جی‌پی‌تی، اومدن یه مدل به اسم gpt-oss-120b رو با روش یادگیری تقویتی و حدود ۱۰ هزار تا سؤال واقعیِ روز دنیا حسابی چکش‌کاری کردن. نتیجه کار هم فوق‌العاده مشتی از آب دراومد؛ امتیازش توی بنچمارک معتبر متاکولوس از ۳۸.۶ پرید روی ۴۵.۸ و قشنگ پا‌به‌پای خفن‌ترین مدل‌های دنیا ایستاد. جالب‌تر اینکه موقع ترکیب مدل‌ها برای پیش‌بینی دقیق‌تر، این مدل دست‌پرورده در کنار گروک ۴ به خاطر زاویه دید متفاوتش کم‌نظیرترین مهره کل تیم از آب دراومد."
+  ],
+  "why": "اهمیتش اینه که نشون میده بدون وابسته بودن به ابرمدل‌های بسته و گرون‌قیمت، میشه با آموزش تخصصی هوش مصنوعی ابزارهایی ساخت که توی تصمیم‌گیری‌های حساس سیاسی و اقتصادی دنیا با دقت بالا عصای دستمون بشن.",
+  "tags": []
+ },
+ "updated": "2026-10-25T12:26:27+00:00",
+ "gholam_checked": "2026-10-25T12:26:27+00:00"
+}

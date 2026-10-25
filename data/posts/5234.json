@@ -1,0 +1,51 @@
+{
+ "id": 5234,
+ "url": "https://t.me/dlmehr/5234",
+ "date": "2026-09-10T15:26:11+00:00",
+ "text": "https://fxtwitter.com/opendesignhq/status/2097620919778955617?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+ "forwarded_from": null,
+ "digest": false,
+ "hash": "c564c6810884",
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/opendesignhq/status/2097620919778955617?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+  "site": "🧵 Thread • FxTwitter",
+  "title": "OpenDesign (@OpenDesignHQ)",
+  "description": "We benchmarked DeepSeek V4.1 Flash by @deepseek_ai .\nIt reached 98% of GPT-6 Astra’s score at 1.4% of the cost on everyday design tasks based on user requests.\nEvery model except Astra scored lower AND cost more.\nAre open models overtaking closed ones?…",
+  "image": "https://cdn4.telesco.pe/file/T_skDghQypL-aqzhvn5WT0ChZLVw8vJVYfnhn8-RKrF6kkUGV8ZgBBnoOK1nwNnBtd4_KUSZOZpow69hF6Vxp6s30uXUPk4Zshs4TxbKvWTd8CRXdZBAK52Gjp6PsSh2bXnAeGiymdZQeA5LG7YNLYpHG7jwHS48j5SU9SjyR42Hy1qvwyRTtdoaW9WirTJX-2YuPYpw_QaF3hDT7uvJaaP_MQ7yZBptfmyWiZ4Zpd36mtJ-UBmt-a7-IYx2gYpk_9NtOYqWVMQPuGfxUYEHfIQ2GDo2BKhH9-LscPNUxh4eTwbg-b3IRJSbFSHg-SIYDbRyW6LRDaFVXokvgpdJhg.jpg"
+ },
+ "gholam": null,
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/OpenDesignHQ/status/2097620919778955617",
+   "domain": "x.com",
+   "author": {
+    "name": "OpenDesign",
+    "handle": "OpenDesignHQ",
+    "avatar": "https://pbs.twimg.com/profile_images/2091589158426836992/KTRyppBu_200x200.jpg"
+   },
+   "text": "We benchmarked DeepSeek V4.1 Flash by @deepseek_ai .\n\nIt reached 98% of GPT-6 Astra’s score at 1.4% of the cost on everyday design tasks based on user requests.\n\nEvery model except Astra scored lower AND cost more.\n\nAre open models overtaking closed ones?\nFull results below ↘️",
+   "date": 1788946773,
+   "media": [
+    {
+     "type": "image",
+     "src": "https://pbs.twimg.com/media/HRw-nXbbMAAksWU.jpg?name=orig",
+     "ratio": 0.5625
+    }
+   ],
+   "links": []
+  }
+ ],
+ "article": {
+  "title": "We benchmarked DeepSeek V4.1 Flash by @deepseek_ai .",
+  "source_title": null,
+  "body": [],
+  "why": null,
+  "tags": [
+   "چین"
+  ]
+ },
+ "updated": "2026-10-25T12:27:22+00:00",
+ "gholam_checked": "2026-10-25T12:27:22+00:00"
+}

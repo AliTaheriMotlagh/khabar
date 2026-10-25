@@ -1,0 +1,51 @@
+{
+ "id": 4763,
+ "url": "https://t.me/dlmehr/4763",
+ "date": "2026-08-16T03:48:40+00:00",
+ "text": "https://fxtwitter.com/jun_song/status/2088824318612668514?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+ "forwarded_from": null,
+ "digest": false,
+ "hash": "86510f85f7e0",
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/jun_song/status/2088824318612668514?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+  "site": "FxTwitter",
+  "title": "Jun Song (@jun_song)",
+  "description": "My honest takeaways after using Qwen3.8-27b on real world tasks for a few days:\nGrok-4.6 and Muse Spark-1.2 are definitely benchmaxxed.\n27b clearly outperforms both in practice.\nIt even beats Opus-5 on some tasks, especially now that Opus feels severely…",
+  "image": "https://cdn4.telesco.pe/file/fYOaQfgN3Iw6eeJP0K2w6vCyYgr0KUSgDe3ON_4F0xpUC8uLCPnn5lp0oSzv3s_xeMU8KsAUUdzqqnW2rKE-zfAfPDck3vC6a8qeFIe_Bym7vxe1zmpc269FqQgQsvBs8ZAoqzUZPyPKGKef5YDS-CMlfi3MPU8BzurdH1uGz52cMTR0KIp8WhFAAEa5P9fZm4v6E99iDNJq9VljVzvGNzw2Rp0nuERYL0fXrXWkfo0IK9SsY1bOs-TfhRWrNihk9Qlak-XVI_0V2QRjKxLtNcJUjcCiK63o_e6sWxYxavIvIvap7_g0TXKycEZRHHo2WF9Tf69SuoJpg3raiQw2cw.jpg"
+ },
+ "gholam": {
+  "text": "ببین رفیق، یه متخصصی به اسم جون سانگ چند روزی مدل Qwen3.8-27b رو توی کارای واقعی و عملیاتی تست کرده و نتیجه‌هاش حسابی سر و صدا به پا کرده. به گفته این بنده خدا، مدل‌هایی مثل Grok-4.6 و Muse Spark-1.2 فقط برای تست‌ها و بنچمارک‌ها باد شدن و توی عمل جلوی این مدل ۲۷ میلیاردی کم میارن. جالب‌تر اینه که می‌گه حتی تو یه سری تسک‌ها تونسته Opus-5 رو هم بزنه زمین، مخصوصاً الان که انگار دستکاریش کردن و ضعیف‌تر و خنگ‌تر از قبل شده.\n\nاهمیتش اینه که ثابت می‌کنه گول بنچمارک‌های اسمی رو نباید خورد و مدل‌های بهینه‌تر و جمع‌وجورتر دارن قشنگ جای غول‌های گرون‌قیمت بازار رو توی کار واقعی می‌گیرن.",
+  "date": "2026-08-16T03:48:50+00:00"
+ },
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/jun_song/status/2088824318612668514",
+   "domain": "x.com",
+   "author": {
+    "name": "Jun Song",
+    "handle": "jun_song",
+    "avatar": "https://pbs.twimg.com/profile_images/2046816680731725825/DMIGj4BG_200x200.jpg"
+   },
+   "text": "My honest takeaways after using Qwen3.8-27b on real world tasks for a few days:\n\nGrok-4.6 and Muse Spark-1.2 are definitely benchmaxxed. \n27b clearly outperforms both in practice.\n\nIt even beats Opus-5 on some tasks, especially now that Opus feels severely nerfed and dumber.",
+   "date": 1786849500,
+   "media": [],
+   "links": []
+  }
+ ],
+ "article": {
+  "title": "یه متخصصی به اسم جون سانگ چند روزی مدل Qwen3.8-27b رو توی کارای واقعی و عملیاتی تست کرده و نتیجه‌هاش حسابی سر و صدا به پا کرده",
+  "source_title": "My honest takeaways after using Qwen3.8-27b on real world tasks for a few days:",
+  "body": [
+   "ببین رفیق، یه متخصصی به اسم جون سانگ چند روزی مدل Qwen3.8-27b رو توی کارای واقعی و عملیاتی تست کرده و نتیجه‌هاش حسابی سر و صدا به پا کرده. به گفته این بنده خدا، مدل‌هایی مثل Grok-4.6 و Muse Spark-1.2 فقط برای تست‌ها و بنچمارک‌ها باد شدن و توی عمل جلوی این مدل ۲۷ میلیاردی کم میارن. جالب‌تر اینه که می‌گه حتی تو یه سری تسک‌ها تونسته Opus-5 رو هم بزنه زمین، مخصوصاً الان که انگار دستکاریش کردن و ضعیف‌تر و خنگ‌تر از قبل شده."
+  ],
+  "why": "ثابت می‌کنه گول بنچمارک‌های اسمی رو نباید خورد و مدل‌های بهینه‌تر و جمع‌وجورتر دارن قشنگ جای غول‌های گرون‌قیمت بازار رو توی کار واقعی می‌گیرن.",
+  "tags": [
+   "آنتروپیک",
+   "ایلان ماسک"
+  ]
+ },
+ "updated": "2026-10-25T12:30:13+00:00",
+ "gholam_checked": "2026-10-25T12:30:13+00:00"
+}

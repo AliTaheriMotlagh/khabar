@@ -1,0 +1,67 @@
+{
+ "id": 5830,
+ "url": "https://t.me/dlmehr/5830",
+ "date": "2026-10-12T15:09:25+00:00",
+ "text": "https://fxtwitter.com/Alibaba_Qwen/status/2109633085658808515",
+ "forwarded_from": "Parsa Razavi",
+ "digest": false,
+ "hash": "7652d2c31e5b",
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/Alibaba_Qwen/status/2109633085658808515",
+  "site": "🧵 Thread • FxTwitter",
+  "title": "Qwen (@Alibaba_Qwen)",
+  "description": "Introducing QwenGyre, bringing elastic RL to extreme-long-horizon (XLong) agent training.\n✨\nIt launches with two core designs:\n🥳\n- Elastic Scheduler: reallocates GPUs between rollout & training as demand shifts—live executions never interrupted. Up to 1.85×…",
+  "image": "https://cdn4.telesco.pe/file/Ds3B1XL9nAm9nWsdD8EHsEVlOL6_ex_tZaDoKHtrU6Rb3HHeYwEJwgW3sFdG1vkcRDe6LRKSk7NTGdHtP_068Mjk2j7-hYkI0W5ReUpDqt0wWvI5yMDXPIfypXxrDBXp9uvG21ui6ZcpTXmDHhQdFq1NBLh9E15hJwS_Ivp9KKJV6GQw4FcfjmEJE5Z4UZI4AGShpNSwiQaWPITiwp4drDPe0n67huIBuGmMlCs-0dc2gqRkpgfpMXT1B_FA3idgv6LwTAcU-_UGL_3M6NfijRuKMPbMnapxz-YQCIKMwcA5PVXLCYu2uzLomKYBE7g_DgJzmG_spKK57cx83leNGQ.jpg"
+ },
+ "gholam": {
+  "text": "ببین رفیق، تیم کیوئن (Qwen) از یه سیستم خفن به اسم QwenGyre رونمایی کرده که خوراکِ آموزش مدل‌های هوش مصنوعی با یادگیری تقویتی توی کارهای فوق‌العاده طولانی و سنگینه. این سیستم با یه زمان‌بندی کشسان و باحال، کارت‌های گرافیک رو بین جمع‌آوری داده و تمرین مدل جابه‌جا می‌کنه تا سرعت کار تا ۱.۸۵ برابر بالا بره و پردازش متوقف نشه. علاوه‌بر این، با سروسامان دادن به شاخه‌های مختلف اجرای وظایف و ثبت پیشرفت‌های نصفه‌نیمه، نمی‌ذاره هیچ تلاشی حروم بشه. دست‌آخر هم روی مدل‌های غول‌پیکرش با حدود ۷۰۰ هزار توکن تستش کردن و تونستن زمان آموزش رو نزدیک به ۴۴ درصد کاهش بدن و دقت مدل رو هم قشنگ چند پله ببرن بالاتر.\n\nاهمیتش اینه که تربیت ایجنت‌های هوشمند برای وظایف بزرگ مهندسی دیگه ماه‌ها وقت و کلی هزینه سرور نمی‌بلعه و روند توسعه‌شون فوق‌العاده سریع‌تر و به‌صرفه‌تر می‌شه.",
+  "date": "2026-10-12T15:09:43+00:00"
+ },
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/Alibaba_Qwen/status/2109633085658808515",
+   "domain": "x.com",
+   "author": {
+    "name": "Qwen",
+    "handle": "Alibaba_Qwen",
+    "avatar": "https://pbs.twimg.com/profile_images/2064231947149377536/Ab70PxT5_200x200.jpg"
+   },
+   "text": "Introducing QwenGyre, bringing elastic RL to extreme-long-horizon (XLong) agent training. ✨\n\nIt launches with two core designs: 🥳\n- Elastic Scheduler: reallocates GPUs between rollout & training as demand shifts—live executions never interrupted. Up to 1.85× speedup over Colocate, 1.78× over Async.\n- Trajectory Processor: turns branching executions (compaction, sub-agents, retries) into prefix-shared trajectory trees with bounded, deduplicated training samples. Partial progress after timeout still gets scored.\n\nScaled to Qwen3.8-2.4T-A95B with ~700K tokens per rollout, QwenGyre lifts NL2RepoBench from 52.5% to 58.5% in 48 steps, cutting end-to-end training time by ~44% vs Async.\n\n🔗 Read the paper:\nhttps://arxiv.org/abs/2609.33848",
+   "date": 1791810697,
+   "media": [
+    {
+     "type": "image",
+     "src": "https://pbs.twimg.com/media/HUboWdbboAA70KJ.jpg?name=orig",
+     "ratio": 0.5625
+    }
+   ],
+   "links": [
+    "https://arxiv.org/abs/2609.33848"
+   ]
+  },
+  {
+   "kind": "link",
+   "url": "https://arxiv.org/abs/2609.33848",
+   "domain": "arxiv.org",
+   "title": "QwenGyre: An Elastic Reinforcement Learning Framework for Training xLong-Horizon Agents",
+   "description": "Large language model (LLM) agents increasingly undertake extreme-long (xlong) horizon tasks, where a single execution can span hours, hundreds of model--environment interactions, and nearly 1M tokens per rollout. Applying online reinforcement learning (RL) to such executions poses two fundamental challenges: (1) severe execution variance and prolonged rollout delays cause massive GPU idling; and (",
+   "image": "https://arxiv.org/static/browse/0.3.4/images/arxiv-logo-fb.png",
+   "site": "arXiv.org"
+  }
+ ],
+ "article": {
+  "title": "تیم کیوئن (Qwen) از یه سیستم خفن به اسم QwenGyre رونمایی کرده که خوراکِ آموزش مدل‌های هوش مصنوعی با یادگیری تقویتی توی کارهای فوق‌العاده طولانی و سنگینه",
+  "source_title": "Introducing QwenGyre, bringing elastic RL to extreme-long-horizon (XLong) agent training. ✨",
+  "body": [
+   "ببین رفیق، تیم کیوئن (Qwen) از یه سیستم خفن به اسم QwenGyre رونمایی کرده که خوراکِ آموزش مدل‌های هوش مصنوعی با یادگیری تقویتی توی کارهای فوق‌العاده طولانی و سنگینه. این سیستم با یه زمان‌بندی کشسان و باحال، کارت‌های گرافیک رو بین جمع‌آوری داده و تمرین مدل جابه‌جا می‌کنه تا سرعت کار تا ۱.۸۵ برابر بالا بره و پردازش متوقف نشه. علاوه‌بر این، با سروسامان دادن به شاخه‌های مختلف اجرای وظایف و ثبت پیشرفت‌های نصفه‌نیمه، نمی‌ذاره هیچ تلاشی حروم بشه. دست‌آخر هم روی مدل‌های غول‌پیکرش با حدود ۷۰۰ هزار توکن تستش کردن و تونستن زمان آموزش رو نزدیک به ۴۴ درصد کاهش بدن و دقت مدل رو هم قشنگ چند پله ببرن بالاتر."
+  ],
+  "why": "تربیت ایجنت‌های هوشمند برای وظایف بزرگ مهندسی دیگه ماه‌ها وقت و کلی هزینه سرور نمی‌بلعه و روند توسعه‌شون فوق‌العاده سریع‌تر و به‌صرفه‌تر می‌شه.",
+  "tags": [
+   "چین"
+  ]
+ },
+ "updated": "2026-10-25T12:23:46+00:00",
+ "gholam_checked": "2026-10-25T12:23:46+00:00"
+}

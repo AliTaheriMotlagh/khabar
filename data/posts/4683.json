@@ -1,0 +1,60 @@
+{
+ "id": 4683,
+ "url": "https://t.me/dlmehr/4683",
+ "date": "2026-08-10T22:58:02+00:00",
+ "text": "https://fxtwitter.com/gakonst/status/2086846192701640817?s=52",
+ "forwarded_from": "Hossein Zakariaee",
+ "digest": false,
+ "hash": "a5955eea6e27",
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/gakonst/status/2086846192701640817?s=52",
+  "site": "🧵 Thread • FxTwitter",
+  "title": "Georgios Konstantopoulos (@gakonst)",
+  "description": "Announcing Centaur 2.0!\nCentaur is frontier, agentic infrastructure that you own. Centaur is like Claude Tag, but open source and on steroids.\nCentaur 2.0 can connect to everything you have access to, and can reason over it next to where you work, either…",
+  "image": null
+ },
+ "gholam": {
+  "text": "رفیق، جورجیوس از بچه‌های پارادایم اومده نسخه جدید Centaur 2.0 رو رو کرده که یه زیرساخت اوپن‌سورس و همه‌فن‌حریف برای ایجنت‌های هوش مصنوعیه‌. این نسخه رو کلاً با زبان راست از نو نوشتن تا فوق‌العاده پایدار بشه و بتونه توی اسلک، دیسکورد و تیمز مستقیم روی داده‌هات پردازش انجام بده. از نظر امنیتی هم جوری ردیفش کردن که بتونه حتی اطلاعات حساس و خصوصی رو بدون ترس از لو رفتن تحلیل کنه، تازه مت اسلیپر هم به تیمشون اضافه شده تا این پروژه رو قوی‌تر ببرن جلو.\n\nاهمیتش اینه که تعامل هوش مصنوعی با ابزارهای کاری رو امن‌تر می‌کنه و اجازه میده ایجنت‌ها مثل یه همکار واقعی و مطمئن بین سازمان‌های مختلف کار کنن.",
+  "date": "2026-08-10T22:58:16+00:00"
+ },
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/gakonst/status/2086846192701640817",
+   "domain": "x.com",
+   "author": {
+    "name": "Georgios Konstantopoulos",
+    "handle": "gakonst",
+    "avatar": "https://pbs.twimg.com/profile_images/1596214564470734849/1Tg5-gNh_200x200.jpg"
+   },
+   "text": "Announcing Centaur 2.0! \n\nCentaur is frontier, agentic infrastructure that you own. Centaur is like Claude Tag, but open source and on steroids.\n\nCentaur 2.0 can connect to everything you have access to, and can reason over it next to where you work, either in Slack, Discord, Teams or in your local Codex or Claude Code via an MCP.\n\nBut context isn't useful if it can be accessed by anyone, so we rebuilt Centaur from the ground up for security. Centaur obviously doesn't have access to secrets because we're leveraging egress proxies.\n\nCentaur 2.0 takes that a step further enabling administrators to configure who can access what from where. This means that Centaur can have access to private information that you normally wouldn't feel comfortable giving it access to (e.g. DMs or sensitive channels and docs) but only expose it to authorized principals. \n\nIt also means you can add Centaur to external channels and leverage it as a virtual colleague that doesn't live only in your Slack, for example, but also your Slack Connect channels! This is extremely powerful as we start moving to a world where agents cross organizational boundaries.\n\nAlso in case anyone's wondering, yes we rewrote it in Rust! Centaur is now way way more stable at durably executing threads, and its workflow engine is now based on Absurd.\n\nWe have been operating Centaur since January, officially launched and Open Sourced it in May, and now we're full speed towards making it the #1 open source agentic infrastructure.\n\nTo succeed at that, I'm thrilled to welcome @mslipper to the @paradigm team who will be leading all our Applied AI work, while continuing to maintain and extend Iron Proxy as the leading secure secret access for agents. Welcome Matt, it's an honor after all these years of knowing you!\n\nRead the full blogpost below, and apply to join our team!",
+   "date": 1786377878,
+   "media": [
+    {
+     "type": "video",
+     "src": "https://video.twimg.com/amplify_video/2086831740610600961/vid/avc1/1280x720/sd4DAR7MuA3tEMyP.mp4?tag=29",
+     "poster": "https://pbs.twimg.com/amplify_video_thumb/2086831740610600961/img/Fc1nPK3FngQZJYj-.jpg",
+     "ratio": 0.5625,
+     "duration": 19.925,
+     "gif": false
+    }
+   ],
+   "links": []
+  }
+ ],
+ "article": {
+  "title": "جورجیوس از بچه‌های پارادایم اومده نسخه جدید Centaur 2.0 رو رو کرده که یه زیرساخت اوپن‌سورس و همه‌فن‌حریف برای ایجنت‌های هوش مصنوعیه‌",
+  "source_title": "Announcing Centaur 2.0!",
+  "body": [
+   "رفیق، جورجیوس از بچه‌های پارادایم اومده نسخه جدید Centaur 2.0 رو رو کرده که یه زیرساخت اوپن‌سورس و همه‌فن‌حریف برای ایجنت‌های هوش مصنوعیه‌. این نسخه رو کلاً با زبان راست از نو نوشتن تا فوق‌العاده پایدار بشه و بتونه توی اسلک، دیسکورد و تیمز مستقیم روی داده‌هات پردازش انجام بده. از نظر امنیتی هم جوری ردیفش کردن که بتونه حتی اطلاعات حساس و خصوصی رو بدون ترس از لو رفتن تحلیل کنه، تازه مت اسلیپر هم به تیمشون اضافه شده تا این پروژه رو قوی‌تر ببرن جلو."
+  ],
+  "why": "تعامل هوش مصنوعی با ابزارهای کاری رو امن‌تر می‌کنه و اجازه میده ایجنت‌ها مثل یه همکار واقعی و مطمئن بین سازمان‌های مختلف کار کنن.",
+  "tags": [
+   "آنتروپیک",
+   "امنیت"
+  ]
+ },
+ "updated": "2026-10-25T12:30:34+00:00",
+ "gholam_checked": "2026-10-25T12:30:34+00:00"
+}

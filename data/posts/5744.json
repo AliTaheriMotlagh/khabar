@@ -1,0 +1,73 @@
+{
+ "id": 5744,
+ "url": "https://t.me/dlmehr/5744",
+ "date": "2026-10-08T15:04:41+00:00",
+ "text": "https://fxtwitter.com/rohanpaul_ai/status/2108087162092818694?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+ "forwarded_from": null,
+ "digest": false,
+ "hash": "e2c9919fc8ae",
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/rohanpaul_ai/status/2108087162092818694?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+  "site": "🧵 Thread • FxTwitter",
+  "title": "Rohan Paul (@rohanpaul_ai)",
+  "description": "A new Stanford paper just proved that decentralized multi-agent systems can beat Claude Code and Codex on complex coding tasks, running up to 2.49× faster!\nDeLM tackles a key bottleneck in multi-agent systems: time wasted repeating work and waiting on other…",
+  "image": "https://cdn4.telesco.pe/file/Q8KKGrpraXfOjXDa8S7Ta_FrYWZGpuocJnjJP9fl9-Kco4YUEm9yTRH4gdFM7poDLTYae9qZrpHqbA5eLtIdVeucIxhGUDXw59CkUNYzDQ_EJ9z87i3dkpp-KHHIW2Pvd9kpomxatJIxPe6l8Whh2LmCrr8-jyLPPwe1pLMwTLC_1n6XF9jPYVpUqjaaz-jz9Ih38-7nVjaG_84i3dFcyiNtRSEirFYJTLGVb8ZTNzhVJ1011ySuU7hQWgIJFZrcHzJqe22-oLncXJqCygNZwvpesyA2catvI__M1rQjpcPy9XrdDmprsI-t8EKWNq0JyA9UO9-Oy8C4H3VZ4_RaHg.jpg"
+ },
+ "gholam": {
+  "text": "رفیق، بچه‌های دانشگاه استنفورد یه حرکتی زدن که خوراک برنامه‌نویس‌هاست؛ اومدن یه سیستم چندعاملی غیرمتمرکز به اسم DeLM رو کردن که تو کدنویسی‌های پیچیده، غول‌هایی مثل کلود کد و کدکس رو بدجور جا می‌ذاره. ماجرا اینه که به جای داشتن یه ایجنتِ رئیس و معطلی بقیه، یه صف کار و بستر مشترک ساختن تا هوش مصنوعی‌ها خودشون مستقل کار بردارن و نتایج رو لحظه‌ای با هم تاخت بزنن. همین فرمول تر و تمیز باعث شده سرعت کار تا ۲.۴۹ برابر بیشتر بشه و دقتش هم توی بنچمارک‌هایی مثل ProgramBench حدود ۲۰ درصد بالاتر بره. دست‌گلشون درد نکنه چون پلاگین و کدهای این پروژه رو هم کاملاً رایگان و اوپن‌سورس منتشر کردن تا بشه تستش کرد.\n\nاهمیتش اینه که ثابت کرد به جای هزینه‌های سنگین روی مدل‌های غول‌پیکر، با یه کار تیمی و هماهنگِ بدون رئیس می‌شه سرعت و خروجی هوش مصنوعی رو حسابی پرواز داد.",
+  "date": "2026-10-08T15:04:59+00:00"
+ },
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/rohanpaul_ai/status/2108087162092818694",
+   "domain": "x.com",
+   "author": {
+    "name": "Rohan Paul",
+    "handle": "rohanpaul_ai",
+    "avatar": "https://pbs.twimg.com/profile_images/1816185267037859840/Fd18CH0v_200x200.jpg"
+   },
+   "text": "A new Stanford paper just proved that decentralized multi-agent systems can beat Claude Code and Codex on complex coding tasks, running up to 2.49× faster!\n\nDeLM tackles a key bottleneck in multi-agent systems: time wasted repeating work and waiting on other agents.\n\nDeLM replaces the central coordinating agent with a shared context and task queue. Agents pick up tasks independently, share discoveries as they happen, and build on each other’s progress. When one agent finds a solution or hits a dead end, the others can use that information immediately.\n\nDeLM beats state-of-the-art in both speed and accuracy on long-horizon tasks from Terminal-Bench 4.0, DeepSWE v1.1, and ProgramBench:\n\n- Up to 2.49× faster execution than the vanilla Claude Code and Codex baselines\n- Up to +19.2 percentage points in accuracy over the vanilla Claude Code and Codex baselines\n- Up to +19.9 points in ProgramBench test pass rate within the same 120-minute budget\n\nBuilt on Codex and Claude Code. Code and 720 trajectories are available so you can explore how the agents collaborate! An open-source plugin lets you try DeLM directly in Codex and Claude Code.",
+   "date": 1791442120,
+   "media": [
+    {
+     "type": "image",
+     "src": "https://pbs.twimg.com/media/HUFtwfMawAAOkbK.png?name=orig",
+     "ratio": 1.0733
+    },
+    {
+     "type": "image",
+     "src": "https://pbs.twimg.com/media/HUFtyU7aEAExs6N.png?name=orig",
+     "ratio": 0.5972
+    },
+    {
+     "type": "image",
+     "src": "https://pbs.twimg.com/media/HUFt0uCbcAAOdf6.png?name=orig",
+     "ratio": 0.5972
+    },
+    {
+     "type": "image",
+     "src": "https://pbs.twimg.com/media/HUFt3zjaQAA193F.png?name=orig",
+     "ratio": 0.6309
+    }
+   ],
+   "links": []
+  }
+ ],
+ "article": {
+  "title": "بچه‌های دانشگاه استنفورد یه حرکتی زدن که خوراک برنامه‌نویس‌هاست؛ اومدن یه سیستم چندعاملی غیرمتمرکز به اسم DeLM رو کردن که تو کدنویسی‌های پیچیده، غول‌هایی مثل کلود کد و کدکس رو بدجور جا می‌ذاره",
+  "source_title": "A new Stanford paper just proved that decentralized multi-agent systems can beat Claude Code and Codex on complex coding tasks, running up…",
+  "body": [
+   "رفیق، بچه‌های دانشگاه استنفورد یه حرکتی زدن که خوراک برنامه‌نویس‌هاست؛ اومدن یه سیستم چندعاملی غیرمتمرکز به اسم DeLM رو کردن که تو کدنویسی‌های پیچیده، غول‌هایی مثل کلود کد و کدکس رو بدجور جا می‌ذاره. ماجرا اینه که به جای داشتن یه ایجنتِ رئیس و معطلی بقیه، یه صف کار و بستر مشترک ساختن تا هوش مصنوعی‌ها خودشون مستقل کار بردارن و نتایج رو لحظه‌ای با هم تاخت بزنن. همین فرمول تر و تمیز باعث شده سرعت کار تا ۲.۴۹ برابر بیشتر بشه و دقتش هم توی بنچمارک‌هایی مثل ProgramBench حدود ۲۰ درصد بالاتر بره. دست‌گلشون درد نکنه چون پلاگین و کدهای این پروژه رو هم کاملاً رایگان و اوپن‌سورس منتشر کردن تا بشه تستش کرد."
+  ],
+  "why": "ثابت کرد به جای هزینه‌های سنگین روی مدل‌های غول‌پیکر، با یه کار تیمی و هماهنگِ بدون رئیس می‌شه سرعت و خروجی هوش مصنوعی رو حسابی پرواز داد.",
+  "tags": [
+   "کدنویسی",
+   "آنتروپیک",
+   "اوپن‌ای‌آی"
+  ]
+ },
+ "updated": "2026-10-25T12:24:15+00:00",
+ "gholam_checked": "2026-10-25T12:24:15+00:00"
+}

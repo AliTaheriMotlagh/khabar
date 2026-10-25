@@ -1,0 +1,67 @@
+{
+ "id": 5766,
+ "url": "https://t.me/dlmehr/5766",
+ "date": "2026-10-09T02:21:10+00:00",
+ "text": "https://fxtwitter.com/celeris_ai/status/2108340177345368486?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+ "forwarded_from": null,
+ "digest": false,
+ "hash": "8498562a451b",
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/celeris_ai/status/2108340177345368486?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+  "site": "🧵 Thread • FxTwitter",
+  "title": "Celeris (@Celeris_ai)",
+  "description": "Celeris-1 Decision is live today.\nOn jev-bench and typed decisions it beats Jev 1.13.0, OpenAI gpt-6-luna, Perplexity pplx-decider-v1.1-27b, and Inception Mercury Decide, on both accuracy and Brier score. Celeris-1-decision also led the benchmark in response…",
+  "image": "https://cdn4.telesco.pe/file/dS0TitGbORzqqSKG1cKLXsA9N5LMerLYMwgemVZWarlk_n7Sh4jubUXd6vhV8mOirCtgfyMYJ9k8cBjmvGmdWXej1MpduYzfmxbfdECRMskZG1R8suCntRvGlhdCJWRy_oNZFK8haSPFrXNFP0rxI2Pj0vTnlDUMJwwXiDVkfXyfqV7MFoTur0avhbRf2KDr5zbc2slR5i_t4h3csR2oEN3XFgHpeA0Wo_E-CTLspWEwNWIU9x9OFMv3-ihuflj-fxaavf5n8Dht0mqf90kK6f08Y8A8V9APnFz74mFl2pmbXN412T-eTtz64HvL75Cx_VPJPQMjM07CY1ZLjyc3Cg.jpg"
+ },
+ "gholam": {
+  "text": "رفیق، این بچه‌های Celeris از مدل جدیدشون به اسم Celeris-1 Decision رونمایی کردن و رسماً زدن رو دست گردن‌کلفت‌های هوش مصنوعی. این مدل تو بنچمارک‌های تصمیم‌گیری حسابی غوغا کرده و غول‌هایی مثل gpt-6-luna اوپن‌ای‌آی و مدل پرپلکسیتی رو هم از نظر دقت و هم امتیاز برایر قشنگ جا گذاشته. تو سرعت پاسخ‌دهی هم شوخی نداره و با میانه زمان ۶۷ میلی‌ثانیه‌ای، رسماً برق‌آسا عمل می‌کنه. ته مرام رو هم تو قیمتش گذاشتن؛ واسه هر یک میلیون توکن ورودی فقط ۴ سنت می‌گیرن و توکن‌های خروجی رو هم کلاً رایگان حساب کردن.\n\nچرا مهمه؟ چون رسوندن سرعت تصمیم‌گیری به زیر صد میلی‌ثانیه اونم با قیمت نزدیک به مفت، بازی هوش مصنوعی لحظه‌ای و تصمیم‌گیر رو برای رقبای بزرگ زیر و رو می‌کنه.",
+  "date": "2026-10-09T02:21:26+00:00"
+ },
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/Celeris_ai/status/2108340177345368486",
+   "domain": "x.com",
+   "author": {
+    "name": "Celeris",
+    "handle": "Celeris_ai",
+    "avatar": "https://pbs.twimg.com/profile_images/2079061844661293056/mU1CjtjU_200x200.jpg"
+   },
+   "text": "Celeris-1 Decision is live today.\n\nOn jev-bench and typed decisions it beats Jev 1.13.0, OpenAI gpt-6-luna, Perplexity pplx-decider-v1.1-27b, and Inception Mercury Decide, on both accuracy and Brier score. Celeris-1-decision also led the benchmark in response time with a median of 67ms.\n\n$0.04 per million input tokens, output free.\n\nFull results and methodology: http://celeris.ai/celeris-1-decision",
+   "date": 1791502444,
+   "media": [
+    {
+     "type": "image",
+     "src": "https://pbs.twimg.com/media/HUJT6QragAAEmR_.jpg?name=orig",
+     "ratio": 0.3689
+    }
+   ],
+   "links": [
+    "http://celeris.ai/celeris-1-decision"
+   ]
+  },
+  {
+   "kind": "link",
+   "url": "https://celeris.ai/celeris-1-decision",
+   "domain": "celeris.ai",
+   "title": "Celeris-1-decision: The Smartest Decision Model Yet, 60% faster than Jev",
+   "description": "celeris-1-decision is a diffusion decision model that beats Perplexity, Mercury Decide, Jev and gpt-6-luna on accuracy and Brier score, at a 67 ms median response and $0.04 per million input tokens with output free.",
+   "image": "https://celeris.ai/assets/og.png",
+   "site": "Celeris"
+  }
+ ],
+ "article": {
+  "title": "این بچه‌های Celeris از مدل جدیدشون به اسم Celeris-1 Decision رونمایی کردن و رسماً زدن رو دست گردن‌کلفت‌های هوش مصنوعی",
+  "source_title": "Celeris-1 Decision is live today.",
+  "body": [
+   "رفیق، این بچه‌های Celeris از مدل جدیدشون به اسم Celeris-1 Decision رونمایی کردن و رسماً زدن رو دست گردن‌کلفت‌های هوش مصنوعی. این مدل تو بنچمارک‌های تصمیم‌گیری حسابی غوغا کرده و غول‌هایی مثل gpt-6-luna اوپن‌ای‌آی و مدل پرپلکسیتی رو هم از نظر دقت و هم امتیاز برایر قشنگ جا گذاشته. تو سرعت پاسخ‌دهی هم شوخی نداره و با میانه زمان ۶۷ میلی‌ثانیه‌ای، رسماً برق‌آسا عمل می‌کنه. ته مرام رو هم تو قیمتش گذاشتن؛ واسه هر یک میلیون توکن ورودی فقط ۴ سنت می‌گیرن و توکن‌های خروجی رو هم کلاً رایگان حساب کردن."
+  ],
+  "why": "چون رسوندن سرعت تصمیم‌گیری به زیر صد میلی‌ثانیه اونم با قیمت نزدیک به مفت، بازی هوش مصنوعی لحظه‌ای و تصمیم‌گیر رو برای رقبای بزرگ زیر و رو می‌کنه.",
+  "tags": [
+   "اوپن‌ای‌آی"
+  ]
+ },
+ "updated": "2026-10-25T12:24:03+00:00",
+ "gholam_checked": "2026-10-25T12:24:03+00:00"
+}

@@ -1,0 +1,70 @@
+{
+ "id": 5723,
+ "url": "https://t.me/dlmehr/5723",
+ "date": "2026-10-07T18:53:10+00:00",
+ "text": "https://fxtwitter.com/fcvprzhfgsybj/status/2107863478560251945",
+ "forwarded_from": "Parsa Razavi",
+ "digest": false,
+ "hash": "fd24e9870c5c",
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/fcvprzhfgsybj/status/2107863478560251945",
+  "site": "🧵 Thread • FxTwitter",
+  "title": "Elias (@fcvprzhfgsybj)",
+  "description": "Introducing XPU Grasshopper, an AI chip co-designed with AI for the era of recursive self-improvement\nIt went from its first tokens to 816x faster in 13 weeks\nPre-order the FPGA devkit: https://zscc.ai/grasshopper",
+  "image": null
+ },
+ "gholam": {
+  "text": "ببین رفیق، یه متخصصی به اسم الیاس از یه تراشه هوش مصنوعی تازه به اسم XPU Grasshopper رونمایی کرده که برگ‌ریزون‌ترین قسمتش اینه که با خود هوش مصنوعی و واسه عصر «خودبهبودی بازگشتی» طراحی شده. قضیه از این قراره که این چیپ توی یه بازه سیزده هفته‌ای، از اولین خروجی‌هاش تونسته به سرعت خیره‌کننده ۸۱۶ برابری برسه که رسماً پشمای اهل فن رو ریخته. تازه کار رو به حرف ختم نکردن و کیت توسعه‌دهنده سخت‌افزاریش رو هم گذاشتن واسه پیش‌خرید تا خوره‌های تکنولوژی بتونن خودشون برن تو دل کار و محک بزننش.\n\nچرا مهمه؟ اهمیتش اینه که نشون میده وقتی هوش مصنوعی خودش بشینه پای طراحی سخت‌افزار خودش، سرعت پیشرفت جوری موشکی بالا میره که محاسبات دنیای کامپیوتر کلاً زیر و رو می‌شه.",
+  "date": "2026-10-07T18:53:28+00:00"
+ },
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/fcvprzhfgsybj/status/2107863478560251945",
+   "domain": "x.com",
+   "author": {
+    "name": "Elias",
+    "handle": "fcvprzhfgsybj",
+    "avatar": "https://pbs.twimg.com/profile_images/2071268606391029760/eTLeCHTP_200x200.jpg"
+   },
+   "text": "Introducing XPU Grasshopper, an AI chip co-designed with AI for the era of recursive self-improvement\n\nIt went from its first tokens to 816x faster in 13 weeks\n\nPre-order the FPGA devkit: https://zscc.ai/grasshopper",
+   "date": 1791388790,
+   "media": [
+    {
+     "type": "video",
+     "src": "https://video.twimg.com/amplify_video/2107858895817601024/vid/avc1/960x720/2GSWKCsW5lovCIdL.mp4?tag=29",
+     "poster": "https://pbs.twimg.com/amplify_video_thumb/2107858895817601024/img/ym9TACCmAP0gamqZ.jpg",
+     "ratio": 0.75,
+     "duration": 34,
+     "gif": false
+    }
+   ],
+   "links": [
+    "https://zscc.ai/grasshopper"
+   ]
+  },
+  {
+   "kind": "link",
+   "url": "https://zscc.ai/grasshopper",
+   "domain": "zscc.ai",
+   "title": "XPU Grasshopper | Zettascale Computing",
+   "description": "XPU Grasshopper is a reconfigurable XPU for agentic AI, built for performance per dollar and per watt. It runs end to end on FPGA today as the prototype of our Gen 1 silicon.",
+   "image": "https://zscc.ai/opengraph-image?91eb74e663b3a288",
+   "site": "Zettascale Computing"
+  }
+ ],
+ "article": {
+  "title": "یه متخصصی به اسم الیاس از یه تراشه هوش مصنوعی تازه به اسم XPU Grasshopper رونمایی کرده که برگ‌ریزون‌ترین قسمتش اینه که با خود هوش مصنوعی و واسه عصر «خودبهبودی بازگشتی» طراحی شده",
+  "source_title": "Introducing XPU Grasshopper, an AI chip co-designed with AI for the era of recursive self-improvement",
+  "body": [
+   "ببین رفیق، یه متخصصی به اسم الیاس از یه تراشه هوش مصنوعی تازه به اسم XPU Grasshopper رونمایی کرده که برگ‌ریزون‌ترین قسمتش اینه که با خود هوش مصنوعی و واسه عصر «خودبهبودی بازگشتی» طراحی شده. قضیه از این قراره که این چیپ توی یه بازه سیزده هفته‌ای، از اولین خروجی‌هاش تونسته به سرعت خیره‌کننده ۸۱۶ برابری برسه که رسماً پشمای اهل فن رو ریخته. تازه کار رو به حرف ختم نکردن و کیت توسعه‌دهنده سخت‌افزاریش رو هم گذاشتن واسه پیش‌خرید تا خوره‌های تکنولوژی بتونن خودشون برن تو دل کار و محک بزننش."
+  ],
+  "why": "اهمیتش اینه که نشون میده وقتی هوش مصنوعی خودش بشینه پای طراحی سخت‌افزار خودش، سرعت پیشرفت جوری موشکی بالا میره که محاسبات دنیای کامپیوتر کلاً زیر و رو می‌شه.",
+  "tags": [
+   "تراشه"
+  ]
+ },
+ "updated": "2026-10-25T12:24:22+00:00",
+ "gholam_checked": "2026-10-25T12:24:22+00:00"
+}

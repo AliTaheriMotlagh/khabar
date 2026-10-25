@@ -2,16 +2,23 @@
  "id": 5940,
  "url": "https://t.me/dlmehr/5940",
  "date": "2026-10-16T23:38:11+00:00",
- "edited": true,
- "views": "217",
  "text": "https://fxtwitter.com/satyanadella/status/2111204941801128366?s=52&t=F41Qa04r48Mef_j_XjBneQ",
  "forwarded_from": null,
  "digest": false,
  "hash": "1a6629721913",
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/satyanadella/status/2111204941801128366?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+  "site": "FxTwitter · microsoft.com",
+  "title": "Satya Nadella (@satyanadella)",
+  "description": "In @Nature this week, our new research shows how machine learning can improve weather forecasts two to six weeks out, a timeframe that's historically been very difficult to predict.\nIt's exciting to see the potential of this work to help us better prepare…",
+  "image": "https://cdn4.telesco.pe/file/DCDMQKUOjW2mQ9uB-wqXVwe6P9BjMLkvg-S424VWxDaRPm-Wug1YfwvUaK9wnbP0rQKS_mpbf9mtvSeTYi8GkybrmaQNrMhZ9qk_oKFZCfhBVOFgCGvAa8KehvDYnns4NPnYs9dS_9F1EfaZmcG2b7PbgTY9vnVi_WOCniBC6Us_Eul9-mujhWw4_8SytzimRiKJ0-TePPYkeYXguOpsFwdC7VVl7Ft62D5XBPXD-0hxmmT8bnrhEkP2SdZuCIIoc-dstIrwvKFsCGcUGhLoyCkHboncijV2or0YZIJ7B4KaphnUKiR5e9g9TOGQ3gKWybvPIueMPAwFwC1c4wp6tQ.jpg"
+ },
  "gholam": {
   "text": "رفیق، ساتیا نادلا، رییس مایکروسافت، خبر داده که پژوهش جدیدشون تازه توی مجله معتبر «نیچر» چاپ شده و هوش مصنوعی رو بردن تو خط پیش‌بینی دقیق آب‌وهوا. ماجرا اینه که با یادگیری ماشین تونستن وضعیت جوی رو برای بازه دو تا شش هفته جلوتر پیش‌بینی کنن؛ همون تایمی که از قدیم‌الایام برای هواشناسا مثل یه معمای حل‌نشدنی و قوز بالای قوز بوده. نادلا میگه این کار دست کشاورزا و مسئولای مدیریت بحران رو حسابی پر می‌کنه تا قبل از اینکه بلایای طبیعی غافلگیرشون کنه، بتونن گلیمشونو از آب بکشن بیرون. تهش هم یادآوری کرده که آینده هوش مصنوعی فقط گنده‌تر کردن مدل‌ها نیست، بلکه ساختن سیستم‌های راستی‌آزمایی هوشمنده که بفهمن مدل کجا سوتی داده و حرفاشو با واقعیت تراز کنن.\n\nچرا مهمه؟ چون پیش‌بینی دقیق اوضاع جوی از یک ماه قبل، یعنی حفظ جون کلی آدم جلوی سیل و طوفان و نجات دادن حاصل دسترنج کشاورزا از نابودی.",
   "date": "2026-10-16T23:38:32+00:00"
  },
+ "gholam_checked": "2026-10-24T23:11:47+00:00",
  "links": [
   {
    "kind": "tweet",
@@ -53,18 +60,6 @@
    "text": "Probabilistic Bias Correction delivers more reliable two-to-six-week projections, unlocking big benefits for farmers, resource managers, and disaster responders.\nAt a glance\n- Weather forecasts are stubbornly unreliable in the two-to-six-week window, leaving a crucial gap for decision-makers across a wide range of industries and public agencies.\n- Probabilistic Bias Correction (PBC) is a new machine-learning framework developed by Microsoft Research that learns from a weather model’s past mistakes and helps correct them, making its forecasts more accurate and reliable.\n- In early testing, PBC took top honors in a global competition aimed at improving extended-range, or sub-seasonal forecasting. It’s also showing promise in real-world deployments, notably helping improve critical monsoon forecasts for farmers in Kenya.\nToday’s weather forecasting has become highly dependable out to two weeks, while longer-term climate forecasts are also increasingly accurate. But a critical gap persists in sub-seasonal forecasting between two and six weeks, where current models come up short. Better predictions in this window would improve crucial decisions related to farming, managing wildfires, allocating water and energy, and preparing for weather extremes.\nFor years, researchers from Microsoft and external collaborators have pursued this challenge. But instead of building another new model to compete in a crowded field, they began to focus on correcting predictable errors in existing models. They called this new approach Probabilistic Bias Correction (PBC). In initial evaluations, this research effort is showing how it could help deliver more actionable – or skillful – sub-seasonal forecasts of temperature, precipitation, and atmospheric pressure.\nPhysics-based models measure the weather today and then simulate future weather using scientific equations that govern how the atmosphere and oceans behave over time. Newer AI models train on lots of data, instead. And they both do well out to about 10 days. But, in the two-to-six-week time scale, both physics-based and AI-based models struggle due to compounding errors and the complex interactions of global earth systems and local weather systems.\n“Our new pipeline (PBC) takes your favorite model as input and learns in what ways it tends to make errors. It then corrects those errors, yielding a better output forecast for the sub-seasonal range.”\n– Lester Mackey, senior principal researcher at Microsoft Research New England\nA recent paper (opens in new tab) published in the scientific journal Nature outlines how PBC uses a lightweight machine learning system that can examine any model’s historical forecasts to find systematic bias. PBC has boosted performance of the world’s leading operationally debiased sub-seasonal model — from the European Centre for Medium-Range Weather Forecasts (opens in new tab) (ECMWF) — for 98% of precipitation, 92% of temperature, and 91% of pressure targets. It also doubled the accuracy of ECMWF’s AI Forecasting System (AIFS).\nIn August 2025, ECMWF kicked off the AI Weather Quest (opens in new tab), a real-time competition aimed at improving probabilistic sub-seasonal forecasting. The MicroEnsemble team, with researchers and scientists from Microsoft and external collaborators, deployed a PBC-based solution that took top honors. Their entry, dubbed MicroDuet, applied PBC to the industry-leading dynamical model from ECMWF and to a hybrid (AI+dynamical) model, PoET (opens in new tab), that improves the skill of probabilistic forecast ensembles using transformers. In the inaugural three-month season, MicroDuet placed first for every weather variable and lead time, outperforming six leading operational forecasting centers and the forecasting systems of 34 teams worldwide. MicroDuet also delivered the most accurate results over a full year of real-time forecasting. It even anticipated two brutal winter storms (opens in new tab) that struck the United States in early 2026 — 19-26 days in advance.\n“The AI Weather Quest provides a unique real-time benchmarking platform for sub-seasonal forecasts. Contributions from Team MicroEnsemble spotlighted how machine learning can enhance the skill of traditional dynamical forecasting systems through post-processing,” said Dr. Joshua Talib, scientist in sub-seasonal forecasting at ECMWF.\nECMWF continues to develop predictive systems and tools that enhance the skill, reliability and usability of sub-seasonal predictions, alongside advances in fully data-driven forecasting approaches.\nPutting PBC to work in the real world\nOutside of the lab, PBC is also beginning to address real-world challenges, notably in East Africa. Genevieve Flaspohler runs Rhiza Research, (opens in new tab) a small nonprofit focused on improving AI-powered weather forecasting. She advises the Kenya Meteorological Service Authority (KMSA) (opens in new tab) and works with scientists at KMSA, the Climate Hazards Center (CHC) at University of Californ"
   }
  ],
- "media": [],
- "preview": {
-  "url": "https://fxtwitter.com/satyanadella/status/2111204941801128366?s=52&t=F41Qa04r48Mef_j_XjBneQ",
-  "site": "FxTwitter · microsoft.com",
-  "title": "Satya Nadella (@satyanadella)",
-  "description": "In @Nature this week, our new research shows how machine learning can improve weather forecasts two to six weeks out, a timeframe that's historically been very difficult to predict.\nIt's exciting to see the potential of this work to help us better prepare…",
-  "image": {
-   "src": "media/5940/preview.webp",
-   "width": 200,
-   "height": 200
-  }
- },
  "article": {
   "title": "ساتیا نادلا، رییس مایکروسافت، خبر داده که پژوهش جدیدشون تازه توی مجله معتبر «نیچر» چاپ شده و هوش مصنوعی رو بردن تو خط پیش‌بینی دقیق آب‌وهوا",
   "source_title": "In @Nature this week, our new research shows how machine learning can improve weather forecasts two to six weeks out, a timeframe that's…",
@@ -76,6 +71,5 @@
    "مایکروسافت"
   ]
  },
- "updated": "2026-10-24T23:11:47+00:00",
- "gholam_checked": "2026-10-24T23:11:47+00:00"
+ "updated": "2026-10-25T11:54:10+00:00"
 }

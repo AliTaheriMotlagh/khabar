@@ -1,0 +1,68 @@
+{
+ "id": 5084,
+ "url": "https://t.me/dlmehr/5084",
+ "date": "2026-09-01T20:14:50+00:00",
+ "text": "https://fxtwitter.com/mthajiaghayi/status/2094622105740456273?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+ "forwarded_from": null,
+ "digest": false,
+ "hash": "22d334b0b8ab",
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/mthajiaghayi/status/2094622105740456273?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+  "site": "FxTwitter",
+  "title": "Mohammad Hajiaghayi (IG@mhajiaghayi,YT:hajiaghayi) (@MTHajiaghayi)",
+  "description": "We four IOI medalists give the FIRST poly-time algorithm for celebrated Győri–Lovász simplest existential theorem—think Nash eq.—settling a 50+ year problem: every k-connected graph splits into k connected parts of ANY prescribed sizes. NO AI. Video\n👇\nPaper…",
+  "image": null
+ },
+ "gholam": {
+  "text": "رفیق، قضیه از این قراره که دکتر محمد حاجی‌آقایی به همراه سه تا از مدال‌آورهای المپیاد جهانی کامپیوتر، بالاخره بعد از بیشتر از پنجاه سال یه طلسم گنده تو دنیای ریاضی و کامپیوتر رو شکستن. این بروبچز تونستن اولین الگوریتم زمان چندجمله‌ای (پلی‌تایم) رو واسه قضیه معروف «دیوری-لواس» طراحی کنن و ثابت کنن هر گراف k-همبند رو میشه به k بخش همبند با هر اندازه‌ای که دلمون بخواد تقسیم کرد. جالب‌تر از همه‌چیز اینه که کل این کار خفن رو بدون استفاده از هیچ هوش مصنوعی و با تکیه بر مخ و نبوغ خودشون درآوردن.\n\nچرا مهمه؟ چون یه مسئله باز نیم‌قرنی تو نظریه گراف که دانشمندا سال‌ها دنبال راه حل محاسباتی سریع براش بودن، بالاخره به دست نخبه‌های خودمون حل شد.",
+  "date": "2026-09-01T20:14:59+00:00"
+ },
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/MTHajiaghayi/status/2094622105740456273",
+   "domain": "x.com",
+   "author": {
+    "name": "Mohammad Hajiaghayi (IG@mhajiaghayi,YT:hajiaghayi)",
+    "handle": "MTHajiaghayi",
+    "avatar": "https://pbs.twimg.com/profile_images/1121259963240845313/RhV2QwQi_200x200.jpg"
+   },
+   "text": "We four IOI medalists give the FIRST poly-time algorithm for celebrated Győri–Lovász simplest existential theorem—think Nash eq.—settling a 50+ year problem: every k-connected graph splits into k connected parts of ANY prescribed sizes. NO AI. Video👇Paper https://arxiv.org/abs/2608.30945",
+   "date": 1788231800,
+   "media": [
+    {
+     "type": "video",
+     "src": "https://video.twimg.com/amplify_video/2094616620542885888/vid/avc1/1280x720/d73FzdS1zIB1LXBt.mp4?tag=14",
+     "poster": "https://pbs.twimg.com/amplify_video_thumb/2094616620542885888/img/THE-2TKjGv0sV_Ss.jpg",
+     "ratio": 0.5625,
+     "duration": 82.383,
+     "gif": false
+    }
+   ],
+   "links": [
+    "https://arxiv.org/abs/2608.30945"
+   ]
+  },
+  {
+   "kind": "link",
+   "url": "https://arxiv.org/abs/2608.30945",
+   "domain": "arxiv.org",
+   "title": "Breaking the Exponential Barrier: The First Polynomial-Time Algorithm for the Győri-Lovász Theorem",
+   "description": "We give the first polynomial-time algorithm, after half a century, for the celebrated Győri-Lovász theorem, which resolved a conjecture of Frank (1975). The theorem, one of the simplest existential theorems to explain, states that every $k$-connected graph can be partitioned into $k$ disjoint connected subgraphs of arbitrary prescribed positive sizes. This is a fundamental structural result with b",
+   "image": "https://arxiv.org/static/browse/0.3.4/images/arxiv-logo-fb.png",
+   "site": "arXiv.org"
+  }
+ ],
+ "article": {
+  "title": "قضیه از این قراره که دکتر محمد حاجی‌آقایی به همراه سه تا از مدال‌آورهای المپیاد جهانی کامپیوتر، بالاخره بعد از بیشتر از پنجاه سال یه طلسم گنده تو دنیای ریاضی و کامپیوتر رو شکستن",
+  "source_title": "We four IOI medalists give the FIRST poly-time algorithm for celebrated Győri–Lovász simplest existential theorem—think Nash eq.—settling a…",
+  "body": [
+   "رفیق، قضیه از این قراره که دکتر محمد حاجی‌آقایی به همراه سه تا از مدال‌آورهای المپیاد جهانی کامپیوتر، بالاخره بعد از بیشتر از پنجاه سال یه طلسم گنده تو دنیای ریاضی و کامپیوتر رو شکستن. این بروبچز تونستن اولین الگوریتم زمان چندجمله‌ای (پلی‌تایم) رو واسه قضیه معروف «دیوری-لواس» طراحی کنن و ثابت کنن هر گراف k-همبند رو میشه به k بخش همبند با هر اندازه‌ای که دلمون بخواد تقسیم کرد. جالب‌تر از همه‌چیز اینه که کل این کار خفن رو بدون استفاده از هیچ هوش مصنوعی و با تکیه بر مخ و نبوغ خودشون درآوردن."
+  ],
+  "why": "چون یه مسئله باز نیم‌قرنی تو نظریه گراف که دانشمندا سال‌ها دنبال راه حل محاسباتی سریع براش بودن، بالاخره به دست نخبه‌های خودمون حل شد.",
+  "tags": []
+ },
+ "updated": "2026-10-25T12:28:16+00:00",
+ "gholam_checked": "2026-10-25T12:28:16+00:00"
+}

@@ -1,0 +1,65 @@
+{
+ "id": 4833,
+ "url": "https://t.me/dlmehr/4833",
+ "date": "2026-08-20T03:10:55+00:00",
+ "text": "https://fxtwitter.com/alexocheema/status/2090215789529800797?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+ "forwarded_from": null,
+ "digest": false,
+ "hash": "ee2bcd2f021a",
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/alexocheema/status/2090215789529800797?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+  "site": "FxTwitter",
+  "title": "Alex Cheema (@alexocheema)",
+  "description": "Excited to collab with @ashxhart on this!\nWhy does prefill/decode disaggregation work on DGX Spark + Mac ?\nDGX Spark: ~350 TFLOPS@fp4, 128GB@273GB/s\nM5 Max MacBook Pro: ~70 TFLOPS@fp4, 128GB@614GB/s\nPrefill is compute-bound. Prefill on Spark runs ~5x faster…",
+  "image": "https://cdn4.telesco.pe/file/l3Wmp82Xvb__h621sZbBF2lN4o01NP0JsCXiqmCvkfQDYRemkphTBoj_MFRsbUYOoUCnt7pNP5Bvto_xeRjW5MJJE77ysp-24J0xDmteYMhoD_EkByI2c0iRIBs8Y2WQFB0fvKEvyypQizYCjr3tvIA_K2LLmzsxP8vBQerQNeA0i97NZatQw0QTkcOqu079t7UlQX5AYesNIxGx4ol5MU7uSWi2Xa4IOI03I_ECSLJgecjqsRprezEKWl-i_PIyedjLwG5zSiTf4znIT5Mr84okzJANA087vd8Bydb1iCcSnnTBMXAwUTEbC6i6QjzEnkLX135yZk83bdRaGfMuPg.jpg"
+ },
+ "gholam": {
+  "text": "ببین رفیق، الکس چیما و اَش هارت اومدن یه راهکار مشتی برای اجرای بهینه‌ی هوش مصنوعی رو ترکیب سرور و مک‌بوک رو کردن. ماجرا اینه که مرحله‌ی پیش‌پردازش (Prefill) زور پردازشی خالص می‌خواد و رو سرور DGX Spark با ۳۵۰ ترافلاپس قدرت، حدود ۵ برابر سریع‌تر از مک‌بوک M5 Max جلو میره؛ ولی تولید متن یا همون دیکود به پهنای باند رم نیاز داره که مک‌بوک با سرعت ۶۱۴ گیگابایت بر ثانیه، دو برابر سرور خروجی میده. خلاصه قضیه رو تفکیک کردن تا پیش‌پردازش روی سرور انجام بشه و دیتای کَش با شبکه ۱۰ گیگابیتی فرستاده بشه رو مک‌بوک تا کار با بالاترین سرعت تموم بشه. تازه با فناوری RDMA میشه این شبکه رو انقدر سریع کرد که بخش‌های سنگین مدل مثل Attention روی حافظه سریع‌تر و بقیه روی حافظه بزرگ‌تر بشینن.\n\nچرا مهمه؟ چون نشون میده با ترکیب هوشمندانه‌ی چندتا سخت‌افزار معمولی‌تر و متصل کردن مک به سرور، میشه مدل‌های سنگین رو بدون خرید ابررایانه‌های نجومی با حداکثر بازدهی اجرا کرد.",
+  "date": "2026-08-20T03:11:07+00:00"
+ },
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/alexocheema/status/2090215789529800797",
+   "domain": "x.com",
+   "author": {
+    "name": "Alex Cheema",
+    "handle": "alexocheema",
+    "avatar": "https://pbs.twimg.com/profile_images/1671532231687282689/vlbc3Ytw_200x200.jpg"
+   },
+   "text": "Excited to collab with @ashxhart on this!\n\nWhy does prefill/decode disaggregation work on DGX Spark + Mac ?\n\nDGX Spark: ~350 TFLOPS@fp4, 128GB@273GB/s\nM5 Max MacBook Pro: ~70 TFLOPS@fp4, 128GB@614GB/s\n\nPrefill is compute-bound. Prefill on Spark runs ~5x faster than M5 Max.\nDecode is memory-bound. Decode on M5 Max runs ~2x faster than Spark.\n\nSimple idea: run prefill on Spark, decode on M5 Max. That's faster than running on one device alone, since each phase runs on the best device for that phase.\n\nThis requires sending the KV cache from the Spark to the Mac. With a 10 Gigabit connection, we can overlap fully computation and communication of the KV cache. This doesn't require low latency, and works just fine over TCP/IP.\n\nRDMA on the other hand enables low latency networking (~single digit microseconds), which is the unlock for scaling up decode with ~equal memory bw devices e.g. DGX Spark + M4 Pro / M5 Pro.\n\nLow-latency is also important for DGX Spark + RTX or Mac + RTX. Small pool of very high speed memory + large pool of slower memory is the ideal local hardware architecture. Idea is to put the attention part of the model on the faster small memory pool, and the MoE part on the slower large memory pool.",
+   "date": 1787181253,
+   "media": [],
+   "links": [],
+   "quote": {
+    "author": {
+     "name": "Ash Hart",
+     "handle": "ashxhart",
+     "avatar": "https://pbs.twimg.com/profile_images/2076633444411494400/InvR8zXt_200x200.jpg"
+    },
+    "text": "MCDMA | Release Update 🚀\n\nAfter a couple of conversations with @alexocheema, it became clear we’re very aligned on what MCDMA could unlock for local AI and what I’ve been trying to achieve with it.\n\nAlex originally reached out because he’d been following the work and saw a lot of overlap with what @exolabs has been building. Once we started digging in, I got pretty excited about what becomes possible when you combine the two.\n\nSo I’ve decided to collaborate with EXO on the next stage of MCDMA.\n\nThe goal stays exactly the same. If anything, this just lets us be more ambitious and explore some things that weren’t possible before.\n\nI want to spend a little more time exploring that before sharing the next step.\n\nGenuine thanks to Alex for reaching out and offering support before any collaboration was even on the table. Really looking forward to what we can build together.\n\nMore soon.",
+    "date": 1787178557,
+    "media": [
+     {
+      "type": "image",
+      "src": "https://pbs.twimg.com/media/HQHl5goXEAA1zKb.jpg?name=orig",
+      "ratio": 1.0
+     }
+    ],
+    "links": []
+   }
+  }
+ ],
+ "article": {
+  "title": "الکس چیما و اَش هارت اومدن یه راهکار مشتی برای اجرای بهینه‌ی هوش مصنوعی رو ترکیب سرور و مک‌بوک رو کردن",
+  "source_title": "Excited to collab with @ashxhart on this!",
+  "body": [
+   "ببین رفیق، الکس چیما و اَش هارت اومدن یه راهکار مشتی برای اجرای بهینه‌ی هوش مصنوعی رو ترکیب سرور و مک‌بوک رو کردن. ماجرا اینه که مرحله‌ی پیش‌پردازش (Prefill) زور پردازشی خالص می‌خواد و رو سرور DGX Spark با ۳۵۰ ترافلاپس قدرت، حدود ۵ برابر سریع‌تر از مک‌بوک M5 Max جلو میره؛ ولی تولید متن یا همون دیکود به پهنای باند رم نیاز داره که مک‌بوک با سرعت ۶۱۴ گیگابایت بر ثانیه، دو برابر سرور خروجی میده. خلاصه قضیه رو تفکیک کردن تا پیش‌پردازش روی سرور انجام بشه و دیتای کَش با شبکه ۱۰ گیگابیتی فرستاده بشه رو مک‌بوک تا کار با بالاترین سرعت تموم بشه. تازه با فناوری RDMA میشه این شبکه رو انقدر سریع کرد که بخش‌های سنگین مدل مثل Attention روی حافظه سریع‌تر و بقیه روی حافظه بزرگ‌تر بشینن."
+  ],
+  "why": "چون نشون میده با ترکیب هوشمندانه‌ی چندتا سخت‌افزار معمولی‌تر و متصل کردن مک به سرور، میشه مدل‌های سنگین رو بدون خرید ابررایانه‌های نجومی با حداکثر بازدهی اجرا کرد.",
+  "tags": []
+ },
+ "updated": "2026-10-25T12:29:49+00:00",
+ "gholam_checked": "2026-10-25T12:29:49+00:00"
+}

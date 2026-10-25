@@ -2,16 +2,23 @@
  "id": 5931,
  "url": "https://t.me/dlmehr/5931",
  "date": "2026-10-16T18:29:03+00:00",
- "edited": true,
- "views": "210",
  "text": "https://fxtwitter.com/rt_visual_on_x/status/2111063956965962152?s=52&t=F41Qa04r48Mef_j_XjBneQ",
  "forwarded_from": null,
  "digest": false,
  "hash": "60bdbc3f5022",
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/rt_visual_on_x/status/2111063956965962152?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+  "site": "FxTwitter",
+  "title": "RTVisual (@RT_Visual_on_X)",
+  "description": "Chinese bride gifts her partner a flagship GPU at wedding — he breaks down in tears\nShe handed him an ASUS ROG Astral RTX 5090 that costs around $12,000",
+  "image": null
+ },
  "gholam": {
   "text": "رفیق، یه عروس خانم با‌معرفت چینی سر مراسم عروسی حرکتی زده که اشک دوماد درجا سرازیر شده و حسابی تو فضای مجازی ترکونده. این آبجی گل‌مون به عنوان هدیه ازدواج، یه کارت گرافیک پرچمدار و غول‌تشن مدل ASUS ROG Astral RTX 5090 به ارزش حدود ۱۲ هزار دلار رو تقدیم شوهرش کرده. آقا داماد هم که ظاهراً از خوره‌های دوآتشه بازی و سخت‌افزاره، تا چشمش به این قطعه رویایی افتاده عنان از کف داده و جلو مهمونا از شدت ذوق زده زیر گریه.\n\nاهمیتش اینه که داشتن یه همراه واقعی که این‌طوری پای ذوق و علاقه گیمینگی آدم وایسه و براش مایه بذاره، حتی از خود این سخت‌افزار گرون‌قیمت هم نایاب‌تره.",
   "date": "2026-10-16T18:29:23+00:00"
  },
+ "gholam_checked": "2026-10-24T23:35:31+00:00",
  "links": [
   {
    "kind": "tweet",
@@ -46,14 +53,6 @@
    "links": []
   }
  ],
- "media": [],
- "preview": {
-  "url": "https://fxtwitter.com/rt_visual_on_x/status/2111063956965962152?s=52&t=F41Qa04r48Mef_j_XjBneQ",
-  "site": "FxTwitter",
-  "title": "RTVisual (@RT_Visual_on_X)",
-  "description": "Chinese bride gifts her partner a flagship GPU at wedding — he breaks down in tears\nShe handed him an ASUS ROG Astral RTX 5090 that costs around $12,000",
-  "image": null
- },
  "article": {
   "title": "یه عروس خانم با‌معرفت چینی سر مراسم عروسی حرکتی زده که اشک دوماد درجا سرازیر شده و حسابی تو فضای مجازی ترکونده",
   "source_title": "Chinese bride gifts her partner a flagship GPU at wedding — he breaks down in tears",
@@ -66,6 +65,5 @@
    "تراشه"
   ]
  },
- "updated": "2026-10-24T23:35:31+00:00",
- "gholam_checked": "2026-10-24T23:35:31+00:00"
+ "updated": "2026-10-25T11:54:11+00:00"
 }

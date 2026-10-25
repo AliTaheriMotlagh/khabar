@@ -1,0 +1,63 @@
+{
+ "id": 5446,
+ "url": "https://t.me/dlmehr/5446",
+ "date": "2026-09-24T02:30:42+00:00",
+ "text": "https://fxtwitter.com/crispr_lucas/status/2102878373160906938?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+ "forwarded_from": null,
+ "digest": false,
+ "hash": "e20210e28657",
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/crispr_lucas/status/2102878373160906938?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+  "site": "FxTwitter",
+  "title": "Lucas Harrington (@CRISPR_LuCas)",
+  "description": "As someone who did this kind of genome mining work during my PhD, some thoughts on this Anthropic announcement:\nFirst, the very simplified version of what they did is that they noticed two genes (one known, one new) sitting next to a weird repeating piece…",
+  "image": "https://cdn4.telesco.pe/file/ctrwoXyRygE_7ZV6Ph1ceFIcra9HGKl0wwW7vpjjd4whJUOaa7eSY-6c3If1LvB0slIWXnAgcmKQyTwgx0hEr6lONOTFBiwJSjxg7_8iXB0ZLXOvq8jrT54f3jOOKjRcf7Dk1MFM1TRPcS7LXG2Q5I5mHAPhxMKwf4QQv2ZUbLAFfSoeF4L22Byo2yYZtLWqRdz3j68hZsdD4WHEfhlmW-FQIvjT0Iwy_WBvW8qoExMGVxn1BBE2Vi4CPKtdnl8RpyZq6-WfgB-oPY9dSrSOpxayhHDm9gIV2-6NAVk9Dk42t13h5dcx3yhntjMOT09GTn2K-jYkn-M3DXTddwEoFQ.jpg"
+ },
+ "gholam": {
+  "text": "رفیق، جریان از این قراره که شرکت آنتروپیک اومده با بوق و کرنا گفته هوش مصنوعیش، یعنی کلود، یه سیستم آنزیمی ناشناخته توی ژنوم باکتریوفاژها کشف کرده که شبیه کریسپره، اما لوکاس هرینگتون که خودش دکترای همین کاره حسابی ترمز این هایپ رو کشید. این متخصص میگه پیدا کردن دو تا ژن کنار دی‌ان‌ای‌های تکراری اصلاً چیز دندون‌گیری نیست و دانشمندا بیش از بیست ساله دارن با ابزارهای قدیمی همین کار رو انجام میدن. به قول این داداشمون، پیدا کردن این دسته‌ها بخش آسون کاره و هنر واقعی اونجاست که بفهمی این سیستم اصلاً تو سلول چه غلطی می‌کنه، در حالی که آنتروپیک هنوز هیچ ایده‌ای درباره کارکرد واقعیش نداره. حرف حسابش هم اینه که ورود هوش مصنوعی به زیست‌شناسی دمش گرم و عالیه، ولی نباید یه دستاورد نصفه‌نیمه و معمولی رو اون‌قدر گنده کنن که فردا اگه یه کشف درست‌درمون واقعی شد، کسی جدی نگیرتش.\n\nاهمیتش اینه که یادمون می‌اندازه وسط تبلیغات سنگین غول‌های هوش مصنوعی جوگیر نشیم و هر ادعای خامی رو پای معجزه علمی نذاریم.",
+  "date": "2026-09-24T02:30:58+00:00"
+ },
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/CRISPR_LuCas/status/2102878373160906938",
+   "domain": "x.com",
+   "author": {
+    "name": "Lucas Harrington",
+    "handle": "CRISPR_LuCas",
+    "avatar": "https://pbs.twimg.com/profile_images/1432523275658088454/iPv_Uq3b_200x200.jpg"
+   },
+   "text": "As someone who did this kind of genome mining work during my PhD, some thoughts on this Anthropic announcement:\n\nFirst, the very simplified version of what they did is that they noticed two genes (one known, one new) sitting next to a weird repeating piece of DNA. More specifically, they described an unusual reverse transcriptase (RT) associated with a repetitive DNA array and an unknown accessory protein. This kind of process was used to understand CRISPR back in 2002 and was key to the gene editing tools we use today.\n\nTo put this into context, though, people have been finding RTs associated with CRISPR arrays since 2008, and this general kind of genome-neighborhood mining has been used to discover new biological systems for decades. The basic genome-mining strategy is well established, and there are now mature tools and published pipelines for doing much of this. There are papers that discover and experimentally validate dozens of new systems using this approach in a single study. Doing it in bacteriophage genomes is also nothing new (eg CasPhi). \n\nFinding a weird cluster of genes and repeats is often the easy part. The hard part, and where the real discoveries come from, is figuring out what the system actually does. Eg for the bridge-RNA discovery in 2024 from @arcinstitute or the discovery of CasPhi in 2020 from @DoudnaJennifer they figured out the pieces of the system and the rules for what makes it work so it can be used. \n\nAnthropic does not yet know what this does. They’ve shown that the repeat array produces RNAs, but not what those RNAs do, what the RT does with them, or whether the system has any of the programmable properties that make the CRISPR comparison justified.\n\nI’m genuinely rooting for all of the frontier labs to seriously get into biological discovery, and I’m excited about what comes out of it. But announcing these very early, incremental findings with the framing of a major discovery doesn’t help. I’d much rather they set the bar high now, so that when an AI actually discovers a fundamentally new biological mechanism, everyone appreciates how big a deal it is.",
+   "date": 1790200248,
+   "media": [],
+   "links": [],
+   "quote": {
+    "author": {
+     "name": "Anthropic",
+     "handle": "AnthropicAI",
+     "avatar": "https://pbs.twimg.com/profile_images/1798110641414443008/XP8gyBaY_200x200.jpg"
+    },
+    "text": "Claude has discovered a previously unknown enzyme system hidden in the DNA of bacteriophages. Beside the enzyme’s gene sits a long array of repeating DNA—a structure that looks somewhat similar to CRISPR.\n\nWe don’t yet understand what this system does, but only a handful of known systems share its features, and all of them are able to cut, copy, and paste DNA. Historically, the discovery of such programmable systems has helped revolutionize medicine. CRISPR, for instance, is now the foundation of genetic medicines. But it will take much more work to learn what this system does, and whether it can be put to similar use.\n\nRead more: https://www.anthropic.com/news/claude-discovers-novel-enzyme-system",
+    "date": 1790187513,
+    "media": [],
+    "links": [
+     "https://www.anthropic.com/news/claude-discovers-novel-enzyme-system"
+    ]
+   }
+  }
+ ],
+ "article": {
+  "title": "جریان از این قراره که شرکت آنتروپیک اومده با بوق و کرنا گفته هوش مصنوعیش، یعنی کلود، یه سیستم آنزیمی ناشناخته توی ژنوم باکتریوفاژها کشف کرده که شبیه کریسپره، اما لوکاس هرینگتون که خودش دکترای همین کاره حسابی ترمز این هایپ رو کشید",
+  "source_title": "As someone who did this kind of genome mining work during my PhD, some thoughts on this Anthropic announcement:",
+  "body": [
+   "رفیق، جریان از این قراره که شرکت آنتروپیک اومده با بوق و کرنا گفته هوش مصنوعیش، یعنی کلود، یه سیستم آنزیمی ناشناخته توی ژنوم باکتریوفاژها کشف کرده که شبیه کریسپره، اما لوکاس هرینگتون که خودش دکترای همین کاره حسابی ترمز این هایپ رو کشید. این متخصص میگه پیدا کردن دو تا ژن کنار دی‌ان‌ای‌های تکراری اصلاً چیز دندون‌گیری نیست و دانشمندا بیش از بیست ساله دارن با ابزارهای قدیمی همین کار رو انجام میدن. به قول این داداشمون، پیدا کردن این دسته‌ها بخش آسون کاره و هنر واقعی اونجاست که بفهمی این سیستم اصلاً تو سلول چه غلطی می‌کنه، در حالی که آنتروپیک هنوز هیچ ایده‌ای درباره کارکرد واقعیش نداره. حرف حسابش هم اینه که ورود هوش مصنوعی به زیست‌شناسی دمش گرم و عالیه، ولی نباید یه دستاورد نصفه‌نیمه و معمولی رو اون‌قدر گنده کنن که فردا اگه یه کشف درست‌درمون واقعی شد، کسی جدی نگیرتش."
+  ],
+  "why": "یادمون می‌اندازه وسط تبلیغات سنگین غول‌های هوش مصنوعی جوگیر نشیم و هر ادعای خامی رو پای معجزه علمی نذاریم.",
+  "tags": [
+   "آنتروپیک"
+  ]
+ },
+ "updated": "2026-10-25T12:25:59+00:00",
+ "gholam_checked": "2026-10-25T12:25:59+00:00"
+}

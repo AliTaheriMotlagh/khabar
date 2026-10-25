@@ -1,0 +1,50 @@
+{
+ "id": 5159,
+ "url": "https://t.me/dlmehr/5159",
+ "date": "2026-09-05T23:43:01+00:00",
+ "text": "https://fxtwitter.com/gregisenberg/status/2095854071580156338?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+ "forwarded_from": null,
+ "digest": false,
+ "hash": "0e566822889d",
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/gregisenberg/status/2095854071580156338?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+  "site": "FxTwitter",
+  "title": "GREG ISENBERG (@gregisenberg)",
+  "description": "9 cool GPT 6 Astra prompts worth trying:\n1. The bill renegotiator.\n\"Go through my internet, phone, and software bills, jump into each provider's chat support, and negotiate them down or cancel what I'm not using.\"\n2. Turn an agency into software.\n“Pick…",
+  "image": "https://cdn4.telesco.pe/file/BupScYTKdUBh3a4U0CVMfw-H9_Jr-nVaEpwrAk01WhIr8ge3Wnx6jfSMII1_uMJRg3MeIiGjz0xCTg8hbbGF4euj9ZOo9D2uddV_E0WDsyV7Qz-UPZDS1AFiCsvqw91lLX8SHOLkc3c4FcHMj-3AW-5p3y03DhulAhca9ZjoRcqqjEovj7UtWBA3v5_pX3mVmhLVqJQYhGA4lZWSIP4A-WCkTVm7oJSn4qwWMJwU10drOcqgef5_FwT5JeBftLjOGnLqOqf9kCAzo19wAQbQYril1Wt_1m3J0TMNWvAM6OFAt2t9plzCqxZXuXbksEzUWjwCkyxet8cY51a4sUPsOQ.jpg"
+ },
+ "gholam": {
+  "text": "ببین رفیق، این داداشمون گرگ آیزنبرگ نشسته ۹ تا پرامپت مشتی و همه‌فن‌حریف واسه هوش مصنوعی‌های ایجنت‌محور ردیف کرده که رسماً کار یه تیم کامل رو یه تنه راه می‌ندازن. قضیه از این قراره که این دستورها به مدل یاد می‌دن بره با پشتیبانی سرویس‌ها چت کنه و تخفیف قبض بگیره، آگهی‌های زیر قیمت بازار رو برات شکار کنه و حتی رقبای کاریت رو مخفیانه زیر نظر بگیره. تازه از اون خفن‌تر، با این پرامپت‌ها می‌تونی فرایند کاری آژانس‌های خدماتی رو مهندسی معکوس کنی و به نرم‌افزار بفروشی، یا شب‌ها کل باگ‌های اپلیکیشنت رو با تست خودکار دربیاری. خلاصه کلام اینکه با این فرمول‌ها، هوش مصنوعی از یه هم‌کلام ساده تبدیل به یه کارمند زرنگ می‌شه که توی مرورگر می‌چرخه و وقت و پولت رو نجات می‌ده.\n\nاهمیتش اینه که نشون میده دوران چت‌های ساده سر اومده و آینده دست ایجنت‌های هوشمندی کارهای پیچیده و پول‌ساز دنیای واقعی رو اتوماتیک پیش می‌برن.",
+  "date": "2026-09-05T23:43:12+00:00"
+ },
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/gregisenberg/status/2095854071580156338",
+   "domain": "x.com",
+   "author": {
+    "name": "GREG ISENBERG",
+    "handle": "gregisenberg",
+    "avatar": "https://pbs.twimg.com/profile_images/1577116785656139776/5mi0qgTz_200x200.jpg"
+   },
+   "text": "9 cool GPT 6 Astra prompts worth trying:\n\n1. The bill renegotiator.\n\n\"Go through my internet, phone, and software bills, jump into each provider's chat support, and negotiate them down or cancel what I'm not using.\"\n\n2. Turn an agency into software.\n\n“Pick one service business in [niche] and reverse-engineer the exact workflow they sell to clients. Break it into steps, tools used, inputs, outputs, human judgment points, and places where the work gets slow or expensive. Then design the simplest AI product that could replace the first version of that service and charge $500-$5,000/month.”\n\n3. Garage sale flipper.\n\n\"Watch Facebook Marketplace and Craigslist in my city for [cameras / furniture / bikes] listed way under market, and text me the second one's mispriced with the link.\"\n\n4. Create my 1 person company dashboard.\n\n“Look at my docs, notes, Stripe exports, analytics, customer calls, and project list, then build a weekly operator dashboard. I want to know what is making money, what is wasting time, what customers are asking for, what I should stop doing, and the three highest-leverage actions for next week. Be blunt and show your work.”\n\n5. Audit my company for agent opportunities.\n\n“Look at how this business works and find the tasks we should give to agents before hiring another person. For each task, estimate the current human time, the cost of mistakes, the tools involved, the difficulty of automating it, and the first safe version we could deploy. Prioritize things that save money or create revenue within 30 days.”\n\n6. Be my browser operator.\n\n“Use the browser to complete this workflow: [workflow]. As you go, click through the actual sites, collect the data, fill the forms where appropriate, and keep notes on what broke or slowed you down. When you’re done, give me the output, the repeatable SOP, and the automation plan so this can become an agent.”\n\n7. The whole QA team.\n\n\"Every night, open my app on a real phone, go through signup, checkout, and the main flows, and screenshot anything that's broken or confusing.\"\n\n8. The competitor spy.\n\n\"Sign up for my top 3 competitors, sit inside their product and their emails, and send me a monthly report on every new feature, price change, and thing they do better than us.\"\n\n9. Make a game people would actually play for 5 minutes as a lead magnet\n\n“Build a browser game around this mechanic: [mechanic]. Don’t just make a cute demo; add progression, tension, scoring, failure, polish, and one reason someone would send it to a friend. Then add lead capture (email/sms), it needs to tie into my core product which sells XYZ.”",
+   "date": 1788525524,
+   "media": [],
+   "links": []
+  }
+ ],
+ "article": {
+  "title": "این داداشمون گرگ آیزنبرگ نشسته ۹ تا پرامپت مشتی و همه‌فن‌حریف واسه هوش مصنوعی‌های ایجنت‌محور ردیف کرده که رسماً کار یه تیم کامل رو یه تنه راه می‌ندازن",
+  "source_title": "9 cool GPT 6 Astra prompts worth trying:",
+  "body": [
+   "ببین رفیق، این داداشمون گرگ آیزنبرگ نشسته ۹ تا پرامپت مشتی و همه‌فن‌حریف واسه هوش مصنوعی‌های ایجنت‌محور ردیف کرده که رسماً کار یه تیم کامل رو یه تنه راه می‌ندازن. قضیه از این قراره که این دستورها به مدل یاد می‌دن بره با پشتیبانی سرویس‌ها چت کنه و تخفیف قبض بگیره، آگهی‌های زیر قیمت بازار رو برات شکار کنه و حتی رقبای کاریت رو مخفیانه زیر نظر بگیره. تازه از اون خفن‌تر، با این پرامپت‌ها می‌تونی فرایند کاری آژانس‌های خدماتی رو مهندسی معکوس کنی و به نرم‌افزار بفروشی، یا شب‌ها کل باگ‌های اپلیکیشنت رو با تست خودکار دربیاری. خلاصه کلام اینکه با این فرمول‌ها، هوش مصنوعی از یه هم‌کلام ساده تبدیل به یه کارمند زرنگ می‌شه که توی مرورگر می‌چرخه و وقت و پولت رو نجات می‌ده."
+  ],
+  "why": "نشون میده دوران چت‌های ساده سر اومده و آینده دست ایجنت‌های هوشمندی کارهای پیچیده و پول‌ساز دنیای واقعی رو اتوماتیک پیش می‌برن.",
+  "tags": [
+   "اوپن‌ای‌آی"
+  ]
+ },
+ "updated": "2026-10-25T12:27:49+00:00",
+ "gholam_checked": "2026-10-25T12:27:49+00:00"
+}

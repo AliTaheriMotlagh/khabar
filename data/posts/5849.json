@@ -1,0 +1,57 @@
+{
+ "id": 5849,
+ "url": "https://t.me/dlmehr/5849",
+ "date": "2026-10-12T20:04:03+00:00",
+ "text": "https://fxtwitter.com/scaling01/status/2109728458276323371?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+ "forwarded_from": null,
+ "digest": false,
+ "hash": "837a0cfe95ff",
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/scaling01/status/2109728458276323371?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+  "site": "🧵 Thread • FxTwitter",
+  "title": "Lisan al Gaib (@scaling01)",
+  "description": "ANTHROPIC: \"small AI models may be months away from being capable enough to self-replicate on commercial IoT devices\"\n\"In our evals, a 9B model got inference running on 8 of the 9 hardware types we tested\"",
+  "image": "https://cdn4.telesco.pe/file/OhxWUR8PyBCcueJCSZlMgIJbUUcrgYANm6oIaZkedcolbLDUF3peLJeqy5w8nXyDTYRSRhKgVo_fhQdBqW88_ec-RFUnvowDVugc979CjVDllRz5aczmX0Po53ebGqA5YT_tIpfQVZjPon9pEq9pr4itlEhlVfxv5PaxER2xcLMpuerNF4HaVMEtaGg6ukYJl9y-XwpVGvnFWG5cK5mYfgCg-_SatealaoqtnU4uWQhOQukHYsVeigXLkztYv1uLScvLkUh_hp0_UNVsvd8UrTPxKOwUv3i5MztXGVW3zKDx_U3Xy3CNArjekY1wTgHF5nb9oUG9Ml9lft9XmjG6Rg.jpg"
+ },
+ "gholam": {
+  "text": "رفیق، بچه‌های شرکت آنتروپیک یه هشدار پشم‌ریزون دادن و می‌گن هوش مصنوعی‌های جمع‌وجور، فقط چند ماه با این فاصله دارن که بتونن خودشون رو روی دستگاه‌های معمولی اینترنت اشیاء (IoT) مثل گجت‌های خونگی تکثیر کنن. توی ارزیابی‌های اخیرشون، یه مدل کوچیک ۹ میلیارد پارامتری موفق شده روی ۸ تا از ۹ مدل سخت‌افزاری که روش تست شده، فرایند استنتاج و اجرای خودش رو بالا بیاره و مستقر بشه. یعنی دیگه نیازی به سرورهای غول‌پیکر و دیتاسنترهای خفن ندارن و همین وسایل هوشمند دم‌دستی هم می‌تونه بشه لونه و بستر تکثیرشون.\n\nچرا مهمه؟ اهمیتش اینه که اگه این مدل‌ها توانایی تکثیر خودکار پیدا کنن و توی دیوایس‌های ریز و درشت اطرافمون پخش بشن، کنترل امنیتی و مهار کردنشون عملاً تبدیل به یه کابوس بی‌انتها می‌شه.",
+  "date": "2026-10-12T20:04:19+00:00"
+ },
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/scaling01/status/2109728458276323371",
+   "domain": "x.com",
+   "author": {
+    "name": "Lisan al Gaib",
+    "handle": "scaling01",
+    "avatar": "https://pbs.twimg.com/profile_images/1831493788679761920/-q9w6dzd_200x200.jpg"
+   },
+   "text": "ANTHROPIC: \"small AI models may be months away from being capable enough to self-replicate on commercial IoT devices\"\n\n\"In our evals, a 9B model got inference running on 8 of the 9 hardware types we tested\"",
+   "date": 1791833435,
+   "media": [
+    {
+     "type": "image",
+     "src": "https://pbs.twimg.com/media/HUdCrXNXkAAqNdF.jpg?name=orig",
+     "ratio": 1.0606
+    }
+   ],
+   "links": []
+  }
+ ],
+ "article": {
+  "title": "بچه‌های شرکت آنتروپیک یه هشدار پشم‌ریزون دادن و می‌گن هوش مصنوعی‌های جمع‌وجور، فقط چند ماه با این فاصله دارن که بتونن خودشون رو روی دستگاه‌های معمولی اینترنت اشیاء (IoT) مثل گجت‌های خونگی تکثیر کنن",
+  "source_title": "ANTHROPIC: \"small AI models may be months away from being capable enough to self-replicate on commercial IoT devices\"",
+  "body": [
+   "رفیق، بچه‌های شرکت آنتروپیک یه هشدار پشم‌ریزون دادن و می‌گن هوش مصنوعی‌های جمع‌وجور، فقط چند ماه با این فاصله دارن که بتونن خودشون رو روی دستگاه‌های معمولی اینترنت اشیاء (IoT) مثل گجت‌های خونگی تکثیر کنن. توی ارزیابی‌های اخیرشون، یه مدل کوچیک ۹ میلیارد پارامتری موفق شده روی ۸ تا از ۹ مدل سخت‌افزاری که روش تست شده، فرایند استنتاج و اجرای خودش رو بالا بیاره و مستقر بشه. یعنی دیگه نیازی به سرورهای غول‌پیکر و دیتاسنترهای خفن ندارن و همین وسایل هوشمند دم‌دستی هم می‌تونه بشه لونه و بستر تکثیرشون."
+  ],
+  "why": "اهمیتش اینه که اگه این مدل‌ها توانایی تکثیر خودکار پیدا کنن و توی دیوایس‌های ریز و درشت اطرافمون پخش بشن، کنترل امنیتی و مهار کردنشون عملاً تبدیل به یه کابوس بی‌انتها می‌شه.",
+  "tags": [
+   "آنتروپیک",
+   "گجت"
+  ]
+ },
+ "updated": "2026-10-25T12:23:42+00:00",
+ "gholam_checked": "2026-10-25T12:23:42+00:00"
+}

@@ -1,0 +1,77 @@
+{
+ "id": 5625,
+ "url": "https://t.me/dlmehr/5625",
+ "date": "2026-10-04T17:20:21+00:00",
+ "text": "https://fxtwitter.com/kimmonismus/status/2106669429320761788?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+ "forwarded_from": null,
+ "digest": false,
+ "hash": "4d8d72b3c35d",
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/kimmonismus/status/2106669429320761788?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+  "site": "FxTwitter",
+  "title": "Chubby ♨️ (@kimmonismus)",
+  "description": "Aleph Alpha’s Kolibri looks like a surprisingly strong AI release from Germany! I did not expect that but respect where respect is due!\n78B total parameters, just 3.46B active per token, and open weights under Apache 2.0. Built from scratch for German and…",
+  "image": "https://cdn4.telesco.pe/file/K-FblrbI90CKD18kQZTymwRxGswaaMjS9dYna9PrWHzzPuRI3onSqEI_f58oWiPrl2NUKM023gmElgQK8rAqolZ136PRApeG0XRuEYsnvjVpHIY_Ry4Qav9SemqXHPAXI7CGXCdLEAgPvtkq_JJcn2fBXti0IfdPLbk5feBXAt4N6rIZIZFx5jYmo50rp5_0XVwA3deZX8j87zd59SDPW9en6WerofguVbl4Mx5d3vP0qpBciglsbcL9k7b0iICN8y76V8yz0pvKQJ_htMkUoXE5o3eUkpRgh0Zg5fJkvF_SSetJPNz5P0Xk3RMbUkMIeIvTWSseWyZ1tNEJEOI6Qw.jpg"
+ },
+ "gholam": {
+  "text": "ببین رفیق، این بچه‌های شرکت آلمانی «الف آلفا» با مدل جدیدشون به اسم «کولیبری» بدجوری تو میدون هوش مصنوعی گرد و خاک کردن و همه رو انگشت‌به‌دهن گذاشتن. این شاهکار کلاً ۷۸ میلیارد پارامتر داره که به لطف معماری خفنش فقط ۳.۴۶ میلیاردش موقع پردازش فعال میشه، تا سقف یک میلیون توکن متن رو پشتیبانی می‌کنه و با لایسنس کاملاً آزادِ آپاچی ۲.۰ منتشر شده. توی آزمون‌های سخت ریاضی مثل AIME رکورد مشتیِ ۹۶.۹ درصدی زده و تو زبان آلمانی از رقبای قدری مثل کیوئن جلو زده، هرچند تو بحث بنچمارک‌های کدنویسی هنوز یه نمه کار داره. خلاصه نشون داده که اروپایی‌ها هم بی‌سر و صدا اومدن وسط رینگ و دارن پا به پای غول‌ها نفس‌کش می‌طلبن.\n\nچرا مهمه؟ اهمیتش اینه که نشون میده انحصار ساخت مدل‌های کاردرست دیگه دست آمریکا و چین نیست و هر کسی با معماری بهینه می‌تونه یه هوش مصنوعی سبک و همه‌فن‌حریف رو سخت‌افزار خودش راه بندازه.",
+  "date": "2026-10-04T17:20:39+00:00"
+ },
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/kimmonismus/status/2106669429320761788",
+   "domain": "x.com",
+   "author": {
+    "name": "Chubby♨️",
+    "handle": "kimmonismus",
+    "avatar": "https://pbs.twimg.com/profile_images/1728327996375719936/RW7VBJfD_200x200.jpg"
+   },
+   "text": "Aleph Alpha’s Kolibri looks like a surprisingly strong AI release from Germany! I did not expect that but respect where respect is due!\n\n78B total parameters, just 3.46B active per token, and open weights under Apache 2.0. Built from scratch for German and English.\n\nIn Aleph Alpha’s own evaluations, it scores 96.9% on AIME 2025 and 84.3% on GPQA Diamond. Its German overall score narrowly beats Qwen3.5 35B-A3B and GPT-OSS 120B.\n\nCoding is more mixed: 66.4% on SWE-Bench Verified, behind Qwen3.6’s 73.8%.\n\nIt increasingly looks as though any \"moat\" - especially with small models - is evaporating, and it no longer matters whether the players are from China, the US, or Europe. Anyone can train good small models.",
+   "date": 1791104106,
+   "media": [
+    {
+     "type": "image",
+     "src": "https://pbs.twimg.com/media/HTxkhxbWAAAbP4G.jpg?name=orig",
+     "ratio": 1.2304
+    }
+   ],
+   "links": [],
+   "quote": {
+    "author": {
+     "name": "Aleph Alpha",
+     "handle": "Aleph__Alpha",
+     "avatar": "https://pbs.twimg.com/profile_images/2057115109634277376/fC_LXzcw_200x200.jpg"
+    },
+    "text": "Small bird, fast wings, Kolibri is here.\n\n78B parameters. 3.46B active. Up to 1M tokens of context. Built in Europe.\n\nNow the weights are yours. Run it on your own hardware, under Apache 2.0.",
+    "date": 1791017658,
+    "media": [
+     {
+      "type": "video",
+      "src": "https://video.twimg.com/amplify_video/2106306829869309952/vid/avc1/720x720/y7iz-sdpLpg5K2m0.mp4?tag=29",
+      "poster": "https://pbs.twimg.com/amplify_video_thumb/2106306829869309952/img/mPpdUNTxekX7VhBs.jpg",
+      "ratio": 1.0,
+      "duration": 3.52,
+      "gif": false
+     }
+    ],
+    "links": []
+   }
+  }
+ ],
+ "article": {
+  "title": "این بچه‌های شرکت آلمانی «الف آلفا» با مدل جدیدشون به اسم «کولیبری» بدجوری تو میدون هوش مصنوعی گرد و خاک کردن و همه رو انگشت‌به‌دهن گذاشتن",
+  "source_title": "Aleph Alpha’s Kolibri looks like a surprisingly strong AI release from Germany! I did not expect that but respect where respect is due!",
+  "body": [
+   "ببین رفیق، این بچه‌های شرکت آلمانی «الف آلفا» با مدل جدیدشون به اسم «کولیبری» بدجوری تو میدون هوش مصنوعی گرد و خاک کردن و همه رو انگشت‌به‌دهن گذاشتن. این شاهکار کلاً ۷۸ میلیارد پارامتر داره که به لطف معماری خفنش فقط ۳.۴۶ میلیاردش موقع پردازش فعال میشه، تا سقف یک میلیون توکن متن رو پشتیبانی می‌کنه و با لایسنس کاملاً آزادِ آپاچی ۲.۰ منتشر شده. توی آزمون‌های سخت ریاضی مثل AIME رکورد مشتیِ ۹۶.۹ درصدی زده و تو زبان آلمانی از رقبای قدری مثل کیوئن جلو زده، هرچند تو بحث بنچمارک‌های کدنویسی هنوز یه نمه کار داره. خلاصه نشون داده که اروپایی‌ها هم بی‌سر و صدا اومدن وسط رینگ و دارن پا به پای غول‌ها نفس‌کش می‌طلبن."
+  ],
+  "why": "اهمیتش اینه که نشون میده انحصار ساخت مدل‌های کاردرست دیگه دست آمریکا و چین نیست و هر کسی با معماری بهینه می‌تونه یه هوش مصنوعی سبک و همه‌فن‌حریف رو سخت‌افزار خودش راه بندازه.",
+  "tags": [
+   "چین",
+   "کدنویسی"
+  ]
+ },
+ "updated": "2026-10-25T12:24:59+00:00",
+ "gholam_checked": "2026-10-25T12:24:59+00:00"
+}

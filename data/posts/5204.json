@@ -1,0 +1,67 @@
+{
+ "id": 5204,
+ "url": "https://t.me/dlmehr/5204",
+ "date": "2026-09-08T18:28:22+00:00",
+ "text": "https://fxtwitter.com/mikeknoop/status/2097385222857973796?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+ "forwarded_from": null,
+ "digest": false,
+ "hash": "219c62e4fb35",
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/mikeknoop/status/2097385222857973796?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+  "site": "FxTwitter",
+  "title": "Mike Knoop (@mikeknoop)",
+  "description": "Amazing! OpenAI says they had 10,000 concurrent agents at peak. There are now three clear demonstrated axes of test-time adaptation / compute:\n1. Linear token space reasoning\n2. Parallel token space (multi-agent)\n3. Latent space reasoning\nQuoting OpenAI…",
+  "image": "https://cdn4.telesco.pe/file/DPo7wOk8_mBkrPh46-Xy86KGzZxlL9gODBQVtTnbkzdYdqr60Ljqe9DDgHLCxdCRwej-8WCYw9zGu2WYCAHFHIkD7-JAs-20yrEhf3ZpVwiB38iTrrVl_W3B_KnfortqCpy-VVUcCwAvZbUvUD8EX-AgYu5wc_rFHXZTraMksk34J13TpzGk56Ni9KPK07AYqPlrrYL11Q82NJ45KtB8W3G_YVtum3y0Fc7vdv6bzKyo_yQACpFhq_FoSUCMgTmiKg5cPMIp9s-YoRX9BlcaoeDDFxS0PbKL59A8oJZthc6kYWYFvCfcncqpi0vm6H-YM73dpDaJrWPvGq0afe8Y4Q.jpg"
+ },
+ "gholam": {
+  "text": "رفیق، مایک نوپ یه خبر برگ‌ریزون از برو‌بچه‌های OpenAI رو علم کرده که می‌گن تو اوج کارشون، ۱۰ هزار تا ایجنت هوش مصنوعی رو هم‌زمان فرستادن تو گود. طبق این ادعا، یه لشکر از ایجنت‌ها با یه مدل فوق‌العاده پیشرفته‌تر از GPT-6 تونستن مسئله تاریخی و حل‌نشده ناویر-استوکس تو ریاضیات رو ضربه‌فنی کنن. نوپ هم اشاره کرده که حالا دیگه رسماً وارد عصر استدلال در سه بعد شدیم؛ استدلال خطی، همکاری موازی و شبکه‌ای چند ایجنت، و تفکر تو فضای نهفته.\n\nاهمیتش اینه که نشون میده فتح پیچیده‌ترین قله‌های علم دیگه فقط کار یه مدل بزرگ نیست، بلکه با کار تیمی هم‌زمان هزاران ایجنت هوشمند قراره غیرممکن‌ها ممکن بشه.",
+  "date": "2026-09-08T18:28:41+00:00"
+ },
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/mikeknoop/status/2097385222857973796",
+   "domain": "x.com",
+   "author": {
+    "name": "Mike Knoop",
+    "handle": "mikeknoop",
+    "avatar": "https://pbs.twimg.com/profile_images/1800408200229113856/4hvnirWk_200x200.jpg"
+   },
+   "text": "Amazing! OpenAI says they had 10,000 concurrent agents at peak. There are now three clear demonstrated axes of test-time adaptation / compute:\n\n1. Linear token space reasoning\n2. Parallel token space (multi-agent)\n3. Latent space reasoning",
+   "date": 1788890579,
+   "media": [],
+   "links": [],
+   "quote": {
+    "author": {
+     "name": "OpenAI",
+     "handle": "OpenAI",
+     "avatar": "https://pbs.twimg.com/profile_images/1885410181409820672/ztsaR0JW_200x200.jpg"
+    },
+    "text": "We’re sharing a solution to the Navier-Stokes Millennium Prize Problem, one of the deepest problems at the frontier of mathematics.\n\nThe proof was produced by a group of agents, using an OpenAI next-generation model significantly more capable than GPT-6 Astra.\n\nThe problem concerns whether the description of smooth three-dimensional fluid motion modeled by the Navier-Stokes equations can break down. It has remained unresolved for roughly 90 years.",
+    "date": 1788888056,
+    "media": [
+     {
+      "type": "image",
+      "src": "https://pbs.twimg.com/media/HRtS_iLboAUUlYv.jpg?name=orig",
+      "ratio": 1.0
+     }
+    ],
+    "links": []
+   }
+  }
+ ],
+ "article": {
+  "title": "مایک نوپ یه خبر برگ‌ریزون از برو‌بچه‌های OpenAI رو علم کرده که می‌گن تو اوج کارشون، ۱۰ هزار تا ایجنت هوش مصنوعی رو هم‌زمان فرستادن تو گود",
+  "source_title": "Amazing! OpenAI says they had 10,000 concurrent agents at peak. There are now three clear demonstrated axes of test-time adaptation /…",
+  "body": [
+   "رفیق، مایک نوپ یه خبر برگ‌ریزون از برو‌بچه‌های OpenAI رو علم کرده که می‌گن تو اوج کارشون، ۱۰ هزار تا ایجنت هوش مصنوعی رو هم‌زمان فرستادن تو گود. طبق این ادعا، یه لشکر از ایجنت‌ها با یه مدل فوق‌العاده پیشرفته‌تر از GPT-6 تونستن مسئله تاریخی و حل‌نشده ناویر-استوکس تو ریاضیات رو ضربه‌فنی کنن. نوپ هم اشاره کرده که حالا دیگه رسماً وارد عصر استدلال در سه بعد شدیم؛ استدلال خطی، همکاری موازی و شبکه‌ای چند ایجنت، و تفکر تو فضای نهفته."
+  ],
+  "why": "نشون میده فتح پیچیده‌ترین قله‌های علم دیگه فقط کار یه مدل بزرگ نیست، بلکه با کار تیمی هم‌زمان هزاران ایجنت هوشمند قراره غیرممکن‌ها ممکن بشه.",
+  "tags": [
+   "اوپن‌ای‌آی"
+  ]
+ },
+ "updated": "2026-10-25T12:27:33+00:00",
+ "gholam_checked": "2026-10-25T12:27:33+00:00"
+}

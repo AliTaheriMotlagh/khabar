@@ -1,0 +1,69 @@
+{
+ "id": 5585,
+ "url": "https://t.me/dlmehr/5585",
+ "date": "2026-10-01T20:57:16+00:00",
+ "text": "https://fxtwitter.com/fastinoai/status/2105726406047244790?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+ "forwarded_from": null,
+ "digest": false,
+ "hash": "1644c9030926",
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/fastinoai/status/2105726406047244790?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+  "site": "FxTwitter",
+  "title": "Fastino Labs (@fastinoAI)",
+  "description": "Introducing GLiDE, a thinking decision model built for reasoning-intensive decisions.\nUsing the official Decision Index 0.2.1 scorer, GLiDE scores 64.81, leading Jev by 6.90 skill points and outperforming it across all five evaluation areas, including an…",
+  "image": null
+ },
+ "gholam": {
+  "text": "رفیق، بچه‌های فستینو لبز از یه مدل خفن تصیم‌گیری به اسم GLiDE رونمایی کردن که خوراک کارهای چندمرحله‌ای و استدلال‌های سنگینه. فرق اساسی این هوش مصنوعی با مدل‌های قبلی اینه که یه بار تصمیم نمی‌گیره و در بره؛ اول میزان اطمینان خودشو چک می‌کنه و اگه شک داشته باشه، خودش پردازش و وقت اضافه اختصاص می‌ده تا قشنگ سبک‌سنگین کنه. توی بنچمارک معتبر دسیژن ایندکس هم امتیاز ۶۴.۸۱ گرفته و رقیبش یعنی مدل Jev رو تو تمام پنج بخش ارزیابی با اختلاف لوله کرده. ته ماجرا هم همراه هر تصمیم، میزان درصد اطمینانش رو دقیق کف دستت می‌ذاره تا بدونی چقدر رو جوابش حساب باز کنی.\n\nاهمیتش اینه که ایجنت‌های هوش مصنوعی دیگه موقع تردید جواب پرت‌وپلا تحویل نمیدن و مثل یه آدم عاقل، سر تصمیم‌های حساس اول ترمز می‌زنن و بیشتر فکر می‌کنن.",
+  "date": "2026-10-01T20:57:28+00:00"
+ },
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/fastinoAI/status/2105726406047244790",
+   "domain": "x.com",
+   "author": {
+    "name": "Fastino Labs",
+    "handle": "fastinoAI",
+    "avatar": "https://pbs.twimg.com/profile_images/2039402202738102272/0PlhDFBv_200x200.jpg"
+   },
+   "text": "Introducing GLiDE, a thinking decision model built for reasoning-intensive decisions.\n\nUsing the official Decision Index 0.2.1 scorer, GLiDE scores 64.81, leading Jev by 6.90 skill points and outperforming it across all five evaluation areas, including an 11.5-point lead in Knowledge and Reasoning.\n\nTypically, decision models are designed to score a set of options in one pass. GLiDE takes that process a step further by recognizing when a decision requires more effort.\n\nAfter producing an initial answer, GLiDE quickly assesses its confidence. When the result is uncertain, the model automatically allocates more compute to thinking further and incorporates that reasoning into its final probabilities.\n\nThis allows GLiDE to move beyond straightforward classification into complex, multi-step decisions like selecting from hundreds of tools, choosing the best next action from hundreds of possible paths, or judging and verifying reasoning-intensive model outputs.\n\nWith every decision, it returns:\n\n• The selected action\n• A corresponding confidence score\n• A probability distribution across the available options\n\nGLiDE is available today for inference and training on the Fastino API.\n\nTry it now on the Fastino API: http://agent.fastino.ai\nRead the release blog: https://fastino.ai/blog/introducing-glide-the-first-thinking-decision-model",
+   "date": 1790879272,
+   "media": [
+    {
+     "type": "video",
+     "src": "https://video.twimg.com/amplify_video/2105689425888108544/vid/avc1/1280x720/PmMiqvBsKX_JtHrm.mp4?tag=29",
+     "poster": "https://pbs.twimg.com/amplify_video_thumb/2105689425888108544/img/OKn5dF1WLujUpcR6.jpg",
+     "ratio": 0.5625,
+     "duration": 38.2,
+     "gif": false
+    }
+   ],
+   "links": [
+    "http://agent.fastino.ai",
+    "https://fastino.ai/blog/introducing-glide-the-first-thinking-decision-model"
+   ]
+  },
+  {
+   "kind": "link",
+   "url": "https://agent.fastino.ai/",
+   "domain": "agent.fastino.ai",
+   "title": "Fastino Labs",
+   "description": "Inference and Post-Train Open Source Models",
+   "image": "https://agent.fastino.ai/og.png",
+   "site": "Fastino"
+  }
+ ],
+ "article": {
+  "title": "بچه‌های فستینو لبز از یه مدل خفن تصیم‌گیری به اسم GLiDE رونمایی کردن که خوراک کارهای چندمرحله‌ای و استدلال‌های سنگینه",
+  "source_title": "Introducing GLiDE, a thinking decision model built for reasoning-intensive decisions.",
+  "body": [
+   "رفیق، بچه‌های فستینو لبز از یه مدل خفن تصیم‌گیری به اسم GLiDE رونمایی کردن که خوراک کارهای چندمرحله‌ای و استدلال‌های سنگینه. فرق اساسی این هوش مصنوعی با مدل‌های قبلی اینه که یه بار تصمیم نمی‌گیره و در بره؛ اول میزان اطمینان خودشو چک می‌کنه و اگه شک داشته باشه، خودش پردازش و وقت اضافه اختصاص می‌ده تا قشنگ سبک‌سنگین کنه. توی بنچمارک معتبر دسیژن ایندکس هم امتیاز ۶۴.۸۱ گرفته و رقیبش یعنی مدل Jev رو تو تمام پنج بخش ارزیابی با اختلاف لوله کرده. ته ماجرا هم همراه هر تصمیم، میزان درصد اطمینانش رو دقیق کف دستت می‌ذاره تا بدونی چقدر رو جوابش حساب باز کنی."
+  ],
+  "why": "ایجنت‌های هوش مصنوعی دیگه موقع تردید جواب پرت‌وپلا تحویل نمیدن و مثل یه آدم عاقل، سر تصمیم‌های حساس اول ترمز می‌زنن و بیشتر فکر می‌کنن.",
+  "tags": []
+ },
+ "updated": "2026-10-25T12:25:13+00:00",
+ "gholam_checked": "2026-10-25T12:25:13+00:00"
+}

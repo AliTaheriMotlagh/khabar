@@ -2,16 +2,23 @@
  "id": 5936,
  "url": "https://t.me/dlmehr/5936",
  "date": "2026-10-16T19:16:49+00:00",
- "edited": true,
- "views": "208",
  "text": "https://fxtwitter.com/semianalysis_/status/2111162214891610496?s=52&t=F41Qa04r48Mef_j_XjBneQ",
  "forwarded_from": null,
  "digest": false,
  "hash": "8a5a5326ecc3",
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/semianalysis_/status/2111162214891610496?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+  "site": "FxTwitter",
+  "title": "SemiAnalysis (@SemiAnalysis_)",
+  "description": "SHOCKING: We have confirmed that multiple Neoclouds have been refused access to GTC Berlin due to them adding AMD GPUs, TPUs, and other chips to their cloud offerings\nNote that this doesn't apply to hyperscalers, as they have more buying power. But for neoclouds…",
+  "image": "https://cdn4.telesco.pe/file/HKhQqqAXLzJHDDn9WSNBB8tyc00zXEE_DbzRH5qPn4zXULjDXQDEJ37ytNukPZ0WnAMSFLIm6EEEhvRVTghlw_p3KuD0muZ9ZdlgipUtE-HXOSHLTVSQ3okaTgnKja8IlS_1u9BmwLl9DraJoCLETZmHfq9S9dtMzcS5ABjIKsRYpsEHSMp7JiEy4-nLE98vPix7oB5j2m9jUC3wOmQ2CluomRk18UfRM_A7aaCDqWrufBJnDeE9Nija9qSreWSSqQQN-nr5_76ootHLxGNQ01slLZmIKIKfZU8-wVQrN7k5ZmusmODzwoQ_ODf9GbE3bhwzyplDKrh4MPORUdnrNw.jpg"
+ },
  "gholam": {
   "text": "ببین رفیق، انویدیا حسابی شمشیر رو از رو بسته و طبق گزارش‌ها، جلوی ورود چند تا از شرکت‌های ابری نوپا رو به رویداد GTC برلین گرفته، فقط به این جرم که رفتن سراغ چیپ‌های رقیب مثل AMD و TPU گوگل! البته زورش به غول‌های گردن‌کلفتی مثل مایکروسافت و آمازون نمی‌رسه چون خریدارای عمده هستن، اما داره این ابری‌های جمع‌وجورتر رو با قلدری تحت فشار می‌ذاره تا فقط مشتری پر و پاقرص خودش بمونن. کار به جایی رسیده که مدیرای این نئوکلاودها از ترسِ قطع شدن سهمیه گرافیک و محروم شدن از پشتیبانی، مجبور شدن یواشکی و زیرمیزی سراغ سخت‌افزارهای رقیب برن تا مبادا انویدیا نقره‌داغشون کنه.\n\nاهمیتش اینه که نشون می‌ده انحصار بی‌حدوحصر انویدیا توی بازار چیپ‌های هوش مصنوعی داره نفس رقابت رو می‌گیره و حق انتخاب مشتری رو نابود می‌کنه.",
   "date": "2026-10-16T19:17:09+00:00"
  },
+ "gholam_checked": "2026-10-24T23:11:48+00:00",
  "links": [
   {
    "kind": "tweet",
@@ -71,18 +78,6 @@
    }
   }
  ],
- "media": [],
- "preview": {
-  "url": "https://fxtwitter.com/semianalysis_/status/2111162214891610496?s=52&t=F41Qa04r48Mef_j_XjBneQ",
-  "site": "FxTwitter",
-  "title": "SemiAnalysis (@SemiAnalysis_)",
-  "description": "SHOCKING: We have confirmed that multiple Neoclouds have been refused access to GTC Berlin due to them adding AMD GPUs, TPUs, and other chips to their cloud offerings\nNote that this doesn't apply to hyperscalers, as they have more buying power. But for neoclouds…",
-  "image": {
-   "src": "media/5936/preview.webp",
-   "width": 800,
-   "height": 479
-  }
- },
  "article": {
   "title": "انویدیا حسابی شمشیر رو از رو بسته و طبق گزارش‌ها، جلوی ورود چند تا از شرکت‌های ابری نوپا رو به رویداد GTC برلین گرفته، فقط به این جرم که رفتن سراغ چیپ‌های رقیب مثل AMD و TPU گوگل",
   "source_title": "SHOCKING: We have confirmed that multiple Neoclouds have been refused access to GTC Berlin due to them adding AMD GPUs, TPUs, and other…",
@@ -96,6 +91,5 @@
    "گوگل"
   ]
  },
- "updated": "2026-10-24T23:11:48+00:00",
- "gholam_checked": "2026-10-24T23:11:48+00:00"
+ "updated": "2026-10-25T11:54:11+00:00"
 }

@@ -1,0 +1,57 @@
+{
+ "id": 5844,
+ "url": "https://t.me/dlmehr/5844",
+ "date": "2026-10-12T18:18:50+00:00",
+ "text": "https://fxtwitter.com/artificialanlys/status/2109703511843979391?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+ "forwarded_from": null,
+ "digest": false,
+ "hash": "2d5f46500e2e",
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/artificialanlys/status/2109703511843979391?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+  "site": "🧵 Thread • FxTwitter",
+  "title": "Artificial Analysis (@ArtificialAnlys)",
+  "description": "We're launching our leaderboard for FrontierCode 1.1, a private evaluation from Cognition that tests models on completing coding tasks in a way that would actually get merged by maintainers of real-world repositories\n@cognition announced FrontierCode in…",
+  "image": "https://cdn4.telesco.pe/file/JehTag3yaluwYTIW_f6nWcLeqSPS1f1j-nafqtovb-Kk4obYqK6kP2fHhUp6-yyBrAVA1KAKjwvQR3B8vasesMDhaZnrDUmVS3mhWdmM-a8lHR_1242gaeeoJl8NmetRuoDpSQ773ZEusMUrx9nH6T_w4qkKf8ovhRGfY8iosMLCSonjEVHf-h7lmZNhM12vaL-1w67FQa7eNQBejIx4zdrpcYdoH4O0ecvYlBQzlece--gS4ThhhFABkP7I7D4v10BDXOyCUUQu2SdaAw93s_JptBKp-30RgEhj8XRO4jOzzrTXADJo6_eA4PryfN1Zc1DPoga2waYUjXS-xT259w.jpg"
+ },
+ "gholam": {
+  "text": "ببین رفیق، بچه‌های Artificial Analysis اومدن یه بنچ‌مارک خفن و سفت‌وسخت به اسم FrontierCode 1.1 راه انداختن تا ببینن کدهای هوش مصنوعی واقعاً این قابلیت رو دارن که تو پروژه‌های واقعی اپن‌سورس مِرج بشن یا نه. قضیه اینه که این ارزیابی فقط پاس شدن تست‌ها رو نگاه نمی‌کنه، بلکه تمیزی کار، بی‌خودی دست نزدن به فایل‌های اضافه و سبک برنامه‌نویسی رو هم می‌سنجه؛ واسه همین حتی گردن‌کلفت‌ترین مدل‌های بازار هم بالای ۴۰ درصد مواقع خرابکاری می‌کنن و رد میشن. فعلاً مدل Claude Opus 5.5 با امتیاز ۵۲ درصد صدرنشینه، مدل‌های متن‌بازی مثل MiMo هم خوب اومدن بالا، و از اون‌طرف مدل GPT-6.1 Sol با هزینه مفت ۸۱ سنت برای هر تسک، امتیاز ۴۹ درصد رو زده و حسابی اقتصادی و به‌صرفه نشون داده.\n\nچرا مهمه؟ اهمیتش اینه که عیار واقعی هوش مصنوعی تو دنیای واقعی رو سنجیده و نشون داده هوش مصنوعی هنوز تا نوشتن کدی که بدون دردسر و بدون نیاز به اصلاحات دستی بره قاطی پروژه‌ها، کلی کار داره.",
+  "date": "2026-10-12T18:19:47+00:00"
+ },
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/ArtificialAnlys/status/2109703511843979391",
+   "domain": "x.com",
+   "author": {
+    "name": "Artificial Analysis",
+    "handle": "ArtificialAnlys",
+    "avatar": "https://pbs.twimg.com/profile_images/2042402069320290304/A8C1lP07_200x200.jpg"
+   },
+   "text": "We're launching our leaderboard for FrontierCode 1.1, a private evaluation from Cognition that tests models on completing coding tasks in a way that would actually get merged by maintainers of real-world repositories\n\n@cognition announced FrontierCode in June 2026 and updated it to version 1.1 in July. Cognition built the dataset with open source maintainers who spent more than 40 hours per task. Each task requires the agent to make a change to a real open source repository, then checks both unit tests and qualitative tests for what maintainers would require to merge the change.\n\nWe run FrontierCode 1.1 Main, the primary 100-task set of the benchmark's 150 tasks, using our Stirrup open source reference harness for apples-to-apples comparisons across models. All tasks are private to avoid contamination. Each attempt is graded with both blocking and non-blocking criteria. An attempt that fails any blocking check scores zero, and one that passes them all scores between 70% and 100%.\n\nUnlike other coding evaluations, FrontierCode has a more holistic view of success based on real usage. Models need to pass unit tests, but are also assessed on behaviors like making excessive changes and large diffs, modifying files outside the relevant scope, or adding unhelpful tests. We think this approach is valuable in the current context: models are now very capable at coding tasks, but their changes can still require substantial cleanup before a maintainer would merge them.\n\nKey takeaways:\n\n➤ Leading models still fail more than 40% of the time: Claude Opus 5.5 (max with fallback) leads at a score of 52% after passing blockers in 58% of its attempts. Nine of the 100 tasks were not passed in any attempt by any of the models we evaluated for launch\n\n➤ The top of the leaderboard is tightly packed: nine models from six labs score between 43% and 52%. MiMo-V2.6-Pro is the leading open weights model at 45%, followed by DeepSeek V4.1 Flash (max) and Kimi K3 (max) at 44%\n\n➤ GPT-6.1 Sol (max) offers the strongest performance for its cost: At $0.81 per task it scores 49%, matching Claude Fable 5.1 (max with fallback). This means it achieves similar performance to leading Anthropic models, at less than a tenth of the cost per task\n\nThank you to @silasalberti, @ybenpan, @cl571128, and the rest of the team at Cognition for building FrontierCode and collaborating with us to bring it to Artificial Analysis - we’re working to add FrontierCode to our coding agent leaderboard very soon.",
+   "date": 1791827488,
+   "media": [
+    {
+     "type": "image",
+     "src": "https://pbs.twimg.com/media/HUcm3unakAAZP4t.jpg?name=orig",
+     "ratio": 0.3669
+    }
+   ],
+   "links": []
+  }
+ ],
+ "article": {
+  "title": "بچه‌های Artificial Analysis اومدن یه بنچ‌مارک خفن و سفت‌وسخت به اسم FrontierCode 1.1 راه انداختن تا ببینن کدهای هوش مصنوعی واقعاً این قابلیت رو دارن که تو پروژه‌های واقعی اپن‌سورس مِرج بشن یا نه",
+  "source_title": "We're launching our leaderboard for FrontierCode 1.1, a private evaluation from Cognition that tests models on completing coding tasks in a…",
+  "body": [
+   "ببین رفیق، بچه‌های Artificial Analysis اومدن یه بنچ‌مارک خفن و سفت‌وسخت به اسم FrontierCode 1.1 راه انداختن تا ببینن کدهای هوش مصنوعی واقعاً این قابلیت رو دارن که تو پروژه‌های واقعی اپن‌سورس مِرج بشن یا نه. قضیه اینه که این ارزیابی فقط پاس شدن تست‌ها رو نگاه نمی‌کنه، بلکه تمیزی کار، بی‌خودی دست نزدن به فایل‌های اضافه و سبک برنامه‌نویسی رو هم می‌سنجه؛ واسه همین حتی گردن‌کلفت‌ترین مدل‌های بازار هم بالای ۴۰ درصد مواقع خرابکاری می‌کنن و رد میشن. فعلاً مدل Claude Opus 5.5 با امتیاز ۵۲ درصد صدرنشینه، مدل‌های متن‌بازی مثل MiMo هم خوب اومدن بالا، و از اون‌طرف مدل GPT-6.1 Sol با هزینه مفت ۸۱ سنت برای هر تسک، امتیاز ۴۹ درصد رو زده و حسابی اقتصادی و به‌صرفه نشون داده."
+  ],
+  "why": "اهمیتش اینه که عیار واقعی هوش مصنوعی تو دنیای واقعی رو سنجیده و نشون داده هوش مصنوعی هنوز تا نوشتن کدی که بدون دردسر و بدون نیاز به اصلاحات دستی بره قاطی پروژه‌ها، کلی کار داره.",
+  "tags": [
+   "کدنویسی",
+   "آنتروپیک"
+  ]
+ },
+ "updated": "2026-10-25T12:23:43+00:00",
+ "gholam_checked": "2026-10-25T12:23:43+00:00"
+}

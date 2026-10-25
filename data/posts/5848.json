@@ -1,0 +1,70 @@
+{
+ "id": 5848,
+ "url": "https://t.me/dlmehr/5848",
+ "date": "2026-10-12T20:02:48+00:00",
+ "text": "https://fxtwitter.com/msftresearch/status/2109684149674013109?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+ "forwarded_from": null,
+ "digest": false,
+ "hash": "371208cae27c",
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/msftresearch/status/2109684149674013109?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+  "site": "FxTwitter",
+  "title": "Microsoft Research (@MSFTResearch)",
+  "description": "StudentSim is a research system for evaluating and improving AI tutoring tools before they are tested with learners. It models how individuals may engage with tutors, giving feedback to improve tutor performance across subjects like chess, writing, and mathematics:…",
+  "image": null
+ },
+ "gholam": {
+  "text": "ببین رفیق، بچه‌های مایکروسافت ریسرچ یه سیستم تحقیقاتی ردیف به اسم StudentSim راه انداختن که کارش شبیه‌سازی رفتار دانش‌آموزاست. ماجرا اینه که این ابزار قبل از اینکه هوش مصنوعی‌های معلم رو بفرستن سراغ آدمای واقعی، نحوه یادگیری و عکس‌العمل دانش‌آموز رو بازسازی می‌کنه تا ببینه طرف چطور با درس درگیر میشه. این سیستم تو حوزه‌هایی مثل ریاضی، مهارت نویسندگی و حتی شطرنج به این معلم‌های مجازی بازخورد میده تا حسابی چکش‌کاری بشن و کیفیت تدریسشون بره بالا. خلاصه بدون اینکه بندگان خدا رو موش آزمایشگاهی کنن، قشنگ عیب و ایراد این ابزارهای آموزشی رو قبل ورود به کلاس درس درمیارن.\n\nاهمیتش اینه که به جای آزمون و خطا روی بچه‌های مردم، کیفیت و دقت معلم‌های هوش مصنوعی توی یه محیط شبیه‌سازی‌شده سنجیده و تضمین میشه.",
+  "date": "2026-10-12T20:03:05+00:00"
+ },
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/MSFTResearch/status/2109684149674013109",
+   "domain": "x.com",
+   "author": {
+    "name": "Microsoft Research",
+    "handle": "MSFTResearch",
+    "avatar": "https://pbs.twimg.com/profile_images/1603123064140890112/bSq-JVnp_200x200.png"
+   },
+   "text": "StudentSim is a research system for evaluating and improving AI tutoring tools before they are tested with learners. It models how individuals may engage with tutors, giving feedback to improve tutor performance across subjects like chess, writing, and mathematics: https://msft.it/6013aS3JF",
+   "date": 1791822871,
+   "media": [
+    {
+     "type": "video",
+     "src": "https://video.twimg.com/amplify_video/2109678821523771392/vid/avc1/1200x628/F2NueqgcqfORAQRz.mp4?tag=16",
+     "poster": "https://pbs.twimg.com/amplify_video_thumb/2109678821523771392/img/O8zEri5M-HobMrfV.jpg",
+     "ratio": 0.5233,
+     "duration": 20.033,
+     "gif": false
+    }
+   ],
+   "links": [
+    "https://msft.it/6013aS3JF"
+   ]
+  },
+  {
+   "kind": "link",
+   "url": "https://www.microsoft.com/en-us/research/blog/simulating-student-learning-for-better-ai-tutoring/",
+   "domain": "microsoft.com",
+   "title": "Simulating student learning for better AI tutoring",
+   "description": "StudentSim is a research system for evaluating and improving AI tutoring tools before they are tested with learners. It models how individuals may engage with tutors, giving feedback to improve tutor performance across subjects like chess, writing, and mathematics:",
+   "image": "https://www.microsoft.com/en-us/research/wp-content/uploads/2026/09/StudentSim-TWLIFB-1200x627-1.jpg",
+   "site": "Microsoft Research"
+  }
+ ],
+ "article": {
+  "title": "بچه‌های مایکروسافت ریسرچ یه سیستم تحقیقاتی ردیف به اسم StudentSim راه انداختن که کارش شبیه‌سازی رفتار دانش‌آموزاست",
+  "source_title": "StudentSim is a research system for evaluating and improving AI tutoring tools before they are tested with learners. It models how…",
+  "body": [
+   "ببین رفیق، بچه‌های مایکروسافت ریسرچ یه سیستم تحقیقاتی ردیف به اسم StudentSim راه انداختن که کارش شبیه‌سازی رفتار دانش‌آموزاست. ماجرا اینه که این ابزار قبل از اینکه هوش مصنوعی‌های معلم رو بفرستن سراغ آدمای واقعی، نحوه یادگیری و عکس‌العمل دانش‌آموز رو بازسازی می‌کنه تا ببینه طرف چطور با درس درگیر میشه. این سیستم تو حوزه‌هایی مثل ریاضی، مهارت نویسندگی و حتی شطرنج به این معلم‌های مجازی بازخورد میده تا حسابی چکش‌کاری بشن و کیفیت تدریسشون بره بالا. خلاصه بدون اینکه بندگان خدا رو موش آزمایشگاهی کنن، قشنگ عیب و ایراد این ابزارهای آموزشی رو قبل ورود به کلاس درس درمیارن."
+  ],
+  "why": "به جای آزمون و خطا روی بچه‌های مردم، کیفیت و دقت معلم‌های هوش مصنوعی توی یه محیط شبیه‌سازی‌شده سنجیده و تضمین میشه.",
+  "tags": [
+   "مایکروسافت"
+  ]
+ },
+ "updated": "2026-10-25T12:23:42+00:00",
+ "gholam_checked": "2026-10-25T12:23:42+00:00"
+}

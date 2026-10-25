@@ -1,0 +1,37 @@
+{
+ "id": 5115,
+ "url": "https://t.me/dlmehr/5115",
+ "date": "2026-09-03T04:01:57+00:00",
+ "text": "24-hour news summary\n\n1 (https://t.me/dlmehr/5097) Fal launched fal.live, a platform for interactive AI livestreams that viewers can direct in real time.\n2 (https://t.me/dlmehr/5098) Uber is laying off 3,300 employees, including 20% of its managers, amid a major cost-cutting restructuring.\n3 (https://t.me/dlmehr/5099) OpenAI says frontier models, including Astra, have computation-graph depth within twice that of GPT-4 and is working to preserve chain-of-thought monitoring.\n4 (https://t.me/dlmehr/5100) Google is reportedly seeking licenses from major studios to use film characters and libraries for AI training and generated content.\n5 Mixture of Recursions conditionally varies transformer depth, allowing easy tokens to exit early while difficult ones receive more computation.\n6 (https://t.me/dlmehr/5102) Early benchmarks suggest Gemini 3.8 Flash outperforms several leading models on coding and reasoning tests.\n7 (https://t.me/dlmehr/5103) Google introduced Gemini 3.8 Flash with upgraded agentic and coding capabilities.\n8 (https://t.me/dlmehr/5104) Waymo warned that fully autonomous vehicles need multiple sensor types because pure end-to-end AI is not yet safe enough.\n9 (https://t.me/dlmehr/5105) The U.S. Justice Department backed OpenAI, arguing that training language models on copyrighted texts is transformative fair use.\n10 Claude Fable 5.1 generated 100 distinct HTML designs from a single prompt with few broken files.\n11 (https://t.me/dlmehr/5107) Claude can now operate computers in the background through Claude Cowork and Claude Code.\n12 (https://t.me/dlmehr/5108) Meta began rolling out Muse Spark 1.3, touting major gains in coding and agentic work at very low cost.\n13 (https://t.me/dlmehr/5109) Artificial Analysis ranked Muse Spark 1.3 among the leading AI models, citing gains in agentic and scientific performance.\n14 (https://t.me/dlmehr/5110) Uber’s layoff explanation blamed coordination problems highlighted in employee feedback, drawing criticism for weaponizing that feedback.\n15 (https://t.me/dlmehr/5111) Zeiss reportedly estimates China is still about 15 years away from producing advanced extreme-ultraviolet lithography machines.\n16 (https://t.me/dlmehr/5112) Gholam was updated to Gemini 3.8 Flash.\n17 (https://t.me/dlmehr/5113) Meta’s Muse Spark 1.3 is now available for free through OpenCode.\n\n--Hermes",
+ "forwarded_from": null,
+ "digest": true,
+ "hash": "d1903787e7d2",
+ "media": [],
+ "preview": {
+  "url": "https://t.me/dlmehr/5097",
+  "site": "Telegram",
+  "title": "Future Focus with Mehrzad",
+  "description": "https://fxtwitter.com/fal/status/2094286082275696880?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+  "image": null
+ },
+ "gholam": null,
+ "links": [
+  {
+   "kind": "link",
+   "url": "https://fal.live/",
+   "domain": "fal.live",
+   "title": "fal.live | AI television directed by everyone",
+   "description": "Watch a continuous AI-generated broadcast and decide what happens next.",
+   "image": "https://fal.live/director-live-social.png",
+   "site": "fal.live"
+  }
+ ],
+ "article": {
+  "title": "fal.live | AI television directed by everyone",
+  "source_title": null,
+  "body": [],
+  "why": null,
+  "tags": []
+ },
+ "updated": "2026-10-25T12:07:47+00:00"
+}

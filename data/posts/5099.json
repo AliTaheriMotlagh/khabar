@@ -1,0 +1,50 @@
+{
+ "id": 5099,
+ "url": "https://t.me/dlmehr/5099",
+ "date": "2026-09-02T14:11:51+00:00",
+ "text": "https://fxtwitter.com/merettm/status/2095023204993490967?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+ "forwarded_from": null,
+ "digest": false,
+ "hash": "4a8778de39fa",
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/merettm/status/2095023204993490967?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+  "site": "FxTwitter",
+  "title": "Jakub Pachocki (@merettm)",
+  "description": "I want to prevent a race into unmonitorability kicked off by confused reporting. The depth of the computation graph for our present frontier models, including Astra, is within a factor of two of GPT-4.\nOpenAI has worked to preserve and utilize chain-of-thought…",
+  "image": "https://cdn4.telesco.pe/file/aCwtHiCrIjHP2HHM8yYzMAMyRe0cadW0H2unw1-apTv5P-ZF-ll12dx-_oVNWamUBg84G20_9bL8OAmgS4ZbvlR7xzlq-9Q9EgWZlhbmYNAaesvrebXN4eGAlcfsW27DveRH0Xve9BUtmaalmgj4t3TxpE9JIkGSQ9yckkuCK7GRz60VwG8v-FAzdKkf2LsYUhPsAQ_FAvplW_3zXylB8EhhYf80Mgf3k13B-SIsqMzR55N7rnQVbyEI8J5ZQPrnXcxyWEsaW-jHS_tzvnC-Ycdzp8QmCL0rNSm4teMFDvwFjneHMDaWHS4-HwO2UXelS-W4KtEFgUDGFO1HJuDdSg.jpg"
+ },
+ "gholam": {
+  "text": "ببین رفیق، یاکوب پاچوکی از مغزهای متفکر اوپن‌ای‌آی اومده میدون تا جلوی شایعات غلط رو بگیره و نذاره رقابت به سمت ساخت مدل‌های غیرقابل‌نظارت بره. طرف توضیح داده که عمق محاسباتی مدل‌های پیشرفته جدیدشون مثل Astra، فقط در حد دو برابر GPT-4 هستش و حساب‌کتابش دستشونه. اون تاکید کرده که اوپن‌ای‌آی از اولین مدل‌های استدلالی همیشه روی نظارت بر «زنجیره تفکر» هوش مصنوعی کار کرده تا مطمئن بشه مدل‌ها از مسیر امنیتی و همراستایی خارج نمیشن. البته اینم اعتراف کرده که این روش مانیتورینگ فعلاً حساس و شکننده شده، اما سفت‌وسخت دارن روش تحقیق می‌کنن تا قوی‌ترش کنن.\n\nچرا مهمه؟ چون اگه نتونیم گام‌به‌گام فکر کردن مدل‌های غول‌پیکر رو رصد کنیم، سیستم‌ها تبدیل به جعبه‌های سیاه غیرقابل‌کنترلی میشن که ایمنی‌شون رو هواست.",
+  "date": "2026-09-02T14:12:08+00:00"
+ },
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/merettm/status/2095023204993490967",
+   "domain": "x.com",
+   "author": {
+    "name": "Jakub Pachocki",
+    "handle": "merettm",
+    "avatar": "https://pbs.twimg.com/profile_images/1032407242727809025/AJpM67Ve_200x200.jpg"
+   },
+   "text": "I want to prevent a race into unmonitorability kicked off by confused reporting. The depth of the computation graph for our present frontier models, including Astra, is within a factor of two of GPT-4.\n\nOpenAI has worked to preserve and utilize chain-of-thought monitoring since our very first reasoning models. We deeply care about this technique, as it can give us a view into how model alignment generalizes from its training distribution. I do think it is fragile and unfortunately trending in a negative direction, for reasons not contingent on architecture changes that I will write about soon. But there are things we can do to strengthen it, and it's a core goal of our current research program.",
+   "date": 1788327430,
+   "media": [],
+   "links": []
+  }
+ ],
+ "article": {
+  "title": "یاکوب پاچوکی از مغزهای متفکر اوپن‌ای‌آی اومده میدون تا جلوی شایعات غلط رو بگیره و نذاره رقابت به سمت ساخت مدل‌های غیرقابل‌نظارت بره",
+  "source_title": "I want to prevent a race into unmonitorability kicked off by confused reporting. The depth of the computation graph for our present…",
+  "body": [
+   "ببین رفیق، یاکوب پاچوکی از مغزهای متفکر اوپن‌ای‌آی اومده میدون تا جلوی شایعات غلط رو بگیره و نذاره رقابت به سمت ساخت مدل‌های غیرقابل‌نظارت بره. طرف توضیح داده که عمق محاسباتی مدل‌های پیشرفته جدیدشون مثل Astra، فقط در حد دو برابر GPT-4 هستش و حساب‌کتابش دستشونه. اون تاکید کرده که اوپن‌ای‌آی از اولین مدل‌های استدلالی همیشه روی نظارت بر «زنجیره تفکر» هوش مصنوعی کار کرده تا مطمئن بشه مدل‌ها از مسیر امنیتی و همراستایی خارج نمیشن. البته اینم اعتراف کرده که این روش مانیتورینگ فعلاً حساس و شکننده شده، اما سفت‌وسخت دارن روش تحقیق می‌کنن تا قوی‌ترش کنن."
+  ],
+  "why": "چون اگه نتونیم گام‌به‌گام فکر کردن مدل‌های غول‌پیکر رو رصد کنیم، سیستم‌ها تبدیل به جعبه‌های سیاه غیرقابل‌کنترلی میشن که ایمنی‌شون رو هواست.",
+  "tags": [
+   "اوپن‌ای‌آی"
+  ]
+ },
+ "updated": "2026-10-25T12:28:11+00:00",
+ "gholam_checked": "2026-10-25T12:28:11+00:00"
+}

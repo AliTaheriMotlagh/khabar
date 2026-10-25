@@ -1,0 +1,63 @@
+{
+ "id": 4522,
+ "url": "https://t.me/dlmehr/4522",
+ "date": "2026-08-01T15:32:21+00:00",
+ "text": "https://fxtwitter.com/gdb/status/2083457463337287721?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+ "forwarded_from": null,
+ "digest": false,
+ "hash": "75e512548257",
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/gdb/status/2083457463337287721?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+  "site": "FxTwitter",
+  "title": "Greg Brockman (@gdb)",
+  "description": "ten significant advances in mathematics and theoretical computer science.\nsolved using an internal version of Astra, our next major model, for a total cost of about $2000 at Sol API prices:\nQuoting Sebastien Bubeck (@SebastienBubeck)\nyes, nonsofic groups…",
+  "image": "https://cdn4.telesco.pe/file/g1PE1CmmZOeZv0N4QU1bbxTsSQ3_Gnv13wJU6IWgcuNs1dB0YXVSpkl-JkTdmTCDf37aUO57tt3E99qOzgCf8A9mr3-WGVoNKw0z73PDw0f24jKnYHpBDXyXM7IIrimlcMnUH5XDUXwOzWlogp-L1YSVhCOH97Se-zyKmlZtAxzTlRNWqj_jA8iVbRufrZ7MFM8Z8DSGH30tehw1qMGqGePoaQshHr80cFaLiMkfmxav9AE2vtpmiVBvKNN8fiwxmUE9p-Z80Zh6qOltRFTDNlC_UdRTeKXQMq62MNvpIxRpWYl_DX0ls2SHY0xLtoI92P2DI-jMDRGkgOrl-UsrMw.jpg"
+ },
+ "gholam": {
+  "text": "ببین رفیق، OpenAI از مدل بعدی‌ش به اسم Astra رونمایی کرده؛ با نسخه داخلیش ۱۰ تا مسئله سنگین ریاضی و علوم کامپیوتر رو حل کردن و اثبات دقیق تحویل دادن. کل خرج کار کلاً ۲۰۰۰ دلار شده!",
+  "date": "2026-08-01T15:36:46+00:00"
+ },
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/gdb/status/2083457463337287721",
+   "domain": "x.com",
+   "author": {
+    "name": "Greg Brockman",
+    "handle": "gdb",
+    "avatar": "https://pbs.twimg.com/profile_images/1347621377503711233/bHg3ipfD_200x200.jpg"
+   },
+   "text": "ten significant advances in mathematics and theoretical computer science.\n\nsolved using an internal version of Astra, our next major model, for a total cost of about $2000 at Sol API prices:",
+   "date": 1785569942,
+   "media": [],
+   "links": [],
+   "quote": {
+    "author": {
+     "name": "Sebastien Bubeck",
+     "handle": "SebastienBubeck",
+     "avatar": "https://pbs.twimg.com/profile_images/1709609135321583616/6bXuF85D_200x200.jpg"
+    },
+    "text": "yes, nonsofic groups exist: this statement is one of many new beautiful results proved by Astra, our next major model.\n\nWe're releasing 10 such Astra proofs, complete with lean certificates and CoT walkthroughs for each of them. The results are wide-ranging, from von Neumann algebras (disproof of Connes' Rigidity Conjecture) to better bounds for high dimensional sphere packing, for circuit complexity, for monochromatic triangles in multicolored graphs, and more.\n\nMore thoughts here: https://openai.com/index/ten-advances-in-mathematics/",
+    "date": 1785569665,
+    "media": [],
+    "links": [
+     "https://openai.com/index/ten-advances-in-mathematics/"
+    ]
+   }
+  }
+ ],
+ "article": {
+  "title": "OpenAI از مدل بعدی‌ش به اسم Astra رونمایی کرده؛ با نسخه داخلیش ۱۰ تا مسئله سنگین ریاضی و علوم کامپیوتر رو حل کردن و اثبات دقیق تحویل دادن",
+  "source_title": "ten significant advances in mathematics and theoretical computer science.",
+  "body": [
+   "ببین رفیق، OpenAI از مدل بعدی‌ش به اسم Astra رونمایی کرده؛ با نسخه داخلیش ۱۰ تا مسئله سنگین ریاضی و علوم کامپیوتر رو حل کردن و اثبات دقیق تحویل دادن. کل خرج کار کلاً ۲۰۰۰ دلار شده!"
+  ],
+  "why": null,
+  "tags": [
+   "اوپن‌ای‌آی"
+  ]
+ },
+ "updated": "2026-10-25T12:31:19+00:00",
+ "gholam_checked": "2026-10-25T12:31:19+00:00"
+}

@@ -1,0 +1,50 @@
+{
+ "id": 4814,
+ "url": "https://t.me/dlmehr/4814",
+ "date": "2026-08-19T02:12:51+00:00",
+ "text": "https://fxtwitter.com/thsottiaux/status/2089891927659585918?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+ "forwarded_from": null,
+ "digest": false,
+ "hash": "111eacf684ea",
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/thsottiaux/status/2089891927659585918?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+  "site": "FxTwitter",
+  "title": "Tibo (@thsottiaux)",
+  "description": "Hi!\nRecapping some changes we have rolled out over the last couple of weeks that have further reduced the risk associated to potentially destructive actions being performed by Codex during its work.\nA few weeks ago, we started investigating a small number…",
+  "image": "https://cdn4.telesco.pe/file/f4Bkd5u4EqFUIor2pB28ibBPmMOVkdS6dMddnWMdP-6FY62sRuhjUR1lkJhqGvYlL6IHO-i89WNQH4FjFgT76fqZEtXB1Ws76RRuFTXqUnRUzvKuis4XEaaW7RueNX2QX4LoOSj_BSPk0t_-PmCCruzLxXnaDi0eIAQ5XO9GEw3VrO5IV9p_Gxe3hev_0UQJrABeTiIRaJBnhE1Z1-F9KVcZ0KuG_oQyIfXKv6Wz3MKCsscjBv5efI8lrqNo5qa6HxxRJGNKHkV-N5w8i0oh2sL7J09MbMR3Wqvzzxt8LP7DP4-P7VJGDpdYWoqLdR6tFAAfge3LdDzI4JfitDNUXA.jpg"
+ },
+ "gholam": {
+  "text": "آبجی و داداشای گلم، قضیه از این قراره که تیم کُدکس متوجه شده مدل GPT-5.6 موقع پاک‌سازی پوشه‌های موقت بعضی وقتا قاطی می‌کرده و اشتباهی ممکن بوده فایل‌های اصلی سیستم و پوشه هوم کاربر رو بفرسته هوا! واسه همین دست‌به‌کار شدن و چند لایه امنیتی خفن اضافه کردن تا مدل قبل از حذف هر فایلی اول مسیرش رو سه‌باره چک کنه و جلوی دستورات خطرناک رو سفت‌وسخت بگیره. از اون‌ور هم دسترسی کامل رو محدودتر کردن و سیستم رو جوری بستن که دیگه سرخود خرابکاری نکنه، ولی باز تاکید دارن حتماً برنامه‌تون رو آپدیت نگه دارید و الکی دسترسی فول بهش ندید.\n\nاهمیتش اینه که نشون میده با همه پیشرفت هوش مصنوعی، اگه افسار دسترسی‌هاش سفت گرفته نشه می‌تونه با یه اشتباه ساده کل دسترنج و پروژه‌های سیستمتون رو پاک کنه.",
+  "date": "2026-08-19T02:13:02+00:00"
+ },
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/thsottiaux/status/2089891927659585918",
+   "domain": "x.com",
+   "author": {
+    "name": "Tibo",
+    "handle": "thsottiaux",
+    "avatar": "https://pbs.twimg.com/profile_images/2093807917833281537/2yBgpwVV_200x200.jpg"
+   },
+   "text": "Hi!\n\nRecapping some changes we have rolled out over the last couple of weeks that have further reduced the risk associated to potentially destructive actions being performed by Codex during its work. \n\nA few weeks ago, we started investigating a small number of reports where GPT-5.6 in Codex took destructive actions outside what the user asked for. The most serious pattern we found was a command meant to clean up temporary work that could instead delete the user files. This should obviously not happen. \n\nHere’s what we found:\n- Codex sometimes creates temporary folders while working and cleans them up afterward. In rare cases, GPT-5.6 got that cleanup wrong. One pattern involved reusing a system environment variable like $HOME for temporary work. A malformed cleanup command could then point at the actual home directory instead of the temporary folder. \n- There were cases where the model tried to delete or overwrite a temporary path without checking what was already there.\n\nWe’ve added protections at several layers:\n- Codex is now explicitly instructed to check deletion targets before acting, create fresh temporary directories, avoid repurposing system environment variables, prefer recoverable actions, and stop when the scope is unclear.\n- We strengthened the execution checks that identify high-risk deletion commands and escalate them for review. If a command is rejected, the model is directed to take a safer approach.\n- We made Full access harder to enable accidentally, added clearer warnings, and further restricted especially risky permission combinations.\n- We updated Auto-review to better identify destructive actions.\n- We built targeted evaluations that replay the failures we observed. We’re also adding reinforcement-learning tasks and graders focused on these risks, and filtering destructive actions from training data.\n\nIn those replay evaluations, the changes substantially reduced the behavior while preserving Codex’s ability to complete normal coding work. \n\nTwo things to do on your end:\n- Keep the Codex app up to date. We are always improving safety, performance and many other things.\n- Use one of the sandbox modes: \"Ask for approval\" or \"Approve for me\". Only use Full access for environments you trust and can recover.\n\nThanks and happy Codexing out there!",
+   "date": 1787104038,
+   "media": [],
+   "links": []
+  }
+ ],
+ "article": {
+  "title": "و داداشای گلم، قضیه از این قراره که تیم کُدکس متوجه شده مدل GPT-5.6 موقع پاک‌سازی پوشه‌های موقت بعضی وقتا قاطی می‌کرده و اشتباهی ممکن بوده فایل‌های اصلی سیستم و پوشه هوم کاربر رو بفرسته هوا",
+  "source_title": "Hi!",
+  "body": [
+   "آبجی و داداشای گلم، قضیه از این قراره که تیم کُدکس متوجه شده مدل GPT-5.6 موقع پاک‌سازی پوشه‌های موقت بعضی وقتا قاطی می‌کرده و اشتباهی ممکن بوده فایل‌های اصلی سیستم و پوشه هوم کاربر رو بفرسته هوا! واسه همین دست‌به‌کار شدن و چند لایه امنیتی خفن اضافه کردن تا مدل قبل از حذف هر فایلی اول مسیرش رو سه‌باره چک کنه و جلوی دستورات خطرناک رو سفت‌وسخت بگیره. از اون‌ور هم دسترسی کامل رو محدودتر کردن و سیستم رو جوری بستن که دیگه سرخود خرابکاری نکنه، ولی باز تاکید دارن حتماً برنامه‌تون رو آپدیت نگه دارید و الکی دسترسی فول بهش ندید."
+  ],
+  "why": "نشون میده با همه پیشرفت هوش مصنوعی، اگه افسار دسترسی‌هاش سفت گرفته نشه می‌تونه با یه اشتباه ساده کل دسترنج و پروژه‌های سیستمتون رو پاک کنه.",
+  "tags": [
+   "اوپن‌ای‌آی"
+  ]
+ },
+ "updated": "2026-10-25T12:29:55+00:00",
+ "gholam_checked": "2026-10-25T12:29:55+00:00"
+}

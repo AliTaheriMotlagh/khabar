@@ -1,0 +1,71 @@
+{
+ "id": 5519,
+ "url": "https://t.me/dlmehr/5519",
+ "date": "2026-09-28T04:35:30+00:00",
+ "text": "https://fxtwitter.com/_yiyang04/status/2104311848594219284?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+ "forwarded_from": null,
+ "digest": false,
+ "hash": "322cab93bdf9",
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/_yiyang04/status/2104311848594219284?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+  "site": "🧵 Thread • FxTwitter",
+  "title": "Yi Yang (@_yiyang04)",
+  "description": "A robot whips a rope to knock an apple off someone's head, using a policy trained only in simulation.\nIntroducing DeformX (Oral @ IROS 2026): Cosserat rod physics co-simulated with NVIDIA Isaac Sim, so cables bend, twist and collide like the real thing.…",
+  "image": null
+ },
+ "gholam": {
+  "text": "ببین رفیق، محققا سیستمی به اسم DeformX ساختن که توش یه ربات با شلاق زدنِ طناب، تمیز و دقیق سیب روی سر یه آدم رو نشونه می‌گیره و می‌اندازه پایین! قضیه اونجاش جالب میشه که بدونید مغز این ربات فقط و فقط توی شبیه‌سازی کامپیوتری آموزش دیده و اصلاً توی دنیای واقعی تمرین نکرده. کل این شاهکار با جفت‌وجور کردن فیزیک میله‌های کوسِرات و محیط آیزاک سیم شرکت انویدیا ممکن شده تا پیچ‌وتاب و شلاق خوردن کابل‌ها مو به مو مثل دنیای واقعی دربیاد. این کار خفن که قراره توی کنفرانس معتبر IROS هم ارائه بشه، نشون داد چقدر فاصله شبیه‌ساز تا واقعیت داره پر میشه.\n\nاهمیتش اینه که کنترل اجسام نرم و انعطاف‌پذیر مثل کابل همیشه کابوس ربات‌ها بوده، ولی حالا می‌تونن حساس‌ترین حرکات رو بدون آزمون و خطای پرهزینه تو دنیای واقعی، مستقیم از شبیه‌ساز یاد بگیرن.",
+  "date": "2026-09-28T04:35:43+00:00"
+ },
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/_yiyang04/status/2104311848594219284",
+   "domain": "x.com",
+   "author": {
+    "name": "Yi Yang",
+    "handle": "_yiyang04",
+    "avatar": "https://pbs.twimg.com/profile_images/2098205043782750208/m4joXLUK_200x200.jpg"
+   },
+   "text": "A robot whips a rope to knock an apple off someone's head, using a policy trained only in simulation.\n\nIntroducing DeformX (Oral @ IROS 2026): Cosserat rod physics co-simulated with NVIDIA Isaac Sim, so cables bend, twist and collide like the real thing.\n\nhttps://deformx.github.io",
+   "date": 1790542015,
+   "media": [
+    {
+     "type": "video",
+     "src": "https://video.twimg.com/amplify_video/2104311826758721536/vid/avc1/960x720/HVE4YfaBDuxRGXKk.mp4?tag=16",
+     "poster": "https://pbs.twimg.com/amplify_video_thumb/2104311826758721536/img/zPGBbCxmsAPdz_ow.jpg",
+     "ratio": 0.75,
+     "duration": 21.208,
+     "gif": false
+    }
+   ],
+   "links": [
+    "https://deformx.github.io"
+   ]
+  },
+  {
+   "kind": "link",
+   "url": "https://deformx.github.io",
+   "domain": "deformx.github.io",
+   "title": "DeformX — A Versatile Co-Simulation Framework for Deformable Linear Objects",
+   "description": "Oral @ IROS 2026 · Best Short Paper @ SynData4CV, CVPR 2026. Cosserat rod physics × NVIDIA Isaac Sim for physically accurate, photorealistic DLO simulation and synthetic dataset generation.",
+   "image": "assets/img/og.jpg",
+   "site": "deformx.github.io"
+  }
+ ],
+ "article": {
+  "title": "محققا سیستمی به اسم DeformX ساختن که توش یه ربات با شلاق زدنِ طناب، تمیز و دقیق سیب روی سر یه آدم رو نشونه می‌گیره و می‌اندازه پایین",
+  "source_title": "A robot whips a rope to knock an apple off someone's head, using a policy trained only in simulation.",
+  "body": [
+   "ببین رفیق، محققا سیستمی به اسم DeformX ساختن که توش یه ربات با شلاق زدنِ طناب، تمیز و دقیق سیب روی سر یه آدم رو نشونه می‌گیره و می‌اندازه پایین! قضیه اونجاش جالب میشه که بدونید مغز این ربات فقط و فقط توی شبیه‌سازی کامپیوتری آموزش دیده و اصلاً توی دنیای واقعی تمرین نکرده. کل این شاهکار با جفت‌وجور کردن فیزیک میله‌های کوسِرات و محیط آیزاک سیم شرکت انویدیا ممکن شده تا پیچ‌وتاب و شلاق خوردن کابل‌ها مو به مو مثل دنیای واقعی دربیاد. این کار خفن که قراره توی کنفرانس معتبر IROS هم ارائه بشه، نشون داد چقدر فاصله شبیه‌ساز تا واقعیت داره پر میشه."
+  ],
+  "why": "کنترل اجسام نرم و انعطاف‌پذیر مثل کابل همیشه کابوس ربات‌ها بوده، ولی حالا می‌تونن حساس‌ترین حرکات رو بدون آزمون و خطای پرهزینه تو دنیای واقعی، مستقیم از شبیه‌ساز یاد بگیرن.",
+  "tags": [
+   "رباتیک",
+   "اپل"
+  ]
+ },
+ "updated": "2026-10-25T12:25:38+00:00",
+ "gholam_checked": "2026-10-25T12:25:38+00:00"
+}

@@ -1,0 +1,54 @@
+{
+ "id": 4711,
+ "url": "https://t.me/dlmehr/4711",
+ "date": "2026-08-12T16:02:52+00:00",
+ "text": "https://fxtwitter.com/elyasbuilds/status/2087202317128909092?s=46",
+ "forwarded_from": "Hossein Zakariaee",
+ "digest": false,
+ "hash": "98ae76d15912",
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/elyasbuilds/status/2087202317128909092?s=46",
+  "site": "🧵 Thread • FxTwitter",
+  "title": "Elyas Masrour (@elyasbuilds)",
+  "description": "Who's *actually* winning the AI race?\nIn recent research, we showed Pangram is capable of identifying the model family that generated a piece of text.\nUsing this emergent behavior, we can watch the shifting market share in the AI race. Take a look!\n⬇️",
+  "image": "https://cdn4.telesco.pe/file/KgyTSYYITDx65M7hcVWTfnLai7zLaIc2M2v4kvTWvWiCG8A8xEK121dfRNc6L2SAjNd8M1CANfkF96-2ZyaskL5urSJfBZhQRvNnQebLYZp3c3-22g2XfmhrNoD5O5WWeCmEvWCWhcpugDelN0xq42OjxGx2BkLKExfXM23hrkVi5iHMy5y8jCY0XNn2hqaomn4A7aZieq4Yo2JPXF6SmND-TSVbURO5mfr79kz3lmpbvroafnTfvLDhxbE0Ax6baqWH15B8l4uX3DVUH9fFVJb0C6gLI_ft53P0rMny4qvTvvVZxvRKNubUB2TiDBNs2gwflXJ2y0mrQeavGRvrgA.jpg"
+ },
+ "gholam": {
+  "text": "ببین رفیق، الیاس مسرور تو یه تحقیق جدید نشون داده که ابزار «پنگرام» می‌تونه ردِ مدل‌های هوش مصنوعی رو بزنه و دقیق بگه هر متن خروجی، کار کدوم خانواده از این مدل‌هاست. با این قابلیت خفن، حالا میشه قشنگ سهم واقعی بازار رو توی رقابت داغ هوش مصنوعی رصد کرد و دید کی واقعاً داره جلو می‌فته. اینجوری دیگه ادعای خالی شرکت‌ها وسط نیست و میشه تغییر قدرت بین غول‌های فناوری رو در عمل با چشم دید.\n\nاهمیتش اینه که با دیتای واقعی و بدون آمارسازی، معلوم میشه کدوم هوش مصنوعی واقعاً بین کاربرها محبوب‌تره و بازار رو دستش گرفته.",
+  "date": "2026-08-12T16:03:06+00:00"
+ },
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/elyasbuilds/status/2087202317128909092",
+   "domain": "x.com",
+   "author": {
+    "name": "Elyas Masrour",
+    "handle": "elyasbuilds",
+    "avatar": "https://pbs.twimg.com/profile_images/1982970800207527937/mmSNFbo2_200x200.jpg"
+   },
+   "text": "Who's *actually* winning the AI race? \n\nIn recent research, we showed Pangram is capable of identifying the model family that generated a piece of text. \n\nUsing this emergent behavior, we can watch the shifting market share in the AI race. Take a look! ⬇️",
+   "date": 1786462785,
+   "media": [
+    {
+     "type": "image",
+     "src": "https://pbs.twimg.com/media/HPc7chgXIAEdzH7.png?name=orig",
+     "ratio": 0.56
+    }
+   ],
+   "links": []
+  }
+ ],
+ "article": {
+  "title": "الیاس مسرور تو یه تحقیق جدید نشون داده که ابزار «پنگرام» می‌تونه ردِ مدل‌های هوش مصنوعی رو بزنه و دقیق بگه هر متن خروجی، کار کدوم خانواده از این مدل‌هاست",
+  "source_title": "Who's *actually* winning the AI race?",
+  "body": [
+   "ببین رفیق، الیاس مسرور تو یه تحقیق جدید نشون داده که ابزار «پنگرام» می‌تونه ردِ مدل‌های هوش مصنوعی رو بزنه و دقیق بگه هر متن خروجی، کار کدوم خانواده از این مدل‌هاست. با این قابلیت خفن، حالا میشه قشنگ سهم واقعی بازار رو توی رقابت داغ هوش مصنوعی رصد کرد و دید کی واقعاً داره جلو می‌فته. اینجوری دیگه ادعای خالی شرکت‌ها وسط نیست و میشه تغییر قدرت بین غول‌های فناوری رو در عمل با چشم دید."
+  ],
+  "why": "با دیتای واقعی و بدون آمارسازی، معلوم میشه کدوم هوش مصنوعی واقعاً بین کاربرها محبوب‌تره و بازار رو دستش گرفته.",
+  "tags": []
+ },
+ "updated": "2026-10-25T12:30:27+00:00",
+ "gholam_checked": "2026-10-25T12:30:27+00:00"
+}

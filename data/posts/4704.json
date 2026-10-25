@@ -1,0 +1,65 @@
+{
+ "id": 4704,
+ "url": "https://t.me/dlmehr/4704",
+ "date": "2026-08-11T21:26:02+00:00",
+ "text": "https://fxtwitter.com/mercor_ai/status/2087251131689001317?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+ "forwarded_from": null,
+ "digest": false,
+ "hash": "c869fd338135",
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/mercor_ai/status/2087251131689001317?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+  "site": "🧵 Thread • FxTwitter",
+  "title": "Mercor (@mercor_ai)",
+  "description": "SWE-Marathon measures long-horizon development with a focus on backend tasks, but it doesn’t test whether models can build SaaS products from end to end.\nThe @mercor_ai research team was curious if they could, so we decided to find out.\nWe gave eight frontier…",
+  "image": "https://cdn4.telesco.pe/file/cuaE_3HSG-JiQ3g7b6_C-CoAV6VdNL6JOdcNoeBbRc8me3PlUNCwphotdJmalMLlWTT14ne0D2LMcH6onHjrpGkaT3wlSKW6WuJIkZ2re6xpoN4b9fEOmIOe5fBPeB2c3PlAyY-wz0j-fQ0oZqpOD1902rNmFLIPTVOjZVTgxjyax6w30wrZVvinGTRAdILWxA_LN9q6XpGfmMNXAOKqifcygYMg74KY-F54WArrzX2bnPOizasFTc1JEiXyaoEQEkTGPKB-N_BoOsBbdM034unfG6QY1JOfN9RwT0_8bdLD-V_ItRVX62oScGukJjPN7W3fc45NpO8uSljJdq9_5A.jpg"
+ },
+ "gholam": {
+  "text": "رفیق، تیم تحقیقاتی Mercor اومده یه تست خفن روی ۸ تا از مدل‌های پیشرو هوش مصنوعی زده تا ببینه آیا می‌تونن صفر تا صد ۱۲ تا نرم‌افزار معروف مثل Shopify و Notion و Calendly رو بسازن یا نه. اینا یه محیط خالی لینوکس با مشخصات پروژه رو دادن دست هوش مصنوعی، که خب مدل‌ها بخش‌های ساده مثل ورود به سیستم و ساخت داشبوردهای قشنگ رو ردیف کردن. اما وقتی نوبت به منطق و هسته اصلی برنامه‌ها رسید حسابی سوتی دادن؛ مثلاً Calendly اختلاف ساعت‌ها رو قاطی کرد، Shopify جنسی که اصلاً تو انبار نداشت رو فروخت و Notion هم داده‌های پرت‌وپلا قبول کرد!\n\nاهمیتش اینه که نشون میده هوش مصنوعی با اینکه ظاهر برنامه‌ها رو شیک می‌سازه، اما هنوز تا فهم عمیق منطق نرم‌افزار و جایگزینی کامل برنامه‌نویس‌ها فاصله داره.",
+  "date": "2026-08-11T21:26:20+00:00"
+ },
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/mercor/status/2087251131689001317",
+   "domain": "x.com",
+   "author": {
+    "name": "Mercor",
+    "handle": "mercor",
+    "avatar": "https://pbs.twimg.com/profile_images/2051774732341854208/DR6w6FDH_200x200.jpg"
+   },
+   "text": "SWE-Marathon measures long-horizon development with a focus on backend tasks, but it doesn’t test whether models can build SaaS products from end to end. \n\nThe @mercor research team was curious if they could, so we decided to find out.\n\nWe gave eight frontier models an empty Linux container and a product spec, then directed them to build 12 real SaaS products (Calendly, Shopify, Notion). Every model got the easy parts right. The login and CRUD worked, and even the dashboards looked convincing.\n\nModels mostly struggled to replicate the core function each product exists to deliver. Calendly didn't accurately capture timezones, Shopify oversold inventory it didn’t have, and Notion accepted irrelevant input as if it were valid data. \n\nRead the blog post: https://www.mercor.com/blog/swe-marathon-ext-can-ai-build-a-whole-saas-product/",
+   "date": 1786474423,
+   "media": [
+    {
+     "type": "image",
+     "src": "https://pbs.twimg.com/media/HPdnG6DbYAAAAWH.png?name=orig",
+     "ratio": 0.5516
+    }
+   ],
+   "links": [
+    "https://www.mercor.com/blog/swe-marathon-ext-can-ai-build-a-whole-saas-product/"
+   ]
+  },
+  {
+   "kind": "link",
+   "url": "https://www.mercor.com/blog/swe-marathon-ext-can-ai-build-a-whole-saas-product/",
+   "domain": "mercor.com",
+   "title": "SWE-Marathon-Ext: Can AI Build a Whole SaaS Product?",
+   "description": "Eight frontier models built twelve SaaS products from an empty workspace. They ship login and CRUD reliably, then break on concurrency and time logic.",
+   "image": "https://www.mercor.com/mercor-logo-white.png",
+   "site": "mercor.com"
+  }
+ ],
+ "article": {
+  "title": "تیم تحقیقاتی Mercor اومده یه تست خفن روی ۸ تا از مدل‌های پیشرو هوش مصنوعی زده تا ببینه آیا می‌تونن صفر تا صد ۱۲ تا نرم‌افزار معروف مثل Shopify و Notion و Calendly رو بسازن یا نه",
+  "source_title": "SWE-Marathon measures long-horizon development with a focus on backend tasks, but it doesn’t test whether models can build SaaS products…",
+  "body": [
+   "رفیق، تیم تحقیقاتی Mercor اومده یه تست خفن روی ۸ تا از مدل‌های پیشرو هوش مصنوعی زده تا ببینه آیا می‌تونن صفر تا صد ۱۲ تا نرم‌افزار معروف مثل Shopify و Notion و Calendly رو بسازن یا نه. اینا یه محیط خالی لینوکس با مشخصات پروژه رو دادن دست هوش مصنوعی، که خب مدل‌ها بخش‌های ساده مثل ورود به سیستم و ساخت داشبوردهای قشنگ رو ردیف کردن. اما وقتی نوبت به منطق و هسته اصلی برنامه‌ها رسید حسابی سوتی دادن؛ مثلاً Calendly اختلاف ساعت‌ها رو قاطی کرد، Shopify جنسی که اصلاً تو انبار نداشت رو فروخت و Notion هم داده‌های پرت‌وپلا قبول کرد!"
+  ],
+  "why": "نشون میده هوش مصنوعی با اینکه ظاهر برنامه‌ها رو شیک می‌سازه، اما هنوز تا فهم عمیق منطق نرم‌افزار و جایگزینی کامل برنامه‌نویس‌ها فاصله داره.",
+  "tags": []
+ },
+ "updated": "2026-10-25T12:30:28+00:00",
+ "gholam_checked": "2026-10-25T12:30:28+00:00"
+}

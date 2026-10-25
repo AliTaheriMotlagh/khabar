@@ -1,0 +1,71 @@
+{
+ "id": 4927,
+ "url": "https://t.me/dlmehr/4927",
+ "date": "2026-08-25T04:04:21+00:00",
+ "text": "https://fxtwitter.com/cline/status/2091995642201842015?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+ "forwarded_from": null,
+ "digest": false,
+ "hash": "ef87013da9da",
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/cline/status/2091995642201842015?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+  "site": "🧵 Thread • FxTwitter",
+  "title": "Cline (@cline)",
+  "description": "We benchmarked Ox Alpha vs Fable on a real bug from the Cline repo. Both fixed it correctly.\nBut we found that Ox used much fewer thinking tokens. Most reasoning models loop and re-derive the same conclusion over and over before acting (Fable said \"I found…",
+  "image": "https://cdn4.telesco.pe/file/W7MCH0xms4eLp_XY3qCYWSOzURw4XJWdqfL5wxy_hKXjFMHPs670emoElwKS-Hw-2CPgK69leLBlpGOcTuyaqywzXyII6y_zo478Qed-4kj28vjTIF6nPb8DCY-aq0hB-IBuFXz4K-_wyWat6iNK47fE6NUmDnzGr66E-jhKC34RBsUV9KNqdkIArqvK-uUy1lIJxp1XSc1JCeVyYd5P6_X5znNasJl5GJvn9qdyeyi2FsxqA9iDVwhinAoL3M8HCp-QLeGgwQdSkCwPl1WEg8OgheTSGzjhtuIDgOU6nMpaxJz8Qhoo_TjELzgjop4fjiXg7eEH3CBx8Fciwy7vCg.jpg"
+ },
+ "gholam": {
+  "text": "رفیق ببین، بچه‌های ابزار Cline اومدن دو تا مدل هوش مصنوعی یعنی Ox Alpha و Fable رو سر حل یه باگ واقعی به جون هم انداختن و جالب اینکه هر دوتاشون از پس حل کردنش براومدن. نکته خفن ماجرا اینه که Ox Alpha اصلاً اهل وراجی و دور باطل زدن نبود و با حدود ۳ برابر توکن کمتر همون نتیجه رو داد؛ در حالی که مدل Fable هفت بار هی با خودش تکرار کرد «من ریشه مشکل رو فهمیدم» تا بالاخره دست به کد شد! انگار توی تمرین دادن این مدل جدید قلق متفاوتی زدن، چون برخلاف بقیه مدل‌های استدلالی که هی به خودشون شک می‌کنن، Ox Alpha به اولین نتیجه‌گیری درستش اعتماد می‌کنه و صاف می‌ره سراغ اصل مطلب.\n\nاهمیتش اینه که این سبک خروجی گرفتن باعث می‌شه هم سرعت حل مسائل خیلی بالاتر بره و هم هزینه‌های سنگین پردازش و توکن به‌شدت کمتر بشه.",
+  "date": "2026-08-25T04:04:32+00:00"
+ },
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/cline/status/2091995642201842015",
+   "domain": "x.com",
+   "author": {
+    "name": "Cline",
+    "handle": "cline",
+    "avatar": "https://pbs.twimg.com/profile_images/2100371495658946560/pKjt1-8w_200x200.png"
+   },
+   "text": "We benchmarked Ox Alpha vs Fable on a real bug from the Cline repo. Both fixed it correctly.\n\nBut we found that Ox used much fewer thinking tokens. Most reasoning models loop and re-derive the same conclusion over and over before acting (Fable said \"I found the root cause\" 7 times before editing).\n\nOx stated it once then wrote the fix. Roughly ~3x lower output tokens for the same work.\n\nReasoning models have been trained to increase reliability with re-verification. Ox seems to trust its first conclusion instead, which feels like a fundamentally different post-training philosophy.",
+   "date": 1787605603,
+   "media": [
+    {
+     "type": "image",
+     "src": "https://pbs.twimg.com/media/HQhByosa0AAYcMp.jpg?name=orig",
+     "ratio": 0.7664
+    }
+   ],
+   "links": [],
+   "quote": {
+    "author": {
+     "name": "Cline",
+     "handle": "cline",
+     "avatar": "https://pbs.twimg.com/profile_images/2100371495658946560/pKjt1-8w_200x200.png"
+    },
+    "text": "Ox Alpha (stealth model) is now free in Cline.\n\nEarly benchmarks shows marginal improvement over Fable and GPT.\n\nTry it with:\nnpm i -g cline\nand use /models to see it under Free options",
+    "date": 1787333466,
+    "media": [
+     {
+      "type": "image",
+      "src": "https://pbs.twimg.com/media/HQQ0qeJbcAED_Dj.jpg?name=orig",
+      "ratio": 0.5751
+     }
+    ],
+    "links": []
+   }
+  }
+ ],
+ "article": {
+  "title": "بچه‌های ابزار Cline اومدن دو تا مدل هوش مصنوعی یعنی Ox Alpha و Fable رو سر حل یه باگ واقعی به جون هم انداختن و جالب اینکه هر دوتاشون از پس حل کردنش براومدن",
+  "source_title": "We benchmarked Ox Alpha vs Fable on a real bug from the Cline repo. Both fixed it correctly.",
+  "body": [
+   "رفیق ببین، بچه‌های ابزار Cline اومدن دو تا مدل هوش مصنوعی یعنی Ox Alpha و Fable رو سر حل یه باگ واقعی به جون هم انداختن و جالب اینکه هر دوتاشون از پس حل کردنش براومدن. نکته خفن ماجرا اینه که Ox Alpha اصلاً اهل وراجی و دور باطل زدن نبود و با حدود ۳ برابر توکن کمتر همون نتیجه رو داد؛ در حالی که مدل Fable هفت بار هی با خودش تکرار کرد «من ریشه مشکل رو فهمیدم» تا بالاخره دست به کد شد! انگار توی تمرین دادن این مدل جدید قلق متفاوتی زدن، چون برخلاف بقیه مدل‌های استدلالی که هی به خودشون شک می‌کنن، Ox Alpha به اولین نتیجه‌گیری درستش اعتماد می‌کنه و صاف می‌ره سراغ اصل مطلب."
+  ],
+  "why": "این سبک خروجی گرفتن باعث می‌شه هم سرعت حل مسائل خیلی بالاتر بره و هم هزینه‌های سنگین پردازش و توکن به‌شدت کمتر بشه.",
+  "tags": []
+ },
+ "updated": "2026-10-25T12:29:16+00:00",
+ "gholam_checked": "2026-10-25T12:29:16+00:00"
+}

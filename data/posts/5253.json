@@ -1,0 +1,73 @@
+{
+ "id": 5253,
+ "url": "https://t.me/dlmehr/5253",
+ "date": "2026-09-11T01:43:46+00:00",
+ "text": "https://fxtwitter.com/ysu_nlp/status/2098183017252745246?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+ "forwarded_from": null,
+ "digest": false,
+ "hash": "c59ddaa8ce31",
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/ysu_nlp/status/2098183017252745246?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+  "site": "FxTwitter",
+  "title": "Yu Su (@ysu_nlp)",
+  "description": "ApprenticeBench is probably one of the most differentiating benchmarks right now.\nand it shows how large the gap between open and closed models still is on a real knowledge job:\nFable 5.1: 72%, $18.23 per task\nKimi K3: 18%, $25.83 per task\nQuoting NeoCognition…",
+  "image": "https://cdn4.telesco.pe/file/hiVzD0VOMyCsCb9AiRv-XEOTV0fG7Y_BHm1B5Qxx0YJLCbLOhZQ86-9_IvQxz0CI1emMLZdKOY2Ta9-otGgtuRaCXFaFz6dR81NFq2dpMn4yGbYND7F8QYs-mkRESUed_Q8x2PrjU69Ay3aZgqDRDxLTQ08dPLxyeDOdI81deYaky94i_QqEGKE0v6YhuKTv4K4GQHG-n1dVZ0FDRI1EO7hDB9Vtnp5mqR_wlxmxcIdFjROueSZRcJV2roTw7piNByDn45x8Nb4LXccoBj_BUGgsQDHjbVVjefo1QAHDl1w0eRJcfteY7RqZNOVtHrQMMQSv1C-jbXTkPdUExN9Jrw.jpg"
+ },
+ "gholam": {
+  "text": "رفیق، توی بنچ‌مارک جدید ApprenticeBench که کارای واقعی و سنگین مثل کار با کامپیوتر و یادگیری ادامه‌دار رو می‌سنجه، عیار واقعی هوش‌های مصنوعی بدجوری رو شده. نتایج نشون می‌ده که هنوز فاصله بین مدل‌های بسته و متن‌باز تو کارهای دانشی واقعی مثل یه دره عمیقه؛ طوری که مدل Fable 5.1 تونسته با دقت ۷۲ درصد و هزینه حدود ۱۸ دلار برای هر تسک سربلند بیرون بیاد. اون طرف قضیه مدل Kimi K3 رو داریم که نه تنها با دقت ۱۸ درصد عملاً کم آورده، بلکه واسه هر تسک حدود ۲۶ دلار هم خرج رو دست آدم گذاشته. \n\nچرا مهمه؟ اهمیتش اینه که نشون میده تو دنیای واقعی کار و بیزینس، هنوز مدل‌های انحصاری و بسته دارن کارایی خیلی بهتر و به‌صرفه‌تری نسبت به مدل‌های باز ارائه میدن.",
+  "date": "2026-09-11T01:43:59+00:00"
+ },
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/ysu_nlp/status/2098183017252745246",
+   "domain": "x.com",
+   "author": {
+    "name": "Yu Su",
+    "handle": "ysu_nlp",
+    "avatar": "https://pbs.twimg.com/profile_images/1892026270738739200/YH9XRC1x_200x200.jpg"
+   },
+   "text": "ApprenticeBench is probably one of the most differentiating benchmarks right now. \n\nand it shows how large the gap between open and closed models still is on a real knowledge job: \n\nFable 5.1: 72%, $18.23 per task\nKimi K3: 18%, $25.83 per task",
+   "date": 1789080788,
+   "media": [
+    {
+     "type": "image",
+     "src": "https://pbs.twimg.com/media/HR49I7caUAA3ui5.jpg?name=orig",
+     "ratio": 0.8991
+    }
+   ],
+   "links": [],
+   "quote": {
+    "author": {
+     "name": "NeoCognition",
+     "handle": "NeoCognition",
+     "avatar": "https://pbs.twimg.com/profile_images/2045988894144184320/AAnHBl2u_200x200.png"
+    },
+    "text": "ApprenticeBench, just like a real job, is a comprehensive test: computer use, continual learning with memory notes, long-horizon... if a model has any weaknesses in any aspect, it shows.\n\n> strong differentiation across models\n> frontier models are already more accurate than human professionals, but also come with a 250% cost\n> large gap between open (Kimi K3's 18%) and closed (Fable 5.1's 72%). Open models are not necessarily cheaper either, because they may spend a lot of tokens when struggling.",
+    "date": 1789072246,
+    "media": [
+     {
+      "type": "image",
+      "src": "https://pbs.twimg.com/media/HR4c7CtbgAA4JzH.jpg?name=orig",
+      "ratio": 0.7669
+     }
+    ],
+    "links": []
+   }
+  }
+ ],
+ "article": {
+  "title": "توی بنچ‌مارک جدید ApprenticeBench که کارای واقعی و سنگین مثل کار با کامپیوتر و یادگیری ادامه‌دار رو می‌سنجه، عیار واقعی هوش‌های مصنوعی بدجوری رو شده",
+  "source_title": "ApprenticeBench is probably one of the most differentiating benchmarks right now.",
+  "body": [
+   "رفیق، توی بنچ‌مارک جدید ApprenticeBench که کارای واقعی و سنگین مثل کار با کامپیوتر و یادگیری ادامه‌دار رو می‌سنجه، عیار واقعی هوش‌های مصنوعی بدجوری رو شده. نتایج نشون می‌ده که هنوز فاصله بین مدل‌های بسته و متن‌باز تو کارهای دانشی واقعی مثل یه دره عمیقه؛ طوری که مدل Fable 5.1 تونسته با دقت ۷۲ درصد و هزینه حدود ۱۸ دلار برای هر تسک سربلند بیرون بیاد. اون طرف قضیه مدل Kimi K3 رو داریم که نه تنها با دقت ۱۸ درصد عملاً کم آورده، بلکه واسه هر تسک حدود ۲۶ دلار هم خرج رو دست آدم گذاشته."
+  ],
+  "why": "اهمیتش اینه که نشون میده تو دنیای واقعی کار و بیزینس، هنوز مدل‌های انحصاری و بسته دارن کارایی خیلی بهتر و به‌صرفه‌تری نسبت به مدل‌های باز ارائه میدن.",
+  "tags": [
+   "چین"
+  ]
+ },
+ "updated": "2026-10-25T12:27:12+00:00",
+ "gholam_checked": "2026-10-25T12:27:12+00:00"
+}

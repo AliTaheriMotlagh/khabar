@@ -1,0 +1,81 @@
+{
+ "id": 5861,
+ "url": "https://t.me/dlmehr/5861",
+ "date": "2026-10-13T15:37:17+00:00",
+ "text": "https://fxtwitter.com/rohanpaul_ai/status/2109988217000976781?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+ "forwarded_from": null,
+ "digest": false,
+ "hash": "3a7cf54671fc",
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/rohanpaul_ai/status/2109988217000976781?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+  "site": "FxTwitter",
+  "title": "Rohan Paul (@rohanpaul_ai)",
+  "description": "Pulling a due date out of a 300-page PDF shouldn’t need a model that writes.\nDecision models now get a 1M-token window, and they take images too.\nScaleDown released 3 small models (Classify, Extract, Summarize) for the simple, repetitive jobs that agents…",
+  "image": null
+ },
+ "gholam": {
+  "text": "رفیق، شرکت ScaleDown اومده یه کار درست کرده و سه تا مدل تر و تمیز برای کارای روتین مثل دسته‌بندی، خلاصه‌سازی و کشیدن اطلاعات از دل متن داده بیرون. این مدل‌های جدید پنجره حافظه یک میلیون توکنی دارن و عکس رو هم پردازش می‌کنن، منتها کلک کار اینه که دیگه مثل مدل‌های پرخرج کلمه به کلمه انشا نمی‌نویسن، بلکه مستقیم جواب نهایی رو از خود متن سوا می‌کنن. حاصل این فرمول شده مدلی که ۲۰۰ برابر سریع‌تر و ۴۶۷ برابر ارزون‌تر از غول‌های بازار کار می‌کنه؛ یعنی هر میلیون توکن ورودی فقط پنج سنت خرج برمی‌داره و خروجیش هم کلاً رایگان پای شما درمیاد.\n\nچرا مهمه؟ اهمیتش اینه که برای یه استخراج دیتای ساده از دل فایل‌های چندصد صفحه‌ای، دیگه جیب برنامه‌نویس‌ها خالی نمیشه و ابزارها با کمترین خرج و بالاترین سرعت ممکن کار می‌کنن.",
+  "date": "2026-10-13T15:37:37+00:00"
+ },
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/rohanpaul_ai/status/2109988217000976781",
+   "domain": "x.com",
+   "author": {
+    "name": "Rohan Paul",
+    "handle": "rohanpaul_ai",
+    "avatar": "https://pbs.twimg.com/profile_images/1816185267037859840/Fd18CH0v_200x200.jpg"
+   },
+   "text": "Pulling a due date out of a 300-page PDF shouldn’t need a model that writes.\n\nDecision models now get a 1M-token window, and they take images too.\n\nScaleDown released 3 small models (Classify, Extract, Summarize) for the simple, repetitive jobs that agents usually hand to an expensive LLM.\n\n200x faster and 467x cheaper than frontier LLM APIs. $0.05 per million input tokens, and output is free.\n\nThe bigger change is that the same design now covers classify, extract and summarize.\n\nThe difference with regular LLMs is that these models don’t write their answer token by token. They read up to 1M tokens of text and images once and pick the answer straight from the input, so output is free, results stay inside your labels or source text\n\nScaleDown’s Constrained Decoding Models make one prefill pass over your input and select the answer from it: a label, a span with its source offset, or the passages that belong in a summary.\n\nhttps://x.com/neal_k_patel/status/2109978626124898587/video/1",
+   "date": 1791895367,
+   "media": [
+    {
+     "type": "video",
+     "src": "https://video.twimg.com/amplify_video/2109974387373821952/vid/avc1/1280x720/X5qAoY5LKZOWZiXK.mp4?tag=29",
+     "poster": "https://pbs.twimg.com/amplify_video_thumb/2109974387373821952/img/Hvvv6ZAA9XZkGIbu.jpg",
+     "ratio": 0.5625,
+     "duration": 45.866,
+     "gif": false
+    }
+   ],
+   "links": [
+    "https://x.com/neal_k_patel/status/2109978626124898587/video/1"
+   ],
+   "quote": {
+    "author": {
+     "name": "Neal Patel",
+     "handle": "neal_k_patel",
+     "avatar": "https://pbs.twimg.com/profile_images/2062400562964869120/w91MqYxM_200x200.jpg"
+    },
+    "text": "You already gave the LLM the answer. So why is it writing it out from scratch?\n\nIntroducing a new AI model architecture: Constrained Decoding Models (CDMs)\n\nLLMs were built to write. Most production workloads just need an answer: fast, consistent, and affordable.\n\nCDMs are purpose-built for 1 task each. They read your input once and skip the token-by-token generative loop that makes LLMs slow and expensive.\n\nNot just a decision model, but a family of 3 CDMs live today:\n\n• Classify: define your labels and get back a calibrated probability + reason for each. Used for routing, tagging, and intent detection.\n • Extract: describe the entities in natural language and get back well-formed JSON with confidence scores + citations. Used for web scraping, document processing, and PII redaction.\n • Summarize: pass in long text, images, or PDFs and get back a consistent summary under 1,000 tokens. Used for context compaction, metadata generation, and transcript digests.\n\nBuilt for production:\n\n• 1M tokens of multimodal (text + image) input, 31x larger than Jev\n • 77.2% on DecisionBench vs Jev's 72%\n • 200x faster, 467x cheaper than frontier LLM APIs\n • $0.05/M input tokens. Output is free (yes, even for summarize)\n\nLive on your favorite platforms today:\n @OpenRouter @vercel_dev @LiteLLM @LangChain  @TrustedRouter @itsArthurAI @useRouterPlus\n\nGet 50M input tokens for free (for the first 50 hours) at link below 👀",
+    "date": 1791893080,
+    "media": [
+     {
+      "type": "video",
+      "src": "https://video.twimg.com/amplify_video/2109974387373821952/vid/avc1/1280x720/X5qAoY5LKZOWZiXK.mp4?tag=29",
+      "poster": "https://pbs.twimg.com/amplify_video_thumb/2109974387373821952/img/Hvvv6ZAA9XZkGIbu.jpg",
+      "ratio": 0.5625,
+      "duration": 45.866,
+      "gif": false
+     }
+    ],
+    "links": []
+   }
+  }
+ ],
+ "article": {
+  "title": "شرکت ScaleDown اومده یه کار درست کرده و سه تا مدل تر و تمیز برای کارای روتین مثل دسته‌بندی، خلاصه‌سازی و کشیدن اطلاعات از دل متن داده بیرون",
+  "source_title": "Pulling a due date out of a 300-page PDF shouldn’t need a model that writes.",
+  "body": [
+   "رفیق، شرکت ScaleDown اومده یه کار درست کرده و سه تا مدل تر و تمیز برای کارای روتین مثل دسته‌بندی، خلاصه‌سازی و کشیدن اطلاعات از دل متن داده بیرون. این مدل‌های جدید پنجره حافظه یک میلیون توکنی دارن و عکس رو هم پردازش می‌کنن، منتها کلک کار اینه که دیگه مثل مدل‌های پرخرج کلمه به کلمه انشا نمی‌نویسن، بلکه مستقیم جواب نهایی رو از خود متن سوا می‌کنن. حاصل این فرمول شده مدلی که ۲۰۰ برابر سریع‌تر و ۴۶۷ برابر ارزون‌تر از غول‌های بازار کار می‌کنه؛ یعنی هر میلیون توکن ورودی فقط پنج سنت خرج برمی‌داره و خروجیش هم کلاً رایگان پای شما درمیاد."
+  ],
+  "why": "اهمیتش اینه که برای یه استخراج دیتای ساده از دل فایل‌های چندصد صفحه‌ای، دیگه جیب برنامه‌نویس‌ها خالی نمیشه و ابزارها با کمترین خرج و بالاترین سرعت ممکن کار می‌کنن.",
+  "tags": [
+   "اشتغال"
+  ]
+ },
+ "updated": "2026-10-25T12:23:39+00:00",
+ "gholam_checked": "2026-10-25T12:23:39+00:00"
+}

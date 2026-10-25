@@ -1,0 +1,56 @@
+{
+ "id": 5573,
+ "url": "https://t.me/dlmehr/5573",
+ "date": "2026-10-01T13:11:32+00:00",
+ "text": "https://fxtwitter.com/Ananth7e/status/2105392874779185299",
+ "forwarded_from": "Parsa Razavi",
+ "digest": false,
+ "hash": "48fbd17f8c0a",
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/Ananth7e/status/2105392874779185299",
+  "site": "FxTwitter",
+  "title": "Ananth (@Ananth7e)",
+  "description": "wait. did i read that right?\ngemini 4 argon has a 1M token output limit.\nlet me repeat. not a 1M context window. a 1M token output limit.\nthat means, it can write up to a million tokens in a single response.\ni got confused too at first. for context, most…",
+  "image": "https://cdn4.telesco.pe/file/ea5rOmf1UC1Rt9m8Htg_nNY5tvvgRkI-Gn78wGhXyJYCGyZq7fn-h1tSpKFveZ9RRUKgYg8icvVdV7c29N11eA0WAap-yzqEV_YP4pqWd7MgrtSNt56S1G73-oHQikWr1zzJtSPFjGAoocOC8ONGGAITWyUH18xd0O2m8S7CKroRw4qy16bfqkQ_nUjq4h9hJ9Irg-qldovdgmTCwm64XWRm3-kkGLEGAviCq2ABB1bQUi1iyDGlzujqsOy3FuSsisPT7gDeD8t4sYh0o__PJfpqDoZCBk9b0mT5JfqXa29qYqLNIUlT9yjdNGwhUJHIzegdTWMlmq1s2nFIwy4bcg.jpg"
+ },
+ "gholam": {
+  "text": "رفیق، نگم برات که دنیای هوش مصنوعی باز یه تکون اساسی خورده و ظاهراً مدل «جمینای ۴ آرگون» رسماً زده به سیم آخر. قضیه از این قراره که سقف خروجی و پاسخ‌دهی این مدل جدید توی یه تک‌جواب به رقم باورنکردنیِ یک میلیون توکن رسیده؛ یعنی خوب حواست رو جمع کن، صحبت سر خروجیِ متنه نه فقط خوندن ورودی! واسه این‌که دستت بیاد چه آشی پختن، بدون که قوی‌ترین مدل‌های دنیا خروجیشون نهایتاً دوروبر ۱۲۸ هزار توکن قفل می‌کنه، ولی این اعجوبه می‌تونه یه رمان قطور یا کل کدهای یه نرم‌افزار سنگین رو یه ضرب بنویسه و بذاره کف دستت.\n\nاهمیتش اینه که محدودیت تولید محتوا و کدهای طولانی عملاً دود می‌شه می‌ره هوا و مدل‌ها می‌تونن پروژه‌های غول‌آسا رو بدون تیکه‌تکه شدن، یک‌جا تحویل بدن.",
+  "date": "2026-10-01T13:11:48+00:00"
+ },
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/Ananth7e/status/2105392874779185299",
+   "domain": "x.com",
+   "author": {
+    "name": "Ananth",
+    "handle": "Ananth7e",
+    "avatar": "https://pbs.twimg.com/profile_images/2112756992196706304/4z2FqCDu_200x200.png"
+   },
+   "text": "wait. did i read that right?\n\ngemini 4 argon has a 1M token output limit.\n\nlet me repeat. not a 1M context window. a 1M token output limit.\n\nthat means, it can write up to a million tokens in a single response.\n\ni got confused too at first. for context, most frontier models cap output somewhere around 128k.\n\nthat's madness.",
+   "date": 1790799752,
+   "media": [
+    {
+     "type": "image",
+     "src": "https://pbs.twimg.com/media/HTfbInzbsAAowLn.png?name=orig",
+     "ratio": 0.2303
+    }
+   ],
+   "links": []
+  }
+ ],
+ "article": {
+  "title": "نگم برات که دنیای هوش مصنوعی باز یه تکون اساسی خورده و ظاهراً مدل «جمینای ۴ آرگون» رسماً زده به سیم آخر",
+  "source_title": "wait. did i read that right?",
+  "body": [
+   "رفیق، نگم برات که دنیای هوش مصنوعی باز یه تکون اساسی خورده و ظاهراً مدل «جمینای ۴ آرگون» رسماً زده به سیم آخر. قضیه از این قراره که سقف خروجی و پاسخ‌دهی این مدل جدید توی یه تک‌جواب به رقم باورنکردنیِ یک میلیون توکن رسیده؛ یعنی خوب حواست رو جمع کن، صحبت سر خروجیِ متنه نه فقط خوندن ورودی! واسه این‌که دستت بیاد چه آشی پختن، بدون که قوی‌ترین مدل‌های دنیا خروجیشون نهایتاً دوروبر ۱۲۸ هزار توکن قفل می‌کنه، ولی این اعجوبه می‌تونه یه رمان قطور یا کل کدهای یه نرم‌افزار سنگین رو یه ضرب بنویسه و بذاره کف دستت."
+  ],
+  "why": "محدودیت تولید محتوا و کدهای طولانی عملاً دود می‌شه می‌ره هوا و مدل‌ها می‌تونن پروژه‌های غول‌آسا رو بدون تیکه‌تکه شدن، یک‌جا تحویل بدن.",
+  "tags": [
+   "گوگل"
+  ]
+ },
+ "updated": "2026-10-25T12:25:18+00:00",
+ "gholam_checked": "2026-10-25T12:25:18+00:00"
+}

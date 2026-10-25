@@ -1,0 +1,57 @@
+{
+ "id": 4613,
+ "url": "https://t.me/dlmehr/4613",
+ "date": "2026-08-05T20:47:01+00:00",
+ "text": "https://fxtwitter.com/finkd/status/2085080750034940201?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+ "forwarded_from": null,
+ "digest": false,
+ "hash": "418040284ba9",
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/finkd/status/2085080750034940201?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+  "site": "🧵 Thread • FxTwitter",
+  "title": "Mark Zuckerberg (@finkd)",
+  "description": "Releasing Muse Code in beta today. It's a terminal coding agent that takes on complete software engineering tasks across large repos: planning changes, writing code, validating the results. Powered by Muse Spark 1.2, a coding-focused model update.",
+  "image": "https://cdn4.telesco.pe/file/WBFIHEdTUOLYTONSO2JQKt3i4APKulmXGve1-KJnwEkfEzbIe7ioK6M9RDdNGGnM3dMTQsY01b7vsZiKuYL9rAJC7DIaxZiUJTvD-tlVSv3p8wtMIjWysWQr-QHKrD_Ze7a15nNtPcfooL5_HjwZCdTlXie-angiwIFtIzVjIws7SNSMetq-UnirXwYj8DPQ6ZbdHT29xt7T-QLpswewF9m4yWiHLvvinryxkXa9ups7FCegiZ8g0van6P5NTtHjWitpzo1vNQSJmvEqzuAEF3KWqoUrMer7dKcrWZrvuWnreWkBNPnif3YwpIltPcI9gKcFVndERUGvDar11V2Qsg.jpg"
+ },
+ "gholam": {
+  "text": "رفیق، مارک زاکربرگ تازه از نسخه بتای یه دستیار کدنویسی خفن به اسم Muse Code رونمایی کرده که رسماً کار مهندسای نرم‌افزار رو می‌بره مرحله بعد. این سیستم توی محیط ترمینال کار می‌کنه و صفر تا صد پروژه‌های بزرگ رو خودش دست می‌گیره؛ یعنی از برنامه‌ریزی تغییرات و نوشتن کدها گرفته تا تست و اعتبارسنجی نهایی. سوخت اصلی این ابزار تازه هم مدل هوشمند Muse Spark 1.2 هستش که کلاً مخصوص کدنویسی دقیق و حرفه‌ای ارتقا پیدا کرده.\n\nاهمیتش اینه که هوش مصنوعی داره از ابزارهای کمکی ساده فراتر می‌ره و رسماً اداره کامل پروژه‌های سنگین نرم‌افزاری رو توی ترمینال به دست می‌گیره.",
+  "date": "2026-08-05T20:47:15+00:00"
+ },
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/finkd/status/2085080750034940201",
+   "domain": "x.com",
+   "author": {
+    "name": "Mark Zuckerberg",
+    "handle": "finkd",
+    "avatar": "https://pbs.twimg.com/profile_images/77846223/profile_200x200.jpg"
+   },
+   "text": "Releasing Muse Code in beta today. It's a terminal coding agent that takes on complete software engineering tasks across large repos: planning changes, writing code, validating the results. Powered by Muse Spark 1.2, a coding-focused model update.",
+   "date": 1785956964,
+   "media": [
+    {
+     "type": "image",
+     "src": "https://pbs.twimg.com/media/HO-xetQW0AAvupU.jpg?name=orig",
+     "ratio": 0.4115
+    }
+   ],
+   "links": []
+  }
+ ],
+ "article": {
+  "title": "مارک زاکربرگ تازه از نسخه بتای یه دستیار کدنویسی خفن به اسم Muse Code رونمایی کرده که رسماً کار مهندسای نرم‌افزار رو می‌بره مرحله بعد",
+  "source_title": "Releasing Muse Code in beta today. It's a terminal coding agent that takes on complete software engineering tasks across large repos…",
+  "body": [
+   "رفیق، مارک زاکربرگ تازه از نسخه بتای یه دستیار کدنویسی خفن به اسم Muse Code رونمایی کرده که رسماً کار مهندسای نرم‌افزار رو می‌بره مرحله بعد. این سیستم توی محیط ترمینال کار می‌کنه و صفر تا صد پروژه‌های بزرگ رو خودش دست می‌گیره؛ یعنی از برنامه‌ریزی تغییرات و نوشتن کدها گرفته تا تست و اعتبارسنجی نهایی. سوخت اصلی این ابزار تازه هم مدل هوشمند Muse Spark 1.2 هستش که کلاً مخصوص کدنویسی دقیق و حرفه‌ای ارتقا پیدا کرده."
+  ],
+  "why": "هوش مصنوعی داره از ابزارهای کمکی ساده فراتر می‌ره و رسماً اداره کامل پروژه‌های سنگین نرم‌افزاری رو توی ترمینال به دست می‌گیره.",
+  "tags": [
+   "کدنویسی",
+   "متا"
+  ]
+ },
+ "updated": "2026-10-25T12:30:51+00:00",
+ "gholam_checked": "2026-10-25T12:30:51+00:00"
+}

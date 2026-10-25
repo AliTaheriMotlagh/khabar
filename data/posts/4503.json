@@ -1,0 +1,51 @@
+{
+ "id": 4503,
+ "url": "https://t.me/dlmehr/4503",
+ "date": "2026-07-31T12:32:22+00:00",
+ "text": "https://fxtwitter.com/artificialanlys/status/2083123180869496865?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+ "forwarded_from": null,
+ "digest": false,
+ "hash": "3a535427fde8",
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/artificialanlys/status/2083123180869496865?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+  "site": "🧵 Thread • FxTwitter",
+  "title": "Artificial Analysis (@ArtificialAnlys)",
+  "description": "DeepSeek V4 Flash 0731 scores 50 on the Artificial Analysis Intelligence Index, a 10-point jump over DeepSeek V4 Flash (released April 2026) that puts it 6 points ahead of DeepSeek V4 Pro. It shares identical architecture and pricing with the earlier DeepSeek…",
+  "image": "https://cdn4.telesco.pe/file/pBhmCfEaETzL2KR6tDYVS8eHLU0IVyPTFI7SjmlE0cXPgj-jjYZmstkGmIc5sLKjG5OVOBCvTobTzO0IZTuD5QhU3II0bm6MIkMlL9W4c_rCGlOAx_aRSv77aRKaqG0ylmOShnPRnqOOMdeBiDg1sLjhCUc_3P11BxsRqMU951HQjmsfYGWilG7uUsFKzKDBWQbSWXNk_HJz3-33cfLgFdJAZOgzjU7qlteRdfqSVZIiNWtb1ve6cZ5TP8F2B2dgNrAEgIVsMIMOsfd5HQOaO6BpjcCHfwWzOH287nKMVgllleLjAKbsW2tNIudVZ9WLBhjMp3oszf69S0wQqijfnQ.jpg"
+ },
+ "gholam": null,
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/ArtificialAnlys/status/2083123180869496865",
+   "domain": "x.com",
+   "author": {
+    "name": "Artificial Analysis",
+    "handle": "ArtificialAnlys",
+    "avatar": "https://pbs.twimg.com/profile_images/2042402069320290304/A8C1lP07_200x200.jpg"
+   },
+   "text": "DeepSeek V4 Flash 0731 scores 50 on the Artificial Analysis Intelligence Index, a 10-point jump over DeepSeek V4 Flash (released April 2026) that puts it 6 points ahead of DeepSeek V4 Pro. It shares identical architecture and pricing with the earlier DeepSeek V4 Flash, and lands on our Pareto frontier for Intelligence vs Cost per Task\n\n@deepseek_ai’s DeepSeek V4 Flash 0731 is one Intelligence Index point behind GPT-5.6 Luna (max, 51). Even after OpenAI’s 80% price cut on GPT-5.6 Luna today, DeepSeek V4 Flash 0731’s Cost per Task on DeepSeek’s first-party API comes in at ~60% lower than GPT-5.6 Luna (max), a model with comparable intelligence. A key driver of this is DeepSeek’s ~98% cache hit discount on its first-party API, a significantly more aggressive discount than the 90% cache hit discount offered by most of the industry\n\nThe new model is a significant step up from the previous generation, DeepSeek V4 Flash (40), and places the model within 1 point of GLM-5.2 (max, 51). It remains 7 points behind the open weights frontier set by Kimi K3 (max, 57). For additional context, this places the model in line with recently released Gemini 3.6 Flash (50) and 1 point behind Muse Spark 1.1 (xhigh, 51). DeepSeek is expected to release the model’s full weights in the coming weeks\n\nDeepSeek V4 Flash 0731 retains a 1M token context window, and its size remains unchanged from DeepSeek V4 Flash at 284B total parameters and 13B active at inference time\n\nKey results:\n\n➤ Improvements in agentic performance: DeepSeek V4 Flash 0731 achieves an Elo rating of 1559 on GDPval-AA v2, our evaluation focused on agentic real-world work tasks, up from 1189 for the previous DeepSeek V4 Flash. Once weights are released this will be the second highest open weights score, behind Kimi K3 (max, 1687) and ahead of GLM-5.2 (max, 1510). Terminal-Bench 2.1 rises 17 points to 79% and τ³-Bench Banking 8 points to 31%\n\n➤ Token usage falls 12% against the predecessor: DeepSeek V4 Flash 0731 used ~206M output tokens to run the Intelligence Index, against ~234M for the previous DeepSeek V4 Flash. The new variant is more token efficient, achieving a higher Intelligence Index with a lower number of total output tokens\n\n➤ DeepSeek V4 Flash 0731 improves over its predecessor on every evaluation in the Intelligence Index: Alongside the agentic gains, CritPt gains 9 points to 17%, SciCode 5 points to 50%, Humanity's Last Exam 5 points to 37%, AA-LCR 3 points to 66% and GPQA Diamond 1 point to 91%\n\n➤ AA-Omniscience improvements are driven by fewer hallucinations, rather than higher accuracy: DeepSeek V4 Flash 0731 achieves an AA-Omniscience Index of -16, a +7 improvement from its predecessor. This improvement is purely driven by a reduced hallucination rate, with overall accuracy (percentage correct) unchanged. Its AA-Omniscience Hallucination Rate is 84%, a 12 point decrease from its predecessor, and comparable to models such as GPT-5.6 Terra (max, 85%) and Mistral Medium 3.5 (82%)\n\nAdditional model details:\n\n➤ Context window: 1M tokens (equivalent to DeepSeek V4 Flash)\n\n➤ Size: 284B total parameters (13B active)\n\n➤ Input modalities: Text input and output only\n\n➤ Accessibility: Available through DeepSeek’s first-party API\n\n➤ Pricing: $0.14/$0.28 per 1M input/output tokens, unchanged from DeepSeek V4 Flash. Cache hit price of $0.0028 per 1M tokens, a 98% discount",
+   "date": 1785490243,
+   "media": [
+    {
+     "type": "image",
+     "src": "https://pbs.twimg.com/media/HOi9FSnbMAAzY5S.jpg?name=orig",
+     "ratio": 0.9731
+    }
+   ],
+   "links": []
+  }
+ ],
+ "article": {
+  "title": "DeepSeek V4 Flash 0731 scores 50 on the Artificial Analysis Intelligence Index, a 10-point jump over DeepSeek V4 Flash (released April…",
+  "source_title": null,
+  "body": [],
+  "why": null,
+  "tags": [
+   "چین"
+  ]
+ },
+ "updated": "2026-10-25T12:31:29+00:00",
+ "gholam_checked": "2026-10-25T12:31:29+00:00"
+}

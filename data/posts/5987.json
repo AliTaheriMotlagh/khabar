@@ -2,16 +2,23 @@
  "id": 5987,
  "url": "https://t.me/dlmehr/5987",
  "date": "2026-10-20T03:51:09+00:00",
- "edited": true,
- "views": "189",
  "text": "https://fxtwitter.com/trycua/status/2112228154651881479?s=52&t=F41Qa04r48Mef_j_XjBneQ",
  "forwarded_from": null,
  "digest": false,
  "hash": "3b70b678ff72",
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/trycua/status/2112228154651881479?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+  "site": "🧵 Thread • FxTwitter",
+  "title": "Cua (@trycua)",
+  "description": "1/ Introducing the Cua Spaces SDK.\nEvery big lab now ships a bot with its own computer: Grok Bot, Muse, dots. None let you bring your own. With Cua Spaces, now you can.\nPut Claude Code, Codex or any agent on compute you choose, and run jobs across all…",
+  "image": null
+ },
  "gholam": {
   "text": "رفیق، قضیه از این قراره که تیم Cua یه کیت توسعه جدید به اسم Cua Spaces SDK رو کرده که حسابی دست برنامه‌نویسا رو باز می‌ذاره. ببین، غول‌های هوش مصنوعی مثل گراک و بقیه، ربات‌هاشونو چفتِ سرورهای خودشون کردن و اجازه نمیدن سخت‌افزار دلخواهت رو بیاری وسط، ولی این ابزار جدید قفل ماجرا رو شکسته. از این به بعد می‌تونی ایجنت‌هایی مثل کلود کد یا کدکس رو دقیقاً روی همون سیستمی که خودت صلاح می‌دونی بالا بیاری و کارها رو هم‌زمان روی چند تا کامپیوتر مختلف تقسیم کنی و جلو ببری.\n\nچرا مهمه؟ چون کنترل کامل هزینه‌ها و زیرساختِ اجرای هوش مصنوعی رو از انحصار شرکت‌های بزرگ درمیاره و دست خودت می‌سپاره.",
   "date": "2026-10-20T03:51:22+00:00"
  },
+ "gholam_checked": "2026-10-24T23:03:16+00:00",
  "links": [
   {
    "kind": "tweet",
@@ -46,14 +53,6 @@
    "links": []
   }
  ],
- "media": [],
- "preview": {
-  "url": "https://fxtwitter.com/trycua/status/2112228154651881479?s=52&t=F41Qa04r48Mef_j_XjBneQ",
-  "site": "🧵 Thread • FxTwitter",
-  "title": "Cua (@trycua)",
-  "description": "1/ Introducing the Cua Spaces SDK.\nEvery big lab now ships a bot with its own computer: Grok Bot, Muse, dots. None let you bring your own. With Cua Spaces, now you can.\nPut Claude Code, Codex or any agent on compute you choose, and run jobs across all…",
-  "image": null
- },
  "article": {
   "title": "قضیه از این قراره که تیم Cua یه کیت توسعه جدید به اسم Cua Spaces SDK رو کرده که حسابی دست برنامه‌نویسا رو باز می‌ذاره",
   "source_title": "1/ Introducing the Cua Spaces SDK.",
@@ -66,6 +65,5 @@
    "ایلان ماسک"
   ]
  },
- "updated": "2026-10-24T23:03:16+00:00",
- "gholam_checked": "2026-10-24T23:03:16+00:00"
+ "updated": "2026-10-25T11:53:59+00:00"
 }

@@ -1,0 +1,83 @@
+{
+ "id": 4714,
+ "url": "https://t.me/dlmehr/4714",
+ "date": "2026-08-12T16:05:43+00:00",
+ "text": "https://fxtwitter.com/kimmonismus/status/2087563670054211704?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+ "forwarded_from": null,
+ "digest": false,
+ "hash": "aad3540c94b7",
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/kimmonismus/status/2087563670054211704?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+  "site": "🧵 Thread • FxTwitter",
+  "title": "Chubby ♨️ (@kimmonismus)",
+  "description": "Grok 4.6 released, absolutely insane crazy jump! xAI was cooking!\nAccording to xAI’s benchmarks, Grok 4.6 matches GPT-5.6 Sol on the AA Intelligence Index at 61 and leads it on CursorBench, FrontierCode and AA-Briefcase.\nBut it still trails GPT-5.6 Sol…",
+  "image": "https://cdn4.telesco.pe/file/XEA8uDUDhyXlPMatV5k5EA_c2gfmsll2Wn1Q4rZPGFeQz4N56I_r8TiDpCxC0bzKrRsMh2EC9cm3Jxzl1qdUvTWv_pMDXTxS5IwARK7AWXoP42ZajX1ELNHm3HuSbiprSfkfln4RsmXHFwU6ypNDVOj5KsB_aOG3H1UTarRoHAy67OUQa7zCAOFHL8dtdm3WksufEZBRLiqXxWUviZFVXuTZLjqa2LpUWaKJGBNh_8HAwy4jyO8SJRXU2c-OTPUBAw8Iwgwpu6kaXMlSpfpItenK9c_sdcQnMKXAS9-mTE0MoIIbmULvJG4kIPXTaA7bO8Fsuaa-hJR1OvNA65gJcw.jpg"
+ },
+ "gholam": {
+  "text": "رفیق، این شرکت xAI بالاخره مدل جدیدش یعنی Grok 4.6 رو رو کرد و خدایی یه جهش خفن و باورنکردنی داشته! طبق بنچمارک‌ها، این مدل توی شاخص هوش AA با امتیاز ۶۱ قشنگ خودش رو به GPT-5.6 Sol رسونده و حتی توی تست‌های کدنویسی مثل CursorBench و FrontierCode زده رو دستش، هرچند توی DeepSWE هنوز یکم عقب‌تره. بچه‌های xAI کلی آموزش سنگین‌تر و تقویت هوشمندانه روی کدنویسی، طراحی CAD و بهینه‌سازی پیاده کردن تا قدرت مدل بالا بره، و همین امروز هم از طریق API و برنامه Cursor برای همه ردیف شده.\n\nاهمیتش اینه که رقابت غول‌های هوش مصنوعی سر ابزارهای برنامه‌نویسی شدیدتر شده و کار رو برای توسعه‌دهنده‌ها خیلی راحت‌تر و سریع‌تر می‌کنه.",
+  "date": "2026-08-12T16:05:57+00:00"
+ },
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/kimmonismus/status/2087563670054211704",
+   "domain": "x.com",
+   "author": {
+    "name": "Chubby♨️",
+    "handle": "kimmonismus",
+    "avatar": "https://pbs.twimg.com/profile_images/1728327996375719936/RW7VBJfD_200x200.jpg"
+   },
+   "text": "Grok 4.6 released, absolutely insane crazy jump! xAI was cooking!\n\nAccording to xAI’s benchmarks, Grok 4.6 matches GPT-5.6 Sol on the AA Intelligence Index at 61 and leads it on CursorBench, FrontierCode and AA-Briefcase.\n\nBut it still trails GPT-5.6 Sol on DeepSWE and Terminal-Bench.\n\nxAI says the model received a longer supplemental training run, regenerated SFT trajectories and agentic reinforcement learning across coding, web development, CAD and kernel optimization. The company also reports seeing more \"self-testing and verification\" during longer tasks.\n\nGrok 4.6 is available today through Cursor, Grok Build, the API and several infrastructure partners.\n\nThese are company-reported results, but the improvement over Grok 4.5 is substantial across nearly every published evaluation.\n\nKudos, @xai and @cursor_ai This looks so good!!",
+   "date": 1786548938,
+   "media": [
+    {
+     "type": "image",
+     "src": "https://pbs.twimg.com/media/HPiDnVWWsAElTaQ.jpg?name=orig",
+     "ratio": 0.6294
+    },
+    {
+     "type": "image",
+     "src": "https://pbs.twimg.com/media/HPiDsj9XEAI5R23.jpg?name=orig",
+     "ratio": 0.6523
+    },
+    {
+     "type": "image",
+     "src": "https://pbs.twimg.com/media/HPiDvKuWkAEZLfy.jpg?name=orig",
+     "ratio": 0.6761
+    }
+   ],
+   "links": [],
+   "quote": {
+    "author": {
+     "name": "Chubby♨️",
+     "handle": "kimmonismus",
+     "avatar": "https://pbs.twimg.com/profile_images/1728327996375719936/RW7VBJfD_200x200.jpg"
+    },
+    "text": "DeepSeek v4 Pro GA is rolling out! Grok 4.6 API spotted as well!\n\nReally excited! After the most recent insane update to DeepSeek v4 Flash i expect sevel updates on this one as well!\n\nbig release day it seems!",
+    "date": 1786548521,
+    "media": [
+     {
+      "type": "image",
+      "src": "https://pbs.twimg.com/media/HPiCbV9W4AA1g80.png?name=orig",
+      "ratio": 0.445
+     }
+    ],
+    "links": []
+   }
+  }
+ ],
+ "article": {
+  "title": "این شرکت xAI بالاخره مدل جدیدش یعنی Grok 4.6 رو رو کرد و خدایی یه جهش خفن و باورنکردنی داشته",
+  "source_title": "Grok 4.6 released, absolutely insane crazy jump! xAI was cooking!",
+  "body": [
+   "رفیق، این شرکت xAI بالاخره مدل جدیدش یعنی Grok 4.6 رو رو کرد و خدایی یه جهش خفن و باورنکردنی داشته! طبق بنچمارک‌ها، این مدل توی شاخص هوش AA با امتیاز ۶۱ قشنگ خودش رو به GPT-5.6 Sol رسونده و حتی توی تست‌های کدنویسی مثل CursorBench و FrontierCode زده رو دستش، هرچند توی DeepSWE هنوز یکم عقب‌تره. بچه‌های xAI کلی آموزش سنگین‌تر و تقویت هوشمندانه روی کدنویسی، طراحی CAD و بهینه‌سازی پیاده کردن تا قدرت مدل بالا بره، و همین امروز هم از طریق API و برنامه Cursor برای همه ردیف شده."
+  ],
+  "why": "رقابت غول‌های هوش مصنوعی سر ابزارهای برنامه‌نویسی شدیدتر شده و کار رو برای توسعه‌دهنده‌ها خیلی راحت‌تر و سریع‌تر می‌کنه.",
+  "tags": [
+   "ایلان ماسک"
+  ]
+ },
+ "updated": "2026-10-25T12:30:26+00:00",
+ "gholam_checked": "2026-10-25T12:30:26+00:00"
+}

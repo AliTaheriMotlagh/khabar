@@ -1,0 +1,60 @@
+{
+ "id": 4904,
+ "url": "https://t.me/dlmehr/4904",
+ "date": "2026-08-24T15:46:13+00:00",
+ "text": "https://fxtwitter.com/plotarmordev/status/2091854328130883987?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+ "forwarded_from": null,
+ "digest": false,
+ "hash": "1b747c5c99c5",
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/plotarmordev/status/2091854328130883987?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+  "site": "FxTwitter",
+  "title": "netrunner (@plotarmordev)",
+  "description": "🆕\nThe newly announced Xiaomi’s AI Cube and triple custom chips (O3 + O100 + D100) are interesting for what they say about China’s hardware stack, here are the points that stand out to me:\n- O100 is a 6nm, 3D wafer-on-wafer near memory design claiming 1.22…",
+  "image": null
+ },
+ "gholam": {
+  "text": "ببین رفیق، شیائومی تازه از یه سیستم هوش مصنوعی خفن به اسم AI Cube به همراه سه تا تراشه اختصاصی شامل O100 ،O3 و D100 رونمایی کرده که حسابی گرد و خاک به پا کرده. گل سرسبدشون تراشه O100 هست که با معماری ۶ نانومتری و فناوری بسته‌بندی پیشرفته سه‌بعدی ساخته شده و ادعای پهنای باند وحشتناک ۱.۲۲ ترابایت بر ثانیه رو داره. البته کارشناسا میگن این سرعت خارق‌العاده فعلاً روی مدل‌های سبک نشون داده شده و هنوز معلوم نیست زیر بار مدل‌های سنگین ۱۲۰ میلیاردی چطور جواب پس میده، ولی نشون میده طراحی سخت‌افزار چینی‌ها پیشرفت عجیبی کرده.\n\nاهمیتش اینه که این دستاورد نشون میده فاصله چین توی طراحی تراشه‌های پیشرفته و پکیجینگ با غول‌های دنیا خیلی سریع‌تر از حد انتظار داره کم میشه و این قضیه می‌تونه حتی بازی تامین قطعات غول‌هایی مثل اپل رو هم عوض کنه.",
+  "date": "2026-08-24T15:46:29+00:00"
+ },
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/plotarmordev/status/2091854328130883987",
+   "domain": "x.com",
+   "author": {
+    "name": "netrunner",
+    "handle": "plotarmordev",
+    "avatar": "https://pbs.twimg.com/profile_images/1985163971159101440/HrbwwJz-_200x200.jpg"
+   },
+   "text": "🆕 The newly announced Xiaomi’s AI Cube and triple custom chips (O3 + O100 + D100) are interesting for what they say about China’s hardware stack, here are the points that stand out to me: \n\n- O100 is a 6nm, 3D wafer-on-wafer near memory design claiming 1.22 TB/s ~ about 4.5× GB10. If that bandwidth scales beyond its internal DRAM. \n\n- That to me, also raises an interesting question for the next Mac Studio: what happens to Apple’s memory bandwidth and pricing now that it can diversify more of its memory supply from China? \n\n- Still, the advertised 330 tok/s was on MiMo-3B. Xiaomi hasn’t shown 1.22 TB/s across the full 160GB pool, or how the three chip system handles 120B weights.\n\n- China designing 6nm chips and advanced packaging is BIG. Not full-stack parity yet obviously fab yields, tooling and software still matter, but the design gap is closing faster than many expected.",
+   "date": 1787571911,
+   "media": [
+    {
+     "type": "video",
+     "src": "https://video.twimg.com/amplify_video/2091848974961672192/vid/avc1/854x394/B1bQgDokB6bO9f0e.mp4?tag=29",
+     "poster": "https://pbs.twimg.com/amplify_video_thumb/2091848974961672192/img/KjPNfpz0gI7f9dMR.jpg",
+     "ratio": 0.4614,
+     "duration": 951.9,
+     "gif": false
+    }
+   ],
+   "links": []
+  }
+ ],
+ "article": {
+  "title": "شیائومی تازه از یه سیستم هوش مصنوعی خفن به اسم AI Cube به همراه سه تا تراشه اختصاصی شامل O100 ،O3 و D100 رونمایی کرده که حسابی گرد و خاک به پا کرده",
+  "source_title": "🆕 The newly announced Xiaomi’s AI Cube and triple custom chips (O3 + O100 + D100) are interesting for what they say about China’s hardware…",
+  "body": [
+   "ببین رفیق، شیائومی تازه از یه سیستم هوش مصنوعی خفن به اسم AI Cube به همراه سه تا تراشه اختصاصی شامل O100 ،O3 و D100 رونمایی کرده که حسابی گرد و خاک به پا کرده. گل سرسبدشون تراشه O100 هست که با معماری ۶ نانومتری و فناوری بسته‌بندی پیشرفته سه‌بعدی ساخته شده و ادعای پهنای باند وحشتناک ۱.۲۲ ترابایت بر ثانیه رو داره. البته کارشناسا میگن این سرعت خارق‌العاده فعلاً روی مدل‌های سبک نشون داده شده و هنوز معلوم نیست زیر بار مدل‌های سنگین ۱۲۰ میلیاردی چطور جواب پس میده، ولی نشون میده طراحی سخت‌افزار چینی‌ها پیشرفت عجیبی کرده."
+  ],
+  "why": "این دستاورد نشون میده فاصله چین توی طراحی تراشه‌های پیشرفته و پکیجینگ با غول‌های دنیا خیلی سریع‌تر از حد انتظار داره کم میشه و این قضیه می‌تونه حتی بازی تامین قطعات غول‌هایی مثل اپل رو هم عوض کنه.",
+  "tags": [
+   "تراشه",
+   "چین"
+  ]
+ },
+ "updated": "2026-10-25T12:29:24+00:00",
+ "gholam_checked": "2026-10-25T12:29:24+00:00"
+}

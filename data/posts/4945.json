@@ -1,0 +1,75 @@
+{
+ "id": 4945,
+ "url": "https://t.me/dlmehr/4945",
+ "date": "2026-08-25T18:12:34+00:00",
+ "text": "https://fxtwitter.com/theahmadosman/status/2092304330753810443?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+ "forwarded_from": null,
+ "digest": false,
+ "hash": "6f13e44bb030",
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/theahmadosman/status/2092304330753810443?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+  "site": "FxTwitter",
+  "title": "Ahmad (@TheAhmadOsman)",
+  "description": "In other words, Apple might beat NVIDIA in Local AI if the later doesn’t change course\nQuoting Mike Bradley (@MikeBradleyAI)\nThe MSRP of the new M5 Ultra Studios from Apple have completely obliterated the value economics for most consumer AI systems when…",
+  "image": "https://cdn4.telesco.pe/file/LkNYkbTJXvNCqlIRLp6Fu7LUctwAt6hL-9emk60_ca0oPll115G33jcK9cprKawFkSxfL7DRMlIW1agZBdVIR6XqsMA_6c5ziWj0omAdPvzfPappIONHgucJefSgiDZEfnaZy1BWqSYSMUHvpXAYkhOQ2iV-qL4wn7LuQ5EeUT_ZQX8FLbJfc4RMkSz7pR4hKdewQW9_Pw-ShiCfju_kdJLZw7OAMT_dlDabwfp5T5eD5GWWQjsxiLm7e9psx4vRxupilCfNczPA7wba8IQvP1Cki3mi5PxrGe1FJzbdeT5p3rVhxgAkQES_GiH5cYtBZIAVFKolEVwpKnwwNWcUiw.jpg"
+ },
+ "gholam": {
+  "text": "رفیق، قضیه از این قراره که تحلیل‌گرهای دنیای هوش مصنوعی معتقدن اپل با معرفی مک استودیوهای مجهز به تراشه M5 Ultra حسابی برای انویدیا خط و نشون کشیده. طبق بررسی‌های مایک بردلی، نسبت حجم و سرعت حافظه به قیمت توی این دستگاه‌ها، دو تا سه برابر به‌صرفه‌تر از رقبای فعلیه و رسماً معادله اقتصادی هوش مصنوعی لوکال رو دگرگون کرده. خلاصه اگه انویدیا دست‌فرمونش رو عوض نکنه و قیمت‌هاش رو منطقی‌تر نکنه، اپل پادشاهی اجرای مدل‌های هوش مصنوعی روی سیستم‌های خونگی و شخصی رو قرق می‌کنه.\n\nاهمیتش اینه که اجرای مدل‌های سنگین بدون نیاز به اینترنت برای کاربرها خیلی ارزون‌تر و در دسترس‌تر تموم میشه و انحصار غول‌پیکر انویدیا توی سخت‌افزار بالاخره ترک برمی‌داره.",
+  "date": "2026-08-25T18:12:47+00:00"
+ },
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/TheAhmadOsman/status/2092304330753810443",
+   "domain": "x.com",
+   "author": {
+    "name": "Ahmad",
+    "handle": "TheAhmadOsman",
+    "avatar": "https://pbs.twimg.com/profile_images/1831406651829559296/iMbSOxdP_200x200.jpg"
+   },
+   "text": "In other words, Apple might beat NVIDIA in Local AI if the later doesn’t change course",
+   "date": 1787679200,
+   "media": [
+    {
+     "type": "image",
+     "src": "https://pbs.twimg.com/media/HQlbsxwWsAAXApG.jpg?name=orig",
+     "ratio": 1.3803
+    }
+   ],
+   "links": [],
+   "quote": {
+    "author": {
+     "name": "Mike Bradley",
+     "handle": "MikeBradleyAI",
+     "avatar": "https://pbs.twimg.com/profile_images/2078945926677254144/23wTf03F_200x200.jpg"
+    },
+    "text": "The MSRP of the new M5 Ultra Studios from Apple have completely obliterated the value economics for most consumer AI systems when measured as: \n\n(model hosting memory)x(memory speed)/(cost of system)\n\nMemory size and speed per dollar is off the charts (2-3x+ the current economics of the DGX Spark and Strix Halo) and I’d feel very confident assuming these 1.5x from MSRP very quickly.\n\nThe other systems won’t get cheaper so the only path for these studios is to price up into their market value.  Much like the M5 laptops did.\n\nThere’s PLENTY to debate on what hardware works for you.  But the economics of this initial offering are quite wonderfully broken ATM.",
+    "date": 1787679037,
+    "media": [
+     {
+      "type": "image",
+      "src": "https://pbs.twimg.com/media/HQlaGAAXUAAMefM.jpg?name=orig",
+      "ratio": 1.3757
+     }
+    ],
+    "links": []
+   }
+  }
+ ],
+ "article": {
+  "title": "قضیه از این قراره که تحلیل‌گرهای دنیای هوش مصنوعی معتقدن اپل با معرفی مک استودیوهای مجهز به تراشه M5 Ultra حسابی برای انویدیا خط و نشون کشیده",
+  "source_title": "In other words, Apple might beat NVIDIA in Local AI if the later doesn’t change course",
+  "body": [
+   "رفیق، قضیه از این قراره که تحلیل‌گرهای دنیای هوش مصنوعی معتقدن اپل با معرفی مک استودیوهای مجهز به تراشه M5 Ultra حسابی برای انویدیا خط و نشون کشیده. طبق بررسی‌های مایک بردلی، نسبت حجم و سرعت حافظه به قیمت توی این دستگاه‌ها، دو تا سه برابر به‌صرفه‌تر از رقبای فعلیه و رسماً معادله اقتصادی هوش مصنوعی لوکال رو دگرگون کرده. خلاصه اگه انویدیا دست‌فرمونش رو عوض نکنه و قیمت‌هاش رو منطقی‌تر نکنه، اپل پادشاهی اجرای مدل‌های هوش مصنوعی روی سیستم‌های خونگی و شخصی رو قرق می‌کنه."
+  ],
+  "why": "اجرای مدل‌های سنگین بدون نیاز به اینترنت برای کاربرها خیلی ارزون‌تر و در دسترس‌تر تموم میشه و انحصار غول‌پیکر انویدیا توی سخت‌افزار بالاخره ترک برمی‌داره.",
+  "tags": [
+   "انویدیا",
+   "اپل",
+   "تراشه"
+  ]
+ },
+ "updated": "2026-10-25T12:29:07+00:00",
+ "gholam_checked": "2026-10-25T12:29:07+00:00"
+}

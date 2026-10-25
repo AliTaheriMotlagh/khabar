@@ -2,16 +2,23 @@
  "id": 5914,
  "url": "https://t.me/dlmehr/5914",
  "date": "2026-10-16T01:33:56+00:00",
- "edited": true,
- "views": "210",
  "text": "https://fxtwitter.com/tesla/status/2110905133785829671?s=52&t=F41Qa04r48Mef_j_XjBneQ",
  "forwarded_from": null,
  "digest": false,
  "hash": "ba52c515d0fc",
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/tesla/status/2110905133785829671?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+  "site": "FxTwitter",
+  "title": "Tesla (@Tesla)",
+  "description": "Roadster transforms in Track Mode\nThese aero features aren't just for looks: they provide the best passive downforce package of any road car (approaching F1 levels!) with wing actuation driven by the @Tesla_Optimus actuator system",
+  "image": null
+ },
  "gholam": {
   "text": "ببین رفیق، تسلا بالاخره یه دستی به سر و روی رودستر کشیده و اعلام کرده این ماشین توی حالت مسابقه‌ای یا همون Track Mode قشنگ تغییر چهره می‌ده و دگرگون می‌شه. این قطعات آیرودینامیکش اصلاً فقط برای قر و قاطی و خوشگلی نیست، بلکه طبق ادعاشون خفن‌ترین نیروی رو به پایین رو بین تمام ماشین‌های جاده‌ای خلق می‌کنه و رسماً داره به رکورد خودروهای فرمول یک پهلو می‌زنه. نکته جذاب ماجرا هم اینجاست که باز و بسته شدن باله‌های این هیولا، توسط همون سیستم محرک ربات‌های انسان‌نمای آپتیموس کنترل می‌شه تا سرعت و دقتش مو لای درزش نره.\n\nاهمیتش اینه که تسلا داره تکنولوژی رباتیکش رو مستقیم می‌ریزه توی جون ماشین‌هاش تا پرفورمنس سوپراسپرت‌های جاده‌ای رو به سطح ماشین‌های فرمول یک برسونه.",
   "date": "2026-10-16T01:34:11+00:00"
  },
+ "gholam_checked": "2026-10-24T23:35:33+00:00",
  "links": [
   {
    "kind": "tweet",
@@ -46,14 +53,6 @@
    "links": []
   }
  ],
- "media": [],
- "preview": {
-  "url": "https://fxtwitter.com/tesla/status/2110905133785829671?s=52&t=F41Qa04r48Mef_j_XjBneQ",
-  "site": "FxTwitter",
-  "title": "Tesla (@Tesla)",
-  "description": "Roadster transforms in Track Mode\nThese aero features aren't just for looks: they provide the best passive downforce package of any road car (approaching F1 levels!) with wing actuation driven by the @Tesla_Optimus actuator system",
-  "image": null
- },
  "article": {
   "title": "تسلا بالاخره یه دستی به سر و روی رودستر کشیده و اعلام کرده این ماشین توی حالت مسابقه‌ای یا همون Track Mode قشنگ تغییر چهره می‌ده و دگرگون می‌شه",
   "source_title": "Roadster transforms in Track Mode",
@@ -66,6 +65,5 @@
    "رباتیک"
   ]
  },
- "updated": "2026-10-24T23:35:33+00:00",
- "gholam_checked": "2026-10-24T23:35:33+00:00"
+ "updated": "2026-10-25T11:54:11+00:00"
 }

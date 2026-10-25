@@ -1,0 +1,67 @@
+{
+ "id": 4527,
+ "url": "https://t.me/dlmehr/4527",
+ "date": "2026-08-01T18:13:23+00:00",
+ "text": "https://fxtwitter.com/nickscamara_/status/2083295265793212827?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+ "forwarded_from": null,
+ "digest": false,
+ "hash": "3b9fdf590304",
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/nickscamara_/status/2083295265793212827?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+  "site": "🧵 Thread • FxTwitter",
+  "title": "Nicolas Camara (@nickscamara_)",
+  "description": "we built pdf-inspector so agents can process PDFs without waiting on OCR. it classifies any PDF in ~20ms and extracts clean markdown locally\n→ 200 PDFs processed in 2.8s\n→ top quality in extracting tables + graphs\n→ built in rust\n→ open source\nhttp://g…",
+  "image": "https://cdn4.telesco.pe/file/ZYyRGlxelyZ-hVLaNwDJAFB65WSxIowOlEzANaDD3jF-cBZi8zqvAsctjgIbaz2AIqKiem1hW0tpBZgOljvVPtnfGPKot9h5SNm3G8E-WY6OcvP48YhjO6tQ5vX-OIQ7DtYIgwd2UMgO08UJVuJ88uXOmamoQP4YUdzRiVW5Kqry0kDVaZq7dxOSgbTBMek4VHKF60hhUK5TxM2_4xQyqpdbhyYTA1TLKd1uyUHy_PJaX-RTsdNvf79P-N4_FIRlz7yiJi2SVik9sfqEa7Ojq3lh06_eQPa0v_YybMlaQL-Z4kytvVPSjlZ85r4uW4ny4o1hwiUQIrEIC2M2sEdVuw.jpg"
+ },
+ "gholam": {
+  "text": "رفیق، بچه‌های Firecrawl یه ابزار اپن‌سورس به اسم pdf-inspector با راست زدن که بدون معطلی OCR و توی ۲۰ میلی‌ثانیه پی‌دی‌اف‌ها رو دسته‌بندی می‌کنه و مارک‌داون تمیز میده دست ایجنت‌ها؛ ۲۰۰ تا PDF رو کلاً تو ۲.۸ ثانیه با جدول و نموداراش استخراج میکنه!",
+  "date": "2026-08-01T18:17:30+00:00"
+ },
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/nickscamara_/status/2083295265793212827",
+   "domain": "x.com",
+   "author": {
+    "name": "Nicolas Camara",
+    "handle": "nickscamara_",
+    "avatar": "https://pbs.twimg.com/profile_images/1957959002568159232/LbXLiTBS_200x200.jpg"
+   },
+   "text": "we built pdf-inspector so agents can process PDFs without waiting on OCR. it classifies any PDF in ~20ms and extracts clean markdown locally\n\n→ 200 PDFs processed in 2.8s\n→ top quality in extracting tables + graphs\n→ built in rust\n→ open source\n\nhttp://github.com/firecrawl/pdf-inspector",
+   "date": 1785531271,
+   "media": [
+    {
+     "type": "image",
+     "src": "https://pbs.twimg.com/media/HOlU_bYbwAAxCoI.jpg?name=orig",
+     "ratio": 0.675
+    }
+   ],
+   "links": [
+    "http://github.com/firecrawl/pdf-inspector"
+   ]
+  },
+  {
+   "kind": "link",
+   "url": "https://github.com/firecrawl/pdf-inspector",
+   "domain": "github.com",
+   "title": "GitHub - firecrawl/pdf-inspector: Fast Rust library for PDF inspection, classification, and text extraction. Intelligently detects scanned vs text-based PDFs to enable smart routing decisions.",
+   "description": "Fast Rust library for PDF inspection, classification, and text extraction. Intelligently detects scanned vs text-based PDFs to enable smart routing decisions. - firecrawl/pdf-inspector",
+   "image": "https://opengraph.githubassets.com/0f2e030ea6427307fcc4e1738c34bebffc76354f4acc4a0a6742aa26cf824b1c/firecrawl/pdf-inspector",
+   "site": "GitHub"
+  }
+ ],
+ "article": {
+  "title": "بچه‌های Firecrawl یه ابزار اپن‌سورس به اسم pdf-inspector با راست زدن که بدون معطلی OCR و توی ۲۰ میلی‌ثانیه پی‌دی‌اف‌ها رو دسته‌بندی می‌کنه و مارک‌داون تمیز میده دست ایجنت‌ها",
+  "source_title": "we built pdf-inspector so agents can process PDFs without waiting on OCR. it classifies any PDF in ~20ms and extracts clean markdown locally",
+  "body": [
+   "رفیق، بچه‌های Firecrawl یه ابزار اپن‌سورس به اسم pdf-inspector با راست زدن که بدون معطلی OCR و توی ۲۰ میلی‌ثانیه پی‌دی‌اف‌ها رو دسته‌بندی می‌کنه و مارک‌داون تمیز میده دست ایجنت‌ها؛ ۲۰۰ تا PDF رو کلاً تو ۲.۸ ثانیه با جدول و نموداراش استخراج میکنه!"
+  ],
+  "why": null,
+  "tags": [
+   "کدنویسی"
+  ]
+ },
+ "updated": "2026-10-25T12:31:15+00:00",
+ "gholam_checked": "2026-10-25T12:31:15+00:00"
+}

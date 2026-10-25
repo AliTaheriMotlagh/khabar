@@ -1,0 +1,63 @@
+{
+ "id": 4813,
+ "url": "https://t.me/dlmehr/4813",
+ "date": "2026-08-19T02:04:31+00:00",
+ "text": "https://fxtwitter.com/iliraliu_/status/2089622347829354607?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+ "forwarded_from": null,
+ "digest": false,
+ "hash": "63472d69269b",
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/iliraliu_/status/2089622347829354607?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+  "site": "FxTwitter",
+  "title": "Ilir Aliu (@IlirAliu_)",
+  "description": "Most multi-drone systems struggle with one thing: coordination under real-world constraints.\nA paper in Science Robotics from TU Delft proposes a model-based approach that lets multiple quadrotors jointly move and orient a cable-suspended load.\nBUT: without…",
+  "image": null
+ },
+ "gholam": {
+  "text": "ببین رفیق، دانشمندای دانشگاه TU Delft هلند یه حرکت خفن زدن و روشی ساختن که چندتا پهپاد با هم یه بارِ آویزون رو بدون نیاز به هوش مصنوعی، یادگیری ماشین یا حتی سنسور روی خودِ بار جابه‌جا کنن. این سیستم با یه بهینه‌ساز مرکزی مسیر و کنترل داخلی روی خود پهپادها، تونسته شتاب حرکت بار رو نسبت به خفن‌ترین روش‌های قبلی بیشتر از هشت برابر ببره بالا و تر‌و‌تمیز بدون اینکه به هم یا به مانعی بخورن حرکت کنه. دمشون گرم که حتی اگه وزن و مشخصات دقیق بار معلوم نباشه، باز پهپادها فرمون دستشونه و کارو خیلی مشتی و پایدار پیش می‌برن.\n\nچرا مهمه؟ اهمیتش اینه که نشون میده همه پیشرفت‌های رباتیک وابسته به مدل‌های سنگین هوش مصنوعی نیست و هنوزم با تسلط روی فیزیک و کنترل دقیق میشه معجزه کرد.",
+  "date": "2026-08-19T02:04:43+00:00"
+ },
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/IlirAliu_/status/2089622347829354607",
+   "domain": "x.com",
+   "author": {
+    "name": "Ilir Aliu",
+    "handle": "IlirAliu_",
+    "avatar": "https://pbs.twimg.com/profile_images/1866636974339039232/YtrQjbyS_200x200.jpg"
+   },
+   "text": "Most multi-drone systems struggle with one thing: coordination under real-world constraints.\n\nA paper in Science Robotics from TU Delft proposes a model-based approach that lets multiple quadrotors jointly move and orient a cable-suspended load.\n\nBUT: without relying on learning or external sensors on the payload.\n\nKey results reported:\n> More than 8× acceleration of the load compared to previous state-of-the-art methods\n> Full obstacle avoidance while maintaining internal collision safety\n> Robust performance even when the load’s inertia model is uncertain\n> No sensors needed on the load itself\n\nInstead of data-driven models, they use a centralized trajectory optimizer that resamples past trajectories for smooth updates and stability. \n\nEach drone then executes its reference locally using onboard INDI control.\n\nIt’s a reminder that not all progress in robotics comes from scaling models… some of it still comes from getting the physics and coordination right.\n\n📍Paper: https://www.science.org/doi/10.1126/scirobotics.adu8015\nVideo: https://www.youtube.com/watch?v=FBWN-rTK1YU\n\n——\n\nWeekly robotics and AI insights. \nSubscribe free: http://22astronauts.com",
+   "date": 1787039765,
+   "media": [
+    {
+     "type": "video",
+     "src": "https://video.twimg.com/ext_tw_video/2089622327373729792/pu/vid/avc1/1280x720/wJCcxTsVcjLpPc2Q.mp4?tag=12",
+     "poster": "https://pbs.twimg.com/ext_tw_video_thumb/2089622327373729792/pu/img/4I1osbLp2c3xrKx8.jpg",
+     "ratio": 0.5625,
+     "duration": 43.933,
+     "gif": false
+    }
+   ],
+   "links": [
+    "https://www.science.org/doi/10.1126/scirobotics.adu8015",
+    "https://www.youtube.com/watch?v=FBWN-rTK1YU",
+    "http://22astronauts.com"
+   ]
+  }
+ ],
+ "article": {
+  "title": "دانشمندای دانشگاه TU Delft هلند یه حرکت خفن زدن و روشی ساختن که چندتا پهپاد با هم یه بارِ آویزون رو بدون نیاز به هوش مصنوعی، یادگیری ماشین یا حتی سنسور روی خودِ بار جابه‌جا کنن",
+  "source_title": "Most multi-drone systems struggle with one thing: coordination under real-world constraints.",
+  "body": [
+   "ببین رفیق، دانشمندای دانشگاه TU Delft هلند یه حرکت خفن زدن و روشی ساختن که چندتا پهپاد با هم یه بارِ آویزون رو بدون نیاز به هوش مصنوعی، یادگیری ماشین یا حتی سنسور روی خودِ بار جابه‌جا کنن. این سیستم با یه بهینه‌ساز مرکزی مسیر و کنترل داخلی روی خود پهپادها، تونسته شتاب حرکت بار رو نسبت به خفن‌ترین روش‌های قبلی بیشتر از هشت برابر ببره بالا و تر‌و‌تمیز بدون اینکه به هم یا به مانعی بخورن حرکت کنه. دمشون گرم که حتی اگه وزن و مشخصات دقیق بار معلوم نباشه، باز پهپادها فرمون دستشونه و کارو خیلی مشتی و پایدار پیش می‌برن."
+  ],
+  "why": "اهمیتش اینه که نشون میده همه پیشرفت‌های رباتیک وابسته به مدل‌های سنگین هوش مصنوعی نیست و هنوزم با تسلط روی فیزیک و کنترل دقیق میشه معجزه کرد.",
+  "tags": [
+   "رباتیک"
+  ]
+ },
+ "updated": "2026-10-25T12:29:55+00:00",
+ "gholam_checked": "2026-10-25T12:29:55+00:00"
+}

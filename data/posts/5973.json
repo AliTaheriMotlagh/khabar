@@ -2,16 +2,23 @@
  "id": 5973,
  "url": "https://t.me/dlmehr/5973",
  "date": "2026-10-19T17:01:15+00:00",
- "edited": true,
- "views": "203",
  "text": "https://fxtwitter.com/sebjohnsonuk/status/2111910770665783671?s=52&t=F41Qa04r48Mef_j_XjBneQ",
  "forwarded_from": null,
  "digest": false,
  "hash": "5b52f8e1a50c",
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/sebjohnsonuk/status/2111910770665783671?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+  "site": "FxTwitter",
+  "title": "Seb Johnson (@SebJohnsonUK)",
+  "description": "Nvidia is the now the most active VC investor in the world, and the largest in Europe.\nCrazy\ncc @dealroomco\nQuoting Seb Johnson (@SebJohnsonUK)\nBREAKING: Jensen has just announced that @nvidia in investing $1bn+ into 5 UK startups:\n>> Boltz which is…",
+  "image": "https://cdn4.telesco.pe/file/auzJ8tf1O-1IEEYNOpFRTSrY7q_Gf9z-1eXgjOI9eZ1kx1Ege1fNOL24C6CZO9IyvsozQ1zJlcMwuiiOKNN7oP4lpJHCzhZAMaBZxHS-nQgU6mg6v5cuuC3mKpMm7TDm2E7bDXOSJemJgbx6OMsHyl043xixK4up7yGGV1BrS2Mm-QclMPEqgJsGLou5G9UD7TiW8crMLuQNmvdBW4BTYdCEDxHTml6UuqE9CLp0W9LBAL0sxIgLnc0y-OWo9uThnsRALfOqACPJk-Yah34Lh9jbbsaRXv4YgYmYPrf3If4NTapJy8_-C8LYO05WESI9Ar4DBy5zTD7_N--o92F1Ig.jpg"
+ },
  "gholam": {
   "text": "رفیق، انویدیا رسماً زده رو دست همه صندوق‌های سرمایه‌گذاری و الان تبدیل شده به فعال‌ترین سرمایه‌گذار جسورانه (VC) توی کل دنیا و بزرگ‌ترین توی اروپا. قضیه از این قراره که جنسن هوانگ، همون مدیرعامل همه‌کاره‌ی انویدیا، اعلام کرده بیش از یک میلیارد دلار دارن می‌ریزن پای پنج‌تا استارتاپ خفن بریتانیایی. این پول‌های درشت داره میره سمت شرکت‌هایی مثل «بولتز» که کارش مدل‌های بیومولکولی با هوش مصنوعیه و «فورسایت» که کارش تحلیل زیرساخت‌هاست. خلاصه غول تراشه‌سازی دنیا دیگه فقط سخت‌افزار نمی‌فروشه، بلکه افتاده به شکار و پرورش استارتاپ‌های آینده‌دار تا کل بازار رو قبضه کنه.\n\nچرا مهمه؟ چون انویدیا با این ریخت‌وپاش‌ها عملاً داره کاری می‌کنه که نسل بعدی شرکت‌های هوش مصنوعی از بیخ و بن وابسته به اکوسیستم خودش بمونن.",
   "date": "2026-10-19T17:01:34+00:00"
  },
+ "gholam_checked": "2026-10-24T23:11:43+00:00",
  "links": [
   {
    "kind": "tweet",
@@ -69,18 +76,6 @@
    }
   }
  ],
- "media": [],
- "preview": {
-  "url": "https://fxtwitter.com/sebjohnsonuk/status/2111910770665783671?s=52&t=F41Qa04r48Mef_j_XjBneQ",
-  "site": "FxTwitter",
-  "title": "Seb Johnson (@SebJohnsonUK)",
-  "description": "Nvidia is the now the most active VC investor in the world, and the largest in Europe.\nCrazy\ncc @dealroomco\nQuoting Seb Johnson (@SebJohnsonUK)\nBREAKING: Jensen has just announced that @nvidia in investing $1bn+ into 5 UK startups:\n>> Boltz which is…",
-  "image": {
-   "src": "media/5973/preview.webp",
-   "width": 800,
-   "height": 613
-  }
- },
  "article": {
   "title": "انویدیا رسماً زده رو دست همه صندوق‌های سرمایه‌گذاری و الان تبدیل شده به فعال‌ترین سرمایه‌گذار جسورانه (VC) توی کل دنیا و بزرگ‌ترین توی اروپا",
   "source_title": "Nvidia is the now the most active VC investor in the world, and the largest in Europe.",
@@ -92,6 +87,5 @@
    "انویدیا"
   ]
  },
- "updated": "2026-10-24T23:11:43+00:00",
- "gholam_checked": "2026-10-24T23:11:43+00:00"
+ "updated": "2026-10-25T11:54:08+00:00"
 }

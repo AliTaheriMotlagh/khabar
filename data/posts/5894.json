@@ -2,16 +2,23 @@
  "id": 5894,
  "url": "https://t.me/dlmehr/5894",
  "date": "2026-10-14T19:41:48+00:00",
- "edited": true,
- "views": "183",
  "text": "https://fxtwitter.com/openai/status/2110442001749659890?s=52&t=F41Qa04r48Mef_j_XjBneQ",
  "forwarded_from": null,
  "digest": false,
  "hash": "fce20c585dee",
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/openai/status/2110442001749659890?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+  "site": "FxTwitter",
+  "title": "OpenAI (@OpenAI)",
+  "description": "European businesses are rapidly expanding their use of AI agents. More than half of the AI use among our EU enterprise and business customers now involves these tools, and the number of small business users has grown 8x across the region.\nOur latest Economic…",
+  "image": "https://cdn4.telesco.pe/file/NihwTu_58-PgHcKZ-uuzdkcKxMia1lVlmrGgNlTFQguzjddoX4H0ZDVyTZaDWJHNTGT6VxMkq1I4pXEI4v4y185MzAEoCJ2rriVprNGfQYWYlWLzEv1U9vMng6aVHMs5IVQ8FTkl171H-ajzHXSmirVKeo6kOK8f7bFGiVimNZ3lmKCcp0deRwl6esMCBuKuqjYK_J_1-FLGKENX9IaKTUALUr1fGNRSH5eG_Ghca9MMV3Q6XhLaHsse4VrGv1NPrf-rV3qy2LEDhW7daXB5mmRfUcJ-TsWZuUhweYu_ZDqbezKCguS0scA1uTiNFQwUXwDmDRiqYOpopASdl25WRQ.jpg"
+ },
  "gholam": {
   "text": "رفیق، بچه‌های OpenAI یه گزارش اقتصادی تازه دادن بیرون و میگن کسب‌وکارهای اروپایی بدجوری افتادن تو کار استفاده از «ایجنت‌های خودکار» هوش مصنوعی. آمارهاشون نشون میده که الان بیش از نصف استفاده مشتری‌های شرکتی و تجاری اوپن‌ای‌آی توی اتحادیه اروپا، مربوط به همین ایجنت‌ها شده. از اون طرف، کسب‌وکارهای کوچیک‌تر هم سنگ تموم گذاشتن و تعداد کاربرهاشون توی کل منطقه یه جهش خفنِ ۸ برابری رو ثبت کرده. خلاصه‌ش اینه که اروپایی‌ها دیگه از فاز چت‌های معمولی و آزمایشی رد شدن و رفتن سراغ سیستم‌هایی که کارها رو خودشون اتوماتیک و مستقل جلو ببرن.\n\nاهمیتش اینه که نشون میده ایجنت‌های هوش مصنوعی رسماً دارن میشن ستون فقرات بیزینس‌های مدرن و جریان کارها داره کلاً زیرورو میشه.",
   "date": "2026-10-14T19:42:04+00:00"
  },
+ "gholam_checked": "2026-10-24T23:35:37+00:00",
  "links": [
   {
    "kind": "tweet",
@@ -45,18 +52,6 @@
    ]
   }
  ],
- "media": [],
- "preview": {
-  "url": "https://fxtwitter.com/openai/status/2110442001749659890?s=52&t=F41Qa04r48Mef_j_XjBneQ",
-  "site": "FxTwitter",
-  "title": "OpenAI (@OpenAI)",
-  "description": "European businesses are rapidly expanding their use of AI agents. More than half of the AI use among our EU enterprise and business customers now involves these tools, and the number of small business users has grown 8x across the region.\nOur latest Economic…",
-  "image": {
-   "src": "media/5894/preview.webp",
-   "width": 800,
-   "height": 545
-  }
- },
  "article": {
   "title": "بچه‌های OpenAI یه گزارش اقتصادی تازه دادن بیرون و میگن کسب‌وکارهای اروپایی بدجوری افتادن تو کار استفاده از «ایجنت‌های خودکار» هوش مصنوعی",
   "source_title": "European businesses are rapidly expanding their use of AI agents. More than half of the AI use among our EU enterprise and business…",
@@ -68,6 +63,5 @@
    "اوپن‌ای‌آی"
   ]
  },
- "updated": "2026-10-24T23:35:37+00:00",
- "gholam_checked": "2026-10-24T23:35:37+00:00"
+ "updated": "2026-10-25T11:54:11+00:00"
 }

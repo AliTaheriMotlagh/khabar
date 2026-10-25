@@ -1,0 +1,70 @@
+{
+ "id": 5403,
+ "url": "https://t.me/dlmehr/5403",
+ "date": "2026-09-22T01:49:16+00:00",
+ "text": "https://fxtwitter.com/whitecircle/status/2102087563913609534?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+ "forwarded_from": null,
+ "digest": false,
+ "hash": "6722caa08859",
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/whitecircle/status/2102087563913609534?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+  "site": "🧵 Thread • FxTwitter",
+  "title": "White Circle (@whitecircle)",
+  "description": "Introducing Halo, the best framework for post-training of open-source models.\nHalo delivers up to 2.8x the throughput of stock TRL with less peak memory, while models stay in their native HuggingFace format.\nStar us on GitHub: https://github.com/whitecircle/halo",
+  "image": null
+ },
+ "gholam": {
+  "text": "رفیق، تیم White Circle تازه از یه فریم‌ورک تر و تمیز به اسم Halo رونمایی کرده که خوراکِ پس‌آموزش و بهینه‌سازی مدل‌های هوش مصنوعی منبع‌بازه. حرف حساب این بچه‌ها اینه که هالو تا ۲.۸ برابر نسبت به فریم‌ورک استاندارد TRL سرعت و بازدهی بالاتری میده و هم‌زمان اوج مصرف حافظه‌ش هم به مراتب پایین‌تره. نکته جذاب دیگه‌ش هم اینجاست که خروجی مدل‌ها تو همون فرمت استاندارد هاگینگ‌فیس باقی می‌مونه و دیگه هیچ دنگ‌وفنگی برای تبدیل و هماهنگ‌سازی نداری.\nاهمیتش اینه که به برنامه‌نویس‌ها اجازه میده بدون نیاز به سخت‌افزارهای فوق‌العاده گرون، مدل‌های زبانی رو خیلی سریع‌تر و کم‌خرج‌تر برای کاربری‌های خاص آماده کنن.",
+  "date": "2026-09-22T01:49:32+00:00"
+ },
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/whitecircle/status/2102087563913609534",
+   "domain": "x.com",
+   "author": {
+    "name": "White Circle",
+    "handle": "whitecircle",
+    "avatar": "https://pbs.twimg.com/profile_images/2073239756415385601/qVEk4KtH_200x200.jpg"
+   },
+   "text": "Introducing Halo, the best framework for post-training of open-source models.\n\nHalo delivers up to 2.8x the throughput of stock TRL with less peak memory, while models stay in their native HuggingFace format.\n\nStar us on GitHub: https://github.com/whitecircle/halo",
+   "date": 1790011704,
+   "media": [
+    {
+     "type": "video",
+     "src": "https://video.twimg.com/amplify_video/2102084481419005952/vid/avc1/1280x720/SJGOhMQ33Ukixctt.mp4?tag=29",
+     "poster": "https://pbs.twimg.com/amplify_video_thumb/2102084481419005952/img/5s5VUlrbMvTL3Nx1.jpg",
+     "ratio": 0.5625,
+     "duration": 42,
+     "gif": false
+    }
+   ],
+   "links": [
+    "https://github.com/whitecircle/halo"
+   ]
+  },
+  {
+   "kind": "link",
+   "url": "https://github.com/whitecircle/halo",
+   "domain": "github.com",
+   "title": "GitHub - whitecircle/halo: Halo is an open-source framework built by White Circle for training large language and multimodal models",
+   "description": "Halo is an open-source framework built by White Circle for training large language and multimodal models - whitecircle/halo",
+   "image": "https://repository-images.githubusercontent.com/1347394075/abec2f5b-9921-406d-a7a2-51defc9884ca",
+   "site": "GitHub"
+  }
+ ],
+ "article": {
+  "title": "تیم White Circle تازه از یه فریم‌ورک تر و تمیز به اسم Halo رونمایی کرده که خوراکِ پس‌آموزش و بهینه‌سازی مدل‌های هوش مصنوعی منبع‌بازه",
+  "source_title": "Introducing Halo, the best framework for post-training of open-source models.",
+  "body": [
+   "رفیق، تیم White Circle تازه از یه فریم‌ورک تر و تمیز به اسم Halo رونمایی کرده که خوراکِ پس‌آموزش و بهینه‌سازی مدل‌های هوش مصنوعی منبع‌بازه. حرف حساب این بچه‌ها اینه که هالو تا ۲.۸ برابر نسبت به فریم‌ورک استاندارد TRL سرعت و بازدهی بالاتری میده و هم‌زمان اوج مصرف حافظه‌ش هم به مراتب پایین‌تره. نکته جذاب دیگه‌ش هم اینجاست که خروجی مدل‌ها تو همون فرمت استاندارد هاگینگ‌فیس باقی می‌مونه و دیگه هیچ دنگ‌وفنگی برای تبدیل و هماهنگ‌سازی نداری."
+  ],
+  "why": "به برنامه‌نویس‌ها اجازه میده بدون نیاز به سخت‌افزارهای فوق‌العاده گرون، مدل‌های زبانی رو خیلی سریع‌تر و کم‌خرج‌تر برای کاربری‌های خاص آماده کنن.",
+  "tags": [
+   "کدنویسی"
+  ]
+ },
+ "updated": "2026-10-25T12:26:17+00:00",
+ "gholam_checked": "2026-10-25T12:26:17+00:00"
+}

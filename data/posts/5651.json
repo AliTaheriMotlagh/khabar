@@ -1,0 +1,59 @@
+{
+ "id": 5651,
+ "url": "https://t.me/dlmehr/5651",
+ "date": "2026-10-05T18:27:52+00:00",
+ "text": "https://fxtwitter.com/skull8888888888/status/2107138967644541129?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+ "forwarded_from": null,
+ "digest": false,
+ "hash": "788a8f31424e",
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/skull8888888888/status/2107138967644541129?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+  "site": "🧵 Thread • FxTwitter",
+  "title": "Robert (@skull8888888888)",
+  "description": "Introducing flow-1, our new model trained with RL to find errors in agent traces.\nIt matches GPT-6-sol in trace intelligence while being 23x cheaper. It also costs 25% less to run than GPT-6-luna.\nflow-1 finally makes it possible to monitor and understand…",
+  "image": null
+ },
+ "gholam": {
+  "text": "ببین رفیق، یه مدل تر و تمیز تازه به اسم flow-1 اومده به میدون که کارش پیدا کردن مو لای درز خطاهای ایجنت‌های هوش مصنوعیه و با یادگیری تقویتی حسابی پرورشش دادن. داستان اینه که از نظر هوش و ردگیری قشنگ شونه‌به‌شونه‌ی غولی مثل GPT-6-sol می‌زنه، ولی هزینه‌ش ۲۳ برابر ارزون‌تر تموم می‌شه. تازه برای اجرا کردنش هم ۲۵ درصد کمتر از GPT-6-luna پول می‌خواد که خودش خداییش صرفه‌جویی بزرگیه. خلاصه با این فرمون، بچه‌ها دیگه مجبور نیستن فقط بخشی از لاگ‌های ایجنت رو سرسری و تصادفی چک کنن، بلکه می‌شه مو به موی هر اجرای سیستم رو با خیال راحت زیر نظر گرفت.\n\nاهمیتش اینه که نظارت و باگ‌گیری روی ایجنت‌ها رو از یه کار گرون و کمرشکن، به یه فرایند کاملاً در دسترس و ارزون تبدیل کرده تا خیالت از خطای سیستم‌ها تخت باشه.",
+  "date": "2026-10-05T18:28:05+00:00"
+ },
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/skull8888888888/status/2107138967644541129",
+   "domain": "x.com",
+   "author": {
+    "name": "Robert",
+    "handle": "skull8888888888",
+    "avatar": "https://pbs.twimg.com/profile_images/1786070151021948928/fXOgt6Fl_200x200.jpg"
+   },
+   "text": "Introducing flow-1, our new model trained with RL to find errors in agent traces.\n\nIt matches GPT-6-sol in trace intelligence while being 23x cheaper. It also costs 25% less to run than GPT-6-luna.\n\nflow-1 finally makes it possible to monitor and understand every agent run, without sampling. 1/6",
+   "date": 1791216053,
+   "media": [
+    {
+     "type": "video",
+     "src": "https://video.twimg.com/amplify_video/2107138879685881856/vid/avc1/1280x720/0CLg2WuPhpBNK-Tn.mp4?tag=29",
+     "poster": "https://pbs.twimg.com/amplify_video_thumb/2107138879685881856/img/hB02rYk85eQqT5OO.jpg",
+     "ratio": 0.5625,
+     "duration": 74.5,
+     "gif": false
+    }
+   ],
+   "links": []
+  }
+ ],
+ "article": {
+  "title": "یه مدل تر و تمیز تازه به اسم flow-1 اومده به میدون که کارش پیدا کردن مو لای درز خطاهای ایجنت‌های هوش مصنوعیه و با یادگیری تقویتی حسابی پرورشش دادن",
+  "source_title": "Introducing flow-1, our new model trained with RL to find errors in agent traces.",
+  "body": [
+   "ببین رفیق، یه مدل تر و تمیز تازه به اسم flow-1 اومده به میدون که کارش پیدا کردن مو لای درز خطاهای ایجنت‌های هوش مصنوعیه و با یادگیری تقویتی حسابی پرورشش دادن. داستان اینه که از نظر هوش و ردگیری قشنگ شونه‌به‌شونه‌ی غولی مثل GPT-6-sol می‌زنه، ولی هزینه‌ش ۲۳ برابر ارزون‌تر تموم می‌شه. تازه برای اجرا کردنش هم ۲۵ درصد کمتر از GPT-6-luna پول می‌خواد که خودش خداییش صرفه‌جویی بزرگیه. خلاصه با این فرمون، بچه‌ها دیگه مجبور نیستن فقط بخشی از لاگ‌های ایجنت رو سرسری و تصادفی چک کنن، بلکه می‌شه مو به موی هر اجرای سیستم رو با خیال راحت زیر نظر گرفت."
+  ],
+  "why": "نظارت و باگ‌گیری روی ایجنت‌ها رو از یه کار گرون و کمرشکن، به یه فرایند کاملاً در دسترس و ارزون تبدیل کرده تا خیالت از خطای سیستم‌ها تخت باشه.",
+  "tags": [
+   "اوپن‌ای‌آی"
+  ]
+ },
+ "updated": "2026-10-25T12:24:50+00:00",
+ "gholam_checked": "2026-10-25T12:24:50+00:00"
+}

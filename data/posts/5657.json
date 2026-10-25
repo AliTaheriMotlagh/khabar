@@ -1,0 +1,79 @@
+{
+ "id": 5657,
+ "url": "https://t.me/dlmehr/5657",
+ "date": "2026-10-05T19:36:50+00:00",
+ "text": "https://fxtwitter.com/a16z/status/2107109225814233391?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+ "forwarded_from": null,
+ "digest": false,
+ "hash": "5d426961a55d",
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/a16z/status/2107109225814233391?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+  "site": "FxTwitter",
+  "title": "a16z (@a16z)",
+  "description": "The seventh edition of our Top 100 Consumer AI Apps is here.\nNew this time: a revenue leaderboard, alongside the usual web and mobile traffic rankings.\nThree years ago we published the first edition. ChatGPT was #1, Claude was unranked, and the entire category…",
+  "image": "https://cdn4.telesco.pe/file/Yh4-_Yu3ExhTxvRLMwTj-EZCkOZzApyWEFzZ3W8uPTZETtkS9Xi-LQ1Rc2JgITQS5-p4t2A13Qks8zCFm90qdE3DUIATmqIC1p8qPzZqp712S1T73VSgNokbyPGMF-p4hg9yLsOeOx-QvW-uOrAF26KObthm7G6P-gcPDBWVoCe_7QM5eisxXKs-5Dbhx5SNlDFr73RJwPmgUTgdyoNADJcPJyXtVhK7I6Hj-X6Pi3yGtucKx9P0YpTvdiBncpFFmfmJp-tSzJUup7_6W6aK0BDZeEQi8T48z4tzw4aDVJummeqwFok09VA8APKyINwvLJ1Ql7sBB-Oof1YVsMMuaA.jpg"
+ },
+ "gholam": {
+  "text": "رفیق، شرکت سرمایه‌گذاری معروف a16z هفتمین لیست از صد ابزار برتر هوش مصنوعی مصرفی رو منتشر کرده و این بار علاوه بر ترافیک وب و موبایل، رده‌بندی درآمدی شرکت‌ها رو هم رو کرده تا حساب‌کتاب دقیق‌تر بیاد دستمون. طبق این گزارش، چت‌جی‌پی‌تی همچنان با بیش از یک میلیارد کاربر فعال ماهانه روی گوشی تخت پادشاهی رو ول نکرده و کلود (Claude) هم که قبلاً اسمی ازش نبود، با نزدیک یک میلیارد بازدید ماهانه پریده رتبه سوم وب. جالب‌تر اینکه این بازار دیگه فقط به چت‌بات‌ها و تولید عکس محدود نمونده و حسابی رفته توی خط برنامه‌نویسی خفن با ابزارهایی مثل کرسر و لاوبل، ساخت موزیک با سونو، ویدیو، صدا و حتی گجت‌های سخت‌افزاری.\n\nاهمیتش اینه که نشون میده هوش مصنوعی از مرحله سرگرمی و کل‌کل چت‌بات‌ها گذشته و وارد فاز پول‌سازی عمیق و تسخیر کارهای تخصصی روزمره شده.",
+  "date": "2026-10-05T19:37:03+00:00"
+ },
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/a16z/status/2107109225814233391",
+   "domain": "x.com",
+   "author": {
+    "name": "a16z",
+    "handle": "a16z",
+    "avatar": "https://pbs.twimg.com/profile_images/1919488160125616128/QAZXTMEj_200x200.png"
+   },
+   "text": "The seventh edition of our Top 100 Consumer AI Apps is here.\n\nNew this time: a revenue leaderboard, alongside the usual web and mobile traffic rankings.\n\nThree years ago we published the first edition. ChatGPT was #1, Claude was unranked, and the entire category was chatbots, image generators, and not much else.\n\nIn today's edition:\n\n- ChatGPT still holds the throne, now with 1B+ monthly actives on mobile\n\n- Claude has climbed to #3 on web with nearly 1B monthly visits\n\n- The category has expanded to vibe coding (Lovable, Cursor, Replit), music (Suno), design (Figma), voice (ElevenLabs), video (Higgsfield, Kling), agents (Manus), and even hardware (Plaud)\n\nFull breakdown from @omooretweets: https://www.a16z.news/p/top-100-consumer-ai-apps-seventh",
+   "date": 1791208962,
+   "media": [
+    {
+     "type": "image",
+     "src": "https://pbs.twimg.com/media/HT30qgdaEAAq8uY.png?name=orig",
+     "ratio": 0.6337
+    },
+    {
+     "type": "image",
+     "src": "https://pbs.twimg.com/media/HT30qyMaAAA9PvH.png?name=orig",
+     "ratio": 0.6337
+    },
+    {
+     "type": "image",
+     "src": "https://pbs.twimg.com/media/HT30rEOaMAAP6-B.png?name=orig",
+     "ratio": 0.6337
+    }
+   ],
+   "links": [
+    "https://www.a16z.news/p/top-100-consumer-ai-apps-seventh"
+   ]
+  },
+  {
+   "kind": "link",
+   "url": "https://www.a16z.news/p/top-100-consumer-ai-apps-seventh",
+   "domain": "a16z.news",
+   "title": "Top 100 Consumer AI Apps - Seventh Edition",
+   "description": "Top web and mobile AI products by monthly traffic",
+   "image": "https://substackcdn.com/image/fetch/$s_!7S9h!,w_1200,h_675,c_fill,f_jpg,q_auto:good,fl_progressive:steep,g_auto/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F22c076a8-be2e-4388-9343-8d2c7abd7c2e_4266x2400.jpeg",
+   "site": "a16z.news"
+  }
+ ],
+ "article": {
+  "title": "شرکت سرمایه‌گذاری معروف a16z هفتمین لیست از صد ابزار برتر هوش مصنوعی مصرفی رو منتشر کرده و این بار علاوه بر ترافیک وب و موبایل، رده‌بندی درآمدی شرکت‌ها رو هم رو کرده تا حساب‌کتاب دقیق‌تر بیاد دستمون",
+  "source_title": "The seventh edition of our Top 100 Consumer AI Apps is here.",
+  "body": [
+   "رفیق، شرکت سرمایه‌گذاری معروف a16z هفتمین لیست از صد ابزار برتر هوش مصنوعی مصرفی رو منتشر کرده و این بار علاوه بر ترافیک وب و موبایل، رده‌بندی درآمدی شرکت‌ها رو هم رو کرده تا حساب‌کتاب دقیق‌تر بیاد دستمون. طبق این گزارش، چت‌جی‌پی‌تی همچنان با بیش از یک میلیارد کاربر فعال ماهانه روی گوشی تخت پادشاهی رو ول نکرده و کلود (Claude) هم که قبلاً اسمی ازش نبود، با نزدیک یک میلیارد بازدید ماهانه پریده رتبه سوم وب. جالب‌تر اینکه این بازار دیگه فقط به چت‌بات‌ها و تولید عکس محدود نمونده و حسابی رفته توی خط برنامه‌نویسی خفن با ابزارهایی مثل کرسر و لاوبل، ساخت موزیک با سونو، ویدیو، صدا و حتی گجت‌های سخت‌افزاری."
+  ],
+  "why": "نشون میده هوش مصنوعی از مرحله سرگرمی و کل‌کل چت‌بات‌ها گذشته و وارد فاز پول‌سازی عمیق و تسخیر کارهای تخصصی روزمره شده.",
+  "tags": [
+   "آنتروپیک",
+   "کدنویسی",
+   "اوپن‌ای‌آی"
+  ]
+ },
+ "updated": "2026-10-25T12:24:47+00:00",
+ "gholam_checked": "2026-10-25T12:24:47+00:00"
+}

@@ -1,0 +1,60 @@
+{
+ "id": 4799,
+ "url": "https://t.me/dlmehr/4799",
+ "date": "2026-08-18T17:30:47+00:00",
+ "text": "https://fxtwitter.com/rohanpaul_ai/status/2089691507926446430?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+ "forwarded_from": null,
+ "digest": false,
+ "hash": "d889c99c568b",
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/rohanpaul_ai/status/2089691507926446430?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+  "site": "FxTwitter",
+  "title": "Rohan Paul (@rohanpaul_ai)",
+  "description": "Somebody running an Opus 4.6-level intelligence on consumer GPU.\nQwen3.8-27B-GGUF doing 80 tok/s on 2×4090s, full 262,144 context, MTP on, and only 34GB of 48GB VRAM occupied.\nNote, Qwen3.8-27B: SWE-Pro 61.7 vs Opus 53.4; GPQA 89.2 vs 91.3.",
+  "image": "https://cdn4.telesco.pe/file/CJpeb6xkIr3F1Qg5wqUVJ2g3N7zTWP_1y6SwgYqh4pYVuz8yzNcU9d6zNJcrsy1_9KFAYTkcVYSy7Y8Q723R_X3S-3AXEXwQLcIFgrPRRnt0TLG7XuQa7ZUrGndcl9-ibuHWbXtjOFnX_nDN4XWrKV6Ns0YEr4vNcxGWrmQvy1VxfreUs8O_DWYSFzLzG_hW7Uei2RngaCUgOop4-3CekP56YHX-v48tg4ZJgJKfEp5G9NOIMn4n0XJrOyoUGdEGkMA9tQWkdWIy1Xglu0o3iyodwPvzO1vxWW_ef6kPOQdTwx22eZ-5Uri7VScmIYxcFBvpfXJOtZHId9U6wmyhrw.jpg"
+ },
+ "gholam": {
+  "text": "رفیق ببین کار به کجا رسیده؛ روهان پاول خبر داده که یه کاربلد تونسته مدل هوش مصنوعی Qwen3.8-27B رو فقط روی دو تا کارت گرافیک خونگی RTX 4090 با سرعت مشتی ۸۰ توکن در ثانیه بالا بیاره. نکته خفنش اینجاست که حتی با باز کردن کل حافظه کانتکست ۲۶۲ هزارتایی، کلاً ۳۴ گیگ از ۴۸ گیگابایت VRAM اشغال شده و سیستم اصلاً زیر بار نزاییده. از نظر هوش و زورآزمایی هم قشنگ با غول‌هایی مثل کلاد اوپوس رقابت می‌کنه و توی تست کدنویسی SWE-Pro با نمره ۶۱.۷، اوپوس ۵۳.۴ امتیازی رو راحت جا گذاشته.\n\nاهمیتش اینه که بدون نیاز به سرورهای سنگین و میلیاردی ابری، حالا میشه یه هوش در سطح پیشرفته‌ترین مدل‌های دنیا رو روی سیستم‌های شخصی و کاملاً محلی اجرا کرد.",
+  "date": "2026-08-18T17:30:59+00:00"
+ },
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/rohanpaul_ai/status/2089691507926446430",
+   "domain": "x.com",
+   "author": {
+    "name": "Rohan Paul",
+    "handle": "rohanpaul_ai",
+    "avatar": "https://pbs.twimg.com/profile_images/1816185267037859840/Fd18CH0v_200x200.jpg"
+   },
+   "text": "Somebody running an Opus 4.6-level intelligence on consumer GPU.\n\nQwen3.8-27B-GGUF doing 80 tok/s on 2×4090s, full 262,144 context, MTP on, and only 34GB of 48GB VRAM occupied.\n\nNote, Qwen3.8-27B: SWE-Pro 61.7 vs Opus 53.4; GPQA 89.2 vs 91.3.\n",
+   "date": 1787056254,
+   "media": [
+    {
+     "type": "video",
+     "src": "https://video.twimg.com/amplify_video/2088476954135793664/vid/avc1/720x1280/krWtrhJxVtxSTIcR.mp4?tag=29",
+     "poster": "https://pbs.twimg.com/amplify_video_thumb/2088476954135793664/img/Y2KLCsd2hrA-eIQ8.jpg",
+     "ratio": 1.7778,
+     "duration": 16.01,
+     "gif": false
+    }
+   ],
+   "links": []
+  }
+ ],
+ "article": {
+  "title": "کار به کجا رسیده؛ روهان پاول خبر داده که یه کاربلد تونسته مدل هوش مصنوعی Qwen3.8-27B رو فقط روی دو تا کارت گرافیک خونگی RTX 4090 با سرعت مشتی ۸۰ توکن در ثانیه بالا بیاره",
+  "source_title": "Somebody running an Opus 4.6-level intelligence on consumer GPU.",
+  "body": [
+   "رفیق ببین کار به کجا رسیده؛ روهان پاول خبر داده که یه کاربلد تونسته مدل هوش مصنوعی Qwen3.8-27B رو فقط روی دو تا کارت گرافیک خونگی RTX 4090 با سرعت مشتی ۸۰ توکن در ثانیه بالا بیاره. نکته خفنش اینجاست که حتی با باز کردن کل حافظه کانتکست ۲۶۲ هزارتایی، کلاً ۳۴ گیگ از ۴۸ گیگابایت VRAM اشغال شده و سیستم اصلاً زیر بار نزاییده. از نظر هوش و زورآزمایی هم قشنگ با غول‌هایی مثل کلاد اوپوس رقابت می‌کنه و توی تست کدنویسی SWE-Pro با نمره ۶۱.۷، اوپوس ۵۳.۴ امتیازی رو راحت جا گذاشته."
+  ],
+  "why": "بدون نیاز به سرورهای سنگین و میلیاردی ابری، حالا میشه یه هوش در سطح پیشرفته‌ترین مدل‌های دنیا رو روی سیستم‌های شخصی و کاملاً محلی اجرا کرد.",
+  "tags": [
+   "آنتروپیک",
+   "تراشه"
+  ]
+ },
+ "updated": "2026-10-25T12:30:00+00:00",
+ "gholam_checked": "2026-10-25T12:30:00+00:00"
+}

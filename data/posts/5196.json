@@ -1,0 +1,79 @@
+{
+ "id": 5196,
+ "url": "https://t.me/dlmehr/5196",
+ "date": "2026-09-08T16:58:00+00:00",
+ "text": "https://fxtwitter.com/dskhudia/status/2097347242021863525?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+ "forwarded_from": null,
+ "digest": false,
+ "hash": "291a8c5d97b0",
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/dskhudia/status/2097347242021863525?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+  "site": "FxTwitter · databricks.com",
+  "title": "Daya (@dskhudia)",
+  "description": "https://www.databricks.com/blog/achieving-extreme-efficiency-through-specialized-gpu-kernel-generation\nWe recently published a blog on work on Proteus, a system for generating specialized GPU kernels.\nWhy should models from 1B to 1T parameters rely on the…",
+  "image": "https://cdn4.telesco.pe/file/nZauiUrO7ZB6CaWs9aCc0nBSSu3nQT8Do8yY0hZvjgFzfSuhW1_kboyXYeHdb_sFhU36WpJ5z-hEDBwPJGndPpCFus0w6xjiMlmkh96Kq2DNTLsIT33s7v7i284r1QFwa6_IhQ6DA0rbktn3447WJeEJTeu-aBLiWsVjMdZkNjvbsp5Ny4Mpmn043FoLlHqtelEojpCrN_380kLbDnuMOWoWGocCEKifqKG53WA4J2FjmBIJ8tu1ml_AcT7exhn_YjyLyt-UfZ-vkZfuPeaUYbrzHa1L-vhWWGiCTFWTxkmHFYnskGLfz86FIbTpJkHHmBMzk--HoIVvgtbA4sEa8Q.jpg"
+ },
+ "gholam": {
+  "text": "رفیق، بچه‌های دیتابریکس یه سیستم باحال به اسم «پروتئوس» راه انداختن که کارش تولید خودکار کرنل‌های اختصاصی برای پردازنده‌های گرافیکیه. حرف حسابشون اینه که چرا مدل‌های جمع‌وجور و غول‌پیکر باید از کدهای عمومی یکسان استفاده کنن؛ برای همین رفتن سراغ مدل Qwen 3.5 122B و با تولید کدهای اختصاصی برای شرایط اجرای واقعی، به سرعتی ۱.۸ تا ۵.۲ برابر خفن‌تر از بهترین پیاده‌سازی‌های vLLM رسیدن. البته تأکید دارن که نوشتن کد کار چندان سختی نیست، بلکه راستی‌آزمایی دقیق، ایزوله‌سازی و مطمئن شدن از بدون خطا بودن این کرنل‌ها روی جی‌پی‌یوهای واقعی اون بخش پرهزینه و پردردسر ماجراست که تازه کار اصلی اونجا رقم می‌خوره.\n\nاهمیتش اینه که نشون می‌ده شخصی‌سازی مویرگی برای هر مدل، بدون نیاز به سخت‌افزار جدید می‌تونه جهش بزرگی توی سرعت و بهره‌وری سرویس‌های هوش مصنوعی ایجاد کنه.",
+  "date": "2026-09-08T16:58:13+00:00"
+ },
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/dskhudia/status/2097347242021863525",
+   "domain": "x.com",
+   "author": {
+    "name": "Daya",
+    "handle": "dskhudia",
+    "avatar": "https://pbs.twimg.com/profile_images/1630084566022254592/IPs1EnWC_200x200.jpg"
+   },
+   "text": "https://www.databricks.com/blog/achieving-extreme-efficiency-through-specialized-gpu-kernel-generation\n\nWe recently published a blog on work on Proteus, a system for generating specialized GPU kernels.\nWhy should models from 1B to 1T parameters rely on the same generic kernels? By specializing for the exact shapes encountered at runtime, we can unlock extreme efficiency. \n\nUsing Proteus, we generated individual kernels for Qwen 3.5 122B that were 1.8–5.2× faster than the best implementations available in vLLM. But finding a fast kernel is only the beginning. The harder problem is knowing whether its results can be trusted.\n\nGeneration is often the cheap step in terms of token cost. In our initial harness, knowledge and context management, not candidate generation, consumed most of the token budget. Verification introduces another cost: candidates must run on real GPUs, in isolation, often more than once.\n\nVerification must be airtight. A kernel must be functionally correct, but its performance claims also need rigorous validation: fair comparisons, multiple timers, clean state, hidden tests, and repeated measurements. Otherwise, we generate impressive numbers and not production-ready kernels.\n\nAgentic kernel generation makes extreme specialization possible. Building a reliable, production-ready system around it remains a hard frontier.\n\nAt @Databricks, we’re tackling these challenges at the intersection of AI and systems to make inference faster, more efficient, and autonomously improving. \n@leshenj15 \n\nPrevious AA results from Databricks posted by @Yuchenj_UW : https://x.com/Yuchenj_UW/status/2094993931268420072?s=20",
+   "date": 1788881523,
+   "media": [],
+   "links": [
+    "https://www.databricks.com/blog/achieving-extreme-efficiency-through-specialized-gpu-kernel-generation",
+    "https://x.com/Yuchenj_UW/status/2094993931268420072?s=20"
+   ],
+   "quote": {
+    "author": {
+     "name": "Yuchen Jin",
+     "handle": "Yuchenj_UW",
+     "avatar": "https://pbs.twimg.com/profile_images/1319081238439751681/kCcqnwoF_200x200.jpg"
+    },
+    "text": "GLM-5.3 at 310 tok/s!\n\nDatabricks inference is #1 in both speed and latency, again.\n\nOn our internal Databricks coding benchmark, GLM-5.3 is the strongest OSS model for coding, competitive with Fable 5 and Opus 4.8.",
+    "date": 1788320450,
+    "media": [
+     {
+      "type": "image",
+      "src": "https://pbs.twimg.com/media/HRLp3iwbUAACbSZ.jpg?name=orig",
+      "ratio": 0.5212
+     }
+    ],
+    "links": []
+   }
+  },
+  {
+   "kind": "link",
+   "url": "https://www.databricks.com/blog/achieving-extreme-efficiency-through-specialized-gpu-kernel-generation",
+   "domain": "databricks.com",
+   "title": "Achieving Extreme Efficiency through Specialized GPU Kernel Generation",
+   "description": "Learn how we built an agentic system that automates the generation and rigorous validation of specialized GPU kernels to achieve extreme inference efficiency.",
+   "image": "https://www.databricks.com/sites/default/files/blog_images/achieving-extreme-efficiency-through-specialized-gpu-kernel-blog-img-og.png",
+   "site": "Databricks"
+  }
+ ],
+ "article": {
+  "title": "بچه‌های دیتابریکس یه سیستم باحال به اسم «پروتئوس» راه انداختن که کارش تولید خودکار کرنل‌های اختصاصی برای پردازنده‌های گرافیکیه",
+  "source_title": "",
+  "body": [
+   "رفیق، بچه‌های دیتابریکس یه سیستم باحال به اسم «پروتئوس» راه انداختن که کارش تولید خودکار کرنل‌های اختصاصی برای پردازنده‌های گرافیکیه. حرف حسابشون اینه که چرا مدل‌های جمع‌وجور و غول‌پیکر باید از کدهای عمومی یکسان استفاده کنن؛ برای همین رفتن سراغ مدل Qwen 3.5 122B و با تولید کدهای اختصاصی برای شرایط اجرای واقعی، به سرعتی ۱.۸ تا ۵.۲ برابر خفن‌تر از بهترین پیاده‌سازی‌های vLLM رسیدن. البته تأکید دارن که نوشتن کد کار چندان سختی نیست، بلکه راستی‌آزمایی دقیق، ایزوله‌سازی و مطمئن شدن از بدون خطا بودن این کرنل‌ها روی جی‌پی‌یوهای واقعی اون بخش پرهزینه و پردردسر ماجراست که تازه کار اصلی اونجا رقم می‌خوره."
+  ],
+  "why": "نشون می‌ده شخصی‌سازی مویرگی برای هر مدل، بدون نیاز به سخت‌افزار جدید می‌تونه جهش بزرگی توی سرعت و بهره‌وری سرویس‌های هوش مصنوعی ایجاد کنه.",
+  "tags": [
+   "تراشه"
+  ]
+ },
+ "updated": "2026-10-25T12:27:36+00:00",
+ "gholam_checked": "2026-10-25T12:27:36+00:00"
+}

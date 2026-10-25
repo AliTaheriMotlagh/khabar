@@ -1,0 +1,76 @@
+{
+ "id": 4821,
+ "url": "https://t.me/dlmehr/4821",
+ "date": "2026-08-19T16:48:02+00:00",
+ "text": "https://fxtwitter.com/amirshanehsaz/status/2089914233022562346?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+ "forwarded_from": null,
+ "digest": false,
+ "hash": "1f7aa8370dc7",
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/amirshanehsaz/status/2089914233022562346?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+  "site": "🧵 Thread • FxTwitter",
+  "title": "Amir Shanehsazzadeh (@amirshanehsaz)",
+  "description": "It’s been an absolute privilege teaching Claude how to be a protein designer! By orchestrating open-source protein design and folding models, Claude successfully designed de novo protein binders against 14 of 15 targets, with high success rates and high affinities…",
+  "image": "https://cdn4.telesco.pe/file/QTcSIQxsDoslrWl7jcVsJ8KXQMnfqIjE4tNucCbTdhqwUze3r4H291tR5B5KSsyBzynhX0P2xH746FjmvLOd3epE84DKvnK1fHrqWE4wZkEFMbfiufbKsY_9zEsSw0ghpkdyPO7Sx5E5fmvP9PAfgOlxvSV2pjgsEZEvwWW4YTdpVNSjk4Ps2AcyVNHv80CryVNyN9ak63Ch5-McVJ3THVver1-CB2Kg1LsF2k2sRqYyuZwYf_Q48nb-n04D3V9jokFyJHH46sQp3se9PrTso6gtIX04Kjv2W1271kfWjsrlMiwkgoP24dQQcZCH4wkv7KmLgpxIyyYmeWj1_Fxfpg.jpg"
+ },
+ "gholam": {
+  "text": "ببین رفیق، این هوش مصنوعی کلود زده تو کار زیست‌شناسی و غوغا به پا کرده؛ امیر شانه‌ساززاده اومده به کلود یاد داده چطوری مثل یه متخصص کاردرست، پروتئین طراحی کنه. ماجرا از این قراره که کلود با هدایت و ترکیب کلی مدل خفن متن‌باز مثل آلفافولد و آر‌اف‌دیفیوژن، تونسته از پسِ طراحی بایندرهای پروتئینی برای ۱۴ تا از ۱۵ هدف آزمایشی بربیاد و تو تست‌های آزمایشگاهی هم نتیجه درخشانی نشون بده. کاری که قبلاً ماه‌ها از وقت و انرژی دانشمندا رو برای پیدا کردن مولکول مناسب دارو می‌گرفت، حالا با مدیریت این هوش مصنوعی خیلی سریع‌تر و دقیق‌تر جلو می‌ره.\n\nچرا مهمه؟ اهمیتش اینه که ورود هوش مصنوعی به طراحی مستقیم پروتئین‌ها، مسیر ساخت داروهای جدید و درمان بیماری‌های سخت رو چندین سال میندازه جلو.",
+  "date": "2026-08-19T16:48:14+00:00"
+ },
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/amirshanehsaz/status/2089914233022562346",
+   "domain": "x.com",
+   "author": {
+    "name": "Amir Shanehsazzadeh",
+    "handle": "amirshanehsaz",
+    "avatar": "https://pbs.twimg.com/profile_images/1469848771303378946/HiHJVs70_200x200.jpg"
+   },
+   "text": "It’s been an absolute privilege teaching Claude how to be a protein designer! By orchestrating open-source protein design and folding models, Claude successfully designed de novo protein binders against 14 of 15 targets, with high success rates and high affinities, as measured by @adaptyvbio and @TwistBioscience. Our results are enabled by multiple landmark innovations in molecular modeling, including, but not limited to:\n\n• ESMFold2 and ESMFold2-Fast from @biohub \n• PXDesign and Protenix v2 from @ByteDanceSeed_ \n• ipSAE from @RolandDunbrack \n• RFdiffusion, RFdiffusion3, ProteinMPNN, and SolubleMPNN from @UWproteindesign \n• FreeBindCraft from @EPFL @AriaxBio \n• BoltzGen from @boltz_bio \n• Proteina-Complexa from @NVIDIAHealth \n• Genie 3 from @ColumbiaSysBio \n• Caliby and SolubleCaliby from @Stanford \n• AlphaFold and AlphaProteo from @GoogleDeepMind @IsomorphicLabs",
+   "date": 1787109356,
+   "media": [
+    {
+     "type": "image",
+     "src": "https://pbs.twimg.com/media/HQDdqzGW4AI7f6r.jpg?name=orig",
+     "ratio": 0.7466
+    }
+   ],
+   "links": [],
+   "quote": {
+    "author": {
+     "name": "Anthropic",
+     "handle": "AnthropicAI",
+     "avatar": "https://pbs.twimg.com/profile_images/1798110641414443008/XP8gyBaY_200x200.jpg"
+    },
+    "text": "Many drugs work by binding to a specific target in the body and blocking or changing what it does. An important first step in the drug development process is designing a molecule that can bind tightly to its target. Traditionally, that's meant weeks or months of expert work per target, sifting through a large number of candidates to identify the few that work.\n\nWe wanted to test if Claude could successfully design novel protein binders from scratch (also called de novo design). With a protein design prompt written by a human expert, Claude autonomously designed protein binders against 14 out of 15 targets.\n\nWe then worked with Adaptyv Bio and Twist Bioscience, who independently built and tested the proteins Claude designed.",
+    "date": 1787092227,
+    "media": [
+     {
+      "type": "video",
+      "src": "https://video.twimg.com/amplify_video/2089839233309773824/vid/avc1/1280x720/nHWgl750hpZfMNMd.mp4?tag=29",
+      "poster": "https://pbs.twimg.com/media/HQKU_NGbsAENp-_.jpg",
+      "ratio": 0.5625,
+      "duration": 11,
+      "gif": false
+     }
+    ],
+    "links": []
+   }
+  }
+ ],
+ "article": {
+  "title": "این هوش مصنوعی کلود زده تو کار زیست‌شناسی و غوغا به پا کرده؛ امیر شانه‌ساززاده اومده به کلود یاد داده چطوری مثل یه متخصص کاردرست، پروتئین طراحی کنه",
+  "source_title": "It’s been an absolute privilege teaching Claude how to be a protein designer! By orchestrating open-source protein design and folding…",
+  "body": [
+   "ببین رفیق، این هوش مصنوعی کلود زده تو کار زیست‌شناسی و غوغا به پا کرده؛ امیر شانه‌ساززاده اومده به کلود یاد داده چطوری مثل یه متخصص کاردرست، پروتئین طراحی کنه. ماجرا از این قراره که کلود با هدایت و ترکیب کلی مدل خفن متن‌باز مثل آلفافولد و آر‌اف‌دیفیوژن، تونسته از پسِ طراحی بایندرهای پروتئینی برای ۱۴ تا از ۱۵ هدف آزمایشی بربیاد و تو تست‌های آزمایشگاهی هم نتیجه درخشانی نشون بده. کاری که قبلاً ماه‌ها از وقت و انرژی دانشمندا رو برای پیدا کردن مولکول مناسب دارو می‌گرفت، حالا با مدیریت این هوش مصنوعی خیلی سریع‌تر و دقیق‌تر جلو می‌ره."
+  ],
+  "why": "اهمیتش اینه که ورود هوش مصنوعی به طراحی مستقیم پروتئین‌ها، مسیر ساخت داروهای جدید و درمان بیماری‌های سخت رو چندین سال میندازه جلو.",
+  "tags": [
+   "آنتروپیک"
+  ]
+ },
+ "updated": "2026-10-25T12:29:53+00:00",
+ "gholam_checked": "2026-10-25T12:29:53+00:00"
+}

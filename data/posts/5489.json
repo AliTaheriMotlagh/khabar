@@ -1,0 +1,50 @@
+{
+ "id": 5489,
+ "url": "https://t.me/dlmehr/5489",
+ "date": "2026-09-26T04:53:37+00:00",
+ "text": "https://fxtwitter.com/zhaoran_wang/status/2103652448392909200?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+ "forwarded_from": null,
+ "digest": false,
+ "hash": "1288459d5b33",
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/zhaoran_wang/status/2103652448392909200?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+  "site": "FxTwitter",
+  "title": "Zhaoran Wang (@zhaoran_wang)",
+  "description": "prediction: “big models are too slow for robotics” is about to age badly.\nwithin weeks, expect many DeepSeek V4 Flash–scale JEVs: real-time, surprisingly close to Astra via distillation.\npeople underestimate how fast prefill can get.",
+  "image": "https://cdn4.telesco.pe/file/K6md72Yd4_CeExgIb-qpHadpWAYeRrEJtO21ZeRMd8qx_LV3YWtrAmJCHgNLaSEutAsMukNTOngl7KxL4lPQTZjGC07dM8_LIir63Ko70jZ9QRqD_O5WwPFYEJiw5Jv7zgeEHFS1AqXN4Y8lBlPaw_AF08i1OK7XuUi7bkOnfTdH36GpVwBGi_FCCPI9H-85ChiMJa4TxZ-ZALVSxUG0ban72zNossU1UB4pTEi6huWsYegiAwhEB9PoGQklMBqujOWJauS-NzcAXnE1_qBjyZp54tFubRn3iihCmB7rn9HtBY6VJQjz1Hr0LBexaOT_YGiFdna-ceiueyV010Gd1Q.jpg"
+ },
+ "gholam": {
+  "text": "رفیق، ژائوران وانگ یه پیش‌بینی جالب کرده و میگه این ادعا که «مدل‌های بزرگ واسه رباتیک زیادی کُندن» به زودی بدجوری بی‌اعتبار و کهنه میشه. به قول خودش تا چند هفته دیگه قراره کلی مدل جمع‌وجور و فرز در حد DeepSeek V4 Flash ببینیم که با تکنیک تقطیر، به شکل غافلگیرکننده‌ای پا‌به‌پای پروژه‌هایی مثل آسترا میان و کاملاً بلادرنگ و در لحظه پردازش می‌کنن. حرف حسابش هم اینه که خیلیا هنوز دست‌کم گرفتن که سرعت مرحله پیش‌پر کردن یا همون prefill چقدر می‌تونه جهش پیدا کنه و معطلیِ مخِ ربات‌ها رو کلاً از بین ببره.\n\nاهمیتش اینه که حل شدن معضل کُندی پردازش، مسیر رو برای ورود ربات‌های فوق‌هوشمند به کارهای حساس و دنیای واقعی حسابی هموار و سریع می‌کنه.",
+  "date": "2026-09-26T04:53:50+00:00"
+ },
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/zhaoran_wang/status/2103652448392909200",
+   "domain": "x.com",
+   "author": {
+    "name": "Zhaoran Wang",
+    "handle": "zhaoran_wang",
+    "avatar": "https://pbs.twimg.com/profile_images/545345093725466624/_P5F-Xau_200x200.png"
+   },
+   "text": "prediction: “big models are too slow for robotics” is about to age badly.\n\nwithin weeks, expect many DeepSeek V4 Flash–scale JEVs: real-time, surprisingly close to Astra via distillation.\n\npeople underestimate how fast prefill can get.",
+   "date": 1790384802,
+   "media": [],
+   "links": []
+  }
+ ],
+ "article": {
+  "title": "ژائوران وانگ یه پیش‌بینی جالب کرده و میگه این ادعا که «مدل‌های بزرگ واسه رباتیک زیادی کُندن» به زودی بدجوری بی‌اعتبار و کهنه میشه",
+  "source_title": "prediction: “big models are too slow for robotics” is about to age badly.",
+  "body": [
+   "رفیق، ژائوران وانگ یه پیش‌بینی جالب کرده و میگه این ادعا که «مدل‌های بزرگ واسه رباتیک زیادی کُندن» به زودی بدجوری بی‌اعتبار و کهنه میشه. به قول خودش تا چند هفته دیگه قراره کلی مدل جمع‌وجور و فرز در حد DeepSeek V4 Flash ببینیم که با تکنیک تقطیر، به شکل غافلگیرکننده‌ای پا‌به‌پای پروژه‌هایی مثل آسترا میان و کاملاً بلادرنگ و در لحظه پردازش می‌کنن. حرف حسابش هم اینه که خیلیا هنوز دست‌کم گرفتن که سرعت مرحله پیش‌پر کردن یا همون prefill چقدر می‌تونه جهش پیدا کنه و معطلیِ مخِ ربات‌ها رو کلاً از بین ببره."
+  ],
+  "why": "حل شدن معضل کُندی پردازش، مسیر رو برای ورود ربات‌های فوق‌هوشمند به کارهای حساس و دنیای واقعی حسابی هموار و سریع می‌کنه.",
+  "tags": [
+   "رباتیک"
+  ]
+ },
+ "updated": "2026-10-25T12:25:47+00:00",
+ "gholam_checked": "2026-10-25T12:25:47+00:00"
+}

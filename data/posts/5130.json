@@ -1,0 +1,67 @@
+{
+ "id": 5130,
+ "url": "https://t.me/dlmehr/5130",
+ "date": "2026-09-03T19:16:00+00:00",
+ "text": "https://fxtwitter.com/wallstengine/status/2095576937288839395?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+ "forwarded_from": null,
+ "digest": false,
+ "hash": "9a7c0fa24122",
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/wallstengine/status/2095576937288839395?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+  "site": "FxTwitter",
+  "title": "Wall St Engine (@wallstengine)",
+  "description": "Astra (GPT-6) API pricing is $10 per million input tokens and $50 per million output tokens, 2.5 times the price of GPT-5.6 Sol and the same as Anthropic’s Fable 5.1.\nQuoting Wall St Engine (@wallstengine)\nOPENAI RELEASES GPT-6 ASTRA, SAYS IT COULD MARK…",
+  "image": "https://cdn4.telesco.pe/file/FZn-pJHev5jKMI2SveyAxxRXOtcp5Qdg23JlCnFtcfmTNPykz9OfncR3NbuJG5UdL_YnpR-_ycJVdCS9WRhYR5KfAEoVeedrzj45hzROTc_aeIAgYglkPEo1hVTh_ePGMvxOG0jKQDBsl3kwTSAfYsEfbmbNZ0DPCQdUB2dvbdkTvMioEWe-UZSQZvAJoOMhAaQmHKdzvZNNBq6E8Oj3q130KbNO7G6D90IPQWSJN4NiMpGbvTaCHhd-Xx6ZCUub4h7F50UsBCvrppJ0Yt8o8XbKQ-WJ8V0owcnq7BNjfvC-u7bTD6qbCN464_4tLnO6DWrGY7TMQg3_I4KqssSikw.jpg"
+ },
+ "gholam": {
+  "text": "خلاصه رفقا، اوپن‌ای‌آی بالاخره از غول جدیدش یعنی مدل GPT-6 با اسم آسترا رونمایی کرده و گرگ براکمن، رئیس شرکت، مدعی شده این سیستم یه جهش نسلی بزرگه که شاید شروع رسمی دوران هوش عمومی مصنوعی (AGI) به حساب بیاد. منتها رفیق، این شاهکار تازه اصلاً مفت به دست کسی نمیرسه و قیمتش واسه هر یک میلیون توکن ورودی ۱۰ دلار و واسه خروجی ۵۰ دلار درمیاد. این رقم سنگین دقیقاً ۲.۵ برابر مدل قبلی یعنی GPT-5.6 سوله و صاف شاخ‌به‌شاخِ قیمت مدل فیبل ۵.۱ شرکت آنتروپیک قرار گرفته تا نشون بده برای قدرت بیشتر باید حسابی سر کیسه رو شل کرد.\n\nچرا مهمه؟ چون علاوه بر اینکه ادعای رسیدن به هوش مصنوعی همه‌فن‌حریف رو جدی‌تر کرده، نشون میده هزینه‌ استفاده از تاپ‌ترین مدل‌های دنیا به شکل سرسام‌آوری بالا رفته.",
+  "date": "2026-09-03T19:16:15+00:00"
+ },
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/wallstengine/status/2095576937288839395",
+   "domain": "x.com",
+   "author": {
+    "name": "Wall St Engine",
+    "handle": "wallstengine",
+    "avatar": "https://pbs.twimg.com/profile_images/1691846947857178624/oZp5wB4r_200x200.jpg"
+   },
+   "text": "Astra (GPT-6) API pricing is $10 per million input tokens and $50 per million output tokens, 2.5 times the price of GPT-5.6 Sol and the same as Anthropic’s Fable 5.1.",
+   "date": 1788459450,
+   "media": [],
+   "links": [],
+   "quote": {
+    "author": {
+     "name": "Wall St Engine",
+     "handle": "wallstengine",
+     "avatar": "https://pbs.twimg.com/profile_images/1691846947857178624/oZp5wB4r_200x200.jpg"
+    },
+    "text": "OPENAI RELEASES GPT-6 ASTRA, SAYS IT COULD MARK THE ARRIVAL OF AGI\n\nOpenAI has started rolling out GPT-6 Astra, its new flagship model, calling it a “generational leap” in AI capability.\n\nPresident Greg Brockman went further, saying people may eventually look back at “about this time and about this model” as the point when AGI arrived.\n\nHe ended the briefing with: “Welcome to the AGI era.”\n\nWhat stands out:\n\n• Astra was trained on more than 100,000 GPUs at OpenAI’s Stargate site in Texas.\n\n• OpenAI says it leads across software engineering, science, reasoning, computer use and cybersecurity.\n\n• The model is built to work directly inside software, including creating spreadsheets and presentations, building 3D environments, designing circuit boards, handling financial modeling and drafting tax forms.\n\n• Astra is OpenAI’s first model to reach its “Critical” cybersecurity threshold, meaning it can potentially discover and exploit previously unknown vulnerabilities with limited human guidance.\n\n• Because of those capabilities, its strongest cyber features will initially be restricted to trusted organizations through OpenAI’s Daybreak Access program.\n\nOpenAI says Astra’s written reasoning is harder to monitor than GPT-5.6 Sol’s, partly because the model can solve some tasks using fewer visible reasoning steps.\n\nAstra will roll out in the coming days to ChatGPT Plus, Pro, Business and Enterprise users, as well as through the API and AWS.\n\nPricing is $10 per million input tokens and $50 per million output tokens, about 2.5x GPT-5.6 Sol.",
+    "date": 1788458822,
+    "media": [
+     {
+      "type": "image",
+      "src": "https://pbs.twimg.com/media/HRT5uBaaIAAqvJa.png?name=orig",
+      "ratio": 0.6266
+     }
+    ],
+    "links": []
+   }
+  }
+ ],
+ "article": {
+  "title": "رفقا، اوپن‌ای‌آی بالاخره از غول جدیدش یعنی مدل GPT-6 با اسم آسترا رونمایی کرده و گرگ براکمن، رئیس شرکت، مدعی شده این سیستم یه جهش نسلی بزرگه که شاید شروع رسمی دوران هوش عمومی مصنوعی (AGI) به حساب بیاد",
+  "source_title": "Astra (GPT-6) API pricing is $10 per million input tokens and $50 per million output tokens, 2.5 times the price of GPT-5.6 Sol and the…",
+  "body": [
+   "خلاصه رفقا، اوپن‌ای‌آی بالاخره از غول جدیدش یعنی مدل GPT-6 با اسم آسترا رونمایی کرده و گرگ براکمن، رئیس شرکت، مدعی شده این سیستم یه جهش نسلی بزرگه که شاید شروع رسمی دوران هوش عمومی مصنوعی (AGI) به حساب بیاد. منتها رفیق، این شاهکار تازه اصلاً مفت به دست کسی نمیرسه و قیمتش واسه هر یک میلیون توکن ورودی ۱۰ دلار و واسه خروجی ۵۰ دلار درمیاد. این رقم سنگین دقیقاً ۲.۵ برابر مدل قبلی یعنی GPT-5.6 سوله و صاف شاخ‌به‌شاخِ قیمت مدل فیبل ۵.۱ شرکت آنتروپیک قرار گرفته تا نشون بده برای قدرت بیشتر باید حسابی سر کیسه رو شل کرد."
+  ],
+  "why": "چون علاوه بر اینکه ادعای رسیدن به هوش مصنوعی همه‌فن‌حریف رو جدی‌تر کرده، نشون میده هزینه‌ استفاده از تاپ‌ترین مدل‌های دنیا به شکل سرسام‌آوری بالا رفته.",
+  "tags": [
+   "اوپن‌ای‌آی"
+  ]
+ },
+ "updated": "2026-10-25T12:27:59+00:00",
+ "gholam_checked": "2026-10-25T12:27:59+00:00"
+}

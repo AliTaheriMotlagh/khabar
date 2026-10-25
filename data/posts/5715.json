@@ -1,0 +1,56 @@
+{
+ "id": 5715,
+ "url": "https://t.me/dlmehr/5715",
+ "date": "2026-10-07T17:30:15+00:00",
+ "text": "https://fxtwitter.com/liquidai/status/2107878924831379676?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+ "forwarded_from": null,
+ "digest": false,
+ "hash": "f073d145ba2a",
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/liquidai/status/2107878924831379676?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+  "site": "🧵 Thread • FxTwitter",
+  "title": "Liquid AI (@liquidai)",
+  "description": "Today we release Open d1: two open-weight multimodal models in our d1 decision model family.\n> d1-3B: text + vision\n> d1-omni-600M: text + image or text + audio\n> Real-time decision making anywhere, from data centers such as @nvidia DGX to RTX workstations…",
+  "image": "https://cdn4.telesco.pe/file/SBfRdErj0GuAOlUhsrI1EUfOPHMhHYSmHkBgmp7RtIwPKIlHOm7f1Le8qbemrKLXpSNa-s1PKYJ18Oxx5lJDQbLns6IqffqWSyfQ-KxBF2gsl70fYSZQOkHN-wkvIkRHvcVxVko-qIqfORBjICUAjzTmqwj4TObvWeOM-GqO2WVnKk5sJBoblClGJZNqleZJVBIvLwzVwxDna0OiIBYCYMrqNLtOJsz3UktjAVS2ki6Jco865u2SYfcQUJLICVMcULX3XMFVP7W3uJK8XX-mj9YI3RSOFqHFtmvbdzU5o16MWvGRTEVeu11LRFcij46UH1l_6xfeSrcH_1ABK3jm5g.jpg"
+ },
+ "gholam": {
+  "text": "رفیق، بچه‌های Liquid AI دست‌به‌کار شدن و دو تا مدل چندوجهی اوپن‌ویت به اسم Open d1 دادن بیرون که خوراک تصمیم‌گیری درلحظه‌ست. گل سرسبدشون یه مدل ۳ میلیاردی به اسم d1-3B هست که متن و تصویر رو با هم پردازش می‌کنه، در کنار یه مدل نقلی و تر و تمیز ۶۰۰ میلیونی به اسم d1-omni-600M که ترکیبی از متن و تصویر یا متن و صدا رو هندل می‌کنه. نکته خفنش اینجاست که این مدل‌ها این‌قدر سبک و چابکن که هم روی سرورهای غول‌پیکر دیتاسنتری مثل انویدیا DGX بالا میان، هم روی سیستم‌های خونگی و حتی بردهای لبه مثل جتسُن بدون افت سرعت کار می‌کنن.\n\nچرا مهمه؟ اهمیتش اینه که می‌تونی هوش مصنوعی چندوجهی و تصمیم‌گیر رو بدون نیاز به ابری و هزینه سرسام‌آور، صاف روی دستگاه‌های کوچیک و لبه اجرا کنی.",
+  "date": "2026-10-07T17:30:28+00:00"
+ },
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/liquidai/status/2107878924831379676",
+   "domain": "x.com",
+   "author": {
+    "name": "Liquid AI",
+    "handle": "liquidai",
+    "avatar": "https://pbs.twimg.com/profile_images/1702611993327251456/PUUuOA4W_200x200.jpg"
+   },
+   "text": "Today we release Open d1: two open-weight multimodal models in our d1 decision model family.\n\n> d1-3B: text + vision\n> d1-omni-600M: text + image or text + audio\n> Real-time decision making anywhere, from data centers such as @nvidia DGX to RTX workstations to Jetson at the edge.\n\n1/",
+   "date": 1791392472,
+   "media": [
+    {
+     "type": "image",
+     "src": "https://pbs.twimg.com/media/HUCokhZbMAATqqi.jpg?name=orig",
+     "ratio": 0.6739
+    }
+   ],
+   "links": []
+  }
+ ],
+ "article": {
+  "title": "بچه‌های Liquid AI دست‌به‌کار شدن و دو تا مدل چندوجهی اوپن‌ویت به اسم Open d1 دادن بیرون که خوراک تصمیم‌گیری درلحظه‌ست",
+  "source_title": "Today we release Open d1: two open-weight multimodal models in our d1 decision model family.",
+  "body": [
+   "رفیق، بچه‌های Liquid AI دست‌به‌کار شدن و دو تا مدل چندوجهی اوپن‌ویت به اسم Open d1 دادن بیرون که خوراک تصمیم‌گیری درلحظه‌ست. گل سرسبدشون یه مدل ۳ میلیاردی به اسم d1-3B هست که متن و تصویر رو با هم پردازش می‌کنه، در کنار یه مدل نقلی و تر و تمیز ۶۰۰ میلیونی به اسم d1-omni-600M که ترکیبی از متن و تصویر یا متن و صدا رو هندل می‌کنه. نکته خفنش اینجاست که این مدل‌ها این‌قدر سبک و چابکن که هم روی سرورهای غول‌پیکر دیتاسنتری مثل انویدیا DGX بالا میان، هم روی سیستم‌های خونگی و حتی بردهای لبه مثل جتسُن بدون افت سرعت کار می‌کنن."
+  ],
+  "why": "اهمیتش اینه که می‌تونی هوش مصنوعی چندوجهی و تصمیم‌گیر رو بدون نیاز به ابری و هزینه سرسام‌آور، صاف روی دستگاه‌های کوچیک و لبه اجرا کنی.",
+  "tags": [
+   "انویدیا"
+  ]
+ },
+ "updated": "2026-10-25T12:24:25+00:00",
+ "gholam_checked": "2026-10-25T12:24:25+00:00"
+}

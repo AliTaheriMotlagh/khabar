@@ -1,0 +1,59 @@
+{
+ "id": 5804,
+ "url": "https://t.me/dlmehr/5804",
+ "date": "2026-10-11T03:46:02+00:00",
+ "text": "https://fxtwitter.com/1a1a11a/status/2108924569398411566?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+ "forwarded_from": null,
+ "digest": false,
+ "hash": "059695cbbb2b",
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/1a1a11a/status/2108924569398411566?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+  "site": "FxTwitter",
+  "title": "Juncheng Yang (@1a1a11a)",
+  "description": "This semester I am teaching a new course on Agentic Systems, which explores the full stack of AI systems: from building and optimizing agent harnesses to serving and optimizing LLM serving infrastructure.\nStudents learn by building, measuring, and optimizing…",
+  "image": "https://cdn4.telesco.pe/file/gXqZ0LwHoPOviRi03Z2pTB1v8EMtZOTA52ok74AgzrXb-0MMFwaosyGITBPFEOYAqeP5S0RKdRheCflOEMy-3_pNDQIqX9Rpu7VvlCvf7oisjbX95_3R94Nd3L4DVD-qjaTuLMUruruBSU0wt-uhnTH0IAKQDhwq-FtaXmSxAsCAGQeJwq8_tfaEr_k-5nYA5uuahBgL4tke6Mir5t9FCH6Yd2ZG6aBHhD3tQMP0AEXERxLEozn4o6DOBdo0dT-BFfxm0EpgZV8NZ7KQlM5WvMaOjAVlvXFs4ik-y2BvjarXp6ZTf_T12j-K-up2se9IzRENgGmgwU1_cfG9710N-g.jpg"
+ },
+ "gholam": {
+  "text": "ببین رفیق، یه استادی به اسم جونچنگ یانگ توی هاروارد اومده یه درس خفن راه انداخته به اسم سیستم‌های ایجنتیک که صفر تا صد زیرساخت‌های هوش مصنوعی رو زیر ذره‌بین می‌بره. ماجرا اینه که دانشجوها قراره عملاً یاد بگیرن چطوری ایجنت‌های واقعی بسازن، زیرساخت سرویس‌دهی مدل‌های زبانی رو بهینه‌سازی کنن و بالانس درستی بین سرعت، هزینه و کارایی برقرار کنن. دمش هم گرم، چون کل ویدیوهای کلاسی، جزوه‌ها و تمرین‌های این درس رو به صورت کاملاً عمومی و رایگان گذاشته روی وبسایت دانشگاه تا هر کی عشق یادگیری داره بتونه فیض ببره. هدفشونم اینه که بچه‌ها فقط مصرف‌کننده تکنولوژی امروز نباشن و بتونن سیستم‌های نسل بعدی هوش مصنوعی رو خودشون ردیف کنن.\n\nاهمیتش اینه که دسترسی رایگان به یکی از به‌روزترین دوره‌های هاروارد اونم تو زمینه ساخت ایجنت‌ها، بهترین فرصته تا هر کسی توی دنیا بتونه دانش فنی‌ش رو در سطح کلاس جهانی بالا بکشه.",
+  "date": "2026-10-11T03:46:15+00:00"
+ },
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/1a1a11a/status/2108924569398411566",
+   "domain": "x.com",
+   "author": {
+    "name": "Juncheng Yang",
+    "handle": "1a1a11a",
+    "avatar": "https://pbs.twimg.com/profile_images/575020840179265536/4LtB1HbF_200x200.jpeg"
+   },
+   "text": "This semester I am teaching a new course on Agentic Systems, which explores the full stack of AI systems: from building and optimizing agent harnesses to serving and optimizing LLM serving infrastructure. \n\nStudents learn by building, measuring, and optimizing real agents and systems, balancing capability, latency,  and cost. \n\nOur goal is not just to teach today's AI technologies, but to prepare students to build tomorrow's. \n\nAll lectures, readings, and assignments are publicly available at https://cs2680.seas.harvard.edu",
+   "date": 1791641773,
+   "media": [],
+   "links": [
+    "https://cs2680.seas.harvard.edu"
+   ]
+  },
+  {
+   "kind": "link",
+   "url": "https://cs2680.seas.harvard.edu",
+   "domain": "cs2680.seas.harvard.edu",
+   "title": "CS2680 Modern AI Systems: Agents and System Optimizations",
+   "description": "CS2680 Modern AI Systems: Agents and System Optimizations — Harvard SEAS, Fall 2026",
+   "image": null,
+   "site": "CS2680 Modern AI Systems"
+  }
+ ],
+ "article": {
+  "title": "یه استادی به اسم جونچنگ یانگ توی هاروارد اومده یه درس خفن راه انداخته به اسم سیستم‌های ایجنتیک که صفر تا صد زیرساخت‌های هوش مصنوعی رو زیر ذره‌بین می‌بره",
+  "source_title": "This semester I am teaching a new course on Agentic Systems, which explores the full stack of AI systems: from building and optimizing…",
+  "body": [
+   "ببین رفیق، یه استادی به اسم جونچنگ یانگ توی هاروارد اومده یه درس خفن راه انداخته به اسم سیستم‌های ایجنتیک که صفر تا صد زیرساخت‌های هوش مصنوعی رو زیر ذره‌بین می‌بره. ماجرا اینه که دانشجوها قراره عملاً یاد بگیرن چطوری ایجنت‌های واقعی بسازن، زیرساخت سرویس‌دهی مدل‌های زبانی رو بهینه‌سازی کنن و بالانس درستی بین سرعت، هزینه و کارایی برقرار کنن. دمش هم گرم، چون کل ویدیوهای کلاسی، جزوه‌ها و تمرین‌های این درس رو به صورت کاملاً عمومی و رایگان گذاشته روی وبسایت دانشگاه تا هر کی عشق یادگیری داره بتونه فیض ببره. هدفشونم اینه که بچه‌ها فقط مصرف‌کننده تکنولوژی امروز نباشن و بتونن سیستم‌های نسل بعدی هوش مصنوعی رو خودشون ردیف کنن."
+  ],
+  "why": "دسترسی رایگان به یکی از به‌روزترین دوره‌های هاروارد اونم تو زمینه ساخت ایجنت‌ها، بهترین فرصته تا هر کسی توی دنیا بتونه دانش فنی‌ش رو در سطح کلاس جهانی بالا بکشه.",
+  "tags": []
+ },
+ "updated": "2026-10-25T12:23:52+00:00",
+ "gholam_checked": "2026-10-25T12:23:52+00:00"
+}

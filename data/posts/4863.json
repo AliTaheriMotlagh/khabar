@@ -1,0 +1,57 @@
+{
+ "id": 4863,
+ "url": "https://t.me/dlmehr/4863",
+ "date": "2026-08-21T19:12:21+00:00",
+ "text": "https://fxtwitter.com/cline/status/2090854216399220985?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+ "forwarded_from": null,
+ "digest": false,
+ "hash": "9014957cea07",
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/cline/status/2090854216399220985?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+  "site": "FxTwitter",
+  "title": "Cline (@cline)",
+  "description": "Ox Alpha (stealth model) is now free in Cline.\nEarly benchmarks shows marginal improvement over Fable and GPT.\nTry it with:\nnpm i -g cline\nand use /models to see it under Free options",
+  "image": "https://cdn4.telesco.pe/file/TtpU6pDTHM2AultwHCnB7_X26SFk--zfjL2466BvYdapKfkQW4jMPJ-hcDM8mMj5J7DRq_-58C9QP0ybpKWU9AcKhA3biEhqjLBxv1wXTudEvDYd2DM4dFcJaSghQlkm30fMA1bhFZKO6_EmAfNgX4E01OiA0q44LypTs2dItXONJGrXn4NVVXzowlkXXvzT7CChSsZDcOIvwD_0XH7-2yfIkYQMhdCzmPrSwRWmDfcsROnvGOSswQF2ESaXrWfC9pXx3fwnh7RiISBL3JUeNrYaATvBEcjXuOlzBBly2ixB7W-G-n1qW4b5ZFbGbys1Kr_l9kdrOykkjlwCFy0eIg.jpg"
+ },
+ "gholam": {
+  "text": "رفیق، بچه‌های ابزار کدنویسی Cline یه حرکت مشتی زدن و مدل مخفی و تازه‌نفس Ox Alpha رو کاملاً رایگان در اختیار کاربرا گذاشتن. طبق بنچمارک‌ها و تست‌های اولیه، این مدل حتی نسبت به غول‌هایی مثل GPT و Fable عملکرد بهتری نشون داده و حسابی تو کد زدن عصای دستت می‌شه. برای امتحان کردنش هم کافیه ابزار Cline رو با دستور npm آپدیت کنی و تو بخش گزینه‌های مجانی انتخابش کنی تا بدون یه ریال خرج بری تو کارش.\n\nچرا مهمه؟ اهمیتش اینه که بدون خرید اشتراک‌های دلاری، دسترسی به یه هوش مصنوعی قوی‌تر از گزینه‌های فعلی برای برنامه‌نویسی برات باز شده.",
+  "date": "2026-08-21T19:12:31+00:00"
+ },
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/cline/status/2090854216399220985",
+   "domain": "x.com",
+   "author": {
+    "name": "Cline",
+    "handle": "cline",
+    "avatar": "https://pbs.twimg.com/profile_images/2100371495658946560/pKjt1-8w_200x200.png"
+   },
+   "text": "Ox Alpha (stealth model) is now free in Cline.\n\nEarly benchmarks shows marginal improvement over Fable and GPT.\n\nTry it with:\nnpm i -g cline\nand use /models to see it under Free options",
+   "date": 1787333466,
+   "media": [
+    {
+     "type": "image",
+     "src": "https://pbs.twimg.com/media/HQQ0qeJbcAED_Dj.jpg?name=orig",
+     "ratio": 0.5751
+    }
+   ],
+   "links": []
+  }
+ ],
+ "article": {
+  "title": "بچه‌های ابزار کدنویسی Cline یه حرکت مشتی زدن و مدل مخفی و تازه‌نفس Ox Alpha رو کاملاً رایگان در اختیار کاربرا گذاشتن",
+  "source_title": "Ox Alpha (stealth model) is now free in Cline.",
+  "body": [
+   "رفیق، بچه‌های ابزار کدنویسی Cline یه حرکت مشتی زدن و مدل مخفی و تازه‌نفس Ox Alpha رو کاملاً رایگان در اختیار کاربرا گذاشتن. طبق بنچمارک‌ها و تست‌های اولیه، این مدل حتی نسبت به غول‌هایی مثل GPT و Fable عملکرد بهتری نشون داده و حسابی تو کد زدن عصای دستت می‌شه. برای امتحان کردنش هم کافیه ابزار Cline رو با دستور npm آپدیت کنی و تو بخش گزینه‌های مجانی انتخابش کنی تا بدون یه ریال خرج بری تو کارش."
+  ],
+  "why": "اهمیتش اینه که بدون خرید اشتراک‌های دلاری، دسترسی به یه هوش مصنوعی قوی‌تر از گزینه‌های فعلی برای برنامه‌نویسی برات باز شده.",
+  "tags": [
+   "کدنویسی",
+   "اوپن‌ای‌آی"
+  ]
+ },
+ "updated": "2026-10-25T12:29:39+00:00",
+ "gholam_checked": "2026-10-25T12:29:39+00:00"
+}

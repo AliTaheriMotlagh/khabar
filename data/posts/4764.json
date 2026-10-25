@@ -1,0 +1,57 @@
+{
+ "id": 4764,
+ "url": "https://t.me/dlmehr/4764",
+ "date": "2026-08-16T03:59:32+00:00",
+ "text": "https://fxtwitter.com/analogalok/status/2088572972361724222?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+ "forwarded_from": null,
+ "digest": false,
+ "hash": "d82e123dcda4",
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/analogalok/status/2088572972361724222?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+  "site": "🧵 Thread • FxTwitter",
+  "title": "Alok (@analogalok)",
+  "description": "we officially hit the $0 cost per task era.\nintelligence is commoditizing way faster than anyone expected.\nwhen OpenCode + Gemini3.7 flash (high) is sitting at $0.00 and DeepSeek is $0.07, burning $11 per task on frontier models in production is financial…",
+  "image": "https://cdn4.telesco.pe/file/fsaI74LJ1YckvUlBcdyNfUIt35CU_V4Kil9kqAb6pWMS7x9q2So-MGRrQ-DeRIigXHPF8X7A-S9QOivntH8S7wBMHcqcjBk5x1HfdMOtutnDVLQ0Xt58mRj1wmPT2X_KUgwCJIAV-dicoGxL2RpoMxc1YLVswWCNPTwMQ0xk8QHZKDhIb_p2AP6KImpkpsWP6ibwtJ9muISQzjGeXjhPcynFiBKQ1ogCDtDcc0fZssBCQj3_2OTi422Z3w1h3wiTEhm_4NDKIKvMVrdcZQsB-yEi-UItUy2wpc73-DA2bRoiRWR3p7AZHEl8Res2xGLLPiBflq1oJ3b5k1XNnBOi4Q.jpg"
+ },
+ "gholam": {
+  "text": "رفیق، این دوستمون آلوک تو توییتر یه آمار مشتی داده و می‌گه رسماً وارد دوره تسک‌های تقریباً مجانی توی هوش مصنوعی شدیم. قضیه اینه که اجرای کارها با ترکیب OpenCode و جمینای ۳.۷ فلش عملاً صفر دلار و با دیپ‌سیک حدود ۷ سنت خرج داره، در حالی که هنوز یه عده واسه هر تسک ۱۱ دلار پای مدل‌های گرون‌قیمت هدر می‌دن. طرف حساب‌کتاب کرده و می‌گه با این اختلاف هزینه ۱۰ هزار درصدی و سیستم خفن کَشینگ توکن‌ها، رفتن سراغ مدل‌های سنگین برای ۹۰ درصد کارهای برنامه‌نویسی چیزی جز دور ریختن پول نیست.\n\nچرا مهمه؟ چون نشون می‌ده هوش مصنوعی داره با سرعت نور اون‌قدر ارزون و در دسترس می‌شه که دیگه لازم نیست برای توسعه نرم‌افزار جیبت رو خالی کنی.",
+  "date": "2026-08-16T03:59:42+00:00"
+ },
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/analogalok/status/2088572972361724222",
+   "domain": "x.com",
+   "author": {
+    "name": "Alok",
+    "handle": "analogalok",
+    "avatar": "https://pbs.twimg.com/profile_images/2055727708261474304/tUAKpN50_200x200.jpg"
+   },
+   "text": "we officially hit the $0 cost per task era.\n\nintelligence is commoditizing way faster than anyone expected. \n\nwhen OpenCode + Gemini3.7 flash (high) is sitting at $0.00 and DeepSeek is $0.07, burning $11 per task on frontier models in production is financial negligence for 90% of dev workflows.\n\nbenchmark quality gaps don’t matter when the cost delta is literally 10,000%.\n\nthe math gets wild when you check raw token pricing:\n\n- Gemini 3.7 Flash: $0.75 in / $3.75 out\n- DeepSeek V4 Flash: $0.14 in / $0.28 out (cache miss)\n\n(deepseek $0.0028/m input tokens with cache hit)\n\nfor Gemini to land at $0.00 vs DeepSeek’s $0.07, either Google's prompt caching hit rate + token efficiency is completely cracked, or AA hit a rounding artifact.\n\nwhat’s your daily driver stack right now?",
+   "date": 1786789575,
+   "media": [
+    {
+     "type": "image",
+     "src": "https://pbs.twimg.com/media/HPwZmFIbQAA7r-F.jpg?name=orig",
+     "ratio": 0.7952
+    }
+   ],
+   "links": []
+  }
+ ],
+ "article": {
+  "title": "این دوستمون آلوک تو توییتر یه آمار مشتی داده و می‌گه رسماً وارد دوره تسک‌های تقریباً مجانی توی هوش مصنوعی شدیم",
+  "source_title": "we officially hit the $0 cost per task era.",
+  "body": [
+   "رفیق، این دوستمون آلوک تو توییتر یه آمار مشتی داده و می‌گه رسماً وارد دوره تسک‌های تقریباً مجانی توی هوش مصنوعی شدیم. قضیه اینه که اجرای کارها با ترکیب OpenCode و جمینای ۳.۷ فلش عملاً صفر دلار و با دیپ‌سیک حدود ۷ سنت خرج داره، در حالی که هنوز یه عده واسه هر تسک ۱۱ دلار پای مدل‌های گرون‌قیمت هدر می‌دن. طرف حساب‌کتاب کرده و می‌گه با این اختلاف هزینه ۱۰ هزار درصدی و سیستم خفن کَشینگ توکن‌ها، رفتن سراغ مدل‌های سنگین برای ۹۰ درصد کارهای برنامه‌نویسی چیزی جز دور ریختن پول نیست."
+  ],
+  "why": "چون نشون می‌ده هوش مصنوعی داره با سرعت نور اون‌قدر ارزون و در دسترس می‌شه که دیگه لازم نیست برای توسعه نرم‌افزار جیبت رو خالی کنی.",
+  "tags": [
+   "چین",
+   "گوگل"
+  ]
+ },
+ "updated": "2026-10-25T12:30:13+00:00",
+ "gholam_checked": "2026-10-25T12:30:13+00:00"
+}

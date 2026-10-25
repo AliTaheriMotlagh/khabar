@@ -2,16 +2,23 @@
  "id": 5911,
  "url": "https://t.me/dlmehr/5911",
  "date": "2026-10-15T15:17:19+00:00",
- "edited": true,
- "views": "211",
  "text": "https://fxtwitter.com/nvidiaai/status/2110749836450713896?s=52&t=F41Qa04r48Mef_j_XjBneQ",
  "forwarded_from": null,
  "digest": false,
  "hash": "dfb591767bcd",
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/nvidiaai/status/2110749836450713896?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+  "site": "🧵 Thread • FxTwitter",
+  "title": "NVIDIA AI (@NVIDIAAI)",
+  "description": "Meet NVIDIA Nemotron 3.5 Super VL\nOur new open model combines reasoning and tool use with text, image, document, and video understanding for long-running AI agents.\n120B total parameters with 12B active\n🧵",
+  "image": null
+ },
  "gholam": {
   "text": "رفیق، انویدیا دوباره دست به آچار شده و مدل متن‌باز خفنی به اسم Nemotron 3.5 Super VL رو داده بیرون که خوراکِ ساخت ایجنت‌های همه‌فن‌حریفه. این غول جدید در کل ۱۲۰ میلیارد پارامتر داره، ولی معماراش طوری ردیفش کردن که موقع کار فقط ۱۲ میلیارد پارامترش فعال میشه تا هم سریع بچرخه و هم الکی منابع نسوزونه. کارش هم فقط تحلیل متن نیست؛ از پس دیدن و فهمیدن تصویر، ویدیو و اسناد مختلف برمیاد و قشنگ بلده چطور استدلال کنه و ابزارهای دیجیتال رو برای مأموریت‌های طولانی به کار بگیره.\n\nاهمیتش اینه که یه مدل باز و بسیار پرزور اومده وسط میدون که به دولوپرها اجازه میده بدون هزینه‌های کمرشکن پردازشی، ایجنت‌های هوشمند چندوجهی و مستقل بسازن.",
   "date": "2026-10-15T15:17:41+00:00"
  },
+ "gholam_checked": "2026-10-24T23:35:34+00:00",
  "links": [
   {
    "kind": "tweet",
@@ -46,14 +53,6 @@
    "links": []
   }
  ],
- "media": [],
- "preview": {
-  "url": "https://fxtwitter.com/nvidiaai/status/2110749836450713896?s=52&t=F41Qa04r48Mef_j_XjBneQ",
-  "site": "🧵 Thread • FxTwitter",
-  "title": "NVIDIA AI (@NVIDIAAI)",
-  "description": "Meet NVIDIA Nemotron 3.5 Super VL\nOur new open model combines reasoning and tool use with text, image, document, and video understanding for long-running AI agents.\n120B total parameters with 12B active\n🧵",
-  "image": null
- },
  "article": {
   "title": "انویدیا دوباره دست به آچار شده و مدل متن‌باز خفنی به اسم Nemotron 3.5 Super VL رو داده بیرون که خوراکِ ساخت ایجنت‌های همه‌فن‌حریفه",
   "source_title": "Meet NVIDIA Nemotron 3.5 Super VL",
@@ -65,6 +64,5 @@
    "انویدیا"
   ]
  },
- "updated": "2026-10-24T23:35:34+00:00",
- "gholam_checked": "2026-10-24T23:35:34+00:00"
+ "updated": "2026-10-25T11:54:11+00:00"
 }

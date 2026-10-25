@@ -1,0 +1,67 @@
+{
+ "id": 4516,
+ "url": "https://t.me/dlmehr/4516",
+ "date": "2026-07-31T22:08:59+00:00",
+ "text": "https://fxtwitter.com/i/status/2083160304498958418",
+ "forwarded_from": "بابک قدری",
+ "digest": false,
+ "hash": "c13bbea5fa30",
+ "media": [],
+ "preview": {
+  "url": "https://x.com/i/status/2083160304498958418",
+  "site": "X (formerly Twitter)",
+  "title": "qilua (@qilua02) on X",
+  "description": "Wait, another ~50M tokens for free from Cline?!\n🤯\nYou get 4 models out of the box:\n- deepseek-v4-flash\n- GLM-5.2\n- step-3.7-flash\n- laguna-s-2.1\nNo API key or credit card needed!\nInstall: npm i -g cline\nWebsite: https://t.co/lpQJlICRBm",
+  "image": "https://cdn4.telesco.pe/file/hgtfqlWnFr8Zatn3ed2P6n0Igp4dl9OtZmNq7tAHN0c2te8BOpDPv0j9vcj8ygoht6AuOeRmtWdQSHm4Qkc3wZSI5Jr0g9Q-3xPA3ejg4RCqDqFq9OQRVVX6dYQukHMxvCoxja25lK5gBk1oc-L4NRjCrlGbB72vbLTr_nftY7xYy7U8Ck-RjzwePdYpumZ9TGn9GO1ipB0uRCrs5Peokx278nWWsVnwZdSuwS7bV-1iNyM1L3xlTEAWrl7_1-onThQ76mdJtJbUVRNbmdfMwO8AlE5fKrv4xc8wbemnWCanmSza0a3t6-5k2x_BLQ1LPdcbsoOjbsSsXfmvFGj4ag.jpg"
+ },
+ "gholam": {
+  "text": "داداشی، ابزار Cline حدود ۵۰ میلیون توکن رایگان رو هوا داده! ۴ تا مدل مشتی مثل DeepSeek V4 Flash و GLM-5.2 رو بدون نیاز به API Key یا کارت اعتباری ردیف کرده. زنگ در خونتم، هر کس تو رو بخواد باید منو بزنه.",
+  "date": "2026-07-31T22:13:23+00:00"
+ },
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/qilua02/status/2083160304498958418",
+   "domain": "x.com",
+   "author": {
+    "name": "qilua",
+    "handle": "qilua02",
+    "avatar": "https://pbs.twimg.com/profile_images/2063141199633158144/fsiDeRHn_200x200.jpg"
+   },
+   "text": "Wait, another ~50M tokens for free from Cline?! 🤯\n\nYou get 4 models out of the box:\n\n- deepseek-v4-flash\n- GLM-5.2\n- step-3.7-flash\n- laguna-s-2.1\n\nNo API key or credit card needed!\n\nInstall: npm i -g cline \nWebsite: https://cline.bot/",
+   "date": 1785499094,
+   "media": [
+    {
+     "type": "image",
+     "src": "https://pbs.twimg.com/media/HOje7diacAE36Mn.png?name=orig",
+     "ratio": 0.7792
+    }
+   ],
+   "links": [
+    "https://cline.bot/"
+   ]
+  },
+  {
+   "kind": "link",
+   "url": "https://cline.bot/",
+   "domain": "cline.bot",
+   "title": "Cline - AI Coding, Open Source and Open Choice",
+   "description": "Open-source AI coding agent with Plan/Act modes, MCP integration, and terminal-first workflows. Trusted by 11M+ developers worldwide.",
+   "image": "https://cline.bot/cline_og_img.png",
+   "site": "cline.bot"
+  }
+ ],
+ "article": {
+  "title": "ابزار Cline حدود ۵۰ میلیون توکن رایگان رو هوا داده",
+  "source_title": "Wait, another ~50M tokens for free from Cline?! 🤯",
+  "body": [
+   "داداشی، ابزار Cline حدود ۵۰ میلیون توکن رایگان رو هوا داده! ۴ تا مدل مشتی مثل DeepSeek V4 Flash و GLM-5.2 رو بدون نیاز به API Key یا کارت اعتباری ردیف کرده. زنگ در خونتم، هر کس تو رو بخواد باید منو بزنه."
+  ],
+  "why": null,
+  "tags": [
+   "چین"
+  ]
+ },
+ "updated": "2026-10-25T12:31:23+00:00",
+ "gholam_checked": "2026-10-25T12:31:23+00:00"
+}

@@ -1,0 +1,69 @@
+{
+ "id": 4510,
+ "url": "https://t.me/dlmehr/4510",
+ "date": "2026-07-31T19:32:34+00:00",
+ "text": "https://fxtwitter.com/spei04/status/2083247570202042789?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+ "forwarded_from": null,
+ "digest": false,
+ "hash": "124d965fce21",
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/spei04/status/2083247570202042789?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+  "site": "FxTwitter",
+  "title": "Serena Pei (@spei04)",
+  "description": "Today we’re launching Palette!\nBuilt by MIT AI researchers, Palette unifies fragmented creative tools into a single multimodal generation engine.\nNow, enterprise teams and content creators can generate, edit, and automate brand-consistent video, ads, and…",
+  "image": null
+ },
+ "gholam": {
+  "text": "داش سرنا پی با پالته اومده سراغ ابزارای خلاقانه، ویدیوی مارکتیگو می‌سازه هلو!",
+  "date": "2026-07-31T20:10:12+00:00"
+ },
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/spei04/status/2083247570202042789",
+   "domain": "x.com",
+   "author": {
+    "name": "Serena Pei",
+    "handle": "spei04",
+    "avatar": "https://pbs.twimg.com/profile_images/2100616273751359488/fRbw91DK_200x200.jpg"
+   },
+   "text": "Today we’re launching Palette!\n\nBuilt by MIT AI researchers, Palette unifies fragmented creative tools into a single multimodal generation engine.\nNow, enterprise teams and content creators can generate, edit, and automate brand-consistent video, ads, and training media entirely through natural language.\nSay goodbye to manual, one-off content grinds and hello to scalable media pipelines.\n\nLearn more at http://palettelabs.com and try us out at http://studio.palettelabs.com\n\n@_josephine_l_  @trypalette_ai",
+   "date": 1785519900,
+   "media": [
+    {
+     "type": "video",
+     "src": "https://video.twimg.com/amplify_video/2083225506720473088/vid/avc1/1280x720/mD7i9TIdVB3UlJIa.mp4?tag=29",
+     "poster": "https://pbs.twimg.com/amplify_video_thumb/2083225506720473088/img/LDFZIdW086YCw6R0.jpg",
+     "ratio": 0.5625,
+     "duration": 56.2,
+     "gif": false
+    }
+   ],
+   "links": [
+    "http://palettelabs.com",
+    "http://studio.palettelabs.com"
+   ]
+  },
+  {
+   "kind": "link",
+   "url": "http://palettelabs.com",
+   "domain": "palettelabs.com",
+   "title": "Media that sells, converts, educates, inspires, and entertains | Palette",
+   "description": "Generate, edit, and storyboard multimodal content on one canvas, shaped for every audience and format.",
+   "image": "https://palettelabs.com/media/palette-homepage-og.jpg",
+   "site": "Palette"
+  }
+ ],
+ "article": {
+  "title": "سرنا پی با پالته اومده سراغ ابزارای خلاقانه، ویدیوی مارکتیگو می‌سازه هلو",
+  "source_title": "Today we’re launching Palette!",
+  "body": [
+   "داش سرنا پی با پالته اومده سراغ ابزارای خلاقانه، ویدیوی مارکتیگو می‌سازه هلو!"
+  ],
+  "why": null,
+  "tags": []
+ },
+ "updated": "2026-10-25T12:31:25+00:00",
+ "gholam_checked": "2026-10-25T12:31:25+00:00"
+}

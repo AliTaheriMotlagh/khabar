@@ -1,0 +1,68 @@
+{
+ "id": 5650,
+ "url": "https://t.me/dlmehr/5650",
+ "date": "2026-10-05T18:22:28+00:00",
+ "text": "https://fxtwitter.com/cognition/status/2107165034463867001?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+ "forwarded_from": null,
+ "digest": false,
+ "hash": "155abdbc8c64",
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/cognition/status/2107165034463867001?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+  "site": "🧵 Thread • FxTwitter",
+  "title": "Cognition (@cognition)",
+  "description": "Introducing Dreaming: Across sessions, Devin builds a memory graph of how you like to work\nAt night Devin self-improves its memory to remove stale records and discover latent information\nWe are creating an OSS standard called Agent Memory Repo: https:/…",
+  "image": null
+ },
+ "gholam": {
+  "text": "رفیق، بچه‌های شرکت Cognition یه قابلیت جدید و باحال به اسم Dreaming واسه Devin، همون مهندس نرم‌افزار هوش مصنوعیشون، معرفی کردن که کارو حسابی تمیز می‌کنه. داستان از این قراره که دوین از این به بعد بین سشن‌های مختلف، یه گراف حافظه از قلق‌ها و سبک کاریت می‌سازه تا قشنگ دستش بیاد چطوری کد می‌زنی. جالب‌تر اینکه شبا تو خلوت خودش و پشت صحنه، انگار واقعاً خواب می‌بینه؛ یعنی حافظه‌شو غربال می‌کنه، اطلاعات سوخته و به درد نخور رو دور می‌ریزه و نکته‌های پنهان کار رو کشف می‌کنه. در کنار این، یه استاندارد متن‌باز هم به اسم Agent Memory Repo راه انداختن تا بقیه توسعه‌دهنده‌ها هم بتونن از این مدل مدیریت حافظه استفاده کنن.\n\nاهمیتش اینه که ایجنت‌های هوش مصنوعی بالاخره دارن از حالت آلزایمری و یک‌بارمصرف خارج می‌شن و با یه حافظه بلندمدت و خوداصلاح‌گر، نیازی نیست هر بار همه‌چیز رو از صفر براشون کوک کنی.",
+  "date": "2026-10-05T18:22:42+00:00"
+ },
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/cognition/status/2107165034463867001",
+   "domain": "x.com",
+   "author": {
+    "name": "Cognition",
+    "handle": "cognition",
+    "avatar": "https://pbs.twimg.com/profile_images/1765909640364068865/MvH-m0gd_200x200.jpg"
+   },
+   "text": "Introducing Dreaming: Across sessions, Devin builds a memory graph of how you like to work\n\nAt night Devin self-improves its memory to remove stale records and discover latent information\n\nWe are creating an OSS standard called Agent Memory Repo: https://cognition.com/agent-memory-repo",
+   "date": 1791222268,
+   "media": [
+    {
+     "type": "video",
+     "src": "https://video.twimg.com/amplify_video/2107159507671367680/vid/avc1/1280x720/1GkNVpDy2tpLL-AF.mp4?tag=29",
+     "poster": "https://pbs.twimg.com/amplify_video_thumb/2107159507671367680/img/WRaVdmwpRGmIdM6y.jpg",
+     "ratio": 0.5625,
+     "duration": 34.4,
+     "gif": false
+    }
+   ],
+   "links": [
+    "https://cognition.com/agent-memory-repo"
+   ]
+  },
+  {
+   "kind": "link",
+   "url": "https://cognition.com/agent-memory-repo",
+   "domain": "cognition.com",
+   "title": "Agent Memory Repo | Cognition",
+   "description": "Agent Memory Repo is an open spec for agent memory as a git repo: a MEMORY.md entry point, one-line entries with sources, and cross-links between files.",
+   "image": "https://cognition.com/agent-memory-repo/opengraph-image.png?opengraph-image.2d-06ikiwwjo4.png",
+   "site": "Cognition"
+  }
+ ],
+ "article": {
+  "title": "بچه‌های شرکت Cognition یه قابلیت جدید و باحال به اسم Dreaming واسه Devin، همون مهندس نرم‌افزار هوش مصنوعیشون، معرفی کردن که کارو حسابی تمیز می‌کنه",
+  "source_title": "Introducing Dreaming: Across sessions, Devin builds a memory graph of how you like to work",
+  "body": [
+   "رفیق، بچه‌های شرکت Cognition یه قابلیت جدید و باحال به اسم Dreaming واسه Devin، همون مهندس نرم‌افزار هوش مصنوعیشون، معرفی کردن که کارو حسابی تمیز می‌کنه. داستان از این قراره که دوین از این به بعد بین سشن‌های مختلف، یه گراف حافظه از قلق‌ها و سبک کاریت می‌سازه تا قشنگ دستش بیاد چطوری کد می‌زنی. جالب‌تر اینکه شبا تو خلوت خودش و پشت صحنه، انگار واقعاً خواب می‌بینه؛ یعنی حافظه‌شو غربال می‌کنه، اطلاعات سوخته و به درد نخور رو دور می‌ریزه و نکته‌های پنهان کار رو کشف می‌کنه. در کنار این، یه استاندارد متن‌باز هم به اسم Agent Memory Repo راه انداختن تا بقیه توسعه‌دهنده‌ها هم بتونن از این مدل مدیریت حافظه استفاده کنن."
+  ],
+  "why": "ایجنت‌های هوش مصنوعی بالاخره دارن از حالت آلزایمری و یک‌بارمصرف خارج می‌شن و با یه حافظه بلندمدت و خوداصلاح‌گر، نیازی نیست هر بار همه‌چیز رو از صفر براشون کوک کنی.",
+  "tags": []
+ },
+ "updated": "2026-10-25T12:24:50+00:00",
+ "gholam_checked": "2026-10-25T12:24:50+00:00"
+}

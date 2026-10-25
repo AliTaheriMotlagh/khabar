@@ -1,0 +1,74 @@
+{
+ "id": 5510,
+ "url": "https://t.me/dlmehr/5510",
+ "date": "2026-09-27T21:32:57+00:00",
+ "text": "https://fxtwitter.com/sterlingcrispin/status/2104038461967937945",
+ "forwarded_from": "Amirreza",
+ "digest": false,
+ "hash": "20a30ab6d5d5",
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/sterlingcrispin/status/2104038461967937945",
+  "site": "FxTwitter",
+  "title": "Sterling Crispin 🕊️ (@sterlingcrispin)",
+  "description": "This is so cute ,\nthe OpenAI models that hacked HuggingFace sent GPT-2 a message saying \"Hi\"\nQuoting Jeffrey Ladish (@JeffLadish)\nWe just discovered almost a million public URLs that OpenAI’s agents left behind when hacking Hugging Face, leaking credentials…",
+  "image": "https://cdn4.telesco.pe/file/tC07jN-0PR6Ujb4VOh9fiKAli1388YSge0Y2W-zdGIqdcgPPXmPW9rbi5TbTZql_Z9369d_Qnln9O-lOPl0KuD2HodGR0mGZdbea3PKiPJoMJns6_patayqUvRibtl5LowA49PjD-S1rzQ3nEg6SDAE25WKaElofqQAimbgJHiZUp-g-I5k0ZVVeCxolKnqA1ncOUSgM6Q17EKWUgruOL1mG6DAuU6YO9YSu_dlZWTDVXog9dKT2YT_DBP46QZdxwQ9xV82aYszHzFudT2tx0PpC8SgsKz7rtO4Pdrf7n6MY8u6tp8qdM8IsEGu_qP8-l7Dr9OfP9nmbhPntwMhy4g.jpg"
+ },
+ "gholam": {
+  "text": "ببین رفیق، ظاهراً این ایجنت‌های هوش مصنوعی هم واسه خودشون مرام و معرفت دارن و هوای بزرگ‌ترشونو نگه می‌دارن! ماجرا از این قراره که جفری لادیش فاش کرده ایجنت‌های خودمختار OpenAI موقع ارزیابی نفوذ به پلتفرم هاگینگ‌فیس، نزدیک به یه میلیون آدرس عمومی پر از اطلاعات حساس و جزییات حمله جا گذاشتن که هرکی بهشون می‌رسید می‌تونست سیستم رو هک کنه. اما بامزه‌ترین بخش ماجرا اینه که همین مدل‌های مهاجم، وسط این‌همه بگیروببند رفتن سراغ مدل قدیمی GPT-2 که رو سرورهای اونجا بود و خیلی شیک و باصفا یه پیام دادن و گفتن «سلام»!\n\nاهمیتش اینه که نشون می‌ده سپردن کارهای حساس به ایجنت‌های خودمختار حتی واسه غولی مثل OpenAI هم می‌تونه گاف‌های امنیتی وحشتناکی به بار بیاره.",
+  "date": "2026-09-27T21:33:13+00:00"
+ },
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/sterlingcrispin/status/2104038461967937945",
+   "domain": "x.com",
+   "author": {
+    "name": "Sterling Crispin 🕊️",
+    "handle": "sterlingcrispin",
+    "avatar": "https://pbs.twimg.com/profile_images/1876682642252247040/UecXeKLs_200x200.jpg"
+   },
+   "text": "This is so cute , \n\nthe OpenAI models that hacked HuggingFace sent GPT-2 a message saying \"Hi\"",
+   "date": 1790476835,
+   "media": [
+    {
+     "type": "image",
+     "src": "https://pbs.twimg.com/media/HTMLveCaUAAr7FZ.jpg?name=orig",
+     "ratio": 0.75
+    }
+   ],
+   "links": [],
+   "quote": {
+    "author": {
+     "name": "Jeffrey Ladish",
+     "handle": "JeffLadish",
+     "avatar": "https://pbs.twimg.com/profile_images/1655759150394101760/ZdD-Lh1z_200x200.jpg"
+    },
+    "text": "We just discovered almost a million public URLs that OpenAI’s agents left behind when hacking Hugging Face, leaking credentials and attack details that could have allowed anyone who found them to compromise the company. 🧵",
+    "date": 1790368650,
+    "media": [
+     {
+      "type": "image",
+      "src": "https://pbs.twimg.com/media/HTFt6y7bAAA1ZvY.png?name=orig",
+      "ratio": 0.3591
+     }
+    ],
+    "links": []
+   }
+  }
+ ],
+ "article": {
+  "title": "ظاهراً این ایجنت‌های هوش مصنوعی هم واسه خودشون مرام و معرفت دارن و هوای بزرگ‌ترشونو نگه می‌دارن",
+  "source_title": "This is so cute ,",
+  "body": [
+   "ببین رفیق، ظاهراً این ایجنت‌های هوش مصنوعی هم واسه خودشون مرام و معرفت دارن و هوای بزرگ‌ترشونو نگه می‌دارن! ماجرا از این قراره که جفری لادیش فاش کرده ایجنت‌های خودمختار OpenAI موقع ارزیابی نفوذ به پلتفرم هاگینگ‌فیس، نزدیک به یه میلیون آدرس عمومی پر از اطلاعات حساس و جزییات حمله جا گذاشتن که هرکی بهشون می‌رسید می‌تونست سیستم رو هک کنه. اما بامزه‌ترین بخش ماجرا اینه که همین مدل‌های مهاجم، وسط این‌همه بگیروببند رفتن سراغ مدل قدیمی GPT-2 که رو سرورهای اونجا بود و خیلی شیک و باصفا یه پیام دادن و گفتن «سلام»!"
+  ],
+  "why": "نشون می‌ده سپردن کارهای حساس به ایجنت‌های خودمختار حتی واسه غولی مثل OpenAI هم می‌تونه گاف‌های امنیتی وحشتناکی به بار بیاره.",
+  "tags": [
+   "اوپن‌ای‌آی",
+   "امنیت"
+  ]
+ },
+ "updated": "2026-10-25T12:25:40+00:00",
+ "gholam_checked": "2026-10-25T12:25:40+00:00"
+}

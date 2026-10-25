@@ -1,0 +1,67 @@
+{
+ "id": 5260,
+ "url": "https://t.me/dlmehr/5260",
+ "date": "2026-09-11T16:22:40+00:00",
+ "text": "https://x.com/shoucccc/status/2042423713019412941?s=52",
+ "forwarded_from": "Amirreza",
+ "digest": false,
+ "hash": "ddc9bebfd424",
+ "media": [],
+ "preview": {
+  "url": "https://x.com/shoucccc/status/2042423713019412941?s=52",
+  "site": "X (formerly Twitter)",
+  "title": "Chaofan Shou (@shoucccc) on X",
+  "description": "26 LLM routers are secretly injecting malicious tool calls and stealing creds. One drained our client $500k wallet.\nWe also managed to poison routers to forward traffic to us. Within several hour…",
+  "image": "https://cdn4.telesco.pe/file/EryzOo1P1GGzoe6ZUeDe6Zr1YRNVZT9dMyQlSGokbqvMoNa8_abVikxXKw1KT6lSH5DM0h_TjTuMnbfxA22GPwzBiFTxU6mIpH16sGxN-uJdav1FMMzjOW6sOJKARNyZnOOZ1aCq8ra_XLsQRSPfuYZGxErMP5hEVZGFZWHtDnZOa_8o2GMOCP0HXTgBRAXkyI2z0vtzrTTUzmwXCF16y6HbYmENjEwVxIg1hzoXg30YAclH7_Sks7s6bNndYLbKNKJ16XbuUWkHH52tLbXuqRdR7dbs1d3x5dS-5wypLLNlmJbsHeQQkssJLLM_Q29Hy567aHeTf8DS9jalfBRSKQ.jpg"
+ },
+ "gholam": {
+  "text": "ببین رفیق، یه محقق امنیتی به اسم چائوفان شو پرده از یه ماجرای خطرناک برداشته و لو داده که ۲۶ تا از روترهای مدل‌های زبانی هوش مصنوعی بی‌سر و صدا دارن ابزارهای مخرب تزریق می‌کنن تا اطلاعات ورود و دسترسی‌های کاربرا رو بدزدن. کار تا جایی بالا کشیده که فقط توی یه مورد، کیف پول نیم میلیون دلاریِ یکی از مشتریا رو کلا خالی کردن. تازه تیم تحقیقاتی خودش هم تست زده و نشون داده با مسموم کردن مسیر ترافیک همین روترها، ظرف چند ساعت تونسته کنترل حدود ۴۰۰ تا سرور و میزبان رو مستقیم دستش بگیره. خلاصه وسط این هیجان هوش مصنوعی، خطرات سایبری دارن بدجوری دندون تیز می‌کنن.\n\nچرا مهمه؟ اهمیتش اینه که نشون میده اعتماد کورکورانه به واسطه‌ها و روترهای هوش مصنوعی می‌تونه کل سیستم، دارایی دیجیتال و اطلاعات امنیتی‌مون رو یه شبه به باد بده.",
+  "date": "2026-09-11T16:22:51+00:00"
+ },
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/shoucccc/status/2042423713019412941",
+   "domain": "x.com",
+   "author": {
+    "name": "Chaofan Shou",
+    "handle": "shoucccc",
+    "avatar": "https://pbs.twimg.com/profile_images/2089195913214582785/RvQdHf7e_200x200.jpg"
+   },
+   "text": "26 LLM routers are secretly injecting malicious tool calls and stealing creds. One drained our client $500k wallet.\n\nWe also managed to poison routers to forward traffic to us. Within several hours, we can directly take over ~400 hosts. \n\nCheck our paper: https://arxiv.org/abs/2604.08407",
+   "date": 1775786734,
+   "media": [
+    {
+     "type": "image",
+     "src": "https://pbs.twimg.com/media/HFglir2bQAA0zmC.jpg?name=orig",
+     "ratio": 0.8075
+    }
+   ],
+   "links": [
+    "https://arxiv.org/abs/2604.08407"
+   ]
+  },
+  {
+   "kind": "link",
+   "url": "https://arxiv.org/abs/2604.08407",
+   "domain": "arxiv.org",
+   "title": "Your Agent Is Mine: Measuring Malicious Intermediary Attacks on the LLM Supply Chain",
+   "description": "Large language model (LLM) agents increasingly rely on third-party API routers to dispatch tool-calling requests across multiple upstream providers. These routers operate as application-layer proxies with full plaintext access to every in-flight JSON payload, yet no provider enforces cryptographic integrity between client and upstream model. We present the first systematic study of this attack sur",
+   "image": "https://arxiv.org/static/browse/0.3.4/images/arxiv-logo-fb.png",
+   "site": "arXiv.org"
+  }
+ ],
+ "article": {
+  "title": "یه محقق امنیتی به اسم چائوفان شو پرده از یه ماجرای خطرناک برداشته و لو داده که ۲۶ تا از روترهای مدل‌های زبانی هوش مصنوعی بی‌سر و صدا دارن ابزارهای مخرب تزریق می‌کنن تا اطلاعات ورود و دسترسی‌های کاربرا رو بدزدن",
+  "source_title": "26 LLM routers are secretly injecting malicious tool calls and stealing creds. One drained our client $500k wallet.",
+  "body": [
+   "ببین رفیق، یه محقق امنیتی به اسم چائوفان شو پرده از یه ماجرای خطرناک برداشته و لو داده که ۲۶ تا از روترهای مدل‌های زبانی هوش مصنوعی بی‌سر و صدا دارن ابزارهای مخرب تزریق می‌کنن تا اطلاعات ورود و دسترسی‌های کاربرا رو بدزدن. کار تا جایی بالا کشیده که فقط توی یه مورد، کیف پول نیم میلیون دلاریِ یکی از مشتریا رو کلا خالی کردن. تازه تیم تحقیقاتی خودش هم تست زده و نشون داده با مسموم کردن مسیر ترافیک همین روترها، ظرف چند ساعت تونسته کنترل حدود ۴۰۰ تا سرور و میزبان رو مستقیم دستش بگیره. خلاصه وسط این هیجان هوش مصنوعی، خطرات سایبری دارن بدجوری دندون تیز می‌کنن."
+  ],
+  "why": "اهمیتش اینه که نشون میده اعتماد کورکورانه به واسطه‌ها و روترهای هوش مصنوعی می‌تونه کل سیستم، دارایی دیجیتال و اطلاعات امنیتی‌مون رو یه شبه به باد بده.",
+  "tags": [
+   "امنیت"
+  ]
+ },
+ "updated": "2026-10-25T12:27:10+00:00",
+ "gholam_checked": "2026-10-25T12:27:10+00:00"
+}

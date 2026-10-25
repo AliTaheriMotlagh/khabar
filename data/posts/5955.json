@@ -2,16 +2,23 @@
  "id": 5955,
  "url": "https://t.me/dlmehr/5955",
  "date": "2026-10-18T14:32:57+00:00",
- "edited": false,
- "views": "230",
  "text": "https://fxtwitter.com/claudedevs/status/2111209208012210409?s=46",
  "forwarded_from": "Hossein Zakariaee",
  "digest": false,
  "hash": "11a81d33aba4",
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/claudedevs/status/2111209208012210409?s=46",
+  "site": "FxTwitter",
+  "title": "ClaudeDevs (@ClaudeDevs)",
+  "description": "We keep improving performance across Claude, and you may have noticed it starts responding sooner!\nClaude Code now gzips the conversation it sends on every turn, so it reaches the model faster. Cloud sessions also start up as soon as you start typing.",
+  "image": "https://cdn4.telesco.pe/file/XHFAKefE-6prfZ9ZmLD2jk98ToL6ulIoYKBhTj_aTH8-NUWdVIsN8tefTJmPv-S17yaRppjnfqLT7GiNuBlip9tB8IXo5yPp4TxlP2Zl_-dJkw2NQpvzI7sfT39lBWJH3tqgLTPrj2zjJgiUU7RHm83t5w6K2vMBghqWw5ct4sJK_0993AO5EBkAZjvbwJ2TwCVOVmptufjsKMhUIEegUpJRx2JF0-LBpRz1GaFXvmBW5SFUDCznH05lG8j5JVvI59sGSNMm4GZPKT6sT4HrzhNugat7KV__Y2O_Xq1o-x_WQvGSr2UYI8h_4TMItOYLITqRONhzs-jgLZcmmHnG1A.jpg"
+ },
  "gholam": {
   "text": "رفیق، بچه‌های کلود حسابی دست‌به‌کار شدن و سرعت جواب دادن کلود رو بردن بالا تا دیگه معطل نمونی. قضیه از این قراره که قابلیت Claude Code حالا کل مکالمات هر دور رو با فرمت gzip فشرده می‌کنه تا دیتا خیلی سریع‌تر به دست مدل برسه و پردازش بشه. از اون طرف هم نشست‌های ابری دقیقاً از همون لحظه‌ای که دستت می‌ره رو کیبورد و شروع به تایپ می‌کنی، پشت صحنه استارت می‌خورن و آماده به خدمت می‌شن.\n\nچرا مهمه؟ اهمیتش اینه که موقع کدزدن و چت، تاخیر زمانی به حداقل می‌رسه و کار با هوش مصنوعی برات برق‌آسا و روون‌تر تموم می‌شه.",
   "date": "2026-10-18T14:33:08+00:00"
  },
+ "gholam_checked": "2026-10-24T23:11:45+00:00",
  "links": [
   {
    "kind": "tweet",
@@ -43,18 +50,6 @@
    "links": []
   }
  ],
- "media": [],
- "preview": {
-  "url": "https://fxtwitter.com/claudedevs/status/2111209208012210409?s=46",
-  "site": "FxTwitter",
-  "title": "ClaudeDevs (@ClaudeDevs)",
-  "description": "We keep improving performance across Claude, and you may have noticed it starts responding sooner!\nClaude Code now gzips the conversation it sends on every turn, so it reaches the model faster. Cloud sessions also start up as soon as you start typing.",
-  "image": {
-   "src": "media/5955/preview.webp",
-   "width": 800,
-   "height": 450
-  }
- },
  "article": {
   "title": "بچه‌های کلود حسابی دست‌به‌کار شدن و سرعت جواب دادن کلود رو بردن بالا تا دیگه معطل نمونی",
   "source_title": "We keep improving performance across Claude, and you may have noticed it starts responding sooner!",
@@ -66,6 +61,5 @@
    "آنتروپیک"
   ]
  },
- "updated": "2026-10-24T23:11:45+00:00",
- "gholam_checked": "2026-10-24T23:11:45+00:00"
+ "updated": "2026-10-25T11:54:09+00:00"
 }

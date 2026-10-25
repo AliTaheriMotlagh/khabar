@@ -1,0 +1,57 @@
+{
+ "id": 4908,
+ "url": "https://t.me/dlmehr/4908",
+ "date": "2026-08-24T16:46:06+00:00",
+ "text": "https://fxtwitter.com/nvidia/status/2091904062077694153",
+ "forwarded_from": "Parsa Razavi",
+ "digest": false,
+ "hash": "351ed9c2c820",
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/nvidia/status/2091904062077694153",
+  "site": "🧵 Thread • FxTwitter",
+  "title": "NVIDIA (@nvidia)",
+  "description": "📢\nFirst ever on-silicon NVIDIA Vera Rubin performance measured on how agents actually run.\n⚡\nUp to 30x more throughput per megawatt and up to 35x lower token cost than GB300 NVL72.\nAgentic sessions are nothing like chat or summarization workloads. Context…",
+  "image": "https://cdn4.telesco.pe/file/pu8IO89KaUDzLkNG1bEFExJ4RlXmukAcbm3a8ww-J_2s0hmNzgiRq6wAo2nzCfpbTi2h9OGOVsDqlMJg71CTlo_BQfcfXt2l6Oih9FFSDtUgODndOJshcGxM9XsR9l6uNj79j5TtNnJpk_NVLUYotdlIdDV-_XNLGWBvZBFcMiIzD9V2sgdYpmVxCHti8ywMCPKsHaMi0r75Shn79ymp286W1IJpTYPz_IQhMAJJzVh7fMe0fe_0VmhCQ_zXcLtJ68jcpBXmYy8GiDU80XINDNaHgxXOPdA2apqIQBtbjFKD5fe6JyWDOsLyWBl8cl3sVH8dtc2FXl8_LFMvKJcd7Q.jpg"
+ },
+ "gholam": {
+  "text": "رفیق، انویدیا برای اولین بار نتایج تست واقعی چیپ جدیدش یعنی «ورا روبین» (Vera Rubin) رو روی اجرای ایجنت‌های هوش مصنوعی رو کرده و رسماً گردوخاک به پا کرده. ماجرا اینه که کاربری ایجنت‌ها اصلاً شبیه چت ساده نیست و زمینه‌ پردازش تو صدها مرحله به صدها هزار توکن می‌رسه، واسه همین عملکردش رو با سناریوی واقعی کدنویسی و مدل DeepSeek V4 Pro محک زدن. طبق آمار رسمی، این غول جدید تا ۳۰ برابر توان پردازشی بیشتری به ازای هر مگاوات مصرف برق میده و هزینه توکن‌ها رو نسبت به غول قبلی یعنی GB300 NVL72 تا ۳۵ برابر ارزون‌تر تموم می‌کنه.\n\nچرا مهمه؟ اهمیتش اینه که با این جهش وحشتناک تو راندمان و افت شدید هزینه‌ها، راه برای اجرای ایجنت‌های فوق‌العاده سنگین و پیچیده هوش مصنوعی توی مقیاس بزرگ حسابی هموار میشه.",
+  "date": "2026-08-24T16:46:26+00:00"
+ },
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/nvidia/status/2091904062077694153",
+   "domain": "x.com",
+   "author": {
+    "name": "NVIDIA",
+    "handle": "nvidia",
+    "avatar": "https://pbs.twimg.com/profile_images/1828904711124078593/SRvCZSfQ_200x200.jpg"
+   },
+   "text": "📢 First ever on-silicon NVIDIA Vera Rubin performance measured on how agents actually run. \n\n⚡ Up to 30x more throughput per megawatt and up to 35x lower token cost than GB300 NVL72.\n\nAgentic sessions are nothing like chat or summarization workloads. Context grows across hundreds of steps and can reach hundreds of thousands of tokens. \n\nNVIDIA measured Vera Rubin performance on @SemiAnalysis_ AgentX workload consisting of real-world agentic coding trajectories using DeepSeek V4 Pro model.",
+   "date": 1787583768,
+   "media": [
+    {
+     "type": "image",
+     "src": "https://pbs.twimg.com/media/HQfvqCAWwAIlpnl.jpg?name=orig",
+     "ratio": 0.5625
+    }
+   ],
+   "links": []
+  }
+ ],
+ "article": {
+  "title": "انویدیا برای اولین بار نتایج تست واقعی چیپ جدیدش یعنی «ورا روبین» (Vera Rubin) رو روی اجرای ایجنت‌های هوش مصنوعی رو کرده و رسماً گردوخاک به پا کرده",
+  "source_title": "📢 First ever on-silicon NVIDIA Vera Rubin performance measured on how agents actually run.",
+  "body": [
+   "رفیق، انویدیا برای اولین بار نتایج تست واقعی چیپ جدیدش یعنی «ورا روبین» (Vera Rubin) رو روی اجرای ایجنت‌های هوش مصنوعی رو کرده و رسماً گردوخاک به پا کرده. ماجرا اینه که کاربری ایجنت‌ها اصلاً شبیه چت ساده نیست و زمینه‌ پردازش تو صدها مرحله به صدها هزار توکن می‌رسه، واسه همین عملکردش رو با سناریوی واقعی کدنویسی و مدل DeepSeek V4 Pro محک زدن. طبق آمار رسمی، این غول جدید تا ۳۰ برابر توان پردازشی بیشتری به ازای هر مگاوات مصرف برق میده و هزینه توکن‌ها رو نسبت به غول قبلی یعنی GB300 NVL72 تا ۳۵ برابر ارزون‌تر تموم می‌کنه."
+  ],
+  "why": "اهمیتش اینه که با این جهش وحشتناک تو راندمان و افت شدید هزینه‌ها، راه برای اجرای ایجنت‌های فوق‌العاده سنگین و پیچیده هوش مصنوعی توی مقیاس بزرگ حسابی هموار میشه.",
+  "tags": [
+   "انویدیا",
+   "تراشه"
+  ]
+ },
+ "updated": "2026-10-25T12:29:22+00:00",
+ "gholam_checked": "2026-10-25T12:29:22+00:00"
+}

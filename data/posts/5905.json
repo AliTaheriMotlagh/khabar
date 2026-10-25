@@ -2,16 +2,23 @@
  "id": 5905,
  "url": "https://t.me/dlmehr/5905",
  "date": "2026-10-15T03:25:57+00:00",
- "edited": true,
- "views": "140",
  "text": "https://fxtwitter.com/azaliamirh/status/2110461349818155247?s=52&t=F41Qa04r48Mef_j_XjBneQ",
  "forwarded_from": null,
  "digest": false,
  "hash": "265ba6cffe06",
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/azaliamirh/status/2110461349818155247?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+  "site": "FxTwitter",
+  "title": "Azalia Mirhoseini (@Azaliamirh)",
+  "description": "Introducing Next-Concept Models (NCMs), a new paradigm for language generation that is significantly faster and more data efficient than diffusion models.\nHow it works:\n1) First we learn a series of compressed representations of text from coarse to fine…",
+  "image": "https://cdn4.telesco.pe/file/CC6vdH624lN6O1AyejBMgOFjEDZDbhBy-whMIcU7qRMuXKl1rw1FtFjvpoFvsfxySk4iraS25MS3XjTQ33N-TlkxMPDGnUejoBPR837o5cC176tHmZ87b34oIjijLhIfHyU9UEedSuV3oURe82tlNIQ6k2VY0w9DElEdhrzNyhvjJim6GrPySnY4BaTYyom3anT7U_4WRga_-LJkkMNR09DvDl9-9-jPrbzM3RfFPfFoMHEsL9LKE30_2Zv8dsORZNU_PwRZoYFpihRYvXCUimugVPvUDv1AiiV1sAhTT-249lmLvcEXys0jDCnw64eHrAyeRtpyv4xihqV5t89Lhw.jpg"
+ },
  "gholam": {
   "text": "ببین رفیق، دانشمندای هوش مصنوعی به سرپرستی آزالیا میرحسینی و تیمش یه معماری تر و تمیز رو کردن به اسم «مدل‌های مفهوم بعدی» یا همون NCM که قراره دودمان مدل‌های زبانی دیفیوژن رو به باد بده. قضیه از این قراره که این مدل به‌جای کلمه‌به‌کلمه نوشتن، متن رو از مفاهیم کلی تا جزئیات ریز فشرده می‌کنه و بعد موقع جواب دادن، این کدهای سلسله‌مراتبی رو خیلی شیک و موازی می‌چینه. نتیجه کار هم کف‌مرتب داره؛ تو کارایی مثل خلاصه‌سازی و ترجمه تا ۳۱ برابر سریع‌تر شده، ۳ تا ۵ برابر دیتای کمتری واسه آموزش می‌خواد و حتی تو استدلال و حل سودوکو هم رو دست مدل‌های پرادعای قبلی زده.\n\nاهمیتش اینه که این روش ترمز هزینه‌های سنگین و پردازش‌های کند رو می‌کشه و مسیر رو برای هوش مصنوعی فوق‌سریع و بی‌نهایت کم‌خرج هموار می‌کنه.",
   "date": "2026-10-15T03:26:15+00:00"
  },
+ "gholam_checked": "2026-10-24T23:35:35+00:00",
  "links": [
   {
    "kind": "tweet",
@@ -72,18 +79,6 @@
    }
   }
  ],
- "media": [],
- "preview": {
-  "url": "https://fxtwitter.com/azaliamirh/status/2110461349818155247?s=52&t=F41Qa04r48Mef_j_XjBneQ",
-  "site": "FxTwitter",
-  "title": "Azalia Mirhoseini (@Azaliamirh)",
-  "description": "Introducing Next-Concept Models (NCMs), a new paradigm for language generation that is significantly faster and more data efficient than diffusion models.\nHow it works:\n1) First we learn a series of compressed representations of text from coarse to fine…",
-  "image": {
-   "src": "media/5905/preview.webp",
-   "width": 800,
-   "height": 333
-  }
- },
  "article": {
   "title": "دانشمندای هوش مصنوعی به سرپرستی آزالیا میرحسینی و تیمش یه معماری تر و تمیز رو کردن به اسم «مدل‌های مفهوم بعدی» یا همون NCM که قراره دودمان مدل‌های زبانی دیفیوژن رو به باد بده",
   "source_title": "Introducing Next-Concept Models (NCMs), a new paradigm for language generation that is significantly faster and more data efficient than…",
@@ -93,6 +88,5 @@
   "why": "این روش ترمز هزینه‌های سنگین و پردازش‌های کند رو می‌کشه و مسیر رو برای هوش مصنوعی فوق‌سریع و بی‌نهایت کم‌خرج هموار می‌کنه.",
   "tags": []
  },
- "updated": "2026-10-24T23:35:35+00:00",
- "gholam_checked": "2026-10-24T23:35:35+00:00"
+ "updated": "2026-10-25T11:54:11+00:00"
 }

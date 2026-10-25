@@ -2,16 +2,23 @@
  "id": 5959,
  "url": "https://t.me/dlmehr/5959",
  "date": "2026-10-18T17:43:12+00:00",
- "edited": true,
- "views": "192",
  "text": "https://fxtwitter.com/trikcode/status/2111622265284546620?s=52&t=F41Qa04r48Mef_j_XjBneQ",
  "forwarded_from": null,
  "digest": false,
  "hash": "0dce042a5e0b",
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/trikcode/status/2111622265284546620?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+  "site": "FxTwitter",
+  "title": "Wise (@trikcode)",
+  "description": "notice..\n> Delta is blocking AI agents from booking flights\n> JPMorgan Chase and Charles Schwab block agents from accessing accounts\n> Yelp requires paid data licensing for agents\n> Amazon has blocked Grok bot and other shopping agents.\nthe internet is…",
+  "image": "https://cdn4.telesco.pe/file/CdJIUngYL8VEdl2DtBVcCP-wjnREPRU1XSBIKW5ldJglyCWmp8dzTITXPEccLOFwK4n9Bw2G7uFGNRaABfIdOURl-YjHHoR08_Pb0j1gf-a45GWyaIvAterWPFhDH4guJOXXH7b9GPHCIxk1LoeETUn-0PBH6unx8ISW-ERpXhwXbc35k6GlzJ9CE-o6qLMZrVxOw8tHZ7JEQNnOFGJkiCQndxQr7y91dv_GMANJEKE1d0KK2nUiLVMol86vHKhT-hy-isNaWtWXBYjJeL1DZeiKtZjU9GbtIgddwndD5RoJvf5ciiLW9bVgp3DK2Lj733PR5bCQmRhdewqsCslj_Q.jpg"
+ },
  "gholam": {
   "text": "رفیق، قضیه این هوش مصنوعی‌ها که قرار بود صفر تا صد کارامونو راست‌وریص کنن، بدجوری خورده به سنگ غول‌های اینترنت. از خطوط هوایی دلتا که جلو رزرو خودکار بلیت توسط بات‌ها رو سفت‌وسخت گرفته، تا گردن‌کلفت‌های مالی مثل جی‌پی مورگان و چارلز شواب که دسترسی ایجنت‌ها به حساب کاربرا رو تخته کردن. تازه آمازون هم ترمز امثال بات گروک و ایجنت‌های خرید رو کشیده و سایتی مثل یلپ هم گفته بدون سرفه‌کردن و دادن پول لایسنس، خواب دسترسی به داده‌ها رو ببینید. خلاصه اینترنت داره دور خودش سیم‌خاردار می‌کشه تا این هوش‌های مصنوعی نتونن سرخود تو وب بچرخن و ترافیک مستقیم کاربرا رو بقاپن.\n\nچرا مهمه؟ چون اون رویای شیرینِ ایجنت‌هایی که همه‌کار برامون انجام بدن، داره پشت دیوار انحصارطلبی و منافع مالی شرکت‌های بزرگ زمین‌گیر می‌شه.",
   "date": "2026-10-18T17:43:30+00:00"
  },
+ "gholam_checked": "2026-10-24T23:11:45+00:00",
  "links": [
   {
    "kind": "tweet",
@@ -35,18 +42,6 @@
    "links": []
   }
  ],
- "media": [],
- "preview": {
-  "url": "https://fxtwitter.com/trikcode/status/2111622265284546620?s=52&t=F41Qa04r48Mef_j_XjBneQ",
-  "site": "FxTwitter",
-  "title": "Wise (@trikcode)",
-  "description": "notice..\n> Delta is blocking AI agents from booking flights\n> JPMorgan Chase and Charles Schwab block agents from accessing accounts\n> Yelp requires paid data licensing for agents\n> Amazon has blocked Grok bot and other shopping agents.\nthe internet is…",
-  "image": {
-   "src": "media/5959/preview.webp",
-   "width": 200,
-   "height": 200
-  }
- },
  "article": {
   "title": "قضیه این هوش مصنوعی‌ها که قرار بود صفر تا صد کارامونو راست‌وریص کنن، بدجوری خورده به سنگ غول‌های اینترنت",
   "source_title": "notice..",
@@ -59,6 +54,5 @@
    "آمازون"
   ]
  },
- "updated": "2026-10-24T23:11:45+00:00",
- "gholam_checked": "2026-10-24T23:11:45+00:00"
+ "updated": "2026-10-25T11:54:09+00:00"
 }

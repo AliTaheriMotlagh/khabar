@@ -1,0 +1,59 @@
+{
+ "id": 4807,
+ "url": "https://t.me/dlmehr/4807",
+ "date": "2026-08-18T22:53:06+00:00",
+ "text": "https://fxtwitter.com/anthropicai/status/2089842387845804246?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+ "forwarded_from": null,
+ "digest": false,
+ "hash": "933d9194b530",
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/anthropicai/status/2089842387845804246?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+  "site": "🧵 Thread • FxTwitter",
+  "title": "Anthropic (@AnthropicAI)",
+  "description": "Many drugs work by binding to a specific target in the body and blocking or changing what it does. An important first step in the drug development process is designing a molecule that can bind tightly to its target. Traditionally, that's meant weeks or months…",
+  "image": null
+ },
+ "gholam": {
+  "text": "ببین رفیق، بچه‌های آنتروپیک زدن تو کار داروسازی و یه آزمایش خیلی خفن با هوش مصنوعی کلود انجام دادن. قضیه اینه که ساخت دارو نیاز به طراحی مولکول‌هایی داره که به هدف مدنظر تو بدن بچسبن، کاری که قبلاً ماه‌ها از دانشمندا وقت می‌گرفت تا بتونن پروتئین مناسب رو از صفر طراحی کنن. ولی حالا کلود فقط با یه پرامپت حساب‌شده از طرف یه متخصص، تونسته برای ۱۴ مورد از ۱۵ هدف آزمایش‌شده، به‌صورت کاملاً خودکار پروتئین‌های متصل‌شونده بسازه. تهش هم با همکاری دو تا شرکت آداپتیو بایو و توئیست بایوساینس، این پروتئین‌های طراحی‌شده رو توی آزمایشگاه واقعی ساختن و با موفقیت تستش کردن.\n\nچرا مهمه؟ اهمیتش اینه که هوش مصنوعی داره مسیر چندماهه و پرهزینه کشف و ساخت داروهای حیاتی رو به چند لحظه تبدیل می‌کنه.",
+  "date": "2026-08-18T22:53:18+00:00"
+ },
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/AnthropicAI/status/2089842387845804246",
+   "domain": "x.com",
+   "author": {
+    "name": "Anthropic",
+    "handle": "AnthropicAI",
+    "avatar": "https://pbs.twimg.com/profile_images/1798110641414443008/XP8gyBaY_200x200.jpg"
+   },
+   "text": "Many drugs work by binding to a specific target in the body and blocking or changing what it does. An important first step in the drug development process is designing a molecule that can bind tightly to its target. Traditionally, that's meant weeks or months of expert work per target, sifting through a large number of candidates to identify the few that work.\n\nWe wanted to test if Claude could successfully design novel protein binders from scratch (also called de novo design). With a protein design prompt written by a human expert, Claude autonomously designed protein binders against 14 out of 15 targets.\n\nWe then worked with Adaptyv Bio and Twist Bioscience, who independently built and tested the proteins Claude designed.",
+   "date": 1787092227,
+   "media": [
+    {
+     "type": "video",
+     "src": "https://video.twimg.com/amplify_video/2089839233309773824/vid/avc1/1280x720/nHWgl750hpZfMNMd.mp4?tag=29",
+     "poster": "https://pbs.twimg.com/media/HQKU_NGbsAENp-_.jpg",
+     "ratio": 0.5625,
+     "duration": 11,
+     "gif": false
+    }
+   ],
+   "links": []
+  }
+ ],
+ "article": {
+  "title": "بچه‌های آنتروپیک زدن تو کار داروسازی و یه آزمایش خیلی خفن با هوش مصنوعی کلود انجام دادن",
+  "source_title": "Many drugs work by binding to a specific target in the body and blocking or changing what it does. An important first step in the drug…",
+  "body": [
+   "ببین رفیق، بچه‌های آنتروپیک زدن تو کار داروسازی و یه آزمایش خیلی خفن با هوش مصنوعی کلود انجام دادن. قضیه اینه که ساخت دارو نیاز به طراحی مولکول‌هایی داره که به هدف مدنظر تو بدن بچسبن، کاری که قبلاً ماه‌ها از دانشمندا وقت می‌گرفت تا بتونن پروتئین مناسب رو از صفر طراحی کنن. ولی حالا کلود فقط با یه پرامپت حساب‌شده از طرف یه متخصص، تونسته برای ۱۴ مورد از ۱۵ هدف آزمایش‌شده، به‌صورت کاملاً خودکار پروتئین‌های متصل‌شونده بسازه. تهش هم با همکاری دو تا شرکت آداپتیو بایو و توئیست بایوساینس، این پروتئین‌های طراحی‌شده رو توی آزمایشگاه واقعی ساختن و با موفقیت تستش کردن."
+  ],
+  "why": "اهمیتش اینه که هوش مصنوعی داره مسیر چندماهه و پرهزینه کشف و ساخت داروهای حیاتی رو به چند لحظه تبدیل می‌کنه.",
+  "tags": [
+   "آنتروپیک"
+  ]
+ },
+ "updated": "2026-10-25T12:29:58+00:00",
+ "gholam_checked": "2026-10-25T12:29:58+00:00"
+}

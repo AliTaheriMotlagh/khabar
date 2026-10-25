@@ -1,0 +1,57 @@
+{
+ "id": 5102,
+ "url": "https://t.me/dlmehr/5102",
+ "date": "2026-09-02T15:33:50+00:00",
+ "text": "https://fxtwitter.com/kimmonismus/status/2095168773800026279?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+ "forwarded_from": null,
+ "digest": false,
+ "hash": "c83576ddb094",
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/kimmonismus/status/2095168773800026279?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+  "site": "🧵 Thread • FxTwitter",
+  "title": "Chubby ♨️ (@kimmonismus)",
+  "description": "Gemini 3.8 Flash benchmarks. And holy cow! Flash outperforms 5.6 sol and opus 5 on terminal bench 2.1, HLE and much more.\nGoogle is back!",
+  "image": "https://cdn4.telesco.pe/file/T4LZngJiZ7me-H-PASrSIeObBxCy33Djq9UdLSSSxV-G70Q88uvLCyPIW6hy6zmYfMNxJ22PYQuZK_FBrZEwSulfimlQ2TFYFznJaJASASap2pUvIWeGeJRSxPnfvsXPqQ_DKEHo936Q2jBk3PjNW_QD-mJH4yZL1qETPoONscAfIu6C_etxrqh1yCclGk7yTId5XzDrojzjSgm8TVcbX1ADI3Djs0T5RznUCSaqJZ5mh6joosnSlkUVDRKVwGfj6qNFmqPTAkYLuFcEpDuQw6gkSQoh3C1sjwzok0YucRKCgMnaPUrPD1SZXA2_3XByYnEDwMCvmKoEBV2P7MSgZA.jpg"
+ },
+ "gholam": {
+  "text": "ببین رفیق، بنچمارک‌های جدیدی از مدل Gemini 3.8 Flash گوگل منتشر شده که حسابی توی دنیای فناوری سر و صدا راه انداخته. این مدل سبک و فرز گوگل تونسته توی تست‌های فوق‌العاده سنگینی مثل terminal bench 2.1 و HLE، رقبای گردن‌کلفتی مثل Opus 5 رو جا بذاره و رکورد بهتری ثبت کنه. با این حساب به نظر می‌رسه گوگل دوباره با تمام قوا برگشته به میدون تا حسابی برای حریفاش خط و نشون بکشه.\n\nاهمیتش اینه که وقتی یه مدل جمع‌وجور و سریع بتونه غول‌های پرهزینه بازار رو شکست بده، یعنی سرعت و هزینه هوش مصنوعی برای کاربرها حسابی متحول می‌شه.",
+  "date": "2026-09-02T15:34:00+00:00"
+ },
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/kimmonismus/status/2095168773800026279",
+   "domain": "x.com",
+   "author": {
+    "name": "Chubby♨️",
+    "handle": "kimmonismus",
+    "avatar": "https://pbs.twimg.com/profile_images/1728327996375719936/RW7VBJfD_200x200.jpg"
+   },
+   "text": "Gemini 3.8 Flash benchmarks. And holy cow! Flash outperforms 5.6 sol and opus 5 on terminal bench 2.1, HLE and much more.\n\nGoogle is back!",
+   "date": 1788362136,
+   "media": [
+    {
+     "type": "image",
+     "src": "https://pbs.twimg.com/media/HROI5JBbEAA-6HQ.jpg?name=orig",
+     "ratio": 1.0111
+    }
+   ],
+   "links": []
+  }
+ ],
+ "article": {
+  "title": "بنچمارک‌های جدیدی از مدل Gemini 3.8 Flash گوگل منتشر شده که حسابی توی دنیای فناوری سر و صدا راه انداخته",
+  "source_title": "Gemini 3.8 Flash benchmarks. And holy cow! Flash outperforms 5.6 sol and opus 5 on terminal bench 2.1, HLE and much more.",
+  "body": [
+   "ببین رفیق، بنچمارک‌های جدیدی از مدل Gemini 3.8 Flash گوگل منتشر شده که حسابی توی دنیای فناوری سر و صدا راه انداخته. این مدل سبک و فرز گوگل تونسته توی تست‌های فوق‌العاده سنگینی مثل terminal bench 2.1 و HLE، رقبای گردن‌کلفتی مثل Opus 5 رو جا بذاره و رکورد بهتری ثبت کنه. با این حساب به نظر می‌رسه گوگل دوباره با تمام قوا برگشته به میدون تا حسابی برای حریفاش خط و نشون بکشه."
+  ],
+  "why": "وقتی یه مدل جمع‌وجور و سریع بتونه غول‌های پرهزینه بازار رو شکست بده، یعنی سرعت و هزینه هوش مصنوعی برای کاربرها حسابی متحول می‌شه.",
+  "tags": [
+   "گوگل",
+   "آنتروپیک"
+  ]
+ },
+ "updated": "2026-10-25T12:28:10+00:00",
+ "gholam_checked": "2026-10-25T12:28:10+00:00"
+}

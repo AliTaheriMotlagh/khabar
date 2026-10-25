@@ -1,0 +1,71 @@
+{
+ "id": 5203,
+ "url": "https://t.me/dlmehr/5203",
+ "date": "2026-09-08T18:07:26+00:00",
+ "text": "https://fxtwitter.com/polynoamial/status/2097381286193316203?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+ "forwarded_from": null,
+ "digest": false,
+ "hash": "b31e7c3d2130",
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/polynoamial/status/2097381286193316203?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+  "site": "FxTwitter",
+  "title": "Noam Brown (@polynoamial)",
+  "description": "I understand how, looking at today’s LLMs, people might think the only way we'd achieve NS is by using Levent’s/Tristan’s prompts. But I hope this plot conveys the model used is a huge step up from today’s LLMs. Nobody looked at Levent’s/Tristan’s prompts.…",
+  "image": "https://cdn4.telesco.pe/file/XOIQL98Ig_VHWWb5SID4o1_jdy7v5Xdsgk__13WnQ6lA0t843GrH1qIeOjtAW-5Bx3lUyweSrQ0cAnCHTGdIYfbRSTZcxE3Dhx66HIIpZQcf1xYFGHMuRElW9i94DmE7wPyzJjP2UsFuv5q85QJDTuKJ7VslnVBDrO5BsICqG-4n_vstMg4kwBv0mNr2WCZDaUbirJtHAWszJ7nmGi8mysyZyTVuyQM_4hOm0qWO4Xqf18b4urwZHT6mHnI37_Y52sENWwR0AjjazjD-heO84YLGxmJpfaVd5SIYaZO670PRxxHH0_aRn4a4B_GrarcgV3KJKSmgUKiabihvMMf_zQ.jpg"
+ },
+ "gholam": {
+  "text": "ببین رفیق، این روزا تو دنیای هوش مصنوعی سر خروجی‌های شگفت‌انگیز مدل‌های جدید کلی حرف و حدیث راه افتاده و یه عده شک برده بودن که شاید دست‌اندرکاران رفتن سراغ پرامپت‌های بچه‌هایی مثل لِوِنت و تریستان تا به این نتایج خفن برسن. حالا نوآم براون اومده وسط میدون و سینه سپر کرده که آقا مگه مغز بادوم خورده بودیم بریم دسترنج بقیه رو کش بریم؟ اون با نشون دادن داده‌ها و نمودارها محکم گفته که این مدل تازه یه سر و گردن از تمام ال‌ال‌ام‌های امروزی بالاتره و قدرتش زاییده ذات خودشه، نه زیرکی تو پرامپت‌نویسی. سباستین بوبک هم کنارش شفاف‌سازی کرده که ارتباطشون با لوِنت کاملاً با نیت خیر و هماهنگی بوده و هرگز قصد نداشتن حق و زحمت کسی رو تو مقاله‌ها پایمال کنن.\n\nاهمیتش اینه که نشون میده جهش‌های بعدی هوش مصنوعی حاصل پیشرفت واقعی معماری و قدرت مدل‌هاست نه حقه‌های مقطعی، هرچند حواشی و رقابت سر مالکیت معنوی تو این حوزه بدجوری بالا گرفته.",
+  "date": "2026-09-08T18:07:38+00:00"
+ },
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/polynoamial/status/2097381286193316203",
+   "domain": "x.com",
+   "author": {
+    "name": "Noam Brown",
+    "handle": "polynoamial",
+    "avatar": "https://pbs.twimg.com/profile_images/1872883170292457472/8ywVGO5M_200x200.jpg"
+   },
+   "text": "I understand how, looking at today’s LLMs, people might think the only way we'd achieve NS is by using Levent’s/Tristan’s prompts. But I hope this plot conveys the model used is a huge step up from today’s LLMs. Nobody looked at Levent’s/Tristan’s prompts. That’d be insane.",
+   "date": 1788889640,
+   "media": [
+    {
+     "type": "image",
+     "src": "https://pbs.twimg.com/media/HRtk2q3bIAATUBd.jpg?name=orig",
+     "ratio": 0.7588
+    }
+   ],
+   "links": [],
+   "quote": {
+    "author": {
+     "name": "Sebastien Bubeck",
+     "handle": "SebastienBubeck",
+     "avatar": "https://pbs.twimg.com/profile_images/1709609135321583616/6bXuF85D_200x200.jpg"
+    },
+    "text": "I would like to clarify a few things:\n\n1) The screenshot is my reaching out to Levent to coordinate our releases. I hope it’s clear from the message that we came in with the best possible intentions.\n\n2) I never ever asked for Levent to be removed from authorship of his own work (as indicated by my text). I was surprised to learn during the call with Tristan that they had only solved Euler and not Navier-Stokes; after learning this we brainstormed possible paths forward. One option we discussed was that Tristan could be the lead author on a rewrite of OpenAI’s Navier-Stokes proof. It is in that context that I said “it would be simpler if Levent was not an Anthropic employee” because I felt it would be inappropriate for an Anthropic employee to author OpenAI’s work. Importantly it was admitted that internal Anthropic models had been used in their proof of Euler blowup; I therefore felt I could not consider Levent to be an independent academic. Another option I wanted to propose (but got cut short) is to offer access to our internal model so that they could try to finish their proof and bridge the gap between Euler and NS. Again I did not know how to navigate giving access to internal OpenAI IP to an Anthropic employee.\n\n3) To reiterate it plainly: as my text clearly indicates, and as I said during our call, OpenAI's intention was to do everything possible to celebrate their mathematical achievements and the heroic efforts that they made on Euler. In the call I was immediately met with a litany of slander, including direct threats that if we were to announce Navier-Stokes he would immediately go to the press with a barrage of unfounded accusations. I refuted all these accusations but he replied “there is nothing you can do, I simply do not trust you”. I was confused why one would turn an incredible source for celebration (of their achievements!) into such bickering, which is when I said that I did not understand why one would risk their career [over unfounded accusations]. Genuinely, at that moment, I was trying to care for him and do a last ditch attempt to get a chance to give them all the credits that they deserve. I deeply apologize for this extremely poor choice of words, it is the opposite of what I was trying to convey. (I should say that I retracted them on the spot by the way.)\n \n4) Overall, on a personal level, it was incredibly difficult to have these conversations. Levent refused to attend any of the meetings despite my repeated asking. As Sholto Douglas said, there will need to be coordination between Anthropic and OpenAI in the future; I felt I was doing a proxy negotiation with Anthropic while the Anthropic employee refused to directly participate.",
+    "date": 1788889193,
+    "media": [
+     {
+      "type": "image",
+      "src": "https://pbs.twimg.com/media/HRtjEaTbcAA0uQ6.jpg?name=orig",
+      "ratio": 2.2444
+     }
+    ],
+    "links": []
+   }
+  }
+ ],
+ "article": {
+  "title": "این روزا تو دنیای هوش مصنوعی سر خروجی‌های شگفت‌انگیز مدل‌های جدید کلی حرف و حدیث راه افتاده و یه عده شک برده بودن که شاید دست‌اندرکاران رفتن سراغ پرامپت‌های بچه‌هایی مثل لِوِنت و تریستان تا به این نتایج خفن برسن",
+  "source_title": "I understand how, looking at today’s LLMs, people might think the only way we'd achieve NS is by using Levent’s/Tristan’s prompts. But I…",
+  "body": [
+   "ببین رفیق، این روزا تو دنیای هوش مصنوعی سر خروجی‌های شگفت‌انگیز مدل‌های جدید کلی حرف و حدیث راه افتاده و یه عده شک برده بودن که شاید دست‌اندرکاران رفتن سراغ پرامپت‌های بچه‌هایی مثل لِوِنت و تریستان تا به این نتایج خفن برسن. حالا نوآم براون اومده وسط میدون و سینه سپر کرده که آقا مگه مغز بادوم خورده بودیم بریم دسترنج بقیه رو کش بریم؟ اون با نشون دادن داده‌ها و نمودارها محکم گفته که این مدل تازه یه سر و گردن از تمام ال‌ال‌ام‌های امروزی بالاتره و قدرتش زاییده ذات خودشه، نه زیرکی تو پرامپت‌نویسی. سباستین بوبک هم کنارش شفاف‌سازی کرده که ارتباطشون با لوِنت کاملاً با نیت خیر و هماهنگی بوده و هرگز قصد نداشتن حق و زحمت کسی رو تو مقاله‌ها پایمال کنن."
+  ],
+  "why": "نشون میده جهش‌های بعدی هوش مصنوعی حاصل پیشرفت واقعی معماری و قدرت مدل‌هاست نه حقه‌های مقطعی، هرچند حواشی و رقابت سر مالکیت معنوی تو این حوزه بدجوری بالا گرفته.",
+  "tags": []
+ },
+ "updated": "2026-10-25T12:27:34+00:00",
+ "gholam_checked": "2026-10-25T12:27:34+00:00"
+}

@@ -1,0 +1,62 @@
+{
+ "id": 5189,
+ "url": "https://t.me/dlmehr/5189",
+ "date": "2026-09-08T16:01:45+00:00",
+ "text": "https://fxtwitter.com/wallstengine/status/2097310458164502880?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+ "forwarded_from": null,
+ "digest": false,
+ "hash": "9b0607607510",
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/wallstengine/status/2097310458164502880?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+  "site": "FxTwitter",
+  "title": "Wall St Engine (@wallstengine)",
+  "description": "QUALCOMM AND AMAZON PARTNER ON CUSTOM AI DATA CENTER CHIPS\nQualcomm $QCOM and Amazon have announced a multi-generational collaboration to develop customized silicon for AWS AI infrastructure, with an initial focus on large-scale AI inference.\nThe companies…",
+  "image": "https://cdn4.telesco.pe/file/RaSU5uE4L4v2qWBmpY35fYWIjQ_FYvem1IYlrSCxkJ5eMCMeX_pU1Vhp8tlRKSS6YmfAl5S_Ve38_P0xb-XJfbx_K30_qlaQ7z7WhNbn9bONonwuHulJ4SH2xgVOoKDh6DSW3WLXVdzf0U0xGwGRj7zT7oRaAArNeoqbguN0VhSVLJK263J2VKz6UX2HYLilvqNkGkcmjsWpfpPO5jZXQ7yqbagMp8KUvD5BObwEOTFjrvruInGCvdeAQsaYmCWcnIvHkFeq8RjsYFSxZEwFZgEuXxWcFuhtpkhIlyxPp9IButuOa_oP1MH_KKOc623U4jE7Fh50u_OaQjxOXbNWxw.jpg"
+ },
+ "gholam": {
+  "text": "رفیق، کوالکام و آمازون دست‌به‌یکی کردن و یه شراکت بلندمدت رو کلید زدن تا با هم تراشه‌های سفارشی هوش مصنوعی برای دیتاسنترهای غول‌پیکر AWS بسازن. تمرکز اولیه‌شون حسابی روی استنتاج مدل‌های بزرگ هوش مصنوعی و راه‌اندازی اتصالات نوری فوق‌سریع تا سقف ۱.۶ ترابیت بر ثانیه‌ست. از اون طرفم کوالکام قراره واسه طراحی تراشه‌هاش و کوتاه‌تر کردن چرخه‌ی تولید، بند و بساطش رو ببره روی زیرساخت‌های ابری آمازون و پلتفرم بدراک تا کارش حسابی دور بگیره.\n\nاهمیتش اینه که آمازون داره کم‌کم انحصار انویدیا رو دور می‌زنه و کوالکام هم با این حرکت رسماً جای پاش رو توی بازار پر از پول دیتاسنترهای هوش مصنوعی سفت می‌کنه.",
+  "date": "2026-09-08T16:01:59+00:00"
+ },
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/wallstengine/status/2097310458164502880",
+   "domain": "x.com",
+   "author": {
+    "name": "Wall St Engine",
+    "handle": "wallstengine",
+    "avatar": "https://pbs.twimg.com/profile_images/1691846947857178624/oZp5wB4r_200x200.jpg"
+   },
+   "text": "QUALCOMM AND AMAZON PARTNER ON CUSTOM AI DATA CENTER CHIPS\n\nQualcomm $QCOM and Amazon have announced a multi-generational collaboration to develop customized silicon for AWS AI infrastructure, with an initial focus on large-scale AI inference.\n\nThe companies will also work on advanced optical connectivity for data centers, including links up to 1.6T, using Qualcomm’s SerDes and optical DSP technology.\n\nQualcomm also plans to expand its use of AWS AI infrastructure, including Amazon Bedrock, for chip-design and EDA workloads as it looks to shorten development cycles.",
+   "date": 1788872754,
+   "media": [
+    {
+     "type": "image",
+     "src": "https://pbs.twimg.com/media/HRsku-BaAAAaGJM.jpg?name=orig",
+     "ratio": 1.0
+    },
+    {
+     "type": "image",
+     "src": "https://pbs.twimg.com/media/HRskvb3akAA0H97.png?name=orig",
+     "ratio": 1.0
+    }
+   ],
+   "links": []
+  }
+ ],
+ "article": {
+  "title": "کوالکام و آمازون دست‌به‌یکی کردن و یه شراکت بلندمدت رو کلید زدن تا با هم تراشه‌های سفارشی هوش مصنوعی برای دیتاسنترهای غول‌پیکر AWS بسازن",
+  "source_title": "QUALCOMM AND AMAZON PARTNER ON CUSTOM AI DATA CENTER CHIPS",
+  "body": [
+   "رفیق، کوالکام و آمازون دست‌به‌یکی کردن و یه شراکت بلندمدت رو کلید زدن تا با هم تراشه‌های سفارشی هوش مصنوعی برای دیتاسنترهای غول‌پیکر AWS بسازن. تمرکز اولیه‌شون حسابی روی استنتاج مدل‌های بزرگ هوش مصنوعی و راه‌اندازی اتصالات نوری فوق‌سریع تا سقف ۱.۶ ترابیت بر ثانیه‌ست. از اون طرفم کوالکام قراره واسه طراحی تراشه‌هاش و کوتاه‌تر کردن چرخه‌ی تولید، بند و بساطش رو ببره روی زیرساخت‌های ابری آمازون و پلتفرم بدراک تا کارش حسابی دور بگیره."
+  ],
+  "why": "آمازون داره کم‌کم انحصار انویدیا رو دور می‌زنه و کوالکام هم با این حرکت رسماً جای پاش رو توی بازار پر از پول دیتاسنترهای هوش مصنوعی سفت می‌کنه.",
+  "tags": [
+   "تراشه",
+   "آمازون"
+  ]
+ },
+ "updated": "2026-10-25T12:27:39+00:00",
+ "gholam_checked": "2026-10-25T12:27:39+00:00"
+}

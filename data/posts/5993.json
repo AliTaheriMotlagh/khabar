@@ -2,16 +2,23 @@
  "id": 5993,
  "url": "https://t.me/dlmehr/5993",
  "date": "2026-10-20T18:19:23+00:00",
- "edited": false,
- "views": "197",
  "text": "https://fxtwitter.com/make_robot_go/status/2112565146354860151/video/1?s=46",
  "forwarded_from": "Hossein Zakariaee",
  "digest": false,
  "hash": "c3ca0c00c0e5",
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/make_robot_go/status/2112565146354860151/video/1?s=46",
+  "site": "🧵 Thread • FxTwitter",
+  "title": "Ros Shinkle (@make_robot_go)",
+  "description": "Introducing Voxel, a droid butler made by Tuesday Labs.",
+  "image": null
+ },
  "gholam": {
   "text": "رفیق، ماجرا از این قراره که روز شینکل رسماً از یه ربات پیشخدمت خفن به اسم «واکسل» (Voxel) رونمایی کرده که دست‌پخت شرکت Tuesday Labs هستش. این دروید جدید قراره مثل یه پیشخدمت همه‌فن‌حریف تو کارای روزمره و خونه‌داری به آدما کمک کنه و یه جورایی بار زحمات رو از دوش صاحب‌خونه برداره. با اینکه جزئیات فنیش هنوز خیلی موشکافی نشده، ولی نشون می‌ده هوش مصنوعی و رباتیک دیگه بدجور وارد سبک زندگی و فضای خونه‌هامون شدن.\n\nاهمیتش اینه که کم‌کم رویای داشتن پیشخدمت‌های رباتیک و لوکس از فیلما داره میاد تو دنیای واقعی و لایف‌استایل آینده رو شکل می‌ده.",
   "date": "2026-10-20T18:19:37+00:00"
  },
+ "gholam_checked": "2026-10-24T23:03:15+00:00",
  "links": [
   {
    "kind": "tweet",
@@ -46,14 +53,6 @@
    "links": []
   }
  ],
- "media": [],
- "preview": {
-  "url": "https://fxtwitter.com/make_robot_go/status/2112565146354860151/video/1?s=46",
-  "site": "🧵 Thread • FxTwitter",
-  "title": "Ros Shinkle (@make_robot_go)",
-  "description": "Introducing Voxel, a droid butler made by Tuesday Labs.",
-  "image": null
- },
  "article": {
   "title": "ماجرا از این قراره که روز شینکل رسماً از یه ربات پیشخدمت خفن به اسم «واکسل» (Voxel) رونمایی کرده که دست‌پخت شرکت Tuesday Labs هستش",
   "source_title": "Introducing Voxel, a droid butler made by Tuesday Labs.",
@@ -65,6 +64,5 @@
    "رباتیک"
   ]
  },
- "updated": "2026-10-24T23:03:15+00:00",
- "gholam_checked": "2026-10-24T23:03:15+00:00"
+ "updated": "2026-10-25T11:53:59+00:00"
 }

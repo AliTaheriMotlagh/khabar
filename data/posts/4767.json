@@ -1,0 +1,57 @@
+{
+ "id": 4767,
+ "url": "https://t.me/dlmehr/4767",
+ "date": "2026-08-16T06:11:01+00:00",
+ "text": "https://fxtwitter.com/thsottiaux/status/2088866513008873560?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+ "forwarded_from": null,
+ "digest": false,
+ "hash": "22d527a9250c",
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/thsottiaux/status/2088866513008873560?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+  "site": "FxTwitter",
+  "title": "Tibo (@thsottiaux)",
+  "description": "On tokens and prices per token.\nI said I’d write more about this, so here goes: an OpenAI token != another model’s token. We compare AI prices in dollars per million tokens as if a token were a standardized unit, like a gram or a kilowatt-hour. It isn’t.…",
+  "image": "https://cdn4.telesco.pe/file/TWohyHsB8Zm-k64xnWPxmb4L2gamsnrXoajQ6WvGaUY6IS2hkKavbE5zZ7eYO620wetrBT_Zy8HSTzakVE0PUv_FhL-wDt_FcAvQvwGgGAWJqSX-YsNFLqlA8G9u1jfJJV778XTw30RWOtdOpsx2Uex8VtZi-v4nDp5Zzd2cHFq5OHeTGEe4bJPmzBLLQE7ArDmpBj_boFLjZtlRLomIfdCzkmVysXtu2Z08czlwl56E1t8Gx34KzfrTbBOy5Ppp6bcijHFjY_aNtzZBsqtcQk5jl2Q6-WSgm_dWDJyJiJsHJc1ZI-ak6NvhriO4OV37Qt24a1G58LncKRfbqwEhmg.jpg"
+ },
+ "gholam": {
+  "text": "ببین رفیق، این دوستمون دست گذاشته رو یه نکته‌ی خیلی ریز و به شدت فنی درباره قیمت مدل‌های هوش مصنوعی. خلاصه‌ی ماجرا اینه که مقایسه قیمت هوش مصنوعی بر اساس «هر میلیون توکن» بدجوری گول‌زننده‌ست، چون خرد کردن کلمات توی هر مدلی فرق داره و توکن‌ها مثل گرم یا کیلووات استاندارد نیستن، درست مثل پیتزایی که یکی هشت قاچش می‌کنه و یکی شونزده قاچ! مثلاً واسه یه متن یکسان، مدل GPT-5.6 حدود ۷۶۶ تا توکن سوزونده ولی کلود اوپوس ۵ نزدیک ۱۱۷۰ تا توکن مصرف کرده، یعنی حدود ۳۴.۵ درصد مصرف بیشتر برای همون نتیجه. ته داستان اینه که قیمت پایین‌ترِ هر توکن لزوماً به معنی قبض کمتر نیست و باید ببینی هزینه تموم‌شده برای رسیدن به خروجی نهایی و درست چقدر برات آب می‌خوره.\n\nچرا مهمه؟ اهمیتش اینه که موقع انتخاب مدل برای پروژه‌هامون فریب نرخ‌های ارزون روی کاغذ رو نخوریم و هزینه واقعی رو بر اساس نتیجه‌ی کار بسنجیم تا جیبمون بی‌خودی خالی نشه.",
+  "date": "2026-08-16T06:11:12+00:00"
+ },
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/thsottiaux/status/2088866513008873560",
+   "domain": "x.com",
+   "author": {
+    "name": "Tibo",
+    "handle": "thsottiaux",
+    "avatar": "https://pbs.twimg.com/profile_images/2093807917833281537/2yBgpwVV_200x200.jpg"
+   },
+   "text": "On tokens and prices per token.\n\nI said I’d write more about this, so here goes: an OpenAI token != another model’s token. We compare AI prices in dollars per million tokens as if a token were a standardized unit, like a gram or a kilowatt-hour. It isn’t. Different models use and produce the exact same text using different numbers of tokens, which means a lower price per token does not necessarily mean a lower bill.\n\nImagine two identical pizzas. One is cut into 8 slices at $2 each. The other is cut into 16 slices at $1.25 each. The second place advertises cheaper slices, but the whole pizza costs $20 instead of $16. Bummer ... your stomach doesn't actually care about the number of slices you just ate.\n\nI know you are hungry now, but back to tokens. In one small comparison spanning English, technical, multilingual, and numerical text, the tokenizer we use for GPT-5.6 Sol used 766 tokens versus an estimated 1,170 for Claude Opus 5. That's a very significant difference of about 34.5% fewer tokens. You can get the same exact text, but pay for all those extra tokens. The price per token doesn't really tell this story.\n\nEven correcting for tokenizer differences misses the bigger point. What actually matters is price per successful outcome, and for that you can use benchmarks as a starting point, but really you have to try it and measure on your own use cases.\n\nThat's all. May the tokens flow.",
+   "date": 1786859560,
+   "media": [
+    {
+     "type": "image",
+     "src": "https://pbs.twimg.com/media/HP0iLIobAAAH8GM.jpg?name=orig",
+     "ratio": 0.6667
+    }
+   ],
+   "links": []
+  }
+ ],
+ "article": {
+  "title": "این دوستمون دست گذاشته رو یه نکته‌ی خیلی ریز و به شدت فنی درباره قیمت مدل‌های هوش مصنوعی",
+  "source_title": "On tokens and prices per token.",
+  "body": [
+   "ببین رفیق، این دوستمون دست گذاشته رو یه نکته‌ی خیلی ریز و به شدت فنی درباره قیمت مدل‌های هوش مصنوعی. خلاصه‌ی ماجرا اینه که مقایسه قیمت هوش مصنوعی بر اساس «هر میلیون توکن» بدجوری گول‌زننده‌ست، چون خرد کردن کلمات توی هر مدلی فرق داره و توکن‌ها مثل گرم یا کیلووات استاندارد نیستن، درست مثل پیتزایی که یکی هشت قاچش می‌کنه و یکی شونزده قاچ! مثلاً واسه یه متن یکسان، مدل GPT-5.6 حدود ۷۶۶ تا توکن سوزونده ولی کلود اوپوس ۵ نزدیک ۱۱۷۰ تا توکن مصرف کرده، یعنی حدود ۳۴.۵ درصد مصرف بیشتر برای همون نتیجه. ته داستان اینه که قیمت پایین‌ترِ هر توکن لزوماً به معنی قبض کمتر نیست و باید ببینی هزینه تموم‌شده برای رسیدن به خروجی نهایی و درست چقدر برات آب می‌خوره."
+  ],
+  "why": "اهمیتش اینه که موقع انتخاب مدل برای پروژه‌هامون فریب نرخ‌های ارزون روی کاغذ رو نخوریم و هزینه واقعی رو بر اساس نتیجه‌ی کار بسنجیم تا جیبمون بی‌خودی خالی نشه.",
+  "tags": [
+   "آنتروپیک",
+   "اوپن‌ای‌آی"
+  ]
+ },
+ "updated": "2026-10-25T12:30:12+00:00",
+ "gholam_checked": "2026-10-25T12:30:12+00:00"
+}

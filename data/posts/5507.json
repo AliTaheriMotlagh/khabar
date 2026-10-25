@@ -1,0 +1,52 @@
+{
+ "id": 5507,
+ "url": "https://t.me/dlmehr/5507",
+ "date": "2026-09-27T08:31:32+00:00",
+ "text": "https://fxtwitter.com/deedydas/status/2103903382822089010?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+ "forwarded_from": null,
+ "digest": false,
+ "hash": "e6ae991322ca",
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/deedydas/status/2103903382822089010?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+  "site": "FxTwitter",
+  "title": "Deedy (@deedydas)",
+  "description": "The economics of a Neolab.\nA neolab is loosely defined as a startup of AI researchers who raises a lot of money pre-production to be able to finance GPU compute to take on a large AI problem.\nTo buy 1000 GB300s or ~14 NVL72 racks will set you back $125…",
+  "image": "https://cdn4.telesco.pe/file/VHoQu6PULNt9MJ_XIMFGfea1wuopqXJN2aBxI-XklO4nA4zC7mlDfvcge4ACesj3VDFkoRctdnEqc6606Q5gdwDtKQ0uwYvaYu5MPY5ZQ9V_wvkQT0IuJS2B5j3EYfGuRmcEjw7UiyBSDMiZoZ-YYwtAsqw3RJhEK-Dfh6Wk594h87W3tlPwJS2hDhJIniDBvavz0z59aiYxi67Xp8GkxvKcteB4XvJ1uVuNY4JbyLd-90pAGg8RF1BhOjEmxpnekHey9iKbXyIlKaAsQrkUen6sutf1Csbc8CYxQxksE4KjmTTHsbE8-ZMGrbwP6ECxiBfqmSGgiT79j_WE8ZXx3w.jpg"
+ },
+ "gholam": {
+  "text": "رفیق، دیدی اومده چرتکه انداخته و دخل‌وخرج این استارتاپ‌های هوش مصنوعی معروف به «نیولب» رو کشیده بیرون تا ببینیم این بازی اصلاً تهش صرفه داره یا نه. داستان از این قراره که فقط تهیه ۱۰۰۰ تا پردازنده GB300 واسه سه سال، حدود ۱۲۵ تا ۱۵۰ میلیون دلار آب می‌خوره و ۲ تا ۲.۵ مگاوات برق می‌بلعه، ولی تهش خروجیش مدلی در حد GPT-4 میشه که بازم از لبه فناوری عقبه. از اون طرف، برای صاف کردن هزینه ۱۰ میلیون دلاری آموزش یه مدل، باید دست‌کم ۱۰ تریلیون توکن با سود بالا بفروشی و گرافیک‌هات حتی یه ساعت هم نباید بیکار بمونن، وگرنه رسماً داری پول آتیش می‌زنی. واسه همین استدلال می‌کنه که این طفلی‌ها اگه نخوان زمین بخورن، یا باید برن سراغ دیتای انحصاری توی حوزه‌هایی مثل شیمی و رباتیک یا توی زمین‌هایی بازی کنن که غول‌های بزرگ فناوری اصلاً وقتشون رو براش تلف نمی‌کنن.\n\nچرا مهمه؟ نشون میده پشت زرق‌وبرق این مدل‌ها چه سیاه‌چاله مالی وحشتناکی خوابیده و استارتاپ‌ها بدون استراتژی مشخص، خیلی زود زیر خروارها هزینه پردازشی له میشن.",
+  "date": "2026-09-27T08:31:48+00:00"
+ },
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/deedydas/status/2103903382822089010",
+   "domain": "x.com",
+   "author": {
+    "name": "Deedy",
+    "handle": "deedydas",
+    "avatar": "https://pbs.twimg.com/profile_images/2016718977960120320/a3F0LOz6_200x200.jpg"
+   },
+   "text": "The economics of a Neolab.\n\nA neolab is loosely defined as a startup of AI researchers who raises a lot of money pre-production to be able to finance GPU compute to take on a large AI problem.\n\nTo buy 1000 GB300s or ~14 NVL72 racks will set you back $125-150M for 3yrs with 15-30% upfront. That’s about ~2-2.5MW. \n\nThats about enough to do 10^25 flops a quarter and get to a GPT-4 level model which is 1-2 OOMs off frontier for pretraining.\n\nIf you post-train on a great open source model, you have a better chance of getting to frontier. The risks are a) you need to spend millions on RL environments too and b) being lapped by another model release while being tied to a base model.\n\nFor this to payback, you need to give your customers a better and ideally cheaper inference service than a base model and serve them for long enough to recoup your large investment. Even at 50% margin on inference, to recoup $10M in training means serving ~10T tokens (!) if you price like Fable / Astra given a standard cache read / input / output split ($2/M blended). And you have to justify being better than a release like Opus 5.5 which is even cheaper. Often, you end up charging your customers a huge premium in terms of platform fees and compute fees on top of pure inference.\n\nMeanwhile, every hour you’re not utilizing your GPUs you are burning money so you typically resell this compute back to a broker or run inference for open models / resell spot instances. At below a ~60% utilization on spot, you will still lose money.\n\nAdd to that insane cost of talent.\n\nSo what can you do with the compute?\n- Not play the model game at all.\n- Play an entirely different model game (Jev, World Labs) that if big labs played, would either a) cannibalize their business or b) be incrementally not significant revenue c) would cause too much distraction from the main main thing\n- Acquire a proprietary data set (Peridodic Labs) in enough volume in a domain of usefulness to eclipse frontier quality. Often happens in robotics, biology, chemistry.\n\nIf you do overcome the challenge of building a model that is useful and well priced beyond big labs models, given the huge price of compute, you still need to play in an area where the revenue / compute ratio is signficant and market demand is large enough to payback your compute spend. \n\nIt is a difficult game.",
+   "date": 1790444629,
+   "media": [],
+   "links": []
+  }
+ ],
+ "article": {
+  "title": "دیدی اومده چرتکه انداخته و دخل‌وخرج این استارتاپ‌های هوش مصنوعی معروف به «نیولب» رو کشیده بیرون تا ببینیم این بازی اصلاً تهش صرفه داره یا نه",
+  "source_title": "The economics of a Neolab.",
+  "body": [
+   "رفیق، دیدی اومده چرتکه انداخته و دخل‌وخرج این استارتاپ‌های هوش مصنوعی معروف به «نیولب» رو کشیده بیرون تا ببینیم این بازی اصلاً تهش صرفه داره یا نه. داستان از این قراره که فقط تهیه ۱۰۰۰ تا پردازنده GB300 واسه سه سال، حدود ۱۲۵ تا ۱۵۰ میلیون دلار آب می‌خوره و ۲ تا ۲.۵ مگاوات برق می‌بلعه، ولی تهش خروجیش مدلی در حد GPT-4 میشه که بازم از لبه فناوری عقبه. از اون طرف، برای صاف کردن هزینه ۱۰ میلیون دلاری آموزش یه مدل، باید دست‌کم ۱۰ تریلیون توکن با سود بالا بفروشی و گرافیک‌هات حتی یه ساعت هم نباید بیکار بمونن، وگرنه رسماً داری پول آتیش می‌زنی. واسه همین استدلال می‌کنه که این طفلی‌ها اگه نخوان زمین بخورن، یا باید برن سراغ دیتای انحصاری توی حوزه‌هایی مثل شیمی و رباتیک یا توی زمین‌هایی بازی کنن که غول‌های بزرگ فناوری اصلاً وقتشون رو براش تلف نمی‌کنن."
+  ],
+  "why": "نشون میده پشت زرق‌وبرق این مدل‌ها چه سیاه‌چاله مالی وحشتناکی خوابیده و استارتاپ‌ها بدون استراتژی مشخص، خیلی زود زیر خروارها هزینه پردازشی له میشن.",
+  "tags": [
+   "استارتاپ",
+   "تراشه",
+   "اوپن‌ای‌آی"
+  ]
+ },
+ "updated": "2026-10-25T12:25:41+00:00",
+ "gholam_checked": "2026-10-25T12:25:41+00:00"
+}

@@ -1,0 +1,57 @@
+{
+ "id": 5749,
+ "url": "https://t.me/dlmehr/5749",
+ "date": "2026-10-08T16:59:18+00:00",
+ "text": "https://fxtwitter.com/Tu7uruu/status/2108164283477471309.",
+ "forwarded_from": "Amirreza",
+ "digest": false,
+ "hash": "30d2a3aaafdf",
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/Tu7uruu/status/2108164283477471309",
+  "site": "🧵 Thread • FxTwitter",
+  "title": "steven (@Tu7uruu)",
+  "description": "Neuphonic just released NeuDecide, an audio-first tiny decision model at only 43 MB, running on a single CPU thread!!\n> Speech directly to tool calls (no transcription needed)\n> Just 46 ms inference on an M3 MacBook\n> Runs fully offline, even on mobile…",
+  "image": null
+ },
+ "gholam": {
+  "text": "ببین رفیق، بچه‌های تیم Neuphonic یه مدل فسقلی و همه‌فن‌حریف به اسم NeuDecide دادن بیرون که کلاً ۴۳ مگابایته و روی یه دونه تِرِد سی‌پی‌یو معمولی مثل آب خوردن می‌چرخه! این فنچِ تیزهوش بدون اینکه اول صدات رو به متن تبدیل کنه، مستقیم خود صوت رو می‌فهمه و ابزار مورد نیازت رو صدا می‌زنه. سرعتش ان‌قدر بالاست که روی مک‌بوک M3 فقط تو ۴۶ میلی‌ثانیه کار رو جمع می‌کنه و کاملاً آفلاین روی گوشی و حتی بُرد رزبری‌پای هم بالا میاد. از نظر زهرچشم گرفتن هم تو بنچمارک معروف SLURP به دقت ۷۵.۵ درصدی رسیده که واسه مدلی با این جثه واقعاً برگ‌ریزونه.\n\nاهمیتش اینه که دستگاه‌های خونگی و گجت‌های هوشمند دیگه بدون اینترنت و سرورهای گرون‌قیمت، تو چشم‌به‌هم‌زدن به فرمون‌های صوتی ما جواب می‌دن.",
+  "date": "2026-10-08T16:59:33+00:00"
+ },
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/Tu7uruu/status/2108164283477471309",
+   "domain": "x.com",
+   "author": {
+    "name": "steven",
+    "handle": "Tu7uruu",
+    "avatar": "https://pbs.twimg.com/profile_images/1885067240178946048/4hc1NMf1_200x200.jpg"
+   },
+   "text": "Neuphonic just released NeuDecide, an audio-first tiny decision model at only 43 MB, running on a single CPU thread!! \n\n> Speech directly to tool calls (no transcription needed)\n> Just 46 ms inference on an M3 MacBook\n> Runs fully offline, even on mobile & Raspberry Pi\n> 75.5% tool accuracy on SLURP",
+   "date": 1791460507,
+   "media": [
+    {
+     "type": "video",
+     "src": "https://video.twimg.com/amplify_video/2108163680839856128/vid/avc1/1132x720/mQR8QVHMEu_FeqqU.mp4?tag=29",
+     "poster": "https://pbs.twimg.com/amplify_video_thumb/2108163680839856128/img/zUAiJUBzVrEfGGnh.jpg",
+     "ratio": 0.636,
+     "duration": 48.867,
+     "gif": false
+    }
+   ],
+   "links": []
+  }
+ ],
+ "article": {
+  "title": "بچه‌های تیم Neuphonic یه مدل فسقلی و همه‌فن‌حریف به اسم NeuDecide دادن بیرون که کلاً ۴۳ مگابایته و روی یه دونه تِرِد سی‌پی‌یو معمولی مثل آب خوردن می‌چرخه",
+  "source_title": "Neuphonic just released NeuDecide, an audio-first tiny decision model at only 43 MB, running on a single CPU thread!!",
+  "body": [
+   "ببین رفیق، بچه‌های تیم Neuphonic یه مدل فسقلی و همه‌فن‌حریف به اسم NeuDecide دادن بیرون که کلاً ۴۳ مگابایته و روی یه دونه تِرِد سی‌پی‌یو معمولی مثل آب خوردن می‌چرخه! این فنچِ تیزهوش بدون اینکه اول صدات رو به متن تبدیل کنه، مستقیم خود صوت رو می‌فهمه و ابزار مورد نیازت رو صدا می‌زنه. سرعتش ان‌قدر بالاست که روی مک‌بوک M3 فقط تو ۴۶ میلی‌ثانیه کار رو جمع می‌کنه و کاملاً آفلاین روی گوشی و حتی بُرد رزبری‌پای هم بالا میاد. از نظر زهرچشم گرفتن هم تو بنچمارک معروف SLURP به دقت ۷۵.۵ درصدی رسیده که واسه مدلی با این جثه واقعاً برگ‌ریزونه."
+  ],
+  "why": "دستگاه‌های خونگی و گجت‌های هوشمند دیگه بدون اینترنت و سرورهای گرون‌قیمت، تو چشم‌به‌هم‌زدن به فرمون‌های صوتی ما جواب می‌دن.",
+  "tags": []
+ },
+ "updated": "2026-10-25T12:24:09+00:00",
+ "gholam_checked": "2026-10-25T12:24:09+00:00"
+}

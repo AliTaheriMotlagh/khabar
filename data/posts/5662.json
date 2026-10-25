@@ -1,0 +1,70 @@
+{
+ "id": 5662,
+ "url": "https://t.me/dlmehr/5662",
+ "date": "2026-10-05T23:07:55+00:00",
+ "text": "https://fxtwitter.com/trycua/status/2107152124891246978?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+ "forwarded_from": null,
+ "digest": false,
+ "hash": "f96ca6f9399f",
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/trycua/status/2107152124891246978?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+  "site": "🧵 Thread • FxTwitter",
+  "title": "Cua (@trycua)",
+  "description": "1/ Agent cursors were never much to look at.\nToday we're introducing 6 new cursor motions in Cua Driver, each hand-crafted and perfectly timed. We studied how people aim a mouse, built 82 motions in a playground, and kept the best six.\nIt's all open source:…",
+  "image": null
+ },
+ "gholam": {
+  "text": "رفیق، تا حالا دیدی حرکت نشانگر ماوس تو ایجنت‌های هوش مصنوعی چقدر خشک و ماشینی بود؟ حالا بچه‌های تیم Cua تو پروژه Cua Driver دست‌به‌کار شدن و ۶ تا حرکت دست‌ساز و خیلی نرم برای ماوس معرفی کردن تا شبیه دست آدمیزاد بشه. داستان اینه که اول نشستن قشنگ رفتار واقعی آدما رو موقع تکون دادن ماوس زیر ذره‌بین گذاشتن، ۸۲ مدل حرکت آزمایشی ساختن و در نهایت بهترین ۶ تاش رو گلچین کردن. دمشونم گرم که کل این حرکات رو به‌صورت متن‌باز رو گیت‌هاب منتشر کردن تا بقیه هم بتونن تو پروژه‌هاشون ازش استفاده کنن.\n\nچرا مهمه؟ اهمیتش اینه که حرکات طبیعی‌تر ماوس باعث می‌شه ایجنت‌های هوش مصنوعی موقع انجام کارها کمتر توسط سیستم‌های ضدربات سایت‌ها شناسایی و مسدود بشن.",
+  "date": "2026-10-05T23:08:10+00:00"
+ },
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/trycua/status/2107152124891246978",
+   "domain": "x.com",
+   "author": {
+    "name": "Cua",
+    "handle": "trycua",
+    "avatar": "https://pbs.twimg.com/profile_images/2106056584929361920/XJWz9bZS_200x200.jpg"
+   },
+   "text": "1/ Agent cursors were never much to look at.\n\nToday we're introducing 6 new cursor motions in Cua Driver, each hand-crafted and perfectly timed. We studied how people aim a mouse, built 82 motions in a playground, and kept the best six.\n\nIt's all open source: https://github.com/trycua/cua",
+   "date": 1791219190,
+   "media": [
+    {
+     "type": "video",
+     "src": "https://video.twimg.com/amplify_video/2107150564920340480/vid/avc1/1280x720/TiBVikYeETUje-RM.mp4?tag=29",
+     "poster": "https://pbs.twimg.com/amplify_video_thumb/2107150564920340480/img/PZSmPqK-pHKq9c0F.jpg",
+     "ratio": 0.5625,
+     "duration": 30,
+     "gif": false
+    }
+   ],
+   "links": [
+    "https://github.com/trycua/cua"
+   ]
+  },
+  {
+   "kind": "link",
+   "url": "https://github.com/trycua/cua",
+   "domain": "github.com",
+   "title": "GitHub - trycua/cua: Scale computer-use 2.0 with open-source drivers, cross-OS sandboxes, and benchmarks for training, evaluation, and data generation.",
+   "description": "Scale computer-use 2.0 with open-source drivers, cross-OS sandboxes, and benchmarks for training, evaluation, and data generation. - trycua/cua",
+   "image": "https://opengraph.githubassets.com/0f07051bcb673104267a53af2c169052d1774fe3eec468140001dfbe04fb5499/trycua/cua",
+   "site": "GitHub"
+  }
+ ],
+ "article": {
+  "title": "تا حالا دیدی حرکت نشانگر ماوس تو ایجنت‌های هوش مصنوعی چقدر خشک و ماشینی بود",
+  "source_title": "1/ Agent cursors were never much to look at.",
+  "body": [
+   "رفیق، تا حالا دیدی حرکت نشانگر ماوس تو ایجنت‌های هوش مصنوعی چقدر خشک و ماشینی بود؟ حالا بچه‌های تیم Cua تو پروژه Cua Driver دست‌به‌کار شدن و ۶ تا حرکت دست‌ساز و خیلی نرم برای ماوس معرفی کردن تا شبیه دست آدمیزاد بشه. داستان اینه که اول نشستن قشنگ رفتار واقعی آدما رو موقع تکون دادن ماوس زیر ذره‌بین گذاشتن، ۸۲ مدل حرکت آزمایشی ساختن و در نهایت بهترین ۶ تاش رو گلچین کردن. دمشونم گرم که کل این حرکات رو به‌صورت متن‌باز رو گیت‌هاب منتشر کردن تا بقیه هم بتونن تو پروژه‌هاشون ازش استفاده کنن."
+  ],
+  "why": "اهمیتش اینه که حرکات طبیعی‌تر ماوس باعث می‌شه ایجنت‌های هوش مصنوعی موقع انجام کارها کمتر توسط سیستم‌های ضدربات سایت‌ها شناسایی و مسدود بشن.",
+  "tags": [
+   "کدنویسی"
+  ]
+ },
+ "updated": "2026-10-25T12:24:45+00:00",
+ "gholam_checked": "2026-10-25T12:24:45+00:00"
+}

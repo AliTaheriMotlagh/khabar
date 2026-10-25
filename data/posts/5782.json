@@ -1,0 +1,57 @@
+{
+ "id": 5782,
+ "url": "https://t.me/dlmehr/5782",
+ "date": "2026-10-09T20:45:40+00:00",
+ "text": "https://fxtwitter.com/primeintellect/status/2108645812591092114?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+ "forwarded_from": null,
+ "digest": false,
+ "hash": "9fa25afb34cf",
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/primeintellect/status/2108645812591092114?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+  "site": "🧵 Thread • FxTwitter",
+  "title": "Prime Intellect (@PrimeIntellect)",
+  "description": "Inference scaling works, but every agent eventually faces the same problem: its context window fills up.\nIn this essay, we argue the only scalable fix leads straight to swarms.",
+  "image": null
+ },
+ "gholam": {
+  "text": "رفیق، بچه‌های شرکت پرایم اینتلکت دست گذاشتن رو یه نقطه کور اساسی تو دنیای هوش مصنوعی و یه تحلیل مشتی دادن بیرون. حرف حسابشون اینه که هرچقدرم قدرت استنتاج و پردازش مدل‌ها رو ببریم بالا، آخرِ کار همه این ایجنت‌های هوشمند به یه بن‌بست می‌خورن و اونم پر شدن پنجره کانتکست یا همون ظرفیت حافظه‌شونه. حالا اینا استدلال کردن که تنها راه چاره واقعی و مقیاس‌پذیر واسه دور زدن این محدودیت، کوچ کردن سمت «سوآرم» یا همون کار گروهی و دسته‌جمعی لشکری از ایجنت‌هاست.\n\nچرا مهمه؟ چون نشون می‌ده آینده هوش مصنوعی قراره به جای یه مدل غول‌پیکرِ همه‌کاره، دست شبکه‌ای از عامل‌های هماهنگ باشه تا کار لنگ نمونه.",
+  "date": "2026-10-09T20:45:58+00:00"
+ },
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/PrimeIntellect/status/2108645812591092114",
+   "domain": "x.com",
+   "author": {
+    "name": "Prime Intellect",
+    "handle": "PrimeIntellect",
+    "avatar": "https://pbs.twimg.com/profile_images/1837605403359633411/Stj4eLIH_200x200.jpg"
+   },
+   "text": "Inference scaling works, but every agent eventually faces the same problem: its context window fills up.\n\nIn this essay, we argue the only scalable fix leads straight to swarms.",
+   "date": 1791575313,
+   "media": [
+    {
+     "type": "video",
+     "src": "https://video.twimg.com/amplify_video/2108640099655368704/vid/avc1/1280x720/G-MC4njJKDkX4WW7.mp4?tag=29",
+     "poster": "https://pbs.twimg.com/amplify_video_thumb/2108640099655368704/img/HCqYNlwjFjTv21Sb.jpg",
+     "ratio": 0.5625,
+     "duration": 10,
+     "gif": false
+    }
+   ],
+   "links": []
+  }
+ ],
+ "article": {
+  "title": "بچه‌های شرکت پرایم اینتلکت دست گذاشتن رو یه نقطه کور اساسی تو دنیای هوش مصنوعی و یه تحلیل مشتی دادن بیرون",
+  "source_title": "Inference scaling works, but every agent eventually faces the same problem: its context window fills up.",
+  "body": [
+   "رفیق، بچه‌های شرکت پرایم اینتلکت دست گذاشتن رو یه نقطه کور اساسی تو دنیای هوش مصنوعی و یه تحلیل مشتی دادن بیرون. حرف حسابشون اینه که هرچقدرم قدرت استنتاج و پردازش مدل‌ها رو ببریم بالا، آخرِ کار همه این ایجنت‌های هوشمند به یه بن‌بست می‌خورن و اونم پر شدن پنجره کانتکست یا همون ظرفیت حافظه‌شونه. حالا اینا استدلال کردن که تنها راه چاره واقعی و مقیاس‌پذیر واسه دور زدن این محدودیت، کوچ کردن سمت «سوآرم» یا همون کار گروهی و دسته‌جمعی لشکری از ایجنت‌هاست."
+  ],
+  "why": "چون نشون می‌ده آینده هوش مصنوعی قراره به جای یه مدل غول‌پیکرِ همه‌کاره، دست شبکه‌ای از عامل‌های هماهنگ باشه تا کار لنگ نمونه.",
+  "tags": []
+ },
+ "updated": "2026-10-25T12:23:57+00:00",
+ "gholam_checked": "2026-10-25T12:23:57+00:00"
+}

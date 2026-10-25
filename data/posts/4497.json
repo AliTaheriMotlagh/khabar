@@ -1,0 +1,68 @@
+{
+ "id": 4497,
+ "url": "https://t.me/dlmehr/4497",
+ "date": "2026-07-31T10:59:48+00:00",
+ "text": "https://fxtwitter.com/deepseek_ai/status/2083084415157022911?s=46",
+ "forwarded_from": "Hossein Zakariaee",
+ "digest": false,
+ "hash": "2212d1afb5a9",
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/deepseek_ai/status/2083084415157022911?s=46",
+  "site": "🧵 Thread • FxTwitter",
+  "title": "DeepSeek (@deepseek_ai)",
+  "description": "🚀\nDeepSeek-V4-Flash Official API is now LIVE in public beta!\n🔷\nWe’ve massively upgraded its Agent capabilities—benchmark scores are now far surpassing the V4-Pro-Preview. Check out the massive performance leap below!\n👇\n🔷\nThe official V4-Flash now natively…",
+  "image": "https://cdn4.telesco.pe/file/mMg-ynCfrDdsrJa8kO4dMmAKh9gjJisbo_4_oztX7znCtBikBL-jmIOhOg_BsvaVjQd5rk6hjJ5-auMhjHI50sotWcKnpSKrp5_6QBWelrt4Iz6Wpqkk13wx2tzEffNIN5sMLaaTyRu5iLYHfyN0TsFs6oDhTx217DMNvURFNupp56MSYpqE5xWWWyD04Ige98PNX25GSygK_kS5ugI0Bsa_E2xJcDIdzuAlO_vm8gKZY6Llf8F632oH9PW0F8TZfmWxkQvnAB2Gp2RPgl1CFBigNQ-QRZsAdaVSWUrsi6KthioAxJZuAN9TVYb9H-IRuwXIIKF1e93rqTCFXCXwDw.jpg"
+ },
+ "gholam": {
+  "text": "رفیق، دیپ‌سیک ای‌پای نسخه فلاش جدیدش رو عمومی کرد و قدرت ایجنت‌هاش رو حسابی برد بالا. می‌گن بنچمارک‌هاش حتی نسخه پرو قبلی رو هم جا گذاشته و قشنگ با ابزارهای کدنویسی جفت‌وجور شده. این یکی رو خدایی جمع‌وجور و رو هوا تحویل دادن.\nبند کفشتیم، گره بزن خفه شیم",
+  "date": "2026-07-31T11:02:06+00:00"
+ },
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/deepseek_ai/status/2083084415157022911",
+   "domain": "x.com",
+   "author": {
+    "name": "DeepSeek",
+    "handle": "deepseek_ai",
+    "avatar": "https://pbs.twimg.com/profile_images/1717417613775757312/Uk1zNOj4_200x200.jpg"
+   },
+   "text": "🚀 DeepSeek-V4-Flash Official API is now LIVE in public beta!\n\n🔷 We’ve massively upgraded its Agent capabilities—benchmark scores are now far surpassing the V4-Pro-Preview. Check out the massive performance leap below! 👇\n🔷 The official V4-Flash now natively supports the Responses API format and is fully adapted for Codex!\n\nCheck out the configuration details in our official API docs: https://api-docs.deepseek.com/quick_start/agent_integrations/codex",
+   "date": 1785481001,
+   "media": [
+    {
+     "type": "image",
+     "src": "https://pbs.twimg.com/media/HOiZba2aYAAozFz.jpg?name=orig",
+     "ratio": 0.551
+    }
+   ],
+   "links": [
+    "https://api-docs.deepseek.com/quick_start/agent_integrations/codex"
+   ]
+  },
+  {
+   "kind": "link",
+   "url": "https://api-docs.deepseek.com/quick_start/agent_integrations/codex/",
+   "domain": "api-docs.deepseek.com",
+   "title": "Integrate with Codex | DeepSeek API Docs",
+   "description": "Codex is an AI coding assistant from OpenAI. It talks to models via the Responses API, which the DeepSeek API natively supports.",
+   "image": "https://api-docs.deepseek.com/img/deepseek-social-card.jpeg",
+   "site": "api-docs.deepseek.com"
+  }
+ ],
+ "article": {
+  "title": "دیپ‌سیک ای‌پای نسخه فلاش جدیدش رو عمومی کرد و قدرت ایجنت‌هاش رو حسابی برد بالا",
+  "source_title": "🚀 DeepSeek-V4-Flash Official API is now LIVE in public beta!",
+  "body": [
+   "رفیق، دیپ‌سیک ای‌پای نسخه فلاش جدیدش رو عمومی کرد و قدرت ایجنت‌هاش رو حسابی برد بالا. می‌گن بنچمارک‌هاش حتی نسخه پرو قبلی رو هم جا گذاشته و قشنگ با ابزارهای کدنویسی جفت‌وجور شده. این یکی رو خدایی جمع‌وجور و رو هوا تحویل دادن.",
+   "بند کفشتیم، گره بزن خفه شیم"
+  ],
+  "why": null,
+  "tags": [
+   "چین"
+  ]
+ },
+ "updated": "2026-10-25T12:31:31+00:00",
+ "gholam_checked": "2026-10-25T12:31:31+00:00"
+}

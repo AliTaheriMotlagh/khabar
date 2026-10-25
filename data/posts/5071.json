@@ -1,0 +1,57 @@
+{
+ "id": 5071,
+ "url": "https://t.me/dlmehr/5071",
+ "date": "2026-09-01T17:14:07+00:00",
+ "text": "https://fxtwitter.com/aditabrm/status/2094812110903747005?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+ "forwarded_from": null,
+ "digest": false,
+ "hash": "d0ab0b7c2459",
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/aditabrm/status/2094812110903747005?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+  "site": "🧵 Thread • FxTwitter",
+  "title": "Adit (@aditabrm)",
+  "description": "Today we’re announcing r-1, our new document parsing model. It’s more accurate than our most powerful agentic OCR models, faster, and up to 6x cheaper.\nAt @reductoai, we spent two years building specialized models for complex visual layouts, tables spanning…",
+  "image": null
+ },
+ "gholam": {
+  "text": "رفیق بشنو از برو بچه‌های تیم Reducto AI که از مدل خفن جدیدشون به اسم r-1 برای پردازش و خوندن اسناد رونمایی کردن. این مدل جدید بعد دو سال کار تخصصی روی چیدمان‌های پیچیده، جدول‌های چندصفحه‌ای و خط‌خوردگی‌ها اومده و نرخ خطاش نسبت به غول‌های قبلی خودشون ۲۰ درصد کمتر شده. تازه فقط دقتش بالا نرفته، سرعتش هم بیشتر شده و تا ۶ برابر ارزون‌تر تموم میشه؛ یعنی صفحه‌ای فقط ۱ سنت پات درمیاد. قراره به‌زودی نسخه مینی و حالت خودکارش هم بیاد، و واسه اونایی هم که بخوان از سرویس‌های دیگه کوچ کنن تا ۵ هزار دلار اعتبار رایگان گذاشتن وسط.\n\nچرا مهمه؟ اهمیتش اینه که پردازش اسناد و جدول‌های پیچیده مالی و اداری که همیشه اشک هوش مصنوعی رو درمی‌آورد، حالا با دقت فوق‌العاده بالاتر و هزینه خیلی ناچیز ممکن شده.",
+  "date": "2026-09-01T17:14:30+00:00"
+ },
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/aditabrm/status/2094812110903747005",
+   "domain": "x.com",
+   "author": {
+    "name": "Adit",
+    "handle": "aditabrm",
+    "avatar": "https://pbs.twimg.com/profile_images/1736565449356161024/HHk0DNO7_200x200.jpg"
+   },
+   "text": "Today we’re announcing r-1, our new document parsing model. It’s more accurate than our most powerful agentic OCR models, faster, and up to 6x cheaper.\n\nAt @reductoai, we spent two years building specialized models for complex visual layouts, tables spanning multiple pages, and key formatting like strikethroughs. We then used everything we learned to build r-1, the first in a new generation of models designed to handle the hardest documents without multiplying cost.\n\nThis early preview delivers a 20% lower error rate than our most accurate legacy agentic models and will keep improving with new checkpoints over the next few weeks.\n\nAccuracy is only the beginning. r-1 preview is available at 1¢ per page all-in, with additional volume discounts as you scale. In the near term we’re also going to release r-1 mini, and an auto mode that intelligently selects the right approach for each page.\n\nIf you’re currently using another parser, we’re offering up to $5,000 in credits to evaluate and migrate. You can claim the migration offer and learn more about r-1 using the links in the comments.\n\nHappy parsing!",
+   "date": 1788277101,
+   "media": [
+    {
+     "type": "video",
+     "src": "https://video.twimg.com/amplify_video/2094811284923654145/vid/avc1/1280x720/GjG8S9nWBi1qXyJ6.mp4?tag=29",
+     "poster": "https://pbs.twimg.com/amplify_video_thumb/2094811284923654145/img/uFLG6vnWPibZLlPI.jpg",
+     "ratio": 0.5625,
+     "duration": 82.666,
+     "gif": false
+    }
+   ],
+   "links": []
+  }
+ ],
+ "article": {
+  "title": "بشنو از برو بچه‌های تیم Reducto AI که از مدل خفن جدیدشون به اسم r-1 برای پردازش و خوندن اسناد رونمایی کردن",
+  "source_title": "Today we’re announcing r-1, our new document parsing model. It’s more accurate than our most powerful agentic OCR models, faster, and up to…",
+  "body": [
+   "رفیق بشنو از برو بچه‌های تیم Reducto AI که از مدل خفن جدیدشون به اسم r-1 برای پردازش و خوندن اسناد رونمایی کردن. این مدل جدید بعد دو سال کار تخصصی روی چیدمان‌های پیچیده، جدول‌های چندصفحه‌ای و خط‌خوردگی‌ها اومده و نرخ خطاش نسبت به غول‌های قبلی خودشون ۲۰ درصد کمتر شده. تازه فقط دقتش بالا نرفته، سرعتش هم بیشتر شده و تا ۶ برابر ارزون‌تر تموم میشه؛ یعنی صفحه‌ای فقط ۱ سنت پات درمیاد. قراره به‌زودی نسخه مینی و حالت خودکارش هم بیاد، و واسه اونایی هم که بخوان از سرویس‌های دیگه کوچ کنن تا ۵ هزار دلار اعتبار رایگان گذاشتن وسط."
+  ],
+  "why": "اهمیتش اینه که پردازش اسناد و جدول‌های پیچیده مالی و اداری که همیشه اشک هوش مصنوعی رو درمی‌آورد، حالا با دقت فوق‌العاده بالاتر و هزینه خیلی ناچیز ممکن شده.",
+  "tags": []
+ },
+ "updated": "2026-10-25T12:28:22+00:00",
+ "gholam_checked": "2026-10-25T12:28:22+00:00"
+}

@@ -1,0 +1,27 @@
+{
+ "id": 4534,
+ "url": "https://t.me/dlmehr/4534",
+ "date": "2026-08-02T04:03:09+00:00",
+ "text": "خلاصه اخبار ۲۴ ساعت گذشته\n\n‏۱ (https://t.me/dlmehr/4522). حل ۱۰ مسئله پیچیده ریاضی و رایانه توسط نسخه داخلی مدل Astra اپن‌ای‌آی با هزینه حدود ۲۰۰۰ دلار.\n‏۲ (https://t.me/dlmehr/4523). توضیحات نوام براون درباره عدم حل مسائل هزاره در آزمایش‌های Astra و امکان گسترش بیشتر محاسبات زمان آزمون.\n‏۳ (https://t.me/dlmehr/4524). معرفی مدل زبانی کوچک BarunLM با ۳۵ میلیون پارامتر که از مدل‌های ۶ برابر بزرگ‌تر از خود پیشی می‌گیرد.\n‏۴ (https://t.me/dlmehr/4525). تحلیل تصویری درباره استقبال گسترده از DeepSeek و عدم توجه به مدل Llama در جامعه هوش مصنوعی.\n‏۵ (https://t.me/dlmehr/4526). امکان اجرای محلی مدل ۲۸۴ میلیارد پارامتری DeepSeek V4 Flash روی یک دستگاه DGX Spark با سرعت ۱۰۰۰ توکن در ثانیه.\n‏۶ (https://t.me/dlmehr/4527). انتشار ابزار متن‌باز pdf-inspector به زبان راست برای استخراج سریع متون و جداول فایل‌های PDF بدون نیاز به OCR.\n‏۷ (https://t.me/dlmehr/4528). یادآوری مصاحبه جف دین درباره توسعه چت‌بات داخلی در گوگل پیش از ChatGPT و عدم عرضه عمومی آن.\n‏۸ (https://t.me/dlmehr/4529). دیدگاه لنی راچیتسکی درباره تبدیل شدن افراد به مهندسان و بازاریابان پاره‌وقت در عصر هوش مصنوعی.\n‏۹ (https://t.me/dlmehr/4530). رونمایی Hailuo AI از مدل ویدیوپرداز متن‌باز MiniMax 3 با قابلیت نوشتن متن روی تخته‌سیاه.\n‏۱۰ (https://t.me/dlmehr/4531). انتشار راهنمای جامع و کاربردی اپن‌ای‌آی برای طراحی، مدیریت و استقرار عامل‌های هوش مصنوعی.\n‏۱۱ (https://t.me/dlmehr/4532). معرفی سیستم‌عامل مبتنی بر عامل Zaplar برای یکپارچه‌سازی و جایگزینی نرم‌افزارهای قدیمی مدیریت هتل.\n‏۱۲ (https://t.me/dlmehr/4533). مشاهده رفتار غیرمنتظره DeepSeek-V4-Flash در اجرای محلی که هنگام تفکر به زبان فارسی خود را Google DeepMind معرفی کرد.\n\n24-hour news summary\n\n1 (https://t.me/dlmehr/4522). OpenAI's internal version of its next major model, Astra, solved 10 major math and computer science problems for ~$2,000.\n2. Noam Brown notes Astra has not solved Millennium Prize problems yet, but stresses test-time compute can be scaled much further.\n3 (https://t.me/dlmehr/4524). Introduction of BarunLM (35M), a small language model trained on a single H200 GPU outperforming models six times its size.\n4. Commentary highlighting DeepSeek's dominant mindshare in the AI community relative to Llama.\n5. Demonstration of running the 284B DeepSeek V4 Flash locally on a single DGX Spark at 1,000 tokens/second prefill.\n6 (https://t.me/dlmehr/4527). Release of pdf-inspector, an open-source Rust tool allowing AI agents to parse PDFs into markdown in ~20ms without OCR.\n7 (https://t.me/dlmehr/4528). Commentary on Jeff Dean's interview revealing Google built an internal chatbot before ChatGPT but prioritized traditional search.\n8 (https://t.me/dlmehr/4529). Lenny Rachitsky notes how AI is turning tech professionals into part-time engineers and marketers.\n9 (https://t.me/dlmehr/4530). Hailuo AI releases MiniMax 3, an open-source video generation model capable of accurately writing text on a chalkboard.\n10 (https://t.me/dlmehr/4531). OpenAI publishes a practical guide covering the design, orchestration, and deployment of AI agents.\n11 (https://t.me/dlmehr/4532). Launch of Zaplar (YC S26), an agentic hotel operating system replacing legacy hotel management software.\n12 (https://t.me/dlmehr/4533). Local testing shows DeepSeek-V4-Flash claimed to be Google DeepMind when prompted to think in Persian.\n\n--Hermes",
+ "forwarded_from": null,
+ "digest": true,
+ "hash": "dc902f136f3b",
+ "media": [],
+ "preview": {
+  "url": "https://t.me/dlmehr/4522",
+  "site": "Telegram",
+  "title": "Future Focus with Mehrzad",
+  "description": "https://fxtwitter.com/gdb/status/2083457463337287721?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+  "image": null
+ },
+ "gholam": null,
+ "links": [],
+ "article": {
+  "title": "Future Focus with Mehrzad",
+  "source_title": null,
+  "body": [],
+  "why": null,
+  "tags": []
+ },
+ "updated": "2026-10-25T12:20:51+00:00"
+}

@@ -1,0 +1,59 @@
+{
+ "id": 4639,
+ "url": "https://t.me/dlmehr/4639",
+ "date": "2026-08-07T17:53:27+00:00",
+ "text": "https://fxtwitter.com/leokharon/status/2085743459818717312?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+ "forwarded_from": null,
+ "digest": false,
+ "hash": "42334092f7ef",
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/leokharon/status/2085743459818717312?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+  "site": "FxTwitter",
+  "title": "Léo (@LeoKharon)",
+  "description": "NEW ROBOT BENCHMARK: If your robot can do Origami, it can do anything!\nCalled The Robotic Origami Challenge, it is a dexterous-manipulation competition and benchmark held at IROS 2026, organized by 13 co-organizers with the Nippon Origami Association as…",
+  "image": null
+ },
+ "gholam": {
+  "text": "ببین رفیق، تو دنیای رباتیک یه مسابقه خفن راه انداختن به اسم «چالش اوریگامی رباتیک» واسه IROS 2026 که عیار ظرافت و دست‌پنجول ربات‌ها رو بکشن به رخ. داستان اینه که ربات‌ها باید با پنجه‌های پیشرفته‌ی Sharpa، یه کاغذ رو دقیقاً با ۶ تا تا بکنن و یه موشک کاغذی ژاپنی درست کنن تا استادای اوریگامی کارشون رو داوری کنن. سخت‌افزار واسه همه تیم‌ها یکسانه و رقابت اصلی سر هوش و نرم‌افزاره، طوری که کیفیت تا کردن حالت قبولی/ردی داره و سرعتِ کار برنده رو معلوم می‌کنه. واسه این کار کلی دیتای لمسیِ مشتی و شبیه‌ساز دقیق انویدیا هم تو دست و بالِ تیم‌ها گذاشتن تا ربات‌هاشون رو آماده کنن.\n\nاهمیتش اینه که تا کردن درستِ کاغذ تهِ چالش حرکتی و ظرافته و این مسابقه نشون میده هوش مصنوعی چقدر داره به مهارت دست انسان نزدیک میشه.",
+  "date": "2026-08-07T17:53:45+00:00"
+ },
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/LeoKharon/status/2085743459818717312",
+   "domain": "x.com",
+   "author": {
+    "name": "Léo",
+    "handle": "LeoKharon",
+    "avatar": "https://pbs.twimg.com/profile_images/2084989693611950080/QlAj9KYg_200x200.jpg"
+   },
+   "text": "NEW ROBOT BENCHMARK: If your robot can do Origami, it can do anything!\n\nCalled The Robotic Origami Challenge, it is a dexterous-manipulation competition and benchmark held at IROS 2026, organized by 13 co-organizers with the Nippon Origami Association as judge and task curator -> pretty cool to have them on board imho.\n\nThe evaluation consists of single task: a traditional Japanese paper airplane, in exactly six folds, from a 15×15 cm sheet of ≥60 gsm paper, on a competition-supplied standardized rig (bimanual arms + Sharpa Hands), both remotely and on-site.\nTeams bring policies, not hardware.\n\nAn \"Origami Grand Master\" declares pass/fail on crease accuracy, structural fidelity, symmetry and paper integrity.\nAmong passes, faster folds rank higher, with a 10-minute-per-attempt ceiling and flight explicitly irrelevant to the score.\n-> I find it interesting how they chose to evaluate the task. Quality is a binary pass or fail, therefore speed becomes the only thing graded here.\nSpeed is currently the bottleneck in dexterous manipulation though, so this choice makes sense.\nI wonder whether there could be finer ways to grade the qaulity of such a creative task though.\n\nWhen it comes to data, registered teams get 500+ teleoperation episodes (six camera streams, 65-D joint state/action, 10-fingertip 6-axis tactile), an NVIDIA Isaac Sim environment with thin-shell paper physics (plastic creasing + fold memory), digital twins of every partner hand, and a remote eval lab (upload a policy, queue an eval, get scored).\n\nStill, I think it is a great dexterity benchmark the field badly needs, it supplies the hardware, an outside human judges, and the pass criterion is externally defined -> all three degrees of freedom are checked!\nNeutral measurement layer, here we go!\n\nThe task is engineered to be un-gameable and to isolate pure dexterity.\nA known figure, exactly six folds, judged on creases, with flight explicitly declared irrelevant (the latter makes sense to me).\nTherefore, this underlines the goal to focus on dexterity, not task-selection or other strategies.\n\nI really like origami as an ideal controlled dexterity task: deterministic goal, deformable medium, sequential, bimanual, precision-bound.\nI am just not quite satisfied again by the binary pass or fail, I think quality of execution could be finely graded!\nBut again, I understand this is not the goal yet.\n\nAlso interesting to see the Sharpa Hands as de facto standard for everyone.\nTotal land-grab that anoints Sharpa as the reference dexterous hand, also featured in Google's Gemini Robotics 2.\nBy providing the hardware, the benchmark measures software while quietly making \"good on Sharpa\" the definition of good, and Sharpa gets real world data and feedback as a bonus.\nThat's smart, the data flywheel starts spinning.\n\nThe provided dataset is the richest tactile-manipulation corpus I have seen yet: 10-fingertip 6-axis tactile, plus plastic creasing and fold memory.\n500+ teleop episodes with six camera streams, 65-D joint state/action, and ten fingertip 6-axis tactile sensors.\nThe force/tactile channel are parts of the the benchmark's data, this is the first time I see this.\n\nCredits where it's due: organizers include @gao_young, @Noriaki_Hirose, @bgxc, @chris_j_paxton, @DJiafei, @micoolcho, @michaelyuancb, @hq_fang, and others.",
+   "date": 1786114966,
+   "media": [
+    {
+     "type": "video",
+     "src": "https://video.twimg.com/ext_tw_video/2085743400440008704/pu/vid/avc1/1280x720/dBhICbl1d6j43FfE.mp4?tag=12",
+     "poster": "https://pbs.twimg.com/ext_tw_video_thumb/2085743400440008704/pu/img/jScZQq3imiq1MMjR.jpg",
+     "ratio": 0.5625,
+     "duration": 36.5,
+     "gif": false
+    }
+   ],
+   "links": []
+  }
+ ],
+ "article": {
+  "title": "تو دنیای رباتیک یه مسابقه خفن راه انداختن به اسم «چالش اوریگامی رباتیک» واسه IROS 2026 که عیار ظرافت و دست‌پنجول ربات‌ها رو بکشن به رخ",
+  "source_title": "NEW ROBOT BENCHMARK: If your robot can do Origami, it can do anything!",
+  "body": [
+   "ببین رفیق، تو دنیای رباتیک یه مسابقه خفن راه انداختن به اسم «چالش اوریگامی رباتیک» واسه IROS 2026 که عیار ظرافت و دست‌پنجول ربات‌ها رو بکشن به رخ. داستان اینه که ربات‌ها باید با پنجه‌های پیشرفته‌ی Sharpa، یه کاغذ رو دقیقاً با ۶ تا تا بکنن و یه موشک کاغذی ژاپنی درست کنن تا استادای اوریگامی کارشون رو داوری کنن. سخت‌افزار واسه همه تیم‌ها یکسانه و رقابت اصلی سر هوش و نرم‌افزاره، طوری که کیفیت تا کردن حالت قبولی/ردی داره و سرعتِ کار برنده رو معلوم می‌کنه. واسه این کار کلی دیتای لمسیِ مشتی و شبیه‌ساز دقیق انویدیا هم تو دست و بالِ تیم‌ها گذاشتن تا ربات‌هاشون رو آماده کنن."
+  ],
+  "why": "تا کردن درستِ کاغذ تهِ چالش حرکتی و ظرافته و این مسابقه نشون میده هوش مصنوعی چقدر داره به مهارت دست انسان نزدیک میشه.",
+  "tags": [
+   "رباتیک"
+  ]
+ },
+ "updated": "2026-10-25T12:30:45+00:00",
+ "gholam_checked": "2026-10-25T12:30:45+00:00"
+}

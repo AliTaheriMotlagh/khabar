@@ -1,0 +1,59 @@
+{
+ "id": 5187,
+ "url": "https://t.me/dlmehr/5187",
+ "date": "2026-09-08T15:32:43+00:00",
+ "text": "https://fxtwitter.com/animaanandkumar/status/2097216195342864528?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+ "forwarded_from": null,
+ "digest": false,
+ "hash": "f2e3f96c9b05",
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/animaanandkumar/status/2097216195342864528?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+  "site": "🧵 Thread • FxTwitter",
+  "title": "Prof. Anima Anandkumar (@AnimaAnandkumar)",
+  "description": "We have found stable singularity on 3D Euler!\nhttps://anima-ai.org/2026/09/07/stable-singularity-of-the-euler-equations-on-r3-without-forcing/\nOur starting point is a physics-informed neural network (PINN) to come up with an approximate answer, and then…",
+  "image": "https://cdn4.telesco.pe/file/jradBche2LBf_a1qP2zicNB7TNZ5A03PoX1RIWLNBBsuDP-vYMIHrmznBzzqlvV0fwgeluCpl2ff8cwIRdUqs971ToxlBWF11vrJU3-g35MY15pggWozVJsrc5hRt4iY5TCLDZnQkAaZI7WMIpDWqSc5smRS3w1wsDMSvri0S64wh9DyjuI_MvPrUOoLETbYQyU1tH8cFWoid2fJJYnmnU_CFLGAfqDpEW5wgi73jZPFin5WyryWDf910DwbWtWqmSr_PRZy5ViJD8EpBun54KalWVNegVtFG5bmZmUGaWeLraDjXx4J3faDkr9__Ue0wXcqNzpgccif1h848KqGcg.jpg"
+ },
+ "gholam": {
+  "text": "رفیق، پروفسور آنیما آناندکومار از دانشگاه کلتک خبر داده که تیمش تونسته تکینگی پایدار رو توی معادلات سه بعدی اویلر، اونم بدون هیچ نیروی خارجی کشف و اثبات کنه. قضیه اینه که این معمای پیچیده فیزیک سیالات سال‌هاست اشک دانشمندا رو درآورده، اما اینا اومدن از شبکه‌های عصبی مبتنی بر فیزیک یا همون PINN کمک گرفتن تا به جواب تقریبی برسن و پایداریش رو ثابت کنن. شاهکار کارشون اینجاست که نگذاشتن هوش مصنوعی توی دام جواب‌های پیش‌پاافتاده بیفته و با هدایت و قیدهای دقیق، کشوندنش سمت جواب درست و حسابی. آناندکومار هم تأکید کرده که مدل‌های زبانی معمولی اصلاً فیزیک سرشون نمیشه، ولی این تیپ هوش‌های مصنوعیِ فیزیک‌فهم، قشنگ می‌تونن گره‌های کور علم رو باز کنن.\n\nاهمیتش اینه که پای هوش مصنوعی رو رسماً به حل یکی از سخت‌ترین چالش‌های تاریخ ریاضیات و رفتار پیچیده سیالات باز کرده و نشون میده ابزارای جدید محاسباتی چه غوغایی دارن راه می‌ندازن.",
+  "date": "2026-09-08T15:32:55+00:00"
+ },
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/AnimaAnandkumar/status/2097216195342864528",
+   "domain": "x.com",
+   "author": {
+    "name": "Prof. Anima Anandkumar",
+    "handle": "AnimaAnandkumar",
+    "avatar": "https://pbs.twimg.com/profile_images/2092855511029006336/DCV19usT_200x200.jpg"
+   },
+   "text": "We have found stable singularity on 3D Euler! \nhttps://anima-ai.org/2026/09/07/stable-singularity-of-the-euler-equations-on-r3-without-forcing/\n\nOur starting point is a physics-informed neural network (PINN) to come up with an approximate answer, and then to argue stability around that to complete the proof.\n\nThe challenge so far has been that PINNs have not been successful in discovering singularities on the current problem. A common failure mode is PINNs converging to a trivial solution. We take special care to nudge our PINN to interesting regions through a combination of constraints, and we believe this is a novel way of making PINNs work for such hard optimization problems.\n\nWe also carry out a detailed study of the transport field of our approximate profile, and show it has promising properties of local outgoing flow, essential for proving linear damping, which is an important ingredient of overall stability.\n\nWe believe that such physics-informed and physics-centric AI are critical ingredients across many areas of research involving physical systems, and  LLMs  lack such physical grounding. \n\nWe have been working on this problem for much of this year, and we just saw the announcement by Tristan on Euler with forcing. In contrast, we consider without forcing and use a PINN formulation.  @Caltech",
+   "date": 1788850280,
+   "media": [],
+   "links": [
+    "https://anima-ai.org/2026/09/07/stable-singularity-of-the-euler-equations-on-r3-without-forcing/"
+   ]
+  },
+  {
+   "kind": "link",
+   "url": "https://anima-ai.org/2026/09/07/stable-singularity-of-the-euler-equations-on-r3-without-forcing/",
+   "domain": "anima-ai.org",
+   "title": "Stable Singularity of the Euler Equations on R^3 without forcing | Anima on AI",
+   "description": null,
+   "image": null,
+   "site": "Anima on AI | AI+Science, Neural Operators, Physics"
+  }
+ ],
+ "article": {
+  "title": "پروفسور آنیما آناندکومار از دانشگاه کلتک خبر داده که تیمش تونسته تکینگی پایدار رو توی معادلات سه بعدی اویلر، اونم بدون هیچ نیروی خارجی کشف و اثبات کنه",
+  "source_title": "We have found stable singularity on 3D Euler!",
+  "body": [
+   "رفیق، پروفسور آنیما آناندکومار از دانشگاه کلتک خبر داده که تیمش تونسته تکینگی پایدار رو توی معادلات سه بعدی اویلر، اونم بدون هیچ نیروی خارجی کشف و اثبات کنه. قضیه اینه که این معمای پیچیده فیزیک سیالات سال‌هاست اشک دانشمندا رو درآورده، اما اینا اومدن از شبکه‌های عصبی مبتنی بر فیزیک یا همون PINN کمک گرفتن تا به جواب تقریبی برسن و پایداریش رو ثابت کنن. شاهکار کارشون اینجاست که نگذاشتن هوش مصنوعی توی دام جواب‌های پیش‌پاافتاده بیفته و با هدایت و قیدهای دقیق، کشوندنش سمت جواب درست و حسابی. آناندکومار هم تأکید کرده که مدل‌های زبانی معمولی اصلاً فیزیک سرشون نمیشه، ولی این تیپ هوش‌های مصنوعیِ فیزیک‌فهم، قشنگ می‌تونن گره‌های کور علم رو باز کنن."
+  ],
+  "why": "پای هوش مصنوعی رو رسماً به حل یکی از سخت‌ترین چالش‌های تاریخ ریاضیات و رفتار پیچیده سیالات باز کرده و نشون میده ابزارای جدید محاسباتی چه غوغایی دارن راه می‌ندازن.",
+  "tags": []
+ },
+ "updated": "2026-10-25T12:27:40+00:00",
+ "gholam_checked": "2026-10-25T12:27:40+00:00"
+}

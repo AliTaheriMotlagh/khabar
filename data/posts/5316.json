@@ -1,0 +1,79 @@
+{
+ "id": 5316,
+ "url": "https://t.me/dlmehr/5316",
+ "date": "2026-09-15T21:22:20+00:00",
+ "text": "https://fxtwitter.com/firesidealpha/status/2099941725301281180?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+ "forwarded_from": null,
+ "digest": false,
+ "hash": "de308f5a3c40",
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/firesidealpha/status/2099941725301281180?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+  "site": "FxTwitter",
+  "title": "Fireside Alpha (@firesidealpha)",
+  "description": "Dario Amodei says even if AI froze today, we're using only 5 to 10 percent of its possible value, and gives an example of using Salesforce with Claude\n\"When I look at the technology versus how much it has diffused, even if we freeze the technology in place…",
+  "image": null
+ },
+ "gholam": {
+  "text": "ببین رفیق، داریو آمودی، همه‌کاره‌ی شرکت آنتروپیک، یه کلام جالب گفته که آدمو حسابی به فکر می‌ندازه. میگه حتی اگه از همین امروز ترمز پیشرفت هوش مصنوعی رو بکشیم و همه‌چیز درجا بزنه، ما الان نهایت از ۵ تا ۱۰ درصد پتانسیل و فایده‌ی واقعی این فناوری داریم استفاده می‌کنیم. واسه مثال هم کارِ مدیر فروش خودشون رو مثال می‌زنه که هر روز با وصل کردن کلود به داده‌های سیلزفورس، ده تا معامله‌ی سنگین هفته و راه‌حل بردن تو قراردادهای در خطر رو خیلی تر و تمیز تحلیل می‌کنه. ته خط حرفش اینه که هنوز خیلی از کسب‌وکارها اصلاً روحشون هم خبر نداره چه غوغایی با همین نسخه‌های فعلی میشه به پا کرد و کلی جا واسه جا افتادنش تو دنیا هست.\n\nچرا مهمه؟ اهمیتش اینه که بهمون نشون میده قبل از چشم دوختن به مدل‌های عجیب‌وغریب آینده، هنوز از همین هوش مصنوعی دمِ دستمون هم نتونستیم درست‌ودرمون برای رشد کارامون بار بکشیم.",
+  "date": "2026-09-15T21:22:33+00:00"
+ },
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/firesidealpha/status/2099941725301281180",
+   "domain": "x.com",
+   "author": {
+    "name": "Fireside Alpha",
+    "handle": "firesidealpha",
+    "avatar": "https://pbs.twimg.com/profile_images/2066254089756061697/MGnZGljz_200x200.jpg"
+   },
+   "text": "Dario Amodei says even if AI froze today, we're using only 5 to 10 percent of its possible value, and gives an example of using Salesforce with Claude\n\n\"When I look at the technology versus how much it has diffused, even if we freeze the technology in place, which we're not doing, facing the frontier is not doing that at all, the technology will keep getting better.\"\n\n\"But just suppose we froze it in place. Even if that were the case, we're making use of maybe only 5% or 10% of what the possible value of the technology is.\"\n\n\"So I'll give you just an example that relates to what we're doing together, and to the CCO you just pointed at, which is that Paul, every day now he wakes up, and if he wants to look at our go-to-market prospects, he still uses Salesforce, but he uses Salesforce with Claude.\"\n\n\"He talks to Claude using Salesforce's data about, what are the 10 biggest deals we're doing this week? What are the 10 deals we're most likely to lose? What are the themes in those deals? How do we win those deals?\"\n\n\"Just making use of all the information fluently with Claude. And it's really incredible. And the fraction of people who have seen this, and seen that this is possible, is still small compared to those who could gain utility from it. And so there is still so much diffusion left to do.\"",
+   "date": 1789500096,
+   "media": [
+    {
+     "type": "video",
+     "src": "https://video.twimg.com/amplify_video/2099941182025629696/vid/avc1/1280x720/NBaOtB9OQdJZEJo0.mp4?tag=29",
+     "poster": "https://pbs.twimg.com/amplify_video_thumb/2099941182025629696/img/pQv_BMDXvR2j-AG1.jpg",
+     "ratio": 0.5625,
+     "duration": 74.407,
+     "gif": false
+    }
+   ],
+   "links": [],
+   "quote": {
+    "author": {
+     "name": "Fireside Alpha",
+     "handle": "firesidealpha",
+     "avatar": "https://pbs.twimg.com/profile_images/2066254089756061697/MGnZGljz_200x200.jpg"
+    },
+    "text": "Jensen Huang explains why the frontier labs should pace themselves instead of waiting for new laws or regulations\n\n\"Well, safety is paramount. In a lot of ways, it's job one. However, safety is an engineering problem. We're developing software after all.\"\n\n\"We're developing computing systems after all. It's a complicated computing system, but it's ultimately a computing system.\"\n\n\"So the first thing is to make sure that we create the test environments for testing these complex systems, and those test environments have to be built in a good way, built in a safe way.\"\n\n\"And then the second thing is we have to test these products. If we're not confident about the safety of the products, like all companies, like you and I, all the companies here, if you build a product or a service and you're not confident in its functionality, capability, or safety, then don't release it.\"\n\n\"And so that's a very obvious thing to do. You pace yourself until you are confident you're releasing something that the market would appreciate. The market forces are already there. We don't need any new laws. We don't need new regulations. We just need companies to decide that.\"\n\n\"When it's, you know, run as fast as they can, I think innovation, speed, and safe products are not, it's a false choice. You could definitely have both at the same time.\"\n\n\"So run as fast as you can, but if you feel at any given point in time the company's out of control or the product's not going to be safe, take a pause and make sure you get it right.\"",
+    "date": 1789499879,
+    "media": [
+     {
+      "type": "video",
+      "src": "https://video.twimg.com/amplify_video/2099940362827784192/vid/avc1/1280x720/DrAqK_rUurH1-kgH.mp4?tag=29",
+      "poster": "https://pbs.twimg.com/amplify_video_thumb/2099940362827784192/img/9D3QMhS7bMClOlpX.jpg",
+      "ratio": 0.5625,
+      "duration": 86.018,
+      "gif": false
+     }
+    ],
+    "links": []
+   }
+  }
+ ],
+ "article": {
+  "title": "داریو آمودی، همه‌کاره‌ی شرکت آنتروپیک، یه کلام جالب گفته که آدمو حسابی به فکر می‌ندازه",
+  "source_title": "Dario Amodei says even if AI froze today, we're using only 5 to 10 percent of its possible value, and gives an example of using Salesforce…",
+  "body": [
+   "ببین رفیق، داریو آمودی، همه‌کاره‌ی شرکت آنتروپیک، یه کلام جالب گفته که آدمو حسابی به فکر می‌ندازه. میگه حتی اگه از همین امروز ترمز پیشرفت هوش مصنوعی رو بکشیم و همه‌چیز درجا بزنه، ما الان نهایت از ۵ تا ۱۰ درصد پتانسیل و فایده‌ی واقعی این فناوری داریم استفاده می‌کنیم. واسه مثال هم کارِ مدیر فروش خودشون رو مثال می‌زنه که هر روز با وصل کردن کلود به داده‌های سیلزفورس، ده تا معامله‌ی سنگین هفته و راه‌حل بردن تو قراردادهای در خطر رو خیلی تر و تمیز تحلیل می‌کنه. ته خط حرفش اینه که هنوز خیلی از کسب‌وکارها اصلاً روحشون هم خبر نداره چه غوغایی با همین نسخه‌های فعلی میشه به پا کرد و کلی جا واسه جا افتادنش تو دنیا هست."
+  ],
+  "why": "اهمیتش اینه که بهمون نشون میده قبل از چشم دوختن به مدل‌های عجیب‌وغریب آینده، هنوز از همین هوش مصنوعی دمِ دستمون هم نتونستیم درست‌ودرمون برای رشد کارامون بار بکشیم.",
+  "tags": [
+   "آنتروپیک"
+  ]
+ },
+ "updated": "2026-10-25T12:26:51+00:00",
+ "gholam_checked": "2026-10-25T12:26:51+00:00"
+}

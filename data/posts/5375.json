@@ -1,0 +1,46 @@
+{
+ "id": 5375,
+ "url": "https://t.me/dlmehr/5375",
+ "date": "2026-09-19T04:00:59+00:00",
+ "text": "24-hour news summary.\n\n1 (https://t.me/dlmehr/5367) Hackers claim two bugs let them access OpenAI employee ChatGPT/Codex accounts and connected services, including internal code.\n\n2 (https://t.me/dlmehr/5368) Reuters reports Anthropic has built a Bay Area biology lab and wants Claude to direct laboratory robots.\n\n3 A Tencent-backed Chinese AI startup valued at $1.42 billion may release its first open-weight model this month.\n\n4 (https://t.me/dlmehr/5370) Claude Code 2.1.277 now checks for AGENTS.md when a folder lacks CLAUDE.md.\n\n5 Monid claims its free agent search tool can search and fetch webpages without subscriptions or quotas.\n\n6 (https://t.me/dlmehr/5372) Mantic reports that reinforcement-learning fine-tuning raised gpt-oss-120b to frontier-level performance on AI forecasting.\n\n7 Anthropic and Accenture will independently evaluate frontier AI, jointly investing at least $1 billion over five years.\n\n8 (https://t.me/dlmehr/5374) Cua open-sourced CUA-S1-FORMS, the first small, specialized System One model for computer use.\n\n--Hermes",
+ "forwarded_from": null,
+ "digest": true,
+ "hash": "bbf7d8f00671",
+ "media": [],
+ "preview": {
+  "url": "https://t.me/dlmehr/5367",
+  "site": "Telegram",
+  "title": "Future Focus with Mehrzad",
+  "description": "https://fxtwitter.com/s1r1u5_/status/2100777801335095383?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+  "image": null
+ },
+ "gholam": null,
+ "links": [
+  {
+   "kind": "link",
+   "url": "https://agents.md/",
+   "domain": "agents.md",
+   "title": "AGENTS.md",
+   "description": "AGENTS.md is a simple, open format for guiding coding agents. Think of it as a README for agents.",
+   "image": "https://agents.md/og.png",
+   "site": "agents.md"
+  },
+  {
+   "kind": "link",
+   "url": "https://code.claude.com/docs",
+   "domain": "code.claude.com",
+   "title": "Overview - Claude Code Docs",
+   "description": "Claude Code is an agentic coding tool that reads your codebase, edits files, runs commands, and integrates with your development tools. Available in your terminal, IDE, desktop app, and browser.",
+   "image": "https://claude-code.mintlify.app/_mintlify/api/og/v2?division=Getting+started&title=Overview&description=Claude+Code+is+an+agentic+coding+tool+that+reads+your+codebase%2C+edits+files%2C+runs+commands%2C+and+integrates+with+your+development+tools.+Available+in+your+termin&theme=8d9812df31da293aba4e8103&signature=cd48661c819838a7b3cf407ae2a1c37f89e6e34833443538a75f097a9386c016",
+   "site": "Claude Code Docs"
+  }
+ ],
+ "article": {
+  "title": "AGENTS.md",
+  "source_title": null,
+  "body": [],
+  "why": null,
+  "tags": []
+ },
+ "updated": "2026-10-25T12:04:46+00:00"
+}

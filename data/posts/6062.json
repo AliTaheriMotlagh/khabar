@@ -12,7 +12,7 @@
   "site": "🧵 Thread • FxTwitter",
   "title": "International Cyber Digest (@IntCyberDigest)",
   "description": "‼️\nAmazon says an attacker tried to exploit PHP2Shell four days before PHP disclosed the two flaws.\nIts MadPot honeypots logged it on 17 October from an anonymisation network, while the bugs were under embargo.\nNobody knows how the attacker got the exploit…",
-  "image": "https://cdn4.telesco.pe/file/KUHpZgg_4qDMLKHDb-eIKRHb9D9xXM5h5D2EkwVOaaAa9EjAPgMtZnOCSAc71MHGMBf3_jN46Um-jdZejW3SSpbo4X-AGWY80z_Qg8NY0DHlBPIv4XrQFwOOec8TRpZzSxCoTRNg_XIXKl6A3MKNNGtxlUQZ-WcAkHG0BnnsOxQQGs9Zs7gLT7wTVeoUn7k6N3VIxdCsDo0KCe7rUKoYXGQjTwBulsKVqahsqpICqCSFTma7eaGWcQWAhE8TJln3HFM4fNdrevKTAIN6W1_91X6xP0V6KgatJYiSUyDIu52pt6LOvWIPzg7n2rtScTaXiz0Pibhs91HvC1RX68FC9g.jpg"
+  "image": "https://cdn4.telesco.pe/file/VdD_mpNLVJ8lXe6jlqC1zw0guJ0dFA2dftuj8XOY1-dL-RU4L8paxcClDXgbek8vFkJWG2iPwHEzBxnDdVWVvsSutrwItuFg1_TgDgqfZ6RwuZlvNDAbBngcD6qOn9DewlghXdWlbPmZFALKfeHUVqT1V5MXChDujQnnM6jDqTIQXYFEhAQiz4-YljUsVlstTVoroZFFcf5_qfsuC6nnL9mApIqboQOM9MpUTbnNBWU7DyGHCGIq3Gj0A-1C-4cI8JGS4LAcAfCGzBXa_Ltg2aIQnhoanvBnuASmQ2rW5NLB1Bo_7x65F7SwtDAzkLkxxax-S-R_Kk7XRV-ZzwKBiA.jpg"
  },
  "gholam": {
   "text": "رفیق، قضیه اینه که آمازون شستش خبردار شده یه هکر ناقلا دقیقاً چهار روز قبل از اینکه تیم PHP بیاد دوتا باگ امنیتی جدیدش به اسم PHP2Shell رو علنی کنه، داشته سعی می‌کرده ازشون سوءاستفاده کنه. تله‌های امنیتی آمازون یا همون MadPot، روز ۱۷ اکتبر این حمله رو که از یه شبکه مخفی و ناشناس هدایت می‌شده ثبت کردن؛ اونم درست تو دوره‌ای که باگ‌ها هنوز زیر تیغ محرمانگی بودن و نباید صدایی ازشون درمی‌اومد. حالا کل جماعت امنیت مات و مبهوت موندن که این هکره جزئیات دقیق اکسپلویت رو از کجا و با چه ارتباطی کش رفته و دستش رسیده.\n\nاهمیتش اینه که دسترسی به یه رخنه امنیتی قبل از افشای رسمی یعنی نشت اطلاعات از پشت پرده رخ داده و هکرها می‌تونستن قبل از اومدن وصله، حساب سرورهای بی‌شماری رو برسن.",
@@ -57,5 +57,5 @@
    "آمازون"
   ]
  },
- "updated": "2026-10-25T08:50:07+00:00"
+ "updated": "2026-10-25T11:53:53+00:00"
 }

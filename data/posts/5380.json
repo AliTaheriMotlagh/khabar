@@ -1,0 +1,52 @@
+{
+ "id": 5380,
+ "url": "https://t.me/dlmehr/5380",
+ "date": "2026-09-20T01:43:26+00:00",
+ "text": "https://fxtwitter.com/kunchenguid/status/2101170039185633513?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+ "forwarded_from": null,
+ "digest": false,
+ "hash": "26e753463800",
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/kunchenguid/status/2101170039185633513?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+  "site": "FxTwitter",
+  "title": "Kun Chen (@kunchenguid)",
+  "description": "“Jev can chat too”",
+  "image": null
+ },
+ "gholam": null,
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/kunchenguid/status/2101170039185633513",
+   "domain": "x.com",
+   "author": {
+    "name": "Kun Chen",
+    "handle": "kunchenguid",
+    "avatar": "https://pbs.twimg.com/profile_images/1946076752024895489/ScNir1Fy_200x200.jpg"
+   },
+   "text": "“Jev can chat too”",
+   "date": 1789792949,
+   "media": [
+    {
+     "type": "video",
+     "src": "https://video.twimg.com/amplify_video/2101169986563956736/vid/avc1/1280x720/r9a_DP2brQ3jmGzy.mp4?tag=29",
+     "poster": "https://pbs.twimg.com/amplify_video_thumb/2101169986563956736/img/461tX-GA6VIzcnex.jpg",
+     "ratio": 0.5625,
+     "duration": 98.786,
+     "gif": false
+    }
+   ],
+   "links": []
+  }
+ ],
+ "article": {
+  "title": "“Jev can chat too”",
+  "source_title": null,
+  "body": [],
+  "why": null,
+  "tags": []
+ },
+ "updated": "2026-10-25T12:26:25+00:00",
+ "gholam_checked": "2026-10-25T12:26:25+00:00"
+}

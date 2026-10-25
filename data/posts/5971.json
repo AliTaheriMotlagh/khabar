@@ -2,16 +2,23 @@
  "id": 5971,
  "url": "https://t.me/dlmehr/5971",
  "date": "2026-10-19T16:34:56+00:00",
- "edited": true,
- "views": "201",
  "text": "https://fxtwitter.com/simon_mo_/status/2111943186218430760?s=52&t=F41Qa04r48Mef_j_XjBneQ",
  "forwarded_from": null,
  "digest": false,
  "hash": "2035ebf12e4d",
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/simon_mo_/status/2111943186218430760?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+  "site": "FxTwitter",
+  "title": "Simon Mo (@simon_mo_)",
+  "description": "A story in 3 acts, last 3 days: AMD, NVIDIA, Google all contribute significant improvement to @vllm_project, measured with @SemiAnalysis_ standard benchmark on K3. Great work from @inferact team shepherding and leading many of the optimizations!!!",
+  "image": "https://cdn4.telesco.pe/file/eJp_f01KYZibdL_i8RU6PlODSMUuXu7uipo7ExVB1JUBhTlKpMhOC5_bK1AEx3pLhr9c0Ps3TuEUmIysqaJSxM7-vwEyNhmnC6UdAJsEODj8hhiCH2qN_KEKz9GkYfAslDg0fhUagRf9jfxDUAVnXOWEZIdAIClfmf-Ry4AKSQh9tAAJGM7owON35xVr_FhiViwg9jnhksioOhdTQQql1MPCMZh2bL4vvwOL3JT5QjtCiZiuwIavF-hpoLCPsXMyWOAoWz5B7YTOfLb8JjObnY6WxMEDUq-fePt-uq4A3LM2mj8z6kj4g3qB2De9VkM2sEcZrUyHJvvoLM_fwJTYBw.jpg"
+ },
  "gholam": {
   "text": "رفیق، توی همین سه روز گذشته یه اتفاق خفن تو دنیای هوش مصنوعی افتاده که سایمون مو ماجراشو برامون رو کرده؛ سه تا غول گردن‌کلفت یعنی انویدیا، ای‌ام‌دی و گوگل اومدن وسط میدون و دسته‌جمعی کلی آپدیت و بهبود مشتی به پروژه متن‌باز vLLM تزریق کردن. این ارتقای سنگین روی بنچمارک استاندارد سمی‌آنالیسیس (SemiAnalysis) با تست K3 قشنگ محک خورده و خروجی نشون میده راندمان کار حسابی پریده بالا. دمشون هم گرم، بچه‌های تیم اینفراکت (Inferact) این وسط ریش‌سفیدی کردن و با مدیریت خفنشون خیلی از این بهینه‌سازی‌ها رو پیش بردن.\n\nچرا مهمه؟ چون وقتی غول‌های رقیب میان روی یه زیرساخت متن‌باز این‌طوری دست‌به‌یکی می‌کنن، تهش اجرای مدل‌های هوش مصنوعی واسه همه توسعه‌دهنده‌ها خیلی سریع‌تر و کم‌خرج‌تر تموم می‌شه.",
   "date": "2026-10-19T16:35:12+00:00"
  },
+ "gholam_checked": "2026-10-24T23:11:43+00:00",
  "links": [
   {
    "kind": "tweet",
@@ -57,18 +64,6 @@
    "links": []
   }
  ],
- "media": [],
- "preview": {
-  "url": "https://fxtwitter.com/simon_mo_/status/2111943186218430760?s=52&t=F41Qa04r48Mef_j_XjBneQ",
-  "site": "FxTwitter",
-  "title": "Simon Mo (@simon_mo_)",
-  "description": "A story in 3 acts, last 3 days: AMD, NVIDIA, Google all contribute significant improvement to @vllm_project, measured with @SemiAnalysis_ standard benchmark on K3. Great work from @inferact team shepherding and leading many of the optimizations!!!",
-  "image": {
-   "src": "media/5971/preview.webp",
-   "width": 680,
-   "height": 800
-  }
- },
  "article": {
   "title": "توی همین سه روز گذشته یه اتفاق خفن تو دنیای هوش مصنوعی افتاده که سایمون مو ماجراشو برامون رو کرده",
   "source_title": "A story in 3 acts, last 3 days: AMD, NVIDIA, Google all contribute significant improvement to @vllm_project, measured with @SemiAnalysis_…",
@@ -81,6 +76,5 @@
    "انویدیا"
   ]
  },
- "updated": "2026-10-24T23:11:43+00:00",
- "gholam_checked": "2026-10-24T23:11:43+00:00"
+ "updated": "2026-10-25T11:54:08+00:00"
 }

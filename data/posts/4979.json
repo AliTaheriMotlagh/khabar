@@ -1,0 +1,59 @@
+{
+ "id": 4979,
+ "url": "https://t.me/dlmehr/4979",
+ "date": "2026-08-27T03:56:24+00:00",
+ "text": "https://fxtwitter.com/zai_org/status/2092814169263218860?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+ "forwarded_from": null,
+ "digest": false,
+ "hash": "2244c981cba4",
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/zai_org/status/2092814169263218860?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+  "site": "FxTwitter · huggingface.co",
+  "title": "Z.ai (@Zai_org)",
+  "description": "More good news: GLM-5.3’s weights will be released tomorrow.\nhttps://huggingface.co/zai-org/GLM-5.3",
+  "image": "https://cdn4.telesco.pe/file/GyuLqIASCC-o9sX3m7lS0thUMibF4pRtU6lVPpUCUNos7byKe_a4V4wSrUuvV8uhvuP3-C8T0aZh0O-iYr6TF0LXmR3c-9dF2Fr0VBxL-kUf93Gpoa-pENJaB_RB6_2kxyKomXbXNEoP_f3lQ6BVS-gnZCrBfqvWCnqHJ6DyNaL0UFWIq7NdDnQFA1pIkZQLN-LoANmHqin1xBCGW-wRb-TpZUXbVWTXT-bLDKf7KznknSUIQcNw5jFB_HNTx2RF42JGsGoRRXPgJy7Ipk8rlCvyUrBkDvOcS0aCfe8iK-BbJGUUhdHIfc6m_dfOy1biwyWrUQy7getXAVwzT_Adyg.jpg"
+ },
+ "gholam": {
+  "text": "رفیق، بچه‌های تیم Z.ai یه خبر مشتی دادن و اعلام کردن که وزن‌های مدل جدیدشون یعنی GLM-5.3 قراره همین فردا به صورت عمومی منتشر بشه. این مدل خفن رو می‌خوان مستقیم روی هاگینگ‌فیس بذارن تا دست همه‌ی عشقِ هوش مصنوعی‌ها بهش برسه. دست‌ودلبازی توی دنیای اوپن‌سورس همیشه حال می‌ده و این بار هم قراره یه مدل پرقدرت دیگه بدون معطلی بیاد تو میدون تا برنامه‌نویس‌ها و محقق‌ها حسابی باهاش صفا کنن.\n\nچرا مهمه؟ اهمیتش اینه که انتشار عمومی وزن‌های مدل باعث می‌شه دسترسی آزاد به یه مدل قوی باز بشه و کامیونیتی بتونه راحت‌تر توسعه‌ش بده.",
+  "date": "2026-08-27T03:56:35+00:00"
+ },
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/Zai_org/status/2092814169263218860",
+   "domain": "x.com",
+   "author": {
+    "name": "Z.ai",
+    "handle": "Zai_org",
+    "avatar": "https://pbs.twimg.com/profile_images/1970775077181411328/W8XKaUIh_200x200.jpg"
+   },
+   "text": "More good news: GLM-5.3’s weights will be released tomorrow.\n\nhttps://huggingface.co/zai-org/GLM-5.3",
+   "date": 1787800755,
+   "media": [],
+   "links": [
+    "https://huggingface.co/zai-org/GLM-5.3"
+   ]
+  },
+  {
+   "kind": "link",
+   "url": "https://huggingface.co/zai-org/GLM-5.3",
+   "domain": "huggingface.co",
+   "title": "zai-org/GLM-5.3 · Hugging Face",
+   "description": "We’re on a journey to advance and democratize artificial intelligence through open source and open science.",
+   "image": "https://cdn-thumbnails.huggingface.co/social-thumbnails/models/zai-org/GLM-5.3.png",
+   "site": "huggingface.co"
+  }
+ ],
+ "article": {
+  "title": "بچه‌های تیم Z.ai یه خبر مشتی دادن و اعلام کردن که وزن‌های مدل جدیدشون یعنی GLM-5.3 قراره همین فردا به صورت عمومی منتشر بشه",
+  "source_title": "More good news: GLM-5.3’s weights will be released tomorrow.",
+  "body": [
+   "رفیق، بچه‌های تیم Z.ai یه خبر مشتی دادن و اعلام کردن که وزن‌های مدل جدیدشون یعنی GLM-5.3 قراره همین فردا به صورت عمومی منتشر بشه. این مدل خفن رو می‌خوان مستقیم روی هاگینگ‌فیس بذارن تا دست همه‌ی عشقِ هوش مصنوعی‌ها بهش برسه. دست‌ودلبازی توی دنیای اوپن‌سورس همیشه حال می‌ده و این بار هم قراره یه مدل پرقدرت دیگه بدون معطلی بیاد تو میدون تا برنامه‌نویس‌ها و محقق‌ها حسابی باهاش صفا کنن."
+  ],
+  "why": "اهمیتش اینه که انتشار عمومی وزن‌های مدل باعث می‌شه دسترسی آزاد به یه مدل قوی باز بشه و کامیونیتی بتونه راحت‌تر توسعه‌ش بده.",
+  "tags": []
+ },
+ "updated": "2026-10-25T12:28:53+00:00",
+ "gholam_checked": "2026-10-25T12:28:53+00:00"
+}

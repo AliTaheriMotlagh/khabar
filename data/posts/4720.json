@@ -1,0 +1,59 @@
+{
+ "id": 4720,
+ "url": "https://t.me/dlmehr/4720",
+ "date": "2026-08-12T22:22:22+00:00",
+ "text": "https://fxtwitter.com/autosanaai/status/2083080915493015723?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+ "forwarded_from": null,
+ "digest": false,
+ "hash": "3efd5c7cf007",
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/autosanaai/status/2083080915493015723?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+  "site": "FxTwitter",
+  "title": "Autosana (YC S25) (@autosanaai)",
+  "description": "The bottleneck isn't writing code anymore. It's validating it actually works. Autosana closes the E2E testing loop with your coding agent.\nNatural language testing on real physical devices/browsers for iOS, Android, and web apps.",
+  "image": null
+ },
+ "gholam": {
+  "text": "رفیق، این روزا دیگه کد نوشتن چالش اصلی توسعه‌دهنده‌ها نیست و گیر اصلی کار توی تست کردن و مطمئن شدن از کارکرد درسته. استارتاپ Autosana اومده دقیقاً همین حلقه تست نرم‌افزار رو به ایجنت‌های هوش مصنوعی وصل کرده تا کارو یکسره کنه. این ابزار خفن بهت اجازه میده فقط با زبان ساده، برنامه‌های iOS، اندروید و وب رو روی گوشی‌ها و مرورگرهای واقعی به صورت خودکار تست کنی. خلاصه دیگه وقت گرانبهای تیم‌ها پای تست‌های کلافه‌کننده دستی تلف نمیشه و همه‌چی ردیف پیش میره.\n\nچرا مهمه؟ چون سرعت تحویل برنامه‌ها رو چند برابر می‌کنه و خیال مهندسا رو از بی‌نقص بودن کد راحت می‌کنه.",
+  "date": "2026-08-12T22:22:36+00:00"
+ },
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/autosanaai/status/2083080915493015723",
+   "domain": "x.com",
+   "author": {
+    "name": "Autosana (YC S25)",
+    "handle": "autosanaai",
+    "avatar": "https://pbs.twimg.com/profile_images/2017102616430596101/ahH6krVj_200x200.jpg"
+   },
+   "text": "The bottleneck isn't writing code anymore. It's validating it actually works. Autosana closes the E2E testing loop with your coding agent. \n\nNatural language testing on real physical devices/browsers for iOS, Android, and web apps.",
+   "date": 1785480166,
+   "media": [
+    {
+     "type": "video",
+     "src": "https://video.twimg.com/amplify_video/2072084600093028353/vid/avc1/1280x720/d76BrTJfVXrvgdX0.mp4?tag=14",
+     "poster": "https://pbs.twimg.com/amplify_video_thumb/2072084600093028353/img/XwBDM7T5XfydZxEi.jpg",
+     "ratio": 0.5625,
+     "duration": 119.666,
+     "gif": false
+    }
+   ],
+   "links": []
+  }
+ ],
+ "article": {
+  "title": "این روزا دیگه کد نوشتن چالش اصلی توسعه‌دهنده‌ها نیست و گیر اصلی کار توی تست کردن و مطمئن شدن از کارکرد درسته",
+  "source_title": "The bottleneck isn't writing code anymore. It's validating it actually works. Autosana closes the E2E testing loop with your coding agent.",
+  "body": [
+   "رفیق، این روزا دیگه کد نوشتن چالش اصلی توسعه‌دهنده‌ها نیست و گیر اصلی کار توی تست کردن و مطمئن شدن از کارکرد درسته. استارتاپ Autosana اومده دقیقاً همین حلقه تست نرم‌افزار رو به ایجنت‌های هوش مصنوعی وصل کرده تا کارو یکسره کنه. این ابزار خفن بهت اجازه میده فقط با زبان ساده، برنامه‌های iOS، اندروید و وب رو روی گوشی‌ها و مرورگرهای واقعی به صورت خودکار تست کنی. خلاصه دیگه وقت گرانبهای تیم‌ها پای تست‌های کلافه‌کننده دستی تلف نمیشه و همه‌چی ردیف پیش میره."
+  ],
+  "why": "چون سرعت تحویل برنامه‌ها رو چند برابر می‌کنه و خیال مهندسا رو از بی‌نقص بودن کد راحت می‌کنه.",
+  "tags": [
+   "کدنویسی"
+  ]
+ },
+ "updated": "2026-10-25T12:30:24+00:00",
+ "gholam_checked": "2026-10-25T12:30:24+00:00"
+}

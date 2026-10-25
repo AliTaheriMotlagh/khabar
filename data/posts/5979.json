@@ -2,16 +2,23 @@
  "id": 5979,
  "url": "https://t.me/dlmehr/5979",
  "date": "2026-10-19T19:55:38+00:00",
- "edited": true,
- "views": "198",
  "text": "https://fxtwitter.com/chatgpt/status/2112265233192657153?s=52&t=F41Qa04r48Mef_j_XjBneQ",
  "forwarded_from": null,
  "digest": false,
  "hash": "a909d2e33435",
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/chatgpt/status/2112265233192657153?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+  "site": "FxTwitter",
+  "title": "ChatGPT (@ChatGPT)",
+  "description": "ChatGPT Slides has new ways to get your deck ready—and get everyone on the same page.\n• Work together in real time in ChatGPT: Share decks, edit together, and leave comments. Ask ChatGPT or your dot to turn feedback into updates.\n• Edit right on the slide:…",
+  "image": "https://cdn4.telesco.pe/file/BoFnpl4DfBgI9LFVCp-kLooP39l8N6T9WgeYQDJYDzlQ-U8JoOGho3ijDgL7aEZ8NUly-WyMT656CD7SydUvA60hO0BVw7UHkKcNZDz93zs1QoNBHrZp1BeOYat4mfWoKDWFrnDzcEhKVGaATpeesBqy7fWKulxdJhkE3xSMYHKHrOejy2juBVXaoD57l-PoTwMnur6a_UlS66ozt3LW1lmL3vUlEhf98gHwyxy17fqjjvQVwrZek_A230eI_WfYFhNJa01l19ZoAtqPst4eeqrgOPH21AmdGBpHgGQI-nn_NC_A1BtFzzuEHGb88RKlweUSHXTt3AFHfFN6pk6Ijw.jpg"
+ },
  "gholam": {
   "text": "رفیق، بچه‌های اوپن‌ای‌آی قابلیت ساخت اسلاید رو توی چت‌جی‌پی‌تی حسابی ارتقا دادن و چندتا ابزار مشتی بهش اضافه کردن. از این به بعد می‌تونی با هم‌تیمی‌هات آنلاین و هم‌زمان روی یه فایل پرزنتیشن کار کنی، کامنت بذاری و به هوش مصنوعی بگی بازخوردها رو برات اعمال کنه. دیگه نیازی هم به ابزار اضافه نداری؛ مستقیم روی خود اسلاید کلیک می‌کنی و متن، نمودار یا جای عکس‌ها رو به دلخواه تغییر می‌دی. آخر کار هم خیلی شیک می‌تونی ارائه‌ت رو به صورت پاورپوینت یا گوگل اسلایدز تحویل بگیری، البته حواست باشه این امکان فعلاً برای کاربرهای پرو، بیزینس و انترپرایز فعاله.\n\nاهمیتش اینه که بساط ارائه‌سازی تیمی حسابی راحت شده و بدون نیاز به سوئیچ کردن بین نرم‌افزارهای مختلف، صفر تا صد کارِت همین‌جا جمع‌وجور می‌شه.",
   "date": "2026-10-19T19:55:58+00:00"
  },
+ "gholam_checked": "2026-10-24T23:11:42+00:00",
  "links": [
   {
    "kind": "tweet",
@@ -59,18 +66,6 @@
    ]
   }
  ],
- "media": [],
- "preview": {
-  "url": "https://fxtwitter.com/chatgpt/status/2112265233192657153?s=52&t=F41Qa04r48Mef_j_XjBneQ",
-  "site": "FxTwitter",
-  "title": "ChatGPT (@ChatGPT)",
-  "description": "ChatGPT Slides has new ways to get your deck ready—and get everyone on the same page.\n• Work together in real time in ChatGPT: Share decks, edit together, and leave comments. Ask ChatGPT or your dot to turn feedback into updates.\n• Edit right on the slide:…",
-  "image": {
-   "src": "media/5979/preview.webp",
-   "width": 401,
-   "height": 800
-  }
- },
  "article": {
   "title": "بچه‌های اوپن‌ای‌آی قابلیت ساخت اسلاید رو توی چت‌جی‌پی‌تی حسابی ارتقا دادن و چندتا ابزار مشتی بهش اضافه کردن",
   "source_title": "ChatGPT Slides has new ways to get your deck ready—and get everyone on the same page.",
@@ -82,6 +77,5 @@
    "اوپن‌ای‌آی"
   ]
  },
- "updated": "2026-10-24T23:11:42+00:00",
- "gholam_checked": "2026-10-24T23:11:42+00:00"
+ "updated": "2026-10-25T11:54:08+00:00"
 }

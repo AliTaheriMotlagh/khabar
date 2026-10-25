@@ -2,16 +2,23 @@
  "id": 5947,
  "url": "https://t.me/dlmehr/5947",
  "date": "2026-10-17T17:57:30+00:00",
- "edited": true,
- "views": "238",
  "text": "https://fxtwitter.com/opencode/status/2111516673953935833?s=52&t=F41Qa04r48Mef_j_XjBneQ",
  "forwarded_from": null,
  "digest": false,
  "hash": "0c36576209f0",
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/opencode/status/2111516673953935833?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+  "site": "FxTwitter",
+  "title": "OpenCode (@opencode)",
+  "description": "We had a security breach last night related to a large scale distillation attack that impacted 1.4% of OpenCode Console users\nWe have notified them all this morning via email\nThe incident is ongoing so we cannot share more details at this point but we are…",
+  "image": "https://cdn4.telesco.pe/file/ssrFNQ2wXEEIZCHvYGjxpHs4vOA7WaJLWoWKu2qN0eTVnN5bNWvt0050zjel2R7mkWGlLksZPGYQHSA9bVeZmuNt-hdg2-6xi6NxqKBzrrIbCTlH3AWjunp-BCyjI5xSHkV0gqXEuE63OuwKy4e-n1A4R1cH3pnoQ9vTSE3s2gzhhIZcy8c2kkqWP4H8AP1gV7B4broqToGrUkfYs1tFhgOqcrP0CG5mFTbCmIWF11kLA48OP60KlNuvOrd6XJQIwAq2M-cH8_TJoz3SX2ko6xwDy5PAzeDLd9Dy98R5dm3iifapCuuqE9gQ_JYLxASCKhz-8skeHzgrnrQl5gTYfg.jpg"
+ },
  "gholam": {
   "text": "ببین رفیق، دیشب پلتفرم OpenCode بدجوری رکب خورده و یه رخنه امنیتی درست‌وحسابی رو تجربه کرده. ماجرا از این قراره که یه حمله تقطیر مدل یا همون Distillation Attack در مقیاس بزرگ بهشون زدن که حدود ۱.۴ درصد از کاربرای کنسول این پلتفرم رو درگیر کرده. البته خودشون همون اول صبح به تمام این کاربرای متأثر با ایمیل خبر دادن تا حواسشون جمع باشه. داستان هنوز به‌طور کامل جمع نشده و جزئیات ریزترش لو نرفته، اما دارن دوشادوش غول‌های هوش مصنوعی مثل OpenAI، آنتروپیک و گوگل بدو بدو کار می‌کنن تا این نشتی امنیتی رو برطرف کنن.\n\nچرا مهمه؟ اهمیتش اینه که توی حملات تقطیر میان خروجی‌ها و اسرار مدل رو بالا می‌کشن و وقتی اسم سه تا غول اصلی هوش مصنوعی وسط میاد، یعنی قضیه فراتر از یه هک معمولیه.",
   "date": "2026-10-17T17:57:45+00:00"
  },
+ "gholam_checked": "2026-10-24T23:11:46+00:00",
  "links": [
   {
    "kind": "tweet",
@@ -35,18 +42,6 @@
    "links": []
   }
  ],
- "media": [],
- "preview": {
-  "url": "https://fxtwitter.com/opencode/status/2111516673953935833?s=52&t=F41Qa04r48Mef_j_XjBneQ",
-  "site": "FxTwitter",
-  "title": "OpenCode (@opencode)",
-  "description": "We had a security breach last night related to a large scale distillation attack that impacted 1.4% of OpenCode Console users\nWe have notified them all this morning via email\nThe incident is ongoing so we cannot share more details at this point but we are…",
-  "image": {
-   "src": "media/5947/preview.webp",
-   "width": 200,
-   "height": 200
-  }
- },
  "article": {
   "title": "دیشب پلتفرم OpenCode بدجوری رکب خورده و یه رخنه امنیتی درست‌وحسابی رو تجربه کرده",
   "source_title": "We had a security breach last night related to a large scale distillation attack that impacted 1.4% of OpenCode Console users",
@@ -58,6 +53,5 @@
    "امنیت"
   ]
  },
- "updated": "2026-10-24T23:11:46+00:00",
- "gholam_checked": "2026-10-24T23:11:46+00:00"
+ "updated": "2026-10-25T11:54:10+00:00"
 }

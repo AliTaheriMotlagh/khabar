@@ -1,0 +1,50 @@
+{
+ "id": 5816,
+ "url": "https://t.me/dlmehr/5816",
+ "date": "2026-10-12T00:07:53+00:00",
+ "text": "https://fxtwitter.com/thsottiaux/status/2109430343346581527?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+ "forwarded_from": null,
+ "digest": false,
+ "hash": "76591f96c576",
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/thsottiaux/status/2109430343346581527?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+  "site": "🧵 Thread • FxTwitter",
+  "title": "Tibo (@thsottiaux)",
+  "description": "Day 7/\nWe have increased default context length for GPT-6.1 Sol to 500k when used through Codex & Work, up from 272k or an ~ 80% increase.\nWe will go higher in the future, but it helps reduce occurrence of compactions and with tasks that require keeping…",
+  "image": "https://cdn4.telesco.pe/file/HnnT0ZFzKUajp8tIwiNzI_JwjR8U2Zjj8NM04Sw5eC6aN9h_ztLC9h1SvQb_bPKGByX_7JyGqhrSi9pWkb7g-ZUkBIcZQmkkvVek6jIOZnfzXwzCEo4PBOnrZxejG2L3hU9krsJpQ1f_Bfidgpesb5DV8eVCAspVH2Bfrs4m-xg_7DJ4Io3Rc8BeUpvUu3M0wKZRz5DFR1QYID2PUWVV0dSsIW9Qcbz06nn4MM3PLcgAIQJhiPb4hUKXJ8SySqiWjd4HlIWHHIGjJxe9gBrgKvqEDKGnHSRnoX6h6W3Rb7Vtc7qPGl-38u5qJIco2_b5_ES6s1TvA1soP5Rdn4BRKQ.jpg"
+ },
+ "gholam": {
+  "text": "خلاصه رفیق، تیم توسعه اومده طول کانتکست پیش‌فرض مدل GPT-6.1 Sol رو توی Codex و Work از ۲۷۲ هزار توکن رسونده به ۵۰۰ هزار که یعنی یه ارتقای مشتی و حدوداً ۸۰ درصدی. تیبو توضیح داده که این کار جلوی فشرده‌سازی بی‌مورد داده‌ها رو می‌گیره و باعث می‌شه هوش مصنوعی جزئیات و ظرافت‌های پروژه‌های طولانی رو کامل تو ذهنش نگه داره. البته دستت کاملاً بازه و اگه بخوای می‌تونی دستی کم و زیادش کنی، چون سقف نهایی حافظه این مدل تا ۱ میلیون توکن هم می‌رسه، ولی فعلاً این عدد ۵۰۰ هزار تا رو به عنوان نقطه طلایی و بهینه انتخاب کردن. قراره در آینده هم بالاتر برن، اما فعلاً با همین فرمون کارِ بیشتر کاربرا رو بدون افت کیفیت راه می‌ندازن.\n\nچرا مهمه؟ چون وسط پروژه‌های سنگین کدنویسی دیگه خیالت راحته که مدل کانتکست اصلی رو گم نمی‌کنه و الکی اطلاعات قبلی رو دور نمی‌ریزه.",
+  "date": "2026-10-12T00:08:09+00:00"
+ },
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/thsottiaux/status/2109430343346581527",
+   "domain": "x.com",
+   "author": {
+    "name": "Tibo",
+    "handle": "thsottiaux",
+    "avatar": "https://pbs.twimg.com/profile_images/2093807917833281537/2yBgpwVV_200x200.jpg"
+   },
+   "text": "Day 7/\n\nWe have increased default context length for GPT-6.1 Sol to 500k when used through Codex & Work, up from 272k or an ~ 80% increase.\n\nWe will go higher in the future, but it helps reduce occurrence of compactions and with tasks that require keeping a lot of context and nuance over periods of time. It was carefully tested and is the new sweet spot for most of our users. You can still override it if you want to be higher our lower, with maximum context length of GPT-6.1 Sol of 1M.",
+   "date": 1791762359,
+   "media": [],
+   "links": []
+  }
+ ],
+ "article": {
+  "title": "تیم توسعه اومده طول کانتکست پیش‌فرض مدل GPT-6.1 Sol رو توی Codex و Work از ۲۷۲ هزار توکن رسونده به ۵۰۰ هزار که یعنی یه ارتقای مشتی و حدوداً ۸۰ درصدی",
+  "source_title": "Day 7/",
+  "body": [
+   "خلاصه رفیق، تیم توسعه اومده طول کانتکست پیش‌فرض مدل GPT-6.1 Sol رو توی Codex و Work از ۲۷۲ هزار توکن رسونده به ۵۰۰ هزار که یعنی یه ارتقای مشتی و حدوداً ۸۰ درصدی. تیبو توضیح داده که این کار جلوی فشرده‌سازی بی‌مورد داده‌ها رو می‌گیره و باعث می‌شه هوش مصنوعی جزئیات و ظرافت‌های پروژه‌های طولانی رو کامل تو ذهنش نگه داره. البته دستت کاملاً بازه و اگه بخوای می‌تونی دستی کم و زیادش کنی، چون سقف نهایی حافظه این مدل تا ۱ میلیون توکن هم می‌رسه، ولی فعلاً این عدد ۵۰۰ هزار تا رو به عنوان نقطه طلایی و بهینه انتخاب کردن. قراره در آینده هم بالاتر برن، اما فعلاً با همین فرمون کارِ بیشتر کاربرا رو بدون افت کیفیت راه می‌ندازن."
+  ],
+  "why": "چون وسط پروژه‌های سنگین کدنویسی دیگه خیالت راحته که مدل کانتکست اصلی رو گم نمی‌کنه و الکی اطلاعات قبلی رو دور نمی‌ریزه.",
+  "tags": [
+   "اوپن‌ای‌آی"
+  ]
+ },
+ "updated": "2026-10-25T12:23:50+00:00",
+ "gholam_checked": "2026-10-25T12:23:50+00:00"
+}

@@ -1,0 +1,68 @@
+{
+ "id": 4536,
+ "url": "https://t.me/dlmehr/4536",
+ "date": "2026-08-02T05:59:35+00:00",
+ "text": "https://fxtwitter.com/dannylimanseta/status/2083753286113636644?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+ "forwarded_from": null,
+ "digest": false,
+ "hash": "ec8cc67e5c7a",
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/dannylimanseta/status/2083753286113636644?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+  "site": "FxTwitter",
+  "title": "Danny Limanseta (@DannyLimanseta)",
+  "description": "The model’s limited visual capability is the biggest bottleneck when building games with AI.\nIt’s probably the one thing preventing AI from recursively building and refining games at speed.\nOnce that’s unlocked, we will likely see a cambrian explosion…",
+  "image": null
+ },
+ "gholam": {
+  "text": "رفیق، حرف حسابش اینه که فعلاً گلوگاه اصلی بازی‌سازی با هوش مصنوعی، ضعیف بودن درک بصری مدل‌هاست؛ اگه این بینایی حل بشه تازه انفجار بازی‌سازی خودکار راه می‌افته.",
+  "date": "2026-08-02T06:05:32+00:00"
+ },
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/DannyLimanseta/status/2083753286113636644",
+   "domain": "x.com",
+   "author": {
+    "name": "Danny Limanseta",
+    "handle": "DannyLimanseta",
+    "avatar": "https://pbs.twimg.com/profile_images/1653760191542996994/gxsaTn-0_200x200.png"
+   },
+   "text": "The model’s limited visual capability is the biggest bottleneck when building games with AI. \n\nIt’s probably the one thing preventing AI from recursively building and refining games at speed.\n\nOnce that’s unlocked, we will likely see a cambrian explosion of games and interactive experiences.",
+   "date": 1785640472,
+   "media": [],
+   "links": [],
+   "quote": {
+    "author": {
+     "name": "Andrej Karpathy",
+     "handle": "karpathy",
+     "avatar": "https://pbs.twimg.com/profile_images/1296667294148382721/9Pr6XrPB_200x200.jpg"
+    },
+    "text": "We're starting to leave the territory where you'd test an LLM by e.g. \"create an svg of pelican on a bicycle\". As one idea to generalize it, I was interested what Opus 5 would do if I gave it the first paragraph of the Lord of the Rings, a 1M token budget (~$10) and asked for three js render of it. Opus went off for ~2 hours and wrote 5500 lines of code that (procedurally) rendered the story. It's kind of janky but fun. But it's a bit mindboggling that the LLM has to place and orchestrate various polygon assets in (x,y,z) coordinates and write code that animates it all, and that it even does anything at all.\n\nI also like this kind of examples because no one in their right mind would ever spend the time to write something this custom but LLMs have all the stamina and patience in the world, so it's an example where we go from \"no one would ever do this\" to \"sure, why not, it's ~free\". There might be a lot more. But I'm excited about creating hyper custom worlds that you can imagine dropping players into, e.g. here to participate in the LoTR story as a spectator NPC, or one of the characters, or etc. Something like an ephemeral GTA of X on demand.\n\nLast thought is that the domain of worlds/games exposes a weakness in LLMs: they can't easily audit their work because they aren't able to efficiently and natively perceive videos or play games within them. Here, Opus 5 had to very slowly and painstakingly take screenshots at different points, and it messed up a few times and created a bunch of jank. An example of raw capability (multimodal, gameplay) that I think is still quite lacking.",
+    "date": 1785639609,
+    "media": [
+     {
+      "type": "video",
+      "src": "https://video.twimg.com/amplify_video/2083744791876292608/vid/avc1/1280x720/8ii9jh8COyGAF3iY.mp4?tag=29",
+      "poster": "https://pbs.twimg.com/amplify_video_thumb/2083744791876292608/img/tWEKnM_bdE_nlfYD.jpg",
+      "ratio": 0.5625,
+      "duration": 92.633,
+      "gif": false
+     }
+    ],
+    "links": []
+   }
+  }
+ ],
+ "article": {
+  "title": "حرف حسابش اینه که فعلاً گلوگاه اصلی بازی‌سازی با هوش مصنوعی، ضعیف بودن درک بصری مدل‌هاست؛ اگه این بینایی حل بشه تازه انفجار بازی‌سازی خودکار راه می‌افته",
+  "source_title": "The model’s limited visual capability is the biggest bottleneck when building games with AI.",
+  "body": [
+   "رفیق، حرف حسابش اینه که فعلاً گلوگاه اصلی بازی‌سازی با هوش مصنوعی، ضعیف بودن درک بصری مدل‌هاست؛ اگه این بینایی حل بشه تازه انفجار بازی‌سازی خودکار راه می‌افته."
+  ],
+  "why": null,
+  "tags": []
+ },
+ "updated": "2026-10-25T12:31:11+00:00",
+ "gholam_checked": "2026-10-25T12:31:11+00:00"
+}

@@ -1,0 +1,72 @@
+{
+ "id": 5353,
+ "url": "https://t.me/dlmehr/5353",
+ "date": "2026-09-17T22:59:48+00:00",
+ "text": "https://fxtwitter.com/EMostaque/status/2100697342437446027",
+ "forwarded_from": "Amirreza",
+ "digest": false,
+ "hash": "f2d54b47ae36",
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/EMostaque/status/2100697342437446027",
+  "site": "FxTwitter",
+  "title": "Emad (@EMostaque)",
+  "description": "Who need words any more\nWords are just human kludge\nAI don’t need no words\nQuoting Cactus Compute (@cactuscompute)\nWe release Needle 3: A Sliceable 8-29MB automation foundation model that can match DeepSeek V4 Flash.\nOne set of weights, every depth…",
+  "image": null
+ },
+ "gholam": {
+  "text": "رفیق، قضیه داره جالب می‌شه؛ تیم Cactus Compute یه مدل فوق‌سبک به اسم Needle 3 معرفی کرده که حجمش کلاً بین ۸ تا ۲۹ مگابایته، ولی ادعا می‌کنن حریف سرسخت غولی مثل DeepSeek V4 Flash می‌شه. این مدل جمع‌وجور با ۲۵ تا ۱۲۱ میلیون پارامتر طراحی شده و با معماری خاصش می‌شه لایه‌هاش رو از ۲ تا ۲۰ لایه برش داد و خیلی سریع و محلی اجراش کرد. عماد مستاق هم با بازنشر این خبر تیکه انداخته و نوشته دیگه کلمات به چه دردی می‌خورن، کلمه فقط وصله‌پینه‌ی انسانیه و هوش مصنوعی اصلاً بهش نیازی نداره.\n\nچرا مهمه؟ اهمیتش اینه که نشون میده تب هوش مصنوعی از غول‌های چندصد گیگابایتی به سمت مدل‌های ریزه‌میزه و فوق‌بهینه‌ای رفته که بدون نیاز به اینترنت و سرور، روی سیستم خودت کولاک می‌کنن.",
+  "date": "2026-09-17T22:59:59+00:00"
+ },
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/EMostaque/status/2100697342437446027",
+   "domain": "x.com",
+   "author": {
+    "name": "Emad",
+    "handle": "EMostaque",
+    "avatar": "https://pbs.twimg.com/profile_images/1774915113922809856/6RXK1Yy0_200x200.png"
+   },
+   "text": "Who need words any more \n\nWords are just human kludge \n\nAI don’t need no words",
+   "date": 1789680250,
+   "media": [],
+   "links": [],
+   "quote": {
+    "author": {
+     "name": "Cactus Compute",
+     "handle": "cactuscompute",
+     "avatar": "https://pbs.twimg.com/profile_images/1978515814526722048/b9O5bLc__200x200.jpg"
+    },
+    "text": "We release Needle 3: A Sliceable 8-29MB automation foundation model that can match DeepSeek V4 Flash. \n\nOne set of weights, every depth from 2 to 20 layers a model of its own, 25-121M parameters at CQ2-bit, built on our Simple Attention Networks and running locally at up to 4k tokens/sec decode speed on a Raspberry Pi 5.\n\nNeedle does not chat. Every turn is a function call: give it the tools your app exposes and it picks the right ones and fills every argument from what the user said, or hand it a schema and it returns a typed record. Ask for something no tool covers and you get an empty list, not a guess. \n\nThat trade is lets 121M parameters trained on 360B tokens of structured data beat models 10x their size on mobile tool calls and match 2-3x bigger models on structured JSON extraction.\n\nIt runs on mobiles, wearables, smart home devices, small robots and microcontrollers, with prebuilt engines for macOS, Linux, Windows, Android, iOS, watchOS, tvOS, the browser and WASI hosts. Try it in your browser: https://cactuscompute.com/needle",
+    "date": 1789677527,
+    "media": [
+     {
+      "type": "video",
+      "src": "https://video.twimg.com/amplify_video/2100685534133989376/vid/avc1/1280x720/vM9j6NcxDjDG5xKC.mp4?tag=29",
+      "poster": "https://pbs.twimg.com/amplify_video_thumb/2100685534133989376/img/nhPVHDAuH-eG_Sim.jpg",
+      "ratio": 0.5625,
+      "duration": 51.166,
+      "gif": false
+     }
+    ],
+    "links": [
+     "https://cactuscompute.com/needle"
+    ]
+   }
+  }
+ ],
+ "article": {
+  "title": "قضیه داره جالب می‌شه؛ تیم Cactus Compute یه مدل فوق‌سبک به اسم Needle 3 معرفی کرده که حجمش کلاً بین ۸ تا ۲۹ مگابایته، ولی ادعا می‌کنن حریف سرسخت غولی مثل DeepSeek V4 Flash می‌شه",
+  "source_title": "Who need words any more",
+  "body": [
+   "رفیق، قضیه داره جالب می‌شه؛ تیم Cactus Compute یه مدل فوق‌سبک به اسم Needle 3 معرفی کرده که حجمش کلاً بین ۸ تا ۲۹ مگابایته، ولی ادعا می‌کنن حریف سرسخت غولی مثل DeepSeek V4 Flash می‌شه. این مدل جمع‌وجور با ۲۵ تا ۱۲۱ میلیون پارامتر طراحی شده و با معماری خاصش می‌شه لایه‌هاش رو از ۲ تا ۲۰ لایه برش داد و خیلی سریع و محلی اجراش کرد. عماد مستاق هم با بازنشر این خبر تیکه انداخته و نوشته دیگه کلمات به چه دردی می‌خورن، کلمه فقط وصله‌پینه‌ی انسانیه و هوش مصنوعی اصلاً بهش نیازی نداره."
+  ],
+  "why": "اهمیتش اینه که نشون میده تب هوش مصنوعی از غول‌های چندصد گیگابایتی به سمت مدل‌های ریزه‌میزه و فوق‌بهینه‌ای رفته که بدون نیاز به اینترنت و سرور، روی سیستم خودت کولاک می‌کنن.",
+  "tags": [
+   "چین"
+  ]
+ },
+ "updated": "2026-10-25T12:26:38+00:00",
+ "gholam_checked": "2026-10-25T12:26:38+00:00"
+}

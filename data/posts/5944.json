@@ -2,16 +2,23 @@
  "id": 5944,
  "url": "https://t.me/dlmehr/5944",
  "date": "2026-10-17T13:59:44+00:00",
- "edited": true,
- "views": "231",
  "text": "https://fxtwitter.com/deepseek_ai/status/2111375640717033777?s=52&t=F41Qa04r48Mef_j_XjBneQ",
  "forwarded_from": null,
  "digest": false,
  "hash": "86016166b354",
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/deepseek_ai/status/2111375640717033777?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+  "site": "🧵 Thread • FxTwitter",
+  "title": "DeepSeek (@deepseek_ai)",
+  "description": "🚀\nDeepSeek-V4.1-Flash-1017 is here!\nStronger benchmark performance, faster task completion, and shorter outputs than the previous version—a Pareto improvement in performance and cost. Now live on our website, app, and API.\n🛠️\nOptimized for @DeepSeekHarness…",
+  "image": "https://cdn4.telesco.pe/file/fDTxOlmlIIcUljNIexHUKouWELtYgJa5ZZN_5tGInRsKTuP0phyhp3tpNiA8PlWO6b4ejcayuDHFETFNKYpvv7g5i6ruxLeCiuzbpyOG_stNWoTuAmZlxncg0hqM7FvOv6uokPraf6B1bUvk7VUoUPsRrn1sVGmuWz-jJum01rs01WnfoVSR-xTEO7QRFD73-sc2AUiDpbmdxmp8mTDhpeJYDtiDu-5eRJvrFcan9gyEEeiMJ4QGd4Rci9sonIb-yd56sL8vVjezvbGnjHfCsclco-Tng0b5WdtrqO6_ai5Bd9o0dvWn85XYgEZImjOewJ9v9b_k5e_cWeXngwdvag.jpg"
+ },
  "gholam": {
   "text": "رفقا، بچه‌های دیپ‌سیک رسماً از مدل تازه و تیزوبزشون یعنی DeepSeek-V4.1-Flash رونمایی کردن و همین الان انداختنش رو خطِ سایت، اپلیکیشن و API. این غول جدید تو بنچمارک‌ها حسابی گردوخاک کرده؛ هم کارها رو به‌شدت سریع‌تر جم‌وجور می‌کنه و هم جواب‌ها رو خلاصه‌تر و مفیدتر تحویل میده تا هم کیفیت بالا بره و هم هزینه‌ها حسابی سرشکن بشه. از اون‌طرف مدل رو مخصوص ابزارهایی مثل تنسنت کدبادی و ورک‌بادی میزان و ردیف کردن تا اهل فن و برنامه‌نویس‌ها عشق کنن. خلاصه سازنده‌ها سفارش اکید کردن که برای چشیدن طعم واقعی این سرعت، حتماً ابزار هارنس رو به نسخه ۰.۲.۱ به بالا ارتقا بدید.\n\nاهمیتش اینه که با افزایش سرعت پاسخ‌دهی و بهینه‌تر شدن خروجی‌ها، هزینه و زمان استفاده از هوش مصنوعی برای کاربرا و برنامه‌نویس‌ها به‌شدت پایین میاد.",
   "date": "2026-10-17T14:00:05+00:00"
  },
+ "gholam_checked": "2026-10-24T23:11:47+00:00",
  "links": [
   {
    "kind": "tweet",
@@ -50,18 +57,6 @@
    "links": []
   }
  ],
- "media": [],
- "preview": {
-  "url": "https://fxtwitter.com/deepseek_ai/status/2111375640717033777?s=52&t=F41Qa04r48Mef_j_XjBneQ",
-  "site": "🧵 Thread • FxTwitter",
-  "title": "DeepSeek (@deepseek_ai)",
-  "description": "🚀\nDeepSeek-V4.1-Flash-1017 is here!\nStronger benchmark performance, faster task completion, and shorter outputs than the previous version—a Pareto improvement in performance and cost. Now live on our website, app, and API.\n🛠️\nOptimized for @DeepSeekHarness…",
-  "image": {
-   "src": "media/5944/preview.webp",
-   "width": 466,
-   "height": 800
-  }
- },
  "article": {
   "title": "رفقا، بچه‌های دیپ‌سیک رسماً از مدل تازه و تیزوبزشون یعنی DeepSeek-V4.1-Flash رونمایی کردن و همین الان انداختنش رو خطِ سایت، اپلیکیشن و API",
   "source_title": "🚀 DeepSeek-V4.1-Flash-1017 is here!",
@@ -73,6 +68,5 @@
    "چین"
   ]
  },
- "updated": "2026-10-24T23:11:47+00:00",
- "gholam_checked": "2026-10-24T23:11:47+00:00"
+ "updated": "2026-10-25T11:54:10+00:00"
 }

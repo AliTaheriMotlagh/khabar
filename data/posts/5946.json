@@ -2,16 +2,23 @@
  "id": 5946,
  "url": "https://t.me/dlmehr/5946",
  "date": "2026-10-17T17:30:13+00:00",
- "edited": true,
- "views": "221",
  "text": "https://fxtwitter.com/mattjay/status/2111476982580211851?s=52&t=F41Qa04r48Mef_j_XjBneQ",
  "forwarded_from": null,
  "digest": false,
  "hash": "0db830a5aee0",
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/mattjay/status/2111476982580211851?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+  "site": "FxTwitter",
+  "title": "Matt Johansen (@mattjay)",
+  "description": "Seems OpenCode customers getting notices of a breach. Got some DMs that people’s API keys are running up charges.\nNot seeing it on the news yet. Anyone else?",
+  "image": "https://cdn4.telesco.pe/file/hK-TnP24OSCygw6kgmqxf99W4x-2VH8ardy4Yh10V_SbPiRH_-0PXiw82JvstE8uNLhE6VKWavr10unLnBDhTpXzEqrH28wG70-Wc0uSzAWVLPZbjOyuWXU4IQ5TzH5cVUPOvum5OyXwR2DgWLcZMspfs6S2PUu_68fo3IlNV33As1mvIILZPfLtpbXeBgWovIE0aq85GHCTp5vX3C0Wkhgm88zhplHWECgrLdImET34U1wj9dwRm1nswCDfDmYLI1EnRUBjQI3XEKNRdjNc3s7rM2tdmuMwiapBp3APxAuKyAyAAJmCbdagiTW0fPUdyTxoNBtY_63pAje-762l4g.jpg"
+ },
  "gholam": {
   "text": "ببین رفیق، مت یوهانسن که از بچه‌های کاردرست حوزه امنیته خبر آورده که ظاهراً یه بلبشویی تو پلتفرم اوپن‌کد راه افتاده و کاربرا دارن اخطار هک و رخنه دریافت می‌کنن. قضیه از این قراره که یه عده توی دایرکت بهش خبر دادن کلیدهای API حساب‌شون لو رفته و هکرها دارن باهاش حسابی خرج می‌تراشن و هزینه‌های سنگین می‌اندازن گردنشون. ماجرا هنوز به اخبار رسمی نکشیده و فعلاً در حد هشدارهای خود مردمه، اما شواهد نشون می‌ده که قفل و زنجیر امنیتی حساب‌ها بدجوری آسیب دیده. خلاصه اگه با این سرویس سر و کار داری، بد به دلت راه نده اما معطل نکن و سریع حساب‌کتاب و دسترسی‌هات رو چک کن تا کلاه گشاد سرت نره.\nچرا مهمه؟ چون وقتی کلید API لو بره، هکر هم می‌تونه به داده‌هات دستبرد بزنه و هم با مصرف بی‌رویه، جیبت رو سر ماه حسابی خالی کنه.",
   "date": "2026-10-17T17:30:33+00:00"
  },
+ "gholam_checked": "2026-10-24T23:11:46+00:00",
  "links": [
   {
    "kind": "tweet",
@@ -35,14 +42,6 @@
    "links": []
   }
  ],
- "media": [],
- "preview": {
-  "url": "https://fxtwitter.com/mattjay/status/2111476982580211851?s=52&t=F41Qa04r48Mef_j_XjBneQ",
-  "site": "FxTwitter",
-  "title": "Matt Johansen (@mattjay)",
-  "description": "Seems OpenCode customers getting notices of a breach. Got some DMs that people’s API keys are running up charges.\nNot seeing it on the news yet. Anyone else?",
-  "image": null
- },
  "article": {
   "title": "مت یوهانسن که از بچه‌های کاردرست حوزه امنیته خبر آورده که ظاهراً یه بلبشویی تو پلتفرم اوپن‌کد راه افتاده و کاربرا دارن اخطار هک و رخنه دریافت می‌کنن",
   "source_title": "Seems OpenCode customers getting notices of a breach. Got some DMs that people’s API keys are running up charges.",
@@ -54,6 +53,5 @@
    "امنیت"
   ]
  },
- "updated": "2026-10-24T23:11:46+00:00",
- "gholam_checked": "2026-10-24T23:11:46+00:00"
+ "updated": "2026-10-25T11:54:10+00:00"
 }

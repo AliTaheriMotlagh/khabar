@@ -2,16 +2,23 @@
  "id": 5974,
  "url": "https://t.me/dlmehr/5974",
  "date": "2026-10-19T18:11:17+00:00",
- "edited": true,
- "views": "189",
  "text": "https://fxtwitter.com/stefanoermon/status/2112222911218291051?s=52&t=F41Qa04r48Mef_j_XjBneQ",
  "forwarded_from": null,
  "digest": false,
  "hash": "8bf13d44dbd6",
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/stefanoermon/status/2112222911218291051?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+  "site": "🧵 Thread • FxTwitter",
+  "title": "Stefano Ermon (@StefanoErmon)",
+  "description": "1/4 Today, we’re releasing Mercury 3. Mercury 3 is by far our most powerful model and the most intelligent diffusion LLM ever released. It outperforms GPT-6 Luna and Haiku 5.5 on quality while running at 1000+ tok/sec.",
+  "image": null
+ },
  "gholam": {
   "text": "رفیق، استفانو ارمون اومده و رسماً از مدل خفن جدیدشون به اسم مرکوری ۳ رونمایی کرده و مدعی شده که باهوش‌ترین ال‌ال‌ام مبتنی بر دیفیوژنه که تا حالا به دنیا معرفی شده. داستان از این قراره که طبق ادعای خودشون، این مدل تو کیفیت خروجی تونسته غول‌هایی مثل جی‌پی‌تی-۶ لونا و هایکو ۵.۵ رو هم پشت سر بذاره و بدجور گردوخاک راه بندازه. از اون جذاب‌تر سرعت پردازششه که با رکورد عجیب بیش از ۱۰۰۰ توکن بر ثانیه کار می‌کنه و نشون میده چقدر این معماری رو سریع و روون کردن.\n\nاهمیتش اینه که اگه این ادعاها درست باشه، نشون میده مدل‌های دیفیوژن دارن با سرعت سرسام‌آور جای پاشون رو سفت می‌کنن و می‌تونن آینده و موازنه قدرت تو دنیای هوش مصنوعی رو حسابی تکون بدن.",
   "date": "2026-10-19T18:11:35+00:00"
  },
+ "gholam_checked": "2026-10-24T23:11:43+00:00",
  "links": [
   {
    "kind": "tweet",
@@ -46,14 +53,6 @@
    "links": []
   }
  ],
- "media": [],
- "preview": {
-  "url": "https://fxtwitter.com/stefanoermon/status/2112222911218291051?s=52&t=F41Qa04r48Mef_j_XjBneQ",
-  "site": "🧵 Thread • FxTwitter",
-  "title": "Stefano Ermon (@StefanoErmon)",
-  "description": "1/4 Today, we’re releasing Mercury 3. Mercury 3 is by far our most powerful model and the most intelligent diffusion LLM ever released. It outperforms GPT-6 Luna and Haiku 5.5 on quality while running at 1000+ tok/sec.",
-  "image": null
- },
  "article": {
   "title": "استفانو ارمون اومده و رسماً از مدل خفن جدیدشون به اسم مرکوری ۳ رونمایی کرده و مدعی شده که باهوش‌ترین ال‌ال‌ام مبتنی بر دیفیوژنه که تا حالا به دنیا معرفی شده",
   "source_title": "1/4 Today, we’re releasing Mercury 3. Mercury 3 is by far our most powerful model and the most intelligent diffusion LLM ever released. It…",
@@ -65,6 +64,5 @@
    "اوپن‌ای‌آی"
   ]
  },
- "updated": "2026-10-24T23:11:43+00:00",
- "gholam_checked": "2026-10-24T23:11:43+00:00"
+ "updated": "2026-10-25T11:54:08+00:00"
 }

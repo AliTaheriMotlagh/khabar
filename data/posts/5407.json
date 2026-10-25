@@ -1,0 +1,70 @@
+{
+ "id": 5407,
+ "url": "https://t.me/dlmehr/5407",
+ "date": "2026-09-22T02:17:22+00:00",
+ "text": "https://fxtwitter.com/meta_engineers/status/2102117645986431134?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+ "forwarded_from": null,
+ "digest": false,
+ "hash": "a8c8a39cbe84",
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/meta_engineers/status/2102117645986431134?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+  "site": "FxTwitter",
+  "title": "Engineering at Meta (@Meta_Engineers)",
+  "description": "Today we’re announcing Petal: the world’s first petabit-class transoceanic subsea cable and the first to deploy multi-core fiber at scale.\nSpanning 7,000 km (4,000+ mi) between France and the United States, Petal will deliver 1 Petabit per second (1 Pbps…",
+  "image": null
+ },
+ "gholam": {
+  "text": "ببین رفیق، بچه‌های فنی متا دست به یه کار بزرگ زدن و از کابل زیردریایی جدیدی به اسم پتال رونمایی کردن که قراره ته اقیانوس جا خوش کنه. این غول ارتباطی اولین کابل اقیانوس‌پیمای کلاس پتابیت تو دنیاست که با فناوری فیبر چندهسته‌ای، مسیر هفت هزار کیلومتری بین فرانسه و آمریکا رو به هم وصل می‌کنه. پهنای باندش سرسام‌آوره و سرعت انتقالش به یک پتابیت بر ثانیه یعنی هزار ترابیت می‌رسه که عملاً ظرفیت پیشرفته‌ترین کابل‌های فعلی رو دو برابر می‌کنه. طبق برنامه این پروژه عظیم قراره تا سال ۲۰۲۹ آماده کار بشه و استاندارد جدیدی برای زیرساخت‌های اینترنت رقم بزنه.\n\nچرا مهمه؟ چون با سرعت سرسام‌آور رشد هوش مصنوعی و تبادل اطلاعات، این کابل حکم رگ حیاتی ارتباطات دیجیتال بین دو قاره رو بازی می‌کنه تا اینترنت جهانی کم نیاره.",
+  "date": "2026-09-22T02:17:34+00:00"
+ },
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/Meta_Engineers/status/2102117645986431134",
+   "domain": "x.com",
+   "author": {
+    "name": "Engineering at Meta",
+    "handle": "Meta_Engineers",
+    "avatar": "https://pbs.twimg.com/profile_images/1453866309851049989/Iq6B3KjP_200x200.png"
+   },
+   "text": "Today we’re announcing Petal: the world’s first petabit-class transoceanic subsea cable and the first to deploy multi-core fiber at scale.\n\nSpanning 7,000 km (4,000+ mi) between France and the United States, Petal will deliver 1 Petabit per second (1 Pbps / 1,000 Tbps), doubling the capacity of today’s most advanced transatlantic systems.\n\nPetal is set to enter service in 2029, setting a new standard for high capacity, high density SDM subsea cable designs.\n\nRead the full technical breakdown on our engineering blog: https://engineering.fb.com/2026/09/21/connectivity/inside-petal-building-the-worlds-first-petabit-class-transoceanic-subsea-cable/",
+   "date": 1790018876,
+   "media": [
+    {
+     "type": "video",
+     "src": "https://video.twimg.com/amplify_video/2102117574570029056/vid/avc1/1280x720/fE0Eq1Cwr_xhA2Gm.mp4?tag=29",
+     "poster": "https://pbs.twimg.com/amplify_video_thumb/2102117574570029056/img/uEgxJbhvnHaQJIam.jpg",
+     "ratio": 0.5625,
+     "duration": 14.4,
+     "gif": false
+    }
+   ],
+   "links": [
+    "https://engineering.fb.com/2026/09/21/connectivity/inside-petal-building-the-worlds-first-petabit-class-transoceanic-subsea-cable/"
+   ]
+  },
+  {
+   "kind": "link",
+   "url": "https://engineering.fb.com/2026/09/21/connectivity/petal-petabit-transoceanic-subsea-cable/",
+   "domain": "engineering.fb.com",
+   "title": "Inside Petal: Building the World’s First Petabit-Class Transoceanic Subsea Cable",
+   "description": "Petal, the next step in Meta’s subsea innovation, will be the first subsea cable to deliver petabit capacity at transoceanic distances, connecting France and the United States over approximately 7,…",
+   "image": "https://engineering.fb.com/wp-content/uploads/2026/09/Announcing-Petal-a-First-of-its-Kind-Transoceanic-Subsea-Cable_Header.jpg",
+   "site": "Engineering at Meta"
+  }
+ ],
+ "article": {
+  "title": "بچه‌های فنی متا دست به یه کار بزرگ زدن و از کابل زیردریایی جدیدی به اسم پتال رونمایی کردن که قراره ته اقیانوس جا خوش کنه",
+  "source_title": "Today we’re announcing Petal: the world’s first petabit-class transoceanic subsea cable and the first to deploy multi-core fiber at scale.",
+  "body": [
+   "ببین رفیق، بچه‌های فنی متا دست به یه کار بزرگ زدن و از کابل زیردریایی جدیدی به اسم پتال رونمایی کردن که قراره ته اقیانوس جا خوش کنه. این غول ارتباطی اولین کابل اقیانوس‌پیمای کلاس پتابیت تو دنیاست که با فناوری فیبر چندهسته‌ای، مسیر هفت هزار کیلومتری بین فرانسه و آمریکا رو به هم وصل می‌کنه. پهنای باندش سرسام‌آوره و سرعت انتقالش به یک پتابیت بر ثانیه یعنی هزار ترابیت می‌رسه که عملاً ظرفیت پیشرفته‌ترین کابل‌های فعلی رو دو برابر می‌کنه. طبق برنامه این پروژه عظیم قراره تا سال ۲۰۲۹ آماده کار بشه و استاندارد جدیدی برای زیرساخت‌های اینترنت رقم بزنه."
+  ],
+  "why": "چون با سرعت سرسام‌آور رشد هوش مصنوعی و تبادل اطلاعات، این کابل حکم رگ حیاتی ارتباطات دیجیتال بین دو قاره رو بازی می‌کنه تا اینترنت جهانی کم نیاره.",
+  "tags": [
+   "متا"
+  ]
+ },
+ "updated": "2026-10-25T12:26:15+00:00",
+ "gholam_checked": "2026-10-25T12:26:15+00:00"
+}

@@ -1,0 +1,68 @@
+{
+ "id": 4989,
+ "url": "https://t.me/dlmehr/4989",
+ "date": "2026-08-27T18:28:07+00:00",
+ "text": "https://fxtwitter.com/anthropicai/status/2093038426140651791?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+ "forwarded_from": null,
+ "digest": false,
+ "hash": "c771a9db12a0",
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/anthropicai/status/2093038426140651791?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+  "site": "🧵 Thread • FxTwitter",
+  "title": "Anthropic (@AnthropicAI)",
+  "description": "Today, we're kicking off the first phase of the research preview for Model Hardware Standard (MHS): a new standard for AI agents to safely operate physical equipment in scientific research and advanced manufacturing.\nRead more: https://www.anthropic.com/news/model…",
+  "image": null
+ },
+ "gholam": {
+  "text": "Could not summarize that message: 503 UNAVAILABLE. {&#x27;error&#x27;: {&#x27;code&#x27;: 503, &#x27;message&#x27;: &#x27;This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.&#x27;, &#x27;status&#x27;: &#x27;UNAVAILABLE&#x27;}}",
+  "date": "2026-08-27T18:28:14+00:00"
+ },
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/AnthropicAI/status/2093038426140651791",
+   "domain": "x.com",
+   "author": {
+    "name": "Anthropic",
+    "handle": "AnthropicAI",
+    "avatar": "https://pbs.twimg.com/profile_images/1798110641414443008/XP8gyBaY_200x200.jpg"
+   },
+   "text": "Today, we're kicking off the first phase of the research preview for Model Hardware Standard (MHS): a new standard for AI agents to safely operate physical equipment in scientific research and advanced manufacturing. \n\nRead more: https://www.anthropic.com/news/model-hardware-standard-research-preview",
+   "date": 1787854222,
+   "media": [
+    {
+     "type": "video",
+     "src": "https://video.twimg.com/amplify_video/2093037958257610752/vid/avc1/1048x720/nmIY3K8jo3UP3gE1.mp4?tag=29",
+     "poster": "https://pbs.twimg.com/media/HQwLzwAbkAEQf1S.jpg",
+     "ratio": 0.75,
+     "duration": 132.522,
+     "gif": false
+    }
+   ],
+   "links": [
+    "https://www.anthropic.com/news/model-hardware-standard-research-preview"
+   ]
+  },
+  {
+   "kind": "link",
+   "url": "https://www.anthropic.com/news/model-hardware-standard-research-preview",
+   "domain": "anthropic.com",
+   "title": "Previewing the Model Hardware Standard",
+   "description": "Anthropic is opening a research preview of the Model Hardware Standard (MHS), a shared specification for AI agents to safely operate physical devices, to a first group of scientific research labs and advanced manufacturers.",
+   "image": "https://www-cdn.anthropic.com/images/4zrzovbb/website/5008271abbababe59f4fbb01998697f7dd0b5b60-1280x720.jpg",
+   "site": "anthropic.com"
+  }
+ ],
+ "article": {
+  "title": "Could not summarize that message: 503 UNAVAILABLE",
+  "source_title": "Today, we're kicking off the first phase of the research preview for Model Hardware Standard (MHS): a new standard for AI agents to safely…",
+  "body": [
+   "Could not summarize that message: 503 UNAVAILABLE. {&#x27;error&#x27;: {&#x27;code&#x27;: 503, &#x27;message&#x27;: &#x27;This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.&#x27;, &#x27;status&#x27;: &#x27;UNAVAILABLE&#x27;}}"
+  ],
+  "why": null,
+  "tags": []
+ },
+ "updated": "2026-10-25T12:28:50+00:00",
+ "gholam_checked": "2026-10-25T12:28:50+00:00"
+}

@@ -1,0 +1,57 @@
+{
+ "id": 5532,
+ "url": "https://t.me/dlmehr/5532",
+ "date": "2026-09-28T19:00:21+00:00",
+ "text": "https://fxtwitter.com/daleverett/status/2104589410436354101?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+ "forwarded_from": null,
+ "digest": false,
+ "hash": "3c6b8b5e08f2",
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/daleverett/status/2104589410436354101?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+  "site": "🧵 Thread • FxTwitter",
+  "title": "dale (@daleverett)",
+  "description": "Today we’re launching WonderSearch (YC F26)\nSearch millions of unstructured documents without pre-embedding the corpus. With comparable/better retrieval recall than embedding-based search.\nWonderSearch searches at query time:\n> No corpus-wide embedding…",
+  "image": null
+ },
+ "gholam": {
+  "text": "آبجی، بچه‌های تیم WonderSearch از دوره YC F26 یه موتور جستجوی تازه رو کردن که خوراک پروژه‌های هوش مصنوعیه و کارو حسابی راحت می‌کنه. قضیه از این قراره که واسه گشتن لای میلیون‌ها سند بدون ساختار، دیگه نیازی نیست کل دیتا رو از دم امبدینگ کنی یا دائم خرج نگهداری دیتابیس‌های وکتوری بدی. سیستمشون همه‌چیز رو درست موقع جستجو پردازش می‌کنه، دقتش هم‌سطح یا حتی بهتر از روش‌های قبلیه و فقط بابت هر بار سرچ پول می‌دی، نه دیتای خاکی‌خورده‌ای که شاید هیچ‌وقت سراغش نری. با این فرمون تو چند ثانیه صاف از فایل‌های خام به جواب می‌رسی و کلی در هزینه و زمان پردازش صرفه‌جویی می‌کنی.\n\nاهمیتش اینه که غولِ پرهزینه و پردردسرِ پیش‌پردازش امبدینگ رو کلاً دور می‌زنه و سرچ هوشمند لای داده‌های حجیم رو به شدت ارزون و دم‌دستی می‌کنه.",
+  "date": "2026-09-28T19:00:35+00:00"
+ },
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/daleverett/status/2104589410436354101",
+   "domain": "x.com",
+   "author": {
+    "name": "dale",
+    "handle": "daleverett",
+    "avatar": "https://pbs.twimg.com/profile_images/2049549782755205121/y6qaHyA-_200x200.jpg"
+   },
+   "text": "Today we’re launching WonderSearch (YC F26)\n\nSearch millions of unstructured documents without pre-embedding the corpus. With comparable/better retrieval recall than embedding-based search.\n\nWonderSearch searches at query time:\n\n> No corpus-wide embedding step.\n> No vector index to maintain.\n> More compute only when needed.\n> Pay per search intead of embeddings you may never use.\n\nGo from raw data to useful answers in seconds.\n\nLink + FAQ below (+ free launch credits!) ↓",
+   "date": 1790608191,
+   "media": [
+    {
+     "type": "video",
+     "src": "https://video.twimg.com/amplify_video/2104585998424592386/vid/avc1/1280x720/WCw1ThNz_-imDlc6.mp4?tag=29",
+     "poster": "https://pbs.twimg.com/amplify_video_thumb/2104585998424592386/img/vpSYIQtojJmPIVs-.jpg",
+     "ratio": 0.5625,
+     "duration": 37.5,
+     "gif": false
+    }
+   ],
+   "links": []
+  }
+ ],
+ "article": {
+  "title": "بچه‌های تیم WonderSearch از دوره YC F26 یه موتور جستجوی تازه رو کردن که خوراک پروژه‌های هوش مصنوعیه و کارو حسابی راحت می‌کنه",
+  "source_title": "Today we’re launching WonderSearch (YC F26)",
+  "body": [
+   "آبجی، بچه‌های تیم WonderSearch از دوره YC F26 یه موتور جستجوی تازه رو کردن که خوراک پروژه‌های هوش مصنوعیه و کارو حسابی راحت می‌کنه. قضیه از این قراره که واسه گشتن لای میلیون‌ها سند بدون ساختار، دیگه نیازی نیست کل دیتا رو از دم امبدینگ کنی یا دائم خرج نگهداری دیتابیس‌های وکتوری بدی. سیستمشون همه‌چیز رو درست موقع جستجو پردازش می‌کنه، دقتش هم‌سطح یا حتی بهتر از روش‌های قبلیه و فقط بابت هر بار سرچ پول می‌دی، نه دیتای خاکی‌خورده‌ای که شاید هیچ‌وقت سراغش نری. با این فرمون تو چند ثانیه صاف از فایل‌های خام به جواب می‌رسی و کلی در هزینه و زمان پردازش صرفه‌جویی می‌کنی."
+  ],
+  "why": "غولِ پرهزینه و پردردسرِ پیش‌پردازش امبدینگ رو کلاً دور می‌زنه و سرچ هوشمند لای داده‌های حجیم رو به شدت ارزون و دم‌دستی می‌کنه.",
+  "tags": []
+ },
+ "updated": "2026-10-25T12:25:32+00:00",
+ "gholam_checked": "2026-10-25T12:25:32+00:00"
+}

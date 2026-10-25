@@ -1,0 +1,54 @@
+{
+ "id": 5602,
+ "url": "https://t.me/dlmehr/5602",
+ "date": "2026-10-02T19:40:57+00:00",
+ "text": "https://developer.nvidia.com/blog/fine-tuning-nvidia-nemotron-for-saudi-arabic-dialects-with-a-path-to-other-languages/?ncid=so-link-495745",
+ "forwarded_from": null,
+ "digest": false,
+ "hash": "93990f5c556d",
+ "media": [],
+ "preview": {
+  "url": "https://developer.nvidia.com/blog/fine-tuning-nvidia-nemotron-for-saudi-arabic-dialects-with-a-path-to-other-languages?ncid=so-link-495745",
+  "site": "NVIDIA Technical Blog",
+  "title": "Fine-Tuning NVIDIA Nemotron for Saudi Arabic Dialects, with a Path to Other Languages",
+  "description": "Automatic speech recognition must handle how people actually speak, not only the languages and styles that dominate pretraining data. Regional dialects and local recording conditions are often…",
+  "image": "https://cdn4.telesco.pe/file/N311Hret4197clALh2-VCS_oxnv1KAiX9guUIXi6poCZE04wZr854OalklI7FxlW4wTNVlP_AFYFFMigTVdyEmI3aNnOgHzeo08LabzqYHT5jWj5u4RyK426glx5mh4NNBuosLAVKdIOQg3uxUyUnauhtpybtq_U4yFzExHQgL10U6igO-wuUcd5D9W3WOOmzBYGm04YuTxg9VK64erLd_vdfJBzoVtp8z2izquuB7wlxILIbZUBdM7jFS4L6Bgiwm9ikoUJDZwAUdI82U3kM2MKgTiSOJSTPzK-wj1iRts8LbrEurBvnAkL8JnMLEA9pjNxmvmr3oIeiAnzLHTSNA.jpg"
+ },
+ "gholam": {
+  "text": "رفیق، بچه‌های تیم فنی انویدیا دست‌به‌کار شدن و مدل صوتی نموترون ۳.۵ رو جوری برای لهجه‌های محلی عربستان مثل نجدی و حجازی شخصی‌سازی کردن که وسط صحبت‌های واقعی مردم گیج نزنه. داستان اینجاست که اگه مدل رو چشم‌بسته فقط با گویش جدید آموزش بدی زبون‌های قبلی از یادش میره؛ واسه همین با یه شگرد مشتی حدود ۱۳۴ ساعت دیتای دست‌چین‌شده‌ی لهجه رو با یه لقمه دیتای انگلیسی و عربی رسمی قاطی کردن تا مدل آلزایمر نگیره. خروجی کار حسابی گل کاشت و نرخ خطای کلمات روی این گویش‌ها رو از بالای ۵۵ درصد کشید پایین و رسوند به مرز ۳۰ درصد، بدون اینکه تسلط مدل روی زبان انگلیسی ذره‌ای ضربه بخوره. تازه نشون دادن که با تغییر هوشمندانه‌ی تنظیمات موقع اجرا و افزایش بازه‌ی شنیداری، بدون حتی یک دور آموزش دوباره میشه باز هم خروجیِ دقیق‌تری تحویل گرفت.\n\nچرا مهمه؟ اهمیتش اینه که یه نقشه‌راه تمیز میده تا بشه هوش مصنوعی رو واسه گویش‌ها و لهجه‌های بومی هر زبونی با کمترین هزینه رام کرد، بدون اینکه سواد قبلی مدل بپره.",
+  "date": "2026-10-02T19:41:14+00:00"
+ },
+ "links": [
+  {
+   "kind": "link",
+   "url": "https://developer.nvidia.com/blog/fine-tuning-nvidia-nemotron-for-saudi-arabic-dialects-with-a-path-to-other-languages?ncid=so-link-495745",
+   "domain": "developer.nvidia.com",
+   "title": "Fine-Tuning NVIDIA Nemotron for Saudi Arabic Dialects, with a Path to Other Languages | NVIDIA Technical Blog",
+   "description": "Automatic speech recognition must handle how people actually speak, not only the languages and styles that dominate pretraining data. Regional dialects and local recording conditions are often…",
+   "image": "https://developer-blogs.nvidia.com/wp-content/uploads/2026/09/image3-18.webp",
+   "site": "NVIDIA Technical Blog"
+  },
+  {
+   "kind": "link",
+   "url": "https://developer.nvidia.com/blog/fine-tuning-nvidia-nemotron-for-saudi-arabic-dialects-with-a-path-to-other-languages/?ncid=so-link-495745",
+   "domain": "developer.nvidia.com",
+   "title": "Fine-Tuning NVIDIA Nemotron for Saudi Arabic Dialects, with a Path to Other Languages | NVIDIA Technical Blog",
+   "description": "Automatic speech recognition must handle how people actually speak, not only the languages and styles that dominate pretraining data. Regional dialects and local recording conditions are often…",
+   "image": "https://developer-blogs.nvidia.com/wp-content/uploads/2026/09/image3-18.webp",
+   "site": "NVIDIA Technical Blog"
+  }
+ ],
+ "article": {
+  "title": "بچه‌های تیم فنی انویدیا دست‌به‌کار شدن و مدل صوتی نموترون ۳.۵ رو جوری برای لهجه‌های محلی عربستان مثل نجدی و حجازی شخصی‌سازی کردن که وسط صحبت‌های واقعی مردم گیج نزنه",
+  "source_title": "Fine-Tuning NVIDIA Nemotron for Saudi Arabic Dialects, with a Path to Other Languages | NVIDIA Technical Blog",
+  "body": [
+   "رفیق، بچه‌های تیم فنی انویدیا دست‌به‌کار شدن و مدل صوتی نموترون ۳.۵ رو جوری برای لهجه‌های محلی عربستان مثل نجدی و حجازی شخصی‌سازی کردن که وسط صحبت‌های واقعی مردم گیج نزنه. داستان اینجاست که اگه مدل رو چشم‌بسته فقط با گویش جدید آموزش بدی زبون‌های قبلی از یادش میره؛ واسه همین با یه شگرد مشتی حدود ۱۳۴ ساعت دیتای دست‌چین‌شده‌ی لهجه رو با یه لقمه دیتای انگلیسی و عربی رسمی قاطی کردن تا مدل آلزایمر نگیره. خروجی کار حسابی گل کاشت و نرخ خطای کلمات روی این گویش‌ها رو از بالای ۵۵ درصد کشید پایین و رسوند به مرز ۳۰ درصد، بدون اینکه تسلط مدل روی زبان انگلیسی ذره‌ای ضربه بخوره. تازه نشون دادن که با تغییر هوشمندانه‌ی تنظیمات موقع اجرا و افزایش بازه‌ی شنیداری، بدون حتی یک دور آموزش دوباره میشه باز هم خروجیِ دقیق‌تری تحویل گرفت."
+  ],
+  "why": "اهمیتش اینه که یه نقشه‌راه تمیز میده تا بشه هوش مصنوعی رو واسه گویش‌ها و لهجه‌های بومی هر زبونی با کمترین هزینه رام کرد، بدون اینکه سواد قبلی مدل بپره.",
+  "tags": [
+   "انویدیا"
+  ]
+ },
+ "updated": "2026-10-25T12:25:06+00:00",
+ "gholam_checked": "2026-10-25T12:25:06+00:00"
+}

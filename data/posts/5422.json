@@ -1,0 +1,56 @@
+{
+ "id": 5422,
+ "url": "https://t.me/dlmehr/5422",
+ "date": "2026-09-23T02:05:44+00:00",
+ "text": "https://fxtwitter.com/valsai/status/2102470503328010349?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+ "forwarded_from": null,
+ "digest": false,
+ "hash": "712148aeec08",
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/valsai/status/2102470503328010349?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+  "site": "FxTwitter",
+  "title": "Vals AI (@ValsAI)",
+  "description": "We asked ten Claude Opus 5.5 agents to devise a faster shortest-path algorithm and prove it in Lean. Within 15 hours, they produced C-HD: a formally verified improvement over the published bounds.",
+  "image": "https://cdn4.telesco.pe/file/PYJEdUAK9YL3nOCTiDZ_tAqbugQy3IIe3kz2WiHSwj8tJA7sGFUD_rrLd6Z7IfwZnCKxft60XaFyUM-jD-RGgcDP6esunzqB3yapDsRUjiMd500WsaKigjEdRb15R1VqTf5lFBwiIOO-BPcZeJCDnEyyJR9SraKOvXNIqE6XB2Rp41scuLMKPjcj8RQRm1eGEnoQ2TcmHHZbt1r3VwxnndVJMrkI5f9SP_NpVslSye1ybg_es_l5dmGBNclpPPTyQ4SlQsfW1g4nfO0_vP6xNc9_p0vd8SXpvVSx1tiO1cQ4MSvii0qyXvBvmhNnmdTKO658kIWf92Lbf2GxF6iH9A.jpg"
+ },
+ "gholam": {
+  "text": "ببین رفیق، بچه‌های تیم Vals AI ده تا ایجنت از مدل هوش مصنوعی Claude Opus 5.5 رو هم‌زمان فرستادن میدون تا یه الگوریتم سریع‌تر برای مسئله معروف «کوتاه‌ترین مسیر» طراحی کنن. باورت نمیشه ولی این هوش مصنوعی‌ها فقط ظرف ۱۵ ساعت کارو جمع کردن و الگوریتم جدیدی به اسم C-HD تحویل دادن که رکوردهای ثبت‌شده علمی قبلی رو قشنگ جا گذاشته. از اونم قشنگ‌تر اینکه ادعاشون کشکی نبوده و اثبات دقیق ریاضی این قضیه رو هم توی محیط Lean بستن و تحویل دادن تا مو لای درزش نره. این ماجرا قشنگ ثابت کرد وقتی چندتا هوش مصنوعی قلدر دست‌به‌یکی کنن، می‌تونن کارهایی که ماه‌ها زمان دانشمندا رو می‌گرفت توی نصف روز ردیف کنن.\n\nچرا مهمه؟ اهمیتش اینه که هوش مصنوعی رسماً وارد فاز تولید علم ناب و شکستن مرزهای الگوریتم و ریاضی شده و دیگه فقط یه ابزار ساده برای کدنویسی نیست.",
+  "date": "2026-09-23T02:05:59+00:00"
+ },
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/ValsAI/status/2102470503328010349",
+   "domain": "x.com",
+   "author": {
+    "name": "Vals AI",
+    "handle": "ValsAI",
+    "avatar": "https://pbs.twimg.com/profile_images/2087888189185007616/r9Zu091v_200x200.png"
+   },
+   "text": "We asked ten Claude Opus 5.5 agents to devise a faster shortest-path algorithm and prove it in Lean. Within 15 hours, they produced C-HD: a formally verified improvement over the published bounds.",
+   "date": 1790103004,
+   "media": [
+    {
+     "type": "image",
+     "src": "https://pbs.twimg.com/media/HS15F8nbwAAEVYu.jpg?name=orig",
+     "ratio": 0.5625
+    }
+   ],
+   "links": []
+  }
+ ],
+ "article": {
+  "title": "بچه‌های تیم Vals AI ده تا ایجنت از مدل هوش مصنوعی Claude Opus 5.5 رو هم‌زمان فرستادن میدون تا یه الگوریتم سریع‌تر برای مسئله معروف «کوتاه‌ترین مسیر» طراحی کنن",
+  "source_title": "We asked ten Claude Opus 5.5 agents to devise a faster shortest-path algorithm and prove it in Lean. Within 15 hours, they produced C-HD: a…",
+  "body": [
+   "ببین رفیق، بچه‌های تیم Vals AI ده تا ایجنت از مدل هوش مصنوعی Claude Opus 5.5 رو هم‌زمان فرستادن میدون تا یه الگوریتم سریع‌تر برای مسئله معروف «کوتاه‌ترین مسیر» طراحی کنن. باورت نمیشه ولی این هوش مصنوعی‌ها فقط ظرف ۱۵ ساعت کارو جمع کردن و الگوریتم جدیدی به اسم C-HD تحویل دادن که رکوردهای ثبت‌شده علمی قبلی رو قشنگ جا گذاشته. از اونم قشنگ‌تر اینکه ادعاشون کشکی نبوده و اثبات دقیق ریاضی این قضیه رو هم توی محیط Lean بستن و تحویل دادن تا مو لای درزش نره. این ماجرا قشنگ ثابت کرد وقتی چندتا هوش مصنوعی قلدر دست‌به‌یکی کنن، می‌تونن کارهایی که ماه‌ها زمان دانشمندا رو می‌گرفت توی نصف روز ردیف کنن."
+  ],
+  "why": "اهمیتش اینه که هوش مصنوعی رسماً وارد فاز تولید علم ناب و شکستن مرزهای الگوریتم و ریاضی شده و دیگه فقط یه ابزار ساده برای کدنویسی نیست.",
+  "tags": [
+   "آنتروپیک"
+  ]
+ },
+ "updated": "2026-10-25T12:26:09+00:00",
+ "gholam_checked": "2026-10-25T12:26:09+00:00"
+}

@@ -1,0 +1,60 @@
+{
+ "id": 5158,
+ "url": "https://t.me/dlmehr/5158",
+ "date": "2026-09-05T20:15:36+00:00",
+ "text": "https://fxtwitter.com/aiatmeta/status/2096271545589190927?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+ "forwarded_from": null,
+ "digest": false,
+ "hash": "9dbc35f9e812",
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/aiatmeta/status/2096271545589190927?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+  "site": "🧵 Thread • FxTwitter",
+  "title": "AI at Meta (@AIatMeta)",
+  "description": "As a test of our progress to advance the frontier of AI research, in June we entered the next generation of our autonomous AI research system, AIRA₃, in a live Kaggle competition run by NVIDIA to fine-tune a 30B Nemotron model. The challenge was to teach…",
+  "image": null
+ },
+ "gholam": {
+  "text": "ببین رفیق، بچه‌های هوش مصنوعی متا اومدن سیستم پژوهشگر خودکارشون به اسم AIRA₃ رو فرستادن وسط میدون رقابت سنگین کگل که انویدیا راه انداخته بود تا عیارش مشخص بشه. چالش این مسابقه این بود که یه مدل ۳۰ میلیاردی نموترون رو طوری فاین‌تیون و دستکاری کنن که قدرت استدلالش حسابی بالا بره. خلاصه این سیستم مستقل متا گل کاشت و بین حدود ۴ هزار تا تیم مدعی، رتبه هشتم رو دشت کرد و مدال طلا رو به سینه زد. قشنگی ماجرا اینه که AIRA₃ بدون دخالت آدمیزاد، کلی از متخصص‌ها و رقبای کاردرست انسانی رو جا گذاشت و ثابت کرد تو تحقیق و توسعه حریف قابلیه.\n\nچرا مهمه؟ اهمیتش اینه که ثابت می‌کنه هوش مصنوعی به سطحی رسیده که می‌تونه بدون منتِ پژوهشگرای انسانی، خودش آستین بالا بزنه و مدل‌های دیگه رو بهینه‌سازی کنه و ارتقا بده.",
+  "date": "2026-09-05T20:15:49+00:00"
+ },
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/AIatMeta/status/2096271545589190927",
+   "domain": "x.com",
+   "author": {
+    "name": "AI at Meta",
+    "handle": "AIatMeta",
+    "avatar": "https://pbs.twimg.com/profile_images/2102933421458665472/o_KTIjw3_200x200.png"
+   },
+   "text": "As a test of our progress to advance the frontier of AI research, in June we entered the next generation of our autonomous AI research system, AIRA₃, in a live Kaggle competition run by NVIDIA to fine-tune a 30B Nemotron model. The challenge was to teach the model to reason better — all competitors had access to the same information and were graded externally on a private test set.\n\nAIRA₃ placed 8th out of ~4,000 teams to win Gold, outperforming human competitors who had access to the same frontier tools.\n\nWe believe this is a reliable signal that AIRA₃ can improve a targeted capability of an AI model at a level similar to human experts.",
+   "date": 1788625057,
+   "media": [
+    {
+     "type": "video",
+     "src": "https://video.twimg.com/amplify_video/2096270698109132800/vid/avc1/1280x720/MKNUiSGHo6OlJt7B.mp4?tag=29",
+     "poster": "https://pbs.twimg.com/amplify_video_thumb/2096270698109132800/img/hp-jOWd6q9VeFXpP.jpg",
+     "ratio": 0.5625,
+     "duration": 9,
+     "gif": false
+    }
+   ],
+   "links": []
+  }
+ ],
+ "article": {
+  "title": "بچه‌های هوش مصنوعی متا اومدن سیستم پژوهشگر خودکارشون به اسم AIRA₃ رو فرستادن وسط میدون رقابت سنگین کگل که انویدیا راه انداخته بود تا عیارش مشخص بشه",
+  "source_title": "As a test of our progress to advance the frontier of AI research, in June we entered the next generation of our autonomous AI research…",
+  "body": [
+   "ببین رفیق، بچه‌های هوش مصنوعی متا اومدن سیستم پژوهشگر خودکارشون به اسم AIRA₃ رو فرستادن وسط میدون رقابت سنگین کگل که انویدیا راه انداخته بود تا عیارش مشخص بشه. چالش این مسابقه این بود که یه مدل ۳۰ میلیاردی نموترون رو طوری فاین‌تیون و دستکاری کنن که قدرت استدلالش حسابی بالا بره. خلاصه این سیستم مستقل متا گل کاشت و بین حدود ۴ هزار تا تیم مدعی، رتبه هشتم رو دشت کرد و مدال طلا رو به سینه زد. قشنگی ماجرا اینه که AIRA₃ بدون دخالت آدمیزاد، کلی از متخصص‌ها و رقبای کاردرست انسانی رو جا گذاشت و ثابت کرد تو تحقیق و توسعه حریف قابلیه."
+  ],
+  "why": "اهمیتش اینه که ثابت می‌کنه هوش مصنوعی به سطحی رسیده که می‌تونه بدون منتِ پژوهشگرای انسانی، خودش آستین بالا بزنه و مدل‌های دیگه رو بهینه‌سازی کنه و ارتقا بده.",
+  "tags": [
+   "انویدیا",
+   "متا"
+  ]
+ },
+ "updated": "2026-10-25T12:27:49+00:00",
+ "gholam_checked": "2026-10-25T12:27:49+00:00"
+}

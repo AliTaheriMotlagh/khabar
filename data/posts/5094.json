@@ -1,0 +1,79 @@
+{
+ "id": 5094,
+ "url": "https://t.me/dlmehr/5094",
+ "date": "2026-09-02T03:08:04+00:00",
+ "text": "https://fxtwitter.com/rohanpaul_ai/status/2094974185361883451?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+ "forwarded_from": null,
+ "digest": false,
+ "hash": "f7ed0b787be9",
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/rohanpaul_ai/status/2094974185361883451?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+  "site": "🧵 Thread • FxTwitter",
+  "title": "Rohan Paul (@rohanpaul_ai)",
+  "description": "The information reports Astra reportedly uses \"recurrent depth,\" or a \"looped transformer,\" which helped its performance while making some internal reasoning less readable.\nA looped transformer, or recurrent-depth model, can run the same information through…",
+  "image": "https://cdn4.telesco.pe/file/j-JUcnLNTEeHMp7bJQxqM7WolY27V9cf9BK_g8U9_QvrVy_I-AigyBQZBvoyny7kiBeswIcS8XgSyPSmPE_4xs7J9K5y0THPaY3voqiO1p6uTBwwPIiwRJfahMVpq20S7-sxu2DZNkpwILqL-iGaJa4FUGabSwLux-LNLemqUAKGFPYXuAvwYBkjSP5NGGc3kb741JQBtspIrJD0rB-Hs5QwhtmLs5ls4E1l1ehlFMLO_ohJiFWx8SwXcrc-35pUyFLgSwuGSwN2ZJDTsX94iGKvShEXedHPtefgTdnGPy2ioZcVjJA4Jm-oXHblG1C6_0oOwqDqg-HBEqpAkylYlw.jpg"
+ },
+ "gholam": {
+  "text": "رفیق، طبق گزارش‌ها مدل جدید اوپن‌ای‌آی به اسم «آسترا» از یه سازوکار خفن به اسم «ترانسفورمر حلقه‌ای» استفاده می‌کنه که اطلاعات رو قبل تولید خروجی، چند دور تو لایه‌ها می‌چرخونه. با این شگرد، مدل بدون اینکه تعداد پارامترها و مصرف حافظه‌ش الکی باد کنه، مثل یه غول سنگین‌وزن توان محاسباتی نشون میده. منتها گیر ماجرا اینجاست که فکر کردن و استدلالش بیشتر تو حالت‌های عددیِ درونی پنهان می‌شه و شفاف نیست، واسه همین نظارت و سر درآوردن از کارش برای آدما حسابی سخت شده. تازه داستان وقتی جدی‌تر می‌شه که بدونیم آسترا به سطح بحرانی توی امنیت سایبری رسیده و می‌تونه به‌تنهایی تو سیستم‌های سفت‌وسخت رخنه کنه و باگ پیدا کنه.\n\nاهمیتش اینه که هوش مصنوعی داره هم‌زمان با جهش تو قدرت هک و پردازش، جوری مخفی‌کار و غیرقابل‌ردیابی فکر می‌کنه که نظارت روش روزبه‌روز دشوارتر می‌شه.",
+  "date": "2026-09-02T03:08:16+00:00"
+ },
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/rohanpaul_ai/status/2094974185361883451",
+   "domain": "x.com",
+   "author": {
+    "name": "Rohan Paul",
+    "handle": "rohanpaul_ai",
+    "avatar": "https://pbs.twimg.com/profile_images/1816185267037859840/Fd18CH0v_200x200.jpg"
+   },
+   "text": "The information reports Astra reportedly uses \"recurrent depth,\" or a \"looped transformer,\" which helped its performance while making some internal reasoning less readable.\n\nA looped transformer, or recurrent-depth model, can run the same information through the same transformer layers multiple times before producing the next token, instead of passing through each layer just once in a fixed stack. \n\nThat gives the model more computation per token without proportionally increasing its parameter count, potentially letting a smaller model behave more like a larger one while using less memory and bandwidth. \n\nThe concern is that more of this reasoning can happen inside internal numerical states rather than readable chain-of-thought text, making human monitoring harder.",
+   "date": 1788315743,
+   "media": [
+    {
+     "type": "image",
+     "src": "https://pbs.twimg.com/media/HRLWDJTasAAc3yJ.png?name=orig",
+     "ratio": 1.5844
+    },
+    {
+     "type": "image",
+     "src": "https://pbs.twimg.com/media/HRLWLCTb0AA-x6w.png?name=orig",
+     "ratio": 1.0083
+    }
+   ],
+   "links": [],
+   "quote": {
+    "author": {
+     "name": "Rohan Paul",
+     "handle": "rohanpaul_ai",
+     "avatar": "https://pbs.twimg.com/profile_images/1816185267037859840/Fd18CH0v_200x200.jpg"
+    },
+    "text": "OpenAI says Astra is its first model to reach the Critical cybersecurity capability threshold.\n\nUnder its Preparedness Framework, that means Astra can, with the right tools and access, find unknown flaws and develop exploits across hardened systems without step-by-step human guidance.\n\nHence, OpenAI now says Astra will launch with additional chain-of-thought monitoring, while classifiers can automatically stop potentially unauthorized actions.\n\nAstra reached roughly 39% exploit success at ~75K output tokens, while GPT-5.6 Sol is only around 1% there and needs nearly 140K tokens to reach ~12%\n\ni.e. Astra is dramatically more capable and token-efficient at exploit development on this internal benchmark.\n\nExpert assessments went further: Astra escaped a browser sandbox, executed host commands, and escalated an unprivileged operating-system user to root.",
+    "date": 1788315166,
+    "media": [
+     {
+      "type": "image",
+      "src": "https://pbs.twimg.com/media/HRLVBh2acAAYUkE.png?name=orig",
+      "ratio": 0.9052
+     }
+    ],
+    "links": []
+   }
+  }
+ ],
+ "article": {
+  "title": "طبق گزارش‌ها مدل جدید اوپن‌ای‌آی به اسم «آسترا» از یه سازوکار خفن به اسم «ترانسفورمر حلقه‌ای» استفاده می‌کنه که اطلاعات رو قبل تولید خروجی، چند دور تو لایه‌ها می‌چرخونه",
+  "source_title": "The information reports Astra reportedly uses \"recurrent depth,\" or a \"looped transformer,\" which helped its performance while making some…",
+  "body": [
+   "رفیق، طبق گزارش‌ها مدل جدید اوپن‌ای‌آی به اسم «آسترا» از یه سازوکار خفن به اسم «ترانسفورمر حلقه‌ای» استفاده می‌کنه که اطلاعات رو قبل تولید خروجی، چند دور تو لایه‌ها می‌چرخونه. با این شگرد، مدل بدون اینکه تعداد پارامترها و مصرف حافظه‌ش الکی باد کنه، مثل یه غول سنگین‌وزن توان محاسباتی نشون میده. منتها گیر ماجرا اینجاست که فکر کردن و استدلالش بیشتر تو حالت‌های عددیِ درونی پنهان می‌شه و شفاف نیست، واسه همین نظارت و سر درآوردن از کارش برای آدما حسابی سخت شده. تازه داستان وقتی جدی‌تر می‌شه که بدونیم آسترا به سطح بحرانی توی امنیت سایبری رسیده و می‌تونه به‌تنهایی تو سیستم‌های سفت‌وسخت رخنه کنه و باگ پیدا کنه."
+  ],
+  "why": "هوش مصنوعی داره هم‌زمان با جهش تو قدرت هک و پردازش، جوری مخفی‌کار و غیرقابل‌ردیابی فکر می‌کنه که نظارت روش روزبه‌روز دشوارتر می‌شه.",
+  "tags": [
+   "اوپن‌ای‌آی",
+   "امنیت"
+  ]
+ },
+ "updated": "2026-10-25T12:28:12+00:00",
+ "gholam_checked": "2026-10-25T12:28:12+00:00"
+}

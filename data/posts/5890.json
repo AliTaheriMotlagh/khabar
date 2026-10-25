@@ -2,16 +2,23 @@
  "id": 5890,
  "url": "https://t.me/dlmehr/5890",
  "date": "2026-10-14T19:19:15+00:00",
- "edited": true,
- "views": "164",
  "text": "https://fxtwitter.com/googleai/status/2110392574754107405?s=52&t=F41Qa04r48Mef_j_XjBneQ",
  "forwarded_from": null,
  "digest": false,
  "hash": "98de47c78f58",
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/googleai/status/2110392574754107405?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+  "site": "FxTwitter",
+  "title": "Google AI (@GoogleAI)",
+  "description": "Textbook biology, brought to life right in your browser\n🌿\nThis interactive 5-stage visual atlas built by Argon in @antigravity turns dense textbook biology into a hands-on experience. With fluid animations and scientific precision, you can scroll from a…",
+  "image": null
+ },
  "gholam": {
   "text": "آبجی و داداش گلم، گوگل اومده یه اطلس تعاملی پنج‌مرحله‌ای رو کرده که زیست‌شناسی خشک کتاب‌های درسی رو قشنگ آورده کف مرورگر تا لمسش کنی. قضیه از این قراره که بچه‌های آرگون توی پلتفرم آنتی‌گرویتی، با انیمیشن‌های فوق‌العاده نرم و دقت علمی بالا، کاری کردن که بتونی فقط با یه اسکرول ساده از سطح یه برگ زیر نور آفتاب شیرجه بزنی تا ریزترین اجزای درون‌سلولی یعنی همون کلروپلاست‌ها. این ابزار با یه طراحی روون و دقیق، پیچیده‌ترین مباحث علمی رو جوری بصری کرده که گردش توی دنیای زیست‌شناسی درست مثل آب خوردن بشه.\n\nاهمیتش اینه که نشون میده آموزش نسل بعد دیگه حفظ‌کردنی و کسل‌کننده نیست، بلکه قراره یادگیری سخت‌ترین علوم تبدیل به یه تجربه‌ی بصری، عمیق و تعاملی بشه.",
   "date": "2026-10-14T19:19:35+00:00"
  },
+ "gholam_checked": "2026-10-24T23:35:37+00:00",
  "links": [
   {
    "kind": "tweet",
@@ -46,14 +53,6 @@
    "links": []
   }
  ],
- "media": [],
- "preview": {
-  "url": "https://fxtwitter.com/googleai/status/2110392574754107405?s=52&t=F41Qa04r48Mef_j_XjBneQ",
-  "site": "FxTwitter",
-  "title": "Google AI (@GoogleAI)",
-  "description": "Textbook biology, brought to life right in your browser\n🌿\nThis interactive 5-stage visual atlas built by Argon in @antigravity turns dense textbook biology into a hands-on experience. With fluid animations and scientific precision, you can scroll from a…",
-  "image": null
- },
  "article": {
   "title": "و داداش گلم، گوگل اومده یه اطلس تعاملی پنج‌مرحله‌ای رو کرده که زیست‌شناسی خشک کتاب‌های درسی رو قشنگ آورده کف مرورگر تا لمسش کنی",
   "source_title": "Textbook biology, brought to life right in your browser 🌿",
@@ -65,6 +64,5 @@
    "گوگل"
   ]
  },
- "updated": "2026-10-24T23:35:37+00:00",
- "gholam_checked": "2026-10-24T23:35:37+00:00"
+ "updated": "2026-10-25T11:54:15+00:00"
 }

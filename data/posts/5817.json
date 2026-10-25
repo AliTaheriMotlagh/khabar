@@ -1,0 +1,68 @@
+{
+ "id": 5817,
+ "url": "https://t.me/dlmehr/5817",
+ "date": "2026-10-12T01:02:30+00:00",
+ "text": "https://fxtwitter.com/xunzhuoliu/status/2109207207284027737?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+ "forwarded_from": null,
+ "digest": false,
+ "hash": "edc3b04e8392",
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/xunzhuoliu/status/2109207207284027737?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+  "site": "FxTwitter",
+  "title": "Xunzhuo (@XunzhuoLiu)",
+  "description": "Introducing Decision 3.0: towards open multimodal foundation decision models\n⚡\nOpen and state-of-the-art from 0.6B to 27B: #1 on both Jev Decision Index boards in our evaluation, on a new Pareto frontier.\nHF collection\n🤗\n: https://huggingface.co/collections/vllm…",
+  "image": null
+ },
+ "gholam": {
+  "text": "ببین رفیق، این بنده خدا ژونژوئو اومده از یه پروژه پروپیمون به اسم Decision 3.0 رونمایی کرده که قراره گل سرسبد مدل‌های تصمیم‌گیری چندوجهی و کاملاً متن‌باز باشه. اصل ماجرا اینه که یه مجموعه کامل دادن بیرون که از نسخه‌های ریزنقش ۰.۶ میلیارد پارامتری شروع می‌شه و تا غول‌های ۲۷ میلیاردی قد می‌کشه تا رو هر سیستمی جواب بده. طبق بنچمارک‌هاشون هم زدن رو دست رقبا و روی هر دو تا برد شاخص تصمیم‌گیری Jev رتبه اول رو قبضه کردن. تهش هم تمام مدل‌ها و دم‌ودستگاهش رو رایگان ریختن روی هاگینگ‌فیس تا هر اهل فنی بتونه ازش استفاده کنه.\n\nچرا مهمه؟ واسه این‌که دست برنامه‌نویس‌ها و عشق‌تکنولوژی‌ها رو با مدل‌های تصمیم‌گیری فوق‌العاده قوی باز می‌ذاره تا دیگه محتاج شرکت‌های انحصاری و سرویس‌های پولی نباشن.",
+  "date": "2026-10-12T01:02:50+00:00"
+ },
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/XunzhuoLiu/status/2109207207284027737",
+   "domain": "x.com",
+   "author": {
+    "name": "Xunzhuo",
+    "handle": "XunzhuoLiu",
+    "avatar": "https://pbs.twimg.com/profile_images/2008097489887637504/z4E-5B3P_200x200.jpg"
+   },
+   "text": "Introducing Decision 3.0: towards open multimodal foundation decision models ⚡\n\nOpen and state-of-the-art from 0.6B to 27B: #1 on both Jev Decision Index boards in our evaluation, on a new Pareto frontier.\n\nHF collection 🤗: https://huggingface.co/collections/vllm-sr/decision-30\n\n#OpenSource #Jev #LLM",
+   "date": 1791709160,
+   "media": [
+    {
+     "type": "video",
+     "src": "https://video.twimg.com/amplify_video/2109207069450752000/vid/avc1/1280x720/P6jj3gVeqC-ujCfg.mp4?tag=29",
+     "poster": "https://pbs.twimg.com/amplify_video_thumb/2109207069450752000/img/LjSTs0jUuTHIab6Y.jpg",
+     "ratio": 0.5625,
+     "duration": 60.483,
+     "gif": false
+    }
+   ],
+   "links": [
+    "https://huggingface.co/collections/vllm-sr/decision-30"
+   ]
+  },
+  {
+   "kind": "link",
+   "url": "https://huggingface.co/collections/vllm-sr/decision-30",
+   "domain": "huggingface.co",
+   "title": "🔮Decision 3.0 - a vllm-sr Collection",
+   "description": "Towards Open Multimodal Foundation Decision Models",
+   "image": "https://cdn-thumbnails.huggingface.co/social-thumbnails/collections/vllm-sr/decision-30-6aca5f47b0d942380f6e4a64.png",
+   "site": "huggingface.co"
+  }
+ ],
+ "article": {
+  "title": "این بنده خدا ژونژوئو اومده از یه پروژه پروپیمون به اسم Decision 3.0 رونمایی کرده که قراره گل سرسبد مدل‌های تصمیم‌گیری چندوجهی و کاملاً متن‌باز باشه",
+  "source_title": "Introducing Decision 3.0: towards open multimodal foundation decision models ⚡",
+  "body": [
+   "ببین رفیق، این بنده خدا ژونژوئو اومده از یه پروژه پروپیمون به اسم Decision 3.0 رونمایی کرده که قراره گل سرسبد مدل‌های تصمیم‌گیری چندوجهی و کاملاً متن‌باز باشه. اصل ماجرا اینه که یه مجموعه کامل دادن بیرون که از نسخه‌های ریزنقش ۰.۶ میلیارد پارامتری شروع می‌شه و تا غول‌های ۲۷ میلیاردی قد می‌کشه تا رو هر سیستمی جواب بده. طبق بنچمارک‌هاشون هم زدن رو دست رقبا و روی هر دو تا برد شاخص تصمیم‌گیری Jev رتبه اول رو قبضه کردن. تهش هم تمام مدل‌ها و دم‌ودستگاهش رو رایگان ریختن روی هاگینگ‌فیس تا هر اهل فنی بتونه ازش استفاده کنه."
+  ],
+  "why": "واسه این‌که دست برنامه‌نویس‌ها و عشق‌تکنولوژی‌ها رو با مدل‌های تصمیم‌گیری فوق‌العاده قوی باز می‌ذاره تا دیگه محتاج شرکت‌های انحصاری و سرویس‌های پولی نباشن.",
+  "tags": []
+ },
+ "updated": "2026-10-25T12:23:49+00:00",
+ "gholam_checked": "2026-10-25T12:23:49+00:00"
+}

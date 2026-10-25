@@ -1,0 +1,54 @@
+{
+ "id": 5626,
+ "url": "https://t.me/dlmehr/5626",
+ "date": "2026-10-04T18:25:01+00:00",
+ "text": "https://fxtwitter.com/jiayiigeng/status/2106051912491557065?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+ "forwarded_from": null,
+ "digest": false,
+ "hash": "1991e17d0d10",
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/jiayiigeng/status/2106051912491557065?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+  "site": "🧵 Thread • FxTwitter",
+  "title": "Jiayi Geng @ COLM (@JiayiiGeng)",
+  "description": "AI scientist agents are great at optimizing and finding solutions through endless trial and error. But is that really what science is about?\nAs Terrance Tao eloquently put, the role of math and science should be more than that – they are \"lighthouses\" that…",
+  "image": "https://cdn4.telesco.pe/file/JYThvGvmfBMnvYdjyI2sgwNMx37BoqbYtNQSZ-UGVi1J5Y_Waiex0_pHADXmdg_GjXAeNvohlk_sdIjxg0NTX9k4RLvxWDbIiOrHPfsRDVlpgkHgxOpMZTYFjb3pWKtQMnw5bLoHnABKyD-j_5lrBLYV67rMiM2b4tpD7oIrR1ZvrNRJeaQSQ56NrE_CCEFege96XekatZ-svP4lvT3MfNYroC-e1TeuN2HiCeGYhCSxVN9AW1wngnYXWP50__MVloAeHqQehq2iXTm-W36WjZT-gacCV9BaUGzxkeFOpwGLc7z-2fhRo7e49Ewk3FhGL-NRTXVY9BqYhSPmKlHsdg.jpg"
+ },
+ "gholam": {
+  "text": "رفیق، این روزا همه جا صحبت از ایجنت‌های هوش مصنوعی دانشمنده، اما واقعیتش اینه که بیشترشون فقط با آزمون و خطای فله‌ای و بدون هیچ درک عمیقی دنبال جواب می‌گردن. ترنس تائو، ریاضیدان کاردرست هم به زیبایی گفته بود کار علم باید مثل فانوس دریایی باشه و با بصیرت راه رو روشن کنه، نه این‌که فقط کارهای تکراری رو تندتند حساب کنه. واسه همین یه جمعی از پژوهشگرا با متخصص‌ها دست به یکی کردن و بنچمارکی به اسم «EurekaBench» رو توی شش تا حوزه علمی علم کردن تا ببینن این سیستم‌ها واقعاً شمّ کشف علمی و ارائه بینش‌های تازه رو دارن یا نه.\n\nچرا مهمه؟ چون تا محک درستی نباشه، نمی‌فهمیم هوش مصنوعی قراره واقعاً مرزهای علم رو تکون بده یا فقط با زور محاسبات داره ادای دانشمندا رو درمیاره.",
+  "date": "2026-10-04T18:25:14+00:00"
+ },
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/JiayiiGeng/status/2106051912491557065",
+   "domain": "x.com",
+   "author": {
+    "name": "Jiayi Geng",
+    "handle": "JiayiiGeng",
+    "avatar": "https://pbs.twimg.com/profile_images/1756090367479582720/WdE7WywQ_200x200.jpg"
+   },
+   "text": "AI scientist agents are great at optimizing and finding solutions through endless trial and error. But is that really what science is about?\n\nAs Terrance Tao eloquently put, the role of math and science should be more than that – they are \"lighthouses\" that guide and inspire exploration through understanding and insights. Can AI agents discover novel insights through experimentation?\n\nTo study these gaps, we worked with domain experts to introduce EurekaBench, a benchmark spanning 6 science domains that evaluates an agent’s ability to discover genuinely new scientific insights.\n(1/n)",
+   "date": 1790956879,
+   "media": [
+    {
+     "type": "image",
+     "src": "https://pbs.twimg.com/media/HToY28IXwAAjmJF.jpg?name=orig",
+     "ratio": 1.1065
+    }
+   ],
+   "links": []
+  }
+ ],
+ "article": {
+  "title": "این روزا همه جا صحبت از ایجنت‌های هوش مصنوعی دانشمنده، اما واقعیتش اینه که بیشترشون فقط با آزمون و خطای فله‌ای و بدون هیچ درک عمیقی دنبال جواب می‌گردن",
+  "source_title": "AI scientist agents are great at optimizing and finding solutions through endless trial and error. But is that really what science is about?",
+  "body": [
+   "رفیق، این روزا همه جا صحبت از ایجنت‌های هوش مصنوعی دانشمنده، اما واقعیتش اینه که بیشترشون فقط با آزمون و خطای فله‌ای و بدون هیچ درک عمیقی دنبال جواب می‌گردن. ترنس تائو، ریاضیدان کاردرست هم به زیبایی گفته بود کار علم باید مثل فانوس دریایی باشه و با بصیرت راه رو روشن کنه، نه این‌که فقط کارهای تکراری رو تندتند حساب کنه. واسه همین یه جمعی از پژوهشگرا با متخصص‌ها دست به یکی کردن و بنچمارکی به اسم «EurekaBench» رو توی شش تا حوزه علمی علم کردن تا ببینن این سیستم‌ها واقعاً شمّ کشف علمی و ارائه بینش‌های تازه رو دارن یا نه."
+  ],
+  "why": "چون تا محک درستی نباشه، نمی‌فهمیم هوش مصنوعی قراره واقعاً مرزهای علم رو تکون بده یا فقط با زور محاسبات داره ادای دانشمندا رو درمیاره.",
+  "tags": []
+ },
+ "updated": "2026-10-25T12:24:59+00:00",
+ "gholam_checked": "2026-10-25T12:24:59+00:00"
+}

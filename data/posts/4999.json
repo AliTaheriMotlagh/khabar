@@ -1,0 +1,54 @@
+{
+ "id": 4999,
+ "url": "https://t.me/dlmehr/4999",
+ "date": "2026-08-27T21:12:23+00:00",
+ "text": "https://fxtwitter.com/rohanpaul_ai/status/2093075327857672211?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+ "forwarded_from": null,
+ "digest": false,
+ "hash": "bd5a9c788e42",
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/rohanpaul_ai/status/2093075327857672211?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+  "site": "FxTwitter",
+  "title": "Rohan Paul (@rohanpaul_ai)",
+  "description": "Netflix has explained the system behind those short \"because you watched\" lines: an AI writes them, another AI grades them, and humans audit weekly.\nAn AI judge is usually validated once and then trusted forever.\nNew Netflix paper argues a judge running…",
+  "image": "https://cdn4.telesco.pe/file/nGLQfXvtTDpI1C0-Tnl-FkdbVOVYMtver-sndARN8eBjtoGTGIbQlPEjy3POXSEGVTtfz_9dZVfFK6374FPQ6WfjcOrWo_Zv-rQE42tApVdBRe3Z5vFkVjNBYdYUp4fUE6L-2xMnuJKt5-7ZYyNbpXVbCaQ1KV2WSVU6a51x3NN7Hp4IZ-K1LxPk2wQERgW8vowbvZnTLNBo6Khx9y-FccpOejAr1DUoefwmD09IlCh6xRJo8cpI4SKxpfyiA3ziwdBBsXjWMJilDMN5_HM3Jx8KA4buB1K7HH29GmQ3g7wrllIwewreQBfOn9SlKx3INKEp5Dr_JgUzF9ckUZimTQ.jpg"
+ },
+ "gholam": {
+  "text": "ببین رفیق، نتفلیکس تازه رو کرده که چطور اون جمله‌های جمع‌وجورِ «چون فلان فیلم رو دیدی اینم ببین» رو می‌سازه؛ ماجرا اینه که یه هوش مصنوعی این متن‌ها رو ردیف می‌کنه، یه هوش مصنوعی دیگه در نقش قاضی بهشون نمره می‌ده و کاربرا فقط گلچین‌شده‌ها رو می‌بینن، آخر سر هم خود آدما هفته‌ای یه بار میان کل سیستم رو بازرسی می‌کنن. مهندسای نتفلیکس معتقدن هوش مصنوعیِ قاضی رو نباید به امون خدا ول کرد، واسه همین بهش یاد دادن مثل یه انسان واقعی دلیل رد کردن هر توضیح رو بنویسه تا جلوی خطاهای عجیب‌وغریب گرفته بشه. توی یه آزمایش ۵ هفته‌ای هم مشخص شد وقتی این توضیحات هوشمند به کاربرا نشون داده میشه، کمتر توی منو می‌چرخن و خیلی سریع‌تر دست‌به‌سینه می‌شینن پای تماشای فیلم‌های جدید.\n\nاهمیتش اینه که ثابت می‌کنه سیستم‌های هوش مصنوعیِ داور برای درست کار کردن همیشه نیاز به چکاپ و نظارت مداوم انسانی دارن و نمیشه کار رو کامل سپرد دست ماشین و رفت پی کار.",
+  "date": "2026-08-27T21:12:43+00:00"
+ },
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/rohanpaul_ai/status/2093075327857672211",
+   "domain": "x.com",
+   "author": {
+    "name": "Rohan Paul",
+    "handle": "rohanpaul_ai",
+    "avatar": "https://pbs.twimg.com/profile_images/1816185267037859840/Fd18CH0v_200x200.jpg"
+   },
+   "text": "Netflix has explained the system behind those short \"because you watched\" lines: an AI writes them, another AI grades them, and humans audit weekly.\n\nAn AI judge is usually validated once and then trusted forever. \n\nNew Netflix paper argues a judge running in production has a lifecycle and needs maintaining like any other model.\n\nAt Netflix, one model writes the short lines telling members why a title was recommended, and another scores every one before it is shown.\n\nNetflix splits that work into four stages: building labelled examples, tuning the judge, running it as a gate, and watching it for drift.\n\nChecking whether the judge agrees with human labels is not enough.\n\nIt also has to reject a bad explanation for the same reason a person would, so tuning runs on written rationales rather than pass-fail marks.\n\nA weekly human review then sets the bar by how far the raters disagree among themselves.\n\nIn a 5-week test against no explanation at all, members shifted slightly toward titles they had not watched and more often ended a browse by playing something.\n\n– arxiv. org/abs/2608.18300\n\nTitle: \"The Lifecycle of LLM-as-a-Judge for Large-Scale Recommendation Explanations\"",
+   "date": 1787863020,
+   "media": [
+    {
+     "type": "image",
+     "src": "https://pbs.twimg.com/media/HQwS78xbEAAS695.jpg?name=orig",
+     "ratio": 1.1044
+    }
+   ],
+   "links": []
+  }
+ ],
+ "article": {
+  "title": "نتفلیکس تازه رو کرده که چطور اون جمله‌های جمع‌وجورِ «چون فلان فیلم رو دیدی اینم ببین» رو می‌سازه",
+  "source_title": "Netflix has explained the system behind those short \"because you watched\" lines: an AI writes them, another AI grades them, and humans…",
+  "body": [
+   "ببین رفیق، نتفلیکس تازه رو کرده که چطور اون جمله‌های جمع‌وجورِ «چون فلان فیلم رو دیدی اینم ببین» رو می‌سازه؛ ماجرا اینه که یه هوش مصنوعی این متن‌ها رو ردیف می‌کنه، یه هوش مصنوعی دیگه در نقش قاضی بهشون نمره می‌ده و کاربرا فقط گلچین‌شده‌ها رو می‌بینن، آخر سر هم خود آدما هفته‌ای یه بار میان کل سیستم رو بازرسی می‌کنن. مهندسای نتفلیکس معتقدن هوش مصنوعیِ قاضی رو نباید به امون خدا ول کرد، واسه همین بهش یاد دادن مثل یه انسان واقعی دلیل رد کردن هر توضیح رو بنویسه تا جلوی خطاهای عجیب‌وغریب گرفته بشه. توی یه آزمایش ۵ هفته‌ای هم مشخص شد وقتی این توضیحات هوشمند به کاربرا نشون داده میشه، کمتر توی منو می‌چرخن و خیلی سریع‌تر دست‌به‌سینه می‌شینن پای تماشای فیلم‌های جدید."
+  ],
+  "why": "ثابت می‌کنه سیستم‌های هوش مصنوعیِ داور برای درست کار کردن همیشه نیاز به چکاپ و نظارت مداوم انسانی دارن و نمیشه کار رو کامل سپرد دست ماشین و رفت پی کار.",
+  "tags": []
+ },
+ "updated": "2026-10-25T12:28:47+00:00",
+ "gholam_checked": "2026-10-25T12:28:47+00:00"
+}

@@ -1,0 +1,46 @@
+{
+ "id": 5605,
+ "url": "https://t.me/dlmehr/5605",
+ "date": "2026-10-02T21:18:20+00:00",
+ "text": "https://developer.apple.com/news?id=p6zjojqw",
+ "forwarded_from": "Parsa Naderi",
+ "digest": false,
+ "hash": "f98f2bf15a69",
+ "media": [],
+ "preview": {
+  "url": "https://developer.apple.com/news?id=p6zjojqw",
+  "site": "Apple",
+  "title": "Updates to Full Disk Access in macOS - Latest News - Apple Developer",
+  "description": "We give developers powerful APIs to build incredible capabilities into their apps for Apple products, backed by a set of controls designed to protect users’ private data. Full Disk Access largely sidesteps these controls in order to allow backup apps to function…",
+  "image": "https://cdn4.telesco.pe/file/EBvZ_mQi3e4X0b_ZeeiFCwW21uUy7Ik3T-ouDIpv-0YLUaFY-azh55qX_H_YDJX3AOGODuWpqn2BjuTNt4J-aaeZjs1SPVvkIsSOSd4Eo-dvRK4r7yHCasxJoDnhbMcHUuxsSlp_IXoyKgWm6-0hgdIMTmdg0I4ayeIoDPhR-C0Q3uQNRSoUkz_qRpj9Gkt4aepCBOuShaTlo8-sI2G4cmRSCBS3yawECijrqFYXUpuyJKUc36vlhMSE-ZyKPq2ZCdeYeo8jBiHEyirCdxL2zROO1J4uDzW-45LPmdg6wu_pQvm1kNPrgFEbjGk8m9oa7nihwDYY7gdk-I5DnCLJ9w.jpg"
+ },
+ "gholam": {
+  "text": "ببین رفیق، اپل اومده سفت و سخت اعلام کرده که قراره دسترسی به بخش «فول دیسک اکسس» رو توی سیستم‌عامل مک حسابی محدود و زیر ذره‌بین ببره. قصه از این قراره که این دسترسی قبلاً برای برنامه‌های بک‌آپ‌گیری باز شده بود تا راحت کار کنن، اما حالا بعضی از برنامه‌نویس‌ها زرنگی کردن و طوری ازش استفاده می‌کنن که سیر تا پیاز سیستم طرف، از پیام‌ها و ایمیل‌ها گرفته تا تاریخچه مرورگرش، بدون این‌که روحش خبر داشته باشه لو می‌ره. از اون‌طرف با اومدن ایجنت‌های هوش مصنوعی که روزبه‌روز دارن خودسرتر و خفن‌تر می‌شن، اگه این دسترسی بدون حساب‌کتاب باز بمونه فاجعه امنیتی بار میاد؛ واسه همین اپل قراره از این به بعد تأییدیه‌های خیلی سفت‌وسخت‌تری از خود کاربر بگیره تا هر اَپ درپیتی نتونه به کل هارد سیستم چنگ بندازه.\n\nچرا مهمه؟ اهمیتش اینه که با پیشرفت هوش مصنوعی، خطرات نفوذ به کل اطلاعات خصوصی‌مون روی مک چند برابر شده و اپل می‌خواد جلوی سوءاستفاده‌های بی‌سر‌و‌صدا رو قبل از اینکه دیر بشه بگیره.",
+  "date": "2026-10-02T21:18:29+00:00"
+ },
+ "links": [
+  {
+   "kind": "link",
+   "url": "https://developer.apple.com/news/?id=p6zjojqw",
+   "domain": "developer.apple.com",
+   "title": "Updates to Full Disk Access in macOS - Latest News - Apple Developer",
+   "description": "We give developers powerful APIs to build incredible capabilities into their apps for Apple products, backed by a set of controls designed to protect users’ private data. Full Disk Access largely sidesteps these controls in order to allow backup apps to function properly on the Mac. Some developers are using Full Disk Access in ways that could put users at risk, exposing everything on their system",
+   "image": "https://developer.apple.com/news/images/og/full-disk-access-og.png",
+   "site": "developer.apple.com"
+  }
+ ],
+ "article": {
+  "title": "اپل اومده سفت و سخت اعلام کرده که قراره دسترسی به بخش «فول دیسک اکسس» رو توی سیستم‌عامل مک حسابی محدود و زیر ذره‌بین ببره",
+  "source_title": "Updates to Full Disk Access in macOS - Latest News - Apple Developer",
+  "body": [
+   "ببین رفیق، اپل اومده سفت و سخت اعلام کرده که قراره دسترسی به بخش «فول دیسک اکسس» رو توی سیستم‌عامل مک حسابی محدود و زیر ذره‌بین ببره. قصه از این قراره که این دسترسی قبلاً برای برنامه‌های بک‌آپ‌گیری باز شده بود تا راحت کار کنن، اما حالا بعضی از برنامه‌نویس‌ها زرنگی کردن و طوری ازش استفاده می‌کنن که سیر تا پیاز سیستم طرف، از پیام‌ها و ایمیل‌ها گرفته تا تاریخچه مرورگرش، بدون این‌که روحش خبر داشته باشه لو می‌ره. از اون‌طرف با اومدن ایجنت‌های هوش مصنوعی که روزبه‌روز دارن خودسرتر و خفن‌تر می‌شن، اگه این دسترسی بدون حساب‌کتاب باز بمونه فاجعه امنیتی بار میاد؛ واسه همین اپل قراره از این به بعد تأییدیه‌های خیلی سفت‌وسخت‌تری از خود کاربر بگیره تا هر اَپ درپیتی نتونه به کل هارد سیستم چنگ بندازه."
+  ],
+  "why": "اهمیتش اینه که با پیشرفت هوش مصنوعی، خطرات نفوذ به کل اطلاعات خصوصی‌مون روی مک چند برابر شده و اپل می‌خواد جلوی سوءاستفاده‌های بی‌سر‌و‌صدا رو قبل از اینکه دیر بشه بگیره.",
+  "tags": [
+   "اپل",
+   "کدنویسی"
+  ]
+ },
+ "updated": "2026-10-25T12:25:05+00:00",
+ "gholam_checked": "2026-10-25T12:25:05+00:00"
+}

@@ -1,0 +1,70 @@
+{
+ "id": 5311,
+ "url": "https://t.me/dlmehr/5311",
+ "date": "2026-09-15T18:40:35+00:00",
+ "text": "https://fxtwitter.com/Jintao_Zhang_/status/2099850990505660429/video/1?s=52",
+ "forwarded_from": null,
+ "digest": false,
+ "hash": "6c324e20486a",
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/Jintao_Zhang_/status/2099850990505660429/video/1?s=52",
+  "site": "FxTwitter",
+  "title": "Jintao Zhang (@Jintao_Zhang_)",
+  "description": "Introducing Vidu S2: AI video you can talk to, direct, and edit in real time.\n“Dance for me.” “Put on this hat.”\nSpeak an instruction or send a reference image. Watch your character respond.\nExcited to share what our team has built:\nS2-Avatar: Interactive…",
+  "image": null
+ },
+ "gholam": {
+  "text": "ببین رفیق، تیم سازنده هوش مصنوعی Vidu یه شاهکار جدید به اسم Vidu S2 رو کرده که رسماً بازی تولید ویدیو رو عوض می‌کنه؛ طوری که می‌تونی تو لحظه با کاراکتر ویدیویی گپ بزنی و بهش فرمان بدی چی بپوشه یا چطوری برقصه. بخش آواتارش با کیفیت 720p و نرخ ۲۵ تا ۴۲ فریم بر ثانیه، واکنش‌های حسی و مکالمه صوتی رو بلادرنگ اجرا می‌کنه و با دادن یه عکس مرجع، فوراً ظاهرش رو تغییر می‌ده. کار به همین‌جا ختم نمی‌شه و یه بخش ادیت استریم زنده هم داره که بدون خراب کردن حرکات اصلی، لباس، کاراکتر یا پس‌زمینه ویدیو رو درجا عوض می‌کنه و حتی ویدیوی سه‌بعدی برای واقعیت مجازی می‌سازه. طبق بنچمارک‌هاشون، کارایی این هوش مصنوعی آنی حتی از ابزارهای ادیت آفلاین هم جلو زده.\n\nاهمیتش اینه که تولید محتوا و فیلم‌سازی رو از فرایندهای طولانی رندر و ادیت نجات می‌ده و ارتباط تصویری و بازی‌ها رو به تجربه‌ای کاملاً زنده و تعاملی تبدیل می‌کنه.",
+  "date": "2026-09-15T18:40:47+00:00"
+ },
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/Jintao_Zhang_/status/2099850990505660429",
+   "domain": "x.com",
+   "author": {
+    "name": "Jintao Zhang",
+    "handle": "Jintao_Zhang_",
+    "avatar": "https://pbs.twimg.com/profile_images/2059501663061454848/yPLRzu1y_200x200.jpg"
+   },
+   "text": "Introducing Vidu S2: AI video you can talk to, direct, and edit in real time.\n\n“Dance for me.” “Put on this hat.”\nSpeak an instruction or send a reference image. Watch your character respond.\nExcited to share what our team has built:\n\nS2-Avatar: Interactive characters at 720p, 25–42 FPS, with expressive actions, voice conversations, and visual references you can update anytime.\n\nS2-Editing: Transform video streams live. Change styles, outfits, characters, and backgrounds while preserving the original motion.\n\nBoth models achieve SOTA results on the benchmarks in our paper. Our real-time editor even outperforms the offline editors we evaluated.\n\nWe also explore real-time spatial video generation and editing with synchronized stereo streams for VR.\n\nWatch the demo. What would you build? 👇\n\nTry now: https://www.vidu.com/vidu-stream\nAPI: http://platform.vidu.com/vidu-stream/doc\nTechnical report: https://arxiv.org/pdf/2609.11638",
+   "date": 1789478464,
+   "media": [
+    {
+     "type": "video",
+     "src": "https://video.twimg.com/amplify_video/2099849901052137472/vid/avc1/1280x720/r25O7dizaDs47Pm0.mp4?tag=29",
+     "poster": "https://pbs.twimg.com/amplify_video_thumb/2099849901052137472/img/--Zi1bDQS5FZRold.jpg",
+     "ratio": 0.5625,
+     "duration": 66.264,
+     "gif": false
+    }
+   ],
+   "links": [
+    "https://www.vidu.com/vidu-stream",
+    "http://platform.vidu.com/vidu-stream/doc",
+    "https://arxiv.org/pdf/2609.11638"
+   ]
+  },
+  {
+   "kind": "link",
+   "url": "https://www.vidu.com/vidu-stream",
+   "domain": "vidu.com",
+   "title": "Vidu S2: Real-Time Interactive, Editable, and Spatial Video Generation",
+   "description": "Vidu S2 is a world-leading real-time interactive model, offering real-time video avatar generation through Vidu S2-Avatar and real-time video editing through Vidu S2-Editing.",
+   "image": "https://www.vidu.com/pwas/maskable-icon-512x512.png",
+   "site": "vidu.com"
+  }
+ ],
+ "article": {
+  "title": "تیم سازنده هوش مصنوعی Vidu یه شاهکار جدید به اسم Vidu S2 رو کرده که رسماً بازی تولید ویدیو رو عوض می‌کنه؛ طوری که می‌تونی تو لحظه با کاراکتر ویدیویی گپ بزنی و بهش فرمان بدی چی بپوشه یا چطوری برقصه",
+  "source_title": "Introducing Vidu S2: AI video you can talk to, direct, and edit in real time.",
+  "body": [
+   "ببین رفیق، تیم سازنده هوش مصنوعی Vidu یه شاهکار جدید به اسم Vidu S2 رو کرده که رسماً بازی تولید ویدیو رو عوض می‌کنه؛ طوری که می‌تونی تو لحظه با کاراکتر ویدیویی گپ بزنی و بهش فرمان بدی چی بپوشه یا چطوری برقصه. بخش آواتارش با کیفیت 720p و نرخ ۲۵ تا ۴۲ فریم بر ثانیه، واکنش‌های حسی و مکالمه صوتی رو بلادرنگ اجرا می‌کنه و با دادن یه عکس مرجع، فوراً ظاهرش رو تغییر می‌ده. کار به همین‌جا ختم نمی‌شه و یه بخش ادیت استریم زنده هم داره که بدون خراب کردن حرکات اصلی، لباس، کاراکتر یا پس‌زمینه ویدیو رو درجا عوض می‌کنه و حتی ویدیوی سه‌بعدی برای واقعیت مجازی می‌سازه. طبق بنچمارک‌هاشون، کارایی این هوش مصنوعی آنی حتی از ابزارهای ادیت آفلاین هم جلو زده."
+  ],
+  "why": "تولید محتوا و فیلم‌سازی رو از فرایندهای طولانی رندر و ادیت نجات می‌ده و ارتباط تصویری و بازی‌ها رو به تجربه‌ای کاملاً زنده و تعاملی تبدیل می‌کنه.",
+  "tags": []
+ },
+ "updated": "2026-10-25T12:26:53+00:00",
+ "gholam_checked": "2026-10-25T12:26:53+00:00"
+}

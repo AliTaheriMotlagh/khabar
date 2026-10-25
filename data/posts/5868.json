@@ -1,0 +1,54 @@
+{
+ "id": 5868,
+ "url": "https://t.me/dlmehr/5868",
+ "date": "2026-10-13T17:16:33+00:00",
+ "text": "https://fxtwitter.com/liquidai/status/2110055807194931348?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+ "forwarded_from": null,
+ "digest": false,
+ "hash": "e0b04174078d",
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/liquidai/status/2110055807194931348?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+  "site": "🧵 Thread • FxTwitter",
+  "title": "Liquid AI (@liquidai)",
+  "description": "Today we release 𝙻𝙵𝙼𝟸.𝟻-𝟸𝟺𝙱-𝙰𝟸𝙱, the largest 𝙻𝙵𝙼𝟸.𝟻 family member. It is an efficient local model for laptops and PCs to work through multi-step tasks inside popular agent harnesses.\n> 24B total parameters, 2B active per token\n> Context expanded to 131K…",
+  "image": "https://cdn4.telesco.pe/file/c4-YX9GwF5CctJl8HwA1zlhKaW_TBuO8v1GgZtG4kAOxOVvvWbUMMooTMc9kG56ErVquF2Y2kg7My8BQtExHO4EthnN4cNapPXOYPiQeli8MT_P467a33d5U936TAlq0O8qJgAbqXux251EvPTZpSBZVqysTYuNCT1DlqZe6mNj-C-UVt-7WdflAEys9T86cVlTPHF2bfmNFPiZlY5ITyaV3NBT4KWvY_zQ7i0HbAOTqx79E2C5CwZ0PK4OSYTLL41wobCkSkCrfPdIzzLXTFWL2vNxsNfBCCsT93jRgdOuanyRqXDWpt54GlTZBBD613cZ0BjAGQqR-FINjJhFgtA.jpg"
+ },
+ "gholam": {
+  "text": "رفیق، بچه‌های شرکت Liquid AI تازه یه مدل تر و تمیز و بهینه‌سازی‌شده به اسم LFM2.5-24B-A2B فرستادن تو میدون که خوراک اجرا روی لپ‌تاپ و پی‌سی‌های شخصیه. کل پارامترهای این غول ۲۴ میلیارده ولی سرِ هر توکن فقط ۲ میلیاردش به کار میفته؛ کانتکستش هم تا ۱۳۱ هزار توکن باز شده و کارای چندمرحله‌ای و ایجنتی رو مثل آب خوردن هندل می‌کنه. با ۳۳ تریلیون توکن تمرین داده شده، وزناش روی هاگینگ‌فیس باز و در دسترسه، و از نظر زورآزمایی هم قشنگ پا به پای مدل‌های بزرگ‌تری مثل کوئن رقابت می‌کنه و فاین‌تیون کردنش هم قرتی‌بازی نداره.\n\nاهمیتش اینه که بدون نیاز به سرورهای گرون‌قیمت ابری، می‌تونی یه مدل منطقی و همه‌فن‌حریف رو صاف کف سیستم خودت بالا بیاری و به خط کنی.",
+  "date": "2026-10-13T17:16:51+00:00"
+ },
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/liquidai/status/2110055807194931348",
+   "domain": "x.com",
+   "author": {
+    "name": "Liquid AI",
+    "handle": "liquidai",
+    "avatar": "https://pbs.twimg.com/profile_images/1702611993327251456/PUUuOA4W_200x200.jpg"
+   },
+   "text": "Today we release 𝙻𝙵𝙼𝟸.𝟻-𝟸𝟺𝙱-𝙰𝟸𝙱, the largest 𝙻𝙵𝙼𝟸.𝟻 family member. It is an efficient local model for laptops and PCs to work through multi-step tasks inside popular agent harnesses.\n\n> 24B total parameters, 2B active per token\n> Context expanded to 131K tokens\n> A 128K-token vocabulary\n> 33T pretraining tokens\n> It is a reasoning model\n> Very easy to fine-tune and customize\n> Performs competitively with Qwen3.6-35B-A3B, a model with ~50% more total and active parameters, on agentic and tool-use tasks.\n> Open base and post-trained weights on @huggingface  🤗\n\n1/",
+   "date": 1791911482,
+   "media": [
+    {
+     "type": "image",
+     "src": "https://pbs.twimg.com/media/HUhgsAbaAAETVQ7.png?name=orig",
+     "ratio": 0.9664
+    }
+   ],
+   "links": []
+  }
+ ],
+ "article": {
+  "title": "بچه‌های شرکت Liquid AI تازه یه مدل تر و تمیز و بهینه‌سازی‌شده به اسم LFM2.5-24B-A2B فرستادن تو میدون که خوراک اجرا روی لپ‌تاپ و پی‌سی‌های شخصیه",
+  "source_title": "Today we release 𝙻𝙵𝙼𝟸.𝟻-𝟸𝟺𝙱-𝙰𝟸𝙱, the largest 𝙻𝙵𝙼𝟸.𝟻 family member. It is an efficient local model for laptops and PCs to work through…",
+  "body": [
+   "رفیق، بچه‌های شرکت Liquid AI تازه یه مدل تر و تمیز و بهینه‌سازی‌شده به اسم LFM2.5-24B-A2B فرستادن تو میدون که خوراک اجرا روی لپ‌تاپ و پی‌سی‌های شخصیه. کل پارامترهای این غول ۲۴ میلیارده ولی سرِ هر توکن فقط ۲ میلیاردش به کار میفته؛ کانتکستش هم تا ۱۳۱ هزار توکن باز شده و کارای چندمرحله‌ای و ایجنتی رو مثل آب خوردن هندل می‌کنه. با ۳۳ تریلیون توکن تمرین داده شده، وزناش روی هاگینگ‌فیس باز و در دسترسه، و از نظر زورآزمایی هم قشنگ پا به پای مدل‌های بزرگ‌تری مثل کوئن رقابت می‌کنه و فاین‌تیون کردنش هم قرتی‌بازی نداره."
+  ],
+  "why": "بدون نیاز به سرورهای گرون‌قیمت ابری، می‌تونی یه مدل منطقی و همه‌فن‌حریف رو صاف کف سیستم خودت بالا بیاری و به خط کنی.",
+  "tags": []
+ },
+ "updated": "2026-10-25T12:23:37+00:00",
+ "gholam_checked": "2026-10-25T12:23:37+00:00"
+}

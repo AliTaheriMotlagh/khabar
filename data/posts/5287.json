@@ -1,0 +1,61 @@
+{
+ "id": 5287,
+ "url": "https://t.me/dlmehr/5287",
+ "date": "2026-09-14T04:46:51+00:00",
+ "text": "https://fxtwitter.com/sama/status/2099352016988614852?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+ "forwarded_from": null,
+ "digest": false,
+ "hash": "da8e9a7a42b8",
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/sama/status/2099352016988614852?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+  "site": "FxTwitter",
+  "title": "Sam Altman (@sama)",
+  "description": "There are two ways AI progress could go very badly and that we must avoid.\nFirst, we could lose control of the future to AI. This is unacceptable; we are unapologetically on Team Humanity, and AI must always serve people. To ensure that, we need ways to…",
+  "image": "https://cdn4.telesco.pe/file/XlzCyGlqw1QO8y_0coAPxp1PKNWQWBnBNhxgHZjyX1K8EdmtreguxMYm-FPtawgH9Eqjrro1ARm2qzoZipOIGOHgUHkDFe3ZyDJfvH94u5Po2af-SECfVW_hsN1RuboAE9-LdS97hnHzutW7fZzA0o5XK93d1QCiBRZQsjJTPv_N4mOamNbOzqs8UNkk9YUXHgDV-oq4nBRJnQy2Oq3aSQCY2mN1O2t4Qwz1TVVfP0n7qTTo2F-jmI-iZ1bDMWWzJmM1jy2TUo5Nk5x1akaeEw5znm2VELHWpnVMLdJHnJ7es9aD8Dx1ctCIscoTyltxXaWIDKSZdOKx3TpkVsTb4g.jpg"
+ },
+ "gholam": {
+  "text": "ببین رفیق، سم آلتمن اومده میدون و از دوتا خط قرمز و کابوس بزرگ پیشرفت هوش مصنوعی پرده برداشته که اگه حواسمون جمع نباشه، بدجوری کار دست بشر میده. اولیش اینه که کنترل آینده از دست آدمیزاد در بره و هوش مصنوعی افسار پاره کنه، واسه همین سفت‌وسخت میگه ما تو «تیم بشریت» هستیم و ایمنی این مدلا باید همیشه یه قدم جلوتر از تواناییشون باشه. خطر دوم هم انحصار وحشتناک قدرته؛ یعنی نیاد اون روزی که یه شرکت، یه کشور یا یه شخص خاص با یه هوش مصنوعی همه‌فن‌حریف بیفته به جون دنیا و جهان رو ببره سمت یه ناکجاآباد تاریک. تهش هم خط‌ونشون کشیده که آزمایشگاه‌های پیشرو باید جوری مسئولانه عمل کنن که دنیا بهشون اعتماد کنه، وگرنه اصلاً حضورشون تو این بازی توجیهی نداره.\n\nاهمیتش اینه که نشون میده حتی خود سردمدارای این عرصه هم خطر دیکتاتوری دیجیتال و از دست رفتن مهار هوش مصنوعی رو بیخ گوشمون حس کردن.",
+  "date": "2026-09-14T04:47:03+00:00"
+ },
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/sama/status/2099352016988614852",
+   "domain": "x.com",
+   "author": {
+    "name": "Sam Altman",
+    "handle": "sama",
+    "avatar": "https://pbs.twimg.com/profile_images/2046764873200394240/r7BxVezs_200x200.jpg"
+   },
+   "text": "There are two ways AI progress could go very badly and that we must avoid.\n\nFirst, we could lose control of the future to AI. This is unacceptable; we are unapologetically on Team Humanity, and AI must always serve people. To ensure that, we need ways to ensure that alignment and safety techniques stay ahead of progress in model capabilities.\n\nSecond, we could end up in a world with too much concentration of power. If an extraordinarily powerful AI is used by one person or company to impress their worldview onto everyone else, the results could be extremely dystopian.\n\nAvoiding these two threats requires walking a narrow middle path; for example, one country could gain too much power. Another example is one lab ending up with too much power.",
+   "date": 1789359499,
+   "media": [],
+   "links": [],
+   "quote": {
+    "author": {
+     "name": "Sam Altman",
+     "handle": "sama",
+     "avatar": "https://pbs.twimg.com/profile_images/2046764873200394240/r7BxVezs_200x200.jpg"
+    },
+    "text": "The world deserves confidence that American companies developing increasingly capable AI will act responsibly, especially as the trajectory of progress has steepened. Every frontier lab must deliver on this, and there is no reason any of us should come to work if we cannot.\n\nWe welcome a federal framework that sets consistent safety requirements for frontier AI. But we do not believe we need to wait for an anti-trust exemption or legislation to begin the work of providing this confidence. Consistent rules to manage frontier risk so that we can maximize the benefits are a good idea (and we are excited by ideas like independent auditors).\n\nYears ago, companies like ours developed things like Responsible Scaling Policies and Preparedness Frameworks. Those were good for that moment, and focused primarily on the deployment of completed models, not what happens during their development process.\n\nToday's shift to focusing on safe development and evaluation will need new tools. For example, at OpenAI we now formulate explicit safety cases in advance of frontier reinforcement learning runs we expect to significantly increase capability, in addition to the safety work we have long done in advance of model releases.\n\nWe hope that other companies will learn from our approaches and propose their own; we think shared standards for misalignment, monitoring, and safety will lead to better outcomes. We look forward to collaborating with our colleagues across the industry to formulate the best version of these.\n\nWhen we talk about “pacing”, we do not mean “stopping”. Progress has been rapid and will continue to be. But it should be slower than it otherwise could be; interventions like safety cases and monitoring have significant costs.\n\nPacing will be well worth this cost; no amount of American competitive pressure should justify recklessness, or let capabilities get ahead of alignment and monitoring.\n\nWhere we will need the help of our government is for international coordination. But first we should do what we can ourselves.",
+    "date": 1789358735,
+    "media": [],
+    "links": []
+   }
+  }
+ ],
+ "article": {
+  "title": "سم آلتمن اومده میدون و از دوتا خط قرمز و کابوس بزرگ پیشرفت هوش مصنوعی پرده برداشته که اگه حواسمون جمع نباشه، بدجوری کار دست بشر میده",
+  "source_title": "There are two ways AI progress could go very badly and that we must avoid.",
+  "body": [
+   "ببین رفیق، سم آلتمن اومده میدون و از دوتا خط قرمز و کابوس بزرگ پیشرفت هوش مصنوعی پرده برداشته که اگه حواسمون جمع نباشه، بدجوری کار دست بشر میده. اولیش اینه که کنترل آینده از دست آدمیزاد در بره و هوش مصنوعی افسار پاره کنه، واسه همین سفت‌وسخت میگه ما تو «تیم بشریت» هستیم و ایمنی این مدلا باید همیشه یه قدم جلوتر از تواناییشون باشه. خطر دوم هم انحصار وحشتناک قدرته؛ یعنی نیاد اون روزی که یه شرکت، یه کشور یا یه شخص خاص با یه هوش مصنوعی همه‌فن‌حریف بیفته به جون دنیا و جهان رو ببره سمت یه ناکجاآباد تاریک. تهش هم خط‌ونشون کشیده که آزمایشگاه‌های پیشرو باید جوری مسئولانه عمل کنن که دنیا بهشون اعتماد کنه، وگرنه اصلاً حضورشون تو این بازی توجیهی نداره."
+  ],
+  "why": "نشون میده حتی خود سردمدارای این عرصه هم خطر دیکتاتوری دیجیتال و از دست رفتن مهار هوش مصنوعی رو بیخ گوشمون حس کردن.",
+  "tags": [
+   "اوپن‌ای‌آی"
+  ]
+ },
+ "updated": "2026-10-25T12:27:02+00:00",
+ "gholam_checked": "2026-10-25T12:27:02+00:00"
+}

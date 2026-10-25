@@ -2,16 +2,23 @@
  "id": 5935,
  "url": "https://t.me/dlmehr/5935",
  "date": "2026-10-16T19:05:08+00:00",
- "edited": true,
- "views": "209",
  "text": "https://fxtwitter.com/3blue1brown/status/2111135480116850944?s=52&t=F41Qa04r48Mef_j_XjBneQ",
  "forwarded_from": null,
  "digest": false,
  "hash": "9402d9a900a0",
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/3blue1brown/status/2111135480116850944?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+  "site": "FxTwitter",
+  "title": "Grant Sanderson (@3blue1brown)",
+  "description": "Some reflections on AI in math. I found it helpful to simply list out the various parts of what a mathematician does, why math is valuable, and where the funding comes from. From there, what happens if AI gets more capable?\nhttps://youtu.be/LKrwhjOI8Nc",
+  "image": "https://cdn4.telesco.pe/file/pm_jBWR5CJ7RNKzIkO0oGyFFxeQxwBUvAE5YWvfwKE7N8HEVkRDxKgBIPX0m_cOmKboLzj3zSENIfMMRvUdM538Ko1qrSoerISm5hMeYAB-yATXSvYzMiuOC3S6z0HhgPNFVgNiZBuJbwwhii0AQ3Fn5O6LjMMUmNx885JSQKk8qxcib0n7-BYsey3KbeXoY439BL7wFDbZrn6mofcGTHhkr8Pd8zNRHMc1AOOtdc67Clx7RU2RZQlzpY4WO350i9Fuv8yY-oXkJHKd7dGjOv49dQZ6r_VTcDQ6uY50n00LrmTc1GqA42MG-uDWNbiqnaFS8VhYFSwhhCeCBxUVG_g.jpg"
+ },
  "gholam": {
   "text": "خلاصه رفیق، گرنت سندرسون که همگی با کانال خفن «تری‌بلو‌وان‌براون» می‌شناسیمش، نشسته یه تحلیل باصفا درباره سرنوشت ریاضیات در عصر هوش مصنوعی آماده کرده. این استاد اومده کارهایی که یه ریاضیدان در طول روز انجام میده، ارزش واقعی این علم و منبع بودجه‌های پژوهشی رو قشنگ چیده کنار هم تا ببینه اگه هوش مصنوعی روزبه‌روز زرنگ‌تر بشه قراره چی به سر این رشته بیاد. ته حرف حسابش هم برعکس ناامیدی خیلیا اینه که با تمام این پیشرفت‌ها، الان اتفاقاً بهترین و پررونق‌ترین زمان برای پا گذاشتن توی دنیای ریاضیه و نباید میدان رو خالی کرد.\n\nچرا مهمه؟ اهمیتش اینه که تو روزگار ترس از بیکاری با هوش مصنوعی، معتبرترین معلم ریاضی اینترنت نشون میده این ابزارها جای تفکر عمیق انسان رو تنگ نمی‌کنن، بلکه افق‌های جدیدتری پیش روی علم باز می‌کنن.",
   "date": "2026-10-16T19:05:27+00:00"
  },
+ "gholam_checked": "2026-10-24T23:35:30+00:00",
  "links": [
   {
    "kind": "tweet",
@@ -54,18 +61,6 @@
    "text": "About\nPress\nCopyright\nContact us\nCreators\nAdvertise\nDevelopers\nTerms\nPrivacy\nPolicy & Safety\nHow YouTube works\nTest new features\nNFL Sunday Ticket\n© 2026 Google LLC"
   }
  ],
- "media": [],
- "preview": {
-  "url": "https://fxtwitter.com/3blue1brown/status/2111135480116850944?s=52&t=F41Qa04r48Mef_j_XjBneQ",
-  "site": "FxTwitter",
-  "title": "Grant Sanderson (@3blue1brown)",
-  "description": "Some reflections on AI in math. I found it helpful to simply list out the various parts of what a mathematician does, why math is valuable, and where the funding comes from. From there, what happens if AI gets more capable?\nhttps://youtu.be/LKrwhjOI8Nc",
-  "image": {
-   "src": "media/5935/preview.webp",
-   "width": 200,
-   "height": 200
-  }
- },
  "article": {
   "title": "گرنت سندرسون که همگی با کانال خفن «تری‌بلو‌وان‌براون» می‌شناسیمش، نشسته یه تحلیل باصفا درباره سرنوشت ریاضیات در عصر هوش مصنوعی آماده کرده",
   "source_title": "Some reflections on AI in math. I found it helpful to simply list out the various parts of what a mathematician does, why math is valuable…",
@@ -75,6 +70,5 @@
   "why": "اهمیتش اینه که تو روزگار ترس از بیکاری با هوش مصنوعی، معتبرترین معلم ریاضی اینترنت نشون میده این ابزارها جای تفکر عمیق انسان رو تنگ نمی‌کنن، بلکه افق‌های جدیدتری پیش روی علم باز می‌کنن.",
   "tags": []
  },
- "updated": "2026-10-24T23:35:30+00:00",
- "gholam_checked": "2026-10-24T23:35:30+00:00"
+ "updated": "2026-10-25T11:54:11+00:00"
 }

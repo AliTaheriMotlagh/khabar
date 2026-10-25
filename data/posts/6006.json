@@ -2,16 +2,23 @@
  "id": 6006,
  "url": "https://t.me/dlmehr/6006",
  "date": "2026-10-20T23:24:20+00:00",
- "edited": true,
- "views": "188",
  "text": "https://fxtwitter.com/alexgdimakis/status/2112679405080514843?s=52&t=F41Qa04r48Mef_j_XjBneQ",
  "forwarded_from": null,
  "digest": false,
  "hash": "654849c19701",
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/alexgdimakis/status/2112679405080514843?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+  "site": "🧵 Thread • FxTwitter",
+  "title": "Alex Dimakis (@AlexGDimakis)",
+  "description": "We added Gemini 4 Argon to our AutoResearchExam Pareto curve. It is 2-3 times cheaper compared to the other frontier models for almost the same ML engineering performance. Congratulations to the GDM team.",
+  "image": "https://cdn4.telesco.pe/file/R-QAqsLUAv0gulmFXpEGiLJrO0CNMzmgo8AyxwsCgB2n85SVpGaQ1F9moIr3CECRboKYDYY9pr5srJ0pdxUdkZjrqxta3khhxnZRgxbUrU95hozQEvhpxD8piIX3SGmmy9bcI3WL4XOgAbZ9sG1DkJG07vb0R6c0ix5uKqqWCAmxKLKp8vOopfEtSE5GIjcv1n5fTOW4_CKk9EnhyEiyhkrNBkBDOe3HxqfxdpjvFzCTUKZxoStHERPSz8eHfLCdCM2Hmig9YsbJQTLxdIKGytSS5UYM7QEmzMPwzY9O8qIhZKdF-tHj2SjMsaDS_EVensofQo9jAjq7klIk3FAp7A.jpg"
+ },
  "gholam": {
   "text": "رفیق، قضیه اینه که الکس دیماکیس اومده مدل جدید گوگل یعنی Gemini 4 Argon رو برده زیر ذره‌بین ارزیابی تخصصی AutoResearchExam و حساب کار حسابی دستش اومده. ماجرا از این قراره که این دست‌پرورده‌ی تازه‌نفس گوگل دیپ‌مایند، توی کارهای مهندسی یادگیری ماشین پا به پای غول‌های پیشتاز بازار میاد، اما هزینه‌ش دو تا سه برابر ارزون‌تر از همه‌شونه. خلاصه با همون کیفیت و راندمان خفن، خرج خیلی کمتری روی دست اهل فن می‌ذاره و دیماکیس هم حسابی بابت این حرکت تمیز به بچه‌های گوگل تبریک گفته.\n\nچرا مهمه؟ اهمیتش اینه که هزینه‌های سرسام‌آور پروژه‌های هوش مصنوعی رو می‌شکنه و قدرت مدل‌های پیشتاز رو با قیمت کف بازار به دست توسعه‌دهنده‌ها می‌رسونه.",
   "date": "2026-10-20T23:24:37+00:00"
  },
+ "gholam_checked": "2026-10-24T23:03:12+00:00",
  "links": [
   {
    "kind": "tweet",
@@ -43,18 +50,6 @@
    "links": []
   }
  ],
- "media": [],
- "preview": {
-  "url": "https://fxtwitter.com/alexgdimakis/status/2112679405080514843?s=52&t=F41Qa04r48Mef_j_XjBneQ",
-  "site": "🧵 Thread • FxTwitter",
-  "title": "Alex Dimakis (@AlexGDimakis)",
-  "description": "We added Gemini 4 Argon to our AutoResearchExam Pareto curve. It is 2-3 times cheaper compared to the other frontier models for almost the same ML engineering performance. Congratulations to the GDM team.",
-  "image": {
-   "src": "media/6006/preview.webp",
-   "width": 800,
-   "height": 281
-  }
- },
  "article": {
   "title": "قضیه اینه که الکس دیماکیس اومده مدل جدید گوگل یعنی Gemini 4 Argon رو برده زیر ذره‌بین ارزیابی تخصصی AutoResearchExam و حساب کار حسابی دستش اومده",
   "source_title": "We added Gemini 4 Argon to our AutoResearchExam Pareto curve. It is 2-3 times cheaper compared to the other frontier models for almost the…",
@@ -66,6 +61,5 @@
    "گوگل"
   ]
  },
- "updated": "2026-10-24T23:03:12+00:00",
- "gholam_checked": "2026-10-24T23:03:12+00:00"
+ "updated": "2026-10-25T11:53:56+00:00"
 }

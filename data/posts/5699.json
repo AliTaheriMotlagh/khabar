@@ -1,0 +1,63 @@
+{
+ "id": 5699,
+ "url": "https://t.me/dlmehr/5699",
+ "date": "2026-10-07T03:30:11+00:00",
+ "text": "https://fxtwitter.com/mathandcobb/status/2107643298873569692?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+ "forwarded_from": null,
+ "digest": false,
+ "hash": "77d8ff5762cf",
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/mathandcobb/status/2107643298873569692?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+  "site": "🧵 Thread • FxTwitter",
+  "title": "Alvaro Lozano-Robledo (@mathandcobb)",
+  "description": "The scale of this is staggering.\nBut... Why?\nWhy is OpenAI trying to solve hundreds of math problems to be released all at once? I think we got the point when they found a counterexample to Navier-Stokes -- internal model = great.\nI am not sure at this…",
+  "image": "https://cdn4.telesco.pe/file/VrKlXJpJ8346SVE59LU_-25Ska4DCUi37GqsNkoOtHkhG7ErTmbCMeAlYpcpCNZoYVE5-3RCszcFCxBuVAoyrJbH45ywwAEkHa142Wb2NURXxWFKPct9U4abmjyXqV4SjaoptMuZHDGIr5iCVEDCgwRrkn2zf48ge53WP3UcCnMU3rMrWVeHhQawpKiVV7BjTQknnPciY-yfACqFmdQHUQ4iLRo_Gl984heBOPFKS1Bfoq4SzrmsCEADRh3jX5m0sxj86wpYg4dhC1f6fiYqkRdiQALCzcFemNrYEtDanIdeaSYFWQTIzWFcGTYfHdV7kzBooPqyxuuvUoGDnLB8CQ.jpg"
+ },
+ "gholam": {
+  "text": "رفیق، ماجرا از این قراره که شرکت OpenAI اعلام کرده مدل پیشرفته و درون‌سازمانی‌شون یه گونی مسئله خفن ریاضی رو یهویی حل کرده و با مشورت پژوهشگاه مطالعات پیشرفته می‌خواد همه‌ش رو یکجا بریزه رو دایره. این وسط آلوارو لوزانو-روبلدو، استاد ریاضی، پشماش از این حجم پیشرفت ریخته اما بدجور شاکی شده و می‌گه اصلاً فاز این حرکت چیه؟ حرفش اینه که وقتی با پیدا کردن مثال‌نقض تو معادلات سنگینی مثل ناویر-استوکس قدرت مدلتون رو ثابت کردید، دیگه حل فله‌ای صدها مسئله ریاضی بیشتر از این‌که به درد علم بخوره، یه شوآف تبلیغاتی و تصاحب سلطه‌جویانه قلمرو ریاضی‌دان‌هاست.\n\nچرا مهمه؟ اهمیتش اینه که نشون میده ورود بلدوزری هوش مصنوعی به مرزهای دانش محض، داره مرز بین خدمت علمی و قدرت‌نمایی تبلیغاتی غول‌های فناوری رو مخدوش می‌کنه و صدای دانشمندا رو درمیاره.",
+  "date": "2026-10-07T03:30:27+00:00"
+ },
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/mathandcobb/status/2107643298873569692",
+   "domain": "x.com",
+   "author": {
+    "name": "Alvaro Lozano-Robledo",
+    "handle": "mathandcobb",
+    "avatar": "https://pbs.twimg.com/profile_images/2009665311918931969/JHquy4B3_200x200.jpg"
+   },
+   "text": "The scale of this is staggering.\n\nBut... Why? \n\nWhy is OpenAI trying to solve hundreds of math problems to be released all at once? I think we got the point when they found a counterexample to Navier-Stokes -- internal model = great. \n\nI am not sure at this point what this (hostile?) takeover of the mathematical landscape is trying to achieve other than, again, a massive PR stunt.",
+   "date": 1791336295,
+   "media": [],
+   "links": [],
+   "quote": {
+    "author": {
+     "name": "OpenAI",
+     "handle": "OpenAI",
+     "avatar": "https://pbs.twimg.com/profile_images/1885410181409820672/ztsaR0JW_200x200.jpg"
+    },
+    "text": "We’re releasing a broad range of new mathematical results produced by an internal frontier model.\n\nWe’ve been consulting with the independent Advisory Group on Mathematics and Artificial Intelligence at the Institute for Advanced Study, and we have drawn on their advice and public recommendations to inform how we release these results. \n\nhttps://github.com/openai/math",
+    "date": 1791325188,
+    "media": [],
+    "links": [
+     "https://github.com/openai/math"
+    ]
+   }
+  }
+ ],
+ "article": {
+  "title": "ماجرا از این قراره که شرکت OpenAI اعلام کرده مدل پیشرفته و درون‌سازمانی‌شون یه گونی مسئله خفن ریاضی رو یهویی حل کرده و با مشورت پژوهشگاه مطالعات پیشرفته می‌خواد همه‌ش رو یکجا بریزه رو دایره",
+  "source_title": "The scale of this is staggering.",
+  "body": [
+   "رفیق، ماجرا از این قراره که شرکت OpenAI اعلام کرده مدل پیشرفته و درون‌سازمانی‌شون یه گونی مسئله خفن ریاضی رو یهویی حل کرده و با مشورت پژوهشگاه مطالعات پیشرفته می‌خواد همه‌ش رو یکجا بریزه رو دایره. این وسط آلوارو لوزانو-روبلدو، استاد ریاضی، پشماش از این حجم پیشرفت ریخته اما بدجور شاکی شده و می‌گه اصلاً فاز این حرکت چیه؟ حرفش اینه که وقتی با پیدا کردن مثال‌نقض تو معادلات سنگینی مثل ناویر-استوکس قدرت مدلتون رو ثابت کردید، دیگه حل فله‌ای صدها مسئله ریاضی بیشتر از این‌که به درد علم بخوره، یه شوآف تبلیغاتی و تصاحب سلطه‌جویانه قلمرو ریاضی‌دان‌هاست."
+  ],
+  "why": "اهمیتش اینه که نشون میده ورود بلدوزری هوش مصنوعی به مرزهای دانش محض، داره مرز بین خدمت علمی و قدرت‌نمایی تبلیغاتی غول‌های فناوری رو مخدوش می‌کنه و صدای دانشمندا رو درمیاره.",
+  "tags": [
+   "اوپن‌ای‌آی"
+  ]
+ },
+ "updated": "2026-10-25T12:24:30+00:00",
+ "gholam_checked": "2026-10-25T12:24:30+00:00"
+}

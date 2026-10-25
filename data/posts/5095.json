@@ -1,0 +1,37 @@
+{
+ "id": 5095,
+ "url": "https://t.me/dlmehr/5095",
+ "date": "2026-09-02T04:00:55+00:00",
+ "text": "24-hour news summary\n\n1 (https://t.me/dlmehr/5075) Meta’s Muse Voice Transcribe offers real-time speech-to-text with native speaker diarization and endpointing.\n\n2 (https://t.me/dlmehr/5076) Anthropic introduced Claude Fable and Mythos 5.1, emphasizing coding, knowledge work, and research capabilities.\n\n3 (https://t.me/dlmehr/5077) Claude Fable 5.1 reportedly delivers stronger agentic benchmark performance, greater concision, and lower costs.\n\n4 (https://t.me/dlmehr/5078) Cybercabs are increasingly appearing on Austin’s streets.\n\n5 World Labs’ Atlas generated unseen scene elements to turn phone footage into a time-freezing short film.\n\n6 (https://t.me/dlmehr/5080) Heart Aerospace flew the largest electric aircraft yet, featuring a 100-foot wingspan and weighing 25,000 pounds.\n\n7 (https://t.me/dlmehr/5081) Atlas can model spatial structure and time, transforming ordinary cameras into a bullet-time capture studio.\n\n8 Fable 5.1 designed a house from a property-lot image, rendered it, and created a cinematic video through code.\n\n9 (https://t.me/dlmehr/5083) Meta is reportedly switching from Google Chat to Slack, citing Slack’s strength as a platform for AI agents.\n\n10 (https://t.me/dlmehr/5084) Four IOI medalists published the first polynomial-time algorithm resolving a 50-year graph-theory problem.\n\n11 (https://t.me/dlmehr/5085) Fable 5.1 reportedly built a website for the channel owner at mehrzad.com.\n\n12 (https://t.me/dlmehr/5086) OpenAI’s GPT-Astra reportedly received release approval, with its cybercapability-enabled version restricted to Project Daybreak.\n\n13 (https://t.me/dlmehr/5087) OpenAI says Astra reaches the Critical cybersecurity capability threshold under its Preparedness Framework.\n\n14 (https://t.me/dlmehr/5088) Google reportedly plans to release Gemini 3.8 Flash this week, with a strong focus on coding.\n\n15 (https://t.me/dlmehr/5089) Google reportedly abandoned Gemini 3.5 Pro candidates after insufficient gains over Flash, while Gemini 4 remains in post-training.\n\n16 (https://t.me/dlmehr/5090) Alibaba upgraded Qwen3.8-Max with 2.4 trillion parameters, a one-million-token context window, and additional coding and reasoning training.\n\n17 (https://t.me/dlmehr/5091) OpenAI and others are reportedly using loop transformers that improve performance while hiding more of their internal reasoning.\n\n18 (https://t.me/dlmehr/5092) Recurrent-depth transformers offer storage benefits for KV caches, but do not inherently reduce training or inference computation.\n\n19 (https://t.me/dlmehr/5093) Astra’s recurrent-depth reasoning may improve cost and performance while making its thinking harder to monitor.\n\n20 (https://t.me/dlmehr/5094) Astra reportedly uses a looped transformer that boosts performance but makes internal reasoning less readable.\n\n--Hermes",
+ "forwarded_from": null,
+ "digest": true,
+ "hash": "d08b40836d99",
+ "media": [],
+ "preview": {
+  "url": "https://t.me/dlmehr/5075",
+  "site": "Telegram",
+  "title": "Future Focus with Mehrzad",
+  "description": "https://fxtwitter.com/finkd/status/2094836602681938385?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+  "image": null
+ },
+ "gholam": null,
+ "links": [
+  {
+   "kind": "link",
+   "url": "http://mehrzad.ai",
+   "domain": "mehrzad.ai",
+   "title": "Mehrzad Samadi — GenAI at NVIDIA",
+   "description": "Generative AI at NVIDIA. Former CEO & Co-Founder of Parabricks. Persian-language AI videos and podcast appearances.",
+   "image": "https://mehrzad.ai/mehrzad.jpeg",
+   "site": "Mehrzad Samadi"
+  }
+ ],
+ "article": {
+  "title": "Mehrzad Samadi — GenAI at NVIDIA",
+  "source_title": null,
+  "body": [],
+  "why": null,
+  "tags": []
+ },
+ "updated": "2026-10-25T12:08:02+00:00"
+}

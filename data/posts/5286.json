@@ -1,0 +1,50 @@
+{
+ "id": 5286,
+ "url": "https://t.me/dlmehr/5286",
+ "date": "2026-09-14T04:45:31+00:00",
+ "text": "https://fxtwitter.com/sama/status/2099348812305473766?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+ "forwarded_from": null,
+ "digest": false,
+ "hash": "5e5313f7bf0b",
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/sama/status/2099348812305473766?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+  "site": "FxTwitter",
+  "title": "Sam Altman (@sama)",
+  "description": "The world deserves confidence that American companies developing increasingly capable AI will act responsibly, especially as the trajectory of progress has steepened. Every frontier lab must deliver on this, and there is no reason any of us should come to…",
+  "image": "https://cdn4.telesco.pe/file/deoJD1fAOr6Xr5DkBze_wcXls6Bx2t44IwU3NJjbAmn2cE2rwaorKsCUONroN5BWhxc2jjD3Tt9ZLrD2YYloMsy3Z6SO1VatBI_hkBHypc8JqVM-DjSCulAZfL-p2v6H5Df1ZUxT5I3dg0rlDjtM6dWSLbZ08C75-Aup6TBvi879dE2crWT_P7txkF0d5Xs43TjMM2ZmWpyANk2eksm45VTnStZ6B49tB7FkALEfy5X7NSo9nbmhJj_fDUzK1gbNDpWAuJfaSE5yawNfCd_SI-H3Zm4gi9vum4flpPeZKYNIBxhbXVAmUfBwXm4a_unfsSeGewoHF0x7v7niULltEQ.jpg"
+ },
+ "gholam": {
+  "text": "رفیق، سم آلتمن رئیس اوپن‌ای‌آی اومده وسط میدون و گفته تو این کورس سرسام‌آور پیشرفت هوش مصنوعی، دنیا حق داره خیالش از بابت مسئولیت‌پذیری شرکت‌ها تخت باشه. حرفش اینه که نباید دست‌رو‌دست گذاشت تا دولت‌ها قانون بنویسن، بلکه خود آزمایشگاه‌های پیشرو باید پای کار بیان و با ناظران مستقل و استانداردهای مشترک، اعتماد بسازن. تعریف کرده که اوپن‌ای‌آی حالا دیگه بررسی رو به بعد از ساخت مدل موکول نمی‌کنه، بلکه قبل از ران‌های سنگین یادگیری تقویتی پرونده ایمنی جداگونه می‌بنده تا توانایی هوش مصنوعی از مهارش جلو نزنه. تهش هم صاف و پوست‌کنده تأکید کرده که تنظیم سرعت اصلاً به معنی توقف پیشرفت نیست، ولی هیچ رقابتی هم نباید باعث بشه غول‌های فناوری بی‌گدار به آب بزنن.\n\nچرا مهمه؟ چون نشون میده حتی سردمداران هوش مصنوعی هم فهمیدن سرعت این هیولا انقدر زیاد شده که اگه وسط توسعه جلوش ترمز ایمنی نذارن، کلاه دنیا پس معرکه‌ست.",
+  "date": "2026-09-14T04:45:45+00:00"
+ },
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/sama/status/2099348812305473766",
+   "domain": "x.com",
+   "author": {
+    "name": "Sam Altman",
+    "handle": "sama",
+    "avatar": "https://pbs.twimg.com/profile_images/2046764873200394240/r7BxVezs_200x200.jpg"
+   },
+   "text": "The world deserves confidence that American companies developing increasingly capable AI will act responsibly, especially as the trajectory of progress has steepened. Every frontier lab must deliver on this, and there is no reason any of us should come to work if we cannot.\n\nWe welcome a federal framework that sets consistent safety requirements for frontier AI. But we do not believe we need to wait for an anti-trust exemption or legislation to begin the work of providing this confidence. Consistent rules to manage frontier risk so that we can maximize the benefits are a good idea (and we are excited by ideas like independent auditors).\n\nYears ago, companies like ours developed things like Responsible Scaling Policies and Preparedness Frameworks. Those were good for that moment, and focused primarily on the deployment of completed models, not what happens during their development process.\n\nToday's shift to focusing on safe development and evaluation will need new tools. For example, at OpenAI we now formulate explicit safety cases in advance of frontier reinforcement learning runs we expect to significantly increase capability, in addition to the safety work we have long done in advance of model releases.\n\nWe hope that other companies will learn from our approaches and propose their own; we think shared standards for misalignment, monitoring, and safety will lead to better outcomes. We look forward to collaborating with our colleagues across the industry to formulate the best version of these.\n\nWhen we talk about “pacing”, we do not mean “stopping”. Progress has been rapid and will continue to be. But it should be slower than it otherwise could be; interventions like safety cases and monitoring have significant costs.\n\nPacing will be well worth this cost; no amount of American competitive pressure should justify recklessness, or let capabilities get ahead of alignment and monitoring.\n\nWhere we will need the help of our government is for international coordination. But first we should do what we can ourselves.",
+   "date": 1789358735,
+   "media": [],
+   "links": []
+  }
+ ],
+ "article": {
+  "title": "سم آلتمن رئیس اوپن‌ای‌آی اومده وسط میدون و گفته تو این کورس سرسام‌آور پیشرفت هوش مصنوعی، دنیا حق داره خیالش از بابت مسئولیت‌پذیری شرکت‌ها تخت باشه",
+  "source_title": "The world deserves confidence that American companies developing increasingly capable AI will act responsibly, especially as the trajectory…",
+  "body": [
+   "رفیق، سم آلتمن رئیس اوپن‌ای‌آی اومده وسط میدون و گفته تو این کورس سرسام‌آور پیشرفت هوش مصنوعی، دنیا حق داره خیالش از بابت مسئولیت‌پذیری شرکت‌ها تخت باشه. حرفش اینه که نباید دست‌رو‌دست گذاشت تا دولت‌ها قانون بنویسن، بلکه خود آزمایشگاه‌های پیشرو باید پای کار بیان و با ناظران مستقل و استانداردهای مشترک، اعتماد بسازن. تعریف کرده که اوپن‌ای‌آی حالا دیگه بررسی رو به بعد از ساخت مدل موکول نمی‌کنه، بلکه قبل از ران‌های سنگین یادگیری تقویتی پرونده ایمنی جداگونه می‌بنده تا توانایی هوش مصنوعی از مهارش جلو نزنه. تهش هم صاف و پوست‌کنده تأکید کرده که تنظیم سرعت اصلاً به معنی توقف پیشرفت نیست، ولی هیچ رقابتی هم نباید باعث بشه غول‌های فناوری بی‌گدار به آب بزنن."
+  ],
+  "why": "چون نشون میده حتی سردمداران هوش مصنوعی هم فهمیدن سرعت این هیولا انقدر زیاد شده که اگه وسط توسعه جلوش ترمز ایمنی نذارن، کلاه دنیا پس معرکه‌ست.",
+  "tags": [
+   "اوپن‌ای‌آی"
+  ]
+ },
+ "updated": "2026-10-25T12:27:02+00:00",
+ "gholam_checked": "2026-10-25T12:27:02+00:00"
+}

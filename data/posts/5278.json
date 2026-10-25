@@ -1,0 +1,48 @@
+{
+ "id": 5278,
+ "url": "https://t.me/dlmehr/5278",
+ "date": "2026-09-13T15:29:38+00:00",
+ "text": "https://fxtwitter.com/fchollet/status/2099102490361016827?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+ "forwarded_from": null,
+ "digest": false,
+ "hash": "f2b41a657040",
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/fchollet/status/2099102490361016827?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+  "site": "🧵 Thread • FxTwitter",
+  "title": "François Chollet (@fchollet)",
+  "description": "In the near term (definitely not in the long term), more capable models should mean safer models (maybe paradoxically).\nCurrent models are unsafe not because they're too smart, but because they take goals too literally or take nonsensical shortcuts to achieve…",
+  "image": "https://cdn4.telesco.pe/file/vahQIyAsV44t96TT2RyswTN2pZybLKMh9yWhAWzQnauI2mx5gVTKIVkOzn_oRjxVp9wWL6MuF0G4QMOpP55OI7B7FaCZ5Ti0qjLCgbBzPTJO7lEf_cotLs4uqHI2ozjpptbevnLoDYc7pHFwczFQ91NOu2c384FHxV-t7D9d-tldV2Oe5AKcENF-V6Qg-0yjSAZl5unYxZqq3dv-R6WGPYmyz1YVVw_8idcO2JQhjAgW1dYgNq5VR7YWDPZCCS3reRY2z3Cc3zm7EuV8udFoJAb-XM_yVeJyWK_iJk8wM-l9TsceBWjA6yAJglNEL2TAZlH-EyCF_or54EEr0mwrWQ.jpg"
+ },
+ "gholam": {
+  "text": "ببین رفیق، فرانسوا شوله که از استخوان‌خردکرده‌های دنیای هوش مصنوعیه، یه نکته‌ی خیلی مشتی رو مطرح کرده و می‌گه تو کوتاه‌مدت، هرچی مدل‌ها قدرتمندتر و باهوش‌تر بشن، اتفاقاً کار باهاشون امن‌تر و مطمئن‌تر می‌شه. به عقیده‌ی اون، خطر فعلی مدل‌ها اصلاً از زیادی فهمیدنشون نیست، بلکه از اینه که هنوز عقل سلیم ندارن و واسه رسیدن به هدف، کورکورانه میان‌برهای مسخره می‌زنن و تو دوراهی‌ها گیج می‌زنن. در واقع این مدل‌ها مثل شاگردنابلدی می‌مونن که می‌خوان کارو دربیارن اما چون هنوز هوش درست‌وحسابی ندارن، به شیوه انجامش گند می‌زنن. خلاصه حرف شوله اینه که مشکل فعلی امنیت بیشتر به کمبود هوش مربوط می‌شه تا چیز دیگه، هرچند تاکید کرده که این فرمول فقط مال همین چند سال آینده‌ست و قصه‌ی درازمدت فرق می‌کنه.\n\nچرا مهمه؟ اهمیتش اینه که بهمون نشون میده برعکس نگرانی‌های عمومی، ارتقای هوش مدل‌ها حداقل الان خرابکاری‌ها و خطرات هوش مصنوعی رو کمتر می‌کنه نه بیشتر.",
+  "date": "2026-09-13T15:29:50+00:00"
+ },
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/fchollet/status/2099102490361016827",
+   "domain": "x.com",
+   "author": {
+    "name": "François Chollet",
+    "handle": "fchollet",
+    "avatar": "https://pbs.twimg.com/profile_images/2006806326140350470/Kd5oZv-f_200x200.jpg"
+   },
+   "text": "In the near term (definitely not in the long term), more capable models should mean safer models (maybe paradoxically).\n\nCurrent models are unsafe not because they're too smart, but because they take goals too literally or take nonsensical shortcuts to achieve these goals, i.e. they're RL-fried. They lack common sense. They don't do the right thing in the face of ambiguity. Basically, they're not smart enough. They're at that dangerous level where they're smart enough to achieve goals but not smart enough to tell if they're pursuing the right goals or achieving them in a sensible way.\n\nMore capable models can be safely trusted with more complex goals -- I personally feel like Astra is much safer for my codebase than Sol.\n\nThis is often framed as an alignment problem, but really it's an intelligence problem.",
+   "date": 1789300007,
+   "media": [],
+   "links": []
+  }
+ ],
+ "article": {
+  "title": "فرانسوا شوله که از استخوان‌خردکرده‌های دنیای هوش مصنوعیه، یه نکته‌ی خیلی مشتی رو مطرح کرده و می‌گه تو کوتاه‌مدت، هرچی مدل‌ها قدرتمندتر و باهوش‌تر بشن، اتفاقاً کار باهاشون امن‌تر و مطمئن‌تر می‌شه",
+  "source_title": "In the near term (definitely not in the long term), more capable models should mean safer models (maybe paradoxically).",
+  "body": [
+   "ببین رفیق، فرانسوا شوله که از استخوان‌خردکرده‌های دنیای هوش مصنوعیه، یه نکته‌ی خیلی مشتی رو مطرح کرده و می‌گه تو کوتاه‌مدت، هرچی مدل‌ها قدرتمندتر و باهوش‌تر بشن، اتفاقاً کار باهاشون امن‌تر و مطمئن‌تر می‌شه. به عقیده‌ی اون، خطر فعلی مدل‌ها اصلاً از زیادی فهمیدنشون نیست، بلکه از اینه که هنوز عقل سلیم ندارن و واسه رسیدن به هدف، کورکورانه میان‌برهای مسخره می‌زنن و تو دوراهی‌ها گیج می‌زنن. در واقع این مدل‌ها مثل شاگردنابلدی می‌مونن که می‌خوان کارو دربیارن اما چون هنوز هوش درست‌وحسابی ندارن، به شیوه انجامش گند می‌زنن. خلاصه حرف شوله اینه که مشکل فعلی امنیت بیشتر به کمبود هوش مربوط می‌شه تا چیز دیگه، هرچند تاکید کرده که این فرمول فقط مال همین چند سال آینده‌ست و قصه‌ی درازمدت فرق می‌کنه."
+  ],
+  "why": "اهمیتش اینه که بهمون نشون میده برعکس نگرانی‌های عمومی، ارتقای هوش مدل‌ها حداقل الان خرابکاری‌ها و خطرات هوش مصنوعی رو کمتر می‌کنه نه بیشتر.",
+  "tags": []
+ },
+ "updated": "2026-10-25T12:27:05+00:00",
+ "gholam_checked": "2026-10-25T12:27:05+00:00"
+}

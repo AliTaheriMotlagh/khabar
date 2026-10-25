@@ -1,0 +1,57 @@
+{
+ "id": 4785,
+ "url": "https://t.me/dlmehr/4785",
+ "date": "2026-08-17T15:54:41+00:00",
+ "text": "https://fxtwitter.com/rohanpaul_ai/status/2089343216642625874?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+ "forwarded_from": null,
+ "digest": false,
+ "hash": "82503dc39c55",
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/rohanpaul_ai/status/2089343216642625874?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+  "site": "🧵 Thread • FxTwitter",
+  "title": "Rohan Paul (@rohanpaul_ai)",
+  "description": "China appears closer to EUV capability without having obtained ASML's production-ready machine.\nThe US allegation that an ASML EUV machine reached China remains unverified, and ASML says Washington has provided it no supporting evidence.\nChina has, however…",
+  "image": "https://cdn4.telesco.pe/file/AgvTr_ndrs2la9jIamArSvajVtlHWrzNZXBLHPRs_lfzJWoELsi4eNC_eyMqlMEbg15FElDRCUGEH2F8WpI1gMYja5y_z82Uy2grw7_yWh8Yv05CutbssNK8DuxK-jjJxLdJx0y8leKP2Q_8RZYBWPtiedUrTMUkRsXYbPRPbmfAE5ogQg8dFIR2QtqxmoQUgDcA343uDGrty0ty2frJ7GHH_i7MNSnWBxXjcwuaoKsDF2Vm4QU3q6hT5t_JUnUOzdt2Ug5d7wHwcBRlHdYzcLG8z8ctq8x2WpjwrWnIvJcLy6SZZggBseCxRL6LS18ZUI2OliZDCpSeIAYnvZcMBg.jpg"
+ },
+ "gholam": {
+  "text": "رفیق، بشنو از بازی تراشه‌ها که چینی‌ها دارن آروم و بی‌سرصدا کار خودشونو پیش می‌برن و یه پیش‌نمونه از دستگاه فوق‌پیشرفته لیتوگرافی EUV توی شنژن سرهم کردن. با اینکه آمریکا مدعی بود شاید دستگاه کامل شرکت هلندی ASML قاچاقی رفته باشه چین، این شرکت میگه آمار دقیق تک‌تک ۳۴۰ تا دستگاه ساخت خودش رو داره؛ اما ماجرا اینه که چینی‌ها با جذب مهندس‌های سابق همین شرکت و خرید قطعات یدکی خرد، تونستن نور لازم برای EUV رو بسازن، هرچند گیرِ اصلی‌شون هنوز روی اپتیک‌های فوق‌دقیق مونده و چیپ کاردرستی ازش درنیومده. از اون‌طرفم امثال هواوی و SMIC معطل نموندن و با همون دستگاه‌های قدیمی‌ترِ DUV چیپ پیشرفته می‌سازن و دولت چین هم کل هزینه‌ها و ضایعات سنگین تولید رو گردن گرفته تا کارشون لنگ نمونه.\n\nاهمیتش اینه که تحریم‌های سفت‌وسخت واشنگتن نتونسته جلوی پیشرفت پله‌به‌پله چین رو بگیره و اونا حاضرن هر تاوانی بدن تا انحصار غرب روی تراشه‌های پیشرفته رو بشکنن.",
+  "date": "2026-08-17T15:54:53+00:00"
+ },
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/rohanpaul_ai/status/2089343216642625874",
+   "domain": "x.com",
+   "author": {
+    "name": "Rohan Paul",
+    "handle": "rohanpaul_ai",
+    "avatar": "https://pbs.twimg.com/profile_images/1816185267037859840/Fd18CH0v_200x200.jpg"
+   },
+   "text": "China appears closer to EUV capability without having obtained ASML's production-ready machine.\n\nThe US allegation that an ASML EUV machine reached China remains unverified, and ASML says Washington has provided it no supporting evidence.\n\nChina has, however, reached a different milestone by building its own crude EUV prototype in Shenzhen, reportedly with former ASML engineers and parts sourced from older equipment.\n\nThat prototype can generate the required EUV light, but it has not produced working chips, with precision optics still among the hardest unresolved problems.\n\nASML says it can locate all 340 EUV machines it ever produced, 26 of them decommissioned, since its engineers alone move and service them. Yet components and subsystems travel through a long tail of specialist vendors with no comparable tracking.\n\nWashington may be aiming at the wrong unit of control. China does not need an ASML-class EUV scanner to weaken the lithography chokepoint.\n\nIts prototype already generates EUV light but cannot make working chips, with precision optics among the hardest gaps. Progress can therefore arrive subsystem by subsystem rather than as one finished machine.\n\nChina's installed DUV fleet already matters because SMIC and Huawei can use multi-patterning to make advanced logic without EUV.\n\nSo DUV multi-patterning changes what \"too expensive\" means in a strategic technology contest. The process requires extra manufacturing steps and produces more defects than EUV, so commercial economics worsen. But when the alternative is no domestic advanced chip, a state-backed program can tolerate costs a merchant foundry would reject.",
+   "date": 1786973215,
+   "media": [
+    {
+     "type": "image",
+     "src": "https://pbs.twimg.com/media/HP7UA4ZaYAERAly.jpg?name=orig",
+     "ratio": 1.0615
+    }
+   ],
+   "links": []
+  }
+ ],
+ "article": {
+  "title": "بشنو از بازی تراشه‌ها که چینی‌ها دارن آروم و بی‌سرصدا کار خودشونو پیش می‌برن و یه پیش‌نمونه از دستگاه فوق‌پیشرفته لیتوگرافی EUV توی شنژن سرهم کردن",
+  "source_title": "China appears closer to EUV capability without having obtained ASML's production-ready machine.",
+  "body": [
+   "رفیق، بشنو از بازی تراشه‌ها که چینی‌ها دارن آروم و بی‌سرصدا کار خودشونو پیش می‌برن و یه پیش‌نمونه از دستگاه فوق‌پیشرفته لیتوگرافی EUV توی شنژن سرهم کردن. با اینکه آمریکا مدعی بود شاید دستگاه کامل شرکت هلندی ASML قاچاقی رفته باشه چین، این شرکت میگه آمار دقیق تک‌تک ۳۴۰ تا دستگاه ساخت خودش رو داره؛ اما ماجرا اینه که چینی‌ها با جذب مهندس‌های سابق همین شرکت و خرید قطعات یدکی خرد، تونستن نور لازم برای EUV رو بسازن، هرچند گیرِ اصلی‌شون هنوز روی اپتیک‌های فوق‌دقیق مونده و چیپ کاردرستی ازش درنیومده. از اون‌طرفم امثال هواوی و SMIC معطل نموندن و با همون دستگاه‌های قدیمی‌ترِ DUV چیپ پیشرفته می‌سازن و دولت چین هم کل هزینه‌ها و ضایعات سنگین تولید رو گردن گرفته تا کارشون لنگ نمونه."
+  ],
+  "why": "تحریم‌های سفت‌وسخت واشنگتن نتونسته جلوی پیشرفت پله‌به‌پله چین رو بگیره و اونا حاضرن هر تاوانی بدن تا انحصار غرب روی تراشه‌های پیشرفته رو بشکنن.",
+  "tags": [
+   "تراشه",
+   "چین"
+  ]
+ },
+ "updated": "2026-10-25T12:30:05+00:00",
+ "gholam_checked": "2026-10-25T12:30:05+00:00"
+}

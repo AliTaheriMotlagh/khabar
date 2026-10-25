@@ -1,0 +1,70 @@
+{
+ "id": 4653,
+ "url": "https://t.me/dlmehr/4653",
+ "date": "2026-08-09T01:30:16+00:00",
+ "text": "https://fxtwitter.com/rohanpaul_ai/status/2086038118608801981?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+ "forwarded_from": null,
+ "digest": false,
+ "hash": "26acc4d347d7",
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/rohanpaul_ai/status/2086038118608801981?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+  "site": "🧵 Thread • FxTwitter",
+  "title": "Rohan Paul (@rohanpaul_ai)",
+  "description": "Making SQLite 5% faster would already be powerful.\nHere, an AI agent, KISS Sorcar, got 59% improvement in under 8 hours, for less than $150.\nGitHub repo below:\nSQLite is one of the most battle-tested codebases on earth. Its team has spent nearly 20 years…",
+  "image": "https://cdn4.telesco.pe/file/Gxg9_RKWvMG5NcH7okGwMJYB-Y5qrI_hwLdpCpihzANN-_qwUKfJiq_EnChgdikyxoh-AIw-aILBNo7xCDPVMAa98yvGfxhad1r_TogG5Hi-hWC8knvkkLhciLyciYc8nNUtOj0nNKonQOK0p2Ig18qhpElCGkFAbSDgpoUDMOxwTWdHH2KDwb-OVOqzIcy78uKXWCyidUkGZCGVoeXy3vo3r4cWTyyiaryTUVr2xuvHHYFjpOeiTNg3FBn0NJLUU3zTtDVbYWCgMCkmnEVvh6OWJ16MLl9sNFxxo6EbdoiplJST325X2uX41I3eYU-HtzlvTXdwB6QDttlQXhUorA.jpg"
+ },
+ "gholam": {
+  "text": "ببین رفیق، دیتابیس SQLite که ۲۰ ساله زبده‌ترین مهندسا دارن روی صدم ثانیه‌هاش چونه می‌زنن، گیر یه ایجنت هوش مصنوعی به اسم KISS Sorcar افتاده و بدجور رکورد زده! این ایجنت توی کمتر از ۸ ساعت و با خرج زیر ۱۵۰ دلار، سرعت عملکرد این کد سنگین رو ۵۹ درصد یعنی نزدیک ۱.۶ برابر برده بالا. با وجود این همه تغییرات عمیق روی تراکنش‌ها و کوئری‌ها، تمام ۱ میلیون تست سلامت SQLite با موفقیت پاس شدن و هیچ باگی بالا نیومده. این حرکت قشنگ ثابت کرد که ایجنت‌های کدنویسی دیگه از پروژه‌های مشق شبی رد شدن و دارن غول‌های نرم‌افزاری دنیا رو زیر و رو می‌کنن.\n\nاهمیتش اینه که نشون میده هوش مصنوعی می‌تونه کدهای پیچیده و چندساله رو ظرف چند ساعت و با کمترین هزینه طوری بهینه کنه که پروژه‌های بزرگ دنیا یه هوش تازه پیدا کنن.",
+  "date": "2026-08-09T01:30:32+00:00"
+ },
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/rohanpaul_ai/status/2086038118608801981",
+   "domain": "x.com",
+   "author": {
+    "name": "Rohan Paul",
+    "handle": "rohanpaul_ai",
+    "avatar": "https://pbs.twimg.com/profile_images/1816185267037859840/Fd18CH0v_200x200.jpg"
+   },
+   "text": "Making SQLite 5% faster would already be powerful.\n\nHere, an AI agent, KISS Sorcar, got 59% improvement in under 8 hours, for less than $150. \n\nGitHub repo below:\n\nSQLite is one of the most battle-tested codebases on earth. Its team has spent nearly 20 years shaving off tiny performance gains.\n\nAnd it wasn't optimizing some toy benchmark. The gains showed up across transaction-heavy workloads, analytical queries, and blob I/O.\n\nThe agent found several places where the default setup was paying unnecessary costs, especially around how transactions hit disk, then changed the code and configuration, benchmarked everything, and attacked its own changes for bugs.\n\nOver 1 million SQLite tests still pass.\n\nThis may be one of the more useful demonstrations of where coding agents are heading.\n\n- 2.06x on the official speedtest1 (~30k statements)\n- 1.90x on TATP (OLTP mix: 400k transactions, 100k subscribers)\n- 1.30x on the Star Schema Benchmark (13 queries x 2, 1.5M-row lineorder)\n- 1.25x on kvtest (blob I/O: 40k x 10 KB, seq + random + update)",
+   "date": 1786185218,
+   "media": [
+    {
+     "type": "image",
+     "src": "https://pbs.twimg.com/media/HPMYWmYawAAuorC.png?name=orig",
+     "ratio": 0.7833
+    }
+   ],
+   "links": [],
+   "quote": {
+    "author": {
+     "name": "Koushik Sen",
+     "handle": "koushik77",
+     "avatar": "https://pbs.twimg.com/profile_images/1433849933782605826/5M4-ULIr_200x200.jpg"
+    },
+    "text": "I optimized SQLite 3. The optimized build achieves a verified geometric-mean speedup of 1.59x over the pristine latest trunk across four benchmarks:\n\n- 2.06x on the official speedtest1 (~30k statements)\n- 1.90x on TATP (OLTP mix: 400k transactions, 100k subscribers)\n- 1.30x on the Star Schema Benchmark (13 queries x 2, 1.5M-row lineorder)\n- 1.25x on kvtest (blob I/O: 40k x 10 KB, seq + random + update)\n\nAll 1,032,940 cases in the full SQLite test suite pass, and every benchmark run produces checksum-verified identical results. For context: the SQLite team has spent nearly 20 years tuning this code; their own measurements show ~3.5x total CPU improvement since 2008, earned a few percent at a time. Tested so far on standard Linux provided by GCP.\n\nAn agent called KISS Sorcar did it in under 8 hours for under $150 in API cost. I wrote no code: 1 main short prompt plus a couple of steering prompts.\n\nWhy I trust the results:\n\n1. No cheating in the speedup. The biggest win is defaulting to WAL journaling, the configuration SQLite's own docs recommend. Re-measured durability-neutral (synchronous=FULL: committed transactions survive power loss exactly as strongly as the baseline), it is still 1.54x faster.\n\n2. Adversarial testing. A separate attacking agent tried to break the changes: a 37-script differential SQL corpus (recursive CTEs, window functions, triggers, UPSERT, JSON, FTS5, rtree, corrupt inputs) compared byte-for-byte against a pristine build under ASan/UBSan, plus WAL-file corruption, multi-process mptest, fd-exhaustion, symlink, and read-only-media attacks.\n\n3. Security hardening and independent review. Two hardening rounds with kimi-k3 as the model: in-tree fuzzers (fuzzcheck over all 8 corpora, sessionfuzz) came back clean; 14 hostile-WAL corruption scenarios - no crashes; OOM injection and page-size sweeps; one real bug found and fixed.\n\n1.59x is what an agent can honestly find in one of the most heavily optimized codebases in the world overnight.\n\nOptimized SQLite Repository: https://github.com/ksenxx/sqlite-optimized/\nBlog: https://kisssorcar.github.io/blog/sqlite-optimization-blog.html",
+    "date": 1786182132,
+    "media": [],
+    "links": [
+     "https://github.com/ksenxx/sqlite-optimized/",
+     "https://kisssorcar.github.io/blog/sqlite-optimization-blog.html"
+    ]
+   }
+  }
+ ],
+ "article": {
+  "title": "دیتابیس SQLite که ۲۰ ساله زبده‌ترین مهندسا دارن روی صدم ثانیه‌هاش چونه می‌زنن، گیر یه ایجنت هوش مصنوعی به اسم KISS Sorcar افتاده و بدجور رکورد زده",
+  "source_title": "Making SQLite 5% faster would already be powerful.",
+  "body": [
+   "ببین رفیق، دیتابیس SQLite که ۲۰ ساله زبده‌ترین مهندسا دارن روی صدم ثانیه‌هاش چونه می‌زنن، گیر یه ایجنت هوش مصنوعی به اسم KISS Sorcar افتاده و بدجور رکورد زده! این ایجنت توی کمتر از ۸ ساعت و با خرج زیر ۱۵۰ دلار، سرعت عملکرد این کد سنگین رو ۵۹ درصد یعنی نزدیک ۱.۶ برابر برده بالا. با وجود این همه تغییرات عمیق روی تراکنش‌ها و کوئری‌ها، تمام ۱ میلیون تست سلامت SQLite با موفقیت پاس شدن و هیچ باگی بالا نیومده. این حرکت قشنگ ثابت کرد که ایجنت‌های کدنویسی دیگه از پروژه‌های مشق شبی رد شدن و دارن غول‌های نرم‌افزاری دنیا رو زیر و رو می‌کنن."
+  ],
+  "why": "نشون میده هوش مصنوعی می‌تونه کدهای پیچیده و چندساله رو ظرف چند ساعت و با کمترین هزینه طوری بهینه کنه که پروژه‌های بزرگ دنیا یه هوش تازه پیدا کنن.",
+  "tags": [
+   "کدنویسی"
+  ]
+ },
+ "updated": "2026-10-25T12:30:41+00:00",
+ "gholam_checked": "2026-10-25T12:30:41+00:00"
+}

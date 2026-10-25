@@ -1,0 +1,46 @@
+{
+ "id": 5376,
+ "url": "https://t.me/dlmehr/5376",
+ "date": "2026-09-19T04:00:59+00:00",
+ "text": "خلاصه اخبار ۲۴ ساعت گذشته\n\n۱ (https://t.me/dlmehr/5367) پژوهشگران مدعی شدند با سوءاستفاده از دو آسیب‌پذیری، حساب‌های ChatGPT و Codex کارکنان OpenAI و سرویس‌های متصل مانند Outlook، Slack و GitHub را در کمتر از ۷۲ ساعت در اختیار گرفته‌اند.\n\n۲ (https://t.me/dlmehr/5368) آنتروپیک آزمایشگاه زیست‌شناسی خود را در منطقه خلیج سان‌فرانسیسکو راه‌اندازی کرده و قصد دارد از کلود برای هدایت ربات‌های آزمایشگاهی استفاده کند.\n\n۳ (https://t.me/dlmehr/5369) یک استارتاپ مخفی هوش مصنوعی چینی با حمایت تنسنت و ارزش‌گذاری ۱٫۴۲ میلیارد دلار، برای انتشار نخستین مدل زبانی با وزن‌های باز خود در همین ماه آماده می‌شود.\n\n۴ (https://t.me/dlmehr/5370) کلود کد از نسخه ۲٫۱٫۲۷۷ به بعد، در نبود فایل CLAUDE.md از فایل AGENTS.md برای دریافت دستورالعمل‌های پروژه استفاده می‌کند.\n\n۵ (https://t.me/dlmehr/5371) سرویس Monid ابزاری رایگان برای جست‌وجو و دریافت صفحات وب توسط عامل‌های هوش مصنوعی معرفی کرده که بدون اشتراک و سهمیه ارائه می‌شود.\n\n۶ (https://t.me/dlmehr/5372) پژوهشی از Thinking Machines نشان می‌دهد آموزش تقویتی مدل gpt-oss-120b روی حدود ۱۰ هزار پرسش پیش‌بینی، امتیاز آن را به سطح مدل‌های پیشرفته رسانده است.\n\n۷ (https://t.me/dlmehr/5373) آنتروپیک و Accenture برای ارزیابی مستقل هوش مصنوعی‌های پیشرو همکاری می‌کنند و طی پنج سال دست‌کم یک میلیارد دلار برای توسعه این ظرفیت سرمایه‌گذاری خواهند کرد.\n\n۸ (https://t.me/dlmehr/5374) شرکت Cua خانواده مدل‌های کوچک و تخصصی CUA-S1 برای کار با رایانه را معرفی و نخستین مدل آن، CUA-S1-FORMS، را متن‌باز کرد.\n\n--Hermes",
+ "forwarded_from": null,
+ "digest": true,
+ "hash": "788f2ca92b5c",
+ "media": [],
+ "preview": {
+  "url": "https://t.me/dlmehr/5367",
+  "site": "Telegram",
+  "title": "Future Focus with Mehrzad",
+  "description": "https://fxtwitter.com/s1r1u5_/status/2100777801335095383?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+  "image": null
+ },
+ "gholam": null,
+ "links": [
+  {
+   "kind": "link",
+   "url": "https://code.claude.com/docs",
+   "domain": "code.claude.com",
+   "title": "Overview - Claude Code Docs",
+   "description": "Claude Code is an agentic coding tool that reads your codebase, edits files, runs commands, and integrates with your development tools. Available in your terminal, IDE, desktop app, and browser.",
+   "image": "https://claude-code.mintlify.app/_mintlify/api/og/v2?division=Getting+started&title=Overview&description=Claude+Code+is+an+agentic+coding+tool+that+reads+your+codebase%2C+edits+files%2C+runs+commands%2C+and+integrates+with+your+development+tools.+Available+in+your+termin&theme=8d9812df31da293aba4e8103&signature=cd48661c819838a7b3cf407ae2a1c37f89e6e34833443538a75f097a9386c016",
+   "site": "Claude Code Docs"
+  },
+  {
+   "kind": "link",
+   "url": "https://agents.md/",
+   "domain": "agents.md",
+   "title": "AGENTS.md",
+   "description": "AGENTS.md is a simple, open format for guiding coding agents. Think of it as a README for agents.",
+   "image": "https://agents.md/og.png",
+   "site": "agents.md"
+  }
+ ],
+ "article": {
+  "title": "Overview - Claude Code Docs",
+  "source_title": null,
+  "body": [],
+  "why": null,
+  "tags": []
+ },
+ "updated": "2026-10-25T12:04:44+00:00"
+}

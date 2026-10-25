@@ -1,0 +1,50 @@
+{
+ "id": 5028,
+ "url": "https://t.me/dlmehr/5028",
+ "date": "2026-08-29T21:20:04+00:00",
+ "text": "https://fxtwitter.com/thsottiaux/status/2093801758665715784",
+ "forwarded_from": "Mehran",
+ "digest": false,
+ "hash": "e1db5f92584e",
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/thsottiaux/status/2093801758665715784",
+  "site": "🧵 Thread • FxTwitter",
+  "title": "Tibo (@thsottiaux)",
+  "description": "We are reseting usage for all paid users of Codex and ChatGPT Work.\nPlease continue reading for an update on Codex usage limits. The team has been working around the clock, going through thousands of reports and shipping fixes.\nDepending on how you use…",
+  "image": "https://cdn4.telesco.pe/file/L8E76csfXsmHP6VUb3bMPgpBWvy1L3kqMgKghUCe7FgyO6OYMChX1moiB_-k6NUmuM77Li3-5I0BPJirI6G-TEkrl1UMddR0aFlCbQCiWPPtlOvE9UFHM_gmfugC9LOJJVU4Cc1n8SOKTuThiqFGIi4OrXPKdeojzxADv2yesbBJIvervi7LfhnjzFIy0s0FsXHLSvqk7FqUS0NlaI5BYQVG4S6gxwzCTKUOIPv3arzMBqzDhsFxrWVIyKrlMLREk-ZaOwfn2ZlYWcA1K0YXf79LsWClf8yaq9oFrOoJ04JJXOnDETXFJ1oyzvZHg1p5wYQMupQE-RCF70HXCw1_yQ.jpg"
+ },
+ "gholam": {
+  "text": "رفقا دم همگی گرم، تیم توسعه کدکس و چت‌جی‌پی‌تی ورک دست به آچار شده و یه حال اساسی به سیستم داده تا مشکل پر شدن بی‌خود و بی‌جهت سهمیه‌ها رو جمع کنه. قضیه از این قراره که نشستن کلی باگ زیرپوستی و نشتی رو رفع کردن؛ از نگه‌داشتن الکی عکس‌های قدیمی و خلاصه‌سازی‌های تکراری گرفته تا پروسه‌هایی که تو لوپ می‌افتادن و تا هفتاد درصد اعتبار هفتگی رو بی‌اجازه دود می‌کردن و هوا می‌فرستادن. حالا با این اصلاحات، مصرف بچه‌ها بین ۱۰ تا ۵۰ درصد بهینه‌تر میشه و برای جبران این داستان‌ها هم سهمیه مصرفی تمام کاربرهای پولی رو کلاً ریست کردن تا با خیال تخت کارشون رو جلو ببرن.\n\nچرا مهمه؟ چون از این به بعد اشتراک دلاری و توکن‌هایی که خرج می‌کنی پای باگ‌های سیستمی هدر نمیره و اعصابت سر تموم شدن بی‌موقع لیمیت‌ها خط‌خطی نمیشه.",
+  "date": "2026-08-29T21:20:17+00:00"
+ },
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/thsottiaux/status/2093801758665715784",
+   "domain": "x.com",
+   "author": {
+    "name": "Tibo",
+    "handle": "thsottiaux",
+    "avatar": "https://pbs.twimg.com/profile_images/2093807917833281537/2yBgpwVV_200x200.jpg"
+   },
+   "text": "We are reseting usage for all paid users of Codex and ChatGPT Work.\n\nPlease continue reading for an update on Codex usage limits. The team has been working around the clock, going through thousands of reports and shipping fixes.\n\nDepending on how you use Codex, you should see your usage go between 10% and 50% further than before.\n\nWe really went with a fine comb, with many uncovered small things being longstanding and here is what we found and fixed:\n- Compaction. We were keeping old images during compaction, sometimes making the context large enough to trigger compaction again. After the fix, usage dropped around 10% for users making heavy use of images. Fixed.\n- Memory. Background memory workers could inherit Stop hooks and keep running when the hook wouldn’t let them finish. This affected fewer than 1% of users, with the long tail being pretty bad and we saw one example thread check whether it could stop 15,000 times. Fixed.\n- Goals. In some cases, a set /goal could finish and then keep going past the intended stop condition, or the model would keep retrying broken tools without stopping. We saw examples consume anywhere from 15% to 70% of a weekly allowance. Fixed.\n- Automations. Some custom schedules could run more frequently than configured. Fixed.\n- Subagents. Smaller models (e.g. Luna) sometimes picked more capable helpers without being explicitly asked. The same was true where the orchestrating model not running in /fast mode could request sub-agents to run /fast. Fixed.\n- Computer History. The older implementation could lead to repeatedly summarizing overlapping activity. For some cases we saw it consume up to one fifth of the weekly usage per week. Fixed.\n- Rolling task summaries. Ordinary turns were triggering extra background requests. These added about 1% to token usage. Small each time, but it adds up. We have disabled this.\n- MCP. Some tool results could be encoded twice. We also found tool instructions getting cut off and fetched again. Fixed.\n\nWe’ve also made architectural changes to prevent these from regressing and our teams will get paged if it happens regardless. We are also working on showing you directly in the app where your usage goes so you don’t have to guess.\n\nGoes without saying that we’re resetting usage limits and I hope you enjoy a very nice Saturday!",
+   "date": 1788036214,
+   "media": [],
+   "links": []
+  }
+ ],
+ "article": {
+  "title": "رفقا دم همگی گرم، تیم توسعه کدکس و چت‌جی‌پی‌تی ورک دست به آچار شده و یه حال اساسی به سیستم داده تا مشکل پر شدن بی‌خود و بی‌جهت سهمیه‌ها رو جمع کنه",
+  "source_title": "We are reseting usage for all paid users of Codex and ChatGPT Work.",
+  "body": [
+   "رفقا دم همگی گرم، تیم توسعه کدکس و چت‌جی‌پی‌تی ورک دست به آچار شده و یه حال اساسی به سیستم داده تا مشکل پر شدن بی‌خود و بی‌جهت سهمیه‌ها رو جمع کنه. قضیه از این قراره که نشستن کلی باگ زیرپوستی و نشتی رو رفع کردن؛ از نگه‌داشتن الکی عکس‌های قدیمی و خلاصه‌سازی‌های تکراری گرفته تا پروسه‌هایی که تو لوپ می‌افتادن و تا هفتاد درصد اعتبار هفتگی رو بی‌اجازه دود می‌کردن و هوا می‌فرستادن. حالا با این اصلاحات، مصرف بچه‌ها بین ۱۰ تا ۵۰ درصد بهینه‌تر میشه و برای جبران این داستان‌ها هم سهمیه مصرفی تمام کاربرهای پولی رو کلاً ریست کردن تا با خیال تخت کارشون رو جلو ببرن."
+  ],
+  "why": "چون از این به بعد اشتراک دلاری و توکن‌هایی که خرج می‌کنی پای باگ‌های سیستمی هدر نمیره و اعصابت سر تموم شدن بی‌موقع لیمیت‌ها خط‌خطی نمیشه.",
+  "tags": [
+   "اوپن‌ای‌آی"
+  ]
+ },
+ "updated": "2026-10-25T12:28:37+00:00",
+ "gholam_checked": "2026-10-25T12:28:37+00:00"
+}

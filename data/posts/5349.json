@@ -1,0 +1,59 @@
+{
+ "id": 5349,
+ "url": "https://t.me/dlmehr/5349",
+ "date": "2026-09-17T20:33:32+00:00",
+ "text": "https://fxtwitter.com/ephraimduncan/status/2100454070536351824?s=46",
+ "forwarded_from": "Hossein Zakariaee",
+ "digest": false,
+ "hash": "f4a0440ed178",
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/ephraimduncan/status/2100454070536351824?s=46",
+  "site": "FxTwitter",
+  "title": "Duncan (@ephraimduncan)",
+  "description": "Built a model router with Jev by @typesafeai.\nJev decides what model fits your request best and the request is sent to that model.",
+  "image": null
+ },
+ "gholam": {
+  "text": "ببین رفیق، یه برنامه‌نویسی به اسم دانکن اومده با استفاده از ابزار Jev که کار بچه‌های Typesafe AI هستش، یه سیستم مسیریاب یا همون روتر برای مدل‌های هوش مصنوعی ساخته. قضیه از این قراره که این سیستم، درخواست و پرامپت شما رو می‌سنجه و بررسی می‌کنه ببینه لقمه‌ی دهن کدوم مدله، بعدش اتوماتیک درخواست رو می‌فرسته سراغ همون مدلی که بیشتر از همه به کارتون میاد. با این فرمون، دیگه لازم نیست خودت دستی کلنجار بری که کدوم مدل رو انتخاب کنی، چون خودش زبل‌بازی درمیاره و سریع کارت رو راه می‌ندازه.\n\nچرا مهمه؟ اهمیتش اینه که هم کیفیت خروجی کارات میره بالا و هم توی مصرف هزینه و زمان صرفه‌جویی می‌شه، چون هر فرمایشی دقیقا به کاربلدترین مدل ارجاع داده میشه.",
+  "date": "2026-09-17T20:33:42+00:00"
+ },
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/ephraimduncan/status/2100454070536351824",
+   "domain": "x.com",
+   "author": {
+    "name": "Duncan",
+    "handle": "ephraimduncan",
+    "avatar": "https://pbs.twimg.com/profile_images/1740764353408753664/uPGbBhm0_200x200.jpg"
+   },
+   "text": "Built a model router with Jev by @typesafeai. \n\nJev decides what model fits your request best and the request is sent to that model.",
+   "date": 1789622249,
+   "media": [
+    {
+     "type": "video",
+     "src": "https://video.twimg.com/amplify_video/2100454021852954624/vid/avc1/960x720/1r-fhZy8MwgYbqTc.mp4?tag=29",
+     "poster": "https://pbs.twimg.com/amplify_video_thumb/2100454021852954624/img/hqULLONlXw40573G.jpg",
+     "ratio": 0.75,
+     "duration": 14.016,
+     "gif": false
+    }
+   ],
+   "links": []
+  }
+ ],
+ "article": {
+  "title": "یه برنامه‌نویسی به اسم دانکن اومده با استفاده از ابزار Jev که کار بچه‌های Typesafe AI هستش، یه سیستم مسیریاب یا همون روتر برای مدل‌های هوش مصنوعی ساخته",
+  "source_title": "Built a model router with Jev by @typesafeai.",
+  "body": [
+   "ببین رفیق، یه برنامه‌نویسی به اسم دانکن اومده با استفاده از ابزار Jev که کار بچه‌های Typesafe AI هستش، یه سیستم مسیریاب یا همون روتر برای مدل‌های هوش مصنوعی ساخته. قضیه از این قراره که این سیستم، درخواست و پرامپت شما رو می‌سنجه و بررسی می‌کنه ببینه لقمه‌ی دهن کدوم مدله، بعدش اتوماتیک درخواست رو می‌فرسته سراغ همون مدلی که بیشتر از همه به کارتون میاد. با این فرمون، دیگه لازم نیست خودت دستی کلنجار بری که کدوم مدل رو انتخاب کنی، چون خودش زبل‌بازی درمیاره و سریع کارت رو راه می‌ندازه."
+  ],
+  "why": "اهمیتش اینه که هم کیفیت خروجی کارات میره بالا و هم توی مصرف هزینه و زمان صرفه‌جویی می‌شه، چون هر فرمایشی دقیقا به کاربلدترین مدل ارجاع داده میشه.",
+  "tags": [
+   "کدنویسی"
+  ]
+ },
+ "updated": "2026-10-25T12:26:39+00:00",
+ "gholam_checked": "2026-10-25T12:26:39+00:00"
+}

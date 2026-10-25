@@ -1,0 +1,104 @@
+{
+ "id": 5813,
+ "url": "https://t.me/dlmehr/5813",
+ "date": "2026-10-11T21:27:33+00:00",
+ "text": "https://fxtwitter.com/rohanarun/status/2109336015814959200?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+ "forwarded_from": null,
+ "digest": false,
+ "hash": "3785b65e9e8c",
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/rohanarun/status/2109336015814959200?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+  "site": "FxTwitter",
+  "title": "Rohan Arun (@RohanArun)",
+  "description": "From κ=2⁻¹⁸² to 0.001289283116 :)\nInteger multiplication community auto-research highlights since yesterday (+69.13% in 24 hours):\n1) We had multiple flips of the infamous \"wall\" between the bit side and complex side thanks to community efforts.\nYesterday…",
+  "image": "https://cdn4.telesco.pe/file/rHSoRkc87h_mDrXuuAFlyWXPZdy8ulXYug6WeULA7StUNdwMVoIMQ_488F8B48tmhSuNMO5qTLLMj1dtJe-ZQ7Z12BqT8fQ6qzaAB8tjP3X8suw3CkUIdm_gDIMjLE0Dzaxsfihq5oRroLzfIwLnksfgnhVt1XiWK5__EuxZIGNINkjLUEscwETuJm7FJBUkfudYF5o7D22JCaeY6yzzdnsC43XQKzQbxmiqYsGX6I6l33nhgkbpqeCKBwEFUiqDBFGLz3Jn4cZXL2VkgN1tNfXQ0atAWRIARLHA7AylXnlCcgDDbSalhtdhdBKf8EE5GU4WnQGSz28WwMiBNqfE2A.jpg"
+ },
+ "gholam": {
+  "text": "رفیق، این بچه‌های خوره ریاضی و هوش مصنوعی با سرپرستی روهان آرون یه گردوخاک اساسی راه انداختن و مرزهای ضرب اعداد صحیح رو جابه‌جا کردن. ماجرا از این قراره که با ترکیب شمّ و خلاقیت انسانی و قدرت ایجنت‌های هوش مصنوعی مثل کلود و کدکس، رفتن سراغ هندسه هشت‌بعدی E8 و تونستن کرانِ کاپا رو تو ۲۴ ساعت نزدیک ۶۹ درصد بکشن بالا و از عملاً صفرِ مطلق (۲ به توان منفی ۱۸۲) برسونن به عدد ۰.۰۰۱۲۸. تو همین یه روزه ۱۵۱ تا پی‌آر تو گیت‌هاب جابه‌جا شده و رقابت تیمی بین بچه‌ها مثل یه مسابقه ورزشی نفس‌گیر جلو رفته تا بخش‌های زائد الگوریتم رو حذف کنن. این پیشرفت خفن چنان انگیزه‌ای تزریق کرده که محقق‌ها دارن همین فرمونِ تحقیقات خودکار رو روی معماهای سنگین دیگه مثل شبه‌فرضیه ریمان هم پیاده می‌کنن.\n\nاهمیتش اینه که نشون داد وقتی هوش و خلاقیت انسان فرمونِ سرعتِ هوش مصنوعی رو دستش بگیره، گره‌های کورِ ریاضیات که سال‌ها دست‌نخورده مونده بودن ظرف چند روز باز میشن.",
+  "date": "2026-10-11T21:27:53+00:00"
+ },
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/RohanArun/status/2109336015814959200",
+   "domain": "x.com",
+   "author": {
+    "name": "Rohan Arun",
+    "handle": "RohanArun",
+    "avatar": "https://pbs.twimg.com/profile_images/1946954678874308608/lbpeDP1__200x200.jpg"
+   },
+   "text": "From κ=2⁻¹⁸² to 0.001289283116 :)  \n\nInteger multiplication community auto-research highlights since yesterday (+69.13% in 24 hours):\n\n1) We had multiple flips of the infamous \"wall\" between the bit side and complex side thanks to community efforts.\n\nYesterday we put out a call for researchers to submit wild new designs, and multiple experts submitted :) \n\n@mrowdays was responsible for most of the limit increase in the last day and introduced Sussman's E8 geometry.\n\n2) We switched to E8 geometry. (Thanks to Jacob Sussman for the E8 unit)\n\nE8 is a symmetric lattice in eight dimensions, and Sussman’s E8 construction was adapted by contributors on both the complex and bit sides.\n\nIt's wild that it even works, but I'm noticing cross-pollination across breakthroughs now that agents can accelerate the insights. Humans still seem to connect the disparate dots most often.\n\n3) We crossed κ = 10⁻³, and Dugongue posted the first PR around 3 a.m.!\n\nMuch of the progress in the last day came from optimizing and canceling existing parts of the algorithm.\n\nInteresting observations:\n\n1) We started sharing notes across agent teams and published GitHub files with failures to avoid repeating tokens.\n\nCompetition seems to drive a lot of the progress, since it's exciting to participate like in sports, so we're testing if agent teams progress faster collaborating or if competing is somehow driving faster progress.\n\nIt's possible researchers wouldn't have noticed this if there weren't such attention, and winning the leaderboard is a root human incentive.\n\n2) We analyzed all the agent PR data:\n\n151 PRs opened in the last 24 hours: 89 disclose Codex and 48 disclose Claude.\n\n261,895,084 lines of code added; 37,108 deleted.\n\nMost prolific contributors: rohanarun with 118 PRs, eumemic with 73, and chafreaky with 63.\n\nCodex published the most advances, but all the top human-agent teams use both Codex and Claude to generate fresh ideas.\n\nSome teams are using Antigravity, Cline, Hermes, and even ChatGPT to submit progress!\n\nExperts with good intuition can use any harness, but frontier models save hours, so they're winning early progress.\n\n3) Researchers are tightening bounds across multiple other papers now, like the Quasi-Riemann hypothesis, and applying breakthroughs across papers.\n\nA handful of experts joined the battle in the last day, and multiple others got inspired to submit solutions to other papers, like @HaileyStormC’s submission to QRH.\n\nAuto-research is just beginning, and anyone can copy the prompt on this site to contribute with Codex or Claude: http://app.getsupers.com/auto-research\n\nI'm having a call with top contributors Monday to share best practices, and I'll record and publish the highlights to encourage more to join us.\n\nIf you're not sure where to start and want to get involved in auto-research, feel free to DM me. \n\nThe only requirement to get invovled is good intuition and a subscription to Codex/Claude. \n\nWe need more human intuition to guide the agents and connect the dots, and there's likely breakthroughs just waiting to be prompted. \n\nConditional κ ≈ 0.001289283116 :) Just submitted a new best bound.\n\nhttps://github.com/CrocSwap/integer-mult-bounds/pull/467",
+   "date": 1791739870,
+   "media": [
+    {
+     "type": "image",
+     "src": "https://pbs.twimg.com/media/HUXUzUTXgAAVOnI.jpg?name=orig",
+     "ratio": 0.8582
+    }
+   ],
+   "links": [
+    "http://app.getsupers.com/auto-research",
+    "https://github.com/CrocSwap/integer-mult-bounds/pull/467"
+   ],
+   "quote": {
+    "author": {
+     "name": "Rohan Arun",
+     "handle": "RohanArun",
+     "avatar": "https://pbs.twimg.com/profile_images/1946954678874308608/lbpeDP1__200x200.jpg"
+    },
+    "text": "From κ=2⁻¹⁸² to 7.53508664880762e-4 :)\n\nCommunity progress highlights on integer multiplication bounds since yesterday (+6.0% in 24 hours):\n\n1) Four new bit words in one day.\n\nA bit word is basically the recipe for the integer half of the multiplication trick: a giant list of \"add this register to that one\" steps. These four moves were ~60% of the gain since yesterday.\n\n2) We hit a \"wall\" that was lifted within minutes as a community effort :)\n\nThe current best algorithm is built from a \"bit\" part and a \"complex\" part, which does the Fourier-transform-style work. The final κ is set by whichever saving is lower.\n\nThe bit side got within 0.6% of the complex supplier's cap (7.547e-4), so the complex modules were re-annealed the same way the bit modules were: the cap was raised to 7.635e-4.\n\nWe tend to need human researchers to supply the insights that poke the model into out-of-distribution solutions, so consider pointing your Codex Astra or Claude Fable at the repo with wild new regimes to break our current wall :)\n\n3) As we neared the \"wall,\" some contributions came to the core of the repo as new tests and theoretical bounds.\n\nJames Chang submitted a Lean formalization that verifies key finite identities and exact arithmetic.\n\nLean is a functional programming language designed to prove theorems. It makes it easier to collaborate, as many mathematicians trust it and can now contribute in parallel.\n\n4) Scheduling as a composable stage was introduced, including in our PR. It basically changes when each register is allowed to grow to optimize the circuit.\n\nInteresting observations from running a fleet of Astra and Fable agents on auto-research:\n\n1) As we neared the \"wall,\" every big leap started coming from Fable 5.1 instead of Astra high.\n\nFable took longer to think on completely new designs, so previously it wasn't able to keep up with the pace of Astra's advances.\n\nEvery structural jump since yesterday (gen4, gen5, gen5b, the complex re-anneal) was disclosed as Claude-assisted, while the Codex-assisted teams owned the fast composition and admission work.\n\nThe best breakthroughs still come from a human pushing the model at a different object to reach out-of-distribution solutions, so it seems human intuition is still more important than the model.\n\n2) Many of the top contributors I met were not experts in math, but rather experts in other research or in getting agents to \"think\" faster.\n\nBoth seem necessary: experts with good intuition to guide the army of agents, and agent wranglers who can break down the tedious composition and optimization work.\n\nA new kind of decentralized auto-research is forming live, as contributors are able to accelerate faster than you could traditionally publish papers.\n\nAnyone with good intuition can contribute to the leaderboard.\n\n3) I was able to queue up ideas overnight and wake up to 5 new higher bounds in integer multiplication, and breakthroughs on 5 more OpenAI math papers!\n\nI'm having a call with the top contributors Monday to share notes and best practices.\n\nIf you're an expert or agent wrangler and want to join and help us break past the wall with new ideas, let me know :)\n\nNo experience necessary, and I can teach you how to set up the agent auto-research.\n\nJust submitted a new higher bound.\nConditional κ = 7.53508664880762e-4 :)\nhttps://github.com/CrocSwap/integer-mult-bounds/pull/311",
+    "date": 1791646383,
+    "media": [
+     {
+      "type": "image",
+      "src": "https://pbs.twimg.com/media/HUR3srDWoAA5QOU.jpg?name=orig",
+      "ratio": 0.5778
+     },
+     {
+      "type": "image",
+      "src": "https://pbs.twimg.com/media/HUR3srRXQAA-80S.jpg?name=orig",
+      "ratio": 0.5636
+     },
+     {
+      "type": "image",
+      "src": "https://pbs.twimg.com/media/HUR3srIXwAALmQz.jpg?name=orig",
+      "ratio": 0.4769
+     },
+     {
+      "type": "image",
+      "src": "https://pbs.twimg.com/media/HUR3xspWUAAvH6s.jpg?name=orig",
+      "ratio": 0.4528
+     }
+    ],
+    "links": [
+     "https://github.com/CrocSwap/integer-mult-bounds/pull/311"
+    ]
+   }
+  },
+  {
+   "kind": "link",
+   "url": "https://app.getsupers.com/auto-research",
+   "domain": "app.getsupers.com",
+   "title": "Auto Research by Super",
+   "description": "Explore live AI-assisted mathematical research, interactive progress charts, contributors, and source pull requests. Open proposals remain distinct from reviewed results.",
+   "image": "https://app.getsupers.com/auto-research/assets/x-player-poster-chart-first-20261017.png",
+   "site": "app.getsupers.com"
+  }
+ ],
+ "article": {
+  "title": "این بچه‌های خوره ریاضی و هوش مصنوعی با سرپرستی روهان آرون یه گردوخاک اساسی راه انداختن و مرزهای ضرب اعداد صحیح رو جابه‌جا کردن",
+  "source_title": "From κ=2⁻¹⁸² to 0.001289283116 :)",
+  "body": [
+   "رفیق، این بچه‌های خوره ریاضی و هوش مصنوعی با سرپرستی روهان آرون یه گردوخاک اساسی راه انداختن و مرزهای ضرب اعداد صحیح رو جابه‌جا کردن. ماجرا از این قراره که با ترکیب شمّ و خلاقیت انسانی و قدرت ایجنت‌های هوش مصنوعی مثل کلود و کدکس، رفتن سراغ هندسه هشت‌بعدی E8 و تونستن کرانِ کاپا رو تو ۲۴ ساعت نزدیک ۶۹ درصد بکشن بالا و از عملاً صفرِ مطلق (۲ به توان منفی ۱۸۲) برسونن به عدد ۰.۰۰۱۲۸. تو همین یه روزه ۱۵۱ تا پی‌آر تو گیت‌هاب جابه‌جا شده و رقابت تیمی بین بچه‌ها مثل یه مسابقه ورزشی نفس‌گیر جلو رفته تا بخش‌های زائد الگوریتم رو حذف کنن. این پیشرفت خفن چنان انگیزه‌ای تزریق کرده که محقق‌ها دارن همین فرمونِ تحقیقات خودکار رو روی معماهای سنگین دیگه مثل شبه‌فرضیه ریمان هم پیاده می‌کنن."
+  ],
+  "why": "نشون داد وقتی هوش و خلاقیت انسان فرمونِ سرعتِ هوش مصنوعی رو دستش بگیره، گره‌های کورِ ریاضیات که سال‌ها دست‌نخورده مونده بودن ظرف چند روز باز میشن.",
+  "tags": [
+   "اوپن‌ای‌آی",
+   "آنتروپیک",
+   "کدنویسی"
+  ]
+ },
+ "updated": "2026-10-25T12:23:51+00:00",
+ "gholam_checked": "2026-10-25T12:23:51+00:00"
+}

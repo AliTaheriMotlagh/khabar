@@ -1,0 +1,76 @@
+{
+ "id": 4686,
+ "url": "https://t.me/dlmehr/4686",
+ "date": "2026-08-11T01:00:32+00:00",
+ "text": "https://fxtwitter.com/a16z/status/2086906363947737406?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+ "forwarded_from": null,
+ "digest": false,
+ "hash": "ed9cc4e654fe",
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/a16z/status/2086906363947737406?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+  "site": "FxTwitter",
+  "title": "a16z (@a16z)",
+  "description": "An hour of agentic computer use may now be cheaper than an hour of human labor:\nComputer-use agent: $6-8\nOffshore outsourced talent: ~$10\nUS talent: $30-45\n\"The math only gets better - inference keeps getting cheaper, and open-source models are getting…",
+  "image": "https://cdn4.telesco.pe/file/UjxycDFjEW-HPhn9b5X_ff8hof8uUmImb_rzfvJp0BmdSy8tjwpW6x8Y-KD30YfBPZLOYw65_KJuU87aNf0D0xSnJ5il8LjatebjDyH-G2lti7TJoOmEDmufLUy2z1U7pnN7QAFMlUeenZZHGthg53J1nQmSIq7XAQ8EWPmJ5Kyfshvv-4kl4TUTwRwWE1qrXnNH-cpCOgq9LTRtrP6SB7I72PlOHXDBSJCOuvrlZ3B9MCd1aXf3zTEhCuWMdmzUxc9xP1e1DzMT5KBOJ3YaMA1LDSZnkrCu1Yw-0lWJW8RVR6x3FIPSAuZ_BRRIvLxSeLVxu6cLIt7fJBe2XixgmQ.jpg"
+ },
+ "gholam": {
+  "text": "ببین آبجی و داداش گل، مؤسسه سرمایه‌گذاری a16z تازه یه آمار مشتی رو کرده که نشون می‌ده هزینه‌ی یک ساعت کار کشیدن از ایجنت‌های هوش مصنوعی رسیده به ۶ تا ۸ دلار. این رقمیه که حتی از نیروی کار برون‌سپاری‌شده‌ی خارج از آمریکا با ساعتی ۱۰ دلار و نیروهای خود آمریکا با ساعتی ۳۰ تا ۴۵ دلار هم واسه صاحب‌کار ارزون‌تر پات درمیاد. خلاصه قضیه اینه که هزینه پردازش هوش مصنوعی مدام داره پایین‌تر می‌یاد و مدل‌های متن‌باز هم اون‌قدر قوی شدن که به‌زودی بخش زیادی از کارهای کامپیوتری رو روی هوا می‌زنن.\n\nاهمیتش اینه که با این حساب‌کتاب، شرکت‌ها واسه کم کردن خرج‌وبارجشون سریع‌تر از قبل می‌رن سراغ ایجنت‌های هوش مصنوعی و بازار شغلی دنیای دیجیتال داره بدجور زیرورو می‌شه.",
+  "date": "2026-08-11T01:00:46+00:00"
+ },
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/a16z/status/2086906363947737406",
+   "domain": "x.com",
+   "author": {
+    "name": "a16z",
+    "handle": "a16z",
+    "avatar": "https://pbs.twimg.com/profile_images/1919488160125616128/QAZXTMEj_200x200.png"
+   },
+   "text": "An hour of agentic computer use may now be cheaper than an hour of human labor:\n\nComputer-use agent: $6-8\nOffshore outsourced talent: ~$10\nUS talent: $30-45\n\n\"The math only gets better - inference keeps getting cheaper, and open-source models are getting good enough for a growing share of these workflows.\"\n\nThe data on computer-use agents, from @fabrisera2000, @seema_amble, and @zephratic: https://www.a16z.news/p/can-agents-use-a-computer-yet-weve",
+   "date": 1786392224,
+   "media": [
+    {
+     "type": "image",
+     "src": "https://pbs.twimg.com/media/HPYuRyta8AAwOZH.jpg?name=orig",
+     "ratio": 0.814
+    }
+   ],
+   "links": [
+    "https://www.a16z.news/p/can-agents-use-a-computer-yet-weve"
+   ],
+   "quote": {
+    "author": {
+     "name": "Fabrizio Serafini",
+     "handle": "fabserafini",
+     "avatar": "https://pbs.twimg.com/profile_images/2065900391431389184/R7QreHHA_200x200.jpg"
+    },
+    "text": "",
+    "date": 1786374380,
+    "media": [],
+    "links": []
+   }
+  },
+  {
+   "kind": "link",
+   "url": "https://www.a16z.news/p/can-agents-use-a-computer-yet-weve",
+   "domain": "a16z.news",
+   "title": "Can Agents Use a Computer Yet? We've Got the Data",
+   "description": "When your heaviest users stop checking the leaderboard, the leaderboard has stopped being the story",
+   "image": "https://substackcdn.com/image/fetch/$s_!kp2L!,w_1200,h_675,c_fill,f_jpg,q_auto:good,fl_progressive:steep,g_auto/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F52d9d1af-7866-420c-b3ef-c8b231806b2e_2844x1600.png",
+   "site": "a16z.news"
+  }
+ ],
+ "article": {
+  "title": "و داداش گل، مؤسسه سرمایه‌گذاری a16z تازه یه آمار مشتی رو کرده که نشون می‌ده هزینه‌ی یک ساعت کار کشیدن از ایجنت‌های هوش مصنوعی رسیده به ۶ تا ۸ دلار",
+  "source_title": "An hour of agentic computer use may now be cheaper than an hour of human labor:",
+  "body": [
+   "ببین آبجی و داداش گل، مؤسسه سرمایه‌گذاری a16z تازه یه آمار مشتی رو کرده که نشون می‌ده هزینه‌ی یک ساعت کار کشیدن از ایجنت‌های هوش مصنوعی رسیده به ۶ تا ۸ دلار. این رقمیه که حتی از نیروی کار برون‌سپاری‌شده‌ی خارج از آمریکا با ساعتی ۱۰ دلار و نیروهای خود آمریکا با ساعتی ۳۰ تا ۴۵ دلار هم واسه صاحب‌کار ارزون‌تر پات درمیاد. خلاصه قضیه اینه که هزینه پردازش هوش مصنوعی مدام داره پایین‌تر می‌یاد و مدل‌های متن‌باز هم اون‌قدر قوی شدن که به‌زودی بخش زیادی از کارهای کامپیوتری رو روی هوا می‌زنن."
+  ],
+  "why": "با این حساب‌کتاب، شرکت‌ها واسه کم کردن خرج‌وبارجشون سریع‌تر از قبل می‌رن سراغ ایجنت‌های هوش مصنوعی و بازار شغلی دنیای دیجیتال داره بدجور زیرورو می‌شه.",
+  "tags": []
+ },
+ "updated": "2026-10-25T12:30:33+00:00",
+ "gholam_checked": "2026-10-25T12:30:33+00:00"
+}

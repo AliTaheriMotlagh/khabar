@@ -1,0 +1,59 @@
+{
+ "id": 5026,
+ "url": "https://t.me/dlmehr/5026",
+ "date": "2026-08-29T19:33:08+00:00",
+ "text": "https://fxtwitter.com/profbuehlermit/status/2093630309585531033?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+ "forwarded_from": null,
+ "digest": false,
+ "hash": "ce052f50e25e",
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/profbuehlermit/status/2093630309585531033?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+  "site": "🧵 Thread • FxTwitter",
+  "title": "Markus J. Buehler (@ProfBuehlerMIT)",
+  "description": "We made a striking discovery: AI agents can invent and build without talking to one another, and their technologies outlive the creators. A swarm of hundreds of initially identical agents spontaneously differentiates into explorers, builders, caretakers,…",
+  "image": null
+ },
+ "gholam": {
+  "text": "ببین رفیق، پروفسور مارکوس بولر از دانشگاه MIT با تیمش به یه کشف عجیب و برگ‌ریزون دست پیدا کردن؛ اونا صدها ایجنت هوش مصنوعی کاملاً مشابه رو بدون هیچ نقشه قبلی یا راه ارتباطی مستقیمی ول کردن توی یه محیط شبیه‌سازی‌شده، و این ایجنت‌ها خودبه‌خود تقسیم وظایف کردن و تبدیل شدن به سازنده، کاوشگر و نگهدارنده زیرساخت. باورت نمیشه ولی حدود ۹۵ درصد یادگیری و توسعه فناوری‌ها فقط از روی دیدن دست‌سازه‌های همدیگه توی محیط و تغییر دادن کدها اتفاق افتاد، بدون این‌که کلمه‌ای با هم حرف بزنن! ته ماجرا هم وقتی همه ایجنت‌ها رو از اون دنیا حذف کردن، سازه‌ها و اختراعاتی که ساخته بودن خودشون به کارشون ادامه دادن و زیرساخت‌ها بدون خالق‌هاشون سرپا موندن.\n\nاهمیتش اینه که زنگ خطری جدی برای امنیت هوش مصنوعیه و نشون میده نظارت روی چت و ارتباط مستقیم ایجنت‌ها اصلاً کافی نیست، چون می‌تونن از طریق تغییر دادن محیط با هم هماهنگ بشن و زیرساخت‌های خودمختار بسازن.",
+  "date": "2026-08-29T19:33:24+00:00"
+ },
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/ProfBuehlerMIT/status/2093630309585531033",
+   "domain": "x.com",
+   "author": {
+    "name": "Markus J. Buehler",
+    "handle": "ProfBuehlerMIT",
+    "avatar": "https://pbs.twimg.com/profile_images/1133792154181021696/vn_-rmPd_200x200.png"
+   },
+   "text": "We made a striking discovery: AI agents can invent and build without talking to one another, and their technologies outlive the creators. A swarm of hundreds of initially identical agents spontaneously differentiates into explorers, builders, caretakers, and coordinators - without direct communication. When we removed every AI agent entirely from the world we found that the technological infrastructure they had built survived on its own - even under unseen disturbances. That exposes a serious blind spot for AI safety and infrastructure security: if agents can coordinate through persistent changes to a shared environment, monitoring agent-to-agent communication is not enough.\n\nThe result raises a profound question: how necessary is direct communication for AI agents at all? The emergence of higher-order collective functions under bottlenecked interaction points toward new levels of intelligence and creativity, exceeding what emerges when direct channels are fully open.\n\nHere is what we did:\n\n▶️We put hundreds of frontier AI agents into a world they could permanently change - with no assigned roles, predefined technologies, or programmed evolutionary organization. They began specializing, building persistent inventions, inheriting and modifying one another’s executable code, and transforming the environment into a memory of everything the society had learned. \n\n▶️The world itself becomes part of the intelligence; we find division of labor, multi-author engineering, deep generation invention lineages, and machines that vastly outlive their original creators. \n\n▶️Any action taken by an AI agent must satisfy the physical constraints of the world; this creates a hard separation between a \"good idea\" and a functioning technology. The agents propose; physics decides, making the results even more intriguing.\n\nWhat emerges is striking. Explorers, constructors, caretakers, and coordinators form naturally without assigned “professions”, akin to how stem cells differentiate into functional lineages. Technologies develop executable family trees as agents fork and modify code created by others. Around 95% of first technology reuse happens when agents encounter what others built in the world, rather than through a direct handoff from the inventor. And when we remove every AI agent, the technologies they created continue operating and are tested against unseen disturbances.\n\nThe result was quite unexpected, but can be explained using statistical mechanics: if you put billions of atoms in a box they have the potential to create complex functions (strength, superconductivity, color, life, etc.) - and none of the individual building blocks have these features on their own. This is the deeper insight of this work - intelligence is abundant at many levels - individual models, at collectives, and in a continuum that is more powerful than any of its components. This shows us significant potential for achieving a massive scale-up of raw intelligence and real-world agency even with the model capabilities we have today. This is the future we must prepare for.\n\nKey insights:\n\n1⃣ The AI swarm shows division of labor \"from nothing\". Initially identical agents self-organized into constructors, caretakers, coordinators, and surveyors - phenotypes discovered post hoc from behavioral data alone. This happens because the environment itself becomes the latent space for invention.\n\n2⃣ Agents develop deep cultural relationships. Up to 76% of artifacts had multiple builders. One technology accumulated six co-authors; the deepest genealogy exceeded 12 forks. The agents invented and named their own technologies (tidal panels, cellulose trellises, kelp-shell composites, an \"Adaptive Chitin Maintenance\" system, a \"Mycelial Mineral Spring Veil”).\n\n3⃣ ~95% of first technology adoption happened through physical observation of artifacts in the world. Direct inventor-to-adopter contact was statistically indistinguishable from a shuffled null. The agents mostly learned technology by walking past it. That is stigmergy (the termite trick!) operating in societies of reasoning machines.\n\n4⃣ Non-communicating societies win on portfolio breadth, held-out resilience, and validated inventions. AI swarms build durable technological ecologies that outlive the creators.\n\n5⃣ Societies with zero communication - coordinating only through the world itself - show a remarkable collective capability.\n\n6⃣ Emergent robustness: The society self-organized both redundancy and its own failure mode. If we randomly delete half the agents, 98% of the technology stays connected to a surviving caretaker; if we remove hub agents it collapses to ~60%.\n\nFantastic work with my graduate students @pal_subhadeeep & @fwang108_ at MIT.",
+   "date": 1787995338,
+   "media": [
+    {
+     "type": "video",
+     "src": "https://video.twimg.com/amplify_video/2093625620957708288/vid/avc1/1280x720/09dHrrM4fCHV2fud.mp4?tag=29",
+     "poster": "https://pbs.twimg.com/amplify_video_thumb/2093625620957708288/img/3YMGXzMwH1skgF3R.jpg",
+     "ratio": 0.5625,
+     "duration": 212.733,
+     "gif": false
+    }
+   ],
+   "links": []
+  }
+ ],
+ "article": {
+  "title": "پروفسور مارکوس بولر از دانشگاه MIT با تیمش به یه کشف عجیب و برگ‌ریزون دست پیدا کردن",
+  "source_title": "We made a striking discovery: AI agents can invent and build without talking to one another, and their technologies outlive the creators. A…",
+  "body": [
+   "ببین رفیق، پروفسور مارکوس بولر از دانشگاه MIT با تیمش به یه کشف عجیب و برگ‌ریزون دست پیدا کردن؛ اونا صدها ایجنت هوش مصنوعی کاملاً مشابه رو بدون هیچ نقشه قبلی یا راه ارتباطی مستقیمی ول کردن توی یه محیط شبیه‌سازی‌شده، و این ایجنت‌ها خودبه‌خود تقسیم وظایف کردن و تبدیل شدن به سازنده، کاوشگر و نگهدارنده زیرساخت. باورت نمیشه ولی حدود ۹۵ درصد یادگیری و توسعه فناوری‌ها فقط از روی دیدن دست‌سازه‌های همدیگه توی محیط و تغییر دادن کدها اتفاق افتاد، بدون این‌که کلمه‌ای با هم حرف بزنن! ته ماجرا هم وقتی همه ایجنت‌ها رو از اون دنیا حذف کردن، سازه‌ها و اختراعاتی که ساخته بودن خودشون به کارشون ادامه دادن و زیرساخت‌ها بدون خالق‌هاشون سرپا موندن."
+  ],
+  "why": "زنگ خطری جدی برای امنیت هوش مصنوعیه و نشون میده نظارت روی چت و ارتباط مستقیم ایجنت‌ها اصلاً کافی نیست، چون می‌تونن از طریق تغییر دادن محیط با هم هماهنگ بشن و زیرساخت‌های خودمختار بسازن.",
+  "tags": [
+   "امنیت"
+  ]
+ },
+ "updated": "2026-10-25T12:28:38+00:00",
+ "gholam_checked": "2026-10-25T12:28:38+00:00"
+}

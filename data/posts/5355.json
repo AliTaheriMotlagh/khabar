@@ -1,0 +1,54 @@
+{
+ "id": 5355,
+ "url": "https://t.me/dlmehr/5355",
+ "date": "2026-09-17T23:12:01+00:00",
+ "text": "https://x.com/PrismML/status/2100692248480596348",
+ "forwarded_from": "Amirreza",
+ "digest": false,
+ "hash": "5d077f327c84",
+ "media": [],
+ "preview": {
+  "url": "https://x.com/PrismML/status/2100692248480596348",
+  "site": "X (formerly Twitter)",
+  "title": "PrismML (@PrismML) on X",
+  "description": "Today, we’re announcing Ternary Bonsai 2 27B.\nBased on Qwen3.8 27B, Bonsai 2 27B is 9x smaller than its full-precision counterpart while retaining 98.2% of its aggregate benchmark performance.\nT…",
+  "image": "https://cdn4.telesco.pe/file/LolPy4jynSzadGKFcQbjrJpJI79-i2nA4F8nFT1JHSvIqMRtEVfFNlBW5HUcqEsaF1sX6xzJ7Qq0-nFXeFE4RooREODnQSCXloBHLh-g4yAlxHvY-IeXU9JkdPcb4On9YejBagIZRPTAq42Ky5bNM3akniPAk5Rka1Dy_D89fCNOKLYe76sxTmfNSCQnV82QfVjrwLDxOCwi4iDu2a5ofuh63RjPiHiDIZjSS3wsUASlbkOUaYJazgUt8Pnc18vYu6lCUnMJ5Run1FcOk7loDweSKuNT3fmLia6kFK4rrtnyAlc_UpKs_uQv1YjGkZlkm4TQVd-AAH1RavodHUotdA.jpg"
+ },
+ "gholam": {
+  "text": "رفیق، بچه‌های PrismML دست به کار شدن و از مدل خفن Ternary Bonsai 2 با ۲۷ میلیارد پارامتر پرده برداشتن که بر پایه Qwen3.8 جمع و جور شده. شاهکار ماجرا اینجاست که حجم مدل رو ۹ برابر نسبت به نسخه اصلی کوچیک کردن و رسوندنش به ۵.۹ گیگابایت، ولی با این حال ۹۸.۲ درصد بازدهی بنچمارک‌هاش سر جاش مونده. بعد دو ماه از نسخه قبلی، کیفیت خروجی رو اساسی تکون دادن و به‌خصوص تو کدنویسی، استدلال چندوجهی و کار کشیدن طولانی از ابزارها حسابی سنگ تموم گذاشتن. از همه قشنگ‌تر این‌که مدل رو با لایسنس متن‌باز Apache 2.0 منتشر کردن تا دست اهل فن برای استفاده باز باشه.\n\nاهمیتش اینه که می‌تونید یه هوش مصنوعی ۲۷ میلیاردی گردن‌کلفت رو بدون نیاز به سرورهای سنگین، روی سیستم‌ها و کارت گرافیک‌های معمولی خونگی تخت‌گاز بالا بیارید.",
+  "date": "2026-09-17T23:12:13+00:00"
+ },
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/PrismML/status/2100692248480596348",
+   "domain": "x.com",
+   "author": {
+    "name": "PrismML",
+    "handle": "PrismML",
+    "avatar": "https://pbs.twimg.com/profile_images/2025105666692812800/QQOxLQPq_200x200.jpg"
+   },
+   "text": "Today, we’re announcing Ternary Bonsai 2 27B.\n\nBased on Qwen3.8 27B, Bonsai 2 27B is 9x smaller than its full-precision counterpart while retaining 98.2% of its aggregate benchmark performance.\n\nTwo months after the first Bonsai 27B release, the biggest change is quality. The footprint remains 5.9 GB, but the gap to full precision has narrowed materially, with particularly strong gains in agentic coding, multimodal reasoning, and long-horizon tool use.\n\nTernary Bonsai 2 27B is available today under Apache 2.0.",
+   "date": 1789679035,
+   "media": [
+    {
+     "type": "image",
+     "src": "https://pbs.twimg.com/media/HScnLImaoAAJjz0.jpg?name=orig",
+     "ratio": 0.4771
+    }
+   ],
+   "links": []
+  }
+ ],
+ "article": {
+  "title": "بچه‌های PrismML دست به کار شدن و از مدل خفن Ternary Bonsai 2 با ۲۷ میلیارد پارامتر پرده برداشتن که بر پایه Qwen3.8 جمع و جور شده",
+  "source_title": "Today, we’re announcing Ternary Bonsai 2 27B.",
+  "body": [
+   "رفیق، بچه‌های PrismML دست به کار شدن و از مدل خفن Ternary Bonsai 2 با ۲۷ میلیارد پارامتر پرده برداشتن که بر پایه Qwen3.8 جمع و جور شده. شاهکار ماجرا اینجاست که حجم مدل رو ۹ برابر نسبت به نسخه اصلی کوچیک کردن و رسوندنش به ۵.۹ گیگابایت، ولی با این حال ۹۸.۲ درصد بازدهی بنچمارک‌هاش سر جاش مونده. بعد دو ماه از نسخه قبلی، کیفیت خروجی رو اساسی تکون دادن و به‌خصوص تو کدنویسی، استدلال چندوجهی و کار کشیدن طولانی از ابزارها حسابی سنگ تموم گذاشتن. از همه قشنگ‌تر این‌که مدل رو با لایسنس متن‌باز Apache 2.0 منتشر کردن تا دست اهل فن برای استفاده باز باشه."
+  ],
+  "why": "می‌تونید یه هوش مصنوعی ۲۷ میلیاردی گردن‌کلفت رو بدون نیاز به سرورهای سنگین، روی سیستم‌ها و کارت گرافیک‌های معمولی خونگی تخت‌گاز بالا بیارید.",
+  "tags": []
+ },
+ "updated": "2026-10-25T12:26:37+00:00",
+ "gholam_checked": "2026-10-25T12:26:37+00:00"
+}

@@ -1,0 +1,79 @@
+{
+ "id": 4530,
+ "url": "https://t.me/dlmehr/4530",
+ "date": "2026-08-01T19:50:06+00:00",
+ "text": "https://fxtwitter.com/venturetwins/status/2083374347155304926?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+ "forwarded_from": null,
+ "digest": false,
+ "hash": "710c1babe845",
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/venturetwins/status/2083374347155304926?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+  "site": "FxTwitter",
+  "title": "Justine Moore (@venturetwins)",
+  "description": "Over the last year and a half, I've tried this Turing test prompt on every AI video model.\nShockingly, none have succeeded - until today.\nCongrats to the @Hailuo_AI team on MiniMax 3, which can officially write \"Hi\" on a chalkboard.\nAnd it's open source!…",
+  "image": null
+ },
+ "gholam": {
+  "text": "رفیق، بالاخره طلسم نوشتن متن تو ویدیوهای هوش مصنوعی شکست! مدل جدید MiniMax 3 تونسته آزمون سخت نوشتن «Hi» رو روی تخته‌سیاه پاس کنه، تازشم اوپن‌سورسه.",
+  "date": "2026-08-01T19:53:19+00:00"
+ },
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/venturetwins/status/2083374347155304926",
+   "domain": "x.com",
+   "author": {
+    "name": "Justine Moore",
+    "handle": "venturetwins",
+    "avatar": "https://pbs.twimg.com/profile_images/2080756230893838336/q4VqZuw2_200x200.jpg"
+   },
+   "text": "Over the last year and a half, I've tried this Turing test prompt on every AI video model.\n\nShockingly, none have succeeded - until today. \n\nCongrats to the @Hailuo_AI team on MiniMax 3, which can officially write \"Hi\" on a chalkboard.\n\nAnd it's open source!",
+   "date": 1785550126,
+   "media": [
+    {
+     "type": "video",
+     "src": "https://video.twimg.com/amplify_video/2083371734137438208/vid/avc1/1280x720/W4QO2emRtgXtz-xR.mp4?tag=29",
+     "poster": "https://pbs.twimg.com/amplify_video_thumb/2083371734137438208/img/GbpNgk_e4q-YEhdN.jpg",
+     "ratio": 0.5625,
+     "duration": 6.583,
+     "gif": false
+    }
+   ],
+   "links": [],
+   "quote": {
+    "author": {
+     "name": "Justine Moore",
+     "handle": "venturetwins",
+     "avatar": "https://pbs.twimg.com/profile_images/2080756230893838336/q4VqZuw2_200x200.jpg"
+    },
+    "text": "I think I've uncovered the next Turing test for AI video: writing.\n\nI've tried this prompt dozens of times on every model: \"man writes 'hi' in chalk on blackboard\"\n\nNone can do it. Veo 2 (below) gets the closest. It's actually frustrating to watch!",
+    "date": 1735320958,
+    "media": [
+     {
+      "type": "video",
+      "src": "https://video.twimg.com/ext_tw_video/1872696473122480128/pu/vid/avc1/1280x720/z9gY1OPnueCxAtts.mp4?tag=12",
+      "poster": "https://pbs.twimg.com/ext_tw_video_thumb/1872696473122480128/pu/img/OSGIyJ__15zV8rrN.jpg",
+      "ratio": 0.5625,
+      "duration": 8,
+      "gif": false
+     }
+    ],
+    "links": []
+   }
+  }
+ ],
+ "article": {
+  "title": "بالاخره طلسم نوشتن متن تو ویدیوهای هوش مصنوعی شکست",
+  "source_title": "Over the last year and a half, I've tried this Turing test prompt on every AI video model.",
+  "body": [
+   "رفیق، بالاخره طلسم نوشتن متن تو ویدیوهای هوش مصنوعی شکست! مدل جدید MiniMax 3 تونسته آزمون سخت نوشتن «Hi» رو روی تخته‌سیاه پاس کنه، تازشم اوپن‌سورسه."
+  ],
+  "why": null,
+  "tags": [
+   "چین"
+  ]
+ },
+ "updated": "2026-10-25T12:31:13+00:00",
+ "gholam_checked": "2026-10-25T12:31:13+00:00"
+}

@@ -1,0 +1,78 @@
+{
+ "id": 5692,
+ "url": "https://t.me/dlmehr/5692",
+ "date": "2026-10-07T00:42:50+00:00",
+ "text": "https://fxtwitter.com/imjustnewatai/status/2107601711032373333?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+ "forwarded_from": null,
+ "digest": false,
+ "hash": "875bd7f07b03",
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/imjustnewatai/status/2107601711032373333?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+  "site": "FxTwitter · github.com",
+  "title": "imjustnewatai (@imjustnewatai)",
+  "description": "OpenAI just released 722 AI-written math papers. Here are the 4 biggest claims in plain English. None have been confirmed by outside mathematicians yet.\n1/ Quasi-Riemann hypothesis. Zeta has no zeros with real part above 7/8. It's not the Riemann hypothesis…",
+  "image": "https://cdn4.telesco.pe/file/MZcPbnTHqXbUqeSos7LkRywAPOB9NGXDSx5cOqdBZxTabfk6N6VqX3BYT2rhU49wnxsQkti_rs7OEpRRXEj4iUl-m6fs_Cu0__hVlRS3Nc69DtmA5t2_gNv2acMR-l4oJAeevYifqsg7BT2nE9wv31OTDB7Q0ruf7sXcWVLiJhp5D2VsOwpldP7G-TCKxkYQbYEMEMNc306cckRhSvC-tkj4aU90hyhODiTTPR1lzccY4zem3lO7wTWzV_QFLShp9XQc5cwfsxXZ0NMIQG97r0E42X-pQ7HBaQMxNQVHnfcXixxB-ZfrhYZNKHmubO-QWItsgDD2_rJ3G0JJiQKS-Q.jpg"
+ },
+ "gholam": {
+  "text": "ببین رفیق، بچه‌های اوپن‌ای‌آی یهو اومدن ۷۲۲ تا مقاله سنگین ریاضی منتشر کردن که همه‌ش دستپخت جدیدترین مدل هوش مصنوعی خودشونه. تو این مقاله‌ها چهار تا ادعای تاریخی و گردن‌کلفت ریاضی رو مطرح کردن؛ از تکون دادن فرضیه ریمان و حدس بازی‌های یکتا گرفته تا حل معمایی درباره جبر و گروه‌ها که از دهه ۱۹۴۰ بی‌پاسخ مونده بود. نکته خفنش اینجاست که برای بیشتر این ادعاها اثبات رسمی با زبان لین (Lean) آوردن، ولی خب هنوز جامعه ریاضی‌دان‌های مستقل بیرون از شرکت این اثبات‌ها رو تأیید نهایی نکردن و باید سنگ‌هاشون رو وا بکنن.\n\nاهمیتش اینه که اگه فقط یکی از این قضیه‌ها درست دربیاد، یعنی هوش مصنوعی رسماً از یه دستیار ساده تبدیل شده به یه دانشمند طراز اول که می‌تونه سخت‌ترین معماهای تاریخ بشر رو حل کنه.",
+  "date": "2026-10-07T00:43:07+00:00"
+ },
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/imjustnewatai/status/2107601711032373333",
+   "domain": "x.com",
+   "author": {
+    "name": "imjustnewatai",
+    "handle": "imjustnewatai",
+    "avatar": "https://pbs.twimg.com/profile_images/2104834223810965504/ny1Vmilg_200x200.jpg"
+   },
+   "text": "OpenAI just released 722 AI-written math papers. Here are the 4 biggest claims in plain English. None have been confirmed by outside mathematicians yet.\n\n1/ Quasi-Riemann hypothesis. Zeta has no zeros with real part above 7/8. It's not the Riemann hypothesis (that needs 1/2), but nobody had ever cleared a fixed strip before. Has a Lean proof.\nhttps://github.com/openai/math/blob/main/preprints/The-Quasi-Riemann-Hypothesis-September-30-2026/paper.pdf\n\n2/ Unique Games Conjecture. The central open question on which problems computers can't even approximate well. A proof means the best known algorithms for problems like Max-Cut can't be beaten unless P = NP. Has a Lean proof.\nhttps://github.com/openai/math/blob/main/preprints/The-Unique-Games-Theorem-September-23-2026/paper.pdf\n\n3/ Hodge conjecture for CM abelian varieties. A special case of a Millennium Prize problem, about which topological features of a shape come from pieces defined by polynomial equations. No Lean proof yet.\nhttps://github.com/openai/math/blob/main/preprints/The-rational-Hodge-conjecture-for-CM-abelian-varieties-September-30-2026/paper.pdf\n\n4/ Free group factors. Open since the 1940s: are the operator algebras built from free groups on 2 and 3 generators the same? Claimed answer: yes, all of them are. Has a Lean proof.\nhttps://github.com/openai/math/blob/main/preprints/An-isomorphism-of-the-free-group-factors-September-23-2026/An-isomorphism-of-the-free-group-factors-September-23-2026.pdf",
+   "date": 1791326379,
+   "media": [],
+   "links": [
+    "https://github.com/openai/math/blob/main/preprints/The-Quasi-Riemann-Hypothesis-September-30-2026/paper.pdf",
+    "https://github.com/openai/math/blob/main/preprints/The-Unique-Games-Theorem-September-23-2026/paper.pdf",
+    "https://github.com/openai/math/blob/main/preprints/The-rational-Hodge-conjecture-for-CM-abelian-varieties-September-30-2026/paper.pdf",
+    "https://github.com/openai/math/blob/main/preprints/An-isomorphism-of-the-free-group-factors-September-23-2026/An-isomorphism-of-the-free-group-factors-September-23-2026.pdf"
+   ],
+   "quote": {
+    "author": {
+     "name": "OpenAI",
+     "handle": "OpenAI",
+     "avatar": "https://pbs.twimg.com/profile_images/1885410181409820672/ztsaR0JW_200x200.jpg"
+    },
+    "text": "We’re releasing a broad range of new mathematical results produced by an internal frontier model.\n\nWe’ve been consulting with the independent Advisory Group on Mathematics and Artificial Intelligence at the Institute for Advanced Study, and we have drawn on their advice and public recommendations to inform how we release these results. \n\nhttps://github.com/openai/math",
+    "date": 1791325188,
+    "media": [],
+    "links": [
+     "https://github.com/openai/math"
+    ]
+   }
+  },
+  {
+   "kind": "link",
+   "url": "https://github.com/openai/math/blob/main/preprints/The-Quasi-Riemann-Hypothesis-September-30-2026/paper.pdf",
+   "domain": "github.com",
+   "title": "math/preprints/The-Quasi-Riemann-Hypothesis-September-30-2026/paper.pdf at main · openai/math",
+   "description": "Contribute to openai/math development by creating an account on GitHub.",
+   "image": "https://opengraph.githubassets.com/bdfa9bbc75cfc261d0a756a26299f5dada4731f7f89c64a25e6ff6a46d909ce6/openai/math",
+   "site": "GitHub"
+  }
+ ],
+ "article": {
+  "title": "بچه‌های اوپن‌ای‌آی یهو اومدن ۷۲۲ تا مقاله سنگین ریاضی منتشر کردن که همه‌ش دستپخت جدیدترین مدل هوش مصنوعی خودشونه",
+  "source_title": "OpenAI just released 722 AI-written math papers. Here are the 4 biggest claims in plain English. None have been confirmed by outside…",
+  "body": [
+   "ببین رفیق، بچه‌های اوپن‌ای‌آی یهو اومدن ۷۲۲ تا مقاله سنگین ریاضی منتشر کردن که همه‌ش دستپخت جدیدترین مدل هوش مصنوعی خودشونه. تو این مقاله‌ها چهار تا ادعای تاریخی و گردن‌کلفت ریاضی رو مطرح کردن؛ از تکون دادن فرضیه ریمان و حدس بازی‌های یکتا گرفته تا حل معمایی درباره جبر و گروه‌ها که از دهه ۱۹۴۰ بی‌پاسخ مونده بود. نکته خفنش اینجاست که برای بیشتر این ادعاها اثبات رسمی با زبان لین (Lean) آوردن، ولی خب هنوز جامعه ریاضی‌دان‌های مستقل بیرون از شرکت این اثبات‌ها رو تأیید نهایی نکردن و باید سنگ‌هاشون رو وا بکنن."
+  ],
+  "why": "اگه فقط یکی از این قضیه‌ها درست دربیاد، یعنی هوش مصنوعی رسماً از یه دستیار ساده تبدیل شده به یه دانشمند طراز اول که می‌تونه سخت‌ترین معماهای تاریخ بشر رو حل کنه.",
+  "tags": [
+   "اوپن‌ای‌آی",
+   "کدنویسی"
+  ]
+ },
+ "updated": "2026-10-25T12:24:35+00:00",
+ "gholam_checked": "2026-10-25T12:24:35+00:00"
+}

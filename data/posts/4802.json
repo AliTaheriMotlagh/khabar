@@ -1,0 +1,58 @@
+{
+ "id": 4802,
+ "url": "https://t.me/dlmehr/4802",
+ "date": "2026-08-18T18:53:30+00:00",
+ "text": "https://fxtwitter.com/ashxhart/status/2089749434087227672?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+ "forwarded_from": null,
+ "digest": false,
+ "hash": "423838ec6286",
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/ashxhart/status/2089749434087227672?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+  "site": "FxTwitter",
+  "title": "Ash Hart (@ashxhart)",
+  "description": "MCDMA | Metal CUDA Direct Memory Access\n🚀\nIf you have a Spark and an Apple Silicon Mac, MCDMA gives you a direct RDMA path between CUDA memory and Metal-side unified memory over USB-C.\nRegistered memory, rkeys, one-sided READ/WRITE, two-sided SEND/RECV…",
+  "image": "https://cdn4.telesco.pe/file/n-AF6CdkmpS3Wn9H3992DRLIr7Jx1Qh6PAFOV1ZQK2D8BHzxYLq5RAwbyDuTB4Z0bRXrEVSLI_vJSD6jm1bNFo8ZHZrpEzUdRQPzogKG_TflV8uE2xBK2V7yA3goOfcQUxwHpfqt1AlyTUu2eZwQDm3O5wNe3Z367be9BiAdyt_Bj0gXM7u-vWvBKR46R_xGFUOZsxA1hS7m6gGUbGuflfQjQeCbN2QsuL4b-xtQNSIOT0C7pGz9ibNor7qoB2FtDfZK3Ajor-A-gbw8-zOVzHVzPrTnsS3vN9tW8DZPYbR67Tj6FNIh4pNqutJMetNLNMs-mIs7dLtmmgdvZWvipw.jpg"
+ },
+ "gholam": {
+  "text": "رفیق، یه مهندس کاردرست به اسم اَش هارت حرکتی زده که هوش از سرت می‌پرونه؛ اومده پروژه‌ای به اسم MCDMA راه انداخته تا با یه کابل تایپ‌سی معمولی، حافظه گرافیک‌های انویدیا اسپارک رو مستقیم به حافظه یکپارچه مک‌های اپل وصل کنه. با این ترفند، مک و انویدیا بدون هیچ واسطه‌ای صاف توی رم همدیگه می‌نویسن و توی تست‌ها هم سرعت انتقال همزمان به ۱.۸ گیگابایت بر ثانیه با تاخیر ناچیز ۲۴ میکروثانیه رسیده. این بنده خدا با دو تا اسپارک برای پردازش پرامپت و یه مک استودیو برای خروجی، مدل‌های سنگین دیپ‌سیک رو تست زده و قراره همین هفته هم همه‌چیز رو متن‌باز منتشر کنه.\n\nاهمیتش اینه که مرز بسته بین دنیای اپل و پردازش ابری انویدیا شکسته شده و بدون نیاز به سرورهای فوق‌العاده گرون، می‌شه کارهای سنگین هوش مصنوعی رو روی ترکیب مک و انویدیا ردیف کرد.",
+  "date": "2026-08-18T18:53:42+00:00"
+ },
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/ashxhart/status/2089749434087227672",
+   "domain": "x.com",
+   "author": {
+    "name": "Ash Hart",
+    "handle": "ashxhart",
+    "avatar": "https://pbs.twimg.com/profile_images/2076633444411494400/InvR8zXt_200x200.jpg"
+   },
+   "text": "MCDMA | Metal CUDA Direct Memory Access 🚀\n\nIf you have a Spark and an Apple Silicon Mac, MCDMA gives you a direct RDMA path between CUDA memory and Metal-side unified memory over USB-C.\n\nRegistered memory, rkeys, one-sided READ/WRITE, two-sided SEND/RECV with credit flow control. Same verbs both ways, no master/slave. The Mac writes straight into CUDA-mapped memory on the Spark, and the Spark writes straight back into Mac memory.\n\nMy setup takes it a little further:\nSpark 1 ⇄ CX7 ⇄ Spark 2 (prompt processing)\n\nSpark 1 ⇄ USB-C ⇄ Mac Studio (Decode)\nSpark 2 ⇄ USB-C ⇄ Mac Studio (Decode)\n\nTwo independent MCDMA USBC links, so the Studio isn't stuck behind one cable; both Sparks move data concurrently, and it writes results back into either.\n\nMeasured, every byte delivery verified:\n\n• 939 MB/s single link\n• 1.80 GB/s Mac → both Sparks, concurrent\n• 1.25 GB/s both Sparks → Mac, concurrent\n• 24 µs round-trip, 41k msg/s small-message\n\nOne Spark + One Mac works. Two is just how I'm using it: DeepSeek prompt processing across the Sparks, decode on the Studio.\n\nBenchmarks, tests, Open Source, and write-up this week.\n\n@NVIDIARTXSpark @NVIDIAAI @NaderLikeLadder @msharmavikram  There’s still a lot of performance headroom here. If the currently locked USB4 controller can be allowed to train at full capability, I’d love to test how far we can push this. Please check your DMs.",
+   "date": 1787070065,
+   "media": [
+    {
+     "type": "image",
+     "src": "https://pbs.twimg.com/media/HQBGku7XwAAPBkf.jpg?name=orig",
+     "ratio": 0.5628
+    }
+   ],
+   "links": []
+  }
+ ],
+ "article": {
+  "title": "یه مهندس کاردرست به اسم اَش هارت حرکتی زده که هوش از سرت می‌پرونه",
+  "source_title": "MCDMA | Metal CUDA Direct Memory Access 🚀",
+  "body": [
+   "رفیق، یه مهندس کاردرست به اسم اَش هارت حرکتی زده که هوش از سرت می‌پرونه؛ اومده پروژه‌ای به اسم MCDMA راه انداخته تا با یه کابل تایپ‌سی معمولی، حافظه گرافیک‌های انویدیا اسپارک رو مستقیم به حافظه یکپارچه مک‌های اپل وصل کنه. با این ترفند، مک و انویدیا بدون هیچ واسطه‌ای صاف توی رم همدیگه می‌نویسن و توی تست‌ها هم سرعت انتقال همزمان به ۱.۸ گیگابایت بر ثانیه با تاخیر ناچیز ۲۴ میکروثانیه رسیده. این بنده خدا با دو تا اسپارک برای پردازش پرامپت و یه مک استودیو برای خروجی، مدل‌های سنگین دیپ‌سیک رو تست زده و قراره همین هفته هم همه‌چیز رو متن‌باز منتشر کنه."
+  ],
+  "why": "مرز بسته بین دنیای اپل و پردازش ابری انویدیا شکسته شده و بدون نیاز به سرورهای فوق‌العاده گرون، می‌شه کارهای سنگین هوش مصنوعی رو روی ترکیب مک و انویدیا ردیف کرد.",
+  "tags": [
+   "انویدیا",
+   "اپل",
+   "چین"
+  ]
+ },
+ "updated": "2026-10-25T12:29:59+00:00",
+ "gholam_checked": "2026-10-25T12:29:59+00:00"
+}

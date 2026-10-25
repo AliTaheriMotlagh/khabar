@@ -2,16 +2,23 @@
  "id": 5902,
  "url": "https://t.me/dlmehr/5902",
  "date": "2026-10-15T01:50:47+00:00",
- "edited": true,
- "views": "158",
  "text": "https://fxtwitter.com/rohanpaul_ai/status/2110444021260878124?s=52&t=F41Qa04r48Mef_j_XjBneQ",
  "forwarded_from": null,
  "digest": false,
  "hash": "f7a797d36555",
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/rohanpaul_ai/status/2110444021260878124?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+  "site": "FxTwitter",
+  "title": "Rohan Paul (@rohanpaul_ai)",
+  "description": "Travel is one of the clearest cases where an agent’s commercial setup matters as much as its model.\nThe clicking is the easy part.\nOdessia just launched an AI concierge that is also an accredited travel agent, so it books hotels at agency rates with perks…",
+  "image": null
+ },
  "gholam": {
   "text": "رفیق، قضیه اینه که شرکت Odessia یه دستیار هوش مصنوعی سفر راه انداخته که کارش فقط پر کردن فرم رزرو نیست، بلکه خودش رسماً یه آژانس مسافرتی مجاز و معتبر به حساب میاد. این باتِ همه‌فن‌حریف صدها هزار هتل رو با ۱۲ تا فاکتور خیلی ریز، از صدای خیابون گرفته تا امکانات باشگاه می‌سنجه و دسته‌بندی می‌کنه. برگ برنده‌اش اینجاست که به خاطر داشتن مجوز رسمی، اتاق‌ها رو با نرخ ویژه آژانس‌ها می‌گیره و برای همون اتاق، آپشن‌هایی مثل صبحانه مجانی، ارتقای کلاس اتاق و تخلیه دیرهنگام هم برات ردیف می‌کنه. علاوه بر اینا حافظه ممتد و زمان‌بندی کارها رو هم داره تا مثل یه مشاور کاربلد همه‌چیز رو زیر نظر بگیره.\n\nاهمیتش اینه که نشون میده برگ برنده ایجنت‌های هوش مصنوعی فقط مدل زبانی‌شون نیست، بلکه وقتی با قراردادها و مجوزهای رسمی تجاری ترکیب بشن، می‌تونن تخفیف‌ها و مزایای واقعی تو دنیای واقعی برات دست‌وپا کنن.",
   "date": "2026-10-15T01:51:01+00:00"
  },
+ "gholam_checked": "2026-10-24T23:35:35+00:00",
  "links": [
   {
    "kind": "tweet",
@@ -77,14 +84,6 @@
    }
   }
  ],
- "media": [],
- "preview": {
-  "url": "https://fxtwitter.com/rohanpaul_ai/status/2110444021260878124?s=52&t=F41Qa04r48Mef_j_XjBneQ",
-  "site": "FxTwitter",
-  "title": "Rohan Paul (@rohanpaul_ai)",
-  "description": "Travel is one of the clearest cases where an agent’s commercial setup matters as much as its model.\nThe clicking is the easy part.\nOdessia just launched an AI concierge that is also an accredited travel agent, so it books hotels at agency rates with perks…",
-  "image": null
- },
  "article": {
   "title": "قضیه اینه که شرکت Odessia یه دستیار هوش مصنوعی سفر راه انداخته که کارش فقط پر کردن فرم رزرو نیست، بلکه خودش رسماً یه آژانس مسافرتی مجاز و معتبر به حساب میاد",
   "source_title": "Travel is one of the clearest cases where an agent’s commercial setup matters as much as its model.",
@@ -94,6 +93,5 @@
   "why": "نشون میده برگ برنده ایجنت‌های هوش مصنوعی فقط مدل زبانی‌شون نیست، بلکه وقتی با قراردادها و مجوزهای رسمی تجاری ترکیب بشن، می‌تونن تخفیف‌ها و مزایای واقعی تو دنیای واقعی برات دست‌وپا کنن.",
   "tags": []
  },
- "updated": "2026-10-24T23:35:35+00:00",
- "gholam_checked": "2026-10-24T23:35:35+00:00"
+ "updated": "2026-10-25T11:54:11+00:00"
 }

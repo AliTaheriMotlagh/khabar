@@ -1,0 +1,69 @@
+{
+ "id": 5698,
+ "url": "https://t.me/dlmehr/5698",
+ "date": "2026-10-07T03:28:49+00:00",
+ "text": "https://fxtwitter.com/nrehiew_/status/2107637795531767962?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+ "forwarded_from": null,
+ "digest": false,
+ "hash": "c753f8ef02a7",
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/nrehiew_/status/2107637795531767962?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+  "site": "FxTwitter",
+  "title": "wh (@nrehiew_)",
+  "description": "Looks like 20% of the results are disproofs/counterexamples.\nThis is itself a disproof of people who said that the recent math breakthroughs are concentrated among counterexamples because models are only good at (brute force) search\nQuoting OpenAI (@OpenAI)…",
+  "image": null
+ },
+ "gholam": {
+  "text": "رفیق، ماجرا از این قراره که بچه‌های OpenAI دستاوردهای جدید ریاضی مدل خفن و داخلی‌شون رو رو کردن و برای محک زدنش با یه گروه مستقل از مؤسسه مطالعات پیشرفته هم مشورت کردن. همیشه یه عده می‌گفتن این هوش مصنوعی‌ها فقط با سرچ کورکورانه و زورِ آزمون‌وخطا مثال نقض پیدا می‌کنن و کار درستِ ریاضی بلد نیستن. اما طبق آماری که دراومده، فقط حدود بیست درصدِ این دستاوردها مثال نقض بوده و بقیه‌ش اثبات‌های درست‌وحسابی و سنگینه. خلاصه این آمار خط بطلانی کشید رو حرف کسایی که فکر می‌کردن مدل‌ها تفکر عمیق ریاضی ندارن و بازیشون فقط جست‌وجوی سادست.\n\nچرا مهمه؟ اهمیتش اینه که ثابت می‌کنه هوش مصنوعی وارد مرحله استدلال عمیق ریاضی شده و از حالت ابزار کمکی ساده به یه همکار واقعی برای دانشمندا تبدیل شده.",
+  "date": "2026-10-07T03:29:04+00:00"
+ },
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/nrehiew_/status/2107637795531767962",
+   "domain": "x.com",
+   "author": {
+    "name": "wh",
+    "handle": "nrehiew_",
+    "avatar": "https://pbs.twimg.com/profile_images/1760005111055777792/NmshY7lw_200x200.jpg"
+   },
+   "text": "Looks like 20% of the results are disproofs/counterexamples.  \n\nThis is itself a disproof of people who said that the recent math breakthroughs are concentrated among counterexamples because models are only good at (brute force) search",
+   "date": 1791334983,
+   "media": [
+    {
+     "type": "image",
+     "src": "https://pbs.twimg.com/media/HT_VBUSa0AAMbBB.jpg?name=orig",
+     "ratio": 0.2485
+    }
+   ],
+   "links": [],
+   "quote": {
+    "author": {
+     "name": "OpenAI",
+     "handle": "OpenAI",
+     "avatar": "https://pbs.twimg.com/profile_images/1885410181409820672/ztsaR0JW_200x200.jpg"
+    },
+    "text": "We’re releasing a broad range of new mathematical results produced by an internal frontier model.\n\nWe’ve been consulting with the independent Advisory Group on Mathematics and Artificial Intelligence at the Institute for Advanced Study, and we have drawn on their advice and public recommendations to inform how we release these results. \n\nhttps://github.com/openai/math",
+    "date": 1791325188,
+    "media": [],
+    "links": [
+     "https://github.com/openai/math"
+    ]
+   }
+  }
+ ],
+ "article": {
+  "title": "ماجرا از این قراره که بچه‌های OpenAI دستاوردهای جدید ریاضی مدل خفن و داخلی‌شون رو رو کردن و برای محک زدنش با یه گروه مستقل از مؤسسه مطالعات پیشرفته هم مشورت کردن",
+  "source_title": "Looks like 20% of the results are disproofs/counterexamples.",
+  "body": [
+   "رفیق، ماجرا از این قراره که بچه‌های OpenAI دستاوردهای جدید ریاضی مدل خفن و داخلی‌شون رو رو کردن و برای محک زدنش با یه گروه مستقل از مؤسسه مطالعات پیشرفته هم مشورت کردن. همیشه یه عده می‌گفتن این هوش مصنوعی‌ها فقط با سرچ کورکورانه و زورِ آزمون‌وخطا مثال نقض پیدا می‌کنن و کار درستِ ریاضی بلد نیستن. اما طبق آماری که دراومده، فقط حدود بیست درصدِ این دستاوردها مثال نقض بوده و بقیه‌ش اثبات‌های درست‌وحسابی و سنگینه. خلاصه این آمار خط بطلانی کشید رو حرف کسایی که فکر می‌کردن مدل‌ها تفکر عمیق ریاضی ندارن و بازیشون فقط جست‌وجوی سادست."
+  ],
+  "why": "اهمیتش اینه که ثابت می‌کنه هوش مصنوعی وارد مرحله استدلال عمیق ریاضی شده و از حالت ابزار کمکی ساده به یه همکار واقعی برای دانشمندا تبدیل شده.",
+  "tags": [
+   "اوپن‌ای‌آی"
+  ]
+ },
+ "updated": "2026-10-25T12:24:33+00:00",
+ "gholam_checked": "2026-10-25T12:24:33+00:00"
+}

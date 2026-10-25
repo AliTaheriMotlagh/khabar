@@ -1,0 +1,62 @@
+{
+ "id": 5440,
+ "url": "https://t.me/dlmehr/5440",
+ "date": "2026-09-24T01:48:19+00:00",
+ "text": "https://fxtwitter.com/AnthropicAI/status/2102824959827742916",
+ "forwarded_from": "Parsa Razavi",
+ "digest": false,
+ "hash": "d997f7956860",
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/AnthropicAI/status/2102824959827742916",
+  "site": "FxTwitter · anthropic.com",
+  "title": "Anthropic (@AnthropicAI)",
+  "description": "Claude has discovered a previously unknown enzyme system hidden in the DNA of bacteriophages. Beside the enzyme’s gene sits a long array of repeating DNA—a structure that looks somewhat similar to CRISPR.\nWe don’t yet understand what this system does, but…",
+  "image": "https://cdn4.telesco.pe/file/RL0sJTDUIStEvpBIbwX_cjeJW5LWY8X6gndfLrvQXZqsoDzMDMrW8uIIiOHyWecgQSP23k3ZHEs4UC9Xl2K0RivmMJqjBFRv5i8XG8n-T2PdaTdGBz3jpui_PKlHCW_4aZj45pievXfDqfd1KWS-DE4Uj3gGyNpc-5AV0np_0LRfyQKyCD0aaNnydqJkVXh8oJ92Qw5xscUULSKmaFchtNN21hGZTLPLMVQ3NbMsnsWZw2g9LNAokafdnqxap508V3cL2EsWCdNYGg7ISBX8I3bOhThHIr37J0TjRVQQWSzz1LwzRQjpvSmAP4pjtrMdKtSH0IZxvxi2mIhZ2Z3vsg.jpg"
+ },
+ "gholam": {
+  "text": "رفیق، شرکت آنتروپیک اعلام کرده مدل هوش مصنوعی کلاود یه سیستم آنزیمی کاملاً ناشناخته وسط دی‌ان‌ای باکتریوفاژها شکار کرده که ساختارش بدجوری شبیه ابزار معروف کریسپره. بغل گوش ژن این آنزیم، یه ردیف طولانی از دی‌ان‌ای تکراری نشسته؛ یعنی درست از جنس همون سیستم‌های کمیابِ زیستی که توانایی بریدن، کپی و چسبوندن ژن‌ها رو دارن و قبلاً پزشکی رو زیرورو کردن. البته دانشمندا صادقانه گفتن هنوز دقیق نمی‌دونن این سازوکار تهش چه دست‌فرمانی داره و باید کلی کار تحقیقاتی روش انجام بشه تا معلوم شه به درد کاربردهای پزشکی می‌خوره یا نه.\n\nاهمیتش اینه که اگه هوش مصنوعی بتونه سیستم‌های ژنتیکی جدیدی شبیه کریسپر کشف کنه، قفل نسل تازه‌ای از ویرایش ژن و درمان بیماری‌های سخت‌درمان باز می‌شه.",
+  "date": "2026-09-24T01:48:33+00:00"
+ },
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/AnthropicAI/status/2102824959827742916",
+   "domain": "x.com",
+   "author": {
+    "name": "Anthropic",
+    "handle": "AnthropicAI",
+    "avatar": "https://pbs.twimg.com/profile_images/1798110641414443008/XP8gyBaY_200x200.jpg"
+   },
+   "text": "Claude has discovered a previously unknown enzyme system hidden in the DNA of bacteriophages. Beside the enzyme’s gene sits a long array of repeating DNA—a structure that looks somewhat similar to CRISPR.\n\nWe don’t yet understand what this system does, but only a handful of known systems share its features, and all of them are able to cut, copy, and paste DNA. Historically, the discovery of such programmable systems has helped revolutionize medicine. CRISPR, for instance, is now the foundation of genetic medicines. But it will take much more work to learn what this system does, and whether it can be put to similar use.\n\nRead more: https://www.anthropic.com/news/claude-discovers-novel-enzyme-system",
+   "date": 1790187513,
+   "media": [],
+   "links": [
+    "https://www.anthropic.com/news/claude-discovers-novel-enzyme-system"
+   ]
+  },
+  {
+   "kind": "link",
+   "url": "https://www.anthropic.com/research/claude-discovers-novel-enzyme-system",
+   "domain": "anthropic.com",
+   "title": "Claude discovers a novel enzyme system",
+   "description": "In early results from our new life sciences research lab, Claude agents found an enzyme system whose function is still unknown.",
+   "image": "https://www-cdn.anthropic.com/images/4zrzovbb/website/6767b35fae00316d8cd744f50a38fb72a01f6c75-1200x630.jpg",
+   "site": "anthropic.com"
+  }
+ ],
+ "article": {
+  "title": "شرکت آنتروپیک اعلام کرده مدل هوش مصنوعی کلاود یه سیستم آنزیمی کاملاً ناشناخته وسط دی‌ان‌ای باکتریوفاژها شکار کرده که ساختارش بدجوری شبیه ابزار معروف کریسپره",
+  "source_title": "Claude has discovered a previously unknown enzyme system hidden in the DNA of bacteriophages. Beside the enzyme’s gene sits a long array of…",
+  "body": [
+   "رفیق، شرکت آنتروپیک اعلام کرده مدل هوش مصنوعی کلاود یه سیستم آنزیمی کاملاً ناشناخته وسط دی‌ان‌ای باکتریوفاژها شکار کرده که ساختارش بدجوری شبیه ابزار معروف کریسپره. بغل گوش ژن این آنزیم، یه ردیف طولانی از دی‌ان‌ای تکراری نشسته؛ یعنی درست از جنس همون سیستم‌های کمیابِ زیستی که توانایی بریدن، کپی و چسبوندن ژن‌ها رو دارن و قبلاً پزشکی رو زیرورو کردن. البته دانشمندا صادقانه گفتن هنوز دقیق نمی‌دونن این سازوکار تهش چه دست‌فرمانی داره و باید کلی کار تحقیقاتی روش انجام بشه تا معلوم شه به درد کاربردهای پزشکی می‌خوره یا نه."
+  ],
+  "why": "اگه هوش مصنوعی بتونه سیستم‌های ژنتیکی جدیدی شبیه کریسپر کشف کنه، قفل نسل تازه‌ای از ویرایش ژن و درمان بیماری‌های سخت‌درمان باز می‌شه.",
+  "tags": [
+   "آنتروپیک",
+   "سلامت"
+  ]
+ },
+ "updated": "2026-10-25T12:26:03+00:00",
+ "gholam_checked": "2026-10-25T12:26:03+00:00"
+}

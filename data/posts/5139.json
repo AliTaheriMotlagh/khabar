@@ -1,0 +1,61 @@
+{
+ "id": 5139,
+ "url": "https://t.me/dlmehr/5139",
+ "date": "2026-09-04T05:10:45+00:00",
+ "text": "https://fxtwitter.com/fchollet/status/2095598451115614371?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+ "forwarded_from": null,
+ "digest": false,
+ "hash": "c13d7418022f",
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/fchollet/status/2095598451115614371?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+  "site": "FxTwitter · arcprize.org",
+  "title": "François Chollet (@fchollet)",
+  "description": "GPT-6 Astra represents a step-function change in model capability for interactive reasoning problems. It scores 66% on ARC-AGI-3 using our standard harness, and nearly 100% with a continuous conversation harness and custom compaction, at a cost of roughly…",
+  "image": "https://cdn4.telesco.pe/file/VG3NxqRlJLI4vybi3psUsI4vczj-ZqxHLCJVADrC3qdBsMF5kXfO15dG35Nbi4134wUQVrzhARC3PzCaENnE5ID6gXMSOyojYvoVr0PkqrpIaXbYyHuBcv8lcSYMqPDj7hz8ffCGc8f3Fh-pDm7TNbm-aICYk-zMFvEWBtS0Om41-9hnLcyTuBohQVix8uAyHgZ6shalXNhElov4BcdrP7zfa5t9sK-QXlGMRksyCNQ6Nn-QxYLcbQco9T349LQAXWgMUJ-Xf5iSbYlT3mGZ06JoDZyiepYbnonoevmHTA8yCZlhGfkijCaFs2QERcLYqJP-A8UgHeJCmYN2g_2RMA.jpg"
+ },
+ "gholam": {
+  "text": "ببین رفیق، فرانسوا شوله خبر آورده که مدل جدید GPT-6 Astra تو حل مسائل استدلالی بدجور ترکونده و یه جهش اساسی کرده. این غول جدید تو آزمون سنگین ARC-AGI-3 با تنظیمات استاندارد به امتیاز ۶۶ درصد رسیده، اما وقتی بستر گفتگوی مداوم براش گذاشتن با هزینه ۳۶۰ دلار برای هر بازی، تقریباً ۱۰۰ درصد نمره رو درو کرده و توی بازدهی عملکرد حتی رکورد آدمیزاد رو هم پشت سر گذاشته. قضیه جالب‌تر اینجاست که وقتی زنجیره فکر کردنش رو بررسی کردن، دیدن موقع حل معماها واسه خودش فی‌البداهه مدل نمادین می‌سازه و حتی یه زبان رمزی جبری منحصربه‌فرد اختراع می‌کنه تا محیط بازی رو تو مشتش بگیره. خلاصه اینکه شوله معتقده کارهایی که قبلاً با سیستم‌ها و ابزارهای کمکی به مدل تزریق می‌شد، حالا داره صاف می‌ره تو بطن خود مغز مدل و رسماً وارد مرحله جدیدی از هوش شدیم.\n\nاهمیتش اینه که نشون میده ماشین‌ها دارن یاد می‌گیرن خودشون رو پای خودشون استدلال و مدلسازی ذهنی انجام بدن، نه اینکه فقط مقلد حرف‌های گذشته ما باشن.",
+  "date": "2026-09-04T05:10:59+00:00"
+ },
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/fchollet/status/2095598451115614371",
+   "domain": "x.com",
+   "author": {
+    "name": "François Chollet",
+    "handle": "fchollet",
+    "avatar": "https://pbs.twimg.com/profile_images/2006806326140350470/Kd5oZv-f_200x200.jpg"
+   },
+   "text": "GPT-6 Astra represents a step-function change in model capability for interactive reasoning problems. It scores 66% on ARC-AGI-3 using our standard harness, and nearly 100% with a continuous conversation harness and custom compaction, at a cost of roughly $360 per game.\n\nIn fact, the continuous harness version significantly outperforms our human baseline in action efficiency across almost all levels. When we examined the reasoning chains to understand how the model operates, we found it performing highly efficient, on-the-fly symbolic world modeling for each game and level. It goes as far as developing its own shorthand DSL to represent in-game situations -- essentially a game-specific algebraic notation.\n\nOverall, Astra exhibits symbolic modeling behaviors we had previously only seen with sophisticated harnesses -- so harness capabilities are increasingly shifting into the model itself.\n\nWe see Astra as a major breakthrough in model intelligence.\n\nRead our post on Astra and what these results mean: https://arcprize.org/blog/astra",
+   "date": 1788464579,
+   "media": [],
+   "links": [
+    "https://arcprize.org/blog/astra"
+   ]
+  },
+  {
+   "kind": "link",
+   "url": "https://arcprize.org/blog/astra",
+   "domain": "arcprize.org",
+   "title": "OpenAI's GPT-6 Astra on ARC-AGI-3 | ARC Prize",
+   "description": "OpenAI's GPT-6 Astra reaches state-of-the-art results on ARC-AGI-3",
+   "image": "https://arcprize.org/media/images/blog/astra-action-efficiency.png",
+   "site": "ARC Prize"
+  }
+ ],
+ "article": {
+  "title": "فرانسوا شوله خبر آورده که مدل جدید GPT-6 Astra تو حل مسائل استدلالی بدجور ترکونده و یه جهش اساسی کرده",
+  "source_title": "GPT-6 Astra represents a step-function change in model capability for interactive reasoning problems. It scores 66% on ARC-AGI-3 using our…",
+  "body": [
+   "ببین رفیق، فرانسوا شوله خبر آورده که مدل جدید GPT-6 Astra تو حل مسائل استدلالی بدجور ترکونده و یه جهش اساسی کرده. این غول جدید تو آزمون سنگین ARC-AGI-3 با تنظیمات استاندارد به امتیاز ۶۶ درصد رسیده، اما وقتی بستر گفتگوی مداوم براش گذاشتن با هزینه ۳۶۰ دلار برای هر بازی، تقریباً ۱۰۰ درصد نمره رو درو کرده و توی بازدهی عملکرد حتی رکورد آدمیزاد رو هم پشت سر گذاشته. قضیه جالب‌تر اینجاست که وقتی زنجیره فکر کردنش رو بررسی کردن، دیدن موقع حل معماها واسه خودش فی‌البداهه مدل نمادین می‌سازه و حتی یه زبان رمزی جبری منحصربه‌فرد اختراع می‌کنه تا محیط بازی رو تو مشتش بگیره. خلاصه اینکه شوله معتقده کارهایی که قبلاً با سیستم‌ها و ابزارهای کمکی به مدل تزریق می‌شد، حالا داره صاف می‌ره تو بطن خود مغز مدل و رسماً وارد مرحله جدیدی از هوش شدیم."
+  ],
+  "why": "نشون میده ماشین‌ها دارن یاد می‌گیرن خودشون رو پای خودشون استدلال و مدلسازی ذهنی انجام بدن، نه اینکه فقط مقلد حرف‌های گذشته ما باشن.",
+  "tags": [
+   "اوپن‌ای‌آی"
+  ]
+ },
+ "updated": "2026-10-25T12:27:56+00:00",
+ "gholam_checked": "2026-10-25T12:27:56+00:00"
+}

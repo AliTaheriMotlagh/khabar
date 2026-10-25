@@ -2,16 +2,23 @@
  "id": 5958,
  "url": "https://t.me/dlmehr/5958",
  "date": "2026-10-18T15:58:28+00:00",
- "edited": true,
- "views": "202",
  "text": "https://fxtwitter.com/andrewcurran_/status/2111837963214794940?s=52&t=F41Qa04r48Mef_j_XjBneQ",
  "forwarded_from": null,
  "digest": false,
  "hash": "97cbb1ec8c4d",
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/andrewcurran_/status/2111837963214794940?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+  "site": "FxTwitter",
+  "title": "Andrew Curran (@AndrewCurran_)",
+  "description": "OpenCode is currently under a sustained cyberattack, and mid-incident they ran into the same problem Hugging Face did: the frontier models they were using for defense began refusing to help fight attacking agents because analyzing the attacks started triggering…",
+  "image": "https://cdn4.telesco.pe/file/pPbYBnDZrSV-_OhoRrFoCoLqrYq8OBmulLoj4SVaOQxGdBtu4flBwklVSkj3YBWVscTR34x96NUccoscBUbeXc3k23C1fBQJgSy2UEjsqKxb6RX-PaWCci3STCVYJ5vle0bEOAwVt_ez8NeLKTZFLxBK6PleUMN4Ism4-up4mLG7au0-mUwrNVzSHYaLCK-WXQ8ebgXWAsV8EKRzdDeq2aYjstctqtcxBmGetIncU4R4g_WYvTjdd_xIWuroJ92zUmUHYhOhI6lw2NVKmW8oKo8u7Gts1FU7yQjrNngUE5PqP0Pl0KytdaJXKhA1dg8liE_OctRqCUAyxq67bRCxCw.jpg"
+ },
  "gholam": {
   "text": "رفیق، پلتفرم OpenCode بدجوری زیر ضربه یه حمله سایبری سنگین رفته و وسط این بلبشو، یه ماجرای عجیب دست‌وپاشون رو بسته. قضیه از این قراره که تیمشون برای تحلیل و دفع حمله رفتن سراغ مدل‌های پیشرفته هوش مصنوعی، اما این مدل‌ها وسط میدون جنگ گاردریل‌های ایمنی‌شون فعال شد و زدن زیر کاسه‌کوزه و گفتن این کدها مخربه و حاضر نیستیم تحلیstyle‌شون کنیم! درست عین مشکلی که قبلاً سر هاگینگ فیس اومده بود، هوش مصنوعی عملاً خودی‌ها رو قال گذاشت تا اینکه مجبور شدن سراغ ابزارهای جایگزین برن تا کار نخوابه.\n\nاهمیتش اینه که نشون میده فیلترهای سفت‌وسخت و کورکورانه هوش مصنوعی می‌تونن توی بزنگاه‌های امنیتی، دست مدافع‌ها رو ببندن و دودش مستقیم بره توی چشم امنیت سیستم‌ها.",
   "date": "2026-10-18T15:58:47+00:00"
  },
+ "gholam_checked": "2026-10-24T23:11:45+00:00",
  "links": [
   {
    "kind": "tweet",
@@ -61,18 +68,6 @@
    }
   }
  ],
- "media": [],
- "preview": {
-  "url": "https://fxtwitter.com/andrewcurran_/status/2111837963214794940?s=52&t=F41Qa04r48Mef_j_XjBneQ",
-  "site": "FxTwitter",
-  "title": "Andrew Curran (@AndrewCurran_)",
-  "description": "OpenCode is currently under a sustained cyberattack, and mid-incident they ran into the same problem Hugging Face did: the frontier models they were using for defense began refusing to help fight attacking agents because analyzing the attacks started triggering…",
-  "image": {
-   "src": "media/5958/preview.webp",
-   "width": 738,
-   "height": 800
-  }
- },
  "article": {
   "title": "پلتفرم OpenCode بدجوری زیر ضربه یه حمله سایبری سنگین رفته و وسط این بلبشو، یه ماجرای عجیب دست‌وپاشون رو بسته",
   "source_title": "OpenCode is currently under a sustained cyberattack, and mid-incident they ran into the same problem Hugging Face did: the frontier models…",
@@ -84,6 +79,5 @@
    "امنیت"
   ]
  },
- "updated": "2026-10-24T23:11:45+00:00",
- "gholam_checked": "2026-10-24T23:11:45+00:00"
+ "updated": "2026-10-25T11:54:09+00:00"
 }

@@ -2,16 +2,23 @@
  "id": 5932,
  "url": "https://t.me/dlmehr/5932",
  "date": "2026-10-16T18:33:44+00:00",
- "edited": true,
- "views": "194",
  "text": "https://fxtwitter.com/reflection_ai/status/2111079965529968798?s=52&t=F41Qa04r48Mef_j_XjBneQ",
  "forwarded_from": null,
  "digest": false,
  "hash": "9c37293b4ba6",
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/reflection_ai/status/2111079965529968798?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+  "site": "🧵 Thread • FxTwitter",
+  "title": "Reflection (@reflection_ai)",
+  "description": "Beam is now available across platforms, with open weights under the Apache 2.0 license - in collaboration with an ecosystem of 40+ partners.\nWe're releasing:\n- Weights, tokenizer, and reference implementation\n- BF16, FP8 and NVFP4 weights and a DFlash2 drafter…",
+  "image": "https://cdn4.telesco.pe/file/Rg3YSzljyyKOWVy5d77t5OrRazF2wjGbMjzh7ffoAVWlhO8QKvpXi2uduhBdoPX0Ew2jIbJMCMJVEVUt_GagShjDFHw9exNwBw79yWxJWR_RK16DhjRfRz4bolToxoDPHxNCawAH6kL7dPK-kgllJG8JA0X6R2AbwuIvCr6Y6Q5yNZSamfcmDvIz792v8fHbW21fetUfB4J2Uh5bXxs7LQxMbz5F_WntBVQHDy-zgson-eaaZPaVl4SNCJmUV29qRRqxWzzCFnB6hY1qEpJ3L8nI5mvwu2R2h-LmbpKNst16-cJAcpNiTX4gbuSCckyyrBcbxKFZZbyOatORQaNf4A.jpg"
+ },
  "gholam": {
   "text": "رفقا تیم Reflection گل کاشته و مدل جدیدش به اسم Beam رو به صورت کاملاً متن‌باز و با لایسنس دست‌ودلبازانه Apache 2.0 در دسترس عموم قرار داده. این حرکت خفن با همکاری بیش از ۴۰ تا پارتنر بزرگ راه افتاده و فقط یه فایل ساده نیست؛ تمام وزن‌ها، توکنایزر و پیاده‌سازی مرجع رو یکجا روی هاگینگ‌فیس روونه بازار کردن. جالب‌تر اینکه وزن‌های مختلف مثل BF16، FP8 و نسخه مدرن NVFP4 رو کنار درفتر DFlash2 و ابزار ساخت خودشون یعنی Mirror CLI به صورت رایگان در اختیار جامعه هوش مصنوعی گذاشتن.\n\nاهمیتش اینه که با این پکیج کامل و لایسنس تجاری آزاد، هر برنامه‌نویس و شرکتی می‌تونه بدون هزینه‌های فضایی، یه سیستم هوش مصنوعی به‌روز، سریع و سفارشی رو برای کار خودش بالا بیاره.",
   "date": "2026-10-16T18:34:00+00:00"
  },
+ "gholam_checked": "2026-10-24T23:35:30+00:00",
  "links": [
   {
    "kind": "tweet",
@@ -61,18 +68,6 @@
    "text": "Reflection’s first open-weight model, built for coding, reasoning, and agentic tasks\nAI & ML interests\nNone defined yet.\nRecent Activity\n Team members 63 private\nMake intelligence open and accessible to all\nWelcome to the official Hugging Face organization for Reflection. We build open models for everyone to access, use, and build on.\n- Website: reflection.ai\n- GitHub: github.com/reflection-oss\n- Docs hub: developers.reflection.ai\n- Platform: platform.reflection.ai"
   }
  ],
- "media": [],
- "preview": {
-  "url": "https://fxtwitter.com/reflection_ai/status/2111079965529968798?s=52&t=F41Qa04r48Mef_j_XjBneQ",
-  "site": "🧵 Thread • FxTwitter",
-  "title": "Reflection (@reflection_ai)",
-  "description": "Beam is now available across platforms, with open weights under the Apache 2.0 license - in collaboration with an ecosystem of 40+ partners.\nWe're releasing:\n- Weights, tokenizer, and reference implementation\n- BF16, FP8 and NVFP4 weights and a DFlash2 drafter…",
-  "image": {
-   "src": "media/5932/preview.webp",
-   "width": 800,
-   "height": 450
-  }
- },
  "article": {
   "title": "رفقا تیم Reflection گل کاشته و مدل جدیدش به اسم Beam رو به صورت کاملاً متن‌باز و با لایسنس دست‌ودلبازانه Apache 2.0 در دسترس عموم قرار داده",
   "source_title": "Beam is now available across platforms, with open weights under the Apache 2.0 license - in collaboration with an ecosystem of 40+ partners.",
@@ -84,6 +79,5 @@
    "کدنویسی"
   ]
  },
- "updated": "2026-10-24T23:35:30+00:00",
- "gholam_checked": "2026-10-24T23:35:30+00:00"
+ "updated": "2026-10-25T11:54:11+00:00"
 }

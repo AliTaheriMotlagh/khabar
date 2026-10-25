@@ -1,0 +1,50 @@
+{
+ "id": 4670,
+ "url": "https://t.me/dlmehr/4670",
+ "date": "2026-08-10T15:38:22+00:00",
+ "text": "https://fxtwitter.com/finkd/status/2086755195535413696?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+ "forwarded_from": null,
+ "digest": false,
+ "hash": "1761808f8960",
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/finkd/status/2086755195535413696?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+  "site": "🧵 Thread • FxTwitter",
+  "title": "Mark Zuckerberg (@finkd)",
+  "description": "Today we're also opening the weights for Muse Glimmer, a great 30B parameter dense model that can run locally. Soon we'll also release the weights for Muse Spark 1.2, our latest foundation model. Meta is a strong supporter of open source and I'm proud of…",
+  "image": "https://cdn4.telesco.pe/file/NhN5lnAGCRKLuEnLZj8I0fSsWX_bwXen9Ceazw1zr4h2qqHBcK_STqgQoxfaH-QNjWPpJEAXc4J1kS67vgfOx8v3bt_dvSAyTFAZ-wH7QyVa77MHoYXV1vQSdFURmx7IuWVmDA27psbOaQJop89klwWwlnS2aQaBPOCC5FUf2x_TPVX4mwYaIrEXf2FJFcp4idjXO_RLT3WZcPKEP74csRYNWElwn_hQwZIh2coq9drQJDurfFpsqWWqbqsdiKD9m59aVAvI77mpko3_EZjjmhL66WsHNV7p95ZlC9bcIdfeOyyeHGHRQ76kSV8ivIedwLxycLs4ySGqY-KxqiRkyg.jpg"
+ },
+ "gholam": {
+  "text": "رفیق، مارک زاکربرگ اومده خبر داده که متا وزن‌های مدل هوش مصنوعی Muse Glimmer رو به‌صورت رایگان و اوپن‌سورس منتشر کرده؛ یه مدل قدرتمند ۳۰ میلیارد پارامتری که راحت می‌تونی روی سیستم خودت محلی اجراش کنی. تازه داستان به همین‌جا ختم نمیشه و گفتن به‌زودی وزن‌های مدل پایه جدیدترشون یعنی Muse Spark 1.2 رو هم عمومی می‌کنن تا همه حالشو ببرن. زاکربرگ با افتخار از تعهد متا به دنیای کدباز یاد کرده و یه دست‌مریزاد مشتی هم به الکساندر وانگ و تیم MSL بابت این شاهکارشون گفته.\n\nاهمیتش اینه که با اجرا کردن محلی یه مدل ۳۰ میلیاردی روی سیستم خودت، هم امنیت اطلاعاتت تضمین میشه و هم دست غول‌های انحصاری هوش مصنوعی کوتاه میمونه.",
+  "date": "2026-08-10T15:38:38+00:00"
+ },
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/finkd/status/2086755195535413696",
+   "domain": "x.com",
+   "author": {
+    "name": "Mark Zuckerberg",
+    "handle": "finkd",
+    "avatar": "https://pbs.twimg.com/profile_images/77846223/profile_200x200.jpg"
+   },
+   "text": "Today we're also opening the weights for Muse Glimmer, a great 30B parameter dense model that can run locally. Soon we'll also release the weights for Muse Spark 1.2, our latest foundation model. Meta is a strong supporter of open source and I'm proud of these releases. Congrats to @alexandr_wang and the MSL team for all your great work on these models.",
+   "date": 1786356183,
+   "media": [],
+   "links": []
+  }
+ ],
+ "article": {
+  "title": "مارک زاکربرگ اومده خبر داده که متا وزن‌های مدل هوش مصنوعی Muse Glimmer رو به‌صورت رایگان و اوپن‌سورس منتشر کرده؛ یه مدل قدرتمند ۳۰ میلیارد پارامتری که راحت می‌تونی روی سیستم خودت محلی اجراش کنی",
+  "source_title": "Today we're also opening the weights for Muse Glimmer, a great 30B parameter dense model that can run locally. Soon we'll also release the…",
+  "body": [
+   "رفیق، مارک زاکربرگ اومده خبر داده که متا وزن‌های مدل هوش مصنوعی Muse Glimmer رو به‌صورت رایگان و اوپن‌سورس منتشر کرده؛ یه مدل قدرتمند ۳۰ میلیارد پارامتری که راحت می‌تونی روی سیستم خودت محلی اجراش کنی. تازه داستان به همین‌جا ختم نمیشه و گفتن به‌زودی وزن‌های مدل پایه جدیدترشون یعنی Muse Spark 1.2 رو هم عمومی می‌کنن تا همه حالشو ببرن. زاکربرگ با افتخار از تعهد متا به دنیای کدباز یاد کرده و یه دست‌مریزاد مشتی هم به الکساندر وانگ و تیم MSL بابت این شاهکارشون گفته."
+  ],
+  "why": "با اجرا کردن محلی یه مدل ۳۰ میلیاردی روی سیستم خودت، هم امنیت اطلاعاتت تضمین میشه و هم دست غول‌های انحصاری هوش مصنوعی کوتاه میمونه.",
+  "tags": [
+   "متا"
+  ]
+ },
+ "updated": "2026-10-25T12:30:37+00:00",
+ "gholam_checked": "2026-10-25T12:30:37+00:00"
+}

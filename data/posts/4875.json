@@ -1,0 +1,60 @@
+{
+ "id": 4875,
+ "url": "https://t.me/dlmehr/4875",
+ "date": "2026-08-22T06:25:28+00:00",
+ "text": "https://fxtwitter.com/TimJayas/status/2090872361096753524?s=20",
+ "forwarded_from": "Amin",
+ "digest": false,
+ "hash": "a9562f7f369f",
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/TimJayas/status/2090872361096753524?s=20",
+  "site": "FxTwitter",
+  "title": "Tim Jayas (@TimJayas)",
+  "description": "Ox Alpha vs Opus 5\ni asked both models to build rocket engine using three.js\nox-alpha is not even close to opus 5 performance and it took equal or more time for the output\nprompt used for both:\n\"Create a 3d SpaceX raptor engine using three.js, use white…",
+  "image": null
+ },
+ "gholam": {
+  "text": "ببین رفیق، یه متخصصی به اسم تیم جایاس اومده دو تا مدل هوش مصنوعی یعنی Ox Alpha و Opus 5 رو انداخته تو رینگ تا عیار کدنویسی سه‌بعدی‌شون مشخص بشه. به جفتشون با یه پرامپتِ یه‌ضرب گفته که با کتابخونه Three.js یه موتور موشک رپتور اسپیس‌ایکس به صورت سه‌بعدی بسازن. تهش مشخص شد که Ox Alpha اصلاً و ابداً نتونسته به گرد پای Opus 5 برسه و تازه همون‌قدر یا حتی بیشترم برای تحویل خروجی فس‌فس کرده و وقت گرفته. خلاصه تو این چالش سنگین گرافیکی، Opus 5 بدجوری حریفش رو ضربه‌فنی کرده و کیفیت خیلی بالاتری تحویل داده.\n\nاهمیتش اینه که بهمون ثابت می‌کنه برای کارای پیچیده و گرافیک سه‌بعدی وب، هنوز نباید رو هر مدل تازه‌واردی حساب باز کرد و پرچم مدل‌های جاافتاده حسابی بالاست.",
+  "date": "2026-08-22T06:25:38+00:00"
+ },
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/TimJayas/status/2090872361096753524",
+   "domain": "x.com",
+   "author": {
+    "name": "Tim Jayas",
+    "handle": "TimJayas",
+    "avatar": "https://pbs.twimg.com/profile_images/2016190209768226821/MW5mAfL-_200x200.jpg"
+   },
+   "text": "Ox Alpha vs Opus 5\n\ni asked both models to build rocket engine using three.js\n\nox-alpha is not even close to opus 5 performance and it took equal or more time for the output\n\nprompt used for both:\n\"Create a 3d SpaceX raptor engine using three.js, use white theme background so the main object is clearly visible\"\n\nboth are one-shot outputs with no additional changes\n\nwhat do you think about Ox Alpha?",
+   "date": 1787337792,
+   "media": [
+    {
+     "type": "video",
+     "src": "https://video.twimg.com/amplify_video/2090869693322272768/vid/avc1/720x750/1bETHVArhAUIPI_g.mp4?tag=29",
+     "poster": "https://pbs.twimg.com/amplify_video_thumb/2090869693322272768/img/vY3eDRRbg13Ayg-k.jpg",
+     "ratio": 1.0417,
+     "duration": 44.586,
+     "gif": false
+    }
+   ],
+   "links": []
+  }
+ ],
+ "article": {
+  "title": "یه متخصصی به اسم تیم جایاس اومده دو تا مدل هوش مصنوعی یعنی Ox Alpha و Opus 5 رو انداخته تو رینگ تا عیار کدنویسی سه‌بعدی‌شون مشخص بشه",
+  "source_title": "Ox Alpha vs Opus 5",
+  "body": [
+   "ببین رفیق، یه متخصصی به اسم تیم جایاس اومده دو تا مدل هوش مصنوعی یعنی Ox Alpha و Opus 5 رو انداخته تو رینگ تا عیار کدنویسی سه‌بعدی‌شون مشخص بشه. به جفتشون با یه پرامپتِ یه‌ضرب گفته که با کتابخونه Three.js یه موتور موشک رپتور اسپیس‌ایکس به صورت سه‌بعدی بسازن. تهش مشخص شد که Ox Alpha اصلاً و ابداً نتونسته به گرد پای Opus 5 برسه و تازه همون‌قدر یا حتی بیشترم برای تحویل خروجی فس‌فس کرده و وقت گرفته. خلاصه تو این چالش سنگین گرافیکی، Opus 5 بدجوری حریفش رو ضربه‌فنی کرده و کیفیت خیلی بالاتری تحویل داده."
+  ],
+  "why": "بهمون ثابت می‌کنه برای کارای پیچیده و گرافیک سه‌بعدی وب، هنوز نباید رو هر مدل تازه‌واردی حساب باز کرد و پرچم مدل‌های جاافتاده حسابی بالاست.",
+  "tags": [
+   "آنتروپیک",
+   "کدنویسی"
+  ]
+ },
+ "updated": "2026-10-25T12:29:35+00:00",
+ "gholam_checked": "2026-10-25T12:29:35+00:00"
+}

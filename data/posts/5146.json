@@ -1,0 +1,72 @@
+{
+ "id": 5146,
+ "url": "https://t.me/dlmehr/5146",
+ "date": "2026-09-04T20:12:22+00:00",
+ "text": "https://fxtwitter.com/anthropicai/status/2095947707605266436?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+ "forwarded_from": null,
+ "digest": false,
+ "hash": "8eed4a720e1f",
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/anthropicai/status/2095947707605266436?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+  "site": "FxTwitter",
+  "title": "Anthropic (@AnthropicAI)",
+  "description": "Checking that a major mathematical proof is correct can take years. Formalization—converting the mathematical reasoning into a form computer proof assistants like Lean can verify—can help.\nLast month, Claude completed the first formalized proof of Fermat’s…",
+  "image": null
+ },
+ "gholam": {
+  "text": "ببین رفیق، بچه‌های شرکت آنتروپیک یه کارستون اساسی کردن و هوش مصنوعیشون یعنی کلود تونسته «آخرین قضیه فرما» رو به زبان برنامه نویسی لین کامپیوترپذیر و اثبات ماشینی کنه؛ پروژه‌ای که همه اوستاها فکر می‌کردن سال‌های سال وقت می‌بره. این قضیه رو سال ۱۹۹۵ اندرو وایلز بعد از ۳۵۰ سال حل کرده بود، ولی حالا کلود با زدن بیش از ۱۳ میلیون خط کد، غول‌پیکرترین اثبات تاریخ ماشین‌ها رو ثبت کرد. تهِ ماجرا هم اینجاست که این هوش مصنوعی وسط راه مجبور شد بیش از ۲۹ هزار قضیه و برهان ریاضی دیگه رو هم برای اولین بار فرموله‌سازی و راستی‌آزمایی کنه تا کار چفت‌وبست پیدا کنه. خلاصه این شاهکار نشون داد که ماشین‌ها بالاخره دارن بار سنگین چک‌کردن درستیِ مقالات علمی پیچیده رو از دوش دانشمندا برمی‌دارن.\n\nاهمیتش اینه که دنیای ریاضیات رسماً وارد عصری شد که سخت‌ترین نظریه‌های تاریخ بشر به دست هوش مصنوعی بدون ذره‌ای خطای انسانی سند منگوله‌دار می‌خورن.",
+  "date": "2026-09-04T20:12:35+00:00"
+ },
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/AnthropicAI/status/2095947707605266436",
+   "domain": "x.com",
+   "author": {
+    "name": "Anthropic",
+    "handle": "AnthropicAI",
+    "avatar": "https://pbs.twimg.com/profile_images/1798110641414443008/XP8gyBaY_200x200.jpg"
+   },
+   "text": "Checking that a major mathematical proof is correct can take years. Formalization—converting the mathematical reasoning into a form computer proof assistants like Lean can verify—can help.\n\nLast month, Claude completed the first formalized proof of Fermat’s Last Theorem, one of the most famous theorems of all time. This was a project experts thought would take many years. It is the largest Lean proof ever written.\n\nFermat’s Last Theorem was first proven in 1995 by Sir Andrew Wiles, more than 350 years after it was conjectured. Our proof, which totals over 13 million lines of code, provides machine verification. More importantly, it proves over 29,000 other theorems that the proof requires, across many areas of math which had never before been formalized.\n\nWe see this as a major step in the long process of firming up the core of mathematical knowledge, building on work from three centuries of mathematicians and hundreds of contributors to Lean and Mathlib. We are optimistic that AI-assisted verification of mathematical proofs will help reduce the burden of refereeing mathematics in an era where more proofs are being produced than ever before.\n\nYou can read about the process on our Science Blog: https://www.anthropic.com/research/formalizing-fermats-last-theorem\n\nAnd see the complete proof on GitHub: https://github.com/anthropics/fermats-last-theorem",
+   "date": 1788547848,
+   "media": [
+    {
+     "type": "video",
+     "src": "https://video.twimg.com/amplify_video/2095946062741860352/vid/avc1/1280x720/iHgOvUYDiOS99If-.mp4?tag=29",
+     "poster": "https://pbs.twimg.com/amplify_video_thumb/2095946062741860352/img/YrmIldXbYwUDRBSB.jpg",
+     "ratio": 0.5625,
+     "duration": 34.866,
+     "gif": false
+    }
+   ],
+   "links": [
+    "https://www.anthropic.com/research/formalizing-fermats-last-theorem",
+    "https://github.com/anthropics/fermats-last-theorem"
+   ]
+  },
+  {
+   "kind": "link",
+   "url": "https://www.anthropic.com/research/formalizing-fermats-last-theorem",
+   "domain": "anthropic.com",
+   "title": "Formalizing Fermat's Last Theorem",
+   "description": "Anthropic is an AI safety and research company that's working to build reliable, interpretable, and steerable AI systems.",
+   "image": "https://www-cdn.anthropic.com/images/4zrzovbb/website/578f91575c42231f0994e341014614255149af80-1200x630.jpg",
+   "site": "anthropic.com"
+  }
+ ],
+ "article": {
+  "title": "بچه‌های شرکت آنتروپیک یه کارستون اساسی کردن و هوش مصنوعیشون یعنی کلود تونسته «آخرین قضیه فرما» رو به زبان برنامه نویسی لین کامپیوترپذیر و اثبات ماشینی کنه",
+  "source_title": "Checking that a major mathematical proof is correct can take years. Formalization—converting the mathematical reasoning into a form…",
+  "body": [
+   "ببین رفیق، بچه‌های شرکت آنتروپیک یه کارستون اساسی کردن و هوش مصنوعیشون یعنی کلود تونسته «آخرین قضیه فرما» رو به زبان برنامه نویسی لین کامپیوترپذیر و اثبات ماشینی کنه؛ پروژه‌ای که همه اوستاها فکر می‌کردن سال‌های سال وقت می‌بره. این قضیه رو سال ۱۹۹۵ اندرو وایلز بعد از ۳۵۰ سال حل کرده بود، ولی حالا کلود با زدن بیش از ۱۳ میلیون خط کد، غول‌پیکرترین اثبات تاریخ ماشین‌ها رو ثبت کرد. تهِ ماجرا هم اینجاست که این هوش مصنوعی وسط راه مجبور شد بیش از ۲۹ هزار قضیه و برهان ریاضی دیگه رو هم برای اولین بار فرموله‌سازی و راستی‌آزمایی کنه تا کار چفت‌وبست پیدا کنه. خلاصه این شاهکار نشون داد که ماشین‌ها بالاخره دارن بار سنگین چک‌کردن درستیِ مقالات علمی پیچیده رو از دوش دانشمندا برمی‌دارن."
+  ],
+  "why": "دنیای ریاضیات رسماً وارد عصری شد که سخت‌ترین نظریه‌های تاریخ بشر به دست هوش مصنوعی بدون ذره‌ای خطای انسانی سند منگوله‌دار می‌خورن.",
+  "tags": [
+   "آنتروپیک",
+   "کدنویسی"
+  ]
+ },
+ "updated": "2026-10-25T12:27:54+00:00",
+ "gholam_checked": "2026-10-25T12:27:54+00:00"
+}

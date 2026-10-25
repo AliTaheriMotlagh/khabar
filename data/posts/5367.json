@@ -1,0 +1,57 @@
+{
+ "id": 5367,
+ "url": "https://t.me/dlmehr/5367",
+ "date": "2026-09-18T04:20:39+00:00",
+ "text": "https://fxtwitter.com/s1r1u5_/status/2100777801335095383?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+ "forwarded_from": null,
+ "digest": false,
+ "hash": "c8f06642d069",
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/s1r1u5_/status/2100777801335095383?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+  "site": "🧵 Thread • FxTwitter",
+  "title": "s1r1us (@S1r1u5_)",
+  "description": "On July 25, we hacked OpenAI.\nTwo bugs let us take over ChatGPT/Codex accounts of OpenAI employees (+some unaffiliated users) and reach connected services: Outlook, Slack, GitHub, etc.\nWe proved it with a PR in OpenAI’s internal codebase . It took us <72h.…",
+  "image": "https://cdn4.telesco.pe/file/sne7LGmnkDkEXpd0TcTQbGBganLuWmjJyjmLOXNdIkdNtQsZBnKWqoU5BGB6cxXyP_wD7BZ_wh7_sMqF31ZGevUBoYpmQRh-dDADhlgTt4V7KZUlwj9XoR933PDqRA9aHKxdWAYZsVGtS8BWd6-u83POW5ylVbr7rKpw_IoO9wciJRctYNCu2cfTepEQS13y9a84I7nKC-LC_kDJIv9N8NPHGOhv7mqGixs6MIdC4VTXfzdMzkEq6cbY9v06zeDJHuGQss6EK1y5cfer2KlmMUhlW_ZWyxcof7Zpak5Z_oTTKSdP63P3kjhI5_ZGdwcdv3fgdlGv-fkhgIF5kth3dg.jpg"
+ },
+ "gholam": {
+  "text": "رفیق، بشنو از یه ماجرای عجیب امنیتی؛ یه پژوهشگر به اسم s1r1us رو کرده که روز ۲۵ جولای موفق شده قفل دم‌ودستگاه خود OpenAI رو باز کنه و سیستم‌هاشون رو بزنه. قضیه از این قراره که این بنده خدا با پیدا کردن دو تا باگ اساسی، کنترل اکانت‌های چت‌جی‌پی‌تی و کدکس کارمندای شرکت رو به دست گرفته و از اونجا سرک کشیده به سرویس‌های متصلشون مثل گیت‌هاب، اسلک و اوت‌لوک. جالب‌تر اینکه کل این سناریوی نفوذ زیر ۷۲ ساعت جمع شده و طرف برای اثبات قضیه، مستقیم توی سورس‌کد و پایگاه کد داخلی OpenAI یه پول‌ریکوئست ثبت کرده تا جا برای هیچ انکاری نمونه.\n\nاهمیتش اینه که وقتی غول بلامنازع هوش مصنوعی با اون همه کبکبه و دبدبه تو سه روز از طریق دسترسی کارمنداش به سورس‌کدش نفوذ می‌شه، زنگ خطریه که نشون میده زنجیره امنیت ابری چقدر می‌تونه شکننده باشه.",
+  "date": "2026-09-18T04:20:51+00:00"
+ },
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/S1r1u5_/status/2100777801335095383",
+   "domain": "x.com",
+   "author": {
+    "name": "s1r1us",
+    "handle": "S1r1u5_",
+    "avatar": "https://pbs.twimg.com/profile_images/1904837482941997058/nfq_M0kd_200x200.jpg"
+   },
+   "text": "On July 25, we hacked OpenAI.\n\nTwo bugs let us take over ChatGPT/Codex accounts of OpenAI employees (+some unaffiliated users) and reach connected services: Outlook, Slack, GitHub, etc.\n\nWe proved it with a PR in OpenAI’s internal codebase . It took us <72h. 🧵",
+   "date": 1789699433,
+   "media": [
+    {
+     "type": "image",
+     "src": "https://pbs.twimg.com/media/HSdxlQEbYAEf-EP.jpg?name=orig",
+     "ratio": 0.525
+    }
+   ],
+   "links": []
+  }
+ ],
+ "article": {
+  "title": "بشنو از یه ماجرای عجیب امنیتی؛ یه پژوهشگر به اسم s1r1us رو کرده که روز ۲۵ جولای موفق شده قفل دم‌ودستگاه خود OpenAI رو باز کنه و سیستم‌هاشون رو بزنه",
+  "source_title": "On July 25, we hacked OpenAI.",
+  "body": [
+   "رفیق، بشنو از یه ماجرای عجیب امنیتی؛ یه پژوهشگر به اسم s1r1us رو کرده که روز ۲۵ جولای موفق شده قفل دم‌ودستگاه خود OpenAI رو باز کنه و سیستم‌هاشون رو بزنه. قضیه از این قراره که این بنده خدا با پیدا کردن دو تا باگ اساسی، کنترل اکانت‌های چت‌جی‌پی‌تی و کدکس کارمندای شرکت رو به دست گرفته و از اونجا سرک کشیده به سرویس‌های متصلشون مثل گیت‌هاب، اسلک و اوت‌لوک. جالب‌تر اینکه کل این سناریوی نفوذ زیر ۷۲ ساعت جمع شده و طرف برای اثبات قضیه، مستقیم توی سورس‌کد و پایگاه کد داخلی OpenAI یه پول‌ریکوئست ثبت کرده تا جا برای هیچ انکاری نمونه."
+  ],
+  "why": "وقتی غول بلامنازع هوش مصنوعی با اون همه کبکبه و دبدبه تو سه روز از طریق دسترسی کارمنداش به سورس‌کدش نفوذ می‌شه، زنگ خطریه که نشون میده زنجیره امنیت ابری چقدر می‌تونه شکننده باشه.",
+  "tags": [
+   "اوپن‌ای‌آی",
+   "امنیت"
+  ]
+ },
+ "updated": "2026-10-25T12:26:29+00:00",
+ "gholam_checked": "2026-10-25T12:26:29+00:00"
+}

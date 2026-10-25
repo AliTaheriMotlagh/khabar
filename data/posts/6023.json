@@ -2,16 +2,23 @@
  "id": 6023,
  "url": "https://t.me/dlmehr/6023",
  "date": "2026-10-21T17:09:17+00:00",
- "edited": true,
- "views": "167",
  "text": "https://fxtwitter.com/_rockt/status/2112944981769928752?s=52&t=F41Qa04r48Mef_j_XjBneQ",
  "forwarded_from": null,
  "digest": false,
  "hash": "2d0df6bc47a0",
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/_rockt/status/2112944981769928752?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+  "site": "🧵 Thread • FxTwitter",
+  "title": "Tim Rocktäschel (@_rockt)",
+  "description": "We are releasing our first model, Flint, a best-in-class local OSS coding model that runs at 150+ tokens/s on an @nvidia DGX Spark and 125+ tokens/s on a MacBook Pro M4—developed from scratch in less than four months with help from @Recursive_SI's autoresearch…",
+  "image": "https://cdn4.telesco.pe/file/LBX3rv1ARkBu7tr-FUAVrT64CVb4v3uhRTw6WUMAfWQBoh1fD2TAm7oB01zdi9Gl7oxu9Pqs45FWBSjAewt-4fH9t2POxgFanEosYZEyp0pSjWPkh2UDXwESFByYzTufPXT_SCCgMsN4NTJwaI5TJoLGRuZbDdg96nNmDHx09zsNsj6Mew7ZVZfBHoyTiL0vYJ0ghCoMKDUwlAafyc1fjBzlYMOeEZnaCgI61M-Zgteambr-ywNyp1R0gGGhZYBVoOYLB-suX0WunEjsRORIhdtrSlbd1uKIhXjkF20jm69etb89i9Cnzq4Boa6SLEPfV_rly5rLGOTMch6KnNCVZw.jpg"
+ },
  "gholam": {
   "text": "رفیق، بچه‌های Recursive_SI رسماً گل کاشتن و از اولین مدلشون به اسم Flint رونمایی کردن که یه غول متن‌باز مخصوص کدنویسی روی سیستم شخصیه. قشنگی ماجرا اینجاست که این مدل رو با کمک سیستم تحقیق خودکار خودشون ظرف کمتر از چهار ماه از صفر ساختن و حسابی تر و تمیز از آب دراومده. از نظر سرعت هم رو دست نداره و روی مک‌بوک پرو M4 بیش از ۱۲۵ توکن بر ثانیه و روی پردازنده‌های انویدیا بالای ۱۵۰ توکن خروجی میده که یعنی دو برابر بقیه هم‌رده‌هاشه.\n\nچرا مهمه؟ اهمیتش اینه که برنامه‌نویس‌ها بدون نیاز به اینترنت و اشتراک‌های گرون ابری، می‌تونن مستقیم روی لپ‌تاپ خودشون با نهایت سرعت و امنیت کد بزنن.",
   "date": "2026-10-21T17:09:31+00:00"
  },
+ "gholam_checked": "2026-10-24T23:03:10+00:00",
  "links": [
   {
    "kind": "tweet",
@@ -72,18 +79,6 @@
    }
   }
  ],
- "media": [],
- "preview": {
-  "url": "https://fxtwitter.com/_rockt/status/2112944981769928752?s=52&t=F41Qa04r48Mef_j_XjBneQ",
-  "site": "🧵 Thread • FxTwitter",
-  "title": "Tim Rocktäschel (@_rockt)",
-  "description": "We are releasing our first model, Flint, a best-in-class local OSS coding model that runs at 150+ tokens/s on an @nvidia DGX Spark and 125+ tokens/s on a MacBook Pro M4—developed from scratch in less than four months with help from @Recursive_SI's autoresearch…",
-  "image": {
-   "src": "media/6023/preview.webp",
-   "width": 800,
-   "height": 450
-  }
- },
  "article": {
   "title": "بچه‌های Recursive_SI رسماً گل کاشتن و از اولین مدلشون به اسم Flint رونمایی کردن که یه غول متن‌باز مخصوص کدنویسی روی سیستم شخصیه",
   "source_title": "We are releasing our first model, Flint, a best-in-class local OSS coding model that runs at 150+ tokens/s on an @nvidia DGX Spark and 125+…",
@@ -96,6 +91,5 @@
    "انویدیا"
   ]
  },
- "updated": "2026-10-24T23:03:10+00:00",
- "gholam_checked": "2026-10-24T23:03:10+00:00"
+ "updated": "2026-10-25T11:53:53+00:00"
 }

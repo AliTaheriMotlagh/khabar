@@ -2,16 +2,23 @@
  "id": 6018,
  "url": "https://t.me/dlmehr/6018",
  "date": "2026-10-21T14:13:27+00:00",
- "edited": true,
- "views": "166",
  "text": "https://fxtwitter.com/nvidiahealth/status/2112906924933156940?s=52&t=F41Qa04r48Mef_j_XjBneQ",
  "forwarded_from": null,
  "digest": false,
  "hash": "0483e5df3c73",
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/nvidiahealth/status/2112906924933156940?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+  "site": "🧵 Thread • FxTwitter",
+  "title": "NVIDIA Healthcare (@NVIDIAHealth)",
+  "description": "🧬\nDesign proteins faster and send fewer, better candidates to the lab.\nIntroducing RFD4-Proteina, a new NVIDIA BioNeMo open model co-developed with @UWproteindesign.\n▫️\nFast: 13× faster generation than RFdiffusion3 at 200 residues\n▫️\nSmart: state-of-the…",
+  "image": null
+ },
  "gholam": {
   "text": "رفیق، انویدیا با همکاری برو‌بچه‌های دانشگاه واشنگتن یه مدل هوش مصنوعی خفن و متن‌باز به اسم RFD4-Proteina رو کرده که کارش طراحی پروتئینه. این ابزار جدید سرعت تولید پروتئین‌های ۲۰۰ آمینواسیدی رو نسبت به نسل قبلی یعنی RFdiffusion3 قشنگ ۱۳ برابر برده بالا و کلی تو وقت صرفه‌جویی می‌کنه. از اون گذشته، توی بیش از ۱۲ تا آزمایش و تسک مختلف طراحی پروتئین حسابی ترکونده و بهترین نتیجه‌ها رو ثبت کرده. دانشمندا هم می‌تونن ورودی‌ها رو قشنگ دستکاری کنن و روی مساله‌های سخت‌تر، زور پردازشی بیشتری بهش بدن تا فقط بهترین گزینه‌ها بره تو دل آزمایشگاه.\n\nاهمیتش اینه که کشف داروهای جدید و درمان بیماری‌های سخت رو چند سال میندازه جلو و جلوی کلی هزینه و آزمایش الکی رو می‌گیره.",
   "date": "2026-10-21T14:13:44+00:00"
  },
+ "gholam_checked": "2026-10-24T23:03:11+00:00",
  "links": [
   {
    "kind": "tweet",
@@ -60,14 +67,6 @@
    "text": "Protein design is a search problem. Choose amino acids for an eight-residue protein sequence and more than 25 billion combinations are possible. Choose amino acids for a 100-residue protein sequence and the number of possibilities exceeds the number of atoms in the observable universe. Somewhere in that space is a protein that opens a path to a new therapy. There are too many combinations to search exhaustively, so finding it depends on knowing where to look.\nRFD4-Proteina, an NVIDIA BioNeMo open model co-developed with the Institute for Protein Design at the University of Washington’s School of Medicine, navigates that space using patterns learned from nature. It co-designs protein sequences and all-atom structures, and uses reward-guided inference-time search to focus compute on the most promising candidates.\nThis tutorial shows computational biologists, ML engineers and drug discovery researchers how to design protein binder candidates against PD-L1, an oncology target, using reward-guided inference-time search and introduces experimental validation results across design tasks.\nYou can access RFD4-Proteina in two ways:\n- Choose the open model for training, inference, method development, and direct control over sampling code or\n- Choose the NIM microservice for rapid inference deployment with an HTTP interface\nBuilding on Proteina-Complexa’s partially latent approach, RFD4-Proteina combines explicit backbone coordinates with latent representation, learned sequence and atomistic variables. Its autoencoder decoder produces the sequence and all-atom structure together, removing the separate inverse-folding handoff to a model such as ProteinMPNN.\n- Open model\n  - Supported Linux GPU host and Python 3.12; follow the repository setup guide and use a supported NVIDIA GPU.\n  - Model cache: Setup downloads the Hugging Face bundle automatically; set HF_HOME only if you want a different cache directory.\n- NIM\n  - Self-host: x86_64 or arm64 Linux meeting the NIM prerequisites, Docker, NVIDIA Driver, NVIDIA Container Toolkit, and an NGC API key.\n  - NIM API endpoint (not recommended for production runs): HTTP access through NVIDIA build.nvidia.com via Shell and Python scripts, no local GPU or model installation required.\nThe search loop shown in Figure 1, above, is where RFD4-Proteina focuses its compute.\nDuring inference-time reasoning search, the model denoises generation trajectories to obtain structures, scores these designs, retains and branches promising partial states, and continues until the generation criteria are reached.\nRewards can measure geometry, interactions, or independent prediction confidence. This kind of extra search optimizes designs against a specified objective to yield higher-scoring designs. Later in this tutorial, you will see how a user can enable this functionality through the open model and the NIM.\nRFD4-Proteina is faster and uses less memory than RFD3 for several reasons:\n- It works on a residue-level latent representation instead of atom-level, which avoids memory blow-up.\n- Engineering of the diffusion process cuts sampling from about 400 steps in Proteina-Complexa to 60, and computation is concentrated on the parts of the process that matter most thanks to reasoning capabilities in the model.\n- Inference-time search is also faster, since the oracles (OF3 and physics methods like tmol) are CUDA-accelerated.\n- The model and kernels were co-designed with the cuEquivariance and BioNeMo Inference Runtime (BIR) teams for speed and scalability.\nThe workflow in Figure 3, above, demonstrates how to use RFD4-Proteina to go from a scientific objective to candidates for experimental testing. An agent can coordinate these tools and track results, while scientists define the objectives and use experimental evidence to guide the next round.\nBegin by defining the criteria and requirements for generation. For example, RFD4-Proteina expects users to define what may change, what must remain fixed, and computational and experimental success criteria.\nUse AtomWorks to generate /manipulate the input data. AtomWorks is the molecular data layer used to prepare structures and design annotations for RFD4-Proteina. Its Python and PyMOL workflows prepare fixed atoms, designable residues, hotspots, and molecular context. Preserve the supplied ligand or motif chemistry when designing surrounding protein.\nBoth the open model and NIM accept annotated CIFs or a condition specification plus its source structure. The specification below fixes the target and defines the new binder.\nThe repository’s cropped PD-L1 structure from PDB 5O45 serves as the target. Fix the target’s sequence and backbone coordinates, allow its side chains to repack, and direct binder generation toward hotspot atoms on Tyr56, Met115, and Tyr123. The new binder has 100–150 residues, with free sequence and coordinates.\nClone the repository, then run the examples from its root. This writes pdl1.json; both paths use the same target CIF and condition"
   }
  ],
- "media": [],
- "preview": {
-  "url": "https://fxtwitter.com/nvidiahealth/status/2112906924933156940?s=52&t=F41Qa04r48Mef_j_XjBneQ",
-  "site": "🧵 Thread • FxTwitter",
-  "title": "NVIDIA Healthcare (@NVIDIAHealth)",
-  "description": "🧬\nDesign proteins faster and send fewer, better candidates to the lab.\nIntroducing RFD4-Proteina, a new NVIDIA BioNeMo open model co-developed with @UWproteindesign.\n▫️\nFast: 13× faster generation than RFdiffusion3 at 200 residues\n▫️\nSmart: state-of-the…",
-  "image": null
- },
  "article": {
   "title": "انویدیا با همکاری برو‌بچه‌های دانشگاه واشنگتن یه مدل هوش مصنوعی خفن و متن‌باز به اسم RFD4-Proteina رو کرده که کارش طراحی پروتئینه",
   "source_title": "🧬 Design proteins faster and send fewer, better candidates to the lab.",
@@ -80,6 +79,5 @@
    "سلامت"
   ]
  },
- "updated": "2026-10-24T23:03:11+00:00",
- "gholam_checked": "2026-10-24T23:03:11+00:00"
+ "updated": "2026-10-25T11:53:53+00:00"
 }

@@ -1,0 +1,68 @@
+{
+ "id": 5194,
+ "url": "https://t.me/dlmehr/5194",
+ "date": "2026-09-08T16:50:50+00:00",
+ "text": "https://fxtwitter.com/magicailabs/status/2097356551032033478?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+ "forwarded_from": null,
+ "digest": false,
+ "hash": "ef93d653adf8",
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/magicailabs/status/2097356551032033478?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+  "site": "🧵 Thread • FxTwitter",
+  "title": "Magic (@magicailabs)",
+  "description": "Frontier pretraining is said to be a big-lab-only game. We don’t have 100k chips yet, so there’s only one way: algorithmic efficiency. Our new recipe matches DeepSeek V4 Pro’s pretrain using 50x less compute – that’s roughly half the FLOPs used for GPT3,…",
+  "image": "https://cdn4.telesco.pe/file/J_7-IvhEdYpmhO7Cfh9_YaC9o3t-cuJB5LytWhhOQj0UyWXKkDIR-0lRRnL9E_YIS6hvvd87ljSbys-ewT7FaVzUo4FJEzxP4jqAH85huqYCntajOyaWKWJiSESCwoT_cANjiGXdY9Y2IiVw1X55ItXAKWj7Lndj4it_C8RaNwkUzAIQMsSnBbC41_vqaHQwJA9sEsvwAPh2nAKNkYD9tTXvnDcnAqiuHUhdcJF1_Rm5we3E9CO552BaNhgovAfLWIisHhu9_WD0dMl-Is8L8qtfKHgQJRC-MLZYzrTUdowIQOHEuYlOIVb6mWyJmIhIBlPnbPNnSoyqh6xiTo8MvQ.jpg"
+ },
+ "gholam": {
+  "text": "رفیق، تا دیروز همه می‌گفتن آموزش دادنِ مدل‌های لبه‌ی فناوری فقط کار غول‌های گردن‌کلفتیه که صد هزار تا چیپ خفن دارن، اما بچه‌های استارتاپ مجیک (Magic) قشنگ زدند زیر میز! اونا بدون داشتن اون همه سخت‌افزار غول‌آسا و فقط با اتکا به کارایی الگوریتمی، فرمولی پیاده کردن که با ۵۰ برابر پردازش کمتر، قدرتش به پای پیش‌آموزش مدل DeepSeek V4 Pro می‌رسه. ته ماجرا اینه که کل قضیه رو با نصف توان محاسباتی لازم برای GPT-3 و هزینه‌ای در حدود ۵۰۰ هزار دلار روی تراشه‌های GB200 جمع‌وجور کردن و تموم شد رفت.\n\nچرا مهمه؟ اهمیتش اینه که انحصار غول‌های فناوری رو می‌شکنه و نشون میده با خلاقیت و بهینه‌سازی الگوریتم، میشه بدون سرمایه‌های نجومی هم شاهکار خلق کرد.",
+  "date": "2026-09-08T16:51:03+00:00"
+ },
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/magicailabs/status/2097356551032033478",
+   "domain": "x.com",
+   "author": {
+    "name": "Magic",
+    "handle": "magicailabs",
+    "avatar": "https://pbs.twimg.com/profile_images/1530221733847900161/0B7f0QHH_200x200.jpg"
+   },
+   "text": "Frontier pretraining is said to be a big-lab-only game. We don’t have 100k chips yet, so there’s only one way: algorithmic efficiency. Our new recipe matches DeepSeek V4 Pro’s pretrain using 50x less compute – that’s roughly half the FLOPs used for GPT3, or ~$0.5M on GB200.\n\nhttp://magic.dev/blog/pretraining",
+   "date": 1788883743,
+   "media": [
+    {
+     "type": "image",
+     "src": "https://pbs.twimg.com/media/HRtI2pQbEAAQfs8.jpg?name=orig",
+     "ratio": 0.5625
+    }
+   ],
+   "links": [
+    "http://magic.dev/blog/pretraining"
+   ]
+  },
+  {
+   "kind": "link",
+   "url": "https://magic.dev/blog/pretraining",
+   "domain": "magic.dev",
+   "title": ">10x More Efficient Pretraining — Magic",
+   "description": "Research update on compute-efficient pretraining and scaling to trillion-parameter models.",
+   "image": "https://magic.dev/blog/pretraining/hero.jpg",
+   "site": "magic.dev"
+  }
+ ],
+ "article": {
+  "title": "تا دیروز همه می‌گفتن آموزش دادنِ مدل‌های لبه‌ی فناوری فقط کار غول‌های گردن‌کلفتیه که صد هزار تا چیپ خفن دارن، اما بچه‌های استارتاپ مجیک (Magic) قشنگ زدند زیر میز",
+  "source_title": "Frontier pretraining is said to be a big-lab-only game. We don’t have 100k chips yet, so there’s only one way: algorithmic efficiency. Our…",
+  "body": [
+   "رفیق، تا دیروز همه می‌گفتن آموزش دادنِ مدل‌های لبه‌ی فناوری فقط کار غول‌های گردن‌کلفتیه که صد هزار تا چیپ خفن دارن، اما بچه‌های استارتاپ مجیک (Magic) قشنگ زدند زیر میز! اونا بدون داشتن اون همه سخت‌افزار غول‌آسا و فقط با اتکا به کارایی الگوریتمی، فرمولی پیاده کردن که با ۵۰ برابر پردازش کمتر، قدرتش به پای پیش‌آموزش مدل DeepSeek V4 Pro می‌رسه. ته ماجرا اینه که کل قضیه رو با نصف توان محاسباتی لازم برای GPT-3 و هزینه‌ای در حدود ۵۰۰ هزار دلار روی تراشه‌های GB200 جمع‌وجور کردن و تموم شد رفت."
+  ],
+  "why": "اهمیتش اینه که انحصار غول‌های فناوری رو می‌شکنه و نشون میده با خلاقیت و بهینه‌سازی الگوریتم، میشه بدون سرمایه‌های نجومی هم شاهکار خلق کرد.",
+  "tags": [
+   "تراشه",
+   "استارتاپ"
+  ]
+ },
+ "updated": "2026-10-25T12:27:37+00:00",
+ "gholam_checked": "2026-10-25T12:27:37+00:00"
+}

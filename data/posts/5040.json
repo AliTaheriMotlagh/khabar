@@ -1,0 +1,52 @@
+{
+ "id": 5040,
+ "url": "https://t.me/dlmehr/5040",
+ "date": "2026-08-30T19:51:17+00:00",
+ "text": "https://fxtwitter.com/techmeme/status/2094097970627231969?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+ "forwarded_from": null,
+ "digest": false,
+ "hash": "59eff10c1aef",
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/techmeme/status/2094097970627231969?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+  "site": "FxTwitter",
+  "title": "Techmeme (@Techmeme)",
+  "description": "Sources: OpenAI bought tens of thousands of Macs for RL, Anthropic rents them, Nvidia sees Apple as its main local AI rival as Macs gain traction with AI devs (@aatilley / The Information)\n(Visit Techmeme dot com for the link and full context!)",
+  "image": "https://cdn4.telesco.pe/file/sXPTIxqGG2mW89pXHte92Rw_6gdtL3Y_aL78vAszqtK1xzXeTmg0EppHixL37-yWNu79bXZ3hL_0KeTbqY0a7XzPjmJ0hxHQp-bMMCO9IfaNkYMSA9nqP2xCMS_fZMXD-bgV69lVX1Blo_MAMIVN0gQM66tBwJZx_igOOCpbLppdWn_iQcM8fnf4_DIyX3YE5_BBjMGCIzR7eazyhdJFSDtzWgU6ZHGsfPERiZl70jWKBO7e2nHsYQG9a_ffVQv5uWw62BZhPmiRMhsC62hq1aIqCrOLRYvMFiBlBUugrK9kt_a_kBFs9qbgGyPBK1sGiVT_C5JCT87amgz1uQAuYw.jpg"
+ },
+ "gholam": {
+  "text": "رفیق، قضیه از این قراره که سیستم‌های مک اپل بدجوری توی دل غول‌ها و برنامه‌نویس‌های هوش مصنوعی جا باز کردن. گزارش‌ها نشون می‌ده شرکت OpenAI واسه کارهای یادگیری تقویتی رفته ده‌ها هزار تا مک خریده و از اون طرف هم شرکت Anthropic شروع کرده به اجاره کردن همین دستگاه‌ها تا کارش رو جلو ببره. کار به جایی رسیده که غول تراشه‌سازی یعنی انویدیا، حالا رسماً اپل رو بزرگ‌ترین رقیب خودش توی زمینه هوش مصنوعی محلی و سیستم‌های شخصی می‌بینه.\n\nچرا مهمه؟ اهمیتش اینه که اپل با معماری پردازنده‌هاش داره بی‌سر‌و‌صدا انحصار انویدیا رو توی اجرای مدل‌های هوش مصنوعی روی سیستم‌های توسعه‌دهنده‌ها می‌شکنه.",
+  "date": "2026-08-30T19:51:29+00:00"
+ },
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/Techmeme/status/2094097970627231969",
+   "domain": "x.com",
+   "author": {
+    "name": "Techmeme",
+    "handle": "Techmeme",
+    "avatar": "https://pbs.twimg.com/profile_images/1191943129823399936/ZvfTRAlg_200x200.jpg"
+   },
+   "text": "Sources: OpenAI bought tens of thousands of Macs for RL, Anthropic rents them, Nvidia sees Apple as its main local AI rival as Macs gain traction with AI devs (@aatilley / The Information)\n\n(Visit Techmeme dot com for the link and full context!)",
+   "date": 1788106837,
+   "media": [],
+   "links": []
+  }
+ ],
+ "article": {
+  "title": "قضیه از این قراره که سیستم‌های مک اپل بدجوری توی دل غول‌ها و برنامه‌نویس‌های هوش مصنوعی جا باز کردن",
+  "source_title": "Sources: OpenAI bought tens of thousands of Macs for RL, Anthropic rents them, Nvidia sees Apple as its main local AI rival as Macs gain…",
+  "body": [
+   "رفیق، قضیه از این قراره که سیستم‌های مک اپل بدجوری توی دل غول‌ها و برنامه‌نویس‌های هوش مصنوعی جا باز کردن. گزارش‌ها نشون می‌ده شرکت OpenAI واسه کارهای یادگیری تقویتی رفته ده‌ها هزار تا مک خریده و از اون طرف هم شرکت Anthropic شروع کرده به اجاره کردن همین دستگاه‌ها تا کارش رو جلو ببره. کار به جایی رسیده که غول تراشه‌سازی یعنی انویدیا، حالا رسماً اپل رو بزرگ‌ترین رقیب خودش توی زمینه هوش مصنوعی محلی و سیستم‌های شخصی می‌بینه."
+  ],
+  "why": "اهمیتش اینه که اپل با معماری پردازنده‌هاش داره بی‌سر‌و‌صدا انحصار انویدیا رو توی اجرای مدل‌های هوش مصنوعی روی سیستم‌های توسعه‌دهنده‌ها می‌شکنه.",
+  "tags": [
+   "اپل",
+   "اوپن‌ای‌آی",
+   "آنتروپیک"
+  ]
+ },
+ "updated": "2026-10-25T12:28:32+00:00",
+ "gholam_checked": "2026-10-25T12:28:32+00:00"
+}

@@ -1,0 +1,79 @@
+{
+ "id": 5500,
+ "url": "https://t.me/dlmehr/5500",
+ "date": "2026-09-26T23:09:59+00:00",
+ "text": "https://fxtwitter.com/thermalpastor/status/2103842737032458567?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+ "forwarded_from": null,
+ "digest": false,
+ "hash": "c01f9cf0bdec",
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/thermalpastor/status/2103842737032458567?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+  "site": "FxTwitter",
+  "title": "H (@thermalpastor)",
+  "description": "The scariest thing about Opus 5.5 is that it goes back to fill in the arm realising the lines were dotted.\nQuoting H (@thermalpastor)\nPerformed the same task on Opus 5.5.\nOpus 5.5 performed significantly better but used 10x more tokens. Opus also drew…",
+  "image": null
+ },
+ "gholam": {
+  "text": "ببین رفیق، یه تستی روی مدل هوش مصنوعی Opus 5.5 زدن که بدجوری توجه همه رو جلب کرده؛ قضیه از این قراره که این مدل موقع نقاشی کشیدن، خودش وسط کار متوجه شده خطوط بازو نقطه‌چین بوده و برگشته عقب تا کاملش کنه! یعنی در کمال تعجب خودش خطای خودشو فهمیده و دست به اصلاح زده. از نظر سرعت و تمیزی کار هم سه برابر از مدل رقیبش یعنی Astra سریع‌تر عمل کرده، ولی نکته‌ش اینجاست که واسه این شیرین‌کاری ده برابر بیشتر توکن سوزونده. خلاصه نشون داده توی استدلال بصری و درک جزییات حسابی داره گردوخاک می‌کنه.\n\nاهمیتش اینه که هوش مصنوعی داره به سمتی می‌ره که مثل آدمیزاد اشتباهات لحظه‌ایش رو خودش متوجه بشه و قبل از تحویل کار، خودش درستش کنه.",
+  "date": "2026-09-26T23:10:11+00:00"
+ },
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/thermalpastor/status/2103842737032458567",
+   "domain": "x.com",
+   "author": {
+    "name": "H",
+    "handle": "thermalpastor",
+    "avatar": "https://pbs.twimg.com/profile_images/2107326021720477696/lRtR1mPx_200x200.jpg"
+   },
+   "text": "The scariest thing about Opus 5.5 is that it goes back to fill in the arm realising the lines were dotted.",
+   "date": 1790430170,
+   "media": [
+    {
+     "type": "video",
+     "src": "https://video.twimg.com/amplify_video/2103842697304039424/vid/avc1/1280x720/Va1AdobQiHe7lzZU.mp4?tag=29",
+     "poster": "https://pbs.twimg.com/amplify_video_thumb/2103842697304039424/img/I10lZkY32GD1mdtt.jpg",
+     "ratio": 0.5625,
+     "duration": 15,
+     "gif": false
+    }
+   ],
+   "links": [],
+   "quote": {
+    "author": {
+     "name": "H",
+     "handle": "thermalpastor",
+     "avatar": "https://pbs.twimg.com/profile_images/2107326021720477696/lRtR1mPx_200x200.jpg"
+    },
+    "text": "Performed the same task on Opus 5.5.\n\nOpus 5.5 performed significantly better but used 10x more tokens. Opus also drew 3x faster than Astra.",
+    "date": 1790125029,
+    "media": [
+     {
+      "type": "video",
+      "src": "https://video.twimg.com/amplify_video/2102562560193314817/vid/avc1/1280x720/AkcJiS6tGV_4U_in.mp4?tag=29",
+      "poster": "https://pbs.twimg.com/amplify_video_thumb/2102562560193314817/img/3EWtGQINm5D_5p6K.jpg",
+      "ratio": 0.5625,
+      "duration": 54.5,
+      "gif": false
+     }
+    ],
+    "links": []
+   }
+  }
+ ],
+ "article": {
+  "title": "یه تستی روی مدل هوش مصنوعی Opus 5.5 زدن که بدجوری توجه همه رو جلب کرده؛ قضیه از این قراره که این مدل موقع نقاشی کشیدن، خودش وسط کار متوجه شده خطوط بازو نقطه‌چین بوده و برگشته عقب تا کاملش کنه",
+  "source_title": "The scariest thing about Opus 5.5 is that it goes back to fill in the arm realising the lines were dotted.",
+  "body": [
+   "ببین رفیق، یه تستی روی مدل هوش مصنوعی Opus 5.5 زدن که بدجوری توجه همه رو جلب کرده؛ قضیه از این قراره که این مدل موقع نقاشی کشیدن، خودش وسط کار متوجه شده خطوط بازو نقطه‌چین بوده و برگشته عقب تا کاملش کنه! یعنی در کمال تعجب خودش خطای خودشو فهمیده و دست به اصلاح زده. از نظر سرعت و تمیزی کار هم سه برابر از مدل رقیبش یعنی Astra سریع‌تر عمل کرده، ولی نکته‌ش اینجاست که واسه این شیرین‌کاری ده برابر بیشتر توکن سوزونده. خلاصه نشون داده توی استدلال بصری و درک جزییات حسابی داره گردوخاک می‌کنه."
+  ],
+  "why": "هوش مصنوعی داره به سمتی می‌ره که مثل آدمیزاد اشتباهات لحظه‌ایش رو خودش متوجه بشه و قبل از تحویل کار، خودش درستش کنه.",
+  "tags": [
+   "آنتروپیک"
+  ]
+ },
+ "updated": "2026-10-25T12:25:43+00:00",
+ "gholam_checked": "2026-10-25T12:25:43+00:00"
+}

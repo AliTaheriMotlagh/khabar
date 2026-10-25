@@ -1,0 +1,89 @@
+{
+ "id": 5628,
+ "url": "https://t.me/dlmehr/5628",
+ "date": "2026-10-04T19:44:46+00:00",
+ "text": "https://fxtwitter.com/a16z/status/2105726958021885977?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+ "forwarded_from": null,
+ "digest": false,
+ "hash": "c3da8983ab29",
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/a16z/status/2105726958021885977?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+  "site": "FxTwitter",
+  "title": "a16z (@a16z)",
+  "description": "98% of US households aren't paying for AI yet\nMore charts in State of Markets II: https://www.a16z.news/p/state-of-markets-ii\nQuoting David George (@DavidGeorge83)\nIntroducing our State of Markets pt 2, along with a companion podcast where we unpack the…",
+  "image": "https://cdn4.telesco.pe/file/YctAnmH8N2KUC_WSK3whmHvbOcFae3UEc2EzP7l3O0fqsEl2E0dui_FPYAl5tHt40C4Z1TTnDmORV8xFFp9JbJV19fe4PaCYMD2CFlH0IZj-jxutT1w8LLTymjcdUqX3Z3lM9BRLnBMHmoXQYXwxCudq2-yNljyyANfZ7MlBdrH9WSnl3DC59LNAqkUdhu7agLPlEQRvKeSDAaVNF5illKMgPTYlNLO5mJ1Xc5zlTPbx5JdZC48xSGjIpWw3-wwrLzHD4tJManR2RkjteJlIdX6pd6FE7zKOCxmr_sKe71dCDh3KEmWAMV1jfm_iKV_Pbh4mhs4YNcbGx75uUdmMkQ.jpg"
+ },
+ "gholam": {
+  "text": "رفیق، این روزا همه‌جا جار می‌زنن که دنیا دست هوش مصنوعیه، اما آمار تازه صندوق سرمایه‌گذاری معروف a16z تو گزارش جدیدش حسابی دست خیلیا رو رو کرده. طبق داده‌های این گزارش، هنوز ۹۸ درصد از خونواده‌های آمریکایی حتی یه قرون هم از جیب مبارک واسه خرید اشتراک یا ابزارهای هوش مصنوعی پیاده نشدن. در واقع با وجود میلیاردها دلار پولی که غول‌های فناوری خرج ساخت زیرساخت‌ها کردن، مردم کوچه و بازار یا به همون نسخه‌های مجانی قانع‌ان یا اصلاً هنوز دلیلی ندیدن که واسه‌ش سر کیسه رو شل کنن.\n\nچرا مهمه؟ چون نشون می‌ده این سر و صداها هنوز به زندگی واقعی عامه مردم نرسیده و اگه این شرکت‌ها نتونن ارزش ملموسی بسازن که مردم حاضر بشن براش پول خرج کنن، تو بازگشت سرمایه‌های سنگینشون بدجوری گیر می‌افتن.",
+  "date": "2026-10-04T19:45:01+00:00"
+ },
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/a16z/status/2105726958021885977",
+   "domain": "x.com",
+   "author": {
+    "name": "a16z",
+    "handle": "a16z",
+    "avatar": "https://pbs.twimg.com/profile_images/1919488160125616128/QAZXTMEj_200x200.png"
+   },
+   "text": "98% of US households aren't paying for AI yet\n\nMore charts in State of Markets II: https://www.a16z.news/p/state-of-markets-ii",
+   "date": 1790879403,
+   "media": [
+    {
+     "type": "image",
+     "src": "https://pbs.twimg.com/media/HTkLgjdbIAARwFZ.jpg?name=orig",
+     "ratio": 0.86
+    }
+   ],
+   "links": [
+    "https://www.a16z.news/p/state-of-markets-ii"
+   ],
+   "quote": {
+    "author": {
+     "name": "David George",
+     "handle": "DavidGeorge83",
+     "avatar": "https://pbs.twimg.com/profile_images/2052167548507189248/sxVTXLKs_200x200.jpg"
+    },
+    "text": "Introducing our State of Markets pt 2, along with a companion podcast where we unpack the data and discuss what comes next.\n\nTech is the everything cycle.\n\nSupply: putting the buildout in context, just passed railroads as % of GDP. The wisdom of Elon is real: the factory (or the datacenter!) is the product.\n\nDemand: diffusion is so, so early. Median AI vendor spending in the top 1% of companies is 8x that of the top 10%. Only about 30% of S&P 500 companies report a quantified AI impact, which means there’s a substantial opportunity in connecting models to a company's data and workflows. Diffusion into companies is one of the main themes of the next 5 years.\n\nWe’re entering the agent work period. Only a few million users today, but applicable to billions of internet users with massive surplus created. META/GOOG monetize US users at $200+ per year today. Agent opportunity is much higher.\n\nMega-trends the next 5 years: Consumer agents, Robotics, Autonomy, AI x bio, Personal health, Diffusion into enterprise, New era of American Dynamism.\n\nMuch more in our SoM report here - https://www.a16z.news/p/state-of-markets-ii\n\n@a16z @sarahdingwang @aleximm @santiago__rdz",
+    "date": 1790779798,
+    "media": [
+     {
+      "type": "image",
+      "src": "https://pbs.twimg.com/media/HTePLmubYAEbdU4.jpg?name=orig",
+      "ratio": 0.8585
+     },
+     {
+      "type": "image",
+      "src": "https://pbs.twimg.com/media/HTePNLLbcAA5dLa.jpg?name=orig",
+      "ratio": 0.9575
+     }
+    ],
+    "links": [
+     "https://www.a16z.news/p/state-of-markets-ii"
+    ]
+   }
+  },
+  {
+   "kind": "link",
+   "url": "https://www.a16z.news/p/state-of-markets-ii",
+   "domain": "a16z.news",
+   "title": "State of Markets II",
+   "description": "100+ Charts On The State of Markets (1H’26). It's the best. You wouldn't want to miss it.",
+   "image": "https://substackcdn.com/image/fetch/$s_!jwyB!,w_1200,h_675,c_fill,f_jpg,q_auto:good,fl_progressive:steep,g_auto/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F712473ca-6145-424c-9f0e-f48b98fb0a3a_1460x750.png",
+   "site": "a16z.news"
+  }
+ ],
+ "article": {
+  "title": "این روزا همه‌جا جار می‌زنن که دنیا دست هوش مصنوعیه، اما آمار تازه صندوق سرمایه‌گذاری معروف a16z تو گزارش جدیدش حسابی دست خیلیا رو رو کرده",
+  "source_title": "98% of US households aren't paying for AI yet",
+  "body": [
+   "رفیق، این روزا همه‌جا جار می‌زنن که دنیا دست هوش مصنوعیه، اما آمار تازه صندوق سرمایه‌گذاری معروف a16z تو گزارش جدیدش حسابی دست خیلیا رو رو کرده. طبق داده‌های این گزارش، هنوز ۹۸ درصد از خونواده‌های آمریکایی حتی یه قرون هم از جیب مبارک واسه خرید اشتراک یا ابزارهای هوش مصنوعی پیاده نشدن. در واقع با وجود میلیاردها دلار پولی که غول‌های فناوری خرج ساخت زیرساخت‌ها کردن، مردم کوچه و بازار یا به همون نسخه‌های مجانی قانع‌ان یا اصلاً هنوز دلیلی ندیدن که واسه‌ش سر کیسه رو شل کنن."
+  ],
+  "why": "چون نشون می‌ده این سر و صداها هنوز به زندگی واقعی عامه مردم نرسیده و اگه این شرکت‌ها نتونن ارزش ملموسی بسازن که مردم حاضر بشن براش پول خرج کنن، تو بازگشت سرمایه‌های سنگینشون بدجوری گیر می‌افتن.",
+  "tags": []
+ },
+ "updated": "2026-10-25T12:24:58+00:00",
+ "gholam_checked": "2026-10-25T12:24:58+00:00"
+}

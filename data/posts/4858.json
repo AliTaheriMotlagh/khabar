@@ -1,0 +1,69 @@
+{
+ "id": 4858,
+ "url": "https://t.me/dlmehr/4858",
+ "date": "2026-08-21T06:14:01+00:00",
+ "text": "https://fxtwitter.com/davis7/status/2090669483740279155?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+ "forwarded_from": null,
+ "digest": false,
+ "hash": "f714d4e89bd0",
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/davis7/status/2090669483740279155?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+  "site": "🧵 Thread • FxTwitter",
+  "title": "Ben Davis (@davis7)",
+  "description": "99% sure it's GLM-5.x, all the evidence points to it (same video encoder, same tokenizer, style matches, same audio rejection, etc.)\nThe stuff about their RL env in the GLM-5.3 announcement seemed really cool and like it could go somewhere, did not expect…",
+  "image": "https://cdn4.telesco.pe/file/lj_o1TZfPL2bfTpV7i6liZpxgPsVMMGsNBjXDn-Xojdl9jzlfsstfCKHJgYuC8vVJ8jX2NAcVMeZYi3zKHk35fqYGR13RKfp6MkPFAog0LwNoNF3pNPNABYz8yI39VqvwUWql3PVWQ4xk3-qVZDnmMptxyNnDmuMuwHUmWckjox9upGxKTQCQclUD6DhnZon9InbcI59eslN-ey0Vcv-TrFnxmt62xtjb3LuDGycMT-0qvCm3bZLTUx7jh2VwINdtc0IgCfVUA3HOKZ23csEb1TQStN68n-X4f_KiG4MdgLGSZsTkF79TYG9GQOR5NvyuPgfDs-OdiPzLtsM6nHfcA.jpg"
+ },
+ "gholam": {
+  "text": "ببین رفیق، این بن دیویس یه مدل هوش مصنوعی ناشناس و خفن رو زیر ذره‌بین برده و ۹۹ درصد مطمئنه که همون GLM-5.x چینی‌ها باشه، چون تمام شواهد از انکودر ویدیو و توکنایزر تا رفتارش دقیقاً با اون جوره. طرف میگه تست‌های اولیه‌ش رسماً فک‌برانداز بوده و توی بنچمارک برنامه‌نویسی DeepSWE امتیاز خیره‌کننده بالای ۸۰ درصد گرفته، در حالی که غول‌هایی مثل GPT به ۵۲ درصد و Fable به ۶۵ درصد رسیدن. خلاصه این پدیده جدید انقدر گردوخاک کرده که دیویس میگه کمپانی‌های بزرگی مثل OpenAI و آنتروپیک باید سریع‌تر تکونی به خودشون بدن و مدل‌های تازه‌شون رو رو کنن، چون این مدعی تازه رسماً استانداردهای بازار رو جابه‌جا کرده.\n\nاهمیتش اینه که نشون میده رقبای تازه نفس دارن غول‌های اصلی بازار هوش مصنوعی رو توی بنچمارک‌های سنگین و واقعی کدنویسی با اختلاف زیاد جا می‌ذارن.",
+  "date": "2026-08-21T06:14:11+00:00"
+ },
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/davis7/status/2090669483740279155",
+   "domain": "x.com",
+   "author": {
+    "name": "Ben Davis",
+    "handle": "davis7",
+    "avatar": "https://pbs.twimg.com/profile_images/2052289378706423808/g5qAyVi6_200x200.jpg"
+   },
+   "text": "99% sure it's GLM-5.x, all the evidence points to it (same video encoder, same tokenizer, style matches, same audio rejection, etc.)\n\nThe stuff about their RL env in the GLM-5.3 announcement seemed really cool and like it could go somewhere, did not expect it to get this good this fast but here we are\n\nThis thing seems absurdly good. First tests I've done have all been excellent. Already done a couple of back to back tests against GPT/Fable. It's actually doing better than they are...\n\nSeems like OpenAI and Anthropic are gonna have to start dropping models again, because this thing is (or at least seems to be) the new state of the art...",
+   "date": 1787289422,
+   "media": [],
+   "links": [],
+   "quote": {
+    "author": {
+     "name": "Ben Davis",
+     "handle": "davis7",
+     "avatar": "https://pbs.twimg.com/profile_images/2052289378706423808/g5qAyVi6_200x200.jpg"
+    },
+    "text": "I ran this thing through 10 tasks on DeepSWE (so there could be a ton of variance in it's real score, this is a subset), but uh...\n\ngpt-5.6-sol: 52%\nfable: 65%\nwhatever the hell this is: 80% (was a near miss on the \"x\"s so actually over 80%)\n\nI am very confused",
+    "date": 1787286018,
+    "media": [
+     {
+      "type": "image",
+      "src": "https://pbs.twimg.com/media/HQN_PXYbEAAmXRc.png?name=orig",
+      "ratio": 0.4771
+     }
+    ],
+    "links": []
+   }
+  }
+ ],
+ "article": {
+  "title": "این بن دیویس یه مدل هوش مصنوعی ناشناس و خفن رو زیر ذره‌بین برده و ۹۹ درصد مطمئنه که همون GLM-5.x چینی‌ها باشه، چون تمام شواهد از انکودر ویدیو و توکنایزر تا رفتارش دقیقاً با اون جوره",
+  "source_title": "99% sure it's GLM-5.x, all the evidence points to it (same video encoder, same tokenizer, style matches, same audio rejection, etc.)",
+  "body": [
+   "ببین رفیق، این بن دیویس یه مدل هوش مصنوعی ناشناس و خفن رو زیر ذره‌بین برده و ۹۹ درصد مطمئنه که همون GLM-5.x چینی‌ها باشه، چون تمام شواهد از انکودر ویدیو و توکنایزر تا رفتارش دقیقاً با اون جوره. طرف میگه تست‌های اولیه‌ش رسماً فک‌برانداز بوده و توی بنچمارک برنامه‌نویسی DeepSWE امتیاز خیره‌کننده بالای ۸۰ درصد گرفته، در حالی که غول‌هایی مثل GPT به ۵۲ درصد و Fable به ۶۵ درصد رسیدن. خلاصه این پدیده جدید انقدر گردوخاک کرده که دیویس میگه کمپانی‌های بزرگی مثل OpenAI و آنتروپیک باید سریع‌تر تکونی به خودشون بدن و مدل‌های تازه‌شون رو رو کنن، چون این مدعی تازه رسماً استانداردهای بازار رو جابه‌جا کرده."
+  ],
+  "why": "نشون میده رقبای تازه نفس دارن غول‌های اصلی بازار هوش مصنوعی رو توی بنچمارک‌های سنگین و واقعی کدنویسی با اختلاف زیاد جا می‌ذارن.",
+  "tags": [
+   "چین",
+   "اوپن‌ای‌آی",
+   "آنتروپیک"
+  ]
+ },
+ "updated": "2026-10-25T12:29:41+00:00",
+ "gholam_checked": "2026-10-25T12:29:41+00:00"
+}

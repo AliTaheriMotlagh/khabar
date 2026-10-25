@@ -2,16 +2,23 @@
  "id": 5981,
  "url": "https://t.me/dlmehr/5981",
  "date": "2026-10-19T20:00:43+00:00",
- "edited": true,
- "views": "190",
  "text": "https://fxtwitter.com/spisallyouneed/status/2112242023805964327?s=52&t=F41Qa04r48Mef_j_XjBneQ",
  "forwarded_from": null,
  "digest": false,
  "hash": "1cfc4cf4e1da",
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/spisallyouneed/status/2112242023805964327?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+  "site": "🧵 Thread • FxTwitter",
+  "title": "Sam Pasupalak (@spisallyouneed)",
+  "description": "Introducing SKY-001, the first Engineering World Model.\nOn CAD and BIM tasks, it beats GPT-6 Astra and every frontier model we tested:\n-> 51-125x faster\n- > 150-210x cheaper\n-> Higher IOU than all frontier models\nSKY-001 lets you dream a physical object…",
+  "image": null
+ },
  "gholam": {
   "text": "رفیق، سم پاسوپالاک از یه مدل هوش مصنوعی تازه به اسم SKY-001 رونمایی کرده و مدعی شده اولین «مدل جهان مهندسی» دنیاست که می‌تونه هر قطعه و جسم فیزیکی رو قبل از ساختنش قشنگ مجسم و طراحی کنه. این پروژه که حاصل ۱۸ ماه عرق ریختن بچه‌های آزمایشگاه سابق مالوبا هست، تو کارهای تخصصی CAD و BIM گردوخاک عجیبی راه انداخته و حتی مدل‌های خفنی مثل GPT-6 Astra رو جا گذاشته. از نظر بازدهی هم آمار عجیبی داده؛ می‌گه بین ۵۱ تا ۱۲۵ برابر سریع‌تر و ۱۵۰ تا ۲۱۰ برابر ارزون‌تر از رقباش کار می‌کنه و دقتش هم خیلی بالاتره. سازنده‌هاش معتقدن این سیستم قراره اولین «مهندس عمومی هوش مصنوعی» بشه و ستون فقرات خطوط تولید و کارخونه‌های کاملاً خودکار رو بچینه.\n\nچرا مهمه؟ چون اگه این ادعاها درست از آب دربیاد، فرآیند پرخرج و زمان‌بر طراحی قطعات صنعتی یک‌شبه متحول می‌شه و راه رو برای تولید کاملاً خودکار و بی‌دردسر باز می‌کنه.",
   "date": "2026-10-19T20:01:01+00:00"
  },
+ "gholam_checked": "2026-10-24T23:11:42+00:00",
  "links": [
   {
    "kind": "tweet",
@@ -46,14 +53,6 @@
    "links": []
   }
  ],
- "media": [],
- "preview": {
-  "url": "https://fxtwitter.com/spisallyouneed/status/2112242023805964327?s=52&t=F41Qa04r48Mef_j_XjBneQ",
-  "site": "🧵 Thread • FxTwitter",
-  "title": "Sam Pasupalak (@spisallyouneed)",
-  "description": "Introducing SKY-001, the first Engineering World Model.\nOn CAD and BIM tasks, it beats GPT-6 Astra and every frontier model we tested:\n-> 51-125x faster\n- > 150-210x cheaper\n-> Higher IOU than all frontier models\nSKY-001 lets you dream a physical object…",
-  "image": null
- },
  "article": {
   "title": "سم پاسوپالاک از یه مدل هوش مصنوعی تازه به اسم SKY-001 رونمایی کرده و مدعی شده اولین «مدل جهان مهندسی» دنیاست که می‌تونه هر قطعه و جسم فیزیکی رو قبل از ساختنش قشنگ مجسم و طراحی کنه",
   "source_title": "Introducing SKY-001, the first Engineering World Model.",
@@ -65,6 +64,5 @@
    "اوپن‌ای‌آی"
   ]
  },
- "updated": "2026-10-24T23:11:42+00:00",
- "gholam_checked": "2026-10-24T23:11:42+00:00"
+ "updated": "2026-10-25T11:54:06+00:00"
 }

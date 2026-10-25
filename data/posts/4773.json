@@ -1,0 +1,67 @@
+{
+ "id": 4773,
+ "url": "https://t.me/dlmehr/4773",
+ "date": "2026-08-16T22:49:15+00:00",
+ "text": "https://fxtwitter.com/marfinxx/status/2088756456661401946?s=20",
+ "forwarded_from": "Amin",
+ "digest": false,
+ "hash": "e925a03fddb2",
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/marfinxx/status/2088756456661401946?s=20",
+  "site": "FxTwitter",
+  "title": "marfin (@marfinxx)",
+  "description": "Stanford researchers proved why static prompts break autonomous agents\nIn a breakthrough paper on Agentic Context Engineering, Stanford researchers exposed two fatal failure modes in agent architectures: brevity bias and context collapse. Iterative full…",
+  "image": "https://cdn4.telesco.pe/file/huJWUmHOlAyhAkvUInU2r8URzcDtNc4rzj276oqD78rtmM4rxeCpRMMd9yAB7Cn4ZPkNd4O9MaT5-wOb0h8KfuVkclbciAfLosWr_VyFgEtUap3sQMGDy9yy5FOwetWd31WLjZ_Nz3CCh443Yr8114iSYQ9hSxnux9mx_8MUITFiY5lHdbrtAijAVjqw0Swl7gSQNefkKgxrdBiUAP5uLR36vmNW7OMrNSJDGQOg_dzTakzUCVV-tOhM6d3NbD2ouhY9cS1604I75RWLXDRJvVkwq85ZL9PNC-gibtFaITIsi07Wex6rpYBFYEicalCElj4oPTO-e4qZdxMuIj8ZiA.jpg"
+ },
+ "gholam": {
+  "text": "ببین رفیق، بچه‌های خفن دانشگاه استنفورد تو یه تحقیق تازه نشون دادن چرا پرامپت‌های ثابت و بازنویسی کاملشون، ایجنت‌های هوش مصنوعی رو کَلّه‌پا می‌کنه و باعث افت شدید دقتشون میشه. اونا فهمیدن بازنویسی مکرر پرامپت حافظه مدل رو می‌پرونه، واسه همین یه سیستم سه‌مرحله‌ای هوشمند طراحی کردن که مثل یه دفترچه راهنمای زنده، درس‌ها و استراتژی‌ها رو تیکه‌تیکه و بدون شلوغ‌کاری آپدیت می‌کنه. خروجی کار هم حسابی ترکونده؛ دقت ایجنت‌ها حدود ۱۷ درصد بالا رفته، سرعت تطبیقشون نزدیک ۸۷ درصد بیشتر شده و با مدیریت درست کَش، هزینه‌های مصرف توکن رو بیشتر از ۸۲ درصد کاهش داده.\n\nچرا مهمه؟ اهمیتش اینه که این روش جلوی خنگی و فراموشی ایجنت‌ها رو تو کارهای سنگین و طولانی می‌گیره و مسیر ساخت سیستم‌های واقعاً مستقل و فوق‌العاده ارزون‌تر رو باز می‌کنه.",
+  "date": "2026-08-16T22:49:26+00:00"
+ },
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/marfinxx/status/2088756456661401946",
+   "domain": "x.com",
+   "author": {
+    "name": "marfin",
+    "handle": "marfinxx",
+    "avatar": "https://pbs.twimg.com/profile_images/2055052847058735104/sgiy1goW_200x200.jpg"
+   },
+   "text": "Stanford researchers proved why static prompts break autonomous agents\n\nIn a breakthrough paper on Agentic Context Engineering, Stanford researchers exposed two fatal failure modes in agent architectures: brevity bias and context collapse. Iterative full-prompt overwriting abruptly compressed 18,282 tokens of domain memory down to 122 tokens, causing accuracy to plummet from 66.7% to 57.1%\n\nTheir framework replaces monolithic prompt rewrites with an evolving, delta-updated strategy playbook across three synchronized roles:\n\n01. The Generator (Fast Execution Loop)\nRuns live task trajectories and tool executions in real-time. Flags which strategy bullets were helpful or harmful during inference without waiting for prompt re-optimization\n\n02. The Reflector (Diagnostic Loop)\nAnalyzes trajectory logs to isolate failure points. Translates raw environment errors into structured, atomic operational lessons without touching model weights\n\n03. The Curator (Incremental Playbook Delta)\nMerges candidate delta bullets into the playbook using lightweight deterministic logic. Prunes redundant entries via semantic embeddings to prevent index bloat\n\n04. Hypothesis Verification & Empirical Results\nStanford demonstrated a 17.1% accuracy surge on AppWorld agent tasks and an 86.9% reduction in adaptation latency. Practical testing on production multi-turn coding workflows confirmed the hypothesis: benchmark task completion rose by 14% while token adaptation costs dropped by 70%\n\n05. KV-Cache Serving Efficiency\nLonger curated playbooks did not increase serving costs. Structured prefix ordering delivered a 91.8% KV-cache hit rate, cutting billed input token expenses by 82.6%\n\nTreating context as an incrementally curated playbook bridges real-time execution with continuous self-improvement\n\nRead the complete breakdown in the article below ↓",
+   "date": 1786833321,
+   "media": [
+    {
+     "type": "image",
+     "src": "https://pbs.twimg.com/media/HPyzx88X0AAIxO_.jpg?name=orig",
+     "ratio": 1.249
+    }
+   ],
+   "links": [],
+   "quote": {
+    "author": {
+     "name": "marfin",
+     "handle": "marfinxx",
+     "avatar": "https://pbs.twimg.com/profile_images/2055052847058735104/sgiy1goW_200x200.jpg"
+    },
+    "text": "https://x.com/i/article/2088025394175762432",
+    "date": 1786708995,
+    "media": [],
+    "links": [
+     "https://x.com/i/article/2088025394175762432"
+    ]
+   }
+  }
+ ],
+ "article": {
+  "title": "بچه‌های خفن دانشگاه استنفورد تو یه تحقیق تازه نشون دادن چرا پرامپت‌های ثابت و بازنویسی کاملشون، ایجنت‌های هوش مصنوعی رو کَلّه‌پا می‌کنه و باعث افت شدید دقتشون میشه",
+  "source_title": "Stanford researchers proved why static prompts break autonomous agents",
+  "body": [
+   "ببین رفیق، بچه‌های خفن دانشگاه استنفورد تو یه تحقیق تازه نشون دادن چرا پرامپت‌های ثابت و بازنویسی کاملشون، ایجنت‌های هوش مصنوعی رو کَلّه‌پا می‌کنه و باعث افت شدید دقتشون میشه. اونا فهمیدن بازنویسی مکرر پرامپت حافظه مدل رو می‌پرونه، واسه همین یه سیستم سه‌مرحله‌ای هوشمند طراحی کردن که مثل یه دفترچه راهنمای زنده، درس‌ها و استراتژی‌ها رو تیکه‌تیکه و بدون شلوغ‌کاری آپدیت می‌کنه. خروجی کار هم حسابی ترکونده؛ دقت ایجنت‌ها حدود ۱۷ درصد بالا رفته، سرعت تطبیقشون نزدیک ۸۷ درصد بیشتر شده و با مدیریت درست کَش، هزینه‌های مصرف توکن رو بیشتر از ۸۲ درصد کاهش داده."
+  ],
+  "why": "اهمیتش اینه که این روش جلوی خنگی و فراموشی ایجنت‌ها رو تو کارهای سنگین و طولانی می‌گیره و مسیر ساخت سیستم‌های واقعاً مستقل و فوق‌العاده ارزون‌تر رو باز می‌کنه.",
+  "tags": []
+ },
+ "updated": "2026-10-25T12:30:10+00:00",
+ "gholam_checked": "2026-10-25T12:30:10+00:00"
+}

@@ -1,0 +1,67 @@
+{
+ "id": 5032,
+ "url": "https://t.me/dlmehr/5032",
+ "date": "2026-08-30T15:56:39+00:00",
+ "text": "https://fxtwitter.com/NekoFatcat47609/status/2093979133726605503",
+ "forwarded_from": "Parsa Razavi",
+ "digest": false,
+ "hash": "f9fc01caf84a",
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/NekoFatcat47609/status/2093979133726605503",
+  "site": "FxTwitter - Media 2 / 3",
+  "title": "NeKo fatcat (@NekoFatcat47609)",
+  "description": "Astra is already at SOTA level even with a 10T large model — same input, different creative outputs every time. There are still some bugs in project generation, but overall the quality is top-tier.\n🔥",
+  "image": null
+ },
+ "gholam": {
+  "text": "رفیق، خبر رسیده که مدل هوش مصنوعی Astra حتی روی مدل‌های غول‌آسای ۱۰ تریلیونی هم در حد بهترین‌های دنیا (SOTA) ظاهر شده و حسابی گردوخاک کرده. نکته خفنش اینجاست که به ازای یه ورودی ثابت، هربار خروجی‌های کاملاً خلاقانه و متفاوتی تحویل می‌ده و کیفیت کارش واقعاً درجه‌یکه. البته طبق بررسی‌ها هنوز توی بخش تولید پروژه یه سری باگ ریز داره که باید رفع بشه، ولی کیفیت کلی خروجیش اون‌قدری بالاست که حسابی تحسین کاربرا رو برانگیخته.\n\nچرا مهمه؟ اهمیتش اینه که نشون میده مدل‌های تولیدی به سطحی از خلاقیت رسیدن که دیگه به خروجی‌های تکراری و کلیشه‌ای محدود نیستن و برای پروژه‌های بزرگ تحول ایجاد می‌کنن.",
+  "date": "2026-08-30T15:56:54+00:00"
+ },
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/NekoFatcat47609/status/2093979133726605503",
+   "domain": "x.com",
+   "author": {
+    "name": "NeKo fatcat",
+    "handle": "NekoFatcat47609",
+    "avatar": "https://pbs.twimg.com/profile_images/1668209976047706112/9Uk2oIEJ_200x200.jpg"
+   },
+   "text": "Astra is already at SOTA level even with a 10T large model — same input, different creative outputs every time. There are still some bugs in project generation, but overall the quality is top-tier. 🔥",
+   "date": 1788078504,
+   "media": [
+    {
+     "type": "image",
+     "src": "https://pbs.twimg.com/media/HQ9O085aIAAJ4bz.jpg?name=orig",
+     "ratio": 1.4063
+    },
+    {
+     "type": "video",
+     "src": "https://video.twimg.com/amplify_video/2093979023395405825/vid/avc1/1148x720/_WzEtzO0wKx4VuBP.mp4?tag=29",
+     "poster": "https://pbs.twimg.com/amplify_video_thumb/2093979023395405825/img/cq3h0-Vk9hSYnYF2.jpg",
+     "ratio": 0.6265,
+     "duration": 35.155,
+     "gif": false
+    },
+    {
+     "type": "image",
+     "src": "https://pbs.twimg.com/media/HQ9O09DagAAxGkq.jpg?name=orig",
+     "ratio": 1.2977
+    }
+   ],
+   "links": []
+  }
+ ],
+ "article": {
+  "title": "خبر رسیده که مدل هوش مصنوعی Astra حتی روی مدل‌های غول‌آسای ۱۰ تریلیونی هم در حد بهترین‌های دنیا (SOTA) ظاهر شده و حسابی گردوخاک کرده",
+  "source_title": "Astra is already at SOTA level even with a 10T large model — same input, different creative outputs every time. There are still some bugs…",
+  "body": [
+   "رفیق، خبر رسیده که مدل هوش مصنوعی Astra حتی روی مدل‌های غول‌آسای ۱۰ تریلیونی هم در حد بهترین‌های دنیا (SOTA) ظاهر شده و حسابی گردوخاک کرده. نکته خفنش اینجاست که به ازای یه ورودی ثابت، هربار خروجی‌های کاملاً خلاقانه و متفاوتی تحویل می‌ده و کیفیت کارش واقعاً درجه‌یکه. البته طبق بررسی‌ها هنوز توی بخش تولید پروژه یه سری باگ ریز داره که باید رفع بشه، ولی کیفیت کلی خروجیش اون‌قدری بالاست که حسابی تحسین کاربرا رو برانگیخته."
+  ],
+  "why": "اهمیتش اینه که نشون میده مدل‌های تولیدی به سطحی از خلاقیت رسیدن که دیگه به خروجی‌های تکراری و کلیشه‌ای محدود نیستن و برای پروژه‌های بزرگ تحول ایجاد می‌کنن.",
+  "tags": []
+ },
+ "updated": "2026-10-25T12:28:36+00:00",
+ "gholam_checked": "2026-10-25T12:28:36+00:00"
+}

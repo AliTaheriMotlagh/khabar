@@ -2,16 +2,23 @@
  "id": 6029,
  "url": "https://t.me/dlmehr/6029",
  "date": "2026-10-21T19:09:46+00:00",
- "edited": true,
- "views": "187",
  "text": "https://fxtwitter.com/amino_abhi/status/2112956110336606282?s=52&t=F41Qa04r48Mef_j_XjBneQ",
  "forwarded_from": null,
  "digest": false,
  "hash": "8b9133b87fab",
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/amino_abhi/status/2112956110336606282?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+  "site": "🧵 Thread • FxTwitter",
+  "title": "Abhi (@amino_abhi)",
+  "description": "ai x bio just had a ridiculous 48 hours:\n- Omnii-1: AI-designed phage given to a patient\n- Claude designed scorpion toxin binders\n- OpenAI acquires Orchestra Bio\n- Baker Lab: RFD4-Proteina\n- Chaperone: agent framework for protein design\n- BioEmu2: protein…",
+  "image": "https://cdn4.telesco.pe/file/ZPTuvdebgsMKilyRCdLybGrLMI4Zpkmr1KVyYH_CdTLlueMpNKP2UcT_z429iWOnUht8UDg_pMNkHI8kRq0vNqnjDt4saoh9-ccK-BYckjQb3AOvIkE1wc7vBJNhoV_ZY7I14xWcNZfrij9AhLQoSftXN0OpGPUu6qxAIhBjRRt8BnxnSkTCNlG6NC7eTMJUad8IRQDDY0vsFnPcHp4wMrounbL-8nZnisaio112heo3Ldg8zOS4x3L4-oP2Aj-vYJILm6dxfq1Y8j_Ev4aEyeTGSZ9oo158a98g7o8910vnvP91kVUJXD8D5KOpmetIm4JcdCDcrsfWgvf0ACQG5A.jpg"
+ },
  "gholam": {
   "text": "رفیق، این ۴۸ ساعت گذشته تو تقاطع هوش مصنوعی و بیوتکنولوژی یه قیامتی به پا شده که نگو و نپرس. از تزریق اولین باکتری‌خوار یا همون فاژِ طراحی‌شده با هوش مصنوعی به اسم Omnii-1 به یه بیمار واقعی گرفته، تا طراحی خنثی‌کننده سم عقرب توسط هوش مصنوعی کلود، نشون دادن که قضیه اصلاً شوخی‌بردار نیست. تازه اوپن‌ای‌آی هم شرکت ارکسترا بایو رو خریده و با همکاری پِرتِرب‌ای‌آی دارن رازهای بیماری‌های مغزی رو کشف می‌کنن؛ کلی مدل خفن جدید هم از آزمایشگاه بیکر و بقیه اومده که شبیه‌سازی و طراحی پروتئین و آنزیم رو بردن تو یه فاز ماورایی.\n\nاهمیتش اینه که هوش مصنوعی دیگه از فاز چت‌کردن و عکس فانتزی ساختن رد شده و رسماً اومده وسط گود تا با طراحی دارو و بیولوژی، جون آدما رو نجات بده.",
   "date": "2026-10-21T19:10:05+00:00"
  },
+ "gholam_checked": "2026-10-24T23:03:08+00:00",
  "links": [
   {
    "kind": "tweet",
@@ -35,18 +42,6 @@
    "links": []
   }
  ],
- "media": [],
- "preview": {
-  "url": "https://fxtwitter.com/amino_abhi/status/2112956110336606282?s=52&t=F41Qa04r48Mef_j_XjBneQ",
-  "site": "🧵 Thread • FxTwitter",
-  "title": "Abhi (@amino_abhi)",
-  "description": "ai x bio just had a ridiculous 48 hours:\n- Omnii-1: AI-designed phage given to a patient\n- Claude designed scorpion toxin binders\n- OpenAI acquires Orchestra Bio\n- Baker Lab: RFD4-Proteina\n- Chaperone: agent framework for protein design\n- BioEmu2: protein…",
-  "image": {
-   "src": "media/6029/preview.webp",
-   "width": 200,
-   "height": 200
-  }
- },
  "article": {
   "title": "این ۴۸ ساعت گذشته تو تقاطع هوش مصنوعی و بیوتکنولوژی یه قیامتی به پا شده که نگو و نپرس",
   "source_title": "ai x bio just had a ridiculous 48 hours:",
@@ -59,6 +54,5 @@
    "اوپن‌ای‌آی"
   ]
  },
- "updated": "2026-10-24T23:03:08+00:00",
- "gholam_checked": "2026-10-24T23:03:08+00:00"
+ "updated": "2026-10-25T11:53:53+00:00"
 }

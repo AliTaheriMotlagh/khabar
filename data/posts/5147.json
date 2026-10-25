@@ -1,0 +1,82 @@
+{
+ "id": 5147,
+ "url": "https://t.me/dlmehr/5147",
+ "date": "2026-09-04T20:17:38+00:00",
+ "text": "https://fxtwitter.com/1337hero/status/2095922829598564791?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+ "forwarded_from": null,
+ "digest": false,
+ "hash": "377d0a98a8e6",
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/1337hero/status/2095922829598564791?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+  "site": "FxTwitter",
+  "title": "Mike Key (@1337hero)",
+  "description": "Lenovo is introducing a 192GB AMD Gorgon Strix Halo in a 1.6L form factor. I can't tell if this will be as big as their Thinkstation PGX (their DGX) or if it will be similar to past Thinkcentres. But I love the small form factor.\nAnd these could be really…",
+  "image": "https://cdn4.telesco.pe/file/rN0lXfzCkGewBpUAFuorEi75p-8D25I61NflHbKPv5ykQ7fG2nkG9fAbKZdvFHfaSgwfPvQaIRvYXjontMfTTQr4iUZxGIoF8lsRRkdDPR0a8yUlyUtnjsz_GlRG7FNWcclMfpOuQfcm6b31AhHQ21C-XkeAxHgx46_DBHsowG8rBW0Bzd0YFrY1FLAs9xx7GTVjTzAqU_RqT8GQ1FXVJBqTfMsjwivqKetjDyw_QEGBX09vQYUmj8fkNRh8FULxyVtM1Hi9EsAHT-lwmjNHgashNV7vdVIDWH-x89oP1DG9QjONsf_qPQvJaVFM6sPa1yIOwq4CIbxOP5OZOj02PA.jpg"
+ },
+ "gholam": {
+  "text": "رفیق، لنوو دست گذاشته رو یه غول فسقلی و قراره یه مینی‌کامپیوتر خفن با پردازنده استریکس هیلو شرکت AMD و ۱۹۲ گیگابایت رم رو توی یه کیس جمع‌وجور ۱.۶ لیتری روانه بازار کنه. هنوز مو لا درز مشخصات دقیقش نرفته و معلوم نیست قراره شبیه غول‌های سری تینک‌استیشن گرون تموم بشه یا توی قامت تینک‌سنترهای اقتصادی جا خوش کنه. ولی کارشناسا بدجوری چشمشون این جعبه جادویی رو گرفته، چون اگه قیمتش منصفانه باشه خوراک بستن سرورها و کلاسترهای خونگیه و بدون اشغال جا، کلی کار سنگین رو راه میندازه.\n\nاهمیتش اینه که چپوندن این حجم از رم توی یه کیس به این فسقلی، دست خوره‌های فناوری رو برای کارهای سنگین و هوش مصنوعی توی خونه حسابی باز می‌کنه.",
+  "date": "2026-09-04T20:17:49+00:00"
+ },
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/1337hero/status/2095922829598564791",
+   "domain": "x.com",
+   "author": {
+    "name": "1337hero",
+    "handle": "1337hero",
+    "avatar": "https://pbs.twimg.com/profile_images/2106212659498790912/NUjJ8QIu_200x200.jpg"
+   },
+   "text": "Lenovo is introducing a 192GB AMD Gorgon Strix Halo in a 1.6L form factor. I can't tell if this will be as big as their Thinkstation PGX (their DGX) or if it will be similar to past Thinkcentres. But I love the small form factor.\n\nAnd these could be really cool in a homelab cluster!\n\nPrice dependent. \n\nhttps://videocardz.com/newz/lenovo-packs-ryzen-ai-max-pro-495-into-1-6l-thinkcentre-x-ultra-launches-at-e3100-in-november",
+   "date": 1788541917,
+   "media": [
+    {
+     "type": "image",
+     "src": "https://pbs.twimg.com/media/HRY2hkPbAAAjDj2.jpg?name=orig",
+     "ratio": 0.5625
+    },
+    {
+     "type": "image",
+     "src": "https://pbs.twimg.com/media/HRY2hkVaoAAxtin.jpg?name=orig",
+     "ratio": 0.5625
+    },
+    {
+     "type": "image",
+     "src": "https://pbs.twimg.com/media/HRY2pSzaAAAlZMp.jpg?name=orig",
+     "ratio": 1.3337
+    },
+    {
+     "type": "image",
+     "src": "https://pbs.twimg.com/media/HRY2qMPaoAAqoIp.jpg?name=orig",
+     "ratio": 0.5625
+    }
+   ],
+   "links": [
+    "https://videocardz.com/newz/lenovo-packs-ryzen-ai-max-pro-495-into-1-6l-thinkcentre-x-ultra-launches-at-e3100-in-november"
+   ]
+  },
+  {
+   "kind": "link",
+   "url": "https://videocardz.com/newz/lenovo-packs-ryzen-ai-max-pro-495-into-1-6l-thinkcentre-x-ultra-launches-at-e3100-in-november",
+   "domain": "videocardz.com",
+   "title": "Lenovo packs Ryzen AI Max+ PRO 495 into 1.6L ThinkCentre X Ultra, launches at €3100 in November - VideoCardz.com",
+   "description": "Lenovo has announced a compact Ryzen AI Max+ PRO 495 desktop with up to 128GB memory and 8TB storage. The ThinkCentre X Ultra is scheduled for November 2026.",
+   "image": "https://cdn.videocardz.com/1/2026/09/LENOVO-MINI-WORKSTATION-RYZEN-MAX-495.webp",
+   "site": "VideoCardz.com"
+  }
+ ],
+ "article": {
+  "title": "لنوو دست گذاشته رو یه غول فسقلی و قراره یه مینی‌کامپیوتر خفن با پردازنده استریکس هیلو شرکت AMD و ۱۹۲ گیگابایت رم رو توی یه کیس جمع‌وجور ۱.۶ لیتری روانه بازار کنه",
+  "source_title": "Lenovo is introducing a 192GB AMD Gorgon Strix Halo in a 1.6L form factor. I can't tell if this will be as big as their Thinkstation PGX…",
+  "body": [
+   "رفیق، لنوو دست گذاشته رو یه غول فسقلی و قراره یه مینی‌کامپیوتر خفن با پردازنده استریکس هیلو شرکت AMD و ۱۹۲ گیگابایت رم رو توی یه کیس جمع‌وجور ۱.۶ لیتری روانه بازار کنه. هنوز مو لا درز مشخصات دقیقش نرفته و معلوم نیست قراره شبیه غول‌های سری تینک‌استیشن گرون تموم بشه یا توی قامت تینک‌سنترهای اقتصادی جا خوش کنه. ولی کارشناسا بدجوری چشمشون این جعبه جادویی رو گرفته، چون اگه قیمتش منصفانه باشه خوراک بستن سرورها و کلاسترهای خونگیه و بدون اشغال جا، کلی کار سنگین رو راه میندازه."
+  ],
+  "why": "چپوندن این حجم از رم توی یه کیس به این فسقلی، دست خوره‌های فناوری رو برای کارهای سنگین و هوش مصنوعی توی خونه حسابی باز می‌کنه.",
+  "tags": [
+   "تراشه"
+  ]
+ },
+ "updated": "2026-10-25T12:27:53+00:00",
+ "gholam_checked": "2026-10-25T12:27:53+00:00"
+}

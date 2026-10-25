@@ -2,16 +2,23 @@
  "id": 5918,
  "url": "https://t.me/dlmehr/5918",
  "date": "2026-10-16T02:17:43+00:00",
- "edited": true,
- "views": "174",
  "text": "https://fxtwitter.com/cb_doge/status/2110901560435945972?s=52&t=F41Qa04r48Mef_j_XjBneQ",
  "forwarded_from": null,
  "digest": false,
  "hash": "f76443ab686f",
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/cb_doge/status/2110901560435945972?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+  "site": "FxTwitter",
+  "title": "DogeDesigner (@cb_doge)",
+  "description": "HOLY SHIT",
+  "image": null
+ },
  "gholam": {
   "text": "رفیق، حساب دوج‌دیزاینر (DogeDesigner) که همیشه دور و بر اخبار ایلان ماسک و پروژه‌هاش می‌پلکه، یه ویدیو منتشر کرده و از شدت شوکه شدن فقط کپشن زده «برگام» (HOLY SHIT)! این پست با اینکه توضیح متنی اضافه‌ای نداره، تو همون ساعات اول بیش از ۱.۲ میلیون بازدید خورده و حسابی تو توییتر سر و صدا راه انداخته. کاربرا و اهالی تکنولوژی هم ریختن پای پست و با هزاران لایک و کامنت دارن درباره‌ش بحث و هیجان‌نشونی می‌کنن.\n\nاهمیتش اینه که وقتی چنین اکانت‌های پرنفوذی این‌طوری ابراز شگفتی می‌کنن، معمولاً پای یه رونمایی تازه یا تحول خفن در دنیای هوش مصنوعی و رباتیک وسطه.",
   "date": "2026-10-16T02:18:00+00:00"
  },
+ "gholam_checked": "2026-10-24T23:35:33+00:00",
  "links": [
   {
    "kind": "tweet",
@@ -46,14 +53,6 @@
    "links": []
   }
  ],
- "media": [],
- "preview": {
-  "url": "https://fxtwitter.com/cb_doge/status/2110901560435945972?s=52&t=F41Qa04r48Mef_j_XjBneQ",
-  "site": "FxTwitter",
-  "title": "DogeDesigner (@cb_doge)",
-  "description": "HOLY SHIT",
-  "image": null
- },
  "article": {
   "title": "حساب دوج‌دیزاینر (DogeDesigner) که همیشه دور و بر اخبار ایلان ماسک و پروژه‌هاش می‌پلکه، یه ویدیو منتشر کرده و از شدت شوکه شدن فقط کپشن زده «برگام» (HOLY SHIT)",
   "source_title": "HOLY SHIT",
@@ -65,6 +64,5 @@
    "ایلان ماسک"
   ]
  },
- "updated": "2026-10-24T23:35:33+00:00",
- "gholam_checked": "2026-10-24T23:35:33+00:00"
+ "updated": "2026-10-25T11:54:11+00:00"
 }

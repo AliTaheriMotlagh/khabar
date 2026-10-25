@@ -1,0 +1,58 @@
+{
+ "id": 4715,
+ "url": "https://t.me/dlmehr/4715",
+ "date": "2026-08-12T16:06:38+00:00",
+ "text": "https://fxtwitter.com/artificialanlys/status/2087564648325530099?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+ "forwarded_from": null,
+ "digest": false,
+ "hash": "1e5c4b08667e",
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/artificialanlys/status/2087564648325530099?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+  "site": "🧵 Thread • FxTwitter",
+  "title": "Artificial Analysis (@ArtificialAnlys)",
+  "description": "SpaceXAI's Grok 4.6 scores 61 on the Artificial Analysis Intelligence Index, joining the frontier in line with GPT-5.6 Sol, with standout agentic performance at lower cost\nGrok 4.6 gains 5 points over Grok 4.5 on the Intelligence Index just over one month…",
+  "image": "https://cdn4.telesco.pe/file/NqT2bRkE7-OnCpB9ugYpWAAzwjdOzO6TNyqIv69VDeSbgyEL70JUt1BTv1WGpFU35xiaAk-wbNPOR9cDR6Uid7VKywV6k61FXi5XSAvCIgzvj-uhnMv35T46PAjmJs8gpEE4fYylQBPi9TlIgUz7j22EO4ofnJl3Zes4YPlYn6uyE0Nm8rDIUxK3_1mZ_pU-MnBbYV3trkHL-JDJFqASoQ9Acy2OOopBgAPm0kCIoZBGgZdXkJZdOIHzNu-BhxnGTwnzXVcPaIKI_1NUFMcbWvbvWb4sXUN8m5AlOne4gELzOmI4MY3ZkF9aPGzA2suL94sYcwlhFEcLAKvWhxbxRg.jpg"
+ },
+ "gholam": {
+  "text": "رفیق، ببین شرکت اسپیس‌ای‌آی ایلان ماسک از مدل جدیدش یعنی Grok 4.6 رونمایی کرده که تو بنچمارک آرتیفیشال آنالیز نمره ۶۱ گرفته و رسماً اومده کنار غول‌هایی مثل GPT-5.6 نشسته. این مدل تازه نفس تو همین یک ماه ۵ امتیاز نسبت به نسخه قبلیش رشد کرده و تو انجام کارهای پیچیده و خودکار عملکرد خیلی خفنی از خودش نشون داده. نکته باحالش اینجاست که قیمتش اصلاً بالا نرفته و با ورودی ۲ دلار و خروجی ۶ دلار به ازای هر میلیون توکن، بالای ۶۰ درصد از رقبای گردن‌کلفتی مثل کلود اپوس ۵ ارزون‌تر تموم میشه.\n\nاهمیتش اینه که داره قدرت پردازش فوق‌العاده بالا و هوش سطح اول دنیا رو با هزینه‌ای به مراتب کمتر به بازار میاره و رقابت غول‌های هوش مصنوعی رو داغ‌تر می‌کنه.",
+  "date": "2026-08-12T16:06:56+00:00"
+ },
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/ArtificialAnlys/status/2087564648325530099",
+   "domain": "x.com",
+   "author": {
+    "name": "Artificial Analysis",
+    "handle": "ArtificialAnlys",
+    "avatar": "https://pbs.twimg.com/profile_images/2042402069320290304/A8C1lP07_200x200.jpg"
+   },
+   "text": "SpaceXAI's Grok 4.6 scores 61 on the Artificial Analysis Intelligence Index, joining the frontier in line with GPT-5.6 Sol, with standout agentic performance at lower cost\n\nGrok 4.6 gains 5 points over Grok 4.5 on the Intelligence Index just over one month after its release, or +23 points compared to Grok 4.3. This brings SpaceXAI back to the intelligence frontier alongside OpenAI, behind only Anthropic.\n\nKey takeaways:\n➤ Grok 4.6 joins the frontier of the Artificial Analysis Intelligence Index: It scores 61, in line with GPT-5.6 Sol (max), behind Claude Opus 5 (max, 63) and Claude Fable 5 (max with fallback, 62), and just ahead of Kimi K3\n\n➤ Strong agentic performance: Grok 4.6 achieves a GDPval-AA v2 Elo of 1753, behind only Claude Opus 5 and with overlapping confidence intervals with Claude Fable 5 and Qwen3.8 Max. It scores 50.7% on 𝜏³-Banking, among the top two scores alongside Qwen3.8 Max (51.3%), and 88.4% on Terminal-Bench v2.1, in line with the leading models\n\n➤ Frontier-level intelligence at lower cost: Headline pricing is unchanged from Grok 4.5 at $2/$6 per 1M input/output tokens, 60%+ below Claude Opus 5 ($5/$25) and GPT-5.6 Sol ($5/$30). It cost $0.84 per task, the same as Kimi K3 with slightly higher intelligence, placing it on the Intelligence vs. Cost per Task Pareto frontier\n\n➤ Grok 4.6 sits at Fable 5-tier on AA-Briefcase, our private benchmark of long-horizon agentic knowledge work tasks, with an Elo of 1577 - behind the Claude Opus 5 family. It is notably turn-efficient, completing tasks in ~53 turns and ~0.5B input tokens on average vs. ~103 turns and ~2.0B input tokens for Claude Opus 5 (max)\n\nOther model details:\n➤ Context window of 500k tokens (unchanged from Grok 4.5)\n\n➤ Pricing of $2/$6 per 1M tokens of input/output; cache hits discounted to $0.5 per 1M tokens, an increase over Grok 4.5’s $0.3 per 1M tokens for cache hits\n\nCongratulations to @spacexai and @elonmusk on the release!",
+   "date": 1786549171,
+   "media": [
+    {
+     "type": "image",
+     "src": "https://pbs.twimg.com/media/HPiEg4XaEAAJ4LX.jpg?name=orig",
+     "ratio": 0.4093
+    }
+   ],
+   "links": []
+  }
+ ],
+ "article": {
+  "title": "ببین شرکت اسپیس‌ای‌آی ایلان ماسک از مدل جدیدش یعنی Grok 4.6 رونمایی کرده که تو بنچمارک آرتیفیشال آنالیز نمره ۶۱ گرفته و رسماً اومده کنار غول‌هایی مثل GPT-5.6 نشسته",
+  "source_title": "SpaceXAI's Grok 4.6 scores 61 on the Artificial Analysis Intelligence Index, joining the frontier in line with GPT-5.6 Sol, with standout…",
+  "body": [
+   "رفیق، ببین شرکت اسپیس‌ای‌آی ایلان ماسک از مدل جدیدش یعنی Grok 4.6 رونمایی کرده که تو بنچمارک آرتیفیشال آنالیز نمره ۶۱ گرفته و رسماً اومده کنار غول‌هایی مثل GPT-5.6 نشسته. این مدل تازه نفس تو همین یک ماه ۵ امتیاز نسبت به نسخه قبلیش رشد کرده و تو انجام کارهای پیچیده و خودکار عملکرد خیلی خفنی از خودش نشون داده. نکته باحالش اینجاست که قیمتش اصلاً بالا نرفته و با ورودی ۲ دلار و خروجی ۶ دلار به ازای هر میلیون توکن، بالای ۶۰ درصد از رقبای گردن‌کلفتی مثل کلود اپوس ۵ ارزون‌تر تموم میشه."
+  ],
+  "why": "داره قدرت پردازش فوق‌العاده بالا و هوش سطح اول دنیا رو با هزینه‌ای به مراتب کمتر به بازار میاره و رقابت غول‌های هوش مصنوعی رو داغ‌تر می‌کنه.",
+  "tags": [
+   "ایلان ماسک",
+   "آنتروپیک",
+   "اوپن‌ای‌آی"
+  ]
+ },
+ "updated": "2026-10-25T12:30:26+00:00",
+ "gholam_checked": "2026-10-25T12:30:26+00:00"
+}

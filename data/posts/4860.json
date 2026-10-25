@@ -1,0 +1,60 @@
+{
+ "id": 4860,
+ "url": "https://t.me/dlmehr/4860",
+ "date": "2026-08-21T14:56:06+00:00",
+ "text": "https://fxtwitter.com/nvidiaai/status/2090786258981466231?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+ "forwarded_from": null,
+ "digest": false,
+ "hash": "9593cb2f3aac",
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/nvidiaai/status/2090786258981466231?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+  "site": "🧵 Thread • FxTwitter",
+  "title": "NVIDIA AI (@NVIDIAAI)",
+  "description": "Our general-purpose coding agent just scored 100% on the ARC-AGI-3 interactive reasoning benchmark.\nNVIDIA AVO completed all 183 levels across all 25 public environments, figuring out what to do with no instructions, explicit rules, or stated goals.",
+  "image": null
+ },
+ "gholam": {
+  "text": "ببین رفیق، بچه‌های انویدیا با هوش مصنوعی جدیدشون بدجوری گردوخاک راه انداختن و یه رکورد تاریخی ثبت کردن. ایجنت کدنویسی همه‌فن‌حریفشون به اسم «NVIDIA AVO» تونسته تو بنچمارک استدلال تعاملی ARC-AGI-3 نمره تر و تمیز ۱۰۰ درصد بگیره. قضیه اونجا برگ‌ریزون می‌شه که این هوش مصنوعی همه ۱۸۳ مرحله رو توی ۲۵ محیط عمومی، بدون این‌که هیچ دستورالعمل، قانون مشخص یا هدف تعیین‌شده‌ای بهش داده باشن، خودش تنهایی کشف و حل کرده. خلاصه انگار یه معما رو بدون هیچ راهنمایی دستش دادی و اونم مثل آب خوردن همه‌ش رو برات حل کرده و ته خط رو نشون داده.\n\nچرا مهمه؟ اهمیتش اینه که نشون می‌ده هوش مصنوعی داره از حالت یه ماشین حفظ‌کننده درمیاد و داره به درک و استدلال واقعی مثل مغز آدمیزاد نزدیک و نزدیک‌تر می‌شه.",
+  "date": "2026-08-21T14:56:15+00:00"
+ },
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/NVIDIAAI/status/2090786258981466231",
+   "domain": "x.com",
+   "author": {
+    "name": "NVIDIA AI",
+    "handle": "NVIDIAAI",
+    "avatar": "https://pbs.twimg.com/profile_images/2055340743552831488/me-KUIug_200x200.png"
+   },
+   "text": "Our general-purpose coding agent just scored 100% on the ARC-AGI-3 interactive reasoning benchmark.\n\nNVIDIA AVO completed all 183 levels across all 25 public environments, figuring out what to do with no instructions, explicit rules, or stated goals.",
+   "date": 1787317263,
+   "media": [
+    {
+     "type": "video",
+     "src": "https://video.twimg.com/tweet_video/HQPz88kaUAAge0S.mp4",
+     "poster": "https://pbs.twimg.com/tweet_video_thumb/HQPz88kaUAAge0S.jpg",
+     "ratio": 0.5625,
+     "duration": 0,
+     "gif": true
+    }
+   ],
+   "links": []
+  }
+ ],
+ "article": {
+  "title": "بچه‌های انویدیا با هوش مصنوعی جدیدشون بدجوری گردوخاک راه انداختن و یه رکورد تاریخی ثبت کردن",
+  "source_title": "Our general-purpose coding agent just scored 100% on the ARC-AGI-3 interactive reasoning benchmark.",
+  "body": [
+   "ببین رفیق، بچه‌های انویدیا با هوش مصنوعی جدیدشون بدجوری گردوخاک راه انداختن و یه رکورد تاریخی ثبت کردن. ایجنت کدنویسی همه‌فن‌حریفشون به اسم «NVIDIA AVO» تونسته تو بنچمارک استدلال تعاملی ARC-AGI-3 نمره تر و تمیز ۱۰۰ درصد بگیره. قضیه اونجا برگ‌ریزون می‌شه که این هوش مصنوعی همه ۱۸۳ مرحله رو توی ۲۵ محیط عمومی، بدون این‌که هیچ دستورالعمل، قانون مشخص یا هدف تعیین‌شده‌ای بهش داده باشن، خودش تنهایی کشف و حل کرده. خلاصه انگار یه معما رو بدون هیچ راهنمایی دستش دادی و اونم مثل آب خوردن همه‌ش رو برات حل کرده و ته خط رو نشون داده."
+  ],
+  "why": "اهمیتش اینه که نشون می‌ده هوش مصنوعی داره از حالت یه ماشین حفظ‌کننده درمیاد و داره به درک و استدلال واقعی مثل مغز آدمیزاد نزدیک و نزدیک‌تر می‌شه.",
+  "tags": [
+   "انویدیا",
+   "کدنویسی"
+  ]
+ },
+ "updated": "2026-10-25T12:29:41+00:00",
+ "gholam_checked": "2026-10-25T12:29:41+00:00"
+}

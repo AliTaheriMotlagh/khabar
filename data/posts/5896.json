@@ -2,16 +2,23 @@
  "id": 5896,
  "url": "https://t.me/dlmehr/5896",
  "date": "2026-10-14T20:21:28+00:00",
- "edited": true,
- "views": "173",
  "text": "https://fxtwitter.com/rohanpaul_ai/status/2110460540791480529?s=52&t=F41Qa04r48Mef_j_XjBneQ",
  "forwarded_from": null,
  "digest": false,
  "hash": "f7b2d77115e5",
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/rohanpaul_ai/status/2110460540791480529?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+  "site": "🧵 Thread • FxTwitter",
+  "title": "Rohan Paul (@rohanpaul_ai)",
+  "description": "Training agents to do real office work requires real company records, so Scale, Mercor, Handshake, Turing and others now pay businesses for their email, chat, tickets and code history.\n@Secludy has released Who Sells Data, a free directory of 159 companies…",
+  "image": "https://cdn4.telesco.pe/file/PSr0mblb5OyDBaPKCiWVckFfV07Ixi5kLc3eyevvaDFN0cFm7bCubdm3F0X8T3injyNSzLtHkY08Z30803FTWy6wEGxQ3V-eFkCoPuCMAiAbP2wSF8QeACz46wBjF9xzYXPYsKe-QRQJPdUlpM85og3mOLkagHDGwmKG7NT18vET7F6sNwgVX_0jDzeZ9mx02haAuGPiYQMmFegLDt-RI9eQCfvAR-JYytCfBH5ivr60Q9g8UOuOZ9AwsepigCCe4Q5DTAPs-f6idxrOTSnLtH8cvpTCNr5JQf_0CKsxdmTVoy566x5wAalDmlMODTMTrxjNK7ZzeovxCPKrhHL7jQ.jpg"
+ },
  "gholam": {
   "text": "رفیق، قضیه از این قراره که برای یاد دادن کارای اداری واقعی به هوش مصنوعی، مدل‌ها به دیتای واقعی شرکت‌ها احتیاج دارن؛ واسه همین غول‌هایی مثل اسکیل (Scale)، مِرکُر و تورینگ رسماً دست به جیب شدن و بابت ایمیل‌ها، چت‌ها، تیکت‌ها و حتی کدهای داخلی بیزینس‌ها پول نقد می‌دن. حالا تیم Secludy اومده یه دایرکتوری رایگان و تر و تمیز رو کرده که توش مشخصات ۱۵۹ تا شرکت فروشنده دیتای آموزشی و محیط‌های ارزیابی رو با منبع و تاریخ دقیق لیست کرده. جالب‌تر اینکه ۳۸ تا برنامه هم پیدا کردن که رسماً از بیزینس‌ها دیتا می‌خرن و حتی بازه قیمتی خیلیاشون هم شفاف اومده تا متخصص‌های امنیتی قشنگ دست‌شون بیاد اوضاع از چه قراره.\n\nاهمیتش اینه که نشون میده نفت خام جدید هوش مصنوعی همین چت‌ها و کارهای اداری روزمره‌ست و حالا یه بازار رسمی و پر از پول واسه خرید و فروش این اطلاعات راه افتاده.",
   "date": "2026-10-14T20:21:44+00:00"
  },
+ "gholam_checked": "2026-10-24T23:35:36+00:00",
  "links": [
   {
    "kind": "tweet",
@@ -75,18 +82,6 @@
    }
   }
  ],
- "media": [],
- "preview": {
-  "url": "https://fxtwitter.com/rohanpaul_ai/status/2110460540791480529?s=52&t=F41Qa04r48Mef_j_XjBneQ",
-  "site": "🧵 Thread • FxTwitter",
-  "title": "Rohan Paul (@rohanpaul_ai)",
-  "description": "Training agents to do real office work requires real company records, so Scale, Mercor, Handshake, Turing and others now pay businesses for their email, chat, tickets and code history.\n@Secludy has released Who Sells Data, a free directory of 159 companies…",
-  "image": {
-   "src": "media/5896/preview.webp",
-   "width": 800,
-   "height": 541
-  }
- },
  "article": {
   "title": "قضیه از این قراره که برای یاد دادن کارای اداری واقعی به هوش مصنوعی، مدل‌ها به دیتای واقعی شرکت‌ها احتیاج دارن",
   "source_title": "Training agents to do real office work requires real company records, so Scale, Mercor, Handshake, Turing and others now pay businesses for…",
@@ -98,6 +93,5 @@
    "امنیت"
   ]
  },
- "updated": "2026-10-24T23:35:36+00:00",
- "gholam_checked": "2026-10-24T23:35:36+00:00"
+ "updated": "2026-10-25T11:54:11+00:00"
 }

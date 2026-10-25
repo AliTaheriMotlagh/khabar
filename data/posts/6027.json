@@ -2,16 +2,23 @@
  "id": 6027,
  "url": "https://t.me/dlmehr/6027",
  "date": "2026-10-21T18:26:45+00:00",
- "edited": true,
- "views": "184",
  "text": "https://fxtwitter.com/aibattle_/status/2112859696319037841?s=52&t=F41Qa04r48Mef_j_XjBneQ",
  "forwarded_from": null,
  "digest": false,
  "hash": "6d2bc98ad939",
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/aibattle_/status/2112859696319037841?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+  "site": "FxTwitter",
+  "title": "AiBattle (@AiBattle_)",
+  "description": "There are new rumors that the next GLM Model, GLM 5.5, will have 2.5T - 3.5T parameters and significant architecture changes\nIn its August HKEX interim filing, Zhipu AI said it had validated the idea of Looped Transformers in preliminary experiments. I wonder…",
+  "image": "https://cdn4.telesco.pe/file/E0B2vD0UEwtTkPEk3al4iYnfLlyShfxxMdJQwPz3pa1A18bJrW4yCCfShduCA7AZqor_6ZeByzZUQt0Pvq2QmNq4-SGmMx8akMABJqyJKtmQRv0CffZyMfEDLzldSbhsVQfaLJKpayNzfS7rJAF00Nixejm3rtLlx1Tu8yTZIV4wNx_zZDYRP-bM18PP3wlhd2O7J3a1tznVUPfRo6b-tS9P8XVUUBHUYZ7dWDZNrAl0cOgc0YenBNgdNckIwTppI605oKjODo_wxM2QZAOLDFgO9OfxlR646T1G_u2_vywk2SBmCAl5A9Mr8EeC1m8s-DyTtQv17KladY7xyNIENg.jpg"
+ },
  "gholam": {
   "text": "خلاصه بگم رفیق، شایعه‌های داغی دراومده که شرکت Zhipu AI داره روی غول بعدی خودش یعنی مدل GLM 5.5 کار می‌کنه و قراره یه تکون اساسی به بازار هوش مصنوعی بده. طبق شنیده‌ها، این مدل قراره بین ۲.۵ تا ۳.۵ تریلیون پارامتر داشته باشه که خیلی پرزورتر از عدد ۱.۶ تریلیونی قبلیه. از اون طرف معماری مدل رو هم حسابی دستکاری و متحول کردن تا هم سرعت آموزش و پردازش رو ببرن بالا و هم هزینه‌های استفاده رو به شدت بکشن پایین. هدفشون هم اینه که از همون روز اول انتشار، این غول بیابونی بتونه به شکل گسترده به ملت سرویس بده و زیر بار ترافیک خم به ابرو نیاره.\n\nچرا مهمه؟ اهمیتش اینه که چین داره پا به پای رقبای گردن‌کلفت آمریکایی، مدل‌های چند تریلیون پارامتری بهینه رو آماده می‌کنه تا کلاً معادله قیمت و دسترسی به هوش مصنوعی پیشرفته رو توی دنیا عوض کنه.",
   "date": "2026-10-21T18:27:01+00:00"
  },
+ "gholam_checked": "2026-10-24T23:03:09+00:00",
  "links": [
   {
    "kind": "tweet",
@@ -61,18 +68,6 @@
    }
   }
  ],
- "media": [],
- "preview": {
-  "url": "https://fxtwitter.com/aibattle_/status/2112859696319037841?s=52&t=F41Qa04r48Mef_j_XjBneQ",
-  "site": "FxTwitter",
-  "title": "AiBattle (@AiBattle_)",
-  "description": "There are new rumors that the next GLM Model, GLM 5.5, will have 2.5T - 3.5T parameters and significant architecture changes\nIn its August HKEX interim filing, Zhipu AI said it had validated the idea of Looped Transformers in preliminary experiments. I wonder…",
-  "image": {
-   "src": "media/6027/preview.webp",
-   "width": 800,
-   "height": 444
-  }
- },
  "article": {
   "title": "بگم رفیق، شایعه‌های داغی دراومده که شرکت Zhipu AI داره روی غول بعدی خودش یعنی مدل GLM 5.5 کار می‌کنه و قراره یه تکون اساسی به بازار هوش مصنوعی بده",
   "source_title": "There are new rumors that the next GLM Model, GLM 5.5, will have 2.5T - 3.5T parameters and significant architecture changes",
@@ -84,6 +79,5 @@
    "چین"
   ]
  },
- "updated": "2026-10-24T23:03:09+00:00",
- "gholam_checked": "2026-10-24T23:03:09+00:00"
+ "updated": "2026-10-25T11:53:53+00:00"
 }

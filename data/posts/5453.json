@@ -1,0 +1,59 @@
+{
+ "id": 5453,
+ "url": "https://t.me/dlmehr/5453",
+ "date": "2026-09-24T04:42:03+00:00",
+ "text": "https://fxtwitter.com/nvidiaai/status/2102775666366435450?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+ "forwarded_from": null,
+ "digest": false,
+ "hash": "957a0657fe42",
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/nvidiaai/status/2102775666366435450?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+  "site": "🧵 Thread • FxTwitter",
+  "title": "NVIDIA AI (@NVIDIAAI)",
+  "description": "When several people talk at once, a transcript can get messy fast.\nOur new Nemotron 3 Diarization model tracks who spoke when, even when voices overlap. It handles up to eight speakers, has 100M parameters, and is now available on @huggingface\n🤗",
+  "image": null
+ },
+ "gholam": {
+  "text": "ببین رفیق، بچه‌های انویدیا دست‌به‌کار شدن و یه مدل تر و تمیز به اسم نموترون ۳ دیارایزیشن (Nemotron 3 Diarization) رو کردن که خوراک جلسات و بحث‌های شلوغ‌پلوغه. حتماً دیدی وقتی چند نفر هم‌زمان با هم صحبت می‌کنن و صداها توی هم می‌ره، تبدیل صوت به متن مکافات می‌شه؛ ولی این مدل دقیق و مشتی مشخص می‌کنه کی کِی حرف زده، حتی اگه صداها قاطی شده باشه. جالبیش اینه که با وجود پشتیبانی هم‌زمان از ۸ تا گوینده مختلف، کلاً ۱۰۰ میلیون پارامتر داره و خیلی سبک روی هاگینگ‌فیس در دسترس عموم قرار گرفته.\n\nچرا مهمه؟ اهمیتش اینه که پیاده‌سازی متن پادکست‌ها و جلسات پر سر و صدا رو بدون نیاز به سرورهای سنگین و گرون‌قیمت، فوق‌العاده دقیق و سریع می‌کنه.",
+  "date": "2026-09-24T04:42:16+00:00"
+ },
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/NVIDIAAI/status/2102775666366435450",
+   "domain": "x.com",
+   "author": {
+    "name": "NVIDIA AI",
+    "handle": "NVIDIAAI",
+    "avatar": "https://pbs.twimg.com/profile_images/2055340743552831488/me-KUIug_200x200.png"
+   },
+   "text": "When several people talk at once, a transcript can get messy fast.\n\nOur new Nemotron 3 Diarization model tracks who spoke when, even when voices overlap. It handles up to eight speakers, has 100M parameters, and is now available on @huggingface 🤗",
+   "date": 1790175761,
+   "media": [
+    {
+     "type": "video",
+     "src": "https://video.twimg.com/amplify_video/2102769845846896640/vid/avc1/1740x720/d-n1YYjD9JEnVcLo.mp4?tag=29",
+     "poster": "https://pbs.twimg.com/amplify_video_thumb/2102769845846896640/img/A-15q_dq7a3mSij8.jpg",
+     "ratio": 0.4136,
+     "duration": 35.374,
+     "gif": false
+    }
+   ],
+   "links": []
+  }
+ ],
+ "article": {
+  "title": "بچه‌های انویدیا دست‌به‌کار شدن و یه مدل تر و تمیز به اسم نموترون ۳ دیارایزیشن (Nemotron 3 Diarization) رو کردن که خوراک جلسات و بحث‌های شلوغ‌پلوغه",
+  "source_title": "When several people talk at once, a transcript can get messy fast.",
+  "body": [
+   "ببین رفیق، بچه‌های انویدیا دست‌به‌کار شدن و یه مدل تر و تمیز به اسم نموترون ۳ دیارایزیشن (Nemotron 3 Diarization) رو کردن که خوراک جلسات و بحث‌های شلوغ‌پلوغه. حتماً دیدی وقتی چند نفر هم‌زمان با هم صحبت می‌کنن و صداها توی هم می‌ره، تبدیل صوت به متن مکافات می‌شه؛ ولی این مدل دقیق و مشتی مشخص می‌کنه کی کِی حرف زده، حتی اگه صداها قاطی شده باشه. جالبیش اینه که با وجود پشتیبانی هم‌زمان از ۸ تا گوینده مختلف، کلاً ۱۰۰ میلیون پارامتر داره و خیلی سبک روی هاگینگ‌فیس در دسترس عموم قرار گرفته."
+  ],
+  "why": "اهمیتش اینه که پیاده‌سازی متن پادکست‌ها و جلسات پر سر و صدا رو بدون نیاز به سرورهای سنگین و گرون‌قیمت، فوق‌العاده دقیق و سریع می‌کنه.",
+  "tags": [
+   "انویدیا"
+  ]
+ },
+ "updated": "2026-10-25T12:25:58+00:00",
+ "gholam_checked": "2026-10-25T12:25:58+00:00"
+}

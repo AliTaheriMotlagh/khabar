@@ -2,16 +2,23 @@
  "id": 5908,
  "url": "https://t.me/dlmehr/5908",
  "date": "2026-10-15T04:26:59+00:00",
- "edited": true,
- "views": "216",
  "text": "https://fxtwitter.com/wsj/status/2110569618829955384?s=52&t=F41Qa04r48Mef_j_XjBneQ",
  "forwarded_from": null,
  "digest": false,
  "hash": "4521aeb47799",
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/wsj/status/2110569618829955384?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+  "site": "FxTwitter",
+  "title": "The Wall Street Journal (@WSJ)",
+  "description": "At a playground, a stranger tried to befriend an OpenAI employee who was there with their child. The stranger also regularly showed up with a child and made small talk, asking questions about work. It was no idle curiosity: The stranger was a spy. https:…",
+  "image": "https://cdn4.telesco.pe/file/fs3eaA7U8vX9SMzgPlVjrxyCvigjkzJL4bZmmoABtlEMaf52QOMyIG-yjqY2khKGTlgHlH3di7Nzop7XfFngl8r-z2Xm9xCn5H7yQIlsfFxqmJYlE0v_5CTumYRP3npoQSKnTNdWYWwYWyfpqw34kYhMHp0BrbiQU0BPvCXy28-MsI1aLMDwQQh6dgs5SrmwrxneRLYj1FrZtceFqVjGszrOLFmXqJjUbc3UdjICrEZcIWIvu__PpxsU6tB3xWUIwGeUErPT25p0q-YLx_TSvaLNEjskdKTO8e8NqxCj8BN84sUoB0wmf_9n82wvg30MWCyQqTiTtIsB_V0Af5aEXg.jpg"
+ },
  "gholam": {
   "text": "ببین رفیق، وال‌استریت ژورنال یه ماجرای عجیب رو کرده که نشون میده قصه هوش مصنوعی رسماً کشیده به دنیای فیلم‌های جیمز باند. ماجرا از این قراره که یه غریبه توی پارک بازی بچه‌ها، مدام سر راه یکی از کارمندای بخت‌برگشته شرکت OpenAI سبز می‌شده و دست بچه‌ش رو می‌گرفته می‌آورده تا همه‌چیز کاملاً عادی و بی‌خطر به نظر برسه. این آدم توی همین خوش‌وبش‌های به‌ظاهر ساده مامان‌بابایی، مدام زیرپوستی درباره جزئیات کار و پروژه‌ها سوال‌پیچش می‌کرده. آخر سر هم معلوم شده این صمیمیت‌ها اصلاً از سر هم‌صحبتی نبوده و طرف یه جاسوس کارکشته بوده که برای کش رفتن اسرار این غول فناوری کمین گذاشته بود.\n\nاهمیتش اینه که نشون میده رقابت سر هوش مصنوعی اون‌قدر ابعاد امنیتی و حساسی پیدا کرده که جاسوس‌ها حتی پای تاب و سرسره بچه‌ها هم دنبال تخلیه اطلاعاتی دانشمندان این حوزه‌ان.",
   "date": "2026-10-15T04:27:20+00:00"
  },
+ "gholam_checked": "2026-10-24T23:35:34+00:00",
  "links": [
   {
    "kind": "tweet",
@@ -37,18 +44,6 @@
    ]
   }
  ],
- "media": [],
- "preview": {
-  "url": "https://fxtwitter.com/wsj/status/2110569618829955384?s=52&t=F41Qa04r48Mef_j_XjBneQ",
-  "site": "FxTwitter",
-  "title": "The Wall Street Journal (@WSJ)",
-  "description": "At a playground, a stranger tried to befriend an OpenAI employee who was there with their child. The stranger also regularly showed up with a child and made small talk, asking questions about work. It was no idle curiosity: The stranger was a spy. https:…",
-  "image": {
-   "src": "media/5908/preview.webp",
-   "width": 200,
-   "height": 200
-  }
- },
  "article": {
   "title": "وال‌استریت ژورنال یه ماجرای عجیب رو کرده که نشون میده قصه هوش مصنوعی رسماً کشیده به دنیای فیلم‌های جیمز باند",
   "source_title": "At a playground, a stranger tried to befriend an OpenAI employee who was there with their child. The stranger also regularly showed up with…",
@@ -60,6 +55,5 @@
    "اوپن‌ای‌آی"
   ]
  },
- "updated": "2026-10-24T23:35:34+00:00",
- "gholam_checked": "2026-10-24T23:35:34+00:00"
+ "updated": "2026-10-25T11:54:11+00:00"
 }

@@ -1,0 +1,78 @@
+{
+ "id": 5382,
+ "url": "https://t.me/dlmehr/5382",
+ "date": "2026-09-20T03:23:23+00:00",
+ "text": "https://fxtwitter.com/rohanpaul_ai/status/2101451560698228882?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+ "forwarded_from": null,
+ "digest": false,
+ "hash": "03ad155194c4",
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/rohanpaul_ai/status/2101451560698228882?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+  "site": "🧵 Thread • FxTwitter",
+  "title": "Rohan Paul (@rohanpaul_ai)",
+  "description": "\"the only reason why there is even a 12-month gap between open source and frontier models is US export controls.\"\nPerplexity’s CEO Aravind Srinivas on why China’s open-source AI may become more powerful than ever.\nAnd why Anthropic has lobbied very hard…",
+  "image": null
+ },
+ "gholam": {
+  "text": "ببین رفیق، آراویند سرینیواس، همه‌کاره‌ی پرپلکسیتی، توی یه مصاحبه پرده از یه داستان مهم برداشته و میگه تنها دلیلی که مدل‌های متن‌باز حدود ۱۲ ماه از مدل‌های بسته‌ی آمریکایی عقب افتادن، فقط و فقط تحریم‌ها و کنترل صادرات تراشه از طرف آمریکاست. طرف لو داده که شرکتی مثل آنتروپیک حسابی لابی کرده تا جلوی صادرات این سخت‌افزارها گرفته بشه، غافل از اینکه این قفل و زنجیرها ممکنه نتیجه‌ی کاملاً برعکس بده. حرفش اینه که چین توی ساخت سریع دیتاسنترها، دسترسی به برق، نیروی متخصص و دور زدن مجوزها اصلاً لنگ نمی‌مونه و این فشارها فقط باعث میشه چینی‌ها روی پای خودشون بایستن و تو لایه‌ی سخت‌افزار به رقیب به مراتب گردن‌کلفت‌تری تبدیل بشن.\n\nچرا مهمه؟ چون تلاش آمریکا برای مهار چین احتمالاً نتیجه‌ی عکس میده و باعث تسریع استقلال هوش مصنوعی متن‌باز چین و زمین‌گیر شدن غول‌های فناوری غربی میشه.",
+  "date": "2026-09-20T03:23:36+00:00"
+ },
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/rohanpaul_ai/status/2101451560698228882",
+   "domain": "x.com",
+   "author": {
+    "name": "Rohan Paul",
+    "handle": "rohanpaul_ai",
+    "avatar": "https://pbs.twimg.com/profile_images/1816185267037859840/Fd18CH0v_200x200.jpg"
+   },
+   "text": "\"the only reason why there is even a 12-month gap between open source and frontier models is US export controls.\"\n\nPerplexity’s CEO Aravind Srinivas on why China’s open-source AI may become more powerful than ever.\nAnd why Anthropic has lobbied very hard for export control.\n\n\"There is a chance that, because of the export controls, they now get really good at the physical layer.\n\nOne advantage they (China) have is that they can actually build data centers a lot faster. Power is not a problem. Permits are not a problem. People are not a problem. Labor is not a problem. Expertise is not a problem.\n\nAnd so, by forcing them to go out there and build all this, you are converting them into a far more potent competitor.\"\n\n---\nFrom \"20VC with Harry Stebbings\" YouTube channel (@HarryStebbings  ), link in comment",
+   "date": 1789860069,
+   "media": [
+    {
+     "type": "video",
+     "src": "https://video.twimg.com/amplify_video/2101450922006368256/vid/avc1/1280x720/lBuLGIpylwvWHJif.mp4?tag=29",
+     "poster": "https://pbs.twimg.com/amplify_video_thumb/2101450922006368256/img/YDOOhwzzsyjUkNMI.jpg",
+     "ratio": 0.5625,
+     "duration": 57.35,
+     "gif": false
+    }
+   ],
+   "links": [],
+   "quote": {
+    "author": {
+     "name": "Rohan Paul",
+     "handle": "rohanpaul_ai",
+     "avatar": "https://pbs.twimg.com/profile_images/1816185267037859840/Fd18CH0v_200x200.jpg"
+    },
+    "text": "Now you see the problem for closed labs, or probably why they are delaying their IPO to 2027, \n\n🟦 Open 78.4%    📷 Closed 21.6%\n\nOpen models don’t need to own the frontier to threaten frontier labs.\n\nThey just need to become the default for everything that doesn’t require the frontier.\n\nAlso, open models don’t need their margins to win, they just need their traffic.",
+    "date": 1789855495,
+    "media": [
+     {
+      "type": "image",
+      "src": "https://pbs.twimg.com/media/HSnJRzDaUAAkh3F.jpg?name=orig",
+      "ratio": 0.6959
+     }
+    ],
+    "links": []
+   }
+  }
+ ],
+ "article": {
+  "title": "آراویند سرینیواس، همه‌کاره‌ی پرپلکسیتی، توی یه مصاحبه پرده از یه داستان مهم برداشته و میگه تنها دلیلی که مدل‌های متن‌باز حدود ۱۲ ماه از مدل‌های بسته‌ی آمریکایی عقب افتادن، فقط و فقط تحریم‌ها و کنترل صادرات تراشه از طرف آمریکاست",
+  "source_title": "\"the only reason why there is even a 12-month gap between open source and frontier models is US export controls.\"",
+  "body": [
+   "ببین رفیق، آراویند سرینیواس، همه‌کاره‌ی پرپلکسیتی، توی یه مصاحبه پرده از یه داستان مهم برداشته و میگه تنها دلیلی که مدل‌های متن‌باز حدود ۱۲ ماه از مدل‌های بسته‌ی آمریکایی عقب افتادن، فقط و فقط تحریم‌ها و کنترل صادرات تراشه از طرف آمریکاست. طرف لو داده که شرکتی مثل آنتروپیک حسابی لابی کرده تا جلوی صادرات این سخت‌افزارها گرفته بشه، غافل از اینکه این قفل و زنجیرها ممکنه نتیجه‌ی کاملاً برعکس بده. حرفش اینه که چین توی ساخت سریع دیتاسنترها، دسترسی به برق، نیروی متخصص و دور زدن مجوزها اصلاً لنگ نمی‌مونه و این فشارها فقط باعث میشه چینی‌ها روی پای خودشون بایستن و تو لایه‌ی سخت‌افزار به رقیب به مراتب گردن‌کلفت‌تری تبدیل بشن."
+  ],
+  "why": "چون تلاش آمریکا برای مهار چین احتمالاً نتیجه‌ی عکس میده و باعث تسریع استقلال هوش مصنوعی متن‌باز چین و زمین‌گیر شدن غول‌های فناوری غربی میشه.",
+  "tags": [
+   "چین",
+   "تراشه",
+   "آنتروپیک"
+  ]
+ },
+ "updated": "2026-10-25T12:26:24+00:00",
+ "gholam_checked": "2026-10-25T12:26:24+00:00"
+}

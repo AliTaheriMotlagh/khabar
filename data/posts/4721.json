@@ -1,0 +1,69 @@
+{
+ "id": 4721,
+ "url": "https://t.me/dlmehr/4721",
+ "date": "2026-08-12T22:42:27+00:00",
+ "text": "https://fxtwitter.com/i/status/2087524617112199311",
+ "forwarded_from": "Amin",
+ "digest": false,
+ "hash": "b113dded3d40",
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/i/status/2087524617112199311",
+  "site": "FxTwitter",
+  "title": "Hasan Toor (@hasantoxr)",
+  "description": "Turned my Mac Studio into a full private AI server with one command\nI've been telling everyone all year that local AI is the future. Most of you don't do it because setting up Ollama, Open WebUI, n8n, ComfyUI, Whisper, and Qdrant separately is a nightmare.…",
+  "image": "https://cdn4.telesco.pe/file/dGthrO6Z2trgAjnlRNvM1mrgTekXcO_o73rxV3ijdhTZlb9pm8k4w1lUCV7CvxhsCDuhUwiiBXC7jF0mhcx9V4Vpy-yLAXIOx4upnG_4wY7WRPMfIiTnUspCGAeynF7oPpqTBOiTUvfNu2cW6SF3PqIFhHVkvagOHbvIc86V3UgJcYjx4PYRTLpR4FD4v80Vs86ugo2qF3OwUYp0WSFzWFBp_e2TqiiMwHjjY6qu4rd5gYSAPWdy-f8ZFoIzqqJA-drX7qFYHgZTcYKweW7vLeoa2SmADc83aVKHCIHLZICapZvqYbl8-Qk9GZ82WMY83CRMN03RiuFtcJKFOOEfsw.jpg"
+ },
+ "gholam": {
+  "text": "رفیق، این دوستمون حسن تور اومده یه پروژه خفن به اسم ODS معرفی کرده که سیستمت رو با یه تک‌دستور می‌کنه سرور اختصاصی و تمام‌عیار هوش مصنوعی. قبلاً ست‌آپ کردن جداگونه‌ی ابزارهایی مثل اولاما، n8n، کامفی‌یو‌آی و ویسپر دنگ‌وفنگ زیادی داشت، اما این ابزار همه‌چیو خودش ردیف می‌کنه و رو کارت‌های انویدیا، ای‌ام‌دی و اپل‌سیلیکون هم روون اجرا می‌شه. تهش یه محیط چت شخصی، قابلیت ساخت تصویر و ابزارهای خودکارسازی داری بدون اینکه ریالی پول اشتراک بدی یا نگران لو رفتن اطلاعاتت باشی. تازه یه حالت بوت‌استرپ باحال هم داره که زیر یک دقیقه یه مدل سبک بالا می‌اره تا چت کنی و تا زمان دانلود مدل اصلی معطل نمونی.\n\nاهمیتش اینه که به جای اجاره کردن هوش مصنوعی از شرکت‌های بزرگ، کنترل کامل دیتا و ابزارها رو روی سخت‌افزار خودت به دست می‌گیری.",
+  "date": "2026-08-12T22:42:43+00:00"
+ },
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/hasantoxr/status/2087524617112199311",
+   "domain": "x.com",
+   "author": {
+    "name": "Hasan Toor",
+    "handle": "hasantoxr",
+    "avatar": "https://pbs.twimg.com/profile_images/2112453255959920640/W-1qt_Wk_200x200.jpg"
+   },
+   "text": "Turned my Mac Studio into a full private AI server with one command\n\nI've been telling everyone all year that local AI is the future. Most of you don't do it because setting up Ollama, Open WebUI, n8n, ComfyUI, Whisper, and Qdrant separately is a nightmare.\n\nJust found a project called ODS that solves this. One command. Auto-detects your GPU. Picks the right model. Wires everything together.\n\nYou get:\n\n- Local LLM inference with llama-server\n- ChatGPT-style web UI\n- Voice (Whisper + Kokoro)\n- Autonomous agents with memory and skills\n- n8n workflows with 400+ integrations\n- RAG with Qdrant\n- Local image generation with ComfyUI\n- Private web search\n- Real-time GPU dashboard\n\nEvery prompt stays on your machine. No OpenAI logs. No monthly subscription. Intelligence running on hardware you own.\n\nBootstrap mode is the killer feature. Downloads a tiny 1.5B model in under a minute so you're chatting immediately, then hot-swaps to the full model once it finishes downloading in the background. Zero downtime.\n\nRuns on NVIDIA, AMD Strix Halo, Apple Silicon, Intel Arc.\n\nHere's what to do:\n\n1. Install Docker\n2. Run: curl -fsSL https:// install.osmantic .com/ods .sh | bash\n3. Open localhost: 3000\n4. Start chatting\n\nEvery day you spend on cloud AI is a day you're renting intelligence someone else can turn off.\n\nOwn the stack. Become sovereign.\n\nhttps://github.com/Osmantic/ODS",
+   "date": 1786539627,
+   "media": [
+    {
+     "type": "image",
+     "src": "https://pbs.twimg.com/media/HPhgk4QaUAAwKAW.jpg?name=orig",
+     "ratio": 1.25
+    }
+   ],
+   "links": [
+    "https://github.com/Osmantic/ODS"
+   ]
+  },
+  {
+   "kind": "link",
+   "url": "https://github.com/Osmantic/ODS",
+   "domain": "github.com",
+   "title": "GitHub - Osmantic/ODS: ODS V3 Pre-Release: Public testing and refinement ahead of the official V3 launch. Turn your PC, Mac, or Linux box into a private AI server.",
+   "description": "ODS V3 Pre-Release: Public testing and refinement ahead of the official V3 launch. Turn your PC, Mac, or Linux box into a private AI server. - Osmantic/ODS",
+   "image": "https://repository-images.githubusercontent.com/1153579168/59958025-e61d-42bc-b8a4-f1c401650b17",
+   "site": "GitHub"
+  }
+ ],
+ "article": {
+  "title": "این دوستمون حسن تور اومده یه پروژه خفن به اسم ODS معرفی کرده که سیستمت رو با یه تک‌دستور می‌کنه سرور اختصاصی و تمام‌عیار هوش مصنوعی",
+  "source_title": "Turned my Mac Studio into a full private AI server with one command",
+  "body": [
+   "رفیق، این دوستمون حسن تور اومده یه پروژه خفن به اسم ODS معرفی کرده که سیستمت رو با یه تک‌دستور می‌کنه سرور اختصاصی و تمام‌عیار هوش مصنوعی. قبلاً ست‌آپ کردن جداگونه‌ی ابزارهایی مثل اولاما، n8n، کامفی‌یو‌آی و ویسپر دنگ‌وفنگ زیادی داشت، اما این ابزار همه‌چیو خودش ردیف می‌کنه و رو کارت‌های انویدیا، ای‌ام‌دی و اپل‌سیلیکون هم روون اجرا می‌شه. تهش یه محیط چت شخصی، قابلیت ساخت تصویر و ابزارهای خودکارسازی داری بدون اینکه ریالی پول اشتراک بدی یا نگران لو رفتن اطلاعاتت باشی. تازه یه حالت بوت‌استرپ باحال هم داره که زیر یک دقیقه یه مدل سبک بالا می‌اره تا چت کنی و تا زمان دانلود مدل اصلی معطل نمونی."
+  ],
+  "why": "به جای اجاره کردن هوش مصنوعی از شرکت‌های بزرگ، کنترل کامل دیتا و ابزارها رو روی سخت‌افزار خودت به دست می‌گیری.",
+  "tags": [
+   "اوپن‌ای‌آی",
+   "کدنویسی",
+   "تراشه"
+  ]
+ },
+ "updated": "2026-10-25T12:30:24+00:00",
+ "gholam_checked": "2026-10-25T12:30:24+00:00"
+}

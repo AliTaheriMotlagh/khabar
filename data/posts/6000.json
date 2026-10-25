@@ -2,13 +2,20 @@
  "id": 6000,
  "url": "https://t.me/dlmehr/6000",
  "date": "2026-10-20T20:33:43+00:00",
- "edited": true,
- "views": "194",
  "text": "یکی از بهترین موزیک ویدیو‌هایی که من دیدم با هوش مصنوعی ساخته شده\n\n\n\nhttps://fxtwitter.com/extraltodeus/status/2111872584338018562/video/1?s=52",
  "forwarded_from": null,
  "digest": false,
  "hash": "13488b50bb6e",
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/extraltodeus/status/2111872584338018562/video/1?s=52",
+  "site": "🧵 Thread • FxTwitter",
+  "title": "Extraltodeus (@Extraltodeus)",
+  "description": "I came to realize people liked the french #slopcore without having the lyrics\n😅\nsorry!\nSo here is a version with english subtitles!",
+  "image": null
+ },
  "gholam": null,
+ "gholam_checked": "2026-10-24T23:03:14+00:00",
  "links": [
   {
    "kind": "tweet",
@@ -43,14 +50,6 @@
    "links": []
   }
  ],
- "media": [],
- "preview": {
-  "url": "https://fxtwitter.com/extraltodeus/status/2111872584338018562/video/1?s=52",
-  "site": "🧵 Thread • FxTwitter",
-  "title": "Extraltodeus (@Extraltodeus)",
-  "description": "I came to realize people liked the french #slopcore without having the lyrics\n😅\nsorry!\nSo here is a version with english subtitles!",
-  "image": null
- },
  "article": {
   "title": "I came to realize people liked the french #slopcore without having the lyrics 😅 sorry!",
   "source_title": null,
@@ -58,6 +57,5 @@
   "why": null,
   "tags": []
  },
- "updated": "2026-10-24T23:03:14+00:00",
- "gholam_checked": "2026-10-24T23:03:14+00:00"
+ "updated": "2026-10-25T11:53:56+00:00"
 }

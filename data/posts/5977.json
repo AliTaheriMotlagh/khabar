@@ -2,16 +2,23 @@
  "id": 5977,
  "url": "https://t.me/dlmehr/5977",
  "date": "2026-10-19T19:16:12+00:00",
- "edited": true,
- "views": "174",
  "text": "https://fxtwitter.com/rohanpaul_ai/status/2112237091258351762?s=52&t=F41Qa04r48Mef_j_XjBneQ",
  "forwarded_from": null,
  "digest": false,
  "hash": "e6cf2738bfc6",
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/rohanpaul_ai/status/2112237091258351762?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+  "site": "🧵 Thread • FxTwitter",
+  "title": "Rohan Paul (@rohanpaul_ai)",
+  "description": "BBC: US prosecutors say the ex-OpenAI engineer accused of bugging an executive meeting room has Saudi government backing.\nAn unnamed Saudi royal exchanged frequent WhatsApp messages with Alfozan and tried to recruit him to a Saudi AI initiative, and Alfozan…",
+  "image": "https://cdn4.telesco.pe/file/uxDHJoHGq1C6Jtb7zJNmp1eYHZzyZoVll9lVL99BvTl3afJJr_e0-UiCfK1zyjO8B6GrxU9z-F0eUkjlBpjXZIdkKIwT3fp5sR4zLlG0f9D7w4cMjpFoXcT-aA38BwNQdVApLUw42yrtNj-pLnN05NdvbBT17t6hjvfciLZZBEfkis1gm4qKCA-FFt2lmXhbRzQxZi_bBKZZcpYWYvcrVpFlWb_BFmLt8LMfMTs7LxSHdk3MXrY8wEyonc9MpoE-dwELNk28soMdeg40OB9pCOflH6MeuoaUOwXkUKkc9xj49FBs-lWRIZ71e9BsXz3HovvIe-duzqekbVKGmZO1Bw.jpg"
+ },
  "gholam": {
   "text": "ببین رفیق، قضیه مثل فیلما پلیسی شده؛ دادستانی آمریکا مدعی شده مهندس سابق شرکت OpenAI به اسم الفوزان، که توی اتاق جلسات مدیران ارشد دستگاه شنود کار گذاشته بوده، از طرف حکومت عربستان و یه شاهزاده سعودی ساپورت می‌شده تا واسه پروژه هوش مصنوعی اونا جاسوسی کنه. جالب‌تر اینجاست طرف با اکانت چت‌جی‌پی‌تی همسرش راه و چاه ساخت و رمزگذاری شنود رو سرچ می‌کرده و درست یه روز بعد از دستگیریش، زن و بچه‌ش با بلیط بیزینس‌کلاسی که یه نظامی سعودی براشون گرفته بوده یه کله پرواز کردن قطر! حالا دادستان‌ها میگن پای امنیت ملی وسطه چون این اتاق محل نشست‌های مهم با مقامات دولتی بوده، هرچند OpenAI ادعا می‌کنه خداروشکر سورس کدها، دیتاهای کاربرا یا وزن‌های اصلی مدل‌ها دست‌نخورده باقی مونده.\n\nاهمیتش اینه که نشون میده میدون رقابت هوش مصنوعی از کل‌کل چهارتا شرکت فناور گذشته و رسماً وارد بازی کثیف جاسوسی‌های دولتی و امنیت ملی کشورها شده.",
   "date": "2026-10-19T19:16:36+00:00"
  },
+ "gholam_checked": "2026-10-24T23:11:42+00:00",
  "links": [
   {
    "kind": "tweet",
@@ -50,18 +57,6 @@
    "links": []
   }
  ],
- "media": [],
- "preview": {
-  "url": "https://fxtwitter.com/rohanpaul_ai/status/2112237091258351762?s=52&t=F41Qa04r48Mef_j_XjBneQ",
-  "site": "🧵 Thread • FxTwitter",
-  "title": "Rohan Paul (@rohanpaul_ai)",
-  "description": "BBC: US prosecutors say the ex-OpenAI engineer accused of bugging an executive meeting room has Saudi government backing.\nAn unnamed Saudi royal exchanged frequent WhatsApp messages with Alfozan and tried to recruit him to a Saudi AI initiative, and Alfozan…",
-  "image": {
-   "src": "media/5977/preview.webp",
-   "width": 382,
-   "height": 800
-  }
- },
  "article": {
   "title": "قضیه مثل فیلما پلیسی شده؛ دادستانی آمریکا مدعی شده مهندس سابق شرکت OpenAI به اسم الفوزان، که توی اتاق جلسات مدیران ارشد دستگاه شنود کار گذاشته بوده، از طرف حکومت عربستان و یه شاهزاده سعودی ساپورت می‌شده تا واسه پروژه هوش مصنوعی اونا جاسوسی کنه",
   "source_title": "BBC: US prosecutors say the ex-OpenAI engineer accused of bugging an executive meeting room has Saudi government backing.",
@@ -73,6 +68,5 @@
    "اوپن‌ای‌آی"
   ]
  },
- "updated": "2026-10-24T23:11:42+00:00",
- "gholam_checked": "2026-10-24T23:11:42+00:00"
+ "updated": "2026-10-25T11:54:08+00:00"
 }

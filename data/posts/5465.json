@@ -1,0 +1,52 @@
+{
+ "id": 5465,
+ "url": "https://t.me/dlmehr/5465",
+ "date": "2026-09-25T05:39:24+00:00",
+ "text": "https://fxtwitter.com/nvidia/status/2103125940825923694?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+ "forwarded_from": null,
+ "digest": false,
+ "hash": "5471748c4f23",
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/nvidia/status/2103125940825923694?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+  "site": "🧵 Thread • FxTwitter",
+  "title": "NVIDIA (@nvidia)",
+  "description": "With @GoogleDeepMind, @emblebi, and research partners, we’re making AI-predicted protein complex structures for 2,800+ viruses openly available.\nThis gives scientists a head start in preparing for potential outbreaks.",
+  "image": null
+ },
+ "gholam": null,
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/nvidia/status/2103125940825923694",
+   "domain": "x.com",
+   "author": {
+    "name": "NVIDIA",
+    "handle": "nvidia",
+    "avatar": "https://pbs.twimg.com/profile_images/1828904711124078593/SRvCZSfQ_200x200.jpg"
+   },
+   "text": "With @GoogleDeepMind, @emblebi, and research partners, we’re making AI-predicted protein complex structures for 2,800+ viruses openly available.\n\nThis gives scientists a head start in preparing for potential outbreaks.",
+   "date": 1790259273,
+   "media": [
+    {
+     "type": "video",
+     "src": "https://video.twimg.com/amplify_video/2103125928108834816/vid/avc1/720x898/ix2LSfl43Z_XBR3p.mp4?tag=16",
+     "poster": "https://pbs.twimg.com/amplify_video_thumb/2103125928108834816/img/quCciNgcGQv7fvfx.jpg",
+     "ratio": 1.2488,
+     "duration": 8,
+     "gif": false
+    }
+   ],
+   "links": []
+  }
+ ],
+ "article": {
+  "title": "With @GoogleDeepMind, @emblebi, and research partners, we’re making AI-predicted protein complex structures for 2,800+ viruses openly…",
+  "source_title": null,
+  "body": [],
+  "why": null,
+  "tags": []
+ },
+ "updated": "2026-10-25T12:25:55+00:00",
+ "gholam_checked": "2026-10-25T12:25:55+00:00"
+}

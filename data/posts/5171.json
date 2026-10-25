@@ -1,0 +1,68 @@
+{
+ "id": 5171,
+ "url": "https://t.me/dlmehr/5171",
+ "date": "2026-09-06T20:55:39+00:00",
+ "text": "https://fxtwitter.com/semiconductorsx/status/2096455471834284392?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+ "forwarded_from": null,
+ "digest": false,
+ "hash": "ef0db2da3f5c",
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/semiconductorsx/status/2096455471834284392?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+  "site": "🧵 Thread • FxTwitter",
+  "title": "Semiconductor Insider (@SemiconductorsX)",
+  "description": "Google’s next custom chip may not be another TPU.\nCTO Amin Vahdat says the bottleneck for AI agents isn’t raw compute, it’s moving data and scheduling work at low latency. That’s a CPU problem.\nTraining and inference already split. The next split: a dedicated…",
+  "image": "https://cdn4.telesco.pe/file/byrAlegjgghhlndWyZvczSJNV0xXDC4ySBbaTsHV7BM1kx7a8nEFWYdYjFwIieusIU0r93DUMo8HKV-zFIC8qQ2dQ78Tu7euC83ce6RQjOYpBTLk90x5yGy6xZLQplkEpTty-k5hi2Rvw9FjKe6OfgCceWDmmiSWLXd81fz5_Aj27xL4bF8ZdZvN_sOz3Y7Q8XO_9dqzKlfmHibubK8yO2eYz13F2j_b8tDyC9VERCaNmwvSPHRYbDq-QzXKWdqmpRc6b63xVFvnnOe8uKp0u6rmJAPBSfO_C6Ey5M0BviaGa51BDxVw3xIFEhbkcKcsTKzoWJulr-YARz683AVT3Q.jpg"
+ },
+ "gholam": {
+  "text": "ببین رفیق، امین وحدت، مغز متفکر زیرساخت هوش مصنوعی گوگل توی تایوان پرده از یه ماجرای تازه برداشته و گفته چیپ اختصاصی بعدی گوگل احتمالاً دیگه از جنس TPUهای غول‌پیکر قبلی نباشه. حرف حسابش اینه که واسه ایجنت‌های هوش مصنوعی، مشکل اصلی دیگه کمبود قدرت پردازش خام نیست؛ گیر اصلی، انتقال سریع داده‌ها و هماهنگ کردن کارها با کمترین تأخیره که این یه کار کاملاً پردازنده‌محوره. خلاصه‌ش اینه که بعد از جدا شدن مرحله آموزش از استنتاج، حالا نوبت یه تراشه کنترلی اختصاصی برای مدیریت ایجنت‌هاست، چون پردازش الان مفت تموم میشه ولی هماهنگ‌سازی و لنگ نزدن سیستم بدجوری خرج برمی‌داره. از اون طرفم رابطه گوگل با بر و بچه‌های زنجیره تأمین تایوان از خرید و فروش ساده گذشته و حالا دارن شونه‌به‌شونه هم این چیپ‌ها رو طراحی می‌کنن.\n\nاهمیتش اینه که نشون میده میدون جنگ هوش مصنوعی از زورآزمایی سر قدرت پردازشی گذشته و از این به بعد برنده کسیه که بتونه جریان داده‌ها و تصمیم‌گیری ایجنت‌ها رو تر و تمیزتر مدیریت کنه.",
+  "date": "2026-09-06T20:56:00+00:00"
+ },
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/SemiconductorsX/status/2096455471834284392",
+   "domain": "x.com",
+   "author": {
+    "name": "Semiconductor Insider",
+    "handle": "SemiconductorsX",
+    "avatar": "https://pbs.twimg.com/profile_images/2066209652132753408/zWRpj36P_200x200.jpg"
+   },
+   "text": "Google’s next custom chip may not be another TPU.\n\nCTO Amin Vahdat says the bottleneck for AI agents isn’t raw compute, it’s moving data and scheduling work at low latency. That’s a CPU problem.\n\nTraining and inference already split. The next split: a dedicated control chip for agents. Compute is cheap. Coordination isn’t.",
+   "date": 1788668909,
+   "media": [],
+   "links": [],
+   "quote": {
+    "author": {
+     "name": "Semiconductor Insider",
+     "handle": "SemiconductorsX",
+     "avatar": "https://pbs.twimg.com/profile_images/2066209652132753408/zWRpj36P_200x200.jpg"
+    },
+    "text": "Google CTO and head of AI infrastructure Amin Vahdat spoke at SEMICON Taiwan 2026 and then gave his first interview to Taiwanese media. \n\nHe described Google’s relationship with Taiwan’s supply chain as no longer a buyer–supplier arrangement. \n\nThe two sides are now co-designing chips, racks, and end-to-end system architecture.\n\nVahdat said: “This is no longer a matter of purchasing and partners.” \nWithout deep co-design with Taiwanese firms, Google could not have built its current infrastructure and compute platforms. Cooperation is accelerating month by month, quarter by quarter, and year by year.",
+    "date": 1788668390,
+    "media": [
+     {
+      "type": "image",
+      "src": "https://pbs.twimg.com/media/HRgZKANasAAeRcj.jpg?name=orig",
+      "ratio": 0.6641
+     }
+    ],
+    "links": []
+   }
+  }
+ ],
+ "article": {
+  "title": "امین وحدت، مغز متفکر زیرساخت هوش مصنوعی گوگل توی تایوان پرده از یه ماجرای تازه برداشته و گفته چیپ اختصاصی بعدی گوگل احتمالاً دیگه از جنس TPUهای غول‌پیکر قبلی نباشه",
+  "source_title": "Google’s next custom chip may not be another TPU.",
+  "body": [
+   "ببین رفیق، امین وحدت، مغز متفکر زیرساخت هوش مصنوعی گوگل توی تایوان پرده از یه ماجرای تازه برداشته و گفته چیپ اختصاصی بعدی گوگل احتمالاً دیگه از جنس TPUهای غول‌پیکر قبلی نباشه. حرف حسابش اینه که واسه ایجنت‌های هوش مصنوعی، مشکل اصلی دیگه کمبود قدرت پردازش خام نیست؛ گیر اصلی، انتقال سریع داده‌ها و هماهنگ کردن کارها با کمترین تأخیره که این یه کار کاملاً پردازنده‌محوره. خلاصه‌ش اینه که بعد از جدا شدن مرحله آموزش از استنتاج، حالا نوبت یه تراشه کنترلی اختصاصی برای مدیریت ایجنت‌هاست، چون پردازش الان مفت تموم میشه ولی هماهنگ‌سازی و لنگ نزدن سیستم بدجوری خرج برمی‌داره. از اون طرفم رابطه گوگل با بر و بچه‌های زنجیره تأمین تایوان از خرید و فروش ساده گذشته و حالا دارن شونه‌به‌شونه هم این چیپ‌ها رو طراحی می‌کنن."
+  ],
+  "why": "نشون میده میدون جنگ هوش مصنوعی از زورآزمایی سر قدرت پردازشی گذشته و از این به بعد برنده کسیه که بتونه جریان داده‌ها و تصمیم‌گیری ایجنت‌ها رو تر و تمیزتر مدیریت کنه.",
+  "tags": [
+   "گوگل",
+   "تراشه"
+  ]
+ },
+ "updated": "2026-10-25T12:27:45+00:00",
+ "gholam_checked": "2026-10-25T12:27:45+00:00"
+}

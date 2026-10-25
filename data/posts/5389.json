@@ -1,0 +1,70 @@
+{
+ "id": 5389,
+ "url": "https://t.me/dlmehr/5389",
+ "date": "2026-09-20T16:13:17+00:00",
+ "text": "https://fxtwitter.com/alibaba_qwen/status/2101659302792679789?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+ "forwarded_from": null,
+ "digest": false,
+ "hash": "068040517eb3",
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/alibaba_qwen/status/2101659302792679789?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+  "site": "🧵 Thread • FxTwitter",
+  "title": "Qwen (@Alibaba_Qwen)",
+  "description": "Meet Qwen-Image-2.1, the most balanced and cost-effective image generation model in the Qwen-Image series! Now open weights!\n🎨\nA unified model for both generation and editing, delivering top-tier quality in a lightweight package.\nHighlights:\n👀\n- Compact…",
+  "image": "https://cdn4.telesco.pe/file/gA1PVxtnVBt5fmRZiXO3wGzlJdLqkosqJSVKFzy7vDDi_zWErehWUKy2TsmzwEuZewe-3HS9dZKrF0qwmBixHn_Og_eU7fVXaDqQrI5Np2a1Od9jtiQh1Cw6JbpY3fwHiau3NsYuzUHAqbJuTY3uO27oWMMgwnhl0DQNGSUhL8tpn0_6rmSJOUAnvjMIOQDUt2WrvJA5jmZEq597FlnvkjIyG6KZB9hmXsYw4Jb3uEo47idUL2NBPu4hMsw0_YPJFxEZodbk5r-Ndldwv18wTnjgQaK3OvUq7pFODuMPWf83U3ZNnQ6AUBcXnQm8v-egWZUJppb-j9IlQp5T0ai9Yw.jpg"
+ },
+ "gholam": {
+  "text": "رفیق ببین، تیم کاردرست کوئن (Qwen) تازه از مدل Qwen-Image-2.1 رونمایی کرده و دمشون گرم که وزناش رو هم کاملاً متن‌باز در اختیار همه گذاشتن. این مدل جمع‌وجورِ ۷ میلیارد پارامتری هم کار خلق تصویر رو انجام میده و هم ادیت، اونم با سرعتی خیره‌کننده که خیلی از رقبای پولی و انحصاری بازار رو راحت جا می‌ذاره. قابلیت استثناییش اینه که ذاتاً فرمت‌های شفاف (RGBA) رو می‌فهمه و حتی می‌تونی تا ۱۰ تا عکس نمونه بهش بدی تا بدون به‌هم‌ریختن چهره یا بافت محصول، برات ویرایش تر و تمیز بزنه. از ساخت اینفوگرافیک و تایپوگرافی شیک گرفته تا عکس‌های پانوراما و پرو مجازی لباس، همه‌رو با یه جزئیات طبیعی و درجه‌یک ردیف می‌کنه.\n\nچرا مهمه؟ چون یه ابزار همه‌فن‌حریف، سبک و باکیفیت به صورت رایگان دست طراحا رسیده تا بدون خرجای سنگین و بدون وابستگی به سرویس‌های انحصاری، خفن‌ترین محتواهای بصری رو بسازن.",
+  "date": "2026-09-20T16:13:32+00:00"
+ },
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/Alibaba_Qwen/status/2101659302792679789",
+   "domain": "x.com",
+   "author": {
+    "name": "Qwen",
+    "handle": "Alibaba_Qwen",
+    "avatar": "https://pbs.twimg.com/profile_images/2064231947149377536/Ab70PxT5_200x200.jpg"
+   },
+   "text": "Meet Qwen-Image-2.1, the most balanced and cost-effective image generation model in the Qwen-Image series! Now open weights! 🎨\n\nA unified model for both generation and editing, delivering top-tier quality in a lightweight package.\n\nHighlights: 👀\n- Compact & exceptionally fast: A lightweight 7B architecture that outperforms most closed-source models, with drastically accelerated inference for multi-image inputs.\n- Native transparency: Natively generates and edits RGBA layers, enabling seamless compositing and text editing within transparent images.\n- Versatile, high-fidelity editing: Supports up to 10 reference images and precise local control while preserving strict fidelity for portraits and products.\n- Broad coverage & stunning aesthetics: Excels at panoramas, infographics, and virtual try-ons, delivering realistic textures and elegant typography.\n\nStart to create your next masterpiece with Qwen-Image-2.1! 🖼️\n\n- Blog: https://qwen.ai/blog?id=qwen-image-2.1\n- GitHub: https://github.com/QwenLM/Qwen-Image-2.1\n- Model Scope: https://www.modelscope.cn/models/Qwen/Qwen-Image-2.1\n- Hugging Face: https://huggingface.co/Qwen/Qwen-Image-2.1",
+   "date": 1789909599,
+   "media": [
+    {
+     "type": "image",
+     "src": "https://pbs.twimg.com/media/HSqWS--aYAAi5G0.jpg?name=orig",
+     "ratio": 0.5624
+    }
+   ],
+   "links": [
+    "https://qwen.ai/blog?id=qwen-image-2.1",
+    "https://github.com/QwenLM/Qwen-Image-2.1",
+    "https://www.modelscope.cn/models/Qwen/Qwen-Image-2.1",
+    "https://huggingface.co/Qwen/Qwen-Image-2.1"
+   ]
+  },
+  {
+   "kind": "link",
+   "url": "https://qwen.ai/blog?id=qwen-image-2.1",
+   "domain": "qwen.ai",
+   "title": "Qwen",
+   "description": "Qwen offers comprehensive functionality spanning chatbot, image and video understanding, image generation, document processing, web search integration, tool utilization, and artifacts.",
+   "image": "https://img.alicdn.com/imgextra/i4/O1CN01OXv3EM1FN8t9W4P79_!!6000000000474-2-tps-80-80.png",
+   "site": "qwen.ai"
+  }
+ ],
+ "article": {
+  "title": "تیم کاردرست کوئن (Qwen) تازه از مدل Qwen-Image-2.1 رونمایی کرده و دمشون گرم که وزناش رو هم کاملاً متن‌باز در اختیار همه گذاشتن",
+  "source_title": "Meet Qwen-Image-2.1, the most balanced and cost-effective image generation model in the Qwen-Image series! Now open weights! 🎨",
+  "body": [
+   "رفیق ببین، تیم کاردرست کوئن (Qwen) تازه از مدل Qwen-Image-2.1 رونمایی کرده و دمشون گرم که وزناش رو هم کاملاً متن‌باز در اختیار همه گذاشتن. این مدل جمع‌وجورِ ۷ میلیارد پارامتری هم کار خلق تصویر رو انجام میده و هم ادیت، اونم با سرعتی خیره‌کننده که خیلی از رقبای پولی و انحصاری بازار رو راحت جا می‌ذاره. قابلیت استثناییش اینه که ذاتاً فرمت‌های شفاف (RGBA) رو می‌فهمه و حتی می‌تونی تا ۱۰ تا عکس نمونه بهش بدی تا بدون به‌هم‌ریختن چهره یا بافت محصول، برات ویرایش تر و تمیز بزنه. از ساخت اینفوگرافیک و تایپوگرافی شیک گرفته تا عکس‌های پانوراما و پرو مجازی لباس، همه‌رو با یه جزئیات طبیعی و درجه‌یک ردیف می‌کنه."
+  ],
+  "why": "چون یه ابزار همه‌فن‌حریف، سبک و باکیفیت به صورت رایگان دست طراحا رسیده تا بدون خرجای سنگین و بدون وابستگی به سرویس‌های انحصاری، خفن‌ترین محتواهای بصری رو بسازن.",
+  "tags": [
+   "چین"
+  ]
+ },
+ "updated": "2026-10-25T12:26:22+00:00",
+ "gholam_checked": "2026-10-25T12:26:22+00:00"
+}

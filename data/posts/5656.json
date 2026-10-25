@@ -1,0 +1,67 @@
+{
+ "id": 5656,
+ "url": "https://t.me/dlmehr/5656",
+ "date": "2026-10-05T19:17:58+00:00",
+ "text": "https://fxtwitter.com/reflection_ai/status/2107186849370247235?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+ "forwarded_from": null,
+ "digest": false,
+ "hash": "2a1b74d37d6b",
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/reflection_ai/status/2107186849370247235?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+  "site": "🧵 Thread • FxTwitter",
+  "title": "Reflection (@reflection_ai)",
+  "description": "Introducing Beam: a highly efficient agentic open model with 501B total parameters and 23B active.\n- Frontier reasoning efficiency\n- Advances the Western open frontier on coding & agentic tasks\n- Trained end-to-end from scratch\nFull weights release this…",
+  "image": "https://cdn4.telesco.pe/file/WX8nfLJVzC8dLsz3b--5OpDY6HiZQvcs3PMquYRQelvimgbNBNSzfD_XME-aAKCNWy183lO5la9A-gKKT_MFXzt1DJfKhScvi6iuxyNLTcDKcq7qoNtF8QPVwqmoWD7FExkXykQfbYd5XTNxLHo5fIqXgjCZc7XkE1NA1tkiIUOuQhUHwoXlHUN3u9f84oKx7KmMQDd1O6beeVZtG6Ft-f4EibLHY6xbn8u5LttmrHgzKZR5BJHioIwSDpSq_fLvF7tzZiwzQT5ZrEfVZUNXj2eZ4eLuO0zvBFtK7wTXTZ6znGLt9sCIDJwgF6IxmQ7GAjXBM31g74XM79krUhZ_PQ.jpg"
+ },
+ "gholam": {
+  "text": "رفیق، بچه‌های Reflection AI دست به کار شدن و از یه مدل متن‌باز پرقدرت به اسم Beam رونمایی کردن که در مجموع ۵۰۱ میلیارد پارامتر داره، اما موقع پردازش فقط ۲۳ میلیاردش درگیر می‌شه و حسابی تو مصرف منابع فرزه. این غول جدید از پایه و صفر کیلومتر آموزش دیده و تمرکز اصلیش روی کارایی بالا، کدنویسی خفن و انجام تسک‌های خودکار یا همون ایجنتیکه. خبر خوب هم اینه که سازنده‌هاش قول دادن وزن‌های کامل مدل رو همین ماه رایگان و عمومی منتشر کنن تا همه بتونن ازش استفاده کنن.\n\nچرا مهمه؟ اهمیتش اینه که انتشار عمومی همچین مدل پرقدرت و بهینه‌ای، دست توسعه‌دهنده‌ها رو واسه ساخت برنامه‌های مستقل و هوشمند بدون هزینه‌های سرسام‌آور حسابی باز می‌کنه.",
+  "date": "2026-10-05T19:18:10+00:00"
+ },
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/reflection_ai/status/2107186849370247235",
+   "domain": "x.com",
+   "author": {
+    "name": "Reflection",
+    "handle": "reflection_ai",
+    "avatar": "https://pbs.twimg.com/profile_images/2107189477575696385/id98cuOX_200x200.jpg"
+   },
+   "text": "Introducing Beam: a highly efficient agentic open model with 501B total parameters and 23B active.\n\n- Frontier reasoning efficiency\n- Advances the Western open frontier on coding & agentic tasks\n- Trained end-to-end from scratch\n\nFull weights release this month.\n\nLearn more about Beam: http://reflection.ai/beam",
+   "date": 1791227469,
+   "media": [
+    {
+     "type": "image",
+     "src": "https://pbs.twimg.com/media/HT46mRYXwAAxTdt.jpg?name=orig",
+     "ratio": 0.5367
+    }
+   ],
+   "links": [
+    "http://reflection.ai/beam"
+   ]
+  },
+  {
+   "kind": "link",
+   "url": "https://reflection.ai/blog/introducing-beam",
+   "domain": "reflection.ai",
+   "title": "Introducing Beam: Reflection’s 501B open-weight model — Reflection",
+   "description": "Make intelligence open and accessible to all",
+   "image": "https://cdn.sanity.io/images/sp40emik/production/771cfe201a3d24d7a340c3372e6a1654ec1a6e42-1800x1013.png",
+   "site": "Reflection"
+  }
+ ],
+ "article": {
+  "title": "بچه‌های Reflection AI دست به کار شدن و از یه مدل متن‌باز پرقدرت به اسم Beam رونمایی کردن که در مجموع ۵۰۱ میلیارد پارامتر داره، اما موقع پردازش فقط ۲۳ میلیاردش درگیر می‌شه و حسابی تو مصرف منابع فرزه",
+  "source_title": "Introducing Beam: a highly efficient agentic open model with 501B total parameters and 23B active.",
+  "body": [
+   "رفیق، بچه‌های Reflection AI دست به کار شدن و از یه مدل متن‌باز پرقدرت به اسم Beam رونمایی کردن که در مجموع ۵۰۱ میلیارد پارامتر داره، اما موقع پردازش فقط ۲۳ میلیاردش درگیر می‌شه و حسابی تو مصرف منابع فرزه. این غول جدید از پایه و صفر کیلومتر آموزش دیده و تمرکز اصلیش روی کارایی بالا، کدنویسی خفن و انجام تسک‌های خودکار یا همون ایجنتیکه. خبر خوب هم اینه که سازنده‌هاش قول دادن وزن‌های کامل مدل رو همین ماه رایگان و عمومی منتشر کنن تا همه بتونن ازش استفاده کنن."
+  ],
+  "why": "اهمیتش اینه که انتشار عمومی همچین مدل پرقدرت و بهینه‌ای، دست توسعه‌دهنده‌ها رو واسه ساخت برنامه‌های مستقل و هوشمند بدون هزینه‌های سرسام‌آور حسابی باز می‌کنه.",
+  "tags": [
+   "کدنویسی"
+  ]
+ },
+ "updated": "2026-10-25T12:24:48+00:00",
+ "gholam_checked": "2026-10-25T12:24:48+00:00"
+}

@@ -1,0 +1,80 @@
+{
+ "id": 4760,
+ "url": "https://t.me/dlmehr/4760",
+ "date": "2026-08-15T15:56:54+00:00",
+ "text": "https://fxtwitter.com/i/status/2088364224749994061",
+ "forwarded_from": "Parsa Razavi",
+ "digest": false,
+ "hash": "9976f10f66f5",
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/i/status/2088364224749994061",
+  "site": "🧵 Thread • FxTwitter",
+  "title": "AI/ML API (@aimlapi)",
+  "description": "Qwen 3.8 27B beat Claude Opus 4.6 for $0\nopen-weights Qwen 3.8 27B on one rented GPU vs anthropic's Claude Opus 4.6. same prompt, no edits\nthe test: one self-contained three.js file rendering sunken Atlantis — temple, columns, boid fish, kelp, bubbles…",
+  "image": null
+ },
+ "gholam": {
+  "text": "ببین رفیق، بچه‌های حوزه هوش مصنوعی اومدن مدل متن‌باز Qwen 3.8 27B رو انداختن به جون غول مرحله آخر یعنی Claude Opus 4.6 تا عیارشون رو توی کدنویسی سه‌بعدی بسنجن. قضیه از این قرار بود که با یه پرامپت یکسان و بدون دستکاری، از جفتشون خواستن یه صحنه خفن از شهر غرق‌شده آتلانتیس با معبد، نورپردازی زیر آب، ماهی‌ها و چرخش ۲۰ ثانیه‌ای دوربین با Three.js بسازن. در کمال ناباوری، مدل ۲۷ میلیاردی و رایگان کوئن یه معبد کامل با گنبد و پورتال نورانی و کلی جزئیات تحویل داد و دست مدل بسته اوپوس رو که ۲۱ سنت هم هزینه داشت بست. خروجی اوپوس خیلی خلوت و مات از آب دراومد، اما کوئن با اینکه رو یه گرافیک اجاره‌ای ران شده بود، صحنه‌ای به مراتب زنده‌تر و لایه‌لایه‌تر ساخت.\n\nاهمیتش اینه که مدل‌های متن‌باز و سبک دارن به نقطه‌ای می‌رسن که بدون نیاز به هزینه‌های سنگین اشتراک، غول‌های انحصاری بازار رو توی تسک‌های پیچیده کدنویسی شکست می‌دن.",
+  "date": "2026-08-15T15:57:06+00:00"
+ },
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/aimlapi/status/2088364224749994061",
+   "domain": "x.com",
+   "author": {
+    "name": "AI/ML API",
+    "handle": "aimlapi",
+    "avatar": "https://pbs.twimg.com/profile_images/2061768103298473984/Zx3T3Ovp_200x200.jpg"
+   },
+   "text": "Qwen 3.8 27B beat Claude Opus 4.6 for $0 \n\nopen-weights Qwen 3.8 27B on one rented GPU vs anthropic's Claude Opus 4.6. same prompt, no edits\n\nthe test: one self-contained three.js file rendering sunken Atlantis — temple, columns, boid fish, kelp, bubbles, god rays, caustics — plus a 20-second camera flythrough\n\ncost:\nQwen 3.8 27B — free (open weights, self-hosted)\nClaude Opus 4.6 — $0.21\n\nwhat we saw:\n• qwen actually built a temple — full colonnade, domed roof, glowing portal centered. opus made a long row of columns fading into fog\n\n• qwen's portal is the star of the shot. opus leaves it small and off to the side\n\n• qwen packed more into frame — fish, kelp, ruins layered together. opus spreads thin and empty\n\nqwen's weights are on hugging face — you can run this one yourself!",
+   "date": 1786739805,
+   "media": [
+    {
+     "type": "video",
+     "src": "https://video.twimg.com/amplify_video/2088361900190920704/vid/avc1/1280x720/v28GxT8AdcUGmaCE.mp4?tag=29",
+     "poster": "https://pbs.twimg.com/amplify_video_thumb/2088361900190920704/img/IlumQMROzG1oaeKg.jpg",
+     "ratio": 0.5625,
+     "duration": 20.015,
+     "gif": false
+    }
+   ],
+   "links": [],
+   "quote": {
+    "author": {
+     "name": "Qwen",
+     "handle": "Alibaba_Qwen",
+     "avatar": "https://pbs.twimg.com/profile_images/2064231947149377536/Ab70PxT5_200x200.jpg"
+    },
+    "text": "We promised open weights for Qwen3.8. Now, time to meet them! 🎉\n\n⚡ Qwen3.8-27B:\n- A native multimodal dense model. With just 27B parameters, it outperforms Qwen3.7-Plus overall and shines in real-world coding & office workflows.\n- 262K native context, easily extendable to 1M tokens via YaRN.\n- Built for builders. Highly efficient, high-quality, and licensed under Apache 2.0.\n\n🚀 The open weights for Qwen3.8-2.4T-A95B (Max-level) have also been released recently.\n\nWhether you're shipping lightweight applications with Qwen3.8-27B locally or building agents with Qwen3.8-2.4T-A95B, they're yours now!\n\nDownload, deploy, and build something we haven't imagined yet. 👀👇\n- Hugging Face：\nhttps://huggingface.co/collections/Qwen/qwen38\n- ModelScope：\nhttps://www.modelscope.cn/collections/Qwen/Qwen38",
+    "date": 1786719768,
+    "media": [
+     {
+      "type": "image",
+      "src": "https://pbs.twimg.com/media/HPsKxzsbQAAJa4d.jpg?name=orig",
+      "ratio": 0.5625
+     }
+    ],
+    "links": [
+     "https://huggingface.co/collections/Qwen/qwen38",
+     "https://www.modelscope.cn/collections/Qwen/Qwen38"
+    ]
+   }
+  }
+ ],
+ "article": {
+  "title": "بچه‌های حوزه هوش مصنوعی اومدن مدل متن‌باز Qwen 3.8 27B رو انداختن به جون غول مرحله آخر یعنی Claude Opus 4.6 تا عیارشون رو توی کدنویسی سه‌بعدی بسنجن",
+  "source_title": "Qwen 3.8 27B beat Claude Opus 4.6 for $0",
+  "body": [
+   "ببین رفیق، بچه‌های حوزه هوش مصنوعی اومدن مدل متن‌باز Qwen 3.8 27B رو انداختن به جون غول مرحله آخر یعنی Claude Opus 4.6 تا عیارشون رو توی کدنویسی سه‌بعدی بسنجن. قضیه از این قرار بود که با یه پرامپت یکسان و بدون دستکاری، از جفتشون خواستن یه صحنه خفن از شهر غرق‌شده آتلانتیس با معبد، نورپردازی زیر آب، ماهی‌ها و چرخش ۲۰ ثانیه‌ای دوربین با Three.js بسازن. در کمال ناباوری، مدل ۲۷ میلیاردی و رایگان کوئن یه معبد کامل با گنبد و پورتال نورانی و کلی جزئیات تحویل داد و دست مدل بسته اوپوس رو که ۲۱ سنت هم هزینه داشت بست. خروجی اوپوس خیلی خلوت و مات از آب دراومد، اما کوئن با اینکه رو یه گرافیک اجاره‌ای ران شده بود، صحنه‌ای به مراتب زنده‌تر و لایه‌لایه‌تر ساخت."
+  ],
+  "why": "مدل‌های متن‌باز و سبک دارن به نقطه‌ای می‌رسن که بدون نیاز به هزینه‌های سنگین اشتراک، غول‌های انحصاری بازار رو توی تسک‌های پیچیده کدنویسی شکست می‌دن.",
+  "tags": [
+   "آنتروپیک",
+   "چین"
+  ]
+ },
+ "updated": "2026-10-25T12:30:14+00:00",
+ "gholam_checked": "2026-10-25T12:30:14+00:00"
+}

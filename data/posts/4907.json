@@ -1,0 +1,56 @@
+{
+ "id": 4907,
+ "url": "https://t.me/dlmehr/4907",
+ "date": "2026-08-24T16:40:32+00:00",
+ "text": "https://fxtwitter.com/liquidai/status/2091906366428598284?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+ "forwarded_from": null,
+ "digest": false,
+ "hash": "cd5eb8739614",
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/liquidai/status/2091906366428598284?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+  "site": "🧵 Thread • FxTwitter",
+  "title": "Liquid AI (@liquidai)",
+  "description": "Today we release Pipette, a model evaluation suite for on-device intelligence, in partnership with @ArtificialAnlys\nMost benchmarking platforms are optimized to measure core capabilities and speed profile of foundation models served in the cloud. Pipette…",
+  "image": "https://cdn4.telesco.pe/file/Of8n0qq3oMx-CmJryxrEm1UKwVKb7xtfyvHYCF-totCsPUGcBAoadeO9M5pKPripKSeJbHgeTwUt-5UZGlflhAm5-vwvkam9daBhKQEnQj43EzSq20rQ8GBmEP-nlsAfMuclJUSGW3fXEW__S6MMHIZ2em40c_H1L9XNkWIFn3oWJBcS9RCX3-OeZKEcM8V5uomtBaxTuj3vVersg1x5IH92Fow3jXcNEqCvXACnd7_igHcDMvsznDPmYrWfxPqyCL-1EHbC9SWEY2ncXy3DmMr3B98a1J4_S1C3UP7ONylWLQbwvi3tw7TRB7elUmhWvetbeioXG6AWlOtt3Wx_AA.jpg"
+ },
+ "gholam": {
+  "text": "ببین رفیق، بچه‌های شرکت Liquid AI با همکاری Artificial Analysis یه ابزار متن‌باز مشتی به اسم Pipette دادن بیرون که کارش بنچمارک و سنجش هوش مصنوعی روی خود دستگاه‌ها مثل گوشی، لپ‌تاپ و قطعات تعبیه‌شده‌ست. تا الان بیشتر ابزارهای تست فقط به درد مدل‌های ابری می‌خوردن، ولی این یکی قشنگ میاد سرعت، تاخیر، مصرف رم و کیفیت خروجی رو ترکیب‌شده با نوع کوانتیزاسیون و ران‌تایم روی سخت‌افزار واقعی می‌سنجه. همین اول کاری هم بیش از ۱۰ هزار نتیجه تست معتبر برای ۳۵ مدل مختلف با درجات کوانت و تنظیمات llama.cpp آماده کردن تا ملت بتونن عملکرد مدل‌ها رو کف بازار مقایسه کنن.\n\nچرا مهمه؟ اهمیتش اینه که سنجش مدل‌ها روی گوشی و لپ‌تاپ تا حالا حساب‌کتاب دقیقی نداشت و این بنچمارک استاندارد کمک می‌کنه بفهمیم چه مدلی واقعاً بدون نیاز به اینترنت روی دستگاه خودمون روان و بی‌دردسر کار می‌کنه.",
+  "date": "2026-08-24T16:40:49+00:00"
+ },
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/liquidai/status/2091906366428598284",
+   "domain": "x.com",
+   "author": {
+    "name": "Liquid AI",
+    "handle": "liquidai",
+    "avatar": "https://pbs.twimg.com/profile_images/1702611993327251456/PUUuOA4W_200x200.jpg"
+   },
+   "text": "Today we release Pipette, a model evaluation suite for on-device intelligence, in partnership with @ArtificialAnlys \n\nMost benchmarking platforms are optimized to measure core capabilities and speed profile of foundation models served in the cloud. Pipette gives the field a common, reproducible way to measure the quality, speed, latency, and memory use of AI models on devices such as phones, laptops, PCs, AI boxes, and embedded hardware.\n\n> Pipette is open source\n> In Pipette, models get compated as model + quantization + runtime + device from one interface.\n> It comes with a warehouse of verified benchmark results, currently with 10k+ results across 35 model classes, 7 quants, llama.cpp runtimes, and 4 devices.\n> Pipette is a dynamic platform, allowing new contributions from day one, adding new devices, runtimes, model families, and quantization levels. \n\n🧵",
+   "date": 1787584318,
+   "media": [
+    {
+     "type": "image",
+     "src": "https://pbs.twimg.com/media/HQfxwNma4AETD1r.jpg?name=orig",
+     "ratio": 0.4867
+    }
+   ],
+   "links": []
+  }
+ ],
+ "article": {
+  "title": "بچه‌های شرکت Liquid AI با همکاری Artificial Analysis یه ابزار متن‌باز مشتی به اسم Pipette دادن بیرون که کارش بنچمارک و سنجش هوش مصنوعی روی خود دستگاه‌ها مثل گوشی، لپ‌تاپ و قطعات تعبیه‌شده‌ست",
+  "source_title": "Today we release Pipette, a model evaluation suite for on-device intelligence, in partnership with @ArtificialAnlys",
+  "body": [
+   "ببین رفیق، بچه‌های شرکت Liquid AI با همکاری Artificial Analysis یه ابزار متن‌باز مشتی به اسم Pipette دادن بیرون که کارش بنچمارک و سنجش هوش مصنوعی روی خود دستگاه‌ها مثل گوشی، لپ‌تاپ و قطعات تعبیه‌شده‌ست. تا الان بیشتر ابزارهای تست فقط به درد مدل‌های ابری می‌خوردن، ولی این یکی قشنگ میاد سرعت، تاخیر، مصرف رم و کیفیت خروجی رو ترکیب‌شده با نوع کوانتیزاسیون و ران‌تایم روی سخت‌افزار واقعی می‌سنجه. همین اول کاری هم بیش از ۱۰ هزار نتیجه تست معتبر برای ۳۵ مدل مختلف با درجات کوانت و تنظیمات llama.cpp آماده کردن تا ملت بتونن عملکرد مدل‌ها رو کف بازار مقایسه کنن."
+  ],
+  "why": "اهمیتش اینه که سنجش مدل‌ها روی گوشی و لپ‌تاپ تا حالا حساب‌کتاب دقیقی نداشت و این بنچمارک استاندارد کمک می‌کنه بفهمیم چه مدلی واقعاً بدون نیاز به اینترنت روی دستگاه خودمون روان و بی‌دردسر کار می‌کنه.",
+  "tags": [
+   "متا"
+  ]
+ },
+ "updated": "2026-10-25T12:29:23+00:00",
+ "gholam_checked": "2026-10-25T12:29:23+00:00"
+}

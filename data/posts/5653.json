@@ -1,0 +1,65 @@
+{
+ "id": 5653,
+ "url": "https://t.me/dlmehr/5653",
+ "date": "2026-10-05T18:42:11+00:00",
+ "text": "https://fxtwitter.com/xadisingh/status/2107108577051844783?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+ "forwarded_from": null,
+ "digest": false,
+ "hash": "6492ec6170d3",
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/xadisingh/status/2107108577051844783?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+  "site": "FxTwitter",
+  "title": "Adi Singh (@xadisingh)",
+  "description": "Introducing Reason 1.0\nA frontier coding agent for valuable work.\nWe wanted to see what a good coding agent would look like. Seamless, simple with customization for your models and subscriptions.\nFast and lightweight, Reason Scores incredible on standard…",
+  "image": null
+ },
+ "gholam": null,
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/xadisingh/status/2107108577051844783",
+   "domain": "x.com",
+   "author": {
+    "name": "Adi Singh",
+    "handle": "xadisingh",
+    "avatar": "https://pbs.twimg.com/profile_images/2103296266134573056/xxdggk3S_200x200.jpg"
+   },
+   "text": "Introducing Reason 1.0\n\nA frontier coding agent for valuable work.\n\nWe wanted to see what a good coding agent would look like. Seamless, simple with customization for your models and subscriptions. \n\nFast and lightweight, Reason Scores incredible on standard benchmarks. \n\nUse it for free today http://reasonmachines.com",
+   "date": 1791208807,
+   "media": [
+    {
+     "type": "video",
+     "src": "https://video.twimg.com/amplify_video/2107095130276786176/vid/avc1/1280x720/Cv4yLlvA4Ot8TMnD.mp4?tag=29",
+     "poster": "https://pbs.twimg.com/amplify_video_thumb/2107095130276786176/img/ni-MDSVie1KBoReB.jpg",
+     "ratio": 0.5625,
+     "duration": 37.5,
+     "gif": false
+    }
+   ],
+   "links": [
+    "http://reasonmachines.com"
+   ]
+  },
+  {
+   "kind": "link",
+   "url": "https://reasonmachines.com/",
+   "domain": "reasonmachines.com",
+   "title": "Reason: Autonomous Software Engineer",
+   "description": "Reason is the autonomous AI software engineer and cloud coding agent. Connect GitHub, assign issues, and ship evidence-backed pull requests on autopilot.",
+   "image": "https://reasonmachines.com/reason-og-hexagons.png",
+   "site": "Reason"
+  }
+ ],
+ "article": {
+  "title": "Introducing Reason 1.0",
+  "source_title": null,
+  "body": [],
+  "why": null,
+  "tags": [
+   "کدنویسی"
+  ]
+ },
+ "updated": "2026-10-25T12:24:49+00:00",
+ "gholam_checked": "2026-10-25T12:24:49+00:00"
+}

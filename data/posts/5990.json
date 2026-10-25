@@ -2,16 +2,23 @@
  "id": 5990,
  "url": "https://t.me/dlmehr/5990",
  "date": "2026-10-20T17:06:33+00:00",
- "edited": true,
- "views": "202",
  "text": "https://fxtwitter.com/deepseek_ai/status/2112476496283775135?s=52&t=F41Qa04r48Mef_j_XjBneQ",
  "forwarded_from": null,
  "digest": false,
  "hash": "10d84e0d607c",
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/deepseek_ai/status/2112476496283775135?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+  "site": "FxTwitter · github.com",
+  "title": "DeepSeek (@deepseek_ai)",
+  "description": "🚀\nIntroducing DeepInfer, our in-house inference framework, now fully open source!\nPowering DeepSeek-V4.1-Flash at scale with high throughput and low latency. We’re sharing our production stack to help the community lower compute costs, reduce energy use…",
+  "image": "https://cdn4.telesco.pe/file/WSmm3R3ZuV__58gV7Wlkdh0PmjfvmwMIoftTm51ftgKZ02SdGRlvWsClabDlh4y8NtZ43yVDeduxOksySi5ClJeUfMbrQ1ml4ZNrPvXkTplCMFKqgftN6EnijMV9tPZW2McCKHHGXuAvSXpPDTq6Eplv-ls5lF53KImhSUrPZtTY3TJ1bFQsQZNPz_ok7x3UN2acRFIjyvILUkxFeARSe9XawTK3_fKUyxveOXL88LGpVERk4I7pYFzcGv8-E58wgdovjWpPQ182bDcIkfGQay8-g2fI4tjKpJv9p8Eo8wD6m3KzoJcs3QQk-8R_8RgaTDBOEL8-qxx7GqdXRCZGWw.jpg"
+ },
  "gholam": {
   "text": "ببین رفیق، بچه‌های دیپ‌سیک باز گل کاشتن و این دفعه فریم‌ورک اختصاصی خودشون واسه اجرای مدل‌ها، یعنی DeepInfer رو کاملاً اوپن‌سورس و رایگان در دسترس همه گذاشتن. این همون سیستمیه که مدل قدرتمند DeepSeek-V4.1-Flash رو با سرعت بالا، تاخیر فوق‌العاده کم و بازدهی سنگین سرپا نگه داشته و حالا تمام زیرساخت تولیدش رو با کامیونیتی به اشتراک گذاشتن. هدفشون هم اینه که هزینه‌های سرسام‌آور سخت‌افزار و مصرف برق هوش مصنوعی رو بکشن پایین تا استفاده از این فناوری واسه همه ارزون‌تر و در دسترس‌تر بشه.\n\nچرا مهمه؟ چون وقتی غول‌های هوش مصنوعی ابزارهای زیرساختی‌شون رو عمومی می‌کنن، هزینه‌های پردازش برای توسعه‌دهنده‌ها افت شدیدی پیدا می‌کنه و دست همه واسه ساخت پروژه‌های سریع و به‌صرفه باز می‌شه.",
   "date": "2026-10-20T17:06:52+00:00"
  },
+ "gholam_checked": "2026-10-24T23:03:15+00:00",
  "links": [
   {
    "kind": "tweet",
@@ -53,18 +60,6 @@
    "text": "DeepInfer is the high-performance inference framework that powers DeepSeek's large-scale production services. This open-source release provides offline inference with the core features needed for serving at scale.\nSupported models:\n- DeepSeek-V4.1-Flash\nSupported features:\n- Optimized kernels, model and sampler runtime\n- Parallelism: Attention DP / balanced CP, MoE EP + EPLB\n- DSpark and confidence-scheduled verification\n- SWA bounded replay\n- Asynchronous scheduling (zero-overhead batch scheduler)\n- Batch-invariant inference\n- Deterministic sampling\n- Structured outputs\nFeature details and configuration\n- Optimized kernels: FlashMLA, DeepGEMM, DeepEP, TileKernels, DeepSelect, and custom TileLang kernels.\n- DSpark and confidence-scheduled verification: accelerate decoding with draft tokens and use confidence estimates to schedule verification. Set DEEPINFER_ENABLE_MTP_VARLEN=1; DEEPINFER_USE_NEXTN_DECODE controls the maximum draft length (default: 5).\n- Decoder SWA bounded replay: reduce decoder prefill work by replaying only a bounded suffix. Set DEEPINFER_YOCO_PREFILL_TRUNCATION_MODE=compact and DEEPINFER_YOCO_PREFILL_KEEP_TOKENS=140 for the default V4.1 settings; the retained suffix must cover the SWA window plus the maximum backtracking length.\n- Asynchronous scheduling: overlap CPU batch scheduling with device execution. Enabled by default.\n- Batch-invariant inference: keep model results identical across different batch compositions. Enable with DEEPINFER_BATCH_INVARIANT=1 (NVIDIA only).\n- Deterministic sampling: produce identical outputs for identical input tokens and sampling parameters. Set DEEPINFER_BATCH_INVARIANT=1 DEEPINFER_ENABLE_MTP_VARLEN=0 and pass a fixed seq_seed to SamplingParams (NVIDIA only).\n- Structured outputs: constrain generation to a regex, JSON schema, or EBNF grammar. Pass so_args={\"schema_type\": ..., \"schema\": ...} to SamplingParams; see examples.\nSupported hardware:\n- NVIDIA SM100 GPUs\n- Huawei Ascend 950 NPUs\nRequired for a complete inference service (not included in this release):\n- A KV cache system\n- VE/Prefill/Decode disaggregation (most required engine functionality is already implemented)\n- Load balancing across data-parallel replicas for both prefill and decode\n- Linux\n- GCC >= 13.0\n- Python 3.12\n- CUDA 13 (NVIDIA only)\n- CANN 9.2 (Ascend only)\nBefore building DeepInfer, please create and activate an empty Python 3.12 environment.\n# Use `ascend` instead for the Ascend platform\n# Keep it exported in the environment where you run DeepInfer\nexport DEEPINFER_ACCELERATOR=nvidia\n./build.sh\nThe default checkpoint, deepseek-ai/DeepSeek-V4.1-Flash-1017, is\ndownloaded into the Hugging Face cache on the first run; set DEEPINFER_HF_MODEL_DIR=/path/to/DeepSeek-V4.1-Flash-1017 to\nrun from a local copy instead.\npython examples/offline_inference.py\nSee examples for details.\nMeasured on 4 SM100 GPUs for prefill and 64 for decode — each within one scale-up domain. To reproduce the benchmarks, see run_sweep.sh.\nSee eval/README.md.\nDeepInfer is released under the Apache License 2.0. See LICENSE for details.\nDeepInfer was originally built primarily on vLLM, with additional inspiration from SGLang and TensorRT-LLM. We thank their developers.\n@misc{deepinfer2026,\n  title = {DeepInfer: High-performance, large-scale inference framework for DeepSeek models},\n  author = {DeepSeek-AI},\n  year = {2026},\n  publisher = {GitHub},\n  howpublished = {\\url{https://github.com/deepseek-ai/DeepInfer}},\n}"
   }
  ],
- "media": [],
- "preview": {
-  "url": "https://fxtwitter.com/deepseek_ai/status/2112476496283775135?s=52&t=F41Qa04r48Mef_j_XjBneQ",
-  "site": "FxTwitter · github.com",
-  "title": "DeepSeek (@deepseek_ai)",
-  "description": "🚀\nIntroducing DeepInfer, our in-house inference framework, now fully open source!\nPowering DeepSeek-V4.1-Flash at scale with high throughput and low latency. We’re sharing our production stack to help the community lower compute costs, reduce energy use…",
-  "image": {
-   "src": "media/5990/preview.webp",
-   "width": 200,
-   "height": 200
-  }
- },
  "article": {
   "title": "بچه‌های دیپ‌سیک باز گل کاشتن و این دفعه فریم‌ورک اختصاصی خودشون واسه اجرای مدل‌ها، یعنی DeepInfer رو کاملاً اوپن‌سورس و رایگان در دسترس همه گذاشتن",
   "source_title": "🚀 Introducing DeepInfer, our in-house inference framework, now fully open source!",
@@ -78,6 +73,5 @@
    "کدنویسی"
   ]
  },
- "updated": "2026-10-24T23:03:15+00:00",
- "gholam_checked": "2026-10-24T23:03:15+00:00"
+ "updated": "2026-10-25T11:53:59+00:00"
 }

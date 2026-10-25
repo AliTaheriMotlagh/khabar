@@ -2,16 +2,23 @@
  "id": 5897,
  "url": "https://t.me/dlmehr/5897",
  "date": "2026-10-14T20:51:48+00:00",
- "edited": true,
- "views": "179",
  "text": "https://fxtwitter.com/mireloai/status/2110360787780800611/video/1?s=52",
  "forwarded_from": null,
  "digest": false,
  "hash": "f63dc83c032c",
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/mireloai/status/2110360787780800611/video/1?s=52",
+  "site": "🧵 Thread • FxTwitter",
+  "title": "Mirelo (@MireloAI)",
+  "description": "AI Videos finally sound real.\nIntroducing Mirelo SFX 2.0.\nIt watches your video, cuts the music you never prompted, keeps the dialogue, and builds a full sound design synced to the action and consistent across any length clips.\nYou’ve made it look right.…",
+  "image": null
+ },
  "gholam": {
   "text": "ببین رفیق، بچه‌های تیم Mirelo از نسخه دوم ابزار خفنشون به اسم Mirelo SFX 2.0 رونمایی کردن تا بالاخره ویدیوهای هوش مصنوعی صدای واقعی و مشتی به خودشون بگیرن. داستان اینه که این سیستم هوشمند ویدیوت رو مو به مو تماشا می‌کنه، آهنگ‌های اضافه و ناخواسته رو قیچی می‌زنه، دیالوگ‌ها رو دست‌نخورده نگه می‌داره و یک طراحی صدای کامل و دقیقاً سینک‌شده با حرکات تصویر برات می‌سازه. خیالت هم راحت باشه، روی ویدیو با هر تایم و طولی یکدستی کار رو قشنگ حفظ می‌کنه. خلاصه همین الان هم از طریق API خودشون و پلتفرم‌های Runway و Fal در دسترسه و بقیه سرویس‌ها هم به‌زودی بهش وصل می‌شن.\n\nاهمیتش اینه که نصف جون و جذابیت هر ویدیویی به افکت‌های صوتی طبیعیه و این ابزار دردسر صداگذاری دستی رو از دوش ویدیوسازها برمی‌داره.",
   "date": "2026-10-14T20:52:03+00:00"
  },
+ "gholam_checked": "2026-10-24T23:35:36+00:00",
  "links": [
   {
    "kind": "tweet",
@@ -46,14 +53,6 @@
    "links": []
   }
  ],
- "media": [],
- "preview": {
-  "url": "https://fxtwitter.com/mireloai/status/2110360787780800611/video/1?s=52",
-  "site": "🧵 Thread • FxTwitter",
-  "title": "Mirelo (@MireloAI)",
-  "description": "AI Videos finally sound real.\nIntroducing Mirelo SFX 2.0.\nIt watches your video, cuts the music you never prompted, keeps the dialogue, and builds a full sound design synced to the action and consistent across any length clips.\nYou’ve made it look right.…",
-  "image": null
- },
  "article": {
   "title": "بچه‌های تیم Mirelo از نسخه دوم ابزار خفنشون به اسم Mirelo SFX 2.0 رونمایی کردن تا بالاخره ویدیوهای هوش مصنوعی صدای واقعی و مشتی به خودشون بگیرن",
   "source_title": "AI Videos finally sound real.",
@@ -63,6 +62,5 @@
   "why": "نصف جون و جذابیت هر ویدیویی به افکت‌های صوتی طبیعیه و این ابزار دردسر صداگذاری دستی رو از دوش ویدیوسازها برمی‌داره.",
   "tags": []
  },
- "updated": "2026-10-24T23:35:36+00:00",
- "gholam_checked": "2026-10-24T23:35:36+00:00"
+ "updated": "2026-10-25T11:54:11+00:00"
 }

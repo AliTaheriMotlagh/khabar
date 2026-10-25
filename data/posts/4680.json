@@ -1,0 +1,56 @@
+{
+ "id": 4680,
+ "url": "https://t.me/dlmehr/4680",
+ "date": "2026-08-10T21:42:21+00:00",
+ "text": "https://fxtwitter.com/m1astra/status/2086898041882030353?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+ "forwarded_from": null,
+ "digest": false,
+ "hash": "bd9fbafebaa7",
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/m1astra/status/2086898041882030353?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+  "site": "🧵 Thread • FxTwitter",
+  "title": "M1 (@M1Astra)",
+  "description": "Anthropic says new Claude models will embed invisible watermarks in all generated text, everywhere Claude is offered.\nThe watermark is part of the text, it isn't metadata: \"it will travel with the text when it's copied and pasted elsewhere, and may persist…",
+  "image": "https://cdn4.telesco.pe/file/JvcBfWAUcAmgS1tZpaeorwUSHW3DwhpHLyBsKJiRb3zvh_l2-ZxAfct1Vaf1Wr4Z6MYfWLzmq04HaaWGX7_zmO3pFYQnQUJqJXwg71AKlZiWBVF_02FPj_z03Hifz_zKJ2EPQFOAIQHdtbprKaYoRbgINTta4mL8Yw3cSNim8l-WWNVF3p34wKxhjLbF0eKbzYo3BUbCzceO9rrm9TiOJSwRMDqeLgpJGT0MY8CObUV0tO70Mw9-E4iSdqi0aa_ykPZ5L6SqPGmO-eu24J4TePTzLhFgx99zoAg7ma2ej-pp9GCMVyAV9v4WXKCxfT03aKtVnN8E3XbNESP14WtdPQ.jpg"
+ },
+ "gholam": {
+  "text": "آبجی، داستان از این قرارِ که شرکت آنتروپیک تصمیم گرفته روی تمام متن‌هایی که مدل‌های جدید کلود می‌سازن، یه امضا و واترمارک مخفی بندازه که اصلاً با چشم دیده نمیشه. این ردیاب مخفی درست قاطیِ بافتِ متنه و متادیتا نیست؛ یعنی هرجا کپی‌پیستش کنی یا یکم دستکاریش کنی، بازم با متن منتقل میشه و لو میده کار هوش مصنوعیه. این قضیه به خاطر تعهد به قوانین جدید هوش مصنوعی اروپا از اوایل آگوست ۲۰۲۶ به‌صورت جهانی کلید خورده و دارن تلاش می‌کنن روی مدل‌های قبلی هم پیاده‌ش کنن.\n\nاهمیتش اینه که دیگه دوره‌ی قالب کردن متن هوش مصنوعی به اسم نوشته‌ی واقعی انسانی سر اومده و کشف اصالت متن‌ها فوق‌العاده راحت‌تر میشه.",
+  "date": "2026-08-10T21:42:38+00:00"
+ },
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/M1Astra/status/2086898041882030353",
+   "domain": "x.com",
+   "author": {
+    "name": "M1",
+    "handle": "M1Astra",
+    "avatar": "https://pbs.twimg.com/profile_images/1923483967635795968/LKZbj2ff_200x200.jpg"
+   },
+   "text": "Anthropic says new Claude models will embed invisible watermarks in all generated text, everywhere Claude is offered.\n\nThe watermark is part of the text, it isn't metadata: \"it will travel with the text when it's copied and pasted elsewhere, and may persist through some editing.\"\n\nThis starts with models launched on or after August 2, 2026, under an EU AI Act code Anthropic signed. Anthropic is still working on adding it to current models. The rollout is worldwide.",
+   "date": 1786390240,
+   "media": [
+    {
+     "type": "image",
+     "src": "https://pbs.twimg.com/media/HPYmOXDWgAAFpIw.jpg?name=orig",
+     "ratio": 0.5625
+    }
+   ],
+   "links": []
+  }
+ ],
+ "article": {
+  "title": "داستان از این قرارِ که شرکت آنتروپیک تصمیم گرفته روی تمام متن‌هایی که مدل‌های جدید کلود می‌سازن، یه امضا و واترمارک مخفی بندازه که اصلاً با چشم دیده نمیشه",
+  "source_title": "Anthropic says new Claude models will embed invisible watermarks in all generated text, everywhere Claude is offered.",
+  "body": [
+   "آبجی، داستان از این قرارِ که شرکت آنتروپیک تصمیم گرفته روی تمام متن‌هایی که مدل‌های جدید کلود می‌سازن، یه امضا و واترمارک مخفی بندازه که اصلاً با چشم دیده نمیشه. این ردیاب مخفی درست قاطیِ بافتِ متنه و متادیتا نیست؛ یعنی هرجا کپی‌پیستش کنی یا یکم دستکاریش کنی، بازم با متن منتقل میشه و لو میده کار هوش مصنوعیه. این قضیه به خاطر تعهد به قوانین جدید هوش مصنوعی اروپا از اوایل آگوست ۲۰۲۶ به‌صورت جهانی کلید خورده و دارن تلاش می‌کنن روی مدل‌های قبلی هم پیاده‌ش کنن."
+  ],
+  "why": "دیگه دوره‌ی قالب کردن متن هوش مصنوعی به اسم نوشته‌ی واقعی انسانی سر اومده و کشف اصالت متن‌ها فوق‌العاده راحت‌تر میشه.",
+  "tags": [
+   "آنتروپیک"
+  ]
+ },
+ "updated": "2026-10-25T12:30:34+00:00",
+ "gholam_checked": "2026-10-25T12:30:34+00:00"
+}

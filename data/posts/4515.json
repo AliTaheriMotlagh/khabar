@@ -1,0 +1,54 @@
+{
+ "id": 4515,
+ "url": "https://t.me/dlmehr/4515",
+ "date": "2026-07-31T21:54:33+00:00",
+ "text": "https://fxtwitter.com/ycombinator/status/2083243960684908768?s=46",
+ "forwarded_from": "Hossein Zakariaee",
+ "digest": false,
+ "hash": "c0e422c19143",
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/ycombinator/status/2083243960684908768?s=46",
+  "site": "🧵 Thread • FxTwitter",
+  "title": "Y Combinator (@ycombinator)",
+  "description": "We’ve decided to open-source a multi-agent harness we use internally at YC.\nWe call it “QM” and it’s meant to be easy to customize, like Hermes or OpenClaw, but useful for a whole company. We use it across accounting, legal, events, and engineering (including…",
+  "image": "https://cdn4.telesco.pe/file/q5RavlFeg25zXhENSxYPJZenw2TyCCkB0xk1iaFMdfgWN8wBs3JtT59BKWttV9lCeyC3gctrKSq-OpvldtaZFoAxVVWYSeY59_3tvSCPioNCsgtsj6JFVADIwGB8LJtcM4PKsPTDFv-iXzAt0iIT6CK5XBoZsZMidknQ5W9zwz46sHCqYD14zeMyUPmRsVhJnEeP6yApg_ayDnnS-hf69rT9uVPIQBhp9eGZZUYf5BvKdVSy1bzqHizR7ROBrAc6YGmlwpAjFeEC9uuJZ9LQodhBcu7j_NTMvEx6sRo9xsyy1WE9QZ5SMDPHpPqqsGzIGRSwq83E04vNCeMfFkt4xg.jpg"
+ },
+ "gholam": {
+  "text": "داش وای سی هماهنگ کرده هنس داخلیشونو به اسم QM سورس‌اوپن کرده واسه کارای شرکت! هم ابریه هم اسلک و وب داره، تازه مثل همین پلتفرمای باحاله.",
+  "date": "2026-07-31T21:54:48+00:00"
+ },
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/ycombinator/status/2083243960684908768",
+   "domain": "x.com",
+   "author": {
+    "name": "Y Combinator",
+    "handle": "ycombinator",
+    "avatar": "https://pbs.twimg.com/profile_images/1623777064821358592/9CApQWXe_200x200.png"
+   },
+   "text": "We’ve decided to open-source a multi-agent harness we use internally at YC.\n\nWe call it “QM” and it’s meant to be easy to customize, like Hermes or OpenClaw, but useful for a whole company. We use it across accounting, legal, events, and engineering (including building QM itself!).\n\nThe whole project is under an MIT license. It is cloud-first and has Slack and web UI natively.",
+   "date": 1785519039,
+   "media": [
+    {
+     "type": "image",
+     "src": "https://pbs.twimg.com/media/HOkdhV_bQAAOEJ7.jpg?name=orig",
+     "ratio": 0.5825
+    }
+   ],
+   "links": []
+  }
+ ],
+ "article": {
+  "title": "وای سی هماهنگ کرده هنس داخلیشونو به اسم QM سورس‌اوپن کرده واسه کارای شرکت",
+  "source_title": "We’ve decided to open-source a multi-agent harness we use internally at YC.",
+  "body": [
+   "داش وای سی هماهنگ کرده هنس داخلیشونو به اسم QM سورس‌اوپن کرده واسه کارای شرکت! هم ابریه هم اسلک و وب داره، تازه مثل همین پلتفرمای باحاله."
+  ],
+  "why": null,
+  "tags": []
+ },
+ "updated": "2026-10-25T12:31:23+00:00",
+ "gholam_checked": "2026-10-25T12:31:23+00:00"
+}

@@ -1,0 +1,81 @@
+{
+ "id": 4597,
+ "url": "https://t.me/dlmehr/4597",
+ "date": "2026-08-05T13:39:56+00:00",
+ "text": "https://fxtwitter.com/ziwenxu_/status/2084924184740663738?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+ "forwarded_from": null,
+ "digest": false,
+ "hash": "7604ce0b23cc",
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/ziwenxu_/status/2084924184740663738?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+  "site": "FxTwitter",
+  "title": "Ziwen (@ziwenxu_)",
+  "description": "OpenCode Go is now wired into Codex!!\nThe pricing is insane. $10 gets you 10,000 DeepSeek requests every 5 hours (no weekly limits).\nI converted that into DeepSeek API dollars because I thought I was reading it wrong, and the same 5 hours of usage would…",
+  "image": null
+ },
+ "gholam": {
+  "text": "ببین دوست من، سرویس OpenCode Go بالاخره به Codex وصل شد و قیمتی که ارائه داده واقعاً عجیبه. شما با فقط ۱۰ دلار در ماه، هر ۵ ساعت ۱۰ هزار تا درخواست به مدل DeepSeek می‌زنی، اونم بدون هیچ محدودیت هفتگی! طرف حساب کتاب کرده و دیده همین میزان مصرف با API عادی بین ۱۰ تا ۳۰ دلار خرج برمی‌داره، یعنی با یه بعدازظهر کار کردن کل هزینه اشتراکت زنده می‌شه. تازه مدل‌های قوی دیگه‌ای مثل Kimi K3 و Qwen هم کنارش داری تا اگه وسط کد زدن لیمیت خوردی، سریع سوییچ کنی و کارت نخوابه.\n\nچرا مهمه؟ چون قیمت کدنویسی با هوش مصنوعی رو شدیداً میاره پایین و دست برنامه‌نویس رو برای کار بی‌وقفه باز می‌ذاره.",
+  "date": "2026-08-05T13:40:11+00:00"
+ },
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/ziwenxu_/status/2084924184740663738",
+   "domain": "x.com",
+   "author": {
+    "name": "Ziwen",
+    "handle": "ziwenxu_",
+    "avatar": "https://pbs.twimg.com/profile_images/2009704432674426880/Q29hAGJR_200x200.jpg"
+   },
+   "text": "OpenCode Go is now wired into Codex!!\n\nThe pricing is insane. $10 gets you 10,000 DeepSeek requests every 5 hours (no weekly limits).\n\nI converted that into DeepSeek API dollars because I thought I was reading it wrong, and the same 5 hours of usage would run somewhere between $10 and $30 depending on how big your context gets.\n\nSo one afternoon of use already covers the whole sub.\n\nIt comes with Kimi K3 as well. Both sit in the picker next to my other models now.\n\nNext time we hit a limit in the middle of a loop, we can grab it and keep going.",
+   "date": 1785919636,
+   "media": [
+    {
+     "type": "video",
+     "src": "https://video.twimg.com/amplify_video/2084922907793178624/vid/avc1/1188x720/Tm90SY-zCKYim-0v.mp4?tag=29",
+     "poster": "https://pbs.twimg.com/amplify_video_thumb/2084922907793178624/img/6QGZAE4lGdgNJMrH.jpg",
+     "ratio": 0.6061,
+     "duration": 17.933,
+     "gif": false
+    }
+   ],
+   "links": [],
+   "quote": {
+    "author": {
+     "name": "Ziwen",
+     "handle": "ziwenxu_",
+     "avatar": "https://pbs.twimg.com/profile_images/2009704432674426880/Q29hAGJR_200x200.jpg"
+    },
+    "text": "Codex can run Qwen-3.8-max now as well!!\n\nAlibaba most capable model, dropped today and it's already in my codex picker.\n\nIt's a token plan subscription, not metered api billing.\n\nYou take the key from your Qwen plan, drop it into Codex Router, and it spends down the plan instead of your card.\n\nThere's a catch though. Qwen's official setup switches your whole codex over to them, so your ChatGPT models stop showing up at all.\n\nThat's exactly what Codex Router is for. It adds models to the list instead of replacing them, so sol, Grok, kimi, Deepseek and now Qwen 3.8 max all sit in the same picker and it can grab whichever one suits the job.\n\nRouter's open source, setup's in the video 👇",
+    "date": 1785752492,
+    "media": [
+     {
+      "type": "video",
+      "src": "https://video.twimg.com/amplify_video/2084222638327517184/vid/avc1/1052x720/kCvKteiGt6FdKxHL.mp4?tag=29",
+      "poster": "https://pbs.twimg.com/amplify_video_thumb/2084222638327517184/img/BWEaD2s46sx6_xl3.jpg",
+      "ratio": 0.6844,
+      "duration": 16.8,
+      "gif": false
+     }
+    ],
+    "links": []
+   }
+  }
+ ],
+ "article": {
+  "title": "سرویس OpenCode Go بالاخره به Codex وصل شد و قیمتی که ارائه داده واقعاً عجیبه",
+  "source_title": "OpenCode Go is now wired into Codex!!",
+  "body": [
+   "ببین دوست من، سرویس OpenCode Go بالاخره به Codex وصل شد و قیمتی که ارائه داده واقعاً عجیبه. شما با فقط ۱۰ دلار در ماه، هر ۵ ساعت ۱۰ هزار تا درخواست به مدل DeepSeek می‌زنی، اونم بدون هیچ محدودیت هفتگی! طرف حساب کتاب کرده و دیده همین میزان مصرف با API عادی بین ۱۰ تا ۳۰ دلار خرج برمی‌داره، یعنی با یه بعدازظهر کار کردن کل هزینه اشتراکت زنده می‌شه. تازه مدل‌های قوی دیگه‌ای مثل Kimi K3 و Qwen هم کنارش داری تا اگه وسط کد زدن لیمیت خوردی، سریع سوییچ کنی و کارت نخوابه."
+  ],
+  "why": "چون قیمت کدنویسی با هوش مصنوعی رو شدیداً میاره پایین و دست برنامه‌نویس رو برای کار بی‌وقفه باز می‌ذاره.",
+  "tags": [
+   "اوپن‌ای‌آی",
+   "چین",
+   "کدنویسی"
+  ]
+ },
+ "updated": "2026-10-25T12:30:56+00:00",
+ "gholam_checked": "2026-10-25T12:30:56+00:00"
+}

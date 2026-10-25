@@ -1,0 +1,63 @@
+{
+ "id": 5983,
+ "url": "https://t.me/dlmehr/5983",
+ "date": "2026-10-19T20:21:43+00:00",
+ "text": "https://fxtwitter.com/techcrunch/status/2112276367937085820?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+ "forwarded_from": null,
+ "digest": false,
+ "hash": "c751667e8a57",
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/techcrunch/status/2112276367937085820?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+  "site": "FxTwitter · techcrunch.com",
+  "title": "TechCrunch (@TechCrunch)",
+  "description": "Amazon wants to break Nvidia’s hold on PyTorch, the free toolkit used to build most AI apps, so that more developers run their apps on alternative chips like its own.\nhttps://spr.ly/6010BHrcny",
+  "image": "https://cdn4.telesco.pe/file/sTlgeBUJ6UGVp2JlSB05jhZztrhIuQjSp3422Y6TZMC9sMT5SHj7FKTbRI_PqRHPzbWtPAVzOqkZgcOvFbjTzq5xsJHNj1jNGLVQyQXH9hRp2FtBXJOX2TbDUIJWgUpZlMKjGEU1ZldIv9b4epmnCUAwI7ZtOl2c5v9OTIp_8bUfv8a4luwoirPgxd4pyul3fUpkUVr4Lyo-rWcAZ4J-vstirpfermI8rRu8e6pUvhRizKhRx_y0-S9XbhNdakX5g7SAG9purLBgqOI30AzkPlc4kSPA1udTaJ3V5C2BD5TKeI_z1J46FCJnuAgRa1LQnOGxC0qqLHdlauYh0PBCoQ.jpg"
+ },
+ "gholam": {
+  "text": "رفیق، آمازون بدجور شال و کلاه کرده تا انحصار بی‌چون‌وچرای انویدیا تو بازار چیپ‌های هوش مصنوعی رو بشکنه و رسماً به پروپای این غول تراشه‌ساز پیچیده. ماجرا اینه که انویدیا حسابی روی فریم‌ورک محبوب پای‌تورچ (PyTorch) جا خوش کرده بود، اما حالا آمازون یه ابزار تازه به اسم «تورچ‌نورون» (TorchNeuron) رو کرده تا این معادله رو به هم بزنه. هدف آمازون اینه که دست توسعه‌دهنده‌ها رو باز بذاره تا بتونن برنامه‌هاشون رو به جای پردازنده‌های گرون انویدیا، خیلی راحت روی تراشه‌های اختصاصی خودِ آمازون پیاده کنن.\n\nاهمیتش اینه که اگه این انحصار بشکنه، هزینه سرسام‌آور ساخت ابزارهای هوش مصنوعی پایین میاد و انویدیا دیگه نمی‌تونه تنهایی برای کل این صنعت نرخ تعیین کنه.",
+  "date": "2026-10-19T20:22:01+00:00"
+ },
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/TechCrunch/status/2112276367937085820",
+   "domain": "x.com",
+   "author": {
+    "name": "TechCrunch",
+    "handle": "TechCrunch",
+    "avatar": "https://pbs.twimg.com/profile_images/1096066608034918401/m8wnTWsX_200x200.png"
+   },
+   "text": "Amazon wants to break Nvidia’s hold on PyTorch, the free toolkit used to build most AI apps, so that more developers run their apps on alternative chips like its own.\nhttps://spr.ly/6010BHrcny",
+   "date": 1792440904,
+   "media": [],
+   "links": [
+    "https://spr.ly/6010BHrcny"
+   ]
+  },
+  {
+   "kind": "link",
+   "url": "https://techcrunch.com/2026/10/19/amazon-is-taking-its-biggest-shot-at-nvidia-yet-with-new-torchneuron-dev-tool/?utm_medium=organic_social&utm_source=TWITTER",
+   "domain": "techcrunch.com",
+   "title": "Amazon is taking its biggest shot at Nvidia yet with new TorchNeuron dev tool | TechCrunch",
+   "description": "Amazon wants to break Nvidia’s hold on PyTorch, the free toolkit used to build most AI apps, so that more developers run their apps on alternative chips like its own.",
+   "image": "https://techcrunch.com/wp-content/uploads/2025/03/GettyImages-2205217071.jpg?resize=1200,800",
+   "site": "TechCrunch"
+  }
+ ],
+ "article": {
+  "title": "آمازون بدجور شال و کلاه کرده تا انحصار بی‌چون‌وچرای انویدیا تو بازار چیپ‌های هوش مصنوعی رو بشکنه و رسماً به پروپای این غول تراشه‌ساز پیچیده",
+  "source_title": "Amazon wants to break Nvidia’s hold on PyTorch, the free toolkit used to build most AI apps, so that more developers run their apps on…",
+  "body": [
+   "رفیق، آمازون بدجور شال و کلاه کرده تا انحصار بی‌چون‌وچرای انویدیا تو بازار چیپ‌های هوش مصنوعی رو بشکنه و رسماً به پروپای این غول تراشه‌ساز پیچیده. ماجرا اینه که انویدیا حسابی روی فریم‌ورک محبوب پای‌تورچ (PyTorch) جا خوش کرده بود، اما حالا آمازون یه ابزار تازه به اسم «تورچ‌نورون» (TorchNeuron) رو کرده تا این معادله رو به هم بزنه. هدف آمازون اینه که دست توسعه‌دهنده‌ها رو باز بذاره تا بتونن برنامه‌هاشون رو به جای پردازنده‌های گرون انویدیا، خیلی راحت روی تراشه‌های اختصاصی خودِ آمازون پیاده کنن."
+  ],
+  "why": "اگه این انحصار بشکنه، هزینه سرسام‌آور ساخت ابزارهای هوش مصنوعی پایین میاد و انویدیا دیگه نمی‌تونه تنهایی برای کل این صنعت نرخ تعیین کنه.",
+  "tags": [
+   "آمازون",
+   "انویدیا",
+   "تراشه"
+  ]
+ },
+ "updated": "2026-10-25T12:23:29+00:00",
+ "gholam_checked": "2026-10-25T12:23:29+00:00"
+}

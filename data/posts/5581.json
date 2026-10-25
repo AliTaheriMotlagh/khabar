@@ -1,0 +1,59 @@
+{
+ "id": 5581,
+ "url": "https://t.me/dlmehr/5581",
+ "date": "2026-10-01T17:38:43+00:00",
+ "text": "https://fxtwitter.com/tavus/status/2105704169009246248?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+ "forwarded_from": null,
+ "digest": false,
+ "hash": "9f51d9a6fb6f",
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/tavus/status/2105704169009246248?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+  "site": "🧵 Thread • FxTwitter",
+  "title": "Tavus (@tavus)",
+  "description": "Introducing Griffin, the first model to pass the video Turing test.\n48% of people who talked to it live thought it was a real human. Previous systems have had a pass rate <3%. It is #1 on NVIDIA's benchmark for full-duplex AI video.\nIt’s the first Human…",
+  "image": null
+ },
+ "gholam": {
+  "text": "ببین رفیق، شرکت Tavus از یه مدل خفن به اسم Griffin رونمایی کرده که رسماً اولین هوش مصنوعی دنیاست که تست تورینگ ویدیویی رو پاس کرده. ماجرا از این قراره که ۴۸ درصد کسایی که باهاش تماس تصویری زنده داشتن، متوجه هوش مصنوعی بودنش نشدن و فکر کردن دارن با یه آدم واقعی گپ می‌زنن؛ رقمی که توی سیستم‌های قبلی حتی به ۳ درصد هم نمی‌رسید! این اعجوبه توی بنچمارک شرکت انویدیا برای ویدیوی زنده و دوطرفه هم رتبه اول رو زده و لقب اولین مدل تعامل انسانی رو از آن خودش کرده.\n\nچرا مهمه؟ چون مرز بین آدمیزاد و ربات پشت وب‌کم رسماً شکسته شد و از این به بعد نمی‌شه به سادگی تشخیص داد اونی که توی تماس تصویری حرف می‌زنه آدمه یا کُد کامپیوتری.",
+  "date": "2026-10-01T17:38:56+00:00"
+ },
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/tavus/status/2105704169009246248",
+   "domain": "x.com",
+   "author": {
+    "name": "Tavus",
+    "handle": "tavus",
+    "avatar": "https://pbs.twimg.com/profile_images/1974200616399593472/ZFG0msxY_200x200.jpg"
+   },
+   "text": "Introducing Griffin, the first model to pass the video Turing test.\n\n48% of people who talked to it live thought it was a real human. Previous systems have had a pass rate <3%. It is #1 on NVIDIA's benchmark for full-duplex AI video.\n\nIt’s the first Human Interaction Model (HIM).",
+   "date": 1790873970,
+   "media": [
+    {
+     "type": "video",
+     "src": "https://video.twimg.com/amplify_video/2105703934073683968/vid/avc1/1280x720/pWuaTVMrrNyYlQun.mp4?tag=16",
+     "poster": "https://pbs.twimg.com/amplify_video_thumb/2105703934073683968/img/Eg64cvr-3yHbydSB.jpg",
+     "ratio": 0.5625,
+     "duration": 108.566,
+     "gif": false
+    }
+   ],
+   "links": []
+  }
+ ],
+ "article": {
+  "title": "شرکت Tavus از یه مدل خفن به اسم Griffin رونمایی کرده که رسماً اولین هوش مصنوعی دنیاست که تست تورینگ ویدیویی رو پاس کرده",
+  "source_title": "Introducing Griffin, the first model to pass the video Turing test.",
+  "body": [
+   "ببین رفیق، شرکت Tavus از یه مدل خفن به اسم Griffin رونمایی کرده که رسماً اولین هوش مصنوعی دنیاست که تست تورینگ ویدیویی رو پاس کرده. ماجرا از این قراره که ۴۸ درصد کسایی که باهاش تماس تصویری زنده داشتن، متوجه هوش مصنوعی بودنش نشدن و فکر کردن دارن با یه آدم واقعی گپ می‌زنن؛ رقمی که توی سیستم‌های قبلی حتی به ۳ درصد هم نمی‌رسید! این اعجوبه توی بنچمارک شرکت انویدیا برای ویدیوی زنده و دوطرفه هم رتبه اول رو زده و لقب اولین مدل تعامل انسانی رو از آن خودش کرده."
+  ],
+  "why": "چون مرز بین آدمیزاد و ربات پشت وب‌کم رسماً شکسته شد و از این به بعد نمی‌شه به سادگی تشخیص داد اونی که توی تماس تصویری حرف می‌زنه آدمه یا کُد کامپیوتری.",
+  "tags": [
+   "انویدیا"
+  ]
+ },
+ "updated": "2026-10-25T12:25:15+00:00",
+ "gholam_checked": "2026-10-25T12:25:15+00:00"
+}

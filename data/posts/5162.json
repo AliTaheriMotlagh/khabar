@@ -1,0 +1,59 @@
+{
+ "id": 5162,
+ "url": "https://t.me/dlmehr/5162",
+ "date": "2026-09-06T02:33:04+00:00",
+ "text": "https://fxtwitter.com/teksedge/status/2096348547893637185?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+ "forwarded_from": null,
+ "digest": false,
+ "hash": "3d1fdaca102b",
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/teksedge/status/2096348547893637185?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+  "site": "🧵 Thread • FxTwitter",
+  "title": "David Hendrickson (@TeksEdge)",
+  "description": "🖥️\nUPDATE: GMKtec released it!\nLast week I said “fingers crossed they actually ship the EVO-X5 Pro with the full 192GB.”\nConfirmed today at IFA: they are.\n🔥\nGMKtec just officially unveiled its new Local AI monster:\n🧠\n192GB unified memory\n🎮\nUp to 160GB…",
+  "image": null
+ },
+ "gholam": {
+  "text": "رفیق، شرکت GMKtec تو نمایشگاه IFA رسماً از یه هیولای همه‌فن‌حریف برای هوش مصنوعی محلی به اسم EVO-X5 Pro پرده‌برداری کرد که قشنگ بازی رو عوض می‌کنه. این سیستم نقلی با پردازنده قدرتمند Ryzen AI Max+ PRO 495 و ۱۹۲ گیگابایت رم یکپارچه میاد که تا ۱۶۰ گیگابایتش رو مستقیم اختصاص میده به حافظه گرافیکی. سازنده‌ش مدعی شده این غول تشنه می‌تونه مدل‌های زبانی ۳۰۰ میلیارد پارامتری رو به‌صورت کاملاً آفلاین و روی یه کیس جمع‌وجور بالا بیاره، هرچند فعلاً سرعت اجرای توکن‌ها مشخص نیست و گفته قضاوت نهایی بمونه برای تست‌های واقعی موقع عرضه. قراره اکتبر ۲۰۲۶ این غول رو بفرستن بازار، ولی هنوز قیمتش رو لو ندادن تا ببینیم با جیب بچه‌ها جور درمیاد یا نه.\n\nچرا مهمه؟ اهمیتش اینه که انحصار پردازش مدل‌های فوق‌سنگین رو از چنگ سرورهای ابری گرون‌قیمت درمیاره و اجرای هوش مصنوعی در حد سوپرکامپیوترها رو میاره درست روی میز کار خودت.",
+  "date": "2026-09-06T02:33:17+00:00"
+ },
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/TeksEdge/status/2096348547893637185",
+   "domain": "x.com",
+   "author": {
+    "name": "David Hendrickson",
+    "handle": "TeksEdge",
+    "avatar": "https://pbs.twimg.com/profile_images/1682428434792980485/Z3VcwEl7_200x200.jpg"
+   },
+   "text": "🖥️ UPDATE: GMKtec released it!\n\nLast week I said “fingers crossed they actually ship the EVO-X5 Pro with the full 192GB.”\n\nConfirmed today at IFA: they are. 🔥\n\nGMKtec just officially unveiled its new Local AI monster:\n\n🧠 192GB unified memory\n🎮 Up to 160GB GPU memory\n⚡ Ryzen AI Max+ PRO 495\n🧮 16 Zen 5 cores / 32 threads\n🎮 Radeon 8065S / 40 CUs\n🤖 55 TOPS NPU\n💾 Up to 24TB storage\n🔌 4× USB4 incl. USB4 v2\n🎮 eGPU support\n🔗 Multi-node clustering\n\nAnd here’s the crazy part:\n\nGMKtec says the EVO-X5 Pro can run 300B-parameter LLMs fully offline on ONE box.\n\nAMD independently says the PRO 495’s 160GB graphics-memory allocation can support 300B+ models at 4-bit.\n\n⚠️ No tps yet. GMKtec explicitly says the 300B claim is theoretical for now and real performance comes with the commercial launch.\n\n📅 Ships October 2026\n💰 Price: not announced\n\n128GB Strix Halo changed Local AI. Now we’re getting 192GB.\n\nThe question is no longer “will GMKtec actually build it?”\n\nHow fast will a 300B GGUF run on it? 👀🔥",
+   "date": 1788643416,
+   "media": [
+    {
+     "type": "video",
+     "src": "https://video.twimg.com/amplify_video/2096348106506006528/vid/avc1/720x1280/WlPm5asecFI7RwsY.mp4?tag=29",
+     "poster": "https://pbs.twimg.com/amplify_video_thumb/2096348106506006528/img/o7_fpSdAzUAn4yjL.jpg",
+     "ratio": 1.7778,
+     "duration": 22.373,
+     "gif": false
+    }
+   ],
+   "links": []
+  }
+ ],
+ "article": {
+  "title": "شرکت GMKtec تو نمایشگاه IFA رسماً از یه هیولای همه‌فن‌حریف برای هوش مصنوعی محلی به اسم EVO-X5 Pro پرده‌برداری کرد که قشنگ بازی رو عوض می‌کنه",
+  "source_title": "🖥️ UPDATE: GMKtec released it!",
+  "body": [
+   "رفیق، شرکت GMKtec تو نمایشگاه IFA رسماً از یه هیولای همه‌فن‌حریف برای هوش مصنوعی محلی به اسم EVO-X5 Pro پرده‌برداری کرد که قشنگ بازی رو عوض می‌کنه. این سیستم نقلی با پردازنده قدرتمند Ryzen AI Max+ PRO 495 و ۱۹۲ گیگابایت رم یکپارچه میاد که تا ۱۶۰ گیگابایتش رو مستقیم اختصاص میده به حافظه گرافیکی. سازنده‌ش مدعی شده این غول تشنه می‌تونه مدل‌های زبانی ۳۰۰ میلیارد پارامتری رو به‌صورت کاملاً آفلاین و روی یه کیس جمع‌وجور بالا بیاره، هرچند فعلاً سرعت اجرای توکن‌ها مشخص نیست و گفته قضاوت نهایی بمونه برای تست‌های واقعی موقع عرضه. قراره اکتبر ۲۰۲۶ این غول رو بفرستن بازار، ولی هنوز قیمتش رو لو ندادن تا ببینیم با جیب بچه‌ها جور درمیاد یا نه."
+  ],
+  "why": "اهمیتش اینه که انحصار پردازش مدل‌های فوق‌سنگین رو از چنگ سرورهای ابری گرون‌قیمت درمیاره و اجرای هوش مصنوعی در حد سوپرکامپیوترها رو میاره درست روی میز کار خودت.",
+  "tags": [
+   "تراشه"
+  ]
+ },
+ "updated": "2026-10-25T12:27:48+00:00",
+ "gholam_checked": "2026-10-25T12:27:48+00:00"
+}

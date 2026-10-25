@@ -1,0 +1,73 @@
+{
+ "id": 4573,
+ "url": "https://t.me/dlmehr/4573",
+ "date": "2026-08-04T15:28:00+00:00",
+ "text": "https://fxtwitter.com/jensenhuang/status/2084656303046332747?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+ "forwarded_from": null,
+ "digest": false,
+ "hash": "a411a76a4792",
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/jensenhuang/status/2084656303046332747?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+  "site": "FxTwitter",
+  "title": "Jensen Huang (@JensenHuang)",
+  "description": "Today, we’re launching Alpamayo 2 Super, our frontier open reasoning model for autonomous vehicles.\nBeyond seeing, Alpamayo understands and reasons through the complex world - thinks before it acts.\nIt’s a powerful backbone for robotaxis, trucks, shuttles…",
+  "image": "https://cdn4.telesco.pe/file/I_hcwAnyfdz0ueDzgnWtxpLb55i4m9tJo5XMjP3t_X6yP_IUkNKvhPZMb023L-auNkaPHmFrX8WDtyeT-dBAx-GmIUXQWdhFI6nE5KloFUr6FuGvN7lhr2O9Fez9jyFZD3bSo-uyKm4VdWEXNr6ZEeZg9Uy5k804PusTBrEcctMvMvag5KofvJ6j1SDzJe-auFO-hpp7zuO0-JhAuH2tId6ct6XsPlrivvlGH9I4rhPoSH74USbIO4Gor6QSfWNz49Gp7Rdq7sGNH9k6TfZIlDuKa_mYNjb9PlWEedDSfBNC5PmYyw1t0BFu9bjC7-d30fL3nZgYF0YwaiBQOHldXA.jpg"
+ },
+ "gholam": {
+  "text": "داداشی، انویدیا از یه مدل هوش مصنوعی خفن به اسم «آلپامایو ۲ سوپر» واسه ماشین‌های خودران رونمایی کرده که قبل حرکت قشنگ فکر می‌کنه و منطق سرش میشه. خبر خوبشم اینه که متن‌باز دادنش بیرون تا همه تیم‌ها بتونن واسه ربات‌ها و خودروهاشون ازش کار بکشن.",
+  "date": "2026-08-04T15:28:13+00:00"
+ },
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/JensenHuang/status/2084656303046332747",
+   "domain": "x.com",
+   "author": {
+    "name": "Jensen Huang",
+    "handle": "JensenHuang",
+    "avatar": "https://pbs.twimg.com/profile_images/2080613261674962944/OMXX4RJ3_200x200.jpg"
+   },
+   "text": "Today, we’re launching Alpamayo 2 Super, our frontier open reasoning model for autonomous vehicles.\n\nBeyond seeing, Alpamayo understands and reasons through the complex world - thinks before it acts.\n\nIt’s a powerful backbone for robotaxis, trucks, shuttles, delivery vans, tractors and the long tail of mobile robots—billions of autonomous machines someday.\n\nWe’re releasing it for commercial use under OpenMDW-1.1 so teams can inspect it, fine-tune it and deploy it—open models advance safety and security.\n\nThe next wave of AI is robotics—and it starts with autonomous vehicles.\n\nGreat work, Alpamayo team!\n\nhttps://blogs.nvidia.com/blog/alpamayo-2-super-open-model-now-available",
+   "date": 1785855768,
+   "media": [
+    {
+     "type": "image",
+     "src": "https://pbs.twimg.com/media/HO4vEzibAAAI0Nh.jpg?name=orig",
+     "ratio": 0.5625
+    },
+    {
+     "type": "image",
+     "src": "https://pbs.twimg.com/media/HO4vEzjaIAE1BL7.jpg?name=orig",
+     "ratio": 0.5625
+    }
+   ],
+   "links": [
+    "https://blogs.nvidia.com/blog/alpamayo-2-super-open-model-now-available"
+   ]
+  },
+  {
+   "kind": "link",
+   "url": "https://blogs.nvidia.com/blog/alpamayo-2-super-open-model-now-available/",
+   "domain": "blogs.nvidia.com",
+   "title": "NVIDIA Alpamayo 2 Super, the Frontier Open Model for Robotaxis and Autonomous Vehicles, Now Available for Commercial Use",
+   "description": "Open commercial licensing, benchmark‑leading reasoning and inspectable decisions bring autonomous vehicles, including robotaxis, closer to production and widescale deployment.",
+   "image": "https://blogs.nvidia.com/wp-content/uploads/2026/08/alpamayo-launch-kv-blog-1920x1080-1.jpg",
+   "site": "NVIDIA Blog"
+  }
+ ],
+ "article": {
+  "title": "انویدیا از یه مدل هوش مصنوعی خفن به اسم «آلپامایو ۲ سوپر» واسه ماشین‌های خودران رونمایی کرده که قبل حرکت قشنگ فکر می‌کنه و منطق سرش میشه",
+  "source_title": "Today, we’re launching Alpamayo 2 Super, our frontier open reasoning model for autonomous vehicles.",
+  "body": [
+   "داداشی، انویدیا از یه مدل هوش مصنوعی خفن به اسم «آلپامایو ۲ سوپر» واسه ماشین‌های خودران رونمایی کرده که قبل حرکت قشنگ فکر می‌کنه و منطق سرش میشه. خبر خوبشم اینه که متن‌باز دادنش بیرون تا همه تیم‌ها بتونن واسه ربات‌ها و خودروهاشون ازش کار بکشن."
+  ],
+  "why": null,
+  "tags": [
+   "انویدیا",
+   "رباتیک"
+  ]
+ },
+ "updated": "2026-10-25T12:31:01+00:00",
+ "gholam_checked": "2026-10-25T12:31:01+00:00"
+}

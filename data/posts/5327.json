@@ -1,0 +1,80 @@
+{
+ "id": 5327,
+ "url": "https://t.me/dlmehr/5327",
+ "date": "2026-09-16T17:53:23+00:00",
+ "text": "https://fxtwitter.com/harshagundal/status/2100044305536889015?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+ "forwarded_from": null,
+ "digest": false,
+ "hash": "dc3f435c8b78",
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/harshagundal/status/2100044305536889015?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+  "site": "FxTwitter",
+  "title": "Harsha Gundala (@harshagundal)",
+  "description": "They were building in stealth for 2 years, I was building in stealth for 2 hours…\nHappy to open source Qwen-2.5-1B-RLCD, 5x faster on-device inference for JSON workloads that need to be type-safe.\n⚡️\nDemo below on a M4 MacBook\n⚡️\nevery LLM has the ability…",
+  "image": null
+ },
+ "gholam": {
+  "text": "ببین رفیق، یه برنامه‌نویس کاردرست به اسم هرشا گوندالا اومده مدل Qwen-2.5-1B-RLCD رو متن‌باز کرده که خوراک استنتاج مستقیم خروجی‌های تایپ‌سیف و ساختاریافته JSON روی خود دستگاست. ماجرا از این قراره که این بنده خدا یه تیکه شیرین به پروژه‌های پرادعای دو ساله انداخته و گفته این دستاورد رو تو دو ساعت جمع کرده، تازه دمو روی مک‌بوک M4 هم نشون میده که سرعت کار نسبت به قبل ۵ برابر شده. نکته باحال ماجرا اینه که اصلاً نیازی به تمرین یا ترین مجدد مدل نبوده و سیستم می‌تونه همه کلیدهای فایل JSON رو به‌صورت هم‌زمان و با راندمان بالا پردازش کنه.\nاهمیتش اینه که بدون ریخت‌وپاش و هزینه سرورهای سنگین، می‌شه پردازش‌های دقیق و بدون خطای هوش مصنوعی رو خیلی فرز و مستقیم روی سیستم‌های شخصی پیاده کرد.",
+  "date": "2026-09-16T17:53:36+00:00"
+ },
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/harshagundal/status/2100044305536889015",
+   "domain": "x.com",
+   "author": {
+    "name": "Harsha Gundala",
+    "handle": "harshagundal",
+    "avatar": "https://pbs.twimg.com/profile_images/1827018514063896581/9iYMXqwK_200x200.jpg"
+   },
+   "text": "They were building in stealth for 2 years, I was building in stealth for 2 hours…\n\nHappy to open source Qwen-2.5-1B-RLCD, 5x faster on-device inference for JSON workloads that need to be type-safe. \n\n⚡️Demo below on a M4 MacBook⚡️\n\nevery LLM has the ability to efficiently batch inference every key of a JSON at the same time and generate probabilities from a set of possible categories. No new training required, but it’s easy to optimize if you need!\n\nOn hugging face now!",
+   "date": 1789524554,
+   "media": [
+    {
+     "type": "video",
+     "src": "https://video.twimg.com/amplify_video/2100044290743558144/vid/avc1/1280x720/rSm7U-oHicOR4jip.mp4?tag=29",
+     "poster": "https://pbs.twimg.com/amplify_video_thumb/2100044290743558144/img/qoO9w7RnXjqtrq6I.jpg",
+     "ratio": 0.5625,
+     "duration": 17.05,
+     "gif": false
+    }
+   ],
+   "links": [],
+   "quote": {
+    "author": {
+     "name": "Diogo Almeida",
+     "handle": "CompleteSkeptic",
+     "avatar": "https://pbs.twimg.com/profile_images/1650708125685800960/7k6r0UZg_200x200.jpg"
+    },
+    "text": "After co-inventing ChatGPT, I kept asking myself: why have superhuman chat models not led to AGI?\n\nI’ve spent the last 2 years in stealth building a new way to train models (RLCD), and a new type of frontier AI model that we are releasing today: Jev\n\n• 20-200x faster\n• 40-400x cheaper (w/ output tokens free)\n• Frontier composable intelligence optimized for decisions\n\nAFAICT the shortest path to AI-based economic revolution",
+    "date": 1789496272,
+    "media": [
+     {
+      "type": "video",
+      "src": "https://video.twimg.com/amplify_video/2099925575637057536/vid/avc1/1280x720/ZoKJ_BS5SNaqG45k.mp4?tag=29",
+      "poster": "https://pbs.twimg.com/amplify_video_thumb/2099925575637057536/img/l4J_ZhkaxAe8FJXv.jpg",
+      "ratio": 0.5625,
+      "duration": 176.085,
+      "gif": false
+     }
+    ],
+    "links": []
+   }
+  }
+ ],
+ "article": {
+  "title": "یه برنامه‌نویس کاردرست به اسم هرشا گوندالا اومده مدل Qwen-2.5-1B-RLCD رو متن‌باز کرده که خوراک استنتاج مستقیم خروجی‌های تایپ‌سیف و ساختاریافته JSON روی خود دستگاست",
+  "source_title": "They were building in stealth for 2 years, I was building in stealth for 2 hours…",
+  "body": [
+   "ببین رفیق، یه برنامه‌نویس کاردرست به اسم هرشا گوندالا اومده مدل Qwen-2.5-1B-RLCD رو متن‌باز کرده که خوراک استنتاج مستقیم خروجی‌های تایپ‌سیف و ساختاریافته JSON روی خود دستگاست. ماجرا از این قراره که این بنده خدا یه تیکه شیرین به پروژه‌های پرادعای دو ساله انداخته و گفته این دستاورد رو تو دو ساعت جمع کرده، تازه دمو روی مک‌بوک M4 هم نشون میده که سرعت کار نسبت به قبل ۵ برابر شده. نکته باحال ماجرا اینه که اصلاً نیازی به تمرین یا ترین مجدد مدل نبوده و سیستم می‌تونه همه کلیدهای فایل JSON رو به‌صورت هم‌زمان و با راندمان بالا پردازش کنه."
+  ],
+  "why": "بدون ریخت‌وپاش و هزینه سرورهای سنگین، می‌شه پردازش‌های دقیق و بدون خطای هوش مصنوعی رو خیلی فرز و مستقیم روی سیستم‌های شخصی پیاده کرد.",
+  "tags": [
+   "چین",
+   "کدنویسی"
+  ]
+ },
+ "updated": "2026-10-25T12:26:47+00:00",
+ "gholam_checked": "2026-10-25T12:26:47+00:00"
+}

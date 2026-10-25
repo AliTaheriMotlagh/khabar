@@ -1,0 +1,73 @@
+{
+ "id": 4931,
+ "url": "https://t.me/dlmehr/4931",
+ "date": "2026-08-25T14:16:02+00:00",
+ "text": "https://fxtwitter.com/alexocheema/status/2092248148500492474?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+ "forwarded_from": null,
+ "digest": false,
+ "hash": "1e00379b4cec",
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/alexocheema/status/2092248148500492474?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+  "site": "🧵 Thread • FxTwitter",
+  "title": "Alex Cheema (@alexocheema)",
+  "description": "The 512GB M5 Ultra will ship in October with a massive 1.2TB/s memory bandwidth.\n50% more memory bandwidth than M3 Ultra, 4.4x more than DGX Spark and M4 Pro.\nStacking 4 x M5 Ultra, I expect you'll be able to run Kimi K3 / GLM 5.3 faster than the API (>100…",
+  "image": "https://cdn4.telesco.pe/file/kpimrY-kiifkKWNrZlSGreYcpev-t4zEI6IOPrreKQoWPH9yhFi9Xtz0eFMej8cRQcgH0ItO89WOlaolAt0TTjMNAAIAJ1M7vFXMOkE8bS6f0XZUnqD_TVPhbi0S0pyekn84RWvOrP1opGa7PzVDuw5aFUlp0BS1tFFZO9Y5tgQSqwjqDkM5Xkc9N3_GTVV-FrWhD1KJlvVCSesd3F9_PDL5uiH4grQdTROGxwN2M95-Hdo9ninoSXG6aOBqKw9UN1dI3SqSWNMLaZTtAITIhlbf-x0BQqgLDrcasX4OPnJ9395ZVFKuOtc_ersaLrCBHbeS4Wiv7axqGB5saepj2g.jpg"
+ },
+ "gholam": {
+  "text": "ببین رفیق، الکس چیما یه آمار و پیش‌بینی خفن داده و میگه پردازنده غول‌پیکر M5 Ultra با ظرفیت ۵۱۲ گیگابایت و پهنای باند وحشتناک ۱.۲ ترابایت بر ثانیه توی ماه اکتبر از راه می‌رسه. طبق گفته این کارشناس، پهنای باند این تراشه نسبت به M3 Ultra حدود ۵۰ درصد و در برابر سخت‌افزارهایی مثل DGX Spark بیش از ۴ برابر قوی‌تره. نکته جذاب ماجرا اینه که اگه چهار تا از این پردازنده‌ها رو کنار هم استک کنی، می‌تونی مدل‌های هوش مصنوعی سنگین مثل Kimi K3 یا GLM 5.3 رو با سرعت خارق‌العاده بالای ۱۰۰ توکن در ثانیه، حتی سریع‌تر از API رسمی‌شون به شکل محلی اجرا کنی.\n\nاهمیتش اینه که توسعه‌دهنده‌ها و خوره‎های هوش مصنوعی می‌تونن بدون نیاز به کرایه سرورهای ابری گرون‌قیمت، مدل‌های فوق‌سنگین رو مستقیم روی میز کار خودشون با سرعت موشک ران کنن.",
+  "date": "2026-08-25T14:16:15+00:00"
+ },
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/alexocheema/status/2092248148500492474",
+   "domain": "x.com",
+   "author": {
+    "name": "Alex Cheema",
+    "handle": "alexocheema",
+    "avatar": "https://pbs.twimg.com/profile_images/1671532231687282689/vlbc3Ytw_200x200.jpg"
+   },
+   "text": "The 512GB M5 Ultra will ship in October with a massive 1.2TB/s memory bandwidth.\n\n50% more memory bandwidth than M3 Ultra, 4.4x more than DGX Spark and M4 Pro.\n\nStacking 4 x M5 Ultra, I expect you'll be able to run Kimi K3 / GLM 5.3 faster than the API (>100 tok/sec).",
+   "date": 1787665805,
+   "media": [
+    {
+     "type": "image",
+     "src": "https://pbs.twimg.com/media/HQkoVk1WYAAp2RG.jpg?name=orig",
+     "ratio": 1.767
+    },
+    {
+     "type": "image",
+     "src": "https://pbs.twimg.com/media/HQkogELWIAAwydu.jpg?name=orig",
+     "ratio": 0.6167
+    }
+   ],
+   "links": [],
+   "quote": {
+    "author": {
+     "name": "Alex Cheema",
+     "handle": "alexocheema",
+     "avatar": "https://pbs.twimg.com/profile_images/1671532231687282689/vlbc3Ytw_200x200.jpg"
+    },
+    "text": "@ivanfioravanti My guess would be October for M5 Ultra, so only two months to wait.\n\nIf we extrapolate the numbers we know from M3 Max to M5 Max we'd expect the M5 Ultra to have ~1.25TB/s memory bandwidth and ~110 TFLOPS (dense fp16).\n\n2 Sparks are 546GB/s and ~200 TFLOPS (dense fp16).",
+    "date": 1786201763,
+    "media": [],
+    "links": []
+   }
+  }
+ ],
+ "article": {
+  "title": "الکس چیما یه آمار و پیش‌بینی خفن داده و میگه پردازنده غول‌پیکر M5 Ultra با ظرفیت ۵۱۲ گیگابایت و پهنای باند وحشتناک ۱.۲ ترابایت بر ثانیه توی ماه اکتبر از راه می‌رسه",
+  "source_title": "The 512GB M5 Ultra will ship in October with a massive 1.2TB/s memory bandwidth.",
+  "body": [
+   "ببین رفیق، الکس چیما یه آمار و پیش‌بینی خفن داده و میگه پردازنده غول‌پیکر M5 Ultra با ظرفیت ۵۱۲ گیگابایت و پهنای باند وحشتناک ۱.۲ ترابایت بر ثانیه توی ماه اکتبر از راه می‌رسه. طبق گفته این کارشناس، پهنای باند این تراشه نسبت به M3 Ultra حدود ۵۰ درصد و در برابر سخت‌افزارهایی مثل DGX Spark بیش از ۴ برابر قوی‌تره. نکته جذاب ماجرا اینه که اگه چهار تا از این پردازنده‌ها رو کنار هم استک کنی، می‌تونی مدل‌های هوش مصنوعی سنگین مثل Kimi K3 یا GLM 5.3 رو با سرعت خارق‌العاده بالای ۱۰۰ توکن در ثانیه، حتی سریع‌تر از API رسمی‌شون به شکل محلی اجرا کنی."
+  ],
+  "why": "توسعه‌دهنده‌ها و خوره‎های هوش مصنوعی می‌تونن بدون نیاز به کرایه سرورهای ابری گرون‌قیمت، مدل‌های فوق‌سنگین رو مستقیم روی میز کار خودشون با سرعت موشک ران کنن.",
+  "tags": [
+   "تراشه",
+   "چین"
+  ]
+ },
+ "updated": "2026-10-25T12:29:14+00:00",
+ "gholam_checked": "2026-10-25T12:29:14+00:00"
+}

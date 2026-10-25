@@ -1,0 +1,63 @@
+{
+ "id": 4542,
+ "url": "https://t.me/dlmehr/4542",
+ "date": "2026-08-03T00:24:37+00:00",
+ "text": "https://fxtwitter.com/thebuggeddev/status/2083884856531177942?s=46",
+ "forwarded_from": null,
+ "digest": false,
+ "hash": "d44d994f0c27",
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/thebuggeddev/status/2083884856531177942?s=46",
+  "site": "FxTwitter",
+  "title": "The Bugged Dev (@thebuggeddev)",
+  "description": "Only if education could be this interactive\n❤️‍🔥\nI've had a looong wish to build something genuinely useful through vibe coding, and I finally did it.\nA 3D human anatomy application built with @threejs using GPT 5.6 Sol.\nIt all started with a single…",
+  "image": null
+ },
+ "gholam": {
+  "text": "رفیق، طرف اومده با کمک هوش مصنوعی و Three.js یه برنامه ۳بعدی ردیف برای آموزش آناتومی بدن ساخته تا درس خوندن خسته‌کننده نباشه. تازه کلی هم فسفر سوزونده و حجم مدل‌ها رو از ۹۰۰ مگ آورده زیر ۳۰ مگ تا رو وب مثل ساعت و نرم اجرا بشه.",
+  "date": "2026-08-03T00:24:49+00:00"
+ },
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/thebuggeddev/status/2083884856531177942",
+   "domain": "x.com",
+   "author": {
+    "name": "The Bugged Dev",
+    "handle": "thebuggeddev",
+    "avatar": "https://pbs.twimg.com/profile_images/1956770434260910080/xVO3sbPP_200x200.jpg"
+   },
+   "text": "Only if education could be this interactive ❤️‍🔥\n\nI've had a looong wish to build something genuinely useful through vibe coding, and I finally did it. \n\nA 3D human anatomy application built with @threejs using GPT 5.6 Sol. \n\nIt all started with a single design image that I created using GPT Image 2.0. I then used it to generate every 3D organ image, one by one.\n\nNext, I converted each of those images into 3D models using @tripoai (and no, they didn't sponsor this 😄).\n\nAfter that, I opened Codex, wrote a master prompt based on the design, and gave it the prompt, the design image, and all the 3D models.\n\nCodex built the first version beautifully, but there was one big problem. \n\nEvery single 3D model was nearly 120-150 MB. That obviously wasn't practical for the web and was giving a performance of 16fps.\n\nAfter a few iterations, Codex optimized each model down to roughly 2–5.5 MB while preserving the visual quality, reducing the total asset size from ~900 MB to just 28.6 MB. And each model loads on demand. \n\nAlong the way, Codex also generated those anatomical illustrations showing where each organ sits in the human body, and even created the interactive hotspot markers that explain different parts of every organ. It handled all of that.\n\nThe process wasn't exactly one shot, but it also wasn't difficult. You just have to do it step by step. \n\nIt genuinely felt like building something that could make learning anatomy much more engaging.\n\nThe inspiration came from @DilumSanjaya's 3D animal plant cell project. I remember seeing it and thinking, \"I want to build something like this one day.\" \n\nAnd I did it :D\n\nLive: https://anatomy-livid.vercel.app/\nCode: https://github.com/thebuggeddev/anatomy",
+   "date": 1785671841,
+   "media": [
+    {
+     "type": "video",
+     "src": "https://video.twimg.com/amplify_video/2083879977976733697/vid/avc1/1148x720/Ve9Nv-ueULF9JsW_.mp4?tag=29",
+     "poster": "https://pbs.twimg.com/amplify_video_thumb/2083879977976733697/img/yodeFffWmW1O2Jol.jpg",
+     "ratio": 0.6265,
+     "duration": 43.325,
+     "gif": false
+    }
+   ],
+   "links": [
+    "https://anatomy-livid.vercel.app/",
+    "https://github.com/thebuggeddev/anatomy"
+   ]
+  }
+ ],
+ "article": {
+  "title": "طرف اومده با کمک هوش مصنوعی و Three.js یه برنامه ۳بعدی ردیف برای آموزش آناتومی بدن ساخته تا درس خوندن خسته‌کننده نباشه",
+  "source_title": "Only if education could be this interactive ❤️‍🔥",
+  "body": [
+   "رفیق، طرف اومده با کمک هوش مصنوعی و Three.js یه برنامه ۳بعدی ردیف برای آموزش آناتومی بدن ساخته تا درس خوندن خسته‌کننده نباشه. تازه کلی هم فسفر سوزونده و حجم مدل‌ها رو از ۹۰۰ مگ آورده زیر ۳۰ مگ تا رو وب مثل ساعت و نرم اجرا بشه."
+  ],
+  "why": null,
+  "tags": [
+   "اوپن‌ای‌آی",
+   "کدنویسی"
+  ]
+ },
+ "updated": "2026-10-25T12:31:09+00:00",
+ "gholam_checked": "2026-10-25T12:31:09+00:00"
+}

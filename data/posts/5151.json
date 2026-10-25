@@ -1,0 +1,56 @@
+{
+ "id": 5151,
+ "url": "https://t.me/dlmehr/5151",
+ "date": "2026-09-05T01:24:38+00:00",
+ "text": "https://fxtwitter.com/huggingpapers/status/2095973698356609037?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+ "forwarded_from": null,
+ "digest": false,
+ "hash": "51cbba513305",
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/huggingpapers/status/2095973698356609037?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+  "site": "🧵 Thread • FxTwitter",
+  "title": "DailyPapers (@HuggingPapers)",
+  "description": "NVIDIA just released the NVFP4 quantized Qwen3.8-Flash-Next on Hugging Face\n125B MoE with hybrid attention, now 63% smaller with minimal accuracy loss.",
+  "image": "https://cdn4.telesco.pe/file/LjfDbGw3FBTF21-zOVj9GMZL_ow87bfll2w2C0WRLl8OnzRMkFGkY1dr3N6ik5RxZc8vkdD1plXGoQ-kQM_j5a_Qk6yUFNANU34ST004Y2ab7qvPxq_k70G84PAP5D3tIiU252ZaRzgHgeP9QoSreC3Dauahd58tyOt8akErFO9hQAJrx2BZGTkCWcC1WIgogtlnW-RCO06ykvcIld7ygl-0n9ekqgk_ZLDzCVHmiyRE9NsIn1toryyjYxckwHnoo7ZwToRV1Z26f97njOaMcZlls6cH_FL4M7fD0C4azzxXzDf1R3FYm9-mrQE4maYDZo2wrtVq-8eDOcxxCcMoXA.jpg"
+ },
+ "gholam": {
+  "text": "ببین رفیق، انویدیا رسماً یه حرکت تمیز زده و نسخه کوانتیزه‌شده‌ی مدل Qwen3.8-Flash-Next رو با فرمت جدید NVFP4 روی هاگینگ‌فیس منتشر کرده. صحبت از یه مدل گردن‌کلفت ۱۲۵ میلیاردی بر پایه معماری MoE و اتنشن هیبریدیه که حالا با این تکنولوژی، حجمش حدود ۶۳ درصد جمع‌وجورتر و سبک‌تر شده. لوتی‌گری قضیه اینجاست که با وجود این کاهش حجم چشمگیر، کمترین افت دقت رو تجربه کرده و تقریباً همون کیفیت نسخه اصلی رو تحویل میده.\n\nاهمیتش اینه که اجرای چنین غول‌هایی با مصرف سخت‌افزار خیلی کمتر ممکن میشه و دسترسی به هوش مصنوعی‌های پیشرفته حسابی ارزون‌تر و آسون‌تر میشه.",
+  "date": "2026-09-05T01:24:51+00:00"
+ },
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/HuggingPapers/status/2095973698356609037",
+   "domain": "x.com",
+   "author": {
+    "name": "DailyPapers",
+    "handle": "HuggingPapers",
+    "avatar": "https://pbs.twimg.com/profile_images/1906618607368273920/09C2Z22U_200x200.jpg"
+   },
+   "text": "NVIDIA just released the NVFP4 quantized Qwen3.8-Flash-Next on Hugging Face\n\n125B MoE with hybrid attention, now 63% smaller with minimal accuracy loss.",
+   "date": 1788554045,
+   "media": [
+    {
+     "type": "image",
+     "src": "https://pbs.twimg.com/media/HRZk-KVbUAAIfDD.jpg?name=orig",
+     "ratio": 0.1733
+    }
+   ],
+   "links": []
+  }
+ ],
+ "article": {
+  "title": "انویدیا رسماً یه حرکت تمیز زده و نسخه کوانتیزه‌شده‌ی مدل Qwen3.8-Flash-Next رو با فرمت جدید NVFP4 روی هاگینگ‌فیس منتشر کرده",
+  "source_title": "NVIDIA just released the NVFP4 quantized Qwen3.8-Flash-Next on Hugging Face",
+  "body": [
+   "ببین رفیق، انویدیا رسماً یه حرکت تمیز زده و نسخه کوانتیزه‌شده‌ی مدل Qwen3.8-Flash-Next رو با فرمت جدید NVFP4 روی هاگینگ‌فیس منتشر کرده. صحبت از یه مدل گردن‌کلفت ۱۲۵ میلیاردی بر پایه معماری MoE و اتنشن هیبریدیه که حالا با این تکنولوژی، حجمش حدود ۶۳ درصد جمع‌وجورتر و سبک‌تر شده. لوتی‌گری قضیه اینجاست که با وجود این کاهش حجم چشمگیر، کمترین افت دقت رو تجربه کرده و تقریباً همون کیفیت نسخه اصلی رو تحویل میده."
+  ],
+  "why": "اجرای چنین غول‌هایی با مصرف سخت‌افزار خیلی کمتر ممکن میشه و دسترسی به هوش مصنوعی‌های پیشرفته حسابی ارزون‌تر و آسون‌تر میشه.",
+  "tags": [
+   "انویدیا"
+  ]
+ },
+ "updated": "2026-10-25T12:27:51+00:00",
+ "gholam_checked": "2026-10-25T12:27:51+00:00"
+}

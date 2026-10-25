@@ -1,0 +1,68 @@
+{
+ "id": 5193,
+ "url": "https://t.me/dlmehr/5193",
+ "date": "2026-09-08T16:46:02+00:00",
+ "text": "https://fxtwitter.com/wgilpin0/status/2097354911017316736",
+ "forwarded_from": "Parsa Razavi",
+ "digest": false,
+ "hash": "722da9b5fbc9",
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/wgilpin0/status/2097354911017316736",
+  "site": "🧵 Thread • FxTwitter",
+  "title": "William Gilpin (@wgilpin0)",
+  "description": "Our group discovered that reasoning models produce fractals when asked to solve hard problems. We can use nonlinear dynamics to probe the thinking processes of recurrent depth models on Sudoku, mathematics, and even ARC-AGI (1/N)\nhttps://arxiv.org/abs/2609.04963",
+  "image": null
+ },
+ "gholam": {
+  "text": "رفقا بشنوید از یه کشف عجیب‌وغریب توی دنیای هوش مصنوعی که ویلیام گیلپین و تیم پژوهشیش رو حسابی غافلگیر کرده. ماجرا از این قراره که فهمیدن وقتی مدل‌های استدلالی میرن تو کار حل معماها و مسائل سنگین مثل ریاضیات، سودوکو و حتی بنچمارک غول‌آسای ARC-AGI، فرآیند پردازششون الگوهای شگفت‌انگیز فرکتالی تولید می‌کنه. در واقع این دانشمندا با کمک ریاضیات و دینامیک غیرخطی تونستن به اعماق مغز این مدل‌های لایه‌عمیق نفوذ کنن و ببینن این سیستم‌ها چطوری مرحله به مرحله فکر می‌کنن و به جواب می‌رسن.\n\nاهمیتش اینه که این کشف راه رو باز می‌کنه تا بالاخره از جعبه سیاه مدل‌های استدلالی سر دربیاریم و بفهمیم ماشین‌ها موقع فکر کردن واقعاً چه نقشه‌ای تو سرشونه.",
+  "date": "2026-09-08T16:46:15+00:00"
+ },
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/wgilpin0/status/2097354911017316736",
+   "domain": "x.com",
+   "author": {
+    "name": "William Gilpin",
+    "handle": "wgilpin0",
+    "avatar": "https://pbs.twimg.com/profile_images/1633098063123214338/MnoPTBgF_200x200.jpg"
+   },
+   "text": "Our group discovered that reasoning models produce fractals when asked to solve hard problems. We can use nonlinear dynamics to probe the thinking processes of recurrent depth models on Sudoku, mathematics, and even ARC-AGI (1/N)\nhttps://arxiv.org/abs/2609.04963",
+   "date": 1788883352,
+   "media": [
+    {
+     "type": "video",
+     "src": "https://video.twimg.com/amplify_video/2097347816570146817/vid/avc1/796x720/SGEv0-DpBeaPYojz.mp4?tag=14",
+     "poster": "https://pbs.twimg.com/amplify_video_thumb/2097347816570146817/img/-R4T9NvIYtM5yUOO.jpg",
+     "ratio": 0.9038,
+     "duration": 18.8,
+     "gif": false
+    }
+   ],
+   "links": [
+    "https://arxiv.org/abs/2609.04963"
+   ]
+  },
+  {
+   "kind": "link",
+   "url": "https://arxiv.org/abs/2609.04963",
+   "domain": "arxiv.org",
+   "title": "Fractal basins trap latent reasoning",
+   "description": "Reasoning allows artificial intelligence models to revisit and correct their mistakes, enabling recent frontier advances in mathematical theorem solving, software engineering, and autonomous task planning. Reasoning models are widely observed to reason for longer on harder tasks, but the general mechanism responsible for these slowdowns is unknown. Here, we show that reasoning models exhibit trans",
+   "image": "https://arxiv.org/static/browse/0.3.4/images/arxiv-logo-fb.png",
+   "site": "arXiv.org"
+  }
+ ],
+ "article": {
+  "title": "رفقا بشنوید از یه کشف عجیب‌وغریب توی دنیای هوش مصنوعی که ویلیام گیلپین و تیم پژوهشیش رو حسابی غافلگیر کرده",
+  "source_title": "Our group discovered that reasoning models produce fractals when asked to solve hard problems. We can use nonlinear dynamics to probe the…",
+  "body": [
+   "رفقا بشنوید از یه کشف عجیب‌وغریب توی دنیای هوش مصنوعی که ویلیام گیلپین و تیم پژوهشیش رو حسابی غافلگیر کرده. ماجرا از این قراره که فهمیدن وقتی مدل‌های استدلالی میرن تو کار حل معماها و مسائل سنگین مثل ریاضیات، سودوکو و حتی بنچمارک غول‌آسای ARC-AGI، فرآیند پردازششون الگوهای شگفت‌انگیز فرکتالی تولید می‌کنه. در واقع این دانشمندا با کمک ریاضیات و دینامیک غیرخطی تونستن به اعماق مغز این مدل‌های لایه‌عمیق نفوذ کنن و ببینن این سیستم‌ها چطوری مرحله به مرحله فکر می‌کنن و به جواب می‌رسن."
+  ],
+  "why": "این کشف راه رو باز می‌کنه تا بالاخره از جعبه سیاه مدل‌های استدلالی سر دربیاریم و بفهمیم ماشین‌ها موقع فکر کردن واقعاً چه نقشه‌ای تو سرشونه.",
+  "tags": []
+ },
+ "updated": "2026-10-25T12:27:38+00:00",
+ "gholam_checked": "2026-10-25T12:27:38+00:00"
+}

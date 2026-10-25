@@ -2,16 +2,23 @@
  "id": 5910,
  "url": "https://t.me/dlmehr/5910",
  "date": "2026-10-15T14:59:44+00:00",
- "edited": false,
- "views": "230",
  "text": "https://fxtwitter.com/AnthropicAI/status/2110720940665372825",
  "forwarded_from": "Parsa Razavi",
  "digest": false,
  "hash": "c5c03633b62a",
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/AnthropicAI/status/2110720940665372825",
+  "site": "FxTwitter · job-boards.greenhouse.io",
+  "title": "Anthropic (@AnthropicAI)",
+  "description": "Applications are now open for two new Anthropic Fellowships.\nSTEM Fellows (science and engineering) and Conceptual Reasoning Fellows (philosophy, cognitive science, economics, policy, and law) will spend four months at Anthropic from January 2027, working…",
+  "image": "https://cdn4.telesco.pe/file/JWc3VjwTm2pcJlPC8yh-5N5_Heoc_2WGXS8bC8fCo2uE063FFbfHKwBSMGm5UyTMgUMLZC7-BISe6Ow0c2cAJU4w9cTqvSLAfH2Cf_OLSUh11MdqgOLNBkiE7PzsUklPYhio4L61p3mIIJofkSqTKKNheTvg4WlqLSzSCgcT_yZbMH48mKh1XTsmMawWxD-xenX11WW8LaUmAfBK5ClTQ24AdpXHFgJUWyhWKltlkWOHgI9Q4OXD0xGp_mZmvRldEjjSq4tPSddWIB7-Q82A8K_A9zhlUZ4ujzROzGmg8j1JBOgnZqItviuLJRPQ9PyRN9-B0tzZMG88KzBPbRacVQ.jpg"
+ },
  "gholam": {
   "text": "رفیق، دم و دستگاه آنتروپیک درها رو باز کرده و برای دو تا دوره فلوشیپ خفن ثبت‌نام راه انداخته؛ یکی تو حوزه علوم پایه و مهندسی و اون یکی هم استدلال مفهومی که رشته‌هایی مثل فلسفه، علوم شناختی، اقتصاد و حقوق رو در بر می‌گیره. ماجرا اینه که قراره این متخصص‌ها چهار ماه تمام تو دل آنتروپیک مستقر بشن تا به مدل هوش مصنوعی کلود یاد بدن چطوری تو پیچیده‌ترین چالش‌های فکری این رشته‌ها درست‌ودرمون استدلال کنه. خلاصه اگر کسی اهل این مباحث باشه، تا ۲۸ اکتبر بیشتر وقت نداره تا دست بجنبونه و ثبت‌نامش رو نهایی کنه.\n\nاهمیتش اینه که غول‌های فناوری فهمیدن برای ارتقای هوش مصنوعی فقط به مهندس و کدنویس نیاز ندارن، بلکه به دانشمند و فیلسوف هم محتاجن تا ماشین بتونه منطق و استدلال عمیق انسانی رو یاد بگیره.",
   "date": "2026-10-15T14:59:59+00:00"
  },
+ "gholam_checked": "2026-10-24T23:35:34+00:00",
  "links": [
   {
    "kind": "tweet",
@@ -54,18 +61,6 @@
    "text": "Conceptual Reasoning Fellow\nAbout Anthropic\nAnthropic’s mission is to create reliable, interpretable, and steerable AI systems. We want AI to be safe and beneficial for our users and for society as a whole. Our team is a quickly growing group of committed researchers, engineers, policy experts, and business leaders working together to build beneficial AI systems.\nProgram Overview\nMany of the questions that will shape our future have no single checkable answer. Reasoning well about them, whether in law, policy, philosophy, economics, cognitive science, or AI safety itself, takes the kind of judgment experts spend years building. We believe frontier AI, developed safely, can become a real partner on these questions, but getting there means working closely with the people who know these fields best.\nThis fellowship brings researchers and experts from philosophy, cognitive science, economics, policy, and law into Anthropic for four months to work alongside our research teams. Fellows pair deep domain expertise with our frontier models and internal tooling to evaluate, improve, and apply Claude's capabilities in their field.\nWhat to Expect:\n- A concrete, scoped project matched to your background, with mentorship from Anthropic researchers.\n- Access to frontier Claude models and internal evaluation tooling.\n- A cohort of incoming Fellows to collaborate with and a connection to Anthropic's broader research community.\nCompensation:\n$100,000–$167,000 USD for the four-month fellowship (equivalent to $300,000–$500,000 USD annualized), and other benefits.\nKey responsibilities\n- Identifying key open problems in your field, assessing approaches to solving them, and using Claude to make progress on them.\n- Identifying grand societal challenges which the expertise of your field is crucial for addressing, and assessing Claude’s strengths and weaknesses in tackling them.\n- Designing evaluations and RL environments that test models in your field systematically, turning your expertise into working tests of how well Claude reasons in your field.\n- Team up with other Fellows in your field to build environments that push Claude on the hardest, most judgment-heavy problems your discipline has to offer.\nMinimum qualifications\n- Are excited about the potential for AI to reason well about hard questions in their field where expert judgment matters.\n- Hands-on experience using Claude and Claude Code in your day-to-day workflow.\n- Hold (or are completing) a PhD in philosophy, cognitive science, economics, policy or law, or have equivalent research experience.\n- Are comfortable working in a fast-paced, high-agency atmosphere for a few months and delivering concrete results.\n- Existing authorization to work in the United States for the duration of the program.\nPreferred qualifications\n- Experience designing evaluations, benchmarks, datasets, or expert rubrics.\n- Demonstrated expertise in your field, shown through research, scholarship, or expert-level analytical writing.\nRepresentative projects\n- A philosopher building hard cases that require normative judgment in ethics or formal epistemology.\n- A cognitive scientist designing experimental-design and model-comparison tasks.\n- An economist writing modelling and identification problems with ground truth.\n- A policy scholar drafting regulatory and cost-benefit analysis tasks with expert rubrics.\n- A legal scholar building AI-policy-relevant law datasets.\nLogistics - Fellows\n- The program runs from January 12th to May 8th 2027, and is full-time for the duration; some fellowships may be considered for an extension.\n- Applications are open until October 28, 2026, and we plan to make offers by November 20th. Later stages will typically include a take-home exercise and conversations with our research team and potential mentors about your research interests and possible project directions.\n- We ask that all Fellows attend a one-week in-person orientation in San Francisco.\n- The default location is in San Francisco. We will consider remote engagements within the United States in certain circumstances.\n- We are not currently able to sponsor visas for fellows. To participate in the Fellows program, you need to have or independently obtain full-time work authorization in the United States.\n- This is a fixed-term contract position. Fellows are engaged through an employer of record, rather than employed directly by Anthropic.\nThe below are Anthropic's policies for full time roles. These do NOT apply to the Fellows Program.\nLogistics\nMinimum education: Bachelor’s degree or an equivalent combination of education, training, and/or experience\nRequired field of study: A field relevant to the role as demonstrated through coursework, training, or professional experience\nMinimum years of experience: Years of experience required will correlate with the internal job level requirements for the position\nLocation-based hybrid policy: Currently, we expect all staff to be in one of our offices at least 25% of the ti"
   }
  ],
- "media": [],
- "preview": {
-  "url": "https://fxtwitter.com/AnthropicAI/status/2110720940665372825",
-  "site": "FxTwitter · job-boards.greenhouse.io",
-  "title": "Anthropic (@AnthropicAI)",
-  "description": "Applications are now open for two new Anthropic Fellowships.\nSTEM Fellows (science and engineering) and Conceptual Reasoning Fellows (philosophy, cognitive science, economics, policy, and law) will spend four months at Anthropic from January 2027, working…",
-  "image": {
-   "src": "media/5910/preview.webp",
-   "width": 200,
-   "height": 200
-  }
- },
  "article": {
   "title": "دم و دستگاه آنتروپیک درها رو باز کرده و برای دو تا دوره فلوشیپ خفن ثبت‌نام راه انداخته",
   "source_title": "Applications are now open for two new Anthropic Fellowships.",
@@ -77,6 +72,5 @@
    "آنتروپیک"
   ]
  },
- "updated": "2026-10-24T23:35:34+00:00",
- "gholam_checked": "2026-10-24T23:35:34+00:00"
+ "updated": "2026-10-25T11:54:11+00:00"
 }

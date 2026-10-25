@@ -2,16 +2,23 @@
  "id": 6012,
  "url": "https://t.me/dlmehr/6012",
  "date": "2026-10-21T13:49:19+00:00",
- "edited": true,
- "views": "194",
  "text": "https://fxtwitter.com/openai/status/2112899854569762936?s=52&t=F41Qa04r48Mef_j_XjBneQ",
  "forwarded_from": null,
  "digest": false,
  "hash": "9721cf732b2e",
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/openai/status/2112899854569762936?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+  "site": "FxTwitter · openai.com",
+  "title": "OpenAI (@OpenAI)",
+  "description": "GPT-Rosalind surfaced a new lead for drug discovery: could restoring cholesterol transport protect neurons from degeneration?\nDCTN1 is a gene linked to Perry syndrome, a rare neurodegenerative disorder. In mouse-brain data, disrupting it increased expression…",
+  "image": "https://cdn4.telesco.pe/file/CK8nZtQ6TGb7WRyM6dxsgY9MGzsWxKSOYzZKPGN_W6yti8RJ3OdLdfB-Pp-Ad-946mSwwQ_-nM52FRJ-6k_vMdVDIwHMGpE1UZMHupOiIsq61axLaxfO1D1-So0bMgijw8D9GeQ2mMrOxbUjJDTblDo-XFhMaguUoUwkfTKrH11FyIrO2l_sScIlS-4ucP9r_9WDDUYn93toQsuF0g_kL45jJKNher28S6mlBaTnZHiJN5yNLPYLi2zxD7LV--w8dXQS-Oqpj7mCZY1_BY_Uqu6um4nNmfkFKnc5MZ4oiXcLxoUSmB6i2SsKXbmCm7EEOEhI9h3WRSng362TV7CfuA.jpg"
+ },
  "gholam": {
   "text": "رفیق، بچه‌های OpenAI با یه مدل خفن به اسم GPT-Rosalind زدن تو کار بیولوژی و یه سرنخ باارزش واسه درمان بیماری‌های عصبی کشف کردن. قضیه از این قراره که این هوش مصنوعی اومده روی ژن DCTN1—که مربوط به یه بیماری نادر تخریب اعصاب به نام «سندرم پِری» هست—دست گذاشته و متوجه شده اختلال تو این ژن نمی‌ذاره کلسترول لازم به نورون‌های مغز برسه. نکته پشم‌ریزون ماجرا اینجاست که با همکاری مؤسسه اسکریپس و پِرتِرب، هزاران ایجنت موازی راه انداختن و داده‌های ژنتیکی میلیون‌ها سلول مغز موش رو فقط توی ۳۲ دقیقه با کل مقالات علمی دنیا مقایسه کردن. البته دانشمندا هنوز باید این فرضیه رو کف آزمایشگاه تست کنن، ولی تا همین‌جاشم یه مسیر کاملاً مشخص برای ساخت داروی جدید پیش پاشون گذاشته.\n\nاهمیتش اینه که تحلیل سنگینی که قبلاً سال‌ها زمان و کلی دوندگی می‌خواست، حالا ظرف نیم‌ساعت جلو پای دانشمندا گذاشته می‌شه و می‌تونه ساخت داروی بیماری‌های لاعلاج مغزی رو حسابی بندازه رو دور تند.",
   "date": "2026-10-21T13:49:39+00:00"
  },
+ "gholam_checked": "2026-10-24T23:03:12+00:00",
  "links": [
   {
    "kind": "tweet",
@@ -37,18 +44,6 @@
    ]
   }
  ],
- "media": [],
- "preview": {
-  "url": "https://fxtwitter.com/openai/status/2112899854569762936?s=52&t=F41Qa04r48Mef_j_XjBneQ",
-  "site": "FxTwitter · openai.com",
-  "title": "OpenAI (@OpenAI)",
-  "description": "GPT-Rosalind surfaced a new lead for drug discovery: could restoring cholesterol transport protect neurons from degeneration?\nDCTN1 is a gene linked to Perry syndrome, a rare neurodegenerative disorder. In mouse-brain data, disrupting it increased expression…",
-  "image": {
-   "src": "media/6012/preview.webp",
-   "width": 200,
-   "height": 200
-  }
- },
  "article": {
   "title": "بچه‌های OpenAI با یه مدل خفن به اسم GPT-Rosalind زدن تو کار بیولوژی و یه سرنخ باارزش واسه درمان بیماری‌های عصبی کشف کردن",
   "source_title": "GPT-Rosalind surfaced a new lead for drug discovery: could restoring cholesterol transport protect neurons from degeneration?",
@@ -61,6 +56,5 @@
    "سلامت"
   ]
  },
- "updated": "2026-10-24T23:03:12+00:00",
- "gholam_checked": "2026-10-24T23:03:12+00:00"
+ "updated": "2026-10-25T11:53:53+00:00"
 }

@@ -1,0 +1,52 @@
+{
+ "id": 5336,
+ "url": "https://t.me/dlmehr/5336",
+ "date": "2026-09-16T22:45:14+00:00",
+ "text": "https://fxtwitter.com/openai/status/2100344867507327087?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+ "forwarded_from": null,
+ "digest": false,
+ "hash": "b20905ca4b3d",
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/openai/status/2100344867507327087?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+  "site": "FxTwitter · openai.com",
+  "title": "OpenAI (@OpenAI)",
+  "description": "We're sharing our new framework for tracking, investigating, and disclosing instances of model misalignment at OpenAI.\nThe framework sets criteria and timelines for public disclosure, including when we haven’t yet fully explained or mitigated the behavior.…",
+  "image": "https://cdn4.telesco.pe/file/lcJ5fVSqnKVlFOA4ysUKiJGZDMhrQURe9xcmHShGL0aQj0KhkmFxt5fXoyzxYMpuQEzmBgWE-PMiqdkv65L83PhwYYP1WBHFlc1Zsu_4U5UkzthBs5VBlhiImryVaP64j25OVhiChrm989hFIeBv98kC4ObM4c5-adCF29PQEViFcWI3Y1fICmKPWUTm3oXHvcf60vEDhzlWduRAl3JoTsUawseMPmC0rGwjojX9i21VaoHfw2hkQgrJQ3OghmrhQfesoY_9kV7_Z923pXqdZ9j8IEZb6LtIKwCtyufGvip_bZ8Ex3g19qyc8qniluLOmXAxJm1dq5zdMYE8-kap9w.jpg"
+ },
+ "gholam": {
+  "text": "رفیق، بچه‌های اوپن‌ای‌آی اومدن یه چارچوب تازه رو کردن تا هر وقت هوش مصنوعیشون زد به جاده خاکی و رفتارهای پیش‌بینی‌نشده یا ناهمسو نشون داد، مو به مو ردش رو بگیرن و علنی کننش. طبق این سازوکار جدید، حتی اگه هنوز علت یه رفتار سرکشانه رو کامل نفهمیده باشن یا راه درمانش پیدا نشده باشه، باز هم با یه زمان‌بندی مشخص میان قضیه رو شفاف برای همه تعریف می‌کنن. دمشون گرم که قایم‌موشک‌بازی رو گذاشتن کنار و هم‌زمان با معرفی این سیستم، شیش‌تا گزارش پروپیمون از انحرافاتی که طی همین شش ماه اخیر موقع آموزش مدل‌هاشون دیدن رو هم رو در بایستی منتشر کردن. حالا هم قراره تمرکزشون رو بذارن روی کشف شیوه‌های جدیدی که هوش مصنوعی می‌تونه قوانین ایمنی رو دور بزنه و مدام گزارش‌های بیشتری به اشتراک بذارن.\n\nاهمیتش اینه که نشون میده این غول فناوری بالاخره تن به شفافیت داده تا قبل از اینکه کنترل هوش مصنوعی از دست بره، همه دنیا از سوتی‌ها و خطرات پنهانش باخبر باشن.",
+  "date": "2026-09-16T22:45:28+00:00"
+ },
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/OpenAI/status/2100344867507327087",
+   "domain": "x.com",
+   "author": {
+    "name": "OpenAI",
+    "handle": "OpenAI",
+    "avatar": "https://pbs.twimg.com/profile_images/1885410181409820672/ztsaR0JW_200x200.jpg"
+   },
+   "text": "We're sharing our new framework for tracking, investigating, and disclosing instances of model misalignment at OpenAI.\n\nThe framework sets criteria and timelines for public disclosure, including when we haven’t yet fully explained or mitigated the behavior. More complex cases may require longer investigation or coordination with third parties.\n\nWe’ll prioritize examples that reveal new misalignment mechanisms, meaningful changes in known behavior, or findings that challenge assumptions about safety or mitigation.\n\nAlongside the framework, we’re publishing six reports on instances of misaligned behavior we’ve observed during the training or evaluation of our models in the last six months.\n\nThis is a starting point. We’ll refine the process through experience and public feedback, and share more reports on an ongoing basis.\n\nhttps://openai.com/index/model-misalignment-reporting-framework/",
+   "date": 1789596213,
+   "media": [],
+   "links": [
+    "https://openai.com/index/model-misalignment-reporting-framework/"
+   ]
+  }
+ ],
+ "article": {
+  "title": "بچه‌های اوپن‌ای‌آی اومدن یه چارچوب تازه رو کردن تا هر وقت هوش مصنوعیشون زد به جاده خاکی و رفتارهای پیش‌بینی‌نشده یا ناهمسو نشون داد، مو به مو ردش رو بگیرن و علنی کننش",
+  "source_title": "We're sharing our new framework for tracking, investigating, and disclosing instances of model misalignment at OpenAI.",
+  "body": [
+   "رفیق، بچه‌های اوپن‌ای‌آی اومدن یه چارچوب تازه رو کردن تا هر وقت هوش مصنوعیشون زد به جاده خاکی و رفتارهای پیش‌بینی‌نشده یا ناهمسو نشون داد، مو به مو ردش رو بگیرن و علنی کننش. طبق این سازوکار جدید، حتی اگه هنوز علت یه رفتار سرکشانه رو کامل نفهمیده باشن یا راه درمانش پیدا نشده باشه، باز هم با یه زمان‌بندی مشخص میان قضیه رو شفاف برای همه تعریف می‌کنن. دمشون گرم که قایم‌موشک‌بازی رو گذاشتن کنار و هم‌زمان با معرفی این سیستم، شیش‌تا گزارش پروپیمون از انحرافاتی که طی همین شش ماه اخیر موقع آموزش مدل‌هاشون دیدن رو هم رو در بایستی منتشر کردن. حالا هم قراره تمرکزشون رو بذارن روی کشف شیوه‌های جدیدی که هوش مصنوعی می‌تونه قوانین ایمنی رو دور بزنه و مدام گزارش‌های بیشتری به اشتراک بذارن."
+  ],
+  "why": "نشون میده این غول فناوری بالاخره تن به شفافیت داده تا قبل از اینکه کنترل هوش مصنوعی از دست بره، همه دنیا از سوتی‌ها و خطرات پنهانش باخبر باشن.",
+  "tags": [
+   "اوپن‌ای‌آی"
+  ]
+ },
+ "updated": "2026-10-25T12:26:44+00:00",
+ "gholam_checked": "2026-10-25T12:26:44+00:00"
+}

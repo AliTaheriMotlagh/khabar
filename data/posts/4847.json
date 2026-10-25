@@ -1,0 +1,59 @@
+{
+ "id": 4847,
+ "url": "https://t.me/dlmehr/4847",
+ "date": "2026-08-20T19:40:09+00:00",
+ "text": "https://fxtwitter.com/openaidevs/status/2090515079058108745?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+ "forwarded_from": null,
+ "digest": false,
+ "hash": "d44fe406b3d5",
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/openaidevs/status/2090515079058108745?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+  "site": "🧵 Thread • FxTwitter",
+  "title": "OpenAI Developers (@OpenAIDevs)",
+  "description": "Add teammates as editors to your ChatGPT Sites so you can build and publish together.\nCollaborators can push changes to the same project while Codex handles git management and CI behind the scenes.",
+  "image": null
+ },
+ "gholam": {
+  "text": "ببین رفیق، بچه‌های اوپن‌ای‌آی دست به کار شدن و یه قابلیت مشتی واسه بخش ChatGPT Sites آوردن تا بتونی هم‌تیمی‌هات رو به عنوان ادیتور به پروژه اضافه کنی و با هم بسازید و منتشرش کنید. از این به بعد چند نفر هم‌زمان می‌تونن روی یه پروژه تغییرات مدنظرشون رو اعمال کنن و نگران قاطی پاتی شدن کدها نباشن. همه کارهای پشت صحنه مثل مدیریت گیت (Git) و سیستم‌های CI رو هم خود هوش مصنوعی کودکس (Codex) تر و تمیز دست می‌گیره تا همه‌چی هماهنگ بمونه.\n\nاهمیتش اینه که توسعه تیمی و همکاری روی پروژه‌های وبی با هوش مصنوعی خیلی روون‌تر شده و دیگه لازم نیست نگران پیچیدگی‌های فنی و مدیریت کدها وسط کار تیمی باشید.",
+  "date": "2026-08-20T19:40:18+00:00"
+ },
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/OpenAIDevs/status/2090515079058108745",
+   "domain": "x.com",
+   "author": {
+    "name": "OpenAI Developers",
+    "handle": "OpenAIDevs",
+    "avatar": "https://pbs.twimg.com/profile_images/2022002720971096064/l3Kyt4qt_200x200.jpg"
+   },
+   "text": "Add teammates as editors to your ChatGPT Sites so you can build and publish together.\n\nCollaborators can push changes to the same project while Codex handles git management and CI behind the scenes.",
+   "date": 1787252609,
+   "media": [
+    {
+     "type": "video",
+     "src": "https://video.twimg.com/amplify_video/2090515064856166400/vid/avc1/1280x720/RzqZ5PAOC3fsEUU1.mp4?tag=14",
+     "poster": "https://pbs.twimg.com/amplify_video_thumb/2090515064856166400/img/UyYj4kahCxXKvLgA.jpg",
+     "ratio": 0.5625,
+     "duration": 12.637,
+     "gif": false
+    }
+   ],
+   "links": []
+  }
+ ],
+ "article": {
+  "title": "بچه‌های اوپن‌ای‌آی دست به کار شدن و یه قابلیت مشتی واسه بخش ChatGPT Sites آوردن تا بتونی هم‌تیمی‌هات رو به عنوان ادیتور به پروژه اضافه کنی و با هم بسازید و منتشرش کنید",
+  "source_title": "Add teammates as editors to your ChatGPT Sites so you can build and publish together.",
+  "body": [
+   "ببین رفیق، بچه‌های اوپن‌ای‌آی دست به کار شدن و یه قابلیت مشتی واسه بخش ChatGPT Sites آوردن تا بتونی هم‌تیمی‌هات رو به عنوان ادیتور به پروژه اضافه کنی و با هم بسازید و منتشرش کنید. از این به بعد چند نفر هم‌زمان می‌تونن روی یه پروژه تغییرات مدنظرشون رو اعمال کنن و نگران قاطی پاتی شدن کدها نباشن. همه کارهای پشت صحنه مثل مدیریت گیت (Git) و سیستم‌های CI رو هم خود هوش مصنوعی کودکس (Codex) تر و تمیز دست می‌گیره تا همه‌چی هماهنگ بمونه."
+  ],
+  "why": "توسعه تیمی و همکاری روی پروژه‌های وبی با هوش مصنوعی خیلی روون‌تر شده و دیگه لازم نیست نگران پیچیدگی‌های فنی و مدیریت کدها وسط کار تیمی باشید.",
+  "tags": [
+   "اوپن‌ای‌آی"
+  ]
+ },
+ "updated": "2026-10-25T12:29:45+00:00",
+ "gholam_checked": "2026-10-25T12:29:45+00:00"
+}

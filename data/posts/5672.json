@@ -1,0 +1,59 @@
+{
+ "id": 5672,
+ "url": "https://t.me/dlmehr/5672",
+ "date": "2026-10-06T14:15:31+00:00",
+ "text": "https://fxtwitter.com/mistralai/status/2107457414387622310?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+ "forwarded_from": null,
+ "digest": false,
+ "hash": "d00989f748c1",
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/mistralai/status/2107457414387622310?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+  "site": "🧵 Thread • FxTwitter",
+  "title": "Mistral AI (@MistralAI)",
+  "description": "Meet Mistral Large 4, aka Le Chonk.\n• 1T parameters, natively multimodal. 49B active.\nIt is the best open weights model from US or Europe on aggregated benchmarks.\n• State-of-the-art on critical workloads, including cyber defense, manufacturing and finance…",
+  "image": null
+ },
+ "gholam": {
+  "text": "رفیق، بچه‌های میسترال فرانسه حسابی گردوخاک راه انداختن و از غول جدیدشون یعنی «میسترال لارج ۴» با لقب «لو چانک» رونمایی کردن. این هیولا در مجموع یک تریلیون پارامتر داره ولی با معماری خفنش در هر لحظه فقط ۴۹ میلیارد پارامترش فعاله، کاملاً چندوجهیه و حتی تو درک بصری تونسته از پس مدل‌های بسته و نام‌دار بازار بربیاد. طبق بنچمارک‌ها بهترین مدل وزن‌باز اروپا و آمریکا به حساب میاد و تو کارای سنگینی مثل امنیت سایبری، تولید و امور مالی ترکونده. همین الان از طریق API دردسترسه و دم غیرتشون گرم که قراره تا آخر ماه اکتبر هم وزن‌های کاملش رو رایگان و عمومی منتشر کنن تا همه حالشو ببرن.\n\nچرا مهمه؟ اهمیتش اینه که نشون میده یه مدل وزن‌باز می‌تونه پا‌به‌پای انحصاری‌های گردن‌کلفت رقابت کنه و پرچم جامعه متن‌باز رو بالا نگه داره.",
+  "date": "2026-10-06T14:15:51+00:00"
+ },
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/MistralAI/status/2107457414387622310",
+   "domain": "x.com",
+   "author": {
+    "name": "Mistral AI",
+    "handle": "MistralAI",
+    "avatar": "https://pbs.twimg.com/profile_images/1996905418065375232/mzwynOLB_200x200.jpg"
+   },
+   "text": "Meet Mistral Large 4, aka Le Chonk. \n\n• 1T parameters, natively multimodal. 49B active.\nIt is the best open weights model from US or Europe on aggregated benchmarks.\n• State-of-the-art on critical workloads, including cyber defense, manufacturing and finance and it surpasses closed frontier models on visual grounding.\n• Forged in Europe end-to-end and is deployable from Europe via our own Mistral Cloud infrastructure.\n• Available to all via API today. Working with cybersecurity partners privately.\n\nOpen weights release end of October.",
+   "date": 1791291976,
+   "media": [
+    {
+     "type": "video",
+     "src": "https://video.twimg.com/amplify_video/2107456560108601344/vid/avc1/1280x720/CQHgmF0-XvsUbRCJ.mp4?tag=29",
+     "poster": "https://pbs.twimg.com/amplify_video_thumb/2107456560108601344/img/JNzxxKyVVsXLGnCS.jpg",
+     "ratio": 0.5625,
+     "duration": 17.089,
+     "gif": false
+    }
+   ],
+   "links": []
+  }
+ ],
+ "article": {
+  "title": "بچه‌های میسترال فرانسه حسابی گردوخاک راه انداختن و از غول جدیدشون یعنی «میسترال لارج ۴» با لقب «لو چانک» رونمایی کردن",
+  "source_title": "Meet Mistral Large 4, aka Le Chonk.",
+  "body": [
+   "رفیق، بچه‌های میسترال فرانسه حسابی گردوخاک راه انداختن و از غول جدیدشون یعنی «میسترال لارج ۴» با لقب «لو چانک» رونمایی کردن. این هیولا در مجموع یک تریلیون پارامتر داره ولی با معماری خفنش در هر لحظه فقط ۴۹ میلیارد پارامترش فعاله، کاملاً چندوجهیه و حتی تو درک بصری تونسته از پس مدل‌های بسته و نام‌دار بازار بربیاد. طبق بنچمارک‌ها بهترین مدل وزن‌باز اروپا و آمریکا به حساب میاد و تو کارای سنگینی مثل امنیت سایبری، تولید و امور مالی ترکونده. همین الان از طریق API دردسترسه و دم غیرتشون گرم که قراره تا آخر ماه اکتبر هم وزن‌های کاملش رو رایگان و عمومی منتشر کنن تا همه حالشو ببرن."
+  ],
+  "why": "اهمیتش اینه که نشون میده یه مدل وزن‌باز می‌تونه پا‌به‌پای انحصاری‌های گردن‌کلفت رقابت کنه و پرچم جامعه متن‌باز رو بالا نگه داره.",
+  "tags": [
+   "امنیت"
+  ]
+ },
+ "updated": "2026-10-25T12:24:43+00:00",
+ "gholam_checked": "2026-10-25T12:24:43+00:00"
+}

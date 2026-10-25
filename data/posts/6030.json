@@ -2,16 +2,23 @@
  "id": 6030,
  "url": "https://t.me/dlmehr/6030",
  "date": "2026-10-21T19:33:41+00:00",
- "edited": true,
- "views": "177",
  "text": "https://fxtwitter.com/claudeai/status/2112984664256241837?s=52&t=F41Qa04r48Mef_j_XjBneQ",
  "forwarded_from": null,
  "digest": false,
  "hash": "edbfafbe3e2f",
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/claudeai/status/2112984664256241837?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+  "site": "🧵 Thread • FxTwitter",
+  "title": "Claude (@claudeai)",
+  "description": "We’re opening a research preview of Claude Duet, a new app where Claude works as a proactive agent.\nIt comes to you with what needs your attention, completes tasks you ask of it, keeps working when you step away, and checks with you before it acts on your…",
+  "image": null
+ },
  "gholam": {
   "text": "ببین رفیق، بچه‌های کلود اومدن از یه برنامه جدید و آزمایشی به اسم «Claude Duet» رونمایی کردن که رسماً یه دستیار همه‌فن‌حریف و خودجوشه. قضیه اینه که این هوش مصنوعی دیگه فقط منتظر دستور خشک‌وخالی نمی‌شینه؛ خودش کارا رو زیر نظر می‌گیره، چیزایی که باید حواست بهشون باشه رو میاره جلو چشمت و حتی وقتی پای سیستم نباشی هم کارِت رو زمین نمی‌ذاره و تنهایی پیش می‌بره. لوتی‌گریش هم اینجاست که قبل از این‌که بخواد از طرف خودت اقدامی بکنه یا تصمیمی رو نهایی کنه، اول میاد ازت رخصت می‌گیره و اوکی رو می‌خواد.\n\nاهمیتش اینه که هوش مصنوعی داره از یه ابزار ساده سوال‌جواب تبدیل میشه به یه همکار پای‌کار و مستقل، تا قشنگ بار کارای روتین رو از دوشت برداره.",
   "date": "2026-10-21T19:34:00+00:00"
  },
+ "gholam_checked": "2026-10-24T23:03:08+00:00",
  "links": [
   {
    "kind": "tweet",
@@ -46,14 +53,6 @@
    "links": []
   }
  ],
- "media": [],
- "preview": {
-  "url": "https://fxtwitter.com/claudeai/status/2112984664256241837?s=52&t=F41Qa04r48Mef_j_XjBneQ",
-  "site": "🧵 Thread • FxTwitter",
-  "title": "Claude (@claudeai)",
-  "description": "We’re opening a research preview of Claude Duet, a new app where Claude works as a proactive agent.\nIt comes to you with what needs your attention, completes tasks you ask of it, keeps working when you step away, and checks with you before it acts on your…",
-  "image": null
- },
  "article": {
   "title": "بچه‌های کلود اومدن از یه برنامه جدید و آزمایشی به اسم «Claude Duet» رونمایی کردن که رسماً یه دستیار همه‌فن‌حریف و خودجوشه",
   "source_title": "We’re opening a research preview of Claude Duet, a new app where Claude works as a proactive agent.",
@@ -65,6 +64,5 @@
    "آنتروپیک"
   ]
  },
- "updated": "2026-10-24T23:03:08+00:00",
- "gholam_checked": "2026-10-24T23:03:08+00:00"
+ "updated": "2026-10-25T11:53:53+00:00"
 }

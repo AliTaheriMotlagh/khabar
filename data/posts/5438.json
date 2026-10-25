@@ -1,0 +1,74 @@
+{
+ "id": 5438,
+ "url": "https://t.me/dlmehr/5438",
+ "date": "2026-09-23T12:34:41+00:00",
+ "text": "https://fxtwitter.com/alibaba_qwen/status/2102727405198876753?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+ "forwarded_from": null,
+ "digest": false,
+ "hash": "190d0a2009df",
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/alibaba_qwen/status/2102727405198876753?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+  "site": "🧵 Thread • FxTwitter",
+  "title": "Qwen (@Alibaba_Qwen)",
+  "description": "Introducing Qwen Intelligence, bringing personal intelligence within everyone's reach.\n📱\n✨\nIt launches with three SOTA agents:\n🥳\n- Mobile Planner Agent: plans, decomposes & orchestrates complex tasks. #1 on MobilePA-Bench, MobilePA-Bench Business & Memory.…",
+  "image": "https://cdn4.telesco.pe/file/d6fb1nLwabDfGnzdSHcHMrfGDfiKGypgJS4JyTdEl7ShRAPYD9US1QpEbY9cA3_ZVnqct-3_7wzeYKS8-pFEELDcvGPZq8N9eCUoi97cU6dRRDl_mNr_1JLFjbegy3ux3gpshkUZOcS52vWwl3fEAhdkPB2vpIc5YVrpqhXISRr6b13fYRh0_BbmrlZWMfV3ORCLyFpEDqOjaa9nuLybXgm-ODXt8u9SApP8QFlLct6lfVJ1ejdreUtYYG2v9dN508fEGohVdELWCEmSNnvJ6eAwESlJGl11tZHVXDKtwm-JnvMCzkAFyyfN0gKbSc6uOCwP8DTS4GWTm_qAz9vurA.jpg"
+ },
+ "gholam": {
+  "text": "رفیق، بچه‌های تیم کوئن رسماً از سیستم جدید Qwen Intelligence رونمایی کردن تا هوش مصنوعی کاربردی رو بیارن بیخ گوشمون روی گوشی‌های موبایل. قضیه از این قراره که سه تا ایجنت همه‌فن‌حریف روونه میدون کردن؛ یکی واسه برنامه‌ریزی و شکستن کارهای سنگین، یکی هم با نرخ موفقیت ۹۰ درصدی برای چرخیدن توی اپلیکیشن‌ها و انجام خودکار کارها، و آخری هم واسه خلق تصویر و محتوا که زیر ۳ ثانیه همه‌چیزو تحویل میده. تازه دمشون گرم که بنچمارک‌ها و سنجه‌های بررسی عملکرد و امنیتش رو هم کامل اوپن‌سورس کردن تا عیار کار مشخص بشه.\n\nچرا مهمه؟ چون هوش مصنوعی از حالت یه چت‌بات متنی ساده دراومده و داره تبدیل به دستیار زبل و همه‌کاره‌ای می‌شه که روی خود گوشی دست‌به‌کار می‌شه و کارهای روزمره‌مون رو جفت‌وجور می‌کنه.",
+  "date": "2026-09-23T12:34:54+00:00"
+ },
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/Alibaba_Qwen/status/2102727405198876753",
+   "domain": "x.com",
+   "author": {
+    "name": "Qwen",
+    "handle": "Alibaba_Qwen",
+    "avatar": "https://pbs.twimg.com/profile_images/2064231947149377536/Ab70PxT5_200x200.jpg"
+   },
+   "text": "Introducing Qwen Intelligence, bringing personal intelligence within everyone's reach. 📱✨\n\nIt launches with three SOTA agents: 🥳\n- Mobile Planner Agent: plans, decomposes & orchestrates complex tasks. #1 on MobilePA-Bench, MobilePA-Bench Business & Memory.\n- Mobile-Use Agent: gets things done, API-first with GUI fallback. MobileWorld 82.1, MobileWorld-Real 92.2, AndroidDaily 97.2, 90% end-to-end success rate.\n- Mobile Creative Agent: turns one sentence into ready-to-use creations. Image generated in 3s, about 2x faster than leading peers.\n\nWe're also opening up our benchmark suite: MobilePA-Bench, MobileWorld, MobileWorld-Real, and MobileWorld-Safety, covering planning, cross-app execution, real-device performance and safety.\n\n🔗 Learn more about the agents:\n- Qwen Intelligence official website: https://www.qwenintelligence.com\n- Mobile Planner Agent: https://github.com/Tongyi-MAI/Qwen-Planner-Agent\n- Mobile-Use Agent: https://tongyi-mai.github.io/Qwen-UI-Agent/\n- Mobile Creative Agent: https://arxiv.org/abs/2608.16887\n\n🔗 Explore our open benchmark suite:\n- MobilePA-Bench: https://tongyi-mai.github.io/MobilePA-Bench/\n- MobileWorld (GitHub): https://github.com/Tongyi-MAI/MobileWorld\n- Leaderboard: https://tongyi-mai.github.io/MobileWorld/#leaderboard",
+   "date": 1790164254,
+   "media": [
+    {
+     "type": "image",
+     "src": "https://pbs.twimg.com/media/HS5gsaTacAAxrKw.jpg?name=orig",
+     "ratio": 0.75
+    }
+   ],
+   "links": [
+    "https://www.qwenintelligence.com",
+    "https://github.com/Tongyi-MAI/Qwen-Planner-Agent",
+    "https://tongyi-mai.github.io/Qwen-UI-Agent/",
+    "https://arxiv.org/abs/2608.16887",
+    "https://tongyi-mai.github.io/MobilePA-Bench/",
+    "https://github.com/Tongyi-MAI/MobileWorld",
+    "https://tongyi-mai.github.io/MobileWorld/#leaderboard"
+   ]
+  },
+  {
+   "kind": "link",
+   "url": "https://www.qwenintelligence.com",
+   "domain": "qwenintelligence.com",
+   "title": "Qwen Intelligence",
+   "description": "Qwen Intelligence",
+   "image": null,
+   "site": "qwenintelligence.com"
+  }
+ ],
+ "article": {
+  "title": "بچه‌های تیم کوئن رسماً از سیستم جدید Qwen Intelligence رونمایی کردن تا هوش مصنوعی کاربردی رو بیارن بیخ گوشمون روی گوشی‌های موبایل",
+  "source_title": "Introducing Qwen Intelligence, bringing personal intelligence within everyone's reach. 📱✨",
+  "body": [
+   "رفیق، بچه‌های تیم کوئن رسماً از سیستم جدید Qwen Intelligence رونمایی کردن تا هوش مصنوعی کاربردی رو بیارن بیخ گوشمون روی گوشی‌های موبایل. قضیه از این قراره که سه تا ایجنت همه‌فن‌حریف روونه میدون کردن؛ یکی واسه برنامه‌ریزی و شکستن کارهای سنگین، یکی هم با نرخ موفقیت ۹۰ درصدی برای چرخیدن توی اپلیکیشن‌ها و انجام خودکار کارها، و آخری هم واسه خلق تصویر و محتوا که زیر ۳ ثانیه همه‌چیزو تحویل میده. تازه دمشون گرم که بنچمارک‌ها و سنجه‌های بررسی عملکرد و امنیتش رو هم کامل اوپن‌سورس کردن تا عیار کار مشخص بشه."
+  ],
+  "why": "چون هوش مصنوعی از حالت یه چت‌بات متنی ساده دراومده و داره تبدیل به دستیار زبل و همه‌کاره‌ای می‌شه که روی خود گوشی دست‌به‌کار می‌شه و کارهای روزمره‌مون رو جفت‌وجور می‌کنه.",
+  "tags": [
+   "چین",
+   "کدنویسی"
+  ]
+ },
+ "updated": "2026-10-25T12:26:03+00:00",
+ "gholam_checked": "2026-10-25T12:26:03+00:00"
+}

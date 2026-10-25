@@ -1,0 +1,71 @@
+{
+ "id": 4772,
+ "url": "https://t.me/dlmehr/4772",
+ "date": "2026-08-16T22:47:56+00:00",
+ "text": "https://fxtwitter.com/phosphenq/status/2088736181919862867?s=20",
+ "forwarded_from": "Amin",
+ "digest": false,
+ "hash": "8b91baf8127a",
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/phosphenq/status/2088736181919862867?s=20",
+  "site": "FxTwitter",
+  "title": "Phosphen (@phosphenq)",
+  "description": "A friend sent me this at 3am with no message attached, only the file\nDeepSeek gave away the harness their own agents run on and published the 88-page proof sitting under it: 133 plugins, MIT, nothing held back\nmodels > tools > skills > sessions > sandboxes…",
+  "image": "https://cdn4.telesco.pe/file/QrQ6OVB135G4tc3nIE1hsgDxfanrvfRRn97v5EbR6Yl5g7hdzT1JE1JCf6nk2hJaloZCLfKciu2oYLxXOjjrte_YD9s8wTwxNH7BazcQLrKFNEar5RFpkHANFbqruxLx6XNgFV3HQgkOIRZZHKDbOoROvuJOJsFsRWkrKz0EVZ1R84b-FeMVUYgCRGuXmGz6ZRj_ziN3nqeDwUOz5e-APtlBXCYA8PFf8F463StLz2qMiBCilZpQ-tjWuYwC5aXdkzYt3PyJSYC9hQOLZCP21S1N7AYY45uoDyX5aeq2VUOy5WIvgERfd6yIcjX_VfoS1knBq2w5f8J2fRn6MbnuGw.jpg"
+ },
+ "gholam": {
+  "text": "ببین رفیق، بچه‌های دیپ‌سیک باز هم گل کاشتن و کل چهارچوب و زیرساختی که ایجنت‌هاشون روش سوارن رو با لایسنس اوپن‌سورس MIT رایگان ریختن رو دایره. این بستر خفن همراه یه داکیومنت دست‌اول ۸۸ صفحه‌ای و ۱۳۳ تا پلاگین آماده منتشر شده که مو لای درزش نمیره. همه‌چیزش از مدل‌ها و مهارت‌ها گرفته تا خود لوپ اصلی ایجنت کاملاً باز و قابل دستکاریه، و حتی از هوک‌های ابزار Claude Code هم بدون دردسر پشتیبانی می‌کنه. جالب‌تر اینکه تو حالت سازنده، خود مدل می‌تونه هم‌زمان تو همون سشنی که در جریانه پلاگین تازه بنویسه و مستقیم به کار بگیره.\n\nاهمیتش اینه که دیپ‌سیک هسته عملیاتی و ابزار ایجنت‌سازی واقعی‌شو علنی کرده تا دولوپرها بتونن بدون وابستگی به غول‌های بسته‌باز، خفن‌ترین سیستم‌های هوشمند اختصاصی رو سوار کنن.",
+  "date": "2026-08-16T22:48:06+00:00"
+ },
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/phosphenq/status/2088736181919862867",
+   "domain": "x.com",
+   "author": {
+    "name": "Phosphen",
+    "handle": "phosphenq",
+    "avatar": "https://pbs.twimg.com/profile_images/2079562595300712448/uoVjDv_N_200x200.jpg"
+   },
+   "text": "A friend sent me this at 3am with no message attached, only the file\n\nDeepSeek gave away the harness their own agents run on and published the 88-page proof sitting under it: 133 plugins, MIT, nothing held back\n\nmodels > tools > skills > sessions > sandboxes > the agent loop itself, every one a row you can switch off\n\nIt picks up your Claude Code hooks unmodified, and in creator mode the model writes new plugins into the session it is already running in\n\nRead the first page, then pass it on the way it reached me & the full guide is below",
+   "date": 1786828487,
+   "media": [
+    {
+     "type": "image",
+     "src": "https://pbs.twimg.com/media/HPyrb8fXoAAw7YE.jpg?name=orig",
+     "ratio": 1.4143
+    }
+   ],
+   "links": [],
+   "quote": {
+    "author": {
+     "name": "Phosphen",
+     "handle": "phosphenq",
+     "avatar": "https://pbs.twimg.com/profile_images/2079562595300712448/uoVjDv_N_200x200.jpg"
+    },
+    "text": "https://x.com/i/article/2088699114796032000",
+    "date": 1786822154,
+    "media": [],
+    "links": [
+     "https://x.com/i/article/2088699114796032000"
+    ]
+   }
+  }
+ ],
+ "article": {
+  "title": "بچه‌های دیپ‌سیک باز هم گل کاشتن و کل چهارچوب و زیرساختی که ایجنت‌هاشون روش سوارن رو با لایسنس اوپن‌سورس MIT رایگان ریختن رو دایره",
+  "source_title": "A friend sent me this at 3am with no message attached, only the file",
+  "body": [
+   "ببین رفیق، بچه‌های دیپ‌سیک باز هم گل کاشتن و کل چهارچوب و زیرساختی که ایجنت‌هاشون روش سوارن رو با لایسنس اوپن‌سورس MIT رایگان ریختن رو دایره. این بستر خفن همراه یه داکیومنت دست‌اول ۸۸ صفحه‌ای و ۱۳۳ تا پلاگین آماده منتشر شده که مو لای درزش نمیره. همه‌چیزش از مدل‌ها و مهارت‌ها گرفته تا خود لوپ اصلی ایجنت کاملاً باز و قابل دستکاریه، و حتی از هوک‌های ابزار Claude Code هم بدون دردسر پشتیبانی می‌کنه. جالب‌تر اینکه تو حالت سازنده، خود مدل می‌تونه هم‌زمان تو همون سشنی که در جریانه پلاگین تازه بنویسه و مستقیم به کار بگیره."
+  ],
+  "why": "دیپ‌سیک هسته عملیاتی و ابزار ایجنت‌سازی واقعی‌شو علنی کرده تا دولوپرها بتونن بدون وابستگی به غول‌های بسته‌باز، خفن‌ترین سیستم‌های هوشمند اختصاصی رو سوار کنن.",
+  "tags": [
+   "چین",
+   "آنتروپیک",
+   "کدنویسی"
+  ]
+ },
+ "updated": "2026-10-25T12:30:10+00:00",
+ "gholam_checked": "2026-10-25T12:30:10+00:00"
+}

@@ -1,0 +1,71 @@
+{
+ "id": 5708,
+ "url": "https://t.me/dlmehr/5708",
+ "date": "2026-10-07T14:59:01+00:00",
+ "text": "https://fxtwitter.com/deredleritt3r/status/2107831395976430032?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+ "forwarded_from": null,
+ "digest": false,
+ "hash": "cb56f3e17b62",
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/deredleritt3r/status/2107831395976430032?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+  "site": "FxTwitter",
+  "title": "prinz (@deredleritt3r)",
+  "description": "OpenAI's internal model clearly has \"research taste\" in math - i.e., the final component we need to get to RSI.\n- jboggan (post on Hacker News) on Barnette's Conjecture: \"the 'aha' insight for this is actually f**ing wild... this is the first time I've…",
+  "image": "https://cdn4.telesco.pe/file/bhMd5IT4IqDc1xqx25RN6-bvkcWmsZK9QDi8IwXoSedXfynx8VrmbZFMavm3T1POcs8onVgFuu3BcPAb7wRa1G0CSkfu5csrxiXNt8egeu7nip5u89uwpB76AKTSzXlaD4ERWkFPVYxixSyoy7JOvq-TOJL2-V1Tut5hJil-yUQc0sY60WQx4SpK49Gy1G99aklH4Xts9MoIPkf9kDM5EqwP0tYH9QLRbx0tGCmWmVPSt00b0kSj4LfPUSmQuGB7ckJMu4GAj6Zhy3GxWrToWx1eUi2BacOlIfNJAL19VITg6VsJq2J03rhWkYgftVOArlBT7yNhUyDdGJXPqt_pfg.jpg"
+ },
+ "gholam": {
+  "text": "رفیق، قضیه اینه که مدل داخلی جدید اوپن‌ای‌آی زده تو کار ریاضیات سنگین و چنان خلاقیت پژوهشی از خودش نشون داده که کف ریاضی‌دان‌های کله‌گنده بریده. این غول جدید مسائلی مثل حدس بارنت و معادلات پیچیده ناویه-استوکس رو با خلق تکنیک‌های کاملاً بکر حل کرده؛ طوری که دانشمندی مثل باکمستر اعتراف کرده هوش مصنوعی راهکاری داده که خودش ده سال آزگار دنبالش سگ‌دو زده و بهش نرسیده بود. جالب‌تر اینکه حل این معماهای تاریخی برای سیستم فقط حدود سه ساعت تفکر سنگین ماشینی برده که نهایتاً چند صد دلار بیشتر خرج رو دستشون نذاشته. خلاصه اینکه مدل دیگه طوطی‌وار از روی دست مقاله‌های قبلی کپی نمی‌کنه و رسماً به درک و نبوغ علمی دست پیدا کرده.\n\nچرا مهمه؟ اهمیتش اینه که دستیابی هوش مصنوعی به خلاقیت مستقل در ریاضیات، کلید اصلی ورود به دنیای پیشرفت خودکار و جهش بی‌سابقه در علم روز دنیاست.",
+  "date": "2026-10-07T14:59:23+00:00"
+ },
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/deredleritt3r/status/2107831395976430032",
+   "domain": "x.com",
+   "author": {
+    "name": "prinz",
+    "handle": "deredleritt3r",
+    "avatar": "https://pbs.twimg.com/profile_images/1874359541720092672/ciOMFG2x_200x200.jpg"
+   },
+   "text": "OpenAI's internal model clearly has \"research taste\" in math - i.e., the final component we need to get to RSI.  \n\n- jboggan (post on Hacker News) on Barnette's Conjecture: \"the 'aha' insight for this is actually f**ing wild... this is the first time I've seen complex roots and annihilating terms like this... I don't understand where this trick originated.\"\n\n- Joshua Zelinsky on the proof that the chromatic number of the plane is at least six: \"doesn't look like the method is a direction that the prior lit used to my knowledge... far beyond merelt building on existing methods or seeing connections between different problems.\"\n\nand on two other problems (where he says he is only partly familiar with the literature): \"not remotely low-hanging fruit... it seems like the AI is somehow inventing new techniques on its own.\"\n\nThese match Tristian Buckmaster's view on the Navier-Stokes solution: \"you combine... ideas of convex integration with the growth mechanism of the Euler blowup, and... you create a new mechanism which is used to correct this non-solution. This is actually a cool idea. It's the kind of idea that I've been trying and failing to realize for over ten years... I didn't manage to do it... This is the leap.\"\n\nThe average amount of compute used to solve these problems was ~3 hours of Pro-level thinking.\n\nAnd so, this means that OpenAI's internal model is able to generate truly novel discoveries in mathematics for... maybe at most a few hundred bucks?\n\nIf I were OpenAI, I would be asking this model to immediately target major unsolved problems in AI R&D.",
+   "date": 1791381141,
+   "media": [
+    {
+     "type": "image",
+     "src": "https://pbs.twimg.com/media/HUB6HeEXgAAdS6H.jpg?name=orig",
+     "ratio": 1.3697
+    },
+    {
+     "type": "image",
+     "src": "https://pbs.twimg.com/media/HUB61fKWYAA-yYM.jpg?name=orig",
+     "ratio": 0.5463
+    },
+    {
+     "type": "image",
+     "src": "https://pbs.twimg.com/media/HUB7n5oWsAASimv.jpg?name=orig",
+     "ratio": 0.4907
+    },
+    {
+     "type": "image",
+     "src": "https://pbs.twimg.com/media/HUB8HKYXkAA4BZt.jpg?name=orig",
+     "ratio": 1.2895
+    }
+   ],
+   "links": []
+  }
+ ],
+ "article": {
+  "title": "قضیه اینه که مدل داخلی جدید اوپن‌ای‌آی زده تو کار ریاضیات سنگین و چنان خلاقیت پژوهشی از خودش نشون داده که کف ریاضی‌دان‌های کله‌گنده بریده",
+  "source_title": "OpenAI's internal model clearly has \"research taste\" in math - i.e., the final component we need to get to RSI.",
+  "body": [
+   "رفیق، قضیه اینه که مدل داخلی جدید اوپن‌ای‌آی زده تو کار ریاضیات سنگین و چنان خلاقیت پژوهشی از خودش نشون داده که کف ریاضی‌دان‌های کله‌گنده بریده. این غول جدید مسائلی مثل حدس بارنت و معادلات پیچیده ناویه-استوکس رو با خلق تکنیک‌های کاملاً بکر حل کرده؛ طوری که دانشمندی مثل باکمستر اعتراف کرده هوش مصنوعی راهکاری داده که خودش ده سال آزگار دنبالش سگ‌دو زده و بهش نرسیده بود. جالب‌تر اینکه حل این معماهای تاریخی برای سیستم فقط حدود سه ساعت تفکر سنگین ماشینی برده که نهایتاً چند صد دلار بیشتر خرج رو دستشون نذاشته. خلاصه اینکه مدل دیگه طوطی‌وار از روی دست مقاله‌های قبلی کپی نمی‌کنه و رسماً به درک و نبوغ علمی دست پیدا کرده."
+  ],
+  "why": "اهمیتش اینه که دستیابی هوش مصنوعی به خلاقیت مستقل در ریاضیات، کلید اصلی ورود به دنیای پیشرفت خودکار و جهش بی‌سابقه در علم روز دنیاست.",
+  "tags": [
+   "اوپن‌ای‌آی"
+  ]
+ },
+ "updated": "2026-10-25T12:24:28+00:00",
+ "gholam_checked": "2026-10-25T12:24:28+00:00"
+}

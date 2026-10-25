@@ -1,0 +1,71 @@
+{
+ "id": 4810,
+ "url": "https://t.me/dlmehr/4810",
+ "date": "2026-08-19T00:04:36+00:00",
+ "text": "https://fxtwitter.com/pdhsu/status/2089855594962509903?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+ "forwarded_from": null,
+ "digest": false,
+ "hash": "daf3a3e5b7c8",
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/pdhsu/status/2089855594962509903?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+  "site": "FxTwitter",
+  "title": "Patrick Hsu (@pdhsu)",
+  "description": "a nice demonstration of Claude Science, but worth clarifying that the design is not \"done by Claude\" but by orchestrating tool calls of open-source, task-specific protein design models: PXDesign, RFdiffusion, Genie, BoltzGen, etc\nI think the direction of…",
+  "image": null
+ },
+ "gholam": {
+  "text": "ببین رفیق، پاتریک هسو اومده رو دموی جدید هوش مصنوعی کلود درباره طراحی پروتئین و کشف دارو دست گذاشته و یه نکته فنی و مشتی رو روشن کرده. طرف میگه فکر نکنید خود کلود تنهایی نشسته از صفر پروتئین طراحی کرده، بلکه مثل یه ارکستر، ابزارها و مدل‌های تخصصی و اوپن‌سورس زیست‌شناسی مثل RFdiffusion و BoltzGen و Genie رو صدا زده و مدیریت کرده. خلاصه کار اصلی طراحی رو همون مدل‌های تخصصی انجام میدن و کلود نقش هماهنگ‌کننده رو داره، که به گفته هسو این مسیرِ استفاده از مدل‌های زبانی برای به‌کارگیری ابزارهای تخصصی بیولوژی فوق‌العاده آینده‌داره.\n\nچرا مهمه؟ اهمیتش اینه که نشون میده مدل‌های زبانی بزرگ قراره دستیار و هماهنگ‌کننده ابزارهای تخصصی علمی بشن تا روند ساخت دارو و درمان‌های جدید خیلی سریع‌تر پیش بره.",
+  "date": "2026-08-19T00:04:48+00:00"
+ },
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/pdhsu/status/2089855594962509903",
+   "domain": "x.com",
+   "author": {
+    "name": "Patrick Hsu",
+    "handle": "pdhsu",
+    "avatar": "https://pbs.twimg.com/profile_images/2113382475393380352/U6rRsXSi_200x200.jpg"
+   },
+   "text": "a nice demonstration of Claude Science, but worth clarifying that the design is not \"done by Claude\" but by orchestrating tool calls of open-source, task-specific protein design models: PXDesign, RFdiffusion, Genie, BoltzGen, etc\n\nI think the direction of LLMs using biology-specific models is a good one!",
+   "date": 1787095376,
+   "media": [],
+   "links": [],
+   "quote": {
+    "author": {
+     "name": "Anthropic",
+     "handle": "AnthropicAI",
+     "avatar": "https://pbs.twimg.com/profile_images/1798110641414443008/XP8gyBaY_200x200.jpg"
+    },
+    "text": "Many drugs work by binding to a specific target in the body and blocking or changing what it does. An important first step in the drug development process is designing a molecule that can bind tightly to its target. Traditionally, that's meant weeks or months of expert work per target, sifting through a large number of candidates to identify the few that work.\n\nWe wanted to test if Claude could successfully design novel protein binders from scratch (also called de novo design). With a protein design prompt written by a human expert, Claude autonomously designed protein binders against 14 out of 15 targets.\n\nWe then worked with Adaptyv Bio and Twist Bioscience, who independently built and tested the proteins Claude designed.",
+    "date": 1787092227,
+    "media": [
+     {
+      "type": "video",
+      "src": "https://video.twimg.com/amplify_video/2089839233309773824/vid/avc1/1280x720/nHWgl750hpZfMNMd.mp4?tag=29",
+      "poster": "https://pbs.twimg.com/media/HQKU_NGbsAENp-_.jpg",
+      "ratio": 0.5625,
+      "duration": 11,
+      "gif": false
+     }
+    ],
+    "links": []
+   }
+  }
+ ],
+ "article": {
+  "title": "پاتریک هسو اومده رو دموی جدید هوش مصنوعی کلود درباره طراحی پروتئین و کشف دارو دست گذاشته و یه نکته فنی و مشتی رو روشن کرده",
+  "source_title": "a nice demonstration of Claude Science, but worth clarifying that the design is not \"done by Claude\" but by orchestrating tool calls of…",
+  "body": [
+   "ببین رفیق، پاتریک هسو اومده رو دموی جدید هوش مصنوعی کلود درباره طراحی پروتئین و کشف دارو دست گذاشته و یه نکته فنی و مشتی رو روشن کرده. طرف میگه فکر نکنید خود کلود تنهایی نشسته از صفر پروتئین طراحی کرده، بلکه مثل یه ارکستر، ابزارها و مدل‌های تخصصی و اوپن‌سورس زیست‌شناسی مثل RFdiffusion و BoltzGen و Genie رو صدا زده و مدیریت کرده. خلاصه کار اصلی طراحی رو همون مدل‌های تخصصی انجام میدن و کلود نقش هماهنگ‌کننده رو داره، که به گفته هسو این مسیرِ استفاده از مدل‌های زبانی برای به‌کارگیری ابزارهای تخصصی بیولوژی فوق‌العاده آینده‌داره."
+  ],
+  "why": "اهمیتش اینه که نشون میده مدل‌های زبانی بزرگ قراره دستیار و هماهنگ‌کننده ابزارهای تخصصی علمی بشن تا روند ساخت دارو و درمان‌های جدید خیلی سریع‌تر پیش بره.",
+  "tags": [
+   "آنتروپیک",
+   "سلامت"
+  ]
+ },
+ "updated": "2026-10-25T12:29:56+00:00",
+ "gholam_checked": "2026-10-25T12:29:56+00:00"
+}

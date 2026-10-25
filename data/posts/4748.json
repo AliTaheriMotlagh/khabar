@@ -1,0 +1,68 @@
+{
+ "id": 4748,
+ "url": "https://t.me/dlmehr/4748",
+ "date": "2026-08-14T15:07:58+00:00",
+ "text": "https://fxtwitter.com/alibaba_qwen/status/2088280182356611304?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+ "forwarded_from": null,
+ "digest": false,
+ "hash": "41dcb8ede6e1",
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/alibaba_qwen/status/2088280182356611304?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+  "site": "🧵 Thread • FxTwitter",
+  "title": "Qwen (@Alibaba_Qwen)",
+  "description": "We promised open weights for Qwen3.8. Now, time to meet them!\n🎉\n⚡\nQwen3.8-27B:\n- A native multimodal dense model. With just 27B parameters, it outperforms Qwen3.7-Plus overall and shines in real-world coding & office workflows.\n- 262K native context, easily…",
+  "image": "https://cdn4.telesco.pe/file/qxvk6a-KlVuyvR0TmZqh3f_zNWrJ5LWHw_kF_59n32h9Z-1IrDh6EtiBz34YOtJ8Z7Y4J-SeUUybLv2MMY0mxlg0zkdKyRCwdMoIH-V3Q5U6MHjBw9cQX4QDTnOZ_FCE93MvNWZAvsyMKN3GSCAvQq5dm1CY-WN2f_PMbgzd27ATBHGHZKCKOOgjjrU0rwGNk_jXvl0P0M_M6aya6dEkFPt4Md_kJVfBRqpXbJ3tnc_tbUAP3ZemzEyHKI0_C9TAFX8sziAZtAyW8nP6lblxKrrxXS6J_pwlCbEyisqa4TnC0fZGP-hL7xwL1vPFA69ggaUv2WRX5IF0AVT-qzP0kg.jpg"
+ },
+ "gholam": {
+  "text": "رفیق، بچه‌های تیم Qwen علی‌بابا سر قولشون موندن و وزن‌های مدل چندوجهی Qwen3.8-27B رو همراه با مدل غول‌پیکر Qwen3.8-2.4T-A95B به صورت کاملاً متن‌باز و با لایسنس آپاچی ۲.۰ منتشر کردن. این مدل ۲۷ میلیاردی با وجود سبک بودنش حتی از نسخه Qwen3.7-Plus هم جلو زده و توی کدنویسی و کاربری‌های اداری واقعی بدجوری می‌درخشه. طول زمینه یا همون کانتکست نیتیوش ۲۶۲ هزار توکنه که با تکنیک YaRN راحت تا یک میلیون توکن هم کش میاد و برای پردازش اسناد حجیم حرف نداره. خلاصه آبجی و داداش گلم، چه بخوای لوکال و جمع‌وجور برنامه بزنی و چه دنبال ساخت ایجنت‌های سنگین باشی، این مدل‌های دست‌ودلباز حسابی کارت رو راه میندازن.\n\nاهمیتش اینه که بدون نیاز به پرداخت هزینه‌های سنگین دلاری برای APIها، یه مدل چندوجهی فوق‌العاده قوی و رایگان در اختیارت قرار گرفته که می‌تونی روی سیستم خودت ران کنی و هرچی دلت خواست باهاش بسازی.",
+  "date": "2026-08-14T15:08:13+00:00"
+ },
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/Alibaba_Qwen/status/2088280182356611304",
+   "domain": "x.com",
+   "author": {
+    "name": "Qwen",
+    "handle": "Alibaba_Qwen",
+    "avatar": "https://pbs.twimg.com/profile_images/2064231947149377536/Ab70PxT5_200x200.jpg"
+   },
+   "text": "We promised open weights for Qwen3.8. Now, time to meet them! 🎉\n\n⚡ Qwen3.8-27B:\n- A native multimodal dense model. With just 27B parameters, it outperforms Qwen3.7-Plus overall and shines in real-world coding & office workflows.\n- 262K native context, easily extendable to 1M tokens via YaRN.\n- Built for builders. Highly efficient, high-quality, and licensed under Apache 2.0.\n\n🚀 The open weights for Qwen3.8-2.4T-A95B (Max-level) have also been released recently.\n\nWhether you're shipping lightweight applications with Qwen3.8-27B locally or building agents with Qwen3.8-2.4T-A95B, they're yours now!\n\nDownload, deploy, and build something we haven't imagined yet. 👀👇\n- Hugging Face：\nhttps://huggingface.co/collections/Qwen/qwen38\n- ModelScope：\nhttps://www.modelscope.cn/collections/Qwen/Qwen38",
+   "date": 1786719768,
+   "media": [
+    {
+     "type": "image",
+     "src": "https://pbs.twimg.com/media/HPsKxzsbQAAJa4d.jpg?name=orig",
+     "ratio": 0.5625
+    }
+   ],
+   "links": [
+    "https://huggingface.co/collections/Qwen/qwen38",
+    "https://www.modelscope.cn/collections/Qwen/Qwen38"
+   ]
+  },
+  {
+   "kind": "link",
+   "url": "https://huggingface.co/collections/Qwen/qwen38",
+   "domain": "huggingface.co",
+   "title": "Qwen3.8 - a Qwen Collection",
+   "description": "We’re on a journey to advance and democratize artificial intelligence through open source and open science.",
+   "image": "https://cdn-thumbnails.huggingface.co/social-thumbnails/collections/Qwen/qwen38-6a7d69d63a8fa0914eb7e54c.png",
+   "site": "huggingface.co"
+  }
+ ],
+ "article": {
+  "title": "بچه‌های تیم Qwen علی‌بابا سر قولشون موندن و وزن‌های مدل چندوجهی Qwen3.8-27B رو همراه با مدل غول‌پیکر Qwen3.8-2.4T-A95B به صورت کاملاً متن‌باز و با لایسنس آپاچی ۲.۰ منتشر کردن",
+  "source_title": "We promised open weights for Qwen3.8. Now, time to meet them! 🎉",
+  "body": [
+   "رفیق، بچه‌های تیم Qwen علی‌بابا سر قولشون موندن و وزن‌های مدل چندوجهی Qwen3.8-27B رو همراه با مدل غول‌پیکر Qwen3.8-2.4T-A95B به صورت کاملاً متن‌باز و با لایسنس آپاچی ۲.۰ منتشر کردن. این مدل ۲۷ میلیاردی با وجود سبک بودنش حتی از نسخه Qwen3.7-Plus هم جلو زده و توی کدنویسی و کاربری‌های اداری واقعی بدجوری می‌درخشه. طول زمینه یا همون کانتکست نیتیوش ۲۶۲ هزار توکنه که با تکنیک YaRN راحت تا یک میلیون توکن هم کش میاد و برای پردازش اسناد حجیم حرف نداره. خلاصه آبجی و داداش گلم، چه بخوای لوکال و جمع‌وجور برنامه بزنی و چه دنبال ساخت ایجنت‌های سنگین باشی، این مدل‌های دست‌ودلباز حسابی کارت رو راه میندازن."
+  ],
+  "why": "بدون نیاز به پرداخت هزینه‌های سنگین دلاری برای APIها، یه مدل چندوجهی فوق‌العاده قوی و رایگان در اختیارت قرار گرفته که می‌تونی روی سیستم خودت ران کنی و هرچی دلت خواست باهاش بسازی.",
+  "tags": [
+   "چین"
+  ]
+ },
+ "updated": "2026-10-25T12:30:17+00:00",
+ "gholam_checked": "2026-10-25T12:30:17+00:00"
+}

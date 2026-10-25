@@ -1,0 +1,62 @@
+{
+ "id": 5243,
+ "url": "https://t.me/dlmehr/5243",
+ "date": "2026-09-10T17:50:39+00:00",
+ "text": "https://fxtwitter.com/anthropicai/status/2098097512544444447?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+ "forwarded_from": null,
+ "digest": false,
+ "hash": "1501aa0707f9",
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/anthropicai/status/2098097512544444447?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+  "site": "FxTwitter · anthropic.com",
+  "title": "Anthropic (@AnthropicAI)",
+  "description": "We're publishing our most detailed threat intelligence report to date.\nIt covers how people tried to misuse Claude—for cyberattacks, influence operations, surveillance, biology, and building weapons—and how we found and stopped them.\nWe disrupted every…",
+  "image": "https://cdn4.telesco.pe/file/Mijv7XTUE-65MNCyi5I1Ox2gpiEkhqeAai7giOmxxsW3SbCAlVgu7i7tefhO9WA3bVDPD3KYKf0Xi7gt_ALr-6mWyuqCpAtkdWaAv3OOTlFXa7KjQz_F2E_9gY6dTN0FGw18KcRywiwnSmrOdH5DGBXDcD0zDL-Pqyvzgr4JIEQvAfnBoC5B9iK75UGiL2OOVDMzI__SzR1UAEna3Q9JvFnA3iLyvoY-TsSjdykp9Xlt71faA3qAMRvpcPMrfAboGl4OJtlLPXedE6JvCWMTVP6f15hXwlkybpiNygw6Xtq085YvU08fYMTW-Y77sClf3LyJrP2s494LI8m6TmZSlA.jpg"
+ },
+ "gholam": {
+  "text": "رفیق، بچه‌های شرکت آنتروپیک یه گزارش امنیتی خیلی مفصل و سنگین دادن بیرون و پته‌ی خرابکارها رو ریختن رو آب. طبق این گزارش، یه عده تلاش کرده بودن از هوش مصنوعی کلود برای حملات سایبری، جاسوسی، فریب افکار عمومی و حتی ساختن سلاح و ابزارهای بیولوژیکی سوءاستفاده کنن. ولی دست‌اندرکاران سیستم سفت‌وسخت جلوشون وایسادن، مچ همه‌شون رو گرفتن و عملیات‌هاشون رو خنثی کردن؛ تازه یافته‌هاشون رو در اختیار قانون‌گذارها و بقیه شرکت‌های این حوزه هم گذاشتن تا راه‌های نفوذ رو ببندن.\n\nاهمیتش اینه که نشون میده خطرات هوش مصنوعی دقیقا داره به کدوم سمت می‌ره و چطور میشه جلوی سواستفاده‌های خطرناک رو قبل از فاجعه گرفت.",
+  "date": "2026-09-10T17:50:54+00:00"
+ },
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/AnthropicAI/status/2098097512544444447",
+   "domain": "x.com",
+   "author": {
+    "name": "Anthropic",
+    "handle": "AnthropicAI",
+    "avatar": "https://pbs.twimg.com/profile_images/1798110641414443008/XP8gyBaY_200x200.jpg"
+   },
+   "text": "We're publishing our most detailed threat intelligence report to date. \n\nIt covers how people tried to misuse Claude—for cyberattacks, influence operations, surveillance, biology, and building weapons—and how we found and stopped them.\n\nWe disrupted every operation in the report, and used the lessons from them to strengthen our safeguards. Where appropriate, we also shared what we found with authorities and other AI companies.\n\nThese cases are not typical: we’re highlighting some of the most sophisticated misuse we’ve seen. But they’re especially important to discuss, because they show us where AI misuse is headed, where our safeguards work, and where they need to improve.\n\nWe’re publishing this report so others can spot the same activity on their own platforms, and so we can give the public a clearer view of how emerging threats develop.\n\nRead the report: https://www.anthropic.com/threat-intelligence-report-september-2026",
+   "date": 1789060402,
+   "media": [],
+   "links": [
+    "https://www.anthropic.com/threat-intelligence-report-september-2026"
+   ]
+  },
+  {
+   "kind": "link",
+   "url": "https://www.anthropic.com/threat-intelligence-report-september-2026",
+   "domain": "anthropic.com",
+   "title": "Countering misuse of AI: September 2026 / Anthropic",
+   "description": "Case studies from threat actors disrupted between December 2025 and August 2026 across seven areas of harm, from cyber operations to biological misuse.",
+   "image": "https://assets.claude.com/7039d4c806189926d478f56be3aad43762601211.jpg",
+   "site": "anthropic.com"
+  }
+ ],
+ "article": {
+  "title": "بچه‌های شرکت آنتروپیک یه گزارش امنیتی خیلی مفصل و سنگین دادن بیرون و پته‌ی خرابکارها رو ریختن رو آب",
+  "source_title": "We're publishing our most detailed threat intelligence report to date.",
+  "body": [
+   "رفیق، بچه‌های شرکت آنتروپیک یه گزارش امنیتی خیلی مفصل و سنگین دادن بیرون و پته‌ی خرابکارها رو ریختن رو آب. طبق این گزارش، یه عده تلاش کرده بودن از هوش مصنوعی کلود برای حملات سایبری، جاسوسی، فریب افکار عمومی و حتی ساختن سلاح و ابزارهای بیولوژیکی سوءاستفاده کنن. ولی دست‌اندرکاران سیستم سفت‌وسخت جلوشون وایسادن، مچ همه‌شون رو گرفتن و عملیات‌هاشون رو خنثی کردن؛ تازه یافته‌هاشون رو در اختیار قانون‌گذارها و بقیه شرکت‌های این حوزه هم گذاشتن تا راه‌های نفوذ رو ببندن."
+  ],
+  "why": "نشون میده خطرات هوش مصنوعی دقیقا داره به کدوم سمت می‌ره و چطور میشه جلوی سواستفاده‌های خطرناک رو قبل از فاجعه گرفت.",
+  "tags": [
+   "آنتروپیک",
+   "امنیت"
+  ]
+ },
+ "updated": "2026-10-25T12:27:18+00:00",
+ "gholam_checked": "2026-10-25T12:27:18+00:00"
+}

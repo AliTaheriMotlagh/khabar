@@ -1,0 +1,57 @@
+{
+ "id": 5887,
+ "url": "https://t.me/dlmehr/5887",
+ "date": "2026-10-14T18:47:31+00:00",
+ "text": "https://fxtwitter.com/bertgodel/status/2110400987622265232?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+ "forwarded_from": null,
+ "digest": false,
+ "hash": "290d02c8fd9b",
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/bertgodel/status/2110400987622265232?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+  "site": "🧵 Thread • FxTwitter",
+  "title": "Daanish Khazi (@bertgodel)",
+  "description": "We are releasing Ultramarine 1 Flash, a frontier-class model built for knowledge work. It is open-source and achieves similar performance to Fable 5, while being 60x cheaper.\nIt was post-trained by a team of 5 for ~$300k all-in. Available on API now, with…",
+  "image": null
+ },
+ "gholam": {
+  "text": "رفیق، دانِش قاضی و بروبچ تیمش تازه از یه مدل هوش مصنوعی متن‌باز به اسم Ultramarine 1 Flash رونمایی کردن که مخصوص کارهای تحلیلی و تخصصی بار اومده و پا به پای مدل خفنی مثل Fable 5 کار می‌کنه. نکته پشم‌ریزون ماجرا اینه که این مدل ۶۰ برابر ارزون‌تره و کل فرآیند آموزش و جمع‌وجور کردنش فقط توسط یه تیم پنج نفره و با خرج حدود ۳۰۰ هزار دلار تموم شده. در حال حاضر نسخه API این ابزار بالا اومده و قول دادن تا دو هفته دیگه هم فایل وزن‌ها و سورس کاملش رو آزاد منتشر کنن تا همه بتونن ازش استفاده کنن.\n\nاهمیتش اینه که ثابت کرد واسه به زانو درآوردن غول‌های هوش مصنوعی لازم نیست صدها میلیون دلار خرج کنی و یه جمع چند نفره کاربلد هم می‌تونه مدل‌های تراز اول دنیا رو متن‌باز بسازه.",
+  "date": "2026-10-14T18:47:48+00:00"
+ },
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/bertgodel/status/2110400987622265232",
+   "domain": "x.com",
+   "author": {
+    "name": "Daanish Khazi",
+    "handle": "bertgodel",
+    "avatar": "https://pbs.twimg.com/profile_images/2019161735090089984/M9-h4wqz_200x200.jpg"
+   },
+   "text": "We are releasing Ultramarine 1 Flash, a frontier-class model built for knowledge work. It is open-source and achieves similar performance to Fable 5, while being 60x cheaper.\n\nIt was post-trained by a team of 5 for ~$300k all-in. Available on API now, with weights releasing in 2 weeks.",
+   "date": 1791993779,
+   "media": [
+    {
+     "type": "video",
+     "src": "https://video.twimg.com/amplify_video/2110248922111528961/vid/avc1/1278x720/SCu1-sKHcF82VMHE.mp4?tag=29",
+     "poster": "https://pbs.twimg.com/amplify_video_thumb/2110248922111528961/img/VPsBvcn6348iKIt8.jpg",
+     "ratio": 0.5626,
+     "duration": 77.444,
+     "gif": false
+    }
+   ],
+   "links": []
+  }
+ ],
+ "article": {
+  "title": "دانِش قاضی و بروبچ تیمش تازه از یه مدل هوش مصنوعی متن‌باز به اسم Ultramarine 1 Flash رونمایی کردن که مخصوص کارهای تحلیلی و تخصصی بار اومده و پا به پای مدل خفنی مثل Fable 5 کار می‌کنه",
+  "source_title": "We are releasing Ultramarine 1 Flash, a frontier-class model built for knowledge work. It is open-source and achieves similar performance…",
+  "body": [
+   "رفیق، دانِش قاضی و بروبچ تیمش تازه از یه مدل هوش مصنوعی متن‌باز به اسم Ultramarine 1 Flash رونمایی کردن که مخصوص کارهای تحلیلی و تخصصی بار اومده و پا به پای مدل خفنی مثل Fable 5 کار می‌کنه. نکته پشم‌ریزون ماجرا اینه که این مدل ۶۰ برابر ارزون‌تره و کل فرآیند آموزش و جمع‌وجور کردنش فقط توسط یه تیم پنج نفره و با خرج حدود ۳۰۰ هزار دلار تموم شده. در حال حاضر نسخه API این ابزار بالا اومده و قول دادن تا دو هفته دیگه هم فایل وزن‌ها و سورس کاملش رو آزاد منتشر کنن تا همه بتونن ازش استفاده کنن."
+  ],
+  "why": "ثابت کرد واسه به زانو درآوردن غول‌های هوش مصنوعی لازم نیست صدها میلیون دلار خرج کنی و یه جمع چند نفره کاربلد هم می‌تونه مدل‌های تراز اول دنیا رو متن‌باز بسازه.",
+  "tags": []
+ },
+ "updated": "2026-10-25T12:23:32+00:00",
+ "gholam_checked": "2026-10-25T12:23:32+00:00"
+}

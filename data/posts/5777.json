@@ -1,0 +1,59 @@
+{
+ "id": 5777,
+ "url": "https://t.me/dlmehr/5777",
+ "date": "2026-10-09T18:39:11+00:00",
+ "text": "https://fxtwitter.com/maithra_raghu/status/2108244042551308735?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+ "forwarded_from": null,
+ "digest": false,
+ "hash": "e00a7cfe2b5b",
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/maithra_raghu/status/2108244042551308735?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+  "site": "🧵 Thread • FxTwitter",
+  "title": "Maithra Raghu (@maithra_raghu)",
+  "description": "We’re sharing new results showing that frontier AI models are able to outperform human experts on financial predictions for the first time. We built an environment for the challenging task of Earnings Predictions, finding that the most recent frontier models…",
+  "image": null
+ },
+ "gholam": {
+  "text": "ببین رفیق، بچه‌های تیم تحقیقاتی مایترا راگو یه تست سنگین راه انداختن و دیدن که مدل‌های هوش مصنوعی خفن مثل Opus 5.5 و Fable 5.1 و Astra برای اولین بار تونستن کارشناسای کارکشته مالی رو توی پیش‌بینی سود و درآمد شرکتا جا بذارن. ماجرا از این قراره که یه سازوکار سفت‌وسخت بدون درز اطلاعات طراحی کردن تا هوش مصنوعی دقیقاً با همون دیتایی که تحلیل‌گرهای انسانی در اختیار داشتن بسنجه و بدون تعصب کار رو جمع کنه. نتیجه این شد که این مدل‌های جدید توی آمار و ارقام کلیدی مثل حاشیه سود ناخالص و درآمد کل، پیش‌بینی‌های به‌مراتب دقیق‌تری نسبت به اجماع کارشناسا ثبت کردن. تیمشون هم اعلام کرده این تازه اولشه و با یادگیری تقویتی می‌شه این مدل‌ها رو جوری کوک کرد که از اشتباهاتشون درس بگیرن و تیزتر بشن.\n\nچرا مهمه؟ اهمیتش اینه که یه نقطه عطف تاریخی توی دنیای مالی رقم خورده و نشون میده تحلیل‌گرهای آینده وال‌استریت دیگه از گوشت و پوست نخواهند بود.",
+  "date": "2026-10-09T18:39:29+00:00"
+ },
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/maithra_raghu/status/2108244042551308735",
+   "domain": "x.com",
+   "author": {
+    "name": "Maithra Raghu",
+    "handle": "maithra_raghu",
+    "avatar": "https://pbs.twimg.com/profile_images/2023964247122997250/GZhiM7Ia_200x200.jpg"
+   },
+   "text": "We’re sharing new results showing that frontier AI models are able to outperform human experts on financial predictions for the first time. We built an environment for the challenging task of Earnings Predictions, finding that the most recent frontier models (Opus 5.5, Fable 5.1, Astra) with Samaya’s harness, meaningfully outperform expert consensus predictions on commonly reported earnings metrics such as company revenue, gross margin and more.\n\nWe built this environment to have a “point-in-time” gate in the harness to ensure no information leakage, and created financial retrieval and data tools that would respect this gate and give the models access to the same information available to experts. We also adjusted for bias in expert consensus to create a hard, bias-corrected baseline, where outperformance has real signal. Only the most recent frontier AI models are able to beat this hard baseline, pointing to an important inflection point in AI capabilities in finance.\n\nLike with FrontierFinance, we see substantial headroom for further RL training in this environment — the models show large variations in error across different rollouts. We’re continuing research on using earnings prediction and other predictive tasks to post-train models to learn from their mistakes. Get in touch if you’d like to collaborate or try out an alpha version. Link to the full research below.",
+   "date": 1791479523,
+   "media": [
+    {
+     "type": "video",
+     "src": "https://video.twimg.com/amplify_video/2108243951404883968/vid/avc1/720x720/5PtXL3hRcH-qLSD6.mp4?tag=29",
+     "poster": "https://pbs.twimg.com/amplify_video_thumb/2108243951404883968/img/X0fFJBo2sn5QMzNR.jpg",
+     "ratio": 1.0,
+     "duration": 54,
+     "gif": false
+    }
+   ],
+   "links": []
+  }
+ ],
+ "article": {
+  "title": "بچه‌های تیم تحقیقاتی مایترا راگو یه تست سنگین راه انداختن و دیدن که مدل‌های هوش مصنوعی خفن مثل Opus 5.5 و Fable 5.1 و Astra برای اولین بار تونستن کارشناسای کارکشته مالی رو توی پیش‌بینی سود و درآمد شرکتا جا بذارن",
+  "source_title": "We’re sharing new results showing that frontier AI models are able to outperform human experts on financial predictions for the first time.…",
+  "body": [
+   "ببین رفیق، بچه‌های تیم تحقیقاتی مایترا راگو یه تست سنگین راه انداختن و دیدن که مدل‌های هوش مصنوعی خفن مثل Opus 5.5 و Fable 5.1 و Astra برای اولین بار تونستن کارشناسای کارکشته مالی رو توی پیش‌بینی سود و درآمد شرکتا جا بذارن. ماجرا از این قراره که یه سازوکار سفت‌وسخت بدون درز اطلاعات طراحی کردن تا هوش مصنوعی دقیقاً با همون دیتایی که تحلیل‌گرهای انسانی در اختیار داشتن بسنجه و بدون تعصب کار رو جمع کنه. نتیجه این شد که این مدل‌های جدید توی آمار و ارقام کلیدی مثل حاشیه سود ناخالص و درآمد کل، پیش‌بینی‌های به‌مراتب دقیق‌تری نسبت به اجماع کارشناسا ثبت کردن. تیمشون هم اعلام کرده این تازه اولشه و با یادگیری تقویتی می‌شه این مدل‌ها رو جوری کوک کرد که از اشتباهاتشون درس بگیرن و تیزتر بشن."
+  ],
+  "why": "اهمیتش اینه که یه نقطه عطف تاریخی توی دنیای مالی رقم خورده و نشون میده تحلیل‌گرهای آینده وال‌استریت دیگه از گوشت و پوست نخواهند بود.",
+  "tags": [
+   "آنتروپیک"
+  ]
+ },
+ "updated": "2026-10-25T12:23:58+00:00",
+ "gholam_checked": "2026-10-25T12:23:58+00:00"
+}

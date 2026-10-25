@@ -1,0 +1,57 @@
+{
+ "id": 4576,
+ "url": "https://t.me/dlmehr/4576",
+ "date": "2026-08-04T18:09:54+00:00",
+ "text": "https://fxtwitter.com/bfl_ai/status/2084693191484469305?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+ "forwarded_from": null,
+ "digest": false,
+ "hash": "ec4c448d0ead",
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/bfl_ai/status/2084693191484469305?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+  "site": "🧵 Thread • FxTwitter",
+  "title": "Black Forest Labs (@bfl_ai)",
+  "description": "FLUX 3 Video is here.\nSerious, fun, creative, real, cinematic, whatever you need it to be.\nNative audio, Text to Video, Image to Video with multiple frames, video continuation, dialogue in multiple languages.\nComes with Draft mode so you can explore ideas…",
+  "image": null
+ },
+ "gholam": {
+  "text": "ببین رفیق، این ابزار جدید FLUX 3 Video اومده که تا ۲۰ ثانیه ویدیو ۱۰۸۰p با صدا و قابلیت‌های خفن چندزبانه می‌سازه. تازه یه حالت پیش‌نویس هم داره تا بتونی با هزینه پایین، ایده‌هات رو مشتی و ردیف پیاده کنی.",
+  "date": "2026-08-04T18:10:05+00:00"
+ },
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/bfl_ai/status/2084693191484469305",
+   "domain": "x.com",
+   "author": {
+    "name": "Black Forest Labs",
+    "handle": "bfl_ai",
+    "avatar": "https://pbs.twimg.com/profile_images/1954888731053142016/NDyG-4-j_200x200.jpg"
+   },
+   "text": "FLUX 3 Video is here.\n\nSerious, fun, creative, real, cinematic, whatever you need it to be.\n\nNative audio, Text to Video, Image to Video with multiple frames, video continuation, dialogue in multiple languages.\n\nComes with Draft mode so you can explore ideas fast at a fraction of the cost.\n\nUp to 20 seconds and 1080p native.\n\nAvailable in the API or in your favorite tool. 2K, 4K, and Open Weights coming soon.",
+   "date": 1785864563,
+   "media": [
+    {
+     "type": "video",
+     "src": "https://video.twimg.com/amplify_video/2084692981563711488/vid/avc1/1280x720/74jGee7o3w0Ad0B8.mp4?tag=14",
+     "poster": "https://pbs.twimg.com/amplify_video_thumb/2084692981563711488/img/jhETe1G2y4aD7CvT.jpg",
+     "ratio": 0.5625,
+     "duration": 60,
+     "gif": false
+    }
+   ],
+   "links": []
+  }
+ ],
+ "article": {
+  "title": "این ابزار جدید FLUX 3 Video اومده که تا ۲۰ ثانیه ویدیو ۱۰۸۰p با صدا و قابلیت‌های خفن چندزبانه می‌سازه",
+  "source_title": "FLUX 3 Video is here.",
+  "body": [
+   "ببین رفیق، این ابزار جدید FLUX 3 Video اومده که تا ۲۰ ثانیه ویدیو ۱۰۸۰p با صدا و قابلیت‌های خفن چندزبانه می‌سازه. تازه یه حالت پیش‌نویس هم داره تا بتونی با هزینه پایین، ایده‌هات رو مشتی و ردیف پیاده کنی."
+  ],
+  "why": null,
+  "tags": []
+ },
+ "updated": "2026-10-25T12:31:01+00:00",
+ "gholam_checked": "2026-10-25T12:31:01+00:00"
+}

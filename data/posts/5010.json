@@ -1,0 +1,100 @@
+{
+ "id": 5010,
+ "url": "https://t.me/dlmehr/5010",
+ "date": "2026-08-28T16:12:20+00:00",
+ "text": "https://fxtwitter.com/kimmonismus/status/2093237109708468361?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+ "forwarded_from": null,
+ "digest": false,
+ "hash": "70059d602d94",
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/kimmonismus/status/2093237109708468361?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+  "site": "FxTwitter - Media 2 / 4",
+  "title": "Chubby ♨️ (@kimmonismus)",
+  "description": "Tencent just released Hy4 Preview: a 770B-parameter open-source model with 49B active parameters and a 1M-token context window.\nThe most interesting part is its agentic research capability. Tencent says Hy4 coordinated several Codex sessions in parallel…",
+  "image": null
+ },
+ "gholam": {
+  "text": "ببین رفیق، شرکت تنسنت اومده یه مدل هوش مصنوعی متن‌باز و گردن‌کلفت به اسم Hy4 Preview رو معرفی کرده که کلاً ۷۷۰ میلیارد پارامتر داره اما موقع پردازش فقط ۴۹ میلیاردش فعال می‌شن. این مدل یه پنجره کانتکست ۱ میلیون توکنی داره و حسابی خوراک کدنویسی‌های طولانی، سر و کله زدن با اسناد چندگانه اداری و تحقیقات علمی عمیقه. خفن‌ترین ویژگیش هم توانایی کاربری عاملیتیشه؛ طوری که تونسته چندتا نشست هم‌زمان کدکس رو قشنگ مدیریت و تحلیل کنه و توی ۸ تا بنچمارک مختلف حتی از خود کدکس تکی هم قوی‌تر ظاهر بشه.\n\nاهمیتش اینه که مدل‌های متن‌باز حالا دیگه انقدر پیشرفته شدن که می‌تونن مثل یه مدیر پروژه بقیه هوش‌های مصنوعی رو هدایت کنن و کارای غول‌پیکر رو با هزینه خیلی کمتر دربیارن.",
+  "date": "2026-08-28T16:12:40+00:00"
+ },
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/kimmonismus/status/2093237109708468361",
+   "domain": "x.com",
+   "author": {
+    "name": "Chubby♨️",
+    "handle": "kimmonismus",
+    "avatar": "https://pbs.twimg.com/profile_images/1728327996375719936/RW7VBJfD_200x200.jpg"
+   },
+   "text": "Tencent just released Hy4 Preview: a 770B-parameter open-source model with 49B active parameters and a 1M-token context window.\n\nThe most interesting part is its agentic research capability. Tencent says Hy4 coordinated several Codex sessions in parallel, evaluated their results and adjusted the research direction, outperforming Codex working alone across eight benchmarks.\n\nHy4 is aimed at long-horizon coding, multi-file office work and scientific research.\n\nIn sum: a solid, good release. A few months ago this would be absolute sota.",
+   "date": 1787901592,
+   "media": [
+    {
+     "type": "image",
+     "src": "https://pbs.twimg.com/media/HQyrlNTWoAAx2ry.jpg?name=orig",
+     "ratio": 0.5579
+    },
+    {
+     "type": "video",
+     "src": "https://video.twimg.com/amplify_video/2093236906158878720/vid/avc1/1456x720/LhiVoAnujFdEZrTr.mp4?tag=29",
+     "poster": "https://pbs.twimg.com/amplify_video_thumb/2093236906158878720/img/PzOqyswzJvdDFjx2.jpg",
+     "ratio": 0.4941,
+     "duration": 23.336,
+     "gif": false
+    },
+    {
+     "type": "video",
+     "src": "https://video.twimg.com/amplify_video/2093236906095947776/vid/avc1/1280x720/DPITFKVimWhy0fBi.mp4?tag=29",
+     "poster": "https://pbs.twimg.com/amplify_video_thumb/2093236906095947776/img/GOq3IfAimPfQdB0W.jpg",
+     "ratio": 0.5625,
+     "duration": 16.85,
+     "gif": false
+    },
+    {
+     "type": "image",
+     "src": "https://pbs.twimg.com/media/HQyr7tgWMAACm5H.jpg?name=orig",
+     "ratio": 0.7582
+    }
+   ],
+   "links": [],
+   "quote": {
+    "author": {
+     "name": "Tencent Hy",
+     "handle": "TencentHunyuan",
+     "avatar": "https://pbs.twimg.com/profile_images/1810934469769195520/kKSVenHW_200x200.jpg"
+    },
+    "text": "🚀 Hy4 preview is here.\n\n770B, 49B active, 1M context.\nBuilt for productivity.\nOpen source frontier.\nConsistent affordable price.\nUse it. Tell us what breaks.\n\nMore on Hy blog：https://hy.tencent.ai/research/hy4-preview\nHuggingFace：https://huggingface.co/tencent/Hy4-preview\nGithub：https://github.com/Tencent-Hunyuan/Hy4-preview",
+    "date": 1787898211,
+    "media": [
+     {
+      "type": "image",
+      "src": "https://pbs.twimg.com/media/HQyfABta8AAq3x7.jpg?name=orig",
+      "ratio": 0.5579
+     }
+    ],
+    "links": [
+     "https://hy.tencent.ai/research/hy4-preview",
+     "https://huggingface.co/tencent/Hy4-preview",
+     "https://github.com/Tencent-Hunyuan/Hy4-preview"
+    ]
+   }
+  }
+ ],
+ "article": {
+  "title": "شرکت تنسنت اومده یه مدل هوش مصنوعی متن‌باز و گردن‌کلفت به اسم Hy4 Preview رو معرفی کرده که کلاً ۷۷۰ میلیارد پارامتر داره اما موقع پردازش فقط ۴۹ میلیاردش فعال می‌شن",
+  "source_title": "Tencent just released Hy4 Preview: a 770B-parameter open-source model with 49B active parameters and a 1M-token context window.",
+  "body": [
+   "ببین رفیق، شرکت تنسنت اومده یه مدل هوش مصنوعی متن‌باز و گردن‌کلفت به اسم Hy4 Preview رو معرفی کرده که کلاً ۷۷۰ میلیارد پارامتر داره اما موقع پردازش فقط ۴۹ میلیاردش فعال می‌شن. این مدل یه پنجره کانتکست ۱ میلیون توکنی داره و حسابی خوراک کدنویسی‌های طولانی، سر و کله زدن با اسناد چندگانه اداری و تحقیقات علمی عمیقه. خفن‌ترین ویژگیش هم توانایی کاربری عاملیتیشه؛ طوری که تونسته چندتا نشست هم‌زمان کدکس رو قشنگ مدیریت و تحلیل کنه و توی ۸ تا بنچمارک مختلف حتی از خود کدکس تکی هم قوی‌تر ظاهر بشه."
+  ],
+  "why": "مدل‌های متن‌باز حالا دیگه انقدر پیشرفته شدن که می‌تونن مثل یه مدیر پروژه بقیه هوش‌های مصنوعی رو هدایت کنن و کارای غول‌پیکر رو با هزینه خیلی کمتر دربیارن.",
+  "tags": [
+   "چین",
+   "اوپن‌ای‌آی",
+   "کدنویسی"
+  ]
+ },
+ "updated": "2026-10-25T12:28:43+00:00",
+ "gholam_checked": "2026-10-25T12:28:43+00:00"
+}

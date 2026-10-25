@@ -1,0 +1,71 @@
+{
+ "id": 4959,
+ "url": "https://t.me/dlmehr/4959",
+ "date": "2026-08-26T14:16:53+00:00",
+ "text": "https://fxtwitter.com/alibaba_qwen/status/2092591393424515114?s=46&t=F41Qa04r48Mef_j_XjBneQ",
+ "forwarded_from": null,
+ "digest": false,
+ "hash": "6eba33e64c69",
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/alibaba_qwen/status/2092591393424515114?s=46&t=F41Qa04r48Mef_j_XjBneQ",
+  "site": "🧵 Thread • FxTwitter",
+  "title": "Qwen (@Alibaba_Qwen)",
+  "description": "⚡\nMeet Qwen3.8-Flash, a multimodal MoE and an early preview of the Qwen4 architecture, now open-weight!\nThe production version Qwen3.8-Flash will be available soon via QwenCloud API at just $ 0.16/1M input tokens and $ 0.47/1M output tokens.\n125B parameters…",
+  "image": "https://cdn4.telesco.pe/file/nY-rzwYIHPq01XGdQJCET65vkQFPI0i-HFHcFM1F43YnM8e-I2y0MijET6IhS2l1v5psoDN_7FC2K2dK_UfnAraDR3IvEn8LeaRwD1boDm8jcAhS3HuU3h3DtO_GJ1LHjDCGp695FQG_H4bZ1OpaCG_pbJUW4FbBChwsLdUVzoLoHS-NnZmdiPFc5LB9LI15bUaNP8l_ynqhlndbmyWAUvTG6tk3Il0yNPPtDAj8ZEeILtH0yxAmne-57fPrzjbA6iZLLPDOpNA_of7sJrebE80Ryb408323R65JgA66lGkEnPhVKMY2PCxFg9xNBqQCzTnsDsKLruTjc2c72vuvyQ.jpg"
+ },
+ "gholam": {
+  "text": "ببین رفیق، بچه‌های تیم کوئن (Qwen) از مدل جدیدشون به اسم Qwen3.8-Flash رونمایی کردن که یه پیش‌نمایش خفن و متن‌باز از معماری نسل بعدی یعنی Qwen4 به حساب میاد. این مدل چندوجهی با اینکه در مجموع ۱۲۵ میلیارد پارامتر داره، در لحظه فقط ۶ میلیارد پارامترش فعال می‌شه؛ یعنی با یک‌نهم هزینه آموزش مدل قبلی، پرفورمنس بالاتری مخصوصاً تو کدنویسی و محاسبات تحویل می‌ده. پنجره کانتکستش هم تا ۲۶۲ هزار توکن پشتیبانی می‌کنه که تا یک میلیون هم قابل ارتقاست، و قیمتش روی کلود هم فوق‌العاده ارزونه. وزن‌های مدل رو هم دادن بیرون تا دست‌اندرکاران هوش مصنوعی قشنگ بتونن زیر و بمش رو شخم بزنن.\n\nاهمیتش اینه که با این معماری ترکیبی جدید، هزینه استفاده از مدل‌های غول‌پیکر هوش مصنوعی به شدت سقوط کرده و سرعت و کیفیت خروجی به شکل چشمگیری بالاتر رفته.",
+  "date": "2026-08-26T14:17:09+00:00"
+ },
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/Alibaba_Qwen/status/2092591393424515114",
+   "domain": "x.com",
+   "author": {
+    "name": "Qwen",
+    "handle": "Alibaba_Qwen",
+    "avatar": "https://pbs.twimg.com/profile_images/2064231947149377536/Ab70PxT5_200x200.jpg"
+   },
+   "text": "⚡Meet Qwen3.8-Flash, a multimodal MoE and an early preview of the Qwen4 architecture, now open-weight!\n\nThe production version Qwen3.8-Flash will be available soon via QwenCloud API at just $ 0.16/1M input tokens and $ 0.47/1M output tokens.\n\n125B parameters + 51B N-gram embeddings, with just 6B activated per token. Unmatched cost-efficiency.\n\nWhat's new: 🥳\n- Next architecture: GDN + QSA hybrid attention, Gated Residual, N-gram Embedding & Muon optimizer, serving as a precursor to the architecture used in Qwen4.\n- Dramatically lower training and inference costs: trained at just 1/9 the cost of Qwen3.7-Plus, while outperforming it across the board with especially strong gains in coding and office tasks.\n- Strong performance: scoring 58.7 on DeepSWE 1.1, 62.5 on SWE-bench Pro, 73.9 on CoWorkBench, 84.5 on AndroidWorld, and 95.7 on MathVision (with CI).\n- 262K native context, extensible to 1M with YaRN.\n\nWe’re also releasing the weights for Qwen3.8-Flash-Next, giving the community an early look at the new architecture we’re exploring for Qwen4.🚀\n\nWe can't wait to see what you build with Qwen3.8-Flash!👀👇\n- Blog: https://qwen.ai/blog?id=qwen3.8-flash-next\n- Technical Report: https://github.com/QwenLM/Qwen3.8-Flash-Next/blob/main/tech_report.pdf\n- Hugging Face: https://huggingface.co/Qwen/Qwen3.8-Flash-Next?spm=a2ty_o06.30285417.0.0.1d73c921FsyOPe&file=Qwen3.8-Flash-Next\n- ModelScope: https://modelscope.cn/models/Qwen/Qwen3.8-Flash-Next?spm=a2ty_o06.30285417.0.0.1d73c921XAP2dV&file=Qwen3.8-Flash-Next",
+   "date": 1787747641,
+   "media": [
+    {
+     "type": "image",
+     "src": "https://pbs.twimg.com/media/HQpdouobYAAGEj1.jpg?name=orig",
+     "ratio": 0.5625
+    }
+   ],
+   "links": [
+    "https://qwen.ai/blog?id=qwen3.8-flash-next",
+    "https://github.com/QwenLM/Qwen3.8-Flash-Next/blob/main/tech_report.pdf",
+    "https://huggingface.co/Qwen/Qwen3.8-Flash-Next?spm=a2ty_o06.30285417.0.0.1d73c921FsyOPe&file=Qwen3.8-Flash-Next",
+    "https://modelscope.cn/models/Qwen/Qwen3.8-Flash-Next?spm=a2ty_o06.30285417.0.0.1d73c921XAP2dV&file=Qwen3.8-Flash-Next"
+   ]
+  },
+  {
+   "kind": "link",
+   "url": "https://qwen.ai/blog?id=qwen3.8-flash-next",
+   "domain": "qwen.ai",
+   "title": "Qwen",
+   "description": "Qwen offers comprehensive functionality spanning chatbot, image and video understanding, image generation, document processing, web search integration, tool utilization, and artifacts.",
+   "image": "https://img.alicdn.com/imgextra/i4/O1CN01OXv3EM1FN8t9W4P79_!!6000000000474-2-tps-80-80.png",
+   "site": "qwen.ai"
+  }
+ ],
+ "article": {
+  "title": "بچه‌های تیم کوئن (Qwen) از مدل جدیدشون به اسم Qwen3.8-Flash رونمایی کردن که یه پیش‌نمایش خفن و متن‌باز از معماری نسل بعدی یعنی Qwen4 به حساب میاد",
+  "source_title": "⚡Meet Qwen3.8-Flash, a multimodal MoE and an early preview of the Qwen4 architecture, now open-weight!",
+  "body": [
+   "ببین رفیق، بچه‌های تیم کوئن (Qwen) از مدل جدیدشون به اسم Qwen3.8-Flash رونمایی کردن که یه پیش‌نمایش خفن و متن‌باز از معماری نسل بعدی یعنی Qwen4 به حساب میاد. این مدل چندوجهی با اینکه در مجموع ۱۲۵ میلیارد پارامتر داره، در لحظه فقط ۶ میلیارد پارامترش فعال می‌شه؛ یعنی با یک‌نهم هزینه آموزش مدل قبلی، پرفورمنس بالاتری مخصوصاً تو کدنویسی و محاسبات تحویل می‌ده. پنجره کانتکستش هم تا ۲۶۲ هزار توکن پشتیبانی می‌کنه که تا یک میلیون هم قابل ارتقاست، و قیمتش روی کلود هم فوق‌العاده ارزونه. وزن‌های مدل رو هم دادن بیرون تا دست‌اندرکاران هوش مصنوعی قشنگ بتونن زیر و بمش رو شخم بزنن."
+  ],
+  "why": "با این معماری ترکیبی جدید، هزینه استفاده از مدل‌های غول‌پیکر هوش مصنوعی به شدت سقوط کرده و سرعت و کیفیت خروجی به شکل چشمگیری بالاتر رفته.",
+  "tags": [
+   "چین",
+   "کدنویسی"
+  ]
+ },
+ "updated": "2026-10-25T12:29:02+00:00",
+ "gholam_checked": "2026-10-25T12:29:02+00:00"
+}

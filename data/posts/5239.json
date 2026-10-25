@@ -1,0 +1,61 @@
+{
+ "id": 5239,
+ "url": "https://t.me/dlmehr/5239",
+ "date": "2026-09-10T16:32:39+00:00",
+ "text": "https://fxtwitter.com/mtslive/status/2098064203424964756?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+ "forwarded_from": null,
+ "digest": false,
+ "hash": "3a483cb0f890",
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/mtslive/status/2098064203424964756?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+  "site": "FxTwitter",
+  "title": "MTS (@MTSlive)",
+  "description": "SITUATION DETECTED: Senator Josh Hawley sent Sam Altman a letter opening a Senate probe into OpenAI’s July Hugging Face incident “in light of new, disturbing evidence.”",
+  "image": null
+ },
+ "gholam": {
+  "text": "ببین رفیق، ماجرای اوپن‌ای‌آی و سم آلتمن دوباره بدجوری بالا گرفته و این دفعه کار کشیده به جاهای باریک. قضیه از این قراره که سناتور جاش هالی یه نامه سفت‌وسخت فرستاده واسه آلتمن و رسماً اعلام کرده سنا می‌خواد پای یه بازرسی و تحقیق درست‌وحسابی رو بکشه وسط. این ماجرا مربوط به همون خرابکاری و اتفاقات جنجالی هاگینگ فیس تو ماه جولایه که ظاهراً حالا یه سری مدارک و شواهد تازه و حسابی نگران‌کننده ازش بیرون زده. حالا سنا می‌خواد مو رو از ماست بکشه بیرون و ببینه اوپن‌ای‌آی اصلاً حواسش به امنیت داده‌ها و اطلاعات بوده یا فقط خواسته سر‌وصداها رو بخوابونه.\n\nچرا مهمه؟ چون اگه پای سنا به این پرونده باز بشه و خطاها ثابت بشن، نظارت‌های سفت‌وسخت دولتی گلوی غول‌های هوش مصنوعی رو جوری فشار میده که کل مسیر توسعه‌شون عوض می‌شه.",
+  "date": "2026-09-10T16:32:50+00:00"
+ },
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/MTSlive/status/2098064203424964756",
+   "domain": "x.com",
+   "author": {
+    "name": "MTS",
+    "handle": "MTSlive",
+    "avatar": "https://pbs.twimg.com/profile_images/2057947669281263616/aovpVL4b_200x200.jpg"
+   },
+   "text": "SITUATION DETECTED: Senator Josh Hawley sent Sam Altman a letter opening a Senate probe into OpenAI’s July Hugging Face incident “in light of new, disturbing evidence.”",
+   "date": 1789052460,
+   "media": [
+    {
+     "type": "image",
+     "src": "https://pbs.twimg.com/media/HR3R973bMAERdla.jpg?name=orig",
+     "ratio": 1.088
+    },
+    {
+     "type": "image",
+     "src": "https://pbs.twimg.com/media/HR3R--AbUAEtCl1.jpg?name=orig",
+     "ratio": 1.05
+    }
+   ],
+   "links": []
+  }
+ ],
+ "article": {
+  "title": "ماجرای اوپن‌ای‌آی و سم آلتمن دوباره بدجوری بالا گرفته و این دفعه کار کشیده به جاهای باریک",
+  "source_title": "SITUATION DETECTED: Senator Josh Hawley sent Sam Altman a letter opening a Senate probe into OpenAI’s July Hugging Face incident “in light…",
+  "body": [
+   "ببین رفیق، ماجرای اوپن‌ای‌آی و سم آلتمن دوباره بدجوری بالا گرفته و این دفعه کار کشیده به جاهای باریک. قضیه از این قراره که سناتور جاش هالی یه نامه سفت‌وسخت فرستاده واسه آلتمن و رسماً اعلام کرده سنا می‌خواد پای یه بازرسی و تحقیق درست‌وحسابی رو بکشه وسط. این ماجرا مربوط به همون خرابکاری و اتفاقات جنجالی هاگینگ فیس تو ماه جولایه که ظاهراً حالا یه سری مدارک و شواهد تازه و حسابی نگران‌کننده ازش بیرون زده. حالا سنا می‌خواد مو رو از ماست بکشه بیرون و ببینه اوپن‌ای‌آی اصلاً حواسش به امنیت داده‌ها و اطلاعات بوده یا فقط خواسته سر‌وصداها رو بخوابونه."
+  ],
+  "why": "چون اگه پای سنا به این پرونده باز بشه و خطاها ثابت بشن، نظارت‌های سفت‌وسخت دولتی گلوی غول‌های هوش مصنوعی رو جوری فشار میده که کل مسیر توسعه‌شون عوض می‌شه.",
+  "tags": [
+   "اوپن‌ای‌آی"
+  ]
+ },
+ "updated": "2026-10-25T12:27:19+00:00",
+ "gholam_checked": "2026-10-25T12:27:19+00:00"
+}

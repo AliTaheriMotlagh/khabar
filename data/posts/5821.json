@@ -1,0 +1,61 @@
+{
+ "id": 5821,
+ "url": "https://t.me/dlmehr/5821",
+ "date": "2026-10-12T03:22:40+00:00",
+ "text": "https://fxtwitter.com/brian_armstrong/status/2109412046244913643?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+ "forwarded_from": null,
+ "digest": false,
+ "hash": "66e3e1b309cd",
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/brian_armstrong/status/2109412046244913643?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+  "site": "🧵 Thread • FxTwitter",
+  "title": "Brian Armstrong (@brian_armstrong)",
+  "description": "We were able to fine tune an open weight model (Qwen3.5-9B) on proprietary internal data at @coinbase, and it out performed frontier models, at much lower cost and speed, for a specialized task (fraud prevention in this case).\nI think we'll see more of this…",
+  "image": "https://cdn4.telesco.pe/file/bveluCuUT8_2DaL4TNwSKzld18-MhYar2sNI6r9P5_LuR1n2hjTpoNUYznBQ26xg59XZLifo6Qwt34iBAsLzharLhZhsdPAuXeOa-RdXI5Odrlx-cNVTa2zAt7_m0DfbS8rVIyrFfpfm53uNS60GsllWNmNb9Am7PEF7PPAwXTJR3c1YdrUC3ZDYFqIEur-5UArtxUt7I7FvHGzaEEAb36SKDwuoFwgC-H2LKo0hzVoNK0G1AtNzO03beOoysW4NYnWijVR2uOkqml-iDlXuAVK255oie78xEezbRyyTevS8aDPXgOeMFly0KU2z0F7DBfB69QhJl2Q4RmVWuyhGNg.jpg"
+ },
+ "gholam": {
+  "text": "رفیق، برایان آرمسترانگ مدیرعامل کوین‌بیس اومده رو کرده که یه مدل هوش مصنوعی متن‌باز کوچیک به اسم Qwen رو با داده‌های اختصاصی شرکتشون واسه ردگیری کلاهبرداری تیون کردن و نتیجه حسابی شگفت‌انگیز بوده. این مدل جمع‌وجور نه‌تنها غول‌های بزرگ و پرادعای هوش مصنوعی رو توی این وظیفه تخصصی شکست داده، بلکه هم هزینه‌ش فوق‌العاده پایین‌تر دراومده و هم خیلی سریع‌تر جواب میده. آرمسترانگ میگه شاید مدل‌های معروف همه‌فن‌حریف باشن، ولی واسه کارهای اختصاصی، آینده دست همین مدل‌های دست‌چین و آموزش‌دیده است و حتی قراره یه سری از بخش‌های قدیمی سیستمشون رو کلاً با این روش نونوار کنن.\n\nاهمیتش اینه که نشون میده شرکت‌ها واسه کارهای تخصصی نیازی به خرج دلارهای کلان پای مدل‌های غول‌پیکر ندارن و مدل‌های متن‌باز اختصاصی هم ارزون‌تر تموم میشن و هم دست بالاتری دارن.",
+  "date": "2026-10-12T03:22:58+00:00"
+ },
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/brian_armstrong/status/2109412046244913643",
+   "domain": "x.com",
+   "author": {
+    "name": "Brian Armstrong",
+    "handle": "brian_armstrong",
+    "avatar": "https://pbs.twimg.com/profile_images/2078293582918934528/YZjOB_hV_200x200.jpg"
+   },
+   "text": "We were able to fine tune an open weight model (Qwen3.5-9B) on proprietary internal data at @coinbase, and it out performed frontier models, at much lower cost and speed, for a specialized task (fraud prevention in this case).\n\nI think we'll see more of this pattern inside companies. The frontier models are amazing generalists. But increasingly you'll see specialist models out perform on more narrow tasks, either working on teams, or by themselves.\n\nWe're making it easy to fine tune models internally for our employees. We even have a skill for it in our internal harness that makes it easy to spin these up and start training them:\n\n\"/fine-tune-and-serve-llm I want to fine-tune Qwen for payments risk review. help me get started\"\n\nI imagine we'll have some backend services that could be replaced entirely by this new architecture.",
+   "date": 1791757997,
+   "media": [
+    {
+     "type": "image",
+     "src": "https://pbs.twimg.com/media/HUYhjMnW8AAM-ty.jpg?name=orig",
+     "ratio": 0.615
+    },
+    {
+     "type": "image",
+     "src": "https://pbs.twimg.com/media/HUYhnxrXoAA8WCz.jpg?name=orig",
+     "ratio": 0.4202
+    }
+   ],
+   "links": []
+  }
+ ],
+ "article": {
+  "title": "برایان آرمسترانگ مدیرعامل کوین‌بیس اومده رو کرده که یه مدل هوش مصنوعی متن‌باز کوچیک به اسم Qwen رو با داده‌های اختصاصی شرکتشون واسه ردگیری کلاهبرداری تیون کردن و نتیجه حسابی شگفت‌انگیز بوده",
+  "source_title": "We were able to fine tune an open weight model (Qwen3.5-9B) on proprietary internal data at @coinbase, and it out performed frontier…",
+  "body": [
+   "رفیق، برایان آرمسترانگ مدیرعامل کوین‌بیس اومده رو کرده که یه مدل هوش مصنوعی متن‌باز کوچیک به اسم Qwen رو با داده‌های اختصاصی شرکتشون واسه ردگیری کلاهبرداری تیون کردن و نتیجه حسابی شگفت‌انگیز بوده. این مدل جمع‌وجور نه‌تنها غول‌های بزرگ و پرادعای هوش مصنوعی رو توی این وظیفه تخصصی شکست داده، بلکه هم هزینه‌ش فوق‌العاده پایین‌تر دراومده و هم خیلی سریع‌تر جواب میده. آرمسترانگ میگه شاید مدل‌های معروف همه‌فن‌حریف باشن، ولی واسه کارهای اختصاصی، آینده دست همین مدل‌های دست‌چین و آموزش‌دیده است و حتی قراره یه سری از بخش‌های قدیمی سیستمشون رو کلاً با این روش نونوار کنن."
+  ],
+  "why": "نشون میده شرکت‌ها واسه کارهای تخصصی نیازی به خرج دلارهای کلان پای مدل‌های غول‌پیکر ندارن و مدل‌های متن‌باز اختصاصی هم ارزون‌تر تموم میشن و هم دست بالاتری دارن.",
+  "tags": [
+   "چین"
+  ]
+ },
+ "updated": "2026-10-25T12:23:48+00:00",
+ "gholam_checked": "2026-10-25T12:23:48+00:00"
+}

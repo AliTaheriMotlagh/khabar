@@ -2,16 +2,23 @@
  "id": 5895,
  "url": "https://t.me/dlmehr/5895",
  "date": "2026-10-14T19:45:31+00:00",
- "edited": true,
- "views": "178",
  "text": "https://fxtwitter.com/spacexsi/status/2110416580899168305?s=52&t=F41Qa04r48Mef_j_XjBneQ",
  "forwarded_from": null,
  "digest": false,
  "hash": "571a9df24d6e",
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/spacexsi/status/2110416580899168305?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+  "site": "🧵 Thread • FxTwitter",
+  "title": "SpaceX Super Intelligence (@SpaceXSI)",
+  "description": "Introducing Grok Voice 3.0, the world’s most intelligent speech-to-speech model.\nIt excels at resolving customer calls, responds in under a second, and costs less than other frontier models.",
+  "image": "https://cdn4.telesco.pe/file/hKNvNrcv982yD7OkWm2zlbWAlyGwvG1Qls17fW2jPNm3CC1-t-115aOcEEWeXGFoZH6YAhJyMGYsg3qlFPXFKRPCKBeB2MXCH-SA1l_FeK_BX9kO_6FCBGxV_4RQH0F3QwfDbdboEw_rziPHhojcgf5KG08wusjQ-PjwQ37J5L3RG_g_EfpNACHua7ysboopHeFWUaGocM7Es-GDOkT3H55xVskpIlirSFkgAl5QmWomFxcVxYJOemXqx4vzYKUScbEfeEPnK1Z9-TbrjwW9iVIyY2ALKSo41uz5-hz2jvzypMTLiDRb_rdGRrTOxBdM6zbSOkuudAMNIEix97O4bg.jpg"
+ },
  "gholam": {
   "text": "رفقا خبر رسیده که از مدل صوتی خفن «گراک وُیس ۳.۰» رونمایی شده و سازنده‌هاش ادعا دارن باهوش‌ترین سیستم تبدیل گفتار به گفتار توی کل دنیاست. این غول جدید رو جوری ساختن که خوراک رسیدگی به تماس‌های مشتری‌ها و بخش پشتیبانیه و تا بگی فوت، یعنی زیر یه ثانیه، بدون معطلی پاسخت رو آماده می‌کنه. تازه برگ برنده‌ش فقط سرعت و زبون‌فهمیش نیست، بلکه هزینه‌ش هم نسبت به بقیه رقبای گردن‌کلفت این حوزه خیلی اقتصادی‌تر تموم می‌شه. خلاصه انگار کم‌کم باید با اپراتورهای تلفنی سنتی خداحافظی کنیم و کار رو بسپریم دست این هوش مصنوعی فرز و تیز.\n\nاهمیتش اینه که با سرعت زیر یه ثانیه و خرج کمتر، قراره سیستم خدمات مشتریان در دنیا رو زیر و رو کنه و مکالمه با ربات‌ها رو از اون حالت کند و خشک همیشگی نجات بده.",
   "date": "2026-10-14T19:45:49+00:00"
  },
+ "gholam_checked": "2026-10-24T23:35:37+00:00",
  "links": [
   {
    "kind": "tweet",
@@ -43,18 +50,6 @@
    "links": []
   }
  ],
- "media": [],
- "preview": {
-  "url": "https://fxtwitter.com/spacexsi/status/2110416580899168305?s=52&t=F41Qa04r48Mef_j_XjBneQ",
-  "site": "🧵 Thread • FxTwitter",
-  "title": "SpaceX Super Intelligence (@SpaceXSI)",
-  "description": "Introducing Grok Voice 3.0, the world’s most intelligent speech-to-speech model.\nIt excels at resolving customer calls, responds in under a second, and costs less than other frontier models.",
-  "image": {
-   "src": "media/5895/preview.webp",
-   "width": 800,
-   "height": 478
-  }
- },
  "article": {
   "title": "رفقا خبر رسیده که از مدل صوتی خفن «گراک وُیس ۳.۰» رونمایی شده و سازنده‌هاش ادعا دارن باهوش‌ترین سیستم تبدیل گفتار به گفتار توی کل دنیاست",
   "source_title": "Introducing Grok Voice 3.0, the world’s most intelligent speech-to-speech model.",
@@ -66,6 +61,5 @@
    "ایلان ماسک"
   ]
  },
- "updated": "2026-10-24T23:35:37+00:00",
- "gholam_checked": "2026-10-24T23:35:37+00:00"
+ "updated": "2026-10-25T11:54:11+00:00"
 }

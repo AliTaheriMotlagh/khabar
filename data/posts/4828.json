@@ -1,0 +1,60 @@
+{
+ "id": 4828,
+ "url": "https://t.me/dlmehr/4828",
+ "date": "2026-08-19T19:48:26+00:00",
+ "text": "https://fxtwitter.com/carlpeterson/status/2090129433268994458?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+ "forwarded_from": null,
+ "digest": false,
+ "hash": "069a076f3503",
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/carlpeterson/status/2090129433268994458?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+  "site": "🧵 Thread • FxTwitter",
+  "title": "Carl Peterson (@carlpeterson)",
+  "description": "Today, we raised a $13M series A to solve the GPU shortage\nTrillions are being spent on GPU CapEx while 80% of it sits idle\nThe capacity already exists\nVirtualizing GPUs unlocks it\nBacked by Matrix, YC, and CEAS",
+  "image": null
+ },
+ "gholam": {
+  "text": "ببین رفیق، کارل پیترسون و تیمش تونستن یه سرمایه تر و تمیز ۱۳ میلیون دلاری تو دور سری A جمع کنن تا مشکل کمبود کارت‌های گرافیک یا همون GPU رو اساسی حل و فصل کنن. حرف حسابشون اینه که تریلیون‌ها دلار خرج خرید این سخت‌افزارها میشه، ولی نزدیک ۸۰ درصد این ظرفیت همین‌طوری بیکار و دست‌نخورده گوشه دیتاسنترها خاک می‌خوره. ایده خفنشون اینه که با مجازی‌سازی GPUها، همین ظرفیت‌های مخفی و آزاد رو بکشن بیرون تا همه بتونن ازش استفاده کنن؛ غول‌های سرمایه‌گذاری مثل وای‌کامبینیتور (YC) و ماتریکس هم پشت این ماجرا وایسادن.\n\nچرا مهمه؟ چون به جای خرید میلیاردها دلار سخت‌افزار جدید، میشه با بهینه‌سازی و نرم‌افزار، هزینه سنگین هوش مصنوعی رو برای بقیه شرکت‌ها حسابی پایین آورد.",
+  "date": "2026-08-19T19:48:34+00:00"
+ },
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/carlpeterson/status/2090129433268994458",
+   "domain": "x.com",
+   "author": {
+    "name": "Carl Peterson",
+    "handle": "carlpeterson",
+    "avatar": "https://pbs.twimg.com/profile_images/2092119405585108992/OoxrTf09_200x200.jpg"
+   },
+   "text": "Today, we raised a $13M series A to solve the GPU shortage\n\nTrillions are being spent on GPU CapEx while 80% of it sits idle\n\nThe capacity already exists\nVirtualizing GPUs unlocks it\n\nBacked by Matrix, YC, and CEAS",
+   "date": 1787160664,
+   "media": [
+    {
+     "type": "video",
+     "src": "https://video.twimg.com/amplify_video/2090118470469890048/vid/avc1/1280x720/G9RtA-r42XqIDxqX.mp4?tag=29",
+     "poster": "https://pbs.twimg.com/amplify_video_thumb/2090118470469890048/img/SEx9sc8XTcokqjg9.jpg",
+     "ratio": 0.5625,
+     "duration": 77.077,
+     "gif": false
+    }
+   ],
+   "links": []
+  }
+ ],
+ "article": {
+  "title": "کارل پیترسون و تیمش تونستن یه سرمایه تر و تمیز ۱۳ میلیون دلاری تو دور سری A جمع کنن تا مشکل کمبود کارت‌های گرافیک یا همون GPU رو اساسی حل و فصل کنن",
+  "source_title": "Today, we raised a $13M series A to solve the GPU shortage",
+  "body": [
+   "ببین رفیق، کارل پیترسون و تیمش تونستن یه سرمایه تر و تمیز ۱۳ میلیون دلاری تو دور سری A جمع کنن تا مشکل کمبود کارت‌های گرافیک یا همون GPU رو اساسی حل و فصل کنن. حرف حسابشون اینه که تریلیون‌ها دلار خرج خرید این سخت‌افزارها میشه، ولی نزدیک ۸۰ درصد این ظرفیت همین‌طوری بیکار و دست‌نخورده گوشه دیتاسنترها خاک می‌خوره. ایده خفنشون اینه که با مجازی‌سازی GPUها، همین ظرفیت‌های مخفی و آزاد رو بکشن بیرون تا همه بتونن ازش استفاده کنن؛ غول‌های سرمایه‌گذاری مثل وای‌کامبینیتور (YC) و ماتریکس هم پشت این ماجرا وایسادن."
+  ],
+  "why": "چون به جای خرید میلیاردها دلار سخت‌افزار جدید، میشه با بهینه‌سازی و نرم‌افزار، هزینه سنگین هوش مصنوعی رو برای بقیه شرکت‌ها حسابی پایین آورد.",
+  "tags": [
+   "تراشه",
+   "استارتاپ"
+  ]
+ },
+ "updated": "2026-10-25T12:29:51+00:00",
+ "gholam_checked": "2026-10-25T12:29:51+00:00"
+}

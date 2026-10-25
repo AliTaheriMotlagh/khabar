@@ -1,0 +1,59 @@
+{
+ "id": 5876,
+ "url": "https://t.me/dlmehr/5876",
+ "date": "2026-10-13T23:04:29+00:00",
+ "text": "https://fxtwitter.com/animaanandkumar/status/2110141540639355137?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+ "forwarded_from": null,
+ "digest": false,
+ "hash": "3e06c1b0e391",
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/animaanandkumar/status/2110141540639355137?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+  "site": "FxTwitter · arxiv.org",
+  "title": "Prof. Anima Anandkumar (@AnimaAnandkumar)",
+  "description": "Excited to share ReRoute, our new framework for scientific counterfactual prediction: informed by partial physics knowledge for much better generalization.\n🌍\nAI models can be remarkably accurate on familiar data, yet struggle with scientific ‘what-if’ questions…",
+  "image": "https://cdn4.telesco.pe/file/hFZd1oU2Wha8yFH6gv82TPLMgYNuc1S_6_km9S6JGqokrg9xHeyq1Oc52Tc0jlU4gZFwvWJ0aMHNfFEUpwIVv7ynV86qvJLMv516hcoTTVUHL7cUDscJ2NMrMWbgomTYBf-WvGSRgVJbKHRSqp0wdpvE4WXwNhF738B7FaYeBWOKo71HhL732pEXBy_igTFQZxIS2WI0FEneVAhPwG0yvAfj5GNFszWKnExObxA0_seXZtDh_m6iiL7v8S8J5D4dZVcd-J1dQPaQR67iuvpPB49jvheAsWIsuD5NnJhj3v9Cj8Ew9oKLgEZFo8KyE1_29caol2oLsACCQOzOJF-spA.jpg"
+ },
+ "gholam": {
+  "text": "رفیق، پروفسور آنیما آناندکومار و تیمش از یه فریم‌ورک تر و تمیز به اسم ReRoute رونمایی کردن که تخصصش جواب دادن به سوال‌های «چی می‌شد اگه...» توی دنیای علمه. قضیه از این قراره که مدل‌های هوش مصنوعی تو سناریوهایی که تا حالا ندیدن معمولاً کم میارن، ولی این پژوهشگرا اومدن فرمول‌ها و اصول اولیه‌ی فیزیک رو با داده‌های موجود ترکیب کردن تا بدون نیاز به ساخت مدل از صفر یا خرج‌های سنگین، با یه فاین‌تیون خیلی سبک کار رو دربیارن. نتیجه‌ش هم معرکه شده؛ خطای مدل توی شبیه‌سازی‌های اقلیمیِ تغییرات کربن حدود ۳۱.۸ درصد و تو آزمایش‌های انتقال و انتشار فیزیکی تا ۸۹.۶ درصد کمتر شده. ته خط هم ثابت کردن که برای پیش‌بینی آینده همیشه به داده‌های غول‌آسا احتیاج نیست، بلکه اگه یه ذره قوانین دنیا و فیزیک رو قاطی کار کنیم، هوش مصنوعی حسابی تیز و کاربلد می‌شه.\n\nاهمیتش اینه که بدون نیاز به شبیه‌سازی‌های پرهزینه و سرورهای فضایی، می‌شه تغییرات اقلیمی و بحران‌های زیست‌محیطی رو خیلی دقیق‌تر و ارزون‌تر پیش‌بینی کرد.",
+  "date": "2026-10-13T23:04:46+00:00"
+ },
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/AnimaAnandkumar/status/2110141540639355137",
+   "domain": "x.com",
+   "author": {
+    "name": "Prof. Anima Anandkumar",
+    "handle": "AnimaAnandkumar",
+    "avatar": "https://pbs.twimg.com/profile_images/2092855511029006336/DCV19usT_200x200.jpg"
+   },
+   "text": "Excited to share ReRoute, our new framework for scientific counterfactual prediction: informed by partial physics knowledge for much better generalization. 🌍\n\nAI models can be remarkably accurate on familiar data, yet struggle with scientific ‘what-if’ questions\n\nThe key idea: Combine observational data with partial physical knowledge to predict unseen interventions—without requiring new controlled experiments.\n\nInstead of retraining models on expensive new simulations, ReRoute uses known partial physical mechanisms to guide pretrained models through lightweight fine-tuning on existing data.\n\nThe results:\n🌍 Up to 31.8% lower prediction error under severe CO₂ distribution shifts in climate emulators.\n🔬 Up to 89.6% lower counterfactual error in controlled advection–diffusion experiments.\n⚡ No new intervention data. No retraining from scratch. Just lightweight fine-tuning.\n\nWe also establish a causal identification result under explicit structural assumptions, with a machine-checked proof in Lean.\n\nThe bigger picture: Scientific AI doesn't always need more data or bigger models to generalize beyond what it has seen. Sometimes, knowing just a little about how the world works can make a big difference. @Dingling_Yao @kahaan_gandhi @FrancescoLocat8 @Caltech \n\n📄 Paper: https://arxiv.org/abs/2610.02252\n#AIforScience #ScientificML #ClimateAI #CausalInference #PhysicsAI",
+   "date": 1791931922,
+   "media": [],
+   "links": [
+    "https://arxiv.org/abs/2610.02252"
+   ]
+  },
+  {
+   "kind": "link",
+   "url": "https://arxiv.org/abs/2610.02252",
+   "domain": "arxiv.org",
+   "title": "Counterfactual Predictions in Scientific Emulators Without Controlled Experiments",
+   "description": "Many scientific questions require reasoning about what was never observed: What if the conditions, interventions, or history had been different? Models can predict accurately on observed data yet fail on such what-if queries when correlated inputs are varied independently. A common remedy is to add controlled simulation data in which these factors are explicitly disentangled, but this requires acc",
+   "image": "https://arxiv.org/static/browse/0.3.4/images/arxiv-logo-fb.png",
+   "site": "arXiv.org"
+  }
+ ],
+ "article": {
+  "title": "پروفسور آنیما آناندکومار و تیمش از یه فریم‌ورک تر و تمیز به اسم ReRoute رونمایی کردن که تخصصش جواب دادن به سوال‌های «چی می‌شد اگه...» توی دنیای علمه",
+  "source_title": "Excited to share ReRoute, our new framework for scientific counterfactual prediction: informed by partial physics knowledge for much better…",
+  "body": [
+   "رفیق، پروفسور آنیما آناندکومار و تیمش از یه فریم‌ورک تر و تمیز به اسم ReRoute رونمایی کردن که تخصصش جواب دادن به سوال‌های «چی می‌شد اگه...» توی دنیای علمه. قضیه از این قراره که مدل‌های هوش مصنوعی تو سناریوهایی که تا حالا ندیدن معمولاً کم میارن، ولی این پژوهشگرا اومدن فرمول‌ها و اصول اولیه‌ی فیزیک رو با داده‌های موجود ترکیب کردن تا بدون نیاز به ساخت مدل از صفر یا خرج‌های سنگین، با یه فاین‌تیون خیلی سبک کار رو دربیارن. نتیجه‌ش هم معرکه شده؛ خطای مدل توی شبیه‌سازی‌های اقلیمیِ تغییرات کربن حدود ۳۱.۸ درصد و تو آزمایش‌های انتقال و انتشار فیزیکی تا ۸۹.۶ درصد کمتر شده. ته خط هم ثابت کردن که برای پیش‌بینی آینده همیشه به داده‌های غول‌آسا احتیاج نیست، بلکه اگه یه ذره قوانین دنیا و فیزیک رو قاطی کار کنیم، هوش مصنوعی حسابی تیز و کاربلد می‌شه."
+  ],
+  "why": "بدون نیاز به شبیه‌سازی‌های پرهزینه و سرورهای فضایی، می‌شه تغییرات اقلیمی و بحران‌های زیست‌محیطی رو خیلی دقیق‌تر و ارزون‌تر پیش‌بینی کرد.",
+  "tags": []
+ },
+ "updated": "2026-10-25T12:23:35+00:00",
+ "gholam_checked": "2026-10-25T12:23:35+00:00"
+}

@@ -1,0 +1,67 @@
+{
+ "id": 5594,
+ "url": "https://t.me/dlmehr/5594",
+ "date": "2026-10-02T16:22:21+00:00",
+ "text": "https://fxtwitter.com/GoogleResearch/status/2106041109944357182",
+ "forwarded_from": "Parsa Razavi",
+ "digest": false,
+ "hash": "7398a85cf7d4",
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/GoogleResearch/status/2106041109944357182",
+  "site": "FxTwitter",
+  "title": "Google Research (@GoogleResearch)",
+  "description": "Today we’re introducing a next-generation Federated Learning system. By using Trusted Execution Environments (TEEs), it delivers verifiable differential privacy while moving computation server-side to cut training times. Read the blog: https://goo.gle/4hIPtWX",
+  "image": "https://cdn4.telesco.pe/file/KZ90hQ0IWpkkTvYP2WvTDjlcJiWhYc_ZiJ2V5-Ubp7qSms6ATRhUR06coAYaw8xagjEFHOTmOzkZuGJDPZKO5GFwJl0jKga0u4YUWAkvIEiCbvoaEMGz716JugD3nCIyAlkSpEaAJ7idDONUJ8g-Ht97rF-i56-87jOWyBSzg8S904GuCIRH0vGmPpfu11HMSn5IvHOoOm8hO_wPhDy1b9soTz7JEAoUhytGYM-bgLA4Py9nZCyvFtnRE-bfmLnOv_iImmM63BVYKVuvcOrdiXkRtjVHpIzKx6NYvERHfcnwuQJdgCJfDzc3WzuOciewMJ2ycarO5-SkGR0LThywwQ.jpg"
+ },
+ "gholam": {
+  "text": "ببین رفیق، بچه‌های تیم تحقیقات گوگل دست گذاشتن رو یه کار درست و از نسل جدید سیستم «یادگیری فدرال» رونمایی کردن. داستان از این قراره که این‌بار رفتن سراغ محیط‌های محاسباتی امن سخت‌افزاری تا حریم خصوصی داده‌ها کاملاً تاییدشده و بی‌نقص حفظ بشه. از اون طرفم، بخش عمده محاسبات سنگین رو بردن سمت سرور تا زمان آموزش مدل‌ها حسابی افت کنه و کار با سرعت جت جلو بره. خلاصه یه فرمولی چیدن که هم دیتای من و شما لو نره و جاش امن باشه، هم چرخ آموزش هوش مصنوعی سریع‌تر بچرخه.\n\nاهمیتش اینه که این نوآوری ثابت می‌کنه میشه امنیت سفت‌وسخت داده‌های شخصی رو بدون فدا کردن سرعت و راندمان یادگیری هوش مصنوعی کنار هم داشت.",
+  "date": "2026-10-02T16:22:34+00:00"
+ },
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/GoogleResearch/status/2106041109944357182",
+   "domain": "x.com",
+   "author": {
+    "name": "Google Research",
+    "handle": "GoogleResearch",
+    "avatar": "https://pbs.twimg.com/profile_images/2060445303589961728/NrdAg8dM_200x200.jpg"
+   },
+   "text": "Today we’re introducing a next-generation Federated Learning system. By using Trusted Execution Environments (TEEs), it delivers verifiable differential privacy while moving computation server-side to cut training times. Read the blog: https://goo.gle/4hIPtWX",
+   "date": 1790954303,
+   "media": [
+    {
+     "type": "image",
+     "src": "https://pbs.twimg.com/media/HTopIZSaAAAc7eK.jpg?name=orig",
+     "ratio": 1.384
+    }
+   ],
+   "links": [
+    "https://goo.gle/4hIPtWX"
+   ]
+  },
+  {
+   "kind": "link",
+   "url": "https://research.google/blog/toward-provably-private-learning-from-federated-data/?utm_source=twitter&utm_medium=social&utm_campaign=social_post&utm_content=gr-acct",
+   "domain": "research.google",
+   "title": "Toward provably private learning from federated data",
+   "description": null,
+   "image": "https://storage.googleapis.com/gweb-research2023-media/images/HO_previewImage1.width-800.format-jpeg.jpg",
+   "site": "research.google"
+  }
+ ],
+ "article": {
+  "title": "بچه‌های تیم تحقیقات گوگل دست گذاشتن رو یه کار درست و از نسل جدید سیستم «یادگیری فدرال» رونمایی کردن",
+  "source_title": "Today we’re introducing a next-generation Federated Learning system. By using Trusted Execution Environments (TEEs), it delivers verifiable…",
+  "body": [
+   "ببین رفیق، بچه‌های تیم تحقیقات گوگل دست گذاشتن رو یه کار درست و از نسل جدید سیستم «یادگیری فدرال» رونمایی کردن. داستان از این قراره که این‌بار رفتن سراغ محیط‌های محاسباتی امن سخت‌افزاری تا حریم خصوصی داده‌ها کاملاً تاییدشده و بی‌نقص حفظ بشه. از اون طرفم، بخش عمده محاسبات سنگین رو بردن سمت سرور تا زمان آموزش مدل‌ها حسابی افت کنه و کار با سرعت جت جلو بره. خلاصه یه فرمولی چیدن که هم دیتای من و شما لو نره و جاش امن باشه، هم چرخ آموزش هوش مصنوعی سریع‌تر بچرخه."
+  ],
+  "why": "این نوآوری ثابت می‌کنه میشه امنیت سفت‌وسخت داده‌های شخصی رو بدون فدا کردن سرعت و راندمان یادگیری هوش مصنوعی کنار هم داشت.",
+  "tags": [
+   "گوگل"
+  ]
+ },
+ "updated": "2026-10-25T12:25:09+00:00",
+ "gholam_checked": "2026-10-25T12:25:09+00:00"
+}

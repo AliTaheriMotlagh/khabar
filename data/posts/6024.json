@@ -2,16 +2,23 @@
  "id": 6024,
  "url": "https://t.me/dlmehr/6024",
  "date": "2026-10-21T17:14:15+00:00",
- "edited": true,
- "views": "174",
  "text": "https://fxtwitter.com/appliedcompute/status/2112938595577475177?s=52&t=F41Qa04r48Mef_j_XjBneQ",
  "forwarded_from": null,
  "digest": false,
  "hash": "9cd55e968d78",
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/appliedcompute/status/2112938595577475177?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+  "site": "🧵 Thread • FxTwitter",
+  "title": "Applied Compute (@appliedcompute)",
+  "description": "Introducing Shift-1, a frontier coding router trained on AC2 that reduced coding agent cost by up to 55% with no noticeable drop in quality. Try it at https://www.shift.ac.",
+  "image": null
+ },
  "gholam": {
   "text": "ببین رفیق، بچه‌های شرکت Applied Compute اومدن از یه ابزار کاردرست به اسم Shift-1 رونمایی کردن که کارش مسیریابی هوشمند برای ایجنت‌های کدنویسیه. این شاهکار روی بستر AC2 آموزش دیده و زرنگیش اینه که تسک‌های برنامه‌نویسی رو به بهینه‌ترین شکل ممکن هدایت می‌کنه. اصل ماجرا هم اینجاست که طبق آمار و ارقامشون، این سیستم تونسته هزینه‌های هوش مصنوعیِ کدنویس رو تا ۵۵ درصد بیاره پایین، اونم بدون اینکه سر سوزنی از کیفیت خروجی کار کم بشه. خلاصه دسترسی بهش رو هم باز گذاشتن تا برنامه‌نویس‌ها خودشون برن عیارش رو بسنجن.\n\nاهمیتش اینه که نصف شدن هزینه‌های کدنویسی با هوش مصنوعی بدون افت کارایی، جیب توسعه‌دهنده‌ها و استارتاپ‌ها رو از خالی شدن نجات می‌ده و سرعت توسعه رو به شدت بالا می‌بره.",
   "date": "2026-10-21T17:14:33+00:00"
  },
+ "gholam_checked": "2026-10-24T23:03:09+00:00",
  "links": [
   {
    "kind": "tweet",
@@ -64,14 +71,6 @@
    "text": "Shift-1\nfrom\n$ curl -fsSL https://shift.ac/install.sh | sh\nShift-1 is a frontier coding router that cuts Astra costs by 55% with no noticeable drop in quality.\nThe router policy in Shift-1 is powered by a custom decision model trained with AC2, Applied Compute’s training and inference cloud for open models. It was trained on general coding and knowledge work tasks but can be adapted to any workload or underlying models.\nIf you’re interested in building your own router to cut costs and speed up your agent, get in touch."
   }
  ],
- "media": [],
- "preview": {
-  "url": "https://fxtwitter.com/appliedcompute/status/2112938595577475177?s=52&t=F41Qa04r48Mef_j_XjBneQ",
-  "site": "🧵 Thread • FxTwitter",
-  "title": "Applied Compute (@appliedcompute)",
-  "description": "Introducing Shift-1, a frontier coding router trained on AC2 that reduced coding agent cost by up to 55% with no noticeable drop in quality. Try it at https://www.shift.ac.",
-  "image": null
- },
  "article": {
   "title": "بچه‌های شرکت Applied Compute اومدن از یه ابزار کاردرست به اسم Shift-1 رونمایی کردن که کارش مسیریابی هوشمند برای ایجنت‌های کدنویسیه",
   "source_title": "Introducing Shift-1, a frontier coding router trained on AC2 that reduced coding agent cost by up to 55% with no noticeable drop in…",
@@ -83,6 +82,5 @@
    "کدنویسی"
   ]
  },
- "updated": "2026-10-24T23:03:09+00:00",
- "gholam_checked": "2026-10-24T23:03:09+00:00"
+ "updated": "2026-10-25T11:53:53+00:00"
 }

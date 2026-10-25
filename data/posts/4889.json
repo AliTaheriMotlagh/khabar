@@ -1,0 +1,56 @@
+{
+ "id": 4889,
+ "url": "https://t.me/dlmehr/4889",
+ "date": "2026-08-23T03:24:44+00:00",
+ "text": "https://fxtwitter.com/younisjoseph/status/2091297990845874468?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+ "forwarded_from": null,
+ "digest": false,
+ "hash": "a382e2bd02eb",
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/younisjoseph/status/2091297990845874468?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+  "site": "FxTwitter",
+  "title": "Joseph Younis, MD (@YounisJoseph)",
+  "description": "This is a well-designed randomized control study that asks the question: Does an LLM's ability to diagnose and manage the same medical scenarios degrade when a patient is the communicator versus a physician.\nThe result: 60% drop in diagnostic accuracy,…",
+  "image": "https://cdn4.telesco.pe/file/MwqG2gZldY3YVdTLjCFnHqIvUiXhDAybyIPwXB8FSd2P00EC32Urbwx_syG-YAA23IrsWXCUNuPmTsn4iyboZSKEKoCRd1leUdxkcDlx3Qn_-EMG1_E76ZCbZP9QzNp0g0MwJMUPgYKCo7WIHE_v_nBjgYMkhb9itmSh2tDbP92sskiTMYSD1A81oIO_IpWLdPt6hTLtXRzyBrMMyA86DwkIsTu843ZQXPGQcdpJFj4pSTHRc53pyd379ZMqTSnQL9a8k-qoYeQTGcX52oxcEWvOmNpC9NTZHcaEOy8EGjfstHQzQaumEE5xlIDFb2N1G-n1BpbIW8SYO8fGLqVmuA.jpg"
+ },
+ "gholam": {
+  "text": "ببین رفیق، یه دکتر به اسم جوزف یونیس نتایج یه تحقیق تر و تمیز رو رو کرده که نشون می‌ده وقتی خود مریض به‌جای پزشک با هوش مصنوعی درباره علائمش حرف می‌زنه، دقت تشخیص این چت‌بات‌ها ۶۰ درصد و درستی تصمیمات درمانی‌شون ۱۲ درصد افت می‌کنه. ماجرا از این قراره که این مدل‌ها بدجوری دهن‌بین و زودباورن؛ یعنی وقتی طرف سواد پزشکی نداره و بیماریش رو ناشیانه توصیف می‌کنه، هوش مصنوعی هم سریع گول می‌خوره و تشخیص کج‌وکوله تحویل می‌ده. خلاصه که متخصص‌ها سفت‌وسخت هشدار دادن اصلاً عاقلانه و ایمن نیست مردم واسه نسخه و درمان به این ابزارها تکیه کنن، چون هوش مصنوعی هنوز عاجزه از اینکه خطاهای خودش رو بفهمه.\n\nاهمیتش اینه که نشون می‌ده هوش مصنوعی هنوز به هیچ‌وجه جای طبیب واقعی رو نمی‌گیره و اعتماد چشم‌بسته بهش سر سلامتی می‌تونه بدجوری کار دست آدم بده.",
+  "date": "2026-08-23T03:24:56+00:00"
+ },
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/YounisJoseph/status/2091297990845874468",
+   "domain": "x.com",
+   "author": {
+    "name": "Joseph Younis, MD",
+    "handle": "YounisJoseph",
+    "avatar": "https://pbs.twimg.com/profile_images/2043369739347718144/zxulVPP8_200x200.jpg"
+   },
+   "text": "This is a well-designed randomized control study that asks the question: Does an LLM's ability to diagnose and manage the same medical scenarios degrade when a patient is the communicator versus a physician. \n\nThe result: 60% drop in diagnostic accuracy, 12% drop in appropriate management decisions\n\nThe answer essentially confirms the following suspicions:\n1. LLMs are suggestible, naive, and sycophantic\n2. Medical literacy drives output; less literacy, less accurate LLM outputs\n3. Prompting still confounds frontier models' medical accuracy\n\nIt is not safe to have people trust LLM medical advice when they're incapable of detecting their own bias and inaccuracies.",
+   "date": 1787439270,
+   "media": [
+    {
+     "type": "image",
+     "src": "https://pbs.twimg.com/media/HQXGpTba0AEnxJH.png?name=orig",
+     "ratio": 1.2915
+    }
+   ],
+   "links": []
+  }
+ ],
+ "article": {
+  "title": "یه دکتر به اسم جوزف یونیس نتایج یه تحقیق تر و تمیز رو رو کرده که نشون می‌ده وقتی خود مریض به‌جای پزشک با هوش مصنوعی درباره علائمش حرف می‌زنه، دقت تشخیص این چت‌بات‌ها ۶۰ درصد و درستی تصمیمات درمانی‌شون ۱۲ درصد افت می‌کنه",
+  "source_title": "This is a well-designed randomized control study that asks the question: Does an LLM's ability to diagnose and manage the same medical…",
+  "body": [
+   "ببین رفیق، یه دکتر به اسم جوزف یونیس نتایج یه تحقیق تر و تمیز رو رو کرده که نشون می‌ده وقتی خود مریض به‌جای پزشک با هوش مصنوعی درباره علائمش حرف می‌زنه، دقت تشخیص این چت‌بات‌ها ۶۰ درصد و درستی تصمیمات درمانی‌شون ۱۲ درصد افت می‌کنه. ماجرا از این قراره که این مدل‌ها بدجوری دهن‌بین و زودباورن؛ یعنی وقتی طرف سواد پزشکی نداره و بیماریش رو ناشیانه توصیف می‌کنه، هوش مصنوعی هم سریع گول می‌خوره و تشخیص کج‌وکوله تحویل می‌ده. خلاصه که متخصص‌ها سفت‌وسخت هشدار دادن اصلاً عاقلانه و ایمن نیست مردم واسه نسخه و درمان به این ابزارها تکیه کنن، چون هوش مصنوعی هنوز عاجزه از اینکه خطاهای خودش رو بفهمه."
+  ],
+  "why": "نشون می‌ده هوش مصنوعی هنوز به هیچ‌وجه جای طبیب واقعی رو نمی‌گیره و اعتماد چشم‌بسته بهش سر سلامتی می‌تونه بدجوری کار دست آدم بده.",
+  "tags": [
+   "سلامت"
+  ]
+ },
+ "updated": "2026-10-25T12:29:29+00:00",
+ "gholam_checked": "2026-10-25T12:29:29+00:00"
+}

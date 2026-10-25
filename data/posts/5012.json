@@ -1,0 +1,61 @@
+{
+ "id": 5012,
+ "url": "https://t.me/dlmehr/5012",
+ "date": "2026-08-28T17:19:29+00:00",
+ "text": "https://fxtwitter.com/anthropicai/status/2093386528668172373?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+ "forwarded_from": null,
+ "digest": false,
+ "hash": "269e9a4c6d42",
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/anthropicai/status/2093386528668172373?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+  "site": "FxTwitter · anthropic.com",
+  "title": "Anthropic (@AnthropicAI)",
+  "description": "New Fellows Research: Can Claude autonomously align other AIs?\nWe gave Claude 48 hours and 1 GPU to improve the alignment of small models. It researched and proposed methods, then trained and tested the models on its own. It worked surprisingly well.\nht…",
+  "image": "https://cdn4.telesco.pe/file/ZfFaF09UEwpCr0u6PG4BDTVEIWke9QcC5gq16VWgQvw39HjgHGeWgZlL0QeLsiz00KDQy9TxeTk30AQxAxq0yGpfg-t8tFEk61lkhiEQFeIiY15H0dh7nxECPKNqWdCbW5o8EHFxx54b2CRZOCNKIOg0dXJis7hqvAxJ6uUyCTXZB5vSB-Pn6fWjG7foOSIMX3bGhKEpRkj7yTPIac4xgZ_egjiqkkXbjFLINFTvh9-RqXsUbUmp6J_LnLcwCreQnwyC6FRzfY5uMz9cLySV79c-dC31BQ9irAcOR8U_oRKKbfWX2EnqCSMiYk0OIlozrpfY3bmtMC0Gpy2K8lrttw.jpg"
+ },
+ "gholam": {
+  "text": "ببین رفیق، بچه‌های شرکت آنتروپیک یه آزمایش خیلی جالب راه انداختن تا ببینن کلود می‌تونه خودش تنهایی بقیه هوش‌های مصنوعی رو سر به راه و ایمن کنه یا نه. ماجرا از این قراره که به این هوش مصنوعی فقط ۴۸ ساعت وقت و یه دونه پردازنده گرافیکی دادن، اونم قشنگ آستین بالا زده، تحقیق کرده، روش‌های تازه داده و مدل‌های کوچیک‌تر رو خودش تنهایی آموزش داده و تست کرده. جالب اینجاست که نتیجه کار به شدت تمیز و غافلگیرکننده دراومده و نشون داده هوش مصنوعی خودش به تنهایی از پس اصلاح خطاهای ایمنی مدل‌های دیگه برمیاد.\n\nاهمیتش اینه که نشون می‌ده برای امن‌تر کردن و هدایت مدل‌های هوش مصنوعی، دیگه شاید نیازی به کار طاقت‌فرسای انسان‌ها نباشه و خود سیستم‌ها بتونن هوای همدیگه رو داشته باشن.",
+  "date": "2026-08-28T17:19:48+00:00"
+ },
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/AnthropicAI/status/2093386528668172373",
+   "domain": "x.com",
+   "author": {
+    "name": "Anthropic",
+    "handle": "AnthropicAI",
+    "avatar": "https://pbs.twimg.com/profile_images/1798110641414443008/XP8gyBaY_200x200.jpg"
+   },
+   "text": "New Fellows Research: Can Claude autonomously align other AIs?\n\nWe gave Claude 48 hours and 1 GPU to improve the alignment of small models. It researched and proposed methods, then trained and tested the models on its own. It worked surprisingly well.\nhttps://www.anthropic.com/research/automated-researchers-mitigate-alignment-failures",
+   "date": 1787937216,
+   "media": [],
+   "links": [
+    "https://www.anthropic.com/research/automated-researchers-mitigate-alignment-failures"
+   ]
+  },
+  {
+   "kind": "link",
+   "url": "https://www.anthropic.com/research/automated-researchers-mitigate-alignment-failures",
+   "domain": "anthropic.com",
+   "title": "Automated researchers can reliably mitigate alignment failures",
+   "description": "We had Claude autonomously train models to improve their performance on several public benchmarks that measure 10 categories of alignment failure. For all 10, Claude found fixes that improved the target benchmarks without degrading capabilities.",
+   "image": "https://www-cdn.anthropic.com/images/4zrzovbb/website/733e2d7487a2484228c3f3a643fad3dfd420b815-1200x630.jpg",
+   "site": "anthropic.com"
+  }
+ ],
+ "article": {
+  "title": "بچه‌های شرکت آنتروپیک یه آزمایش خیلی جالب راه انداختن تا ببینن کلود می‌تونه خودش تنهایی بقیه هوش‌های مصنوعی رو سر به راه و ایمن کنه یا نه",
+  "source_title": "New Fellows Research: Can Claude autonomously align other AIs?",
+  "body": [
+   "ببین رفیق، بچه‌های شرکت آنتروپیک یه آزمایش خیلی جالب راه انداختن تا ببینن کلود می‌تونه خودش تنهایی بقیه هوش‌های مصنوعی رو سر به راه و ایمن کنه یا نه. ماجرا از این قراره که به این هوش مصنوعی فقط ۴۸ ساعت وقت و یه دونه پردازنده گرافیکی دادن، اونم قشنگ آستین بالا زده، تحقیق کرده، روش‌های تازه داده و مدل‌های کوچیک‌تر رو خودش تنهایی آموزش داده و تست کرده. جالب اینجاست که نتیجه کار به شدت تمیز و غافلگیرکننده دراومده و نشون داده هوش مصنوعی خودش به تنهایی از پس اصلاح خطاهای ایمنی مدل‌های دیگه برمیاد."
+  ],
+  "why": "نشون می‌ده برای امن‌تر کردن و هدایت مدل‌های هوش مصنوعی، دیگه شاید نیازی به کار طاقت‌فرسای انسان‌ها نباشه و خود سیستم‌ها بتونن هوای همدیگه رو داشته باشن.",
+  "tags": [
+   "آنتروپیک"
+  ]
+ },
+ "updated": "2026-10-25T12:28:43+00:00",
+ "gholam_checked": "2026-10-25T12:28:43+00:00"
+}

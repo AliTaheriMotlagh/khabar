@@ -1,0 +1,61 @@
+{
+ "id": 4677,
+ "url": "https://t.me/dlmehr/4677",
+ "date": "2026-08-10T17:31:45+00:00",
+ "text": "https://x.com/anthropicai/status/2086867246073401655?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+ "forwarded_from": null,
+ "digest": false,
+ "hash": "d7094136907d",
+ "media": [],
+ "preview": {
+  "url": "https://x.com/anthropicai/status/2086867246073401655?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+  "site": "X (formerly Twitter)",
+  "title": "Anthropic (@AnthropicAI) on X",
+  "description": "We asked an unreleased research version of Claude to take a stab at the Riemann hypothesis.\nIt didn’t solve it, but it did make strides on a related problem: it increased the lower bound for the fraction of zeros of the Riemann zeta function that satisfy…",
+  "image": "https://cdn4.telesco.pe/file/v9FuiCIIIqeHxF4XC7U_NO2oTpS366q5Ph-mnBIJhsDG1Gc3T37t7m-5sN7br3euCviWirBaagVs7jWxLJ2OSLiacX4Nqy6NjCNxxXBknsmwRc6cJ53skVUkGe_1YoKirVq6-PxOziTPgd1e-wXnCPdtT4sREdvqz_M_ucfL-dGed3u4iIVnmnyFhyBFzxa3aHGbD682EUP33cPUmBse2RkzGNQAZrZmWwJEiDCQPASk3i7GzqVA0YJCUG0xH4SjKRhDyU07tRX02ZHbdlgkyaPxlXnlmRZsOIQHQi2nCPNJXSpVcwfohuCKsfUwIiYQzypy9O9u8Ie6B419riOEoQ.jpg"
+ },
+ "gholam": {
+  "text": "رفیق، بچه‌های شرکت انتروپیک اومدن یه نسخه تحقیقاتی و هنوز منتشرنشده از هوش مصنوعی کلود رو فرستادن سراغ یکی از قولچماق‌ترین معماهای ریاضی دنیا یعنی «حدس ریمان». خدایی نتونست اصل قضیه رو به‌کل حل کنه، اما رو یه مسئله مرتبط باهاش یه کارستان واقعی کرد و کران پایین درصد صفرهای تابع زتای ریمان رو از ۴۱.۶ درصد یهو کشید بالا و رسوند به ۶۷.۲ درصد. درسته‌ که هنوز کل مسئله رو ضربه‌فنی نکرده، ولی این دستاورد نشون میده هوش مصنوعی داره یواش‌یواش وارد عرصه محاسبات فوق‌سنگین ریاضی میشه.\n\nچرا مهمه؟ چون ثابتم می‌کنه هوش مصنوعی داره از یه چت‌بات ساده فاصله می‌گیره و می‌تونه تو پیشبرد مرزهای علم و حل معماهای سخت بشریت پا‌به‌پای دانشمندا جلو بیاد.",
+  "date": "2026-08-10T17:32:01+00:00"
+ },
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/AnthropicAI/status/2086867246073401655",
+   "domain": "x.com",
+   "author": {
+    "name": "Anthropic",
+    "handle": "AnthropicAI",
+    "avatar": "https://pbs.twimg.com/profile_images/1798110641414443008/XP8gyBaY_200x200.jpg"
+   },
+   "text": "We asked an unreleased research version of Claude to take a stab at the Riemann hypothesis.\n\nIt didn’t solve it, but it did make strides on a related problem: it increased the lower bound for the fraction of zeros of the Riemann zeta function that satisfy the hypothesis from 41.6% to 67.2%.\n\nhttps://www.anthropic.com/research/riemann-zeta",
+   "date": 1786382898,
+   "media": [],
+   "links": [
+    "https://www.anthropic.com/research/riemann-zeta"
+   ]
+  },
+  {
+   "kind": "link",
+   "url": "https://www.anthropic.com/research/riemann-zeta",
+   "domain": "anthropic.com",
+   "title": "Claude has improved on a longstanding lower bound for the fraction of zeros of the Riemann zeta function that satisfy the Riemann hypothesis",
+   "description": "An unreleased Claude model improved the lower bound for the fraction of zeroes of the Riemann zeta function that satisfy the hypothesis, raising it from 41.6% to 67.2%.",
+   "image": "https://www-cdn.anthropic.com/images/4zrzovbb/website/56f622a6fd35ed34364bbe0c5a8b0168e6b6d104-1200x630.jpg",
+   "site": "anthropic.com"
+  }
+ ],
+ "article": {
+  "title": "بچه‌های شرکت انتروپیک اومدن یه نسخه تحقیقاتی و هنوز منتشرنشده از هوش مصنوعی کلود رو فرستادن سراغ یکی از قولچماق‌ترین معماهای ریاضی دنیا یعنی «حدس ریمان»",
+  "source_title": "We asked an unreleased research version of Claude to take a stab at the Riemann hypothesis.",
+  "body": [
+   "رفیق، بچه‌های شرکت انتروپیک اومدن یه نسخه تحقیقاتی و هنوز منتشرنشده از هوش مصنوعی کلود رو فرستادن سراغ یکی از قولچماق‌ترین معماهای ریاضی دنیا یعنی «حدس ریمان». خدایی نتونست اصل قضیه رو به‌کل حل کنه، اما رو یه مسئله مرتبط باهاش یه کارستان واقعی کرد و کران پایین درصد صفرهای تابع زتای ریمان رو از ۴۱.۶ درصد یهو کشید بالا و رسوند به ۶۷.۲ درصد. درسته‌ که هنوز کل مسئله رو ضربه‌فنی نکرده، ولی این دستاورد نشون میده هوش مصنوعی داره یواش‌یواش وارد عرصه محاسبات فوق‌سنگین ریاضی میشه."
+  ],
+  "why": "چون ثابتم می‌کنه هوش مصنوعی داره از یه چت‌بات ساده فاصله می‌گیره و می‌تونه تو پیشبرد مرزهای علم و حل معماهای سخت بشریت پا‌به‌پای دانشمندا جلو بیاد.",
+  "tags": [
+   "آنتروپیک"
+  ]
+ },
+ "updated": "2026-10-25T12:30:35+00:00",
+ "gholam_checked": "2026-10-25T12:30:35+00:00"
+}

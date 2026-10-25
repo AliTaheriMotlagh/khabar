@@ -1,0 +1,59 @@
+{
+ "id": 5075,
+ "url": "https://t.me/dlmehr/5075",
+ "date": "2026-09-01T17:44:13+00:00",
+ "text": "https://fxtwitter.com/finkd/status/2094836602681938385?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+ "forwarded_from": null,
+ "digest": false,
+ "hash": "22233c6e1b89",
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/finkd/status/2094836602681938385?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+  "site": "🧵 Thread • FxTwitter",
+  "title": "Mark Zuckerberg (@finkd)",
+  "description": "Muse Voice Transcribe is MSL's first real-time audio perception model -- rolling out today. SOTA in streaming speech-to-text, it handles speaker diarization, and endpointing natively in a single model.",
+  "image": null
+ },
+ "gholam": {
+  "text": "ببین رفیق، مارک زاکربرگ باز دست به کار شده و از مدل جدیدی به اسم Muse Voice Transcribe رونمایی کرده که اولین هوش مصنوعی درک صوتی درلحظه و ریل‌تایم از سمت تیم MSL به حساب میاد. این مدل توی تبدیل استریم و زنده گفتار به متن واقعاً سنگ تموم گذاشته و آخرت کیفیت و دقته. حرکت خفنش هم اینه که به جای چندتا برنامه جداگونه، هم تفکیک دقیق گوینده‌ها و هم تشخیص سکوت و پایان صحبت رو به شکل کاملاً یکپارچه و سرخود توی دلِ همین یه دونه مدل انجام می‌ده.\n\nچرا مهمه؟ اهمیتش اینه که پیاده‌سازی متن و تشخیص کی‌به‌کی جلسات صوتی رو بدون معطلی و با مصرف منابع خیلی کمتر، برای دستیارهای هوشمند و اپلیکیشن‌ها به شدت سریع و بی‌دردسر می‌کنه.",
+  "date": "2026-09-01T17:44:34+00:00"
+ },
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/finkd/status/2094836602681938385",
+   "domain": "x.com",
+   "author": {
+    "name": "Mark Zuckerberg",
+    "handle": "finkd",
+    "avatar": "https://pbs.twimg.com/profile_images/77846223/profile_200x200.jpg"
+   },
+   "text": "Muse Voice Transcribe is MSL's first real-time audio perception model -- rolling out today. SOTA in streaming speech-to-text, it handles speaker diarization, and endpointing natively in a single model.",
+   "date": 1788282940,
+   "media": [
+    {
+     "type": "video",
+     "src": "https://video.twimg.com/amplify_video/2094836345256448000/vid/avc1/1486x720/tGSoU4hL-oy03LI5.mp4?tag=29",
+     "poster": "https://pbs.twimg.com/amplify_video_thumb/2094836345256448000/img/HsJs1IpcZcoPfZWU.jpg",
+     "ratio": 0.4844,
+     "duration": 183.033,
+     "gif": false
+    }
+   ],
+   "links": []
+  }
+ ],
+ "article": {
+  "title": "مارک زاکربرگ باز دست به کار شده و از مدل جدیدی به اسم Muse Voice Transcribe رونمایی کرده که اولین هوش مصنوعی درک صوتی درلحظه و ریل‌تایم از سمت تیم MSL به حساب میاد",
+  "source_title": "Muse Voice Transcribe is MSL's first real-time audio perception model -- rolling out today. SOTA in streaming speech-to-text, it handles…",
+  "body": [
+   "ببین رفیق، مارک زاکربرگ باز دست به کار شده و از مدل جدیدی به اسم Muse Voice Transcribe رونمایی کرده که اولین هوش مصنوعی درک صوتی درلحظه و ریل‌تایم از سمت تیم MSL به حساب میاد. این مدل توی تبدیل استریم و زنده گفتار به متن واقعاً سنگ تموم گذاشته و آخرت کیفیت و دقته. حرکت خفنش هم اینه که به جای چندتا برنامه جداگونه، هم تفکیک دقیق گوینده‌ها و هم تشخیص سکوت و پایان صحبت رو به شکل کاملاً یکپارچه و سرخود توی دلِ همین یه دونه مدل انجام می‌ده."
+  ],
+  "why": "اهمیتش اینه که پیاده‌سازی متن و تشخیص کی‌به‌کی جلسات صوتی رو بدون معطلی و با مصرف منابع خیلی کمتر، برای دستیارهای هوشمند و اپلیکیشن‌ها به شدت سریع و بی‌دردسر می‌کنه.",
+  "tags": [
+   "متا"
+  ]
+ },
+ "updated": "2026-10-25T12:28:20+00:00",
+ "gholam_checked": "2026-10-25T12:28:20+00:00"
+}

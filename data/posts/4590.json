@@ -1,0 +1,67 @@
+{
+ "id": 4590,
+ "url": "https://t.me/dlmehr/4590",
+ "date": "2026-08-05T04:30:55+00:00",
+ "text": "https://fxtwitter.com/daphnekoller/status/2084497536434237904?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+ "forwarded_from": null,
+ "digest": false,
+ "hash": "7b2373ef1ac7",
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/daphnekoller/status/2084497536434237904?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+  "site": "FxTwitter",
+  "title": "Daphne Koller (@DaphneKoller)",
+  "description": "Only about a quarter of human diseases have an approved therapy. By some estimates it's a few percent. Most of those treatments slow a disease rather than stop it.\nClosing that gap is what the AI-cures-everything story promises. Build a system smart enough…",
+  "image": "https://cdn4.telesco.pe/file/XHOuSLC8RYzC5gUZeCzoKKjL8J-ONjK6-_EvyRTINuQ1ttZ6mRQx-Eu0Rzb1EQsqPk7neiTFHMCTS2veFyKElDtnN30etUBRVoXmrrSHpcCFeCqLq3mXTZDWL_2SYzZ1eGtsrPvunSmt-tLrnm6nZdxuKH1d_qp21fTONVe4CX7EAR6CUf5RwPkC3RtDasxrmrUH_l_bil10A_VyGSVUBtVF8PlFow5uknfaU44bScfcH35ZHGK0gUZCD1GmTWAyI5yhMDeI2IyiNGU604ZZGlNFY-DeNuztMz8cbGMLBLW8Npsv61Bg4U6OBSRH1yJResrp0IPc0QPgawMRW5siVA.jpg"
+ },
+ "gholam": {
+  "text": "رفیق، دافنه کولر بنیان‌گذار شرکت insitro دست گذاشته رو یه حقیقت تلخ و می‌گه هوش مصنوعی عصای جادویی داروسازی نیست و نباید جوگیر شد. حرف حسابش اینه که بالای ۹۰ درصد داروهای جدید تو آزمایش‌های بالینی شکست می‌خورن، چون ما کلیدهای قشنگی می‌سازیم اما قفل‌های بیولوژی بدن رو اشتباهی انتخاب می‌کنیم؛ طوری که تعداد اهداف دارویی جدید از ۱۰۰ تا در سال ۲۰۱۵ به ۳۰ تا در ۲۰۲۴ افت کرده. برای همین شرکت اون با غول‌هایی مثل گیلیاد و ایلی ریلی همکاری می‌کنه تا با ترکیب داده‌های واقعی آزمایشگاهی و هوش مصنوعی علت ریشه‌ای بیماری‌ها رو پیدا کنه و حالا هم یه سلسله مقاله به اسم Deep Phenotype راه انداخته تا واقعیت‌های این مسیر رو روشن کنه.\n\nاهمیتش اینه که بهمون یادآوری می‌کنه هوش مصنوعی بدون داده‌های واقعی زیست‌شناسی معجزه نمی‌کنه و مسیر واقعی درمان بیماری‌ها خیلی پیچیده‌تر از مدل‌سازی‌های تحلیلیه.",
+  "date": "2026-08-05T04:31:14+00:00"
+ },
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/DaphneKoller/status/2084497536434237904",
+   "domain": "x.com",
+   "author": {
+    "name": "Daphne Koller",
+    "handle": "DaphneKoller",
+    "avatar": "https://pbs.twimg.com/profile_images/1263913791919542272/rUxopCoT_200x200.jpg"
+   },
+   "text": "Only about a quarter of human diseases have an approved therapy. By some estimates it's a few percent. Most of those treatments slow a disease rather than stop it.\n\nClosing that gap is what the AI-cures-everything story promises. Build a system smart enough and the cures hidden in what we already know will fall out. I have worked at the intersection of machine learning and biology for three decades, and I believe #AI will eventually transform human health. The capabilities arriving now are extraordinary. But the promise rests on an assumption that is simply false: that we already understand human biology well enough for a clever enough reasoner to find the answers in it. We don't.\n\nMore than 90% of drugs entering clinical trials fail, a number that has barely moved in decades. In the large majority of those failures the molecule was engineered just fine. The mechanism it targeted was wrong. We are doing a pretty good job at manufacturing keys, but they are generally for the wrong locks. And because nobody wants to fail in the clinic, the industry has retreated to the locks it already trusts: 38 targets now have more than 50 programs against each of them, while the number of novel targets advanced per year fell from roughly 100 in 2015 to about 30 in 2024.\n\nAI will not reason its way past this. Biology wasn't engineered. It is the product of billions of years of messy, stochastic evolution, and the variation that produced is too vast and too idiosyncratic to work out in the abstract. You have to measure it. Aimed at a biology this thinly sampled, AI will mostly help us generate failures faster.\n\nI founded @insitro because getting to the right locks requires a different kind of system. We generate multimodal human and cellular data at scale, use machine learning to find causal drivers of disease, and test those hypotheses experimentally. Virtual Human™ is built for causal discovery; TherML™ turns what it finds into the right therapeutic intervention. It is working: first-in-class programs internally and with partners, three #ALS targets that Virtual Human™ identified and @bmsnews nominated, and additional collaborations with @EliLillyandCo and @GileadSciences .\n\nToday we are launching Deep Phenotype: Scaled Biology, Deep Causality. Issue one is \"Drug Discovery Has No Magic Wands,\" the first half of a two-part essay on the magical thinking currently running through our field and what I think it will actually take. After that you will hear from insitro's own scientists and engineers, people who work across computation and experiment because the problem requires both.\n\nGetting this right is hard, and we do not have all of it worked out. I hope you will follow along and think it through with us.\n\nhttp://DeepPhenotype.Substack.com",
+   "date": 1785817915,
+   "media": [
+    {
+     "type": "image",
+     "src": "https://pbs.twimg.com/media/HO2fcl3acAA19uh.png?name=orig",
+     "ratio": 1.0
+    }
+   ],
+   "links": [
+    "http://DeepPhenotype.Substack.com"
+   ]
+  },
+  {
+   "kind": "link",
+   "url": "https://deepphenotype.substack.com/",
+   "domain": "deepphenotype.substack.com",
+   "title": "Deep Phenotype, a Substack by insitro  | Substack",
+   "description": "Scaled biology, deep causality. Click to read Deep Phenotype, a Substack by insitro, by Deep Phenotype, by insitro, a Substack publication with thousands of subscribers.",
+   "image": "https://substackcdn.com/image/fetch/$s_!hLwZ!,w_400,h_400,c_fill,f_auto,q_auto:good,fl_progressive:steep,g_auto/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Ffbfdd4f5-3702-4bde-b747-b0d46dbe8cc8_512x512.png",
+   "site": "deepphenotype.substack.com"
+  }
+ ],
+ "article": {
+  "title": "دافنه کولر بنیان‌گذار شرکت insitro دست گذاشته رو یه حقیقت تلخ و می‌گه هوش مصنوعی عصای جادویی داروسازی نیست و نباید جوگیر شد",
+  "source_title": "Only about a quarter of human diseases have an approved therapy. By some estimates it's a few percent. Most of those treatments slow a…",
+  "body": [
+   "رفیق، دافنه کولر بنیان‌گذار شرکت insitro دست گذاشته رو یه حقیقت تلخ و می‌گه هوش مصنوعی عصای جادویی داروسازی نیست و نباید جوگیر شد. حرف حسابش اینه که بالای ۹۰ درصد داروهای جدید تو آزمایش‌های بالینی شکست می‌خورن، چون ما کلیدهای قشنگی می‌سازیم اما قفل‌های بیولوژی بدن رو اشتباهی انتخاب می‌کنیم؛ طوری که تعداد اهداف دارویی جدید از ۱۰۰ تا در سال ۲۰۱۵ به ۳۰ تا در ۲۰۲۴ افت کرده. برای همین شرکت اون با غول‌هایی مثل گیلیاد و ایلی ریلی همکاری می‌کنه تا با ترکیب داده‌های واقعی آزمایشگاهی و هوش مصنوعی علت ریشه‌ای بیماری‌ها رو پیدا کنه و حالا هم یه سلسله مقاله به اسم Deep Phenotype راه انداخته تا واقعیت‌های این مسیر رو روشن کنه."
+  ],
+  "why": "بهمون یادآوری می‌کنه هوش مصنوعی بدون داده‌های واقعی زیست‌شناسی معجزه نمی‌کنه و مسیر واقعی درمان بیماری‌ها خیلی پیچیده‌تر از مدل‌سازی‌های تحلیلیه.",
+  "tags": [
+   "سلامت"
+  ]
+ },
+ "updated": "2026-10-25T12:30:58+00:00",
+ "gholam_checked": "2026-10-25T12:30:58+00:00"
+}

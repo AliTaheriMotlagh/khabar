@@ -1,0 +1,67 @@
+{
+ "id": 5623,
+ "url": "https://t.me/dlmehr/5623",
+ "date": "2026-10-04T15:21:19+00:00",
+ "text": "https://fxtwitter.com/miaai_lab/status/2105937377910808756?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+ "forwarded_from": null,
+ "digest": false,
+ "hash": "9ba1c28a82a7",
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/miaai_lab/status/2105937377910808756?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+  "site": "🧵 Thread • FxTwitter",
+  "title": "Mia (@MiaAI_lab)",
+  "description": "Cloudflare's Clef beat Jev in just two weeks\nHow: \"frozen\" Qwen does one prefill pass, a tiny schema head scores every answer option in parallel, with no text generated at all.\nThat's why it's 4x faster than Jev at 2x the accuracy on some benchmarks.\n…",
+  "image": "https://cdn4.telesco.pe/file/X32EsT3PgzD25Yq0x_55cvpC-JJJaPyn6khsKVneksJZA5YxwPOsk78vAlNaBB4eAqT7dLdPlhDP9l6cuaQrCZ8Hbk-u5wlgtvCcGdHiufq9oIHM2rqp62fyqxiZsVP8oEutNO5sS044QqaH3PCxSwz1lcwKE6yqi0vmgCT4H26qYXxro9rlQMeh_yjtId94ORzWFgayb4FKoALgGrBEbr_1BpBRfLa37yNo-xQArT4y-1SzgjCs4XYt1Rg_qGHis9EsCvpXDTMmOVBTkjz0KGKe4kaSwCzCWENkSv_0NsW9sNizNJFzFh4X7EeYQjbH3vt_4p8Xy5kCgAt6c1iapQ.jpg"
+ },
+ "gholam": {
+  "text": "رفیق، بچه‌های کلودفلر با یه مدل تر و تمیز به اسم Clef اومدن و توی دو هفته، مدل معروف Jev رو قشنگ جا گذاشتن. ترفند کارشون این بوده که یه نسخه دست‌نخورده از مدل Qwen رو گذاشتن وسط و بدون اینکه متنی تولید کنه، گزینه‌ها رو با یه ساختار سبک و موازی نمره‌دهی می‌کنه. همین حرکت زیرکانه باعث شده این ابزار ۴ برابر سریع‌تر کار کنه و توی یه سری بنچمارک‌ها دقتش ۲ برابر بهتر از آب دربیاد. از همه مشتی‌تر این‌که پروژه رو کاملاً متن‌باز روی هاگینگ‌فیس منتشر کردن تا بقیه هم بتونن ازش استفاده کنن.\n\nچرا مهمه؟ اهمیتش اینه که نشون داد همیشه نباید منتظر غول‌های پردازشی موند، بلکه با مهندسی جمع‌وجور و حذف تولید متن اضافه میشه هم سرعت و هم دقت هوش مصنوعی رو نجومی برد بالا.",
+  "date": "2026-10-04T15:21:33+00:00"
+ },
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/MiaAI_lab/status/2105937377910808756",
+   "domain": "x.com",
+   "author": {
+    "name": "Mia",
+    "handle": "MiaAI_lab",
+    "avatar": "https://pbs.twimg.com/profile_images/2063908041691484160/5XsJBn7I_200x200.jpg"
+   },
+   "text": "Cloudflare's Clef beat Jev in just two weeks\n\nHow: \"frozen\" Qwen does one prefill pass, a tiny schema head scores every answer option in parallel, with no text generated at all. \n\nThat's why it's 4x faster than Jev at 2x the accuracy on some benchmarks.\n\nAnd it's open source!\n\nLink to HF:\nhttps://huggingface.co/Cloudflare/clef",
+   "date": 1790929571,
+   "media": [
+    {
+     "type": "image",
+     "src": "https://pbs.twimg.com/media/HTnGe4jXEAE2F6y.jpg?name=orig",
+     "ratio": 1.0628
+    }
+   ],
+   "links": [
+    "https://huggingface.co/Cloudflare/clef"
+   ]
+  },
+  {
+   "kind": "link",
+   "url": "https://huggingface.co/Cloudflare/clef",
+   "domain": "huggingface.co",
+   "title": "Cloudflare/clef · Hugging Face",
+   "description": "We’re on a journey to advance and democratize artificial intelligence through open source and open science.",
+   "image": "https://cdn-thumbnails.huggingface.co/social-thumbnails/models/Cloudflare/clef.png",
+   "site": "huggingface.co"
+  }
+ ],
+ "article": {
+  "title": "بچه‌های کلودفلر با یه مدل تر و تمیز به اسم Clef اومدن و توی دو هفته، مدل معروف Jev رو قشنگ جا گذاشتن",
+  "source_title": "Cloudflare's Clef beat Jev in just two weeks",
+  "body": [
+   "رفیق، بچه‌های کلودفلر با یه مدل تر و تمیز به اسم Clef اومدن و توی دو هفته، مدل معروف Jev رو قشنگ جا گذاشتن. ترفند کارشون این بوده که یه نسخه دست‌نخورده از مدل Qwen رو گذاشتن وسط و بدون اینکه متنی تولید کنه، گزینه‌ها رو با یه ساختار سبک و موازی نمره‌دهی می‌کنه. همین حرکت زیرکانه باعث شده این ابزار ۴ برابر سریع‌تر کار کنه و توی یه سری بنچمارک‌ها دقتش ۲ برابر بهتر از آب دربیاد. از همه مشتی‌تر این‌که پروژه رو کاملاً متن‌باز روی هاگینگ‌فیس منتشر کردن تا بقیه هم بتونن ازش استفاده کنن."
+  ],
+  "why": "اهمیتش اینه که نشون داد همیشه نباید منتظر غول‌های پردازشی موند، بلکه با مهندسی جمع‌وجور و حذف تولید متن اضافه میشه هم سرعت و هم دقت هوش مصنوعی رو نجومی برد بالا.",
+  "tags": [
+   "چین"
+  ]
+ },
+ "updated": "2026-10-25T12:25:00+00:00",
+ "gholam_checked": "2026-10-25T12:25:00+00:00"
+}

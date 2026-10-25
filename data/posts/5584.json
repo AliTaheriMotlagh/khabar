@@ -1,0 +1,54 @@
+{
+ "id": 5584,
+ "url": "https://t.me/dlmehr/5584",
+ "date": "2026-10-01T19:12:26+00:00",
+ "text": "https://fxtwitter.com/perplexitydevs/status/2105725598882832414?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+ "forwarded_from": null,
+ "digest": false,
+ "hash": "411f4195f06b",
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/perplexitydevs/status/2105725598882832414?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+  "site": "🧵 Thread • FxTwitter",
+  "title": "Perplexity Developers (@perplexitydevs)",
+  "description": "Introducing the Perplexity Decisions API.\nIt's powered by pplx-decider-v1-27b, our multimodal decision model trained to output a probability distribution over a fixed set of answers instead of text.\nIt costs $0.04/million input tokens and scores 85.71%…",
+  "image": "https://cdn4.telesco.pe/file/MBQpicCRA62XmYBngKLbVTdCDuhqpcshTcscAp3Zcfzp53I7nguOP8jZGDDupKelj6iRrL-5f3kGFveaI2ovsRSobCrwoEx_NTawK8vUUhoypIxxItXL8ASgWVAdtsZyYG3SOogOESnOpgg261ax1WjfGqdjoW-KUIhiHojK2RtKCK8siba3vBHIneI8pR_9eCVkxCLRp5bE9tVsmDq7RwfUOi4IbuaxxdSChzmbjkRWWo-rZ0aGq7-yVC2vY-I3guoAwRBcNqIl2oY3gCw2WuNORWD0SioGo9XPzvqbRCah58jMWyK9O-IILb67NjSpQDhwjHBfZFBVnXIU4kzetA.jpg"
+ },
+ "gholam": {
+  "text": "ببین رفیق، بچه‌های پرپلکسیتی از یه ای‌پی‌آی جدید به اسم Decisions رونمایی کردن که خوراک تصمیم‌گیری‌های دقیق و هوشمنده. موتور پشت این ماجرا یه مدل چندوجهی ۲۷ میلیارد پارامتری به اسم pplx-decider-v1-27b هستش که به جای تولید متن‌های طولانی، صاف میره سر اصل مطلب و بین یه سری جواب مشخص، توزیع احتمال دقیق بهت میده. این مدل تو بنچمارک‌ها نمره خفن ۸۵.۷۱ درصد رو ثبت کرده و کارش حرف نداره. از نظر خرج و مخارج هم بدجوری باصرفه‌ست و بابت هر یک میلیون توکن ورودی فقط ۴ سنت پیاده میشی.\n\nاهمیتش اینه که توسعه‌دهنده‌ها می‌تونن با کمترین هزینه و خیال راحت، سیستم‌های رده‌بندی و تصمیم‌گیری اتوماتیک بسازن بدون اینکه درگیر خطاهای متنی هوش مصنوعی بشن.",
+  "date": "2026-10-01T19:12:40+00:00"
+ },
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/perplexitydevs/status/2105725598882832414",
+   "domain": "x.com",
+   "author": {
+    "name": "Perplexity Developers",
+    "handle": "perplexitydevs",
+    "avatar": "https://pbs.twimg.com/profile_images/2095597743968563200/6hsAoLuJ_200x200.png"
+   },
+   "text": "Introducing the Perplexity Decisions API.\n\nIt's powered by pplx-decider-v1-27b, our multimodal decision model trained to output a probability distribution over a fixed set of answers instead of text.\n\nIt costs $0.04/million input tokens and scores 85.71% across benchmarks.",
+   "date": 1790879079,
+   "media": [
+    {
+     "type": "image",
+     "src": "https://pbs.twimg.com/media/HTkKRbobcAAGKSd.jpg?name=orig",
+     "ratio": 1.25
+    }
+   ],
+   "links": []
+  }
+ ],
+ "article": {
+  "title": "بچه‌های پرپلکسیتی از یه ای‌پی‌آی جدید به اسم Decisions رونمایی کردن که خوراک تصمیم‌گیری‌های دقیق و هوشمنده",
+  "source_title": "Introducing the Perplexity Decisions API.",
+  "body": [
+   "ببین رفیق، بچه‌های پرپلکسیتی از یه ای‌پی‌آی جدید به اسم Decisions رونمایی کردن که خوراک تصمیم‌گیری‌های دقیق و هوشمنده. موتور پشت این ماجرا یه مدل چندوجهی ۲۷ میلیارد پارامتری به اسم pplx-decider-v1-27b هستش که به جای تولید متن‌های طولانی، صاف میره سر اصل مطلب و بین یه سری جواب مشخص، توزیع احتمال دقیق بهت میده. این مدل تو بنچمارک‌ها نمره خفن ۸۵.۷۱ درصد رو ثبت کرده و کارش حرف نداره. از نظر خرج و مخارج هم بدجوری باصرفه‌ست و بابت هر یک میلیون توکن ورودی فقط ۴ سنت پیاده میشی."
+  ],
+  "why": "توسعه‌دهنده‌ها می‌تونن با کمترین هزینه و خیال راحت، سیستم‌های رده‌بندی و تصمیم‌گیری اتوماتیک بسازن بدون اینکه درگیر خطاهای متنی هوش مصنوعی بشن.",
+  "tags": []
+ },
+ "updated": "2026-10-25T12:25:14+00:00",
+ "gholam_checked": "2026-10-25T12:25:14+00:00"
+}

@@ -1,0 +1,67 @@
+{
+ "id": 5726,
+ "url": "https://t.me/dlmehr/5726",
+ "date": "2026-10-07T19:26:34+00:00",
+ "text": "https://fxtwitter.com/lugaricano/status/2107853818784272623?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+ "forwarded_from": null,
+ "digest": false,
+ "hash": "ff921d38afb3",
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/lugaricano/status/2107853818784272623?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+  "site": "FxTwitter",
+  "title": "Luis Garicano 🇪🇺 🇺🇦 (@lugaricano)",
+  "description": "Great observation by @fchollet . Frontier labs are almost doing no pretraining-- probably because pretraining is bottlenecked by data- the world is running out of data. So they focus on reinforcement learning, and there are many domains that may be insufficiently…",
+  "image": "https://cdn4.telesco.pe/file/XwcVtcju5J6xwDJx5RMrIU_sW_trsVcecyHezrh0MN0s9oc1M_o0Jk7zl6aPdsWBFSisTtsfWxLLC9QGrycfsKHKKg4v1fDWX0LQAQkEtVXacY8URFs8ylo-i9kfqxJJ5Bvv2pf4gQXm8cJ8mjPyMCYbTIFIFcKPrMQPbPVHsZ4JSIIrzt9BbP9VF3eIahEYUMOJDq7btL4FJDis4dxo1WBuTZHJVALD--UmJLOty5WH3OEYjKa6rGEymZmjYDfGmF_1iojTVOX-5pKBFE3q1aFInOxyPnuBWMLsG6O4vXG2ydklJdSCt8o1kbeDRtl5YatsfYZpkIF6ycnEB3j9uQ.jpg"
+ },
+ "gholam": {
+  "text": "ببین رفیق، غول‌های پیشروی هوش مصنوعی ظاهراً خورده‌ن به پست کمبود دیتا و چون داده‌ی دست‌اول انسانی ته کشیده، دیگه دست از پیش‌آموزش سنگین یا همون پری‌ترینینگ شستن. فرانسوا شوله و اهل فن دارن میگن که آزمایشگاه‌ها کل زورشون رو گذاشتن روی یادگیری تقویتی، اما این کلک فقط توی حوزه‌هایی مثل ریاضی و برنامه‌نویسی جواب میده که خروجی کار تر و تمیز و قابل راستی‌آزماییه. ته ماجرا اینه که توی مباحث پیچیده‌تر و شلخته‌تر دنیا که نمیشه با یه فرمول ساده درستی جواب رو سنجید، پیشرفت مدل‌ها بدجوری به دست‌انداز خورده و داره متوقف میشه.\n\nاهمیتش اینه که نشون میده رسیدن به هوش جامع مصنوعی (AGI) به این سادگیا نیست و توانایی این ابزارها احتمالاً فقط توی کد زدن و حل معادلات جهش می‌کنه، نه توی فهم کامل دنیای واقعی.",
+  "date": "2026-10-07T19:26:52+00:00"
+ },
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/lugaricano/status/2107853818784272623",
+   "domain": "x.com",
+   "author": {
+    "name": "Luis Garicano 🇪🇺🇺🇦",
+    "handle": "lugaricano",
+    "avatar": "https://pbs.twimg.com/profile_images/1088718721785434112/TCQN0rTD_200x200.jpg"
+   },
+   "text": "Great observation by @fchollet . Frontier labs are almost doing no pretraining-- probably because pretraining is bottlenecked by data- the world is running out of data. So they focus on reinforcement learning, and there are many domains that may be insufficiently data abundant and too messy/unverifiable for RL.",
+   "date": 1791386487,
+   "media": [
+    {
+     "type": "image",
+     "src": "https://pbs.twimg.com/media/HUCZRaOWsAAcMP0.png?name=orig",
+     "ratio": 0.9796
+    }
+   ],
+   "links": [],
+   "quote": {
+    "author": {
+     "name": "François Chollet",
+     "handle": "fchollet",
+     "avatar": "https://pbs.twimg.com/profile_images/2006806326140350470/Kd5oZv-f_200x200.jpg"
+    },
+    "text": "What if the jagged frontier is mainly math + code (which you can push arbitrarily far with RLVR), and everything else starts to plateau because it is still bottlenecked by human generated data? \n\nModel performance in non-verifiable areas has kept improving steadily, albeit much slower than for math and code. But is that steady improvement a side effect of a higher G (itself driven by RLVR), or only a function of the amount of new human data getting injected into training (which is still continually happening on a massive scale)?\n\nA lot of things depend on the answer to this question",
+    "date": 1791331986,
+    "media": [],
+    "links": []
+   }
+  }
+ ],
+ "article": {
+  "title": "غول‌های پیشروی هوش مصنوعی ظاهراً خورده‌ن به پست کمبود دیتا و چون داده‌ی دست‌اول انسانی ته کشیده، دیگه دست از پیش‌آموزش سنگین یا همون پری‌ترینینگ شستن",
+  "source_title": "Great observation by @fchollet . Frontier labs are almost doing no pretraining-- probably because pretraining is bottlenecked by data- the…",
+  "body": [
+   "ببین رفیق، غول‌های پیشروی هوش مصنوعی ظاهراً خورده‌ن به پست کمبود دیتا و چون داده‌ی دست‌اول انسانی ته کشیده، دیگه دست از پیش‌آموزش سنگین یا همون پری‌ترینینگ شستن. فرانسوا شوله و اهل فن دارن میگن که آزمایشگاه‌ها کل زورشون رو گذاشتن روی یادگیری تقویتی، اما این کلک فقط توی حوزه‌هایی مثل ریاضی و برنامه‌نویسی جواب میده که خروجی کار تر و تمیز و قابل راستی‌آزماییه. ته ماجرا اینه که توی مباحث پیچیده‌تر و شلخته‌تر دنیا که نمیشه با یه فرمول ساده درستی جواب رو سنجید، پیشرفت مدل‌ها بدجوری به دست‌انداز خورده و داره متوقف میشه."
+  ],
+  "why": "نشون میده رسیدن به هوش جامع مصنوعی (AGI) به این سادگیا نیست و توانایی این ابزارها احتمالاً فقط توی کد زدن و حل معادلات جهش می‌کنه، نه توی فهم کامل دنیای واقعی.",
+  "tags": [
+   "کدنویسی"
+  ]
+ },
+ "updated": "2026-10-25T12:24:21+00:00",
+ "gholam_checked": "2026-10-25T12:24:21+00:00"
+}

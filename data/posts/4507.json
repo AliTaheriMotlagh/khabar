@@ -1,0 +1,54 @@
+{
+ "id": 4507,
+ "url": "https://t.me/dlmehr/4507",
+ "date": "2026-07-31T17:29:31+00:00",
+ "text": "https://fxtwitter.com/technmak/status/2083136678668173380?s=46",
+ "forwarded_from": "Hossein Zakariaee",
+ "digest": false,
+ "hash": "f550712f874e",
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/technmak/status/2083136678668173380?s=46",
+  "site": "🧵 Thread • FxTwitter",
+  "title": "Tech with Mak (@techNmak)",
+  "description": "\"Do not learn to code\" is the worst career advice of the decade.\nPeople are telling college students to skip Computer Science because AI will just automate it all. Andrew Ng just killed this myth at Stanford with a brilliant analogy.\nWhen he tried to generate…",
+  "image": "https://cdn4.telesco.pe/file/a8gLi7U7pGgrgUjneXcNsxjQTYeq3pWMJ42iWLz-dM2uao5Y4Ezrv3KlVw49pVnrt624kNLOkado3kQ_iXGE5FD3_AmxF4_XWbI7cxHtKT2WL6hvcKcPoJFy1__5MoySZR_oSPa-CK6v2ViqstWTg12OmsP4UCj_gJtvgVOBNpMAWn-W94_IVXC73mOOfOG4Tsks-CI9_ph8Re29EoQOfSZq4Di6BvBRyN-mlhNRlEQTHK9QIngmwNKrGufbG9frjbXqf3B-kmHwFHp48YKclZ6WqiNTqlcwVD9fKsb-BTc12sBPPM8nEDCHFVXFDqXI2IGTPKCMefw-1DfvZgrTgg.jpg"
+ },
+ "gholam": {
+  "text": "",
+  "date": "2026-07-31T17:33:51+00:00"
+ },
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/techNmak/status/2083136678668173380",
+   "domain": "x.com",
+   "author": {
+    "name": "Tech with Mak",
+    "handle": "techNmak",
+    "avatar": "https://pbs.twimg.com/profile_images/1905858162839961600/K6Gfh6cZ_200x200.jpg"
+   },
+   "text": "\"Do not learn to code\" is the worst career advice of the decade.\n\nPeople are telling college students to skip Computer Science because AI will just automate it all. Andrew Ng just killed this myth at Stanford with a brilliant analogy.\n\nWhen he tried to generate images with Midjourney, he typed: \"make pretty pictures of robots\" and got garbage. \nHis collaborator, however, understood Art History. He knew the exact vocabulary of lighting, genre, and palette. He spoke the \"language of art,\" and generated masterpieces.\n\nAndrew Ng is seeing the exact same thing happen in software engineering right now.\n\nAI didn't replace the need to understand Computer Science. It made Computer Science the required vocabulary to control the AI.\n\nIf you don't understand how computers actually work, you are just typing \"make a pretty app\" into Cursor and shipping fragile, unscalable logic.\n\nHere is Andrew Ng's exact hiring hierarchy today:\n \nLevel 1: 10 years of experience, but codes by hand (He won't hire them). \nLevel 2: Fresh college grad, but highly fluent in AI-assisted coding (He hires them over the 10-year veteran). \nLevel 3 (God Tier): Deeply understands CS fundamentals AND uses AI-assisted coding.\n\nWhen humanity went from punch cards to keyboards, coding got easier, and more people coded. We are at that exact inflection point again.\n\nAI doesn't replace fundamentals. It multiplies them.",
+   "date": 1785493461,
+   "media": [
+    {
+     "type": "image",
+     "src": "https://pbs.twimg.com/media/HOjJwVEaIAAWTmd.jpg?name=orig",
+     "ratio": 0.6298
+    }
+   ],
+   "links": []
+  }
+ ],
+ "article": {
+  "title": "\"Do not learn to code\" is the worst career advice of the decade.",
+  "source_title": null,
+  "body": [],
+  "why": null,
+  "tags": [
+   "کدنویسی"
+  ]
+ },
+ "updated": "2026-10-25T12:31:26+00:00",
+ "gholam_checked": "2026-10-25T12:31:26+00:00"
+}

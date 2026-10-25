@@ -2,16 +2,23 @@
  "id": 5975,
  "url": "https://t.me/dlmehr/5975",
  "date": "2026-10-19T18:18:44+00:00",
- "edited": true,
- "views": "194",
  "text": "https://fxtwitter.com/aiatmeta/status/2112245968750145561?s=52&t=F41Qa04r48Mef_j_XjBneQ",
  "forwarded_from": null,
  "digest": false,
  "hash": "63f02bbede6e",
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/aiatmeta/status/2112245968750145561?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+  "site": "FxTwitter",
+  "title": "AI at Meta (@AIatMeta)",
+  "description": "We trained our Muse foundational models, including Muse Wonder, at Prometheus, our gigawatt-scale supercluster in New Albany, Ohio.\nAcross a supercluster with hundreds of thousands of GPUs, even one underperforming host can slow an entire training run. We…",
+  "image": null
+ },
  "gholam": {
   "text": "رفیق، بچه‌های هوش مصنوعی متا اعلام کردن که مدل‌های پایه جدیدشون از جمله Muse Wonder رو توی یه سوپرکلاستر غول‌آسا به اسم «پرومتئوس» در اوهایو آموزش دادن که مقیاس توانش به گیگاوات می‌رسه. نکته خفنش اینجاست که وقتی صدها هزار تا پردازنده گرافیکی هم‌زمان زیر بار می‌رن، لنگ زدن حتی یه دونه سیستم می‌تونه کل فرایند رو فلج کنه، اما اینا طوری زیرساخت رو ضدضربه طراحی کردن که آخ نگفته. کارایی مفیدشون هم حسابی بالاست؛ بالای ۸۵ درصد راندمان تو پیش‌آموزش و بالای ۹۰ درصد تو یادگیری تقویتی ثبت کردن و میانگین فاصله‌ی بین قطعی‌هاشون به حدود ۴۷ هزار ساعت کارکرد کارت گرافیک رسیده.\n\nاهمیتش اینه که رام کردن همچین ابرخوشه‌های عظیمی بدون قطعی و اتلاف وقت، برگ برنده اصلی برای ساخت هوش مصنوعی‌های سنگین نسل بعده.",
   "date": "2026-10-19T18:19:04+00:00"
  },
+ "gholam_checked": "2026-10-24T23:11:42+00:00",
  "links": [
   {
    "kind": "tweet",
@@ -64,14 +71,6 @@
    "text": "- With the recent release of the Muse family of foundational models, we want to take you inside the infrastructure that has made it all possible.\n- The first phase of Prometheus, our gigawatt-scale supercluster, is already complete and we’re working toward scaling it to comprise ~1 million GPUs.\n- Prometheus also features technologies like closed-loop liquid cooling to help it operate efficiently.\nRight now, in New Albany, Ohio, Meta is undertaking its most ambitious AI infrastructure project to date. Prometheus, our gigawatt-scale supercluster, is an advancement in our infrastructure that is training the next generation of foundational models that will bring new AI experiences to billions of people.\nTwo years ago, New Albany was a conventional data center site running web traffic. With advancements in hardware, networking and building design, we reworked this site to be home to training programs for frontier models. We’re building the supercluster in phases. The first phase has already been completed and was used to train our Muse foundational models, including the Muse Wonder models, our new frontier models that deliver state-of-the-art performance on personal and professional agentic tasks.\nLarge training jobs require everything to work optimally to sustain their performance; an issue on a single host can slow down or stop the entire job, lowering its ‘goodput’. By focusing on improving our systems’ stability and reliability we were able to achieve more than 85% goodput for pre-training runs and more than 90% goodput for reinforcement learning (RL) runs of Muse Wonder. During these training runs, we were able to achieve an overall wall-clock mean time between interruptions (MTBI) of ~47k GPU hours. Since then, we have landed further changes across our fleet including firmware fixes to increase MTBI to more than 54K GPU hours, and we are constantly improving it.\nNow, we’re continuing to scale Prometheus with our next frontier models from Meta Superintelligence Labs in mind.\nThe Prometheus supercluster is housed in Meta’s New Albany, Ohio, data center.\nThe Supercluster: Unlocking New AI Capabilities\nToday, Prometheus comprises an array of hundreds of thousands of GPUs across multiple interconnected buildings, including traditional and AI-optimized data center buildings and rapid deployment structures, all tightly interconnected by miles of fiber and functioning as a single machine.\nThis capacity allows us to pursue larger models and longer context windows than were previously practical. At full scale, Prometheus will comprise roughly 1 million distributed GPUs, all functioning in lockstep.\nMultiple Generations of AI Hardware\nPrometheus currently deploys two NVIDIA GPU platforms, with a third (based on NVIDIA’s Vera Rubin NVL72) arriving soon. Each represents a generational leap in performance and efficiency, leveraging our NVL72 rack architecture where 72 GPUs act as a single accelerator within the same network fabric.\nCatalina: NVIDIA GB200\nOur first platform, Catalina, leverages the NVIDIA GB200 NVL72. We deploy the Ariel variant, a two-rack configuration in which 36 GPUs per rack are interconnected via NVLink to form a unified 72-GPU domain. Catalina provides improvements in raw compute and memory capacity compared to Grand Teton H100. It leverages our Open Rack V3 (ORv3) high-power rack (HPR) structure, an open hardware design contributed to the Open Compute Project (OCP).\nThe Ariel variant of GB200 NVL72 pairs each NVIDIA Blackwell GPU with an NVIDIA Grace CPU and 2x NVIDIA ConnectX-7 400G NICs at a 1:1 CPU-to-GPU ratio, letting us deploy 800G of I/O per GPU earlier than the rest of the industry. We chose Ariel because the GB200 NVL72 scaled up nearly every other dimension relative to the NVIDIA H100: FLOPS, HBM bandwidth, scale-up bandwidth, and scale-up domain size, while scale-out bandwidth per GPU would have stayed at 400G. We expected that imbalance to cost performance, so we opted for a configuration that delivers 800G of scale-out per GPU. This also gave us more uniformity of spec as the region expanded over time and 800G scale-out became available.\nThe Catalina GB200 NVL72 features:\n- 72 NVIDIA Blackwell GPUs with 13.4 TB of HBM3e (192 GB per GPU).\n- 720 peak PFLOPS of FP8 training compute (1,440 PFLOPS at FP4).\n- 130 TB/s peak NVLink bandwidth within the domain.\n- 576 TB/s peak aggregate memory bandwidth.\n- ~120 kW total system power across the two-rack pair.\nClemente: NVIDIA GB300 NVL72\nOur second platform, Clemente, moves to the NVIDIA GB300 NVL72 and improves on Catalina at both the GPU and the platform level. GB300 raises HBM capacity per GPU by 1.5x, from 192 GB to 288 GB, and dense FP4 throughput by a similar factor, while roughly doubling attention (softmax) acceleration. At the platform level, scale-out is no longer the constraint it was on the GB200 NVL72: NVIDIA ConnectX-8 SuperNICs deliver 800G per GPU natively, so the capability we deployed early on Ariel becomes the baseline. Tha"
   }
  ],
- "media": [],
- "preview": {
-  "url": "https://fxtwitter.com/aiatmeta/status/2112245968750145561?s=52&t=F41Qa04r48Mef_j_XjBneQ",
-  "site": "FxTwitter",
-  "title": "AI at Meta (@AIatMeta)",
-  "description": "We trained our Muse foundational models, including Muse Wonder, at Prometheus, our gigawatt-scale supercluster in New Albany, Ohio.\nAcross a supercluster with hundreds of thousands of GPUs, even one underperforming host can slow an entire training run. We…",
-  "image": null
- },
  "article": {
   "title": "بچه‌های هوش مصنوعی متا اعلام کردن که مدل‌های پایه جدیدشون از جمله Muse Wonder رو توی یه سوپرکلاستر غول‌آسا به اسم «پرومتئوس» در اوهایو آموزش دادن که مقیاس توانش به گیگاوات می‌رسه",
   "source_title": "We trained our Muse foundational models, including Muse Wonder, at Prometheus, our gigawatt-scale supercluster in New Albany, Ohio.",
@@ -85,6 +84,5 @@
    "متا"
   ]
  },
- "updated": "2026-10-24T23:11:42+00:00",
- "gholam_checked": "2026-10-24T23:11:42+00:00"
+ "updated": "2026-10-25T11:54:08+00:00"
 }

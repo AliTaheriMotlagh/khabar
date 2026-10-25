@@ -1,0 +1,56 @@
+{
+ "id": 4630,
+ "url": "https://t.me/dlmehr/4630",
+ "date": "2026-08-07T03:09:47+00:00",
+ "text": "https://fxtwitter.com/quxiaoyin/status/2085408811104534754?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+ "forwarded_from": null,
+ "digest": false,
+ "hash": "2cc558c47516",
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/quxiaoyin/status/2085408811104534754?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+  "site": "FxTwitter",
+  "title": "Xiaoyin Qu (@quxiaoyin)",
+  "description": "If you left your coding agent alone for more than 1h, don't hit continue. Open a new session.\nSend the exact same message. While you're working, it costs 1x. After coffee, 1.3x. After a call, 1.6x.\nAfter lunch: 13x.\nThe cache holding your session expires…",
+  "image": "https://cdn4.telesco.pe/file/p1hNUk767oHHNNmmvn1bXcO-qYQkcxVhSPGfbH-JJMFBnMnMRebe046F2XVkO0ISybQ3jqIbicQdRxjsTcrAmY6eOHrYaLdVyXffKC10XLQcd222XjRZjiw9pCBJ-Ou970Ld6X4p6WLRE1CcXvEFALp_SJRu6EL7IAEuTIz2mX0UJJ9YcfVhh61_9V-8I8OS6AN4Af6_Y3jWqBHbLb6wyVaR4dHm70SUfyCwa13WojDUFzpIKIqE-E8x16egpHgtkbR5WTTlr-NwtKdmaHjVzy3bT-Nw5jy7jx8e-gwo2eNssGopDgCX4PbrOvzInCgWO9QrEzBHmlfEHNbl9_i6tQ.jpg"
+ },
+ "gholam": {
+  "text": "رفیق، اگه موقع کد زدن با دستیار هوش مصنوعی ولش می‌کنی می‌ری دنبال چای و ناهار، حواستو خوب جمع کن که داری پولتو دور می‌ریزی! ژیائوئین قو با بررسی بیشتر از ۴۶ هزار چرخه کاری فهمیده که کش سیستم دقیقاً سر ۶۰ دقیقه می‌پره و اگه بعد از یک ساعت دکمه ادامه رو بزنی، هزینه‌ت تا ۱۳ برابر بالا میره. در حالی که چت جدید کلاً ۴.۵ برابر میفته، پس راهش اینه قبل رفتن بگی «تا اینجا رو خلاصه کن» و بعداً همون متن رو تو یه چت تازه بگذاری.\n\nاهمیتش اینه که با همین یه ترفند ساده، جلوی خرج‌های سنگین و هدر رفتن اعتبار برنامه‌نویسی با هوش مصنوعی رو می‌گیری.",
+  "date": "2026-08-07T03:10:03+00:00"
+ },
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/quxiaoyin/status/2085408811104534754",
+   "domain": "x.com",
+   "author": {
+    "name": "Xiaoyin Qu",
+    "handle": "quxiaoyin",
+    "avatar": "https://pbs.twimg.com/profile_images/1683592007875436544/P0kykGvV_200x200.jpg"
+   },
+   "text": "If you left your coding agent alone for more than 1h, don't hit continue. Open a new session.\nSend the exact same message. While you're working, it costs 1x. After coffee, 1.3x. After a call, 1.6x.\nAfter lunch: 13x.\n\nThe cache holding your session expires at exactly 60 minutes, and your first message has to rebuild the whole thing from scratch.\n\nA new session costs 4.5x. So before you walk away: \"summarize where we are.\" After lunch, paste it into a fresh window.\n\nMeasured across a month of my own Claude Code — 110 sessions, 46,580 turns.",
+   "date": 1786035180,
+   "media": [
+    {
+     "type": "image",
+     "src": "https://pbs.twimg.com/media/HPAAnKObIAAWMfB.jpg?name=orig",
+     "ratio": 0.5625
+    }
+   ],
+   "links": []
+  }
+ ],
+ "article": {
+  "title": "اگه موقع کد زدن با دستیار هوش مصنوعی ولش می‌کنی می‌ری دنبال چای و ناهار، حواستو خوب جمع کن که داری پولتو دور می‌ریزی",
+  "source_title": "If you left your coding agent alone for more than 1h, don't hit continue. Open a new session.",
+  "body": [
+   "رفیق، اگه موقع کد زدن با دستیار هوش مصنوعی ولش می‌کنی می‌ری دنبال چای و ناهار، حواستو خوب جمع کن که داری پولتو دور می‌ریزی! ژیائوئین قو با بررسی بیشتر از ۴۶ هزار چرخه کاری فهمیده که کش سیستم دقیقاً سر ۶۰ دقیقه می‌پره و اگه بعد از یک ساعت دکمه ادامه رو بزنی، هزینه‌ت تا ۱۳ برابر بالا میره. در حالی که چت جدید کلاً ۴.۵ برابر میفته، پس راهش اینه قبل رفتن بگی «تا اینجا رو خلاصه کن» و بعداً همون متن رو تو یه چت تازه بگذاری."
+  ],
+  "why": "با همین یه ترفند ساده، جلوی خرج‌های سنگین و هدر رفتن اعتبار برنامه‌نویسی با هوش مصنوعی رو می‌گیری.",
+  "tags": [
+   "کدنویسی"
+  ]
+ },
+ "updated": "2026-10-25T12:30:46+00:00",
+ "gholam_checked": "2026-10-25T12:30:46+00:00"
+}

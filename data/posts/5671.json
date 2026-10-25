@@ -1,0 +1,72 @@
+{
+ "id": 5671,
+ "url": "https://t.me/dlmehr/5671",
+ "date": "2026-10-06T05:21:14+00:00",
+ "text": "https://fxtwitter.com/lennysan/status/2107131339355181240?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+ "forwarded_from": null,
+ "digest": false,
+ "hash": "591f546a9d50",
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/lennysan/status/2107131339355181240?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+  "site": "FxTwitter",
+  "title": "Lenny Rachitsky (@lennysan)",
+  "description": "My biggest takeaways from @thsottiaux:\n1. Most actions on the internet will soon be taken by agents, and Tibo doesn’t think most people have priced this in yet. When Notion launched its MCP server, it saw a flood of traffic, which strained its systems and…",
+  "image": null
+ },
+ "gholam": {
+  "text": "رفیق، لنی راچیتسکی نشسته پای صحبت‌های شنیدنی تیبو سوتیو، همه‌کاره‌ی چت‌جی‌پی‌تی و کدکس تو اوپن‌ای‌آی، و حرف‌های نابی زده که مسیر آینده هوش مصنوعی رو روشن می‌کنه. تیبو معتقده خیلی زودتر از چیزی که فکرشو بکنیم، ایجنت‌های هوش مصنوعی جای کاربرا بیشتر کارهای اینترنتی رو دست می‌گیرن و کسب‌وکارها ناچارن زیرساخت‌هاشون رو برای این ایجنت‌ها بسازن. از اون طرف میگه بساط منوی انتخاب مدل هم به زودی جمع میشه تا خود سیستم هوشمندانه تصمیم بگیره و دوران ساختارهای پیچیده و دست‌وپاگیر پرامپت‌نویسی هم سر اومده. لب کلامش اینه که محصولتون رو طوری طراحی کنید انگار سال بعد مدل‌ها ۱۰ برابر قوی‌تر و ارزون‌تر شدن، چون از این به بعد برگ برنده دست کساییه که سلیقه، درک عمیق کاربر و یادگیری سریع دارن، نه کسایی که فقط تندتند تایپ می‌کنن و کد می‌زنن.\n\nاهمیتش اینه که غول‌های فناوری دارن رسماً اعلام می‌کنن اینترنت به سمتی میره که ایجنت‌ها مخاطب اصلی سرویس‌ها میشن و غفلت از این تغییر، به قیمت جا موندن کل کسب‌وکارها تموم میشه.",
+  "date": "2026-10-06T05:21:42+00:00"
+ },
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/lennysan/status/2107131339355181240",
+   "domain": "x.com",
+   "author": {
+    "name": "Lenny Rachitsky",
+    "handle": "lennysan",
+    "avatar": "https://pbs.twimg.com/profile_images/1592990461517389824/iln8hi1f_200x200.jpg"
+   },
+   "text": "My biggest takeaways from @thsottiaux:\n\n1. Most actions on the internet will soon be taken by agents, and Tibo doesn’t think most people have priced this in yet. When Notion launched its MCP server, it saw a flood of traffic, which strained its systems and forced it to rethink its economics. Every product team will soon have to decide whether to build for agents. You can hold off for a while, Tibo says, “but it is inevitable.”\n\n2. The model picker is likely going away. One of Tibo’s biggest frustrations with the current state of AI is that users have to think about which model to use and what reasoning effort to apply. “I myself even get fatigued with the model picker,” he said, and he wants to get rid of all of it as quickly as possible. Dots ships with no model picker at all. You just talk to it.\n\n3. Build as if models will be 10 times better in a year. Tibo thinks models will get cheaper and faster “at rates that are quite incredible,” and that all modalities will finally work together seamlessly. When he looks at what people are building, his reaction is often “you’re not quite getting it.” If you imagined “all of this being roughly 10 times better than it is today,” what would you build differently? His own forecast was too slow: he expected today’s capabilities a year or two from now.\n\n4. Loops, graphs, and fine-tuned prompts are not the long-term solution for getting the most out of AI. There was a period when people got very excited about configuring agent loops and building intricate graph architectures. Tibo thinks that era is ending.\n\n5. While Dots got most of the attention at DevDay, Tibo thinks the plugin ecosystem will be the sleeper hit. OpenAI launched with 16 partners for “Sign in with ChatGPT,” and popular third-party plugins will share in revenue when subscribers spend tokens with them. ChatGPT recommends plugins inside conversations based on retention and quality, which can put a good one in front of “a significant slice” of its 1.2 billion users. Tibo’s advice to developers trying to get discovered: “Build a good plugin.”\n\n6. Tibo’s Dot warned him that production was down five minutes before the DevDay live demo. The agent figured out that DevDay was happening that day, that the demo was minutes away, that the demo probably depended on that production system, and that Tibo would want to know. It pinged him just as the launch was about to begin, and it even offered to fix the outage. His reply: “I don’t think you’re there yet, little Dot.”\n\n7. Tibo’s agent teams grow and shrink with every model release. When he’s pushing the frontier, he builds larger and larger teams of agents. Then the next model lands, “a bigger agent can just do all of it and keep everything in memory and learn,” and he shrinks the team again. Expansion, then shrinking, then expansion. Don’t get attached to your setup.\n\n8. Skill trending down in value: typing fast. Skill trending up: taste. Tibo says the people thriving now deeply understand the user, learn quickly, and “know what good looks like.” That’s part of why OpenAI is full of former founders, more than 120 of them, which makes it feel like “a mega startup.”\n\n9. Tibo changed his mind about new grads. He hadn’t anticipated how fast younger people would embrace all this change and figure out how to harness it, and that shifted OpenAI’s hiring strategy. His example is Ahmed Ibrahim, hired as a new grad, who built much of the Codex harness and is now responsible for OpenAI’s compute fleet. What set Ahmed apart: he’s “incredibly kind,” “incredibly collaborative,” works on what matters without putting himself first, and is “a sponge,” using the latest tools to learn at speeds Tibo hadn’t seen before.\n\n10. We’ll likely address the burnout associated with AI. There’s pressure to run 30 agents at once and ship more because you can. Tibo wants AI to “reduce the noise” and let you put your attention where you choose. Every time he fully disconnects for a week of holiday, he starts thinking in more creative ways, and he wants to bring that into the workday. Maybe you need fewer meetings, and you’d be more productive if you were better rested. The industry still has to figure that out, he says, but that’s the promise of AI: “it’s not just one more prompt per second.”",
+   "date": 1791214234,
+   "media": [],
+   "links": [],
+   "quote": {
+    "author": {
+     "name": "Lenny Rachitsky",
+     "handle": "lennysan",
+     "avatar": "https://pbs.twimg.com/profile_images/1592990461517389824/iln8hi1f_200x200.jpg"
+    },
+    "text": "My conversation with Head of ChatGPT and Codex, @thsottiaux\n\nWe discuss:\n🔸 Why the model picker is likely going away\n🔸 Why loops and graphs are a passing phase\n🔸 Why most actions on the internet will soon be taken by agents\n🔸 OpenAI’s approach to AI safety\n\nListen now 👇\nhttps://youtu.be/MM-C3JqCXBk",
+    "date": 1791128663,
+    "media": [
+     {
+      "type": "video",
+      "src": "https://video.twimg.com/amplify_video/2106768810498052096/vid/avc1/1280x720/iqUlhVSmKFpAna_l.mp4?tag=29",
+      "poster": "https://pbs.twimg.com/amplify_video_thumb/2106768810498052096/img/FXESEg2vZLpOgC2q.jpg",
+      "ratio": 0.5625,
+      "duration": 77.4,
+      "gif": false
+     }
+    ],
+    "links": [
+     "https://youtu.be/MM-C3JqCXBk"
+    ]
+   }
+  }
+ ],
+ "article": {
+  "title": "لنی راچیتسکی نشسته پای صحبت‌های شنیدنی تیبو سوتیو، همه‌کاره‌ی چت‌جی‌پی‌تی و کدکس تو اوپن‌ای‌آی، و حرف‌های نابی زده که مسیر آینده هوش مصنوعی رو روشن می‌کنه",
+  "source_title": "My biggest takeaways from @thsottiaux:",
+  "body": [
+   "رفیق، لنی راچیتسکی نشسته پای صحبت‌های شنیدنی تیبو سوتیو، همه‌کاره‌ی چت‌جی‌پی‌تی و کدکس تو اوپن‌ای‌آی، و حرف‌های نابی زده که مسیر آینده هوش مصنوعی رو روشن می‌کنه. تیبو معتقده خیلی زودتر از چیزی که فکرشو بکنیم، ایجنت‌های هوش مصنوعی جای کاربرا بیشتر کارهای اینترنتی رو دست می‌گیرن و کسب‌وکارها ناچارن زیرساخت‌هاشون رو برای این ایجنت‌ها بسازن. از اون طرف میگه بساط منوی انتخاب مدل هم به زودی جمع میشه تا خود سیستم هوشمندانه تصمیم بگیره و دوران ساختارهای پیچیده و دست‌وپاگیر پرامپت‌نویسی هم سر اومده. لب کلامش اینه که محصولتون رو طوری طراحی کنید انگار سال بعد مدل‌ها ۱۰ برابر قوی‌تر و ارزون‌تر شدن، چون از این به بعد برگ برنده دست کساییه که سلیقه، درک عمیق کاربر و یادگیری سریع دارن، نه کسایی که فقط تندتند تایپ می‌کنن و کد می‌زنن."
+  ],
+  "why": "غول‌های فناوری دارن رسماً اعلام می‌کنن اینترنت به سمتی میره که ایجنت‌ها مخاطب اصلی سرویس‌ها میشن و غفلت از این تغییر، به قیمت جا موندن کل کسب‌وکارها تموم میشه.",
+  "tags": [
+   "اوپن‌ای‌آی"
+  ]
+ },
+ "updated": "2026-10-25T12:24:43+00:00",
+ "gholam_checked": "2026-10-25T12:24:43+00:00"
+}

@@ -1,0 +1,68 @@
+{
+ "id": 5673,
+ "url": "https://t.me/dlmehr/5673",
+ "date": "2026-10-06T15:37:24+00:00",
+ "text": "https://fxtwitter.com/meta_engineers/status/2107472235350962351?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+ "forwarded_from": null,
+ "digest": false,
+ "hash": "0810569d8a61",
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/meta_engineers/status/2107472235350962351?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+  "site": "FxTwitter",
+  "title": "Engineering at Meta (@Meta_Engineers)",
+  "description": "We're open-sourcing Rebalancer, the assignment-problem solver Meta has used for resource allocation across our infrastructure for over nine years.\nGiven a set of objects and a set of bins, Rebalancer assigns one to the other to optimize your objectives under…",
+  "image": "https://cdn4.telesco.pe/file/oh-xxQVhL0hcMg6eljtnn84qgu_zzl8vlba6jsLCxvtjZ5_7hofUJdh7uIX2971H58ruMFwRPwzrQlSVRAcdxGeccPmBJKdCeg3xViUUJcuDvvEAk3fzUrW1BAY5bU91oRyTNLkPwFogErhzisft7R7k_ZiGFbIRxioT27Ans7IhhKALHy6SLKs7vBpQch5M3k-ngC_vPo26RdLNwfTjSHs590e6Bsfw8Q35hXwlXGok-vprZAhM2F8mOfiXAtg78Fh9Y2IE6Jb3YCeT0TtFjz6dpzLrbxIBiENnzlKub2iTCs9i4yibxZNJsm4bS-1YWSxOEKZazW3-K0hBFpi-6w.jpg"
+ },
+ "gholam": {
+  "text": "رفیق، بچه‌های فنی متا بالاخره دست‌به‌خیر شدن و ابزار Rebalancer رو که بیش از ۹ سال توی زیرساخت‌هاشون برای تخصیص و چینش منابع استفاده می‌کردن، به شکل متن‌باز در اختیار عموم گذاشتن. این سیستم خفن کارش اینه که کلی تسک، ترافیک سرورها و سخت‌افزار رو تحت محدودیت‌های مختلف با روش‌های ریاضی و سرچ موازی جوری بچینه که بیشترین بازدهی به دست بیاد. جالب اینجاست که این ابزار روزانه نزدیک ۴۰ میلیون مسئله سنگین رو توی متا حل و فصل می‌کنه و حتی برای دسته‌بندی ۲۶۵ هزار آیتم توی بیش از ۳ هزار تا باکس، حداکثر ظرف ۱۲ ثانیه قال قضیه رو می‌کَنه. حالا هر مهندسی که با مقیاس‌های بزرگ سروکله می‌زنه، می‌تونه رایگان از این فرمول آب‌دیده‌ی زیرساخت فیسبوک و اینستاگرام استفاده کنه.\n\nاهمیتش اینه که چنین سیستم کاربلدی هزینه‌های سرسام‌آور سرورها رو به شدت پایین میاره و جلوی قفل کردن زیرساخت‌های غول‌پیکر رو می‌گیره.",
+  "date": "2026-10-06T15:37:43+00:00"
+ },
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/Meta_Engineers/status/2107472235350962351",
+   "domain": "x.com",
+   "author": {
+    "name": "Engineering at Meta",
+    "handle": "Meta_Engineers",
+    "avatar": "https://pbs.twimg.com/profile_images/1453866309851049989/Iq6B3KjP_200x200.png"
+   },
+   "text": "We're open-sourcing Rebalancer, the assignment-problem solver Meta has used for resource allocation across our infrastructure for over nine years.\n\nGiven a set of objects and a set of bins, Rebalancer assigns one to the other to optimize your objectives under your constraints, including hardware placement, service and task placement, traffic routing, and more. It separates how a problem is specified from how it's stored, solved, and debugged, with both an optimal MIP solver and a parallelized local search solver.\n\nAt Meta it solves ~40 million assignment problems a day across 30+ problem formulations. P99 solve time is 12 seconds on a problem with 265k objects and 3.2k bins.\n\n🔗 Read more on our engineering blog: https://engineering.fb.com/2026/09/21/open-source/rebalancer-generic-high-performance-library-assignment-problems/",
+   "date": 1791295510,
+   "media": [
+    {
+     "type": "image",
+     "src": "https://pbs.twimg.com/media/HT8-0hLW4AA1o77.jpg?name=orig",
+     "ratio": 0.5263
+    }
+   ],
+   "links": [
+    "https://engineering.fb.com/2026/09/21/open-source/rebalancer-generic-high-performance-library-assignment-problems/"
+   ]
+  },
+  {
+   "kind": "link",
+   "url": "https://engineering.fb.com/2026/09/21/open-source/rebalancer-generic-high-performance-library-assignment-problems/",
+   "domain": "engineering.fb.com",
+   "title": "Open-Sourcing Rebalancer: A Generic, High-Performance Library for Solving Assignment Problems",
+   "description": "We’re open-sourcing Rebalancer, the assignment-problem solver that has been used to solve resource allocation problems throughout Meta for over nine years. Rebalancer separates several relate…",
+   "image": "https://engineering.fb.com/wp-content/uploads/2026/09/Meta-Rebalancer.webp",
+   "site": "Engineering at Meta"
+  }
+ ],
+ "article": {
+  "title": "بچه‌های فنی متا بالاخره دست‌به‌خیر شدن و ابزار Rebalancer رو که بیش از ۹ سال توی زیرساخت‌هاشون برای تخصیص و چینش منابع استفاده می‌کردن، به شکل متن‌باز در اختیار عموم گذاشتن",
+  "source_title": "We're open-sourcing Rebalancer, the assignment-problem solver Meta has used for resource allocation across our infrastructure for over nine…",
+  "body": [
+   "رفیق، بچه‌های فنی متا بالاخره دست‌به‌خیر شدن و ابزار Rebalancer رو که بیش از ۹ سال توی زیرساخت‌هاشون برای تخصیص و چینش منابع استفاده می‌کردن، به شکل متن‌باز در اختیار عموم گذاشتن. این سیستم خفن کارش اینه که کلی تسک، ترافیک سرورها و سخت‌افزار رو تحت محدودیت‌های مختلف با روش‌های ریاضی و سرچ موازی جوری بچینه که بیشترین بازدهی به دست بیاد. جالب اینجاست که این ابزار روزانه نزدیک ۴۰ میلیون مسئله سنگین رو توی متا حل و فصل می‌کنه و حتی برای دسته‌بندی ۲۶۵ هزار آیتم توی بیش از ۳ هزار تا باکس، حداکثر ظرف ۱۲ ثانیه قال قضیه رو می‌کَنه. حالا هر مهندسی که با مقیاس‌های بزرگ سروکله می‌زنه، می‌تونه رایگان از این فرمول آب‌دیده‌ی زیرساخت فیسبوک و اینستاگرام استفاده کنه."
+  ],
+  "why": "چنین سیستم کاربلدی هزینه‌های سرسام‌آور سرورها رو به شدت پایین میاره و جلوی قفل کردن زیرساخت‌های غول‌پیکر رو می‌گیره.",
+  "tags": [
+   "متا",
+   "چین"
+  ]
+ },
+ "updated": "2026-10-25T12:24:42+00:00",
+ "gholam_checked": "2026-10-25T12:24:42+00:00"
+}

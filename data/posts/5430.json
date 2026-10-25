@@ -1,0 +1,61 @@
+{
+ "id": 5430,
+ "url": "https://t.me/dlmehr/5430",
+ "date": "2026-09-23T04:54:58+00:00",
+ "text": "https://fxtwitter.com/aminkarbasi/status/2101787352490529211?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+ "forwarded_from": null,
+ "digest": false,
+ "hash": "f33f510f9489",
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/aminkarbasi/status/2101787352490529211?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+  "site": "FxTwitter",
+  "title": "Amin Karbasi (@aminkarbasi)",
+  "description": "LLMs keep getting bigger. Compute budgets, unfortunately, do not.\nThis fall @Stanford, we (@AnayMehrotra @gvelegkas and Amin Saberi) are teaching MS&E 319: Efficient Generative Language Models.\nThe course asks a simple question: given a modeling goal and…",
+  "image": "https://cdn4.telesco.pe/file/QmtTaldTNhcZcfqKMMCd3Hq2PDAXnuEJNeOO5rG3siqhwGJRPPhuaLVC9fGKFrN40EQjSMId5i16KJtT4NDq-DUNynkuOLvehQZGwS8kOTUiDnvWd2_DzZE9FnAhEMMndQx8QyBMx7Zjy7uLqqsSdJ0EB_gTSk_X4ezVDDMogiKnfz14mNUM0JfXNgeofqCt7Shx0HkK1RDCW4ovFFNdNeluljVAJ2T0eK-j-WgoA20ojl03CJZAQCEg5ZAQFfJjKCRfjpKJTWelGWCxIN1lRLbeSg8BB8jzkq6QOyccEDUaXvCgQec1gbtDU9OAVn7W18tComQKZO7dc5JX8FUOFw.jpg"
+ },
+ "gholam": {
+  "text": "رفیق، امین کرباسی و جمعی از اساتید دانشگاه استنفورد یه دوره مشتی به اسم MS&E 319 راه انداختن که حرف حسابش بهینه‌سازی مدل‌های زبانی بزرگه تا بدون خرج‌های نجومی بشه هوش مصنوعی خفن بالا آورد. داستان اینه که مدل‌ها هی غول‌پیکرتر میشن ولی جیب و منابع پردازشی دانشمندا قد نمیده، واسه همین توی این درس قراره یاد بدن چطور با ترفندهایی مثل معماری‌های موئه (MoE)، کوانتیزاسیون، LoRA، و تقطیر، کار رو بدون خریدن خروار خروار پردازنده گرافیکی جمع کنیم. دمشون هم گرم، قول دادن که جزوه‌ها و ویدیوهای ضبط‌شده کلاس رو هم به‌مرور توی اینترنت بذارن تا بقیه هم بتونن ازش فیض ببرن.\n\nاهمیتش اینه که نشون میده دوره ریخت‌وپاش‌های بی‌پایان برای سخت‌افزار سر اومده و با مهندسی تر و تمیز و الگوریتم‌های هوشمندانه، حتی تیم‌های کوچیک‌تر هم می‌تونن از پس غول‌های هوش مصنوعی بربیان.",
+  "date": "2026-09-23T04:55:10+00:00"
+ },
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/aminkarbasi/status/2101787352490529211",
+   "domain": "x.com",
+   "author": {
+    "name": "Amin Karbasi",
+    "handle": "aminkarbasi",
+    "avatar": "https://pbs.twimg.com/profile_images/2016350133781164033/ZIQBqMVS_200x200.jpg"
+   },
+   "text": "LLMs keep getting bigger. Compute budgets, unfortunately, do not.\n\nThis fall @Stanford, we (@AnayMehrotra @gvelegkas and Amin Saberi) are teaching MS&E 319: Efficient Generative Language Models.\n\nThe course asks a simple question: given a modeling goal and a limited computational budget, how should we choose the training objective, model architecture, and inference algorithm?\n\nWe’ll cover some of the main ideas, and occasionally surprising tricks, that make large language models more efficient, including efficient pre-training, mixture-of-experts architectures, attention and KV-cache compression, quantization, speculative decoding, LoRA, RLHF, DPO, and distillation.\n\nAnd no, “just buy more GPUs” will not be the only answer.\n\nWe’ll try to post all the lecture materials and recordings as the course unfolds.\n\nhttps://web.stanford.edu/class/msande319/",
+   "date": 1789940128,
+   "media": [],
+   "links": [
+    "https://web.stanford.edu/class/msande319/"
+   ]
+  },
+  {
+   "kind": "link",
+   "url": "https://web.stanford.edu/class/msande319/",
+   "domain": "web.stanford.edu",
+   "title": "MS&E 319: Efficient Generative Language Models | Stanford, Autumn 2026",
+   "description": "MS&E 319 at Stanford studies algorithms for efficient language-model training and inference, alongside risks and vulnerabilities.",
+   "image": null,
+   "site": "web.stanford.edu"
+  }
+ ],
+ "article": {
+  "title": "امین کرباسی و جمعی از اساتید دانشگاه استنفورد یه دوره مشتی به اسم MS&E 319 راه انداختن که حرف حسابش بهینه‌سازی مدل‌های زبانی بزرگه تا بدون خرج‌های نجومی بشه هوش مصنوعی خفن بالا آورد",
+  "source_title": "LLMs keep getting bigger. Compute budgets, unfortunately, do not.",
+  "body": [
+   "رفیق، امین کرباسی و جمعی از اساتید دانشگاه استنفورد یه دوره مشتی به اسم MS&E 319 راه انداختن که حرف حسابش بهینه‌سازی مدل‌های زبانی بزرگه تا بدون خرج‌های نجومی بشه هوش مصنوعی خفن بالا آورد. داستان اینه که مدل‌ها هی غول‌پیکرتر میشن ولی جیب و منابع پردازشی دانشمندا قد نمیده، واسه همین توی این درس قراره یاد بدن چطور با ترفندهایی مثل معماری‌های موئه (MoE)، کوانتیزاسیون، LoRA، و تقطیر، کار رو بدون خریدن خروار خروار پردازنده گرافیکی جمع کنیم. دمشون هم گرم، قول دادن که جزوه‌ها و ویدیوهای ضبط‌شده کلاس رو هم به‌مرور توی اینترنت بذارن تا بقیه هم بتونن ازش فیض ببرن."
+  ],
+  "why": "نشون میده دوره ریخت‌وپاش‌های بی‌پایان برای سخت‌افزار سر اومده و با مهندسی تر و تمیز و الگوریتم‌های هوشمندانه، حتی تیم‌های کوچیک‌تر هم می‌تونن از پس غول‌های هوش مصنوعی بربیان.",
+  "tags": [
+   "تراشه"
+  ]
+ },
+ "updated": "2026-10-25T12:26:06+00:00",
+ "gholam_checked": "2026-10-25T12:26:06+00:00"
+}

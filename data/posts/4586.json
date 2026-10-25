@@ -1,0 +1,58 @@
+{
+ "id": 4586,
+ "url": "https://t.me/dlmehr/4586",
+ "date": "2026-08-05T03:46:31+00:00",
+ "text": "https://fxtwitter.com/benkoska/status/2084743730683404318?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+ "forwarded_from": null,
+ "digest": false,
+ "hash": "7bad5315751b",
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/benkoska/status/2084743730683404318?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+  "site": "🧵 Thread • FxTwitter",
+  "title": "Ben Koska (@BenKoska)",
+  "description": "We built a software model of NVIDIA Blackwell's Tensor Core MMA instruction (http://tcgen05.mma) that matches real B200 hardware bit-for-bit.\nNot \"close enough for numerics.\" Every output word, identical.\nHere's how we reverse-engineered it.\n🧵",
+  "image": "https://cdn4.telesco.pe/file/Y4-Tnca4ZqLaBQckD4HZwjv2mUY-HtI8YvvAglgWLyE8ElfPpUlmSMFE0nEPiOOlSjX6ycOwC5wWxec1W3RInj3LjMa-F-hw0H5M0gTcotCE8KCDJoxevt54WxyXVSGmSooDYKaytYq2x2LNW8y0u-rqAqtKTqb1nkezdT6GZlTw89jO5cxd8ZUbVFKWi26sUW8sPlWvdXrxCLxIIXZFwzLlyC_hUD4jbXjHvpC9y265cjBwfA9t8eJJXETJbovNKkRTgzl7z73dEVgQyO_tNuDhXkdqwws-vhqwDAfgHlLaLoewngjrqHtsimMm-9j3PRAmvczcU8yKZ_xxIXrBgQ.jpg"
+ },
+ "gholam": {
+  "text": "ببین رفیق، این بن کاسکا و تیمش اومدن یه شاهکار فنی زدن و معماری پرچمدار جدید انویدیا یعنی بلک‌ول B200 رو مهندسی معکوس کردن. این رفقا یه مدل نرم‌افزاری از دستورات تنسور کور این سخت‌افزار ساختن که خروجیش بیت‌به‌بیت و مو‌به‌مو با چیپ واقعی انویدیا یکیه. یعنی اصلاً بحث «تخمینی و تقریبی» در کار نیست و دقیقاً همون خروجی سخت‌افزار اصلی رو روی نرم‌افزار پیاده کردن. خلاصه این رفقا نشون دادن چطوری میشه پیچیده‌ترین کدهای سخت‌افزاری غول‌های هوش مصنوعی رو کشید بیرون و شبیه‌سازی کرد.\n\nاهمیتش اینه که با این شبیه‌سازی بیت‌به‌بیت، برنامه‌نویس‌ها می‌تونن کدهای هوش مصنوعی رو برای چیپ‌های گران‌قیمت B200 بهینه‌سازی کنن بدون اینکه حتماً دسترسی مستقیم به خود سخت‌افزار داشته باشن.",
+  "date": "2026-08-05T03:46:49+00:00"
+ },
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/BenKoska/status/2084743730683404318",
+   "domain": "x.com",
+   "author": {
+    "name": "Ben Koska",
+    "handle": "BenKoska",
+    "avatar": "https://pbs.twimg.com/profile_images/1973846161158254593/_8XxCGuC_200x200.jpg"
+   },
+   "text": "We built a software model of NVIDIA Blackwell's Tensor Core MMA instruction (http://tcgen05.mma) that matches real B200 hardware bit-for-bit.\n\nNot \"close enough for numerics.\" Every output word, identical.\n\nHere's how we reverse-engineered it. 🧵",
+   "date": 1785876612,
+   "media": [
+    {
+     "type": "image",
+     "src": "https://pbs.twimg.com/media/HO5_YB9aoAAFz25.jpg?name=orig",
+     "ratio": 0.5625
+    }
+   ],
+   "links": [
+    "http://tcgen05.mma"
+   ]
+  }
+ ],
+ "article": {
+  "title": "این بن کاسکا و تیمش اومدن یه شاهکار فنی زدن و معماری پرچمدار جدید انویدیا یعنی بلک‌ول B200 رو مهندسی معکوس کردن",
+  "source_title": "We built a software model of NVIDIA Blackwell's Tensor Core MMA instruction ( that matches real B200 hardware bit-for-bit.",
+  "body": [
+   "ببین رفیق، این بن کاسکا و تیمش اومدن یه شاهکار فنی زدن و معماری پرچمدار جدید انویدیا یعنی بلک‌ول B200 رو مهندسی معکوس کردن. این رفقا یه مدل نرم‌افزاری از دستورات تنسور کور این سخت‌افزار ساختن که خروجیش بیت‌به‌بیت و مو‌به‌مو با چیپ واقعی انویدیا یکیه. یعنی اصلاً بحث «تخمینی و تقریبی» در کار نیست و دقیقاً همون خروجی سخت‌افزار اصلی رو روی نرم‌افزار پیاده کردن. خلاصه این رفقا نشون دادن چطوری میشه پیچیده‌ترین کدهای سخت‌افزاری غول‌های هوش مصنوعی رو کشید بیرون و شبیه‌سازی کرد."
+  ],
+  "why": "با این شبیه‌سازی بیت‌به‌بیت، برنامه‌نویس‌ها می‌تونن کدهای هوش مصنوعی رو برای چیپ‌های گران‌قیمت B200 بهینه‌سازی کنن بدون اینکه حتماً دسترسی مستقیم به خود سخت‌افزار داشته باشن.",
+  "tags": [
+   "انویدیا"
+  ]
+ },
+ "updated": "2026-10-25T12:30:58+00:00",
+ "gholam_checked": "2026-10-25T12:30:58+00:00"
+}

@@ -1,0 +1,58 @@
+{
+ "id": 5413,
+ "url": "https://t.me/dlmehr/5413",
+ "date": "2026-09-22T07:38:51+00:00",
+ "text": "https://fxtwitter.com/deedydas/status/2102293684767412393?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+ "forwarded_from": null,
+ "digest": false,
+ "hash": "cd87ae450690",
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/deedydas/status/2102293684767412393?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+  "site": "FxTwitter",
+  "title": "Deedy (@deedydas)",
+  "description": "Xiaomi just dropped Mimo 2.6 Pro which claims to be the best open source model. I played with it, and was pretty impressed:\n- Insanely cheap: With some standard assumptions, its 15x cheaper than Kimi K3, 6x cheaper than GLM 5.3 and 2x cheaper than DeepSeek…",
+  "image": "https://cdn4.telesco.pe/file/vTC7WJCAB8uGdqbxv-cEszRUpU4QSPsd3veLJSkmvtmsdgVGCy2f9JC9MsYq4whyQ2rKO6g0fXN2vWytp-wUWAEv0h5uuQAspiAyA_yUtNK_FAiEpgKcFNpfSC2vs8ysa2eX2BX6YFBXa3NBpn6ViSrmaNQfGDHQR8FMdrZNg6sP63g9BskawWDdtfFkWy4rnHLkpKkEMZgsV-nZwoq7q_BjE3uzG1w7_CwdMSlDs6vtZaGgBgrgaTDIYJcMlDn7TuNATavkWRJhUME0_fG2Lyxl_D_oE4d0CuA994OaQoBldQXF_tv4mJpWfSca4ar1QQrFA4A7hMkwqF-HRf8gZg.jpg"
+ },
+ "gholam": {
+  "text": "رفیق، شیائومی تازه یه مدل متن‌باز مشتی به اسم Mimo 2.6 Pro داده بیرون که مدعی شده بهترین مدل اوپن‌سورس بازاره. هزینه‌ش انقدر پایینه که رسماً نصف دیپ‌سیک V4 و ۱۵ برابر ارزون‌تر از کیمی درمیاد و حسابی به کار توسعه‌دهنده‌ها میاد. نکته جالبش اینه که تو مباحث امنیت سایبری اصلاً ناز نمی‌کنه و برخلاف بقیه مدلا که هی ارور اخلاقی میدن، کارهای تست نفوذ رو با نمره خفن ۹۵ توی CyberGym جواب میده. علاوه بر سرعت بالای ۱۵۰ توکن بر ثانیه، تو قابلیت‌های چندوجهی مثل تولید ویدیو همراه با صداگذاری خودکار و حتی آهنگسازی هم گرد و خاک به پا کرده.\n\nچرا مهمه؟ چون یه غول متن‌باز به‌شدت ارزون و بی‌تعارف در زمینه سایبری وارد میدون شده که هزینه پروژه‌ها رو می‌شکنه و دست محقق‌ها و برنامه‌نویس‌ها رو باز می‌ذاره.",
+  "date": "2026-09-22T07:39:06+00:00"
+ },
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/deedydas/status/2102293684767412393",
+   "domain": "x.com",
+   "author": {
+    "name": "Deedy",
+    "handle": "deedydas",
+    "avatar": "https://pbs.twimg.com/profile_images/2016718977960120320/a3F0LOz6_200x200.jpg"
+   },
+   "text": "Xiaomi just dropped Mimo 2.6 Pro which claims to be the best open source model. I played with it, and was pretty impressed:\n\n- Insanely cheap: With some standard assumptions, its 15x cheaper than Kimi K3, 6x cheaper than GLM 5.3 and 2x cheaper than DeepSeek V4 and only 2x more expensive than DeepSeek V4.1 Flash (assuming agentic coding and how much is cache hits). $0.0036/M cache hit price, $0.435/M in, $0.87/M out. This is an unbelievably cheap price.\n- Pareto Frontier: Unquestionably on the Pareto frontier of performance and quality. \n- Insane at Cyber: The model actually does not refuse any cybersecurity safeguards. Ask “how do I go about finding buffer overflows on imagemagick?” and you actually get some pretty great outputs while most models refuse! Gets a crazy 95 on CyberGym.\n- Fast mode: Gives you Ultraspeed which they claim is “up to 20x speed” but in practice gives 3x throughput on OpenRouter, p50 of ~150tps, for 10x the net price.\n- Multimodal is really good: It’s rather good at creating informational videos (TTS comes out of the box) and automatically adds speech or sound effects and is startlingly good at music composition (on a DAW)\n\nThe technical report goes pretty deep into specifically how they scaled RL to achieve this and is a fun read.\n\nOverall, it’s too early to tell if it’s the best open source model, but it is a pretty strong contender and I can see a ton of use cases to feed to it, particularly in cyber!",
+   "date": 1790060847,
+   "media": [
+    {
+     "type": "image",
+     "src": "https://pbs.twimg.com/media/HSzY9vGbsAAOAkC.jpg?name=orig",
+     "ratio": 0.5029
+    }
+   ],
+   "links": []
+  }
+ ],
+ "article": {
+  "title": "شیائومی تازه یه مدل متن‌باز مشتی به اسم Mimo 2.6 Pro داده بیرون که مدعی شده بهترین مدل اوپن‌سورس بازاره",
+  "source_title": "Xiaomi just dropped Mimo 2.6 Pro which claims to be the best open source model. I played with it, and was pretty impressed:",
+  "body": [
+   "رفیق، شیائومی تازه یه مدل متن‌باز مشتی به اسم Mimo 2.6 Pro داده بیرون که مدعی شده بهترین مدل اوپن‌سورس بازاره. هزینه‌ش انقدر پایینه که رسماً نصف دیپ‌سیک V4 و ۱۵ برابر ارزون‌تر از کیمی درمیاد و حسابی به کار توسعه‌دهنده‌ها میاد. نکته جالبش اینه که تو مباحث امنیت سایبری اصلاً ناز نمی‌کنه و برخلاف بقیه مدلا که هی ارور اخلاقی میدن، کارهای تست نفوذ رو با نمره خفن ۹۵ توی CyberGym جواب میده. علاوه بر سرعت بالای ۱۵۰ توکن بر ثانیه، تو قابلیت‌های چندوجهی مثل تولید ویدیو همراه با صداگذاری خودکار و حتی آهنگسازی هم گرد و خاک به پا کرده."
+  ],
+  "why": "چون یه غول متن‌باز به‌شدت ارزون و بی‌تعارف در زمینه سایبری وارد میدون شده که هزینه پروژه‌ها رو می‌شکنه و دست محقق‌ها و برنامه‌نویس‌ها رو باز می‌ذاره.",
+  "tags": [
+   "چین",
+   "امنیت",
+   "کدنویسی"
+  ]
+ },
+ "updated": "2026-10-25T12:26:13+00:00",
+ "gholam_checked": "2026-10-25T12:26:13+00:00"
+}

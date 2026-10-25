@@ -1,0 +1,65 @@
+{
+ "id": 5256,
+ "url": "https://t.me/dlmehr/5256",
+ "date": "2026-09-11T03:32:46+00:00",
+ "text": "https://fxtwitter.com/pruthveeee/status/2098165337825165758?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+ "forwarded_from": null,
+ "digest": false,
+ "hash": "64fffd033a6a",
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/pruthveeee/status/2098165337825165758?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+  "site": "🧵 Thread • FxTwitter",
+  "title": "Pruthvi Raj (@pruthveeee)",
+  "description": "Wtf? Is this even real?\nAlibaba allegedly ran 151M+ Claude exchanges to extract its capabilities\nA Yemen-based cell used Claude to build guided-rocket software, test-fired it, then came back to debug the failure.\nChina-based actor used Claude on anti-torpedo…",
+  "image": "https://cdn4.telesco.pe/file/feBLVQ9ZhxoKzIbiXaMFtXwXF4AHu3oY08iD4nEA8W7hBAbzG9G7l1ExeusP7Kn3ehNWk32ztsu-d4FsmZh9HCM8k-7kjcZ6pwmoZPWaIyLiLCap9kkOJWHI7BXoMi61j9HmG7WgYXlYaal4Zopt_01Ag9rj9_BUfxRj8IErMXPzLUYYngasaMxuzXLme5MYldsIgNug94FQNlh2eqniJAbf09jjmj051bz9ctCsnMJZjdMFOIDIFxSC0kJMICy6G97aNrYPMnKslNT-lJuS1XbtfaCvIKpRMklWF3KA4SrS6W4Fn0NPMYeeXJAyMRZmumfrhfXlSde8F97pfy4E8g.jpg"
+ },
+ "gholam": {
+  "text": "رفیق، قضیه داره خیلی عجیب و دارک می‌شه؛ شرکت آنتروپیک یه گزارش امنیتی داده بیرون که مو به تن آدم سیخ می‌کنه. طبق این آمار، غول چینی علی‌بابا بیشتر از ۱۵۱ میلیون بار کلود رو به رگبار پرامپت بسته تا بتونه به اصطلاح قابلیت‌هاشو بیرون بکشه و کپی کنه. از اون ترسناک‌تر، یه گروه توی یمن رسماً از همین هوش مصنوعی واسه نوشتن نرم‌افزار راکت‌های هدایت‌شونده استفاده کرده و بعد از شلیک ناموفق، دوباره برگشته پیش کلود تا کداش رو دیباگ کنه! تازه ردپای استفاده از کلود توی طراحی سلاح‌های بیولوژیکی، سیستم ضد اژدر و هدایت دسته‌جمعی پهپادها هم دیده شده که نشون می‌ده ارتش‌ها و گروه‌های شبه‌نظامی قفل کردن روی هوش مصنوعی.\n\nچرا مهمه؟ اهمیتش اینه که هوش مصنوعی از فاز چت و سرگرمی گذشته و اگه مهار نشه، رسماً کلید ساخت سلاح‌های مرگبار و ویران‌کننده رو می‌ذاره تو مشت هر کی که یه خط اینترنت داشته باشه.",
+  "date": "2026-09-11T03:32:59+00:00"
+ },
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/pruthveeee/status/2098165337825165758",
+   "domain": "x.com",
+   "author": {
+    "name": "Pruthvi Raj",
+    "handle": "pruthveeee",
+    "avatar": "https://pbs.twimg.com/profile_images/2102340496769310720/m8H18v7A_200x200.jpg"
+   },
+   "text": "Wtf? Is this even real?\n\nAlibaba allegedly ran 151M+ Claude exchanges to extract its capabilities\n\nA Yemen-based cell used Claude to build guided-rocket software, test-fired it, then came back to debug the failure.\n\nChina-based actor used Claude on anti-torpedo fire-control systems\n\nAnthropic found 5 cases of Claude being used in work that could support biological-weapons development\n\nOther cases involved drone swarms and electronic-warfare targeting\n\nIs this getting real fast or anthropic trying to speed run ai regulation to capture markets?",
+   "date": 1789076573,
+   "media": [],
+   "links": [],
+   "quote": {
+    "author": {
+     "name": "Anthropic",
+     "handle": "AnthropicAI",
+     "avatar": "https://pbs.twimg.com/profile_images/1798110641414443008/XP8gyBaY_200x200.jpg"
+    },
+    "text": "We're publishing our most detailed threat intelligence report to date. \n\nIt covers how people tried to misuse Claude—for cyberattacks, influence operations, surveillance, biology, and building weapons—and how we found and stopped them.\n\nWe disrupted every operation in the report, and used the lessons from them to strengthen our safeguards. Where appropriate, we also shared what we found with authorities and other AI companies.\n\nThese cases are not typical: we’re highlighting some of the most sophisticated misuse we’ve seen. But they’re especially important to discuss, because they show us where AI misuse is headed, where our safeguards work, and where they need to improve.\n\nWe’re publishing this report so others can spot the same activity on their own platforms, and so we can give the public a clearer view of how emerging threats develop.\n\nRead the report: https://www.anthropic.com/threat-intelligence-report-september-2026",
+    "date": 1789060402,
+    "media": [],
+    "links": [
+     "https://www.anthropic.com/threat-intelligence-report-september-2026"
+    ]
+   }
+  }
+ ],
+ "article": {
+  "title": "قضیه داره خیلی عجیب و دارک می‌شه؛ شرکت آنتروپیک یه گزارش امنیتی داده بیرون که مو به تن آدم سیخ می‌کنه",
+  "source_title": "Wtf? Is this even real?",
+  "body": [
+   "رفیق، قضیه داره خیلی عجیب و دارک می‌شه؛ شرکت آنتروپیک یه گزارش امنیتی داده بیرون که مو به تن آدم سیخ می‌کنه. طبق این آمار، غول چینی علی‌بابا بیشتر از ۱۵۱ میلیون بار کلود رو به رگبار پرامپت بسته تا بتونه به اصطلاح قابلیت‌هاشو بیرون بکشه و کپی کنه. از اون ترسناک‌تر، یه گروه توی یمن رسماً از همین هوش مصنوعی واسه نوشتن نرم‌افزار راکت‌های هدایت‌شونده استفاده کرده و بعد از شلیک ناموفق، دوباره برگشته پیش کلود تا کداش رو دیباگ کنه! تازه ردپای استفاده از کلود توی طراحی سلاح‌های بیولوژیکی، سیستم ضد اژدر و هدایت دسته‌جمعی پهپادها هم دیده شده که نشون می‌ده ارتش‌ها و گروه‌های شبه‌نظامی قفل کردن روی هوش مصنوعی."
+  ],
+  "why": "اهمیتش اینه که هوش مصنوعی از فاز چت و سرگرمی گذشته و اگه مهار نشه، رسماً کلید ساخت سلاح‌های مرگبار و ویران‌کننده رو می‌ذاره تو مشت هر کی که یه خط اینترنت داشته باشه.",
+  "tags": [
+   "آنتروپیک",
+   "امنیت",
+   "چین"
+  ]
+ },
+ "updated": "2026-10-25T12:27:11+00:00",
+ "gholam_checked": "2026-10-25T12:27:11+00:00"
+}

@@ -1,0 +1,61 @@
+{
+ "id": 5458,
+ "url": "https://t.me/dlmehr/5458",
+ "date": "2026-09-24T17:42:12+00:00",
+ "text": "https://fxtwitter.com/ns123abc/status/2103143161727992118",
+ "forwarded_from": "Parsa Razavi",
+ "digest": false,
+ "hash": "12e9a2c254f5",
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/ns123abc/status/2103143161727992118",
+  "site": "FxTwitter",
+  "title": "NIK (@ns123abc)",
+  "description": "BREAKING: Google launching TPUs in space NEXT WEEK on SpaceX falcon 9 to test AI data centers orbit\nITS HAPPENING",
+  "image": null
+ },
+ "gholam": {
+  "text": "ببین رفیق، ماجرای هوش مصنوعی رسماً داره پاش از زمین فراتر می‌ره و سر از کهکشان درمیاره! داستان از این قراره که گوگل قصد داره همین هفته بعد، پردازنده‌های مخصوص هوش مصنوعیش یعنی همون TPUها رو سوار موشک فالکون ۹ اسپیس‌ایکس کنه و بفرسته مدار زمین. هدف این آزمایش عجیب‌وغریب اینه که ببینن اصلاً راه داره دیتاسنترهای سنگین هوش مصنوعی رو تو فضا علم کنن و از اون بالا کار بکشن یا نه. اگه این حرکت بگیره، دیگه غول‌های فناوری برای تامین انرژی و خنک‌سازی سرورها، مستقیم می‌رن سراغ پنل‌های خورشیدی و سرمای بی‌انتهای فضا.\n\nاهمیتش اینه که مصرف سرسام‌آور آب و برق دیتاسنترها داره زمین رو کلافه می‌کنه و اگه پروژه‌های فضایی جواب بدن، معماری زیرساخت پردازشی کل دنیا زیرورو می‌شه.",
+  "date": "2026-09-24T17:42:25+00:00"
+ },
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/ns123abc/status/2103143161727992118",
+   "domain": "x.com",
+   "author": {
+    "name": "NIK",
+    "handle": "ns123abc",
+    "avatar": "https://pbs.twimg.com/profile_images/2048822563821035520/7nxCFEnk_200x200.jpg"
+   },
+   "text": "BREAKING: Google launching TPUs in space NEXT WEEK on SpaceX falcon 9 to test AI data centers orbit\n\nITS HAPPENING",
+   "date": 1790263378,
+   "media": [
+    {
+     "type": "video",
+     "src": "https://video.twimg.com/amplify_video/2103142952788692992/vid/avc1/1294x720/jF0Kn4poilmj5h0N.mp4?tag=29",
+     "poster": "https://pbs.twimg.com/amplify_video_thumb/2103142952788692992/img/n7FIEwYIgYg9CXI8.jpg",
+     "ratio": 0.5563,
+     "duration": 122.376,
+     "gif": false
+    }
+   ],
+   "links": []
+  }
+ ],
+ "article": {
+  "title": "ماجرای هوش مصنوعی رسماً داره پاش از زمین فراتر می‌ره و سر از کهکشان درمیاره",
+  "source_title": "BREAKING: Google launching TPUs in space NEXT WEEK on SpaceX falcon 9 to test AI data centers orbit",
+  "body": [
+   "ببین رفیق، ماجرای هوش مصنوعی رسماً داره پاش از زمین فراتر می‌ره و سر از کهکشان درمیاره! داستان از این قراره که گوگل قصد داره همین هفته بعد، پردازنده‌های مخصوص هوش مصنوعیش یعنی همون TPUها رو سوار موشک فالکون ۹ اسپیس‌ایکس کنه و بفرسته مدار زمین. هدف این آزمایش عجیب‌وغریب اینه که ببینن اصلاً راه داره دیتاسنترهای سنگین هوش مصنوعی رو تو فضا علم کنن و از اون بالا کار بکشن یا نه. اگه این حرکت بگیره، دیگه غول‌های فناوری برای تامین انرژی و خنک‌سازی سرورها، مستقیم می‌رن سراغ پنل‌های خورشیدی و سرمای بی‌انتهای فضا."
+  ],
+  "why": "مصرف سرسام‌آور آب و برق دیتاسنترها داره زمین رو کلافه می‌کنه و اگه پروژه‌های فضایی جواب بدن، معماری زیرساخت پردازشی کل دنیا زیرورو می‌شه.",
+  "tags": [
+   "تراشه",
+   "فضا",
+   "گوگل"
+  ]
+ },
+ "updated": "2026-10-25T12:25:56+00:00",
+ "gholam_checked": "2026-10-25T12:25:56+00:00"
+}

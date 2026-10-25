@@ -2,16 +2,23 @@
  "id": 5915,
  "url": "https://t.me/dlmehr/5915",
  "date": "2026-10-16T01:34:05+00:00",
- "edited": true,
- "views": "186",
  "text": "https://fxtwitter.com/tesla/status/2110903770838384773?s=52&t=F41Qa04r48Mef_j_XjBneQ",
  "forwarded_from": null,
  "digest": false,
  "hash": "bd465ca59c87",
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/tesla/status/2110903770838384773?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+  "site": "FxTwitter",
+  "title": "Tesla (@Tesla)",
+  "description": "Our design language has evolved since the last reveal: from S3XY to Cybertruck, Cybercab & Optimus\nRoadster is inspired by the SR-71 & F-35",
+  "image": null
+ },
  "gholam": {
   "text": "رفیق بشنو از تسلا که رسماً اعلام کرده زبون و سبک طراحیشون حسابی پوست انداخته و از دوران مدل‌های S3XY رسیده به فرم‌های زاویه‌دار و آینده‌نگرانه سایبرتراک، سایبرکب و ربات اپتیموس. اما بمب اصلی خبر مربوط به سوپراسپرت رودستره؛ تسلا رو کرده که ظاهر این هیولا رو مستقیماً با الهام از شاهکارهای هوانوردی نظامی یعنی پرنده شناسایی اس‌آر-۷۱ بلک‌برد و جنگنده پنهان‌کار اف-۳۵ خلق کردن. این یعنی قراره با یه ماشین برقی طرف باشیم که همه‌چیزش، از بدنه آیرودینامیک گرفته تا ابهت ظاهری، حال‌وهوای جت‌های جنگی مافوق‌صوت رو روی آسفالت تداعی می‌کنه.\n\nچرا مهمه؟ چون بعد از سال‌ها چشم‌انتظاری برای عرضه رودستر، این الهام‌گیری از خفن‌ترین جت‌های شکاری تاریخ نشون میده تسلا می‌خواد استانداردهای سرعت و طراحی سوپراسپرت‌ها رو از بیخ دگرگون کنه.",
   "date": "2026-10-16T01:34:25+00:00"
  },
+ "gholam_checked": "2026-10-24T23:35:33+00:00",
  "links": [
   {
    "kind": "tweet",
@@ -46,14 +53,6 @@
    "links": []
   }
  ],
- "media": [],
- "preview": {
-  "url": "https://fxtwitter.com/tesla/status/2110903770838384773?s=52&t=F41Qa04r48Mef_j_XjBneQ",
-  "site": "FxTwitter",
-  "title": "Tesla (@Tesla)",
-  "description": "Our design language has evolved since the last reveal: from S3XY to Cybertruck, Cybercab & Optimus\nRoadster is inspired by the SR-71 & F-35",
-  "image": null
- },
  "article": {
   "title": "بشنو از تسلا که رسماً اعلام کرده زبون و سبک طراحیشون حسابی پوست انداخته و از دوران مدل‌های S3XY رسیده به فرم‌های زاویه‌دار و آینده‌نگرانه سایبرتراک، سایبرکب و ربات اپتیموس",
   "source_title": "Our design language has evolved since the last reveal: from S3XY to Cybertruck, Cybercab & Optimus",
@@ -66,6 +65,5 @@
    "ایلان ماسک"
   ]
  },
- "updated": "2026-10-24T23:35:33+00:00",
- "gholam_checked": "2026-10-24T23:35:33+00:00"
+ "updated": "2026-10-25T11:54:11+00:00"
 }

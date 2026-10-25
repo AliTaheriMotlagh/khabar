@@ -1,0 +1,56 @@
+{
+ "id": 4589,
+ "url": "https://t.me/dlmehr/4589",
+ "date": "2026-08-05T04:22:17+00:00",
+ "text": "https://fxtwitter.com/slavov_n/status/2084707903043174711?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+ "forwarded_from": null,
+ "digest": false,
+ "hash": "024f11a1d617",
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/slavov_n/status/2084707903043174711?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+  "site": "🧵 Thread • FxTwitter",
+  "title": "Prof. Nikolai Slavov (@slavov_n)",
+  "description": "A pioneer of AI-in-biology just published a sharp rebuttal to the \"AI will cure cancer\" narrative.\nThe core argument: It's a measurement problem.\nOver 90% of drugs that enter clinical trials still fail — a number that hasn't moved in decades. In most cases…",
+  "image": "https://cdn4.telesco.pe/file/C2im_MBhMZvH8pGhtPGErzoHX_aEzKSe_jO0QjH-SlU6g-DTsvAI4wOrBR1p1Eisof7IIZAODvJTG8Y5V_A82eFtIa6VlychYdVmdxOgCHhHOdpggazK-VUrjm3nTvp0cqrPJwY2Dps_4B1dhdnayIPKGqvTokfV6AfYJO_bf7gQ93swJJclAau6DRehOeIdRvBlWe4nhW-jt607Z2myR5xssPBjPgvWOebCUzdfHcrHM9aZ7_Md4pDjwvYC6fBl0onNrRYVaVPDXtjuqNejdFTCW5Qk6U_mazNR1ES643NDEwRAEWE13Xhi8dntpKM8tvBNTo9jUFzz3GQCpbrlSw.jpg"
+ },
+ "gholam": {
+  "text": "رفیق، گول این حرفا که «هوش مصنوعی قراره سرطان رو درمان کنه» رو نخور، چون یکی از استادای بزرگ این حوزه دست رو نقطه‌ضعف اصلی گذاشته. حرف حسابش اینه که بالای ۹۰ درصد داروهای جدید تو مرحله آزمایش بالینی شکست می‌خورن و هوش مصنوعی هم معجزه نمی‌کنه، چون مشکل اصلی جای دیگه‌ست؛ یعنی داریم با هوش مصنوعی کلیدهای خیلی شیک می‌سازیم اما واسه قفل‌های اشتباهی! مدلهای هوش مصنوعی داده‌های علمیِ موجود رو به هم ربط میدن، ولی چیزی که اصلاً تو زیست‌شناسی ثبت و اندازه‌گیری نشده رو نمی‌تونن از غیب بیارن. واسه همین تا وقتی با ابزارهای پیشرفته نریم سراغ اندازه‌گیری دقیق پروتئین‌ها و رفتار واقعی سلول‌ها، درمان واقعی در کار نیست.\n\nچرا مهمه؟ اهمیتش اینه که بفهمیم تا داده‌های دقیق زیستی جمع‌آوری نشه، پیشرفته‌ترین هوش مصنوعی دنیا هم فقط سرعتِ اشتباه رفتن مسیر رو بیشتر می‌کنه.",
+  "date": "2026-08-05T04:22:32+00:00"
+ },
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/slavov_n/status/2084707903043174711",
+   "domain": "x.com",
+   "author": {
+    "name": "Prof. Nikolai Slavov",
+    "handle": "slavov_n",
+    "avatar": "https://pbs.twimg.com/profile_images/985313538280308736/Lt1WBKdl_200x200.jpg"
+   },
+   "text": "A pioneer of AI-in-biology just published a sharp rebuttal to the \"AI will cure cancer\" narrative.\n\nThe core argument:  It's a measurement problem.\n\nOver 90% of drugs that enter clinical trials still fail — a number that hasn't moved in decades. In most cases, the molecule works fine. The mechanism it was built to hit was simply wrong.\n\nNo amount of AI-designed molecules fixes that:  Building better keys for the wrong locks does not open the correct doors.\n\nThe reason we keep picking the wrong locks: human biology has never been measured at the scale or resolution needed to actually map disease mechanisms. LLMs can connect results from the literature, but they can't extract answers about molecules and processes that were never captured in the first place.\n\nThis is exactly where scalable mass spectrometry-based proteomics has a role to play. Unlike sequencing, MS can directly quantify the functional molecules — proteins, their modifications, their interactions — that actually execute cellular decisions. As single-cell and low-input proteomics methods mature, they offer a path to the kind of large-scale, perturbation-aware functional datasets Koller argues are missing: not just what's genetically possible, but what's biologically happening.\n\nSubstantive AI-for-biology progress requires the right instruments pointed at the right layer of biology.",
+   "date": 1785868070,
+   "media": [
+    {
+     "type": "image",
+     "src": "https://pbs.twimg.com/media/HO5eyUjW4AAklHn.jpg?name=orig",
+     "ratio": 0.8635
+    }
+   ],
+   "links": []
+  }
+ ],
+ "article": {
+  "title": "گول این حرفا که «هوش مصنوعی قراره سرطان رو درمان کنه» رو نخور، چون یکی از استادای بزرگ این حوزه دست رو نقطه‌ضعف اصلی گذاشته",
+  "source_title": "A pioneer of AI-in-biology just published a sharp rebuttal to the \"AI will cure cancer\" narrative.",
+  "body": [
+   "رفیق، گول این حرفا که «هوش مصنوعی قراره سرطان رو درمان کنه» رو نخور، چون یکی از استادای بزرگ این حوزه دست رو نقطه‌ضعف اصلی گذاشته. حرف حسابش اینه که بالای ۹۰ درصد داروهای جدید تو مرحله آزمایش بالینی شکست می‌خورن و هوش مصنوعی هم معجزه نمی‌کنه، چون مشکل اصلی جای دیگه‌ست؛ یعنی داریم با هوش مصنوعی کلیدهای خیلی شیک می‌سازیم اما واسه قفل‌های اشتباهی! مدلهای هوش مصنوعی داده‌های علمیِ موجود رو به هم ربط میدن، ولی چیزی که اصلاً تو زیست‌شناسی ثبت و اندازه‌گیری نشده رو نمی‌تونن از غیب بیارن. واسه همین تا وقتی با ابزارهای پیشرفته نریم سراغ اندازه‌گیری دقیق پروتئین‌ها و رفتار واقعی سلول‌ها، درمان واقعی در کار نیست."
+  ],
+  "why": "اهمیتش اینه که بفهمیم تا داده‌های دقیق زیستی جمع‌آوری نشه، پیشرفته‌ترین هوش مصنوعی دنیا هم فقط سرعتِ اشتباه رفتن مسیر رو بیشتر می‌کنه.",
+  "tags": [
+   "سلامت"
+  ]
+ },
+ "updated": "2026-10-25T12:30:58+00:00",
+ "gholam_checked": "2026-10-25T12:30:58+00:00"
+}

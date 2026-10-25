@@ -1,0 +1,55 @@
+{
+ "id": 4483,
+ "url": "https://t.me/dlmehr/4483",
+ "date": "2026-07-30T20:39:29+00:00",
+ "text": "https://fxtwitter.com/pupposandro/status/2082855275464151073?s=46&t=F41Qa04r48Mef_j_XjBneQ",
+ "forwarded_from": null,
+ "digest": false,
+ "hash": "0be79a77fb70",
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/pupposandro/status/2082855275464151073?s=46&t=F41Qa04r48Mef_j_XjBneQ",
+  "site": "📰 Article • FxTwitter",
+  "title": "Lucebox (AMD R9700 + Strix Halo) Beats NVIDIA DGX Spark by 3.63x on DeepSeek V4 Flash",
+  "description": "TL;DR: 51.1 tok/s on the full 284B DeepSeek V4 Flash. One DGX Spark does 14.09. More details on the machine here: www.lucebox.com DeepSeek V4 Flash decode comparison DeepSeek V4 Flash has",
+  "image": "https://cdn4.telesco.pe/file/JdA-fvKbdv1fMafWVOyn8q9OQNcJN3oIM1c_7pSQzwlCQfiaVqOUGslULhX_CNMIy4vQ2wmD7sV9jb8TYZp_q2uyJciukjm0-dVT0dWSWAhbN17hxI-bt-pCm_liUZRyFGmUTEgTZp2tWKwSsbYi_tbEpBpr0Q7WO_L91OKCITPZypspRY1gY2PIz7T1bV0kdCfbLgPQsv_yIZZNlDgaI-Sf3_kx-fnLd0LBSQtTDdqJVxiVT8iwq2uek8smD69qCmwQ7EsYUcRkKwBTYP7TaioAZsasQzOr8M3RASG8umSx3_HktiYw99qMYy9UXJ8dFFIYihWj30eA7FsdIXr_kw.jpg"
+ },
+ "gholam": {
+  "text": "این یکی قشنگ نشون می‌ده با چیدمان درست، سخت‌افزار نامتجانس هم می‌تونه حسابی گردوخاک کنه: سیستم لوس‌باکس با ترکیب دو پردازندهٔ گرافیکی ای‌ام‌دی، مدل ۲۸۴ میلیاردپارامتری دیپ‌سیک وی۴ فلش رو با حدود ۵۱٫۱ توکن بر ثانیه اجرا کرده، درحالی‌که دی‌جی‌ایکس اسپارک به ۱۴٫۰۹ می‌رسه. راز کار هم تقسیم نامتقارن متخصص‌ها بین حافظه و توان دو کارت و رمزگشایی حدس‌محوره؛ خلاصه با قیمت ۶۴۹۹ دلار، روی کاغذ از دو اسپارک ارزان‌تر و از نظر سرعت به‌ازای دلار هم خیلی جمع‌وجورتر درمیاد.",
+  "date": "2026-07-30T21:04:47+00:00"
+ },
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/pupposandro/status/2082855275464151073",
+   "domain": "x.com",
+   "author": {
+    "name": "Sandro",
+    "handle": "pupposandro",
+    "avatar": "https://pbs.twimg.com/profile_images/2039487161825734656/TeyWkb5n_200x200.jpg"
+   },
+   "text": "",
+   "date": 1785426369,
+   "media": [],
+   "links": [],
+   "article": {
+    "title": "Lucebox (AMD R9700 + Strix Halo) Beats NVIDIA DGX Spark by 3.63x on DeepSeek V4 Flash ",
+    "image": "https://pbs.twimg.com/media/HOfAiGNW0AANjNx.jpg"
+   }
+  }
+ ],
+ "article": {
+  "title": "این یکی قشنگ نشون می‌ده با چیدمان درست، سخت‌افزار نامتجانس هم می‌تونه حسابی گردوخاک کنه: سیستم لوس‌باکس با ترکیب دو پردازندهٔ گرافیکی ای‌ام‌دی، مدل ۲۸۴ میلیاردپارامتری دیپ‌سیک وی۴ فلش رو با حدود ۵۱٫۱ توکن بر ثانیه اجرا کرده، درحالی‌که دی‌جی‌ایکس اسپارک به ۱۴٫۰۹ می‌رسه",
+  "source_title": "Lucebox (AMD R9700 + Strix Halo) Beats NVIDIA DGX Spark by 3.63x on DeepSeek V4 Flash ",
+  "body": [
+   "این یکی قشنگ نشون می‌ده با چیدمان درست، سخت‌افزار نامتجانس هم می‌تونه حسابی گردوخاک کنه: سیستم لوس‌باکس با ترکیب دو پردازندهٔ گرافیکی ای‌ام‌دی، مدل ۲۸۴ میلیاردپارامتری دیپ‌سیک وی۴ فلش رو با حدود ۵۱٫۱ توکن بر ثانیه اجرا کرده، درحالی‌که دی‌جی‌ایکس اسپارک به ۱۴٫۰۹ می‌رسه. راز کار هم تقسیم نامتقارن متخصص‌ها بین حافظه و توان دو کارت و رمزگشایی حدس‌محوره؛ خلاصه با قیمت ۶۴۹۹ دلار، روی کاغذ از دو اسپارک ارزان‌تر و از نظر سرعت به‌ازای دلار هم خیلی جمع‌وجورتر درمیاد."
+  ],
+  "why": null,
+  "tags": [
+   "چین",
+   "انویدیا"
+  ]
+ },
+ "updated": "2026-10-25T12:31:38+00:00",
+ "gholam_checked": "2026-10-25T12:31:38+00:00"
+}

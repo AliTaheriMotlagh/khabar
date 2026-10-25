@@ -1,0 +1,71 @@
+{
+ "id": 4782,
+ "url": "https://t.me/dlmehr/4782",
+ "date": "2026-08-17T15:08:28+00:00",
+ "text": "https://fxtwitter.com/lukas_m_ziegler/status/2089359286505799707?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+ "forwarded_from": null,
+ "digest": false,
+ "hash": "826da3368415",
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/lukas_m_ziegler/status/2089359286505799707?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+  "site": "FxTwitter",
+  "title": "Lukas Ziegler (@lukas_m_ziegler)",
+  "description": "🚨\nBREAKING:\n@GravisRobotics has raised $200M in the largest Series A in construction robotics history, led by SoftBank!\n🔥\nSpun out of ETH Zürich in 2022. Three years later, $200M and SoftBank backing.\nThe company is bringing autonomous AI to the most physically…",
+  "image": null
+ },
+ "gholam": {
+  "text": "ببین رفیق، استارتاپ سوئیسی Gravis Robotics که کارش رو از دانشگاه زوریخ شروع کرده، تونسته یه جذب سرمایه تاریخی ۲۰۰ میلیون دلاری توی سری A به رهبری غول سرمایه‌گذاری یعنی سافت‌بانک بزنه به جیب. این بچه‌ها هوش مصنوعی رو بردن سراغ سنگین‌ترین ماشین‌آلات ساخت‌وساز مثل بیل مکانیکی تا کارهای سخت و طاقت‌فرسای خاک‌برداری رو کاملاً خودکار کنن. برخلاف ربات‌های انبار یا ماشین‌های خودران که تو محیط‌های تر و تمیز کار می‌کنن، این سیستم طوری آموزش دیده که با خاک و سنگ و محیط‌های غیرقابل‌پیش‌بینی ساختمانی دست‌وپنجه نرم کنه و روی دستگاه‌های مختلف هم سوار بشه.\n\nاهمیتش اینه که با کمبود شدید نیروی کار در ساخت زیرساخت‌ها و دیتاسنترها، خودکار شدن این غول‌های آهنی می‌تونه بزرگ‌ترین مانع سرعت گرفتن پروژه‌های عمرانی دنیا رو برطرف کنه.",
+  "date": "2026-08-17T15:08:41+00:00"
+ },
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/lukas_m_ziegler/status/2089359286505799707",
+   "domain": "x.com",
+   "author": {
+    "name": "Lukas Ziegler",
+    "handle": "lukas_m_ziegler",
+    "avatar": "https://pbs.twimg.com/profile_images/2076008715522568192/dUB1oyiU_200x200.jpg"
+   },
+   "text": "🚨 BREAKING:\n\n@GravisRobotics has raised $200M in the largest Series A in construction robotics history, led by SoftBank! 🔥\n\nSpun out of ETH Zürich in 2022. Three years later, $200M and SoftBank backing.\n\nThe company is bringing autonomous AI to the most physically demanding machines on earth. Excavators. Heavy construction machinery. Equipment that hasn't fundamentally changed in 50 years. 🚜\n\nMost physical AI operates in static worlds. Self-driving cars navigate around obstacles. Warehouse robots move objects across fixed floors. Everything stays where it is.\n\nAn excavator does the exact opposite.\n\nIt works by intentionally crashing into the environment, breaking apart soil with hidden rocks, reshaping the earth with every single pass of the bucket. \n\nThe world changes with every action the machine takes.\n\n→ Gravis AI doesn't navigate a static world, it actively takes the world apart and puts it back together \n→ Models trained on billions of cubic yards of simulated earth, from soft clay to rock-filled soil \n→ Generalises across different machine manufacturers — not locked to a single platform \n→ Brings factory-floor precision to historically unpredictable civil jobsites\n\nThe macro case is overwhelming. Energy networks, data centres, housing, transit, climate infrastructure, all of it requires construction at a scale the existing workforce cannot deliver. \n\nConstruction is the primary bottleneck of the entire physical AI economy.\n\nThe same AI boom driving demand for data centres is now funding the robots that will build them.\n\nEurope keeps producing world-class deep tech. 🇨🇭🇪🇺\n\nTo the team behind this, MASSIVE CONGRATS!\n\nCan't wait to publish what we have created onsite with Gravis team! 🫶🏼\n\n~~ \n\n♻ Join the weekly robotics newsletter, and never miss any news → http://ziegler.substack.com",
+   "date": 1786977046,
+   "media": [
+    {
+     "type": "video",
+     "src": "https://video.twimg.com/amplify_video/2089359006733135873/vid/avc1/1280x720/SCqQ1JP7FlPdJTlY.mp4?tag=29",
+     "poster": "https://pbs.twimg.com/amplify_video_thumb/2089359006733135873/img/fOaqTZyk5uki6ksA.jpg",
+     "ratio": 0.5625,
+     "duration": 58.284,
+     "gif": false
+    }
+   ],
+   "links": [
+    "http://ziegler.substack.com"
+   ]
+  },
+  {
+   "kind": "link",
+   "url": "https://ziegler.substack.com/",
+   "domain": "ziegler.substack.com",
+   "title": "we all are robots | Lukas Ziegler | Substack",
+   "description": "Unlock the future with robotics. Get exclusive insights on the latest developments. Join the robotics leaders from Google, Tesla, Boston Dynamics and more. Click to read we all are robots, by Lukas Ziegler, a Substack publication with tens of thousands of subscribers.",
+   "image": "https://substackcdn.com/image/fetch/$s_!QYOi!,w_400,h_400,c_fill,f_auto,q_auto:good,fl_progressive:steep,g_auto/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fcb72bf10-3df2-466d-b067-60b4a6e721d6_400x400.png",
+   "site": "ziegler.substack.com"
+  }
+ ],
+ "article": {
+  "title": "استارتاپ سوئیسی Gravis Robotics که کارش رو از دانشگاه زوریخ شروع کرده، تونسته یه جذب سرمایه تاریخی ۲۰۰ میلیون دلاری توی سری A به رهبری غول سرمایه‌گذاری یعنی سافت‌بانک بزنه به جیب",
+  "source_title": "🚨 BREAKING:",
+  "body": [
+   "ببین رفیق، استارتاپ سوئیسی Gravis Robotics که کارش رو از دانشگاه زوریخ شروع کرده، تونسته یه جذب سرمایه تاریخی ۲۰۰ میلیون دلاری توی سری A به رهبری غول سرمایه‌گذاری یعنی سافت‌بانک بزنه به جیب. این بچه‌ها هوش مصنوعی رو بردن سراغ سنگین‌ترین ماشین‌آلات ساخت‌وساز مثل بیل مکانیکی تا کارهای سخت و طاقت‌فرسای خاک‌برداری رو کاملاً خودکار کنن. برخلاف ربات‌های انبار یا ماشین‌های خودران که تو محیط‌های تر و تمیز کار می‌کنن، این سیستم طوری آموزش دیده که با خاک و سنگ و محیط‌های غیرقابل‌پیش‌بینی ساختمانی دست‌وپنجه نرم کنه و روی دستگاه‌های مختلف هم سوار بشه."
+  ],
+  "why": "با کمبود شدید نیروی کار در ساخت زیرساخت‌ها و دیتاسنترها، خودکار شدن این غول‌های آهنی می‌تونه بزرگ‌ترین مانع سرعت گرفتن پروژه‌های عمرانی دنیا رو برطرف کنه.",
+  "tags": [
+   "رباتیک",
+   "استارتاپ"
+  ]
+ },
+ "updated": "2026-10-25T12:30:06+00:00",
+ "gholam_checked": "2026-10-25T12:30:06+00:00"
+}

@@ -1,0 +1,57 @@
+{
+ "id": 5361,
+ "url": "https://t.me/dlmehr/5361",
+ "date": "2026-09-18T00:54:39+00:00",
+ "text": "https://fxtwitter.com/tamarajtran/status/2100694549362553153?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+ "forwarded_from": null,
+ "digest": false,
+ "hash": "10b36ccd8c6d",
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/tamarajtran/status/2100694549362553153?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+  "site": "🧵 Thread • FxTwitter",
+  "title": "tamara (@tamarajtran)",
+  "description": "found the perfect use case for @typesafeai Jev:\ninstant compaction\nin 2026, why is compaction still a summarization prompt?\nJev can make it instant by scoring every tool call and dropping what’s irrelevant",
+  "image": null
+ },
+ "gholam": {
+  "text": "ببین رفیق، یه متخصصی به اسم تامارا دست گذاشته رو یه قابلیت خفن و میگه بالاخره برگ برنده ابزار Jev از تیم TypeSafeAI رو پیدا کرده: فشرده‌سازی و جمع‌وجور کردن آنی کانتکست. حرف حسابش اینه که دیگه دوره‌ی این که واسه خلاصه کردن تاریخچه چت‌ها و کانتکست، هی پرامپت جدا بنویسیم و معطل مدل بشیم تموم شده. ابزار Jev میاد در جا به تک‌تک فراخوانی ابزارها و دیتاها امتیاز میده و هرچیزی که بی‌ربط و اضافه باشه رو در دم حذف می‌کنه تا فضا سبک بمونه. با این ترفند، دیگه ایجنت‌های هوش مصنوعی گیر نمی‌کنن و سرعت پاسخ‌دهی‌شون به شدت بالا میره.\n\nاهمیتش اینه که فشرده‌سازی درلحظه، هزینه‌ی سنگین توکن‌ها و کندی خلاصه‌سازی رو از بین می‌بره و کارایی ایجنت‌ها رو چند لول ارتقا میده.",
+  "date": "2026-09-18T00:54:51+00:00"
+ },
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/tamarajtran/status/2100694549362553153",
+   "domain": "x.com",
+   "author": {
+    "name": "tamara",
+    "handle": "tamarajtran",
+    "avatar": "https://pbs.twimg.com/profile_images/2093115511974600704/cnlso-WF_200x200.jpg"
+   },
+   "text": "found the perfect use case for @typesafeai Jev: \n\ninstant compaction\n\nin 2026, why is compaction still a summarization prompt?\n\nJev can make it instant by scoring every tool call and dropping what’s irrelevant",
+   "date": 1789679584,
+   "media": [
+    {
+     "type": "video",
+     "src": "https://video.twimg.com/amplify_video/2100694537672998912/vid/avc1/910x720/6whFPca4NAkZza-f.mp4?tag=29",
+     "poster": "https://pbs.twimg.com/amplify_video_thumb/2100694537672998912/img/OF8vottg6-45ZgNl.jpg",
+     "ratio": 0.7898,
+     "duration": 5,
+     "gif": false
+    }
+   ],
+   "links": []
+  }
+ ],
+ "article": {
+  "title": "یه متخصصی به اسم تامارا دست گذاشته رو یه قابلیت خفن و میگه بالاخره برگ برنده ابزار Jev از تیم TypeSafeAI رو پیدا کرده: فشرده‌سازی و جمع‌وجور کردن آنی کانتکست",
+  "source_title": "found the perfect use case for @typesafeai Jev:",
+  "body": [
+   "ببین رفیق، یه متخصصی به اسم تامارا دست گذاشته رو یه قابلیت خفن و میگه بالاخره برگ برنده ابزار Jev از تیم TypeSafeAI رو پیدا کرده: فشرده‌سازی و جمع‌وجور کردن آنی کانتکست. حرف حسابش اینه که دیگه دوره‌ی این که واسه خلاصه کردن تاریخچه چت‌ها و کانتکست، هی پرامپت جدا بنویسیم و معطل مدل بشیم تموم شده. ابزار Jev میاد در جا به تک‌تک فراخوانی ابزارها و دیتاها امتیاز میده و هرچیزی که بی‌ربط و اضافه باشه رو در دم حذف می‌کنه تا فضا سبک بمونه. با این ترفند، دیگه ایجنت‌های هوش مصنوعی گیر نمی‌کنن و سرعت پاسخ‌دهی‌شون به شدت بالا میره."
+  ],
+  "why": "فشرده‌سازی درلحظه، هزینه‌ی سنگین توکن‌ها و کندی خلاصه‌سازی رو از بین می‌بره و کارایی ایجنت‌ها رو چند لول ارتقا میده.",
+  "tags": []
+ },
+ "updated": "2026-10-25T12:26:35+00:00",
+ "gholam_checked": "2026-10-25T12:26:35+00:00"
+}

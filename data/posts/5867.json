@@ -1,0 +1,61 @@
+{
+ "id": 5867,
+ "url": "https://t.me/dlmehr/5867",
+ "date": "2026-10-13T17:03:43+00:00",
+ "text": "https://fxtwitter.com/anthropicai/status/2110047081414987957?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+ "forwarded_from": null,
+ "digest": false,
+ "hash": "d771487e1393",
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/anthropicai/status/2110047081414987957?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+  "site": "FxTwitter · anthropic.com",
+  "title": "Anthropic (@AnthropicAI)",
+  "description": "New on our Engineering blog: Creating in-house source control.\nIn May, we merged around 2,500 code changes per day. In September, we merged more than 30,000 per day. As a result, we became bottlenecked by developer infrastructure built for human (rather…",
+  "image": "https://cdn4.telesco.pe/file/ppmpt7dc9Q6IZE5Gek94mJRqgygA5VVdnfyKTrZ-H14rGlX2mLJcb3KF1WpJG-qrbsRxvJxrlRvBnYrS-vQhwEN_MP5wQlj5evrblj6n1B0sK7cJkciSLjjsMBm9KTDJVWAJzQFXljTcHVFKOC-pu3pUp4Im-MPIg2KjcV3HaOtAgH3UxsxsGWgZHkLQSvnZ63yeCNi8e6TJ46mNR41cF1IaF2xchs2Sn18zeRnBlXmv-B3oc7kYNBw9uKGhkzu8oTsx-6e63bLpdZg15evhXRe_PlRYLnjz7R9AxJzAoe2Pk7fDnJjiBJN4tgixR8C6PETFWumNR_Rr_CtnVjx93g.jpg"
+ },
+ "gholam": {
+  "text": "رفیق، قضیه از این قراره که بچه‌های آنتروپیک دیدن اوضاع کاره و سیستم‌های معمولی دیگه جواب نمیده؛ آمارشون نشون میده ماه مِی روزی ۲۵۰۰ تا تغییر کد مِرج می‌کردن، ولی تا سپتامبر این عدد یهو ترکید و رسید به بالای ۳۰ هزار تا در روز! ماجرا هم اینه که دیگه فقط آدمیزاد پشت سیستم نیست و هوش مصنوعی‌ها خودشون کد می‌زنن، واسه همین ابزارهای قدیمی مثل گیت جلوشون زانو زدن و گلوگاه شدن. در نتیجه نشستن ظرف پنج ماه کل مخزن کدشون رو از گیت کشیدن بیرون و از صفر یه سیستم کنترل نسخه اختصاصی واسه خودشون علم کردن.\n\nاهمیتش اینه که نشون میده با ورود ایجنت‌های هوش مصنوعی به برنامه‌نویسی، زیرساخت‌های سنتی نرم‌افزار دارن کم میارن و دنیای مهندسی داره کاملاً زیر و رو میشه.",
+  "date": "2026-10-13T17:03:58+00:00"
+ },
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/AnthropicAI/status/2110047081414987957",
+   "domain": "x.com",
+   "author": {
+    "name": "Anthropic",
+    "handle": "AnthropicAI",
+    "avatar": "https://pbs.twimg.com/profile_images/1798110641414443008/XP8gyBaY_200x200.jpg"
+   },
+   "text": "New on our Engineering blog: Creating in-house source control. \n\nIn May, we merged around 2,500 code changes per day. In September, we merged more than 30,000 per day. As a result, we became bottlenecked by developer infrastructure built for human (rather than agent) scale.  \n\nHere, we share how we built a new version control system—and fully migrated our monorepo from git—in five months: https://www.anthropic.com/engineering/redesigning-source-control",
+   "date": 1791909401,
+   "media": [],
+   "links": [
+    "https://www.anthropic.com/engineering/redesigning-source-control"
+   ]
+  },
+  {
+   "kind": "link",
+   "url": "https://www.anthropic.com/research/redesigning-source-control",
+   "domain": "anthropic.com",
+   "title": "Redesigning source control at Anthropic",
+   "description": "As our merges per day grew more than tenfold, source control became our biggest development bottleneck. Here, we share how we migrated to an in-house version control system in five months.",
+   "image": "https://www-cdn.anthropic.com/images/4zrzovbb/website/f51d635fde176783a022c74b185a4dea2a54e8a0-1200x630.jpg",
+   "site": "anthropic.com"
+  }
+ ],
+ "article": {
+  "title": "قضیه از این قراره که بچه‌های آنتروپیک دیدن اوضاع کاره و سیستم‌های معمولی دیگه جواب نمیده",
+  "source_title": "New on our Engineering blog: Creating in-house source control.",
+  "body": [
+   "رفیق، قضیه از این قراره که بچه‌های آنتروپیک دیدن اوضاع کاره و سیستم‌های معمولی دیگه جواب نمیده؛ آمارشون نشون میده ماه مِی روزی ۲۵۰۰ تا تغییر کد مِرج می‌کردن، ولی تا سپتامبر این عدد یهو ترکید و رسید به بالای ۳۰ هزار تا در روز! ماجرا هم اینه که دیگه فقط آدمیزاد پشت سیستم نیست و هوش مصنوعی‌ها خودشون کد می‌زنن، واسه همین ابزارهای قدیمی مثل گیت جلوشون زانو زدن و گلوگاه شدن. در نتیجه نشستن ظرف پنج ماه کل مخزن کدشون رو از گیت کشیدن بیرون و از صفر یه سیستم کنترل نسخه اختصاصی واسه خودشون علم کردن."
+  ],
+  "why": "نشون میده با ورود ایجنت‌های هوش مصنوعی به برنامه‌نویسی، زیرساخت‌های سنتی نرم‌افزار دارن کم میارن و دنیای مهندسی داره کاملاً زیر و رو میشه.",
+  "tags": [
+   "آنتروپیک"
+  ]
+ },
+ "updated": "2026-10-25T12:23:37+00:00",
+ "gholam_checked": "2026-10-25T12:23:37+00:00"
+}
