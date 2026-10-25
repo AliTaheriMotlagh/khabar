@@ -3,7 +3,8 @@
 import { SITE } from '../site';
 import { $, $$, fmtNum, store, toast } from './core';
 import { award } from './game';
-import { Speaker, canSpeakPersian } from './speech';
+import { Speaker, type Line } from './speech';
+import { canListen, listenOr } from './voice-offer';
 
 type Prefs = Record<string, string>;
 const SIZES = ['s', 'm', 'l', 'xl'];
@@ -74,7 +75,7 @@ function offerResume() {
   addEventListener('scroll', () => scrollY > 400 && hide(), { passive: true });
 }
 
-// ---------- listen (src/scripts/speech.ts picks the voice) ----------
+// ---------- listen (src/scripts/speech.ts picks the voice; src/scripts/voice-offer.ts offers one if there is none) ----------
 const listenBtn = $('[data-listen]');
 const rateBtn = $('[data-rate]');
 const RATES = [1, 1.25, 1.5, 1.75, 0.85];
@@ -166,9 +167,41 @@ async function shareQuote() {
   }
 }
 
+// ---------- listen to the morning brief (home page) ----------
+function initBrief() {
+  const btn = $('[data-brief-listen]');
+  if (!btn) return;
+  const items = $$('.brief-list li');
+  const lines = JSON.parse(btn.dataset.lines ?? '[]') as Line[];
+  const label = $('[data-listen-label]', btn)!;
+  const brief = new Speaker({
+    line(n) {
+      items.forEach((li, k) => li.classList.toggle('is-speaking', k === n - 1));
+    },
+    state(s) {
+      btn.dataset.state = s;
+      btn.setAttribute('aria-pressed', String(s === 'playing' || s === 'loading'));
+      label.textContent = s === 'playing' ? 'مکث' : s === 'loading' ? 'آماده‌سازی…' : s === 'paused' ? 'ادامه' : 'گوش دادن';
+      if (s === 'idle') items.forEach((li) => li.classList.remove('is-speaking'));
+    },
+    fail: (msg) => toast(msg),
+  });
+  brief.rate = store.get<number>('rate', 1);
+  const toggle = () => {
+    if (brief.state === 'playing' || brief.state === 'loading') return brief.pause();
+    if (brief.state === 'paused') return brief.resume();
+    if ('mediaSession' in navigator) navigator.mediaSession.metadata = new MediaMetadata({ title: 'خلاصه‌ی خبرهای صبح', artist: SITE.name });
+    brief.start(lines);
+  };
+  canListen().then((ok) => (btn.hidden = !ok || !lines.length));
+  btn.addEventListener('click', () => (brief.state === 'idle' ? listenOr(toggle) : toggle()));
+  addEventListener('pagehide', () => brief.stop());
+}
+
 export function initReader(get: () => Prefs, set: (patch: Prefs) => void) {
   prefs = get;
   save = set;
+  initBrief();
   if (!article) return;
   readerProgress(0);
   offerResume();
@@ -176,8 +209,8 @@ export function initReader(get: () => Prefs, set: (patch: Prefs) => void) {
   document.addEventListener('visibilitychange', () => document.visibilityState === 'hidden' && rememberPosition());
 
   if (listenBtn) {
-    canSpeakPersian().then((ok) => (listenBtn.hidden = !ok));
-    listenBtn.addEventListener('click', toggleListen);
+    canListen().then((ok) => (listenBtn.hidden = !ok));
+    listenBtn.addEventListener('click', () => (speaker.state === 'idle' ? listenOr(toggleListen) : toggleListen()));
     showRate();
     rateBtn?.addEventListener('click', stepRate);
     if ('mediaSession' in navigator) {

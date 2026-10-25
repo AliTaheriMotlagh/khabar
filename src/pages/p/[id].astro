@@ -8,7 +8,7 @@ import SaveButton from '../../components/SaveButton.astro';
 import Reactions from '../../components/Reactions.astro';
 import Comments from '../../components/Comments.astro';
 import { SITE } from '../../site';
-import { abs, fresh, getFeed, getPosts, related, sized, faDate, faNum, tagHref, type Post } from '../../lib/posts';
+import { abs, getFeed, getPosts, related, sized, faDate, faNum, pic, picture, tagHref, type Post } from '../../lib/posts';
 
 export function getStaticPaths() {
   // Previous/next walk the listed feed; an unlisted (English-only) page has none.
@@ -91,7 +91,7 @@ const jsonLd = [
   progress
 >
   <div class="container narrow">
-    <article class="article" data-article data-id={post.id} data-title={a.title} data-href={post.href} data-cover={post.cover ? sized(post.cover.src || post.cover.poster, 'small') : ''} data-tags={a.tags.join(',')} data-minutes={post.minutes} data-pagefind-body>
+    <article class="article" data-article data-id={post.id} data-title={a.title} data-href={post.href} data-cover={post.cover ? picture(post.cover.src || post.cover.poster, 'small').src : ''} data-tags={a.tags.join(',')} data-minutes={post.minutes} data-pagefind-body>
       <header class="article-head">
         <div class="story-head" data-pagefind-ignore>
           {post.kind === 'digest' ? <span class="kicker"><Icon name="bolt" /> خلاصه‌ی صبح</span> : a.tags[0] && <a class="kicker" href={tagHref(a.tags[0])}>{a.tags[0]}</a>}
@@ -174,7 +174,7 @@ const jsonLd = [
               <div class="related">
                 {rel.map((r) => (
                   <a class="rel-card" href={r.href}>
-                    {r.cover ? <img src={sized(r.cover.src || r.cover.poster, 'small')} alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer" data-fresh={fresh(r.cover.src || r.cover.poster)} /> : <span class="ph"><Icon name="news" /></span>}
+                    {r.cover ? <img {...pic(r.cover.src || r.cover.poster, 'small')} alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer" /> : <span class="ph"><Icon name="news" /></span>}
                     <span>{r.article.title}</span>
                   </a>
                 ))}

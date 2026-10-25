@@ -1,14 +1,16 @@
 // Offline reading on unstable connections.
 // Pages: network first (fresh news), then the cached copy, then the offline page.
 // Site assets: cache first. Images from Telegram/X: cache first, so pages you read stay complete offline.
-// Never cached: the live API (/api/) and videos (too big, and ranged requests).
+// Pictures relayed by the site (/api/img/) count as images. Never cached: the rest of the live API (/api/) and videos
+// (too big, and ranged requests).
 const VERSION = 'v2';
 const PAGES = 'pages-v2'; // also used by src/scripts/core.ts to keep saved stories offline
 const ASSETS = `assets-${VERSION}`;
 const IMAGES = `images-${VERSION}`;
 const SCOPE = new URL(self.registration.scope).pathname;
 const OFFLINE = `${SCOPE}offline/`;
-const IMAGE_HOSTS = /(^|\.)(twimg\.com|telesco\.pe|ytimg\.com)$/;
+const VOICE = 'voice-v1'; // the downloaded Persian voice (src/scripts/voice.ts): never cleared here
+const IMAGE_HOSTS = /(^|\.)(twimg\.com|telesco\.pe|ytimg\.com|wsrv\.nl)$/; // wsrv.nl: the image proxy (src/lib/posts.ts)
 
 self.addEventListener('install', (e) => {
   e.waitUntil(caches.open(PAGES).then((c) => c.addAll([SCOPE, OFFLINE])).then(() => self.skipWaiting()));
@@ -18,7 +20,7 @@ self.addEventListener('activate', (e) => {
   e.waitUntil(
     caches
       .keys()
-      .then((keys) => Promise.all(keys.filter((k) => ![PAGES, ASSETS, IMAGES].includes(k)).map((k) => caches.delete(k))))
+      .then((keys) => Promise.all(keys.filter((k) => ![PAGES, ASSETS, IMAGES, VOICE].includes(k)).map((k) => caches.delete(k))))
       .then(() => self.clients.claim()),
   );
 });
@@ -71,6 +73,7 @@ self.addEventListener('fetch', (e) => {
   if (req.method !== 'GET' || req.headers.has('range')) return;
   const u = new URL(req.url);
   if (u.origin === location.origin) {
+    if (u.pathname.includes('/api/img/')) return e.respondWith(cacheFirst(req, IMAGES, 400).catch(() => Response.error()));
     if (u.pathname.includes('/api/')) return;
     if (req.mode === 'navigate') return e.respondWith(networkFirst(req, e));
     if (u.pathname.includes('/_astro/') || u.pathname.includes('/pagefind/')) return e.respondWith(cacheFirst(req, ASSETS, 200));

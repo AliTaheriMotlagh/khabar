@@ -2,7 +2,7 @@
 // The original source of a story: the tweet (with all its media) or the linked article.
 import Icon from './Icon.astro';
 import Media from './Media.astro';
-import { sized, type Link } from '../lib/posts';
+import { pic, type Link } from '../lib/posts';
 interface Props { link: Link; alt: string; fallbackHref: string; showMedia?: boolean }
 const { link, alt, fallbackHref, showMedia = true } = Astro.props;
 
@@ -16,7 +16,7 @@ const tweetDate = (t?: number) =>
   link.kind === 'tweet' ? (
     <section class="source tweet" aria-label={`توییت ${link.author?.name ?? ''}`}>
       <div class="head">
-        {link.author?.avatar ? <img src={link.author.avatar} alt="" width="40" height="40" loading="lazy" referrerpolicy="no-referrer" /> : <span class="av" />}
+        {link.author?.avatar ? <img {...pic(link.author.avatar, 'small')} alt="" width="40" height="40" loading="lazy" referrerpolicy="no-referrer" /> : <span class="av" />}
         <div class="who ltr" dir="ltr">
           <b>{link.author?.name}</b>
           <span>@{link.author?.handle}</span>
@@ -42,7 +42,7 @@ const tweetDate = (t?: number) =>
     <section class="source page" aria-label={`منبع: ${link.site ?? link.domain}`}>
       {link.image && (
         <a class="og" href={link.url} target="_blank" rel="noopener" tabindex="-1" aria-hidden="true">
-          <img src={sized(link.image, 'medium')} alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer" data-fallback={link.url} />
+          <img {...pic(link.image, 'medium')} alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer" data-fallback={link.url} />
           {link.kind === 'youtube' && <span class="play"><span><Icon name="play" /></span></span>}
         </a>
       )}

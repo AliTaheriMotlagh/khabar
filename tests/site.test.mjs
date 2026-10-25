@@ -137,26 +137,54 @@ test('tags: a topic page lists only its own stories, each labelled with that top
   }
 });
 
-test('cards: a view counter on every story; Telegram media knows where to get a fresh URL', { skip }, () => {
+test('cards: a view counter on every story; pictures come through the site, with fallbacks down to the original', { skip }, () => {
   const home = html('index.html');
   const items = home.split('<li class="tl-item"').slice(1).filter((s) => s.includes('class="story"'));
   assert.ok(items.length > 5);
   for (const item of items) assert.match(item, /data-views="\d+"[^>]*hidden/, 'hidden until the API has a count');
-  let checked = 0;
+  let telegram = 0;
+  let other = 0;
   // The news (lead and timeline); the channel's avatar is re-read on every crawl.
   const news = home.slice(Math.max(0, home.indexOf('class="lead-main')), home.indexOf('</ol>', home.indexOf('data-tl>')));
+  const attr = (tag, name) => tag.match(new RegExp(`\\s${name}="([^"]*)"`))?.[1]?.replace(/&amp;/g, '&');
+  /** Which stored URL an /api/media or /api/img address stands for. */
+  const item = (u) => {
+    const [, p, i, f] = u.match(/\/api\/(?:media|img)\/\?p=(\d+)(?:&i=(\d+))?(?:&f=(poster|preview))?$/) ?? [];
+    return p && (f === 'preview' ? posts[p].preview.image : f ? posts[p].media[Number(i)].poster : posts[p].media[Number(i)].src);
+  };
   for (const m of news.matchAll(/<(?:img|video)\b[^>]*>/g)) {
-    const src = m[0].match(/\ssrc="([^"]+)"/)?.[1] ?? '';
-    if (!/telesco\.pe\//.test(src)) {
-      assert.doesNotMatch(m[0], /data-fresh=/, `only Telegram URLs expire: ${src}`);
+    // data-fresh belongs to the "new stories" pill: a picture carrying it would reload the page when tapped.
+    assert.doesNotMatch(m[0], /data-fresh=/, 'media use data-alt');
+    if (m[0].startsWith('<video')) {
+      const src = attr(m[0], 'src');
+      const alt = attr(m[0], 'data-alt');
+      if (/telesco\.pe\//.test(src)) assert.equal(item(alt), src, 'a Telegram video falls back to its current URL');
+      else assert.equal(alt, undefined, `only Telegram URLs expire: ${src}`);
       continue;
     }
-    checked++;
-    const fresh = m[0].match(/data-fresh="[^"]*\/api\/media\/\?p=(\d+)(?:&(?:amp;)?i=(\d+))?(?:&(?:amp;)?f=(poster|preview))?"/);
-    assert.ok(fresh, `no fresh address for ${src}`);
-    const [, p, i, f] = fresh;
-    const want = f === 'preview' ? posts[p].preview.image : f ? posts[p].media[Number(i)].poster : posts[p].media[Number(i)].src;
-    assert.equal(src.replace(/&amp;/g, '&'), want, `#${p}: data-fresh points at the same item`);
+    const src = attr(m[0], 'src');
+    if (!src || src.startsWith('data:')) continue;
+    const alt = (attr(m[0], 'data-alt') ?? '').split(' ');
+    const proxy = alt.map((u) => /^https:\/\/wsrv\.nl\//.test(u) && new URL(u).searchParams.get('url')).find(Boolean);
+    if (/\/api\/img\/\?p=/.test(src)) {
+      // A Telegram picture: the site relay by post and index first, then the proxy, then the stored URL.
+      telegram++;
+      const stored = item(src.replace(/&w=\d+$/, ''));
+      assert.ok(stored, `${src}: points at a real media item`);
+      assert.equal(item(proxy), stored, 'the proxy asks for the same item');
+      assert.ok(alt.includes(stored), 'falls back to the stored Telegram URL');
+    } else if (/\/api\/img\/\?u=/.test(src)) {
+      // From X: the site relay first, then the proxy, then the original.
+      other++;
+      const original = new URL(src, 'https://site.test').searchParams.get('u');
+      assert.match(original, /^https:\/\/(pbs\.twimg\.com|i\.ytimg\.com)\//);
+      assert.equal(proxy, original);
+      assert.ok(alt.includes(original), `falls back to the original: ${original}`);
+    } else {
+      // Any other site: the proxy, then the original.
+      assert.match(src, /^https:\/\/wsrv\.nl\//, `shown through the image proxy: ${src}`);
+      assert.ok(alt.includes(new URL(src).searchParams.get('url')), 'falls back to the original');
+    }
   }
-  assert.ok(checked > 0, 'the home page has Telegram media');
+  assert.ok(telegram > 0 && other > 0, 'the home page has Telegram and X pictures');
 });

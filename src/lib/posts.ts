@@ -94,6 +94,35 @@ function noteFresh(raw: RawPost) {
 /** Where to get a fresh copy of a Telegram media URL (undefined for any other URL). */
 export const fresh = (src: string | null | undefined) => (src ? freshUrls.get(src) : undefined);
 
+// Most readers are in Iran, where Telegram's and X's CDNs are filtered, and where a browser's connection to other
+// foreign hosts stalls once it carries several requests at a time (measured: wsrv.nl and images.weserv.nl, on
+// Cloudflare, return nothing to 9 multiplexed requests; the site's own Vercel domain serves them in 2 s). So a picture
+// from those CDNs comes through the site itself first (api/img.js: resized to WebP via wsrv.nl server-side, CDN-cached);
+// then through wsrv.nl directly; then from the original address (fine with a VPN). Pictures from other sites (link
+// previews) go wsrv.nl, then original. src/scripts/media.ts walks the list (data-alt) and moves on when an address
+// fails or just hangs. A Telegram picture goes by its post and index: always the current signed URL, and the same
+// address forever, so caches keep serving it. Social cards, JSON-LD and RSS keep the original URLs.
+const PROXY = 'https://wsrv.nl/';
+const WIDTH = { small: 320, medium: 800, large: 1400 }; // api/img.js accepts exactly these
+const RELAYED = /^https:\/\/(pbs\.twimg\.com|[\w-]+\.telesco\.pe|i\.ytimg\.com)\//; // and only these hosts
+const absolute = (u: string) => (u.startsWith('/') ? `${SITE.api || SITE.url}${u}` : u);
+const viaProxy = (u: string, size: keyof typeof WIDTH) => `${PROXY}?url=${encodeURIComponent(absolute(u))}&w=${WIDTH[size]}&we&output=webp&q=80`;
+/** An image's addresses, best first: `src` for the HTML and the rest, space-separated, for data-alt. */
+export function picture(raw: string | null | undefined, size: keyof typeof WIDTH = 'medium'): { src: string; alt: string | undefined } {
+  const src = sized(raw, size);
+  if (!/^https:\/\//.test(src)) return { src, alt: undefined };
+  const tg = fresh(raw);
+  const w = `&w=${WIDTH[size]}`;
+  const relay = tg ? tg.replace('/api/media/', '/api/img/') + w : RELAYED.test(src) ? `${SITE.api}/api/img/?u=${encodeURIComponent(src)}${w}` : null;
+  const list = [relay, viaProxy(tg ?? src, size), src, tg].filter((u): u is string => !!u);
+  return { src: list[0], alt: list.slice(1).join(' ') };
+}
+/** Attributes for an <img>: the first address, and the others to fall back to. */
+export const pic = (raw: string | null | undefined, size: keyof typeof WIDTH = 'medium') => {
+  const p = picture(raw, size);
+  return { src: p.src, 'data-alt': p.alt };
+};
+
 const clip = (s: string, n: number) => {
   s = s.replace(/\s+/g, ' ').trim();
   return s.length <= n ? s : s.slice(0, n).replace(/\s+\S*$/, '').replace(/[\s.،,:;؛-]+$/, '') + '…';

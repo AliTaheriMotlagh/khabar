@@ -2,7 +2,7 @@
 // Wide screens only (hidden below 1080px, where the footer and tab bar carry these links).
 import Icon from './Icon.astro';
 import { SITE } from '../site';
-import { getChannel, getTags, tagHref, faNum } from '../lib/posts';
+import { getChannel, getTags, tagHref, faNum, pic } from '../lib/posts';
 interface Props { current?: string }
 const { current } = Astro.props;
 const channel = getChannel();
@@ -11,7 +11,7 @@ const tags = getTags().slice(0, 14);
 <aside class="sidebar" aria-label="ستون کناری">
   <section class="side-card channel-card">
     <div class="ch-top">
-      {channel.avatar ? <img src={channel.avatar} alt="" width="48" height="48" referrerpolicy="no-referrer" /> : <span class="logo-mark big" aria-hidden="true"></span>}
+      {channel.avatar ? <img {...pic(channel.avatar, 'small')} alt="" width="48" height="48" referrerpolicy="no-referrer" /> : <span class="logo-mark big" aria-hidden="true"></span>}
       <div>
         <b>{channel.title ?? SITE.nameLatin}</b>
         {channel.subscribers && <small><span data-num>{faNum(channel.subscribers)}</span> عضو</small>}

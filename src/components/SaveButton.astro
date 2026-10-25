@@ -1,6 +1,6 @@
 ---
 import Icon from './Icon.astro';
-import { sized, type Post } from '../lib/posts';
+import { picture, type Post } from '../lib/posts';
 interface Props { post: Post; class?: string; label?: boolean }
 const { post, class: cls = 'icon-btn', label = false } = Astro.props;
 ---
@@ -13,7 +13,7 @@ const { post, class: cls = 'icon-btn', label = false } = Astro.props;
   data-id={post.id}
   data-title={post.article.title}
   data-href={post.href}
-  data-cover={post.cover ? sized(post.cover.src || post.cover.poster, 'small') : ''}
+  data-cover={post.cover ? picture(post.cover.src || post.cover.poster, 'small').src : ''}
   data-date={post.date}
 >
   <Icon name="bookmark" class="off" /><Icon name="bookmark-fill" class="on" />

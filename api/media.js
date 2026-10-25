@@ -43,12 +43,17 @@ const done = (request, status, headers = {}) =>
 
 export const OPTIONS = preflight;
 
-export async function GET(request) {
-  const q = new URL(request.url).searchParams;
+/** Parses ?p=<post>&i=<n>&f=<field> → { post, i, field }, or null when malformed. */
+export function mediaParams(q) {
   const post = postId(q.get('p'));
   const i = /^\d{1,2}$/.test(q.get('i') ?? '') ? Number(q.get('i')) : null;
   const field = ['poster', 'preview'].includes(q.get('f')) ? q.get('f') : 'src';
-  if (!post || (i == null && field !== 'preview')) return fail(request, 400, 'bad request');
+  return !post || (i == null && field !== 'preview') ? null : { post, i, field };
+}
+
+/** The current Telegram CDN URL of a post's media item: { url } (null when the post has no such item), or { error }
+ *  when t.me couldn't be read. Shared with /api/img, which fetches the bytes instead of redirecting. */
+export async function currentUrl({ post, i, field }) {
   let html;
   try {
     const res = await fetch(`https://t.me/${CHANNEL}/${post}?embed=1&mode=tme`, {
@@ -58,10 +63,18 @@ export async function GET(request) {
     if (!res.ok) throw new Error(`t.me ${res.status}`);
     html = await res.text();
   } catch {
-    return done(request, 502, { 'Cache-Control': 'no-store' });
+    return { error: true };
   }
   const url = field === 'preview' ? parsePreview(html) : parseMedia(html)[i]?.[field];
+  return { url: url && CDN.test(url) ? url : null };
+}
+
+export async function GET(request) {
+  const params = mediaParams(new URL(request.url).searchParams);
+  if (!params) return fail(request, 400, 'bad request');
+  const { url, error } = await currentUrl(params);
+  if (error) return done(request, 502, { 'Cache-Control': 'no-store' });
   // Not there (deleted post, edited album): say so for a while, so a broken image doesn't ask on every view.
-  if (!url || !CDN.test(url)) return done(request, 404, { 'Cache-Control': 'public, max-age=0, s-maxage=600' });
+  if (!url) return done(request, 404, { 'Cache-Control': 'public, max-age=0, s-maxage=600' });
   return done(request, 302, { Location: url, 'Cache-Control': 'public, max-age=1800, s-maxage=3600' });
 }

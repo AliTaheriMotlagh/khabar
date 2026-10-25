@@ -1,9 +1,10 @@
 // Long-press (or "v" on a focused story) any link to a story to preview it in a sheet without leaving the page.
 import { $, BASE, esc, fmtNum, getSaved, relTime } from './core';
+import { showImage } from './media';
 
 type Card = {
   id: number; kind: string; title: string; href: string; date: string; minutes: number;
-  tag: string | null; site: string | null; cover: string | null; thumb: string; fresh?: string | null; body: string[]; why: string | null;
+  tag: string | null; site: string | null; cover: string | null; coverAlt?: string | null; thumb: string; body: string[]; why: string | null;
 };
 
 const HOLD_MS = 420;
@@ -42,10 +43,7 @@ function fill(c: Partial<Card> & { title: string; href: string }, state: 'loadin
   const cover = $<HTMLImageElement>('[data-peek-cover]', dialog)!;
   cover.hidden = !c.cover;
   if (c.cover && cover.getAttribute('src') !== c.cover) {
-    delete cover.dataset.refreshed;
-    if (c.fresh) cover.dataset.fresh = c.fresh;
-    else delete cover.dataset.fresh;
-    cover.src = c.cover;
+    showImage(cover, c.cover, c.coverAlt ?? '');
   }
   const text = $('[data-peek-text]', dialog)!;
   text.innerHTML =

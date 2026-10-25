@@ -3,10 +3,11 @@ import { $, $$, BASE, PAGE_CACHE, fmtNum, getSaved, relTime, store, toast, type 
 import { award, markNew, offersSet, pickStories, recordRead, renderMe, storySet, unreadTest } from './game';
 import { TZ, decodeStories, tehranDay } from '../lib/time';
 import { SITE } from '../site';
-import { watchMedia } from './media';
+import { showImage, watchMedia } from './media';
 import { initPeek, peek } from './peek';
 import { initReader, readerProgress, stepSize, toggleFocus } from './reader';
 import { initSocial, loadEngage } from './social';
+import { initVoiceOffer } from './voice-offer';
 
 export { getSaved, getHistory, rowHtml, store } from './core';
 
@@ -146,9 +147,8 @@ const lightbox = $<HTMLDialogElement>('#lightbox');
 function zoom(img: HTMLImageElement) {
   const big = $<HTMLImageElement>('[data-lightbox-img]', lightbox!);
   if (!lightbox || !big) return;
-  delete big.dataset.retried;
-  big.dataset.loading = '';
-  big.src = img.dataset.zoom || img.src;
+  // The large picture's own addresses, then the one already on screen.
+  showImage(big, img.dataset.zoom || img.src, [img.dataset.zoomAlt, img.src].filter(Boolean).join(' '));
   big.alt = img.alt;
   lightbox.showModal();
 }
@@ -342,5 +342,6 @@ renderRail();
 watchMedia();
 initSocial();
 initPeek();
+initVoiceOffer();
 initReader(() => settings, saveSettings);
 setInterval(renderDates, 60_000);

@@ -1,0 +1,29 @@
+---
+// Offered when "listen" is tapped on a device with no Persian voice: download the on-device voice once
+// (src/scripts/voice.ts, src/scripts/voice-offer.ts). Also opened from the settings sheet.
+import Icon from './Icon.astro';
+---
+<dialog class="sheet voice-sheet" id="voice" aria-labelledby="voice-title">
+  <div class="sheet-head">
+    <h2 id="voice-title"><Icon name="volume" /> صدای فارسی</h2>
+    <button class="icon-btn" type="button" data-close aria-label="بستن"><Icon name="x" /></button>
+  </div>
+  <div class="sheet-body">
+    <p class="voice-lead" data-voice-lead>این دستگاه صدای فارسی ندارد. صدای فارسی را یک بار دانلود کنید تا خبرها و خلاصه‌ی روز را بشنوید.</p>
+    <ul class="voice-facts">
+      <li><Icon name="download" /> حدود <b data-voice-mb>۹۳</b> مگابایت، فقط یک بار — بهتر است با وای‌فای</li>
+      <li><Icon name="refresh" /> اگر اینترنت قطع شد، از همان‌جا ادامه می‌دهد</li>
+      <li><Icon name="check" /> صدا روی خود دستگاه ساخته می‌شود؛ بعد از دانلود بدون اینترنت هم کار می‌کند</li>
+    </ul>
+    <div class="voice-progress" data-voice-progress hidden>
+      <progress max="100" value="0"></progress>
+      <small data-voice-pct></small>
+    </div>
+    <p class="voice-msg" data-voice-msg role="status" aria-live="polite"></p>
+    <div class="sheet-foot">
+      <button class="btn" type="button" data-voice-remove hidden><Icon name="trash" /> پاک کردن صدا</button>
+      <button class="btn" type="button" data-close data-voice-later>بعداً</button>
+      <button class="btn primary" type="button" data-voice-go><Icon name="download" /> <span data-voice-go-label>دانلود صدا</span></button>
+    </div>
+  </div>
+</dialog>

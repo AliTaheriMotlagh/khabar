@@ -6,13 +6,12 @@ import Icon from './Icon.astro';
 import Media from './Media.astro';
 import SaveButton from './SaveButton.astro';
 import DigestCard from './DigestCard.astro';
-import { faTime, fresh, sized, tagHref, type Post } from '../lib/posts';
+import { faTime, pic, tagHref, type Post } from '../lib/posts';
 interface Props { post: Post; eager?: boolean; topic?: string }
 const { post, eager = false, topic } = Astro.props;
 const a = post.article;
 const tag = topic && a.tags.includes(topic) ? topic : a.tags[0];
-const thumb = post.cover ? sized(post.cover.src || post.cover.poster, 'small') : '';
-const thumbFresh = fresh(post.cover?.src || post.cover?.poster);
+const thumb = post.cover ? pic(post.cover.src || post.cover.poster, 'small') : null;
 ---
 <li class="tl-item" data-id={post.id} data-kind={post.kind}>
   <span class="tl-dot" aria-hidden="true"></span>
@@ -22,7 +21,7 @@ const thumbFresh = fresh(post.cover?.src || post.cover?.poster);
       <DigestCard post={post} limit={3} />
     ) : (
       <article class="story" aria-labelledby={`t-${post.id}`}>
-        {thumb && <img class="row-thumb" src={thumb} alt="" width="72" height="72" loading="lazy" decoding="async" referrerpolicy="no-referrer" data-fresh={thumbFresh} />}
+        {thumb && <img class="row-thumb" {...thumb} alt="" width="72" height="72" loading="lazy" decoding="async" referrerpolicy="no-referrer" />}
         <div class="story-main">
           <div class="story-head">
             {tag && <a class="kicker" href={tagHref(tag)}>{tag}</a>}
@@ -36,7 +35,7 @@ const thumbFresh = fresh(post.cover?.src || post.cover?.poster);
         ) : (
           post.cover && (
             <a class="story-cover" href={post.href} tabindex="-1" aria-hidden="true">
-              <img src={thumb} alt="" loading={eager ? 'eager' : 'lazy'} decoding="async" referrerpolicy="no-referrer" data-fallback={post.url} data-fresh={thumbFresh} />
+              <img {...thumb} alt="" loading={eager ? 'eager' : 'lazy'} decoding="async" referrerpolicy="no-referrer" data-fallback={post.url} />
             </a>
           )
         )}

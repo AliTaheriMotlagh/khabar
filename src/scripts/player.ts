@@ -8,6 +8,8 @@
 import { $, $$, fmtNum, store, toast } from './core';
 import { markSeen, offersSet, pickStories, storySet, type StorySet } from './game';
 import { Speaker, canSpeakPersian, type Line } from './speech';
+import { openVoice } from './voice-offer';
+import { voiceSupported } from './voice';
 
 const TEXT: Record<StorySet, { name: string; done: string; empty: string }> = {
   new: { name: 'تازه‌ها از آخرین سر زدن', done: 'همه‌ی خبرهای تازه را دیدید', empty: 'از آخرین سر زدنتان خبر تازه‌ای نیامده' },
@@ -50,7 +52,8 @@ function init(player: HTMLElement) {
   let paused = false;
   let held = false;
   let sound = store.get<boolean>('pl-sound', false);
-  let voice = false; // a Persian voice exists (the device's own, or the cloud one)
+  let voice = false; // a Persian voice exists (the device's own, the cloud one, or one downloaded to the device)
+  const offer = voiceSupported(); // without one, turning the sound on offers the download
   let lines: Line[] = [];
   let elapsed = 0;
   let waited = 0;
@@ -202,10 +205,20 @@ function init(player: HTMLElement) {
     if (voiced() && !paused) speaker.start(lines);
   }
   function refreshSoundBtn() {
-    soundBtn.hidden = !voice && !scenes.some(hasAudio);
+    soundBtn.hidden = !voice && !offer && !scenes.some(hasAudio);
   }
   // Runs from a tap, so iOS lets the audio start.
   function setSound(on: boolean) {
+    if (on && !voice && offer && !hasAudio(scenes[at])) {
+      // No Persian voice yet: offer the download, and come back with the sound on from the sheet's own tap.
+      if (!paused) setPaused(true);
+      openVoice(() => {
+        voice = true;
+        setPaused(false);
+        setSound(true);
+      });
+      return;
+    }
     sound = on;
     store.set('pl-sound', on);
     soundBtn.classList.remove('is-armed');
@@ -252,6 +265,8 @@ function init(player: HTMLElement) {
     lines = linesOf(s);
     speaker.stop();
     speak();
+    // The on-device voice makes the next scene's first sentence while this one plays.
+    if (sound && voice && scenes[at + 1] && !hasAudio(scenes[at + 1])) speaker.warm(linesOf(scenes[at + 1]));
     startClock();
   }
   const next = () => show(at + 1);

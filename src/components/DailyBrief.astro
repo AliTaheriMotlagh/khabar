@@ -1,11 +1,13 @@
 ---
 // The channel's own Persian morning summary (posted ~07:36 Tehran; the workflow crawls right after it), top of the home page.
-// Every line links to that story's page here.
+// Every line links to that story's page here. "Listen" reads the whole summary aloud (src/scripts/reader.ts): the same
+// lines as the digest's card.json, so /api/tts can voice them by index.
 import Icon from './Icon.astro';
 import { faDate, faNum, faTime, latestDigest } from '../lib/posts';
 const digest = latestDigest();
 const items = digest?.digestItems ?? [];
 const SHOW = 4;
+const lines = digest ? [{ text: digest.article.title, post: digest.id, i: 0 }, ...items.map((it, k) => ({ text: `${faNum(it.n)} — ${it.text}`, post: digest.id, i: k + 1 }))] : [];
 ---
 {
   digest && items.length > 0 && (
@@ -13,6 +15,9 @@ const SHOW = 4;
       <header class="brief-head">
         <h2 id="brief-title"><Icon name="bolt" /> خلاصه‌ی خبرهای صبح</h2>
         <small>{faDate(digest.date, { weekday: 'long', day: 'numeric', month: 'long' })} · ساعت {faTime(digest.date)}</small>
+        <button class="rb-btn listen brief-listen" type="button" data-brief-listen data-lines={JSON.stringify(lines)} aria-pressed="false" hidden>
+          <Icon name="volume" class="when-idle" /><Icon name="pause" class="when-playing" /><span data-listen-label>گوش دادن</span>
+        </button>
       </header>
       <ol class="brief-list">
         {items.slice(0, SHOW).map((i) => (

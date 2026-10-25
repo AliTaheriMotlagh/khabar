@@ -236,6 +236,8 @@ main { flex: 1; width: 100%; padding-bottom: 40px; }
 .brief-head h2 { margin: 0; font-size: 1.02rem; font-weight: 900; display: flex; align-items: center; gap: 6px; }
 .brief-head h2 .i { color: var(--gold); }
 .brief-head small { color: var(--text-3); font-size: 12.5px; }
+.brief-head .brief-listen { margin-inline-start: auto; align-self: center; height: 34px; padding: 0 12px; }
+.brief-list li.is-speaking { box-shadow: none; padding-inline: 6px; }
 .brief-list { list-style: none; margin: 8px 0 0; padding: 0; counter-reset: b; }
 .brief-list li { counter-increment: b; display: grid; grid-template-columns: 20px 1fr; gap: 8px; padding: 8px 0; border-top: 1px solid var(--border); }
 .brief-list li:first-child { border-top: 0; }
@@ -352,6 +354,8 @@ img[data-loading] { background: linear-gradient(100deg, var(--surface-2) 35%, va
 img.img-ph { object-fit: none !important; background: var(--surface-2); }
 .media-gone { display: grid; place-content: center; justify-items: center; gap: 8px; min-height: 140px; height: 100%; padding: 16px; text-align: center; background: var(--surface-2); color: var(--text-2); font-size: 13.5px; }
 .gallery .media-gone img { width: 28px; height: 28px; background: none; }
+.media-gone[style*='--poster'] { background: linear-gradient(rgb(0 0 0 / .55), rgb(0 0 0 / .55)), var(--poster) center / cover; color: #fff; }
+.media-gone[style*='--poster'] > img { display: none; }
 .media-gone .mg-actions { display: flex; flex-wrap: wrap; justify-content: center; gap: 8px; }
 .media-gone button, .media-gone a { padding: 4px 12px; border: 1px solid var(--border); border-radius: 999px; background: var(--surface); color: var(--text); font: inherit; font-size: 13px; font-weight: 700; text-decoration: none; cursor: pointer; }
 .media-gone button:hover, .media-gone a:hover { border-color: var(--accent); }
@@ -685,6 +689,28 @@ dialog[open] { animation: sheet-in .3s var(--ease); }
 .seg input:checked + span { border-color: var(--accent); background: var(--accent-soft); color: var(--accent); font-weight: 800; }
 .seg input:focus-visible + span { outline: 2.5px solid var(--accent); outline-offset: 2px; }
 .sheet-foot { display: flex; justify-content: space-between; gap: 10px; padding-top: 14px; }
+
+/* the on-device Persian voice: settings line and download sheet (src/scripts/voice-offer.ts) */
+.voice-row { display: flex; align-items: center; justify-content: space-between; gap: 12px; }
+.voice-row-text { display: grid; gap: 2px; font-size: 14px; }
+.voice-row-text b { color: var(--text-2); }
+.voice-row-text small { color: var(--text-3); font-size: 13px; }
+.voice-lead { font-size: 15.5px; line-height: 1.9; margin: 14px 0 8px; }
+.voice-facts { list-style: none; margin: 0 0 6px; padding: 0; display: grid; gap: 8px; font-size: 14px; color: var(--text-2); }
+.voice-facts li { display: flex; align-items: center; gap: 8px; line-height: 1.7; }
+.voice-facts .i { flex: none; width: 17px; height: 17px; color: var(--accent); }
+.voice-sheet[data-view='ready'] .voice-facts, .voice-sheet[data-view='other'] .voice-facts { display: none; }
+.voice-progress { display: grid; gap: 6px; margin: 14px 0 4px; }
+.voice-progress progress { appearance: none; width: 100%; height: 8px; border: 0; border-radius: 99px; overflow: hidden; background: var(--surface-2); }
+.voice-progress progress::-webkit-progress-bar { background: var(--surface-2); }
+.voice-progress progress::-webkit-progress-value { background: linear-gradient(90deg, var(--accent-2), var(--accent)); border-radius: 99px; transition: width .3s; }
+.voice-progress progress::-moz-progress-bar { background: var(--accent); border-radius: 99px; }
+.voice-progress small { color: var(--text-3); font-size: 13px; font-variant-numeric: tabular-nums; }
+.voice-msg { margin: 8px 0 0; font-size: 14px; color: var(--new); line-height: 1.8; }
+.voice-msg:empty { display: none; }
+.voice-sheet .sheet-foot { justify-content: flex-end; flex-wrap: wrap; }
+.voice-sheet .sheet-foot [data-voice-remove] { margin-inline-end: auto; }
+.voice-sheet .btn .i { width: 17px; height: 17px; }
 
 dialog.drawer {
   /* top and height follow the visual viewport while open, so the keyboard never covers the message box */

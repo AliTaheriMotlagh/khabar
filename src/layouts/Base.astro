@@ -5,6 +5,7 @@ import { abs, feedRev, url } from '../lib/posts';
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
 import Settings from '../components/Settings.astro';
+import VoiceOffer from '../components/VoiceOffer.astro';
 import Chat from '../components/Chat.astro';
 import Peek from '../components/Peek.astro';
 import Icon from '../components/Icon.astro';
@@ -83,9 +84,9 @@ const ld = [
     <link rel="manifest" href={url('manifest.webmanifest')} />
     <link rel="alternate" type="application/rss+xml" title={SITE.name} href={url('rss.xml')} />
     <link rel="sitemap" href={url('sitemap-index.xml')} />
-    <link rel="preconnect" href="https://pbs.twimg.com" />
+    <!-- Pictures come through the image proxy (src/lib/posts.ts, picture()): connect to it before the first one. -->
+    <link rel="preconnect" href="https://wsrv.nl" />
     <link rel="dns-prefetch" href="https://video.twimg.com" />
-    <link rel="dns-prefetch" href="https://cdn4.telesco.pe" />
     <slot name="head" />
     <!-- Chrome fetches a page as soon as the reader hovers or starts tapping its link, so it opens instantly. -->
     <script type="speculationrules" is:inline>
@@ -135,6 +136,7 @@ const ld = [
     </main>
     <Footer />
     <Settings />
+    <VoiceOffer />
     <Chat />
     <Peek />
     <button class="to-top" type="button" aria-label="بازگشت به بالا" data-to-top><Icon name="up" /></button>

@@ -1,7 +1,7 @@
 ---
 import Base from '../../layouts/Base.astro';
 import Icon from '../../components/Icon.astro';
-import { fresh, getFeed, getTags, sized, tagHref, faNum } from '../../lib/posts';
+import { getFeed, getTags, pic, tagHref, faNum } from '../../lib/posts';
 const posts = getFeed();
 const topics = getTags().map((t) => {
   const items = posts.filter((p) => p.article.tags.includes(t.tag));
@@ -15,7 +15,7 @@ const topics = getTags().map((t) => {
       {
         topics.map((t) => (
           <a class="topic" href={tagHref(t.tag)}>
-            {t.cover ? <img src={sized(t.cover.src || t.cover.poster, 'small')} alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer" data-fresh={fresh(t.cover.src || t.cover.poster)} /> : <span class="ph"><Icon name="hash" /></span>}
+            {t.cover ? <img {...pic(t.cover.src || t.cover.poster, 'small')} alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer" /> : <span class="ph"><Icon name="hash" /></span>}
             <span class="topic-body">
               <b>{t.tag}</b>
               <small><span data-num>{faNum(t.count)}</span> خبر</small>

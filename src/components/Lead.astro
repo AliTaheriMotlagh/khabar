@@ -1,6 +1,6 @@
 ---
 // Front-page lead: the newest story with a picture, large. The rest follow on the timeline.
-import { fresh, sized, type Post } from '../lib/posts';
+import { pic, type Post } from '../lib/posts';
 interface Props { post?: Post }
 const { post } = Astro.props;
 ---
@@ -8,7 +8,7 @@ const { post } = Astro.props;
   post && (
     <article class:list={['lead-main', !post.cover && 'no-img']} data-id={post.id} aria-label="تازه‌ترین خبر">
       {post.cover && (
-        <img src={sized(post.cover.src || post.cover.poster, 'large')} alt="" loading="eager" fetchpriority="high" decoding="async" referrerpolicy="no-referrer" data-fallback={post.url} data-fresh={fresh(post.cover.src || post.cover.poster)} />
+        <img {...pic(post.cover.src || post.cover.poster, 'large')} alt="" loading="eager" fetchpriority="high" decoding="async" referrerpolicy="no-referrer" data-fallback={post.url} />
       )}
       <div class="lead-body">
         {post.article.tags[0] && <span class="kicker on-dark">{post.article.tags[0]}</span>}
