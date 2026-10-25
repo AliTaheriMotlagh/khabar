@@ -158,11 +158,18 @@ def test_resigned_cdn_url_alone_is_not_a_change():
     ago = lambda h: (datetime.now(timezone.utc) - timedelta(hours=h)).isoformat(timespec="seconds")
     old = {"id": 1, "text": "hi", "preview": {"image": "https://cdn4.telesco.pe/file/AAA"}, "updated": ago(1)}
     resigned = {**old, "preview": {"image": "https://cdn4.telesco.pe/file/BBB"}}
+    stale = {**old, "updated": ago(run.config.URL_REFRESH_HOURS + 1)}
     assert not run.needs_save(dict(old), old)
     assert not run.needs_save(resigned, old)
-    assert run.needs_save(resigned, {**old, "updated": ago(run.config.URL_REFRESH_HOURS + 1)})
+    assert run.needs_save(resigned, old, refresh_urls=True)
     assert run.needs_save({**old, "text": "edited"}, old)
     assert run.needs_save(resigned, {})
+    plain = {"id": 2, "text": "no telegram media", "updated": ago(run.config.URL_REFRESH_HOURS + 1)}
+    assert not run.needs_save(dict(plain), plain, refresh_urls=True)
+
+    # One stale post refreshes them all, so URL-only saves land on one run instead of being spread over many.
+    assert not run.urls_due([old, plain, None])
+    assert run.urls_due([old, stale])
 
 
 def test_no_catch_all_ai_tag():
@@ -172,9 +179,12 @@ def test_no_catch_all_ai_tag():
 
 def test_backfill_checks_old_posts_once(tmp_path, monkeypatch):
     import json
+    from datetime import datetime, timezone
 
     monkeypatch.setattr(run.config, "POSTS_DIR", tmp_path)
     base = {"url": "u", "date": "2026-10-14T19:00:00+00:00", "links": [], "media": [], "preview": None}
+    fresh = datetime.now(timezone.utc).isoformat(timespec="seconds")
+    run.save({**base, "id": 4, "date": fresh, "text": "https://x.com/c/status/4", "gholam": None})
     run.save({**base, "id": 1, "text": "https://x.com/a/status/1", "gholam": None})
     run.save({**base, "id": 2, "text": "https://x.com/b/status/2", "gholam": None})
     run.save({**base, "id": 3, "text": "24-hour news summary", "digest": True, "gholam": None})
@@ -183,7 +193,7 @@ def test_backfill_checks_old_posts_once(tmp_path, monkeypatch):
     monkeypatch.setattr(run.telegram, "fetch_gholam_comment", lambda http, pid: asked.append(pid) or found.get(pid))
 
     run.backfill_gholam(None)
-    assert sorted(asked) == [1, 2], "digests are skipped"
+    assert sorted(asked) == [1, 2], "digests and posts still polled by process() are skipped"
     one = json.loads((tmp_path / "1.json").read_text("utf-8"))
     assert one["gholam"]["text"].startswith("ببین") and one["article"]["title"].startswith("یه مدل تازه")
     assert json.loads((tmp_path / "2.json").read_text("utf-8"))["gholam_checked"]

@@ -68,7 +68,7 @@ def build_article(post: dict) -> dict:
     }
 
 
-def process(http, tp: telegram.TgPost) -> None:
+def process(http, tp: telegram.TgPost, refresh_urls: bool = False) -> None:
     existing = load(tp.id) or {}
     src_hash = hashlib.sha1((tp.text + "|" + "|".join(tp.links) + "|" + str(len(tp.media))).encode()).hexdigest()[:12]
     changed = existing.get("hash") != src_hash
@@ -86,9 +86,9 @@ def process(http, tp: telegram.TgPost) -> None:
         "preview": {**tp.preview} if tp.preview else None,
     }
 
-    # Gholam's comment: keep checking until he replies (or the post is too old to expect one).
+    # Gholam's comment: keep checking until he replies (or the post is too old to expect one). He never comments on digests.
     gholam = existing.get("gholam")
-    if (not gholam or changed) and age_hours(tp.date) < config.GHOLAM_POLL_HOURS:
+    if (not gholam or changed) and not post["digest"] and age_hours(tp.date) < config.GHOLAM_POLL_HOURS:
         found = telegram.fetch_gholam_comment(http, tp.id)
         if found:
             if found["text"] != (gholam or {}).get("text"):
@@ -106,7 +106,7 @@ def process(http, tp: telegram.TgPost) -> None:
 
     post["article"] = build_article(post)
     post["updated"] = existing.get("updated")
-    if needs_save(post, existing):
+    if needs_save(post, existing, refresh_urls):
         post["updated"] = datetime.now(timezone.utc).isoformat(timespec="seconds")
         save(post)
 
@@ -114,12 +114,23 @@ def process(http, tp: telegram.TgPost) -> None:
 TG_CDN_RE = re.compile(r"https://[\w.-]*telesco\.pe/[^\"\s]+")
 
 
-def needs_save(post: dict, existing: dict) -> bool:
-    """Changed, ignoring Telegram's re-signed CDN URLs until the stored ones are URL_REFRESH_HOURS old."""
-    if post == existing:
-        return False
+def has_tg_urls(post: dict) -> bool:
+    return bool(TG_CDN_RE.search(json.dumps(post, ensure_ascii=False)))
+
+
+def needs_save(post: dict, existing: dict, refresh_urls: bool = False) -> bool:
+    """Changed, ignoring Telegram's re-signed CDN URLs except on a refresh run (see urls_due)."""
+    if not existing:
+        return True
     strip = lambda p: TG_CDN_RE.sub("", json.dumps(p, ensure_ascii=False, sort_keys=True))
-    return strip(post) != strip(existing) or age_hours(existing.get("updated") or "") >= config.URL_REFRESH_HOURS
+    return strip(post) != strip(existing) or (refresh_urls and has_tg_urls(existing))
+
+
+def urls_due(stored: list[dict]) -> bool:
+    """Refresh every crawled post's CDN URLs together once the oldest are URL_REFRESH_HOURS old. Refreshing each post on
+    its own clock would scatter URL-only saves over most runs, and every saved run is a commit and a site redeploy."""
+    ages = [age_hours(p.get("updated") or "") for p in stored if p and has_tg_urls(p)]
+    return bool(ages) and max(ages) >= config.URL_REFRESH_HOURS
 
 
 def backfill_gholam(http) -> None:
@@ -128,6 +139,9 @@ def backfill_gholam(http) -> None:
     todo = []
     for path in config.POSTS_DIR.glob("*.json"):
         post = json.loads(path.read_text("utf-8"))
+        # Younger posts are polled by process() on every run.
+        if age_hours(post.get("date", "")) < config.GHOLAM_POLL_HOURS:
+            continue
         if not post.get("gholam") and not post.get("digest") and not post.get("gholam_checked"):
             todo.append(post)
     for post in sorted(todo, key=lambda p: p["id"], reverse=True)[: config.GHOLAM_BACKFILL]:
@@ -160,10 +174,13 @@ def main() -> None:
         if info.get("title"):
             info["username"] = config.CHANNEL
             (config.DATA_DIR / "channel.json").write_text(json.dumps(info, ensure_ascii=False, indent=1) + "\n", "utf-8")
+        refresh_urls = urls_due([load(tp.id) for tp in posts])
+        if refresh_urls:
+            print("refreshing Telegram media URLs")
         for tp in reversed(posts):
             print(f"- post {tp.id}")
             try:
-                process(http, tp)
+                process(http, tp, refresh_urls)
             except Exception as exc:  # one broken post must not stop the run
                 print(f"  ! failed {tp.id}: {exc!r}")
         backfill_gholam(http)

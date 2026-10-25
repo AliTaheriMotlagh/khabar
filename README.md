@@ -37,13 +37,15 @@ npm test && .venv/bin/python -m pytest -q pipeline/tests
    (e.g. `westeurope`); optionally `TTS_VOICE` (default `fa-IR-DilaraNeural`, or `fa-IR-FaridNeural`). Each paragraph is
    synthesized once and then served from the CDN. Without it, devices that have a Persian voice (Android, most desktops) still listen.
 
-**GitHub:** the workflow `.github/workflows/site.yml` crawls the channel every hour, commits new posts to `main`
-(which redeploys Vercel), and publishes a mirror on GitHub Pages: *Settings → Pages → Source: GitHub Actions*.
+**GitHub:** the workflow `.github/workflows/site.yml` crawls the channel every 20 minutes, commits new posts to
+`main` (which redeploys Vercel), and publishes a mirror on GitHub Pages: *Settings → Pages → Source: GitHub Actions*.
+A crawl with nothing new stops before the build, so it neither commits nor redeploys.
 The mirror uses the Vercel API for comments and chat (repository variable `API_URL` overrides the address).
 
-GitHub's own schedule is best effort and can run late or skip an hour. For an exact cadence, trigger the workflow
-from a free external cron (e.g. cron-job.org, hourly) with a fine-grained token that has *Actions: Read and write*
-on this repo only, and delete the `schedule:` block in `site.yml` so the two don't both fire:
+GitHub's own schedule is best effort: runs come late or not at all, sometimes for hours. For a dependable cadence,
+also trigger the workflow from a free external cron (e.g. cron-job.org, every 20 minutes) with a fine-grained token
+that has *Actions: Read and write* on this repo only. Keep the `schedule:` block as a fallback: runs never overlap,
+and one with nothing new takes well under a minute:
 `curl -X POST -H "Authorization: Bearer $TOKEN" -H "Accept: application/vnd.github+json" -d '{"ref":"main"}' https://api.github.com/repos/<owner>/<repo>/actions/workflows/site.yml/dispatches`
 
 **Moderation:** delete a comment with

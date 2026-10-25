@@ -29,15 +29,20 @@ async function trim(name, max) {
   for (let i = 0; i < keys.length - max; i++) await cache.delete(keys[i]);
 }
 
-async function networkFirst(req) {
+async function networkFirst(req, event) {
   const cache = await caches.open(PAGES);
-  try {
-    const res = await Promise.race([fetch(req), new Promise((_, rej) => setTimeout(() => rej(new Error('timeout')), 6000))]);
+  // Cache the fresh page even when it arrives after the timeout, so a slow connection gets today's news on the next
+  // visit instead of the same stale copy again and again.
+  const fresh = fetch(req).then((res) => {
     if (res.ok) {
       cache.put(req, res.clone());
       trim(PAGES, 250);
     }
     return res;
+  });
+  event.waitUntil(fresh.catch(() => {}));
+  try {
+    return await Promise.race([fresh, new Promise((_, rej) => setTimeout(() => rej(new Error('timeout')), 6000))]);
   } catch {
     return (await cache.match(req, { ignoreSearch: true })) || (await cache.match(OFFLINE)) || Response.error();
   }
@@ -67,7 +72,7 @@ self.addEventListener('fetch', (e) => {
   const u = new URL(req.url);
   if (u.origin === location.origin) {
     if (u.pathname.includes('/api/')) return;
-    if (req.mode === 'navigate') return e.respondWith(networkFirst(req));
+    if (req.mode === 'navigate') return e.respondWith(networkFirst(req, e));
     if (u.pathname.includes('/_astro/') || u.pathname.includes('/pagefind/')) return e.respondWith(cacheFirst(req, ASSETS, 200));
     return;
   }
