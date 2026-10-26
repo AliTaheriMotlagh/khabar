@@ -1,0 +1,59 @@
+{
+ "id": 6124,
+ "url": "https://t.me/dlmehr/6124",
+ "date": "2026-10-26T17:09:13+00:00",
+ "text": "https://fxtwitter.com/seddonandrew/status/2114692031381647835?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+ "forwarded_from": null,
+ "digest": false,
+ "hash": "c1f2a8a94803",
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/seddonandrew/status/2114692031381647835?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+  "site": "🧵 Thread • FxTwitter",
+  "title": "Andrew Seddon (@seddonandrew)",
+  "description": "PCBs made in America. Twice as fast as Shenzhen.\nToday @CircuitHub is unveiling The Grid, our factory-scale robot in Massachusetts that builds circuit boards on demand.\nNo changeovers, no per-design setup. Prototypes and production batches, fully automated.",
+  "image": null
+ },
+ "gholam": {
+  "text": "رفیق، بشنو از دنیای سخت‌افزار که آمریکایی‌ها بدجور برای بازار چین خط و نشون کشیدن؛ اندرو سدون از شرکت CircuitHub از یه ربات غول‌پیکر کارخونه‌ای تو ماساچوست به اسم «The Grid» رونمایی کرده. کار این غول آهنی اینه که بردهای مدار چاپی یا همون PCB رو کاملاً اتوماتیک و بر اساس سفارش می‌سازه، بدون اینکه برای تعویض مدل یا تنظیم مجدد دستگاه‌ها وقت تلف بشه. ادعای اصلی‌شون هم اینه که هم برای نمونه‌های اولیه و هم تیراژ بالا، سرعت کارشون دو برابر سریع‌تر از غول‌های شنژن چینه.\n\nچرا مهمه؟ اهمیتش اینه که اگه این سیستم جواب بده، انحصار بی‌چون‌وچرای چین توی تولید سریع قطعات الکترونیکی شکسته میشه و چرخ اختراع و تولید سخت‌افزار خیلی تندتر می‌چرخه.",
+  "date": "2026-10-26T17:09:32+00:00"
+ },
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/seddonandrew/status/2114692031381647835",
+   "domain": "x.com",
+   "author": {
+    "name": "Andrew Seddon",
+    "handle": "seddonandrew",
+    "avatar": "https://pbs.twimg.com/profile_images/1371684400262447104/YpnXfCSG_200x200.jpg"
+   },
+   "text": "PCBs made in America. Twice as fast as Shenzhen.\n\nToday @CircuitHub is unveiling The Grid, our factory-scale robot in Massachusetts that builds circuit boards on demand.\n\nNo changeovers, no per-design setup. Prototypes and production batches, fully automated.",
+   "date": 1793016844,
+   "media": [
+    {
+     "type": "video",
+     "src": "https://video.twimg.com/amplify_video/2114691957498728448/vid/avc1/1280x720/ka9z3MV1U8gbnnLB.mp4?tag=29",
+     "poster": "https://pbs.twimg.com/amplify_video_thumb/2114691957498728448/img/wvg8lEv1O5gbGNO_.jpg",
+     "ratio": 0.5625,
+     "duration": 51.136,
+     "gif": false
+    }
+   ],
+   "links": []
+  }
+ ],
+ "article": {
+  "title": "بشنو از دنیای سخت‌افزار که آمریکایی‌ها بدجور برای بازار چین خط و نشون کشیدن؛ اندرو سدون از شرکت CircuitHub از یه ربات غول‌پیکر کارخونه‌ای تو ماساچوست به اسم «The Grid» رونمایی کرده",
+  "source_title": "PCBs made in America. Twice as fast as Shenzhen.",
+  "body": [
+   "رفیق، بشنو از دنیای سخت‌افزار که آمریکایی‌ها بدجور برای بازار چین خط و نشون کشیدن؛ اندرو سدون از شرکت CircuitHub از یه ربات غول‌پیکر کارخونه‌ای تو ماساچوست به اسم «The Grid» رونمایی کرده. کار این غول آهنی اینه که بردهای مدار چاپی یا همون PCB رو کاملاً اتوماتیک و بر اساس سفارش می‌سازه، بدون اینکه برای تعویض مدل یا تنظیم مجدد دستگاه‌ها وقت تلف بشه. ادعای اصلی‌شون هم اینه که هم برای نمونه‌های اولیه و هم تیراژ بالا، سرعت کارشون دو برابر سریع‌تر از غول‌های شنژن چینه."
+  ],
+  "why": "اهمیتش اینه که اگه این سیستم جواب بده، انحصار بی‌چون‌وچرای چین توی تولید سریع قطعات الکترونیکی شکسته میشه و چرخ اختراع و تولید سخت‌افزار خیلی تندتر می‌چرخه.",
+  "tags": [
+   "چین",
+   "رباتیک"
+  ]
+ },
+ "updated": "2026-10-26T17:17:04+00:00"
+}

@@ -1,0 +1,55 @@
+{
+ "id": 6117,
+ "url": "https://t.me/dlmehr/6117",
+ "date": "2026-10-26T15:55:23+00:00",
+ "text": "https://fxtwitter.com/bneyshabur/status/2114743262565339148?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+ "forwarded_from": null,
+ "digest": false,
+ "hash": "e8a2e9886a0c",
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/bneyshabur/status/2114743262565339148?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+  "site": "🧵 Thread • FxTwitter",
+  "title": "Behnam Neyshabur (@bneyshabur)",
+  "description": "Introducing Fern, Mirendil’s first model: pretrained from scratch, with up to 10M tokens of context!\nThat’s ~0.5M lines of code (roughly Megatron-LM scale) or days of an agent’s work, all in context at once.\nIts first version, Fern 0.1, had a short round…",
+  "image": "https://cdn4.telesco.pe/file/HQcgN8ysASOhNuxm2B3zQrkEB76BzZgEpBbzktJKB3vWji6sin9gUMsZ8XthZOgGji2snLvxgEuzzY4yAdCctDQzsx_MdiNAsl2SyzaL19QzeemzQfDEFQGaWkfx1EE5QDg-twf5uswNy1vOUs4wh7QVFGfNReSBt2jeDTzqWEGkTOtONFOyuXyJrpLxGXJLDntP9c4tmbfB9az80H8ME_nxYSXoGEECyIR28r3Et_e6QinLr_-ukXjJX5P3dUWGaCPY5_yaYBFdiO8G1gOv37mQTqu3O2tx0K9on_FUo4CQHzBRpT10RjkbPUNYlUSZmX1zXDxM_IFsQ2o90tVDgQ.jpg"
+ },
+ "gholam": {
+  "text": "ببین رفیق، بهنام نیشابور توی شرکت میرندیل از اولین مدل هوش مصنوعیشون به اسم «فِرن» (Fern) رونمایی کرده که صفر تا صدش رو از پایه خودشون آموزش دادن. نگم برات از ظرفیت خفنش که پنجره متنی تا ۱۰ میلیون توکن داره؛ یعنی رسماً نیم‌میلیون خط کد یا حاصل کار چند روزِ یه ایجنت هوشمند رو یه لقمه چپ می‌کنه و هم‌زمان یادش می‌مونه. نسخه اولش هم با نام فرن ۰.۱ یه دوره کوتاه پُست‌ترِینینگ گذرونده و حالا آماده شده تا نشون بده برای پردازش‌های فوق‌سنگین چقدر نفس داره.\n\nچرا مهمه؟ چون کانتکست ۱۰ میلیون توکنی اجازه میده هوش مصنوعی کلِ ساختار یه پروژه نرم‌افزاری عظیم رو یک‌جا ببینه و دیگه وسط کار رشته ماجرا از دستش در نره.",
+  "date": "2026-10-26T15:55:43+00:00"
+ },
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/bneyshabur/status/2114743262565339148",
+   "domain": "x.com",
+   "author": {
+    "name": "Behnam Neyshabur",
+    "handle": "bneyshabur",
+    "avatar": "https://pbs.twimg.com/profile_images/1136894710293774336/RN2vpcX0_200x200.png"
+   },
+   "text": "Introducing Fern, Mirendil’s first model: pretrained from scratch, with up to 10M tokens of context!\n\nThat’s ~0.5M lines of code (roughly Megatron-LM scale) or days of an agent’s work, all in context at once.\n\nIts first version, Fern 0.1, had a short round of post-training 🚢",
+   "date": 1793029058,
+   "media": [
+    {
+     "type": "image",
+     "src": "https://pbs.twimg.com/media/HVkTRarbAAAM3u7.jpg?name=orig",
+     "ratio": 0.5625
+    }
+   ],
+   "links": []
+  }
+ ],
+ "article": {
+  "title": "بهنام نیشابور توی شرکت میرندیل از اولین مدل هوش مصنوعیشون به اسم «فِرن» (Fern) رونمایی کرده که صفر تا صدش رو از پایه خودشون آموزش دادن",
+  "source_title": "Introducing Fern, Mirendil’s first model: pretrained from scratch, with up to 10M tokens of context!",
+  "body": [
+   "ببین رفیق، بهنام نیشابور توی شرکت میرندیل از اولین مدل هوش مصنوعیشون به اسم «فِرن» (Fern) رونمایی کرده که صفر تا صدش رو از پایه خودشون آموزش دادن. نگم برات از ظرفیت خفنش که پنجره متنی تا ۱۰ میلیون توکن داره؛ یعنی رسماً نیم‌میلیون خط کد یا حاصل کار چند روزِ یه ایجنت هوشمند رو یه لقمه چپ می‌کنه و هم‌زمان یادش می‌مونه. نسخه اولش هم با نام فرن ۰.۱ یه دوره کوتاه پُست‌ترِینینگ گذرونده و حالا آماده شده تا نشون بده برای پردازش‌های فوق‌سنگین چقدر نفس داره."
+  ],
+  "why": "چون کانتکست ۱۰ میلیون توکنی اجازه میده هوش مصنوعی کلِ ساختار یه پروژه نرم‌افزاری عظیم رو یک‌جا ببینه و دیگه وسط کار رشته ماجرا از دستش در نره.",
+  "tags": [
+   "ایجنت"
+  ]
+ },
+ "updated": "2026-10-26T17:17:06+00:00"
+}
