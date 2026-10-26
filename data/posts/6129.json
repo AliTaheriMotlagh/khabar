@@ -1,0 +1,53 @@
+{
+ "id": 6129,
+ "url": "https://t.me/dlmehr/6129",
+ "date": "2026-10-26T19:23:37+00:00",
+ "text": "https://fxtwitter.com/rauchg/status/2114770919436808572?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+ "forwarded_from": null,
+ "digest": false,
+ "hash": "82301229a5ca",
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/rauchg/status/2114770919436808572?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+  "site": "FxTwitter",
+  "title": "Guillermo Rauch (@rauchg)",
+  "description": "I built 𝚌𝚙𝚞-𝚌𝚑𝚊𝚝, a reproduction of @openai's findings of covert communication using the CPU.\nIt runs on a generic host with 2+ Firecracker microVMs with no internet access. Works on x86 and even my M5 chip.\nI was able to chat via 3 separate mechanisms:…",
+  "image": null
+ },
+ "gholam": null,
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/rauchg/status/2114770919436808572",
+   "domain": "x.com",
+   "author": {
+    "name": "Guillermo Rauch",
+    "handle": "rauchg",
+    "avatar": "https://pbs.twimg.com/profile_images/1783856060249595904/8TfcCN0r_200x200.jpg"
+   },
+   "text": "I built 𝚌𝚙𝚞-𝚌𝚑𝚊𝚝, a reproduction of @openai's findings of covert communication using the CPU.\n\nIt runs on a generic host with 2+ Firecracker microVMs with no internet access. Works on x86 and even my M5 chip.\n\nI was able to chat via 3 separate mechanisms:\n① CPU contention\n② Cache eviction timing\n③ DRAM bandwidth contention \n\n… across multiple CPUs, defeating all Firecracker's production recommendations (no SMT, no KSM, tenants pinned to different cores.)\n\nEssentially, if shared hardware is involved, there's a good chance your agents can communicate covertly. And with really decent latency.\n\nThe good news: this is decidedly different from a *side-channel attack* where the agents could steal information (Meltdown/Spectre), a category of attack that providers like Vercel Sandbox mitigate. Further, in our real-world environment, these 'whispering' techniques are much harder to pull off and easier for us to monitor and detect (sampling hardware counters + lots of at-scale statistical data.)\n\nNoteworthy: ironically, OpenAI and Anthropic's models refused to do this work. Open weight models got the job done. I'm worried the labs' stance might backfire and get in the way of helping developers build correct and secure systems. e.g: building a secure sandbox requires having this kind of analysis, and without it, we'll have a less secure world.",
+   "date": 1793035652,
+   "media": [
+    {
+     "type": "video",
+     "src": "https://video.twimg.com/amplify_video/2114770494595760128/vid/avc1/1406x720/waKfQORrYuORT7UO.mp4?tag=29",
+     "poster": "https://pbs.twimg.com/amplify_video_thumb/2114770494595760128/img/RfkLhO59NgPTFvOE.jpg",
+     "ratio": 0.5119,
+     "duration": 68.009,
+     "gif": false
+    }
+   ],
+   "links": []
+  }
+ ],
+ "article": {
+  "title": "I built 𝚌𝚙𝚞-𝚌𝚑𝚊𝚝, a reproduction of @openai's findings of covert communication using the CPU.",
+  "source_title": null,
+  "body": [],
+  "why": null,
+  "tags": [
+   "اوپن‌ای‌آی"
+  ]
+ },
+ "updated": "2026-10-26T19:23:48+00:00"
+}
