@@ -52,6 +52,22 @@ export const canSpeakPersian = async () => (await persianVoice()) !== null;
 /** The reader is about to listen: when it's the downloaded voice that will speak, its model starts loading now. */
 export const getReady = () => hasPersianVoice() === 'local' && prepareVoice();
 
+/** A voice whose sound the page can keep (the story's video, src/scripts/video.ts): the downloaded one or the cloud
+ *  one — the device's own voice only plays aloud. After persianVoice(). */
+export const recordableVoice = (): 'cloud' | 'local' | null => (voicePreferred() ? 'local' : cloudOk ? 'cloud' : voiceReady() ? 'local' : null);
+
+/** One paragraph's sound as audio files (WAV from the downloaded voice, a sentence each; MP3 from the cloud, the whole
+ *  paragraph), each with the sentences it says. */
+export async function lineAudio(l: Line, engine: 'cloud' | 'local'): Promise<{ texts: string[]; data: ArrayBuffer }[]> {
+  if (engine === 'cloud') {
+    const res = await fetch(clipUrl(l));
+    if (!res.ok) throw new Error(`tts ${res.status}`);
+    return [{ texts: sentences(l.text), data: await res.arrayBuffer() }];
+  }
+  const clip = (text: string): Promise<string> => voiceClip(text, true).catch((e: Error) => (e.message === 'dropped' ? clip(text) : Promise.reject(e)));
+  return Promise.all(sentences(l.text).map(async (text) => ({ texts: [text], data: await (await fetch(await clip(text))).arrayBuffer() })));
+}
+
 export class Speaker {
   lines: Line[] = [];
   at = 0;

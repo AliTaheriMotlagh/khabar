@@ -42,7 +42,7 @@ export type RawPost = {
 };
 
 // ---- shaped for the templates ----
-export type DigestItem = { n: number; text: string; href: string; internal: boolean };
+export type DigestItem = { n: number; text: string; href: string; internal: boolean; id: number };
 export type Post = RawPost & {
   /** story: has Gholam's Persian write-up · digest: the channel's 24-hour summary · brief: a short post without one */
   kind: 'story' | 'digest' | 'brief';
@@ -152,7 +152,7 @@ function digestItems(text: string, ids: Set<number>): DigestItem[] {
     .map((m) => {
       const id = Number(m[4]);
       const internal = ids.has(id);
-      return { n: Number(toLatin(m[1])), text: m[2], href: internal ? url(`p/${id}/`) : m[3], internal };
+      return { n: Number(toLatin(m[1])), text: m[2], href: internal ? url(`p/${id}/`) : m[3], internal, id };
     });
 }
 
@@ -234,6 +234,45 @@ export function recentPosts(min = 8): Post[] {
 export function storyItems(): { id: number; at: number; kind: string; p: Post }[] {
   return dropCompanions(recentPosts().map((p) => ({ id: p.id, at: Date.parse(p.date), kind: p.kind, p })));
 }
+/** A story's still pictures, at most `n`: its images and its videos' posters, else the cover. */
+export function stills(p: Post, n = 6): string[] {
+  const own = p.gallery.map((m) => (m.type === 'video' ? m.poster : m.src)).filter((s): s is string => !!s);
+  const list = own.length ? own : [p.cover?.src || p.cover?.poster].filter((s): s is string => !!s);
+  return [...new Set(list)].slice(0, n);
+}
+
+/** The story's video (src/scripts/video.ts): a title scene, then chapters, each a heading, the lines it says — indices
+ *  into card.json's spoken lines [title, ...body, why], which /api/tts reads — and its pictures. A story or a brief:
+ *  its text (lines with links left out, up to about VIDEO_CHARS characters), then «چرا مهمه؟»; the headline is said
+ *  unless the first paragraph already says it. The 24-hour summary: one chapter per item, with the pictures of the
+ *  story it points to. */
+export type VideoChapter = { head: string | null; say: number[]; pics: string[] };
+const VIDEO_CHARS = 2400;
+export function videoPlan(p: Post): { title: boolean; chapters: VideoChapter[] } {
+  if (p.kind === 'digest') {
+    const byId = new Map(getPosts().map((x) => [x.id, x]));
+    return {
+      title: true,
+      chapters: p.digestItems.map((it, k) => {
+        const linked = byId.get(it.id);
+        return { head: faNum(it.n), say: [k + 1], pics: linked ? stills(linked, 2) : [] };
+      }),
+    };
+  }
+  const head = p.article.title.replace(/…$/, '').trim();
+  const say: number[] = [];
+  let n = 0;
+  p.article.body.forEach((raw, k) => {
+    const text = raw.trim();
+    if (!text || n >= VIDEO_CHARS || /https?:\/\//.test(text)) return;
+    say.push(k + 1);
+    n += text.length;
+  });
+  const chapters: VideoChapter[] = say.length ? [{ head: null, say, pics: stills(p) }] : [];
+  if (p.article.why) chapters.push({ head: 'چرا مهمه؟', say: [p.article.body.length + 1], pics: [] });
+  return { title: !p.article.body[0]?.includes(head.slice(0, 30)), chapters };
+}
+
 /** The channel's Persian morning summary (posted ~07:36 Tehran), the home page's brief. */
 export const latestDigest = () => getPosts().find((p) => p.kind === 'digest') ?? null;
 

@@ -110,6 +110,7 @@ const jsonLd = [
         <button class="rb-btn listen" type="button" data-listen aria-pressed="false" hidden>
           <Icon name="volume" class="when-idle" /><Icon name="pause" class="when-playing" /><span data-listen-label>گوش دادن</span>
         </button>
+        <button class="rb-btn" type="button" data-make-video={post.href} title="ویدیوی این خبر را روی همین دستگاه بسازید" hidden><Icon name="film" /><span>ویدیو</span></button>
         <button class="rb-btn rate" type="button" data-rate aria-label="سرعت خواندن" title="سرعت خواندن">۱×</button>
         <button class="rb-btn" type="button" data-open-settings aria-label="اندازه‌ی متن و نمایش" title="اندازه‌ی متن (+ / -)"><span class="aa" aria-hidden="true">Aa</span></button>
         <button class="rb-btn if-focus" type="button" data-theme-toggle aria-label="روشن / تیره" title="روشن / تیره (t)"><Icon name="moon" class="if-light" /><Icon name="sun" class="if-dark" /></button>

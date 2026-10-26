@@ -1,0 +1,28 @@
+---
+// The story's video, made on the reader's device (src/scripts/video.ts): progress while it's made, then the video to
+// watch, share or save. Opened by any [data-make-video] button (the story page, the story player).
+import Icon from './Icon.astro';
+---
+<dialog class="sheet video-sheet" id="video-sheet" aria-labelledby="video-title">
+  <div class="sheet-head">
+    <h2 id="video-title"><Icon name="film" /> ویدیوی خبر</h2>
+    <button class="icon-btn" type="button" data-close aria-label="بستن"><Icon name="x" /></button>
+  </div>
+  <div class="sheet-body">
+    <div data-vs-making>
+      <p class="vs-status" data-vs-status role="status" aria-live="polite"></p>
+      <div class="vs-bar" aria-hidden="true"><i data-vs-bar></i></div>
+      <p class="vs-note" data-vs-note></p>
+    </div>
+    <div data-vs-done hidden>
+      <video class="vs-video" data-vs-video controls playsinline></video>
+      <p class="vs-note" data-vs-meta></p>
+      <p class="vs-note" data-vs-silent hidden>این ویدیو بدون روایت است: صدای خود دستگاه را نمی‌شود در فایل گذاشت. با یک صدای فارسی دانلودشده، ویدیو روایت هم دارد. <button class="link-btn" type="button" data-vs-voice>انتخاب صدا</button></p>
+    </div>
+    <div class="sheet-foot">
+      <button class="btn" type="button" data-vs-cancel>لغو</button>
+      <a class="btn" data-vs-save hidden><Icon name="download" /> ذخیره</a>
+      <button class="btn primary" type="button" data-vs-share hidden><Icon name="share" /> اشتراک‌گذاری</button>
+    </div>
+  </div>
+</dialog>

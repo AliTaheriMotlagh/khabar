@@ -21,9 +21,16 @@ http
       const chunks = [];
       for await (const c of req) chunks.push(c);
       const body = chunks.length ? Buffer.concat(chunks) : undefined;
-      const out = await handler(new Request(url, { method: req.method, headers: { ...req.headers, 'x-forwarded-for': '127.0.0.1' }, body }));
-      res.writeHead(out.status, Object.fromEntries(out.headers));
-      return res.end(Buffer.from(await out.arrayBuffer()));
+      // A function that fails (an upstream timing out mid-body, say) fails that request, not the server.
+      try {
+        const out = await handler(new Request(url, { method: req.method, headers: { ...req.headers, 'x-forwarded-for': '127.0.0.1' }, body }));
+        const data = Buffer.from(await out.arrayBuffer());
+        res.writeHead(out.status, Object.fromEntries(out.headers));
+        return res.end(data);
+      } catch (e) {
+        console.error(`${url.pathname}: ${e.message}`);
+        return res.writeHead(502).end();
+      }
     }
     let file = path.join(ROOT, decodeURIComponent(url.pathname));
     if (!file.startsWith(ROOT)) return res.writeHead(403).end();

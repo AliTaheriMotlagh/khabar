@@ -174,6 +174,8 @@ document.addEventListener('click', (e) => {
   if (save) return toggleSave(save);
   const sh = t.closest<HTMLElement>('[data-share]');
   if (sh) return void share(sh.dataset.url!, sh.dataset.title ?? document.title);
+  const mv = t.closest<HTMLElement>('[data-make-video]');
+  if (mv) return makeVideo(mv.dataset.makeVideo!);
   const cp = t.closest<HTMLElement>('[data-copy]');
   if (cp) return void copy(primary(cp.dataset.copy!));
   const view = t.closest<HTMLElement>('[data-set-view]');
@@ -192,6 +194,16 @@ document.addEventListener('click', (e) => {
     loadMore(more);
   }
 });
+
+// ---------- a story's video, made on the device (src/scripts/video.ts, loaded on the first tap) ----------
+const canMakeVideo = typeof VideoEncoder === 'function' || (typeof MediaRecorder === 'function' && 'captureStream' in HTMLCanvasElement.prototype);
+$$('[data-make-video]').forEach((b) => (b.hidden = !canMakeVideo));
+function makeVideo(href: string) {
+  // Without an AudioEncoder the sound is recorded as it plays, through an audio context iOS only starts in a tap.
+  const ac = typeof AudioEncoder === 'function' ? null : new AudioContext();
+  ac?.resume().catch(() => {});
+  import('./video').then((m) => m.makeVideo(href, ac), () => toast('اتصال اینترنت را بررسی کنید'));
+}
 
 // Only one video plays at a time.
 document.addEventListener('play', (e) => $$<HTMLVideoElement>('video').forEach((v) => v !== e.target && !v.loop && v.pause()), true);

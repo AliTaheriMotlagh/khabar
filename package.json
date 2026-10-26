@@ -16,7 +16,8 @@
     "@astrojs/rss": "^4.0.19",
     "@astrojs/sitemap": "^3.7.4",
     "@fontsource-variable/vazirmatn": "^5.3.0",
-    "astro": "^7.4.2"
+    "astro": "^7.4.2",
+    "mediabunny": "1.61.4"
   },
   "devDependencies": {
     "@astrojs/check": "^0.9.12",
