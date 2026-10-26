@@ -1,7 +1,13 @@
 ---
-// Offered when "listen" is tapped on a device with no Persian voice: download the on-device voice once
-// (src/scripts/voice.ts, src/scripts/voice-offer.ts). Also opened from the settings sheet.
+// The Persian voices for «گوش دادن» (src/lib/voices.ts): offered when "listen" is tapped on a device with no Persian
+// voice, and opened from the settings sheet. One card per speaker: a preview to hear before downloading, the full or
+// light build, download (in the background — the sheet can close), use, remove (src/scripts/voice-offer.ts).
 import Icon from './Icon.astro';
+import { VOICES, families, speedOf, voiceBytes } from '../lib/voices';
+
+const base = import.meta.env.BASE_URL.replace(/\/$/, '');
+const mb = (n: number) => Math.round(n / 1e6).toLocaleString('fa-IR');
+const sizes = VOICES.map(voiceBytes);
 ---
 <dialog class="sheet voice-sheet" id="voice" aria-labelledby="voice-title">
   <div class="sheet-head">
@@ -9,21 +15,83 @@ import Icon from './Icon.astro';
     <button class="icon-btn" type="button" data-close aria-label="بستن"><Icon name="x" /></button>
   </div>
   <div class="sheet-body">
-    <p class="voice-lead" data-voice-lead>این دستگاه صدای فارسی ندارد. صدای فارسی را یک بار دانلود کنید تا خبرها و خلاصه‌ی روز را بشنوید.</p>
-    <ul class="voice-facts">
-      <li><Icon name="download" /> حدود <b data-voice-mb>۹۳</b> مگابایت، فقط یک بار — بهتر است با وای‌فای</li>
-      <li><Icon name="refresh" /> اگر اینترنت قطع شد، از همان‌جا ادامه می‌دهد</li>
+    <p class="voice-lead" data-voice-lead>این دستگاه صدای فارسی ندارد. نمونه‌ی صداها را بشنوید و یکی را یک بار دانلود کنید تا خبرها و خلاصه‌ی روز را بشنوید.</p>
+    <ul class="voice-facts" data-voice-facts>
+      <li><Icon name="download" /> هر صدا {mb(Math.min(...sizes))} تا {mb(Math.max(...sizes))} مگابایت، فقط یک بار — بهتر است با وای‌فای</li>
+      <li><Icon name="refresh" /> دانلود در پس‌زمینه ادامه می‌دهد و اگر اینترنت قطع شد، از همان‌جا</li>
       <li><Icon name="check" /> صدا روی خود دستگاه ساخته می‌شود؛ بعد از دانلود بدون اینترنت هم کار می‌کند</li>
     </ul>
-    <div class="voice-progress" data-voice-progress hidden>
-      <progress max="100" value="0"></progress>
-      <small data-voice-pct></small>
-    </div>
     <p class="voice-msg" data-voice-msg role="status" aria-live="polite"></p>
+    <ul class="vo-list" data-voice-list aria-label="صداها">
+      <li class="vo" data-vo-system hidden>
+        <button class="vo-toggle" type="button" aria-expanded="false" aria-controls="vo-system">
+          <span class="vo-name" data-vo-system-name>صدای خود دستگاه</span>
+          <small class="vo-meta">بدون دانلود</small>
+          <small class="vo-state" data-vo-state></small>
+        </button>
+        <div class="vo-body" id="vo-system" hidden>
+          <p class="vo-about" data-vo-system-about>صدای فارسی که خود این دستگاه دارد.</p>
+          <div class="vo-actions"><button class="btn primary" type="button" data-vo-go>استفاده از این صدا</button></div>
+        </div>
+      </li>
+      {
+        families().map((builds) => {
+          const v = builds[0];
+          return (
+            <li class="vo" data-vo={v.family}>
+              <div class="vo-head">
+                <button class="vo-toggle" type="button" aria-expanded="false" aria-controls={`vo-${v.family}`}>
+                  <span class="vo-name">
+                    {v.name}
+                    {v.recommended && <em class="vo-rec">پیشنهادی</em>}
+                  </span>
+                  <small class="vo-meta">
+                    {v.gender} · {speedOf(v).label} · {mb(voiceBytes(v))} مگابایت
+                  </small>
+                  <small class="vo-state" data-vo-state />
+                </button>
+                <button class="icon-btn vo-play" type="button" data-vo-play={`${base}/voices/${v.family}.mp3`} aria-pressed="false" aria-label={`شنیدن نمونه‌ی صدای ${v.name}`}>
+                  <Icon name="play" />
+                  <Icon name="pause" />
+                </button>
+              </div>
+              <div class="vo-body" id={`vo-${v.family}`} hidden>
+                <p class="vo-about">{v.about}</p>
+                {builds.length > 1 && (
+                  <div class="seg vo-builds" role="radiogroup" aria-label="نسخه">
+                    {builds.map((b, i) => (
+                      <label>
+                        <input type="radio" name={`vo-${v.family}`} value={b.id} checked={i === 0} />
+                        <span>
+                          {b.light ? 'سبک' : 'کامل'} · {mb(voiceBytes(b))} مگابایت{b.light ? ' · کندتر' : ''}
+                        </span>
+                      </label>
+                    ))}
+                  </div>
+                )}
+                {builds.length === 1 && <input type="hidden" name={`vo-${v.family}`} value={v.id} />}
+                <div class="voice-progress" data-vo-progress hidden>
+                  <progress max="100" value="0" />
+                  <small data-vo-pct />
+                </div>
+                <div class="vo-actions">
+                  <button class="btn primary" type="button" data-vo-go>
+                    <Icon name="download" /> <span data-vo-go-label>دانلود</span>
+                  </button>
+                  <button class="btn" type="button" data-vo-remove hidden>
+                    <Icon name="trash" /> حذف
+                  </button>
+                </div>
+              </div>
+            </li>
+          );
+        })
+      }
+    </ul>
+    <p class="vo-stored" data-voice-stored hidden></p>
     <div class="sheet-foot">
-      <button class="btn" type="button" data-voice-remove hidden><Icon name="trash" /> پاک کردن صدا</button>
       <button class="btn" type="button" data-close data-voice-later>بعداً</button>
-      <button class="btn primary" type="button" data-voice-go><Icon name="download" /> <span data-voice-go-label>دانلود صدا</span></button>
+      <button class="btn primary" type="button" data-voice-listen hidden><Icon name="headphones" /> گوش دادن</button>
     </div>
   </div>
 </dialog>

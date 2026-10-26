@@ -1,9 +1,10 @@
-// The on-device Persian voice (src/scripts/voice.ts), off the main thread: downloads the sherpa-onnx WebAssembly
-// runtime and a Persian model into Cache Storage in parts (a dropped connection resumes where it stopped,
-// a blocked mirror falls through to the next one, and every file is checked against its SHA-256), loads it on the
-// first paragraph, and turns text into WAV, one request at a time.
-// Messages in:  { t: 'init', cache, bases, files, config } first, then { t: 'download' } · { t: 'load' } (the model, ahead
-//               of time) · { t: 'say', id, text, urgent } · { t: 'bump', id }
+// The on-device Persian voice (src/scripts/voice.ts), off the main thread, one voice per worker: downloads the
+// sherpa-onnx WebAssembly runtime and a Persian model (src/lib/voices.ts) into Cache Storage in parts (a dropped
+// connection resumes where it stopped, a blocked mirror falls through to the next one, and every file is checked
+// against its SHA-256), or loads it on the first paragraph and turns text into WAV, one request at a time.
+// Files are stored by SHA-256 (`keys` + hash), so a file two voices share — the runtime — is downloaded once.
+// Messages in:  { t: 'init', cache, keys, bases, files, config?, sid? } first, then { t: 'download' } · { t: 'load' }
+//               (the model, ahead of time) · { t: 'say', id, text, urgent } · { t: 'bump', id }
 // Messages out: { t: 'progress', loaded, total } · { t: 'downloaded' } · { t: 'audio', id, wav } · { t: 'dropped', id }
 //               { t: 'fail', msg, id? } (a failed download or model load fails every pending request)
 type Pack = { name: string; size: number; sha256: string };
@@ -34,18 +35,22 @@ const STALL_MS = 20_000;
 const ROUNDS = 4;
 
 let cacheName = '';
+let keys = '';
 let bases: string[] = [];
 let files: Pack[] = [];
 let config: unknown; // sherpa-onnx's OfflineTts config for the model in the package
+let sid = 0; // the speaker, for a model with several
 let preferred = 0; // the mirror that served the last file
-// Stored under the first mirror's address whichever mirror served them: parts from different mirrors are the same bytes.
-const partKey = (f: Pack, k: number) => `${bases[0]}${f.name}?part=${k}`;
-const doneKey = (f: Pack) => `${bases[0]}${f.name}?done`;
+const partKey = (f: Pack, k: number) => `${keys}${f.sha256}?part=${k}`;
+const doneKey = (f: Pack) => `${keys}${f.sha256}?done`;
 
 // ---------- download ----------
 async function download() {
   const cache = await caches.open(cacheName);
-  const total = files.reduce((s, f) => s + f.size, 0);
+  // What another voice already brought (the runtime) isn't part of this download.
+  const have = await Promise.all(files.map((f) => cache.match(doneKey(f))));
+  const missing = files.filter((_, i) => !have[i]);
+  const total = missing.reduce((s, f) => s + f.size, 0);
   let before = 0; // bytes of the files already complete
   let shown = 0;
   const progress = (loaded: number, force = false) => {
@@ -53,7 +58,8 @@ async function download() {
     shown = performance.now();
     post({ t: 'progress', loaded, total });
   };
-  for (const f of files) {
+  for (const f of missing) {
+    // Another tab may have finished it meanwhile.
     if (!(await cache.match(doneKey(f)))) await fetchAny(cache, f, (n, force) => progress(before + n, force));
     before += f.size;
   }
@@ -102,15 +108,14 @@ async function fetchFile(cache: Cache, f: Pack, base: string, progress: (loaded:
       clearTimeout(timer);
     }
   }
-  const parts = Math.ceil(f.size / PART);
-  await cache.put(doneKey(f), new Response(JSON.stringify({ size: f.size, parts })));
-  // Code and model run on the reader's device: any mirror's copy must be exactly the pinned file.
+  // Code and model run on the reader's device: any mirror's copy must be exactly the pinned file. Marked done only
+  // once checked, so a page closed meanwhile leaves nothing unchecked behind.
   const hash = new Uint8Array(await crypto.subtle.digest('SHA-256', await read(cache, f)));
   if ([...hash].map((b) => b.toString(16).padStart(2, '0')).join('') !== f.sha256) {
-    for (let i = 0; i < parts; i++) await cache.delete(partKey(f, i));
-    await cache.delete(doneKey(f));
+    for (let i = 0; i < Math.ceil(f.size / PART); i++) await cache.delete(partKey(f, i));
     throw new Error('corrupt');
   }
+  await cache.put(doneKey(f), new Response(JSON.stringify({ size: f.size })));
 }
 
 /** Streams the file from part k on into the cache; `alive` is called whenever bytes arrive. */
@@ -151,14 +156,13 @@ async function fetchRest(cache: Cache, f: Pack, base: string, k: number, signal:
 }
 
 async function read(cache: Cache, f: Pack) {
-  const meta = await cache.match(doneKey(f)).then((r) => r?.json() as Promise<{ size: number; parts: number }> | undefined);
-  if (!meta) throw new Error('missing');
-  const out = new Uint8Array(meta.size);
+  const out = new Uint8Array(f.size);
   let at = 0;
-  for (let k = 0; k < meta.parts; k++) {
+  for (let k = 0; k < Math.ceil(f.size / PART); k++) {
     const part = await cache.match(partKey(f, k));
     if (!part) throw new Error('missing');
     const b = new Uint8Array(await part.arrayBuffer());
+    if (at + b.length > f.size) throw new Error('missing');
     out.set(b, at);
     at += b.length;
   }
@@ -173,6 +177,7 @@ let loading: Promise<void> | null = null;
 function load() {
   loading ??= (async () => {
     const cache = await caches.open(cacheName);
+    if (!(await Promise.all(files.map((f) => cache.match(doneKey(f))))).every(Boolean)) throw new Error('missing');
     const [main, glue, wasm, data] = await Promise.all(files.map((f) => read(cache, f)));
     await new Promise<void>((resolve, reject) => {
       scope.Module = {
@@ -200,7 +205,7 @@ function speak(text: string) {
   const n = m.lengthBytesUTF8(text) + 1;
   const p = m._malloc(n);
   m.stringToUTF8(text, p, n);
-  const h = m._SherpaOnnxOfflineTtsGenerate(tts, p, 0, 1);
+  const h = m._SherpaOnnxOfflineTtsGenerate(tts, p, sid, 1);
   m._free(p);
   if (!h) throw new Error('generate');
   const count = m.HEAP32[h / 4 + 1];
@@ -257,9 +262,11 @@ scope.onmessage = (e: MessageEvent) => {
   const m = e.data;
   if (m.t === 'init') {
     cacheName = m.cache;
+    keys = m.keys;
     bases = m.bases;
     files = m.files;
     config = m.config;
+    sid = m.sid ?? 0;
   } else if (m.t === 'download') {
     download().then(
       () => post({ t: 'downloaded' }),

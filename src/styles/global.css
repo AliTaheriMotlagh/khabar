@@ -690,7 +690,7 @@ dialog[open] { animation: sheet-in .3s var(--ease); }
 .seg input:focus-visible + span { outline: 2.5px solid var(--accent); outline-offset: 2px; }
 .sheet-foot { display: flex; justify-content: space-between; gap: 10px; padding-top: 14px; }
 
-/* the on-device Persian voice: settings line and download sheet (src/scripts/voice-offer.ts) */
+/* the on-device Persian voices: settings line and the sheet that picks, previews and downloads them (src/scripts/voice-offer.ts) */
 .voice-row { display: flex; align-items: center; justify-content: space-between; gap: 12px; }
 .voice-row-text { display: grid; gap: 2px; font-size: 14px; }
 .voice-row-text b { color: var(--text-2); }
@@ -700,7 +700,6 @@ dialog[open] { animation: sheet-in .3s var(--ease); }
 .voice-facts { list-style: none; margin: 0 0 6px; padding: 0; display: grid; gap: 8px; font-size: 14px; color: var(--text-2); }
 .voice-facts li { display: flex; align-items: center; gap: 8px; line-height: 1.7; }
 .voice-facts .i { flex: none; width: 17px; height: 17px; color: var(--accent); }
-.voice-sheet[data-view='ready'] .voice-facts, .voice-sheet[data-view='other'] .voice-facts { display: none; }
 .voice-progress { display: grid; gap: 6px; margin: 14px 0 4px; }
 .voice-progress progress { appearance: none; width: 100%; height: 8px; border: 0; border-radius: 99px; overflow: hidden; background: var(--surface-2); }
 .voice-progress progress::-webkit-progress-bar { background: var(--surface-2); }
@@ -710,8 +709,30 @@ dialog[open] { animation: sheet-in .3s var(--ease); }
 .voice-msg { margin: 8px 0 0; font-size: 14px; color: var(--new); line-height: 1.8; }
 .voice-msg:empty { display: none; }
 .voice-sheet .sheet-foot { justify-content: flex-end; flex-wrap: wrap; }
-.voice-sheet .sheet-foot [data-voice-remove] { margin-inline-end: auto; }
 .voice-sheet .btn .i { width: 17px; height: 17px; }
+.vo-list { list-style: none; margin: 12px 0 0; padding: 0; display: grid; gap: 8px; }
+.vo { border: 1px solid var(--border); border-radius: var(--radius-sm); background: var(--bg); transition: border-color .2s, background .2s; }
+.vo.open { border-color: color-mix(in srgb, var(--accent) 45%, var(--border)); background: var(--surface); box-shadow: var(--shadow-sm); }
+.vo-head { display: flex; align-items: center; gap: 4px; padding-inline-end: 6px; }
+.vo-toggle { flex: 1 1 auto; min-width: 0; display: grid; gap: 2px; text-align: start; padding: 11px 14px; background: none; border: 0; color: inherit; font: inherit; cursor: pointer; border-radius: var(--radius-sm); }
+.vo-toggle:focus-visible { outline: 2.5px solid var(--accent); outline-offset: -2px; }
+.vo-name { font-weight: 800; font-size: 15.5px; display: flex; align-items: center; gap: 8px; }
+.vo-rec { font-style: normal; font-size: 11.5px; font-weight: 800; color: var(--good); background: var(--good-soft); padding: 1px 9px; border-radius: 999px; }
+.vo-meta { color: var(--text-3); font-size: 13px; }
+.vo-state { font-size: 12.5px; font-weight: 700; color: var(--accent); font-variant-numeric: tabular-nums; }
+.vo-state:empty { display: none; }
+.vo-state.on { color: var(--good); }
+.vo-state.on::before { content: '✓ '; }
+.vo-play .i + .i, .vo-play[aria-pressed='true'] .i:first-child { display: none; }
+.vo-play[aria-pressed='true'] .i + .i { display: inline-block; }
+.vo-play[aria-pressed='true'] { color: var(--accent); background: var(--accent-soft); }
+.vo-body { padding: 0 14px 14px; display: grid; gap: 10px; }
+.vo-about { margin: 0; font-size: 14px; line-height: 1.8; color: var(--text-2); }
+.vo-body .voice-progress, .vo-body .voice-msg { margin: 0; }
+.vo-actions { display: flex; gap: 8px; flex-wrap: wrap; }
+.vo-actions [data-vo-remove] { margin-inline-start: auto; }
+.vo-stored { margin: 12px 0 0; font-size: 13px; color: var(--text-3); }
+@media (prefers-reduced-motion: reduce) { .vo { transition: none; } }
 
 dialog.drawer {
   /* top and height follow the visual viewport while open, so the keyboard never covers the message box */

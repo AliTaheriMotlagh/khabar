@@ -2,11 +2,11 @@
 // The device's own Persian voice when it has one (some Android phones and desktops); otherwise a Persian neural voice
 // from /api/tts, one cached MP3 per paragraph, when the server has a key; otherwise the voice the reader downloaded
 // to this device (src/scripts/voice.ts), made a sentence at a time while the previous one plays — iPhones and iPads
-// ship no Persian voice at all. The audio element keeps playing with the screen locked. start() and resume() must
+// ship no Persian voice at all. A downloaded voice the reader picked in the voice sheet goes before the other two. The audio element keeps playing with the screen locked. start() and resume() must
 // run straight from a tap: iOS only lets audio begin inside the gesture, so nothing on that path awaits (the
 // on-device voice first plays a moment of silence in the tap, which unlocks the element for the clips that follow).
 import { SITE } from '../site';
-import { prepareVoice, sentences, voiceClip, voiceReady, voiceState } from './voice';
+import { prepareVoice, sentences, voiceClip, voicePreferred, voiceReady, voiceState } from './voice';
 
 /** One paragraph to read: `i` is its index in the story's card.json (0 = title, then the body, then "why"). */
 export type Line = { text: string; post: number; i: number };
@@ -34,7 +34,7 @@ export async function persianVoice(): Promise<VoiceSource | null> {
     if (synth) {
       // Chrome fills the voice list a moment after load.
       if (!synth.getVoices().length) await new Promise((r) => (synth.addEventListener('voiceschanged', r, { once: true }), setTimeout(r, 1500)));
-      if (voiceFor('fa')) return;
+      if (voiceFor('fa')) return void (await local);
     }
     try {
       cloudOk = (await fetch(`${SITE.api}/api/tts/?probe=1`)).ok;
@@ -45,7 +45,9 @@ export async function persianVoice(): Promise<VoiceSource | null> {
   return hasPersianVoice();
 }
 /** Synchronous answer, once persianVoice() has resolved: safe to use inside a tap. */
-export const hasPersianVoice = (): VoiceSource | null => (voiceFor('fa') ? 'device' : cloudOk ? 'cloud' : voiceReady() ? 'local' : null);
+export const hasPersianVoice = (): VoiceSource | null => (voicePreferred() ? 'local' : voiceFor('fa') ? 'device' : cloudOk ? 'cloud' : voiceReady() ? 'local' : null);
+/** The device's or the server's own Persian voice, which a downloaded one may be preferred over. After persianVoice(). */
+export const systemVoice = (): 'device' | 'cloud' | null => (voiceFor('fa') ? 'device' : cloudOk ? 'cloud' : null);
 export const canSpeakPersian = async () => (await persianVoice()) !== null;
 /** The reader is about to listen: when it's the downloaded voice that will speak, its model starts loading now. */
 export const getReady = () => hasPersianVoice() === 'local' && prepareVoice();
@@ -81,7 +83,7 @@ export class Speaker {
   start(lines: Line[], from = 0) {
     this.halt();
     this.lines = lines;
-    this.engine = voiceFor('fa') || (synth && !lines.some((l) => isPersian(l.text))) ? 'device' : cloudOk || !voiceReady() ? 'cloud' : 'local';
+    this.engine = synth && !lines.some((l) => isPersian(l.text)) ? 'device' : (hasPersianVoice() ?? 'cloud');
     if (this.engine === 'local') {
       this.audio.src = SILENCE;
       this.audio.play().catch(() => {});
@@ -91,7 +93,7 @@ export class Speaker {
 
   /** Gets the on-device voice working on these lines before they are played (the next scene of the player). */
   warm(lines: Line[]) {
-    if (voiceFor('fa') || cloudOk || !voiceReady()) return;
+    if (hasPersianVoice() !== 'local') return;
     const first = sentences(lines[0]?.text ?? '')[0];
     if (first) voiceClip(first);
   }
@@ -205,7 +207,7 @@ export class Speaker {
 
   private failed() {
     // The device's voice list may only have arrived after the tap.
-    if (!this.played && voiceFor('fa')) {
+    if (!this.played && this.engine !== 'device' && voiceFor('fa')) {
       this.engine = 'device';
       return this.play(this.at);
     }
