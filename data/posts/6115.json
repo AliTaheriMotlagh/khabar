@@ -1,0 +1,64 @@
+{
+ "id": 6115,
+ "url": "https://t.me/dlmehr/6115",
+ "date": "2026-10-26T04:51:12+00:00",
+ "text": "https://fxtwitter.com/hamelhusain/status/2114434195854684330?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+ "forwarded_from": null,
+ "digest": false,
+ "hash": "3f6ad35bd950",
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/hamelhusain/status/2114434195854684330?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+  "site": "FxTwitter",
+  "title": "Hamel Husain (@HamelHusain)",
+  "description": "I've been looking into public benchmarks and am astounded by the poor quality vs. how much we rely on them as an industry.\n@xeophon pointed me to this excellent site https://epoch.ai/benchmarks/ which is an independent third party which scrutinizes benchmarks…",
+  "image": "https://cdn4.telesco.pe/file/lMf1eMpk8IfA517ia8p5M2aNCha8VJm-kfzTPvjS5CrhozZDe-CYPBJbQCqJDyugkgJUOeQ3ztsWMFoavupMEKD53MZ8nluN3zCcvj6fPpVZ7CKYgqrS-HmxNlTDLKd5yiuJuhzug_3AiQIm-eLDsjRS-nk4u2XqXz1k5twEdHh7EocpbZ4I0puvq2ask6Kcu2TrlSVP3LBJDfWbUlxjVWQ730Tx3U141KWBvLZ11OCg5pvrWD9MXoo2tMW_HLW_ibDmbrvB_PXxP3YSsUXWg2XmRL4QfePQJxwJdQ6v6rf0rFzF-M4KWpknoDopEov95-L-tgPnYk6y-2pXVSMSMw.jpg"
+ },
+ "gholam": {
+  "text": "رفیق، همل حسین دست گذاشته رو یه نقطه حساس و حسابی از کیفیت درپیت بنچمارک‌های عمومی هوش مصنوعی شاکی شده؛ همون اعدادی که کل این صنعت دارن چشم‌بسته روشون قسم می‌خورن. می‌گه وقتی بری تو دل ماجرا، می‌فهمی چقدر این معیارهای ارزیابی پر از ایراد و خطان و نباید همین‌جوری باورشون کرد. حتی به یه سایت مستقل به اسم ایپاک اشاره کرده که نشسته داده‌ها رو موشکافی کرده و پته این بنچمارک‌ها رو ریخته رو آب. توصیه‌ش هم به برو‌بچه‌های این حوزه اینه که قبل از هر قضاوتی، خودشون برن نمونه‌هایی که سیستم غلط تشخیص داده رو دونه‌دونه وارسی کنن تا عیار واقعی دستشون بیاد.\n\nاهمیتش اینه که وقتی متر و معیار ارزیابی مدل‌ها تو در و دیوار باشه، کل ادعاهای شرکت‌ها سر برتری هوش مصنوعی‌شون میره زیر علامت سوال.",
+  "date": "2026-10-26T04:51:32+00:00"
+ },
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/HamelHusain/status/2114434195854684330",
+   "domain": "x.com",
+   "author": {
+    "name": "Hamel Husain",
+    "handle": "HamelHusain",
+    "avatar": "https://pbs.twimg.com/profile_images/1287206199088173057/ixE4fKy1_200x200.jpg"
+   },
+   "text": "I've been looking into public benchmarks and am astounded by the poor quality vs. how much we rely on them as an industry.  \n\n@xeophon pointed me to this excellent site https://epoch.ai/benchmarks/ which is an independent third party which scrutinizes benchmarks and \"looks at the data\" 💪\n\nFor example, here are some popular benchmarks we all rely on.   Before trusting a benchmark its worth running them and inspecting examples the grader failed carefully, to get a sense of the quality.\n\nI'm continuing to look more into this, and will write something up eventually once I've collected more data, but I think this is an important subject.",
+   "date": 1792955371,
+   "media": [
+    {
+     "type": "image",
+     "src": "https://pbs.twimg.com/media/HVf5Q0ZbwAAz2Xl.jpg?name=orig",
+     "ratio": 1.0454
+    }
+   ],
+   "links": [
+    "https://epoch.ai/benchmarks/"
+   ]
+  },
+  {
+   "kind": "link",
+   "url": "https://epoch.ai/benchmarks",
+   "domain": "epoch.ai",
+   "title": "AI benchmarks & capabilities",
+   "description": "Our hub for benchmark results, featuring the performance of leading AI models on challenging tasks. It includes results from benchmarks administered internally by Epoch AI as well as data collected from external sources. Explore trends in AI capabilities across time, by benchmark, or by model.",
+   "image": "https://epoch.ai/assets/images/datahub/thumbnails/benchmarking-thumbnail.png",
+   "site": "Epoch AI"
+  }
+ ],
+ "article": {
+  "title": "همل حسین دست گذاشته رو یه نقطه حساس و حسابی از کیفیت درپیت بنچمارک‌های عمومی هوش مصنوعی شاکی شده؛ همون اعدادی که کل این صنعت دارن چشم‌بسته روشون قسم می‌خورن",
+  "source_title": "I've been looking into public benchmarks and am astounded by the poor quality vs. how much we rely on them as an industry.",
+  "body": [
+   "رفیق، همل حسین دست گذاشته رو یه نقطه حساس و حسابی از کیفیت درپیت بنچمارک‌های عمومی هوش مصنوعی شاکی شده؛ همون اعدادی که کل این صنعت دارن چشم‌بسته روشون قسم می‌خورن. می‌گه وقتی بری تو دل ماجرا، می‌فهمی چقدر این معیارهای ارزیابی پر از ایراد و خطان و نباید همین‌جوری باورشون کرد. حتی به یه سایت مستقل به اسم ایپاک اشاره کرده که نشسته داده‌ها رو موشکافی کرده و پته این بنچمارک‌ها رو ریخته رو آب. توصیه‌ش هم به برو‌بچه‌های این حوزه اینه که قبل از هر قضاوتی، خودشون برن نمونه‌هایی که سیستم غلط تشخیص داده رو دونه‌دونه وارسی کنن تا عیار واقعی دستشون بیاد."
+  ],
+  "why": "وقتی متر و معیار ارزیابی مدل‌ها تو در و دیوار باشه، کل ادعاهای شرکت‌ها سر برتری هوش مصنوعی‌شون میره زیر علامت سوال.",
+  "tags": []
+ },
+ "updated": "2026-10-26T05:02:12+00:00"
+}
