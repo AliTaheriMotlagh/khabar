@@ -12,7 +12,7 @@
   "site": "FxTwitter · patchtheplanet.org",
   "title": "OpenAI (@OpenAI)",
   "description": "During this red-teaming exercise, we also found a vulnerability that allows for unauthenticated remote code execution in Brotli, a widely-deployed compression library included in many pieces of software such as Node.js, Bun, and Envoy.\nThe flaw could let…",
-  "image": "https://cdn4.telesco.pe/file/bUJSpXSn_kJqpzz1vD_tzrx6vmJhC-5LQztStAAHoWLChPgoEKQhn4SMYxJCCk8CysG0wHQEbcjqVXqjLpBIqYboc3iua-H8uVaarSYnK_Psjoo3VhgA4dSzk-542lYqnQimPpc8zA32IFuSmJ8BEzO3CeY3ARXlatSIhRyKH_N-3l3nAO2Ls7yZr7TDhF6oVfwuLTKdcwhFFIncwhHJTwf43phaFqVqJaVnptF4JsSbb0Oewlu38zanYVeeeQ0fuknLO8wxvqXb6RqTfDbHDEK059UnjI_UrqfFGp2ZmhbU0dXxQxZqQ3ZEzQsfBbwzeEzkVmzZrGA1NdYSeWUOGg.jpg"
+  "image": "https://cdn4.telesco.pe/file/jXeJv8X7ARL6AmiWoT0UIsV7eEzFQzGkGEasF7LKgL_NhSRsYRLrUiXxu9N3yi56ClaE6OMD7pYRl7Uz3L83xf9tq1G7-xkXE0tOYOttYu1Kz4ngrt6mlLoQVFS6wH7GJk24vZ6yIbOwaNU3vn1LBk8p1T5vdp_gmcUe2COVUtF_zadCL1rCp5yCOtCIU5GhdORpXbaC1NiGYBBxsvjsn8U5vuMHC1YGMh04CxEdW-XKePm2T1QB0cuyeGEyiq0caS6Q4fZrMEZ7MgiUkIyAIxARbUc5ozUeSH3BYKYMcvwJl8QZMIaLEQXDqy7oOlyy7USS76jACKDEH_CjYj_xhw.jpg"
  },
  "gholam": {
   "text": "رفقا قضیه از این قراره که تیم امنیتی OpenAI موقع تست‌های نفوذ خودش، یه باگ فوق‌العاده خطرناک از نوع اجرای کد از راه دور (RCE) توی کتابخونه معروف فشرده‌سازی Brotli پیدا کرده. این باگ ناکس به هکر اجازه می‌داده بدون هیچ لاگین یا دسترسی خاصی، فقط با فرستادن یه مشت دیتای فشرده دستکاری‌شده، کل سرور یا کلاینت رو بفرسته هوا و کد خودش رو اجرا کنه. از اونجا که این کتابخونه توی تار و پود ابزارهای معروفی مثل Node.js، Bun و Envoy نشسته، عمق فاجعه می‌تونست خیلی از سرویس‌های آنلاین رو زمین‌گیر کنه. جالب اینجاست که باگ رو ماه‌ها پیش درست کرده بودن ولی تا همین گزارش OpenAI کسی بو نبرده بود این یه رخنه امنیتی بوده، که حالا دیگه پچ‌ها و نسخه‌های امنیتی جدیدش منتشر شده.\n\nاهمیتش اینه که Brotli همه جای وب استفاده می‌شه و اگه دست‌اندرکارای سرور و توسعه‌دهنده‌ها سیستم‌هاشون رو سریع آپدیت نکنن، دودستی اختیار سرور رو دادن دست هکرها.",
@@ -70,5 +70,5 @@
    "اوپن‌ای‌آی"
   ]
  },
- "updated": "2026-10-27T06:56:19+00:00"
+ "updated": "2026-10-27T13:20:26+00:00"
 }
