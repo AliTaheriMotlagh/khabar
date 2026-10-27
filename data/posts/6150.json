@@ -1,0 +1,70 @@
+{
+ "id": 6150,
+ "url": "https://t.me/dlmehr/6150",
+ "date": "2026-10-27T18:19:00+00:00",
+ "text": "https://fxtwitter.com/nvidiaai/status/2115116486671176161?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+ "forwarded_from": null,
+ "digest": false,
+ "hash": "d35eff5594e8",
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/nvidiaai/status/2115116486671176161?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+  "site": "FxTwitter",
+  "title": "NVIDIA AI (@NVIDIAAI)",
+  "description": "Build AI agents that speak the language and understand the local context.\nHere's 5 steps to learn how to post-train NVIDIA Nemotron with synthetic data and LoRA to adapt its responses for regional terminology, policies and tone.\nFollow the step-by-step…",
+  "image": null
+ },
+ "gholam": {
+  "text": "رفیق، انویدیا اومده یه راهنمای پنج‌مرحله‌ای تر و تمیز رو کرده تا نشون بده چطوری می‌شه هوش مصنوعی ساخت که زبون و اصطلاحات محلی هر منطقه رو مثل موم بفهمه. داستان از این قراره که با استفاده از داده‌های سنتتیک و روش سبک LoRA، مدل نموترون (Nemotron) رو طوری پس‌آموزش می‌دن که لحن، اصطلاحات و قوانین خاص همون جامعه رو قشنگ یاد بگیره. این یعنی توسعه‌دهنده‌ها دیگه نیازی ندارن از صفر چرخ رو اختراع کنن و می‌تونن ایجنت‌هایی سر پا کنن که با بافت فرهنگی مخاطبشون کاملاً چفت و جوره.\n\nاهمیتش اینه که راه رو برای ساخت هوش مصنوعی‌های بومی و مسلط به زبان‌ها و فرهنگ‌های مختلف، اونم با هزینه و دردسر خیلی کمتر، حسابی باز می‌کنه.",
+  "date": "2026-10-27T18:19:18+00:00"
+ },
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/NVIDIAAI/status/2115116486671176161",
+   "domain": "x.com",
+   "author": {
+    "name": "NVIDIA AI",
+    "handle": "NVIDIAAI",
+    "avatar": "https://pbs.twimg.com/profile_images/2055340743552831488/me-KUIug_200x200.png"
+   },
+   "text": "Build AI agents that speak the language and understand the local context.\n\nHere's 5 steps to learn how to post-train NVIDIA Nemotron with synthetic data and LoRA to adapt its responses for regional terminology, policies and tone.\n\nFollow the step-by-step tech blog: https://nvda.ws/4zeRBxd",
+   "date": 1793118042,
+   "media": [
+    {
+     "type": "video",
+     "src": "https://video.twimg.com/tweet_video/HVpnMzybcAAymRR.mp4",
+     "poster": "https://pbs.twimg.com/tweet_video_thumb/HVpnMzybcAAymRR.jpg",
+     "ratio": 1.3333,
+     "duration": 0,
+     "gif": true
+    }
+   ],
+   "links": [
+    "https://nvda.ws/4zeRBxd"
+   ]
+  },
+  {
+   "kind": "link",
+   "url": "https://developer.nvidia.com/blog/fine-tuning-nvidia-nemotron-to-know-local-rules-not-just-local-languages/?ncid=so-twit-285107",
+   "domain": "developer.nvidia.com",
+   "title": "Fine-Tuning NVIDIA Nemotron to Know Local Rules, Not Just Local Languages | NVIDIA Technical Blog",
+   "description": "As AI adoption expands globally, people across languages and cultures are using it in more aspects of their daily lives. General-purpose language models serve as a powerful foundation…",
+   "image": "https://developer-blogs.nvidia.com/wp-content/uploads/2026/10/agentic-promo-nemotron-models-eu-gtc-berlin-press-1600x900-5811620.webp",
+   "site": "NVIDIA Technical Blog"
+  }
+ ],
+ "article": {
+  "title": "انویدیا اومده یه راهنمای پنج‌مرحله‌ای تر و تمیز رو کرده تا نشون بده چطوری می‌شه هوش مصنوعی ساخت که زبون و اصطلاحات محلی هر منطقه رو مثل موم بفهمه",
+  "source_title": "Build AI agents that speak the language and understand the local context.",
+  "body": [
+   "رفیق، انویدیا اومده یه راهنمای پنج‌مرحله‌ای تر و تمیز رو کرده تا نشون بده چطوری می‌شه هوش مصنوعی ساخت که زبون و اصطلاحات محلی هر منطقه رو مثل موم بفهمه. داستان از این قراره که با استفاده از داده‌های سنتتیک و روش سبک LoRA، مدل نموترون (Nemotron) رو طوری پس‌آموزش می‌دن که لحن، اصطلاحات و قوانین خاص همون جامعه رو قشنگ یاد بگیره. این یعنی توسعه‌دهنده‌ها دیگه نیازی ندارن از صفر چرخ رو اختراع کنن و می‌تونن ایجنت‌هایی سر پا کنن که با بافت فرهنگی مخاطبشون کاملاً چفت و جوره."
+  ],
+  "why": "راه رو برای ساخت هوش مصنوعی‌های بومی و مسلط به زبان‌ها و فرهنگ‌های مختلف، اونم با هزینه و دردسر خیلی کمتر، حسابی باز می‌کنه.",
+  "tags": [
+   "انویدیا",
+   "ایجنت"
+  ]
+ },
+ "updated": "2026-10-27T18:22:26+00:00"
+}
