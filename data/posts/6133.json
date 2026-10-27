@@ -1,0 +1,62 @@
+{
+ "id": 6133,
+ "url": "https://t.me/dlmehr/6133",
+ "date": "2026-10-27T01:01:17+00:00",
+ "text": "https://fxtwitter.com/konstiwohlwend/status/2114848424264913095?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+ "forwarded_from": null,
+ "digest": false,
+ "hash": "10c12d2ae4ab",
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/konstiwohlwend/status/2114848424264913095?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+  "site": "🧵 Thread • FxTwitter",
+  "title": "Konsti Wohlwend (@konstiwohlwend)",
+  "description": "The complexity theory result is actually huge.\nP problems can be solved in polynomial time. It was widely believed that NP-complete problems require exponential time.\nP = NP states that NP-complete problems can be solved in polynomial time. OpenAI didn't…",
+  "image": "https://cdn4.telesco.pe/file/rYFRZ17jyEX83fuvoszqeuhywKB0SbToI_lRs7HetcjYyv0aNwzB_HPcbxSqTMjR2apRy3ORbU7yQ7vwAHBMfbJsgMkw0Z5ovGZ3tnoEUwsMGferr6e0kcV3ctnvUkInsJcBwTb-_zNH1WaGDtZXDFSahafFRsHq2Pk2jbhKq1cvPfXQwqsac1pA22zub5UvcNFYY1EeuVzIwewTr-JzulePQfFYcpysy3XMS0BviKYTPoziRjxBowcVpz9g-2sV4zp9DvupSa_G97eD_jZySy0sH1WqMt9XstXzogqgIrZZRET4Qryku-L7zm49V5A2tbVN1Iat1veH6h-XnxBjIw.jpg"
+ },
+ "gholam": {
+  "text": "رفیق، بچه‌های اوپن‌ای‌آی دست گذاشتن رو یکی از بزرگ‌ترین گره‌های تاریخ علوم کامپیوتر و اگه داوری‌های علمی تاییدش کنن، رسماً بمب ترکیده! سال‌هاست همه دانشمندا فکر می‌کردن حل مسائل فوق‌سختِ NP-complete حتماً زمان نمایی و سرسام‌آور می‌خواد، اما اوپن‌ای‌آی نشون داده که دست‌کم بعضی از این مسائل رو می‌شه خیلی سریع‌تر از اون چیزی که فکرش رو می‌کردیم حل کرد. گرگ بروکمن اعلام کرده این فقط یکی از سه کشف علمی بزرگشونه که پای هوش مصنوعی به فیزیک کوانتوم و ریاضیات محض هم باز شده، ولی همین قضیه نشون می‌ده یا به جواب معمای بزرگ P=NP نزدیک شدیم یا با یه سطح پیچیدگی کاملاً جدید طرفیم. این داستان اگه تثبیت بشه، شاید بزرگ‌ترین جهش تئوری کامپیوتر تو چند دهه اخیر به حساب بیاد.\n\nچرا مهمه؟ اهمیتش اینه که باز شدن قفل این مسائل، تمام معادلات دنیای رمزنگاری، هوش مصنوعی و حل پیچیده‌ترین الگوریتم‌های بشری رو زیر و رو می‌کنه.",
+  "date": "2026-10-27T01:01:34+00:00"
+ },
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/konstiwohlwend/status/2114848424264913095",
+   "domain": "x.com",
+   "author": {
+    "name": "Konsti Wohlwend",
+    "handle": "konstiwohlwend",
+    "avatar": "https://pbs.twimg.com/profile_images/2108467568877125632/qa8ETyzn_200x200.jpg"
+   },
+   "text": "The complexity theory result is actually huge.\n\nP problems can be solved in polynomial time. It was widely believed that NP-complete problems require exponential time.\n\nP = NP states that NP-complete problems can be solved in polynomial time. OpenAI didn't prove that. But, they proved that (some) NP-complete problems can be solved faster than exponential time, meaning:\n\n- P = NP, or\n- the complexity of NP problems is a \"middle thing\" between polynomial and exponential, eg. O(n^log n)\n\nIf it survives peer reviews, this could be one of the biggest CS breakthroughs in decades.",
+   "date": 1793054130,
+   "media": [],
+   "links": [],
+   "quote": {
+    "author": {
+     "name": "Greg Brockman",
+     "handle": "gdb",
+     "avatar": "https://pbs.twimg.com/profile_images/1347621377503711233/bHg3ipfD_200x200.jpg"
+    },
+    "text": "Announcing three major scientific discoveries, one each in mathematics (harmonic analysis), computer science (complexity theory), and physics (quantum field theory).\n\nAI starting to help us improve our understanding of the universe! https://openai.com/index/building-scientific-understanding-with-academic-communities/",
+    "date": 1793051421,
+    "media": [],
+    "links": [
+     "https://openai.com/index/building-scientific-understanding-with-academic-communities/"
+    ]
+   }
+  }
+ ],
+ "article": {
+  "title": "بچه‌های اوپن‌ای‌آی دست گذاشتن رو یکی از بزرگ‌ترین گره‌های تاریخ علوم کامپیوتر و اگه داوری‌های علمی تاییدش کنن، رسماً بمب ترکیده",
+  "source_title": "The complexity theory result is actually huge.",
+  "body": [
+   "رفیق، بچه‌های اوپن‌ای‌آی دست گذاشتن رو یکی از بزرگ‌ترین گره‌های تاریخ علوم کامپیوتر و اگه داوری‌های علمی تاییدش کنن، رسماً بمب ترکیده! سال‌هاست همه دانشمندا فکر می‌کردن حل مسائل فوق‌سختِ NP-complete حتماً زمان نمایی و سرسام‌آور می‌خواد، اما اوپن‌ای‌آی نشون داده که دست‌کم بعضی از این مسائل رو می‌شه خیلی سریع‌تر از اون چیزی که فکرش رو می‌کردیم حل کرد. گرگ بروکمن اعلام کرده این فقط یکی از سه کشف علمی بزرگشونه که پای هوش مصنوعی به فیزیک کوانتوم و ریاضیات محض هم باز شده، ولی همین قضیه نشون می‌ده یا به جواب معمای بزرگ P=NP نزدیک شدیم یا با یه سطح پیچیدگی کاملاً جدید طرفیم. این داستان اگه تثبیت بشه، شاید بزرگ‌ترین جهش تئوری کامپیوتر تو چند دهه اخیر به حساب بیاد."
+  ],
+  "why": "اهمیتش اینه که باز شدن قفل این مسائل، تمام معادلات دنیای رمزنگاری، هوش مصنوعی و حل پیچیده‌ترین الگوریتم‌های بشری رو زیر و رو می‌کنه.",
+  "tags": [
+   "اوپن‌ای‌آی"
+  ]
+ },
+ "updated": "2026-10-27T01:02:40+00:00"
+}
