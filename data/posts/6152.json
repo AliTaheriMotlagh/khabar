@@ -1,0 +1,80 @@
+{
+ "id": 6152,
+ "url": "https://t.me/dlmehr/6152",
+ "date": "2026-10-27T18:48:46+00:00",
+ "text": "https://fxtwitter.com/googlegemma/status/2115150303347769597?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+ "forwarded_from": null,
+ "digest": false,
+ "hash": "6059d9173fb4",
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/googlegemma/status/2115150303347769597?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+  "site": "🧵 Thread • FxTwitter",
+  "title": "Google Gemma (@googlegemma)",
+  "description": "↩\n@googlegemma\nTyped Decision Engine for Agent Workflows\nForget slow autoregressive generation and fragile JSON parsing.\nThis fine-tune turns EmbeddingGemma 2 into a fast decision engine that evaluates workflow states (like agent traces or support tickets)…",
+  "image": "https://cdn4.telesco.pe/file/ikFRrRn_y_fjVepOzq4jjUa2OxZ0Fa5tloym6LAzeKSRov2IvHpkmCRo0IcrFppzcr1iFdWzaAxPITn18VzrbgCDYcVWYz0GqV0NwYGpZQrOM-oDL3WrJfPwC-zOJNCEynICTBnBCpbrXNkedI_coX40dLy4I5nfLK0uUAn5r2YAsKI9C7rQbQJu1zP8TH2kB0W7PHysWmCjSvObr5kZxLYYeIVix1E4-3SkwvKuesUqhIhPWxeuuFOhICLGi62_DTMlEC2UaHLQ3z-RYLpKwKivpLYpgHgQlOrCpRHQ-jDaeiLHkv9FnO_EBK3naP4xkyOoXA0afP3hrCfmBucR_Q.jpg"
+ },
+ "gholam": {
+  "text": "ببین رفیق، بچه‌های تیم جما با هنرنمایی مانو رومرو یه کار تر و تمیز راه انداختن و مدل EmbeddingGemma 2 رو جوری فاین‌تیون کردن که تبدیل شده به یه موتور تصمیم‌گیری برق‌آسا واسه ایجنت‌های هوش مصنوعی. داستان اینه که دیگه لازم نیست منتظر تولید متن‌های طولانی یا گیر کردن توی پارس کردن خروجی‌های شکننده جیسون بمونی؛ این مدل فسقلی فقط با یه پردازش سریع، وضعیت کارها و تیکت‌ها رو تحلیل می‌کنه و جواب‌های شسته‌رفته و تیپ‌بندی شده مثل امتیاز، درست/غلط یا گزینه‌ای تحویلت می‌ده. باحالی ماجرا اینجاست که با وجود داشتن پارامترهایی حدود صد برابر کمتر از یه مدل غول‌پیکر ۲۷ میلیاردی، نمره خفن ۷۶.۴ درصد گرفته و کلاً ۶ درصد با اون گنده‌ها فاصله داره.\n\nاهمیتش اینه که می‌تونی سیستم‌های ایجنتی رو بدون نیاز به سرورهای سنگین و با سرعت نور و هزینه خیلی کمتر، شدیداً دقیق و پایدار مدیریت کنی.",
+  "date": "2026-10-27T18:49:02+00:00"
+ },
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/googlegemma/status/2115150303347769597",
+   "domain": "x.com",
+   "author": {
+    "name": "Google Gemma",
+    "handle": "googlegemma",
+    "avatar": "https://pbs.twimg.com/profile_images/2038662245631320064/uWfEb6yw_200x200.png"
+   },
+   "text": "Typed Decision Engine for Agent Workflows\n\nForget slow autoregressive generation and fragile JSON parsing.\n\nThis fine-tune turns EmbeddingGemma 2 into a fast decision engine that evaluates workflow states (like agent traces or support tickets) against a dynamic schema of questions in a single forward pass. It returns calibrated choice, score, and bool outputs without retraining.\n\nModel and post by @mrm8488: https://x.com/mrm8488/status/2109406679045423394\nHugging Face: https://huggingface.co/mrm8488/embeddinggemma-2-ft-typed-decision",
+   "date": 1793126104,
+   "media": [
+    {
+     "type": "image",
+     "src": "https://pbs.twimg.com/media/HVqEgAQasAAEF81.jpg?name=orig",
+     "ratio": 0.5
+    }
+   ],
+   "links": [
+    "https://x.com/mrm8488/status/2109406679045423394",
+    "https://huggingface.co/mrm8488/embeddinggemma-2-ft-typed-decision"
+   ],
+   "quote": {
+    "author": {
+     "name": "Manu Romero",
+     "handle": "mrm8488",
+     "avatar": "https://pbs.twimg.com/profile_images/1644323068859351040/5UVrj4vn_200x200.jpg"
+    },
+    "text": "🧭 New model: Typed Decision, built on EmbeddingGemma 2\n\nGive it a state + any schema of questions → typed, calibrated answers (choice · score · noul). No text generation, no output parsing.\n\n76.4% on typed-decisions, ~6 pts behind a 27B LLM with ~100× fewer params.\n\n🤗 http://huggingface.co/mrm8488/embeddinggemma-2-ft-typed-decision",
+    "date": 1791756717,
+    "media": [],
+    "links": [
+     "http://huggingface.co/mrm8488/embeddinggemma-2-ft-typed-decision"
+    ]
+   }
+  },
+  {
+   "kind": "link",
+   "url": "https://huggingface.co/mrm8488/embeddinggemma-2-ft-typed-decision",
+   "domain": "huggingface.co",
+   "title": "mrm8488/embeddinggemma-2-ft-typed-decision · Hugging Face",
+   "description": "We’re on a journey to advance and democratize artificial intelligence through open source and open science.",
+   "image": "https://huggingface.co/mrm8488/embeddinggemma-2-ft-typed-decision/resolve/main/eg2td.png",
+   "site": "huggingface.co"
+  }
+ ],
+ "article": {
+  "title": "بچه‌های تیم جما با هنرنمایی مانو رومرو یه کار تر و تمیز راه انداختن و مدل EmbeddingGemma 2 رو جوری فاین‌تیون کردن که تبدیل شده به یه موتور تصمیم‌گیری برق‌آسا واسه ایجنت‌های هوش مصنوعی",
+  "source_title": "Typed Decision Engine for Agent Workflows",
+  "body": [
+   "ببین رفیق، بچه‌های تیم جما با هنرنمایی مانو رومرو یه کار تر و تمیز راه انداختن و مدل EmbeddingGemma 2 رو جوری فاین‌تیون کردن که تبدیل شده به یه موتور تصمیم‌گیری برق‌آسا واسه ایجنت‌های هوش مصنوعی. داستان اینه که دیگه لازم نیست منتظر تولید متن‌های طولانی یا گیر کردن توی پارس کردن خروجی‌های شکننده جیسون بمونی؛ این مدل فسقلی فقط با یه پردازش سریع، وضعیت کارها و تیکت‌ها رو تحلیل می‌کنه و جواب‌های شسته‌رفته و تیپ‌بندی شده مثل امتیاز، درست/غلط یا گزینه‌ای تحویلت می‌ده. باحالی ماجرا اینجاست که با وجود داشتن پارامترهایی حدود صد برابر کمتر از یه مدل غول‌پیکر ۲۷ میلیاردی، نمره خفن ۷۶.۴ درصد گرفته و کلاً ۶ درصد با اون گنده‌ها فاصله داره."
+  ],
+  "why": "می‌تونی سیستم‌های ایجنتی رو بدون نیاز به سرورهای سنگین و با سرعت نور و هزینه خیلی کمتر، شدیداً دقیق و پایدار مدیریت کنی.",
+  "tags": [
+   "ایجنت"
+  ]
+ },
+ "updated": "2026-10-27T18:52:21+00:00"
+}
