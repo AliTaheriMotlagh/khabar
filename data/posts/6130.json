@@ -12,7 +12,7 @@
   "site": "FxTwitter",
   "title": "Ed Ludlow (@EdLudlow)",
   "description": "Anthropic is a huge user of its own AI.\nTwo data points from the S-1 I found fascinating:\nMore than 90% of contributions to its codebase in September were written by Claude, with engineers increasingly directing and reviewing the work.\nAnd by April, Anthropic’s…",
-  "image": "https://cdn4.telesco.pe/file/lEPxm75ZXuGBv9ifZ7pe45QT7KTgxqA_Lz3aSjCIzkKi1Hx8llPJg3kEVrwOP1d9B80J_WE1ct0h8Bot-qwDfStEOmx34qAhhjn9QEo3dPfctN_y4R-5ZTJX8Oq_iPZzhoAjRwOuSAXnGzz_k1dm4DCK-Z2rY5_pUq1K8vOEHE-BtZu5AgkO_B9sG5WyQDUIJk-Fv2oxSyW5jLlNiEHUPyDRFVFhdCb7rRhOaIHC6dcok-EfGou1uv6m6m995UvOsSXc8z7Wa3xSZHdjSuNa61xXRhlnsksZYWNW6_TygIAgUh1ej7FjKq1-qBJGIkklNzWJR6NxyvGww6P7XfEqOg.jpg"
+  "image": "https://cdn4.telesco.pe/file/lwGKpz6kwcXA6_vtlyw6wWUGghlXihBl1FaPdRcVuzVaR4fjQ4b9qBq6h24peHtym_1i40idL_zyWUK7kvCXDnNrmz5vJ7pfKE27Wp4Al0LdGDT7sLz0qhuXYl1q0dngr5IY8BIhAM_MY3g1KIH_yMeSuIPYIC37mU3qupm7-JmsKsZ95gSaEOHsipMoCK0Wa6eKByGbb33VNyccpbfL4sF5vNxt8NwobM_6qlkN3AceJOKBrpbFGhVuqZ5mUrABoPWt-CFeyKD41BGdjjTa-anRnTuY5BW9J_3oI3jzI4ooyFNCVjewMw7bQkbabzPkpwCRiFVcIn3Xrmi5e5uu5Q.jpg"
  },
  "gholam": {
   "text": "رفیق، بشنو از شاهکار جدید شرکت آنتروپیک، سازنده هوش مصنوعی کلود، که طبق آمارهای رسمیشون حسابی کار و بارشون رو سپردن دست محصول خودشون! قضیه از این قراره که توی ماه سپتامبر، بیش از ۹۰ درصد کدهای برنامه‌نویسی این شرکت رو خود کلود نوشته و مهندس‌ها فقط کارش رو هدایت و بازبینی کردن. از اون جالب‌تر اینکه تا ماه آوریل، ارزش مصرف ماهانه کلود توسط خود کارمنداشون، از کل هزینه‌های حقوق نقدی پرسنل شرکت زده بالاتر. حالا برای خیلیا سوال شده که آیا این ابزار عملاً داره ارزون‌تر و بهینه‌تر از نیروی انسانی کار می‌کنه یا نه.\n\nاهمیتش اینه که نشون میده بزرگ‌ترین سازنده‌های هوش مصنوعی رسماً دارن بخش اعظم کار فنی‌شون رو به خود مدل‌ها می‌سپارن و آینده بازار کار کدنویسی زودتر از چیزی که فکر می‌کردیم وارد فاز نظارتی شده.",
@@ -45,5 +45,5 @@
    "آنتروپیک"
   ]
  },
- "updated": "2026-10-27T13:20:26+00:00"
+ "updated": "2026-10-27T19:26:41+00:00"
 }
