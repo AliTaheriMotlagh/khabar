@@ -101,22 +101,39 @@ export const fresh = (src: string | null | undefined) => (src ? freshUrls.get(sr
 // then through wsrv.nl directly; then from the original address (fine with a VPN). Pictures from other sites (link
 // previews) go wsrv.nl, then original. src/scripts/media.ts walks the list (data-alt) and moves on when an address
 // fails or just hangs. A Telegram picture goes by its post and index: always the current signed URL, and the same
-// address forever, so caches keep serving it. Social cards, JSON-LD and RSS keep the original URLs.
+// address forever, so caches keep serving it. Social cards and JSON-LD keep the original URLs (read by crawlers abroad);
+// RSS goes through the relay (feedPicture).
 const PROXY = 'https://wsrv.nl/';
 const WIDTH = { small: 320, medium: 800, large: 1400 }; // api/img.js accepts exactly these
 const RELAYED = /^https:\/\/(pbs\.twimg\.com|[\w-]+\.telesco\.pe|i\.ytimg\.com)\//; // and only these hosts
 const absolute = (u: string) => (u.startsWith('/') ? `${SITE.api || SITE.url}${u}` : u);
 const viaProxy = (u: string, size: keyof typeof WIDTH) => `${PROXY}?url=${encodeURIComponent(absolute(u))}&w=${WIDTH[size]}&we&output=webp&q=80`;
+/** The site's own address for a picture from the channel's CDNs (api/img.js), or null for any other picture. */
+function relayed(raw: string | null | undefined, src: string, size: keyof typeof WIDTH) {
+  const tg = fresh(raw);
+  const w = `&w=${WIDTH[size]}`;
+  return tg ? tg.replace('/api/media/', '/api/img/') + w : RELAYED.test(src) ? `${SITE.api}/api/img/?u=${encodeURIComponent(src)}${w}` : null;
+}
 /** An image's addresses, best first: `src` for the HTML and the rest, space-separated, for data-alt. */
 export function picture(raw: string | null | undefined, size: keyof typeof WIDTH = 'medium'): { src: string; alt: string | undefined } {
   const src = sized(raw, size);
   if (!/^https:\/\//.test(src)) return { src, alt: undefined };
   const tg = fresh(raw);
-  const w = `&w=${WIDTH[size]}`;
-  const relay = tg ? tg.replace('/api/media/', '/api/img/') + w : RELAYED.test(src) ? `${SITE.api}/api/img/?u=${encodeURIComponent(src)}${w}` : null;
-  const list = [relay, viaProxy(tg ?? src, size), src, tg].filter((u): u is string => !!u);
+  const list = [relayed(raw, src, size), viaProxy(tg ?? src, size), src, tg].filter((u): u is string => !!u);
   return { src: list[0], alt: list.slice(1).join(' ') };
 }
+/** One lasting address for a picture read elsewhere (RSS): feed readers keep it for good, and many of them read from
+ *  Iran, so a Telegram/X picture goes through the site's relay on the primary domain (WebP), anything else as it is. */
+export function feedPicture(raw: string | null | undefined, size: keyof typeof WIDTH = 'medium') {
+  const src = sized(raw, size);
+  if (!/^https:\/\//.test(src)) return null;
+  const relay = relayed(raw, src, size);
+  return relay ? { url: abs(relay), type: 'image/webp' } : { url: src, type: imageType(src) };
+}
+const imageType = (u: string) => {
+  const ext = new URL(u).pathname.match(/\.(png|gif|webp|avif|svg)$/i)?.[1].toLowerCase();
+  return ext ? (ext === 'svg' ? 'image/svg+xml' : `image/${ext}`) : 'image/jpeg';
+};
 /** Attributes for an <img>: the first address, and the others to fall back to. */
 export const pic = (raw: string | null | undefined, size: keyof typeof WIDTH = 'medium') => {
   const p = picture(raw, size);

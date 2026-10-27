@@ -195,3 +195,47 @@ test('cards: a view counter on every story; pictures come through the site, with
   }
   assert.ok(telegram > 0 && other > 0, 'the home page has Telegram and X pictures');
 });
+
+test('rss: the timeline\'s newest 50, valid for readers in Iran — pictures through the site, digests link to its pages', { skip }, () => {
+  const xml = html('rss.xml');
+  const unesc = (s) => s.replace(/&lt;/g, '<').replace(/&gt;/g, '>').replace(/&quot;/g, '"').replace(/&amp;/g, '&');
+  const tag = (s, t) => s.match(new RegExp(`<${t}[^>]*>([\\s\\S]*?)</${t}>`))?.[1];
+  assert.doesNotMatch(xml, /[\x00-\x08\x0B\x0C\x0E-\x1F]/, 'no characters XML forbids');
+  assert.match(xml, /<atom:link href="https:\/\/[^"]+\/rss\.xml" rel="self" type="application\/rss\+xml"\/>/);
+  assert.match(xml, /<language>fa-IR<\/language>/);
+  assert.ok(!Number.isNaN(Date.parse(tag(xml, 'lastBuildDate'))), 'lastBuildDate');
+
+  const items = [...xml.matchAll(/<item>([\s\S]*?)<\/item>/g)].map((m) => m[1]);
+  const timeline = allPages().flatMap((p) => p.rows.filter((r) => r.id).map((r) => r.id));
+  const ids = items.map((it) => Number(tag(it, 'link').match(/\/p\/(\d+)\/$/)?.[1]));
+  // The timeline's posts, newest first; the home page shows its lead story and the 24-hour summary above it instead.
+  assert.equal(ids.length, Math.min(50, new Set([...timeline, ...ids]).size));
+  for (let i = 1; i < ids.length; i++) assert.ok(ids[i] < ids[i - 1], `${ids[i]} after ${ids[i - 1]}`);
+  assert.deepEqual(timeline.filter((id) => id >= ids.at(-1)), ids.filter((id) => timeline.includes(id)), 'every timeline post in range');
+  assert.ok(ids.filter((id) => !timeline.includes(id)).length <= 2, 'besides the home page\'s lead and summary');
+  for (const [i, it] of items.entries()) {
+    const id = ids[i];
+    assert.ok(fs.existsSync(path.join(dist, `p/${id}/index.html`)), `${id}: its page is built`);
+    assert.equal(tag(it, 'guid'), tag(it, 'link'));
+    assert.equal(new Date(tag(it, 'pubDate')).getTime(), Date.parse(posts[id].date), `${id}: pubDate`);
+    assert.ok(tag(it, 'title')?.trim() && tag(it, 'description')?.trim(), `${id}: title and description`);
+    const enc = it.match(/<enclosure url="([^"]+)" length="0" type="([^"]+)"\/>/);
+    if (enc) {
+      assert.match(enc[2], /^image\//);
+      if (/\/api\/img\//.test(enc[1])) assert.equal(enc[2], 'image/webp', `${id}: the relay serves WebP`);
+    }
+    const body = unesc(tag(it, 'content:encoded') ?? '');
+    assert.match(body, /^<div dir="rtl" lang="fa">[\s\S]*<\/div>$/, `${id}: right-to-left content`);
+    assert.ok(body.includes(`href="${posts[id].url}"`), `${id}: links its Telegram post`);
+    // Telegram's and X's CDNs are filtered in Iran, and Telegram's URLs expire: pictures go by the site's relay.
+    for (const u of [enc && unesc(enc[1]), ...[...body.matchAll(/<img src="([^"]+)"/g)].map((m) => unesc(m[1]))].filter(Boolean)) {
+      assert.doesNotMatch(new URL(u).hostname, /telesco\.pe$|twimg\.com$|ytimg\.com$/, `${id}: ${u}`);
+      if (/\/api\/img\//.test(u)) assert.match(u, /^https:\/\/[^/]+\/api\/img\/\?(p=\d+&(i=\d+|f=\w+)|u=[^&]+)(&f=\w+)?&w=800$/);
+    }
+    if (posts[id].digest) {
+      const links = [...body.matchAll(/<li><a href="([^"]+)">/g)].map((m) => m[1]);
+      assert.ok(links.length > 3, `${id}: the summary's items`);
+      for (const l of links) if (/\/t\.me\//.test(l)) assert.ok(!posts[Number(l.split('/').pop())], `${id}: ${l} has a page on the site`);
+    }
+  }
+});
