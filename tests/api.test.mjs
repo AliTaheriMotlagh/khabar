@@ -180,3 +180,70 @@ test('sync: starts one crawl, not while one runs or right after one', async () =
     delete process.env.GITHUB_DISPATCH_TOKEN;
   }
 });
+
+test('watch: a crawl once the newest post has its comment (or after a grace), and for a late comment', async () => {
+  const off = await import('../api/watch.js?off');
+  assert.equal((await call(off.GET, 'GET', '/api/watch')).status, 501, 'not configured');
+
+  process.env.GITHUB_DISPATCH_TOKEN = 'gh-token';
+  process.env.WATCH_SECRET = 'watch-secret';
+  const watch = await import('../api/watch.js?on');
+  const realFetch = globalThis.fetch;
+  const ago = (s) => new Date(Date.now() - s * 1000).toISOString();
+  const post = (id, at) =>
+    `<div class="tgme_widget_message js-widget_message" data-post="dlmehr/${id}"><div class="tgme_widget_message_text js-message_text">x</div>` +
+    `<a class="tgme_widget_message_date" href="https://t.me/dlmehr/${id}"><time datetime="${at}" class="time">1</time></a></div>`;
+  const discussion = (at) =>
+    `<div class="tgme_widget_message" data-post="dlmehr/1"></div><div class="tme_widget_discussion">` +
+    (at
+      ? `<div class="tgme_widget_message js-widget_message" data-post-id="9"><div class="tgme_widget_message_author">` +
+        `<span class="tgme_widget_message_author_name">غلام</span></div><div class="js-message_text">ببین…<br/>--داش غلام</div>` +
+        `<time datetime="${at}"></time></div>`
+      : '') +
+    `</div>`;
+  let channel = '';
+  let comments = {};
+  let runs = [];
+  const dispatched = [];
+  globalThis.fetch = async (url, init = {}) => {
+    url = String(url);
+    if (url.startsWith('https://t.me/s/')) return new Response(channel);
+    if (url.startsWith('https://t.me/')) return new Response(discussion(comments[url.match(/dlmehr\/(\d+)/)[1]]));
+    assert.equal(init.headers.Authorization, 'Bearer gh-token');
+    if (url.endsWith('/dispatches')) {
+      dispatched.push(url);
+      runs = [{ status: 'queued', conclusion: null, created_at: new Date().toISOString() }, ...runs];
+      return new Response(null, { status: 204 });
+    }
+    return Response.json({ workflow_runs: runs });
+  };
+  const tick = async () => (await call(watch.GET, 'GET', '/api/watch?key=watch-secret')).body;
+  try {
+    assert.equal((await call(watch.GET, 'GET', '/api/watch?key=nope')).status, 401);
+    const auth = await call(watch.GET, 'GET', '/api/watch', null, { authorization: 'Bearer watch-secret' });
+    assert.equal(auth.status, 200, 'the secret also works as a bearer token');
+
+    runs = [{ status: 'completed', conclusion: 'success', created_at: ago(600) }];
+    channel = post(100, ago(7200)) + post(101, ago(20));
+    assert.deepEqual(await tick(), { queued: false, reason: null }, 'a new post waits for Gholam');
+    comments[101] = ago(5);
+    assert.deepEqual(await tick(), { queued: true, reason: 'post 101' });
+    assert.deepEqual(await tick(), { queued: false, reason: null }, 'that crawl has it');
+
+    runs = [{ status: 'completed', conclusion: 'success', created_at: ago(250) }];
+    channel = post(100, ago(7200)) + post(102, ago(200));
+    assert.deepEqual(await tick(), { queued: true, reason: 'post 102' }, 'no comment after the grace (a digest)');
+
+    runs = [{ status: 'completed', conclusion: 'success', created_at: ago(30) }];
+    comments[102] = ago(10);
+    assert.deepEqual(await tick(), { queued: true, reason: 'gholam 102' }, 'a comment after the last crawl');
+    assert.equal(dispatched.length, 3);
+
+    assert.deepEqual(watch.parseChannel(post(7, '2026-10-20T15:31:00+00:00')), [{ id: 7, at: Date.parse('2026-10-20T15:31:00Z') }]);
+    assert.equal(watch.parseGholam(discussion(null)), 0);
+  } finally {
+    globalThis.fetch = realFetch;
+    delete process.env.GITHUB_DISPATCH_TOKEN;
+    delete process.env.WATCH_SECRET;
+  }
+});

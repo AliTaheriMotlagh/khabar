@@ -163,3 +163,30 @@ export const nameCmd = (gh, name) => (name && name !== 'مهمان' ? [['HSET', 
 const CONTROL = /[\u0000-\u0008\u000B-\u001F\u007F‪-‮⁦-⁩]/g;
 export const cleanText = (s, max) =>
   String(s ?? '').replace(CONTROL, '').replace(/\r\n?/g, '\n').replace(/\n{3,}/g, '\n\n').trim().slice(0, max);
+
+/**
+ * GitHub's API for the site workflow (.github/workflows/site.yml), used by sync.js and watch.js. Needs
+ * GITHUB_DISPATCH_TOKEN, a fine-grained token with *Actions: Read and write* on this repo only (read on each call).
+ */
+export const githubToken = () => process.env.GITHUB_DISPATCH_TOKEN;
+export function github(path, init = {}) {
+  const repo =
+    process.env.GITHUB_REPO ||
+    (process.env.VERCEL_GIT_REPO_OWNER && process.env.VERCEL_GIT_REPO_SLUG
+      ? `${process.env.VERCEL_GIT_REPO_OWNER}/${process.env.VERCEL_GIT_REPO_SLUG}`
+      : 'AliTaheriMotlagh/khabar');
+  const workflow = process.env.SYNC_WORKFLOW || 'site.yml';
+  return fetch(`https://api.github.com/repos/${repo}/actions/workflows/${workflow}${path}`, {
+    ...init,
+    headers: {
+      Authorization: `Bearer ${githubToken()}`,
+      Accept: 'application/vnd.github+json',
+      'X-GitHub-Api-Version': '2022-11-28',
+      'User-Agent': 'khabar',
+      ...(init.body ? { 'Content-Type': 'application/json' } : {}),
+    },
+  });
+}
+/** Start a crawl on SYNC_BRANCH (main). */
+export const dispatch = () =>
+  github('/dispatches', { method: 'POST', body: JSON.stringify({ ref: process.env.SYNC_BRANCH || 'main' }) });

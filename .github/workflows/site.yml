@@ -7,8 +7,8 @@ name: site
 
 on:
   # GitHub delays or drops scheduled runs under load (gaps of several hours happen), worst on the hour and half hour,
-  # so these sit off those minutes. It is best effort only: for a dependable cadence also call workflow_dispatch from
-  # an external cron (see README). Keep this schedule as a fallback; a run with nothing new is cheap.
+  # so these sit off those minutes. It is best effort only: /api/watch (called every minute by an external cron, see
+  # README) dispatches a run as soon as the channel has news. Keep this schedule as a fallback; a run with nothing new is cheap.
   schedule:
     - cron: '7,27,47 * * * *'
     # The channel posts its daily summary at ~07:36 Tehran (04:06 UTC), English first, then Persian two minutes later.

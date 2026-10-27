@@ -3,30 +3,11 @@
 // It starts the site workflow (.github/workflows/site.yml) through GitHub's API: needs GITHUB_DISPATCH_TOKEN, a
 // fine-grained token with *Actions: Read and write* on this repo only. Without it the site hides the button (501).
 // GitHub's own run list is the state, so a request while a crawl is queued or running, or right after one, starts nothing.
-import { configured, fail, guestId, hash, json, limited, preflight, readBody, redis } from './_lib.js';
+import { configured, dispatch, fail, github, guestId, hash, json, limited, preflight, readBody, redis } from './_lib.js';
 
 const TOKEN = process.env.GITHUB_DISPATCH_TOKEN;
-const REPO =
-  process.env.GITHUB_REPO ||
-  (process.env.VERCEL_GIT_REPO_OWNER && process.env.VERCEL_GIT_REPO_SLUG
-    ? `${process.env.VERCEL_GIT_REPO_OWNER}/${process.env.VERCEL_GIT_REPO_SLUG}`
-    : 'AliTaheriMotlagh/khabar');
-const WORKFLOW = process.env.SYNC_WORKFLOW || 'site.yml';
-const BRANCH = process.env.SYNC_BRANCH || 'main';
 // A crawl that finished this recently already has the channel's news: another one would find nothing.
 const COOLDOWN = Number(process.env.SYNC_COOLDOWN || 180);
-
-const github = (path, init = {}) =>
-  fetch(`https://api.github.com/repos/${REPO}/actions/workflows/${WORKFLOW}${path}`, {
-    ...init,
-    headers: {
-      Authorization: `Bearer ${TOKEN}`,
-      Accept: 'application/vnd.github+json',
-      'X-GitHub-Api-Version': '2022-11-28',
-      'User-Agent': 'khabar',
-      ...(init.body ? { 'Content-Type': 'application/json' } : {}),
-    },
-  });
 
 async function status() {
   const res = await github('/runs?per_page=5');
@@ -63,7 +44,7 @@ export async function POST(request) {
     const [n] = await redis(['INCR', lock], ['EXPIRE', lock, '120']);
     if (n > 1) return json(request, { queued: false, ...st, running: true });
 
-    const res = await github('/dispatches', { method: 'POST', body: JSON.stringify({ ref: BRANCH }) });
+    const res = await dispatch();
     if (!res.ok) return fail(request, 502, `github ${res.status}`);
     return json(request, { queued: true, running: true, last: st.last });
   } catch (e) {

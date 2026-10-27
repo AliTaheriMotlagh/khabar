@@ -46,11 +46,14 @@ npm test && .venv/bin/python -m pytest -q pipeline/tests
 A crawl with nothing new stops before the build, so it neither commits nor redeploys.
 The mirror uses the Vercel API for comments and chat (repository variable `API_URL` overrides the address).
 
-GitHub's own schedule is best effort: runs come late or not at all, sometimes for hours. For a dependable cadence,
-also trigger the workflow from a free external cron (e.g. cron-job.org, every 20 minutes) with a fine-grained token
-that has *Actions: Read and write* on this repo only. Keep the `schedule:` block as a fallback: runs never overlap,
-and one with nothing new takes well under a minute:
-`curl -X POST -H "Authorization: Bearer $TOKEN" -H "Accept: application/vnd.github+json" -d '{"ref":"main"}' https://api.github.com/repos/<owner>/<repo>/actions/workflows/site.yml/dispatches`
+GitHub's own schedule is best effort: runs come late or not at all, sometimes for hours. To put each post on the site
+within a few minutes, let a free external cron call **`/api/watch/`** every minute (e.g. cron-job.org:
+`https://khabar-ai.vercel.app/api/watch/?key=<WATCH_SECRET>`, GET). It reads the channel's page and starts a crawl
+only when there is news: a new post once Gholam has commented on it (he answers within ~30 s; after 3 minutes it goes
+without, as the daily digests do — `WATCH_GRACE`), or his comment on a post from the last hour (`WATCH_MINUTES`)
+that came after the newest crawl. Needs `GITHUB_DISPATCH_TOKEN` (above) and `WATCH_SECRET` (any long random string)
+in Vercel; 501 without them. No Redis. Keep the `schedule:` block as a fallback: runs never overlap, and one with
+nothing new takes well under a minute.
 
 **Moderation:** delete a comment with
 `curl -X DELETE -H "Authorization: Bearer $ADMIN_TOKEN" "https://khabar-ai.vercel.app/api/comments/?post=<post id>&id=<comment id>"`.
