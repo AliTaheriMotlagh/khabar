@@ -128,12 +128,8 @@ export function feedPicture(raw: string | null | undefined, size: keyof typeof W
   const src = sized(raw, size);
   if (!/^https:\/\//.test(src)) return null;
   const relay = relayed(raw, src, size);
-  return relay ? { url: abs(relay), type: 'image/webp' } : { url: src, type: imageType(src) };
+  return relay ? { url: abs(relay) } : { url: src };
 }
-const imageType = (u: string) => {
-  const ext = new URL(u).pathname.match(/\.(png|gif|webp|avif|svg)$/i)?.[1].toLowerCase();
-  return ext ? (ext === 'svg' ? 'image/svg+xml' : `image/${ext}`) : 'image/jpeg';
-};
 /** Attributes for an <img>: the first address, and the others to fall back to. */
 export const pic = (raw: string | null | undefined, size: keyof typeof WIDTH = 'medium') => {
   const p = picture(raw, size);
@@ -158,18 +154,27 @@ const persianShare = (s: string) => {
 // The whole channel is about AI: a "هوش مصنوعی" tag would sit on every story and say nothing.
 const HIDDEN_TAGS = new Set(['هوش مصنوعی']);
 
-const DIGEST_LINE = /^[\s‎‏]*([0-9۰-۹]+)\s*[—–-]\s*(.+?)\s*\((https?:\/\/t\.me\/\w+\/(\d+))\)\s*$/;
+// «۱ — text (https://t.me/…/123)» (or «۱. text (…)»), or as the older summaries put it: «۱ (https://t.me/…/123). text»,
+// «۱. (…) text».
+const DIGEST_LINE = /^[\s‎‏]*([0-9۰-۹]+)\s*[—–.)-]\s*(.+?)\s*\((https?:\/\/t\.me\/\w+\/(\d+))\)[\s.]*$/;
+const DIGEST_LINE_OLD = /^[\s‎‏]*([0-9۰-۹]+)[.)]?\s*\((https?:\/\/t\.me\/\w+\/(\d+))\)\s*[.:—–-]?\s*(.+?)\s*$/;
+const digestLine = (line: string) => {
+  const m = line.match(DIGEST_LINE);
+  if (m) return { n: m[1], text: m[2], href: m[3], id: m[4] };
+  const o = line.match(DIGEST_LINE_OLD);
+  return o ? { n: o[1], text: o[4], href: o[2], id: o[3] } : null;
+};
 const toLatin = (s: string) => s.replace(/[۰-۹]/g, (d) => String('۰۱۲۳۴۵۶۷۸۹'.indexOf(d)));
 
 function digestItems(text: string, ids: Set<number>): DigestItem[] {
   return text
     .split('\n')
-    .map((line) => line.match(DIGEST_LINE))
-    .filter((m): m is RegExpMatchArray => !!m)
+    .map(digestLine)
+    .filter((m) => !!m)
     .map((m) => {
-      const id = Number(m[4]);
+      const id = Number(m.id);
       const internal = ids.has(id);
-      return { n: Number(toLatin(m[1])), text: m[2], href: internal ? url(`p/${id}/`) : m[3], internal, id };
+      return { n: Number(toLatin(m.n)), text: m.text, href: internal ? url(`p/${id}/`) : m.href, internal, id };
     });
 }
 

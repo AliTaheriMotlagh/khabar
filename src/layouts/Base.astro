@@ -2,6 +2,7 @@
 import '../styles/global.css';
 import { SITE } from '../site';
 import { abs, feedRev, url } from '../lib/posts';
+import { FEEDS, type FeedDef } from '../lib/feed';
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
 import Settings from '../components/Settings.astro';
@@ -24,8 +25,11 @@ interface Props {
   jsonLd?: Record<string, unknown>[];
   noindex?: boolean;
   progress?: boolean;
+  /** This page's own feed (a topic's), named before the site's so a reader offers it first. */
+  feed?: FeedDef;
 }
-const { title, description = SITE.description, image, imageAlt, type = 'website', published, modified, section, tags = [], jsonLd = [], noindex, progress } = Astro.props;
+const { title, description = SITE.description, image, imageAlt, type = 'website', published, modified, section, tags = [], jsonLd = [], noindex, progress, feed } = Astro.props;
+const feeds = [...(feed ? [feed] : []), FEEDS.all, FEEDS.news, FEEDS.daily];
 
 // Open pages compare this with /build.json to notice newer news (src/scripts/social.ts).
 const rev = feedRev();
@@ -83,7 +87,7 @@ const ld = [
     <link rel="icon" href={url('favicon.svg')} type="image/svg+xml" />
     <link rel="apple-touch-icon" href={url('icon-192.png')} />
     <link rel="manifest" href={url('manifest.webmanifest')} />
-    <link rel="alternate" type="application/rss+xml" title={SITE.name} href={url('rss.xml')} />
+    {feeds.map((f) => <link rel="alternate" type="application/rss+xml" title={f.title} href={url(f.path)} />)}
     <link rel="sitemap" href={url('sitemap-index.xml')} />
     <!-- Pictures come through the image proxy (src/lib/posts.ts, picture()): connect to it before the first one. -->
     <link rel="preconnect" href="https://wsrv.nl" />

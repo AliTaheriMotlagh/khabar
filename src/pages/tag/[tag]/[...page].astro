@@ -4,6 +4,7 @@ import Timeline from '../../../components/Timeline.astro';
 import Sidebar from '../../../components/Sidebar.astro';
 import { SITE } from '../../../site';
 import { getFeed, getTags, tagHref, faNum } from '../../../lib/posts';
+import { tagFeed } from '../../../lib/feed';
 
 // /tag/<tag>/ is the first page, /tag/<tag>/2/ … the older ones (a big topic holds hundreds of posts).
 export function getStaticPaths() {
@@ -22,7 +23,7 @@ const prev = page > 1 ? at(page - 1) : null;
 const next = page < total ? at(page + 1) : null;
 const nth = page > 1 ? ` — صفحه‌ی ${faNum(page)}` : '';
 ---
-<Base title={`اخبار ${tag}${nth}`} description={`تازه‌ترین اخبار ${tag} با ترجمه‌ی فارسی، تصویر و ویدیو و پیوند به منبع اصلی — ${SITE.name}${nth}`} image={slice.find((p) => p.cover)?.cover?.src}>
+<Base title={`اخبار ${tag}${nth}`} description={`تازه‌ترین اخبار ${tag} با ترجمه‌ی فارسی، تصویر و ویدیو و پیوند به منبع اصلی — ${SITE.name}${nth}`} image={slice.find((p) => p.cover)?.cover?.src} feed={tagFeed(tag!)}>
   <div class="container">
     <header class="page-head"><h1>اخبار {tag}</h1><p><span data-num>{faNum(posts.length)}</span> خبر{page > 1 && ` · صفحه‌ی ${faNum(page)} از ${faNum(total)}`}</p></header>
     <div class="layout">

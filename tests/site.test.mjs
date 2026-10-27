@@ -196,46 +196,71 @@ test('cards: a view counter on every story; pictures come through the site, with
   assert.ok(telegram > 0 && other > 0, 'the home page has Telegram and X pictures');
 });
 
-test('rss: the timeline\'s newest 50, valid for readers in Iran — pictures through the site, digests link to its pages', { skip }, () => {
-  const xml = html('rss.xml');
+/** One feed's checks, for readers in Iran: valid XML, its own self link, items newest first, the newest FULL whole
+ *  (pictures through the site, digests linking to its pages), the rest a summary. Returns the items' ids. */
+function checkFeed(file, FULL = 100) {
+  const xml = html(file);
   const unesc = (s) => s.replace(/&lt;/g, '<').replace(/&gt;/g, '>').replace(/&quot;/g, '"').replace(/&amp;/g, '&');
   const tag = (s, t) => s.match(new RegExp(`<${t}[^>]*>([\\s\\S]*?)</${t}>`))?.[1];
-  assert.doesNotMatch(xml, /[\x00-\x08\x0B\x0C\x0E-\x1F]/, 'no characters XML forbids');
-  assert.match(xml, /<atom:link href="https:\/\/[^"]+\/rss\.xml" rel="self" type="application\/rss\+xml"\/>/);
+  assert.doesNotMatch(xml, /[\x00-\x08\x0B\x0C\x0E-\x1F]/, `${file}: no characters XML forbids`);
+  const self = unesc(xml.match(/<atom:link href="(https:\/\/[^"]+)" rel="self" type="application\/rss\+xml"\/>/)?.[1] ?? '');
+  assert.equal(decodeURIComponent(new URL(self).pathname), `/${file}`, `${file}: its self link`);
   assert.match(xml, /<language>fa-IR<\/language>/);
-  assert.ok(!Number.isNaN(Date.parse(tag(xml, 'lastBuildDate'))), 'lastBuildDate');
+  assert.match(xml, /<ttl>\d+<\/ttl>/);
+  assert.ok(!Number.isNaN(Date.parse(tag(xml, 'lastBuildDate'))), `${file}: lastBuildDate`);
 
   const items = [...xml.matchAll(/<item>([\s\S]*?)<\/item>/g)].map((m) => m[1]);
-  const timeline = allPages().flatMap((p) => p.rows.filter((r) => r.id).map((r) => r.id));
   const ids = items.map((it) => Number(tag(it, 'link').match(/\/p\/(\d+)\/$/)?.[1]));
-  // The timeline's posts, newest first; the home page shows its lead story and the 24-hour summary above it instead.
-  assert.equal(ids.length, Math.min(50, new Set([...timeline, ...ids]).size));
-  for (let i = 1; i < ids.length; i++) assert.ok(ids[i] < ids[i - 1], `${ids[i]} after ${ids[i - 1]}`);
-  assert.deepEqual(timeline.filter((id) => id >= ids.at(-1)), ids.filter((id) => timeline.includes(id)), 'every timeline post in range');
-  assert.ok(ids.filter((id) => !timeline.includes(id)).length <= 2, 'besides the home page\'s lead and summary');
+  for (let i = 1; i < ids.length; i++) assert.ok(ids[i] < ids[i - 1], `${file}: ${ids[i]} after ${ids[i - 1]}`);
   for (const [i, it] of items.entries()) {
     const id = ids[i];
     assert.ok(fs.existsSync(path.join(dist, `p/${id}/index.html`)), `${id}: its page is built`);
     assert.equal(tag(it, 'guid'), tag(it, 'link'));
     assert.equal(new Date(tag(it, 'pubDate')).getTime(), Date.parse(posts[id].date), `${id}: pubDate`);
     assert.ok(tag(it, 'title')?.trim() && tag(it, 'description')?.trim(), `${id}: title and description`);
-    const enc = it.match(/<enclosure url="([^"]+)" length="0" type="([^"]+)"\/>/);
-    if (enc) {
-      assert.match(enc[2], /^image\//);
-      if (/\/api\/img\//.test(enc[1])) assert.equal(enc[2], 'image/webp', `${id}: the relay serves WebP`);
-    }
+    // The cover is a thumbnail only: an <enclosure> would show it a second time beside the content's own pictures.
+    assert.doesNotMatch(it, /<enclosure/, `${id}: no enclosure`);
+    const thumb = it.match(/<media:thumbnail url="([^"]+)"\/>/);
     const body = unesc(tag(it, 'content:encoded') ?? '');
-    assert.match(body, /^<div dir="rtl" lang="fa">[\s\S]*<\/div>$/, `${id}: right-to-left content`);
-    assert.ok(body.includes(`href="${posts[id].url}"`), `${id}: links its Telegram post`);
+    assert.equal(!!body, i < FULL, `${file}: ${id} whole only among the newest ${FULL}`);
     // Telegram's and X's CDNs are filtered in Iran, and Telegram's URLs expire: pictures go by the site's relay.
-    for (const u of [enc && unesc(enc[1]), ...[...body.matchAll(/<img src="([^"]+)"/g)].map((m) => unesc(m[1]))].filter(Boolean)) {
+    for (const u of [thumb && unesc(thumb[1]), ...[...body.matchAll(/<img src="([^"]+)"/g)].map((m) => unesc(m[1]))].filter(Boolean)) {
       assert.doesNotMatch(new URL(u).hostname, /telesco\.pe$|twimg\.com$|ytimg\.com$/, `${id}: ${u}`);
       if (/\/api\/img\//.test(u)) assert.match(u, /^https:\/\/[^/]+\/api\/img\/\?(p=\d+&(i=\d+|f=\w+)|u=[^&]+)(&f=\w+)?&w=800$/);
     }
+    if (!body) continue;
+    assert.match(body, /^<div dir="rtl" lang="fa">[\s\S]*<\/div>$/, `${id}: right-to-left content`);
+    assert.ok(body.includes(`href="${posts[id].url}"`), `${id}: links its Telegram post`);
     if (posts[id].digest) {
       const links = [...body.matchAll(/<li><a href="([^"]+)">/g)].map((m) => m[1]);
-      assert.ok(links.length > 3, `${id}: the summary's items`);
+      assert.ok(links.length > 0, `${id}: the summary's items`);
       for (const l of links) if (/\/t\.me\//.test(l)) assert.ok(!posts[Number(l.split('/').pop())], `${id}: ${l} has a page on the site`);
     }
   }
+  return { ids, items, xml };
+}
+
+test('rss: every post on the timeline, newest first; the news, the daily summaries and each topic in feeds of their own', { skip }, () => {
+  const all = checkFeed('rss.xml').ids;
+  const timeline = allPages().flatMap((p) => p.rows.filter((r) => r.id).map((r) => r.id));
+  // The home page shows its lead story and the 24-hour summary above the timeline instead.
+  assert.deepEqual(all.filter((id) => timeline.includes(id)), timeline, 'every timeline post, in order');
+  assert.ok(all.filter((id) => !timeline.includes(id)).length <= 2, 'besides the home page\'s lead and summary');
+
+  assert.deepEqual(checkFeed('rss/news.xml').ids, all.filter((id) => !posts[id].digest), 'news: every post but the summaries');
+  const daily = checkFeed('rss/daily.xml').ids;
+  assert.deepEqual(daily, all.filter((id) => posts[id].digest), 'daily: every summary');
+  assert.ok(daily.length > 1);
+
+  const topics = fs.readdirSync(path.join(dist, 'tag')).filter((t) => fs.existsSync(path.join(dist, 'tag', t, 'rss.xml')));
+  assert.ok(topics.length > 5, 'a feed per topic');
+  for (const t of topics) {
+    const { items } = checkFeed(`tag/${t}/rss.xml`);
+    assert.ok(items.length && items.every((it) => it.includes(`<category>${t}</category>`)), `${t}: its topic's posts`);
+    assert.ok(html(`tag/${t}/index.html`).includes(`<link rel="alternate" type="application/rss+xml" title="${'فیوچر فوکوس'} — ${t}"`), `${t}: its page names its feed first`);
+  }
+  const head = html('index.html');
+  for (const f of ['rss.xml', 'rss/news.xml', 'rss/daily.xml']) assert.ok(head.includes(`type="application/rss+xml"`) && head.includes(`/${f}"`), `home names ${f}`);
+  const page = html('feeds/index.html');
+  for (const f of ['rss.xml', 'rss/news.xml', 'rss/daily.xml', `tag/${encodeURIComponent(topics[0])}/rss.xml`]) assert.ok(page.includes(`data-copy="https://khabar-ai.vercel.app/${f}"`), `/feeds/ lists ${f}`);
 });

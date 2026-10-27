@@ -1,0 +1,60 @@
+---
+import Base from '../../layouts/Base.astro';
+import Icon from '../../components/Icon.astro';
+import { SITE } from '../../site';
+import { abs, faNum, url } from '../../lib/posts';
+import { FEEDS, FULL, tagFeeds, type FeedDef } from '../../lib/feed';
+
+const main: { feed: FeedDef; name: string; count: number }[] = [
+  { feed: FEEDS.all, name: 'همه‌ی خبرها', count: FEEDS.all.posts().length },
+  { feed: FEEDS.news, name: 'فقط خبرها', count: FEEDS.news.posts().length },
+  { feed: FEEDS.daily, name: 'خلاصه‌ی روزانه', count: FEEDS.daily.posts().length },
+];
+const topics = tagFeeds();
+const feedly = (f: FeedDef) => `https://feedly.com/i/subscription/feed/${encodeURIComponent(abs(f.path))}`;
+const inoreader = (f: FeedDef) => `https://www.inoreader.com/?add_feed=${encodeURIComponent(abs(f.path))}`;
+---
+<Base title="خبرخوان (RSS)" description={`خبرهای ${SITE.name} را در خبرخوان خودتان بخوانید: همه‌ی خبرها، فقط خبرها، خلاصه‌ی روزانه و هر موضوع جدا.`}>
+  <div class="container narrow">
+    <header class="page-head">
+      <h1><Icon name="rss" /> خبرخوان (RSS)</h1>
+      <p>نشانی یکی از خوراک‌ها را در یک خبرخوان، مثل <bdi>Feedly</bdi>، <bdi>Inoreader</bdi>، <bdi>NetNewsWire</bdi> یا یک ربات RSS تلگرام، بگذارید تا هر خبر تازه خودش برسد.</p>
+    </header>
+    <ul class="feed-list">
+      {
+        main.map(({ feed, name, count }) => (
+          <li class="feed-card">
+            <div class="feed-head">
+              <b>{name}</b>
+              <small><span data-num>{faNum(count)}</span> مطلب</small>
+            </div>
+            <p>{feed.description}</p>
+            <code dir="ltr">{abs(feed.path)}</code>
+            <div class="row">
+              <button class="btn sm primary" type="button" data-copy={abs(feed.path)}><Icon name="link" /> کپی نشانی</button>
+              <a class="btn sm" href={url(feed.path)}><Icon name="rss" /> باز کردن</a>
+              <a class="btn sm" href={feedly(feed)} target="_blank" rel="noopener">Feedly <Icon name="external" /></a>
+              <a class="btn sm" href={inoreader(feed)} target="_blank" rel="noopener">Inoreader <Icon name="external" /></a>
+            </div>
+          </li>
+        ))
+      }
+    </ul>
+    <p class="feed-note">
+      هر خوراک همه‌ی مطلب‌هایش را از اولین تا تازه‌ترین دارد؛ {faNum(FULL)} مطلب تازه با متن کامل، تصویرها، «چرا مهمه؟» و منبع، و قدیمی‌ترها با تیتر، خلاصه و تصویر.
+      تصویرها از خود سایت می‌آیند، پس بدون فیلترشکن هم دیده می‌شوند. خوراک‌ها هر چند دقیقه با کانال به‌روز می‌شوند.
+    </p>
+    <h2 class="feed-sub">خوراک هر موضوع</h2>
+    <ul class="feed-topics">
+      {
+        topics.map(({ tag, count, feed }) => (
+          <li>
+            <a href={url(feed.path)}><Icon name="rss" /> {tag}</a>
+            <small><span data-num>{faNum(count)}</span></small>
+            <button class="btn sm" type="button" data-copy={abs(feed.path)} aria-label={`کپی نشانی خوراک ${tag}`}><Icon name="link" /></button>
+          </li>
+        ))
+      }
+    </ul>
+  </div>
+</Base>
