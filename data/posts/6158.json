@@ -1,0 +1,60 @@
+{
+ "id": 6158,
+ "url": "https://t.me/dlmehr/6158",
+ "date": "2026-10-27T19:43:26+00:00",
+ "text": "https://fxtwitter.com/reuters/status/2115155318585930226?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+ "forwarded_from": null,
+ "digest": false,
+ "hash": "ae5878235353",
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/reuters/status/2115155318585930226?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+  "site": "FxTwitter",
+  "title": "Reuters (@Reuters)",
+  "description": "BREAKING: A hacker is attempting to breach the US Federal Election Commission's systems and that agency has had to 'temporarily shut down' its web-facing services as a result, according to an email seen by Reuters https://reut.rs/4imQyUu",
+  "image": null
+ },
+ "gholam": {
+  "text": "ببین رفیق، خبر داغ رسیده که یه هکر بدجور دندون تیز کرده بوده تا به سیستم‌های کمیسیون فدرال انتخابات آمریکا نفوذ کنه و اوضاع رو به هم بریزه. رویترز یه ایمیل داخلی رو رو کرده که نشون میده این نهاد حساس از ترس نفوذ، سریع دست به کار شده و همه سامانه‌ها و خدمات آنلاینش رو موقتاً از دسترس خارج کرده تا جلوش رو سد کنه. خلاصه که برای جلوگیری از هرگونه خرابکاری، فعلاً کرکره سرویس‌های متصل به اینترنت رو پایین کشیدن تا سر از کار این نفوذگر دربیارن.\n\nچرا مهمه؟ اهمیتش اینه که پای امنیت حیاتی‌ترین نهاد ناظر بر انتخابات آمریکا در میونه و همچین حملاتی می‌تونه اعتماد عمومی به سلامت سازوکارهای انتخاباتی رو حسابی بلرزونه.",
+  "date": "2026-10-27T19:43:46+00:00"
+ },
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/Reuters/status/2115155318585930226",
+   "domain": "x.com",
+   "author": {
+    "name": "Reuters",
+    "handle": "Reuters",
+    "avatar": "https://pbs.twimg.com/profile_images/1874154135869616128/nJDmubGJ_200x200.jpg"
+   },
+   "text": "BREAKING: A hacker is attempting to breach the US Federal Election Commission's systems and that agency has had to 'temporarily shut down' its web-facing services as a result, according to an email seen by Reuters https://reut.rs/4imQyUu",
+   "date": 1793127300,
+   "media": [
+    {
+     "type": "video",
+     "src": "https://video.twimg.com/tweet_video/HVqKi4NXAAAM-NQ.mp4",
+     "poster": "https://pbs.twimg.com/tweet_video_thumb/HVqKi4NXAAAM-NQ.jpg",
+     "ratio": 1.0,
+     "duration": 0,
+     "gif": true
+    }
+   ],
+   "links": [
+    "https://reut.rs/4imQyUu"
+   ]
+  }
+ ],
+ "article": {
+  "title": "خبر داغ رسیده که یه هکر بدجور دندون تیز کرده بوده تا به سیستم‌های کمیسیون فدرال انتخابات آمریکا نفوذ کنه و اوضاع رو به هم بریزه",
+  "source_title": "BREAKING: A hacker is attempting to breach the US Federal Election Commission's systems and that agency has had to 'temporarily shut down'…",
+  "body": [
+   "ببین رفیق، خبر داغ رسیده که یه هکر بدجور دندون تیز کرده بوده تا به سیستم‌های کمیسیون فدرال انتخابات آمریکا نفوذ کنه و اوضاع رو به هم بریزه. رویترز یه ایمیل داخلی رو رو کرده که نشون میده این نهاد حساس از ترس نفوذ، سریع دست به کار شده و همه سامانه‌ها و خدمات آنلاینش رو موقتاً از دسترس خارج کرده تا جلوش رو سد کنه. خلاصه که برای جلوگیری از هرگونه خرابکاری، فعلاً کرکره سرویس‌های متصل به اینترنت رو پایین کشیدن تا سر از کار این نفوذگر دربیارن."
+  ],
+  "why": "اهمیتش اینه که پای امنیت حیاتی‌ترین نهاد ناظر بر انتخابات آمریکا در میونه و همچین حملاتی می‌تونه اعتماد عمومی به سلامت سازوکارهای انتخاباتی رو حسابی بلرزونه.",
+  "tags": [
+   "امنیت"
+  ]
+ },
+ "updated": "2026-10-27T19:47:23+00:00"
+}
