@@ -1,0 +1,55 @@
+{
+ "id": 6149,
+ "url": "https://t.me/dlmehr/6149",
+ "date": "2026-10-27T18:13:19+00:00",
+ "text": "https://fxtwitter.com/cognition/status/2115132488775524793?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+ "forwarded_from": null,
+ "digest": false,
+ "hash": "1ca0c561bda8",
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/cognition/status/2115132488775524793?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+  "site": "🧵 Thread • FxTwitter",
+  "title": "Cognition (@cognition)",
+  "description": "Introducing FrontierCode 2.0: our new coding benchmark that measures a model’s ability to go beyond the spec.\nMost coding evals measure a model’s ability to write code that meets a spec. With FrontierCode 1.0, we asked a new question: would you actually…",
+  "image": "https://cdn4.telesco.pe/file/jze1Iegfk8qWCXDkbczC9PIUJjmdqBiMk978hspqCAmcut2wP0LbN1dh7fPO1N7BFfl0ghtPvBzFCCT7SDTs9rzv-fhQyYk5fLqW6GWqzOo3ae0lrLgc5v22Ydhv80kdF_C7C6AZ2zN99VMFN_y_vlIdsfCOjn3McCLvx7H7q8eklTLoyRsCl265fbArbxqm9Dhc4AaQvg5bk_pe4vVSi_PeOx3XVz_r-qoIn6lsdo_-rtGb3YTQzawPFyoMUjh89qY7-CWrNgRldNvjN-QL1Lw0OnsE3x17yez2zpI86eEPzv1WqAA8y2-256_k6jvhsJbJWepA__fGkjMRNAQeJQ.jpg"
+ },
+ "gholam": {
+  "text": "رفیق، بچه‌های شرکت Cognition اومدن از بنچمارک جدیدشون به اسم FrontierCode 2.0 رونمایی کردن تا عیار واقعی هوش مصنوعی رو تو کدنویسی بسنجن. قضیه از این قراره که تا الان فقط چک می‌کردن کد کار می‌کنه یا نه، ولی تو این نسخه دستورا رو عمداً مبهم و بدون جزئیاتِ لقمه‌شده میدن تا ببینن مدل اصلاً شمّ مهندسی و قدرت تصمیم‌گیری داره که بشه کُدش رو واقعاً مِرج کرد یا نه. پروژه‌ها حسابی سنگین‌تر و دامنه‌دارتر شدن و نتیجه هم این شده که غول‌ترین مدل فعلی بازار تو این امتحان به زور تونسته ۴۵ درصد نمره بگیره و هنوز حسابی جای کار داره.\n\nچرا مهمه؟ اهمیتش اینه که نشون میده برنامه‌نویسی واقعی فقط کد زدن از روی دستور شفاف نیست و هوش مصنوعی هنوز توی درک موقعیت‌های مبهم و قضاوت‌های مهندسی لنگ می‌زنه.",
+  "date": "2026-10-27T18:13:36+00:00"
+ },
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/cognition/status/2115132488775524793",
+   "domain": "x.com",
+   "author": {
+    "name": "Cognition",
+    "handle": "cognition",
+    "avatar": "https://pbs.twimg.com/profile_images/1765909640364068865/MvH-m0gd_200x200.jpg"
+   },
+   "text": "Introducing FrontierCode 2.0: our new coding benchmark that measures a model’s ability to go beyond the spec.\n\nMost coding evals measure a model’s ability to write code that meets a spec. With FrontierCode 1.0, we asked a new question: would you actually merge the PR?\n\nFrontierCode 2.0 is comprised of more diverse tasks, featuring larger scopes and higher mergeability standards. We are now asking: not only would you merge this PR, but should you?\n\nOne key feature of FrontierCode 2.0 is underspecified prompts. Rather than including every engineering decision, prompts are deliberately ambiguous, giving the models room to demonstrate their judgment.\n\nThe result is a benchmark that is far from saturated, with the top model scoring just 45%.",
+   "date": 1793121857,
+   "media": [
+    {
+     "type": "image",
+     "src": "https://pbs.twimg.com/media/HVplDzybQAAEbbZ.jpg?name=orig",
+     "ratio": 0.5383
+    }
+   ],
+   "links": []
+  }
+ ],
+ "article": {
+  "title": "بچه‌های شرکت Cognition اومدن از بنچمارک جدیدشون به اسم FrontierCode 2.0 رونمایی کردن تا عیار واقعی هوش مصنوعی رو تو کدنویسی بسنجن",
+  "source_title": "Introducing FrontierCode 2.0: our new coding benchmark that measures a model’s ability to go beyond the spec.",
+  "body": [
+   "رفیق، بچه‌های شرکت Cognition اومدن از بنچمارک جدیدشون به اسم FrontierCode 2.0 رونمایی کردن تا عیار واقعی هوش مصنوعی رو تو کدنویسی بسنجن. قضیه از این قراره که تا الان فقط چک می‌کردن کد کار می‌کنه یا نه، ولی تو این نسخه دستورا رو عمداً مبهم و بدون جزئیاتِ لقمه‌شده میدن تا ببینن مدل اصلاً شمّ مهندسی و قدرت تصمیم‌گیری داره که بشه کُدش رو واقعاً مِرج کرد یا نه. پروژه‌ها حسابی سنگین‌تر و دامنه‌دارتر شدن و نتیجه هم این شده که غول‌ترین مدل فعلی بازار تو این امتحان به زور تونسته ۴۵ درصد نمره بگیره و هنوز حسابی جای کار داره."
+  ],
+  "why": "اهمیتش اینه که نشون میده برنامه‌نویسی واقعی فقط کد زدن از روی دستور شفاف نیست و هوش مصنوعی هنوز توی درک موقعیت‌های مبهم و قضاوت‌های مهندسی لنگ می‌زنه.",
+  "tags": [
+   "کدنویسی"
+  ]
+ },
+ "updated": "2026-10-27T18:17:24+00:00"
+}
