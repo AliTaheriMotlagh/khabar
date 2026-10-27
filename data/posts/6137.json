@@ -1,0 +1,61 @@
+{
+ "id": 6137,
+ "url": "https://t.me/dlmehr/6137",
+ "date": "2026-10-27T03:25:35+00:00",
+ "text": "https://fxtwitter.com/mirrokni/status/2114903308653478178?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+ "forwarded_from": null,
+ "digest": false,
+ "hash": "30010793cdde",
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/mirrokni/status/2114903308653478178?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+  "site": "FxTwitter · antigravity.google",
+  "title": "Vahab Mirrokni (@mirrokni)",
+  "description": "Today, we shared how Google’s Graph Mining and Graph Learning teams used Gemini 4 Argon with Teamwork agent in @GoogleAntigravity to solve a different class of internal engineering bottleneck: compressing months of low-level RDMA networking and custom TPU…",
+  "image": "https://cdn4.telesco.pe/file/lUHp7zvoDXRoDttCFQJGDcv5LmQon9CmI9EMqV0AzVwOJRVfBttINIUl9RTiLCoHbcob1a67kdtzUAKaXD6THPPH34VqVdnaw0ZYKlNE7Tg3A_yOQA8oQrLqk1ci11-ej0lFwifKThAPaOpXOG4vlcnQ3B52nWaoyh-7iHcnFAsQWEvgsb-Ozh24i73KroUlSD2xYAusGb0Bh_GAw7PXsBdLR7Dr5zka5ghJNrO-dtXqhG-QSSUpNr33jHnPHV71qdsEAgYr5mg4-vskLB4hrRwLY3u9AmUYiFyncaxEZd8_g4bVmkcu_qHHYCIEoxkdAKxiUmnBBpXmSiN_bQRAfA.jpg"
+ },
+ "gholam": {
+  "text": "رفیق، وهاب میررکنی از مهندسای ارشد گوگل خبر داده که تیم‌های پردازش گراف با کمک مدل Gemini 4 Argon و ایجنت‌های Antigravity کاری کردن کارستان و کارهای سنگین چند ماهه در حوزه شبکه و کدهای اختصاصی TPU رو توی چند ساعت جمع کردن. این هوش مصنوعی با توسعه الگوریتم‌های FarArray تونسته سرعت پردازش گراف رو تا ۱۸۰ برابر ببره بالا و مصرف رم رو ۲۲ برابر کم کنه. تازه برای شبکه‌های عصبی گراف هم کرنل‌هایی ساخته که ۸ تا ۱۵ برابر سریع‌تر از JAX کار می‌کنن و بار عظیمی از روی حافظه برمی‌دارن. قشنگی ماجرا اینجاست که قدیما همین تیم گراف به پالایش داده‌های جِمینای کمک کرده بود و حالا این هوش مصنوعی داره دِینش رو به خود سیستم ادا می‌کنه و زیرساخت رفقاش رو ارتقا میده.\n\nاهمیتش اینه که نشون میده ایجنت‌های هوش مصنوعی دیگه فقط واسه کارهای دم‌دستی نیستن و رسیدن به مرحله‌ای که پیچیده‌ترین بخش‌های مهندسی سخت‌افزار و شبکه رو در عرض چند ساعت متحول می‌کنن.",
+  "date": "2026-10-27T03:25:53+00:00"
+ },
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/mirrokni/status/2114903308653478178",
+   "domain": "x.com",
+   "author": {
+    "name": "Vahab Mirrokni",
+    "handle": "mirrokni",
+    "avatar": "https://pbs.twimg.com/profile_images/1787946019835015169/b0n19PjU_200x200.jpg"
+   },
+   "text": "Today, we shared how Google’s Graph Mining and Graph Learning teams used Gemini 4 Argon with Teamwork agent in @GoogleAntigravity to solve a different class of internal engineering bottleneck: compressing months of low-level RDMA networking and custom TPU kernel development into hours. Specifically, improvements include accelerated graph algorithms with FarArray (up to 180x faster, 22x less RAM) and custom TPU kernels for Graph Neural Networks that run 8–15x faster than native JAX with massive HBM savings.\n\nFor me, this update is a full-circle experience: Graph Mining contributed deeply to Gemini Data via deduping and data curation over time, and now Gemini is giving back by scaling and improving Graph Mining library! \n\nThis is also a close collaboration amongst our Graph Mining and Teamwork teams, together with the Antigravity and Gemini teams. Congratulations!\n\nRead the full blog: https://antigravity.google/blog/gemini-4-argon-trillion-edge-graphs-and-tpu-kernels",
+   "date": 1793067216,
+   "media": [],
+   "links": [
+    "https://antigravity.google/blog/gemini-4-argon-trillion-edge-graphs-and-tpu-kernels"
+   ]
+  },
+  {
+   "kind": "link",
+   "url": "https://antigravity.google/blog/gemini-4-argon-trillion-edge-graphs-and-tpu-kernels",
+   "domain": "antigravity.google",
+   "title": "How Gemini 4 Argon Upleveled Agents on Antigravity: Trillion-Edge Graphs and Custom TPU Kernels | Google Antigravity Blog",
+   "description": "Recently, we introduced Gemini 4 Argon in Google Antigravity, showing how Argon’s 1-million-token context window, tunable reasoning, and native sub-agent…",
+   "image": "https://antigravity.google/assets/image/blog/4-Argon---Wide.jpg",
+   "site": "Google Antigravity"
+  }
+ ],
+ "article": {
+  "title": "وهاب میررکنی از مهندسای ارشد گوگل خبر داده که تیم‌های پردازش گراف با کمک مدل Gemini 4 Argon و ایجنت‌های Antigravity کاری کردن کارستان و کارهای سنگین چند ماهه در حوزه شبکه و کدهای اختصاصی TPU رو توی چند ساعت جمع کردن",
+  "source_title": "Today, we shared how Google’s Graph Mining and Graph Learning teams used Gemini 4 Argon with Teamwork agent in @GoogleAntigravity to solve…",
+  "body": [
+   "رفیق، وهاب میررکنی از مهندسای ارشد گوگل خبر داده که تیم‌های پردازش گراف با کمک مدل Gemini 4 Argon و ایجنت‌های Antigravity کاری کردن کارستان و کارهای سنگین چند ماهه در حوزه شبکه و کدهای اختصاصی TPU رو توی چند ساعت جمع کردن. این هوش مصنوعی با توسعه الگوریتم‌های FarArray تونسته سرعت پردازش گراف رو تا ۱۸۰ برابر ببره بالا و مصرف رم رو ۲۲ برابر کم کنه. تازه برای شبکه‌های عصبی گراف هم کرنل‌هایی ساخته که ۸ تا ۱۵ برابر سریع‌تر از JAX کار می‌کنن و بار عظیمی از روی حافظه برمی‌دارن. قشنگی ماجرا اینجاست که قدیما همین تیم گراف به پالایش داده‌های جِمینای کمک کرده بود و حالا این هوش مصنوعی داره دِینش رو به خود سیستم ادا می‌کنه و زیرساخت رفقاش رو ارتقا میده."
+  ],
+  "why": "نشون میده ایجنت‌های هوش مصنوعی دیگه فقط واسه کارهای دم‌دستی نیستن و رسیدن به مرحله‌ای که پیچیده‌ترین بخش‌های مهندسی سخت‌افزار و شبکه رو در عرض چند ساعت متحول می‌کنن.",
+  "tags": [
+   "گوگل",
+   "ایجنت"
+  ]
+ },
+ "updated": "2026-10-27T03:54:31+00:00"
+}

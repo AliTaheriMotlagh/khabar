@@ -1,0 +1,71 @@
+{
+ "id": 6135,
+ "url": "https://t.me/dlmehr/6135",
+ "date": "2026-10-27T02:38:33+00:00",
+ "text": "https://fxtwitter.com/ryanlpeterman/status/2114877974432371065?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+ "forwarded_from": null,
+ "digest": false,
+ "hash": "00afb155ac57",
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/ryanlpeterman/status/2114877974432371065?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+  "site": "FxTwitter",
+  "title": "Ryan Peterman (@ryanlpeterman)",
+  "description": "The strong exponential time hypothesis (SETH) explained by MIT professor @rrwilliams who was selected by OpenAI to verify the recent breakthrough result:\nQ: \"Could you explain the Strong Exponential Time Hypothesis, or SETH, and its significance?\"\nRyan…",
+  "image": null
+ },
+ "gholam": {
+  "text": "ببین رفیق، رایان ویلیامز، استاد کاردرست دانشگاه MIT که OpenAI هم واسه تأیید دستاوردهای علمیش رفته سراغش، اومده قضیه خفن «فرضیه زمان نمایی قوی» یا همون SETH رو خیلی تمیز تشریح کرده. این قضیه که نسخه سفت‌وسخت‌تر و گردن‌کلفت‌تر مسئله معروف P در برابر NP محسوب می‌شه، می‌گه یه سری مسائل بنیادی منطقی مثل SAT رو به هیچ صراطی نمی‌شه سریع‌تر از زمان ۲ به توان n حل کرد و هیچ میانبر جادویی براشون وجود نداره. نکته جالبش اینجاست که خود ویلیامز می‌گه ته دلش باورش نداره، ولی سال‌ها تلاش برای رد کردن همین فرضیه و شکست خوردن تو این مسیر، مجبورش کرده جور دیگه‌ای فکر کنه و کلی مسئله دیگه تو علوم کامپیوتر رو حل کنه. در عین حال، اگه این فرضیه درست باشه، مهر تأییدی می‌زنه رو اینکه خیلی از الگوریتم‌های استاندارد امروزی به نهایت سرعت و بهینگی ممکن رسیدن.\n\nاهمیتش اینه که این فرضیه دقیقاً مرز بین ممکن و ناممکن تو دنیای پردازش رو نشون می‌ده و مشخص می‌کنه سیستم‌های هوشمند اصلاً شانسی برای دور زدن محدودیت‌های ذاتی سخت‌ترین محاسبات دنیا دارن یا نه.",
+  "date": "2026-10-27T02:38:53+00:00"
+ },
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/ryanlpeterman/status/2114877974432371065",
+   "domain": "x.com",
+   "author": {
+    "name": "Ryan Peterman",
+    "handle": "ryanlpeterman",
+    "avatar": "https://pbs.twimg.com/profile_images/1603235043819720704/faMqzkug_200x200.jpg"
+   },
+   "text": "The strong exponential time hypothesis (SETH) explained by MIT professor @rrwilliams who was selected by OpenAI to verify the recent breakthrough result:\n\nQ: \"Could you explain the Strong Exponential Time Hypothesis, or SETH, and its significance?\"\n\nRyan Williams: \"Strong ETH is a severe strengthening of the P versus NP question. P versus NP is asking whether the SAT problem has a polynomial-time algorithm or not.\n\nStrong ETH is basically saying that for the SAT problem, you cannot solve it much faster than 2^n. There’s no 1.999^n time algorithm. For every string of 9s, there is no 1.9999^n time algorithm. To say it totally precisely, it has to do with the k-SAT problem, where you’re looking at clauses of length k for arbitrary k, but those details don’t matter so much.\n\nSAT is a canonical NP-complete problem. It’s solved all the time in practice. It’s extremely useful for verification; nowadays it’s an engine for verification. So it can be solved fairly well in practice. However, in the worst case, we still don’t know how to solve it significantly faster than 2^n.\n\nSo the hypothesis that it needs, say, 1.99999^n time is a very strong exponential time hypothesis. It’s stronger than P versus NP. It says it’s not just superpolynomial. It’s darn near 2^n time that you need.\"\n\nQ: \"Do you think that hypothesis is true? Why or why not?\"\n\nRyan Williams: \"I think I’m on the record as not believing this hypothesis.\n\nWhy don’t I believe it? I started thinking about this hypothesis maybe already as an undergrad, but certainly early in grad school. Before it was even called Strong ETH, I guess that shows how old I am. I was trying to figure out how to solve CNF-SAT faster than 2^n.\n\nAt the time there were a number of other NP-complete problems that had faster algorithms, like subset sum. So I thought, what’s so special about SAT? If all these other problems have faster algorithms, why not SAT as well? \n\nEven 3-SAT, where each clause is an OR of 3 variables, has a faster algorithm, and this is just a more general version of SAT. So at first I thought there’s no good reason to believe a lower bound. These other related problems have upper bounds, so why not?\n\nBut then, over time, I would have different attacks on Strong ETH, always trying to refute it in different ways. These attacks would fail in some completely catastrophic and ridiculous way. They would have no chance of actually solving the original problem.\n\nBut by staring at my failure, I’d think: there’s something interesting happening here. It doesn’t refute Strong ETH, so what does it do? By trying to pivot and figure out what I could do with my failure, I was able to solve a variety of other problems instead.\n\nSo after a while, I realized that the truth value of Strong ETH to me is almost irrelevant. If I believe that it’s false, then I get good ideas.\n\nBy thinking about what an algorithm that breaks 2^n could look like, I force myself to think in a different way. I have to discard the natural algorithmic possibilities, because we know they won’t work, and think in a different direction. Because it sends my brain in a different direction, it’s very useful for research. Even though I still haven’t refuted it, it’s very useful for me to believe that it’s false, operationally.\"\n\nQ: This is a minority opinion, right?\n\nRyan Williams: \"Russell Impagliazzo, a good friend of mine who helped propose this, always emphasizes to me: this is a hypothesis. We explicitly did not name it a conjecture. We wanted to put forth a lower bound that would get you to think about it, something a little more controversial than P versus NP or other things people more normally believe.\n\nHypotheses at the edge of our understanding, where we truly don’t know what the answer might be based on our intuition, can be enlightening to think about. That’s one reason why it was proposed.\n\nBut one reason you might believe Strong ETH is true is that it conveniently implies a lot of other lower bounds. You can reduce SAT to a bunch of problems that seem totally unrelated, like edit distance and various pattern matching problems. They have natural polynomial-time solutions. If you could improve on the algorithms for any of those, you would improve the one for SAT as well, and get something better than 2^n.\n\nSo believing in it makes a convenient worldview. It shows that all these different textbook algorithms are indeed optimal.\"",
+   "date": 1793061176,
+   "media": [
+    {
+     "type": "video",
+     "src": "https://video.twimg.com/amplify_video/2114877209093505024/vid/avc1/1280x720/CjY0BhUJhr6TsEXV.mp4?tag=29",
+     "poster": "https://pbs.twimg.com/amplify_video_thumb/2114877209093505024/img/X9tx2jTh1QErIPvX.jpg",
+     "ratio": 0.5625,
+     "duration": 447.947,
+     "gif": false
+    }
+   ],
+   "links": [],
+   "quote": {
+    "author": {
+     "name": "Greg Brockman",
+     "handle": "gdb",
+     "avatar": "https://pbs.twimg.com/profile_images/1347621377503711233/bHg3ipfD_200x200.jpg"
+    },
+    "text": "Announcing three major scientific discoveries, one each in mathematics (harmonic analysis), computer science (complexity theory), and physics (quantum field theory).\n\nAI starting to help us improve our understanding of the universe! https://openai.com/index/building-scientific-understanding-with-academic-communities/",
+    "date": 1793051421,
+    "media": [],
+    "links": [
+     "https://openai.com/index/building-scientific-understanding-with-academic-communities/"
+    ]
+   }
+  }
+ ],
+ "article": {
+  "title": "رایان ویلیامز، استاد کاردرست دانشگاه MIT که OpenAI هم واسه تأیید دستاوردهای علمیش رفته سراغش، اومده قضیه خفن «فرضیه زمان نمایی قوی» یا همون SETH رو خیلی تمیز تشریح کرده",
+  "source_title": "The strong exponential time hypothesis (SETH) explained by MIT professor @rrwilliams who was selected by OpenAI to verify the recent…",
+  "body": [
+   "ببین رفیق، رایان ویلیامز، استاد کاردرست دانشگاه MIT که OpenAI هم واسه تأیید دستاوردهای علمیش رفته سراغش، اومده قضیه خفن «فرضیه زمان نمایی قوی» یا همون SETH رو خیلی تمیز تشریح کرده. این قضیه که نسخه سفت‌وسخت‌تر و گردن‌کلفت‌تر مسئله معروف P در برابر NP محسوب می‌شه، می‌گه یه سری مسائل بنیادی منطقی مثل SAT رو به هیچ صراطی نمی‌شه سریع‌تر از زمان ۲ به توان n حل کرد و هیچ میانبر جادویی براشون وجود نداره. نکته جالبش اینجاست که خود ویلیامز می‌گه ته دلش باورش نداره، ولی سال‌ها تلاش برای رد کردن همین فرضیه و شکست خوردن تو این مسیر، مجبورش کرده جور دیگه‌ای فکر کنه و کلی مسئله دیگه تو علوم کامپیوتر رو حل کنه. در عین حال، اگه این فرضیه درست باشه، مهر تأییدی می‌زنه رو اینکه خیلی از الگوریتم‌های استاندارد امروزی به نهایت سرعت و بهینگی ممکن رسیدن."
+  ],
+  "why": "این فرضیه دقیقاً مرز بین ممکن و ناممکن تو دنیای پردازش رو نشون می‌ده و مشخص می‌کنه سیستم‌های هوشمند اصلاً شانسی برای دور زدن محدودیت‌های ذاتی سخت‌ترین محاسبات دنیا دارن یا نه.",
+  "tags": [
+   "اوپن‌ای‌آی"
+  ]
+ },
+ "updated": "2026-10-27T03:54:32+00:00"
+}
