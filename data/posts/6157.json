@@ -1,0 +1,67 @@
+{
+ "id": 6157,
+ "url": "https://t.me/dlmehr/6157",
+ "date": "2026-10-27T19:13:38+00:00",
+ "text": "https://x.com/p0/status/2115111877558898931",
+ "forwarded_from": "Mehdi",
+ "digest": false,
+ "hash": "aaf17d5cffdd",
+ "media": [],
+ "preview": {
+  "url": "https://x.com/p0/status/2115111877558898931",
+  "site": "X (formerly Twitter)",
+  "title": "Parallel Web Systems (@p0) on X",
+  "description": "Introducing the Parallel Decisions API: the first web-grounded decisions engine.\nDecision models like Jev can answer in an instant, but they lack the recency of current news. Now you can get both…",
+  "image": "https://cdn4.telesco.pe/file/gB-g_BQ3nn0fjpkyAOweov8-eE9aqBcCX--yvo-s42uqllKbIX8m_g_mGdr-CBUnUMXjLILdFom4ZF_VDeE0sIZq1GlRoGfVjycnsesVC5vfNAnV2ED3Mj02kWuECMEF75G6yVWfuT8KG6sHDiBwiEzeaHVbZMAhqiy57E-tU2wqPIrmMuoq4b00YJCUlzxqWv4NZ4N6ESFjlRyJePdvRsqM-3MrPHoJ8k5B_dZW78n0fjVIWcfEw0er3PjNKEQeIywQrkUoCkOptLTJ3fvAlMod1Ou7eICY23e3Niz3vSbpohxXIAgjn3xv05YlEIY30H7CiG1DGDQsLLkmfEz1iQ.jpg"
+ },
+ "gholam": {
+  "text": "رفیق، بچه‌های Parallel Web Systems اومدن یه ابزار تر و تمیز به اسم Parallel Decisions API معرفی کردن که به ادعای خودشون اولین موتور تصمیم‌گیری متصل به وب زنده‌ست. قضیه اینه که مدل‌های تصمیم‌گیری قبلی با وجود سرعت برق‌آساشون، از اخبار و اطلاعات لحظه‌ای اینترنت بی‌خبر بودن، ولی حالا این سیستم هر دوتا ویژگی رو تو یه فراخوانی بهت تحویل میده. قیمتش رو هم حسابی پایین آوردن و بابت هر درخواست فقط یک‌هزارم دلار می‌گیرن، تازه پنج هزار تا درخواست اول رو هم رایگان گذاشتن تا ملت بتونن تستش کنن. از راستی‌آزمایی اخبار و به‌روزرسانی رکوردهای بانکی گرفته تا رصد انبار رقیب‌های تجاری، دستت رو برای یه مشت کار سنگین باز می‌ذاره.\n\nاهمیتش اینه که بدون نیاز به ابزارهای پیچیده و گرون، می‌تونی سرعت هوش مصنوعی رو به دیتای زنده و به‌روز اینترنت گره بزنی.",
+  "date": "2026-10-27T19:14:00+00:00"
+ },
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/p0/status/2115111877558898931",
+   "domain": "x.com",
+   "author": {
+    "name": "Parallel Web Systems",
+    "handle": "p0",
+    "avatar": "https://pbs.twimg.com/profile_images/2078555755373068288/6MNS8r7X_200x200.png"
+   },
+   "text": "Introducing the Parallel Decisions API: the first web-grounded decisions engine.\n\nDecision models like Jev can answer in an instant, but they lack the recency of current news. Now you can get both in a single call.\n\nDecisions API is live today at $0.001 per request.\n\nTry it with 5,000 free requests: http://platform.parallel.ai/play/decisions\n\nHere are some examples we've been experimenting with:\n\n- Fact-check content (@Grok is this true?)\n- Refresh stale banking records\n- Classify companies and leads with fresh signals\n- Backtest trading strategies\n- Track competitor e-commerce inventory",
+   "date": 1793116943,
+   "media": [
+    {
+     "type": "video",
+     "src": "https://video.twimg.com/amplify_video/2115111814765969408/vid/avc1/1280x720/hLnf0Bh3D2qRCu18.mp4?tag=16",
+     "poster": "https://pbs.twimg.com/amplify_video_thumb/2115111814765969408/img/XnHeXPBChhpJQ4yy.jpg",
+     "ratio": 0.5625,
+     "duration": 35.3,
+     "gif": false
+    }
+   ],
+   "links": [
+    "http://platform.parallel.ai/play/decisions"
+   ]
+  },
+  {
+   "kind": "link",
+   "url": "https://platform.parallel.ai/login?redirectTo=%2Fplay%2Fdecisions",
+   "domain": "platform.parallel.ai",
+   "title": "Sign In - Parallel",
+   "description": "Sign in to your Parallel account",
+   "image": "https://platform.parallel.ai/Parallel-OG-Image.jpg",
+   "site": "platform.parallel.ai"
+  }
+ ],
+ "article": {
+  "title": "بچه‌های Parallel Web Systems اومدن یه ابزار تر و تمیز به اسم Parallel Decisions API معرفی کردن که به ادعای خودشون اولین موتور تصمیم‌گیری متصل به وب زنده‌ست",
+  "source_title": "Introducing the Parallel Decisions API: the first web-grounded decisions engine.",
+  "body": [
+   "رفیق، بچه‌های Parallel Web Systems اومدن یه ابزار تر و تمیز به اسم Parallel Decisions API معرفی کردن که به ادعای خودشون اولین موتور تصمیم‌گیری متصل به وب زنده‌ست. قضیه اینه که مدل‌های تصمیم‌گیری قبلی با وجود سرعت برق‌آساشون، از اخبار و اطلاعات لحظه‌ای اینترنت بی‌خبر بودن، ولی حالا این سیستم هر دوتا ویژگی رو تو یه فراخوانی بهت تحویل میده. قیمتش رو هم حسابی پایین آوردن و بابت هر درخواست فقط یک‌هزارم دلار می‌گیرن، تازه پنج هزار تا درخواست اول رو هم رایگان گذاشتن تا ملت بتونن تستش کنن. از راستی‌آزمایی اخبار و به‌روزرسانی رکوردهای بانکی گرفته تا رصد انبار رقیب‌های تجاری، دستت رو برای یه مشت کار سنگین باز می‌ذاره."
+  ],
+  "why": "بدون نیاز به ابزارهای پیچیده و گرون، می‌تونی سرعت هوش مصنوعی رو به دیتای زنده و به‌روز اینترنت گره بزنی.",
+  "tags": []
+ },
+ "updated": "2026-10-27T19:17:23+00:00"
+}
