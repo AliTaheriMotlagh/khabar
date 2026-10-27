@@ -1,0 +1,59 @@
+{
+ "id": 6146,
+ "url": "https://t.me/dlmehr/6146",
+ "date": "2026-10-27T17:10:28+00:00",
+ "text": "https://fxtwitter.com/liquidai/status/2115128329003303107?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+ "forwarded_from": null,
+ "digest": false,
+ "hash": "0be1b5cbf8de",
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/liquidai/status/2115128329003303107?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+  "site": "🧵 Thread • FxTwitter",
+  "title": "Liquid AI (@liquidai)",
+  "description": "Introducing 𝙻𝙵𝙼𝟹: our new generation of Liquid Foundation Models. With a new tri-hybrid architecture and new multimodal encoders, the LFM3 family is the ideal model suite for specialized intelligence.\n> 6 model instances, across text, audio, vision, and…",
+  "image": null
+ },
+ "gholam": {
+  "text": "رفیق، بچه‌های شرکت Liquid AI اومدن نسل جدید مدل‌هاشون به اسم LFM3 رو رونمایی کردن که با یه معماری سه‌گانه نوآورانه حسابی گردوخاک راه انداخته. این خانواده شامل ۶ تا مدل همه‌کاره و تصمیم‌گیرنده‌س که سایزشون حدود ۱.۷ تا ۲ میلیارد پارامتره، ولی نسخه متنی‌ش پنجره متنی ۲۵۶ هزار توکنی داره و نسخه صوتی‌ش هم ۱۸ زبان مختلف و ابزارهای متنوع رو می‌فهمه. نکته شاخش اینجاست که مدل تصویری دو میلیاردی‌شون جوری خفنه که با غول‌های شش برابر بزرگ‌تر از خودش شاخ‌به‌شاخ رقابت می‌کنه. علاوه بر این، طوری بهینه‌سازی شدن که حتی روی پردازنده‌های معمولی دستگاه‌های محلی بشینن و بشه فقط با یدونه کارت گرافیک جمع‌وجور fine-tune‌شون کرد.\n\nاهمیتش اینه که دوره انحصار سرورهای چند میلیون دلاری داره سر میاد و حالا می‌شه یه هوش مصنوعی چندوجهی، همه‌کاره و قدرتمند رو بدون هزینه سنگین مستقیم روی گوشی و سیستم شخصی ران کرد.",
+  "date": "2026-10-27T17:10:46+00:00"
+ },
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/liquidai/status/2115128329003303107",
+   "domain": "x.com",
+   "author": {
+    "name": "Liquid AI",
+    "handle": "liquidai",
+    "avatar": "https://pbs.twimg.com/profile_images/1702611993327251456/PUUuOA4W_200x200.jpg"
+   },
+   "text": "Introducing 𝙻𝙵𝙼𝟹: our new generation of Liquid Foundation Models. With a new tri-hybrid architecture and new multimodal encoders, the LFM3 family is the ideal model suite for specialized intelligence.\n\n> 6 model instances, across text, audio, vision, and omni modalities, generative and decision models.\n> 𝙻𝙵𝙼𝟹-𝟷.𝟽𝙱: text, 256k context window.\n> 𝙻𝙵𝙼𝟹-𝚅𝙻-𝟸𝙱: vision-language model with video-input support for spatial understanding\n> 𝙻𝙵𝙼𝟹-𝙰𝚞𝚍𝚒𝚘-𝟸𝙱: tool calls, voice chat, reasoning in 18 languages.\n> 𝙻𝙵𝙼𝟹-𝙾𝚖𝚗𝚒-𝟸𝙱: an omni model combines vision, audio, and language.\n> 𝚍𝟷-𝟸𝙱 and 𝚍𝟷-𝙾𝚖𝚗𝚒-𝟸𝙱: decision models with typed outputs and calibrated probabilities in a single pass. Omni adds audio input.\n> fine-tune on 1 GPU.\n> a new tri-hybrid architecture\n> architecture optimized for 14 processor classes across GPUs, CPUs, and NPUs.\n> 𝙻𝙵𝙼𝟹-𝚅𝙻-𝟸𝙱 is a beast. It performs competitively with Gemma 4 12B (6x larger), and Gemini 3.5 Flash Lite, and GPT-5.6 Luna, with 1.9B parameters.\n> 𝙻𝙵𝙼𝟹-𝟷.𝟽𝙱 is #1 on the Pareto frontier of device intelligence 𝚙𝚒𝚙𝚎𝚝𝚝𝚎.𝚕𝚒𝚚𝚞𝚒𝚍.𝚊𝚒\n\nEvery modality for specialized intelligence. Pick the one that fits your use case, customize it, and run it on-device.\n\n1/ 🧵",
+   "date": 1793120865,
+   "media": [
+    {
+     "type": "video",
+     "src": "https://video.twimg.com/amplify_video/2115125357439557633/vid/avc1/1280x720/KeRXXul_iF29OCSy.mp4?tag=29",
+     "poster": "https://pbs.twimg.com/amplify_video_thumb/2115125357439557633/img/X_jB63rlX-TyinU4.jpg",
+     "ratio": 0.5625,
+     "duration": 137.109,
+     "gif": false
+    }
+   ],
+   "links": []
+  }
+ ],
+ "article": {
+  "title": "بچه‌های شرکت Liquid AI اومدن نسل جدید مدل‌هاشون به اسم LFM3 رو رونمایی کردن که با یه معماری سه‌گانه نوآورانه حسابی گردوخاک راه انداخته",
+  "source_title": "Introducing 𝙻𝙵𝙼𝟹: our new generation of Liquid Foundation Models. With a new tri-hybrid architecture and new multimodal encoders, the LFM3…",
+  "body": [
+   "رفیق، بچه‌های شرکت Liquid AI اومدن نسل جدید مدل‌هاشون به اسم LFM3 رو رونمایی کردن که با یه معماری سه‌گانه نوآورانه حسابی گردوخاک راه انداخته. این خانواده شامل ۶ تا مدل همه‌کاره و تصمیم‌گیرنده‌س که سایزشون حدود ۱.۷ تا ۲ میلیارد پارامتره، ولی نسخه متنی‌ش پنجره متنی ۲۵۶ هزار توکنی داره و نسخه صوتی‌ش هم ۱۸ زبان مختلف و ابزارهای متنوع رو می‌فهمه. نکته شاخش اینجاست که مدل تصویری دو میلیاردی‌شون جوری خفنه که با غول‌های شش برابر بزرگ‌تر از خودش شاخ‌به‌شاخ رقابت می‌کنه. علاوه بر این، طوری بهینه‌سازی شدن که حتی روی پردازنده‌های معمولی دستگاه‌های محلی بشینن و بشه فقط با یدونه کارت گرافیک جمع‌وجور fine-tune‌شون کرد."
+  ],
+  "why": "دوره انحصار سرورهای چند میلیون دلاری داره سر میاد و حالا می‌شه یه هوش مصنوعی چندوجهی، همه‌کاره و قدرتمند رو بدون هزینه سنگین مستقیم روی گوشی و سیستم شخصی ران کرد.",
+  "tags": [
+   "تراشه",
+   "صدا و موسیقی"
+  ]
+ },
+ "updated": "2026-10-27T17:14:23+00:00"
+}
