@@ -1,0 +1,58 @@
+{
+ "id": 6154,
+ "url": "https://t.me/dlmehr/6154",
+ "date": "2026-10-27T18:59:01+00:00",
+ "text": "https://fxtwitter.com/alexshander03/status/2115111288066171211?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+ "forwarded_from": null,
+ "digest": false,
+ "hash": "59be1b9f3d4a",
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/alexshander03/status/2115111288066171211?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+  "site": "🧵 Thread • FxTwitter",
+  "title": "Alex Shan (@alexshander03)",
+  "description": "Today, @JudgmentLabs opens for general access.\nWe believe long running agent systems will generate more exhaust data than the world can currently process.\nHidden within agent traces are rich records of how to make these systems better: what users ask for…",
+  "image": null
+ },
+ "gholam": {
+  "text": "رفیق، الکس شان رسماً اعلام کرد که پلتفرم Judgment Labs درهای دسترسی عمومی خودش رو برای همه باز کرده. حرف حسابشون اینه که سیستم‌های ایجنت هوش مصنوعی که قراره ماموریت‌های طولانی‌مدت انجام بدن، یه خروار دیتای جانبی تولید می‌کنن که دنیا هنوز توانایی هضم و تحلیلش رو نداره. این پلتفرم اومده تا لایه نظارت و ارتقای عملکرد همین ایجنت‌ها بشه؛ یعنی ردپای فعالیت مدل‌ها رو زیر ذره‌بین می‌ذاره تا بفهمه کاربرا چی می‌خوان، ایجنت‌ها کجاها پاشون می‌لغزه و با دنیای بیرون چطوری تا می‌کنن. خلاصه هدفشون اینه که از دل این همه دیتای سردرگم، گنج بکشن بیرون و هوش مصنوعی‌ها رو روزبه‌روز کاربلدتر و کم‌خطاتر کنن.\n\nاهمیتش اینه که با پیچیده‌تر شدن کار ایجنت‌های هوش مصنوعی، مانیتورینگ دقیق و عیب‌یابی درازمدت شاهرگ حیاتی موندن توی رقابته.",
+  "date": "2026-10-27T18:59:12+00:00"
+ },
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/alexshander03/status/2115111288066171211",
+   "domain": "x.com",
+   "author": {
+    "name": "Alex Shan",
+    "handle": "alexshander03",
+    "avatar": "https://pbs.twimg.com/profile_images/1958555756367925248/rkpAv4Z4_200x200.jpg"
+   },
+   "text": "Today, @JudgmentLabs opens for general access.\n\nWe believe long running agent systems will generate more exhaust data than the world can currently process.\n\nHidden within agent traces are rich records of how to make these systems better: what users ask for, when agents stumble, and how agents interact with the external world.\n\nJudgment is the most performant monitoring and improvement layer for long-horizon agents.\n\nWe’re excited to see what you build!",
+   "date": 1793116802,
+   "media": [
+    {
+     "type": "video",
+     "src": "https://video.twimg.com/amplify_video/2114958518570962944/vid/avc1/1280x720/lBiJpT9L0d7n48bL.mp4?tag=29",
+     "poster": "https://pbs.twimg.com/amplify_video_thumb/2114958518570962944/img/Reqv3XfMk1gcRCwn.jpg",
+     "ratio": 0.5625,
+     "duration": 129.17,
+     "gif": false
+    }
+   ],
+   "links": []
+  }
+ ],
+ "article": {
+  "title": "الکس شان رسماً اعلام کرد که پلتفرم Judgment Labs درهای دسترسی عمومی خودش رو برای همه باز کرده",
+  "source_title": "Today, @JudgmentLabs opens for general access.",
+  "body": [
+   "رفیق، الکس شان رسماً اعلام کرد که پلتفرم Judgment Labs درهای دسترسی عمومی خودش رو برای همه باز کرده. حرف حسابشون اینه که سیستم‌های ایجنت هوش مصنوعی که قراره ماموریت‌های طولانی‌مدت انجام بدن، یه خروار دیتای جانبی تولید می‌کنن که دنیا هنوز توانایی هضم و تحلیلش رو نداره. این پلتفرم اومده تا لایه نظارت و ارتقای عملکرد همین ایجنت‌ها بشه؛ یعنی ردپای فعالیت مدل‌ها رو زیر ذره‌بین می‌ذاره تا بفهمه کاربرا چی می‌خوان، ایجنت‌ها کجاها پاشون می‌لغزه و با دنیای بیرون چطوری تا می‌کنن. خلاصه هدفشون اینه که از دل این همه دیتای سردرگم، گنج بکشن بیرون و هوش مصنوعی‌ها رو روزبه‌روز کاربلدتر و کم‌خطاتر کنن."
+  ],
+  "why": "با پیچیده‌تر شدن کار ایجنت‌های هوش مصنوعی، مانیتورینگ دقیق و عیب‌یابی درازمدت شاهرگ حیاتی موندن توی رقابته.",
+  "tags": [
+   "ایجنت"
+  ]
+ },
+ "updated": "2026-10-27T19:02:26+00:00"
+}
