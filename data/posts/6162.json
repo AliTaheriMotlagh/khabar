@@ -1,0 +1,83 @@
+{
+ "id": 6162,
+ "url": "https://t.me/dlmehr/6162",
+ "date": "2026-10-28T03:20:35+00:00",
+ "text": "https://fxtwitter.com/kimmonismus/status/2115276413997850742?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+ "forwarded_from": null,
+ "digest": false,
+ "hash": "80329aed635a",
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/kimmonismus/status/2115276413997850742?s=52&t=F41Qa04r48Mef_j_XjBneQ",
+  "site": "FxTwitter",
+  "title": "Chubby ♨️ (@kimmonismus)",
+  "description": "Artificial Analysis’ Intelligence Index v5 now bases 60% of its score on evaluations with private test sets or held-out answers, with Claude Opus 5.5 narrowly leading GPT-6 Astra and GPT-6.1 Sol.\nAs expected, GPT-6-Astra currently appears to be slightly…",
+  "image": "https://cdn4.telesco.pe/file/DxlD05FyB7uz4mYEwPJmiw60woBXbd-1gsi3X7dBPMCHHIiHn-fKwXz74ByGyJIzExlw-qx1P-Bff1DCjpn7kkklPqyQ1g0udWnsyKymjRoH3e1CZ0IvRKIV4DynUWtteiplaWs2kdxefx_TsO7_CN0m8zv-21mpe4SEJ9oEv6hQA8chqAkXnM2DO_RGatPJfcSai7ERuT2px6k7eYYrn8RCUhTvIP01HD9CtlGw1Dl4CU_wNkLNQshXHwA0PP2rSsgZ2TplJAi_bMplvPChKRu7x7KzWK_vq9zmBTriwNUeHqwrSxzPSto_8Hs9sYfQNK6zLLjB9h4tI9y5nOpTHw.jpg"
+ },
+ "gholam": {
+  "text": "رفیق، مجموعه Artificial Analysis نسخه پنجم شاخص هوش مصنوعیش رو داده بیرون و این‌بار واسه اینکه عیار واقعی رو بسنجه، ۶۰ درصد نمره‌دهی رو برده سمت آزمون‌ها و دیتاست‌های محرمانه تا جلوی تقلب و حفظ کردن جواب‌ها رو بگیره. توی این میدون رقابت سنگین، کلود اوپوس ۵.۵ با یه اختلاف خیلی ریز تونسته بالاتر از جی‌پی‌تی ۶ آسترا و جی‌پی‌تی ۶.۱ سول جا خوش کنه و صدرنشین بشه. جزئیات هم نشون میده اوپوس توی کدنویسی تک‌تازی می‌کنه، آسترا توی بنچمارک‌های علمی یه سر و گردن بالاتره و مدل سول هم از نظر نسبت قیمت به کارایی حسابی دست‌نیافتنیه.\n\nاهمیتش اینه که با محرمانه شدن سوال‌های ارزیابی، عیار واقعی غول‌های هوش مصنوعی رو میشه و دیگه هیچ مدلی نمی‌تونه با دیدن سوالات قبلی الکی ادعای خفن بودن بکنه.",
+  "date": "2026-10-28T03:20:55+00:00"
+ },
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/kimmonismus/status/2115276413997850742",
+   "domain": "x.com",
+   "author": {
+    "name": "Chubby♨️",
+    "handle": "kimmonismus",
+    "avatar": "https://pbs.twimg.com/profile_images/1728327996375719936/RW7VBJfD_200x200.jpg"
+   },
+   "text": "Artificial Analysis’ Intelligence Index v5 now bases 60% of its score on evaluations with private test sets or held-out answers, with Claude Opus 5.5 narrowly leading GPT-6 Astra and GPT-6.1 Sol.\n\nAs expected, GPT-6-Astra currently appears to be slightly ahead in scientific benchmarks, while Opus 5.5 leads in coding. GPT-6.1-Sol offers unparalleled price-performance.\n\nGood to see we are getting more private tests.",
+   "date": 1793156171,
+   "media": [
+    {
+     "type": "image",
+     "src": "https://pbs.twimg.com/media/HVr4bgIaUAAKAB7.png?name=orig",
+     "ratio": 0.8496
+    },
+    {
+     "type": "image",
+     "src": "https://pbs.twimg.com/media/HVr4d6QaEAArZq4.png?name=orig",
+     "ratio": 0.8399
+    },
+    {
+     "type": "image",
+     "src": "https://pbs.twimg.com/media/HVr4pkLa4AACtWm.png?name=orig",
+     "ratio": 1.0549
+    }
+   ],
+   "links": [],
+   "quote": {
+    "author": {
+     "name": "Artificial Analysis",
+     "handle": "ArtificialAnlys",
+     "avatar": "https://pbs.twimg.com/profile_images/2042402069320290304/A8C1lP07_200x200.jpg"
+    },
+    "text": "Announcing Artificial Analysis Intelligence Index v5, featuring 2 new benchmarks and 3 upgrades. For the first time, the majority of the Index is built on private datasets\n\nThe Artificial Analysis Intelligence Index is our composite measure of model capabilities across tasks reflecting real-world usage today. v5 is our biggest upgrade since v4 launched in January. With v5, 60% of the Index is now based on evaluations with private test sets or held-out answers.\n\nAlongside Intelligence Index v5, we’re launching the Artificial Analysis Progress Index v1, which tracks model capability over time on one continuous scale.\n\nNew to the Intelligence Index:\n\n➤ FrontierCode 2.0: Cognition's newly-launched private benchmark of real-world coding tasks, graded on whether a repository maintainer would merge the agent's change\n\n➤ Terminal-Bench-Science: 70 agentic scientific research tasks, run in a terminal environment\n\nUpgraded:\n\n➤ HLE-Diamond (replacing Humanity's Last Exam): a refined 1,000-question version of Humanity's Last Exam, split evenly between reasoning and knowledge questions\n\n➤ AA-Omniscience v1.1: An updated dataset with saturated and public set questions removed, new questions added, and ambiguous or erroneous questions revised\n\n➤ CritPt v2: a private, 40-question hard subset of CritPt v2, revised by the CritPt authors and run with a code-execution tool\n\nStaying in the Index: AA-Briefcase, AutomationBench-AA, GDP.pdf and Terminal-Bench 4.0\n\nRemoved from the Index: GDPval-AA v2.1, SciCode, and AA-LCR v1.1\n\nKey results:\n\n➤ Claude Opus 5.5 (max) leads at 58, ahead of GPT-6 Astra (max, 57) and GPT-6.1 Sol (max, 55): Anthropic and OpenAI hold the top five models. Gemini 4 Argon (high) is next at 50\n\n➤ The open weights gap widens from 3 points to 12: Kimi K3.1 Pro (weights not yet released) is the top open weights model at 46. Among released weights, DeepSeek V4.1 Flash 1017 (max) and GLM-5.3 (max) lead at 32 - 26 points behind the leader and below Claude Haiku 5.5 (max, 36)\n\n➤ Cost per task varies by more than 13x among the leading models: of the 10 highest-scoring models shown, GPT-6.1 Terra (max) is the cheapest at $0.96 per Intelligence Index task and Claude Fable 5.1 (max) the most expensive at $13.04",
+    "date": 1793153482,
+    "media": [
+     {
+      "type": "image",
+      "src": "https://pbs.twimg.com/media/HVrubbmaoAA_Kry.jpg?name=orig",
+      "ratio": 0.4725
+     }
+    ],
+    "links": []
+   }
+  }
+ ],
+ "article": {
+  "title": "مجموعه Artificial Analysis نسخه پنجم شاخص هوش مصنوعیش رو داده بیرون و این‌بار واسه اینکه عیار واقعی رو بسنجه، ۶۰ درصد نمره‌دهی رو برده سمت آزمون‌ها و دیتاست‌های محرمانه تا جلوی تقلب و حفظ کردن جواب‌ها رو بگیره",
+  "source_title": "Artificial Analysis’ Intelligence Index v5 now bases 60% of its score on evaluations with private test sets or held-out answers, with…",
+  "body": [
+   "رفیق، مجموعه Artificial Analysis نسخه پنجم شاخص هوش مصنوعیش رو داده بیرون و این‌بار واسه اینکه عیار واقعی رو بسنجه، ۶۰ درصد نمره‌دهی رو برده سمت آزمون‌ها و دیتاست‌های محرمانه تا جلوی تقلب و حفظ کردن جواب‌ها رو بگیره. توی این میدون رقابت سنگین، کلود اوپوس ۵.۵ با یه اختلاف خیلی ریز تونسته بالاتر از جی‌پی‌تی ۶ آسترا و جی‌پی‌تی ۶.۱ سول جا خوش کنه و صدرنشین بشه. جزئیات هم نشون میده اوپوس توی کدنویسی تک‌تازی می‌کنه، آسترا توی بنچمارک‌های علمی یه سر و گردن بالاتره و مدل سول هم از نظر نسبت قیمت به کارایی حسابی دست‌نیافتنیه."
+  ],
+  "why": "با محرمانه شدن سوال‌های ارزیابی، عیار واقعی غول‌های هوش مصنوعی رو میشه و دیگه هیچ مدلی نمی‌تونه با دیدن سوالات قبلی الکی ادعای خفن بودن بکنه.",
+  "tags": [
+   "اوپن‌ای‌آی",
+   "آنتروپیک"
+  ]
+ },
+ "updated": "2026-10-28T03:24:21+00:00"
+}
