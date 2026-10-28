@@ -1,0 +1,59 @@
+{
+ "id": 6172,
+ "url": "https://t.me/dlmehr/6172",
+ "date": "2026-10-28T15:53:07+00:00",
+ "text": "https://fxtwitter.com/piotrzelasko/status/2115469543753613324?a=yWIbC7oWv79nruqw4Ug&s=52",
+ "forwarded_from": null,
+ "digest": false,
+ "hash": "6a1c0b3303e1",
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/piotrzelasko/status/2115469543753613324?a=yWIbC7oWv79nruqw4Ug&s=52",
+  "site": "🧵 Thread • FxTwitter",
+  "title": "Piotr Żelasko (@PiotrZelasko)",
+  "description": "NVIDIA’s best speech model to date: Nemotron 3.5 Transcribe! It’s an offline model with:\n🤖\nSpeechLLM backed by Nemotron 3.5 Lightning\n🧠\nSteered, promptable, contextual transcription\n🌏\n40 languages\n🗣️\nUp to 8 speaker transcription\n⏰\nTimestamps for each word and…",
+  "image": null
+ },
+ "gholam": {
+  "text": "ببین رفیق، انویدیا قوی‌ترین مدل تبدیل گفتار به متن آفلاین خودش رو به اسم Nemotron 3.5 Transcribe فرستاده تو میدون که بدجوری گردوخاک کرده. این غول جدید رو ۴۰ تا زبان مسلطه، می‌تونه صدای تا ۸ تا گوینده رو هم‌زمان تفکیک کنه و حتی تایم‌استمپ دقیق هر کلمه رو هم تحویلت بده. سرعتی که روی تراشه‌های بلک‌ول نشون داده هوش از سر آدم می‌پرونه و توی بنچمارک‌های Open ASR هم نشسته رو رتبه اول جهان؛ قشنگیش هم اینجاست که وزن‌ها، کدها و همه‌چیزش رو اوپن‌سورس و رایگان ریخته روی میز.\n\nاهمیتش اینه که دیگه بدون نیاز به اینترنت و اشتراک‌های گرون ابری، می‌شه فایل‌های صوتی سنگین با چندتا گوینده رو در کسری از ثانیه و با دقت بی‌نظیر به متن تمیز درآورد.",
+  "date": "2026-10-28T15:53:20+00:00"
+ },
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/PiotrZelasko/status/2115469543753613324",
+   "domain": "x.com",
+   "author": {
+    "name": "Piotr Żelasko",
+    "handle": "PiotrZelasko",
+    "avatar": "https://pbs.twimg.com/profile_images/1748141361298026496/234A19Br_200x200.jpg"
+   },
+   "text": "NVIDIA’s best speech model to date: Nemotron 3.5 Transcribe! It’s an offline model with:\n🤖SpeechLLM backed by Nemotron 3.5 Lightning\n🧠Steered, promptable, contextual transcription\n🌏40 languages\n🗣️Up to 8 speaker transcription\n⏰Timestamps for each word and speaker\n🔥over 2000 RTFx for NVFP4 + DFlash2 on Blackwell GPUs\n🏆#1 open model on Open ASR, tied #1 overall on AA-WER, #1 open on David AI multispeaker ASR\n🔓Weights, code, recipes, agentic skills, Granary-v2 - all in the open!\n\nSee the clip from Her Girl Friday (1940): captioned entirely with a single forward pass!",
+   "date": 1793202217,
+   "media": [
+    {
+     "type": "video",
+     "src": "https://video.twimg.com/amplify_video/2115469495170994176/vid/avc1/986x720/iSlRyF2ON7Yo381n.mp4?tag=29",
+     "poster": "https://pbs.twimg.com/amplify_video_thumb/2115469495170994176/img/tRF6a8vj1ISV-3w7.jpg",
+     "ratio": 0.7297,
+     "duration": 120.036,
+     "gif": false
+    }
+   ],
+   "links": []
+  }
+ ],
+ "article": {
+  "title": "انویدیا قوی‌ترین مدل تبدیل گفتار به متن آفلاین خودش رو به اسم Nemotron 3.5 Transcribe فرستاده تو میدون که بدجوری گردوخاک کرده",
+  "source_title": "NVIDIA’s best speech model to date: Nemotron 3.5 Transcribe! It’s an offline model with:",
+  "body": [
+   "ببین رفیق، انویدیا قوی‌ترین مدل تبدیل گفتار به متن آفلاین خودش رو به اسم Nemotron 3.5 Transcribe فرستاده تو میدون که بدجوری گردوخاک کرده. این غول جدید رو ۴۰ تا زبان مسلطه، می‌تونه صدای تا ۸ تا گوینده رو هم‌زمان تفکیک کنه و حتی تایم‌استمپ دقیق هر کلمه رو هم تحویلت بده. سرعتی که روی تراشه‌های بلک‌ول نشون داده هوش از سر آدم می‌پرونه و توی بنچمارک‌های Open ASR هم نشسته رو رتبه اول جهان؛ قشنگیش هم اینجاست که وزن‌ها، کدها و همه‌چیزش رو اوپن‌سورس و رایگان ریخته روی میز."
+  ],
+  "why": "دیگه بدون نیاز به اینترنت و اشتراک‌های گرون ابری، می‌شه فایل‌های صوتی سنگین با چندتا گوینده رو در کسری از ثانیه و با دقت بی‌نظیر به متن تمیز درآورد.",
+  "tags": [
+   "صدا و موسیقی",
+   "انویدیا"
+  ]
+ },
+ "updated": "2026-10-28T15:54:25+00:00"
+}

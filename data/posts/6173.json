@@ -1,0 +1,53 @@
+{
+ "id": 6173,
+ "url": "https://t.me/dlmehr/6173",
+ "date": "2026-10-28T15:53:58+00:00",
+ "text": "https://fxtwitter.com/assemblyai/status/2115470615583056042?a=VW9AUCRUx4ZiRxi2u5s&s=52",
+ "forwarded_from": null,
+ "digest": false,
+ "hash": "af765ebd625a",
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/assemblyai/status/2115470615583056042?a=VW9AUCRUx4ZiRxi2u5s&s=52",
+  "site": "🧵 Thread • FxTwitter",
+  "title": "AssemblyAI (@AssemblyAI)",
+  "description": "Introducing AssemblyAI-TTS-1, our first text-to-speech model.\nNatural speech for voice agents, streaming in 90 ms, at $15 per million characters. On accuracy, naturalness, and cost together, it’s the best TTS model you can run at scale.",
+  "image": null
+ },
+ "gholam": null,
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/AssemblyAI/status/2115470615583056042",
+   "domain": "x.com",
+   "author": {
+    "name": "AssemblyAI",
+    "handle": "AssemblyAI",
+    "avatar": "https://pbs.twimg.com/profile_images/2074526103528722432/OwX0QQ1c_200x200.png"
+   },
+   "text": "Introducing AssemblyAI-TTS-1, our first text-to-speech model.\n\nNatural speech for voice agents, streaming in 90 ms, at $15 per million characters. On accuracy, naturalness, and cost together, it’s the best TTS model you can run at scale.",
+   "date": 1793202472,
+   "media": [
+    {
+     "type": "video",
+     "src": "https://video.twimg.com/amplify_video/2115470469789069312/vid/avc1/1280x720/L_lRTJ4H4CJBtsMg.mp4?tag=16",
+     "poster": "https://pbs.twimg.com/amplify_video_thumb/2115470469789069312/img/kR2OVyfqh10ps9rb.jpg",
+     "ratio": 0.5625,
+     "duration": 90.131,
+     "gif": false
+    }
+   ],
+   "links": []
+  }
+ ],
+ "article": {
+  "title": "Introducing AssemblyAI-TTS-1, our first text-to-speech model.",
+  "source_title": null,
+  "body": [],
+  "why": null,
+  "tags": [
+   "صدا و موسیقی"
+  ]
+ },
+ "updated": "2026-10-28T15:54:24+00:00"
+}
