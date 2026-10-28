@@ -12,7 +12,7 @@
   "site": "FxTwitter",
   "title": "Chubby ♨️ (@kimmonismus)",
   "description": "Huh? Nanbeige just released Nanbeige4.3-33B, delivering surprisingly strong coding and agent performance for its size, beating similarly sized Qwen 3.8 27b and Gemma models on most benchmarks.\nThe weights are openly available under Apache 2.0, with support…",
-  "image": "https://cdn4.telesco.pe/file/r1k-f1uoqlrB-5CXG2m1j_3AMx8Mrb5zVhK9tr93EsqelcA-WGh-9qAai3nFORe506uRx6cbDbBDsSnHgiIEqSh07JalE9r7NffqSSZp0yHIyCYrvAVg1NBsqr6gq9PlyG5xdQhAx-7kEW4Bk6_oNbxPPqXIfMIjmHg3odAmmnkMUnLsHpsLtzYxe7MJz1lULzkpFM4d-Owcik4lNKseOR7eQGIc3PDudrL9jpqzGsFvS3EH_njZViYsqqS_r6rfkDPgpxiLPtAjyqgWLBMujLSwDwf7_IluTol7R_EbSeJP_0SZaM09JHxcRZw3OsiDNCttihXEHyBUEk-wqhexiQ.jpg"
+  "image": "https://cdn4.telesco.pe/file/EvotHLkuPIuX7gYwWdraMvwS5-ap0VEPLA9rIfi2n8ogEB9_V6K5C-ed0N_VKAjeGgd17sV6PepYxqmyOQoaYrAze6MAb1hoB1XNzX5mXZ2pjqu4ow4cLYxS4SNtws1KsdqZSFGByBakJxPLcUWAlweNma2LoTOwvk56FH8u9g1l4DorqwiTw-oq9r7lFSCikCf8ffE6YOWZd6LWbk7P1nI2efuqzLy-IfciKgLE99-OQ52u90t5l3m9zhtIpKPTvgJedY1KO2c1F3aQDpZ_FYsbyUQsW-Hgul0BBP-DzK6_GZ3miwh13uQCvBHWi0OCrvscVnk-nwJ8kYabtp9a0g.jpg"
  },
  "gholam": {
   "text": "ببین رفیق، بچه‌های تیم نان‌بیژ یه مدل هوش مصنوعی ۳۳ میلیاردی تازه به اسم Nanbeige4.3-33B دادن بیرون که بدجوری توی کدنویسی و کارای ایجنتی گردوخاک کرده. این غول جمع‌وجور توی بنچمارک‌ها حسابی درخشیده و رقبای سرشناس هم‌قدوقواره خودش، از جمله مدل ۲۷ میلیاردی کیوون و جمای گوگل رو جا گذاشته. از اون باحال‌تر اینکه وزنای مدل رو با لایسنس کاملاً آزاد و دست‌ودلبازانه آپاچی ۲.۰ منتشر کردن تا هر کی خواست بتونه راحت ازش استفاده کنه. تازه پنجره کانتکستش هم تا ۵۱۲ هزار توکن ساپورت می‌کنه که یعنی می‌تونی یه خروار کد و دیتای سنگین رو یه جا بدی تحویلش و آخ نگه.\n\nچرا مهمه؟ اهمیتش اینه که این سطح از هوش ایجنتی و کانتکست نیم‌میلیونی روی یه مدل متن‌باز ۳۳ میلیاردی، دست برنامه‌نویسا رو برای ساخت ابزارهای خفن بدون هزینه‌های نجومی کاملاً باز می‌ذاره.",
@@ -66,5 +66,5 @@
    "کدنویسی"
   ]
  },
- "updated": "2026-10-28T01:32:13+00:00"
+ "updated": "2026-10-28T10:30:48+00:00"
 }

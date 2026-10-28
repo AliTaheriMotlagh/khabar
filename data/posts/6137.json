@@ -12,7 +12,7 @@
   "site": "FxTwitter · antigravity.google",
   "title": "Vahab Mirrokni (@mirrokni)",
   "description": "Today, we shared how Google’s Graph Mining and Graph Learning teams used Gemini 4 Argon with Teamwork agent in @GoogleAntigravity to solve a different class of internal engineering bottleneck: compressing months of low-level RDMA networking and custom TPU…",
-  "image": "https://cdn4.telesco.pe/file/lUHp7zvoDXRoDttCFQJGDcv5LmQon9CmI9EMqV0AzVwOJRVfBttINIUl9RTiLCoHbcob1a67kdtzUAKaXD6THPPH34VqVdnaw0ZYKlNE7Tg3A_yOQA8oQrLqk1ci11-ej0lFwifKThAPaOpXOG4vlcnQ3B52nWaoyh-7iHcnFAsQWEvgsb-Ozh24i73KroUlSD2xYAusGb0Bh_GAw7PXsBdLR7Dr5zka5ghJNrO-dtXqhG-QSSUpNr33jHnPHV71qdsEAgYr5mg4-vskLB4hrRwLY3u9AmUYiFyncaxEZd8_g4bVmkcu_qHHYCIEoxkdAKxiUmnBBpXmSiN_bQRAfA.jpg"
+  "image": "https://cdn4.telesco.pe/file/BzXuhg5fCQJy_J1zXhjj09bLO4bBIyTxw6ZNRrQ4PtU6yu6ODDEpPeOWXjtRGddPYodwxTo6P-Mh8pRiCmXrXyxIuywA3_N8oUKyKrVdABIJbBIPTvjTT48Y4ClnJJIL7hh_0y_3Kze5PJZ34Q117QbXlLq6QNSPCQblMf4yWTAVham-tHav5JkVm0WmvYqrL2O2PcmbgAe0VVu4xRXgHYdB-6J2qSu72ZXS_6XPiIZX7LVAH4qE-Saj-bvo-im9cpsu83N0i4An5SN-lOlo7Yq-_VIfqzAjCpjrpqteYmpQoe_rIvHHm_PG2NGEC-rmRDllt9tddahINZgKBIAHQw.jpg"
  },
  "gholam": {
   "text": "رفیق، وهاب میررکنی از مهندسای ارشد گوگل خبر داده که تیم‌های پردازش گراف با کمک مدل Gemini 4 Argon و ایجنت‌های Antigravity کاری کردن کارستان و کارهای سنگین چند ماهه در حوزه شبکه و کدهای اختصاصی TPU رو توی چند ساعت جمع کردن. این هوش مصنوعی با توسعه الگوریتم‌های FarArray تونسته سرعت پردازش گراف رو تا ۱۸۰ برابر ببره بالا و مصرف رم رو ۲۲ برابر کم کنه. تازه برای شبکه‌های عصبی گراف هم کرنل‌هایی ساخته که ۸ تا ۱۵ برابر سریع‌تر از JAX کار می‌کنن و بار عظیمی از روی حافظه برمی‌دارن. قشنگی ماجرا اینجاست که قدیما همین تیم گراف به پالایش داده‌های جِمینای کمک کرده بود و حالا این هوش مصنوعی داره دِینش رو به خود سیستم ادا می‌کنه و زیرساخت رفقاش رو ارتقا میده.\n\nاهمیتش اینه که نشون میده ایجنت‌های هوش مصنوعی دیگه فقط واسه کارهای دم‌دستی نیستن و رسیدن به مرحله‌ای که پیچیده‌ترین بخش‌های مهندسی سخت‌افزار و شبکه رو در عرض چند ساعت متحول می‌کنن.",
@@ -57,5 +57,5 @@
    "ایجنت"
   ]
  },
- "updated": "2026-10-28T01:32:12+00:00"
+ "updated": "2026-10-28T10:30:47+00:00"
 }
