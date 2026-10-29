@@ -1,0 +1,58 @@
+{
+ "id": 6203,
+ "url": "https://t.me/dlmehr/6203",
+ "date": "2026-10-29T22:33:08+00:00",
+ "text": "https://fxtwitter.com/claudedevs/status/2115923971279614171?a=MukcBCXtD7cMA-KewKo&s=52",
+ "forwarded_from": null,
+ "digest": false,
+ "hash": "edfeada1f74f",
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/claudedevs/status/2115923971279614171?a=MukcBCXtD7cMA-KewKo&s=52",
+  "site": "🧵 Thread • FxTwitter",
+  "title": "ClaudeDevs (@ClaudeDevs)",
+  "description": "We've raised the max request size for Messages and Token Counting on the Claude API from 32 MB to 128 MB.\nImage-heavy requests like long computer-use sessions and big PDFs were previously hitting 32 MB with plenty of context window left. Now you get ~4x…",
+  "image": null
+ },
+ "gholam": {
+  "text": "رفیق، بچه‌های کلود بالاخره دست‌به‌کار شدن و سقف حجم درخواست‌ها رو توی ای‌پی‌آی (API) از ۳۲ مگابایت رسوندن به ۱۲۸ مگابایت، یعنی قشنگ چهار برابر فضای بیشتر. قضیه از این قرار بود که قبلاً وقتی فایل‌های سنگین مثل پی‌دی‌اف‌های حجیم یا اسکرین‌شات‌های پشت‌سر‌هم از کار با کامپیوتر رو می‌فرستادی، با اینکه پنجره کانتکست هنوز جا داشت، حجم ریکوئست پر می‌شد و سیستم ارور می‌داد. حالا دیگه دست دولوپرها قشنگ باز شده تا هرچی تصویر و داکیومنت سنگین دارن بدون گیر و گرفت بفرستن سمت مدل.\n\nچرا مهمه؟ چون دیگه وسط کارهای سنگین هوش مصنوعی مثل کنترل خودکار سیستم یا خوندن کتاب‌های پر از تصویر لنگ نمی‌مونی و همه‌چی روان و بی‌دردسر پردازش می‌شه.",
+  "date": "2026-10-29T22:33:21+00:00"
+ },
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/ClaudeDevs/status/2115923971279614171",
+   "domain": "x.com",
+   "author": {
+    "name": "ClaudeDevs",
+    "handle": "ClaudeDevs",
+    "avatar": "https://pbs.twimg.com/profile_images/2044472418815893504/xf14RxM8_200x200.png"
+   },
+   "text": "We've raised the max request size for Messages and Token Counting on the Claude API from 32 MB to 128 MB.\n\nImage-heavy requests like long computer-use sessions and big PDFs were previously hitting 32 MB with plenty of context window left. Now you get ~4x more room.",
+   "date": 1793310561,
+   "media": [
+    {
+     "type": "video",
+     "src": "https://video.twimg.com/amplify_video/2115922541269426176/vid/avc1/1280x720/EPGrgDu0JxJaFU82.mp4?tag=29",
+     "poster": "https://pbs.twimg.com/amplify_video_thumb/2115922541269426176/img/-Q-IzAXT0PKMWGhi.jpg",
+     "ratio": 0.5625,
+     "duration": 28,
+     "gif": false
+    }
+   ],
+   "links": []
+  }
+ ],
+ "article": {
+  "title": "بچه‌های کلود بالاخره دست‌به‌کار شدن و سقف حجم درخواست‌ها رو توی ای‌پی‌آی (API) از ۳۲ مگابایت رسوندن به ۱۲۸ مگابایت، یعنی قشنگ چهار برابر فضای بیشتر",
+  "source_title": "We've raised the max request size for Messages and Token Counting on the Claude API from 32 MB to 128 MB.",
+  "body": [
+   "رفیق، بچه‌های کلود بالاخره دست‌به‌کار شدن و سقف حجم درخواست‌ها رو توی ای‌پی‌آی (API) از ۳۲ مگابایت رسوندن به ۱۲۸ مگابایت، یعنی قشنگ چهار برابر فضای بیشتر. قضیه از این قرار بود که قبلاً وقتی فایل‌های سنگین مثل پی‌دی‌اف‌های حجیم یا اسکرین‌شات‌های پشت‌سر‌هم از کار با کامپیوتر رو می‌فرستادی، با اینکه پنجره کانتکست هنوز جا داشت، حجم ریکوئست پر می‌شد و سیستم ارور می‌داد. حالا دیگه دست دولوپرها قشنگ باز شده تا هرچی تصویر و داکیومنت سنگین دارن بدون گیر و گرفت بفرستن سمت مدل."
+  ],
+  "why": "چون دیگه وسط کارهای سنگین هوش مصنوعی مثل کنترل خودکار سیستم یا خوندن کتاب‌های پر از تصویر لنگ نمی‌مونی و همه‌چی روان و بی‌دردسر پردازش می‌شه.",
+  "tags": [
+   "آنتروپیک"
+  ]
+ },
+ "updated": "2026-10-29T22:37:22+00:00"
+}
