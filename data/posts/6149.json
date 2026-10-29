@@ -12,7 +12,7 @@
   "site": "🧵 Thread • FxTwitter",
   "title": "Cognition (@cognition)",
   "description": "Introducing FrontierCode 2.0: our new coding benchmark that measures a model’s ability to go beyond the spec.\nMost coding evals measure a model’s ability to write code that meets a spec. With FrontierCode 1.0, we asked a new question: would you actually…",
-  "image": "https://cdn4.telesco.pe/file/AHN7XlSz5LMv-u9wcysAHYcIeQYcOYrBST2dp3sTQ_4Re4YLTrK75u93NeiHEMFGmP03sclO0-ZFJzPoTYE0EImIxO8tvWoQHrBdlC2HHuMx7f8-wJNW27TH7kL2E56tKbqNl79PJLMhf9NqQnbl6F-8V2vrMpL3BGfQ45weYGQb4IB1c44sVAqXRhL0h9XMjuQH4T57ZPRv_IN8GAl5QkmNVEKPp6xvVBa4nRXXgLbDO8DX4FhleuDfxsmApGHWxIEJ914PbmKORI7GczkuZgCk26ATECzCFRaMDZwNszfb-OgNgdnFRMDlO2wXYc8-eYB_XlyX0VvcMjWhcUdpCA.jpg"
+  "image": "https://cdn4.telesco.pe/file/CtXxDe2zDsuXro-opTk2yR5L9CkYe-G2KzdJEJDXUyMC2meDcuUW151bEXox374680gvZ_rRJz31EyTOxzC_tNu_w3zTMPSb9ggDrqIriV-hVcloCG96dzWztE5zP3oYhLSaMAPZ97PtzZYCmq5dzUU6Unoi68Hnk8jGnF3upv4Gc6UySpCrxo6uzOmrhfIwejcCV1WC3S3--4iVwA4KadoCAcFDSzF9EgYDV8utTPcnBEwSRICZ8eFMfeAryygIM9_V_K1NcmMU7yXztbhZuV9uDfLwUmGaP110NrnD98yGJgAD-3FIxrk93cHZc3n8QYHK3mvr20aTvnmX86nkWA.jpg"
  },
  "gholam": {
   "text": "رفیق، بچه‌های شرکت Cognition اومدن از بنچمارک جدیدشون به اسم FrontierCode 2.0 رونمایی کردن تا عیار واقعی هوش مصنوعی رو تو کدنویسی بسنجن. قضیه از این قراره که تا الان فقط چک می‌کردن کد کار می‌کنه یا نه، ولی تو این نسخه دستورا رو عمداً مبهم و بدون جزئیاتِ لقمه‌شده میدن تا ببینن مدل اصلاً شمّ مهندسی و قدرت تصمیم‌گیری داره که بشه کُدش رو واقعاً مِرج کرد یا نه. پروژه‌ها حسابی سنگین‌تر و دامنه‌دارتر شدن و نتیجه هم این شده که غول‌ترین مدل فعلی بازار تو این امتحان به زور تونسته ۴۵ درصد نمره بگیره و هنوز حسابی جای کار داره.\n\nچرا مهمه؟ اهمیتش اینه که نشون میده برنامه‌نویسی واقعی فقط کد زدن از روی دستور شفاف نیست و هوش مصنوعی هنوز توی درک موقعیت‌های مبهم و قضاوت‌های مهندسی لنگ می‌زنه.",
@@ -51,5 +51,5 @@
    "کدنویسی"
   ]
  },
- "updated": "2026-10-28T23:58:44+00:00"
+ "updated": "2026-10-29T10:50:58+00:00"
 }
