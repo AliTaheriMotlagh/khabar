@@ -1,0 +1,58 @@
+{
+ "id": 6183,
+ "url": "https://t.me/dlmehr/6183",
+ "date": "2026-10-29T01:45:22+00:00",
+ "text": "https://fxtwitter.com/_albertgu/status/2115502110578290900/video/1?s=46",
+ "forwarded_from": "Hossein Zakariaee",
+ "digest": false,
+ "hash": "37b9884e6918",
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/_albertgu/status/2115502110578290900/video/1?s=46",
+  "site": "🧵 Thread • FxTwitter",
+  "title": "Albert Gu (@_albertgu)",
+  "description": "I've always believed that intelligence should come from simple, general building blocks that learn their own abstractions directly from raw data; in other words, the bitter lesson. I think we're finally seeing a real step towards AI that can learn from all…",
+  "image": null
+ },
+ "gholam": {
+  "text": "ببین رفیق، آلبرت گو که از کله‌گنده‌های دنیای هوش مصنوعیه، اومده رو کرده که با یه مدل جدید از شبکه‌های سلسله‌مراتبی (H-Nets) ترکونده و یه قدم بزرگ به سمت هوش واقعی برداشته. حرف حسابش اینه که مدل‌ها باید بتونن بدون لقمه آماده کردن، مستقیماً از روی بایت‌های خام یاد بگیرن تا بشه کل داده‌های دنیای واقعی رو به خوردشون داد. نسخه جدید این سیستم تو آزمایش‌ها نشون داده بین ۳ تا ۵ برابر بازدهی بهتری داره و گل سرسبد ماجرا اینجاست که تونسته تو مقیاس بزرگ، با حدود ۱۰ برابر دیتا و قدرت پردازشی کمتر، پا‌به‌پای یه مدل متن‌باز که روی ۱۱ تریلیون توکن آموزش دیده رقابت کنه. \n\nاهمیتش اینه که با این روش دیگه نیازی به پردازش‌های سنگین و توکن‌بندی‌های پرخرج نداریم و راه آموزش هوش مصنوعی با دیتای خام و هزینه خیلی کمتر حسابی باز می‌شه.",
+  "date": "2026-10-29T01:45:42+00:00"
+ },
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/_albertgu/status/2115502110578290900",
+   "domain": "x.com",
+   "author": {
+    "name": "Albert Gu",
+    "handle": "_albertgu",
+    "avatar": "https://pbs.twimg.com/profile_images/2011884912593551360/voG84B15_200x200.jpg"
+   },
+   "text": "I've always believed that intelligence should come from simple, general building blocks that learn their own abstractions directly from raw data; in other words, the bitter lesson. I think we're finally seeing a real step towards AI that can learn from all data.\n\nLanguage modeling on raw bytes is a microcosm of this ideal, and to me it's a central problem in AI: if we can't build LLMs that learn end-to-end from bytes, how will we handle the rest of the world's data that we understand even less?\n\nLast year we introduced hierarchical networks (H-Nets) as a first step. Our new version finds up to 3-5x efficiency gains in controlled scaling law experiments, and at larger scale matches an open-source model trained on 11T tokens with ~10x less data and compute. The posts below walk through what we found and why we think it works.",
+   "date": 1793209981,
+   "media": [
+    {
+     "type": "video",
+     "src": "https://video.twimg.com/amplify_video/2115501577012461568/vid/avc1/1280x720/zeatz9JaTYGqZ0H2.mp4?tag=29",
+     "poster": "https://pbs.twimg.com/media/HVvH33RaQAE6DlQ.jpg",
+     "ratio": 0.5625,
+     "duration": 78.912,
+     "gif": false
+    }
+   ],
+   "links": []
+  }
+ ],
+ "article": {
+  "title": "آلبرت گو که از کله‌گنده‌های دنیای هوش مصنوعیه، اومده رو کرده که با یه مدل جدید از شبکه‌های سلسله‌مراتبی (H-Nets) ترکونده و یه قدم بزرگ به سمت هوش واقعی برداشته",
+  "source_title": "I've always believed that intelligence should come from simple, general building blocks that learn their own abstractions directly from raw…",
+  "body": [
+   "ببین رفیق، آلبرت گو که از کله‌گنده‌های دنیای هوش مصنوعیه، اومده رو کرده که با یه مدل جدید از شبکه‌های سلسله‌مراتبی (H-Nets) ترکونده و یه قدم بزرگ به سمت هوش واقعی برداشته. حرف حسابش اینه که مدل‌ها باید بتونن بدون لقمه آماده کردن، مستقیماً از روی بایت‌های خام یاد بگیرن تا بشه کل داده‌های دنیای واقعی رو به خوردشون داد. نسخه جدید این سیستم تو آزمایش‌ها نشون داده بین ۳ تا ۵ برابر بازدهی بهتری داره و گل سرسبد ماجرا اینجاست که تونسته تو مقیاس بزرگ، با حدود ۱۰ برابر دیتا و قدرت پردازشی کمتر، پا‌به‌پای یه مدل متن‌باز که روی ۱۱ تریلیون توکن آموزش دیده رقابت کنه."
+  ],
+  "why": "با این روش دیگه نیازی به پردازش‌های سنگین و توکن‌بندی‌های پرخرج نداریم و راه آموزش هوش مصنوعی با دیتای خام و هزینه خیلی کمتر حسابی باز می‌شه.",
+  "tags": [
+   "متن‌باز"
+  ]
+ },
+ "updated": "2026-10-29T01:49:18+00:00"
+}
