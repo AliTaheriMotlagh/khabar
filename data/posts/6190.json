@@ -1,0 +1,70 @@
+{
+ "id": 6190,
+ "url": "https://t.me/dlmehr/6190",
+ "date": "2026-10-29T16:17:40+00:00",
+ "text": "https://fxtwitter.com/alexolegimas/status/2115822019518370172?a=Bv8x6Ck8eL_nFk8TaPQ&s=52",
+ "forwarded_from": null,
+ "digest": false,
+ "hash": "b3cd2321b06b",
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/alexolegimas/status/2115822019518370172?a=Bv8x6Ck8eL_nFk8TaPQ&s=52",
+  "site": "🧵 Thread • FxTwitter",
+  "title": "Alex Imas (@alexolegimas)",
+  "description": "I joined @GoogleDeepMind to develop a research program on the economics of AGI. Today, together with Andrew Koh (@andrewjkoh) and Shane Legg (@ShaneLegg), we are incredibly excited to release The Economics of Intelligence, the first in a series of projects…",
+  "image": null
+ },
+ "gholam": {
+  "text": "ببین رفیق، الکس ایماس همراه رفقای کاردرستش شین لگ و اندرو کو توی گوگل دیپ‌مایند، یه مقاله سنگین و خفن دادن بیرون تا ببینن این هوش جامع مصنوعی (AGI) دقیقاً چطوری قراره دخل و خرج دنیا رو زیر و رو کنه. حرف حسابشون اینه که با وجود این همه جهش خفن، هنوز اقتصاد تغییر اساسی نکرده چون زور واقعی زمانی آزاد می‌شه که این ایجنت‌ها علاوه بر مهارت‌های فردی مثل کدنویسی، بلد باشن با هم دیگه کار تیمی کنن و هماهنگ بشن. این داش‌های ما نشون دادن که اگه مهارت هماهنگی این ابزارها بالا بره، سقف‌های سنتی اندازه شرکت‌ها شکسته می‌شه و شکل اقتصاد کلاً به هم می‌ریزه. دست‌آخر هم مشخص کردن که اثر این زلزله بزرگ، قبل از اینکه توی آمار بیکاری یا تغییر شکل بازار معلوم بشه، اول از همه صاف می‌افته به جون دستمزدها.\n\nاهمیتش اینه که نشون می‌ده قدرت اصلی هوش مصنوعی توی هم‌کاری تیمی ایجنت‌هاست و اولین جایی هم که قرار نیست از دستش قسر دربره، حقوق و جیب شاغلینه.",
+  "date": "2026-10-29T16:18:06+00:00"
+ },
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/alexolegimas/status/2115822019518370172",
+   "domain": "x.com",
+   "author": {
+    "name": "Alex Imas",
+    "handle": "alexolegimas",
+    "avatar": "https://pbs.twimg.com/profile_images/1994816403359010817/0zMDGpbF_200x200.jpg"
+   },
+   "text": "I joined @GoogleDeepMind to develop a research program on the economics of AGI. Today, together with Andrew Koh (@andrewjkoh) and Shane Legg (@ShaneLegg), we are incredibly excited to release The Economics of Intelligence, the first in a series of projects from our group on how AGI will change the economy.\n\nHow do capability improvements transform the economy, and when? In this project, we define thresholds of economic capabilities, e.g., minimal AGI, based on how they transform the economy. We then track how the economy–market structure, employment, and wages–changes during the transition across capability regimes.\n\nWe have seen exponential increases in what AI agents can do but the broader economy seems almost remarkably unchanged. Part of the reason is that the solo AI agent is the wrong economic object; economic transformation is an equilibrium outcome where organizations compete. Looking at how intelligence functions within organizations, transformation will depend on when two key capability thresholds are crossed: competence (gains on individual skills, e.g., coding, math) and coordination (gains on ability of agents to cooperate and work together).\n\nWe show that what economic transformation looks like depends on whether AI becomes supercompetent, supercooperative, or both—the regime of artificial superintelligence (ASI). Tracking this transition shows why the real visible transformation may come from improvements in coordination—a capability most benchmarks don’t yet track. Past a certain threshold, AI capabilities can break the Coasian ceiling on firm size and lead to an economy that looks drastically different than the one we see today.\n\nTwo main takeaways:\n1. To understand the path of transformation, we should be tracking agentic coordination more closely.\n2. The impact of AI will likely show up in wages before market structure or employment.\n\nWe are really excited about this paper. Excited to hear people’s thoughts.\n\nLink: https://institute.deepmind.com/essays/the-economics-of-intelligence/",
+   "date": 1793286254,
+   "media": [
+    {
+     "type": "video",
+     "src": "https://video.twimg.com/amplify_video/2115822005538697216/vid/avc1/1280x720/CWtQIm8HJkr0_oM_.mp4?tag=29",
+     "poster": "https://pbs.twimg.com/amplify_video_thumb/2115822005538697216/img/dNrsrdLsDNbrQAR4.jpg",
+     "ratio": 0.5625,
+     "duration": 20,
+     "gif": false
+    }
+   ],
+   "links": [
+    "https://institute.deepmind.com/essays/the-economics-of-intelligence/"
+   ]
+  },
+  {
+   "kind": "link",
+   "url": "https://institute.deepmind.com/essays/the-economics-of-intelligence/",
+   "domain": "institute.deepmind.com",
+   "title": "How and when does AGI transform the economy?",
+   "description": "Discover why solo AI benchmarks miss the big picture and how agent coordination thresholds reshape markets, wages, and organizations.",
+   "image": "https://lh3.googleusercontent.com/9HN-UTLrBXO4f1mW60wydtE8GjI94mPGC8NYkUGEeXMB9E8zBG4D64GEOUQomBrzwRuM1b05xhWKk0BEf090jj5SmjvmXWcnm3V6hxg55H46cVif3Q=w1200-h630-n-nu-rw",
+   "site": "DeepMind Institute"
+  }
+ ],
+ "article": {
+  "title": "الکس ایماس همراه رفقای کاردرستش شین لگ و اندرو کو توی گوگل دیپ‌مایند، یه مقاله سنگین و خفن دادن بیرون تا ببینن این هوش جامع مصنوعی (AGI) دقیقاً چطوری قراره دخل و خرج دنیا رو زیر و رو کنه",
+  "source_title": "I joined @GoogleDeepMind to develop a research program on the economics of AGI. Today, together with Andrew Koh (@andrewjkoh) and Shane…",
+  "body": [
+   "ببین رفیق، الکس ایماس همراه رفقای کاردرستش شین لگ و اندرو کو توی گوگل دیپ‌مایند، یه مقاله سنگین و خفن دادن بیرون تا ببینن این هوش جامع مصنوعی (AGI) دقیقاً چطوری قراره دخل و خرج دنیا رو زیر و رو کنه. حرف حسابشون اینه که با وجود این همه جهش خفن، هنوز اقتصاد تغییر اساسی نکرده چون زور واقعی زمانی آزاد می‌شه که این ایجنت‌ها علاوه بر مهارت‌های فردی مثل کدنویسی، بلد باشن با هم دیگه کار تیمی کنن و هماهنگ بشن. این داش‌های ما نشون دادن که اگه مهارت هماهنگی این ابزارها بالا بره، سقف‌های سنتی اندازه شرکت‌ها شکسته می‌شه و شکل اقتصاد کلاً به هم می‌ریزه. دست‌آخر هم مشخص کردن که اثر این زلزله بزرگ، قبل از اینکه توی آمار بیکاری یا تغییر شکل بازار معلوم بشه، اول از همه صاف می‌افته به جون دستمزدها."
+  ],
+  "why": "نشون می‌ده قدرت اصلی هوش مصنوعی توی هم‌کاری تیمی ایجنت‌هاست و اولین جایی هم که قرار نیست از دستش قسر دربره، حقوق و جیب شاغلینه.",
+  "tags": [
+   "گوگل",
+   "ایجنت"
+  ]
+ },
+ "updated": "2026-10-29T16:21:20+00:00"
+}
