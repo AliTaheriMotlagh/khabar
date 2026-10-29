@@ -12,7 +12,7 @@
   "site": "🧵 Thread • FxTwitter",
   "title": "Google Gemma (@googlegemma)",
   "description": "↩\n@googlegemma\nTyped Decision Engine for Agent Workflows\nForget slow autoregressive generation and fragile JSON parsing.\nThis fine-tune turns EmbeddingGemma 2 into a fast decision engine that evaluates workflow states (like agent traces or support tickets)…",
-  "image": "https://cdn4.telesco.pe/file/vH0OsomM14-wPzIsO4IjUNvwdXVA3J9flND85iXkiRMn0GXPXdn6X8kpbLZOz4xiOYNfA3H7h4336jZnSfv9OH2X4Q9zd3xR0eDZ4sYpzuoobVhTVZH5YkqygwbUBkQNq7fK_288kApisHOagzhOkH6SWdD63mWCutiEnbL7rMSL8lEiiE9d1kW7syqpBX5DMOEMApIoLzaohXyeghXz5sjXOlg9OlpjCFuLGC5Y5SLCyl_lRw4VbTu-vhysqbAocdM4z8SPv3_vNBXK1kmegJzJuIoaaa_3hinUrYf31Hdzmdbi8hOUv1N9Y-H7mGAuTYsI8FCA7EqeCKrD0MGNVQ.jpg"
+  "image": "https://cdn4.telesco.pe/file/fc1yR4fjEN3VCwq19wcUU94nvtJMd6ySGVF3-dO38XcXp749efMnsLId1_puLrV4AcCfeLuN45nNLMbvpQo_RZ7j0jXeSKX7kmGuF89TU96zdxfz7SrEqhiJfdmQzzGVdlEkQodLjRLKCfhZ7fjZaokrpfmF5AnchqSGCHMbxWE7OelN1arXrasbtHhTTIxHqOFmfE3ceP39E4VmTNz4ls5B_2eR626OGJR85bpoJOnERZQL0ExllglklHOMhhcDvFzjBA4ivJ5td3u_ZAiAD6TiwNJF_8JsK1cIFHwyZUENBIHlN18UUZWN8l1oQk5wiFtMwwOzkzFduf4IFKeQYw.jpg"
  },
  "gholam": {
   "text": "ببین رفیق، بچه‌های تیم جما با هنرنمایی مانو رومرو یه کار تر و تمیز راه انداختن و مدل EmbeddingGemma 2 رو جوری فاین‌تیون کردن که تبدیل شده به یه موتور تصمیم‌گیری برق‌آسا واسه ایجنت‌های هوش مصنوعی. داستان اینه که دیگه لازم نیست منتظر تولید متن‌های طولانی یا گیر کردن توی پارس کردن خروجی‌های شکننده جیسون بمونی؛ این مدل فسقلی فقط با یه پردازش سریع، وضعیت کارها و تیکت‌ها رو تحلیل می‌کنه و جواب‌های شسته‌رفته و تیپ‌بندی شده مثل امتیاز، درست/غلط یا گزینه‌ای تحویلت می‌ده. باحالی ماجرا اینجاست که با وجود داشتن پارامترهایی حدود صد برابر کمتر از یه مدل غول‌پیکر ۲۷ میلیاردی، نمره خفن ۷۶.۴ درصد گرفته و کلاً ۶ درصد با اون گنده‌ها فاصله داره.\n\nاهمیتش اینه که می‌تونی سیستم‌های ایجنتی رو بدون نیاز به سرورهای سنگین و با سرعت نور و هزینه خیلی کمتر، شدیداً دقیق و پایدار مدیریت کنی.",
@@ -76,5 +76,5 @@
    "ایجنت"
   ]
  },
- "updated": "2026-10-29T10:50:58+00:00"
+ "updated": "2026-10-29T17:43:29+00:00"
 }

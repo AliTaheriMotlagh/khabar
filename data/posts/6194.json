@@ -1,0 +1,60 @@
+{
+ "id": 6194,
+ "url": "https://t.me/dlmehr/6194",
+ "date": "2026-10-29T17:42:00+00:00",
+ "text": "https://fxtwitter.com/morqon/status/2115838856524120128?a=OhKA5sfY0kxX1IeTeF8&s=52",
+ "forwarded_from": null,
+ "digest": false,
+ "hash": "99cae1d87c47",
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/morqon/status/2115838856524120128?a=OhKA5sfY0kxX1IeTeF8&s=52",
+  "site": "FxTwitter",
+  "title": "morgan — (@morqon)",
+  "description": "sam: local inference is a terrible allocation of scarce resources\n“a lot of people want local inference, and somehow they assume that the problem is solved now because we have open-source models, we're going to be able to run them on our computers, and so…",
+  "image": null
+ },
+ "gholam": {
+  "text": "ببین رفیق، سم آلتمن دراومده گفته اینکه خیلیا فکر می‌کنن با اومدن مدل‌های متن‌باز می‌تونن همه‌چی رو لوکال روی سیستم شخصی خودشون بالا بیارن و بی‌نیاز از دیتاسنترها بشن، از بیخ یه اشتباه راهبردیه. حرف حسابش اینه که تو این روزگار که رم‌های پرسرعت و قطعات سخت‌افزاری تو کل دنیا نایابه، اصلاً عقلانی نیست هر کی یه خروار رم گرون‌قیمت رو سیستمش ببنده و فقط پنج درصد اوقات ازش کار بکشه. به عقیده اون، بهترین راه مدیریت این منابع محدود اینه که سخت‌افزارها توی سرورهای ابری متمرکز بمونن تا بشه از حداکثر ظرفیتشون به صورت شبانه‌روزی استفاده کرد.\n\nاهمیتش اینه که نشون میده لیدرهای هوش مصنوعی عملاً دارن آینده رو جوری رقم می‌زنن که کاربر به جای سیستم شخصی به کلود وابسته بمونه و کمبود قطعات رو بهونه‌ای برای کوبیدن پردازش لوکال می‌دونن.",
+  "date": "2026-10-29T17:42:16+00:00"
+ },
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/morqon/status/2115838856524120128",
+   "domain": "x.com",
+   "author": {
+    "name": "morgan —",
+    "handle": "morqon",
+    "avatar": "https://pbs.twimg.com/profile_images/1874095611563118592/IgVofQuu_200x200.jpg"
+   },
+   "text": "sam: local inference is a terrible allocation of scarce resources\n\n“a lot of people want local inference, and somehow they assume that the problem is solved now because we have open-source models, we're going to be able to run them on our computers, and so we're not going to need all the stuff in the data centre\n\nbut from a global allocation perspective, actually it's quite terrible to have everybody, like, have a bunch of the world's limited supply of DRAM sitting in their own computer and being used five percent of the time\n\nyou want maximum utilisation in the cloud if you're trying to deal with this very supply-constrained environment\n\nsomehow many people's intuition is the opposite of that”",
+   "date": 1793290268,
+   "media": [
+    {
+     "type": "video",
+     "src": "https://video.twimg.com/amplify_video/2115838725477253120/vid/avc1/1278x720/sF0Jroc9K7KUoA4B.mp4?tag=29",
+     "poster": "https://pbs.twimg.com/amplify_video_thumb/2115838725477253120/img/bMgZREkjDDSIxPZP.jpg",
+     "ratio": 0.5628,
+     "duration": 45.263,
+     "gif": false
+    }
+   ],
+   "links": []
+  }
+ ],
+ "article": {
+  "title": "سم آلتمن دراومده گفته اینکه خیلیا فکر می‌کنن با اومدن مدل‌های متن‌باز می‌تونن همه‌چی رو لوکال روی سیستم شخصی خودشون بالا بیارن و بی‌نیاز از دیتاسنترها بشن، از بیخ یه اشتباه راهبردیه",
+  "source_title": "sam: local inference is a terrible allocation of scarce resources",
+  "body": [
+   "ببین رفیق، سم آلتمن دراومده گفته اینکه خیلیا فکر می‌کنن با اومدن مدل‌های متن‌باز می‌تونن همه‌چی رو لوکال روی سیستم شخصی خودشون بالا بیارن و بی‌نیاز از دیتاسنترها بشن، از بیخ یه اشتباه راهبردیه. حرف حسابش اینه که تو این روزگار که رم‌های پرسرعت و قطعات سخت‌افزاری تو کل دنیا نایابه، اصلاً عقلانی نیست هر کی یه خروار رم گرون‌قیمت رو سیستمش ببنده و فقط پنج درصد اوقات ازش کار بکشه. به عقیده اون، بهترین راه مدیریت این منابع محدود اینه که سخت‌افزارها توی سرورهای ابری متمرکز بمونن تا بشه از حداکثر ظرفیتشون به صورت شبانه‌روزی استفاده کرد."
+  ],
+  "why": "نشون میده لیدرهای هوش مصنوعی عملاً دارن آینده رو جوری رقم می‌زنن که کاربر به جای سیستم شخصی به کلود وابسته بمونه و کمبود قطعات رو بهونه‌ای برای کوبیدن پردازش لوکال می‌دونن.",
+  "tags": [
+   "متن‌باز",
+   "اوپن‌ای‌آی",
+   "تراشه"
+  ]
+ },
+ "updated": "2026-10-29T17:43:27+00:00"
+}
