@@ -14,7 +14,10 @@
   "description": "BREAKING: ServiceNow stock, $NOW, collapses nearly -20% after posting weaker than expected Q3 earnings.",
   "image": "https://cdn4.telesco.pe/file/lYSb-W_zwreQc5U-mNvNTrXsy9wE5JNzUAgi6oY2BQDBoeb2P5853V2stfHJV-worDwBokBPsKzstIzpxtgUT-X4gk_lUGA714isrtCR_FO2aobCWDM5NTKNWPeUWK6_ZaiFqQw3_e_BtBTZjG_oDxf9SUsNjtcgvAxqKREFydv-ve6ftrrNKlZnzyKFXGhwvRRlE8rTwT88aJPwztWx1qQWYHDEw7Sv0d9sofMskyTrplrpSyNkCLRrWsjp15dpFc7pAbQTfl4SodwujkRgiYMrcGk1tH9Mx_QFE-0PFsF-iv19t1_mverb1Ho4O9_feXs9ezOnUh9OU2qK_TeLfA.jpg"
  },
- "gholam": null,
+ "gholam": {
+  "text": "ببین رفیق، غول نرم‌افزاری سرویس‌ناو (ServiceNow) با نماد NOW بدجوری توی بازار سهام زمین خورد و نزدیک ۲۰ درصد سقوط کرد. قضیه از این قراره که این شرکت گزارش مالی سه‌ماهه سومش رو داده بیرون و اعداد و ارقامش خیلی ضعیف‌تر از اون چیزی دراومده که تحلیل‌گرا انتظار داشتن. همین کارنامه ناامیدکننده باعث شد سهامدارا حساب پس بکشن و موج سنگینی از فروش راه بیفته تا قیمت سهمش این‌طور لوله بشه.\n\nاهمیتش اینه که وقتی یه شرکت بزرگ ابری و نرم‌افزاری این شکلی زمین می‌خوره، زنگ خطر رو برای کل سهام بخش فناوری و وال‌استریت به صدا درمیاره.",
+  "date": "2026-10-29T22:37:05+00:00"
+ },
  "links": [
   {
    "kind": "tweet",
@@ -38,13 +41,15 @@
   }
  ],
  "article": {
-  "title": "BREAKING: ServiceNow stock, $NOW, collapses nearly -20% after posting weaker than expected Q3 earnings.",
-  "source_title": null,
-  "body": [],
-  "why": null,
+  "title": "غول نرم‌افزاری سرویس‌ناو (ServiceNow) با نماد NOW بدجوری توی بازار سهام زمین خورد و نزدیک ۲۰ درصد سقوط کرد",
+  "source_title": "BREAKING: ServiceNow stock, $NOW, collapses nearly -20% after posting weaker than expected Q3 earnings.",
+  "body": [
+   "ببین رفیق، غول نرم‌افزاری سرویس‌ناو (ServiceNow) با نماد NOW بدجوری توی بازار سهام زمین خورد و نزدیک ۲۰ درصد سقوط کرد. قضیه از این قراره که این شرکت گزارش مالی سه‌ماهه سومش رو داده بیرون و اعداد و ارقامش خیلی ضعیف‌تر از اون چیزی دراومده که تحلیل‌گرا انتظار داشتن. همین کارنامه ناامیدکننده باعث شد سهامدارا حساب پس بکشن و موج سنگینی از فروش راه بیفته تا قیمت سهمش این‌طور لوله بشه."
+  ],
+  "why": "وقتی یه شرکت بزرگ ابری و نرم‌افزاری این شکلی زمین می‌خوره، زنگ خطر رو برای کل سهام بخش فناوری و وال‌استریت به صدا درمیاره.",
   "tags": [
    "کسب‌وکار"
   ]
  },
- "updated": "2026-10-29T22:37:22+00:00"
+ "updated": "2026-10-29T22:53:16+00:00"
 }
