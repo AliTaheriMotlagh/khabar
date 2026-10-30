@@ -1,0 +1,66 @@
+{
+ "id": 6207,
+ "url": "https://t.me/dlmehr/6207",
+ "date": "2026-10-30T03:43:09+00:00",
+ "text": "https://fxtwitter.com/binance/status/2115993361517891592?a=3aj3uQDjxO39UHzWt_k&s=52",
+ "forwarded_from": null,
+ "digest": false,
+ "hash": "467e5264c089",
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/binance/status/2115993361517891592?a=3aj3uQDjxO39UHzWt_k&s=52",
+  "site": "FxTwitter",
+  "title": "Binance (@binance)",
+  "description": "Binance's initial investigation suggests that the security incident may involve a compromised DevOps engineer’s laptop, which allowed an attacker to gain access to a service container and submit unauthorized withdrawal transactions. We have found no evidence…",
+  "image": "https://cdn4.telesco.pe/file/BT2xP5EgXjc2p4ayKalPT5Bj2CBP-JvkKOWLij8yrqU_ok-8k5RauWgrT-fosAxe-YJvnTvPeZ9_NFcPY4BE2mjgCzfeO-QWZYnURPFxt7W-fDoai3swOejPsUrgG8u7y-drrioOL4a_Jnwu0DfzNYHg7jp-Nf8NKIlD1Bl-VBnuDz0YcBO_WCsmNNgRniMsDPqQ1yWW_3KvqqrO1Q2LdTaQsWGIjkzy8j_1-HJPPYTTWIx6ldlbwwUBngmc2FwSAUw_aSTu5s8C8W4_2Dk8xhEvu3_LidU2Ys8WBGTL_FpLjRMK8uPDzFuPMER6gl-qRCvDvgl5clqUXplpMHwl-A.jpg"
+ },
+ "gholam": {
+  "text": "ببین رفیق، بایننس خبر داده که لپ‌تاپ یکی از مهندس‌های دواپسش لو رفته و همین قضیه پای نفوذگر رو باز کرده تا با دسترسی به کانتینرها، تراکنش‌های برداشت غیرمجاز ثبت کنه. رقم خسارت اصلاً شوخی‌بردار نیست و حرف از حدود ۶.۳ میلیارد دلاره، منتها تا الان با همکاری شبکه‌ها موفق شدن نزدیک ۳ میلیارد دلار از این دارایی‌ها رو آنچین فریز و قفل کنن. خوشبختانه کلیدهای خصوصی والت‌ها لو نرفته، ولی بایننس برای ردگیری هکر و محکم‌کاری، موقتاً واریز و برداشت‌ها رو متوقف کرده. از اون طرف هم دمشون گرم که قول دادن تمام خسارت رو از صندوق بیمه SAFU و دارایی خود شرکت جبران کنن تا آب تو دل کاربرا تکون نخوره.\n\nاهمیتش اینه که نشون می‌ده حتی بزرگ‌ترین صرافی دنیا هم ممکنه از خطای یه مهندس آسیب ببینه، اما نحوه جبران تمام خسارت از جیب خودشون می‌تونه جلوی وحشت عمومی و ریزش وحشتناک بازار رو بگیره.",
+  "date": "2026-10-30T03:43:28+00:00"
+ },
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/binance/status/2115993361517891592",
+   "domain": "x.com",
+   "author": {
+    "name": "Binance",
+    "handle": "binance",
+    "avatar": "https://pbs.twimg.com/profile_images/1940131561103347712/f5y2qENu_200x200.jpg"
+   },
+   "text": "Binance's initial investigation suggests that the security incident may involve a compromised DevOps engineer’s laptop, which allowed an attacker to gain access to a service container and submit unauthorized withdrawal transactions. We have found no evidence of any wallet private key leak. We will share a detailed technical post-mortem once the investigation is complete and the facts are fully verified.\n\nThe estimated total impact sits at around $6.3B. We have worked with blockchain partners to freeze affected assets, with ~$3 billion frozen on-chain so far.\nBinance will cover all losses from the SAFU fund and the company’s funds. User funds are safe. We will also publish an updated Proof of Reserves once the remediation is complete.\n\nAs an immediate precaution, Binance has:\n\n- temporarily suspended deposits and withdrawals while security checks are completed;\n- revoked the affected address authorisation;\n- engaged law enforcement and blockchain intelligence partners to trace and recover funds.\n\nOur teams are working around the clock to resolve this issue safely and thoroughly. We are working closely with our law enforcement partners to confirm the identity of these criminals and bring them to justice.\n\nPlease rely only on official Binance channels for updates. Please feel free to contact Binance Customer Support if you have any further questions.\n\nhttps://www.binance.com/en/support/announcement/detail/c5a8729a97ac486d963784d96c5642d7",
+   "date": 1793327105,
+   "media": [
+    {
+     "type": "image",
+     "src": "https://pbs.twimg.com/media/HV2EXppbwAEyxeq.jpg?name=orig",
+     "ratio": 1.0
+    }
+   ],
+   "links": [
+    "https://www.binance.com/en/support/announcement/detail/c5a8729a97ac486d963784d96c5642d7"
+   ]
+  },
+  {
+   "kind": "link",
+   "url": "https://www.binance.com/en/support/announcement/detail/c5a8729a97ac486d963784d96c5642d7",
+   "domain": "binance.com",
+   "title": null,
+   "description": null,
+   "image": null,
+   "site": "binance.com"
+  }
+ ],
+ "article": {
+  "title": "بایننس خبر داده که لپ‌تاپ یکی از مهندس‌های دواپسش لو رفته و همین قضیه پای نفوذگر رو باز کرده تا با دسترسی به کانتینرها، تراکنش‌های برداشت غیرمجاز ثبت کنه",
+  "source_title": "Binance's initial investigation suggests that the security incident may involve a compromised DevOps engineer’s laptop, which allowed an…",
+  "body": [
+   "ببین رفیق، بایننس خبر داده که لپ‌تاپ یکی از مهندس‌های دواپسش لو رفته و همین قضیه پای نفوذگر رو باز کرده تا با دسترسی به کانتینرها، تراکنش‌های برداشت غیرمجاز ثبت کنه. رقم خسارت اصلاً شوخی‌بردار نیست و حرف از حدود ۶.۳ میلیارد دلاره، منتها تا الان با همکاری شبکه‌ها موفق شدن نزدیک ۳ میلیارد دلار از این دارایی‌ها رو آنچین فریز و قفل کنن. خوشبختانه کلیدهای خصوصی والت‌ها لو نرفته، ولی بایننس برای ردگیری هکر و محکم‌کاری، موقتاً واریز و برداشت‌ها رو متوقف کرده. از اون طرف هم دمشون گرم که قول دادن تمام خسارت رو از صندوق بیمه SAFU و دارایی خود شرکت جبران کنن تا آب تو دل کاربرا تکون نخوره."
+  ],
+  "why": "نشون می‌ده حتی بزرگ‌ترین صرافی دنیا هم ممکنه از خطای یه مهندس آسیب ببینه، اما نحوه جبران تمام خسارت از جیب خودشون می‌تونه جلوی وحشت عمومی و ریزش وحشتناک بازار رو بگیره.",
+  "tags": [
+   "امنیت"
+  ]
+ },
+ "updated": "2026-10-30T03:47:20+00:00"
+}
