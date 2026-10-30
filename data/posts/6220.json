@@ -1,0 +1,59 @@
+{
+ "id": 6220,
+ "url": "https://t.me/dlmehr/6220",
+ "date": "2026-10-30T18:04:37+00:00",
+ "text": "https://fxtwitter.com/sundarpichai/status/2116214866444943853?a=ggz-hR6d3OjuYmW2hTg&s=52",
+ "forwarded_from": null,
+ "digest": false,
+ "hash": "8a80ac3ac81d",
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/sundarpichai/status/2116214866444943853?a=ggz-hR6d3OjuYmW2hTg&s=52",
+  "site": "FxTwitter",
+  "title": "Sundar Pichai (@sundarpichai)",
+  "description": "A ‘hello world’ milestone for Project Suncatcher\n🚀\nAfter launching our prototype satellite a few weeks ago, we’ve now successfully sent a command up to orbit, booted up the TPU, ran the prompt, and received our first complete response back on earth - a haiku!",
+  "image": null
+ },
+ "gholam": {
+  "text": "ببین رفیق، ساندار پیچای رییس گوگل خبر داده که پروژه خفنشون به اسم «سان‌کچر» به یه نقطه عطف اساسی رسیده. قضیه از این قراره که چند هفته بعد از پرتاب ماهواره آزمایشیشون به فضا، موفق شدن فرمانی از زمین صادر کنن، پردازنده هوش مصنوعی معروفشون یعنی TPU رو توی مدار روشن کنن و یه پرامپت به خوردش بدن. هوش مصنوعی هم اون بالا پردازش رو انجام داده و اولین جواب کاملش رو که یه شعر کوتاه هایکو بوده، تر و تمیز پس فرستاده به زمین.\n\nاهمیتش اینه که ثابت کرد می‌شه سخت‌افزارهای سنگین هوش مصنوعی رو تو شرایط سخت فضا هم به‌کار انداخت و پردازش ابری رو از روی زمین به دل مدار برد.",
+  "date": "2026-10-30T18:04:54+00:00"
+ },
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/sundarpichai/status/2116214866444943853",
+   "domain": "x.com",
+   "author": {
+    "name": "Sundar Pichai",
+    "handle": "sundarpichai",
+    "avatar": "https://pbs.twimg.com/profile_images/2051799620062429184/AL8CoAUG_200x200.jpg"
+   },
+   "text": "A ‘hello world’ milestone for Project Suncatcher 🚀\n\nAfter launching our prototype satellite a few weeks ago, we’ve now successfully sent a command up to orbit, booted up the TPU, ran the prompt, and received our first complete response back on earth - a haiku!",
+   "date": 1793379916,
+   "media": [
+    {
+     "type": "video",
+     "src": "https://video.twimg.com/amplify_video/2116214727835828224/vid/avc1/1280x720/zG1J8hKWLBVeO2Wl.mp4?tag=29",
+     "poster": "https://pbs.twimg.com/amplify_video_thumb/2116214727835828224/img/b4pQhbjRd5EDKtkl.jpg",
+     "ratio": 0.5625,
+     "duration": 16.021,
+     "gif": false
+    }
+   ],
+   "links": []
+  }
+ ],
+ "article": {
+  "title": "ساندار پیچای رییس گوگل خبر داده که پروژه خفنشون به اسم «سان‌کچر» به یه نقطه عطف اساسی رسیده",
+  "source_title": "A ‘hello world’ milestone for Project Suncatcher 🚀",
+  "body": [
+   "ببین رفیق، ساندار پیچای رییس گوگل خبر داده که پروژه خفنشون به اسم «سان‌کچر» به یه نقطه عطف اساسی رسیده. قضیه از این قراره که چند هفته بعد از پرتاب ماهواره آزمایشیشون به فضا، موفق شدن فرمانی از زمین صادر کنن، پردازنده هوش مصنوعی معروفشون یعنی TPU رو توی مدار روشن کنن و یه پرامپت به خوردش بدن. هوش مصنوعی هم اون بالا پردازش رو انجام داده و اولین جواب کاملش رو که یه شعر کوتاه هایکو بوده، تر و تمیز پس فرستاده به زمین."
+  ],
+  "why": "ثابت کرد می‌شه سخت‌افزارهای سنگین هوش مصنوعی رو تو شرایط سخت فضا هم به‌کار انداخت و پردازش ابری رو از روی زمین به دل مدار برد.",
+  "tags": [
+   "گوگل",
+   "فضا"
+  ]
+ },
+ "updated": "2026-10-30T18:08:25+00:00"
+}
