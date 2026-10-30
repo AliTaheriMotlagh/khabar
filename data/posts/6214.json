@@ -1,0 +1,58 @@
+{
+ "id": 6214,
+ "url": "https://t.me/dlmehr/6214",
+ "date": "2026-10-30T15:06:05+00:00",
+ "text": "https://fxtwitter.com/alexksendzovsky/status/2116153410101944352?a=6Z8tWLcNRsbtGgUMB_M&s=52",
+ "forwarded_from": null,
+ "digest": false,
+ "hash": "10044c12a903",
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/alexksendzovsky/status/2116153410101944352?a=6Z8tWLcNRsbtGgUMB_M&s=52",
+  "site": "🧵 Thread • FxTwitter",
+  "title": "Alex Ksendzovsky (@AlexKsendzovsky)",
+  "description": "today, we introduce a little mischief to the world.\nfor four years, we’ve been brewing real brain cells on electrodes to understand how they compute. now, we’ve turned those discoveries into a video model anyone can use.\nfrom 0.5¢ a second, mischief 1 is…",
+  "image": null
+ },
+ "gholam": {
+  "text": "رفیق، قضیه حسابی علمی‌تخیلی شده و رسماً وارد فاز بایوکامپیوتر شدیم؛ قضیه از این قراره که یه پژوهشگری به اسم الکس کسندزوفسکی اعلام کرده بعد از چهار سال کار کردن روی کشت سلول‌های واقعی مغز روی الکترودها، بالاخره یه مدل هوش مصنوعی تبدیل عکس به ویدیو به اسم mischief 1 ساختن. این رفقا با فهمیدن نحوه پردازش این سلول‌ها مدلی دادن بیرون که حداقل ۵ برابر سریع‌تره و با هزینه عجیب‌غریبِ فقط نیم سنت به ازای هر ثانیه، شده ارزون‌ترین مدل ویدیویی روی پلتفرم‌هایی مثل OpenRouter و fal، تازه قراره به مارکت‌پلیس آمازون هم بیاد. خلاصه نشون دادن که ترکیب زیست‌شناسی و کامپیوتر دیگه توهم نیست و قشنگ تجاری و وارد بازار شده.\n\nاهمیتش اینه که نشون میده استفاده از سلول‌های بیولوژیکی واقعی برای پردازش کامپیوتری شوخی نبوده و حالا هوش مصنوعی رو به‌شدت سریع‌تر و خیلی ارزون‌تر کرده.",
+  "date": "2026-10-30T15:06:19+00:00"
+ },
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/AlexKsendzovsky/status/2116153410101944352",
+   "domain": "x.com",
+   "author": {
+    "name": "Alex Ksendzovsky",
+    "handle": "AlexKsendzovsky",
+    "avatar": "https://pbs.twimg.com/profile_images/2094956625916559360/eVJg4Iph_200x200.jpg"
+   },
+   "text": "today, we introduce a little mischief to the world.\n\nfor four years, we’ve been brewing real brain cells on electrodes to understand how they compute. now, we’ve turned those discoveries into a video model anyone can use.\n\nfrom 0.5¢ a second, mischief 1 is at least 5x faster than its base and the cheapest image-to-video model on @fal and @OpenRouter. soon to be on @awscloud marketplace.\n\nit’s not a delusion anymore. biocompute is real, commercial and this is just the beginning.\n\nhappy halloween.",
+   "date": 1793365263,
+   "media": [
+    {
+     "type": "video",
+     "src": "https://video.twimg.com/amplify_video/2116153358943981568/vid/avc1/1280x720/FPKSAvUvuGsl5mp7.mp4?tag=29",
+     "poster": "https://pbs.twimg.com/amplify_video_thumb/2116153358943981568/img/I4G-jGHuZaYgqg6H.jpg",
+     "ratio": 0.5625,
+     "duration": 44.736,
+     "gif": false
+    }
+   ],
+   "links": []
+  }
+ ],
+ "article": {
+  "title": "قضیه حسابی علمی‌تخیلی شده و رسماً وارد فاز بایوکامپیوتر شدیم",
+  "source_title": "today, we introduce a little mischief to the world.",
+  "body": [
+   "رفیق، قضیه حسابی علمی‌تخیلی شده و رسماً وارد فاز بایوکامپیوتر شدیم؛ قضیه از این قراره که یه پژوهشگری به اسم الکس کسندزوفسکی اعلام کرده بعد از چهار سال کار کردن روی کشت سلول‌های واقعی مغز روی الکترودها، بالاخره یه مدل هوش مصنوعی تبدیل عکس به ویدیو به اسم mischief 1 ساختن. این رفقا با فهمیدن نحوه پردازش این سلول‌ها مدلی دادن بیرون که حداقل ۵ برابر سریع‌تره و با هزینه عجیب‌غریبِ فقط نیم سنت به ازای هر ثانیه، شده ارزون‌ترین مدل ویدیویی روی پلتفرم‌هایی مثل OpenRouter و fal، تازه قراره به مارکت‌پلیس آمازون هم بیاد. خلاصه نشون دادن که ترکیب زیست‌شناسی و کامپیوتر دیگه توهم نیست و قشنگ تجاری و وارد بازار شده."
+  ],
+  "why": "نشون میده استفاده از سلول‌های بیولوژیکی واقعی برای پردازش کامپیوتری شوخی نبوده و حالا هوش مصنوعی رو به‌شدت سریع‌تر و خیلی ارزون‌تر کرده.",
+  "tags": [
+   "تصویر و ویدیو"
+  ]
+ },
+ "updated": "2026-10-30T15:10:28+00:00"
+}
