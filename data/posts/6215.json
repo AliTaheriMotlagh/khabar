@@ -1,0 +1,51 @@
+{
+ "id": 6215,
+ "url": "https://t.me/dlmehr/6215",
+ "date": "2026-10-30T16:33:22+00:00",
+ "text": "https://openrouter.ai/blog/announcements/how-we-rebuilt-provider-routing/",
+ "forwarded_from": "Hossein Zakariaee",
+ "digest": false,
+ "hash": "b16261ecf0d3",
+ "media": [],
+ "preview": {
+  "url": "https://openrouter.ai/blog/announcements/how-we-rebuilt-provider-routing",
+  "site": "OpenRouter Blog",
+  "title": "How OpenRouter rebuilt provider routing for better, faster inference",
+  "description": "OpenRouter's new default provider routing scores each provider on effective price, throughput, reliability, availability, and output quality for every request instead of ranking mostly by prompt token price. Measured with a switchback experiment against the…",
+  "image": "https://cdn4.telesco.pe/file/JgGug9dVlOo3kzwnITeM5xQMVmUi-ggf7MpitECaSbgbqL_F08P3GcL99IcUm8U64i1LdktNiAZddqbqjwgppuwjz0r28fDrGpNi89eQaVgf5n473IXBrr4LtPYbQiizc4mREPqqHAMyHF7R7EUK3BOLJwWPCecO2ooOxcsPFivxiccXR3IFfvW0eZNjymFG_BuP12nat9cyU4U0GMbIOKEhR7oaRyfr9WDrKJeI4sQSqeT1qqC97ksAdfc2PIsnq4yMi-_sIWOoVwROLM6NOId99hCs1j7Jcrn1kxWDj_GhaZhSatbg3lc12jN8Vgi_HZ0vPlCt8Y8j1FadK4sJ0A.jpg"
+ },
+ "gholam": {
+  "text": "ببین رفیق، بچه‌های اوپن‌روتر سیستم مسیریابی درخواست‌هاشون رو از بیخ و بن بازنویسی کردن؛ قدیما ملاک اصلی فقط ارزون‌تر بودن پرومپت بود که باعث می‌شد سرویس‌های کند و پر از خطا ترافیک بگیرن و پرووایدرها هم دست به قیمت‌سازی عجیب بزنن. تو الگوریتم جدید، فرمول هوشمندی سوار کردن که هم‌زمان قیمت واقعی، سرعت تولید اولین توکن، پهنای باند، نرخ خطای سرور و کیفیت خروجی رو می‌سنجه و بار رو سمت اونی می‌فرسته که بیشترین ارزش رو بده. نتیجه آزمایش رسمی روی ۲۴ میلیون درخواست هم نشون داد خطاهای ظرفیت یا همون ۴۲۹ معروف حدود ۴۶ درصد کمتر شده و سرعت و حجم پاسخ‌دهی نزدیک ۱۷ درصد ارتقا پیدا کرده، در حالی که هزینه نهایی فقط ۶ درصد تکون خورده. کار قشنگشون هم اینه که برای استفاده از این سیستم نو به هیچ تغییری تو کد نیاز نیست، هرچند اگه یکی هنوزم دنبال ارزون‌ترین گزینه باشه، می‌تونه دستی روی حالت قیمتی فیلترش کنه.\n\nچرا مهمه؟ چون توی هوش مصنوعی ارزونیِ صرف به درد لای جرز می‌خوره و با این سیستم جدید، برنامه‌ها و بات‌هات بدون اینکه دست به سیاه و سفید بزنی خیلی سریع‌تر، نرم‌تر و با خطای به مراتب کمتری کار می‌کنن.",
+  "date": "2026-10-30T16:33:49+00:00"
+ },
+ "links": [
+  {
+   "kind": "link",
+   "url": "https://openrouter.ai/blog/announcements/how-we-rebuilt-provider-routing/",
+   "domain": "openrouter.ai",
+   "title": "How OpenRouter rebuilt provider routing for better, faster inference",
+   "description": "OpenRouter's new default provider routing scores each provider on effective price, throughput, reliability, availability, and output quality for every request instead of ranking mostly by prompt token price. Measured with a switchback experiment against the old router.",
+   "image": "https://openrouter.ai/blog/images/new-provider-routing.png",
+   "site": "OpenRouter Blog"
+  },
+  {
+   "kind": "link",
+   "url": "https://openrouter.ai/blog/announcements/how-we-rebuilt-provider-routing/",
+   "domain": "openrouter.ai",
+   "title": "How OpenRouter rebuilt provider routing for better, faster inference",
+   "description": "OpenRouter's new default provider routing scores each provider on effective price, throughput, reliability, availability, and output quality for every request instead of ranking mostly by prompt token price. Measured with a switchback experiment against the old router.",
+   "image": "https://openrouter.ai/blog/images/new-provider-routing.png",
+   "site": "OpenRouter Blog"
+  }
+ ],
+ "article": {
+  "title": "بچه‌های اوپن‌روتر سیستم مسیریابی درخواست‌هاشون رو از بیخ و بن بازنویسی کردن",
+  "source_title": "How OpenRouter rebuilt provider routing for better, faster inference",
+  "body": [
+   "ببین رفیق، بچه‌های اوپن‌روتر سیستم مسیریابی درخواست‌هاشون رو از بیخ و بن بازنویسی کردن؛ قدیما ملاک اصلی فقط ارزون‌تر بودن پرومپت بود که باعث می‌شد سرویس‌های کند و پر از خطا ترافیک بگیرن و پرووایدرها هم دست به قیمت‌سازی عجیب بزنن. تو الگوریتم جدید، فرمول هوشمندی سوار کردن که هم‌زمان قیمت واقعی، سرعت تولید اولین توکن، پهنای باند، نرخ خطای سرور و کیفیت خروجی رو می‌سنجه و بار رو سمت اونی می‌فرسته که بیشترین ارزش رو بده. نتیجه آزمایش رسمی روی ۲۴ میلیون درخواست هم نشون داد خطاهای ظرفیت یا همون ۴۲۹ معروف حدود ۴۶ درصد کمتر شده و سرعت و حجم پاسخ‌دهی نزدیک ۱۷ درصد ارتقا پیدا کرده، در حالی که هزینه نهایی فقط ۶ درصد تکون خورده. کار قشنگشون هم اینه که برای استفاده از این سیستم نو به هیچ تغییری تو کد نیاز نیست، هرچند اگه یکی هنوزم دنبال ارزون‌ترین گزینه باشه، می‌تونه دستی روی حالت قیمتی فیلترش کنه."
+  ],
+  "why": "چون توی هوش مصنوعی ارزونیِ صرف به درد لای جرز می‌خوره و با این سیستم جدید، برنامه‌ها و بات‌هات بدون اینکه دست به سیاه و سفید بزنی خیلی سریع‌تر، نرم‌تر و با خطای به مراتب کمتری کار می‌کنن.",
+  "tags": []
+ },
+ "updated": "2026-10-30T16:37:23+00:00"
+}
