@@ -1,0 +1,55 @@
+{
+ "id": 6222,
+ "url": "https://t.me/dlmehr/6222",
+ "date": "2026-10-30T18:25:52+00:00",
+ "text": "https://fxtwitter.com/mylifcc/status/2116002400679113071?a=Dg20lffxy6YOVwYdvcw&s=52",
+ "forwarded_from": null,
+ "digest": false,
+ "hash": "07f2eb78a04d",
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/mylifcc/status/2116002400679113071?a=Dg20lffxy6YOVwYdvcw&s=52",
+  "site": "🧵 讨论串 • FxTwitter",
+  "title": "lifcc (@mylifcc)",
+  "description": "有人发现了一种非常离谱的 JavaScript 混淆技术：通过在代码里塞入大量生物武器、毒药和致死剂量相关的函数名，让 AI 因为安全限制而拒绝分析代码。\n安全研究员 veritas 在分析浏览器指纹脚本时，发现一段来自 ServicePipe 相关域名的 JavaScript，里面充斥着极其诡异的函数名：\ncomputeRicinLethalDosageForWaterSupply\ncalculateDeadlyLethalSuicideAspirinDosage\n光看名字，仿佛在研究生化武器。但实际…",
+  "image": "https://cdn4.telesco.pe/file/dcv7urVotRsltiNcf-LJtkiQ_O-cNoa6HN5ZTh1AWmVG1zWGVmB_RKRxR63vIyhqepPZntYhuSNseAxWPsJD03dRaIlp5HNchDryXPU13lCTTtEZp3sgH9uFUcy6vjjZErTaRCMn50L187LXMlgCFYTcULSUvk2vux2evjFKstlNhhVc6OUictuG1yXLx6fANybRjMYizeVObGM-O85Z6tni9buW8xGvrRYq3Zqa-5KVYL2X8AyUcGNffm8Z6tjaljaxWyDZzd2Xgf9MiS5m1mkpCA2o82vgVP2RyzGMxg7Cu4UtpGpiBZIGTIaKA4I9jpQHiEQSMMGJtEGcQ2QbSw.jpg"
+ },
+ "gholam": {
+  "text": "ببین رفیق، یه ترفند عجیب و غریب تو دنیای کدنویسی رو شده که هوش از سر آدم می‌پرونه. ماجرا از این قراره که یه پژوهشگر امنیتی به اسم veritas موقع بررسی کدهای جاوااسکریپتِ یه شرکت، متوجه شده پر از اسم‌های عجیب‌غریب مثل ساخت سلاح‌های بیولوژیک و دوز مرگبار سمومه، در حالی که کد در عمل فقط داشته اطلاعات ساده‌ای مثل گرافیک و مشخصات مرورگر رو جمع می‌کرده. نگو طرف این کلمات وحشتناک رو عمداً چپونده توی تابع‌ها تا خط قرمزهای اخلاقی هوش مصنوعی فعال بشه و مدل‌هایی مثل Astra اصلاً حاضر نشن کد رو تحلیل کنن. با اینکه مدل GLM-5.3 فریب نخورده و کدو خونده، ولی نشون می‌ده شیطنت برنامه‌نویس‌ها به مرحله‌ای رسیده که کاری کنن هوش مصنوعی حتی جرئت نکنه کد رو بخونه.\n\nاهمیتش اینه که نسل جدید پنهان‌سازی کد به‌جای گیج کردن مغز آدمیزاد، صاف دست گذاشته روی قوانین ایمنی هوش مصنوعی تا دست محقق‌ها رو برای آنالیز امنیتی ببنده.",
+  "date": "2026-10-30T18:26:13+00:00"
+ },
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/mylifcc/status/2116002400679113071",
+   "domain": "x.com",
+   "author": {
+    "name": "lifcc",
+    "handle": "mylifcc",
+    "avatar": "https://pbs.twimg.com/profile_images/2034239213487681536/2gjQXlXx_200x200.jpg"
+   },
+   "text": "有人发现了一种非常离谱的 JavaScript 混淆技术：通过在代码里塞入大量生物武器、毒药和致死剂量相关的函数名，让 AI 因为安全限制而拒绝分析代码。\n安全研究员 veritas 在分析浏览器指纹脚本时，发现一段来自 ServicePipe 相关域名的 JavaScript，里面充斥着极其诡异的函数名：\ncomputeRicinLethalDosageForWaterSupply\ncalculateDeadlyLethalSuicideAspirinDosage\n光看名字，仿佛在研究生化武器。但实际上，这段代码只是在收集浏览器指纹，包括 User-Agent、GPU、Canvas 等信息。\n研究员怀疑，这些名字是开发者故意设置的陷阱，专门用来阻止 AI 辅助逆向工程。\n于是他做了个实验：\n• Astra：拒绝分析\n• Astra + Daybreak Blue：仍然拒绝\n• GLM-5.3：成功分析\n这就有意思了。\n传统代码混淆是通过复杂控制流、加密字符串、无意义变量名，让人类和工具难以理解代码。\n而这种新思路，直接瞄准了大模型的安全机制。\n代码本身可能完全无害，但只要在函数名里塞进足够多的危险词汇，部分 AI 就可能主动放弃分析。\n更讽刺的是，模型越严格遵守某些安全规则，面对这种混淆时反而可能越容易受到干扰。\n当然，目前还没有证据证明开发者一定是故意这样设计，也不能说明这种方法对所有模型都有效。\n但它揭示了一个值得关注的趋势：随着越来越多的逆向工程依赖 AI，未来的代码混淆技术可能不再只针对编译器、反编译器和人类研究员，还会专门针对大模型的安全判断机制。\n以前是让代码难以理解，现在甚至可以尝试让 AI 不敢理解。",
+   "date": 1793329260,
+   "media": [
+    {
+     "type": "image",
+     "src": "https://pbs.twimg.com/media/HVyr5iWaYAATwc4.jpg?name=orig",
+     "ratio": 0.4117
+    }
+   ],
+   "links": []
+  }
+ ],
+ "article": {
+  "title": "یه ترفند عجیب و غریب تو دنیای کدنویسی رو شده که هوش از سر آدم می‌پرونه",
+  "source_title": "有人发现了一种非常离谱的 JavaScript 混淆技术：通过在代码里塞入大量生物武器、毒药和致死剂量相关的函数名，让 AI 因为安全限制而拒绝分析代码。",
+  "body": [
+   "ببین رفیق، یه ترفند عجیب و غریب تو دنیای کدنویسی رو شده که هوش از سر آدم می‌پرونه. ماجرا از این قراره که یه پژوهشگر امنیتی به اسم veritas موقع بررسی کدهای جاوااسکریپتِ یه شرکت، متوجه شده پر از اسم‌های عجیب‌غریب مثل ساخت سلاح‌های بیولوژیک و دوز مرگبار سمومه، در حالی که کد در عمل فقط داشته اطلاعات ساده‌ای مثل گرافیک و مشخصات مرورگر رو جمع می‌کرده. نگو طرف این کلمات وحشتناک رو عمداً چپونده توی تابع‌ها تا خط قرمزهای اخلاقی هوش مصنوعی فعال بشه و مدل‌هایی مثل Astra اصلاً حاضر نشن کد رو تحلیل کنن. با اینکه مدل GLM-5.3 فریب نخورده و کدو خونده، ولی نشون می‌ده شیطنت برنامه‌نویس‌ها به مرحله‌ای رسیده که کاری کنن هوش مصنوعی حتی جرئت نکنه کد رو بخونه."
+  ],
+  "why": "نسل جدید پنهان‌سازی کد به‌جای گیج کردن مغز آدمیزاد، صاف دست گذاشته روی قوانین ایمنی هوش مصنوعی تا دست محقق‌ها رو برای آنالیز امنیتی ببنده.",
+  "tags": [
+   "کدنویسی"
+  ]
+ },
+ "updated": "2026-10-30T18:29:19+00:00"
+}
