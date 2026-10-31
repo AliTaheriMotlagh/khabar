@@ -11,11 +11,11 @@
 // no AudioEncoder) the canvas is recorded as it plays (MediaRecorder), which takes as long as the video. Pictures go
 // through the page's own addresses (/api/img first), fetched, so the canvas stays readable.
 import { AudioBufferSource, BufferTarget, CanvasSource, Mp4OutputFormat, Output, canEncodeVideo, getFirstEncodableAudioCodec } from 'mediabunny';
-import { $, fmtNum, toast } from './core';
+import { $, fmtNum, tapAudio, toast } from './core';
 import { SITE } from '../site';
 import { align, pauseAfter, weight, words } from '../lib/align';
 import { lineAudio, persianVoice, recordableVoice } from './speech';
-import { voiceSupported } from './voice';
+import { chosenVoice, voiceSupported } from './voice';
 import { openVoice } from './voice-offer';
 
 const W = 1280;
@@ -704,12 +704,23 @@ async function record(v: Video, canvas: HTMLCanvasElement, draw: (t: number) => 
 const d = $<HTMLDialogElement>('#video-sheet')!;
 let run: AbortController | null = null;
 let url = '';
+/** The last video made, shown again when «ویدیو» is tapped for the same story with the same voice. */
+let made: { key: string; show: () => void } | null = null;
 const close = () => d.close();
 $('[data-close]', d)!.addEventListener('click', close);
 $('[data-vs-cancel]', d)!.addEventListener('click', close);
-d.addEventListener('click', (e) => e.target === d && close());
-// Closing stops a video being made.
+// While a video is being made (data-busy) a tap beside the sheet (app.ts closes any other dialog then), Escape or
+// Android's back don't throw it away: only «لغو» and ✕ do.
+const stillMaking = () => toast('ویدیو در حال ساخته شدن است؛ برای لغو، «لغو» را بزنید');
+d.addEventListener('click', (e) => e.target === d && d.hasAttribute('data-busy') && stillMaking());
+d.addEventListener('cancel', (e) => {
+  if (!d.hasAttribute('data-busy')) return;
+  e.preventDefault();
+  stillMaking();
+});
+// Closing stops a video being made — unless the sheet was opened again before this (queued) event came.
 d.addEventListener('close', () => {
+  if (d.open) return;
   run?.abort();
   $<HTMLVideoElement>('[data-vs-video]', d)!.pause();
 });
@@ -737,16 +748,21 @@ export async function makeVideo(href: string, ac: AudioContext | null = null, as
   cancel.textContent = 'لغو';
   note.textContent = '';
   say('آماده کردن خبر…', 0);
+  d.toggleAttribute('data-busy', true);
   if (!d.open) d.showModal();
+  let handedOn = false; // `ac` goes on to the next try, after the voice sheet
   try {
     await persianVoice();
     const engine = recordableVoice();
     // The video's voice has to be one the page can keep: offer the download, as «گوش دادن» does, and come back.
     if (!engine && voiceSupported() && !asked) {
+      handedOn = true;
       d.close();
       toast('برای روایت ویدیو یک صدای فارسی لازم است');
       return void openVoice(() => makeVideo(href, ac, true));
     }
+    const key = `${href} ${engine} ${chosenVoice()}`;
+    if (made?.key === key) return made.show();
     const card = (await fetch(`${href}card.json`).then((r) => (r.ok ? r.json() : Promise.reject(new Error(String(r.status)))))) as Card;
     await Promise.all([800, 500, 900].map((w) => document.fonts.load(`${w} 40px ${FONT}`))).catch(() => {});
     say('آوردن تصویرها…', 0.03);
@@ -769,12 +785,17 @@ export async function makeVideo(href: string, ac: AudioContext | null = null, as
       blob = await record(video, canvas, draw, frames, stop, ac);
     }
     if (stop.aborted) return;
-    done(card, blob, video.total, !video.sound);
+    made = { key, show: done.bind(null, card, blob, video.total, !video.sound) };
+    made.show();
   } catch (e) {
     if (stop.aborted || (e as Error).name === 'AbortError') return;
     console.error(e);
     say('ساختن ویدیو ممکن نشد — دوباره امتحان کنید.', 0);
     toast('ساختن ویدیو ممکن نشد');
+  } finally {
+    if (run === mine) d.removeAttribute('data-busy');
+    // iOS keeps only a few audio contexts alive: one per video would soon leave none.
+    if (!handedOn) ac?.close().catch(() => {});
   }
 }
 
@@ -792,7 +813,8 @@ function done(card: Card, blob: Blob, seconds: number, silent: boolean) {
   $('[data-vs-silent]', d)!.hidden = !silent || !voiceSupported();
   $('[data-vs-voice]', d)!.onclick = () => {
     d.close();
-    openVoice(() => makeVideo(card.href, null, true));
+    // Called in the voice sheet's tap: the remade video's sound can be recorded on iOS too.
+    openVoice(() => makeVideo(card.href, tapAudio(), true));
   };
   const save = $<HTMLAnchorElement>('[data-vs-save]', d)!;
   save.href = url;

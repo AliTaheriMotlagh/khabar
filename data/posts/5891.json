@@ -27,7 +27,7 @@
    "author": {
     "name": "unusual_whales",
     "handle": "unusual_whales",
-    "avatar": "media/avatars/unusual_whales.webp"
+    "avatar": "https://pbs.twimg.com/profile_images/1714107328134516736/dLZGJPm7_200x200.png"
    },
    "text": "BREAKING: Anthropic is now down over 10% in the last month, wiping more than $200 billion from its implied valuation.  \n\nAnthropic’s pre-IPO perpetual has fallen below $2 trillion on Liquid as institutional investors get a closer look at the company’s financials.",
    "lang": "en",
@@ -41,10 +41,8 @@
    "media": [
     {
      "type": "image",
-     "src": "media/5891/l0-0.webp",
-     "width": 1280,
-     "height": 956,
-     "remote": "https://pbs.twimg.com/media/HUm1JyOa0AE_mYZ.jpg?name=orig"
+     "src": "https://pbs.twimg.com/media/HUm1JyOa0AE_mYZ.jpg?name=orig",
+     "ratio": 0.7469
     }
    ],
    "links": [],
@@ -52,7 +50,7 @@
     "author": {
      "name": "Liquid",
      "handle": "liquidtrading",
-     "avatar": "media/avatars/liquidtrading.webp"
+     "avatar": "https://pbs.twimg.com/profile_images/1980705287322357760/HhxSRvbc_200x200.jpg"
     },
     "text": "JUST IN: Anthropic Pre-IPO perpetual falls below $2T as the company opens up its financials to institutional investors",
     "lang": "en",
@@ -66,17 +64,13 @@
     "media": [
      {
       "type": "image",
-      "src": "media/5891/l0q-0.webp",
-      "width": 1400,
-      "height": 934,
-      "remote": "https://pbs.twimg.com/media/HUmkENUWIAEqpyA.jpg?name=orig"
+      "src": "https://pbs.twimg.com/media/HUmkENUWIAEqpyA.jpg?name=orig",
+      "ratio": 0.667
      },
      {
       "type": "image",
-      "src": "media/5891/l0q-1.webp",
-      "width": 1320,
-      "height": 1271,
-      "remote": "https://pbs.twimg.com/media/HUmkENVWMAAoojq.jpg?name=orig"
+      "src": "https://pbs.twimg.com/media/HUmkENVWMAAoojq.jpg?name=orig",
+      "ratio": 0.9629
      }
     ],
     "links": []

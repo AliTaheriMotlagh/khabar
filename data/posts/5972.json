@@ -27,7 +27,7 @@
    "author": {
     "name": "Nobody",
     "handle": "SamadiPour",
-    "avatar": "media/avatars/samadipour.webp"
+    "avatar": "https://pbs.twimg.com/profile_images/1152294232318545920/dqvUPb7r_200x200.jpg"
    },
    "text": "بازی جدیدم آماده‌ست 🕳️\nاین ۲ ۳ روز سرگرم ساختنش بودم که بالاخره تموم شد.\nاوپن سورس هست و اگر پیشنهاد یا باگی دیدید، میتونید ریپورت کنید.\nپیشنهاد میکنم رو دسکتاپ بازی کنید.\n\nلینک بازی در مرورگر:\nhttps://samadipour.github.io/snack-hole-game/",
    "lang": "fa",
@@ -41,13 +41,11 @@
    "media": [
     {
      "type": "video",
-     "src": "media/5972/l0-0.mp4",
-     "poster": "media/5972/l0-0-poster.webp",
-     "width": 1920,
-     "height": 1080,
+     "src": "https://video.twimg.com/amplify_video/2112127433251938304/vid/avc1/1280x720/QaD_8mulHljM6Pgn.mp4?tag=14",
+     "poster": "https://pbs.twimg.com/amplify_video_thumb/2112127433251938304/img/h69q6Y4rwJf19aeo.jpg",
+     "ratio": 0.5625,
      "duration": 25,
-     "gif": false,
-     "remote": "https://video.twimg.com/amplify_video/2112127433251938304/vid/avc1/1280x720/QaD_8mulHljM6Pgn.mp4?tag=14"
+     "gif": false
     }
    ],
    "links": [
@@ -60,11 +58,7 @@
    "domain": "samadipour.github.io",
    "title": "Snack Hole",
    "description": "A hole that swallows the world: eat everything smaller than you, grow, upgrade, repeat.",
-   "image": {
-    "src": "media/5972/l1-og.webp",
-    "width": 1200,
-    "height": 630
-   },
+   "image": "https://samadipour.github.io/snack-hole-game/og.jpg",
    "site": "samadipour.github.io",
    "author": null,
    "published": null,

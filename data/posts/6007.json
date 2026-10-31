@@ -27,7 +27,7 @@
    "author": {
     "name": "Andrew Case",
     "handle": "attrc",
-    "avatar": "media/avatars/attrc.webp"
+    "avatar": "https://pbs.twimg.com/profile_images/2110399158779584513/CxZbR-oy_200x200.jpg"
    },
    "text": "Full details of a remotely exploitable vulnerability in the core engine of *all* PHP versions will be released tomorrow, October 21st. If your organization has internet facing PHP applications then you need to be ready to patch the minute the update is released or *strongly* consider taking the application offline until you can:\n\nhttps://www.php.net/index.php#2026-10-20-1",
    "lang": "en",
@@ -46,7 +46,7 @@
     "author": {
      "name": "Dark Web Informer",
      "handle": "DarkWebInformer",
-     "avatar": "media/avatars/darkwebinformer.webp"
+     "avatar": "https://pbs.twimg.com/profile_images/2109088203504287744/BJcETLaO_200x200.jpg"
     },
     "text": "🚨 PHP warns of two critical vulnerabilities as emergency patches arrive tomorrow\n\nThe PHP security team will release updates on October 21 at 14:00 UTC for two vulnerabilities, each rated 9.2 under CVSS v4.0.\n⠀\nSecurity researchers identified the flaws as CVE-2026-109618 and CVE-2026-109619 and described them as remote code execution vulnerabilities reportedly affecting PHP versions 5 through 8.\n\nPHP has not yet confirmed the affected versions, exploitation requirements or fixed releases.\n⠀\nThe vulnerabilities were reportedly leaked before their planned disclosure. Researchers said they have not observed active exploitation, while PHP warned it may release the patches early if technical details become public or exploitation is detected.\n⠀\nAdministrators should identify PHP installations now and prepare to apply the updates as soon as they become available.",
     "lang": "en",
@@ -60,10 +60,8 @@
     "media": [
      {
       "type": "image",
-      "src": "media/6007/l0q-0.webp",
-      "width": 400,
-      "height": 400,
-      "remote": "https://pbs.twimg.com/media/HVGk4sAXoAEEYWP.png?name=orig"
+      "src": "https://pbs.twimg.com/media/HVGk4sAXoAEEYWP.png?name=orig",
+      "ratio": 1.0
      }
     ],
     "links": []
@@ -75,11 +73,7 @@
    "domain": "php.net",
    "title": "PHP",
    "description": "PHP is a popular general-purpose scripting language that powers everything from your blog to the most popular websites in the world.",
-   "image": {
-    "src": "media/6007/l1-og.webp",
-    "width": 1280,
-    "height": 800
-   },
+   "image": "https://www.php.net/images/meta-image.png",
    "site": "php.net",
    "author": null,
    "published": null,

@@ -27,7 +27,7 @@
    "author": {
     "name": "Eric Nguyen",
     "handle": "exnx",
-    "avatar": "media/avatars/exnx.webp"
+    "avatar": "https://pbs.twimg.com/profile_images/1640862340517335040/qcpMIN_b_200x200.jpg"
    },
    "text": "Introducing Omnii-1, our most powerful genome language model, and a major step toward general biological intelligence\n\nIn a world first, Omnii-1 designed the first AI-generated bacteriophages to be administered to a human patient with an antibiotic-resistant infection under compassionate use",
    "lang": "en",
@@ -41,13 +41,11 @@
    "media": [
     {
      "type": "video",
-     "src": "media/5994/l0-0.mp4",
-     "poster": "media/5994/l0-0-poster.webp",
-     "width": 1920,
-     "height": 1080,
+     "src": "https://video.twimg.com/amplify_video/2112578540013330432/vid/avc1/1280x720/o7F7SW5uTq0n6Cki.mp4?tag=29",
+     "poster": "https://pbs.twimg.com/amplify_video_thumb/2112578540013330432/img/iIkujuAjkAiQkxwh.jpg",
+     "ratio": 0.5625,
      "duration": 155.136,
-     "gif": false,
-     "remote": "https://video.twimg.com/amplify_video/2112578540013330432/vid/avc1/1280x720/o7F7SW5uTq0n6Cki.mp4?tag=29"
+     "gif": false
     }
    ],
    "links": []

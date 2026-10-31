@@ -27,7 +27,7 @@
    "author": {
     "name": "Artificial Analysis",
     "handle": "ArtificialAnlys",
-    "avatar": "media/avatars/artificialanlys.webp"
+    "avatar": "https://pbs.twimg.com/profile_images/2042402069320290304/A8C1lP07_200x200.jpg"
    },
    "text": "Nvidia’s Nemotron 3.5 Super VL is now the leading US open weight model, scoring 26 on the Artificial Analysis Intelligence Index\n\nNemotron 3.5 Super VL achieves twice the intelligence of its predecessor, Nemotron 3 Super (13), and does so using ~60% fewer output tokens per task\n\nIt launches alongside Nemotron 3.5 Bolt 74B-A9B 24GB, the first model in its new Bolt family, which scores 21 on the Intelligence Index\n\nCongratulations to @NVIDIAAI on the releases!\n\nKey Takeaways:\n\n➤ Leading US open weight model: Nemotron 3.5 Super VL scores 26.5, edging out Thinking Machines' Inkling Small (25.7) and ahead of NVIDIA's Nemotron 3 Ultra (23) and Meta's Muse Glimmer (17)\n\n➤ Bolt comes within 2 points of Ultra: Nemotron 3.5 Bolt 74B-A9B 24GB scores 21, 1.5 points behind Nemotron 3 Ultra 550B A55B (23). The 2 bit memory has about a seventh of Ultra's parameters (74B vs 550B) and a sixth of its active parameters (9B vs 55B)\n\n➤ Super 3.5 VL near lossless in NVFP4: Nemotron 3.5 Super VL releases in NVFP4, scoring within 0.1 points of its BF16 weights on the Intelligence Index, with no component moving by more than 2.6 points\n\nNemotron 3.5 Super VL details\n\nContext window: 1M tokens\nModalities: Vision and text input; text output\nParameters: 120B / 12B\n\nNemotron 3.5 Bolt 74B-A9B 24GB details\n\nContext window: 256k tokens\nModalities: Vision and text input; text output\nParameters: 74B / 9B",
    "lang": "en",
@@ -41,10 +41,8 @@
    "media": [
     {
      "type": "image",
-     "src": "media/5912/l0-0.webp",
-     "width": 1400,
-     "height": 710,
-     "remote": "https://pbs.twimg.com/media/HUrhGO_awAA4VCN.jpg?name=orig"
+     "src": "https://pbs.twimg.com/media/HUrhGO_awAA4VCN.jpg?name=orig",
+     "ratio": 0.5072
     }
    ],
    "links": []

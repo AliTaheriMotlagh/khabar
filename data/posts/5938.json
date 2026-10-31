@@ -27,7 +27,7 @@
    "author": {
     "name": "theermann",
     "handle": "theermann",
-    "avatar": "media/avatars/theermann.webp"
+    "avatar": "https://pbs.twimg.com/profile_images/2110520630802337792/xokYuG92_200x200.jpg"
    },
    "text": "Introducing Hugo: the first human companion robot.\n\nAt Boston Dynamics, I was Chief Strategy Officer, bringing robots into the real world.\n\nMy co-founder, Farbod Farshidian, led research at the RAI Institute.\n\nTogether, 15+ years teaching robots to run, jump, and work.\n\nSo we asked: what if robots could connect with people?\n\nHugo runs on the first Vision-Language-Expression (VLE) model.\n\nHe links what he sees and hears to movement, expression, and gesture.\n\nHe notices you, reads the room, and reacts in real time.\n\nAnd he's only the first.\n\nDynamic Creatures is @BostonDynamics' official entertainment and hospitality partner.\n\nWe're building a cast of characters with film studios, resorts, and theme parks.\n\nhttp://dynamiccreatures.com",
    "lang": "en",
@@ -41,13 +41,11 @@
    "media": [
     {
      "type": "video",
-     "src": "media/5938/l0-0.mp4",
-     "poster": "media/5938/l0-0-poster.webp",
-     "width": 3840,
-     "height": 2160,
+     "src": "https://video.twimg.com/amplify_video/2111123312218951680/vid/avc1/1280x720/BCRL1kp5v6ef1ETg.mp4?tag=29",
+     "poster": "https://pbs.twimg.com/amplify_video_thumb/2111123312218951680/img/MJI6vKl7pYIpkShJ.jpg",
+     "ratio": 0.5625,
      "duration": 55.805,
-     "gif": false,
-     "remote": "https://video.twimg.com/amplify_video/2111123312218951680/vid/avc1/1280x720/BCRL1kp5v6ef1ETg.mp4?tag=29"
+     "gif": false
     }
    ],
    "links": [
@@ -60,11 +58,7 @@
    "domain": "dynamiccreatures.com",
    "title": "Dynamic Creatures | Living Character Robots for Hospitality & Entertainment",
    "description": "Dynamic Creatures spun out of Boston Dynamics to create mobile, interactive character robots. We bring brands to life for theme parks, hotels, resorts & attractions. Boston, MA.",
-   "image": {
-    "src": "media/5938/l1-og.webp",
-    "width": 1400,
-    "height": 788
-   },
+   "image": "https://static.wixstatic.com/media/6b0b63_3376cb4677f64141ab723cc77b8aec00%7Emv2.jpg/v1/fit/w_2500,h_1330,al_c/6b0b63_3376cb4677f64141ab723cc77b8aec00%7Emv2.jpg",
    "site": "Dynamic Creatures In",
    "author": null,
    "published": null,

@@ -27,7 +27,7 @@
    "author": {
     "name": "swyx",
     "handle": "swyx",
-    "avatar": "media/avatars/swyx.webp"
+    "avatar": "https://pbs.twimg.com/profile_images/2073162797354217472/hNny55eF_200x200.jpg"
    },
    "text": "deepseek posted way more alpha on their zhihu page, if you only read twitter you are reading the laowai approved stuff\n\n\"Based on this framework, we have implemented a high-throughput, low-latency large-scale inference service for DeepSeek V4.1 Flash. Currently, the service throughput of a single cluster is 155 trillion tokens/day, and the overall revenue is $38 per card per hour (based on off-peak prices).\"\n\nit costs roughtly $5-10 per gpu hour so depseek is claiming 80% serving margin at THEIR prices lololololol",
    "lang": "en",
@@ -41,10 +41,8 @@
    "media": [
     {
      "type": "image",
-     "src": "media/5991/l0-0.webp",
-     "width": 1400,
-     "height": 1405,
-     "remote": "https://pbs.twimg.com/media/HVFqiZmaIAABXR3.jpg?name=orig"
+     "src": "https://pbs.twimg.com/media/HVFqiZmaIAABXR3.jpg?name=orig",
+     "ratio": 1.0032
     }
    ],
    "links": [],
@@ -52,7 +50,7 @@
     "author": {
      "name": "DeepSeek",
      "handle": "deepseek_ai",
-     "avatar": "media/avatars/deepseek_ai.webp"
+     "avatar": "https://pbs.twimg.com/profile_images/1717417613775757312/Uk1zNOj4_200x200.jpg"
     },
     "text": "🚀 Introducing DeepInfer, our in-house inference framework, now fully open source!\n\nPowering DeepSeek-V4.1-Flash at scale with high throughput and low latency. We’re sharing our production stack to help the community lower compute costs, reduce energy use, and make AI more affordable.\n\n🔗 http://github.com/deepseek-ai/DeepInfer\n\n1/4",
     "lang": "en",

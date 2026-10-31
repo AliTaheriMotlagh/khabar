@@ -27,7 +27,7 @@
    "author": {
     "name": "Praneeta Pujari",
     "handle": "PraneetaPujari",
-    "avatar": "media/avatars/praneetapujari.webp"
+    "avatar": "https://pbs.twimg.com/profile_images/2100108822937489408/4DySfLTn_200x200.jpg"
    },
    "text": "I left @Apple to build healthcare that listens and acts early. Today, I'm excited to introduce UniqueHuman.\n\nWe're building proactive healthcare agents that handle every step of care for people with chronic conditions.\n\nOur mission is to end chronic suffering. Today, we begin with migraines.",
    "lang": "en",
@@ -41,13 +41,11 @@
    "media": [
     {
      "type": "video",
-     "src": "media/6004/l0-0.mp4",
-     "poster": "media/6004/l0-0-poster.webp",
-     "width": 1920,
-     "height": 1080,
+     "src": "https://video.twimg.com/amplify_video/2112575253000196096/vid/avc1/1280x720/gbcA8-FVzdsnlhFj.mp4?tag=29",
+     "poster": "https://pbs.twimg.com/amplify_video_thumb/2112575253000196096/img/9O1ngN28s0lh4Gu-.jpg",
+     "ratio": 0.5625,
      "duration": 128.552,
-     "gif": false,
-     "remote": "https://video.twimg.com/amplify_video/2112575253000196096/vid/avc1/1280x720/gbcA8-FVzdsnlhFj.mp4?tag=29"
+     "gif": false
     }
    ],
    "links": []

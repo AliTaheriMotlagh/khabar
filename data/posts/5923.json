@@ -27,7 +27,7 @@
    "author": {
     "name": "Sundar Pichai",
     "handle": "sundarpichai",
-    "avatar": "media/avatars/sundarpichai.webp"
+    "avatar": "https://pbs.twimg.com/profile_images/2051799620062429184/AL8CoAUG_200x200.jpg"
    },
    "text": "Some magical progress towards \"magic state\" in quantum!\n\nOur @GoogleQuantumAI team has demonstrated \"magic state cultivation\" on physical hardware for the first time. The result is a 40x error reduction on our Willow processor vs. previous methods, achieving a state-of-the-art 99.99% logical fidelity.\n\nIt's another step towards useful, error-corrected quantum computers to help solve the hardest problems. The result is published in Science today, watch the video below to see how it works",
    "lang": "en",
@@ -41,13 +41,11 @@
    "media": [
     {
      "type": "video",
-     "src": "media/5923/l0-0.mp4",
-     "poster": "media/5923/l0-0-poster.webp",
-     "width": 1920,
-     "height": 1080,
+     "src": "https://video.twimg.com/amplify_video/2110803826844520448/vid/avc1/1280x720/1C3rHL12JAJxylvH.mp4?tag=29",
+     "poster": "https://pbs.twimg.com/amplify_video_thumb/2110803826844520448/img/KWrABjjN-wp3vS2P.jpg",
+     "ratio": 0.5625,
      "duration": 201,
-     "gif": false,
-     "remote": "https://video.twimg.com/amplify_video/2110803826844520448/vid/avc1/1280x720/1C3rHL12JAJxylvH.mp4?tag=29"
+     "gif": false
     }
    ],
    "links": []

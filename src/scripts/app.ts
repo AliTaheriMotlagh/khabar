@@ -1,5 +1,5 @@
 // Client behaviour for every page. Everything is progressive: the site works without JS.
-import { $, $$, BASE, PAGE_CACHE, fmtNum, getSaved, relTime, store, toast, type Entry } from './core';
+import { $, $$, BASE, PAGE_CACHE, fmtNum, getSaved, relTime, store, tapAudio, toast, type Entry } from './core';
 import { award, clearSeen, markAllSeen, markNew, recordRead, renderMe, unreadTest } from './game';
 import { STORY_SHOW, TZ, decodeStories, pickStories, tehranDay, type StoryOrder, type StoryShow } from '../lib/time';
 import { SITE } from '../site';
@@ -71,7 +71,8 @@ $('[data-seen-clear]')?.addEventListener('click', () => {
 });
 for (const dlg of $$<HTMLDialogElement>('dialog')) {
   dlg.addEventListener('click', (e) => {
-    if (e.target === dlg || (e.target as Element).closest('[data-close]')) dlg.close();
+    // A sheet at work (data-busy: a video being made) isn't closed by a stray tap beside it, only by its own buttons.
+    if ((e.target === dlg && !dlg.hasAttribute('data-busy')) || (e.target as Element).closest('[data-close]')) dlg.close();
   });
 }
 $$('[data-open-settings]').forEach((b) => b.addEventListener('click', () => (syncForm(), settingsDialog?.showModal())));
@@ -199,10 +200,8 @@ document.addEventListener('click', (e) => {
 const canMakeVideo = typeof VideoEncoder === 'function' || (typeof MediaRecorder === 'function' && 'captureStream' in HTMLCanvasElement.prototype);
 $$('[data-make-video]').forEach((b) => (b.hidden = !canMakeVideo));
 function makeVideo(href: string) {
-  // Without an AudioEncoder the sound is recorded as it plays, through an audio context iOS only starts in a tap.
-  const ac = typeof AudioEncoder === 'function' ? null : new AudioContext();
-  ac?.resume().catch(() => {});
-  import('./video').then((m) => m.makeVideo(href, ac), () => toast('اتصال اینترنت را بررسی کنید'));
+  const ac = tapAudio();
+  import('./video').then((m) => m.makeVideo(href, ac), () => (ac?.close().catch(() => {}), toast('اتصال اینترنت را بررسی کنید')));
 }
 
 // Only one video plays at a time.

@@ -27,7 +27,7 @@
    "author": {
     "name": "Stefano Ermon",
     "handle": "StefanoErmon",
-    "avatar": "media/avatars/stefanoermon.webp"
+    "avatar": "https://pbs.twimg.com/profile_images/901161218655756288/46jLcLIc_200x200.jpg"
    },
    "text": "1/4 Today, we’re releasing Mercury 3. Mercury 3 is by far our most powerful model and the most intelligent diffusion LLM ever released. It outperforms GPT-6 Luna and Haiku 5.5 on quality while running at 1000+ tok/sec.",
    "lang": "en",
@@ -41,13 +41,11 @@
    "media": [
     {
      "type": "video",
-     "src": "media/5974/l0-0.mp4",
-     "poster": "media/5974/l0-0-poster.webp",
-     "width": 3840,
-     "height": 2160,
+     "src": "https://video.twimg.com/amplify_video/2112220659380305920/vid/avc1/1280x720/DbnDQf2qI0SUBpEk.mp4?tag=29",
+     "poster": "https://pbs.twimg.com/amplify_video_thumb/2112220659380305920/img/CtYk5e6YijLFt5e8.jpg",
+     "ratio": 0.5625,
      "duration": 30.066,
-     "gif": false,
-     "remote": "https://video.twimg.com/amplify_video/2112220659380305920/vid/avc1/1280x720/DbnDQf2qI0SUBpEk.mp4?tag=29"
+     "gif": false
     }
    ],
    "links": []

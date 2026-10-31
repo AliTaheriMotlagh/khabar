@@ -27,7 +27,7 @@
    "author": {
     "name": "Anthropic",
     "handle": "AnthropicAI",
-    "avatar": "media/avatars/anthropicai.webp"
+    "avatar": "https://pbs.twimg.com/profile_images/1798110641414443008/XP8gyBaY_200x200.jpg"
    },
    "text": "We’re committing a portion of Anthropic’s shares to the Anthropic Public Benefit Fund, a new wholly owned entity dedicated entirely to the public benefit.\n\nIt will start off with 5% of our shares. For every 50% increase in the company’s value over a set baseline, we can contribute up to an extra 2%, subject to our board’s discretion.\n\nIn total, this means that roughly 20% of Anthropic’s shares are committed to the public good. Our co-founders have already pledged to donate 80% of their equity, and around half our employees are donating a portion of their equity as part of a donation matching program we’ve run since our founding.\n\nIn the post below, we share more details about our new fund.\n\nhttps://www.anthropic.com/news/public-benefit-fund",
    "lang": "en",
@@ -49,11 +49,7 @@
    "domain": "anthropic.com",
    "title": "Investing in the public benefit",
    "description": "We’re committing a portion of Anthropic’s shares to the Anthropic Public Benefit Fund, a new entity with a structure that increases the stake as the company grows.",
-   "image": {
-    "src": "media/5961/l1-og.webp",
-    "width": 1200,
-    "height": 630
-   },
+   "image": "https://www-cdn.anthropic.com/images/4zrzovbb/website/85648c93880ac27347f8e6a4008650a65c12ede8-1200x630.jpg",
    "site": "anthropic.com",
    "author": null,
    "published": "2026-10-18T00:00:00.000Z",

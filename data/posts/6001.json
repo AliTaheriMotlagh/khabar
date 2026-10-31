@@ -27,7 +27,7 @@
    "author": {
     "name": "Artificial Societies",
     "handle": "societies_ai",
-    "avatar": "media/avatars/societies_ai.webp"
+    "avatar": "https://pbs.twimg.com/profile_images/2097253013157216257/G-ceIBRX_200x200.jpg"
    },
    "text": "Can your idea become the talk of the town?\n\nWe modelled how thoughts and ideas spread in human societies by putting 2,721 simulated personas representing the US general population in an artificial city. Each persona has its own schedule, beliefs, and social circle.\n\nSow an idea in any persona’s mind, watch it take hold and go viral, or see it fizzle out if no one takes interest in it.\n\nCompete with your friends and colleagues to see whose idea can win over the most adopters, get a high score and put your name on the leaderboard. Link below.",
    "lang": "en",
@@ -41,13 +41,11 @@
    "media": [
     {
      "type": "video",
-     "src": "media/6001/l0-0.mp4",
-     "poster": "media/6001/l0-0-poster.webp",
-     "width": 1080,
-     "height": 1080,
+     "src": "https://video.twimg.com/amplify_video/2112546789815439361/vid/avc1/720x720/xZipjXrCkyJeiSdZ.mp4?tag=29",
+     "poster": "https://pbs.twimg.com/amplify_video_thumb/2112546789815439361/img/xA0JIka3HXwphmYL.jpg",
+     "ratio": 1.0,
      "duration": 22.2,
-     "gif": false,
-     "remote": "https://video.twimg.com/amplify_video/2112546789815439361/vid/avc1/720x720/xZipjXrCkyJeiSdZ.mp4?tag=29"
+     "gif": false
     }
    ],
    "links": []

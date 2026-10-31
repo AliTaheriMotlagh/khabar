@@ -27,7 +27,7 @@
    "author": {
     "name": "Tesla",
     "handle": "Tesla",
-    "avatar": "media/avatars/tesla.webp"
+    "avatar": "https://pbs.twimg.com/profile_images/1337607516008501250/6Ggc4S5n_200x200.png"
    },
    "text": "Interior\n– Ultrawhite interior w/ gray microsuede detailing & seat bolsters for added grip\n\n– Manual controls & a fixed seat position reduce overall vehicle mass\n\n– Lightweight, high-strength materials throughout, including magnesium, titanium & carbon fiber help reduce it further\n\nThis allows Roadster to respond to driver inputs almost instantly",
    "lang": "en",
@@ -41,31 +41,23 @@
    "media": [
     {
      "type": "image",
-     "src": "media/5916/l0-0.webp",
-     "width": 1400,
-     "height": 1045,
-     "remote": "https://pbs.twimg.com/media/HUtySC7a8AADgT6.jpg?name=orig"
+     "src": "https://pbs.twimg.com/media/HUtySC7a8AADgT6.jpg?name=orig",
+     "ratio": 0.7466
     },
     {
      "type": "image",
-     "src": "media/5916/l0-1.webp",
-     "width": 1400,
-     "height": 1045,
-     "remote": "https://pbs.twimg.com/media/HUtySDAbcAAyWWB.jpg?name=orig"
+     "src": "https://pbs.twimg.com/media/HUtySDAbcAAyWWB.jpg?name=orig",
+     "ratio": 0.7466
     },
     {
      "type": "image",
-     "src": "media/5916/l0-2.webp",
-     "width": 1400,
-     "height": 1050,
-     "remote": "https://pbs.twimg.com/media/HUtyV2cbEAAgIA9.jpg?name=orig"
+     "src": "https://pbs.twimg.com/media/HUtyV2cbEAAgIA9.jpg?name=orig",
+     "ratio": 0.75
     },
     {
      "type": "image",
-     "src": "media/5916/l0-3.webp",
-     "width": 1400,
-     "height": 939,
-     "remote": "https://pbs.twimg.com/media/HUtyam2bkAACWm5.jpg?name=orig"
+     "src": "https://pbs.twimg.com/media/HUtyam2bkAACWm5.jpg?name=orig",
+     "ratio": 0.6708
     }
    ],
    "links": []

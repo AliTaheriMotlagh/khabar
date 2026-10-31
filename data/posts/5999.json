@@ -27,7 +27,7 @@
    "author": {
     "name": "Jim Fan",
     "handle": "DrJimFan",
-    "avatar": "media/avatars/drjimfan.webp"
+    "avatar": "https://pbs.twimg.com/profile_images/1554922493101559808/SYSZhbcd_200x200.jpg"
    },
    "text": "We built a robotics data engine with Astra-level performance at 125x lower cost. And we are open-sourcing the weights today! Introducing Flora, a suite of open models to parse the physical world and turn raw footage into rich training signals. \n\nFlora already powers our in-house data engine, labeling 200K hours of videos a day on 500 GPUs. We created it to scale the frontier for robot learning. Now you own the weights too. \n\nFlora gives you:\n\n- High-quality, timestamped captions to curate and filter human egocentric and robot data;\n- Dense progress rewards for quality control and RL post-training;\n- Rubrics scoring for real-world benchmarking\n\nTry it today, links in thread:",
    "lang": "en",
@@ -41,13 +41,11 @@
    "media": [
     {
      "type": "video",
-     "src": "media/5999/l0-0.mp4",
-     "poster": "media/5999/l0-0-poster.webp",
-     "width": 1920,
-     "height": 1080,
+     "src": "https://video.twimg.com/amplify_video/2112589725337083904/vid/avc1/1280x720/DgArsymrx3Bk5q70.mp4?tag=29",
+     "poster": "https://pbs.twimg.com/amplify_video_thumb/2112589725337083904/img/4Fy5XFx6jbgKIYgv.jpg",
+     "ratio": 0.5625,
      "duration": 67.2,
-     "gif": false,
-     "remote": "https://video.twimg.com/amplify_video/2112589725337083904/vid/avc1/1280x720/DgArsymrx3Bk5q70.mp4?tag=29"
+     "gif": false
     }
    ],
    "links": []

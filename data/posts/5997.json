@@ -27,7 +27,7 @@
    "author": {
     "name": "Tanishq Mathew Abraham, Ph.D.",
     "handle": "iScienceLuvr",
-    "avatar": "media/avatars/iscienceluvr.webp"
+    "avatar": "https://pbs.twimg.com/profile_images/2096171283537072128/GoL5700C_200x200.jpg"
    },
    "text": "Cancer patients with the same diagnosis often have very different tumor biology.\n\nMolecular testing can reveal underlying differences, but that's slow and expensive.\n\nIntroducing Holon-S1, our platform to predict genes and biomarkers from routine pathology slides.\n\n• beats two other models at predicting spatial gene activity in a controlled comparison\n• has identified potentially novel biomarkers in breast cancer and colon cancer\n• evaluated across 16 organ types and more than 15 scanners, using slides from both formalin-fixed, paraffin-embedded and fresh-frozen tissue.\n\nWe believe Holon-S1 has the potential to help researchers find new biomarkers in slides they already have, discover treatment targets, and bring more personalized cancer care within reach!",
    "lang": "en",
@@ -41,13 +41,11 @@
    "media": [
     {
      "type": "video",
-     "src": "media/5997/l0-0.mp4",
-     "poster": "media/5997/l0-0-poster.webp",
-     "width": 1920,
-     "height": 1080,
+     "src": "https://video.twimg.com/amplify_video/2112590555838644224/vid/avc1/1280x720/MhpKZm8hwCxP1y-o.mp4?tag=29",
+     "poster": "https://pbs.twimg.com/amplify_video_thumb/2112590555838644224/img/4T9V1b24pSfXPkcF.jpg",
+     "ratio": 0.5625,
      "duration": 212.587,
-     "gif": false,
-     "remote": "https://video.twimg.com/amplify_video/2112590555838644224/vid/avc1/1280x720/MhpKZm8hwCxP1y-o.mp4?tag=29"
+     "gif": false
     }
    ],
    "links": []

@@ -27,7 +27,7 @@
    "author": {
     "name": "Somewhere",
     "handle": "somewheresy",
-    "avatar": "media/avatars/somewheresy.webp"
+    "avatar": "https://pbs.twimg.com/profile_images/2109966250277310464/zTbaURZz_200x200.jpg"
    },
    "text": "We've developed a new inference engine, called 'e'. \n\nIt's the closest thing to alien technology which we have, and pushes 10,500 tok/s aggregate on a single DGX Station with the new @NVIDIAAI Nemotron 3.5 Super VL model, released a few minutes ago.",
    "lang": "en",
@@ -44,7 +44,7 @@
     "author": {
      "name": "Actual Computer",
      "handle": "actualinc",
-     "avatar": "media/avatars/actualinc.webp"
+     "avatar": "https://pbs.twimg.com/profile_images/2048941873247780864/Ltv5Dtel_200x200.jpg"
     },
     "text": "Actual Computer turns your NVIDIA DGX Station into a department-scale AI factory.\n\nRead the full case study:\nhttps://actual.inc/company/blog/case-study-dgx-station-and-nemotron-3-5-super-vl",
     "lang": "en",

@@ -27,7 +27,7 @@
    "author": {
     "name": "Andrew Curran",
     "handle": "AndrewCurran_",
-    "avatar": "media/avatars/andrewcurran_.webp"
+    "avatar": "https://pbs.twimg.com/profile_images/1596945208058744833/_X3LT7fb_200x200.jpg"
    },
    "text": "Elon on the earnings call:\n\n'At this point, I would say I'm I would say I'm fairly confident of being able to bring an incremental 10 gigawatts of compute online in 2027. That would be in addition to the roughly 3 gigawatts, maybe 2 and 1/2 to 3 gigawatts that we'll have online by the end of this year. So let me put it this way. I would be surprised if we're brought on less than 13 gigawatts of compute by the end of next year.'\n\n'So there is a non-zero possibility maybe it's a small possibility at this point, but it's not zero, of having SpaceX having over 20 gigawatts of superintelligence compute online next year. A small possibility, but it used to be zero. It's not zero anymore. We're also planning to have the most powerful training cluster online by the end of Q2, which will be 440,000 very Rubin computers deployed for optimal training.'\n\nWhen I say all of this is unstoppable, it is for many reasons. One of them is the pure industrial momentum that has built up over the last four years. You can see it clearly in what Elon is saying here. Finance, industry, the labs, the banks, and the markets all are bent toward this task with all their might.",
    "lang": "en",
@@ -44,7 +44,7 @@
     "author": {
      "name": "Wall St Engine",
      "handle": "wallstengine",
-     "avatar": "media/avatars/wallstengine.webp"
+     "avatar": "https://pbs.twimg.com/profile_images/1691846947857178624/oZp5wB4r_200x200.jpg"
     },
     "text": "ELON MUSK TARGETS 13 GW OF AI COMPUTE BY 2027, WITH 440,000 NVIDIA VERA RUBIN GPUS IN A SINGLE TRAINING CLUSTER\n\nMusk says SpaceX is on track to bring roughly 200,000 $NVDA GB300 GPUs online per month for the remainder of 2026, with deployments continuing at a similar pace next year, primarily using Vera Rubin.\n\nThe company expects to have 2.5-3 GW of compute online by the end of 2026, with another 10 GW potentially coming online in 2027.\n\nMusk also plans to have a 440,000-GPU Vera Rubin training cluster operational by the end of Q2 2027.\n\nTo support the expansion, SpaceX is targeting an additional 20 GW of power and cooling infrastructure next year.\n\nMusk said there is a “non-zero possibility” of exceeding 20 GW of operational AI compute in 2027, although he acknowledged the probability remains small.",
     "lang": "en",
@@ -58,10 +58,8 @@
     "media": [
      {
       "type": "image",
-      "src": "media/6003/l0q-0.webp",
-      "width": 1400,
-      "height": 721,
-      "remote": "https://pbs.twimg.com/media/HVGhpDgbwAAZpfm.jpg?name=orig"
+      "src": "https://pbs.twimg.com/media/HVGhpDgbwAAZpfm.jpg?name=orig",
+      "ratio": 0.5149
      }
     ],
     "links": []

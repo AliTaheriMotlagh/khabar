@@ -27,7 +27,7 @@
    "author": {
     "name": "AI at Meta",
     "handle": "AIatMeta",
-    "avatar": "media/avatars/aiatmeta.webp"
+    "avatar": "https://pbs.twimg.com/profile_images/2102933421458665472/o_KTIjw3_200x200.png"
    },
    "text": "We trained our Muse foundational models, including Muse Wonder, at Prometheus, our gigawatt-scale supercluster in New Albany, Ohio.\n\nAcross a supercluster with hundreds of thousands of GPUs, even one underperforming host can slow an entire training run. We engineered Prometheus for resilience at scale, achieving 85%+ goodput on pretraining, 90%+ on reinforcement learning and ~47K GPU hours mean time between interruptions during Muse Wonder training.\n\nTake a look at the tech powering Prometheus: https://go.meta.me/4yXXApZ",
    "lang": "en",
@@ -41,13 +41,11 @@
    "media": [
     {
      "type": "video",
-     "src": "media/5975/l0-0.mp4",
-     "poster": "media/5975/l0-0-poster.webp",
-     "width": 1920,
-     "height": 1080,
+     "src": "https://video.twimg.com/amplify_video/2112245058472906752/vid/avc1/1280x720/Po6sJW0llIrgOpor.mp4?tag=29",
+     "poster": "https://pbs.twimg.com/amplify_video_thumb/2112245058472906752/img/Ql2HvTqHqzURK5DP.jpg",
+     "ratio": 0.5625,
      "duration": 24.448,
-     "gif": false,
-     "remote": "https://video.twimg.com/amplify_video/2112245058472906752/vid/avc1/1280x720/Po6sJW0llIrgOpor.mp4?tag=29"
+     "gif": false
     }
    ],
    "links": [
@@ -60,11 +58,7 @@
    "domain": "engineering.fb.com",
    "title": "Inside Prometheus: Meta’s Journey to a Gigawatt-Scale Supercluster",
    "description": "With the recent release of the Muse family of foundational models, we want to take you inside the infrastructure that has made it all possible. The first phase of Prometheus, our gigawatt-scale sup…",
-   "image": {
-    "src": "media/5975/l1-og.webp",
-    "width": 1400,
-    "height": 862
-   },
+   "image": null,
    "site": "Engineering at Meta",
    "author": null,
    "published": "2026-10-19T13:00:10+00:00",

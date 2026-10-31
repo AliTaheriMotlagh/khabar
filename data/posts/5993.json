@@ -27,7 +27,7 @@
    "author": {
     "name": "Ros Shinkle",
     "handle": "make_robot_go",
-    "avatar": "media/avatars/make_robot_go.webp"
+    "avatar": "https://pbs.twimg.com/profile_images/1761551110303825920/JvPQiGQd_200x200.jpg"
    },
    "text": "Introducing Voxel, a droid butler made by Tuesday Labs.",
    "lang": "en",
@@ -41,13 +41,11 @@
    "media": [
     {
      "type": "video",
-     "src": "media/5993/l0-0.mp4",
-     "poster": "media/5993/l0-0-poster.webp",
-     "width": 2880,
-     "height": 2160,
+     "src": "https://video.twimg.com/amplify_video/2112564839251931136/vid/avc1/960x720/cMYjra9bu_jYUTYR.mp4?tag=29",
+     "poster": "https://pbs.twimg.com/amplify_video_thumb/2112564839251931136/img/GKLfsqVaQmO0B-kn.jpg",
+     "ratio": 0.75,
      "duration": 89.216,
-     "gif": false,
-     "remote": "https://video.twimg.com/amplify_video/2112564839251931136/vid/avc1/960x720/cMYjra9bu_jYUTYR.mp4?tag=29"
+     "gif": false
     }
    ],
    "links": []

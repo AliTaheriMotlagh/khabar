@@ -27,7 +27,7 @@
    "author": {
     "name": "Chubby♨️",
     "handle": "kimmonismus",
-    "avatar": "media/avatars/kimmonismus.webp"
+    "avatar": "https://pbs.twimg.com/profile_images/1728327996375719936/RW7VBJfD_200x200.jpg"
    },
    "text": "Anthropic reportedly grew revenue nearly 15x while taking on more than $600B in future compute commitments.\n\nWSJ reviewed a draft IPO prospectus:\n\n- H1 revenue jumped from $1.1B to $16.3B. Compute and infrastructure spending rose from $2.3B to nearly $9B.\n\n- Revenue is scaling much faster than compute costs.\nBut the commitments are enormous: $450B in cloud contracts, mostly noncancelable, plus other infrastructure deals. Another $150B is under negotiation.\n\nThey still aim for a $2t valuation. I think that's still very realistic.",
    "lang": "en",
@@ -41,10 +41,8 @@
    "media": [
     {
      "type": "image",
-     "src": "media/5998/l0-0.webp",
-     "width": 1294,
-     "height": 1096,
-     "remote": "https://pbs.twimg.com/media/HVGSSp-XkAAH73M.png?name=orig"
+     "src": "https://pbs.twimg.com/media/HVGSSp-XkAAH73M.png?name=orig",
+     "ratio": 0.847
     }
    ],
    "links": [],
@@ -52,7 +50,7 @@
     "author": {
      "name": "The Wall Street Journal",
      "handle": "WSJ",
-     "avatar": "media/avatars/wsj.webp"
+     "avatar": "https://pbs.twimg.com/profile_images/971415515754266624/zCX0q9d5_200x200.jpg"
     },
     "text": "Exclusive: Anthropic's draft IPO filing reveals red-hot growth, massive computing costs and an $80 billion net loss. Here are the highlights. https://on.wsj.com/3WmyWAR",
     "lang": "en",

@@ -27,7 +27,7 @@
    "author": {
     "name": "DeepSeek",
     "handle": "deepseek_ai",
-    "avatar": "media/avatars/deepseek_ai.webp"
+    "avatar": "https://pbs.twimg.com/profile_images/1717417613775757312/Uk1zNOj4_200x200.jpg"
    },
    "text": "🚀 Introducing DeepInfer, our in-house inference framework, now fully open source!\n\nPowering DeepSeek-V4.1-Flash at scale with high throughput and low latency. We’re sharing our production stack to help the community lower compute costs, reduce energy use, and make AI more affordable.\n\n🔗 http://github.com/deepseek-ai/DeepInfer\n\n1/4",
    "lang": "en",
@@ -49,11 +49,7 @@
    "domain": "github.com",
    "title": "GitHub - deepseek-ai/DeepInfer: DeepInfer: High-performance, large-scale inference framework for DeepSeek models",
    "description": "DeepInfer: High-performance, large-scale inference framework for DeepSeek models - deepseek-ai/DeepInfer",
-   "image": {
-    "src": "media/5990/l1-og.webp",
-    "width": 1200,
-    "height": 600
-   },
+   "image": "https://opengraph.githubassets.com/8426c66130866139dd369a55b7cd0ff91090e106e61f2a65fa798f4c56bbbb55/deepseek-ai/DeepInfer",
    "site": "GitHub",
    "author": null,
    "published": null,

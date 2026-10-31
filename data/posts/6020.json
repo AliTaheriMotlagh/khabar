@@ -27,7 +27,7 @@
    "author": {
     "name": "Dexerto",
     "handle": "Dexerto",
-    "avatar": "media/avatars/dexerto.webp"
+    "avatar": "https://pbs.twimg.com/profile_images/1714301666445402112/5U5myYFv_200x200.jpg"
    },
    "text": "MKBHD says most people should skip Apple’s $2,000 iPhone Duo after testing it for over a week\n\nHe says it's 'fun to use' but its weight, weaker cameras, lack of Face ID, and poorly optimized apps are major drawbacks",
    "lang": "en",
@@ -41,17 +41,13 @@
    "media": [
     {
      "type": "image",
-     "src": "media/6020/l0-0.webp",
-     "width": 1400,
-     "height": 1400,
-     "remote": "https://pbs.twimg.com/media/HVKBwEbWUAAI5vg.jpg?name=orig"
+     "src": "https://pbs.twimg.com/media/HVKBwEbWUAAI5vg.jpg?name=orig",
+     "ratio": 1.0
     },
     {
      "type": "image",
-     "src": "media/6020/l0-1.webp",
-     "width": 1400,
-     "height": 1400,
-     "remote": "https://pbs.twimg.com/media/HVKBwE2WIAAf2Wn.jpg?name=orig"
+     "src": "https://pbs.twimg.com/media/HVKBwE2WIAAf2Wn.jpg?name=orig",
+     "ratio": 1.0
     }
    ],
    "links": []

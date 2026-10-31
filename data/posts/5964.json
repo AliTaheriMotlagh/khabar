@@ -27,7 +27,7 @@
    "author": {
     "name": "Vebjørn",
     "handle": "VJNCapital",
-    "avatar": "media/avatars/vjncapital.webp"
+    "avatar": "https://pbs.twimg.com/profile_images/2084741291045163009/td1X0o_O_200x200.jpg"
    },
    "text": "Operating income per employee:",
    "lang": "en",
@@ -41,10 +41,8 @@
    "media": [
     {
      "type": "image",
-     "src": "media/5964/l0-0.webp",
-     "width": 1200,
-     "height": 774,
-     "remote": "https://pbs.twimg.com/media/HU5TOWXWwAAb92l.jpg?name=orig"
+     "src": "https://pbs.twimg.com/media/HU5TOWXWwAAb92l.jpg?name=orig",
+     "ratio": 0.645
     }
    ],
    "links": []

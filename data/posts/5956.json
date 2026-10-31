@@ -27,7 +27,7 @@
    "author": {
     "name": "ℏεsam",
     "handle": "Hesamation",
-    "avatar": "media/avatars/hesamation.webp"
+    "avatar": "https://pbs.twimg.com/profile_images/1978647680357134336/ioMmfkXF_200x200.jpg"
    },
    "text": "Anthropic’s report is basically saying humans are the bottleneck.\n\n“Amid this model-driven acceleration, human attention is a constant bottleneck. Claude sessions amount to around 80% idly waiting for human input. As one engineer put it, people are “bottlenecking the agents.”",
    "lang": "en",
@@ -41,17 +41,13 @@
    "media": [
     {
      "type": "image",
-     "src": "media/5956/l0-0.webp",
-     "width": 1320,
-     "height": 1041,
-     "remote": "https://pbs.twimg.com/media/HU3gPtoWAAAJpOm.jpg?name=orig"
+     "src": "https://pbs.twimg.com/media/HU3gPtoWAAAJpOm.jpg?name=orig",
+     "ratio": 0.7886
     },
     {
      "type": "image",
-     "src": "media/5956/l0-1.webp",
-     "width": 1320,
-     "height": 1031,
-     "remote": "https://pbs.twimg.com/media/HU3gPtmWkAEm4Up.jpg?name=orig"
+     "src": "https://pbs.twimg.com/media/HU3gPtmWkAEm4Up.jpg?name=orig",
+     "ratio": 0.7811
     }
    ],
    "links": []

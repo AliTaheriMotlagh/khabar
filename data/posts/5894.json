@@ -27,7 +27,7 @@
    "author": {
     "name": "OpenAI",
     "handle": "OpenAI",
-    "avatar": "media/avatars/openai.webp"
+    "avatar": "https://pbs.twimg.com/profile_images/1885410181409820672/ztsaR0JW_200x200.jpg"
    },
    "text": "European businesses are rapidly expanding their use of AI agents. More than half of the AI use among our EU enterprise and business customers now involves these tools, and the number of small business users has grown 8x across the region.\n\nOur latest Economic Research report explores Europe’s shift toward agentic AI—and the opportunity to turn broader adoption into deeper use.\n\nhttps://openai.com/index/the-eus-next-chapter-in-ai-is-agentic/",
    "lang": "en",
@@ -41,10 +41,8 @@
    "media": [
     {
      "type": "image",
-     "src": "media/5894/l0-0.webp",
-     "width": 1400,
-     "height": 953,
-     "remote": "https://pbs.twimg.com/media/HUnIm51bgAA9cT4.jpg?name=orig"
+     "src": "https://pbs.twimg.com/media/HUnIm51bgAA9cT4.jpg?name=orig",
+     "ratio": 0.6811
     }
    ],
    "links": [

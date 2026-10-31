@@ -27,7 +27,7 @@
    "author": {
     "name": "ClaudeDevs",
     "handle": "ClaudeDevs",
-    "avatar": "media/avatars/claudedevs.webp"
+    "avatar": "https://pbs.twimg.com/profile_images/2044472418815893504/xf14RxM8_200x200.png"
    },
    "text": "We keep improving performance across Claude, and you may have noticed it starts responding sooner!\n\nClaude Code now gzips the conversation it sends on every turn, so it reaches the model faster. Cloud sessions also start up as soon as you start typing.",
    "lang": "en",
@@ -41,10 +41,8 @@
    "media": [
     {
      "type": "image",
-     "src": "media/5955/l0-0.webp",
-     "width": 1400,
-     "height": 787,
-     "remote": "https://pbs.twimg.com/media/HUyFfylbMAAtxEQ.jpg?name=orig"
+     "src": "https://pbs.twimg.com/media/HUyFfylbMAAtxEQ.jpg?name=orig",
+     "ratio": 0.5623
     }
    ],
    "links": []

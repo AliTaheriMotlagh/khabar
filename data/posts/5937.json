@@ -27,7 +27,7 @@
    "author": {
     "name": "Google Research",
     "handle": "GoogleResearch",
-    "avatar": "media/avatars/googleresearch.webp"
+    "avatar": "https://pbs.twimg.com/profile_images/2060445303589961728/NrdAg8dM_200x200.jpg"
    },
    "text": "We are bringing agents to the wet-lab bench at Google Research to navigate complex biological landscapes. Learn how we are grounding agents in physical lab robotics to run fast closed-loop molecular design cycles, ultimately discovering single-digit nanomolar protein binders for cancer targets →https://goo.gle/4B5mMMB",
    "lang": "en",
@@ -41,13 +41,11 @@
    "media": [
     {
      "type": "video",
-     "src": "media/5937/l0-0.mp4",
-     "poster": "media/5937/l0-0-poster.webp",
-     "width": 860,
-     "height": 810,
+     "src": "https://video.twimg.com/tweet_video/HUxYNSAbYAA5rV4.mp4",
+     "poster": "https://pbs.twimg.com/tweet_video_thumb/HUxYNSAbYAA5rV4.jpg",
+     "ratio": 0.9419,
      "duration": 0,
-     "gif": true,
-     "remote": "https://video.twimg.com/tweet_video/HUxYNSAbYAA5rV4.mp4"
+     "gif": true
     }
    ],
    "links": [
@@ -60,11 +58,7 @@
    "domain": "research.google",
    "title": "Grounding AI agents in biological reality: Building blocks for autonomous wet labs",
    "description": null,
-   "image": {
-    "src": "media/5937/l1-og.webp",
-    "width": 800,
-    "height": 420
-   },
+   "image": null,
    "site": "research.google",
    "author": null,
    "published": null,

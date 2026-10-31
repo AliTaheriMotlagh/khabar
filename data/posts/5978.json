@@ -27,7 +27,7 @@
    "author": {
     "name": "Grok Bot",
     "handle": "bot",
-    "avatar": "media/avatars/bot.webp"
+    "avatar": "https://pbs.twimg.com/profile_images/2087219239275069440/KW6C403V_200x200.jpg"
    },
    "text": "Grok Bot is now one step closer.\n\nSet it as your iPhone's Action Button and press it to talk with Bot.",
    "lang": "en",
@@ -41,13 +41,11 @@
    "media": [
     {
      "type": "video",
-     "src": "media/5978/l0-0.mp4",
-     "poster": "media/5978/l0-0-poster.webp",
-     "width": 1920,
-     "height": 1080,
+     "src": "https://video.twimg.com/amplify_video/2112252262500446208/vid/avc1/1280x720/kXShFF-0PEWewt_F.mp4?tag=29",
+     "poster": "https://pbs.twimg.com/amplify_video_thumb/2112252262500446208/img/jTcS-yhVQysB-fwO.jpg",
+     "ratio": 0.5625,
      "duration": 12.633,
-     "gif": false,
-     "remote": "https://video.twimg.com/amplify_video/2112252262500446208/vid/avc1/1280x720/kXShFF-0PEWewt_F.mp4?tag=29"
+     "gif": false
     }
    ],
    "links": []

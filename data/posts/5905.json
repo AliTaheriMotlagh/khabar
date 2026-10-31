@@ -27,7 +27,7 @@
    "author": {
     "name": "Azalia Mirhoseini",
     "handle": "Azaliamirh",
-    "avatar": "media/avatars/azaliamirh.webp"
+    "avatar": "https://pbs.twimg.com/profile_images/1143526877425889281/LlHltTnh_200x200.png"
    },
    "text": "Introducing Next-Concept Models (NCMs), a new paradigm for language generation that is significantly faster and more data efficient than diffusion models.\n\nHow it works:\n1) First we learn a series of compressed representations of text from coarse to fine-grained, aka ‘concepts’. This step is done once, similar to training a tokenizer.\n\n2) At inference, we generate text going from a coarse to fine hierarchy via these ‘concepts’. A transformer predicts each level of the hierarchy sequentially, but the codes within each level are generated in parallel.\n\nCompared to strong diffusion language models, NCM achieves:\n\nUp to 31× faster generation on downstream tasks like summarization and machine translation.\n\n10-21× faster generation across TinyStories, LM1B, and OpenWebText, using  3-5× fewer training data.\n\nOn reasoning tasks like Sudoku, NCM outperforms both autoregressive and diffusion baselines with fewer sampling steps.\n\nLead authors: @KumbongHermann & @ishanskhare, together with a great team!",
    "lang": "en",
@@ -41,10 +41,8 @@
    "media": [
     {
      "type": "image",
-     "src": "media/5905/l0-0.webp",
-     "width": 1400,
-     "height": 582,
-     "remote": "https://pbs.twimg.com/media/HUncXxeawAAHKlF.jpg?name=orig"
+     "src": "https://pbs.twimg.com/media/HUncXxeawAAHKlF.jpg?name=orig",
+     "ratio": 0.416
     }
    ],
    "links": [],
@@ -52,7 +50,7 @@
     "author": {
      "name": "Hermann Kumbong",
      "handle": "KumbongHermann",
-     "avatar": "media/avatars/kumbonghermann.webp"
+     "avatar": "https://pbs.twimg.com/profile_images/1476325367183028229/5feWe5BN_200x200.jpg"
     },
     "text": "🚀 Introducing Next-Concept Modeling (NCM): our new paradigm for fast, parallel, coarse-to-fine text generation.\n\nCompared to strong diffusion language models (DLMs) at similar parameter size, NCM achieves:\n\n⚡ Up to 31× faster generation on downstream tasks like summarization and machine translation with comparable or better quality.\n\n🏎️ 10–21× faster unconditional generation across TinyStories, LM1B, and OpenWebText, with comparable or better generative perplexity and using  3–5× fewer training tokens.\n\n🧩 Better performance on reasoning tasks like Sudoku, outperforming both AR and diffusion baselines with fewer sampling steps.\n\nWith @ishanskhare, @IddahMlauzi, @ekellbuch, @simran_s_arora, @Azaliamirh, and @HazyResearch.\n\nMore details in the thread 🧵👇",
     "lang": "en",
@@ -66,13 +64,11 @@
     "media": [
      {
       "type": "video",
-      "src": "media/5905/l0q-0.mp4",
-      "poster": "media/5905/l0q-0-poster.webp",
-      "width": 1920,
-      "height": 1080,
+      "src": "https://video.twimg.com/amplify_video/2110429084321013761/vid/avc1/1280x720/mqcIbVUMhw8QRrq3.mp4?tag=29",
+      "poster": "https://pbs.twimg.com/amplify_video_thumb/2110429084321013761/img/k5qUtyszJ2CO1Kyq.jpg",
+      "ratio": 0.5625,
       "duration": 21.9,
-      "gif": false,
-      "remote": "https://video.twimg.com/amplify_video/2110429084321013761/vid/avc1/1280x720/mqcIbVUMhw8QRrq3.mp4?tag=29"
+      "gif": false
      }
     ],
     "links": []

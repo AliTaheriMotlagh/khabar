@@ -27,7 +27,7 @@
    "author": {
     "name": "Nic Cruz Patane",
     "handle": "niccruzpatane",
-    "avatar": "media/avatars/niccruzpatane.webp"
+    "avatar": "https://pbs.twimg.com/profile_images/1805666868071391232/1qAqAOng_200x200.jpg"
    },
    "text": "Here is the new @Tesla Roadster doing 0-60 in 1 second. \n\nIt has 4 thrusters in the rear development by @SpaceX. Tesla did a live launch and did 0-60 mph in 0.81s. \n\nThis is the fastest car in the world, BY FAR.",
    "lang": "en",
@@ -41,13 +41,11 @@
    "media": [
     {
      "type": "video",
-     "src": "media/5920/l0-0.mp4",
-     "poster": "media/5920/l0-0-poster.webp",
-     "width": 1320,
-     "height": 708,
+     "src": "https://video.twimg.com/amplify_video/2110903486040645632/vid/avc1/1320x708/ttzy7bkBt8506b2P.mp4?tag=29",
+     "poster": "https://pbs.twimg.com/amplify_video_thumb/2110903486040645632/img/6s4kTh0ar1h0haAn.jpg",
+     "ratio": 0.5364,
      "duration": 30.885,
-     "gif": false,
-     "remote": "https://video.twimg.com/amplify_video/2110903486040645632/vid/avc1/1320x708/ttzy7bkBt8506b2P.mp4?tag=29"
+     "gif": false
     }
    ],
    "links": []

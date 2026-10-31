@@ -27,7 +27,7 @@
    "author": {
     "name": "Chubby♨️",
     "handle": "kimmonismus",
-    "avatar": "media/avatars/kimmonismus.webp"
+    "avatar": "https://pbs.twimg.com/profile_images/1728327996375719936/RW7VBJfD_200x200.jpg"
    },
    "text": "Holy, DeepSeek 4.1-1017 is roughly on par with Opus 5, significant jump compared to DeepSeek 4.1 Flash regular.\n\nIt outperforms GLM5.3 across the board and even GPT-5.6 Sol!\n\nBuy 2 DGX spark and run this baby locally. China is back!",
    "lang": "en",
@@ -41,10 +41,8 @@
    "media": [
     {
      "type": "image",
-     "src": "media/5945/l0-0.webp",
-     "width": 680,
-     "height": 506,
-     "remote": "https://pbs.twimg.com/media/HU0cF0KXMAA456H.jpg?name=orig"
+     "src": "https://pbs.twimg.com/media/HU0cF0KXMAA456H.jpg?name=orig",
+     "ratio": 0.7441
     }
    ],
    "links": [],
@@ -52,7 +50,7 @@
     "author": {
      "name": "imjustnewatai",
      "handle": "imjustnewatai",
-     "avatar": "media/avatars/imjustnewatai.webp"
+     "avatar": "https://pbs.twimg.com/profile_images/2104834223810965504/ny1Vmilg_200x200.jpg"
     },
     "text": "Deepseek just released a new 4.1 version\n\nOn par with opus 5\n\nhttps://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash-1017",
     "lang": "en",
@@ -66,10 +64,8 @@
     "media": [
      {
       "type": "image",
-      "src": "media/5945/l0q-0.webp",
-      "width": 680,
-      "height": 506,
-      "remote": "https://pbs.twimg.com/media/HU0bmmzXIAA8l16.jpg?name=orig"
+      "src": "https://pbs.twimg.com/media/HU0bmmzXIAA8l16.jpg?name=orig",
+      "ratio": 0.7441
      }
     ],
     "links": [

@@ -27,7 +27,7 @@
    "author": {
     "name": "DeepSeek",
     "handle": "deepseek_ai",
-    "avatar": "media/avatars/deepseek_ai.webp"
+    "avatar": "https://pbs.twimg.com/profile_images/1717417613775757312/Uk1zNOj4_200x200.jpg"
    },
    "text": "🚀 DeepSeek-V4.1-Flash-1017 is here!\n\nStronger benchmark performance, faster task completion, and shorter outputs than the previous version—a Pareto improvement in performance and cost. Now live on our website, app, and API.\n\n🛠️ Optimized for @DeepSeekHarness, Tencent CodeBuddy, WorkBuddy, and more. Upgrade to DeepSeek Harness v0.2.1-rc.1 or later for the best experience with the new model.\n\n1/4",
    "lang": "en",
@@ -41,17 +41,13 @@
    "media": [
     {
      "type": "image",
-     "src": "media/5944/l0-0.webp",
-     "width": 1052,
-     "height": 889,
-     "remote": "https://pbs.twimg.com/media/HU0b65KbsAAypqr.jpg?name=orig"
+     "src": "https://pbs.twimg.com/media/HU0b65KbsAAypqr.jpg?name=orig",
+     "ratio": 0.8451
     },
     {
      "type": "image",
-     "src": "media/5944/l0-1.webp",
-     "width": 1400,
-     "height": 1206,
-     "remote": "https://pbs.twimg.com/media/HU0b7UfbwAAGXNH.jpg?name=orig"
+     "src": "https://pbs.twimg.com/media/HU0b7UfbwAAGXNH.jpg?name=orig",
+     "ratio": 0.8618
     }
    ],
    "links": []

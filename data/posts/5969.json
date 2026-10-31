@@ -27,7 +27,7 @@
    "author": {
     "name": "Chubby♨️",
     "handle": "kimmonismus",
-    "avatar": "media/avatars/kimmonismus.webp"
+    "avatar": "https://pbs.twimg.com/profile_images/1728327996375719936/RW7VBJfD_200x200.jpg"
    },
    "text": "official now: anthropic is preparing the release of their new model(s). Via The Information\n\nAnthropic is reportedly preparing a model that, when asked to fix one bug, can identify the broader class of problems behind it and ask whether it should address those too. That account comes from one anonymous tester; the model family and release date remain unclear.\n\nBut looks like it will be a significant jump compared to their released models.",
    "lang": "en",
@@ -41,10 +41,8 @@
    "media": [
     {
      "type": "image",
-     "src": "media/5969/l0-0.webp",
-     "width": 1200,
-     "height": 735,
-     "remote": "https://pbs.twimg.com/media/HU_9LgQWgAAyaAz.jpg?name=orig"
+     "src": "https://pbs.twimg.com/media/HU_9LgQWgAAyaAz.jpg?name=orig",
+     "ratio": 0.6125
     }
    ],
    "links": []

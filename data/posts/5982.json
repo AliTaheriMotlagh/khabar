@@ -27,7 +27,7 @@
    "author": {
     "name": "Eugenia Kuyda",
     "handle": "ekuyda",
-    "avatar": "media/avatars/ekuyda.webp"
+    "avatar": "https://pbs.twimg.com/profile_images/2105081341352263680/H9RzWr7T_200x200.jpg"
    },
    "text": "Wabi 2.0 is live!\n\npersonal agents are one person, one chat. but the parts of life that matter run on more than one person\n\nWabi is an agent you use together. you talk to it, it does stuff, builds the apps you need, and anyone can join the thread - your partner, your best friend, the preschool moms groupchat\n\nschool changes pickup time → Wabi updates the family calendar, everyone sees it.\na show you’d both love → Wabi finds a night that works, gets the tickets.\nthe trip everyone keeps talking about → Wabi picks the dates, builds the itinerary, books it\n\ngo start a thread with your people 👇",
    "lang": "en",
@@ -41,13 +41,11 @@
    "media": [
     {
      "type": "video",
-     "src": "media/5982/l0-0.mp4",
-     "poster": "media/5982/l0-0-poster.webp",
-     "width": 3840,
-     "height": 2160,
+     "src": "https://video.twimg.com/amplify_video/2112212457234284544/vid/avc1/1280x720/HW0ErfX-0u7kWbHU.mp4?tag=29",
+     "poster": "https://pbs.twimg.com/amplify_video_thumb/2112212457234284544/img/Wzg-bjHfnRT2-0FG.jpg",
+     "ratio": 0.5625,
      "duration": 75.1,
-     "gif": false,
-     "remote": "https://video.twimg.com/amplify_video/2112212457234284544/vid/avc1/1280x720/HW0ErfX-0u7kWbHU.mp4?tag=29"
+     "gif": false
     }
    ],
    "links": []

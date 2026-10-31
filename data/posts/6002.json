@@ -27,7 +27,7 @@
    "author": {
     "name": "Gecko Robotics",
     "handle": "geckorobotics",
-    "avatar": "media/avatars/geckorobotics.webp"
+    "avatar": "https://pbs.twimg.com/profile_images/1630301767236763650/XKd-KXNQ_200x200.jpg"
    },
    "text": "Today, we're announcing that our contract with the U.S. Navy has quadrupled to $300 million to improve fleet readiness.\n\nGecko’s AI and robotic technology is able to save up to $8 million in repair costs alone per ship, while also identifying structural issues up to 50 times faster than traditional methods.\n\nBy reducing inspection times from months to days we are able to get ships back to sea quicker.\n\nThis fourfold expansion will accommodate rapid robotic deployment across the Navy and is one of the strongest public endorsements yet of operational AI and robotics in defense.",
    "lang": "en",
@@ -41,10 +41,8 @@
    "media": [
     {
      "type": "image",
-     "src": "media/6002/l0-0.webp",
-     "width": 1400,
-     "height": 788,
-     "remote": "https://pbs.twimg.com/media/HVBa8A1XoAAAO7_.jpg?name=orig"
+     "src": "https://pbs.twimg.com/media/HVBa8A1XoAAAO7_.jpg?name=orig",
+     "ratio": 0.5625
     }
    ],
    "links": []

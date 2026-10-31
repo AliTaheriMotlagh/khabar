@@ -27,7 +27,7 @@
    "author": {
     "name": "Rohan Paul",
     "handle": "rohanpaul_ai",
-    "avatar": "media/avatars/rohanpaul_ai.webp"
+    "avatar": "https://pbs.twimg.com/profile_images/1816185267037859840/Fd18CH0v_200x200.jpg"
    },
    "text": "BBC: US prosecutors say the ex-OpenAI engineer accused of bugging an executive meeting room has Saudi government backing.\n\nAn unnamed Saudi royal exchanged frequent WhatsApp messages with Alfozan and tried to recruit him to a Saudi AI initiative, and Alfozan allegedly agreed in May that the kingdom needed him more than the US while saying he would wait for his OpenAI stock to vest.\n\nThe day after his arrest, his wife and son flew one-way to Qatar on business-class tickets that prosecutors say a Saudi military official booked and paid for.\n\nProsecutors say he used his wife’s ChatGPT account to research making and encrypting a recording device, and used an internal OpenAI productivity agent to find rooms used by senior staff and outside partners.\n\nThe bugged room hosted meetings between OpenAI leadership and government officials, which prosecutors frame as a national security risk, while OpenAI says it has seen no sign of stolen model weights, source code or customer data.",
    "lang": "en",
@@ -41,17 +41,13 @@
    "media": [
     {
      "type": "image",
-     "src": "media/5977/l0-0.webp",
-     "width": 1111,
-     "height": 1306,
-     "remote": "https://pbs.twimg.com/media/HVAr2TzbcAAod8v.jpg?name=orig"
+     "src": "https://pbs.twimg.com/media/HVAr2TzbcAAod8v.jpg?name=orig",
+     "ratio": 1.1755
     },
     {
      "type": "image",
-     "src": "media/5977/l0-1.webp",
-     "width": 609,
-     "height": 553,
-     "remote": "https://pbs.twimg.com/media/HVAsGL2bcAA8FV8.png?name=orig"
+     "src": "https://pbs.twimg.com/media/HVAsGL2bcAA8FV8.png?name=orig",
+     "ratio": 0.908
     }
    ],
    "links": []

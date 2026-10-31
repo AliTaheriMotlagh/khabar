@@ -27,7 +27,7 @@
    "author": {
     "name": "Felix Rieseberg",
     "handle": "felixrieseberg",
-    "avatar": "media/avatars/felixrieseberg.webp"
+    "avatar": "https://pbs.twimg.com/profile_images/1544558915819487233/qMrauBqx_200x200.jpg"
    },
    "text": "Hi, I'm Felix. I'm an eng lead working on Claude. I love watching people take flight and do things they never thought possible.\n\nWe often describe that as \"being more ambitious\" when using AI, which is tricky advice to follow. I wrote a tutorial:\n\nhttps://felixrieseberg.com/how-to-be-more-ambitious-a-tutorial-for-humans-with-models/",
    "lang": "en",
@@ -49,11 +49,7 @@
    "domain": "felixrieseberg.com",
    "title": "How to be more ambitious: A tutorial for humans with models",
    "description": "I work on Claude. It's an interesting experience: Every day I learn about yet another feat accomplished with or by Claude that I hadn't considered, didn't think possible, or simply lacked the curiosity and time to try. This month, it may have helped discover a new planet,",
-   "image": {
-    "src": "media/5909/l1-og.webp",
-    "width": 1200,
-    "height": 841
-   },
+   "image": "https://storage.ghost.io/c/89/e0/89e08557-681a-40be-8264-278bf46d6b25/content/images/size/w1200/2026/10/modo_de_volar_a_way_of_flying_1951.10.55-1.jpg",
    "site": "Felix Rieseberg",
    "author": null,
    "published": "2026-10-13T14:48:44.000Z",

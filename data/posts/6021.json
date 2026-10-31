@@ -27,7 +27,7 @@
    "author": {
     "name": "Dünya Baradari",
     "handle": "dunyaverse",
-    "avatar": "media/avatars/dunyaverse.webp"
+    "avatar": "https://pbs.twimg.com/profile_images/2033352934638116864/ga_Tofui_200x200.jpg"
    },
    "text": "Today we introduce Plato: the ring for near-silent speech.\n\nWe speak faster than we write. But we can’t always say out loud what we’re thinking.\n\nPlato turns thought into action.\n\nDictate. Transform. Delegate.\n\nOrder now: https://plato.it.com. Limited supply.",
    "lang": "en",
@@ -41,13 +41,11 @@
    "media": [
     {
      "type": "video",
-     "src": "media/6021/l0-0.mp4",
-     "poster": "media/6021/l0-0-poster.webp",
-     "width": 2560,
-     "height": 1440,
+     "src": "https://video.twimg.com/amplify_video/2112578508379881472/vid/avc1/1280x720/ePM0qWYnPJe9oLf5.mp4?tag=29",
+     "poster": "https://pbs.twimg.com/amplify_video_thumb/2112578508379881472/img/hCbcllWQfpzrAc7x.jpg",
+     "ratio": 0.5625,
      "duration": 76.916,
-     "gif": false,
-     "remote": "https://video.twimg.com/amplify_video/2112578508379881472/vid/avc1/1280x720/ePM0qWYnPJe9oLf5.mp4?tag=29"
+     "gif": false
     }
    ],
    "links": [
@@ -60,11 +58,7 @@
    "domain": "plato.it.com",
    "title": "Plato Ring | Plato",
    "description": "From thought to action, at your fingertips. Explore Plato Ring in Silver, Gold, Rosé, and Stealth finishes.",
-   "image": {
-    "src": "media/6021/l1-og.webp",
-    "width": 1200,
-    "height": 630
-   },
+   "image": null,
    "site": "Plato",
    "author": null,
    "published": null,

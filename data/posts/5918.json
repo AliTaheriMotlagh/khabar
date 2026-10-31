@@ -27,7 +27,7 @@
    "author": {
     "name": "DogeDesigner",
     "handle": "cb_doge",
-    "avatar": "media/avatars/cb_doge.webp"
+    "avatar": "https://pbs.twimg.com/profile_images/1498070100393754625/C2V-fbll_200x200.jpg"
    },
    "text": "HOLY SHIT",
    "lang": "en",
@@ -41,13 +41,11 @@
    "media": [
     {
      "type": "video",
-     "src": "media/5918/l0-0.mp4",
-     "poster": "media/5918/l0-0-poster.webp",
-     "width": 1126,
-     "height": 1126,
+     "src": "https://video.twimg.com/amplify_video/2110901535861522432/vid/avc1/720x720/SrIKBcqtqmPxJTLv.mp4?tag=29",
+     "poster": "https://pbs.twimg.com/amplify_video_thumb/2110901535861522432/img/B7f-3Ddhzdk_gr2G.jpg",
+     "ratio": 1.0,
      "duration": 9.031,
-     "gif": false,
-     "remote": "https://video.twimg.com/amplify_video/2110901535861522432/vid/avc1/720x720/SrIKBcqtqmPxJTLv.mp4?tag=29"
+     "gif": false
     }
    ],
    "links": []

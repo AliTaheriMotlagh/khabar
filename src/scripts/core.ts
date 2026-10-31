@@ -23,6 +23,14 @@ export const store = {
   },
 };
 
+/** Without an AudioEncoder (iOS before 26) a video's sound is recorded as it plays, through an audio context iOS only
+ *  starts in a tap: call it in the tap. Null where the encoders make the sound. */
+export function tapAudio(): AudioContext | null {
+  const ac = typeof AudioEncoder === 'function' ? null : new AudioContext();
+  ac?.resume().catch(() => {});
+  return ac;
+}
+
 export const fmtNum = (n: number) => n.toLocaleString('fa-IR');
 export const compact = (n: number) => new Intl.NumberFormat('fa-IR', { notation: 'compact', maximumFractionDigits: 1 }).format(n);
 export const esc = (s = '') => s.replace(/[&<>"']/g, (c) => `&#${c.charCodeAt(0)};`);

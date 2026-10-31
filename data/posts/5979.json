@@ -27,7 +27,7 @@
    "author": {
     "name": "ChatGPT",
     "handle": "ChatGPT",
-    "avatar": "media/avatars/chatgpt.webp"
+    "avatar": "https://pbs.twimg.com/profile_images/2081980424666935296/qU5G7mQg_200x200.jpg"
    },
    "text": "ChatGPT Slides has new ways to get your deck ready—and get everyone on the same page.\n\n• Work together in real time in ChatGPT: Share decks, edit together, and leave comments. Ask ChatGPT or your dot to turn feedback into updates.\n\n• Edit right on the slide: Click to change text, update charts, and move or resize images and shapes.\n\nTo get started, ask ChatGPT to \"create ChatGPT slides\" from a conversation or a file you've shared. Present in ChatGPT, or export to PowerPoint or Google Slides.\n\nAvailable on Pro, Business, and Enterprise plans.\nhttp://chatgpt.com/features/slides/",
    "lang": "en",
@@ -41,24 +41,18 @@
    "media": [
     {
      "type": "image",
-     "src": "media/5979/l0-0.webp",
-     "width": 1400,
-     "height": 927,
-     "remote": "https://pbs.twimg.com/media/HVBDzo_aEAAcFxo.jpg?name=orig"
+     "src": "https://pbs.twimg.com/media/HVBDzo_aEAAcFxo.jpg?name=orig",
+     "ratio": 0.662
     },
     {
      "type": "image",
-     "src": "media/5979/l0-1.webp",
-     "width": 1400,
-     "height": 927,
-     "remote": "https://pbs.twimg.com/media/HVBDzo4agAAgnMd.jpg?name=orig"
+     "src": "https://pbs.twimg.com/media/HVBDzo4agAAgnMd.jpg?name=orig",
+     "ratio": 0.662
     },
     {
      "type": "image",
-     "src": "media/5979/l0-2.webp",
-     "width": 1400,
-     "height": 927,
-     "remote": "https://pbs.twimg.com/media/HVBDzo3bwAAGBdl.jpg?name=orig"
+     "src": "https://pbs.twimg.com/media/HVBDzo3bwAAGBdl.jpg?name=orig",
+     "ratio": 0.662
     }
    ],
    "links": [

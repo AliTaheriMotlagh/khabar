@@ -27,7 +27,7 @@
    "author": {
     "name": "Steve (Builder.io)",
     "handle": "Steve8708",
-    "avatar": "media/avatars/steve8708.webp"
+    "avatar": "https://pbs.twimg.com/profile_images/1733342770436472832/mBVPTgpn_200x200.jpg"
    },
    "text": "Introducing Agent-Native: an open-source framework for building agentic apps.\n\nAgents love walls of text. But humans don't.\n\nAn agentic app let's you interact with agents through a visual interface. Engage with agents visually, via text, or both at once.\n\nNow in beta.",
    "lang": "en",
@@ -41,13 +41,11 @@
    "media": [
     {
      "type": "video",
-     "src": "media/5903/l0-0.mp4",
-     "poster": "media/5903/l0-0-poster.webp",
-     "width": 1080,
-     "height": 1080,
+     "src": "https://video.twimg.com/amplify_video/2110401454385295360/vid/avc1/720x720/TwwHa-x7UO3VSc06.mp4?tag=16",
+     "poster": "https://pbs.twimg.com/amplify_video_thumb/2110401454385295360/img/X_ZqJmOIHhQubHE6.jpg",
+     "ratio": 1.0,
      "duration": 111.176,
-     "gif": false,
-     "remote": "https://video.twimg.com/amplify_video/2110401454385295360/vid/avc1/720x720/TwwHa-x7UO3VSc06.mp4?tag=16"
+     "gif": false
     }
    ],
    "links": []

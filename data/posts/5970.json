@@ -27,7 +27,7 @@
    "author": {
     "name": "Modal",
     "handle": "modal",
-    "avatar": "media/avatars/modal.webp"
+    "avatar": "https://pbs.twimg.com/profile_images/2116276624182124546/4nU6IM_Y_200x200.jpg"
    },
    "text": "We got our hands on @nvidia's new Vera CPU and put it to the test.\n\nWe built a benchmark using real-world agentic workloads to see how it performs under contention.\n\nIn early tests, Vera delivered up to 2x the throughput of comparable x86 hardware, maintaining low latency even as hundreds of concurrent workloads competed for resources.\n\nFor Modal Sandboxes, that could mean running more agents in parallel without sacrificing latency.",
    "lang": "en",
@@ -41,13 +41,11 @@
    "media": [
     {
      "type": "video",
-     "src": "media/5970/l0-0.mp4",
-     "poster": "media/5970/l0-0-poster.webp",
-     "width": 1624,
-     "height": 1340,
+     "src": "https://video.twimg.com/amplify_video/2112172103659089920/vid/avc1/872x720/KLfiGjPqJ9HH9aaY.mp4?tag=29",
+     "poster": "https://pbs.twimg.com/amplify_video_thumb/2112172103659089920/img/5U9VXUPavDuwT8Zf.jpg",
+     "ratio": 0.8251,
      "duration": 15,
-     "gif": false,
-     "remote": "https://video.twimg.com/amplify_video/2112172103659089920/vid/avc1/872x720/KLfiGjPqJ9HH9aaY.mp4?tag=29"
+     "gif": false
     }
    ],
    "links": []

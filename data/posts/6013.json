@@ -27,7 +27,7 @@
    "author": {
     "name": "Mistral AI",
     "handle": "MistralAI",
-    "avatar": "media/avatars/mistralai.webp"
+    "avatar": "https://pbs.twimg.com/profile_images/1996905418065375232/mzwynOLB_200x200.jpg"
    },
    "text": "Today we’re announcing a new collaboration with @nvidia to bring AI to industrial engineering: \n\n- faster simulation\n- open benchmarks and supporting datasets for physics AI\n- evaluations for agentic AI in CAE and EDA\n\nMore here: https://mistral.ai/news/mistral-nvidia-ai-for-industrial-engineering",
    "lang": "en",
@@ -41,10 +41,8 @@
    "media": [
     {
      "type": "image",
-     "src": "media/6013/l0-0.webp",
-     "width": 1400,
-     "height": 732,
-     "remote": "https://pbs.twimg.com/media/HVJjJIKXUAAWj0d.jpg?name=orig"
+     "src": "https://pbs.twimg.com/media/HVJjJIKXUAAWj0d.jpg?name=orig",
+     "ratio": 0.5225
     }
    ],
    "links": [
@@ -57,11 +55,7 @@
    "domain": "mistral.ai",
    "title": "Mistral Advances AI for Engineering with NVIDIA | Mistral",
    "description": "Mistral is collaborating with NVIDIA to develop a new generation of AI-native engineering workflows powered by NVIDIA accelerated computing.",
-   "image": {
-    "src": "media/6013/l1-og.webp",
-    "width": 1200,
-    "height": 630
-   },
+   "image": "https://mistral.ai/cms-media/api/media/file/cover-mistral-sovereign%20copie.webp",
    "site": "Mistral",
    "author": null,
    "published": null,

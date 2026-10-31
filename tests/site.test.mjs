@@ -151,8 +151,13 @@ test('cards: a view counter on every story; pictures come through the site, with
   for (const item of items) assert.match(item, /data-views="\d+"[^>]*hidden/, 'hidden until the API has a count');
   let telegram = 0;
   let other = 0;
-  // The news (lead and timeline); the channel's avatar is re-read on every crawl.
-  const news = home.slice(Math.max(0, home.indexOf('class="lead-main')), home.indexOf('</ol>', home.indexOf('data-tl>')));
+  // The news (the home page's lead, and the timeline on every page); the channel's avatar is re-read on every crawl.
+  // Every page, not just the home one: its 20 newest posts can all be tweets, with no Telegram picture among them.
+  const news = allPages().map(({ file }) => {
+    const page = html(file);
+    const lead = page.indexOf('class="lead-main');
+    return page.slice(lead >= 0 ? lead : page.indexOf('data-tl>'), page.indexOf('</ol>', page.indexOf('data-tl>')));
+  }).join('\n');
   const attr = (tag, name) => tag.match(new RegExp(`\\s${name}="([^"]*)"`))?.[1]?.replace(/&amp;/g, '&');
   /** Which stored URL an /api/media or /api/img address stands for. */
   const item = (u) => {
@@ -193,7 +198,7 @@ test('cards: a view counter on every story; pictures come through the site, with
       assert.ok(alt.includes(new URL(src).searchParams.get('url')), 'falls back to the original');
     }
   }
-  assert.ok(telegram > 0 && other > 0, 'the home page has Telegram and X pictures');
+  assert.ok(telegram > 0 && other > 0, 'the timeline has Telegram and X pictures');
 });
 
 /** One feed's checks, for readers in Iran: valid XML, its own self link, items newest first, the newest FULL whole

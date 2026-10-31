@@ -27,7 +27,7 @@
    "author": {
     "name": "Alex Dimakis",
     "handle": "AlexGDimakis",
-    "avatar": "media/avatars/alexgdimakis.webp"
+    "avatar": "https://pbs.twimg.com/profile_images/542926798338543617/KwlwoJRr_200x200.jpeg"
    },
    "text": "We added Gemini 4 Argon to our AutoResearchExam Pareto curve. It is 2-3 times cheaper compared to the other frontier models for almost the same ML engineering performance. Congratulations to the GDM team.",
    "lang": "en",
@@ -41,10 +41,8 @@
    "media": [
     {
      "type": "image",
-     "src": "media/6006/l0-0.webp",
-     "width": 1400,
-     "height": 491,
-     "remote": "https://pbs.twimg.com/media/HVG93BGbEAAbojV.jpg?name=orig"
+     "src": "https://pbs.twimg.com/media/HVG93BGbEAAbojV.jpg?name=orig",
+     "ratio": 0.3509
     }
    ],
    "links": []

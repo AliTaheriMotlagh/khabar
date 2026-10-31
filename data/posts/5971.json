@@ -27,7 +27,7 @@
    "author": {
     "name": "Simon Mo",
     "handle": "simon_mo_",
-    "avatar": "media/avatars/simon_mo_.webp"
+    "avatar": "https://pbs.twimg.com/profile_images/2014276300895293440/eTSX8W-V_200x200.jpg"
    },
    "text": "A story in 3 acts, last 3 days: AMD, NVIDIA, Google all contribute significant improvement to  @vllm_project, measured with @SemiAnalysis_ standard benchmark on K3. Great work from @inferact team shepherding and leading many of the optimizations!!!",
    "lang": "en",
@@ -41,24 +41,18 @@
    "media": [
     {
      "type": "image",
-     "src": "media/5971/l0-0.webp",
-     "width": 1400,
-     "height": 1050,
-     "remote": "https://pbs.twimg.com/media/HU8fkAIbQAADK9C.jpg?name=orig"
+     "src": "https://pbs.twimg.com/media/HU8fkAIbQAADK9C.jpg?name=orig",
+     "ratio": 0.7498
     },
     {
      "type": "image",
-     "src": "media/5971/l0-1.webp",
-     "width": 1200,
-     "height": 997,
-     "remote": "https://pbs.twimg.com/media/HU8fliCbwAAwYLx.jpg?name=orig"
+     "src": "https://pbs.twimg.com/media/HU8fliCbwAAwYLx.jpg?name=orig",
+     "ratio": 0.8308
     },
     {
      "type": "image",
-     "src": "media/5971/l0-2.webp",
-     "width": 1200,
-     "height": 1038,
-     "remote": "https://pbs.twimg.com/media/HU8foBmaEAADTKU.jpg?name=orig"
+     "src": "https://pbs.twimg.com/media/HU8foBmaEAADTKU.jpg?name=orig",
+     "ratio": 0.865
     }
    ],
    "links": []

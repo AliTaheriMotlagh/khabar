@@ -27,7 +27,7 @@
    "author": {
     "name": "Tim Suchanek",
     "handle": "TimSuchanek",
-    "avatar": "media/avatars/timsuchanek.webp"
+    "avatar": "https://pbs.twimg.com/profile_images/2113443074269679616/8E1jtj66_200x200.jpg"
    },
    "text": "Introducing Expand Fetch, a new way to scrape and crawl the web.\n\nYour agent has never seen the web. No wonder it gets basic questions wrong.\n\nTraditional Markdown APIs lose critical details. So we trained two System one models to change that:\n\nIris, a vision model that sees pages like you do, preserving tables, icons, and layouts.\n\nX-Ray, a JSON model that uncovers the hidden data behind every page.\n\nEvery fetch also comes with a Wayback Machine. Every line links back to its source, so you can verify exactly what your agent saw.\n\nThree products. One API.\n\nOn our benchmark of 1,094 questions across 326 challenging web pages, agents using Expand got 74% right. The next best API got 55%.\n\nAvailable today at $1 per 1,000 fetches.\n\nTry it at http://expand.ai",
    "lang": "en",
@@ -41,13 +41,11 @@
    "media": [
     {
      "type": "video",
-     "src": "media/5904/l0-0.mp4",
-     "poster": "media/5904/l0-0-poster.webp",
-     "width": 3840,
-     "height": 2160,
+     "src": "https://video.twimg.com/amplify_video/2110394569405734912/vid/avc1/1280x720/8pmaJ1vsee-NsW1l.mp4?tag=29",
+     "poster": "https://pbs.twimg.com/amplify_video_thumb/2110394569405734912/img/jOj9dMydMZbEhSw2.jpg",
+     "ratio": 0.5625,
      "duration": 85.251,
-     "gif": false,
-     "remote": "https://video.twimg.com/amplify_video/2110394569405734912/vid/avc1/1280x720/8pmaJ1vsee-NsW1l.mp4?tag=29"
+     "gif": false
     }
    ],
    "links": [
@@ -60,11 +58,7 @@
    "domain": "expand.ai",
    "title": "Let your agent see the web.",
    "description": "Fetch and crawl with frontier System One models.",
-   "image": {
-    "src": "media/5904/l1-og.webp",
-    "width": 1200,
-    "height": 630
-   },
+   "image": "https://expand.ai/opengraph-image.jpg?opengraph-image.11drh8ruf.2a9.jpg",
    "site": "Expand",
    "author": null,
    "published": null,

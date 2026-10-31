@@ -27,7 +27,7 @@
    "author": {
     "name": "Seb Johnson",
     "handle": "SebJohnsonUK",
-    "avatar": "media/avatars/sebjohnsonuk.webp"
+    "avatar": "https://pbs.twimg.com/profile_images/1975936063777472512/TqPY1KKM_200x200.jpg"
    },
    "text": "Nvidia is the now the most active VC investor in the world, and the largest in Europe. \n\nCrazy\n\ncc @dealroomco",
    "lang": "en",
@@ -41,10 +41,8 @@
    "media": [
     {
      "type": "image",
-     "src": "media/5973/l0-0.webp",
-     "width": 1400,
-     "height": 1073,
-     "remote": "https://pbs.twimg.com/media/HU8DgXHW0AI0lC7.jpg?name=orig"
+     "src": "https://pbs.twimg.com/media/HU8DgXHW0AI0lC7.jpg?name=orig",
+     "ratio": 0.7663
     }
    ],
    "links": [],
@@ -52,7 +50,7 @@
     "author": {
      "name": "Seb Johnson",
      "handle": "SebJohnsonUK",
-     "avatar": "media/avatars/sebjohnsonuk.webp"
+     "avatar": "https://pbs.twimg.com/profile_images/1975936063777472512/TqPY1KKM_200x200.jpg"
     },
     "text": "BREAKING: Jensen has just announced that @nvidia in investing $1bn+ into 5 UK startups:\n\n>> Boltz which is building biomolecular models and AI agents that helps scientists predict molecular structures and interactions\n\n>> Foresight which helps owners of major infrastructure projects predict completion dates, mitigate risks and accelerate time to revenue.\n\n>> Hiverge which is building an AI discovery engine that automatically writes and optimizes algorithms for tasks such as faster AI training and complex logistics planning.\n\n>> Prima Mente which focuses on building biological foundation models to decode complex diseases and identify novel therapeutic targets, starting with Alzheimer’s, Parkinson’s and ALS.\n\n>> Riverlane which builds real-time error correction hardware and software that work across all major qubit types, helping quantum computers become reliable enough for practical use.\n\nHe announced the news in London this evening.\n\nApologies for the terrible pic which includes @rowlsmanthorpe’s side profile",
     "lang": "en",
@@ -66,10 +64,8 @@
     "media": [
      {
       "type": "image",
-      "src": "media/5973/l0q-0.webp",
-      "width": 843,
-      "height": 1544,
-      "remote": "https://pbs.twimg.com/media/HUnfdb7WEAA1uUB.jpg?name=orig"
+      "src": "https://pbs.twimg.com/media/HUnfdb7WEAA1uUB.jpg?name=orig",
+      "ratio": 1.8316
      }
     ],
     "links": []

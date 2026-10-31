@@ -27,7 +27,7 @@
    "author": {
     "name": "Underdog AI",
     "handle": "UnderdogAI",
-    "avatar": "media/avatars/underdogai.webp"
+    "avatar": "https://pbs.twimg.com/profile_images/2116283695946694656/x_eWSHUS_200x200.jpg"
    },
    "text": "Today we’re releasing Underdog Bark 3.0, the #1 frontier speech model\n\nIt's a tiny 163 MB download as accurate as NVIDIA’s Parakeet (15x bigger). It beats OpenAI's Whisper large-v3 (57x bigger)\n\nIt's fast- transcribes 1 min of audio in <0.25s on a Macbook. On recorded meetings (AMI), Bark 3.0 gets 7.82% of words wrong. Parakeet gets 9.42%. OpenAI's Whisper large-v3 gets 13.63% error rate\n\nBark runs on both your Laptop & Phone. It’s free and open source under CC-BY 4.0\n\nTry private on-device meeting notes & dictation, powered by Bark, in Underdog today: http://underdog.ai/bark",
    "lang": "en",
@@ -41,10 +41,8 @@
    "media": [
     {
      "type": "image",
-     "src": "media/6025/l0-0.webp",
-     "width": 1400,
-     "height": 788,
-     "remote": "https://pbs.twimg.com/media/HVHunLfa4AAeL2Y.jpg?name=orig"
+     "src": "https://pbs.twimg.com/media/HVHunLfa4AAeL2Y.jpg?name=orig",
+     "ratio": 0.5629
     }
    ],
    "links": [
@@ -57,11 +55,7 @@
    "domain": "underdog.ai",
    "title": "Underdog Bark 3.0",
    "description": "Our speech model: 163 MB, as accurate as NVIDIA's Parakeet and 15x smaller, and it runs on your Mac.",
-   "image": {
-    "src": "media/6025/l1-og.webp",
-    "width": 1200,
-    "height": 630
-   },
+   "image": "https://underdog.ai/bark/preview-og-v16.jpg",
    "site": "Underdog",
    "author": null,
    "published": null,

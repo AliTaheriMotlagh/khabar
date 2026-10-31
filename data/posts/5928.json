@@ -27,7 +27,7 @@
    "author": {
     "name": "Anthropic",
     "handle": "AnthropicAI",
-    "avatar": "media/avatars/anthropicai.webp"
+    "avatar": "https://pbs.twimg.com/profile_images/1798110641414443008/XP8gyBaY_200x200.jpg"
    },
    "text": "New from our STEM Fellows Program: Designing more efficient quantum circuits with Claude.\n\nGiven plain-language instructions, Claude Mythos 5 designed quantum circuits that improve on the best published ones, sometimes by an order of magnitude or more.\n\nMore efficient circuits reduce the resources needed by quantum algorithms, which could bring quantum computing applications in chemistry and materials science within reach sooner.\n\nRead more: https://www.anthropic.com/research/designing-efficient-quantum-circuits",
    "lang": "en",
@@ -49,11 +49,7 @@
    "domain": "anthropic.com",
    "title": "Designing more efficient quantum circuits with Claude",
    "description": "Working largely on its own, Claude designed quantum circuits that improve on the best published versions, in some cases by an order of magnitude or more.",
-   "image": {
-    "src": "media/5928/l1-og.webp",
-    "width": 1400,
-    "height": 788
-   },
+   "image": "https://www-cdn.anthropic.com/images/4zrzovbb/website/cc389d90b468ebc86011f6642099dfad9a4a757f-2000x1125.jpg",
    "site": "anthropic.com",
    "author": null,
    "published": "2026-10-16T00:00:00.000Z",

@@ -27,7 +27,7 @@
    "author": {
     "name": "Satya Nadella",
     "handle": "satyanadella",
-    "avatar": "media/avatars/satyanadella.webp"
+    "avatar": "https://pbs.twimg.com/profile_images/1221837516816306177/_Ld4un5A_200x200.jpg"
    },
    "text": "In @Nature this week, our new research shows how machine learning can improve weather forecasts two to six weeks out, a timeframe that's historically been very difficult to predict.\n\nIt's exciting to see the potential of this work to help us better prepare for extreme weather, manage natural resources, and make more informed decisions in agriculture.\n\nThere's a broader lesson here... the future may not just be about ever-more-capable models, but about building intelligent verification systems around them: systems that learn where models are systematically wrong, reason about cause and effect, and continuously calibrate predictions against reality.\n\nRead more: https://www.microsoft.com/en-us/research/story/new-ai-framework-bridges-a-critical-gap-in-mid-range-weather-forecasts/",
    "lang": "en",
@@ -49,11 +49,7 @@
    "domain": "microsoft.com",
    "title": "New AI framework bridges a critical gap in mid-range weather forecasts - Microsoft Research",
    "description": "Weather forecasts are unreliable past two weeks, leaving a crucial gap for farmers, resource planners and others. Probabilistic Bias Correction improves extended forecasting, taking top honors in a global competition and showing promise for real-world use.",
-   "image": {
-    "src": "media/5940/l1-og.webp",
-    "width": 1400,
-    "height": 788
-   },
+   "image": "https://www.microsoft.com/en-us/research/wp-content/uploads/2026/10/PBCWeatherFramework-Story_hero_1400x788.jpg",
    "site": "Microsoft Research",
    "author": null,
    "published": null,

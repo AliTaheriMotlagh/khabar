@@ -27,7 +27,7 @@
    "author": {
     "name": "AiBattle",
     "handle": "AiBattle_",
-    "avatar": "media/avatars/aibattle_.webp"
+    "avatar": "https://pbs.twimg.com/profile_images/1904171726260654080/xeXraCCx_200x200.jpg"
    },
    "text": "There are new rumors that the next GLM Model, GLM 5.5, will have 2.5T - 3.5T parameters and significant architecture changes\n\nIn its August HKEX interim filing, Zhipu AI said it had validated the idea of Looped Transformers in preliminary experiments. I wonder if we'll see it implemented in the next GLM model",
    "lang": "en",
@@ -41,10 +41,8 @@
    "media": [
     {
      "type": "image",
-     "src": "media/6027/l0-0.webp",
-     "width": 835,
-     "height": 463,
-     "remote": "https://pbs.twimg.com/media/HVJgyZJWQAAMlb8.png?name=orig"
+     "src": "https://pbs.twimg.com/media/HVJgyZJWQAAMlb8.png?name=orig",
+     "ratio": 0.5545
     }
    ],
    "links": [],
@@ -52,7 +50,7 @@
     "author": {
      "name": "Max For AI",
      "handle": "MaxForAI",
-     "avatar": "media/avatars/maxforai.webp"
+     "avatar": "https://pbs.twimg.com/profile_images/1885611457376903171/zWWnahYp_200x200.jpg"
     },
     "text": "关于 @Zai_org  下一代GLM5.5的一些最新消息：\n\n- 下一代基座规模在2.5万亿至3.5万亿之间，比此前流传的1.6T大了不少。架构改动也比较激进，希望同时提高训练和推理速度，把推理成本压下来，目标是在发布第一天就能提供大规模服务。\n\n- 前段时间基座训练出现了loss不降的情况，进度因此慢于市场预期。这个问题近期应该已经解决，预计能较快完成训练。\n\n- 预计下一代GLM模型能达到Fable级别的旗舰水平。\n\n- 会继续朝Claude的使用体感推进，在后训练阶段大量投入任务环境，通过持续迭代提升模型能力。GLM-5系列的一个基座可以使用半年以上，在同一基座上持续做后训练、更新能力，这也是他们目前比较明确的技术路线。\n\n- 之前的RSI已经取得了一些进展，但目前还没有成为模型能力提升的主力，预计会在未来某个版本中进入服务。\n\n我个人视角比较期待的是，这次GLM-5.5能不能把3T左右的模型规模、旗舰级的能力、推理速度和调用成本一起做好。\n\n尤其是拿模型跑Agent，任务一长，就要连续调用很多轮。模型能不能把事情做完、要等多久、最后花多少钱、服务会不会限流，都会直接影响实际使用和销售的情况。",
     "lang": "zh",

@@ -27,7 +27,7 @@
    "author": {
     "name": "TypeSafe AI",
     "handle": "typesafeai",
-    "avatar": "media/avatars/typesafeai.webp"
+    "avatar": "https://pbs.twimg.com/profile_images/2100293691227447296/bVoZ2u00_200x200.jpg"
    },
    "text": "we announced Jev 1.14 on 10.14 at 1:14pm PT 🔥\n\na new and improved model, along with experimental features for our dreamers:\n\n• images\n• a new box type\n• longer context\n\nsurprise, Jev was already able to see you! 👁️  \n\nBUT our bar for production-grade intelligence is quite high, so builders beware, these are preview features.\n\nenter the ~*~ danger zone ~*~ at your own risk. 🚨",
    "lang": "en",
@@ -41,10 +41,8 @@
    "media": [
     {
      "type": "image",
-     "src": "media/5901/l0-0.webp",
-     "width": 1400,
-     "height": 886,
-     "remote": "https://pbs.twimg.com/media/HUocW4abQAAsHO4.jpg?name=orig"
+     "src": "https://pbs.twimg.com/media/HUocW4abQAAsHO4.jpg?name=orig",
+     "ratio": 0.6328
     }
    ],
    "links": []

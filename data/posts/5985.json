@@ -27,7 +27,7 @@
    "author": {
     "name": "ℏεsam",
     "handle": "Hesamation",
-    "avatar": "media/avatars/hesamation.webp"
+    "avatar": "https://pbs.twimg.com/profile_images/1978647680357134336/ioMmfkXF_200x200.jpg"
    },
    "text": "so Sam Altman apparently told OpenAI employees that there are possibly THREE endgames for AI safety:\n\n1. an international nuclear-style watchdog\n2. merge all major labs into a giant org\n3. one company achieves RSI and gets so powerful it can literally “melt everyone else’s GPUs.”\n\nand he called the 3rd option “terrible.”\n\ncrazy that we’re even at this point rn.",
    "lang": "en",
@@ -41,17 +41,13 @@
    "media": [
     {
      "type": "image",
-     "src": "media/5985/l0-0.webp",
-     "width": 789,
-     "height": 787,
-     "remote": "https://pbs.twimg.com/media/HVCEQ5XWkAA1fjM.jpg?name=orig"
+     "src": "https://pbs.twimg.com/media/HVCEQ5XWkAA1fjM.jpg?name=orig",
+     "ratio": 0.9975
     },
     {
      "type": "image",
-     "src": "media/5985/l0-1.webp",
-     "width": 1320,
-     "height": 1668,
-     "remote": "https://pbs.twimg.com/media/HVCEQ5TW4AAwQk1.jpg?name=orig"
+     "src": "https://pbs.twimg.com/media/HVCEQ5TW4AAwQk1.jpg?name=orig",
+     "ratio": 1.2636
     }
    ],
    "links": []

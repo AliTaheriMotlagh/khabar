@@ -27,7 +27,7 @@
    "author": {
     "name": "Anthropic",
     "handle": "AnthropicAI",
-    "avatar": "media/avatars/anthropicai.webp"
+    "avatar": "https://pbs.twimg.com/profile_images/1798110641414443008/XP8gyBaY_200x200.jpg"
    },
    "text": "Applications are now open for two new Anthropic Fellowships.\n\nSTEM Fellows (science and engineering) and Conceptual Reasoning Fellows (philosophy, cognitive science, economics, policy, and law) will spend four months at Anthropic from January 2027, working to help Claude reason well about some of the hardest problems in those fields.\n\nFor more information, see the descriptions below. The application deadline is October 28.\n\nConceptual Reasoning Fellows: https://job-boards.greenhouse.io/anthropic/jobs/5447080008\n\nSTEM Fellows: https://job-boards.greenhouse.io/anthropic/jobs/5452403008",
    "lang": "en",
@@ -50,11 +50,7 @@
    "domain": "job-boards.greenhouse.io",
    "title": "Conceptual Reasoning Fellow",
    "description": "Remote-Friendly, United States; San Francisco, CA",
-   "image": {
-    "src": "media/5910/l1-og.webp",
-    "width": 1400,
-    "height": 1401
-   },
+   "image": "https://s8-recruiting.cdn.greenhouse.io/external_greenhouse_job_boards/logos/400/040/300/original/2025-04-07-greenhouse.png?1744052732",
    "site": "job-boards.greenhouse.io",
    "author": null,
    "published": null,

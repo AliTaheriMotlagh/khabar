@@ -27,7 +27,7 @@
    "author": {
     "name": "NVIDIA AI",
     "handle": "NVIDIAAI",
-    "avatar": "media/avatars/nvidiaai.webp"
+    "avatar": "https://pbs.twimg.com/profile_images/2055340743552831488/me-KUIug_200x200.png"
    },
    "text": "We’re working with the European Broadcasting Union and @Adobe to help media teams keep control of their data and find the footage they need faster.\n\nWith the EBU, we’re building on sovereign AI standards so broadcasters can use AI while keeping control of their data and protecting editorial independence.\n\nAdobe is using our GPUs to make http://Frame.io video search faster, helping TV and film producers find a specific scene in years of footage.\n\nRead about both announcements from GTC Berlin: https://nvda.ws/4sheBsJ",
    "lang": "en",
@@ -41,10 +41,8 @@
    "media": [
     {
      "type": "image",
-     "src": "media/6005/l0-0.webp",
-     "width": 1400,
-     "height": 1400,
-     "remote": "https://pbs.twimg.com/media/HVG6UYuaUAAGQ1E.jpg?name=orig"
+     "src": "https://pbs.twimg.com/media/HVG6UYuaUAAGQ1E.jpg?name=orig",
+     "ratio": 1.0
     }
    ],
    "links": [
@@ -58,11 +56,7 @@
    "domain": "frame.io",
    "title": "Elevate your creative workflow to an art form.",
    "description": "Frame.io centralizes all of your files, feedback, and people on one secure platform, so you can deliver exceptional creative faster.",
-   "image": {
-    "src": "media/6005/l1-og.webp",
-    "width": 1200,
-    "height": 630
-   },
+   "image": "https://cdn.sanity.io/images/s6lu43cv/production-v4/c9bc38aba1856b5c2664f207a2436851730e6a0d-1200x630.png?w=1200&h=630&fm=jpg&q=60",
    "site": "Frame.io",
    "author": null,
    "published": null,

@@ -27,7 +27,7 @@
    "author": {
     "name": "bolt.new",
     "handle": "boltdotnew",
-    "avatar": "media/avatars/boltdotnew.webp"
+    "avatar": "https://pbs.twimg.com/profile_images/2018401342755364864/xVn-9oYv_200x200.jpg"
    },
    "text": "Bolt is free for EVERYONE, all weekend long. \nAnd you could win $10k!\n\nTurn your idea into a product.\nSubmit it by Oct 20 for your shot at the prize.\nBolt Builders Week starts now 🏁\n\nDetails here 👉 https://bolt.new/builders-week",
    "lang": "en",
@@ -41,13 +41,11 @@
    "media": [
     {
      "type": "video",
-     "src": "media/5948/l0-0.mp4",
-     "poster": "media/5948/l0-0-poster.webp",
-     "width": 1920,
-     "height": 1080,
+     "src": "https://video.twimg.com/ext_tw_video/2111472325375725568/pu/vid/avc1/1280x720/Paguk5iTxxGct20J.mp4?tag=12",
+     "poster": "https://pbs.twimg.com/ext_tw_video_thumb/2111472325375725568/pu/img/yFVy5HthQDOg5XOt.jpg",
+     "ratio": 0.5625,
      "duration": 27.68,
-     "gif": false,
-     "remote": "https://video.twimg.com/ext_tw_video/2111472325375725568/pu/vid/avc1/1280x720/Paguk5iTxxGct20J.mp4?tag=12"
+     "gif": false
     }
    ],
    "links": [
@@ -60,11 +58,7 @@
    "domain": "bolt.new",
    "title": "Builders Week | Bolt",
    "description": "Builders Week on Bolt, Oct 17–24: build your business with a free build weekend, a week of live sessions with the Bolt team, and $10,000 to scale what you build.",
-   "image": {
-    "src": "media/5948/l1-og.webp",
-    "width": 1200,
-    "height": 630
-   },
+   "image": "https://bolt.new/public-page-assets/og-image-default-centred.jpg",
    "site": "bolt.new",
    "author": null,
    "published": null,

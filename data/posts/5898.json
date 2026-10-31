@@ -27,7 +27,7 @@
    "author": {
     "name": "Rhoda AI",
     "handle": "RhodaAI",
-    "avatar": "media/avatars/rhodaai.webp"
+    "avatar": "https://pbs.twimg.com/profile_images/2032594184859955200/jMjpSbve_200x200.jpg"
    },
    "text": "What can a robot do without vision?\n\nWe gave our robot a sense of touch and showed it can recognize and retrieve objects with its cameras blindfolded.\n\nIntroducing Rhoda’s new tactile sensor—it feels pressure, texture, vibration, slip, and temperature, just like your fingertips.",
    "lang": "en",
@@ -41,13 +41,11 @@
    "media": [
     {
      "type": "video",
-     "src": "media/5898/l0-0.mp4",
-     "poster": "media/5898/l0-0-poster.webp",
-     "width": 1920,
-     "height": 1080,
+     "src": "https://video.twimg.com/amplify_video/2110401466037088257/vid/avc1/1280x720/y5nmSQhayucz97bv.mp4?tag=29",
+     "poster": "https://pbs.twimg.com/amplify_video_thumb/2110401466037088257/img/K6j_bb4jSkYHp3Ey.jpg",
+     "ratio": 0.5625,
      "duration": 173.438,
-     "gif": false,
-     "remote": "https://video.twimg.com/amplify_video/2110401466037088257/vid/avc1/1280x720/y5nmSQhayucz97bv.mp4?tag=29"
+     "gif": false
     }
    ],
    "links": []

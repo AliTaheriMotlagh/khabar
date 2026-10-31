@@ -27,7 +27,7 @@
    "author": {
     "name": "SemiAnalysis",
     "handle": "SemiAnalysis_",
-    "avatar": "media/avatars/semianalysis_.webp"
+    "avatar": "https://pbs.twimg.com/profile_images/2062973370157694976/CdplNoi1_200x200.jpg"
    },
    "text": "GLM 5.3’s biggest leap came from post-training alone.\n\n“GLM 5.3 was built entirely by post-training the previous model. For me, that was a wake-up call.”\n\n“Post-training is far more GPU-efficient than pre-training from scratch. Plenty of companies can’t afford to train a model from scratch, but they have proprietary data. They can post-train themselves and beat some of the closed models.”\n\n“There’s still so much juice left to squeeze from post-training. We compared GLM 5.3’s cyber capabilities with 5.2, and it’s a night and day difference. That’s all just post-training.”",
    "lang": "en",
@@ -41,13 +41,11 @@
    "media": [
     {
      "type": "video",
-     "src": "media/5949/l0-0.mp4",
-     "poster": "media/5949/l0-0-poster.webp",
-     "width": 1920,
-     "height": 1080,
+     "src": "https://video.twimg.com/ext_tw_video/2111596378220535809/pu/vid/avc1/1280x720/lhWYOycg3zJyp9hg.mp4?tag=12",
+     "poster": "https://pbs.twimg.com/ext_tw_video_thumb/2111596378220535809/pu/img/slryVekp-aqe7uvC.jpg",
+     "ratio": 0.5625,
      "duration": 109.791,
-     "gif": false,
-     "remote": "https://video.twimg.com/ext_tw_video/2111596378220535809/pu/vid/avc1/1280x720/lhWYOycg3zJyp9hg.mp4?tag=12"
+     "gif": false
     }
    ],
    "links": []

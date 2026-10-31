@@ -26,11 +26,7 @@
    "domain": "ollama.com",
    "title": "beam",
    "description": "Beam is an open model by Reflection designed to deliver strong performance for areas such as agentic tool use, coding and general reasoning with an emphasis on token efficient usage.",
-   "image": {
-    "src": "media/5965/l0-og.webp",
-    "width": 1200,
-    "height": 630
-   },
+   "image": null,
    "site": "ollama.com",
    "author": null,
    "published": null,

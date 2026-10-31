@@ -27,7 +27,7 @@
    "author": {
     "name": "Grant Sanderson",
     "handle": "3blue1brown",
-    "avatar": "media/avatars/3blue1brown.webp"
+    "avatar": "https://pbs.twimg.com/profile_images/1024330921367859200/n5_VT4zH_200x200.jpg"
    },
    "text": "Some reflections on AI in math. I found it helpful to simply list out the various parts of what a mathematician does, why math is valuable, and where the funding comes from. From there, what happens if AI gets more capable?\n\nhttps://youtu.be/LKrwhjOI8Nc",
    "lang": "en",
@@ -50,11 +50,7 @@
    "video_id": "LKrwhjOI8Nc",
    "title": "- YouTube",
    "description": "Enjoy the videos and music you love, upload original content, and share it all with friends, family, and the world on YouTube.",
-   "image": {
-    "src": "media/5935/l1-og.webp",
-    "width": 480,
-    "height": 360
-   },
+   "image": "https://i.ytimg.com/vi/LKrwhjOI8Nc/hqdefault.jpg",
    "site": "youtube.com",
    "author": null,
    "published": null,

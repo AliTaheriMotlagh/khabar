@@ -27,7 +27,7 @@
    "author": {
     "name": "PyTorch",
     "handle": "PyTorch",
-    "avatar": "media/avatars/pytorch.webp"
+    "avatar": "https://pbs.twimg.com/profile_images/1813965160702451712/yXV1vRhr_200x200.jpg"
    },
    "text": "@Google & @Meta launch TorchTPU for native PyTorch support on Google TPUs!\n\n🔥True eager execution & torch.compile backend\n⚡Fast inference via vLLM & SGLang\n🏋️Near-linear scaling for Llama 3 405B & Qwen 3 MoE via TorchTitan\n\nRead more here: https://bit.ly/4hV19Ho",
    "lang": "en",
@@ -41,10 +41,8 @@
    "media": [
     {
      "type": "image",
-     "src": "media/6014/l0-0.webp",
-     "width": 1200,
-     "height": 630,
-     "remote": "https://pbs.twimg.com/media/HVF3ailXAAArF-M.jpg?name=orig"
+     "src": "https://pbs.twimg.com/media/HVF3ailXAAArF-M.jpg?name=orig",
+     "ratio": 0.525
     }
    ],
    "links": [
