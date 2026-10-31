@@ -12,7 +12,7 @@
   "site": "🧵 Thread • FxTwitter",
   "title": "DiffuSpace (@DiffuSpace_Labs)",
   "description": "Meet Clover-35B-A3B-Preview\n🍀\nthe first open-weight production diffusion language model (dLLM) with 35B total parameters capable of 680 tps on a single card at BF16.\nClover exhibits strong performance against both dLLM and AR models and is available today…",
-  "image": "https://cdn4.telesco.pe/file/Xq9jfRrZtBIrCvet06j1iGiChbsyqxCTxTQOdkf8gsIZOejsD2qz1QPteFAYeg1A9Qt09m7i4GYSCORvoUWQDfqaSSYVToNb8DLzYbUt7H-ikVzuSvR-a_ARKNakI23yzm_0aDAocKxE8EePvG9HHceW2KOn-S7j8a7QuITtxnsYOogP-oCS2ow6hn7mIwugV2FQjGk8axXq9IL2kpO1kQI4FjyvH2lsgUtNjzUhEnXr14TeE2YY7lNRImMB8l9nAvZN2gMEzBMkogsWacQ33M0haXLsBqdxQ5-T6q5h4p6qt6TBQ2o3ECbxmbeBsTKv8vw0ejvpcvRioZwuiiUnzQ.jpg"
+  "image": "https://cdn4.telesco.pe/file/vT_k-gkLs9TfEkpx532ka2wynB0T4BBwk8nLOaIN0UNxGy8cs5kDP7OxqwKIcXLGU1cDUmAm4XLOI0SSPzlmd9ky6X--drJR_rctjgxPTpQpQtUhySyq9LygcQljQb5aI33SipjXRA5XLcTro3LZplLpyTNcr6WEzF959Fb5KdVeAVLuSci5uCEOGwwjmg8wttpS8UxCzbDmRF0J6Jae6CKxJJksIdkvHJreBESVh3JP0ygzVL4bVAHQuWwlqrm6ZApLjL5kwb5yjeEuOZfqZvmhWZBGroazGD0p0_YF_e4KgmNmUAOWjW72agLkR162ykHQHqvWHTZPnhpGPSLoPA.jpg"
  },
  "gholam": {
   "text": "ببین آبجی و داداش من، تیم DiffuSpace دست به کار بزرگی زده و از مدل Clover-35B رونمایی کرده که اولین مدل زبانی دیفیوژنِ متن‌باز ۳۵ میلیارد پارامتری برای محیط‌های عملیاتی به حساب میاد. این هیولا فقط روی یه دونه کارت گرافیک با دقت BF16 می‌تونه سرعت خفن ۶۸۰ توکن بر ثانیه رو بده که رسماً فک‌ها رو می‌اندازه. سازنده‌هاش هم اعلام کردن که تو زورآزمایی، هم پا‌به‌پای بقیه مدل‌های دیفیوژن میاد و هم جلو مدل‌های اتورگرسیو سنتی کم نمیاره، فایل‌هاش هم همین الان به‌صورت عمومی در دسترسه.\n\nچرا مهمه؟ چون ثابت می‌کنه مدل‌های دیفیوژن بالاخره به چنان سرعت و قدرتی رسیدن که می‌تونن معماری‌های متداول و قدیمی زبانی رو به چالش بکشن و هزینه‌های اجرا رو بدجور پایین بیارن.",
@@ -56,5 +56,5 @@
    "متن‌باز"
   ]
  },
- "updated": "2026-10-30T15:03:22+00:00"
+ "updated": "2026-10-31T00:06:24+00:00"
 }
