@@ -1,0 +1,67 @@
+{
+ "id": 6237,
+ "url": "https://t.me/dlmehr/6237",
+ "date": "2026-10-31T18:52:27+00:00",
+ "text": "https://fxtwitter.com/omarsar0/status/2116547247018229999?a=5Nlfqjb9WJLJ3IeFvfI&s=46",
+ "forwarded_from": "Hossein Zakariaee",
+ "digest": false,
+ "hash": "480969dcc897",
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/omarsar0/status/2116547247018229999?a=5Nlfqjb9WJLJ3IeFvfI&s=46",
+  "site": "FxTwitter",
+  "title": "elvis (@omarsar0)",
+  "description": "Banger paper from IBM on decision gates for agents.\nThey add a runtime gate to tool-using agents and keep the models and tools the same.\nJevAct is a check that sits between the agent and its tools. An LLM first turns the domain policy into code checks and…",
+  "image": "https://cdn4.telesco.pe/file/TAre_L4eygfSkfhRiPU6_GP2eiDHfBlzjww8xwMuzst2F7ProTFeVfX34MX4HQE6P3sLG48hiAQzmXsoHI0zifBIBRicdhsojahY_Md-KCFCAn_Ciy8lhNtx6FHV5kYcMX7hcgbXSTbOKdN548_nAAdmmdandS-xtzIHBSpWpNeJ8kF7AEwpuGtCEyIHMOCllXSVQsAf5ow6cwF0wQjSpIu1pG1oFUJV_LTM5JxsEdNbB4lhAZugyD3CoDjhS-ztGNOzGfuZgCQd44iQy4ZY9Yla721U8cQ7q3NcnaZuSxaAy1txweypjPz2hROBeCqIFyDhkeyBOAa2P2W25bB3bg.jpg"
+ },
+ "gholam": {
+  "text": "ببین رفیق، بچه‌های آی‌بی‌ام یه سیستم تر و تمیز به اسم JevAct طراحی کردن که مثل یه دروازه‌بان تیزبز بین ایجنت‌های هوش مصنوعی و ابزارهاشون قرار می‌گیره تا جلوی خرابکاری‌ها رو بگیره. داستان اینه که بدون دستکاری خود مدل‌ها، قوانین کاری رو به کدهای کنترلی و سوال‌جواب تبدیل می‌کنن و قبل از اجرای هر ابزاری، داده‌ها رو چک می‌کنن تا اگه مشکلی بود با فیدبک درست برش گردونن به خود ایجنت تا اصلاحش کنه. خروجی کار هم واقعاً غوغا کرده؛ مثلاً توی بنچمارک مخابراتی، نرخ موفقیت مدل Opus 4.6 از حدود ۳۹.۵ درصد یه کله پریده روی ۸۰.۷ درصد و عملکرد بقیه ایجنت‌ها رو هم به طور میانگین نزدیک ۱۷ درصد بهتر کرده، هرچند توی بخش پروازها نتایج یه کم بالا و پایین داشته.\n\nاهمیتش اینه که نشون میده بدون دست زدن به مدل یا خرج اضافه برای آموزش دوباره، فقط با یه نظارت سفت‌وسخت و گیت تصمیم‌گیری بین راهی، میشه خطای هوش مصنوعی رو نصف کرد و سپردش دست کارای حساس.",
+  "date": "2026-10-31T18:52:45+00:00"
+ },
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/omarsar0/status/2116547247018229999",
+   "domain": "x.com",
+   "author": {
+    "name": "elvis",
+    "handle": "omarsar0",
+    "avatar": "https://pbs.twimg.com/profile_images/939313677647282181/vZjFWtAn_200x200.jpg"
+   },
+   "text": "Banger paper from IBM on decision gates for agents.\n\nThey add a runtime gate to tool-using agents and keep the models and tools the same.\n\nJevAct is a check that sits between the agent and its tools. An LLM first turns the domain policy into code checks and yes/no questions. Before a selected tool call runs, the code checks the facts in the tool records, and a Jev-like decision model answers the questions about the conversation. If the call fails a check, it goes back to the agent with feedback so the agent can revise it.\n\nOn τ²-bench Telecom, Opus 4.6's success across all three runs rose from 39.5% to 80.7%.\n\nOn Telecom, all eight agents improved by 16.9 points on average in three-run success. All nine improved on BFCL. Airline results were smaller and mixed.\n\nThey show that the gains come from the harness.\n\nhttps://arxiv.org/abs/2610.38620\n\nChat with Paper: https://academy.dair.ai/papers/think-before-you-act-decision-gate-for-llm-agents-2610.38620",
+   "date": 1793459161,
+   "media": [
+    {
+     "type": "image",
+     "src": "https://pbs.twimg.com/media/HV98gQGaIAAVNfZ.jpg?name=orig",
+     "ratio": 1.1161
+    }
+   ],
+   "links": [
+    "https://arxiv.org/abs/2610.38620",
+    "https://academy.dair.ai/papers/think-before-you-act-decision-gate-for-llm-agents-2610.38620"
+   ]
+  },
+  {
+   "kind": "link",
+   "url": "https://arxiv.org/abs/2610.38620",
+   "domain": "arxiv.org",
+   "title": "Think Before You Act: Decision Gate for LLM Agents",
+   "description": "LLM agents increasingly perform consequential actions through external tools, yet their proposed actions are often executed without independent verification of policy compliance or task completion. We introduce JevAct, a runtime verification framework that intercepts selected agent actions before execution and enables feedback-driven correction. JevAct compiles domain policies into executable stat",
+   "image": "https://arxiv.org/static/browse/0.3.4/images/arxiv-logo-fb.png",
+   "site": "arXiv.org"
+  }
+ ],
+ "article": {
+  "title": "بچه‌های آی‌بی‌ام یه سیستم تر و تمیز به اسم JevAct طراحی کردن که مثل یه دروازه‌بان تیزبز بین ایجنت‌های هوش مصنوعی و ابزارهاشون قرار می‌گیره تا جلوی خرابکاری‌ها رو بگیره",
+  "source_title": "Banger paper from IBM on decision gates for agents.",
+  "body": [
+   "ببین رفیق، بچه‌های آی‌بی‌ام یه سیستم تر و تمیز به اسم JevAct طراحی کردن که مثل یه دروازه‌بان تیزبز بین ایجنت‌های هوش مصنوعی و ابزارهاشون قرار می‌گیره تا جلوی خرابکاری‌ها رو بگیره. داستان اینه که بدون دستکاری خود مدل‌ها، قوانین کاری رو به کدهای کنترلی و سوال‌جواب تبدیل می‌کنن و قبل از اجرای هر ابزاری، داده‌ها رو چک می‌کنن تا اگه مشکلی بود با فیدبک درست برش گردونن به خود ایجنت تا اصلاحش کنه. خروجی کار هم واقعاً غوغا کرده؛ مثلاً توی بنچمارک مخابراتی، نرخ موفقیت مدل Opus 4.6 از حدود ۳۹.۵ درصد یه کله پریده روی ۸۰.۷ درصد و عملکرد بقیه ایجنت‌ها رو هم به طور میانگین نزدیک ۱۷ درصد بهتر کرده، هرچند توی بخش پروازها نتایج یه کم بالا و پایین داشته."
+  ],
+  "why": "نشون میده بدون دست زدن به مدل یا خرج اضافه برای آموزش دوباره، فقط با یه نظارت سفت‌وسخت و گیت تصمیم‌گیری بین راهی، میشه خطای هوش مصنوعی رو نصف کرد و سپردش دست کارای حساس.",
+  "tags": [
+   "ایجنت"
+  ]
+ },
+ "updated": "2026-10-31T18:56:21+00:00"
+}
