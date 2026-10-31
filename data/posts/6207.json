@@ -12,7 +12,7 @@
   "site": "FxTwitter",
   "title": "Binance (@binance)",
   "description": "Binance's initial investigation suggests that the security incident may involve a compromised DevOps engineer’s laptop, which allowed an attacker to gain access to a service container and submit unauthorized withdrawal transactions. We have found no evidence…",
-  "image": "https://cdn4.telesco.pe/file/BT2xP5EgXjc2p4ayKalPT5Bj2CBP-JvkKOWLij8yrqU_ok-8k5RauWgrT-fosAxe-YJvnTvPeZ9_NFcPY4BE2mjgCzfeO-QWZYnURPFxt7W-fDoai3swOejPsUrgG8u7y-drrioOL4a_Jnwu0DfzNYHg7jp-Nf8NKIlD1Bl-VBnuDz0YcBO_WCsmNNgRniMsDPqQ1yWW_3KvqqrO1Q2LdTaQsWGIjkzy8j_1-HJPPYTTWIx6ldlbwwUBngmc2FwSAUw_aSTu5s8C8W4_2Dk8xhEvu3_LidU2Ys8WBGTL_FpLjRMK8uPDzFuPMER6gl-qRCvDvgl5clqUXplpMHwl-A.jpg"
+  "image": "https://cdn4.telesco.pe/file/Qj29YIt7uChcgFMWHQeXaDitzP8RABN-9QHrRr_0LaOePyiEB2iRHd5KDhbyjjhjc2GPImjr_nPE8hmwl4i8urqTUjOhHaj1-sAuxp3NssB2dg7PxebNNiR3nKRhVq2IJvlaT6TZ97iIas5Ek0mhhWnE4C5K81Cn1YSKpq9Ydw1bbkq9H4YRbbKxGy7rO3-mtTS5_v3FdC90x_0JhBuvUwn3KRVg0hiHb1NZwLg74-cCLG6HgoCCMe-SZm5F8XxHpEyV_QQvYsoUB9ikgAboPiJeM63HxPAmkgvBKTeEI1Pkg2f-JbUmHoVLi-24xuB5FRK5MUpi_E2qmGnGttJhmA.jpg"
  },
  "gholam": {
   "text": "ببین رفیق، بایننس خبر داده که لپ‌تاپ یکی از مهندس‌های دواپسش لو رفته و همین قضیه پای نفوذگر رو باز کرده تا با دسترسی به کانتینرها، تراکنش‌های برداشت غیرمجاز ثبت کنه. رقم خسارت اصلاً شوخی‌بردار نیست و حرف از حدود ۶.۳ میلیارد دلاره، منتها تا الان با همکاری شبکه‌ها موفق شدن نزدیک ۳ میلیارد دلار از این دارایی‌ها رو آنچین فریز و قفل کنن. خوشبختانه کلیدهای خصوصی والت‌ها لو نرفته، ولی بایننس برای ردگیری هکر و محکم‌کاری، موقتاً واریز و برداشت‌ها رو متوقف کرده. از اون طرف هم دمشون گرم که قول دادن تمام خسارت رو از صندوق بیمه SAFU و دارایی خود شرکت جبران کنن تا آب تو دل کاربرا تکون نخوره.\n\nاهمیتش اینه که نشون می‌ده حتی بزرگ‌ترین صرافی دنیا هم ممکنه از خطای یه مهندس آسیب ببینه، اما نحوه جبران تمام خسارت از جیب خودشون می‌تونه جلوی وحشت عمومی و ریزش وحشتناک بازار رو بگیره.",
@@ -62,5 +62,5 @@
    "امنیت"
   ]
  },
- "updated": "2026-10-31T00:06:24+00:00"
+ "updated": "2026-10-31T06:47:55+00:00"
 }
