@@ -1,0 +1,49 @@
+{
+ "id": 6246,
+ "url": "https://t.me/dlmehr/6246",
+ "date": "2026-11-01T17:46:43+00:00",
+ "text": "https://fxtwitter.com/jun_song/status/2116717099402096682?a=zdJZrd5hEcoq7U0QDxc&s=52",
+ "forwarded_from": null,
+ "digest": false,
+ "hash": "2fb84e6bd701",
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/jun_song/status/2116717099402096682?a=zdJZrd5hEcoq7U0QDxc&s=52",
+  "site": "FxTwitter",
+  "title": "Jun Song (@jun_song)",
+  "description": "Yesterday, an anonymous black hat group reached out with an insane RL request.\nThey offered an astronomical amount of money to post-train open-weight models on exploit data.\nThe amount of attack data they claim to hold is unlike anything I have ever seen.…",
+  "image": "https://cdn4.telesco.pe/file/YEl34FVTFS_dyj_1wV5EqvH_nHOpZsbiFNYkRzZNu13X236t_PP-X0v7BtoCOK7R2koX5CxsufffCu3FsC6W-QISiMAVAIFMg5oYjR1AC_GKFrc4OSjMsTmkV9GbIrBYqLc-5iTbmtEDESVQGlxUy-Ufr9797nVcWSbqjFq40473FxxmyECJz51895IYzAIZtHgnucdqloYa8It2B31ncAObizOT-AnM6K64dBb-9wf2S8o42tbz4RODAIX10-COY3L-6EytI7sJmcF3gFuruZ8ZR22tCmQM_8k1MJ8txrhyeqr2qu3e5J2PxX1IzV0CDJWQHi_tGS8oLQzMz1_M8A.jpg"
+ },
+ "gholam": {
+  "text": "ببین رفیق، یه متخصص هوش مصنوعی به اسم جون سانگ تعریف کرده که یه باند هکر کلاه‌سیاه اومدن سراغش و یه پول قلمبه و نجومی پیشنهاد دادن تا مدل‌های وزن‌باز رو با داده‌های هک و اکسپلویت آموزش بده. طرف می‌گه حجم داده‌های حمله‌ای که دست اینا بود در حدی وحشتناک و بی‌سابقه بوده که اگه می‌گفتن دیتابیس محرمانه خود اف‌بی‌آیه آدم باورش می‌شد؛ طوری که خودش قبلاً با کمتر از یک درصد همین حجم دیتا روی مدل GLM تونسته بود غول‌ترین هوش‌های مصنوعی روز رو جا بذاره. دست‌آخر خودش غیرت به خرج داده و این پیشنهاد سنگین رو رد کرده، اما دلش مثل سیروسرکه‌ می‌جوشه چون خوب می‌دونه دیر یا زود یکی دیگه پیدا می‌شه که این پول درشت چِشش رو بگیره و این سلاح سایبری رو بسازه.\n\nچرا مهمه؟ اهمیتش اینه که اگه این حجم از فوت‌وفن حملات دیجیتال بیفته پشت فرمون یه هوش مصنوعی بی‌در‌وپیکر، امنیت کل سیستم‌های دنیا با یه خطر ویرانگر روبه‌رو می‌شه.",
+  "date": "2026-11-01T17:47:03+00:00"
+ },
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/jun_song/status/2116717099402096682",
+   "domain": "x.com",
+   "author": {
+    "name": "Jun Song",
+    "handle": "jun_song",
+    "avatar": "https://pbs.twimg.com/profile_images/2046816680731725825/DMIGj4BG_200x200.jpg"
+   },
+   "text": "Yesterday, an anonymous black hat group reached out with an insane RL request.\n\nThey offered an astronomical amount of money to post-train open-weight models on exploit data.\n\nThe amount of attack data they claim to hold is unlike anything I have ever seen. If someone told me this was an undercover FBI dataset, I would have believed it.\n\nFor context, a white-hat project I worked on using GLM-5.3 used less than one percent of that volume, and it already outperformed frontier models by a huge margin.\n\nOf course, I turned it down. But what genuinely scares me is knowing someone else will eventually take the deal.",
+   "date": 1793499657,
+   "media": [],
+   "links": []
+  }
+ ],
+ "article": {
+  "title": "یه متخصص هوش مصنوعی به اسم جون سانگ تعریف کرده که یه باند هکر کلاه‌سیاه اومدن سراغش و یه پول قلمبه و نجومی پیشنهاد دادن تا مدل‌های وزن‌باز رو با داده‌های هک و اکسپلویت آموزش بده",
+  "source_title": "Yesterday, an anonymous black hat group reached out with an insane RL request.",
+  "body": [
+   "ببین رفیق، یه متخصص هوش مصنوعی به اسم جون سانگ تعریف کرده که یه باند هکر کلاه‌سیاه اومدن سراغش و یه پول قلمبه و نجومی پیشنهاد دادن تا مدل‌های وزن‌باز رو با داده‌های هک و اکسپلویت آموزش بده. طرف می‌گه حجم داده‌های حمله‌ای که دست اینا بود در حدی وحشتناک و بی‌سابقه بوده که اگه می‌گفتن دیتابیس محرمانه خود اف‌بی‌آیه آدم باورش می‌شد؛ طوری که خودش قبلاً با کمتر از یک درصد همین حجم دیتا روی مدل GLM تونسته بود غول‌ترین هوش‌های مصنوعی روز رو جا بذاره. دست‌آخر خودش غیرت به خرج داده و این پیشنهاد سنگین رو رد کرده، اما دلش مثل سیروسرکه‌ می‌جوشه چون خوب می‌دونه دیر یا زود یکی دیگه پیدا می‌شه که این پول درشت چِشش رو بگیره و این سلاح سایبری رو بسازه."
+  ],
+  "why": "اهمیتش اینه که اگه این حجم از فوت‌وفن حملات دیجیتال بیفته پشت فرمون یه هوش مصنوعی بی‌در‌وپیکر، امنیت کل سیستم‌های دنیا با یه خطر ویرانگر روبه‌رو می‌شه.",
+  "tags": [
+   "امنیت"
+  ]
+ },
+ "updated": "2026-11-01T17:50:25+00:00"
+}
