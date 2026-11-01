@@ -1,0 +1,67 @@
+{
+ "id": 6249,
+ "url": "https://t.me/dlmehr/6249",
+ "date": "2026-11-01T19:11:22+00:00",
+ "text": "https://fxtwitter.com/karpathy/status/2116957135661945283?a=1d2HNg42cmgJbGTphqE&s=52",
+ "forwarded_from": null,
+ "digest": false,
+ "hash": "98c05c8ce799",
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/karpathy/status/2116957135661945283?a=1d2HNg42cmgJbGTphqE&s=52",
+  "site": "FxTwitter",
+  "title": "Andrej Karpathy (@karpathy)",
+  "description": "Weekend hack: HackerTube. I was annoyed with YouTube's recommendations so I had Claude filter down 43M comments over 20 years of HN to 6,454 videos that keep being recommended. *Significantly* better viewing experience, ~2 hours with Opus 5.5:\nhttps://hackertube.org/…",
+  "image": "https://cdn4.telesco.pe/file/UohGYZyh-ha_b96sMLIaLriyvUgJnM27lMfTwpYSWF9pQOVYjGtS54CRACDoQWESobiMHo6Y4PVP1pNqOpwbqMYR8xVy92GzXP_ymsRoFvNHoUFLN0BUgXf7Kb1rcjNGNTONLuyxnL11piebumFipIKzVfcY4D_1TEjRn88uYy9q9kmnvSCyT7RToUqxIKgwAlAQSc1Hr1F8BJorrclZr_PRaaGuexabtrbXI2rXkMJXtxtIRG4_VgAwOWzy2129SZYsE6m3j8EZJGrTzlXflNpxUntwwoAJugMwNiHNLCUVVty_-yrbHwK3zw4l-gmeqDow04aXAx5l_EAI0DsvMg.jpg"
+ },
+ "gholam": {
+  "text": "رفیق، قضیه از این قراره که آندری کارپاتی، از اوستاهای هوش مصنوعی، کلافه از الگوریتم چرت پیشنهادهای یوتیوب زد به سیم آخر و یه آخر هفته مشتی رقم زد. نشسته پای کار و با هوش مصنوعی کلود اوپوس تو عرض دو ساعت، ۴۳ میلیون کامنتِ ۲۰ سال گذشته سایت هکرنیوز رو زیرورو کرده تا ۶,۴۵۴ تا ویدیوی طلایی و دست‌اول رو گلچین کنه و سایتی به اسم هکرتیوب بسازه. جالبیش اینجاست که کارپاتی فقط دامنه رو خریده و سرور خام گرفته، ولی صفر تا صد کدنویسی، بستن حفره‌های امنیتی و بالا آوردن سایت رو خود مدل درجا انجام داده. توی این سرویس خبری از لاگین اجباری یا تامبنیل‌های کلیک‌بیت نیست و تامبنیل‌ها یه فریم واقعی از وسط خود ویدیوئن تا فقط پای محتوای درست‌درمون بنشینی.\n\nچرا مهمه؟ اهمیتش اینه که نشون میده با ابزارهای امروزی هوش مصنوعی، پروژه‌های خفنی که قبلاً ماه‌ها زمان و یه تیم کامل می‌خواستن، حالا تو یه عصر دل‌انگیز توسط یه نفر جمع میشن و میشه الگوریتم‌های تجاری غول‌های فناوری رو دور زد.",
+  "date": "2026-11-01T19:11:46+00:00"
+ },
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/karpathy/status/2116957135661945283",
+   "domain": "x.com",
+   "author": {
+    "name": "Andrej Karpathy",
+    "handle": "karpathy",
+    "avatar": "https://pbs.twimg.com/profile_images/1296667294148382721/9Pr6XrPB_200x200.jpg"
+   },
+   "text": "Weekend hack: HackerTube. I was annoyed with YouTube's recommendations so I had Claude filter down 43M comments over 20 years of HN to 6,454 videos that keep being recommended. *Significantly* better viewing experience, ~2 hours with Opus 5.5:\nhttps://hackertube.org/\n\n- Excellent recs without any logins (state is kept in local browser session)\n- Thumbnail is a representative frame from middle of the video instead of the super duper A/B test hyper-optimized user uploads\n- Underlying data from the comment analysis as one zip file, point your Claude at it and ask for your own version\n- HackerTube Longs ✊\n\nA bit more on the process:\nI use Claude Code (desktop app for Mac), Opus 5.5 on Medium effort as my default. I only talk to Claude and have it do everything, the only \"manual work\" I helped with in tandem was in the browser (reminiscent of MenuGen): 1) I had to create some kind of API key from Google Cloud UI to query YouTube for video metadata, 2) I booted up a VPS box for serving and 3) I bought the domain name. Once the box was up I gave Claude the IP and told it update, secure, harden, deploy and optimize the code, and it did the whole thing.\n\nMany awesome projects that would have normally taken weeks/months even can now be few-shotted for breakfast. What else are we not thinking of.",
+   "date": 1793556886,
+   "media": [
+    {
+     "type": "image",
+     "src": "https://pbs.twimg.com/media/HWDnuuCaIAA__wa.jpg?name=orig",
+     "ratio": 0.581
+    }
+   ],
+   "links": [
+    "https://hackertube.org/"
+   ]
+  },
+  {
+   "kind": "link",
+   "url": "https://hackertube.org/",
+   "domain": "hackertube.org",
+   "title": "HackerTube",
+   "description": "The YouTube videos that Hacker News keeps telling each other to watch.",
+   "image": null,
+   "site": "HackerTube"
+  }
+ ],
+ "article": {
+  "title": "قضیه از این قراره که آندری کارپاتی، از اوستاهای هوش مصنوعی، کلافه از الگوریتم چرت پیشنهادهای یوتیوب زد به سیم آخر و یه آخر هفته مشتی رقم زد",
+  "source_title": "Weekend hack: HackerTube. I was annoyed with YouTube's recommendations so I had Claude filter down 43M comments over 20 years of HN to…",
+  "body": [
+   "رفیق، قضیه از این قراره که آندری کارپاتی، از اوستاهای هوش مصنوعی، کلافه از الگوریتم چرت پیشنهادهای یوتیوب زد به سیم آخر و یه آخر هفته مشتی رقم زد. نشسته پای کار و با هوش مصنوعی کلود اوپوس تو عرض دو ساعت، ۴۳ میلیون کامنتِ ۲۰ سال گذشته سایت هکرنیوز رو زیرورو کرده تا ۶,۴۵۴ تا ویدیوی طلایی و دست‌اول رو گلچین کنه و سایتی به اسم هکرتیوب بسازه. جالبیش اینجاست که کارپاتی فقط دامنه رو خریده و سرور خام گرفته، ولی صفر تا صد کدنویسی، بستن حفره‌های امنیتی و بالا آوردن سایت رو خود مدل درجا انجام داده. توی این سرویس خبری از لاگین اجباری یا تامبنیل‌های کلیک‌بیت نیست و تامبنیل‌ها یه فریم واقعی از وسط خود ویدیوئن تا فقط پای محتوای درست‌درمون بنشینی."
+  ],
+  "why": "اهمیتش اینه که نشون میده با ابزارهای امروزی هوش مصنوعی، پروژه‌های خفنی که قبلاً ماه‌ها زمان و یه تیم کامل می‌خواستن، حالا تو یه عصر دل‌انگیز توسط یه نفر جمع میشن و میشه الگوریتم‌های تجاری غول‌های فناوری رو دور زد.",
+  "tags": [
+   "آنتروپیک",
+   "شبکه‌های اجتماعی"
+  ]
+ },
+ "updated": "2026-11-01T19:15:29+00:00"
+}
