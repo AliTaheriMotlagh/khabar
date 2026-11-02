@@ -1,0 +1,70 @@
+{
+ "id": 6262,
+ "url": "https://t.me/dlmehr/6262",
+ "date": "2026-11-02T20:29:20+00:00",
+ "text": "https://fxtwitter.com/adam_karvonen/status/2117337487458938949?a=2_Z4R511VSPKbVAVvxI&s=52",
+ "forwarded_from": null,
+ "digest": false,
+ "hash": "7af1924a06f3",
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/adam_karvonen/status/2117337487458938949?a=2_Z4R511VSPKbVAVvxI&s=52",
+  "site": "FxTwitter",
+  "title": "Adam Karvonen (@adam_karvonen)",
+  "description": "It looks like Astra didn't natively read Qwen's weights?\nAs I understand it, Qwen would get stuck in a loop and not answer the question.\nAstra used code to perform some standard interp techniques, found a looping direction, and ablated it from the weights.…",
+  "image": "https://cdn4.telesco.pe/file/ZZcZAD8zbjEGEnBgGrMRjPruKoeiZt7alhPhBSkEjStHZCVXI87-S39M1LcKrXnmN-_lZkYORoWBXai_4UfACzPhxjEmezwcK8BuzO8L__ObSLyMJZQKJOU6DkY19nBBxJVNEbBdFBU9y9xO3RnVqcUck2Yvd771h5QGwBaOmYzsnyYnKk_qoP-Pb1dl_OThUi5osgaV4cBrfhHADirZiTu8abemPx9oN7CeX8wji7cTrWIYODVfFTQjfqd_B3VmMbh1rMc10S__skkVkX13tRPZriWQrAJa2L4n2TkriPtduTdVwb7TTKEX_qhB1IzQbTTh2JKsgdWM-SRVkkKLGQ.jpg"
+ },
+ "gholam": {
+  "text": "ببین رفیق، پژوهشگرا اومدن از مدل خفن GPT-6 Astra خواستن بشینه وزن‌های مدل جمع‌وجور Qwen3.5-0.8B رو دستکاری کنه تا ریاضی و استدلالش بهتر بشه. ماجرا اینه که کیوون مدام توی حلقه‌های بی‌پایان گیر می‌کرده و آسترا هم با نوشتن یه سری کد و ابزارهای تفسیری، اون مسیری که باعث هنگ کردن مدل می‌شده رو پیدا و از وزن‌ها حذف کرده؛ یعنی بدون هیچ آموزش اضافه یا محاسبات سنگین گرادیان، کار رو درآورده. نتیجه این حرکت که اسمش رو گذاشتن «برنامه‌نویسی توی فضای وزن‌ها» معرکه بوده؛ چون فقط با دست زدن به ۰.۰۱۶ درصد وزن‌ها، تونستن عملکرد ریاضی مدل رو ۶ برابر و دستورپذیریش رو ۳ برابر ارتقا بدن.\n\nاهمیتش اینه که نشون میده یه هوش مصنوعی می‌تونه مثل یه جراح کاربلد، بدون آموزش مجدد و صرف هزینه‌های نجومی، مغز یه مدل دیگه رو باز کنه و مستقیم با چنتا تغییر ریز چند برابر قوی‌ترش کنه.",
+  "date": "2026-11-02T20:29:38+00:00"
+ },
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/adam_karvonen/status/2117337487458938949",
+   "domain": "x.com",
+   "author": {
+    "name": "Adam Karvonen",
+    "handle": "adam_karvonen",
+    "avatar": "https://pbs.twimg.com/profile_images/1705277547074732032/D5gZevZv_200x200.jpg"
+   },
+   "text": "It looks like Astra didn't natively read Qwen's weights?\n\nAs I understand it, Qwen would get stuck in a loop and not answer the question.\n\nAstra used code to perform some standard interp techniques, found a looping direction, and ablated it from the weights.",
+   "date": 1793647569,
+   "media": [],
+   "links": [],
+   "quote": {
+    "author": {
+     "name": "Rikiya Takehi",
+     "handle": "rikiyatakehi",
+     "avatar": "https://pbs.twimg.com/profile_images/1731888727897567232/97PMSyds_200x200.jpg"
+    },
+    "text": "We asked GPT-6 Astra to edit Qwen3.5-0.8B weights to improve math.\nIt directly changed only 0.016% of weights, fixing 0.8B's reasoning loops & improving math up to 6x and even instruction following 3x, without gradients or training.\n\nWe call this Weight-Space Programming: frontier LLMs can now natively read/write neural network weights! 🧵\nBlog: https://rikiyat.github.io/blog/weight-space-programming/",
+    "date": 1793641908,
+    "media": [
+     {
+      "type": "image",
+      "src": "https://pbs.twimg.com/media/HWI1oKUWUAAWoZp.jpg?name=orig",
+      "ratio": 0.5208
+     }
+    ],
+    "links": [
+     "https://rikiyat.github.io/blog/weight-space-programming/"
+    ]
+   }
+  }
+ ],
+ "article": {
+  "title": "پژوهشگرا اومدن از مدل خفن GPT-6 Astra خواستن بشینه وزن‌های مدل جمع‌وجور Qwen3.5-0.8B رو دستکاری کنه تا ریاضی و استدلالش بهتر بشه",
+  "source_title": "It looks like Astra didn't natively read Qwen's weights?",
+  "body": [
+   "ببین رفیق، پژوهشگرا اومدن از مدل خفن GPT-6 Astra خواستن بشینه وزن‌های مدل جمع‌وجور Qwen3.5-0.8B رو دستکاری کنه تا ریاضی و استدلالش بهتر بشه. ماجرا اینه که کیوون مدام توی حلقه‌های بی‌پایان گیر می‌کرده و آسترا هم با نوشتن یه سری کد و ابزارهای تفسیری، اون مسیری که باعث هنگ کردن مدل می‌شده رو پیدا و از وزن‌ها حذف کرده؛ یعنی بدون هیچ آموزش اضافه یا محاسبات سنگین گرادیان، کار رو درآورده. نتیجه این حرکت که اسمش رو گذاشتن «برنامه‌نویسی توی فضای وزن‌ها» معرکه بوده؛ چون فقط با دست زدن به ۰.۰۱۶ درصد وزن‌ها، تونستن عملکرد ریاضی مدل رو ۶ برابر و دستورپذیریش رو ۳ برابر ارتقا بدن."
+  ],
+  "why": "نشون میده یه هوش مصنوعی می‌تونه مثل یه جراح کاربلد، بدون آموزش مجدد و صرف هزینه‌های نجومی، مغز یه مدل دیگه رو باز کنه و مستقیم با چنتا تغییر ریز چند برابر قوی‌ترش کنه.",
+  "tags": [
+   "چین",
+   "علم",
+   "اوپن‌ای‌آی"
+  ]
+ },
+ "updated": "2026-11-02T20:33:34+00:00"
+}
