@@ -1,0 +1,67 @@
+{
+ "id": 6259,
+ "url": "https://t.me/dlmehr/6259",
+ "date": "2026-11-02T18:45:47+00:00",
+ "text": "https://fxtwitter.com/rikiyatakehi/status/2117313742891327994?a=sbAMNTNfXTbVWC3fDoY&s=52",
+ "forwarded_from": null,
+ "digest": false,
+ "hash": "70780aaf76ad",
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/rikiyatakehi/status/2117313742891327994?a=sbAMNTNfXTbVWC3fDoY&s=52",
+  "site": "🧵 Thread • FxTwitter",
+  "title": "Rikiya Takehi (@rikiyatakehi)",
+  "description": "We asked GPT-6 Astra to edit Qwen3.5-0.8B weights to improve math.\nIt directly changed only 0.016% of weights, fixing 0.8B's reasoning loops & improving math up to 6x and even instruction following 3x, without gradients or training.\nWe call this Weight-Space…",
+  "image": "https://cdn4.telesco.pe/file/Kv27XMx-FGKTquloF-ZuiVZYBnzzwPMIqe0Opu3cOGqXjKlIqaIZp61kyESJiLnQA2UF-z8tOsqe5SdmzQjeUzfxmdYZyjMrNzPrxAE_AzaGnIzqoVk1K_RT9RAwIqUlvsd_-mdocTPSmv2kTu4fRpt9AE2XlH4FAuHStUs_DInmJRTcOe1GonO7A4wFtn3TtNZGOgi5Qgr9UihJi0VYdevBveUYwcq1O7dpmNF3mbu2K3c2LV0XQz9PIrgkQghLzseprCpuSnjtrq0kL4qBBIXoj4mnVhH3xKy7jTlIYMArPKNfxiPgoAPy1OqgOh5SUP-53j859h6AJdC3qFSdpw.jpg"
+ },
+ "gholam": {
+  "text": "ببین رفیق، قضیه خیلی عجیبه و دانشمندا رسماً زدن تو کار جراحی مستقیم مغز هوش مصنوعی! ماجرا از این قراره که ریکیا تاکی و تیمش از مدل GPT-6 Astra خواستن وزن‌های یه مدل کوچیک‌تر یعنی Qwen3.5-0.8B رو دستکاری کنه تا ریاضیش راه بیفته. کار خفنشون اینجاست که بدون هیچ تمرین دادن، گرادیان یا دیتای آموزشی، فقط با تغییر دادن ۰.۰۱۶ درصد از وزن‌های اون مدل، لوپ‌های استدلالی خرابش رو درست کردن و زورش تو ریاضی تا ۶ برابر و تو پیروی از دستورات ۳ برابر بیشتر شده. اسم این شعبده‌بازی جدید رو هم گذاشتن «برنامه‌نویسی در فضای وزن» که نشون میده غول‌های هوش مصنوعی حالا می‌تونن کدهای مغزی مدل‌های ضعیف‌تر رو بخونن و اصلاح کنن.\n\nاهمیتش اینه که به‌جای صرف میلیون‌ها دلار هزینه و روزها وقت برای آموزش دوباره، یه هوش مصنوعی بزرگ می‌تونه تو چند ثانیه مثل یه جراح زبردست، مدل‌های کوچیک رو مستقیم دستکاری و تقویت کنه.",
+  "date": "2026-11-02T18:46:01+00:00"
+ },
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/rikiyatakehi/status/2117313742891327994",
+   "domain": "x.com",
+   "author": {
+    "name": "Rikiya Takehi",
+    "handle": "rikiyatakehi",
+    "avatar": "https://pbs.twimg.com/profile_images/1731888727897567232/97PMSyds_200x200.jpg"
+   },
+   "text": "We asked GPT-6 Astra to edit Qwen3.5-0.8B weights to improve math.\nIt directly changed only 0.016% of weights, fixing 0.8B's reasoning loops & improving math up to 6x and even instruction following 3x, without gradients or training.\n\nWe call this Weight-Space Programming: frontier LLMs can now natively read/write neural network weights! 🧵\nBlog: https://rikiyat.github.io/blog/weight-space-programming/",
+   "date": 1793641908,
+   "media": [
+    {
+     "type": "image",
+     "src": "https://pbs.twimg.com/media/HWI1oKUWUAAWoZp.jpg?name=orig",
+     "ratio": 0.5208
+    }
+   ],
+   "links": [
+    "https://rikiyat.github.io/blog/weight-space-programming/"
+   ]
+  },
+  {
+   "kind": "link",
+   "url": "https://rikiyat.github.io/blog/weight-space-programming/",
+   "domain": "rikiyat.github.io",
+   "title": "Sparks of Weight-Space Programming: LLMs can natively read & write neural network weights",
+   "description": "We find that frontier LLMs are surprisingly good at natively reading and writing neural network weights, well past what we’d expect from humans or conventional algorithms.",
+   "image": "https://rikiyat.github.io/images/blog/weight-space-programming.png",
+   "site": "rikiyat.github.io"
+  }
+ ],
+ "article": {
+  "title": "قضیه خیلی عجیبه و دانشمندا رسماً زدن تو کار جراحی مستقیم مغز هوش مصنوعی",
+  "source_title": "We asked GPT-6 Astra to edit Qwen3.5-0.8B weights to improve math.",
+  "body": [
+   "ببین رفیق، قضیه خیلی عجیبه و دانشمندا رسماً زدن تو کار جراحی مستقیم مغز هوش مصنوعی! ماجرا از این قراره که ریکیا تاکی و تیمش از مدل GPT-6 Astra خواستن وزن‌های یه مدل کوچیک‌تر یعنی Qwen3.5-0.8B رو دستکاری کنه تا ریاضیش راه بیفته. کار خفنشون اینجاست که بدون هیچ تمرین دادن، گرادیان یا دیتای آموزشی، فقط با تغییر دادن ۰.۰۱۶ درصد از وزن‌های اون مدل، لوپ‌های استدلالی خرابش رو درست کردن و زورش تو ریاضی تا ۶ برابر و تو پیروی از دستورات ۳ برابر بیشتر شده. اسم این شعبده‌بازی جدید رو هم گذاشتن «برنامه‌نویسی در فضای وزن» که نشون میده غول‌های هوش مصنوعی حالا می‌تونن کدهای مغزی مدل‌های ضعیف‌تر رو بخونن و اصلاح کنن."
+  ],
+  "why": "به‌جای صرف میلیون‌ها دلار هزینه و روزها وقت برای آموزش دوباره، یه هوش مصنوعی بزرگ می‌تونه تو چند ثانیه مثل یه جراح زبردست، مدل‌های کوچیک رو مستقیم دستکاری و تقویت کنه.",
+  "tags": [
+   "اوپن‌ای‌آی",
+   "کدنویسی"
+  ]
+ },
+ "updated": "2026-11-02T18:49:40+00:00"
+}
