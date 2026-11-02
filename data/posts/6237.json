@@ -12,7 +12,7 @@
   "site": "FxTwitter",
   "title": "elvis (@omarsar0)",
   "description": "Banger paper from IBM on decision gates for agents.\nThey add a runtime gate to tool-using agents and keep the models and tools the same.\nJevAct is a check that sits between the agent and its tools. An LLM first turns the domain policy into code checks and…",
-  "image": "https://cdn4.telesco.pe/file/qHlVaYiydkouVBFfC8PgO0d83wdHFm6GK1TWJF18g9GMtFG01PhTeT2oc81T80Mb_c7qzLWeRtx4PP0b_umjuIaog8N8gDq4VkBO4B35htBmRNS55kauTFiyaA7HbQMDaHhXa03ivv-Qto75VQuErlKFrkV2rDF7vUe8zM_cuq775UX0dwMcfb8HW6mT2Civf12RrSXq0GelEZxWDwD07wT8Wy6L9cbCRLsggZ20bc4Cva6Z2NTivMS2ci18em3DROFaUIBATgVlmJP4Cpls_KTmdpwFBnVM6ypplJ_qL0mDZr91oO8GaK705YyF2UBZ--4vcYfvqV-PHL1ldva2xw.jpg"
+  "image": "https://cdn4.telesco.pe/file/HG8QK1b6PgtN7xFkHUzwOQ2mNAXSmp6AFxL2lqpBgsK4sLPD9AWRfrWL5mUe6fcfeVHbhbyGLrf6ESEdtrx9NYiHOBMuOUFqnuZ36wuMMmo-FvVz6zQ2TI5LoEc3l3GyU2CvOqacLvTF8i-7FGR_sjG9LM7fVfF92S7aej8dALA_DEK3snGipEpIuOCzmhO0UTSDYdlRWwpttSEWNs5ATmLw4LoVa253_7M8azGeAAGl6crjIY7wCXJjTcFk0CLkF5TRjgcp8NdVqVgy_exqKsEbsxCdJFB4z6jc5-IVk6T-VcRizbMQbjurZoLXLUYZpJjq0hx7hO0skJuQVqI7wQ.jpg"
  },
  "gholam": {
   "text": "ببین رفیق، بچه‌های آی‌بی‌ام یه سیستم تر و تمیز به اسم JevAct طراحی کردن که مثل یه دروازه‌بان تیزبز بین ایجنت‌های هوش مصنوعی و ابزارهاشون قرار می‌گیره تا جلوی خرابکاری‌ها رو بگیره. داستان اینه که بدون دستکاری خود مدل‌ها، قوانین کاری رو به کدهای کنترلی و سوال‌جواب تبدیل می‌کنن و قبل از اجرای هر ابزاری، داده‌ها رو چک می‌کنن تا اگه مشکلی بود با فیدبک درست برش گردونن به خود ایجنت تا اصلاحش کنه. خروجی کار هم واقعاً غوغا کرده؛ مثلاً توی بنچمارک مخابراتی، نرخ موفقیت مدل Opus 4.6 از حدود ۳۹.۵ درصد یه کله پریده روی ۸۰.۷ درصد و عملکرد بقیه ایجنت‌ها رو هم به طور میانگین نزدیک ۱۷ درصد بهتر کرده، هرچند توی بخش پروازها نتایج یه کم بالا و پایین داشته.\n\nاهمیتش اینه که نشون میده بدون دست زدن به مدل یا خرج اضافه برای آموزش دوباره، فقط با یه نظارت سفت‌وسخت و گیت تصمیم‌گیری بین راهی، میشه خطای هوش مصنوعی رو نصف کرد و سپردش دست کارای حساس.",
@@ -63,5 +63,5 @@
    "ایجنت"
   ]
  },
- "updated": "2026-11-02T15:54:34+00:00"
+ "updated": "2026-11-02T23:50:53+00:00"
 }
