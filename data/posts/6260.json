@@ -1,0 +1,58 @@
+{
+ "id": 6260,
+ "url": "https://t.me/dlmehr/6260",
+ "date": "2026-11-02T19:50:26+00:00",
+ "text": "https://fxtwitter.com/claudedevs/status/2117332449382510884?a=qQYblOBbMNHORhwTULM&s=52",
+ "forwarded_from": null,
+ "digest": false,
+ "hash": "989779511bf1",
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/claudedevs/status/2117332449382510884?a=qQYblOBbMNHORhwTULM&s=52",
+  "site": "🧵 Thread • FxTwitter",
+  "title": "ClaudeDevs (@ClaudeDevs)",
+  "description": "Message threads are now in public beta on the Messages API.\nThe API caches your conversation on the server between turns, so instead of resending the full conversation, you send only new messages and the previous message ID, and Claude starts responding…",
+  "image": null
+ },
+ "gholam": {
+  "text": "ببین رفیق، بچه‌های آنتروپیک واسه API کلود یه حرکت مشتی زدن و قابلیت «Message threads» رو به صورت بتای عمومی در دسترس گذاشتن. قضیه از این قراره که سرور خودش تاریخچه چت رو کش می‌کنه و دیگه نیازی نیست هربار کل مکالمه رو از اول تا آخر بفرستی. حالا فقط کافیه پیام جدیدت رو همراه با آیدی پیام قبلی ارسال کنی تا کلود فورا متوجه ماجرا بشه. این یعنی ارسال دیتای الکی تعطیل می‌شه و سیستم خیلی سریع‌تر و تیزتر از قبل شروع به جواب دادن می‌کنه.\n\nاهمیتش اینه که سرعت پاسخ‌دهی هوش مصنوعی حسابی بالا می‌ره و هزینه‌ و مصرف پهنای باند برنامه‌نویس‌ها هم کلی میاد پایین.",
+  "date": "2026-11-02T19:50:40+00:00"
+ },
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/ClaudeDevs/status/2117332449382510884",
+   "domain": "x.com",
+   "author": {
+    "name": "ClaudeDevs",
+    "handle": "ClaudeDevs",
+    "avatar": "https://pbs.twimg.com/profile_images/2044472418815893504/xf14RxM8_200x200.png"
+   },
+   "text": "Message threads are now in public beta on the Messages API.\n\nThe API caches your conversation on the server between turns, so instead of resending the full conversation, you send only new messages and the previous message ID, and Claude starts responding sooner.",
+   "date": 1793646368,
+   "media": [
+    {
+     "type": "video",
+     "src": "https://video.twimg.com/amplify_video/2117332353785704449/vid/avc1/1280x720/2Onc5huh0gLsXqyj.mp4?tag=29",
+     "poster": "https://pbs.twimg.com/amplify_video_thumb/2117332353785704449/img/p7_rHqaEU7-HLGfG.jpg",
+     "ratio": 0.5625,
+     "duration": 34.948,
+     "gif": false
+    }
+   ],
+   "links": []
+  }
+ ],
+ "article": {
+  "title": "بچه‌های آنتروپیک واسه API کلود یه حرکت مشتی زدن و قابلیت «Message threads» رو به صورت بتای عمومی در دسترس گذاشتن",
+  "source_title": "Message threads are now in public beta on the Messages API.",
+  "body": [
+   "ببین رفیق، بچه‌های آنتروپیک واسه API کلود یه حرکت مشتی زدن و قابلیت «Message threads» رو به صورت بتای عمومی در دسترس گذاشتن. قضیه از این قراره که سرور خودش تاریخچه چت رو کش می‌کنه و دیگه نیازی نیست هربار کل مکالمه رو از اول تا آخر بفرستی. حالا فقط کافیه پیام جدیدت رو همراه با آیدی پیام قبلی ارسال کنی تا کلود فورا متوجه ماجرا بشه. این یعنی ارسال دیتای الکی تعطیل می‌شه و سیستم خیلی سریع‌تر و تیزتر از قبل شروع به جواب دادن می‌کنه."
+  ],
+  "why": "سرعت پاسخ‌دهی هوش مصنوعی حسابی بالا می‌ره و هزینه‌ و مصرف پهنای باند برنامه‌نویس‌ها هم کلی میاد پایین.",
+  "tags": [
+   "آنتروپیک"
+  ]
+ },
+ "updated": "2026-11-02T19:54:30+00:00"
+}
