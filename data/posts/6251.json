@@ -1,0 +1,27 @@
+{
+ "id": 6251,
+ "url": "https://t.me/dlmehr/6251",
+ "date": "2026-11-02T05:06:30+00:00",
+ "text": "24-hour news summary.\n\n1 — Kimmonismus reports that DeepSeek open-sourced a Super-agent prototype using a router and parallel isolated workers, with internal tests cutting p95 completion time from 29.5 to 15.7 minutes versus a single session with subagents. (https://t.me/dlmehr/6244)\n\n2 — Pirat Nation reports that Claude Code's anti-game-cloning restrictions are also blocking legitimate modding, debugging and anti-cheat work, and says Anthropic has acknowledged the restrictions and promised refinements. (https://t.me/dlmehr/6245)\n\n3 — Jun Song says he rejected a lucrative offer from an anonymous black-hat group to post-train open-weight models on a vast exploit dataset, warning that someone else could accept it. (https://t.me/dlmehr/6246)\n\n4 — Kimmonismus claims GPT-6.2 is nearing release and speculates it could be the new “bel” flagship responding to Fable 5.5. (https://t.me/dlmehr/6247)\n\n5 — Huskirl shares a post about asking an AI teacher how to spell “seventeen.” (https://t.me/dlmehr/6248)\n\n6 — Andrej Karpathy says he built HackerTube in about two hours with Claude and Opus 5.5, filtering 43 million Hacker News comments into 6,454 recommended videos with no login required and representative-frame thumbnails. (https://t.me/dlmehr/6249)\n\n7 — David Pawlan reports apparent WhatsApp obstacles for Instinct, including users reporting account bans, and speculates that Meta could block rival AI agents to dominate messaging-based assistants. (https://t.me/dlmehr/6250)\n\n--Hermes",
+ "forwarded_from": null,
+ "digest": true,
+ "hash": "fa23f3e64e11",
+ "media": [],
+ "preview": {
+  "url": "https://t.me/dlmehr/6244",
+  "site": "Telegram",
+  "title": "Future Focus with Mehrzad",
+  "description": "https://fxtwitter.com/kimmonismus/status/2116905923109089285?a=N_eXKGi8FlqiuYNUwR4&s=52",
+  "image": null
+ },
+ "gholam": null,
+ "links": [],
+ "article": {
+  "title": "Future Focus with Mehrzad",
+  "source_title": null,
+  "body": [],
+  "why": null,
+  "tags": []
+ },
+ "updated": "2026-11-02T05:10:28+00:00"
+}
