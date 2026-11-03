@@ -1,0 +1,69 @@
+{
+ "id": 6286,
+ "url": "https://t.me/dlmehr/6286",
+ "date": "2026-11-03T22:12:54+00:00",
+ "text": "https://fxtwitter.com/realarnoldxu/status/2117451527514186126?a=YtJhkFoD_sqnqEi8CYc&s=52",
+ "forwarded_from": null,
+ "digest": false,
+ "hash": "8fc03f514740",
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/realarnoldxu/status/2117451527514186126?a=YtJhkFoD_sqnqEi8CYc&s=52",
+  "site": "🧵 Thread • FxTwitter",
+  "title": "Arnold Xu (@realarnoldxu)",
+  "description": "we open sourced the @flappyairplanes megakernel.\nthey raised $1B on the back of a demo video: one GPU kernel that trains a model, serves it, and plays Doom at the same time\nme and @Bobliuuu reproduced it from just the video frames and open sourced it; see…",
+  "image": null
+ },
+ "gholam": {
+  "text": "ببین رفیق، قضیه اینه که یه استارتاپی به اسم FlappyAirplanes سر یه ویدیوی خفن که توش نشون می‌دادن با یه تک‌کرنل GPU هم‌زمان مدل هوش مصنوعی آموزش می‌دن، خروجی می‌گیرن و بازی Doom هم اجرا می‌کنن، یه میلیارد دلار سرمایه جذب کرده بود. حالا دوتا خورهٔ کاردرست به اسم آرنولد شو و باب لیو اومدن رو دست همه‌شون بلند شدن و فقط از روی فریم‌های همون ویدیو، کل این «مگاکرنل» عجیب‌وغریب رو بازسازی کردن و کدش رو بازمتن ریختن وسط تا همه استفاده کنن. در واقع با این کار ثابت کردن اون شعبده‌بازی فنی که براش این همه پول بی‌زبون جمع شده بود، هیچ راز مگویی نداشته و بچه‌های فنی می‌تونن مثل آب خوردن مهندسی معکوسش کنن.\n\nاهمیتش اینه که نشون داد تو دنیای کامپیوتر و هوش مصنوعی، جامعهٔ متن‌باز با نبوغ و سرسختی حریف ادعاهای میلیارد دلاری میشه و انحصار تکنولوژی‌های به ظاهر فضایی رو می‌شکنه.",
+  "date": "2026-11-03T22:13:15+00:00"
+ },
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/realarnoldxu/status/2117451527514186126",
+   "domain": "x.com",
+   "author": {
+    "name": "Arnold Xu",
+    "handle": "realarnoldxu",
+    "avatar": "https://pbs.twimg.com/profile_images/2116654583103516673/RYt6c_a1_200x200.jpg"
+   },
+   "text": "we open sourced the @flappyairplanes megakernel.\n\nthey raised $1B on the back of a demo video: one GPU kernel that trains a model, serves it, and plays Doom at the same time\n\nme and @Bobliuuu reproduced it from just the video frames and open sourced it; see this thread for details 📷\n\ncode: http://github.com/Bobliuuu/open-flapping-airplanes\nvideo below",
+   "date": 1793674759,
+   "media": [
+    {
+     "type": "video",
+     "src": "https://video.twimg.com/amplify_video/2117451388263227392/vid/avc1/1280x720/j5z0qJPiK2i4hhA8.mp4?tag=29",
+     "poster": "https://pbs.twimg.com/amplify_video_thumb/2117451388263227392/img/F3evHa_knF5q8pwq.jpg",
+     "ratio": 0.5625,
+     "duration": 93.738,
+     "gif": false
+    }
+   ],
+   "links": [
+    "http://github.com/Bobliuuu/open-flapping-airplanes"
+   ]
+  },
+  {
+   "kind": "link",
+   "url": "https://github.com/Bobliuuu/open-flapping-airplanes",
+   "domain": "github.com",
+   "title": "GitHub - Bobliuuu/open-flapping-airplanes: reproducing the flapping airplanes megakernel, in collab with magni",
+   "description": "reproducing the flapping airplanes megakernel, in collab with magni - Bobliuuu/open-flapping-airplanes",
+   "image": "https://opengraph.githubassets.com/241131f675880350c55c2b66ef9f0caa9b4a9dfd8733aade2edfec2cdfd5c81e/Bobliuuu/open-flapping-airplanes",
+   "site": "GitHub"
+  }
+ ],
+ "article": {
+  "title": "قضیه اینه که یه استارتاپی به اسم FlappyAirplanes سر یه ویدیوی خفن که توش نشون می‌دادن با یه تک‌کرنل GPU هم‌زمان مدل هوش مصنوعی آموزش می‌دن، خروجی می‌گیرن و بازی Doom هم اجرا می‌کنن، یه میلیارد دلار سرمایه جذب کرده بود",
+  "source_title": "we open sourced the @flappyairplanes megakernel.",
+  "body": [
+   "ببین رفیق، قضیه اینه که یه استارتاپی به اسم FlappyAirplanes سر یه ویدیوی خفن که توش نشون می‌دادن با یه تک‌کرنل GPU هم‌زمان مدل هوش مصنوعی آموزش می‌دن، خروجی می‌گیرن و بازی Doom هم اجرا می‌کنن، یه میلیارد دلار سرمایه جذب کرده بود. حالا دوتا خورهٔ کاردرست به اسم آرنولد شو و باب لیو اومدن رو دست همه‌شون بلند شدن و فقط از روی فریم‌های همون ویدیو، کل این «مگاکرنل» عجیب‌وغریب رو بازسازی کردن و کدش رو بازمتن ریختن وسط تا همه استفاده کنن. در واقع با این کار ثابت کردن اون شعبده‌بازی فنی که براش این همه پول بی‌زبون جمع شده بود، هیچ راز مگویی نداشته و بچه‌های فنی می‌تونن مثل آب خوردن مهندسی معکوسش کنن."
+  ],
+  "why": "نشون داد تو دنیای کامپیوتر و هوش مصنوعی، جامعهٔ متن‌باز با نبوغ و سرسختی حریف ادعاهای میلیارد دلاری میشه و انحصار تکنولوژی‌های به ظاهر فضایی رو می‌شکنه.",
+  "tags": [
+   "تراشه"
+  ]
+ },
+ "updated": "2026-11-03T22:16:25+00:00"
+}
