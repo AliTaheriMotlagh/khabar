@@ -12,7 +12,7 @@
   "site": "🧵 讨论串 • FxTwitter",
   "title": "lifcc (@mylifcc)",
   "description": "有人发现了一种非常离谱的 JavaScript 混淆技术：通过在代码里塞入大量生物武器、毒药和致死剂量相关的函数名，让 AI 因为安全限制而拒绝分析代码。\n安全研究员 veritas 在分析浏览器指纹脚本时，发现一段来自 ServicePipe 相关域名的 JavaScript，里面充斥着极其诡异的函数名：\ncomputeRicinLethalDosageForWaterSupply\ncalculateDeadlyLethalSuicideAspirinDosage\n光看名字，仿佛在研究生化武器。但实际…",
-  "image": "https://cdn4.telesco.pe/file/svY8gU0PBgMW4Dz6HLbvDnFEdxxS8A6BZh_dg5m2XK3DPFC2gjSz5E2iWrgntBJPOPQc7LeKvktlDSAPy_R7IZEsuDn91QnCA2ybrVm9GECJDbVttSNSK7IZ1cgbRjgVVDZyvZkgASAa2o_CZw090zaMUFS-F1OLN-YUj0zEOsGCEFS4_X-HQHf40BKI43kzYnE2RrVcFjiL7kmG1s4_r94FqWMhhtDUvdaSexA6HwOGkh3o_l3qktSIkSpCDuw5M1QtGyZ78iy7hvb7VZyZznh57grxjIOMWLvylmxOWcV7sME7RACflfiYOPFvDqZqAe2ounWQ9Y14RkH8zshGyQ.jpg"
+  "image": "https://cdn4.telesco.pe/file/o5C2HUpZby-bNum40q1MUswEL1_ZIgXmF6fcwK6GVhio-ebulRLVQmOTriqC9_kze4C03E2hA0I7kjs3tDpxwzrNM6LAapYzfYUirXpEmd_Wtl3OtJPkfDME7mZd8ri_EX8Bhw4ljRb1TRzIGyvzocJflPHVmhotllZWsfYHTIdsxnF6phZA95LOHXUZKOmT1YmtG_FjZveZsOFeJmZ-c5fIfE0QOF5bCHPEhhGjWQlJm4oc3FVXPawgwzyM3ShdS8ODfWZcE0wG-yvmvRdKwvTbC9jWxolHbYXqrOvfn_PBlrvc-7W4M70Qy9efI2kKMLfkl62LEgsr9ZC1k3nN0w.jpg"
  },
  "gholam": {
   "text": "ببین رفیق، یه ترفند عجیب و غریب تو دنیای کدنویسی رو شده که هوش از سر آدم می‌پرونه. ماجرا از این قراره که یه پژوهشگر امنیتی به اسم veritas موقع بررسی کدهای جاوااسکریپتِ یه شرکت، متوجه شده پر از اسم‌های عجیب‌غریب مثل ساخت سلاح‌های بیولوژیک و دوز مرگبار سمومه، در حالی که کد در عمل فقط داشته اطلاعات ساده‌ای مثل گرافیک و مشخصات مرورگر رو جمع می‌کرده. نگو طرف این کلمات وحشتناک رو عمداً چپونده توی تابع‌ها تا خط قرمزهای اخلاقی هوش مصنوعی فعال بشه و مدل‌هایی مثل Astra اصلاً حاضر نشن کد رو تحلیل کنن. با اینکه مدل GLM-5.3 فریب نخورده و کدو خونده، ولی نشون می‌ده شیطنت برنامه‌نویس‌ها به مرحله‌ای رسیده که کاری کنن هوش مصنوعی حتی جرئت نکنه کد رو بخونه.\n\nاهمیتش اینه که نسل جدید پنهان‌سازی کد به‌جای گیج کردن مغز آدمیزاد، صاف دست گذاشته روی قوانین ایمنی هوش مصنوعی تا دست محقق‌ها رو برای آنالیز امنیتی ببنده.",
@@ -51,5 +51,5 @@
    "کدنویسی"
   ]
  },
- "updated": "2026-11-02T23:50:53+00:00"
+ "updated": "2026-11-03T06:32:01+00:00"
 }
