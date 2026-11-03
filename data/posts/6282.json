@@ -1,0 +1,62 @@
+{
+ "id": 6282,
+ "url": "https://t.me/dlmehr/6282",
+ "date": "2026-11-03T20:53:01+00:00",
+ "text": "https://fxtwitter.com/anthropicai/status/2117710942826123294?a=bqfaKmV9dHJT7nLhpaI&s=52",
+ "forwarded_from": null,
+ "digest": false,
+ "hash": "e70d364f00c6",
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/anthropicai/status/2117710942826123294?a=bqfaKmV9dHJT7nLhpaI&s=52",
+  "site": "FxTwitter · anthropic.com",
+  "title": "Anthropic (@AnthropicAI)",
+  "description": "New Anthropic research: progress on provable inference for large language models.\nHere, we introduce FlashProve. Building on established cryptographic techniques, FlashProve allows developers to verify whether a given response came from a given AI model.…",
+  "image": "https://cdn4.telesco.pe/file/qNN6u2Mn6_KE-hXlkfcpKcsKZBJcGYLRvvdFgTlnOCUfqLlz7MMrsMLLG-zUUXJp-bNWaigu6Ye3mL2xqX3EG4nzzWOsfD95PVGDgUxqCQa3K5SYwqJr7rJnNXOwSqHzSjo_1OVUjqDQZxXr9daSNpGXpi0jD2EGwDSN4vzwyL1r6q0hl8UnLUpz-VXmgoLYhx4R0IkQ0BdYikvEscXJQeZmqTE4ggtvPUEAqG3aePIJr7_ba-zGSUj_RdYH2jgcK2ipy76vuV_MUAY5lfexmg6TfA6AJpiAnkEpqnda2fN6G2zyu5kRBhtk5sjXKT01GEcrrGQUBIfgxHxWPj8-mQ.jpg"
+ },
+ "gholam": {
+  "text": "رفیق، بچه‌های آنتروپیک یه سیستم جدید و کاردرست به اسم FlashProve معرفی کردن که با متدهای رمزنگاری، مو لای درزش نمیره و ثابت می‌کنه جوابی که گرفتی واقعاً از شست پای همون مدل هوش مصنوعی دراومده یا نه. این روش جدید نسبت به راه‌حل‌های قبلی خیلی تیزتر و کم‌هزینه‌تر کار می‌کنه و تیم سازنده هم مرام گذاشته و کل کدهای پروژه رو به صورت متن‌باز روی گیت‌هاب منتشر کرده. با این ابزار، دیگه هکرها نمی‌تونن وسط چت بیفتن و پیام‌ها رو دستکاری کنن، ارزیاب‌های امنیتی هم خیالشون تخته مدلی که دارن تست می‌زنن دقیقاً همونیه که دست کاربر نهایی می‌رسه.\n\nچرا مهمه؟ چون توی این بازار شلوغ هوش مصنوعی، اعتمادسازی حرف اول رو می‌زنه و این تکنولوژی دست شیادها رو برای قالب کردن جواب‌های فیک و دستکاری‌شده می‌بنده.",
+  "date": "2026-11-03T20:53:21+00:00"
+ },
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/AnthropicAI/status/2117710942826123294",
+   "domain": "x.com",
+   "author": {
+    "name": "Anthropic",
+    "handle": "AnthropicAI",
+    "avatar": "https://pbs.twimg.com/profile_images/1798110641414443008/XP8gyBaY_200x200.jpg"
+   },
+   "text": "New Anthropic research: progress on provable inference for large language models.\n\nHere, we introduce FlashProve. Building on established cryptographic techniques, FlashProve allows developers to verify whether a given response came from a given AI model. It’s substantially more efficient than prior open-source methods for doing so. \n\nThese proofs have a range of applications. They can, for instance, make it harder for attackers to hijack a chat, or enable safety evaluators to verify that the model they’re testing is the same one being served to customers.\n\nFor our full write-up, see here: https://www.anthropic.com/research/provable-inference\n\nFurther progress in provable inference will likely be an important part of improving trust in AI deployment. To that end, we're open-sourcing FlashProve’s code, here: https://github.com/anthropics/FlashProve\n\nWe’re grateful to our collaborators: Alessandro Chiesa, @GiacomoFenzi, @gwberg95, @miranda__christ, Rahul Dalal (http://rdalal.github.io) and Ben Mayer (@transmissions11).",
+   "date": 1793736608,
+   "media": [],
+   "links": [
+    "https://www.anthropic.com/research/provable-inference",
+    "https://github.com/anthropics/FlashProve",
+    "http://rdalal.github.io"
+   ]
+  },
+  {
+   "kind": "link",
+   "url": "https://www.anthropic.com/research/provable-inference",
+   "domain": "anthropic.com",
+   "title": "Progress on provable inference for large language models",
+   "description": "Sharing progress on a powerful type of cryptographic proof known as a zkSNARK, which is uniquely fit for provable inference.",
+   "image": "https://www-cdn.anthropic.com/images/4zrzovbb/website/2eba335a28661a8253187053fa36add230af728b-2000x1125.jpg",
+   "site": "anthropic.com"
+  }
+ ],
+ "article": {
+  "title": "بچه‌های آنتروپیک یه سیستم جدید و کاردرست به اسم FlashProve معرفی کردن که با متدهای رمزنگاری، مو لای درزش نمیره و ثابت می‌کنه جوابی که گرفتی واقعاً از شست پای همون مدل هوش مصنوعی دراومده یا نه",
+  "source_title": "New Anthropic research: progress on provable inference for large language models.",
+  "body": [
+   "رفیق، بچه‌های آنتروپیک یه سیستم جدید و کاردرست به اسم FlashProve معرفی کردن که با متدهای رمزنگاری، مو لای درزش نمیره و ثابت می‌کنه جوابی که گرفتی واقعاً از شست پای همون مدل هوش مصنوعی دراومده یا نه. این روش جدید نسبت به راه‌حل‌های قبلی خیلی تیزتر و کم‌هزینه‌تر کار می‌کنه و تیم سازنده هم مرام گذاشته و کل کدهای پروژه رو به صورت متن‌باز روی گیت‌هاب منتشر کرده. با این ابزار، دیگه هکرها نمی‌تونن وسط چت بیفتن و پیام‌ها رو دستکاری کنن، ارزیاب‌های امنیتی هم خیالشون تخته مدلی که دارن تست می‌زنن دقیقاً همونیه که دست کاربر نهایی می‌رسه."
+  ],
+  "why": "چون توی این بازار شلوغ هوش مصنوعی، اعتمادسازی حرف اول رو می‌زنه و این تکنولوژی دست شیادها رو برای قالب کردن جواب‌های فیک و دستکاری‌شده می‌بنده.",
+  "tags": [
+   "آنتروپیک"
+  ]
+ },
+ "updated": "2026-11-03T20:56:31+00:00"
+}
