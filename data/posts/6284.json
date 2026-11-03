@@ -1,0 +1,50 @@
+{
+ "id": 6284,
+ "url": "https://t.me/dlmehr/6284",
+ "date": "2026-11-03T21:29:25+00:00",
+ "text": "https://x.com/rohanpaul_ai/status/2117725253728338101?a=bNh_2YomEn08fv3mM0M&s=52",
+ "forwarded_from": null,
+ "digest": false,
+ "hash": "801b6499436a",
+ "media": [],
+ "preview": {
+  "url": "https://x.com/rohanpaul_ai/status/2117725253728338101?a=bNh_2YomEn08fv3mM0M&s=52",
+  "site": "X (formerly Twitter)",
+  "title": "Rohan Paul (@rohanpaul_ai) on X",
+  "description": "According to Reuters, OpenAI stored most of its code in one monorepo, so anyone with code access could read details of many projects, including sensitive ones unrelated to their own work.\nOpenAI…",
+  "image": "https://cdn4.telesco.pe/file/P0wK2HHm0zpKhKXu-lzyM5kRmzZ3umUrvJwdZx-S1WoRM1_Ywnu5c7YH75nsB6XKYA13wm5-C0cixnaDhFpiAy_ICVTSnKwBTYo8mFbmhaaCailC1jPKT_rax6TDkKmcdoeHdF4yN8qUTGrmlfUOBmLNZ2PwxrqmIMCtXv7CrZqvOfvtk2K8w7hg2_hRamBRNRFyahZqUZ9iunvYIENKsbaTouP2l67oIp9m0O9fO8ZaYgYxwOzkEmvaNGhszhYnfTh7G1cCN_bot2czCZrOSBg0KrVZWdeAZxs0TmhEgnRR71sUidvgTWNdeZejJztS8XKgHw0wZmSH9L_0gO1F4g.jpg"
+ },
+ "gholam": null,
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/rohanpaul_ai/status/2117725253728338101",
+   "domain": "x.com",
+   "author": {
+    "name": "Rohan Paul",
+    "handle": "rohanpaul_ai",
+    "avatar": "https://pbs.twimg.com/profile_images/1816185267037859840/Fd18CH0v_200x200.jpg"
+   },
+   "text": "According to Reuters, OpenAI stored most of its code in one monorepo, so anyone with code access could read details of many projects, including sensitive ones unrelated to their own work.\n\nOpenAI staff warned leaders for years that anyone with code access could see details of many projects.\n\nThose complaints reached executives and the board, yet some staff concluded that keeping up with Google and Anthropic came first.\n\nAlthough, OpenAI says model weights and much of its most sensitive work sit outside the monorepo.",
+   "date": 1793740020,
+   "media": [
+    {
+     "type": "image",
+     "src": "https://pbs.twimg.com/media/HWOqYodbEAE0HdB.jpg?name=orig",
+     "ratio": 1.057
+    }
+   ],
+   "links": []
+  }
+ ],
+ "article": {
+  "title": "According to Reuters, OpenAI stored most of its code in one monorepo, so anyone with code access could read details of many projects…",
+  "source_title": null,
+  "body": [],
+  "why": null,
+  "tags": [
+   "اوپن‌ای‌آی"
+  ]
+ },
+ "updated": "2026-11-03T21:29:28+00:00"
+}
