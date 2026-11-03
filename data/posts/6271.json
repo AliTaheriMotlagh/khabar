@@ -1,0 +1,39 @@
+{
+ "id": 6271,
+ "url": "https://t.me/dlmehr/6271",
+ "date": "2026-11-03T16:32:50+00:00",
+ "text": "Attack Preparation\nOur current investigation indicates that this was a sophisticated, multi-stage campaign. It was not a single isolated breach or a simple phishing incident. The attackers combined a range of techniques, including social engineering by fake recruitment interviews, malicious software downloads, compromised internal AI tooling, endpoint compromise, and an advanced transaction-authorisation method.\n• June 2026 — Supply chain attack. Engineer A from Wallet DevOps downloaded a tampered Homebrew installation (https://isc.sans.edu/diary/32942) in order to install a popular AI coding tool after searching for it on a search engine. Our security team detected the anomaly, replaced the device, and rotated all related credentials as a proactive security action. However, Engineer A’s role and his related colleagues on our wallet infrastructure team was exposed to the hacker.\n• Throughout 2026, Binance's security team detected and prevented 57 suspected North Korea-linked cyber threat cases. These attempts reflect the persistent threat posed by state-sponsored actors targeting the cryptocurrency industry. The techniques include fraudulent job interviews, malicious software disguised as popular developer tools, compromised software packages and browser extensions, fake video conferencing applications, and social engineering campaigns designed to steal credentials or deploy remote access malware.\n• September — social engineering. Software Engineer B was contacted through a legitimate job-hunting platform by an individual posing as a Project Director. Software Engineer B had a profile on the platform that referenced his experience at Binance. The purported Project Director arranged a first-round interview with a HR representative, followed by a second-round interview with an individual claiming to be the CEO of a fictitious company.\n• In the first round, the purported HR representative conducted a live video interview with Software Engineer B. The interviewer shared a social media account with him, including personal photos and videos posted on the platform, in order to build trust. This was more advanced and deceptive than previously seen social engineering approaches.\n• The second interview was conducted in a popular social chat app, near the end of the interview, Engineer B was instructed to download an “assignment” containing a malicious code repository onto his work computer. The repository contained malicious code that executed during the setup process, initiating a series of unauthorized activities.\n• The malware employed sophisticated obfuscation and evasion techniques, including replacing a legitimate development tool component with a malicious version to execute commands and establish communication with an attacker-controlled external server. The 0-day malware was not detected by the endpoint security protection tools at the time. The attacker also took steps to conceal the malicious activity and remove traces of the compromise, making detection and subsequent investigation more challenging.\n• The script executed the below steps by applying obfuscation techniques to evade security detection.\nCREATE  /opt/homebrew/Cellar/pyenv/2.8.0/libexec/pyenv_\nMODIFY  pyenv_ → 3,414 B\nDELETE  .../libexec/pyenv  (3,344 B)      ← remove the valid pyenv\nRENAME  pyenv_ → pyenv  (3,414 B)  ← replace it with a malicious version\nDELETE  /opt/homebrew/bin/pyenv  (3,414 B)\nln  (create a new symlink)  +  spawn zsh\n• 20 October — use of an internal AI tool as a springboard. The attacker leveraged the compromised computer of engineer B and used an internal AI tool to gain control over the Wallet DevOps Engineer A and another Wallet Software Engineer C. The attacker soon discovered Wallet DevOps Engineer A had a container deployment permission token on his computer.\n• 29 October — reach into wallet signing operations. On 29 October between 17:15 and 19:56, the attacker logged onto Software Engineer C’s computer, used the credentials stolen from Wallet DevOps Engineer A, deployed a container, and triggered a malicious script to launch the attack.",
+ "forwarded_from": null,
+ "digest": false,
+ "hash": "d56fea7f3b45",
+ "media": [],
+ "preview": {
+  "url": "https://isc.sans.edu/diary/32942",
+  "site": "SANS Internet Storm Center",
+  "title": "Malicious Ad for Homebrew Leads to MacSync Stealer",
+  "description": "Malicious Ad for Homebrew Leads to MacSync Stealer, Author: Brad Duncan",
+  "image": "https://cdn4.telesco.pe/file/fH059QztAyy0VFc4rKyg8as8MkAmJyEbTOg8lBXO7heai70NbiQz9-Cm5XTXFp5Abje1kTZyCegD_eqWva5qnN-WCQvRsiHVsfDH6HLkK3MWEHwymX70avTf33YKMZlstyDAVzBpc2ptYAoiO417STt5gzHseTX2scyLPamBeygG89zyXGlt4andtylP9CHF5jYRGAtEB35L0ryrpFZ385Ff3xIdKJK7ZLIqa87SRS9nhblXGU6tmgbMXFIRRyJgY3zqgYAFAMdtQRqvRkLfj0XsSWgSSr7iOCwnQuon-is6eaX7Q6IqfLAnwqHRwzrwLerQkW0aMTDxpkPfEl9MxQ.jpg"
+ },
+ "gholam": null,
+ "links": [
+  {
+   "kind": "link",
+   "url": "https://isc.sans.edu/diary/32942",
+   "domain": "isc.sans.edu",
+   "title": "Malicious Ad for Homebrew Leads to MacSync Stealer",
+   "description": "Malicious Ad for Homebrew Leads to MacSync Stealer, Author: Brad Duncan",
+   "image": "https://isc.sans.edu/diaryimages/images/2026-04-30-image-MacSync-Stealer-image-01a.png",
+   "site": "SANS Internet Storm Center"
+  }
+ ],
+ "article": {
+  "title": "Malicious Ad for Homebrew Leads to MacSync Stealer",
+  "source_title": null,
+  "body": [],
+  "why": null,
+  "tags": [
+   "امنیت"
+  ]
+ },
+ "updated": "2026-11-03T16:36:24+00:00"
+}

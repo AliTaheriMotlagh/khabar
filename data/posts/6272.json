@@ -1,0 +1,53 @@
+{
+ "id": 6272,
+ "url": "https://t.me/dlmehr/6272",
+ "date": "2026-11-03T16:33:26+00:00",
+ "text": "https://x.com/binance/status/2117626126214504729?a=M4VlkEiG4cRGVtb5GLE&s=46",
+ "forwarded_from": null,
+ "digest": false,
+ "hash": "5d8de3c83ca7",
+ "media": [],
+ "preview": null,
+ "gholam": null,
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/binance/status/2117626126214504729",
+   "domain": "x.com",
+   "author": {
+    "name": "Binance",
+    "handle": "binance",
+    "avatar": "https://pbs.twimg.com/profile_images/1940131561103347712/f5y2qENu_200x200.jpg"
+   },
+   "text": "https://x.com/i/article/2117598836831010816",
+   "date": 1793716386,
+   "media": [],
+   "links": [
+    "https://x.com/i/article/2117598836831010816"
+   ],
+   "article": {
+    "title": "29 October Binance Security Incident: Initial Findings and Response Update",
+    "image": "https://pbs.twimg.com/media/HWM-NtRbEAAnZkL.png"
+   }
+  },
+  {
+   "kind": "link",
+   "url": "https://x.com/i/jf/onboarding/web?redirect_after_login=%2Fi%2Farticle%2F2117598836831010816&mode=login",
+   "domain": "x.com",
+   "title": "X - The Everything App",
+   "description": null,
+   "image": "https://abs.twimg.com/x-web/assets/og/default-og.a2e144f0cf66.jpg",
+   "site": "X (formerly Twitter)"
+  }
+ ],
+ "article": {
+  "title": "29 October Binance Security Incident: Initial Findings and Response Update",
+  "source_title": null,
+  "body": [],
+  "why": null,
+  "tags": [
+   "امنیت"
+  ]
+ },
+ "updated": "2026-11-03T16:36:23+00:00"
+}
