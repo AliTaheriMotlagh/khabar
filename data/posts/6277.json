@@ -1,0 +1,59 @@
+{
+ "id": 6277,
+ "url": "https://t.me/dlmehr/6277",
+ "date": "2026-11-03T18:34:58+00:00",
+ "text": "https://fxtwitter.com/claudedevs/status/2117680635561312732?a=4WRolFRWMrCk3hf3lj4&s=52",
+ "forwarded_from": null,
+ "digest": false,
+ "hash": "18d2df9e5dda",
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/claudedevs/status/2117680635561312732?a=4WRolFRWMrCk3hf3lj4&s=52",
+  "site": "🧵 Thread • FxTwitter",
+  "title": "ClaudeDevs (@ClaudeDevs)",
+  "description": "Users can now auto-connect plugins when they log in to Claude, with MCP servers that accept Claude as a trusted issuer.\nIf you’re building plugins for Claude, add support so users get started faster and stay connected without re-authorizing.",
+  "image": null
+ },
+ "gholam": {
+  "text": "رفیق، تیم توسعه‌دهنده‌های کلود یه قابلیت مشتی رو کرده که حسابی کاربرا و برنامه‌نویس‌ها رو از شر معطلی‌های الکی خلاص می‌کنه. ماجرا از این قراره که از این به بعد وقتی وارد حسابت تو کلود می‌شی، پلاگین‌ها می‌تونن با سرورهای پروتکل MCP که کلود رو معتبر می‌دونن، به طور خودکار جفت‌وجور و متصل بشن. به دولوپرها هم ندا دادن که بی زحمت این دسترسی رو به ابزارهاشون اضافه کنن تا کاربرا مدام مجبور نشن هی تایید هویت کنن و دوباره دسترسی بدن. با این حرکت، هم کاربر سریع‌تر به کارش می‌رسه و هم اتصال ابزارها همیشه سرِ پا و وصل می‌مونه.\n\nاهمیتش اینه که استفاده از پلاگین‌های مختلف توی کلود روون‌تر و بی‌دردسر می‌شه و دیگه قرار نیست با هر بار لاگین، کلی وقت پای مراحل تکراری تایید اتصال هدر بره.",
+  "date": "2026-11-03T18:35:20+00:00"
+ },
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/ClaudeDevs/status/2117680635561312732",
+   "domain": "x.com",
+   "author": {
+    "name": "ClaudeDevs",
+    "handle": "ClaudeDevs",
+    "avatar": "https://pbs.twimg.com/profile_images/2044472418815893504/xf14RxM8_200x200.png"
+   },
+   "text": "Users can now auto-connect plugins when they log in to Claude, with MCP servers that accept Claude as a trusted issuer.\n\nIf you’re building plugins for Claude, add support so users get started faster and stay connected without re-authorizing.",
+   "date": 1793729382,
+   "media": [
+    {
+     "type": "video",
+     "src": "https://video.twimg.com/amplify_video/2117680108706140161/vid/avc1/1280x720/qNM2YE2V4Q5_-cv5.mp4?tag=29",
+     "poster": "https://pbs.twimg.com/amplify_video_thumb/2117680108706140161/img/W7IjAqq94Q6lFVOo.jpg",
+     "ratio": 0.5625,
+     "duration": 8,
+     "gif": false
+    }
+   ],
+   "links": []
+  }
+ ],
+ "article": {
+  "title": "تیم توسعه‌دهنده‌های کلود یه قابلیت مشتی رو کرده که حسابی کاربرا و برنامه‌نویس‌ها رو از شر معطلی‌های الکی خلاص می‌کنه",
+  "source_title": "Users can now auto-connect plugins when they log in to Claude, with MCP servers that accept Claude as a trusted issuer.",
+  "body": [
+   "رفیق، تیم توسعه‌دهنده‌های کلود یه قابلیت مشتی رو کرده که حسابی کاربرا و برنامه‌نویس‌ها رو از شر معطلی‌های الکی خلاص می‌کنه. ماجرا از این قراره که از این به بعد وقتی وارد حسابت تو کلود می‌شی، پلاگین‌ها می‌تونن با سرورهای پروتکل MCP که کلود رو معتبر می‌دونن، به طور خودکار جفت‌وجور و متصل بشن. به دولوپرها هم ندا دادن که بی زحمت این دسترسی رو به ابزارهاشون اضافه کنن تا کاربرا مدام مجبور نشن هی تایید هویت کنن و دوباره دسترسی بدن. با این حرکت، هم کاربر سریع‌تر به کارش می‌رسه و هم اتصال ابزارها همیشه سرِ پا و وصل می‌مونه."
+  ],
+  "why": "استفاده از پلاگین‌های مختلف توی کلود روون‌تر و بی‌دردسر می‌شه و دیگه قرار نیست با هر بار لاگین، کلی وقت پای مراحل تکراری تایید اتصال هدر بره.",
+  "tags": [
+   "آنتروپیک",
+   "کدنویسی"
+  ]
+ },
+ "updated": "2026-11-03T18:38:42+00:00"
+}
