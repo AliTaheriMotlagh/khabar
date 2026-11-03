@@ -2,19 +2,22 @@
  "id": 6284,
  "url": "https://t.me/dlmehr/6284",
  "date": "2026-11-03T21:29:25+00:00",
- "text": "https://x.com/rohanpaul_ai/status/2117725253728338101?a=bNh_2YomEn08fv3mM0M&s=52",
+ "text": "https://fxtwitter.com/rohanpaul_ai/status/2117725253728338101?a=bNh_2YomEn08fv3mM0M&s=52",
  "forwarded_from": null,
  "digest": false,
- "hash": "801b6499436a",
+ "hash": "44743236ce51",
  "media": [],
  "preview": {
-  "url": "https://x.com/rohanpaul_ai/status/2117725253728338101?a=bNh_2YomEn08fv3mM0M&s=52",
-  "site": "X (formerly Twitter)",
-  "title": "Rohan Paul (@rohanpaul_ai) on X",
-  "description": "According to Reuters, OpenAI stored most of its code in one monorepo, so anyone with code access could read details of many projects, including sensitive ones unrelated to their own work.\nOpenAI…",
-  "image": "https://cdn4.telesco.pe/file/P0wK2HHm0zpKhKXu-lzyM5kRmzZ3umUrvJwdZx-S1WoRM1_Ywnu5c7YH75nsB6XKYA13wm5-C0cixnaDhFpiAy_ICVTSnKwBTYo8mFbmhaaCailC1jPKT_rax6TDkKmcdoeHdF4yN8qUTGrmlfUOBmLNZ2PwxrqmIMCtXv7CrZqvOfvtk2K8w7hg2_hRamBRNRFyahZqUZ9iunvYIENKsbaTouP2l67oIp9m0O9fO8ZaYgYxwOzkEmvaNGhszhYnfTh7G1cCN_bot2czCZrOSBg0KrVZWdeAZxs0TmhEgnRR71sUidvgTWNdeZejJztS8XKgHw0wZmSH9L_0gO1F4g.jpg"
+  "url": "https://fxtwitter.com/rohanpaul_ai/status/2117725253728338101?a=bNh_2YomEn08fv3mM0M&s=52",
+  "site": "🧵 Thread • FxTwitter",
+  "title": "Rohan Paul (@rohanpaul_ai)",
+  "description": "According to Reuters, OpenAI stored most of its code in one monorepo, so anyone with code access could read details of many projects, including sensitive ones unrelated to their own work.\nOpenAI staff warned leaders for years that anyone with code access…",
+  "image": "https://cdn4.telesco.pe/file/SAdoTd_aR4Ls-uCS-7s9CVb8DNtTZD0Fl-321hSpSwRKYFN7SO8sXQCxlUmIA99cqOizHfnWPyFBWJnK19LbsQC5m8KPZGdDXqjK02MMWzhXI75tasnOPN-AFqwJ0itJQxEiLlp_IKJDUd3x28lAiKiovZywrSvEGZdFNvMyVuU683km4xgjbCElL-LQHNuP02fdWj-rBpwrsKQwliWmooa-VME6PNf09D1IwWDSDLNUHA7kGu-mecuZowHjciYVSoifgaoNKk2ZY4f7b7I38ZO7IsuTf7DOUVj5YhHXs-Tcn-SK5NsoPKIHQKIg6_nEWQpw07siWuZr1_NBnY-FPA.jpg"
  },
- "gholam": null,
+ "gholam": {
+  "text": "ببین رفیق، رویترز یه گزارش داده که حسابی سر و صدا کرده؛ نگو شرکت اوپن‌ای‌آی بیشتر کدهای برنامه‌نویسیش رو توی یه مخزن واحد یا همون «مونوریپو» نگه می‌داشته و هر کارمندی که دسترسی داشته، راحت می‌تونسته سرک بکشه تو پروژه‌های حساس بقیه همکاراش. کارمندها سال‌ها به مدیرها و هیئت‌مدیره هشدار می‌دادن که این قضیه خطریه، ولی انگار مدیرها واسه اینکه از قافله رقابت با گوگل و آنتروپیک عقب نیفتن، چشمشون رو روی این بی‌احتیاطی بسته بودن. البته خود اوپن‌ای‌آی سینه سپر کرده و می‌گه وزن‌های اصلی مدل‌ها و حساس‌ترین پروژه‌ها بیرون از این مخزن عمومی نگهداری می‌شدن تا لو نرن.\n\nچرا مهمه؟ اهمیتش اینه که غول هوش مصنوعی دنیا که دم از امنیت و نجات بشریت می‌زنه، واسه عقب نموندن از رقبا ابتدایی‌ترین اصول امنیت سایبری و محافظت از پروژه‌هاش رو فدا کرده بود.",
+  "date": "2026-11-03T21:29:38+00:00"
+ },
  "links": [
   {
    "kind": "tweet",
@@ -38,13 +41,15 @@
   }
  ],
  "article": {
-  "title": "According to Reuters, OpenAI stored most of its code in one monorepo, so anyone with code access could read details of many projects…",
-  "source_title": null,
-  "body": [],
-  "why": null,
+  "title": "رویترز یه گزارش داده که حسابی سر و صدا کرده",
+  "source_title": "According to Reuters, OpenAI stored most of its code in one monorepo, so anyone with code access could read details of many projects…",
+  "body": [
+   "ببین رفیق، رویترز یه گزارش داده که حسابی سر و صدا کرده؛ نگو شرکت اوپن‌ای‌آی بیشتر کدهای برنامه‌نویسیش رو توی یه مخزن واحد یا همون «مونوریپو» نگه می‌داشته و هر کارمندی که دسترسی داشته، راحت می‌تونسته سرک بکشه تو پروژه‌های حساس بقیه همکاراش. کارمندها سال‌ها به مدیرها و هیئت‌مدیره هشدار می‌دادن که این قضیه خطریه، ولی انگار مدیرها واسه اینکه از قافله رقابت با گوگل و آنتروپیک عقب نیفتن، چشمشون رو روی این بی‌احتیاطی بسته بودن. البته خود اوپن‌ای‌آی سینه سپر کرده و می‌گه وزن‌های اصلی مدل‌ها و حساس‌ترین پروژه‌ها بیرون از این مخزن عمومی نگهداری می‌شدن تا لو نرن."
+  ],
+  "why": "اهمیتش اینه که غول هوش مصنوعی دنیا که دم از امنیت و نجات بشریت می‌زنه، واسه عقب نموندن از رقبا ابتدایی‌ترین اصول امنیت سایبری و محافظت از پروژه‌هاش رو فدا کرده بود.",
   "tags": [
    "اوپن‌ای‌آی"
   ]
  },
- "updated": "2026-11-03T21:29:28+00:00"
+ "updated": "2026-11-03T21:33:32+00:00"
 }
