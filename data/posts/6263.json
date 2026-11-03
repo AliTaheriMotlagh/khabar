@@ -1,0 +1,59 @@
+{
+ "id": 6263,
+ "url": "https://t.me/dlmehr/6263",
+ "date": "2026-11-03T00:17:29+00:00",
+ "text": "https://fxtwitter.com/openaidevs/status/2117408792346509663?a=oT_eWIVacWEH_M9W7-c&s=52",
+ "forwarded_from": null,
+ "digest": false,
+ "hash": "856531763cae",
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/openaidevs/status/2117408792346509663?a=oT_eWIVacWEH_M9W7-c&s=52",
+  "site": "🧵 Thread • FxTwitter",
+  "title": "OpenAI Developers (@OpenAIDevs)",
+  "description": "We built Pando, a new Git backend for our monorepo, to handle more pushes and fetches without changing how our engineers and agents use Git.\nPando cut push latency by ~80% and now serves nearly a petabyte of Git data a day. We can grow Git capacity alongside…",
+  "image": null
+ },
+ "gholam": {
+  "text": "رفیق، بچه‌های اوپن‌ای‌آی اومدن یه سیستم بک‌اند جدید برای گیت ساختن به اسم «پاندو» (Pando) تا مخزن عظیم کدهای تیمشون زیر بار سنگین کم نیاره. ماجرا از این قراره که این سیستم بدون اینکه روال کار برنامه‌نویس‌ها یا حتی ایجنت‌های هوش مصنوعی رو دستکاری کنه، تاخیر پوش کردن کدها رو حدود ۸۰ درصد آورده پایین. الانم داره روزانه نزدیک به یک پتابایت دیتای گیت رو مثل آب خوردن ردوبدل می‌کنه تا با بالا رفتن مصرف و فعالیت ایجنت‌ها، سیستمشون نفس‌کم نیاره.\n\nچرا مهمه؟ چون نشون می‌ده با ورود ایجنت‌های هوش مصنوعی به دنیای برنامه‌نویسی، حتی ابزارهای جاافتاده‌ای مثل گیت هم باید از نو معماری بشن تا زیر بار ترافیک دیوانه‌وار اونا دووم بیارن.",
+  "date": "2026-11-03T00:17:43+00:00"
+ },
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/OpenAIDevs/status/2117408792346509663",
+   "domain": "x.com",
+   "author": {
+    "name": "OpenAI Developers",
+    "handle": "OpenAIDevs",
+    "avatar": "https://pbs.twimg.com/profile_images/2022002720971096064/l3Kyt4qt_200x200.jpg"
+   },
+   "text": "We built Pando, a new Git backend for our monorepo, to handle more pushes and fetches without changing how our engineers and agents use Git.\n\nPando cut push latency by ~80% and now serves nearly a petabyte of Git data a day. We can grow Git capacity alongside agent usage.",
+   "date": 1793664570,
+   "media": [
+    {
+     "type": "video",
+     "src": "https://video.twimg.com/amplify_video/2117408779730108416/vid/avc1/1280x720/DC4QGviQJjmqljUu.mp4?tag=16",
+     "poster": "https://pbs.twimg.com/amplify_video_thumb/2117408779730108416/img/M_YLvydUvu_YZd9I.jpg",
+     "ratio": 0.5625,
+     "duration": 18,
+     "gif": false
+    }
+   ],
+   "links": []
+  }
+ ],
+ "article": {
+  "title": "بچه‌های اوپن‌ای‌آی اومدن یه سیستم بک‌اند جدید برای گیت ساختن به اسم «پاندو» (Pando) تا مخزن عظیم کدهای تیمشون زیر بار سنگین کم نیاره",
+  "source_title": "We built Pando, a new Git backend for our monorepo, to handle more pushes and fetches without changing how our engineers and agents use Git.",
+  "body": [
+   "رفیق، بچه‌های اوپن‌ای‌آی اومدن یه سیستم بک‌اند جدید برای گیت ساختن به اسم «پاندو» (Pando) تا مخزن عظیم کدهای تیمشون زیر بار سنگین کم نیاره. ماجرا از این قراره که این سیستم بدون اینکه روال کار برنامه‌نویس‌ها یا حتی ایجنت‌های هوش مصنوعی رو دستکاری کنه، تاخیر پوش کردن کدها رو حدود ۸۰ درصد آورده پایین. الانم داره روزانه نزدیک به یک پتابایت دیتای گیت رو مثل آب خوردن ردوبدل می‌کنه تا با بالا رفتن مصرف و فعالیت ایجنت‌ها، سیستمشون نفس‌کم نیاره."
+  ],
+  "why": "چون نشون می‌ده با ورود ایجنت‌های هوش مصنوعی به دنیای برنامه‌نویسی، حتی ابزارهای جاافتاده‌ای مثل گیت هم باید از نو معماری بشن تا زیر بار ترافیک دیوانه‌وار اونا دووم بیارن.",
+  "tags": [
+   "ایجنت",
+   "اوپن‌ای‌آی"
+  ]
+ },
+ "updated": "2026-11-03T00:21:25+00:00"
+}
