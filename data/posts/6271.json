@@ -7,13 +7,7 @@
  "digest": false,
  "hash": "d56fea7f3b45",
  "media": [],
- "preview": {
-  "url": "https://isc.sans.edu/diary/32942",
-  "site": "SANS Internet Storm Center",
-  "title": "Malicious Ad for Homebrew Leads to MacSync Stealer",
-  "description": "Malicious Ad for Homebrew Leads to MacSync Stealer, Author: Brad Duncan",
-  "image": "https://cdn4.telesco.pe/file/fH059QztAyy0VFc4rKyg8as8MkAmJyEbTOg8lBXO7heai70NbiQz9-Cm5XTXFp5Abje1kTZyCegD_eqWva5qnN-WCQvRsiHVsfDH6HLkK3MWEHwymX70avTf33YKMZlstyDAVzBpc2ptYAoiO417STt5gzHseTX2scyLPamBeygG89zyXGlt4andtylP9CHF5jYRGAtEB35L0ryrpFZ385Ff3xIdKJK7ZLIqa87SRS9nhblXGU6tmgbMXFIRRyJgY3zqgYAFAMdtQRqvRkLfj0XsSWgSSr7iOCwnQuon-is6eaX7Q6IqfLAnwqHRwzrwLerQkW0aMTDxpkPfEl9MxQ.jpg"
- },
+ "preview": null,
  "gholam": null,
  "links": [
   {
@@ -35,5 +29,5 @@
    "امنیت"
   ]
  },
- "updated": "2026-11-03T16:36:24+00:00"
+ "updated": "2026-11-03T16:45:39+00:00"
 }
