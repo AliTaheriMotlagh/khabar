@@ -1,0 +1,53 @@
+{
+ "id": 6285,
+ "url": "https://t.me/dlmehr/6285",
+ "date": "2026-11-03T22:07:04+00:00",
+ "text": "https://fxtwitter.com/jacsebl/status/2117606206764175543?a=PA4UXr6r8JUL9tKnqAA&s=52",
+ "forwarded_from": null,
+ "digest": false,
+ "hash": "390768851781",
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/jacsebl/status/2117606206764175543?a=PA4UXr6r8JUL9tKnqAA&s=52",
+  "site": "🧵 Thread • FxTwitter",
+  "title": "Jacob Lauritzen (@jacsebl)",
+  "description": "Got fable to hand-write weights of a 100k param model to recognize real versus fake legal citations.\nBasically one-shotted a full NN that’s better than training it",
+  "image": "https://cdn4.telesco.pe/file/J7FS7M28KMVSD2GQH88hUnzPIf5SkBtQD7AQxK9atJSmSyR9n9Sv5cEBgDPBm3lyMjnHCyHVkIv2IB9C9MP1FFu68apE7pkYJzduS_D1yMJnuEjs_5jsREbVWPrMZAqbzMdfHw6fvzng4fJ6BH9DR25NWhKIbOA2mZhAbq5jLfuqUrt1bp6fWAPPgrvZVcmzd-h_4ZJ2CXT4ILaobKS7uuhcBD4t37GU8NVC1UQtTj4lbg2AB0FcbtXuDzfbTAG9-07lGXiNmDs1m169TYEItDguYoKyC3czSPZnTK6IhbLyIU-WMDrcIKkDjnZjlL-lTd4PAi8mUwPFbXIjoPkAaw.jpg"
+ },
+ "gholam": {
+  "text": "رفیق، یه متخصصی به اسم جیکوب لوریتزن دست به یه حرکت عجیب‌غریب زده و با کمک سیستم Fable کاری کرده که وزن‌های یه شبکه عصبی ۱۰۰ هزار پارامتری رو یک‌ضرب و دستی براش بنویسه. ماجرا اینه که هدف این مدل، تشخیص ارجاعات حقوقی واقعی از نقل‌قول‌های قلابی و فیکه. نکته برگ‌ریزون قضیه اینجاست که طرف بدون هیچ ترینینگ و آموزشِ سنتی و زمان‌بر، کل شبکه رو با یه حرکت سرپا کرده و جالب‌تر اینکه خروجیش حتی از مدل‌های آموزش‌دیده هم بهتر جواب داده.\n\nاهمیتش اینه که نشون میده شاید در آینده بشه بدون هزینه‌های سنگینِ آموزش و کوه دیتا، مستقیم مغز مدل‌ها رو مهندسی کرد و چید.",
+  "date": "2026-11-03T22:07:21+00:00"
+ },
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/jacsebl/status/2117606206764175543",
+   "domain": "x.com",
+   "author": {
+    "name": "Jacob Lauritzen",
+    "handle": "jacsebl",
+    "avatar": "https://pbs.twimg.com/profile_images/2095763480691286016/QBKGxkjn_200x200.jpg"
+   },
+   "text": "Got fable to hand-write weights of a 100k param model to recognize real versus fake legal citations.\n\nBasically one-shotted a full NN that’s better than training it",
+   "date": 1793711637,
+   "media": [
+    {
+     "type": "image",
+     "src": "https://pbs.twimg.com/media/HWM_n5IWQAAymo0.jpg?name=orig",
+     "ratio": 0.3756
+    }
+   ],
+   "links": []
+  }
+ ],
+ "article": {
+  "title": "یه متخصصی به اسم جیکوب لوریتزن دست به یه حرکت عجیب‌غریب زده و با کمک سیستم Fable کاری کرده که وزن‌های یه شبکه عصبی ۱۰۰ هزار پارامتری رو یک‌ضرب و دستی براش بنویسه",
+  "source_title": "Got fable to hand-write weights of a 100k param model to recognize real versus fake legal citations.",
+  "body": [
+   "رفیق، یه متخصصی به اسم جیکوب لوریتزن دست به یه حرکت عجیب‌غریب زده و با کمک سیستم Fable کاری کرده که وزن‌های یه شبکه عصبی ۱۰۰ هزار پارامتری رو یک‌ضرب و دستی براش بنویسه. ماجرا اینه که هدف این مدل، تشخیص ارجاعات حقوقی واقعی از نقل‌قول‌های قلابی و فیکه. نکته برگ‌ریزون قضیه اینجاست که طرف بدون هیچ ترینینگ و آموزشِ سنتی و زمان‌بر، کل شبکه رو با یه حرکت سرپا کرده و جالب‌تر اینکه خروجیش حتی از مدل‌های آموزش‌دیده هم بهتر جواب داده."
+  ],
+  "why": "نشون میده شاید در آینده بشه بدون هزینه‌های سنگینِ آموزش و کوه دیتا، مستقیم مغز مدل‌ها رو مهندسی کرد و چید.",
+  "tags": []
+ },
+ "updated": "2026-11-03T22:10:30+00:00"
+}
