@@ -1,0 +1,67 @@
+{
+ "id": 6267,
+ "url": "https://t.me/dlmehr/6267",
+ "date": "2026-11-03T15:01:32+00:00",
+ "text": "https://fxtwitter.com/dair_ai/status/2117410434890535310?a=7_CbjbL3N2HE89l5C8s&s=20",
+ "forwarded_from": "Hossein Zakariaee",
+ "digest": false,
+ "hash": "763bfbe5265b",
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/dair_ai/status/2117410434890535310?a=7_CbjbL3N2HE89l5C8s&s=20",
+  "site": "FxTwitter",
+  "title": "DAIR.AI (@dair_ai)",
+  "description": "Impressive paper from Stanford on harness evolution for robotics.\nThey improve frozen robot policies from 9.7% to 43.3% success on unseen scenes without changing a single weight.\nThe gain comes from the harness.\nRoboArchitect gives a coding model the robot's…",
+  "image": "https://cdn4.telesco.pe/file/gwP_ABHiQt2dDEPblw1FZ7j9YiVJ84CxOOqyPHbbhnvRI0pxVfqfwSKUCcQJQldELSBE4n4w_kBAAqYP1iaFVg-g6qSbQX6UWXiGf8W-m_9E1PPDQQJFlMvneAehs0SmaEh9S1KoluBa78K1Wl27fTxBbjGZwSxnIkrJNUPwL_S6FlbjQXWv1_ASwAWyDtS6ZyYsNASfPQUUYYzuaCYamxfc7LtkX5FHsvGq_4s9geAb1LSXovqUDhfUjkJsf-KN3J0q7KdtKcMIM85matsLNc7QktOvLaII4T906hHw4IX5OPI4vIT-12WIQp4CqUYKu5B1OVL0LTFJ-NBFUdHQ7A.jpg"
+ },
+ "gholam": {
+  "text": "رفیق، بچه‌های دانشگاه استنفورد یه حرکتی زدن که قشنگ بازی رباتیک رو عوض می‌کنه؛ بدون این‌که حتی به یه دونه از وزن‌های مدل هوش مصنوعی ربات دست بزنن، درصد موفقیتش تو محیط‌های جدید رو از ۹.۷ درصد رسوندن به ۴۳.۳ درصد. داستان اینه که ابزاری به اسم RoboArchitect ساختن که عملکرد ربات رو می‌بینه، سوتی‌ها و گیرهاش رو تشخیص میده و بعد یه کد کنترلی دور همون مدل دست‌نخورده می‌نویسه تا کار رو جمع کنه. این سیستم خودش یاد می‌گیره کی از چشم ربات استفاده کنه، کی بازو رو مستقیم تکون بده و حتی اگه بازوی ربات جایی گیر کرد، چطور خلاصش کنه و حافظه به کار اضافه کنه. روی تسک‌های کاملاً ندیده هم موفقیت از ۱۲.۷ درصد پریده به بالای ۴۰ درصد که نشون میده چارچوب درست چقدر می‌تونه یه مغز معمولی رو کاردرست کنه.\n\nچرا مهمه؟ اهمیتش اینه که نشون میده واسه قوی‌تر کردن ربات‌ها همیشه لازم نیست میلیون‌ها دلار خرج آموزش دوباره مدل‌ها کنیم، بلکه با هوشمند کردن کد کنترلیِ دور مدل میشه از همون سیستم‌های قدیمی بازدهی چندبرابری گرفت.",
+  "date": "2026-11-03T15:01:47+00:00"
+ },
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/dair_ai/status/2117410434890535310",
+   "domain": "x.com",
+   "author": {
+    "name": "DAIR.AI",
+    "handle": "dair_ai",
+    "avatar": "https://pbs.twimg.com/profile_images/1643277398522187778/31dedbLo_200x200.jpg"
+   },
+   "text": "Impressive paper from Stanford on harness evolution for robotics.\n\nThey improve frozen robot policies from 9.7% to 43.3% success on unseen scenes without changing a single weight.\n\nThe gain comes from the harness.\n\nRoboArchitect gives a coding model the robot's rollouts. The coding model diagnoses failures and rewrites the control code around the frozen policy. That code decides when to call the policy, when to use vision tools and when to command the arm directly.\n\nThe harness is optimized on one set of episodes and tested on held-out scenes and tasks. Success on unseen tasks rises from 12.7% to 40.2%.\n\nThe largest gains appear where the benchmark is far from the policy's training data. Inside an evolved harness, a general-purpose policy often beats the finetuned version of the same policy.\n\nThe search also produced control routines such as lifting a jammed arm clear, and it added a persistent memory that stores values like effective grasp depths.\n\nPaper: https://arxiv.org/abs/2610.42141\n\nChat with Paper: https://academy.dair.ai/papers/roboarchitect-automating-the-design-of-robotic-agents-with-persistent-memory-2610.42141",
+   "date": 1793664961,
+   "media": [
+    {
+     "type": "image",
+     "src": "https://pbs.twimg.com/media/HWKNkZRboAAvXe0.png?name=orig",
+     "ratio": 1.1271
+    }
+   ],
+   "links": [
+    "https://arxiv.org/abs/2610.42141",
+    "https://academy.dair.ai/papers/roboarchitect-automating-the-design-of-robotic-agents-with-persistent-memory-2610.42141"
+   ]
+  },
+  {
+   "kind": "link",
+   "url": "https://arxiv.org/abs/2610.42141",
+   "domain": "arxiv.org",
+   "title": "RoboArchitect: Automating the Design of Robotic Agents with Persistent Memory",
+   "description": "Recent work shows that a frozen robot policy performs far better inside an agent harness, where control code decides when to query the policy, consult vision tools, or command the arm directly. Yet today these harnesses are built by hand and redesigned for each new robot or benchmark. We show that harness design can be automated, offering a strong alternative to finetuning on a novel setup. In Rob",
+   "image": "https://arxiv.org/static/browse/0.3.4/images/arxiv-logo-fb.png",
+   "site": "arXiv.org"
+  }
+ ],
+ "article": {
+  "title": "بچه‌های دانشگاه استنفورد یه حرکتی زدن که قشنگ بازی رباتیک رو عوض می‌کنه",
+  "source_title": "Impressive paper from Stanford on harness evolution for robotics.",
+  "body": [
+   "رفیق، بچه‌های دانشگاه استنفورد یه حرکتی زدن که قشنگ بازی رباتیک رو عوض می‌کنه؛ بدون این‌که حتی به یه دونه از وزن‌های مدل هوش مصنوعی ربات دست بزنن، درصد موفقیتش تو محیط‌های جدید رو از ۹.۷ درصد رسوندن به ۴۳.۳ درصد. داستان اینه که ابزاری به اسم RoboArchitect ساختن که عملکرد ربات رو می‌بینه، سوتی‌ها و گیرهاش رو تشخیص میده و بعد یه کد کنترلی دور همون مدل دست‌نخورده می‌نویسه تا کار رو جمع کنه. این سیستم خودش یاد می‌گیره کی از چشم ربات استفاده کنه، کی بازو رو مستقیم تکون بده و حتی اگه بازوی ربات جایی گیر کرد، چطور خلاصش کنه و حافظه به کار اضافه کنه. روی تسک‌های کاملاً ندیده هم موفقیت از ۱۲.۷ درصد پریده به بالای ۴۰ درصد که نشون میده چارچوب درست چقدر می‌تونه یه مغز معمولی رو کاردرست کنه."
+  ],
+  "why": "اهمیتش اینه که نشون میده واسه قوی‌تر کردن ربات‌ها همیشه لازم نیست میلیون‌ها دلار خرج آموزش دوباره مدل‌ها کنیم، بلکه با هوشمند کردن کد کنترلیِ دور مدل میشه از همون سیستم‌های قدیمی بازدهی چندبرابری گرفت.",
+  "tags": [
+   "رباتیک"
+  ]
+ },
+ "updated": "2026-11-03T15:04:21+00:00"
+}
