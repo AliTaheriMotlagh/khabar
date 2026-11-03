@@ -12,7 +12,7 @@
   "site": "OpenRouter Blog",
   "title": "How OpenRouter rebuilt provider routing for better, faster inference",
   "description": "OpenRouter's new default provider routing scores each provider on effective price, throughput, reliability, availability, and output quality for every request instead of ranking mostly by prompt token price. Measured with a switchback experiment against the…",
-  "image": "https://cdn4.telesco.pe/file/Ltx9jUUCQ_mhOVr65lqUfKjdTqFAVxTCO6DJDyvJnYfBYiAeeN8oU8Ifjx-6f6acHw5iDM6p7fgLz6Gh14wrRKOPEvBpQa1WxANr88mDohtWkSg4d80TO_-aEzUAapd4fmZ3xv8N57GLDH6xl2nkCD4FBRbL6jhC0zeMxFixOeOseR6FfCIiENNBhCahZPJL6XYJUtV4r28qhKVl-VwiRh6HhAi2IbdFOFRKomutzgxm9Bf1csw-XGSZNi4U2evLGXekN0qUDmG82_EA3Bi7Y0mq19PbdXHtYq4x7kEQiVN0IWUucoodO5kXuWnxC-0dEFoRUx68HWzIYldWh6iqyg.jpg"
+  "image": "https://cdn4.telesco.pe/file/eHa_kXW3m9gehq21OgE3YGlT8cpmXBd3BIyrNt_u8ZHgshRBqZOflsL6ei6emQ_xc671BlTJuDVTuV37HUVJhCMp3KIKuJ_cdl5fu-IS_sPOUNmgi7pVCudvoRTZ7UA3OX5e7UlsGvvY0nl3V6MES5mQS97PUW4r52XnFTxpM0maSIfne9Wl_RdH7QfxFcQ8EyALzIRPCcyn9DWAwjmukOWxP95XFub9kZr6qsP1PvIwX3B911rtKIKwtylLckdoWBntG5OgFYsOLi6kl4aPxwJrJFgbK_r22rSaeB9fVxKFy0u1XxdxaJXrrf29RzRg7mtJ8M6KJu3-kvmDgpfVDQ.jpg"
  },
  "gholam": {
   "text": "ببین رفیق، بچه‌های اوپن‌روتر سیستم مسیریابی درخواست‌هاشون رو از بیخ و بن بازنویسی کردن؛ قدیما ملاک اصلی فقط ارزون‌تر بودن پرومپت بود که باعث می‌شد سرویس‌های کند و پر از خطا ترافیک بگیرن و پرووایدرها هم دست به قیمت‌سازی عجیب بزنن. تو الگوریتم جدید، فرمول هوشمندی سوار کردن که هم‌زمان قیمت واقعی، سرعت تولید اولین توکن، پهنای باند، نرخ خطای سرور و کیفیت خروجی رو می‌سنجه و بار رو سمت اونی می‌فرسته که بیشترین ارزش رو بده. نتیجه آزمایش رسمی روی ۲۴ میلیون درخواست هم نشون داد خطاهای ظرفیت یا همون ۴۲۹ معروف حدود ۴۶ درصد کمتر شده و سرعت و حجم پاسخ‌دهی نزدیک ۱۷ درصد ارتقا پیدا کرده، در حالی که هزینه نهایی فقط ۶ درصد تکون خورده. کار قشنگشون هم اینه که برای استفاده از این سیستم نو به هیچ تغییری تو کد نیاز نیست، هرچند اگه یکی هنوزم دنبال ارزون‌ترین گزینه باشه، می‌تونه دستی روی حالت قیمتی فیلترش کنه.\n\nچرا مهمه؟ چون توی هوش مصنوعی ارزونیِ صرف به درد لای جرز می‌خوره و با این سیستم جدید، برنامه‌ها و بات‌هات بدون اینکه دست به سیاه و سفید بزنی خیلی سریع‌تر، نرم‌تر و با خطای به مراتب کمتری کار می‌کنن.",
@@ -47,5 +47,5 @@
   "why": "چون توی هوش مصنوعی ارزونیِ صرف به درد لای جرز می‌خوره و با این سیستم جدید، برنامه‌ها و بات‌هات بدون اینکه دست به سیاه و سفید بزنی خیلی سریع‌تر، نرم‌تر و با خطای به مراتب کمتری کار می‌کنن.",
   "tags": []
  },
- "updated": "2026-11-03T06:32:01+00:00"
+ "updated": "2026-11-03T14:40:41+00:00"
 }
