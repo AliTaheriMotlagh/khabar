@@ -1,0 +1,69 @@
+{
+ "id": 6298,
+ "url": "https://t.me/dlmehr/6298",
+ "date": "2026-11-04T19:12:43+00:00",
+ "text": "https://fxtwitter.com/googleaistudio/status/2118025709146829218?a=ZGCglgTnUcgenAS6ETY&s=52",
+ "forwarded_from": null,
+ "digest": false,
+ "hash": "a6116c561501",
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/googleaistudio/status/2118025709146829218?a=ZGCglgTnUcgenAS6ETY&s=52",
+  "site": "FxTwitter",
+  "title": "Google AI Studio (@GoogleAIStudio)",
+  "description": "the computer use tool in the gemini api is now generally available\nno breaking changes from preview, just production-ready stability for your browser, mobile, and desktop agents\ndocs here: https://aistudio.google.com/docs/computer-use",
+  "image": null
+ },
+ "gholam": {
+  "text": "رفیق، بچه‌های تیم گوگل بالاخره ابزار «کار با کامپیوتر» (Computer Use) توی جمینای API رو از فاز آزمایشی درآوردن و رسماً عمومی و نهاییش کردن. قضیه از این قراره که این قابلیت بدون هیچ تغییر خراب‌کننده‌ای نسبت به نسخه پیش‌نمایش، حالا اون ثبات لازم رو پیدا کرده تا توی پروژه‌های واقعی و سنگین به کار گرفته بشه. یعنی از این به بعد برنامه‌نویس‌ها می‌تونن با خیال راحت ایجنت‌های هوشمندی بسازن که مثل موم توی مرورگر، گوشی و سیستم دسکتاپ بچرخن و کارها رو خودکار انجام بدن.\n\nاهمیتش اینه که کنترل مستقیم کامپیوتر و نرم‌افزارها توسط هوش مصنوعی از مرحله تست و بازیگوشی رد شده و رسماً وارد فاز تولید و بیزینس واقعی شده.",
+  "date": "2026-11-04T19:13:06+00:00"
+ },
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/GoogleAIStudio/status/2118025709146829218",
+   "domain": "x.com",
+   "author": {
+    "name": "Google AI Studio",
+    "handle": "GoogleAIStudio",
+    "avatar": "https://pbs.twimg.com/profile_images/2089794087998156800/eZOMHRVb_200x200.jpg"
+   },
+   "text": "the computer use tool in the gemini api is now generally available\n\nno breaking changes from preview, just production-ready stability for your browser, mobile, and desktop agents\n\ndocs here: https://aistudio.google.com/docs/computer-use",
+   "date": 1793811654,
+   "media": [
+    {
+     "type": "video",
+     "src": "https://video.twimg.com/amplify_video/2117688865007833089/vid/avc1/1156x720/ZNTccXsXerqfYUDA.mp4?tag=29",
+     "poster": "https://pbs.twimg.com/amplify_video_thumb/2117688865007833089/img/dC4yhDIAM_9AHpiO.jpg",
+     "ratio": 0.6221,
+     "duration": 26.316,
+     "gif": false
+    }
+   ],
+   "links": [
+    "https://aistudio.google.com/docs/computer-use"
+   ]
+  },
+  {
+   "kind": "link",
+   "url": "https://aistudio.google.com/docs/computer-use",
+   "domain": "aistudio.google.com",
+   "title": "Google AI Studio",
+   "description": "The fastest path from prompt to production with Gemini",
+   "image": "https://ai.google.dev/static/site-assets/images/share-ais-513315318.png",
+   "site": "aistudio.google.com"
+  }
+ ],
+ "article": {
+  "title": "بچه‌های تیم گوگل بالاخره ابزار «کار با کامپیوتر» (Computer Use) توی جمینای API رو از فاز آزمایشی درآوردن و رسماً عمومی و نهاییش کردن",
+  "source_title": "the computer use tool in the gemini api is now generally available",
+  "body": [
+   "رفیق، بچه‌های تیم گوگل بالاخره ابزار «کار با کامپیوتر» (Computer Use) توی جمینای API رو از فاز آزمایشی درآوردن و رسماً عمومی و نهاییش کردن. قضیه از این قراره که این قابلیت بدون هیچ تغییر خراب‌کننده‌ای نسبت به نسخه پیش‌نمایش، حالا اون ثبات لازم رو پیدا کرده تا توی پروژه‌های واقعی و سنگین به کار گرفته بشه. یعنی از این به بعد برنامه‌نویس‌ها می‌تونن با خیال راحت ایجنت‌های هوشمندی بسازن که مثل موم توی مرورگر، گوشی و سیستم دسکتاپ بچرخن و کارها رو خودکار انجام بدن."
+  ],
+  "why": "کنترل مستقیم کامپیوتر و نرم‌افزارها توسط هوش مصنوعی از مرحله تست و بازیگوشی رد شده و رسماً وارد فاز تولید و بیزینس واقعی شده.",
+  "tags": [
+   "گوگل"
+  ]
+ },
+ "updated": "2026-11-04T19:16:22+00:00"
+}
