@@ -1,0 +1,61 @@
+{
+ "id": 6304,
+ "url": "https://t.me/dlmehr/6304",
+ "date": "2026-11-04T20:14:45+00:00",
+ "text": "https://fxtwitter.com/anthropicai/status/2118073665296228863?a=W5oGDf1FX_ovaU1a0VA&s=52",
+ "forwarded_from": null,
+ "digest": false,
+ "hash": "5b30e2f3fc07",
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/anthropicai/status/2118073665296228863?a=W5oGDf1FX_ovaU1a0VA&s=52",
+  "site": "FxTwitter · anthropic.com",
+  "title": "Anthropic (@AnthropicAI)",
+  "description": "We’re sharing how our biology research team worked with Claude to map the first 3D structure of a vault particle from bacterial life.\nVault particles are a longstanding mystery. They are barrel-shaped objects, among the largest protein structures found in…",
+  "image": "https://cdn4.telesco.pe/file/O_lf4M_jj2L497hi5lwur2_5njgdjQ5atP0KArUR9-vhAbqcucQZdyIWSVNjrRgmrpDbZGTq7jOJS5mKcLPniXFajKzONEWbMNR7ieqvxuXrKVFxbAVe4cJ9ZjUcKA0M0mI04X8IxsFICZo3zajfwrFbaKsHKThGDnmeMYBna987eUlivuoft_TrmqoRGQkx-QErP2VVHHf6uXhPJq352xkijBWF3eXwhV_Bwqe2Wc2Ss0wAvQJf9OySmBTxINHEkNXE5XQpOKiJe0pob26ds9NdChhFoCD8Thm7E_0oiEcQb-pS9J0VU_rKYaYaWLVC9FYy77rOX575R-PoJqbGcg.jpg"
+ },
+ "gholam": {
+  "text": "ببین رفیق، بچه‌های تیم زیست‌شناسی آنتروپیک دست به یکی کردن با هوش مصنوعی کلود و تونستن برای اولین بار، ساختار سه‌بعدی یه معمای قدیمی سلولی به اسم «ذرات والت» رو توی باکتری‌ها نقشه‌برداری کنن. این ذرات بشکه‌مانند جزو بزرگ‌ترین ساختارهای پروتئینی سلول به حساب میان که از سال ۱۹۸۶ کشف شدن اما هنوز هیشکی ته و توی کارکردشون رو درنیاورده، چون تا حالا فکر می‌کردن فقط توی جونورا و گیاهان پیدا می‌شن. دمش گرم که کلود کاری رو که باید ماه‌ها عرق ریختن و بررسی دستی می‌برد توی چند روز جمع‌وجور کرد؛ البته وسط کار سوتی‌های ساده‌ای هم داد که پژوهشگرا مجبور شدن دستی جفت‌وجورش کنن.\n\nاهمیتش اینه که کشف این ساختار توی باکتری‌های ساده‌تر می‌تونه رمز و راز کارکرد این پروتئین غول‌پیکر رو توی بدن خودمون فاش کنه و قشنگ ثابت کرد هوش مصنوعی چطوری داره ترمز پیشرفت علم رو برمی‌داره.",
+  "date": "2026-11-04T20:15:03+00:00"
+ },
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/AnthropicAI/status/2118073665296228863",
+   "domain": "x.com",
+   "author": {
+    "name": "Anthropic",
+    "handle": "AnthropicAI",
+    "avatar": "https://pbs.twimg.com/profile_images/1798110641414443008/XP8gyBaY_200x200.jpg"
+   },
+   "text": "We’re sharing how our biology research team worked with Claude to map the first 3D structure of a vault particle from bacterial life.\n\nVault particles are a longstanding mystery. They are barrel-shaped objects, among the largest protein structures found in our cells. They were first discovered by Leonard Rome and Nancy Kedersha in 1986, but their function remains unknown.\n\nWith Claude, we’ve found results that might bring us closer to solving that mystery.\n\nUntil now, vaults were only known in the cells of complex things like animals and plants. We have shown that similar proteins from bacteria (and the viruses that infect them) can also assemble into vaults. Finding the structures in these simpler forms of life may make it easier to investigate their function in our own cells.\n\nFor our life sciences team, the project was also a demonstration of the potential (and the limitations) of using AI to accelerate science.\n\nIn our full piece, we discuss how Claude was able to dramatically speed up some stages—manually determining the vault particle’s structure would have taken weeks to months of painstaking work, but here it took days. We also discuss how Claude made some simple mistakes along the way, and how we collaborated with our machine learning researchers to address them.\n\nRead more: https://www.anthropic.com/research/investigating-vault-particles-with-claude",
+   "date": 1793823088,
+   "media": [],
+   "links": [
+    "https://www.anthropic.com/research/investigating-vault-particles-with-claude"
+   ]
+  },
+  {
+   "kind": "link",
+   "url": "https://www.anthropic.com/research/investigating-vault-particles-with-claude",
+   "domain": "anthropic.com",
+   "title": "Investigating vault particles with Claude",
+   "description": "We’re sharing another finding from Anthropic’s biology research lab: the first 3D structure of a vault particle found in prokaryotic cells.",
+   "image": "https://www-cdn.anthropic.com/images/4zrzovbb/website/99ce1c2ac2d0649d677f097132829da2ab3c4e18-1280x1280.jpg",
+   "site": "anthropic.com"
+  }
+ ],
+ "article": {
+  "title": "بچه‌های تیم زیست‌شناسی آنتروپیک دست به یکی کردن با هوش مصنوعی کلود و تونستن برای اولین بار، ساختار سه‌بعدی یه معمای قدیمی سلولی به اسم «ذرات والت» رو توی باکتری‌ها نقشه‌برداری کنن",
+  "source_title": "We’re sharing how our biology research team worked with Claude to map the first 3D structure of a vault particle from bacterial life.",
+  "body": [
+   "ببین رفیق، بچه‌های تیم زیست‌شناسی آنتروپیک دست به یکی کردن با هوش مصنوعی کلود و تونستن برای اولین بار، ساختار سه‌بعدی یه معمای قدیمی سلولی به اسم «ذرات والت» رو توی باکتری‌ها نقشه‌برداری کنن. این ذرات بشکه‌مانند جزو بزرگ‌ترین ساختارهای پروتئینی سلول به حساب میان که از سال ۱۹۸۶ کشف شدن اما هنوز هیشکی ته و توی کارکردشون رو درنیاورده، چون تا حالا فکر می‌کردن فقط توی جونورا و گیاهان پیدا می‌شن. دمش گرم که کلود کاری رو که باید ماه‌ها عرق ریختن و بررسی دستی می‌برد توی چند روز جمع‌وجور کرد؛ البته وسط کار سوتی‌های ساده‌ای هم داد که پژوهشگرا مجبور شدن دستی جفت‌وجورش کنن."
+  ],
+  "why": "کشف این ساختار توی باکتری‌های ساده‌تر می‌تونه رمز و راز کارکرد این پروتئین غول‌پیکر رو توی بدن خودمون فاش کنه و قشنگ ثابت کرد هوش مصنوعی چطوری داره ترمز پیشرفت علم رو برمی‌داره.",
+  "tags": [
+   "آنتروپیک",
+   "علم"
+  ]
+ },
+ "updated": "2026-11-04T20:18:22+00:00"
+}
