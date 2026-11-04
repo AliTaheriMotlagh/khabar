@@ -1,0 +1,58 @@
+{
+ "id": 6303,
+ "url": "https://t.me/dlmehr/6303",
+ "date": "2026-11-04T19:43:00+00:00",
+ "text": "https://fxtwitter.com/googlegemma/status/2118036675540689044?a=ekpxrab1Q1nGFahKbKo&s=52",
+ "forwarded_from": null,
+ "digest": false,
+ "hash": "8956fa2480cb",
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/googlegemma/status/2118036675540689044?a=ekpxrab1Q1nGFahKbKo&s=52",
+  "site": "🧵 Thread • FxTwitter",
+  "title": "Google Gemma (@googlegemma)",
+  "description": "People are finding really creative ways to use EmbeddingGemma 2 beyond search.\nInstead of running a full multimodal LLM, this community project trains a lightweight classifier on top of EmbeddingGemma 2 in real time.\nBecause the model is compact and natively…",
+  "image": null
+ },
+ "gholam": {
+  "text": "رفیق ببین بر و بچه‌های اهل فن چه شعبده‌بازی باحالی با مدل EmbeddingGemma 2 گوگل زدن! به جای اینکه طرف بره یه مدل غول‌پیکر و سنگین هوش مصنوعی بالا بیاره، اومدن یه طبقه‌بندی‌کننده فوق‌العاده سبک روی همین مدل سوار کردن که درجا و آنلاین دسته‌های جدید رو یاد می‌گیره. چون این مدل جمع‌وجور ذاتا چندوجهیه، خیلی تر و تمیز و بدون دردسر کار دسته‌بندی متن رو توی حدود ۲۰ میلی‌ثانیه و عکس رو توی ۱۰۰ میلی‌ثانیه، اونم کاملاً لوکال و آفلاین روی دستگاه خودت انجام میده.\n\nاهمیتش اینه که دیگه لازم نیست واسه یه دسته‌بندی سریع کلی سرور گرون‌قیمت رو به خط کنی، بلکه نشون میده با مصرف کمترین منابع و با سرعتی مثل برق و باد میشه پروژه‌های سنگین رو روی سیستم معمولی پیاده کرد.",
+  "date": "2026-11-04T19:43:19+00:00"
+ },
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/googlegemma/status/2118036675540689044",
+   "domain": "x.com",
+   "author": {
+    "name": "Google Gemma",
+    "handle": "googlegemma",
+    "avatar": "https://pbs.twimg.com/profile_images/2038662245631320064/uWfEb6yw_200x200.png"
+   },
+   "text": "People are finding really creative ways to use EmbeddingGemma 2 beyond search.\n\nInstead of running a full multimodal LLM, this community project trains a lightweight classifier on top of EmbeddingGemma 2 in real time.\n\nBecause the model is compact and natively multimodal, it can learn new categories on the fly and classify inputs locally in ~20ms for text and ~100ms for images.",
+   "date": 1793814269,
+   "media": [
+    {
+     "type": "video",
+     "src": "https://video.twimg.com/amplify_video/2118036266939977728/vid/avc1/1314x720/T_AOpZVeZ4AjWq0c.mp4?tag=29",
+     "poster": "https://pbs.twimg.com/amplify_video_thumb/2118036266939977728/img/H2AQN3ce0XBnB5Du.jpg",
+     "ratio": 0.5476,
+     "duration": 30.363,
+     "gif": false
+    }
+   ],
+   "links": []
+  }
+ ],
+ "article": {
+  "title": "بر و بچه‌های اهل فن چه شعبده‌بازی باحالی با مدل EmbeddingGemma 2 گوگل زدن",
+  "source_title": "People are finding really creative ways to use EmbeddingGemma 2 beyond search.",
+  "body": [
+   "رفیق ببین بر و بچه‌های اهل فن چه شعبده‌بازی باحالی با مدل EmbeddingGemma 2 گوگل زدن! به جای اینکه طرف بره یه مدل غول‌پیکر و سنگین هوش مصنوعی بالا بیاره، اومدن یه طبقه‌بندی‌کننده فوق‌العاده سبک روی همین مدل سوار کردن که درجا و آنلاین دسته‌های جدید رو یاد می‌گیره. چون این مدل جمع‌وجور ذاتا چندوجهیه، خیلی تر و تمیز و بدون دردسر کار دسته‌بندی متن رو توی حدود ۲۰ میلی‌ثانیه و عکس رو توی ۱۰۰ میلی‌ثانیه، اونم کاملاً لوکال و آفلاین روی دستگاه خودت انجام میده."
+  ],
+  "why": "دیگه لازم نیست واسه یه دسته‌بندی سریع کلی سرور گرون‌قیمت رو به خط کنی، بلکه نشون میده با مصرف کمترین منابع و با سرعتی مثل برق و باد میشه پروژه‌های سنگین رو روی سیستم معمولی پیاده کرد.",
+  "tags": [
+   "گوگل"
+  ]
+ },
+ "updated": "2026-11-04T19:49:26+00:00"
+}
