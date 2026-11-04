@@ -1,0 +1,71 @@
+{
+ "id": 6295,
+ "url": "https://t.me/dlmehr/6295",
+ "date": "2026-11-04T18:10:02+00:00",
+ "text": "https://fxtwitter.com/kimmonismus/status/2118041085679448126?a=nVNdH0SouguB32CrJ6E&s=52",
+ "forwarded_from": null,
+ "digest": false,
+ "hash": "192fb8aa6d40",
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/kimmonismus/status/2118041085679448126?a=nVNdH0SouguB32CrJ6E&s=52",
+  "site": "FxTwitter",
+  "title": "Chubby ♨️ (@kimmonismus)",
+  "description": "AI-generated code at scale usually gets written off as sloppy. Axiom's new release is a strong counterexample.\nAxiom says it has formalized the Stacks Project in Lean, a huge, deeply interconnected foundation of algebraic geometry, turning it into mathematics…",
+  "image": null
+ },
+ "gholam": {
+  "text": "رفیق، خیلیا تا حرف از کدنویسی فله‌ای با هوش مصنوعی می‌شه می‌گن خروجیش شلخته و به‌دردنخوره، ولی بچه‌های تیم Axiom اومدن قشنگ این ادعا رو نقره‌داغ کردن. این جمع با یه لشکر از ایجنت‌های هوش مصنوعی که زیر نظر آدما کار می‌کردن، کل پروژه غول‌پیکر «Stacks Project» رو که ستون‌فقرات هندسه جبری مدرنه، تو قالب ۱۶ میلیون خط کد به زبون لین (Lean) پیاده کردن تا کامپیوتر بتونه تک‌تک اثبات‌هاش رو مو به مو بسنجه. شاهکار کار اینجاست که این کدها تیکه‌پاره نیستن؛ درست مثل هرم شیشه‌ای موزه لوور، تمام تعریف‌ها و اثبات‌های ریاضی تو فصل‌های مختلف مثل زنجیر به هم قفل شدن تا ماشین‌ها بتونن در آینده باهاش ریاضیات پیشرفته رو جلو ببرن.\n\nچرا مهمه؟ اهمیتش اینه که نشون داد هوش مصنوعی می‌تونه عمیق‌ترین و پیچیده‌ترین ساختارهای علمی دنیا رو با دقتی بدون خطا و کامپیوترپسند بسازه تا مبنای کشفیات بزرگ بعدی بشه.",
+  "date": "2026-11-04T18:10:27+00:00"
+ },
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/kimmonismus/status/2118041085679448126",
+   "domain": "x.com",
+   "author": {
+    "name": "Chubby♨️",
+    "handle": "kimmonismus",
+    "avatar": "https://pbs.twimg.com/profile_images/1728327996375719936/RW7VBJfD_200x200.jpg"
+   },
+   "text": "AI-generated code at scale usually gets written off as sloppy. Axiom's new release is a strong counterexample.\n\nAxiom says it has formalized the Stacks Project in Lean, a huge, deeply interconnected foundation of algebraic geometry, turning it into mathematics a computer can check.\n\nThe impressive part isn't just the size, it's the structure. Axiom compares it to the Louvre's glass pyramid: individual pieces that only work because they fit together into something much bigger. Every definition and proof has to connect, so a result proved in one chapter can be used in another.\n\nThat's what makes it more than a translation. A human-led swarm of AI agents built a reusable, machine-checkable foundation that AI agents can now use to do mathematics.\n\nCongrats to the Axiom team!",
+   "date": 1793815320,
+   "media": [],
+   "links": [],
+   "quote": {
+    "author": {
+     "name": "Axiom",
+     "handle": "axiommathai",
+     "avatar": "https://pbs.twimg.com/profile_images/2020254827117432832/Yad4149b_200x200.jpg"
+    },
+    "text": "Most think vibecoding at scale is slop. Here’s a counterexample.\n\nToday we release a 16M-line formalization of the entire Stacks Project, critical infra underlying modern math, with optimized code quality and its highly interconnected structure preserved.\n\nA mathematical city 🌆",
+    "date": 1793812399,
+    "media": [
+     {
+      "type": "video",
+      "src": "https://video.twimg.com/amplify_video/2118025261501595648/vid/avc1/1280x720/y3qKL748PSa_zlJJ.mp4?tag=29",
+      "poster": "https://pbs.twimg.com/amplify_video_thumb/2118025261501595648/img/gjg3B6A3iXyU11Cg.jpg",
+      "ratio": 0.5625,
+      "duration": 258.75,
+      "gif": false
+     }
+    ],
+    "links": []
+   }
+  }
+ ],
+ "article": {
+  "title": "خیلیا تا حرف از کدنویسی فله‌ای با هوش مصنوعی می‌شه می‌گن خروجیش شلخته و به‌دردنخوره، ولی بچه‌های تیم Axiom اومدن قشنگ این ادعا رو نقره‌داغ کردن",
+  "source_title": "AI-generated code at scale usually gets written off as sloppy. Axiom's new release is a strong counterexample.",
+  "body": [
+   "رفیق، خیلیا تا حرف از کدنویسی فله‌ای با هوش مصنوعی می‌شه می‌گن خروجیش شلخته و به‌دردنخوره، ولی بچه‌های تیم Axiom اومدن قشنگ این ادعا رو نقره‌داغ کردن. این جمع با یه لشکر از ایجنت‌های هوش مصنوعی که زیر نظر آدما کار می‌کردن، کل پروژه غول‌پیکر «Stacks Project» رو که ستون‌فقرات هندسه جبری مدرنه، تو قالب ۱۶ میلیون خط کد به زبون لین (Lean) پیاده کردن تا کامپیوتر بتونه تک‌تک اثبات‌هاش رو مو به مو بسنجه. شاهکار کار اینجاست که این کدها تیکه‌پاره نیستن؛ درست مثل هرم شیشه‌ای موزه لوور، تمام تعریف‌ها و اثبات‌های ریاضی تو فصل‌های مختلف مثل زنجیر به هم قفل شدن تا ماشین‌ها بتونن در آینده باهاش ریاضیات پیشرفته رو جلو ببرن."
+  ],
+  "why": "اهمیتش اینه که نشون داد هوش مصنوعی می‌تونه عمیق‌ترین و پیچیده‌ترین ساختارهای علمی دنیا رو با دقتی بدون خطا و کامپیوترپسند بسازه تا مبنای کشفیات بزرگ بعدی بشه.",
+  "tags": [
+   "کدنویسی",
+   "علم",
+   "ایجنت"
+  ]
+ },
+ "updated": "2026-11-04T18:13:22+00:00"
+}

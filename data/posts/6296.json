@@ -1,0 +1,66 @@
+{
+ "id": 6296,
+ "url": "https://t.me/dlmehr/6296",
+ "date": "2026-11-04T18:10:43+00:00",
+ "text": "https://fxtwitter.com/kimi_moonshot/status/2118010528123773297?a=NlCyAZPzN19dwrdRqiU&s=52",
+ "forwarded_from": null,
+ "digest": false,
+ "hash": "74b9c85c7959",
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/kimi_moonshot/status/2118010528123773297?a=NlCyAZPzN19dwrdRqiU&s=52",
+  "site": "FxTwitter",
+  "title": "Kimi.ai (@Kimi_Moonshot)",
+  "description": "Releasing the model weights of Kimi K3.1 Pro: https://huggingface.co/moonshotai/Kimi-K3.1-Pro\nWe'll keep advancing open intelligence.",
+  "image": "https://cdn4.telesco.pe/file/YGKrZJAusPLMQuJRwuXt3QmjxMQ2sJCRLScckTgj3rSWztCTQDsK2ras2gUK_AejaMrmz42SO5f51pBg7lQQ9vO9TUy9ILFcJ8aRE39y5XzMQUr_MnYVFCZ6xyk9e9_lm4F0uZIIgWaTfvBtW1PsrsjZ46nvdMy_qmjipyxdqAJcnbMtWLzS90lhzSZ9a8X8L0RIGp5mLktTbLiX89OCR9HZgK7RiGcv0wWTt1S4gMIXbhlNb5Kd1hP4NnJCZLUgbGEGn5iiErdrtEw2NVu8T_odWOL1dU2s1ggm96vZMbV0kEAbqjonOfJKG9tz5HKjPbvyoMLZABKMyCcU7Cbj0Q.jpg"
+ },
+ "gholam": {
+  "text": "رفیق، بچه‌های Kimi.ai سنگ تموم گذاشتن و رسماً وزن‌های مدل Kimi K3.1 Pro رو به‌صورت عمومی منتشر کردن و در دسترس همه گذاشتن. این رفقا اعلام کردن هدفشون پیشبرد هوش متن‌بازه و نمی‌خوان این علم فقط تو انحصار چندتا شرکت خاص بمونه. با این حرکت، هر پژوهشگر و برنامه‌نویسی می‌تونه مستقیم به دل این مدل بزنه و بدون محدودیت از قدرتش استفاده کنه یا توسعه‌ش بده.\n\nاهمیتش اینه که انتشار رایگان وزن‌های یه مدل پیشرفته، انحصار غول‌های هوش مصنوعی رو می‌شکنه و زمینه رو برای ابداعات مستقل توی دنیا بازتر می‌کنه.",
+  "date": "2026-11-04T18:11:00+00:00"
+ },
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/Kimi_Moonshot/status/2118010528123773297",
+   "domain": "x.com",
+   "author": {
+    "name": "Kimi.ai",
+    "handle": "Kimi_Moonshot",
+    "avatar": "https://pbs.twimg.com/profile_images/2086719038798102529/diJGKpOE_200x200.jpg"
+   },
+   "text": "Releasing the model weights of Kimi K3.1 Pro: https://huggingface.co/moonshotai/Kimi-K3.1-Pro\nWe'll keep advancing open intelligence.",
+   "date": 1793808035,
+   "media": [
+    {
+     "type": "image",
+     "src": "https://pbs.twimg.com/media/HWSvVQBaMAAOxi5.jpg?name=orig",
+     "ratio": 0.5625
+    }
+   ],
+   "links": [
+    "https://huggingface.co/moonshotai/Kimi-K3.1-Pro"
+   ]
+  },
+  {
+   "kind": "link",
+   "url": "https://huggingface.co/moonshotai/Kimi-K3.1-Pro",
+   "domain": "huggingface.co",
+   "title": "moonshotai/Kimi-K3.1-Pro · Hugging Face",
+   "description": "Image-Text-to-Text model with 2.8T parameters. Download, explore files and run it on Hugging Face.",
+   "image": "https://cdn-thumbnails.huggingface.co/social-thumbnails/models/moonshotai/Kimi-K3.1-Pro.png",
+   "site": "huggingface.co"
+  }
+ ],
+ "article": {
+  "title": "بچه‌های Kimi.ai سنگ تموم گذاشتن و رسماً وزن‌های مدل Kimi K3.1 Pro رو به‌صورت عمومی منتشر کردن و در دسترس همه گذاشتن",
+  "source_title": "Releasing the model weights of Kimi K3.1 Pro:",
+  "body": [
+   "رفیق، بچه‌های Kimi.ai سنگ تموم گذاشتن و رسماً وزن‌های مدل Kimi K3.1 Pro رو به‌صورت عمومی منتشر کردن و در دسترس همه گذاشتن. این رفقا اعلام کردن هدفشون پیشبرد هوش متن‌بازه و نمی‌خوان این علم فقط تو انحصار چندتا شرکت خاص بمونه. با این حرکت، هر پژوهشگر و برنامه‌نویسی می‌تونه مستقیم به دل این مدل بزنه و بدون محدودیت از قدرتش استفاده کنه یا توسعه‌ش بده."
+  ],
+  "why": "انتشار رایگان وزن‌های یه مدل پیشرفته، انحصار غول‌های هوش مصنوعی رو می‌شکنه و زمینه رو برای ابداعات مستقل توی دنیا بازتر می‌کنه.",
+  "tags": [
+   "چین"
+  ]
+ },
+ "updated": "2026-11-04T18:13:22+00:00"
+}
