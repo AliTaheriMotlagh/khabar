@@ -12,7 +12,7 @@
   "site": "FxTwitter",
   "title": "Chubby ♨️ (@kimmonismus)",
   "description": "DeepSeek just open-sourced its Super-agent prototype. One router session talks to people and hands out work, and isolated workers run tasks in parallel off GitHub events. In their own test, p95 completion time dropped from 29.5 to 15.7 min compared with a…",
-  "image": "https://cdn4.telesco.pe/file/fkBmXOQ13GxWnZbpbL4OpYmGfWJiAiiS_vHiv598F6ZVO61YZ46ThrHDd4Guwh1Fa_T4xJg51bJ_wt-CZIhAb_ZLayZR8C3BBUzSX7WGmXN3B4vlfaPEbPHVuxiix4eeBtvwxAJFqkUvK_hKOmwiC8_EXmpebnonpaUepqi5FONmqWU7IKNUKZS3gmyCkwX6z9PwTLf_dY0JPwzPb2hwlz7wni_ciMsnhK5rMTozxkcCEdTEkSWd4KSDvo83SvFh2u3VC_YEMFBnTqfmXgbGDlHOC_7hT1R9-3tnMavGtmq61mHmcUJrw0kcg44zUhnfN2vztRluDgXj_eGv5NQMqA.jpg"
+  "image": "https://cdn4.telesco.pe/file/jN3ndijX3W-5a2XXPIQs6vgFll2G4JM_4MF_fdQ5fW7TIFBLmsu-bToluOyNWueVtmy0YASzRo2SiHYrzzFiIkKwm-jhms2HV4_PQDHyr0kyzcQCO7_pq6cJ3GtJHSkDs_fOW00GyD8lXpfNArU5NWQ_4VNSR5o1qPEZpFhAiYqcwa25EFIRvul0TwWsjpDHcjofIDgJ89-iCInRUZjBEi3W5X16WVP8PtOIQ41ndwi2nhZ1Ec9Vwclcccg1QFvZnI4Ye3SjkeYknuo1vDMs1Vd1iuAAvz81Kk2-YuSiPiaO2W-5rTfJr4Bw3uGsIxUvKTtvZ0BwaVuziabJ250j0w.jpg"
  },
  "gholam": {
   "text": "رفیق، بچه‌های دیپ‌سیک باز یه حرکت مشتی زدن و نمونه اولیه «سوپر-ایجنت» خودشون رو متن‌باز کردن تا سطح جدیدی از سیستم‌های خودمختار هوش مصنوعی رو رو کنن. سازوکارش این‌طوریه که یه بخش روتور با کاربر چت می‌کنه و کارها رو تقسیم می‌کنه، بعدش هم یه سری کارگرِ جداگونه میان و وظایف رو بر اساس اتفاقات گیت‌هاب به صورت کاملاً موازی جلو می‌برن. نتیجه این معماری خفن هم این شده که توی تست‌هاشون، زمان اجرای کارها در صدک ۹۵ تقریباً نصف شده و از حدود ۲۹.۵ دقیقه اومده روی ۱۵.۷ دقیقه.\n\nاهمیتش اینه که دیپ‌سیک داره ثابت می‌کنه آینده پیشرفت هوش مصنوعی تو تقسیم کار موازی و چندعاملیه، اونم با راهکارهای رایگان و متن‌باز که دست همه توسعه‌دهنده‌ها رو باز می‌ذاره.",
@@ -66,5 +66,5 @@
    "متن‌باز"
   ]
  },
- "updated": "2026-11-04T05:11:18+00:00"
+ "updated": "2026-11-04T12:01:56+00:00"
 }

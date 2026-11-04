@@ -12,7 +12,7 @@
   "site": "FxTwitter",
   "title": "Adam Karvonen (@adam_karvonen)",
   "description": "It looks like Astra didn't natively read Qwen's weights?\nAs I understand it, Qwen would get stuck in a loop and not answer the question.\nAstra used code to perform some standard interp techniques, found a looping direction, and ablated it from the weights.…",
-  "image": "https://cdn4.telesco.pe/file/iNxuC9T9bU_9nBaj5YOObo-H4F99FY1XyZ3AWize-wbOftF-j3zJzeUOqZArsvRic7d82bdcNf2d6R0TpLIoszN87HGAyBsTsjtEzLsPukBl0tCn3VEf8_mxPvSrzAhV35IfYBK2FiI5lbVLB-4qcpwRCC_-pteghbfDx-XI7HHiJlq5Aw7A6nxWEf0lLtwcML_DeuyPucaEmqI-l3KVjmoJMFl22hOk-eK9pyr-m3E-nnK5OeFqtv6NvIIw6sg9m9bVVbhczxf20IubyAUDfgH_5eHx2OLk-vPBVsXsWxJC449QxNSQEDapvrshXz0MNfz418rWcVpavNeYfCK11w.jpg"
+  "image": "https://cdn4.telesco.pe/file/G_7C8-m7iymg1aKpMw5wHmmfXD2lel1a_ze2-QRX0vA364IM1bOhVTOgQqlrsE_DheZbXSikp-U9gmbrNHH9NeeGp7xrU68ub7DYoeSCGUbT3fY9bdY9Ai6IAqLdcDWeHVMXdDm1N5dkABJTFRRB0CTm2SExBI6Pi7ZyJJUBtl4LTvgmexeoQ-xa-V6cZFMy2VdDhhzQ6K5H_WVJfE1Me_f83a8GR8PyQqJr4N7S8YMuyg-QHJZ9F2W6_7SLQ5tSohaDYqJ3TAe8P1nBwQ6o2laf3OaHEX-LDODsvlA8aix7gD7GZElz9_MxHd-l7UhnpdKD6oNC6xKvL33K7AiG4A.jpg"
  },
  "gholam": {
   "text": "ببین رفیق، پژوهشگرا اومدن از مدل خفن GPT-6 Astra خواستن بشینه وزن‌های مدل جمع‌وجور Qwen3.5-0.8B رو دستکاری کنه تا ریاضی و استدلالش بهتر بشه. ماجرا اینه که کیوون مدام توی حلقه‌های بی‌پایان گیر می‌کرده و آسترا هم با نوشتن یه سری کد و ابزارهای تفسیری، اون مسیری که باعث هنگ کردن مدل می‌شده رو پیدا و از وزن‌ها حذف کرده؛ یعنی بدون هیچ آموزش اضافه یا محاسبات سنگین گرادیان، کار رو درآورده. نتیجه این حرکت که اسمش رو گذاشتن «برنامه‌نویسی توی فضای وزن‌ها» معرکه بوده؛ چون فقط با دست زدن به ۰.۰۱۶ درصد وزن‌ها، تونستن عملکرد ریاضی مدل رو ۶ برابر و دستورپذیریش رو ۳ برابر ارتقا بدن.\n\nاهمیتش اینه که نشون میده یه هوش مصنوعی می‌تونه مثل یه جراح کاربلد، بدون آموزش مجدد و صرف هزینه‌های نجومی، مغز یه مدل دیگه رو باز کنه و مستقیم با چنتا تغییر ریز چند برابر قوی‌ترش کنه.",
@@ -66,5 +66,5 @@
    "اوپن‌ای‌آی"
   ]
  },
- "updated": "2026-11-04T05:11:18+00:00"
+ "updated": "2026-11-04T12:01:56+00:00"
 }

@@ -12,7 +12,7 @@
   "site": "🧵 Thread • FxTwitter",
   "title": "Rikiya Takehi (@rikiyatakehi)",
   "description": "We asked GPT-6 Astra to edit Qwen3.5-0.8B weights to improve math.\nIt directly changed only 0.016% of weights, fixing 0.8B's reasoning loops & improving math up to 6x and even instruction following 3x, without gradients or training.\nWe call this Weight-Space…",
-  "image": "https://cdn4.telesco.pe/file/VXLIN-nwU2mIZysOdIlBPJy8K1u8P_euwxXoa95Rd3p7kS8bpW8Pnhum2Rb0Vt-12iWnyciinMgF3KWBL0IQtrixEXCf6dMEQCjhj3aoPHookrMizuWKKiQq6Us3Str3InPwZIndV_PF9IbnCJVqn5bm-AyhWuHqfsh1_SPKyjTxyxx1dygKazSXqOhgmxP9zl42p5_ZFRCXokAVQeuM2Q8i7LGk9hISrTLII3wAo5Vxte2yLnKLCfqT3fEpzCALsIrbBmEBrb4saxYb8RElLgsfeSjgWCucRuSQ6mK7bnPbd64AjYNVyOFht90d55JoHwEBOhmyV3EE3XWodeVnwA.jpg"
+  "image": "https://cdn4.telesco.pe/file/DKCpFODfFCB1eEW-spOuoZQuGK1JaR7rtlqfVIpvFFoEgg5GppDniLT_1qs_UucJwgDNONvTHn4zuEmgh3nMI-C1UXDM8rNTsc0VTHxvx8GiedwDRzNND2IONDlapBSh7IouCV2Jnfd0u7VQcJms-zVXcMcpIfSXwwZZtu1PCpVjuVzg3-VhtK6fDGUWKWJn1vh75M2G_3sMQPzNF8FJmlKrEWjRhsGdf-jJhQ4dM3FiZmth9ry44pcTz-xOWHHBZXbgaRmT3QWSgo_DITo4PIlyLM7kt81nxJ-qsWU3ikAUspjNip6Q1Py9BvurmGAMayqRTC7eupygspegKbjW8A.jpg"
  },
  "gholam": {
   "text": "ببین رفیق، قضیه خیلی عجیبه و دانشمندا رسماً زدن تو کار جراحی مستقیم مغز هوش مصنوعی! ماجرا از این قراره که ریکیا تاکی و تیمش از مدل GPT-6 Astra خواستن وزن‌های یه مدل کوچیک‌تر یعنی Qwen3.5-0.8B رو دستکاری کنه تا ریاضیش راه بیفته. کار خفنشون اینجاست که بدون هیچ تمرین دادن، گرادیان یا دیتای آموزشی، فقط با تغییر دادن ۰.۰۱۶ درصد از وزن‌های اون مدل، لوپ‌های استدلالی خرابش رو درست کردن و زورش تو ریاضی تا ۶ برابر و تو پیروی از دستورات ۳ برابر بیشتر شده. اسم این شعبده‌بازی جدید رو هم گذاشتن «برنامه‌نویسی در فضای وزن» که نشون میده غول‌های هوش مصنوعی حالا می‌تونن کدهای مغزی مدل‌های ضعیف‌تر رو بخونن و اصلاح کنن.\n\nاهمیتش اینه که به‌جای صرف میلیون‌ها دلار هزینه و روزها وقت برای آموزش دوباره، یه هوش مصنوعی بزرگ می‌تونه تو چند ثانیه مثل یه جراح زبردست، مدل‌های کوچیک رو مستقیم دستکاری و تقویت کنه.",
@@ -63,5 +63,5 @@
    "کدنویسی"
   ]
  },
- "updated": "2026-11-04T05:11:18+00:00"
+ "updated": "2026-11-04T12:01:56+00:00"
 }

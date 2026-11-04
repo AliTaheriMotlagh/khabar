@@ -12,7 +12,7 @@
   "site": "FxTwitter",
   "title": "Andrej Karpathy (@karpathy)",
   "description": "Weekend hack: HackerTube. I was annoyed with YouTube's recommendations so I had Claude filter down 43M comments over 20 years of HN to 6,454 videos that keep being recommended. *Significantly* better viewing experience, ~2 hours with Opus 5.5:\nhttps://hackertube.org/…",
-  "image": "https://cdn4.telesco.pe/file/n2iiGm4iTD8cSPsGVhG8H2wd-kUHc6Jl50cn8MrD1JwsnIN24sK-DGOSKCt0JNjK92oiLnMe9735UlAiKYsXqzscFX2hyDHrkAx8puG8kruQswNh3wqsCjeduYzZ94pXQhXL7Bq9bO9hPzDnzME4iJr3ekW0812rtamnV3k__8A_Al4BfvgCsUVCfDIowyiPxI9zu0p0urdcSP2BEICBJrU9KmWDBCoChkDmPUyeDeJFW96HnwVb9KgDh5ujCwGhURwsZqIWIPZlFGqsWzRiw4PAooy3diohbO1vzjfnhv7lP-5RTnA3DcGejNgLIww5Jm4l58f8bPvEkmkL1u0veg.jpg"
+  "image": "https://cdn4.telesco.pe/file/Oy-y_mmvPSmSsAeD4YPV_xTOoHGKUNzPNmEFMx20RwvWZY2Ba8lwoMfBW1fNAbguiM_SBvmjp6Y2ZwFf2z9HUc1Vr-9exGi9kuEJbQPq4CRdrMORFRmpMjkDOV_19oU2PhVFyLgZv9H60lg9xdpsNLrxkHBqlQhg7gVUjdvDIS1eJ_Rcvst9KTe_O1s1VTNdQQWGAu1DF6bluKbSGdLdJjE8XdtWeAb1Vk6k78RKFT-ogETJi7DrQ1Si7LaUqrcIEZOELQeCZTm45bmx6tKnwt0b8p2nRw86SBXRTN6y7QjZlVJeyUBhhVLoAomXeoGwlILYtFoR0tcPLsUTTZBKMw.jpg"
  },
  "gholam": {
   "text": "رفیق، قضیه از این قراره که آندری کارپاتی، از اوستاهای هوش مصنوعی، کلافه از الگوریتم چرت پیشنهادهای یوتیوب زد به سیم آخر و یه آخر هفته مشتی رقم زد. نشسته پای کار و با هوش مصنوعی کلود اوپوس تو عرض دو ساعت، ۴۳ میلیون کامنتِ ۲۰ سال گذشته سایت هکرنیوز رو زیرورو کرده تا ۶,۴۵۴ تا ویدیوی طلایی و دست‌اول رو گلچین کنه و سایتی به اسم هکرتیوب بسازه. جالبیش اینجاست که کارپاتی فقط دامنه رو خریده و سرور خام گرفته، ولی صفر تا صد کدنویسی، بستن حفره‌های امنیتی و بالا آوردن سایت رو خود مدل درجا انجام داده. توی این سرویس خبری از لاگین اجباری یا تامبنیل‌های کلیک‌بیت نیست و تامبنیل‌ها یه فریم واقعی از وسط خود ویدیوئن تا فقط پای محتوای درست‌درمون بنشینی.\n\nچرا مهمه؟ اهمیتش اینه که نشون میده با ابزارهای امروزی هوش مصنوعی، پروژه‌های خفنی که قبلاً ماه‌ها زمان و یه تیم کامل می‌خواستن، حالا تو یه عصر دل‌انگیز توسط یه نفر جمع میشن و میشه الگوریتم‌های تجاری غول‌های فناوری رو دور زد.",
@@ -63,5 +63,5 @@
    "شبکه‌های اجتماعی"
   ]
  },
- "updated": "2026-11-04T05:11:18+00:00"
+ "updated": "2026-11-04T12:01:56+00:00"
 }
