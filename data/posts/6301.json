@@ -1,0 +1,69 @@
+{
+ "id": 6301,
+ "url": "https://t.me/dlmehr/6301",
+ "date": "2026-11-04T19:31:52+00:00",
+ "text": "https://fxtwitter.com/omarsar0/status/2117956281910829083?a=tQF-aPowWvcz05GcjzI&s=52",
+ "forwarded_from": null,
+ "digest": false,
+ "hash": "a184e498036f",
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/omarsar0/status/2117956281910829083?a=tQF-aPowWvcz05GcjzI&s=52",
+  "site": "🧵 Thread • FxTwitter",
+  "title": "elvis (@omarsar0)",
+  "description": "Highly recommended paper from NVIDIA.\n(bookmark it)\nThere is a lot of debate about whether to use context compaction aggressively.\nThey show that with frequent compaction, frontier language models lose little to no accuracy on a broad range of long-horizon…",
+  "image": "https://cdn4.telesco.pe/file/M_xMkQGaWqnXcMLCSr5kYGgEmR2UCTUpY5EsoXOyJ1BYPJt2GZpig2gXp3CezVG3gwrUUn08CsrrKyTxHWL5g9EQuILgboGGgEHbOTu2h3rwDeTB1eU8pLluzlcUAM0HlmUCzNJ_Dqyd7ZQyOjUunlMOm8InOj3FzqYWSG2U2YCzsPtN5k6auZB_Z70igJGf_szf6iHRQ80qMkyXcehkHBqwbVUn-wH-C6Cpw69PgsUPk5TJWHXj70EMC-H051cGkjXsHp3QKaOk_fLIChyf45lR-JYp9Of3Gy9N2gbEgBnWV7k4-fw75igTqVEsFQ3XjaiZWXvo_Pd-Wrfm1mChwA.jpg"
+ },
+ "gholam": {
+  "text": "رفیق، بچه‌های انویدیا یه مقاله تازه دادن بیرون که اگه اهل کار کشیدن از ایجنت‌های هوش مصنوعی هستی، بدجوری به دردت می‌خوره. قضیه اینه که فهمیدن اصلاً نیازی نیست کل تاریخچه طولانی چت رو رو سر مدل خراب کنی؛ اگه هی جمع‌وجورش کنی و فقط یه خلاصه تمیز از وضعیت بهش بدی، دقتش ذره‌ای نمی‌ریزه و مدل گردن‌کلفتی مثل کلود اوپوس ۴.۵ با همین ترفند پیک بافتش از ۳۲ هزار توکن اومده رو ۸ هزار و نمره‌ش هم توی بنچمارک SWE-bench حتی از ۷۰ رسیده به نزدیک ۷۵! تازه تولید توکن‌های آخر چت تا هفت برابر گرون‌تر تموم میشه و این سبک فشرده‌سازی توی تست‌های مختلف مثل Terminal-Bench هم حسابی امتحانش رو پس داده. خلاصه کلام اینکه قبل خالی کردن جیبت برای ران‌های میلیونی، عقل حکم می‌کنه دست به دامن همین خلاصه‌سازی مرتب بشی.\n\nاهمیتش اینه که بدون افتادن کیفیت کار، هزینه سرسام‌آور سرور و مدل‌ها رو به شدت میاره پایین و سرعت خروجی رو چند برابر می‌کنه.",
+  "date": "2026-11-04T19:32:11+00:00"
+ },
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/omarsar0/status/2117956281910829083",
+   "domain": "x.com",
+   "author": {
+    "name": "elvis",
+    "handle": "omarsar0",
+    "avatar": "https://pbs.twimg.com/profile_images/939313677647282181/vZjFWtAn_200x200.jpg"
+   },
+   "text": "Highly recommended paper from NVIDIA.\n\n(bookmark it)\n\nThere is a lot of debate about whether to use context compaction aggressively.\n\nThey show that with frequent compaction, frontier language models lose little to no accuracy on a broad range of long-horizon and long-input tasks while keeping their context short.\n\nWith one action per context, Claude Opus 4.5 scores 70.2 on SWE-bench Verified against 70.0 with the full history. Median peak context drops from 32K to 8K tokens.\n\nThe agent carries a short summary of its state between steps instead of the whole transcript. Simple compaction at the end of a conversation often does better than the full history, and Opus goes from 70.0 to 74.8 with it.\n\nThis also matters for cost. Later tokens cost more to generate than earlier ones, up to 7x on frontier open-weight models.\n\nThe pattern holds on Terminal-Bench, FRAMES, BFCLv3 and multilingual SWE-bench, with modest losses in some settings.\n\nBefore paying for million-token agent runs, it's worth testing aggressive compaction on your own tasks.\n\nhttps://arxiv.org/abs/2611.05306\n\nChat with Paper: https://academy.dair.ai/papers/you-dont-need-long-context-2611.05306",
+   "date": 1793795101,
+   "media": [
+    {
+     "type": "image",
+     "src": "https://pbs.twimg.com/media/HWR-A3haMAA_4rw.jpg?name=orig",
+     "ratio": 1.1555
+    }
+   ],
+   "links": [
+    "https://arxiv.org/abs/2611.05306",
+    "https://academy.dair.ai/papers/you-dont-need-long-context-2611.05306"
+   ]
+  },
+  {
+   "kind": "link",
+   "url": "https://arxiv.org/abs/2611.05306",
+   "domain": "arxiv.org",
+   "title": "You don't need long context",
+   "description": "Later tokens are costlier to generate than earlier tokens. On frontier open weight models, the disparity in cost may rise to as much as 7x. Through frequent compaction, we show across a broad range of long-horizon and long-input tasks that frontier language models sacrifice little to no task accuracy when maintaining short contexts. We further demonstrate that LLM performance does not collapse on ",
+   "image": "https://arxiv.org/static/browse/0.3.4/images/arxiv-logo-fb.png",
+   "site": "arXiv.org"
+  }
+ ],
+ "article": {
+  "title": "بچه‌های انویدیا یه مقاله تازه دادن بیرون که اگه اهل کار کشیدن از ایجنت‌های هوش مصنوعی هستی، بدجوری به دردت می‌خوره",
+  "source_title": "Highly recommended paper from NVIDIA.",
+  "body": [
+   "رفیق، بچه‌های انویدیا یه مقاله تازه دادن بیرون که اگه اهل کار کشیدن از ایجنت‌های هوش مصنوعی هستی، بدجوری به دردت می‌خوره. قضیه اینه که فهمیدن اصلاً نیازی نیست کل تاریخچه طولانی چت رو رو سر مدل خراب کنی؛ اگه هی جمع‌وجورش کنی و فقط یه خلاصه تمیز از وضعیت بهش بدی، دقتش ذره‌ای نمی‌ریزه و مدل گردن‌کلفتی مثل کلود اوپوس ۴.۵ با همین ترفند پیک بافتش از ۳۲ هزار توکن اومده رو ۸ هزار و نمره‌ش هم توی بنچمارک SWE-bench حتی از ۷۰ رسیده به نزدیک ۷۵! تازه تولید توکن‌های آخر چت تا هفت برابر گرون‌تر تموم میشه و این سبک فشرده‌سازی توی تست‌های مختلف مثل Terminal-Bench هم حسابی امتحانش رو پس داده. خلاصه کلام اینکه قبل خالی کردن جیبت برای ران‌های میلیونی، عقل حکم می‌کنه دست به دامن همین خلاصه‌سازی مرتب بشی."
+  ],
+  "why": "بدون افتادن کیفیت کار، هزینه سرسام‌آور سرور و مدل‌ها رو به شدت میاره پایین و سرعت خروجی رو چند برابر می‌کنه.",
+  "tags": [
+   "انویدیا",
+   "ایجنت",
+   "آنتروپیک"
+  ]
+ },
+ "updated": "2026-11-04T19:33:26+00:00"
+}
