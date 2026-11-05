@@ -12,7 +12,7 @@
   "site": "FxTwitter",
   "title": "DAIR.AI (@dair_ai)",
   "description": "Impressive paper from Stanford on harness evolution for robotics.\nThey improve frozen robot policies from 9.7% to 43.3% success on unseen scenes without changing a single weight.\nThe gain comes from the harness.\nRoboArchitect gives a coding model the robot's…",
-  "image": "https://cdn4.telesco.pe/file/X2BtPN-9LA35ffxx6KOMnS-rgQT6ldNIQFISjgks7XkC1DAw92wBswO94kgE4w0ZVRE7TGmPf_uYGl-ucMBtpQZF0r0JEl0Ya_G0CnhNC8TpM_CBTVh7xAh8LQwvgSc2GtXXduBRWPVa56M-w5GP4o1xiuxRxWz1zg-Tfa6JM7UFIalC47yQVnYCgekZwlMBAiOuLqahvSxVZ3kuXwC2PMxXFRaggBd0eZ-OLyi9YXZpzUI7A7dPj38oQR84J8jAmhquk8dtBxWjHVyQ31NvNSAi-vnUraj7E2KaHwcltbzKxpRMcbO-mUbTvb49RiB62qhqNmSDKr3tP156uSzJEQ.jpg"
+  "image": "https://cdn4.telesco.pe/file/H4s_XWhyDCl2jnsFu_k2gjuW3ItLbn9KvuQ9d8Ide1VolMPf1KgCupu9bOuWH4iNM7JuTfGGKbz2eN4PTHKbEgOI1evioRTgb7CEc1u_X9GLl1bGDAFmA7Ve87waWqPtA0Vwul5Z13SWp6HpPZtFJ_uzfO7uHqlJT8g53l2l4ZBkJii9NtvdPoFr2uBiRlJ-GYpcsNncRprxpMNC9AJArhov74jJ-LGN0ajral16ETCep7uweBfxqycrgm4AGS2zQ9llkpKewDAQdywDxTDcspEX55YiE-ep3bZyvtkdPZA7mSyW0129eI0Xzn563AiFk_Px5I2oypaTm9M2IgO8sQ.jpg"
  },
  "gholam": {
   "text": "رفیق، بچه‌های دانشگاه استنفورد یه حرکتی زدن که قشنگ بازی رباتیک رو عوض می‌کنه؛ بدون این‌که حتی به یه دونه از وزن‌های مدل هوش مصنوعی ربات دست بزنن، درصد موفقیتش تو محیط‌های جدید رو از ۹.۷ درصد رسوندن به ۴۳.۳ درصد. داستان اینه که ابزاری به اسم RoboArchitect ساختن که عملکرد ربات رو می‌بینه، سوتی‌ها و گیرهاش رو تشخیص میده و بعد یه کد کنترلی دور همون مدل دست‌نخورده می‌نویسه تا کار رو جمع کنه. این سیستم خودش یاد می‌گیره کی از چشم ربات استفاده کنه، کی بازو رو مستقیم تکون بده و حتی اگه بازوی ربات جایی گیر کرد، چطور خلاصش کنه و حافظه به کار اضافه کنه. روی تسک‌های کاملاً ندیده هم موفقیت از ۱۲.۷ درصد پریده به بالای ۴۰ درصد که نشون میده چارچوب درست چقدر می‌تونه یه مغز معمولی رو کاردرست کنه.\n\nچرا مهمه؟ اهمیتش اینه که نشون میده واسه قوی‌تر کردن ربات‌ها همیشه لازم نیست میلیون‌ها دلار خرج آموزش دوباره مدل‌ها کنیم، بلکه با هوشمند کردن کد کنترلیِ دور مدل میشه از همون سیستم‌های قدیمی بازدهی چندبرابری گرفت.",
@@ -63,5 +63,5 @@
    "رباتیک"
   ]
  },
- "updated": "2026-11-05T09:22:15+00:00"
+ "updated": "2026-11-05T15:33:33+00:00"
 }
