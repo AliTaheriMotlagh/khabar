@@ -1,0 +1,64 @@
+{
+ "id": 6316,
+ "url": "https://t.me/dlmehr/6316",
+ "date": "2026-11-05T04:07:10+00:00",
+ "text": "https://fxtwitter.com/jonsaadfalcon/status/2118079242340814896?a=gLPQoMFKnAdpKNKa8eo&s=52",
+ "forwarded_from": null,
+ "digest": false,
+ "hash": "67b285e3c114",
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/jonsaadfalcon/status/2118079242340814896?a=gLPQoMFKnAdpKNKa8eo&s=52",
+  "site": "🧵 Thread • FxTwitter",
+  "title": "Jon Saad-Falcon (@JonSaadFalcon)",
+  "description": "AI is using more and more of the world’s energy. But how much economic value are we getting from AI?\nWe’re introducing Joules-to-GDP (J2G), a framework that measures how well AI turns energy into economic value and shows which tasks, models, and hardware…",
+  "image": null
+ },
+ "gholam": {
+  "text": "رفقا تو این تب‌وتاب هوش مصنوعی که همه فقط دادِ بنچمارک و پارامتر بیشتر سر می‌دن، بالاخره یه تیم پژوهشی دست گذاشته رو اصلِ ماجرا: کنتور برق و دخل‌وخرج واقعی با متر و معیاری به اسم Joules-to-GDP.\n\n• زورِ الکی سخت‌افزار: جابه‌جا کردن یه مدل از ۱ دونه به ۸ تا چیپ Nvidia H100 مصرف برق رو ۳.۲ برابر می‌کنه، ولی کار فقط ۲۲ درصد سریع‌تر تموم می‌شه؛ یعنی دور ریختن وات خالص برای چند ثانیه ناقابل.  \n• مدل بزرگ‌تر همیشه برنده نیست: غول‌هایی مثل GLM 5.2 ارزش دلاری بالاتری تولید می‌کنن، اما مدلی مثل Gemma 4 31B با مصرف تنها ۲۳ درصد اون انرژی، بیش از نصفِ همون ارزش رو درمیاره و بازدهی انرژی‌ش ۲.۵ برابر بهتره.  \n• کارهای کم‌خرج‌تر، به‌صرفه‌تر: مثلاً طراحی CAD شاید درآمد اسمی‌ش ده درصد بالاتر باشه، اما طراحی وبسایت به‌ازای هر ژول برقی که می‌سوزونه ۲۷ درصد ارزش اقتصادی بیشتری خلق می‌کنه.  \n\nتهِ ماجرا اینه که دوران فخرفروشی با خوشه‌های هزارتاییِ تشنه به برق داره سر میاد؛ فردا روزی توی این صنعت اون شرکتی زنده می‌مونه که بتونه با کمترین تاول زدن روی قبض برق، بیشترین خروجی رو از جیب کارفرما بیرون بکشه، نه اونی که صرفاً بزرگ‌ترین دیتاپک رو آتیش می‌زنه.",
+  "date": "2026-11-05T04:07:34+00:00"
+ },
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/JonSaadFalcon/status/2118079242340814896",
+   "domain": "x.com",
+   "author": {
+    "name": "Jon Saad-Falcon",
+    "handle": "JonSaadFalcon",
+    "avatar": "https://pbs.twimg.com/profile_images/2022162704069537794/HMtQLQJB_200x200.jpg"
+   },
+   "text": "AI is using more and more of the world’s energy. But how much economic value are we getting from AI?\n\nWe’re introducing Joules-to-GDP (J2G), a framework that measures how well AI turns energy into economic value and shows which tasks, models, and hardware give the best return.\n\nAcross 44 occupations in finance, engineering, law, administrative work, and more in @OpenAI's GDPval, we arrive at three findings:\n\n1) The tasks with the highest economic value are not the tasks with the highest economic value per joule. For example, CAD design earns ~10% more per task than building websites, but the latter earns ~27% more value per joule.\n\n2) The most powerful model isn’t always the best use of energy. Gemma 4 31B delivers 56% of GLM 5.2’s net value with 23% of the energy, for 2.5x the value per joule.\n\n3) More chips don’t guarantee proportionate returns. Moving the same model from 1 to 8 NVIDIA H100s uses 3.2x the energy but cuts completion time by only 22%, with about the same value.\n\nWith @SnorkelAI, we’re also releasing GDPWorks, a benchmark for economically valuable tasks across 36 additional occupations.\n\nJoint work co-led by @amirzeinaalii and @Avanika15, with @Mersad_Abbasi, @Jon_Hartley_, John Hennessy, @HazyResearch, and @Azaliamirh.\n\nMore details below 🧵",
+   "date": 1793824418,
+   "media": [
+    {
+     "type": "video",
+     "src": "https://video.twimg.com/amplify_video/2118075316396822529/vid/avc1/1280x720/KjlxJhKbbxxxzQGX.mp4?tag=29",
+     "poster": "https://pbs.twimg.com/amplify_video_thumb/2118075316396822529/img/aw5x4OPTHVkZt8Vx.jpg",
+     "ratio": 0.5625,
+     "duration": 23.766,
+     "gif": false
+    }
+   ],
+   "links": []
+  }
+ ],
+ "article": {
+  "title": "رفقا تو این تب‌وتاب هوش مصنوعی که همه فقط دادِ بنچمارک و پارامتر بیشتر سر می‌دن، بالاخره یه تیم پژوهشی دست گذاشته رو اصلِ ماجرا: کنتور برق و دخل‌وخرج واقعی با متر و معیاری به اسم Joules-to-GDP",
+  "source_title": "AI is using more and more of the world’s energy. But how much economic value are we getting from AI?",
+  "body": [
+   "رفقا تو این تب‌وتاب هوش مصنوعی که همه فقط دادِ بنچمارک و پارامتر بیشتر سر می‌دن، بالاخره یه تیم پژوهشی دست گذاشته رو اصلِ ماجرا: کنتور برق و دخل‌وخرج واقعی با متر و معیاری به اسم Joules-to-GDP.",
+   "• زورِ الکی سخت‌افزار: جابه‌جا کردن یه مدل از ۱ دونه به ۸ تا چیپ Nvidia H100 مصرف برق رو ۳.۲ برابر می‌کنه، ولی کار فقط ۲۲ درصد سریع‌تر تموم می‌شه؛ یعنی دور ریختن وات خالص برای چند ثانیه ناقابل.",
+   "• مدل بزرگ‌تر همیشه برنده نیست: غول‌هایی مثل GLM 5.2 ارزش دلاری بالاتری تولید می‌کنن، اما مدلی مثل Gemma 4 31B با مصرف تنها ۲۳ درصد اون انرژی، بیش از نصفِ همون ارزش رو درمیاره و بازدهی انرژی‌ش ۲.۵ برابر بهتره.",
+   "• کارهای کم‌خرج‌تر، به‌صرفه‌تر: مثلاً طراحی CAD شاید درآمد اسمی‌ش ده درصد بالاتر باشه، اما طراحی وبسایت به‌ازای هر ژول برقی که می‌سوزونه ۲۷ درصد ارزش اقتصادی بیشتری خلق می‌کنه.",
+   "تهِ ماجرا اینه که دوران فخرفروشی با خوشه‌های هزارتاییِ تشنه به برق داره سر میاد؛ فردا روزی توی این صنعت اون شرکتی زنده می‌مونه که بتونه با کمترین تاول زدن روی قبض برق، بیشترین خروجی رو از جیب کارفرما بیرون بکشه، نه اونی که صرفاً بزرگ‌ترین دیتاپک رو آتیش می‌زنه."
+  ],
+  "why": null,
+  "tags": [
+   "انویدیا",
+   "چین",
+   "تراشه"
+  ]
+ },
+ "updated": "2026-11-05T04:10:33+00:00"
+}
