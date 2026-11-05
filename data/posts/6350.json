@@ -1,0 +1,72 @@
+{
+ "id": 6350,
+ "url": "https://t.me/dlmehr/6350",
+ "date": "2026-11-05T23:20:43+00:00",
+ "text": "https://fxtwitter.com/hyperstition_cc/status/2118432349352595528?a=MTqIBKefUWWyfVx4C4s&s=52",
+ "forwarded_from": null,
+ "digest": false,
+ "hash": "d57fa3c803ea",
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/hyperstition_cc/status/2118432349352595528?a=MTqIBKefUWWyfVx4C4s&s=52",
+  "site": "🧵 Thread • FxTwitter",
+  "title": "Hyperstition (@hyperstition_cc)",
+  "description": "We invented a recursive megakernel generator called Hyperkernel, the most complete solution to megakernels and GPU efficiency.\nHyperkernel-generated megakernels achieve state of the art performance on 11 different domains: inference (DeepSeek, Kimi and GLM)…",
+  "image": "https://cdn4.telesco.pe/file/jliJPj826hUXU5APkAHOOxylkoNkiJELKKJ25qsc8TcPQR3pa1OvW19SO8IL6DzJGwCMF6jdWqvvkYb7uk4cl7c9OCAeFpWd3CNhaugrdbyXq04DxvU0v1r5KBXZhF-Oxvaaa7H84rWUdiskFfD-bXx2RTi-WjwoOc8nSyRbAAZQJxlRHDt_skfND-yrZZAKEOq1aFJ-SOCm7F82quqHLJsRYXTOc9_-PfwJU_3gaF-Z0Wp7L0QeY3GpGsnaBVZ9QputuUaZoV_hr5TlvIbEgULXoRqSzTUbcocxxHZmRafXZs_J6YBHqzJTXHpyGKc_HGNXjZ06zWfW5I4StxcE2A.jpg"
+ },
+ "gholam": {
+  "text": "یه استارتاپ تازه از راه رسیده به اسم Hyperstition ادعا کرده با ابزار جدیدش به نام Hyperkernel، کل معماری اجرای مدل‌ها روی کارت‌های گرافیک انویدیا رو شخم زده و انویدیا رو تو زمین خودش جا گذاشته.\n\n• این رفقا مدعی شدن فقط تو ۲۰ روز یه ابزار ساختن که کدهای پراکنده رو جمع می‌کنه تو یه «مگاکرنل» یکپارچه (Single Kernel Launch) و با فقط ۶۰ تا ۱۰۰ خط کد، سرعت مدل‌هایی مثل DeepSeek v4.1 Flash و پروتئین‌سازی ESMFold رو بین ۳۰ تا ||۷۰ درصد|| بالاتر برده.\n• بنچمارک‌هاشون روی غول جدید انویدیا یعنی B300 حسابی پر سر و صداست؛ مثلاً ادعای برتری ۲۸ درصدی نسبت به vLLM خودِ انویدیا توی بارهای کاری سنگین یا اجرای همزمان ۲۵۷۰ تا مدل رانندگی خودکار OpenPilot روی یک پردازنده.\n• اما نکته اینجاست: امروز فقط خروجی نهاییِ چند تا کرنل رو اوپن‌سورس کردن، نه خودِ اون ماشین تولید کد رو؛ قرار شده هسته اصلی سیستم طی هفته‌های بعد بیاد.\n\nادعای زمین زدن غول‌های زیرساخت تو بیست روز قشنگه، ولی تا وقتی مهندسی معکوس نشه و معلوم نشه این مگاکرنل‌ها چقدر به تغییر ابعاد ورودی و شرایط واقعی حساس و شکننده‌ان، باید کلاهمون رو قاضی کنیم و زود جوگیر نشیم.",
+  "date": "2026-11-05T23:21:04+00:00"
+ },
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/hyperstition_cc/status/2118432349352595528",
+   "domain": "x.com",
+   "author": {
+    "name": "Hyperstition",
+    "handle": "hyperstition_cc",
+    "avatar": "https://pbs.twimg.com/profile_images/2096336898335850496/LPPgRRSg_200x200.jpg"
+   },
+   "text": "We invented a recursive megakernel generator called Hyperkernel, the most complete solution to megakernels and GPU efficiency.\n\nHyperkernel-generated megakernels achieve state of the art performance on 11 different domains: inference (DeepSeek, Kimi and GLM), pretraining (Qwen), hardware fault recovery, robotics (π₀-FAST, ACT) diffusion and real time world models (Matrix-Game), full self driving (OpenPilot), voice models (Moshi), genomics (Evo 2) and protein folding (ESMFold).\n\nAll of this in a single kernel launch.\n\nFor context, Hyperkernel generated fully optimized megakernels for robotics, genomics and voice in under 50 minutes, and doubled the efficiency for >5 models generally using only about 60-100 lines of code per megakernel. This speaks to the unparalleled standard for code quality in the automated generations.\n\nOur first release today open sources the megakernels themselves. Over the next couple weeks, we will release the entire Hyperkernel stack, along with the complete serving stack for Kimi and GLM (20-30% inference efficiency gains across all concurrencies).\n\nOut of the box GPU machinery performs terribly for unorthodox research. We built Hyperkernel only 20 days ago for internal use; but given its multi-modality, we have decided to open source it.\n\nCreative research should not be bottlenecked by the lack of dedicated infra teams. Hyperkernels offer a one stop shop infra stack for all research. We would love for the open source community to add to it :)\n\nGitHub repo:  https://github.com/Hyperstitioncc/Hyperkernel\n\nNOTE: We primarily use NVIDIA B300s, but our kernel generation extends to other hardware (B200s, AMD, TPUs).\n\n1/9\n\nWe absolutely crush NVIDIA and achieve the best low latency inference for DeepSeek v4.1 Flash.\n\nCompared with NVIDIA’s published vLLM results, Hyperkernel delivers:\n\n• 36.7% higher per-user generation speed at concurrency 1.\n\n• 28.2% higher per-user speed while serving two users, versus NVIDIA serving one.\n\n• 15% higher per user speed while serving four users, versus NVIDIA serving one.\n\n• 90.6% higher per-user generation speed at concurrency 4, compared with the highest published C4 AgentX interactivity for TP4 B300s.\n\n• 28.5% higher per-user generation speed at concurrency 8, compared with NVIDIA's published result.\n\n• 36% faster median per-request decode speed.",
+   "date": 1793908605,
+   "media": [
+    {
+     "type": "image",
+     "src": "https://pbs.twimg.com/media/HWYitJxasAAayvc.png?name=orig",
+     "ratio": 0.6286
+    }
+   ],
+   "links": [
+    "https://github.com/Hyperstitioncc/Hyperkernel"
+   ]
+  },
+  {
+   "kind": "link",
+   "url": "https://github.com/Hyperstitioncc/Hyperkernel",
+   "domain": "github.com",
+   "title": "GitHub - Hyperstitioncc/Hyperkernel",
+   "description": "Contribute to Hyperstitioncc/Hyperkernel development by creating an account on GitHub.",
+   "image": "https://opengraph.githubassets.com/07ef4b9aed0f37266f80f743186f554db4c4333c34ce79bdfce294c4efd46354/Hyperstitioncc/Hyperkernel",
+   "site": "GitHub"
+  }
+ ],
+ "article": {
+  "title": "یه استارتاپ تازه از راه رسیده به اسم Hyperstition ادعا کرده با ابزار جدیدش به نام Hyperkernel، کل معماری اجرای مدل‌ها روی کارت‌های گرافیک انویدیا رو شخم زده و انویدیا رو تو زمین خودش جا گذاشته",
+  "source_title": "We invented a recursive megakernel generator called Hyperkernel, the most complete solution to megakernels and GPU efficiency.",
+  "body": [
+   "یه استارتاپ تازه از راه رسیده به اسم Hyperstition ادعا کرده با ابزار جدیدش به نام Hyperkernel، کل معماری اجرای مدل‌ها روی کارت‌های گرافیک انویدیا رو شخم زده و انویدیا رو تو زمین خودش جا گذاشته.",
+   "• این رفقا مدعی شدن فقط تو ۲۰ روز یه ابزار ساختن که کدهای پراکنده رو جمع می‌کنه تو یه «مگاکرنل» یکپارچه (Single Kernel Launch) و با فقط ۶۰ تا ۱۰۰ خط کد، سرعت مدل‌هایی مثل DeepSeek v4.1 Flash و پروتئین‌سازی ESMFold رو بین ۳۰ تا ||۷۰ درصد|| بالاتر برده.",
+   "• بنچمارک‌هاشون روی غول جدید انویدیا یعنی B300 حسابی پر سر و صداست؛ مثلاً ادعای برتری ۲۸ درصدی نسبت به vLLM خودِ انویدیا توی بارهای کاری سنگین یا اجرای همزمان ۲۵۷۰ تا مدل رانندگی خودکار OpenPilot روی یک پردازنده.",
+   "• اما نکته اینجاست: امروز فقط خروجی نهاییِ چند تا کرنل رو اوپن‌سورس کردن، نه خودِ اون ماشین تولید کد رو؛ قرار شده هسته اصلی سیستم طی هفته‌های بعد بیاد."
+  ],
+  "why": "ادعای زمین زدن غول‌های زیرساخت تو بیست روز قشنگه، ولی تا وقتی مهندسی معکوس نشه و معلوم نشه این مگاکرنل‌ها چقدر به تغییر ابعاد ورودی و شرایط واقعی حساس و شکننده‌ان، باید کلاهمون رو قاضی کنیم و زود جوگیر نشیم.",
+  "why_label": "حرف آخر",
+  "tags": [
+   "انویدیا",
+   "تراشه",
+   "استارتاپ"
+  ]
+ },
+ "updated": "2026-11-05T23:26:23+00:00"
+}
