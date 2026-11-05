@@ -4,7 +4,7 @@ import { showImage } from './media';
 
 type Card = {
   id: number; kind: string; title: string; href: string; date: string; minutes: number;
-  tag: string | null; site: string | null; cover: string | null; coverAlt?: string | null; thumb: string; body: string[]; why: string | null;
+  tag: string | null; site: string | null; cover: string | null; coverAlt?: string | null; thumb: string; body: string[]; why: string | null; whyLabel?: string;
 };
 
 const HOLD_MS = 420;
@@ -51,7 +51,7 @@ function fill(c: Partial<Card> & { title: string; href: string }, state: 'loadin
       ? '<p class="peek-skel"></p><p class="peek-skel"></p><p class="peek-skel short"></p>'
       : state === 'failed'
         ? '<p class="muted">پیش‌نمایش این خبر الان در دسترس نیست؛ برای خواندن، خبر را باز کنید.</p>'
-        : (c.body ?? []).map((p) => `<p>${esc(p)}</p>`).join('') + (c.why ? `<aside class="why"><b>چرا مهمه؟</b><p>${esc(c.why)}</p></aside>` : '');
+        : (c.body ?? []).map((p) => `<p>${esc(p)}</p>`).join('') + (c.why ? `<aside class="why"><b>${esc(c.whyLabel || 'چرا مهمه؟')}</b><p>${esc(c.why)}</p></aside>` : '');
   $<HTMLAnchorElement>('[data-peek-open]', dialog)!.href = c.href;
   const share = $('[data-peek-share]', dialog)!;
   share.dataset.url = c.href;

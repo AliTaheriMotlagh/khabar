@@ -177,12 +177,39 @@ def _parse_message(msg: Tag) -> TgPost:
     return TgPost(
         id=post_id,
         date=time_tag["datetime"] if time_tag else "",
-        text=text,
+        # Only for a post with nothing else to show, so every post the site already lists (and its stored hash) stays as is.
+        text=text or ("" if media or preview else _attachment_text(msg)),
         links=[l for l in links if not re.match(r"https?://t\.me/", l)],
         media=media,
         preview=preview,
         forwarded_from=_get_text(fwd) or None,
     )
+
+
+def _attachment_text(msg: Tag) -> str:
+    """Text for a post whose content the web preview shows but the site has no player for: a poll, a file, an audio or
+    voice message, a sticker, or media t.me won't show ("Please open Telegram to view this post"). Without it such a
+    post has no text, links or media and the crawl drops it; with it the post is listed and links to the channel."""
+    poll = msg.select_one(".tgme_widget_message_poll")
+    if poll:
+        question = _get_text(poll.select_one(".tgme_widget_message_poll_question"))
+        options = [
+            _get_text(o.select_one(".tgme_widget_message_poll_option_text")) or _get_text(o)
+            for o in poll.select(".tgme_widget_message_poll_option")
+        ]
+        return "\n".join(["📊 نظرسنجی: " + (question or "")] + [f"• {o}" for o in options if o]).strip()
+    doc = msg.select_one(".tgme_widget_message_document")
+    if doc:
+        title = _get_text(doc.select_one(".tgme_widget_message_document_title"))
+        extra = _get_text(doc.select_one(".tgme_widget_message_document_extra"))
+        return "📎 " + " — ".join(x for x in (title or "فایل", extra) if x)
+    if msg.select_one(".tgme_widget_message_voice, .tgme_widget_message_voice_player, audio"):
+        return "🎧 پیام صوتی — در کانال تلگرام بشنوید"
+    if msg.select_one(".tgme_widget_message_sticker_wrap, .tgme_widget_message_sticker"):
+        return ""  # a sticker alone says nothing: let it drop
+    if msg.select_one(".message_media_not_supported, .message_media_not_supported_wrap"):
+        return "این پست را در کانال تلگرام ببینید"
+    return ""
 
 
 def fetch_posts(http: httpx.Client, pages: int) -> tuple[dict, list[TgPost]]:

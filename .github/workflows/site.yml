@@ -122,7 +122,13 @@ jobs:
     runs-on: ubuntu-latest
     environment:
       name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
+      url: ${{ steps.deployment.outputs.page_url || steps.retry.outputs.page_url }}
     steps:
+      # GitHub Pages now and then sits in "updating_pages" until deploy-pages times out (10 min) and cancels it; the
+      # same artifact goes through on a second try, so retry once before failing the run.
       - id: deployment
+        continue-on-error: true
+        uses: actions/deploy-pages@v4
+      - id: retry
+        if: steps.deployment.outcome == 'failure'
         uses: actions/deploy-pages@v4

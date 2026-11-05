@@ -89,8 +89,9 @@ def test_gholam_comment():
 
 def test_shape():
     c = telegram.parse_gholam_comment(DISCUSSION_HTML)
-    paras, why = shape.split_gholam(c["text"])
+    paras, why, label = shape.split_gholam(c["text"])
     assert why == "نشون میده تحریم‌ها کار نمی‌کنه."
+    assert label is None
     assert len(paras) == 1
     title = shape.headline(paras)
     assert title.startswith("وسط کنفرانس بزرگ انویدیا"), title
@@ -292,3 +293,76 @@ def test_client_waits_out_rate_limits(monkeypatch):
     with telegram.client() as http:
         assert http.get("https://t.me/s/dlmehr").text == "ok"
     assert not answers
+
+
+def test_why_labels_are_dropped_together():
+    for text in (
+        "خبر.\n\nچرا مهمه؟ اهمیتش اینه که بازار داغه.",
+        "خبر.\n\nاهمیتش اینه که بازار داغه.",
+        "خبر.\n\n**چرا مهمه؟** بازار داغه.",
+        "خبر.\n\n💡 چرا مهم است: بازار داغه.",
+        "خبر.\n\nچرا مهمه؟\nبازار داغه.",  # the label on its own line
+    ):
+        paras, why, label = shape.split_gholam(text)
+        assert (paras, why, label) == (["خبر."], "بازار داغه.", None), text
+    # «چون …» answers the heading: kept.
+    assert shape.split_gholam("خبر.\n\nچرا مهمه؟ چون بازار داغه.")[1] == "چون بازار داغه."
+
+
+NEW_STYLE = """بچه‌های تیم ریکرسیو یه مدل ۶۵ میلیاردی دادن بیرون، اما اصل قصه معماری متفاوتیه که سوار کردن:
+
+• با ۸۰ تا لایه و عرض ۵,۱۲۰، نسبت ابعادش شده ۶۴.  
+• تکنیک Value Residuals رو پیاده کردن.
+
+طراحی قشنگه و مهندسی پشتش تمیزه رفقا، اما باید دید زیر بار چی می‌شه."""
+
+
+def test_closing_take_after_the_list():
+    paras, why, label = shape.split_gholam(NEW_STYLE)
+    assert label == shape.TAKEAWAY_LABEL
+    assert why.startswith("طراحی قشنگه")
+    assert len(paras) == 3 and paras[1].startswith("•") and not paras[1].endswith(" ")
+    assert shape.headline(paras).endswith("سوار کردن")  # no trailing «:»
+    # Text that goes on after the list, or a list with no lede, is all body.
+    assert shape.split_gholam(NEW_STYLE + "\n\nیه پاراگراف دیگه.")[1] is None
+    assert shape.split_gholam("• یک\n• دو\n\nجمع‌بندی.")[1] is None
+    # No list: the last paragraph is part of the story.
+    assert shape.split_gholam("خبر اول.\n\nادامه خبر.")[1:] == (None, None)
+
+
+def test_article_carries_the_closing_label():
+    post = {"id": 1, "text": "x", "links": [], "gholam": {"text": NEW_STYLE}}
+    a = run.build_article(post)
+    assert a["why_label"] == shape.TAKEAWAY_LABEL and a["why"].startswith("طراحی")
+    old = run.build_article({**post, "gholam": {"text": "خبر.\n\nچرا مهمه؟ بازار داغه."}})
+    assert "why_label" not in old and old["why"] == "بازار داغه."
+
+
+def _msg(inner: str, pid: int = 1600) -> str:
+    return (f'<div class="tgme_widget_message js-widget_message" data-post="dlmehr/{pid}"><div class="tgme_widget_message_bubble">'
+            f'{inner}<a class="tgme_widget_message_date"><time datetime="2026-11-05T10:00:00+00:00"></time></a></div></div>')
+
+
+def test_posts_without_text_are_kept():
+    poll = _msg('<div class="tgme_widget_message_poll"><div class="tgme_widget_message_poll_question">بهترین مدل؟</div>'
+                '<div class="tgme_widget_message_poll_type">Anonymous poll</div>'
+                '<div class="tgme_widget_message_poll_option"><div class="tgme_widget_message_poll_option_percent">60%</div>'
+                '<div class="tgme_widget_message_poll_option_text">Claude</div></div>'
+                '<div class="tgme_widget_message_poll_option"><div class="tgme_widget_message_poll_option_text">Gemini</div></div></div>')
+    doc = _msg('<a class="tgme_widget_message_document_wrap"><div class="tgme_widget_message_document">'
+               '<div class="tgme_widget_message_document_title">paper.pdf</div>'
+               '<div class="tgme_widget_message_document_extra">2.1 MB</div></div></a>', 1601)
+    voice = _msg('<a class="tgme_widget_message_voice_player"><audio class="tgme_widget_message_voice" src="x.ogg"></audio></a>', 1602)
+    unsupported = _msg('<div class="message_media_not_supported_wrap"><div class="message_media_not_supported">'
+                       '<div class="message_media_not_supported_label">Please open Telegram to view this post</div></div></div>', 1603)
+    sticker = _msg('<div class="tgme_widget_message_sticker_wrap"><i class="tgme_widget_message_sticker"></i></div>', 1604)
+    _, posts = telegram.parse_channel_page(poll + doc + voice + unsupported + sticker)
+    texts = {p.id: p.text for p in posts}
+    assert texts[1600] == "📊 نظرسنجی: بهترین مدل؟\n• Claude\n• Gemini"
+    assert texts[1601] == "📎 paper.pdf — 2.1 MB"
+    assert "صوتی" in texts[1602]
+    assert "تلگرام" in texts[1603]
+    assert texts[1604] == ""
+    # A post with its own text, media or preview is read as before.
+    _, posts = telegram.parse_channel_page(CHANNEL_HTML)
+    assert [p.text.startswith(("https://", "Big news")) for p in posts] == [True, True]

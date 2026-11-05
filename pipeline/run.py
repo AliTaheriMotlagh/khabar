@@ -57,7 +57,7 @@ def build_article(post: dict) -> dict:
     """Persian presentation fields derived from Gholam's comment + the source content."""
     links = post.get("links") or []
     gholam = usable_gholam(post.get("gholam")) or {}
-    paras, why = shape.split_gholam(gholam.get("text", "")) if gholam else ([], None)
+    paras, why, why_label = shape.split_gholam(gholam.get("text", "")) if gholam else ([], None, None)
     src_title = shape.source_title(post.get("text", ""), links, post.get("preview"))
     title = shape.headline(paras) or src_title or shape.clip(post.get("text", ""), 110) or f"پست {post['id']}"
     english = " ".join(
@@ -71,6 +71,8 @@ def build_article(post: dict) -> dict:
         "source_title": src_title if src_title != title else None,
         "body": paras,
         "why": why,
+        # The heading over `why` when it isn't «چرا مهمه؟» (Gholam's closing take, see shape.split_gholam); absent otherwise.
+        **({"why_label": why_label} if why_label else {}),
         # The digest names every story of the day, so it would land in every topic: it has none.
         "tags": [] if post.get("digest") else shape.tags(english, gholam.get("text", ""), title=f"{title} {src_title or ''}"),
     }

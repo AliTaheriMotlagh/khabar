@@ -198,7 +198,9 @@ test('cards: a view counter on every story; pictures come through the site, with
       assert.ok(alt.includes(new URL(src).searchParams.get('url')), 'falls back to the original');
     }
   }
-  assert.ok(telegram > 0 && other > 0, 'the timeline has Telegram and X pictures');
+  // Which kinds the home page shows depends on the day's posts (a run of link-only stories has no Telegram picture,
+  // which failed scheduled builds), so only require pictures at all: each one above is checked by its kind.
+  assert.ok(telegram + other > 0, 'the timeline has pictures');
 });
 
 /** One feed's checks, for readers in Iran: valid XML, its own self link, items newest first, the newest FULL whole

@@ -1,6 +1,6 @@
 import rss from '@astrojs/rss';
 import { SITE } from '../site';
-import { abs, feedPicture, getFeed, getTags, type Post } from './posts';
+import { abs, feedPicture, getFeed, getTags, whyLabel, type Post } from './posts';
 
 // Characters XML 1.0 forbids: one stray control character in a Telegram text would make the whole feed unreadable.
 const clean = (s: string) => s.replace(/[\x00-\x08\x0B\x0C\x0E-\x1F￾￿]/g, '');
@@ -86,7 +86,7 @@ function content(p: Post) {
     p.kind === 'digest'
       ? `<ol>${p.digestItems.map((i) => `<li><a href="${esc(i.internal ? abs(`p/${i.id}/`) : i.href)}">${esc(i.text)}</a></li>`).join('')}</ol>`
       : p.article.body.map((t) => `<p>${esc(t)}</p>`).join('');
-  const why = p.article.why ? `<p><strong>چرا مهمه؟</strong> ${esc(p.article.why)}</p>` : '';
+  const why = p.article.why ? `<p><strong>${esc(whyLabel(p.article))}</strong> ${esc(p.article.why)}</p>` : '';
   const source = sourceLink(p);
   const tail = `<p><a href="${esc(link)}">خواندن در ${esc(SITE.name)}</a> · <a href="${esc(p.url)}">در کانال تلگرام</a></p>`;
   return `<div dir="rtl" lang="fa">${pictures}${text}${why}${source}${tail}</div>`;

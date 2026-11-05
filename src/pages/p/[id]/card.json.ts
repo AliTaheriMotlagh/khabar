@@ -1,7 +1,7 @@
 // Small per-story JSON behind the long-press preview (src/scripts/peek.ts), the cloud voice (api/tts.js) and the
 // story's video (src/scripts/video.ts: `video`, by index into the spoken lines).
 import type { APIRoute } from 'astro';
-import { faNum, getPosts, picture, videoPlan, type Post } from '../../../lib/posts';
+import { faNum, getPosts, picture, videoPlan, whyLabel, type Post } from '../../../lib/posts';
 
 export function getStaticPaths() {
   return getPosts().map((post) => ({ params: { id: String(post.id) }, props: { post } }));
@@ -25,6 +25,7 @@ export const GET: APIRoute = ({ props }) => {
     thumb: p.cover ? picture(p.cover.src || p.cover.poster, 'small').src : '',
     body: p.kind === 'digest' ? p.digestItems.map((i) => `${faNum(i.n)} — ${i.text}`) : a.body,
     why: a.why ?? null,
+    whyLabel: whyLabel(a),
     video: {
       title: plan.title,
       // Each picture's addresses, best first (src, then the fallbacks).

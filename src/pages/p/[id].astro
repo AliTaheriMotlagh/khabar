@@ -8,7 +8,7 @@ import SaveButton from '../../components/SaveButton.astro';
 import Reactions from '../../components/Reactions.astro';
 import Comments from '../../components/Comments.astro';
 import { SITE } from '../../site';
-import { abs, getFeed, getPosts, related, sized, faDate, faNum, pic, picture, tagHref, type Post } from '../../lib/posts';
+import { abs, getFeed, getPosts, related, sized, faDate, faNum, pic, picture, tagHref, whyLabel, type Post } from '../../lib/posts';
 
 export function getStaticPaths() {
   // Previous/next walk the listed feed; an unlisted (English-only) page has none.
@@ -140,7 +140,7 @@ const jsonLd = [
           <div class="prose" dir="auto">{a.body.map((p) => <p>{p}</p>)}</div>
         )
       }
-      {a.why && <aside class="why"><b>چرا مهمه؟</b><p>{a.why}</p></aside>}
+      {a.why && <aside class="why"><b>{whyLabel(a)}</b><p>{a.why}</p></aside>}
 
       <div class="engage" data-pagefind-ignore>
         <Reactions id={post.id} />

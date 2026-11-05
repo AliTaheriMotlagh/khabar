@@ -7,7 +7,15 @@ from typing import Optional
 OPENER_RE = re.compile(
     r"^\s*(?:(?:ببین|راستش|خلاصه|داش|آبجی|رفیق|داداشی|داداش|دوست من|طرف|گوش کن|بچه‌ها)(?![\w‌])\s*)+[،,:!]?\s*"
 )
-WHY_RE = re.compile(r"^\s*(چرا مهمه[؟?]?|اهمیتش اینه که)\s*")
+# «چرا مهمه؟», «چرا مهم است؟», «اهمیتش اینه که» — often both, «چرا مهمه؟ اهمیتش اینه که …» — maybe bold, with an emoji or a
+# colon. The whole run of labels is dropped; the site prints its own heading. An answer that starts «چون …» keeps it.
+WHY_LABEL = r"(?:چرا\s*مهم(?:ه|\s*است|\s*هست)\s*[؟?]?|اهمیتش\s+(?:اینه|این\s+است)\s+که)"
+WHY_RE = re.compile(r"^[\s*_«»\"'\U0001F300-\U0001FAFF☀-➿️]*(?:" + WHY_LABEL + r"[\s*_:：،,»\"'—–-]*)+")
+# A list item: «•», «-», «▪», an emoji bullet, or «۱.» / «1)».
+BULLET_RE = re.compile(r"^\s*(?:[•●▪▫◾◽‣⁃∙·\-–—🔹🔸🔺▶✅✔➖➤►]|\*(?!\*)|[0-9۰-۹]{1,2}\s*[.)\-–]\s)")
+# The label the site prints over the closing paragraph Gholam writes after his list since November 2026 («خلاصه اینکه…»,
+# «تهِ ماجرا اینه که…»): it is his last word on the story, not literally why it matters.
+TAKEAWAY_LABEL = "حرف آخر"
 SENTENCE_END_RE = re.compile(r"(?<=[.!؟?])\s+")
 
 # Keywords → Persian tag. Matched as whole words in either language (see _matcher), so «اپل» never matches «اپلیکیشن»
@@ -83,16 +91,32 @@ TOPICS: list[tuple[str, tuple[str, ...]]] = [
                           "تیک‌تاک", "یوتیوب", "ردیت")),
 ]
 
-def split_gholam(text: str) -> tuple[list[str], Optional[str]]:
-    """Return (paragraphs, why_it_matters)."""
-    paras = [p.strip() for p in re.split(r"\n\s*\n|\n", text) if p.strip()]
-    why = None
+def split_gholam(text: str) -> tuple[list[str], Optional[str], Optional[str]]:
+    """Return (paragraphs, closing, closing_label).
+
+    Two shapes of Gholam's translation:
+    - until November 2026: the story, then «چرا مهمه؟ …» / «اهمیتش اینه که …» → closing = that answer, label None
+      (the site's «چرا مهمه؟»). The label may also stand alone on its line, the answer on the next.
+    - since: a lede, a list («• …»), then an unlabeled paragraph with his take → closing = that paragraph, label
+      TAKEAWAY_LABEL.
+    """
+    paras = [re.sub(r"[ \t]+$", "", p.strip(), flags=re.M) for p in re.split(r"\n\s*\n|\n", text) if p.strip()]
     for i, p in enumerate(paras):
-        if WHY_RE.match(p):
-            why = WHY_RE.sub("", p).strip()
-            paras = paras[:i] + paras[i + 1 :]
-            break
-    return paras, why
+        m = WHY_RE.match(p)
+        if not m:
+            continue
+        why = p[m.end() :].strip()
+        rest = paras[i + 1 :]
+        if not why and rest:  # «چرا مهمه؟» on its own line: the answer is the next paragraph
+            why, rest = rest[0], rest[1:]
+        if why:
+            return paras[:i] + rest, why, None
+    bullets = [i for i, p in enumerate(paras) if BULLET_RE.match(p)]
+    # A lede, the list, then exactly one paragraph: that one is the take. A story that goes on longer after its list
+    # keeps all its text.
+    if bullets and bullets[0] > 0 and bullets[-1] == len(paras) - 2:
+        return paras[:-1], paras[-1], TAKEAWAY_LABEL
+    return paras, None, None
 
 
 def first_sentence(text: str) -> str:
@@ -117,7 +141,8 @@ def headline(gholam_paras: list[str]) -> Optional[str]:
     if not gholam_paras:
         return None
     sentence = OPENER_RE.sub("", first_sentence(gholam_paras[0]))
-    sentence = re.sub(r"\s+", " ", sentence).rstrip(".!؟? ")
+    # A lede that opens a list ends with «:» («…معماری متفاوتیه که سوار کردن:»): a headline doesn't.
+    sentence = re.sub(r"\s+", " ", sentence).rstrip(".!؟?:：؛;،, ")
     if not sentence:
         return None
     if len(sentence) <= HEADLINE_MAX:

@@ -37,7 +37,7 @@ export type RawPost = {
   links?: Link[];
   media?: Media[];
   preview?: { url?: string; site?: string; title?: string; description?: string; image?: string | null } | null;
-  article: { title: string; source_title?: string | null; body: string[]; why?: string | null; tags: string[] };
+  article: { title: string; source_title?: string | null; body: string[]; why?: string | null; why_label?: string | null; tags: string[] };
   updated?: string | null;
 };
 
@@ -265,7 +265,7 @@ export function stills(p: Post, n = 6): string[] {
 
 /** The story's video (src/scripts/video.ts): a title scene, then chapters, each a heading, the lines it says — indices
  *  into card.json's spoken lines [title, ...body, why], which /api/tts reads — and its pictures. A story or a brief:
- *  its text (lines with links left out, up to about VIDEO_CHARS characters), then «چرا مهمه؟»; the headline is said
+ *  its text (lines with links left out, up to about VIDEO_CHARS characters), then «چرا مهمه؟» (or whyLabel); the headline is said
  *  unless the first paragraph already says it. The 24-hour summary: one chapter per item, with the pictures of the
  *  story it points to. */
 export type VideoChapter = { head: string | null; say: number[]; pics: string[] };
@@ -291,9 +291,13 @@ export function videoPlan(p: Post): { title: boolean; chapters: VideoChapter[] }
     n += text.length;
   });
   const chapters: VideoChapter[] = say.length ? [{ head: null, say, pics: stills(p) }] : [];
-  if (p.article.why) chapters.push({ head: 'چرا مهمه؟', say: [p.article.body.length + 1], pics: [] });
+  if (p.article.why) chapters.push({ head: whyLabel(p.article), say: [p.article.body.length + 1], pics: [] });
   return { title: !p.article.body[0]?.includes(head.slice(0, 30)), chapters };
 }
+
+/** The heading over a story's closing paragraph: «چرا مهمه؟», or the pipeline's own label for Gholam's closing take
+ *  (`why_label`, pipeline/shape.py split_gholam). */
+export const whyLabel = (a: { why_label?: string | null }) => a.why_label || 'چرا مهمه؟';
 
 /** The channel's Persian morning summary (posted ~07:36 Tehran), the home page's brief. */
 export const latestDigest = () => getPosts().find((p) => p.kind === 'digest') ?? null;
