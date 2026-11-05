@@ -1,0 +1,77 @@
+{
+ "id": 6315,
+ "url": "https://t.me/dlmehr/6315",
+ "date": "2026-11-05T03:51:25+00:00",
+ "text": "https://fxtwitter.com/peternutter1/status/2118084568419045704?a=4XluWzIbALBjUbYXSoo&s=52",
+ "forwarded_from": null,
+ "digest": false,
+ "hash": "9cf6c74debe5",
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/peternutter1/status/2118084568419045704?a=4XluWzIbALBjUbYXSoo&s=52",
+  "site": "🧵 Thread • FxTwitter",
+  "title": "Peter Nutter (@PeterNutter1)",
+  "description": "Kimi K3.1 Pro doesn't just recall hidden tests (great thread by @JSchaeff3r). It also writes fake OpenAI ciphertext\n🤯\nGive it a send_message tool in Codex and sometimes it sends ciphertext instead of its report. Then it gets confused by what it just sent…",
+  "image": "https://cdn4.telesco.pe/file/Da4K8T7vwMGiD3zcpXQayZO8P9R-s7XsLZ7DIYeBF8mt9yU5VOhk6pQVwy-Op-kpwV5gK2XKSi4fzqafTaTcw52pbOQnPWbPASb1vfXEwotGiGTaAylmfrUUwJyE4O0hrAgByK88a_fDHWjOsIP-ZW5QZQ7TeHs_b2jMvuJGbfwTZ_KYYBf40-YPuI41_WJeejZRlEPAxbaUN_RI_NFw6KaAr4ihbItZL136Y8J6kPkfhl9agJQzTBXQkipjhhqweBaSJb9D7cokKZeGVhlJF1_ix_YWdzDPilXn5PYsUgP4NiSUfO6TCh4MKYGDAIHZSQt4qlgmGaTjo_Gxfz6irQ.jpg"
+ },
+ "gholam": {
+  "text": "دم خروس چینی‌ها این‌دفعه چنان از زیر شال‌کلاه مدل Kimi K3.1 زده بیرون که دیگه هیچ رقمه نمیشه ماست‌مالیش کرد. قضیه خیلی ساده‌ست: رفقای چینی‌مون نه تنها بنچمارک‌های مخفی رو از قبل خورده بودن، بلکه رفته بودن دیتای پردازش مخفی OpenAI رو کش رفته و کپی زده بودن، منتها یادشون رفته تفاله‌هاش رو از تو دیتاست تمیز کنن!\n\n• مدل Kimi وسط کارِ ایجنت‌ها قاطی می‌کنه و به جای تحویل گزارش متنی، توکن رمزنگاری‌شده‌ی Fernet میده بیرون؛ همون فرمت استانداردی که OpenAI برای کدکس استفاده می‌کنه و با هدرِ تابلو و مشخصِ gAAAAAB شروع میشه.\n• ردپای زمانیِ این کدهای رمزنگاری‌شده دقیقاً می‌خوره به بازه‌ی اواخر جولای؛ یعنی همون تاریخی که اوپن‌ای‌آی رسماً اعلام کرده بود اکانت‌های مرتبط با Moonshot داشتن دیتای استدلال هوش مصنوعی رو به روش ||Stolen Thoughts|| بیرون می‌کشیدن و سرقت می‌کردن.\n• شاهکار اینجاست که مدل LongCat متعلق به Meituan (سرمایه‌گذار اصلی مون‌شات) هم دقیقاً همین گاف رو میده، یعنی حتی زحمت یه فیلترِ ساده‌ی چند خطی برای حذف رشته‌های Base64 رو به خودشون ندادن.\n\nاینکه وسط هیاهوی بازاریابی بگی غول‌های غربی رو پشت سر گذاشتی، ولی مغز مدلت هنوز تیکه‌های دست‌نخورده‌ی کدهای سم آلتمن رو پس بده، بیشتر شبیه اینه که بخوای با ماشین سرقتی توی پیست دور افتخار بزنی داداش.",
+  "date": "2026-11-05T03:51:52+00:00"
+ },
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/PeterNutter1/status/2118084568419045704",
+   "domain": "x.com",
+   "author": {
+    "name": "Peter Nutter",
+    "handle": "PeterNutter1",
+    "avatar": "https://pbs.twimg.com/profile_images/2067374809068314624/3vmZqV20_200x200.jpg"
+   },
+   "text": "Kimi K3.1 Pro doesn't just recall hidden tests (great thread by @JSchaeff3r). It also writes fake OpenAI ciphertext 🤯\n\nGive it a send_message tool in Codex and sometimes it sends ciphertext instead of its report. Then it gets confused by what it just sent 🤔",
+   "date": 1793825687,
+   "media": [
+    {
+     "type": "image",
+     "src": "https://pbs.twimg.com/media/HWTyOFeb0AAK5pL.jpg?name=orig",
+     "ratio": 0.95
+    }
+   ],
+   "links": [],
+   "quote": {
+    "author": {
+     "name": "Joachim Schaeffer",
+     "handle": "JSchaeff3r",
+     "avatar": "https://pbs.twimg.com/profile_images/2020470608778436609/GaAB7M2l_200x200.jpg"
+    },
+    "text": "Kimi K3.1 recalls instructions it was never given on Terminal Bench. They match the hidden tests. K3.1 while solving: \"Instructions likely distilled pitfalls from previous agents.\" 🤯\n\nWhen we edit a task to contradict them, K3.1 refuses the new instructions and fails. Other models follow the edit. \n\nIs it terminal(ly) benchmaxxed? 🧵",
+    "date": 1793713404,
+    "media": [
+     {
+      "type": "image",
+      "src": "https://pbs.twimg.com/media/HWM_uhsXIAAz1sN.jpg?name=orig",
+      "ratio": 0.9109
+     }
+    ],
+    "links": []
+   }
+  }
+ ],
+ "article": {
+  "title": "دم خروس چینی‌ها این‌دفعه چنان از زیر شال‌کلاه مدل Kimi K3.1 زده بیرون که دیگه هیچ رقمه نمیشه ماست‌مالیش کرد",
+  "source_title": "Kimi K3.1 Pro doesn't just recall hidden tests (great thread by @JSchaeff3r). It also writes fake OpenAI ciphertext 🤯",
+  "body": [
+   "دم خروس چینی‌ها این‌دفعه چنان از زیر شال‌کلاه مدل Kimi K3.1 زده بیرون که دیگه هیچ رقمه نمیشه ماست‌مالیش کرد. قضیه خیلی ساده‌ست: رفقای چینی‌مون نه تنها بنچمارک‌های مخفی رو از قبل خورده بودن، بلکه رفته بودن دیتای پردازش مخفی OpenAI رو کش رفته و کپی زده بودن، منتها یادشون رفته تفاله‌هاش رو از تو دیتاست تمیز کنن!",
+   "• مدل Kimi وسط کارِ ایجنت‌ها قاطی می‌کنه و به جای تحویل گزارش متنی، توکن رمزنگاری‌شده‌ی Fernet میده بیرون؛ همون فرمت استانداردی که OpenAI برای کدکس استفاده می‌کنه و با هدرِ تابلو و مشخصِ gAAAAAB شروع میشه.",
+   "• ردپای زمانیِ این کدهای رمزنگاری‌شده دقیقاً می‌خوره به بازه‌ی اواخر جولای؛ یعنی همون تاریخی که اوپن‌ای‌آی رسماً اعلام کرده بود اکانت‌های مرتبط با Moonshot داشتن دیتای استدلال هوش مصنوعی رو به روش ||Stolen Thoughts|| بیرون می‌کشیدن و سرقت می‌کردن.",
+   "• شاهکار اینجاست که مدل LongCat متعلق به Meituan (سرمایه‌گذار اصلی مون‌شات) هم دقیقاً همین گاف رو میده، یعنی حتی زحمت یه فیلترِ ساده‌ی چند خطی برای حذف رشته‌های Base64 رو به خودشون ندادن.",
+   "اینکه وسط هیاهوی بازاریابی بگی غول‌های غربی رو پشت سر گذاشتی، ولی مغز مدلت هنوز تیکه‌های دست‌نخورده‌ی کدهای سم آلتمن رو پس بده، بیشتر شبیه اینه که بخوای با ماشین سرقتی توی پیست دور افتخار بزنی داداش."
+  ],
+  "why": null,
+  "tags": [
+   "چین",
+   "اوپن‌ای‌آی"
+  ]
+ },
+ "updated": "2026-11-05T03:55:26+00:00"
+}
