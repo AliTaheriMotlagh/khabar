@@ -1,0 +1,81 @@
+{
+ "id": 6344,
+ "url": "https://t.me/dlmehr/6344",
+ "date": "2026-11-05T21:20:53+00:00",
+ "text": "https://fxtwitter.com/APompliano/status/2118419052808823058?a=JmhpQLkuG4GCa63VXYU&s=19",
+ "forwarded_from": "Parsa Razavi",
+ "digest": false,
+ "hash": "e2ba1ea64828",
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/APompliano/status/2118419052808823058?a=JmhpQLkuG4GCa63VXYU&s=19",
+  "site": "🧵 Thread • FxTwitter",
+  "title": "Anthony Pompliano 🌪 (@APompliano)",
+  "description": "Let me tell you a story about how unethical Anthropic is.\nIn April, the Anthropic team began heavily courting our engineering team to tell them corporate secrets, technical details, and future plans for @cfosilvia.\nThey pretended their interest was due…",
+  "image": null
+ },
+ "gholam": {
+  "text": "داستان این بنده خدا آنتونی پامپلیانو از اون دراماهای ناب سیلیکون‌ولی شده که آخرش می‌رسه به جار زدن ته اتوبوس برای فروش محصول خودش. رفیقمون اومده علم شنگه راه انداخته که آره، دار و دسته آنتروپیک مهندسای استارتاپ مالی ما (Silvia) رو دعوت کردن به یه شام استیک اعیانی و زیر گوششون گفتن «راحت باشید، حساب با داریو آمودیئه»، تا زیرزبون بچه‌ها رو بکشن، فرمول سری‌مون رو بدزدن و ابزار مالی کلود رو لانچ کنن! بعد هم با افتخار میگه ما دستشون رو خوندیم، از رو مدل‌های بزرگ پریدیم کنار و با سخت‌افزار خودمون هزینه‌ها رو ۹۷ درصد کم کردیم.\n\nاما ته ماجرا چیه آبجی و داداش من؟ غول‌های هوش مصنوعی کارشون همینه؛ هر روز یه قابلیت ریز مثل اتصال به حساب بانکی رو می‌بلعن و تبدیل به فیچر پیش‌فرض سیستمشون می‌کنن. استارتاپ‌ها هم به جای اینکه بپذیرن فیچری که ساختن با یه آپدیت پودر میشه، سناریوی جاسوسی هالیوودی می‌نویسن تا از دل این مظلوم‌نمایی، چهار تا کاربر برای اشتراک ماهیانه‌شون تور کنن. استیک مفت رو زدن به بدن، تهش هم لینک ثبت‌نام گذاشته که «بیاین از ما که مظلوم واقع شدیم حمایت کنید!»",
+  "date": "2026-11-05T21:21:17+00:00"
+ },
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/APompliano/status/2118419052808823058",
+   "domain": "x.com",
+   "author": {
+    "name": "Anthony Pompliano 🌪",
+    "handle": "APompliano",
+    "avatar": "https://pbs.twimg.com/profile_images/1547787118243561478/PxWzJo1H_200x200.jpg"
+   },
+   "text": "Let me tell you a story about how unethical Anthropic is.\n\nIn April, the Anthropic team began heavily courting our engineering team to tell them corporate secrets, technical details, and future plans for @cfosilvia.\n\nThey pretended their interest was due to our exploding popularity and accelerating compute usage, but it quickly became apparent that Anthropic was fishing for details on how we built our product and why it was so popular.\n\nThis included the Anthropic team trying to wine-and-dine our engineers, including a infamous steak dinner where someone told our team \"don't worry about it, this is on Dario.\"\n\nOur team was not born yesterday, so we quickly realized what was happening and refused to share sensitive information and technical details with the Anthropic team. \n\nAs we suspected, Anthropic was trying to get information from us, so they could build a competing product. Some people on their team must have a guilty conscious because they messaged us a few days ago to give us \"a heads-up\" that they were launching a competing product.\n\nThankfully, the Silvia engineering team has been aggressively working to get off the frontier models for the last ~ 6 months. That effort has been highly successful, because our compute costs are ~ 97% lower when we use our own model & hardware, the latency is lower, and the accuracy of answers materially increases as well. \n\nThe sad thing for Anthropic is they have now released an inferior product and they had to sell their soul to do it. \n\nThe only thing worse than being a trillion-dollar company that can't beat a 10-person team is being a trillion-dollar company that no one trusts and everyone knows is unethical. \n\nSerious investors continue to choose @cfosilvia over ChatGPT, Claude, and other frontier companies because these products are not optimized to solve the actual user problem.\n\nToday, Anthropic launched a Claude wrapper that is masquerading as a personal finance product. Best of luck to them.\n\nBut I will take the Silvia misfits vs the Anthropic losers any day of the week. \n\nif you want to support people trying to do things the right way, and help investors be more informed, then consider signing up for Silvia today: http://www.silvia.com",
+   "date": 1793905435,
+   "media": [],
+   "links": [
+    "http://www.silvia.com"
+   ],
+   "quote": {
+    "author": {
+     "name": "Claude",
+     "handle": "claudeai",
+     "avatar": "https://pbs.twimg.com/profile_images/1950950107937185792/QOfEjFoJ_200x200.jpg"
+    },
+    "text": "Introducing Personal Finance in Claude, in beta in the US.\n\nConnect the accounts you choose, and Claude answers your money questions in everyday language, from your own balances and transactions. Access is read-only, and Claude can't move, manage, or invest your money.",
+    "date": 1793901635,
+    "media": [
+     {
+      "type": "video",
+      "src": "https://video.twimg.com/amplify_video/2118401044841390080/vid/avc1/1280x720/BnJl4Fn6WCBMB-WT.mp4?tag=29",
+      "poster": "https://pbs.twimg.com/media/HWYUk7ZWwAAcrVe.jpg",
+      "ratio": 0.5624,
+      "duration": 91.166,
+      "gif": false
+     }
+    ],
+    "links": []
+   }
+  },
+  {
+   "kind": "link",
+   "url": "https://www.cfosilvia.com/",
+   "domain": "cfosilvia.com",
+   "title": "Silvia: Your personal AI CFO. Built by investors, for investors.",
+   "description": "Track every account, asset, and position with an AI CFO built for serious investors. Join 20,000+ investors tracking $60B+ in assets.",
+   "image": "https://www.cfosilvia.com/opengraph-image",
+   "site": "Silvia"
+  }
+ ],
+ "article": {
+  "title": "داستان این بنده خدا آنتونی پامپلیانو از اون دراماهای ناب سیلیکون‌ولی شده که آخرش می‌رسه به جار زدن ته اتوبوس برای فروش محصول خودش",
+  "source_title": "Let me tell you a story about how unethical Anthropic is.",
+  "body": [
+   "داستان این بنده خدا آنتونی پامپلیانو از اون دراماهای ناب سیلیکون‌ولی شده که آخرش می‌رسه به جار زدن ته اتوبوس برای فروش محصول خودش. رفیقمون اومده علم شنگه راه انداخته که آره، دار و دسته آنتروپیک مهندسای استارتاپ مالی ما (Silvia) رو دعوت کردن به یه شام استیک اعیانی و زیر گوششون گفتن «راحت باشید، حساب با داریو آمودیئه»، تا زیرزبون بچه‌ها رو بکشن، فرمول سری‌مون رو بدزدن و ابزار مالی کلود رو لانچ کنن! بعد هم با افتخار میگه ما دستشون رو خوندیم، از رو مدل‌های بزرگ پریدیم کنار و با سخت‌افزار خودمون هزینه‌ها رو ۹۷ درصد کم کردیم.",
+   "اما ته ماجرا چیه آبجی و داداش من؟ غول‌های هوش مصنوعی کارشون همینه؛ هر روز یه قابلیت ریز مثل اتصال به حساب بانکی رو می‌بلعن و تبدیل به فیچر پیش‌فرض سیستمشون می‌کنن. استارتاپ‌ها هم به جای اینکه بپذیرن فیچری که ساختن با یه آپدیت پودر میشه، سناریوی جاسوسی هالیوودی می‌نویسن تا از دل این مظلوم‌نمایی، چهار تا کاربر برای اشتراک ماهیانه‌شون تور کنن. استیک مفت رو زدن به بدن، تهش هم لینک ثبت‌نام گذاشته که «بیاین از ما که مظلوم واقع شدیم حمایت کنید!»"
+  ],
+  "why": null,
+  "tags": [
+   "آنتروپیک"
+  ]
+ },
+ "updated": "2026-11-05T21:24:23+00:00"
+}

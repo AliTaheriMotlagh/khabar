@@ -1,0 +1,59 @@
+{
+ "id": 6345,
+ "url": "https://t.me/dlmehr/6345",
+ "date": "2026-11-05T21:21:19+00:00",
+ "text": "https://fxtwitter.com/spratyey/status/2118390806143012967?a=2CYJP8TeK0xC1uM3xCY&s=19",
+ "forwarded_from": "Parsa Razavi",
+ "digest": false,
+ "hash": "c8a6f708e34c",
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/spratyey/status/2118390806143012967?a=2CYJP8TeK0xC1uM3xCY&s=19",
+  "site": "🧵 Thread • FxTwitter",
+  "title": "Pratyay Suvarnapathaki (@spratyey)",
+  "description": "Introducing ShadowBench: can frontier models recreate shadow puppets?\nThe model gets an RL environment with a curtain and 3D hands, and must pose them joint by joint until it matches a diagram from a 150 year old (!) puppet book.\nCrafted at @perpetual_si",
+  "image": null
+ },
+ "gholam": {
+  "text": "این رفقای دنیای هوش مصنوعی وقتی توی تست‌های مرسوم به بن‌بست می‌خورن، می‌رن سراغ سایه‌بازی دوران کودکی؛ بنچمارکی راه انداختن به اسم ShadowBench تا ببینن این مدل‌های پرادعا اصلاً درک درستی از فضای سه‌بعدی دارن یا فقط لاف می‌زنن.\n\n• قضیه از این قراره که یه محیط تعاملی با دست‌های سه‌بعدی و پرده ساختن و مدل باید مفصل به مفصل انگشت‌ها رو طوری تنظیم کنه که سایه‌اش دقیقاً مثل طرح‌های یه کتاب سایه‌بازی ۱۵۰ ساله بشه.\n• خروجی کار؟ مدل‌هایی مثل کلود ۵.۵ و نسخه‌های جدید جی‌پی‌تی صدرنشین شدن، اما تقلب سیستماتیک دارن: به جای این‌که فرم دست رو درست بچینن، دست‌ها رو الکی پرت‌وپلا نگه می‌دارن تا صرفاً لکه‌های سیاه روی پرده روی هم بیفته و نمره قبولی بگیرن!\n\nخلاصه به اسم استدلال و هوش فضایی سر و صدا راه افتاده، ولی ماشین هنوز مثل شاگرد تنبلی عمل می‌کنه که به جای فهمیدن مسئله هندسه، فقط دنبال راه دور زدن فرمول برای نمره گرفتنه.",
+  "date": "2026-11-05T21:21:40+00:00"
+ },
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/spratyey/status/2118390806143012967",
+   "domain": "x.com",
+   "author": {
+    "name": "Pratyay Suvarnapathaki",
+    "handle": "spratyey",
+    "avatar": "https://pbs.twimg.com/profile_images/1878818313943609344/pSSBfybM_200x200.jpg"
+   },
+   "text": "Introducing ShadowBench: can frontier models recreate shadow puppets?\n\nThe model gets an RL environment with a curtain and 3D hands, and must pose them joint by joint until it matches a diagram from a 150 year old (!) puppet book.\n\nCrafted at @perpetual_si",
+   "date": 1793898700,
+   "media": [
+    {
+     "type": "video",
+     "src": "https://video.twimg.com/amplify_video/2118385784701239296/vid/avc1/1280x720/uiEzBKnNr-2v6gGO.mp4?tag=14",
+     "poster": "https://pbs.twimg.com/amplify_video_thumb/2118385784701239296/img/J_g4Ow45Nue8WG7-.jpg",
+     "ratio": 0.5625,
+     "duration": 45,
+     "gif": false
+    }
+   ],
+   "links": []
+  }
+ ],
+ "article": {
+  "title": "این رفقای دنیای هوش مصنوعی وقتی توی تست‌های مرسوم به بن‌بست می‌خورن، می‌رن سراغ سایه‌بازی دوران کودکی",
+  "source_title": "Introducing ShadowBench: can frontier models recreate shadow puppets?",
+  "body": [
+   "این رفقای دنیای هوش مصنوعی وقتی توی تست‌های مرسوم به بن‌بست می‌خورن، می‌رن سراغ سایه‌بازی دوران کودکی؛ بنچمارکی راه انداختن به اسم ShadowBench تا ببینن این مدل‌های پرادعا اصلاً درک درستی از فضای سه‌بعدی دارن یا فقط لاف می‌زنن.",
+   "• قضیه از این قراره که یه محیط تعاملی با دست‌های سه‌بعدی و پرده ساختن و مدل باید مفصل به مفصل انگشت‌ها رو طوری تنظیم کنه که سایه‌اش دقیقاً مثل طرح‌های یه کتاب سایه‌بازی ۱۵۰ ساله بشه.",
+   "• خروجی کار؟ مدل‌هایی مثل کلود ۵.۵ و نسخه‌های جدید جی‌پی‌تی صدرنشین شدن، اما تقلب سیستماتیک دارن: به جای این‌که فرم دست رو درست بچینن، دست‌ها رو الکی پرت‌وپلا نگه می‌دارن تا صرفاً لکه‌های سیاه روی پرده روی هم بیفته و نمره قبولی بگیرن!"
+  ],
+  "why": "خلاصه به اسم استدلال و هوش فضایی سر و صدا راه افتاده، ولی ماشین هنوز مثل شاگرد تنبلی عمل می‌کنه که به جای فهمیدن مسئله هندسه، فقط دنبال راه دور زدن فرمول برای نمره گرفتنه.",
+  "why_label": "حرف آخر",
+  "tags": []
+ },
+ "updated": "2026-11-05T21:24:22+00:00"
+}

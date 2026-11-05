@@ -1,0 +1,62 @@
+{
+ "id": 6346,
+ "url": "https://t.me/dlmehr/6346",
+ "date": "2026-11-05T21:24:09+00:00",
+ "text": "https://fxtwitter.com/dwarkesh_sp/status/2118449808402681911?a=yqMCtB6gUiu21PkbSkc&s=52",
+ "forwarded_from": null,
+ "digest": false,
+ "hash": "46697cac98ff",
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/dwarkesh_sp/status/2118449808402681911?a=yqMCtB6gUiu21PkbSkc&s=52",
+  "site": "🧵 Thread • FxTwitter",
+  "title": "Dwarkesh Patel (@dwarkesh_sp)",
+  "description": "I spent 20,000 dollars in API credits having different AI models play each other at Blood on the Clocktower (a Mafia or Werewolf type social deception game).\nThe results were fascinating. Models have gotten much better over the course of this year at creative…",
+  "image": "https://cdn4.telesco.pe/file/dl0gRfVz2k6TWm7inVqh84WT_D3B4T-Q1A5hZKyOqgaBBYWX2ss2N9mOdXDEHPdwWpgDBDJrMx7wUKre746RDkE-Uo7E8JLBe-Sj6BcwDhu8jHo5rK6bSenhFBA1Fa9RD9YVoKspmqi8INql3-78DjLoTXUThCaBeaUq-i30cWON0NWNIvqMYUmDiR6bZIIdcZIPFwg2RdK4QQ3dnbk-hVfcvM4hMneR5sZcAm5pRZYk765VGGDszOJ0qaA34OIrEs7--FMSizY11PTuGjmnSt7uipESbiOpaMfAfB8NUyhkmgL2eF6_gj6sbTzmd82Ihmvt_FKN0ac-KJOK_9l_Aw.jpg"
+ },
+ "gholam": null,
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/dwarkesh_sp/status/2118449808402681911",
+   "domain": "x.com",
+   "author": {
+    "name": "Dwarkesh Patel",
+    "handle": "dwarkesh_sp",
+    "avatar": "https://pbs.twimg.com/profile_images/1925260306684813315/NjNQZmhZ_200x200.jpg"
+   },
+   "text": "I spent 20,000 dollars in API credits having different AI models play each other at Blood on the Clocktower (a Mafia or Werewolf type social deception game).\n\nThe results were fascinating. Models have gotten much better over the course of this year at creative on-the-spot scheming and bluffing, and also at reasoning as a team to break apart these underground conspiracies.\n\nI go through some of the most standout games these AIs played in this video. The new models are getting pretty good.  If my friends pulled off some of these moves while we were playing, I’d give them a fist bump.\n\nFwiw, OpenAI’s newer models are much better than Anthropic’s at this game.\n\nYou can see the full benchmark at the website, and I’ve also made it so that you and your friends can play again the AIs: http://clocktowerbench.com",
+   "date": 1793912767,
+   "media": [
+    {
+     "type": "video",
+     "src": "https://video.twimg.com/amplify_video/2118447221465100289/vid/avc1/1280x720/YseAeUQJfgOq4rD8.mp4?tag=29",
+     "poster": "https://pbs.twimg.com/amplify_video_thumb/2118447221465100289/img/kZJ3B0O-2bK5hfc_.jpg",
+     "ratio": 0.5625,
+     "duration": 1093.674,
+     "gif": false
+    }
+   ],
+   "links": [
+    "http://clocktowerbench.com"
+   ]
+  },
+  {
+   "kind": "link",
+   "url": "https://clocktowerbench.com/",
+   "domain": "clocktowerbench.com",
+   "title": "Clocktower Bench: AI models playing Blood on the Clocktower",
+   "description": "Frontier AI models play Blood on the Clocktower against each other. One model plays the town, another the Demon's team. Ratings, every game's log, and a table where you can play them.",
+   "image": null,
+   "site": "clocktowerbench.com"
+  }
+ ],
+ "article": {
+  "title": "I spent 20,000 dollars in API credits having different AI models play each other at Blood on the Clocktower (a Mafia or Werewolf type…",
+  "source_title": null,
+  "body": [],
+  "why": null,
+  "tags": []
+ },
+ "updated": "2026-11-05T21:24:22+00:00"
+}
