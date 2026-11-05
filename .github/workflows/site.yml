@@ -125,10 +125,14 @@ jobs:
       url: ${{ steps.deployment.outputs.page_url || steps.retry.outputs.page_url }}
     steps:
       # GitHub Pages now and then sits in "updating_pages" until deploy-pages times out (10 min) and cancels it; the
-      # same artifact goes through on a second try, so retry once before failing the run.
+      # same artifact usually goes through on a second try, so retry once. Pages is only the mirror (Vercel is primary)
+      # and the next crawl redeploys, so a second timeout is a warning, not a failed run (and a failure email).
       - id: deployment
         continue-on-error: true
         uses: actions/deploy-pages@v4
       - id: retry
         if: steps.deployment.outcome == 'failure'
+        continue-on-error: true
         uses: actions/deploy-pages@v4
+      - if: steps.retry.outcome == 'failure'
+        run: echo "::warning::GitHub Pages stayed in updating_pages twice; the mirror updates on the next deploy."
