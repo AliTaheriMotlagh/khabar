@@ -1,0 +1,71 @@
+{
+ "id": 6337,
+ "url": "https://t.me/dlmehr/6337",
+ "date": "2026-11-05T20:06:06+00:00",
+ "text": "https://fxtwitter.com/andrewcurran_/status/2118420279882092681?a=SkdWEudpQY_WH6tMJI8&s=52",
+ "forwarded_from": null,
+ "digest": false,
+ "hash": "448913ca96f5",
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/andrewcurran_/status/2118420279882092681?a=SkdWEudpQY_WH6tMJI8&s=52",
+  "site": "🧵 Thread • FxTwitter",
+  "title": "Andrew Curran (@AndrewCurran_)",
+  "description": "METR says Anthropic has probably hit the 2x Responsible Scaling Policy acceleration threshold, and may now be running as high as 3x! 'We guess that a majority (perhaps ≈80%) of the current (October 2026) acceleration is due to AI.'\nQuoting METR (@METR_Evals)…",
+  "image": "https://cdn4.telesco.pe/file/YpEM_Z4M5-NF0robsUnjyQcu562AviBbXfrqLfVIVwTvbM_YRTfTZT54CBOnro1trZd9maS_Y754fWYBjzGyty2kHcrnM0to-dzbdLc1tENZZLARDb3Pdw8H07kZInNtAx7e6vB0ZYWHtm8daJb9fJtEt0aV_Zn09hgpNm9vzbbFhRWgGBRbj91fA-xDuEDm-b0JgOybZhTdu8KeENyRIhfP1v-Lhy1uDJkJLwMdcCOZcwAXKiIbTmQa2HxgUIqADjjARBFTDZ0oQ9-VmF4ipOHpGrFEu7Udko6Zwmc3j2SeZv8qB9klLivP6e_rzuO6emgCqmfxaoAEADKdTZCBng.jpg"
+ },
+ "gholam": {
+  "text": "قصهٔ پر سر و صدای «هوش مصنوعی داره خودش، خودشو ارتقا میده» دوباره سر زبون‌ها افتاده؛ موسسه ارزیابی METR مدعی شده سرعت پیشرفت مدل‌های انتروپیک تا ۳ برابر شتاب گرفته و ادعا می‌کنن نزدیک به ۸۰ درصد این جهش، کارِ خودِ الگوریتم‌هاست نه افزایش سخت‌افزار و قدرت پردازشی! \n\nاما اگه پردهٔ این ادعاهای قلمبه‌سلمبه رو کنار بزنیم، کف ماجرا چند تا نکته خوابیده:\n\n• شاخص‌های بنچمارک تو یه سال اخیر ۱.۹ برابر شتاب گرفتن، ولی خود ارزیاب‌ها رسماً اعلام کردن سرِ همین عدد و رقم‌ها تو تیمشون کلی اختلاف‌نظر و شک و تردید هست.\n• شاهکار ماجرا اینجاست که انتروپیک بخش اعظم داده‌ها و مدرک‌های اصلی رو به بهانهٔ «اطلاعات محرمانه» ||سانسور و خط‌خطی کرده|| و تحویل داده.\n• اون رقم درشت «۸۰ درصد سهم هوش مصنوعی» هم طبق متن خود گزارش، صرفاً یه حدس دست‌بالاست، نه فکت ثابت‌شده با متر و معیار مهندسی.\n\nتا وقتی در آزمایشگاه تخته باشه و سندها سانسور شده بیرون بیاد، این حرف‌ها بیشتر بوی بازارگرمی برای حفظ جو هیجان و جذب سرمایه می‌ده تا رسیدن به نقطهٔ عطف واقعی تکنولوژی.",
+  "date": "2026-11-05T20:06:31+00:00"
+ },
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/AndrewCurran_/status/2118420279882092681",
+   "domain": "x.com",
+   "author": {
+    "name": "Andrew Curran",
+    "handle": "AndrewCurran_",
+    "avatar": "https://pbs.twimg.com/profile_images/1596945208058744833/_X3LT7fb_200x200.jpg"
+   },
+   "text": "METR says Anthropic has probably hit the 2x Responsible Scaling Policy acceleration threshold, and may now be running as high as 3x! 'We guess that a majority (perhaps ≈80%) of the current (October 2026) acceleration is due to AI.'",
+   "date": 1793905727,
+   "media": [
+    {
+     "type": "image",
+     "src": "https://pbs.twimg.com/media/HWYkBLVaYAAmbLt.jpg?name=orig",
+     "ratio": 0.6926
+    }
+   ],
+   "links": [],
+   "quote": {
+    "author": {
+     "name": "METR",
+     "handle": "METR_Evals",
+     "avatar": "https://pbs.twimg.com/profile_images/2021827383431757824/AeVvT0rU_200x200.jpg"
+    },
+    "text": "Since August, a team within METR has worked with internal Anthropic information to assess whether AI itself is accelerating AI development.\n\nWe are now publishing a report summarizing the results of this risk assessment.",
+    "date": 1793903797,
+    "media": [],
+    "links": []
+   }
+  }
+ ],
+ "article": {
+  "title": "قصهٔ پر سر و صدای «هوش مصنوعی داره خودش، خودشو ارتقا میده» دوباره سر زبون‌ها افتاده",
+  "source_title": "METR says Anthropic has probably hit the 2x Responsible Scaling Policy acceleration threshold, and may now be running as high as 3x! 'We…",
+  "body": [
+   "قصهٔ پر سر و صدای «هوش مصنوعی داره خودش، خودشو ارتقا میده» دوباره سر زبون‌ها افتاده؛ موسسه ارزیابی METR مدعی شده سرعت پیشرفت مدل‌های انتروپیک تا ۳ برابر شتاب گرفته و ادعا می‌کنن نزدیک به ۸۰ درصد این جهش، کارِ خودِ الگوریتم‌هاست نه افزایش سخت‌افزار و قدرت پردازشی!",
+   "اما اگه پردهٔ این ادعاهای قلمبه‌سلمبه رو کنار بزنیم، کف ماجرا چند تا نکته خوابیده:",
+   "• شاخص‌های بنچمارک تو یه سال اخیر ۱.۹ برابر شتاب گرفتن، ولی خود ارزیاب‌ها رسماً اعلام کردن سرِ همین عدد و رقم‌ها تو تیمشون کلی اختلاف‌نظر و شک و تردید هست.",
+   "• شاهکار ماجرا اینجاست که انتروپیک بخش اعظم داده‌ها و مدرک‌های اصلی رو به بهانهٔ «اطلاعات محرمانه» ||سانسور و خط‌خطی کرده|| و تحویل داده.",
+   "• اون رقم درشت «۸۰ درصد سهم هوش مصنوعی» هم طبق متن خود گزارش، صرفاً یه حدس دست‌بالاست، نه فکت ثابت‌شده با متر و معیار مهندسی."
+  ],
+  "why": "تا وقتی در آزمایشگاه تخته باشه و سندها سانسور شده بیرون بیاد، این حرف‌ها بیشتر بوی بازارگرمی برای حفظ جو هیجان و جذب سرمایه می‌ده تا رسیدن به نقطهٔ عطف واقعی تکنولوژی.",
+  "why_label": "حرف آخر",
+  "tags": [
+   "آنتروپیک"
+  ]
+ },
+ "updated": "2026-11-05T20:10:32+00:00"
+}
