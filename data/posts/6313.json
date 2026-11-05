@@ -1,0 +1,97 @@
+{
+ "id": 6313,
+ "url": "https://t.me/dlmehr/6313",
+ "date": "2026-11-05T03:28:59+00:00",
+ "text": "https://fxtwitter.com/talaei_shayan/status/2118170013333066181?a=JWTwcfDM_xkz0Mo2sZ8&s=52",
+ "forwarded_from": null,
+ "digest": false,
+ "hash": "4401f3a792f8",
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/talaei_shayan/status/2118170013333066181?a=JWTwcfDM_xkz0Mo2sZ8&s=52",
+  "site": "FxTwitter",
+  "title": "Shayan Talaei (@talaei_shayan)",
+  "description": "I made a 3D visualization of Ripple-65B Preview's architecture! Check it out here (with an easter egg): https://shayantalaei.com/ripple-65b/\nRipple is a dense model with 80 layers and a width of 5,120, so its aspect ratio is 64. That makes it very deep for…",
+  "image": "https://cdn4.telesco.pe/file/m1rJb8KwcmMexVptaXuurnQVeRqAjuAnKBJAnyo10qk0jM31q2Sza4B5ermgZvYyeqBi4PnfRPBStqfjDdTGUXEFCrvlOscndJKAuqe45VrYghLn6XL4hVeOCnu4Z--Ii8GmI0DgHfPxcRG1mwnqnYDIMIxVw58s8RWhWzPW0ZSfeY92ShrXmt2AFaTktbhyRbHa6bVfHj8Yj9KjbmBq8wjXjqbmVwU2uDL5mRXe-bUAUl8KX6M2b3-dG00yUUcfeJayUNL36KXIr2rIp7-_-WVBjEJqgTQIgRGF292CaYzR3xcPBh5jjx3Yv34yjsLlAXx09C-nl4yGEikEq4NjXA.jpg"
+ },
+ "gholam": {
+  "text": "بچه‌های تیم ریکرسیو با دست‌فرمون شایان طلایی یه مدل ۶۵ میلیاردی دادن بیرون به اسم Ripple-65B که ادعا می‌کنه تو کدنویسی ایجنتی شاخ غول‌های چندصد میلیاردی رو شکسته، اما اصل قصه زیر کاپوت و معماری متفاوتیه که سوار کردن:\n\n• با ۸۰ تا لایه و عرض ۵,۱۲۰، نسبت ابعادش شده ۶۴؛ یعنی با یه ساختار به‌شدت عمیق و لاغر طرفیم که روی کاغذ، اطلاعات توکن اولیه وسط این همه لایه شسته و رقیق می‌شه.\n• اینا به جای اینکه مثل DeepSeek یا Kimi دست به ساختار اصلی مسیر پس‌ماند (Residual Stream) بزنن، تکنیک Value Residuals رو پیاده کردن؛ یعنی امبدینگ توکن اصلی رو مستقیماً با وزن‌های یادگرفتنی به مقادیر اتنشن (Attention Values) هر لایه تزریق می‌کنن تا رد پای ورودی گم نشه.\n• طبق ادعای خودشون، همین حقه معماری باعث شده مدل با فقط ۶۵ میلیارد پارامتر دنس، مدل‌های فیل‌پیکری مثل Muse Spark-816B و Inkling-975B رو تو تسک‌های برنامه‌نویسی ایجنتی جا بذاره و پرچم‌دار متن‌بازهای آمریکایی بشه.\n\nطراحی قشنگه و مهندسی پشتش تمیزه رفقا، اما باید دید این عمق وحشتناک لایه‌ها موقع اجرای تجاری و زیر بار، تو سرعت تولید توکن تاوان حافظه نمی‌ده یا نه.",
+  "date": "2026-11-05T03:29:24+00:00"
+ },
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/talaei_shayan/status/2118170013333066181",
+   "domain": "x.com",
+   "author": {
+    "name": "Shayan Talaei",
+    "handle": "talaei_shayan",
+    "avatar": "https://pbs.twimg.com/profile_images/2098659305532858368/Xy-b_xW5_200x200.jpg"
+   },
+   "text": "I made a 3D visualization of Ripple-65B Preview's architecture! Check it out here (with an easter egg): https://shayantalaei.com/ripple-65b/\n\nRipple is a dense model with 80 layers and a width of 5,120, so its aspect ratio is 64. That makes it very deep for its width. In a model this deep, each layer keeps adding its output to the residual stream, and by the deeper layers the original token information gets diluted.\n\nMost recent architectures handle this by changing the residual stream itself, like DeepSeek's manifold-constrained hyper-connections (mHC) or Kimi's Attention Residuals. We went with value residuals instead. Every layer mixes the original token embedding back into its attention values, and a learned weight in each layer decides how much.",
+   "date": 1793846059,
+   "media": [
+    {
+     "type": "video",
+     "src": "https://video.twimg.com/amplify_video/2118169199734599680/vid/avc1/1280x720/8z0nJ5DRX10nRPaR.mp4?tag=29",
+     "poster": "https://pbs.twimg.com/amplify_video_thumb/2118169199734599680/img/1gAqTwf-E5td-sVo.jpg",
+     "ratio": 0.5625,
+     "duration": 20,
+     "gif": false
+    }
+   ],
+   "links": [
+    "https://shayantalaei.com/ripple-65b/"
+   ],
+   "quote": {
+    "author": {
+     "name": "Ricursive Intelligence",
+     "handle": "RicursiveAI",
+     "avatar": "https://pbs.twimg.com/profile_images/1995674420178980864/7dWOHGam_200x200.jpg"
+    },
+    "text": "Today we release Ripple-65B Preview, our 65B dense LLM we pretrained from scratch.\n\nRipple sets a new state-of-the-art for U.S. open-weight models in agentic coding tasks, surpassing significantly larger models including Muse Spark Open-816B, Beam-501B, Inkling-975B, and Nemotron 3 Ultra-550B.\n\nLearn more: https://www.ricursive.com/ripple",
+    "date": 1793816675,
+    "media": [
+     {
+      "type": "video",
+      "src": "https://video.twimg.com/amplify_video/2118013573670793217/vid/avc1/1280x720/oxuRElTPx5WECTXF.mp4?tag=29",
+      "poster": "https://pbs.twimg.com/amplify_video_thumb/2118013573670793217/img/RNjAFnyHuXndpo2P.jpg",
+      "ratio": 0.5625,
+      "duration": 74.176,
+      "gif": false
+     }
+    ],
+    "links": [
+     "https://www.ricursive.com/ripple"
+    ]
+   }
+  },
+  {
+   "kind": "link",
+   "url": "https://shayantalaei.com/ripple-65b/",
+   "domain": "shayantalaei.com",
+   "title": "Inside Ripple-65B Preview",
+   "description": null,
+   "image": null,
+   "site": "shayantalaei.com"
+  }
+ ],
+ "article": {
+  "title": "بچه‌های تیم ریکرسیو با دست‌فرمون شایان طلایی یه مدل ۶۵ میلیاردی دادن بیرون به اسم Ripple-65B که ادعا می‌کنه تو کدنویسی ایجنتی شاخ غول‌های چندصد میلیاردی رو شکسته، اما اصل قصه زیر کاپوت و معماری متفاوتیه که سوار کردن:",
+  "source_title": "I made a 3D visualization of Ripple-65B Preview's architecture! Check it out here (with an easter egg):",
+  "body": [
+   "بچه‌های تیم ریکرسیو با دست‌فرمون شایان طلایی یه مدل ۶۵ میلیاردی دادن بیرون به اسم Ripple-65B که ادعا می‌کنه تو کدنویسی ایجنتی شاخ غول‌های چندصد میلیاردی رو شکسته، اما اصل قصه زیر کاپوت و معماری متفاوتیه که سوار کردن:",
+   "• با ۸۰ تا لایه و عرض ۵,۱۲۰، نسبت ابعادش شده ۶۴؛ یعنی با یه ساختار به‌شدت عمیق و لاغر طرفیم که روی کاغذ، اطلاعات توکن اولیه وسط این همه لایه شسته و رقیق می‌شه.",
+   "• اینا به جای اینکه مثل DeepSeek یا Kimi دست به ساختار اصلی مسیر پس‌ماند (Residual Stream) بزنن، تکنیک Value Residuals رو پیاده کردن؛ یعنی امبدینگ توکن اصلی رو مستقیماً با وزن‌های یادگرفتنی به مقادیر اتنشن (Attention Values) هر لایه تزریق می‌کنن تا رد پای ورودی گم نشه.",
+   "• طبق ادعای خودشون، همین حقه معماری باعث شده مدل با فقط ۶۵ میلیارد پارامتر دنس، مدل‌های فیل‌پیکری مثل Muse Spark-816B و Inkling-975B رو تو تسک‌های برنامه‌نویسی ایجنتی جا بذاره و پرچم‌دار متن‌بازهای آمریکایی بشه.",
+   "طراحی قشنگه و مهندسی پشتش تمیزه رفقا، اما باید دید این عمق وحشتناک لایه‌ها موقع اجرای تجاری و زیر بار، تو سرعت تولید توکن تاوان حافظه نمی‌ده یا نه."
+  ],
+  "why": null,
+  "tags": [
+   "کدنویسی",
+   "ایجنت",
+   "چین"
+  ]
+ },
+ "updated": "2026-11-05T03:30:40+00:00"
+}
