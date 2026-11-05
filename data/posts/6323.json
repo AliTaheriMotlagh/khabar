@@ -1,0 +1,73 @@
+{
+ "id": 6323,
+ "url": "https://t.me/dlmehr/6323",
+ "date": "2026-11-05T16:26:55+00:00",
+ "text": "https://fxtwitter.com/kuchaev/status/2118367733968757218?a=Zc6p07qVSbtOWqKJrzo&s=52",
+ "forwarded_from": null,
+ "digest": false,
+ "hash": "0fdf984d1efc",
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/kuchaev/status/2118367733968757218?a=Zc6p07qVSbtOWqKJrzo&s=52",
+  "site": "FxTwitter · rlhfbook.com",
+  "title": "Oleksii Kuchaiev (@kuchaev)",
+  "description": "If you are preparing for interview with post training team, going through Nathan’s book is a good use of your time https://rlhfbook.com\nQuoting Nathan Lambert (@natolambert)\nI regularly hear from people that my post-training book/writing has helped them…",
+  "image": "https://cdn4.telesco.pe/file/S79ihXdQvim3DAQpcAQi6qyBrCOBBeO-WPdHZWeVx52gdxdLezVLK8jisPE_exHnQ2GGnyYdn71MfoL7eeBmmDexZkf92VwkMnGxfF5s7wVEN-6DOgxaiSxP951GZdzXJUkruA1AhJsEsfP_OK6shjwBy_Bl8b9cYLPp1R0yb4IwHCyPAeK5wWt7w4HiHlhXzLXk9c6sqJhGEehOCfy1-xUBbJRgrqlPujxdZzazpfGh36z8zMKXL75EZLbcQ6rRYj45P4NN-1VW30h8du1BUkRXwkJCGzbiMOBHElkmHif_pYhs56thJ2IyS2qjfxCfs2L21NIVs1b2M32P97J3AQ.jpg"
+ },
+ "gholam": {
+  "text": "اگر این روزها پیگیر مصاحبه‌های فنی و ورود به تیم‌های گردن‌کلفت هوش مصنوعی هستید، این یکی از اون توصیه‌های الماس و به‌دردبخور بازاره. \n\nالکسی کوچایف (از مهره‌های کلیدی انویدیا) صراحتاً دست گذاشته روی کتاب نیتن لمبرت برای آمادگی مصاحبه‌های تخصصی تیم‌های Post-Training:\n\n• کل صنعت هوش مصنوعی از تب و تاب شعاریِ «پیش‌تمرین» گذشته و بازی اصلی الان تو زمین Post-Training، هم‌سوسازی و RLHF رقم می‌خوره؛ همون بخشی که مدل‌های خام رو واقعاً کار راه‌انداز می‌کنه.\n• کتاب نیتن لمبرت (rlhfbook.com) دقیقاً نقطه مقابل محتواهای زرد و پکیج‌فروشیه؛ تمرکزش روی منطق ریاضی و درک شهودی از نحوه آموزش مدل‌هاست، چیزی که عموم رو جذب نمی‌کنه ولی درهای لَب‌های بزرگ رو مستقیم براتون باز می‌کنه.\n\nتو دورانی که همه با دو تا پرامپت زدن ادعای متخصص بودن دارن، نون اصلی هنوز توی بلد بودنِ پیچ‌ومهره‌های زیر کاپوت این غول‌هاست.",
+  "date": "2026-11-05T16:27:16+00:00"
+ },
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/kuchaev/status/2118367733968757218",
+   "domain": "x.com",
+   "author": {
+    "name": "Oleksii Kuchaiev",
+    "handle": "kuchaev",
+    "avatar": "https://pbs.twimg.com/profile_images/1313262207543599104/Ly0o0-Uv_200x200.jpg"
+   },
+   "text": "If you are preparing for interview with post training team, going through Nathan’s book is a good use of your time https://rlhfbook.com",
+   "date": 1793893199,
+   "media": [],
+   "links": [
+    "https://rlhfbook.com"
+   ],
+   "quote": {
+    "author": {
+     "name": "Nathan Lambert",
+     "handle": "natolambert",
+     "avatar": "https://pbs.twimg.com/profile_images/2051823244832083968/Nr0pT8-V_200x200.jpg"
+    },
+    "text": "I regularly hear from people that my post-training book/writing has helped them get a job at labs by focusing on material that develops intuitions for how training methods work. It's very validating, because this type of \"idea/math heavy\" writing doesn't really sell many books. It's rewarding the right people who put the effort into learning. I'm happy I made the time for it.",
+    "date": 1793892067,
+    "media": [],
+    "links": []
+   }
+  },
+  {
+   "kind": "link",
+   "url": "https://rlhfbook.com",
+   "domain": "rlhfbook.com",
+   "title": "RLHF Book: Reinforcement Learning from Human Feedback and LLM Post-Training",
+   "description": "A free online book and course on RLHF, preference tuning, reward models, RLVR, and post-training language models.",
+   "image": "https://rlhfbook.com/assets/rlhf-book-share.png",
+   "site": "RLHF Book"
+  }
+ ],
+ "article": {
+  "title": "اگر این روزها پیگیر مصاحبه‌های فنی و ورود به تیم‌های گردن‌کلفت هوش مصنوعی هستید، این یکی از اون توصیه‌های الماس و به‌دردبخور بازاره",
+  "source_title": "If you are preparing for interview with post training team, going through Nathan’s book is a good use of your time",
+  "body": [
+   "اگر این روزها پیگیر مصاحبه‌های فنی و ورود به تیم‌های گردن‌کلفت هوش مصنوعی هستید، این یکی از اون توصیه‌های الماس و به‌دردبخور بازاره.",
+   "الکسی کوچایف (از مهره‌های کلیدی انویدیا) صراحتاً دست گذاشته روی کتاب نیتن لمبرت برای آمادگی مصاحبه‌های تخصصی تیم‌های Post-Training:",
+   "• کل صنعت هوش مصنوعی از تب و تاب شعاریِ «پیش‌تمرین» گذشته و بازی اصلی الان تو زمین Post-Training، هم‌سوسازی و RLHF رقم می‌خوره؛ همون بخشی که مدل‌های خام رو واقعاً کار راه‌انداز می‌کنه.",
+   "• کتاب نیتن لمبرت (rlhfbook.com) دقیقاً نقطه مقابل محتواهای زرد و پکیج‌فروشیه؛ تمرکزش روی منطق ریاضی و درک شهودی از نحوه آموزش مدل‌هاست، چیزی که عموم رو جذب نمی‌کنه ولی درهای لَب‌های بزرگ رو مستقیم براتون باز می‌کنه."
+  ],
+  "why": "تو دورانی که همه با دو تا پرامپت زدن ادعای متخصص بودن دارن، نون اصلی هنوز توی بلد بودنِ پیچ‌ومهره‌های زیر کاپوت این غول‌هاست.",
+  "why_label": "حرف آخر",
+  "tags": []
+ },
+ "updated": "2026-11-05T16:30:42+00:00"
+}
