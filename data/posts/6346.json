@@ -14,7 +14,10 @@
   "description": "I spent 20,000 dollars in API credits having different AI models play each other at Blood on the Clocktower (a Mafia or Werewolf type social deception game).\nThe results were fascinating. Models have gotten much better over the course of this year at creative…",
   "image": "https://cdn4.telesco.pe/file/dl0gRfVz2k6TWm7inVqh84WT_D3B4T-Q1A5hZKyOqgaBBYWX2ss2N9mOdXDEHPdwWpgDBDJrMx7wUKre746RDkE-Uo7E8JLBe-Sj6BcwDhu8jHo5rK6bSenhFBA1Fa9RD9YVoKspmqi8INql3-78DjLoTXUThCaBeaUq-i30cWON0NWNIvqMYUmDiR6bZIIdcZIPFwg2RdK4QQ3dnbk-hVfcvM4hMneR5sZcAm5pRZYk765VGGDszOJ0qaA34OIrEs7--FMSizY11PTuGjmnSt7uipESbiOpaMfAfB8NUyhkmgL2eF6_gj6sbTzmd82Ihmvt_FKN0ac-KJOK_9l_Aw.jpg"
  },
- "gholam": null,
+ "gholam": {
+  "text": "دوارکش پاتل اومده بیست هزار دلار اعتبار API سوزونده تا مدل‌های مختلف هوش مصنوعی رو بندازه به جون هم تو بازی «Blood on the Clocktower» (یه چیزی تو مایه‌های مافیا اما چند لول کثیف‌تر و پیچیده‌تر)، صرفاً واسه اینکه ببینه کدومشون تو خالی‌بندی و نارو زدن اوستاتره.\n\n• خرج قضیه ||۲۰,۰۰۰ دلار|| پول توکن بوده؛ نتیجه نشون میده مدل‌ها تو همین یک سال اخیر توی بلوف زدنِ در لحظه، چیدن نقشه‌های شیطانی و حتی کار تیمی برای خنثی کردن پاپوش‌های زیرزمینی جهش عجیبی داشتن.\n• مدل‌های جدید OpenAI خیلی بهتر از مدل‌های Anthropic بازی کردن؛ دلیل فنی و جالبش هم واضحه: کلود رو اون‌قدر با تربیت سفت‌وسخت و کدهای اخلاقی پاستوریزه بار آوردن که وقتی سناریو به دروغِ مصلحتی و کلک کشیدن می‌رسه، گیرپاژ می‌کنه.\n• کل این سیستم رو هم تبدیل کرده به یه بنچمارک باز (ClocktowerBench) که رفقا بتونن خودشون برن با این الگوریتم‌های گرگ‌بارون‌دیده دست‌وپنجه نرم کنن.\n\nوقتی سیستمی یاد بگیره رفیقش رو با مهارت دور بزنه و واسه برد توطئه بچینه، یعنی دوران سادگی هوش مصنوعی رسماً سر اومده و بازیِ جدید تازه داره شروع میشه.",
+  "date": "2026-11-05T21:24:28+00:00"
+ },
  "links": [
   {
    "kind": "tweet",
@@ -52,11 +55,20 @@
   }
  ],
  "article": {
-  "title": "I spent 20,000 dollars in API credits having different AI models play each other at Blood on the Clocktower (a Mafia or Werewolf type…",
-  "source_title": null,
-  "body": [],
-  "why": null,
-  "tags": []
+  "title": "دوارکش پاتل اومده بیست هزار دلار اعتبار API سوزونده تا مدل‌های مختلف هوش مصنوعی رو بندازه به جون هم تو بازی «Blood on the Clocktower» (یه چیزی تو مایه‌های مافیا اما چند لول کثیف‌تر و پیچیده‌تر)، صرفاً واسه اینکه ببینه کدومشون تو خالی‌بندی و نارو زدن اوستاتره",
+  "source_title": "I spent 20,000 dollars in API credits having different AI models play each other at Blood on the Clocktower (a Mafia or Werewolf type…",
+  "body": [
+   "دوارکش پاتل اومده بیست هزار دلار اعتبار API سوزونده تا مدل‌های مختلف هوش مصنوعی رو بندازه به جون هم تو بازی «Blood on the Clocktower» (یه چیزی تو مایه‌های مافیا اما چند لول کثیف‌تر و پیچیده‌تر)، صرفاً واسه اینکه ببینه کدومشون تو خالی‌بندی و نارو زدن اوستاتره.",
+   "• خرج قضیه ||۲۰,۰۰۰ دلار|| پول توکن بوده؛ نتیجه نشون میده مدل‌ها تو همین یک سال اخیر توی بلوف زدنِ در لحظه، چیدن نقشه‌های شیطانی و حتی کار تیمی برای خنثی کردن پاپوش‌های زیرزمینی جهش عجیبی داشتن.",
+   "• مدل‌های جدید OpenAI خیلی بهتر از مدل‌های Anthropic بازی کردن؛ دلیل فنی و جالبش هم واضحه: کلود رو اون‌قدر با تربیت سفت‌وسخت و کدهای اخلاقی پاستوریزه بار آوردن که وقتی سناریو به دروغِ مصلحتی و کلک کشیدن می‌رسه، گیرپاژ می‌کنه.",
+   "• کل این سیستم رو هم تبدیل کرده به یه بنچمارک باز (ClocktowerBench) که رفقا بتونن خودشون برن با این الگوریتم‌های گرگ‌بارون‌دیده دست‌وپنجه نرم کنن."
+  ],
+  "why": "وقتی سیستمی یاد بگیره رفیقش رو با مهارت دور بزنه و واسه برد توطئه بچینه، یعنی دوران سادگی هوش مصنوعی رسماً سر اومده و بازیِ جدید تازه داره شروع میشه.",
+  "why_label": "حرف آخر",
+  "tags": [
+   "آنتروپیک",
+   "اوپن‌ای‌آی"
+  ]
  },
- "updated": "2026-11-05T21:24:22+00:00"
+ "updated": "2026-11-05T21:28:26+00:00"
 }
