@@ -1,0 +1,94 @@
+{
+ "id": 6333,
+ "url": "https://t.me/dlmehr/6333",
+ "date": "2026-11-05T18:16:11+00:00",
+ "text": "https://fxtwitter.com/ayoships/status/2118388273571901655?a=VPuE8PCfkgwtP6-1lsQ&s=52",
+ "forwarded_from": null,
+ "digest": false,
+ "hash": "b5258def963c",
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/ayoships/status/2118388273571901655?a=VPuE8PCfkgwtP6-1lsQ&s=52",
+  "site": "FxTwitter",
+  "title": "Ayo O (@ayoships)",
+  "description": "TikTok also scores how attractive you are, guesses your age/gender, and calculates your mood with some of these on-device models.\nI pulled them out of the app, so you can try it directly here: https://ayoships.com/tools/tiktok-face\nI ported them from ByteNN…",
+  "image": "https://cdn4.telesco.pe/file/rg7xq2HveNdxqtUS2ZwPqIy6oUDtDCEOqV7q9bw74nVCQfEBtH--E1E4rkFKAo-em4qE6C73BzFbJJzb_2CnIu7tiI9lQ88pK3LGoe9aqoIyxoWMyRXigShWm11K6OxQe-dXVGdiqGEL4Hk14etfllhSK9toQFWZ89eg3k8aof706nU1qPD0XzGyNiboiASxnumKDN2XFLPciJnU2oVtRdopKNvVJwEDEp7k8eHoCJw2YpoYFs7_zDXo7RtCL9H9YIGX3ePTtt3QyXn0Tl2vi6OsRQxModA1hhn958UucIHIl_p1eWBSrGthSe85O3AHtSQQJOKBMOSSJrlFbt6W1A.jpg"
+ },
+ "gholam": {
+  "text": "رفقا فکر می‌کردید تیک‌تاک فقط یه مشت ویدیو رقص و سرگرمیه؟ یه برنامه‌نویس دل و روده اپلیکیشن رو کشیده بیرون و مشخص شده این پلتفرم بی‌سر‌و‌صدا، قیافه و میزان جذابیت چهره‌تون رو روی خود گوشی نمره‌گذاری می‌کنه.\n\n• طرف مدل‌های سبک و آن‌دیوایس بایت‌دنس (ByteNN) رو مهندسی معکوس کرده و آورده روی وب؛ مدلی که تو پس‌زمینه سن، جنسیت، حس‌وحال صورت و حتی نمره «جذابیت ظاهری» رو تخمین می‌زنه.\n• نکته کثیف ماجرا سوگیری شدید الگوریتمه؛ بررسی‌ها نشون داده هوش مصنوعی تیک‌تاک به طرز محسوسی به پوست‌های تیره‌تر و سن‌های بالاتر نمره پایین‌تری میده.\n\nته قصه اینه که پشت ویترین خوش‌رنگ و لعاب هوش مصنوعی، یه ناظر نامرئی نشسته که با استانداردها و تعصبات کالیبره‌نشده تعیین می‌کنه کی بیاد بالا و تصویر کی توی فید بقیه دفن بشه.",
+  "date": "2026-11-05T18:16:39+00:00"
+ },
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/ayoships/status/2118388273571901655",
+   "domain": "x.com",
+   "author": {
+    "name": "Ayo O",
+    "handle": "ayoships",
+    "avatar": "https://pbs.twimg.com/profile_images/1916782132187549696/PJyS5COB_200x200.jpg"
+   },
+   "text": "TikTok also scores how attractive you are, guesses your age/gender, and calculates your mood with some of these on-device models.\n\nI pulled them out of the app, so you can try it directly here: https://ayoships.com/tools/tiktok-face\n\nI ported them from ByteNN so they run in your browser. My tests showed significant negative bias against darker skin and older faces.",
+   "date": 1793898096,
+   "media": [
+    {
+     "type": "image",
+     "src": "https://pbs.twimg.com/media/HWYG6GhaYAAYZlq.jpg?name=orig",
+     "ratio": 1.1429
+    },
+    {
+     "type": "image",
+     "src": "https://pbs.twimg.com/media/HWYG6Gqb0AEW4ms.jpg?name=orig",
+     "ratio": 1.1429
+    }
+   ],
+   "links": [
+    "https://ayoships.com/tools/tiktok-face"
+   ],
+   "quote": {
+    "author": {
+     "name": "Ayo O",
+     "handle": "ayoships",
+     "avatar": "https://pbs.twimg.com/profile_images/1916782132187549696/PJyS5COB_200x200.jpg"
+    },
+    "text": "I reverse engineered tiktok",
+    "date": 1793722241,
+    "media": [
+     {
+      "type": "video",
+      "src": "https://video.twimg.com/amplify_video/2117650655787778048/vid/avc1/720x1280/TuObZ9Jan-oUF_ie.mp4?tag=29",
+      "poster": "https://pbs.twimg.com/media/HWNoDTMbcAA-jGj.jpg",
+      "ratio": 1.7778,
+      "duration": 88.688,
+      "gif": false
+     }
+    ],
+    "links": []
+   }
+  },
+  {
+   "kind": "link",
+   "url": "https://ayoships.com/tools/tiktok-face",
+   "domain": "ayoships.com",
+   "title": "What TikTok sees",
+   "description": "See which of your photos TikTok's face model rates highest.",
+   "image": "https://ayoships.com/tools/tiktok-face/og.jpg",
+   "site": "ayoships.com"
+  }
+ ],
+ "article": {
+  "title": "رفقا فکر می‌کردید تیک‌تاک فقط یه مشت ویدیو رقص و سرگرمیه",
+  "source_title": "TikTok also scores how attractive you are, guesses your age/gender, and calculates your mood with some of these on-device models.",
+  "body": [
+   "رفقا فکر می‌کردید تیک‌تاک فقط یه مشت ویدیو رقص و سرگرمیه؟ یه برنامه‌نویس دل و روده اپلیکیشن رو کشیده بیرون و مشخص شده این پلتفرم بی‌سر‌و‌صدا، قیافه و میزان جذابیت چهره‌تون رو روی خود گوشی نمره‌گذاری می‌کنه.",
+   "• طرف مدل‌های سبک و آن‌دیوایس بایت‌دنس (ByteNN) رو مهندسی معکوس کرده و آورده روی وب؛ مدلی که تو پس‌زمینه سن، جنسیت، حس‌وحال صورت و حتی نمره «جذابیت ظاهری» رو تخمین می‌زنه.",
+   "• نکته کثیف ماجرا سوگیری شدید الگوریتمه؛ بررسی‌ها نشون داده هوش مصنوعی تیک‌تاک به طرز محسوسی به پوست‌های تیره‌تر و سن‌های بالاتر نمره پایین‌تری میده."
+  ],
+  "why": "ته قصه اینه که پشت ویترین خوش‌رنگ و لعاب هوش مصنوعی، یه ناظر نامرئی نشسته که با استانداردها و تعصبات کالیبره‌نشده تعیین می‌کنه کی بیاد بالا و تصویر کی توی فید بقیه دفن بشه.",
+  "why_label": "حرف آخر",
+  "tags": [
+   "شبکه‌های اجتماعی"
+  ]
+ },
+ "updated": "2026-11-05T18:20:29+00:00"
+}
