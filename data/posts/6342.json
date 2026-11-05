@@ -1,0 +1,62 @@
+{
+ "id": 6342,
+ "url": "https://t.me/dlmehr/6342",
+ "date": "2026-11-05T20:59:06+00:00",
+ "text": "https://fxtwitter.com/theworldlabs/status/2118424455873741028?a=dICbJyMl4UFiD89-QEI&s=52",
+ "forwarded_from": null,
+ "digest": false,
+ "hash": "5c42a4b5e583",
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/theworldlabs/status/2118424455873741028?a=dICbJyMl4UFiD89-QEI&s=52",
+  "site": "🧵 Thread • FxTwitter",
+  "title": "World Labs (@theworldlabs)",
+  "description": "Two months ago, we introduced Atlas, an autoregressive world model with pixel-perfect camera control.\nToday, we're releasing Frameboy, a demo allowing you to explore worlds in real-time with a highly optimized version of Atlas, streaming from cloud GPUs…",
+  "image": null
+ },
+ "gholam": {
+  "text": "بچه‌های World Labs (همون تیم خانم فی‌فی لی) از دموی تعاملی مدل سه‌بعدی‌شون به اسم Frameboy رونمایی کردن تا کاربر بتونه توی فضاهای ساخته‌شده با هوش مصنوعی به‌صورت زنده بچرخه؛ ولی پشت این صحنه خوش‌رنگ و لعاب، واقعیت‌های فنی جالبی خوابیده.\n\n• هسته ماجرا همون مدل اتورگرسیو Atlas هست که برای درک سه‌بعدی و کنترل دقیق زاویه دوربین توسعه دادن، منتها برای این دمو تا خرخره بهینه‌ش کردن تا سبک‌تر کار کنه.\n• کل سیستم متکی به استریم مستقیم از GPUهای ابریه و حداکثر سرعتش به ||۱۵ فریم در ثانیه|| می‌رسه؛ یعنی هنوز حتی به استاندارد حداقلی سینمایی (۲۴ فریم) هم نرسیده، چه برسه به روونی بازی‌های ویدیویی معمولی.\n• این ویژگی فعلاً رفته توی دل ابزار وب Viewfinder تا کاربر بتونه صحنه رو فریم‌به‌فریم بسازه و در نهایت وارد صف انتظار (Waitlist) بشه.\n\nگرفتن ۱۵ فریم با اتکا به دیتاسنترهای سنگین نشون میده تا تبدیل هوش مصنوعی به رندررِ بلادرنگ در حد آنریل انجین هنوز راه درازی مونده، اما زنگ خطریه که بفهمیم بازی از تولیدِ تصویر و ویدیو گذشته و رسماً وارد شبیه‌سازی کامل فضاهای تعاملی شده.",
+  "date": "2026-11-05T20:59:30+00:00"
+ },
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/theworldlabs/status/2118424455873741028",
+   "domain": "x.com",
+   "author": {
+    "name": "World Labs",
+    "handle": "theworldlabs",
+    "avatar": "https://pbs.twimg.com/profile_images/2094611280627957760/DziH8AE1_200x200.jpg"
+   },
+   "text": "Two months ago, we introduced Atlas, an autoregressive world model with pixel-perfect camera control.\n\nToday, we're releasing Frameboy, a demo allowing you to explore worlds in real-time with a highly optimized version of Atlas, streaming from cloud GPUs at up to 15 fps.",
+   "date": 1793906723,
+   "media": [
+    {
+     "type": "video",
+     "src": "https://video.twimg.com/amplify_video/2118400697251291136/vid/avc1/1280x720/xKpdaR4OaTf4ckU5.mp4?tag=29",
+     "poster": "https://pbs.twimg.com/amplify_video_thumb/2118400697251291136/img/_9Bg9vROC3CjqxOh.jpg",
+     "ratio": 0.5625,
+     "duration": 45.7,
+     "gif": false
+    }
+   ],
+   "links": []
+  }
+ ],
+ "article": {
+  "title": "بچه‌های World Labs (همون تیم خانم فی‌فی لی) از دموی تعاملی مدل سه‌بعدی‌شون به اسم Frameboy رونمایی کردن تا کاربر بتونه توی فضاهای ساخته‌شده با هوش مصنوعی به‌صورت زنده بچرخه",
+  "source_title": "Two months ago, we introduced Atlas, an autoregressive world model with pixel-perfect camera control.",
+  "body": [
+   "بچه‌های World Labs (همون تیم خانم فی‌فی لی) از دموی تعاملی مدل سه‌بعدی‌شون به اسم Frameboy رونمایی کردن تا کاربر بتونه توی فضاهای ساخته‌شده با هوش مصنوعی به‌صورت زنده بچرخه؛ ولی پشت این صحنه خوش‌رنگ و لعاب، واقعیت‌های فنی جالبی خوابیده.",
+   "• هسته ماجرا همون مدل اتورگرسیو Atlas هست که برای درک سه‌بعدی و کنترل دقیق زاویه دوربین توسعه دادن، منتها برای این دمو تا خرخره بهینه‌ش کردن تا سبک‌تر کار کنه.",
+   "• کل سیستم متکی به استریم مستقیم از GPUهای ابریه و حداکثر سرعتش به ||۱۵ فریم در ثانیه|| می‌رسه؛ یعنی هنوز حتی به استاندارد حداقلی سینمایی (۲۴ فریم) هم نرسیده، چه برسه به روونی بازی‌های ویدیویی معمولی.",
+   "• این ویژگی فعلاً رفته توی دل ابزار وب Viewfinder تا کاربر بتونه صحنه رو فریم‌به‌فریم بسازه و در نهایت وارد صف انتظار (Waitlist) بشه."
+  ],
+  "why": "گرفتن ۱۵ فریم با اتکا به دیتاسنترهای سنگین نشون میده تا تبدیل هوش مصنوعی به رندررِ بلادرنگ در حد آنریل انجین هنوز راه درازی مونده، اما زنگ خطریه که بفهمیم بازی از تولیدِ تصویر و ویدیو گذشته و رسماً وارد شبیه‌سازی کامل فضاهای تعاملی شده.",
+  "why_label": "حرف آخر",
+  "tags": [
+   "تراشه"
+  ]
+ },
+ "updated": "2026-11-05T21:03:23+00:00"
+}
