@@ -1,0 +1,70 @@
+{
+ "id": 6311,
+ "url": "https://t.me/dlmehr/6311",
+ "date": "2026-11-05T03:02:09+00:00",
+ "text": "https://fxtwitter.com/mertcemri/status/2118057463488589863?a=k_WkeUVuuXC2cBkGm9s&s=52",
+ "forwarded_from": null,
+ "digest": false,
+ "hash": "b6e96eb231d8",
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/mertcemri/status/2118057463488589863?a=k_WkeUVuuXC2cBkGm9s&s=52",
+  "site": "🧵 Thread • FxTwitter",
+  "title": "Mert Cemri (@mertcemri)",
+  "description": "What if you could synthesize an LLM inference engine customized for your model and Mac, just in time?\nMeet JITEngine: custom engines built with SkyDiscover for Apple Silicon, up to 2.7× faster than the fastest alternatives we tested.\nhttps://jitengine.ai…",
+  "image": null
+ },
+ "gholam": {
+  "text": "رفیق، قضیه از این قراره که یه ابزار تر و تمیز به اسم JITEngine رونمایی شده که خوراک برو‌بچه‌های مک و پردازنده‌های اپل سیلیکونه. ماجرا اینه که مرت جِمری و تیمش اومدن یه سیستمی راه انداختن که با کمک ابزار SkyDiscover، موتور پردازش و اجرای مدل‌های زبانی رو درست متناسب با سخت‌افزار مک و مدل شما سرِ بزنگاه بازتولید و شخصی‌سازی می‌کنه. طبق تست‌هایی که زدن، این فناوری جدید تونسته تا ۲.۷ برابر سریع‌تر از قوی‌ترین رقبای فعلی خروجی بده و حسابی گرد و خاک کنه.\n\nچرا مهمه؟ اهمیتش اینه که دیگه نیازی نیست برای اجرای سریع هوش مصنوعی حتماً سرورهای گرون‌قیمت داشته باشی و می‌تونی رو همون لپ‌تاپ مک، پردازش مدل‌ها رو با سرعتی باورنکردنی ببری جلو.",
+  "date": "2026-11-05T03:02:22+00:00"
+ },
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/mertcemri/status/2118057463488589863",
+   "domain": "x.com",
+   "author": {
+    "name": "Mert Cemri",
+    "handle": "mertcemri",
+    "avatar": "https://pbs.twimg.com/profile_images/1803313227390132226/GMHJIoNL_200x200.jpg"
+   },
+   "text": "What if you could synthesize an LLM inference engine customized for your model and Mac, just in time?\n\nMeet JITEngine: custom engines built with SkyDiscover for Apple Silicon, up to 2.7× faster than the fastest alternatives we tested.\n\nhttps://jitengine.ai 🧵 (1/n)",
+   "date": 1793819225,
+   "media": [
+    {
+     "type": "video",
+     "src": "https://video.twimg.com/tweet_video/HWTWn1JbIAEHF5e.mp4",
+     "poster": "https://pbs.twimg.com/tweet_video_thumb/HWTWn1JbIAEHF5e.jpg",
+     "ratio": 0.3734,
+     "duration": 0,
+     "gif": true
+    }
+   ],
+   "links": [
+    "https://jitengine.ai"
+   ]
+  },
+  {
+   "kind": "link",
+   "url": "https://jitengine.ai",
+   "domain": "jitengine.ai",
+   "title": "JITEngine: LLM serving, synthesized for your Mac",
+   "description": "LLM serving engines synthesized for your Mac, up to 2.7× as fast as the best other server we measured on the same Mac. Pick your Mac and get its commands, with the speeds we measured.",
+   "image": "https://jitengine.ai/og.png",
+   "site": "JITEngine"
+  }
+ ],
+ "article": {
+  "title": "قضیه از این قراره که یه ابزار تر و تمیز به اسم JITEngine رونمایی شده که خوراک برو‌بچه‌های مک و پردازنده‌های اپل سیلیکونه",
+  "source_title": "What if you could synthesize an LLM inference engine customized for your model and Mac, just in time?",
+  "body": [
+   "رفیق، قضیه از این قراره که یه ابزار تر و تمیز به اسم JITEngine رونمایی شده که خوراک برو‌بچه‌های مک و پردازنده‌های اپل سیلیکونه. ماجرا اینه که مرت جِمری و تیمش اومدن یه سیستمی راه انداختن که با کمک ابزار SkyDiscover، موتور پردازش و اجرای مدل‌های زبانی رو درست متناسب با سخت‌افزار مک و مدل شما سرِ بزنگاه بازتولید و شخصی‌سازی می‌کنه. طبق تست‌هایی که زدن، این فناوری جدید تونسته تا ۲.۷ برابر سریع‌تر از قوی‌ترین رقبای فعلی خروجی بده و حسابی گرد و خاک کنه."
+  ],
+  "why": "اهمیتش اینه که دیگه نیازی نیست برای اجرای سریع هوش مصنوعی حتماً سرورهای گرون‌قیمت داشته باشی و می‌تونی رو همون لپ‌تاپ مک، پردازش مدل‌ها رو با سرعتی باورنکردنی ببری جلو.",
+  "tags": [
+   "اپل",
+   "تراشه"
+  ]
+ },
+ "updated": "2026-11-05T03:06:21+00:00"
+}
