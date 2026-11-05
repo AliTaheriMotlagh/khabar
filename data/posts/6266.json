@@ -12,7 +12,7 @@
   "site": "🧵 Thread • FxTwitter",
   "title": "Zeng Jiajun 曾嘉俊 (@zengjiajun_eth)",
   "description": "> Replicated weight-space programming on my own GPUs today.\n> Opus 5.5 edited 2 neuron output columns in layer 29 of Qwen3.5-4B. That is 0.00012% of the weights. No gradients, no training loop.\n> Held-out 150 math problems:\n> repetition loops 22-25 → 0…",
-  "image": "https://cdn4.telesco.pe/file/FIGPlfRrz0e4fAxqVaVELm-Pf_KJvxPmc0fbH1X58PYz4hWKhSqyk2uBiXQhZDdeVaUU_AdpA5I_kmafr4isEWTcpE66xHcLc3oWHr6sawEn82RdcESgLThrjoOtWp6WBr-7PtGAH2pvJxw2TF70CDhAhhBGkBvCSH51TD765Ff4XNoDORW0iJNFDuDks5dAiZsrrA4yohQ5xb054X3zMhhi_RvKApeqLVoggqO44GE62Ge4PW4zm5Yv3oeuNswQRbidccS2ROSxoM5tCi6DVQNdxihr6fa3W2Mmlc6to5wggFT4rfMNqcBv4lhK7j86Kg_ZAvxrGI1cIzfQMXo4dg.jpg"
+  "image": "https://cdn4.telesco.pe/file/ROfTPI49_f-n16U_5Ojl7TUK3-9EJLXRu8ngy7si_1dZ8jRfs3ZMnjatqRDBYKIMPSpzd0CZDqnW9OKZSdDXUaZ95vaANijazJ4E3mmWHKAy65ktOhVub3G-ng4sNY15V5NviQ0Rpk1uFYeyaYik0F1FpBco4MU3_BwK2tWeehEKrqXSWGt7UKh0d00tAcPT2I-ddpF4jYCsM1AAMbGtVyLJw7kfEHKv_nUtWBnRvljPycUnB2CpOo7Uine9aNSqeexrni9E28h-YfeQpk9tGmDB13F9AoqMUIYQiLzAk_Oi3gPyAvQbufzHROthiOdl0Kr4wfrQZqLcamoqKLQMSA.jpg"
  },
  "gholam": {
   "text": "ببین رفیق، یه متخصصی به اسم ژنگ جیاجون رفته ایده جالب «برنامه‌نویسی مستقیم روی وزن‌های هوش مصنوعی» رو تست کرده و نتیجه واقعاً معرکه‌ای گرفته. ماجرا از این قراره که مدل Opus 5.5 رو انداخته به جون مدل Qwen3.5-4B تا بدون هیچ آموزش یا دور باطل، فقط دو تا ستون نورونی توی لایه ۲۹ یعنی کمتر از دو ده هزارم درصد کل وزن‌ها رو جراحی کنه. خروجی کار روی ۱۵۰ تا مسئله سخت ریاضی گل کاشته؛ باگ تکرار و هنگ کردن مدل کاملاً صفر شده و دقت جواب‌هاش از ۵۹ به ۹۴ جهش کرده، اونم کلاً ظرف ۲۷ دقیقه، بدون دخالت انسان و با هزینه ناقابل حدود ۱ دلار.\n\nاهمیتش اینه که نشون میده واسه باهوش‌تر کردن و رفع باگ مدل‌ها دیگه نیازی به آموزش‌های سنگین و هزینه‌های نجومی نیست، بلکه یه هوش مصنوعی می‌تونه با کمترین خرج مثل یه جراح مغز بیاد نورون‌های مدل دیگه رو دستکاری و درست کنه.",
@@ -71,5 +71,5 @@
    "تراشه"
   ]
  },
- "updated": "2026-11-05T01:48:30+00:00"
+ "updated": "2026-11-05T09:22:15+00:00"
 }
