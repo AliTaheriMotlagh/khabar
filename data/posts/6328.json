@@ -1,0 +1,64 @@
+{
+ "id": 6328,
+ "url": "https://t.me/dlmehr/6328",
+ "date": "2026-11-05T17:19:37+00:00",
+ "text": "https://fxtwitter.com/drjimfan/status/2118380813498892301?a=o0HNupWUVXRhvh8mFjw&s=52",
+ "forwarded_from": null,
+ "digest": false,
+ "hash": "b0b6bf75ca43",
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/drjimfan/status/2118380813498892301?a=o0HNupWUVXRhvh8mFjw&s=52",
+  "site": "🧵 Thread • FxTwitter",
+  "title": "Jim Fan (@DrJimFan)",
+  "description": "The era of System One Vision Model is here! Introducing VFlash: parsing the visual world in parallel at unmatched speeds for Physical AI.\nMost embodied prediction tasks like object localization, robot trajectory planning, and dense 3D motion are fixed-length…",
+  "image": null
+ },
+ "gholam": {
+  "text": "جیم فن و تیمش تو انویدیا بالاخره فهمیدن که برای تکون دادن دست و پای یه ربات، لازم نیست مثل چت‌بات‌ها کلمه به کلمه و با تأخیر فکر کرد؛ مدلی به اسم VFlash دادن بیرون که ادعا می‌کنه سرعت واکنش رباتیک رو به حد رفلکس عصبی رسونده.\n\n• تا الان مدل‌ها مختصات حرکت رو توکن‌به‌توکن تولید می‌کردن و اگه اولی کج می‌رفت، خطای زنجیره‌ای تا آخر مسیر ربات رو به فنا می‌داد؛ اینجا چون طول بردار مشخصه، کل نقشه حرکت یک‌جا و موازی تحویل موتورها داده می‌شه.\n• روی چیپ‌های امبدد نتیجه چشمگیره: دیکود اکشن‌ها تا ۱۲ برابر سریع‌تر، سرعت کلی ۵٫۱ برابر بیشتر روی چیپ‌های لبه، و خطای مسیر حرکتی هم به لطف همین پردازش موازی ||تا ۶۱ درصد کمتر|| شده.\n• پروژه هم مقاله و کدش کاملاً بازمتن منتشر شده تا جامعه رباتیک راحت بندازنش تو کار.\n\nکار فنی‌شون انصافاً قشنگ و راه‌بندازه رفقا، ولی پشت پرده این دست‌ودلبازی‌های متن‌باز یه بازی ساده‌ست: انویدیا می‌خواد قبل از اینکه بقیه بجنبن، با معماری و چیپ‌های لبه‌ خودش سند مغز متفکر هر چی وسیله متحرک تو دنیاست رو بزنه به نام خودش.",
+  "date": "2026-11-05T17:20:00+00:00"
+ },
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/DrJimFan/status/2118380813498892301",
+   "domain": "x.com",
+   "author": {
+    "name": "Jim Fan",
+    "handle": "DrJimFan",
+    "avatar": "https://pbs.twimg.com/profile_images/1554922493101559808/SYSZhbcd_200x200.jpg"
+   },
+   "text": "The era of System One Vision Model is here! Introducing VFlash: parsing the visual world in parallel at unmatched speeds for Physical AI.\n\nMost embodied prediction tasks like object localization, robot trajectory planning, and dense 3D motion are fixed-length float vectors. For example, a bounding box is always 6 tokens, a 10-waypoint robot arm trajectory is 54: we know these beforehand. Instead of decoding one token at a time, we can output the entire geometric shape in one go. \n\nVFlash enables up to 12x faster action decoding and a 5.1x overall robot inference speedup on edge GPUs like the Jetson Thor and DGX Spark. What’s surprising is that it ends up even more accurate than the VLM backbone, with up to 61% lower 3D trajectory error. The intuition is that VFlash avoids the cascading errors of autoregressive decoding, where every coordinate is written in ink and every later point loses the chance to backspace.\n\nEverything that moves will be autonomous, and everything autonomous will need to think on its own chip. The next inference revolution is physical reasoning at the speed of reflex.\n\nAnd as always, it’s open paper, open source! Link in thread:",
+   "date": 1793896318,
+   "media": [
+    {
+     "type": "video",
+     "src": "https://video.twimg.com/amplify_video/2118374869645864960/vid/avc1/1280x720/ipz7JOh-GhnaZYNa.mp4?tag=29",
+     "poster": "https://pbs.twimg.com/amplify_video_thumb/2118374869645864960/img/X0zFDyMQe_jbJcnE.jpg",
+     "ratio": 0.5625,
+     "duration": 55.866,
+     "gif": false
+    }
+   ],
+   "links": []
+  }
+ ],
+ "article": {
+  "title": "جیم فن و تیمش تو انویدیا بالاخره فهمیدن که برای تکون دادن دست و پای یه ربات، لازم نیست مثل چت‌بات‌ها کلمه به کلمه و با تأخیر فکر کرد",
+  "source_title": "The era of System One Vision Model is here! Introducing VFlash: parsing the visual world in parallel at unmatched speeds for Physical AI.",
+  "body": [
+   "جیم فن و تیمش تو انویدیا بالاخره فهمیدن که برای تکون دادن دست و پای یه ربات، لازم نیست مثل چت‌بات‌ها کلمه به کلمه و با تأخیر فکر کرد؛ مدلی به اسم VFlash دادن بیرون که ادعا می‌کنه سرعت واکنش رباتیک رو به حد رفلکس عصبی رسونده.",
+   "• تا الان مدل‌ها مختصات حرکت رو توکن‌به‌توکن تولید می‌کردن و اگه اولی کج می‌رفت، خطای زنجیره‌ای تا آخر مسیر ربات رو به فنا می‌داد؛ اینجا چون طول بردار مشخصه، کل نقشه حرکت یک‌جا و موازی تحویل موتورها داده می‌شه.",
+   "• روی چیپ‌های امبدد نتیجه چشمگیره: دیکود اکشن‌ها تا ۱۲ برابر سریع‌تر، سرعت کلی ۵٫۱ برابر بیشتر روی چیپ‌های لبه، و خطای مسیر حرکتی هم به لطف همین پردازش موازی ||تا ۶۱ درصد کمتر|| شده.",
+   "• پروژه هم مقاله و کدش کاملاً بازمتن منتشر شده تا جامعه رباتیک راحت بندازنش تو کار."
+  ],
+  "why": "کار فنی‌شون انصافاً قشنگ و راه‌بندازه رفقا، ولی پشت پرده این دست‌ودلبازی‌های متن‌باز یه بازی ساده‌ست: انویدیا می‌خواد قبل از اینکه بقیه بجنبن، با معماری و چیپ‌های لبه‌ خودش سند مغز متفکر هر چی وسیله متحرک تو دنیاست رو بزنه به نام خودش.",
+  "why_label": "حرف آخر",
+  "tags": [
+   "انویدیا",
+   "رباتیک",
+   "تراشه"
+  ]
+ },
+ "updated": "2026-11-05T17:22:22+00:00"
+}

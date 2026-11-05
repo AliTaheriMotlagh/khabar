@@ -1,0 +1,65 @@
+{
+ "id": 6326,
+ "url": "https://t.me/dlmehr/6326",
+ "date": "2026-11-05T17:18:50+00:00",
+ "text": "https://fxtwitter.com/openai/status/2118390190246879554?a=aoCtW-eaRBJ-fYpnKYM&s=52",
+ "forwarded_from": null,
+ "digest": false,
+ "hash": "481c29c241fd",
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/openai/status/2118390190246879554?a=aoCtW-eaRBJ-fYpnKYM&s=52",
+  "site": "🧵 Thread • FxTwitter",
+  "title": "OpenAI (@OpenAI)",
+  "description": "Introducing GPT‑6 Cyber: a major advance in security research that pairs stronger capabilities with better model alignment.\nThe model powered the Linux kernel research we announced yesterday, and security teams at companies like Mozilla, Palo Alto Networks…",
+  "image": null
+ },
+ "gholam": {
+  "text": "بازم کمپانی اوپن‌ای‌آی شعبده‌بازی جدید رو کرده و این‌بار با اسم دهن‌پرکن GPT-6 Cyber دست گذاشته رو حیاتی‌ترین شاهرگ نرم‌افزاری دنیا یعنی امنیت و کدهای کرْنل لینوکس.\n\n• هدفشون اینه که با رصد خودکار کدهای حساس، قبل از اینکه زیرو-دی‌ها دست کلاه‌سیاه‌ها بیفته، رخنه‌ها رو برای غول‌هایی مثل سیسکو، موزیلا و پالو آلتو جمع‌وجور کنه.\n• پروژه رو در قالب دو لایه «Daybreak Red» (برای تست‌های تهاجمی) و «Daybreak Blue» (برای مدافعان امنیتی و ارزیابی آسیب‌پذیری‌ها با کمترین گیر و فیلتر) عرضه کردن.\n• دسترسی فعلاً عمومی نیست و کلید این زرادخانه تحلیلی فقط دست سوگلی‌ها و سازمان‌های دست‌چین‌شده سازمانی قرار گرفته.\n\nهمون بازی همیشگیه رفقا؛ ابزاری که قدرت پیدا کردن عمیق‌ترین باگ‌ها رو داره، اول از همه میره پشت درهای بسته و صندوق اشتراک‌های ||«مشتریان سازمانی خاص»||، و تا بخواد خیری ازش به جامعه برنامه‌نویس‌های مستقل و اوپن‌سورس برسه، سودش تو جیب غول‌های تکنولوژی رفته.",
+  "date": "2026-11-05T17:19:16+00:00"
+ },
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/OpenAI/status/2118390190246879554",
+   "domain": "x.com",
+   "author": {
+    "name": "OpenAI",
+    "handle": "OpenAI",
+    "avatar": "https://pbs.twimg.com/profile_images/1885410181409820672/ztsaR0JW_200x200.jpg"
+   },
+   "text": "Introducing GPT‑6 Cyber: a major advance in security research that pairs stronger capabilities with better model alignment.\n\nThe model powered the Linux kernel research we announced yesterday, and security teams at companies like Mozilla, Palo Alto Networks, Calif, and Cisco—alongside our own at OpenAI—are already putting it to work.\n\nGPT-6 Cyber is available to select Daybreak Red customers and we are expanding access over time.\n\nhttps://openai.com/index/introducing-gpt-6-cyber/",
+   "date": 1793898553,
+   "media": [
+    {
+     "type": "video",
+     "src": "https://video.twimg.com/amplify_video/2118387217588465664/vid/avc1/1280x720/_Bwsy8lRf0qMlY0X.mp4?tag=29",
+     "poster": "https://pbs.twimg.com/amplify_video_thumb/2118387217588465664/img/N2grMUmP0O_EMvS2.jpg",
+     "ratio": 0.5625,
+     "duration": 7,
+     "gif": false
+    }
+   ],
+   "links": [
+    "https://openai.com/index/introducing-gpt-6-cyber/"
+   ]
+  }
+ ],
+ "article": {
+  "title": "بازم کمپانی اوپن‌ای‌آی شعبده‌بازی جدید رو کرده و این‌بار با اسم دهن‌پرکن GPT-6 Cyber دست گذاشته رو حیاتی‌ترین شاهرگ نرم‌افزاری دنیا یعنی امنیت و کدهای کرْنل لینوکس",
+  "source_title": "Introducing GPT‑6 Cyber: a major advance in security research that pairs stronger capabilities with better model alignment.",
+  "body": [
+   "بازم کمپانی اوپن‌ای‌آی شعبده‌بازی جدید رو کرده و این‌بار با اسم دهن‌پرکن GPT-6 Cyber دست گذاشته رو حیاتی‌ترین شاهرگ نرم‌افزاری دنیا یعنی امنیت و کدهای کرْنل لینوکس.",
+   "• هدفشون اینه که با رصد خودکار کدهای حساس، قبل از اینکه زیرو-دی‌ها دست کلاه‌سیاه‌ها بیفته، رخنه‌ها رو برای غول‌هایی مثل سیسکو، موزیلا و پالو آلتو جمع‌وجور کنه.",
+   "• پروژه رو در قالب دو لایه «Daybreak Red» (برای تست‌های تهاجمی) و «Daybreak Blue» (برای مدافعان امنیتی و ارزیابی آسیب‌پذیری‌ها با کمترین گیر و فیلتر) عرضه کردن.",
+   "• دسترسی فعلاً عمومی نیست و کلید این زرادخانه تحلیلی فقط دست سوگلی‌ها و سازمان‌های دست‌چین‌شده سازمانی قرار گرفته."
+  ],
+  "why": "همون بازی همیشگیه رفقا؛ ابزاری که قدرت پیدا کردن عمیق‌ترین باگ‌ها رو داره، اول از همه میره پشت درهای بسته و صندوق اشتراک‌های ||«مشتریان سازمانی خاص»||، و تا بخواد خیری ازش به جامعه برنامه‌نویس‌های مستقل و اوپن‌سورس برسه، سودش تو جیب غول‌های تکنولوژی رفته.",
+  "why_label": "حرف آخر",
+  "tags": [
+   "اوپن‌ای‌آی",
+   "امنیت"
+  ]
+ },
+ "updated": "2026-11-05T17:22:23+00:00"
+}
