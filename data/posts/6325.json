@@ -12,7 +12,7 @@
   "site": "FxTwitter",
   "title": "Google Research (@GoogleResearch)",
   "description": "Today on the blog, we present a new system, published in Nature, that leverages standard consumer smartwatch sensors to passively detect signs of high blood pressure — validated against the clinical gold standard of 24-hour ambulatory bp monitoring. More…",
-  "image": "https://cdn4.telesco.pe/file/flceQulWJlsAwKHbUOuHhbyrwzDyfKq7HumI2GAhVVJ4_6PxxdbjfKds8sxuabuXr-Jaol96jRJhXS8gN0SvH-tAWFtSLJDLdzJOmPJBWlbBi0qH4373TVm_gwAQPNZ9txN4HxIgx8mWwf_duk35XbjsFkYVIQu_6kjTOQCf2N7j1q_dzQhviKyocQo0Xtz7XCIA4dDNSZ4xDSkZoROg_OZR_Xzcv5mfYLCupJiAY8nTPmu83qoCE3yzoAPTFP0LPbPa3otxuK8pV_71050znkEsWi1qbPcesAs0psVtGCrGtS6jLMKYzibqd1mN5VJt5q2D7HA1jNsmANjWX3IODQ.jpg"
+  "image": "https://cdn4.telesco.pe/file/SCV2QdhuLptHOFG0X4ERTP8KPfsWlgcYObqUsiiTUWXfDsG2aQ89lnVeBtfhTPZKQH-c-qw_ru4QBm0JbzzMzjRZZRcwUWew_TSU85NCL5LuiZzD1mpFHpMlCelhn9m4Fkd5diqJZX6rwYbjgkOMqZcR6NAUcKLYRSPinhTa07gGWRUTkmlb_Qx_2UMzGp2JPD7FWZsOXZrygeyfMSXb8OHjnZKFnHShYD7RzdWKB3Ky3M9KMYZprnqa0QX2xn_8oET1XxUE6MzdiXLNWmFh4qB5-jwQ2Y67R8KZhGuHrlFH50uwzfySZlaAlirmoLxEss43dwh911kP_33f2nwjeQ.jpg"
  },
  "gholam": {
   "text": "گوگل ریسرچ توی ژورنال معتبر Nature مقاله داده و مدعی شده با همون سنسورهای معمولی ساعت‌های هوشمند توی بازار، می‌تونه فشار خون بالا رو بدون نیاز به هیچ دم‌ودستگاه و بستن بازوبند، به‌صورت کاملاً نامحسوس و در پس‌زمینه ردیابی کنه.\n\n• فوت کوزه‌گری فنی: سیستم هوش مصنوعیشون با ترکیب سیگنال‌های نوری نبض (PPG) و شتاب‌سنج ساعت در طول چند روز، در کنار فاکتور ساده‌ای مثل قد کاربر، وضعیت پرفشاری خون رو تخمین می‌زنه؛ یعنی نیازی به سخت‌افزار عجیب‌وغریب جدید نیست.\n• اعتبارسنجی جدی: برخلاف پتنت‌ها و قابلیت‌های نصفه‌نیمه فعلی بازار که مدام محتاج کالیبره‌شدن با دستگاه فشار خون سنتی‌ان، این مدل مستقیماً در برابر پایش ۲۴ ساعته بالینی (ABPM) که استاندارد طلایی پزشکیه محک خورده.\n• واقعیت ماجرا: این سیستم به شما عدد دقیق لحظه‌ای (مثلاً ۱۲ روی ۸) تحویل نمی‌ده؛ بلکه یه سازوکار غربالگری چندروزه‌س تا بفهمید این قاتل خاموش توی بدنتون فعال شده یا نه.\n\nدستاورد علمی بزرگیه رفقا، ولی فاصله مقاله نیچر تا گرفتن مجوز رسمی سلامت (مثل FDA) و نشستن روی مچ دست مردم، مسیریه که خیلی از غول‌های فناوری توش به نفس‌نفس افتادن.",
@@ -67,5 +67,5 @@
    "سلامت"
   ]
  },
- "updated": "2026-11-06T05:10:28+00:00"
+ "updated": "2026-11-06T11:12:43+00:00"
 }

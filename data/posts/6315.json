@@ -12,7 +12,7 @@
   "site": "🧵 Thread • FxTwitter",
   "title": "Peter Nutter (@PeterNutter1)",
   "description": "Kimi K3.1 Pro doesn't just recall hidden tests (great thread by @JSchaeff3r). It also writes fake OpenAI ciphertext\n🤯\nGive it a send_message tool in Codex and sometimes it sends ciphertext instead of its report. Then it gets confused by what it just sent…",
-  "image": "https://cdn4.telesco.pe/file/hYb6iCKoG11IvKT-xV_QbYxRWqgMzjXoasQm6Kl0BwxEbLH7Debstbm04Kc2wULgjPaqrXphFmi376p1sd_qMa8nv2o9THW5C_uvuNC-ttlvoIa_Wl-pQD3EHOON89DMBvaAeUKuiUy1FTxNGSrtPmrl_P87FyVyt1zkyjmwqjYUxDtqwT1OYJ85pK56RY72k5R5lC8iqDVdNEf1fq3McTgDrYMCw8Fd-50D1i7_okD2VL1QRjbIYte6Vrt3pY5DEBlCszvsI2QpTx8PemHSI6eYWXz6fmCPbq8gxbOR8NQTzjOdYP3BmqThfY-vYpWlDwmum3FtvKrPIR9Tnot3RA.jpg"
+  "image": "https://cdn4.telesco.pe/file/knQcHe89GsNsdQsXzDesn7Pi7y_H793yGk6iIrogdFg8bmrmvA-6yrgcpsPzbjCMfwVEFUk9DQawEex5jKPhe_xfgX-6XdW42fV4qih8sxAcR-H8qBrikE545oHr0w-xxIvIGtfS2oJRbcdj2PEVy-HOBDTDkkgmTuKEs4TFsY3KPFLL1RVdHJAxy5u-pogR2FSbbyzWoivMylMGOTUpn-371zpqAqSjzAhhhNnArVzZwIvtFcRjsiFRuQhvtKXbIWQzQ-VuP-Rhj6oo_q1uScxuCkRIT6HpL4x_wIzrsK2Znh7IvlgNloOVm4JYsxWBjZV3nKA4ik5DaZmMtHbaIA.jpg"
  },
  "gholam": {
   "text": "دم خروس چینی‌ها این‌دفعه چنان از زیر شال‌کلاه مدل Kimi K3.1 زده بیرون که دیگه هیچ رقمه نمیشه ماست‌مالیش کرد. قضیه خیلی ساده‌ست: رفقای چینی‌مون نه تنها بنچمارک‌های مخفی رو از قبل خورده بودن، بلکه رفته بودن دیتای پردازش مخفی OpenAI رو کش رفته و کپی زده بودن، منتها یادشون رفته تفاله‌هاش رو از تو دیتاست تمیز کنن!\n\n• مدل Kimi وسط کارِ ایجنت‌ها قاطی می‌کنه و به جای تحویل گزارش متنی، توکن رمزنگاری‌شده‌ی Fernet میده بیرون؛ همون فرمت استانداردی که OpenAI برای کدکس استفاده می‌کنه و با هدرِ تابلو و مشخصِ gAAAAAB شروع میشه.\n• ردپای زمانیِ این کدهای رمزنگاری‌شده دقیقاً می‌خوره به بازه‌ی اواخر جولای؛ یعنی همون تاریخی که اوپن‌ای‌آی رسماً اعلام کرده بود اکانت‌های مرتبط با Moonshot داشتن دیتای استدلال هوش مصنوعی رو به روش ||Stolen Thoughts|| بیرون می‌کشیدن و سرقت می‌کردن.\n• شاهکار اینجاست که مدل LongCat متعلق به Meituan (سرمایه‌گذار اصلی مون‌شات) هم دقیقاً همین گاف رو میده، یعنی حتی زحمت یه فیلترِ ساده‌ی چند خطی برای حذف رشته‌های Base64 رو به خودشون ندادن.\n\nاینکه وسط هیاهوی بازاریابی بگی غول‌های غربی رو پشت سر گذاشتی، ولی مغز مدلت هنوز تیکه‌های دست‌نخورده‌ی کدهای سم آلتمن رو پس بده، بیشتر شبیه اینه که بخوای با ماشین سرقتی توی پیست دور افتخار بزنی داداش.",
@@ -73,5 +73,5 @@
    "اوپن‌ای‌آی"
   ]
  },
- "updated": "2026-11-06T05:10:29+00:00"
+ "updated": "2026-11-06T11:12:43+00:00"
 }

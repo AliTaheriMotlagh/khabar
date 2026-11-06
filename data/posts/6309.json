@@ -12,7 +12,7 @@
   "site": "🧵 Thread • FxTwitter",
   "title": "OpenAI (@OpenAI)",
   "description": "Our security researchers built an autonomous cyber vulnerability discovery, exploitation, and patching pipeline.\nIn a single run with an upcoming cyber model, it validated and generated patches for 948 local privilege escalation vulnerabilities in the Linux…",
-  "image": "https://cdn4.telesco.pe/file/sKhBSfX6VFkztG1W71l3Y1uEsPMbbVPr7tIFWomFPGJ8WxugDDoO8c7sG65MUWiEjCEmqcQFcoB-zXxY-g20ERSPjKnEEpL2mMz5qC2g5DL40HogvFVnCKdLftJ3PwgRZGYiuQuCipsXEZUFrJ_621GMcBH2_9BVzY5iICBKVd-wgr-eEjpbakEX08FEQsLnccZ_uRdv3pVTj9d4YXDYf7FXAeXttRqPXPpRtk9B1XJzFxtlFy5zC80W7gmlwJ9bPbrgMceSC-Wa9HkPclaJQatglGCYPDrAuxBnGFNuVhbY_fW7nAiyAAVzZiHvb7PLa6I6WswJ2m7DWB0d4dCsMA.jpg"
+  "image": "https://cdn4.telesco.pe/file/HMSIFyOZRj-5KrbmFPtPeGqbFgMoOKH1xpfgGvSmw6LWrf6SW5mAGI5ahEU9TT4ulcvxfNXo6I704kt438A26xodzEuXXj6LSXHO6kfhBFQzseGxIYslZ7QT9cFP_09KvJTVzrpf4aFLKwG1x5VnBmWs4TM36Slmgxu6VSHNB7CO_x4IGhvp085UnmZ141gLEUICmMc9BHPp-Wxrwfu2R2CsryAgwBqgU8uSYuizWl_nrxhVWGwPI50vUnGXwZD_ZDPGL3S_7I5IQyn0Wu8vAVJIUGxsgpb9gPNVIrcIFiolV6jRbmL3UqIqZ4ZEcJ5RCX-BE9oi7raeScF2LIhQzQ.jpg"
  },
  "gholam": {
   "text": "ببین رفیق، بچه‌های تیم امنیت اوپن‌ای‌آی (OpenAI) یه سیستم کاملاً خودکار ساختن که کارش کشف باگ، تست نفوذ و حتی وصله‌کردن رخنه‌های امنیتیه، اونم کلاً بدون دخالت دست. این سیستم با یه مدل هوش مصنوعی تخصصی سایبری که تو راهه، زد به دل هسته لینوکس و تونست ۹۴۸ تا آسیب‌پذیری خطرناک ارتقای دسترسی محلی رو شناسایی کنه و براشون پچ امنیتی بسازه. البته این مانور گردن‌کلفت اصلاً مفت تموم نشد و کل این فرایند حدود ۱.۲ میلیون دلار هزینه API روی دستشون گذاشت. خلاصه داستان نشون میده که به زودی یه مدل هوش مصنوعی می‌تونه کار یه لشکر هکر کلاه‌سفید رو تو پاکسازی کدها یه تنه جلو ببره.\n\nاهمیتش اینه که سرعت پیدا کردن و ترمیم رخنه‌های امنیتی در سطح هسته لینوکس به ثانیه می‌رسه و عملاً دست هکرهای بدخواه قبل از هر خرابکاری بسته میشه.",
@@ -52,5 +52,5 @@
    "اوپن‌ای‌آی"
   ]
  },
- "updated": "2026-11-06T05:10:29+00:00"
+ "updated": "2026-11-06T11:12:43+00:00"
 }
