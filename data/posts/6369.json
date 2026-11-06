@@ -1,0 +1,69 @@
+{
+ "id": 6369,
+ "url": "https://t.me/dlmehr/6369",
+ "date": "2026-11-06T22:08:41+00:00",
+ "text": "https://fxtwitter.com/googledeepmind/status/2118755418675765656?a=-HkarCOStH178AYqmCQ&s=52",
+ "forwarded_from": null,
+ "digest": false,
+ "hash": "5bd1811443d9",
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/googledeepmind/status/2118755418675765656?a=-HkarCOStH178AYqmCQ&s=52",
+  "site": "🧵 Thread • FxTwitter",
+  "title": "Google DeepMind (@GoogleDeepMind)",
+  "description": "We’re sharing new research demonstrating how AI agents can accelerate the science of stress-testing encryption.\nGuided by humans, our models uncovered two major weaknesses in legacy 1024-bit RSA cryptosystems.\nOur VP Science @Pushmeet explains more ↓ h…",
+  "image": "https://cdn4.telesco.pe/file/VdhAZYAmF2AnjahXU9NMZSyrml5U_h_Kl8ekWVd2hcYRE7Fh8kPxbyCZguMdAp3jJFSxah-IDGGZRkgWauf7sZ_TVmHmwN5g9jIjEVWF4_MGIdCmc7Ee_kkmG1Q1k54IkwXRjLUJEXxi9dGdVEOmyO29uv3T_xuxOiwAHoMyYxCtPtR0mHQ3zLz4pWLpYKk7T9BXDc24bIY1vQ9GVkkX6R2ILEYDyx5SQ2z0AR49rPe_MUdNt1YfEiQUIDN9Jv3FH8JFIkHtmNn4f0x9fvqvlpmuho35K09qhZZ18av-gz0FuJyo1RLHTMBwg5kZ768RPeK-C-BvMdZHxo-LFOzqRA.jpg"
+ },
+ "gholam": {
+  "text": "دیپ‌مایند گوگل دوباره یه گرد و خاکی راه انداخته که هوش مصنوعی‌مون دست‌به‌کار شده و دو تا رخنه اساسی توی سیستم‌های رمزنگاری RSA پیدا کرده؛ ولی بذارید بدون تعارف و بزکِ مارکتینگ ببینیم کف قضیه چیه.\n\n• سیستمی که زدن پنچرش کردن، نسخه قدیمی ۱۰۲۴ بیتی بوده؛ یعنی همون کدی که استاندارد جهانی بیشتر از یه دهه‌ست گذاشتش کنار و الان زیرساخت‌های جدی دنیا روی ۲۰۴۸ بیت یا رمزنگاری‌های خم بیضوی سوارن و فعلاً خطری تهدیدشون نمی‌کنه.\n• نکته فنی و باارزش ماجرا اینه که تیم گوگل یه مشت ایجنت هوش مصنوعی رو انداخته به جون فرمول‌های ریاضی تا گوشه‌کنارهایی از معادلات رو تست کنن که هیچ دانشمندی در طول عمرش وقت و توان بررسی دستی‌شون رو نداشت.\n• ته بیانیه هم با دست پس زدن و با پا پیش کشیدن؛ یعنی اعتراف کردن که فرضیات تاریخی ریاضی‌دان‌ها درباره «امنیت پایدار» دیگه دود شده رفته هوا و قفل‌ها زودتر از حد تصور دارن زنگ می‌زنن.\n\nپیغام داستان روشنه رفقا؛ رمزهای بانکی امروز نمی‌ترکه، اما دورانی که می‌گفتن فلان الگوریتم تا صد سال دیگه نفوذناپذیره تموم شد؛ با این سرعتِ تحلیل ایجنت‌ها، عمر مفید دیوارهای امنیتی نصف شده و هر کدی که دیر به‌روزرسانی بشه حکم درِ باز رو پیدا می‌کنه.",
+  "date": "2026-11-06T22:09:05+00:00"
+ },
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/GoogleDeepMind/status/2118755418675765656",
+   "domain": "x.com",
+   "author": {
+    "name": "Google DeepMind",
+    "handle": "GoogleDeepMind",
+    "avatar": "https://pbs.twimg.com/profile_images/1695024885070737408/-M-HSH5P_200x200.jpg"
+   },
+   "text": "We’re sharing new research demonstrating how AI agents can accelerate the science of stress-testing encryption.\n\nGuided by humans, our models uncovered two major weaknesses in legacy 1024-bit RSA cryptosystems.\n\nOur VP Science @Pushmeet explains more ↓ https://x.com/pushmeet/status/2118752095859794390",
+   "date": 1793985631,
+   "media": [],
+   "links": [
+    "https://x.com/pushmeet/status/2118752095859794390"
+   ],
+   "quote": {
+    "author": {
+     "name": "Pushmeet Kohli",
+     "handle": "pushmeet",
+     "avatar": "https://pbs.twimg.com/profile_images/650718639784509440/yaRuXASm_200x200.jpg"
+    },
+    "text": "https://x.com/i/article/2118746079923437568",
+    "date": 1793984838,
+    "media": [],
+    "links": [
+     "https://x.com/i/article/2118746079923437568"
+    ]
+   }
+  }
+ ],
+ "article": {
+  "title": "دیپ‌مایند گوگل دوباره یه گرد و خاکی راه انداخته که هوش مصنوعی‌مون دست‌به‌کار شده و دو تا رخنه اساسی توی سیستم‌های رمزنگاری RSA پیدا کرده؛ ولی بذارید بدون تعارف و بزکِ مارکتینگ ببینیم کف قضیه چیه",
+  "source_title": "We’re sharing new research demonstrating how AI agents can accelerate the science of stress-testing encryption.",
+  "body": [
+   "دیپ‌مایند گوگل دوباره یه گرد و خاکی راه انداخته که هوش مصنوعی‌مون دست‌به‌کار شده و دو تا رخنه اساسی توی سیستم‌های رمزنگاری RSA پیدا کرده؛ ولی بذارید بدون تعارف و بزکِ مارکتینگ ببینیم کف قضیه چیه.",
+   "• سیستمی که زدن پنچرش کردن، نسخه قدیمی ۱۰۲۴ بیتی بوده؛ یعنی همون کدی که استاندارد جهانی بیشتر از یه دهه‌ست گذاشتش کنار و الان زیرساخت‌های جدی دنیا روی ۲۰۴۸ بیت یا رمزنگاری‌های خم بیضوی سوارن و فعلاً خطری تهدیدشون نمی‌کنه.",
+   "• نکته فنی و باارزش ماجرا اینه که تیم گوگل یه مشت ایجنت هوش مصنوعی رو انداخته به جون فرمول‌های ریاضی تا گوشه‌کنارهایی از معادلات رو تست کنن که هیچ دانشمندی در طول عمرش وقت و توان بررسی دستی‌شون رو نداشت.",
+   "• ته بیانیه هم با دست پس زدن و با پا پیش کشیدن؛ یعنی اعتراف کردن که فرضیات تاریخی ریاضی‌دان‌ها درباره «امنیت پایدار» دیگه دود شده رفته هوا و قفل‌ها زودتر از حد تصور دارن زنگ می‌زنن."
+  ],
+  "why": "پیغام داستان روشنه رفقا؛ رمزهای بانکی امروز نمی‌ترکه، اما دورانی که می‌گفتن فلان الگوریتم تا صد سال دیگه نفوذناپذیره تموم شد؛ با این سرعتِ تحلیل ایجنت‌ها، عمر مفید دیوارهای امنیتی نصف شده و هر کدی که دیر به‌روزرسانی بشه حکم درِ باز رو پیدا می‌کنه.",
+  "why_label": "حرف آخر",
+  "tags": [
+   "گوگل",
+   "ایجنت"
+  ]
+ },
+ "updated": "2026-11-06T22:11:19+00:00"
+}
