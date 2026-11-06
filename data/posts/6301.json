@@ -12,7 +12,7 @@
   "site": "🧵 Thread • FxTwitter",
   "title": "elvis (@omarsar0)",
   "description": "Highly recommended paper from NVIDIA.\n(bookmark it)\nThere is a lot of debate about whether to use context compaction aggressively.\nThey show that with frequent compaction, frontier language models lose little to no accuracy on a broad range of long-horizon…",
-  "image": "https://cdn4.telesco.pe/file/u9hWIQxxYbnY0LG1RC6IAfmDhnVo0leosw2Pzl5aBFUqTMldepeZ_Jp0pSk96OuoHxJoQRfmZGpccyOM2sqD0ityMBC-RuVOQb6doTXxe5S_w1bjRxlop0_0LLdmBkB-He-49REfLUIUlcfN3quHpccQcPLYo6zDIvUFdfpvDjW-XlYCz9WFI9HcNoq1uB6G0OPY-ftAYDhfadDWbR-mHkcMt6mfHPM66rPIrM-kS8R_bzSyJUs95CKZIz4sx3gWHmcB6koE4N8yXRVrHvYGo8ztQ-orLl8ggI3AMODdb6KM6dHx4LCr0hqttNwKQ6w1Mjjf46gduccgpy-xGqiGrQ.jpg"
+  "image": "https://cdn4.telesco.pe/file/IZBKIy9e_vZhkUCUAxNCgYJGZOT33I6QLhtoOoEen16rjaBMyBYjNBPwqaLg0mHIVtONPzbg3bkb0FPaqudQPg6DP6JvagEWHbLzN-DsvEh88Cwb3cw5SrX41UeJ4sYXzhVCMplQbn9psk5ecjgzG_I6dqseTW3j0MHhs4e7tDDX2L_z8-hn0qpov3tUx-Oc540oFvqLPM5OBBP7jPpC3E5zaXsCXgRdvZeD5fPXJdCo7LgnX3yX7suggxhBR9hZk3ypzLFY7ZxMU6QZJxea4OEK6WUu_eH_KiM50fAxHrb-WkEW7cvHNy16-cgyK9QER_46vmuny_24dSUn7x81fQ.jpg"
  },
  "gholam": {
   "text": "رفیق، بچه‌های انویدیا یه مقاله تازه دادن بیرون که اگه اهل کار کشیدن از ایجنت‌های هوش مصنوعی هستی، بدجوری به دردت می‌خوره. قضیه اینه که فهمیدن اصلاً نیازی نیست کل تاریخچه طولانی چت رو رو سر مدل خراب کنی؛ اگه هی جمع‌وجورش کنی و فقط یه خلاصه تمیز از وضعیت بهش بدی، دقتش ذره‌ای نمی‌ریزه و مدل گردن‌کلفتی مثل کلود اوپوس ۴.۵ با همین ترفند پیک بافتش از ۳۲ هزار توکن اومده رو ۸ هزار و نمره‌ش هم توی بنچمارک SWE-bench حتی از ۷۰ رسیده به نزدیک ۷۵! تازه تولید توکن‌های آخر چت تا هفت برابر گرون‌تر تموم میشه و این سبک فشرده‌سازی توی تست‌های مختلف مثل Terminal-Bench هم حسابی امتحانش رو پس داده. خلاصه کلام اینکه قبل خالی کردن جیبت برای ران‌های میلیونی، عقل حکم می‌کنه دست به دامن همین خلاصه‌سازی مرتب بشی.\n\nاهمیتش اینه که بدون افتادن کیفیت کار، هزینه سرسام‌آور سرور و مدل‌ها رو به شدت میاره پایین و سرعت خروجی رو چند برابر می‌کنه.",
@@ -65,5 +65,5 @@
    "آنتروپیک"
   ]
  },
- "updated": "2026-11-05T22:42:23+00:00"
+ "updated": "2026-11-06T05:10:29+00:00"
 }

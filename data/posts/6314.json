@@ -12,7 +12,7 @@
   "site": "FxTwitter",
   "title": "Rohan Paul (@rohanpaul_ai)",
   "description": "New Stanford paper finds that showing a small AI language model more examples cannot teach it a pattern it does not already notice, such as the third letter of a word.\nfinds that LLMs learn from few-shot examples by looking up stored labels, and only switch…",
-  "image": "https://cdn4.telesco.pe/file/tADz1xb5t1rSRKEsxDamHOJ8GH3hpn9WW97fpEvnVVaJ5YlA0Mi_W9LqxKrwV9vgWHiwCuMGPeZ3aLLbhAzerKgq2ulAlqxGe7CHvDyq5Rsybh_31q-KDgIYn-Q1Zjof3QP1Y1LI8m5PSdgI79QwWUvUFo2CLs6dfyeWkYi2EkhGKYkHc3X25vMOPS1i1ujy9u-bZ13rqLk3RvsJXUk7tdYLNFRA4bHtG1wrM2IH4Nsyl6GUARe4u4KA4lbUG1LDvgWhUrJGoAanBAXfKBdZjxt3MYhyd8oxHheXFI9KlFj6VdqCBPLoeFFpnWk21QTgeWb5-mUHItj6N5XclHRxQg.jpg"
+  "image": "https://cdn4.telesco.pe/file/N9-s2wXudLQjYgbzYj-Ck9cYURjampF6ijXi5XCC19WPaSORZwNXfNarv6M8OCsg9UUqdsSUKXhFLSMHygr6e3Dzxkohqt9q_bEM3DJbhIBM_B2svAu93hlGM7VHqRzbSWdf_o6iVTVi-Tj_DGaGPBt5oDcnm8vMNUEDf9ceXedXsqFIsTKgt9gzmal47jVkm-JE2PBh1y_hrITDyl_ptX9ivcd4O6uj9FsUnbT1m1X3AhAwTncx9cPrggQIw7Twnm79wXi9LluKgOEhRhcpnIFTAcru09BTdH3QqY0I8SfTmPerK4ZRbD3sHOAaUml9GIvO-hHkLCd6aC_2l10Kpw.jpg"
  },
  "gholam": {
   "text": "خیلی وقتا فکر می‌کنیم با چندتا مثال زدن توی پرامپت (Few-shot) داریم یه منطق کاملاً جدید رو توی مغز مدل هوش مصنوعی فرو می‌کنیم، ولی مقاله‌ی تازه‌ی بچه‌های استنفورد دست این فرضیه رو بدجور رو کرده.\n\n• واقعیت اینه که مدل‌ها چیزی از صفر یاد نمی‌گیرن؛ توی معماری مدل‌هایی مثل Llama-3.2 و Qwen، حدود ۹۰ تا هدِ توجه فقط وقتی موتورشون روشن می‌شه که ببینن یه «برچسب» چند بار تکرار شده تا برن سراغ مفاهیمی که از قبل بلد بودن.\n• آمار و ارقامشون واضحه: با ۱ مثال به ازای هر دسته، دقت مدل دوروبر ۲۰ درصد دست‌وپا می‌زنه، ولی به ۶ مثال که برسه جهش می‌کنه روی ۹۶ درصد، چون مدارِ مقایسه تازه راه می‌افته.\n• اگه مدلی یه ویژگی رو از قبل توی آموزش پایه‌ش نشناسه (مثلاً شمردن حرف سوم یه کلمه)، هرچقدرم بهش مثال نشون بدید، ذره‌ای نمی‌فهمه و دور باطل می‌زنه.\n\nخلاصه‌ی رفاقتیش اینه آبجی و داداش من: به مدل لقمه‌ی ناشناخته ندید؛ برای کار کشیدن درست از Few-shot، فقط ویژگی‌های آشنا رو با برچسب‌های تکراری و چند دور مثال براش دسته‌بندی کنید تا سیستمش کار بیفته.",
@@ -55,5 +55,5 @@
    "متا"
   ]
  },
- "updated": "2026-11-05T22:42:23+00:00"
+ "updated": "2026-11-06T05:10:29+00:00"
 }

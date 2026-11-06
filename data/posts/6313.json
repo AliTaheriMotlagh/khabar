@@ -12,7 +12,7 @@
   "site": "FxTwitter",
   "title": "Shayan Talaei (@talaei_shayan)",
   "description": "I made a 3D visualization of Ripple-65B Preview's architecture! Check it out here (with an easter egg): https://shayantalaei.com/ripple-65b/\nRipple is a dense model with 80 layers and a width of 5,120, so its aspect ratio is 64. That makes it very deep for…",
-  "image": "https://cdn4.telesco.pe/file/m1rJb8KwcmMexVptaXuurnQVeRqAjuAnKBJAnyo10qk0jM31q2Sza4B5ermgZvYyeqBi4PnfRPBStqfjDdTGUXEFCrvlOscndJKAuqe45VrYghLn6XL4hVeOCnu4Z--Ii8GmI0DgHfPxcRG1mwnqnYDIMIxVw58s8RWhWzPW0ZSfeY92ShrXmt2AFaTktbhyRbHa6bVfHj8Yj9KjbmBq8wjXjqbmVwU2uDL5mRXe-bUAUl8KX6M2b3-dG00yUUcfeJayUNL36KXIr2rIp7-_-WVBjEJqgTQIgRGF292CaYzR3xcPBh5jjx3Yv34yjsLlAXx09C-nl4yGEikEq4NjXA.jpg"
+  "image": "https://cdn4.telesco.pe/file/dY-91chShWVm30HzUeg6V2etDCKmS-E__q_ZNM-vf4ZydGf5qFFQzmPvQOHAiqCaudGFe2MqCW0A4fPjeUVPXYzh-giz2Ax6c3GIQwu76qLTx-r1S5EA3u2pUWLn5RUSYkxzeVa2Gajiv0wQdIdEaN_gbu-pbcAsPklvnIw2zrT4w5t98fAApAkUd9NpPClRFO2TpLqCK6lffDqnaL9ieHA02KUZkbN9xguLuX0j0rsq8kpQzonHUwv3D1ZFinvTnif5JlK4gc7Pe6zwRCssMM7hjbOGsChCuiaakuY-u0sOekw6cw4VLCLyH8ip9FcpBhNydtEEqWeutpXBkD009w.jpg"
  },
  "gholam": {
   "text": "بچه‌های تیم ریکرسیو با دست‌فرمون شایان طلایی یه مدل ۶۵ میلیاردی دادن بیرون به اسم Ripple-65B که ادعا می‌کنه تو کدنویسی ایجنتی شاخ غول‌های چندصد میلیاردی رو شکسته، اما اصل قصه زیر کاپوت و معماری متفاوتیه که سوار کردن:\n\n• با ۸۰ تا لایه و عرض ۵,۱۲۰، نسبت ابعادش شده ۶۴؛ یعنی با یه ساختار به‌شدت عمیق و لاغر طرفیم که روی کاغذ، اطلاعات توکن اولیه وسط این همه لایه شسته و رقیق می‌شه.\n• اینا به جای اینکه مثل DeepSeek یا Kimi دست به ساختار اصلی مسیر پس‌ماند (Residual Stream) بزنن، تکنیک Value Residuals رو پیاده کردن؛ یعنی امبدینگ توکن اصلی رو مستقیماً با وزن‌های یادگرفتنی به مقادیر اتنشن (Attention Values) هر لایه تزریق می‌کنن تا رد پای ورودی گم نشه.\n• طبق ادعای خودشون، همین حقه معماری باعث شده مدل با فقط ۶۵ میلیارد پارامتر دنس، مدل‌های فیل‌پیکری مثل Muse Spark-816B و Inkling-975B رو تو تسک‌های برنامه‌نویسی ایجنتی جا بذاره و پرچم‌دار متن‌بازهای آمریکایی بشه.\n\nطراحی قشنگه و مهندسی پشتش تمیزه رفقا، اما باید دید این عمق وحشتناک لایه‌ها موقع اجرای تجاری و زیر بار، تو سرعت تولید توکن تاوان حافظه نمی‌ده یا نه.",
@@ -93,5 +93,5 @@
    "چین"
   ]
  },
- "updated": "2026-11-05T22:42:23+00:00"
+ "updated": "2026-11-06T05:10:29+00:00"
 }
