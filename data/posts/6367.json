@@ -1,0 +1,64 @@
+{
+ "id": 6367,
+ "url": "https://t.me/dlmehr/6367",
+ "date": "2026-11-06T21:46:48+00:00",
+ "text": "https://fxtwitter.com/anthropicai/status/2118814753154064501?a=LdnhVunWR76VNQVSVH4&s=52",
+ "forwarded_from": null,
+ "digest": false,
+ "hash": "8fdc63414ae3",
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/anthropicai/status/2118814753154064501?a=LdnhVunWR76VNQVSVH4&s=52",
+  "site": "FxTwitter · anthropic.com",
+  "title": "Anthropic (@AnthropicAI)",
+  "description": "Memory is what allows Claude to learn from experience. In a new Engineering Blog post, we share how “dreaming” helps Claude organize what it’s learned, correct its mistakes, and find what it needs more easily the next time. https://www.anthropic.com/research/components…",
+  "image": "https://cdn4.telesco.pe/file/CpM9mWt0U2GYIHd5XzGz6VNKStSgyZM05KUndvJljNsuRFd9_sc3ANSgzV7CLENt-WO0Q3i3XOcC1b6KlC_KPY9n_wfhZYFMcSsbAjMJhQMHVERVgZdoKtk0fn8ady1vF9lkCuN7K6CktuF4DQYJy5dt4n95Ia3x83d61NhZF7l_GsPR6tbruT4ddT5q78a5DPqHmOTA63GHZS6WP7E8qHd2OBN3jAfUsr9ipx0Na3nees4bUliLWucUBH-gGmjxltdUXXFGjt0GKOj274AJUOcsg3AgO0XpB3hLF90sgiBxqmtLcuZkMUp0JB_Tms6bQP0P-9Lo4Mrz7DiaKKG62A.jpg"
+ },
+ "gholam": {
+  "text": "حضرات آنتروپیک باز دست به کیبورد شدن و با یه واژهٔ شاعرانه به اسم «خواب دیدن» (Dreaming)، رفتن سراغ حل یکی از گیرهای اساسی هوش مصنوعی: یعنی همون حافظهٔ بلندمدت ایجنت‌ها.\n\n• قصه چیه؟ این اصطلاح باکلاسِ «رویا دیدن» در اصل همون فرآیند *Consolidation* یا بازخوانی و فشرده‌سازی اطلاعات در پس‌زمینه‌ست؛ یعنی وقتی سیستم بیکاره و با کاربر چت نمی‌کنه، می‌شینه لاگ مکالمات قبلی رو ورق می‌زنه، تناقض‌ها و سوتی‌هاش رو اصلاح می‌کنه و نکات کلیدی رو مرتب می‌چینه تو دیتابیس.\n• گیر کار تا الان کجا بود؟ نگه‌داشتن کل تاریخچهٔ مکالمات تو پنجرهٔ زمینه (Context Window) هم خرج توکن رو سرسام‌آور می‌کرد، هم مدل بعد یه مدت دچار حواس‌پرتی و توهم می‌شد؛ حالا می‌خوان با هرس کردن مداوم خاطرات، فقط لبّ کلام رو نگه دارن.\n\nاسمش رو گذاشتن «رویا دیدن کلود»، ولی تهش همون دیفرگ کردن هارد و جاروکشی دیتابیس تو شیفت شبه تا فردا که کارش داری، آلزایمر نگیره و یادش بمونه دیروز چی بهش گفتی.",
+  "date": "2026-11-06T21:47:20+00:00"
+ },
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/AnthropicAI/status/2118814753154064501",
+   "domain": "x.com",
+   "author": {
+    "name": "Anthropic",
+    "handle": "AnthropicAI",
+    "avatar": "https://pbs.twimg.com/profile_images/1798110641414443008/XP8gyBaY_200x200.jpg"
+   },
+   "text": "Memory is what allows Claude to learn from experience. In a new Engineering Blog post, we share how “dreaming” helps Claude organize what it’s learned, correct its mistakes, and find what it needs more easily the next time. https://www.anthropic.com/research/components-of-agent-memory",
+   "date": 1793999777,
+   "media": [],
+   "links": [
+    "https://www.anthropic.com/research/components-of-agent-memory"
+   ]
+  },
+  {
+   "kind": "link",
+   "url": "https://www.anthropic.com/research/components-of-agent-memory",
+   "domain": "anthropic.com",
+   "title": "The components of agent memory",
+   "description": "For Claude to learn from experience, it has to decide what’s worth remembering before it knows what’s next. Here’s how “dreaming” helps it organize memory and correct mistakes.",
+   "image": "https://www-cdn.anthropic.com/images/4zrzovbb/website/6ab2663a2c0bd6a41409d90136a59a5d72995ea5-1200x630.jpg",
+   "site": "anthropic.com"
+  }
+ ],
+ "article": {
+  "title": "حضرات آنتروپیک باز دست به کیبورد شدن و با یه واژهٔ شاعرانه به اسم «خواب دیدن» (Dreaming)، رفتن سراغ حل یکی از گیرهای اساسی هوش مصنوعی: یعنی همون حافظهٔ بلندمدت ایجنت‌ها",
+  "source_title": "Memory is what allows Claude to learn from experience. In a new Engineering Blog post, we share how “dreaming” helps Claude organize what…",
+  "body": [
+   "حضرات آنتروپیک باز دست به کیبورد شدن و با یه واژهٔ شاعرانه به اسم «خواب دیدن» (Dreaming)، رفتن سراغ حل یکی از گیرهای اساسی هوش مصنوعی: یعنی همون حافظهٔ بلندمدت ایجنت‌ها.",
+   "• قصه چیه؟ این اصطلاح باکلاسِ «رویا دیدن» در اصل همون فرآیند *Consolidation* یا بازخوانی و فشرده‌سازی اطلاعات در پس‌زمینه‌ست؛ یعنی وقتی سیستم بیکاره و با کاربر چت نمی‌کنه، می‌شینه لاگ مکالمات قبلی رو ورق می‌زنه، تناقض‌ها و سوتی‌هاش رو اصلاح می‌کنه و نکات کلیدی رو مرتب می‌چینه تو دیتابیس.",
+   "• گیر کار تا الان کجا بود؟ نگه‌داشتن کل تاریخچهٔ مکالمات تو پنجرهٔ زمینه (Context Window) هم خرج توکن رو سرسام‌آور می‌کرد، هم مدل بعد یه مدت دچار حواس‌پرتی و توهم می‌شد؛ حالا می‌خوان با هرس کردن مداوم خاطرات، فقط لبّ کلام رو نگه دارن."
+  ],
+  "why": "اسمش رو گذاشتن «رویا دیدن کلود»، ولی تهش همون دیفرگ کردن هارد و جاروکشی دیتابیس تو شیفت شبه تا فردا که کارش داری، آلزایمر نگیره و یادش بمونه دیروز چی بهش گفتی.",
+  "why_label": "حرف آخر",
+  "tags": [
+   "آنتروپیک",
+   "ایجنت"
+  ]
+ },
+ "updated": "2026-11-06T21:50:25+00:00"
+}
