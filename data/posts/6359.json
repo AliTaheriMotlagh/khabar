@@ -1,0 +1,70 @@
+{
+ "id": 6359,
+ "url": "https://t.me/dlmehr/6359",
+ "date": "2026-11-06T15:20:53+00:00",
+ "text": "https://fxtwitter.com/kimmonismus/status/2118696440319062302?a=lzsskWzWCcHvQKe91oE&s=52",
+ "forwarded_from": null,
+ "digest": false,
+ "hash": "0229c37cfe7c",
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/kimmonismus/status/2118696440319062302?a=lzsskWzWCcHvQKe91oE&s=52",
+  "site": "FxTwitter",
+  "title": "Chubby ♨️ (@kimmonismus)",
+  "description": "Baidu just dropped ERNIE-5.5-Flash-Base, and the weights are available.\n280B MoE, only 14B active per token, pretrained from scratch on 33.5T tokens. It's a pure base model with no mid- or post-training, so labs can adapt it for domain-specific tasks, reasoning…",
+  "image": "https://cdn4.telesco.pe/file/TYoBfvahxoHN2eGdNZYStdut8yDa30rQJevPfdMCorLo4qq_Y4bNozPa611Y8-nB3xMDCad8SA4a_hZhbWKxF9Z5k7c0C6uGaBtQHvMnAmXuknoVFJfAtqFc8xzR0L8Ii-E-KRjFRD8Zc4yVldkEvHi9IYwIIIo_DGSotyx02cLyUkES7u4JPRLq1vm9FS5aCdeo_1bH8v6fUkthBH2rG_k9VpzLq0Xwe2R5GdRTvNlbJxL46QoBmgenencqnVCXusJlcFt53F-RzClYlcUb6WCvR-e5iJJEUAqBpcY_dyDMFD_kzcmPzZ7696UZtS6gJ94smbqb6SLimdMmoAvBzA.jpg"
+ },
+ "gholam": {
+  "text": "چینی‌ها دوباره بازار هوش مصنوعی رو تکون دادن؛ بایدو مدل پایه ERNIE-5.5-Flash رو با وزن‌های باز فرستاد توی میدون تا نشون بده برای زیر کشیدن دیپ‌سیک شمشیر رو از رو بسته.\n\n• کل هیبت این غول MoE حدود ۲۸۰ میلیارد پارامتره، اما سرِ چرخ، فقط ۱۴ میلیارد پارامتر فعال درگیر میشن؛ با ۳۳.۵ تریلیون توکن چکش‌کاری شده و با یه فرمول فشرده‌سازی تر و تمیز روی لایه‌های حافظه، تا ۱ میلیون توکن کانتکست رو بدون خفه کردن سرور قورت میده.\n• توی بنچمارک‌های اولیه فنی و کدنویسی، یقهٔ رقیب هم‌قدش یعنی DeepSeek-V4-Flash رو محکم چسبیده و جا گذاشته (مثلاً توی HumanEval+ عدد ۸۲.۳ در برابر ۶۹.۵).\n• مدل روی هاگینگ‌فیس در دسترسه، اما طبق معمول دم خروس حقوقی زده بیرون و لایسنسش ||کاربرهای اتحادیه اروپا، بریتانیا و کره جنوبی رو کاملاً خط زده||.\n\nبازی الان دیگه سرِ گنده‌تر کردن الکی مدل‌ها نیست، دعوا سر اینه کی می‌تونه همین مغز رو با کمترین خرج چیپست و برق راه بندازه؛ چینی‌ها هم این ترفند رو فوت آب شدن.",
+  "date": "2026-11-06T15:21:15+00:00"
+ },
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/kimmonismus/status/2118696440319062302",
+   "domain": "x.com",
+   "author": {
+    "name": "Chubby♨️",
+    "handle": "kimmonismus",
+    "avatar": "https://pbs.twimg.com/profile_images/1728327996375719936/RW7VBJfD_200x200.jpg"
+   },
+   "text": "Baidu just dropped ERNIE-5.5-Flash-Base, and the weights are available.\n\n280B MoE, only 14B active per token, pretrained from scratch on 33.5T tokens. It's a pure base model with no mid- or post-training, so labs can adapt it for domain-specific tasks, reasoning, and agents.\n\nWhat makes it exciting is how hard it pushes on efficiency:\n\n- Only 6 of 43 layers keep token-level access to the full context. The other 37 squeeze every 128 tokens into a single cached entry, which keeps the KV cache small. Context still goes up to 1M tokens for fine-tuning and inference.\n- Multi-Router MoE: several routers pick the experts together instead of just one, without increasing activated expert compute or communication costs.\n- ECHO: multi-token prediction runs through the model's own final layer, no separate MTP module needed.\n\nAnd the early numbers look strong. In Baidu's preliminary evals against DeepSeek-V4-Flash-Base, a model of almost the same size:\n\n- MMLU-Pro: 78.4 vs. 69.2\n- HumanEval+: 82.3 vs. 69.5\n- LiveCodeBench: 40.1 vs. 31.9\n\nWeights are live on Hugging Face in FP8 and BF16:\nhttps://huggingface.co/collections/baidu/ernie-55-flash\n\nThe model license excludes the EU, UK, and South Korea from its permitted territory.",
+   "date": 1793971569,
+   "media": [
+    {
+     "type": "image",
+     "src": "https://pbs.twimg.com/media/HWcfLtRa4AAxPvZ.png?name=orig",
+     "ratio": 0.625
+    }
+   ],
+   "links": [
+    "https://huggingface.co/collections/baidu/ernie-55-flash"
+   ]
+  },
+  {
+   "kind": "link",
+   "url": "https://huggingface.co/collections/baidu/ernie-55-flash",
+   "domain": "huggingface.co",
+   "title": "ERNIE-5.5-Flash - a baidu Collection",
+   "description": "Collection of ERNIE-5.5-Flash models.",
+   "image": "https://cdn-thumbnails.huggingface.co/social-thumbnails/collections/baidu/ernie-55-flash-6aebf6ba5223a590f0b072fb.png",
+   "site": "huggingface.co"
+  }
+ ],
+ "article": {
+  "title": "چینی‌ها دوباره بازار هوش مصنوعی رو تکون دادن؛ بایدو مدل پایه ERNIE-5.5-Flash رو با وزن‌های باز فرستاد توی میدون تا نشون بده برای زیر کشیدن دیپ‌سیک شمشیر رو از رو بسته",
+  "source_title": "Baidu just dropped ERNIE-5.5-Flash-Base, and the weights are available.",
+  "body": [
+   "چینی‌ها دوباره بازار هوش مصنوعی رو تکون دادن؛ بایدو مدل پایه ERNIE-5.5-Flash رو با وزن‌های باز فرستاد توی میدون تا نشون بده برای زیر کشیدن دیپ‌سیک شمشیر رو از رو بسته.",
+   "• کل هیبت این غول MoE حدود ۲۸۰ میلیارد پارامتره، اما سرِ چرخ، فقط ۱۴ میلیارد پارامتر فعال درگیر میشن؛ با ۳۳.۵ تریلیون توکن چکش‌کاری شده و با یه فرمول فشرده‌سازی تر و تمیز روی لایه‌های حافظه، تا ۱ میلیون توکن کانتکست رو بدون خفه کردن سرور قورت میده.",
+   "• توی بنچمارک‌های اولیه فنی و کدنویسی، یقهٔ رقیب هم‌قدش یعنی DeepSeek-V4-Flash رو محکم چسبیده و جا گذاشته (مثلاً توی HumanEval+ عدد ۸۲.۳ در برابر ۶۹.۵).",
+   "• مدل روی هاگینگ‌فیس در دسترسه، اما طبق معمول دم خروس حقوقی زده بیرون و لایسنسش ||کاربرهای اتحادیه اروپا، بریتانیا و کره جنوبی رو کاملاً خط زده||."
+  ],
+  "why": "بازی الان دیگه سرِ گنده‌تر کردن الکی مدل‌ها نیست، دعوا سر اینه کی می‌تونه همین مغز رو با کمترین خرج چیپست و برق راه بندازه؛ چینی‌ها هم این ترفند رو فوت آب شدن.",
+  "why_label": "حرف آخر",
+  "tags": [
+   "چین"
+  ]
+ },
+ "updated": "2026-11-06T15:24:21+00:00"
+}
