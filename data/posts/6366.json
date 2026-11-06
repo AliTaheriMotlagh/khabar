@@ -1,0 +1,64 @@
+{
+ "id": 6366,
+ "url": "https://t.me/dlmehr/6366",
+ "date": "2026-11-06T21:38:04+00:00",
+ "text": "https://fxtwitter.com/anthropicai/status/2118792930211107115?a=R-lPNAmmxPaU-7bipO8&s=52",
+ "forwarded_from": null,
+ "digest": false,
+ "hash": "251096987646",
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/anthropicai/status/2118792930211107115?a=R-lPNAmmxPaU-7bipO8&s=52",
+  "site": "FxTwitter · anthropic.com",
+  "title": "Anthropic (@AnthropicAI)",
+  "description": "New on our Science Blog: How AI is beginning to change scientific modeling.\nScientific models help researchers explain and predict real-world systems—like how a single nerve cell fires, or what happens when neutron stars collide. Recent advances have transformed…",
+  "image": "https://cdn4.telesco.pe/file/WNUxTGIOg8qVwOTe5z0saat-UFyb1n9_afeG8bPrWmzmzTkGDJc5KsjSctAKCS-xbsZaeOsEOnWTZKqiOlpGEQg2_oLTPco23M-5aBzYV9m0MtphTcCD3pX711XHPr0BvfMAnrDfw8Nvr1_lmErrP260FYayuIZGFVA2G9wpRECasvux8fiI55MrgKGrn_9xeZg6DCkS0YMd2c8VRwS7HXr34nRW6lPo9_XKkahS13wg-ejc7Zr86L5d-gttmX0oIm3HehV4NBOAi3tkyzMrgry3ltdqzXCaBigteLckOko8OD654LTdxRL_84ADHM-gFE3f-vZ9JvcCcqoCG4D2Kw.jpg"
+ },
+ "gholam": {
+  "text": "ملت توی کامنت‌ها یقه جر می‌دن که «داداش مدل جدید کدنویسی رو بده بیرون کار داریم»، اون وقت آنتروپیک نشسته واسه ما انشای آکادمیک منتشر می‌کنه!\n\n• اصل ماجرا اینه که یه پست پژوهشی دادن بیرون با همکاری سه تا محقق دانشگاهی (ماکه، گدون و وال)، درباره اینکه هوش مصنوعی چطوری قراره شیوه «مدل‌سازی علمی» رو دگرگون کنه.\n• ایده چیه؟ تا دیروز دانشمند جماعت باید دستی می‌نشست برای پدیده‌ها (از شلیک نورون مغز تا برخورد ستاره‌های نوترونی) فرمول و کد می‌نوشت؛ حالا قراره خود مدل هوش مصنوعی کدهای ریاضی رو بنویسه، ران کنه، با داده‌ها بسنجه و مدل‌های بهتر پیشنهاد بده.\n\nتحقیق و کار علمی‌شون محترمه، ولی حکایت دکونداریه که خلق‌الله دم مغازه‌ش صف کشیدن جنس بخرن، اونم میاد پشت بلندگو راجع به فواید مدیتیشن سخنرانی می‌کنه؛ رفقا فعلاً منتظر شاهکار بعدی توی کدنویسی و ابزار کارن، نه مشق شبِ آزمایشگاهی.",
+  "date": "2026-11-06T21:38:25+00:00"
+ },
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/AnthropicAI/status/2118792930211107115",
+   "domain": "x.com",
+   "author": {
+    "name": "Anthropic",
+    "handle": "AnthropicAI",
+    "avatar": "https://pbs.twimg.com/profile_images/1798110641414443008/XP8gyBaY_200x200.jpg"
+   },
+   "text": "New on our Science Blog: How AI is beginning to change scientific modeling.\n\nScientific models help researchers explain and predict real-world systems—like how a single nerve cell fires, or what happens when neutron stars collide. Recent advances have transformed how scientists fit complex models to data. But scientists still typically write the models manually, and usually need to weigh up several competing versions, each of which might explain the data in a different way.\n\nIn a guest post, Jakob Macke, Daniel Gedon, and Stefan Wahl describe how AI is starting to help with these parts of the process. By writing, running, fitting, and revising scientific models as code, AI can explore many possible model structures, and find out which explanations the data support.\n\nhttps://www.anthropic.com/research/teaching-ai-to-build-scientific-models",
+   "date": 1793994574,
+   "media": [],
+   "links": [
+    "https://www.anthropic.com/research/teaching-ai-to-build-scientific-models"
+   ]
+  },
+  {
+   "kind": "link",
+   "url": "https://www.anthropic.com/research/teaching-ai-to-build-scientific-models",
+   "domain": "anthropic.com",
+   "title": "Teaching AI to build scientific models",
+   "description": "AI for Science grantees Jakob Macke, Daniel Gedon, and Stefan Wahl on how AI is starting to change how scientific models are built and interpreted.",
+   "image": "https://www-cdn.anthropic.com/images/4zrzovbb/website/ef92f028259401d07c41e3ea51f5ec32b958584d-2000x1125.jpg",
+   "site": "anthropic.com"
+  }
+ ],
+ "article": {
+  "title": "ملت توی کامنت‌ها یقه جر می‌دن که «داداش مدل جدید کدنویسی رو بده بیرون کار داریم»، اون وقت آنتروپیک نشسته واسه ما انشای آکادمیک منتشر می‌کنه",
+  "source_title": "New on our Science Blog: How AI is beginning to change scientific modeling.",
+  "body": [
+   "ملت توی کامنت‌ها یقه جر می‌دن که «داداش مدل جدید کدنویسی رو بده بیرون کار داریم»، اون وقت آنتروپیک نشسته واسه ما انشای آکادمیک منتشر می‌کنه!",
+   "• اصل ماجرا اینه که یه پست پژوهشی دادن بیرون با همکاری سه تا محقق دانشگاهی (ماکه، گدون و وال)، درباره اینکه هوش مصنوعی چطوری قراره شیوه «مدل‌سازی علمی» رو دگرگون کنه.",
+   "• ایده چیه؟ تا دیروز دانشمند جماعت باید دستی می‌نشست برای پدیده‌ها (از شلیک نورون مغز تا برخورد ستاره‌های نوترونی) فرمول و کد می‌نوشت؛ حالا قراره خود مدل هوش مصنوعی کدهای ریاضی رو بنویسه، ران کنه، با داده‌ها بسنجه و مدل‌های بهتر پیشنهاد بده."
+  ],
+  "why": "تحقیق و کار علمی‌شون محترمه، ولی حکایت دکونداریه که خلق‌الله دم مغازه‌ش صف کشیدن جنس بخرن، اونم میاد پشت بلندگو راجع به فواید مدیتیشن سخنرانی می‌کنه؛ رفقا فعلاً منتظر شاهکار بعدی توی کدنویسی و ابزار کارن، نه مشق شبِ آزمایشگاهی.",
+  "why_label": "حرف آخر",
+  "tags": [
+   "کدنویسی",
+   "آنتروپیک"
+  ]
+ },
+ "updated": "2026-11-06T21:42:20+00:00"
+}
