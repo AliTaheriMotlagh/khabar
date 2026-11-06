@@ -1,0 +1,69 @@
+{
+ "id": 6353,
+ "url": "https://t.me/dlmehr/6353",
+ "date": "2026-11-06T03:47:13+00:00",
+ "text": "https://fxtwitter.com/0interestrates/status/2118473925902635507?a=oXMenRZBfl3B44prDuA&s=52",
+ "forwarded_from": null,
+ "digest": false,
+ "hash": "4f43df9aaa9f",
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/0interestrates/status/2118473925902635507?a=oXMenRZBfl3B44prDuA&s=52",
+  "site": "🧵 Thread • FxTwitter",
+  "title": "rahul (@0interestrates)",
+  "description": "Today we're releasing DeepFinance, the first ultra-long horizon benchmark for high finance work.\nA set of 21 problems that reflect work at top PE and IB firms, DeepFinance is built using real deal data.\nProblems are constructed by experts with backgrounds…",
+  "image": "https://cdn4.telesco.pe/file/G5xVMsXR4J8B7XxyvF6LLRpI4CsJzeAZcguABQn3vHf4biE0HcUB8hnAliT3l4nIwa3JhE1_xfd9fwWFq3QqW9DbQ95KkCVckIeANO8knudVF98y4UTZ8Rgcu6lgLWfWjVxZIFXOzvecLyg9STRiEVehJfdzkhOj6C6voqsIyHvAhD4CBBuUVm4jpAfZdHqdToOriEYHt9Kiug1pVRUyK4cysv2b8JdITGswgLuFkSPS58nmQcDTQCeBxtlQVsN7MoJ-Z4WUtZteRrHhPxFxj5a9eGjXFNbXPo6iciWjisEgX-zzTt-yT6TtOhnAy4OPJAtl34lEJNMXTlXqGQXaDg.jpg"
+ },
+ "gholam": {
+  "text": "بچه‌های Julius AI دست گذاشتن رو نقطه حساس وال‌استریت و بنچمارکی به اسم DeepFinance دادن بیرون تا ببینن این مدل‌های پرادعا واقعاً عرضه‌ی چرخوندن یه معامله بالای ۱۰۰ میلیون دلاری رو دارن یا فقط بلدن جدول ضرب اکسل تحویل بدن.\n\n• ۲۱ پرونده سنگین و واقعی از دل معاملات پرایوت اکوئیتی و بانکداری سرمایه‌گذاری، طراحی‌شده توسط کارکشته‌های Evercore و JP Morgan؛ کارهایی که برای یه تحلیل‌گر استخوان‌خردکرده ۲۰ تا ۴۰ ساعت زمان می‌بره.\n• نتایج روی زمین: بهترین و شاخ‌ترین مدل تو این آزمون‌ها زورش فقط به نمره ||۵۴.۶|| رسیده و کف جدول هم رو حوالی ۲۰ دست‌وپا می‌زنه؛ یعنی تا منطق و تصمیم‌گیری واقعی فرسنگ‌ها فاصله دارن.\n\nداداش، روخوانی صورت مالی و چهار تا فرمول سرراست رو هر مدلی با زرق‌وبرق انجام میده، اما وقتی پای فرض‌های ضدونقیض و بستن قراردادهای کلان وسط بیاد، هنوزم عیار این ای‌آی‌ها به نصف نمره قبولی هم نمیرسه.",
+  "date": "2026-11-06T03:47:33+00:00"
+ },
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/0interestrates/status/2118473925902635507",
+   "domain": "x.com",
+   "author": {
+    "name": "rahul",
+    "handle": "0interestrates",
+    "avatar": "https://pbs.twimg.com/profile_images/2090250525086470144/0bkVC417_200x200.jpg"
+   },
+   "text": "Today we're releasing DeepFinance, the first ultra-long horizon benchmark for high finance work.\n\nA set of 21 problems that reflect work at top PE and IB firms, DeepFinance is built using real deal data.\n\nProblems are constructed by experts with backgrounds from top firms like Evercore, JPM and UBS, and institutions like HBS and Wharton. Problems represent work that would take human professionals 20-40 hours to complete.\n\nCan AI really diligence a $100M+ deal? Finance benchmarks today are limited to evaluating agents on QA on financial docs or grading the numerical correctness of simple financial models. However, real world high finance work is full of assumptions and conflicting evidence. We built DeepFinance to realistically evaluate agents on those end-to-end finance workflows.\n\nDeepFinance leaderboard: http://juliusresearch.ai/deep-finance",
+   "date": 1793918517,
+   "media": [
+    {
+     "type": "image",
+     "src": "https://pbs.twimg.com/media/HWZUffWakAA8zhD.jpg?name=orig",
+     "ratio": 1.0278
+    }
+   ],
+   "links": [
+    "http://juliusresearch.ai/deep-finance"
+   ]
+  },
+  {
+   "kind": "link",
+   "url": "https://www.juliusresearch.ai/deep-finance",
+   "domain": "juliusresearch.ai",
+   "title": "DeepFinance",
+   "description": "An ultra long-horizon benchmark for measuring models on real-world Private Equity and Investment Banking workflows, graded on output, workflow, and judgment.",
+   "image": "https://juliusresearch.ai/deep-finance/opengraph-image?df145e30c2b8b516",
+   "site": "Julius Research"
+  }
+ ],
+ "article": {
+  "title": "بچه‌های Julius AI دست گذاشتن رو نقطه حساس وال‌استریت و بنچمارکی به اسم DeepFinance دادن بیرون تا ببینن این مدل‌های پرادعا واقعاً عرضه‌ی چرخوندن یه معامله بالای ۱۰۰ میلیون دلاری رو دارن یا فقط بلدن جدول ضرب اکسل تحویل بدن",
+  "source_title": "Today we're releasing DeepFinance, the first ultra-long horizon benchmark for high finance work.",
+  "body": [
+   "بچه‌های Julius AI دست گذاشتن رو نقطه حساس وال‌استریت و بنچمارکی به اسم DeepFinance دادن بیرون تا ببینن این مدل‌های پرادعا واقعاً عرضه‌ی چرخوندن یه معامله بالای ۱۰۰ میلیون دلاری رو دارن یا فقط بلدن جدول ضرب اکسل تحویل بدن.",
+   "• ۲۱ پرونده سنگین و واقعی از دل معاملات پرایوت اکوئیتی و بانکداری سرمایه‌گذاری، طراحی‌شده توسط کارکشته‌های Evercore و JP Morgan؛ کارهایی که برای یه تحلیل‌گر استخوان‌خردکرده ۲۰ تا ۴۰ ساعت زمان می‌بره.",
+   "• نتایج روی زمین: بهترین و شاخ‌ترین مدل تو این آزمون‌ها زورش فقط به نمره ||۵۴.۶|| رسیده و کف جدول هم رو حوالی ۲۰ دست‌وپا می‌زنه؛ یعنی تا منطق و تصمیم‌گیری واقعی فرسنگ‌ها فاصله دارن."
+  ],
+  "why": "داداش، روخوانی صورت مالی و چهار تا فرمول سرراست رو هر مدلی با زرق‌وبرق انجام میده، اما وقتی پای فرض‌های ضدونقیض و بستن قراردادهای کلان وسط بیاد، هنوزم عیار این ای‌آی‌ها به نصف نمره قبولی هم نمیرسه.",
+  "why_label": "حرف آخر",
+  "tags": [
+   "ایجنت"
+  ]
+ },
+ "updated": "2026-11-06T03:51:20+00:00"
+}
