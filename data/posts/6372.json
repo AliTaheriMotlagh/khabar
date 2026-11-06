@@ -1,0 +1,73 @@
+{
+ "id": 6372,
+ "url": "https://t.me/dlmehr/6372",
+ "date": "2026-11-06T22:53:15+00:00",
+ "text": "https://fxtwitter.com/nousresearch/status/2118822925445050435?a=8bDfk-34TKSL3umBFag&s=52",
+ "forwarded_from": null,
+ "digest": false,
+ "hash": "e0e8c4da872b",
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/nousresearch/status/2118822925445050435?a=8bDfk-34TKSL3umBFag&s=52",
+  "site": "🧵 Thread • FxTwitter",
+  "title": "Nous Research (@NousResearch)",
+  "description": "Introducing Arete-27B: Qwen3.8-27B, post-trained to reinforce Western values.\nChinese open models are currently the strongest available, but they ship with state-aligned behavior in the weights. We built an 803-prompt eval across seven value categories,…",
+  "image": null
+ },
+ "gholam": {
+  "text": "بچه‌ها تو Nous Research دیدن مدل‌های چینی مثل Qwen روی کاغذ غول مرحله آخرن ولی تا دهن باز می‌کنن ساز پکن رو می‌زنن، اومدن یه نسخه درآوردن به اسم Arete تا به قول خودشون «ارزش‌های غربی» رو تو مخ مدل فرو کنن.\n\n• مدل بیس همین Qwen-27B بوده که تو بنچمارک ۸۰۳ سؤالیِ اینا، ۲۲ درصد مواقع دقیقاً همون خط فکری و سانسورهای رسمی دولت چین رو بازگو می‌کرده.  \n• با یه فاین‌تیون خیلی سبکِ ۵۳ میلیون توکنی، اون نرخ جهت‌گیری رو رسوندن به ||۱ درصد||، بدون اینکه به بنچمارک‌های فنی و هوش مدل خط بیفته.  \n• کل دیتاست و وزن‌ها رو هم رایگان دادن بیرون تا عملاً ثابت کنن تغییر رفتار مدل کار دو روزه.\n\nحکایت همون ضرب‌المثله که می‌گه از چاله دراومدن و افتادن تو چاه؛ تعصب پکن رو گرفتن و سوگیری غربی رو جاش قالب کردن. ولی گیر فنی و واقعی قصه جای دیگه‌ست رفیق: این ماجرا ثابت کرد «اخلاق و جهت‌گیری» تو هوش مصنوعی عملاً هیچ ریشه‌ای نداره؛ فقط یه فاین‌تیون ارزون‌قیمت با تغییر عقیده فاصله داره و مدل دست هرکی بیفته، همون سازی رو می‌زنه که براش کوک کنن.",
+  "date": "2026-11-06T22:53:42+00:00"
+ },
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/NousResearch/status/2118822925445050435",
+   "domain": "x.com",
+   "author": {
+    "name": "Nous Research",
+    "handle": "NousResearch",
+    "avatar": "https://pbs.twimg.com/profile_images/1816254738234761216/TX7TW-Mp_200x200.jpg"
+   },
+   "text": "Introducing Arete-27B: Qwen3.8-27B, post-trained to reinforce Western values.\n\nChinese open models are currently the strongest available, but they ship with state-aligned behavior in the weights. We built an 803-prompt eval across seven value categories, including freedom of expression, democracy, and privacy, and measured how often a model adopts China’s party line.\n\nAfter fine-tuning on roughly 53 million tokens, Arete-27B's propaganda rate fell from 22% to 1%, in line with the Western models we tested. Its Hermes Bench score shows no significant performance tradeoffs.\n\nThe values in an open model are one fine-tune away. \n\nOur eval, weights, and training data are available now along with the full blog post: http://nousresearch.com/arete",
+   "date": 1794001725,
+   "media": [
+    {
+     "type": "video",
+     "src": "https://video.twimg.com/amplify_video/2118807764206030848/vid/avc1/1076x720/4SI8BEYvamdNBCeL.mp4?tag=29",
+     "poster": "https://pbs.twimg.com/amplify_video_thumb/2118807764206030848/img/KpxiYJQdym7LZmYg.jpg",
+     "ratio": 0.6691,
+     "duration": 27.041,
+     "gif": false
+    }
+   ],
+   "links": [
+    "http://nousresearch.com/arete"
+   ]
+  },
+  {
+   "kind": "link",
+   "url": "https://nousresearch.com/arete",
+   "domain": "nousresearch.com",
+   "title": "Introducing Arete-27B: Qwen3.8-27B Post-Trained To Reinforce Western Values",
+   "description": "We post-trained Alibaba's Qwen3.8-27B to reinforce Western values on a Chinese-trained model, and measured what changed with an 803-prompt eval across seven value categories.",
+   "image": "https://nousresearch.com/assets/nous-web/blog/arete1-card.webp",
+   "site": "nousresearch.com"
+  }
+ ],
+ "article": {
+  "title": "تو Nous Research دیدن مدل‌های چینی مثل Qwen روی کاغذ غول مرحله آخرن ولی تا دهن باز می‌کنن ساز پکن رو می‌زنن، اومدن یه نسخه درآوردن به اسم Arete تا به قول خودشون «ارزش‌های غربی» رو تو مخ مدل فرو کنن",
+  "source_title": "Introducing Arete-27B: Qwen3.8-27B, post-trained to reinforce Western values.",
+  "body": [
+   "بچه‌ها تو Nous Research دیدن مدل‌های چینی مثل Qwen روی کاغذ غول مرحله آخرن ولی تا دهن باز می‌کنن ساز پکن رو می‌زنن، اومدن یه نسخه درآوردن به اسم Arete تا به قول خودشون «ارزش‌های غربی» رو تو مخ مدل فرو کنن.",
+   "• مدل بیس همین Qwen-27B بوده که تو بنچمارک ۸۰۳ سؤالیِ اینا، ۲۲ درصد مواقع دقیقاً همون خط فکری و سانسورهای رسمی دولت چین رو بازگو می‌کرده.",
+   "• با یه فاین‌تیون خیلی سبکِ ۵۳ میلیون توکنی، اون نرخ جهت‌گیری رو رسوندن به ||۱ درصد||، بدون اینکه به بنچمارک‌های فنی و هوش مدل خط بیفته.",
+   "• کل دیتاست و وزن‌ها رو هم رایگان دادن بیرون تا عملاً ثابت کنن تغییر رفتار مدل کار دو روزه."
+  ],
+  "why": "حکایت همون ضرب‌المثله که می‌گه از چاله دراومدن و افتادن تو چاه؛ تعصب پکن رو گرفتن و سوگیری غربی رو جاش قالب کردن. ولی گیر فنی و واقعی قصه جای دیگه‌ست رفیق: این ماجرا ثابت کرد «اخلاق و جهت‌گیری» تو هوش مصنوعی عملاً هیچ ریشه‌ای نداره؛ فقط یه فاین‌تیون ارزون‌قیمت با تغییر عقیده فاصله داره و مدل دست هرکی بیفته، همون سازی رو می‌زنه که براش کوک کنن.",
+  "why_label": "حرف آخر",
+  "tags": [
+   "چین"
+  ]
+ },
+ "updated": "2026-11-06T22:57:22+00:00"
+}
