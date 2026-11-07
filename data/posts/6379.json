@@ -1,0 +1,70 @@
+{
+ "id": 6379,
+ "url": "https://t.me/dlmehr/6379",
+ "date": "2026-11-07T15:11:12+00:00",
+ "text": "https://fxtwitter.com/_doubleai_/status/2118733156069032292?a=5eD16RbptZTv9MkoYL4&s=52",
+ "forwarded_from": null,
+ "digest": false,
+ "hash": "1dcebc806e12",
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/_doubleai_/status/2118733156069032292?a=5eD16RbptZTv9MkoYL4&s=52",
+  "site": "🧵 Thread • FxTwitter",
+  "title": "doubleAI (@_doubleAI_)",
+  "description": "1/\nWhat if an LLM could not just edit a model's weights, but re-architect it as it trains?\nWe tried just that. The resulting architectures exit the known territory of transformers: the coding agents spliced code directly into the network.\nOn nanochat, the…",
+  "image": "https://cdn4.telesco.pe/file/N71JFDbPyFryM2KPLYA7F3V08B4XJh_9o60JDdHcQJRltOXjIRwNzUrXosKvQ4U6FheuzvJoOOcQQv7O66od5X08ko3a9GNyewX3APPdBod7Io4blsHwPRIx_aIdA58HZ7maR-yvy8hI1Tuk6PgLBK16xrhPa-rRldqEtEFBFAyG3v7r7ra57g8ukwmstIZ6NJ8dwfILY43Iwk4BZ4H_QqigR6xSjI6u9Bg0d2F9VqL4m5Z2gOWUs3LV6yQMMIZVVgLGyPbJl-AX65KE3sryzLKh52qDkVH8iK35mfyXeN_LlSi3emk8h1_jbpDpG1MinMriUQ4v3pJYLvuO8uJepg.jpg"
+ },
+ "gholam": {
+  "text": "قضیه از این قراره که تیم doubleAI زده تو خط «معماری خوداصلاح‌گر» و مدعی شده مدل‌ها به‌جای تنظیم وزن‌ها، می‌تونن وسط آموزش مستقیماً ساختار خودشون رو بشکافن و کدهای جدید به لایه‌های شبکه تزریق کنن:\n\n• طبق ادعاشون، دقت استدلال الگوریتمی روی بنچمارک‌ها از ۵۵٪ به ۸۴٪ جهش کرده و مدل DeepSeek-V4.1-Flash با تحلیل خطاها و بازنویسی کدهای داخلی خودش، نمره المپیاد ریاضی رو از ||۶۴٪ به ۷۱٪|| بالا برده.\n• برای تشخیص کمبودهای شبکه حین آموزش، از مفهومی به‌اسم phantom gradients استفاده کردن تا بفهمند روش‌های بهینه‌سازی معمول کجا کم میارن و دقیقاً همون‌جا لایه‌های کدیِ جدید رو الصاق کنن.\n\nداستان روی کاغذ شدیداً علمی‌-تخیلی و جذابه، ولی گیرِ اصلی توی اسکیل واقعی و استیبل موندن این معجون کُد و وزن‌هاست؛ وگرنه اضافه کردن وصله‌پینه‌های الگوریتمی برای پاس کردن چندتا بنچمارک خاص، بیشتر شبیه دوپینگ کردن مدل وسط مسابقه‌ست تا یه انقلاب ماندگار در معماری هوش مصنوعی.",
+  "date": "2026-11-07T15:11:38+00:00"
+ },
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/_doubleAI_/status/2118733156069032292",
+   "domain": "x.com",
+   "author": {
+    "name": "doubleAI",
+    "handle": "_doubleAI_",
+    "avatar": "https://pbs.twimg.com/profile_images/2028457512920367104/dm5x4n83_200x200.png"
+   },
+   "text": "1/\nWhat if an LLM could not just edit a model's weights, but re-architect it as it trains?\n\nWe tried just that. The resulting architectures exit the known territory of transformers: the coding agents spliced code directly into the network.\n\nOn nanochat, the loss fell below ordinary training after each new code layer was introduced. On algorithmic reasoning, accuracy rose from 55% to 84%. We even let DeepSeek-V4.1-Flash act as the agent modifying itself, raising its AIME and HMMT 2026 score from 64% to 71%.\n\nTo do all this, the agents built a set of tools we’ve never seen before, which we call mechanistic intervention!\n\nBlog: https://doubleai.s.gy/llm-redesign",
+   "date": 1793980323,
+   "media": [
+    {
+     "type": "image",
+     "src": "https://pbs.twimg.com/media/HWc96MuWMAA8vOE.jpg?name=orig",
+     "ratio": 0.6367
+    }
+   ],
+   "links": [
+    "https://doubleai.s.gy/llm-redesign"
+   ]
+  },
+  {
+   "kind": "link",
+   "url": "https://www.doubleai.com/research/can-llms-redesign-themselves-as-they-train?utm_source=x&utm_medium=post&utm_campaign=organic&utm_content=llm-redesign",
+   "domain": "doubleai.com",
+   "title": "Can LLMs redesign themselves as they train?",
+   "description": "Architecture is the last hand-designed piece. We make it part of training.",
+   "image": "https://www.doubleai.com/api/media/file/code-layers-doubleai.jpg",
+   "site": "doubleAI"
+  }
+ ],
+ "article": {
+  "title": "قضیه از این قراره که تیم doubleAI زده تو خط «معماری خوداصلاح‌گر» و مدعی شده مدل‌ها به‌جای تنظیم وزن‌ها، می‌تونن وسط آموزش مستقیماً ساختار خودشون رو بشکافن و کدهای جدید به لایه‌های شبکه تزریق کنن",
+  "source_title": "1/",
+  "body": [
+   "قضیه از این قراره که تیم doubleAI زده تو خط «معماری خوداصلاح‌گر» و مدعی شده مدل‌ها به‌جای تنظیم وزن‌ها، می‌تونن وسط آموزش مستقیماً ساختار خودشون رو بشکافن و کدهای جدید به لایه‌های شبکه تزریق کنن:",
+   "• طبق ادعاشون، دقت استدلال الگوریتمی روی بنچمارک‌ها از ۵۵٪ به ۸۴٪ جهش کرده و مدل DeepSeek-V4.1-Flash با تحلیل خطاها و بازنویسی کدهای داخلی خودش، نمره المپیاد ریاضی رو از ||۶۴٪ به ۷۱٪|| بالا برده.",
+   "• برای تشخیص کمبودهای شبکه حین آموزش، از مفهومی به‌اسم phantom gradients استفاده کردن تا بفهمند روش‌های بهینه‌سازی معمول کجا کم میارن و دقیقاً همون‌جا لایه‌های کدیِ جدید رو الصاق کنن."
+  ],
+  "why": "داستان روی کاغذ شدیداً علمی‌-تخیلی و جذابه، ولی گیرِ اصلی توی اسکیل واقعی و استیبل موندن این معجون کُد و وزن‌هاست؛ وگرنه اضافه کردن وصله‌پینه‌های الگوریتمی برای پاس کردن چندتا بنچمارک خاص، بیشتر شبیه دوپینگ کردن مدل وسط مسابقه‌ست تا یه انقلاب ماندگار در معماری هوش مصنوعی.",
+  "why_label": "حرف آخر",
+  "tags": [
+   "ایجنت",
+   "چین"
+  ]
+ },
+ "updated": "2026-11-07T15:15:35+00:00"
+}
