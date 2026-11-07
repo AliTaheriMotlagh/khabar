@@ -1,0 +1,71 @@
+{
+ "id": 6381,
+ "url": "https://t.me/dlmehr/6381",
+ "date": "2026-11-07T16:43:15+00:00",
+ "text": "https://x.com/victormustar/status/2119019129881440539",
+ "forwarded_from": "Amirreza",
+ "digest": false,
+ "hash": "6ba4225a0a90",
+ "media": [],
+ "preview": {
+  "url": "https://x.com/victormustar/status/2119019129881440539",
+  "site": "X (formerly Twitter)",
+  "title": "Victor M (@victormustar) on X",
+  "description": "Underdog Woof TTS could be quite useful: 31.7 MB model with a single voice and with a built-in normalizer for numbers, dates and codes.\n👀\nhttps://t.co/qaiuYcWMcg",
+  "image": "https://cdn4.telesco.pe/file/aYZFi19eSQQuVDP9WldxHIUzj6QEwsQoc_1iP8sFdysyCFClyTtinqlkmxJE5iBrXG05wXxmGoJlHQunxRV5-XYJeH7LcUVLVbPTHEtRUd9DnzjYJXKQRYVSARzRvcX3mcrJ577CEHRd6HunnTROhOHDdO156K9oJQtBwvLfp4rWyF49HayZNu8oCbYbzG7EaMsNRt0IbaGl9bSV-75XQiNGqy_NwALf9vMfDHUV1bOq3EOSzQHkE0_i0NpjG7U5FBeN5d2Z_Y5SoJ26LpEriTHIZIedQBSPhZMxCz5o4TptarLnHHzTZU_3Zss6KMVFMpIc-vVbgqaYj2jHOb5QuA.jpg"
+ },
+ "gholam": {
+  "text": "رفیق، ایلان ماسک باز دمِ درِ توییتر گیت گذاشته و دستمون به این پست نرسید؛ ارور ۴۰۳ زد و در رو باز نکرد. \n\nاز آیدی معلومه کارِ داش «ویکتور موستار» (طراح ارشد هاگینگ‌فیس) بوده و لابد باز یه رابط کاربری تر و تمیز برای ابزارهای هوش مصنوعی منبع‌باز علم کرده؛ ولی تا تصویر یا متنش نباشه، روی هوا قضاوت نمی‌کنیم. اگه اسکرین‌شاتی یا چند خط از اصل ماجرا داری بفرست وسط گپ تا مو رو از ماست بکشیم بیرون.",
+  "date": "2026-11-07T16:43:32+00:00"
+ },
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/victormustar/status/2119019129881440539",
+   "domain": "x.com",
+   "author": {
+    "name": "Victor M",
+    "handle": "victormustar",
+    "avatar": "https://pbs.twimg.com/profile_images/1099983311101984768/p7dZK4S__200x200.jpg"
+   },
+   "text": "Underdog Woof TTS could be quite useful: 31.7 MB model with a single voice and with a built-in normalizer for numbers, dates and codes. 👀\n\nhttps://huggingface.co/ConwayResearch/Underdog-Woof",
+   "date": 1794048504,
+   "media": [
+    {
+     "type": "video",
+     "src": "https://video.twimg.com/amplify_video/2119019109727850496/vid/avc1/960x720/HhL36MNKROnQNGwt.mp4?tag=29",
+     "poster": "https://pbs.twimg.com/amplify_video_thumb/2119019109727850496/img/N_QvMIbxp3SDsPQu.jpg",
+     "ratio": 0.75,
+     "duration": 10.35,
+     "gif": false
+    }
+   ],
+   "links": [
+    "https://huggingface.co/ConwayResearch/Underdog-Woof"
+   ]
+  },
+  {
+   "kind": "link",
+   "url": "https://huggingface.co/ConwayResearch/Underdog-Woof",
+   "domain": "huggingface.co",
+   "title": "ConwayResearch/Underdog-Woof · Hugging Face",
+   "description": "Text-to-Speech model. Download, explore files and run it on Hugging Face.",
+   "image": "https://cdn-thumbnails.huggingface.co/social-thumbnails/models/ConwayResearch/Underdog-Woof.png",
+   "site": "huggingface.co"
+  }
+ ],
+ "article": {
+  "title": "ایلان ماسک باز دمِ درِ توییتر گیت گذاشته و دستمون به این پست نرسید؛ ارور ۴۰۳ زد و در رو باز نکرد",
+  "source_title": "Underdog Woof TTS could be quite useful: 31.7 MB model with a single voice and with a built-in normalizer for numbers, dates and codes. 👀",
+  "body": [
+   "رفیق، ایلان ماسک باز دمِ درِ توییتر گیت گذاشته و دستمون به این پست نرسید؛ ارور ۴۰۳ زد و در رو باز نکرد.",
+   "از آیدی معلومه کارِ داش «ویکتور موستار» (طراح ارشد هاگینگ‌فیس) بوده و لابد باز یه رابط کاربری تر و تمیز برای ابزارهای هوش مصنوعی منبع‌باز علم کرده؛ ولی تا تصویر یا متنش نباشه، روی هوا قضاوت نمی‌کنیم. اگه اسکرین‌شاتی یا چند خط از اصل ماجرا داری بفرست وسط گپ تا مو رو از ماست بکشیم بیرون."
+  ],
+  "why": null,
+  "tags": [
+   "ایلان ماسک",
+   "صدا و موسیقی"
+  ]
+ },
+ "updated": "2026-11-07T16:46:21+00:00"
+}
