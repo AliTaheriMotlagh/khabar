@@ -12,7 +12,7 @@
   "site": "🧵 Thread • FxTwitter",
   "title": "Hyperstition (@hyperstition_cc)",
   "description": "We invented a recursive megakernel generator called Hyperkernel, the most complete solution to megakernels and GPU efficiency.\nHyperkernel-generated megakernels achieve state of the art performance on 11 different domains: inference (DeepSeek, Kimi and GLM)…",
-  "image": "https://cdn4.telesco.pe/file/tjSBFe33ssTERZQYAOrip2jxo4GlN6I3n2TM2RXs2k9xw43TH_dsRomvThQMj7R08tb4jmEQNxeB9MtpSuPrsKttF109qQXxVqKSIJ1TklX-wmRovG8JKWHzkGImhtGTqZhtYiynub6ZZkpGNusR4fcBBqxfbWHJouO8K5jP9Ite68pCfdylH0rJkZXkhqzL7z0fex_7NBxaRpMhwNyibOpqC4P0OovQ4yIa85zRF5uwN6wuJ_85A4dNJeaFP0rji4PlcYhoLanUP0hZ7N-f8aoJT4f23DXg183IMxmamxYdNgHJSEwyvAu19KIOpNt6K3jZQFKMqj4CEz7V00jgww.jpg"
+  "image": "https://cdn4.telesco.pe/file/XDfn1TVrChpN8-rjdpsOSzacHtI63WzNAhpCFP8Z_6IIY0dykli84ZnQ0Ux8g2YL4zASEDJu6scZxGTXl5CZ5jFViMOFeX8tHTPVPMI0VgvoySez7aNa_gzpDmN3ycIjca-mdHvIN2R1qjzxGed2DLZhQh8UgYHkCaBSigHJ1SfQhzF1Rmz0L3gzradU3XgF5fA4bwTlVb42hMgkLTmQpaXwr7W1WR4EALYUyf4JahXoJXBOgURBYmrEwwgrfL1NGK1ql9znuAZymMtEXfw5kbsEqeIG4NbHdxSan8Zcv0YpU9b6ls9Lw_2FHyfpivfTAnNC2luCvozkp6DeRP4g5Q.jpg"
  },
  "gholam": {
   "text": "یه استارتاپ تازه از راه رسیده به اسم Hyperstition ادعا کرده با ابزار جدیدش به نام Hyperkernel، کل معماری اجرای مدل‌ها روی کارت‌های گرافیک انویدیا رو شخم زده و انویدیا رو تو زمین خودش جا گذاشته.\n\n• این رفقا مدعی شدن فقط تو ۲۰ روز یه ابزار ساختن که کدهای پراکنده رو جمع می‌کنه تو یه «مگاکرنل» یکپارچه (Single Kernel Launch) و با فقط ۶۰ تا ۱۰۰ خط کد، سرعت مدل‌هایی مثل DeepSeek v4.1 Flash و پروتئین‌سازی ESMFold رو بین ۳۰ تا ||۷۰ درصد|| بالاتر برده.\n• بنچمارک‌هاشون روی غول جدید انویدیا یعنی B300 حسابی پر سر و صداست؛ مثلاً ادعای برتری ۲۸ درصدی نسبت به vLLM خودِ انویدیا توی بارهای کاری سنگین یا اجرای همزمان ۲۵۷۰ تا مدل رانندگی خودکار OpenPilot روی یک پردازنده.\n• اما نکته اینجاست: امروز فقط خروجی نهاییِ چند تا کرنل رو اوپن‌سورس کردن، نه خودِ اون ماشین تولید کد رو؛ قرار شده هسته اصلی سیستم طی هفته‌های بعد بیاد.\n\nادعای زمین زدن غول‌های زیرساخت تو بیست روز قشنگه، ولی تا وقتی مهندسی معکوس نشه و معلوم نشه این مگاکرنل‌ها چقدر به تغییر ابعاد ورودی و شرایط واقعی حساس و شکننده‌ان، باید کلاهمون رو قاضی کنیم و زود جوگیر نشیم.",
@@ -68,5 +68,5 @@
    "استارتاپ"
   ]
  },
- "updated": "2026-11-08T09:31:19+00:00"
+ "updated": "2026-11-08T16:21:18+00:00"
 }
