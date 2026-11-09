@@ -1,0 +1,71 @@
+{
+ "id": 6408,
+ "url": "https://t.me/dlmehr/6408",
+ "date": "2026-11-09T18:16:17+00:00",
+ "text": "https://fxtwitter.com/paigeinsf/status/2119834758268026901?a=0XFrNt_NcmVzpJ8mxG4&s=52",
+ "forwarded_from": null,
+ "digest": false,
+ "hash": "9bdfeaf7015c",
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/paigeinsf/status/2119834758268026901?a=0XFrNt_NcmVzpJ8mxG4&s=52",
+  "site": "FxTwitter",
+  "title": "Paige ✈️ CoRL (@paigeinsf)",
+  "description": "Today we're launching @se3labs, backed by @ycombinator.\nRobot models are getting better fast, but there's still a big gap between a great demo in sim or the lab and a robot that works reliably on a real task.\nWe're building real-world RL environments for…",
+  "image": null
+ },
+ "gholam": {
+  "text": "رفقا، به‌تازگی استارتاپ جدیدی به اسم se3labs با حمایت شتاب‌دهنده وای‌کامبینیتور معرفی شده که دست گذاشته روی یکی از چالش‌های مهم رباتیک؛ یعنی فاصله‌ای که هنوز بین موفقیت در شبیه‌سازها و آزمایشگاه‌ها با کار مطمئن در دنیای واقعی وجود داره.\n\nبنیان‌گذار این مجموعه توضیح داده که دارن محیط‌های یادگیری تقویتی در دنیای واقعی ایجاد می‌کنن. روش کارشون هم این‌طوره که وظایف رو از شرکای صنعتی می‌گیرن، روی ربات‌های واقعی اجرا می‌کنن تا ببینن دقیقاً کجا به مشکل می‌خوره، و بعد بر اساس همون خطاها، داده‌های تازه برای به‌روزرسانی مدل‌ها جمع‌آوری می‌کنن. هدف بعدی‌شون هم اینه که این بسترها رو به شکل محیط‌های آزمایشی فیزیکی در محل خود شرکت‌های همکار پیاده کنن تا ربات دقیقاً در همون شرایط واقعی کار آموزش ببینه.",
+  "date": "2026-11-09T18:16:42+00:00"
+ },
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/paigeinsf/status/2119834758268026901",
+   "domain": "x.com",
+   "author": {
+    "name": "Paige ✈️ CoRL",
+    "handle": "paigeinsf",
+    "avatar": "https://pbs.twimg.com/profile_images/2108798878552301568/pKMwpwNH_200x200.jpg"
+   },
+   "text": "Today we're launching @se3labs, backed by @ycombinator.\n\nRobot models are getting better fast, but there's still a big gap between a great demo in sim or the lab and a robot that works reliably on a real task.\n\nWe're building real-world RL environments for robots. We start with tasks from industry partners, run policies on real robots, and find exactly where they fail. Those failures decide what data we collect and curate for the next policy update.\n\nNext, we're bringing this to partner sites with physical sandboxes for real-world RL, so policies can train on the exact tasks and conditions they'll face in practice.\n\nIf you’re training robot policies or have a real task you want robots to do, we’d love to talk: https://se3labs.ai/ or DM me directly!\n\nSee you at CoRL 🤖👋",
+   "date": 1794242965,
+   "media": [
+    {
+     "type": "video",
+     "src": "https://video.twimg.com/amplify_video/2119834387004989440/vid/avc1/1280x720/_kqu6xPUjW3B_ckD.mp4?tag=29",
+     "poster": "https://pbs.twimg.com/amplify_video_thumb/2119834387004989440/img/ansIkmSGBOPe2HwU.jpg",
+     "ratio": 0.5625,
+     "duration": 69.566,
+     "gif": false
+    }
+   ],
+   "links": [
+    "https://se3labs.ai/"
+   ]
+  },
+  {
+   "kind": "link",
+   "url": "https://se3labs.ai/",
+   "domain": "se3labs.ai",
+   "title": "Real-World RL Environments for Physical AI",
+   "description": "We provide real-world data, policy evaluation, and physical environments for reinforcement learning, helping teams train, test, and improve robot models.",
+   "image": "https://se3labs.ai/opengraph-image.png?opengraph-image.0x09ok41-9seq.png",
+   "site": "SE3 Labs"
+  }
+ ],
+ "article": {
+  "title": "رفقا، به‌تازگی استارتاپ جدیدی به اسم se3labs با حمایت شتاب‌دهنده وای‌کامبینیتور معرفی شده که دست گذاشته روی یکی از چالش‌های مهم رباتیک",
+  "source_title": "Today we're launching @se3labs, backed by @ycombinator.",
+  "body": [
+   "رفقا، به‌تازگی استارتاپ جدیدی به اسم se3labs با حمایت شتاب‌دهنده وای‌کامبینیتور معرفی شده که دست گذاشته روی یکی از چالش‌های مهم رباتیک؛ یعنی فاصله‌ای که هنوز بین موفقیت در شبیه‌سازها و آزمایشگاه‌ها با کار مطمئن در دنیای واقعی وجود داره.",
+   "بنیان‌گذار این مجموعه توضیح داده که دارن محیط‌های یادگیری تقویتی در دنیای واقعی ایجاد می‌کنن. روش کارشون هم این‌طوره که وظایف رو از شرکای صنعتی می‌گیرن، روی ربات‌های واقعی اجرا می‌کنن تا ببینن دقیقاً کجا به مشکل می‌خوره، و بعد بر اساس همون خطاها، داده‌های تازه برای به‌روزرسانی مدل‌ها جمع‌آوری می‌کنن. هدف بعدی‌شون هم اینه که این بسترها رو به شکل محیط‌های آزمایشی فیزیکی در محل خود شرکت‌های همکار پیاده کنن تا ربات دقیقاً در همون شرایط واقعی کار آموزش ببینه."
+  ],
+  "why": null,
+  "tags": [
+   "رباتیک",
+   "استارتاپ"
+  ]
+ },
+ "updated": "2026-11-09T18:21:18+00:00"
+}
