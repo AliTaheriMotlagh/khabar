@@ -1,0 +1,73 @@
+{
+ "id": 6395,
+ "url": "https://t.me/dlmehr/6395",
+ "date": "2026-11-09T15:31:03+00:00",
+ "text": "https://fxtwitter.com/bostondynamics/status/2119808355745071495?a=0dy6FskktMateKIMVkE&s=52",
+ "forwarded_from": null,
+ "digest": false,
+ "hash": "d37af41c39c9",
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/bostondynamics/status/2119808355745071495?a=0dy6FskktMateKIMVkE&s=52",
+  "site": "FxTwitter",
+  "title": "Boston Dynamics (@BostonDynamics)",
+  "description": "When rubber meets the road, we have to get creative to ensure our robots will be reliable and performant outside of the lab! Putting wheels on Atlas let us test how faithfully an RL whole-body controller can work with real actuators running at the edge. …",
+  "image": null
+ },
+ "gholam": {
+  "text": "بچه‌ها این حرکت تازهٔ بوستون داینامیکس خیلی نکته داره؛ بعد از سال‌ها کلیپ‌های هالیوودی و پشتک‌وارو زدن اطلس، حالا اومدن زیر پای این ربات انسان‌نما چرخ بستن تا ببینن کنترلر جدیدشون تو دنیای واقعی چند مرده حلاجه.\n\n• قضیه اینه که تست الگوریتم‌های یادگیری تقویتی (RL) روی دو پا، یعنی هر خطای کوچیک مساوی سقوط آزاد و پیاده شدن چند صد هزار دلار خسارت؛ با چرخ، متغیر «افتادن» رو حذف کردن تا موتورها و مفاصل رو مستقیماً تا خرخره ببرن زیر بار تست.\n• تمرکز اصلی‌شون رو محک زدن دمای کارکرد موتورها، سفتی شاسی و هماهنگی سیستم محرکه تو لبه‌های مرزی فشاره، بدون اینکه نگران خرد شدن بدنه باشن.\n\nحقیقت ماجرا اینه که وقتی پای کار واقعی توی سوله و انبار بیاد وسط، ||چرخ هنوزم ده هیچ به راه رفتن دوپا می‌چربه|| و حتی سرسخت‌ترین مدافعان ربات انسان‌نما هم آخرش تسلیم نبوغ مکانیک کلاسیک میشن.",
+  "date": "2026-11-09T15:31:33+00:00"
+ },
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/BostonDynamics/status/2119808355745071495",
+   "domain": "x.com",
+   "author": {
+    "name": "Boston Dynamics",
+    "handle": "BostonDynamics",
+    "avatar": "https://pbs.twimg.com/profile_images/1156978210783019009/AbgIujGu_200x200.jpg"
+   },
+   "text": "When rubber meets the road, we have to get creative to ensure our robots will be reliable and performant outside of the lab! Putting wheels on Atlas let us test how faithfully an RL whole-body controller can work with real actuators running at the edge. \n\nLearn more about this experiment: https://bostondynamics.com/blog/atlas-on-a-roll/\nJoin our team: https://bostondynamics.com/careers/",
+   "date": 1794236670,
+   "media": [
+    {
+     "type": "video",
+     "src": "https://video.twimg.com/amplify_video/2119807986361118720/vid/avc1/1280x720/JSmUKbF4T0v6a7hM.mp4?tag=16",
+     "poster": "https://pbs.twimg.com/media/HWsSdkcWsAA4h1t.jpg",
+     "ratio": 0.5625,
+     "duration": 170.837,
+     "gif": false
+    }
+   ],
+   "links": [
+    "https://bostondynamics.com/blog/atlas-on-a-roll/",
+    "https://bostondynamics.com/careers/"
+   ]
+  },
+  {
+   "kind": "link",
+   "url": "https://bostondynamics.com/blog/atlas-on-a-roll/",
+   "domain": "bostondynamics.com",
+   "title": "Atlas On a Roll | Boston Dynamics",
+   "description": "Adding wheels to Boston Dynamics Atlas robot tested how whole-body RL controller works with real actuation hardware.",
+   "image": "https://bostondynamics.com/wp-content/uploads/2026/11/atlas-wheels-backward-skate-scaled.jpg",
+   "site": "Boston Dynamics"
+  }
+ ],
+ "article": {
+  "title": "این حرکت تازهٔ بوستون داینامیکس خیلی نکته داره",
+  "source_title": "When rubber meets the road, we have to get creative to ensure our robots will be reliable and performant outside of the lab! Putting wheels…",
+  "body": [
+   "بچه‌ها این حرکت تازهٔ بوستون داینامیکس خیلی نکته داره؛ بعد از سال‌ها کلیپ‌های هالیوودی و پشتک‌وارو زدن اطلس، حالا اومدن زیر پای این ربات انسان‌نما چرخ بستن تا ببینن کنترلر جدیدشون تو دنیای واقعی چند مرده حلاجه.",
+   "• قضیه اینه که تست الگوریتم‌های یادگیری تقویتی (RL) روی دو پا، یعنی هر خطای کوچیک مساوی سقوط آزاد و پیاده شدن چند صد هزار دلار خسارت؛ با چرخ، متغیر «افتادن» رو حذف کردن تا موتورها و مفاصل رو مستقیماً تا خرخره ببرن زیر بار تست.",
+   "• تمرکز اصلی‌شون رو محک زدن دمای کارکرد موتورها، سفتی شاسی و هماهنگی سیستم محرکه تو لبه‌های مرزی فشاره، بدون اینکه نگران خرد شدن بدنه باشن."
+  ],
+  "why": "حقیقت ماجرا اینه که وقتی پای کار واقعی توی سوله و انبار بیاد وسط، ||چرخ هنوزم ده هیچ به راه رفتن دوپا می‌چربه|| و حتی سرسخت‌ترین مدافعان ربات انسان‌نما هم آخرش تسلیم نبوغ مکانیک کلاسیک میشن.",
+  "why_label": "حرف آخر",
+  "tags": [
+   "رباتیک"
+  ]
+ },
+ "updated": "2026-11-09T15:34:20+00:00"
+}
