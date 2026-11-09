@@ -1,0 +1,71 @@
+{
+ "id": 6405,
+ "url": "https://t.me/dlmehr/6405",
+ "date": "2026-11-09T17:05:25+00:00",
+ "text": "https://fxtwitter.com/unrealengine/status/2119806791567773829?a=PaKDx2nKPUcPq6_uzJg&s=52",
+ "forwarded_from": null,
+ "digest": false,
+ "hash": "b0c2fc52432d",
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/unrealengine/status/2119806791567773829?a=PaKDx2nKPUcPq6_uzJg&s=52",
+  "site": "FxTwitter",
+  "title": "Unreal Engine (@UnrealEngine)",
+  "description": "The Unreal Engine 5.9 MegaJam Preview is here!\nIt’s the first Unreal Engine release built primarily with agentic workflows and opens up a few new Experimental features: check out Unreal MCP’s expanded toolsets, work with AI coding agents directly in Editor…",
+  "image": "https://cdn4.telesco.pe/file/IgGilToPSLKcCVnyOr2xzVwsT6i81fnhcS16OauRPpXX4IeyYJYlog5VQcyJKE0VDG3RDXfqY2wHWVPcuDe_wq4NZZLsm3SbBIk8crD4dj3Zdt-dJsJQkrvb1GlnPSWVuURiX1a_l1tXeSnny4pB3J0nKzIm2QFkntCANBCapI_qfp9DbcnUHT6B62rQkGyozwhf7UMUOqwwa9lfSHjPoHVltZ0fbsh2SRT3TsBOBmWpga4stCa0ypJqdyMOG0gKPFJEg6lWOZEuA5q9CiQ6LeTjMKsU7Qf0hSPKZ0TDsfARs34o1iD04BsEy4fwURoceM60K9K2aBFzzDwsINc97Q.jpg"
+ },
+ "gholam": {
+  "text": "رفقا، مجموعه آنریل انجین نسخه پیش‌نمایش Unreal Engine 5.9 MegaJam Preview رو معرفی کرده و گفته این اولین نسخه از این موتور به‌حساب میاد که اساساً با فرآیندهای مبتنی بر ایجنت‌های هوش مصنوعی ساخته شده.\n\nبه گفته تیم توسعه، این نسخه برای رویداد Epic MegaJam آماده شده و چندتا قابلیت آزمایشی جدید رو ارائه می‌ده:\n• همکاری مستقیم با ایجنت‌های کدنویسی هوش مصنوعی در داخل محیط ادیتور\n• ابزارهای توسعه‌یافته Unreal MCP و تولید محتوا به کمک هوش مصنوعی\n• امکان اجرای مستقیم پروژه‌ها داخل مرورگر اینترنت\n\nسازنده‌ها اشاره کردن که این نسخه مثل پیش‌نمایش‌های معمولی نیست و بیشتر جنبه تجربی و آزمایشی برای کار با ابزارهای جدید هوش مصنوعی داره.",
+  "date": "2026-11-09T17:05:49+00:00"
+ },
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/UnrealEngine/status/2119806791567773829",
+   "domain": "x.com",
+   "author": {
+    "name": "Unreal Engine",
+    "handle": "UnrealEngine",
+    "avatar": "https://pbs.twimg.com/profile_images/1782802808028254209/OXNX9wh9_200x200.jpg"
+   },
+   "text": "The Unreal Engine 5.9 MegaJam Preview is here! \n\nIt’s the first Unreal Engine release built primarily with agentic workflows and opens up a few new Experimental features: check out Unreal MCP’s expanded toolsets, work with AI coding agents directly in Editor, explore AI-assisted content creation, and run your projects in a browser. \n\nThis isn’t your typical Unreal Engine Preview, but it’s ready just in time for the Epic MegaJam. \n\nInvite your agents and start experimenting: http://epic.gm/ue-5-9-preview",
+   "date": 1794236297,
+   "media": [
+    {
+     "type": "image",
+     "src": "https://pbs.twimg.com/media/HWsRCmeakAA3oKy.jpg?name=orig",
+     "ratio": 0.5625
+    }
+   ],
+   "links": [
+    "http://epic.gm/ue-5-9-preview"
+   ]
+  },
+  {
+   "kind": "link",
+   "url": "https://forums.unrealengine.com/t/unreal-engine-5-9-megajam-preview/2852840",
+   "domain": "forums.unrealengine.com",
+   "title": "Unreal Engine 5.9 MegaJam Preview",
+   "description": "Download Unreal Engine 5.9 MegaJam Preview from the Epic Games Launcher, GitHub, or here for Linux.  This isn’t a typical Unreal Engine Preview.  We’ve been accumulating changes for rendering and animation in UE5 Main for an eventual 5.9 release next year. However, just a week ago, we decided to start working on a UE 5.9 Preview in time for the 2026 Epic AI MegaJam on November 12–15.  This UE 5.9 ",
+   "image": "https://d3kjluh73b9h9o.cloudfront.net/optimized/4X/5/3/2/532a040afb216bb3062c37b1b296ee81fa4a1261_2_1024x128.jpeg",
+   "site": "Epic Developer Community Forums"
+  }
+ ],
+ "article": {
+  "title": "رفقا، مجموعه آنریل انجین نسخه پیش‌نمایش Unreal Engine 5.9 MegaJam Preview رو معرفی کرده و گفته این اولین نسخه از این موتور به‌حساب میاد که اساساً با فرآیندهای مبتنی بر ایجنت‌های هوش مصنوعی ساخته شده",
+  "source_title": "The Unreal Engine 5.9 MegaJam Preview is here!",
+  "body": [
+   "رفقا، مجموعه آنریل انجین نسخه پیش‌نمایش Unreal Engine 5.9 MegaJam Preview رو معرفی کرده و گفته این اولین نسخه از این موتور به‌حساب میاد که اساساً با فرآیندهای مبتنی بر ایجنت‌های هوش مصنوعی ساخته شده.",
+   "به گفته تیم توسعه، این نسخه برای رویداد Epic MegaJam آماده شده و چندتا قابلیت آزمایشی جدید رو ارائه می‌ده:",
+   "• همکاری مستقیم با ایجنت‌های کدنویسی هوش مصنوعی در داخل محیط ادیتور",
+   "• ابزارهای توسعه‌یافته Unreal MCP و تولید محتوا به کمک هوش مصنوعی",
+   "• امکان اجرای مستقیم پروژه‌ها داخل مرورگر اینترنت"
+  ],
+  "why": "سازنده‌ها اشاره کردن که این نسخه مثل پیش‌نمایش‌های معمولی نیست و بیشتر جنبه تجربی و آزمایشی برای کار با ابزارهای جدید هوش مصنوعی داره.",
+  "why_label": "حرف آخر",
+  "tags": [
+   "ایجنت"
+  ]
+ },
+ "updated": "2026-11-09T17:09:23+00:00"
+}
