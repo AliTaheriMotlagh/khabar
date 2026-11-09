@@ -1,0 +1,73 @@
+{
+ "id": 6416,
+ "url": "https://t.me/dlmehr/6416",
+ "date": "2026-11-09T19:56:47+00:00",
+ "text": "https://fxtwitter.com/yukez/status/2119880324075377094?a=wMgfa0xk4Ee7a1ks0fs&s=52",
+ "forwarded_from": null,
+ "digest": false,
+ "hash": "9cbe7fcc268e",
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/yukez/status/2119880324075377094?a=wMgfa0xk4Ee7a1ks0fs&s=52",
+  "site": "🧵 Thread • FxTwitter",
+  "title": "Yuke Zhu (@yukez)",
+  "description": "Meet GR00T 2, our new generation of world-action models (WAMs): it imagines how the physical world will unfold and generates the actions that get it there. One model runs on parallel grippers, dexterous hands, and humanoids.\nhttp://research.nvidia.com/labs/gear/gr00t…",
+  "image": null
+ },
+ "gholam": {
+  "text": "سلام و ارادت خدمت رفقا! آقای یوکه ژو از پژوهشگرهای حوزه رباتیک خبر از معرفی مدل جدیدی به اسم GR00T 2 داده؛ مدلی که کارش تجسم وضعیت فیزیکی محیط و تولید حرکات لازم برای اجرای وظایفه. طبق توضیحاتش، این سیستم طوری طراحی شده که یه مدل واحد بتونه روی انواع دست‌های مکانیکی و ربات‌های انسان‌نما کار کنه.\n\nچند تا نکته مهم که درباره‌اش گفتن:\n• بخش عمده آموزش این مدل از داده‌های خود ربات نیست، بلکه از بیش از ۴۰۰ هزار ساعت ویدیوی اول‌شخص از کارهای انسان‌ها و داده‌های حرکتی یاد گرفته.\n• قابلیتی به اسم X-Adapt داره که کارهای نمایش‌داده‌شده توسط انسان رو بدون اینکه ربات قبلاً تمرین کرده باشه، مستقیماً بهش منتقل می‌کنه.\n• یه نسخه سریع‌تر به اسم Turbo هم داره که روی چیپست Jetson Thor انویدیا مستقر میشه و کنترل کامل بدن ربات انسان‌نما رو موقع راه‌رفتن، خم شدن و کارهایی مثل تمیزکاری یا جابه‌جایی وسایل دست می‌گیره.",
+  "date": "2026-11-09T19:57:21+00:00"
+ },
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/yukez/status/2119880324075377094",
+   "domain": "x.com",
+   "author": {
+    "name": "Yuke Zhu",
+    "handle": "yukez",
+    "avatar": "https://pbs.twimg.com/profile_images/1741962374062424064/kbOQdJfp_200x200.jpg"
+   },
+   "text": "Meet GR00T 2, our new generation of world-action models (WAMs): it imagines how the physical world will unfold and generates the actions that get it there. One model runs on parallel grippers, dexterous hands, and humanoids.\n\nhttp://research.nvidia.com/labs/gear/gr00t-2",
+   "date": 1794253829,
+   "media": [
+    {
+     "type": "video",
+     "src": "https://video.twimg.com/amplify_video/2119879033412255744/vid/avc1/1280x720/7M6wJKWIachsx7ul.mp4?tag=29",
+     "poster": "https://pbs.twimg.com/amplify_video_thumb/2119879033412255744/img/raBQcCvyTDnDZCrF.jpg",
+     "ratio": 0.5625,
+     "duration": 90.6,
+     "gif": false
+    }
+   ],
+   "links": [
+    "http://research.nvidia.com/labs/gear/gr00t-2"
+   ]
+  },
+  {
+   "kind": "link",
+   "url": "https://research.nvidia.com/labs/gear/gr00t-2/",
+   "domain": "research.nvidia.com",
+   "title": "GR00T 2: Scaling Robot Foundation Models for Generalization, Dexterity, and Adaptation",
+   "description": "A new generation of foundation world-action models for grippers, dexterous hands, and humanoids.",
+   "image": "https://research.nvidia.com/labs/gear/gr00t-2/assets/poster/hero_flip.jpg",
+   "site": "NVIDIA GEAR"
+  }
+ ],
+ "article": {
+  "title": "سلام و ارادت خدمت رفقا",
+  "source_title": "Meet GR00T 2, our new generation of world-action models (WAMs): it imagines how the physical world will unfold and generates the actions…",
+  "body": [
+   "سلام و ارادت خدمت رفقا! آقای یوکه ژو از پژوهشگرهای حوزه رباتیک خبر از معرفی مدل جدیدی به اسم GR00T 2 داده؛ مدلی که کارش تجسم وضعیت فیزیکی محیط و تولید حرکات لازم برای اجرای وظایفه. طبق توضیحاتش، این سیستم طوری طراحی شده که یه مدل واحد بتونه روی انواع دست‌های مکانیکی و ربات‌های انسان‌نما کار کنه.",
+   "چند تا نکته مهم که درباره‌اش گفتن:",
+   "• بخش عمده آموزش این مدل از داده‌های خود ربات نیست، بلکه از بیش از ۴۰۰ هزار ساعت ویدیوی اول‌شخص از کارهای انسان‌ها و داده‌های حرکتی یاد گرفته.",
+   "• قابلیتی به اسم X-Adapt داره که کارهای نمایش‌داده‌شده توسط انسان رو بدون اینکه ربات قبلاً تمرین کرده باشه، مستقیماً بهش منتقل می‌کنه.",
+   "• یه نسخه سریع‌تر به اسم Turbo هم داره که روی چیپست Jetson Thor انویدیا مستقر میشه و کنترل کامل بدن ربات انسان‌نما رو موقع راه‌رفتن، خم شدن و کارهایی مثل تمیزکاری یا جابه‌جایی وسایل دست می‌گیره."
+  ],
+  "why": null,
+  "tags": [
+   "رباتیک"
+  ]
+ },
+ "updated": "2026-11-09T20:00:53+00:00"
+}
