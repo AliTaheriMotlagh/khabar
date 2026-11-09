@@ -1,0 +1,75 @@
+{
+ "id": 6414,
+ "url": "https://t.me/dlmehr/6414",
+ "date": "2026-11-09T19:51:35+00:00",
+ "text": "https://fxtwitter.com/todomcl/status/2119874917017723216?a=2JC6AFAlRUdWLdww1HM&s=52",
+ "forwarded_from": null,
+ "digest": false,
+ "hash": "4b54ac65c067",
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/todomcl/status/2119874917017723216?a=2JC6AFAlRUdWLdww1HM&s=52",
+  "site": "FxTwitter",
+  "title": "Tom Mcleod (@todomcl)",
+  "description": "Frontier performance at a fraction of the compute.\nToday at @i14labs we’re launching Sugar Glider, our new family of LLM architectures!\nJoin the waitlist for early access: http://i14.ai\nSugar Glider delivers a new Pareto frontier: extreme memory and compute…",
+  "image": null
+ },
+ "gholam": {
+  "text": "سلام رفقا؛ تام مک‌لئود از آزمایشگاه i14labs از یه معماری جدید برای مدل‌های زبانی به اسم Sugar Glider رونمایی کرده و مدعی شده که با مصرف پردازش و حافظه بسیار کمتر، می‌تونه کارایی مدل‌های پیشرو رو ارائه بده. \n\nطبق ادعای سازنده‌هاش، چند تا ویژگی کلیدی برای این معماری مطرح شده:\n• تست موفق روی مدل‌هایی تا حدود یک تریلیون پارامتر، همراه با اندازه ثابت حافظه جانبی (KV cache) و زمان پردازش ثابت به‌ازای هر توکن (O(1)).\n• قابلیت بازیابی اطلاعات در متن‌های طولانی تا سقف یک میلیارد توکن با دقت بالا (۱۰۰ درصد در تست تک‌کلید و ۹۰.۵ درصد در تست چندکلید).\n• امکان تبدیل مدل‌های متن‌باز معروف به این معماری جدید، اون هم ظرف چند ساعت به ازای هر مدل.\n\nدر حال حاضر این موارد در حد معرفی و ادعای تیم سازنده است و فعلاً برای دسترسی اولیه کاربران یه لیست انتظار راه انداختن تا بعداً نتایج و جزییات بیشتری رو منتشر کنن.",
+  "date": "2026-11-09T19:51:57+00:00"
+ },
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/todomcl/status/2119874917017723216",
+   "domain": "x.com",
+   "author": {
+    "name": "Tom Mcleod",
+    "handle": "todomcl",
+    "avatar": "https://pbs.twimg.com/profile_images/2103257772691464192/KjNJm8W2_200x200.jpg"
+   },
+   "text": "Frontier performance at a fraction of the compute.\n\nToday at @i14labs we’re launching Sugar Glider, our new family of LLM architectures!\n\nJoin the waitlist for early access: http://i14.ai\n\nSugar Glider delivers a new Pareto frontier: extreme memory and compute efficiency whilst maintaining frontier performance, even for large models (tested up to ~1T params).\n\nO(1) per token inference → ✅\n\nFixed size KV cache → ✅\n\nFrontier long-context retrieval quality → ✅\n\n1 billion token long context retrieval → ☑️**\n(**100% -> single needle @ 1B-token context, 90.5% multikey 1 @ 1B-token context.)\n\nHow did we do it? Turns out a few decades in the trenches of human memory and language model research is a pretty handy starting point to solve the “intelligence vs efficiency vs memory” conundrum.\n\n... and just for something extra, we’ve been converting some of the most powerful and popular open-weight models to O(1) inference and fixed memory, with each conversion taking just hours :)\n\nTune in via our waitlist for early model access http://i14.ai\n\nMore results dropping soon!",
+   "date": 1794252540,
+   "media": [
+    {
+     "type": "video",
+     "src": "https://video.twimg.com/amplify_video/2119874117168160770/vid/avc1/1280x720/mgSeH-fo7L33ODGz.mp4?tag=29",
+     "poster": "https://pbs.twimg.com/amplify_video_thumb/2119874117168160770/img/LYJyWJgluzpWM8IC.jpg",
+     "ratio": 0.5625,
+     "duration": 25,
+     "gif": false
+    }
+   ],
+   "links": [
+    "http://i14.ai",
+    "http://i14.ai"
+   ]
+  },
+  {
+   "kind": "link",
+   "url": "https://i14.ai/",
+   "domain": "i14.ai",
+   "title": "i14 — Frontier AI for your frontier",
+   "description": "Frontier performance at a tenth to a hundredth of the price, on a memory footprint small enough to train and run on your own stack.",
+   "image": "https://i14.ai/og-image.png",
+   "site": "i14"
+  }
+ ],
+ "article": {
+  "title": "سلام رفقا؛ تام مک‌لئود از آزمایشگاه i14labs از یه معماری جدید برای مدل‌های زبانی به اسم Sugar Glider رونمایی کرده و مدعی شده که با مصرف پردازش و حافظه بسیار کمتر، می‌تونه کارایی مدل‌های پیشرو رو ارائه بده",
+  "source_title": "Frontier performance at a fraction of the compute.",
+  "body": [
+   "سلام رفقا؛ تام مک‌لئود از آزمایشگاه i14labs از یه معماری جدید برای مدل‌های زبانی به اسم Sugar Glider رونمایی کرده و مدعی شده که با مصرف پردازش و حافظه بسیار کمتر، می‌تونه کارایی مدل‌های پیشرو رو ارائه بده.",
+   "طبق ادعای سازنده‌هاش، چند تا ویژگی کلیدی برای این معماری مطرح شده:",
+   "• تست موفق روی مدل‌هایی تا حدود یک تریلیون پارامتر، همراه با اندازه ثابت حافظه جانبی (KV cache) و زمان پردازش ثابت به‌ازای هر توکن (O(1)).",
+   "• قابلیت بازیابی اطلاعات در متن‌های طولانی تا سقف یک میلیارد توکن با دقت بالا (۱۰۰ درصد در تست تک‌کلید و ۹۰.۵ درصد در تست چندکلید).",
+   "• امکان تبدیل مدل‌های متن‌باز معروف به این معماری جدید، اون هم ظرف چند ساعت به ازای هر مدل."
+  ],
+  "why": "در حال حاضر این موارد در حد معرفی و ادعای تیم سازنده است و فعلاً برای دسترسی اولیه کاربران یه لیست انتظار راه انداختن تا بعداً نتایج و جزییات بیشتری رو منتشر کنن.",
+  "why_label": "حرف آخر",
+  "tags": [
+   "متن‌باز"
+  ]
+ },
+ "updated": "2026-11-09T19:55:24+00:00"
+}

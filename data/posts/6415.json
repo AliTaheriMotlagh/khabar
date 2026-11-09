@@ -1,0 +1,59 @@
+{
+ "id": 6415,
+ "url": "https://t.me/dlmehr/6415",
+ "date": "2026-11-09T19:53:09+00:00",
+ "text": "https://fxtwitter.com/matthewberman/status/2119871207206158459?a=DxEZW4zJxh1xuHZn9GE&s=52",
+ "forwarded_from": null,
+ "digest": false,
+ "hash": "0935437245e4",
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/matthewberman/status/2119871207206158459?a=DxEZW4zJxh1xuHZn9GE&s=52",
+  "site": "🧵 Thread • FxTwitter",
+  "title": "Matthew Berman (@MatthewBerman)",
+  "description": "Fable 5.2 is HERE!\n🔥\nI've burned over 100 billion tokens early testing Fable 5.2. It is BY FAR the best model I've ever used.\nHere's my full review (including Gears of War clone):\n> Fable 5.2 is the most autonomous model to date. Given a task with little…",
+  "image": null
+ },
+ "gholam": {
+  "text": "رفقا، متیو برمن تو یه پست تجربه کار با مدل جدید Fable 5.2 رو به اشتراک گذاشته و حسابی از عملکردش تعریف کرده؛ به گفته خودش بعد از سوزوندن بیش از ۱۰۰ میلیارد توکن در تست‌های اولیه، این مدل رو مستقل‌ترین و تواناترین گزینه‌ای می‌دونه که تا امروز دیده. \n\nطبق ادعای اون، این مدل تو درک کدهای حجیم و پیدا کردن باگ‌ها عالی کار می‌کنه و برای کار با ابزارهای سه‌بعدی مثل آنریل انجین و بلندر هم توانایی فوق‌العاده‌ای داره، طوری که تونسته با کمترین راهنمایی پروژه‌های سنگینی مثل بازسازی شهر توکیو رو جلو ببره. با این حال، اشاره کرده که مصرف بالای سهمیه (کوتا) باعث می‌شه برای استفاده‌ی ۲۴ ساعته همچنان سراغ گزینه‌هایی مثل Opus بره و از Fable 5.2 بیشتر برای کارهای دشوار و برنامه‌ریزی‌های پیچیده استفاده کنه.",
+  "date": "2026-11-09T19:53:31+00:00"
+ },
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/MatthewBerman/status/2119871207206158459",
+   "domain": "x.com",
+   "author": {
+    "name": "Matthew Berman",
+    "handle": "MatthewBerman",
+    "avatar": "https://pbs.twimg.com/profile_images/2051399921467830272/9RGo_6vv_200x200.jpg"
+   },
+   "text": "Fable 5.2 is HERE! 🔥\n\nI've burned over 100 billion tokens early testing Fable 5.2. It is BY FAR the best model I've ever used. \n\nHere's my full review (including Gears of War clone):\n\n> Fable 5.2 is the most autonomous model to date. Given a task with little direction, it makes assumptions that 99 times out of 100 are exactly what I would have done.\n\n> It's a bug catching genius. I tasked it with going over all of my codebases and it found bugs that no other model would have found. \n\n> It is the most capable model I've used with 3D generation. It is so good at controlling Unreal Engine and Blender. Check out my Gears of War clone attached.\n\n> It's SUPER fast. I wasn't even using fast mode. It's less about how fast the tokens per second are, it's more about how it figures out direct paths to solutions. It doesn't get lost, it just knows exactly what it needs to do.\n\n> And then there's Ultracode...which is ridiculously fast for massive tasks. I gave it massive codebase review tasks and it would finish in 10-20 minutes, finding every possible issue. I probably won't be using it as it'll burn my sub quota too quickly.\n\n> Fable 5.2's completeness of work continued to surprise me. Clone Excel? Done...with full feature parity. Clone Gears of War? Done. Build a replica of Tokyo in Unreal? An entire simulated city is born. I rarely had to send follow up prompts to get it to complete something.\n\nNow, will I use it over Opus 5.5? I will likely still prefer Opus because I can run Opus nearly 24/7 and rarely run out of quota. And for the hardest jobs, I'll switch to Fable 5.2 for planning.",
+   "date": 1794251655,
+   "media": [
+    {
+     "type": "video",
+     "src": "https://video.twimg.com/amplify_video/2119846592782163968/vid/avc1/1280x720/Kk6FLNerzvonRJC4.mp4?tag=29",
+     "poster": "https://pbs.twimg.com/amplify_video_thumb/2119846592782163968/img/adfA3J75EBvmeJxW.jpg",
+     "ratio": 0.5625,
+     "duration": 67.9,
+     "gif": false
+    }
+   ],
+   "links": []
+  }
+ ],
+ "article": {
+  "title": "رفقا، متیو برمن تو یه پست تجربه کار با مدل جدید Fable 5.2 رو به اشتراک گذاشته و حسابی از عملکردش تعریف کرده",
+  "source_title": "Fable 5.2 is HERE! 🔥",
+  "body": [
+   "رفقا، متیو برمن تو یه پست تجربه کار با مدل جدید Fable 5.2 رو به اشتراک گذاشته و حسابی از عملکردش تعریف کرده؛ به گفته خودش بعد از سوزوندن بیش از ۱۰۰ میلیارد توکن در تست‌های اولیه، این مدل رو مستقل‌ترین و تواناترین گزینه‌ای می‌دونه که تا امروز دیده.",
+   "طبق ادعای اون، این مدل تو درک کدهای حجیم و پیدا کردن باگ‌ها عالی کار می‌کنه و برای کار با ابزارهای سه‌بعدی مثل آنریل انجین و بلندر هم توانایی فوق‌العاده‌ای داره، طوری که تونسته با کمترین راهنمایی پروژه‌های سنگینی مثل بازسازی شهر توکیو رو جلو ببره. با این حال، اشاره کرده که مصرف بالای سهمیه (کوتا) باعث می‌شه برای استفاده‌ی ۲۴ ساعته همچنان سراغ گزینه‌هایی مثل Opus بره و از Fable 5.2 بیشتر برای کارهای دشوار و برنامه‌ریزی‌های پیچیده استفاده کنه."
+  ],
+  "why": null,
+  "tags": [
+   "آنتروپیک"
+  ]
+ },
+ "updated": "2026-11-09T19:55:23+00:00"
+}
