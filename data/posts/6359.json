@@ -12,7 +12,7 @@
   "site": "FxTwitter",
   "title": "Chubby ♨️ (@kimmonismus)",
   "description": "Baidu just dropped ERNIE-5.5-Flash-Base, and the weights are available.\n280B MoE, only 14B active per token, pretrained from scratch on 33.5T tokens. It's a pure base model with no mid- or post-training, so labs can adapt it for domain-specific tasks, reasoning…",
-  "image": "https://cdn4.telesco.pe/file/OFXO6EoFaFmP53BAZ3nWIjzyzftIAY5j3q5-aRQVrwESCP4J-GCYdkNR8F3RXTJXTLyHxGy6jCInWy8qmlqvvuQ1Y_EyPiKiVMib8YxOaBcXtySpesOSSImy0Mcl_0qSlDJLh7fIufct6gf8zLkVEwKppMjESlAAv4s0eNpeMm4n_APttkfG7MIykQ2utck2lyBJDvJnSCY557b04Jmrsu-YyUX9yD-DCOfatlEHfqKrCvXInb0hIlfaDpWJJ2arQN3rniNorSUnEDZLLPM3EfJi7IXOjyOoTfSQ7h2HgnYbWlwYtABOLdmxyIZTt3i2ZTMvAY_EYSESEv4PXfCD1A.jpg"
+  "image": "https://cdn4.telesco.pe/file/OirFdzUi8V2ObDH6kAAeXmR9QWKukHtA1jhVT9cflf9hRm4Z6rA13HEyAHOjGe5jLjjEA2nx4Owbs6-_lXN7e2_PtgT9y5ZAwRrWgFiipXLbEFmBZtZ8wS58DFmZCBGZJA6382Aon0YEousQ97o3xjsfX8ItAFgvNXtmG-mPL-TDQ137IvVBDJONmBDH3s5iSgLpVPLU61s__fHeVUoe3AM1aDRYLdKKsF_xksx1Dy72Sa2G16rdFoe07SfuHq4Vd9hnBadLr2AEeYQOVmUp331sMlyM6t9I7vTLiDSddid5X-UP5fERSQHNppumbH71J92M2Ktk1rnTkcVzBhvk-Q.jpg"
  },
  "gholam": {
   "text": "چینی‌ها دوباره بازار هوش مصنوعی رو تکون دادن؛ بایدو مدل پایه ERNIE-5.5-Flash رو با وزن‌های باز فرستاد توی میدون تا نشون بده برای زیر کشیدن دیپ‌سیک شمشیر رو از رو بسته.\n\n• کل هیبت این غول MoE حدود ۲۸۰ میلیارد پارامتره، اما سرِ چرخ، فقط ۱۴ میلیارد پارامتر فعال درگیر میشن؛ با ۳۳.۵ تریلیون توکن چکش‌کاری شده و با یه فرمول فشرده‌سازی تر و تمیز روی لایه‌های حافظه، تا ۱ میلیون توکن کانتکست رو بدون خفه کردن سرور قورت میده.\n• توی بنچمارک‌های اولیه فنی و کدنویسی، یقهٔ رقیب هم‌قدش یعنی DeepSeek-V4-Flash رو محکم چسبیده و جا گذاشته (مثلاً توی HumanEval+ عدد ۸۲.۳ در برابر ۶۹.۵).\n• مدل روی هاگینگ‌فیس در دسترسه، اما طبق معمول دم خروس حقوقی زده بیرون و لایسنسش ||کاربرهای اتحادیه اروپا، بریتانیا و کره جنوبی رو کاملاً خط زده||.\n\nبازی الان دیگه سرِ گنده‌تر کردن الکی مدل‌ها نیست، دعوا سر اینه کی می‌تونه همین مغز رو با کمترین خرج چیپست و برق راه بندازه؛ چینی‌ها هم این ترفند رو فوت آب شدن.",
@@ -66,5 +66,5 @@
    "چین"
   ]
  },
- "updated": "2026-11-08T16:21:18+00:00"
+ "updated": "2026-11-09T00:02:42+00:00"
 }
