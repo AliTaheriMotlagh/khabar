@@ -1,0 +1,58 @@
+{
+ "id": 6418,
+ "url": "https://t.me/dlmehr/6418",
+ "date": "2026-11-09T20:09:39+00:00",
+ "text": "https://fxtwitter.com/openaidevs/status/2119883176726409645?a=BJiLjMYiSLMOqhEID-Y&s=52",
+ "forwarded_from": null,
+ "digest": false,
+ "hash": "90a0709a115e",
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/openaidevs/status/2119883176726409645?a=BJiLjMYiSLMOqhEID-Y&s=52",
+  "site": "🧵 Thread • FxTwitter",
+  "title": "OpenAI Developers (@OpenAIDevs)",
+  "description": "You can now connect multiple local computers to the same dot and choose which one it uses for a task.\nIt can build and test your app on a dedicated machine while you keep coding on your laptop.",
+  "image": null
+ },
+ "gholam": {
+  "text": "رفقا، بخش توسعه‌دهندگان OpenAI خبر داده که از این به بعد می‌شه چندتا کامپیوتر محلی رو به یک «dot» وصل کرد و مشخص کرد که هر کار دقیقاً روی کدوم سیستم پیش بره. با این قابلیت، مثلاً می‌تونید وظیفهٔ بیلد و تست گرفتن برنامه رو بسپارید به یه سیستم جداگونه، در حالی که خودتون با لپ‌تاپ به کد زدن ادامه می‌دید. طبق مثال‌هایی که زدن، این ویژگی اجازه میده کارهایی مثل تست تغییرات Xcode روی یه مک دیگه و ارسال اسکرین‌شات، یا بازتولید باگ‌ها روی سیستمی با SDK قدیمی‌تر رو راحت‌تر جلو ببرید.",
+  "date": "2026-11-09T20:10:01+00:00"
+ },
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/OpenAIDevs/status/2119883176726409645",
+   "domain": "x.com",
+   "author": {
+    "name": "OpenAI Developers",
+    "handle": "OpenAIDevs",
+    "avatar": "https://pbs.twimg.com/profile_images/2022002720971096064/l3Kyt4qt_200x200.jpg"
+   },
+   "text": "You can now connect multiple local computers to the same dot and choose which one it uses for a task.\n\nIt can build and test your app on a dedicated machine while you keep coding on your laptop.",
+   "date": 1794254509,
+   "media": [
+    {
+     "type": "video",
+     "src": "https://video.twimg.com/amplify_video/2119883144707047424/vid/avc1/1280x720/_95W3lYnfOT4ZxdZ.mp4?tag=16",
+     "poster": "https://pbs.twimg.com/amplify_video_thumb/2119883144707047424/img/CxuDM2R-jRXJG53z.jpg",
+     "ratio": 0.5625,
+     "duration": 17.664,
+     "gif": false
+    }
+   ],
+   "links": []
+  }
+ ],
+ "article": {
+  "title": "رفقا، بخش توسعه‌دهندگان OpenAI خبر داده که از این به بعد می‌شه چندتا کامپیوتر محلی رو به یک «dot» وصل کرد و مشخص کرد که هر کار دقیقاً روی کدوم سیستم پیش بره",
+  "source_title": "You can now connect multiple local computers to the same dot and choose which one it uses for a task.",
+  "body": [
+   "رفقا، بخش توسعه‌دهندگان OpenAI خبر داده که از این به بعد می‌شه چندتا کامپیوتر محلی رو به یک «dot» وصل کرد و مشخص کرد که هر کار دقیقاً روی کدوم سیستم پیش بره. با این قابلیت، مثلاً می‌تونید وظیفهٔ بیلد و تست گرفتن برنامه رو بسپارید به یه سیستم جداگونه، در حالی که خودتون با لپ‌تاپ به کد زدن ادامه می‌دید. طبق مثال‌هایی که زدن، این ویژگی اجازه میده کارهایی مثل تست تغییرات Xcode روی یه مک دیگه و ارسال اسکرین‌شات، یا بازتولید باگ‌ها روی سیستمی با SDK قدیمی‌تر رو راحت‌تر جلو ببرید."
+  ],
+  "why": null,
+  "tags": [
+   "اوپن‌ای‌آی"
+  ]
+ },
+ "updated": "2026-11-09T20:13:21+00:00"
+}
