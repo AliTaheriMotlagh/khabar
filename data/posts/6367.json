@@ -12,7 +12,7 @@
   "site": "FxTwitter · anthropic.com",
   "title": "Anthropic (@AnthropicAI)",
   "description": "Memory is what allows Claude to learn from experience. In a new Engineering Blog post, we share how “dreaming” helps Claude organize what it’s learned, correct its mistakes, and find what it needs more easily the next time. https://www.anthropic.com/research/components…",
-  "image": "https://cdn4.telesco.pe/file/hOda42Vy6JXqdgqE-hYYojAnDz9fAs0Y0tm6aJ_-PehwNbO6_lRBU2SFGwhzOUyh6ZAobVsL6BVYcz2pdrCA3O8WX69QKNLp5-P2mux4hFvB5I_i82j8pFrsXJTUHgN-QimZrM3zqrdCgH0Aa1PmT1_auaZU6KfQoRaX8WWyANsA-6UShcdYk09jcnmbwHkVqTCd34oaMNcNyPWKgxlft5UTOD0KslXOwp2DMq5KUBmjcbVG0Gsd4t3LVCkr1cZ6uZqtMUVqlKRPV40uvXkt84-AkUcBwwZTKDyclA2FEzR3VLPKQsewcpFexCCfN4SKyzyaSZLxoldy7f_ZYihvJQ.jpg"
+  "image": "https://cdn4.telesco.pe/file/P7qoICTSJD21DBE-4qXt9apKCxUhD7W_s-wZJIog283w-4XdUCkwlRHdBp9QcwhKSbtp9C8-pX2LipcA2oE3bmHghMlmyFmstQOElxqr1dnjuI2GcINlgCT8ygbtKlg0u02xAqOlcx3GkqjS3cAuN6d3izD2W54T-UesFaLbGFXx0q3f_NLtu-yqFYTDq4odSyHz2ukYegTvb2-Z_6CanNvCcNbdmNmJKlKEgNmDokTOZ3057bsil4fCrozKjmeSuRmMuNhkIfKdhAAT-5ZZaas45qpMJzGqam4FqqISUdoLmcxhD_8LGJkxH4Ld4fOZOLv7Cfp8l4TdQ2uT7XgWsg.jpg"
  },
  "gholam": {
   "text": "حضرات آنتروپیک باز دست به کیبورد شدن و با یه واژهٔ شاعرانه به اسم «خواب دیدن» (Dreaming)، رفتن سراغ حل یکی از گیرهای اساسی هوش مصنوعی: یعنی همون حافظهٔ بلندمدت ایجنت‌ها.\n\n• قصه چیه؟ این اصطلاح باکلاسِ «رویا دیدن» در اصل همون فرآیند *Consolidation* یا بازخوانی و فشرده‌سازی اطلاعات در پس‌زمینه‌ست؛ یعنی وقتی سیستم بیکاره و با کاربر چت نمی‌کنه، می‌شینه لاگ مکالمات قبلی رو ورق می‌زنه، تناقض‌ها و سوتی‌هاش رو اصلاح می‌کنه و نکات کلیدی رو مرتب می‌چینه تو دیتابیس.\n• گیر کار تا الان کجا بود؟ نگه‌داشتن کل تاریخچهٔ مکالمات تو پنجرهٔ زمینه (Context Window) هم خرج توکن رو سرسام‌آور می‌کرد، هم مدل بعد یه مدت دچار حواس‌پرتی و توهم می‌شد؛ حالا می‌خوان با هرس کردن مداوم خاطرات، فقط لبّ کلام رو نگه دارن.\n\nاسمش رو گذاشتن «رویا دیدن کلود»، ولی تهش همون دیفرگ کردن هارد و جاروکشی دیتابیس تو شیفت شبه تا فردا که کارش داری، آلزایمر نگیره و یادش بمونه دیروز چی بهش گفتی.",
@@ -60,5 +60,5 @@
    "ایجنت"
   ]
  },
- "updated": "2026-11-09T06:04:05+00:00"
+ "updated": "2026-11-09T12:46:23+00:00"
 }
