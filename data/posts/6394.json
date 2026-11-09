@@ -1,0 +1,64 @@
+{
+ "id": 6394,
+ "url": "https://t.me/dlmehr/6394",
+ "date": "2026-11-09T15:13:02+00:00",
+ "text": "https://fxtwitter.com/google/status/2119788086490001906?a=vM4ff1C5Cq_IneCcB8k&s=52",
+ "forwarded_from": null,
+ "digest": false,
+ "hash": "f7f6b7f14303",
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/google/status/2119788086490001906?a=vM4ff1C5Cq_IneCcB8k&s=52",
+  "site": "🧵 Thread • FxTwitter",
+  "title": "Google (@Google)",
+  "description": "Today, we're expanding our eighth-generation TPU portfolio with two new systems built specifically for the agentic era — bringing our total to four distinct eighth-generation TPU systems launched in a single year.\nTPU 8i Max was built for massive context…",
+  "image": null
+ },
+ "gholam": {
+  "text": "گوگل باز دست‌به‌آچار شده و تو جنگ سخت‌افزار هوش مصنوعی گردوخاک راه انداخته؛ این غول تکنولوژی از دوتا تراشه تازه از نسل هشتم اختصاصی خودش رونمایی کرد که مدعیه دقیقاً واسه «دوران ایجنت‌ها» تراشیده شدن:\n\n• تراشه TPU 8i Max: مخصوص پردازش پنجره‌های زمینه فوق‌سنگین (Context Window) با حداکثر تراکم پردازشی داخل هر رک سرور، تا مدل‌های زبانی موقع تحلیل داده‌های طولانی نفس کم نیارن.\n• تراشه TPU 8tx: متمرکز روی استنتاج محرمانه و فوق‌امنیتی (Confidential Inference) تا شرکت‌های کله‌گنده و حساس بابت حریم خصوصی داده‌هاشون تو کلود بهونه‌ای نداشته باشن.\n• با این دو قلم، زیر نظر «امین وحدت» مدیر ارشد زیرساخت گوگل، تعداد معماری‌های عرضه‌شده نسل هشت فقط توی یک سال به چهار سیستم مجزا رسید.\n\nپشت این القاب خوش‌رنگ‌ولعاب سازمانی، پیام واضحه رفقا: گوگل داره با تمام توان طناب وابستگی به کارت‌های گرون‌قیمت انویدیا رو قیچی می‌کنه تا شرکت‌ها رو چارمیخ ببنده به کلود اختصاصی خودش، هرچند تا وقتی اکوسیستم نرم‌افزاریش به روونی و بی‌دردسری رقیب سبزپوش نشه، این غول‌های سیلیکونی بیشتر یه ابزار دفاعی تو حیاط‌خلوت خود گوگله تا نجات‌دهنده بازار.",
+  "date": "2026-11-09T15:13:29+00:00"
+ },
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/Google/status/2119788086490001906",
+   "domain": "x.com",
+   "author": {
+    "name": "Google",
+    "handle": "Google",
+    "avatar": "https://pbs.twimg.com/profile_images/2042749771337564160/AgOFPEL3_200x200.jpg"
+   },
+   "text": "Today, we're expanding our eighth-generation TPU portfolio with two new systems built specifically for the agentic era — bringing our total to four distinct eighth-generation TPU systems launched in a single year.\n\nTPU 8i Max was built for massive context windows and the highest compute density per rack, and TPU 8tx is optimized for secure and confidential inference. While flexible across workloads, the four systems in our 8th gen TPU portfolio give developers and organizations a purpose-built accelerator for every stage of the agentic lifecycle.\n\n@AminVahdat, SVP and Chief Technologist, AI and Infrastructure, explains why we're expanding our TPU portfolio and what everyone needs to know about TPU 8tx and 8i Max ⬇️",
+   "date": 1794231838,
+   "media": [
+    {
+     "type": "video",
+     "src": "https://video.twimg.com/amplify_video/2119787563594518528/vid/avc1/720x720/BM4wWnYU58yJSoSK.mp4?tag=29",
+     "poster": "https://pbs.twimg.com/amplify_video_thumb/2119787563594518528/img/Q7hLP3W6PS7tWLv9.jpg",
+     "ratio": 1.0,
+     "duration": 113.833,
+     "gif": false
+    }
+   ],
+   "links": []
+  }
+ ],
+ "article": {
+  "title": "گوگل باز دست‌به‌آچار شده و تو جنگ سخت‌افزار هوش مصنوعی گردوخاک راه انداخته؛ این غول تکنولوژی از دوتا تراشه تازه از نسل هشتم اختصاصی خودش رونمایی کرد که مدعیه دقیقاً واسه «دوران ایجنت‌ها» تراشیده شدن",
+  "source_title": "Today, we're expanding our eighth-generation TPU portfolio with two new systems built specifically for the agentic era — bringing our total…",
+  "body": [
+   "گوگل باز دست‌به‌آچار شده و تو جنگ سخت‌افزار هوش مصنوعی گردوخاک راه انداخته؛ این غول تکنولوژی از دوتا تراشه تازه از نسل هشتم اختصاصی خودش رونمایی کرد که مدعیه دقیقاً واسه «دوران ایجنت‌ها» تراشیده شدن:",
+   "• تراشه TPU 8i Max: مخصوص پردازش پنجره‌های زمینه فوق‌سنگین (Context Window) با حداکثر تراکم پردازشی داخل هر رک سرور، تا مدل‌های زبانی موقع تحلیل داده‌های طولانی نفس کم نیارن.",
+   "• تراشه TPU 8tx: متمرکز روی استنتاج محرمانه و فوق‌امنیتی (Confidential Inference) تا شرکت‌های کله‌گنده و حساس بابت حریم خصوصی داده‌هاشون تو کلود بهونه‌ای نداشته باشن.",
+   "• با این دو قلم، زیر نظر «امین وحدت» مدیر ارشد زیرساخت گوگل، تعداد معماری‌های عرضه‌شده نسل هشت فقط توی یک سال به چهار سیستم مجزا رسید."
+  ],
+  "why": "پشت این القاب خوش‌رنگ‌ولعاب سازمانی، پیام واضحه رفقا: گوگل داره با تمام توان طناب وابستگی به کارت‌های گرون‌قیمت انویدیا رو قیچی می‌کنه تا شرکت‌ها رو چارمیخ ببنده به کلود اختصاصی خودش، هرچند تا وقتی اکوسیستم نرم‌افزاریش به روونی و بی‌دردسری رقیب سبزپوش نشه، این غول‌های سیلیکونی بیشتر یه ابزار دفاعی تو حیاط‌خلوت خود گوگله تا نجات‌دهنده بازار.",
+  "why_label": "حرف آخر",
+  "tags": [
+   "ایجنت",
+   "گوگل",
+   "تراشه"
+  ]
+ },
+ "updated": "2026-11-09T15:16:21+00:00"
+}
