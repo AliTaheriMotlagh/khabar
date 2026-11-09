@@ -1,0 +1,70 @@
+{
+ "id": 6403,
+ "url": "https://t.me/dlmehr/6403",
+ "date": "2026-11-09T16:56:15+00:00",
+ "text": "https://fxtwitter.com/meta_engineers/status/2119829872738714070?a=HwrfPHiWOTsWe6FCVEA&s=52",
+ "forwarded_from": null,
+ "digest": false,
+ "hash": "65c655c1f91d",
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/meta_engineers/status/2119829872738714070?a=HwrfPHiWOTsWe6FCVEA&s=52",
+  "site": "FxTwitter",
+  "title": "Engineering at Meta (@Meta_Engineers)",
+  "description": "🧠\nMost AI bug-catching tools review your code the way a human reviewer would, only faster. What if the AI wrote a test that proved the bug instead?\nThat’s Catching Just-in-Time Tests (JiTTests) — a novel approach where LLMs generate executable tests designed…",
+  "image": "https://cdn4.telesco.pe/file/Vd3Mzg4XYSMkIIkMOt9aUegWiBNG1K2OZWSqUuS8RJfF10HR06juAKkD8tIlK_cjn0npHiN3b_tffNERQBbrmKjk6JHRrfTAtzop6YiOQU9NjeQM6LdnpeWfcW4Q9wdhCYtzLBUUGdZ7U563HI0DfHVZLPVisLrB4HHic46PnZQe0jnmq_6der3zEefMFO80sn9t9RuO__w0lFdAS0wCJ4AO7wyfQ4jbfCAqZG7zYiQBriEYB1SK1-KdVY-z_P6_erieF2das6VUVNbjgTdg9ptlcnl2lBGLAPKAHtdMLddXC5nzTASXdccMLX_E27BgMA7ljAcnUlxpr2x2hQFaGw.jpg"
+ },
+ "gholam": {
+  "text": "رفقا، بچه‌های مهندسی متا یه ابزار جالب برای پیدا کردن باگ معرفی کردن به اسم JiTTests که بعد از یک سال تحقیق، حالا وارد زیرساخت‌های اصلی این شرکت شده. قضیه از این قراره که این سیستم به جای اینکه فقط کد رو مثل ناظر انسانی مرور کنه، با مدل‌های زبانی تست‌هایی اجرایی می‌نویسه که عمداً خطا بدن تا تغییرات ناخواسته و رفتاری کد رو دقیقاً قبل از ثبت نهایی بیرون بکشه.\n\nطبق اعلام خودشون، نتایج این سیستم تا الان این شکلی بوده:\n• تا حالا ۵۸۹ تا از مهندس‌هاشون باهاش کار کردن و دقت تشخیص یا همون نرخ مثبت واقعی رو ۶۰ درصد گزارش دادن.\n• تو نیمه اول سال ۲۰۲۶ تونسته جلوی ۷۴ مورد از خطاهای حریم خصوصی رو موقع بررسی کد بگیره و در کل این دست مشکلات رو ۲۰ درصد کاهش داده.",
+  "date": "2026-11-09T16:56:49+00:00"
+ },
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/Meta_Engineers/status/2119829872738714070",
+   "domain": "x.com",
+   "author": {
+    "name": "Engineering at Meta",
+    "handle": "Meta_Engineers",
+    "avatar": "https://pbs.twimg.com/profile_images/1453866309851049989/Iq6B3KjP_200x200.png"
+   },
+   "text": "🧠 Most AI bug-catching tools review your code the way a human reviewer would, only faster. What if the AI wrote a test that proved the bug instead?\n\nThat’s Catching Just-in-Time Tests (JiTTests) — a novel approach where LLMs generate executable tests designed to fail, surfacing behavioral changes in a code change before it lands.\n\nAfter a year of research, it’s now part of Meta’s infrastructure.\n\n✅ 589 engineers have engaged with it, reporting a 60% true-positive rate\n\n📈 In the first half of 2026, it helped catch 74 privacy SEVs at the diff stage, lowering overall privacy SEV occurrence by 20%\n\n🔗 Read how it works: https://engineering.fb.com/2026/10/29/security/catching-bugs-before-they-land-jittestings-human-on-the-loop-approach-at-full-scale/\n\n📄 Read our FSE 2026 paper, “Just-in-Time Catching Test Generation at Meta”: https://arxiv.org/pdf/2601.22832\n\n#AI #SoftwareEngineering #SoftwareTesting #DeveloperTools #Engineering",
+   "date": 1794241800,
+   "media": [
+    {
+     "type": "image",
+     "src": "https://pbs.twimg.com/media/HWYD1iua0AEnGQs.jpg?name=orig",
+     "ratio": 0.5581
+    }
+   ],
+   "links": [
+    "https://engineering.fb.com/2026/10/29/security/catching-bugs-before-they-land-jittestings-human-on-the-loop-approach-at-full-scale/",
+    "https://arxiv.org/pdf/2601.22832"
+   ]
+  },
+  {
+   "kind": "link",
+   "url": "https://engineering.fb.com/2026/10/29/security/catching-bugs-before-they-land-jittestings-human-on-the-loop-approach-at-full-scale/",
+   "domain": "engineering.fb.com",
+   "title": "Catching Bugs Before They Land: JiTTesting’s Human-on-the-Loop Approach at Full Scale",
+   "description": "Over the last year we’ve been sharing our work leveraging large language models to catch bugs on the fly — a novel approach we call Catching Just-in-Time Tests (JiTTests). Now, we’re sh…",
+   "image": "https://engineering.fb.com/wp-content/uploads/2026/10/Catching-JiTTests-Hero-3.png",
+   "site": "Engineering at Meta"
+  }
+ ],
+ "article": {
+  "title": "رفقا، بچه‌های مهندسی متا یه ابزار جالب برای پیدا کردن باگ معرفی کردن به اسم JiTTests که بعد از یک سال تحقیق، حالا وارد زیرساخت‌های اصلی این شرکت شده",
+  "source_title": "🧠 Most AI bug-catching tools review your code the way a human reviewer would, only faster. What if the AI wrote a test that proved the bug…",
+  "body": [
+   "رفقا، بچه‌های مهندسی متا یه ابزار جالب برای پیدا کردن باگ معرفی کردن به اسم JiTTests که بعد از یک سال تحقیق، حالا وارد زیرساخت‌های اصلی این شرکت شده. قضیه از این قراره که این سیستم به جای اینکه فقط کد رو مثل ناظر انسانی مرور کنه، با مدل‌های زبانی تست‌هایی اجرایی می‌نویسه که عمداً خطا بدن تا تغییرات ناخواسته و رفتاری کد رو دقیقاً قبل از ثبت نهایی بیرون بکشه.",
+   "طبق اعلام خودشون، نتایج این سیستم تا الان این شکلی بوده:",
+   "• تا حالا ۵۸۹ تا از مهندس‌هاشون باهاش کار کردن و دقت تشخیص یا همون نرخ مثبت واقعی رو ۶۰ درصد گزارش دادن.",
+   "• تو نیمه اول سال ۲۰۲۶ تونسته جلوی ۷۴ مورد از خطاهای حریم خصوصی رو موقع بررسی کد بگیره و در کل این دست مشکلات رو ۲۰ درصد کاهش داده."
+  ],
+  "why": null,
+  "tags": [
+   "متا"
+  ]
+ },
+ "updated": "2026-11-09T17:00:57+00:00"
+}
