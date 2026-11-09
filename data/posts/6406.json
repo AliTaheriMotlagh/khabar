@@ -1,0 +1,64 @@
+{
+ "id": 6406,
+ "url": "https://t.me/dlmehr/6406",
+ "date": "2026-11-09T17:34:59+00:00",
+ "text": "https://fxtwitter.com/skildai/status/2119844954893946999?a=3Ij3W6EqcQ_1ug5mhOk&s=52",
+ "forwarded_from": null,
+ "digest": false,
+ "hash": "a421266be52e",
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/skildai/status/2119844954893946999?a=3Ij3W6EqcQ_1ug5mhOk&s=52",
+  "site": "🧵 Thread • FxTwitter",
+  "title": "Skild AI (@SkildAI)",
+  "description": "Today we’re open-sourcing Steel, our internal physics solver built with @NVIDIA.\nIt runs simulations up to 13× faster than PhysX while using ~3× less GPU memory.\nSteel unlocks scaleable simulation for manipulation, for everyone.",
+  "image": null
+ },
+ "gholam": {
+  "text": "رفقا، شرکت Skild AI خبر داده که موتور شبیه‌ساز فیزیک خودش به اسم Steel رو که با همکاری انویدیا توسعه داده، به صورت متن‌باز منتشر کرده. به گفته این تیم، Steel مشخصاً برای حل گلوگاه شبیه‌سازی حرکات ظریف و تماسی دست ربات‌ها (Manipulation) در مقیاس بالا ساخته شده و داخل پلتفرم Newton انویدیا کار می‌کنه.\n\nچندتا آمار و نکته که سازنده‌هاش به عنوان نتایج تست‌هاشون اعلام کردن:\n\n• ادعا شده که این موتور تا ۱۳ برابر سریع‌تر از موتور رایج PhysX عمل می‌کنه و در آزمایش با ۲۰ تسک مختلف، به ۳.۹۰ میلیون گام محیط در ثانیه رسیده.\n• از نظر مصرف حافظه کارت گرافیک، اعلام شده حدود ۳ برابر سبک‌تره و تو اجرای بیش از ۶۱ هزار محیط متنوع، به جای ۲۹ گیگابایتِ PhysX، حدود ۱۱ گیگابایت حافظه مصرف کرده.\n• علاوه بر نسخه اصلی، یک نسخه آزمایشی تحت وب (WebGPU) هم براش منتشر شده تا کاربران بتونن عملکرد تعاملی اون رو داخل مرورگر امتحان کنن.",
+  "date": "2026-11-09T17:35:22+00:00"
+ },
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/SkildAI/status/2119844954893946999",
+   "domain": "x.com",
+   "author": {
+    "name": "Skild AI",
+    "handle": "SkildAI",
+    "avatar": "https://pbs.twimg.com/profile_images/2092277378194300928/Y9JDCzLj_200x200.jpg"
+   },
+   "text": "Today we’re open-sourcing Steel, our internal physics solver built with @NVIDIA.\n\nIt runs simulations up to 13× faster than PhysX while using ~3× less GPU memory.\n\nSteel unlocks scaleable simulation for manipulation, for everyone.",
+   "date": 1794245396,
+   "media": [
+    {
+     "type": "video",
+     "src": "https://video.twimg.com/amplify_video/2119844625246765056/vid/avc1/960x540/36ot_QzsjBkNfqJF.mp4?tag=29",
+     "poster": "https://pbs.twimg.com/amplify_video_thumb/2119844625246765056/img/50LSfEemaPWeOR0X.jpg",
+     "ratio": 0.5625,
+     "duration": 11.541,
+     "gif": false
+    }
+   ],
+   "links": []
+  }
+ ],
+ "article": {
+  "title": "رفقا، شرکت Skild AI خبر داده که موتور شبیه‌ساز فیزیک خودش به اسم Steel رو که با همکاری انویدیا توسعه داده، به صورت متن‌باز منتشر کرده",
+  "source_title": "Today we’re open-sourcing Steel, our internal physics solver built with @NVIDIA.",
+  "body": [
+   "رفقا، شرکت Skild AI خبر داده که موتور شبیه‌ساز فیزیک خودش به اسم Steel رو که با همکاری انویدیا توسعه داده، به صورت متن‌باز منتشر کرده. به گفته این تیم، Steel مشخصاً برای حل گلوگاه شبیه‌سازی حرکات ظریف و تماسی دست ربات‌ها (Manipulation) در مقیاس بالا ساخته شده و داخل پلتفرم Newton انویدیا کار می‌کنه.",
+   "چندتا آمار و نکته که سازنده‌هاش به عنوان نتایج تست‌هاشون اعلام کردن:",
+   "• ادعا شده که این موتور تا ۱۳ برابر سریع‌تر از موتور رایج PhysX عمل می‌کنه و در آزمایش با ۲۰ تسک مختلف، به ۳.۹۰ میلیون گام محیط در ثانیه رسیده.",
+   "• از نظر مصرف حافظه کارت گرافیک، اعلام شده حدود ۳ برابر سبک‌تره و تو اجرای بیش از ۶۱ هزار محیط متنوع، به جای ۲۹ گیگابایتِ PhysX، حدود ۱۱ گیگابایت حافظه مصرف کرده.",
+   "• علاوه بر نسخه اصلی، یک نسخه آزمایشی تحت وب (WebGPU) هم براش منتشر شده تا کاربران بتونن عملکرد تعاملی اون رو داخل مرورگر امتحان کنن."
+  ],
+  "why": null,
+  "tags": [
+   "انویدیا",
+   "علم",
+   "متن‌باز"
+  ]
+ },
+ "updated": "2026-11-09T17:38:20+00:00"
+}
