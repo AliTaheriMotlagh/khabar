@@ -1,0 +1,70 @@
+{
+ "id": 6430,
+ "url": "https://t.me/dlmehr/6430",
+ "date": "2026-11-10T14:30:00+00:00",
+ "text": "https://fxtwitter.com/kimmonismus/status/2120103171414806648?a=os90d7jVynp3wLOOUFE&s=52",
+ "forwarded_from": null,
+ "digest": false,
+ "hash": "bdeecc64d2e7",
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/kimmonismus/status/2120103171414806648?a=os90d7jVynp3wLOOUFE&s=52",
+  "site": "🧵 Thread • FxTwitter",
+  "title": "Chubby ♨️ (@kimmonismus)",
+  "description": "While we’re all focused on Claude Fable 5.2’s coding abilities, its work in science and engineering has received far less attention.\nAnthropic has made insane steps and solved crazy hard problems that many missed:\n- Hardware: Fable 5.2 designed three electronic…",
+  "image": "https://cdn4.telesco.pe/file/SssvUk3krDNq5toAlkX0xcw0Gh5s6iWkAMbqF0ERsJyKR1Gwe-pE8lvVPbTM1MFzcdrLDBdkXpNsjzBnglkHYsg1Bp1e6PkFvQaZlcvcWJ3QazyXsmTfPGtDFyKmUG8BhIwJP_50tKZNjmnzHi7odlzXOyN1ZXb3z0h92eAR3mhSYSlE6gWW4RvysU6E5kHZNUrdF4zoXIluFzzVUUkWCa8ectm8saRfvXis8e0tDcsbV2KTX4pfDXukSEp3gs8frbyxdiSKJQgX1bCBp468rSykpmXRnpNRQfPeShCz9cwNiTA0tK70siOs68GlZ2RF013oSbgxeF76iRBlWT27Gw.jpg"
+ },
+ "gholam": {
+  "text": "سلام به همه رفقا. تو این پستی که منتشر شده، نویسنده نگاهی انداخته به توانایی‌های گزارش‌شده از مدل‌های جدید آنتروپیک (یعنی Fable 5.2 و Mythos 5.2) تو حوزه‌های علمی و مهندسی و میگه خیلیا این بخش از پیشرفت‌ها رو ندیدن:\n\n• تو بخش سخت‌افزار و مهندسی، مدل تونسته سه دستگاه الکترونیکی رو با پرامپت کوتاه طراحی کنه که بدون مشکل ساخته شدن، و تو شبیه‌سازی رباتیک هم نرخ موفقیتش از ۲۷.۶ درصد به ۶۴.۹ درصد رسیده.\n• بر اساس این گزارش، آنتروپیک اعلام کرده مدلشون دو مسئله حل‌نشده در فیزیک نظری مربوط به سیاه‌چاله‌ها رو حل کرده و تو علم شیمی هم طراحی سنتز مولکول‌هاش از نگاه متخصصان در حد دانشجوی دکترا بوده.\n• علاوه بر این‌ها، مواردی مثل افزایش ۳۶ برابری سرعت محاسبات پایداری مواد و مدل‌سازی موفق پوسته پروتئینی ویروس‌ها در ژن‌درمانی مطرح شده که نشون‌دهنده ورود جدی هوش مصنوعی به علوم پایه است.",
+  "date": "2026-11-10T14:30:25+00:00"
+ },
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/kimmonismus/status/2120103171414806648",
+   "domain": "x.com",
+   "author": {
+    "name": "Chubby♨️",
+    "handle": "kimmonismus",
+    "avatar": "https://pbs.twimg.com/profile_images/1728327996375719936/RW7VBJfD_200x200.jpg"
+   },
+   "text": "While we’re all focused on Claude Fable 5.2’s coding abilities, its work in science and engineering has received far less attention. \n\nAnthropic has made insane steps and solved crazy hard problems that many missed:\n\n- Hardware: Fable 5.2 designed three electronic devices from short prompts, including their circuit boards, enclosures and software. Partner Diode built them, and all three worked without changes to their circuitry.\n\n- Gene therapy research: Mythos 5.2 developed a method to model the complex protein shells of viruses used to deliver gene therapies. In Anthropic’s test, it accurately modeled 28 out of 34.\n\n- Chemistry: An early version of Mythos 5.2 planned ways to synthesize complex molecules. Three chemists rated the work around the level of an early PhD student. \n\n- Physics: Anthropic says Fable 5.2 solved two open theoretical physics problems involving black holes. The results have been published as preprints.\n\n- Materials science: Discovered Materials says Fable 5.2 made a calculation used to check material stability 36 times faster on average. Across 13 test cases, the total time fell from 3.3 hours to under four minutes.\n\n- Robotics: In Anthropic’s simulated RoboDojo test, Fable 5.2 achieved a 64.9% average success rate, up from 27.6% for Fable 5.1.\n\nSo yeah, this is nuts. And at the same time thats why we need to accelerate. AI helps us solve problems in *ever* scientific field. And yet, we are still in 2026, and this is still the beginning. Fable 5.2 shows us where we are heading. And 2027 is going to nuts.",
+   "date": 1794306960,
+   "media": [
+    {
+     "type": "image",
+     "src": "https://pbs.twimg.com/media/HWwQi3xXIAEACO7.jpg?name=orig",
+     "ratio": 0.9298
+    },
+    {
+     "type": "image",
+     "src": "https://pbs.twimg.com/media/HWwQlEiXgAAmx7X.jpg?name=orig",
+     "ratio": 0.8053
+    },
+    {
+     "type": "image",
+     "src": "https://pbs.twimg.com/media/HWwQwn3WkAA6cyH.jpg?name=orig",
+     "ratio": 0.8098
+    }
+   ],
+   "links": []
+  }
+ ],
+ "article": {
+  "title": "سلام به همه رفقا",
+  "source_title": "While we’re all focused on Claude Fable 5.2’s coding abilities, its work in science and engineering has received far less attention.",
+  "body": [
+   "سلام به همه رفقا. تو این پستی که منتشر شده، نویسنده نگاهی انداخته به توانایی‌های گزارش‌شده از مدل‌های جدید آنتروپیک (یعنی Fable 5.2 و Mythos 5.2) تو حوزه‌های علمی و مهندسی و میگه خیلیا این بخش از پیشرفت‌ها رو ندیدن:",
+   "• تو بخش سخت‌افزار و مهندسی، مدل تونسته سه دستگاه الکترونیکی رو با پرامپت کوتاه طراحی کنه که بدون مشکل ساخته شدن، و تو شبیه‌سازی رباتیک هم نرخ موفقیتش از ۲۷.۶ درصد به ۶۴.۹ درصد رسیده.",
+   "• بر اساس این گزارش، آنتروپیک اعلام کرده مدلشون دو مسئله حل‌نشده در فیزیک نظری مربوط به سیاه‌چاله‌ها رو حل کرده و تو علم شیمی هم طراحی سنتز مولکول‌هاش از نگاه متخصصان در حد دانشجوی دکترا بوده.",
+   "• علاوه بر این‌ها، مواردی مثل افزایش ۳۶ برابری سرعت محاسبات پایداری مواد و مدل‌سازی موفق پوسته پروتئینی ویروس‌ها در ژن‌درمانی مطرح شده که نشون‌دهنده ورود جدی هوش مصنوعی به علوم پایه است."
+  ],
+  "why": null,
+  "tags": [
+   "آنتروپیک",
+   "علم",
+   "کدنویسی"
+  ]
+ },
+ "updated": "2026-11-10T14:33:19+00:00"
+}
