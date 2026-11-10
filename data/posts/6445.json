@@ -1,0 +1,61 @@
+{
+ "id": 6445,
+ "url": "https://t.me/dlmehr/6445",
+ "date": "2026-11-10T17:43:07+00:00",
+ "text": "https://fxtwitter.com/openai/status/2120202353907486826?a=Ud0hpCeUGg2TK2o1j80&s=52",
+ "forwarded_from": null,
+ "digest": false,
+ "hash": "8c90b8b76520",
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/openai/status/2120202353907486826?a=Ud0hpCeUGg2TK2o1j80&s=52",
+  "site": "FxTwitter",
+  "title": "OpenAI (@OpenAI)",
+  "description": "We're turning our lessons from defending OpenAI into practical tools for our customers. On Thursday, join us at Cyber at the Frontier, a live keynote, for our latest cyber announcements.\nWorking with our frontier models, we've identified and resolved important…",
+  "image": null
+ },
+ "gholam": {
+  "text": "رفقا، اوپن‌ای‌آی اعلام کرده قراره رویداد زنده‌ای به نام «Cyber at the Frontier» در تاریخ ۱۲ نوامبر برگزار کنه و از برنامه‌ها و ابزارهای جدید سایبری خودش رونمایی کنه. طبق گفته خودشون، اونا با کمک مدل‌های پیشرفته هوش مصنوعی تونستن آسیب‌پذیری‌های مهمی رو در کدها و زیرساخت‌های خودشون شناسایی و رفع کنن و حالا می‌خوان همون تجربه‌ها رو در قالب ابزارها و راهنماهای کاربردی برای تقویت امنیت در اختیار بقیه تیم‌های امنیتی قرار بدن. توی این برنامه گرگ بروکمن هم قراره درباره درس‌هایی که یاد گرفتن و دلایل استفاده از مدل‌های جدید توی حوزه امنیت صحبت کنه.",
+  "date": "2026-11-10T17:43:25+00:00"
+ },
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/OpenAI/status/2120202353907486826",
+   "domain": "x.com",
+   "author": {
+    "name": "OpenAI",
+    "handle": "OpenAI",
+    "avatar": "https://pbs.twimg.com/profile_images/1885410181409820672/ztsaR0JW_200x200.jpg"
+   },
+   "text": "We're turning our lessons from defending OpenAI into practical tools for our customers. On Thursday, join us at Cyber at the Frontier, a live keynote, for our latest cyber announcements.\n\nWorking with our frontier models, we've identified and resolved important vulnerabilities in our own code and infrastructure. That experience is informing the tools and playbooks we're building to help other security teams strengthen their defenses.\n\n@gdb shares what we've learned and why security teams should keep putting the latest models to work as capabilities improve.\n\nTune in on November 12 at 10 a.m. PT: https://openai.com/cyber-at-the-frontier/",
+   "date": 1794330607,
+   "media": [
+    {
+     "type": "video",
+     "src": "https://video.twimg.com/amplify_video/2120202060255928320/vid/avc1/1280x720/AJJnMeSeZO6ufBRC.mp4?tag=29",
+     "poster": "https://pbs.twimg.com/amplify_video_thumb/2120202060255928320/img/UsvVqShqoZcUGVhy.jpg",
+     "ratio": 0.5625,
+     "duration": 57.515,
+     "gif": false
+    }
+   ],
+   "links": [
+    "https://openai.com/cyber-at-the-frontier/"
+   ]
+  }
+ ],
+ "article": {
+  "title": "رفقا، اوپن‌ای‌آی اعلام کرده قراره رویداد زنده‌ای به نام «Cyber at the Frontier» در تاریخ ۱۲ نوامبر برگزار کنه و از برنامه‌ها و ابزارهای جدید سایبری خودش رونمایی کنه",
+  "source_title": "We're turning our lessons from defending OpenAI into practical tools for our customers. On Thursday, join us at Cyber at the Frontier, a…",
+  "body": [
+   "رفقا، اوپن‌ای‌آی اعلام کرده قراره رویداد زنده‌ای به نام «Cyber at the Frontier» در تاریخ ۱۲ نوامبر برگزار کنه و از برنامه‌ها و ابزارهای جدید سایبری خودش رونمایی کنه. طبق گفته خودشون، اونا با کمک مدل‌های پیشرفته هوش مصنوعی تونستن آسیب‌پذیری‌های مهمی رو در کدها و زیرساخت‌های خودشون شناسایی و رفع کنن و حالا می‌خوان همون تجربه‌ها رو در قالب ابزارها و راهنماهای کاربردی برای تقویت امنیت در اختیار بقیه تیم‌های امنیتی قرار بدن. توی این برنامه گرگ بروکمن هم قراره درباره درس‌هایی که یاد گرفتن و دلایل استفاده از مدل‌های جدید توی حوزه امنیت صحبت کنه."
+  ],
+  "why": null,
+  "tags": [
+   "امنیت",
+   "اوپن‌ای‌آی"
+  ]
+ },
+ "updated": "2026-11-10T17:47:31+00:00"
+}
