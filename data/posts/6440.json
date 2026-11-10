@@ -1,0 +1,64 @@
+{
+ "id": 6440,
+ "url": "https://t.me/dlmehr/6440",
+ "date": "2026-11-10T16:30:10+00:00",
+ "text": "https://fxtwitter.com/drjimfan/status/2120186651741655428?a=K-1od6kDJVMJvLDhIxI&s=52",
+ "forwarded_from": null,
+ "digest": false,
+ "hash": "32eb95afa26c",
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/drjimfan/status/2120186651741655428?a=K-1od6kDJVMJvLDhIxI&s=52",
+  "site": "🧵 Thread • FxTwitter",
+  "title": "Jim Fan (@DrJimFan)",
+  "description": "Introducing GR00T 2: our most advanced, open System One model for robotics. It runs entirely on your robot’s onboard compute, fully untethered, and you own every weight of it. GR00T 2 features:\n1. Long-horizon tasks: dexterous manipulation and whole-body…",
+  "image": null
+ },
+ "gholam": {
+  "text": "جیم فن از تیم رباتیک انویدیا خبر از معرفی مدل جدیدی به اسم GR00T 2 داده که طبق اعلام خودشون، یه مدل متن‌باز برای کنترل ربات‌هاست و بدون نیاز به اتصال به سرور خارجی، مستقیماً روی پردازندهٔ خودِ ربات اجرا می‌شه. \n\nرفقا، چند تا نکته مهم که از این گزارش درمیاد:\n• به گفتهٔ سازنده‌ها، این مدل توانایی مدیریت کارهای چندمرحله‌ای و طولانی (بیش از ۲۰ قدم و بیشتر از ۵ دقیقه) رو داره؛ چیزهایی مثل آزمایش‌های شیمی یا سرهم کردن ماکت.\n• روی انواع مختلف ربات‌ها مثل گیره‌ها و ربات‌های انسان‌نما قابل پیاده‌سازیه و قراره با کمک شبیه‌سازها و داده‌های حرکتی انسان سازگار بشه.\n• علاوه بر معماری و ابزارهای شبیه‌سازی، حدود ۱۰۰ هزار ساعت دادهٔ تمرینی و طراحی سخت‌افزار هم منتشر شده و وزن‌های اصلی مدل قراره در ماه دسامبر در دسترس قرار بگیره.",
+  "date": "2026-11-10T16:30:58+00:00"
+ },
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/DrJimFan/status/2120186651741655428",
+   "domain": "x.com",
+   "author": {
+    "name": "Jim Fan",
+    "handle": "DrJimFan",
+    "avatar": "https://pbs.twimg.com/profile_images/1554922493101559808/SYSZhbcd_200x200.jpg"
+   },
+   "text": "Introducing GR00T 2: our most advanced, open System One model for robotics. It runs entirely on your robot’s onboard compute, fully untethered, and you own every weight of it. GR00T 2 features: \n\n1. Long-horizon tasks: dexterous manipulation and whole-body control chained over 20+ steps and 5+ minutes, such as performing chemistry lab experiments or assembling model airplanes end to end.\n2. X-Adapt: adapting from easy data sources (human wearables and simulation) and deploying zero-shot to diverse real robots.\n3. Unified Cognition: native integrations with frontier agents for advanced physical reasoning, robust error recovery, and safety monitoring.\n\nIt's an open-source buffet! We are releasing not only the model weights and X-Adapt recipes (coming December), but also our agentic framework, simulation engine, annotation engine, hardware design, and even training data (100K hours, that's ~11 yrs of experience), all available today! \n\nEverything that moves will be autonomous. Anyone can become a roboticist. \n\nLock in, build with us! \n\nDeep dive in thread:",
+   "date": 1794326863,
+   "media": [
+    {
+     "type": "video",
+     "src": "https://video.twimg.com/amplify_video/2120178947035889664/vid/avc1/1280x720/dLZkTj82Xa84XzD8.mp4?tag=29",
+     "poster": "https://pbs.twimg.com/amplify_video_thumb/2120178947035889664/img/RaYA0DTAiAgCHYpW.jpg",
+     "ratio": 0.5625,
+     "duration": 90.6,
+     "gif": false
+    }
+   ],
+   "links": []
+  }
+ ],
+ "article": {
+  "title": "جیم فن از تیم رباتیک انویدیا خبر از معرفی مدل جدیدی به اسم GR00T 2 داده که طبق اعلام خودشون، یه مدل متن‌باز برای کنترل ربات‌هاست و بدون نیاز به اتصال به سرور خارجی، مستقیماً روی پردازندهٔ خودِ ربات اجرا می‌شه",
+  "source_title": "Introducing GR00T 2: our most advanced, open System One model for robotics. It runs entirely on your robot’s onboard compute, fully…",
+  "body": [
+   "جیم فن از تیم رباتیک انویدیا خبر از معرفی مدل جدیدی به اسم GR00T 2 داده که طبق اعلام خودشون، یه مدل متن‌باز برای کنترل ربات‌هاست و بدون نیاز به اتصال به سرور خارجی، مستقیماً روی پردازندهٔ خودِ ربات اجرا می‌شه.",
+   "رفقا، چند تا نکته مهم که از این گزارش درمیاد:",
+   "• به گفتهٔ سازنده‌ها، این مدل توانایی مدیریت کارهای چندمرحله‌ای و طولانی (بیش از ۲۰ قدم و بیشتر از ۵ دقیقه) رو داره؛ چیزهایی مثل آزمایش‌های شیمی یا سرهم کردن ماکت.",
+   "• روی انواع مختلف ربات‌ها مثل گیره‌ها و ربات‌های انسان‌نما قابل پیاده‌سازیه و قراره با کمک شبیه‌سازها و داده‌های حرکتی انسان سازگار بشه.",
+   "• علاوه بر معماری و ابزارهای شبیه‌سازی، حدود ۱۰۰ هزار ساعت دادهٔ تمرینی و طراحی سخت‌افزار هم منتشر شده و وزن‌های اصلی مدل قراره در ماه دسامبر در دسترس قرار بگیره."
+  ],
+  "why": null,
+  "tags": [
+   "رباتیک",
+   "متن‌باز",
+   "انویدیا"
+  ]
+ },
+ "updated": "2026-11-10T16:33:21+00:00"
+}
