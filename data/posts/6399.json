@@ -12,7 +12,7 @@
   "site": "FxTwitter",
   "title": "Tanay Jaipuria (@tanayj)",
   "description": "Duolingo CEO @LuisvonAhn on the costs of their AI video call feature:\n\"When we first launched it was costing about $0.30 per call, just generally on AI inference. We've managed to reduce that cost to well under $0.01 per call, and that's mainly by moving…",
-  "image": "https://cdn4.telesco.pe/file/PsYIELQh7J5VUGtN8GvQvaHRFdoaicqcavXHgc8CQ42pZM06oks_a9jymDOB-LOpfrslE5UUogrovXZzC5SbtU6qRNsotwTXe341N2fkgoQ_lFXFCsb4pIYWB0eu_sl27rZ07oUD4RpRjRM-6Al5OgMaC25HXZ3IoFwvQDPJhyEq2AxgEg0d2EmZWVaa21AbyhbtCiWett-Rra8r4khASpIst3mrA484TKidBa7dxWVBObqzDg934JKraRgbVJ9yeJspfc_ZXxa5lVfX5ybsDAfroQGneUUyOCubmnx7JIF9hUyouXtzyWAmW9TF8QSGTEKz4EFF9PcSOQNAi4fYTg.jpg"
+  "image": "https://cdn4.telesco.pe/file/k9SGErJl4dfGIsqkPWubNpG7KcZgJThPhKEsOklRseqxaD9XtnvFY-_fvb11jBjVN5NLTY2mO1SuIQmClkGHDavoDMQsaOU3X9UTZoy_TZCx4-SVEroV12HBAhhIShojflJ_A6lRViM2X5mmGjsk2Ei8-WcldfsWYxdiy7538oM1q30oq8212WO1kqVYz0ejOTPM7pNh2F_HJgWWu6a7FqcpNgftX4asfgLJk1MxFdbgeLrSh4ZOeewhOr74JBrro3bfFpgXPSBOWqn48Ef_pDm73z-K2uuTlepOzdYcw4qu0Gm-uNwgk-qyYboiQAgKRcKQdsv36sjY-9dmmbnDUg.jpg"
  },
  "gholam": {
   "text": "مدیرعامل دولینگو، لوئیس فون آن، نکته جالبی درباره هزینه‌های قابلیت تماس ویدیویی با هوش مصنوعی‌شون مطرح کرده داداش. به گفته ایشون، اوایل راه‌اندازی این قابلیت، پردازش هوش مصنوعی برای هر تماس حدود ۳۰ سنت براشون هزینه داشت، اما حالا موفق شدن این رقم رو به خیلی کمتر از ۱ سنت به ازای هر تماس برسونن. اون‌طور که توضیح داده، دلیل اصلی این صرفه‌جویی چشمگیر، مهاجرت به مدل‌های متن‌باز و وزن‌باز (open-weight) بوده.",
@@ -46,5 +46,5 @@
    "متن‌باز"
   ]
  },
- "updated": "2026-11-10T04:17:20+00:00"
+ "updated": "2026-11-10T12:31:40+00:00"
 }

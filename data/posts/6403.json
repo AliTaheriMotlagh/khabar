@@ -12,7 +12,7 @@
   "site": "FxTwitter",
   "title": "Engineering at Meta (@Meta_Engineers)",
   "description": "🧠\nMost AI bug-catching tools review your code the way a human reviewer would, only faster. What if the AI wrote a test that proved the bug instead?\nThat’s Catching Just-in-Time Tests (JiTTests) — a novel approach where LLMs generate executable tests designed…",
-  "image": "https://cdn4.telesco.pe/file/Vd3Mzg4XYSMkIIkMOt9aUegWiBNG1K2OZWSqUuS8RJfF10HR06juAKkD8tIlK_cjn0npHiN3b_tffNERQBbrmKjk6JHRrfTAtzop6YiOQU9NjeQM6LdnpeWfcW4Q9wdhCYtzLBUUGdZ7U563HI0DfHVZLPVisLrB4HHic46PnZQe0jnmq_6der3zEefMFO80sn9t9RuO__w0lFdAS0wCJ4AO7wyfQ4jbfCAqZG7zYiQBriEYB1SK1-KdVY-z_P6_erieF2das6VUVNbjgTdg9ptlcnl2lBGLAPKAHtdMLddXC5nzTASXdccMLX_E27BgMA7ljAcnUlxpr2x2hQFaGw.jpg"
+  "image": "https://cdn4.telesco.pe/file/fnHT31b7NZfaLJRw4iMyG1zL46uXtKTwGPYDrq_b3kRWhMXZM6rkkjj9oz8rchGrycAN-qZRtnEcvm3q9-8hWFV0ZyMlDGpKM_xirN4rJW5t_LCUu9wYaxy0FZcjXqxsqhVJhubHTK4mp2Pz6AMsw-9-kAnMVQnNGIeXJkddCXde8ehv3pyCEMKRePD1Px3whB0tiPz2uk0n_9Sj9dAedsTSz8wOZQryqSrfkytdbwVgszFHREFIM_foBojMREqPdDDWGrCFnOP1PNOqKIuImXJQDcDm0r_z5qH6ZYeHUXUc38P5I_jhIlO9_IH_SHkq-k_8o2cwwNy44zpq5yGKCg.jpg"
  },
  "gholam": {
   "text": "رفقا، بچه‌های مهندسی متا یه ابزار جالب برای پیدا کردن باگ معرفی کردن به اسم JiTTests که بعد از یک سال تحقیق، حالا وارد زیرساخت‌های اصلی این شرکت شده. قضیه از این قراره که این سیستم به جای اینکه فقط کد رو مثل ناظر انسانی مرور کنه، با مدل‌های زبانی تست‌هایی اجرایی می‌نویسه که عمداً خطا بدن تا تغییرات ناخواسته و رفتاری کد رو دقیقاً قبل از ثبت نهایی بیرون بکشه.\n\nطبق اعلام خودشون، نتایج این سیستم تا الان این شکلی بوده:\n• تا حالا ۵۸۹ تا از مهندس‌هاشون باهاش کار کردن و دقت تشخیص یا همون نرخ مثبت واقعی رو ۶۰ درصد گزارش دادن.\n• تو نیمه اول سال ۲۰۲۶ تونسته جلوی ۷۴ مورد از خطاهای حریم خصوصی رو موقع بررسی کد بگیره و در کل این دست مشکلات رو ۲۰ درصد کاهش داده.",
@@ -66,5 +66,5 @@
    "متا"
   ]
  },
- "updated": "2026-11-10T04:17:20+00:00"
+ "updated": "2026-11-10T12:31:40+00:00"
 }

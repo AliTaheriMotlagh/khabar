@@ -12,7 +12,7 @@
   "site": "FxTwitter",
   "title": "OpenAI (@OpenAI)",
   "description": "A new way to measure how AI agents handle the routine analyses of wet-lab science—BioBasicsBench.\nDeveloped with Ligo, a biotech company focused on enzyme design, the benchmark draws on 100 tasks from real experiments to test whether agents can interpret…",
-  "image": "https://cdn4.telesco.pe/file/mp0Ia_SbuxV2NVlEW8YeukArVz6Q0VmbNtMO1G-X5Jt8zBkR4fm36nmuBK_6mceKIra61QFeyx_6GXvZtmZXLKUpQldpI8mehl50JJS0KDkZ137QrNhYNeGlpb1m74RO2sGzVHI0p0IQTVI0lYjJejBJzXGWfjUc0JiT4ME5tRYUArfMCx_GQq1peFZnYQLLB1ZkQUrTBlK6wEfun_wY82LZ8XSvPfOwnldrH1f8TLfS4vEg4w-3T9E0TlR1uoF-BW8iR_uwNsUF-oT-Ytt_NdlJFEY82igSQiDgppJPNZ8bCMpFKzA-QevvtHX3x8AlBMImo0XG6ExT0w_xIyTY3A.jpg"
+  "image": "https://cdn4.telesco.pe/file/mLIfJnuA24HJKSmFhgPF--4A6M5ZBHYQn7zHDD0dT63Os7ujOsRnCQ_OGQV16p8KSx31D8a0N1EuMi9ZHMxeM6poJ5mTjz3p4qwEY-1d6CLwgaCgLrZl1oqRGokIojDVLVgxi2DBaSvg2g3S-qaMmlE_1zeQcFFoGLKSnwwwpMBU_3gEzECI2JdzFfox1Rq4SHeaiWnGMAcOH1TBcSdOHZCQ7namFc-WKr4deRpyXZaUBHvZpF-IhRxQ_tb8j7rD5kG7TqF1JludNgnRN8GyjKSxcfE2nh6gMUmnRyldwQ1a7EF70AsMuH1KaMDo-q3qJbFX4Vatb13l_Cce_V6mPg.jpg"
  },
  "gholam": {
   "text": "در حالی که خلق‌الله تو کامنت‌ها دارن سر مدل بعدی چونه می‌زنن، اوپن‌ای‌آی دست‌به‌یکی کرده با یه شرکت بیوتک به اسم Ligo و از یه خط‌کش جدید به اسم BioBasicsBench واسه تست هوش تو آزمایشگاه‌های زیست‌شناسی رونمایی کرده.\n\n• ماجرا سر ۱۰۰ تا تسکِ برگرفته از آزمایش‌های واقعی تو آزمایشگاه‌های خیسه؛ هدف اینه که ببینن ایجنت‌ها دیتای خام رو می‌فهمن، سوتی‌های آزمایشی رو می‌گیرن یا فقط بلدن توهم تحویل محقق بدن.\n• زرنگیِ تست دقیقاً اینجاست که مدل باید بفهمه کِی شواهدِ موجود، نتیجه‌گیریِ روی کاغذ رو رد می‌کنه؛ یعنی باد هوا تحویل دادن تعطیل.\n\nپشت پرده این شیک‌پوشیدن‌های آکادمیک، اوپن‌ای‌آی داره قبل از تجاری‌سازی سنگین تو صنعت دارو و بحث‌های حساس امنیت زیستی، استاندارد خودش رو به بازار دیکته می‌کنه تا بعدها بگه کی صلاحیت کار تو آزمایشگاه رو داره و کی نداره.",
@@ -58,5 +58,5 @@
    "علم"
   ]
  },
- "updated": "2026-11-10T04:17:21+00:00"
+ "updated": "2026-11-10T12:31:41+00:00"
 }

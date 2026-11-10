@@ -12,7 +12,7 @@
   "site": "🧵 Thread • FxTwitter",
   "title": "doubleAI (@_doubleAI_)",
   "description": "1/\nWhat if an LLM could not just edit a model's weights, but re-architect it as it trains?\nWe tried just that. The resulting architectures exit the known territory of transformers: the coding agents spliced code directly into the network.\nOn nanochat, the…",
-  "image": "https://cdn4.telesco.pe/file/j7-FaPOG-bVNTejhfxSMUu9swo2o2uzYkVUoyLRfmtFwTEhQp-ruEtM9hvCNEPEUHavqzPglmiWtdmQLvC_RUDZfAiMr6wT3LZETakw0-PO8_mTvfOp99gKwpH_QHT7fcu14Vdimp8VGGi3zTkBN7BfpFBDo1HH5LqQPWmfjSeyP8wEeKiCuWxt6PoxGD1PQMfynO5Jo22On00klZ_3QxPGwjBetAf3hJ4pBW9XDRd_iMHVnK0twXK5YNm8n8xFhO98rQU7VTUWADyYwKhVQopM_8u930BHpTyND5JXFxgp_AfHKL_Ky8RgVDRicfQCOotr-TKU5KMMQDrPGmDDzVA.jpg"
+  "image": "https://cdn4.telesco.pe/file/Dnuit9hV7IkmU8lf9PjZ6NNi7AdmRaVVl_WyEEfOqufI6Enppe64DxacVhUPfPjNx-2heTEe-Q1WgM5v-P6TirR87a2NbxxOAcFozykG4OAc-Oym0m5p3tv0zXVozSIbbk8r_5lSiXT0rZntYhQmqNtE6yHy7nAPZOd-3TzyXO_yiDv67m4t0uIOo3latwJHwWUOypyfKX5bmAghqr6czwoAAqdRj4NdcjMP32Muk9YQd1Aqyuk8pjXvJ1RaKQEj0RJFNvSw3P1Z0k9OZESdaIwpPPekaZjGt-lLgU8YhFU6M-IcU0Zs4Dti9wpaQOsjlNp9XRLvPk7HtZ021rF2zw.jpg"
  },
  "gholam": {
   "text": "قضیه از این قراره که تیم doubleAI زده تو خط «معماری خوداصلاح‌گر» و مدعی شده مدل‌ها به‌جای تنظیم وزن‌ها، می‌تونن وسط آموزش مستقیماً ساختار خودشون رو بشکافن و کدهای جدید به لایه‌های شبکه تزریق کنن:\n\n• طبق ادعاشون، دقت استدلال الگوریتمی روی بنچمارک‌ها از ۵۵٪ به ۸۴٪ جهش کرده و مدل DeepSeek-V4.1-Flash با تحلیل خطاها و بازنویسی کدهای داخلی خودش، نمره المپیاد ریاضی رو از ||۶۴٪ به ۷۱٪|| بالا برده.\n• برای تشخیص کمبودهای شبکه حین آموزش، از مفهومی به‌اسم phantom gradients استفاده کردن تا بفهمند روش‌های بهینه‌سازی معمول کجا کم میارن و دقیقاً همون‌جا لایه‌های کدیِ جدید رو الصاق کنن.\n\nداستان روی کاغذ شدیداً علمی‌-تخیلی و جذابه، ولی گیرِ اصلی توی اسکیل واقعی و استیبل موندن این معجون کُد و وزن‌هاست؛ وگرنه اضافه کردن وصله‌پینه‌های الگوریتمی برای پاس کردن چندتا بنچمارک خاص، بیشتر شبیه دوپینگ کردن مدل وسط مسابقه‌ست تا یه انقلاب ماندگار در معماری هوش مصنوعی.",
@@ -66,5 +66,5 @@
    "چین"
   ]
  },
- "updated": "2026-11-10T04:17:21+00:00"
+ "updated": "2026-11-10T12:31:41+00:00"
 }

@@ -12,7 +12,7 @@
   "site": "FxTwitter",
   "title": "Unreal Engine (@UnrealEngine)",
   "description": "The Unreal Engine 5.9 MegaJam Preview is here!\nIt’s the first Unreal Engine release built primarily with agentic workflows and opens up a few new Experimental features: check out Unreal MCP’s expanded toolsets, work with AI coding agents directly in Editor…",
-  "image": "https://cdn4.telesco.pe/file/IgGilToPSLKcCVnyOr2xzVwsT6i81fnhcS16OauRPpXX4IeyYJYlog5VQcyJKE0VDG3RDXfqY2wHWVPcuDe_wq4NZZLsm3SbBIk8crD4dj3Zdt-dJsJQkrvb1GlnPSWVuURiX1a_l1tXeSnny4pB3J0nKzIm2QFkntCANBCapI_qfp9DbcnUHT6B62rQkGyozwhf7UMUOqwwa9lfSHjPoHVltZ0fbsh2SRT3TsBOBmWpga4stCa0ypJqdyMOG0gKPFJEg6lWOZEuA5q9CiQ6LeTjMKsU7Qf0hSPKZ0TDsfARs34o1iD04BsEy4fwURoceM60K9K2aBFzzDwsINc97Q.jpg"
+  "image": "https://cdn4.telesco.pe/file/hzrbUzNpViqTX2B6qYFpbIMqIAkO3DLHcgz1Fip5sy8Nkay0mp0dPbCh3PVg69uebLF2pP5InIShSN3C4eyPwBaJIG19-ySsw-zs86P-78oNs4ER0AgQAu4qE51ne9Aj4J4-nfhDycD4FCxYb8dD5FV2IdWx7MA3cyFJnS3H-VLCQh8CWpQsztx1Z-OKYC-37MvxfRvEOJyLZb_6r04DeTYID6LD8IDCwrBXeNWuhVMXo86VMvKB87HPBJ4eIs33Ie7u2nPhl0KQuB_MQu90i1p2WQt7draLiRFZ-iNsEKTVcWgBM0C2ZB7wBiXKaMH4dDrHe-IBtbbDC9K5NhwlLQ.jpg"
  },
  "gholam": {
   "text": "رفقا، مجموعه آنریل انجین نسخه پیش‌نمایش Unreal Engine 5.9 MegaJam Preview رو معرفی کرده و گفته این اولین نسخه از این موتور به‌حساب میاد که اساساً با فرآیندهای مبتنی بر ایجنت‌های هوش مصنوعی ساخته شده.\n\nبه گفته تیم توسعه، این نسخه برای رویداد Epic MegaJam آماده شده و چندتا قابلیت آزمایشی جدید رو ارائه می‌ده:\n• همکاری مستقیم با ایجنت‌های کدنویسی هوش مصنوعی در داخل محیط ادیتور\n• ابزارهای توسعه‌یافته Unreal MCP و تولید محتوا به کمک هوش مصنوعی\n• امکان اجرای مستقیم پروژه‌ها داخل مرورگر اینترنت\n\nسازنده‌ها اشاره کردن که این نسخه مثل پیش‌نمایش‌های معمولی نیست و بیشتر جنبه تجربی و آزمایشی برای کار با ابزارهای جدید هوش مصنوعی داره.",
@@ -67,5 +67,5 @@
    "ایجنت"
   ]
  },
- "updated": "2026-11-10T04:17:20+00:00"
+ "updated": "2026-11-10T12:31:40+00:00"
 }

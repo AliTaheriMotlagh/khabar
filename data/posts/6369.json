@@ -12,7 +12,7 @@
   "site": "🧵 Thread • FxTwitter",
   "title": "Google DeepMind (@GoogleDeepMind)",
   "description": "We’re sharing new research demonstrating how AI agents can accelerate the science of stress-testing encryption.\nGuided by humans, our models uncovered two major weaknesses in legacy 1024-bit RSA cryptosystems.\nOur VP Science @Pushmeet explains more ↓ h…",
-  "image": "https://cdn4.telesco.pe/file/QX3ElhhhPwhgN531MP7NACcwxtt-VnpksixUvzdseKdyumK6IwRZ4K6azTFk3fNBxKKkU48G0D3l11O_HEE8PX1_ZJi7yItvg3Fuu4KBAHuuhjeJiO87JSIa51cwb4nPCrcFdW1tLkXK8_yXaiz51bY8SKJjG60jOc0SqdjSZU59clSqkxTWUQEtJ-SQ_iADAVIFV_eCp5M7Q7Hly-pyMYlAcaBU4v0mYnnU_S3sZKpn1ZylhEHxyLU_mgeg8EPWF9hi0BXnZ9Pdl-eOkhu0hSl7DRHSHzMq81OsV-dX59wysK2X6mY4MkDW_hAR6b2vtWZtF0woNM8re9Gg1ByI2A.jpg"
+  "image": "https://cdn4.telesco.pe/file/O7Y_CR-qNU6LlJufwoIsfSxNnIOHJa1icqgXQBahiLReThzQHgbQ9Dal2O5fBO5pGggTPiHdWHvgxLmJTRALH-veS1HB1J9OVvtYimB6WSDYCVQtRo9F2jSgfNLEIS5ykKIvn45rGM_NFiJSBamV7Ks-rIKyneC3krhIYmkry7zChKz5HVCI0T2tuYd_ahYZPwOzM9eZ7g4MxsEfKYcAO25SMh5yBGPTd0Gd1Cx33YPJ3fjcznuuJsomkWVg6yxshkAd6Esiixx-S5RbotMrgGwo1glUiAhdXhUqADURLwvlX_vq3diYFEtfesJ8AAGq0QyufF4dLF0yvrtuIr7YUg.jpg"
  },
  "gholam": {
   "text": "دیپ‌مایند گوگل دوباره یه گرد و خاکی راه انداخته که هوش مصنوعی‌مون دست‌به‌کار شده و دو تا رخنه اساسی توی سیستم‌های رمزنگاری RSA پیدا کرده؛ ولی بذارید بدون تعارف و بزکِ مارکتینگ ببینیم کف قضیه چیه.\n\n• سیستمی که زدن پنچرش کردن، نسخه قدیمی ۱۰۲۴ بیتی بوده؛ یعنی همون کدی که استاندارد جهانی بیشتر از یه دهه‌ست گذاشتش کنار و الان زیرساخت‌های جدی دنیا روی ۲۰۴۸ بیت یا رمزنگاری‌های خم بیضوی سوارن و فعلاً خطری تهدیدشون نمی‌کنه.\n• نکته فنی و باارزش ماجرا اینه که تیم گوگل یه مشت ایجنت هوش مصنوعی رو انداخته به جون فرمول‌های ریاضی تا گوشه‌کنارهایی از معادلات رو تست کنن که هیچ دانشمندی در طول عمرش وقت و توان بررسی دستی‌شون رو نداشت.\n• ته بیانیه هم با دست پس زدن و با پا پیش کشیدن؛ یعنی اعتراف کردن که فرضیات تاریخی ریاضی‌دان‌ها درباره «امنیت پایدار» دیگه دود شده رفته هوا و قفل‌ها زودتر از حد تصور دارن زنگ می‌زنن.\n\nپیغام داستان روشنه رفقا؛ رمزهای بانکی امروز نمی‌ترکه، اما دورانی که می‌گفتن فلان الگوریتم تا صد سال دیگه نفوذناپذیره تموم شد؛ با این سرعتِ تحلیل ایجنت‌ها، عمر مفید دیوارهای امنیتی نصف شده و هر کدی که دیر به‌روزرسانی بشه حکم درِ باز رو پیدا می‌کنه.",
@@ -65,5 +65,5 @@
    "ایجنت"
   ]
  },
- "updated": "2026-11-10T04:17:21+00:00"
+ "updated": "2026-11-10T12:31:41+00:00"
 }
