@@ -1,0 +1,59 @@
+{
+ "id": 6454,
+ "url": "https://t.me/dlmehr/6454",
+ "date": "2026-11-10T21:45:58+00:00",
+ "text": "https://fxtwitter.com/kimmonismus/status/2120270079845859580?a=mVedHwVqlCps1aObaDA&s=52",
+ "forwarded_from": null,
+ "digest": false,
+ "hash": "5c1cd98afdb4",
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/kimmonismus/status/2120270079845859580?a=mVedHwVqlCps1aObaDA&s=52",
+  "site": "🧵 Thread • FxTwitter",
+  "title": "Chubby ♨️ (@kimmonismus)",
+  "description": "/1 Physical Intelligence's π0.5 goes from 48% to 70% success on 26 real-world robot tasks once you add a small touch encoder.\nThat encoder is LingBot-Touch from @robbyant_brain, an embodied AI company under Ant Group, and it's open source. The Tiny version…",
+  "image": "https://cdn4.telesco.pe/file/aHoev9XU4YRfvsFHJj2Kn9VJeqPcBS_lonYpyu-mNNM-wTXAzk4IDtA9E3NW-myjMFRq2nljzSyxodwYnEvZ1yXVeDuESrEK1bcJoaHcqurR9kvPhwg-Jgo54mrmiI7T3x9bkDwMj4kO_Qy4AI2lbabdQLi2H8sbiz9sjWVWvTEAC3z6a2M89jItAiw1UeCIX_hgheEu3ZlHFlmIRhYKlki4EmIs7q3ConWlxxzBsx9ck3KjPMYFflxmN4C77nxoblD0NOjYzgi98paNCIwTatwqv1xMw5dr6_u35fGw-A_3ahroRhPZRHhkSVVARLT6YkX5WV2loO0nw38ET5klCw.jpg"
+ },
+ "gholam": {
+  "text": "سلام رفقا، یه پیشرفت جالب توی دنیای رباتیک منتشر شده که دیدنش خالی از لطف نیست. طبق گزارشی که اومده، شرکتی به اسم Robbyant (از زیرمجموعه‌های Ant Group) یه ابزار متن‌باز برای حس لامسه ربات‌ها به اسم LingBot-Touch معرفی کرده که با وجود جثه بسیار کوچیکش (نسخه Tiny فقط ۵.۴۶ میلیون پارامتر داره و کمتر از ۰.۲ درصد مدل اصلیه)، تأثیر چشمگیری روی کارایی ربات‌ها گذاشته.\n\nچند تا نکته مهم از نتایج این بررسی:\n• با وصل شدن این انکودر لمسی به مدل رباتیک π0.5، نرخ موفقیتش در انجام ۲۶ کار واقعی از حدود ۴۸ درصد به نزدیک ۷۰ درصد رسیده.\n• برای آموزشش حدود ۵ هزار ساعت داده لمسی (معادل ۱.۳۳ میلیارد فریم) از طریق دستکش‌های مجهز به سنسور و هدایت ربات‌ها ضبط شده و این مدل توانایی کار با سه مدل سنسور لمسی مختلف رو داره.\n• طبق آمار مقاله، استفاده از این توکن‌های پردازش‌شده خیلی بهتر از فرستادن سیگنال‌های خام حسگرها بوده و حتی روی سنسوری که قبلاً باهاش آموزش ندیده بود، خطای تعیین نقطه تماس رو از ۵.۸۹ میلی‌متر به ۰.۱۶ میلی‌متر رسونده.",
+  "date": "2026-11-10T21:46:21+00:00"
+ },
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/kimmonismus/status/2120270079845859580",
+   "domain": "x.com",
+   "author": {
+    "name": "Chubby♨️",
+    "handle": "kimmonismus",
+    "avatar": "https://pbs.twimg.com/profile_images/1728327996375719936/RW7VBJfD_200x200.jpg"
+   },
+   "text": "/1 Physical Intelligence's π0.5 goes from 48% to 70% success on 26 real-world robot tasks once you add a small touch encoder.\n\nThat encoder is LingBot-Touch from @robbyant_brain, an embodied AI company under Ant Group, and it's open source. The Tiny version has 5.46M parameters, under 0.2% of the policy it plugs into.",
+   "date": 1794346754,
+   "media": [
+    {
+     "type": "image",
+     "src": "https://pbs.twimg.com/media/HWy2ZtVasAAsClY.jpg?name=orig",
+     "ratio": 0.4071
+    }
+   ],
+   "links": []
+  }
+ ],
+ "article": {
+  "title": "سلام رفقا، یه پیشرفت جالب توی دنیای رباتیک منتشر شده که دیدنش خالی از لطف نیست",
+  "source_title": "/1 Physical Intelligence's π0.5 goes from 48% to 70% success on 26 real-world robot tasks once you add a small touch encoder.",
+  "body": [
+   "سلام رفقا، یه پیشرفت جالب توی دنیای رباتیک منتشر شده که دیدنش خالی از لطف نیست. طبق گزارشی که اومده، شرکتی به اسم Robbyant (از زیرمجموعه‌های Ant Group) یه ابزار متن‌باز برای حس لامسه ربات‌ها به اسم LingBot-Touch معرفی کرده که با وجود جثه بسیار کوچیکش (نسخه Tiny فقط ۵.۴۶ میلیون پارامتر داره و کمتر از ۰.۲ درصد مدل اصلیه)، تأثیر چشمگیری روی کارایی ربات‌ها گذاشته.",
+   "چند تا نکته مهم از نتایج این بررسی:",
+   "• با وصل شدن این انکودر لمسی به مدل رباتیک π0.5، نرخ موفقیتش در انجام ۲۶ کار واقعی از حدود ۴۸ درصد به نزدیک ۷۰ درصد رسیده.",
+   "• برای آموزشش حدود ۵ هزار ساعت داده لمسی (معادل ۱.۳۳ میلیارد فریم) از طریق دستکش‌های مجهز به سنسور و هدایت ربات‌ها ضبط شده و این مدل توانایی کار با سه مدل سنسور لمسی مختلف رو داره.",
+   "• طبق آمار مقاله، استفاده از این توکن‌های پردازش‌شده خیلی بهتر از فرستادن سیگنال‌های خام حسگرها بوده و حتی روی سنسوری که قبلاً باهاش آموزش ندیده بود، خطای تعیین نقطه تماس رو از ۵.۸۹ میلی‌متر به ۰.۱۶ میلی‌متر رسونده."
+  ],
+  "why": null,
+  "tags": [
+   "رباتیک"
+  ]
+ },
+ "updated": "2026-11-10T21:46:31+00:00"
+}
