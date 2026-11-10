@@ -1,0 +1,55 @@
+{
+ "id": 6434,
+ "url": "https://t.me/dlmehr/6434",
+ "date": "2026-11-10T15:15:26+00:00",
+ "text": "https://fxtwitter.com/julien_c/status/2120168716251898041?a=zI5QSBgyS4Ch16PlQyg&s=52",
+ "forwarded_from": null,
+ "digest": false,
+ "hash": "d863687adc58",
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/julien_c/status/2120168716251898041?a=zI5QSBgyS4Ch16PlQyg&s=52",
+  "site": "FxTwitter",
+  "title": "Julien Chaumond (@julien_c)",
+  "description": "One of the coolest recent features in Pi is Virtual Models\nI am using it to route to Qwen 3.8 27B (running locally in @Llama_app) or to Kimi K3 or GLM 5.3 (hosted remotely),\ndepending on my query complexity and my machine's current load\n🔥\nNo more manual…",
+  "image": "https://cdn4.telesco.pe/file/fTj58y_yXJeGQcWm_QNaVXIM05_1MBujUSQ5Rym655VdfZICpjMovTPUp1mg6CUF73njVk9jMdh0we9IsdNbDXdqEUpLKta9QoEgrzemNubfU21IprjTEP8qVAu6QYvkzX47iy1eiybGuKZ-FMSakKE3l2i1Tcj-Ee5Ra31ELXNNKTLMNDsc3dRws-jiVPKV1Qjhhrpcs4BnIFbVlwPmuAnA34o4jn8xE4fSyxMRe0HmGH27KuuF5koPGdMXY_tg36Qk2Xjx5IQw-Mt62Z6khLfTcCx2ZWWVqbPrX1CU8hdg22MOErWknh77N9UCZ0olUKLZD3BhBo3AUEnTO3HTOg.jpg"
+ },
+ "gholam": {
+  "text": "رفقا، ژولین شوموند توی توییتر از یه قابلیت جالب و تازه در ابزار Pi به اسم «مدل‌های مجازی» (Virtual Models) صحبت کرده که کارش مسیریابی خودکار پرامپت‌ها بین مدل‌های مختلفه. طبق توضیحاتش، این سیستم بسته به پیچیدگی سوال و میزان بارِ روی دستگاه، درخواست رو یا به مدل محلی Qwen 3.8 27B می‌فرسته یا سراغ مدل‌های ابری مثل Kimi K3 و GLM 5.3 می‌ره. به گفته اون، با این قابلیت دیگه نیازی به سوییچ کردن دستی بین مدل‌های محلی و آنلاین نیست و کارها راحت‌تر و خودکار مدیریت می‌شه.",
+  "date": "2026-11-10T15:15:45+00:00"
+ },
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/julien_c/status/2120168716251898041",
+   "domain": "x.com",
+   "author": {
+    "name": "Julien Chaumond",
+    "handle": "julien_c",
+    "avatar": "https://pbs.twimg.com/profile_images/1108502565925326850/zPsBf2BI_200x200.png"
+   },
+   "text": "One of the coolest recent features in Pi is Virtual Models\n\nI am using it to route to Qwen 3.8 27B (running locally in @Llama_app) or to Kimi K3 or GLM 5.3 (hosted remotely), \ndepending on my query complexity and my machine's current load 🔥\n\nNo more manual model switching!!\n\nKudos @badlogicgames @mitsuhiko + ggml team!!",
+   "date": 1794322587,
+   "media": [
+    {
+     "type": "image",
+     "src": "https://pbs.twimg.com/media/HWxaBG8XMAABja5.jpg?name=orig",
+     "ratio": 0.5673
+    }
+   ],
+   "links": []
+  }
+ ],
+ "article": {
+  "title": "رفقا، ژولین شوموند توی توییتر از یه قابلیت جالب و تازه در ابزار Pi به اسم «مدل‌های مجازی» (Virtual Models) صحبت کرده که کارش مسیریابی خودکار پرامپت‌ها بین مدل‌های مختلفه",
+  "source_title": "One of the coolest recent features in Pi is Virtual Models",
+  "body": [
+   "رفقا، ژولین شوموند توی توییتر از یه قابلیت جالب و تازه در ابزار Pi به اسم «مدل‌های مجازی» (Virtual Models) صحبت کرده که کارش مسیریابی خودکار پرامپت‌ها بین مدل‌های مختلفه. طبق توضیحاتش، این سیستم بسته به پیچیدگی سوال و میزان بارِ روی دستگاه، درخواست رو یا به مدل محلی Qwen 3.8 27B می‌فرسته یا سراغ مدل‌های ابری مثل Kimi K3 و GLM 5.3 می‌ره. به گفته اون، با این قابلیت دیگه نیازی به سوییچ کردن دستی بین مدل‌های محلی و آنلاین نیست و کارها راحت‌تر و خودکار مدیریت می‌شه."
+  ],
+  "why": null,
+  "tags": [
+   "چین"
+  ]
+ },
+ "updated": "2026-11-10T15:16:32+00:00"
+}

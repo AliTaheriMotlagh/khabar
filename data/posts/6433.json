@@ -1,0 +1,68 @@
+{
+ "id": 6433,
+ "url": "https://t.me/dlmehr/6433",
+ "date": "2026-11-10T15:12:42+00:00",
+ "text": "https://fxtwitter.com/tavus/status/2119869660502036637/video/1?s=52",
+ "forwarded_from": null,
+ "digest": false,
+ "hash": "7cb82e7ff5ef",
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/tavus/status/2119869660502036637/video/1?s=52",
+  "site": "FxTwitter",
+  "title": "Tavus (@tavus)",
+  "description": "We put a Tavus PAL on a coffee kiosk and had someone try to hijack every order.\nNo directional mics. Our audiovisual isolation model tracks who’s speaking to it, so he (the faded captions) never got an answer.\nWe’re opening a kiosk mode pilot. Want in?…",
+  "image": null
+ },
+ "gholam": {
+  "text": "رفقای گل، شرکت Tavus یه ویدیو از عملکرد سیستم هوش مصنوعی خودش به نام Tavus PAL روی یه کیوسک سفارش قهوه منتشر کرده. \n\nطبق ادعای این شرکت، توی این آزمایش یه نفر مدام سعی می‌کرده بپره وسط صحبت مشتری‌ها و سفارش رو به هم بریزه، اما سیستم اصلاً بهش جوابی نداده. اونا می‌گن بدون نیاز به میکروفون‌های جهت‌دار و صرفاً با کمک مدل جداسازی صوتی‌تصویری، این دستیار متوجه می‌شه مخاطب واقعی کیه و صدای فرد مزاحم رو کاملاً نادیده می‌گیره. در حال حاضر هم اعلام کردن که ثبت‌نام فاز آزمایشی (پایلوت) این حالت کیوسک رو شروع کردن تا علاقه‌مندان بتونن تستش کنن.",
+  "date": "2026-11-10T15:13:06+00:00"
+ },
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/tavus/status/2119869660502036637",
+   "domain": "x.com",
+   "author": {
+    "name": "Tavus",
+    "handle": "tavus",
+    "avatar": "https://pbs.twimg.com/profile_images/1974200616399593472/ZFG0msxY_200x200.jpg"
+   },
+   "text": "We put a Tavus PAL on a coffee kiosk and had someone try to hijack every order.\n\nNo directional mics. Our audiovisual isolation model tracks who’s speaking to it, so he (the faded captions) never got an answer.\n\nWe’re opening a kiosk mode pilot. Want in? https://tavus.io/demo",
+   "date": 1794251286,
+   "media": [
+    {
+     "type": "video",
+     "src": "https://video.twimg.com/amplify_video/2119867900412727296/vid/avc1/1280x720/sG8tJeAyBgq67TJc.mp4?tag=29",
+     "poster": "https://pbs.twimg.com/amplify_video_thumb/2119867900412727296/img/guqJ3tPXXRD6Egmp.jpg",
+     "ratio": 0.5625,
+     "duration": 68.193,
+     "gif": false
+    }
+   ],
+   "links": [
+    "https://tavus.io/demo"
+   ]
+  },
+  {
+   "kind": "link",
+   "url": "https://www.tavus.io/demo",
+   "domain": "tavus.io",
+   "title": "Book a Demo | Tavus",
+   "description": "See a PAL  in action for your use case. Talk to our team about building with the Tavus API, PAL Maker, or a fully managed enterprise deployment. Interactive AI avatars and conversational video reimagined",
+   "image": "https://cdn.prod.website-files.com/68a3622d17312a5dc16e5cc6/68c726371c9da69ce10a4895_Frame%202147228889.png",
+   "site": "tavus.io"
+  }
+ ],
+ "article": {
+  "title": "رفقای گل، شرکت Tavus یه ویدیو از عملکرد سیستم هوش مصنوعی خودش به نام Tavus PAL روی یه کیوسک سفارش قهوه منتشر کرده",
+  "source_title": "We put a Tavus PAL on a coffee kiosk and had someone try to hijack every order.",
+  "body": [
+   "رفقای گل، شرکت Tavus یه ویدیو از عملکرد سیستم هوش مصنوعی خودش به نام Tavus PAL روی یه کیوسک سفارش قهوه منتشر کرده.",
+   "طبق ادعای این شرکت، توی این آزمایش یه نفر مدام سعی می‌کرده بپره وسط صحبت مشتری‌ها و سفارش رو به هم بریزه، اما سیستم اصلاً بهش جوابی نداده. اونا می‌گن بدون نیاز به میکروفون‌های جهت‌دار و صرفاً با کمک مدل جداسازی صوتی‌تصویری، این دستیار متوجه می‌شه مخاطب واقعی کیه و صدای فرد مزاحم رو کاملاً نادیده می‌گیره. در حال حاضر هم اعلام کردن که ثبت‌نام فاز آزمایشی (پایلوت) این حالت کیوسک رو شروع کردن تا علاقه‌مندان بتونن تستش کنن."
+  ],
+  "why": null,
+  "tags": []
+ },
+ "updated": "2026-11-10T15:16:33+00:00"
+}
