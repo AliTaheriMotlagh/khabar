@@ -1,0 +1,64 @@
+{
+ "id": 6441,
+ "url": "https://t.me/dlmehr/6441",
+ "date": "2026-11-10T17:04:31+00:00",
+ "text": "https://fxtwitter.com/panos_panay/status/2120180183626129783?a=RHtz_9vyA_gJ6-pJSjc&s=52",
+ "forwarded_from": null,
+ "digest": false,
+ "hash": "8bb4b7280e69",
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/panos_panay/status/2120180183626129783?a=RHtz_9vyA_gJ6-pJSjc&s=52",
+  "site": "FxTwitter",
+  "title": "Panos Panay (@panos_panay)",
+  "description": "Meet the Ring Drone Cam. A flying indoor security camera that delivers proactive wall-to-wall visibility, flying custom routes to the spots a fixed camera can't reach.\nCheck out the details: https://www.amazon.com/dp/B0H1PBKM3X",
+  "image": null
+ },
+ "gholam": null,
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/panos_panay/status/2120180183626129783",
+   "domain": "x.com",
+   "author": {
+    "name": "Panos Panay",
+    "handle": "panos_panay",
+    "avatar": "https://pbs.twimg.com/profile_images/1564361335961333760/zIDP_5Dj_200x200.jpg"
+   },
+   "text": "Meet the Ring Drone Cam. A flying indoor security camera that delivers proactive wall-to-wall visibility, flying custom routes to the spots a fixed camera can't reach. \n\nCheck out the details: https://www.amazon.com/dp/B0H1PBKM3X",
+   "date": 1794325321,
+   "media": [
+    {
+     "type": "video",
+     "src": "https://video.twimg.com/amplify_video/2120178778584514560/vid/avc1/1280x720/3M0le4XvkSiKVJa6.mp4?tag=29",
+     "poster": "https://pbs.twimg.com/amplify_video_thumb/2120178778584514560/img/_vpG3BfF30TqjQ0w.jpg",
+     "ratio": 0.5625,
+     "duration": 29.487,
+     "gif": false
+    }
+   ],
+   "links": [
+    "https://www.amazon.com/dp/B0H1PBKM3X"
+   ]
+  },
+  {
+   "kind": "link",
+   "url": "https://www.amazon.com/dp/B0H1PBKM3X",
+   "domain": "amazon.com",
+   "title": "Amazon.com",
+   "description": null,
+   "image": null,
+   "site": "amazon.com"
+  }
+ ],
+ "article": {
+  "title": "Meet the Ring Drone Cam. A flying indoor security camera that delivers proactive wall-to-wall visibility, flying custom routes to the spots…",
+  "source_title": null,
+  "body": [],
+  "why": null,
+  "tags": [
+   "امنیت"
+  ]
+ },
+ "updated": "2026-11-10T17:08:22+00:00"
+}
