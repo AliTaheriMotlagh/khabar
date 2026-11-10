@@ -1,0 +1,62 @@
+{
+ "id": 6437,
+ "url": "https://t.me/dlmehr/6437",
+ "date": "2026-11-10T15:40:44+00:00",
+ "text": "https://fxtwitter.com/claudeai/status/2120174844822298730?a=8_7186UNGyMUPfBvpKA&s=52",
+ "forwarded_from": null,
+ "digest": false,
+ "hash": "e9ec3386085c",
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/claudeai/status/2120174844822298730?a=8_7186UNGyMUPfBvpKA&s=52",
+  "site": "🧵 Thread • FxTwitter",
+  "title": "Claude (@claudeai)",
+  "description": "A thread of early experiments with Claude Fable 5.2:\nA 3D model of a cell, built entirely from code one organelle at a time. Built by @kevin_t_ngo.",
+  "image": null
+ },
+ "gholam": {
+  "text": "سلام رفقا، حساب رسمی کلود توی یک رشته‌توییت اعلام کرده که مدل Claude Fable 5.2 در دسترس قرار گرفته و چند نمونه از آزمایش‌ها و کاربردهای اولیه‌اش رو به نمایش گذاشته. طبق موارد مطرح‌شده توی این پست‌ها، با این مدل کارهای مختلفی بر پایه کدنویسی و پردازش تصویر پیاده شده:\n\n• ساخت مدل سه‌بعدی یک سلول زیستی تماماً از طریق کد، و همچنین مدل‌سازی سه‌بعدی یک بنای تاریخی با استفاده از ۴۰ عکس برای چاپ سه‌بعدی.\n• طراحی الگوهای اوریگامی همراه با تست تاشدگی در شبیه‌ساز، و پادکستی با تصاویر ساخته‌شده از طریق کد درباره اهرام مصر.\n• نمونه‌های اولیه کاربردی مثل ابزاری برای نمایش تصویری فعالیت ساب‌ایجنت‌ها در پروژه‌ها و توضیح مرحله‌به‌مرحله پاسخ‌ها روی تخته‌سیاه.\n\nسازندگانش با انتشار این خروجی‌ها اعلام کردن که این نسخه حالا برای کاربرا قابل دسترسیه.",
+  "date": "2026-11-10T15:41:07+00:00"
+ },
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/claudeai/status/2120174844822298730",
+   "domain": "x.com",
+   "author": {
+    "name": "Claude",
+    "handle": "claudeai",
+    "avatar": "https://pbs.twimg.com/profile_images/1950950107937185792/QOfEjFoJ_200x200.jpg"
+   },
+   "text": "A thread of early experiments with Claude Fable 5.2:\n\nA 3D model of a cell, built entirely from code one organelle at a time. Built by @kevin_t_ngo.",
+   "date": 1794324048,
+   "media": [
+    {
+     "type": "video",
+     "src": "https://video.twimg.com/amplify_video/2120154136658235392/vid/avc1/720x720/KnIVDu_gqhlEPlD-.mp4?tag=29",
+     "poster": "https://pbs.twimg.com/amplify_video_thumb/2120154136658235392/img/jmgpnBw6sjnExoqa.jpg",
+     "ratio": 1.0,
+     "duration": 134.4,
+     "gif": false
+    }
+   ],
+   "links": []
+  }
+ ],
+ "article": {
+  "title": "سلام رفقا، حساب رسمی کلود توی یک رشته‌توییت اعلام کرده که مدل Claude Fable 5.2 در دسترس قرار گرفته و چند نمونه از آزمایش‌ها و کاربردهای اولیه‌اش رو به نمایش گذاشته",
+  "source_title": "A thread of early experiments with Claude Fable 5.2:",
+  "body": [
+   "سلام رفقا، حساب رسمی کلود توی یک رشته‌توییت اعلام کرده که مدل Claude Fable 5.2 در دسترس قرار گرفته و چند نمونه از آزمایش‌ها و کاربردهای اولیه‌اش رو به نمایش گذاشته. طبق موارد مطرح‌شده توی این پست‌ها، با این مدل کارهای مختلفی بر پایه کدنویسی و پردازش تصویر پیاده شده:",
+   "• ساخت مدل سه‌بعدی یک سلول زیستی تماماً از طریق کد، و همچنین مدل‌سازی سه‌بعدی یک بنای تاریخی با استفاده از ۴۰ عکس برای چاپ سه‌بعدی.",
+   "• طراحی الگوهای اوریگامی همراه با تست تاشدگی در شبیه‌ساز، و پادکستی با تصاویر ساخته‌شده از طریق کد درباره اهرام مصر.",
+   "• نمونه‌های اولیه کاربردی مثل ابزاری برای نمایش تصویری فعالیت ساب‌ایجنت‌ها در پروژه‌ها و توضیح مرحله‌به‌مرحله پاسخ‌ها روی تخته‌سیاه."
+  ],
+  "why": "سازندگانش با انتشار این خروجی‌ها اعلام کردن که این نسخه حالا برای کاربرا قابل دسترسیه.",
+  "why_label": "حرف آخر",
+  "tags": [
+   "آنتروپیک"
+  ]
+ },
+ "updated": "2026-11-10T15:49:57+00:00"
+}
