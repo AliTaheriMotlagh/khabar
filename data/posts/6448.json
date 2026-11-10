@@ -1,0 +1,59 @@
+{
+ "id": 6448,
+ "url": "https://t.me/dlmehr/6448",
+ "date": "2026-11-10T18:24:38+00:00",
+ "text": "https://fxtwitter.com/sundarpichai/status/2120198811297694192?a=tvtgCE1SKg-98DEQVng&s=52",
+ "forwarded_from": null,
+ "digest": false,
+ "hash": "ff3f3c5835c1",
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/sundarpichai/status/2120198811297694192?a=tvtgCE1SKg-98DEQVng&s=52",
+  "site": "🧵 Thread • FxTwitter",
+  "title": "Sundar Pichai (@sundarpichai)",
+  "description": "Carbon made a pelican demo so you don't have to\n😅\nfun test of long-horizon coding and the new /swarm feature in Google @Antigravity.\nBuilder and critic subagents ran iterative loops across Blender and Three.js - checking their own renders to build a playable…",
+  "image": "https://cdn4.telesco.pe/file/OxPmsKME5cPollHmcVudt7gNazFR8c66q-DkcdmoCsCt9miEG2kpG4Ox-YtKCNTavqPQTzRaB1sTcgfIs3Dj17dR_WOZGeSWIAK-jBM8MAIApPUwDZvCSFhnr_vqDlmotRHGmkXf60AubLy2fBficHcVrpGnVYXoOGzNqmgg-QFa4_W9b8sHrYFFwdeyMFnYX-2bRWA9ydYTCq159cPnhXQ7ZbaE23mFTqPKtzbiwNLbWNK-bpCv8ukOeqE5X1CYKN_ixrwrKq9LaZmYG8P7zjCXk7xnn124hSh76aDIggKExLpdfARmP65PKPXm7hnJUgvpezUq9z8VGm5Izn0YDg.jpg"
+ },
+ "gholam": {
+  "text": "رفقا، سوندار پیچای یه دموی جالب از تیمی به اسم Carbon به اشتراک گذاشته که برای آزمایش توانایی کدنویسی طولانی‌مدت و قابلیت جدیدی به نام swarm/ در پلتفرم Google Antigravity ساخته شده. به گفته پیچای، توی این آزمایش ساب‌اجنت‌های سازنده و منتقد مدام رندرهای خودشون رو بررسی کردن و چرخه‌های رفت‌وبرگشتی بین ابزارهای Blender و Three.js انجام دادن. نتیجه این همکاری مشترک مدل‌ها هم ساخت یه بازی سه‌بعدی و قابل اجرا شده که توش یه پلیکان داره دور محوطه مانتین‌ویو گوگل رکاب می‌زنه و دوچرخه‌سواری می‌کنه.",
+  "date": "2026-11-10T18:24:59+00:00"
+ },
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/sundarpichai/status/2120198811297694192",
+   "domain": "x.com",
+   "author": {
+    "name": "Sundar Pichai",
+    "handle": "sundarpichai",
+    "avatar": "https://pbs.twimg.com/profile_images/2051799620062429184/AL8CoAUG_200x200.jpg"
+   },
+   "text": "Carbon made a pelican demo so you don't have to 😅\n\nfun test of long-horizon coding and the new /swarm feature in Google @Antigravity.\n\nBuilder and critic subagents ran iterative loops across Blender and Three.js - checking their own renders to build a playable 3D game of a pelican biking around our Mountain View campus.",
+   "date": 1794329762,
+   "media": [
+    {
+     "type": "video",
+     "src": "https://video.twimg.com/amplify_video/2120196803442384898/vid/avc1/1278x720/mLddhJZLnFUR1b8O.mp4?tag=29",
+     "poster": "https://pbs.twimg.com/amplify_video_thumb/2120196803442384898/img/fGUA5ihLCjyKp_av.jpg",
+     "ratio": 0.5628,
+     "duration": 76.983,
+     "gif": false
+    }
+   ],
+   "links": []
+  }
+ ],
+ "article": {
+  "title": "رفقا، سوندار پیچای یه دموی جالب از تیمی به اسم Carbon به اشتراک گذاشته که برای آزمایش توانایی کدنویسی طولانی‌مدت و قابلیت جدیدی به نام swarm/ در پلتفرم Google Antigravity ساخته شده",
+  "source_title": "Carbon made a pelican demo so you don't have to 😅",
+  "body": [
+   "رفقا، سوندار پیچای یه دموی جالب از تیمی به اسم Carbon به اشتراک گذاشته که برای آزمایش توانایی کدنویسی طولانی‌مدت و قابلیت جدیدی به نام swarm/ در پلتفرم Google Antigravity ساخته شده. به گفته پیچای، توی این آزمایش ساب‌اجنت‌های سازنده و منتقد مدام رندرهای خودشون رو بررسی کردن و چرخه‌های رفت‌وبرگشتی بین ابزارهای Blender و Three.js انجام دادن. نتیجه این همکاری مشترک مدل‌ها هم ساخت یه بازی سه‌بعدی و قابل اجرا شده که توش یه پلیکان داره دور محوطه مانتین‌ویو گوگل رکاب می‌زنه و دوچرخه‌سواری می‌کنه."
+  ],
+  "why": null,
+  "tags": [
+   "گوگل",
+   "کدنویسی"
+  ]
+ },
+ "updated": "2026-11-10T18:28:20+00:00"
+}
