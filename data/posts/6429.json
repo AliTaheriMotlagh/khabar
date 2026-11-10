@@ -1,0 +1,68 @@
+{
+ "id": 6429,
+ "url": "https://t.me/dlmehr/6429",
+ "date": "2026-11-10T14:19:47+00:00",
+ "text": "https://fxtwitter.com/pushmeet/status/2120127611137634376?a=VtXyX0O9JxHKQub_fcI&s=52",
+ "forwarded_from": null,
+ "digest": false,
+ "hash": "e0f8cb2112a6",
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/pushmeet/status/2120127611137634376?a=VtXyX0O9JxHKQub_fcI&s=52",
+  "site": "FxTwitter",
+  "title": "Pushmeet Kohli (@pushmeet)",
+  "description": "Announcing a major milestone achieved by my team @GoogleDeepMind: we have proven key security properties of the machine code underlying the Signal messaging protocol. This is the first time the actual production code of a widely deployed protocol has been…",
+  "image": "https://cdn4.telesco.pe/file/AALHy_PeA4lValKN_0DoaKUZAar2efltWPP0QuEaEBzx-knss8av4z9iTY_JpUUdOYVdF88jjYTlTKa6jRGls4ynVD9fhrjW-TzPCurvvsNa5Z_j4k3y22GImLCXGhwIDBat6xJrFLJypXWHgtxXyV3ATjRsbvSu_HNevt9GjKTMm9oxYwmYyKG92HUfK6br6YB8er0BDecdMIjQN_X7VE9agc8qSlpageK_PauN_6LG1tptbI2FVyloRA6Mzou8-1o6xY6gEs0GhBdXhSmKwAfmktXo3UQR52LXqUyZ3_mJlZcE3ePnMWqzJNpk4qGxHaqxLSQqeW2CxRb7Mg1X7g.jpg"
+ },
+ "gholam": {
+  "text": "داداش، پوشمیت کوهلی از تیم گوگل دیپ‌مایند اعلام کرده که موفق شدن برای اولین بار، ویژگی‌های امنیتی کلیدی کدهای اجرایی پیام‌رسان سیگنال رو به‌صورت ریاضی و دقیق (Formal Verification) تایید و اثبات کنن. طبق توضیحات ایشون، راستی‌آزمایی کدها در این ابعاد و عمق در حالت عادی ممکن بود سال‌ها زمان ببره، اما این تیم با فریم‌ورک جدید هوش مصنوعی خودشون به اسم AlphaProof Code این پروژه رو ظرف حدود یک ماه به سرانجام رسونده. در نهایت هم اشاره شده که مستندات و کدهای مربوط به این تاییدیه به‌صورت متن‌باز منتشر می‌شه تا سایر پژوهشگرها هم بتونن برای بالا بردن امنیت سیستم‌های حساس ازش استفاده کنن.",
+  "date": "2026-11-10T14:20:12+00:00"
+ },
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/pushmeet/status/2120127611137634376",
+   "domain": "x.com",
+   "author": {
+    "name": "Pushmeet Kohli",
+    "handle": "pushmeet",
+    "avatar": "https://pbs.twimg.com/profile_images/650718639784509440/yaRuXASm_200x200.jpg"
+   },
+   "text": "Announcing a major milestone achieved by my team @GoogleDeepMind: we have proven key security properties of the machine code underlying the Signal messaging protocol. This is the first time the actual production code of a widely deployed protocol has been formally verified – by any method, with or without AI – and at this depth.\n\nMore than a research breakthrough, it’s a prime example of how frontier AI can be a force multiplier to counter the speed and scale of modern cyber threats.\n\nFormal verification offers a higher standard of security; however, it’s extremely complex and time consuming, which is why in many cases it’s considered to be impractical. Similar efforts could take teams decades of combined effort. We did it in a month’s time.\n\nUsing AlphaProof Code, Google DeepMind's new agentic framework for formal verification that runs on LLMs including Gemini Carbon, we verified the Signal protocol down to the actual code running on devices.  This milestone lays the groundwork for a future in which vital systems, from medical device firmware to power grid software, ship with mathematical proof that their protections work.\n\nReaching that future will take continued research from our community. In that spirit, we're open-sourcing our formal specifications and verification artifacts so others can build on this work.\n\nOn a personal note, this moment is of deep significance to me. I started my own research journey more than two decades ago as an intern working on checking the consistency of complex software systems. Seeing this grand challenge made practical with modern AI is extraordinary.\n\nI'm extremely proud of my team members: Swarat Chaudhuri, Andrew Ferraiuolo, Anton Kovsharov, Tej Chajed, Sam Schlesinger,  Karn Seth, Jonathan Katz, and Charles Sutton for taking on this grand challenge and delivering, and grateful to the Signal team for their partnership.\n\nhttps://deepmind.google/blog/formal-verification-signal-protocol",
+   "date": 1794312787,
+   "media": [
+    {
+     "type": "image",
+     "src": "https://pbs.twimg.com/media/HWw0dnebIAAnPhS.jpg?name=orig",
+     "ratio": 0.5625
+    }
+   ],
+   "links": [
+    "https://deepmind.google/blog/formal-verification-signal-protocol"
+   ]
+  },
+  {
+   "kind": "link",
+   "url": "https://deepmind.google/blog/introducing-alphaproof-code/",
+   "domain": "deepmind.google",
+   "title": "Formal Verification of Signal’s Protocol with Gemini",
+   "description": "AlphaProof Code agents wrote over three million lines of machine-checked proof in Lean to verify the core cryptographic protections in Signal down to machine instructions.",
+   "image": "https://lh3.googleusercontent.com/hn6AiI6lYFo6chi1mL6uJ9nOW9UXfsAKnSyOApiie2urHNU2tmSPUmGn0hNfWyYLRcsWCGjCIrBZSCt1ihZmvW-LDJPfyolsr5w-yvzlknZVzmaH=w1200-h630-n-nu-rw",
+   "site": "Google DeepMind"
+  }
+ ],
+ "article": {
+  "title": "پوشمیت کوهلی از تیم گوگل دیپ‌مایند اعلام کرده که موفق شدن برای اولین بار، ویژگی‌های امنیتی کلیدی کدهای اجرایی پیام‌رسان سیگنال رو به‌صورت ریاضی و دقیق (Formal Verification) تایید و اثبات کنن",
+  "source_title": "Announcing a major milestone achieved by my team @GoogleDeepMind: we have proven key security properties of the machine code underlying the…",
+  "body": [
+   "داداش، پوشمیت کوهلی از تیم گوگل دیپ‌مایند اعلام کرده که موفق شدن برای اولین بار، ویژگی‌های امنیتی کلیدی کدهای اجرایی پیام‌رسان سیگنال رو به‌صورت ریاضی و دقیق (Formal Verification) تایید و اثبات کنن. طبق توضیحات ایشون، راستی‌آزمایی کدها در این ابعاد و عمق در حالت عادی ممکن بود سال‌ها زمان ببره، اما این تیم با فریم‌ورک جدید هوش مصنوعی خودشون به اسم AlphaProof Code این پروژه رو ظرف حدود یک ماه به سرانجام رسونده. در نهایت هم اشاره شده که مستندات و کدهای مربوط به این تاییدیه به‌صورت متن‌باز منتشر می‌شه تا سایر پژوهشگرها هم بتونن برای بالا بردن امنیت سیستم‌های حساس ازش استفاده کنن."
+  ],
+  "why": null,
+  "tags": [
+   "گوگل",
+   "امنیت",
+   "علم"
+  ]
+ },
+ "updated": "2026-11-10T14:23:23+00:00"
+}
