@@ -1,0 +1,58 @@
+{
+ "id": 6427,
+ "url": "https://t.me/dlmehr/6427",
+ "date": "2026-11-10T06:00:20+00:00",
+ "text": "https://fxtwitter.com/romankhrupa/status/2119913625511137746?a=Af_FZIUbuTWJSUd6Z9U&s=52",
+ "forwarded_from": null,
+ "digest": false,
+ "hash": "4dd371342da2",
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/romankhrupa/status/2119913625511137746?a=Af_FZIUbuTWJSUd6Z9U&s=52",
+  "site": "FxTwitter",
+  "title": "Roman Khrupa (@romankhrupa)",
+  "description": "I got a 1.9B model to watch a restaurant camera and tell staff which tables need cleaning\n🍽️\nIt runs on my laptop. No cloud, and it generates zero tokens.\nBuilt over a weekend with @liquidai d1-2B",
+  "image": null
+ },
+ "gholam": {
+  "text": "رفیق، یه برنامه‌نویس به اسم رومن خروپا یه پروژه جالب راه انداخته؛ اومده با استفاده از یه مدل ۱.۹ میلیارد پارامتری به اسم d1-2B (محصول شرکت Liquid AI)، تصاویر دوربین رستوران رو بررسی می‌کنه تا مشخص کنه کدوم میزها نیاز به تمیزکاری دارن و به کارکنان خبر بده. به گفته خودش، این برنامه کاملاً به‌صورت محلی روی لپ‌تاپ شخصی اجرا می‌شه، نیازی به سرورهای ابری نداره و هیچ توکنی هم تولید نمی‌کنه. سازنده‌ش اشاره کرده که کل این کار رو توی یک آخر هفته سرهم کرده تا نشون بده چطور مدل‌های سبک هوش مصنوعی می‌تونن به‌شکل کاربردی و آفلاین کار راه بندازن.",
+  "date": "2026-11-10T06:00:45+00:00"
+ },
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/romankhrupa/status/2119913625511137746",
+   "domain": "x.com",
+   "author": {
+    "name": "Roman Khrupa",
+    "handle": "romankhrupa",
+    "avatar": "https://pbs.twimg.com/profile_images/909500469617283072/JSVCmhvi_200x200.jpg"
+   },
+   "text": "I got a 1.9B model to watch a restaurant camera and tell staff which tables need cleaning 🍽️\n\nIt runs on my laptop. No cloud, and it generates zero tokens.\n\nBuilt over a weekend with @liquidai d1-2B",
+   "date": 1794261769,
+   "media": [
+    {
+     "type": "video",
+     "src": "https://video.twimg.com/amplify_video/2119913376197292032/vid/avc1/798x720/5PWt7K2u5_69wloT.mp4?tag=29",
+     "poster": "https://pbs.twimg.com/amplify_video_thumb/2119913376197292032/img/tx1L1GopZYy6n3zc.jpg",
+     "ratio": 0.9005,
+     "duration": 32.816,
+     "gif": false
+    }
+   ],
+   "links": []
+  }
+ ],
+ "article": {
+  "title": "یه برنامه‌نویس به اسم رومن خروپا یه پروژه جالب راه انداخته",
+  "source_title": "I got a 1.9B model to watch a restaurant camera and tell staff which tables need cleaning 🍽️",
+  "body": [
+   "رفیق، یه برنامه‌نویس به اسم رومن خروپا یه پروژه جالب راه انداخته؛ اومده با استفاده از یه مدل ۱.۹ میلیارد پارامتری به اسم d1-2B (محصول شرکت Liquid AI)، تصاویر دوربین رستوران رو بررسی می‌کنه تا مشخص کنه کدوم میزها نیاز به تمیزکاری دارن و به کارکنان خبر بده. به گفته خودش، این برنامه کاملاً به‌صورت محلی روی لپ‌تاپ شخصی اجرا می‌شه، نیازی به سرورهای ابری نداره و هیچ توکنی هم تولید نمی‌کنه. سازنده‌ش اشاره کرده که کل این کار رو توی یک آخر هفته سرهم کرده تا نشون بده چطور مدل‌های سبک هوش مصنوعی می‌تونن به‌شکل کاربردی و آفلاین کار راه بندازن."
+  ],
+  "why": null,
+  "tags": [
+   "کدنویسی"
+  ]
+ },
+ "updated": "2026-11-10T06:04:21+00:00"
+}
