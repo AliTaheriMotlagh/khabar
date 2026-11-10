@@ -12,7 +12,7 @@
   "site": "X (formerly Twitter)",
   "title": "ClaudeDevs (@ClaudeDevs) on X",
   "description": "We've made it easier to get your repo running in Claude Code cloud sessions on Pro, Max, and Ultra.\nClaude figures out what dependencies, network access, and API keys it needs, then saves the env…",
-  "image": "https://cdn4.telesco.pe/file/gByqEDC-AkOEWqpYslpAvNu7CZUOtAAk_rwuMFoLQ064eaM0vq2DOErrJuMSKHYt2KA7WS6IeJYQdxmCq98QdepQFnjqv9nn8Uz4LNzUfrHuvSMEZQ_Jn09E4vXmktNYfQCnFYwEchEg_-JWZgjXrssF28oprQvQTkDnrUdZ5ks0HeDi-c5nWVYs9szDP1GuAeT6p1TQARFCwxLXYtF6pHI3TUkQgVerJC1YqzXt1wp1NvA3eGk_339anuS2WyBrPscHQY1cntorLk87t04Nd2fWQ4hCUvQDE9omwfsq8edAHfyesx6e4kUTo0WkXzhQugA7pl_mnfZH9fR4UeaF_g.jpg"
+  "image": "https://cdn4.telesco.pe/file/LblXB7HG6pvFPKXKquMhzJkcKehToht4I8cXlr9nFB2Rdda5am7MEtmmPRmqwpoYTaO__Zgmwm0HCfSBBoc6mDviOXxDS9YbMgdwy-IUlCYB8UTLIQuZHqQQa-iddR8YBMwTO7Q1axcOd3imh-0OzABHDjtSo04BD4tRL_GvveMjF3786bE7Y73OtVPdaAfXfCm6Tc6LMGpSTWqVQzRr4m1ANU5oGBO2sSICFGvfZib62fmXPPZQFswi3viYQdfSqpRUWy_Po-UqtNEslRkTjUzYyOX3JcB_yO05T6HwzJSg2NI1QtUTwjtQtAqp3IEgN8mNJ5lRQKjsLGovQihCtg.jpg"
  },
  "gholam": {
   "text": "بچه‌های آنتروپیک برای Claude Code آستین بالا زدن تا اجرای ریپازیتوری‌ها روی سشن‌های ابری رو تر و تمیزتر کنن، اما قصه مثل همیشه فقط راحتی کار شما نیست.\n\n• توی پلن‌های Pro، Max و Ultra، مدل خودش می‌فهمه پروژه‌تون چه پیش‌نیازها، پکیج‌ها، دسترسی شبکه یا API Keyهایی لازم داره، همه‌چیز رو ست‌آپ می‌کنه و محیط رو برای دفعه‌های بعدی ذخیره نگه می‌داره.\n• دسترسی به کلیدهای API رو هم ایزوله کردن تا خودِ مدل مستقیم به سورس کلید دسترسی نداشته باشه و مثلاً سوراخ امنیتی درست نشه.\n• این فیچر دقیقاً موقعی از تنور دراومده که اعتبار رایگان ||۲۵۰ دلاری|| تموم شده و حالا برای یه محیط توسعه‌ی تر و تمیز ابری، باید ماهانه دست‌به‌جیب بشید.\n\nته این بازی مشخصه رفقا؛ دارن زیرپای ابزارهایی مثل Vercel و بقیه ارائه‌دهنده‌های کلود رو خالی می‌کنن تا دولوپر از صفر تا صد پروژه‌ش رو توی قفسِ طلایی خود کلود بالا بیاره و وابستگیش به اکوسیستم آنتروپیک تثبیت بشه.",
@@ -59,5 +59,5 @@
    "کدنویسی"
   ]
  },
- "updated": "2026-11-09T19:05:29+00:00"
+ "updated": "2026-11-10T04:17:21+00:00"
 }

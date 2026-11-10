@@ -1,0 +1,68 @@
+{
+ "id": 6423,
+ "url": "https://t.me/dlmehr/6423",
+ "date": "2026-11-10T04:13:46+00:00",
+ "text": "https://fxtwitter.com/rohanpaul_ai/status/2119949891938218446?a=P1-0IJf1p5weIRlG2iQ&s=52",
+ "forwarded_from": null,
+ "digest": false,
+ "hash": "ff6a92486af6",
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/rohanpaul_ai/status/2119949891938218446?a=P1-0IJf1p5weIRlG2iQ&s=52",
+  "site": "🧵 Thread • FxTwitter",
+  "title": "Rohan Paul (@rohanpaul_ai)",
+  "description": "The Information just reported Fireworks has been hacked.\nintrusion reached customer billing records and, for some accounts, datasets and incomplete model weights.\nThe attacker got into its development machines on October 24 through a third-party cloud…",
+  "image": "https://cdn4.telesco.pe/file/G8awvWaOhKkSLIgsVqXsEMHSGCyEIyEHDS3LmJuxcMc82K0MKHOL2iZcrtB9YLBm2mFGCUqg0RAWXjBiDpDsEneD8k8buImHoEnfyT8SShc3jcodmhn0RVGpYsTh9rB44a2bVLNwYtRufyvulDgcAlMKh47VbZRQvPWC9t6FqS_-I0kWm1hi1k6XGO6h-E62y5R1dpWO3zALDoeZWh85GTKgICKM199wMw2zgoSALObMbBt0OwCI85siYnGaLsM7v_AJwMJBP7SWg9b2I7B4ZOVHoC_bib6c-s-5Ab51LXcU7QXd_V3BfhVvnHWLPnezcx8X8gVDKk_df0kF4cqfXA.jpg"
+ },
+ "gholam": {
+  "text": "رفقا خبر رسیده که سرویس شناخته‌شده‌ی Fireworks هک شده؛ گزارشی که The Information داده نشون می‌ده نفوذگرها روز ۲۴ اکتبر از طریق یه ارائه‌دهنده ابری متفرقه که میزبان سیستم‌های تحقیقاتی شرکت بوده، وارد ماشین‌های توسعه‌شون شدن. طبق این خبر، دسترسی‌ها تا اطلاعات صورت‌حساب مشتری‌ها پیش رفته و توی بعضی حساب‌ها، دیتاست‌ها و وزن‌های ناقص مدل‌ها هم لو رفته. این موضوع به مشتری‌هایی مثل شرکت هاروی (Harvey) اعلام شده و گفته می‌شه بعضی از کاربرا به خاطر این اتفاق، دارن انتقال کارهاشون از این پلتفرم رو بررسی می‌کنن.",
+  "date": "2026-11-10T04:14:07+00:00"
+ },
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/rohanpaul_ai/status/2119949891938218446",
+   "domain": "x.com",
+   "author": {
+    "name": "Rohan Paul",
+    "handle": "rohanpaul_ai",
+    "avatar": "https://pbs.twimg.com/profile_images/1816185267037859840/Fd18CH0v_200x200.jpg"
+   },
+   "text": "The Information just reported Fireworks has been hacked. \n\nintrusion reached customer billing records and, for some accounts, datasets and incomplete model weights.\n\nThe attacker got into its development machines on October 24 through a third-party cloud provider hosting its research systems",
+   "date": 1794270415,
+   "media": [
+    {
+     "type": "image",
+     "src": "https://pbs.twimg.com/media/HWuSimha0AAJMYm.jpg?name=orig",
+     "ratio": 1.4854
+    }
+   ],
+   "links": [],
+   "quote": {
+    "author": {
+     "name": "Stephanie Palazzolo",
+     "handle": "steph_palazzolo",
+     "avatar": "https://pbs.twimg.com/profile_images/1833305113374371840/jyaxOqPL_200x200.jpg"
+    },
+    "text": "Fireworks, the most highly-valued out of a growing group of inference providers, told customers including Harvey that it had been hit with a hack that exposed customer data. Some customers are now considering moving their business off the platform.\n\nhttps://www.theinformation.com/articles/new-fireworks-hack-threatens-1-billion-business",
+    "date": 1794253599,
+    "media": [],
+    "links": [
+     "https://www.theinformation.com/articles/new-fireworks-hack-threatens-1-billion-business"
+    ]
+   }
+  }
+ ],
+ "article": {
+  "title": "رفقا خبر رسیده که سرویس شناخته‌شده‌ی Fireworks هک شده",
+  "source_title": "The Information just reported Fireworks has been hacked.",
+  "body": [
+   "رفقا خبر رسیده که سرویس شناخته‌شده‌ی Fireworks هک شده؛ گزارشی که The Information داده نشون می‌ده نفوذگرها روز ۲۴ اکتبر از طریق یه ارائه‌دهنده ابری متفرقه که میزبان سیستم‌های تحقیقاتی شرکت بوده، وارد ماشین‌های توسعه‌شون شدن. طبق این خبر، دسترسی‌ها تا اطلاعات صورت‌حساب مشتری‌ها پیش رفته و توی بعضی حساب‌ها، دیتاست‌ها و وزن‌های ناقص مدل‌ها هم لو رفته. این موضوع به مشتری‌هایی مثل شرکت هاروی (Harvey) اعلام شده و گفته می‌شه بعضی از کاربرا به خاطر این اتفاق، دارن انتقال کارهاشون از این پلتفرم رو بررسی می‌کنن."
+  ],
+  "why": null,
+  "tags": [
+   "امنیت"
+  ]
+ },
+ "updated": "2026-11-10T04:17:20+00:00"
+}

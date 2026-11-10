@@ -12,7 +12,7 @@
   "site": "🧵 Thread • FxTwitter",
   "title": "Chubby ♨️ (@kimmonismus)",
   "description": "183 milliseconds vs. 3.5 seconds for Claude Opus 5.5.\nThat's the latency gap @NaceAI reports in its new paper on Drex Max, a 256k context decision model. GPT-6 Sol comes in around 2 seconds.\nDrex Max skips text generation entirely. You hand it a set of…",
-  "image": "https://cdn4.telesco.pe/file/QP5JNcT8P75qSU1Bc9eidDdGWZSlfpmmTVD8eTa7XtzXIytdbJWDakqS7BzS-shvZbpeoMyZ1enJ5u9Cn_98XMxnlIiR8D8w_gvaBBjMY6etixqGxGGCZO8AfF0ZO2eRXGqpbrClx7vXjA9LOa0-G79G7dq_StZevlCnc4pGK7S5pA-JHqT5hG5_f198UPcbozADwz1kqqHZWlmNt1kHAnDAG45KPCTPLSDkJHUT6sUT3cn1U9r3-0NEh-iU6K4tIMAJ9kc3xqVkcQjtELbRAuPxZZlH_vPyfNuNPFxMQ-a15QfqIVrjXL6-tdE00uMYZkUeifNgz_spgE81LhYcsw.jpg"
+  "image": "https://cdn4.telesco.pe/file/b-hDNUSVv7IVJuZJ7FiUSkw9ecopUBUSEHr3SXHhOZsCk_M2j2eqGkEvGJhH3jBBHyHcZnfPkbXe3ov42XiI6ZaVHNWWxz-dQ0MWkRVnvWIW0w6rMjYyO-f71mP8cIV0uJMQFHjkmPPQIVrdM2Z9A_9igOElvP9RKoYMJLaRLr0d5GX46mrSiTDZ-7HIeGC2Jdcb9cNTlgpwoy75Lbv_02GoHriSo-Kqs2BDApMpmWFab77CK_X8H5SXM-kqvHvAFzZ11V83ePllr3rDrgCVyrXuEzlx2v8tpnO8e44s2ZwLhCVtrMX-8oitTBpk3cGWwoXc0xh0afJM4i7Lww5t1A.jpg"
  },
  "gholam": {
   "text": "رفقا خبر رسیده که مجموعه NaceAI توی مقاله جدیدش از یه مدل تصمیم‌گیری به اسم Drex Max با پنجره بافت ۲۵۶ هزار توکن رونمایی کرده. سازوکار این مدل به این صورته که تولید متن رو کاملاً کنار گذاشته؛ یعنی چند گزینه رو همراه با متن یا تصویر می‌گیره و هم‌زمان توی یک مرحله، احتمال هر گزینه رو تحویل میده.\n\nطبق گزارش این شرکت، تاخیر مدلی که ساختن حدود ۱۸۳ میلی‌ثانیه‌ست، در حالی که طبق این گزارش برای کلود اوپوس ۵.۵ این زمان ۳.۵ ثانیه و برای جی‌پی‌تی-۶ سول حدود ۲ ثانیه ثبت شده. علاوه بر این، ارزیابی مجموعه Artificial Analysis نسخه ۱.۱ این مدل رو در رتبه اول شاخص مدل‌های تصمیم‌گیری قرار داده و سازنده‌هاش هم اعلام کردن که قصد دارن به‌زودی وزن‌های مدل رو به‌شکل عمومی (open-weight) منتشر کنن.",
@@ -66,5 +66,5 @@
    "آنتروپیک"
   ]
  },
- "updated": "2026-11-09T19:05:28+00:00"
+ "updated": "2026-11-10T04:17:20+00:00"
 }
