@@ -1,0 +1,82 @@
+{
+ "id": 6477,
+ "url": "https://t.me/dlmehr/6477",
+ "date": "2026-11-11T19:45:33+00:00",
+ "text": "https://fxtwitter.com/pranjalssh/status/2120580907828732306?a=VmWLiYvpFQ1ddLdnHsE&s=52",
+ "forwarded_from": null,
+ "digest": false,
+ "hash": "5a493fdc1707",
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/pranjalssh/status/2120580907828732306?a=VmWLiYvpFQ1ddLdnHsE&s=52",
+  "site": "🧵 Thread • FxTwitter",
+  "title": "Pranjal (@pranjalssh)",
+  "description": "Megakernel blog is out now\nWe implement a full layer (MoE + Attention) megakernel, achieving 1100 toks/s for Muse Spark, 2.1x faster than baseline.\nNvidia's Instruction cache makes it really hard to write bigger kernels. We ended up tuning both instruction…",
+  "image": "https://cdn4.telesco.pe/file/siHLEYnL6A3-PfL65F2kOvK4G_h2IMNz0mtu2JgGwXq-n1BTEmXj5XZGzazelV9eVyiUds-Q1Mos7tde_lU2fCxXrHBJ1w4RaTl2IYV23g1ldhE6vG6hB_iGVC7Nontqm4VGWlgYpp093VhaiKZKAyZoNqb4BLZsvgUx55Uh2y-A26Eqn9pLyD4LCLAFWSopH8EIoM1noLUa8cfwKufslZa_wXDWJkTzClNgzcWnLst6_zyXg-Ybm4nWZ418Kkn2_Xp5BpblYYKhLmngp6XEyOO4y4L4_hQ-sVX7xqesae4MOiHmQ02IZJQtIVMO29BTunBhN3zt0WaCyrIJCwHNkQ.jpg"
+ },
+ "gholam": {
+  "text": "سلام رفقا. قضیه از این قراره که توسعه‌دهنده‌ای به اسم پرانجال با همکاری تیم LMSYS گزارشی منتشر کرده و از پیاده‌سازی یک «مگاکرنل» (Megakernel) یکپارچه برای پردازش هم‌زمان لایه‌های مدل Muse Spark خبر داده. \n\nطبق توضیحات اونا، این روش محاسبات لایه (شامل MoE و Attention) رو در قالب یک کرنل اجرا می‌کنه و تعداد دفعات اجرای کرنل در هر مرحله رو از ۱۴۵۰ بار به ۹۷ بار کاهش داده:\n\n• روی سیستمی با ۸ پردازنده GB300، سرعت تولید از ۵۱۷ به ۱۱۰۹ توکن بر ثانیه رسیده که یعنی حدود ۲.۱ برابر سریع‌تر از حالت پایه.\n• با بهینه‌سازی دقیق کَشِ دستورالعمل‌ها و داده‌ها، محاسبات و ارتباطات حافظه هم‌پوشانی پیدا کردن؛ طوری که بخشی از عملیات بعدی حتی قبل از تموم شدن عملیات قبلی اجرا می‌شه تا تأخیر به کمترین حد برسه.",
+  "date": "2026-11-11T19:45:55+00:00"
+ },
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/pranjalssh/status/2120580907828732306",
+   "domain": "x.com",
+   "author": {
+    "name": "Pranjal",
+    "handle": "pranjalssh",
+    "avatar": "https://pbs.twimg.com/profile_images/2079992546584076288/kXhACp0D_200x200.jpg"
+   },
+   "text": "Megakernel blog is out now\n\nWe implement a full layer (MoE + Attention) megakernel, achieving 1100 toks/s for Muse Spark, 2.1x faster than baseline.\n\nNvidia's Instruction cache makes it really hard to write bigger kernels. We ended up tuning both instruction and data caches at all levels for extreme latency hiding!\n\nWith this, some warps of next operation can start running before previous operation has finished - redefining what GPU utilization means.\n\nFull blog post: https://www.lmsys.org/blog/2026-11-05-muse-spark-open-ultrafast",
+   "date": 1794420861,
+   "media": [
+    {
+     "type": "image",
+     "src": "https://pbs.twimg.com/media/HW3QE_CbsAA4dQl.jpg?name=orig",
+     "ratio": 0.2299
+    }
+   ],
+   "links": [
+    "https://www.lmsys.org/blog/2026-11-05-muse-spark-open-ultrafast"
+   ],
+   "quote": {
+    "author": {
+     "name": "LMSYS Org",
+     "handle": "lmsysorg",
+     "avatar": "https://pbs.twimg.com/profile_images/1823251762243121152/0cgIY6yc_200x200.jpg"
+    },
+    "text": "Muse Spark Open: 517 → 1,109 tokens/s on 8× GB300 with SGLang megakernels.\nOne kernel launch per layer, overlapping compute, memory loads and communication. Total launches per decode step drop from 1,450 to 97.\n\nhttps://www.lmsys.org/blog/2026-11-05-muse-spark-open-ultrafast\n\nIn our new technical post, Pranjal Shankhdhar explains what makes this work:\n- Prefetching weights into shared memory and L2 before they’re needed.\n- Warming the instruction cache so large kernels don’t stall fetching their own code.\n- Using data itself as a readiness signal for cross-GPU communication.\n- Fusing the draft model to make drafting 2.6× faster.\n\nThe post also includes measured timelines, CUDA/PTX examples, and the tradeoffs behind stopping at one megakernel per layer.",
+    "date": 1794417483,
+    "media": [],
+    "links": [
+     "https://www.lmsys.org/blog/2026-11-05-muse-spark-open-ultrafast"
+    ]
+   }
+  },
+  {
+   "kind": "link",
+   "url": "https://www.lmsys.org/blog/2026-11-05-muse-spark-open-ultrafast",
+   "domain": "lmsys.org",
+   "title": "Muse Spark Open Ultrafast: Pushing beyond 1,000 Tokens per second",
+   "description": "In this post, we explain why SGLang (and ML infra in general) is moving towards larger GPU kernels, called megakernels, and what makes one different from a normal kernel. We built one for Muse Spark Open, from scratch in CUDA C++ and PTX, and it takes decoding 517 → 1,109 tok/s on Blackwell GPUs.",
+   "image": "https://www.lmsys.org/blog/2026-11-05-muse-spark-open-ultrafast/opengraph-image?2f2a10b2cba4f923",
+   "site": "lmsys.org"
+  }
+ ],
+ "article": {
+  "title": "سلام رفقا",
+  "source_title": "Megakernel blog is out now",
+  "body": [
+   "سلام رفقا. قضیه از این قراره که توسعه‌دهنده‌ای به اسم پرانجال با همکاری تیم LMSYS گزارشی منتشر کرده و از پیاده‌سازی یک «مگاکرنل» (Megakernel) یکپارچه برای پردازش هم‌زمان لایه‌های مدل Muse Spark خبر داده.",
+   "طبق توضیحات اونا، این روش محاسبات لایه (شامل MoE و Attention) رو در قالب یک کرنل اجرا می‌کنه و تعداد دفعات اجرای کرنل در هر مرحله رو از ۱۴۵۰ بار به ۹۷ بار کاهش داده:",
+   "• روی سیستمی با ۸ پردازنده GB300، سرعت تولید از ۵۱۷ به ۱۱۰۹ توکن بر ثانیه رسیده که یعنی حدود ۲.۱ برابر سریع‌تر از حالت پایه.",
+   "• با بهینه‌سازی دقیق کَشِ دستورالعمل‌ها و داده‌ها، محاسبات و ارتباطات حافظه هم‌پوشانی پیدا کردن؛ طوری که بخشی از عملیات بعدی حتی قبل از تموم شدن عملیات قبلی اجرا می‌شه تا تأخیر به کمترین حد برسه."
+  ],
+  "why": null,
+  "tags": [
+   "تراشه"
+  ]
+ },
+ "updated": "2026-11-11T19:49:24+00:00"
+}
