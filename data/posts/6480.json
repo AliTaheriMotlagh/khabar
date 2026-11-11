@@ -1,0 +1,56 @@
+{
+ "id": 6480,
+ "url": "https://t.me/dlmehr/6480",
+ "date": "2026-11-11T22:05:42+00:00",
+ "text": "https://x.com/LuminaBench/status/2120241412050481407",
+ "forwarded_from": "Amirreza",
+ "digest": false,
+ "hash": "c3118bdf5898",
+ "media": [],
+ "preview": {
+  "url": "https://x.com/LuminaBench/status/2120241412050481407",
+  "site": "X (formerly Twitter)",
+  "title": "Lumina (@LuminaBench) on X",
+  "description": "Gemini 4 Helix might be Google's new Flash lite tier model\nA Google employee added references to Helix as a Flash Lite tier model and Hydrogen as the Flash tier model in his personal Antigravity…",
+  "image": "https://cdn4.telesco.pe/file/NJuZkADTRGCM6IoK1Ngq9TwVfduSvk9BQsgT1MndwdHc2ksIvAO-GgCk9joxr2oSWmkPEY6xHSRDBQWj0FnJd6QOC3D0caT0V7OccGS21Flg3jwMX-3mFdTGee_GHl1rM7L6LkuGNnY8RBIkMGxpadXdbBN05h2kVRGDnAwGkFOz4bzHND-nmQt91wTxBW8vc_Q67EW6dN9KNRao1jjTgPPWdvA9eHL3YcrePYOUt8JqYZrGgAutHEZYVvHHCmNgxRnZdCOqA2H6jIREO23UXaX1kSK0XXztSMkWpbMbysmr_-8FQShMzm1Dv6xfqUYOoKSTFoc3mNdAgtLpuXgoWg.jpg"
+ },
+ "gholam": {
+  "text": "رفیق، حساب Lumina متوجه شده که توی پروژه گیت‌هاب شخصی یکی از کارمندهای گوگل، به مدلی به اسم Gemini 4 Helix به عنوان نسخه Flash Lite و مدل Hydrogen به عنوان نسخه Flash اشاره شده. خود نویسنده پُست تأکید کرده که نمی‌تونه صحت این ماجرا رو قطعی تأیید کنه، اما میگه این نام‌گذاری‌ها شاید تفاوت قدرت دو تا چک‌پوینت آزمایشی اخیر در Arena رو توضیح بده. در ادامه هم گفته که اون مخزن گیت‌هاب بعد از پخش شدن خبر کلاً پاک شده، هرچند تا وقتی خود گوگل رسماً چیزی نگه، همه‌چیز در حد حدس و گمان می‌مونه.",
+  "date": "2026-11-11T22:06:02+00:00"
+ },
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/LuminaBench/status/2120241412050481407",
+   "domain": "x.com",
+   "author": {
+    "name": "Lumina",
+    "handle": "LuminaBench",
+    "avatar": "https://pbs.twimg.com/profile_images/2062955151820787712/m39pUS7O_200x200.jpg"
+   },
+   "text": "Gemini 4 Helix might be Google's new Flash lite tier model\n\nA Google employee added references to Helix as a Flash Lite tier model and Hydrogen as the Flash tier model in his personal Antigravity project\n\nI can't verify this is true obviously but Hydrogen lines up pretty well and this would explain the two checkpoints in arena currently and why one is better than the other",
+   "date": 1794339919,
+   "media": [
+    {
+     "type": "image",
+     "src": "https://pbs.twimg.com/media/HWyZVurXQAAG7mE.jpg?name=orig",
+     "ratio": 0.4422
+    }
+   ],
+   "links": []
+  }
+ ],
+ "article": {
+  "title": "حساب Lumina متوجه شده که توی پروژه گیت‌هاب شخصی یکی از کارمندهای گوگل، به مدلی به اسم Gemini 4 Helix به عنوان نسخه Flash Lite و مدل Hydrogen به عنوان نسخه Flash اشاره شده",
+  "source_title": "Gemini 4 Helix might be Google's new Flash lite tier model",
+  "body": [
+   "رفیق، حساب Lumina متوجه شده که توی پروژه گیت‌هاب شخصی یکی از کارمندهای گوگل، به مدلی به اسم Gemini 4 Helix به عنوان نسخه Flash Lite و مدل Hydrogen به عنوان نسخه Flash اشاره شده. خود نویسنده پُست تأکید کرده که نمی‌تونه صحت این ماجرا رو قطعی تأیید کنه، اما میگه این نام‌گذاری‌ها شاید تفاوت قدرت دو تا چک‌پوینت آزمایشی اخیر در Arena رو توضیح بده. در ادامه هم گفته که اون مخزن گیت‌هاب بعد از پخش شدن خبر کلاً پاک شده، هرچند تا وقتی خود گوگل رسماً چیزی نگه، همه‌چیز در حد حدس و گمان می‌مونه."
+  ],
+  "why": null,
+  "tags": [
+   "گوگل",
+   "کدنویسی"
+  ]
+ },
+ "updated": "2026-11-11T22:09:20+00:00"
+}
