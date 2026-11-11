@@ -1,0 +1,62 @@
+{
+ "id": 6473,
+ "url": "https://t.me/dlmehr/6473",
+ "date": "2026-11-11T18:27:29+00:00",
+ "text": "https://fxtwitter.com/sundarpichai/status/2120581155078729728?a=ViNFS8T1jSDmbDAhHSU&s=52",
+ "forwarded_from": null,
+ "digest": false,
+ "hash": "25c08661c576",
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/sundarpichai/status/2120581155078729728?a=ViNFS8T1jSDmbDAhHSU&s=52",
+  "site": "🧵 Thread • FxTwitter",
+  "title": "Sundar Pichai (@sundarpichai)",
+  "description": "Today we’re launching the Gemini Decisions API, powered by our new Gemini Decision 1 model in @GoogleAIStudio.\nInstead of generating text token by token, it’s built for closed-set choices scoring up to 1,000 questions across text, images, audio, video +…",
+  "image": null
+ },
+ "gholam": {
+  "text": "سلام رفقا، سوندار پیچای اعلام کرده که گوگل یه ابزار جدید به اسم Gemini Decisions API معرفی کرده که بر پایه مدل Gemini Decision 1 توی گوگل ای‌آی استودیو در دسترسه. این ابزار برعکس مدل‌های معمولی که متن رو کلمه به کلمه تولید می‌کنن، مخصوص انتخاب از بین گزینه‌های مشخص طراحی شده و می‌تونه توی یک دور پردازش، تا ۱۰۰۰ تا سوال مختلف رو روی متن، تصویر، صوت، ویدیو و فایل‌های PDF ارزیابی کنه.\n\nچندتا نکته از مشخصاتش که توی این پست بهش اشاره شده:\n• از سه مدل تصمیم‌گیری پشتیبانی می‌کنه: گزینه‌های «بله/خیر»، «چندگزینه‌ای تا ۲۵۵ گزینه» و «امتیازدهی بر اساس معیار».\n• هزینه‌ش برای هر یک میلیون توکن ورودی ۱۰ سنته و توکن‌های خروجی هم رایگان حساب می‌شه که طبق گفته پیچای، حدود ۵ برابر از Flash-Lite ارزون‌تره.\n• به ادعای گوگل، این مدل توی چندتا ارزیابی استاندارد پیشتازه و کمترین خطای کالیبراسیون رو ثبت کرده و تیم‌های خود گوگل هم دارن ازش استفاده می‌کنن.",
+  "date": "2026-11-11T18:27:53+00:00"
+ },
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/sundarpichai/status/2120581155078729728",
+   "domain": "x.com",
+   "author": {
+    "name": "Sundar Pichai",
+    "handle": "sundarpichai",
+    "avatar": "https://pbs.twimg.com/profile_images/2051799620062429184/AL8CoAUG_200x200.jpg"
+   },
+   "text": "Today we’re launching the Gemini Decisions API, powered by our new Gemini Decision 1 model in @GoogleAIStudio.\n\nInstead of generating text token by token, it’s built for closed-set choices scoring up to 1,000 questions across text, images, audio, video + PDFs in a single pass. A few details:\n\n- 3 decision types: yes/no, multiple choice (up to 255 options) + rubric scoring\n- $0.10 / 1M input tokens with $0 billed for output tokens (~5x cheaper than Flash-Lite)\n- leads on several benchmark evals with lowest calibration error\n\nGoogle teams are already building with it, below is a look at Stitch Rapid designing a full product flow in seconds (1x speed)",
+   "date": 1794420920,
+   "media": [
+    {
+     "type": "video",
+     "src": "https://video.twimg.com/amplify_video/2120574108635455488/vid/avc1/1198x720/zyPBiAeZAi0I7Z3M.mp4?tag=29",
+     "poster": "https://pbs.twimg.com/amplify_video_thumb/2120574108635455488/img/oulKz9YqtupyRljq.jpg",
+     "ratio": 0.6007,
+     "duration": 13.028,
+     "gif": false
+    }
+   ],
+   "links": []
+  }
+ ],
+ "article": {
+  "title": "سلام رفقا، سوندار پیچای اعلام کرده که گوگل یه ابزار جدید به اسم Gemini Decisions API معرفی کرده که بر پایه مدل Gemini Decision 1 توی گوگل ای‌آی استودیو در دسترسه",
+  "source_title": "Today we’re launching the Gemini Decisions API, powered by our new Gemini Decision 1 model in @GoogleAIStudio.",
+  "body": [
+   "سلام رفقا، سوندار پیچای اعلام کرده که گوگل یه ابزار جدید به اسم Gemini Decisions API معرفی کرده که بر پایه مدل Gemini Decision 1 توی گوگل ای‌آی استودیو در دسترسه. این ابزار برعکس مدل‌های معمولی که متن رو کلمه به کلمه تولید می‌کنن، مخصوص انتخاب از بین گزینه‌های مشخص طراحی شده و می‌تونه توی یک دور پردازش، تا ۱۰۰۰ تا سوال مختلف رو روی متن، تصویر، صوت، ویدیو و فایل‌های PDF ارزیابی کنه.",
+   "چندتا نکته از مشخصاتش که توی این پست بهش اشاره شده:",
+   "• از سه مدل تصمیم‌گیری پشتیبانی می‌کنه: گزینه‌های «بله/خیر»، «چندگزینه‌ای تا ۲۵۵ گزینه» و «امتیازدهی بر اساس معیار».",
+   "• هزینه‌ش برای هر یک میلیون توکن ورودی ۱۰ سنته و توکن‌های خروجی هم رایگان حساب می‌شه که طبق گفته پیچای، حدود ۵ برابر از Flash-Lite ارزون‌تره.",
+   "• به ادعای گوگل، این مدل توی چندتا ارزیابی استاندارد پیشتازه و کمترین خطای کالیبراسیون رو ثبت کرده و تیم‌های خود گوگل هم دارن ازش استفاده می‌کنن."
+  ],
+  "why": null,
+  "tags": [
+   "گوگل"
+  ]
+ },
+ "updated": "2026-11-11T18:31:19+00:00"
+}
