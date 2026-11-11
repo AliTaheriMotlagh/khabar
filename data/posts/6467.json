@@ -1,0 +1,62 @@
+{
+ "id": 6467,
+ "url": "https://t.me/dlmehr/6467",
+ "date": "2026-11-11T16:09:53+00:00",
+ "text": "https://fxtwitter.com/googledeepmind/status/2120532824465805749?a=w5EuX0NhCW_gYLQ7IFE&s=52",
+ "forwarded_from": null,
+ "digest": false,
+ "hash": "8050657c22df",
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/googledeepmind/status/2120532824465805749?a=w5EuX0NhCW_gYLQ7IFE&s=52",
+  "site": "🧵 Thread • FxTwitter",
+  "title": "Google DeepMind (@GoogleDeepMind)",
+  "description": "Your heart, brain, and immune system share the same DNA sequence. So how can a single-letter change affect disease in some cells, while sparing the rest?\nAlphaGenome 2 is our new AI model that zooms in on specific cells to help scientists understand what…",
+  "image": null
+ },
+ "gholam": {
+  "text": "رفقا، گوگل دیپ‌مایند از مدل هوش مصنوعی جدیدش به اسم AlphaGenome 2 رونمایی کرده که تمرکزش روی تک‌تک سلول‌هاست تا مشخص کنه تغییرات ژنتیکی دقیقاً چطور باعث بروز بیماری‌ها می‌شن. به گفته خودشون، نگاه کردن به کل بافت تصویر واضحی نمی‌ده، اما این مدل به دانشمندان کمک می‌کنه جزئیات هر نوع سلول رو جداگانه بررسی کنن:\n\n• این مدل روی بیش از ۱۰۰ میلیون پروفایل در ۶۸ بافت مختلف آموزش دیده و تقریباً دو برابر مدل قبلی، جهش‌هایی رو که باعث فعال یا غیرفعال شدن ژن‌ها می‌شن شناسایی می‌کنه.\n• بدون نیاز به آموزش دوباره، می‌تونه خودش رو با آزمایش‌های آزمایشگاهی تطبیق بده؛ مثلاً بررسی رفتار سلول‌های ایمنی در برابر واکسن یا پیگیری تغییرات در بیماری‌های التهابی.\n\nطبق اعلام دیپ‌مایند، این ابزار در حال حاضر برای تحقیقات علمی و غیرتجاری از طریق API در دسترسه.",
+  "date": "2026-11-11T16:10:15+00:00"
+ },
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/GoogleDeepMind/status/2120532824465805749",
+   "domain": "x.com",
+   "author": {
+    "name": "Google DeepMind",
+    "handle": "GoogleDeepMind",
+    "avatar": "https://pbs.twimg.com/profile_images/1695024885070737408/-M-HSH5P_200x200.jpg"
+   },
+   "text": "Your heart, brain, and immune system share the same DNA sequence. So how can a single-letter change affect disease in some cells, while sparing the rest?\n\nAlphaGenome 2 is our new AI model that zooms in on specific cells to help scientists understand what drives disease. 🧵",
+   "date": 1794409397,
+   "media": [
+    {
+     "type": "video",
+     "src": "https://video.twimg.com/amplify_video/2120531931515219969/vid/avc1/720x900/-YaLh1YDCLarUqxh.mp4?tag=29",
+     "poster": "https://pbs.twimg.com/amplify_video_thumb/2120531931515219969/img/gHTOUV7lZikdofQK.jpg",
+     "ratio": 1.25,
+     "duration": 66.733,
+     "gif": false
+    }
+   ],
+   "links": []
+  }
+ ],
+ "article": {
+  "title": "رفقا، گوگل دیپ‌مایند از مدل هوش مصنوعی جدیدش به اسم AlphaGenome 2 رونمایی کرده که تمرکزش روی تک‌تک سلول‌هاست تا مشخص کنه تغییرات ژنتیکی دقیقاً چطور باعث بروز بیماری‌ها می‌شن",
+  "source_title": "Your heart, brain, and immune system share the same DNA sequence. So how can a single-letter change affect disease in some cells, while…",
+  "body": [
+   "رفقا، گوگل دیپ‌مایند از مدل هوش مصنوعی جدیدش به اسم AlphaGenome 2 رونمایی کرده که تمرکزش روی تک‌تک سلول‌هاست تا مشخص کنه تغییرات ژنتیکی دقیقاً چطور باعث بروز بیماری‌ها می‌شن. به گفته خودشون، نگاه کردن به کل بافت تصویر واضحی نمی‌ده، اما این مدل به دانشمندان کمک می‌کنه جزئیات هر نوع سلول رو جداگانه بررسی کنن:",
+   "• این مدل روی بیش از ۱۰۰ میلیون پروفایل در ۶۸ بافت مختلف آموزش دیده و تقریباً دو برابر مدل قبلی، جهش‌هایی رو که باعث فعال یا غیرفعال شدن ژن‌ها می‌شن شناسایی می‌کنه.",
+   "• بدون نیاز به آموزش دوباره، می‌تونه خودش رو با آزمایش‌های آزمایشگاهی تطبیق بده؛ مثلاً بررسی رفتار سلول‌های ایمنی در برابر واکسن یا پیگیری تغییرات در بیماری‌های التهابی."
+  ],
+  "why": "طبق اعلام دیپ‌مایند، این ابزار در حال حاضر برای تحقیقات علمی و غیرتجاری از طریق API در دسترسه.",
+  "why_label": "حرف آخر",
+  "tags": [
+   "سلامت",
+   "گوگل"
+  ]
+ },
+ "updated": "2026-11-11T16:11:20+00:00"
+}

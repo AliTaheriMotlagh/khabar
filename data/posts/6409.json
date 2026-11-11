@@ -12,7 +12,7 @@
   "site": "FxTwitter",
   "title": "Mark Zuckerberg (@finkd)",
   "description": "Releasing Muse Ember today -- our smallest model that delivers higher intelligence per dollar than others in its class. Built for token-heavy work that agents repeat all day: tool calls, coding subtasks, routing, extraction, and long document parsing. Available…",
-  "image": "https://cdn4.telesco.pe/file/hkC2zfRcyTsQUt9eylkpU5UyS9f5uQeR3f325v-m_kH3axn8U8Fysal1mi3RCWhtYGaMN4FNXaa-SJ5P4LKiPTnndqpzFGqXEqvwYOoCewzIzenS4bVsGXtfJF87c26NmdpEoRh4gYs--aIgi_2KQxA513RdDGjdHXPWw19_vIykOlmGd2Tjpq6frVWgvBoNwPCfTM5cdjR81yha5JrCCGLDxQpLSPUXwtoosTf4fbyZoXohvtPaw9zIUGqAZm7A9ijFhJxSqUNkTPv2hBcSyfYuINS46ymkAat5WJaGVTfc0xI1VHmy0S_qb6ZJX_sWtlRDJ-p2MJsHcYY5oI3V-g.jpg"
+  "image": "https://cdn4.telesco.pe/file/l_QedOE57UV-H9UlguH0qIOE7Qb5i4jRz0GuPBBFse28XkXMBiuDLBSbQ2MCZQnDAlcb5FezeWfMJnqxBMeEOQ7y9fTk58F4G6p4umNAuZA0VINMG6a956YhmBFVMEaJybYb3dkIWXJSYcZtH5nmRP2WQQaWsalEJNjiNAR9i9GOg6cSyR3A7a9tXaH4GSU7OBV-TE-oQL-hk3dLB2IzFjnGum_x_wEdwoUnH4SY81_sIOlU_BUk7qLqNlaA7KOOzH2doFAYDCluc1pjS4NLrf9RPAI-UkbXtxmsaqZNsGXyXAWduAPml2A1H-gPP7KT7ck_ZUwKmlzngtVILe736A.jpg"
  },
  "gholam": {
   "text": "رفقا، مارک زاکربرگ اعلام کرده که متا مدل جدیدی به نام Muse Ember رو عرضه کرده که به گفته خودش، کوچک‌ترین مدل اون‌هاست و نسبت به هزینه‌اش (هوش بر دلار)، بازدهی بالاتری در رده خودش ارائه میده. \n\nطبق توضیحات زاکربرگ، این مدل برای کارهای پرمصرف از نظر توکن طراحی شده که ایجنت‌ها مدام تکرار می‌کنن؛ کارایی مثل فراخوانی ابزارها (tool calls)، زیرمجموعه کارهای کدنویسی، مسیریابی، استخراج داده و پردازش اسناد طولانی. \n\nبه گفته او، این مدل از همین حالا روی Meta Model API و همچنین در Muse Code در دسترسه.",
@@ -47,5 +47,5 @@
    "متا"
   ]
  },
- "updated": "2026-11-11T07:35:12+00:00"
+ "updated": "2026-11-11T16:11:21+00:00"
 }
