@@ -7,6 +7,7 @@ import SourceChip from '../../components/SourceChip.astro';
 import SaveButton from '../../components/SaveButton.astro';
 import Reactions from '../../components/Reactions.astro';
 import Comments from '../../components/Comments.astro';
+import ListenBar from '../../components/ListenBar.astro';
 import { SITE } from '../../site';
 import { abs, getFeed, getPosts, related, sized, faDate, faNum, pic, picture, tagHref, url, whyLabel, type Post } from '../../lib/posts';
 
@@ -194,21 +195,7 @@ const jsonLd = [
     <button class="btn primary sm" type="button" data-resume-go><Icon name="book" /> ادامه از جایی که ماندید</button>
     <button class="icon-btn" type="button" data-resume-x aria-label="بستن"><Icon name="x" /></button>
   </div>
-  <div class="listen-bar" data-listen-bar role="region" aria-label="پخش صدای خبر" hidden>
-    <div class="lb-track" data-lb-track dir="ltr" aria-hidden="true"></div>
-    <div class="lb-row">
-      <span class="lb-pos" data-lb-pos aria-live="polite"></span>
-      <div class="lb-ctl" dir="ltr">
-        <button type="button" data-lb="prev" aria-label="بند قبلی" title="بند قبلی"><Icon name="skip-back" /></button>
-        <button type="button" data-lb="back" aria-label="۱۰ ثانیه عقب" title="۱۰ ثانیه عقب"><Icon name="back10" /></button>
-        <button type="button" class="lb-main" data-lb="toggle" aria-label="مکث"><Icon name="play" class="when-paused" /><Icon name="pause" class="when-playing" /></button>
-        <button type="button" data-lb="fwd" aria-label="۱۰ ثانیه جلو" title="۱۰ ثانیه جلو"><Icon name="fwd10" /></button>
-        <button type="button" data-lb="next" aria-label="بند بعدی" title="بند بعدی"><Icon name="skip-fwd" /></button>
-      </div>
-      <button class="lb-rate rate" type="button" data-rate aria-label="سرعت خواندن" title="سرعت خواندن">۱×</button>
-      <button type="button" class="lb-x" data-lb="stop" aria-label="توقف و بستن" title="توقف"><Icon name="x" /></button>
-    </div>
-  </div>
+  <ListenBar of="story" />
   <div class="quote-bar" data-quote-bar role="toolbar" aria-label="بخش انتخاب‌شده" hidden>
     <button type="button" data-quote-comment><Icon name="comment" /> نظر روی این بخش</button>
     <button type="button" data-quote><Icon name="share" /> اشتراک</button>

@@ -10,10 +10,11 @@ const topics = getTags().map((t) => {
 ---
 <Base title="همه‌ی موضوع‌ها" description="موضوع‌های خبری: هوش مصنوعی، اوپن‌ای‌آی، آنتروپیک، گوگل، امنیت، رباتیک، تراشه، فضا، سلامت و …">
   <div class="container">
-    <header class="page-head"><h1>موضوع‌ها</h1><p>هر موضوع، یک خط زمانی جدا.</p></header>
+    <header class="page-head"><h1>موضوع‌ها</h1><p>هر موضوع، یک خط زمانی جدا. موضوع‌هایی را که دنبال می‌کنید، در خانه با «موضوع‌های من» جدا ببینید و برایشان اعلان بگیرید.</p></header>
     <div class="topic-grid">
       {
         topics.map((t) => (
+          <div class="topic-wrap">
           <a class="topic" href={tagHref(t.tag)}>
             {t.cover ? <img {...pic(t.cover.src || t.cover.poster, 'small')} alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer" /> : <span class="ph"><Icon name="hash" /></span>}
             <span class="topic-body">
@@ -22,6 +23,8 @@ const topics = getTags().map((t) => {
               {t.latest && <span class="topic-latest">{t.latest.article.title}</span>}
             </span>
           </a>
+          <button class="icon-btn follow-mini" type="button" data-follow={t.tag} aria-pressed="false" aria-label={`دنبال کردن ${t.tag}`}><Icon name="plus" class="when-off" /><Icon name="check" class="when-on" /></button>
+          </div>
         ))
       }
     </div>

@@ -39,6 +39,18 @@ const inoreader = (f: FeedDef) => `https://www.inoreader.com/?add_feed=${encodeU
           </li>
         ))
       }
+      <li class="feed-card">
+        <div class="feed-head">
+          <b>پربازدیدترین‌های هفته</b>
+          <small>هر ساعت تازه</small>
+        </div>
+        <p>خبرهایی که در هفت روز گذشته بیشتر از همه خوانده شده‌اند، پربازدیدترین اول.</p>
+        <code dir="ltr">{abs('rss/top.xml')}</code>
+        <div class="row">
+          <button class="btn sm primary" type="button" data-copy={abs('rss/top.xml')}><Icon name="link" /> کپی نشانی</button>
+          <a class="btn sm" href={url('week/')}><Icon name="trending" /> دیدن در سایت</a>
+        </div>
+      </li>
     </ul>
     <p class="feed-note">
       هر خوراک همه‌ی مطلب‌هایش را از اولین تا تازه‌ترین دارد؛ {faNum(FULL)} مطلب تازه با متن کامل، تصویرها، «چرا مهمه؟» و منبع، و قدیمی‌ترها با تیتر، خلاصه و تصویر.

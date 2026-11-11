@@ -11,9 +11,13 @@ const TYPES = { '.html': 'text/html; charset=utf-8', '.css': 'text/css', '.js': 
 const routes = {};
 for (const f of fs.readdirSync('api').filter((f) => f.endsWith('.js') && !f.startsWith('_'))) routes[f.slice(0, -3)] = await import(path.resolve('api', f));
 
+// vercel.json's rewrites (e.g. /rss/top.xml → /api/toprss/), exact paths only.
+const rewrites = new Map((JSON.parse(fs.readFileSync('vercel.json', 'utf8')).rewrites ?? []).map((r) => [r.source, r.destination]));
+
 http
   .createServer(async (req, res) => {
     const url = new URL(req.url, `http://localhost:${PORT}`);
+    if (rewrites.has(url.pathname)) url.pathname = rewrites.get(url.pathname);
     const api = url.pathname.match(/^\/api\/([\w-]+)\/?$/);
     if (api) {
       const handler = routes[api[1]]?.[req.method];

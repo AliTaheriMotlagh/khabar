@@ -1,0 +1,65 @@
+---
+// The owner's page (not linked, not indexed): visits by hour and by source, reported and recent comments to moderate.
+// Everything comes from /api/admin with ADMIN_TOKEN (src/scripts/admin.ts); the token stays in this browser.
+import Base from '../../layouts/Base.astro';
+import Icon from '../../components/Icon.astro';
+---
+<Base title="مدیریت" noindex>
+  <div class="container narrow">
+    <header class="page-head with-action">
+      <div><h1><Icon name="shield" /> مدیریت</h1><p>بازدیدها و نظرها، فقط برای صاحب سایت.</p></div>
+      <div class="adm-tools" data-adm-tools hidden>
+        <button class="btn sm" type="button" data-adm-refresh><Icon name="refresh" /> تازه کردن</button>
+        <button class="btn sm" type="button" data-adm-logout>خروج</button>
+      </div>
+    </header>
+
+    <form class="adm-login" data-adm-login>
+      <label class="vo-label"><span>رمز مدیریت (ADMIN_TOKEN)</span><input class="vo-field" name="token" type="password" autocomplete="current-password" dir="ltr" required /></label>
+      <label class="adm-remember"><input type="checkbox" name="remember" /> روی این دستگاه بماند</label>
+      <p class="voice-msg" data-adm-msg role="alert"></p>
+      <button class="btn primary" type="submit">ورود</button>
+    </form>
+
+    <div data-adm hidden>
+      <div class="st-tiles adm-tiles">
+        <div class="st-tile"><small>کل بازدیدها</small><b data-adm-t="visits">…</b></div>
+        <div class="st-tile"><small><i class="live-dot" aria-hidden="true"></i> الان آنلاین</small><b data-adm-t="online">…</b></div>
+        <div class="st-tile"><small>مشترک اعلان</small><b data-adm-t="subscribers">…</b></div>
+        <div class="st-tile"><small>نظرهای گزارش‌شده</small><b data-adm-t="reported">…</b></div>
+      </div>
+
+      <section class="st-section">
+        <h2 class="section-title">بازدیدهای تازه‌ی امروز، ساعت به ساعت (وقت تهران)</h2>
+        <div class="st-chart hours" data-adm-hours></div>
+        <details class="st-table">
+          <summary>نمایش به صورت جدول، با دیروز</summary>
+          <table><thead><tr><th>ساعت</th><th>امروز</th><th>دیروز</th></tr></thead><tbody data-adm-hours-table></tbody></table>
+        </details>
+      </section>
+
+      <section class="st-section">
+        <h2 class="section-title">از کجا آمده‌اند (۷ روز)</h2>
+        <ol class="adm-sources" data-adm-sources></ol>
+        <p class="muted" data-adm-sources-empty hidden>هنوز چیزی ثبت نشده.</p>
+      </section>
+
+      <section class="st-section">
+        <h2 class="section-title">نظرهای گزارش‌شده</h2>
+        <ol class="adm-comments" data-adm-reports></ol>
+        <p class="muted" data-adm-reports-empty hidden>گزارشی نیست. 🎉</p>
+      </section>
+
+      <section class="st-section">
+        <h2 class="section-title">تازه‌ترین نظرها</h2>
+        <ol class="adm-comments" data-adm-recent></ol>
+        <p class="muted" data-adm-recent-empty hidden>هنوز نظری نیست.</p>
+      </section>
+    </div>
+  </div>
+</Base>
+
+<script>
+  import { initAdmin } from '../../scripts/admin';
+  initAdmin();
+</script>

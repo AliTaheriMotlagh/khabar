@@ -9,10 +9,13 @@
 // on-device voice first plays a moment of silence in the tap, which unlocks the element for the clips that follow).
 import { SITE } from '../site';
 import { remoteAudio, remoteClip, remoteConfig } from './tts-remote';
+import { cloudSrc, keptRemote } from './offline-audio';
+import { store } from './core';
+import type { Line } from '../lib/lines';
 import { chosenVoice, prepareVoice, sentences, voiceClip, voicePreferred, voiceReady, voiceState } from './voice';
 
 /** One paragraph to read: `i` is its index in the story's card.json (0 = title, then the body, then "why"). */
-export type Line = { text: string; post: number; i: number };
+export type { Line } from '../lib/lines';
 export type SpeechState = 'idle' | 'loading' | 'playing' | 'paused';
 type Events = { line?(n: number): void; state?(s: SpeechState): void; end?(): void; fail?(msg: string): void };
 
@@ -52,7 +55,11 @@ export async function persianVoice(): Promise<VoiceSource | null> {
     }
     try {
       cloudOk = (await fetch(`${SITE.api}/api/tts/?probe=1`)).ok;
-    } catch {}
+      store.set('tts-cloud', cloudOk);
+    } catch {
+      // Offline: the cloud voice worked last time, and saved stories' clips are kept on the device.
+      cloudOk = store.get('tts-cloud', false);
+    }
     await local;
   })();
   await checked;
@@ -100,6 +107,8 @@ export class Speaker {
 
   constructor(private on: Events = {}) {
     this.audio.preload = 'auto';
+    // One voice at a time on a page: another speaker starting (the morning brief, the playlist, a story) stops this one.
+    document.addEventListener('speaker-start', (e) => (e as CustomEvent).detail !== this && this.state !== 'idle' && this.stop());
     const silent = () => this.audio.src === SILENCE;
     this.audio.addEventListener('playing', () => {
       if (silent()) return;
@@ -115,6 +124,7 @@ export class Speaker {
   }
 
   start(lines: Line[], from = 0) {
+    document.dispatchEvent(new CustomEvent('speaker-start', { detail: this }));
     this.halt();
     this.lines = lines;
     this.engine = synth && !lines.some((l) => isPersian(l.text)) ? 'device' : (hasPersianVoice() ?? 'cloud');
@@ -148,16 +158,16 @@ export class Speaker {
     }
     if (this.engine === 'cloud') {
       this.set(this.played ? 'playing' : 'loading');
-      this.audio.src = clipUrl(line);
+      this.audio.src = cloudSrc(clipUrl(line), line);
       this.audio.playbackRate = this.rate;
       this.audio.play().catch((e: Error) => mine === this.run && e.name !== 'AbortError' && this.failed());
       const next = this.lines[n + 1];
-      if (next) fetch(clipUrl(next)).catch(() => {}); // warm the next paragraph
+      if (next && cloudSrc(clipUrl(next), next) === clipUrl(next)) fetch(clipUrl(next)).catch(() => {}); // warm the next paragraph
       return;
     }
     if (this.engine === 'remote') {
       if (this.state !== 'playing') this.set('loading');
-      remoteClip(line.text).then(
+      keptRemote(line.text).then((b) => (b ? URL.createObjectURL(b) : remoteClip(line.text))).then(
         (url) => {
           if (mine !== this.run) return;
           this.audio.src = url;

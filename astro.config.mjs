@@ -10,5 +10,5 @@ export default defineConfig({
   trailingSlash: 'always',
   build: { format: 'directory', inlineStylesheets: 'auto' },
   prefetch: { prefetchAll: false, defaultStrategy: 'hover' },
-  integrations: [sitemap({ filter: (page) => !/\/(saved|search|me|offline)\/$/.test(page) })],
+  integrations: [sitemap({ filter: (page) => !/\/(saved|search|me|offline|admin)\/$/.test(page) })],
 });

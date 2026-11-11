@@ -4,6 +4,7 @@ import { SITE } from '../site';
 import { $, $$, fmtNum, store, toast } from './core';
 import { award } from './game';
 import { Speaker, getReady, type Line } from './speech';
+import { storyLines } from '../lib/lines';
 import { canListen, listenOr } from './voice-offer';
 
 type Prefs = Record<string, string>;
@@ -145,16 +146,13 @@ speaker.rate = store.get<number>('rate', 1);
 function toggleListen() {
   if (speaker.state === 'playing' || speaker.state === 'loading') return speaker.pause();
   if (speaker.state === 'paused') return speaker.resume();
-  // The story's text only, not its headline: paragraph k is card.json's k + 1 (0 is the headline, see api/tts.js).
-  // A brief's first line is its headline again, and a line that is only a link isn't worth hearing: both are skipped.
-  // A story with no text is read by its headline.
+  // Which paragraphs are read, and each one's index for the cloud voice: src/lib/lines.ts (shared with the playlist
+  // and the offline audio, which read card.json).
   const text = (el: Element) => el.textContent!.replace(/\s+/g, ' ').trim();
-  const head = text($('h1', article!)!).replace(/…$/, '');
-  const all = $$('.prose p, .why p, .digest-list li', article!).filter((el) => text(el));
-  const again = all[0] && text(all[0]).length < head.length + 20 && text(all[0]).startsWith(head.slice(0, 30)) ? 1 : 0;
-  let parts = all.map((el, k) => ({ el, i: k + 1 })).filter(({ el, i }) => i > again && !/^\P{L}*https?:\/\/\S+$/u.test(text(el)));
-  if (!parts.length) parts = $$('h1', article!).map((el) => ({ el, i: 0 }));
-  paragraphs = parts.map((p) => p.el);
+  const h1 = $('h1', article!)!;
+  const els = $$('.prose p, .why p, .digest-list li', article!).filter((el) => text(el));
+  const lines = storyLines(id, text(h1), els.map(text));
+  paragraphs = lines.map((l) => (l.i ? els[l.i - 1] : h1));
   if ('mediaSession' in navigator) {
     const cover = article?.dataset.cover;
     navigator.mediaSession.metadata = new MediaMetadata({ title: article?.dataset.title ?? document.title, artist: SITE.name, artwork: cover ? [{ src: cover }] : [] });
@@ -166,10 +164,7 @@ function toggleListen() {
   // Where the reader stopped last time (a paragraph that is still there), else the top.
   const from = listenSpot() < paragraphs.length ? listenSpot() : 0;
   if (from) toast(`ادامه از بند ${fmtNum(from + 1)}؛ با نوار پایین صفحه به هر بند می‌روید`);
-  speaker.start(
-    parts.map(({ el, i }) => ({ text: text(el), post: id, i })),
-    from,
-  );
+  speaker.start(lines, from);
 }
 
 /** The bar's buttons, a step of its track, or a paragraph of the story while listening. */

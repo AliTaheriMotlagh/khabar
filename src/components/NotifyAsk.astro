@@ -1,0 +1,16 @@
+---
+// Offered on the home page once a reader has read a few stories (src/scripts/notify.ts decides): turn on notifications
+// of new stories, or not now (asked again a month later). Never shown on a first visit, never a prompt on arrival.
+import Icon from './Icon.astro';
+---
+<aside class="notify-ask" data-notify-ask hidden aria-labelledby="notify-ask-title">
+  <span class="notify-ask-icon" aria-hidden="true"><Icon name="bell" /></span>
+  <div class="notify-ask-text">
+    <b id="notify-ask-title">خبرهای تازه را همان لحظه بگیرید</b>
+    <small>با اعلان، حتی وقتی سایت باز نیست. هر وقت خواستید از تنظیمات خاموشش کنید.</small>
+  </div>
+  <div class="notify-ask-actions">
+    <button class="btn sm primary" type="button" data-notify-yes>روشن کن</button>
+    <button class="btn sm" type="button" data-notify-no>نه، ممنون</button>
+  </div>
+</aside>

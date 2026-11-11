@@ -7,6 +7,10 @@ const { id } = Astro.props;
 <section class="comments" id="comments" data-comments={id} aria-labelledby="comments-title">
   <h2 class="section-title" id="comments-title">نظرها <span class="count" data-comments-count></span></h2>
   <form class="comment-form" data-comment-form>
+    <div class="c-quote-draft c-reply-draft" data-comment-reply hidden>
+      <span class="c-quote-label">پاسخ به <b data-comment-reply-name></b></span>
+      <button class="icon-btn" type="button" data-comment-reply-x aria-label="لغو پاسخ"><Icon name="x" /></button>
+    </div>
     <div class="c-quote-draft" data-comment-quote hidden>
       <span class="c-quote-label">نظر درباره‌ی این بخش:</span>
       <q dir="auto" data-comment-quote-text></q>

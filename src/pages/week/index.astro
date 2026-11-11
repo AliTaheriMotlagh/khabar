@@ -1,0 +1,26 @@
+---
+// The week's most read stories (src/scripts/week.ts, from /api/stats and each story's card.json), and the same as RSS
+// (/rss/top.xml, api/toprss.js).
+import Base from '../../layouts/Base.astro';
+import Icon from '../../components/Icon.astro';
+import { abs, url } from '../../lib/posts';
+---
+<Base title="پربازدیدترین‌های هفته" description="خبرهایی که در هفت روز گذشته بیشتر از همه خوانده شده‌اند.">
+  <link slot="head" rel="alternate" type="application/rss+xml" title="پربازدیدترین‌های هفته" href={abs('rss/top.xml')} />
+  <div class="container narrow">
+    <header class="page-head with-action">
+      <div><h1><Icon name="trending" /> پربازدیدترین‌های هفته</h1><p>خبرهایی که در هفت روز گذشته بیشتر از همه خوانده شده‌اند؛ هر خواننده یک بار شمرده می‌شود.</p></div>
+      <a class="btn sm" href={abs('rss/top.xml')}><Icon name="rss" /> RSS</a>
+    </header>
+    <ol class="wk-list" data-wk-list aria-busy="true">
+      {Array.from({ length: 4 }, () => <li class="wk-item skeleton" aria-hidden="true"></li>)}
+    </ol>
+    <p class="muted" data-wk-empty hidden>هنوز بازدیدی برای این هفته ثبت نشده؛ کمی بعد سر بزنید.</p>
+    <p class="muted" data-wk-off hidden>فهرست فعلاً در دسترس نیست؛ کمی بعد دوباره سر بزنید.</p>
+    <p class="st-note"><a href={url('stats/')}>آمار بازدید با جزئیات</a></p>
+  </div>
+</Base>
+<script>
+  import { initWeek } from '../../scripts/week';
+  initWeek();
+</script>

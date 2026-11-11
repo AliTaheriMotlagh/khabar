@@ -60,8 +60,20 @@ function setViews(id: number, n: number) {
 
 async function beat(view = false) {
   try {
-    showLive(await api<Live>('live', { method: 'POST', body: { guest: guest(), post: articleId(), view, name: myName() || undefined } }));
+    showLive(await api<Live>('live', { method: 'POST', body: { guest: guest(), post: articleId(), view, name: myName() || undefined, ...(view && { ref: visitSource() }) } }));
   } catch {}
+}
+/** Where this visit came from (counted once per reader per day, for the owner's page): a campaign's utm_source, the
+ *  site that linked here, or nothing (typed, a bookmark, the installed app). Only the site's name is sent. */
+function visitSource() {
+  const utm = new URL(location.href).searchParams.get('utm_source');
+  if (utm) return utm.slice(0, 40);
+  try {
+    const r = new URL(document.referrer);
+    return r.hostname === location.hostname ? 'internal' : `${r.protocol}//${r.hostname}`;
+  } catch {
+    return 'direct';
+  }
 }
 let beatTimer: number | undefined;
 function startBeats() {
@@ -136,8 +148,16 @@ async function react(btn: HTMLButtonElement) {
 // ---------- comments ----------
 // A comment can be about a passage the reader highlighted (`quote`, see the selection bar in reader.ts): the passage is
 // shown above it, and marked in the story's text — a tap on either goes to the other.
-type Comment = { id: string; name: string; text: string; at: string; quote?: string };
+// Replies are one level deep (`re`: the comment answered), shown under it oldest first; a reader can like a comment
+// once and report one (enough reports hide it until the site's owner looks: api/comments.js).
+type Comment = { id: string; name: string; text: string; at: string; quote?: string; re?: string; likes?: number };
 const myComments = () => store.get<string[]>('myComments', []);
+const likedComments = () => store.get<string[]>('likedComments', []);
+const reportedComments = () => store.get<string[]>('reportedComments', []);
+const svg = (d: string) => `<svg class="i" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">${d}</svg>`;
+const HEART = svg('<path d="M12 20s-7-4.4-9-9a5 5 0 0 1 9-3 5 5 0 0 1 9 3c-2 4.6-9 9-9 9z"/>');
+const REPLY = svg('<path d="M10 8 4 13l6 5"/><path d="M4 13h10a6 6 0 0 1 6 6"/>');
+const FLAG = svg('<path d="M5 21V4M5 4h11l-2 4 2 4H5"/>');
 let loadComments: (() => void) | undefined;
 const norm = (s: string) => s.replace(/\s+/g, ' ').trim();
 const passages = () => $$('h1, .prose p, .why p, .digest-list li', $('[data-article]') ?? document);
@@ -210,17 +230,39 @@ const flash = (el: Element) => {
 function avatarHtml(name: string) {
   return `<span class="avatar" style="--h:${hue(name)}" aria-hidden="true">${esc(initial(name))}</span>`;
 }
-function commentHtml(c: Comment) {
+function commentHtml(c: Comment, replies: Comment[] = []): string {
   const mineC = myComments().includes(c.id);
-  return `<li class="comment${mineC ? ' mine' : ''}" data-cid="${esc(c.id)}"${c.quote ? ` data-cquote="${esc(norm(c.quote))}"` : ''}>
+  const liked = likedComments().includes(c.id);
+  const reported = reportedComments().includes(c.id);
+  return `<li class="comment${mineC ? ' mine' : ''}${c.re ? ' reply' : ''}" data-cid="${esc(c.id)}" data-cname="${esc(c.name)}"${c.quote ? ` data-cquote="${esc(norm(c.quote))}"` : ''}>
     ${avatarHtml(c.name)}
     <div class="c-body">
-      <div class="c-head"><b>${esc(c.name)}</b><time datetime="${esc(c.at)}">${esc(relTime(c.at))}</time>
-        ${mineC ? '<button class="c-del" type="button" data-del-comment aria-label="حذف نظر من">حذف</button>' : ''}</div>
+      <div class="c-head"><b>${esc(c.name)}</b><time datetime="${esc(c.at)}">${esc(relTime(c.at))}</time></div>
       ${c.quote ? `<button class="c-quote" type="button" data-goto-quote title="دیدن این بخش در متن خبر"><span dir="auto">${esc(c.quote)}</span></button>` : ''}
       <p dir="auto">${esc(c.text)}</p>
+      <div class="c-actions">
+        <button class="c-act like" type="button" data-like-comment aria-pressed="${liked}" aria-label="${liked ? 'پس گرفتن پسند' : 'پسندیدن'}">${HEART}<span data-likes>${c.likes ? fmtNum(c.likes) : ''}</span></button>
+        <button class="c-act" type="button" data-reply-comment>${REPLY}<span>پاسخ</span></button>
+        ${
+          mineC
+            ? '<button class="c-act end" type="button" data-del-comment aria-label="حذف نظر من">حذف</button>'
+            : `<button class="c-act end" type="button" data-report-comment ${reported ? 'disabled' : ''} aria-label="گزارش این نظر" title="${reported ? 'گزارش داده‌اید' : 'گزارش نظر نامناسب'}">${FLAG}</button>`
+        }
+      </div>
+      ${replies.length ? `<ol class="replies">${replies.map((r) => commentHtml(r)).join('')}</ol>` : ''}
     </div>
   </li>`;
+}
+
+/** Top-level comments newest first, each with its replies oldest first (a reply whose comment is gone stands alone). */
+function thread(items: Comment[]) {
+  const ids = new Set(items.map((c) => c.id));
+  const replies = new Map<string, Comment[]>();
+  for (const c of items) if (c.re && ids.has(c.re)) replies.set(c.re, [...(replies.get(c.re) ?? []), c]);
+  return items
+    .filter((c) => !c.re || !ids.has(c.re))
+    .map((c) => commentHtml(c, (replies.get(c.id) ?? []).sort((a, b) => a.at.localeCompare(b.at))))
+    .join('');
 }
 
 function initComments() {
@@ -235,12 +277,14 @@ function initComments() {
   const nameInput = form.elements.namedItem('name') as HTMLInputElement;
   const textInput = form.elements.namedItem('text') as HTMLTextAreaElement;
   const draft = $('[data-comment-quote]', form)!;
+  const replyChip = $('[data-comment-reply]', form)!;
   nameInput.value = myName();
   let items: Comment[] = [];
   let quote = '';
+  let replyTo: Comment | null = null;
 
   const render = () => {
-    list.innerHTML = items.map(commentHtml).join('');
+    list.innerHTML = thread(items);
     empty.hidden = items.length > 0;
     count.textContent = items.length ? fmtNum(items.length) : '';
     markQuotes(items);
@@ -272,6 +316,14 @@ function initComments() {
     textInput.placeholder = q ? 'درباره‌ی این بخش چه نظری دارید؟' : 'نظرتان را بنویسید…';
   };
   $('[data-comment-quote-x]', draft)?.addEventListener('click', () => setQuote(''));
+  const setReply = (c: Comment | null) => {
+    replyTo = c;
+    replyChip.hidden = !c;
+    $('[data-comment-reply-name]', replyChip)!.textContent = c?.name ?? '';
+    if (c) textInput.placeholder = `پاسخ شما به ${c.name}…`;
+    else if (!quote) textInput.placeholder = 'نظرتان را بنویسید…';
+  };
+  $('[data-comment-reply-x]', replyChip)?.addEventListener('click', () => setReply(null));
   // From the bar over a selection in the story (reader.ts).
   document.addEventListener('comment-on', (e) => {
     load();
@@ -305,7 +357,7 @@ function initComments() {
       if (nameInput.value.trim() !== myName()) setMyName(nameInput.value);
       const { comment } = await api<{ comment: Comment | null }>('comments', {
         method: 'POST',
-        body: { post, guest: guest(), name: myName(), text: data.get('text'), website: data.get('website'), ...(quote && { quote }) },
+        body: { post, guest: guest(), name: myName(), text: data.get('text'), website: data.get('website'), ...(quote && { quote }), ...(replyTo && { re: replyTo.id }) },
       });
       if (comment) {
         store.set('myComments', [...myComments(), comment.id].slice(-500));
@@ -315,7 +367,9 @@ function initComments() {
       }
       form.reset();
       setQuote('');
+      setReply(null);
       nameInput.value = myName();
+      if (comment?.re) list.querySelector(`[data-cid="${CSS.escape(comment.id)}"]`)?.scrollIntoView({ block: 'nearest', behavior: 'smooth' });
     } catch (err) {
       toast(slowDown(err) ? 'چند لحظه صبر کنید و دوباره بفرستید' : 'نظر ارسال نشد؛ دوباره امتحان کنید');
     } finally {
@@ -333,9 +387,23 @@ function initComments() {
       $$('mark.c-mark').filter((m) => m.dataset.quote === q).forEach(flash);
       return;
     }
-    const del = (e.target as Element).closest('[data-del-comment]');
+    const t = e.target as Element;
+    const li = t.closest<HTMLElement>('[data-cid]');
+    if (!li) return;
+    const cid = li.dataset.cid!;
+    const c = items.find((x) => x.id === cid);
+    if (t.closest('[data-reply-comment]') && c) {
+      setReply(c);
+      form.scrollIntoView({ block: 'center', behavior: 'smooth' });
+      textInput.focus({ preventScroll: true });
+      return;
+    }
+    const likeBtn = t.closest<HTMLButtonElement>('[data-like-comment]');
+    if (likeBtn && c) return likeComment(c, likeBtn);
+    if (t.closest('[data-report-comment]') && c) return reportComment(c);
+    const del = t.closest('[data-del-comment]');
     if (!del || !confirm('این نظر حذف شود؟')) return;
-    const id = del.closest<HTMLElement>('[data-cid]')!.dataset.cid!;
+    const id = cid;
     try {
       await api(`comments?post=${post}&id=${encodeURIComponent(id)}`, { method: 'DELETE', body: { guest: guest() } });
       items = items.filter((c) => c.id !== id);
@@ -344,6 +412,49 @@ function initComments() {
       toast('حذف نشد');
     }
   });
+
+  // Shown at once, then the server's count; taken back if it fails.
+  async function likeComment(c: Comment, btn: HTMLButtonElement) {
+    const on = !likedComments().includes(c.id);
+    const before = c.likes ?? 0;
+    const paint = () => {
+      btn.setAttribute('aria-pressed', String(on));
+      btn.setAttribute('aria-label', on ? 'پس گرفتن پسند' : 'پسندیدن');
+      $('[data-likes]', btn)!.textContent = c.likes ? fmtNum(c.likes) : '';
+    };
+    store.set('likedComments', on ? [...likedComments(), c.id].slice(-500) : likedComments().filter((x) => x !== c.id));
+    c.likes = Math.max(0, before + (on ? 1 : -1));
+    paint();
+    if (on) {
+      btn.classList.remove('pop');
+      void btn.offsetWidth;
+      btn.classList.add('pop');
+    }
+    try {
+      c.likes = (await api<{ likes: number }>('comments', { method: 'POST', body: { action: 'like', post, id: c.id, guest: guest(), on } })).likes;
+      paint();
+    } catch (e) {
+      store.set('likedComments', on ? likedComments().filter((x) => x !== c.id) : [...likedComments(), c.id]);
+      c.likes = before;
+      btn.setAttribute('aria-pressed', String(!on));
+      $('[data-likes]', btn)!.textContent = before ? fmtNum(before) : '';
+      toast(slowDown(e) ? 'کمی آهسته‌تر 🙂' : 'ثبت نشد؛ دوباره امتحان کنید');
+    }
+  }
+
+  async function reportComment(c: Comment) {
+    if (!confirm('این نظر گزارش شود؟ (توهین، هرزنامه یا محتوای نامناسب) — اگر چند نفر گزارشش کنند، تا بررسی پنهان می‌شود.')) return;
+    store.set('reportedComments', [...reportedComments(), c.id].slice(-300));
+    try {
+      const { hidden } = await api<{ hidden: boolean }>('comments', { method: 'POST', body: { action: 'report', post, id: c.id, guest: guest() } });
+      if (hidden) items = items.filter((x) => x.id !== c.id);
+      toast(hidden ? 'گزارش شد و این نظر تا بررسی پنهان شد' : 'گزارش شد؛ ممنون که کمک می‌کنید');
+    } catch {
+      store.set('reportedComments', reportedComments().filter((x) => x !== c.id));
+      toast('گزارش ثبت نشد؛ کمی بعد امتحان کنید');
+    }
+    render();
+  }
 }
 
 // ---------- live chat ----------

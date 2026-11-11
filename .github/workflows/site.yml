@@ -40,6 +40,7 @@ jobs:
     timeout-minutes: 45
     outputs:
       deploy: ${{ steps.commit.outputs.deploy }}
+      latest: ${{ steps.latest.outputs.latest }}
     steps:
       - uses: actions/checkout@v4
 
@@ -110,11 +111,33 @@ jobs:
       # The built timeline and stories against the crawled data: order, days, times and counts (tests/site.test.mjs).
       - run: node --test tests/site.test.mjs
         if: steps.commit.outputs.deploy == 'true'
+      # The newest listed post of this build, for the notify job.
+      - id: latest
+        if: steps.commit.outputs.deploy == 'true'
+        run: echo "latest=$(node -p "require('./dist/build.json').latest")" >> "$GITHUB_OUTPUT"
 
       - uses: actions/upload-pages-artifact@v3
         if: steps.commit.outputs.deploy == 'true'
         with:
           path: dist
+
+  # Readers with notifications on hear about the new stories once Vercel serves them (scripts/notify.mjs). Beside the
+  # Pages deploy, not before it: waiting for Vercel can take minutes. Off (a no-op) without the PUSH_SECRET secret.
+  notify:
+    needs: build
+    if: needs.build.outputs.deploy == 'true'
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    continue-on-error: true
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          sparse-checkout: scripts
+      - run: node scripts/notify.mjs
+        env:
+          PUSH_SECRET: ${{ secrets.PUSH_SECRET }}
+          SITE: ${{ vars.API_URL || 'https://khabar-ai.vercel.app' }}
+          LATEST: ${{ needs.build.outputs.latest }}
 
   deploy:
     needs: build

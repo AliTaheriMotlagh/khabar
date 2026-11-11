@@ -2,6 +2,7 @@
 import Base from '../../../layouts/Base.astro';
 import Timeline from '../../../components/Timeline.astro';
 import Sidebar from '../../../components/Sidebar.astro';
+import Icon from '../../../components/Icon.astro';
 import { SITE } from '../../../site';
 import { getFeed, getTags, tagHref, faNum } from '../../../lib/posts';
 import { tagFeed } from '../../../lib/feed';
@@ -25,7 +26,10 @@ const nth = page > 1 ? ` — صفحه‌ی ${faNum(page)}` : '';
 ---
 <Base title={`اخبار ${tag}${nth}`} description={`تازه‌ترین اخبار ${tag} با ترجمه‌ی فارسی، تصویر و ویدیو و پیوند به منبع اصلی — ${SITE.name}${nth}`} image={slice.find((p) => p.cover)?.cover?.src} feed={tagFeed(tag!)}>
   <div class="container">
-    <header class="page-head"><h1>اخبار {tag}</h1><p><span data-num>{faNum(posts.length)}</span> خبر{page > 1 && ` · صفحه‌ی ${faNum(page)} از ${faNum(total)}`}</p></header>
+    <header class="page-head with-action">
+      <div><h1>اخبار {tag}</h1><p><span data-num>{faNum(posts.length)}</span> خبر{page > 1 && ` · صفحه‌ی ${faNum(page)} از ${faNum(total)}`}</p></div>
+      <button class="btn follow-btn" type="button" data-follow={tag} aria-pressed="false"><Icon name="plus" class="when-off" /><Icon name="check" class="when-on" /> <span data-follow-label>دنبال کردن</span></button>
+    </header>
     <div class="layout">
       <div class="col-main"><Timeline posts={slice} all={posts} nextHref={next} prevHref={prev} title={`خط زمانی ${tag}`} topic={tag} /></div>
       <Sidebar current={tag} />

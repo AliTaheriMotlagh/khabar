@@ -42,6 +42,22 @@ const groups: { key: string; label: string; choices: Choice[] }[] = [
         <button class="btn sm" type="button" data-seen-clear>از نو</button>
       </span>
     </div>
+    <div class="opt notify-box" data-notify hidden>
+      <div class="voice-row">
+        <span class="voice-row-text"><b>اعلان خبرهای تازه</b><small data-notify-status>خاموش</small></span>
+        <button class="btn sm primary" type="button" data-notify-toggle aria-pressed="false">روشن کردن</button>
+      </div>
+      <div class="seg" role="radiogroup" aria-label="اعلان برای چه خبرهایی" data-notify-modes hidden>
+        <label><input type="radio" name="notify-mode" value="all" checked /><span>همه‌ی خبرها</span></label>
+        <label><input type="radio" name="notify-mode" value="topics" /><span>موضوع‌های من</span></label>
+        <label><input type="radio" name="notify-mode" value="daily" /><span>فقط خلاصه‌ی روزانه</span></label>
+      </div>
+      <small class="notify-note" data-notify-note></small>
+    </div>
+    <div class="opt voice-row">
+      <span class="voice-row-text"><b>موضوع‌هایی که دنبال می‌کنید</b><small data-follow-count>هنوز هیچ</small></span>
+      <a class="btn sm" href={`${import.meta.env.BASE_URL.replace(/\/$/, '')}/tags/`}>انتخاب موضوع‌ها</a>
+    </div>
     <div class="opt voice-row" data-voice-settings hidden>
       <span class="voice-row-text"><b>صدای فارسی برای «گوش دادن»</b><small data-voice-status></small></span>
       <button class="btn sm" type="button" data-voice-open>دانلود صدا</button>

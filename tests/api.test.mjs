@@ -11,6 +11,8 @@ const live = await import('../api/live.js');
 const chat = await import('../api/chat.js');
 const leaders = await import('../api/leaders.js');
 const stats = await import('../api/stats.js');
+const admin = await import('../api/admin.js');
+const toprss = await import('../api/toprss.js');
 const { _memory } = await import('../api/_lib.js');
 
 let ip = 0;
@@ -63,6 +65,51 @@ test('comments on a highlighted passage keep its words', async () => {
   assert.equal('quote' in none.body.comment, false);
   const list = await call(comments.GET, 'GET', '/api/comments?post=8');
   assert.deepEqual(list.body.comments.map((c) => c.quote ?? null), [null, plain.body.comment.quote, 'هوش مصنوعی تازه']);
+});
+
+test('comments: replies one level deep, likes once per guest, reports hide, delete cleans up', async () => {
+  const G = (c) => `guest-r${c.repeat(16)}`;
+  const top = (await call(comments.POST, 'POST', '/api/comments', { post: 300, guest: G('a'), text: 'اولی' })).body.comment;
+  const reply = await call(comments.POST, 'POST', '/api/comments', { post: 300, guest: G('b'), text: 'جواب', re: top.id });
+  assert.equal(reply.status, 201);
+  assert.equal(reply.body.comment.re, top.id);
+  const deeper = await call(comments.POST, 'POST', '/api/comments', { post: 300, guest: G('c'), text: 'جواب جواب', re: reply.body.comment.id });
+  assert.equal(deeper.body.comment.re, top.id, 'an answer to a reply goes under the same comment');
+  assert.equal((await call(comments.POST, 'POST', '/api/comments', { post: 300, guest: G('c'), text: 'گم', re: 'ffffffffffff' })).status, 400);
+  assert.equal((await call(comments.POST, 'POST', '/api/comments', { post: 300, guest: G('c'), text: 'بد', re: '<x>' })).status, 400);
+
+  const like = (g, on = true) => call(comments.POST, 'POST', '/api/comments', { action: 'like', post: 300, id: top.id, guest: G(g), on });
+  assert.equal((await like('d')).body.likes, 1);
+  assert.equal((await like('d')).body.likes, 1, 'once per guest');
+  assert.equal((await like('e')).body.likes, 2);
+  assert.equal((await like('e', false)).body.likes, 1);
+  assert.equal((await like('e', false)).body.likes, 1, 'taking back twice does not go below');
+  assert.equal((await call(comments.POST, 'POST', '/api/comments', { action: 'nope', post: 300, guest: G('d') })).status, 400);
+  let list = (await call(comments.GET, 'GET', '/api/comments?post=300')).body.comments;
+  assert.equal(list.find((c) => c.id === top.id).likes, 1);
+  assert.equal(list.find((c) => c.id === reply.body.comment.id).likes, undefined);
+  assert.equal((await call(engage.GET, 'GET', '/api/engage?ids=300')).body[300].c, 3);
+
+  // Reports: the same reader counts once; REPORT_HIDE different readers hide it (and it leaves the count).
+  const report = (g) => call(comments.POST, 'POST', '/api/comments', { action: 'report', post: 300, id: reply.body.comment.id, guest: G(g) });
+  assert.equal((await report('f')).body.hidden, false);
+  assert.equal((await report('f')).body.hidden, false);
+  assert.equal((await report('g')).body.hidden, false);
+  assert.equal((await report('h')).body.hidden, true);
+  list = (await call(comments.GET, 'GET', '/api/comments?post=300')).body.comments;
+  assert.equal(list.some((c) => c.id === reply.body.comment.id), false, 'hidden from readers');
+  assert.equal((await call(engage.GET, 'GET', '/api/engage?ids=300')).body[300].c, 2);
+
+  // Deleting a liked comment drops its likes too; the count stays right.
+  assert.equal((await call(comments.DELETE, 'DELETE', `/api/comments?post=300&id=${top.id}`, { guest: G('a') })).status, 200);
+  assert.equal((await call(engage.GET, 'GET', '/api/engage?ids=300')).body[300].c, 1);
+  const { redis } = await import('../api/_lib.js');
+  const [likes, recent] = await redis(['HGET', 'cl:300', top.id], ['LRANGE', 'c:recent', '0', '-1']);
+  assert.equal(likes, null);
+  assert.equal(recent.some((r) => JSON.parse(r).id === top.id), false, 'gone from the recent list');
+  // The hidden one, deleted by the admin, isn't taken off the count twice.
+  assert.equal((await call(comments.DELETE, 'DELETE', `/api/comments?post=300&id=${reply.body.comment.id}`, {}, { authorization: 'Bearer admin-secret' })).status, 200);
+  assert.equal((await call(engage.GET, 'GET', '/api/engage?ids=300')).body[300].c, 1);
 });
 
 test('reactions count once per guest and show up in engage', async () => {
@@ -140,7 +187,72 @@ test('views per day and the stats page', async () => {
   assert.deepEqual(mine(s.body.top.today), [{ id: 501, views: 2 }, { id: 502, views: 1 }], 'most viewed first');
   assert.deepEqual(mine(s.body.top.week), mine(s.body.top.today));
   assert.ok(s.body.top.all.some((t) => t.id === 501 && t.views === 2));
-  assert.ok(s.body.top.today.length <= 8);
+  assert.ok(s.body.top.today.length <= 10);
+});
+
+test('admin: the owner only; visits by hour and source; moderate reported comments', async () => {
+  const auth = { authorization: 'Bearer admin-secret' };
+  assert.equal((await call(admin.GET, 'GET', '/api/admin')).status, 401);
+  assert.equal((await call(admin.GET, 'GET', '/api/admin', null, { authorization: 'Bearer admin-secreT' })).status, 401);
+  // Guessing: refused for an hour after ten wrong tries from one address.
+  let last;
+  for (let i = 0; i < 11; i++) last = await admin.GET(new Request('https://site.test/api/admin', { headers: { authorization: 'Bearer x', 'x-forwarded-for': '9.9.9.9' } }));
+  assert.equal(last.status, 429);
+
+  await call(live.POST, 'POST', '/api/live', { guest: 'guest-adm1aaaaaaaaaaaaaa', view: true, ref: 'https://t.me/dlmehr' });
+  await call(live.POST, 'POST', '/api/live', { guest: 'guest-adm2aaaaaaaaaaaaaa', view: true, ref: 'android-app://org.telegram.messenger/' });
+  await call(live.POST, 'POST', '/api/live', { guest: 'guest-adm3aaaaaaaaaaaaaa', view: true });
+  await call(live.POST, 'POST', '/api/live', { guest: 'guest-adm3aaaaaaaaaaaaaa', view: true, ref: 'https://t.me/x' }); // not a new visit
+
+  const c = (await call(comments.POST, 'POST', '/api/comments', { post: 400, guest: 'guest-adm1aaaaaaaaaaaaaa', text: 'نظر بد' })).body.comment;
+  await call(comments.POST, 'POST', '/api/comments', { action: 'report', post: 400, id: c.id, guest: 'guest-adm2aaaaaaaaaaaaaa' });
+
+  const d = (await call(admin.GET, 'GET', '/api/admin', null, auth)).body;
+  assert.equal(d.hours.today.length, 24);
+  assert.ok(d.hours.today.reduce((a, b) => a + b, 0) >= 3);
+  const src = Object.fromEntries(d.sources.map((x) => [x.source, x.visits]));
+  assert.equal(src.telegram, 2);
+  assert.ok(src.direct >= 1);
+  const r = d.reports.find((x) => x.id === c.id);
+  assert.deepEqual({ post: r.post, reports: r.reports, hidden: r.hidden, text: r.comment.text }, { post: 400, reports: 1, hidden: false, text: 'نظر بد' });
+  assert.equal(d.recent[0].id, c.id);
+  assert.equal(d.recent[0].post, 400);
+
+  const act = (action) => call(admin.POST, 'POST', '/api/admin', { action, post: 400, id: c.id }, auth);
+  assert.equal((await act('hide')).status, 200);
+  assert.equal((await call(comments.GET, 'GET', '/api/comments?post=400')).body.comments.length, 0);
+  assert.equal((await act('unhide')).status, 200);
+  assert.equal((await call(comments.GET, 'GET', '/api/comments?post=400')).body.comments.length, 1);
+  assert.equal((await call(admin.GET, 'GET', '/api/admin', null, auth)).body.reports.some((x) => x.id === c.id), false, 'shown again: reports forgotten');
+  assert.equal((await act('nope')).status, 400);
+  assert.equal((await act('delete')).status, 200);
+  assert.equal((await call(engage.GET, 'GET', '/api/engage?ids=400')).body[400], undefined);
+});
+
+test('the week\'s most read as RSS, most viewed first, escaped', async () => {
+  for (const g of ['guest-rss1aaaaaaaaaaaaaa', 'guest-rss2aaaaaaaaaaaaaa']) await call(live.POST, 'POST', '/api/live', { guest: g, post: 701, view: true });
+  await call(live.POST, 'POST', '/api/live', { guest: 'guest-rss1aaaaaaaaaaaaaa', post: 702, view: true });
+  const real = globalThis.fetch;
+  globalThis.fetch = async (url) => {
+    const id = String(url).match(/\/p\/(\d+)\/card\.json/)?.[1];
+    if (id === '701') return Response.json({ id: 701, title: 'اول <b>', date: '2026-11-10T10:00:00Z', tag: 'رباتیک', body: ['متن & بیشتر'], cover: '/api/img/?u=x&w=800' });
+    if (id === '702') return Response.json({ id: 702, title: 'دوم', date: '2026-11-10T09:00:00Z', body: [] , why: 'چون مهم است' });
+    return new Response(null, { status: 404 });
+  };
+  try {
+    const res = await toprss.GET(new Request('https://site.test/api/toprss/'));
+    assert.equal(res.status, 200);
+    assert.match(res.headers.get('content-type'), /rss\+xml/);
+    assert.match(res.headers.get('cache-control'), /s-maxage=3600/);
+    const body = await res.text();
+    assert.ok(body.indexOf('اول &lt;b&gt;') > 0 && body.indexOf('اول &lt;b&gt;') < body.indexOf('<title>دوم'), 'most viewed first, escaped');
+    assert.match(body, /متن &amp; بیشتر/);
+    assert.match(body, /<media:thumbnail url="https:\/\/site\.test\/api\/img\/\?u=x&amp;w=800"\/>/);
+    assert.match(body, /چون مهم است/);
+    assert.doesNotMatch(body, /<link>[^<]*\/p\/7\d\d\/<\/link>[^]*<link>[^<]*\/p\/9\d\d\//, 'only stories whose card exists');
+  } finally {
+    globalThis.fetch = real;
+  }
 });
 
 test('chat: post, list, limits', async () => {

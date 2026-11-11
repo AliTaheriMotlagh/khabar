@@ -23,7 +23,7 @@ const posts = Object.fromEntries(
 function timeline(file) {
   const tl = html(file).match(/<ol class="tl" data-tl>([\s\S]*?)<\/ol>\s*(?:<nav|<\/section)/)?.[1] ?? '';
   const rows = [];
-  for (const m of tl.matchAll(/<li class="tl-day" data-day="([\d-]+)">[\s\S]*?<\/li>|<li class="tl-item" data-id="(\d+)" data-kind="(\w+)">\s*<span class="tl-dot"[^>]*><\/span>\s*<time class="tl-time" datetime="([^"]+)"[^>]*>([^<]*)<\/time>/g)) {
+  for (const m of tl.matchAll(/<li class="tl-day" data-day="([\d-]+)">[\s\S]*?<\/li>|<li class="tl-item" data-id="(\d+)" data-kind="(\w+)"[^>]*>\s*<span class="tl-dot"[^>]*><\/span>\s*<time class="tl-time" datetime="([^"]+)"[^>]*>([^<]*)<\/time>/g)) {
     if (m[1]) rows.push({ day: m[1], count: m[0].match(/<small data-num>([^<]+) خبر<\/small>/)?.[1] ?? null });
     else rows.push({ id: Number(m[2]), kind: m[3], date: m[4], time: m[5] });
   }

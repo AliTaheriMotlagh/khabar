@@ -1,0 +1,26 @@
+---
+// The player at the bottom while something is read aloud: on a story (src/scripts/reader.ts, steps are paragraphs) and
+// for today's playlist on the home page (src/scripts/playlist.ts, steps are stories, with the one playing named).
+// Media controls keep their left-to-right sense in this right-to-left site.
+import Icon from './Icon.astro';
+interface Props { of: 'story' | 'playlist' }
+const { of } = Astro.props;
+const step = of === 'story' ? 'بند' : 'خبر';
+const attrs = of === 'story' ? { 'data-listen-bar': '' } : { 'data-playlist-bar': '' };
+---
+<div class="listen-bar" {...attrs} role="region" aria-label={of === 'story' ? 'پخش صدای خبر' : 'پخش خبرهای امروز'} hidden>
+  {of === 'playlist' && <a class="lb-now" data-lb-now href="#"></a>}
+  <div class="lb-track" data-lb-track dir="ltr" aria-hidden="true"></div>
+  <div class="lb-row">
+    <span class="lb-pos" data-lb-pos aria-live="polite"></span>
+    <div class="lb-ctl" dir="ltr">
+      <button type="button" data-lb="prev" aria-label={`${step} قبلی`} title={`${step} قبلی`}><Icon name="skip-back" /></button>
+      <button type="button" data-lb="back" aria-label="۱۰ ثانیه عقب" title="۱۰ ثانیه عقب"><Icon name="back10" /></button>
+      <button type="button" class="lb-main" data-lb="toggle" aria-label="مکث"><Icon name="play" class="when-paused" /><Icon name="pause" class="when-playing" /></button>
+      <button type="button" data-lb="fwd" aria-label="۱۰ ثانیه جلو" title="۱۰ ثانیه جلو"><Icon name="fwd10" /></button>
+      <button type="button" data-lb="next" aria-label={`${step} بعدی`} title={`${step} بعدی`}><Icon name="skip-fwd" /></button>
+    </div>
+    <button class="lb-rate rate" type="button" data-rate aria-label="سرعت خواندن" title="سرعت خواندن">۱×</button>
+    <button type="button" class="lb-x" data-lb="stop" aria-label="توقف و بستن" title="توقف"><Icon name="x" /></button>
+  </div>
+</div>

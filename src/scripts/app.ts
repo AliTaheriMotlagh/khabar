@@ -8,6 +8,9 @@ import { initPeek, peek } from './peek';
 import { initReader, readerProgress, stepSize, toggleFocus } from './reader';
 import { initSocial, loadEngage } from './social';
 import { initVoiceOffer } from './voice-offer';
+import { applyFollowFilter, initFollow } from './follow';
+import { initNotify } from './notify';
+import { initPlaylist } from './playlist';
 
 export { getSaved, getHistory, rowHtml, store } from './core';
 
@@ -50,6 +53,8 @@ function syncForm() {
 const storiesChanged = () => (renderRail(), document.dispatchEvent(new Event('stories-changed')));
 form?.addEventListener('input', (e) => {
   const t = e.target as HTMLInputElement;
+  // Other controls in the sheet (notifications: src/scripts/notify.ts) keep their own state.
+  if (!(t.name in DEFAULTS)) return;
   saveSettings({ [t.name]: t.value });
   if (t.name === 'story' || t.name === 'order') storiesChanged();
 });
@@ -230,6 +235,7 @@ async function loadMore(link: HTMLAnchorElement) {
     renderDates();
     renderSaved();
     markNew();
+    applyFollowFilter();
     watchMedia(tl);
     loadEngage(tl);
   } catch {
@@ -369,6 +375,9 @@ if (article) {
 }
 markNew();
 renderRail();
+initFollow();
+initNotify();
+initPlaylist();
 watchMedia();
 initSocial();
 initPeek();

@@ -30,7 +30,7 @@ import Icon from '../../components/Icon.astro';
     </section>
 
     <section class="st-section">
-      <h2 class="section-title">پربازدیدترین خبرها</h2>
+      <h2 class="section-title with-link">پربازدیدترین خبرها <a href={`${import.meta.env.BASE_URL.replace(/\/$/, '')}/week/`}>همه‌ی هفته با جزئیات</a></h2>
       <div class="seg" role="radiogroup" aria-label="بازه" data-st-range>
         <label><input type="radio" name="st-range" value="today" checked /><span>امروز</span></label>
         <label><input type="radio" name="st-range" value="week" /><span>این هفته</span></label>

@@ -6,6 +6,8 @@ import Sidebar from '../components/Sidebar.astro';
 import Icon from '../components/Icon.astro';
 import TodayRail from '../components/TodayRail.astro';
 import DailyBrief from '../components/DailyBrief.astro';
+import NotifyAsk from '../components/NotifyAsk.astro';
+import TodayPlaylist from '../components/TodayPlaylist.astro';
 import { SITE } from '../site';
 import { getFeed, latestDigest, url } from '../lib/posts';
 
@@ -29,7 +31,9 @@ const next = posts.length > SITE.pageSize ? url('page/2/') : null;
               <Lead post={lead} />
               <DailyBrief />
             </div>
-            <Timeline posts={rest} all={posts} nextHref={next} />
+            <TodayPlaylist />
+            <NotifyAsk />
+            <Timeline posts={rest} all={posts} nextHref={next} filter />
           </div>
           <Sidebar />
         </div>

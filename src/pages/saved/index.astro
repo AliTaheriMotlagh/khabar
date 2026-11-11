@@ -1,10 +1,24 @@
 ---
+// Saved stories (src/scripts/saved.ts): kept on this device and cached for offline reading; their sound can be kept
+// too, for listening without internet.
 import Base from '../../layouts/Base.astro';
 import Icon from '../../components/Icon.astro';
 ---
 <Base title="ذخیره‌شده‌ها" noindex>
   <div class="container narrow">
     <header class="page-head"><h1>ذخیره‌شده‌ها</h1><p>خبرهایی که برای بعد نگه داشته‌اید — روی همین دستگاه، و حتی آفلاین.</p></header>
+    <section class="oa" data-oa hidden aria-labelledby="oa-title">
+      <span class="oa-icon" aria-hidden="true"><Icon name="headphones" /></span>
+      <div class="oa-main">
+        <b id="oa-title">گوش دادن بدون اینترنت</b>
+        <small data-oa-note></small>
+        <div class="voice-progress" data-oa-progress hidden><progress max="100" value="0"></progress><small data-oa-pct></small></div>
+        <div class="oa-actions" data-oa-actions hidden>
+          <button class="btn sm primary" type="button" data-oa-keep><Icon name="download" /> آماده کردن صدای همه</button>
+          <button class="btn sm" type="button" data-oa-drop hidden>پاک کردن صداها</button>
+        </div>
+      </div>
+    </section>
     <ul class="row-list" data-saved-list></ul>
     <div class="empty" data-saved-empty hidden>
       <Icon name="bookmark" />
@@ -13,14 +27,6 @@ import Icon from '../../components/Icon.astro';
   </div>
 </Base>
 <script>
-  import { getSaved, rowHtml } from '../../scripts/app';
-  const list = document.querySelector('[data-saved-list]')!;
-  const empty = document.querySelector<HTMLElement>('[data-saved-empty]')!;
-  function render() {
-    const items = getSaved();
-    empty.hidden = items.length > 0;
-    list.innerHTML = items.map((s) => rowHtml(s, true)).join('');
-  }
-  render();
-  document.addEventListener('saved-change', render);
+  import { initSaved } from '../../scripts/saved';
+  initSaved();
 </script>
