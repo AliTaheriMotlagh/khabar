@@ -2,7 +2,7 @@
 import { test } from 'node:test';
 import assert from 'node:assert/strict';
 
-const media = await import('../api/media.js');
+const media = await import('../server/media.js');
 
 // Same shape as the album in pipeline/tests/test_pipeline.py, plus a video Telegram won't play on the web.
 const EMBED = `
@@ -56,7 +56,7 @@ test('redirects to the current URL, cached; 404 and 400 otherwise', async () => 
 });
 
 test('/api/img relays pictures from the channel CDNs only, cached for good', async () => {
-  const img = await import('../api/img.js');
+  const img = await import('../server/img.js');
   const real = globalThis.fetch;
   const asked = [];
   const JPEG = new Uint8Array([0xff, 0xd8, 0xff, 1, 2, 3]);

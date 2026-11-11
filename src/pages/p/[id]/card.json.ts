@@ -1,4 +1,4 @@
-// Small per-story JSON behind the long-press preview (src/scripts/peek.ts), the cloud voice (api/tts.js) and the
+// Small per-story JSON behind the long-press preview (src/scripts/peek.ts), the cloud voice (server/tts.js) and the
 // story's video (src/scripts/video.ts: `video`, by index into the spoken lines).
 import type { APIRoute } from 'astro';
 import { faNum, getPosts, picture, videoPlan, whyLabel, type Post } from '../../../lib/posts';

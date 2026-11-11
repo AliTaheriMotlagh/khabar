@@ -55,7 +55,20 @@ that came after the newest crawl. Needs `GITHUB_DISPATCH_TOKEN` (above) and `WAT
 in Vercel; 501 without them. No Redis. Keep the `schedule:` block as a fallback: runs never overlap, and one with
 nothing new takes well under a minute.
 
-**Moderation:** delete a comment with
+**Moderation:** `/admin/` with `ADMIN_TOKEN` (reported and recent comments, visits by hour, traffic sources), or
 `curl -X DELETE -H "Authorization: Bearer $ADMIN_TOKEN" "https://khabar-ai.vercel.app/api/comments/?post=<post id>&id=<comment id>"`.
+
+**Notifications:** `node scripts/vapid.mjs` prints `VAPID_PUBLIC_KEY`, `VAPID_PRIVATE_KEY`, `VAPID_SUBJECT` and
+`PUSH_SECRET` for Vercel; put the same `PUSH_SECRET` in GitHub → Settings → Secrets → Actions.
+
+**Vercel limits (Hobby):** the whole API is one function (`api/router.js` → `server/<route>.js`) — a deployment with
+more than 12 fails. Every data commit is a new deployment of the whole site (~200 MB), and Deployment Storage is
+10 GB; past it Vercel blocks deploys. The workflow's `prune` job deletes all but the live deployment and the newest 3:
+1. Create a token at vercel.com/account/tokens, scoped to the team the project is in.
+2. GitHub → Settings → Secrets → Actions: `VERCEL_TOKEN`; Variables: `VERCEL_TEAM_ID` (the `orgId` in
+   `.vercel/project.json` after `vercel link`, `team_…`).
+3. As a backstop, Vercel → Project → Settings → Build and Deployment → Deployment Retention Policy: the shortest periods.
+
+Locally: `DRY_RUN=1 VERCEL_TOKEN=… node scripts/vercel-prune.mjs` lists what it would delete.
 
 Branding lives in `src/site.ts`; crawler settings (channel, pages per run, …) in `pipeline/config.py`.

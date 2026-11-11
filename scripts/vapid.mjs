@@ -1,4 +1,4 @@
-// Makes a VAPID key pair for notifications (api/push.js). Run once: node scripts/vapid.mjs
+// Makes a VAPID key pair for notifications (server/push.js). Run once: node scripts/vapid.mjs
 // Then in Vercel → Settings → Environment Variables: VAPID_PUBLIC_KEY, VAPID_PRIVATE_KEY, VAPID_SUBJECT (mailto: or
 // https: contact), PUSH_SECRET (any long random string); and the same PUSH_SECRET as a GitHub Actions secret, which the
 // site workflow uses to announce new stories (scripts/notify.mjs). Keep the private key and the secret private.

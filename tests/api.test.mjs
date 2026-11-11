@@ -4,16 +4,16 @@ import assert from 'node:assert/strict';
 
 process.env.KHABAR_MEMORY_STORE = '1';
 process.env.ADMIN_TOKEN = 'admin-secret';
-const comments = await import('../api/comments.js');
-const react = await import('../api/react.js');
-const engage = await import('../api/engage.js');
-const live = await import('../api/live.js');
-const chat = await import('../api/chat.js');
-const leaders = await import('../api/leaders.js');
-const stats = await import('../api/stats.js');
-const admin = await import('../api/admin.js');
-const toprss = await import('../api/toprss.js');
-const { _memory } = await import('../api/_lib.js');
+const comments = await import('../server/comments.js');
+const react = await import('../server/react.js');
+const engage = await import('../server/engage.js');
+const live = await import('../server/live.js');
+const chat = await import('../server/chat.js');
+const leaders = await import('../server/leaders.js');
+const stats = await import('../server/stats.js');
+const admin = await import('../server/admin.js');
+const toprss = await import('../server/toprss.js');
+const { _memory } = await import('../server/_lib.js');
 
 let ip = 0;
 const req = (method, path, body, headers = {}) =>
@@ -103,7 +103,7 @@ test('comments: replies one level deep, likes once per guest, reports hide, dele
   // Deleting a liked comment drops its likes too; the count stays right.
   assert.equal((await call(comments.DELETE, 'DELETE', `/api/comments?post=300&id=${top.id}`, { guest: G('a') })).status, 200);
   assert.equal((await call(engage.GET, 'GET', '/api/engage?ids=300')).body[300].c, 1);
-  const { redis } = await import('../api/_lib.js');
+  const { redis } = await import('../server/_lib.js');
   const [likes, recent] = await redis(['HGET', 'cl:300', top.id], ['LRANGE', 'c:recent', '0', '-1']);
   assert.equal(likes, null);
   assert.equal(recent.some((r) => JSON.parse(r).id === top.id), false, 'gone from the recent list');
@@ -148,7 +148,7 @@ test('live presence, visits and the leaderboard', async () => {
   assert.equal((await call(engage.GET, 'GET', '/api/engage?ids=11,12')).body[11].v, 2);
 
   // Posts read before the 24-hour rule start from the readers who opened them, not the old page-load counter.
-  const lib = await import('../api/_lib.js');
+  const lib = await import('../server/_lib.js');
   await lib.redis(['SADD', 'v:40', 'r1'], ['SADD', 'v:40', 'r2'], ['HINCRBY', 'h:views', '40', '57']);
   assert.equal((await call(engage.GET, 'GET', '/api/engage?ids=40')).body[40].v, 2);
   assert.equal((await call(live.POST, 'POST', '/api/live', { guest: B, post: 40, view: true })).body.views, 3);
@@ -289,11 +289,11 @@ test('CORS preflight', async () => {
 });
 
 test('sync: starts one crawl, not while one runs or right after one', async () => {
-  const off = await import('../api/sync.js?off');
+  const off = await import('../server/sync.js?off');
   assert.equal((await call(off.GET, 'GET', '/api/sync')).status, 501, 'no token: the button stays hidden');
 
   process.env.GITHUB_DISPATCH_TOKEN = 'gh-token';
-  const sync = await import('../api/sync.js?on');
+  const sync = await import('../server/sync.js?on');
   const realFetch = globalThis.fetch;
   let runs = [];
   const dispatched = [];
@@ -330,12 +330,12 @@ test('sync: starts one crawl, not while one runs or right after one', async () =
 });
 
 test('watch: a crawl once the newest post has its comment (or after a grace), and for a late comment', async () => {
-  const off = await import('../api/watch.js?off');
+  const off = await import('../server/watch.js?off');
   assert.equal((await call(off.GET, 'GET', '/api/watch')).status, 501, 'not configured');
 
   process.env.GITHUB_DISPATCH_TOKEN = 'gh-token';
   process.env.WATCH_SECRET = 'watch-secret';
-  const watch = await import('../api/watch.js?on');
+  const watch = await import('../server/watch.js?on');
   const realFetch = globalThis.fetch;
   const ago = (s) => new Date(Date.now() - s * 1000).toISOString();
   const post = (id, at) =>

@@ -3,8 +3,12 @@
   "framework": "astro",
   "buildCommand": "npm run build",
   "outputDirectory": "dist",
+  "ignoreCommand": "git diff --quiet HEAD^ HEAD -- . ':(exclude)*.md' ':(exclude).github' ':(exclude)tests' ':(exclude)pipeline' ':(exclude)scripts'",
   "trailingSlash": true,
-  "rewrites": [{ "source": "/rss/top.xml", "destination": "/api/toprss/" }],
+  "rewrites": [
+    { "source": "/rss/top.xml", "destination": "/api/router/?route=toprss" },
+    { "source": "/api/:route([a-z][a-z-]*)/", "destination": "/api/router/?route=:route" }
+  ],
   "headers": [
     {
       "source": "/(.*)",

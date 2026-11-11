@@ -1,4 +1,4 @@
-// Announces new stories to readers with notifications on (api/push.js), from the site workflow after a crawl brought
+// Announces new stories to readers with notifications on (server/push.js), from the site workflow after a crawl brought
 // news. Waits until the live site serves the new build (its recent.json lists LATEST), so a tap on the notification
 // never lands on a page that isn't there yet; gives up quietly after 10 minutes — the next run announces them then.
 // The server announces each post once, so sending a post twice (or from a re-run) does no harm.

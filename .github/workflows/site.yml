@@ -139,6 +139,26 @@ jobs:
           SITE: ${{ vars.API_URL || 'https://khabar-ai.vercel.app' }}
           LATEST: ${{ needs.build.outputs.latest }}
 
+  # Every data commit makes a new ~200 MB Vercel deployment, and the Hobby plan has 10 GB of Deployment Storage (past
+  # it, deploys are blocked): delete the old ones once the new one is live (after notify, which waits for it). Keeps
+  # the live deployment and the newest few (scripts/vercel-prune.mjs). Off (a no-op) without the VERCEL_TOKEN secret.
+  prune:
+    needs: [build, notify]
+    if: always() && needs.build.outputs.deploy == 'true'
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    continue-on-error: true
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          sparse-checkout: scripts
+      - run: node scripts/vercel-prune.mjs
+        env:
+          VERCEL_TOKEN: ${{ secrets.VERCEL_TOKEN }}
+          VERCEL_TEAM_ID: ${{ vars.VERCEL_TEAM_ID }}
+          VERCEL_PROJECT_ID: ${{ vars.VERCEL_PROJECT_ID || 'khabar-ai' }}
+          SITE: ${{ vars.API_URL || 'https://khabar-ai.vercel.app' }}
+
   deploy:
     needs: build
     if: needs.build.outputs.deploy == 'true'

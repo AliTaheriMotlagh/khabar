@@ -8,20 +8,23 @@ process.env.KHABAR_MEMORY_STORE = '1';
 const ROOT = path.resolve('dist');
 const PORT = Number(process.env.PORT || 4322);
 const TYPES = { '.html': 'text/html; charset=utf-8', '.css': 'text/css', '.js': 'text/javascript', '.json': 'application/json', '.svg': 'image/svg+xml', '.png': 'image/png', '.xml': 'application/xml', '.webmanifest': 'application/manifest+json', '.txt': 'text/plain', '.woff2': 'font/woff2', '.pf_meta': 'application/octet-stream' };
-const routes = {};
-for (const f of fs.readdirSync('api').filter((f) => f.endsWith('.js') && !f.startsWith('_'))) routes[f.slice(0, -3)] = await import(path.resolve('api', f));
-
-// vercel.json's rewrites (e.g. /rss/top.xml → /api/toprss/), exact paths only.
-const rewrites = new Map((JSON.parse(fs.readFileSync('vercel.json', 'utf8')).rewrites ?? []).map((r) => [r.source, r.destination]));
+// The same single function as on Vercel (api/router.js → server/<route>.js), and vercel.json's exact-path rewrites
+// (e.g. /rss/top.xml); /api/<route>/ goes to the router as is.
+const router = await import(path.resolve('api', 'router.js'));
+const rewrites = new Map((JSON.parse(fs.readFileSync('vercel.json', 'utf8')).rewrites ?? []).filter((r) => !r.source.includes(':')).map((r) => [r.source, r.destination]));
 
 http
   .createServer(async (req, res) => {
-    const url = new URL(req.url, `http://localhost:${PORT}`);
-    if (rewrites.has(url.pathname)) url.pathname = rewrites.get(url.pathname);
+    let url = new URL(req.url, `http://localhost:${PORT}`);
+    if (rewrites.has(url.pathname)) {
+      const to = new URL(rewrites.get(url.pathname), url);
+      for (const [k, v] of url.searchParams) to.searchParams.append(k, v);
+      url = to;
+    }
     const api = url.pathname.match(/^\/api\/([\w-]+)\/?$/);
     if (api) {
-      const handler = routes[api[1]]?.[req.method];
-      if (!handler) return res.writeHead(404).end();
+      const handler = router[req.method];
+      if (!handler) return res.writeHead(405).end();
       const chunks = [];
       for await (const c of req) chunks.push(c);
       const body = chunks.length ? Buffer.concat(chunks) : undefined;

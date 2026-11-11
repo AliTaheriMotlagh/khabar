@@ -1,4 +1,4 @@
-// Shared by the templates and the browser script; keys must match REACTIONS in api/_lib.js.
+// Shared by the templates and the browser script; keys must match REACTIONS in server/_lib.js.
 export const REACTIONS = [
   { key: 'like', emoji: '👍', label: 'پسندیدم' },
   { key: 'love', emoji: '❤️', label: 'عالی بود' },

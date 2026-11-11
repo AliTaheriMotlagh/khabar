@@ -97,18 +97,18 @@ export const fresh = (src: string | null | undefined) => (src ? freshUrls.get(sr
 // Most readers are in Iran, where Telegram's and X's CDNs are filtered, and where a browser's connection to other
 // foreign hosts stalls once it carries several requests at a time (measured: wsrv.nl and images.weserv.nl, on
 // Cloudflare, return nothing to 9 multiplexed requests; the site's own Vercel domain serves them in 2 s). So a picture
-// from those CDNs comes through the site itself first (api/img.js: resized to WebP via wsrv.nl server-side, CDN-cached);
+// from those CDNs comes through the site itself first (server/img.js: resized to WebP via wsrv.nl server-side, CDN-cached);
 // then through wsrv.nl directly; then from the original address (fine with a VPN). Pictures from other sites (link
 // previews) go wsrv.nl, then original. src/scripts/media.ts walks the list (data-alt) and moves on when an address
 // fails or just hangs. A Telegram picture goes by its post and index: always the current signed URL, and the same
 // address forever, so caches keep serving it. Social cards and JSON-LD keep the original URLs (read by crawlers abroad);
 // RSS goes through the relay (feedPicture).
 const PROXY = 'https://wsrv.nl/';
-const WIDTH = { small: 320, medium: 800, large: 1400 }; // api/img.js accepts exactly these
+const WIDTH = { small: 320, medium: 800, large: 1400 }; // server/img.js accepts exactly these
 const RELAYED = /^https:\/\/(pbs\.twimg\.com|[\w-]+\.telesco\.pe|i\.ytimg\.com)\//; // and only these hosts
 const absolute = (u: string) => (u.startsWith('/') ? `${SITE.api || SITE.url}${u}` : u);
 const viaProxy = (u: string, size: keyof typeof WIDTH) => `${PROXY}?url=${encodeURIComponent(absolute(u))}&w=${WIDTH[size]}&we&output=webp&q=80`;
-/** The site's own address for a picture from the channel's CDNs (api/img.js), or null for any other picture. */
+/** The site's own address for a picture from the channel's CDNs (server/img.js), or null for any other picture. */
 function relayed(raw: string | null | undefined, src: string, size: keyof typeof WIDTH) {
   const tg = fresh(raw);
   const w = `&w=${WIDTH[size]}`;

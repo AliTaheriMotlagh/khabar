@@ -1,4 +1,4 @@
-// Notifications of new stories (api/push.js, handled by public/sw.js). The reader turns them on in the settings sheet,
+// Notifications of new stories (server/push.js, handled by public/sw.js). The reader turns them on in the settings sheet,
 // or from a card on the home page that only shows once they've come back a few times — never a permission prompt on
 // arrival. Three kinds: every story, the topics they follow (src/scripts/follow.ts), or only the daily summary. The
 // browser's subscription is the truth; `push` in storage remembers the kind. Hidden where the browser can't do it, or

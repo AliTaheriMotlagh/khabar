@@ -111,7 +111,7 @@ self.addEventListener('fetch', (e) => {
   if (req.destination === 'image' && IMAGE_HOSTS.test(u.hostname)) e.respondWith(cacheFirst(req, IMAGES, 400).catch(() => Response.error()));
 });
 
-// ---------- notifications (api/push.js, src/scripts/notify.ts) ----------
+// ---------- notifications (server/push.js, src/scripts/notify.ts) ----------
 self.addEventListener('push', (e) => {
   let m = {};
   try {

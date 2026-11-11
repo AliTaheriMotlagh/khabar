@@ -1,4 +1,4 @@
-// Notifications: encryption against RFC 8291's own example, VAPID signatures, and api/push.js end to end with the push
+// Notifications: encryption against RFC 8291's own example, VAPID signatures, and server/push.js end to end with the push
 // services faked (each message is decrypted the way the browser does). node --test tests/
 import { test } from 'node:test';
 import assert from 'node:assert/strict';
@@ -12,8 +12,8 @@ process.env.VAPID_PRIVATE_KEY = server.getPrivateKey().toString('base64url');
 process.env.VAPID_SUBJECT = 'mailto:test@example.com';
 process.env.PUSH_SECRET = 'push-secret';
 process.env.SITE_URL = 'https://site.test';
-const { b64u, encrypt, validSubscription, vapidHeader } = await import('../api/_push.js');
-const push = await import('../api/push.js');
+const { b64u, encrypt, validSubscription, vapidHeader } = await import('../server/_push.js');
+const push = await import('../server/push.js');
 
 /** A browser: its keys, a subscription, and how it reads a message (RFC 8291, the receiving side). */
 function browser(endpoint) {

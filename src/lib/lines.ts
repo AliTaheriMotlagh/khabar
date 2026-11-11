@@ -1,5 +1,5 @@
 // What «گوش دادن» reads of a story: its text, not its headline. Paragraph k of the story is line k + 1 of its card.json
-// (0 is the headline; api/tts.js voices by that index). A brief's first line repeats its headline and a line that is
+// (0 is the headline; server/tts.js voices by that index). A brief's first line repeats its headline and a line that is
 // only a link isn't worth hearing: both are skipped. A story with no text is read by its headline. Shared by the story
 // page (the text on screen), the today playlist and the offline audio (card.json). No imports.
 

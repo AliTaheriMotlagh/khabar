@@ -149,7 +149,7 @@ async function react(btn: HTMLButtonElement) {
 // A comment can be about a passage the reader highlighted (`quote`, see the selection bar in reader.ts): the passage is
 // shown above it, and marked in the story's text — a tap on either goes to the other.
 // Replies are one level deep (`re`: the comment answered), shown under it oldest first; a reader can like a comment
-// once and report one (enough reports hide it until the site's owner looks: api/comments.js).
+// once and report one (enough reports hide it until the site's owner looks: server/comments.js).
 type Comment = { id: string; name: string; text: string; at: string; quote?: string; re?: string; likes?: number };
 const myComments = () => store.get<string[]>('myComments', []);
 const likedComments = () => store.get<string[]>('likedComments', []);
