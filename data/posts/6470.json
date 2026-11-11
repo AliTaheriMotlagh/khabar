@@ -1,0 +1,67 @@
+{
+ "id": 6470,
+ "url": "https://t.me/dlmehr/6470",
+ "date": "2026-11-11T17:10:32+00:00",
+ "text": "https://fxtwitter.com/aravsrinivas/status/2120506245131977026?a=Vo5ZnrJt6Qi0KZNkKlk&s=52",
+ "forwarded_from": null,
+ "digest": false,
+ "hash": "d016befd9775",
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/aravsrinivas/status/2120506245131977026?a=Vo5ZnrJt6Qi0KZNkKlk&s=52",
+  "site": "🧵 Thread • FxTwitter",
+  "title": "Aravind Srinivas (@AravSrinivas)",
+  "description": "Had a Teammate run on Fable 5.2 for a few hours and build an endless zombie shooter that you can play on your browser. No use of any 3D assets. Just rawdogging it all in code. https://cordon9.pplx.app/",
+  "image": null
+ },
+ "gholam": {
+  "text": "داداش، آرویند سرینیواس مدیرعامل پرپلکسیتی تعریف کرده که ابزار هوش مصنوعی تیمشون (Teammate) رو چند ساعتی روی مدل Fable 5.2 به خط کردن و خروجیش شده یه بازی تیراندازی به زامبی‌ها که مستقیم توی مرورگر اجرا می‌شه. به گفته خودش، برای ساخت این بازی از هیچ فایل یا مدل سه‌بعدی آماده‌ای استفاده نشده و همه‌چیز صفر تا صد از طریق خود کدنویسی پیاده شده. سرینیواس در ادامه‌ش اشاره کرده که برای ساخت و اجرای این فرآیند، تقریباً ۱۰۰ هزار کردیتِ پرپلکسیتی خرج شده است.",
+  "date": "2026-11-11T17:10:53+00:00"
+ },
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/AravSrinivas/status/2120506245131977026",
+   "domain": "x.com",
+   "author": {
+    "name": "Aravind Srinivas",
+    "handle": "AravSrinivas",
+    "avatar": "https://pbs.twimg.com/profile_images/2099903483457703936/U-W6QQk__200x200.jpg"
+   },
+   "text": "Had a Teammate run on Fable 5.2 for a few hours and build an endless zombie shooter that you can play on your browser. No use of any 3D assets. Just rawdogging it all in code. https://cordon9.pplx.app/",
+   "date": 1794403060,
+   "media": [
+    {
+     "type": "video",
+     "src": "https://video.twimg.com/amplify_video/2120506152794382336/vid/avc1/1280x720/TTT4dhsJtEvrRWrB.mp4?tag=29",
+     "poster": "https://pbs.twimg.com/amplify_video_thumb/2120506152794382336/img/9QuPUtiXZ3fk08LS.jpg",
+     "ratio": 0.5625,
+     "duration": 30,
+     "gif": false
+    }
+   ],
+   "links": [
+    "https://cordon9.pplx.app/"
+   ]
+  },
+  {
+   "kind": "link",
+   "url": "https://cordon9.pplx.app/",
+   "domain": "cordon9.pplx.app",
+   "title": "CORDON 9",
+   "description": null,
+   "image": null,
+   "site": "cordon9.pplx.app"
+  }
+ ],
+ "article": {
+  "title": "آرویند سرینیواس مدیرعامل پرپلکسیتی تعریف کرده که ابزار هوش مصنوعی تیمشون (Teammate) رو چند ساعتی روی مدل Fable 5.2 به خط کردن و خروجیش شده یه بازی تیراندازی به زامبی‌ها که مستقیم توی مرورگر اجرا می‌شه",
+  "source_title": "Had a Teammate run on Fable 5.2 for a few hours and build an endless zombie shooter that you can play on your browser. No use of any 3D…",
+  "body": [
+   "داداش، آرویند سرینیواس مدیرعامل پرپلکسیتی تعریف کرده که ابزار هوش مصنوعی تیمشون (Teammate) رو چند ساعتی روی مدل Fable 5.2 به خط کردن و خروجیش شده یه بازی تیراندازی به زامبی‌ها که مستقیم توی مرورگر اجرا می‌شه. به گفته خودش، برای ساخت این بازی از هیچ فایل یا مدل سه‌بعدی آماده‌ای استفاده نشده و همه‌چیز صفر تا صد از طریق خود کدنویسی پیاده شده. سرینیواس در ادامه‌ش اشاره کرده که برای ساخت و اجرای این فرآیند، تقریباً ۱۰۰ هزار کردیتِ پرپلکسیتی خرج شده است."
+  ],
+  "why": null,
+  "tags": []
+ },
+ "updated": "2026-11-11T17:14:25+00:00"
+}
