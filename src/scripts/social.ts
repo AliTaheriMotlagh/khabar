@@ -29,7 +29,7 @@ async function api<T>(path: string, init?: { method?: string; body?: unknown }):
 const slowDown = (e: unknown) => (e as { status?: number }).status === 429;
 
 // ---------- live presence & visits ----------
-type Live = { online: number; chat: string | null; today?: number; total?: number; views?: number };
+type Live = { online: number; chat: string | null; today?: number; total?: number; views?: number; viewsToday?: number };
 const articleId = () => Number($('[data-article]')?.dataset.id) || undefined;
 
 function showLive(d: Live) {
@@ -40,6 +40,12 @@ function showLive(d: Live) {
   if (d.total) $$('[data-site-stats]').forEach((el) => (el.hidden = false));
   const id = articleId();
   if (id && d.views) setViews(id, d.views);
+  // This story's views today, beside its total (when they aren't the same number).
+  const day = $('[data-views-day]');
+  if (day && d.viewsToday && d.viewsToday !== d.views) {
+    day.textContent = ` · ${compact(d.viewsToday)} امروز`;
+    day.hidden = false;
+  }
   const seenChat = store.get<string | null>('chatSeen', null);
   $$('[data-chat-dot]').forEach((el) => (el.hidden = !d.chat || d.chat === seenChat || chatOpen()));
 }
@@ -95,6 +101,8 @@ export async function loadEngage(root: ParentNode = document) {
       paintReactions(id);
       $$(`[data-ccount="${id}"]`).forEach((el) => (el.textContent = d?.c ? fmtNum(d.c) : ''));
       if (d?.v) setViews(Number(id), d.v);
+      // A story with comments loads them now, not only near the comments: some are about passages, marked in the text.
+      if (d?.c && Number(id) === articleId()) loadComments?.();
     }
   } catch {}
 }
@@ -126,19 +134,90 @@ async function react(btn: HTMLButtonElement) {
 }
 
 // ---------- comments ----------
-type Comment = { id: string; name: string; text: string; at: string };
+// A comment can be about a passage the reader highlighted (`quote`, see the selection bar in reader.ts): the passage is
+// shown above it, and marked in the story's text — a tap on either goes to the other.
+type Comment = { id: string; name: string; text: string; at: string; quote?: string };
 const myComments = () => store.get<string[]>('myComments', []);
+let loadComments: (() => void) | undefined;
+const norm = (s: string) => s.replace(/\s+/g, ' ').trim();
+const passages = () => $$('h1, .prose p, .why p, .digest-list li', $('[data-article]') ?? document);
+
+/** Wraps the first place each quote appears in the story (inside one paragraph) in a mark, after removing old marks. */
+function markQuotes(items: Comment[]) {
+  const article = $('[data-article]');
+  if (!article) return;
+  for (const m of $$('mark.c-mark', article)) m.replaceWith(...m.childNodes);
+  article.normalize();
+  const byQuote = new Map<string, number>();
+  for (const c of items) if (c.quote) byQuote.set(norm(c.quote), (byQuote.get(norm(c.quote)) ?? 0) + 1);
+  for (const [quote, n] of byQuote) {
+    for (const block of passages()) {
+      if (wrap(block, quote, n)) break;
+    }
+  }
+}
+
+/** Finds `quote` in the block's text (spaces counted loosely) and wraps it, text node by text node. */
+function wrap(block: Element, quote: string, n: number): boolean {
+  const nodes: Text[] = [];
+  const walker = document.createTreeWalker(block, NodeFilter.SHOW_TEXT);
+  while (walker.nextNode()) nodes.push(walker.currentNode as Text);
+  // The block's text with whitespace runs as one space, and where each of its characters came from.
+  let flat = '';
+  const from: [Text, number][] = [];
+  for (const node of nodes) {
+    const t = node.data;
+    for (let i = 0; i < t.length; i++) {
+      const space = /\s/.test(t[i]);
+      if (space && (flat.endsWith(' ') || !flat)) continue;
+      flat += space ? ' ' : t[i];
+      from.push([node, i]);
+    }
+  }
+  const at = flat.indexOf(quote);
+  if (at < 0 || !quote) return false;
+  const end = at + quote.length - 1;
+  // Each text node's covered part, from its first to its last covered character.
+  const parts = new Map<Text, [number, number]>();
+  for (let k = at; k <= end; k++) {
+    const [node, i] = from[k];
+    const p = parts.get(node);
+    parts.set(node, p ? [p[0], i] : [i, i]);
+  }
+  const label = `${fmtNum(n)} نظر روی این بخش`;
+  for (const [node, [a, b]] of parts) {
+    const range = document.createRange();
+    range.setStart(node, a);
+    range.setEnd(node, b + 1);
+    const mark = document.createElement('mark');
+    mark.className = 'c-mark';
+    mark.dataset.quote = quote;
+    mark.title = label;
+    mark.tabIndex = 0;
+    mark.setAttribute('role', 'button');
+    mark.setAttribute('aria-label', `${label}: رفتن به نظرها`);
+    range.surroundContents(mark);
+  }
+  return true;
+}
+
+const flash = (el: Element) => {
+  el.classList.remove('flash');
+  void (el as HTMLElement).offsetWidth;
+  el.classList.add('flash');
+};
 
 function avatarHtml(name: string) {
   return `<span class="avatar" style="--h:${hue(name)}" aria-hidden="true">${esc(initial(name))}</span>`;
 }
 function commentHtml(c: Comment) {
   const mineC = myComments().includes(c.id);
-  return `<li class="comment${mineC ? ' mine' : ''}" data-cid="${esc(c.id)}">
+  return `<li class="comment${mineC ? ' mine' : ''}" data-cid="${esc(c.id)}"${c.quote ? ` data-cquote="${esc(norm(c.quote))}"` : ''}>
     ${avatarHtml(c.name)}
     <div class="c-body">
       <div class="c-head"><b>${esc(c.name)}</b><time datetime="${esc(c.at)}">${esc(relTime(c.at))}</time>
         ${mineC ? '<button class="c-del" type="button" data-del-comment aria-label="حذف نظر من">حذف</button>' : ''}</div>
+      ${c.quote ? `<button class="c-quote" type="button" data-goto-quote title="دیدن این بخش در متن خبر"><span dir="auto">${esc(c.quote)}</span></button>` : ''}
       <p dir="auto">${esc(c.text)}</p>
     </div>
   </li>`;
@@ -154,23 +233,30 @@ function initComments() {
   const form = $<HTMLFormElement>('[data-comment-form]', box)!;
   const count = $('[data-comments-count]', box)!;
   const nameInput = form.elements.namedItem('name') as HTMLInputElement;
+  const textInput = form.elements.namedItem('text') as HTMLTextAreaElement;
+  const draft = $('[data-comment-quote]', form)!;
   nameInput.value = myName();
   let items: Comment[] = [];
+  let quote = '';
 
   const render = () => {
     list.innerHTML = items.map(commentHtml).join('');
     empty.hidden = items.length > 0;
     count.textContent = items.length ? fmtNum(items.length) : '';
+    markQuotes(items);
   };
-  const load = async () => {
-    try {
-      items = (await api<{ comments: Comment[] }>(`comments?post=${post}`)).comments;
-      render();
-    } catch {
-      off.hidden = false;
-      form.hidden = true;
-    }
-  };
+  let loaded: Promise<void> | null = null;
+  const load = () =>
+    (loaded ??= (async () => {
+      try {
+        items = (await api<{ comments: Comment[] }>(`comments?post=${post}`)).comments;
+        render();
+      } catch {
+        off.hidden = false;
+        form.hidden = true;
+      }
+    })());
+  loadComments = load;
   // Load when the reader gets near the comments (saves a request for quick readers).
   new IntersectionObserver((entries, obs) => {
     if (entries.some((e) => e.isIntersecting)) {
@@ -178,6 +264,37 @@ function initComments() {
       load();
     }
   }, { rootMargin: '600px' }).observe(box);
+
+  const setQuote = (q: string) => {
+    quote = q;
+    draft.hidden = !q;
+    $('[data-comment-quote-text]', draft)!.textContent = q;
+    textInput.placeholder = q ? 'درباره‌ی این بخش چه نظری دارید؟' : 'نظرتان را بنویسید…';
+  };
+  $('[data-comment-quote-x]', draft)?.addEventListener('click', () => setQuote(''));
+  // From the bar over a selection in the story (reader.ts).
+  document.addEventListener('comment-on', (e) => {
+    load();
+    if (form.hidden) return toast('بخش نظرها فعلاً در دسترس نیست');
+    setQuote((e as CustomEvent<string>).detail);
+    form.scrollIntoView({ block: 'center', behavior: 'smooth' });
+    textInput.focus({ preventScroll: true });
+  });
+  // A marked passage in the story: to its comments.
+  $('[data-article]')?.addEventListener('click', (e) => {
+    const mark = (e.target as Element).closest<HTMLElement>('mark.c-mark');
+    if (!mark || getSelection()?.toString()) return;
+    const first = $$<HTMLElement>('[data-cquote]', list).filter((li) => li.dataset.cquote === mark.dataset.quote);
+    if (!first.length) return;
+    first[0].scrollIntoView({ block: 'center', behavior: 'smooth' });
+    first.forEach(flash);
+  });
+  $('[data-article]')?.addEventListener('keydown', (e) => {
+    if ((e.key === 'Enter' || e.key === ' ') && (e.target as Element).matches?.('mark.c-mark')) {
+      e.preventDefault();
+      (e.target as HTMLElement).click();
+    }
+  });
 
   form.addEventListener('submit', async (e) => {
     e.preventDefault();
@@ -188,7 +305,7 @@ function initComments() {
       if (nameInput.value.trim() !== myName()) setMyName(nameInput.value);
       const { comment } = await api<{ comment: Comment | null }>('comments', {
         method: 'POST',
-        body: { post, guest: guest(), name: myName(), text: data.get('text'), website: data.get('website') },
+        body: { post, guest: guest(), name: myName(), text: data.get('text'), website: data.get('website'), ...(quote && { quote }) },
       });
       if (comment) {
         store.set('myComments', [...myComments(), comment.id].slice(-500));
@@ -197,6 +314,7 @@ function initComments() {
         award('comment');
       }
       form.reset();
+      setQuote('');
       nameInput.value = myName();
     } catch (err) {
       toast(slowDown(err) ? 'چند لحظه صبر کنید و دوباره بفرستید' : 'نظر ارسال نشد؛ دوباره امتحان کنید');
@@ -206,6 +324,15 @@ function initComments() {
   });
 
   list.addEventListener('click', async (e) => {
+    const go = (e.target as Element).closest('[data-goto-quote]');
+    if (go) {
+      const q = go.closest<HTMLElement>('[data-cquote]')!.dataset.cquote;
+      const mark = $$<HTMLElement>('mark.c-mark').find((m) => m.dataset.quote === q);
+      if (!mark) return toast('این بخش در متن خبر پیدا نشد؛ شاید متن خبر عوض شده');
+      mark.scrollIntoView({ block: 'center', behavior: 'smooth' });
+      $$('mark.c-mark').filter((m) => m.dataset.quote === q).forEach(flash);
+      return;
+    }
     const del = (e.target as Element).closest('[data-del-comment]');
     if (!del || !confirm('این نظر حذف شود؟')) return;
     const id = del.closest<HTMLElement>('[data-cid]')!.dataset.cid!;

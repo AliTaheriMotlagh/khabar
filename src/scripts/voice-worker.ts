@@ -3,7 +3,8 @@
 // connection resumes where it stopped, a blocked mirror falls through to the next one, and every file is checked
 // against its SHA-256), or loads it on the first paragraph and turns text into WAV, one request at a time.
 // Files are stored by SHA-256 (`keys` + hash), so a file two voices share — the runtime — is downloaded once.
-// Messages in:  { t: 'init', cache, keys, bases, files, config?, sid? } first, then { t: 'download' } · { t: 'load' }
+// Messages in:  { t: 'init', cache, keys, bases, files, config?, sid?, extra? } first (extra: files of the reader's own
+//               model, [{ path, key }] — stored whole under `key`, written to `path` in the runtime's file system), then { t: 'download' } · { t: 'load' }
 //               (the model, ahead of time) · { t: 'say', id, text, urgent } · { t: 'bump', id }
 // Messages out: { t: 'progress', loaded, total } · { t: 'downloaded' } · { t: 'audio', id, wav } · { t: 'dropped', id }
 //               { t: 'fail', msg, id? } (a failed download or model load fails every pending request)
@@ -18,6 +19,8 @@ type Emscripten = {
   HEAPF32: Float32Array;
   _SherpaOnnxOfflineTtsGenerate(tts: number, text: number, sid: number, speed: number): number;
   _SherpaOnnxDestroyOfflineTtsGeneratedAudio(h: number): void;
+  FS_createPath(parent: string, path: string, canRead: boolean, canWrite: boolean): void;
+  FS_createDataFile(parent: string, name: string, data: Uint8Array, canRead: boolean, canWrite: boolean, canOwn: boolean): void;
 };
 declare function importScripts(...urls: string[]): void;
 declare function createOfflineTts(m: unknown, config: unknown): { handle: number };
@@ -40,6 +43,7 @@ let bases: string[] = [];
 let files: Pack[] = [];
 let config: unknown; // sherpa-onnx's OfflineTts config for the model in the package
 let sid = 0; // the speaker, for a model with several
+let extra: { path: string; key: string }[] = [];
 let preferred = 0; // the mirror that served the last file
 const partKey = (f: Pack, k: number) => `${keys}${f.sha256}?part=${k}`;
 const doneKey = (f: Pack) => `${keys}${f.sha256}?done`;
@@ -193,6 +197,14 @@ function load() {
       importScripts(js(main), js(glue));
     });
     M = scope.Module as Emscripten;
+    for (const x of extra) {
+      const hit = await cache.match(x.key);
+      if (!hit) throw new Error('missing');
+      const cut = x.path.lastIndexOf('/');
+      const dir = x.path.slice(0, cut) || '/';
+      if (dir !== '/') M.FS_createPath('/', dir.slice(1), true, true);
+      M.FS_createDataFile(dir, x.path.slice(cut + 1), new Uint8Array(await hit.arrayBuffer()), true, false, true);
+    }
     tts = createOfflineTts(M, config).handle;
     if (!tts) throw new Error('model');
   })();
@@ -267,6 +279,7 @@ scope.onmessage = (e: MessageEvent) => {
     files = m.files;
     config = m.config;
     sid = m.sid ?? 0;
+    extra = m.extra ?? [];
   } else if (m.t === 'download') {
     download().then(
       () => post({ t: 'downloaded' }),

@@ -1,11 +1,12 @@
-// GET    /api/comments?post=ID          → { comments: [{ id, name, text, at }] } newest first
-// POST   /api/comments  { post, guest, name, text, website }   (website is a honeypot: bots fill it)
+// GET    /api/comments?post=ID          → { comments: [{ id, name, text, at, quote? }] } newest first
+// POST   /api/comments  { post, guest, name, text, quote?, website }   (website is a honeypot: bots fill it)
+//        quote: the words of the story the comment is about, highlighted by the reader (one line, up to 300 characters)
 // DELETE /api/comments?post=ID&id=CID  { guest }  — the guest who wrote it, or `Authorization: Bearer ADMIN_TOKEN`
 import { randomUUID } from 'node:crypto';
 import { MAX_COMMENTS, POINTS, award, cleanText, configured, fail, guestId, hash, json, limited, nameCmd, postId, preflight, readBody, redis } from './_lib.js';
 
 const key = (post) => `c:${post}`;
-const publicView = ({ id, name, text, at }) => ({ id, name, text, at });
+const publicView = ({ id, name, text, at, q }) => (q ? { id, name, text, at, quote: q } : { id, name, text, at });
 
 export const OPTIONS = preflight;
 
@@ -27,6 +28,7 @@ export async function POST(request) {
 
   const text = cleanText(body.text, 1000);
   const name = cleanText(body.name, 32).replace(/\n/g, ' ') || 'مهمان';
+  const quote = cleanText(body.quote, 300).replace(/\s+/g, ' ').trim();
   if (text.length < 2) return fail(request, 400, 'too short');
   if ((text.match(/https?:\/\//g) || []).length > 2) return fail(request, 400, 'too many links');
   const gh = hash(guest);
@@ -34,7 +36,7 @@ export async function POST(request) {
     return fail(request, 429, 'slow down');
   }
 
-  const comment = { id: randomUUID().slice(0, 12), name, text, at: new Date().toISOString(), o: gh };
+  const comment = { id: randomUUID().slice(0, 12), name, text, at: new Date().toISOString(), o: gh, ...(quote.length >= 2 && { q: quote }) };
   await redis(
     ['LPUSH', key(post), JSON.stringify(comment)],
     ['LTRIM', key(post), '0', String(MAX_COMMENTS - 1)],

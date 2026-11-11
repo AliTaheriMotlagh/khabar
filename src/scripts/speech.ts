@@ -2,11 +2,14 @@
 // The device's own Persian voice when it has one (some Android phones and desktops); otherwise a Persian neural voice
 // from /api/tts, one cached MP3 per paragraph, when the server has a key; otherwise the voice the reader downloaded
 // to this device (src/scripts/voice.ts), made a sentence at a time while the previous one plays — iPhones and iPads
-// ship no Persian voice at all. A downloaded voice the reader picked in the voice sheet goes before the other two. The audio element keeps playing with the screen locked. start() and resume() must
+// ship no Persian voice at all. A downloaded voice the reader picked in the voice sheet goes before the other two, and so
+// do a voice of the device the reader picked by name (any language) and a speech service they connected themselves
+// (src/scripts/tts-remote.ts). The audio element keeps playing with the screen locked. start() and resume() must
 // run straight from a tap: iOS only lets audio begin inside the gesture, so nothing on that path awaits (the
 // on-device voice first plays a moment of silence in the tap, which unlocks the element for the clips that follow).
 import { SITE } from '../site';
-import { prepareVoice, sentences, voiceClip, voicePreferred, voiceReady, voiceState } from './voice';
+import { remoteAudio, remoteClip, remoteConfig } from './tts-remote';
+import { chosenVoice, prepareVoice, sentences, voiceClip, voicePreferred, voiceReady, voiceState } from './voice';
 
 /** One paragraph to read: `i` is its index in the story's card.json (0 = title, then the body, then "why"). */
 export type Line = { text: string; post: number; i: number };
@@ -17,13 +20,24 @@ const synth = 'speechSynthesis' in window ? speechSynthesis : null;
 synth?.getVoices(); // starts loading the voice list, so it's ready by the first tap
 const isPersian = (s: string) => /[؀-ۿ]/.test(s);
 const voiceFor = (lang: string) => synth?.getVoices().find((v) => v.lang.toLowerCase().replace('_', '-').startsWith(lang));
+/** Every voice of this device and browser, Persian ones first (the voice sheet lists them). */
+export const deviceVoices = () => (synth?.getVoices() ?? []).slice().sort((a, b) => Number(b.lang.startsWith('fa')) - Number(a.lang.startsWith('fa')) || a.lang.localeCompare(b.lang) || a.name.localeCompare(b.name));
+/** The device voice the reader picked by name ('dev:<voiceURI>'), when this device still has it. */
+export const chosenDeviceVoice = () => {
+  const c = chosenVoice();
+  return c.startsWith('dev:') ? synth?.getVoices().find((v) => v.voiceURI === c.slice(4)) : undefined;
+};
+/** The reader picked the speech service they connected. */
+const chosenRemote = () => chosenVoice() === 'remote' && !!remoteConfig();
 const tag = (s: string) => [...s].reduce((h, c) => (h * 33 + c.charCodeAt(0)) >>> 0, 5381).toString(36);
 // The text hash only changes the address (the server reads the text itself), so an edited paragraph isn't served stale.
 const clipUrl = (l: Line) => `${SITE.api}/api/tts/?id=${l.post}&i=${l.i}&v=${tag(l.text)}`;
 /** 50 ms of silent WAV, played inside the tap while the on-device voice makes its first clip. */
 const SILENCE = URL.createObjectURL(new Blob([new Uint8Array([82, 73, 70, 70, 36, 9, 0, 0, 87, 65, 86, 69, 102, 109, 116, 32, 16, 0, 0, 0, 1, 0, 1, 0, 34, 86, 0, 0, 68, 172, 0, 0, 2, 0, 16, 0, 100, 97, 116, 97, 0, 9, 0, 0, ...new Array(2304).fill(0)])], { type: 'audio/wav' }));
 
-export type VoiceSource = 'device' | 'cloud' | 'local';
+export type VoiceSource = 'device' | 'cloud' | 'local' | 'remote';
+/** A voice whose sound the page gets as audio (and can keep). */
+export type Recordable = 'cloud' | 'local' | 'remote';
 let cloudOk = false;
 let checked: Promise<void> | null = null;
 /** Which Persian voice this device has now: its own, the cloud one (/api/tts has a key), the downloaded one, or none.
@@ -45,7 +59,8 @@ export async function persianVoice(): Promise<VoiceSource | null> {
   return hasPersianVoice();
 }
 /** Synchronous answer, once persianVoice() has resolved: safe to use inside a tap. */
-export const hasPersianVoice = (): VoiceSource | null => (voicePreferred() ? 'local' : voiceFor('fa') ? 'device' : cloudOk ? 'cloud' : voiceReady() ? 'local' : null);
+export const hasPersianVoice = (): VoiceSource | null =>
+  chosenRemote() ? 'remote' : chosenDeviceVoice() ? 'device' : voicePreferred() ? 'local' : voiceFor('fa') ? 'device' : cloudOk ? 'cloud' : voiceReady() ? 'local' : null;
 /** The device's or the server's own Persian voice, which a downloaded one may be preferred over. After persianVoice(). */
 export const systemVoice = (): 'device' | 'cloud' | null => (voiceFor('fa') ? 'device' : cloudOk ? 'cloud' : null);
 export const canSpeakPersian = async () => (await persianVoice()) !== null;
@@ -54,11 +69,12 @@ export const getReady = () => hasPersianVoice() === 'local' && prepareVoice();
 
 /** A voice whose sound the page can keep (the story's video, src/scripts/video.ts): the downloaded one or the cloud
  *  one — the device's own voice only plays aloud. After persianVoice(). */
-export const recordableVoice = (): 'cloud' | 'local' | null => (voicePreferred() ? 'local' : cloudOk ? 'cloud' : voiceReady() ? 'local' : null);
+export const recordableVoice = (): Recordable | null => (chosenRemote() ? 'remote' : voicePreferred() ? 'local' : cloudOk ? 'cloud' : voiceReady() ? 'local' : null);
 
 /** One paragraph's sound as audio files (WAV from the downloaded voice, a sentence each; MP3 from the cloud, the whole
  *  paragraph), each with the sentences it says. */
-export async function lineAudio(l: Line, engine: 'cloud' | 'local'): Promise<{ texts: string[]; data: ArrayBuffer }[]> {
+export async function lineAudio(l: Line, engine: Recordable): Promise<{ texts: string[]; data: ArrayBuffer }[]> {
+  if (engine === 'remote') return [{ texts: sentences(l.text), data: await (await remoteAudio(l.text)).arrayBuffer() }];
   if (engine === 'cloud') {
     const res = await fetch(clipUrl(l));
     if (!res.ok) throw new Error(`tts ${res.status}`);
@@ -79,6 +95,8 @@ export class Speaker {
   private audio = new Audio();
   private pieces: string[] = []; // the on-device voice reads a paragraph in sentences
   private piece = 0;
+  private began = 0; // when the device's voice started the paragraph (it can't tell how far it got)
+  private error = ''; // what the connected service said when it failed
 
   constructor(private on: Events = {}) {
     this.audio.preload = 'auto';
@@ -90,7 +108,7 @@ export class Speaker {
     });
     this.audio.addEventListener('ended', () => {
       if (silent()) return;
-      if (this.engine === 'cloud') this.play(this.at + 1);
+      if (this.engine === 'cloud' || this.engine === 'remote') this.play(this.at + 1);
       else if (this.engine === 'local') this.say(this.piece + 1, this.run);
     });
     this.audio.addEventListener('error', () => this.audio.getAttribute('src') && !silent() && this.failed());
@@ -137,13 +155,32 @@ export class Speaker {
       if (next) fetch(clipUrl(next)).catch(() => {}); // warm the next paragraph
       return;
     }
+    if (this.engine === 'remote') {
+      if (this.state !== 'playing') this.set('loading');
+      remoteClip(line.text).then(
+        (url) => {
+          if (mine !== this.run) return;
+          this.audio.src = url;
+          this.audio.playbackRate = this.rate;
+          this.audio.play().catch((e: Error) => mine === this.run && e.name !== 'AbortError' && this.failed());
+        },
+        (e: Error) => mine === this.run && ((this.error = e.message), this.failed()),
+      );
+      const next = this.lines[n + 1];
+      if (next) remoteClip(next.text).catch(() => {});
+      return;
+    }
     this.set('playing');
+    this.began = Date.now();
     const u = new SpeechSynthesisUtterance(line.text);
     const lang = isPersian(line.text) ? 'fa' : 'en';
     u.lang = lang === 'fa' ? 'fa-IR' : 'en-US';
     u.rate = this.rate;
-    const v = voiceFor(lang);
-    if (v) u.voice = v;
+    const v = chosenDeviceVoice() ?? voiceFor(lang);
+    if (v) {
+      u.voice = v;
+      u.lang = v.lang;
+    }
     u.onend = () => mine === this.run && this.play(n + 1);
     u.onerror = (e) => {
       if (mine !== this.run || e.error === 'interrupted' || e.error === 'canceled') return;
@@ -202,6 +239,35 @@ export class Speaker {
     this.set('idle');
   }
 
+  /** Back (negative) or forward by about this many seconds within the clip playing; past its start or end, to the
+   *  sentence or paragraph before or after. The device's own voice can't seek: back restarts the paragraph (or goes to
+   *  the one before, right after it started), forward goes to the next one. */
+  seek(sec: number) {
+    if (this.state === 'idle') return;
+    const a = this.audio;
+    const clip = this.engine !== 'device' && a.getAttribute('src') && a.src !== SILENCE && Number.isFinite(a.duration);
+    if (!clip) return this.step(sec < 0 && Date.now() - this.began > 3000 ? 0 : Math.sign(sec));
+    if (sec < 0 && a.currentTime < 1.5) return this.step(-1);
+    if (sec > 0 && a.currentTime + sec >= a.duration - 0.2) return this.step(1);
+    a.currentTime = Math.max(0, a.currentTime + sec);
+  }
+
+  /** To the paragraph before (-1) or after (1), or the start of this one (0). */
+  skip(d: number) {
+    if (!this.lines.length) return;
+    this.play(Math.max(0, Math.min(this.at + d, this.lines.length - (d > 0 ? 0 : 1))));
+  }
+
+  /** A sentence of the on-device voice, else a paragraph: before (-1), after (1), or this one again (0). */
+  private step(d: number) {
+    if (this.engine === 'local' && this.pieces.length) {
+      const k = this.piece + d;
+      if (k >= 0 && k < this.pieces.length) return this.say(k, ++this.run);
+      return this.play(k < 0 ? Math.max(0, this.at - 1) : this.at + 1);
+    }
+    this.play(Math.max(0, this.at + d));
+  }
+
   setRate(r: number) {
     this.rate = r;
     this.audio.playbackRate = r;
@@ -222,8 +288,9 @@ export class Speaker {
   }
 
   private failed() {
-    // The device's voice list may only have arrived after the tap.
-    if (!this.played && this.engine !== 'device' && voiceFor('fa')) {
+    // The device's voice list may only have arrived after the tap. (A service the reader connected says what went wrong
+    // instead: they chose it, and need to know it doesn't work.)
+    if (!this.played && this.engine !== 'device' && this.engine !== 'remote' && voiceFor('fa')) {
       this.engine = 'device';
       return this.play(this.at);
     }
@@ -234,6 +301,7 @@ export class Speaker {
       return this.play(this.at);
     }
     this.stop();
+    if (this.engine === 'remote') return this.on.fail?.(`صدای سرویس وصل‌شده: ${this.error || 'پخش نشد'} — در «صدای فارسی» عوضش کنید`);
     if (this.engine === 'local') return this.on.fail?.('صدای فارسی روی این دستگاه اجرا نشد — شاید حافظه کم است؛ صفحه را دوباره باز کنید');
     this.on.fail?.(this.played ? 'پخش صدا قطع شد؛ اتصال اینترنت را بررسی کنید' : 'صدای فارسی فعلاً در دسترس نیست — کمی بعد دوباره امتحان کنید');
   }

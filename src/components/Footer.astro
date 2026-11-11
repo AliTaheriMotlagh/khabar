@@ -28,6 +28,6 @@ import { url } from '../lib/posts';
   </div>
   <div class="container foot-bottom">
     <span>محتوا از کانال <a href={`https://t.me/${SITE.channel}`} rel="noopener" referrerpolicy="origin">@{SITE.channel}</a> ({SITE.owner.name}) · ترجمه: {SITE.gholam} · ساخته‌ی <a href={SITE.author.url} target="_blank" rel="noopener" referrerpolicy="origin">{SITE.author.name}</a></span>
-    <span class="foot-stats" data-site-stats hidden><Icon name="eye" /> <b data-total>…</b> بازدید · <b data-today>…</b> نفر امروز</span>
+    <a class="foot-stats" href={url('stats/')} data-site-stats hidden title="آمار بازدید با جزئیات"><Icon name="eye" /> <b data-total>…</b> بازدید · <b data-today>…</b> نفر امروز</a>
   </div>
 </footer>

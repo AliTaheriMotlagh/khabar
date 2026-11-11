@@ -3,7 +3,9 @@
 // src/lib/voices.ts (which one: the reader's pick in the voice sheet, src/scripts/voice-offer.ts), downloaded on the
 // reader's say-so and kept in Cache Storage. The work happens in src/scripts/voice-worker.ts — one worker downloads,
 // another speaks — so a new voice downloads while the current one goes on reading; this side keeps the state and turns
-// text into audio URLs.
+// text into audio URLs. A reader can also bring a model of their own (a sherpa-onnx VITS / Piper .onnx and its
+// tokens.txt, picked from their files): it is stored next to the others and runs on the runtime and espeak-ng data of
+// a voice already downloaded here (see `custom` below).
 import { store } from './core';
 import { DEFAULT_VOICE, VOICES, mirrors, voiceById, type Voice } from '../lib/voices';
 
@@ -28,7 +30,11 @@ for (const v of VOICES) for (const f of v.files) users.set(f.sha256, (users.get(
 /** The reader's choice: a voice id, or 'system' for the device's (or the server's) own voice. */
 export const chosenVoice = () => store.get<string>('voice', '');
 /** The downloaded voice that speaks: the chosen one, else the first one here (when the device has none of its own). */
-export function activeVoice(): Voice | undefined {
+export function activeVoice(): Speaking | undefined {
+  if (chosenVoice() === CUSTOM) {
+    const own = customSpeaking();
+    if (own) return own;
+  }
   const chosen = voiceById(chosenVoice());
   if (chosen && states.get(chosen.id) === 'ready') return chosen;
   return VOICES.find((v) => states.get(v.id) === 'ready');
@@ -36,16 +42,85 @@ export function activeVoice(): Voice | undefined {
 /** A downloaded voice is ready to speak. Synchronous: valid once voiceStates() has run. */
 export const voiceReady = () => !!activeVoice();
 /** The reader picked a downloaded voice over the device's own one. */
-export const voicePreferred = () => !!voiceById(chosenVoice()) && voiceReady();
+export const voicePreferred = () => (!!voiceById(chosenVoice()) || chosenVoice() === CUSTOM) && voiceReady();
+
+// ---------- the reader's own model ----------
+/** The id stored as the reader's choice for their own model. */
+export const CUSTOM = 'custom';
+export type CustomVoice = { name: string; size: number; sid: number };
+/** A voice as the speaking worker gets it: its package, and for the reader's own model the files laid over it. */
+type Speaking = Voice & { extra?: { path: string; key: string }[] };
+const customKey = (f: 'model.onnx' | 'tokens.txt') => `${KEYS}custom/${f}`;
+let customHere = false; // both files are in the cache (voiceStates() looks)
+export const customVoice = () => store.get<CustomVoice | null>('voice-custom', null);
+/** The downloaded voice whose runtime and espeak-ng data the reader's model runs on: the smallest one here. */
+const customBase = () => VOICES.filter((v) => states.get(v.id) === 'ready').sort((a, b) => a.files[3].size - b.files[3].size)[0];
+function customSpeaking(): Speaking | undefined {
+  const meta = customVoice();
+  const base = customBase();
+  if (!meta || !customHere || !base) return undefined;
+  const vits = { model: '/custom/model.onnx', lexicon: '', tokens: '/custom/tokens.txt', dataDir: './espeak-ng-data', noiseScale: 0.667, noiseScaleW: 0.8, lengthScale: 1 };
+  return {
+    ...base,
+    id: CUSTOM,
+    family: CUSTOM,
+    name: meta.name,
+    recommended: undefined,
+    config: { offlineTtsModelConfig: { offlineTtsVitsModelConfig: vits, numThreads: 1, debug: 0, provider: 'cpu' }, ruleFsts: '', ruleFars: '', maxNumSentences: 1 },
+    sid: meta.sid,
+    extra: [
+      { path: '/custom/model.onnx', key: customKey('model.onnx') },
+      { path: '/custom/tokens.txt', key: customKey('tokens.txt') },
+    ],
+  };
+}
+/** The reader's model can run: its files are here, and so is a downloaded voice to run it on. */
+export const customReady = () => !!customSpeaking();
+/** Its files are here, but no downloaded voice to run it on. */
+export const customNeedsBase = () => !!customVoice() && customHere && !customBase();
+
+/** Stores the reader's model (checked enough to catch the wrong files) and makes it the voice that reads. Rejects with a
+ *  sentence for the reader. */
+export async function saveCustomVoice(model: File, tokens: File, sid = 0) {
+  if (!voiceSupported()) throw new Error('این مرورگر نمی‌تواند صدا را روی دستگاه بسازد');
+  if (!/\.onnx$/i.test(model.name)) throw new Error('فایل مدل باید پسوند .onnx داشته باشد');
+  if (model.size < 500_000 || model.size > 600_000_000) throw new Error('اندازه‌ی فایل مدل درست به نظر نمی‌رسد');
+  const head = new Uint8Array(await model.slice(0, 2).arrayBuffer());
+  if (head[0] !== 0x08) throw new Error('این فایل مدل ONNX نیست');
+  const text = await tokens.slice(0, 200_000).text();
+  const lines = text.split('\n').filter((l) => l.length);
+  if (lines.length < 10 || lines.filter((l) => /\s\d+\s*$/.test(l)).length < lines.length * 0.9) throw new Error('فایل tokens.txt درست نیست: هر خط باید «نماد شماره» باشد');
+  if (!(await voiceFits(model.size + tokens.size))) throw new Error('فضای خالی دستگاه کافی نیست');
+  const cache = await caches.open(VOICE_CACHE);
+  await cache.put(customKey('model.onnx'), new Response(model));
+  await cache.put(customKey('tokens.txt'), new Response(tokens));
+  navigator.storage?.persist?.().catch(() => {});
+  customHere = true;
+  store.set('voice-custom', { name: model.name.replace(/\.onnx$/i, '').slice(0, 60), size: model.size + tokens.size, sid: Math.max(0, Math.floor(sid) || 0) } satisfies CustomVoice);
+  chooseVoice(CUSTOM);
+  if (speaker?.id === CUSTOM) stopSpeaker('dropped'); // a model replaced while one was loaded
+}
+
+export async function removeCustomVoice() {
+  if (speaker?.id === CUSTOM) stopSpeaker(voiceReady() ? 'dropped' : 'removed');
+  customHere = false;
+  store.set('voice-custom', null);
+  if (chosenVoice() === CUSTOM) store.set('voice', '');
+  try {
+    const cache = await caches.open(VOICE_CACHE);
+    await Promise.all([cache.delete(customKey('model.onnx')), cache.delete(customKey('tokens.txt'))]);
+  } catch {}
+}
 
 /** Each voice's state, from one look at the cache. */
 export async function voiceStates(): Promise<Map<string, VoiceState>> {
   if (!voiceSupported()) return (states = new Map());
   try {
-    if (!(await caches.has(VOICE_CACHE))) return (states = new Map());
+    if (!(await caches.has(VOICE_CACHE))) return ((customHere = false), (states = new Map()));
     const cache = await caches.open(VOICE_CACHE);
     let keys = new Set((await cache.keys()).map((r) => r.url));
     if ([...keys].some((k) => !k.startsWith(KEYS))) keys = await migrate(cache, keys);
+    customHere = keys.has(customKey('model.onnx')) && keys.has(customKey('tokens.txt'));
     const next = new Map<string, VoiceState>();
     for (const v of VOICES) {
       if (v.files.every((f) => keys.has(done(f.sha256)))) next.set(v.id, 'ready');
@@ -118,7 +193,7 @@ function getSpeaker() {
   if (speaker?.id === voice.id) return speaker.worker;
   stopSpeaker('dropped');
   const worker = new Worker(new URL('./voice-worker.ts', import.meta.url));
-  worker.postMessage({ t: 'init', cache: VOICE_CACHE, keys: KEYS, bases: mirrors(voice.id), files: voice.files, config: voice.config, sid: voice.sid ?? 0 });
+  worker.postMessage({ t: 'init', cache: VOICE_CACHE, keys: KEYS, bases: voice.id === CUSTOM ? [] : mirrors(voice.id), files: voice.files, config: voice.config, sid: voice.sid ?? 0, extra: voice.extra ?? [] });
   worker.onmessage = (e) => {
     const m = e.data;
     if (m.t === 'audio') {
@@ -132,7 +207,8 @@ function getSpeaker() {
       p?.reject(new Error(m.t === 'dropped' ? 'dropped' : m.msg));
     } else if (m.t === 'fail' && pending.size) {
       // The model didn't load (out of memory, or the stored files went missing): don't offer it again this visit.
-      states.set(voice.id, 'partial');
+      if (voice.id === CUSTOM) customHere = false;
+      else states.set(voice.id, 'partial');
       failAll(m.msg);
     }
   };
@@ -141,7 +217,8 @@ function getSpeaker() {
     e.preventDefault();
     if (speaker?.worker !== worker) return;
     speaker = null;
-    states.set(voice.id, 'partial');
+    if (voice.id === CUSTOM) customHere = false;
+    else states.set(voice.id, 'partial');
     failAll('crashed');
   };
   speaker = { worker, id: voice.id };
@@ -233,7 +310,8 @@ export async function removeVoice(id: string) {
   if (speaker?.id === id) stopSpeaker(voiceReady() ? 'dropped' : 'removed');
   try {
     const keep = new Set(VOICES.filter((v) => v.id !== id && states.has(v.id)).flatMap((v) => v.files.map((f) => f.sha256)));
-    if (!keep.size) return void (await caches.delete(VOICE_CACHE));
+    // The reader's own model stays (it runs again once a voice is downloaded).
+    if (!keep.size && !customHere) return void (await caches.delete(VOICE_CACHE));
     const cache = await caches.open(VOICE_CACHE);
     const drop = new Set(voiceById(id)!.files.map((f) => f.sha256).filter((s) => !keep.has(s)));
     for (const r of await cache.keys()) if (drop.has(r.url.slice(KEYS.length).split('?')[0])) await cache.delete(r);

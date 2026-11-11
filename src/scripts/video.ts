@@ -14,7 +14,7 @@ import { AudioBufferSource, BufferTarget, CanvasSource, Mp4OutputFormat, Output,
 import { $, fmtNum, tapAudio, toast } from './core';
 import { SITE } from '../site';
 import { align, pauseAfter, weight, words } from '../lib/align';
-import { lineAudio, persianVoice, recordableVoice } from './speech';
+import { lineAudio, persianVoice, recordableVoice, type Recordable } from './speech';
 import { chosenVoice, voiceSupported } from './voice';
 import { openVoice } from './voice-offer';
 
@@ -78,7 +78,7 @@ function paced(text: string, at: number, seconds?: number): Word[] {
 }
 
 /** The scenes on a timeline, with the voice's clips placed on it and every word timed. */
-async function build(card: Card, pics: Map<string, ImageBitmap | null>, engine: 'cloud' | 'local' | null, step: (p: number) => void) {
+async function build(card: Card, pics: Map<string, ImageBitmap | null>, engine: Recordable | null, step: (p: number) => void) {
   // The same list /api/tts reads by index.
   const lines = [card.title, ...card.body, card.why].filter((l): l is string => !!l);
   const plan = card.video;

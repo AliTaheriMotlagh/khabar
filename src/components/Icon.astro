@@ -47,6 +47,11 @@ const paths: Record<string, string> = {
   info: '<circle cx="12" cy="12" r="9"/><path d="M12 11v6M12 7.5h.01"/>',
   volume: '<path d="M4 9v6h4l5 4V5L8 9z"/><path d="M16.5 8.5a5 5 0 0 1 0 7M19 6a8.5 8.5 0 0 1 0 12"/>',
   pause: '<path d="M8 5v14M16 5v14"/>',
+  // media controls keep their left-to-right sense in RTL pages too (the listen bar is dir="ltr")
+  'skip-back': '<path d="M6 5v14"/><path d="M18 6 9 12l9 6z" fill="currentColor"/>',
+  'skip-fwd': '<path d="M18 5v14"/><path d="m6 6 9 6-9 6z" fill="currentColor"/>',
+  back10: '<path d="M4 12a8 8 0 1 0 2.6-5.9L4 8.5"/><path d="M4 4v4.5h4.5"/><text x="12.6" y="15.6" font-size="7.5" font-weight="800" text-anchor="middle" fill="currentColor" stroke="none" font-family="system-ui,sans-serif">10</text>',
+  fwd10: '<path d="M20 12a8 8 0 1 1-2.6-5.9L20 8.5"/><path d="M20 4v4.5h-4.5"/><text x="11.4" y="15.6" font-size="7.5" font-weight="800" text-anchor="middle" fill="currentColor" stroke="none" font-family="system-ui,sans-serif">10</text>',
   'volume-off': '<path d="M4 9v6h4l5 4V5L8 9z"/><path d="m17 9 5 5M22 9l-5 5"/>',
   headphones: '<path d="M3 18v-6a9 9 0 0 1 18 0v6"/><path d="M21 19a2 2 0 0 1-2 2h-1v-6h3zM3 19a2 2 0 0 0 2 2h1v-6H3z"/>',
   'headphones-off': '<path d="M3 18v-6a9 9 0 0 1 15.4-6.4M21 12v6"/><path d="M21 19a2 2 0 0 1-2 2h-1v-6h3zM3 19a2 2 0 0 0 2 2h1v-6H3z"/><path d="m3 3 18 18"/>',

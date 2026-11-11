@@ -1,13 +1,15 @@
-// POST /api/live { guest, post?, view?, name? } → { online, chat, today?, total?, views? }  (chat = newest chat message id)
+// POST /api/live { guest, post?, view?, name? } → { online, chat, today?, total?, views?, viewsToday? }  (chat = newest chat message id)
 // Called once per page view (view: true counts the visit) and then as a slow heartbeat while the tab is visible.
 // Presence is a sorted set of guest hashes scored by last-seen time; "online" = seen in the last 2 minutes.
 // Visits count like views on X: a reader adds one to the site total, and one to a post, at most once per 24 hours
 // (a `SET … NX EX` marker per reader, and per reader and post). today = distinct readers on the Tehran calendar day.
+// A post's views are also counted per Tehran day (`dv:<day>`, kept DAY_VIEWS_DAYS): viewsToday, and /api/stats.
 import { POINTS, VIEW_WINDOW, award, cleanText, configured, day, fail, guestId, hash, json, limited, nameCmd, postId, postViews, preflight, readBody, redis } from './_lib.js';
 
 const ONLINE_WINDOW = 120_000;
 // The site's first day: the total starts as the sum of each day's distinct readers since then (see seedTotal).
 const SINCE = Date.UTC(2026, 9, 23);
+export const DAY_VIEWS_DAYS = 32;
 
 export const OPTIONS = preflight;
 
@@ -38,19 +40,25 @@ export async function POST(request) {
     const [views] = post ? await postViews([post]) : [0]; // before SADD below, so a post's first count doesn't include this visit
     const at = cmds.length;
     cmds.push(['SET', `vs:${gh}`, '1', 'EX', String(VIEW_WINDOW), 'NX'], ['GET', 'visits:total'], ['PFADD', `u:${day()}`, gh], ['PFCOUNT', `u:${day()}`]);
-    if (post) cmds.push(['SET', `vw:${post}:${gh}`, '1', 'EX', String(VIEW_WINDOW), 'NX'], ['SADD', `v:${post}`, gh]);
+    if (post) cmds.push(['SET', `vw:${post}:${gh}`, '1', 'EX', String(VIEW_WINDOW), 'NX'], ['SADD', `v:${post}`, gh], ['HGET', `dv:${day()}`, post]);
     cmds.push(...nameCmd(gh, cleanText(body.name, 32).replace(/\n/g, ' ')));
     const res = await redis(...cmds);
     const [newVisit, stored, , today] = res.slice(at, at + 4);
-    const [newView, firstRead] = post ? res.slice(at + 4, at + 6) : [];
+    const [newView, firstRead, dayViews] = post ? res.slice(at + 4, at + 7) : [];
     if (stored == null) await seedTotal(); // today's readers, this one included: nothing to add on top
-    const [total, viewed] = await redis(
+    const dv = `dv:${day()}`;
+    const [total, viewed, viewedToday] = await redis(
       newVisit && stored != null ? ['INCR', 'visits:total'] : ['GET', 'visits:total'],
-      ...(newView ? [['HINCRBY', 'h:uviews', post, '1']] : []),
+      ...(newView ? [['HINCRBY', 'h:uviews', post, '1'], ['HINCRBY', dv, post, '1']] : []),
+      // The day's counts expire a month on: set now and then, not on every view (Upstash bills each command).
+      ...(newView && Math.random() < 0.1 ? [['EXPIRE', dv, String(DAY_VIEWS_DAYS * 86400)]] : []),
       ...(firstRead ? award(gh, POINTS.read) : []), // first time this guest opened this post
     );
     const out = { online: Math.max(1, Number(res[1]) || 0), chat: res[2] ? JSON.parse(res[2]).id : null, total: Number(total) || 0, today: Number(today) || 0 };
-    if (post) out.views = newView ? Number(viewed) || 0 : views;
+    if (post) {
+      out.views = newView ? Number(viewed) || 0 : views;
+      out.viewsToday = newView ? Number(viewedToday) || 0 : Number(dayViews) || 0;
+    }
     return json(request, out);
   }
   const res = await redis(...cmds);

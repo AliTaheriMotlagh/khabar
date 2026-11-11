@@ -88,6 +88,66 @@ const sizes = VOICES.map(voiceBytes);
         })
       }
     </ul>
+    <h3 class="vo-more">راه‌های دیگر</h3>
+    <ul class="vo-list" aria-label="راه‌های دیگر">
+      <li class="vo" data-vo-extra="dev" hidden>
+        <button class="vo-toggle" type="button" aria-expanded="false" aria-controls="vo-dev">
+          <span class="vo-name">یکی از صداهای این دستگاه</span>
+          <small class="vo-meta" data-dev-count>بدون دانلود</small>
+          <small class="vo-state" data-vo-state></small>
+        </button>
+        <div class="vo-body" id="vo-dev" hidden>
+          <p class="vo-about">هر صدایی که مرورگر یا سیستم‌عامل شما دارد، به هر زبانی. صدایی که فارسی نیست، متن فارسی را درست نمی‌خواند.</p>
+          <select class="vo-field" data-dev-select aria-label="صدای دستگاه"></select>
+          <div class="vo-actions">
+            <button class="btn primary" type="button" data-x="dev-use">استفاده از این صدا</button>
+            <button class="btn" type="button" data-x="dev-try"><Icon name="play" /> نمونه</button>
+          </div>
+        </div>
+      </li>
+      <li class="vo" data-vo-extra="remote">
+        <button class="vo-toggle" type="button" aria-expanded="false" aria-controls="vo-remote">
+          <span class="vo-name">سرویس صدای خودتان</span>
+          <small class="vo-meta">OpenAI · ElevenLabs · Azure · هر آدرسی</small>
+          <small class="vo-state" data-vo-state></small>
+        </button>
+        <form class="vo-body" id="vo-remote" data-remote-form hidden>
+          <p class="vo-about">کلید و تنظیمات فقط در همین مرورگر می‌ماند و مستقیم به همان سرویس فرستاده می‌شود؛ به سرور خبر نمی‌رسد. هزینه‌ی سرویس با خودتان است.</p>
+          <div class="seg" role="radiogroup" aria-label="نوع سرویس" data-remote-kinds></div>
+          <label class="vo-label" data-rf="url"><span data-rf-url-label>آدرس پایه‌ی API</span><input class="vo-field" name="url" dir="ltr" inputmode="url" autocomplete="off" spellcheck="false" /></label>
+          <label class="vo-label" data-rf="region"><span>منطقه (Region)</span><input class="vo-field" name="region" dir="ltr" autocomplete="off" spellcheck="false" /></label>
+          <label class="vo-label" data-rf="key"><span>کلید API</span><input class="vo-field" name="key" type="password" dir="ltr" autocomplete="off" spellcheck="false" /></label>
+          <label class="vo-label" data-rf="model"><span>مدل</span><input class="vo-field" name="model" dir="ltr" autocomplete="off" spellcheck="false" /></label>
+          <label class="vo-label" data-rf="voice"><span data-rf-voice-label>صدا</span><input class="vo-field" name="voice" dir="ltr" autocomplete="off" spellcheck="false" /></label>
+          <small class="vo-hint" data-remote-hint></small>
+          <p class="voice-msg" data-remote-msg role="status"></p>
+          <div class="vo-actions">
+            <button class="btn primary" type="submit">ذخیره و استفاده</button>
+            <button class="btn" type="button" data-x="remote-try"><Icon name="play" /> آزمایش</button>
+            <button class="btn" type="button" data-x="remote-off" data-vo-remove hidden><Icon name="trash" /> قطع</button>
+          </div>
+        </form>
+      </li>
+      <li class="vo" data-vo-extra="custom" data-needs-wasm>
+        <button class="vo-toggle" type="button" aria-expanded="false" aria-controls="vo-custom">
+          <span class="vo-name">فایل مدل صدای خودتان</span>
+          <small class="vo-meta" data-custom-meta>Piper / sherpa-onnx · روی همین دستگاه</small>
+          <small class="vo-state" data-vo-state></small>
+        </button>
+        <div class="vo-body" id="vo-custom" hidden>
+          <p class="vo-about">یک مدل VITS یا Piper که برای sherpa-onnx آماده شده (فایل <code>.onnx</code> و <code>tokens.txt</code> کنار هم، مثل بسته‌های vits-piper-* در صفحه‌ی مدل‌های sherpa-onnx) را از دستگاهتان انتخاب کنید. روی همین دستگاه اجرا می‌شود و برای راه افتادن، به یکی از صداهای بالا که دانلود شده نیاز دارد.</p>
+          <label class="vo-label"><span>هر دو فایل را با هم انتخاب کنید</span><input class="vo-field" type="file" multiple accept=".onnx,.txt" data-custom-files /></label>
+          <label class="vo-label"><span>شماره‌ی گوینده (برای مدل چندگوینده؛ اختیاری)</span><input class="vo-field" type="number" min="0" step="1" value="0" inputmode="numeric" dir="ltr" data-custom-sid /></label>
+          <p class="voice-msg" data-custom-msg role="status"></p>
+          <div class="vo-actions">
+            <button class="btn primary" type="button" data-x="custom-add"><Icon name="download" /> افزودن</button>
+            <button class="btn" type="button" data-x="custom-use" hidden>استفاده از این صدا</button>
+            <button class="btn" type="button" data-x="custom-try" hidden><Icon name="play" /> نمونه</button>
+            <button class="btn" type="button" data-x="custom-remove" data-vo-remove hidden><Icon name="trash" /> حذف</button>
+          </div>
+        </div>
+      </li>
+    </ul>
     <p class="vo-stored" data-voice-stored hidden></p>
     <div class="sheet-foot">
       <button class="btn" type="button" data-close data-voice-later>بعداً</button>

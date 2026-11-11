@@ -1,11 +1,17 @@
 ---
-// Guest comments (no signup). Rendered and posted by src/scripts/social.ts.
+// Guest comments (no signup), on the whole story or on a passage of it. Rendered and posted by src/scripts/social.ts.
+import Icon from './Icon.astro';
 interface Props { id: number }
 const { id } = Astro.props;
 ---
 <section class="comments" id="comments" data-comments={id} aria-labelledby="comments-title">
   <h2 class="section-title" id="comments-title">نظرها <span class="count" data-comments-count></span></h2>
   <form class="comment-form" data-comment-form>
+    <div class="c-quote-draft" data-comment-quote hidden>
+      <span class="c-quote-label">نظر درباره‌ی این بخش:</span>
+      <q dir="auto" data-comment-quote-text></q>
+      <button class="icon-btn" type="button" data-comment-quote-x aria-label="نظر درباره‌ی کل خبر، نه این بخش"><Icon name="x" /></button>
+    </div>
     <textarea name="text" required minlength="2" maxlength="1000" rows="2" placeholder="نظرتان را بنویسید…" aria-label="متن نظر"></textarea>
     <input class="hp" name="website" tabindex="-1" autocomplete="off" aria-hidden="true" />
     <div class="form-foot">

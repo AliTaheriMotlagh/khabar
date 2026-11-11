@@ -1,0 +1,53 @@
+---
+// Visits in more detail: online now, today's readers and the total (the live counts every page gets from /api/live,
+// filled by src/scripts/social.ts), and from /api/stats the readers of the last 7 days and the most viewed stories
+// (src/scripts/stats.ts).
+import Base from '../../layouts/Base.astro';
+import Icon from '../../components/Icon.astro';
+---
+<Base title="آمار بازدید" description="چند نفر خبرها را می‌خوانند و کدام خبرها بیشتر خوانده می‌شوند: امروز، این هفته و از اول.">
+  <div class="container narrow">
+    <header class="page-head">
+      <h1><Icon name="eye" /> آمار بازدید</h1>
+      <p>چند نفر خبرها را می‌خوانند و کدام خبرها بیشتر خوانده می‌شوند.</p>
+    </header>
+
+    <div class="st-tiles">
+      <div class="st-tile live"><small><i class="live-dot" aria-hidden="true"></i> الان آنلاین</small><b data-online>…</b></div>
+      <div class="st-tile"><small>خوانندگان امروز</small><b data-today>…</b></div>
+      <div class="st-tile"><small>دیروز</small><b data-st-yesterday>…</b></div>
+      <div class="st-tile"><small>میانگین روزانه‌ی هفته</small><b data-st-avg>…</b></div>
+      <div class="st-tile wide"><small>کل بازدیدها از اول</small><b data-total>…</b></div>
+    </div>
+
+    <section class="st-section">
+      <h2 class="section-title">خوانندگان ۷ روز گذشته</h2>
+      <div class="st-chart" data-st-chart></div>
+      <details class="st-table">
+        <summary>نمایش به صورت جدول</summary>
+        <table><thead><tr><th>روز</th><th>خواننده</th></tr></thead><tbody data-st-table></tbody></table>
+      </details>
+    </section>
+
+    <section class="st-section">
+      <h2 class="section-title">پربازدیدترین خبرها</h2>
+      <div class="seg" role="radiogroup" aria-label="بازه" data-st-range>
+        <label><input type="radio" name="st-range" value="today" checked /><span>امروز</span></label>
+        <label><input type="radio" name="st-range" value="week" /><span>این هفته</span></label>
+        <label><input type="radio" name="st-range" value="all" /><span>از اول</span></label>
+      </div>
+      <ol class="st-top" data-st-top aria-live="polite"></ol>
+      <p class="muted" data-st-empty hidden>هنوز بازدیدی برای این بازه ثبت نشده.</p>
+    </section>
+
+    <p class="muted st-note" data-st-off hidden>آمار فعلاً در دسترس نیست؛ کمی بعد دوباره سر بزنید.</p>
+    <p class="st-note">
+      هر خواننده در هر ۲۴ ساعت یک بار برای سایت و یک بار برای هر خبر شمرده می‌شود (مثل بازدیدهای X)، هر چند بار هم صفحه را باز کند. «امروز» یعنی روز تقویمی به وقت تهران، و «آنلاین» یعنی کسانی که در دو دقیقه‌ی گذشته صفحه‌ای از سایت را باز داشته‌اند. نمودار و فهرست‌ها هر ده دقیقه تازه می‌شوند.
+    </p>
+  </div>
+</Base>
+
+<script>
+  import { initStats } from '../../scripts/stats';
+  initStats();
+</script>

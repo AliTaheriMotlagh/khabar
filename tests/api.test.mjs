@@ -10,6 +10,7 @@ const engage = await import('../api/engage.js');
 const live = await import('../api/live.js');
 const chat = await import('../api/chat.js');
 const leaders = await import('../api/leaders.js');
+const stats = await import('../api/stats.js');
 const { _memory } = await import('../api/_lib.js');
 
 let ip = 0;
@@ -49,6 +50,19 @@ test('comments: post, list, validation, delete by owner and admin', async () => 
   const other = list.body.comments[0].id;
   assert.equal((await call(comments.DELETE, 'DELETE', `/api/comments?post=7&id=${other}`, {}, { authorization: 'Bearer admin-secret' })).status, 200);
   assert.equal((await call(comments.GET, 'GET', '/api/comments?post=7')).body.comments.length, 0);
+});
+
+test('comments on a highlighted passage keep its words', async () => {
+  const long = 'کلمه '.repeat(100);
+  const made = await call(comments.POST, 'POST', '/api/comments', { post: 8, guest: A, text: 'این بخش جالب بود', quote: ' هوش   مصنوعی\nتازه ' });
+  assert.equal(made.status, 201);
+  assert.equal(made.body.comment.quote, 'هوش مصنوعی تازه');
+  const plain = await call(comments.POST, 'POST', '/api/comments', { post: 8, guest: B, text: 'بدون نقل‌قول', quote: long });
+  assert.equal(plain.body.comment.quote.length, 300 - 1, 'cut to 300 characters, then trimmed');
+  const none = await call(comments.POST, 'POST', '/api/comments', { post: 8, guest: B, text: 'بی‌نقل‌قول' });
+  assert.equal('quote' in none.body.comment, false);
+  const list = await call(comments.GET, 'GET', '/api/comments?post=8');
+  assert.deepEqual(list.body.comments.map((c) => c.quote ?? null), [null, plain.body.comment.quote, 'هوش مصنوعی تازه']);
 });
 
 test('reactions count once per guest and show up in engage', async () => {
@@ -105,6 +119,28 @@ test('live presence, visits and the leaderboard', async () => {
   const board = await call(leaders.GET, 'GET', '/api/leaders');
   assert.equal(board.body.week[0].name, 'علی');
   assert.ok(board.body.week[0].points >= 1);
+});
+
+test('views per day and the stats page', async () => {
+  const C = 'guest-cccccccccccccccc';
+  const D = 'guest-dddddddddddddddd';
+  const a = await call(live.POST, 'POST', '/api/live', { guest: C, post: 501, view: true });
+  assert.equal(a.body.viewsToday, 1);
+  assert.equal((await call(live.POST, 'POST', '/api/live', { guest: C, post: 501, view: true })).body.viewsToday, 1, 'a reload is not a new view');
+  assert.equal((await call(live.POST, 'POST', '/api/live', { guest: D, post: 501, view: true })).body.viewsToday, 2);
+  await call(live.POST, 'POST', '/api/live', { guest: D, post: 502, view: true });
+
+  const s = await call(stats.GET, 'GET', '/api/stats');
+  assert.equal(s.status, 200);
+  assert.match(s.res.headers.get('cache-control'), /s-maxage=600/);
+  assert.equal(s.body.days.length, 7);
+  assert.equal(s.body.days.at(-1).day, new Date().toLocaleDateString('en-CA', { timeZone: 'Asia/Tehran' }));
+  assert.ok(s.body.days.at(-1).readers >= 2);
+  const mine = (list) => list.filter((t) => t.id === 501 || t.id === 502);
+  assert.deepEqual(mine(s.body.top.today), [{ id: 501, views: 2 }, { id: 502, views: 1 }], 'most viewed first');
+  assert.deepEqual(mine(s.body.top.week), mine(s.body.top.today));
+  assert.ok(s.body.top.all.some((t) => t.id === 501 && t.views === 2));
+  assert.ok(s.body.top.today.length <= 8);
 });
 
 test('chat: post, list, limits', async () => {

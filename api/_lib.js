@@ -25,6 +25,8 @@ const memGet = (k, make) => {
 const memory = {
   HINCRBY: (k, f, by) => { const h = memGet(k, () => new Map()); h.set(f, (h.get(f) ?? 0) + Number(by)); return h.get(f); },
   HMGET: (k, ...fs) => { const h = memGet(k); return fs.map((f) => (h?.has(f) ? String(h.get(f)) : null)); },
+  HGET: (k, f) => { const h = memGet(k); return h?.has(f) ? String(h.get(f)) : null; },
+  HGETALL: (k) => [...(memGet(k) ?? new Map())].flatMap(([f, v]) => [f, String(v)]),
   SADD: (k, m) => { const s = memGet(k, () => new Set()); const had = s.has(m); s.add(m); return had ? 0 : 1; },
   SREM: (k, m) => (memGet(k)?.delete(m) ? 1 : 0),
   LPUSH: (k, v) => memGet(k, () => []).unshift(v),

@@ -1,5 +1,5 @@
 // Gamification without signup: points, levels, badges and daily streaks live in this browser,
-// plus "what's new since your last visit" — unread new stories stay marked until they are read.
+// plus "what's new since your last visit" — unread new stories stay marked during that visit, until they are read.
 import { SITE } from '../site';
 import { $, $$, BASE, esc, fmtNum, getHistory, guest, hue, initial, myName, setMyName, store, toast, type Entry } from './core';
 
@@ -208,6 +208,7 @@ function clearNew(id: number) {
   const pending = store.get<number[]>('pending', []);
   if (!pending.includes(id)) return;
   store.set('pending', pending.filter((p) => p !== id));
+  showNewCount();
   const c = store.get<Catchup>('catchup', { total: 0, done: 0 });
   if (c.total) {
     c.done = Math.min(c.total, c.done + 1);
@@ -219,16 +220,56 @@ function clearNew(id: number) {
   }
 }
 
+// A visit: page loads with less than half an hour between them. A story is "new" during the visit in which it first
+// showed up (it arrived after the one before), and until it is opened or watched — not for good: one never opened
+// would otherwise keep the tab's count up forever.
+const VISIT_GAP = 30 * 60_000;
+let thisVisit = 0;
+function visit() {
+  if (thisVisit) return thisVisit;
+  const v = store.get<{ n: number; at: number }>('visit', { n: 0, at: 0 });
+  if (Date.now() - v.at > VISIT_GAP) v.n++;
+  v.at = Date.now();
+  store.set('visit', v);
+  return (thisVisit = v.n);
+}
+/** Drops the new stories of an earlier visit (and those from before visits were counted). */
+function prunePending() {
+  const pending = store.get<number[]>('pending', []);
+  const since = store.get<Record<string, number>>('pending-in', {});
+  const now = visit();
+  const kept = pending.filter((id) => since[id] === now);
+  if (kept.length !== pending.length) {
+    store.set('pending', kept);
+    store.set('pending-in', Object.fromEntries(kept.map((id) => [id, now])));
+    // "Read all the new ones" is about this visit's new stories.
+    const c = store.get<Catchup>('catchup', { total: 0, done: 0 });
+    if (c.total) store.set('catchup', kept.length ? { total: kept.length, done: 0 } : { total: 0, done: 0 });
+  }
+  return kept;
+}
+
+/** The tab title starts with how many new stories wait, on the lists only — a story's own title stays clean (it is
+ *  what a bookmark or a shared tab keeps). Updated as stories are read, here or in another tab. */
+export function showNewCount() {
+  const base = document.title.replace(/^\(\S+\)\s/, '');
+  const n = document.querySelector('[data-article]') ? 0 : store.get<number[]>('pending', []).length;
+  document.title = n ? `(${n > 99 ? `${fmtNum(99)}+` : fmtNum(n)}) ${base}` : base;
+}
+addEventListener('storage', (e) => e.key?.endsWith(':pending') && showNewCount());
+addEventListener('pageshow', (e) => e.persisted && showNewCount());
+
 /** Marks unread new stories on the page and remembers what was seen. */
 export function markNew() {
+  visit();
   const items = $$('[data-tl] .tl-item[data-id], .lead-main[data-id]');
-  if (!items.length) return;
+  if (!items.length) return showNewCount();
   const ids = items.map((el) => Number(el.dataset.id));
   const maxId = Math.max(...ids);
   const lastSeen = store.get<number>('lastSeen', 0);
   const read = new Set(store.get<number[]>('read', []));
 
-  let pending = store.get<number[]>('pending', []);
+  let pending = prunePending();
   if (lastSeen) {
     const fresh = ids.filter((id) => id > lastSeen && !read.has(id) && !pending.includes(id));
     if (fresh.length) {
@@ -237,6 +278,9 @@ export function markNew() {
     }
     pending = [...new Set([...pending, ...fresh])].filter((id) => !read.has(id)).slice(-150);
     store.set('pending', pending);
+    const since = store.get<Record<string, number>>('pending-in', {});
+    for (const id of fresh) since[id] = visit();
+    store.set('pending-in', Object.fromEntries(pending.map((id) => [id, since[id] ?? visit()])));
   }
 
   for (const el of items) {
@@ -258,9 +302,7 @@ export function markNew() {
     }
   }
 
-  // Tab title and home tab show how many new stories are waiting.
-  const base = document.title.replace(/^\(\S+\)\s/, '');
-  document.title = pending.length ? `(${fmtNum(pending.length)}) ${base}` : base;
+  showNewCount();
   if (location.pathname.replace(/\/$/, '') === BASE) {
     if (maxId > lastSeen) setTimeout(() => store.set('lastSeen', Math.max(maxId, store.get<number>('lastSeen', 0))), 3000);
   }

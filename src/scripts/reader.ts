@@ -76,15 +76,40 @@ function offerResume() {
 }
 
 // ---------- listen (src/scripts/speech.ts picks the voice; src/scripts/voice-offer.ts offers one if there is none) ----------
+// While it plays, a bar at the bottom (the page's [data-listen-bar]): paragraph before/after, 10 seconds back/forward,
+// speed, stop, and a track with a step per paragraph to jump to. A tap on a paragraph of the story reads from there.
+// Where the reader stopped is kept per story: «ادامه‌ی گوش دادن» goes on from that paragraph.
 const listenBtn = $('[data-listen]');
-const rateBtn = $('[data-rate]');
-const RATES = [1, 1.25, 1.5, 1.75, 0.85];
+const listenBar = $('[data-listen-bar]');
+const RATES = [1, 1.25, 1.5, 1.75, 2, 0.85];
 let paragraphs: HTMLElement[] = [];
+type Spots = Record<string, number>;
+const listenSpot = () => store.get<Spots>('listen-at', {})[id] ?? 0;
+function keepSpot(n: number | null) {
+  const all = store.get<Spots>('listen-at', {});
+  delete all[id];
+  if (n) all[id] = n;
+  store.set('listen-at', Object.fromEntries(Object.entries(all).slice(-40)));
+}
+const idleLabel = () => (listenSpot() ? 'ادامه‌ی گوش دادن' : 'گوش دادن');
+function showSpot(n: number) {
+  if (!listenBar) return;
+  const total = paragraphs.length;
+  $('[data-lb-pos]', listenBar)!.textContent = total > 1 ? `بند ${fmtNum(n + 1)} از ${fmtNum(total)}` : '';
+  $$('[data-lb-track] button', listenBar).forEach((b, k) => {
+    b.classList.toggle('done', k < n);
+    b.classList.toggle('now', k === n);
+  });
+  $<HTMLButtonElement>('[data-lb="prev"]', listenBar)!.disabled = n === 0;
+  $<HTMLButtonElement>('[data-lb="next"]', listenBar)!.disabled = n >= total - 1;
+}
 let touchedAt = 0; // last time the reader scrolled by hand
 for (const type of ['wheel', 'touchmove', 'keydown']) addEventListener(type, () => (touchedAt = Date.now()), { passive: true });
 const speaker = new Speaker({
   line(n) {
     $$('.is-speaking').forEach((el) => el.classList.remove('is-speaking'));
+    showSpot(n);
+    keepSpot(n);
     const el = paragraphs[n];
     if (!el) return;
     el.classList.add('is-speaking');
@@ -96,9 +121,21 @@ const speaker = new Speaker({
     if (!listenBtn) return;
     listenBtn.dataset.state = s;
     listenBtn.setAttribute('aria-pressed', String(s === 'playing' || s === 'loading'));
-    $('[data-listen-label]', listenBtn)!.textContent = s === 'playing' ? 'مکث' : s === 'loading' ? 'آماده‌سازی…' : s === 'paused' ? 'ادامه' : 'گوش دادن';
+    $('[data-listen-label]', listenBtn)!.textContent = s === 'playing' ? 'مکث' : s === 'loading' ? 'آماده‌سازی…' : s === 'paused' ? 'ادامه' : idleLabel();
     if (s === 'idle') $$('.is-speaking').forEach((el) => el.classList.remove('is-speaking'));
     if ('mediaSession' in navigator) navigator.mediaSession.playbackState = s === 'playing' ? 'playing' : s === 'paused' ? 'paused' : 'none';
+    if (listenBar) {
+      listenBar.hidden = s === 'idle';
+      listenBar.dataset.state = s;
+      $('[data-lb="toggle"]', listenBar)!.setAttribute('aria-label', s === 'paused' ? 'ادامه' : 'مکث');
+      document.documentElement.toggleAttribute('data-listening', s !== 'idle');
+      if (s !== 'idle') $('[data-resume]')?.setAttribute('hidden', '');
+    }
+  },
+  // Heard to the end: next time it starts from the top.
+  end: () => {
+    keepSpot(null);
+    if (listenBtn) $('[data-listen-label]', listenBtn)!.textContent = idleLabel();
   },
   fail: (msg) => toast(msg),
 });
@@ -122,7 +159,38 @@ function toggleListen() {
     const cover = article?.dataset.cover;
     navigator.mediaSession.metadata = new MediaMetadata({ title: article?.dataset.title ?? document.title, artist: SITE.name, artwork: cover ? [{ src: cover }] : [] });
   }
-  speaker.start(parts.map(({ el, i }) => ({ text: text(el), post: id, i })));
+  const track = listenBar && $('[data-lb-track]', listenBar);
+  if (track) {
+    track.innerHTML = paragraphs.length > 1 ? paragraphs.map((_, k) => `<button type="button" tabindex="-1" data-lb-to="${k}" aria-label="بند ${fmtNum(k + 1)}"></button>`).join('') : '';
+  }
+  // Where the reader stopped last time (a paragraph that is still there), else the top.
+  const from = listenSpot() < paragraphs.length ? listenSpot() : 0;
+  if (from) toast(`ادامه از بند ${fmtNum(from + 1)}؛ با نوار پایین صفحه به هر بند می‌روید`);
+  speaker.start(
+    parts.map(({ el, i }) => ({ text: text(el), post: id, i })),
+    from,
+  );
+}
+
+/** The bar's buttons, a step of its track, or a paragraph of the story while listening. */
+function listenControl(e: Event) {
+  const t = e.target as Element;
+  const to = t.closest<HTMLElement>('[data-lb-to]');
+  if (to) return speaker.play(Number(to.dataset.lbTo));
+  const action = t.closest<HTMLElement>('[data-lb]')?.dataset.lb;
+  if (action === 'toggle') toggleListen();
+  else if (action === 'prev') speaker.skip(-1);
+  else if (action === 'next') speaker.skip(1);
+  else if (action === 'back') speaker.seek(-10);
+  else if (action === 'fwd') speaker.seek(10);
+  else if (action === 'stop') speaker.stop();
+}
+function readFromHere(e: MouseEvent) {
+  if (speaker.state === 'idle') return;
+  const t = e.target as Element;
+  if (t.closest('a, button, mark, input, textarea') || getSelection()?.toString()) return;
+  const n = paragraphs.findIndex((p) => p.contains(t));
+  if (n >= 0 && n !== speaker.at) speaker.play(n);
 }
 
 function stepRate() {
@@ -131,33 +199,41 @@ function stepRate() {
   store.set('rate', r);
   showRate();
 }
-const showRate = () => rateBtn && (rateBtn.textContent = `${fmtNum(speaker.rate)}×`);
+const showRate = () => $$('[data-rate]').forEach((b) => (b.textContent = `${fmtNum(speaker.rate)}×`));
 
-// ---------- share a selected quote ----------
-const quoteBtn = $<HTMLButtonElement>('[data-quote]');
-let quote = '';
+// ---------- a selected passage: comment on it (social.ts), or share it as a quote ----------
+const quoteBar = $('[data-quote-bar]');
+let selected = '';
 function placeQuoteButton() {
   const sel = getSelection();
   const text = sel?.toString().replace(/\s+/g, ' ').trim() ?? '';
   const inside = sel?.rangeCount && article?.contains(sel.getRangeAt(0).commonAncestorContainer) && sel.getRangeAt(0).commonAncestorContainer.parentElement?.closest('h1, .prose, .why, .digest-list');
-  if (!quoteBtn) return;
+  if (!quoteBar) return;
   if (!inside || text.length < 8) {
-    quoteBtn.hidden = true;
+    quoteBar.hidden = true;
     return;
   }
-  quote = text.length > 400 ? `${text.slice(0, 400)}…` : text;
+  selected = text;
   const r = sel!.getRangeAt(0).getBoundingClientRect();
-  quoteBtn.hidden = false;
+  quoteBar.hidden = false;
   // Below the selection, where the phone's own copy menu (shown above it) doesn't cover it.
   const top = Math.min(innerHeight - 56, r.bottom + 12);
-  const left = Math.max(12, Math.min(innerWidth - quoteBtn.offsetWidth - 12, r.left + r.width / 2 - quoteBtn.offsetWidth / 2));
-  quoteBtn.style.transform = `translate(${left}px, ${top}px)`;
+  const left = Math.max(12, Math.min(innerWidth - quoteBar.offsetWidth - 12, r.left + r.width / 2 - quoteBar.offsetWidth / 2));
+  quoteBar.style.transform = `translate(${left}px, ${top}px)`;
+}
+/** The comment form takes the passage (up to 300 characters, cut at a word: it is matched against the text). */
+function commentOnQuote() {
+  const q = selected.length > 300 ? selected.slice(0, 300).replace(/\s+\S*$/, '') : selected;
+  quoteBar!.hidden = true;
+  getSelection()?.removeAllRanges();
+  document.dispatchEvent(new CustomEvent('comment-on', { detail: q }));
 }
 async function shareQuote() {
   const title = article?.dataset.title ?? document.title;
   const url = new URL(article?.dataset.href ?? location.pathname, location.href).href;
+  const quote = selected.length > 400 ? `${selected.slice(0, 400)}…` : selected;
   const text = `«${quote}»\n— ${title}`;
-  quoteBtn!.hidden = true;
+  quoteBar!.hidden = true;
   if (navigator.share) {
     try {
       await navigator.share({ text, url });
@@ -220,17 +296,27 @@ export function initReader(get: () => Prefs, set: (patch: Prefs) => void) {
 
   if (listenBtn) {
     canListen().then((ok) => (listenBtn.hidden = !ok));
+    $('[data-listen-label]', listenBtn)!.textContent = idleLabel();
     listenBtn.addEventListener('pointerdown', getReady, { once: true });
     listenBtn.addEventListener('click', () => (speaker.state === 'idle' ? listenOr(toggleListen) : toggleListen()));
     showRate();
-    rateBtn?.addEventListener('click', stepRate);
+    $$('[data-rate]').forEach((b) => b.addEventListener('click', stepRate));
+    listenBar?.addEventListener('click', listenControl);
+    article.addEventListener('click', readFromHere);
     if ('mediaSession' in navigator) {
       const ms = navigator.mediaSession;
-      ms.setActionHandler('play', () => speaker.resume());
-      ms.setActionHandler('pause', () => speaker.pause());
-      ms.setActionHandler('stop', () => speaker.stop());
-      ms.setActionHandler('nexttrack', () => speaker.play(Math.min(speaker.at + 1, paragraphs.length - 1)));
-      ms.setActionHandler('previoustrack', () => speaker.play(Math.max(speaker.at - 1, 0)));
+      const on = (action: MediaSessionAction, fn: () => void) => {
+        try {
+          ms.setActionHandler(action, fn);
+        } catch {} // an action this browser doesn't know
+      };
+      on('play', () => speaker.resume());
+      on('pause', () => speaker.pause());
+      on('stop', () => speaker.stop());
+      on('nexttrack', () => speaker.skip(1));
+      on('previoustrack', () => speaker.skip(-1));
+      on('seekbackward', () => speaker.seek(-10));
+      on('seekforward', () => speaker.seek(10));
     }
   }
   $$('[data-size-step]').forEach((b) => b.addEventListener('click', () => stepSize(Number(b.dataset.sizeStep))));
@@ -242,7 +328,8 @@ export function initReader(get: () => Prefs, set: (patch: Prefs) => void) {
     clearTimeout(pending);
     pending = window.setTimeout(placeQuoteButton, 250);
   });
-  quoteBtn?.addEventListener('pointerdown', (e) => e.preventDefault()); // keep the selection while tapping
-  quoteBtn?.addEventListener('click', shareQuote);
-  addEventListener('scroll', () => quoteBtn && !quoteBtn.hidden && placeQuoteButton(), { passive: true });
+  quoteBar?.addEventListener('pointerdown', (e) => e.preventDefault()); // keep the selection while tapping
+  $('[data-quote]', quoteBar ?? undefined)?.addEventListener('click', shareQuote);
+  $('[data-quote-comment]', quoteBar ?? undefined)?.addEventListener('click', commentOnQuote);
+  addEventListener('scroll', () => quoteBar && !quoteBar.hidden && placeQuoteButton(), { passive: true });
 }

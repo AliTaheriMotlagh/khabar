@@ -3,10 +3,34 @@
 // (src/scripts/voice.ts; the sheet can close, and a download cut by leaving the page goes on from the next one), makes
 // it the voice that reads once it's complete, and switches between the downloaded ones. Once there is a voice it plays
 // what the reader asked for — from a tap on «گوش دادن», because iOS only starts audio inside a tap. The settings sheet
-// shows the voice's state too.
-import { $, $$, fmtNum, store, toast } from './core';
-import { hasPersianVoice, persianVoice, systemVoice } from './speech';
-import { activeVoice, cancelDownload, chooseVoice, chosenVoice, downloadVoice, downloading, missingBytes, removeVoice, storedBytes, voiceFits, voiceStates, voiceSupported, type VoiceState } from './voice';
+// shows the voice's state too. Below the downloadable voices, three more ways («راه‌های دیگر»): any voice of the device
+// by name, a speech service the reader connects with their own key (src/scripts/tts-remote.ts), and a model file of
+// their own (src/scripts/voice.ts, `saveCustomVoice`).
+import { $, $$, esc, fmtNum, store, toast } from './core';
+import { chosenDeviceVoice, deviceVoices, hasPersianVoice, persianVoice, systemVoice } from './speech';
+import { REMOTE_DEFAULTS, REMOTE_KINDS, remoteAudio, remoteConfig, remoteMissing, setRemoteConfig, type Remote, type RemoteKind } from './tts-remote';
+import {
+  CUSTOM,
+  activeVoice,
+  cancelDownload,
+  chooseVoice,
+  chosenVoice,
+  customNeedsBase,
+  customReady,
+  customVoice,
+  downloadVoice,
+  downloading,
+  missingBytes,
+  removeCustomVoice,
+  removeVoice,
+  saveCustomVoice,
+  storedBytes,
+  voiceClip,
+  voiceFits,
+  voiceStates,
+  voiceSupported,
+  type VoiceState,
+} from './voice';
 import { VOICES, voiceById, type Voice } from '../lib/voices';
 
 const dlg = $<HTMLDialogElement>('#voice');
@@ -33,8 +57,17 @@ const cards = () => $$<HTMLLIElement>('[data-vo]', dlg!);
 /** The build picked in a card: its full or light radio, or its only one. */
 const picked = (card: HTMLElement) => voiceById($<HTMLInputElement>('input[type=radio]:checked, input[type=hidden]', card)?.value)!;
 const builds = (card: HTMLElement) => VOICES.filter((v) => v.family === card.dataset.vo);
-/** The voice that reads now: a downloaded one, or 'system' (the device's or the server's). */
-const speaking = () => (hasPersianVoice() === 'local' ? activeVoice()?.id : system ? 'system' : null);
+/** The voice that reads now: a downloaded one (or the reader's own model, 'custom'), a device voice picked by name
+ *  ('dev'), the connected service ('remote'), or 'system' (the device's or the server's). */
+const speaking = () => {
+  const source = hasPersianVoice();
+  if (source === 'remote') return 'remote';
+  if (source === 'device' && chosenDeviceVoice()) return 'dev';
+  if (source === 'local') return activeVoice()?.id;
+  return system ? 'system' : null;
+};
+const extraCard = (k: string) => $(`[data-vo-extra="${k}"]`, dlg!);
+const SAMPLE = 'سلام! این نمونه‌ی صدایی است که خبرها را برایتان می‌خواند.';
 
 async function refresh() {
   states = await voiceStates();
@@ -113,12 +146,220 @@ function render() {
     }
     if (err) err.textContent = msg ?? '';
   }
+  renderExtras(now);
   const stored = storedBytes();
   const line = $('[data-voice-stored]', dlg)!;
   line.hidden = !stored;
   line.textContent = `صداهای دانلودشده ${mb(stored)} مگابایت از فضای این دستگاه را گرفته‌اند.`;
   $('[data-voice-listen]', dlg)!.hidden = !then || !hasPersianVoice();
   $('[data-voice-later]', dlg)!.textContent = then && !hasPersianVoice() ? 'بعداً' : 'بستن';
+}
+
+// ---------- the other ways: a device voice by name, a connected service, the reader's own model ----------
+function renderExtras(now: string | null | undefined) {
+  if (!dlg) return;
+  // A device voice by name.
+  const dev = extraCard('dev')!;
+  const voices = deviceVoices();
+  dev.hidden = !voices.length;
+  if (voices.length) {
+    const sel = $<HTMLSelectElement>('[data-dev-select]', dev)!;
+    const chosen = chosenDeviceVoice()?.voiceURI;
+    if (sel.options.length !== voices.length) {
+      const opt = (v: SpeechSynthesisVoice) => `<option value="${esc(v.voiceURI)}">${esc(v.name)} — ${esc(v.lang)}</option>`;
+      const fa = voices.filter((v) => v.lang.startsWith('fa'));
+      const rest = voices.filter((v) => !v.lang.startsWith('fa'));
+      sel.innerHTML = (fa.length ? `<optgroup label="فارسی">${fa.map(opt).join('')}</optgroup>` : '') + `<optgroup label="زبان‌های دیگر">${rest.map(opt).join('')}</optgroup>`;
+    }
+    if (chosen && !dev.classList.contains('open')) sel.value = chosen;
+    $('[data-dev-count]', dev)!.textContent = `${fmtNum(voices.length)} صدا · بدون دانلود`;
+    stateLine(dev, now === 'dev' ? `در حال استفاده: ${chosenDeviceVoice()!.name}` : '', now === 'dev');
+  }
+
+  // A connected service.
+  const remote = extraCard('remote')!;
+  const cfg = remoteConfig();
+  stateLine(remote, now === 'remote' ? 'در حال استفاده' : cfg ? 'وصل شده' : '', now === 'remote');
+  $('[data-x="remote-off"]', remote)!.hidden = !cfg;
+
+  // The reader's own model.
+  const own = extraCard('custom')!;
+  own.hidden = !voiceSupported();
+  const meta = customVoice();
+  const ready = customReady();
+  const here = ready || customNeedsBase();
+  $('[data-custom-meta]', own)!.textContent = meta && here ? `${meta.name} · ${mb(meta.size)} مگابایت` : 'Piper / sherpa-onnx · روی همین دستگاه';
+  stateLine(own, now === CUSTOM ? 'در حال استفاده' : customNeedsBase() ? 'منتظر دانلود یکی از صداها' : here ? 'افزوده شده' : '', now === CUSTOM);
+  $('[data-x="custom-add"] .i', own)?.toggleAttribute('hidden', here);
+  $('[data-x="custom-add"]', own)!.lastChild!.textContent = here ? ' جایگزینی با فایل دیگر' : ' افزودن';
+  $('[data-x="custom-add"]', own)!.classList.toggle('primary', !here);
+  $('[data-x="custom-use"]', own)!.hidden = !ready || now === CUSTOM;
+  $('[data-x="custom-try"]', own)!.hidden = !ready;
+  $('[data-x="custom-remove"]', own)!.hidden = !here;
+}
+
+// The service form: which fields each kind of service takes, what an empty one means, a line of help.
+const FIELDS: Record<RemoteKind, (keyof Remote)[]> = { openai: ['url', 'key', 'model', 'voice'], elevenlabs: ['key', 'model', 'voice'], azure: ['region', 'key', 'voice'], url: ['url', 'key'] };
+const HINTS: Record<RemoteKind, string> = {
+  openai: 'OpenAI، یا هر سرور سازگار با آن (مثل Kokoro-FastAPI یا openedai-speech روی کامپیوتر خودتان): آدرس پایه را بدهید و ‎/audio/speech‎ به آن اضافه می‌شود. برای سرور خودتان کلید لازم نیست.',
+  elevenlabs: 'شناسه‌ی صدا (Voice ID) را از کتابخانه‌ی صداهای ElevenLabs بردارید؛ مدل eleven_v3 فارسی می‌خواند.',
+  azure: 'کلید و منطقه‌ی منبع Speech خودتان در Azure. صداهای فارسی: fa-IR-DilaraNeural و fa-IR-FaridNeural.',
+  url: 'آدرسی که برای {text} صدا (MP3 یا WAV) برمی‌گرداند — مثلاً یک سرور TTS در شبکه‌ی خودتان. اگر توکن بدهید، با Authorization: Bearer فرستاده می‌شود.',
+};
+let kind: RemoteKind = 'openai';
+function remoteForm() {
+  return $<HTMLFormElement>('[data-remote-form]', dlg!)!;
+}
+/** Fills the form for the kind picked (on opening: the saved service's kind). */
+function fillRemote(opening = false) {
+  const form = remoteForm();
+  const cfg = remoteConfig();
+  if (opening) kind = cfg?.kind ?? kind;
+  const kinds = $('[data-remote-kinds]', form)!;
+  if (!kinds.children.length) {
+    kinds.innerHTML = REMOTE_KINDS.map((k) => `<label><input type="radio" name="kind" value="${k.kind}" /><span>${esc(k.name)}</span></label>`).join('');
+  }
+  for (const f of ['url', 'key', 'model', 'voice', 'region'] as const) {
+    const input = form.elements.namedItem(f) as HTMLInputElement;
+    input.value = cfg?.kind === kind ? (cfg[f] ?? '') : input.dataset.kind === kind ? input.value : '';
+    input.dataset.kind = kind;
+  }
+  showKind();
+}
+function showKind() {
+  const form = remoteForm();
+  $<HTMLInputElement>(`input[name="kind"][value="${kind}"]`, form)!.checked = true;
+  for (const label of $$('[data-rf]', form)) {
+    const f = label.dataset.rf as keyof Remote;
+    label.hidden = !FIELDS[kind].includes(f);
+    const input = $<HTMLInputElement>('input', label)!;
+    input.placeholder = (REMOTE_DEFAULTS[kind][f] as string) || (f === 'key' ? (kind === 'openai' || kind === 'url' ? 'برای سرور خودتان اختیاری' : '') : '');
+  }
+  $('[data-rf-url-label]', form)!.textContent = kind === 'url' ? 'آدرس (با {text} به جای متن)' : 'آدرس پایه‌ی API';
+  $('[data-rf-voice-label]', form)!.textContent = kind === 'elevenlabs' ? 'شناسه‌ی صدا (Voice ID)' : kind === 'azure' ? 'نام صدا' : 'صدا';
+  $('[data-remote-hint]', form)!.textContent = HINTS[kind];
+}
+function readRemote(): Remote {
+  const form = remoteForm();
+  const get = (f: string) => (form.elements.namedItem(f) as HTMLInputElement).value.trim() || undefined;
+  const c: Remote = { kind };
+  for (const f of FIELDS[kind]) (c as Record<string, unknown>)[f] = get(f);
+  return c;
+}
+/** Asks the service for the sample and plays it. Rejects with the service's error, for the reader. */
+async function tryRemote(c: Remote) {
+  const msg = $('[data-remote-msg]', remoteForm())!;
+  msg.textContent = '';
+  const missing = remoteMissing(c);
+  if (missing) throw new Error(missing);
+  msg.textContent = 'در حال گرفتن نمونه از سرویس…';
+  msg.classList.add('ok');
+  try {
+    const blob = await remoteAudio(SAMPLE, c);
+    playSample(URL.createObjectURL(blob));
+    msg.textContent = 'سرویس جواب داد ✓';
+  } catch (e) {
+    msg.classList.remove('ok');
+    throw e;
+  }
+}
+
+/** Plays a preview made here (a clip of the connected service or of the reader's model). */
+function playSample(url: string) {
+  stopSample();
+  sample.src = url;
+  sample.play().catch(() => toast('نمونه پخش نشد؛ یک بار دیگر بزنید'));
+}
+let speakingSample = false;
+function trySample(v: SpeechSynthesisVoice) {
+  stopSample();
+  const u = new SpeechSynthesisUtterance(v.lang.startsWith('fa') ? SAMPLE : `${SAMPLE} — This is how this voice sounds.`);
+  u.voice = v;
+  u.lang = v.lang;
+  speakingSample = true;
+  speechSynthesis.speak(u);
+}
+
+async function addCustom() {
+  const own = extraCard('custom')!;
+  const msg = $('[data-custom-msg]', own)!;
+  msg.classList.remove('ok');
+  const files = [...($<HTMLInputElement>('[data-custom-files]', own)!.files ?? [])];
+  const model = files.find((f) => /\.onnx$/i.test(f.name));
+  const tokens = files.find((f) => /tokens.*\.txt$/i.test(f.name)) ?? files.find((f) => /\.txt$/i.test(f.name));
+  if (!model || !tokens) return void (msg.textContent = 'هر دو فایل را با هم انتخاب کنید: مدل (.onnx) و tokens.txt');
+  msg.textContent = 'در حال نگه داشتن فایل‌ها روی دستگاه…';
+  msg.classList.add('ok');
+  try {
+    await saveCustomVoice(model, tokens, Number($<HTMLInputElement>('[data-custom-sid]', own)!.value));
+  } catch (e) {
+    msg.classList.remove('ok');
+    return void (msg.textContent = (e as Error).message);
+  }
+  await refresh();
+  if (customNeedsBase()) {
+    msg.textContent = 'فایل‌ها نگه داشته شد. برای اجرای این مدل، یکی از صداهای بالا را هم دانلود کنید (کوچک‌ترینش کافی است).';
+    return;
+  }
+  await testCustom();
+}
+/** Makes the sample with the reader's model: the first run loads it (slow on a phone), and shows whether it works. */
+async function testCustom() {
+  const own = extraCard('custom')!;
+  const msg = $('[data-custom-msg]', own)!;
+  msg.classList.add('ok');
+  msg.textContent = 'در حال راه انداختن مدل و ساختن نمونه…';
+  try {
+    playSample(await voiceClip(SAMPLE, true));
+    msg.textContent = 'مدل کار می‌کند ✓ از این به بعد خبرها را می‌خواند.';
+  } catch (e) {
+    msg.classList.remove('ok');
+    msg.textContent = `این مدل روی این دستگاه اجرا نشد (${(e as Error).message}). فایل‌ها را بررسی کنید: مدل باید برای sherpa-onnx آماده شده باشد.`;
+    if (chosenVoice() === CUSTOM) store.set('voice', '');
+  }
+  await refresh();
+}
+
+/** Handles the buttons of the other ways; true when the tap was one of them. */
+async function extraAction(t: Element): Promise<boolean> {
+  const action = t.closest<HTMLElement>('[data-x]')?.dataset.x;
+  if (!action) return false;
+  if (action === 'dev-use' || action === 'dev-try') {
+    const uri = $<HTMLSelectElement>('[data-dev-select]', dlg!)!.value;
+    const v = deviceVoices().find((x) => x.voiceURI === uri);
+    if (!v) return true;
+    if (action === 'dev-try') return trySample(v), true;
+    chooseVoice(`dev:${uri}`);
+    toast(`از این به بعد «${v.name}» خبرها را می‌خواند`);
+  } else if (action === 'remote-try') {
+    try {
+      await tryRemote(readRemote());
+    } catch (e) {
+      $('[data-remote-msg]', remoteForm())!.textContent = (e as Error).message;
+    }
+    return true;
+  } else if (action === 'remote-off') {
+    setRemoteConfig(null);
+    if (chosenVoice() === 'remote') store.set('voice', '');
+    $('[data-remote-msg]', remoteForm())!.textContent = '';
+    toast('اتصال سرویس صدا برداشته شد');
+  } else if (action === 'custom-add') {
+    await addCustom();
+    return true;
+  } else if (action === 'custom-try') {
+    await testCustom();
+    return true;
+  } else if (action === 'custom-use') {
+    chooseVoice(CUSTOM);
+    toast(`از این به بعد «${customVoice()?.name}» خبرها را می‌خواند`);
+  } else if (action === 'custom-remove') {
+    if (!confirm('فایل مدل صدای خودتان از این دستگاه پاک شود؟')) return true;
+    await removeCustomVoice();
+    $('[data-custom-msg]', extraCard('custom')!)!.textContent = '';
+    toast('پاک شد');
+  }
+  await refresh();
+  return true;
 }
 
 function stateLine(card: HTMLElement, text: string, on: boolean) {
@@ -130,7 +371,7 @@ function stateLine(card: HTMLElement, text: string, on: boolean) {
 /** Opens one card (closing the others): its details, with the size of what it would download. */
 async function expand(card: HTMLElement | null) {
   if (!dlg) return;
-  for (const c of [...cards(), $('[data-vo-system]', dlg)!]) {
+  for (const c of $$('.vo', dlg)) {
     const open = c === card;
     $('.vo-toggle', c)!.setAttribute('aria-expanded', String(open));
     $('.vo-body', c)!.hidden = !open;
@@ -158,8 +399,10 @@ export async function openVoice(after?: () => void) {
   if (!voiceSupported()) msg.textContent = 'این مرورگر نمی‌تواند صدا را روی دستگاه بسازد؛ مرورگر را به‌روز کنید.';
   await refresh();
   // The card to start from: the download under way, the voice in use, the one picked before, or the recommended one.
+  fillRemote(true);
   const id = downloading() ?? speaking() ?? chosenVoice();
-  const card = id === 'system' ? $('[data-vo-system]', dlg) : (cardOf(id) ?? (system ? null : cardOf(VOICES.find((v) => v.recommended)?.id)));
+  const extra = id === 'dev' || id?.startsWith('dev:') ? 'dev' : id === 'remote' || id === CUSTOM ? id : null;
+  const card = id === 'system' ? $('[data-vo-system]', dlg) : extra ? extraCard(extra) : (cardOf(id) ?? (system ? null : cardOf(VOICES.find((v) => v.recommended)?.id)));
   if (card?.dataset.vo && id && id !== 'system') {
     const radio = $<HTMLInputElement>(`input[value="${id}"]`, card);
     if (radio) radio.checked = true;
@@ -256,6 +499,8 @@ sample.preload = 'none';
 let sampleBtn: HTMLButtonElement | null = null;
 function stopSample() {
   sample.pause();
+  if (speakingSample) speechSynthesis.cancel();
+  speakingSample = false;
   sampleBtn?.setAttribute('aria-pressed', 'false');
   sampleBtn = null;
 }
@@ -278,7 +523,11 @@ async function settingsLine() {
   const pct = progress && getting && progress.total ? `${fmtNum(Math.floor((progress.loaded / progress.total) * 100))}٪` : '';
   $('[data-voice-status]', row)!.textContent = getting
     ? `در حال دانلود «${getting.name}» ${pct}`
-    : source === 'local' && local
+    : source === 'remote'
+      ? 'سرویس صدایی که خودتان وصل کرده‌اید'
+      : source === 'device' && chosenDeviceVoice()
+        ? `«${chosenDeviceVoice()!.name}» از صداهای این دستگاه`
+        : source === 'local' && local
       ? `«${local.name}»، روی همین دستگاه`
       : source === 'device'
         ? 'صدای فارسی خود دستگاه'
@@ -300,6 +549,8 @@ export function initVoiceOffer() {
 
   dlg.addEventListener('click', async (e) => {
     const t = e.target as Element;
+    // (Checked without waiting: «گوش دادن» below must start the audio inside the tap, for iOS.)
+    if (t.closest('[data-x]')) return void extraAction(t);
     const card = t.closest<HTMLElement>('.vo');
     const play = t.closest<HTMLButtonElement>('[data-vo-play]');
     if (play) {
@@ -345,6 +596,34 @@ export function initVoiceOffer() {
       then = null;
     }
   });
+  // The service form: the kind picked shows its fields; saving checks it with the sample, then makes it the voice.
+  const form = remoteForm();
+  form.addEventListener('change', (e) => {
+    const t = e.target as HTMLInputElement;
+    if (t.name !== 'kind') return;
+    kind = t.value as RemoteKind;
+    fillRemote();
+  });
+  form.addEventListener('submit', async (e) => {
+    e.preventDefault();
+    const c = readRemote();
+    const btn = $<HTMLButtonElement>('button[type=submit]', form)!;
+    btn.disabled = true;
+    try {
+      await tryRemote(c);
+      setRemoteConfig(c);
+      chooseVoice('remote');
+      toast('سرویس صدا وصل شد و از این به بعد خبرها را می‌خواند');
+      await refresh();
+    } catch (err) {
+      $('[data-remote-msg]', form)!.textContent = (err as Error).message;
+    } finally {
+      btn.disabled = false;
+    }
+  });
+  // Chrome fills its voice list a moment after load.
+  if ('speechSynthesis' in window) speechSynthesis.addEventListener('voiceschanged', () => dlg.open && render());
+
   // Full or light: the card's buttons and size follow the build picked.
   dlg.addEventListener('change', async (e) => {
     const card = (e.target as Element).closest<HTMLElement>('[data-vo]');
