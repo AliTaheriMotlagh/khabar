@@ -1,0 +1,62 @@
+{
+ "id": 6497,
+ "url": "https://t.me/dlmehr/6497",
+ "date": "2026-11-12T19:21:28+00:00",
+ "text": "https://fxtwitter.com/liquidai/status/2120947649994228088?a=88HSRXgDkxGof3k4f4A&s=52",
+ "forwarded_from": null,
+ "digest": false,
+ "hash": "5ef9b56cd6ba",
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/liquidai/status/2120947649994228088?a=88HSRXgDkxGof3k4f4A&s=52",
+  "site": "🧵 Thread • FxTwitter",
+  "title": "Liquid AI (@liquidai)",
+  "description": "Introducing 𝙻𝚒𝚚𝚞𝚒𝚍𝙲𝚘𝚍𝚎𝚌, our ~74M-parameter streaming audio codec powering LFM3-Audio-2B and LFM3-Omni-2B.\nAn audio codec turns speech into tokens a language model can predict, then converts those tokens back into audio. We built ours around two requirements:…",
+  "image": null
+ },
+ "gholam": {
+  "text": "سلام و ارادت رفقا؛ تیم Liquid AI از یه کدک صوتی جدید به اسم LiquidCodec با حدود ۷۴ میلیون پارامتر رونمایی کرده که قراره موتور صوتی مدل‌های سری LFM3 این شرکت باشه. کار این کدک در واقع خرد کردن گفتار به توکن‌هاییِ که مدل‌های زبانی متوجهش بشن و بعد، بازسازی سریع همون توکن‌ها به فایل صوتیه.\n\nطبق ادعای این شرکت، تمرکز اصلی روی سبک بودن و سرعت پردازش بوده و تست‌هاشون روی تک‌ترد پردازنده Apple M4 Max این نتایج رو ثبت کرده:\n• سرعت انکود (تبدیل صدا به توکن): بیش از ۳۶۱ برابرِ زمان واقعی\n• سرعت دیکود (تبدیل توکن به صدا): بیش از ۸۷ برابرِ زمان واقعی\n\nبه گفته سازنده‌ها، این مدل مرحله پیش‌آموزش خودش رو روی ۲۶۴ هزار ساعت داده صوتی با ۱۰۷ زبان مختلف گذرونده و فایل‌های اون روی پلتفرم هاگینگ‌فیس هم منتشر شده.",
+  "date": "2026-11-12T19:21:50+00:00"
+ },
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/liquidai/status/2120947649994228088",
+   "domain": "x.com",
+   "author": {
+    "name": "Liquid AI",
+    "handle": "liquidai",
+    "avatar": "https://pbs.twimg.com/profile_images/1702611993327251456/PUUuOA4W_200x200.jpg"
+   },
+   "text": "Introducing 𝙻𝚒𝚚𝚞𝚒𝚍𝙲𝚘𝚍𝚎𝚌, our ~74M-parameter streaming audio codec powering LFM3-Audio-2B and LFM3-Omni-2B.\n\nAn audio codec turns speech into tokens a language model can predict, then converts those tokens back into audio. We built ours around two requirements: tokens that are easy to predict and fast conversion back into speech.\n\nOn a single CPU thread on an Apple M4 Max, LiquidCodec runs at approximately:\n> 361× real time for encoding\n> 87× real time for decoding\n\nBoth measurements use FP32 precision.\n\n1/ 🧵",
+   "date": 1794508299,
+   "media": [
+    {
+     "type": "video",
+     "src": "https://video.twimg.com/tweet_video/HW8cc2bb0AAFL9U.mp4",
+     "poster": "https://pbs.twimg.com/tweet_video_thumb/HW8cc2bb0AAFL9U.jpg",
+     "ratio": 0.5625,
+     "duration": 0,
+     "gif": true
+    }
+   ],
+   "links": []
+  }
+ ],
+ "article": {
+  "title": "تیم Liquid AI از یه کدک صوتی جدید به اسم LiquidCodec با حدود ۷۴ میلیون پارامتر رونمایی کرده که قراره موتور صوتی مدل‌های سری LFM3 این شرکت باشه",
+  "source_title": "Introducing 𝙻𝚒𝚚𝚞𝚒𝚍𝙲𝚘𝚍𝚎𝚌, our ~74M-parameter streaming audio codec powering LFM3-Audio-2B and LFM3-Omni-2B.",
+  "body": [
+   "تیم Liquid AI از یه کدک صوتی جدید به اسم LiquidCodec با حدود ۷۴ میلیون پارامتر رونمایی کرده که قراره موتور صوتی مدل‌های سری LFM3 این شرکت باشه. کار این کدک در واقع خرد کردن گفتار به توکن‌هاییِ که مدل‌های زبانی متوجهش بشن و بعد، بازسازی سریع همون توکن‌ها به فایل صوتیه.",
+   "طبق ادعای این شرکت، تمرکز اصلی روی سبک بودن و سرعت پردازش بوده و تست‌هاشون روی تک‌ترد پردازنده Apple M4 Max این نتایج رو ثبت کرده:",
+   "• سرعت انکود (تبدیل صدا به توکن): بیش از ۳۶۱ برابرِ زمان واقعی",
+   "• سرعت دیکود (تبدیل توکن به صدا): بیش از ۸۷ برابرِ زمان واقعی"
+  ],
+  "why": "به گفته سازنده‌ها، این مدل مرحله پیش‌آموزش خودش رو روی ۲۶۴ هزار ساعت داده صوتی با ۱۰۷ زبان مختلف گذرونده و فایل‌های اون روی پلتفرم هاگینگ‌فیس هم منتشر شده.",
+  "why_label": "حرف آخر",
+  "tags": [
+   "صدا و موسیقی"
+  ]
+ },
+ "updated": "2026-11-12T19:25:27+00:00"
+}
