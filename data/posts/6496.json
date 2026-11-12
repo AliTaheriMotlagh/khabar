@@ -1,0 +1,48 @@
+{
+ "id": 6496,
+ "url": "https://t.me/dlmehr/6496",
+ "date": "2026-11-12T18:47:58+00:00",
+ "text": "https://blank.bio/introducing-ladon",
+ "forwarded_from": null,
+ "digest": false,
+ "hash": "cc27787d8b94",
+ "media": [],
+ "preview": {
+  "url": "https://blank.bio/introducing-ladon",
+  "site": "Blank Bio",
+  "title": "Introducing Ladon: An RNA foundation model for predicting patient outcomes",
+  "description": "Ladon is a state-of-the-art biological foundation model that predicts disease trajectory and treatment response in patients.",
+  "image": "https://cdn4.telesco.pe/file/p9M5L_eMZ44pCnKNAMn2cslIrC_XR-yS1TchsTzVKGyGp5_Q2MBXwfImI8rIB9PahVWNKCACFE5FT97KoDHf2bOBblF5bK_nvTs9i4IlDW-glBbnJJYGMLus4hDTNDn3OtJ0JdgtuRSTD4suBs5Gy_Ivhf9ucvq56LMkYnZnkphxsIU-tunFg_s8fEId8WlsYlhiUC6Jsu0WbbReQ1viF3L5KCY-Dq3r1RMFs0Tg-A-biTeIgWHdr3_ElSQhWUSt1XoVYF8MWDnSP5gq_AKFd8Y0R8atWUykPbBsDxLAC1_d6WWmnV1KSuq2MHSNp_4gc4-6AbbLitG67FOO0tporA.jpg"
+ },
+ "gholam": {
+  "text": "سلام و مخلص رفقا. شرکت Blank Bio به‌تازگی از یه مدل هوش مصنوعی پایه به اسم Ladon رونمایی کرده که با ۳ میلیارد پارامتر، روی میلیون‌ها نمونه از داده‌های آران‌ای (RNA-seq) آموزش دیده. طبق اعلام این تیم، هدف اصلی مدل اینه که با تحلیل دقیق مولکولی، پیش‌آگهی بیماری و میزان پاسخ‌دهی بیمار به داروها رو پیش‌بینی کنه تا جلوی شکست‌های پرهزینه در کارآزمایی‌های بالینی گرفته بشه.\n\nچندتا نکته‌ی مهم درباره‌ی این مدل که توی گزارش فنی اومده:\n• در پیش‌بینی پاسخ به درمان در کارآزمایی‌های بالینی سرطان (مثل ریه، کلیه و کبد)، از روش‌های پایه‌ای فعلی و نشانگرهای معروفی مثل PD-L1 دقیق‌تر عمل کرده.\n• توانایی درک جزئیات در سطح ایزوفرم‌ها و تشخیص ترکیب سلولی تومورها رو داره و می‌تونه به شناسایی زیست‌نشانگرهای مناسب برای تفکیک بیماران کمک کنه.\n• شرکت سازنده گزارش داده که با بزرگ‌تر شدن اندازه مدل و محاسبات پیش‌آموزش، عملکرد بالینی اون در بنچمارک اختصاصی به طور پیوسته رشد داشته.",
+  "date": "2026-11-12T18:48:24+00:00"
+ },
+ "links": [
+  {
+   "kind": "link",
+   "url": "https://www.blank.bio/introducing-ladon",
+   "domain": "blank.bio",
+   "title": "Introducing Ladon: An RNA foundation model for predicting patient outcomes",
+   "description": "Ladon is a state-of-the-art biological foundation model that predicts disease trajectory and treatment response in patients.",
+   "image": "https://blank.bio/assets/og-ladon.jpg",
+   "site": "Blank Bio"
+  }
+ ],
+ "article": {
+  "title": "و مخلص رفقا",
+  "source_title": "Introducing Ladon: An RNA foundation model for predicting patient outcomes",
+  "body": [
+   "و مخلص رفقا. شرکت Blank Bio به‌تازگی از یه مدل هوش مصنوعی پایه به اسم Ladon رونمایی کرده که با ۳ میلیارد پارامتر، روی میلیون‌ها نمونه از داده‌های آران‌ای (RNA-seq) آموزش دیده. طبق اعلام این تیم، هدف اصلی مدل اینه که با تحلیل دقیق مولکولی، پیش‌آگهی بیماری و میزان پاسخ‌دهی بیمار به داروها رو پیش‌بینی کنه تا جلوی شکست‌های پرهزینه در کارآزمایی‌های بالینی گرفته بشه.",
+   "چندتا نکته‌ی مهم درباره‌ی این مدل که توی گزارش فنی اومده:",
+   "• در پیش‌بینی پاسخ به درمان در کارآزمایی‌های بالینی سرطان (مثل ریه، کلیه و کبد)، از روش‌های پایه‌ای فعلی و نشانگرهای معروفی مثل PD-L1 دقیق‌تر عمل کرده.",
+   "• توانایی درک جزئیات در سطح ایزوفرم‌ها و تشخیص ترکیب سلولی تومورها رو داره و می‌تونه به شناسایی زیست‌نشانگرهای مناسب برای تفکیک بیماران کمک کنه.",
+   "• شرکت سازنده گزارش داده که با بزرگ‌تر شدن اندازه مدل و محاسبات پیش‌آموزش، عملکرد بالینی اون در بنچمارک اختصاصی به طور پیوسته رشد داشته."
+  ],
+  "why": null,
+  "tags": [
+   "سلامت"
+  ]
+ },
+ "updated": "2026-11-12T18:51:24+00:00"
+}
