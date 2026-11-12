@@ -189,7 +189,8 @@ function shape(raw: RawPost, ids: Set<number>): Post {
   const pageImage = links.map((l) => l.article?.image || l.image).find(Boolean) || raw.preview?.image || null;
   const cover: Media | null = firstStill ? { type: 'image', ...firstStill } : pageImage ? { type: 'image', src: pageImage } : null;
 
-  const kind: Post['kind'] = raw.digest ? 'digest' : raw.gholam?.text ? 'story' : 'brief';
+  // A story needs Gholam's text in the article too: a reply the pipeline didn't take as a translation leaves it empty.
+  const kind: Post['kind'] = raw.digest ? 'digest' : raw.gholam?.text && raw.article.body.length ? 'story' : 'brief';
   const items = kind === 'digest' ? digestItems(raw.text, ids) : [];
   const body = raw.article.body.length ? raw.article.body : raw.text.split(/\n+/).filter((l) => l.trim() && !/^https?:\/\/\S+$/.test(l.trim()));
   const title =

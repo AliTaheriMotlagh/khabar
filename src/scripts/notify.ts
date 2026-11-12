@@ -8,7 +8,8 @@ import { $, $$, BASE, guest, store, toast } from './core';
 import { getFollows } from './follow';
 
 type Mode = 'all' | 'topics' | 'daily';
-type Saved = { mode: Mode } | null;
+type Saved = { mode: Mode; at?: number } | null;
+const RESYNC = 7 * 864e5; // the server is told again now and then, so a subscription it lost comes back
 const ASK_KEY = 'notify-ask'; // when the home card was last dismissed
 const ASK_AGAIN = 30 * 864e5;
 
@@ -38,7 +39,32 @@ const saved = () => store.get<Saved>('push', null);
 /** Tells the server what this reader wants now (kind and topics). */
 async function sync(sub: PushSubscription, mode: Mode) {
   await api({ action: 'subscribe', guest: guest(), sub: sub.toJSON(), mode, topics: getFollows() });
-  store.set('push', { mode });
+  store.set('push', { mode, at: Date.now() });
+}
+
+/** A notification to this device now, so the reader sees it works (on an iPhone: from the home-screen app). */
+async function sendTest(btn: HTMLButtonElement) {
+  const sub = await current();
+  if (!sub) return paint();
+  btn.disabled = true;
+  const ask = () => api({ action: 'test', endpoint: sub.endpoint }) as Promise<{ ok: boolean; status: number; reason?: string }>;
+  try {
+    const r = await ask().catch(async (e: Error) => {
+      // The server doesn't know this subscription (lost, or from before): register it again, then try once more.
+      if (e.message !== '404') throw e;
+      await sync(sub, saved()?.mode ?? 'all');
+      return ask();
+    });
+    if (r.ok) toast('اعلان آزمایشی فرستاده شد؛ تا چند ثانیه‌ی دیگر می‌رسد', 'reward');
+    else if (r.status === 404 || r.status === 410) {
+      await disable(true);
+      toast('این دستگاه دیگر اعلان نمی‌گیرد؛ یک بار دیگر روشنش کنید');
+    } else toast(`سرویس اعلان نپذیرفت (${r.status})؛ کمی بعد دوباره امتحان کنید`);
+  } catch (e) {
+    toast((e as Error).message === '429' ? 'چند دقیقه‌ی دیگر دوباره امتحان کنید' : 'فرستاده نشد؛ اتصال اینترنت را بررسی کنید');
+  } finally {
+    btn.disabled = false;
+  }
 }
 
 /** From a tap: asks for permission (first, before anything else waits), subscribes, and saves the kind. */
@@ -61,14 +87,14 @@ async function enable(mode: Mode) {
   paint();
 }
 
-async function disable() {
+async function disable(quiet = false) {
   const sub = await current();
   store.set('push', null);
   if (sub) {
     api({ action: 'unsubscribe', endpoint: sub.endpoint }).catch(() => {});
     await sub.unsubscribe().catch(() => {});
   }
-  toast('اعلان‌ها خاموش شد');
+  if (!quiet) toast('اعلان‌ها خاموش شد');
   paint();
 }
 
@@ -83,7 +109,10 @@ async function paint() {
   toggle.setAttribute('aria-pressed', String(on));
   toggle.textContent = on ? 'خاموش کردن' : 'روشن کردن';
   toggle.classList.toggle('primary', !on);
+  box.dataset.on = String(on);
   $('[data-notify-modes]', box)!.hidden = !on;
+  const test = $<HTMLButtonElement>('[data-notify-test]', box);
+  if (test) test.hidden = !on;
   const radio = $<HTMLInputElement>(`input[name="notify-mode"][value="${mode}"]`, box);
   if (radio) radio.checked = true;
   const note = $('[data-notify-note]', box)!;
@@ -146,6 +175,8 @@ export async function initNotify() {
       const mode = ($<HTMLInputElement>('input[name="notify-mode"]:checked', box)?.value as Mode) || 'all';
       enable(mode);
     });
+    const test = $<HTMLButtonElement>('[data-notify-test]', box);
+    test?.addEventListener('click', () => sendTest(test));
     $('[data-notify-modes]', box)!.addEventListener('change', async (e) => {
       const mode = (e.target as HTMLInputElement).value as Mode;
       const sub = await current();
@@ -172,4 +203,9 @@ export async function initNotify() {
   $$('[data-open-settings]').forEach((b) => b.addEventListener('click', paint));
   paint();
   maybeAsk();
+  // On, and not told for a while: tell the server again (a lost or replaced subscription heals by itself).
+  const s = saved();
+  if (s && Notification.permission === 'granted' && Date.now() - (s.at ?? 0) > RESYNC) {
+    current().then((sub) => sub && sync(sub, s.mode)).catch(() => {});
+  }
 }

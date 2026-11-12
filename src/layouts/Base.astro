@@ -11,6 +11,7 @@ import VideoSheet from '../components/VideoSheet.astro';
 import Chat from '../components/Chat.astro';
 import Peek from '../components/Peek.astro';
 import Icon from '../components/Icon.astro';
+import ListenBar from '../components/ListenBar.astro';
 
 interface Props {
   title?: string;
@@ -127,6 +128,8 @@ const ld = [
         if (t === 'auto') t = matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
         d.dataset.theme = t;
         ['size', 'spacing', 'focus', 'view', 'media'].forEach(function (k) { if (s[k]) d.dataset[k] = s[k]; });
+        // A page opened in the player's shell (src/scripts/listen.ts): the bar of the window that plays is shown instead.
+        try { if (window.top !== window && window.frameElement && window.frameElement.hasAttribute('data-shell-frame')) d.dataset.framed = ''; } catch (e) {}
       })();
     </script>
   </head>
@@ -140,6 +143,7 @@ const ld = [
       <slot />
     </main>
     <Footer />
+    <ListenBar />
     <Settings />
     <VoiceOffer />
     <VideoSheet />

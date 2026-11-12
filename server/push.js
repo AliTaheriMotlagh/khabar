@@ -3,12 +3,14 @@
 // POST /api/push { action: 'subscribe', guest, sub, mode, topics }  mode: 'all' | 'topics' (the followed ones) | 'daily'
 // POST /api/push { action: 'unsubscribe', endpoint }
 // POST /api/push { action: 'renew', old, sub }                     the service worker, when the browser replaced it
+// POST /api/push { action: 'test', endpoint }                      a test notification to this (subscribed) browser:
+//      the reader checks it works on their phone; only to a subscription already stored, a few an hour.
 // POST /api/push { action: 'send', posts: [{ id, title, tags, kind }] }   Authorization: Bearer PUSH_SECRET
 //      Called by the site workflow (scripts/notify.mjs) once the new stories are live. Each post is announced once
 //      (`push:sent`); the very first call only records what is already out, so turning this on announces nothing old.
 // Keys: push:subs (hash: endpoint hash → { sub, mode, topics, at }) · push:sent (zset: post id → when announced)
 import { cleanText, configured, fail, guestId, hash, json, limited, postId, preflight, readBody, redis } from './_lib.js';
-import { sendPush, validSubscription, vapidConfigured } from './_push.js';
+import { env, sendPush, validSubscription, vapidConfigured } from './_push.js';
 
 export const OPTIONS = preflight;
 const MODES = ['all', 'topics', 'daily'];
@@ -19,7 +21,7 @@ const subKey = (endpoint) => hash(`push:${endpoint}`);
 
 export async function GET(request) {
   if (!on()) return fail(request, 501, 'not configured');
-  return json(request, { key: process.env.VAPID_PUBLIC_KEY }, { cache: 3600 });
+  return json(request, { key: env('VAPID_PUBLIC_KEY') }, { cache: 3600 });
 }
 
 export async function POST(request) {
@@ -32,6 +34,22 @@ export async function POST(request) {
     if (typeof body.endpoint !== 'string') return fail(request, 400, 'bad request');
     await redis(['HDEL', 'push:subs', subKey(body.endpoint)]);
     return json(request, { ok: true });
+  }
+
+  if (body.action === 'test') {
+    if (typeof body.endpoint !== 'string') return fail(request, 400, 'bad request');
+    if (await limited(request, ['push-test', 5, 3600])) return fail(request, 429, 'slow down');
+    const [raw] = await redis(['HGET', 'push:subs', subKey(body.endpoint)]);
+    if (!raw) return fail(request, 404, 'unknown');
+    const origin = (process.env.SITE_URL || new URL(request.url).origin).replace(/\/$/, '');
+    const msg = { title: 'اعلان‌ها کار می‌کنند ✓', body: `خبرهای تازه‌ی ${SITE_NAME} همین‌طور می‌رسند`, url: `${origin}/`, tag: 'test' };
+    try {
+      const { status, reason } = await sendPush(JSON.parse(raw).sub, msg, { ttl: 600, urgency: 'high', detail: true });
+      if (status === 404 || status === 410) await redis(['HDEL', 'push:subs', subKey(body.endpoint)]);
+      return json(request, { ok: status >= 200 && status < 300, status, reason });
+    } catch (e) {
+      return json(request, { ok: false, status: 0, reason: String(e?.message ?? e).slice(0, 120) });
+    }
   }
 
   if (body.action === 'renew') {
@@ -77,7 +95,7 @@ export function message(posts, origin) {
 }
 
 async function send(request, body) {
-  const secret = process.env.PUSH_SECRET;
+  const secret = env('PUSH_SECRET');
   if (!secret || request.headers.get('authorization') !== `Bearer ${secret}`) return fail(request, 401, 'unauthorized');
   const posts = (Array.isArray(body.posts) ? body.posts : [])
     .slice(0, 50)
@@ -104,23 +122,33 @@ async function send(request, body) {
   let sent = 0;
   let failed = 0;
   const gone = [];
+  // Why deliveries were refused, by push service and reason (shown in the workflow's log: a wrong key or contact shows
+  // up here as "web.push.apple.com 403 BadJwtToken").
+  const errors = {};
   // A few at a time: a function has a time limit, and push services rate-limit bursts.
   for (let i = 0; i < subs.length; i += 25) {
     await Promise.all(
       subs.slice(i, i + 25).map(async ({ key, rec }) => {
         const mine = pick(rec, fresh);
         if (!mine.length) return;
+        const host = new URL(rec.sub.endpoint).hostname;
         try {
-          const status = await sendPush(rec.sub, message(mine, origin), { topic: 'news' });
+          const { status, reason } = await sendPush(rec.sub, message(mine, origin), { topic: 'news', detail: true });
           if (status === 404 || status === 410) gone.push(key);
           else if (status >= 200 && status < 300) sent++;
-          else failed++;
-        } catch {
+          else {
+            failed++;
+            const k = `${host} ${status} ${reason}`.trim().slice(0, 160);
+            errors[k] = (errors[k] ?? 0) + 1;
+          }
+        } catch (e) {
           failed++;
+          const k = `${host} ${String(e?.name ?? 'error')}`;
+          errors[k] = (errors[k] ?? 0) + 1;
         }
       }),
     );
   }
   if (gone.length) await redis(...gone.map((k) => ['HDEL', 'push:subs', k]));
-  return json(request, { sent, failed, removed: gone.length, posts: fresh.length, subscribers: subs.length });
+  return json(request, { sent, failed, removed: gone.length, posts: fresh.length, subscribers: subs.length, ...(failed && { errors }) });
 }

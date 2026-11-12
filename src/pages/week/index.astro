@@ -12,6 +12,17 @@ import { abs, url } from '../../lib/posts';
       <div><h1><Icon name="trending" /> پربازدیدترین‌های هفته</h1><p>خبرهایی که در هفت روز گذشته بیشتر از همه خوانده شده‌اند؛ هر خواننده یک بار شمرده می‌شود.</p></div>
       <a class="btn sm" href={abs('rss/top.xml')}><Icon name="rss" /> RSS</a>
     </header>
+    <section class="playlist" data-wk-listen hidden aria-labelledby="wk-listen-title">
+      <button class="pl-play" type="button" data-wk-play aria-describedby="wk-listen-meta">
+        <Icon name="headphones" class="when-idle" />
+        <Icon name="pause" class="when-playing" />
+        <span class="sr-only" data-wk-label>پخش</span>
+      </button>
+      <div class="pl-text">
+        <b id="wk-listen-title">گوش دادن به پربازدیدهای هفته</b>
+        <small id="wk-listen-meta" data-wk-meta></small>
+      </div>
+    </section>
     <ol class="wk-list" data-wk-list aria-busy="true">
       {Array.from({ length: 4 }, () => <li class="wk-item skeleton" aria-hidden="true"></li>)}
     </ol>

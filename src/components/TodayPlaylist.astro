@@ -3,7 +3,6 @@
 // headline, then its text — with the screen locked too. The stories of the last three days are here; the browser
 // keeps today's (Tehran), or the last 24 hours after a quiet day, in the order the reader set for stories.
 import Icon from './Icon.astro';
-import ListenBar from './ListenBar.astro';
 import { picture, storyItems } from '../lib/posts';
 const items = storyItems().map(({ p, at }) => ({ id: p.id, t: p.article.title, at, h: p.href, m: p.minutes, c: p.cover ? picture(p.cover.src || p.cover.poster, 'small').src : '' }));
 ---
@@ -21,7 +20,6 @@ const items = storyItems().map(({ p, at }) => ({ id: p.id, t: p.article.title, a
           <small id="playlist-meta" data-playlist-meta></small>
         </div>
       </section>
-      <ListenBar of="playlist" />
     </>
   )
 }

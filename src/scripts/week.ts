@@ -3,6 +3,8 @@
 import { SITE } from '../site';
 import { $, BASE, compact, esc, fmtNum } from './core';
 import { watchMedia } from './media';
+import { player, type QItem } from './listen';
+import { canListen, listenOr } from './voice-offer';
 
 type Top = { id: number; views: number };
 type Card = { id: number; title: string; href: string; tag: string | null; cover: string | null; coverAlt: string | null; body?: string[]; why?: string | null };
@@ -47,4 +49,27 @@ export async function initWeek() {
     )
     .join('');
   watchMedia(list);
+  listen(rows.map(([, c]) => c!));
+}
+
+/** The week's most read, read aloud one after another by the site's player (src/scripts/listen.ts): each headline, then
+ *  its text. It goes on while the reader browses. */
+function listen(cards: Card[]) {
+  const box = $('[data-wk-listen]');
+  if (!box || !cards.length) return;
+  const items: QItem[] = cards.map((c) => ({ id: c.id, t: c.title, h: c.href, c: c.cover ?? undefined }));
+  const p = player();
+  $('[data-wk-meta]', box)!.textContent = `${fmtNum(items.length)} خبر، از پربازدیدترین · خبرها پشت سر هم خوانده می‌شوند`;
+  canListen().then((ok) => (box.hidden = !ok));
+  const label = $('[data-wk-label]', box)!;
+  const off = p.subscribe((s) => {
+    const state = s.key === 'week' ? s.state : 'idle';
+    box.dataset.state = state;
+    label.textContent = state === 'playing' || state === 'loading' ? 'مکث' : state === 'paused' ? 'ادامه' : 'پخش';
+  });
+  addEventListener('pagehide', off);
+  const play = () => (p.key === 'week' ? p.toggle() : p.playQueue({ key: 'week', title: 'پربازدیدهای هفته', href: location.pathname, unit: 'خبر' }, items));
+  const btn = $('[data-wk-play]', box)!;
+  btn.addEventListener('pointerdown', () => p.ready(), { once: true });
+  btn.addEventListener('click', () => (p.key === 'week' ? play() : listenOr(play)));
 }

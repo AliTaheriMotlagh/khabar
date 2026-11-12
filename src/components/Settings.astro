@@ -1,69 +1,135 @@
 ---
+// The settings sheet: grouped like a phone's settings — how it looks, how stories read and show, the stories, sound,
+// and notifications with topics. Each control's name is a setting of src/scripts/app.ts (radios: the value; switches:
+// data-on / data-off); the rows of sound, notifications and topics are filled by voice-offer.ts, notify.ts and follow.ts.
 import Icon from './Icon.astro';
 
 type Choice = { v: string; l: string };
-const groups: { key: string; label: string; choices: Choice[] }[] = [
-  { key: 'theme', label: 'پوسته', choices: [{ v: 'auto', l: 'خودکار' }, { v: 'light', l: 'روشن' }, { v: 'dark', l: 'تیره' }] },
-  { key: 'size', label: 'اندازه‌ی متن', choices: [{ v: 's', l: 'کوچک' }, { v: 'm', l: 'معمولی' }, { v: 'l', l: 'بزرگ' }, { v: 'xl', l: 'خیلی بزرگ' }] },
-  { key: 'spacing', label: 'فاصله‌ی خطوط', choices: [{ v: 's', l: 'فشرده' }, { v: 'm', l: 'معمولی' }, { v: 'l', l: 'باز' }] },
-  { key: 'focus', label: 'حالت مطالعه در صفحه‌ی خبر', choices: [{ v: 'off', l: 'عادی' }, { v: 'on', l: 'فقط خود خبر' }] },
-  { key: 'view', label: 'نمای خبرها', choices: [{ v: 'cards', l: 'کامل با تصویر' }, { v: 'list', l: 'فهرست کوتاه' }] },
-  { key: 'media', label: 'تصویر و ویدیو', choices: [{ v: 'show', l: 'نمایش' }, { v: 'tap', l: 'کم‌مصرف (با لمس)' }] },
-  { key: 'story', label: 'استوری‌ها چه خبرهایی را نشان دهند', choices: [{ v: 'unseen', l: 'فقط ندیده‌ها' }, { v: 'today', l: 'امروز' }, { v: 'all', l: 'همه‌ی سه روز' }] },
-  { key: 'order', label: 'ترتیب استوری‌ها', choices: [{ v: 'new', l: 'تازه‌ترین اول' }, { v: 'old', l: 'قدیمی‌ترین اول' }] },
-];
+const seg = (key: string, choices: Choice[]) => ({ key, choices });
+const sizes = [{ v: 's', l: 'کوچک' }, { v: 'm', l: 'معمولی' }, { v: 'l', l: 'بزرگ' }, { v: 'xl', l: 'خیلی بزرگ' }];
+const spacing = seg('spacing', [{ v: 's', l: 'فشرده' }, { v: 'm', l: 'معمولی' }, { v: 'l', l: 'باز' }]);
+const story = seg('story', [{ v: 'unseen', l: 'فقط ندیده‌ها' }, { v: 'today', l: 'امروز' }, { v: 'all', l: 'هر سه روز' }]);
+const order = seg('order', [{ v: 'new', l: 'تازه‌ترین اول' }, { v: 'old', l: 'قدیمی‌ترین اول' }]);
+const BASE = import.meta.env.BASE_URL.replace(/\/$/, '');
 ---
-<dialog class="sheet" id="settings" aria-labelledby="settings-title">
+<dialog class="sheet settings-sheet" id="settings" aria-labelledby="settings-title">
   <div class="sheet-head">
-    <h2 id="settings-title">تنظیمات نمایش</h2>
+    <h2 id="settings-title"><Icon name="settings" /> تنظیمات</h2>
     <button class="icon-btn" type="button" data-close aria-label="بستن"><Icon name="x" /></button>
   </div>
-  <form class="sheet-body" data-settings-form>
-    <p class="sample">ببین رفیق، اینجا متن رو همون‌طوری که راحتی تنظیم کن؛ اندازه، پوسته و نمای خبرها. ۱۴۰۵ — 2026</p>
-    {
-      groups.map((g) => (
-        <fieldset class="opt" data-story-opts={g.key === 'story' ? '' : undefined}>
-          <legend>{g.label}</legend>
-          <div class="seg">
-            {g.choices.map((c) => (
-              <label>
-                <input type="radio" name={g.key} value={c.v} />
-                <span>{c.l}</span>
-              </label>
-            ))}
-          </div>
-        </fieldset>
-      ))
-    }
-    <div class="opt voice-row">
-      <span class="voice-row-text"><b>دیده‌شده‌های استوری</b><small>بدون باز کردن تک‌تک خبرها</small></span>
-      <span class="seen-btns">
-        <button class="btn sm" type="button" data-seen-all>همه را دیده‌ام</button>
-        <button class="btn sm" type="button" data-seen-clear>از نو</button>
-      </span>
+  <form class="sheet-body set-body" data-settings-form>
+    <div class="set-preview" aria-label="پیش‌نمایش متن">
+      <small>پیش‌نمایش</small>
+      <p class="sample">انویدیا از نسل تازه‌ی تراشه‌هایش رونمایی کرد؛ متن خبرها با همین اندازه و فاصله‌ی خطوط نمایش داده می‌شود. ۱۴۰۵ — 2026</p>
     </div>
-    <div class="opt notify-box" data-notify hidden>
-      <div class="voice-row">
-        <span class="voice-row-text"><b>اعلان خبرهای تازه</b><small data-notify-status>خاموش</small></span>
-        <button class="btn sm primary" type="button" data-notify-toggle aria-pressed="false">روشن کردن</button>
+
+    <section class="set-group" aria-labelledby="set-look">
+      <h3 id="set-look"><Icon name="sun" /> ظاهر و متن</h3>
+      <fieldset class="set-row set-stack">
+        <legend>پوسته</legend>
+        <div class="set-tiles">
+          {[{ v: 'auto', l: 'خودکار' }, { v: 'light', l: 'روشن' }, { v: 'dark', l: 'تیره' }].map((c) => (
+            <label class="tile">
+              <input type="radio" name="theme" value={c.v} />
+              <span class="tile-box"><i class={`sw sw-${c.v}`} aria-hidden="true"><b></b><b></b><b></b></i><span>{c.l}</span></span>
+            </label>
+          ))}
+        </div>
+      </fieldset>
+      <fieldset class="set-row set-stack">
+        <legend>اندازه‌ی متن</legend>
+        <div class="seg seg-fill set-sizes">
+          {sizes.map((c) => (
+            <label>
+              <input type="radio" name="size" value={c.v} />
+              <span><b class={`aa aa-${c.v}`} aria-hidden="true">آ</b><small>{c.l}</small></span>
+            </label>
+          ))}
+        </div>
+      </fieldset>
+      <fieldset class="set-row set-stack">
+        <legend>فاصله‌ی خطوط</legend>
+        <div class="seg seg-fill">
+          {spacing.choices.map((c) => <label><input type="radio" name={spacing.key} value={c.v} /><span>{c.l}</span></label>)}
+        </div>
+      </fieldset>
+    </section>
+
+    <section class="set-group" aria-labelledby="set-read">
+      <h3 id="set-read"><Icon name="book" /> خواندن و نمایش</h3>
+      <fieldset class="set-row set-stack">
+        <legend>نمای فهرست خبرها</legend>
+        <div class="set-tiles two">
+          <label class="tile"><input type="radio" name="view" value="cards" /><span class="tile-box"><Icon name="cards" /><span>کامل با تصویر</span></span></label>
+          <label class="tile"><input type="radio" name="view" value="list" /><span class="tile-box"><Icon name="list" /><span>فهرست کوتاه</span></span></label>
+        </div>
+      </fieldset>
+      <label class="set-row set-switch">
+        <span class="set-text"><b>حالت مطالعه</b><small>در صفحه‌ی خبر فقط خود خبر، بی حاشیه</small></span>
+        <input type="checkbox" role="switch" name="focus" data-on="on" data-off="off" />
+        <span class="switch" aria-hidden="true"></span>
+      </label>
+      <label class="set-row set-switch">
+        <span class="set-text"><b>کم‌مصرف</b><small>تصویر و ویدیو فقط با لمس باز می‌شوند؛ برای اینترنت کند</small></span>
+        <input type="checkbox" role="switch" name="media" data-on="tap" data-off="show" />
+        <span class="switch" aria-hidden="true"></span>
+      </label>
+    </section>
+
+    <section class="set-group" aria-labelledby="set-stories" data-story-opts>
+      <h3 id="set-stories"><Icon name="stories" /> استوری‌ها</h3>
+      <fieldset class="set-row set-stack">
+        <legend>چه خبرهایی پخش شوند</legend>
+        <div class="seg seg-fill">
+          {story.choices.map((c) => <label><input type="radio" name={story.key} value={c.v} /><span>{c.l}</span></label>)}
+        </div>
+      </fieldset>
+      <fieldset class="set-row set-stack">
+        <legend>ترتیب</legend>
+        <div class="seg seg-fill">
+          {order.choices.map((c) => <label><input type="radio" name={order.key} value={c.v} /><span>{c.l}</span></label>)}
+        </div>
+      </fieldset>
+      <div class="set-row">
+        <span class="set-text"><b>دیده‌شده‌ها</b><small>بدون باز کردن تک‌تک خبرها</small></span>
+        <span class="set-actions">
+          <button class="btn sm" type="button" data-seen-all>همه را دیده‌ام</button>
+          <button class="btn sm" type="button" data-seen-clear>از نو</button>
+        </span>
       </div>
-      <div class="seg" role="radiogroup" aria-label="اعلان برای چه خبرهایی" data-notify-modes hidden>
-        <label><input type="radio" name="notify-mode" value="all" checked /><span>همه‌ی خبرها</span></label>
-        <label><input type="radio" name="notify-mode" value="topics" /><span>موضوع‌های من</span></label>
-        <label><input type="radio" name="notify-mode" value="daily" /><span>فقط خلاصه‌ی روزانه</span></label>
+    </section>
+
+    <section class="set-group" aria-labelledby="set-sound">
+      <h3 id="set-sound"><Icon name="headphones" /> صدا</h3>
+      <div class="set-row" data-voice-settings hidden>
+        <span class="set-text"><b>صدای فارسی برای «گوش دادن»</b><small data-voice-status></small></span>
+        <button class="btn sm" type="button" data-voice-open>دانلود صدا</button>
       </div>
-      <small class="notify-note" data-notify-note></small>
-    </div>
-    <div class="opt voice-row">
-      <span class="voice-row-text"><b>موضوع‌هایی که دنبال می‌کنید</b><small data-follow-count>هنوز هیچ</small></span>
-      <a class="btn sm" href={`${import.meta.env.BASE_URL.replace(/\/$/, '')}/tags/`}>انتخاب موضوع‌ها</a>
-    </div>
-    <div class="opt voice-row" data-voice-settings hidden>
-      <span class="voice-row-text"><b>صدای فارسی برای «گوش دادن»</b><small data-voice-status></small></span>
-      <button class="btn sm" type="button" data-voice-open>دانلود صدا</button>
-    </div>
-    <div class="sheet-foot">
-      <button class="btn" type="button" data-reset>پیش‌فرض</button>
+    </section>
+
+    <section class="set-group" aria-labelledby="set-notify">
+      <h3 id="set-notify"><Icon name="bell" /> اعلان‌ها و موضوع‌ها</h3>
+      <div class="set-row notify-box" data-notify hidden>
+        <div class="set-line">
+          <span class="set-text"><b>اعلان خبرهای تازه</b><small data-notify-status>خاموش</small></span>
+          <button class="btn sm primary" type="button" data-notify-toggle aria-pressed="false">روشن کردن</button>
+        </div>
+        <div class="seg seg-fill" role="radiogroup" aria-label="اعلان برای چه خبرهایی" data-notify-modes hidden>
+          <label><input type="radio" name="notify-mode" value="all" checked /><span>همه‌ی خبرها</span></label>
+          <label><input type="radio" name="notify-mode" value="topics" /><span>موضوع‌های من</span></label>
+          <label><input type="radio" name="notify-mode" value="daily" /><span>خلاصه‌ی روزانه</span></label>
+        </div>
+        <small class="notify-note" data-notify-note></small>
+        <button class="btn sm set-test" type="button" data-notify-test hidden><Icon name="send" /> ارسال اعلان آزمایشی به این دستگاه</button>
+      </div>
+      <div class="set-row">
+        <span class="set-text"><b>موضوع‌هایی که دنبال می‌کنید</b><small data-follow-count>هنوز هیچ</small></span>
+        <a class="btn sm" href={`${BASE}/tags/`}>انتخاب موضوع‌ها</a>
+      </div>
+    </section>
+
+    <div class="sheet-foot set-foot">
+      <button class="btn" type="button" data-reset><Icon name="refresh" /> پیش‌فرض</button>
       <button class="btn primary" type="button" data-close>تمام</button>
     </div>
   </form>

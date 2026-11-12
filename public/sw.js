@@ -142,7 +142,11 @@ self.addEventListener('notificationclick', (e) => {
       const same = tabs.find((c) => c.url === url);
       if (same) return same.focus();
       const tab = tabs.find((c) => new URL(c.url).origin === new URL(url).origin && 'navigate' in c);
-      if (tab) return tab.navigate(url).then((c) => (c || tab).focus());
+      // navigate() can refuse (a tab this worker doesn't control, older Safari): a new window then.
+      if (tab) {
+        const went = await tab.navigate(url).then((c) => (c || tab).focus(), () => null);
+        if (went) return went;
+      }
       return self.clients.openWindow(url);
     })(),
   );

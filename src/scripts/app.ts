@@ -11,6 +11,7 @@ import { initVoiceOffer } from './voice-offer';
 import { applyFollowFilter, initFollow } from './follow';
 import { initNotify } from './notify';
 import { initPlaylist } from './playlist';
+import { initListen } from './listen';
 
 export { getSaved, getHistory, rowHtml, store } from './core';
 
@@ -40,12 +41,22 @@ function saveSettings(patch: Partial<Settings>) {
   syncForm();
 }
 darkQuery.addEventListener('change', () => settings.theme === 'auto' && applySettings());
+// Changed on another page of the site (another tab, or the page open over this one while it plays): the same here.
+addEventListener('storage', (e) => {
+  if (e.key !== 'khabar:settings') return;
+  settings = { ...DEFAULTS, ...store.get<Partial<Settings>>('settings', {}) };
+  applySettings();
+  syncForm();
+});
 
 const settingsDialog = $<HTMLDialogElement>('#settings');
 const form = $<HTMLFormElement>('[data-settings-form]');
 function syncForm() {
   for (const [k, v] of Object.entries(settings)) {
-    const input = form?.querySelector<HTMLInputElement>(`input[name="${k}"][value="${v}"]`);
+    // A switch (two values: data-on / data-off), else the radio of that value.
+    const sw = form?.querySelector<HTMLInputElement>(`input[type="checkbox"][name="${k}"]`);
+    if (sw) sw.checked = v === sw.dataset.on;
+    const input = form?.querySelector<HTMLInputElement>(`input[type="radio"][name="${k}"][value="${v}"]`);
     if (input) input.checked = true;
   }
 }
@@ -55,7 +66,7 @@ form?.addEventListener('input', (e) => {
   const t = e.target as HTMLInputElement;
   // Other controls in the sheet (notifications: src/scripts/notify.ts) keep their own state.
   if (!(t.name in DEFAULTS)) return;
-  saveSettings({ [t.name]: t.value });
+  saveSettings({ [t.name]: t.type === 'checkbox' ? (t.checked ? t.dataset.on : t.dataset.off) : t.value });
   if (t.name === 'story' || t.name === 'order') storiesChanged();
 });
 $('[data-reset]')?.addEventListener('click', () => {
@@ -375,6 +386,7 @@ if (article) {
 }
 markNew();
 renderRail();
+initListen(); // before the pages' players: they play through it
 initFollow();
 initNotify();
 initPlaylist();

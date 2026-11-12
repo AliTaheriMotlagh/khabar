@@ -7,7 +7,6 @@ import SourceChip from '../../components/SourceChip.astro';
 import SaveButton from '../../components/SaveButton.astro';
 import Reactions from '../../components/Reactions.astro';
 import Comments from '../../components/Comments.astro';
-import ListenBar from '../../components/ListenBar.astro';
 import { SITE } from '../../site';
 import { abs, getFeed, getPosts, related, sized, faDate, faNum, pic, picture, tagHref, url, whyLabel, type Post } from '../../lib/posts';
 
@@ -195,7 +194,6 @@ const jsonLd = [
     <button class="btn primary sm" type="button" data-resume-go><Icon name="book" /> ادامه از جایی که ماندید</button>
     <button class="icon-btn" type="button" data-resume-x aria-label="بستن"><Icon name="x" /></button>
   </div>
-  <ListenBar of="story" />
   <div class="quote-bar" data-quote-bar role="toolbar" aria-label="بخش انتخاب‌شده" hidden>
     <button type="button" data-quote-comment><Icon name="comment" /> نظر روی این بخش</button>
     <button type="button" data-quote><Icon name="share" /> اشتراک</button>

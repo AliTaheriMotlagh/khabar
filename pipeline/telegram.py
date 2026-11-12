@@ -242,10 +242,26 @@ def fetch_gholam_comment(http: httpx.Client, post_id: int) -> Optional[dict]:
 
 # When the translation bot fails it still replies, with its error ("Could not summarize that message: 503 UNAVAILABLE…").
 GHOLAM_ERROR_RE = re.compile(r"^\s*Could not (?:summarize|translate)\b|^\s*(?:Error|Exception)\b[:\s]", re.I)
+# … and since November 2026, when he couldn't read the post, an apology in Persian instead of a story («داداش
+# متأسفانه محتوای این پست در دسترس نبود…», «رفقا، متاسفانه متن اصلی این توییت در دسترس نیست…»). Only a short reply
+# that says so about the post itself: «متاسفانه این قابلیت در ایران در دسترس نیست» is news.
+GHOLAM_UNREADABLE_RE = re.compile(
+    r"(?:متأسفانه|متاسفانه|شرمنده|ببخشید)[^.!؟?\n]{0,80}?"
+    r"(?:پست|پُست|توییت|توئیت|محتوا|متن|لینک|صفحه|ویدیو|ویدئو|تصویر|عکس|پیام)[^.!؟?\n]{0,80}?"
+    r"(?:در\s*دسترس\s*(?:نیست|نبود|نیس)|باز\s*نشد|باز\s*نمی‌?\s*شه|بالا\s*نیومد|لود\s*نشد|نتونستم|دسترسی\s*ندا(?:رم|شتم)|"
+    r"نمی‌?\s*تونم|خالیه|خالی\s*بود|گیر\s*کرده|نمایش\s*داده\s*نشد)"
+    # «هرچی زور زدیم این صفحه‌ای که فرستادی باز نشد», «سیستم نتونست محتوای اصلی رو بخونه»
+    r"|(?:هرچی|هر\s*کاری)\s*(?:زور\s*زدیم|کردیم)[^.!؟?\n]{0,80}?(?:باز\s*نشد|بالا\s*نیومد|لود\s*نشد|در\s*دسترس\s*نبود)"
+    r"|نتونست(?:م|یم)?\s+(?:محتوا|متن|صفحه|پست|لینک|توییت)[^.!؟?\n]{0,30}?(?:بخون|باز\s*کن|ببین)"
+)
+UNREADABLE_MAX = 600  # a longer reply has a story in it
 
 
 def is_gholam_error(text: str) -> bool:
-    return bool(GHOLAM_ERROR_RE.search(text or ""))
+    text = text or ""
+    if GHOLAM_ERROR_RE.search(text):
+        return True
+    return len(text.strip()) <= UNREADABLE_MAX and bool(GHOLAM_UNREADABLE_RE.search(text[:240]))
 
 
 def parse_gholam_comment(html: str) -> Optional[dict]:

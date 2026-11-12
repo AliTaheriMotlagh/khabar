@@ -26,10 +26,26 @@ export function validSubscription(sub) {
   }
 }
 
-export const vapidConfigured = () => Boolean(process.env.VAPID_PUBLIC_KEY && process.env.VAPID_PRIVATE_KEY);
+/** An environment value as set in the dashboard: pasted keys often carry a newline or quotes, which would break the
+ *  signature (a key served with a newline isn't one a browser can subscribe with either). */
+export const env = (name) => (process.env[name] ?? '').trim().replace(/^(["'])(.*)\1$/, '$2');
+export const vapidConfigured = () => Boolean(env('VAPID_PUBLIC_KEY') && env('VAPID_PRIVATE_KEY'));
+const FALLBACK_SUBJECT = 'https://khabar-ai.vercel.app/';
+/** VAPID's contact: Apple's push service turns away anything but a mailto: or https: URL (403 BadJwtToken), so a
+ *  malformed one (a bare address, "mailto: x", a localhost URL) is replaced by the site's own address. */
+export function vapidSubject(raw = env('VAPID_SUBJECT')) {
+  const s = raw.replace(/\s+/g, '');
+  if (/^mailto:[^@\s]+@[^@\s]+\.[^@\s]+$/i.test(s)) return s;
+  if (/^[^@\s:/]+@[^@\s]+\.[^@\s]+$/.test(s)) return `mailto:${s}`;
+  try {
+    const u = new URL(s);
+    if (u.protocol === 'https:' && !/^(localhost|127\.|0\.0\.0\.0|\[::1\])/.test(u.hostname)) return u.href;
+  } catch {}
+  return FALLBACK_SUBJECT;
+}
 
 /** `Authorization: vapid t=<JWT>, k=<public key>` for one push service (the JWT's audience is its origin). */
-export function vapidHeader(endpoint, { publicKey = process.env.VAPID_PUBLIC_KEY, privateKey = process.env.VAPID_PRIVATE_KEY, subject = process.env.VAPID_SUBJECT || 'mailto:admin@example.com', now = Date.now() } = {}) {
+export function vapidHeader(endpoint, { publicKey = env('VAPID_PUBLIC_KEY'), privateKey = env('VAPID_PRIVATE_KEY'), subject = vapidSubject(), now = Date.now() } = {}) {
   const pub = b64u.decode(publicKey);
   const key = createPrivateKey({ key: { kty: 'EC', crv: 'P-256', d: privateKey, x: b64u.encode(pub.subarray(1, 33)), y: b64u.encode(pub.subarray(33, 65)) }, format: 'jwk' });
   const head = b64u.encode(JSON.stringify({ typ: 'JWT', alg: 'ES256' }));
@@ -61,8 +77,9 @@ export function encrypt(payload, keys, { ephemeral, salt = randomBytes(16) } = {
   return Buffer.concat([salt, rs, Buffer.from([asPublic.length]), asPublic, body]);
 }
 
-/** Sends one message. Resolves to the push service's status: 201 delivered, 404/410 the subscription is gone. */
-export async function sendPush(sub, payload, { ttl = 6 * 3600, urgency = 'normal', topic } = {}) {
+/** Sends one message. Resolves to the push service's status: 201 delivered, 404/410 the subscription is gone. With
+ *  `detail`, to { status, reason }: what the service said when it refused (Apple: {"reason":"BadJwtToken"}). */
+export async function sendPush(sub, payload, { ttl = 6 * 3600, urgency = 'normal', topic, detail = false } = {}) {
   const res = await fetch(sub.endpoint, {
     method: 'POST',
     headers: {
@@ -77,5 +94,7 @@ export async function sendPush(sub, payload, { ttl = 6 * 3600, urgency = 'normal
     body: encrypt(JSON.stringify(payload), sub.keys),
     signal: AbortSignal.timeout(10_000),
   });
-  return res.status;
+  if (!detail) return res.status;
+  const reason = res.ok ? '' : (await res.text().catch(() => '')).replace(/\s+/g, ' ').slice(0, 120);
+  return { status: res.status, reason };
 }

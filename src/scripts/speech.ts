@@ -38,6 +38,17 @@ const clipUrl = (l: Line) => `${SITE.api}/api/tts/?id=${l.post}&i=${l.i}&v=${tag
 /** 50 ms of silent WAV, played inside the tap while the on-device voice makes its first clip. */
 const SILENCE = URL.createObjectURL(new Blob([new Uint8Array([82, 73, 70, 70, 36, 9, 0, 0, 87, 65, 86, 69, 102, 109, 116, 32, 16, 0, 0, 0, 1, 0, 1, 0, 34, 86, 0, 0, 68, 172, 0, 0, 2, 0, 16, 0, 100, 97, 116, 97, 0, 9, 0, 0, ...new Array(2304).fill(0)])], { type: 'audio/wav' }));
 
+/** This page, the window it is framed in by the site's player, and the page framed in this one. */
+function relatedDocs(): Document[] {
+  const docs = new Set<Document>([document]);
+  try {
+    const top = window.top!.document;
+    docs.add(top);
+    top.querySelectorAll<HTMLIFrameElement>('iframe[data-shell-frame]').forEach((f) => f.contentDocument && docs.add(f.contentDocument));
+  } catch {} // framed by another site
+  return [...docs];
+}
+
 export type VoiceSource = 'device' | 'cloud' | 'local' | 'remote';
 /** A voice whose sound the page gets as audio (and can keep). */
 export type Recordable = 'cloud' | 'local' | 'remote';
@@ -124,7 +135,13 @@ export class Speaker {
   }
 
   start(lines: Line[], from = 0) {
-    document.dispatchEvent(new CustomEvent('speaker-start', { detail: this }));
+    // One voice at a time across the windows too: the site's player plays on in its window while a page of the site is
+    // open in a frame over it (src/scripts/listen.ts), and either may start something.
+    for (const doc of relatedDocs()) {
+      try {
+        doc.dispatchEvent(new (doc.defaultView as typeof window).CustomEvent('speaker-start', { detail: this }));
+      } catch {}
+    }
     this.halt();
     this.lines = lines;
     this.engine = synth && !lines.some((l) => isPersian(l.text)) ? 'device' : (hasPersianVoice() ?? 'cloud');

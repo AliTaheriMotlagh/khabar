@@ -366,3 +366,52 @@ def test_posts_without_text_are_kept():
     # A post with its own text, media or preview is read as before.
     _, posts = telegram.parse_channel_page(CHANNEL_HTML)
     assert [p.text.startswith(("https://", "Big news")) for p in posts] == [True, True]
+
+
+def test_greetings_are_not_the_headline():
+    # Since November 2026 Gholam often greets before the news: the greeting is never the headline nor the story's start.
+    cases = {
+        "سلام و ارادت خدمت رفقا. الکساندر ونگ اعلام کرده که دستیار Muse ایمیل خودش رو داره. بقیه": "الکساندر ونگ اعلام کرده که دستیار Muse ایمیل خودش رو داره",
+        "سلام رفقا! پیترو میوتی یه محوطه باستانی پیدا کرده. بقیه": "پیترو میوتی یه محوطه باستانی پیدا کرده",
+        "دمتون گرم رفقا. طبق گزارش فایننشال تایمز قیمت عرضه بالا رفته. بقیه": "طبق گزارش فایننشال تایمز قیمت عرضه بالا رفته",
+        "سلام به رفقای گل. مایک تالفزن از مایکروسافت خبر داده. بقیه": "مایک تالفزن از مایکروسافت خبر داده",
+        "سلام و ارادت خدمت رفقا؛ مجموعه پایکا مدل تازه داده. بقیه": "مجموعه پایکا مدل تازه داده",
+        "رفقا بر اساس اصلاحیه‌ای که آنتروپیک منتشر کرده حق فسخ داره. بقیه": "بر اساس اصلاحیه‌ای که آنتروپیک منتشر کرده حق فسخ داره",
+        "داداش گلم، جیسون دینتر یه موزیک‌ویدیو منتشر کرده. بقیه": "جیسون دینتر یه موزیک‌ویدیو منتشر کرده",
+        "و داداش گل، مؤسسه a16z یه آمار داده. بقیه": "مؤسسه a16z یه آمار داده",
+        "سلام و ارادت خدمت رفقای گل. قضیه از این قراره که اندرو کوران گفته جدول زمانی جلو افتاده. بقیه": "اندرو کوران گفته جدول زمانی جلو افتاده",
+        "رفقا خبر رسیده که سرویس Fireworks هک شده. بقیه": "سرویس Fireworks هک شده",
+        "رفقا دم همگی گرم، تیم کدکس یه حال اساسی داده. بقیه": "تیم کدکس یه حال اساسی داده",
+    }
+    for text, title in cases.items():
+        paras, _, _ = shape.split_gholam(text)
+        assert shape.headline(paras) == title, text
+        assert paras[0].startswith(title), paras[0]
+    # A greeting alone on its line goes with its paragraph.
+    paras, _, _ = shape.split_gholam("سلام و ارادت خدمت رفقا.\n\nطبق پستی که اندرو کوران منتشر کرده، خبر مهمیه.")
+    assert paras == ["طبق پستی که اندرو کوران منتشر کرده، خبر مهمیه."]
+
+
+def test_opener_keeps_the_news():
+    # Words that only look like a greeting stay: «سلامت» (health), «طرف» (the guy), «به گفته…», «احترام به…».
+    for text in ("سلامت روان کاربرا مهمه.", "طرف اومده یه مدل ساخته.", "به گفته رویترز اپل مدل داده.", "احترام به حریم خصوصی مهمه.",
+                 "وال‌استریت ژورنال گزارش داده.", "بهترین مدل دنیا اومد."):
+        assert shape.strip_opener(text) == text, text
+    assert shape.strip_opener("رفقا به گفته رویترز اپل مدل داده.") == "به گفته رویترز اپل مدل داده."
+
+
+def test_unreadable_replies_are_not_translations():
+    for text in (
+        "داداش متأسفانه محتوای این پست در دسترس نبود و چیزی از متن یا جزئیاتش باز نشد که بتونم بخونم و برات توضیح بدم.",
+        "رفقا، متاسفانه متن اصلی این توییت در دسترس نیست و صفحه روی فرم ورود به توییتر (X) گیر کرده.",
+        "رفیق، راستش هرچی زور زدیم این صفحه‌ای که فرستادی باز نشد و انگار سرور وسط راه جا زد.",
+    ):
+        assert telegram.is_gholam_error(text), text
+    for text in (
+        "متاسفانه این قابلیت فعلاً در ایران در دسترس نیست و اپل گفته بعداً میاد.",  # news about availability
+        "رفقا، بخش خبری انویدیا اعلام کرده بیانیه داده. البته متن دقیق بیانیه توی این پست مشخص نیست.",
+        "متاسفانه متن اصلی این توییت در دسترس نیست. " + "اما ماجرا اینه که " * 60,  # long: a story follows
+    ):
+        assert not telegram.is_gholam_error(text), text
+    post = {"id": 7, "text": "https://x.com/a/status/1", "links": [], "gholam": {"text": "داداش متأسفانه محتوای این پست در دسترس نبود."}}
+    assert run.build_article(post)["body"] == []

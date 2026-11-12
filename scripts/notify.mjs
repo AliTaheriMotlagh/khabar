@@ -4,7 +4,7 @@
 // The server announces each post once, so sending a post twice (or from a re-run) does no harm.
 // Env: PUSH_SECRET (without it notifications are off and this does nothing), SITE (the primary site), LATEST.
 const SITE = (process.env.SITE || 'https://khabar-ai.vercel.app').replace(/\/$/, '');
-const SECRET = process.env.PUSH_SECRET;
+const SECRET = process.env.PUSH_SECRET?.trim();
 const LATEST = Number(process.env.LATEST) || 0;
 const WINDOW = 6 * 3600_000; // only posts from the last hours are news
 const sleep = (ms) => new Promise((r) => setTimeout(r, ms));

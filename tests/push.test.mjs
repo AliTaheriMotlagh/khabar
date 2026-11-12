@@ -12,7 +12,7 @@ process.env.VAPID_PRIVATE_KEY = server.getPrivateKey().toString('base64url');
 process.env.VAPID_SUBJECT = 'mailto:test@example.com';
 process.env.PUSH_SECRET = 'push-secret';
 process.env.SITE_URL = 'https://site.test';
-const { b64u, encrypt, validSubscription, vapidHeader } = await import('../server/_push.js');
+const { b64u, encrypt, validSubscription, vapidHeader, vapidSubject } = await import('../server/_push.js');
 const push = await import('../server/push.js');
 
 /** A browser: its keys, a subscription, and how it reads a message (RFC 8291, the receiving side). */
@@ -131,6 +131,38 @@ test('push: subscribe, then each new story announced once, to whom it concerns',
     delivered.clear();
     await send([{ id: 904, title: 'ربات دوم', tags: ['رباتیک'], kind: 'story' }]);
     assert.deepEqual([...delivered.keys()], [renewed.sub.endpoint]);
+  } finally {
+    globalThis.fetch = real;
+  }
+});
+
+test('push: a VAPID contact Apple accepts', () => {
+  assert.equal(vapidSubject('mailto:me@site.ir'), 'mailto:me@site.ir');
+  assert.equal(vapidSubject(' mailto: me@site.ir\n'), 'mailto:me@site.ir');
+  assert.equal(vapidSubject('me@site.ir'), 'mailto:me@site.ir');
+  assert.equal(vapidSubject('https://khabar.example/'), 'https://khabar.example/');
+  for (const bad of ['', 'admin', 'http://site.ir', 'https://localhost', 'mailto:nobody']) assert.equal(vapidSubject(bad), 'https://khabar-ai.vercel.app/', bad);
+});
+
+test('push: a test notification, only to a stored subscription; refusals say why', async () => {
+  const me = browser('https://web.push.apple.com/me-test');
+  assert.equal((await call(push.POST, { action: 'test', endpoint: me.sub.endpoint })).status, 404);
+  await call(push.POST, { action: 'subscribe', guest: 'guest-tttttttttttttttt', sub: me.sub, mode: 'all' });
+  const real = globalThis.fetch;
+  let refuse = false;
+  globalThis.fetch = async (_url, init) => {
+    if (refuse) return new Response('{"reason":"BadJwtToken"}', { status: 403 });
+    assert.equal(me.read(init.body).tag, 'test');
+    return new Response(null, { status: 201 });
+  };
+  try {
+    assert.deepEqual((await call(push.POST, { action: 'test', endpoint: me.sub.endpoint })).body, { ok: true, status: 201, reason: '' });
+    refuse = true;
+    const r = await call(push.POST, { action: 'test', endpoint: me.sub.endpoint });
+    assert.deepEqual(r.body, { ok: false, status: 403, reason: '{"reason":"BadJwtToken"}' });
+    const s = await call(push.POST, { action: 'send', posts: [{ id: 990, title: 'خبر', tags: [], kind: 'story' }] }, { authorization: 'Bearer push-secret' });
+    assert.ok(s.body.failed >= 1);
+    assert.match(Object.keys(s.body.errors).join(), /web\.push\.apple\.com 403 \{"reason":"BadJwtToken"\}/);
   } finally {
     globalThis.fetch = real;
   }

@@ -4,9 +4,40 @@ from __future__ import annotations
 import re
 from typing import Optional
 
-OPENER_RE = re.compile(
-    r"^\s*(?:(?:ببین|راستش|خلاصه|داش|آبجی|رفیق|داداشی|داداش|دوست من|طرف|گوش کن|بچه‌ها)(?![\w‌])\s*)+[،,:!]?\s*"
+# How Gholam opens: since November 2026 often a greeting of its own («سلام و ارادت خدمت رفقا.», «سلام رفقا!»,
+# «دمتون گرم رفقا.», «سلام به رفقای گل.») or a word to the reader («رفقا،», «رفیق،», «داداش گلم،»), before the news.
+# Neither is the news: strip_opener drops the run from the story's start, so it is never the headline nor read aloud.
+# Weak words («و», «به», «خدمت», «ارادت») only go when a greeting or a name comes after them («سلام به رفقا»), so
+# «رفقا به گفته رویترز…» keeps «به گفته رویترز…».
+_ADDRESS = ("رفقا", "رفقای", "رفیق", "رفیقا", "رفیقای", "داداش", "داداشی", "داش", "آبجی", "دوست", "دوستان", "عزیزان")
+_OPENER_STRONG = (
+    "سلام", "درود", "دمتون گرم", "دمت گرم", "دم همگی گرم", "دم همه گرم", "دم همتون گرم", "دم همه‌تون گرم", "دم شما گرم", "خسته نباشید", "صبح بخیر", "عصر بخیر", "شب بخیر",
+    *(f"{a} {e}" for a in _ADDRESS for e in ("گل", "گلم", "عزیز", "من")),  # «داداش گل،», «رفقای عزیز»
+    "رفقا", "رفیقا", "رفیق", "داداشی", "داداش", "داش", "آبجی", "گلم", "عزیزان", "عزیزم", "دوستان", "بچه‌ها",
+    # Not «طرف» ("the guy"): «طرف اومده یه مدل ساخته» is the story's subject.
+    "ببین", "راستش", "خلاصه", "گوش کن",
 )
+_OPENER_WEAK = ("و", "به", "خدمت", "همه", "همگی", "شما", "ارادت", "عرض ادب", "احترام")
+_OPENER_TOKEN_RE = re.compile(
+    r"\s*(" + "|".join(re.escape(w) for w in sorted({*_OPENER_STRONG, *_OPENER_WEAK}, key=len, reverse=True)) + r")(?![\w‌])"
+    r"[\s،,:!.؛;…]*"
+)
+# «قضیه از این قراره که …», «ماجرا اینه که …», «خبر رسیده که …»: a run-up to the news, never the news itself.
+_RUNUP_RE = re.compile(
+    r"^(?:(?:قضیه|ماجرا|داستان|جریان)\s+(?:از\s+)?(?:این\s*(?:قراره|قرارشه|است|ه)|اینه)|خبر\s+(?:رسیده|اومده|داریم))\s+که\s+"
+)
+
+
+def strip_opener(text: str) -> str:
+    """The text without Gholam's greeting or word to the reader at its start (see _OPENER_STRONG), nor a run-up."""
+    pos = cut = 0
+    while m := _OPENER_TOKEN_RE.match(text, pos):
+        pos = m.end()
+        if m.group(1) not in _OPENER_WEAK:
+            cut = pos
+    return _RUNUP_RE.sub("", text[cut:], count=1)
+
+
 # «چرا مهمه؟», «چرا مهم است؟», «اهمیتش اینه که» — often both, «چرا مهمه؟ اهمیتش اینه که …» — maybe bold, with an emoji or a
 # colon. The whole run of labels is dropped; the site prints its own heading. An answer that starts «چون …» keeps it.
 WHY_LABEL = r"(?:چرا\s*مهم(?:ه|\s*است|\s*هست)\s*[؟?]?|اهمیتش\s+(?:اینه|این\s+است)\s+که)"
@@ -101,6 +132,10 @@ def split_gholam(text: str) -> tuple[list[str], Optional[str], Optional[str]]:
       TAKEAWAY_LABEL.
     """
     paras = [re.sub(r"[ \t]+$", "", p.strip(), flags=re.M) for p in re.split(r"\n\s*\n|\n", text) if p.strip()]
+    # His greeting is not the story: dropped from the first paragraph, or the whole paragraph when it is only that.
+    if paras:
+        paras[0] = strip_opener(paras[0]).strip()
+        paras = [p for p in paras if p]
     for i, p in enumerate(paras):
         m = WHY_RE.match(p)
         if not m:
@@ -140,7 +175,7 @@ def headline(gholam_paras: list[str]) -> Optional[str]:
     """Gholam's first sentence, whole. A long one is cut at its first «؛» clause, never mid-thought."""
     if not gholam_paras:
         return None
-    sentence = OPENER_RE.sub("", first_sentence(gholam_paras[0]))
+    sentence = first_sentence(strip_opener(gholam_paras[0]))
     # A lede that opens a list ends with «:» («…معماری متفاوتیه که سوار کردن:»): a headline doesn't.
     sentence = re.sub(r"\s+", " ", sentence).rstrip(".!؟?:：؛;،, ")
     if not sentence:

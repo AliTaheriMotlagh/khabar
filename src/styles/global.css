@@ -483,6 +483,12 @@ img.img-ph { object-fit: none !important; background: var(--surface-2); }
 @media (max-width: 400px) { .lb-pos { display: none; } .lb-ctl button { width: 36px; } }
 :root[data-focus='on'] .listen-bar { bottom: calc(72px + env(safe-area-inset-bottom)); }
 :root[data-focus='on'][data-chrome='hide'] .listen-bar { bottom: calc(12px + env(safe-area-inset-bottom)); }
+/* the shell (src/scripts/listen.ts): while something plays, the next page opens in a frame over this one, which keeps
+   playing; its bar stays on top. The page in the frame hides its own bar. */
+.shell-frame { position: fixed; inset: 0; z-index: 80; width: 100%; height: 100%; border: 0; background: var(--bg); color-scheme: normal; }
+:root[data-shell], :root[data-shell] body { overflow: hidden; }
+:root[data-shell] .listen-bar { z-index: 85; }
+:root[data-shell][data-frame-modal] .listen-bar, :root[data-framed] .listen-bar { display: none !important; }
 .quote-bar {
   position: fixed; top: 0; left: 0; z-index: 70; display: inline-flex; padding: 3px; border-radius: 999px;
   background: var(--text); box-shadow: var(--shadow-lg);
@@ -932,7 +938,6 @@ dialog[open] { animation: sheet-in .3s var(--ease); }
 .drawer-head { padding-top: calc(12px + env(safe-area-inset-top)); }
 .drawer-head small { display: flex; align-items: center; gap: 6px; color: var(--text-3); font-size: 13px; }
 .sheet-body { padding: 6px 18px 20px; }
-.sample { font-size: var(--fs); line-height: var(--lh); background: var(--bg); border-radius: var(--radius-sm); padding: 12px 14px; margin: 12px 0 6px; }
 .opt { border: 0; margin: 0; padding: 12px 0; border-bottom: 1px solid var(--border); }
 .opt legend { font-size: 14px; font-weight: 800; color: var(--text-2); padding: 0; margin-bottom: 8px; }
 .seg { display: flex; flex-wrap: wrap; gap: 6px; }
@@ -942,6 +947,79 @@ dialog[open] { animation: sheet-in .3s var(--ease); }
 .seg input:checked + span { border-color: var(--accent); background: var(--accent-soft); color: var(--accent); font-weight: 800; }
 .seg input:focus-visible + span { outline: 2.5px solid var(--accent); outline-offset: 2px; }
 .sheet-foot { display: flex; justify-content: space-between; gap: 10px; padding-top: 14px; }
+
+/* the settings sheet (src/components/Settings.astro): groups of rows, like a phone's settings */
+dialog.settings-sheet { background: var(--bg); }
+.settings-sheet .sheet-head { background: color-mix(in srgb, var(--bg) 88%, transparent); -webkit-backdrop-filter: blur(14px); backdrop-filter: blur(14px); }
+.settings-sheet .sheet-head .i { width: 19px; height: 19px; color: var(--accent); }
+@media (min-width: 720px) { dialog.settings-sheet { width: 520px; } }
+.set-body { display: grid; gap: 14px; padding: 12px 14px 0; }
+.set-preview { padding: 10px 14px 12px; border-radius: var(--radius); background: var(--surface); border: 1px solid var(--border); box-shadow: var(--shadow); }
+.set-preview small { display: block; color: var(--text-3); font-size: 12px; font-weight: 700; margin-bottom: 2px; }
+.set-preview .sample { margin: 0; padding: 0; background: none; }
+.sample { font-size: var(--fs); line-height: var(--lh); }
+.set-group { display: grid; border-radius: var(--radius); background: var(--surface); border: 1px solid var(--border); overflow: hidden; }
+/* a group whose rows are all hidden (no voice to pick on this device yet) isn't shown */
+.set-group:not(:has(> :not(h3, [hidden]))) { display: none; }
+.set-group h3 { display: flex; align-items: center; gap: 8px; margin: 0; padding: 12px 16px 4px; font-size: 13px; font-weight: 800; color: var(--text-3); }
+.set-group h3 .i { width: 17px; height: 17px; color: var(--accent); }
+.set-row { display: flex; align-items: center; justify-content: space-between; gap: 12px; margin: 0; padding: 12px 16px; border: 0; min-width: 0; }
+.set-row:not([hidden]) ~ .set-row:not([hidden]) { border-top: 1px solid var(--border); }
+.set-row[hidden] { display: none; }
+.set-stack { display: grid; gap: 10px; justify-content: stretch; align-items: stretch; }
+.set-stack legend { float: right; width: 100%; padding: 0; margin: 0; font-size: 14.5px; font-weight: 700; color: var(--text); }
+.set-text { display: grid; gap: 2px; min-width: 0; font-size: 14.5px; }
+.set-text b { font-weight: 700; color: var(--text); }
+.set-text small { color: var(--text-3); font-size: 12.5px; line-height: 1.7; }
+.set-actions { display: flex; flex: none; gap: 6px; }
+.set-line { display: flex; align-items: center; justify-content: space-between; gap: 12px; }
+.notify-box.set-row { display: grid; gap: 10px; }
+.notify-box.set-row[hidden] { display: none; }
+.set-test { justify-self: start; background: none; border-style: dashed; }
+.set-test[hidden] { display: none; }
+.set-test .i { width: 16px; height: 16px; }
+/* segmented choices that share the row */
+.seg-fill { display: grid; grid-auto-flow: column; grid-auto-columns: 1fr; gap: 4px; padding: 4px; border-radius: 14px; background: var(--surface-2); }
+.seg-fill label { display: grid; }
+.seg-fill label span { justify-content: center; align-items: center; padding: 8px 6px; border: 0; border-radius: 10px; background: none; font-size: 13.5px; color: var(--text-2); text-align: center; line-height: 1.4; transition: background .2s, color .2s; }
+.seg-fill input:checked + span { background: var(--surface); color: var(--accent); box-shadow: var(--shadow-sm), 0 0 0 1px var(--border); }
+.set-sizes label span { display: grid; gap: 0; padding: 6px 4px; }
+.set-sizes small { font-size: 11.5px; color: var(--text-3); }
+.set-sizes input:checked + span small { color: inherit; }
+.aa { display: block; line-height: 1.3; font-weight: 800; }
+.aa-s { font-size: 14px; } .aa-m { font-size: 17px; } .aa-l { font-size: 20px; } .aa-xl { font-size: 24px; }
+/* picture tiles: the theme and the timeline's look */
+.set-tiles { display: grid; grid-template-columns: repeat(3, 1fr); gap: 8px; }
+.set-tiles.two { grid-template-columns: repeat(2, 1fr); }
+.tile { position: relative; display: grid; }
+.tile input { position: absolute; opacity: 0; inset: 0; cursor: pointer; }
+.tile-box { display: grid; justify-items: center; gap: 8px; padding: 12px 8px 10px; border-radius: 14px; border: 1.5px solid var(--border); background: var(--bg); font-size: 13.5px; color: var(--text-2); cursor: pointer; transition: border-color .2s, background .2s, color .2s; }
+.tile-box > .i { width: 26px; height: 26px; color: var(--text-3); }
+.tile input:checked + .tile-box { border-color: var(--accent); background: var(--accent-soft); color: var(--accent); font-weight: 800; }
+.tile input:checked + .tile-box > .i { color: var(--accent); }
+.tile input:focus-visible + .tile-box, .set-switch input:focus-visible + .switch { outline: 2.5px solid var(--accent); outline-offset: 2px; }
+.sw { display: grid; gap: 4px; width: 100%; max-width: 92px; height: 52px; padding: 8px; border-radius: 9px; border: 1px solid rgb(15 23 42 / .12); background: #f5f6fa; }
+.sw b { display: block; height: 6px; border-radius: 3px; background: #cfd6e4; }
+.sw b:first-child { width: 60%; background: #2f4fd8; }
+.sw b:last-child { width: 80%; }
+.sw-dark { background: #0b0f17; border-color: rgb(255 255 255 / .12); }
+.sw-dark b { background: #2a3550; }
+.sw-dark b:first-child { background: #8098ff; }
+.sw-auto { background: linear-gradient(135deg, #f5f6fa 0 50%, #0b0f17 50% 100%); border-color: rgb(128 128 128 / .35); }
+.sw-auto b { background: #8a94a8; }
+.sw-auto b:first-child { background: #5a72ec; }
+/* an on/off switch */
+.set-switch { cursor: pointer; }
+.set-switch input { position: absolute; opacity: 0; width: 1px; height: 1px; pointer-events: none; }
+.switch { position: relative; flex: none; width: 46px; height: 28px; border-radius: 999px; background: var(--surface-3); transition: background .2s; }
+.switch::after { content: ''; position: absolute; top: 3px; inset-inline-start: 3px; width: 22px; height: 22px; border-radius: 50%; background: #fff; box-shadow: 0 1px 3px rgb(0 0 0 / .25); transition: transform .2s var(--ease); }
+.set-switch input:checked + .switch { background: var(--accent); }
+/* right-to-left: «on» moves the knob to the left */
+.set-switch input:checked + .switch::after { transform: translateX(-18px); }
+.set-foot { position: sticky; bottom: 0; z-index: 1; margin: 0 -14px; padding: 12px 14px calc(12px + env(safe-area-inset-bottom)); background: color-mix(in srgb, var(--bg) 90%, transparent); -webkit-backdrop-filter: blur(14px); backdrop-filter: blur(14px); border-top: 1px solid var(--border); }
+.set-foot .btn { flex: 1; justify-content: center; }
+.set-foot .btn:first-child { flex: 0 0 auto; }
+.set-foot .i { width: 16px; height: 16px; }
 
 /* the on-device Persian voices: settings line and the sheet that picks, previews and downloads them (src/scripts/voice-offer.ts) */
 .voice-row { display: flex; align-items: center; justify-content: space-between; gap: 12px; }
