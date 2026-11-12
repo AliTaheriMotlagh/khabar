@@ -12,7 +12,7 @@
   "site": "FxTwitter",
   "title": "Pushmeet Kohli (@pushmeet)",
   "description": "Announcing a major milestone achieved by my team @GoogleDeepMind: we have proven key security properties of the machine code underlying the Signal messaging protocol. This is the first time the actual production code of a widely deployed protocol has been…",
-  "image": "https://cdn4.telesco.pe/file/va44TyCvDA3bJn8KMP5sdhFbIGrbmjr9WR1kwF2IvS4iHKnU-Ix-eUi5k0lFYdmcM9kdpvIELbPw7SrfDw5H7duxF5aXiSfnQb0ynRo_Ye8HAJWlSfTbO_FhV3wOpJfXfD52bWU2yVixJdjqhr8SOEycQuyBsGwjdd1MDINtcCML9OhwZVpKdzkGx7adyta5f7-TYSb6twNclR2CZoa7jrBid8HrkCmiSCPqCcRAZCNbQ6MQZCPfak0vOyggbzKeJuHyrp5Pi3CtXQlzCBxOyteJKS4VzWbgvakqQIiCZaVGmfBhGLLDcQQM8uIJ2NYOXd6PBlRxn3OorX7iIYNgng.jpg"
+  "image": "https://cdn4.telesco.pe/file/UR-0ke6I_PylRwd1aVEsv9sO6ltgYaxxhc8iuxNs02M_AeDmeZmLkCzX0-lVS-zVBG7lRYtBCUJPdX-TI2MH7XCsWlZGRJrFTIdUeUOpBIvhYsqNAXqQ06s_iHgLGbLjYqr7O3U7t3F-kq2cGMnwdKlhuUbCSGqylHGB2rrcU-rUiXttJj0JlJKcWlInGPX9K5q40wWU5c6XxlbBO1EeVYJD-__rgnACQr_FYp7VIQTg42qsc7y-6PiXUAF-npPDEolgDKgHp7jyVeJ3cHSZu294nZFsN-Gc22DxsZ72Ltd-zHNmDoO0wS9I4-d4vYWWVioRIWzFAY9VfyChl7pdxg.jpg"
  },
  "gholam": {
   "text": "داداش، پوشمیت کوهلی از تیم گوگل دیپ‌مایند اعلام کرده که موفق شدن برای اولین بار، ویژگی‌های امنیتی کلیدی کدهای اجرایی پیام‌رسان سیگنال رو به‌صورت ریاضی و دقیق (Formal Verification) تایید و اثبات کنن. طبق توضیحات ایشون، راستی‌آزمایی کدها در این ابعاد و عمق در حالت عادی ممکن بود سال‌ها زمان ببره، اما این تیم با فریم‌ورک جدید هوش مصنوعی خودشون به اسم AlphaProof Code این پروژه رو ظرف حدود یک ماه به سرانجام رسونده. در نهایت هم اشاره شده که مستندات و کدهای مربوط به این تاییدیه به‌صورت متن‌باز منتشر می‌شه تا سایر پژوهشگرها هم بتونن برای بالا بردن امنیت سیستم‌های حساس ازش استفاده کنن.",
@@ -64,5 +64,5 @@
    "علم"
   ]
  },
- "updated": "2026-11-12T05:47:31+00:00"
+ "updated": "2026-11-12T11:53:50+00:00"
 }
