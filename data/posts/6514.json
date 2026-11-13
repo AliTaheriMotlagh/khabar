@@ -1,0 +1,60 @@
+{
+ "id": 6514,
+ "url": "https://t.me/dlmehr/6514",
+ "date": "2026-11-13T19:05:18+00:00",
+ "text": "https://fxtwitter.com/anthropicai/status/2121317227618340990?a=AYUfC-KJYxvc25NEMz0&s=52",
+ "forwarded_from": null,
+ "digest": false,
+ "hash": "5f12519d8f8d",
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/anthropicai/status/2121317227618340990?a=AYUfC-KJYxvc25NEMz0&s=52",
+  "site": "FxTwitter · anthropic.com",
+  "title": "Anthropic (@AnthropicAI)",
+  "description": "Safety evaluations are critical for understanding whether a model is ready to deploy, which safeguards to build for it, and where to focus training and research.\nOn our Engineering Blog, we offer 10 recommendations for how to design, run and report them.…",
+  "image": "https://cdn4.telesco.pe/file/Ql75qLPwtfzb5RYYt5LL6bz-O6VHcGcFcILNenHNm7Im8ANnPRQ0bS2S7Bw4wFbe0zsEKRiI-Lr_fLOZtptDF06EQwzkINEfVXVgH-cg9I9HVkmoh_YmbNQXyc5bwqALQR0DVue0_Nz6s4aEnNNuz2SRrkSrrtzzis9uWij2D4-3vNnBCwn4NWXdWFEHntpsvVDRuLU4MCFejL0YuwOkIHSjefhpkZrVrOPytbleHbwT9CkeDnyEKjgs1nq5Y7i0AWL5Klmni3q0cEljU6FtcJtDmFVqVVpG9ujVWpv6hzHoYonOSPzh8eQVsqWwtYKXry2vYLi4ENs-c7CXU40nhA.jpg"
+ },
+ "gholam": {
+  "text": "رفیق، آنتروپیک تو یه پست تازه گفته ارزیابی‌های ایمنی برای اینکه بفهمیم یه مدل هوش مصنوعی آماده عرضه هست یا نه، چه حفاظ‌هایی براش بذاریم و تمرکز آموزش و تحقیق رو کجا ببریم، خیلی حیاتی‌ان. این شرکت اعلام کرده تو وبلاگ مهندسی خودش ۱۰ تا توصیه برای طراحی، اجرا و گزارش‌دهی همین تست‌ها منتشر کرده؛ البته تو خودِ این پست فقط خبرش اومده و متن اون ۱۰ مورد اینجا در دسترس نیست که جزئیاتشو ببینیم. خلاصه مثل معاینه فنی قبل از زدن به جاده‌ست که آنتروپیک می‌گه باید حساب‌شده و درست‌وحسابی انجام بشه. 🛡️",
+  "date": "2026-11-13T19:05:40+00:00"
+ },
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/AnthropicAI/status/2121317227618340990",
+   "domain": "x.com",
+   "author": {
+    "name": "Anthropic",
+    "handle": "AnthropicAI",
+    "avatar": "https://pbs.twimg.com/profile_images/1798110641414443008/XP8gyBaY_200x200.jpg"
+   },
+   "text": "Safety evaluations are critical for understanding whether a model is ready to deploy, which safeguards to build for it, and where to focus training and research.\n\nOn our Engineering Blog, we offer 10 recommendations for how to design, run and report them.\n\nhttps://www.anthropic.com/research/building-strong-safety-evaluations",
+   "date": 1794596413,
+   "media": [],
+   "links": [
+    "https://www.anthropic.com/research/building-strong-safety-evaluations"
+   ]
+  },
+  {
+   "kind": "link",
+   "url": "https://www.anthropic.com/research/building-strong-safety-evaluations",
+   "domain": "anthropic.com",
+   "title": "Building strong safety evaluations",
+   "description": "Recommendations for designing, running, and reporting safety evaluations, based on our own experiences.",
+   "image": "https://assets.claude.com/04a298be2efa241bd5a4a810b97c62bb8ef257dc.jpg",
+   "site": "anthropic.com"
+  }
+ ],
+ "article": {
+  "title": "آنتروپیک تو یه پست تازه گفته ارزیابی‌های ایمنی برای اینکه بفهمیم یه مدل هوش مصنوعی آماده عرضه هست یا نه، چه حفاظ‌هایی براش بذاریم و تمرکز آموزش و تحقیق رو کجا ببریم، خیلی حیاتی‌ان",
+  "source_title": "Safety evaluations are critical for understanding whether a model is ready to deploy, which safeguards to build for it, and where to focus…",
+  "body": [
+   "آنتروپیک تو یه پست تازه گفته ارزیابی‌های ایمنی برای اینکه بفهمیم یه مدل هوش مصنوعی آماده عرضه هست یا نه، چه حفاظ‌هایی براش بذاریم و تمرکز آموزش و تحقیق رو کجا ببریم، خیلی حیاتی‌ان. این شرکت اعلام کرده تو وبلاگ مهندسی خودش ۱۰ تا توصیه برای طراحی، اجرا و گزارش‌دهی همین تست‌ها منتشر کرده؛ البته تو خودِ این پست فقط خبرش اومده و متن اون ۱۰ مورد اینجا در دسترس نیست که جزئیاتشو ببینیم. خلاصه مثل معاینه فنی قبل از زدن به جاده‌ست که آنتروپیک می‌گه باید حساب‌شده و درست‌وحسابی انجام بشه. 🛡️"
+  ],
+  "why": null,
+  "tags": [
+   "آنتروپیک"
+  ]
+ },
+ "updated": "2026-11-13T19:09:22+00:00"
+}
