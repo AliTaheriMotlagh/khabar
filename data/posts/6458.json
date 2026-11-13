@@ -12,7 +12,7 @@
   "site": "🧵 Thread • FxTwitter",
   "title": "Geodesic Intelligence (@Geodesiclab)",
   "description": "Introducing NovaAtom-Lite, an all-atom structure prediction model for drug discovery.\nIt predicts the structures of proteins, nucleic acids, and the molecules they bind, including how they fit together.\nNovaAtom-Lite outperforms both IsoDDE and AlphaFold…",
-  "image": "https://cdn4.telesco.pe/file/keOl-dinwTO_cEPrJQnHXnt0fd7PuszTzr8ztjTcDbkOmuMf-Nwhx3Ov_jDVTlqwDWHeA3Ekr_mF364DbzYFLBSvzKr1qqs4E4990W_pbdUIbL9gMqQTLbZlK29yK4-1nSPq9XWp_rJ20ZpSv4zfJ3EIYZR4wmhQcEy5PqUqqrYbsrTxDWc_bI3u1IeXvZEAUHIlswITULsjuBo7dvFALu9irZssI24e9KoN1vonqodWJd_2seQiRboS8eVv61VKaSkEsnsbEUrdZ7__TkONSIyK4sx7fetf3MEIfARYG-QDeyJrJ03myttK8js-Agr46Ljh5ZjPJDZangVRRvA6Pg.jpg"
+  "image": "https://cdn4.telesco.pe/file/C_Ap3UarfkPp69exyTwpvVtRbwMR9Eze70dTs1GhKm3_F1PMis4Dk22kXwXkJEUstcpnfFHtsW-xLOKoojyn7jRhuUWeJHaKhTRboTL8tAdqT8y45PaMso0-NdZ_V-GE6qotacQHU7m650THAg5l_s7zxhP3hIhDhc4SjoVIq3U46ClpIYAO1HQiKxWCACIvocu5dOnwkY4Ykj5Kvlb6k5p7WGo6F4Fagq_RLMd9E7tjjjN36dP-dln575Zbi_yhzhmdjJiitPLd-Orz7fgxTsEBIn6mP_ZT7xnUYPB6e4MQV2cAs175GDKXQCNpJ6GmEqjCa3yvQtOntf9D5JIbbg.jpg"
  },
  "gholam": {
   "text": "رفقا، آزمایشگاه Geodesic Intelligence از یه مدل جدید به اسم NovaAtom-Lite رونمایی کرده که کارش پیش‌بینی ساختار تمام‌اتمی مولکول‌ها، پروتئین‌ها و اسیدهای نوکلئیک برای کشف و طراحی داروئه. طبق گزارش و بنچمارک‌هایی که خودشون منتشر کردن، این مدل عملکرد خیلی موفقی نسبت به رقبای سرشناسش ثبت کرده:\n\n• توی بنچمارک FoldBench برای پیش‌بینی ساختار اتصال آنتی‌بادی به آنتی‌ژن، این مدل به دقت ۷۹.۰۷ درصدی رسیده، در حالی که طبق این داده‌ها IsoDDE حدود ۷۵.۵۸ درصد و آلفافولد ۳ حدود ۴۷.۹۰ درصد ثبت کرده‌ن.\n• توی تسک پیش‌بینی پروتئین–لیگاند هم دقت ۷۷.۰۶ درصدی نشون داده و با افزایش تعداد نمونه‌ها (Seeds)، دقت مدل بالاتر هم می‌ره.\n\nبه گفته این شرکت، NovaAtom-Lite در حال حاضر از طریق API و پلتفرم NovaDDE در دسترس محقق‌ها قرار گرفته تا نقطه شروع قوی‌تری برای آزمایش‌هاشون باشه.",
@@ -68,5 +68,5 @@
    "سلامت"
   ]
  },
- "updated": "2026-11-13T15:04:25+00:00"
+ "updated": "2026-11-13T21:41:23+00:00"
 }

@@ -1,0 +1,59 @@
+{
+ "id": 6518,
+ "url": "https://t.me/dlmehr/6518",
+ "date": "2026-11-13T21:37:11+00:00",
+ "text": "https://fxtwitter.com/rohanpaul_ai/status/2121330917801431326?a=7v4gHtskt6rV-8h-y7Y&s=52",
+ "forwarded_from": null,
+ "digest": false,
+ "hash": "f5eaf61583b9",
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/rohanpaul_ai/status/2121330917801431326?a=7v4gHtskt6rV-8h-y7Y&s=52",
+  "site": "🧵 Thread • FxTwitter",
+  "title": "Rohan Paul (@rohanpaul_ai)",
+  "description": "New Carnegie Mellon paper finds that Opus 5.5 + Claude Code built a pre-training pipeline, an inference engine, and a cluster orchestrator that matched or beat production tools like SGLang and NVIDIA Dynamo on the same GPUs.\nSingularity-Bench gives agents…",
+  "image": "https://cdn4.telesco.pe/file/nA3wfFTWL31fU5gQF_1ljAwe4K8IznqygUzmll2zSCRMawJuz_ouQnmz97WRoLrdATPbbq_I-_b6zwULfMyYHpwTt7MGmO2uUR-NhrLwir6oGmA13gE_6m39KfhB6rO6yO1BBfKpbAIiLwZv5bzGoVxlm780nL-keViPwRor4ux28aUFRoizsXUR4kU8SNLr48E-XNH9c98JTOLtDieWIJICuFGfcFyEeLXWo04StgO8uVaHlSG7xXvBF62GD55kHveXLM7cal66UapYvRInZJKcxyPGUMn4t5-bI_exlSxybgZu_hhA9VvP-Zi69HADthwdXL8sCTo4W9QG5Hl2WQ.jpg"
+ },
+ "gholam": {
+  "text": "رفقا، یه مقاله جدید از دانشگاه کارنگی ملون اومده که روهان پال خلاصه‌ش رو به اشتراک گذاشته؛ داستان از این قراره که هوش مصنوعی دیگه فقط کاربر ابزارها نیست و توی این آزمایش، آچار و دستگاهِ خود کارگاه رو هم ساخته! 🤖 بر اساس این گزارش، ترکیب Opus 5.5 و Claude Code تونسته یک پایپ‌لاین پیش‌آموزش، موتور استنتاج و ارکستریتور کلاستر بسازه که روی همون GPUها هم‌تراز یا بهتر از ابزارهای تولیدی مثل SGLang و NVIDIA Dynamo عمل کرده.\n\n• بنچمارک جدید «Singularity-Bench» شش کارِ کامل رو (از پیش‌آموزش مدل تا ساخت موتور سرویس‌دهی) با بودجه ثابت به ایجنت‌ها می‌سپاره و خروجی رو روی سخت‌افزار یکسان با نمونه‌های انسانی می‌سنجه.\n• طبق اعداد این پست، Opus 5.5 شاخص ۱.۲۵ رو گرفته (که عدد ۱ معادل خط پایه انسانیه)، در حالی که میانگین ۱۰ ایجنت دیگه ۰.۵۸ بوده.\n• موتور سرویس‌دهیِ ساخته‌شده هم به ازای هر GPU-ساعت، ۱۱.۵۲ دلار کسب کرده؛ در مقایسه با ۸.۱۸ دلار برای SGLang.",
+  "date": "2026-11-13T21:37:37+00:00"
+ },
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/rohanpaul_ai/status/2121330917801431326",
+   "domain": "x.com",
+   "author": {
+    "name": "Rohan Paul",
+    "handle": "rohanpaul_ai",
+    "avatar": "https://pbs.twimg.com/profile_images/1816185267037859840/Fd18CH0v_200x200.jpg"
+   },
+   "text": "New Carnegie Mellon paper finds that Opus 5.5 + Claude Code built a pre-training pipeline, an inference engine, and a cluster orchestrator that matched or beat production tools like SGLang and NVIDIA Dynamo on the same GPUs.\n\nSingularity-Bench gives agents 6 end-to-end jobs, from pre-training a model to building a serving engine. Each result is scored against a production system, such as SGLang or Claude Code, on the same GPUs.\n\nOpus 5.5 scored a Singularity-Index of 1.25, where 1 equals the human baselines, while the other 10 agents averaged 0.58. Its serving engine earned 11.52 USD per GPU-hour against 8.18 for SGLang.",
+   "date": 1794599677,
+   "media": [
+    {
+     "type": "image",
+     "src": "https://pbs.twimg.com/media/HXB6m_ZaYAABw_a.jpg?name=orig",
+     "ratio": 1.1205
+    }
+   ],
+   "links": []
+  }
+ ],
+ "article": {
+  "title": "یه مقاله جدید از دانشگاه کارنگی ملون اومده که روهان پال خلاصه‌ش رو به اشتراک گذاشته",
+  "source_title": "New Carnegie Mellon paper finds that Opus 5.5 + Claude Code built a pre-training pipeline, an inference engine, and a cluster orchestrator…",
+  "body": [
+   "یه مقاله جدید از دانشگاه کارنگی ملون اومده که روهان پال خلاصه‌ش رو به اشتراک گذاشته؛ داستان از این قراره که هوش مصنوعی دیگه فقط کاربر ابزارها نیست و توی این آزمایش، آچار و دستگاهِ خود کارگاه رو هم ساخته! 🤖 بر اساس این گزارش، ترکیب Opus 5.5 و Claude Code تونسته یک پایپ‌لاین پیش‌آموزش، موتور استنتاج و ارکستریتور کلاستر بسازه که روی همون GPUها هم‌تراز یا بهتر از ابزارهای تولیدی مثل SGLang و NVIDIA Dynamo عمل کرده.",
+   "• بنچمارک جدید «Singularity-Bench» شش کارِ کامل رو (از پیش‌آموزش مدل تا ساخت موتور سرویس‌دهی) با بودجه ثابت به ایجنت‌ها می‌سپاره و خروجی رو روی سخت‌افزار یکسان با نمونه‌های انسانی می‌سنجه.",
+   "• طبق اعداد این پست، Opus 5.5 شاخص ۱.۲۵ رو گرفته (که عدد ۱ معادل خط پایه انسانیه)، در حالی که میانگین ۱۰ ایجنت دیگه ۰.۵۸ بوده.",
+   "• موتور سرویس‌دهیِ ساخته‌شده هم به ازای هر GPU-ساعت، ۱۱.۵۲ دلار کسب کرده؛ در مقایسه با ۸.۱۸ دلار برای SGLang."
+  ],
+  "why": null,
+  "tags": [
+   "آنتروپیک",
+   "کدنویسی"
+  ]
+ },
+ "updated": "2026-11-13T21:41:23+00:00"
+}
