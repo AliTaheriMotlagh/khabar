@@ -1,0 +1,58 @@
+{
+ "id": 6517,
+ "url": "https://t.me/dlmehr/6517",
+ "date": "2026-11-13T20:27:06+00:00",
+ "text": "https://fxtwitter.com/antigravity/status/2121327669534933025?a=AuZD16hQtwuwC05ZC9U&s=52",
+ "forwarded_from": null,
+ "digest": false,
+ "hash": "743319e59b9a",
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/antigravity/status/2121327669534933025?a=AuZD16hQtwuwC05ZC9U&s=52",
+  "site": "🧵 Thread • FxTwitter",
+  "title": "Google Antigravity (@antigravity)",
+  "description": "We're rolling out Dynamic Workflows in Google Antigravity.\nUse /run-workflow and the agent writes a Python script to orchestrate parallel and sequential subagents with structured handoffs, giving you deterministic control flow instead of prompt drift.\nReview…",
+  "image": null
+ },
+ "gholam": {
+  "text": "رفیق، گوگل آنتی‌گرویتی اعلام کرده که داره قابلیت جدید Dynamic Workflows رو عرضه می‌کنه و با دستور /run-workflow می‌شه ازش استفاده کرد. ماجرا اینه که ایجنت با این دستور یه اسکریپت پایتون می‌نویسه تا چند تا ساب‌ایجنت رو به‌صورت موازی یا پشت‌سرهم، با تحویلِ منظم و ساختاریافته هماهنگ کنه. به گفته این تیم، این روش باعث می‌شه به‌جای اینکه پرامپت وسط کار از مسیرش در بره، کنترلِ جریان کار دقیق و ثابت بمونه؛ انگار به‌جای اینکه هر بار شفاهی و از نو توضیح بدی، یه دستورالعملِ مکتوب دستشون بدی. قبل از اجرا هم می‌تونی اسکریپت رو ببینی و چکش کنی و ذخیره‌اش کنی تا هر وقت خواستی دقیقاً همون روند رو دوباره تکرار کنی. ⚙️",
+  "date": "2026-11-13T20:27:29+00:00"
+ },
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/antigravity/status/2121327669534933025",
+   "domain": "x.com",
+   "author": {
+    "name": "Google Antigravity",
+    "handle": "antigravity",
+    "avatar": "https://pbs.twimg.com/profile_images/1990585614279049216/-Zz6T2nk_200x200.png"
+   },
+   "text": "We're rolling out Dynamic Workflows in Google Antigravity.\n\nUse /run-workflow and the agent writes a Python script to orchestrate parallel and sequential subagents with structured handoffs, giving you deterministic control flow instead of prompt drift.\n\nReview the script before it runs, and save it to re-run the same flow anytime.",
+   "date": 1794598903,
+   "media": [
+    {
+     "type": "video",
+     "src": "https://video.twimg.com/amplify_video/2121327645556097024/vid/avc1/1018x720/eK1XnPFMb7n5MQqr.mp4?tag=16",
+     "poster": "https://pbs.twimg.com/amplify_video_thumb/2121327645556097024/img/R3mzJ3rfrhzZsrV_.jpg",
+     "ratio": 0.7063,
+     "duration": 19.6,
+     "gif": false
+    }
+   ],
+   "links": []
+  }
+ ],
+ "article": {
+  "title": "گوگل آنتی‌گرویتی اعلام کرده که داره قابلیت جدید Dynamic Workflows رو عرضه می‌کنه و با دستور /run-workflow می‌شه ازش استفاده کرد",
+  "source_title": "We're rolling out Dynamic Workflows in Google Antigravity.",
+  "body": [
+   "گوگل آنتی‌گرویتی اعلام کرده که داره قابلیت جدید Dynamic Workflows رو عرضه می‌کنه و با دستور /run-workflow می‌شه ازش استفاده کرد. ماجرا اینه که ایجنت با این دستور یه اسکریپت پایتون می‌نویسه تا چند تا ساب‌ایجنت رو به‌صورت موازی یا پشت‌سرهم، با تحویلِ منظم و ساختاریافته هماهنگ کنه. به گفته این تیم، این روش باعث می‌شه به‌جای اینکه پرامپت وسط کار از مسیرش در بره، کنترلِ جریان کار دقیق و ثابت بمونه؛ انگار به‌جای اینکه هر بار شفاهی و از نو توضیح بدی، یه دستورالعملِ مکتوب دستشون بدی. قبل از اجرا هم می‌تونی اسکریپت رو ببینی و چکش کنی و ذخیره‌اش کنی تا هر وقت خواستی دقیقاً همون روند رو دوباره تکرار کنی. ⚙️"
+  ],
+  "why": null,
+  "tags": [
+   "گوگل"
+  ]
+ },
+ "updated": "2026-11-13T20:30:41+00:00"
+}
