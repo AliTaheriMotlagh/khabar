@@ -1,0 +1,62 @@
+{
+ "id": 6520,
+ "url": "https://t.me/dlmehr/6520",
+ "date": "2026-11-13T22:22:19+00:00",
+ "text": "https://fxtwitter.com/miramurati/status/2121358640418635989?a=SAQ6gVZMkVAZXWIJD3U&s=52",
+ "forwarded_from": null,
+ "digest": false,
+ "hash": "afb36f882025",
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/miramurati/status/2121358640418635989?a=SAQ6gVZMkVAZXWIJD3U&s=52",
+  "site": "FxTwitter",
+  "title": "Mira Murati (@miramurati)",
+  "description": "Today on Connectionism: how we trained Inkling 2 Small with a native 4-bit forward pass on @nvidia GB300s, from the first pretraining step through the final RL rollout, one of the many improvements across the stack that took pretraining from weeks to 68 hours.…",
+  "image": "https://cdn4.telesco.pe/file/bsGsBBMApoMg-c8NsnNsqSJM1JpSgDa7WHRK2Q5-d-PYtctiFM8hpyp5Xi4mlUulXUv8EnBI-1wmGDvQsY5OyNfAt8M8T3c7L1RXq_1E2q04nQ-gnH3Yb220tnbyZVoh3y0EacbJaQ084l2AydFPdaMGpjDFfpQ4V0ySmtV9hitcVEc3ZrH4eWMdKkFBMkjBAzxKiyMswcIf7s_RdRiyiI4RnfROWmIB8mul2AzirRYHSac84MjRVPnvZnyGexJXPrF1sKe6qVW16zw-oBUHi68GFoMkPGe2WVgKDMAUiPgAFGM3DpPgJ4kcT_qe-ZULy8GTQQyySDbCu055gGwH2Q.jpg"
+ },
+ "gholam": {
+  "text": "رفقا، میرا موراتی و تیم Thinking Machines خبر دادن که توی مطلب جدید وبلاگ Connectionism توضیح دادن چطور مدل «Inkling 2 Small» رو آموزش دادن. به گفته اون‌ها، از همون قدم اولِ پیش‌آموزش تا مرحله آخر یادگیری تقویتی، با روش ۴-بیتیِ بومی (4-bit forward pass) روی تراشه‌های GB300 انویدیا جلو رفتن. خودِ تیمشون هم اشاره کرده که آموزش با بیت کمتر سرعت رو بالا می‌بره ولی خطای کوانتیزاسیون می‌تونه تو یادگیری اختلال ایجاد کنه؛ یه جورایی مثل تندنویسیِ سرِ کلاس که کارت سریع‌تر راه می‌افته اما اگه حواست نباشه ممکنه بعضی کلمات بد نوشته بشه. موراتی می‌گه این تغییر همراه با کلی بهینه‌سازی دیگه تو لایه‌های مختلف سیستمشون، زمان پیش‌آموزش رو از چند هفته به ۶۸ ساعت رسونده؛ البته جزئیات دقیق فنی‌ش تو خودِ مقاله وبلاگشونه و اینجا فقط همین خلاصه‌ش اومده. ⚡",
+  "date": "2026-11-13T22:22:44+00:00"
+ },
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/miramurati/status/2121358640418635989",
+   "domain": "x.com",
+   "author": {
+    "name": "Mira Murati",
+    "handle": "miramurati",
+    "avatar": "https://pbs.twimg.com/profile_images/2057853902918455296/D_nfq15L_200x200.jpg"
+   },
+   "text": "Today on Connectionism: how we trained Inkling 2 Small with a native 4-bit forward pass on @nvidia GB300s, from the first pretraining step through the final RL rollout, one of the many improvements across the stack that took pretraining from weeks to 68 hours.",
+   "date": 1794606287,
+   "media": [],
+   "links": [],
+   "quote": {
+    "author": {
+     "name": "Thinking Machines",
+     "handle": "thinkymachines",
+     "avatar": "https://pbs.twimg.com/profile_images/2075275500420001792/Q9J4M1DL_200x200.jpg"
+    },
+    "text": "Training with fewer bits is faster, but quantization error can interfere with learning.\n\nToday on Connectionism, we detail how we trained Inkling 2 Small with a native 4-bit forward pass from the first step of pretraining through the final RL rollout.\nhttps://thinkingmachines.ai/blog/end-to-end-4-bit-training",
+    "date": 1794605012,
+    "media": [],
+    "links": [
+     "https://thinkingmachines.ai/blog/end-to-end-4-bit-training"
+    ]
+   }
+  }
+ ],
+ "article": {
+  "title": "میرا موراتی و تیم Thinking Machines خبر دادن که توی مطلب جدید وبلاگ Connectionism توضیح دادن چطور مدل «Inkling 2 Small» رو آموزش دادن",
+  "source_title": "Today on Connectionism: how we trained Inkling 2 Small with a native 4-bit forward pass on @nvidia GB300s, from the first pretraining step…",
+  "body": [
+   "میرا موراتی و تیم Thinking Machines خبر دادن که توی مطلب جدید وبلاگ Connectionism توضیح دادن چطور مدل «Inkling 2 Small» رو آموزش دادن. به گفته اون‌ها، از همون قدم اولِ پیش‌آموزش تا مرحله آخر یادگیری تقویتی، با روش ۴-بیتیِ بومی (4-bit forward pass) روی تراشه‌های GB300 انویدیا جلو رفتن. خودِ تیمشون هم اشاره کرده که آموزش با بیت کمتر سرعت رو بالا می‌بره ولی خطای کوانتیزاسیون می‌تونه تو یادگیری اختلال ایجاد کنه؛ یه جورایی مثل تندنویسیِ سرِ کلاس که کارت سریع‌تر راه می‌افته اما اگه حواست نباشه ممکنه بعضی کلمات بد نوشته بشه. موراتی می‌گه این تغییر همراه با کلی بهینه‌سازی دیگه تو لایه‌های مختلف سیستمشون، زمان پیش‌آموزش رو از چند هفته به ۶۸ ساعت رسونده؛ البته جزئیات دقیق فنی‌ش تو خودِ مقاله وبلاگشونه و اینجا فقط همین خلاصه‌ش اومده. ⚡"
+  ],
+  "why": null,
+  "tags": [
+   "انویدیا"
+  ]
+ },
+ "updated": "2026-11-13T22:26:36+00:00"
+}
