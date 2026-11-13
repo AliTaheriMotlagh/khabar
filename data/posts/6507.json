@@ -1,0 +1,59 @@
+{
+ "id": 6507,
+ "url": "https://t.me/dlmehr/6507",
+ "date": "2026-11-13T03:00:01+00:00",
+ "text": "https://fxtwitter.com/rohanpaul_ai/status/2121064076889792843?a=ugWMrKPjkWgC56hQtVU&s=52",
+ "forwarded_from": null,
+ "digest": false,
+ "hash": "0b4bc86c3337",
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/rohanpaul_ai/status/2121064076889792843?a=ugWMrKPjkWgC56hQtVU&s=52",
+  "site": "🧵 Thread • FxTwitter",
+  "title": "Rohan Paul (@rohanpaul_ai)",
+  "description": "TSMC was hacked through an outside cloud provider that stored records on its current and former employees.\nThe company confirmed the leak after DarkForums and BreachForums listings offered 6.9GB the seller says holds 46K employee records.\nThe price is 3…",
+  "image": "https://cdn4.telesco.pe/file/WSmmjbHrwoi0OSUNn5i4EHeQ1-ikaQL16UevJNcEgQ4Y2-lVd1u64QAot_LNAJi-KWtrOW8r7rPex3_29EcYS7IF7IDdjf1vmmGS3NauHQ7hkNIY6_gqqpEOAWWOczNiiydpHfX47z3nfcgecHzYByx10rT7UnNTcxSHctzjQLyKjimlnqztQWtdsWexMObeJWVvV-mq6rWE7OmkHHormybYJlvWGBpSGL4NREMC8kNs93rkIzA1FJ5Q9siBav3mXByOri145lxtj3xpefUdyhF-vRA2AVIi7fCfIby3BoMWgjLMafsYs-Bn5SNOnMTF-aJQRgEOSc8FZS8-zbsSvg.jpg"
+ },
+ "gholam": {
+  "text": "رفقا، خبر اومده شرکت تراشه‌سازی TSMC درگیر یه ماجرای نشت اطلاعات شده؛ مثل این می‌مونه که گاوصندوقِ خونه امن باشه، ولی اسناد از دستِ انباردارِ بیرونی درز کنه. طبق نوشته‌ی روهان پال، TSMC تایید کرده اطلاعات کارمندهای فعلی و سابقش از طریق یه سرویس‌دهنده‌ی ابریِ بیرونی لو رفته، اما توی گزارش رسمیش به SEC گفته نشونه‌ای از نفوذ به سیستم‌های خودش پیدا نکرده و این داده‌ها ربطی به خط تولید یا مشتری‌ها نداره.\n\n• فروشنده توی انجمن‌های هکری DarkForums و BreachForums حجم ۶.۹ گیگابایت داده گذاشته و مدعیه شامل اطلاعات ۴۶ هزار کارمنده (هرچند تیتر یه گزارش خبری دیگه به حدود ۴۹ هزار فایل اشاره کرده).\n• قیمت رو ۳ بیت‌کوین، یعنی حدود ۲۲۰ هزار دلار گذاشته و تهدید کرده اگه تا یه هفته فروش نره، همه‌چیز رو رایگان منتشر می‌کنه.\n• توی نمونه‌ی ۴۹۹ ردیفیِ منتشرشده، ۱۹ مورد اطلاعات برای هر نفر دیده می‌شه؛ از جمله شماره شناسایی ملی، آدرس، مشخصات بانکی و شماره‌های تماس اضطراری.",
+  "date": "2026-11-13T03:00:28+00:00"
+ },
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/rohanpaul_ai/status/2121064076889792843",
+   "domain": "x.com",
+   "author": {
+    "name": "Rohan Paul",
+    "handle": "rohanpaul_ai",
+    "avatar": "https://pbs.twimg.com/profile_images/1816185267037859840/Fd18CH0v_200x200.jpg"
+   },
+   "text": "TSMC was hacked through an outside cloud provider that stored records on its current and former employees.\n\nThe company confirmed the leak after DarkForums and BreachForums listings offered 6.9GB the seller says holds 46K employee records.\n\nThe price is 3 Bitcoin, about $220K, with a threat to dump everything free after a week unsold.\n\nA 499-row sample, tsmc.txt, lists 19 fields per person, including national ID numbers, addresses, bank details and emergency contacts.\n\nTSMC’s SEC filing says it found no evidence its own systems were breached, and the data is unrelated to production or customers.",
+   "date": 1794536058,
+   "media": [
+    {
+     "type": "image",
+     "src": "https://pbs.twimg.com/media/HW-IQLsb0AAccpQ.jpg?name=orig",
+     "ratio": 1.1493
+    }
+   ],
+   "links": []
+  }
+ ],
+ "article": {
+  "title": "خبر اومده شرکت تراشه‌سازی TSMC درگیر یه ماجرای نشت اطلاعات شده؛ مثل این می‌مونه که گاوصندوقِ خونه امن باشه، ولی اسناد از دستِ انباردارِ بیرونی درز کنه",
+  "source_title": "TSMC was hacked through an outside cloud provider that stored records on its current and former employees.",
+  "body": [
+   "خبر اومده شرکت تراشه‌سازی TSMC درگیر یه ماجرای نشت اطلاعات شده؛ مثل این می‌مونه که گاوصندوقِ خونه امن باشه، ولی اسناد از دستِ انباردارِ بیرونی درز کنه. طبق نوشته‌ی روهان پال، TSMC تایید کرده اطلاعات کارمندهای فعلی و سابقش از طریق یه سرویس‌دهنده‌ی ابریِ بیرونی لو رفته، اما توی گزارش رسمیش به SEC گفته نشونه‌ای از نفوذ به سیستم‌های خودش پیدا نکرده و این داده‌ها ربطی به خط تولید یا مشتری‌ها نداره.",
+   "• فروشنده توی انجمن‌های هکری DarkForums و BreachForums حجم ۶.۹ گیگابایت داده گذاشته و مدعیه شامل اطلاعات ۴۶ هزار کارمنده (هرچند تیتر یه گزارش خبری دیگه به حدود ۴۹ هزار فایل اشاره کرده).",
+   "• قیمت رو ۳ بیت‌کوین، یعنی حدود ۲۲۰ هزار دلار گذاشته و تهدید کرده اگه تا یه هفته فروش نره، همه‌چیز رو رایگان منتشر می‌کنه.",
+   "• توی نمونه‌ی ۴۹۹ ردیفیِ منتشرشده، ۱۹ مورد اطلاعات برای هر نفر دیده می‌شه؛ از جمله شماره شناسایی ملی، آدرس، مشخصات بانکی و شماره‌های تماس اضطراری."
+  ],
+  "why": null,
+  "tags": [
+   "تراشه",
+   "امنیت"
+  ]
+ },
+ "updated": "2026-11-13T03:03:22+00:00"
+}
