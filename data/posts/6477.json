@@ -12,7 +12,7 @@
   "site": "🧵 Thread • FxTwitter",
   "title": "Pranjal (@pranjalssh)",
   "description": "Megakernel blog is out now\nWe implement a full layer (MoE + Attention) megakernel, achieving 1100 toks/s for Muse Spark, 2.1x faster than baseline.\nNvidia's Instruction cache makes it really hard to write bigger kernels. We ended up tuning both instruction…",
-  "image": "https://cdn4.telesco.pe/file/FTssmIOkQOT3InEmvlIJNwS0KN-MOCjIQah8zAwUEpTir_FusVLj89MZ9uP-6YEO393otfsGZ3BVMZag99zK3vmbXtIegm5tGGiDeVQyYyzhoWtm_DrkL7pVHPkxkRTONixpfs7bGCBW8kjbUG7LwArSKrkNoC7ix4tOw-4TS4Z-V4jvB-7XK-5-s8h8PyATs0n09xIkH2jRvaBIfuZiAwgMKo_EjqG-dflY98bE2CyV4WwAZ-S7Xe2JD-VK1_XYHccZP1NakGFmvqrPXeS3QElFQX4FV7zgInAUJrNsqAlSf3ewhDyZFCVjLH76sFdTrQ-jVWbO5EKFO-BqZS6N4A.jpg"
+  "image": "https://cdn4.telesco.pe/file/PUw_te4G5XcJeO9K8mzmuHQWtkmwyHshjtWPq-UgOeF4hM7aSvsTvst7xdDbOI32q64WQhdAmAEy_C8TzWmQIoAK3pP1FLUuxTIxt2Bh0hjWe4q2bAAzlAZRuTbcjon427KKGg667itMxGLo5YhYfqzx8UizoNNyjYxSaddwoXZTFUFevkaNgQ_zqxoc4QFmi1PVGijvFWFkElnuMN7xr15vwC0pIt0f3Kf9knQQ-EI8gzILD45jErhu2GkkeSgNmf0BZ1SztBrh18F62QN2bZJT9OOPdr9qrqGL7tw637L_QFVh_SQhgqi03SFmHOtmDu876k766yjnGJH7kOoqQA.jpg"
  },
  "gholam": {
   "text": "سلام رفقا. قضیه از این قراره که توسعه‌دهنده‌ای به اسم پرانجال با همکاری تیم LMSYS گزارشی منتشر کرده و از پیاده‌سازی یک «مگاکرنل» (Megakernel) یکپارچه برای پردازش هم‌زمان لایه‌های مدل Muse Spark خبر داده. \n\nطبق توضیحات اونا، این روش محاسبات لایه (شامل MoE و Attention) رو در قالب یک کرنل اجرا می‌کنه و تعداد دفعات اجرای کرنل در هر مرحله رو از ۱۴۵۰ بار به ۹۷ بار کاهش داده:\n\n• روی سیستمی با ۸ پردازنده GB300، سرعت تولید از ۵۱۷ به ۱۱۰۹ توکن بر ثانیه رسیده که یعنی حدود ۲.۱ برابر سریع‌تر از حالت پایه.\n• با بهینه‌سازی دقیق کَشِ دستورالعمل‌ها و داده‌ها، محاسبات و ارتباطات حافظه هم‌پوشانی پیدا کردن؛ طوری که بخشی از عملیات بعدی حتی قبل از تموم شدن عملیات قبلی اجرا می‌شه تا تأخیر به کمترین حد برسه.",
@@ -78,5 +78,5 @@
    "تراشه"
   ]
  },
- "updated": "2026-11-13T07:47:39+00:00"
+ "updated": "2026-11-13T15:04:25+00:00"
 }

@@ -12,7 +12,7 @@
   "site": "🧵 Thread • FxTwitter",
   "title": "Runway (@runwayml)",
   "description": "Today, we’re making Praxis-1 available to everyone. Our state-of-the-art world action model turns video pretraining into control for real robots, and it ships with open weights under Apache 2.0, ready to run and fine-tune on your own hardware.",
-  "image": "https://cdn4.telesco.pe/file/bcDJsQTNt7p7mM24DqC3QvBR1g9eOOWtyMsAD2XxNC222og0Ut4viDstfpMUjFOs-zGiq6_faYvQF8gUuaaeqR8-Kvb3W9XsqvUDQmGWhF8w2hhKl2EgFg2Gmz47SfBkVRWJ9M5ov1OLVZHmpLsS51gfWHN_OUJqNyts22Tjn5Qsln0HgdhUkDzvbLsp4W8BLEMBuBLBU97z91BT-J99E53oPmvhpe6C6GKULesikx-uB8_JVcjJZT1UhGufqNYTl4Y8ALgzSzml1eJxs8d9Gj2o50JF0lj35YUBCldX1UmnSIdpL740_sfL6o3s6Q6O1jrx-_9uCfw7U_sA0fUC8A.jpg"
+  "image": "https://cdn4.telesco.pe/file/Jf3mbZgfIgNx92cQ9va_mf74oVvPHZX7cIPrtyjplpO1zyn8ULwpMmq8fokWEUTGUQWdpnBOemoRGPChnlWG0n3wQqJvJbXrNP_X1djPCzJukggjqQM_N6B15NO-1ZYxwRzYi8FV9PDrNZrp7SQaU5q1efqS2C5ZszVuU9XIRI96GKw4cMcQeMqWRvt9HXzgnO8Y7bUys7nui5WDDLaDW7l55iEoBg7HmVLCLNw3nUxPCeGEbvYiRUUjNKrk0aYJpK8lhhgFf6kMzFR-bPFWnRHWnZo2HeVTcw7jJLHcrCPgSh0mgdFPdccYI83fh1VJE1ukOosJWc079bNCbuxYLg.jpg"
  },
  "gholam": {
   "text": "سلام رفقا، شرکت ران‌وی (Runway) مدل جدیدی به اسم Praxis-1 رو معرفی کرده که به گفته خودشون، یه مدل ۲۷ میلیارد پارامتری از نوع Mixture-of-Experts برای هدایت و کنترل ربات‌های واقعیه.\n\nچند نکته مهمی که توی معرفی این مدل اعلام شده:\n• وزن‌های مدل با مجوز متن‌باز Apache 2.0 منتشر شده تا هر کسی بتونه روی سخت‌افزار خودش اون رو اجرا یا فاین‌تیون کنه.\n• طبق ادعای ران‌وی، این مدل با یادگیری از ویدیوهای عمومی کار می‌کنه و توی لیدربورد RoboLab-120 انویدیا بالاتر از بقیه مدل‌های متن‌باز این حوزه قرار گرفته.\n• سازنده‌ها گزارش دادن که این سیستم در اجرای وظایف بازوی رباتیک، نسبت به مدلی مثل GPT-6 Astra حدود ۱۵.۶ برابر سریع‌تر عمل کرده و ۵۱ برابر هزینه کمتری داشته.",
@@ -57,5 +57,5 @@
    "متن‌باز"
   ]
  },
- "updated": "2026-11-13T07:47:39+00:00"
+ "updated": "2026-11-13T15:04:25+00:00"
 }

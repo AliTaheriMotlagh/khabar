@@ -1,0 +1,62 @@
+{
+ "id": 6510,
+ "url": "https://t.me/dlmehr/6510",
+ "date": "2026-11-13T15:00:39+00:00",
+ "text": "https://fxtwitter.com/googledeepmind/status/2121229774865527097?a=Cqe5I-XXga31_fgozlM&s=52",
+ "forwarded_from": null,
+ "digest": false,
+ "hash": "1fcdec268250",
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/googledeepmind/status/2121229774865527097?a=Cqe5I-XXga31_fgozlM&s=52",
+  "site": "🧵 Thread • FxTwitter",
+  "title": "Google DeepMind (@GoogleDeepMind)",
+  "description": "Accurate weather forecasting starts with how clearly we can observe the atmosphere in real-time.\n🌍\nThat’s why we’re releasing PARDIG and SatWeave - the foundational datasets behind WeatherNext 3 - to help researchers and developers build new climate applications…",
+  "image": null
+ },
+ "gholam": {
+  "text": "رفیق، گوگل دیپ‌مایند خبر داده دو تا مجموعه داده به اسم PARDIG و SatWeave رو منتشر کرده که زیربنای WeatherNext 3 هستن تا پژوهشگرها و برنامه‌نویس‌ها بتونن ابزارهای اقلیمی جدیدی بسازن. مثل این می‌مونه که برای رصد لحظه‌ای جو، دید سیستم‌های هواشناسی رو از همون اول شفاف‌تر کرده باشن. 🌍\n\n• به گفته دیپ‌مایند، PARDIG هر ۱۵ دقیقه بارش کل زمین رو تخمین می‌زنه و توانایی تشخیص بارش رو بیش از ۳۰ درصد بهتر کرده.\n• دیتاست SatWeave هم تصویر چند ماهواره زمین‌ثابت رو کنار هم می‌ذاره تا هر ۶۰ دقیقه یه نمای زنده از ابرها و طوفان‌ها بده.\n\nاین شرکت می‌گه داده‌ها از طریق Google Cloud Storage و Earth Engine در دسترسن و می‌تونن برای هشدار دقیق‌تر سیل توی جاهایی که رادار زمینی ندارن، ردیابی دود آتش‌سوزی‌ها و کارهای مربوط به انرژی خورشیدی به کار بیان.",
+  "date": "2026-11-13T15:01:01+00:00"
+ },
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/GoogleDeepMind/status/2121229774865527097",
+   "domain": "x.com",
+   "author": {
+    "name": "Google DeepMind",
+    "handle": "GoogleDeepMind",
+    "avatar": "https://pbs.twimg.com/profile_images/1695024885070737408/-M-HSH5P_200x200.jpg"
+   },
+   "text": "Accurate weather forecasting starts with how clearly we can observe the atmosphere in real-time. 🌍\n\nThat’s why we’re releasing PARDIG and SatWeave - the foundational datasets behind WeatherNext 3 - to help researchers and developers build new climate applications 🧵",
+   "date": 1794575563,
+   "media": [
+    {
+     "type": "video",
+     "src": "https://video.twimg.com/tweet_video/HXAevj4XwAE_s17.mp4",
+     "poster": "https://pbs.twimg.com/tweet_video_thumb/HXAevj4XwAE_s17.jpg",
+     "ratio": 1.0,
+     "duration": 0,
+     "gif": true
+    }
+   ],
+   "links": []
+  }
+ ],
+ "article": {
+  "title": "گوگل دیپ‌مایند خبر داده دو تا مجموعه داده به اسم PARDIG و SatWeave رو منتشر کرده که زیربنای WeatherNext 3 هستن تا پژوهشگرها و برنامه‌نویس‌ها بتونن ابزارهای اقلیمی جدیدی بسازن",
+  "source_title": "Accurate weather forecasting starts with how clearly we can observe the atmosphere in real-time. 🌍",
+  "body": [
+   "گوگل دیپ‌مایند خبر داده دو تا مجموعه داده به اسم PARDIG و SatWeave رو منتشر کرده که زیربنای WeatherNext 3 هستن تا پژوهشگرها و برنامه‌نویس‌ها بتونن ابزارهای اقلیمی جدیدی بسازن. مثل این می‌مونه که برای رصد لحظه‌ای جو، دید سیستم‌های هواشناسی رو از همون اول شفاف‌تر کرده باشن. 🌍",
+   "• به گفته دیپ‌مایند، PARDIG هر ۱۵ دقیقه بارش کل زمین رو تخمین می‌زنه و توانایی تشخیص بارش رو بیش از ۳۰ درصد بهتر کرده.",
+   "• دیتاست SatWeave هم تصویر چند ماهواره زمین‌ثابت رو کنار هم می‌ذاره تا هر ۶۰ دقیقه یه نمای زنده از ابرها و طوفان‌ها بده."
+  ],
+  "why": "این شرکت می‌گه داده‌ها از طریق Google Cloud Storage و Earth Engine در دسترسن و می‌تونن برای هشدار دقیق‌تر سیل توی جاهایی که رادار زمینی ندارن، ردیابی دود آتش‌سوزی‌ها و کارهای مربوط به انرژی خورشیدی به کار بیان.",
+  "why_label": "حرف آخر",
+  "tags": [
+   "گوگل",
+   "کدنویسی"
+  ]
+ },
+ "updated": "2026-11-13T15:04:24+00:00"
+}
