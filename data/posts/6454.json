@@ -12,7 +12,7 @@
   "site": "🧵 Thread • FxTwitter",
   "title": "Chubby ♨️ (@kimmonismus)",
   "description": "/1 Physical Intelligence's π0.5 goes from 48% to 70% success on 26 real-world robot tasks once you add a small touch encoder.\nThat encoder is LingBot-Touch from @robbyant_brain, an embodied AI company under Ant Group, and it's open source. The Tiny version…",
-  "image": "https://cdn4.telesco.pe/file/iJSupeRuMcmJTelz27xaGz4_Fd-Csjl1MnqkPaA8J0Fka_dTMbOwkX1M5b6G_sLudnpkMLnPO5tymVMZoxsXmYoYJC26lKdcZRwdxYiV9487nXW7H36wzhCyTztckBvmU0nTUE9YC3g6rUQewlTE3FX2zOZkeYjKV5BLbCQ4JNEpPc-GFFkJrAhT7_TF83UbJKglK_0wRE4PZCACbbVQ9P--L1ZPRTwfEDR6ItU423e8aqXWyKxrxYaexiOI3eSq5hwn_hbYL_ABVr8MKjmR9HMeTztX5PiKFNzUEvIXtoAthKG3uPNy9IB5vgeSLZgGOH_pTuuJNTVSQqg7YM7EGw.jpg"
+  "image": "https://cdn4.telesco.pe/file/SbcqDTDdDeaZLA0jeMHjNGyk_bBodx27MH9rZIcRbSpns2aFAU_oUIRQsYekFgIkdNPz7vUlXCBGQ6yg8N2kMm_BYFDu_Cg1vkN5ehJkDTl-Ue9xD0Zf2yi54SU1zYn9ErzU0-K0ANGQwwWbsQkEUJzGWMFvNEmrbuWBwXnB5MVl2YA8C6WJkCR38CzKlAvibhceF2MA0BZEWRHIT68dUKih3xzNr-i_tbcHYtT_tybkc-CHnktoNgEbBGLMhHTjNhwmG53bPgznnGz6RGAcZUcS64chfC--UTQnrxYJq9A1BzZCi6W9WHo2ociyH1-B6bcDigNl7EY9dd3AJAybOw.jpg"
  },
  "gholam": {
   "text": "سلام رفقا، یه پیشرفت جالب توی دنیای رباتیک منتشر شده که دیدنش خالی از لطف نیست. طبق گزارشی که اومده، شرکتی به اسم Robbyant (از زیرمجموعه‌های Ant Group) یه ابزار متن‌باز برای حس لامسه ربات‌ها به اسم LingBot-Touch معرفی کرده که با وجود جثه بسیار کوچیکش (نسخه Tiny فقط ۵.۴۶ میلیون پارامتر داره و کمتر از ۰.۲ درصد مدل اصلیه)، تأثیر چشمگیری روی کارایی ربات‌ها گذاشته.\n\nچند تا نکته مهم از نتایج این بررسی:\n• با وصل شدن این انکودر لمسی به مدل رباتیک π0.5، نرخ موفقیتش در انجام ۲۶ کار واقعی از حدود ۴۸ درصد به نزدیک ۷۰ درصد رسیده.\n• برای آموزشش حدود ۵ هزار ساعت داده لمسی (معادل ۱.۳۳ میلیارد فریم) از طریق دستکش‌های مجهز به سنسور و هدایت ربات‌ها ضبط شده و این مدل توانایی کار با سه مدل سنسور لمسی مختلف رو داره.\n• طبق آمار مقاله، استفاده از این توکن‌های پردازش‌شده خیلی بهتر از فرستادن سیگنال‌های خام حسگرها بوده و حتی روی سنسوری که قبلاً باهاش آموزش ندیده بود، خطای تعیین نقطه تماس رو از ۵.۸۹ میلی‌متر به ۰.۱۶ میلی‌متر رسونده.",
@@ -55,5 +55,5 @@
    "رباتیک"
   ]
  },
- "updated": "2026-11-13T01:00:03+00:00"
+ "updated": "2026-11-13T07:47:39+00:00"
 }
