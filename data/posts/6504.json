@@ -1,0 +1,53 @@
+{
+ "id": 6504,
+ "url": "https://t.me/dlmehr/6504",
+ "date": "2026-11-13T01:42:37+00:00",
+ "text": "https://fxtwitter.com/msft365status/status/2120938282204688468?a=EMSKpSl5YJ9zxH58prs&s=52",
+ "forwarded_from": null,
+ "digest": false,
+ "hash": "8cd72a46827b",
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/msft365status/status/2120938282204688468?a=EMSKpSl5YJ9zxH58prs&s=52",
+  "site": "🧵 Thread • FxTwitter",
+  "title": "Microsoft 365 Status (@MSFT365Status)",
+  "description": "We're investigating reports of users experiencing issues accessing Exchange Online mailboxes through multiple connection methods in the Americas. More details can be found in the Microsoft 365 admin center under EX1550543.",
+  "image": "https://cdn4.telesco.pe/file/olJGO2mB6gCfGNO3Jd1No_zmimGxCtmEVFeOwM26j8qolilK1ROYqAaLdkpsob8T8xOSXyuFcaT8YiEz7_Rr5wPQWVoC4lV5VVDnU2WqgdZ_BhlxUzUacdZv90tmvKKkYS650eaEZsmzy5IVUJ0Sr_ixTN2DpDid8siz-DM8lfMjzE37DP2coHh7rFkk7UvZVLt3Zmo_fflFVbtb7Pamo9O6FGIQ-Cg5ZJ-jwCU8iGuLu14Vl91QsXwBw5zASybygOe6QMqR6O0Sodyj0WDmynev_2kT2E0IREDpobv8umO-sfeNl3nJdELXN-jryGTM2_ouk4GbH5YBHNxxphFUNg.jpg"
+ },
+ "gholam": {
+  "text": "رفقا، اکانت رسمی وضعیت مایکروسافت ۳۶۵ تو ایکس اعلام کرده که دسترسی به ایمیل‌های Exchange Online و اتصال به سرویس‌های مایکروسافت ۳۶۵ دچار اختلال شده و گرچه گزارش‌ها اول از قاره آمریکا بوده، ممکنه کاربرهای هر منطقه‌ای با این مشکل روبه‌رو بشن. 🛠️\n\n• مایکروسافت گفته این شلوغی به خاطر هجوم کاربرها نیست، بلکه تعدادی از سرورها به‌طور غیرمنتظره از دسترس خارج شدن و فشار افتاده روی بقیه زیرساخت؛ مثل وقتی چند نفر از همکارا سر کار نیان و کل کار بیفته گردن بقیه.\n• به گفته این شرکت، سرورها از تست سلامت خودکار رد نمیشن و یه پردازش اصلی روشون زیر فشار رفته؛ برای همین تیم فنی فعلاً همه استقرارها و تغییرات جدید رو متوقف کرده و مشغول جابه‌جایی ترافیک و ریستارت کردن سرورهاست.\n• طبق آخرین آپدیت‌های همین رشته توییت، با اینکه بخشی از سرورها برگشتن، هنوز بعضی‌هاشون با گرفتن ترافیک دوباره از کار می‌افتن و کار برای مهار کامل اختلال ادامه داره.\n\nجزئیات و کدهای پیگیری این اختلال تو پنل ادمین مایکروسافت با شماره‌های EX1550543 و MO1550821 ثبت شده؛ پس اگه الان اتصال به ایمیل یا سرویس‌ها اذیتتون کرد، بدونید موضوع از طرف خودشونه و هنوز در حال برطرف کردنشن.",
+  "date": "2026-11-13T01:43:04+00:00"
+ },
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/MSFT365Status/status/2120938282204688468",
+   "domain": "x.com",
+   "author": {
+    "name": "Microsoft 365 Status",
+    "handle": "MSFT365Status",
+    "avatar": "https://pbs.twimg.com/profile_images/1040007539088211968/f9H6EzjO_200x200.jpg"
+   },
+   "text": "We're investigating reports of users experiencing issues accessing Exchange Online mailboxes through multiple connection methods in the Americas. More details can be found in the Microsoft 365 admin center under EX1550543.",
+   "date": 1794506066,
+   "media": [],
+   "links": []
+  }
+ ],
+ "article": {
+  "title": "اکانت رسمی وضعیت مایکروسافت ۳۶۵ تو ایکس اعلام کرده که دسترسی به ایمیل‌های Exchange Online و اتصال به سرویس‌های مایکروسافت ۳۶۵ دچار اختلال شده و گرچه گزارش‌ها اول از قاره آمریکا بوده، ممکنه کاربرهای هر منطقه‌ای با این مشکل روبه‌رو بشن",
+  "source_title": "We're investigating reports of users experiencing issues accessing Exchange Online mailboxes through multiple connection methods in the…",
+  "body": [
+   "اکانت رسمی وضعیت مایکروسافت ۳۶۵ تو ایکس اعلام کرده که دسترسی به ایمیل‌های Exchange Online و اتصال به سرویس‌های مایکروسافت ۳۶۵ دچار اختلال شده و گرچه گزارش‌ها اول از قاره آمریکا بوده، ممکنه کاربرهای هر منطقه‌ای با این مشکل روبه‌رو بشن. 🛠️",
+   "• مایکروسافت گفته این شلوغی به خاطر هجوم کاربرها نیست، بلکه تعدادی از سرورها به‌طور غیرمنتظره از دسترس خارج شدن و فشار افتاده روی بقیه زیرساخت؛ مثل وقتی چند نفر از همکارا سر کار نیان و کل کار بیفته گردن بقیه.",
+   "• به گفته این شرکت، سرورها از تست سلامت خودکار رد نمیشن و یه پردازش اصلی روشون زیر فشار رفته؛ برای همین تیم فنی فعلاً همه استقرارها و تغییرات جدید رو متوقف کرده و مشغول جابه‌جایی ترافیک و ریستارت کردن سرورهاست.",
+   "• طبق آخرین آپدیت‌های همین رشته توییت، با اینکه بخشی از سرورها برگشتن، هنوز بعضی‌هاشون با گرفتن ترافیک دوباره از کار می‌افتن و کار برای مهار کامل اختلال ادامه داره."
+  ],
+  "why": "جزئیات و کدهای پیگیری این اختلال تو پنل ادمین مایکروسافت با شماره‌های EX1550543 و MO1550821 ثبت شده؛ پس اگه الان اتصال به ایمیل یا سرویس‌ها اذیتتون کرد، بدونید موضوع از طرف خودشونه و هنوز در حال برطرف کردنشن.",
+  "why_label": "حرف آخر",
+  "tags": [
+   "مایکروسافت"
+  ]
+ },
+ "updated": "2026-11-13T01:46:21+00:00"
+}
