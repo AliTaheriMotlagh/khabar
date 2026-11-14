@@ -1,0 +1,73 @@
+{
+ "id": 6525,
+ "url": "https://t.me/dlmehr/6525",
+ "date": "2026-11-14T16:24:13+00:00",
+ "text": "https://fxtwitter.com/hrkrshnn/status/2121428647152095333?a=kj0Zni7OWY7Oq2YmhaE&s=52",
+ "forwarded_from": null,
+ "digest": false,
+ "hash": "f67cdd79391e",
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/hrkrshnn/status/2121428647152095333?a=kj0Zni7OWY7Oq2YmhaE&s=52",
+  "site": "🧵 Thread • FxTwitter",
+  "title": "Hari (@hrkrshnn)",
+  "description": "This is a crazy report.\n1) Fireworks breach\n2) Traces from Cursor users exposed\n3) Traces had customer credentials\n4) Cursor credentials were also exposed\n5) Attacker replaced Claude Code inside Cursor marketplace with the cursor credentials.\nThe attackers…",
+  "image": "https://cdn4.telesco.pe/file/d_oOiJXa6Dgc21dG35_4aWAaj27nx7AxsOVlGJMhVFt8Y_pyklSz6ujJgZNwPsk4-b88TEwknGMeONxFNQ7Wy_MYN8u_gugNx-hQXOWzkeOGpsOyC5qfckz4DqwhyunP09Bwgt3Pqxbuh3jzvnaCawLuNInHCFhB4epLwzCHZQEAnZNX19V9AR93y9i2tgNq3lSpIGCg4inP4jiufk2RR4eWGwYZSQNGFnrP30wi8j3ot7uNkIMW1aZ6gZ8K9zSjxUEGyJTdsa_6pNok3eGLFhqiw0igWwWSYwrWMq5Xqzx_dlBDUCpRbKa5yJox1nexaHDL2swreOMGKoLMxADE2g.jpg"
+ },
+ "gholam": {
+  "text": "رفیق، یه خبر امنیتی جدید درباره نفوذ به Fireworks و Cursor حسابی دست‌به‌دست می‌شه. تیم Cursor توی ایکس اعلام کرده که جزئیات این حادثه امنیتی اخیر و کارهایی که برای رفعش انجام داده رو منتشر کرده، هرچند متن کامل وبلاگش اینجا در دسترس نیست. یه کاربر به اسم هاری خلاصه این گزارش رو این‌طوری روایت کرده:\n• با نفوذ به Fireworks، دیتای trace کاربران Cursor لو رفته.\n• توی این traceها اطلاعات احراز هویت مشتری‌ها و حتی دسترسی‌های خود Cursor هم بوده.\n• به گفته این کاربر، مهاجم با استفاده از همین دسترسی‌ها، Claude Code رو توی مارکت‌پلیس Cursor جایگزین کرده.\nتوی کامنت‌ها هم کاربرا اشاره کردن که موندن کلیدهای حساس توی این traceها مثل گذاشتن کلید خونه زیر پادریه و باعث می‌شه یه رخنه به چند تا ماجرای زنجیره‌ای تبدیل بشه.",
+  "date": "2026-11-14T16:24:43+00:00"
+ },
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/hrkrshnn/status/2121428647152095333",
+   "domain": "x.com",
+   "author": {
+    "name": "Hari",
+    "handle": "hrkrshnn",
+    "avatar": "https://pbs.twimg.com/profile_images/2119229035964252160/t-UPSRs4_200x200.jpg"
+   },
+   "text": "This is a crazy report.\n\n1) Fireworks breach\n2) Traces from Cursor users exposed\n3) Traces had customer credentials \n4) Cursor credentials were also exposed\n5) Attacker replaced Claude Code inside Cursor marketplace with the cursor credentials.\n\nThe attackers are really after AI infrastructure. Ruthless.",
+   "date": 1794622978,
+   "media": [
+    {
+     "type": "image",
+     "src": "https://pbs.twimg.com/media/HXDUHKuXIAAJMea.jpg?name=orig",
+     "ratio": 1.2442
+    }
+   ],
+   "links": [],
+   "quote": {
+    "author": {
+     "name": "Cursor",
+     "handle": "cursor_ai",
+     "avatar": "https://pbs.twimg.com/profile_images/1970182748146180096/dhZeXi_X_200x200.jpg"
+    },
+    "text": "We’ve published an update on our recent security incident. See a detailed overview of what happened and our remediation steps here: https://cursor.com/blog/security-incident-update",
+    "date": 1794618806,
+    "media": [],
+    "links": [
+     "https://cursor.com/blog/security-incident-update"
+    ]
+   }
+  }
+ ],
+ "article": {
+  "title": "یه خبر امنیتی جدید درباره نفوذ به Fireworks و Cursor حسابی دست‌به‌دست می‌شه",
+  "source_title": "This is a crazy report.",
+  "body": [
+   "یه خبر امنیتی جدید درباره نفوذ به Fireworks و Cursor حسابی دست‌به‌دست می‌شه. تیم Cursor توی ایکس اعلام کرده که جزئیات این حادثه امنیتی اخیر و کارهایی که برای رفعش انجام داده رو منتشر کرده، هرچند متن کامل وبلاگش اینجا در دسترس نیست. یه کاربر به اسم هاری خلاصه این گزارش رو این‌طوری روایت کرده:",
+   "• با نفوذ به Fireworks، دیتای trace کاربران Cursor لو رفته.",
+   "• توی این traceها اطلاعات احراز هویت مشتری‌ها و حتی دسترسی‌های خود Cursor هم بوده.",
+   "• به گفته این کاربر، مهاجم با استفاده از همین دسترسی‌ها، Claude Code رو توی مارکت‌پلیس Cursor جایگزین کرده."
+  ],
+  "why": "توی کامنت‌ها هم کاربرا اشاره کردن که موندن کلیدهای حساس توی این traceها مثل گذاشتن کلید خونه زیر پادریه و باعث می‌شه یه رخنه به چند تا ماجرای زنجیره‌ای تبدیل بشه.",
+  "why_label": "حرف آخر",
+  "tags": [
+   "کدنویسی",
+   "امنیت"
+  ]
+ },
+ "updated": "2026-11-14T16:28:26+00:00"
+}
