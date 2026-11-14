@@ -1,0 +1,83 @@
+{
+ "id": 6529,
+ "url": "https://t.me/dlmehr/6529",
+ "date": "2026-11-14T20:56:46+00:00",
+ "text": "https://fxtwitter.com/a16z/status/2121290755939635574?a=22ZCxStvLMMoj_Tq9Mc&s=52",
+ "forwarded_from": null,
+ "digest": false,
+ "hash": "720a31cb3d41",
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/a16z/status/2121290755939635574?a=22ZCxStvLMMoj_Tq9Mc&s=52",
+  "site": "FxTwitter",
+  "title": "a16z (@a16z)",
+  "description": "Developing a drug takes years, and most candidates never reach patients.\nAmortizing the cost of failed drugs across stages, the present value cost of developing a drug is close to $2B. The process takes 13 years on average, with rising clinical trial costs…",
+  "image": "https://cdn4.telesco.pe/file/Kl3bbmBfluUIekPiy-fRW1abDcZXYPOGhQRas9yTb-l3sObkv0fNTfvhMl4oPQLvUNHaaJhuQA3KpZKoPTTrxe4Xd3ftMBUjsQT6EHsp6i9HiZZq0sAnQlOMR-MtpHxdpS2FJOtN3V56RqmIRMQbsBUJ4ZqYCKAYhkZhx7YT3HCkRbCfBfansubp1Yn2Ik1doYygqzksNgCBEQQdgL4B6tf3P_bedjf5RP34BoQXmb04UUFG9j8ytUL4x5JC00AOMiXYsFwEaAqQX9UU2IRkbLU9qLZTqx_u6pfFE9hMAr4r-Hu0d5eTY1hf44gOfBNvWHYeq1lQeti_gT-JokBMNw.jpg"
+ },
+ "gholam": {
+  "text": "رفیق، این پست از اکانت a16z می‌گه ساختن یه داروی جدید حسابی زمان‌بر و پرخرجه؛ به‌طور میانگین ۱۳ سال طول می‌کشه و بیشتر گزینه‌ها اصلاً به دست بیمار نمی‌رسن. 💊\nاگه هزینه داروهای شکست‌خورده تو مراحل مختلف رو هم حساب کنیم، به نوشته این پست ارزش فعلی هزینه ساخت هر دارو نزدیک به ۲ میلیارد دلار درمیاد و بالا رفتن هزینه آزمایش‌های بالینی هم فشار بیشتری به تحقیق و توسعه میاره.\nبه باور a16z، هوش مصنوعی ممکنه بتونه با بالا بردن شانس موفقیت و کم کردن زمان کار—از پیدا کردن مولکول‌های مستعد گرفته تا طراحی آزمایش بالینی و جذب بهتر بیمارها—اوضاع اقتصادی این بخش رو بهتر کنه و راه رو برای هدف‌های درمانی‌ای باز کنه که قبلاً صرفه اقتصادی نداشتن.\nالبته متن کامل مقاله‌ای که بهش اشاره شده اینجا نیست، ولی تو کامنت‌های زیر همین پست هم یادآوری شده که عیار واقعی این حرفا وقتیه که تو عمل ببینیم پروژه‌های متکی به هوش مصنوعی واقعاً نرخ موفقیت بالاتری از برنامه‌های مشابه دارن یا نه.",
+  "date": "2026-11-14T20:57:08+00:00"
+ },
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/a16z/status/2121290755939635574",
+   "domain": "x.com",
+   "author": {
+    "name": "a16z",
+    "handle": "a16z",
+    "avatar": "https://pbs.twimg.com/profile_images/1919488160125616128/QAZXTMEj_200x200.png"
+   },
+   "text": "Developing a drug takes years, and most candidates never reach patients.\n\nAmortizing the cost of failed drugs across stages, the present value cost of developing a drug is close to $2B. The process takes 13 years on average, with rising clinical trial costs putting further pressure on R&D productivity.\n\nAI could improve those economics by increasing the probability of success and reducing development time, from identifying promising molecules to designing clinical trials and improving patient recruitment.\n\nThat may enable companies to pursue therapeutic targets and indications that might otherwise have been uneconomical.\n\nFull piece on why AI will make pharma even bigger: http://a16z.news/p/big-pharma-can-rival-big-software",
+   "date": 1794590102,
+   "media": [
+    {
+     "type": "image",
+     "src": "https://pbs.twimg.com/media/HXBWs0TaYAAsNCu.jpg?name=orig",
+     "ratio": 0.9952
+    }
+   ],
+   "links": [
+    "http://a16z.news/p/big-pharma-can-rival-big-software"
+   ],
+   "quote": {
+    "author": {
+     "name": "Alex Immerman",
+     "handle": "aleximm",
+     "avatar": "https://pbs.twimg.com/profile_images/1976649183420620800/goua7v07_200x200.jpg"
+    },
+    "text": "https://x.com/i/article/2121250806393663488",
+    "date": 1794582997,
+    "media": [],
+    "links": [
+     "https://x.com/i/article/2121250806393663488"
+    ]
+   }
+  },
+  {
+   "kind": "link",
+   "url": "https://www.a16z.news/p/big-pharma-can-rival-big-software",
+   "domain": "a16z.news",
+   "title": "Big Pharma Can Rival Big Software",
+   "description": "AI Will Make Pharma Even Bigger",
+   "image": "https://substackcdn.com/image/fetch/$s_!nBeN!,w_1200,h_675,c_fill,f_jpg,q_auto:good,fl_progressive:steep,g_auto/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fac227376-9be8-47d7-9626-232d84c8f6ac_2844x1600.png",
+   "site": "a16z.news"
+  }
+ ],
+ "article": {
+  "title": "این پست از اکانت a16z می‌گه ساختن یه داروی جدید حسابی زمان‌بر و پرخرجه؛ به‌طور میانگین ۱۳ سال طول می‌کشه و بیشتر گزینه‌ها اصلاً به دست بیمار نمی‌رسن",
+  "source_title": "Developing a drug takes years, and most candidates never reach patients.",
+  "body": [
+   "این پست از اکانت a16z می‌گه ساختن یه داروی جدید حسابی زمان‌بر و پرخرجه؛ به‌طور میانگین ۱۳ سال طول می‌کشه و بیشتر گزینه‌ها اصلاً به دست بیمار نمی‌رسن. 💊",
+   "اگه هزینه داروهای شکست‌خورده تو مراحل مختلف رو هم حساب کنیم، به نوشته این پست ارزش فعلی هزینه ساخت هر دارو نزدیک به ۲ میلیارد دلار درمیاد و بالا رفتن هزینه آزمایش‌های بالینی هم فشار بیشتری به تحقیق و توسعه میاره.",
+   "به باور a16z، هوش مصنوعی ممکنه بتونه با بالا بردن شانس موفقیت و کم کردن زمان کار—از پیدا کردن مولکول‌های مستعد گرفته تا طراحی آزمایش بالینی و جذب بهتر بیمارها—اوضاع اقتصادی این بخش رو بهتر کنه و راه رو برای هدف‌های درمانی‌ای باز کنه که قبلاً صرفه اقتصادی نداشتن.",
+   "البته متن کامل مقاله‌ای که بهش اشاره شده اینجا نیست، ولی تو کامنت‌های زیر همین پست هم یادآوری شده که عیار واقعی این حرفا وقتیه که تو عمل ببینیم پروژه‌های متکی به هوش مصنوعی واقعاً نرخ موفقیت بالاتری از برنامه‌های مشابه دارن یا نه."
+  ],
+  "why": null,
+  "tags": [
+   "سلامت",
+   "استارتاپ"
+  ]
+ },
+ "updated": "2026-11-14T21:00:49+00:00"
+}
