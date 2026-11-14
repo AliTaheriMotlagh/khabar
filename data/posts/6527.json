@@ -1,0 +1,58 @@
+{
+ "id": 6527,
+ "url": "https://t.me/dlmehr/6527",
+ "date": "2026-11-14T19:27:37+00:00",
+ "text": "https://fxtwitter.com/rohanpaul_ai/status/2121679426194718837?a=WRD1SWv_3lATsQ18mRE&s=52",
+ "forwarded_from": null,
+ "digest": false,
+ "hash": "ccb85c9efdf9",
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/rohanpaul_ai/status/2121679426194718837?a=WRD1SWv_3lATsQ18mRE&s=52",
+  "site": "🧵 Thread • FxTwitter",
+  "title": "Rohan Paul (@rohanpaul_ai)",
+  "description": "AI model that is itself bad at a task can still train another AI to do it well.\nNew paper shows that a decision model called JEV, an AI model built to pick between options instead of writing text, completes only 42.9% of simulated household tasks on its…",
+  "image": "https://cdn4.telesco.pe/file/BRi5sHGoz1xae6IIUpIuNOzJya_w2JUMjEGBRdXU24-Aab_xKhiHQYmJq1YjwrAx2D-2i2KOWWIYfFrNCQOJXjDTrCNjzoqhgG_ces0WK9UOsGgCDTAMuwRlAxus0ykHTYPQZV49ZSWNx8Bjvb9SEpu2HcfKIun7FYGkuNQvFuOzp2HSwSfRTis8O4NbvY2j8P7KnHLBcypU3vgGGN6Nf66SviZZcEORpUaT6OeDW-c1tsrGGXk5FsGWwj6qlP--QUUKr5caFHzGQfz8hnVPSERG-KfdKcxLf0OnnQlw3MCp5OmPHkdTsYQ-K-e8D9NG1EWKS5kcNMbgz5ja0oFxpw.jpg"
+ },
+ "gholam": {
+  "text": "رفقا، انگار تو دنیای هوش مصنوعی هم مثل فوتباله؛ لازم نیست یه مربی خودش تو زمین بازیکن شش‌دانگی باشه تا بتونه شاگردش رو راه بندازه، همین که بعد از بازی فیلم رو ببینه و درست و غلطِ حرکت‌ها رو تشخیص بده کافیه! 🤖\n\n• به گفته‌ی روهان پال که پژوهش جدید دانشگاه ژجیانگ رو روایت کرده، یه مدل تصمیم‌گیر به اسم JEV (که به‌جای متن نوشتن، بین گزینه‌ها انتخاب می‌کنه) وقتی خودش دست‌به‌کار می‌شه فقط ۴۲.۹ درصد کارهای شبیه‌سازی‌شده‌ی خونگی توی آزمون ALFWorld رو کامل می‌کنه.\n• با این حال، وقتی همین مدل بعد از تموم شدن کارِ مدلِ دیگه (Qwen2.5-1.5B) کل مسیر رو مرور می‌کنه و به تک‌تک قدم‌ها نمره می‌ده تا توی آموزش GRPO به کار بره، نرخ موفقیت اون مدل از ۷۲.۸ درصد (با پاداش‌دهی فقط به نتیجه‌ی آخر) به ۸۲.۹ درصد بالا می‌ره.\n\nخلاصه اینکه به نقل از این پژوهش که روی محیط‌های ALFWorld و WebShop آزمایش شده، برای نمره‌دهی مرحله‌ای به ایجنت‌ها باید مدلی رو انتخاب کرد که تو قضاوتِ تک‌تک حرکت‌های ثبت‌شده مهارت داره، نه لزوماً مدلی که خودش کار رو خوب انجام می‌ده.",
+  "date": "2026-11-14T19:27:59+00:00"
+ },
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/rohanpaul_ai/status/2121679426194718837",
+   "domain": "x.com",
+   "author": {
+    "name": "Rohan Paul",
+    "handle": "rohanpaul_ai",
+    "avatar": "https://pbs.twimg.com/profile_images/1816185267037859840/Fd18CH0v_200x200.jpg"
+   },
+   "text": "AI model that is itself bad at a task can still train another AI to do it well.\n\nNew paper shows that a decision model called JEV, an AI model built to pick between options instead of writing text, completes only 42.9% of simulated household tasks on its own, yet by reviewing another AI’s moves afterward it raised that AI’s success from 72.8% to 82.9%.\n\nNew Zhejiang University paper shows that an AI model that is bad at a task can still train another AI to do it well, by reviewing each of its moves after the attempt ends.\n\nAgent RL usually rewards only the final outcome, so every step gets the same credit. Scoring each step usually needs per-environment labels or an LLM judge at every action.\n\nThey tested decision models, which return a choice with probabilities instead of text, as actors and as step graders on ALFWorld and WebShop. As a grader, the model sees the whole run and scores whether each action helped, and those scores are added to GRPO training.\n\nThe decision model JEV completes only 42.9% of ALFWorld tasks when acting. As a grader, it lifts a Qwen2.5-1.5B policy to 82.9% success, up from 72.8% with GRPO outcome rewards alone.\n\nChoose step graders by how well they judge recorded runs, not how well they act, and ask about each action, not the outcome.",
+   "date": 1794682768,
+   "media": [
+    {
+     "type": "image",
+     "src": "https://pbs.twimg.com/media/HXG4LcpXQAAVCVZ.png?name=orig",
+     "ratio": 0.7856
+    }
+   ],
+   "links": []
+  }
+ ],
+ "article": {
+  "title": "انگار تو دنیای هوش مصنوعی هم مثل فوتباله؛ لازم نیست یه مربی خودش تو زمین بازیکن شش‌دانگی باشه تا بتونه شاگردش رو راه بندازه، همین که بعد از بازی فیلم رو ببینه و درست و غلطِ حرکت‌ها رو تشخیص بده کافیه",
+  "source_title": "AI model that is itself bad at a task can still train another AI to do it well.",
+  "body": [
+   "انگار تو دنیای هوش مصنوعی هم مثل فوتباله؛ لازم نیست یه مربی خودش تو زمین بازیکن شش‌دانگی باشه تا بتونه شاگردش رو راه بندازه، همین که بعد از بازی فیلم رو ببینه و درست و غلطِ حرکت‌ها رو تشخیص بده کافیه! 🤖",
+   "• به گفته‌ی روهان پال که پژوهش جدید دانشگاه ژجیانگ رو روایت کرده، یه مدل تصمیم‌گیر به اسم JEV (که به‌جای متن نوشتن، بین گزینه‌ها انتخاب می‌کنه) وقتی خودش دست‌به‌کار می‌شه فقط ۴۲.۹ درصد کارهای شبیه‌سازی‌شده‌ی خونگی توی آزمون ALFWorld رو کامل می‌کنه.",
+   "• با این حال، وقتی همین مدل بعد از تموم شدن کارِ مدلِ دیگه (Qwen2.5-1.5B) کل مسیر رو مرور می‌کنه و به تک‌تک قدم‌ها نمره می‌ده تا توی آموزش GRPO به کار بره، نرخ موفقیت اون مدل از ۷۲.۸ درصد (با پاداش‌دهی فقط به نتیجه‌ی آخر) به ۸۲.۹ درصد بالا می‌ره."
+  ],
+  "why": "خلاصه اینکه به نقل از این پژوهش که روی محیط‌های ALFWorld و WebShop آزمایش شده، برای نمره‌دهی مرحله‌ای به ایجنت‌ها باید مدلی رو انتخاب کرد که تو قضاوتِ تک‌تک حرکت‌های ثبت‌شده مهارت داره، نه لزوماً مدلی که خودش کار رو خوب انجام می‌ده.",
+  "why_label": "حرف آخر",
+  "tags": [
+   "سرگرمی"
+  ]
+ },
+ "updated": "2026-11-14T19:31:24+00:00"
+}
