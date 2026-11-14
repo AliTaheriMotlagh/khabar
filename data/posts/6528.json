@@ -1,0 +1,76 @@
+{
+ "id": 6528,
+ "url": "https://t.me/dlmehr/6528",
+ "date": "2026-11-14T20:23:45+00:00",
+ "text": "https://fxtwitter.com/baseten/status/2121373358717862213?a=Bdt6IrtCYOIGgkmhpfg&s=52",
+ "forwarded_from": null,
+ "digest": false,
+ "hash": "a62253e25256",
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/baseten/status/2121373358717862213?a=Bdt6IrtCYOIGgkmhpfg&s=52",
+  "site": "FxTwitter",
+  "title": "Baseten (@baseten)",
+  "description": "We built an inference engine for DeepSeek V4.1-Flash from scratch in Rust and CUDA.\n4xB300: ~1,740 TPS decode\n8xB300: ~2,060 TPS decode\n1M-token prefill in ~12s\nIt's open-source.\nQuoting Phil Howes (@saltyph)\nwe built an inference engine for deepseek…",
+  "image": null
+ },
+ "gholam": {
+  "text": "رفقا، شرکت Baseten اعلام کرده یه موتور استنتاج (inference engine) متن‌باز برای مدل DeepSeek V4.1-Flash ساخته و روی گیت‌هاب گذاشته. به گفته خودشون، هسته این موتور رو از صفر فقط با Rust و CUDA نوشتن و سراغ ابزارهایی مثل PyTorch یا SGLang نرفتن؛ انگار به جای سرهم کردن قطعات آماده، موتور رو از همون پایه توی کارگاه خودشون تراش داده باشن. 🚀\n\nخودشون این آمار رو از سرعتش اعلام کردن:\n• حدود ۱,۷۴۰ توکن بر ثانیه (decode) روی ۴ تا پردازنده B300\n• حدود ۲,۰۶۰ توکن بر ثانیه (decode) روی ۸ تا B300\n• پردازش اولیه (prefill) برای ۱ میلیون توکن در حدود ۱۲ ثانیه\n\nاین رقم‌ها فعلاً همون نتایجی هستن که خود سازنده‌ها گزارش دادن و توی این پست اطلاعات بیشتری از تست‌های مستقل یا جزئیات فنیش نیومده.",
+  "date": "2026-11-14T20:24:09+00:00"
+ },
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/baseten/status/2121373358717862213",
+   "domain": "x.com",
+   "author": {
+    "name": "Baseten",
+    "handle": "baseten",
+    "avatar": "https://pbs.twimg.com/profile_images/1924485072801140736/VyZekL_z_200x200.jpg"
+   },
+   "text": "We built an inference engine for DeepSeek V4.1-Flash from scratch in Rust and CUDA.\n\n4xB300: ~1,740 TPS decode\n8xB300: ~2,060 TPS decode\n1M-token prefill in ~12s\n\nIt's open-source.",
+   "date": 1794609796,
+   "media": [],
+   "links": [],
+   "quote": {
+    "author": {
+     "name": "Phil Howes",
+     "handle": "saltyph",
+     "avatar": "https://pbs.twimg.com/profile_images/1810545187288125440/2fpPvWGc_200x200.jpg"
+    },
+    "text": "we built an inference engine for deepseek v4.1-flash from scratch. the core engine is just rust + cuda. no pytorch, no sglang, no dsls, etc.\n~1740 TPS decode on 4xB300, 2060TPS on 8xB300. 1M token prefill in ~12s.\nit's up on github",
+    "date": 1794592618,
+    "media": [
+     {
+      "type": "video",
+      "src": "https://video.twimg.com/tweet_video/HXBXif7bsAAq5qL.mp4",
+      "poster": "https://pbs.twimg.com/tweet_video_thumb/HXBXif7bsAAq5qL.jpg",
+      "ratio": 0.94,
+      "duration": 0,
+      "gif": true
+     }
+    ],
+    "links": []
+   }
+  }
+ ],
+ "article": {
+  "title": "شرکت Baseten اعلام کرده یه موتور استنتاج (inference engine) متن‌باز برای مدل DeepSeek V4.1-Flash ساخته و روی گیت‌هاب گذاشته",
+  "source_title": "We built an inference engine for DeepSeek V4.1-Flash from scratch in Rust and CUDA.",
+  "body": [
+   "شرکت Baseten اعلام کرده یه موتور استنتاج (inference engine) متن‌باز برای مدل DeepSeek V4.1-Flash ساخته و روی گیت‌هاب گذاشته. به گفته خودشون، هسته این موتور رو از صفر فقط با Rust و CUDA نوشتن و سراغ ابزارهایی مثل PyTorch یا SGLang نرفتن؛ انگار به جای سرهم کردن قطعات آماده، موتور رو از همون پایه توی کارگاه خودشون تراش داده باشن. 🚀",
+   "خودشون این آمار رو از سرعتش اعلام کردن:",
+   "• حدود ۱,۷۴۰ توکن بر ثانیه (decode) روی ۴ تا پردازنده B300",
+   "• حدود ۲,۰۶۰ توکن بر ثانیه (decode) روی ۸ تا B300",
+   "• پردازش اولیه (prefill) برای ۱ میلیون توکن در حدود ۱۲ ثانیه"
+  ],
+  "why": "این رقم‌ها فعلاً همون نتایجی هستن که خود سازنده‌ها گزارش دادن و توی این پست اطلاعات بیشتری از تست‌های مستقل یا جزئیات فنیش نیومده.",
+  "why_label": "حرف آخر",
+  "tags": [
+   "چین",
+   "متن‌باز",
+   "کدنویسی"
+  ]
+ },
+ "updated": "2026-11-14T20:27:22+00:00"
+}
