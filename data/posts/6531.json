@@ -1,0 +1,73 @@
+{
+ "id": 6531,
+ "url": "https://t.me/dlmehr/6531",
+ "date": "2026-11-14T23:14:13+00:00",
+ "text": "https://fxtwitter.com/migtissera/status/2121348529910321660?a=iRtrSUXcojjKRqrOWes&s=52",
+ "forwarded_from": null,
+ "digest": false,
+ "hash": "69fbf9ac1c94",
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/migtissera/status/2121348529910321660?a=iRtrSUXcojjKRqrOWes&s=52",
+  "site": "🧵 Thread • FxTwitter",
+  "title": "Migel Tissera (@migtissera)",
+  "description": "Introducing Tess-4.5-594B-A17B, the best Tess model ever.\n🎉\nInkling 2 Small, post trained with the Tess-4.5 recipe, on real engineering sessions to do what Tess does best: intellectually dense reasoning, warm and empathic tone, and hardcore engineering.…",
+  "image": null
+ },
+ "gholam": {
+  "text": "رفقا، میگل تیسرا یه مدل جدید به اسم Tess-4.5-594B-A17B معرفی کرده که به گفتهٔ خودش تا امروز بهترین نسخهٔ تِس محسوب می‌شه. 🚀 این مدل بر پایهٔ Inkling 2 Small و روی پلتفرم Tinker از شرکت Thinking Machines با جلسات واقعی مهندسی نرم‌افزار آموزش داده شده تا هم استدلال عمیق و کدنویسی دقیق‌تری داشته باشه و هم لحنش گرم بمونه؛ تیسرا هم از این تیم بابت مدلی که آموزش دادن و با لایسنس Apache-2.0 منتشر کردن، حسابی تشکر کرده.\n\n• اون‌طور که تیسرا گزارش داده، این نسخه تو بنچمارک SWE-Bench Pro v2 Hard تونسته ۸۸.۲ درصد مسئله‌ها رو حل کنه (در مقایسه با ۸۶.۳ درصدِ مدل پایه)، اونم با حدود ۱۰ درصد توکن کمتر.\n• یه نکتهٔ فنی هم اضافه کرده که برای خراب نشدن دقت موقع ادغام LoRA، به‌جای دست‌کاری وزن‌های ۴ بیتی، آداپتور رو روی تنسورهای BF16 نگه داشته تا هم حجم فایل تغییر نکنه و هم روش‌های قبلی اجرای مدل معتبر بمونه.\n• خودش گفته با راه‌اندازی مدل روی سرویس Modal با دو تا B300 و هزینهٔ ساعتی ۱۵ دلار، کل روز باهاش کار کرده و خوشحاله که بالاخره یه مدل وزن‌باز غربی در سطح اول می‌بینه.\n\nخلاصه مثل این می‌مونه که یه موتور خوب رو یه‌جوری تنظیم کنی که هم جونش بیشتر شه، هم مصرفش بیاد پایین.",
+  "date": "2026-11-14T23:14:41+00:00"
+ },
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/migtissera/status/2121348529910321660",
+   "domain": "x.com",
+   "author": {
+    "name": "Migel Tissera",
+    "handle": "migtissera",
+    "avatar": "https://pbs.twimg.com/profile_images/2117398889506762752/cI1tMoV6_200x200.jpg"
+   },
+   "text": "Introducing Tess-4.5-594B-A17B, the best Tess model ever. 🎉\n\nInkling 2 Small, post trained with the Tess-4.5 recipe, on real engineering sessions to do what Tess does best: intellectually dense reasoning, warm and empathic tone, and hardcore engineering.\n\nOn SWE-Bench Pro v2 Hard, Tess-4.5 resolves more of the hardest public software-engineering tasks than the base model (88.2% vs 86.3%), and it does it with ~10% fewer tokens.\n\nModel: https://huggingface.co/migtissera/Tess-4.5-594B-A17B",
+   "date": 1794603876,
+   "media": [
+    {
+     "type": "video",
+     "src": "https://video.twimg.com/amplify_video/2121345976879521792/vid/avc1/1280x720/udNd3Iozjl-lR1f4.mp4?tag=29",
+     "poster": "https://pbs.twimg.com/amplify_video_thumb/2121345976879521792/img/9YgFIh9ZDVTlJQH7.jpg",
+     "ratio": 0.5625,
+     "duration": 20,
+     "gif": false
+    }
+   ],
+   "links": [
+    "https://huggingface.co/migtissera/Tess-4.5-594B-A17B"
+   ]
+  },
+  {
+   "kind": "link",
+   "url": "https://huggingface.co/migtissera/Tess-4.5-594B-A17B",
+   "domain": "huggingface.co",
+   "title": "migtissera/Tess-4.5-594B-A17B · Hugging Face",
+   "description": "Image-Text-to-Text model with 383B parameters. Download, explore files and run it on Hugging Face.",
+   "image": "https://cdn-thumbnails.huggingface.co/social-thumbnails/models/migtissera/Tess-4.5-594B-A17B.png",
+   "site": "huggingface.co"
+  }
+ ],
+ "article": {
+  "title": "میگل تیسرا یه مدل جدید به اسم Tess-4.5-594B-A17B معرفی کرده که به گفتهٔ خودش تا امروز بهترین نسخهٔ تِس محسوب می‌شه",
+  "source_title": "Introducing Tess-4.5-594B-A17B, the best Tess model ever. 🎉",
+  "body": [
+   "میگل تیسرا یه مدل جدید به اسم Tess-4.5-594B-A17B معرفی کرده که به گفتهٔ خودش تا امروز بهترین نسخهٔ تِس محسوب می‌شه. 🚀 این مدل بر پایهٔ Inkling 2 Small و روی پلتفرم Tinker از شرکت Thinking Machines با جلسات واقعی مهندسی نرم‌افزار آموزش داده شده تا هم استدلال عمیق و کدنویسی دقیق‌تری داشته باشه و هم لحنش گرم بمونه؛ تیسرا هم از این تیم بابت مدلی که آموزش دادن و با لایسنس Apache-2.0 منتشر کردن، حسابی تشکر کرده.",
+   "• اون‌طور که تیسرا گزارش داده، این نسخه تو بنچمارک SWE-Bench Pro v2 Hard تونسته ۸۸.۲ درصد مسئله‌ها رو حل کنه (در مقایسه با ۸۶.۳ درصدِ مدل پایه)، اونم با حدود ۱۰ درصد توکن کمتر.",
+   "• یه نکتهٔ فنی هم اضافه کرده که برای خراب نشدن دقت موقع ادغام LoRA، به‌جای دست‌کاری وزن‌های ۴ بیتی، آداپتور رو روی تنسورهای BF16 نگه داشته تا هم حجم فایل تغییر نکنه و هم روش‌های قبلی اجرای مدل معتبر بمونه.",
+   "• خودش گفته با راه‌اندازی مدل روی سرویس Modal با دو تا B300 و هزینهٔ ساعتی ۱۵ دلار، کل روز باهاش کار کرده و خوشحاله که بالاخره یه مدل وزن‌باز غربی در سطح اول می‌بینه."
+  ],
+  "why": "خلاصه مثل این می‌مونه که یه موتور خوب رو یه‌جوری تنظیم کنی که هم جونش بیشتر شه، هم مصرفش بیاد پایین.",
+  "why_label": "حرف آخر",
+  "tags": [
+   "کدنویسی"
+  ]
+ },
+ "updated": "2026-11-14T23:18:20+00:00"
+}
