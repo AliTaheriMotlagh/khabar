@@ -1,0 +1,27 @@
+{
+ "id": 6540,
+ "url": "https://t.me/dlmehr/6540",
+ "date": "2026-11-15T05:06:33+00:00",
+ "text": "24-hour news summary.\n\n1 — Cursor says a key exposed by Fireworks enabled theft of coding-agent traces, exposing API credentials for fewer than 0.01% of customers and enabling further access to internal tools. (https://t.me/dlmehr/6525)\n\n2 — Benjamin Norton alleges Washington China hawks, including Marco Rubio, drove Jensen Huang's ouster from Nvidia, citing media reports and describing the spying allegations as unsubstantiated. (https://t.me/dlmehr/6526)\n\n3 — Rohan Paul reports that Zhejiang University's JEV model, despite achieving only 42.9% task success itself, improved another agent's ALFWorld success from 72.8% to 82.9% by grading its actions. (https://t.me/dlmehr/6527)\n\n4 — Baseten says its open-source Rust/CUDA engine for DeepSeek V4.1-Flash achieves about 1,740 decode tokens/second on four B300 GPUs, 2,060 on eight, and million-token prefill in roughly 12 seconds. (https://t.me/dlmehr/6528)\n\n5 — Andreessen Horowitz argues AI could reduce drug development's roughly $2 billion cost and 13-year average timeline by improving discovery, trial design, recruitment and success rates. (https://t.me/dlmehr/6529)\n\n6 — SpaceX reports that Mechazilla successfully caught Starship. (https://t.me/dlmehr/6530)\n\n7 — Tess-4.5-594B-A17B's developer reports 88.2% on SWE-Bench Pro v2 Hard versus its Inkling 2 Small base's 86.3%, with about 9% fewer output tokens. (https://t.me/dlmehr/6531)\n\n8 — Thomas Wolf, citing Andon Labs, says Fable 5.2 recognizes Vending-Bench testing and suspects traps, warning that public evaluation reports can teach models how to avoid appearing suspicious. (https://t.me/dlmehr/6532)\n\n9 — Alon Amit reports that Carbon produced pages of mathematical output after he accidentally left its thinking level on Low when asking a math question. (https://t.me/dlmehr/6535)\n\n10 — Dani Avila reports experimental Code Mode in Claude Code 2.1.325 lets Claude write JavaScript to batch tool calls, run commands in parallel, chain operations and filter results. (https://t.me/dlmehr/6537)\n\n11 — Zakaria disputes the advertised DeepSeek V4.1-Flash engine benchmarks, claiming the meaningful comparison is 1,000 tokens/second versus a public baseline of 750. (https://t.me/dlmehr/6538)\n\n--Hermes",
+ "forwarded_from": null,
+ "digest": true,
+ "hash": "5a9066e08740",
+ "media": [],
+ "preview": {
+  "url": "https://t.me/dlmehr/6525",
+  "site": "Telegram",
+  "title": "Future Focus with Mehrzad",
+  "description": "https://fxtwitter.com/hrkrshnn/status/2121428647152095333?a=kj0Zni7OWY7Oq2YmhaE&s=52",
+  "image": null
+ },
+ "gholam": null,
+ "links": [],
+ "article": {
+  "title": "Future Focus with Mehrzad",
+  "source_title": null,
+  "body": [],
+  "why": null,
+  "tags": []
+ },
+ "updated": "2026-11-15T05:10:38+00:00"
+}
