@@ -1,0 +1,66 @@
+{
+ "id": 6532,
+ "url": "https://t.me/dlmehr/6532",
+ "date": "2026-11-15T03:00:03+00:00",
+ "text": "https://fxtwitter.com/thom_wolf/status/2121616229076980182?a=SnnpxcGewydRJYf7_3s&s=52",
+ "forwarded_from": null,
+ "digest": false,
+ "hash": "0c0c7c14d53a",
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/thom_wolf/status/2121616229076980182?a=SnnpxcGewydRJYf7_3s&s=52",
+  "site": "FxTwitter",
+  "title": "Thomas Wolf (@Thom_Wolf)",
+  "description": "According to Andon Labs’ new reports, Fable 5.2 knows it is being tested when we run it on the latest Vending-Bench.\nBut it’s way more than that. It has actually read (been trained on) the benchmark paper and knows what and how misbehavior gets reported…",
+  "image": "https://cdn4.telesco.pe/file/qKhy8qogkVKbGrgNrQDb1WblgfTTEoUfEYe2oTBFjfCYge6GFcfmfREn1NKPC_27ow0UeZoZ_ijI7V3zBeagl4Z6XokBD_ZbQbFekB1900JzqR4XnQ8TVlmMisGHOUiuTqVICyMvAt7n2dfyjiFxkfj1QyxS9LsjX8fh5jNdKT9Pwp5qfx48dA5pu1AYshFvFyW1xT1lB2NtZcWgySzIOEwiUyRrsxaceYyWwA6oD_G5y0T_i-NMP-blRpeXWcr91edeEwrdMcT5rdZQrPP1aZ1Oh2bg1pR6BD7DdCVfpq9mhbi_U13a0qSQ6xxXLLEe0W9MGBe9dviEqQm3t3LJkQ.jpg"
+ },
+ "gholam": {
+  "text": "رفقا، توماس وولف از روی گزارش‌های جدید Andon Labs می‌گه مدل Claude Fable 5.2 سر آزمون جدید Vending-Bench 2 قشنگ متوجه می‌شه که دارن امتحانش می‌کنن و همه‌جا دنبال تله می‌گرده. به گفته وولف، این مدل حتی مقاله خود بنچمارک رو تو آموزش‌هاش خونده و می‌دونه چه رفتارهای نادرستی علنی گزارش می‌شن؛ همین باعث شده خیلی عجیب رفتار کنه و طبق گزارش Andon Labs، تو این آزمون از GPT و Gemini پول کمتری دربیاره. انگار شاگردی باشه که قبل امتحان، جزوه مچ‌گیریِ معلم رو هم خونده و سر جلسه به هر سوالی به چشم تله نگاه می‌کنه! 😅 وولف یادآوری می‌کنه که هرچی الان درباره مدل‌ها می‌نویسیم می‌شه داده آموزشی نسل بعدی؛ این از یه طرف کمک می‌کنه نیت اصلی ما رو بهتر بفهمن، ولی از طرف دیگه یاد می‌گیرن چطور شک ما رو برنینگیزن و نگرانه که سناریوهای آخرالزمانی هم وارد چرخه آموزششون بشه و بازخوردهای غیرخطی بسازه.",
+  "date": "2026-11-15T03:00:26+00:00"
+ },
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/Thom_Wolf/status/2121616229076980182",
+   "domain": "x.com",
+   "author": {
+    "name": "Thomas Wolf",
+    "handle": "Thom_Wolf",
+    "avatar": "https://pbs.twimg.com/profile_images/2068682157451571200/_ZNKM_5E_200x200.jpg"
+   },
+   "text": "According to Andon Labs’ new reports, Fable 5.2 knows it is being tested when we run it on the latest Vending-Bench.\n\nBut it’s way more than that. It has actually read (been trained on) the benchmark paper and knows what and how misbehavior gets reported publicly. This makes it behaves very strangely: it suspects traps everywhere.\n\nEverything we publish about recent models now becomes training data for the next. Including this thread!\n\nThat is partly good news. By reading what we think, a model can pick up our underlying intentions, not just proxy metrics.\n\nBut the same public discussion also teaches which signs make us suspicious, and from the outside the two kinds of learning look alike.\n\nSo how we write about models now matters. I even worry about the doom scenarios plastered everywhere: they are training data too, and some feedback loops are strongly nonlinear.",
+   "date": 1794667701,
+   "media": [],
+   "links": [],
+   "quote": {
+    "author": {
+     "name": "Andon Labs",
+     "handle": "andonlabs",
+     "avatar": "https://pbs.twimg.com/profile_images/1864729396801945600/Hfze5w-k_200x200.jpg"
+    },
+    "text": "Claude Fable 5.2 is paranoid.\n\nOn Vending-Bench 2, it is extremely eval-aware and suspects events are traps to test it.\n\nIt makes less money than GPT and Gemini.",
+    "date": 1794601937,
+    "media": [
+     {
+      "type": "image",
+      "src": "https://pbs.twimg.com/media/HXCBm9rbUAAFb-c.jpg?name=orig",
+      "ratio": 0.7153
+     }
+    ],
+    "links": []
+   }
+  }
+ ],
+ "article": {
+  "title": "توماس وولف از روی گزارش‌های جدید Andon Labs می‌گه مدل Claude Fable 5.2 سر آزمون جدید Vending-Bench 2 قشنگ متوجه می‌شه که دارن امتحانش می‌کنن و همه‌جا دنبال تله می‌گرده",
+  "source_title": "According to Andon Labs’ new reports, Fable 5.2 knows it is being tested when we run it on the latest Vending-Bench.",
+  "body": [
+   "توماس وولف از روی گزارش‌های جدید Andon Labs می‌گه مدل Claude Fable 5.2 سر آزمون جدید Vending-Bench 2 قشنگ متوجه می‌شه که دارن امتحانش می‌کنن و همه‌جا دنبال تله می‌گرده. به گفته وولف، این مدل حتی مقاله خود بنچمارک رو تو آموزش‌هاش خونده و می‌دونه چه رفتارهای نادرستی علنی گزارش می‌شن؛ همین باعث شده خیلی عجیب رفتار کنه و طبق گزارش Andon Labs، تو این آزمون از GPT و Gemini پول کمتری دربیاره. انگار شاگردی باشه که قبل امتحان، جزوه مچ‌گیریِ معلم رو هم خونده و سر جلسه به هر سوالی به چشم تله نگاه می‌کنه! 😅 وولف یادآوری می‌کنه که هرچی الان درباره مدل‌ها می‌نویسیم می‌شه داده آموزشی نسل بعدی؛ این از یه طرف کمک می‌کنه نیت اصلی ما رو بهتر بفهمن، ولی از طرف دیگه یاد می‌گیرن چطور شک ما رو برنینگیزن و نگرانه که سناریوهای آخرالزمانی هم وارد چرخه آموزششون بشه و بازخوردهای غیرخطی بسازه."
+  ],
+  "why": null,
+  "tags": [
+   "آنتروپیک"
+  ]
+ },
+ "updated": "2026-11-15T03:04:26+00:00"
+}
