@@ -1,0 +1,48 @@
+{
+ "id": 6544,
+ "url": "https://t.me/dlmehr/6544",
+ "date": "2026-11-15T19:56:50+00:00",
+ "text": "https://fxtwitter.com/emperoai/status/2122016458821570943?a=Z7N6zqk7i6zInC9qt2k&s=52",
+ "forwarded_from": null,
+ "digest": false,
+ "hash": "8d12b338b1c3",
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/emperoai/status/2122016458821570943?a=Z7N6zqk7i6zInC9qt2k&s=52",
+  "site": "🧵 Thread • FxTwitter",
+  "title": "Empero (@EmperoAI)",
+  "description": "quark: a 165M-parameter language model with 128K context, post-trained with RL only. No SFT stage, no distillation.\nThe whole project, failed first design included, cost about $4,200 of compute (about 1,300 H100-hours).\nFour open-weight models and a report…",
+  "image": "https://cdn4.telesco.pe/file/Smw_5Dmr3Tl5WwT8VMBmtg_x887ZHmCaU8xqzmaIizMHqizMKbHhhjvCX51oDoSlr9ZPIQwvy-eb0lysm6exCk37hosoAZ6CtJ6gMB5vwb5OijTrNXu73xfsSFdkdNY1u2LbFDVfObZJsjvGEqxGD4XXaZTTKkI7moMt5q1lTeksVKt5qqo3vpTVGluK6w2cCvPZ7h3RntKeoVP89zazqLjwkcLxYU01AWY7vGdvpp5XBF-hv0v5FXztdooiWAvUtsL8j6ZBtTRR5HVQtfCo2U4oYUY0INAtxB36rKTFeggozvkBXgw-AWF7XzK8qcbaibr-t1syMRBU0ONh6zVXJQ.jpg"
+ },
+ "gholam": null,
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/EmperoAI/status/2122016458821570943",
+   "domain": "x.com",
+   "author": {
+    "name": "Empero",
+    "handle": "EmperoAI",
+    "avatar": "https://pbs.twimg.com/profile_images/2066175749527089152/d2WLOLuS_200x200.jpg"
+   },
+   "text": "quark: a 165M-parameter language model with 128K context, post-trained with RL only. No SFT stage, no distillation.\n\nThe whole project, failed first design included, cost about $4,200 of compute (about 1,300 H100-hours).\n\nFour open-weight models and a report 🧵",
+   "date": 1794763123,
+   "media": [
+    {
+     "type": "image",
+     "src": "https://pbs.twimg.com/media/HXLpihhXgAAgNTZ.jpg?name=orig",
+     "ratio": 0.5625
+    }
+   ],
+   "links": []
+  }
+ ],
+ "article": {
+  "title": "quark: a 165M-parameter language model with 128K context, post-trained with RL only. No SFT stage, no distillation.",
+  "source_title": null,
+  "body": [],
+  "why": null,
+  "tags": []
+ },
+ "updated": "2026-11-15T19:57:41+00:00"
+}

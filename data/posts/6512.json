@@ -12,7 +12,7 @@
   "site": "🧵 Thread • FxTwitter",
   "title": "Alek Westover (@alek_westover)",
   "description": "We show that looping a transformer increases no-CoT capabilities more than other ways of increasing pretrain quality would.",
-  "image": "https://cdn4.telesco.pe/file/qX_WxDK6kGkmZ9cnsgBqbUrdKkFl_NsgoFGOQW7wMoL3ip9bkfJZVDDSQluKVyef8Klu_cplI6Kr47djRlMUb1oxolY3j3-_XuThp6wbXGUy_abhifh39SOkkuQTSuwhToLTh3ACrF5ga6ZtUJaiiIzfdhd7PS8qcyQLqjAhcj-rdDRURBgkTyk_ZO2WK0wnDrGzNqnDYTydlERdNP8O8cuNveUl23Pvth1zqswKh59_XYhlBdyXePRqAki_WjaEySl9DgSfUqv1nmW9uhB0TD_3-s7ri7MoH1U1hCIj-FK9AmpfwfuIvtK0ktAr_yLZuVNv64rdAQDraTlnByRMQg.jpg"
+  "image": "https://cdn4.telesco.pe/file/gLn_SuyRBMJTpMJQOoNfcLDAt5-3gpyYO_amTEMjPyRYWGzPv1bnNB0q9Ayo5LJycNo1g-5T6LJNxXN_0TPNrGxWQWkqe5Nr3ubsUn18Z3rtUx_rR9YAF0akjRkOHmFezqnflA0BnIfJyf-moKBivcjfj4w2SezcjzxqOWkKXXjeawF92vPykl75tQ8TP40jNf_N--sgY0K9lG102HLrP0Uvse4SNStCehmlhJaEUv3pxQgy2Jl-NVgr1-pF_dKH8ClOR-GGHcF2Bxov_BKUAamnmueyXn5Y4s3RHPE0pEFEAFpOZpGocW-kQWT1BAWy6rTRIxe_9alqkwmtLz_IyA.jpg"
  },
  "gholam": {
   "text": "رفیق، الک وست‌اور از پژوهشگرای «ردوود ریسرچ» از تحقیق جدیدشون درباره «ترنسفورمرهای حلقه‌ای» گفته؛ همون روشی که به گفته اون این روزا شایعه شده شرکت‌های پیشرو هم دنبالشن. اون می‌گه بررسیشون روی مدل «دوری» (Dory) انویدیا نشون داده حلقه‌ای کردن ترنسفورمر، توانایی‌های بدون زنجیره تفکر (no-CoT) رو خیلی بیشتر از بقیه روش‌های بالا بردن کیفیت پیش‌آموزش تقویت می‌کنه و توی مدل‌های Astra و Argon هم چنین جهشی بالاتر از روند معمول دیده شده. انگار مدل به جای چرک‌نویسِ مرحله‌به‌مرحله، تو دل خودش یه دور اضافه می‌زنه و یه‌ضرب بهتر عمل می‌کنه! 🧠\n\nوست‌اور این تغییر معماری رو نگران‌کننده می‌دونه، هرچند زیر پستش یه کاربر هم پرسیده که اصلاً این روش توی حالت تفکر مرحله‌به‌مرحله هم چیز جدیدی اضافه می‌کنه یا نه؛ البته متن کامل یادداشت LessWrong و جزئیات نمودارهای توییت اینجا در دسترس نیست.",
@@ -50,5 +50,5 @@
   "why": null,
   "tags": []
  },
- "updated": "2026-11-15T11:53:59+00:00"
+ "updated": "2026-11-15T19:57:41+00:00"
 }

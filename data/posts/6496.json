@@ -12,7 +12,7 @@
   "site": "Blank Bio",
   "title": "Introducing Ladon: An RNA foundation model for predicting patient outcomes",
   "description": "Ladon is a state-of-the-art biological foundation model that predicts disease trajectory and treatment response in patients.",
-  "image": "https://cdn4.telesco.pe/file/SQfnpsWvyaPK-7UKGRXNcr9SEDNu3GgVmxfDsIMfHX7OjaZn_tk23jKvXAcBbH4387CVLvjurMDskJOTgzP8pD-yP915O-x54bu6Kp-nprhbAZ59cLa2CVXzCkma4Ol2hPQqhBGmXDRlMnObAdXB2gvWlV0GbN0VXsnDomAD8eZXFn7SB1PfC81G6sDVcnpysVOza9DoC_zEId9dtuxuLCItM9qm-sY-z6U4dgvCEzU87zm29WFud_JGsOZCgLLrM7eICvIN--y0fMPOuwv1UHCFgqIoATMcCS3PKrOMQiOzh-rVpCTDeLdUPbu_qqGoEdP0TYbTn5nv30r7d6Airg.jpg"
+  "image": "https://cdn4.telesco.pe/file/UPmXeXpNqFTiLDb5pHtDCB2CQo8vzQ7twOeSwZNuCNy3uViLVMOdEz9iRCUE6MK_ZBA6PhAHPBAFEN2adJXijb8hCHbrDA5SgpsdPrr4NtCx5MAMsW2CYER4ASXCTbUIqqt22QX_9GGkL-C6fyX8hthWBG_7AnHpgg78Diwiip9pYy92fbkzZsyf8E00Td5sNtLnJb0tuTPJtUTbjUqtUr_epGi3Rrbz2tWk0D99jGVlcH2oTVJ8Q-7sdoiAx6yWe5zb92RC2JHbOKceZz1K7VPrNBkMlVtzZp1wtvUN_6DKY8-nmO0PaAdOwxHv6bVIbYHx6rT0aFLolswKglMK4Q.jpg"
  },
  "gholam": {
   "text": "سلام و مخلص رفقا. شرکت Blank Bio به‌تازگی از یه مدل هوش مصنوعی پایه به اسم Ladon رونمایی کرده که با ۳ میلیارد پارامتر، روی میلیون‌ها نمونه از داده‌های آران‌ای (RNA-seq) آموزش دیده. طبق اعلام این تیم، هدف اصلی مدل اینه که با تحلیل دقیق مولکولی، پیش‌آگهی بیماری و میزان پاسخ‌دهی بیمار به داروها رو پیش‌بینی کنه تا جلوی شکست‌های پرهزینه در کارآزمایی‌های بالینی گرفته بشه.\n\nچندتا نکته‌ی مهم درباره‌ی این مدل که توی گزارش فنی اومده:\n• در پیش‌بینی پاسخ به درمان در کارآزمایی‌های بالینی سرطان (مثل ریه، کلیه و کبد)، از روش‌های پایه‌ای فعلی و نشانگرهای معروفی مثل PD-L1 دقیق‌تر عمل کرده.\n• توانایی درک جزئیات در سطح ایزوفرم‌ها و تشخیص ترکیب سلولی تومورها رو داره و می‌تونه به شناسایی زیست‌نشانگرهای مناسب برای تفکیک بیماران کمک کنه.\n• شرکت سازنده گزارش داده که با بزرگ‌تر شدن اندازه مدل و محاسبات پیش‌آموزش، عملکرد بالینی اون در بنچمارک اختصاصی به طور پیوسته رشد داشته.",
@@ -44,5 +44,5 @@
    "سلامت"
   ]
  },
- "updated": "2026-11-15T11:53:59+00:00"
+ "updated": "2026-11-15T19:57:42+00:00"
 }
