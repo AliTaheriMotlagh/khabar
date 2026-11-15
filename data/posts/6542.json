@@ -1,0 +1,81 @@
+{
+ "id": 6542,
+ "url": "https://t.me/dlmehr/6542",
+ "date": "2026-11-15T05:39:11+00:00",
+ "text": "https://fxtwitter.com/n4ze3m/status/2121799813679419515",
+ "forwarded_from": "Amirreza",
+ "digest": false,
+ "hash": "0c97cdf0d09f",
+ "media": [],
+ "preview": {
+  "url": "https://x.com/n4ze3m/status/2121799813679419515",
+  "site": "X (formerly Twitter)",
+  "title": "Nazeem (@n4ze3m) on X",
+  "description": "I trained a text-to-speech model that has never heard a real human voice.\n4.5M parameters. 18 MB. Runs on a CPU.\nMeet tiny-voca",
+  "image": "https://cdn4.telesco.pe/file/gGYNteLH6MfXQr_szHYuBeGfd44WGA6xpK1hg6HtxqTzz3N_hPQjyonCK7Ku3k_m5CNhpHVeuEfDQoZKY1WYo8JgK6wTdP666w8iEjgnubqXo6JwZsOPTGqpNbRDaSFkuW8kN135jG3A8TdOww3YL5KGsV9VH1kQTtpCoTTgH2KONJ89l5_e1AIPQoajj0tIVnWyAIYKelLCTInhxTaoS8ZEXa8PFr3xpF5xwbBuyTC3QWdQLDt-AwUJjhs2Ahw4YmndAxFP4duRQEeR4C2qDzjp7O3xrWvLOrN1bT7E3_FWfQLKOVZnlUn5P7P4DDf8uSAwew9g5TRBD1OPXTpwFA.jpg"
+ },
+ "gholam": {
+  "text": "رفیق، یه توسعه‌دهنده به اسم n4ze3m یه مدل تبدیل متن به گفتارِ جمع‌وجور به اسم tiny-voca معرفی کرده که به گفته خودش تا حالا یه بار هم صدای واقعی آدمیزاد نشنیده! 🤖 این مدل فقط روی ۱۹ ساعت صدای مصنوعیِ یه مدل بزرگ‌تر (در دو صدایی که با توصیف متنی طراحی شدن) آموزش دیده؛ انگار حرف زدن رو تمام‌قد از روی دست یه ربات یاد گرفته. سازنده‌اش می‌گه با ۴.۵ میلیون پارامتر و حجم ۱۸ مگابایت روی CPU هم اجرا می‌شه و یه بخش تشخیص تلفظ اختصاصی داره که عددها، تاریخ‌ها و مبالغ رو بر اساس بافت جمله می‌خونه؛ مثلاً فرق مدل کارت گرافیک RTX 4090 رو با مبلغ ۴۰۹۰ دلار تشخیص می‌ده. همچنین اعلام کرده کد، وزن‌ها، دیتاست و دستورالعمل آموزشش رو کامل و آزاد منتشر کرده و امکان آزمایشش رو هم فراهم آورده.",
+  "date": "2026-11-15T05:39:34+00:00"
+ },
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/n4ze3m/status/2121799813679419515",
+   "domain": "x.com",
+   "author": {
+    "name": "Nazeem",
+    "handle": "n4ze3m",
+    "avatar": "https://pbs.twimg.com/profile_images/1704839982282575872/rxFsOTIV_200x200.jpg"
+   },
+   "text": "I trained a text-to-speech model that has never heard a real human voice.\n\n4.5M parameters. 18 MB. Runs on a CPU.\n\nMeet tiny-voca",
+   "date": 1794711471,
+   "media": [
+    {
+     "type": "video",
+     "src": "https://video.twimg.com/amplify_video/2121799530547224576/vid/avc1/1280x720/4lnOCUe-qe-xZyJh.mp4?tag=29",
+     "poster": "https://pbs.twimg.com/amplify_video_thumb/2121799530547224576/img/xBVIjqnMBNUHS3Fd.jpg",
+     "ratio": 0.5625,
+     "duration": 28.4,
+     "gif": false
+    }
+   ],
+   "links": []
+  },
+  {
+   "kind": "tweet",
+   "url": "https://x.com/n4ze3m/status/2121799813679419515",
+   "domain": "x.com",
+   "author": {
+    "name": "Nazeem",
+    "handle": "n4ze3m",
+    "avatar": "https://pbs.twimg.com/profile_images/1704839982282575872/rxFsOTIV_200x200.jpg"
+   },
+   "text": "I trained a text-to-speech model that has never heard a real human voice.\n\n4.5M parameters. 18 MB. Runs on a CPU.\n\nMeet tiny-voca",
+   "date": 1794711471,
+   "media": [
+    {
+     "type": "video",
+     "src": "https://video.twimg.com/amplify_video/2121799530547224576/vid/avc1/1280x720/4lnOCUe-qe-xZyJh.mp4?tag=29",
+     "poster": "https://pbs.twimg.com/amplify_video_thumb/2121799530547224576/img/xBVIjqnMBNUHS3Fd.jpg",
+     "ratio": 0.5625,
+     "duration": 28.4,
+     "gif": false
+    }
+   ],
+   "links": []
+  }
+ ],
+ "article": {
+  "title": "یه توسعه‌دهنده به اسم n4ze3m یه مدل تبدیل متن به گفتارِ جمع‌وجور به اسم tiny-voca معرفی کرده که به گفته خودش تا حالا یه بار هم صدای واقعی آدمیزاد نشنیده",
+  "source_title": "I trained a text-to-speech model that has never heard a real human voice.",
+  "body": [
+   "یه توسعه‌دهنده به اسم n4ze3m یه مدل تبدیل متن به گفتارِ جمع‌وجور به اسم tiny-voca معرفی کرده که به گفته خودش تا حالا یه بار هم صدای واقعی آدمیزاد نشنیده! 🤖 این مدل فقط روی ۱۹ ساعت صدای مصنوعیِ یه مدل بزرگ‌تر (در دو صدایی که با توصیف متنی طراحی شدن) آموزش دیده؛ انگار حرف زدن رو تمام‌قد از روی دست یه ربات یاد گرفته. سازنده‌اش می‌گه با ۴.۵ میلیون پارامتر و حجم ۱۸ مگابایت روی CPU هم اجرا می‌شه و یه بخش تشخیص تلفظ اختصاصی داره که عددها، تاریخ‌ها و مبالغ رو بر اساس بافت جمله می‌خونه؛ مثلاً فرق مدل کارت گرافیک RTX 4090 رو با مبلغ ۴۰۹۰ دلار تشخیص می‌ده. همچنین اعلام کرده کد، وزن‌ها، دیتاست و دستورالعمل آموزشش رو کامل و آزاد منتشر کرده و امکان آزمایشش رو هم فراهم آورده."
+  ],
+  "why": null,
+  "tags": [
+   "صدا و موسیقی"
+  ]
+ },
+ "updated": "2026-11-15T05:43:20+00:00"
+}
