@@ -14,7 +14,10 @@
   "description": "quark: a 165M-parameter language model with 128K context, post-trained with RL only. No SFT stage, no distillation.\nThe whole project, failed first design included, cost about $4,200 of compute (about 1,300 H100-hours).\nFour open-weight models and a report…",
   "image": "https://cdn4.telesco.pe/file/Smw_5Dmr3Tl5WwT8VMBmtg_x887ZHmCaU8xqzmaIizMHqizMKbHhhjvCX51oDoSlr9ZPIQwvy-eb0lysm6exCk37hosoAZ6CtJ6gMB5vwb5OijTrNXu73xfsSFdkdNY1u2LbFDVfObZJsjvGEqxGD4XXaZTTKkI7moMt5q1lTeksVKt5qqo3vpTVGluK6w2cCvPZ7h3RntKeoVP89zazqLjwkcLxYU01AWY7vGdvpp5XBF-hv0v5FXztdooiWAvUtsL8j6ZBtTRR5HVQtfCo2U4oYUY0INAtxB36rKTFeggozvkBXgw-AWF7XzK8qcbaibr-t1syMRBU0ONh6zVXJQ.jpg"
  },
- "gholam": null,
+ "gholam": {
+  "text": "رفقا، حساب کاربری «امپرو» (Empero) از یه مدل زبانی جمع‌وجور به اسم «کوارک» (quark) خبر داده که ۱۶۵ میلیون پارامتر داره و از کانتکست ۱۲۸ هزارتایی پشتیبانی می‌کنه. به گفته این تیم، مرحله پس‌آ‌موزش مدل فقط با یادگیری تقویتی (RL) انجام شده و اصلاً سراغ آموزش نظارت‌شده (SFT) یا تقطیر دانش (distillation) نرفتن. امپرو گفته کل هزینه پردازشی این پروژه، حتی با احتساب یه طراحی اولیه‌ی ناموفق، حدود ۴۲۰۰ دلار (نزدیک به ۱۳۰۰ ساعت استفاده از پردازنده‌های H100) در اومده و چهار مدل با وزن‌های باز و یه گزارش هم همراهش معرفی کردن. البته چون ادامه رشته‌توییت و خود گزارش اینجا در دسترس نیست، جزئیات بیشتری از عملکرد و نتایج این مدل‌ها مشخص نیست. 🤖",
+  "date": "2026-11-15T19:57:10+00:00"
+ },
  "links": [
   {
    "kind": "tweet",
@@ -38,11 +41,13 @@
   }
  ],
  "article": {
-  "title": "quark: a 165M-parameter language model with 128K context, post-trained with RL only. No SFT stage, no distillation.",
-  "source_title": null,
-  "body": [],
+  "title": "حساب کاربری «امپرو» (Empero) از یه مدل زبانی جمع‌وجور به اسم «کوارک» (quark) خبر داده که ۱۶۵ میلیون پارامتر داره و از کانتکست ۱۲۸ هزارتایی پشتیبانی می‌کنه",
+  "source_title": "quark: a 165M-parameter language model with 128K context, post-trained with RL only. No SFT stage, no distillation.",
+  "body": [
+   "حساب کاربری «امپرو» (Empero) از یه مدل زبانی جمع‌وجور به اسم «کوارک» (quark) خبر داده که ۱۶۵ میلیون پارامتر داره و از کانتکست ۱۲۸ هزارتایی پشتیبانی می‌کنه. به گفته این تیم، مرحله پس‌آ‌موزش مدل فقط با یادگیری تقویتی (RL) انجام شده و اصلاً سراغ آموزش نظارت‌شده (SFT) یا تقطیر دانش (distillation) نرفتن. امپرو گفته کل هزینه پردازشی این پروژه، حتی با احتساب یه طراحی اولیه‌ی ناموفق، حدود ۴۲۰۰ دلار (نزدیک به ۱۳۰۰ ساعت استفاده از پردازنده‌های H100) در اومده و چهار مدل با وزن‌های باز و یه گزارش هم همراهش معرفی کردن. البته چون ادامه رشته‌توییت و خود گزارش اینجا در دسترس نیست، جزئیات بیشتری از عملکرد و نتایج این مدل‌ها مشخص نیست. 🤖"
+  ],
   "why": null,
   "tags": []
  },
- "updated": "2026-11-15T19:57:41+00:00"
+ "updated": "2026-11-15T20:54:50+00:00"
 }
