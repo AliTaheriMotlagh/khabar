@@ -1,0 +1,67 @@
+{
+ "id": 6536,
+ "url": "https://t.me/dlmehr/6536",
+ "date": "2026-11-15T04:39:09+00:00",
+ "text": "https://fxtwitter.com/zakariaornot/status/2121783247042683373?a=zgpN2ECZU8PLiVOoZ5Y&s=52",
+ "forwarded_from": null,
+ "digest": false,
+ "hash": "6a7546f3ff74",
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/zakariaornot/status/2121783247042683373?a=zgpN2ECZU8PLiVOoZ5Y&s=52",
+  "site": "🧵 Thread • FxTwitter",
+  "title": "Zakaria (@zakariaornot)",
+  "description": "I took some time to investigate these results deeply and they're misleading. The real results are 1000 TPS vs the public baseline that is 750 TPS.\nSee investigation below:\nQuoting Phil Howes (@saltyph)\nwe built an inference engine for deepseek v4.1-flash…",
+  "image": null
+ },
+ "gholam": {
+  "text": "یه کاربر به نام زکریا توی ایکس نوشته که یه سری نتایج رو حسابی بررسی کرده و به نظرش گمراه‌کننده بودن. به گفته خودش، عدد واقعی ۱۰۰۰ TPS در مقایسه با مبنای عمومی ۷۵۰ TPS هست. البته چون ادامه این بررسی و تصویرهای مربوط بهش توی محتوای ارسالی در دسترس نیست، دقیقاً معلوم نیست موضوع سر چیه و جزئیات بیشتری ازش نداریم. 🔍",
+  "date": "2026-11-15T04:39:33+00:00"
+ },
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/zakariaornot/status/2121783247042683373",
+   "domain": "x.com",
+   "author": {
+    "name": "Zakaria",
+    "handle": "zakariaornot",
+    "avatar": "https://pbs.twimg.com/profile_images/2063262799149846528/HsuZDlDk_200x200.jpg"
+   },
+   "text": "I took some time to investigate these results deeply and they're misleading. The real results are 1000 TPS vs the public baseline that is 750 TPS. \n\nSee investigation below:",
+   "date": 1794707521,
+   "media": [],
+   "links": [],
+   "quote": {
+    "author": {
+     "name": "Phil Howes",
+     "handle": "saltyph",
+     "avatar": "https://pbs.twimg.com/profile_images/1810545187288125440/2fpPvWGc_200x200.jpg"
+    },
+    "text": "we built an inference engine for deepseek v4.1-flash from scratch. the core engine is just rust + cuda. no pytorch, no sglang, no dsls, etc.\n~1740 TPS decode on 4xB300, 2060TPS on 8xB300. 1M token prefill in ~12s.\nit's up on github",
+    "date": 1794592618,
+    "media": [
+     {
+      "type": "video",
+      "src": "https://video.twimg.com/tweet_video/HXBXif7bsAAq5qL.mp4",
+      "poster": "https://pbs.twimg.com/tweet_video_thumb/HXBXif7bsAAq5qL.jpg",
+      "ratio": 0.94,
+      "duration": 0,
+      "gif": true
+     }
+    ],
+    "links": []
+   }
+  }
+ ],
+ "article": {
+  "title": "یه کاربر به نام زکریا توی ایکس نوشته که یه سری نتایج رو حسابی بررسی کرده و به نظرش گمراه‌کننده بودن",
+  "source_title": "I took some time to investigate these results deeply and they're misleading. The real results are 1000 TPS vs the public baseline that is…",
+  "body": [
+   "یه کاربر به نام زکریا توی ایکس نوشته که یه سری نتایج رو حسابی بررسی کرده و به نظرش گمراه‌کننده بودن. به گفته خودش، عدد واقعی ۱۰۰۰ TPS در مقایسه با مبنای عمومی ۷۵۰ TPS هست. البته چون ادامه این بررسی و تصویرهای مربوط بهش توی محتوای ارسالی در دسترس نیست، دقیقاً معلوم نیست موضوع سر چیه و جزئیات بیشتری ازش نداریم. 🔍"
+  ],
+  "why": null,
+  "tags": []
+ },
+ "updated": "2026-11-15T04:43:20+00:00"
+}
