@@ -1,0 +1,72 @@
+{
+ "id": 6538,
+ "url": "https://t.me/dlmehr/6538",
+ "date": "2026-11-15T04:49:59+00:00",
+ "text": "https://fxtwitter.com/zakariaornot/status/2121783247042683373?a=Kt7cQwnAwZKO5ViG33w&s=52",
+ "forwarded_from": null,
+ "digest": false,
+ "hash": "1cf64f053bd9",
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/zakariaornot/status/2121783247042683373?a=Kt7cQwnAwZKO5ViG33w&s=52",
+  "site": "🧵 Thread • FxTwitter",
+  "title": "Zakaria (@zakariaornot)",
+  "description": "I took some time to investigate these results deeply and they're misleading. The real results are 1000 TPS vs the public baseline that is 750 TPS.\nSee investigation below:\nQuoting Phil Howes (@saltyph)\nwe built an inference engine for deepseek v4.1-flash…",
+  "image": null
+ },
+ "gholam": {
+  "text": "رفیق، یه کاربر به اسم zakariaornot اومده یه بنچمارکِ پردازش هوش مصنوعی روی چهار تا تراشه‌ی B300 رو بررسی کرده و می‌گه عددِ پرزرق‌وبرقِ ۱۷۴۰ توکن بر ثانیه یکم گمراه‌کننده‌ست. 🔍 البته خودِ پستی که بهش واکنش نشون داده اینجا در دسترس نیست، ولی به گفته‌ی این نویسنده، داستان بیشتر شبیه ماشینیه که فقط توی کفی و با شرایط ایده‌آل اون سرعت رو می‌گیره و توی کار واقعی اوضاع فرق داره:\n\n• به گفته‌ی اون، سرعت ۱۷۴۰ واقعی هست، اما فقط روی یه پرامپتِ خاص با نرخ پذیرش خیلی بالا (۵.۶ توکن در هر مرحله)؛ توی کارهای کدنویسی معمولی با حالتِ thinking روشن به حدود ۱۲۰۰ و توی چت و نوشتن به حدود ۷۵۰ توکن بر ثانیه پایین میاد.\n• توی آزمایشِ خودشون روی ۱۲۰ درخواستِ کدنویسی با شرایط برابر (نرخ پذیرش ۳.۵۱) و همون سخت‌افزار، سیستمِ پیشنهادی حدود ۱۰۱۰ توکن بر ثانیه خروجی داده و نسخه‌ی بهینه‌شده‌ی vLLM توسط InferenceX به ۸۴۳ توکن رسیده؛ یعنی فقط ۱.۲ برابر سریع‌تر که توی کانتکست ۷۰۰ هزارتایی به ۱.۱۳ برابر هم می‌رسه.\n• نویسنده در نهایت می‌گه دو برابر بودنِ سرعت فقط در مقایسه با نسخه‌ی خامِ vLLM درسته که خیلی از بهترین عملکردهای فعلی فاصله داره.",
+  "date": "2026-11-15T04:50:20+00:00"
+ },
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/zakariaornot/status/2121783247042683373",
+   "domain": "x.com",
+   "author": {
+    "name": "Zakaria",
+    "handle": "zakariaornot",
+    "avatar": "https://pbs.twimg.com/profile_images/2063262799149846528/HsuZDlDk_200x200.jpg"
+   },
+   "text": "I took some time to investigate these results deeply and they're misleading. The real results are 1000 TPS vs the public baseline that is 750 TPS. \n\nSee investigation below:",
+   "date": 1794707521,
+   "media": [],
+   "links": [],
+   "quote": {
+    "author": {
+     "name": "Phil Howes",
+     "handle": "saltyph",
+     "avatar": "https://pbs.twimg.com/profile_images/1810545187288125440/2fpPvWGc_200x200.jpg"
+    },
+    "text": "we built an inference engine for deepseek v4.1-flash from scratch. the core engine is just rust + cuda. no pytorch, no sglang, no dsls, etc.\n~1740 TPS decode on 4xB300, 2060TPS on 8xB300. 1M token prefill in ~12s.\nit's up on github",
+    "date": 1794592618,
+    "media": [
+     {
+      "type": "video",
+      "src": "https://video.twimg.com/tweet_video/HXBXif7bsAAq5qL.mp4",
+      "poster": "https://pbs.twimg.com/tweet_video_thumb/HXBXif7bsAAq5qL.jpg",
+      "ratio": 0.94,
+      "duration": 0,
+      "gif": true
+     }
+    ],
+    "links": []
+   }
+  }
+ ],
+ "article": {
+  "title": "یه کاربر به اسم zakariaornot اومده یه بنچمارکِ پردازش هوش مصنوعی روی چهار تا تراشه‌ی B300 رو بررسی کرده و می‌گه عددِ پرزرق‌وبرقِ ۱۷۴۰ توکن بر ثانیه یکم گمراه‌کننده‌ست",
+  "source_title": "I took some time to investigate these results deeply and they're misleading. The real results are 1000 TPS vs the public baseline that is…",
+  "body": [
+   "یه کاربر به اسم zakariaornot اومده یه بنچمارکِ پردازش هوش مصنوعی روی چهار تا تراشه‌ی B300 رو بررسی کرده و می‌گه عددِ پرزرق‌وبرقِ ۱۷۴۰ توکن بر ثانیه یکم گمراه‌کننده‌ست. 🔍 البته خودِ پستی که بهش واکنش نشون داده اینجا در دسترس نیست، ولی به گفته‌ی این نویسنده، داستان بیشتر شبیه ماشینیه که فقط توی کفی و با شرایط ایده‌آل اون سرعت رو می‌گیره و توی کار واقعی اوضاع فرق داره:",
+   "• به گفته‌ی اون، سرعت ۱۷۴۰ واقعی هست، اما فقط روی یه پرامپتِ خاص با نرخ پذیرش خیلی بالا (۵.۶ توکن در هر مرحله)؛ توی کارهای کدنویسی معمولی با حالتِ thinking روشن به حدود ۱۲۰۰ و توی چت و نوشتن به حدود ۷۵۰ توکن بر ثانیه پایین میاد.",
+   "• توی آزمایشِ خودشون روی ۱۲۰ درخواستِ کدنویسی با شرایط برابر (نرخ پذیرش ۳.۵۱) و همون سخت‌افزار، سیستمِ پیشنهادی حدود ۱۰۱۰ توکن بر ثانیه خروجی داده و نسخه‌ی بهینه‌شده‌ی vLLM توسط InferenceX به ۸۴۳ توکن رسیده؛ یعنی فقط ۱.۲ برابر سریع‌تر که توی کانتکست ۷۰۰ هزارتایی به ۱.۱۳ برابر هم می‌رسه.",
+   "• نویسنده در نهایت می‌گه دو برابر بودنِ سرعت فقط در مقایسه با نسخه‌ی خامِ vLLM درسته که خیلی از بهترین عملکردهای فعلی فاصله داره."
+  ],
+  "why": null,
+  "tags": [
+   "کدنویسی"
+  ]
+ },
+ "updated": "2026-11-15T04:53:22+00:00"
+}
