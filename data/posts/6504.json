@@ -12,7 +12,7 @@
   "site": "🧵 Thread • FxTwitter",
   "title": "Microsoft 365 Status (@MSFT365Status)",
   "description": "We're investigating reports of users experiencing issues accessing Exchange Online mailboxes through multiple connection methods in the Americas. More details can be found in the Microsoft 365 admin center under EX1550543.",
-  "image": "https://cdn4.telesco.pe/file/TFT28MS0q7OxpnfG4hPrdGoxWdhooulYAcP6ibJUpAkr7Rm95if05X8-yASZHFbUIlVsye3RWbJKBhPwPIeMN6IjkbLEgYMIaFuT7xV5Kb-fE6l1aRtVplA4zyDy8T9u4rso_D6r9m2KNSeYYtVIwpwkG7s2s-9ESKcvJrS8KQOLy3oUzIklEaEpBqnnGke5POGOiqfb5sd7nuwkHXTIrJJ7JFcKoA4FvyFdKQTvM83mpziQHTUXKzZGg6QH5OaZE-TsK91KMOH91gFTBV8EFmunadqJttPG7cPkK2vtyaKGl7-9kZOYcJl6Ixxq0Omc5NZzQCjj7PKRPf_8lWsWGA.jpg"
+  "image": "https://cdn4.telesco.pe/file/AFqC1520vlTBhXeAPEyHdfnG48rC5odrxA_VHY6rAqQJzV3_Af-LXaGVQXWLn6kc1sWC9I05cv3XpGY5fEv2wDxwfNitVij0Gqkb9D1XDPtlVhm1FNlmozed2n0pCTQ8Tu8ypBzDl5dDLWe7mY4WzpQpdMFrmg-ZKiakr4OCsQOrAiaXrGtrzPGhfnirWvamCvkfiWadWpEs9-Pr9WiYtiL9VwFW3uipHik0BRQJoMFlATWCt_VPeKHKZkQbP2ALd5V4BJGpzcr-GhOj9w5wA0-P34IkKl-J1gceFdnpPC9ewbAFQFSK7jB1oZpGl02ncyTtmiGH1vMD4rEQpZ_RfA.jpg"
  },
  "gholam": {
   "text": "رفقا، اکانت رسمی وضعیت مایکروسافت ۳۶۵ تو ایکس اعلام کرده که دسترسی به ایمیل‌های Exchange Online و اتصال به سرویس‌های مایکروسافت ۳۶۵ دچار اختلال شده و گرچه گزارش‌ها اول از قاره آمریکا بوده، ممکنه کاربرهای هر منطقه‌ای با این مشکل روبه‌رو بشن. 🛠️\n\n• مایکروسافت گفته این شلوغی به خاطر هجوم کاربرها نیست، بلکه تعدادی از سرورها به‌طور غیرمنتظره از دسترس خارج شدن و فشار افتاده روی بقیه زیرساخت؛ مثل وقتی چند نفر از همکارا سر کار نیان و کل کار بیفته گردن بقیه.\n• به گفته این شرکت، سرورها از تست سلامت خودکار رد نمیشن و یه پردازش اصلی روشون زیر فشار رفته؛ برای همین تیم فنی فعلاً همه استقرارها و تغییرات جدید رو متوقف کرده و مشغول جابه‌جایی ترافیک و ریستارت کردن سرورهاست.\n• طبق آخرین آپدیت‌های همین رشته توییت، با اینکه بخشی از سرورها برگشتن، هنوز بعضی‌هاشون با گرفتن ترافیک دوباره از کار می‌افتن و کار برای مهار کامل اختلال ادامه داره.\n\nجزئیات و کدهای پیگیری این اختلال تو پنل ادمین مایکروسافت با شماره‌های EX1550543 و MO1550821 ثبت شده؛ پس اگه الان اتصال به ایمیل یا سرویس‌ها اذیتتون کرد، بدونید موضوع از طرف خودشونه و هنوز در حال برطرف کردنشن.",
@@ -49,5 +49,5 @@
    "مایکروسافت"
   ]
  },
- "updated": "2026-11-15T19:57:41+00:00"
+ "updated": "2026-11-16T02:31:21+00:00"
 }

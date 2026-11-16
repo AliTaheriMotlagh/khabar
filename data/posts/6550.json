@@ -1,0 +1,71 @@
+{
+ "id": 6550,
+ "url": "https://t.me/dlmehr/6550",
+ "date": "2026-11-16T02:27:32+00:00",
+ "text": "https://fxtwitter.com/alibaba_qwen/status/2122148127520289151?a=-F0gjLwORUTLHBwgRPA&s=52",
+ "forwarded_from": null,
+ "digest": false,
+ "hash": "932ac3c64aaf",
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/alibaba_qwen/status/2122148127520289151?a=-F0gjLwORUTLHBwgRPA&s=52",
+  "site": "🧵 Thread • FxTwitter",
+  "title": "Qwen (@Alibaba_Qwen)",
+  "description": "📢\nMeet Qwen4-Max, your new AI teammate for work, creativity, and discovery!\nQwen4-Max is built on a new MoE architecture with native vision and a 1M-token context window.\nHighlights:\n- Outperforms Qwen3.8-Max with up to ~50% fewer tokens, while average…",
+  "image": "https://cdn4.telesco.pe/file/GUmXJfNhsqp9hfel5Kj9SedPUt91uKvkP9J7RX347gSCBSsY00mvX4-_b69oNsSJPW3IBhE_jmGoO1eymw-mEq5wfV_P1mlBs2rNeCx4A6ljtq2I34RFF8-rS9L7eZ69a_M1sorlhHa2P0yOzfItQyrTSp8zssoe6V40dkLJOAbTHI338AG9Lm_4IIhnrcdBE9qgKCbmSq1QwI9WuZ2ZFffavkVwd3S2eyWMBA3QkCaDABbniXICxq4Ng7hF7cDyV61yFdfX2ePiU14lKupB7wE0HHIhsU7aD8maTn6XKm2F1VbfQ_9YKQfvs9Ssw76qG3sFE0RCuA-ANk7oQWIhEg.jpg"
+ },
+ "gholam": {
+  "text": "رفقا، تیم Qwen علی‌بابا از مدل جدید Qwen4-Max رونمایی کرده و اون رو یه هم‌تیمی همه‌فن‌حریف برای کارهای تخصصی مثل کدنویسی، طراحی سه‌بعدی، بازی‌سازی، تولید صنعتی و پژوهش‌های علمی معرفی کرده 🤖. طبق گفته این شرکت، مدل تازه نسبت به نسل قبلی توکن کمتری مصرف می‌کنه و تعرفه‌های ارزون‌تری داره تا کارهای طولانی و پیچیده به‌صرفه‌تر انجام بشن.\n\n• مشخصات فنی: بر اساس وبلاگ رسمی Qwen، این مدل روی معماری جدید MoE با ۲.۴ تریلیون پارامتر پایه (۷۱ میلیارد پارامتر فعال در هر توکن) ساخته شده، ورودی متن، تصویر و ویدیو رو پشتیبانی می‌کنه و تا ۱ میلیون توکن پنجره زمینه داره.\n• هزینه و ارزیابی داخلی: توی بنچمارک داخلی خود شرکت (Work360)، امتیاز مدل به ۵۲.۶۹ رسیده که حدود ۱۰ درصد از Qwen3.8-Max بالاتره و میانگین هزینه هر تسک از ۴.۴۳ دلار به ۱.۶۷ دلار کاهش پیدا کرده؛ قیمت API روی QwenCloud هم به ازای هر میلیون توکن، ۱.۵ دلار برای ورودی، ۴.۵ دلار برای خروجی و ۰.۰۷۵ دلار برای کش ضمنیه.\n• مقایسه با رقبا و دسترسی: طبق نمودارهای منتشرشده، Qwen4-Max تو آزمون‌هایی مثل DeepSWE و کارهای حقوقی از رقبا جلوتره، اما تو تست‌هایی مثل CodeArena، Terminal-Bench 4.0 و درک نمودار هنوز عقب‌تر از مدل‌هایی مثل Opus5.5، GPT6 یا Kimi K3.1 ایستاده؛ API این مدل الان در دسترسه و به گفته تیم سازنده، نسخه‌های کوچیک‌تر Qwen4 هم قراره با وزن‌های باز منتشر بشن.",
+  "date": "2026-11-16T02:28:04+00:00"
+ },
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/Alibaba_Qwen/status/2122148127520289151",
+   "domain": "x.com",
+   "author": {
+    "name": "Qwen",
+    "handle": "Alibaba_Qwen",
+    "avatar": "https://pbs.twimg.com/profile_images/2064231947149377536/Ab70PxT5_200x200.jpg"
+   },
+   "text": "📢 Meet Qwen4-Max, your new AI teammate for work, creativity, and discovery!\n\nQwen4-Max is built on a new MoE architecture with native vision and a 1M-token context window.\n\nHighlights:\n- Outperforms Qwen3.8-Max with up to ~50% fewer tokens, while average cost per task drops over 60% in our internal evaluation.\n- Advances real-world productivity through greater proficiency with professional tools, stronger long-horizon execution, and higher-quality deliverables.\n- Handles real tasks, including 3D modeling, game development, manufacturing, finance, law, healthcare, and frontier scientific discovery.\n- $1.5/M tokens for input, $4.5/M tokens for output, and $0.075/M tokens for implicit caching — all lower than Qwen3.8-Max, with implicit caching down by 70%.\n\nThe API is live on QwenCloud. You can also try Qwen4-Max on Qwen Studio, QwenWork and Qoder. \n\nStart building today! 🚀\n- Blog: https://qwen.ai/blog?id=qwen4-max\n- API: https://www.qwencloud.com/models/qwen4-max\n- Token Plan: https://www.qwencloud.com/pricing/token-plan\n\nMore to come! The open weights of smaller Qwen4 models will be released. Stay tuned. 👀",
+   "date": 1794794515,
+   "media": [
+    {
+     "type": "image",
+     "src": "https://pbs.twimg.com/media/HXNgxQIaEAAHHwZ.jpg?name=orig",
+     "ratio": 0.6667
+    }
+   ],
+   "links": [
+    "https://qwen.ai/blog?id=qwen4-max",
+    "https://www.qwencloud.com/models/qwen4-max",
+    "https://www.qwencloud.com/pricing/token-plan"
+   ]
+  },
+  {
+   "kind": "link",
+   "url": "https://qwen.ai/blog?id=qwen4-max",
+   "domain": "qwen.ai",
+   "title": "Qwen",
+   "description": "Qwen offers comprehensive functionality spanning chatbot, image and video understanding, image generation, document processing, web search integration, tool utilization, and artifacts.",
+   "image": "https://img.alicdn.com/imgextra/i4/O1CN01OXv3EM1FN8t9W4P79_!!6000000000474-2-tps-80-80.png",
+   "site": "qwen.ai"
+  }
+ ],
+ "article": {
+  "title": "تیم Qwen علی‌بابا از مدل جدید Qwen4-Max رونمایی کرده و اون رو یه هم‌تیمی همه‌فن‌حریف برای کارهای تخصصی مثل کدنویسی، طراحی سه‌بعدی، بازی‌سازی، تولید صنعتی و پژوهش‌های علمی معرفی کرده 🤖",
+  "source_title": "📢 Meet Qwen4-Max, your new AI teammate for work, creativity, and discovery!",
+  "body": [
+   "تیم Qwen علی‌بابا از مدل جدید Qwen4-Max رونمایی کرده و اون رو یه هم‌تیمی همه‌فن‌حریف برای کارهای تخصصی مثل کدنویسی، طراحی سه‌بعدی، بازی‌سازی، تولید صنعتی و پژوهش‌های علمی معرفی کرده 🤖. طبق گفته این شرکت، مدل تازه نسبت به نسل قبلی توکن کمتری مصرف می‌کنه و تعرفه‌های ارزون‌تری داره تا کارهای طولانی و پیچیده به‌صرفه‌تر انجام بشن.",
+   "• مشخصات فنی: بر اساس وبلاگ رسمی Qwen، این مدل روی معماری جدید MoE با ۲.۴ تریلیون پارامتر پایه (۷۱ میلیارد پارامتر فعال در هر توکن) ساخته شده، ورودی متن، تصویر و ویدیو رو پشتیبانی می‌کنه و تا ۱ میلیون توکن پنجره زمینه داره.",
+   "• هزینه و ارزیابی داخلی: توی بنچمارک داخلی خود شرکت (Work360)، امتیاز مدل به ۵۲.۶۹ رسیده که حدود ۱۰ درصد از Qwen3.8-Max بالاتره و میانگین هزینه هر تسک از ۴.۴۳ دلار به ۱.۶۷ دلار کاهش پیدا کرده؛ قیمت API روی QwenCloud هم به ازای هر میلیون توکن، ۱.۵ دلار برای ورودی، ۴.۵ دلار برای خروجی و ۰.۰۷۵ دلار برای کش ضمنیه.",
+   "• مقایسه با رقبا و دسترسی: طبق نمودارهای منتشرشده، Qwen4-Max تو آزمون‌هایی مثل DeepSWE و کارهای حقوقی از رقبا جلوتره، اما تو تست‌هایی مثل CodeArena، Terminal-Bench 4.0 و درک نمودار هنوز عقب‌تر از مدل‌هایی مثل Opus5.5، GPT6 یا Kimi K3.1 ایستاده؛ API این مدل الان در دسترسه و به گفته تیم سازنده، نسخه‌های کوچیک‌تر Qwen4 هم قراره با وزن‌های باز منتشر بشن."
+  ],
+  "why": null,
+  "tags": [
+   "چین"
+  ]
+ },
+ "updated": "2026-11-16T02:31:20+00:00"
+}
