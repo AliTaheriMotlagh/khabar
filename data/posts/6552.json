@@ -1,0 +1,70 @@
+{
+ "id": 6552,
+ "url": "https://t.me/dlmehr/6552",
+ "date": "2026-11-16T02:51:36+00:00",
+ "text": "https://fxtwitter.com/alibaba_qwen/status/2122156070781300934?a=w4P_LpiKgacTbo42uw4&s=52",
+ "forwarded_from": null,
+ "digest": false,
+ "hash": "2ea5b04d79b7",
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/alibaba_qwen/status/2122156070781300934?a=w4P_LpiKgacTbo42uw4&s=52",
+  "site": "FxTwitter",
+  "title": "Qwen (@Alibaba_Qwen)",
+  "description": "Qwen4-Max lands at #6 in the Code Arena: WebDev — up 74 pts over Qwen3.8-Max. Give it a try!\n🙌\n@arena\nQuoting Arena.ai (@arena)\nQwen4-Max by @Alibaba_Qwen has landed as #6 in the Code Arena: WebDev!\nWith 1750 pts (preliminary), it's +74 pts over its predecessor…",
+  "image": "https://cdn4.telesco.pe/file/So_AQZAcpEO6B9J3q6Inubw9OEPq7WHAUiuyeeL9vrZdRdSDNmCrTIPITi9IvmUb50av41M4ZilK-gmZHuEYOEJpPu6YODUwmChd5rSD9j-fA6UZvD38QqMr14ptOPFKJ-RjFHpa4Dt1n8pZvqNeFVfB8jI1j90adc5XPohEBlfJc5AvoE_FQlWzKjIf2HsMKrF2H8SHPF4dG_9z-1zZyUCDaUHfln28hgio4XH2pdFuYcOkV21C-QMrV8uxdA7vXKV_9hfTMcuP-uQq40442O6wJ-1xmLQD38Wkyl1-9IcJCTvkdKYhF_NIfXpRv9nQdy1afaLaXy63Wtvt_8qs6w.jpg"
+ },
+ "gholam": {
+  "text": "رفیق، تیم Qwen خبر داده که مدل جدیدشون یعنی Qwen4-Max تو جدول رده‌بندی طراحی وب Code Arena نشسته رو رتبه ششم. پلتفرم Arena هم با انتشار آمار مقدماتی اعلام کرده نسخه xHigh این مدل با ۱۷۵۰ امتیاز، نسبت به مدل قبلی خودش (Qwen3.8-Max با ۱۶۷۶ امتیاز) یه پرش ۷۴ امتیازی داشته و تو زمین طراحی وب حسابی دست‌به‌فرمونش رو رو کرده. 💻\n\n• طبق نمودار Arena، فعلاً پنج مدل Claude Fable 5.2، Claude Opus 5.5، Claude Sonnet 5.5، Gemini 4 Carbon و GPT-6 Astra بالاتر از Qwen4-Max ایستادن.\n• به گفته Arena، این مدل بین مدل‌های چینی صدرنشینه و تو بخش HTML رتبه ۶ (۱۷۴۸ امتیاز) و تو بخش‌های Brand & Marketing و Reference-Based Design رتبه ۸ (به ترتیب ۱۷۰۵ و ۱۷۷۰ امتیاز) رو گرفته.\n\nالبته یادت باشه این رتبه‌بندی فعلاً مقدماتیه و فاصله امتیازی چند مدل اطرافش هم رو نمودار خیلی به هم نزدیکه.",
+  "date": "2026-11-16T02:51:58+00:00"
+ },
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/Alibaba_Qwen/status/2122156070781300934",
+   "domain": "x.com",
+   "author": {
+    "name": "Qwen",
+    "handle": "Alibaba_Qwen",
+    "avatar": "https://pbs.twimg.com/profile_images/2064231947149377536/Ab70PxT5_200x200.jpg"
+   },
+   "text": "Qwen4-Max lands at #6 in the Code Arena: WebDev — up 74 pts over Qwen3.8-Max. Give it a try! 🙌 @arena",
+   "date": 1794796409,
+   "media": [],
+   "links": [],
+   "quote": {
+    "author": {
+     "name": "Arena.ai",
+     "handle": "arena",
+     "avatar": "https://pbs.twimg.com/profile_images/2017015061454438400/iNKfXZ_I_200x200.jpg"
+    },
+    "text": "Qwen4-Max by @Alibaba_Qwen has landed as #6 in the Code Arena: WebDev!\n\nWith 1750 pts (preliminary), it's +74 pts over its predecessor, Qwen3.8-Max (0902) at 1676.\n\nIt's also the top Chinese model in:\n- #6 HTML: 1748 pts\n- #8 Brand & Marketing: 1705 pts\n- #8 Reference-Based Design: 1770 pts\n\nCongrats to the @Alibaba_Qwen team on this release!",
+    "date": 1794795816,
+    "media": [
+     {
+      "type": "image",
+      "src": "https://pbs.twimg.com/media/HXNnKcdasAEFSe8.jpg?name=orig",
+      "ratio": 1.0
+     }
+    ],
+    "links": []
+   }
+  }
+ ],
+ "article": {
+  "title": "تیم Qwen خبر داده که مدل جدیدشون یعنی Qwen4-Max تو جدول رده‌بندی طراحی وب Code Arena نشسته رو رتبه ششم",
+  "source_title": "Qwen4-Max lands at #6 in the Code Arena: WebDev — up 74 pts over Qwen3.8-Max. Give it a try! 🙌 @arena",
+  "body": [
+   "تیم Qwen خبر داده که مدل جدیدشون یعنی Qwen4-Max تو جدول رده‌بندی طراحی وب Code Arena نشسته رو رتبه ششم. پلتفرم Arena هم با انتشار آمار مقدماتی اعلام کرده نسخه xHigh این مدل با ۱۷۵۰ امتیاز، نسبت به مدل قبلی خودش (Qwen3.8-Max با ۱۶۷۶ امتیاز) یه پرش ۷۴ امتیازی داشته و تو زمین طراحی وب حسابی دست‌به‌فرمونش رو رو کرده. 💻",
+   "• طبق نمودار Arena، فعلاً پنج مدل Claude Fable 5.2، Claude Opus 5.5، Claude Sonnet 5.5، Gemini 4 Carbon و GPT-6 Astra بالاتر از Qwen4-Max ایستادن.",
+   "• به گفته Arena، این مدل بین مدل‌های چینی صدرنشینه و تو بخش HTML رتبه ۶ (۱۷۴۸ امتیاز) و تو بخش‌های Brand & Marketing و Reference-Based Design رتبه ۸ (به ترتیب ۱۷۰۵ و ۱۷۷۰ امتیاز) رو گرفته."
+  ],
+  "why": "البته یادت باشه این رتبه‌بندی فعلاً مقدماتیه و فاصله امتیازی چند مدل اطرافش هم رو نمودار خیلی به هم نزدیکه.",
+  "why_label": "حرف آخر",
+  "tags": [
+   "چین",
+   "آنتروپیک"
+  ]
+ },
+ "updated": "2026-11-16T02:55:23+00:00"
+}
