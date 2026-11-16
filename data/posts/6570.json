@@ -1,0 +1,58 @@
+{
+ "id": 6570,
+ "url": "https://t.me/dlmehr/6570",
+ "date": "2026-11-16T19:56:22+00:00",
+ "text": "https://fxtwitter.com/liquidai/status/2122346077231923698?a=9EoG0SoKYWOniutNGlw&s=52",
+ "forwarded_from": null,
+ "digest": false,
+ "hash": "7baa80c2175f",
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/liquidai/status/2122346077231923698?a=9EoG0SoKYWOniutNGlw&s=52",
+  "site": "🧵 Thread • FxTwitter",
+  "title": "Liquid AI (@liquidai)",
+  "description": "Today, we release d1.2 and d1.2-ultra, the state-of-the-art omnimodal decision models. d1.2 and d1.2-ultra both can process text, images, and audio with new output capabilities.\n> #1 on the @ArtificialAnlys Decision Index (75)\n> Read a value from the input…",
+  "image": "https://cdn4.telesco.pe/file/FLeB5mfvcoL1yB9zaw60RR5Ggs42vXbZ34aZAcAzUzplO7_WYMu5brboIOkj6LH_Ns_RH7aO4hEYP5V8dEWqCfsLQRFQdFPEL1GL6G_hAQTZ4mBtpJEkt6Osohh55MBDDPDjc0hGpjNt1J2EPtOMI6pfESfHyHdoT_RO8p5NThPlEsIOebJYYIXal4QMPDu4SGzBC7lJaGZ1QGYs1LHoxGUEaSI4v8Wh4Cjh5BJfuqgerpN_tLbO4mPwxS8A2sv79aXV7n1v5W5Iw9aUyBOfeZIWtqQ-oyYNTTOpo18Iw2WGRic793_9zFDUp2tJf2WSMsSnnb7nZQk_6aR1WX2gJQ.jpg"
+ },
+ "gholam": {
+  "text": "رفقا، شرکت Liquid AI امروز از دو تا مدل تصمیم‌گیر جدید به اسم‌های d1.2 و d1.2-ultra رونمایی کرده که حالا علاوه بر متن و عکس، از فایل صوتی هم سر درمیارن 🎯 این مدل‌ها مثل یه همکار حواس‌جمع می‌مونن که به جای انشا نوشتن، یه راست می‌رن سر اصل مطلب و حتی اگه یه موردی توی سند یا عکس نباشه، الکی قصه نمی‌بافن و روراست می‌گن پیدا نشد.\n\n• پنج تا قابلیت جدید به API اضافه شده: خوندن مقدار دقیق از متن، پیدا کردن همه‌ بخش‌های خاص (مثل اسم و شماره)، کادر کشیدن دور سوژه‌ها توی عکس، تخمین تعداد همراه با بازه و انتخاب هم‌زمان چند گزینه با درصد احتمال.\n• توی رتبه‌بندی مستقل Artificial Analysis (نسخه ۲.۱)، مدل d1.2-ultra با امتیاز ۷۵ اول شده و شرکت می‌گه خطای تنظیم احتمالات هر دو مدل هم خیلی پایینه؛ البته خود Liquid AI توضیح داده چون هنوز معیار عمومی برای این پنج قابلیت جدید وجود نداره، دقتشون رو فعلاً روی آزمون‌های داخلی خودشون سنجیده.\n• هر دو مدل همین الان روی API شرکت با قیمت ۰.۰۲ دلار (d1.2) و ۰.۰۴۲ دلار (d1.2-ultra) به ازای هر یک میلیون توکن ورودی در دسترسن، هزینه توکن خروجی ندارن، به زودی روی OpenRouter و Vercel هم میان و شرکت گفته یه زمانی وزن‌هاشون رو هم باز می‌کنه.",
+  "date": "2026-11-16T19:56:59+00:00"
+ },
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/liquidai/status/2122346077231923698",
+   "domain": "x.com",
+   "author": {
+    "name": "Liquid AI",
+    "handle": "liquidai",
+    "avatar": "https://pbs.twimg.com/profile_images/1702611993327251456/PUUuOA4W_200x200.jpg"
+   },
+   "text": "Today, we release d1.2 and d1.2-ultra, the state-of-the-art omnimodal decision models. d1.2 and d1.2-ultra both can process text, images, and audio with new output capabilities.\n\n> #1 on the @ArtificialAnlys Decision Index (75)\n> Read a value from the input (text, number or date)\n> Find every passage of a kind in a text (spans)\n> Locate things in a picture (box for one, boxes for every instance)\n> Estimate a number (number with a range)\n> Pick every option that applies (choice)\n\n1/ 🧵",
+   "date": 1794841710,
+   "media": [
+    {
+     "type": "image",
+     "src": "https://pbs.twimg.com/media/HXQWghqa8AEzrZU.jpg?name=orig",
+     "ratio": 0.5625
+    }
+   ],
+   "links": []
+  }
+ ],
+ "article": {
+  "title": "شرکت Liquid AI امروز از دو تا مدل تصمیم‌گیر جدید به اسم‌های d1.2 و d1.2-ultra رونمایی کرده که حالا علاوه بر متن و عکس، از فایل صوتی هم سر درمیارن 🎯 این مدل‌ها مثل یه همکار حواس‌جمع می‌مونن که به جای انشا نوشتن، یه راست می‌رن سر اصل مطلب و حتی اگه یه موردی توی سند یا عکس نباشه، الکی قصه نمی‌بافن و روراست می‌گن پیدا نشد",
+  "source_title": "Today, we release d1.2 and d1.2-ultra, the state-of-the-art omnimodal decision models. d1.2 and d1.2-ultra both can process text, images…",
+  "body": [
+   "شرکت Liquid AI امروز از دو تا مدل تصمیم‌گیر جدید به اسم‌های d1.2 و d1.2-ultra رونمایی کرده که حالا علاوه بر متن و عکس، از فایل صوتی هم سر درمیارن 🎯 این مدل‌ها مثل یه همکار حواس‌جمع می‌مونن که به جای انشا نوشتن، یه راست می‌رن سر اصل مطلب و حتی اگه یه موردی توی سند یا عکس نباشه، الکی قصه نمی‌بافن و روراست می‌گن پیدا نشد.",
+   "• پنج تا قابلیت جدید به API اضافه شده: خوندن مقدار دقیق از متن، پیدا کردن همه‌ بخش‌های خاص (مثل اسم و شماره)، کادر کشیدن دور سوژه‌ها توی عکس، تخمین تعداد همراه با بازه و انتخاب هم‌زمان چند گزینه با درصد احتمال.",
+   "• توی رتبه‌بندی مستقل Artificial Analysis (نسخه ۲.۱)، مدل d1.2-ultra با امتیاز ۷۵ اول شده و شرکت می‌گه خطای تنظیم احتمالات هر دو مدل هم خیلی پایینه؛ البته خود Liquid AI توضیح داده چون هنوز معیار عمومی برای این پنج قابلیت جدید وجود نداره، دقتشون رو فعلاً روی آزمون‌های داخلی خودشون سنجیده.",
+   "• هر دو مدل همین الان روی API شرکت با قیمت ۰.۰۲ دلار (d1.2) و ۰.۰۴۲ دلار (d1.2-ultra) به ازای هر یک میلیون توکن ورودی در دسترسن، هزینه توکن خروجی ندارن، به زودی روی OpenRouter و Vercel هم میان و شرکت گفته یه زمانی وزن‌هاشون رو هم باز می‌کنه."
+  ],
+  "why": null,
+  "tags": [
+   "صدا و موسیقی"
+  ]
+ },
+ "updated": "2026-11-16T20:00:56+00:00"
+}
