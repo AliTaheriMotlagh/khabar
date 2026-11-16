@@ -1,0 +1,55 @@
+{
+ "id": 6558,
+ "url": "https://t.me/dlmehr/6558",
+ "date": "2026-11-16T17:06:28+00:00",
+ "text": "https://fxtwitter.com/openainewsroom/status/2122375519853559954?a=-Th0zfP8RCXNdY8ZyaM&s=52",
+ "forwarded_from": null,
+ "digest": false,
+ "hash": "139fc35c8a72",
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/openainewsroom/status/2122375519853559954?a=-Th0zfP8RCXNdY8ZyaM&s=52",
+  "site": "FxTwitter · openai.com",
+  "title": "OpenAI Newsroom (@OpenAINewsroom)",
+  "description": "We're releasing a free new tool to vetted organizations to help detect child sexual abuse material, including AI-generated images. We're also adding ChatGPT warnings, publishing guidance for developers, and supporting child safety investigators.\nWe developed…",
+  "image": "https://cdn4.telesco.pe/file/urQlssNRvyvmYWl66qOvATODBAryCoRWlT6e_cJMC38D7Q7ZKjHMwgZpNdASYw_LvX2K_58gw1Pi3H34mg3wLK8CpeW0hKQp8MVmMS3n8OFE7DYvvOwwDkevdY5uhgRai6MS_TuGgQE-cWJ2JPGeKhGAkrj7saLClyENy9fAd7_h1WCe2a2w8CQU4P3XZFrTHcmgTXVgRGaQFYWwcOd0iKUP4fWb4SUVlsVq6oIp7WvonXbt3H4KIvLOg-YDt3oOOEe6t9I7IGNsTXkUijPzOsFVIzMUqV-fH1kAfykelPYz2QrYMbTOTKFbWxuRwGLWPIvOJGF2sqsVk0bEuOEPMw.jpg"
+ },
+ "gholam": {
+  "text": "رفقا، شرکت اوپن‌ای‌آی (OpenAI) اعلام کرده برای تقویت امنیت آنلاین کودکان و مقابله با محتوای سوءاستفاده جنسی از کودکان—از جمله تصاویر ساخته‌شده با هوش مصنوعی—ابزارها و اقدامات جدیدی رو راه‌اندازی کرده. این شرکت می‌گه بخش اصلی این ابزارها رو با کمک مرکز ملی کودکان گمشده و استثمارشده (NCMEC) ساخته و با همکاری گروه‌های Tech Coalition و ROOST می‌خواد دسترسی سازمان‌های تاییدشده رو به اون‌ها گسترش بده.\n\n• ابزار رایگان تشخیص تصویر: طبق توضیحات اوپن‌ای‌آی، یک سیستم جدید تشخیص تصویر از طریق API به‌صورت رایگان در اختیار سازمان‌های تاییدشده قرار می‌گیره تا بتونن محتوای آزارگرانه و تصاویر تولیدشده با هوش مصنوعی رو شناسایی کنن؛ در ارزیابی داخلی این شرکت، ابزار جدید ۴۸ درصد تصاویر کمتری رو برای بررسی پرچم‌گذاری کرده در حالی که تقریبا همون تعداد موارد آزارگرانه رو پیدا کرده و شرکای اولیه هم در آزمایش‌هاش به نتایج مثبتی رسیدن.\n• هشدار و مسدودسازی موقت در ChatGPT: بر اساس مقاله رسمی این شرکت، اگه کاربری درخواست محتوای آزارگرانه علیه کودکان بده، گفت‌وگو حذف می‌شه، دسترسی اون به ChatGPT برای ۲۴ ساعت قطع می‌شه و پیام هشداری همراه با معرفی مراکز کمک تخصصی براش نمایش داده می‌شه؛ در صورت تکرار هم محدودیت‌های طولانی‌تر، بستن حساب یا گزارش به مراجع قانونی در پیشه.\n• راهنمای توسعه‌دهندگان و حمایت از بازرسان: اوپن‌ای‌آی همچنین یک راهنمای عملی ایمنی برای توسعه‌دهنده‌ها (با همکاری چند نهاد تخصصی امنیت کودک) منتشر کرده و اعلام کرده از بازرسان حوزه امنیت کودکان هم حمایت می‌کنه.",
+  "date": "2026-11-16T17:06:54+00:00"
+ },
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/OpenAINewsroom/status/2122375519853559954",
+   "domain": "x.com",
+   "author": {
+    "name": "OpenAI Newsroom",
+    "handle": "OpenAINewsroom",
+    "avatar": "https://pbs.twimg.com/profile_images/1885410297101381632/3Gs7_1gs_200x200.jpg"
+   },
+   "text": "We're releasing a free new tool to vetted organizations to help detect child sexual abuse material, including AI-generated images. We're also adding ChatGPT warnings, publishing guidance for developers, and supporting child safety investigators.  \n\nWe developed the classifier with assistance from the National Center for Missing & Exploited Children. We're working with the Tech Coalition and ROOST to help make it available to more organizations.\n\nhttps://openai.com/index/strengthening-online-child-safety/",
+   "date": 1794848730,
+   "media": [],
+   "links": [
+    "https://openai.com/index/strengthening-online-child-safety/"
+   ]
+  }
+ ],
+ "article": {
+  "title": "شرکت اوپن‌ای‌آی (OpenAI) اعلام کرده برای تقویت امنیت آنلاین کودکان و مقابله با محتوای سوءاستفاده جنسی از کودکان—از جمله تصاویر ساخته‌شده با هوش مصنوعی—ابزارها و اقدامات جدیدی رو راه‌اندازی کرده",
+  "source_title": "We're releasing a free new tool to vetted organizations to help detect child sexual abuse material, including AI-generated images. We're…",
+  "body": [
+   "شرکت اوپن‌ای‌آی (OpenAI) اعلام کرده برای تقویت امنیت آنلاین کودکان و مقابله با محتوای سوءاستفاده جنسی از کودکان—از جمله تصاویر ساخته‌شده با هوش مصنوعی—ابزارها و اقدامات جدیدی رو راه‌اندازی کرده. این شرکت می‌گه بخش اصلی این ابزارها رو با کمک مرکز ملی کودکان گمشده و استثمارشده (NCMEC) ساخته و با همکاری گروه‌های Tech Coalition و ROOST می‌خواد دسترسی سازمان‌های تاییدشده رو به اون‌ها گسترش بده.",
+   "• ابزار رایگان تشخیص تصویر: طبق توضیحات اوپن‌ای‌آی، یک سیستم جدید تشخیص تصویر از طریق API به‌صورت رایگان در اختیار سازمان‌های تاییدشده قرار می‌گیره تا بتونن محتوای آزارگرانه و تصاویر تولیدشده با هوش مصنوعی رو شناسایی کنن؛ در ارزیابی داخلی این شرکت، ابزار جدید ۴۸ درصد تصاویر کمتری رو برای بررسی پرچم‌گذاری کرده در حالی که تقریبا همون تعداد موارد آزارگرانه رو پیدا کرده و شرکای اولیه هم در آزمایش‌هاش به نتایج مثبتی رسیدن.",
+   "• هشدار و مسدودسازی موقت در ChatGPT: بر اساس مقاله رسمی این شرکت، اگه کاربری درخواست محتوای آزارگرانه علیه کودکان بده، گفت‌وگو حذف می‌شه، دسترسی اون به ChatGPT برای ۲۴ ساعت قطع می‌شه و پیام هشداری همراه با معرفی مراکز کمک تخصصی براش نمایش داده می‌شه؛ در صورت تکرار هم محدودیت‌های طولانی‌تر، بستن حساب یا گزارش به مراجع قانونی در پیشه.",
+   "• راهنمای توسعه‌دهندگان و حمایت از بازرسان: اوپن‌ای‌آی همچنین یک راهنمای عملی ایمنی برای توسعه‌دهنده‌ها (با همکاری چند نهاد تخصصی امنیت کودک) منتشر کرده و اعلام کرده از بازرسان حوزه امنیت کودکان هم حمایت می‌کنه."
+  ],
+  "why": null,
+  "tags": [
+   "اوپن‌ای‌آی",
+   "امنیت"
+  ]
+ },
+ "updated": "2026-11-16T17:09:33+00:00"
+}
