@@ -1,0 +1,47 @@
+{
+ "id": 6569,
+ "url": "https://t.me/dlmehr/6569",
+ "date": "2026-11-16T19:52:21+00:00",
+ "text": "https://huggingface.co/blog/openrouter",
+ "forwarded_from": "Amirreza",
+ "digest": false,
+ "hash": "6bdee4ba378d",
+ "media": [],
+ "preview": {
+  "url": "https://huggingface.co/blog/openrouter",
+  "site": "huggingface.co",
+  "title": "Hugging Face and OpenRouter join forces to make open-weight models easy to run",
+  "description": "We’re on a journey to advance and democratize artificial intelligence through open source and open science.",
+  "image": "https://cdn4.telesco.pe/file/pYd61Valt8YrYylpPFZgEW0tz4Gx7FZtKEpau2Fl6aehd9F4zcNg2KnVxhRq3ax3YcP8PlJ1K2ut2YXtrmr8ooXpVgsdpZbHCI53LGh_5gGp4O76n0glumirUrT_OLGIyAQARsXyKrf-KJMz_kye7HA5nfAGCpYHPrM3fR7SjGJGSh099u6P5eOGlJELXI0chIaILHMsbsFnypt1wL8guLWurG8CGXnjMhPhXlpqga4wyuntVjFKc8QuWIcPEo8-8PV4n6at8pFjrzuJj7Oo4Ekdf1uI6Pjx86UPf8F_w3JnE25E4szA5eUkRc8OYwMcPUURALvSXSlmqaWsRI_5sw.jpg"
+ },
+ "gholam": {
+  "text": "رفیق، هاگینگ‌فیس اعلام کرده با اوپن‌روتر همکاری می‌کنه تا اجرای مدل‌های وزن‌باز راحت‌تر بشه و از امروز مسیریابیِ مدل‌های زبانی در بخش Inference Providers رو به سیستم اوپن‌روتر سپرده. ماجرا شبیه اینه که به جای تکیه به یه مسیر ثابت، یه راهنمای سرحال داشته باشی که بین بیش از ۸۰ ارائه‌دهنده، همون لحظه بهترین گزینه رو از نظر قیمت، سرعت و پایداری انتخاب کنه و اگه یکی به مشکل خورد، خودش درخواست رو بفرسته سراغ بعدی. 🤝\n\n• کد قبلیت بدون تغییر کار می‌کنه و با همون توکن هاگینگ‌فیس می‌تونی با پسوندهایی مثل :fastest یا :cheapest اولویت رو تعیین کنی، یا حتی از تنظیمات، بعضی ارائه‌دهنده‌ها رو ببندی.\n• به گفته هاگینگ‌فیس تعرفه‌ها فرقی نکرده و بدون سود اضافه همون نرخ ارائه‌دهنده محاسبه می‌شه، ولی یک تغییر مهم داره: برای مدل‌های زبانی دیگه نمی‌شه از کلید API اختصاصی خودت برای ارائه‌دهنده‌ها استفاده کنی.\n• کارهای تصویر، ویدیو و صدا همچنان مثل قبل و مستقیم از مسیر خود هاگینگ‌فیس انجام می‌شن و کلیدهای اختصاصی تصویر و ویدیو هم سر جاشون هستن.",
+  "date": "2026-11-16T19:52:40+00:00"
+ },
+ "links": [
+  {
+   "kind": "link",
+   "url": "https://huggingface.co/blog/openrouter",
+   "domain": "huggingface.co",
+   "title": "Hugging Face and OpenRouter join forces to make open-weight models easy to run",
+   "description": "We’re on a journey to advance and democratize artificial intelligence through open source and open science.",
+   "image": "https://huggingface.co/blog/assets/openrouter/thumbnail.jpg",
+   "site": "huggingface.co"
+  }
+ ],
+ "article": {
+  "title": "هاگینگ‌فیس اعلام کرده با اوپن‌روتر همکاری می‌کنه تا اجرای مدل‌های وزن‌باز راحت‌تر بشه و از امروز مسیریابیِ مدل‌های زبانی در بخش Inference Providers رو به سیستم اوپن‌روتر سپرده",
+  "source_title": "Hugging Face and OpenRouter join forces to make open-weight models easy to run",
+  "body": [
+   "هاگینگ‌فیس اعلام کرده با اوپن‌روتر همکاری می‌کنه تا اجرای مدل‌های وزن‌باز راحت‌تر بشه و از امروز مسیریابیِ مدل‌های زبانی در بخش Inference Providers رو به سیستم اوپن‌روتر سپرده. ماجرا شبیه اینه که به جای تکیه به یه مسیر ثابت، یه راهنمای سرحال داشته باشی که بین بیش از ۸۰ ارائه‌دهنده، همون لحظه بهترین گزینه رو از نظر قیمت، سرعت و پایداری انتخاب کنه و اگه یکی به مشکل خورد، خودش درخواست رو بفرسته سراغ بعدی. 🤝",
+   "• کد قبلیت بدون تغییر کار می‌کنه و با همون توکن هاگینگ‌فیس می‌تونی با پسوندهایی مثل :fastest یا :cheapest اولویت رو تعیین کنی، یا حتی از تنظیمات، بعضی ارائه‌دهنده‌ها رو ببندی.",
+   "• به گفته هاگینگ‌فیس تعرفه‌ها فرقی نکرده و بدون سود اضافه همون نرخ ارائه‌دهنده محاسبه می‌شه، ولی یک تغییر مهم داره: برای مدل‌های زبانی دیگه نمی‌شه از کلید API اختصاصی خودت برای ارائه‌دهنده‌ها استفاده کنی.",
+   "• کارهای تصویر، ویدیو و صدا همچنان مثل قبل و مستقیم از مسیر خود هاگینگ‌فیس انجام می‌شن و کلیدهای اختصاصی تصویر و ویدیو هم سر جاشون هستن."
+  ],
+  "why": null,
+  "tags": [
+   "متن‌باز"
+  ]
+ },
+ "updated": "2026-11-16T19:56:20+00:00"
+}
