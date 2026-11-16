@@ -12,7 +12,7 @@
   "site": "FxTwitter",
   "title": "Mira Murati (@miramurati)",
   "description": "Today on Connectionism: how we trained Inkling 2 Small with a native 4-bit forward pass on @nvidia GB300s, from the first pretraining step through the final RL rollout, one of the many improvements across the stack that took pretraining from weeks to 68 hours.…",
-  "image": "https://cdn4.telesco.pe/file/pkPStccgMFpLVjyQ-lIcctk6_rjjc-kwN7Y6ame78zRCwGONCsH4gPxjzDuHAZ95od88tlgKSEP7PrX7JJiLNe6BouTgnV3n_JJB7TS12Ql1g_aWwgaoEbAWVU642PA_8d7R1CDo_L5mzMSvqotKnVe4L4pxXJzWKn-NuLCraDfSBr_q_2EKgL-HzqIfcouw0jzFLNEymC3Jx3nzhk67-VqgI7ns_AmXxioVWLMGGyxHqkV-WgjxmTJv5V0oPXgkVd8B6ljOuWDQa-RziTaXsL2reRvTLY1g-rTnqq2JECQiKze0W98pRvypZCBSJCautg3XL46GGhM1uKJrno2j8g.jpg"
+  "image": "https://cdn4.telesco.pe/file/YyFyveK9UbmBEfmG3Jf7VTI-A1gcLV6bWiiCCtWIQL7-OzlMr4pDAaw6_eHenn_A7jw5bRr8CIVrDiBmjiVSetMuy2uASrZEJ3V6bSFsLbE0YyI6jrHwkITGn_IO2bKGiX71VyBrEoXd0EosPlhlYzL2ZFtMbCsSRuv-Gav2B4Xbay3XqghrSXZeo9xg0m2u5_YKrwBbhw5WLCNM4Gt2h-IBf6lcL_QKgum0yP-VTWS5B56p2jhWUbqfqcy2Owp2x_eBLf1tQ3QzQ5sNUHJC-M6sN7dPvf0bWpm6CrluiEJ6i_UjfMdMBl5mOH38yKNN0JS9VIpCYfK91OLIEhO3cQ.jpg"
  },
  "gholam": {
   "text": "رفقا، میرا موراتی و تیم Thinking Machines خبر دادن که توی مطلب جدید وبلاگ Connectionism توضیح دادن چطور مدل «Inkling 2 Small» رو آموزش دادن. به گفته اون‌ها، از همون قدم اولِ پیش‌آموزش تا مرحله آخر یادگیری تقویتی، با روش ۴-بیتیِ بومی (4-bit forward pass) روی تراشه‌های GB300 انویدیا جلو رفتن. خودِ تیمشون هم اشاره کرده که آموزش با بیت کمتر سرعت رو بالا می‌بره ولی خطای کوانتیزاسیون می‌تونه تو یادگیری اختلال ایجاد کنه؛ یه جورایی مثل تندنویسیِ سرِ کلاس که کارت سریع‌تر راه می‌افته اما اگه حواست نباشه ممکنه بعضی کلمات بد نوشته بشه. موراتی می‌گه این تغییر همراه با کلی بهینه‌سازی دیگه تو لایه‌های مختلف سیستمشون، زمان پیش‌آموزش رو از چند هفته به ۶۸ ساعت رسونده؛ البته جزئیات دقیق فنی‌ش تو خودِ مقاله وبلاگشونه و اینجا فقط همین خلاصه‌ش اومده. ⚡",
@@ -58,5 +58,5 @@
    "انویدیا"
   ]
  },
- "updated": "2026-11-16T02:31:21+00:00"
+ "updated": "2026-11-16T12:39:27+00:00"
 }

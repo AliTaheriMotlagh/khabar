@@ -12,7 +12,7 @@
   "site": "X (formerly Twitter)",
   "title": "Nazeem (@n4ze3m) on X",
   "description": "I trained a text-to-speech model that has never heard a real human voice.\n4.5M parameters. 18 MB. Runs on a CPU.\nMeet tiny-voca",
-  "image": "https://cdn4.telesco.pe/file/gGYNteLH6MfXQr_szHYuBeGfd44WGA6xpK1hg6HtxqTzz3N_hPQjyonCK7Ku3k_m5CNhpHVeuEfDQoZKY1WYo8JgK6wTdP666w8iEjgnubqXo6JwZsOPTGqpNbRDaSFkuW8kN135jG3A8TdOww3YL5KGsV9VH1kQTtpCoTTgH2KONJ89l5_e1AIPQoajj0tIVnWyAIYKelLCTInhxTaoS8ZEXa8PFr3xpF5xwbBuyTC3QWdQLDt-AwUJjhs2Ahw4YmndAxFP4duRQEeR4C2qDzjp7O3xrWvLOrN1bT7E3_FWfQLKOVZnlUn5P7P4DDf8uSAwew9g5TRBD1OPXTpwFA.jpg"
+  "image": "https://cdn4.telesco.pe/file/aCD4Hx0_8P6RFZaukQB9Zj-iVUOIGihPUclmVZmUwIVIPQahRJQEIr9NoO43u5fPJJf9R6fvqhqUpq3u9uaodeyBGY-GU4aJcQILwQlKtVZ6F0Ey0vSkOKkOYZ5yoUXNgSWZqHB_6zWYJcsv0PfJ3tH9f53TIczHRSdkCv4nNtjR93PRYfm_DrUPZpPpFvA2VhD3bCUrK7nvbnop2ZmorAn3sNtdYkQPCFtsRk65pQscNkrCdqci1iKKx8JuJZNV9LI76K1XDBJLNxvLRm3-S7YlOzUkSCjilZj7CQitSZ6PNZAeyD1EZzEo1N5TvyZyg19TaRMc6WoEnLe0nISYRQ.jpg"
  },
  "gholam": {
   "text": "رفیق، یه توسعه‌دهنده به اسم n4ze3m یه مدل تبدیل متن به گفتارِ جمع‌وجور به اسم tiny-voca معرفی کرده که به گفته خودش تا حالا یه بار هم صدای واقعی آدمیزاد نشنیده! 🤖 این مدل فقط روی ۱۹ ساعت صدای مصنوعیِ یه مدل بزرگ‌تر (در دو صدایی که با توصیف متنی طراحی شدن) آموزش دیده؛ انگار حرف زدن رو تمام‌قد از روی دست یه ربات یاد گرفته. سازنده‌اش می‌گه با ۴.۵ میلیون پارامتر و حجم ۱۸ مگابایت روی CPU هم اجرا می‌شه و یه بخش تشخیص تلفظ اختصاصی داره که عددها، تاریخ‌ها و مبالغ رو بر اساس بافت جمله می‌خونه؛ مثلاً فرق مدل کارت گرافیک RTX 4090 رو با مبلغ ۴۰۹۰ دلار تشخیص می‌ده. همچنین اعلام کرده کد، وزن‌ها، دیتاست و دستورالعمل آموزشش رو کامل و آزاد منتشر کرده و امکان آزمایشش رو هم فراهم آورده.",
@@ -77,5 +77,5 @@
    "صدا و موسیقی"
   ]
  },
- "updated": "2026-11-16T02:31:20+00:00"
+ "updated": "2026-11-16T12:39:27+00:00"
 }
