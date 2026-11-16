@@ -1,0 +1,73 @@
+{
+ "id": 6561,
+ "url": "https://t.me/dlmehr/6561",
+ "date": "2026-11-16T17:49:40+00:00",
+ "text": "https://fxtwitter.com/yejinchoinka/status/2122379749372907852?a=NEJ5TdhGsW8y9nFVjB8&s=52",
+ "forwarded_from": null,
+ "digest": false,
+ "hash": "3db7cfbb6c79",
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/yejinchoinka/status/2122379749372907852?a=NEJ5TdhGsW8y9nFVjB8&s=52",
+  "site": "FxTwitter",
+  "title": "Yejin Choi (@YejinChoinka)",
+  "description": "Through my wonderful time at NVIDIA and Stanford, one question has kept me up at night:\nShould the future of AI be monolithic or plural?\nTo answer this question, we’ve raised $110M to get started, backed by @MenloVentures, @MadronaVentures, @NVIDIA, @NEA…",
+  "image": null
+ },
+ "gholam": {
+  "text": "رفقا، یه‌جین چوی (استاد استنفورد و پژوهشگر سابق انویدیا) توی پستی خبر داده همراه با کارلوس گوسترین یه آزمایشگاه جدید به اسم «نوئری» (Noeri) راه انداختن و برای شروع ۱۱۰ میلیون دلار سرمایه از مجموعه‌هایی مثل انویدیا، سیسکو، اسنوفلیک و منلو ونچرز جذب کردن. به گفته چوی، هدفشون اینه که به جای یه ابرهوشِ تک‌قطبی که دست چند نفر خاص باشه، دنیای متکثری از هوش‌های مصنوعی مختلف بسازن؛ یه جورایی مثل اینکه به جای یه آشپزخونه مرکزی برای کل شهر، هر کسی با مواد اولیه و دستورپخت خودش آشپزی کنه. 💡\n\n• طبق توضیحات چوی، سیستم‌های نوئری قراره سرِ کار واقعی از تجربه‌ها و خطاها یاد بگیرن، برای رفع نیازهاشون ابزار بسازن و با انتخاب مدل هم‌قدوقواره‌ی هر کار، هزینه‌ها رو پایین بیارن.\n• توی سایت نوئری هم اومده که شرکت‌ها می‌تونن با داده‌های خودشون هوش مصنوعی اختصاصی آموزش بدن، مالکیتش رو کامل نگه دارن و کیفیت کار رو به جای معیارهای عمومی، با ترافیک واقعی خودشون بسنجن.\n• تیم بنیان‌گذار که چهره‌هایی مثل گوسترین (از خالقان XGBoost و مدیر سابق یادگیری ماشین و هوش مصنوعی در اپل) توش حضور دارن، در پالو آلتو و زوریخ روی یادگیری مداوم و کار با داده‌های محدود پژوهش می‌کنن.\n\nاسم «نوئری» رو هم به معنی «جمعِ هوش‌ها» انتخاب کردن؛ دیگه باید دید این ایده و تیم پُرستاره توی عمل چطور پیش می‌رن.",
+  "date": "2026-11-16T17:50:09+00:00"
+ },
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/YejinChoinka/status/2122379749372907852",
+   "domain": "x.com",
+   "author": {
+    "name": "Yejin Choi",
+    "handle": "YejinChoinka",
+    "avatar": "https://pbs.twimg.com/profile_images/895472606094151680/IOMh1kQk_200x200.jpg"
+   },
+   "text": "Through my wonderful time at NVIDIA and Stanford, one question has kept me up at night: \n\nShould the future of AI be monolithic or plural?\n\nTo answer this question, we’ve raised $110M to get started, backed by @MenloVentures, @MadronaVentures, @NVIDIA, @NEA, @KindredVentures,@Wing_VC, @aixventureshq, @Principal_VC, @Cisco, @Snowflake, among others.\n\nToday, Carlos (@guestrin) and I are stoked to launch Noeri, a neolab to push the frontier of plural intelligence.\n\nNoeri means “the plural of intelligence” or many intelligences. \n\nThe future of AI we root for is plural: a healthy ecosystem of many intelligences, in all sizes, strengths, and quirks. \n\nDiscovery, in particular, has always been plural: many curious minds, each devoted to their own question, often on roads less traveled.\n\nOur path there is self-improving AI that:\n\n-> learns continually on the job, closing the gap between what AI can do off the shelf and what the dynamic world demands\n\n-> learns to use other AIs as tools and make new tools to overcome its own limitations\n\n-> picks the right-sized model for your problem, at a fraction of the frontier cost\n\nThen the power of intelligence, from the craftsmanship of making AI to ownership, can be in the hands of all.\n\n@noeri_ai mission reflects who we are as the founding team. My career has been anything but linear, literally continual learning on the job. Carlos has devoted his career to building tools that empower people through AI. \n\nWe are all a bit contrarian, a bit adventurous, and above all, big believers in pluralism.\n\nJoin us to build this future together: https://www.noeri.ai/",
+   "date": 1794849738,
+   "media": [
+    {
+     "type": "video",
+     "src": "https://video.twimg.com/amplify_video/2122369633831559171/vid/avc1/1280x720/1H914Qs7nZLjHnkO.mp4?tag=29",
+     "poster": "https://pbs.twimg.com/amplify_video_thumb/2122369633831559171/img/Ayxs8BL1FSAsVEDn.jpg",
+     "ratio": 0.5625,
+     "duration": 137.25,
+     "gif": false
+    }
+   ],
+   "links": [
+    "https://www.noeri.ai/"
+   ]
+  },
+  {
+   "kind": "link",
+   "url": "https://www.noeri.ai/",
+   "domain": "noeri.ai",
+   "title": "Noeri: The plural of intelligence",
+   "description": "Create the future of many intelligences.",
+   "image": "https://noeri.ai/og/noeri-hero-1200x630.jpg",
+   "site": "Noeri"
+  }
+ ],
+ "article": {
+  "title": "یه‌جین چوی (استاد استنفورد و پژوهشگر سابق انویدیا) توی پستی خبر داده همراه با کارلوس گوسترین یه آزمایشگاه جدید به اسم «نوئری» (Noeri) راه انداختن و برای شروع ۱۱۰ میلیون دلار سرمایه از مجموعه‌هایی مثل انویدیا، سیسکو، اسنوفلیک و منلو ونچرز جذب کردن",
+  "source_title": "Through my wonderful time at NVIDIA and Stanford, one question has kept me up at night:",
+  "body": [
+   "یه‌جین چوی (استاد استنفورد و پژوهشگر سابق انویدیا) توی پستی خبر داده همراه با کارلوس گوسترین یه آزمایشگاه جدید به اسم «نوئری» (Noeri) راه انداختن و برای شروع ۱۱۰ میلیون دلار سرمایه از مجموعه‌هایی مثل انویدیا، سیسکو، اسنوفلیک و منلو ونچرز جذب کردن. به گفته چوی، هدفشون اینه که به جای یه ابرهوشِ تک‌قطبی که دست چند نفر خاص باشه، دنیای متکثری از هوش‌های مصنوعی مختلف بسازن؛ یه جورایی مثل اینکه به جای یه آشپزخونه مرکزی برای کل شهر، هر کسی با مواد اولیه و دستورپخت خودش آشپزی کنه. 💡",
+   "• طبق توضیحات چوی، سیستم‌های نوئری قراره سرِ کار واقعی از تجربه‌ها و خطاها یاد بگیرن، برای رفع نیازهاشون ابزار بسازن و با انتخاب مدل هم‌قدوقواره‌ی هر کار، هزینه‌ها رو پایین بیارن.",
+   "• توی سایت نوئری هم اومده که شرکت‌ها می‌تونن با داده‌های خودشون هوش مصنوعی اختصاصی آموزش بدن، مالکیتش رو کامل نگه دارن و کیفیت کار رو به جای معیارهای عمومی، با ترافیک واقعی خودشون بسنجن.",
+   "• تیم بنیان‌گذار که چهره‌هایی مثل گوسترین (از خالقان XGBoost و مدیر سابق یادگیری ماشین و هوش مصنوعی در اپل) توش حضور دارن، در پالو آلتو و زوریخ روی یادگیری مداوم و کار با داده‌های محدود پژوهش می‌کنن."
+  ],
+  "why": "اسم «نوئری» رو هم به معنی «جمعِ هوش‌ها» انتخاب کردن؛ دیگه باید دید این ایده و تیم پُرستاره توی عمل چطور پیش می‌رن.",
+  "why_label": "حرف آخر",
+  "tags": [
+   "انویدیا"
+  ]
+ },
+ "updated": "2026-11-16T17:51:40+00:00"
+}
