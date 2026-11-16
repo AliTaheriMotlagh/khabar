@@ -1,0 +1,64 @@
+{
+ "id": 6566,
+ "url": "https://t.me/dlmehr/6566",
+ "date": "2026-11-16T18:40:16+00:00",
+ "text": "https://fxtwitter.com/zhihanyang_/status/2106928499965739483?a=F1DBfFj0HCGhjUj7t6s&s=52",
+ "forwarded_from": null,
+ "digest": false,
+ "hash": "b7707e40b2c0",
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/zhihanyang_/status/2106928499965739483?a=F1DBfFj0HCGhjUj7t6s&s=52",
+  "site": "🧵 Thread • FxTwitter",
+  "title": "Zhihan Yang (@zhihanyang_)",
+  "description": "💫\nLarge Language Continuous Diffusion Models\nPresenting Sigma, the first large-scale (3B/8B) continuous diffusion LM (dLM) trained with likelihood.\n📈\nComparable with discrete dLMs and AR on math and coding\n🎛️\nEnables meaningful study of inference-time interventions…",
+  "image": null
+ },
+ "gholam": {
+  "text": "رفقا، یه تیم پژوهشی خانواده مدل زبانی جدیدی به اسم «سیگما» (Nemotron-Labs-Sigma) رو در دو سایز ۳ و ۸ میلیارد پارامتر معرفی کرده که برعکس مدل‌های دیفیوژن گسسته، توی یه فضای پیوسته و هموار کار می‌کنه. به زبون خودمونی، به جای اینکه مثل پله‌های جدا از هم بپره، انگار روی یه مسیر نرم حرکت می‌کنه و همین باعث می‌شه موقع تولید متن بشه با تنظیماتِ دما و هدایتِ مسیر، خیلی راحت‌تر کیفیت و تنوع جواب‌ها رو کنترل کرد. 🎛️\n\nتوی رشته‌توییت نویسنده‌ها و مقاله علمی‌ش چند تا نکته کلیدی گزارش شده:\n• برای اینکه آموزش از صفر هزینه سنگین نندازه روی دستشون، کار رو با وزن‌های آماده مدل‌های خودرگرسیو (AR) شروع کردن؛ توی توییت‌ها گفته شده عملکرد مدل در ریاضی و کدنویسی هم‌تراز رقبای گسسته و AR بوده و توی چکیده مقاله ادعا شده روی بنچمارک‌هایی مثل GSM8K، HumanEval و MATH-500 (به‌خصوص در کدنویسی) از اون‌ها جلوتر هم زده.\n• طبق گزارش مقاله، چون مسیر پیوسته با کم شدن مراحلِ محاسبه یهو از هم نمی‌پاشه، با روش تقطیر تونستن توی ریاضی حدود ۸ برابر و توی کدنویسی ۴ برابر سریع‌تر (تولید ۸ و ۴ توکن در هر مرحله) بدون افت محسوس دقت پیش برن، و روی مدل ۸ میلیاردیِ تقطیرشده (پیش از SFT) با کدگشایی گمانه‌زن تک‌مرحله‌ای روی سخت‌افزار GB200 به حدود ۳.۵ برابر توان خروجی بیشتر نسبت به مدل AR برسن.\n• پژوهشگرها اعلام کردن که وزن‌های این خانواده مدل رو هم به شکل عمومی منتشر کردن.\n\nبه گفته تیم سازنده، این نتایج نشون می‌ده مدل‌های دیفیوژن پیوسته می‌تونن یه مسیر امیدوارکننده برای تولید سریع و منعطف متن باشن.",
+  "date": "2026-11-16T18:40:48+00:00"
+ },
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/zhihanyang_/status/2106928499965739483",
+   "domain": "x.com",
+   "author": {
+    "name": "Zhihan Yang",
+    "handle": "zhihanyang_",
+    "avatar": "https://pbs.twimg.com/profile_images/1945729577780715520/pL6gCJsn_200x200.jpg"
+   },
+   "text": "💫 Large Language Continuous Diffusion Models\n\nPresenting Sigma, the first large-scale (3B/8B) continuous diffusion LM (dLM) trained with likelihood.\n\n📈 Comparable with discrete dLMs and AR on math and coding\n🎛️ Enables meaningful study of inference-time interventions\n\nJointly led with Wei Guo (@WeiGuo01), Jean-Marie Lemercier (@jm_lemercier), Simon Welker (@_cobalamin)\n\nTeam: @YongganFu @mmkamani7 Sajad Norouzi @julberner @tomasgeffner @karsten_kreis @YongxinChen1 @MoleiTaoMath @jwthickstun  @PavloMolchanov Ante Jukic @ArashVahdat @MardaniMorteza",
+   "date": 1791165873,
+   "media": [
+    {
+     "type": "video",
+     "src": "https://video.twimg.com/amplify_video/2106926876472348673/vid/avc1/1280x720/fG9ajaNHLmYSY-Zs.mp4?tag=29",
+     "poster": "https://pbs.twimg.com/amplify_video_thumb/2106926876472348673/img/Z_OGlpuigEbGSP7Z.jpg",
+     "ratio": 0.5625,
+     "duration": 33.1,
+     "gif": false
+    }
+   ],
+   "links": []
+  }
+ ],
+ "article": {
+  "title": "یه تیم پژوهشی خانواده مدل زبانی جدیدی به اسم «سیگما» (Nemotron-Labs-Sigma) رو در دو سایز ۳ و ۸ میلیارد پارامتر معرفی کرده که برعکس مدل‌های دیفیوژن گسسته، توی یه فضای پیوسته و هموار کار می‌کنه",
+  "source_title": "💫 Large Language Continuous Diffusion Models",
+  "body": [
+   "یه تیم پژوهشی خانواده مدل زبانی جدیدی به اسم «سیگما» (Nemotron-Labs-Sigma) رو در دو سایز ۳ و ۸ میلیارد پارامتر معرفی کرده که برعکس مدل‌های دیفیوژن گسسته، توی یه فضای پیوسته و هموار کار می‌کنه. به زبون خودمونی، به جای اینکه مثل پله‌های جدا از هم بپره، انگار روی یه مسیر نرم حرکت می‌کنه و همین باعث می‌شه موقع تولید متن بشه با تنظیماتِ دما و هدایتِ مسیر، خیلی راحت‌تر کیفیت و تنوع جواب‌ها رو کنترل کرد. 🎛️",
+   "توی رشته‌توییت نویسنده‌ها و مقاله علمی‌ش چند تا نکته کلیدی گزارش شده:",
+   "• برای اینکه آموزش از صفر هزینه سنگین نندازه روی دستشون، کار رو با وزن‌های آماده مدل‌های خودرگرسیو (AR) شروع کردن؛ توی توییت‌ها گفته شده عملکرد مدل در ریاضی و کدنویسی هم‌تراز رقبای گسسته و AR بوده و توی چکیده مقاله ادعا شده روی بنچمارک‌هایی مثل GSM8K، HumanEval و MATH-500 (به‌خصوص در کدنویسی) از اون‌ها جلوتر هم زده.",
+   "• طبق گزارش مقاله، چون مسیر پیوسته با کم شدن مراحلِ محاسبه یهو از هم نمی‌پاشه، با روش تقطیر تونستن توی ریاضی حدود ۸ برابر و توی کدنویسی ۴ برابر سریع‌تر (تولید ۸ و ۴ توکن در هر مرحله) بدون افت محسوس دقت پیش برن، و روی مدل ۸ میلیاردیِ تقطیرشده (پیش از SFT) با کدگشایی گمانه‌زن تک‌مرحله‌ای روی سخت‌افزار GB200 به حدود ۳.۵ برابر توان خروجی بیشتر نسبت به مدل AR برسن.",
+   "• پژوهشگرها اعلام کردن که وزن‌های این خانواده مدل رو هم به شکل عمومی منتشر کردن."
+  ],
+  "why": "به گفته تیم سازنده، این نتایج نشون می‌ده مدل‌های دیفیوژن پیوسته می‌تونن یه مسیر امیدوارکننده برای تولید سریع و منعطف متن باشن.",
+  "why_label": "حرف آخر",
+  "tags": [
+   "کدنویسی",
+   "علم"
+  ]
+ },
+ "updated": "2026-11-16T18:44:23+00:00"
+}

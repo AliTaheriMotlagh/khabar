@@ -12,7 +12,7 @@
   "site": "FxTwitter · huggingface.co",
   "title": "Thinking Machines (@thinkymachines)",
   "description": "Inkling 2 Small’s weights are now available for download on HuggingFace under an Apache 2.0 license.\nMake Inkling your own!\nhttps://huggingface.co/thinkingmachines/Inkling-2-Small",
-  "image": "https://cdn4.telesco.pe/file/anreGho7tbSAtmKiv8tjfkJoYCl0iEMg3zqcwQa7zXHMTJ4l9PxgfkDRae93T5JW8GQBRNa2Q2VY4vo5NCAlhkvc0z8zbqkoXsHB-PQtNG21YLWcAAqCE0vElzjveD8ixFtCC3s3F-ZzSOGBpFbe5LWo_juJe5AMJIwH9wrjell233oqFHCo6Rnh767M2dEpwU6v-tgvkg4oOqWkMVTOgQab852Qyo25Q6sUFkFB0ddPIJ1_Ei5Xllf9_iogfwU0DWbQReeBOEjqbCzfTinG6IVvDWu7HNkJTg6AXmO7aO1jETwdeCPiJUZ_l12i-7zVuiz7Vwctyynr6IP97HBXbA.jpg"
+  "image": "https://cdn4.telesco.pe/file/fxYpXur1YH4fUPERHGmSpepSqXOx6dmhRnB_zTxhEpMCsujLqTuN6jVU4VSrZArYMbpBMLuXCfs7J3gjA4VtzJIMFAqQrpMzTe2tPaaICmo_hyrV_mw_pAO6Ts9zQqNvMjgOkqtv9PcBEwz5FWM8k-dsFLQRa0TYY7uCfa6HEz3131iZy7T6YhrGjfyUkyRprTW4typ7RyqLEuAvsZWEpBGgczdelHvGL8TBv2SrJR2IYP_yRFVbAKoTeP2Y140d1woRZJ3CKISuU6co1QA-x_9QfL6f3bk42lO-yXlBARP6aC1hnzCA27yfMvTpoyP6J1WKetCsADYGNMkiywFLEA.jpg"
  },
  "gholam": {
   "text": "سلام رفقا؛ مجموعه Thinking Machines اعلام کرده که وزن‌های مدل جدیدشون یعنی Inkling 2 Small رو به‌صورت عمومی و تحت مجوز آپاچی ۲.۰ روی هاگینگ‌فیس منتشر کردن تا کاربرها بتونن آزادانه ازش استفاده کنن و شخصیش‌سازی انجام بدن.\n\nدر واکنش به این خبر، تیم Lightseek هم اعلام کرده که پشتیبانی روز اول از این مدل رو به پلتفرم TokenSpeed آورده. به ادعای این تیم، رو بنچمارک AgentX و با چهار تا پردازنده گرافیکی NVIDIA B300 تونستن سرعت پردازش رو به ۴۷۶ توکن بر ثانیه به ازای هر کاربر برسونن که طبق گفته خودشون ۷۵ درصد نسبت به حالت عادی سریع‌تر شده، و البته اشاره کردن که از شتاب‌دهنده AMD MI350X هم پشتیبانی می‌شه.",
@@ -57,5 +57,5 @@
    "متن‌باز"
   ]
  },
- "updated": "2026-11-16T12:39:28+00:00"
+ "updated": "2026-11-16T18:44:24+00:00"
 }
