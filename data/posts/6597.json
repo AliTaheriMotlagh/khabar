@@ -1,0 +1,62 @@
+{
+ "id": 6597,
+ "url": "https://t.me/dlmehr/6597",
+ "date": "2026-11-17T19:54:48+00:00",
+ "text": "https://fxtwitter.com/ArtificialAnlys/status/2122757022710104131",
+ "forwarded_from": "Mehran",
+ "digest": false,
+ "hash": "5ab3a535923a",
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/ArtificialAnlys/status/2122757022710104131",
+  "site": "FxTwitter",
+  "title": "Artificial Analysis (@ArtificialAnlys)",
+  "description": "GPT-6.2 Astra is the new leader in AA-Robotics v0.1, scoring 79, up 10 points on GPT-6 Astra and ahead of GPT-6.2 Sol (78), Claude Fable 5.2 (75) and Gemini 4 Hydrogen (58)\nControlling a real robot arm through Codex, it passed six of our eight physical tasks…",
+  "image": null
+ },
+ "gholam": {
+  "text": "رفقا، حساب Artificial Analysis اعلام کرده مدل GPT-6.2 Astra توی بنچمارک AA-Robotics v0.1 با امتیاز ۷۹ صدرنشین شده؛ یعنی ۱۰ امتیاز بالاتر از GPT-6 Astra. 🤖\nطبق این گزارش، این مدل از GPT-6.2 Sol (با ۷۸ امتیاز)، Claude Fable 5.2 (۷۵) و Gemini 4 Hydrogen (۵۸) جلو زده.\nتوی این تست، مدل از طریق Codex یه بازوی رباتیک واقعی رو کنترل کرده و از ۸ تا کار فیزیکی، ۶ تاش رو کامل انجام داده؛ ریختن مایعات رو نصفه‌نیمه پیش برده و فقط از پس اندازه‌گیری جعبه برنیومده. خلاصه بیشترِ کارها رو ردیف کرده، ولی ظاهراً هنوز با متر و جعبه رفیق نشده!",
+  "date": "2026-11-17T19:55:10+00:00"
+ },
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/ArtificialAnlys/status/2122757022710104131",
+   "domain": "x.com",
+   "author": {
+    "name": "Artificial Analysis",
+    "handle": "ArtificialAnlys",
+    "avatar": "https://pbs.twimg.com/profile_images/2042402069320290304/A8C1lP07_200x200.jpg"
+   },
+   "text": "GPT-6.2 Astra is the new leader in AA-Robotics v0.1, scoring 79, up 10 points on GPT-6 Astra and ahead of GPT-6.2 Sol (78), Claude Fable 5.2 (75) and Gemini 4 Hydrogen (58)\n\nControlling a real robot arm through Codex, it passed six of our eight physical tasks, partly completed the pouring liquid, and failed only to measure the box.",
+   "date": 1794939687,
+   "media": [
+    {
+     "type": "video",
+     "src": "https://video.twimg.com/amplify_video/2122756816904052736/vid/avc1/720x720/CcDYfkEqsY-gsTGP.mp4?tag=29",
+     "poster": "https://pbs.twimg.com/amplify_video_thumb/2122756816904052736/img/Zr18QIUBPPxZcuyc.jpg",
+     "ratio": 1.0,
+     "duration": 30.283,
+     "gif": false
+    }
+   ],
+   "links": []
+  }
+ ],
+ "article": {
+  "title": "حساب Artificial Analysis اعلام کرده مدل GPT-6.2 Astra توی بنچمارک AA-Robotics v0.1 با امتیاز ۷۹ صدرنشین شده؛ یعنی ۱۰ امتیاز بالاتر از GPT-6 Astra",
+  "source_title": "GPT-6.2 Astra is the new leader in AA-Robotics v0.1, scoring 79, up 10 points on GPT-6 Astra and ahead of GPT-6.2 Sol (78), Claude Fable…",
+  "body": [
+   "حساب Artificial Analysis اعلام کرده مدل GPT-6.2 Astra توی بنچمارک AA-Robotics v0.1 با امتیاز ۷۹ صدرنشین شده؛ یعنی ۱۰ امتیاز بالاتر از GPT-6 Astra. 🤖",
+   "طبق این گزارش، این مدل از GPT-6.2 Sol (با ۷۸ امتیاز)، Claude Fable 5.2 (۷۵) و Gemini 4 Hydrogen (۵۸) جلو زده.",
+   "توی این تست، مدل از طریق Codex یه بازوی رباتیک واقعی رو کنترل کرده و از ۸ تا کار فیزیکی، ۶ تاش رو کامل انجام داده؛ ریختن مایعات رو نصفه‌نیمه پیش برده و فقط از پس اندازه‌گیری جعبه برنیومده. خلاصه بیشترِ کارها رو ردیف کرده، ولی ظاهراً هنوز با متر و جعبه رفیق نشده!"
+  ],
+  "why": null,
+  "tags": [
+   "اوپن‌ای‌آی",
+   "رباتیک",
+   "آنتروپیک"
+  ]
+ },
+ "updated": "2026-11-17T19:58:23+00:00"
+}
