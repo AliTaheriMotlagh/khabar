@@ -1,0 +1,62 @@
+{
+ "id": 6586,
+ "url": "https://t.me/dlmehr/6586",
+ "date": "2026-11-17T17:05:07+00:00",
+ "text": "https://fxtwitter.com/omarsar0/status/2122701047118635485?a=Tj0RrHm5iDkauKRbe6U&s=52",
+ "forwarded_from": null,
+ "digest": false,
+ "hash": "c202b9014d63",
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/omarsar0/status/2122701047118635485?a=Tj0RrHm5iDkauKRbe6U&s=52",
+  "site": "FxTwitter",
+  "title": "elvis (@omarsar0)",
+  "description": "Banger paper from Google on RSI.\n(bookmark it)\nThey propose an approach for continual recursive self-improvement at the harness level. They also propose their own self-improving memory system for the harness optimizer.\nThis clearly highlights the importance…",
+  "image": null
+ },
+ "gholam": null,
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/omarsar0/status/2122701047118635485",
+   "domain": "x.com",
+   "author": {
+    "name": "elvis",
+    "handle": "omarsar0",
+    "avatar": "https://pbs.twimg.com/profile_images/939313677647282181/vZjFWtAn_200x200.jpg"
+   },
+   "text": "Banger paper from Google on RSI.\n\n(bookmark it)\n\nThey propose an approach for continual recursive self-improvement at the harness level. They also propose their own self-improving memory system for the harness optimizer.\n\nThis clearly highlights the importance of traces and having a functional, adaptive, and structured persistent memory system in your harness.\n\nThey show that a harness optimizer improves 9 of 10 continued runs when it remembers why it made each past edit.\n\nThey discuss that a common problem shows up when you change the model or the benchmark. An Opus-evolved harness started at 68.41 on Gemini, below the 73.89 of the plain seed harness.\n\nSelf-Improvement Memory groups past edits by the harness problem they addressed. For each edit, it stores the rationale, predicted outcome, observed outcome, and evaluation context. The proposer and the selector both read it before making new changes.\n\nAcross four domains, including Terminal-Bench 2.1 to Terminal-Bench 4, SIM beats continuing from the harness alone in six cross-dataset and four Opus-to-Gemini settings. Across ten coding runs, it adds 2.36 points on average (p=0.003).\n\nIf you evolve harnesses automatically, store the reasons and results of each edit next to the code.\n\nhttps://arxiv.org/abs/2611.18856\n\nChat with Paper: https://academy.dair.ai/papers/self-improvement-memory-enables-continual-recursive-self-improvement-2611.18856",
+   "date": 1794926342,
+   "media": [
+    {
+     "type": "image",
+     "src": "https://pbs.twimg.com/media/HXVZWhqa4AAYavx.jpg?name=orig",
+     "ratio": 1.2635
+    }
+   ],
+   "links": [
+    "https://arxiv.org/abs/2611.18856",
+    "https://academy.dair.ai/papers/self-improvement-memory-enables-continual-recursive-self-improvement-2611.18856"
+   ]
+  },
+  {
+   "kind": "link",
+   "url": "https://arxiv.org/abs/2611.18856",
+   "domain": "arxiv.org",
+   "title": "Self-Improvement Memory Enables Continual Recursive Self-Improvement",
+   "description": "Harness optimization is often studied with a fixed policy model and benchmark. When either changes, the optimizer must decide which parts of an evolved harness to reuse or revise, but the harness alone may not explain why earlier edits were made or how they performed. In this work, we study Continual Recursive Self-Improvement (CRSI), a setting for continuing existing harness-optimization methods ",
+   "image": "https://arxiv.org/static/browse/0.3.4/images/arxiv-logo-fb.png",
+   "site": "arXiv.org"
+  }
+ ],
+ "article": {
+  "title": "Banger paper from Google on RSI.",
+  "source_title": null,
+  "body": [],
+  "why": null,
+  "tags": [
+   "گوگل"
+  ]
+ },
+ "updated": "2026-11-17T17:09:19+00:00"
+}
