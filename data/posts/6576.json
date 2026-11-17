@@ -1,0 +1,73 @@
+{
+ "id": 6576,
+ "url": "https://t.me/dlmehr/6576",
+ "date": "2026-11-17T02:03:13+00:00",
+ "text": "https://fxtwitter.com/nvidiahealth/status/2122458416610165088?a=UbNABE4_F3XG7GiBwBc&s=52",
+ "forwarded_from": null,
+ "digest": false,
+ "hash": "3d31cb2834cd",
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/nvidiahealth/status/2122458416610165088?a=UbNABE4_F3XG7GiBwBc&s=52",
+  "site": "🧵 Thread • FxTwitter",
+  "title": "NVIDIA Healthcare (@NVIDIAHealth)",
+  "description": "🆕\ncuPotential\nA CUDA-X library for computing nonbonded interactions in molecular dynamics. The OpenMM plugin replaces the nonbonded force, integrator, and barostat.\nIn NPT benchmarks on systems from 24K to 400K atoms, it ran over 3x faster than OpenMM on…",
+  "image": "https://cdn4.telesco.pe/file/n-mcILo1nLp-lS6_DesssHa0Pnn2tjklQW9HGEnEnFFbwhiAbY28tAWK6KynoUJH-sJ1ROe9lEwTq9MjXrWuAfM2vjdUql3XwujM_GBdVgFfosPD1aoIpDzjR35vGCtTIdeMtzLu2e4QxxHY6lmsBW-LOL0exHShXff0LuUbmCV_qnYwtdUxoXSRK9cpoBuuFSVkKCs8Ds8ttAr_tMF6ZkHnvFkMG3X1xzVCfjkU4IjEf4V08qnjcTMTvDcC00dOEKQiXaQ0BMqhgja4lEbS5xV216xaHabn-9cbfbjknH74V6QunyZ9ucOsGtBWcx91GpAIbsG-mqAXmZbcoH252g.jpg"
+ },
+ "gholam": {
+  "text": "سلام رفقا! انویدیا از کتابخونه جدیدی به اسم cuPotential رونمایی کرده که برای شتاب‌دادن به شبیه‌سازی‌های دینامیک مولکولی طراحی شده؛ کاری که تو فیزیک، شیمی، زیست‌شناسی و کشف دارو کاربرد داره. حساب و کتاب برهم‌کنش بین چند صد هزار اتم معمولاً خیلی سنگینه، ولی انویدیا می‌گه با این ابزار و افزونه‌اش برای موتور معروف OpenMM، هم سرعت بالا می‌ره و هم دقت کار حفظ می‌شه. 🧬\n\n• به گفته انویدیا، در تست‌های NPT روی سیستم‌های ۲۴ هزار تا ۴۰۰ هزار اتمی، این ابزار روی RTX PRO 6000 Blackwell بیش از ۳ برابر و روی پردازنده‌هایی مثل B200، H100، A100 و چند مدل دیگه حدود ۲ برابر سریع‌تر از OpenMM عادی کار کرده و انحراف انرژی‌اش هم چند صد برابر کمتر از روش پیش‌فرض PME بوده.\n• تو وبلاگ فنی شرکت توضیح داده شده که این کتابخونه ابزارهای ماژولار با رابط زبان C داره و افزونه OpenMM اون با کمترین تغییر کد، جایگزین بخش‌های محاسبه نیرو، یکپارچه‌ساز و بارواستات می‌شه؛ کد پروژه هم روی گیت‌هاب منتشر شده و پیش‌نیازش لینوکس و CUDA 13.1 هست.\n• قراره دموهای این ابزار تو رویداد SC26 نمایش داده بشه و چهارشنبه ۱۸ نوامبر هم یه سخنرانی ۱۵ دقیقه‌ای درباره کاربردش تو کشف دارو با هوش مصنوعی برگزار بشه.\n\nالبته خب همه این عدد و رقم‌ها فعلاً بر اساس بنچمارک‌ها و اعلام خود انویدیاست و باید دید تو پروژه‌های واقعی محقق‌ها چطور جواب می‌ده.",
+  "date": "2026-11-17T02:04:07+00:00"
+ },
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/NVIDIAHealth/status/2122458416610165088",
+   "domain": "x.com",
+   "author": {
+    "name": "NVIDIA Healthcare",
+    "handle": "NVIDIAHealth",
+    "avatar": "https://pbs.twimg.com/profile_images/1864479660530438144/NJZZqouX_200x200.jpg"
+   },
+   "text": "🆕 cuPotential\nA CUDA-X library for computing nonbonded interactions in molecular dynamics. The OpenMM plugin replaces the nonbonded force, integrator, and barostat.\n\nIn NPT benchmarks on systems from 24K to 400K atoms, it ran over 3x faster than OpenMM on RTX PRO 6000 Blackwell and about 2x faster on B200, H100, A100, L40S, A10, L4, and T4.\n\nAccuracy holds up too, with a few hundred times less energy drift than default PME.\n\n💻 Github https://nvda.ws/3WIwogJ\n📄 Technical Blog https://nvda.ws/4AyIpDX\n\n📍  Find us at #SC26 👇",
+   "date": 1794868494,
+   "media": [
+    {
+     "type": "image",
+     "src": "https://pbs.twimg.com/media/HXR8rpjWYAASPNT.jpg?name=orig",
+     "ratio": 1.0
+    }
+   ],
+   "links": [
+    "https://nvda.ws/3WIwogJ",
+    "https://nvda.ws/4AyIpDX"
+   ]
+  },
+  {
+   "kind": "link",
+   "url": "https://github.com/NVIDIA/cuPotential?ncid=so-twit-993933",
+   "domain": "github.com",
+   "title": "GitHub - NVIDIA/cuPotential",
+   "description": "Contribute to NVIDIA/cuPotential development by creating an account on GitHub.",
+   "image": "https://opengraph.githubassets.com/cbbca5b115133b9b332c16cc3b271b3f33876a9c4e8fad7127c73946c04ce285/NVIDIA/cuPotential",
+   "site": "GitHub"
+  }
+ ],
+ "article": {
+  "title": "انویدیا از کتابخونه جدیدی به اسم cuPotential رونمایی کرده که برای شتاب‌دادن به شبیه‌سازی‌های دینامیک مولکولی طراحی شده؛ کاری که تو فیزیک، شیمی، زیست‌شناسی و کشف دارو کاربرد داره",
+  "source_title": "🆕 cuPotential",
+  "body": [
+   "انویدیا از کتابخونه جدیدی به اسم cuPotential رونمایی کرده که برای شتاب‌دادن به شبیه‌سازی‌های دینامیک مولکولی طراحی شده؛ کاری که تو فیزیک، شیمی، زیست‌شناسی و کشف دارو کاربرد داره. حساب و کتاب برهم‌کنش بین چند صد هزار اتم معمولاً خیلی سنگینه، ولی انویدیا می‌گه با این ابزار و افزونه‌اش برای موتور معروف OpenMM، هم سرعت بالا می‌ره و هم دقت کار حفظ می‌شه. 🧬",
+   "• به گفته انویدیا، در تست‌های NPT روی سیستم‌های ۲۴ هزار تا ۴۰۰ هزار اتمی، این ابزار روی RTX PRO 6000 Blackwell بیش از ۳ برابر و روی پردازنده‌هایی مثل B200، H100، A100 و چند مدل دیگه حدود ۲ برابر سریع‌تر از OpenMM عادی کار کرده و انحراف انرژی‌اش هم چند صد برابر کمتر از روش پیش‌فرض PME بوده.",
+   "• تو وبلاگ فنی شرکت توضیح داده شده که این کتابخونه ابزارهای ماژولار با رابط زبان C داره و افزونه OpenMM اون با کمترین تغییر کد، جایگزین بخش‌های محاسبه نیرو، یکپارچه‌ساز و بارواستات می‌شه؛ کد پروژه هم روی گیت‌هاب منتشر شده و پیش‌نیازش لینوکس و CUDA 13.1 هست.",
+   "• قراره دموهای این ابزار تو رویداد SC26 نمایش داده بشه و چهارشنبه ۱۸ نوامبر هم یه سخنرانی ۱۵ دقیقه‌ای درباره کاربردش تو کشف دارو با هوش مصنوعی برگزار بشه."
+  ],
+  "why": "البته خب همه این عدد و رقم‌ها فعلاً بر اساس بنچمارک‌ها و اعلام خود انویدیاست و باید دید تو پروژه‌های واقعی محقق‌ها چطور جواب می‌ده.",
+  "why_label": "حرف آخر",
+  "tags": [
+   "انویدیا",
+   "سلامت",
+   "علم"
+  ]
+ },
+ "updated": "2026-11-17T02:06:34+00:00"
+}

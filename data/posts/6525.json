@@ -12,7 +12,7 @@
   "site": "🧵 Thread • FxTwitter",
   "title": "Hari (@hrkrshnn)",
   "description": "This is a crazy report.\n1) Fireworks breach\n2) Traces from Cursor users exposed\n3) Traces had customer credentials\n4) Cursor credentials were also exposed\n5) Attacker replaced Claude Code inside Cursor marketplace with the cursor credentials.\nThe attackers…",
-  "image": "https://cdn4.telesco.pe/file/Vx_nQ2m0tRpmAC23AIL43vSE9QiSZSJos-DcEtJt-34dJp3e9gHfoFRMSTZIxWEFgpKXMd421-oioZs_ka89dGy5REFO8mAoyDf07EGI7CjDXF0q89efXTSvKh7UDu1pqawBdVNIbOMlfbSSBobBLQUrGdQn4IBtKd33CKC7tTl-TPF-FclWotp54ZF0pN-tlS6e37KtOUkHWBx545zBiTF30_wnwKaFM2ShhQIpBO9mZhGygVgJRyPEwG4Npy1-8PwhNOJqrifn1gAcLYXD9hICjI_U6kuAuCDfaH60HFdXCXnARLE2Tvvn89soBzjoZxAYmMbfUcgh9xzqSJGK2A.jpg"
+  "image": "https://cdn4.telesco.pe/file/HG7VDLOk-bRwMge59qmpV5rEVq7WQW7cRAoefZFqEREE2fnjixEzoFnnTJHVMlreS9leF1fKL3OsqWsizPd4StXao6S0zp04a09H3g33WLy5OAXtpJ7dE0Z_OD5MtVSMv8wmWwOaGpE9ViSNq0w2IuvxWTMoOoe0jYK0HdIA8paE1iKZr2Abo7D5mQm3Yt8oVBuAUAlmifaOwzDlEH1f3akBc0aMsC2wyMbs30Z_-sIiK-EAtNjLxHnMx-CZh74Wr_HgXzFUASBVPy9xxvzrXoHmUVhXAzB4gGzc-e364J8JW6qvo4_4aV2aYIhPS-HUcE9sg081WdduvsMw8hqB9g.jpg"
  },
  "gholam": {
   "text": "رفیق، یه خبر امنیتی جدید درباره نفوذ به Fireworks و Cursor حسابی دست‌به‌دست می‌شه. تیم Cursor توی ایکس اعلام کرده که جزئیات این حادثه امنیتی اخیر و کارهایی که برای رفعش انجام داده رو منتشر کرده، هرچند متن کامل وبلاگش اینجا در دسترس نیست. یه کاربر به اسم هاری خلاصه این گزارش رو این‌طوری روایت کرده:\n• با نفوذ به Fireworks، دیتای trace کاربران Cursor لو رفته.\n• توی این traceها اطلاعات احراز هویت مشتری‌ها و حتی دسترسی‌های خود Cursor هم بوده.\n• به گفته این کاربر، مهاجم با استفاده از همین دسترسی‌ها، Claude Code رو توی مارکت‌پلیس Cursor جایگزین کرده.\nتوی کامنت‌ها هم کاربرا اشاره کردن که موندن کلیدهای حساس توی این traceها مثل گذاشتن کلید خونه زیر پادریه و باعث می‌شه یه رخنه به چند تا ماجرای زنجیره‌ای تبدیل بشه.",
@@ -69,5 +69,5 @@
    "امنیت"
   ]
  },
- "updated": "2026-11-16T18:44:24+00:00"
+ "updated": "2026-11-17T02:06:36+00:00"
 }
