@@ -12,7 +12,7 @@
   "site": "FxTwitter · research.perplexity.ai",
   "title": "Andrew Gordon Wilson (@andrewgwils)",
   "description": "We’re excited to announce Perplexity Frontier Research!\nhttps://research.perplexity.ai\nWe will be openly advancing the frontier of models, data, and algorithms. Join us in re-imagining multi-agent collaboration, architecture design, continual learning, frontier…",
-  "image": "https://cdn4.telesco.pe/file/kqy9PXv2P008PlivDSkfIxxAOP48EqHwQFXZIrMjFeETq8ts6kww0RoJQXxCLNVfrlTPpoN9J0Wv6KdxMFvYc84wcAsm-JmSiAay2LQcO3mh0dak2GOo-6r1_b3--GFDov4EQq9DEbO_x3z3S1yVqk0gMKoODI4SjYwn-c9G3VSuoqg5bgBtTwvtAbkZWemitCSfIc3LUOcRijVRutGTEe5jL4kjDG8aDT75oYA6LDPyc2qq5KJobnH3R92UwlKsEhEmfLnI6FCCTM9WVL2v_wIos3_tstvyOA6uxLvoXa5GFlZJcZPvNbi9I29VUco_nqp0fb4zkFlNtOEFmKyQhw.jpg"
+  "image": "https://cdn4.telesco.pe/file/vymiBVz55SGHw7BwRJv0xsNG2XhYi95ciKHz_yyUEImIAQ_InJW0R-uScoQHPgYjFvEvzGtN0KSAP2ALqcax72YOGhXyh6fSjiq9-53H94q1iy6LUZE_Ntqd25n2VcBx9S8Zynt7le18G7kE0iL1amkgbOLTGOoCBn-p5H8sDqacxb39WgJesd7MbkQzqLCys8YgVbTre5rE_5x67FdSU3gT_MEUxomYU-TH2l76zmIAgMFSk1qDdp_Mqq5cC3pHsEAysWRy32dquUhGX7QSI7S8H8FkeO-3LpaQ_8m4fXdz-bds6ky5k5qqoaaT3N4Vu3xfK6-DCR5QvU3uGzpwQg.jpg"
  },
  "gholam": {
   "text": "رفقا، پرپلکسیتی از بخش جدیدش به اسم «Perplexity Frontier Research» رونمایی کرده که هدفش ساخت یه «محقق علمی خودکار»ه. به گفته خودشون، دیگه نمی‌خوان هوش مصنوعی فقط یه پیش‌بینی‌کننده جعبه‌سیاه باشه، بلکه دنبال سیستمی‌ان که خودش سوال درست بپرسه، دنبال شواهد بگرده، فرضیه بسازه، آزمایش کنه و مدام دیدگاهش رو آپدیت کنه 🔬\n\nتوی رشته‌توییت معرفی و وب‌سایت این پروژه چند نکته مهم هم گفتن:\n• این تلاش قراره با بیش از ۱۰ هزار پردازنده گرافیکی (GPU) پشتیبانی بشه و دستاوردهاش مستقیم توی محصول پرپلکسیتی زیر دست میلیون‌ها کاربر قرار بگیره.\n• تمرکزشون روی شش حوزه‌ست: هماهنگی چند ایجنت (برای بهترین کیفیت به نسبت هزینه)، پیش‌آموزش با وزن‌های باز، یادگیری مستمر، یادگیری تقویتی، زیرساخت و سیستم‌ها، و طراحی ارزیابی‌هایی که فرق بین استدلال واقعی و حفظ‌کردن رو مشخص کنه.\n• اعلام کردن به‌صورت باز کار می‌کنن و مقاله، کد، مدل، داده و بنچمارک منتشر می‌کنن؛ یه فراخوان جذب نیرو هم گذاشتن که مهلت اولویت‌دارش ۵ دسامبره.\n\nیه جورایی می‌خوان اون چرخه پژوهشی که تا الان توی چند تا مؤسسه و دست یه عده محدود بود رو بیارن توی نرم‌افزار تا همه بتونن ازش استفاده کنن؛ حالا باید دید در ادامه چه خروجی‌هایی رو می‌کنن.",
@@ -53,5 +53,5 @@
    "ایجنت"
   ]
  },
- "updated": "2026-11-17T16:09:22+00:00"
+ "updated": "2026-11-17T22:30:39+00:00"
 }

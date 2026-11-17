@@ -12,7 +12,7 @@
   "site": "🧵 Thread • FxTwitter",
   "title": "Liquid AI (@liquidai)",
   "description": "Today, we release d1.2 and d1.2-ultra, the state-of-the-art omnimodal decision models. d1.2 and d1.2-ultra both can process text, images, and audio with new output capabilities.\n> #1 on the @ArtificialAnlys Decision Index (75)\n> Read a value from the input…",
-  "image": "https://cdn4.telesco.pe/file/FLeB5mfvcoL1yB9zaw60RR5Ggs42vXbZ34aZAcAzUzplO7_WYMu5brboIOkj6LH_Ns_RH7aO4hEYP5V8dEWqCfsLQRFQdFPEL1GL6G_hAQTZ4mBtpJEkt6Osohh55MBDDPDjc0hGpjNt1J2EPtOMI6pfESfHyHdoT_RO8p5NThPlEsIOebJYYIXal4QMPDu4SGzBC7lJaGZ1QGYs1LHoxGUEaSI4v8Wh4Cjh5BJfuqgerpN_tLbO4mPwxS8A2sv79aXV7n1v5W5Iw9aUyBOfeZIWtqQ-oyYNTTOpo18Iw2WGRic793_9zFDUp2tJf2WSMsSnnb7nZQk_6aR1WX2gJQ.jpg"
+  "image": "https://cdn4.telesco.pe/file/gxnnI3ajRh-zgnkaPUmqH8_mFxNgZ3piaKrgP5LpmY8g_lXeJyMD4Ge_TdWEkcg2gK_O7LawdKr3zGYR2ZArn5Vnjmmu1mNBPSGTXLIjprkhRejB7QuFxoV5PsGyXVGUa0sduwdW4rq7sXUhgPPuxiu5DPpzjny-aXRb0Ibhkah1v4ya3b9_SUlwYv0SBhXavFyHzh0opz82NVWNBWSCZ_b1AyjZ07RJKFwgI6_SmalrN32m5NbayQwxfQld4WFPVOITQHgzXgACbspwNZZd5MzZCWafKheyvIA3zYnT01VrG4_VqbbeT-arFMMTyRGK7OISLiPWrbZGAMdenIfdtg.jpg"
  },
  "gholam": {
   "text": "رفقا، شرکت Liquid AI امروز از دو تا مدل تصمیم‌گیر جدید به اسم‌های d1.2 و d1.2-ultra رونمایی کرده که حالا علاوه بر متن و عکس، از فایل صوتی هم سر درمیارن 🎯 این مدل‌ها مثل یه همکار حواس‌جمع می‌مونن که به جای انشا نوشتن، یه راست می‌رن سر اصل مطلب و حتی اگه یه موردی توی سند یا عکس نباشه، الکی قصه نمی‌بافن و روراست می‌گن پیدا نشد.\n\n• پنج تا قابلیت جدید به API اضافه شده: خوندن مقدار دقیق از متن، پیدا کردن همه‌ بخش‌های خاص (مثل اسم و شماره)، کادر کشیدن دور سوژه‌ها توی عکس، تخمین تعداد همراه با بازه و انتخاب هم‌زمان چند گزینه با درصد احتمال.\n• توی رتبه‌بندی مستقل Artificial Analysis (نسخه ۲.۱)، مدل d1.2-ultra با امتیاز ۷۵ اول شده و شرکت می‌گه خطای تنظیم احتمالات هر دو مدل هم خیلی پایینه؛ البته خود Liquid AI توضیح داده چون هنوز معیار عمومی برای این پنج قابلیت جدید وجود نداره، دقتشون رو فعلاً روی آزمون‌های داخلی خودشون سنجیده.\n• هر دو مدل همین الان روی API شرکت با قیمت ۰.۰۲ دلار (d1.2) و ۰.۰۴۲ دلار (d1.2-ultra) به ازای هر یک میلیون توکن ورودی در دسترسن، هزینه توکن خروجی ندارن، به زودی روی OpenRouter و Vercel هم میان و شرکت گفته یه زمانی وزن‌هاشون رو هم باز می‌کنه.",
@@ -54,5 +54,5 @@
    "صدا و موسیقی"
   ]
  },
- "updated": "2026-11-17T16:09:22+00:00"
+ "updated": "2026-11-17T22:30:39+00:00"
 }

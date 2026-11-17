@@ -12,7 +12,7 @@
   "site": "🧵 Thread • FxTwitter",
   "title": "Grigory Sapunov (@che_shr_cat)",
   "description": "1/ From 7B to 30B parameters, zeroing fewer than 0.05% of frozen weights with GRPO matches full fine-tuning on math, and on Qwen2.5-7B it beats the base model even at pass@128 (80.08% vs 74.01%) without writing a single new weight.\n🧵",
-  "image": "https://cdn4.telesco.pe/file/cVnlyXyTbrHWXehy82WjvLXabGpRKkntzePuL_gOZm9VNT9YPmS6LDjxiVQOyMyxf5SK3Fs_awSX0HxDyKbtYdF7JjTeLppeJProgVPeY3xE1FddEV-Q-4EawFYX4ViIsjrZZzsKEWP9IePrN3oALH3cpuKJWJbP3FhTjj7PPUx-nfNCzEuz6koJiym02gtFqUgZStWc97htIBSElAbJconaale3YmnZGf-kSxq0w2omZZ-FsPiGN1yyhbb8EHuGQ7a9v1vAxpdkd1048sVOVsZt_SbicyTbDo8r46GhNUquwFkbT3OBR7k1WyJFRZp93e1kdQppZmK3j7RCVjykFg.jpg"
+  "image": "https://cdn4.telesco.pe/file/mgIHHKTn7ipV2mxRw9cRgqtN_bVYvWZfo5RHYAlQq3kDZKxqZOjwcNcFieMmDny4zyzkwo9jnXkOvSOqChUafT0V2-pALpVY-pyPp-0mAtTCs_4qz2TRjRa7EmSkB-263nN-lLM38zHtgSuRdjI4EzyJZVmQmLkr0LUi-jJ23F1UqjozY7R0q3qjUK0TE-7TLdNVpz_hvfyk7OHhTvjpou9IX7vmOfRjj3Zv1vZ9SdhdyhjWnCliqicM3SNOx4h5YRlhBOtWj6NTYQSLTE9d9aXqCotcFzCQZh7IcwrAvckU20gDwV0ib47j8AUHZj-vrjM-Jij_Uasl35gF_Oyt6A.jpg"
  },
  "gholam": {
   "text": "رفقا، یه مقاله‌ی جدید از پژوهشگران NYU و دانشگاه کلگری روشی به اسم Deletion Tuning معرفی کرده که میگه برای یاد دادن مهارت‌های تازه به مدل‌های زبانی بزرگ، لازم نیست وزن‌های قبلی رو تغییر بدی؛ انگار به‌جای سیم‌کشی دوباره، فقط کلید کمتر از ۰.۰۵ درصد وزن‌های مزاحم رو خاموش می‌کنی تا مسیرهای درست خودشون رو نشون بدن. ✂️\n\n• به گفته‌ی مقاله، توی مدل‌های ۷ تا ۳۰ میلیارد پارامتر، صفر کردن کمتر از ۰.۰۵ درصد وزن‌های فریز شده (با یه ماسک ۱ بیتی روی گیت‌های MLP) توی ریاضی به پای فاین‌تیون کامل می‌رسه و روی Qwen2.5-7B در pass@128 هم از مدل پایه جلو می‌زنه (۸۰.۰۸٪ در برابر ۷۴.۰۱٪).\n• مزیت اصلی این کار کم شدن فراموشیه: زیر یادگیری تقویتی روی لاما، دقت روی کارهای قبلی در حد ۱ امتیاز از مدل پایه باقی مونده، در حالی که روش‌های دیگه تا ۵.۴ امتیاز افت داشتن.\n• البته نویسنده‌ی این بررسی چند تا محدودیت هم ردیف کرده: مدل‌های زیر ۷ میلیارد پارامتر عقب می‌افتن (مثلاً ۶.۰۶ امتیاز کمتر روی لاما ۱B)، حافظه‌ی آموزشش سنگینه (بیش از ۷۰۰ برابرِ وضعیت بهینه‌ساز LoRA با رنک ۱ روی لاما ۸B)، و هنوز تست نشده که چند تا ماسک مختلف رو میشه پشت‌سرهم بدون تداخل روی هم سوار کرد.\n\nبه قول نویسنده‌ی این مرور، فعلاً ارزش اصلی این روش بیشتر توی سردرآوردن از سازوکار درونی مدل‌هاست تا اینکه همین الان جایگزین روش‌های سرور بشه.",
@@ -55,5 +55,5 @@
    "ایلان ماسک"
   ]
  },
- "updated": "2026-11-17T16:09:22+00:00"
+ "updated": "2026-11-17T22:30:39+00:00"
 }
