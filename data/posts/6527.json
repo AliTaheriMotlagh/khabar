@@ -12,7 +12,7 @@
   "site": "🧵 Thread • FxTwitter",
   "title": "Rohan Paul (@rohanpaul_ai)",
   "description": "AI model that is itself bad at a task can still train another AI to do it well.\nNew paper shows that a decision model called JEV, an AI model built to pick between options instead of writing text, completes only 42.9% of simulated household tasks on its…",
-  "image": "https://cdn4.telesco.pe/file/cbjDpe18hi1WEDZ7vSBudwZ28lNTUj1INFMs04RlNDScGUnqCw5jrzHufbmhtOe2fUrmRsOXMwMl-Z3xpnllXT1tQvV6w4E-m7M3yhLRF9j_fRUO308Dv-7GyOXZZqOcb_cfrU8vgsjG-iiaeixQXgoLUq_amWC9MYmj-jtmjnGA9Gj7A1hWWJbakg2nS9uX7Hfnhv5U0uC0uyYSQD4YaWQ9Iz9ihp0AH_c6PwCzkJjDmi9qppMcNl8w_5D03EuuDauzLGa_hD-4U3Bers36tR0Il67VxaPeZWdt8m0FbgBfMYMhZhUuD4cFLkgJGumU4imBKSlkRSGTbe8EWM3DDg.jpg"
+  "image": "https://cdn4.telesco.pe/file/SiSlKsGQzdtOCa7NZCTh_EJCTx44ya2k7OEAljjiCnAc5CF8xbRKWWMtkxciHBOPAkPfrp3ZHNrAEN_IBT_T2UEyCNlqLfeNYhD7veXMTaT4BcDZYsIuj7Pn62f701uY2t6nISJrnxg-0DbhT_tKtgq3lyLxQhc-sctGI4hUIbxSoKYjtPN2ZI1Z00p1ec1OGNXaPsjwSd8IZ4fKfwoVVimxazfNyJLCpT-PUcXmFpyR5VVJdgDPQIMBLktujFTJBHCq3Px7FUcTTLwHaYtVw0RQ-P0Vxq6kGYgPV0A_8E1yvXd5DSER7R_1PgPBTglLZl3bppL4nx4NdXnNbNJftQ.jpg"
  },
  "gholam": {
   "text": "رفقا، انگار تو دنیای هوش مصنوعی هم مثل فوتباله؛ لازم نیست یه مربی خودش تو زمین بازیکن شش‌دانگی باشه تا بتونه شاگردش رو راه بندازه، همین که بعد از بازی فیلم رو ببینه و درست و غلطِ حرکت‌ها رو تشخیص بده کافیه! 🤖\n\n• به گفته‌ی روهان پال که پژوهش جدید دانشگاه ژجیانگ رو روایت کرده، یه مدل تصمیم‌گیر به اسم JEV (که به‌جای متن نوشتن، بین گزینه‌ها انتخاب می‌کنه) وقتی خودش دست‌به‌کار می‌شه فقط ۴۲.۹ درصد کارهای شبیه‌سازی‌شده‌ی خونگی توی آزمون ALFWorld رو کامل می‌کنه.\n• با این حال، وقتی همین مدل بعد از تموم شدن کارِ مدلِ دیگه (Qwen2.5-1.5B) کل مسیر رو مرور می‌کنه و به تک‌تک قدم‌ها نمره می‌ده تا توی آموزش GRPO به کار بره، نرخ موفقیت اون مدل از ۷۲.۸ درصد (با پاداش‌دهی فقط به نتیجه‌ی آخر) به ۸۲.۹ درصد بالا می‌ره.\n\nخلاصه اینکه به نقل از این پژوهش که روی محیط‌های ALFWorld و WebShop آزمایش شده، برای نمره‌دهی مرحله‌ای به ایجنت‌ها باید مدلی رو انتخاب کرد که تو قضاوتِ تک‌تک حرکت‌های ثبت‌شده مهارت داره، نه لزوماً مدلی که خودش کار رو خوب انجام می‌ده.",
@@ -54,5 +54,5 @@
    "سرگرمی"
   ]
  },
- "updated": "2026-11-17T02:06:36+00:00"
+ "updated": "2026-11-17T08:10:58+00:00"
 }

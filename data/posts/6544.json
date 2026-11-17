@@ -12,7 +12,7 @@
   "site": "🧵 Thread • FxTwitter",
   "title": "Empero (@EmperoAI)",
   "description": "quark: a 165M-parameter language model with 128K context, post-trained with RL only. No SFT stage, no distillation.\nThe whole project, failed first design included, cost about $4,200 of compute (about 1,300 H100-hours).\nFour open-weight models and a report…",
-  "image": "https://cdn4.telesco.pe/file/PZ3xyOCnPKSe3yUxryQjXC3tOkQqbX-ioKv6ODFI4N4ARUDoj_2_lmkKdHomDQtQeBN-mtxAh9liyqWOW0fWXheacRThdvp3W0uTgtOkSB_dloWOE0nG-uGEU7SlEXPQzoVwiYAfy9f982I-mV_Fus2YI6O4VFdbD3oXOotCXfJiusL9KQ2e3pWJlPmBUDoN4433_H772uqbG9pffttQabV7EuNGoE1E6aQIxLXnKMhQayKLvpQeB_BEVY3Vtn11kzY6kjHyc25-_3I-0f6KOpKS0dRmDzbxYXaJRp-PbWGiQlI1R3mOKim2fqTklIe8iUOQ7hgo4L1BSriWWSzjbQ.jpg"
+  "image": "https://cdn4.telesco.pe/file/Ki03JHS1XFaUhgOeOFdfD-A-2E_NGrujk9-qBJYYEEEpcKbphz5A4p6MoUK99d2cS9Z9vNGczm7uLbLcoDHhlcjLy-fvAF7UhcVDdbur-4dcnVIGY313RoWkbH9W6fuFmJYiZPYc71V6ah08dQfj6gk7UP3ghn-nzjdFVH6isw602NfRzjcm7GhYo7kva9nWAIzR8sttyeAKDg6q3VVGV_mc0QkqleIELtYN6FhU5ah0UFih9KOPdQSXPA30GtwCKlGeo_ykivbp-iTrm-fbk4iCC58o0-h6UzmOPUvc5cDh5nZ-ju3VNODVpyLKjJrYMqtPhY_IUdJq7Ghngt0ydA.jpg"
  },
  "gholam": {
   "text": "رفقا، حساب کاربری «امپرو» (Empero) از یه مدل زبانی جمع‌وجور به اسم «کوارک» (quark) خبر داده که ۱۶۵ میلیون پارامتر داره و از کانتکست ۱۲۸ هزارتایی پشتیبانی می‌کنه. به گفته این تیم، مرحله پس‌آ‌موزش مدل فقط با یادگیری تقویتی (RL) انجام شده و اصلاً سراغ آموزش نظارت‌شده (SFT) یا تقطیر دانش (distillation) نرفتن. امپرو گفته کل هزینه پردازشی این پروژه، حتی با احتساب یه طراحی اولیه‌ی ناموفق، حدود ۴۲۰۰ دلار (نزدیک به ۱۳۰۰ ساعت استفاده از پردازنده‌های H100) در اومده و چهار مدل با وزن‌های باز و یه گزارش هم همراهش معرفی کردن. البته چون ادامه رشته‌توییت و خود گزارش اینجا در دسترس نیست، جزئیات بیشتری از عملکرد و نتایج این مدل‌ها مشخص نیست. 🤖",
@@ -49,5 +49,5 @@
   "why": null,
   "tags": []
  },
- "updated": "2026-11-17T02:06:35+00:00"
+ "updated": "2026-11-17T08:10:57+00:00"
 }

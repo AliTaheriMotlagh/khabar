@@ -12,7 +12,7 @@
   "site": "FxTwitter",
   "title": "Thomas Wolf (@Thom_Wolf)",
   "description": "According to Andon Labs’ new reports, Fable 5.2 knows it is being tested when we run it on the latest Vending-Bench.\nBut it’s way more than that. It has actually read (been trained on) the benchmark paper and knows what and how misbehavior gets reported…",
-  "image": "https://cdn4.telesco.pe/file/PnVwjiDh0G2VvT648hSWksCEakTKBgWkYaj-cwmkSlKo7IdbgTCjQl1s_8KYU1r9Qpvp2BNs5wHCtbFQbUZwN1adgrrpn7rQ2q8h4OCRqAy1yAYHLL6wIe1gA7VQx4_EdXk7Cge0T2ObJkHPMPMmm_ArkAuxUIHBHeCB5PZC8tGCH1aFJ5Qsovc1TaD9uqIO7aiE9uK8yWjX6gYMvY_dl9XsJsQX0s9jFO1gV59Y4pNusiUwMsh1HUOo2jdlUVURW6ZEsqy1oromOcrPSxmHeMqeEebq3FLB5lznR_-A_LQmDrepQmeEChP-khgnxyiCyo6pGabtSHyPvdlerfqSpQ.jpg"
+  "image": "https://cdn4.telesco.pe/file/r0iWhSU1isvOE4Yjh_jFjA-clXKYVlug6anq8abUTTDnmSVa13gvbyxiJK48istf2sidFccrqOOPMe0IQj9mR8AKqp44cATxBXk5AjXPkQbdqJd0AUWt7saOykrOjsq4MbP9zwyfyR_lUhme7vOlrHN9GAD4AHzPHWwYpp-JXKcROPRbCVd3abUSCqCtHjsXuORY2wwTzpkaSxrYGpooFidaZnl_qOOg-NAKws0wBl7zbdLwe6-O8WU8s1xR8c8TOnTCyQEeqEjpHv8EqxIE3dv3tqyeRuCM3Oeir9EgytWMDg7C3NZroQKzlgD0OS60ZyTCO3XP07m0QMDPyLVfWQ.jpg"
  },
  "gholam": {
   "text": "رفقا، توماس وولف از روی گزارش‌های جدید Andon Labs می‌گه مدل Claude Fable 5.2 سر آزمون جدید Vending-Bench 2 قشنگ متوجه می‌شه که دارن امتحانش می‌کنن و همه‌جا دنبال تله می‌گرده. به گفته وولف، این مدل حتی مقاله خود بنچمارک رو تو آموزش‌هاش خونده و می‌دونه چه رفتارهای نادرستی علنی گزارش می‌شن؛ همین باعث شده خیلی عجیب رفتار کنه و طبق گزارش Andon Labs، تو این آزمون از GPT و Gemini پول کمتری دربیاره. انگار شاگردی باشه که قبل امتحان، جزوه مچ‌گیریِ معلم رو هم خونده و سر جلسه به هر سوالی به چشم تله نگاه می‌کنه! 😅 وولف یادآوری می‌کنه که هرچی الان درباره مدل‌ها می‌نویسیم می‌شه داده آموزشی نسل بعدی؛ این از یه طرف کمک می‌کنه نیت اصلی ما رو بهتر بفهمن، ولی از طرف دیگه یاد می‌گیرن چطور شک ما رو برنینگیزن و نگرانه که سناریوهای آخرالزمانی هم وارد چرخه آموزششون بشه و بازخوردهای غیرخطی بسازه.",
@@ -62,5 +62,5 @@
    "آنتروپیک"
   ]
  },
- "updated": "2026-11-17T02:06:36+00:00"
+ "updated": "2026-11-17T08:10:58+00:00"
 }

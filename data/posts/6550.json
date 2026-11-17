@@ -12,7 +12,7 @@
   "site": "🧵 Thread • FxTwitter",
   "title": "Qwen (@Alibaba_Qwen)",
   "description": "📢\nMeet Qwen4-Max, your new AI teammate for work, creativity, and discovery!\nQwen4-Max is built on a new MoE architecture with native vision and a 1M-token context window.\nHighlights:\n- Outperforms Qwen3.8-Max with up to ~50% fewer tokens, while average…",
-  "image": "https://cdn4.telesco.pe/file/GUmXJfNhsqp9hfel5Kj9SedPUt91uKvkP9J7RX347gSCBSsY00mvX4-_b69oNsSJPW3IBhE_jmGoO1eymw-mEq5wfV_P1mlBs2rNeCx4A6ljtq2I34RFF8-rS9L7eZ69a_M1sorlhHa2P0yOzfItQyrTSp8zssoe6V40dkLJOAbTHI338AG9Lm_4IIhnrcdBE9qgKCbmSq1QwI9WuZ2ZFffavkVwd3S2eyWMBA3QkCaDABbniXICxq4Ng7hF7cDyV61yFdfX2ePiU14lKupB7wE0HHIhsU7aD8maTn6XKm2F1VbfQ_9YKQfvs9Ssw76qG3sFE0RCuA-ANk7oQWIhEg.jpg"
+  "image": "https://cdn4.telesco.pe/file/n3D_HcfifMN83HWrn7KboddvZqS1rVq4W6IIY70JbD-FC1C8yBXpm8EMtQy6tq0TC9DYoW-y-bzfn5ap3PYp5UqdaG0LdyYxasfSuOI-Ocasz3qLOylPZ-Lx_yGJ8v_Kn_L1o2IP2ms-JrkcaIKO3XJ0sH8NzDhjQIs58yHAymY54OMoB03RKGLF7z4nK_d4GJ_ztGGnrjnMZttyeQb6wgd6-i_bucUxHcHhY8r02L9j4MNLFdqbW9JxT6GnS17sPJS5NJp_lz7spv6fWI62hiHn1t8eq8bscaA44LlKC2BRmTtIGvwEwtI2NqW1hmUlAPAcV1AIrpKan4o0j6wNIg.jpg"
  },
  "gholam": {
   "text": "رفقا، تیم Qwen علی‌بابا از مدل جدید Qwen4-Max رونمایی کرده و اون رو یه هم‌تیمی همه‌فن‌حریف برای کارهای تخصصی مثل کدنویسی، طراحی سه‌بعدی، بازی‌سازی، تولید صنعتی و پژوهش‌های علمی معرفی کرده 🤖. طبق گفته این شرکت، مدل تازه نسبت به نسل قبلی توکن کمتری مصرف می‌کنه و تعرفه‌های ارزون‌تری داره تا کارهای طولانی و پیچیده به‌صرفه‌تر انجام بشن.\n\n• مشخصات فنی: بر اساس وبلاگ رسمی Qwen، این مدل روی معماری جدید MoE با ۲.۴ تریلیون پارامتر پایه (۷۱ میلیارد پارامتر فعال در هر توکن) ساخته شده، ورودی متن، تصویر و ویدیو رو پشتیبانی می‌کنه و تا ۱ میلیون توکن پنجره زمینه داره.\n• هزینه و ارزیابی داخلی: توی بنچمارک داخلی خود شرکت (Work360)، امتیاز مدل به ۵۲.۶۹ رسیده که حدود ۱۰ درصد از Qwen3.8-Max بالاتره و میانگین هزینه هر تسک از ۴.۴۳ دلار به ۱.۶۷ دلار کاهش پیدا کرده؛ قیمت API روی QwenCloud هم به ازای هر میلیون توکن، ۱.۵ دلار برای ورودی، ۴.۵ دلار برای خروجی و ۰.۰۷۵ دلار برای کش ضمنیه.\n• مقایسه با رقبا و دسترسی: طبق نمودارهای منتشرشده، Qwen4-Max تو آزمون‌هایی مثل DeepSWE و کارهای حقوقی از رقبا جلوتره، اما تو تست‌هایی مثل CodeArena، Terminal-Bench 4.0 و درک نمودار هنوز عقب‌تر از مدل‌هایی مثل Opus5.5، GPT6 یا Kimi K3.1 ایستاده؛ API این مدل الان در دسترسه و به گفته تیم سازنده، نسخه‌های کوچیک‌تر Qwen4 هم قراره با وزن‌های باز منتشر بشن.",
@@ -67,5 +67,5 @@
    "چین"
   ]
  },
- "updated": "2026-11-17T02:06:35+00:00"
+ "updated": "2026-11-17T08:10:57+00:00"
 }

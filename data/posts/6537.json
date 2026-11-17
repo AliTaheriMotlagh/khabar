@@ -12,7 +12,7 @@
   "site": "🧵 Thread • FxTwitter",
   "title": "Daniel San (@dani_avila7)",
   "description": "Code Mode is now available experimentally in Claude Code 2.1.325\n(Save this post to try it later)\nHere’s what it does and how to enable it\nInstead of calling tools one by one, Claude writes JavaScript to execute multiple tool calls in a single step\nIt…",
-  "image": "https://cdn4.telesco.pe/file/gQj1Rp1rOrb0iirdZDcYd3osbs94PT4PGYlfVVsd2NtuNGAHFzgw6NSwAayefPu0vzQx-2NBqll30NA_dZzEQO7i6IWbUcfhGanVktjNfYmB-FkZ2KLJnieEKaT1g8QUIb_93_n6QJA3cGsSNa3C2vaNYattLtMYBllIpHGV_KRjYgt1ihoQkAd9uRxruA9g0M7LsgoZXd4RQT-Cr7aKKCXjhdC1x1A7ex1cDD2qqbXI2d9_PY6rbWVh-izfRag5m4oiPdjwero_8NtAwmvIY9pZQuP5FiL7Ary3jpemptRtSDCGniIu7tSzYgJ7c3zR7oxOsFIVDI4LN3X_DlANGg.jpg"
+  "image": "https://cdn4.telesco.pe/file/A92YkcP7lcPg8tZsrwgzWPDSmwvJluASrP-qL5CHzUXxukU7ub5ZLT4pQZfjnoaCfXn_-xA8tEy7p6eXeHVFwdGVr9ceTgvS98r4bbRACltxViP_1Nvbk5O1F0wNkYE_KUx79PKQdzjh_gVvac9hOH4bFFoU5q1Kq787SWZsods1I0D8GIhmAAmjPs_PDRNEgfzhG9c-hweDtsWly6e4yAhl4qyllVRBToBHQWORXWVCNTBdDdmpgL12dpo2C8Hf9wlFDOIYhsCbw7JDFzz3vXTCkouYokjiFDU1mgXVntZ_G95KWUaAAIipOWNZIeWTfUTTpt-eKD-ASFSCj5hcVw.jpg"
  },
  "gholam": {
   "text": "رفیق، یکی از کاربرهای ایکس به اسم دنیل سن گفته قابلیت «Code Mode» به‌صورت آزمایشی تو نسخه ۲.۱.۳۲۵ کلود کد (Claude Code) اومده. 💻 طبق توضیح این پست، کلود تو این حالت به جای اینکه ابزارها رو دونه دونه صدا بزنه، یه کد جاوااسکریپت می‌نویسه تا چند تا فراخوانی ابزار رو تو یه مرحله انجام بده؛ یعنی می‌تونه دستورها رو هم‌زمان اجرا کنه، عملیات رو به هم زنجیر کنه و قبل از برگردوندن جواب به مدل، نتیجه‌ها رو فیلتر کنه. مثل این می‌مونه که به جای چند بار رفت‌وآمد، یه باره لیست کارها رو بدی و تر‌وتمیز تحویل بگیری. نویسنده گفته روش فعال‌سازی و نتیجه تستش با Fable 5.2 رو هم گذاشته، ولی چون عکس‌ها و ادامه پست در دسترس نیست، جزئیات دقیق اون بخش‌ها مشخص نیست.",
@@ -52,5 +52,5 @@
    "کدنویسی"
   ]
  },
- "updated": "2026-11-17T02:06:35+00:00"
+ "updated": "2026-11-17T08:10:58+00:00"
 }

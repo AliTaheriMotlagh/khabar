@@ -12,7 +12,7 @@
   "site": "FxTwitter",
   "title": "Qwen (@Alibaba_Qwen)",
   "description": "Qwen4-Max lands at #6 in the Code Arena: WebDev — up 74 pts over Qwen3.8-Max. Give it a try!\n🙌\n@arena\nQuoting Arena.ai (@arena)\nQwen4-Max by @Alibaba_Qwen has landed as #6 in the Code Arena: WebDev!\nWith 1750 pts (preliminary), it's +74 pts over its predecessor…",
-  "image": "https://cdn4.telesco.pe/file/So_AQZAcpEO6B9J3q6Inubw9OEPq7WHAUiuyeeL9vrZdRdSDNmCrTIPITi9IvmUb50av41M4ZilK-gmZHuEYOEJpPu6YODUwmChd5rSD9j-fA6UZvD38QqMr14ptOPFKJ-RjFHpa4Dt1n8pZvqNeFVfB8jI1j90adc5XPohEBlfJc5AvoE_FQlWzKjIf2HsMKrF2H8SHPF4dG_9z-1zZyUCDaUHfln28hgio4XH2pdFuYcOkV21C-QMrV8uxdA7vXKV_9hfTMcuP-uQq40442O6wJ-1xmLQD38Wkyl1-9IcJCTvkdKYhF_NIfXpRv9nQdy1afaLaXy63Wtvt_8qs6w.jpg"
+  "image": "https://cdn4.telesco.pe/file/KaUkzSlw2SSNiF3Hz1o1e3rw4wgRmV5vft1VyzLWpOZS3bTOrlNv436cBHREIJVZ--Ra9gwLoVbgebRwhdQAwJlK2YH7L-GfBaEjbFXsUVZ3mhWCJIMBA2YFMiShFx3AVDJWCqp1fdkaNST2n5VFIKMgiWhRCF-80_6PfzMf2nbhpZepsd8cjoZ4i5ojg63lcDCS7kMaJzdZ_9mnB7pNXc6UEk_SxE_sJjn8iKDeOorXjXcZVN_3Yy9fsCaUoCSu_XNSpyFcK9NebvY5lj4x7izKwE2Nf35bx5l3QDi4XQs81Fj-fRWg6ckV0z7UYjaVW4Sflt63hqSw9pw0-RwxNw.jpg"
  },
  "gholam": {
   "text": "رفیق، تیم Qwen خبر داده که مدل جدیدشون یعنی Qwen4-Max تو جدول رده‌بندی طراحی وب Code Arena نشسته رو رتبه ششم. پلتفرم Arena هم با انتشار آمار مقدماتی اعلام کرده نسخه xHigh این مدل با ۱۷۵۰ امتیاز، نسبت به مدل قبلی خودش (Qwen3.8-Max با ۱۶۷۶ امتیاز) یه پرش ۷۴ امتیازی داشته و تو زمین طراحی وب حسابی دست‌به‌فرمونش رو رو کرده. 💻\n\n• طبق نمودار Arena، فعلاً پنج مدل Claude Fable 5.2، Claude Opus 5.5، Claude Sonnet 5.5، Gemini 4 Carbon و GPT-6 Astra بالاتر از Qwen4-Max ایستادن.\n• به گفته Arena، این مدل بین مدل‌های چینی صدرنشینه و تو بخش HTML رتبه ۶ (۱۷۴۸ امتیاز) و تو بخش‌های Brand & Marketing و Reference-Based Design رتبه ۸ (به ترتیب ۱۷۰۵ و ۱۷۷۰ امتیاز) رو گرفته.\n\nالبته یادت باشه این رتبه‌بندی فعلاً مقدماتیه و فاصله امتیازی چند مدل اطرافش هم رو نمودار خیلی به هم نزدیکه.",
@@ -66,5 +66,5 @@
    "آنتروپیک"
   ]
  },
- "updated": "2026-11-17T02:06:35+00:00"
+ "updated": "2026-11-17T08:10:57+00:00"
 }
