@@ -12,7 +12,7 @@
   "site": "🧵 Thread • FxTwitter",
   "title": "Rohan Paul (@rohanpaul_ai)",
   "description": "New Carnegie Mellon paper finds that Opus 5.5 + Claude Code built a pre-training pipeline, an inference engine, and a cluster orchestrator that matched or beat production tools like SGLang and NVIDIA Dynamo on the same GPUs.\nSingularity-Bench gives agents…",
-  "image": "https://cdn4.telesco.pe/file/AJSCC5lycFGYLOBUqwfpxULBiR61pKCeHl-4ZplQiOeMYrhJgyB5drdTT736zvaknUbSKiULs7ZjULYypPvSunfkhPbej1kTHFwNXCfl_7IGXDcL9PJCyb3xF394DA7W2Cy2M970ypsXqSO6mjw8vq2rEwzrAKKQUqKXa7R4FfkkxLojpdEotTUQ_I2FfyWUyX4aDjCfq4Mesp9f9YU5PY0TOAd6g9Qx9m4JW9K_DQ2gBiFU38sIEQAvM90xEyKFLtfh3ZjnVnROwnviP1BMUbNjIYSwZFPnmkDeqn5JtULiAgeoiatpEkTaOQJPPtOcXOEuIQHjk9zYZI6s5HNubA.jpg"
+  "image": "https://cdn4.telesco.pe/file/QgCS4C39e33OCzmvJqtbJgnyMgiTGdcbtiwfezqCHWA_P47KWQxjSRNHphcXojsq4YrqCDwfNHzyX3YPSToDHbxrRGejoe72eaZKyr4ZTVVT18a4rAdzGnwOlhIfKbfZsHRdVxbU_LfuCAhR8bm0z1fVrobuJs7EZpIZZ4vHmEGYfJmmgSB1Wh3aNRWfT501x00ZUgnBIHgbpUCxIn5Oi2dtCHd_qtoANpFtX5mdsQhnr4-xoIo35-HVV7GJ162AFw_4yURpm9AvB_I5h7tz7mYFR20HQufeaDxe9nSsYvFpx2W2b6ghf-ivSqMVHyUQghGSxIP6cAvmNQV9VBq6cw.jpg"
  },
  "gholam": {
   "text": "رفقا، یه مقاله جدید از دانشگاه کارنگی ملون اومده که روهان پال خلاصه‌ش رو به اشتراک گذاشته؛ داستان از این قراره که هوش مصنوعی دیگه فقط کاربر ابزارها نیست و توی این آزمایش، آچار و دستگاهِ خود کارگاه رو هم ساخته! 🤖 بر اساس این گزارش، ترکیب Opus 5.5 و Claude Code تونسته یک پایپ‌لاین پیش‌آموزش، موتور استنتاج و ارکستریتور کلاستر بسازه که روی همون GPUها هم‌تراز یا بهتر از ابزارهای تولیدی مثل SGLang و NVIDIA Dynamo عمل کرده.\n\n• بنچمارک جدید «Singularity-Bench» شش کارِ کامل رو (از پیش‌آموزش مدل تا ساخت موتور سرویس‌دهی) با بودجه ثابت به ایجنت‌ها می‌سپاره و خروجی رو روی سخت‌افزار یکسان با نمونه‌های انسانی می‌سنجه.\n• طبق اعداد این پست، Opus 5.5 شاخص ۱.۲۵ رو گرفته (که عدد ۱ معادل خط پایه انسانیه)، در حالی که میانگین ۱۰ ایجنت دیگه ۰.۵۸ بوده.\n• موتور سرویس‌دهیِ ساخته‌شده هم به ازای هر GPU-ساعت، ۱۱.۵۲ دلار کسب کرده؛ در مقایسه با ۸.۱۸ دلار برای SGLang.",
@@ -55,5 +55,5 @@
    "کدنویسی"
   ]
  },
- "updated": "2026-11-17T08:10:58+00:00"
+ "updated": "2026-11-17T16:09:22+00:00"
 }

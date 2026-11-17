@@ -12,7 +12,7 @@
   "site": "FxTwitter · openai.com",
   "title": "OpenAI Newsroom (@OpenAINewsroom)",
   "description": "We're releasing a free new tool to vetted organizations to help detect child sexual abuse material, including AI-generated images. We're also adding ChatGPT warnings, publishing guidance for developers, and supporting child safety investigators.\nWe developed…",
-  "image": "https://cdn4.telesco.pe/file/eeoA1g2U9bV6r1ibp6fSVDKGZnxHAU-MVvWjzWcb3CAJkuKx32WqO7I-CaUpiKaJLdj0AGDOPyiq9x6ypandv1uDOSzGtKsqX_kq8HetdRX9ZPjViUl88Zo7QC50GHe_xolS3Z8IOvu6Ml4no50iDwJEGZbxRn8MikGxKVn1BISrMwlLxSuqFgg5h-Ug3FOjAHtyTBsmeAtf9aQrr3cPSpv_44gqr_UjnLdajaQp378VP0LQh3oBxQRfAp5GVl8Yq8GjbPTOpyGNy1JmRM9s-S5mcYGqeTEU6ofccsfeaO8zSyAC48GXYzSAn5ZclbXV9-99l1FoxtELy2Sw-nooQg.jpg"
+  "image": "https://cdn4.telesco.pe/file/gk8mVgyvxLkpGGXi-72s1lRGj4xhyyPVm49W2u4JxHLhEcKwZt7K7efKaDta56vZqXkqWwB6dV3bWGdAYPlrXmkb_vxluuScQd8XXBy_0asBkNQp8oyxdSfRmqR6Ry1cNY6svERb8KgJWbUeFCOb5Fq1xVN9wHuMH-xK-cnO65joVXa9SXWabQ_M4YyVlyni3xZCZyDa4crt6kWfTP5o1L06k3z8KWgg38tbZr25IW6K9zZtH5Wo0hEBKcm1l4xPzm5ialXEJmEb7UcytFi8yjj7SJUuPnb_B2yPP-eQ3FuRNGr28FgmPXYCApGSUPiFzayfumu5D3Tr-OlLNBXVMw.jpg"
  },
  "gholam": {
   "text": "رفقا، شرکت اوپن‌ای‌آی (OpenAI) اعلام کرده برای تقویت امنیت آنلاین کودکان و مقابله با محتوای سوءاستفاده جنسی از کودکان—از جمله تصاویر ساخته‌شده با هوش مصنوعی—ابزارها و اقدامات جدیدی رو راه‌اندازی کرده. این شرکت می‌گه بخش اصلی این ابزارها رو با کمک مرکز ملی کودکان گمشده و استثمارشده (NCMEC) ساخته و با همکاری گروه‌های Tech Coalition و ROOST می‌خواد دسترسی سازمان‌های تاییدشده رو به اون‌ها گسترش بده.\n\n• ابزار رایگان تشخیص تصویر: طبق توضیحات اوپن‌ای‌آی، یک سیستم جدید تشخیص تصویر از طریق API به‌صورت رایگان در اختیار سازمان‌های تاییدشده قرار می‌گیره تا بتونن محتوای آزارگرانه و تصاویر تولیدشده با هوش مصنوعی رو شناسایی کنن؛ در ارزیابی داخلی این شرکت، ابزار جدید ۴۸ درصد تصاویر کمتری رو برای بررسی پرچم‌گذاری کرده در حالی که تقریبا همون تعداد موارد آزارگرانه رو پیدا کرده و شرکای اولیه هم در آزمایش‌هاش به نتایج مثبتی رسیدن.\n• هشدار و مسدودسازی موقت در ChatGPT: بر اساس مقاله رسمی این شرکت، اگه کاربری درخواست محتوای آزارگرانه علیه کودکان بده، گفت‌وگو حذف می‌شه، دسترسی اون به ChatGPT برای ۲۴ ساعت قطع می‌شه و پیام هشداری همراه با معرفی مراکز کمک تخصصی براش نمایش داده می‌شه؛ در صورت تکرار هم محدودیت‌های طولانی‌تر، بستن حساب یا گزارش به مراجع قانونی در پیشه.\n• راهنمای توسعه‌دهندگان و حمایت از بازرسان: اوپن‌ای‌آی همچنین یک راهنمای عملی ایمنی برای توسعه‌دهنده‌ها (با همکاری چند نهاد تخصصی امنیت کودک) منتشر کرده و اعلام کرده از بازرسان حوزه امنیت کودکان هم حمایت می‌کنه.",
@@ -51,5 +51,5 @@
    "امنیت"
   ]
  },
- "updated": "2026-11-17T08:10:57+00:00"
+ "updated": "2026-11-17T16:09:22+00:00"
 }

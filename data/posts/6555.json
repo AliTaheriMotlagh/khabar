@@ -12,7 +12,7 @@
   "site": "FxTwitter · openai.com",
   "title": "OpenAI (@OpenAI)",
   "description": "We’re working with @ApolloResearch, @METR_Evals, @TransluceAI, and @GoodfireAI on embedded assessments: giving outside experts deep access to our internal models and systems to investigate alignment and test our safeguards.\nThese assessments build on our…",
-  "image": "https://cdn4.telesco.pe/file/DkJIiFOrc73Muavoe9-fVKRYXqE3xAcIG2T4o00U_KlTinPui3BhvGpo2cLKI5rlACF6HB2UD1YNWI1dBaDvcyi1XB7Qdd6x9ciBhq4dBwD4NKMa6hYbos29gU4-hPj3PZR06-KeLRgrlSY4jlxrlSufr3HaDLDAgP3JeeW7Nzmfk4K9R-Ka1VMTq16A2YIKMliVkbtVTpdiCKh66g6NZjOGIFlyXGQEv8UzydZ8CzglchTbOWJJYzt61uedBUyvxxWLfD7sRny4DPISgQ-U6MeWDz-xt-j8ueps--FNfLm93gfn3VF6d9I2nsgAN844oGpijlvWl0lWf7xJsqX9vw.jpg"
+  "image": "https://cdn4.telesco.pe/file/jgnjtKzktAuuhda4UlQWXLqlYOZaJJV8FKdpSRRClIpjfa0n81JCGuBR0rkG9tNFLAiz5vX-bd-Mayg0AVX0MwYeGu7V-T8iYM8-JH6g2nRuOmjJ8dL3n9WckH-866cDvZrPm4J9BHopQSeY91wahFNWLdU4_dpl3-WJL7YZhRdRJDBsFDQt3rUPhy5AzP2EQBavH_cVWjH_xk22jWmsiqDXSbXTbeeopQlUBq9rXIp_KtbNlrjLwKZx-551fPydSDzWGiBu2ZnRKSZ-daB-o2VxG8rrBgupftF5BJ7SM1U59KGvdAhnM24KGikgeN5oPDqlT8j7rDxfaX8mVCtQeQ.jpg"
  },
  "gholam": {
   "text": "رفیق، OpenAI تو رشته‌توییت و وبلاگ جدیدش اعلام کرده برای اولین مرحله از «ارزیابی‌های مقیم» (embedded assessments) با چهار گروه مستقل یعنی Apollo Research، METR، Transluce و Goodfire قرارداد بسته. به گفته این شرکت، هدف اینه که به جای نگاه کردن از پشت ویترین، کارشناسای بیرونی خیلی عمیق به مدل‌ها، کدها و سیستم‌های داخلی سرک بکشن و ببینن حفاظ‌های ایمنی واقعاً جواب می‌دن یا نه؛ کاری که در راستای تعهداتش ذیل توافق‌نامه کاخ سفید برای ابرهوش هم انجام می‌شه. 🔍\n\n• ارزیابی انحراف و رصد: Apollo Research بررسی می‌کنه مدل‌ها یواشکی علیه هدف سازنده‌ها عمل نکنن و سیستم‌های حفاظتی مچشون رو می‌گیرن یا نه؛ METR هم توی بزرگ‌ترین اجرای یادگیری تقویتی این شرکت دنبال رفتارهای ناهماهنگ می‌گرده و برای یه ارزیابی گسترده‌تر روی سیستم‌های ناظر هم توافق اولیه کردن که هنوز سر دامنه‌اش باید نهایی بشه.\n• عیب‌یابی درونی و تست‌های بعد از آموزش: Goodfire قراره پژوهشگرای خودش رو برای تحلیل داخل مدل‌ها، عیب‌یابی و رصد آموزش مستقر کنه و Transluce هم کیفیت و پوشش ارزیابی‌های بعد از آموزش رو می‌سنجه و قصد دارن اوایل ۲۰۲۷ یه دوره حدوداً هشت‌هفته‌ای و عمیق‌تر هم داشته باشن.\n• قوانین و نظارت: به گفته OpenAI، برای حفظ امنیت، کارهای حساس باید حضوری تو دفترها و با دستگاه‌های خود شرکت انجام بشه، گپ با کارمندها محرمانه می‌مونه و کمیته مستقل ایمنی و امنیت (SSC) هم روی کل روند و اختلافات احتمالی نظارت داره.\n\nالبته خود OpenAI هم اشاره کرده چون استانداردهای این مدل بازرسی‌ها هنوز جا نیفتاده، اوایل کار احتمالاً با چالش‌های فنی و دسترسی روبه‌رو می‌شن و قراره کم‌کم قلق کار رو پیدا کنن.",
@@ -51,5 +51,5 @@
    "اوپن‌ای‌آی"
   ]
  },
- "updated": "2026-11-17T08:10:57+00:00"
+ "updated": "2026-11-17T16:09:22+00:00"
 }

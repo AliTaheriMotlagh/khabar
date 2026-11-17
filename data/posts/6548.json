@@ -12,7 +12,7 @@
   "site": "FxTwitter · openai.com",
   "title": "OpenAI (@OpenAI)",
   "description": "Physicist Nathaniel Craig shares how he worked with GPT-6 Astra to develop a candidate lattice definition of the Standard Model.\nIt’s the first post on our new science blog:\nhttps://openai.com/index/step-toward-defining-the-standard-model",
-  "image": "https://cdn4.telesco.pe/file/hulRrb2ErGyBqkGZSlwaqyLw3cCoPbn3fViHdAOs4yBfKvz1jBwF3I5gnGT_VYnKZE80b9PtnAIwqKp4K-i26l7ZklvzvpNndYh4frQaCvCBMwR8FtEdCyJI6XaieoSQpqHrlGDJJ0VVkKCpCsUg5UZDmGp_iAaFgXv_CjKNZ9X1Qz5L3oQOYZMjPNbhjUD63ll8YPx_juWoQEDdYjYeXUYr4UggaBQ7d-FO2qz9OtmEjvUIeSZB67FdAqJp3cSbbt8Les06emuvd8ULX803IgArODUdJOSvtrbr3n5On7i-hHBpIIUkz5v2odf_rGmtLmkQUszVxIjUwfWgZAUA5w.jpg"
+  "image": "https://cdn4.telesco.pe/file/aZErebVkVivjDLzPQjTSJhPIvkVHZX2IiGEJl32SHevVKv6uBj6E1aoRGtINlUlOYDrbjRmkJ9qSRKMKwQB4TSMGiOkwZF3--J5Za6RTwvS-XMDirBEAdVNuJ7at1tf5RdiNtNQD9dmN4Gv4B3y9zWmQmqFOYBJIs74FNkI6Lx8vaeZpaUU1MiBswVO1x1RUGCG0mIzd-UxpBcpNRkBJVy9HkEDVHMNQyhCju2lJBaRlN5-OQNyHM2YWYwZLiwhWf9EBWgMikeQpuyXB_Hxsg8yD2CZJF7wBw07zUYvCO9y4N8oBhR9qNlDsTtDxi1awBJnXsalXgfj6wSFnPKhr_w.jpg"
  },
  "gholam": {
   "text": "رفقا، اوپن‌ای‌آی توی اولین پست وبلاگ علمی جدیدش از همکاری یه فیزیکدان به اسم ناتانیل کریگ با مدل GPT-6 Astra گفته. کریگ توضیح داده که با کمک این مدل، یه «تعریف پیشنهادی» روی شبکه فضازمان (لتیس) برای «مدل استاندارد» فیزیک ذرات تدوین کرده و حاصلش رو توی یه پیش‌چاپ در ماه اکتبر منتشر کرده.\n\n• به نوشته کریگ، مدل استاندارد با وجود بیش از پنجاه سال موفقیت، هنوز یه تعریف کاملِ غیراختلالی نداره؛ یعنی روشی که بتونه برهم‌کنش ذرات رو از همون اول و بدون تقریب‌های کوچیک محاسبه کنه.\n• گره اصلی سرِ «نیروی ضعیف» هست که مثل دستکش چپ و راست توی آینه تقارن نداره؛ به قول خودش وقتی می‌خوای ذرات چپ‌دستش رو با قاعده‌های عادی روی شبکه بذاری، انگار فقط یه دستکش چپ سفارش دادی ولی یه لنگه راستِ ناخواسته هم کنارش تحویلت می‌ده!\n• کریگ میگه خودش استراتژی حل این مشکل رو داشته اما نتونسته بوده برای همه‌ حالت‌های لازم اثباتش کنه، و اینجا مدل Astra کمک کرده ایده تبدیل به ساختار بشه و بخش اصلی اثبات دقیق رو جلو برده.\n\nالبته خودِ نویسنده هم این نتیجه رو فعلاً یه تعریفِ پیشنهادی توی یه پیش‌چاپ معرفی کرده و بخش پایانیِ متن مقاله هم کامل در دسترس نبود که جزئیات نهایی ساختارشون رو بشه دید. ⚛️",
@@ -51,5 +51,5 @@
    "اوپن‌ای‌آی"
   ]
  },
- "updated": "2026-11-17T08:10:57+00:00"
+ "updated": "2026-11-17T16:09:22+00:00"
 }
