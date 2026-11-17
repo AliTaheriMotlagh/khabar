@@ -1,0 +1,61 @@
+{
+ "id": 6596,
+ "url": "https://t.me/dlmehr/6596",
+ "date": "2026-11-17T19:50:31+00:00",
+ "text": "https://fxtwitter.com/kenziyuliu/status/2122755334305669625?a=jB3reCzR0mw0xUMKfhQ&s=52",
+ "forwarded_from": null,
+ "digest": false,
+ "hash": "7ecfbf0f00e6",
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/kenziyuliu/status/2122755334305669625?a=jB3reCzR0mw0xUMKfhQ&s=52",
+  "site": "🧵 Thread • FxTwitter",
+  "title": "Ken Liu (@kenziyuliu)",
+  "description": "Introducing Second, and a $10M seed led by @a16z.\nSecond builds a model of you that you own, and your agents can use as an API.\nTruly personal software needs a deep understanding of you: not just your emails and messages, but how you work, what motivates…",
+  "image": null
+ },
+ "gholam": {
+  "text": "رفقا، یه خبر تازه از دنیای هوش مصنوعی اومده: آزمایشگاه First Person Labs از پروژهٔ «سکند» (Second) رونمایی کرده و اعلام کرده ۱۰ میلیون دلار سرمایهٔ اولیه به رهبری a16z و با حضور چهره‌هایی مثل جف دین و پرسی لیانگ جذب کرده. ایدهٔ اصلی به گفتهٔ سازنده‌ها اینه که یه مدل شخصی و قابل‌حمل از اولویت‌ها، پیام‌ها، کارها و سبک شما ساخته بشه و از طریق API در اختیار دستیارهای هوشمند قرار بگیره؛ یه جورایی مثل یه حافظهٔ مشترک که از این هوش مصنوعی به اون یکی باهاتون میاد تا هر بار مجبور نشید خودتون رو از صفر معرفی کنید. 🤖\n\n• به گفتهٔ تیم سازنده، برنامه روی مک نصب می‌شه و اطلاعات رو بین سیستم شما و یه ابر خصوصی همگام می‌کنه تا ابزارهایی مثل کلود، Grok Bot، آی‌مسیج و چند سرویس دیگه تصویر یکدستی ازتون داشته باشن.\n• نویسندهٔ رشته‌توییت می‌گه کاربرای اولیه باهاش بین ابزارها جابه‌جا می‌شن، با دستورهای دوکلمه‌ای مثل خرید هدیه یا رزرو پرواز کار راه می‌ندازن یا آرشیو قدیمی‌شون رو مرور می‌کنن، و تاکید هم داره که مالکیت و امنیت این مدل حساس باید دست خود کاربر بمونه.\n• سکند الان تو مرحلهٔ دسترسی زودهنگامه و قراره با افزایش ظرفیت به‌زودی عمومی‌تر بشه؛ این تیم مستقر در پالو آلتو هم‌زمان لیست انتظار گذاشته و دنبال جذب نیرو هم هست.",
+  "date": "2026-11-17T19:51:01+00:00"
+ },
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/kenziyuliu/status/2122755334305669625",
+   "domain": "x.com",
+   "author": {
+    "name": "Ken Liu",
+    "handle": "kenziyuliu",
+    "avatar": "https://pbs.twimg.com/profile_images/1873465892044263424/5w8zM3eZ_200x200.jpg"
+   },
+   "text": "Introducing Second, and a $10M seed led by @a16z.\n\nSecond builds a model of you that you own, and your agents can use as an API.\n\nTruly personal software needs a deep understanding of you: not just your emails and messages, but how you work, what motivates you, your people, priorities, style, goals, and intent.\n\nThis requires a new kind of personal AI infrastructure. One that continuously aggregates your context, distills it into durable understanding with a ton of compute, and then serves it securely, ubiquitously, and up-to-the-minute. One that builds your *portable user model*.\n\nSecond is that infrastructure. It installs seamlessly on your Mac, and your context just comes out. Live APIs of your priorities, to-dos, wikis, writing samples, preferences. Or what you did minutes ago. Or context packs of anything, dynamically assembled in seconds.\n\nSecond is streaming-state from local to a private cloud, which means anything you connect to--whether Claude, Dot, Muse, Grok Bot, Instinct, or iMessage--shares the same, growing, continuous understanding of you.\n\nYour portable user model is as powerful as it is sensitive. We founded @FirstPersonLabs on the principle that it should belong to you. This commitment means taking on hard systems and security problems and making sovereignty an invariant of Second from the beginning.\n\nWe've barely scratched the surface of what portable user models can unlock. Deep understanding of us, served at machine speeds, could drive the next leap in personal software, human-computer interaction, large-scale coordination of humans and agents, and more!\n\nWe're tremendously grateful to be supported by @a16z (@martin_casado, @YODELAGARZA), Mozilla Ventures, @JeffDean, Ram Shriram, Jeetu Patel (@jpatel41), @percyliang, J. Alex Halderman (@jhalderm), @sanmikoyejo, and many others.\n\nOur vision is for a future where every person is more powerful, because they have the ultimate affordance: personal computers that fully understands them on their own terms.\n\nIf this excites you, we're hiring and come build with us!",
+   "date": 1794939285,
+   "media": [
+    {
+     "type": "video",
+     "src": "https://video.twimg.com/amplify_video/2122755233222955008/vid/avc1/1040x720/j0ybXnHoBkyhZn5r.mp4?tag=16",
+     "poster": "https://pbs.twimg.com/amplify_video_thumb/2122755233222955008/img/GMfyxhHNJXp5zjgV.jpg",
+     "ratio": 0.6912,
+     "duration": 82.916,
+     "gif": false
+    }
+   ],
+   "links": []
+  }
+ ],
+ "article": {
+  "title": "یه خبر تازه از دنیای هوش مصنوعی اومده: آزمایشگاه First Person Labs از پروژهٔ «سکند» (Second) رونمایی کرده و اعلام کرده ۱۰ میلیون دلار سرمایهٔ اولیه به رهبری a16z و با حضور چهره‌هایی مثل جف دین و پرسی لیانگ جذب کرده",
+  "source_title": "Introducing Second, and a $10M seed led by @a16z.",
+  "body": [
+   "یه خبر تازه از دنیای هوش مصنوعی اومده: آزمایشگاه First Person Labs از پروژهٔ «سکند» (Second) رونمایی کرده و اعلام کرده ۱۰ میلیون دلار سرمایهٔ اولیه به رهبری a16z و با حضور چهره‌هایی مثل جف دین و پرسی لیانگ جذب کرده. ایدهٔ اصلی به گفتهٔ سازنده‌ها اینه که یه مدل شخصی و قابل‌حمل از اولویت‌ها، پیام‌ها، کارها و سبک شما ساخته بشه و از طریق API در اختیار دستیارهای هوشمند قرار بگیره؛ یه جورایی مثل یه حافظهٔ مشترک که از این هوش مصنوعی به اون یکی باهاتون میاد تا هر بار مجبور نشید خودتون رو از صفر معرفی کنید. 🤖",
+   "• به گفتهٔ تیم سازنده، برنامه روی مک نصب می‌شه و اطلاعات رو بین سیستم شما و یه ابر خصوصی همگام می‌کنه تا ابزارهایی مثل کلود، Grok Bot، آی‌مسیج و چند سرویس دیگه تصویر یکدستی ازتون داشته باشن.",
+   "• نویسندهٔ رشته‌توییت می‌گه کاربرای اولیه باهاش بین ابزارها جابه‌جا می‌شن، با دستورهای دوکلمه‌ای مثل خرید هدیه یا رزرو پرواز کار راه می‌ندازن یا آرشیو قدیمی‌شون رو مرور می‌کنن، و تاکید هم داره که مالکیت و امنیت این مدل حساس باید دست خود کاربر بمونه.",
+   "• سکند الان تو مرحلهٔ دسترسی زودهنگامه و قراره با افزایش ظرفیت به‌زودی عمومی‌تر بشه؛ این تیم مستقر در پالو آلتو هم‌زمان لیست انتظار گذاشته و دنبال جذب نیرو هم هست."
+  ],
+  "why": null,
+  "tags": [
+   "استارتاپ"
+  ]
+ },
+ "updated": "2026-11-17T19:54:24+00:00"
+}
