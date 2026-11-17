@@ -1,0 +1,52 @@
+{
+ "id": 6578,
+ "url": "https://t.me/dlmehr/6578",
+ "date": "2026-11-17T04:41:54+00:00",
+ "text": "https://fxtwitter.com/disclosetv/status/2122516006203441301?a=P2mIBsiqcOYEdyHgIA4&s=52",
+ "forwarded_from": null,
+ "digest": false,
+ "hash": "32b6d2d860a1",
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/disclosetv/status/2122516006203441301?a=P2mIBsiqcOYEdyHgIA4&s=52",
+  "site": "🧵 Thread • FxTwitter",
+  "title": "Disclose.tv (@disclosetv)",
+  "description": "JUST IN - A suspected supply chain attack on Optimizely loaded malware on Zoom, CNN, Fox News, BBC, Salesforce, GitLab, KLM, Air France, Bitly, IG Group, American Eagle and others, exposing visitors to scripts built to steal payment data and exploit iOS devices.",
+  "image": "https://cdn4.telesco.pe/file/cTBM2tKLACAS-8At8EdhDCxKLrQU9TKrcwd0V_j3UpmsGkMkqNcp8S6xPivPqBjg2D-mdF9D_vP6M8BkASCFc_mHufSzLeAWMO7AwolTlzuTQfK638a5ha_wgCQbtskEgVBp7M3VS6TG3kgNPo_tY7HnCgtMNsRpzgAU7_K0ud689JqR3KhhYbvQzRQ8lM8ZTxmDzx-KgNAyNZov3Fd7T6zMS_I-RdalJE9svIpbh8MB67_gsu2qI1W2rGIZJw63Kw_SL-o_N_UA6Sl5QDhkBbJqVD-_GPjrrQEhqm6x81ODyw-eGh92sZ9Mw8a0j-LYB7XzARh8XVciZjM5vPNZ1A.jpg"
+ },
+ "gholam": {
+  "text": "رفقا یه خبر امنیتی مهم درومده؛ به گزارش Disclose.tv و سایت BleepingComputer، یه حمله مشکوک به زنجیره تأمینِ سرویس Optimizely باعث شده بازدیدکننده‌های کلی سایت معروف در معرض کدهای مخرب قرار بگیرن. قضیه یه جورایی شبیه اینه که از یه مسیر مشترک، کد آلوده سر از سایت برندهای بزرگی مثل Zoom، CNN، BBC، Fox News، Salesforce، GitLab، KLM، Air France و چند تا شرکت دیگه درآورده باشه.\n\n• پژوهشگر امنیتی اسکات هِلم گفته ۱۸۸ اسکریپت آلوده متعلق به ۱۷۸ سازمان پیدا شده که هدفشون سرقت اطلاعات پرداخت و رمزارز، سوءاستفاده از آسیب‌پذیری‌های iOS و همین‌طور جمع‌آوری کوکی‌ها، آدرس صفحات و اسکرین‌شات بوده.\n• طبق همین گزارش، کیف‌پول‌های رمزارزیِ داخل این کدها روز دوشنبه حدود ۷ هزار دلار دریافتی داشتن، اما تا آخر وقت همون روز فقط یکی از این ۱۸۸ اسکریپت هنوز کد مخرب رو نگه داشته بوده.\n• اینکه مهاجم‌ها دقیقاً چطور تونستن به سیستم دسترسی پیدا کنن هنوز معلوم نیست.",
+  "date": "2026-11-17T04:42:18+00:00"
+ },
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/disclosetv/status/2122516006203441301",
+   "domain": "x.com",
+   "author": {
+    "name": "Disclose.tv",
+    "handle": "disclosetv",
+    "avatar": "https://pbs.twimg.com/profile_images/898153945721339904/OFVCkPfR_200x200.jpg"
+   },
+   "text": "JUST IN - A suspected supply chain attack on Optimizely loaded malware on Zoom, CNN, Fox News, BBC, Salesforce, GitLab, KLM, Air France, Bitly, IG Group, American Eagle and others, exposing visitors to scripts built to steal payment data and exploit iOS devices.",
+   "date": 1794882224,
+   "media": [],
+   "links": []
+  }
+ ],
+ "article": {
+  "title": "یه خبر امنیتی مهم درومده؛ به گزارش Disclose.tv و سایت BleepingComputer، یه حمله مشکوک به زنجیره تأمینِ سرویس Optimizely باعث شده بازدیدکننده‌های کلی سایت معروف در معرض کدهای مخرب قرار بگیرن",
+  "source_title": "JUST IN - A suspected supply chain attack on Optimizely loaded malware on Zoom, CNN, Fox News, BBC, Salesforce, GitLab, KLM, Air France…",
+  "body": [
+   "یه خبر امنیتی مهم درومده؛ به گزارش Disclose.tv و سایت BleepingComputer، یه حمله مشکوک به زنجیره تأمینِ سرویس Optimizely باعث شده بازدیدکننده‌های کلی سایت معروف در معرض کدهای مخرب قرار بگیرن. قضیه یه جورایی شبیه اینه که از یه مسیر مشترک، کد آلوده سر از سایت برندهای بزرگی مثل Zoom، CNN، BBC، Fox News، Salesforce، GitLab، KLM، Air France و چند تا شرکت دیگه درآورده باشه.",
+   "• پژوهشگر امنیتی اسکات هِلم گفته ۱۸۸ اسکریپت آلوده متعلق به ۱۷۸ سازمان پیدا شده که هدفشون سرقت اطلاعات پرداخت و رمزارز، سوءاستفاده از آسیب‌پذیری‌های iOS و همین‌طور جمع‌آوری کوکی‌ها، آدرس صفحات و اسکرین‌شات بوده.",
+   "• طبق همین گزارش، کیف‌پول‌های رمزارزیِ داخل این کدها روز دوشنبه حدود ۷ هزار دلار دریافتی داشتن، اما تا آخر وقت همون روز فقط یکی از این ۱۸۸ اسکریپت هنوز کد مخرب رو نگه داشته بوده.",
+   "• اینکه مهاجم‌ها دقیقاً چطور تونستن به سیستم دسترسی پیدا کنن هنوز معلوم نیست."
+  ],
+  "why": null,
+  "tags": [
+   "امنیت"
+  ]
+ },
+ "updated": "2026-11-17T04:45:38+00:00"
+}
