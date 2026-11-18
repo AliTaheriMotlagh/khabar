@@ -12,11 +12,23 @@
   "site": "FxTwitter",
   "title": "Baseten (@baseten)",
   "description": "Introducing the Baseten Voice Agent Stack: optimized infrastructure to run and customize voice agents. Every model and the orchestrator are hosted for low end-to-end latency, each component scales on its own, and you can swap or post-train any model.\nWe…",
-  "image": "https://cdn4.telesco.pe/file/vBX0wFIpSoVu58OdUa8U5x9P2hwUmAf_REmNh2nVuvQZJAkV1wSNlBrz4u7FoyCsiq_TVXzKZXv8gB8IJxcS6rCXwEnGx-USltZe9QgSDVPFuC8z04_nxMeEY8qY_zXiJmSCZX4nJ9RwV-iDVU54GI5o2C4l5O_ff96cSiDoLFMsCu5M1kbRDu_R0V1n3EOEuR7qEYFEpqd84t4E9QqM-iNkdAOt6p3MKoPnqwcO8oDFwZxWgorIgvBhiyqyi0W5nJH7o--8s5dlMJ2nov6OWBcw4eqPqmen-VeKPsOnCE5QStaEqsoemVPEfxfLm_F7g74EmYzNoScyAs_9TB80dA.jpg"
+  "image": "https://cdn4.telesco.pe/file/DLXhFH1x9Tpu9Cj4ZbpUnLTk3ftDLgx7r21BfrztkM8SxVcVVIMGHo4-TOfsC_A6eHe1rSYc0JIi6dqQtlkJQBH5NVDchcoH53DXDT5ArlKHP_31hMhQ6I4RulckhYurqsfZz6e7cntN9Ipt125k6PZBKXwL2ePizJez90RDTJyqSd--qbbiIYIrPiMbbFX39SmtSSb2bcOWNfd2z92hg_fvxLHi3OHmjDi7hMbWSfgsvD9D2rsGLe5ZHgXjDliq95p24T5pFC3UpJrt94m3cgnseXCdDGmV1tRcS5mCYszLt4keIOue3Id9UwBitSCim8xCuxMzzQum8puyUXW7MA.jpg"
  },
  "gholam": {
   "text": "رفقا، شرکت بستن (Baseten) از یه زیرساخت جدید به اسم Baseten Voice Agent Stack و یه دستیار نمونه به نام Baseten Realtime Voice رونمایی کرده که هر دو فعلاً تو مرحله پیش‌نمایش خصوصی هستن. به گفته این شرکت، ایده اصلی اینه که مدل‌های صوتی و بخش هماهنگ‌کننده رو تو یه شبکه کنار هم بذارن تا دستیار صوتی مثل یه تیم هماهنگ تو یه مغازه کار کنه و وسط حرف زدن، جواب کاربر معطل رفت‌وآمدهای شبکه نمونه. 🎙️\n\n• تو این پلتفرم هر بخش جداگانه مقیاس‌پذیره و می‌تونید مدل‌های تبدیل گفتار به متن، مدل زبانی و تبدیل متن به صدا رو عوض کنید یا برای حوزه کاری خودتون دوباره آموزش بدید، و حتی کارهای پیچیده‌تر رو به یه مدل استدلال‌گر بسپارید.\n• به گفته بستن، دستیار Baseten Realtime Voice که با مدل‌های وزن‌باز ساخته شده با پروتکل OpenAI Realtime هم سازگاره تا جابه‌جایی پروژه‌های قبلی راحت‌تر بشه و تاخیر پاسخ‌هاش زیر یک ثانیه باشه.\n• طبق آمار اعلامی خود شرکت، این دستیار تو آزمون τ²-Bench Voice امتیاز ۷۳.۵ درصد گرفته و هزینه‌ش حدود ۰.۰۱۲ دلار در دقیقه (در ۳۲ مکالمه هم‌زمان) برآورد شده؛ البته تو توضیحات وبلاگشون اشاره کردن که این امتیاز خودگزارشیه و هزینه هم بدون در نظر گرفتن ارجاع به مدل استدلال‌گر حساب شده.",
   "date": "2026-11-16T20:17:29+00:00"
+ },
+ "ai": {
+  "title": "بستن زیرساخت Baseten Voice Agent Stack را آورد تا دستیارهای صوتی سریع‌تر و شخصی‌سازی‌شده کار کنند",
+  "short": "دستیار صوتی بستن",
+  "topics": [
+   "آنتروپیک",
+   "کدنویسی"
+  ],
+  "type": "ابزار و محصول",
+  "model": "qwen3.5-9b-q4_k_m",
+  "v": 1,
+  "src": "1e4a7a86d724"
  },
  "links": [
   {
@@ -66,17 +78,5 @@
    "ایجنت"
   ]
  },
- "updated": "2026-11-18T05:10:34+00:00",
- "ai": {
-  "title": "بستن زیرساخت Baseten Voice Agent Stack را آورد تا دستیارهای صوتی سریع‌تر و شخصی‌سازی‌شده کار کنند",
-  "short": "دستیار صوتی بستن",
-  "topics": [
-   "آنتروپیک",
-   "کدنویسی"
-  ],
-  "type": "ابزار و محصول",
-  "model": "qwen3.5-9b-q4_k_m",
-  "v": 1,
-  "src": "1e4a7a86d724"
- }
+ "updated": "2026-11-18T12:57:38+00:00"
 }

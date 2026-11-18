@@ -12,11 +12,24 @@
   "site": "FxTwitter · research.perplexity.ai",
   "title": "Andrew Gordon Wilson (@andrewgwils)",
   "description": "We’re excited to announce Perplexity Frontier Research!\nhttps://research.perplexity.ai\nWe will be openly advancing the frontier of models, data, and algorithms. Join us in re-imagining multi-agent collaboration, architecture design, continual learning, frontier…",
-  "image": "https://cdn4.telesco.pe/file/vymiBVz55SGHw7BwRJv0xsNG2XhYi95ciKHz_yyUEImIAQ_InJW0R-uScoQHPgYjFvEvzGtN0KSAP2ALqcax72YOGhXyh6fSjiq9-53H94q1iy6LUZE_Ntqd25n2VcBx9S8Zynt7le18G7kE0iL1amkgbOLTGOoCBn-p5H8sDqacxb39WgJesd7MbkQzqLCys8YgVbTre5rE_5x67FdSU3gT_MEUxomYU-TH2l76zmIAgMFSk1qDdp_Mqq5cC3pHsEAysWRy32dquUhGX7QSI7S8H8FkeO-3LpaQ_8m4fXdz-bds6ky5k5qqoaaT3N4Vu3xfK6-DCR5QvU3uGzpwQg.jpg"
+  "image": "https://cdn4.telesco.pe/file/Yszd4K0Zd2iHAnkOMyf9-yqdeLxqUemBxwlbbVug5Xkl3HOTQKa1u6ykL8aFG8Jf-0pb58gQn8IKDBl7tUnd5pXGuz0kID_LKqQnkTpz0d6EZ1AS-LZQ2OoFfevAZvNIJObHTxqLr_R4fstHUXktqRE0aKp_J2C_VGsfqIBvKGxr8FL1AfvaIcIUPQ9pGMlCd1jLk0lVthNoghQkOz4fYBtHAUa6Z96nnwub2VEy1bm-cLjSfCPoJnXdFalhq4i1vKxFYEXQiHpTsYlVXwIrfKvCeavlLIXn1LeDFpE57PFQFCDVWsQng-VJeY1Omngh0fsNGIZGxLF6QM6DXCJtRA.jpg"
  },
  "gholam": {
   "text": "رفقا، پرپلکسیتی از بخش جدیدش به اسم «Perplexity Frontier Research» رونمایی کرده که هدفش ساخت یه «محقق علمی خودکار»ه. به گفته خودشون، دیگه نمی‌خوان هوش مصنوعی فقط یه پیش‌بینی‌کننده جعبه‌سیاه باشه، بلکه دنبال سیستمی‌ان که خودش سوال درست بپرسه، دنبال شواهد بگرده، فرضیه بسازه، آزمایش کنه و مدام دیدگاهش رو آپدیت کنه 🔬\n\nتوی رشته‌توییت معرفی و وب‌سایت این پروژه چند نکته مهم هم گفتن:\n• این تلاش قراره با بیش از ۱۰ هزار پردازنده گرافیکی (GPU) پشتیبانی بشه و دستاوردهاش مستقیم توی محصول پرپلکسیتی زیر دست میلیون‌ها کاربر قرار بگیره.\n• تمرکزشون روی شش حوزه‌ست: هماهنگی چند ایجنت (برای بهترین کیفیت به نسبت هزینه)، پیش‌آموزش با وزن‌های باز، یادگیری مستمر، یادگیری تقویتی، زیرساخت و سیستم‌ها، و طراحی ارزیابی‌هایی که فرق بین استدلال واقعی و حفظ‌کردن رو مشخص کنه.\n• اعلام کردن به‌صورت باز کار می‌کنن و مقاله، کد، مدل، داده و بنچمارک منتشر می‌کنن؛ یه فراخوان جذب نیرو هم گذاشتن که مهلت اولویت‌دارش ۵ دسامبره.\n\nیه جورایی می‌خوان اون چرخه پژوهشی که تا الان توی چند تا مؤسسه و دست یه عده محدود بود رو بیارن توی نرم‌افزار تا همه بتونن ازش استفاده کنن؛ حالا باید دید در ادامه چه خروجی‌هایی رو می‌کنن.",
   "date": "2026-11-16T18:16:49+00:00"
+ },
+ "ai": {
+  "title": "پرپلکسیتی بخش Frontier Research را راه انداخت تا محقق علمی خودکار بسازد",
+  "short": "پرپلکسیتی: محقق خودکار",
+  "topics": [
+   "آنتروپیک",
+   "کسب‌وکار",
+   "علم"
+  ],
+  "type": "ابزار و محصول",
+  "model": "qwen3.5-9b-q4_k_m",
+  "v": 1,
+  "src": "1f3d3a98cb27"
  },
  "links": [
   {
@@ -53,18 +66,5 @@
    "ایجنت"
   ]
  },
- "updated": "2026-11-18T05:10:34+00:00",
- "ai": {
-  "title": "پرپلکسیتی بخش Frontier Research را راه انداخت تا محقق علمی خودکار بسازد",
-  "short": "پرپلکسیتی: محقق خودکار",
-  "topics": [
-   "آنتروپیک",
-   "کسب‌وکار",
-   "علم"
-  ],
-  "type": "ابزار و محصول",
-  "model": "qwen3.5-9b-q4_k_m",
-  "v": 1,
-  "src": "1f3d3a98cb27"
- }
+ "updated": "2026-11-18T12:57:38+00:00"
 }

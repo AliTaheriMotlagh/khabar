@@ -12,11 +12,23 @@
   "site": "FxTwitter · techcrunch.com",
   "title": "TechCrunch (@TechCrunch)",
   "description": "While creators have long shared Amazon affiliate links through stories, DMs, and their bios, the new integration brings them to new parts of the app.\nhttps://spr.ly/6014ByRmBs",
-  "image": "https://cdn4.telesco.pe/file/pTfYrzdSF5JOoF7I86EhO41o7pzBr3uDiRInozvkauTt0hd0nPimth-o3826mp_OFDGSeqXvpm_MP1mpjXONcLockxmCfvsBsyCb3X77-K264NSoAGy19Crz7MYG6hl6tmXevQdi3yVxl6EkMVwKrk4flf58Qqkj5p5xlErf7srTxErTHYOC3QoFCFOX2nccc4-rfOe1tHfYFMyNbS-zeohUCv3OkYT9gSZ2GIfJ8Ru-3pfA55bvKvhIzy53sj-3thNhTYPpXMOLzAKhjrcOSQ-14Bua7BMHHbBcdqQkvGcfsXD_FMl0iMdZBizpLxIN1HapYYRwDJK6ZvEY5Ovikg.jpg"
+  "image": "https://cdn4.telesco.pe/file/JxPSYwSrX89Ha_Ktfon2f67up1C-01oCTXb3Nb2i6_ar5Nnv2emLui5KNeifnVa6_TlzupveEUhTCnKOBrRzqJCvglV0wCoRs_PrwhQfXoZh7qtdzbT3kHVH37jrHrEV68afw65dP6hFJbSekoRlFjxMTqsh3ZgOhDG_M2JtLHAGMw8YwI8wJX_QVSOf829p5fPWkFKenOm852CPvxdQqQKCW31AqRZ_13Ob24BubVBAkq-dTUYfzGzA6_SCiHSzkCNN94GIsPrM_EpM82pSa6ZNLp4w1stwGRhvQ_-mzSm3JUpysphW1MKxGiL_OxNSE9H6p8w015EpI9GnFfWYxg.jpg"
  },
  "gholam": {
   "text": "رفقا، تک‌کرانچ خبر داده که اینستاگرام امروز دوشنبه یه امکان تازه راه انداخته تا تولیدکننده‌های محتوا بتونن لینک‌های همکاری در فروش آمازون رو مستقیم توی ریلز و پست‌های فیدشون بذارن 🛍️. تا قبل از این باید لینک‌ها رو توی بیو، استوری یا دایرکت رد و بدل می‌کردن، ولی خب ویترین دمِ در همیشه بیشتر تو چشمه؛ متا هم به تک‌کرانچ گفته لینک محصول روی خود ریلز و پست حدود دو برابرِ لینک بیو کلیک می‌خوره.\n\n• به گفته اینستاگرام، میشه توی هر ریلز تا ۳۰ تا محصول و توی هر پست فید تا ۲۰ تا محصول گذاشت و خود پلتفرم هم بابتش هزینه‌ای نمی‌گیره و کارمزد یا درصدی از فروش برنمی‌داره.\n• تولیدکننده‌های واجد شرایط می‌تونن از بخش Monetization داشبورد حرفه‌ای‌شون حساب Amazon Influencer رو وصل کنن تا هم لینک‌ها پیش‌نمایش عکس بگیرن و هم با اتصال اکانت Amazon Associates، حتی با چسبوندن لینک معمولی محصول هم پورسانت براشون ثبت بشه.\n• اینستاگرام گفته نرخ تخمینی پورسانت هر کالا قبل از گذاشتن توی پست یا ریلز نشون داده میشه و پرداختش هم مثل قبل از طرف خود آمازون انجام میشه.",
   "date": "2026-11-16T20:03:45+00:00"
+ },
+ "ai": {
+  "title": "اینستاگرام لینک‌های همکاری در فروش آمازون را مستقیم در پست‌ها و ریلزها آورد",
+  "short": "لینک آمازون در اینستاگرام",
+  "topics": [
+   "متا",
+   "کسب‌وکار"
+  ],
+  "type": "خبر",
+  "model": "qwen3.5-9b-q4_k_m",
+  "v": 1,
+  "src": "5cd4cdbce7d8"
  },
  "links": [
   {
@@ -60,17 +72,5 @@
    "متا"
   ]
  },
- "updated": "2026-11-18T05:10:34+00:00",
- "ai": {
-  "title": "اینستاگرام لینک‌های همکاری در فروش آمازون را مستقیم در پست‌ها و ریلزها آورد",
-  "short": "لینک آمازون در اینستاگرام",
-  "topics": [
-   "متا",
-   "کسب‌وکار"
-  ],
-  "type": "خبر",
-  "model": "qwen3.5-9b-q4_k_m",
-  "v": 1,
-  "src": "5cd4cdbce7d8"
- }
+ "updated": "2026-11-18T12:57:38+00:00"
 }

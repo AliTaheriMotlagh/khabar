@@ -12,11 +12,23 @@
   "site": "FxTwitter · cnn.com",
   "title": "Natasha Bertrand (@NatashaBertrand)",
   "description": "We break: The highly classified network that the National Security Agency uses for its internal communications is down, according to five people familiar with the matter.\nThe network, called NSA Net, allows employees to communicate classified information…",
-  "image": "https://cdn4.telesco.pe/file/kw9d75cmSFUlyt2U_Xf0WdoF_EhjGash6s0Jq6TBCJYVQnVkBut8F21C_0RCn5cQPQUgEIGHux_8bMsoLvTi505fUbF27br6bI_waf2dBEYQly7jpROvB8Q3-bNcQ3reNteg77LVOnm4QFWUeiXiHgJkXkGXiezghTSGOOsNLkwBq_3CFwGvTXvrFUfsb5unFUJGcbyVxeBZgEU5P5ZGyV9Tx4nOorbVvqM2cXNSPB6sb3-VjUe_9k-UURiy3Z_4T-v8wad-noq5VZg9KKANOsErqxmuJy7sdijqwVXIzmYl4vlFrJiYEVhY-IZNUaI6Fo4psooV5EKFAsvZCfx4jg.jpg"
+  "image": "https://cdn4.telesco.pe/file/a-25udu_gYVloazkaAbNSh_pS7dADphzgcxxTa9_LoQPd4mgg48OxWJl8EK1V25eIaISJfVnfPrwgJgNK-5XzKU8CKtWreRnKwpBdGMeSz9981VxBmM_I8bs6qhyAQcSiN8AWpRY3d9U1cHExZpoE9n3PVNy4NS4lBV2ecfUvM9dQmJVTTDxLjQe1u8XuQ7A7RBKETpO1SqA0HolCrvidZRFLRcFA6q87ghnRWv9dcFVHUAs-fDKM2FFgbK-HicO2tUHqzoj6ikLdTyxlG8frpbkjE-qZkMqib0eT1JbJBqOdYnjIGTUWLMSzcexMNeJAoJYOrrNUlKY1ZgEZxmedQ.jpg"
  },
  "gholam": {
   "text": "رفیق، ناتاشا برتراند، خبرنگار سی‌ان‌ان، امروز به نقل از پنج منبع آگاه خبر داده که شبکه داخلی و فوق‌سری آژانس امنیت ملی آمریکا (NSA) به اسم «NSA Net» از کار افتاده. این شبکه جاییه که کارمندای این سازمان اطلاعات طبقه‌بندی‌شده رو داخلش ردوبدل می‌کنن، پس انگار فعلاً خط درِگوشیِ خودی‌هاشون قطع شده! 🔌\n• به گفته این منابع، تا این لحظه هیچ مدرکی پیدا نشده که نشون بده کار یه حمله سایبری بوده و آژانس داره ابعاد مشکل رو بررسی می‌کنه.\n• هم‌زمان هم برای ورود پرسنل ساعت‌های پراکنده و نوبتی گذاشتن.\nسی‌ان‌ان هم از آژانس امنیت ملی توضیح خواسته؛ البته متن کامل گزارش وب‌سایت سی‌ان‌ان اینجا در دسترس نبود تا ببینیم جزئیات بیشتری هم داره یا نه.",
   "date": "2026-11-17T16:05:49+00:00"
+ },
+ "ai": {
+  "title": "شبکه داخلی فوق‌سری آژانس امنیت ملی آمریکا از کار افتاد",
+  "short": "شبکه NSA Net قطع شد",
+  "topics": [
+   "امنیت",
+   "آمازون"
+  ],
+  "type": "خبر",
+  "model": "qwen3.5-9b-q4_k_m",
+  "v": 1,
+  "src": "a3700b5ccc71"
  },
  "links": [
   {
@@ -59,17 +71,5 @@
    "امنیت"
   ]
  },
- "updated": "2026-11-18T05:10:34+00:00",
- "ai": {
-  "title": "شبکه داخلی فوق‌سری آژانس امنیت ملی آمریکا از کار افتاد",
-  "short": "شبکه NSA Net قطع شد",
-  "topics": [
-   "امنیت",
-   "آمازون"
-  ],
-  "type": "خبر",
-  "model": "qwen3.5-9b-q4_k_m",
-  "v": 1,
-  "src": "a3700b5ccc71"
- }
+ "updated": "2026-11-18T12:57:38+00:00"
 }

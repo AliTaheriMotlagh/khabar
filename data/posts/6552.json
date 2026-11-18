@@ -12,11 +12,23 @@
   "site": "FxTwitter",
   "title": "Qwen (@Alibaba_Qwen)",
   "description": "Qwen4-Max lands at #6 in the Code Arena: WebDev — up 74 pts over Qwen3.8-Max. Give it a try!\n🙌\n@arena\nQuoting Arena.ai (@arena)\nQwen4-Max by @Alibaba_Qwen has landed as #6 in the Code Arena: WebDev!\nWith 1750 pts (preliminary), it's +74 pts over its predecessor…",
-  "image": "https://cdn4.telesco.pe/file/YuxkXs_wGueXds9cSpYUSyEJVmBXSZZOJkSbWNJ7vrW5C9SY_-mONYp5PhdbYEYmXOSjWHZmqgVdNGDhqWWR4Kx2La-UiS_UEPj0uXUUPCpGjfgQb0mAUgxOn0nnE7oJxnfMLb0B3nHZDFp2SerQvjf9wSIi0ZG4sB6pXUnw9Edg0ALHzJ4IYYfXHCvfi89_WiSKeXIswnOu6R7Ol9-vVnWF6cq6JZUc9GJ2UnRLQcKVb4_cdG8ux0TerjPw-wzAEptcGx8L5ptBMQWnezpDQV-ARD31zyDruZ2qLZAgino3QMwVS3rwc0sXxjbj-KdBw2OYNsHWq1PrN_J8ZEGfBA.jpg"
+  "image": "https://cdn4.telesco.pe/file/hChuoBPVatCfo_09SAVGM-tBaqSNzvJ_E-LTRxoHLWlcFzTGRFbCsd3a1cZgfEApEZcaBp63kWr_-dxBPrFLREAEMrfPL6raL09BfJOFnv3vAaOmZQp4JG4QliKXNhJHKw3Tmex6vbZoaKW5sV9z6xX6NvU1lH-A3_g6w7Tn6fDLzBpvf62rWwVa1Ivuz5syIVgzKQ2Lw72Az6dQGzGmrWXTE9AEPvxus5o35unNBqWc5chHVw76XoZ5x0WGLcw-EOON6Rm0HkTeXxWSIJAYq2EnHhzjpzjTD2dMlUgLzAgV5PWRnJmJspQ4GVBtrqMWGy17Ar1R65tLDnC4jY2hJw.jpg"
  },
  "gholam": {
   "text": "رفیق، تیم Qwen خبر داده که مدل جدیدشون یعنی Qwen4-Max تو جدول رده‌بندی طراحی وب Code Arena نشسته رو رتبه ششم. پلتفرم Arena هم با انتشار آمار مقدماتی اعلام کرده نسخه xHigh این مدل با ۱۷۵۰ امتیاز، نسبت به مدل قبلی خودش (Qwen3.8-Max با ۱۶۷۶ امتیاز) یه پرش ۷۴ امتیازی داشته و تو زمین طراحی وب حسابی دست‌به‌فرمونش رو رو کرده. 💻\n\n• طبق نمودار Arena، فعلاً پنج مدل Claude Fable 5.2، Claude Opus 5.5، Claude Sonnet 5.5، Gemini 4 Carbon و GPT-6 Astra بالاتر از Qwen4-Max ایستادن.\n• به گفته Arena، این مدل بین مدل‌های چینی صدرنشینه و تو بخش HTML رتبه ۶ (۱۷۴۸ امتیاز) و تو بخش‌های Brand & Marketing و Reference-Based Design رتبه ۸ (به ترتیب ۱۷۰۵ و ۱۷۷۰ امتیاز) رو گرفته.\n\nالبته یادت باشه این رتبه‌بندی فعلاً مقدماتیه و فاصله امتیازی چند مدل اطرافش هم رو نمودار خیلی به هم نزدیکه.",
   "date": "2026-11-16T02:51:58+00:00"
+ },
+ "ai": {
+  "title": "مدل Qwen4-Max با ۱۷۵۰ امتیاز به رتبه ششم در طراحی وب رسید",
+  "short": "رتبه ۶ Qwen4-Max",
+  "topics": [
+   "آنتروپیک",
+   "کدنویسی"
+  ],
+  "type": "پژوهش و مقاله",
+  "model": "qwen3.5-9b-q4_k_m",
+  "v": 1,
+  "src": "5f8ad608afe1"
  },
  "links": [
   {
@@ -66,17 +78,5 @@
    "آنتروپیک"
   ]
  },
- "updated": "2026-11-18T05:10:34+00:00",
- "ai": {
-  "title": "مدل Qwen4-Max با ۱۷۵۰ امتیاز به رتبه ششم در طراحی وب رسید",
-  "short": "رتبه ۶ Qwen4-Max",
-  "topics": [
-   "آنتروپیک",
-   "کدنویسی"
-  ],
-  "type": "پژوهش و مقاله",
-  "model": "qwen3.5-9b-q4_k_m",
-  "v": 1,
-  "src": "5f8ad608afe1"
- }
+ "updated": "2026-11-18T12:57:38+00:00"
 }

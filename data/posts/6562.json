@@ -12,11 +12,23 @@
   "site": "FxTwitter · techcrunch.com",
   "title": "TechCrunch (@TechCrunch)",
   "description": "Audible's new AI-generated audio previews summarize a book's themes and what readers liked about it, in addition to playing the narrated sample.\nhttps://spr.ly/6019ByRZkc",
-  "image": "https://cdn4.telesco.pe/file/vf_WuzzYtk3TnW99L91e9GD0D9x3Ph9qooMZVPqHHneXnwKwYcWioC-2mCXuYRv0B0oq-Lx87OhlLs0sH1-Sw8PJIljEvPF2qc5_kBS-3ccIbU_xtIb8BDZ39GazIL5h5XOr4M7OJglk4TX3XqQDvn2i4WJAdzrvqPuyt51h-Bz73686alfpvsztWsPWrnkuuj8XEHTEf2BvGw15ApgkL7hozkJt9Cp8bkK2Jc2LBo-DBTqrVWkKjF5fdZy-60uLV0Pe56NnyQvqxKntWeQbQ7V-lZlKsjRf_4MDNDxm-uWkL-xqQoT0MpCvFXJKAxNe4ixzZy1iU0dZPYtseik7AA.jpg"
+  "image": "https://cdn4.telesco.pe/file/C-MvR3VJA0PYyAy_4COAh1hR8pQ2XH1Mbt7DG3Qly6yfHev7bW_NzxnS8cU_Tlznd4JMGXW9Nsxo4j9Ha8lxRr-GTbPhDswkKgE6iLDJVGSC__psmY1uRTaMoZJFex6_5znbbasEho2tFdiCazNCxiMFODKh5YwcNiL4f7I65lq8y9KAxbpuJAO21gXV5e7QmITRUstCc2dqb0nGw1hXkV2VM6a87F04Yvh6lp54KsBToMkjHS5l1DziUryAcYa95fu4GvwLOpDSEOUwqM4LCwrI6z5_x7NSVawpHZt3tCGjo9PV_HshSpT3slVxAKM4DUb1XwUC1C9TFrOMGRACrg.jpg"
  },
  "gholam": {
   "text": "سلام رفقا! به گزارش تک‌کرانچ، سرویس کتاب صوتی آدیبل (زیرمجموعه آمازون) دوشنبه قابلیت جدیدی به اسم «کشف صوتی» (Audio Discovery) رو راه‌اندازی کرده تا وقتی وسط روز وقت اسکرول کردن نظرات رو ندارید، راحت‌تر کتاب بعدی‌تون رو انتخاب کنید. 🎧\n\nآدیبل می‌گه این قابلیت علاوه‌بر پخش نمونه صدای خود کتاب، یه پیش‌نمایش صوتی با هوش مصنوعی هم می‌سازه که خلاصه‌ای از حال‌وهوای کتاب، چیزهایی که خواننده‌ها ازش خوششون اومده و بخش‌هایی از مصاحبه‌های قبلی نویسنده یا ویراستار آدیبل رو براتون می‌گه؛ یه جورایی مثل این می‌مونه که یه رفیق کتاب‌خون توی دو دقیقه برات تعریف کنه داستان چی تو چنته داره.\n\n• این ویژگی فعلاً برای بعضی کتاب‌های انگلیسی‌زبان در آمریکا همراه با کلکسیون‌های پیشنهادی شخصی‌سازی‌شده ارائه می‌شه، اما تک‌کرانچ یادآوری کرده که چون هوش مصنوعی سراغ بخش‌های مثبتِ نظرهای عمومی می‌ره، ممکنه دیدگاه‌های منفی کمتر به گوش کاربر برسه و هنوز برای اطمینان از این موضوع به تست بیشتری نیاز هست.\n• آدیبل که با رقابت تازه‌ای از طرف اسپاتیفای توی بازار کتاب صوتی روبه‌رو شده، همچنین اعلام کرده قابلیت‌های هوش مصنوعی ماه قبلش یعنی «مرور داستان» (Recaps) و ابزار تعاملی «پرسش‌وپاسخ» هم برای کتاب‌های بیشتری در آمریکا فعال می‌شن و در ماه دسامبر به‌طور گسترده‌تر در دسترس خریداران یا اعضای دارای اشتراک قرار می‌گیرن.",
   "date": "2026-11-16T17:51:12+00:00"
+ },
+ "ai": {
+  "title": "آدیبل قابلیت Audio Discovery را آورد: پیش‌نمایش صوتی هوش مصنوعی برای کتاب‌ها",
+  "short": "Audio Discovery در آدیبل",
+  "topics": [
+   "آمازون",
+   "صدا و موسیقی"
+  ],
+  "type": "ابزار و محصول",
+  "model": "qwen3.5-9b-q4_k_m",
+  "v": 1,
+  "src": "85ae7e8d1e0d"
  },
  "links": [
   {
@@ -60,17 +72,5 @@
    "آمازون"
   ]
  },
- "updated": "2026-11-18T05:10:34+00:00",
- "ai": {
-  "title": "آدیبل قابلیت Audio Discovery را آورد: پیش‌نمایش صوتی هوش مصنوعی برای کتاب‌ها",
-  "short": "Audio Discovery در آدیبل",
-  "topics": [
-   "آمازون",
-   "صدا و موسیقی"
-  ],
-  "type": "ابزار و محصول",
-  "model": "qwen3.5-9b-q4_k_m",
-  "v": 1,
-  "src": "85ae7e8d1e0d"
- }
+ "updated": "2026-11-18T12:57:38+00:00"
 }

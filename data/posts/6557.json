@@ -12,11 +12,23 @@
   "site": "🧵 Thread • FxTwitter",
   "title": "Chubby ♨️ (@kimmonismus)",
   "description": "6 months ago, this would have been big news. Now we're almost used to it: Claude helped uncover hundreds of theorems nobody knew Kurt Gödel had proved, The Guardian reports.\nGödel left 1,009 pages of notes from the 1940s in an old German shorthand. Logician…",
-  "image": "https://cdn4.telesco.pe/file/K-Ip9ygmMYJodWdC_utx_KWK2AUFY-mSZ7j4QF5gugp0wbDAx0juccrq-wt6X2anUBaflOWC2GIH-NJG62E8rR0xp8xan5CjXdyxSHgErOPy78-phNIDVeOQer2Xl03Hh3v_sltFfYOwDtKfRc07vb_Fp1HpRt4wFsGqh9hG27YDa1lmzPbKpiGW3hOQ3GLbMxOOz_l2T6AatA8Wmb3kCxxtfTU7JyHc3C6DItffvor4xknNvSkQ2VnvqFrpyeiwXRnuEsnj2dfXy7q4dhIHU0KQ1ASGc40-bw7j6p1SVt0hsQtDgS2oSN7vm3qsJ8UhQTzblow5MkuN7HMycxv0ig.jpg"
+  "image": "https://cdn4.telesco.pe/file/mImvlVZAg7XWyIYyN8W2ibhwMgbrBVUZYm3KnpRiYQAlYoFZOhvLoV2tcq7QiTOMrT4frH4eikPxzuRmla-j-lwjvM5I8i-rL48USWsSF6DANrv7L0NQjfMYiDzWSuh4rGeUZRhga7GwRqlSJynEYim3b-nWIVpqb0gY5o7kw_vzWwlWdL2pwwilSBDY_LMyGV3DLNbPNCVBMXEAg3u_0GGiss_rGzTPn-c4Ive2KbcBADMMPEiej27Sg9EclB3GRSIjW-Xc_Ax9RtHZDhAfMqQL8zPwCXM785m3EWyLPZnbnJ7YWYzV3DOrBRT4L_49WOrI5wbKuy6LOYkQTZJeAA.jpg"
  },
  "gholam": {
   "text": "رفقا، هوش مصنوعی کلود رفته سراغ ۱۰۰۹ صفحه یادداشتِ خاک‌خورده از کورت گودل، منطق‌دان معروف، و کلی کشفیات تازه از دلش درآورده! به گزارش گاردین، گودل این یادداشت‌ها رو اوایل دههٔ ۱۹۴۰ با یه خط تندنویسی قدیمی آلمانی نوشته بوده و یان فون پلاتو، منطق‌دان دانشگاه هلسینکی، از سال ۲۰۱۷ روی درک ریاضیشون کار می‌کرده و سرعتش هفته‌ای حدود یه صفحه بوده؛ اما وقتی نسخهٔ رونوشت‌شده رو داده به کلود، هوش مصنوعی توی چند روز کلش رو شخم زده و نشون داده گودل صدها قضیه رو جلوتر از زمان خودش طرح یا اثبات کرده بوده. 🧠\n\n• کلود توی این دفترچه‌ها ۶۶۳ قضیه (از اثبات کامل تا طرح و ایده) پیدا کرده که وقتی با نرم‌افزار درستی‌سنجی Coq چکشون کردن، حدود ۴۰۰ تاش همون‌جوری درست بوده، حدود ۲۰۰ تاش با یه کم دقت و اصلاح درست درمی‌اومده و حدود ۵۰ تاش هم غلط بوده.\n• گودل سال ۱۹۶۶ بعد از مدال فیلدزِ پل کوهن ادعا کرده بوده استقلال «اصل انتخاب» رو همون دههٔ ۴۰ ثابت کرده؛ فون پلاتو می‌گه کلود نشون داده گودل فقط یه قدم تاش فاصله داشته و بازسازیِ کلود از این اثبات هم از تست Coq سربلند بیرون اومده.\n\nالبته فون پلاتو می‌گه خروجی هوش مصنوعی رو باید صفحه به صفحه چک کرد و جوئل دیوید همکینز، استاد منطق، هم گفته این بازسازی اگه محکم باشه خیلی جالبه، ولی تشخیص اینکه چقدرش کار گودل بوده و چقدرش کار کلود، دیگه پای مورخ‌هاست. خلاصه گودل انگار نصف کشفیات دهه‌های بعدی رو همون موقع زیر بالشش قایم کرده بوده!",
   "date": "2026-11-16T17:05:53+00:00"
+ },
+ "ai": {
+  "title": "کلود صدها قضیه جدید از یادداشت‌های گودل کشف کرد",
+  "short": "کلود: کشفیات گودل",
+  "topics": [
+   "آنتروپیک",
+   "علم"
+  ],
+  "type": "پژوهش و مقاله",
+  "model": "qwen3.5-9b-q4_k_m",
+  "v": 1,
+  "src": "b54edd1cb384"
  },
  "links": [
   {
@@ -60,17 +72,5 @@
    "علم"
   ]
  },
- "updated": "2026-11-18T05:10:34+00:00",
- "ai": {
-  "title": "کلود صدها قضیه جدید از یادداشت‌های گودل کشف کرد",
-  "short": "کلود: کشفیات گودل",
-  "topics": [
-   "آنتروپیک",
-   "علم"
-  ],
-  "type": "پژوهش و مقاله",
-  "model": "qwen3.5-9b-q4_k_m",
-  "v": 1,
-  "src": "b54edd1cb384"
- }
+ "updated": "2026-11-18T12:57:38+00:00"
 }

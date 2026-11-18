@@ -12,11 +12,24 @@
   "site": "🧵 Thread • FxTwitter",
   "title": "Patrick Wendell (@pwendell)",
   "description": "1/ Today we’re publishing the Databricks AI Index, showing trends from enterprises who manage AI with our Unity Gateway. Data covers >10,000 companies with broad representation (Digital Natives, Fortune 500, Global 2000, etc...). Enterprise AI consumption…",
-  "image": "https://cdn4.telesco.pe/file/hxsMXsNIp1R5vyCakRwLlfyOgdlHfqIlm62qkdPRotiMxmJrEziaJn-Y2F9KXhnQfhKYbPPmV8bnrrydyCAExdYX6rj4jLu2PJa94_2vG8u1ZMRrWVrRR5M7QdPEwL_pC_enQVwjkbHxdiv6HwdcLlcrqsEuuRwckjOZ9fMKD_z-m9FWoJfoEK-7vwrt9Vx64iZ4s33KC25eLanenSNJNQccvcn1CQ9S-Vymr3ddtIRJlemWzhwFUN46kBYC8Hf1TrScHmToAVU3ih24FAyPXrjb22KbL2e7O8WDJVtxpvL5KO-fjvPW3KMQeuhXrm486Or1N7wHn-pwD04Pmp-Hhw.jpg"
+  "image": "https://cdn4.telesco.pe/file/CbC4ldjUW54gBefIBvv0wHkPv-42KCBonje_c7_zu1-nU_gpj0xq4HTsm2PNy8KCnMjleVqKoSD2rcEhciD1izw330RLiGnnke2OS0Pq_uq3_6CWkC6-ic9XkXuAmF2FvJwujLyNfieivm9OHr2YqSJjyMsgWWBrHXlKnACoYMsZHKH-6VxJBBh0mtzCwskaosnIeqX9p0fXLGJEL5O3cr9wzcMlkCjpz2To8o5Vxm7C1vNSHRHG7b0xwydCJmsp18KHY1JLjAFoD50JLSIWMeE1S9l-V92Ncw6VjkVyULH2tTnyyJ2eSSUfxEtNVF7yaPdVIqD5tVPdeM8om8z0Cw.jpg"
  },
  "gholam": {
   "text": "رفیق، دیتابریکس تازگی «شاخص هوش مصنوعی» رو بر اساس داده‌های بیشتر از ۱۰ هزار شرکت توی سرویس Unity Gateway منتشر کرده و رشته‌توییت پاتریک وندل هم نشون می‌ده شرکت‌ها دیگه همه تخم‌مرغ‌هاشون رو تو یه سبد نمی‌ذارن. 📊\n\n• تنوع ارائه‌دهنده‌ها: به گفته وندل، وسطای سال بیشتر شرکت‌ها فقط با یه ارائه‌دهنده مدل کار می‌کردن، اما حالا ۷۵ درصدشون سراغ دو یا چند ارائه‌دهنده و تقریباً نصفشون سراغ سه تا به بالا رفتن که مدل‌های OpenAI و متن‌بازها رایج‌ترین انتخاب‌های جدیدشون بوده.\n• اوج گرفتن متن‌بازها: سهم توکن مدل‌های متن‌باز (که توی گزارش به وزن‌بازهایی مثل DeepSeek، GLM و Kimi اشاره شده) توی یه بازه پنج‌ماهه از نزدیک صفر به حدود ۳۰ درصد رسیده و شرکت‌ها بیشتر برای کم کردن هزینه کارهای حجیم و کدنویسی ازشون استفاده می‌کنن.\n• کنترل خرج‌ومخارج: خرج هفتگی کاربر میانه از اعداد خیلی کم به ۲.۵ دلار اوج گرفته، ولی هزینه کاربرهای خیلی پرمصرف (حدود ۷۰۰ دلار در هفته) تقریباً ثابت مونده که وندل می‌گه احتمالاً نتیجه بودجه‌بندی شرکت‌هاست.\n\nتوی صفحه این گزارش هم بنچمارک داخلی دیتابریکس برای سنجش تعادل کیفیت و هزینه توی کدنویسی منتشر شده تا ابزار Smart Router برای هر کاری مدل به‌صرفه‌تر رو انتخاب کنه؛ خلاصه حساب‌وکتاب هوش مصنوعی هم کم‌کم شبیه مدیریت دخل‌وخرج خونه شده!",
   "date": "2026-11-16T18:26:19+00:00"
+ },
+ "ai": {
+  "title": "دیتابریکس: ۷۵ درصد شرکت‌ها حالا از چند ارائه‌دهنده هوش مصنوعی استفاده می‌کنند",
+  "short": "گزارش دیتابریکس",
+  "topics": [
+   "کسب‌وکار",
+   "آنتروپیک",
+   "گوگل"
+  ],
+  "type": "خبر",
+  "model": "qwen3.5-9b-q4_k_m",
+  "v": 1,
+  "src": "0d9821e5acbb"
  },
  "links": [
   {
@@ -57,18 +70,5 @@
    "کدنویسی"
   ]
  },
- "updated": "2026-11-18T05:10:34+00:00",
- "ai": {
-  "title": "دیتابریکس: ۷۵ درصد شرکت‌ها حالا از چند ارائه‌دهنده هوش مصنوعی استفاده می‌کنند",
-  "short": "گزارش دیتابریکس",
-  "topics": [
-   "کسب‌وکار",
-   "آنتروپیک",
-   "گوگل"
-  ],
-  "type": "خبر",
-  "model": "qwen3.5-9b-q4_k_m",
-  "v": 1,
-  "src": "0d9821e5acbb"
- }
+ "updated": "2026-11-18T12:57:38+00:00"
 }

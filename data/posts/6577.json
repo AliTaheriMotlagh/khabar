@@ -12,11 +12,23 @@
   "site": "FxTwitter",
   "title": "U.S. Department of Commerce (@CommerceGov)",
   "description": "Joint Statement from Department of Commerce and Department of Justice on Megaspeed Investigation.",
-  "image": "https://cdn4.telesco.pe/file/orXvRdBe1IfSVcuxBNKvg8SoC0q4Ua-5ShjO2EtFvBXfsf3qzU3ZZYQTrtPSkuK63RHIWCluqTKO-2yQZQQLE8ItMFi_9ww94HJt6nE2fFWA-bJ7TkDsmOwD4JD3eW5H4JLehtbFv55VlC5Nyh2VpVi_ruxK0cf_GBB8uu9zZUw3QDiuQRKLjXU_qDtzch77Z5UnVDApi_sSI8h8FOYjlqna8PBzJWZtnoPK80hDo8SL-DpbOqw2TtN8jtuHeB3Fx-pEJP6KPwPjcWvW9dpmazntx4k6zeIjysrzsrbhgeRKFQHtsvwnxhsKmOWXFPXXIvTQDLLfyyCCjLyhQBNeBQ.jpg"
+  "image": "https://cdn4.telesco.pe/file/dePedanChZIDK_qE9c1Qm4Z0dIH2g24JPz777jSxwC1vgkMjK9hY4P_AseynnrxdVX6QpfeIddLtUKxs6UIfgISdHTcjAaNoRKcO_sO7ZFXeDzGRsRGwlynzGuqCJ2fLv1YvPx9AAYK7I0D_dkBnaMq0KhcY1d-ncGX2LjafiE4cZRrTXZTXsSCSiKA01Pdwzo5D2SO2vwDqa2RpZRWZpMNwVga2v63NY9eODypnmnX5zVjW0Sy5LTcqaaj-KxZBNQCo4bK7b2YvZl9tw2koA9DoZ21EDWEanyR3JLGehCHOpYZSt64_upZ1gs9ZqvaqkDzMaUTs7_MXe88SgXHLrA.jpg"
  },
  "gholam": {
   "text": "رفقا، وزارت بازرگانی و وزارت دادگستری آمریکا توی یه بیانیه مشترک (مورخ ۱۶ نوامبر ۲۰۲۶) درباره پرونده شرکت سنگاپوری «مگاسپید» (Megaspeed) توضیح دادن و گفتن چون تو هفته اخیر این موضوع حسابی سر و صدا کرده و حرف‌وحدیث‌های نادقیق زیاد شده، تصمیم گرفتن اصل ماجرا رو روراست بگن 🔍\n\n• طبق این بیانیه، وزارت بازرگانی آمریکا از سال ۲۰۲۴ به ظن جابه‌جایی غیرمجاز تراشه‌های حساس و نقض احتمالی مقررات صادراتی، تحقیق روی مگاسپید رو کلید زده.\n• در می ۲۰۲۵ از شرکت انویدیا مدارک فروش مستقیم یا غیرمستقیم به مگاسپید رو خواستن؛ ماه بعدش یعنی ژوئن ۲۰۲۵ هم انویدیا این شرکت رو گذاشت تو لیست «عدم فروش» و هم‌زمان مامورای آمریکایی با همراهی پلیس سنگاپور حضوری رفتن سر وقت شرکت و با مدیرعاملش، آلیس هوانگ، مصاحبه کردن.\n• بعد از این مرحله، وزارت دادگستری آمریکا هدایت بخش کیفری پرونده رو به عهده گرفته و هر دو نهاد تاکید کردن اگه تخلف کیفری‌ای رخ داده باشه، با تمام قدرت قانون باهاش برخورد می‌کنن.\n\nتوی ادامه بیانیه هم به کارنامه‌شون اشاره کردن و گفتن توی دولت ترامپ طی شش پرونده جداگانه، ۱۷ متهم در ارتباط با اتهام قاچاق میلیاردها دلار تراشه تحت پیگرد قرار گرفتن و جریمه‌های مالی پرونده‌های صادراتی ۱۸ برابر دوره بایدن شده؛ خلاصه که حسابی دست گذاشتن روی نبض این تراشه‌ها و به این راحتی از کنارش رد نمی‌شن.",
   "date": "2026-11-17T04:23:34+00:00"
+ },
+ "ai": {
+  "title": "آمریکا مگاسپید را به خاطر قاچاق تراشه و نقض مقررات صادراتی زیر نظر گرفت",
+  "short": "پرونده مگاسپید و تراشه",
+  "topics": [
+   "انویدیا",
+   "سیاست و قانون"
+  ],
+  "type": "خبر",
+  "model": "qwen3.5-9b-q4_k_m",
+  "v": 1,
+  "src": "9c4500e69fef"
  },
  "links": [
   {
@@ -55,17 +67,5 @@
    "سیاست و قانون"
   ]
  },
- "updated": "2026-11-18T05:10:34+00:00",
- "ai": {
-  "title": "آمریکا مگاسپید را به خاطر قاچاق تراشه و نقض مقررات صادراتی زیر نظر گرفت",
-  "short": "پرونده مگاسپید و تراشه",
-  "topics": [
-   "انویدیا",
-   "سیاست و قانون"
-  ],
-  "type": "خبر",
-  "model": "qwen3.5-9b-q4_k_m",
-  "v": 1,
-  "src": "9c4500e69fef"
- }
+ "updated": "2026-11-18T12:57:38+00:00"
 }
