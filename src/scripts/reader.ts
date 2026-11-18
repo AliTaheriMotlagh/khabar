@@ -6,6 +6,7 @@ import type { Line } from './speech';
 import { player, type Snap } from './listen';
 import { storyLines } from '../lib/lines';
 import { canListen, listenOr } from './voice-offer';
+import { charAt, clearWord, showWord } from './highlight';
 
 type Prefs = Record<string, string>;
 const SIZES = ['s', 'm', 'l', 'xl'];
@@ -112,6 +113,7 @@ function show(s: Snap) {
   }
   $$('[data-rate]').forEach((b) => (b.textContent = `${fmtNum(s.rate)}×`));
   const n = state === 'idle' ? -1 : s.step;
+  followWords(state === 'playing');
   if (n === speaking) return;
   speaking = n;
   $$('.is-speaking', article ?? document).forEach((el) => el.classList.remove('is-speaking'));
@@ -136,14 +138,48 @@ function toggleListen() {
   p.playLines({ key, title: d.title ?? document.title, href: d.href ?? location.pathname, cover: d.cover || undefined, unit: 'بند' }, lines, from);
 }
 
-/** A paragraph of the story while it is read: read from there. */
+// ---------- the word being said (PLAN.md P1-D: src/scripts/words.ts, highlight.ts) ----------
+// Looked up once a frame while the voice plays and the page is visible (the browser pauses frames in a hidden tab); the
+// page changes only when the word does.
+let wordLoop = 0;
+let litKey = '';
+function followWords(on: boolean) {
+  if (!on) {
+    cancelAnimationFrame(wordLoop);
+    wordLoop = 0;
+    litKey = '';
+    return clearWord();
+  }
+  if (wordLoop) return;
+  const tick = () => {
+    wordLoop = requestAnimationFrame(tick);
+    const w = player().word();
+    const el = w && paragraphs[w.step];
+    if (!w || !el) return;
+    const k = `${w.step}:${w.from}`;
+    if (k === litKey) return;
+    litKey = k;
+    showWord(el, w);
+  };
+  wordLoop = requestAnimationFrame(tick);
+}
+// The text reflows (text size, spacing, rotation, a font arriving): put the pill back on its word.
+if (article && 'ResizeObserver' in window) new ResizeObserver(() => (litKey = '')).observe(article);
+
+/** A paragraph of the story while it is read: read from there — from the tapped word in the paragraph being read. */
 function readFromHere(e: MouseEvent) {
   const p = player();
   if (p.key !== key) return;
   const t = e.target as Element;
   if (t.closest('a, button, mark, input, textarea') || getSelection()?.toString()) return;
   const n = paragraphs.findIndex((el) => el.contains(t));
-  if (n >= 0 && n !== speaking) p.jump(n);
+  if (n < 0) return;
+  if (n === speaking) {
+    const char = charAt(paragraphs[n], e.clientX, e.clientY);
+    if (char >= 0 && p.seekWord(n, char)) litKey = '';
+    return;
+  }
+  p.jump(n);
 }
 
 // ---------- a selected passage: comment on it (social.ts), or share it as a quote ----------

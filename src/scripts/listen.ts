@@ -12,12 +12,13 @@
 // iOS lets audio start only inside a tap: a page in the frame calls this window's player straight from its tap, nothing
 // awaits on that path, and the audio element here has played before (that is what opened the frame).
 import { SITE } from '../site';
-import { $, $$, BASE, fmtNum, store, toast } from './core';
+import { $, $$, BASE, esc, fmtNum, store, toast } from './core';
 import { markSeen } from './game';
 import { cardLines, type Card, type Line } from '../lib/lines';
 import { tehranDay } from '../lib/time';
 import { Speaker, getReady, type SpeechState } from './speech';
 import { voiceStates } from './voice';
+import { timeOf, wordAt } from './words';
 
 /** What plays: `key` names it for the pages ('story:<id>', 'brief', 'playlist', 'week'). */
 export type Track = { key: string; title: string; href: string; cover?: string; artist?: string; unit?: string };
@@ -157,6 +158,29 @@ class Player {
   seek(sec: number) {
     if (!this.held && !this.between) this.speaker.seek(sec);
   }
+  /** The word being said: the line (as `step` counts them) and its characters; null when it can't tell (src/scripts/words.ts). */
+  word(): { step: number; from: number; to: number; text: string } | null {
+    if (this.held || this.between) return null;
+    const c = this.speaker.clock();
+    const w = c && wordAt(c);
+    const line = this.speaker.lines[this.speaker.at];
+    if (!w || !line) return null;
+    return { step: this.queue ? this.at : this.speaker.at, from: w.from, to: w.to, text: line.text };
+  }
+  /** A tapped word of the paragraph playing: from there (the cloud's or a service's clip by time, the on-device voice by
+   *  sentence). False when it can't, and the caller reads the paragraph from its start instead. */
+  seekWord(step: number, char: number): boolean {
+    if (this.queue || step !== this.speaker.at || this.held) return false;
+    const c = this.speaker.clock();
+    if (c?.kind !== 'clip') return false;
+    if (char >= c.offset && char <= c.offset + c.text.length) {
+      const t = timeOf(c, char);
+      if (t === null) return false;
+      this.speaker.seekClip(t);
+      return true;
+    }
+    return this.speaker.sayFrom(char);
+  }
   /** Paragraph or story k. */
   jump(k: number) {
     if (this.queue) return this.playItem(k);
@@ -283,6 +307,7 @@ class Player {
   emit() {
     const s = this.snap();
     paintBar(s, this.queue ? 'خبر' : (this.track?.unit ?? 'بند'));
+    caption(this, s.state === 'playing');
     root.toggleAttribute('data-listening', s.state !== 'idle');
     if ('mediaSession' in navigator) navigator.mediaSession.playbackState = s.state === 'playing' ? 'playing' : s.state === 'paused' ? 'paused' : 'none';
     for (const fn of this.subs) {
@@ -298,6 +323,43 @@ class Player {
 // ---------- the bar ----------
 const bar = $('[data-listen-bar]');
 let drawn = '';
+
+// A one-line caption of the sentence being said, its word lit (PLAN.md P1-D): the playlist, the week's top and the brief
+// play while their text is not on screen. Not on a story page that lights the words in its own text.
+const cap = $('[data-lb-cap]');
+let capLoop = 0;
+let capKey = '';
+function caption(p: Player, on: boolean) {
+  if (!cap || framed) return;
+  if (!on || root.dataset.words === 'off') {
+    cancelAnimationFrame(capLoop);
+    capLoop = 0;
+    capKey = '';
+    cap.hidden = true;
+    return;
+  }
+  if (capLoop) return;
+  const tick = () => {
+    capLoop = requestAnimationFrame(tick);
+    const w = p.word();
+    const k = w ? `${w.step}:${w.from}` : '';
+    if (k === capKey) return;
+    capKey = k;
+    if (!w || document.querySelector('.has-word')) return void (cap.hidden = true);
+    const t = w.text;
+    // The sentence around the word (cut to about 90 characters, the word kept in view).
+    let a = Math.max(t.lastIndexOf('. ', w.from), t.lastIndexOf('؟ ', w.from), t.lastIndexOf('! ', w.from), t.lastIndexOf('؛ ', w.from));
+    a = a < 0 ? 0 : a + 2;
+    let b = t.slice(w.to).search(/[.!؟؛](\s|$)/);
+    b = b < 0 ? t.length : w.to + b + 1;
+    if (w.from - a > 60) a = t.indexOf(' ', w.from - 50) + 1;
+    if (b - w.to > 40) b = t.lastIndexOf(' ', w.to + 40);
+    cap.innerHTML = `${a > 0 ? '…' : ''}${esc(t.slice(a, w.from))}<mark>${esc(t.slice(w.from, w.to))}</mark>${esc(t.slice(w.to, b))}${b < t.length ? '…' : ''}`;
+    cap.hidden = false;
+  };
+  capLoop = requestAnimationFrame(tick);
+}
+
 function paintBar(s: Snap, unit: string) {
   if (!bar || framed) return;
   bar.hidden = s.state === 'idle';

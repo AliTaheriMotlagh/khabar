@@ -13,6 +13,7 @@ import { cloudSrc, keptRemote } from './offline-audio';
 import { store } from './core';
 import type { Line } from '../lib/lines';
 import { chosenVoice, prepareVoice, sentences, voiceClip, voicePreferred, voiceReady, voiceState } from './voice';
+import { learnPace, prepare, type Clock } from './words';
 
 /** One paragraph to read: `i` is its index in the story's card.json (0 = title, then the body, then "why"). */
 export type { Line } from '../lib/lines';
@@ -112,7 +113,9 @@ export class Speaker {
   private played = false; // the cloud or on-device voice has worked at least once
   private audio = new Audio();
   private pieces: string[] = []; // the on-device voice reads a paragraph in sentences
+  private pieceAt: number[] = []; // where each of them starts in the paragraph (word timings)
   private piece = 0;
+  private boundary: number | null = null; // the device's voice: the last word it said it reached
   private began = 0; // when the device's voice started the paragraph (it can't tell how far it got)
   private error = ''; // what the connected service said when it failed
 
@@ -169,13 +172,17 @@ export class Speaker {
     }
     this.at = n;
     this.on.line?.(n);
+    this.boundary = null;
     if (this.engine === 'local') {
       this.pieces = sentences(line.text);
+      let at = 0;
+      this.pieceAt = this.pieces.map((p) => ((at = Math.max(0, line.text.indexOf(p, at))), (at += p.length), at - p.length));
       return this.say(0, mine);
     }
     if (this.engine === 'cloud') {
       this.set(this.played ? 'playing' : 'loading');
       this.audio.src = cloudSrc(clipUrl(line), line);
+      prepare(this.audio.src, line.text); // its word timings, while it starts
       this.audio.playbackRate = this.rate;
       this.audio.play().catch((e: Error) => mine === this.run && e.name !== 'AbortError' && this.failed());
       const next = this.lines[n + 1];
@@ -188,6 +195,7 @@ export class Speaker {
         (url) => {
           if (mine !== this.run) return;
           this.audio.src = url;
+          prepare(url, line.text);
           this.audio.playbackRate = this.rate;
           this.audio.play().catch((e: Error) => mine === this.run && e.name !== 'AbortError' && this.failed());
         },
@@ -208,7 +216,12 @@ export class Speaker {
       u.voice = v;
       u.lang = v.lang;
     }
-    u.onend = () => mine === this.run && this.play(n + 1);
+    u.onboundary = (e) => mine === this.run && e.name === 'word' && (this.boundary = e.charIndex);
+    u.onend = () => {
+      if (mine !== this.run) return;
+      if (this.boundary === null) learnPace(line.text, (Date.now() - this.began) / 1000, this.rate);
+      this.play(n + 1);
+    };
     u.onerror = (e) => {
       if (mine !== this.run || e.error === 'interrupted' || e.error === 'canceled') return;
       this.stop();
@@ -227,6 +240,7 @@ export class Speaker {
       (url) => {
         if (mine !== this.run) return;
         this.audio.src = url;
+        prepare(url, text);
         this.audio.playbackRate = this.rate;
         this.audio.play().catch((e: Error) => mine === this.run && e.name !== 'AbortError' && this.failed());
       },
@@ -237,6 +251,33 @@ export class Speaker {
     if (this.state !== 'playing') this.set('loading');
     const next = this.pieces[k + 1] ?? sentences(this.lines[this.at + 1]?.text ?? '')[0];
     if (next) voiceClip(next);
+  }
+
+  /** What is being said now, for word timings (src/scripts/words.ts); null when nothing is. */
+  clock(): Clock | null {
+    const line = this.lines[this.at];
+    if (this.state !== 'playing' || !line) return null;
+    if (this.engine === 'device') return { kind: 'device', text: line.text, boundary: this.boundary, elapsed: (Date.now() - this.began) / 1000, rate: this.rate };
+    const a = this.audio;
+    if (!a.getAttribute('src') || a.src === SILENCE || a.ended) return null;
+    const local = this.engine === 'local';
+    const text = local ? this.pieces[this.piece] : line.text;
+    return text ? { kind: 'clip', src: a.src, text, offset: local ? (this.pieceAt[this.piece] ?? 0) : 0, t: a.currentTime } : null;
+  }
+
+  /** To a second of the clip playing (a tapped word). */
+  seekClip(t: number) {
+    if (this.engine !== 'device' && Number.isFinite(this.audio.duration)) this.audio.currentTime = Math.max(0, Math.min(t, this.audio.duration - 0.05));
+  }
+
+  /** The on-device voice: to the sentence of the paragraph that holds character `char`. */
+  sayFrom(char: number) {
+    if (this.engine !== 'local' || !this.pieces.length) return false;
+    let k = -1;
+    this.pieceAt.forEach((at, i) => at <= char && (k = i));
+    if (k < 0 || k === this.piece) return false;
+    this.say(k, ++this.run);
+    return true;
   }
 
   pause() {

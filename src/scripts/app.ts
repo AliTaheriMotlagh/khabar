@@ -18,8 +18,8 @@ export { getSaved, getHistory, rowHtml, store } from './core';
 const root = document.documentElement;
 
 // ---------- display settings ----------
-type Settings = { theme: string; size: string; spacing: string; focus: string; view: string; media: string; story: StoryShow; order: StoryOrder };
-const DEFAULTS: Settings = { theme: 'auto', size: 'm', spacing: 'm', focus: 'off', view: 'cards', media: 'show', story: 'unseen', order: 'new' };
+type Settings = { theme: string; size: string; spacing: string; focus: string; view: string; media: string; words: string; story: StoryShow; order: StoryOrder };
+const DEFAULTS: Settings = { theme: 'auto', size: 'm', spacing: 'm', focus: 'off', view: 'cards', media: 'show', words: 'on', story: 'unseen', order: 'new' };
 let settings: Settings = { ...DEFAULTS, ...store.get<Partial<Settings>>('settings', {}) };
 const darkQuery = matchMedia('(prefers-color-scheme: dark)');
 const resolvedTheme = () => (settings.theme === 'auto' ? (darkQuery.matches ? 'dark' : 'light') : settings.theme);
@@ -31,6 +31,7 @@ function applySettings() {
   root.dataset.focus = settings.focus;
   root.dataset.view = settings.view;
   root.dataset.media = settings.media;
+  root.dataset.words = settings.words;
   $$('[data-set-view]').forEach((b) => b.setAttribute('aria-pressed', String(b.dataset.setView === settings.view)));
   $$('[data-focus-toggle]').forEach((b) => b.setAttribute('aria-pressed', String(settings.focus === 'on')));
 }
