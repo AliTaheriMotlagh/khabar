@@ -245,7 +245,8 @@ function shape(raw: RawPost, ids: Set<number>): Post {
         : kind === 'brief'
           ? firstSentence(body[0] || raw.article.source_title || raw.preview?.title || raw.article.title)
           : raw.article.title;
-  const tags = (ai?.topics ?? raw.article.tags).filter((t) => !HIDDEN_TAGS.has(t));
+  // Topics stay the keyword rules': the model's were less precise on the golden set (pipeline/ai.py, 2026-11-18).
+  const tags = raw.article.tags.filter((t) => !HIDDEN_TAGS.has(t));
   const words = [...body, raw.article.why ?? ''].join(' ').split(/\s+/).length;
   // The title is the lede's first sentence, so the excerpt picks up where it ends instead of repeating it.
   const lede = body.join(' ').replace(/\s+/g, ' ').trim();

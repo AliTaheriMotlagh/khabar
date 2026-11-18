@@ -8,13 +8,15 @@ set -euo pipefail
 LLAMA_TAG=b12494
 LLAMA_LINUX_SHA=6cc888fce5d0951e543289f07a24337ef29e52165ee3fb2aa16743253c160eaf
 LLAMA_MAC_SHA=cb4a5089fcaaa69a493bbf86eae25002dd82966eacecd166c49282881906ab3a
-# Qwen3.5-4B, 4-bit (Q4_K_M, 2.7 GB): the newest small Qwen when this was set up. Its Persian headlines were checked on
-# pipeline/tests/golden.json (python -m pipeline.ai --eval).
+# Qwen3.5-9B, 4-bit (Q4_K_M, 5.7 GB): the newest small Qwen when this was set up. On the golden set
+# (pipeline/tests/golden.json, .github/workflows/ai-eval.yml, 2026-11-18): 38/39 headlines pass the rules, type right
+# 30/39, ~21 s a post on the 4-vCPU runner (57 s for the first, which reads the shared instructions). Its topics were
+# worse than the keyword rules (precision 49% vs 72%), so the site keeps the rules' topics.
 # Another candidate for a bake-off: set all four (.github/workflows/ai-eval.yml).
-MODEL_REPO=${MODEL_REPO:-unsloth/Qwen3.5-4B-GGUF}
-MODEL_REV=${MODEL_REV:-e87f176479d0855a907a41277aca2f8ee7a09523}
-MODEL_FILE=${MODEL_FILE:-Qwen3.5-4B-Q4_K_M.gguf}
-MODEL_SHA=${MODEL_SHA:-00fe7986ff5f6b463e62455821146049db6f9313603938a70800d1fb69ef11a4}
+MODEL_REPO=${MODEL_REPO:-unsloth/Qwen3.5-9B-GGUF}
+MODEL_REV=${MODEL_REV:-3885219b6810b007914f3a7950a8d1b469d598a5}
+MODEL_FILE=${MODEL_FILE:-Qwen3.5-9B-Q4_K_M.gguf}
+MODEL_SHA=${MODEL_SHA:-03b74727a860a56338e042c4420bb3f04b2fec5734175f4cb9fa853daf52b7e8}
 
 AI_DIR=${AI_DIR:-$HOME/.cache/khabar-ai}
 PORT=${AI_PORT:-8080}
@@ -48,7 +50,7 @@ fetch "https://huggingface.co/$MODEL_REPO/resolve/$MODEL_REV/$MODEL_FILE" "$MODE
 # each post only pays for its own text. --jinja: the model's own chat template, which reads enable_thinking.
 threads=$(getconf _NPROCESSORS_ONLN 2>/dev/null || echo 4)
 nohup "$server" -m "$MODEL_FILE" --host 127.0.0.1 --port "$PORT" -c 8192 -np 1 -t "$threads" --jinja \
-  --alias "${AI_MODEL:-qwen3.5-4b-q4_k_m}" >"$AI_DIR/server.log" 2>&1 &
+  --alias "${AI_MODEL:-qwen3.5-9b-q4_k_m}" >"$AI_DIR/server.log" 2>&1 &
 echo $! >"$AI_DIR/server.pid"
 
 for _ in $(seq 1 120); do

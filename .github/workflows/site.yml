@@ -79,6 +79,26 @@ jobs:
         timeout-minutes: 8
         run: python -m pipeline.videos
 
+      # Headlines, a short line and a type by Qwen on this runner (pipeline/ai.py, PLAN.md P1-B), written into the posts
+      # before the commit, so no extra deploy. Free: public repo, standard runner, the model (5.7 GB) in the Actions
+      # cache, keyed on the pins in scripts/ai-server.sh. Never fails the run: the site falls back to the rules'
+      # headline, and whatever the time budget leaves is done on the next run, newest first.
+      - name: Posts waiting for AI headlines
+        id: ai
+        run: echo "pending=$(python -m pipeline.ai --pending)" | tee -a "$GITHUB_OUTPUT"
+      - uses: actions/cache@v6
+        if: steps.ai.outputs.pending != '0'
+        with:
+          path: ~/.cache/khabar-ai
+          key: ai-${{ runner.os }}-${{ hashFiles('scripts/ai-server.sh') }}
+      - name: AI headlines
+        if: steps.ai.outputs.pending != '0'
+        continue-on-error: true
+        timeout-minutes: 12
+        env:
+          AI_BUDGET: '300'
+        run: scripts/ai-server.sh && python -m pipeline.ai
+
       - name: Commit new posts
         id: commit
         run: |

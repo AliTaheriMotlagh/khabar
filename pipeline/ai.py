@@ -34,7 +34,7 @@ import httpx
 from . import config, shape, telegram
 
 AI_URL = os.getenv("AI_URL", "http://127.0.0.1:8080/v1").rstrip("/")
-AI_MODEL = os.getenv("AI_MODEL", "qwen3.5-4b-q4_k_m")
+AI_MODEL = os.getenv("AI_MODEL", "qwen3.5-9b-q4_k_m")
 AI_BUDGET = float(os.getenv("AI_BUDGET", "300"))  # seconds of model time per run; the rest waits for the next run
 AI_RECENT_DAYS = float(os.getenv("AI_RECENT_DAYS", "3"))  # a normal run only looks at posts this new
 AI_TIMEOUT = float(os.getenv("AI_TIMEOUT", "180"))
@@ -119,7 +119,9 @@ EXAMPLES = [
     ),
 ]
 
-GREETING = re.compile(r"رفقا|رفیق|سلام|داداش|ببین|بچه‌ها|میگه|می‌گه|اومده|درومده")
+# Spoken Persian a headline mustn't have: Gholam's greetings, and colloquial forms («دیگه», «توی», «رو» for «را»).
+_W = r"(?<![؀-ۿ‌])({})(?![؀-ۿ‌])"
+GREETING = re.compile(r"رفقا|رفیق|سلام|داداش|ببین|بچه‌ها|میگه|می‌گه|اومده|درومده|" + _W.format("دیگه|توی|رو|میشه|می‌شه|کرده‌ن|نیس"))
 URL_RE = re.compile(r"https?://\S+")
 
 
