@@ -1,0 +1,52 @@
+{
+ "entities": [
+  {
+   "slug": "anthropic",
+   "name_en": "Anthropic",
+   "name_fa": "آنتروپیک",
+   "kind": "company"
+  },
+  {
+   "slug": "cais",
+   "name_en": "CAIS",
+   "name_fa": "مرکز ایمنی هوش مصنوعی",
+   "kind": "company"
+  },
+  {
+   "slug": "misanthropic-statement",
+   "name_en": "MisAnthropic Statement",
+   "name_fa": "بیانیه ضد آنتروپیک",
+   "kind": "product"
+  },
+  {
+   "slug": "steven-pinker",
+   "name_en": "Steven Pinker",
+   "name_fa": "استیون پینکر",
+   "kind": "person"
+  },
+  {
+   "slug": "max-tegmark",
+   "name_en": "Max Tegmark",
+   "name_fa": "مکس تگمارک",
+   "kind": "person"
+  },
+  {
+   "slug": "hugging-face",
+   "name_en": "Hugging Face",
+   "name_fa": "هاگینگ‌فیس",
+   "kind": "company"
+  },
+  {
+   "slug": "rightnow",
+   "name_en": "RightNow",
+   "name_fa": "رایت‌ناو",
+   "kind": "company"
+  },
+  {
+   "slug": "rightnow-decision-model-v3",
+   "name_en": "RightNow decision model v3",
+   "name_fa": "مدل تصمیم‌گیر رایت‌ناو نسخه ۳",
+   "kind": "product"
+  }
+ ]
+}
