@@ -18,47 +18,6 @@
   "text": "رفیق، شرکت رانوی (Runway) اعلام کرده تونسته تعداد پردازنده‌های گرافیکی (GPU) لازم برای اجرای یه مدل ویدیویی ۵۷ میلیارد پارامتری با سرعت ۲۴ فریم بر ثانیه رو از هشت‌تا به چهارتا کاهش بده؛ انگار یه بار سنگین رو به‌جای هشت نفر، با چهار نفر جمع کرده باشن! 🎬\n\nرانوی می‌گه تو مطلب پژوهشی جدیدش (با عنوان Real-Time Video at Batch Size One) توضیح داده چه بهینه‌سازی‌هایی این کار رو شدنی کرده و وسط راه چه چیزهایی خراب شده. البته متن اصلی مقاله اینجا در دسترس نیست، برای همین جزئیات فنی‌تر و اینکه دقیقاً کجای کار به مشکل خورده رو نمی‌شه از همین مقدار اطلاعات فهمید.",
   "date": "2026-11-18T17:16:19+00:00"
  },
- "links": [
-  {
-   "kind": "tweet",
-   "url": "https://x.com/runwayml/status/2123060689053036600",
-   "domain": "x.com",
-   "author": {
-    "name": "Runway",
-    "handle": "runwayml",
-    "avatar": "https://pbs.twimg.com/profile_images/1999115192232292353/zOq5-uwB_200x200.jpg"
-   },
-   "text": "We cut the GPUs needed to run a 57-billion-parameter video model at 24 fps from eight to four.\n\nOur latest research post breaks down the optimizations that made it possible and what broke along the way.\n\nhttps://runway.com/news/research/real-time-video-at-batch-size-one",
-   "date": 1795012087,
-   "media": [],
-   "links": [
-    "https://runway.com/news/research/real-time-video-at-batch-size-one"
-   ]
-  },
-  {
-   "kind": "link",
-   "url": "https://runway.com/news/research/real-time-video-at-batch-size-one",
-   "domain": "runway.com",
-   "title": "Real-Time Video at Batch Size One | Runway Research",
-   "description": "How Runway serves the 57B-parameter model behind Runway Characters at 24 fps for live conversation, now on four H100s instead of eight.",
-   "image": "https://d3phaj0sisr2ct.cloudfront.net/site/images/sanity/2026/11/image-5-82220069-a745-4d91-acc1-8445ca17c9f9.png",
-   "site": "runway.com"
-  }
- ],
- "article": {
-  "title": "شرکت رانوی (Runway) اعلام کرده تونسته تعداد پردازنده‌های گرافیکی (GPU) لازم برای اجرای یه مدل ویدیویی ۵۷ میلیارد پارامتری با سرعت ۲۴ فریم بر ثانیه رو از هشت‌تا به چهارتا کاهش بده",
-  "source_title": "We cut the GPUs needed to run a 57-billion-parameter video model at 24 fps from eight to four.",
-  "body": [
-   "شرکت رانوی (Runway) اعلام کرده تونسته تعداد پردازنده‌های گرافیکی (GPU) لازم برای اجرای یه مدل ویدیویی ۵۷ میلیارد پارامتری با سرعت ۲۴ فریم بر ثانیه رو از هشت‌تا به چهارتا کاهش بده؛ انگار یه بار سنگین رو به‌جای هشت نفر، با چهار نفر جمع کرده باشن! 🎬",
-   "رانوی می‌گه تو مطلب پژوهشی جدیدش (با عنوان Real-Time Video at Batch Size One) توضیح داده چه بهینه‌سازی‌هایی این کار رو شدنی کرده و وسط راه چه چیزهایی خراب شده. البته متن اصلی مقاله اینجا در دسترس نیست، برای همین جزئیات فنی‌تر و اینکه دقیقاً کجای کار به مشکل خورده رو نمی‌شه از همین مقدار اطلاعات فهمید."
-  ],
-  "why": null,
-  "tags": [
-   "تصویر و ویدیو",
-   "تراشه"
-  ]
- },
- "updated": "2026-11-18T17:16:31+00:00",
  "ai": {
   "title": "رانوی اجرای مدل ویدیویی ۵۷ میلیارد پارامتری را با نصف GPU ممکن کرد",
   "short": "رانوی: ویدیو با ۴ GPU",
@@ -118,5 +77,46 @@
    "v": 1,
    "src": "6844a087b26a"
   }
- }
+ },
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/runwayml/status/2123060689053036600",
+   "domain": "x.com",
+   "author": {
+    "name": "Runway",
+    "handle": "runwayml",
+    "avatar": "https://pbs.twimg.com/profile_images/1999115192232292353/zOq5-uwB_200x200.jpg"
+   },
+   "text": "We cut the GPUs needed to run a 57-billion-parameter video model at 24 fps from eight to four.\n\nOur latest research post breaks down the optimizations that made it possible and what broke along the way.\n\nhttps://runway.com/news/research/real-time-video-at-batch-size-one",
+   "date": 1795012087,
+   "media": [],
+   "links": [
+    "https://runway.com/news/research/real-time-video-at-batch-size-one"
+   ]
+  },
+  {
+   "kind": "link",
+   "url": "https://runway.com/news/research/real-time-video-at-batch-size-one",
+   "domain": "runway.com",
+   "title": "Real-Time Video at Batch Size One | Runway Research",
+   "description": "How Runway serves the 57B-parameter model behind Runway Characters at 24 fps for live conversation, now on four H100s instead of eight.",
+   "image": "https://d3phaj0sisr2ct.cloudfront.net/site/images/sanity/2026/11/image-5-82220069-a745-4d91-acc1-8445ca17c9f9.png",
+   "site": "runway.com"
+  }
+ ],
+ "article": {
+  "title": "شرکت رانوی (Runway) اعلام کرده تونسته تعداد پردازنده‌های گرافیکی (GPU) لازم برای اجرای یه مدل ویدیویی ۵۷ میلیارد پارامتری با سرعت ۲۴ فریم بر ثانیه رو از هشت‌تا به چهارتا کاهش بده",
+  "source_title": "We cut the GPUs needed to run a 57-billion-parameter video model at 24 fps from eight to four.",
+  "body": [
+   "شرکت رانوی (Runway) اعلام کرده تونسته تعداد پردازنده‌های گرافیکی (GPU) لازم برای اجرای یه مدل ویدیویی ۵۷ میلیارد پارامتری با سرعت ۲۴ فریم بر ثانیه رو از هشت‌تا به چهارتا کاهش بده؛ انگار یه بار سنگین رو به‌جای هشت نفر، با چهار نفر جمع کرده باشن! 🎬",
+   "رانوی می‌گه تو مطلب پژوهشی جدیدش (با عنوان Real-Time Video at Batch Size One) توضیح داده چه بهینه‌سازی‌هایی این کار رو شدنی کرده و وسط راه چه چیزهایی خراب شده. البته متن اصلی مقاله اینجا در دسترس نیست، برای همین جزئیات فنی‌تر و اینکه دقیقاً کجای کار به مشکل خورده رو نمی‌شه از همین مقدار اطلاعات فهمید."
+  ],
+  "why": null,
+  "tags": [
+   "تصویر و ویدیو",
+   "تراشه"
+  ]
+ },
+ "updated": "2026-11-18T20:04:27+00:00"
 }

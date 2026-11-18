@@ -12,7 +12,7 @@
   "site": "FxTwitter · openai.com",
   "title": "Adam.GPT (@TheRealAdamG)",
   "description": "https://openai.com/index/astra-law-6-2/\n“Today, we're releasing an updated Astra for Law that is state-of-the-art on Harvey LAB-AA and a top performer on LAB: USCL (co-developed by Harvey⁠ and Grubel) and Vals AI’s Legal Research Bench. We are also enabling…",
-  "image": "https://cdn4.telesco.pe/file/tl-pYIQH-FOyFAtGUtfGk78sA7ETkv74FCBcoxsL4jt75eAwbBELQG774a6kogJGljXOG1a0t5TUJoCZhVYcFGsCQTSKKUgYaaDqZobql5CMTCAXvrNC1jE6aHGAOv7W0iNsxTSPYghQ6TqRy3PBRgvC1X6MVQ8-DUisTJ8TvFATj-rrqZNuo2vGlIPVxcoFVZfHPQp_8-rNr8N2xyhVlXZvLYtig94XmMFj5eGfpWzWeYYIjrNlmfyXMc4INOtcYdrICWFbeYVTvNEGEjh2aOUl0_fh4iThYi7wLYp1_JiLYlr2mk5nDBqSTfe1A513B-4pkMEBMSfkb6xgkyuAeA.jpg"
+  "image": "https://cdn4.telesco.pe/file/N-kdEM0C_uEWcoK3yazVIfYwDxgHfqnHVeu1-5CUMgfGV_XinSk2DIvsxIXBTLF8TC5pAIGQZl0xc99ydUQ63AQAKyVO08PgnFuMN3sZxlXNcEn9pu_LnVSYP55k4zwP9gNindLDlFdejIHZXknpt2VhTK5TuZG75BZQlyrs1JpJ0iwPGrCWU3id1426nOcpy96HfIrQeIwkfQ6ViAIZ6mIjD7VDuiKSlRdqImBZC7Q7vZSIqLcWMk1kXHnHE82McN0NJC-1aVwO0IVptqT2H2msc5Z-EWb2_S_RdqdaV6UKdAeCSeyRYqWB8ughi7QUwKn2ao4DY9mgECd6H1xtAQ.jpg"
  },
  "gholam": {
   "text": "سلام رفقا! مثل اینکه تو دنیای هوش مصنوعی، وکلا هم دست‌پر شدن؛ اکانت TheRealAdamG و وبلاگ رسمی OpenAI از انتشار نسخه به‌روزشده «Astra for Law» خبر دادن که روی جدیدترین مدلشون یعنی GPT-6.2 Astra سوار شده ⚖️\n\nبه گفته OpenAI، این پیکربندی ویژه مثل یه دستیار کاربلد عمل می‌کنه که با دستورالعمل‌های حقوقی و یه آرشیو جست‌وجوی بزرگ‌تر، قبل از نوشتن جواب منابع معتبر رو وزن‌کشی می‌کنه تا بی‌گدار به آب نزنه و کمتر از خودش سند بسازه. ضمناً همه مشتری‌های ChatGPT Enterprise الان می‌تونن از طریق برنامه Trusted Access درخواست دسترسی بهش (حتی از طریق API) رو بدن.\n\nطبق گزارش OpenAI از ارزیابی‌های اخیر این نسخه:\n• تو تست حقوقی LAB-AA (شامل ۱۲۰ تکلیف)، Astra for Law با کسب نمره کامل در ۲۰.۸ درصد موارد اول شده (در برابر ۱۵ درصد برای GPT-6.2 Astra معمولی و ۱۳.۱ درصد برای Muse Wonder Full) و میانگین توهمِ مهمش ۰.۰۳ در هر تکلیف بوده (نسبت به ۰.۵۹ در Claude Opus 5.5).\n• تو ارزیابی ۱۶ نوامبر بنچمارک Vals AI، سهم پاسخ‌های کاملاً درستش تو کمتر از دو ماه از حدود ۴۶ درصد به ۵۳.۸ درصد رسیده و تو بنچمارک نگارش لایحه (LAB: USCL) هم جزو برترین‌ها بوده.\n• شاخص جست‌وجوی حقوقیش هم از سپتامبر ۳۴ درصد رشد کرده و به بیش از ۳۱۰ میلیون آدرس رسیده که بالای ۹۹.۹ درصد رویه‌های قضایی منتشرشده آمریکا رو همراه با منابعی از بریتانیا، استرالیا و کانادا پوشش می‌ده.",
@@ -64,5 +64,5 @@
    "اوپن‌ای‌آی"
   ]
  },
- "updated": "2026-11-18T12:57:37+00:00"
+ "updated": "2026-11-18T20:04:27+00:00"
 }
