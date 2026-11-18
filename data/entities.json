@@ -233,6 +233,24 @@
    "name_en": "Waymo",
    "name_fa": "ویمو",
    "kind": "company"
+  },
+  {
+   "slug": "sundar-pichai",
+   "name_en": "Sundar Pichai",
+   "name_fa": "سوندار پیچای",
+   "kind": "person"
+  },
+  {
+   "slug": "gemini-4-neon",
+   "name_en": "Gemini 4 Neon",
+   "name_fa": "جمنی ۴ نیون",
+   "kind": "model"
+  },
+  {
+   "slug": "claude-opus-55",
+   "name_en": "Claude Opus 5.5",
+   "name_fa": "کلاد آپوس ۵.۵",
+   "kind": "model"
   }
  ]
 }
