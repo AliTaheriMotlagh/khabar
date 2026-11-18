@@ -253,6 +253,9 @@ GHOLAM_UNREADABLE_RE = re.compile(
     # «هرچی زور زدیم این صفحه‌ای که فرستادی باز نشد», «سیستم نتونست محتوای اصلی رو بخونه»
     r"|(?:هرچی|هر\s*کاری)\s*(?:زور\s*زدیم|کردیم)[^.!؟?\n]{0,80}?(?:باز\s*نشد|بالا\s*نیومد|لود\s*نشد|در\s*دسترس\s*نبود)"
     r"|نتونست(?:م|یم)?\s+(?:محتوا|متن|صفحه|پست|لینک|توییت)[^.!؟?\n]{0,30}?(?:بخون|باز\s*کن|ببین)"
+    # «خود متن مطلب … اینجا در دسترس نیست که بشه خلاصه‌اش کرد», «هر وقت متن اصلیش باشه، براتون می‌خونم»
+    r"|(?:در\s*دسترس\s*(?:نیست|نبود)|نیومده|نیست)\s*(?:که|تا)\s*(?:بشه|بتونم)\s*(?:خلاصه|ترجمه|توضیح)"
+    r"|هر\s*وقت\s*(?:متن|محتوا|خود\s*مطلب)[^.!؟?\n]{0,30}?(?:باشه|برسه|بیاد|بفرستی)[^.!؟?\n]{0,40}?(?:می‌?\s*خونم|خلاصه)"
 )
 UNREADABLE_MAX = 600  # a longer reply has a story in it
 
@@ -261,7 +264,7 @@ def is_gholam_error(text: str) -> bool:
     text = text or ""
     if GHOLAM_ERROR_RE.search(text):
         return True
-    return len(text.strip()) <= UNREADABLE_MAX and bool(GHOLAM_UNREADABLE_RE.search(text[:240]))
+    return len(text.strip()) <= UNREADABLE_MAX and bool(GHOLAM_UNREADABLE_RE.search(text[:320]))
 
 
 def parse_gholam_comment(html: str) -> Optional[dict]:

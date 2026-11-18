@@ -42,9 +42,13 @@ jobs:
       deploy: ${{ steps.commit.outputs.deploy }}
       latest: ${{ steps.latest.outputs.latest }}
     steps:
-      - uses: actions/checkout@v4
+      # main as it is now, not the commit that triggered the run: a run can sit queued for over an hour, and crawling
+      # on top of that old commit re-adds posts later runs already committed (add/add conflicts on data/posts).
+      - uses: actions/checkout@v7
+        with:
+          ref: main
 
-      - uses: actions/setup-python@v5
+      - uses: actions/setup-python@v7
         with:
           python-version: '3.12'
           cache: pip
@@ -78,16 +82,21 @@ jobs:
           git diff --cached --quiet && { echo 'nothing new'; exit 0; }
           git commit -qm "data: crawl $(date -u +%Y-%m-%dT%H:%MZ)"
           # A push to main can land mid-run; rebase onto it and try again instead of losing the crawl.
-          for attempt in 1 2 3; do
-            if git pull --rebase -q origin main && git push -q origin HEAD:main; then
-              echo deploy=true >> "$GITHUB_OUTPUT"
-              exit 0
+          # A failed rebase is aborted before the next try, or every later attempt fails on "unmerged files".
+          for attempt in 1 2 3 4; do
+            conflict=
+            if git pull --rebase -q origin main || { conflict=1; false; }; then
+              git push -q origin HEAD:main && { echo deploy=true >> "$GITHUB_OUTPUT"; exit 0; }
             fi
+            git rebase --abort 2>/dev/null || true
             sleep $((attempt * 5))
           done
-          exit 1
+          # Still conflicting: another run committed the same posts, so they are on main already and the next crawl
+          # picks up anything left. A push that fails without a conflict (permissions, …) fails the run.
+          [ -n "$conflict" ] || exit 1
+          echo "::warning::this crawl conflicts with posts already on main; leaving it to the next run"
 
-      - uses: actions/setup-node@v4
+      - uses: actions/setup-node@v7
         if: steps.commit.outputs.deploy == 'true'
         with:
           node-version: 24
@@ -99,7 +108,7 @@ jobs:
 
       - id: pages
         if: steps.commit.outputs.deploy == 'true'
-        uses: actions/configure-pages@v5
+        uses: actions/configure-pages@v6
       - name: Build
         if: steps.commit.outputs.deploy == 'true'
         env:
@@ -108,15 +117,16 @@ jobs:
           # The mirror has no functions of its own: comments, reactions and chat go to the Vercel API.
           PUBLIC_API_URL: ${{ vars.API_URL || 'https://khabar-ai.vercel.app' }}
         run: npm run build
-      # The built timeline and stories against the crawled data: order, days, times and counts (tests/site.test.mjs).
-      - run: node --test tests/site.test.mjs
-        if: steps.commit.outputs.deploy == 'true'
-      # The newest listed post of this build, for the notify job.
+      # The newest listed post of this build, for the notify job. Before the tests: the data is on main already, so
+      # Vercel serves it whatever they say, and readers should still hear about it.
       - id: latest
         if: steps.commit.outputs.deploy == 'true'
         run: echo "latest=$(node -p "require('./dist/build.json').latest")" >> "$GITHUB_OUTPUT"
+      # The built timeline and stories against the crawled data: order, days, times and counts (tests/site.test.mjs).
+      - run: node --test tests/site.test.mjs
+        if: steps.commit.outputs.deploy == 'true'
 
-      - uses: actions/upload-pages-artifact@v3
+      - uses: actions/upload-pages-artifact@v5
         if: steps.commit.outputs.deploy == 'true'
         with:
           path: dist
@@ -125,12 +135,13 @@ jobs:
   # Pages deploy, not before it: waiting for Vercel can take minutes. Off (a no-op) without the PUSH_SECRET secret.
   notify:
     needs: build
-    if: needs.build.outputs.deploy == 'true'
+    # Also when the site tests failed: they guard the Pages mirror, and notify.mjs waits for what Vercel serves.
+    if: always() && needs.build.outputs.latest != ''
     runs-on: ubuntu-latest
     timeout-minutes: 15
     continue-on-error: true
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v7
         with:
           sparse-checkout: scripts
       - run: node scripts/notify.mjs
@@ -149,7 +160,7 @@ jobs:
     timeout-minutes: 10
     continue-on-error: true
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v7
         with:
           sparse-checkout: scripts
       - run: node scripts/vercel-prune.mjs
@@ -172,10 +183,10 @@ jobs:
       # and the next crawl redeploys, so a second timeout is a warning, not a failed run (and a failure email).
       - id: deployment
         continue-on-error: true
-        uses: actions/deploy-pages@v4
+        uses: actions/deploy-pages@v5
       - id: retry
         if: steps.deployment.outcome == 'failure'
         continue-on-error: true
-        uses: actions/deploy-pages@v4
+        uses: actions/deploy-pages@v5
       - if: steps.retry.outcome == 'failure'
         run: echo "::warning::GitHub Pages stayed in updating_pages twice; the mirror updates on the next deploy."

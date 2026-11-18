@@ -106,6 +106,10 @@ export const fresh = (src: string | null | undefined) => (src ? freshUrls.get(sr
 const PROXY = 'https://wsrv.nl/';
 const WIDTH = { small: 320, medium: 800, large: 1400 }; // server/img.js accepts exactly these
 const RELAYED = /^https:\/\/(pbs\.twimg\.com|[\w-]+\.telesco\.pe|i\.ytimg\.com)\//; // and only these hosts
+/** Hosts filtered in Iran: a picture there that the relay doesn't take is left out of the feeds. */
+const FILTERED = /(^|\.)(twimg\.com|telesco\.pe|ytimg\.com)$/;
+/** A site's generic share picture (X's login wall), not a picture of the news. */
+const PLACEHOLDER = /^https?:\/\/abs\.twimg\.com\//;
 const absolute = (u: string) => (u.startsWith('/') ? `${SITE.api || SITE.url}${u}` : u);
 const viaProxy = (u: string, size: keyof typeof WIDTH) => `${PROXY}?url=${encodeURIComponent(absolute(u))}&w=${WIDTH[size]}&we&output=webp&q=80`;
 /** The site's own address for a picture from the channel's CDNs (server/img.js), or null for any other picture. */
@@ -128,7 +132,8 @@ export function feedPicture(raw: string | null | undefined, size: keyof typeof W
   const src = sized(raw, size);
   if (!/^https:\/\//.test(src)) return null;
   const relay = relayed(raw, src, size);
-  return relay ? { url: abs(relay) } : { url: src };
+  if (relay) return { url: abs(relay) };
+  return FILTERED.test(new URL(src).hostname) ? null : { url: src };
 }
 /** Attributes for an <img>: the first address, and the others to fall back to. */
 export const pic = (raw: string | null | undefined, size: keyof typeof WIDTH = 'medium') => {
@@ -186,7 +191,7 @@ function shape(raw: RawPost, ids: Set<number>): Post {
   const gallery = own.length ? own : linked;
   // The cover is always a still picture: the first image, a video's poster, or the linked page's image.
   const firstStill = gallery.map((m) => ({ src: m.type === 'video' ? m.poster : m.src, ratio: m.ratio })).find((m) => m.src);
-  const pageImage = links.map((l) => l.article?.image || l.image).find(Boolean) || raw.preview?.image || null;
+  const pageImage = [...links.map((l) => l.article?.image || l.image), raw.preview?.image].find((u) => u && !PLACEHOLDER.test(u)) || null;
   const cover: Media | null = firstStill ? { type: 'image', ...firstStill } : pageImage ? { type: 'image', src: pageImage } : null;
 
   // A story needs Gholam's text in the article too: a reply the pipeline didn't take as a translation leaves it empty.

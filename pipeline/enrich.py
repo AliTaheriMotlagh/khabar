@@ -16,6 +16,10 @@ TWEET_RE = re.compile(
 )
 YOUTUBE_RE = re.compile(r"(?:youtube\.com/(?:watch\?v=|shorts/|live/)|youtu\.be/)([\w-]{11})")
 SKIP_HOSTS = ("t.me", "telegram.me")
+# X's web pages are a login wall without JS (an X Article comes with its tweet, from fxtwitter), and its generic
+# share picture is no picture of the news.
+X_HOSTS = ("x.com", "twitter.com", "mobile.twitter.com")
+X_PLACEHOLDER = re.compile(r"^https?://abs\.twimg\.com/")
 
 
 def domain(url: str) -> str:
@@ -40,7 +44,7 @@ def enrich_links(http: httpx.Client, links: list[str]) -> list[dict]:
             out.append(item)
             # A short tweet that points at an article: read the article too, that's where the news is.
             if item["kind"] == "tweet" and item.get("links") and len(out) < config.MAX_LINKS + 1:
-                ext = next((l for l in item["links"] if not TWEET_RE.search(l) and domain(l) not in SKIP_HOSTS), None)
+                ext = next((l for l in item["links"] if not TWEET_RE.search(l) and domain(l) not in SKIP_HOSTS + X_HOSTS), None)
                 if ext:
                     try:
                         out.append(fetch_page(http, ext))
@@ -150,6 +154,8 @@ def fetch_page(http: httpx.Client, url: str) -> dict:
             "site": _meta(soup, "og:site_name") or item["domain"],
         }
     )
+    if item.get("image") and X_PLACEHOLDER.match(item["image"]):
+        item["image"] = None
     if item.get("image") and item["image"].startswith("/"):
         item["image"] = f"{urlparse(final).scheme}://{urlparse(final).netloc}{item['image']}"
     if item.get("description"):
