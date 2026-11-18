@@ -287,6 +287,30 @@
    "name_en": "Heidrick & Struggles",
    "name_fa": "هایدریک اند استراگلز",
    "kind": "company"
+  },
+  {
+   "slug": "alexander-wang",
+   "name_en": "Alexander Wang",
+   "name_fa": "الکساندر وانگ",
+   "kind": "person"
+  },
+  {
+   "slug": "muse",
+   "name_en": "Muse",
+   "name_fa": "میوز",
+   "kind": "product"
+  },
+  {
+   "slug": "dean-ball",
+   "name_en": "Dean Ball",
+   "name_fa": "دین بال",
+   "kind": "person"
+  },
+  {
+   "slug": "harvard-university",
+   "name_en": "Harvard University",
+   "name_fa": "دانشگاه هاروارد",
+   "kind": "company"
   }
  ]
 }
