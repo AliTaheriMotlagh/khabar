@@ -219,7 +219,7 @@ function lineMaker(card: Card, src: (i: number) => string | undefined) {
   const list = spokenLines(card);
   return (i: number): Line => {
     const text = list[i] ?? '';
-    const { say, map } = sayLine(text, card.lex);
+    const { say, map } = sayLine(text, card.lex, true);
     return { text, post: card.id, i, ...(say !== text && { say, map }), ...(src(i) && { src: src(i) }) };
   };
 }

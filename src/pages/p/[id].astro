@@ -31,7 +31,9 @@ const rel = related(post);
 // The same news told in other posts (data/related.json clusters): listed under the story as its updates.
 const byId = new Map(getPosts().map((p) => [p.id, p]));
 const updates = post.cluster.map((id) => byId.get(id)).filter((p): p is Post => !!p && p.listed);
-const words = [...a.body, a.why ?? ''].join(' ').split(/\s+/).filter(Boolean).length;
+const count = (t: string) => t.split(/\s+/).filter(Boolean).length;
+// A story whose translation came through empty (a bare link) is its headline: never a word count of 0.
+const words = count([...a.body, a.why ?? ''].join(' ')) || count(a.title);
 // The people, companies and models the story names (pipeline/ai.py, `ai.x.entities`): linked data for search engines.
 const mentions = (post.entities ?? []).map((e) => ({ '@type': e.kind === 'person' ? 'Person' : e.kind === 'company' ? 'Organization' : 'Thing', name: e.name_en, alternateName: e.name_fa, url: abs(`who/${e.slug}/`) }));
 // X's video addresses are stable (Telegram's are signed and expire), so only those are offered to search as a video.

@@ -2,13 +2,15 @@
 import { test } from 'node:test';
 import assert from 'node:assert/strict';
 import fs from 'node:fs';
-import { DEFAULT_VOICE, VOICES, families, mirrors, speedOf, voiceById } from '../src/lib/voices.ts';
+import { CILLA_REVISION, DEFAULT_VOICE, VOICES, basesOf, families, mirrors, speedOf, voiceById } from '../src/lib/voices.ts';
 
 const ORDER = ['sherpa-onnx-wasm-main-tts.js', 'sherpa-onnx-tts.js', 'sherpa-onnx-wasm-main-tts.wasm', 'sherpa-onnx-wasm-main-tts.data'];
 
 test('voices: every entry is complete, pinned and in the worker\'s file order', () => {
   assert.equal(new Set(VOICES.map((v) => v.id)).size, VOICES.length, 'ids are unique');
   for (const v of VOICES) {
+    assert.ok(v.rtf > 0, `${v.id}: measured (node scripts/voices.mjs bench)`);
+    if (v.engine === 'cilla') continue; // its own test below
     assert.deepEqual(v.files.map((f) => f.name), ORDER, v.id);
     for (const f of v.files) {
       assert.match(f.sha256, /^[0-9a-f]{64}$/, `${v.id}/${f.name}`);
@@ -31,7 +33,7 @@ test('voices: a file with one hash has one size (stored once, by hash)', () => {
     size.set(f.sha256, f.size);
   }
   // The runtime is the same in every package: a second voice doesn't download it again.
-  assert.equal(new Set(VOICES.map((v) => v.files[2].sha256)).size, 1);
+  assert.equal(new Set(VOICES.filter((v) => !v.engine).map((v) => v.files[2].sha256)).size, 1);
 });
 
 test('voices: each speaker has a preview, its full build first, and one recommended voice', () => {
@@ -57,4 +59,23 @@ test('voices: the voice downloaded before the choice existed is still the same f
 test('voices: speed labels', () => {
   assert.equal(speedOf({ rtf: 0.17 }).slow, false);
   assert.equal(speedOf({ rtf: 0.6 }).slow, true);
+});
+
+test('voices: Cilla Mini — one model for its three speakers, pinned to the demo Space\'s commit, from Hugging Face then its mirror', () => {
+  const cilla = VOICES.filter((v) => v.engine === 'cilla');
+  assert.deepEqual(cilla.map((v) => v.speaker), ['parisa', 'voice1', 'voice2']);
+  for (const v of cilla) {
+    assert.deepEqual(v.files.map((f) => f.name), ['config.json', 'tokenizer.json', 'model.safetensors', `voices/${v.speaker}.safetensors`], v.id);
+    for (const f of v.files) assert.match(f.sha256, /^[0-9a-f]{64}$/, `${v.id}/${f.name}`);
+    assert.deepEqual(basesOf(v), [
+      `https://huggingface.co/spaces/mehdi-hf/cilla-mini-demo/resolve/${CILLA_REVISION}/model/`,
+      `https://hf-mirror.com/spaces/mehdi-hf/cilla-mini-demo/resolve/${CILLA_REVISION}/model/`,
+    ]);
+    assert.ok(['زن', 'مرد'].includes(v.gender) && v.name && v.about, v.id);
+  }
+  // The same model as the gated repo's (mehdi-hf/cilla-mini phonon/model/model.safetensors).
+  assert.equal(new Set(cilla.map((v) => v.files[2].sha256)).size, 1);
+  assert.equal(cilla[0].files[2].sha256, '716b41ee28ca2d26877aa6074c3cc93e1dd7cbc2879252b2ec2527e9d34cecd3');
+  // The sherpa voices keep their own mirrors.
+  assert.equal(basesOf(voiceById(DEFAULT_VOICE))[0], mirrors(DEFAULT_VOICE)[0]);
 });

@@ -50,9 +50,9 @@ Tick items off here; move anything that becomes a lasting rule into CLAUDE.md.
 - [x] **P1-C** vertical/landscape/square, short ≤60 s from `ai.x.video`, no long intro, source credit, share caption + copy,
   made videos kept in Cache Storage `video-v1`, «۶۰ ثانیه خبر امروز», episode teasers, made/shared counters.
 - [x] **P1-D** /today/ captions, brief words lit, median/p90 regression test (made-up clips).
-- [ ] **To do / verify after deploy**: dispatch `ai-backfill` (what=more) a few times for the old posts' extras; check the
+- [ ] **To do / verify after deploy**: dispatch `ai-backfill` once (it now chains itself until every post is done); check the
   first runner runs' quality of `ai_more` (9B) by eye on 20 posts; real hand-labeled timing clips (P1-D, needs a person);
-  Playwright video test (P1-C) and UI test in CI; ~~follow button on /who/ pages~~ (done); build time 15 s → ~60 s (formatter cache
+  ~~Playwright video test (P1-C) and UI test in CI~~ (done); ~~follow button on /who/ pages~~ (done); build time 15 s → ~60 s (formatter cache
   added; profile `tehranDay`/`getFeed` next).
 
 ## Progress (2026-11-18, night)
@@ -73,11 +73,28 @@ Tick items off here; move anything that becomes a lasting rule into CLAUDE.md.
   `scripts/notify.mjs` → `/api/push` (https only) → `sw.js` `image` (Android/Windows); monochrome `badge-96.png`.
 - [x] **Follow on /who/ pages**: follows hold `who:<slug>` beside topics; story cards and `recent.json` carry them, so
   the home's «موضوع‌های من» and topic-mode notifications follow people and companies too.
-- [ ] **cilla-mini voices** (https://huggingface.co/mehdi-hf/cilla-mini, Pocket-TTS fine-tune, 3 speakers: parisa,
-  voice1, voice2): gated (needs an HF login + accepting its terms) and CC-BY-NC-4.0 (fine while the site is
-  non-commercial, credit required). PyTorch safetensors, not ONNX: needs an ONNX export (community Pocket-TTS
-  exporters exist, run with onnxruntime-web) + a JS port of its Persian normalizer, hosted where readers can download it
-  (the gate blocks anonymous downloads). Waiting on the owner: an HF token with access, and where to host the export.
+- [x] **Cilla Mini voices** (https://huggingface.co/mehdi-hf/cilla-mini, CC BY-NC 4.0, credited in the voice sheet):
+  three speakers (پریسا, سیلا ۱, سیلا ۲) sharing one 112 MB model, from the model's public demo Space
+  (`spaces/mehdi-hf/cilla-mini-demo`, pinned commit, same SHA-256 as the gated repo's file; hf-mirror.com as fallback),
+  downloaded by the existing worker (parts, resume, checked). Runs on `phonon-tts` 0.7.1 (npm, MIT/Apache, pinned,
+  bundled: its worker + WASM are served by the site) — `src/scripts/cilla.ts`, with the model's own Persian front end
+  (`src/vendor/cilla/`). One CPU thread (cross-origin isolation would block other hosts' pictures). No HF token needed.
+- [x] **English words in Persian letters** for the browser's voices (`server/_latin.js` via `sayLine(…, latin)`): the
+  lexicon first, then ~250 known names, acronyms by letters, versions/domains/dollars, spelling rules; one word → one
+  word (highlight intact); the cloud voice still reads English itself and its clip addresses don't change (`cloudOf`).
+  Open: once the runner writes `data/lexicon.json`, compare its spellings with these rules on 50 names.
+
+## Progress (2026-11-18, late): production hardening
+
+- [x] **Why the 18:27 run failed**: the /videos/ order test read every link on the page; once the runner summarized 7
+  episodes their category shelves came first. The test now checks the hero + the full grids, and each shelf newest
+  first. Story 6621 (a bare tweet, Gholam's comment empty) had `wordCount: 0`: a story without text counts its headline.
+- [x] **Workflow**: three tries for the crawl / pip / npm; data runs with failing site tests stay green, hold the
+  mirror back and keep one `site-health` issue (closes itself); code pushes also run the browser smoke test (`e2e`).
+- [x] **One-time sync of every post**: `ai-backfill.yml` stops starting chunks at 290 min and dispatches its next run
+  until nothing is pending (1,606 headlines, 3,071 extras, 49 episode summaries left on 2026-11-18); a run with no
+  progress stops the chain. **To do: dispatch it once after this is pushed** (Actions → ai-backfill → Run workflow).
+- [x] Playwright video test + UI test in CI (`tests/e2e/smoke.mjs`, 23 checks).
 
 ## Status snapshot (2026-11-17)
 

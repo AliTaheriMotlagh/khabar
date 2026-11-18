@@ -11,7 +11,7 @@ const items = digest?.digestItems ?? [];
 const SHOW = 4;
 // Latin names the lexicon's way (server/_say.js), as on every other list read aloud.
 const spoken = (l: { text: string; post: number; i: number }) => {
-  const s = sayLine(l.text, lexFor([l.text]));
+  const s = sayLine(l.text, lexFor([l.text]), true);
   return s.say === l.text ? l : { ...l, say: s.say, map: s.map };
 };
 const lines = digest ? [{ text: digest.article.title, post: digest.id, i: 0 }, ...items.map((it, k) => ({ text: `${faNum(it.n)} — ${it.text}`, post: digest.id, i: k + 1 }))].map(spoken) : [];

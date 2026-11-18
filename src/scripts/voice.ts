@@ -7,7 +7,7 @@
 // tokens.txt, picked from their files): it is stored next to the others and runs on the runtime and espeak-ng data of
 // a voice already downloaded here (see `custom` below).
 import { store } from './core';
-import { DEFAULT_VOICE, VOICES, mirrors, voiceById, type Voice } from '../lib/voices';
+import { DEFAULT_VOICE, VOICES, basesOf, mirrors, voiceById, type Voice, type VoiceFile } from '../lib/voices';
 
 /** Cache Storage name: public/sw.js must keep it when it clears old caches. Holds every downloaded voice. */
 export const VOICE_CACHE = 'voice-v1';
@@ -54,7 +54,7 @@ const customKey = (f: 'model.onnx' | 'tokens.txt') => `${KEYS}custom/${f}`;
 let customHere = false; // both files are in the cache (voiceStates() looks)
 export const customVoice = () => store.get<CustomVoice | null>('voice-custom', null);
 /** The downloaded voice whose runtime and espeak-ng data the reader's model runs on: the smallest one here. */
-const customBase = () => VOICES.filter((v) => states.get(v.id) === 'ready').sort((a, b) => a.files[3].size - b.files[3].size)[0];
+const customBase = () => VOICES.filter((v) => !v.engine && states.get(v.id) === 'ready').sort((a, b) => a.files[3].size - b.files[3].size)[0];
 function customSpeaking(): Speaking | undefined {
   const meta = customVoice();
   const base = customBase();
@@ -159,13 +159,16 @@ async function migrate(cache: Cache, keys: Set<string>) {
 
 /** Makes `id` the voice that speaks (or 'system'). The next clip comes from it; one already asked for is made again. */
 export function chooseVoice(id: string) {
+  const was = activeVoice()?.id;
   store.set('voice', id);
-  if (speaker && speaker.id !== activeVoice()?.id) stopSpeaker('dropped');
+  if ((speaker && speaker.id !== activeVoice()?.id) || (cillaOn && was !== activeVoice()?.id)) stopSpeaker('dropped');
 }
 
 // ---------- the worker that speaks ----------
 type Pending = { resolve(url: string): void; reject(e: Error): void; text: string };
 let speaker: { worker: Worker; id: string } | null = null;
+/** Cilla Mini is loaded (src/scripts/cilla.ts: phonon-tts, its own worker), not the sherpa-onnx one. */
+let cillaOn = false;
 let seq = 0;
 const pending = new Map<number, Pending>();
 
@@ -181,6 +184,10 @@ function failAll(msg: string) {
 function stopSpeaker(why: string) {
   speaker?.worker.terminate();
   speaker = null;
+  if (cillaOn) {
+    cillaOn = false;
+    void import('./cilla').then((m) => m.stopCilla(why));
+  }
   // Clips already made are in the old voice.
   for (const c of clips.values()) c.then((url) => setTimeout(() => URL.revokeObjectURL(url), 60_000), () => {});
   clips.clear();
@@ -241,7 +248,55 @@ addEventListener('pagehide', () => {
 /** Starts loading the model before its first clip is asked for (the reader is about to listen), so the voice starts
  *  a second or more sooner. Only once it's downloaded: loading takes hundreds of MB, so not on every page. */
 export function prepareVoice() {
-  if (voiceReady()) getSpeaker().postMessage({ t: 'load' });
+  const voice = activeVoice();
+  if (!voice) return;
+  if (voice.engine === 'cilla') return void cillaModule(voice).then((m) => m.prepareCilla(voice, storedFile, cillaHere()));
+  getSpeaker().postMessage({ t: 'load' });
+}
+
+// ---------- Cilla Mini (src/scripts/cilla.ts, loaded on first use) ----------
+/** A stored file of the voice store, whole: its parts as one Blob (no copy of 100 MB in memory). */
+async function storedFile(f: VoiceFile): Promise<Blob> {
+  const cache = await caches.open(VOICE_CACHE);
+  const parts: Blob[] = [];
+  for (let k = 0; k * PART < f.size; k++) {
+    const r = await cache.match(`${KEYS}${f.sha256}?part=${k}`);
+    if (!r) throw new Error('missing');
+    parts.push(await r.blob());
+  }
+  const b = new Blob(parts);
+  if (b.size !== f.size) throw new Error('missing');
+  return b;
+}
+/** The worker stores each file in parts this big (src/scripts/voice-worker.ts PART). */
+const PART = 8 * 1024 * 1024;
+/** The Cilla speakers downloaded here. */
+const cillaHere = () => VOICES.filter((v) => v.engine === 'cilla' && states.get(v.id) === 'ready');
+function cillaModule(_voice: Voice) {
+  // Coming from a sherpa-onnx voice: its model goes, its waiting requests are asked again.
+  if (speaker) stopSpeaker('dropped');
+  cillaOn = true;
+  return import('./cilla').catch((e) => {
+    cillaOn = false;
+    throw e;
+  });
+}
+function cillaClip(voice: Voice, text: string, urgent: boolean): Promise<string> {
+  const known = clips.get(text);
+  if (known) return known;
+  const clip = cillaModule(voice).then((m) => m.cillaClip(voice, text, urgent, storedFile, cillaHere()));
+  clip.catch((e: Error) => {
+    if (clips.get(text) === clip) clips.delete(text);
+    // The stored files went missing (the browser cleared them): download again.
+    if (e.message === 'missing') states.set(voice.id, 'partial');
+  });
+  clips.set(text, clip);
+  while (clips.size > CLIPS_MAX) {
+    const [oldest, p] = clips.entries().next().value!;
+    clips.delete(oldest);
+    p.then((url) => setTimeout(() => URL.revokeObjectURL(url), 60_000), () => {});
+  }
+  return clip;
 }
 
 /** Downloads what is missing of a voice (resuming a partial download, skipping files another voice brought), reporting
@@ -274,7 +329,7 @@ export function downloadVoice(id: string, progress: (loaded: number, total: numb
     };
     // Ask the browser not to clear it under storage pressure (best effort; Safari may still).
     navigator.storage?.persist?.().catch(() => {});
-    worker.postMessage({ t: 'init', cache: VOICE_CACHE, keys: KEYS, bases: mirrors(id), files: voice.files });
+    worker.postMessage({ t: 'init', cache: VOICE_CACHE, keys: KEYS, bases: basesOf(voice), files: voice.files });
     worker.postMessage({ t: 'download' });
   });
 }
@@ -307,7 +362,7 @@ export async function removeVoice(id: string) {
   if (loader?.id === id) loader.stop('cancelled');
   states.delete(id);
   // Reading with it: another downloaded voice takes over the sentence, if there is one.
-  if (speaker?.id === id) stopSpeaker(voiceReady() ? 'dropped' : 'removed');
+  if (speaker?.id === id || (cillaOn && voiceById(id)?.engine === 'cilla')) stopSpeaker(voiceReady() ? 'dropped' : 'removed');
   try {
     const keep = new Set(VOICES.filter((v) => v.id !== id && states.has(v.id)).flatMap((v) => v.files.map((f) => f.sha256)));
     // The reader's own model stays (it runs again once a voice is downloaded).
@@ -333,6 +388,8 @@ const CLIPS_MAX = 16;
 /** An object URL with the spoken text. `urgent`: the reader is waiting for it, so it goes before read-ahead work. */
 export function voiceClip(text: string, urgent = false): Promise<string> {
   if (!voiceReady()) return Promise.reject(new Error('no voice'));
+  const voice = activeVoice()!;
+  if (voice.engine === 'cilla') return cillaClip(voice, text, urgent);
   const worker = getSpeaker();
   const known = clips.get(text);
   if (known) {

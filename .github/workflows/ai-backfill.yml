@@ -1,7 +1,10 @@
-# AI headlines, topics and types for the older posts (pipeline/ai.py, PLAN.md P1-B): the crawl only does the last few
-# days. Run by hand (Actions → ai-backfill → Run workflow), as often as needed: each run takes the newest posts still
-# without an answer and commits them in chunks, so a crawl in between is never held up and nothing done is lost.
-# Free on a public repo's standard runner; the model comes from the same Actions cache as the crawl's.
+# The model's work for every older post (pipeline/ai.py headlines, pipeline/ai_more.py translations, extras and spoken
+# names, pipeline/videos.py episode summaries): the crawl only does the last few days. Start it once (Actions →
+# ai-backfill → Run workflow): each run takes the newest posts still without an answer, commits them in chunks (a crawl
+# in between is never held up, nothing done is lost), stops starting chunks before its time limit, and — `chain` —
+# dispatches the next run itself until every post has its answers. A run that made no progress doesn't chain (no
+# endless loop on a post the model can't do). Free on a public repo's standard runner; the model comes from the same
+# Actions cache as the crawl's.
 name: ai-backfill
 
 on:
@@ -18,9 +21,15 @@ on:
         default: 'both'
         type: choice
         options: [both, headlines, more]
+      chain:
+        description: 'start the next run by itself until every post is done'
+        default: true
+        type: boolean
 
 permissions:
   contents: write
+  # The next run of this workflow (a workflow_dispatch from GITHUB_TOKEN is allowed to start one).
+  actions: write
 
 concurrency:
   group: ai-backfill
@@ -40,13 +49,14 @@ jobs:
           cache: pip
           cache-dependency-path: pipeline/requirements.txt
       # yt-dlp for the episodes' subtitles (pipeline/videos.py --summarize).
-      - run: pip install -r pipeline/requirements.txt yt-dlp
+      - run: for i in 1 2 3; do pip install -q -r pipeline/requirements.txt yt-dlp && exit 0; sleep $((i * 15)); done; exit 1
       - uses: actions/cache@v6
         with:
           path: ~/.cache/khabar-ai
           key: ai-${{ runner.os }}-${{ hashFiles('scripts/ai-server.sh') }}
       - run: SERVE=llm scripts/ai-server.sh
       - name: Work out and commit, chunk by chunk
+        id: work
         env:
           TOTAL: ${{ inputs.posts }}
           CHUNK: ${{ inputs.chunk }}
@@ -54,19 +64,25 @@ jobs:
         run: |
           git config --global user.name 'github-actions[bot]'
           git config --global user.email '41898283+github-actions[bot]@users.noreply.github.com'
+          # Episodes without a summary of the current version (pipeline/videos.py SUMMARY_V).
+          videos_left() { python -c "import json; from pipeline.videos import SUMMARY_V; print(sum(1 for v in json.load(open('data/videos.json'))['videos'] if (v.get('ai') or {}).get('v') != SUMMARY_V))" 2>/dev/null || echo 0; }
           left=$TOTAL
-          while [ "$left" -gt 0 ]; do
+          # Stop starting chunks after 290 minutes: a chunk takes up to ~40, and the job is killed at 340.
+          deadline=$((SECONDS + 290 * 60))
+          progress=0
+          while [ "$left" -gt 0 ] && [ "$SECONDS" -lt "$deadline" ]; do
             n=$(( left < CHUNK ? left : CHUNK ))
             # Start from main as it is now: the crawl commits in between.
             git pull -q --rebase origin main
             core=0; more=0
             [ "$WHAT" != more ] && core=$(python -m pipeline.ai --pending --all)
             [ "$WHAT" != headlines ] && more=$(python -m pipeline.ai_more --pending --all --total)
-            [ $((core + more)) -gt 0 ] || { echo 'every post has its answers'; break; }
+            vids=0; [ "$WHAT" != headlines ] && vids=$(videos_left)
+            [ $((core + more + vids)) -gt 0 ] || { echo 'every post has its answers'; break; }
             [ "$core" -gt 0 ] && python -m pipeline.ai --all --limit=$n
             [ "$more" -gt 0 ] && AI_MORE_BUDGET=1e9 python -m pipeline.ai_more --all --limit=$n
             # Mehrzad's older episodes: a Persian summary each, from their subtitles, a few per chunk.
-            [ "$WHAT" != headlines ] && python -m pipeline.videos --summarize --limit=3 || true
+            [ "$WHAT" != headlines ] && { python -m pipeline.videos --summarize --limit=3 || true; }
             git add data
             git diff --cached --quiet && break
             git commit -qm "data: AI work for $n older posts"
@@ -77,6 +93,19 @@ jobs:
               sleep $((attempt * 5))
             done
             # A post the crawl changed meanwhile: drop this chunk, the next run (or chunk) does it again.
-            [ -n "$pushed" ] || { echo "::warning::chunk conflicted with a crawl; skipped"; git reset -q --hard FETCH_HEAD; }
+            [ -n "$pushed" ] && progress=1 || { echo "::warning::chunk conflicted with a crawl; skipped"; git reset -q --hard FETCH_HEAD; }
             left=$(( left - n ))
           done
+          echo "progress=$progress" >> "$GITHUB_OUTPUT"
+          core=0; more=0
+          [ "$WHAT" != more ] && core=$(python -m pipeline.ai --pending --all)
+          [ "$WHAT" != headlines ] && more=$(python -m pipeline.ai_more --pending --all --total)
+          videos=$(videos_left)
+          echo "left: $core headlines, $more extras, $videos video summaries" | tee -a "$GITHUB_STEP_SUMMARY"
+          [ "$WHAT" = headlines ] && videos=0
+          echo "pending=$((core + more + videos))" >> "$GITHUB_OUTPUT"
+      - name: Next run
+        if: inputs.chain && steps.work.outputs.progress == '1' && steps.work.outputs.pending != '0'
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: gh workflow run ai-backfill.yml --ref main -f posts='${{ inputs.posts }}' -f chunk='${{ inputs.chunk }}' -f what='${{ inputs.what }}' -f chain=true

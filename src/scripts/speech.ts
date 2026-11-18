@@ -11,7 +11,7 @@ import { SITE } from '../site';
 import { remoteAudio, remoteClip, remoteConfig } from './tts-remote';
 import { cloudSrc, keptRemote } from './offline-audio';
 import { store } from './core';
-import { sayOf, type Line } from '../lib/lines';
+import { cloudOf, sayOf, type Line } from '../lib/lines';
 import { chosenVoice, prepareVoice, sentences, voiceClip, voicePreferred, voiceReady, voiceState } from './voice';
 import { learnPace, prepare, type Clock } from './words';
 
@@ -35,7 +35,7 @@ export const chosenDeviceVoice = () => {
 const chosenRemote = () => chosenVoice() === 'remote' && !!remoteConfig();
 const tag = (s: string) => [...s].reduce((h, c) => (h * 33 + c.charCodeAt(0)) >>> 0, 5381).toString(36);
 // The text hash only changes the address (the server reads the text itself), so an edited paragraph isn't served stale.
-const clipUrl = (l: Line) => `${SITE.api}/api/tts/?${l.src ?? `id=${l.post}&i=${l.i}`}&v=${tag(sayOf(l))}`;
+const clipUrl = (l: Line) => `${SITE.api}/api/tts/?${l.src ?? `id=${l.post}&i=${l.i}`}&v=${tag(cloudOf(l))}`;
 /** 50 ms of silent WAV, played inside the tap while the on-device voice makes its first clip. */
 const SILENCE = URL.createObjectURL(new Blob([new Uint8Array([82, 73, 70, 70, 36, 9, 0, 0, 87, 65, 86, 69, 102, 109, 116, 32, 16, 0, 0, 0, 1, 0, 1, 0, 34, 86, 0, 0, 68, 172, 0, 0, 2, 0, 16, 0, 100, 97, 116, 97, 0, 9, 0, 0, ...new Array(2304).fill(0)])], { type: 'audio/wav' }));
 

@@ -10,14 +10,16 @@
     "test": "node --test tests/*.test.mjs",
     "test:pipeline": "python -m pytest -q pipeline/tests",
     "crawl": "python -m pipeline.run",
-    "serve": "node scripts/serve.mjs"
+    "serve": "node scripts/serve.mjs",
+    "test:e2e": "node tests/e2e/smoke.mjs"
   },
   "dependencies": {
     "@astrojs/rss": "^4.0.19",
     "@astrojs/sitemap": "^3.7.4",
     "@fontsource-variable/vazirmatn": "^5.3.0",
     "astro": "^7.4.2",
-    "mediabunny": "1.61.4"
+    "mediabunny": "1.61.4",
+    "phonon-tts": "0.7.1"
   },
   "devDependencies": {
     "@astrojs/check": "^0.9.12",

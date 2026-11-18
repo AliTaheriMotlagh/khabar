@@ -1,24 +1,37 @@
 // The spoken form of a line (PLAN.md P2-2): Latin names and symbols replaced by how a Persian voice should say them,
 // from the lexicon entries a story uses (its card.json `lex`, from data/lexicon.json). Shared by the cloud voice
 // (server/tts.js) and the browser (src/lib/lines.ts: the device's and the downloaded voices, and the word highlight,
-// which maps a spoken word back to the shown one). Plain JS, no imports.
+// which maps a spoken word back to the shown one). With `latin`, a Latin word the lexicon doesn't have is written in
+// Persian letters too (server/_latin.js): the browser's voices only read Persian (Cilla Mini drops every other letter);
+// the cloud voice reads English itself and doesn't ask for it.
+import { latinWord } from './_latin.js';
 
 const TOKEN = /\$\d[\d,.]*\s?[KMBT]?\b|[A-Za-z][\w.+&'/-]*/g;
 const trim = (s) => s.replace(/[.,'/&-]+$/, '');
 
-/** { say, map }: `map` is a list of [sayFrom, textFrom, sayLen, textLen] for each replaced word, in order. */
-export function sayLine(text, lex) {
-  if (!lex || !/[A-Za-z$]/.test(text)) return { say: text, map: [] };
-  const low = new Map(Object.entries(lex).map(([k, v]) => [k.toLowerCase(), v]));
+/** { say, map }: `map` is a list of [sayFrom, textFrom, sayLen, textLen, latin?] for each replaced word, in order. */
+const SCALE = { K: 'هزار', M: 'میلیون', B: 'میلیارد', T: 'تریلیون' };
+/** «$5B» → «پنج‌میلیارد‌دلار» (one word, as the token is). */
+function dollars(token) {
+  const m = token.match(/^\$(\d[\d,.]*)\s?([KMBT])?$/);
+  if (!m) return null;
+  const n = latinWord(m[1].replace(/,/g, ''));
+  return [n, m[2] && SCALE[m[2]], 'دلار'].filter(Boolean).join('‌');
+}
+export function sayLine(text, lex, latin = false) {
+  if ((!lex && !latin) || !/[A-Za-z$]/.test(text)) return { say: text, map: [] };
+  const low = new Map(Object.entries(lex ?? {}).map(([k, v]) => [k.toLowerCase(), v]));
   let say = '';
   let last = 0;
   const map = [];
   for (const m of text.matchAll(TOKEN)) {
     const word = trim(m[0]);
-    const to = low.get(word.toLowerCase());
+    const known = low.get(word.toLowerCase());
+    const to = known ?? (latin ? (word.startsWith('$') ? dollars(word) : latinWord(word)) : undefined);
     if (!to) continue;
     say += text.slice(last, m.index);
-    map.push([say.length, m.index, to.length, word.length]);
+    // A fifth field marks a Persian spelling of this file's own (not the lexicon's): the cloud voice says the original.
+    map.push(known ? [say.length, m.index, to.length, word.length] : [say.length, m.index, to.length, word.length, 1]);
     say += to;
     last = m.index + word.length;
   }

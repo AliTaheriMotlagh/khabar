@@ -17,13 +17,27 @@ export type Line = {
 };
 export type Lex = Record<string, string> | undefined;
 
+// The browser's voices read Persian only: English words are said in Persian letters (server/_latin.js) when the
+// lexicon has no spelling of its own. The cloud voice (server/tts.js) reads the text itself, English included.
 const spoken = (l: Line, lex: Lex): Line => {
-  if (!lex) return l;
-  const { say, map } = sayLine(l.text, lex);
+  const { say, map } = sayLine(l.text, lex, true);
   return say === l.text ? l : { ...l, say, map };
 };
 /** What a voice reads for a line. */
 export const sayOf = (l: Line) => l.say ?? l.text;
+/** What the cloud voice reads (server/tts.js: the lexicon's spellings, English left as it is): its clips' addresses
+ *  hash this, so they stay the ones the CDN already keeps. */
+export function cloudOf(l: Line) {
+  if (!l.say || !l.map?.some((m) => m[4])) return sayOf(l);
+  let out = '';
+  let last = 0;
+  for (const [sf, tf, sl, tl, latin] of l.map) {
+    if (!latin) continue;
+    out += l.say.slice(last, sf) + l.text.slice(tf, tf + tl);
+    last = sf + sl;
+  }
+  return out + l.say.slice(last);
+}
 /** A character of what was said → the same place in the shown text. */
 export const shownAt = (l: Line, i: number) => (l.map?.length ? toShown(l.map, i) : i);
 

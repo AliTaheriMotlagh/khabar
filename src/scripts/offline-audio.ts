@@ -6,7 +6,7 @@
 // read once at start), so every other request goes to the network untouched.
 import { SITE } from '../site';
 import { BASE, store } from './core';
-import { cardLines, sayOf, type Card, type Line } from '../lib/lines';
+import { cardLines, cloudOf, sayOf, type Card, type Line } from '../lib/lines';
 import { remoteAudio, remoteConfig } from './tts-remote';
 
 export const AUDIO_CACHE = 'audio-v1';
@@ -84,7 +84,7 @@ export async function keepStory(id: number, kind: Kind, step: () => void) {
     if (!kept.has(key)) {
       let res: Response;
       if (kind === 'cloud') {
-        res = await fetch(`${SITE.api}/api/tts/?id=${l.post}&i=${l.i}&v=${hashOf(sayOf(l))}`);
+        res = await fetch(`${SITE.api}/api/tts/?id=${l.post}&i=${l.i}&v=${hashOf(cloudOf(l))}`);
         if (!res.ok) throw new Error(`tts ${res.status}`);
       } else res = new Response(await remoteAudio(sayOf(l)), { headers: { 'Content-Type': 'audio/mpeg' } });
       await cache.put(key, res);

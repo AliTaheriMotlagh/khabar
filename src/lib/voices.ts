@@ -16,6 +16,25 @@ export const REVISION = 'c17064a360099d72cf3973cfdaaddc46acf98bfb';
 /** Where a package's files are: Hugging Face, then a mirror for networks where it is blocked. */
 export const mirrors = (pkg: string) => [`https://huggingface.co/${REPO}/resolve/${REVISION}/wasm-${pkg}/`, `https://hf-mirror.com/${REPO}/resolve/${REVISION}/wasm-${pkg}/`];
 
+// Cilla Mini (https://huggingface.co/mehdi-hf/cilla-mini, CC BY-NC 4.0 — fine while the site is non-commercial, credited
+// in the voice sheet): an 18M-parameter Pocket-TTS model trained for Persian, three speakers. The model repo is gated,
+// so the files come from its public demo Space (the same model.safetensors, by SHA-256), pinned to a commit. It runs on
+// phonon-tts (npm, MIT/Apache, pinned in package.json; served from this site) in its own worker: src/scripts/cilla.ts.
+// Persian text only: English words are spelled in Persian first (server/_latin.js). `rtf` measured in Chrome on an
+// Apple M-series core, one thread (the preview sentence of scripts/voices.mjs); gender from the clip's pitch (216, 188,
+// 108 Hz). The speakers have no names of their own (parisa, voice1, voice2): سیلا and سینا are the site's.
+export const CILLA_SPACE = 'spaces/mehdi-hf/cilla-mini-demo';
+export const CILLA_REVISION = '4e521dd7adb9538dfdfeee989b002dc769441510';
+const CILLA_BASES = [`https://huggingface.co/${CILLA_SPACE}/resolve/${CILLA_REVISION}/model/`, `https://hf-mirror.com/${CILLA_SPACE}/resolve/${CILLA_REVISION}/model/`];
+const CILLA_FILES: VoiceFile[] = [
+  { name: 'config.json', size: 2032, sha256: '932493336044e1362b2c61242b9619c54e0934c405d8e6ad1b0c838dfc2840ab' },
+  { name: 'tokenizer.json', size: 742883, sha256: 'b0795fa87284dd682bdf2e7842dd1c22e4e31fbf8b8d0c7a2a0ad7402257766d' },
+  { name: 'model.safetensors', size: 111736656, sha256: '716b41ee28ca2d26877aa6074c3cc93e1dd7cbc2879252b2ec2527e9d34cecd3' },
+];
+const cilla = (speaker: string, size: number, sha256: string): VoiceFile[] => [...CILLA_FILES, { name: `voices/${speaker}.safetensors`, size, sha256 }];
+/** Where a voice's files are downloaded from, best first. */
+export const basesOf = (v: Pick<Voice, 'id' | 'engine'>) => (v.engine === 'cilla' ? CILLA_BASES : mirrors(v.id));
+
 export type VoiceFile = { name: string; size: number; sha256: string };
 export type Voice = {
   /** The package's folder on Hugging Face, without "wasm-". Stored as the reader's choice: never rename one. */
@@ -37,6 +56,10 @@ export type Voice = {
   config: unknown;
   /** Speaker number, for a model with several. */
   sid?: number;
+  /** Not sherpa-onnx: Cilla Mini on phonon-tts (src/scripts/cilla.ts). Its files are [config, tokenizer, model,
+   *  speaker]; `speaker` names the speaker's file. */
+  engine?: 'cilla';
+  speaker?: string;
 };
 
 const GLUE: VoiceFile = { name: 'sherpa-onnx-tts.js', size: 25933, sha256: '51c0523f16a864ec942409aa0fe6e80a581bfb54a492ed94ecbdce491f9e9a79' };
@@ -51,6 +74,7 @@ const tts = (model: object) => ({ offlineTtsModelConfig: { ...model, numThreads:
 const vits = (onnx: string) => tts({ offlineTtsVitsModelConfig: { model: `./${onnx}`, lexicon: '', tokens: './tokens.txt', dataDir: './espeak-ng-data', noiseScale: 0.667, noiseScaleW: 0.8, lengthScale: 1 } });
 const matcha = () => tts({ offlineTtsMatchaModelConfig: { acousticModel: './model.onnx', vocoder: './vocos-22khz-univ.onnx', lexicon: '', tokens: './tokens.txt', dataDir: './espeak-ng-data', noiseScale: 0.667, lengthScale: 1 } });
 
+const CILLA_ABOUT = 'نسل تازه (Cilla Mini)، طبیعی‌ترین لحن فارسی؛ یک مدل برای هر سه گوینده';
 /** In the picker's order: the recommended one first. */
 export const VOICES: Voice[] = [
   {
@@ -74,6 +98,42 @@ export const VOICES: Voice[] = [
     rtf: 0.3,
     files: pack([119743, '922127a5338db3e1bc2c08796a08f9f7b0900ecbf9afc7e89f18c01acaa399d7'], [36573501, 'd324602a63fcb44d6007323971ffcb4baff17943d68a7a04488770852fc88910']),
     config: vits('fa_IR-ganji-medium.onnx'),
+  },
+  {
+    id: 'cilla-mini-parisa',
+    family: 'cilla_parisa',
+    name: 'پریسا',
+    about: CILLA_ABOUT,
+    gender: 'زن',
+    rtf: 0.1,
+    files: cilla('parisa', 133208, '56d10cd175ae20011cc492c5b4ec716ceb7c873f88b24d9adf44fcf01bb38a1f'),
+    config: null,
+    engine: 'cilla',
+    speaker: 'parisa',
+  },
+  {
+    id: 'cilla-mini-voice1',
+    family: 'cilla_voice1',
+    name: 'سیلا',
+    about: CILLA_ABOUT,
+    gender: 'زن',
+    rtf: 0.18,
+    files: cilla('voice1', 110680, '33a9cce6c751d3231669187ca5e576bf13e8d425349396a115a94387cb7c7d47'),
+    config: null,
+    engine: 'cilla',
+    speaker: 'voice1',
+  },
+  {
+    id: 'cilla-mini-voice2',
+    family: 'cilla_voice2',
+    name: 'سینا',
+    about: CILLA_ABOUT,
+    gender: 'مرد',
+    rtf: 0.19,
+    files: cilla('voice2', 118872, '1a6e247d9a0a5a81b0d8f34b0ae2e218e9796cf19c5cc98fdb7b394b3c88c0cf'),
+    config: null,
+    engine: 'cilla',
+    speaker: 'voice2',
   },
   {
     id: 'matcha-fa-en-khadijah',

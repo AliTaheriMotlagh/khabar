@@ -28,6 +28,8 @@ permissions:
   contents: write
   pages: write
   id-token: write
+  # The site-health issue (scripts/health-issue.mjs).
+  issues: write
 
 concurrency:
   group: site
@@ -41,6 +43,8 @@ jobs:
     outputs:
       deploy: ${{ steps.commit.outputs.deploy }}
       latest: ${{ steps.latest.outputs.latest }}
+      # The site tests passed: the Pages artifact was uploaded.
+      mirror: ${{ steps.sitetests.outcome == 'success' }}
     steps:
       # main as it is now, not the commit that triggered the run: a run can sit queued for over an hour, and crawling
       # on top of that old commit re-adds posts later runs already committed (add/add conflicts on data/posts).
@@ -54,7 +58,8 @@ jobs:
           cache: pip
           cache-dependency-path: pipeline/requirements.txt
       # yt-dlp unpinned on purpose: YouTube changes often and only a current yt-dlp keeps up (pipeline/videos.py).
-      - run: pip install -r pipeline/requirements.txt pytest yt-dlp
+      # Network steps get three tries: a registry or t.me hiccup shouldn't fail a run the next minute would pass.
+      - run: for i in 1 2 3; do pip install -q -r pipeline/requirements.txt pytest yt-dlp && exit 0; sleep $((i * 15)); done; exit 1
       # The scheduled run only adds data to code that already passed on its push.
       - run: python -m pytest -q pipeline/tests
         if: github.event_name != 'schedule'
@@ -70,7 +75,12 @@ jobs:
           # Posts older than 48 hours get Gholam's translation from backfill_gholam, 40 per run by default: a backfill
           # looks for all of them at once, so the older posts arrive in Persian (and listed) in the same run.
           backfill=40; [ "$pages" -gt 3 ] && backfill=$((pages * 20))
-          PAGES="$pages" GHOLAM_BACKFILL="$backfill" python -m pipeline.run
+          # t.me is often slow from the runners: try three times (the crawl only writes complete posts, so a retry is safe).
+          for i in 1 2 3; do
+            PAGES="$pages" GHOLAM_BACKFILL="$backfill" python -m pipeline.run && exit 0
+            echo "::warning::crawl attempt $i failed"; sleep $((i * 30))
+          done
+          exit 1
 
       # Mehrzad's YouTube channel → data/videos.json (/videos/): the whole list once a day, or now when a post shares a
       # video it doesn't have yet. Never fails the run: the site keeps the list it has.
@@ -155,7 +165,7 @@ jobs:
         with:
           node-version: 24
           cache: npm
-      - run: npm ci
+      - run: for i in 1 2 3; do npm ci --no-audit --no-fund && exit 0; sleep $((i * 15)); done; exit 1
         if: steps.commit.outputs.deploy == 'true'
       - run: npm test
         if: github.event_name == 'push'
@@ -177,13 +187,46 @@ jobs:
         if: steps.commit.outputs.deploy == 'true'
         run: echo "latest=$(node -p "require('./dist/build.json').latest")" >> "$GITHUB_OUTPUT"
       # The built timeline and stories against the crawled data: order, days, times and counts (tests/site.test.mjs).
-      - run: node --test tests/site.test.mjs
+      # On a code push a failure fails the run. On a data run it holds the Pages mirror back (it keeps its last good
+      # build; Vercel serves the data regardless) and is reported once, in the site-health issue, which closes itself
+      # when they pass again — not as a red run and an email every 20 minutes.
+      - id: sitetests
+        name: Site tests
         if: steps.commit.outputs.deploy == 'true'
+        continue-on-error: ${{ github.event_name != 'push' }}
+        run: |
+          set -o pipefail
+          node --test tests/site.test.mjs 2>&1 | tee site-tests.log
+      - name: Site health issue
+        if: always() && steps.sitetests.outcome != '' && steps.sitetests.outcome != 'skipped' && github.event_name != 'push'
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: node scripts/health-issue.mjs ${{ steps.sitetests.outcome }} site-tests.log
 
       - uses: actions/upload-pages-artifact@v5
-        if: steps.commit.outputs.deploy == 'true'
+        if: steps.commit.outputs.deploy == 'true' && steps.sitetests.outcome == 'success'
         with:
           path: dist
+
+  # Code pushes only: the built site in a real Chrome (tests/e2e/smoke.mjs) — every kind of page without a script error,
+  # the voice sheet, a news video made and played back, made in the background, an episode teaser. A data run changes
+  # no code, so it doesn't run this. Beside the build, not in front of it: a red X on the push is the signal.
+  e2e:
+    if: github.event_name == 'push'
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v7
+        with:
+          ref: main
+      - uses: actions/setup-node@v7
+        with:
+          node-version: 24
+          cache: npm
+      - run: for i in 1 2 3; do npm ci --no-audit --no-fund && exit 0; sleep $((i * 15)); done; exit 1
+      - run: npm run build
+      # The runner's own Google Chrome (Playwright's `chrome` channel): no browser download.
+      - run: node tests/e2e/smoke.mjs
 
   # Readers with notifications on hear about the new stories once Vercel serves them (scripts/notify.mjs). Beside the
   # Pages deploy, not before it: waiting for Vercel can take minutes. Off (a no-op) without the PUSH_SECRET secret.
@@ -226,7 +269,7 @@ jobs:
 
   deploy:
     needs: build
-    if: needs.build.outputs.deploy == 'true'
+    if: needs.build.outputs.deploy == 'true' && needs.build.outputs.mirror == 'true'
     runs-on: ubuntu-latest
     environment:
       name: github-pages

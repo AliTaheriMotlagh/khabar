@@ -277,10 +277,18 @@ test('videos: a page per video of data/videos.json, newest first, and a feed who
   if (!fs.existsSync(file)) return;
   const videos = JSON.parse(fs.readFileSync(file, 'utf8')).videos;
   const index = fs.readFileSync(path.join(dist, 'videos/index.html'), 'utf8');
-  const order = [...index.matchAll(/href="[^"]*\/videos\/([\w-]{11})\/"/g)].map((m) => m[1]).filter((id, i, a) => a.indexOf(id) === i);
-  // The newest on top, then the episodes and then the lives, each newest first.
+  const ids = (html) => [...html.matchAll(/href="[^"]*\/videos\/([\w-]{11})\/"/g)].map((m) => m[1]);
+  // The newest on top, then every episode and then the lives, each newest first (the grids). The category shelves
+  // between them (once the model has summarized episodes) hold some of them again, each shelf newest first too.
   const [hero, ...rest] = videos;
-  assert.deepEqual(order, [hero, ...rest.filter((v) => !v.live), ...rest.filter((v) => v.live)].map((v) => v.id), 'every video, newest first');
+  const heroId = ids(index.match(/<a class="vd-hero"[^>]*>/)?.[0] ?? '')[0];
+  const grids = [...index.matchAll(/<ul class="vd-grid">([\s\S]*?)<\/ul>/g)].flatMap((m) => ids(m[1]));
+  assert.deepEqual([heroId, ...grids], [hero, ...rest.filter((v) => !v.live), ...rest.filter((v) => v.live)].map((v) => v.id), 'every video, newest first');
+  const rank = new Map(videos.map((v, i) => [v.id, i]));
+  for (const [, shelf] of index.matchAll(/<ul class="vd-row">([\s\S]*?)<\/ul>/g)) {
+    const r = ids(shelf).filter((id, i, a) => a.indexOf(id) === i).map((id) => rank.get(id));
+    assert.deepEqual(r, [...r].sort((x, y) => x - y), 'a shelf, newest first');
+  }
   for (const v of videos) assert.ok(fs.existsSync(path.join(dist, `videos/${v.id}/index.html`)), `${v.id}: its page`);
   const xml = fs.readFileSync(path.join(dist, 'rss/videos.xml'), 'utf8');
   assert.equal((xml.match(/<item>/g) ?? []).length, videos.length);

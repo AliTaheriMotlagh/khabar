@@ -57,6 +57,7 @@ const sizes = VOICES.map(voiceBytes);
               </div>
               <div class="vo-body" id={`vo-${v.family}`} hidden>
                 <p class="vo-about">{v.about}</p>
+                {v.engine === 'cilla' && <p class="vo-credit">مدل <a href="https://huggingface.co/mehdi-hf/cilla-mini" target="_blank" rel="noopener">Cilla Mini</a> از mehdi-hf · مجوز CC BY-NC 4.0 · روی همین دستگاه اجرا می‌شود</p>}
                 {builds.length > 1 && (
                   <div class="seg vo-builds" role="radiogroup" aria-label="نسخه">
                     {builds.map((b, i) => (

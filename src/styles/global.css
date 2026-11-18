@@ -1422,6 +1422,8 @@ body:has(.player) :is(.site-header, .tabbar, .site-footer, .to-top, .offline-bar
 .vd-teaser .i { width: 14px; height: 14px; }
 .vd-row > li, .vd-grid > li { display: grid; align-content: start; }
 .vd-hero-acts { margin: 10px 0 4px; }
+.vo-credit { margin: 4px 0 0; font-size: 12px; color: var(--text-3); }
+.vo-credit a { color: inherit; }
 .vd-back { display: inline-flex; align-items: center; gap: 4px; margin-top: 18px; font-size: 13.5px; text-decoration: none; }
 .vd-page .article-head .muted { margin: 0; font-size: 13.5px; }
 .vd-watch { display: block; margin: 8px 0 12px; }

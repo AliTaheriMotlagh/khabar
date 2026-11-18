@@ -22,7 +22,7 @@ function sayOf(p: Post) {
   const out: { i: number; text: string; say?: string; map?: number[][] }[] = [];
   // Latin names the lexicon's way (server/_say.js); the caption shows the text as written.
   const spoken = (text: string) => {
-    const s = sayLine(text, lexFor([text]));
+    const s = sayLine(text, lexFor([text]), true);
     return s.say === text ? {} : { say: s.say, map: s.map };
   };
   let n = 0;
