@@ -203,6 +203,36 @@
    "name_en": "Wired",
    "name_fa": "وایرد",
    "kind": "company"
+  },
+  {
+   "slug": "vals-ai",
+   "name_en": "Vals AI",
+   "name_fa": "والز ای‌آی",
+   "kind": "company"
+  },
+  {
+   "slug": "autoform-hard",
+   "name_en": "Autoform-Hard",
+   "name_fa": "اتو‌فرم هارد",
+   "kind": "product"
+  },
+  {
+   "slug": "lean",
+   "name_en": "Lean",
+   "name_fa": "لین",
+   "kind": "product"
+  },
+  {
+   "slug": "mathlib",
+   "name_en": "Mathlib",
+   "name_fa": "مات‌لیب",
+   "kind": "product"
+  },
+  {
+   "slug": "waymo",
+   "name_en": "Waymo",
+   "name_fa": "ویمو",
+   "kind": "company"
   }
  ]
 }
