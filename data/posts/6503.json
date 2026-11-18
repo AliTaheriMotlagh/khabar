@@ -57,5 +57,17 @@
    "متن‌باز"
   ]
  },
- "updated": "2026-11-16T18:44:24+00:00"
+ "updated": "2026-11-16T18:44:24+00:00",
+ "ai": {
+  "title": "Thinking Machines مدل Inkling 2 Small را با مجوز آپاچی منتشر کرد",
+  "short": "Inkling 2 Small آزاد شد",
+  "topics": [
+   "متن‌باز",
+   "آنتروپیک"
+  ],
+  "type": "ابزار و محصول",
+  "model": "qwen3.5-9b-q4_k_m",
+  "v": 1,
+  "src": "fe29ecb2bfbf"
+ }
 }

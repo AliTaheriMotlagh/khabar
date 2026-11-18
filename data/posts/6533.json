@@ -52,5 +52,16 @@
    "علم"
   ]
  },
- "updated": "2026-11-15T04:22:23+00:00"
+ "updated": "2026-11-15T04:22:23+00:00",
+ "ai": {
+  "title": "کاربر آلون آمیت از پاسخ فوری مدل Carbon با سطح Thinking Low تعجب کرد",
+  "short": "Carbon با Thinking Low",
+  "topics": [
+   "آنتروپیک"
+  ],
+  "type": "نظر و تحلیل",
+  "model": "qwen3.5-9b-q4_k_m",
+  "v": 1,
+  "src": "afa93b31563a"
+ }
 }
