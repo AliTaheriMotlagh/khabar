@@ -1,0 +1,223 @@
+"""Mehrzad's YouTube channel as data/videos.json, for the site's /videos/ section (PLAN.md P1-A).
+
+Three sources, merged by video id:
+- the channel's Telegram posts that share a video of his (always there; brings Gholam's Persian when he wrote one);
+- yt-dlp (`--flat-playlist` on /videos and /streams for the list, then the full metadata of new ids only: date,
+  duration, description, chapters). GitHub's runners reach YouTube; the dev machine doesn't. Once a day (VIDEOS_EVERY_H);
+- the channel's RSS feed (newest 15) when yt-dlp is missing or YouTube blocks it.
+
+    python -m pipeline.videos            # update data/videos.json (yt-dlp/RSS when due, the posts always)
+    python -m pipeline.videos --posts    # only from the posts, no network
+"""
+from __future__ import annotations
+
+import json
+import os
+import re
+import shutil
+import subprocess
+import sys
+import xml.etree.ElementTree as ET
+from datetime import datetime, timedelta, timezone
+from typing import Optional
+
+import httpx
+
+from . import config, enrich, shape
+
+CHANNEL_URL = os.getenv("YT_CHANNEL", "https://www.youtube.com/@mehrzad.samadi")
+VIDEOS = config.DATA_DIR / "videos.json"
+EVERY_H = float(os.getenv("VIDEOS_EVERY_H", "20"))
+DESC_MAX = 3000
+
+# «51. Beni: Camera Robot [Persian]» → episode 51; «Live 1: News and Graph Engineering» → live 1.
+EPISODE_RE = re.compile(r"^\s*(\d+)\s*[.\-–:]\s*(.+?)\s*(?:\[(?:Persian|فارسی)\])?\s*$", re.I)
+LIVE_RE = re.compile(r"^\s*Live\s*(\d+)\s*[:\-–]\s*(.+?)\s*$", re.I)
+CHAPTER_RE = re.compile(r"^\s*(?:\(?)((?:\d{1,2}:)?\d{1,2}:\d{2})(?:\)?)\s*[-–—:]?\s*(.+?)\s*$")
+LINK_RE = re.compile(r"https?://[^\s)>\]]+")
+
+
+def parse_title(title: str) -> dict:
+    live = LIVE_RE.match(title or "")
+    if live:
+        return {"n": int(live.group(1)), "name": live.group(2), "live": True}
+    ep = EPISODE_RE.match(title or "")
+    if ep:
+        return {"n": int(ep.group(1)), "name": ep.group(2), "live": False}
+    return {"n": None, "name": (title or "").strip(), "live": False}
+
+
+def _seconds(stamp: str) -> int:
+    parts = [int(p) for p in stamp.split(":")]
+    s = 0
+    for p in parts:
+        s = s * 60 + p
+    return s
+
+
+def chapters(description: str) -> list[dict]:
+    """Chapters from the description's timestamps ("00:00 Intro"), when it starts at 0 and has at least 3."""
+    out = []
+    for line in (description or "").splitlines():
+        m = CHAPTER_RE.match(line)
+        if m:
+            out.append({"t": _seconds(m.group(1)), "title": m.group(2)})
+    return out if len(out) >= 3 and out[0]["t"] == 0 else []
+
+
+def links(description: str) -> list[str]:
+    seen = []
+    for url in LINK_RE.findall(description or ""):
+        url = url.rstrip(".,;")
+        if url not in seen and not re.search(r"youtube\.com/@|youtube\.com/channel|t\.me/|instagram\.com|linkedin\.com", url):
+            seen.append(url)
+    return seen[:12]
+
+
+# ---- sources ----
+
+def from_posts() -> dict[str, dict]:
+    """Videos the channel shared itself as a bare link: Mehrzad's episodes and lives."""
+    found: dict[str, dict] = {}
+    for path in config.POSTS_DIR.glob("*.json"):
+        post = json.loads(path.read_text("utf-8"))
+        if post.get("digest") or post.get("forwarded_from"):
+            continue
+        if len(re.findall(r"[^\W\d_]", re.sub(r"https?://\S+", "", post.get("text", "")))) > 40:
+            continue
+        urls = [post.get("text", "")] + [l.get("url", "") for l in post.get("links") or []] + [(post.get("preview") or {}).get("url") or ""]
+        vid = next((m.group(1) for u in urls if (m := enrich.YOUTUBE_RE.search(u))), None)
+        if not vid:
+            continue
+        titles = [l.get("title") for l in post.get("links") or [] if l.get("kind") == "youtube" or "youtu" in l.get("url", "")]
+        titles.append((post.get("preview") or {}).get("title"))
+        title = next((t for t in titles if t and not shape.WALL_TITLE.search(t)), None)
+        meta = parse_title(title or "")
+        # Only his series («NN. … [Persian]», «Live N: …»): not every video the channel links to is his.
+        if not title or meta["n"] is None:
+            continue
+        prev = found.get(vid)
+        if prev and prev["post"] < post["id"]:
+            continue  # the first post about it is the announcement
+        found[vid] = {"id": vid, "title": title, "date": post["date"][:10], "post": post["id"]}
+    return found
+
+
+def _yt_dlp(*args: str) -> Optional[dict]:
+    exe = shutil.which("yt-dlp")
+    if not exe:
+        return None
+    try:
+        out = subprocess.run([exe, "--no-warnings", "--ignore-no-formats-error", "-J", *args], capture_output=True, text=True, timeout=240, check=True)
+        return json.loads(out.stdout)
+    except (subprocess.SubprocessError, json.JSONDecodeError) as exc:
+        print(f"  ! yt-dlp {' '.join(args)}: {str(exc)[:300]}")
+        return None
+
+
+def from_yt_dlp(known: dict[str, dict]) -> tuple[dict[str, dict], Optional[str]]:
+    """The channel's whole list, and full metadata for ids not known yet (or known without a description)."""
+    found: dict[str, dict] = {}
+    channel_id = None
+    for tab, live in (("videos", False), ("streams", True)):
+        data = _yt_dlp("--flat-playlist", f"{CHANNEL_URL}/{tab}")
+        if not data:
+            continue
+        channel_id = channel_id or data.get("channel_id") or data.get("id")
+        for e in data.get("entries") or []:
+            if e.get("id") and e.get("title"):
+                found[e["id"]] = {"id": e["id"], "title": e["title"], "duration": e.get("duration"), **({"live": True} if live else {})}
+    for vid, v in found.items():
+        if (known.get(vid) or {}).get("description") is not None:
+            continue
+        full = _yt_dlp("--skip-download", f"https://www.youtube.com/watch?v={vid}")
+        if not full:
+            continue
+        up = full.get("upload_date") or ""
+        v.update({
+            "title": full.get("title") or v["title"],
+            "date": f"{up[:4]}-{up[4:6]}-{up[6:8]}" if len(up) == 8 else None,
+            "duration": full.get("duration") or v.get("duration"),
+            "description": (full.get("description") or "")[:DESC_MAX],
+            "chapters": [{"t": int(c["start_time"]), "title": c["title"]} for c in full.get("chapters") or []] or None,
+        })
+    return found, channel_id
+
+
+def from_rss(http: httpx.Client, channel_id: str) -> dict[str, dict]:
+    ns = {"a": "http://www.w3.org/2005/Atom", "yt": "http://www.youtube.com/xml/schemas/2015", "media": "http://search.yahoo.com/mrss/"}
+    resp = http.get(f"https://www.youtube.com/feeds/videos.xml?channel_id={channel_id}")
+    resp.raise_for_status()
+    found = {}
+    for entry in ET.fromstring(resp.content).findall("a:entry", ns):
+        vid = entry.findtext("yt:videoId", namespaces=ns)
+        desc = entry.findtext("media:group/media:description", namespaces=ns)
+        if vid:
+            found[vid] = {"id": vid, "title": entry.findtext("a:title", namespaces=ns), "date": (entry.findtext("a:published", namespaces=ns) or "")[:10],
+                          **({"description": desc[:DESC_MAX]} if desc is not None else {})}
+    return found
+
+
+# ---- the file ----
+
+def load() -> dict:
+    if VIDEOS.exists():
+        return json.loads(VIDEOS.read_text("utf-8"))
+    return {"channel": {"url": CHANNEL_URL, "id": None}, "checked": None, "videos": []}
+
+
+def merge(old: dict, *sources: dict[str, dict]) -> list[dict]:
+    """Every source's fields over the stored ones, a field only replaced by a real value."""
+    by_id = {v["id"]: dict(v) for v in old.get("videos", [])}
+    for src in sources:
+        for vid, v in src.items():
+            cur = by_id.setdefault(vid, {"id": vid})
+            for k, val in v.items():
+                if val not in (None, "", []):
+                    cur[k] = val
+    out = []
+    for v in by_id.values():
+        meta = parse_title(v.get("title", ""))
+        v["n"], v["name"] = meta["n"], meta["name"]
+        v["live"] = bool(v.get("live") or meta["live"])
+        if v.get("description"):
+            v["chapters"] = v.get("chapters") or chapters(v["description"]) or None
+            v["links"] = links(v["description"]) or None
+        out.append({k: val for k, val in v.items() if val is not None})
+    # Newest first: by date, then by number.
+    return sorted(out, key=lambda v: (v.get("date") or "", v.get("n") or 0), reverse=True)
+
+
+def update(network: bool = True) -> bool:
+    data = load()
+    posts = from_posts()
+    checked = data.get("checked")
+    due = network and (not checked or datetime.fromisoformat(checked) < datetime.now(timezone.utc) - timedelta(hours=EVERY_H))
+    # A post shares a video the file doesn't have yet: a new episode, look now.
+    known = {v["id"] for v in data.get("videos", [])}
+    due = due or (network and any(vid not in known for vid in posts))
+    sources = [posts]
+    if due:
+        listed, channel_id = from_yt_dlp({v["id"]: v for v in data.get("videos", [])})
+        if channel_id:
+            data["channel"]["id"] = channel_id
+        if listed:
+            sources.insert(0, listed)
+        elif data["channel"].get("id"):
+            try:
+                with httpx.Client(timeout=30, headers={"User-Agent": config.USER_AGENT}) as http:
+                    sources.insert(0, from_rss(http, data["channel"]["id"]))
+            except (httpx.HTTPError, ET.ParseError) as exc:
+                print(f"  ! youtube rss: {exc}")
+        data["checked"] = datetime.now(timezone.utc).isoformat(timespec="seconds")
+    before = json.dumps(data.get("videos", []), ensure_ascii=False, sort_keys=True)
+    data["videos"] = merge(data, *sources)
+    changed = json.dumps(data["videos"], ensure_ascii=False, sort_keys=True) != before
+    if changed or due or not VIDEOS.exists():
+        VIDEOS.write_text(json.dumps(data, ensure_ascii=False, indent=1) + "\n", "utf-8")
+    print(f"videos: {len(data['videos'])} ({'changed' if changed else 'no change'})")
+    return changed
+
+
+if __name__ == "__main__":
+    update(network="--posts" not in sys.argv)

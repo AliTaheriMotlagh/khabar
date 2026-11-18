@@ -1,0 +1,99 @@
+{
+ "channel": {
+  "url": "https://www.youtube.com/@mehrzad.samadi",
+  "id": null
+ },
+ "checked": null,
+ "videos": [
+  {
+   "id": "7GNR3Ue7QFU",
+   "title": "51. Beni: Camera Robot [Persian]",
+   "date": "2026-11-15",
+   "post": 6543,
+   "n": 51,
+   "name": "Beni: Camera Robot",
+   "live": false
+  },
+  {
+   "id": "vchyxAZZPIo",
+   "title": "50. Reinforcement Learning [Persian]",
+   "date": "2026-11-07",
+   "post": 6384,
+   "n": 50,
+   "name": "Reinforcement Learning",
+   "live": false
+  },
+  {
+   "id": "6LwkTvUSwnE",
+   "title": "49. Smarter not Bigger [Persian]",
+   "date": "2026-10-31",
+   "post": 6236,
+   "n": 49,
+   "name": "Smarter not Bigger",
+   "live": false
+  },
+  {
+   "id": "mxijLTA5RTw",
+   "title": "47. Jev: System One Model [Persian]",
+   "date": "2026-10-11",
+   "post": 5809,
+   "n": 47,
+   "name": "Jev: System One Model",
+   "live": false
+  },
+  {
+   "id": "z6hFMzmDCSM",
+   "title": "46. How to Read a Scientific Paper [Persian]",
+   "date": "2026-10-03",
+   "post": 5614,
+   "n": 46,
+   "name": "How to Read a Scientific Paper",
+   "live": false
+  },
+  {
+   "id": "TKgXhyxsLB8",
+   "title": "45. Speculative Decoding [Persian]",
+   "date": "2026-09-12",
+   "post": 5272,
+   "n": 45,
+   "name": "Speculative Decoding",
+   "live": false
+  },
+  {
+   "id": "iqtEvrW0L9s",
+   "title": "44. Designing Beyond the Screen by Mo Sayyar [Persian]",
+   "date": "2026-09-06",
+   "post": 5166,
+   "n": 44,
+   "name": "Designing Beyond the Screen by Mo Sayyar",
+   "live": false
+  },
+  {
+   "id": "y2eq3_lmqlw",
+   "title": "43. HuggingFace Incident [Persian]",
+   "date": "2026-08-29",
+   "post": 5022,
+   "n": 43,
+   "name": "HuggingFace Incident",
+   "live": false
+  },
+  {
+   "id": "kvXhtwz9du8",
+   "title": "Live 1: News and Graph Engineering",
+   "date": "2026-08-23",
+   "post": 4891,
+   "n": 1,
+   "name": "News and Graph Engineering",
+   "live": true
+  },
+  {
+   "id": "6-SdqFdPVzE",
+   "title": "42. Rejection Therapy [Persian]",
+   "date": "2026-08-02",
+   "post": 4538,
+   "n": 42,
+   "name": "Rejection Therapy",
+   "live": false
+  }
+ ]
+}

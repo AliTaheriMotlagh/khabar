@@ -1,0 +1,19 @@
+---
+// «ویدیوی تازه‌ی مهرزاد»: a wide card on top of the home page for 48 hours after a new video of his (src/lib/videos.ts).
+import Icon from './Icon.astro';
+import { faDate, pic } from '../lib/posts';
+import { clock, newVideo } from '../lib/videos';
+const v = newVideo(2);
+---
+{
+  v && (
+    <a class="vd-hero vd-home" href={v.href}>
+      <span class="vd-thumb"><img {...pic(v.thumb, 'medium')} alt="" decoding="async" referrerpolicy="no-referrer" />{v.duration && <small>{clock(v.duration)}</small>}</span>
+      <span class="vd-hero-text">
+        <span class="vd-new"><Icon name="youtube" /> ویدیوی تازه‌ی مهرزاد</span>
+        <b dir="auto">{v.headline}</b>
+        <small>{[v.label, v.date && faDate(v.date)].filter(Boolean).join(' · ')}</small>
+      </span>
+    </a>
+  )
+}

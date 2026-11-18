@@ -271,3 +271,18 @@ test('rss: every post on the timeline, newest first; the news, the daily summari
   const page = html('feeds/index.html');
   for (const f of ['rss.xml', 'rss/news.xml', 'rss/daily.xml', `tag/${encodeURIComponent(topics[0])}/rss.xml`]) assert.ok(page.includes(`data-copy="https://khabar-ai.vercel.app/${f}"`), `/feeds/ lists ${f}`);
 });
+
+test('videos: a page per video of data/videos.json, newest first, and a feed whose pictures come through the relay', { skip }, () => {
+  const file = path.resolve('data/videos.json');
+  if (!fs.existsSync(file)) return;
+  const videos = JSON.parse(fs.readFileSync(file, 'utf8')).videos;
+  const index = fs.readFileSync(path.join(dist, 'videos/index.html'), 'utf8');
+  const order = [...index.matchAll(/href="[^"]*\/videos\/([\w-]{11})\/"/g)].map((m) => m[1]).filter((id, i, a) => a.indexOf(id) === i);
+  // The newest on top, then the episodes and then the lives, each newest first.
+  const [hero, ...rest] = videos;
+  assert.deepEqual(order, [hero, ...rest.filter((v) => !v.live), ...rest.filter((v) => v.live)].map((v) => v.id), 'every video, newest first');
+  for (const v of videos) assert.ok(fs.existsSync(path.join(dist, `videos/${v.id}/index.html`)), `${v.id}: its page`);
+  const xml = fs.readFileSync(path.join(dist, 'rss/videos.xml'), 'utf8');
+  assert.equal((xml.match(/<item>/g) ?? []).length, videos.length);
+  for (const [, u] of xml.matchAll(/<media:thumbnail url="([^"]+)"\/>/g)) assert.match(u.replace(/&amp;/g, '&'), /^https:\/\/[^/]+\/api\/img\/\?u=https%3A%2F%2Fi\.ytimg\.com%2F/);
+});

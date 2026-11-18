@@ -352,11 +352,15 @@ if ('serviceWorker' in navigator && location.hostname !== 'localhost') {
 // ---------- story rail (home): one circle with what the stories show (settings), the newest unseen one's picture ----------
 function renderRail() {
   const rail = $('[data-rail]');
-  const a = rail && $<HTMLAnchorElement>('[data-rail-ids]', rail);
-  if (!rail || !a) return;
+  if (!rail) return;
+  const video = $<HTMLAnchorElement>('[data-rail-video]', rail);
+  video?.classList.toggle('seen', store.get('video-seen', '') === video.dataset.railVideo);
+  const a = $<HTMLAnchorElement>('[data-rail-ids]', rail);
+  if (!a) return;
   const unread = unreadTest();
   const list = pickStories(decodeStories(a.dataset.railIds ?? ''), settings.story, 'new', unread);
-  rail.hidden = !list.length;
+  a.hidden = !list.length;
+  rail.hidden = !list.length && !video;
   if (!list.length) return;
   const unseen = list.filter((i) => unread(i.id));
   const faces = $$<HTMLImageElement>('[data-face]', a);
@@ -385,6 +389,9 @@ if (article) {
   recordRead(entry, (d.tags ?? '').split(',').filter(Boolean));
 }
 markNew();
+// A video page opened: its circle on the rail turns grey.
+const videoPage = $('[data-video-page]');
+if (videoPage) store.set('video-seen', videoPage.dataset.videoPage);
 renderRail();
 initListen(); // before the pages' players: they play through it
 initFollow();

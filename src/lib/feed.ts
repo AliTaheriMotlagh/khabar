@@ -126,3 +126,35 @@ export function feedResponse(def: FeedDef) {
     }),
   });
 }
+
+/** rss/videos.xml: Mehrzad's videos, newest first, each linking to its page on the site (the Persian summary) and to
+ *  YouTube; the thumbnail through the site's relay. */
+export async function videoFeedResponse() {
+  const { getVideos, VIDEOS_TITLE, channelUrl } = await import('./videos');
+  const videos = getVideos();
+  return rss({
+    title: `${SITE.name} — ${VIDEOS_TITLE}`,
+    description: `ویدیوهای فارسی ${SITE.owner.name} درباره‌ی هوش مصنوعی، با خلاصه‌ی فارسی هر قسمت در ${SITE.name}.`,
+    site: abs('videos/'),
+    xmlns: { atom: 'http://www.w3.org/2005/Atom', media: 'http://search.yahoo.com/mrss/' },
+    customData: [
+      `<language>fa-IR</language>`,
+      `<atom:link href="${esc(abs('rss/videos.xml'))}" rel="self" type="application/rss+xml"/>`,
+      `<ttl>${TTL}</ttl>`,
+    ].join(''),
+    items: videos.map((v) => {
+      const thumb = feedPicture(v.thumb);
+      const link = abs(`videos/${v.id}/`);
+      const summary = v.story?.kind === 'story' ? v.story.article.body : [];
+      const img = thumb ? `<p><a href="${esc(link)}"><img src="${esc(thumb.url)}" alt="${esc(v.title)}"/></a></p>` : '';
+      return {
+        title: clean(`${v.label ? `${v.label}: ` : ''}${v.headline}`),
+        link,
+        pubDate: v.date ? new Date(`${v.date}T12:00:00Z`) : undefined,
+        description: clean(summary[0] ?? v.title),
+        customData: thumb ? `<media:thumbnail url="${esc(thumb.url)}"/>` : '',
+        content: `<div dir="rtl" lang="fa">${img}${summary.map((t) => `<p>${esc(t)}</p>`).join('')}<p dir="ltr">${esc(v.title)}</p><p><a href="${esc(link)}">در ${esc(SITE.name)}</a> · <a href="${esc(v.youtube)}">تماشا در یوتیوب</a> · <a href="${esc(channelUrl())}">کانال</a></p></div>`,
+      };
+    }),
+  });
+}

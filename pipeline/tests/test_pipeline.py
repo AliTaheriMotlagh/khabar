@@ -486,3 +486,24 @@ def test_ai_answers_are_checked_retried_then_left_out():
     assert seen[0]["response_format"]["json_schema"]["schema"]["properties"]["topics"]["items"]["enum"] == ai.TOPICS
     client, _ = _ai_client([chatty, {**good, "short": ""}])
     assert ai.work_out(client, post) == {"failed": True, "model": ai.AI_MODEL, "v": ai.PROMPT_V, "src": out["src"]}
+
+
+def test_videos_titles_chapters_and_links():
+    from pipeline import videos
+    assert videos.parse_title("51. Beni: Camera Robot [Persian]") == {"n": 51, "name": "Beni: Camera Robot", "live": False}
+    assert videos.parse_title("Live 1: News and Graph Engineering") == {"n": 1, "name": "News and Graph Engineering", "live": True}
+    assert videos.parse_title("Some other video")["n"] is None
+    desc = "Papers:\nhttps://arxiv.org/abs/2501.00001.\n\n00:00 Intro\n02:15 - The idea\n1:02:03 Results\nhttps://t.me/dlmehr"
+    assert videos.chapters(desc) == [{"t": 0, "title": "Intro"}, {"t": 135, "title": "The idea"}, {"t": 3723, "title": "Results"}]
+    assert videos.chapters("01:00 not from the start\n02:00 b\n03:00 c") == []
+    assert videos.links(desc) == ["https://arxiv.org/abs/2501.00001"]
+
+
+def test_videos_merge_keeps_what_a_source_lacks():
+    from pipeline import videos
+    old = {"videos": [{"id": "a", "title": "50. RL [Persian]", "date": "2026-11-07", "post": 6384, "description": "00:00 A\n01:00 B\n02:00 C"}]}
+    merged = videos.merge(old, {"a": {"id": "a", "title": "50. RL [Persian]", "duration": 3600, "description": None},
+                                "b": {"id": "b", "title": "51. Beni [Persian]", "date": "2026-11-15"}})
+    assert [v["id"] for v in merged] == ["b", "a"]
+    a = merged[1]
+    assert a["post"] == 6384 and a["duration"] == 3600 and a["n"] == 50 and len(a["chapters"]) == 3

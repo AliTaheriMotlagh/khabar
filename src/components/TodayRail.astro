@@ -7,12 +7,21 @@
 import Icon from './Icon.astro';
 import { pic, storyItems, url } from '../lib/posts';
 import { encodeStories } from '../lib/time';
+import { newVideo } from '../lib/videos';
 const items = storyItems();
+// A new video of Mehrzad's gets its own circle in front for a week (grey once opened: app.ts, `video-seen`).
+const video = newVideo(7);
 ---
 {
-  items.length > 0 && (
+  (items.length > 0 || video) && (
     <nav class="rail" aria-label="استوری خبرهای تازه" data-rail>
-      <a href={url('today/')} data-rail-ids={encodeStories(items)} aria-label="خبرهای تازه">
+      {video && (
+        <a class="rail-video" href={video.href} data-rail-video={video.id} aria-label={`ویدیوی تازه‌ی مهرزاد: ${video.headline}`}>
+          <span class="ring"><span><img {...pic(video.thumb, 'small')} alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer" /></span></span>
+          <small>ویدیوی مهرزاد</small>
+        </a>
+      )}
+      <a href={url('today/')} hidden={!items.length} data-rail-ids={encodeStories(items)} aria-label="خبرهای تازه">
         <span class="ring">
           <span>
             {items.map(({ p }, k) => p.cover && <img {...pic(p.cover.src || p.cover.poster, 'small')} data-face={p.id} hidden={k > 0} alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer" />)}

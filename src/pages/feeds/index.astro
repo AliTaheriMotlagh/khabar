@@ -4,6 +4,7 @@ import Icon from '../../components/Icon.astro';
 import { SITE } from '../../site';
 import { abs, faNum, url } from '../../lib/posts';
 import { FEEDS, FULL, tagFeeds, type FeedDef } from '../../lib/feed';
+import { getVideos } from '../../lib/videos';
 
 const main: { feed: FeedDef; name: string; count: number }[] = [
   { feed: FEEDS.all, name: 'همه‌ی خبرها', count: FEEDS.all.posts().length },
@@ -39,6 +40,18 @@ const inoreader = (f: FeedDef) => `https://www.inoreader.com/?add_feed=${encodeU
           </li>
         ))
       }
+      <li class="feed-card">
+        <div class="feed-head">
+          <b>ویدیوهای مهرزاد</b>
+          <small>{faNum(getVideos().length)} ویدیو</small>
+        </div>
+        <p>هر ویدیوی تازه‌ی کانال یوتیوب مهرزاد، با خلاصه‌ی فارسی‌اش.</p>
+        <code dir="ltr">{abs('rss/videos.xml')}</code>
+        <div class="row">
+          <button class="btn sm primary" type="button" data-copy={abs('rss/videos.xml')}><Icon name="link" /> کپی نشانی</button>
+          <a class="btn sm" href={url('videos/')}><Icon name="youtube" /> دیدن در سایت</a>
+        </div>
+      </li>
       <li class="feed-card">
         <div class="feed-head">
           <b>پربازدیدترین‌های هفته</b>

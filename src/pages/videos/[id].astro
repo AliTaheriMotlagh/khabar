@@ -1,0 +1,94 @@
+---
+// One of Mehrzad's videos: its Persian summary (Gholam's, from the channel's post about it), chapters that open YouTube
+// at their time, the links from its description, and related news. No embed: YouTube is filtered in Iran.
+import Base from '../../layouts/Base.astro';
+import Icon from '../../components/Icon.astro';
+import { abs, faDate, pic, related, url, whyLabel } from '../../lib/posts';
+import { clock, getVideos, videoTitle, VIDEOS_TITLE, ytTime, type Video } from '../../lib/videos';
+
+export function getStaticPaths() {
+  const all = getVideos();
+  return all.map((video, i) => ({ params: { id: video.id }, props: { video, newer: all[i - 1] ?? null, older: all[i + 1] ?? null } }));
+}
+const { video: v, newer, older } = Astro.props as { video: Video; newer: Video | null; older: Video | null };
+const story = v.story?.kind === 'story' ? v.story : null;
+const more = v.story ? related(v.story, 4) : [];
+const title = videoTitle(v);
+const jsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'VideoObject',
+  name: v.title,
+  description: (story?.article.body[0] ?? v.description ?? v.title).slice(0, 300),
+  thumbnailUrl: v.thumb,
+  uploadDate: v.date,
+  ...(v.duration && { duration: `PT${Math.floor(v.duration / 60)}M${v.duration % 60}S` }),
+  embedUrl: `https://www.youtube.com/embed/${v.id}`,
+  url: abs(`videos/${v.id}/`),
+};
+---
+<Base title={title} description={(story?.excerpt || v.description || v.title).slice(0, 300)} image={v.thumb} imageAlt={v.title} jsonLd={[jsonLd]}>
+  <article class="container narrow vd-page" data-video-page={v.id}>
+    <a class="vd-back" href={url("videos/")}><Icon name="arrow-r" /> {VIDEOS_TITLE}</a>
+    <header class="article-head">
+      {v.label && <span class="vd-label">{v.label}</span>}
+      <h1 dir="auto">{v.headline}</h1>
+      <p class="muted" dir="ltr" lang="en">{v.title}</p>
+      <p class="vd-meta">{[v.date && faDate(v.date), v.duration && `${clock(v.duration)} دقیقه`].filter(Boolean).join(' · ')}</p>
+    </header>
+    <a class="vd-watch" href={v.youtube} target="_blank" rel="noopener">
+      <span class="vd-thumb"><img {...pic(v.thumb, 'large')} alt={v.title} decoding="async" referrerpolicy="no-referrer" /><span class="vd-play"><Icon name="youtube" /></span></span>
+    </a>
+    <p><a class="btn primary" href={v.youtube} target="_blank" rel="noopener"><Icon name="youtube" /> تماشا در یوتیوب</a></p>
+
+    {
+      story && (
+        <section>
+          <h2 class="section-title">خلاصه‌ی فارسی</h2>
+          <div class="prose" dir="auto">{story.article.body.map((p) => <p>{p}</p>)}</div>
+          {story.article.why && <p class="prose"><strong>{whyLabel(story.article)}</strong> {story.article.why}</p>}
+          <p class="muted"><a href={story.href}>این ویدیو در خبرهای سایت</a></p>
+        </section>
+      )
+    }
+    {
+      v.chapters && v.chapters.length > 0 && (
+        <section>
+          <h2 class="section-title">فصل‌ها</h2>
+          <ol class="vd-chapters">
+            {v.chapters.map((c) => (
+              <li><a href={ytTime(v, c.t)} target="_blank" rel="noopener"><time>{clock(c.t)}</time> <span dir="auto">{c.title}</span></a></li>
+            ))}
+          </ol>
+        </section>
+      )
+    }
+    {
+      v.links && v.links.length > 0 && (
+        <section>
+          <h2 class="section-title">پیوندهای ویدیو</h2>
+          <ul class="vd-links" dir="ltr">{v.links.map((l) => <li><a href={l} target="_blank" rel="noopener">{l.replace(/^https?:\/\/(www\.)?/, '')}</a></li>)}</ul>
+        </section>
+      )
+    }
+    {
+      v.description && (
+        <details class="vd-desc">
+          <summary>توضیح ویدیو در یوتیوب</summary>
+          <p dir="auto">{v.description}</p>
+        </details>
+      )
+    }
+    {
+      more.length > 0 && (
+        <section>
+          <h2 class="section-title">خبرهای مرتبط</h2>
+          <ul class="vd-related">{more.map((p) => <li><a href={p.href}>{p.article.title}</a></li>)}</ul>
+        </section>
+      )
+    }
+    <nav class="pager">
+      {newer && <a href={newer.href} rel="prev"><small><Icon name="arrow-r" /> جدیدتر</small>{videoTitle(newer)}</a>}
+      {older && <a class="next" href={older.href} rel="next"><small>قدیمی‌تر <Icon name="arrow" /></small>{videoTitle(older)}</a>}
+    </nav>
+  </article>
+</Base>

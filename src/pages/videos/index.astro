@@ -1,0 +1,55 @@
+---
+// Mehrzad's YouTube videos (src/lib/videos.ts): the newest one large, then every episode by number, the lives apart.
+import Base from '../../layouts/Base.astro';
+import Icon from '../../components/Icon.astro';
+import { abs, faDate, pic, url } from '../../lib/posts';
+import { channelUrl, clock, getVideos, VIDEOS_TITLE } from '../../lib/videos';
+const videos = getVideos();
+const [hero, ...rest] = videos;
+const episodes = rest.filter((v) => !v.live);
+const lives = rest.filter((v) => v.live);
+---
+<Base title={VIDEOS_TITLE} description="ویدیوهای فارسی مهرزاد صمدی درباره‌ی هوش مصنوعی، با خلاصه‌ی فارسی هر قسمت." image={hero ? hero.thumb : null}>
+  <link slot="head" rel="alternate" type="application/rss+xml" title={VIDEOS_TITLE} href={abs('rss/videos.xml')} />
+  <div class="container">
+    <header class="page-head with-action">
+      <div><h1><Icon name="youtube" /> {VIDEOS_TITLE}</h1><p>ویدیوهای فارسی کانال یوتیوب مهرزاد؛ خلاصه‌ی هر قسمت را همین‌جا بخوانید.</p></div>
+      <a class="btn sm" href={channelUrl()} target="_blank" rel="noopener"><Icon name="youtube" /> کانال یوتیوب</a>
+    </header>
+    {
+      hero && (
+        <a class="vd-hero" href={hero.href}>
+          <span class="vd-thumb"><img {...pic(hero.thumb, 'large')} alt="" decoding="async" referrerpolicy="no-referrer" />{hero.duration && <small>{clock(hero.duration)}</small>}</span>
+          <span class="vd-hero-text">
+            <span class="vd-new">تازه‌ترین</span>
+            <b dir="auto">{hero.headline}</b>
+            <small>{[hero.label, hero.date && faDate(hero.date)].filter(Boolean).join(' · ')}</small>
+          </span>
+        </a>
+      )
+    }
+    {
+      [['قسمت‌ها', episodes], ['لایوها', lives]].map(
+        ([title, list]) =>
+          (list as typeof videos).length > 0 && (
+            <section class="vd-shelf">
+              <h2 class="section-title">{title}</h2>
+              <ul class="vd-grid">
+                {(list as typeof videos).map((v) => (
+                  <li>
+                    <a class="vd-card" href={v.href}>
+                      <span class="vd-thumb"><img {...pic(v.thumb, 'small')} alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer" />{v.duration && <small>{clock(v.duration)}</small>}</span>
+                      <span class="vd-label">{v.label}</span>
+                      <b dir="auto">{v.headline}</b>
+                    </a>
+                  </li>
+                ))}
+              </ul>
+            </section>
+          ),
+      )
+    }
+    {videos.length === 0 && <p class="muted">هنوز ویدیویی ثبت نشده.</p>}
+    <p class="st-note"><a href={url('feeds/')}><Icon name="rss" /> خبرخوان ویدیوها</a></p>
+  </div>
+</Base>
