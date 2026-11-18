@@ -12,7 +12,7 @@
   "site": "X (formerly Twitter)",
   "title": "Mehdi Allahyari (@MehdiAllahyari) on X",
   "description": "سری جدید مدلهای تبدیل متن به گفتار فارسی (TTS) که آموزش دادم آماده شد. بهترین مدلهای TTS فارسی و اپن سورس.\n- مدل Cilla-Lite  که ۱۰۰ میلیون پارامتر و روی یک CPU معمولی کار می‌کند. و از اون جالبتر…",
-  "image": "https://cdn4.telesco.pe/file/OADLWpM0qSlfYT5DkeF15tdJSk4oTPv4g1PqVgcjwOnbmHncUUYWC4b0rhyAGhmTJJ3oKuJxjX5CT8GFyBsLIHLF4q4hz2GNIhANj627CIz8UT-4_5noqZbtn8HXNZVbLNilOkqrt2exYhha0IGasdqx-ewHZ_WDl94qNevc4tAzC4AesmoigREr_gKrCgqUTenSYCpuY8OtAVbNBYyJuJDiibAYYtQngL8jvrGIYPZKbWpKdxnGU05IrdBDvx4LRrO_YdMOFWNx17TKREhjojAn4K969pD1_i01zESWwboUTzIn4jeYjMBEi6Sj2h11OYJuAIdG32NVqDztnrT8Qg.jpg"
+  "image": "https://cdn4.telesco.pe/file/kLHv0rqWwBf9KO2N8hFIXpEhCbyQIvovaVIAAInW4TRt65hOdS2Qb1NUSpHZ_WVIv7nQLB7AHKKJ9lI5lu-Ad6lu1YbYGKVR-mctPsN8yLfB-dUlS29vUUmWjIMoTcMZUJq1OwKc6qrf5VST1qIJ4YDgTK6EblfpcYMUg_8dB7z_v47aJn-MhIqctS8iJysCsydBrvpDc_PLnwj0-lneL5S_rkwo2aRkj0k-LfYOP-SgUJllIxovioyxludYb0l6GY8ZUUiZW23PiBCPhodorrpFHdCZPtq85710WQ9emERo4bVh06HRSY0MA518NANPBfAnv0SOc2pCZWOV-c5Bzg.jpg"
  },
  "gholam": {
   "text": "رفیق، مهدی اللهیاری از سری جدید مدل‌های تبدیل متن به گفتار فارسی به اسم Cilla رونمایی کرده که بر پایه Pocket TTS ساخته شدن و بدون نیاز به سرور، کارت گرافیک یا کلید API، کاملاً لوکال کار می‌کنن. به گفته سازنده‌اش، اول یه مدل بزرگ ۳۲۶ میلیون پارامتری آموزش داده شده و بعد قدم‌به‌قدم کوچیکش کردن تا روی کامپیوتر، موبایل و حتی تب مرورگر هم به راحتی اجرا بشه.\n\n• مدل Cilla-Lite با ۱۰۰ میلیون پارامتر برای CPUهای معمولی طراحی شده و نسخه کوچیک‌تر یعنی Cilla-Mini فقط حدود ۱۸ میلیون پارامتر و ۱۰۷ مگابایت حجم داره که مستقیم داخل مرورگر (بدون اینکه متنی از دستگاه خارج بشه) کار می‌کنه.\n• طبق اطلاعات منتشرشده، Cilla-Mini روی یک هسته پردازنده M1 Pro حدود ۱۲ تا ۲۳ برابر سریع‌تر از زمان واقعی صدا می‌سازه، در حالت استریم مرورگر حدود ۲۰ میلی‌ثانیه بعد از زدن دکمه پخش شروع به خوندن می‌کنه و می‌تونه با یه فایل صوتی کوتاه (۳ تا ۱۰ ثانیه) صدای گوینده رو با شباهت حدود ۹۵ درصدی شبیه‌سازی کنه.\n• البته هنوز محدودیت‌هایی هم داره؛ مثلاً ممکنه بعضی «ـِ» اضافه‌ها رو اشتباه بخونه و کلمات انگلیسی وسط متن رو جا بندازه. ضمناً با اینکه در پست از عبارت اپن‌سورس استفاده شده، طبق صفحه هاگینگ‌فیس برای دریافت فایل‌ها باید درخواست دسترسی بدید و مجوز مدل‌ها هم غیرتجاری (CC BY-NC 4.0) هست.\n\nبرای خوندن کتاب، صفحات وب و دستیارهای صوتی آفلاین گزینه‌ی خیلی جمع‌وجوریه؛ فقط اگه خواستی امتحانش کنی، کلمات انگلیسی رو با حروف فارسی بنویس که وسط جمله یهو غیبشون نزنه! 🎙️",
@@ -72,5 +72,5 @@
    "صدا و موسیقی"
   ]
  },
- "updated": "2026-11-17T22:30:39+00:00"
+ "updated": "2026-11-18T05:10:34+00:00"
 }
