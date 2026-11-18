@@ -1,0 +1,136 @@
+{
+ "id": 6619,
+ "url": "https://t.me/dlmehr/6619",
+ "date": "2026-11-18T17:35:34+00:00",
+ "text": "https://fxtwitter.com/wevolverapp/status/2122676099071009258?a=fuBvPRDKoeEexMah6LE&s=52",
+ "forwarded_from": null,
+ "digest": false,
+ "hash": "3b9254c5845c",
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/wevolverapp/status/2122676099071009258?a=fuBvPRDKoeEexMah6LE&s=52",
+  "site": "FxTwitter",
+  "title": "Wevolver (@WevolverApp)",
+  "description": "Researchers have used reinforcement learning to teach a 5-tonne John Deere skid-steer loader to perform complex acrobatic manoeuvres autonomously. Trained in simulation and transferred to a real machine, the system can balance on two wheels, navigate rough…",
+  "image": null
+ },
+ "gholam": {
+  "text": "رفقا یه خبر باحال از دنیای ماشین‌آلات سنگین اومده: طبق پست حساب Wevolver و مقاله مرتبطش تو نشریه Science Robotics (نوامبر ۲۰۲۶)، محققا با کمک هوش مصنوعی به یه لودر ۵ تنی جان دیر مدل 332G یاد دادن که بدون راننده حرکات آکروباتیک بزنه! 🚜\n\nبه گفته نویسنده‌های مقاله، چون آزمایش فیزیکی با همچین دستگاه سنگینی خیلی خطرناکه و سیستم هیدرولیکش هم رفتار پیچیده و غیرخطی داره، اول همه‌چیز رو با «یادگیری تقویتی» تو محیط شبیه‌سازی تمرین دادن و بعد مدل رو منتقل کردن به لودر واقعی. حالا این لودر می‌تونه خودش رو دو تا چرخ تعادل بگیره (یه جورایی تک‌چرخِ سنگین‌وزن!)، تو زمین ناهموار حرکت کنه، دور خودش بچرخه، بیلش رو عقب و جلو کنه و آخرشم نرم و سالم رو هر چهار چرخ فرود بیاد؛ کارهایی که قبلاً فقط از دست تعداد کمی از راننده‌های رکورددار دنیا برمی‌اومد. محققا میگن این نتیجه نشون می‌ده چنین روش‌هایی می‌تونه تو خودکارسازی ماشین‌آلات سنگینِ ساخت‌وساز، معدن و جابه‌جایی مواد به کار بیاد.",
+  "date": "2026-11-18T17:35:59+00:00"
+ },
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/WevolverApp/status/2122676099071009258",
+   "domain": "x.com",
+   "author": {
+    "name": "Wevolver",
+    "handle": "WevolverApp",
+    "avatar": "https://pbs.twimg.com/profile_images/1958898800505880576/MCUKgU7P_200x200.jpg"
+   },
+   "text": "Researchers have used reinforcement learning to teach a 5-tonne John Deere skid-steer loader to perform complex acrobatic manoeuvres autonomously. Trained in simulation and transferred to a real machine, the system can balance on two wheels, navigate rough terrain, spin, and control its bucket before landing safely. \n\nThe research demonstrates the potential of AI-driven automation for heavy construction and industrial machinery.\n\nVideo Credit: @leggedrobotics / @ETH \n\nPaper: https://wevlv.co/4kltYys\n\n#engineering #technology",
+   "date": 1794920394,
+   "media": [
+    {
+     "type": "video",
+     "src": "https://video.twimg.com/amplify_video/2122676032234778624/vid/avc1/1138x640/tbRoLDK-vkOS5CU2.mp4?tag=16",
+     "poster": "https://pbs.twimg.com/media/HXVCqcJX0AAM7ec.jpg",
+     "ratio": 0.5624,
+     "duration": 69.78,
+     "gif": false
+    }
+   ],
+   "links": [
+    "https://wevlv.co/4kltYys"
+   ]
+  },
+  {
+   "kind": "link",
+   "url": "https://sites.google.com/leggedrobotics.com/heavy-metal-acrobatics",
+   "domain": "sites.google.com",
+   "title": "Home",
+   "description": "Abstract",
+   "image": null,
+   "site": "sites.google.com"
+  }
+ ],
+ "article": {
+  "title": "یه خبر باحال از دنیای ماشین‌آلات سنگین اومده: طبق پست حساب Wevolver و مقاله مرتبطش تو نشریه Science Robotics (نوامبر ۲۰۲۶)، محققا با کمک هوش مصنوعی به یه لودر ۵ تنی جان دیر مدل 332G یاد دادن که بدون راننده حرکات آکروباتیک بزنه",
+  "source_title": "Researchers have used reinforcement learning to teach a 5-tonne John Deere skid-steer loader to perform complex acrobatic manoeuvres…",
+  "body": [
+   "یه خبر باحال از دنیای ماشین‌آلات سنگین اومده: طبق پست حساب Wevolver و مقاله مرتبطش تو نشریه Science Robotics (نوامبر ۲۰۲۶)، محققا با کمک هوش مصنوعی به یه لودر ۵ تنی جان دیر مدل 332G یاد دادن که بدون راننده حرکات آکروباتیک بزنه! 🚜",
+   "به گفته نویسنده‌های مقاله، چون آزمایش فیزیکی با همچین دستگاه سنگینی خیلی خطرناکه و سیستم هیدرولیکش هم رفتار پیچیده و غیرخطی داره، اول همه‌چیز رو با «یادگیری تقویتی» تو محیط شبیه‌سازی تمرین دادن و بعد مدل رو منتقل کردن به لودر واقعی. حالا این لودر می‌تونه خودش رو دو تا چرخ تعادل بگیره (یه جورایی تک‌چرخِ سنگین‌وزن!)، تو زمین ناهموار حرکت کنه، دور خودش بچرخه، بیلش رو عقب و جلو کنه و آخرشم نرم و سالم رو هر چهار چرخ فرود بیاد؛ کارهایی که قبلاً فقط از دست تعداد کمی از راننده‌های رکورددار دنیا برمی‌اومد. محققا میگن این نتیجه نشون می‌ده چنین روش‌هایی می‌تونه تو خودکارسازی ماشین‌آلات سنگینِ ساخت‌وساز، معدن و جابه‌جایی مواد به کار بیاد."
+  ],
+  "why": null,
+  "tags": [
+   "رباتیک"
+  ]
+ },
+ "updated": "2026-11-18T17:47:25+00:00",
+ "ai": {
+  "title": "یادگیری تقویتی جان دیر را به رانندگی آکروباتیک بدون راننده آموخت",
+  "short": "لودر جان دیر رقصید",
+  "topics": [
+   "آنتروپیک",
+   "رباتیک",
+   "علم"
+  ],
+  "type": "پژوهش و مقاله",
+  "model": "qwen3.5-9b-q4_k_m",
+  "v": 1,
+  "src": "9bedf8f16ba8",
+  "x": {
+   "importance": 3,
+   "entities": [
+    {
+     "name_en": "John Deere",
+     "name_fa": "جان دیر",
+     "kind": "company"
+    },
+    {
+     "name_en": "Science Robotics",
+     "name_fa": "اساینس رباتیکس",
+     "kind": "company"
+    },
+    {
+     "name_en": "Wevolver",
+     "name_fa": "ویولور",
+     "kind": "company"
+    }
+   ],
+   "terms": [
+    {
+     "term": "یادگیری تقویتی",
+     "def": "روش هوش مصنوعی که در آن عامل با امتیاز گرفتن یا از دست دادن امتیاز در محیط، رفتار بهینه را یاد می‌گیرد."
+    },
+    {
+     "term": "شبیه‌سازی",
+     "def": "اجرای آزمایش در محیط مجازی قبل از انجام آن روی دستگاه واقعی برای کاهش خطر و هزینه."
+    }
+   ],
+   "simple": "محققان با استفاده از هوش مصنوعی به یک لودر ۵ تنی جان دیر یاد دادند که بدون راننده حرکات سخت و آکروباتیک انجام دهد. این کار ابتدا در کامپیوتر تمرین شد و سپس روی لودر واقعی تست گردید.",
+   "quiz": {
+    "q": "چرا محققان ابتدا آزمایش را در محیط شبیه‌سازی انجام دادند؟",
+    "options": [
+     "چون لودر واقعی در دسترس نبود",
+     "به دلیل خطرات زیاد و پیچیدگی سیستم هیدرولیک",
+     "برای اینکه لودر را سریع‌تر به بازار برسانند"
+    ],
+    "answer": 1
+   },
+   "video": {
+    "hook": "لودر ۵ تنی جان دیر حالا حرکات آکروباتیک می‌زند!",
+    "points": [
+     "یادگیری تقویتی باعث یادگیری حرکات پیچیده بدون راننده شد",
+     "آزمایش ابتدا در شبیه‌سازی انجام شد تا از خطر جلوگیری شود",
+     "این لودر می‌تواند روی زمین ناهموار تعادل خود را حفظ کند"
+    ],
+    "why": "این تکنولوژی می‌تواند ماشین‌آلات سنگین در ساخت‌وساز و معدن را کاملاً خودکار کند."
+   },
+   "share": "لودر جان دیر با هوش مصنوعی حرکات آکروباتیک یاد گرفت! 🚜\nیادگیری تقویتی در محیط شبیه‌سازی، رانندگی خودکار را ممکن کرد.\n#هوش_مصنوعی #جان_دیر",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "73f93daf1a47"
+  }
+ }
+}

@@ -83,6 +83,42 @@
    "name_en": "GPU",
    "name_fa": "پردازنده گرافیکی",
    "kind": "product"
+  },
+  {
+   "slug": "sellas-life-sciences",
+   "name_en": "Sellas Life Sciences",
+   "name_fa": "سلز لایف ساینسز",
+   "kind": "company"
+  },
+  {
+   "slug": "memorial-sloan-kettering",
+   "name_en": "Memorial Sloan Kettering",
+   "name_fa": "مِموریل اسلون کترینگ",
+   "kind": "company"
+  },
+  {
+   "slug": "acute-myeloid-leukemia",
+   "name_en": "Acute Myeloid Leukemia",
+   "name_fa": "لوسمی میلوئید حاد",
+   "kind": "product"
+  },
+  {
+   "slug": "john-deere",
+   "name_en": "John Deere",
+   "name_fa": "جان دیر",
+   "kind": "company"
+  },
+  {
+   "slug": "science-robotics",
+   "name_en": "Science Robotics",
+   "name_fa": "اساینس رباتیکس",
+   "kind": "company"
+  },
+  {
+   "slug": "wevolver",
+   "name_en": "Wevolver",
+   "name_fa": "ویولور",
+   "kind": "company"
   }
  ]
 }

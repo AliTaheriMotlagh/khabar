@@ -1,0 +1,119 @@
+{
+ "id": 6618,
+ "url": "https://t.me/dlmehr/6618",
+ "date": "2026-11-18T17:35:01+00:00",
+ "text": "https://fxtwitter.com/washingtonpost/status/2123053743520280809?a=JdhWwbmD9QXvjxaTOxk&s=52",
+ "forwarded_from": null,
+ "digest": false,
+ "hash": "158176f56b66",
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/washingtonpost/status/2123053743520280809?a=JdhWwbmD9QXvjxaTOxk&s=52",
+  "site": "FxTwitter · washingtonpost.com",
+  "title": "The Washington Post (@washingtonpost)",
+  "description": "A first of its kind vaccine for acute myeloid leukemia, a deadly blood cancer, succeeded in a Phase 3 clinical trial, drugmaker Sellas Life Sciences and Memorial Sloan Kettering Cancer Center announced. https://wapo.st/4t6oIRy",
+  "image": "https://cdn4.telesco.pe/file/WhbpMgIUVQlF7chhorO6kWL_ht0wVheE8amKl8DX2rloZAI_fAnodh63EdpwIoryrVVeoLP_PLtP3LKbR9FU-jlDPRnVd2R9S2G0WkixeDe6MDYPEqWgt3iU142UdxnPQpGnhEMMJtuIKjhb_Zbge1JH4FqxGA0GjdxSufdcJGqkqLEY_1UsJlWk-LZRc973GuGeEpwy_ggsqKzgrBp9feqGH3YGa4QndKKPmsMZvYkSvTVBFdHhaCXWx9n--n3NoMiyI3d_PZ_9AB9FBn5vURn_Jr7uJ_q3ys2-r7yB8SWhl_MH1d-5mGBKSS-JfS9tLGeEjP9TgU6ZgDt5sMS8Cg.jpg"
+ },
+ "gholam": {
+  "text": "رفیق، یه خبر امیدوارکننده تو حوزه پزشکی اومده. واشینگتن‌پست نوشته شرکت داروسازی Sellas Life Sciences و مرکز سرطان Memorial Sloan Kettering سه‌شنبه ۱۷ نوامبر اعلام کردن که اولین واکسن از نوع خودش برای لوسمی میلوئید حاد (یه نوع سرطان خون کشنده)، توی مرحله سوم کارآزمایی بالینی موفق بوده. به گفته این شرکت داروسازی، واکسنِ مورد نظر خطر مرگ رو برای بعضی از بیماران مبتلا کم کرده و گزارش هم اشاره کرده که این نتیجه، یه موفقیت دیگه توی سالِ پربارِ واکسن‌های سرطانیه. البته از مقاله اصلی فقط بخش ابتدایی‌ش در دسترس بود و جزئیات و آمار دقیق‌تر این آزمایش تو متن موجود نیست.",
+  "date": "2026-11-18T17:35:27+00:00"
+ },
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/washingtonpost/status/2123053743520280809",
+   "domain": "x.com",
+   "author": {
+    "name": "The Washington Post",
+    "handle": "washingtonpost",
+    "avatar": "https://pbs.twimg.com/profile_images/1060271522319925257/fJKwJ0r2_200x200.jpg"
+   },
+   "text": "A first of its kind vaccine for acute myeloid leukemia, a deadly blood cancer, succeeded in a Phase 3 clinical trial, drugmaker Sellas Life Sciences and Memorial Sloan Kettering Cancer Center announced. https://wapo.st/4t6oIRy",
+   "date": 1795010431,
+   "media": [],
+   "links": [
+    "https://wapo.st/4t6oIRy"
+   ]
+  }
+ ],
+ "article": {
+  "title": "یه خبر امیدوارکننده تو حوزه پزشکی اومده",
+  "source_title": "A first of its kind vaccine for acute myeloid leukemia, a deadly blood cancer, succeeded in a Phase 3 clinical trial, drugmaker Sellas Life…",
+  "body": [
+   "یه خبر امیدوارکننده تو حوزه پزشکی اومده. واشینگتن‌پست نوشته شرکت داروسازی Sellas Life Sciences و مرکز سرطان Memorial Sloan Kettering سه‌شنبه ۱۷ نوامبر اعلام کردن که اولین واکسن از نوع خودش برای لوسمی میلوئید حاد (یه نوع سرطان خون کشنده)، توی مرحله سوم کارآزمایی بالینی موفق بوده. به گفته این شرکت داروسازی، واکسنِ مورد نظر خطر مرگ رو برای بعضی از بیماران مبتلا کم کرده و گزارش هم اشاره کرده که این نتیجه، یه موفقیت دیگه توی سالِ پربارِ واکسن‌های سرطانیه. البته از مقاله اصلی فقط بخش ابتدایی‌ش در دسترس بود و جزئیات و آمار دقیق‌تر این آزمایش تو متن موجود نیست."
+  ],
+  "why": null,
+  "tags": [
+   "سلامت"
+  ]
+ },
+ "updated": "2026-11-18T17:47:55+00:00",
+ "ai": {
+  "title": "واکسن جدید Sellas Life برای لوسمی میلوئید حاد در مرحله سوم موفق شد",
+  "short": "واکسن Sellas Life موثر شد",
+  "topics": [
+   "سلامت"
+  ],
+  "type": "خبر",
+  "model": "qwen3.5-9b-q4_k_m",
+  "v": 1,
+  "src": "dfcfc2eab150",
+  "x": {
+   "importance": 4,
+   "entities": [
+    {
+     "name_en": "Sellas Life Sciences",
+     "name_fa": "سلز لایف ساینسز",
+     "kind": "company"
+    },
+    {
+     "name_en": "Memorial Sloan Kettering",
+     "name_fa": "مِموریل اسلون کترینگ",
+     "kind": "company"
+    },
+    {
+     "name_en": "Acute Myeloid Leukemia",
+     "name_fa": "لوسمی میلوئید حاد",
+     "kind": "product"
+    }
+   ],
+   "terms": [
+    {
+     "term": "واکسن",
+     "def": "ماده‌ای که سیستم ایمنی را برای مقابله با بیماری‌هایی مثل سرطان آموزش می‌دهد."
+    },
+    {
+     "term": "آزمایش بالینی",
+     "def": "بررسی علمی یک دارو یا روش درمانی روی گروهی از انسان‌ها برای سنجش اثر و ایمنی آن."
+    },
+    {
+     "term": "مرحله سوم",
+     "def": "آخرین مرحله بزرگ آزمایش بالینی که روی هزاران بیمار انجام می‌شود تا تأیید نهایی شود."
+    }
+   ],
+   "simple": "یک واکسن جدید برای درمان سرطان خون کشنده به نام لوسمی میلوئید حاد ساخته شده است. این واکسن در آزمایش‌های بزرگ روی انسان‌ها موفق بوده و خطر مرگ بیماران را کاهش داده است.",
+   "quiz": {
+    "q": "نتیجه اصلی این واکسن در مرحله سوم آزمایش چه بود؟",
+    "options": [
+     "خطر مرگ را برای برخی بیماران کاهش داد",
+     "درمان را برای همه بیماران کاملاً از بین برد",
+     "عوارض جانبی شدیدتری نسبت به شیمی‌درمانی داشت"
+    ],
+    "answer": 0
+   },
+   "video": {
+    "hook": "اولین واکسن اختصاصی برای سرطان خون کشنده موفق شد",
+    "points": [
+     "واکسن سلز لایف ساینسز در مرحله سوم آزمایش بالینی موفق بود",
+     "این واکسن خطر مرگ برخی بیماران مبتلا به لوسمی میلوئید حاد را کم کرده",
+     "این موفقیت نشان‌دهنده پیشرفت در واکسن‌های سرطان است"
+    ],
+    "why": "این واکسن می‌تواند امید جدیدی برای بیماران مبتلا به سرطان خون باشد."
+   },
+   "share": "اولین واکسن اختصاصی برای لوسمی میلوئید حاد در مرحله سوم موفق شد.\nکاهش خطر مرگ برای بیماران.\n#SellasLife #سرطان_خون",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "f6568c2d7500"
+  }
+ }
+}
