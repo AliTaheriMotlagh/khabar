@@ -251,6 +251,42 @@
    "name_en": "Claude Opus 5.5",
    "name_fa": "کلاد آپوس ۵.۵",
    "kind": "model"
+  },
+  {
+   "slug": "chatgpt",
+   "name_en": "ChatGPT",
+   "name_fa": "چت‌جی‌پی‌تی",
+   "kind": "product"
+  },
+  {
+   "slug": "quickbooks",
+   "name_en": "QuickBooks",
+   "name_fa": "کوئیک‌بوکس",
+   "kind": "product"
+  },
+  {
+   "slug": "oracle-netsuite",
+   "name_en": "Oracle NetSuite",
+   "name_fa": "اوراکل نت‌سوت",
+   "kind": "product"
+  },
+  {
+   "slug": "rene-haas",
+   "name_en": "Rene Haas",
+   "name_fa": "رنه هاس",
+   "kind": "person"
+  },
+  {
+   "slug": "arm",
+   "name_en": "Arm",
+   "name_fa": "آرم",
+   "kind": "company"
+  },
+  {
+   "slug": "heidrick-struggles",
+   "name_en": "Heidrick & Struggles",
+   "name_fa": "هایدریک اند استراگلز",
+   "kind": "company"
   }
  ]
 }
