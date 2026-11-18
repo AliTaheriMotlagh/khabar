@@ -53,7 +53,7 @@ async function main() {
 
   if (!SECRET) console.log('PUSH_SECRET is not set: notifications are off.');
   else {
-    const posts = fresh.map(({ id, title, short, tags, kind, video }) => ({ id, title, short, tags, kind: video ? 'video' : kind }));
+    const posts = fresh.map(({ id, title, short, tags, kind, video, image }) => ({ id, title, short, tags, kind: video ? 'video' : kind, image }));
     const res = await fetch(`${SITE}/api/push/`, {
       method: 'POST',
       headers: { 'Content-Type': 'application/json', Authorization: `Bearer ${SECRET}` },

@@ -9,8 +9,28 @@ import Icon from './Icon.astro';
     <button class="icon-btn" type="button" data-close aria-label="بستن"><Icon name="x" /></button>
   </div>
   <div class="sheet-body">
-    <div data-vs-making>
-      <p class="vs-status" data-vs-status role="status" aria-live="polite"></p>
+    <div class="vs-making" data-vs-making>
+      <!-- The video itself, playing silently while it's made: first a preview with the text paced, then the real
+           frames as they're encoded. A shimmer and the headline until the first frame. -->
+      <div class="vs-stage" data-vs-stage data-shape="h" data-phase="prep">
+        <div class="vs-skel" aria-hidden="true"><b data-vs-skel></b><i></i><i></i><i></i></div>
+        <span class="vs-scan" aria-hidden="true"></span>
+        <span class="vs-chip" data-vs-chip aria-hidden="true">پیش‌نمایش</span>
+      </div>
+      <div class="vs-progress">
+        <svg class="vs-ring" viewBox="0 0 44 44" aria-hidden="true"><circle cx="22" cy="22" r="19" /><circle cx="22" cy="22" r="19" data-vs-ring pathLength="100" /></svg>
+        <div>
+          <p class="vs-status" data-vs-status role="status" aria-live="polite"></p>
+          <p class="vs-eta" data-vs-eta></p>
+        </div>
+        <b class="vs-pct" data-vs-pct aria-hidden="true"></b>
+      </div>
+      <ol class="vs-steps" aria-label="مرحله‌ها">
+        <li data-vs-step="pics"><i></i>تصویرها</li>
+        <li data-vs-step="voice"><i></i>روایت</li>
+        <li data-vs-step="frames"><i></i>ساخت ویدیو</li>
+        <li data-vs-step="ready"><i></i>آماده</li>
+      </ol>
       <div class="vs-bar" aria-hidden="true"><i data-vs-bar></i></div>
       <p class="vs-note" data-vs-note></p>
     </div>
@@ -36,8 +56,15 @@ import Icon from './Icon.astro';
     </div>
     <div class="sheet-foot">
       <button class="btn" type="button" data-vs-cancel>لغو</button>
+      <button class="btn primary" type="button" data-vs-bg hidden><Icon name="down" /> ادامه در پس‌زمینه</button>
       <a class="btn" data-vs-save hidden><Icon name="download" /> ذخیره</a>
       <button class="btn primary" type="button" data-vs-share hidden><Icon name="share" /> اشتراک‌گذاری</button>
     </div>
   </div>
 </dialog>
+<!-- A video being made in the background (the sheet's «ادامه در پس‌زمینه»): its frame, a ring of how far it is, a tap
+     brings the sheet back; when it's ready, it says so. -->
+<button class="vs-pill" type="button" data-vs-pill hidden>
+  <span class="vs-pill-pic"><canvas width="96" height="96" data-vs-mini></canvas><svg viewBox="0 0 44 44" aria-hidden="true"><circle cx="22" cy="22" r="20" /><circle cx="22" cy="22" r="20" data-vs-mini-ring pathLength="100" /></svg></span>
+  <span class="vs-pill-text"><b data-vs-pill-title>ساخت ویدیو</b><small data-vs-pill-sub></small></span>
+</button>

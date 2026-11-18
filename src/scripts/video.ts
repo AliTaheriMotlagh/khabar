@@ -52,11 +52,13 @@ type Geo = {
 };
 const GEO: Record<Shape, Geo> = {
   h: { W: 1280, H: 720, M: 64, k: 1, panel: { x: 64, y: 140, w: 520, h: 390 }, col: { right: 1216, w: 560 }, body: { size: 32, lh: 58, bottom: 620 },
-       titleSizes: [50, 44, 38, 34], titleRoom: 440, titleMid: 375, wide: 960, top: 62, headY: 160, textTop: { head: 262, plain: 200 } },
-  v: { W: 1080, H: 1920, M: 72, k: 1.45, panel: { x: 72, y: 190, w: 936, h: 640 }, col: { right: 1008, w: 936 }, body: { size: 46, lh: 84, bottom: 1730 },
-       titleSizes: [70, 62, 54, 48], titleRoom: 640, titleMid: 1320, wide: 936, top: 100, headY: 930, textTop: { head: 1070, plain: 980 } },
+       titleSizes: [64, 56, 50, 44, 38, 34], titleRoom: 440, titleMid: 375, wide: 960, top: 62, headY: 160, textTop: { head: 262, plain: 200 } },
+  // Vertical is a reel: Instagram/Telegram draw their buttons over the top ~12% and the bottom ~20%, so the text stays
+  // between (body.bottom), the chapters' progress runs along the top like a story's, and the type is larger.
+  v: { W: 1080, H: 1920, M: 72, k: 1.45, panel: { x: 72, y: 230, w: 936, h: 700 }, col: { right: 1008, w: 936 }, body: { size: 52, lh: 92, bottom: 1560 },
+       titleSizes: [96, 86, 78, 70, 62, 54], titleRoom: 560, titleMid: 1250, wide: 936, top: 128, headY: 975, textTop: { head: 1110, plain: 1030 } },
   s: { W: 1080, H: 1080, M: 64, k: 1.25, panel: { x: 64, y: 140, w: 952, h: 380 }, col: { right: 1016, w: 952 }, body: { size: 38, lh: 66, bottom: 960 },
-       titleSizes: [54, 48, 42, 38], titleRoom: 300, titleMid: 790, wide: 952, top: 74, headY: 606, textTop: { head: 712, plain: 640 } },
+       titleSizes: [70, 62, 54, 48, 42, 38], titleRoom: 300, titleMid: 790, wide: 952, top: 74, headY: 606, textTop: { head: 712, plain: 640 } },
 };
 let G = GEO.h;
 let W = G.W;
@@ -67,6 +69,7 @@ let COL = G.col;
 let BODY = G.body;
 let TITLE_SIZES = G.titleSizes;
 let TITLE_ROOM = G.titleRoom;
+let REEL = false;
 /** Sets the frame for the video about to be made (one at a time). */
 function useShape(shape: Shape) {
   G = GEO[shape];
@@ -76,6 +79,7 @@ function useShape(shape: Shape) {
   BODY = G.body;
   TITLE_SIZES = G.titleSizes;
   TITLE_ROOM = G.titleRoom;
+  REEL = shape === 'v';
 }
 const YELLOW = '#ffd166';
 const INK = '#141a33';
@@ -102,10 +106,40 @@ async function picture(addresses: string[]): Promise<ImageBitmap | null> {
   for (const url of addresses) {
     try {
       const res = await fetch(url, { signal: AbortSignal.timeout(PIC_WAIT), referrerPolicy: 'no-referrer' });
-      if (res.ok) return await createImageBitmap(await res.blob());
+      if (res.ok) return await trimmed(await createImageBitmap(await res.blob()));
     } catch {}
   }
   return null;
+}
+
+/** The picture without black bars above and below (YouTube's thumbnails are 4:3 with the 16:9 frame letterboxed). */
+async function trimmed(img: ImageBitmap): Promise<ImageBitmap> {
+  try {
+    const w = 32;
+    const h = Math.max(8, Math.round((img.height / img.width) * w));
+    const c = document.createElement('canvas');
+    c.width = w;
+    c.height = h;
+    const x = c.getContext('2d', { willReadFrequently: true })!;
+    x.drawImage(img, 0, 0, w, h);
+    const px = x.getImageData(0, 0, w, h).data;
+    const dark = (row: number) => {
+      let sum = 0;
+      for (let i = 0; i < w; i++) sum += px[(row * w + i) * 4] + px[(row * w + i) * 4 + 1] + px[(row * w + i) * 4 + 2];
+      return sum / (w * 3) < 14;
+    };
+    let top = 0;
+    while (top < h / 3 && dark(top)) top++;
+    let bottom = 0;
+    while (bottom < h / 3 && dark(h - 1 - bottom)) bottom++;
+    if (top < 2 || bottom < 2) return img;
+    // A row of the small copy is several of the picture's: keep one more row each side inside the bars.
+    const sy = Math.ceil(((top + 0.5) / h) * img.height);
+    const sh = Math.floor(((h - bottom - 0.5) / h) * img.height) - sy;
+    return sh > img.height / 3 ? await createImageBitmap(img, 0, sy, img.width, sh) : img;
+  } catch {
+    return img;
+  }
 }
 
 /** Words at a reading pace, for a headline that isn't read aloud (it appears word by word) or a browser with no
@@ -389,22 +423,101 @@ function painter(ctx: CanvasRenderingContext2D, v: Video) {
     // A long headline gets smaller until it fits; at the smallest it goes in pages like the text.
     let size = BODY.size;
     let rows: Placed[][] = [];
-    for (size of title ? TITLE_SIZES : [BODY.size]) {
+    const top = title ? 0 : s.head ? G.textTop.head : G.textTop.plain;
+    // The text's room, from its first baseline to the last one's.
+    const room = BODY.bottom - top;
+    const ratio = BODY.lh / BODY.size;
+    // A chapter's text takes the largest size (up to 1.7×) at which it fits on one page, so a short chapter fills its
+    // room instead of leaving it empty; a long one keeps the body size and goes in pages.
+    const sizes = title ? TITLE_SIZES : [1.7, 1.5, 1.32, 1.16, 1].map((f) => Math.round(BODY.size * f));
+    for (size of sizes) {
       ctx.font = `${title ? 800 : 500} ${size}px ${FONT}`;
       rows = layout(ctx, s.words, width);
-      if (!title || rows.length * Math.round(size * 1.6) <= TITLE_ROOM) break;
+      if (title ? rows.length * Math.round(size * 1.6) <= TITLE_ROOM : (rows.length - 1) * Math.round(size * ratio) <= room) break;
     }
-    const lh = title ? Math.round(size * 1.6) : BODY.lh;
-    const top = title ? 0 : s.head ? G.textTop.head : G.textTop.plain;
-    const per = title ? Math.floor(TITLE_ROOM / lh) : Math.max(1, Math.floor((BODY.bottom - top) / BODY.lh) + 1);
+    const lh = title ? Math.round(size * 1.6) : Math.round(size * ratio);
+    const per = title ? Math.floor(TITLE_ROOM / lh) : Math.max(1, Math.floor(room / lh) + 1);
     const pages = Array.from({ length: Math.ceil(rows.length / per) }, (_, p) => rows.slice(p * per, p * per + per));
     const pageOf = new Map<number, number>();
     pages.forEach((pg, p) => pg.flat().forEach((it) => pageOf.set(it.k, p)));
-    return { title, pics, width, size, lh, pages, pageOf, top, n, ...extras(s.words) };
+    // One page: its block sits a little above the middle of the room (closer to the heading than to the bottom).
+    const shift = !title && pages.length === 1 ? Math.max(0, (room - (rows.length - 1) * lh) * 0.4) : 0;
+    return { title, pics, width, size, lh, pages, pageOf, top, shift, n, ...extras(s.words) };
   });
+
+  // The picture on screen, blurred and dark, fills the frame behind everything: made once per picture by drawing it
+  // tiny and scaling it up twice (a blur every browser does fast; canvas `filter` isn't everywhere).
+  const soft = new Map<ImageBitmap, HTMLCanvasElement>();
+  function blurred(img: ImageBitmap) {
+    let c = soft.get(img);
+    if (c) return c;
+    const step = (src: CanvasImageSource, sw: number, sh: number, w: number, h: number, crop: boolean) => {
+      const out = document.createElement('canvas');
+      out.width = w;
+      out.height = h;
+      const x = out.getContext('2d')!;
+      x.imageSmoothingQuality = 'high';
+      if (crop) {
+        const s = Math.max(w / sw, h / sh);
+        x.drawImage(src, (w - sw * s) / 2, (h - sh * s) / 2, sw * s, sh * s);
+      } else x.drawImage(src, 0, 0, w, h);
+      return out;
+    };
+    const tiny = step(img, img.width, img.height, Math.round(W / 40), Math.round(H / 40), true);
+    c = step(step(tiny, tiny.width, tiny.height, Math.round(W / 6), Math.round(H / 6), false), 0, 0, W / 2, H / 2, false);
+    soft.set(img, c);
+    return c;
+  }
+  /** The picture on screen at `t` (the scene's, shared out over its length, as in the panel), the one before it, and how
+   *  far the change between them is. */
+  function shownPic(t: number): { img: ImageBitmap | null; prev: ImageBitmap | null; a: number; local: number } {
+    let k = 0;
+    while (k + 1 < scenes.length && scenes[k + 1].from <= t) k++;
+    const s = scenes[k];
+    const last = (n: number) => {
+      for (let j = n; j >= 0; j--) if (scenes[j].pics.length) return scenes[j].pics[scenes[j].pics.length - 1];
+      return null;
+    };
+    if (!s.pics.length) return { img: null, prev: last(k - 1), a: ease((t - s.from) / 0.6), local: 0 };
+    const share = (s.to - s.from) / s.pics.length;
+    const i = laid[k].title && digest ? 0 : Math.max(0, Math.min(s.pics.length - 1, Math.floor((t - s.from) / share)));
+    const start = s.from + i * share;
+    return { img: s.pics[i], prev: i ? s.pics[i - 1] : last(k - 1), a: k || i ? ease((t - start) / 0.6) : 1, local: (t - start) / Math.max(1, share) };
+  }
+  // The panel's shadow, drawn once: a blurred shadow every frame would cost more than the rest of the frame.
+  const shadow = document.createElement('canvas');
+  shadow.width = W;
+  shadow.height = H;
+  {
+    const sx = shadow.getContext('2d')!;
+    sx.shadowColor = 'rgb(0 0 0 / .55)';
+    sx.shadowBlur = 60;
+    sx.shadowOffsetY = 24;
+    sx.fillStyle = '#000';
+    rounded(sx, PANEL.x, PANEL.y, PANEL.w, PANEL.h, 26);
+    sx.fill();
+  }
 
   function background(t: number) {
     ctx.fillStyle = '#0a0f1f';
+    ctx.fillRect(0, 0, W, H);
+    const { img, prev, a } = shownPic(t);
+    const backdrop = (b: ImageBitmap, alpha: number) => {
+      // Still: a backdrop that moves changes every pixel of every frame, and the file would be several times larger.
+      const z = 1.12;
+      ctx.globalAlpha = alpha;
+      ctx.drawImage(blurred(b), (W - W * z) / 2, (H - H * z) / 2, W * z, H * z);
+      ctx.globalAlpha = 1;
+    };
+    if (prev && a < 1) backdrop(prev, 1);
+    if (img) backdrop(img, prev ? a : 1);
+    else if (prev) backdrop(prev, 1 - a);
+    // Dark enough for white text on any picture; a little darker at the bottom, where the text is.
+    const dim = ctx.createLinearGradient(0, 0, 0, H);
+    dim.addColorStop(0, 'rgb(6 9 22 / .62)');
+    dim.addColorStop(0.45, 'rgb(6 9 22 / .7)');
+    dim.addColorStop(1, 'rgb(6 9 22 / .9)');
+    ctx.fillStyle = dim;
     ctx.fillRect(0, 0, W, H);
     const glow = (x: number, y: number, r: number, c: string) => {
       const g = ctx.createRadialGradient(x, y, 0, x, y, r);
@@ -433,7 +546,16 @@ function painter(ctx: CanvasRenderingContext2D, v: Video) {
     ctx.fillStyle = 'rgb(255 255 255 / .5)';
     ctx.font = `500 ${17 * k}px ${FONT}`;
     ctx.fillText(link, M, H - 44 * k);
-    // Progress by chapter, right to left.
+    // A reel's lower band: where it comes from, under the names said.
+    if (REEL && card.source) {
+      ctx.direction = 'rtl';
+      ctx.textAlign = 'right';
+      ctx.fillStyle = 'rgb(255 255 255 / .55)';
+      ctx.font = `600 ${19 * k}px ${FONT}`;
+      ctx.fillText(`منبع: ${card.source}`, W - M, H - 150, W - 2 * M);
+    }
+    // Progress by chapter, right to left: under everything, or along the top in a reel (as a story's).
+    const py = REEL ? 54 : H - 30 * k;
     const span = outro - INTRO;
     let x = W - M;
     const full = W - 2 * M - 6 * (scenes.length - 1);
@@ -441,11 +563,11 @@ function painter(ctx: CanvasRenderingContext2D, v: Video) {
       const w = (full * (s.to - s.from)) / span;
       const p = Math.min(1, Math.max(0, (t - s.from) / (s.to - s.from)));
       ctx.fillStyle = 'rgb(255 255 255 / .18)';
-      rounded(ctx, x - w, H - 30 * k, w, 5 * k, 2.5 * k);
+      rounded(ctx, x - w, py, w, 5 * k, 2.5 * k);
       ctx.fill();
       if (p > 0) {
         ctx.fillStyle = YELLOW;
-        rounded(ctx, x - w * p, H - 30 * k, w * p, 5 * k, 2.5 * k);
+        rounded(ctx, x - w * p, py, w * p, 5 * k, 2.5 * k);
         ctx.fill();
       }
       x -= w + 6;
@@ -474,6 +596,15 @@ function painter(ctx: CanvasRenderingContext2D, v: Video) {
         const said = cur > it.k;
         const now = cur === it.k;
         ctx.globalAlpha = alpha * fade * (s.silent ? ease((t - w.from) / 0.25) : 1);
+        // The word being said pops (a little larger, then settles) on its yellow mark; a silent headline's words rise in.
+        const pop = now && !s.silent ? 1 + 0.09 * (1 - back((t - w.from) / 0.22)) + 0.06 * (1 - ease((t - w.from) / 0.22)) : 1;
+        const rise = s.silent ? (1 - ease((t - w.from) / 0.3)) * size * 0.35 : 0;
+        if (pop !== 1) {
+          ctx.save();
+          ctx.translate(x + it.w / 2, y - size * 0.3);
+          ctx.scale(pop, pop);
+          ctx.translate(-(x + it.w / 2), -(y - size * 0.3));
+        }
         if (now && !s.silent) {
           ctx.globalAlpha = alpha * fade * ease((t - w.from) / 0.08);
           ctx.fillStyle = YELLOW;
@@ -481,9 +612,12 @@ function painter(ctx: CanvasRenderingContext2D, v: Video) {
           ctx.fill();
           ctx.globalAlpha = alpha * fade;
         }
-        ctx.fillStyle = s.silent || said ? '#fff' : now ? INK : 'rgb(255 255 255 / .38)';
+        // Said words white; the ones to come dim, brightening as they're reached.
+        const ahead = 0.34 + 0.2 * ease(1 - (w.from - t) / 0.4);
+        ctx.fillStyle = s.silent || said ? '#fff' : now ? INK : `rgb(255 255 255 / ${ahead.toFixed(3)})`;
         ctx.direction = it.ltr ? 'ltr' : 'rtl';
-        ctx.fillText(w.text, x, y);
+        ctx.fillText(w.text, x, y + rise);
+        if (pop !== 1) ctx.restore();
       }
     });
     ctx.globalAlpha = alpha;
@@ -491,6 +625,7 @@ function painter(ctx: CanvasRenderingContext2D, v: Video) {
 
   function panel(s: Scene, l: (typeof laid)[number], t: number) {
     const { x, y, w, h } = PANEL;
+    ctx.drawImage(shadow, 0, 0);
     ctx.save();
     rounded(ctx, x, y, w, h, 26);
     ctx.clip();
@@ -512,7 +647,18 @@ function painter(ctx: CanvasRenderingContext2D, v: Video) {
       const draw = (i: number, a: number) => {
         const local = Math.max(0, (t - s.from - i * share) / share);
         ctx.globalAlpha = ga * a;
-        cover(ctx, pics[i], x, y, w, h, 1 + 0.1 * local, (i % 2 ? 1 : -1) * 0.15 * local);
+        const img = pics[i];
+        // A picture much wider or taller than the panel (a chart, a screenshot, a slide with text) is shown whole over
+        // its own blur, rather than cropped mid-word; one close to the panel's shape fills it.
+        const off = Math.abs(Math.log(img.width / img.height / (w / h)));
+        if (off > 0.18) {
+          ctx.drawImage(blurred(img), x - w * 0.1, y - h * 0.1, w * 1.2, h * 1.2);
+          ctx.fillStyle = 'rgb(6 9 22 / .35)';
+          ctx.fillRect(x, y, w, h);
+          const z = 1 + 0.05 * local;
+          const sc = Math.min(w / img.width, h / img.height) * z;
+          ctx.drawImage(img, x + (w - img.width * sc) / 2, y + (h - img.height * sc) / 2, img.width * sc, img.height * sc);
+        } else cover(ctx, img, x, y, w, h, 1 + 0.1 * local, (i % 2 ? 1 : -1) * 0.15 * local);
         ctx.globalAlpha = ga;
       };
       if (k > 0) draw(k - 1, 1);
@@ -556,6 +702,8 @@ function painter(ctx: CanvasRenderingContext2D, v: Video) {
 
     // English names, as tags under the panel (the newest three).
     const shown = l.tags.filter((tg) => tg.from <= t).slice(-3);
+    // In a reel they sit in the band under the text instead (the text has the space under the picture).
+    const ty = REEL ? BODY.bottom + 60 - (y + h + 22 * k) : 0;
     ctx.font = `600 ${22 * k}px ${FONT}`;
     ctx.direction = 'ltr';
     ctx.textAlign = 'left';
@@ -567,13 +715,13 @@ function painter(ctx: CanvasRenderingContext2D, v: Video) {
       const a = ease((t - tg.from) / 0.25);
       ctx.globalAlpha = ga * a;
       ctx.fillStyle = 'rgb(255 255 255 / .08)';
-      rounded(ctx, cx - tw, y + h + 22 * k + (1 - a) * 10, tw, 44 * k, 22 * k);
+      rounded(ctx, cx - tw, ty + y + h + 22 * k + (1 - a) * 10, tw, 44 * k, 22 * k);
       ctx.fill();
       ctx.strokeStyle = 'rgb(128 152 255 / .6)';
       ctx.lineWidth = 1.5;
       ctx.stroke();
       ctx.fillStyle = '#dfe5ff';
-      ctx.fillText(tg.text, cx - tw + 16 * k, y + h + 52 * k + (1 - a) * 10, tw - 32 * k);
+      ctx.fillText(tg.text, cx - tw + 16 * k, ty + y + h + 52 * k + (1 - a) * 10, tw - 32 * k);
       ctx.globalAlpha = ga;
       cx -= tw + 10 * k;
     }
@@ -603,7 +751,8 @@ function painter(ctx: CanvasRenderingContext2D, v: Video) {
       if (l.pics) panel(s, l, t);
       // The kicker, then the headline, its block centered in the frame's height.
       const rows = l.pages[0]?.length ?? 1;
-      const blockTop = G.titleMid - (rows * l.lh + 60 * k) / 2;
+      // With no picture the headline has the whole frame: in its middle.
+      const blockTop = (l.pics ? G.titleMid : H / 2) - (rows * l.lh + 60 * k) / 2;
       ctx.font = `700 ${24 * k}px ${FONT}`;
       ctx.direction = 'rtl';
       ctx.textAlign = 'right';
@@ -647,7 +796,7 @@ function painter(ctx: CanvasRenderingContext2D, v: Video) {
           ctx.fillText(s.head, COL.right - 24 * k, G.headY + 34 * k);
         }
       }
-      text(s, l, t, l.top + BODY.size, alpha);
+      text(s, l, t, l.top + l.shift + l.size, alpha);
     }
     ctx.restore();
   }
@@ -735,6 +884,11 @@ function painter(ctx: CanvasRenderingContext2D, v: Video) {
 }
 
 // ---------- making the file ----------
+/** Sharp enough for a reel at 1080p (moving pictures, small type), small enough to send over a slow connection: the
+ *  frames are mostly still, so the encoder rarely needs all of it. */
+const BITRATE = (seconds: number) =>
+  // A long video (the whole 24-hour summary) gets less a second, to stay near 25 MB: still sharp, the frames barely move.
+  Math.max(650_000, Math.min(W * H > 1.5e6 ? 2_200_000 : W * H > 1e6 ? 1_900_000 : 1_400_000, (25e6 * 8) / seconds));
 /** With the browser's encoders, frame by frame, faster than real time. Null when they can't make this video. */
 async function encode(v: Video, canvas: HTMLCanvasElement, draw: (t: number) => void, step: (p: number) => void, stop: AbortSignal): Promise<Blob | null> {
   if (typeof VideoEncoder !== 'function') return null;
@@ -742,7 +896,7 @@ async function encode(v: Video, canvas: HTMLCanvasElement, draw: (t: number) => 
   const codec = v.sound ? await getFirstEncodableAudioCodec(['aac', 'opus'], { numberOfChannels: 1, sampleRate: RATE }) : null;
   if (v.sound && !codec) return null;
   const output = new Output({ format: new Mp4OutputFormat({ fastStart: 'in-memory' }), target: new BufferTarget() });
-  const video = new CanvasSource(canvas, { codec: 'avc', bitrate: W * H > 1e6 ? 2_500_000 : 1_200_000, keyFrameInterval: 2 });
+  const video = new CanvasSource(canvas, { codec: 'avc', bitrate: BITRATE(v.total), keyFrameInterval: 2 });
   output.addVideoTrack(video, { frameRate: FPS });
   const audio = codec ? new AudioBufferSource({ codec, bitrate: 128_000 }) : null;
   if (audio) output.addAudioTrack(audio);
@@ -778,7 +932,7 @@ async function record(v: Video, canvas: HTMLCanvasElement, draw: (t: number) => 
     src.connect(dest);
     stream.addTrack(dest.stream.getAudioTracks()[0]);
   }
-  const rec = new MediaRecorder(stream, { mimeType: type || undefined, videoBitsPerSecond: W * H > 1e6 ? 2_500_000 : 1_200_000 });
+  const rec = new MediaRecorder(stream, { mimeType: type || undefined, videoBitsPerSecond: BITRATE(v.total) });
   const chunks: Blob[] = [];
   rec.ondataavailable = (e) => e.data.size && chunks.push(e.data);
   const done = new Promise<void>((r) => (rec.onstop = () => r()));
@@ -804,33 +958,98 @@ async function record(v: Video, canvas: HTMLCanvasElement, draw: (t: number) => 
 }
 
 // ---------- the sheet (src/components/VideoSheet.astro) ----------
+// While a video is made the sheet shows it: a silent preview of the video itself (the text paced, no voice yet), then
+// the real frames as they're encoded, with the four steps, a ring and the time left. The reader needn't wait:
+// «ادامه در پس‌زمینه», ✕, Escape or a tap beside the sheet put it in a small floating frame (`[data-vs-pill]`) and they
+// go on reading or listening; it says when the video is ready, and a tap brings the sheet back. Only «لغو» stops it.
 const d = $<HTMLDialogElement>('#video-sheet')!;
+const pill = $<HTMLButtonElement>('[data-vs-pill]')!;
+const mini = $<HTMLCanvasElement>('[data-vs-mini]')!;
+const stage = $('[data-vs-stage]', d)!;
 let run: AbortController | null = null;
 let url = '';
 /** The last video made, shown again when «ویدیو» is tapped for the same story with the same voice. */
 let made: { key: string; show: () => void } | null = null;
+/** What's being made now (its story's address), and the canvas on show — the preview's, then the encoder's. */
+let making: string | null = null;
+let showing: HTMLCanvasElement | null = null;
+let previewing = 0;
+const busy = () => d.hasAttribute('data-busy');
 const close = () => d.close();
 $('[data-close]', d)!.addEventListener('click', close);
-$('[data-vs-cancel]', d)!.addEventListener('click', close);
-// While a video is being made (data-busy) a tap beside the sheet (app.ts closes any other dialog then), Escape or
-// Android's back don't throw it away: only «لغو» and ✕ do.
-const stillMaking = () => toast('ویدیو در حال ساخته شدن است؛ برای لغو، «لغو» را بزنید');
-d.addEventListener('click', (e) => e.target === d && d.hasAttribute('data-busy') && stillMaking());
-d.addEventListener('cancel', (e) => {
-  if (!d.hasAttribute('data-busy')) return;
-  e.preventDefault();
-  stillMaking();
+$('[data-vs-cancel]', d)!.addEventListener('click', () => {
+  if (busy()) {
+    run?.abort();
+    d.removeAttribute('data-busy');
+    making = null;
+  }
+  close();
 });
-// Closing stops a video being made — unless the sheet was opened again before this (queued) event came.
+$('[data-vs-bg]', d)!.addEventListener('click', close);
+// Closing while it's made keeps it going, in the floating frame.
 d.addEventListener('close', () => {
   if (d.open) return;
-  run?.abort();
   $<HTMLVideoElement>('[data-vs-video]', d)!.pause();
+  if (busy()) {
+    pillState('making');
+    toast('ویدیو در پس‌زمینه ساخته می‌شود؛ هر وقت آماده شد خبر می‌دهیم');
+  }
 });
+pill.addEventListener('click', () => {
+  pill.hidden = true;
+  if (!d.open) d.showModal();
+  const ready = !$('[data-vs-done]', d)!.hidden;
+  if (ready) $<HTMLVideoElement>('[data-vs-video]', d)!.play().catch(() => {});
+  if (!busy()) pill.dataset.state = 'off';
+});
+function pillState(state: 'making' | 'ready' | 'failed' | 'off') {
+  pill.hidden = state === 'off' || d.open;
+  pill.dataset.state = state;
+  if (state === 'ready') $('[data-vs-pill-title]', pill)!.textContent = 'ویدیو آماده است';
+  if (state === 'failed') $('[data-vs-pill-title]', pill)!.textContent = 'ساخت ویدیو ممکن نشد';
+  if (state === 'making') $('[data-vs-pill-title]', pill)!.textContent = 'ساخت ویدیو';
+  if (state !== 'making') $('[data-vs-pill-sub]', pill)!.textContent = state === 'ready' ? 'برای دیدن بزنید' : 'دوباره امتحان کنید';
+}
+/** The frame on show, cropped square into the floating frame. */
+function miniFrame() {
+  if (!showing || pill.hidden) return;
+  const x = mini.getContext('2d')!;
+  const s = Math.min(showing.width, showing.height);
+  x.drawImage(showing, (showing.width - s) / 2, (showing.height - s) / 2, s, s, 0, 0, mini.width, mini.height);
+}
+function show(canvas: HTMLCanvasElement, phase: 'preview' | 'frames') {
+  stage.querySelector('canvas')?.remove();
+  canvas.className = 'vs-live';
+  stage.append(canvas);
+  stage.dataset.phase = phase;
+  $('[data-vs-chip]', stage)!.textContent = phase === 'preview' ? 'پیش‌نمایش' : 'در حال ساخت';
+  showing = canvas;
+}
+/** The video, silent and paced, playing in a loop at half size while the voice is made. */
+function preview(v: Video, stop: AbortSignal) {
+  const canvas = document.createElement('canvas');
+  canvas.width = W / 2;
+  canvas.height = H / 2;
+  const ctx = canvas.getContext('2d', { alpha: false })!;
+  ctx.setTransform(0.5, 0, 0, 0.5, 0, 0);
+  const draw = painter(ctx, v);
+  show(canvas, 'preview');
+  const id = ++previewing;
+  const t0 = performance.now();
+  let last = 0;
+  const frame = (now: number) => {
+    if (stop.aborted || id !== previewing) return;
+    // ~24 frames a second is plenty for a preview, and leaves the device to the voice.
+    if (now - last > 40) {
+      last = now;
+      if (!document.hidden && (d.open || !pill.hidden)) draw(((now - t0) / 1000) % v.total);
+    }
+    requestAnimationFrame(frame);
+  };
+  draw(Math.min(v.total, INTRO + 1.2));
+  requestAnimationFrame(frame);
+}
 
-/** Makes the video of the story at `href` (its page's address) and offers it to share or save. `ac`: an audio
- *  context started in the tap, for recording the sound where the encoders can't (iOS only lets audio start there).
- *  `asked`: the voice sheet was already offered, so a reader who chose no downloadable voice gets a silent video. */
 // Made videos are kept on the device (Cache Storage, public/sw.js keeps it), by story, shape, length and voice: sharing
 // the same one again is instant. The newest few only: a video is a few megabytes.
 const KEPT = 'video-v1';
@@ -858,28 +1077,79 @@ const choice = (o?: Choice): Required<Choice> => {
   const pref = store.get<Choice>('video-pref', {});
   return { shape: o?.shape ?? pref.shape ?? (matchMedia('(pointer: coarse)').matches ? 'v' : 'h'), mode: o?.mode ?? pref.mode ?? 'short' };
 };
+type Step = 'pics' | 'voice' | 'frames' | 'ready';
+const STEPS: Step[] = ['pics', 'voice', 'frames', 'ready'];
 
+/** Makes the video of the story at `href` (its page's address) and offers it to share or save. `ac`: an audio
+ *  context started in the tap, for recording the sound where the encoders can't (iOS only lets audio start there).
+ *  `asked`: the voice sheet was already offered, so a reader who chose no downloadable voice gets a silent video. */
 export async function makeVideo(href: string, ac: AudioContext | null = null, asked = false, opts?: Choice) {
+  // One at a time: a tap on «ویدیو» while another is made in the background shows that one.
+  if (busy() && making) {
+    pill.hidden = true;
+    if (!d.open) d.showModal();
+    if (making !== href) toast('یک ویدیو در حال ساخت است؛ اول آن آماده شود یا «لغو» را بزنید');
+    ac?.close().catch(() => {});
+    return;
+  }
   run?.abort();
   const mine = (run = new AbortController());
   const stop = mine.signal;
+  making = href;
   const status = $('[data-vs-status]', d)!;
   const bar = $('[data-vs-bar]', d)!;
+  const ring = $<SVGCircleElement>('[data-vs-ring]', d)!;
+  const pct = $('[data-vs-pct]', d)!;
+  const eta = $('[data-vs-eta]', d)!;
   const note = $('[data-vs-note]', d)!;
   const shareBtn = $('[data-vs-share]', d)!;
   const save = $<HTMLAnchorElement>('[data-vs-save]', d)!;
   const cancel = $('[data-vs-cancel]', d)!;
-  const say = (msg: string, p: number) => {
+  const bgBtn = $('[data-vs-bg]', d)!;
+  const miniRing = $<SVGCircleElement>('[data-vs-mini-ring]', pill)!;
+  // Time left in the step that takes long (the voice, the frames): from how fast it has gone so far.
+  let phaseAt = performance.now();
+  let lastMini = 0;
+  const step = (name: Step) => {
+    phaseAt = performance.now();
+    eta.textContent = '';
+    const at = STEPS.indexOf(name);
+    for (const li of d.querySelectorAll<HTMLElement>('[data-vs-step]')) {
+      const k = STEPS.indexOf(li.dataset.vsStep as Step);
+      li.dataset.state = k < at || name === 'ready' ? 'done' : k === at ? 'now' : '';
+    }
+  };
+  const say = (msg: string, p: number, part?: number) => {
     status.textContent = msg;
     bar.style.width = `${Math.round(p * 100)}%`;
+    ring.style.strokeDashoffset = miniRing.style.strokeDashoffset = String(100 - p * 100);
+    pct.textContent = `${fmtNum(Math.round(p * 100))}٪`;
+    $('[data-vs-pill-sub]', pill)!.textContent = `${fmtNum(Math.round(p * 100))}٪`;
+    const spent = (performance.now() - phaseAt) / 1000;
+    if (part && part > 0.06 && spent > 2) {
+      const left = Math.max(1, Math.round((spent * (1 - part)) / part));
+      eta.textContent = left < 60 ? `حدود ${fmtNum(left)} ثانیه مانده` : `حدود ${fmtNum(Math.round(left / 60))} دقیقه مانده`;
+    }
+    const now = performance.now();
+    if (now - lastMini > 300) {
+      lastMini = now;
+      miniFrame();
+    }
   };
   $('[data-vs-making]', d)!.hidden = false;
   $('[data-vs-done]', d)!.hidden = true;
   shareBtn.hidden = save.hidden = true;
+  bgBtn.hidden = false;
   cancel.textContent = 'لغو';
   note.textContent = '';
+  stage.querySelector('canvas')?.remove();
+  showing = null;
+  stage.dataset.phase = 'prep';
+  $('[data-vs-skel]', stage)!.textContent = '';
+  step('pics');
   say('آماده کردن خبر…', 0);
   d.toggleAttribute('data-busy', true);
+  pill.hidden = true;
   if (!d.open) d.showModal();
   let handedOn = false; // `ac` goes on to the next try, after the voice sheet
   try {
@@ -888,12 +1158,15 @@ export async function makeVideo(href: string, ac: AudioContext | null = null, as
     // The video's voice has to be one the page can keep: offer the download, as «گوش دادن» does, and come back.
     if (!engine && voiceSupported() && !asked) {
       handedOn = true;
+      d.removeAttribute('data-busy');
+      making = null;
       d.close();
       toast('برای روایت ویدیو یک صدای فارسی لازم است');
       return void openVoice(() => makeVideo(href, ac, true, opts));
     }
     const want = choice(opts);
     store.set('video-pref', want);
+    stage.dataset.shape = want.shape;
     const full = (await fetch(`${href}card.json`).then((r) => (r.ok ? r.json() : Promise.reject(new Error(String(r.status)))))) as Card;
     const short = want.mode === 'short' ? shortCard(full) : null;
     const mode: Mode = short ? 'short' : 'full';
@@ -905,27 +1178,44 @@ export async function makeVideo(href: string, ac: AudioContext | null = null, as
       return made.show();
     }
     const card = short?.card ?? full;
+    $('[data-vs-skel]', stage)!.textContent = card.title;
     const src = short?.src ?? ((i: number) => (full.vid ? `vid=${full.vid}&i=${i}` : undefined));
     useShape(want.shape);
     INTRO = mode === 'short' ? 0 : FULL_INTRO;
     await Promise.all([800, 500, 900].map((w) => document.fonts.load(`${w} 40px ${FONT}`))).catch(() => {});
     say('آوردن تصویرها…', 0.03);
     const wanted = new Map(card.video.chapters.flatMap((c) => c.pics).map((a) => [a[0], a]));
-    const got = await Promise.all([...wanted.values()].map(picture));
-    const pics = new Map([...wanted.keys()].map((k, i) => [k, got[i]]));
+    let got = 0;
+    const list = await Promise.all(
+      [...wanted.values()].map((a) =>
+        picture(a).then((b) => {
+          say('آوردن تصویرها…', 0.03 + (0.05 * ++got) / wanted.size, got / wanted.size);
+          return b;
+        }),
+      ),
+    );
+    const pics = new Map([...wanted.keys()].map((k, i) => [k, list[i]]));
     if (stop.aborted) return;
-    say(engine ? 'ساختن روایت…' : 'آماده کردن متن…', 0.06);
-    const built = await build(card, pics, engine, (p) => say(`ساختن روایت… ${fmtNum(Math.round(p * 100))}٪`, 0.06 + p * 0.39), lineMaker(card, src));
+    const lines = lineMaker(card, src);
+    // The preview: the same video with the text at a reading pace and no sound, while the voice is made.
+    const draft = await build(card, pics, null, () => {}, lines);
+    preview({ card, ...draft, sound: null }, stop);
+    step('voice');
+    say(engine ? 'ساختن روایت…' : 'آماده کردن متن…', 0.08);
+    const built = await build(card, pics, engine, (p) => say('ساختن روایت با صدای فارسی…', 0.08 + p * 0.37, p), lines);
     if (stop.aborted) return;
     const video: Video = { card, ...built, sound: mix(built, !!engine) };
     const canvas = document.createElement('canvas');
     canvas.width = W;
     canvas.height = H;
     const draw = painter(canvas.getContext('2d', { alpha: false })!, video);
-    const frames = (p: number) => say(`ساختن ویدیو… ${fmtNum(Math.round(p * 100))}٪`, 0.45 + p * 0.55);
+    previewing++;
+    show(canvas, 'frames');
+    step('frames');
+    const frames = (p: number) => say('ساختن ویدیو، فریم به فریم…', 0.45 + p * 0.55, p);
     let blob = await encode(video, canvas, draw, frames, stop);
     if (!blob) {
-      note.textContent = `این کار ${fmtNum(Math.ceil(video.total))} ثانیه طول می‌کشد؛ صفحه را باز نگه دارید.`;
+      note.textContent = `این کار ${fmtNum(Math.ceil(video.total))} ثانیه طول می‌کشد؛ این صفحه را باز نگه دارید (خواندن و گوش دادن در همین صفحه آزاد است).`;
       blob = await record(video, canvas, draw, frames, stop, ac);
     }
     if (stop.aborted) return;
@@ -933,13 +1223,26 @@ export async function makeVideo(href: string, ac: AudioContext | null = null, as
     void keep(key, blob, video.total);
     made = { key, show: done.bind(null, full, blob, video.total, !video.sound, href, want.shape, mode, false) };
     made.show();
+    step('ready');
+    if (!d.open) {
+      miniFrame();
+      pillState('ready');
+      toast('ویدیوی شما آماده است ✓', 'reward');
+    }
   } catch (e) {
     if (stop.aborted || (e as Error).name === 'AbortError') return;
     console.error(e);
     say('ساختن ویدیو ممکن نشد — دوباره امتحان کنید.', 0);
     toast('ساختن ویدیو ممکن نشد');
+    if (!d.open) pillState('failed');
   } finally {
-    if (run === mine) d.removeAttribute('data-busy');
+    previewing++;
+    if (run === mine) {
+      d.removeAttribute('data-busy');
+      making = null;
+      bgBtn.hidden = true;
+      if (stop.aborted) pillState('off');
+    }
     // iOS keeps only a few audio contexts alive: one per video would soon leave none.
     if (!handedOn) ac?.close().catch(() => {});
   }
@@ -953,9 +1256,15 @@ function done(card: Card, blob: Blob, seconds: number, silent: boolean, href: st
   const file = new File([blob], `khabar-${card.id || card.vid}-${shape}.${ext}`, { type: blob.type.split(';')[0] });
   $('[data-vs-making]', d)!.hidden = true;
   $('[data-vs-done]', d)!.hidden = false;
+  $('[data-vs-bg]', d)!.hidden = true;
+  stage.querySelector('canvas')?.remove();
+  showing = null;
   const player = $<HTMLVideoElement>('[data-vs-video]', d)!;
   player.src = url;
   player.dataset.shape = shape;
+  // It plays at once, silent (a browser starts sound only from a tap): the controls turn the sound on.
+  player.muted = true;
+  if (d.open) player.play().catch(() => {});
   const meta = (secs: number) => {
     const min = Math.floor(secs / 60);
     const sec = Math.round(secs % 60);

@@ -36,7 +36,7 @@ const jsonLd = [
     </header>
     {
       hero && (
-        <a class="vd-hero" href={hero.href}>
+        <div class="vd-hero-wrap"><a class="vd-hero" href={hero.href}>
           <span class="vd-thumb"><img {...pic(hero.thumb, 'large')} alt="" decoding="async" referrerpolicy="no-referrer" />{hero.duration && <small>{clock(hero.duration)}</small>}</span>
           <span class="vd-hero-text">
             <span class="vd-new">تازه‌ترین</span>
@@ -44,6 +44,7 @@ const jsonLd = [
             <small>{[hero.label, hero.date && faDate(hero.date)].filter(Boolean).join(' · ')}</small>
           </span>
         </a>
+        <p class="row vd-hero-acts"><a class="btn sm primary" href={hero.youtube} target="_blank" rel="noopener"><Icon name="youtube" /> تماشا در یوتیوب</a>{hero.ai?.summary && <a class="btn sm" href={`${hero.href}#summary`}><Icon name="list" /> خلاصه</a>}<button class="btn sm" type="button" data-make-video={hero.href} data-video-mode="full" hidden><Icon name="film" /> تیزر</button></p></div>
       )
     }
     {
@@ -58,6 +59,7 @@ const jsonLd = [
                   <span class="vd-label">{v.label}</span>
                   <b dir="auto">{v.headline}</b>
                 </a>
+                <button class="vd-teaser" type="button" data-make-video={v.href} data-video-mode="full" hidden><Icon name="film" /> تیزر</button>
               </li>
             ))}
           </ul>
@@ -78,6 +80,7 @@ const jsonLd = [
                       <span class="vd-label">{v.label}</span>
                       <b dir="auto">{v.headline}</b>
                     </a>
+                    <button class="vd-teaser" type="button" data-make-video={v.href} data-video-mode="full" hidden><Icon name="film" /> تیزر</button>
                   </li>
                 ))}
               </ul>

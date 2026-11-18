@@ -123,7 +123,11 @@ self.addEventListener('push', (e) => {
     self.registration.showNotification(title, {
       body: m.body || '',
       icon: `${SCOPE}icon-192.png`,
-      badge: `${SCOPE}icon-192.png`,
+      // Android's status bar draws the badge's shape only: white on transparent.
+      badge: `${SCOPE}badge-96.png`,
+      // The story's picture, large under the text (Android, Windows; others ignore it). An https address only.
+      ...(typeof m.image === 'string' && m.image.startsWith('https://') && { image: m.image }),
+      timestamp: Date.now(),
       dir: 'rtl',
       lang: 'fa',
       tag: m.tag || 'news',

@@ -5,7 +5,8 @@
 // POST /api/push { action: 'renew', old, sub }                     the service worker, when the browser replaced it
 // POST /api/push { action: 'test', endpoint }                      a test notification to this (subscribed) browser:
 //      the reader checks it works on their phone; only to a subscription already stored, a few an hour.
-// POST /api/push { action: 'send', posts: [{ id, title, tags, kind }] }   Authorization: Bearer PUSH_SECRET
+// POST /api/push { action: 'send', posts: [{ id, title, tags, kind, image? }] }   Authorization: Bearer PUSH_SECRET
+//   image: the story's picture (recent.json, an https address), shown large on Android/Windows; the first story's that has one.
 //   kind: 'story' | 'digest' | 'video' (a new video of Mehrzad's: every mode hears about it)
 //      Called by the site workflow (scripts/notify.mjs) once the new stories are live. Each post is announced once
 //      (`push:sent`); the very first call only records what is already out, so turning this on announces nothing old.
@@ -19,6 +20,8 @@ const SITE_NAME = 'فیوچر فوکوس';
 const KEEP_SENT = 30 * 864e5;
 const on = () => configured() && vapidConfigured();
 const subKey = (endpoint) => hash(`push:${endpoint}`);
+/** A notification's picture: an https address of a reasonable length, nothing else (it goes into every message). */
+export const imageUrl = (u) => (typeof u === 'string' && u.length <= 600 && /^https:\/\/[\w.-]+\/\S*$/.test(u) ? u : null);
 
 export async function GET(request) {
   if (!on()) return fail(request, 501, 'not configured');
@@ -43,7 +46,7 @@ export async function POST(request) {
     const [raw] = await redis(['HGET', 'push:subs', subKey(body.endpoint)]);
     if (!raw) return fail(request, 404, 'unknown');
     const origin = (process.env.SITE_URL || new URL(request.url).origin).replace(/\/$/, '');
-    const msg = { title: 'اعلان‌ها کار می‌کنند ✓', body: `خبرهای تازه‌ی ${SITE_NAME} همین‌طور می‌رسند`, url: `${origin}/`, tag: 'test' };
+    const msg = { title: 'اعلان‌ها کار می‌کنند ✓', body: `خبرهای تازه‌ی ${SITE_NAME} همین‌طور می‌رسند، با تصویر خبر`, url: `${origin}/`, tag: 'test', image: `${origin}/og.png` };
     try {
       const { status, reason } = await sendPush(JSON.parse(raw).sub, msg, { ttl: 600, urgency: 'high', detail: true });
       if (status === 404 || status === 410) await redis(['HDEL', 'push:subs', subKey(body.endpoint)]);
@@ -69,7 +72,7 @@ export async function POST(request) {
     const mode = MODES.includes(body.mode) ? body.mode : 'all';
     if (!guest || !sub) return fail(request, 400, 'bad subscription');
     if (await limited(request, ['push-sub', 20, 3600, hash(guest)])) return fail(request, 429, 'slow down');
-    const topics = [...new Set((Array.isArray(body.topics) ? body.topics : []).map((t) => cleanText(t, 40)).filter(Boolean))].slice(0, 40);
+    const topics = [...new Set((Array.isArray(body.topics) ? body.topics : []).map((t) => cleanText(t, 60)).filter(Boolean))].slice(0, 40);
     await redis(['HSET', 'push:subs', subKey(sub.endpoint), JSON.stringify({ sub, mode, topics, at: Date.now() })]);
     return json(request, { ok: true });
   }
@@ -89,6 +92,7 @@ export function pick(rec, posts) {
 export function message(posts, origin) {
   const one = posts.length === 1;
   const first = posts[0];
+  const picked = posts.find((p) => p.image);
   return {
     title: one ? first.title : `${posts.length.toLocaleString('fa-IR')} خبر تازه در ${SITE_NAME}`,
     body: one
@@ -98,10 +102,11 @@ export function message(posts, origin) {
           ? `ویدیوی تازه‌ی مهرزاد · ${SITE_NAME}`
           : first.kind === 'weekly'
           ? `هفته‌ای که گذشت · ${SITE_NAME}`
-          : `${first.tags[0] ? `${first.tags[0]} · ` : ''}${SITE_NAME}`
+          : `${first.tags[0] && !first.tags[0].startsWith('who:') ? `${first.tags[0]} · ` : ''}${SITE_NAME}`
       : posts.slice(0, 4).map((p) => `• ${p.short || p.title}`).join('\n'),
     url: one ? (first.kind === 'weekly' ? `${origin}/week/` : `${origin}/p/${first.id}/`) : `${origin}/`,
     tag: 'news',
+    ...(picked && { image: picked.image }),
   };
 }
 
@@ -110,7 +115,7 @@ async function send(request, body) {
   if (!secret || request.headers.get('authorization') !== `Bearer ${secret}`) return fail(request, 401, 'unauthorized');
   const posts = (Array.isArray(body.posts) ? body.posts : [])
     .slice(0, 50)
-    .map((p) => ({ id: postId(p?.id), title: cleanText(p?.title, 160).replace(/\n/g, ' '), short: cleanText(p?.short, 60).replace(/\n/g, ' '), tags: (Array.isArray(p?.tags) ? p.tags : []).map((t) => cleanText(t, 40)).slice(0, 5), kind: ['digest', 'video', 'weekly'].includes(p?.kind) ? p.kind : 'story' }))
+    .map((p) => ({ id: postId(p?.id), title: cleanText(p?.title, 160).replace(/\n/g, ' '), short: cleanText(p?.short, 60).replace(/\n/g, ' '), tags: (Array.isArray(p?.tags) ? p.tags : []).map((t) => cleanText(t, 60)).slice(0, 8), kind: ['digest', 'video', 'weekly'].includes(p?.kind) ? p.kind : 'story', ...(imageUrl(p?.image) && { image: imageUrl(p.image) }) }))
     .filter((p) => p.id && p.title);
   if (!posts.length) return json(request, { sent: 0, posts: 0 });
 

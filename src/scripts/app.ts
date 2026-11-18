@@ -89,8 +89,8 @@ $('[data-seen-clear]')?.addEventListener('click', () => {
 });
 for (const dlg of $$<HTMLDialogElement>('dialog')) {
   dlg.addEventListener('click', (e) => {
-    // A sheet at work (data-busy: a video being made) isn't closed by a stray tap beside it, only by its own buttons.
-    if ((e.target === dlg && !dlg.hasAttribute('data-busy')) || (e.target as Element).closest('[data-close]')) dlg.close();
+    // A tap beside a sheet closes it (the video sheet then goes on making the video in the background, video.ts).
+    if (e.target === dlg || (e.target as Element).closest('[data-close]')) dlg.close();
   });
 }
 $$('[data-open-settings]').forEach((b) => b.addEventListener('click', () => (syncForm(), settingsDialog?.showModal())));

@@ -3,6 +3,7 @@
 import Base from '../../layouts/Base.astro';
 import Timeline from '../../components/Timeline.astro';
 import Sidebar from '../../components/Sidebar.astro';
+import Icon from '../../components/Icon.astro';
 import { SITE } from '../../site';
 import { abs, faNum } from '../../lib/posts';
 import { breadcrumbs, listLd } from '../../lib/seo';
@@ -31,11 +32,13 @@ const jsonLd = [
   jsonLd={jsonLd}
 >
   <div class="container">
-    <header class="page-head">
+    <header class="page-head with-action">
       <div>
         <h1>{e.name_fa} <small class="muted" dir="ltr" lang="en">{e.name_en}</small></h1>
         <p>{KIND_ONE[e.kind]} · <span data-num>{faNum(posts.length)}</span> خبر{e.about && ` · ${e.about}`}</p>
       </div>
+      <!-- Followed as `who:<slug>` beside the topics (src/scripts/follow.ts): the home's «موضوع‌های من» and notifications. -->
+      <button class="btn follow-btn" type="button" data-follow={`who:${e.slug}`} data-follow-name={e.name_fa} aria-pressed="false"><Icon name="plus" class="when-off" /><Icon name="check" class="when-on" /> <span data-follow-label>دنبال کردن</span></button>
     </header>
     <div class="layout">
       <div class="col-main"><Timeline posts={posts.slice(0, 60)} all={posts} title={`خط زمانی ${e.name_fa}`} /></div>

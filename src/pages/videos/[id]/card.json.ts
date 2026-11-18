@@ -2,15 +2,24 @@
 // pipeline/videos.py --summarize; else Gholam's first paragraphs) over its thumbnail, and «تماشا در یوتیوب». Shaped like a
 // story's card.json; the cloud voice reads its lines from here (server/tts.js ?vid=&i=).
 import type { APIRoute } from 'astro';
-import { picture } from '../../../lib/posts';
+import { faNum, picture } from '../../../lib/posts';
 import { lexFor } from '../../../lib/knowledge';
 import { getVideos, type Video } from '../../../lib/videos';
 
-const points = (v: Video) => (v.ai?.points?.length ? v.ai.points.slice(0, 3) : (v.story?.article.body ?? []).filter((p) => p.length < 260).slice(0, 2));
+/** What the teaser says: the model's points, else Gholam's first paragraphs, else — an episode nobody has summarized
+ *  yet — what is known for sure: which episode, how long, its chapters' names and its own title. Every video has one. */
+function points(v: Video): string[] {
+  if (v.ai?.points?.length) return v.ai.points.slice(0, 3);
+  const gholam = (v.story?.article.body ?? []).filter((p) => p.length < 260).slice(0, 2);
+  if (gholam.length) return gholam;
+  const mins = v.duration ? Math.max(1, Math.round(v.duration / 60)) : 0;
+  const what = v.live ? 'لایوِ' : 'ویدیوی';
+  const intro = `${v.label ? `${v.label}، ` : ''}${what} ${mins ? `${faNum(mins)} دقیقه‌ای ` : ''}کانال یوتیوب مهرزاد صمدی درباره‌ی هوش مصنوعی.`;
+  const chapters = (v.ai?.chapters ?? v.chapters ?? []).map((c) => c.title).filter(Boolean).slice(0, 5);
+  return [intro, chapters.length ? `در این قسمت: ${chapters.join('، ')}.` : `عنوان این قسمت: ${v.name}.`];
+}
 export function getStaticPaths() {
-  return getVideos()
-    .filter((v) => points(v).length > 0)
-    .map((v) => ({ params: { id: v.id }, props: { v } }));
+  return getVideos().map((v) => ({ params: { id: v.id }, props: { v } }));
 }
 export const GET: APIRoute = ({ props }) => {
   const v = props.v as Video;

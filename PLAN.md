@@ -52,8 +52,32 @@ Tick items off here; move anything that becomes a lasting rule into CLAUDE.md.
 - [x] **P1-D** /today/ captions, brief words lit, median/p90 regression test (made-up clips).
 - [ ] **To do / verify after deploy**: dispatch `ai-backfill` (what=more) a few times for the old posts' extras; check the
   first runner runs' quality of `ai_more` (9B) by eye on 20 posts; real hand-labeled timing clips (P1-D, needs a person);
-  Playwright video test (P1-C) and UI test in CI; follow button on /who/ pages; build time 15 s → ~60 s (formatter cache
+  Playwright video test (P1-C) and UI test in CI; ~~follow button on /who/ pages~~ (done); build time 15 s → ~60 s (formatter cache
   added; profile `tehranDay`/`getFeed` next).
+
+## Progress (2026-11-18, night)
+
+- [x] **Video maker, the wait**: the sheet plays a silent preview of the video itself (text paced) while the voice is
+  made, then shows the real frames as they're encoded; four steps, a ring, time left. «ادامه در پس‌زمینه» / ✕ / Escape /
+  a tap beside it keep it going in a floating frame (`[data-vs-pill]`, its live frame in a progress ring); a toast and
+  the frame say when it's ready. Only «لغو» stops it. One video at a time.
+- [x] **Video maker, the look**: the picture on screen blurred behind everything (every shape), the panel's shadow,
+  pictures far from the panel's shape shown whole over their blur (charts, slides) instead of cropped, black letterbox
+  bars trimmed (YouTube thumbnails), the said word pops, text auto-sized (up to 1.7×) to fill its room, short headlines
+  larger, a headline with no picture centered. Vertical = reel: story-like progress at the top, text inside Instagram's
+  safe zone, names and source in the lower band. Bitrate 2.2/1.9/1.4 Mbps (v/s/h), capped at ~25 MB for long videos
+  (a 45-s reel ≈ 12 MB, the 5-min full summary ≈ 25 MB).
+- [x] **Teasers for every YouTube video**: episodes without a summary get one from what's known (number, length,
+  chapters, title); a «تیزر» button on every card of /videos/ and the hero, «خلاصه» → `#summary` when there is one.
+- [x] **Notification pictures**: `recent.json` `image` (the relay on the primary domain, never a filtered CDN) →
+  `scripts/notify.mjs` → `/api/push` (https only) → `sw.js` `image` (Android/Windows); monochrome `badge-96.png`.
+- [x] **Follow on /who/ pages**: follows hold `who:<slug>` beside topics; story cards and `recent.json` carry them, so
+  the home's «موضوع‌های من» and topic-mode notifications follow people and companies too.
+- [ ] **cilla-mini voices** (https://huggingface.co/mehdi-hf/cilla-mini, Pocket-TTS fine-tune, 3 speakers: parisa,
+  voice1, voice2): gated (needs an HF login + accepting its terms) and CC-BY-NC-4.0 (fine while the site is
+  non-commercial, credit required). PyTorch safetensors, not ONNX: needs an ONNX export (community Pocket-TTS
+  exporters exist, run with onnxruntime-web) + a JS port of its Persian normalizer, hosted where readers can download it
+  (the gate blocks anonymous downloads). Waiting on the owner: an HF token with access, and where to host the export.
 
 ## Status snapshot (2026-11-17)
 

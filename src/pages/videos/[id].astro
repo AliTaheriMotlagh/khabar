@@ -17,8 +17,6 @@ const story = v.story?.kind === 'story' ? v.story : null;
 const more = v.story ? related(v.story, 4) : [];
 const title = videoTitle(v);
 // The model's Persian chapter titles when it made them (same times as the video's own), else the video's own.
-// A teaser can be made when there's something to say over the thumbnail (/videos/<id>/card.json).
-const teaser = (v.ai?.points?.length ?? 0) > 0 || (v.story?.article.body.length ?? 0) > 0;
 const chapters = v.ai?.chapters?.length ? v.ai.chapters : (v.chapters ?? []);
 const jsonLd = {
   '@context': 'https://schema.org',
@@ -53,11 +51,11 @@ const crumbs = breadcrumbs([{ name: VIDEOS_TITLE, path: 'videos/' }, { name: tit
     <a class="vd-watch" href={v.youtube} target="_blank" rel="noopener">
       <span class="vd-thumb"><img {...pic(v.thumb, 'large')} alt={v.title} decoding="async" referrerpolicy="no-referrer" /><span class="vd-play"><Icon name="youtube" /></span></span>
     </a>
-    <p class="row"><a class="btn primary" href={v.youtube} target="_blank" rel="noopener"><Icon name="youtube" /> تماشا در یوتیوب</a>{teaser && <button class="btn" type="button" data-make-video={v.href} data-video-mode="full" title="ویدیوی کوتاه معرفی این قسمت، ساخته روی همین دستگاه" hidden><Icon name="film" /> تیزر این قسمت</button>}</p>
+    <p class="row"><a class="btn primary" href={v.youtube} target="_blank" rel="noopener"><Icon name="youtube" /> تماشا در یوتیوب</a><button class="btn" type="button" data-make-video={v.href} data-video-mode="full" title="ویدیوی کوتاه معرفی این قسمت، ساخته روی همین دستگاه" hidden><Icon name="film" /> تیزر این قسمت</button>{v.ai?.summary && <a class="btn" href="#summary"><Icon name="list" /> خلاصه</a>}</p>
 
     {
       v.ai?.summary && (
-        <section>
+        <section id="summary">
           <h2 class="section-title">این قسمت درباره‌ی چیست</h2>
           <p class="prose">{v.ai.summary}</p>
           {v.ai.points && v.ai.points.length > 0 && <ul class="vd-points">{v.ai.points.map((p) => <li>{p}</li>)}</ul>}

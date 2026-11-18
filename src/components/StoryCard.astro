@@ -16,7 +16,7 @@ const thumb = post.cover ? pic(post.cover.src || post.cover.poster, 'small') : n
 const first = post.cluster.length > 0 && post.cluster.every((id) => id > post.id);
 const update = post.cluster.length > 0 && !first;
 ---
-<li class="tl-item" data-id={post.id} data-kind={post.kind} data-tags={a.tags.join(',')} data-type={post.type ?? undefined}>
+<li class="tl-item" data-id={post.id} data-kind={post.kind} data-tags={[...a.tags, ...post.entities.slice(0, 3).map((e) => `who:${e.slug}`)].join(',')} data-type={post.type ?? undefined}>
   <span class="tl-dot" aria-hidden="true"></span>
   <time class="tl-time" datetime={post.date} data-num>{faTime(post.date)}</time>
   {

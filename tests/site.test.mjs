@@ -286,3 +286,42 @@ test('videos: a page per video of data/videos.json, newest first, and a feed who
   assert.equal((xml.match(/<item>/g) ?? []).length, videos.length);
   for (const [, u] of xml.matchAll(/<media:thumbnail url="([^"]+)"\/>/g)) assert.match(u.replace(/&amp;/g, '&'), /^https:\/\/[^/]+\/api\/img\/\?u=https%3A%2F%2Fi\.ytimg\.com%2F/);
 });
+
+test('videos: every episode has a teaser (card.json with lines to say) and its button, summarized or not', { skip }, () => {
+  const { videos } = JSON.parse(fs.readFileSync('data/videos.json', 'utf8'));
+  for (const v of videos) {
+    const card = JSON.parse(html(`videos/${v.id}/card.json`));
+    assert.equal(card.vid, v.id);
+    assert.ok(card.title && card.body.length >= 1 && card.body.every((l) => l.trim().length > 10), `${v.id}: lines to say`);
+    // Every line the plan says exists (server/tts.js reads them by index: title, ...body, why).
+    const lines = [card.title, ...card.body, card.why];
+    for (const ch of card.video.chapters) for (const i of ch.say) assert.ok(lines[i], `${v.id}: line ${i}`);
+    assert.match(html(`videos/${v.id}/index.html`), /data-make-video="[^"]*videos\/[\w-]+\/"/, `${v.id}: the teaser button`);
+  }
+  assert.equal((html('videos/index.html').match(/class="vd-teaser"/g) ?? []).length >= videos.length, true, 'a teaser button on every card');
+});
+
+test('notifications: recent.json gives each story a picture the phone can reach, never a filtered CDN', { skip }, () => {
+  const { posts: list } = JSON.parse(html('recent.json'));
+  const withImage = list.filter((p) => p.image);
+  assert.ok(withImage.length > list.length / 3, 'most stories have a picture');
+  for (const p of withImage) {
+    assert.match(p.image, /^https:\/\//);
+    assert.doesNotMatch(new URL(p.image).hostname, /(^|\.)(twimg\.com|telesco\.pe|ytimg\.com|t\.me)$/, `${p.id}: ${p.image}`);
+  }
+  // Topics come first (a notification names the first), then who the story is about.
+  for (const p of list) {
+    const at = p.tags.findIndex((t) => t.startsWith('who:'));
+    if (at >= 0) assert.ok(p.tags.slice(at).every((t) => t.startsWith('who:')), `${p.id}: topics before names`);
+  }
+});
+
+test('who: each page can be followed, and its stories carry its key for the home filter', { skip }, () => {
+  const dir = path.join(dist, 'who');
+  const slugs = fs.existsSync(dir) ? fs.readdirSync(dir).filter((s) => fs.existsSync(path.join(dir, s, 'index.html'))) : [];
+  for (const slug of slugs.slice(0, 20)) {
+    const page = html(`who/${slug}/index.html`);
+    assert.match(page, new RegExp(`data-follow="who:${slug}"`), slug);
+    assert.match(page, new RegExp(`data-tags="[^"]*who:${slug}`), `${slug}: its stories carry who:${slug}`);
+  }
+});

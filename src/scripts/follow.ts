@@ -7,11 +7,11 @@ const KEY = 'follows';
 export const getFollows = () => store.get<string[]>(KEY, []);
 const isFollowed = (tag: string) => getFollows().includes(tag);
 
-export function toggleFollow(tag: string) {
+export function toggleFollow(tag: string, name = tag) {
   const list = getFollows();
   const on = !list.includes(tag);
   store.set(KEY, on ? [...list, tag].slice(-40) : list.filter((t) => t !== tag));
-  toast(on ? `«${tag}» را دنبال می‌کنید؛ در خانه با «موضوع‌های من» فقط همین‌ها را ببینید` : `«${tag}» دیگر دنبال نمی‌شود`);
+  toast(on ? `«${name}» را دنبال می‌کنید؛ در خانه با «موضوع‌های من» فقط همین‌ها را ببینید` : `«${name}» دیگر دنبال نمی‌شود`);
   document.dispatchEvent(new CustomEvent('follows-change'));
 }
 
@@ -85,7 +85,7 @@ export function initFollow() {
     const b = (e.target as Element).closest<HTMLElement>('[data-follow]');
     if (!b) return;
     e.preventDefault();
-    toggleFollow(b.dataset.follow!);
+    toggleFollow(b.dataset.follow!, b.dataset.followName);
   });
   $('[data-tl-filter]')?.addEventListener('change', (e) => {
     store.set(FILTER, (e.target as HTMLInputElement).value);
