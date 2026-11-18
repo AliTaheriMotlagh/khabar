@@ -1,0 +1,81 @@
+{
+ "id": 6613,
+ "url": "https://t.me/dlmehr/6613",
+ "date": "2026-11-18T16:26:10+00:00",
+ "text": "https://fxtwitter.com/rightnow_co/status/2122792321255403900?a=phf_up6z-EeWwejTBIQ&s=52",
+ "forwarded_from": null,
+ "digest": false,
+ "hash": "17c8a7e13ca1",
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/rightnow_co/status/2122792321255403900?a=phf_up6z-EeWwejTBIQ&s=52",
+  "site": "FxTwitter",
+  "title": "RightNow (YC F26) (@rightnow_co)",
+  "description": "RightNow decision model v3 is live\nit makes decisions -- while the input is still arriving\nstream in text, JSON, robot state, a codebase, PDFs, images, voice or video. ask your questions. get an answer with a probability for every option\n~30 ms per decision.…",
+  "image": "https://cdn4.telesco.pe/file/cKvfsyrLVJwgBvzopGEPM6x7ExmER90opXYKZRNlIjLoZ0g0bVTcXzoCLhVc5bbD7i7OJzn6ysveQVdeeppgODIaZCXrSiHmVCCdl5q8x8uDO9kEq8PjtGUsfVIE_nlqL_kE0BKe8-lYj3HExn1Q68ZEkr-y4g72kfjQTpCVuarcXRqlJlkTi9OHcmJlsuh-FN5vKYYTu7gho1hBTch7O9wep2MnNKEFqpjUAVYcKEBbZrilKYRvlI9CWiRAEvLcdeCdpBdSYX4pYX6_fQZNxaHpuwPZxglaIWnOyvF1qAl5XbHV7L2lhAgsVaQSJ-MRIE7RrIjiQ5ety3QY-mK_RA.jpg"
+ },
+ "gholam": {
+  "text": "رفقا، شرکت RightNow نسخه سوم مدل تصمیم‌گیر خودش (RightNow decision model v3) رو منتشر کرده که به گفته خودشون برای کارهای فوری مثل هدایت ربات‌ها، انتخاب ابزار توسط ایجنت‌ها یا مسیریابی تیکت‌های پشتیبانی ساخته شده. ویژگی اصلیش اینه که صبر نمی‌کنه فایل یا حرفتون کامل برسه و هم‌زمان با ورود داده، تصمیمش رو لحظه‌به‌لحظه آپدیت می‌کنه و برای هر گزینه درصد احتمال می‌ده؛ یه جورایی مثل شاگرد مغازه فرزی که هنوز جمله‌ت تموم نشده، دستش می‌ره سمت جنس درست! ⚡\n\n• به ادعای این شرکت، مدل ۸ نوع ورودی (متن، JSON، وضعیت ربات، کد، PDF، تصویر، صدا و پیش‌نمایش ویدیو) رو می‌گیره و هر تصمیمش حدود ۳۰ میلی‌ثانیه زمان می‌بره؛ نرخ پایه هر سؤال هم ۰.۰۰۰۱ دلار اعلام شده که البته با هزینه توکن و کارمزد تماس، تو مثال ۵۰۰ توکنی سایتشون کل هر درخواست حدود ۰.۰۰۰۲۰۵ دلار درمیاد.\n• در حالی که پست معرفی از کانتکست تا ۱ میلیون توکن می‌گه، جدول مشخصات سایت کانتکست استاندارد رو ۳۸ هزار توکن و قابلیت استریم رو فقط به‌صورت سرور به سرور ذکر کرده.\n• تو جدول بنچمارک سایتشون هم امتیاز ۶۳.۲۰ برای این مدل درج شده، اما خود RightNow AI تصریح کرده که این عدد حاصل آزمایش داخلی خودشونه و ارزیابی مستقل Artificial Analysis نیست.",
+  "date": "2026-11-18T16:26:37+00:00"
+ },
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/rightnow_co/status/2122792321255403900",
+   "domain": "x.com",
+   "author": {
+    "name": "RightNow (YC F26)",
+    "handle": "rightnow_co",
+    "avatar": "https://pbs.twimg.com/profile_images/2120695215472459776/zI7jhdqT_200x200.jpg"
+   },
+   "text": "RightNow decision model v3 is live\n\nit makes decisions -- while the input is still arriving\n\nstream in text, JSON, robot state, a codebase, PDFs, images, voice or video. ask your questions. get an answer with a probability for every option\n\n~30 ms per decision. $0.0001 per answered question. up to 1M tokens of context in one call\n\nbuilt for the robot that has to act now, the agent that has to pick a tool, the support queue that has to route\n\nit's available now\n\nhttps://www.rightnowai.co/rightnow",
+   "date": 1794948103,
+   "media": [
+    {
+     "type": "image",
+     "src": "https://pbs.twimg.com/media/HXWsSujbQAAybfS.png?name=orig",
+     "ratio": 0.5625
+    }
+   ],
+   "links": [
+    "https://www.rightnowai.co/rightnow"
+   ]
+  },
+  {
+   "kind": "link",
+   "url": "https://www.rightnowai.co/rightnow",
+   "domain": "rightnowai.co",
+   "title": "RightNow decision model",
+   "description": "The RightNow decision model API takes text, JSON state (robot state), images, voice, PDF, video (preview), and returns typed answers with probabilities.",
+   "image": "https://www.rightnowai.co/og/main.png?v=1d4ecbe2",
+   "site": "RightNow AI"
+  }
+ ],
+ "article": {
+  "title": "شرکت RightNow نسخه سوم مدل تصمیم‌گیر خودش (RightNow decision model v3) رو منتشر کرده که به گفته خودشون برای کارهای فوری مثل هدایت ربات‌ها، انتخاب ابزار توسط ایجنت‌ها یا مسیریابی تیکت‌های پشتیبانی ساخته شده",
+  "source_title": "RightNow decision model v3 is live",
+  "body": [
+   "شرکت RightNow نسخه سوم مدل تصمیم‌گیر خودش (RightNow decision model v3) رو منتشر کرده که به گفته خودشون برای کارهای فوری مثل هدایت ربات‌ها، انتخاب ابزار توسط ایجنت‌ها یا مسیریابی تیکت‌های پشتیبانی ساخته شده. ویژگی اصلیش اینه که صبر نمی‌کنه فایل یا حرفتون کامل برسه و هم‌زمان با ورود داده، تصمیمش رو لحظه‌به‌لحظه آپدیت می‌کنه و برای هر گزینه درصد احتمال می‌ده؛ یه جورایی مثل شاگرد مغازه فرزی که هنوز جمله‌ت تموم نشده، دستش می‌ره سمت جنس درست! ⚡",
+   "• به ادعای این شرکت، مدل ۸ نوع ورودی (متن، JSON، وضعیت ربات، کد، PDF، تصویر، صدا و پیش‌نمایش ویدیو) رو می‌گیره و هر تصمیمش حدود ۳۰ میلی‌ثانیه زمان می‌بره؛ نرخ پایه هر سؤال هم ۰.۰۰۰۱ دلار اعلام شده که البته با هزینه توکن و کارمزد تماس، تو مثال ۵۰۰ توکنی سایتشون کل هر درخواست حدود ۰.۰۰۰۲۰۵ دلار درمیاد.",
+   "• در حالی که پست معرفی از کانتکست تا ۱ میلیون توکن می‌گه، جدول مشخصات سایت کانتکست استاندارد رو ۳۸ هزار توکن و قابلیت استریم رو فقط به‌صورت سرور به سرور ذکر کرده.",
+   "• تو جدول بنچمارک سایتشون هم امتیاز ۶۳.۲۰ برای این مدل درج شده، اما خود RightNow AI تصریح کرده که این عدد حاصل آزمایش داخلی خودشونه و ارزیابی مستقل Artificial Analysis نیست."
+  ],
+  "why": null,
+  "tags": [
+   "ایجنت"
+  ]
+ },
+ "updated": "2026-11-18T16:30:45+00:00",
+ "ai": {
+  "title": "مدل تصمیم‌گیر نسخه سوم شرکت RightNow منتشر شد: تصمیم لحظه‌ای با ۸ نوع ورودی",
+  "short": "مدل تصمیم‌گیر نسخه سوم RightNow",
+  "topics": [
+   "آنتروپیک",
+   "کدنویسی"
+  ],
+  "type": "ابزار و محصول",
+  "model": "qwen3.5-9b-q4_k_m",
+  "v": 1,
+  "src": "39d00a57688e"
+ }
+}
