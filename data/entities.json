@@ -47,6 +47,42 @@
    "name_en": "RightNow decision model v3",
    "name_fa": "مدل تصمیم‌گیر رایت‌ناو نسخه ۳",
    "kind": "product"
+  },
+  {
+   "slug": "openai",
+   "name_en": "OpenAI",
+   "name_fa": "اوپن‌ای‌آی",
+   "kind": "company"
+  },
+  {
+   "slug": "amd",
+   "name_en": "AMD",
+   "name_fa": "ای‌ام‌دی",
+   "kind": "company"
+  },
+  {
+   "slug": "gpt-62-astra",
+   "name_en": "GPT-6.2 Astra",
+   "name_fa": "جی‌پی‌تی ۶.۲ آسترا",
+   "kind": "model"
+  },
+  {
+   "slug": "jalapeo",
+   "name_en": "Jalapeño",
+   "name_fa": "خالاپنویو",
+   "kind": "product"
+  },
+  {
+   "slug": "runway",
+   "name_en": "Runway",
+   "name_fa": "رانوی",
+   "kind": "company"
+  },
+  {
+   "slug": "gpu",
+   "name_en": "GPU",
+   "name_fa": "پردازنده گرافیکی",
+   "kind": "product"
   }
  ]
 }
