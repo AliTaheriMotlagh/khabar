@@ -10,7 +10,23 @@ type Data = {
   sources: { source: string; visits: number }[];
   reports: { post: number; id: string; reports: number; hidden: boolean; comment: Comment | null }[];
   recent: (Comment & { post: number })[];
+  crawl?: { token: 'ok' | 'missing' | 'unauthorized' | 'error'; status?: number; expires?: string | null; lastSuccess?: string | null; failing?: number; lastFailure?: string | null };
 };
+
+const DAY = 864e5;
+/** The crawl's health in one line, red when the owner has something to do. */
+function health(c: Data['crawl']): { bad: boolean; html: string } | null {
+  if (!c) return null;
+  const left = c.expires ? Math.floor((Date.parse(c.expires) - Date.now()) / DAY) : null;
+  const expiry = left === null ? '' : left < 0 ? ' · توکن گیت‌هاب منقضی شده' : ` · توکن گیت‌هاب ${fmtNum(left)} روز دیگر منقضی می‌شود`;
+  if (c.token === 'missing') return { bad: true, html: 'GITHUB_DISPATCH_TOKEN روی Vercel نیست: خبرها فقط با زمان‌بندی گیت‌هاب (هر چند ساعت) می‌رسند.' };
+  if (c.token === 'unauthorized') return { bad: true, html: `گیت‌هاب توکن را نپذیرفت (${fmtNum(c.status ?? 0)})${expiry}: GITHUB_DISPATCH_TOKEN را در گیت‌هاب تازه کنید و روی Vercel بگذارید.` };
+  if (c.token === 'error') return { bad: true, html: `گیت‌هاب جواب نداد (${fmtNum(c.status ?? 0)}).` };
+  const failing = c.failing ?? 0;
+  const runs = failing >= 2 ? ` · <a href="${esc(c.lastFailure ?? '')}" target="_blank" rel="noopener">${fmtNum(failing)} اجرای پشت‌سرهم ناموفق</a>` : '';
+  const last = c.lastSuccess ? `آخرین به‌روزرسانی موفق: ${esc(relTime(c.lastSuccess))}` : 'هنوز اجرای موفقی نیست';
+  return { bad: failing >= 2 || (left !== null && left < 14), html: last + runs + expiry };
+}
 
 const KEY = 'khabar:admin';
 const SOURCES: Record<string, string> = { telegram: 'تلگرام', google: 'گوگل', x: 'X (توییتر)', instagram: 'اینستاگرام', search: 'موتورهای جستجو', rss: 'خبرخوان', direct: 'مستقیم (بدون ارجاع)', other: 'سایر' };
@@ -60,6 +76,11 @@ const btn = (action: string, label: string, danger = false) => `<button class="b
 
 function render(d: Data) {
   for (const [k, v] of Object.entries(d.totals)) $(`[data-adm-t="${k}"]`)!.textContent = compact(v);
+  const h = health(d.crawl);
+  const box = $('[data-adm-health]')!;
+  box.hidden = !h;
+  box.classList.toggle('bad', !!h?.bad);
+  box.innerHTML = h?.html ?? '';
 
   // New visits by hour: one series, today's bars, the busiest hour and the current one labelled.
   const now = Number(new Intl.DateTimeFormat('en-US', { timeZone: 'Asia/Tehran', hour: '2-digit', hourCycle: 'h23' }).format(new Date()));

@@ -729,6 +729,9 @@ mark.c-mark:hover, mark.c-mark:focus-visible { background: var(--accent-soft); o
 .adm-c p { margin: 0; white-space: pre-line; line-height: 1.85; overflow-wrap: anywhere; }
 .adm-c blockquote { margin: 0; padding: 2px 10px; border-inline-start: 3px solid var(--accent); color: var(--text-2); font-size: 13px; }
 .adm-c-actions { display: flex; flex-wrap: wrap; gap: 6px; }
+.adm-health { margin: 0 0 12px; padding: 10px 14px; border-radius: var(--radius-sm); background: var(--good-soft); color: var(--good); font-size: 14px; font-weight: 700; }
+.adm-health.bad { background: var(--new-soft); color: var(--new); }
+.adm-health[hidden] { display: none; }
 .adm-flag { padding: 1px 8px; border-radius: 999px; background: var(--new-soft); color: var(--new); font-size: 12px; font-weight: 800; }
 .adm-flag.soft { background: var(--surface-2); color: var(--text-3); }
 .btn.danger { color: #dc2626; }

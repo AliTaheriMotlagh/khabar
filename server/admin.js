@@ -1,10 +1,11 @@
 // The owner's page (src/pages/admin): everything behind `Authorization: Bearer ADMIN_TOKEN`; 501 without one.
 // GET  /api/admin → { totals, hours: { today, yesterday } (new visits by Tehran hour), sources (7 days),
-//                     reports (most reported comments, with the comment), recent (newest comments site-wide) }
+//                     reports (most reported comments, with the comment), recent (newest comments site-wide),
+//                     crawl (GITHUB_DISPATCH_TOKEN's health and the site workflow's last runs, see crawlHealth) }
 // POST /api/admin { action: 'hide' | 'unhide' | 'dismiss' | 'delete', post, id }   moderate one comment
 // Wrong tokens are counted per address and refused for an hour after a handful, so the token can't be guessed.
 import { timingSafeEqual } from 'node:crypto';
-import { configured, day, fail, json, limited, postId, preflight, readBody, redis } from './_lib.js';
+import { configured, day, fail, github, githubToken, json, limited, postId, preflight, readBody, redis } from './_lib.js';
 import { commentId, deleteComment, findComment, hideComment, publicView, unhideComment } from './_moderation.js';
 
 export const OPTIONS = preflight;
@@ -37,9 +38,34 @@ const hours = (flat) => {
   return h;
 };
 
+/** Is the crawl healthy? GITHUB_DISPATCH_TOKEN starts it (/api/watch, /api/sync): when it expires, new posts wait for
+ *  GitHub's schedule (hours). GitHub names a token's expiry in a response header, so the page warns weeks ahead. */
+export async function crawlHealth() {
+  if (!githubToken()) return { token: 'missing' };
+  try {
+    const res = await github('/runs?per_page=10');
+    const expiry = res.headers.get('github-authentication-token-expiration');
+    const expires = expiry ? new Date(expiry.replace(' UTC', 'Z').replace(' ', 'T')).toISOString() : null;
+    if (!res.ok) return { token: res.status === 401 || res.status === 403 ? 'unauthorized' : 'error', status: res.status, expires };
+    const runs = ((await res.json()).workflow_runs ?? []).filter((r) => r.status === 'completed');
+    const ok = runs.find((r) => r.conclusion === 'success');
+    return {
+      token: 'ok',
+      expires,
+      lastSuccess: ok?.updated_at ?? null,
+      // Failures since the last success: one is a hiccup, several in a row is a broken build.
+      failing: ok ? runs.indexOf(ok) : runs.length,
+      lastFailure: runs.find((r) => r.conclusion === 'failure')?.html_url ?? null,
+    };
+  } catch (e) {
+    return { token: 'error', status: 0, error: e.message };
+  }
+}
+
 export async function GET(request) {
   const denied = await guard(request);
   if (denied) return denied;
+  const crawl = crawlHealth();
   const days = Array.from({ length: 7 }, (_, k) => day(Date.now() - k * 864e5));
   const [today, yesterday, reports, recent, total, online, subs, ...sources] = await redis(
     ['HGETALL', `vh:${days[0]}`],
@@ -70,6 +96,7 @@ export async function GET(request) {
       return { ...r, post: Number(r.post), hidden: hiddenOf(r.post, r.id), comment: c ? publicView(c) : null };
     }),
     recent: recent.map((r) => JSON.parse(r)),
+    crawl: await crawl,
   });
 }
 

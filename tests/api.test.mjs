@@ -395,3 +395,31 @@ test('watch: a crawl once the newest post has its comment (or after a grace), an
     delete process.env.WATCH_SECRET;
   }
 });
+
+test('admin: the crawl\'s health — the dispatch token\'s expiry, failures in a row, a refused token', async () => {
+  assert.deepEqual(await admin.crawlHealth(), { token: 'missing' });
+  const real = globalThis.fetch;
+  process.env.GITHUB_DISPATCH_TOKEN = 'ghp_test';
+  const runs = [
+    { status: 'in_progress', conclusion: null },
+    { status: 'completed', conclusion: 'failure', html_url: 'https://github.com/x/runs/3' },
+    { status: 'completed', conclusion: 'failure', html_url: 'https://github.com/x/runs/2' },
+    { status: 'completed', conclusion: 'success', updated_at: '2026-11-17T18:44:00Z' },
+  ];
+  try {
+    globalThis.fetch = async () =>
+      new Response(JSON.stringify({ workflow_runs: runs }), { headers: { 'github-authentication-token-expiration': '2026-12-01 10:00:00 UTC' } });
+    assert.deepEqual(await admin.crawlHealth(), {
+      token: 'ok',
+      expires: '2026-12-01T10:00:00.000Z',
+      lastSuccess: '2026-11-17T18:44:00Z',
+      failing: 2,
+      lastFailure: 'https://github.com/x/runs/3',
+    });
+    globalThis.fetch = async () => new Response('{"message":"Bad credentials"}', { status: 401 });
+    assert.deepEqual(await admin.crawlHealth(), { token: 'unauthorized', status: 401, expires: null });
+  } finally {
+    globalThis.fetch = real;
+    delete process.env.GITHUB_DISPATCH_TOKEN;
+  }
+});
