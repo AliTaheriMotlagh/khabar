@@ -1,0 +1,72 @@
+{
+ "id": 6617,
+ "url": "https://t.me/dlmehr/6617",
+ "date": "2026-11-18T17:17:19+00:00",
+ "text": "https://fxtwitter.com/a16z/status/2122747826983866425?a=1aRVfrmDiQDCy2xrEl0&s=52",
+ "forwarded_from": null,
+ "digest": false,
+ "hash": "475858f20d31",
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/a16z/status/2122747826983866425?a=1aRVfrmDiQDCy2xrEl0&s=52",
+  "site": "FxTwitter",
+  "title": "a16z (@a16z)",
+  "description": "For decades, the idea of AI improving itself was just a thought experiment. Today, AI is already helping researchers at frontier labs run experiments, write code and test ideas faster. So how far are we from AI that can do the research on its own?\nIn our…",
+  "image": null
+ },
+ "gholam": {
+  "text": "رفقا، مجموعه a16z دیروز (۱۷ نوامبر) قسمت اول برنامه جدیدش به اسم Working Theory رو منتشر کرده که موضوعش حسابی کنجکاوی‌برانگیزه: اینکه کی قراره هوش مصنوعی خودش به تنهایی تحقیقاتِ ارتقای خودش (RSI) رو پیش ببره 🤖. توی این ویدیو، سارا وانگ با دو تا چهره مطرح یعنی مارک چن (مدیر ارشد تحقیقات OpenAI) و جان شولمن (هم‌بنیان‌گذار OpenAI و هم‌بنیان‌گذار و دانشمند ارشد Thinking Machines Lab) گپ زده؛ طبق توضیحات برنامه، مارک چن می‌گه OpenAI همین الان «کارآموزهای پژوهشی هوش مصنوعی» ساخته که تو نوشتن کد و تست ایده‌ها سرعت کار محقق‌ها رو بالا می‌برن. متن کامل صحبت‌ها توی این معرفی نیومده، ولی از روی توضیحات و سرفصل‌ها پیداست که بحثشون روی معنی دقیق RSI، سختیِ یاد دادن «سلیقه پژوهشی» به ماشین و اینکه چطور خودِ هوش مصنوعی می‌تونه تو حل مسئله هم‌راستاسازی (Alignment) کمک کنه می‌چرخه. یه جورایی فعلاً هوش مصنوعی حکم اون شاگرد زرنگه رو داره که آچار به دست اوستاکار می‌ده، حالا اینا نشستن بررسی کنن کی قراره کل تعمیرگاه رو خودش بچرخونه!",
+  "date": "2026-11-18T17:18:25+00:00"
+ },
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/a16z/status/2122747826983866425",
+   "domain": "x.com",
+   "author": {
+    "name": "a16z",
+    "handle": "a16z",
+    "avatar": "https://pbs.twimg.com/profile_images/1919488160125616128/QAZXTMEj_200x200.png"
+   },
+   "text": "For decades, the idea of AI improving itself was just a thought experiment. Today, AI is already helping researchers at frontier labs run experiments, write code and test ideas faster. So how far are we from AI that can do the research on its own?\n\nIn our first episode of Working Theory, a16z General Partner Sarah Wang explores recursive self-improvement with two leading AI researchers: Mark Chen, Chief Research Officer at OpenAI, and John Schulman, co-founder and Chief Scientist of Thinking Machines Lab, and co-founder of OpenAI.\n\nThey cover what RSI actually means, why research taste is so hard to teach, and why AI may be one of our best tools for solving alignment.\n\n00:00 The last invention\n01:58 What is RSI?\n03:21 How far are we?\n05:56 Getting to full RSI\n10:57 Aligning RSI\n15:08 Working theory\n\nYouTube: http://youtu.be/h_aA1-R70E8\n\n@markchen90 @johnschulman2 @sarahdingwang",
+   "date": 1794937495,
+   "media": [
+    {
+     "type": "video",
+     "src": "https://video.twimg.com/amplify_video/2122743050619510785/vid/avc1/1280x720/Xz-uQ1317bZeQJU8.mp4?tag=29",
+     "poster": "https://pbs.twimg.com/amplify_video_thumb/2122743050619510785/img/ZPZi2CwCkVHK8h1G.jpg",
+     "ratio": 0.5625,
+     "duration": 978.535,
+     "gif": false
+    }
+   ],
+   "links": [
+    "http://youtu.be/h_aA1-R70E8"
+   ]
+  }
+ ],
+ "article": {
+  "title": "مجموعه a16z دیروز (۱۷ نوامبر) قسمت اول برنامه جدیدش به اسم Working Theory رو منتشر کرده که موضوعش حسابی کنجکاوی‌برانگیزه: اینکه کی قراره هوش مصنوعی خودش به تنهایی تحقیقاتِ ارتقای خودش (RSI) رو پیش ببره 🤖",
+  "source_title": "For decades, the idea of AI improving itself was just a thought experiment. Today, AI is already helping researchers at frontier labs run…",
+  "body": [
+   "مجموعه a16z دیروز (۱۷ نوامبر) قسمت اول برنامه جدیدش به اسم Working Theory رو منتشر کرده که موضوعش حسابی کنجکاوی‌برانگیزه: اینکه کی قراره هوش مصنوعی خودش به تنهایی تحقیقاتِ ارتقای خودش (RSI) رو پیش ببره 🤖. توی این ویدیو، سارا وانگ با دو تا چهره مطرح یعنی مارک چن (مدیر ارشد تحقیقات OpenAI) و جان شولمن (هم‌بنیان‌گذار OpenAI و هم‌بنیان‌گذار و دانشمند ارشد Thinking Machines Lab) گپ زده؛ طبق توضیحات برنامه، مارک چن می‌گه OpenAI همین الان «کارآموزهای پژوهشی هوش مصنوعی» ساخته که تو نوشتن کد و تست ایده‌ها سرعت کار محقق‌ها رو بالا می‌برن. متن کامل صحبت‌ها توی این معرفی نیومده، ولی از روی توضیحات و سرفصل‌ها پیداست که بحثشون روی معنی دقیق RSI، سختیِ یاد دادن «سلیقه پژوهشی» به ماشین و اینکه چطور خودِ هوش مصنوعی می‌تونه تو حل مسئله هم‌راستاسازی (Alignment) کمک کنه می‌چرخه. یه جورایی فعلاً هوش مصنوعی حکم اون شاگرد زرنگه رو داره که آچار به دست اوستاکار می‌ده، حالا اینا نشستن بررسی کنن کی قراره کل تعمیرگاه رو خودش بچرخونه!"
+  ],
+  "why": null,
+  "tags": [
+   "استارتاپ",
+   "اوپن‌ای‌آی"
+  ]
+ },
+ "updated": "2026-11-18T17:32:58+00:00",
+ "ai": {
+  "title": "OpenAI کارآموزهای پژوهشی هوش مصنوعی برای تسریع تحقیقات خودسازماندهی را راه‌اندازی کرد",
+  "short": "OpenAI: کارآموزان AI",
+  "topics": [
+   "آنتروپیک"
+  ],
+  "type": "خبر",
+  "model": "qwen3.5-9b-q4_k_m",
+  "v": 1,
+  "src": "567423e485ff"
+ }
+}
