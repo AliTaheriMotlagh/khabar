@@ -12,6 +12,7 @@ type Stats = {
   shares: number;
   saves: number;
   catchups: number;
+  quizzes: number;
   streak: number;
   best: number;
   lastDay: string;
@@ -20,10 +21,10 @@ type Stats = {
   early: boolean;
   badges: string[];
 };
-const EMPTY: Stats = { xp: 0, reads: 0, reactions: 0, comments: 0, chats: 0, shares: 0, saves: 0, catchups: 0, streak: 0, best: 0, lastDay: '', tags: [], night: false, early: false, badges: [] };
-const POINTS = { read: 5, react: 2, comment: 10, chat: 2, share: 5, save: 2, daily: 5, catchup: 15 } as const;
+const EMPTY: Stats = { xp: 0, reads: 0, reactions: 0, comments: 0, chats: 0, shares: 0, saves: 0, catchups: 0, quizzes: 0, streak: 0, best: 0, lastDay: '', tags: [], night: false, early: false, badges: [] };
+const POINTS = { read: 5, react: 2, comment: 10, chat: 2, share: 5, save: 2, daily: 5, catchup: 15, quiz: 8 } as const;
 type Action = keyof typeof POINTS;
-const COUNTER: Partial<Record<Action, keyof Stats>> = { read: 'reads', react: 'reactions', comment: 'comments', chat: 'chats', share: 'shares', save: 'saves', catchup: 'catchups' };
+const COUNTER: Partial<Record<Action, keyof Stats>> = { read: 'reads', react: 'reactions', comment: 'comments', chat: 'chats', share: 'shares', save: 'saves', catchup: 'catchups', quiz: 'quizzes' };
 
 const LEVELS = [0, 25, 60, 120, 200, 320, 480, 700, 1000, 1400, 2000];
 const TITLES = ['تازه‌وارد', 'کنجکاو', 'خواننده', 'پیگیر', 'خبرخوان', 'تحلیل‌گر', 'خبره', 'آینده‌نگر', 'نابغه', 'افسانه', 'اسطوره'];
@@ -42,6 +43,7 @@ export const BADGES: { id: string; emoji: string; name: string; desc: string; te
   { id: 'share', emoji: '📣', name: 'سفیر', desc: 'خبری را با دیگران به اشتراک گذاشتید', test: (s) => s.shares >= 1 },
   { id: 'tags', emoji: '🧭', name: 'کاوشگر', desc: 'از ۵ موضوع مختلف خبر خواندید', test: (s) => s.tags.length >= 5 },
   { id: 'catchup', emoji: '✅', name: 'همیشه به‌روز', desc: 'همه‌ی خبرهای تازه را خواندید', test: (s) => s.catchups >= 1 },
+  { id: 'quiz', emoji: '🧩', name: 'کنجکاو', desc: '۱۰ پرسش خبر را درست جواب دادید', test: (s) => s.quizzes >= 10 },
   { id: 'night', emoji: '🦉', name: 'شب‌زنده‌دار', desc: 'بعد از نیمه‌شب خبر خواندید', test: (s) => s.night },
   { id: 'early', emoji: '🌅', name: 'سحرخیز', desc: 'پیش از ساعت ۷ صبح خبر خواندید', test: (s) => s.early },
 ];

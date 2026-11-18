@@ -11,7 +11,7 @@ import { SITE } from '../site';
 import { remoteAudio, remoteClip, remoteConfig } from './tts-remote';
 import { cloudSrc, keptRemote } from './offline-audio';
 import { store } from './core';
-import type { Line } from '../lib/lines';
+import { sayOf, type Line } from '../lib/lines';
 import { chosenVoice, prepareVoice, sentences, voiceClip, voicePreferred, voiceReady, voiceState } from './voice';
 import { learnPace, prepare, type Clock } from './words';
 
@@ -35,7 +35,7 @@ export const chosenDeviceVoice = () => {
 const chosenRemote = () => chosenVoice() === 'remote' && !!remoteConfig();
 const tag = (s: string) => [...s].reduce((h, c) => (h * 33 + c.charCodeAt(0)) >>> 0, 5381).toString(36);
 // The text hash only changes the address (the server reads the text itself), so an edited paragraph isn't served stale.
-const clipUrl = (l: Line) => `${SITE.api}/api/tts/?id=${l.post}&i=${l.i}&v=${tag(l.text)}`;
+const clipUrl = (l: Line) => `${SITE.api}/api/tts/?${l.src ?? `id=${l.post}&i=${l.i}`}&v=${tag(sayOf(l))}`;
 /** 50 ms of silent WAV, played inside the tap while the on-device voice makes its first clip. */
 const SILENCE = URL.createObjectURL(new Blob([new Uint8Array([82, 73, 70, 70, 36, 9, 0, 0, 87, 65, 86, 69, 102, 109, 116, 32, 16, 0, 0, 0, 1, 0, 1, 0, 34, 86, 0, 0, 68, 172, 0, 0, 2, 0, 16, 0, 100, 97, 116, 97, 0, 9, 0, 0, ...new Array(2304).fill(0)])], { type: 'audio/wav' }));
 
@@ -93,14 +93,14 @@ export const recordableVoice = (): Recordable | null => (chosenRemote() ? 'remot
 /** One paragraph's sound as audio files (WAV from the downloaded voice, a sentence each; MP3 from the cloud, the whole
  *  paragraph), each with the sentences it says. */
 export async function lineAudio(l: Line, engine: Recordable): Promise<{ texts: string[]; data: ArrayBuffer }[]> {
-  if (engine === 'remote') return [{ texts: sentences(l.text), data: await (await remoteAudio(l.text)).arrayBuffer() }];
+  if (engine === 'remote') return [{ texts: sentences(sayOf(l)), data: await (await remoteAudio(sayOf(l))).arrayBuffer() }];
   if (engine === 'cloud') {
     const res = await fetch(clipUrl(l));
     if (!res.ok) throw new Error(`tts ${res.status}`);
-    return [{ texts: sentences(l.text), data: await res.arrayBuffer() }];
+    return [{ texts: sentences(sayOf(l)), data: await res.arrayBuffer() }];
   }
   const clip = (text: string): Promise<string> => voiceClip(text, true).catch((e: Error) => (e.message === 'dropped' ? clip(text) : Promise.reject(e)));
-  return Promise.all(sentences(l.text).map(async (text) => ({ texts: [text], data: await (await fetch(await clip(text))).arrayBuffer() })));
+  return Promise.all(sentences(sayOf(l)).map(async (text) => ({ texts: [text], data: await (await fetch(await clip(text))).arrayBuffer() })));
 }
 
 export class Speaker {
@@ -158,7 +158,7 @@ export class Speaker {
   /** Gets the on-device voice working on these lines before they are played (the next scene of the player). */
   warm(lines: Line[]) {
     if (hasPersianVoice() !== 'local') return;
-    const first = sentences(lines[0]?.text ?? '')[0];
+    const first = sentences(lines[0] ? sayOf(lines[0]) : '')[0];
     if (first) voiceClip(first);
   }
 
@@ -174,15 +174,16 @@ export class Speaker {
     this.on.line?.(n);
     this.boundary = null;
     if (this.engine === 'local') {
-      this.pieces = sentences(line.text);
+      const said = sayOf(line);
+      this.pieces = sentences(said);
       let at = 0;
-      this.pieceAt = this.pieces.map((p) => ((at = Math.max(0, line.text.indexOf(p, at))), (at += p.length), at - p.length));
+      this.pieceAt = this.pieces.map((p) => ((at = Math.max(0, said.indexOf(p, at))), (at += p.length), at - p.length));
       return this.say(0, mine);
     }
     if (this.engine === 'cloud') {
       this.set(this.played ? 'playing' : 'loading');
       this.audio.src = cloudSrc(clipUrl(line), line);
-      prepare(this.audio.src, line.text); // its word timings, while it starts
+      prepare(this.audio.src, sayOf(line)); // its word timings, while it starts
       this.audio.playbackRate = this.rate;
       this.audio.play().catch((e: Error) => mine === this.run && e.name !== 'AbortError' && this.failed());
       const next = this.lines[n + 1];
@@ -191,23 +192,23 @@ export class Speaker {
     }
     if (this.engine === 'remote') {
       if (this.state !== 'playing') this.set('loading');
-      keptRemote(line.text).then((b) => (b ? URL.createObjectURL(b) : remoteClip(line.text))).then(
+      keptRemote(sayOf(line)).then((b) => (b ? URL.createObjectURL(b) : remoteClip(sayOf(line)))).then(
         (url) => {
           if (mine !== this.run) return;
           this.audio.src = url;
-          prepare(url, line.text);
+          prepare(url, sayOf(line));
           this.audio.playbackRate = this.rate;
           this.audio.play().catch((e: Error) => mine === this.run && e.name !== 'AbortError' && this.failed());
         },
         (e: Error) => mine === this.run && ((this.error = e.message), this.failed()),
       );
       const next = this.lines[n + 1];
-      if (next) remoteClip(next.text).catch(() => {});
+      if (next) remoteClip(sayOf(next)).catch(() => {});
       return;
     }
     this.set('playing');
     this.began = Date.now();
-    const u = new SpeechSynthesisUtterance(line.text);
+    const u = new SpeechSynthesisUtterance(sayOf(line));
     const lang = isPersian(line.text) ? 'fa' : 'en';
     u.lang = lang === 'fa' ? 'fa-IR' : 'en-US';
     u.rate = this.rate;
@@ -219,7 +220,7 @@ export class Speaker {
     u.onboundary = (e) => mine === this.run && e.name === 'word' && (this.boundary = e.charIndex);
     u.onend = () => {
       if (mine !== this.run) return;
-      if (this.boundary === null) learnPace(line.text, (Date.now() - this.began) / 1000, this.rate);
+      if (this.boundary === null) learnPace(sayOf(line), (Date.now() - this.began) / 1000, this.rate);
       this.play(n + 1);
     };
     u.onerror = (e) => {
@@ -249,7 +250,8 @@ export class Speaker {
     );
     // Between pieces it stays "playing"; starting or resuming shows that the voice is being made.
     if (this.state !== 'playing') this.set('loading');
-    const next = this.pieces[k + 1] ?? sentences(this.lines[this.at + 1]?.text ?? '')[0];
+    const after = this.lines[this.at + 1];
+    const next = this.pieces[k + 1] ?? sentences(after ? sayOf(after) : '')[0];
     if (next) voiceClip(next);
   }
 
@@ -257,11 +259,12 @@ export class Speaker {
   clock(): Clock | null {
     const line = this.lines[this.at];
     if (this.state !== 'playing' || !line) return null;
-    if (this.engine === 'device') return { kind: 'device', text: line.text, boundary: this.boundary, elapsed: (Date.now() - this.began) / 1000, rate: this.rate };
+    // Offsets in what the voice says (sayOf): src/scripts/listen.ts maps them back to the shown text.
+    if (this.engine === 'device') return { kind: 'device', text: sayOf(line), boundary: this.boundary, elapsed: (Date.now() - this.began) / 1000, rate: this.rate };
     const a = this.audio;
     if (!a.getAttribute('src') || a.src === SILENCE || a.ended) return null;
     const local = this.engine === 'local';
-    const text = local ? this.pieces[this.piece] : line.text;
+    const text = local ? this.pieces[this.piece] : sayOf(line);
     return text ? { kind: 'clip', src: a.src, text, offset: local ? (this.pieceAt[this.piece] ?? 0) : 0, t: a.currentTime } : null;
   }
 

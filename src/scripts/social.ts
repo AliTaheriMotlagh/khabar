@@ -1,7 +1,7 @@
 // Guest features backed by the /api functions: reactions, comments, live presence & visits, chat, leaderboard.
 // If the API is missing or unreachable, these parts stay hidden and the rest of the site works as usual.
 import { SITE } from '../site';
-import { $, $$, BASE, compact, esc, fmtNum, guest, hue, initial, myName, relTime, setMyName, store, toast } from './core';
+import { $, $$, BASE, compact, esc, fmtNum, guest, hue, initial, myName, putBack, relTime, setMyName, store, takeEvents, toast } from './core';
 import { award } from './game';
 
 let available = true;
@@ -59,9 +59,12 @@ function setViews(id: number, n: number) {
 }
 
 async function beat(view = false) {
+  const ev = takeEvents();
   try {
-    showLive(await api<Live>('live', { method: 'POST', body: { guest: guest(), post: articleId(), view, name: myName() || undefined, ...(view && { ref: visitSource() }) } }));
-  } catch {}
+    showLive(await api<Live>('live', { method: 'POST', body: { guest: guest(), post: articleId(), view, name: myName() || undefined, ...(view && { ref: visitSource() }), ...(ev && { ev }) } }));
+  } catch {
+    putBack(ev);
+  }
 }
 /** Where this visit came from (counted once per reader per day, for the owner's page): a campaign's utm_source, the
  *  site that linked here, or nothing (typed, a bookmark, the installed app). Only the site's name is sent. */

@@ -4,6 +4,7 @@ import Timeline from '../../components/Timeline.astro';
 import Sidebar from '../../components/Sidebar.astro';
 import { SITE } from '../../site';
 import { getFeed, url, faNum } from '../../lib/posts';
+import { listLd } from '../../lib/seo';
 
 export function getStaticPaths() {
   const pages = Math.ceil(getFeed().length / SITE.pageSize);
@@ -15,8 +16,9 @@ const total = Math.ceil(posts.length / SITE.pageSize);
 const slice = posts.slice((page - 1) * SITE.pageSize, page * SITE.pageSize);
 const prev = page === 2 ? url() : url(`page/${page - 1}/`);
 const next = page < total ? url(`page/${page + 1}/`) : null;
+const jsonLd = listLd({ name: `آرشیو خبرها — صفحه‌ی ${faNum(page)}`, path: `page/${page}/`, posts: slice });
 ---
-<Base title={`آرشیو خبرها — صفحه‌ی ${faNum(page)}`} description={`${SITE.description} — صفحه‌ی ${faNum(page)} از ${faNum(total)}`}>
+<Base title={`آرشیو خبرها — صفحه‌ی ${faNum(page)}`} description={`آرشیو خبرهای هوش مصنوعی و فناوری ${SITE.name}، صفحه‌ی ${faNum(page)} از ${faNum(total)}: ${slice.slice(0, 3).map((p) => p.short).join('، ')} و …`} jsonLd={jsonLd} prev={prev} next={next}>
   <div class="container">
     <header class="page-head"><h1>آرشیو خبرها</h1><p>صفحه‌ی {faNum(page)} از {faNum(total)}</p></header>
     <div class="layout">

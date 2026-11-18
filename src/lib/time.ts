@@ -31,7 +31,7 @@ export function relTime(when: string | number | Date, now: number = Date.now()) 
 // One circle of the recent news, no topics. What it holds is the reader's choice (settings): only what they haven't
 // seen (the default), today's news, or all three days; newest first (the default) or oldest first.
 /** `at`: the story's publish time, in ms · `kind`: story (Gholam's write-up) or brief. */
-export type StoryItem = { id: number; at: number; kind?: string };
+export type StoryItem = { id: number; at: number; kind?: string; /** 1–5 (pipeline/ai_more.py), for the «مهم‌ترین اول» order */ imp?: number };
 
 /** Drops the forwarded original that a story comments on: Telegram stamps a forward and the channel's note on it with
  *  the same second, and only the note gets Gholam's write-up, so the forward is a brief with the same news. */
@@ -43,12 +43,13 @@ export function dropCompanions<T extends StoryItem>(items: T[]): T[] {
 /** The stories' settings: what they show and in which order. */
 export const STORY_SHOW = { unseen: 'خبرهای تازه', today: 'خبرهای امروز', all: 'سه روز اخیر' } as const;
 export type StoryShow = keyof typeof STORY_SHOW;
-export type StoryOrder = 'new' | 'old';
+export type StoryOrder = 'new' | 'old' | 'important';
 
 /** What the stories play, in the order they play: the unseen ones (`unread`), today's (Tehran's calendar day) or all
  *  of them, newest or oldest first. */
 export function pickStories<T extends StoryItem>(items: T[], show: StoryShow, order: StoryOrder, unread: (id: number) => boolean, now = Date.now()): T[] {
   const kept = items.filter((i) => (show === 'all' ? true : show === 'today' ? isToday(i.at, now) : unread(i.id)));
+  if (order === 'important') return kept.sort((a, b) => (b.imp ?? 0) - (a.imp ?? 0) || b.at - a.at || b.id - a.id);
   const dir = order === 'old' ? 1 : -1;
   return kept.sort((a, b) => dir * (a.at - b.at || a.id - b.id));
 }

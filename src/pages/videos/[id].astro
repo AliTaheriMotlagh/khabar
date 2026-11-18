@@ -4,6 +4,8 @@
 import Base from '../../layouts/Base.astro';
 import Icon from '../../components/Icon.astro';
 import { abs, faDate, pic, related, url, whyLabel } from '../../lib/posts';
+import { breadcrumbs } from '../../lib/seo';
+import { SITE } from '../../site';
 import { clock, getVideos, videoTitle, VIDEOS_TITLE, ytTime, type Video } from '../../lib/videos';
 
 export function getStaticPaths() {
@@ -14,19 +16,32 @@ const { video: v, newer, older } = Astro.props as { video: Video; newer: Video |
 const story = v.story?.kind === 'story' ? v.story : null;
 const more = v.story ? related(v.story, 4) : [];
 const title = videoTitle(v);
+// The model's Persian chapter titles when it made them (same times as the video's own), else the video's own.
+// A teaser can be made when there's something to say over the thumbnail (/videos/<id>/card.json).
+const teaser = (v.ai?.points?.length ?? 0) > 0 || (v.story?.article.body.length ?? 0) > 0;
+const chapters = v.ai?.chapters?.length ? v.ai.chapters : (v.chapters ?? []);
 const jsonLd = {
   '@context': 'https://schema.org',
   '@type': 'VideoObject',
   name: v.title,
-  description: (story?.article.body[0] ?? v.description ?? v.title).slice(0, 300),
+  description: (v.ai?.summary ?? story?.article.body[0] ?? v.description ?? v.title).slice(0, 300),
   thumbnailUrl: v.thumb,
   uploadDate: v.date,
   ...(v.duration && { duration: `PT${Math.floor(v.duration / 60)}M${v.duration % 60}S` }),
   embedUrl: `https://www.youtube.com/embed/${v.id}`,
   url: abs(`videos/${v.id}/`),
+  inLanguage: 'fa',
+  isFamilyFriendly: true,
+  author: { '@type': 'Person', name: SITE.owner.nameLatin, alternateName: SITE.owner.name, url: SITE.owner.url },
+  publisher: { '@id': `${SITE.url}/#org` },
+  // Chapters as key moments ("Clip"): Google shows them under the video in results.
+  ...(chapters.length && {
+    hasPart: chapters.map((c, i) => ({ '@type': 'Clip', name: c.title, startOffset: c.t, ...(chapters[i + 1] && { endOffset: chapters[i + 1].t }), url: ytTime(v, c.t) })),
+  }),
 };
+const crumbs = breadcrumbs([{ name: VIDEOS_TITLE, path: 'videos/' }, { name: title.slice(0, 80), path: `videos/${v.id}/` }]);
 ---
-<Base title={title} description={(story?.excerpt || v.description || v.title).slice(0, 300)} image={v.thumb} imageAlt={v.title} jsonLd={[jsonLd]}>
+<Base title={title} description={(v.ai?.summary || story?.excerpt || v.description || v.title).slice(0, 300)} image={v.thumb} imageAlt={v.title} jsonLd={[jsonLd, crumbs]}>
   <article class="container narrow vd-page" data-video-page={v.id}>
     <a class="vd-back" href={url("videos/")}><Icon name="arrow-r" /> {VIDEOS_TITLE}</a>
     <header class="article-head">
@@ -38,8 +53,18 @@ const jsonLd = {
     <a class="vd-watch" href={v.youtube} target="_blank" rel="noopener">
       <span class="vd-thumb"><img {...pic(v.thumb, 'large')} alt={v.title} decoding="async" referrerpolicy="no-referrer" /><span class="vd-play"><Icon name="youtube" /></span></span>
     </a>
-    <p><a class="btn primary" href={v.youtube} target="_blank" rel="noopener"><Icon name="youtube" /> تماشا در یوتیوب</a></p>
+    <p class="row"><a class="btn primary" href={v.youtube} target="_blank" rel="noopener"><Icon name="youtube" /> تماشا در یوتیوب</a>{teaser && <button class="btn" type="button" data-make-video={v.href} data-video-mode="full" title="ویدیوی کوتاه معرفی این قسمت، ساخته روی همین دستگاه" hidden><Icon name="film" /> تیزر این قسمت</button>}</p>
 
+    {
+      v.ai?.summary && (
+        <section>
+          <h2 class="section-title">این قسمت درباره‌ی چیست</h2>
+          <p class="prose">{v.ai.summary}</p>
+          {v.ai.points && v.ai.points.length > 0 && <ul class="vd-points">{v.ai.points.map((p) => <li>{p}</li>)}</ul>}
+          {v.ai.category && <p class="muted">دسته: {v.ai.category} · خلاصه از {v.ai.from === 'subtitles' ? 'زیرنویس ویدیو' : 'توضیح ویدیو'}، با هوش مصنوعی سایت</p>}
+        </section>
+      )
+    }
     {
       story && (
         <section>
@@ -51,11 +76,11 @@ const jsonLd = {
       )
     }
     {
-      v.chapters && v.chapters.length > 0 && (
+      chapters.length > 0 && (
         <section>
           <h2 class="section-title">فصل‌ها</h2>
           <ol class="vd-chapters">
-            {v.chapters.map((c) => (
+            {chapters.map((c) => (
               <li><a href={ytTime(v, c.t)} target="_blank" rel="noopener"><time>{clock(c.t)}</time> <span dir="auto">{c.title}</span></a></li>
             ))}
           </ol>

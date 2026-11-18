@@ -3,15 +3,33 @@
 // (/rss/top.xml, server/toprss.js).
 import Base from '../../layouts/Base.astro';
 import Icon from '../../components/Icon.astro';
-import { abs, url } from '../../lib/posts';
+import { abs, faDate, getPosts, url } from '../../lib/posts';
+import { weeklies } from '../../lib/knowledge';
+// «هفته‌ای که گذشت»: the newest weekly recap by the model (pipeline/daily.py --weekly, PLAN.md P2-11).
+const recap = weeklies()[0] ?? null;
+const byId = new Map(getPosts().map((p) => [p.id, p]));
+const items = recap ? recap.items.map((it) => ({ ...it, p: byId.get(it.id) })).filter((it) => it.p) : [];
 ---
-<Base title="پربازدیدترین‌های هفته" description="خبرهایی که در هفت روز گذشته بیشتر از همه خوانده شده‌اند.">
+<Base title="پربازدیدترین‌های هفته" description={recap ? `هفته‌ای که گذشت: ${recap.title}. ${recap.intro}` : 'خبرهایی که در هفت روز گذشته بیشتر از همه خوانده شده‌اند.'}>
   <link slot="head" rel="alternate" type="application/rss+xml" title="پربازدیدترین‌های هفته" href={abs('rss/top.xml')} />
   <div class="container narrow">
     <header class="page-head with-action">
       <div><h1><Icon name="trending" /> پربازدیدترین‌های هفته</h1><p>خبرهایی که در هفت روز گذشته بیشتر از همه خوانده شده‌اند؛ هر خواننده یک بار شمرده می‌شود.</p></div>
       <a class="btn sm" href={abs('rss/top.xml')}><Icon name="rss" /> RSS</a>
     </header>
+    {
+      recap && items.length > 0 && (
+        <section class="recap" data-recap={recap.week} aria-labelledby="recap-title">
+          <small class="kicker">هفته‌ای که گذشت · {faDate(`${recap.from}T12:00:00Z`, { day: 'numeric', month: 'long' })} تا {faDate(`${recap.to}T12:00:00Z`, { day: 'numeric', month: 'long' })}</small>
+          <h2 id="recap-title">{recap.title}</h2>
+          <p>{recap.intro}</p>
+          <ol>{items.map((it) => <li><a href={it.p!.href}>{it.p!.short}</a> {it.line}</li>)}</ol>
+          {recap.outro && <p class="muted">{recap.outro}</p>}
+          <button class="btn sm" type="button" data-recap-play hidden><Icon name="headphones" /> <span data-recap-label>گوش دادن به مرور هفته</span></button>
+          <script type="application/json" data-recap-lines set:html={JSON.stringify([['title', recap.title], ['intro', recap.intro], ...recap.items.map((it, k) => [String(k), it.line]), ...(recap.outro ? [['outro', recap.outro]] : [])])} />
+        </section>
+      )
+    }
     <section class="playlist" data-wk-listen hidden aria-labelledby="wk-listen-title">
       <button class="pl-play" type="button" data-wk-play aria-describedby="wk-listen-meta">
         <Icon name="headphones" class="when-idle" />

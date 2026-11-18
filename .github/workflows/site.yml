@@ -79,25 +79,51 @@ jobs:
         timeout-minutes: 8
         run: python -m pipeline.videos
 
-      # Headlines, a short line and a type by Qwen on this runner (pipeline/ai.py, PLAN.md P1-B), written into the posts
-      # before the commit, so no extra deploy. Free: public repo, standard runner, the model (5.7 GB) in the Actions
-      # cache, keyed on the pins in scripts/ai-server.sh. Never fails the run: the site falls back to the rules'
-      # headline, and whatever the time budget leaves is done on the next run, newest first.
-      - name: Posts waiting for AI headlines
+      # The model's work, on this runner (PLAN.md P1-B, P2): free — public repo, standard runner, the models (Qwen3.5-9B,
+      # 5.7 GB, and a 0.6 GB embedding model) in the Actions cache, keyed on the pins in scripts/ai-server.sh. All of it is
+      # written into data/ before the commit, so no extra deploy. Never fails the run: the site falls back to the rules'
+      # headline and shared topics, and whatever the time budgets leave is done on the next run, newest first.
+      - name: Posts waiting for the model
         id: ai
-        run: echo "pending=$(python -m pipeline.ai --pending)" | tee -a "$GITHUB_OUTPUT"
+        run: |
+          core=$(python -m pipeline.ai --pending)
+          more=$(python -m pipeline.ai_more --pending --total)
+          # New stories also need their vectors (related stories) and the podcast's host lines.
+          news=$(git status --porcelain data/posts | wc -l)
+          echo "pending=$((core + more + news))" | tee -a "$GITHUB_OUTPUT"
       - uses: actions/cache@v6
         if: steps.ai.outputs.pending != '0'
         with:
           path: ~/.cache/khabar-ai
           key: ai-${{ runner.os }}-${{ hashFiles('scripts/ai-server.sh') }}
-      - name: AI headlines
+      # The stories' vectors (pipeline/related.py): small, rebuilt if evicted, a new entry per run (a cache key is immutable).
+      - uses: actions/cache@v6
+        if: steps.ai.outputs.pending != '0'
+        with:
+          path: ~/.cache/khabar-vectors
+          key: vectors-${{ github.run_id }}
+          restore-keys: vectors-
+      - name: AI (headlines, translations, extras, voices' names, related, podcast, video summaries, comment checks)
         if: steps.ai.outputs.pending != '0'
         continue-on-error: true
-        timeout-minutes: 12
+        timeout-minutes: 20
         env:
           AI_BUDGET: '300'
-        run: scripts/ai-server.sh && python -m pipeline.ai
+          AI_MORE_BUDGET: '240'
+          KV_REST_API_URL: ${{ secrets.KV_REST_API_URL }}
+          KV_REST_API_TOKEN: ${{ secrets.KV_REST_API_TOKEN }}
+          KV_PREFIX: ${{ vars.KV_PREFIX }}
+        run: |
+          scripts/ai-server.sh
+          step() { "$@" || echo "::warning::$* failed"; }
+          # A post Gholam never translated gets the model's story first: its headline and extras read it.
+          step python -m pipeline.ai_more --only=story
+          step python -m pipeline.ai
+          step python -m pipeline.ai_more
+          step python -m pipeline.related
+          step python -m pipeline.daily
+          step python -m pipeline.videos --summarize --limit=1
+          step python -m pipeline.comments
 
       - name: Commit new posts
         id: commit

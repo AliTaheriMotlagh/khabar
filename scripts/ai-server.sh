@@ -2,7 +2,7 @@
 # Start llama.cpp's llama-server with the pinned Qwen model on 127.0.0.1:8080, for pipeline/ai.py (PLAN.md P1-B).
 # Downloads into $AI_DIR (default ~/.cache/khabar-ai; the workflow keeps it in the Actions cache, keyed on this file's
 # hash, so changing a pin below downloads again), checks every file's SHA-256, then waits until the model answers.
-# Linux x64 (the runner) and macOS arm64 (a Mac, for the backfill). Stop it with: kill "$(cat "$AI_DIR/server.pid")"
+# Linux x64 (the runner) and macOS arm64 (a Mac, for the backfill). Stop them with: kill "$(cat "$AI_DIR"/*.pid)"
 set -euo pipefail
 
 LLAMA_TAG=b12494
@@ -17,6 +17,14 @@ MODEL_REPO=${MODEL_REPO:-unsloth/Qwen3.5-9B-GGUF}
 MODEL_REV=${MODEL_REV:-3885219b6810b007914f3a7950a8d1b469d598a5}
 MODEL_FILE=${MODEL_FILE:-Qwen3.5-9B-Q4_K_M.gguf}
 MODEL_SHA=${MODEL_SHA:-03b74727a860a56338e042c4420bb3f04b2fec5734175f4cb9fa853daf52b7e8}
+
+# The embedding model for related stories and same-news clusters (pipeline/related.py, PLAN.md P2-4): 0.6 GB, on :8081.
+EMBED_REPO=Qwen/Qwen3-Embedding-0.6B-GGUF
+EMBED_REV=370f27d7550e0def9b39c1f16d3fbaa13aa67728
+EMBED_FILE=Qwen3-Embedding-0.6B-Q8_0.gguf
+EMBED_SHA=06507c7b42688469c4e7298b0a1e16deff06caf291cf0a5b278c308249c3e439
+# Which servers to start: "llm", "embed" or "llm,embed" (default).
+SERVE=${SERVE:-llm,embed}
 
 AI_DIR=${AI_DIR:-$HOME/.cache/khabar-ai}
 PORT=${AI_PORT:-8080}
@@ -44,18 +52,31 @@ if [ -z "$server" ]; then
   rm -rf "llama-$LLAMA_TAG-$asset" && mkdir "llama-$LLAMA_TAG-$asset" && tar -xzf "$tarball" -C "llama-$LLAMA_TAG-$asset"
   server=$(find "llama-$LLAMA_TAG-$asset" -name llama-server -type f | head -1)
 fi
-fetch "https://huggingface.co/$MODEL_REPO/resolve/$MODEL_REV/$MODEL_FILE" "$MODEL_FILE" "$MODEL_SHA"
-
-# One request at a time (-np 1) keeps the long shared prefix (instructions + examples) in the cache between posts, so
-# each post only pays for its own text. --jinja: the model's own chat template, which reads enable_thinking.
 threads=$(getconf _NPROCESSORS_ONLN 2>/dev/null || echo 4)
-nohup "$server" -m "$MODEL_FILE" --host 127.0.0.1 --port "$PORT" -c 8192 -np 1 -t "$threads" --jinja \
-  --alias "${AI_MODEL:-qwen3.5-9b-q4_k_m}" >"$AI_DIR/server.log" 2>&1 &
-echo $! >"$AI_DIR/server.pid"
+wait_ready() { # port pidfile log
+  for _ in $(seq 1 120); do
+    if curl -fs "http://127.0.0.1:$1/health" >/dev/null 2>&1; then echo "llama-server ready on :$1"; return 0; fi
+    kill -0 "$(cat "$2")" 2>/dev/null || { tail -20 "$3"; return 1; }
+    sleep 1
+  done
+  echo "llama-server did not start in 2 minutes"; tail -20 "$3"; return 1
+}
 
-for _ in $(seq 1 120); do
-  if curl -fs "http://127.0.0.1:$PORT/health" >/dev/null 2>&1; then echo "llama-server ready on :$PORT"; exit 0; fi
-  kill -0 "$(cat "$AI_DIR/server.pid")" 2>/dev/null || { tail -20 "$AI_DIR/server.log"; exit 1; }
-  sleep 1
-done
-echo "llama-server did not start in 2 minutes"; tail -20 "$AI_DIR/server.log"; exit 1
+if [[ ",$SERVE," == *",llm,"* ]]; then
+  fetch "https://huggingface.co/$MODEL_REPO/resolve/$MODEL_REV/$MODEL_FILE" "$MODEL_FILE" "$MODEL_SHA"
+  # One request at a time (-np 1) keeps the long shared prefix (instructions + examples) in the cache between posts, so
+  # each post only pays for its own text. --jinja: the model's own chat template, which reads enable_thinking.
+  nohup "$server" -m "$MODEL_FILE" --host 127.0.0.1 --port "$PORT" -c 8192 -np 1 -t "$threads" --jinja \
+    --alias "${AI_MODEL:-qwen3.5-9b-q4_k_m}" >"$AI_DIR/server.log" 2>&1 &
+  echo $! >"$AI_DIR/server.pid"
+  wait_ready "$PORT" "$AI_DIR/server.pid" "$AI_DIR/server.log"
+fi
+
+if [[ ",$SERVE," == *",embed,"* ]]; then
+  fetch "https://huggingface.co/$EMBED_REPO/resolve/$EMBED_REV/$EMBED_FILE" "$EMBED_FILE" "$EMBED_SHA"
+  # Qwen3-Embedding reads the last token (--pooling last); a story's text is ~700 characters, well inside -c 2048.
+  nohup "$server" -m "$EMBED_FILE" --host 127.0.0.1 --port "${EMBED_PORT:-8081}" --embedding --pooling last -c 8192 -b 8192 -ub 2048 \
+    -t "$threads" --alias "${EMBED_MODEL:-qwen3-embedding-0.6b-q8_0}" >"$AI_DIR/embed.log" 2>&1 &
+  echo $! >"$AI_DIR/embed.pid"
+  wait_ready "${EMBED_PORT:-8081}" "$AI_DIR/embed.pid" "$AI_DIR/embed.log"
+fi

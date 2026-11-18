@@ -9,6 +9,7 @@ import Reactions from '../../components/Reactions.astro';
 import Comments from '../../components/Comments.astro';
 import { SITE } from '../../site';
 import { abs, getFeed, getPosts, related, sized, faDate, faNum, pic, picture, tagHref, url, whyLabel, type Post } from '../../lib/posts';
+import Quiz from '../../components/Quiz.astro';
 
 export function getStaticPaths() {
   // Previous/next walk the listed feed; an unlisted (English-only) page has none.
@@ -27,6 +28,12 @@ const shareUrl = abs(`p/${post.id}/`);
 const enc = encodeURIComponent;
 const ownMedia = (post.media ?? []).length > 0;
 const rel = related(post);
+// The same news told in other posts (data/related.json clusters): listed under the story as its updates.
+const byId = new Map(getPosts().map((p) => [p.id, p]));
+const updates = post.cluster.map((id) => byId.get(id)).filter((p): p is Post => !!p && p.listed);
+const words = [...a.body, a.why ?? ''].join(' ').split(/\s+/).filter(Boolean).length;
+// The people, companies and models the story names (pipeline/ai.py, `ai.x.entities`): linked data for search engines.
+const mentions = (post.entities ?? []).map((e) => ({ '@type': e.kind === 'person' ? 'Person' : e.kind === 'company' ? 'Organization' : 'Thing', name: e.name_en, alternateName: e.name_fa, url: abs(`who/${e.slug}/`) }));
 // X's video addresses are stable (Telegram's are signed and expire), so only those are offered to search as a video.
 const video = post.gallery.find((m) => m.type === 'video' && !m.gif && m.src && /^https:\/\/video\.twimg\.com\//.test(m.src));
 const isoDuration = (d: unknown) => {
@@ -46,8 +53,15 @@ const jsonLd = [
     mainEntityOfPage: { '@type': 'WebPage', '@id': shareUrl },
     url: shareUrl,
     image: coverSrc ? [coverSrc] : [abs('og.png')],
+    thumbnailUrl: coverSrc || abs('og.png'),
     keywords: a.tags.join(', '),
     articleSection: a.tags[0],
+    wordCount: words,
+    isAccessibleForFree: true,
+    // The parts a voice assistant should read (Google's speakable): the headline and the first paragraph.
+    speakable: { '@type': 'SpeakableSpecification', cssSelector: ['.article-head h1', '.prose > p:first-child'] },
+    ...(post.type && { genre: post.type }),
+    ...(mentions.length && { mentions }),
     author: { '@type': 'Person', name: SITE.owner.nameLatin, alternateName: SITE.owner.name, url: SITE.owner.url },
     publisher: { '@id': `${SITE.url}/#org` },
     isBasedOn: post.source?.url ?? post.url,
@@ -102,6 +116,8 @@ const jsonLd = [
           <span>{post.kind === 'story' ? SITE.gholam : `@${SITE.channel}`}</span>
           <time datetime={post.date} data-f="rel" title={faDate(post.date, { dateStyle: 'full', timeStyle: 'short' })}>{faDate(post.date, { day: 'numeric', month: 'long' })}</time>
           <span><span data-num>{faNum(post.minutes)}</span> دقیقه</span>
+          {post.importance && post.importance >= 4 && <span class="must">حتماً بخوانید</span>}
+          {post.translated && <span class="auto-tr" title="غلام برای این پست ترجمه‌ای ننوشت؛ این متن را مدل هوش مصنوعی سایت از منبع ترجمه کرده.">ترجمه‌ی خودکار</span>}
           <a class="views-link" href={url('stats/')} data-views={post.id} hidden title="آمار بازدید"><span></span> بازدید<small data-views-day hidden></small></a>
         </div>
       </header>
@@ -140,6 +156,29 @@ const jsonLd = [
         )
       }
       {a.why && <aside class="why"><b>{whyLabel(a)}</b><p>{a.why}</p></aside>}
+      {
+        post.simple && (
+          <details class="simple" data-simple data-pagefind-ignore>
+            <summary>به زبان ساده</summary>
+            <p>{post.simple}</p>
+          </details>
+        )
+      }
+      {
+        post.entities.length > 0 && (
+          <nav class="who-chips" aria-label="آدم‌ها و شرکت‌های این خبر" data-pagefind-ignore>
+            {post.entities.map((e) => <a href={url(`who/${e.slug}/`)}>{e.name_fa}</a>)}
+          </nav>
+        )
+      }
+      {
+        updates.length > 0 && (
+          <section class="updates" id="updates" data-pagefind-ignore>
+            <h2 class="section-title">همین خبر در پست‌های دیگر</h2>
+            <ul>{updates.map((u) => <li><a href={u.href}>{u.article.title}</a> <time datetime={u.date} data-f="rel">{faDate(u.date, { day: 'numeric', month: 'long' })}</time></li>)}</ul>
+          </section>
+        )
+      }
 
       <div class="engage" data-pagefind-ignore>
         <Reactions id={post.id} />
@@ -164,6 +203,8 @@ const jsonLd = [
             </section>
           )
         }
+
+        {post.quiz && <Quiz id={post.id} quiz={post.quiz} />}
 
         <Comments id={post.id} />
 

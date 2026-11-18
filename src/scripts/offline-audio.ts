@@ -6,7 +6,7 @@
 // read once at start), so every other request goes to the network untouched.
 import { SITE } from '../site';
 import { BASE, store } from './core';
-import { cardLines, type Card, type Line } from '../lib/lines';
+import { cardLines, sayOf, type Card, type Line } from '../lib/lines';
 import { remoteAudio, remoteConfig } from './tts-remote';
 
 export const AUDIO_CACHE = 'audio-v1';
@@ -49,7 +49,7 @@ export async function keptRemote(text: string): Promise<Blob | null> {
 }
 
 export type Kind = 'cloud' | 'remote';
-const keyOf = (kind: Kind, l: Line) => (kind === 'cloud' ? ttsKey(l.post, l.i) : remoteKey(l.text));
+const keyOf = (kind: Kind, l: Line) => (kind === 'cloud' ? ttsKey(l.post, l.i) : remoteKey(sayOf(l)));
 
 async function card(id: number): Promise<Card> {
   const res = await fetch(`${BASE}/p/${id}/card.json`);
@@ -84,9 +84,9 @@ export async function keepStory(id: number, kind: Kind, step: () => void) {
     if (!kept.has(key)) {
       let res: Response;
       if (kind === 'cloud') {
-        res = await fetch(`${SITE.api}/api/tts/?id=${l.post}&i=${l.i}&v=${hashOf(l.text)}`);
+        res = await fetch(`${SITE.api}/api/tts/?id=${l.post}&i=${l.i}&v=${hashOf(sayOf(l))}`);
         if (!res.ok) throw new Error(`tts ${res.status}`);
-      } else res = new Response(await remoteAudio(l.text), { headers: { 'Content-Type': 'audio/mpeg' } });
+      } else res = new Response(await remoteAudio(sayOf(l)), { headers: { 'Content-Type': 'audio/mpeg' } });
       await cache.put(key, res);
       kept.add(key);
     }

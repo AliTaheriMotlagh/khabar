@@ -17,6 +17,9 @@ type RawVideo = {
   chapters?: { t: number; title: string }[];
   links?: string[];
   post?: number;
+  /** From the video's subtitles by the model (pipeline/videos.py summarize, PLAN.md P2-3): a Persian summary, key
+   *  points, chapter titles in Persian with their times, and a category for the shelves. */
+  ai?: { summary?: string; points?: string[]; chapters?: { t: number; title: string }[]; category?: string; title?: string; model?: string; from?: 'subtitles' | 'description'; v?: number } | null;
 };
 type VideosFile = { channel: { url: string; id: string | null }; checked: string | null; videos: RawVideo[] };
 
@@ -45,7 +48,7 @@ export function getVideos(): Video[] {
     const story = (v.post && posts.get(v.post)) || null;
     const label = v.n == null ? '' : v.live ? `لایو ${faNum(v.n)}` : `قسمت ${faNum(v.n)}`;
     // The AI's Persian headline when there is one; Gholam's first sentence is often a run-up, not the episode's subject.
-    const headline = (!story?.ai?.failed && story?.ai?.title) || v.name;
+    const headline = (!story?.ai?.failed && story?.ai?.title) || v.ai?.title || v.name;
     return {
       ...v,
       href: url(`videos/${v.id}/`),

@@ -1,4 +1,4 @@
-// POST /api/live { guest, post?, view?, name?, ref? } → { online, chat, today?, total?, views?, viewsToday? }  (chat = newest chat message id)
+// POST /api/live { guest, post?, view?, name?, ref?, ev? } → { online, chat, today?, total?, views?, viewsToday? }  (chat = newest chat message id)
 // Called once per page view (view: true counts the visit) and then as a slow heartbeat while the tab is visible.
 // Presence is a sorted set of guest hashes scored by last-seen time; "online" = seen in the last 2 minutes.
 // Visits count like views on X: a reader adds one to the site total, and one to a post, at most once per 24 hours
@@ -25,6 +25,18 @@ export function source(ref) {
   if (/(^|\.)(bing\.com|duckduckgo\.com|yandex\.\w+|yahoo\.com)$/.test(host)) return 'search';
   if (/(^|\.)(feedly\.com|inoreader\.com)$/.test(host) || s === 'rss') return 'rss';
   return /^[a-z0-9.-]{1,60}$/.test(host) ? host : 'other';
+}
+// What readers use, counted per Tehran day for the owner's page (`ev:<day>`): a fixed list of names (src/scripts/core.ts
+// EVENTS), at most 50 each per beat. Sent with a beat, so they cost a command each, never a request.
+export const EVENTS = new Set(['listen', 'playlist', 'share', 'save', 'video-made-v', 'video-made-h', 'video-made-s', 'video-shared', 'quiz-right', 'quiz-wrong', 'push-on', 'install', 'term', 'simple', 'today', 'week-listen', 'brief60']);
+export function eventCmds(ev) {
+  if (!ev || typeof ev !== 'object') return [];
+  const out = Object.entries(ev)
+    .filter(([k, n]) => EVENTS.has(k) && Number.isInteger(n) && n > 0)
+    .slice(0, 8)
+    .map(([k, n]) => ['HINCRBY', `ev:${day()}`, k, String(Math.min(50, n))]);
+  if (out.length && Math.random() < 0.1) out.push(['EXPIRE', `ev:${day()}`, String(DAY_VIEWS_DAYS * 86400)]);
+  return out;
 }
 const hourIn = (at = Date.now()) => new Intl.DateTimeFormat('en-US', { timeZone: 'Asia/Tehran', hour: '2-digit', hourCycle: 'h23' }).format(at);
 
@@ -53,6 +65,7 @@ export async function POST(request) {
   const post = body.view ? postId(body.post) : null;
   const cmds = [['ZADD', 'online', String(now), gh], ['ZCOUNT', 'online', String(now - ONLINE_WINDOW), '+inf'], ['LINDEX', 'chat', '0']];
   if (Math.random() < 0.05) cmds.push(['ZREMRANGEBYSCORE', 'online', '0', String(now - ONLINE_WINDOW)]);
+  cmds.push(...eventCmds(body.ev));
   if (body.view) {
     const [views] = post ? await postViews([post]) : [0]; // before SADD below, so a post's first count doesn't include this visit
     const at = cmds.length;

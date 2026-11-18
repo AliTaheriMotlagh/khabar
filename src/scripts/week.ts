@@ -1,7 +1,7 @@
 // The week's most read (src/pages/week): /api/stats' `top.week`, each story's picture, topic and first lines from its
 // card.json. Pictures go through media.ts like everywhere else (fallback addresses in data-alt).
 import { SITE } from '../site';
-import { $, BASE, compact, esc, fmtNum } from './core';
+import { $, BASE, compact, esc, fmtNum, track } from './core';
 import { watchMedia } from './media';
 import { player, type QItem } from './listen';
 import { canListen, listenOr } from './voice-offer';
@@ -15,7 +15,28 @@ const excerpt = (c: Card) => {
   return t.length > 220 ? `${t.slice(0, 220).replace(/\s+\S*$/, '')}…` : t;
 };
 
+/** The weekly recap read aloud (one line at a time; the cloud voice reads them from /weekly/<week>.json). */
+function recap() {
+  const box = $('[data-recap]');
+  const btn = $<HTMLButtonElement>('[data-recap-play]');
+  if (!box || !btn) return;
+  const week = box.dataset.recap!;
+  const lines = (JSON.parse($('[data-recap-lines]', box)?.textContent ?? '[]') as [string, string][]).map(([k, text]) => ({ text, post: 0, i: 0, src: `week=${week}&k=${k}` }));
+  const p = player();
+  canListen().then((ok) => (btn.hidden = !ok));
+  const label = $('[data-recap-label]', btn)!;
+  const off = p.subscribe((s) => {
+    const on = s.key === 'recap' && (s.state === 'playing' || s.state === 'loading');
+    label.textContent = on ? 'مکث' : s.key === 'recap' && s.state === 'paused' ? 'ادامه' : 'گوش دادن به مرور هفته';
+  });
+  addEventListener('pagehide', off);
+  const play = () => (p.key === 'recap' ? p.toggle() : (track('week-listen'), p.playLines({ key: 'recap', title: 'هفته‌ای که گذشت', href: location.pathname, unit: 'بند' }, lines)));
+  btn.addEventListener('pointerdown', () => p.ready(), { once: true });
+  btn.addEventListener('click', () => (p.key === 'recap' ? play() : listenOr(play)));
+}
+
 export async function initWeek() {
+  recap();
   const list = $('[data-wk-list]')!;
   let top: Top[];
   try {
@@ -68,7 +89,7 @@ function listen(cards: Card[]) {
     label.textContent = state === 'playing' || state === 'loading' ? 'مکث' : state === 'paused' ? 'ادامه' : 'پخش';
   });
   addEventListener('pagehide', off);
-  const play = () => (p.key === 'week' ? p.toggle() : p.playQueue({ key: 'week', title: 'پربازدیدهای هفته', href: location.pathname, unit: 'خبر' }, items));
+  const play = () => (p.key === 'week' ? p.toggle() : (track('week-listen'), p.playQueue({ key: 'week', title: 'پربازدیدهای هفته', href: location.pathname, unit: 'خبر' }, items)));
   const btn = $('[data-wk-play]', box)!;
   btn.addEventListener('pointerdown', () => p.ready(), { once: true });
   btn.addEventListener('click', () => (p.key === 'week' ? play() : listenOr(play)));

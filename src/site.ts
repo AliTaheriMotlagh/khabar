@@ -17,6 +17,9 @@ export const SITE = {
   timeZone: 'Asia/Tehran',
   pageSize: 20,
   themeColor: '#2f4fd8',
+  // IndexNow (Bing, Yandex, Seznam, Naver…): new stories are announced the moment they're live (scripts/notify.mjs).
+  // Not a secret — the engines check it at /<key>.txt, which must hold the same text (tests/seo.test.mjs).
+  indexNowKey: 'a2e8b0f25f1440184512d4968ba8125c',
   // Guest comments, reactions, chat and live counters (Vercel Functions in /api). Empty = same origin.
   api: (import.meta.env.PUBLIC_API_URL ?? '').replace(/\/$/, ''),
 };

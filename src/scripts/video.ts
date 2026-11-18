@@ -11,38 +11,84 @@
 // no AudioEncoder) the canvas is recorded as it plays (MediaRecorder), which takes as long as the video. Pictures go
 // through the page's own addresses (/api/img first), fetched, so the canvas stays readable.
 import { AudioBufferSource, BufferTarget, CanvasSource, Mp4OutputFormat, Output, canEncodeVideo, getFirstEncodableAudioCodec } from 'mediabunny';
-import { $, fmtNum, tapAudio, toast } from './core';
+import { $, BASE, fmtNum, store, tapAudio, toast, track } from './core';
 import { SITE } from '../site';
 import { align, pauseAfter, weight, words } from '../lib/align';
-import { lineAudio, persianVoice, recordableVoice, type Recordable } from './speech';
+import { lineAudio, persianVoice, recordableVoice, type Line, type Recordable } from './speech';
+import { sayLine } from '../../server/_say.js';
 import { chosenVoice, voiceSupported } from './voice';
 import { openVoice } from './voice-offer';
 
-const W = 1280;
-const H = 720;
 const FPS = 30;
 const RATE = 48000;
 /** Seconds: the opening, the closing card, a scene's way in before its voice starts, the pause between paragraphs,
- *  and a headline that isn't read aloud (its first paragraph says it). */
-const INTRO = 2.8;
+ *  and a headline that isn't read aloud (its first paragraph says it). A short video has no opening: its hook is on
+ *  screen from the first frame (the logo is in the corner all along). */
+const FULL_INTRO = 2.8;
+let INTRO = FULL_INTRO;
 const OUTRO = 3.6;
 const LEAD = 0.7;
 const GAP = 0.35;
 const TITLE_SILENT = 3.4;
 const FONT = '"Vazirmatn Variable", system-ui, sans-serif';
 const PIC_WAIT = 9000;
-const M = 64; // the frame's side margin
-const PANEL = { x: M, y: 140, w: 520, h: 390 };
-const COL = { right: W - M, w: 560 }; // the text column beside the panel
-const BODY = { size: 32, lh: 58, bottom: 620 };
-/** The headline's sizes, largest first: the first that fits the frame's height (TITLE_ROOM) is used. */
-const TITLE_SIZES = [50, 44, 38, 34];
-const TITLE_ROOM = 440;
+
+// ---------- the frame: three shapes (PLAN.md P1-C) ----------
+// Landscape (YouTube, a computer), vertical (Instagram stories and reels, Telegram and WhatsApp status: where people in
+// Iran share) and square. Landscape puts the picture beside the text; the others stack the picture over it.
+// k scales the frame's small type (logo, date, link, tags) to the shape.
+export type Shape = 'v' | 'h' | 's';
+type Geo = {
+  W: number; H: number; M: number; k: number;
+  panel: { x: number; y: number; w: number; h: number };
+  col: { right: number; w: number };
+  body: { size: number; lh: number; bottom: number };
+  /** The headline's sizes, largest first: the first that fits `titleRoom` is used; its block is centered on `titleMid`. */
+  titleSizes: number[]; titleRoom: number; titleMid: number;
+  /** A headline with no picture beside it. */
+  wide: number;
+  /** The header's baseline; a chapter's heading; where the text starts, under a heading or not. */
+  top: number; headY: number; textTop: { head: number; plain: number };
+};
+const GEO: Record<Shape, Geo> = {
+  h: { W: 1280, H: 720, M: 64, k: 1, panel: { x: 64, y: 140, w: 520, h: 390 }, col: { right: 1216, w: 560 }, body: { size: 32, lh: 58, bottom: 620 },
+       titleSizes: [50, 44, 38, 34], titleRoom: 440, titleMid: 375, wide: 960, top: 62, headY: 160, textTop: { head: 262, plain: 200 } },
+  v: { W: 1080, H: 1920, M: 72, k: 1.45, panel: { x: 72, y: 190, w: 936, h: 640 }, col: { right: 1008, w: 936 }, body: { size: 46, lh: 84, bottom: 1730 },
+       titleSizes: [70, 62, 54, 48], titleRoom: 640, titleMid: 1320, wide: 936, top: 100, headY: 930, textTop: { head: 1070, plain: 980 } },
+  s: { W: 1080, H: 1080, M: 64, k: 1.25, panel: { x: 64, y: 140, w: 952, h: 380 }, col: { right: 1016, w: 952 }, body: { size: 38, lh: 66, bottom: 960 },
+       titleSizes: [54, 48, 42, 38], titleRoom: 300, titleMid: 790, wide: 952, top: 74, headY: 606, textTop: { head: 712, plain: 640 } },
+};
+let G = GEO.h;
+let W = G.W;
+let H = G.H;
+let M = G.M;
+let PANEL = G.panel;
+let COL = G.col;
+let BODY = G.body;
+let TITLE_SIZES = G.titleSizes;
+let TITLE_ROOM = G.titleRoom;
+/** Sets the frame for the video about to be made (one at a time). */
+function useShape(shape: Shape) {
+  G = GEO[shape];
+  ({ W, H, M } = G);
+  PANEL = G.panel;
+  COL = G.col;
+  BODY = G.body;
+  TITLE_SIZES = G.titleSizes;
+  TITLE_ROOM = G.titleRoom;
+}
 const YELLOW = '#ffd166';
 const INK = '#141a33';
 
 type Plan = { title: boolean; chapters: { head: string | null; say: number[]; pics: string[][] }[] };
-type Card = { id: number; kind: string; title: string; href: string; date: string; tag: string | null; body: string[]; why: string | null; video: Plan };
+type Card = {
+  id: number; kind: string; title: string; href: string; date: string; tag: string | null; body: string[]; why: string | null; video: Plan;
+  whyLabel?: string; lex?: Record<string, string>; source?: string; share?: string;
+  /** The model's 60-second script (pipeline/ai_more.py ai.x.video). */
+  clip?: { hook: string; points: string[]; why: string };
+  /** An episode teaser's YouTube address, shown on the closing card instead of the story's (/videos/<id>/card.json). */
+  link?: string; vid?: string;
+};
 /** A word as shown and said: when it's said, and whether it starts a paragraph. Hidden: said but not shown (the
  *  «۳ —» before a summary item, which its chapter's number shows). */
 type Word = { text: string; from: number; to: number; br: boolean; hidden: boolean };
@@ -78,9 +124,8 @@ function paced(text: string, at: number, seconds?: number): Word[] {
 }
 
 /** The scenes on a timeline, with the voice's clips placed on it and every word timed. */
-async function build(card: Card, pics: Map<string, ImageBitmap | null>, engine: Recordable | null, step: (p: number) => void) {
-  // The same list /api/tts reads by index.
-  const lines = [card.title, ...card.body, card.why].filter((l): l is string => !!l);
+async function build(card: Card, pics: Map<string, ImageBitmap | null>, engine: Recordable | null, step: (p: number) => void, lineOf: (i: number) => Line) {
+  const lines = spokenLines(card).map((_, i) => lineOf(i).text);
   const plan = card.video;
   const bitmaps = (list: string[][]) => list.map((a) => pics.get(a[0])).filter((b): b is ImageBitmap => !!b);
   const digest = card.kind === 'digest';
@@ -109,7 +154,7 @@ async function build(card: Card, pics: Map<string, ImageBitmap | null>, engine: 
         scene.words.push(...ws);
         t = (ws.at(-1)?.to ?? t) + GAP;
       } else {
-        for (const piece of await lineAudio({ text, post: card.id, i }, engine)) {
+        for (const piece of await lineAudio(lineOf(i), engine)) {
           const pcm = (await decoder.decodeAudioData(piece.data)).getChannelData(0);
           const ws = words(piece.texts.join(' '));
           align(pcm, RATE, ws).forEach((s, k) => scene.words.push({ text: ws[k], from: t + s.from, to: t + s.to, br: false, hidden: false }));
@@ -127,6 +172,45 @@ async function build(card: Card, pics: Map<string, ImageBitmap | null>, engine: 
     scenes.push(scene);
   }
   return { scenes, clips, outro: t, total: t + OUTRO };
+}
+
+// ---------- which lines, in which plan: the full story, or the short one (PLAN.md P1-C) ----------
+export type Mode = 'short' | 'full';
+/** The lines a video says, as /api/tts reads them: the story's [title, ...body, why] (by index), or the 60-second
+ *  script [hook, 3 points, why] (`?id=&k=clip&n=`), or an episode teaser's lines (`?vid=&i=`). */
+function spokenLines(card: Card): string[] {
+  return [card.title, ...card.body, card.why].filter((l): l is string => !!l);
+}
+function lineMaker(card: Card, src: (i: number) => string | undefined) {
+  const list = spokenLines(card);
+  return (i: number): Line => {
+    const text = list[i] ?? '';
+    const { say, map } = sayLine(text, card.lex);
+    return { text, post: card.id, i, ...(say !== text && { say, map }), ...(src(i) && { src: src(i) }) };
+  };
+}
+/** The short version of a story: the model's hook as the headline scene (from the first frame), its three points as
+ *  chapters with the story's pictures shared out, and «چرا مهمه؟». The 24-hour summary's: its first five items. */
+function shortCard(card: Card): { card: Card; src: (i: number) => string | undefined } | null {
+  if (card.kind === 'digest') {
+    // Its first five items (the lines keep their indices: /api/tts reads them by index).
+    return { card: { ...card, video: { title: card.video.title, chapters: card.video.chapters.slice(0, 5) } }, src: () => undefined };
+  }
+  const c = card.clip;
+  if (!c || c.points.length < 3) return null;
+  const pics = card.video.chapters.flatMap((ch) => ch.pics);
+  const share = (k: number) => (pics.length ? [pics[(k + 1) % pics.length]] : []);
+  const plan: Plan = {
+    title: true,
+    chapters: [
+      ...c.points.map((_, k) => ({ head: fmtNum(k + 1), say: [k + 1], pics: share(k) })),
+      { head: card.whyLabel ?? 'چرا مهمه؟', say: [c.points.length + 1], pics: [] },
+    ],
+  };
+  const short: Card = { ...card, title: c.hook, body: c.points, why: c.why, video: { ...plan, chapters: plan.chapters } };
+  // The title scene's picture: the story's first.
+  short.video.chapters[0] = { ...short.video.chapters[0], pics: pics.slice(0, 1).concat(share(0)).slice(0, 2) };
+  return { card: short, src: (i) => `id=${card.id}&k=clip&n=${i}` };
 }
 
 // ---------- the sound: the voice, a chime at the start and the end, a soft whoosh between chapters ----------
@@ -284,8 +368,11 @@ function painter(ctx: CanvasRenderingContext2D, v: Video) {
   const { card, scenes, outro, total } = v;
   const digest = card.kind === 'digest';
   const chapters = scenes.length - 1;
-  const link = `${SITE.url.replace(/^https:\/\//, '')}/p/${card.id}`;
+  const link = card.link ?? `${SITE.url.replace(/^https:\/\//, '')}/p/${card.id}`;
   const kicker = digest ? 'خلاصه‌ی ۲۴ ساعت' : card.tag || 'خبر';
+  // Where it comes from, on the first scene and the closing card: «منبع: techcrunch.com · ۲۶ آبان».
+  const credit = [card.source && `منبع: ${card.source}`, day(card.date)].filter(Boolean).join(' · ');
+  const k = G.k;
   // A faint dot grid, drawn once.
   const grid = document.createElement('canvas');
   grid.width = W;
@@ -298,7 +385,7 @@ function painter(ctx: CanvasRenderingContext2D, v: Video) {
   const laid = scenes.map((s, n) => {
     const title = s.kind === 'title';
     const pics = s.pics.length > 0 || !title;
-    const width = pics ? COL.w : 960;
+    const width = pics ? COL.w : G.wide;
     // A long headline gets smaller until it fits; at the smallest it goes in pages like the text.
     let size = BODY.size;
     let rows: Placed[][] = [];
@@ -308,7 +395,7 @@ function painter(ctx: CanvasRenderingContext2D, v: Video) {
       if (!title || rows.length * Math.round(size * 1.6) <= TITLE_ROOM) break;
     }
     const lh = title ? Math.round(size * 1.6) : BODY.lh;
-    const top = title ? 0 : s.head ? 262 : 200;
+    const top = title ? 0 : s.head ? G.textTop.head : G.textTop.plain;
     const per = title ? Math.floor(TITLE_ROOM / lh) : Math.max(1, Math.floor((BODY.bottom - top) / BODY.lh) + 1);
     const pages = Array.from({ length: Math.ceil(rows.length / per) }, (_, p) => rows.slice(p * per, p * per + per));
     const pageOf = new Map<number, number>();
@@ -334,18 +421,18 @@ function painter(ctx: CanvasRenderingContext2D, v: Video) {
   function chrome(t: number) {
     ctx.direction = 'rtl';
     ctx.textAlign = 'right';
-    logo(ctx, W - M - 20, 62, 20);
+    logo(ctx, W - M - 20 * k, G.top, 20 * k);
     ctx.fillStyle = '#fff';
-    ctx.font = `800 26px ${FONT}`;
-    ctx.fillText(SITE.name, W - M - 54, 71);
+    ctx.font = `800 ${26 * k}px ${FONT}`;
+    ctx.fillText(SITE.name, W - M - 54 * k, G.top + 9 * k);
     ctx.textAlign = 'left';
     ctx.fillStyle = 'rgb(255 255 255 / .65)';
-    ctx.font = `500 20px ${FONT}`;
-    ctx.fillText(day(card.date), M, 70);
+    ctx.font = `500 ${20 * k}px ${FONT}`;
+    ctx.fillText(day(card.date), M, G.top + 8 * k);
     ctx.direction = 'ltr';
     ctx.fillStyle = 'rgb(255 255 255 / .5)';
-    ctx.font = `500 17px ${FONT}`;
-    ctx.fillText(link, M, H - 44);
+    ctx.font = `500 ${17 * k}px ${FONT}`;
+    ctx.fillText(link, M, H - 44 * k);
     // Progress by chapter, right to left.
     const span = outro - INTRO;
     let x = W - M;
@@ -354,11 +441,11 @@ function painter(ctx: CanvasRenderingContext2D, v: Video) {
       const w = (full * (s.to - s.from)) / span;
       const p = Math.min(1, Math.max(0, (t - s.from) / (s.to - s.from)));
       ctx.fillStyle = 'rgb(255 255 255 / .18)';
-      rounded(ctx, x - w, H - 30, w, 5, 2.5);
+      rounded(ctx, x - w, H - 30 * k, w, 5 * k, 2.5 * k);
       ctx.fill();
       if (p > 0) {
         ctx.fillStyle = YELLOW;
-        rounded(ctx, x - w * p, H - 30, w * p, 5, 2.5);
+        rounded(ctx, x - w * p, H - 30 * k, w * p, 5 * k, 2.5 * k);
         ctx.fill();
       }
       x -= w + 6;
@@ -450,8 +537,8 @@ function painter(ctx: CanvasRenderingContext2D, v: Video) {
       const sc = 0.85 + 0.15 * back((t - c.from) / 0.35);
       ctx.save();
       ctx.globalAlpha *= a;
-      ctx.translate(x + w / 2, y + h - 64);
-      ctx.scale(sc, sc);
+      ctx.translate(x + w / 2, y + h - 64 * k);
+      ctx.scale(sc * k, sc * k);
       ctx.font = `900 58px ${FONT}`;
       ctx.direction = 'rtl';
       ctx.textAlign = 'center';
@@ -469,26 +556,26 @@ function painter(ctx: CanvasRenderingContext2D, v: Video) {
 
     // English names, as tags under the panel (the newest three).
     const shown = l.tags.filter((tg) => tg.from <= t).slice(-3);
-    ctx.font = `600 22px ${FONT}`;
+    ctx.font = `600 ${22 * k}px ${FONT}`;
     ctx.direction = 'ltr';
     ctx.textAlign = 'left';
     let cx = x + w;
     const ga = ctx.globalAlpha;
     for (const tg of shown.reverse()) {
-      const tw = Math.min(ctx.measureText(tg.text).width + 32, 300);
+      const tw = Math.min(ctx.measureText(tg.text).width + 32 * k, 300 * k);
       if (cx - tw < x) break;
       const a = ease((t - tg.from) / 0.25);
       ctx.globalAlpha = ga * a;
       ctx.fillStyle = 'rgb(255 255 255 / .08)';
-      rounded(ctx, cx - tw, y + h + 22 + (1 - a) * 10, tw, 44, 22);
+      rounded(ctx, cx - tw, y + h + 22 * k + (1 - a) * 10, tw, 44 * k, 22 * k);
       ctx.fill();
       ctx.strokeStyle = 'rgb(128 152 255 / .6)';
       ctx.lineWidth = 1.5;
       ctx.stroke();
       ctx.fillStyle = '#dfe5ff';
-      ctx.fillText(tg.text, cx - tw + 16, y + h + 52 + (1 - a) * 10, tw - 32);
+      ctx.fillText(tg.text, cx - tw + 16 * k, y + h + 52 * k + (1 - a) * 10, tw - 32 * k);
       ctx.globalAlpha = ga;
-      cx -= tw + 10;
+      cx -= tw + 10 * k;
     }
   }
 
@@ -516,18 +603,22 @@ function painter(ctx: CanvasRenderingContext2D, v: Video) {
       if (l.pics) panel(s, l, t);
       // The kicker, then the headline, its block centered in the frame's height.
       const rows = l.pages[0]?.length ?? 1;
-      const blockTop = 375 - (rows * l.lh + 60) / 2;
-      ctx.font = `700 24px ${FONT}`;
+      const blockTop = G.titleMid - (rows * l.lh + 60 * k) / 2;
+      ctx.font = `700 ${24 * k}px ${FONT}`;
       ctx.direction = 'rtl';
       ctx.textAlign = 'right';
-      const kw = ctx.measureText(kicker).width + 36;
+      const kw = ctx.measureText(kicker).width + 36 * k;
       const right = l.pics ? COL.right : (W + l.width) / 2;
       ctx.fillStyle = '#2f4fd8';
-      rounded(ctx, right - kw, blockTop - 6, kw, 44, 22);
+      rounded(ctx, right - kw, blockTop - 6 * k, kw, 44 * k, 22 * k);
       ctx.fill();
       ctx.fillStyle = '#fff';
-      ctx.fillText(kicker, right - 18, blockTop + 24);
-      text(s, l, t, blockTop + 60 + l.size + 12, alpha);
+      ctx.fillText(kicker, right - 18 * k, blockTop + 24 * k);
+      // The source and the day beside the kicker: who says so, and when.
+      ctx.fillStyle = 'rgb(255 255 255 / .7)';
+      ctx.font = `500 ${20 * k}px ${FONT}`;
+      ctx.fillText(credit, right - kw - 16 * k, blockTop + 23 * k, Math.max(80, l.width - kw - 20 * k));
+      text(s, l, t, blockTop + 60 * k + l.size + 12, alpha);
     } else {
       panel(s, l, t);
       if (s.head) {
@@ -535,24 +626,25 @@ function painter(ctx: CanvasRenderingContext2D, v: Video) {
         ctx.textAlign = 'right';
         if (digest) {
           // «۳» in a circle, «از ۱۲» beside it.
+          const cy = G.headY + 26 * k;
           ctx.fillStyle = '#2f4fd8';
           ctx.beginPath();
-          ctx.arc(COL.right - 34, 186, 34, 0, Math.PI * 2);
+          ctx.arc(COL.right - 34 * k, cy, 34 * k, 0, Math.PI * 2);
           ctx.fill();
           ctx.fillStyle = '#fff';
-          ctx.font = `900 36px ${FONT}`;
+          ctx.font = `900 ${36 * k}px ${FONT}`;
           ctx.textAlign = 'center';
-          ctx.fillText(s.head, COL.right - 34, 199);
+          ctx.fillText(s.head, COL.right - 34 * k, cy + 13 * k);
           ctx.textAlign = 'right';
           ctx.fillStyle = 'rgb(255 255 255 / .6)';
-          ctx.font = `600 22px ${FONT}`;
-          ctx.fillText(`از ${fmtNum(chapters)}`, COL.right - 82, 195);
+          ctx.font = `600 ${22 * k}px ${FONT}`;
+          ctx.fillText(`از ${fmtNum(chapters)}`, COL.right - 82 * k, cy + 9 * k);
         } else {
           ctx.fillStyle = YELLOW;
-          rounded(ctx, COL.right - 8, 160, 8, 44, 4);
+          rounded(ctx, COL.right - 8 * k, G.headY, 8 * k, 44 * k, 4 * k);
           ctx.fill();
-          ctx.font = `800 32px ${FONT}`;
-          ctx.fillText(s.head, COL.right - 24, 194);
+          ctx.font = `800 ${32 * k}px ${FONT}`;
+          ctx.fillText(s.head, COL.right - 24 * k, G.headY + 34 * k);
         }
       }
       text(s, l, t, l.top + BODY.size, alpha);
@@ -565,8 +657,9 @@ function painter(ctx: CanvasRenderingContext2D, v: Video) {
     ctx.globalAlpha = alpha;
     const zoom = 1 + 0.06 * ease((t - (INTRO - 0.5)) / 0.5);
     ctx.translate(W / 2, H / 2);
-    ctx.scale(zoom, zoom);
-    ctx.translate(-W / 2, -H / 2);
+    ctx.scale(zoom * k, zoom * k);
+    // From here, the landscape frame's coordinates around the middle (360 = its half height).
+    ctx.translate(-W / 2, -360);
     const grow = back(t / 0.45);
     if (grow > 0) logo(ctx, W / 2, 290, 58 * grow, ease((t - 0.2) / 0.6), back((t - 0.75) / 0.35));
     ctx.textAlign = 'center';
@@ -590,6 +683,10 @@ function painter(ctx: CanvasRenderingContext2D, v: Video) {
     ctx.globalAlpha = a;
     ctx.fillStyle = 'rgb(9 12 26 / .96)';
     ctx.fillRect(0, 0, W, H);
+    // The landscape frame's card, scaled to the shape around its middle.
+    ctx.translate(W / 2, H / 2);
+    ctx.scale(k, k);
+    ctx.translate(-W / 2, -360);
     logo(ctx, W / 2, 230, 52, ease((t - outro - 0.1) / 0.6), back((t - outro - 0.5) / 0.35));
     ctx.textAlign = 'center';
     ctx.direction = 'rtl';
@@ -598,7 +695,7 @@ function painter(ctx: CanvasRenderingContext2D, v: Video) {
     ctx.fillText(SITE.name, W / 2, 352);
     ctx.fillStyle = 'rgb(255 255 255 / .75)';
     ctx.font = `500 28px ${FONT}`;
-    ctx.fillText(digest ? 'همه‌ی خبرها با منبع:' : 'متن کامل و منبع این خبر:', W / 2, 428);
+    ctx.fillText(card.link ? 'ویدیوی کامل در یوتیوب:' : digest ? 'همه‌ی خبرها با منبع:' : 'متن کامل و منبع این خبر:', W / 2, 428);
     ctx.direction = 'ltr';
     ctx.fillStyle = YELLOW;
     ctx.font = `700 32px ${FONT}`;
@@ -606,6 +703,12 @@ function painter(ctx: CanvasRenderingContext2D, v: Video) {
     ctx.fillStyle = 'rgb(255 255 255 / .6)';
     ctx.font = `500 24px ${FONT}`;
     ctx.fillText(`t.me/${SITE.channel}`, W / 2, 540);
+    if (card.source) {
+      ctx.direction = 'rtl';
+      ctx.fillStyle = 'rgb(255 255 255 / .45)';
+      ctx.font = `500 20px ${FONT}`;
+      ctx.fillText(credit, W / 2, 590);
+    }
     ctx.restore();
   }
 
@@ -639,7 +742,7 @@ async function encode(v: Video, canvas: HTMLCanvasElement, draw: (t: number) => 
   const codec = v.sound ? await getFirstEncodableAudioCodec(['aac', 'opus'], { numberOfChannels: 1, sampleRate: RATE }) : null;
   if (v.sound && !codec) return null;
   const output = new Output({ format: new Mp4OutputFormat({ fastStart: 'in-memory' }), target: new BufferTarget() });
-  const video = new CanvasSource(canvas, { codec: 'avc', bitrate: 1_200_000, keyFrameInterval: 2 });
+  const video = new CanvasSource(canvas, { codec: 'avc', bitrate: W * H > 1e6 ? 2_500_000 : 1_200_000, keyFrameInterval: 2 });
   output.addVideoTrack(video, { frameRate: FPS });
   const audio = codec ? new AudioBufferSource({ codec, bitrate: 128_000 }) : null;
   if (audio) output.addAudioTrack(audio);
@@ -675,7 +778,7 @@ async function record(v: Video, canvas: HTMLCanvasElement, draw: (t: number) => 
     src.connect(dest);
     stream.addTrack(dest.stream.getAudioTracks()[0]);
   }
-  const rec = new MediaRecorder(stream, { mimeType: type || undefined, videoBitsPerSecond: 1_200_000 });
+  const rec = new MediaRecorder(stream, { mimeType: type || undefined, videoBitsPerSecond: W * H > 1e6 ? 2_500_000 : 1_200_000 });
   const chunks: Blob[] = [];
   rec.ondataavailable = (e) => e.data.size && chunks.push(e.data);
   const done = new Promise<void>((r) => (rec.onstop = () => r()));
@@ -728,7 +831,35 @@ d.addEventListener('close', () => {
 /** Makes the video of the story at `href` (its page's address) and offers it to share or save. `ac`: an audio
  *  context started in the tap, for recording the sound where the encoders can't (iOS only lets audio start there).
  *  `asked`: the voice sheet was already offered, so a reader who chose no downloadable voice gets a silent video. */
-export async function makeVideo(href: string, ac: AudioContext | null = null, asked = false) {
+// Made videos are kept on the device (Cache Storage, public/sw.js keeps it), by story, shape, length and voice: sharing
+// the same one again is instant. The newest few only: a video is a few megabytes.
+const KEPT = 'video-v1';
+const KEEP = 6;
+const keptUrl = (key: string) => `${location.origin}${BASE}/__video/${encodeURIComponent(key)}`;
+async function kept(key: string): Promise<Blob | null> {
+  try {
+    const hit = await (await caches.open(KEPT)).match(keptUrl(key));
+    return hit ? await hit.blob() : null;
+  } catch {
+    return null;
+  }
+}
+async function keep(key: string, blob: Blob, seconds: number) {
+  try {
+    const c = await caches.open(KEPT);
+    await c.put(keptUrl(key), new Response(blob, { headers: { 'Content-Type': blob.type, 'X-Seconds': String(seconds) } }));
+    const keys = await c.keys();
+    for (const k of keys.slice(0, Math.max(0, keys.length - KEEP))) await c.delete(k);
+  } catch {}
+}
+type Choice = { shape?: Shape; mode?: Mode };
+/** The reader's last shape and length; vertical on a phone, landscape on a computer, short when the story has one. */
+const choice = (o?: Choice): Required<Choice> => {
+  const pref = store.get<Choice>('video-pref', {});
+  return { shape: o?.shape ?? pref.shape ?? (matchMedia('(pointer: coarse)').matches ? 'v' : 'h'), mode: o?.mode ?? pref.mode ?? 'short' };
+};
+
+export async function makeVideo(href: string, ac: AudioContext | null = null, asked = false, opts?: Choice) {
   run?.abort();
   const mine = (run = new AbortController());
   const stop = mine.signal;
@@ -759,11 +890,24 @@ export async function makeVideo(href: string, ac: AudioContext | null = null, as
       handedOn = true;
       d.close();
       toast('برای روایت ویدیو یک صدای فارسی لازم است');
-      return void openVoice(() => makeVideo(href, ac, true));
+      return void openVoice(() => makeVideo(href, ac, true, opts));
     }
-    const key = `${href} ${engine} ${chosenVoice()}`;
+    const want = choice(opts);
+    store.set('video-pref', want);
+    const full = (await fetch(`${href}card.json`).then((r) => (r.ok ? r.json() : Promise.reject(new Error(String(r.status)))))) as Card;
+    const short = want.mode === 'short' ? shortCard(full) : null;
+    const mode: Mode = short ? 'short' : 'full';
+    const key = `${href} ${want.shape} ${mode} ${engine} ${chosenVoice()}`;
     if (made?.key === key) return made.show();
-    const card = (await fetch(`${href}card.json`).then((r) => (r.ok ? r.json() : Promise.reject(new Error(String(r.status)))))) as Card;
+    const hit = await kept(key);
+    if (hit) {
+      made = { key, show: done.bind(null, full, hit, 0, !engine, href, want.shape, mode, true) };
+      return made.show();
+    }
+    const card = short?.card ?? full;
+    const src = short?.src ?? ((i: number) => (full.vid ? `vid=${full.vid}&i=${i}` : undefined));
+    useShape(want.shape);
+    INTRO = mode === 'short' ? 0 : FULL_INTRO;
     await Promise.all([800, 500, 900].map((w) => document.fonts.load(`${w} 40px ${FONT}`))).catch(() => {});
     say('آوردن تصویرها…', 0.03);
     const wanted = new Map(card.video.chapters.flatMap((c) => c.pics).map((a) => [a[0], a]));
@@ -771,7 +915,7 @@ export async function makeVideo(href: string, ac: AudioContext | null = null, as
     const pics = new Map([...wanted.keys()].map((k, i) => [k, got[i]]));
     if (stop.aborted) return;
     say(engine ? 'ساختن روایت…' : 'آماده کردن متن…', 0.06);
-    const built = await build(card, pics, engine, (p) => say(`ساختن روایت… ${fmtNum(Math.round(p * 100))}٪`, 0.06 + p * 0.39));
+    const built = await build(card, pics, engine, (p) => say(`ساختن روایت… ${fmtNum(Math.round(p * 100))}٪`, 0.06 + p * 0.39), lineMaker(card, src));
     if (stop.aborted) return;
     const video: Video = { card, ...built, sound: mix(built, !!engine) };
     const canvas = document.createElement('canvas');
@@ -785,7 +929,9 @@ export async function makeVideo(href: string, ac: AudioContext | null = null, as
       blob = await record(video, canvas, draw, frames, stop, ac);
     }
     if (stop.aborted) return;
-    made = { key, show: done.bind(null, card, blob, video.total, !video.sound) };
+    track(`video-made-${want.shape}`);
+    void keep(key, blob, video.total);
+    made = { key, show: done.bind(null, full, blob, video.total, !video.sound, href, want.shape, mode, false) };
     made.show();
   } catch (e) {
     if (stop.aborted || (e as Error).name === 'AbortError') return;
@@ -799,29 +945,56 @@ export async function makeVideo(href: string, ac: AudioContext | null = null, as
   }
 }
 
-function done(card: Card, blob: Blob, seconds: number, silent: boolean) {
+const SHAPE_FA: Record<Shape, string> = { v: 'عمودی', h: 'افقی', s: 'مربع' };
+function done(card: Card, blob: Blob, seconds: number, silent: boolean, href: string, shape: Shape, mode: Mode, fromCache: boolean) {
   if (url) URL.revokeObjectURL(url);
   url = URL.createObjectURL(blob);
   const ext = blob.type.includes('mp4') ? 'mp4' : 'webm';
-  const file = new File([blob], `khabar-${card.id}.${ext}`, { type: blob.type.split(';')[0] });
+  const file = new File([blob], `khabar-${card.id || card.vid}-${shape}.${ext}`, { type: blob.type.split(';')[0] });
   $('[data-vs-making]', d)!.hidden = true;
   $('[data-vs-done]', d)!.hidden = false;
-  $<HTMLVideoElement>('[data-vs-video]', d)!.src = url;
-  const min = Math.floor(seconds / 60);
-  const sec = Math.round(seconds % 60);
-  $('[data-vs-meta]', d)!.textContent = `${min ? `${fmtNum(min)} دقیقه و ` : ''}${fmtNum(sec)} ثانیه · ${fmtNum(Math.max(0.1, Math.round(blob.size / 1e5) / 10))} مگابایت`;
+  const player = $<HTMLVideoElement>('[data-vs-video]', d)!;
+  player.src = url;
+  player.dataset.shape = shape;
+  const meta = (secs: number) => {
+    const min = Math.floor(secs / 60);
+    const sec = Math.round(secs % 60);
+    $('[data-vs-meta]', d)!.textContent = `${fromCache ? 'ساخته شده · ' : ''}${SHAPE_FA[shape]} · ${secs ? `${min ? `${fmtNum(min)} دقیقه و ` : ''}${fmtNum(sec)} ثانیه · ` : ''}${fmtNum(Math.max(0.1, Math.round(blob.size / 1e5) / 10))} مگابایت`;
+  };
+  meta(seconds);
+  // A kept video's length comes from the file itself.
+  if (!seconds) player.onloadedmetadata = () => Number.isFinite(player.duration) && meta(player.duration);
   $('[data-vs-silent]', d)!.hidden = !silent || !voiceSupported();
   $('[data-vs-voice]', d)!.onclick = () => {
     d.close();
     // Called in the voice sheet's tap: the remade video's sound can be recorded on iOS too.
-    openVoice(() => makeVideo(card.href, tapAudio(), true));
+    openVoice(() => makeVideo(href, tapAudio(), true, { shape, mode }));
   };
+  // Another shape or length: made from this tap (iOS records the sound only from a tap).
+  for (const b of d.querySelectorAll<HTMLButtonElement>('[data-vs-shape]')) {
+    b.setAttribute('aria-pressed', String(b.dataset.vsShape === shape));
+    b.onclick = () => b.dataset.vsShape !== shape && makeVideo(href, tapAudio(), true, { shape: b.dataset.vsShape as Shape, mode });
+  }
+  for (const b of d.querySelectorAll<HTMLButtonElement>('[data-vs-mode]')) {
+    b.setAttribute('aria-pressed', String(b.dataset.vsMode === mode));
+    b.hidden = b.dataset.vsMode === 'short' && !card.clip && card.kind !== 'digest';
+    b.onclick = () => b.dataset.vsMode !== mode && makeVideo(href, tapAudio(), true, { shape, mode: b.dataset.vsMode as Mode });
+  }
+  // Ready to post: the caption (the model's, else the headline and the address) goes with the file, and can be copied.
+  const page = card.link ?? `${SITE.url}/p/${card.id}/`;
+  const caption = card.share ? `${card.share}\n${page}` : `${card.title}\n${page}`;
+  $('[data-vs-caption]', d)!.textContent = caption;
+  $('[data-vs-copy]', d)!.onclick = () => navigator.clipboard.writeText(caption).then(() => toast('متن کپی شد'), () => toast('کپی ممکن نشد'));
   const save = $<HTMLAnchorElement>('[data-vs-save]', d)!;
   save.href = url;
   save.download = file.name;
   save.hidden = false;
   const shareBtn = $('[data-vs-share]', d)!;
   shareBtn.hidden = !navigator.canShare?.({ files: [file] });
-  shareBtn.onclick = () => navigator.share({ files: [file], title: card.title, text: `${card.title}\n${SITE.url}/p/${card.id}/` }).catch(() => {});
+  shareBtn.onclick = () =>
+    navigator.share({ files: [file], title: card.title, text: caption }).then(
+      () => track('video-shared'),
+      () => {},
+    );
   $('[data-vs-cancel]', d)!.textContent = 'بستن';
 }

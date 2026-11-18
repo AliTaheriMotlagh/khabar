@@ -99,3 +99,18 @@ test('align: edge cases', () => {
   assert.equal(mute.length, 3);
   assert.ok(mute[0].from === 0 && mute[2].to <= 1.01 && mute[1].from >= mute[0].to);
 });
+
+// PLAN.md P1-D's targets (median < 80 ms, p90 < 150 ms) are for real voices' hand-labeled clips; these made-up ones
+// put every word ±25% off its weight, which is harder, so p90 here guards against regressions at today's 0.18 s.
+test('align: median and p90 of word starts (made-up clips): no regression', () => {
+  const ws = words(TEXT);
+  const errs = [];
+  for (let run = 0; run < 30; run++) {
+    const { pcm, spans } = clip(ws);
+    align(pcm, RATE, ws).forEach((s, i) => errs.push(Math.abs(s.from - spans[i].from)));
+  }
+  errs.sort((a, b) => a - b);
+  const at = (q) => errs[Math.min(errs.length - 1, Math.floor(q * errs.length))];
+  assert.ok(at(0.5) < 0.08, `median ${at(0.5).toFixed(3)} s`);
+  assert.ok(at(0.9) < 0.22, `p90 ${at(0.9).toFixed(3)} s`);
+});

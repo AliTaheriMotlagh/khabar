@@ -1,11 +1,12 @@
 // Client behaviour for every page. Everything is progressive: the site works without JS.
-import { $, $$, BASE, PAGE_CACHE, fmtNum, getSaved, relTime, store, tapAudio, toast, type Entry } from './core';
+import { $, $$, BASE, PAGE_CACHE, fmtNum, getSaved, relTime, store, tapAudio, toast, track, type Entry } from './core';
 import { award, clearSeen, markAllSeen, markNew, recordRead, renderMe, unreadTest } from './game';
 import { STORY_SHOW, TZ, decodeStories, pickStories, tehranDay, type StoryOrder, type StoryShow } from '../lib/time';
 import { SITE } from '../site';
 import { showImage, watchMedia } from './media';
 import { initPeek, peek } from './peek';
 import { initReader, readerProgress, stepSize, toggleFocus } from './reader';
+import { initExtras } from './extras';
 import { initSocial, loadEngage } from './social';
 import { initVoiceOffer } from './voice-offer';
 import { applyFollowFilter, initFollow } from './follow';
@@ -137,6 +138,7 @@ function toggleSave(btn: HTMLElement) {
     list.unshift({ id, title: d.title!, href: d.href!, cover: d.cover || undefined, date: d.date });
     caches?.open(PAGE_CACHE).then((c) => c.add(d.href!)).catch(() => {});
     award('save');
+    track('save');
     toast('ذخیره شد — حتی آفلاین هم در دسترس است');
   }
   store.set('saved', list);
@@ -157,6 +159,7 @@ async function share(urlStr: string, title: string) {
       // Messengers keep the text and drop the title: the headline and the site's name go in the text.
       await navigator.share({ title, text: `${title}\n— ${SITE.name}`, url: full });
       award('share');
+      track('share');
       return;
     } catch (e) {
       if ((e as Error).name === 'AbortError') return;
@@ -169,6 +172,7 @@ async function copy(text: string) {
     await navigator.clipboard.writeText(text);
     toast('پیوند کپی شد');
     award('share');
+    track('share');
   } catch {
     prompt('پیوند را کپی کنید:', text);
   }
@@ -193,7 +197,7 @@ document.addEventListener('click', (e) => {
   const sh = t.closest<HTMLElement>('[data-share]');
   if (sh) return void share(sh.dataset.url!, sh.dataset.title ?? document.title);
   const mv = t.closest<HTMLElement>('[data-make-video]');
-  if (mv) return makeVideo(mv.dataset.makeVideo!);
+  if (mv) return makeVideo(mv.dataset.makeVideo!, mv.dataset);
   const cp = t.closest<HTMLElement>('[data-copy]');
   if (cp) return void copy(primary(cp.dataset.copy!));
   const view = t.closest<HTMLElement>('[data-set-view]');
@@ -216,9 +220,13 @@ document.addEventListener('click', (e) => {
 // ---------- a story's video, made on the device (src/scripts/video.ts, loaded on the first tap) ----------
 const canMakeVideo = typeof VideoEncoder === 'function' || (typeof MediaRecorder === 'function' && 'captureStream' in HTMLCanvasElement.prototype);
 $$('[data-make-video]').forEach((b) => (b.hidden = !canMakeVideo));
-function makeVideo(href: string) {
+/** `data-video-shape` / `data-video-mode` on the button pick the video's shape and length (the home page's
+ *  «۶۰ ثانیه خبر امروز» is vertical and short); otherwise the reader's last choice. */
+function makeVideo(href: string, d: DOMStringMap = {}) {
   const ac = tapAudio();
-  import('./video').then((m) => m.makeVideo(href, ac), () => (ac?.close().catch(() => {}), toast('اتصال اینترنت را بررسی کنید')));
+  const opts = { ...(d.videoShape && { shape: d.videoShape as 'v' | 'h' | 's' }), ...(d.videoMode && { mode: d.videoMode as 'short' | 'full' }) };
+  if (d.videoMode === 'short' && d.videoShape === 'v') track('brief60');
+  import('./video').then((m) => m.makeVideo(href, ac, false, opts), () => (ac?.close().catch(() => {}), toast('اتصال اینترنت را بررسی کنید')));
 }
 
 // Only one video plays at a time.
@@ -333,6 +341,7 @@ addEventListener('offline', syncOnline);
 syncOnline();
 
 let installEvent: (Event & { prompt: () => Promise<void> }) | null = null;
+addEventListener('appinstalled', () => track('install'));
 addEventListener('beforeinstallprompt', (e) => {
   e.preventDefault();
   installEvent = e as typeof installEvent;
@@ -403,4 +412,5 @@ initSocial();
 initPeek();
 initVoiceOffer();
 initReader(() => settings, saveSettings);
+initExtras();
 setInterval(renderDates, 60_000);

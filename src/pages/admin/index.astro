@@ -41,9 +41,59 @@ import Icon from '../../components/Icon.astro';
       </section>
 
       <section class="st-section">
+        <h2 class="section-title">خواننده‌های هر روز (۳۰ روز)</h2>
+        <div class="st-chart days" data-adm-days></div>
+      </section>
+
+      <section class="st-section">
+        <h2 class="section-title">پرخواننده‌ترین‌ها</h2>
+        <div class="adm-two">
+          <div><h3 class="adm-h3">امروز</h3><ol class="adm-top" data-adm-top="today"></ol></div>
+          <div><h3 class="adm-h3">این هفته</h3><ol class="adm-top" data-adm-top="week"></ol></div>
+        </div>
+      </section>
+
+      <section class="st-section">
+        <h2 class="section-title">از چه چیزهایی استفاده می‌شود (۷ روز)</h2>
+        <ul class="adm-sources adm-events" data-adm-events></ul>
+        <p class="muted" data-adm-events-empty hidden>هنوز چیزی ثبت نشده.</p>
+      </section>
+
+      <section class="st-section">
+        <h2 class="section-title">سهمیه‌ها و اعلان‌ها</h2>
+        <div class="adm-meter" data-adm-tts></div>
+        <p class="st-note" data-adm-push></p>
+      </section>
+
+      <section class="st-section">
+        <h2 class="section-title">نظر و واکنش</h2>
+        <p class="st-note" data-adm-engage></p>
+        <div class="adm-two">
+          <div><h3 class="adm-h3">بیشترین نظر</h3><ol class="adm-top" data-adm-most="comments"></ol></div>
+          <div><h3 class="adm-h3">بیشترین واکنش</h3><ol class="adm-top" data-adm-most="reactions"></ol></div>
+        </div>
+      </section>
+
+      <section class="st-section">
+        <h2 class="section-title">محتوای این نسخه‌ی سایت</h2>
+        <div class="st-chart days" data-adm-posts></div>
+        <ul class="adm-sources adm-events" data-adm-content></ul>
+        <details class="st-table" data-adm-hidden-box hidden>
+          <summary>خبرهای این سه روز که در فهرست‌ها نیامده‌اند</summary>
+          <ul class="adm-hidden" data-adm-hidden></ul>
+        </details>
+      </section>
+
+      <section class="st-section">
         <h2 class="section-title">از کجا آمده‌اند (۷ روز)</h2>
         <ol class="adm-sources" data-adm-sources></ol>
         <p class="muted" data-adm-sources-empty hidden>هنوز چیزی ثبت نشده.</p>
+      </section>
+
+      <section class="st-section" data-adm-flags-box hidden>
+        <h2 class="section-title">بررسی خودکار نظرها</h2>
+        <p class="muted">مدل این نظرها را توهین، تبلیغ یا بی‌ربط تشخیص داده؛ خودش چیزی را پنهان نمی‌کند.</p>
+        <ol class="adm-comments" data-adm-flags></ol>
       </section>
 
       <section class="st-section">

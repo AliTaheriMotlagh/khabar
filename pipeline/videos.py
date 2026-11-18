@@ -8,6 +8,7 @@ Three sources, merged by video id:
 
     python -m pipeline.videos            # update data/videos.json (yt-dlp/RSS when due, the posts always)
     python -m pipeline.videos --posts    # only from the posts, no network
+    python -m pipeline.videos --summarize [--limit=N]   # Persian summaries from subtitles (needs the model, P2-3)
 """
 from __future__ import annotations
 
@@ -219,5 +220,129 @@ def update(network: bool = True) -> bool:
     return changed
 
 
+# ---- Persian summaries from the subtitles (PLAN.md P2-3) ----
+# The video's auto subtitles (yt-dlp, Persian first) as text with a time every ~30 s, read by the model in chunks:
+# each chunk gives notes; then one call writes the Persian headline, summary, 5–8 points, chapter titles in Persian (the
+# description's own chapters translated when it has them, else from the times in the notes) and a shelf category.
+# Without subtitles, the title and description alone. Stored as the video's `ai`; done again only when SUMMARY_V changes.
+SUMMARY_V = 1
+CATEGORIES = ["مقاله‌خوانی", "تکنیک‌های مدل", "ایجنت و ابزار", "رباتیک", "گفتگو و مهمان", "لایو", "مهارت و مسیر شغلی", "خبر و تحلیل"]
+CHUNK = 3500
+VTT_TIME = re.compile(r"^(\d{2}):(\d{2}):(\d{2})\.\d{3} --> ")
+
+
+def vtt_text(vtt: str) -> str:
+    """Plain text from a WebVTT file, the rolling auto-caption repeats removed, a [m:ss] stamp every ~30 s."""
+    out, last, stamp_at, t = [], "", -30, 0
+    for line in vtt.splitlines():
+        m = VTT_TIME.match(line)
+        if m:
+            t = int(m.group(1)) * 3600 + int(m.group(2)) * 60 + int(m.group(3))
+            continue
+        line = re.sub(r"<[^>]+>", "", line).strip()
+        if not line or line == "WEBVTT" or line.startswith(("Kind:", "Language:", "NOTE")) or line == last:
+            continue
+        if t - stamp_at >= 30:
+            out.append(f"[{t // 60}:{t % 60:02d}]")
+            stamp_at = t
+        out.append(line)
+        last = line
+    return re.sub(r"\s+", " ", " ".join(out)).strip()
+
+
+def subtitles(vid: str) -> Optional[str]:
+    exe = shutil.which("yt-dlp")
+    if not exe:
+        return None
+    import tempfile
+    from pathlib import Path
+
+    with tempfile.TemporaryDirectory() as tmp:
+        try:
+            subprocess.run([exe, "--no-warnings", "--skip-download", "--write-subs", "--write-auto-subs", "--sub-langs", "fa,fa-orig,en,en-orig",
+                            "--sub-format", "vtt", "-o", f"{tmp}/%(id)s.%(ext)s", f"https://www.youtube.com/watch?v={vid}"],
+                           capture_output=True, text=True, timeout=180, check=True)
+        except subprocess.SubprocessError as exc:
+            print(f"  ! subtitles {vid}: {str(exc)[:200]}")
+            return None
+        files = sorted(Path(tmp).glob("*.vtt"), key=lambda f: (0 if ".fa" in f.name else 1, f.name))
+        return vtt_text(files[0].read_text("utf-8", errors="replace")) if files else None
+
+
+NOTES_SCHEMA = {"type": "object", "properties": {"notes": {"type": "array", "items": {"type": "string"}, "maxItems": 8}},
+                "required": ["notes"], "additionalProperties": False}
+SUMMARY_SCHEMA = {
+    "type": "object",
+    "properties": {
+        "title": {"type": "string"},
+        "summary": {"type": "string"},
+        "points": {"type": "array", "items": {"type": "string"}, "minItems": 3, "maxItems": 8},
+        "chapters": {"type": "array", "items": {"type": "object", "properties": {"t": {"type": "integer"}, "title": {"type": "string"}},
+                                               "required": ["t", "title"], "additionalProperties": False}, "maxItems": 20},
+        "category": {"type": "string", "enum": CATEGORIES},
+    },
+    "required": ["title", "summary", "points", "chapters", "category"],
+    "additionalProperties": False,
+}
+NOTES_SYSTEM = """بخشی از زیرنویس یک ویدیوی فارسی یوتیوب درباره‌ی هوش مصنوعی را می‌گیری (زمان‌ها داخل [ ] آمده). نکته‌های اصلی همین بخش را به فارسی معیار بنویس، هر نکته یک جمله، و زمان شروعش را اول آن بیاور، مثل «[12:30] …». فقط JSON."""
+SUMMARY_SYSTEM = f"""تو خلاصه‌ی فارسی یک ویدیوی یوتیوب مهرزاد صمدی درباره‌ی هوش مصنوعی را می‌نویسی، به فارسی معیار و روان. فقط JSON.
+title: تیتر فارسی ویدیو (۳۰ تا ۸۰ نویسه)، موضوع اصلی را بگوید.
+summary: ۳ تا ۵ جمله که ویدیو درباره‌ی چیست و چه می‌گوید.
+points: ۵ تا ۸ نکته‌ی اصلی، هر کدام یک جمله‌ی کوتاه.
+chapters: فصل‌های ویدیو با زمان شروع به ثانیه (t) و عنوان فارسی کوتاه. اگر فصل‌های خود ویدیو داده شده، همان زمان‌ها را نگه دار و فقط عنوانشان را به فارسی برگردان. اگر نه، از زمان‌های یادداشت‌ها ۴ تا ۸ فصل بساز که اولی از ۰ شروع شود.
+category: یکی از: {"، ".join(CATEGORIES)}.
+فقط از چیزی که در یادداشت‌ها و توضیح آمده بنویس."""
+
+
+def summarize_one(http, v: dict) -> Optional[dict]:
+    from . import ai, ai_more
+
+    text = subtitles(v["id"])
+    notes: list[str] = []
+    if text:
+        for i in range(0, min(len(text), CHUNK * 8), CHUNK):
+            try:
+                notes += ai.chat(http, NOTES_SYSTEM, [], text[i : i + CHUNK], NOTES_SCHEMA, name="notes", max_tokens=600)["notes"]
+            except Exception as exc:  # noqa: BLE001 — a chunk lost is a few notes lost
+                print(f"  ! notes {v['id']}: {exc}")
+    given = "\n".join(f"{c['t']}: {c['title']}" for c in v.get("chapters") or [])
+    q = "\n".join([f"عنوان ویدیو: {v.get('title')}", f"مدت: {v.get('duration') or '؟'} ثانیه",
+                    *([f"فصل‌های خود ویدیو (ثانیه: عنوان):\n{given}"] if given else []),
+                    f"توضیح ویدیو: {shape.clip(v.get('description') or '', 1500)}",
+                    *([f"یادداشت‌های زیرنویس:\n" + "\n".join(notes)] if notes else [])])
+    for temperature in (0.1, 0.4):
+        try:
+            a = ai.chat(http, SUMMARY_SYSTEM, [], q, SUMMARY_SCHEMA, name="summary", temperature=temperature, max_tokens=1600)
+        except Exception as exc:  # noqa: BLE001
+            print(f"  ! summary {v['id']}: {exc}")
+            continue
+        dur = v.get("duration") or 10**6
+        chaps = sorted({c["t"]: c["title"].strip() for c in a.get("chapters") or [] if 0 <= c["t"] < dur and c["title"].strip()}.items())
+        if 20 <= len(a.get("title", "")) <= 100 and ai_more.fa_share(a.get("summary", "")) >= 0.6 and len(a.get("points") or []) >= 3:
+            return {"title": a["title"].strip(), "summary": a["summary"].strip(), "points": [p.strip() for p in a["points"] if p.strip()],
+                    "chapters": [{"t": t, "title": title} for t, title in chaps] if len(chaps) >= 2 and chaps[0][0] == 0 else [],
+                    "category": a["category"], "from": "subtitles" if notes else "description", "v": SUMMARY_V, "model": ai.AI_MODEL}
+    return None
+
+
+def summarize(limit: int = 1) -> int:
+    data = load()
+    todo = [v for v in data["videos"] if (v.get("ai") or {}).get("v") != SUMMARY_V][:limit]
+    done = 0
+    with httpx.Client() as http:
+        for v in todo:
+            out = summarize_one(http, v)
+            if out:
+                v["ai"] = out
+                done += 1
+                print(f"  ✓ video {v['id']}: {out['title']} ({out['from']})")
+    if done:
+        VIDEOS.write_text(json.dumps(data, ensure_ascii=False, indent=1) + "\n", "utf-8")
+    return done
+
+
 if __name__ == "__main__":
-    update(network="--posts" not in sys.argv)
+    if "--summarize" in sys.argv:
+        summarize(int(next((a.split("=")[1] for a in sys.argv if a.startswith("--limit=")), "1")))
+    else:
+        update(network="--posts" not in sys.argv)

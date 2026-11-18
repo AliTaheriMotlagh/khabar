@@ -1,0 +1,37 @@
+---
+// The people, companies, models and products in the news (PLAN.md P2-6), by kind, most covered first.
+import Base from '../../layouts/Base.astro';
+import Icon from '../../components/Icon.astro';
+import { SITE } from '../../site';
+import { faNum, url } from '../../lib/posts';
+import { breadcrumbs } from '../../lib/seo';
+import { KIND_FA, MIN, whoHref, whoList } from '../../lib/who';
+import type { EntityKind } from '../../lib/knowledge';
+
+const all = whoList();
+const kinds = (Object.keys(KIND_FA) as EntityKind[]).map((k) => ({ k, items: all.filter((x) => x.e.kind === k) })).filter((g) => g.items.length);
+const jsonLd = [breadcrumbs([{ name: 'آدم‌ها و شرکت‌ها', path: 'who/' }])];
+---
+<Base title="آدم‌ها و شرکت‌ها" description={`آدم‌ها، شرکت‌ها، مدل‌ها و محصول‌های دنیای هوش مصنوعی در خبرهای ${SITE.name}: ${all.slice(0, 6).map((x) => x.e.name_fa).join('، ')} و …`} jsonLd={jsonLd}>
+  <div class="container narrow">
+    <header class="page-head"><div><h1><Icon name="users" /> آدم‌ها و شرکت‌ها</h1><p>هر نام، همه‌ی خبرهایش. نام‌ها را هوش مصنوعی سایت از متن خبرها بیرون کشیده.</p></div></header>
+    {all.length === 0 && <p class="muted">هنوز چیزی نیست؛ با خبرهای تازه پر می‌شود.</p>}
+    {
+      kinds.map(({ k, items }) => (
+        <section class="who-group">
+          <h2 class="section-title">{KIND_FA[k]}</h2>
+          <ul class="who-list">
+            {items.map(({ e, posts }) => (
+              <li>
+                <a href={posts.length >= MIN ? url(whoHref(e.slug)) : posts[0].href}>
+                  <b>{e.name_fa}</b> <small dir="ltr" lang="en">{e.name_en}</small>
+                </a>
+                <span class="muted" data-num>{faNum(posts.length)}</span>
+              </li>
+            ))}
+          </ul>
+        </section>
+      ))
+    }
+  </div>
+</Base>

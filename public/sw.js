@@ -11,6 +11,7 @@ const SCOPE = new URL(self.registration.scope).pathname;
 const OFFLINE = `${SCOPE}offline/`;
 const VOICE = 'voice-v1'; // the downloaded Persian voice (src/scripts/voice.ts): never cleared here
 const AUDIO = 'audio-v1'; // saved stories' sound for listening offline (src/scripts/offline-audio.ts): never cleared here
+const VIDEO = 'video-v1'; // news videos made on the device (src/scripts/video.ts): never cleared here
 const IMAGE_HOSTS = /(^|\.)(twimg\.com|telesco\.pe|ytimg\.com|wsrv\.nl)$/; // wsrv.nl: the image proxy (src/lib/posts.ts)
 
 self.addEventListener('install', (e) => {
@@ -21,7 +22,7 @@ self.addEventListener('activate', (e) => {
   e.waitUntil(
     caches
       .keys()
-      .then((keys) => Promise.all(keys.filter((k) => ![PAGES, ASSETS, IMAGES, VOICE, AUDIO].includes(k)).map((k) => caches.delete(k))))
+      .then((keys) => Promise.all(keys.filter((k) => ![PAGES, ASSETS, IMAGES, VOICE, AUDIO, VIDEO].includes(k)).map((k) => caches.delete(k))))
       .then(() => self.clients.claim()),
   );
 });

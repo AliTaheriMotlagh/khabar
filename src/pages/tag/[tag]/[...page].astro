@@ -5,6 +5,7 @@ import Sidebar from '../../../components/Sidebar.astro';
 import Icon from '../../../components/Icon.astro';
 import { SITE } from '../../../site';
 import { getFeed, getTags, tagHref, faNum } from '../../../lib/posts';
+import { listLd } from '../../../lib/seo';
 import { tagFeed } from '../../../lib/feed';
 
 // /tag/<tag>/ is the first page, /tag/<tag>/2/ … the older ones (a big topic holds hundreds of posts).
@@ -23,8 +24,9 @@ const at = (n: number) => tagHref(tag!) + (n > 1 ? `${n}/` : '');
 const prev = page > 1 ? at(page - 1) : null;
 const next = page < total ? at(page + 1) : null;
 const nth = page > 1 ? ` — صفحه‌ی ${faNum(page)}` : '';
+const jsonLd = listLd({ name: `اخبار ${tag}${nth}`, path: at(page), posts: slice, crumbs: [{ name: 'موضوع‌ها', path: 'tags/' }, { name: tag!, path: `tag/${encodeURIComponent(tag!)}/` }] });
 ---
-<Base title={`اخبار ${tag}${nth}`} description={`تازه‌ترین اخبار ${tag} با ترجمه‌ی فارسی، تصویر و ویدیو و پیوند به منبع اصلی — ${SITE.name}${nth}`} image={slice.find((p) => p.cover)?.cover?.src} feed={tagFeed(tag!)}>
+<Base title={`اخبار ${tag}${nth}`} description={`اخبار ${tag}${nth} به فارسی: ${slice.slice(0, 3).map((p) => p.short).join('، ')} و ${faNum(Math.max(0, posts.length - 3))} خبر دیگر، با تصویر و پیوند به منبع — ${SITE.name}`} image={slice.find((p) => p.cover)?.cover?.src} feed={tagFeed(tag!)} jsonLd={jsonLd} prev={prev} next={next}>
   <div class="container">
     <header class="page-head with-action">
       <div><h1>اخبار {tag}</h1><p><span data-num>{faNum(posts.length)}</span> خبر{page > 1 && ` · صفحه‌ی ${faNum(page)} از ${faNum(total)}`}</p></div>

@@ -4,7 +4,7 @@
 // keeps today's (Tehran), or the last 24 hours after a quiet day, in the order the reader set for stories.
 import Icon from './Icon.astro';
 import { picture, storyItems } from '../lib/posts';
-const items = storyItems().map(({ p, at }) => ({ id: p.id, t: p.article.title, at, h: p.href, m: p.minutes, c: p.cover ? picture(p.cover.src || p.cover.poster, 'small').src : '' }));
+const items = storyItems().map(({ p, at }) => ({ id: p.id, t: p.article.title, at, h: p.href, m: p.minutes, c: p.cover ? picture(p.cover.src || p.cover.poster, 'small').src : '', ...(p.importance && { i: p.importance }) }));
 ---
 {
   items.length > 0 && (

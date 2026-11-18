@@ -1,0 +1,63 @@
+---
+// The technical terms in the news, each with a one-line Persian explanation (PLAN.md P2-5, data/glossary.json — the
+// model's first good explanation, editable by hand) and the stories that use it. A story page underlines them
+// (src/scripts/extras.ts) and links here.
+import Base from '../../layouts/Base.astro';
+import Icon from '../../components/Icon.astro';
+import { SITE } from '../../site';
+import { abs, getFeed, type Post } from '../../lib/posts';
+import { breadcrumbs } from '../../lib/seo';
+import { glossary, type Term } from '../../lib/knowledge';
+
+const uses = new Map<string, Post[]>();
+for (const p of getFeed()) for (const t of p.terms) uses.set(t.term, [...(uses.get(t.term) ?? []), p]);
+// The glossary's terms, plus any a story has that isn't in the file yet.
+const byTerm = new Map<string, Term>(glossary().map((t) => [t.term, t]));
+for (const p of getFeed()) for (const t of p.terms) if (!byTerm.has(t.term)) byTerm.set(t.term, t);
+const terms = [...byTerm.values()].sort((a, b) => a.term.localeCompare(b.term, 'fa'));
+const first = (t: string) => (/^[A-Za-z]/.test(t) ? t[0].toUpperCase() : t[0]);
+const groups: { letter: string; items: Term[] }[] = [];
+for (const t of terms) {
+  const l = first(t.term);
+  if (groups.at(-1)?.letter !== l) groups.push({ letter: l, items: [] });
+  groups.at(-1)!.items.push(t);
+}
+const jsonLd = [
+  {
+    '@context': 'https://schema.org',
+    '@type': 'DefinedTermSet',
+    name: `واژه‌نامه‌ی هوش مصنوعی ${SITE.name}`,
+    url: abs('glossary/'),
+    inLanguage: 'fa-IR',
+    hasDefinedTerm: terms.slice(0, 300).map((t) => ({ '@type': 'DefinedTerm', name: t.term, description: t.def, url: `${abs('glossary/')}#${encodeURIComponent(t.term)}` })),
+  },
+  breadcrumbs([{ name: 'واژه‌نامه', path: 'glossary/' }]),
+];
+---
+<Base title="واژه‌نامه‌ی هوش مصنوعی" description={`اصطلاح‌های هوش مصنوعی و فناوری به زبان ساده: ${terms.slice(0, 8).map((t) => t.term).join('، ')} و ${terms.length} اصطلاح دیگر، هر کدام با خبرهایش.`} jsonLd={jsonLd}>
+  <div class="container narrow">
+    <header class="page-head"><div><h1><Icon name="book" /> واژه‌نامه‌ی هوش مصنوعی</h1><p>اصطلاح‌هایی که در خبرها آمده، هر کدام در یک جمله‌ی ساده.</p></div></header>
+    {terms.length === 0 && <p class="muted">هنوز اصطلاحی نیست؛ با خبرهای تازه پر می‌شود.</p>}
+    {groups.length > 1 && <nav class="gl-letters" aria-label="حرف‌ها">{groups.map((g) => <a href={`#l-${encodeURIComponent(g.letter)}`}>{g.letter}</a>)}</nav>}
+    {
+      groups.map((g) => (
+        <section class="gl-group" id={`l-${g.letter}`}>
+          <h2 class="section-title">{g.letter}</h2>
+          <dl class="gl-list">
+            {g.items.map((t) => (
+              <div id={t.term}>
+                <dt dir="auto">{t.term}{t.fa && <small> · {t.fa}</small>}</dt>
+                <dd>
+                  {t.def}
+                  {(uses.get(t.term) ?? []).length > 0 && (
+                    <span class="gl-uses">{(uses.get(t.term) ?? []).slice(0, 3).map((p) => <a href={p.href}>{p.short}</a>)}</span>
+                  )}
+                </dd>
+              </div>
+            ))}
+          </dl>
+        </section>
+      ))
+    }
+  </div>
+</Base>

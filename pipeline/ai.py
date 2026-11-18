@@ -146,6 +146,10 @@ def source_input(post: dict) -> Optional[str]:
         return None
     gholam = post.get("gholam") or {}
     text = gholam.get("text") if gholam.get("text") and not telegram.is_gholam_error(gholam["text"]) else None
+    # Without Gholam, the model's own Persian story (pipeline/ai_more.py translate, P2-1) gets a headline the same way.
+    story = (post.get("ai") or {}).get("story") or {}
+    if not text and story.get("body"):
+        text = "\n".join(story["body"] + ([story["why"]] if story.get("why") else []))
     video = None if text else _video(post)
     if not text and not video:
         return None
@@ -176,9 +180,11 @@ def is_due(post: dict) -> bool:
 
 # ---- the model ----
 
-def ask(http: httpx.Client, text: str, temperature: float = 0.0) -> dict:
-    messages = [{"role": "system", "content": SYSTEM}]
-    for q, a in EXAMPLES:
+def chat(http: httpx.Client, system: str, examples: list, text: str, schema: dict, *, name: str = "answer",
+         temperature: float = 0.0, max_tokens: int = 300) -> dict:
+    """One answer held to a JSON schema. `examples` are (question, answer) pairs shown before the question."""
+    messages = [{"role": "system", "content": system}]
+    for q, a in examples:
         messages += [{"role": "user", "content": q}, {"role": "assistant", "content": json.dumps(a, ensure_ascii=False)}]
     messages.append({"role": "user", "content": text})
     resp = http.post(
@@ -187,9 +193,9 @@ def ask(http: httpx.Client, text: str, temperature: float = 0.0) -> dict:
             "model": AI_MODEL,
             "messages": messages,
             "temperature": temperature,
-            "max_tokens": 300,
-            "response_format": {"type": "json_schema", "json_schema": {"name": "story", "strict": True, "schema": SCHEMA}},
-            # Qwen3.5 thinks before it answers unless told not to: slower, and nothing to gain for a headline.
+            "max_tokens": max_tokens,
+            "response_format": {"type": "json_schema", "json_schema": {"name": name, "strict": True, "schema": schema}},
+            # Qwen3.5 thinks before it answers unless told not to: slower, and nothing to gain here.
             "chat_template_kwargs": {"enable_thinking": False},
         },
         timeout=AI_TIMEOUT,
@@ -197,6 +203,10 @@ def ask(http: httpx.Client, text: str, temperature: float = 0.0) -> dict:
     resp.raise_for_status()
     content = resp.json()["choices"][0]["message"]["content"]
     return json.loads(content)
+
+
+def ask(http: httpx.Client, text: str, temperature: float = 0.0) -> dict:
+    return chat(http, SYSTEM, EXAMPLES, text, SCHEMA, name="story", temperature=temperature)
 
 
 def _fa_share(s: str) -> float:
@@ -252,6 +262,15 @@ def work_out(http: httpx.Client, post: dict) -> dict:
 
 # ---- runs ----
 
+# The later calls' answers (pipeline/ai_more.py) live in the same `ai` field and are kept when the headline is redone.
+LATER = ("x", "story", "speech")
+
+
+def merged(post: dict, ai: dict) -> dict:
+    old = post.get("ai") or {}
+    return {**ai, **{k: old[k] for k in LATER if k in old}}
+
+
 def load_posts() -> list[dict]:
     return [json.loads(p.read_text("utf-8")) for p in config.POSTS_DIR.glob("*.json")]
 
@@ -277,7 +296,7 @@ def run(everything: bool = False, budget: float = AI_BUDGET, limit: Optional[int
                 print(f"ai: budget of {budget:.0f}s used; {len(todo) - done} left for the next run")
                 break
             t = time.monotonic()
-            post["ai"] = work_out(http, post)
+            post["ai"] = merged(post, work_out(http, post))
             save(post)
             done += 1
             print(f"  ✓ {post['id']} ({time.monotonic() - t:.1f}s): {post['ai'].get('title', 'failed')}")

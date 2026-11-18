@@ -4,10 +4,17 @@
 // lines as the digest's card.json, so /api/tts can voice them by index.
 import Icon from './Icon.astro';
 import { faDate, faNum, faTime, latestDigest } from '../lib/posts';
+import { lexFor } from '../lib/knowledge';
+import { sayLine } from '../../server/_say.js';
 const digest = latestDigest();
 const items = digest?.digestItems ?? [];
 const SHOW = 4;
-const lines = digest ? [{ text: digest.article.title, post: digest.id, i: 0 }, ...items.map((it, k) => ({ text: `${faNum(it.n)} — ${it.text}`, post: digest.id, i: k + 1 }))] : [];
+// Latin names the lexicon's way (server/_say.js), as on every other list read aloud.
+const spoken = (l: { text: string; post: number; i: number }) => {
+  const s = sayLine(l.text, lexFor([l.text]));
+  return s.say === l.text ? l : { ...l, say: s.say, map: s.map };
+};
+const lines = digest ? [{ text: digest.article.title, post: digest.id, i: 0 }, ...items.map((it, k) => ({ text: `${faNum(it.n)} — ${it.text}`, post: digest.id, i: k + 1 }))].map(spoken) : [];
 ---
 {
   digest && items.length > 0 && (
@@ -26,6 +33,7 @@ const lines = digest ? [{ text: digest.article.title, post: digest.id, i: 0 }, .
           </li>
         ))}
       </ol>
+      <button class="btn sm brief60" type="button" data-make-video={digest.href} data-video-shape="v" data-video-mode="short" hidden><Icon name="film" /> ۶۰ ثانیه خبر امروز، ویدیوی عمودی</button>
       <a class="more-link" href={digest.href}>
         {items.length > SHOW ? <>همه‌ی {faNum(items.length)} خبر خلاصه</> : 'خلاصه‌ی کامل'} <Icon name="arrow" />
       </a>

@@ -10,7 +10,9 @@
 // lets a video play with its own sound for the video's length. With both on, a video scene is read first (the video
 // silent), then its clip plays once with its sound. Tap the left side for the next story and the right side for the
 // previous one (it's a right-to-left page), swipe sideways for the same, hold to pause, swipe down or Esc to leave.
-import { $, $$, fmtNum, store, toast } from './core';
+import { $, $$, esc, fmtNum, store, toast, track } from './core';
+import { wordAt } from './words';
+import { shownAt } from '../lib/lines';
 import { markSeen, unreadTest } from './game';
 import { STORY_SHOW, nextUnseen, pickStories, type StoryOrder, type StoryShow } from '../lib/time';
 import { Speaker, canSpeakPersian, getReady, type Line } from './speech';
@@ -36,13 +38,14 @@ const player = $('[data-player]');
 if (player) init(player);
 
 function init(player: HTMLElement) {
+  track('today');
   const every = $$('.pl-scene', player);
   // What's unseen now stays in the show for the whole visit (going back to a story just watched works), and so does a
   // story named in the address (a shared link, a reload mid-story) even if it was seen.
   const fresh = unreadTest();
   const named = location.hash.slice(1);
   const opts = { story: 'unseen' as StoryShow, order: 'new' as StoryOrder, ...store.get<{ story?: StoryShow; order?: StoryOrder }>('settings', {}) };
-  const all = every.map((s) => ({ s, id: Number(s.dataset.id), at: Date.parse(s.dataset.date ?? '') }));
+  const all = every.map((s) => ({ s, id: Number(s.dataset.id), at: Date.parse(s.dataset.date ?? ''), imp: Number(s.dataset.imp) || 0 }));
   const items = pickStories(all, opts.story, opts.order, (id) => fresh(id) || String(id) === named);
   const scenes = items.map((i) => i.s);
   const barBox = $('[data-pl-bars]', player)!;
@@ -82,6 +85,9 @@ function init(player: HTMLElement) {
   let raf = 0;
 
   const speaker = new Speaker({
+    state(st) {
+      caption(st === 'playing');
+    },
     end() {
       if (phase !== 'narrate') return;
       sound && hasAudio(scenes[at]) ? playClip() : next();
@@ -96,6 +102,42 @@ function init(player: HTMLElement) {
       refreshButtons();
     },
   });
+  // The narration's caption (PLAN.md P1-D): two lines at the bottom of the scene, Instagram-caption style, the word being
+  // said lit — redrawn only when the word changes, and only while narrating with the «هایلایت کلمه‌ها» setting on.
+  const cap = $('[data-pl-cap]', player);
+  let capLoop = 0;
+  let capKey = '';
+  const capTick = () => {
+    capLoop = requestAnimationFrame(capTick);
+    const c = phase === 'narrate' && document.documentElement.dataset.words !== 'off' ? speaker.clock() : null;
+    const w = c && wordAt(c);
+    const line = speaker.lines[speaker.at];
+    const key = w && line ? `${at}:${speaker.at}:${w.from}` : '';
+    if (!cap || key === capKey) return;
+    capKey = key;
+    if (!w || !line) return void (cap.hidden = true);
+    const t = line.text;
+    const from = shownAt(line, w.from);
+    const to = Math.max(shownAt(line, w.to), from + 1);
+    // The words around it: about 70 characters, starting at a word.
+    let a = Math.max(0, from - 40);
+    if (a) a = t.indexOf(' ', a) + 1;
+    let b = Math.min(t.length, to + 34);
+    if (b < t.length) b = Math.max(to, t.lastIndexOf(' ', b));
+    cap.innerHTML = `${a ? '…' : ''}${esc(t.slice(a, from))}<mark>${esc(t.slice(from, to))}</mark>${esc(t.slice(to, b))}${b < t.length ? '…' : ''}`;
+    cap.hidden = false;
+  };
+  const caption = (on: boolean) => {
+    if (on && !capLoop) capLoop = requestAnimationFrame(capTick);
+    if (!on) {
+      cancelAnimationFrame(capLoop);
+      capLoop = 0;
+      capKey = '';
+      if (cap) cap.hidden = true;
+    }
+  };
+  addEventListener('pagehide', () => caption(false));
+  document.addEventListener('visibilitychange', () => caption(document.visibilityState === 'visible' && phase === 'narrate'));
   /** This scene ends when the narration does. */
   const voiced = () => phase === 'narrate';
   /** Narration is wanted and possible for the current scene. */
@@ -239,8 +281,8 @@ function init(player: HTMLElement) {
   // ---------- sound: narration and the video's own sound, each with its own switch ----------
   /** The story's own text, chosen at build time (src/pages/today/index.astro, sayOf). */
   function linesOf(s: HTMLElement): Line[] {
-    const say = JSON.parse(s.dataset.say ?? '[]') as { i: number; text: string }[];
-    return say.map(({ i, text }) => ({ text, post: Number(s.dataset.id), i }));
+    const say = JSON.parse(s.dataset.say ?? '[]') as { i: number; text: string; say?: string; map?: number[][] }[];
+    return say.map(({ i, text, say, map }) => ({ text, post: Number(s.dataset.id), i, ...(say && { say, map }) }));
   }
   function speak() {
     if (voiced() && !paused) speaker.start(lines);

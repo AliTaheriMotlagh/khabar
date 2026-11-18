@@ -13,6 +13,11 @@ on:
       chunk:
         description: 'posts per commit (each commit redeploys Vercel)'
         default: '100'
+      what:
+        description: 'headlines (pipeline/ai.py), more (translations, extras, voices'' names: pipeline/ai_more.py) or both'
+        default: 'both'
+        type: choice
+        options: [both, headlines, more]
 
 permissions:
   contents: write
@@ -34,16 +39,18 @@ jobs:
           python-version: '3.12'
           cache: pip
           cache-dependency-path: pipeline/requirements.txt
-      - run: pip install -r pipeline/requirements.txt
+      # yt-dlp for the episodes' subtitles (pipeline/videos.py --summarize).
+      - run: pip install -r pipeline/requirements.txt yt-dlp
       - uses: actions/cache@v6
         with:
           path: ~/.cache/khabar-ai
           key: ai-${{ runner.os }}-${{ hashFiles('scripts/ai-server.sh') }}
-      - run: scripts/ai-server.sh
+      - run: SERVE=llm scripts/ai-server.sh
       - name: Work out and commit, chunk by chunk
         env:
           TOTAL: ${{ inputs.posts }}
           CHUNK: ${{ inputs.chunk }}
+          WHAT: ${{ inputs.what }}
         run: |
           git config --global user.name 'github-actions[bot]'
           git config --global user.email '41898283+github-actions[bot]@users.noreply.github.com'
@@ -52,11 +59,17 @@ jobs:
             n=$(( left < CHUNK ? left : CHUNK ))
             # Start from main as it is now: the crawl commits in between.
             git pull -q --rebase origin main
-            [ "$(python -m pipeline.ai --pending --all)" -gt 0 ] || { echo 'every post has an answer'; break; }
-            python -m pipeline.ai --all --limit=$n
+            core=0; more=0
+            [ "$WHAT" != more ] && core=$(python -m pipeline.ai --pending --all)
+            [ "$WHAT" != headlines ] && more=$(python -m pipeline.ai_more --pending --all --total)
+            [ $((core + more)) -gt 0 ] || { echo 'every post has its answers'; break; }
+            [ "$core" -gt 0 ] && python -m pipeline.ai --all --limit=$n
+            [ "$more" -gt 0 ] && AI_MORE_BUDGET=1e9 python -m pipeline.ai_more --all --limit=$n
+            # Mehrzad's older episodes: a Persian summary each, from their subtitles, a few per chunk.
+            [ "$WHAT" != headlines ] && python -m pipeline.videos --summarize --limit=3 || true
             git add data
             git diff --cached --quiet && break
-            git commit -qm "data: AI headlines for $n older posts"
+            git commit -qm "data: AI work for $n older posts"
             pushed=
             for attempt in 1 2 3 4; do
               if git pull --rebase -q origin main && git push -q origin HEAD:main; then pushed=1; break; fi

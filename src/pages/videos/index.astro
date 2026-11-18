@@ -8,8 +8,26 @@ const videos = getVideos();
 const [hero, ...rest] = videos;
 const episodes = rest.filter((v) => !v.live);
 const lives = rest.filter((v) => v.live);
+// Shelves by subject once the model has sorted the episodes (pipeline/videos.py --summarize, PLAN.md P2-3): a sideways
+// row per category with at least 2 episodes, above the full list by number.
+const byCat = new Map<string, typeof videos>();
+for (const v of episodes) if (v.ai?.category) byCat.set(v.ai.category, [...(byCat.get(v.ai.category) ?? []), v]);
+const shelves = [...byCat].filter(([, list]) => list.length >= 2).sort((a, b) => b[1].length - a[1].length);
+const jsonLd = [
+  {
+    '@context': 'https://schema.org',
+    '@type': 'CollectionPage',
+    name: VIDEOS_TITLE,
+    url: abs('videos/'),
+    inLanguage: 'fa-IR',
+    mainEntity: {
+      '@type': 'ItemList',
+      itemListElement: videos.slice(0, 30).map((v, i) => ({ '@type': 'ListItem', position: i + 1, url: abs(`videos/${v.id}/`), name: v.headline })),
+    },
+  },
+];
 ---
-<Base title={VIDEOS_TITLE} description="ویدیوهای فارسی مهرزاد صمدی درباره‌ی هوش مصنوعی، با خلاصه‌ی فارسی هر قسمت." image={hero ? hero.thumb : null}>
+<Base title={VIDEOS_TITLE} description="ویدیوهای فارسی مهرزاد صمدی درباره‌ی هوش مصنوعی، با خلاصه‌ی فارسی هر قسمت." image={hero ? hero.thumb : null} jsonLd={jsonLd}>
   <link slot="head" rel="alternate" type="application/rss+xml" title={VIDEOS_TITLE} href={abs('rss/videos.xml')} />
   <div class="container">
     <header class="page-head with-action">
@@ -29,7 +47,25 @@ const lives = rest.filter((v) => v.live);
       )
     }
     {
-      [['قسمت‌ها', episodes], ['لایوها', lives]].map(
+      shelves.map(([cat, list]) => (
+        <section class="vd-shelf">
+          <h2 class="section-title">{cat}</h2>
+          <ul class="vd-row">
+            {list.map((v) => (
+              <li>
+                <a class="vd-card" href={v.href}>
+                  <span class="vd-thumb"><img {...pic(v.thumb, 'small')} alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer" />{v.duration && <small>{clock(v.duration)}</small>}</span>
+                  <span class="vd-label">{v.label}</span>
+                  <b dir="auto">{v.headline}</b>
+                </a>
+              </li>
+            ))}
+          </ul>
+        </section>
+      ))
+    }
+    {
+      [[shelves.length ? 'همه‌ی قسمت‌ها' : 'قسمت‌ها', episodes], ['لایوها', lives]].map(
         ([title, list]) =>
           (list as typeof videos).length > 0 && (
             <section class="vd-shelf">

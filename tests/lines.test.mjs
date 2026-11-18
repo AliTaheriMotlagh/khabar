@@ -39,3 +39,21 @@ test('lines: a story page and its card.json agree, paragraph by paragraph', { sk
   }
   assert.ok(checked > 10, `checked ${checked} stories`);
 });
+
+test('lines: Latin names said the lexicon\'s way, and a spoken character maps back to the shown word', async () => {
+  const { sayOf, shownAt } = await import('../src/lib/lines.ts');
+  const { sayLine } = await import('../server/_say.js');
+  const lex = { 'GPT-5': 'جی پی تی پنج', OpenAI: 'اوپن اِی آی' };
+  const [l] = storyLines(7, 'تیتر', ['مدل GPT-5 از openai آمد.'], false, lex);
+  assert.equal(sayOf(l), 'مدل جی پی تی پنج از اوپن اِی آی آمد.');
+  assert.equal(l.text, 'مدل GPT-5 از openai آمد.');
+  // «از» after the replaced name is at the same place in both.
+  const said = sayOf(l).indexOf('از');
+  assert.equal(shownAt(l, said), l.text.indexOf('از'));
+  // Inside a replacement: somewhere in the shown name.
+  const inName = shownAt(l, sayOf(l).indexOf('پنج'));
+  assert.ok(inName >= l.text.indexOf('GPT') && inName < l.text.indexOf('GPT') + 5);
+  // Nothing to replace: the line as it was.
+  assert.deepEqual(storyLines(8, 'تیتر', ['فقط فارسی'], false, lex)[0], { text: 'فقط فارسی', post: 8, i: 1 });
+  assert.equal(sayLine('Claude Code', { claude: 'کلود' }).say, 'کلود Code');
+});

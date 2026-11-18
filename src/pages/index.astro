@@ -10,17 +10,23 @@ import NotifyAsk from '../components/NotifyAsk.astro';
 import TodayPlaylist from '../components/TodayPlaylist.astro';
 import NewVideo from '../components/NewVideo.astro';
 import { SITE } from '../site';
-import { getFeed, latestDigest, url } from '../lib/posts';
+import { dayKey, getFeed, latestDigest, url } from '../lib/posts';
+import { listLd } from '../lib/seo';
 
 const posts = getFeed();
 const digest = latestDigest();
 // The morning summary sits on top in full, so it isn't repeated on the timeline.
 const first = posts.slice(0, SITE.pageSize).filter((p) => p.id !== digest?.id);
-const lead = first.find((p) => p.kind === 'story' && p.cover);
+// The hero: the newest day's most important story with a picture (ai.x.importance, PLAN.md P2-8), else the newest.
+const day0 = first[0] ? dayKey(first[0].date) : '';
+const lead =
+  first.filter((p) => p.kind === 'story' && p.cover && dayKey(p.date) === day0).sort((a, b) => (b.importance ?? 0) - (a.importance ?? 0) || b.id - a.id)[0] ??
+  first.find((p) => p.kind === 'story' && p.cover);
 const rest = first.filter((p) => p !== lead);
 const next = posts.length > SITE.pageSize ? url('page/2/') : null;
+const jsonLd = listLd({ name: `${SITE.name} — ${SITE.tagline}`, path: '', posts: posts.slice(0, SITE.pageSize), home: true });
 ---
-<Base image={lead?.cover?.src}>
+<Base image={lead?.cover?.src} jsonLd={jsonLd} next={next}>
   <div class="container">
     <h1 class="sr-only">{SITE.name} — {SITE.tagline}</h1>
     <TodayRail />

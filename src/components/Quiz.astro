@@ -1,0 +1,14 @@
+---
+// A question about the story, from its own text (pipeline/ai_more.py, ai.x.quiz, PLAN.md P2-10): one tap answers,
+// a right answer earns points and counts toward the «کنجکاو» badge (src/scripts/game.ts, all on this device, no server).
+// The answer is in the page (data-answer) — it's a game, not an exam.
+import type { Quiz } from '../lib/posts';
+interface Props { id: number; quiz: Quiz }
+const { id, quiz } = Astro.props;
+---
+<section class="quiz" data-quiz={id} data-answer={quiz.answer} data-pagefind-ignore>
+  <h2 class="section-title">یک پرسش از همین خبر</h2>
+  <p class="quiz-q">{quiz.q}</p>
+  <div class="quiz-opts">{quiz.options.map((o, i) => <button type="button" data-opt={i}>{o}</button>)}</div>
+  <p class="quiz-msg" data-quiz-msg aria-live="polite"></p>
+</section>

@@ -31,6 +31,49 @@ export function tapAudio(): AudioContext | null {
   return ac;
 }
 
+// ---------- usage counts for the owner's page (server/live.js `ev:<day>`) ----------
+// What readers use (listen, share, make a video…): counted here and sent with the next presence beat, so counting never
+// costs a request of its own. No ids, no text: a name from a fixed list and a number.
+export const EVENTS = ['listen', 'playlist', 'share', 'save', 'video-made-v', 'video-made-h', 'video-made-s', 'video-shared', 'quiz-right', 'quiz-wrong', 'push-on', 'install', 'term', 'simple', 'today', 'week-listen', 'brief60'] as const;
+export type EventName = (typeof EVENTS)[number];
+export function track(name: EventName) {
+  const ev = store.get<Record<string, number>>('ev', {});
+  ev[name] = Math.min(50, (ev[name] ?? 0) + 1);
+  store.set('ev', ev);
+}
+/** The counts waiting to be sent, cleared; `putBack` returns them when the send failed. */
+export function takeEvents(): Record<string, number> | undefined {
+  const ev = store.get<Record<string, number>>('ev', {});
+  if (!Object.keys(ev).length) return undefined;
+  store.set('ev', {});
+  return ev;
+}
+export function putBack(ev: Record<string, number> | undefined) {
+  if (!ev) return;
+  const now = store.get<Record<string, number>>('ev', {});
+  for (const [k, n] of Object.entries(ev)) now[k] = Math.min(50, (now[k] ?? 0) + n);
+  store.set('ev', now);
+}
+
+// ---------- a story's card.json, fetched once per page ----------
+// The glossary underlines and the voices' spoken names read it (src/scripts/extras.ts, reader.ts). `cardNow` is what a
+// tap can use without waiting (iOS starts audio only inside the tap).
+type CardJson = { terms?: [string, string][]; lex?: Record<string, string>; [k: string]: unknown };
+const cards = new Map<number, { p: Promise<CardJson | null>; v?: CardJson | null }>();
+export function card(id: number): Promise<CardJson | null> {
+  let c = cards.get(id);
+  if (!c) {
+    const entry: { p: Promise<CardJson | null>; v?: CardJson | null } = { p: Promise.resolve(null) };
+    entry.p = fetch(`${BASE}/p/${id}/card.json`)
+      .then((r) => (r.ok ? (r.json() as Promise<CardJson>) : null))
+      .catch(() => null)
+      .then((v) => (entry.v = v));
+    cards.set(id, (c = entry));
+  }
+  return c.p;
+}
+export const cardNow = (id: number) => cards.get(id)?.v ?? null;
+
 export const fmtNum = (n: number) => n.toLocaleString('fa-IR');
 export const compact = (n: number) => new Intl.NumberFormat('fa-IR', { notation: 'compact', maximumFractionDigits: 1 }).format(n);
 export const esc = (s = '') => s.replace(/[&<>"']/g, (c) => `&#${c.charCodeAt(0)};`);

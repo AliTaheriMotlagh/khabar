@@ -2,6 +2,7 @@ import fs from 'node:fs';
 import path from 'node:path';
 import { SITE } from '../site';
 import { dropCompanions, lastDays, tehranDay } from './time';
+import { findEntity, findTerm, relatedFile, slugify, type EntityKind } from './knowledge';
 
 // ---- data written by the crawler (pipeline/run.py) ----
 export type Media = {
@@ -40,7 +41,33 @@ export type RawPost = {
   article: { title: string; source_title?: string | null; body: string[]; why?: string | null; why_label?: string | null; tags: string[] };
   updated?: string | null;
   /** Written by a small LLM (pipeline/ai.py); absent or failed → the rules' headline and topics. */
-  ai?: { title?: string; short?: string; topics?: string[]; type?: StoryType; failed?: boolean; model?: string } | null;
+  ai?: {
+    title?: string;
+    short?: string;
+    topics?: string[];
+    type?: StoryType;
+    failed?: boolean;
+    model?: string;
+    /** The second call (pipeline/ai_more.py, PLAN.md P2): what the site builds its extras from. */
+    x?: AiExtras | null;
+    /** A Persian story by the model when Gholam never wrote one (P2-1), shown as «ترجمه‌ی خودکار». */
+    story?: { body: string[]; why?: string | null; model?: string } | null;
+  } | null;
+};
+export type Quiz = { q: string; options: string[]; answer: number };
+export type AiExtras = {
+  failed?: boolean;
+  /** 1 (small) … 5 (a big lab release, policy, large money). */
+  importance?: number;
+  entities?: { name_en: string; name_fa: string; kind: EntityKind }[];
+  terms?: { term: string; fa?: string; def: string }[];
+  /** Two plain sentences for a technical story, else null. */
+  simple?: string | null;
+  quiz?: Quiz | null;
+  /** The short video (src/scripts/video.ts): a hook, three points, why it matters. */
+  video?: { hook: string; points: string[]; why: string } | null;
+  /** A caption to share the story or its video with. */
+  share?: string | null;
 };
 export const STORY_TYPES = ['خبر', 'ابزار و محصول', 'پژوهش و مقاله', 'آموزش', 'نظر و تحلیل', 'ویدیوی مهرزاد'] as const;
 export type StoryType = (typeof STORY_TYPES)[number];
@@ -65,6 +92,19 @@ export type Post = RawPost & {
   /** On the timeline, topics, today and feeds: the channel's own Persian words. An English-only link post (no
    *  Gholam translation) still gets its page, for links that point to it, but stays off the lists. */
   listed: boolean;
+  /** The text is the model's translation (ai.story), not Gholam's. */
+  translated: boolean;
+  importance: number | null;
+  entities: { slug: string; name_en: string; name_fa: string; kind: EntityKind }[];
+  terms: { term: string; fa?: string; def: string }[];
+  simple: string | null;
+  quiz: Quiz | null;
+  share: string | null;
+  videoAi: AiExtras['video'] | null;
+  /** Related stories by meaning (data/related.json), newest first; empty without embeddings. */
+  relatedIds: number[];
+  /** Other posts about the same news within ~2 days (data/related.json clusters), this one excluded. */
+  cluster: number[];
 };
 
 const BASE = import.meta.env.BASE_URL.replace(/\/$/, '');
@@ -229,7 +269,10 @@ function shape(raw: RawPost, ids: Set<number>): Post {
   const cover: Media | null = firstStill ? { type: 'image', ...firstStill } : pageImage ? { type: 'image', src: pageImage } : null;
 
   // A story needs Gholam's text in the article too: a reply the pipeline didn't take as a translation leaves it empty.
-  const kind: Post['kind'] = raw.digest ? 'digest' : raw.gholam?.text && raw.article.body.length ? 'story' : 'brief';
+  // Without him, the model's own Persian story (ai.story, P2-1) makes it one, labelled as an automatic translation.
+  const auto = !raw.digest && !(raw.gholam?.text && raw.article.body.length) && raw.ai?.story?.body?.length ? raw.ai.story : null;
+  if (auto) raw = { ...raw, article: { ...raw.article, body: auto.body, why: auto.why ?? null, why_label: null } };
+  const kind: Post['kind'] = raw.digest ? 'digest' : (raw.gholam?.text && raw.article.body.length) || auto ? 'story' : 'brief';
   const items = kind === 'digest' ? digestItems(raw.text, ids) : [];
   const video = kind === 'brief' ? sharedVideo(raw) : null;
   const ai = kind !== 'digest' && raw.ai?.title && !raw.ai.failed ? raw.ai : null;
@@ -252,6 +295,9 @@ function shape(raw: RawPost, ids: Set<number>): Post {
   const lede = body.join(' ').replace(/\s+/g, ' ').trim();
   const at = title.endsWith('…') ? -1 : lede.indexOf(title);
   const rest = at >= 0 && at < 40 ? lede.slice(at + title.length).replace(/^[\s.!؟?،,:;؛]+/, '') : lede;
+  const x = kind !== 'digest' && raw.ai?.x && !raw.ai.x.failed ? raw.ai.x : null;
+  const rel = relatedFile();
+  const cluster = rel.clusters.find((c) => c.includes(raw.id))?.filter((id) => id !== raw.id) ?? [];
 
   return {
     ...raw,
@@ -268,6 +314,19 @@ function shape(raw: RawPost, ids: Set<number>): Post {
     digestItems: items,
     minutes: Math.max(1, Math.round(words / 200)),
     listed: kind !== 'brief' || !!video || persianShare(body.join(' ')) >= 0.5,
+    translated: !!auto,
+    importance: x?.importance ?? null,
+    entities: (x?.entities ?? []).map((e) => {
+      const known = findEntity(e.name_en) ?? findEntity(e.name_fa);
+      return known ? { slug: known.slug, name_en: known.name_en, name_fa: known.name_fa, kind: known.kind } : { ...e, slug: slugify(e.name_en) };
+    }).filter((e, i, all) => e.slug && all.findIndex((o) => o.slug === e.slug) === i),
+    terms: (x?.terms ?? []).map((t) => findTerm(t.term) ?? t).filter((t, i, all) => all.findIndex((o) => o.term === t.term) === i),
+    simple: x?.simple || null,
+    quiz: x?.quiz && x.quiz.options?.length === 3 && x.quiz.answer >= 0 && x.quiz.answer < 3 ? x.quiz : null,
+    share: x?.share || null,
+    videoAi: x?.video?.points?.length ? x.video : null,
+    relatedIds: rel.related[String(raw.id)] ?? [],
+    cluster,
   };
 }
 
@@ -366,6 +425,12 @@ export function getTags(): { tag: string; count: number }[] {
 export const tagHref = (tag: string) => url(`tag/${encodeURIComponent(tag)}/`);
 
 export function related(post: Post, n = 4): Post[] {
+  // By meaning (embeddings, data/related.json) when the pipeline has them; else by shared topics.
+  if (post.relatedIds.length) {
+    const byId = new Map(getStories().map((p) => [p.id, p]));
+    const list = post.relatedIds.map((id) => byId.get(id)).filter((p): p is Post => !!p && p.id !== post.id && !post.cluster.includes(p.id));
+    if (list.length >= Math.min(n, 2)) return list.slice(0, n);
+  }
   const tags = new Set(post.article.tags);
   return getStories()
     .filter((p) => p.id !== post.id)
@@ -377,7 +442,14 @@ export function related(post: Post, n = 4): Post[] {
 }
 
 // ---- formatting (server side; the client re-renders relative times so they never go stale) ----
-const fmt = (opts: Intl.DateTimeFormatOptions) => new Intl.DateTimeFormat('fa-IR-u-ca-persian', { timeZone: SITE.timeZone, ...opts });
+// A formatter is slow to make and the build formats thousands of dates: one per set of options.
+const fmts = new Map<string, Intl.DateTimeFormat>();
+const fmt = (opts: Intl.DateTimeFormatOptions) => {
+  const key = JSON.stringify(opts);
+  let f = fmts.get(key);
+  if (!f) fmts.set(key, (f = new Intl.DateTimeFormat('fa-IR-u-ca-persian', { timeZone: SITE.timeZone, ...opts })));
+  return f;
+};
 export const faDate = (iso: string, opts: Intl.DateTimeFormatOptions = { dateStyle: 'long' }) => fmt(opts).format(new Date(iso));
 export const faTime = (iso: string) => fmt({ hour: '2-digit', minute: '2-digit', hour12: false }).format(new Date(iso));
 export const dayKey = (iso: string) => tehranDay(iso);

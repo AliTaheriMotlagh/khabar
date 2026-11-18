@@ -1,6 +1,6 @@
 // Reading tools on a story page: listen aloud, text size and line spacing, focus mode,
 // time left, "continue where you left off", and sharing a selected quote.
-import { $, $$, fmtNum, store, toast } from './core';
+import { $, $$, cardNow, fmtNum, store, toast, track } from './core';
 import { award } from './game';
 import type { Line } from './speech';
 import { player, type Snap } from './listen';
@@ -98,7 +98,8 @@ function readLines() {
   const text = (el: Element) => el.textContent!.replace(/\s+/g, ' ').trim();
   const h1 = $('h1', article!)!;
   const els = $$('.prose p, .why p, .digest-list li', article!).filter((el) => text(el));
-  lines = storyLines(id, text(h1), els.map(text));
+  // Latin names the lexicon's way, once the story's card.json is here (fetched on idle by extras.ts).
+  lines = storyLines(id, text(h1), els.map(text), false, cardNow(id)?.lex);
   paragraphs = lines.map((l) => (l.i ? els[l.i - 1] : h1));
 }
 
@@ -136,6 +137,7 @@ function toggleListen() {
   if (from) toast(`ادامه از بند ${fmtNum(from + 1)}؛ با نوار پایین صفحه به هر بند می‌روید`);
   const d = article!.dataset;
   p.playLines({ key, title: d.title ?? document.title, href: d.href ?? location.pathname, cover: d.cover || undefined, unit: 'بند' }, lines, from);
+  track('listen');
 }
 
 // ---------- the word being said (PLAN.md P1-D: src/scripts/words.ts, highlight.ts) ----------
@@ -241,6 +243,31 @@ function initBrief() {
   const lines = JSON.parse(btn.dataset.lines ?? '[]') as Line[];
   const label = $('[data-listen-label]', btn)!;
   const p = player();
+  // The word being said, lit inside the item (PLAN.md P1-D): an item's line is «۳ — text» and its link shows the text,
+  // so the voice's characters are shifted by the number in front.
+  let loop = 0;
+  let lastKey = '';
+  const tick = () => {
+    loop = requestAnimationFrame(tick);
+    const w = p.key === 'brief' ? p.word() : null;
+    const el = w ? $('a', items[w.step - 1] ?? document.createElement('i')) : null;
+    const key = w && el ? `${w.step}:${w.from}` : '';
+    if (key === lastKey) return;
+    lastKey = key;
+    if (!w || !el) return clearWord();
+    const shift = w.text.length - (el.textContent ?? '').replace(/\s+/g, ' ').trim().length;
+    if (w.from - shift < 0) return clearWord();
+    showWord(el, { ...w, from: w.from - shift, to: w.to - shift } as Parameters<typeof showWord>[1]);
+  };
+  function briefWords(on: boolean) {
+    if (on && !loop) loop = requestAnimationFrame(tick);
+    if (!on && loop) {
+      cancelAnimationFrame(loop);
+      loop = 0;
+      lastKey = '';
+      clearWord();
+    }
+  }
   const off = p.subscribe((s) => {
     const state = s.key === 'brief' ? s.state : 'idle';
     btn.dataset.state = state;
@@ -248,7 +275,9 @@ function initBrief() {
     label.textContent = state === 'playing' ? 'مکث' : state === 'loading' ? 'آماده‌سازی…' : state === 'paused' ? 'ادامه' : 'گوش دادن';
     // Line 0 is the summary's heading, then one line per item.
     items.forEach((li, k) => li.classList.toggle('is-speaking', state !== 'idle' && k === s.step - 1));
+    briefWords(state === 'playing');
   });
+
   addEventListener('pagehide', off);
   const toggle = () => {
     if (p.key === 'brief') return p.toggle();

@@ -30,6 +30,31 @@ Tick items off here; move anything that becomes a lasting rule into CLAUDE.md.
 - [ ] P1-C (vertical/short video, share caption, «۶۰ ثانیه خبر امروز», episode teasers, made/shared counters)
 - [ ] P2 (all twelve items)
 
+## Progress (2026-11-18, evening): P1-C, P1-D, P2, SEO, admin — code done, not committed yet
+
+- [x] **SEO**: sitemap with `lastmod` + story pictures; `CollectionPage`/`ItemList`/`BreadcrumbList` on lists, topics, videos,
+  /who/; `speakable`, `wordCount`, `mentions` on stories; video `Clip` chapters; descriptions ≤158 chars (social cards keep
+  300); `rel=prev/next`; `/llms.txt`; robots skips JSON files; **IndexNow** (Bing/Yandex…) from `scripts/notify.mjs`, key
+  `public/a2e8b0f2….txt` = `SITE.indexNowKey`; Google's verification file `public/google9dca6b8d6eae63d6.html`; optional
+  `PUBLIC_GOOGLE_SITE_VERIFICATION` / `PUBLIC_BING_SITE_VERIFICATION` env meta tags. `tests/seo.test.mjs`.
+- [x] **Admin**: readers 30 days, top today/week, usage events (`ev:<day>`, sent with the presence beat: no extra requests),
+  Azure TTS characters vs the free 500K with month-end pace, push by mode, comments/reactions, the build's content report
+  (`/ai.json`: posts per day, hidden posts and why, AI coverage per field), automatic comment flags.
+- [x] **P2-1** translation fallback (`ai_more.py` story, «ترجمه‌ی خودکار») · **P2-2** spoken names (`data/lexicon.json`,
+  acronyms/numbers spelled in code, `server/_say.js` shared by the cloud voice and the browser, word highlight mapped back)
+  · **P2-3** video summaries from subtitles + shelves · **P2-4** related + same-news clusters (`pipeline/related.py`,
+  Qwen3-Embedding-0.6B, `data/related.json` seeded locally for 1,825 stories; CLUSTER_SIM 0.86 tuned by eye) · **P2-5**
+  glossary (/glossary/, tap a term) · **P2-6** /who/ pages · **P2-7** podcast host lines · **P2-8** importance (hero,
+  «مهم»، «مهم‌ترین اول» order) · **P2-9** «به زبان ساده» · **P2-10** quiz + «کنجکاو» badge · **P2-11** weekly recap
+  (`weekly.yml`, push kind `weekly`) · **P2-12** comment checks (needs `KV_REST_API_URL`/`KV_REST_API_TOKEN` as GitHub secrets).
+- [x] **P1-C** vertical/landscape/square, short ≤60 s from `ai.x.video`, no long intro, source credit, share caption + copy,
+  made videos kept in Cache Storage `video-v1`, «۶۰ ثانیه خبر امروز», episode teasers, made/shared counters.
+- [x] **P1-D** /today/ captions, brief words lit, median/p90 regression test (made-up clips).
+- [ ] **To do / verify after deploy**: dispatch `ai-backfill` (what=more) a few times for the old posts' extras; check the
+  first runner runs' quality of `ai_more` (9B) by eye on 20 posts; real hand-labeled timing clips (P1-D, needs a person);
+  Playwright video test (P1-C) and UI test in CI; follow button on /who/ pages; build time 15 s → ~60 s (formatter cache
+  added; profile `tehranDay`/`getFeed` next).
+
 ## Status snapshot (2026-11-17)
 
 - The live site matches `data/`: `build.json` says latest 6580, and every crawled post since 6525 is on the site, except the 4 below.

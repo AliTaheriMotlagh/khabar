@@ -1,0 +1,62 @@
+# «هفته‌ای که گذشت»: the week's recap by the model (pipeline/daily.py --weekly, PLAN.md P2-11) every Friday morning
+# (Tehran), committed to data/weekly/ (Vercel redeploys), then announced to readers with notifications in the "all" and
+# "daily" modes once the live site serves it (scripts/notify.mjs --weekly). Free: public repo, standard runner, the
+# model from the same Actions cache as the crawl's.
+name: weekly
+
+on:
+  schedule:
+    - cron: '50 4 * * 5' # Friday 08:20 Tehran
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: weekly
+  cancel-in-progress: false
+
+jobs:
+  recap:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v7
+        with:
+          ref: main
+      - uses: actions/setup-python@v7
+        with:
+          python-version: '3.12'
+          cache: pip
+          cache-dependency-path: pipeline/requirements.txt
+      - run: pip install -r pipeline/requirements.txt
+      - uses: actions/cache@v6
+        with:
+          path: ~/.cache/khabar-ai
+          key: ai-${{ runner.os }}-${{ hashFiles('scripts/ai-server.sh') }}
+      - run: SERVE=llm scripts/ai-server.sh
+      - name: Write and commit the recap
+        id: recap
+        env:
+          SITE: ${{ vars.API_URL || 'https://khabar-ai.vercel.app' }}
+        run: |
+          python -m pipeline.daily --weekly
+          git add data/weekly
+          git diff --cached --quiet && { echo 'no recap this week'; exit 0; }
+          git config --global user.name 'github-actions[bot]'
+          git config --global user.email '41898283+github-actions[bot]@users.noreply.github.com'
+          git commit -qm "data: weekly recap"
+          for attempt in 1 2 3 4; do
+            if git pull --rebase -q origin main && git push -q origin HEAD:main; then break; fi
+            git rebase --abort 2>/dev/null || true
+            sleep $((attempt * 5))
+          done
+          echo "week=$(ls data/weekly | sort | tail -1 | sed 's/\.json$//')" >> "$GITHUB_OUTPUT"
+      - name: Announce it
+        if: steps.recap.outputs.week != ''
+        continue-on-error: true
+        run: node scripts/notify.mjs --weekly
+        env:
+          PUSH_SECRET: ${{ secrets.PUSH_SECRET }}
+          SITE: ${{ vars.API_URL || 'https://khabar-ai.vercel.app' }}
+          WEEK: ${{ steps.recap.outputs.week }}

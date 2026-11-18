@@ -1,0 +1,45 @@
+---
+// Everything about one person, company, model or product (PLAN.md P2-6): its stories on a timeline, newest first.
+import Base from '../../layouts/Base.astro';
+import Timeline from '../../components/Timeline.astro';
+import Sidebar from '../../components/Sidebar.astro';
+import { SITE } from '../../site';
+import { abs, faNum } from '../../lib/posts';
+import { breadcrumbs, listLd } from '../../lib/seo';
+import { KIND_ONE, MIN, whoHref, whoList } from '../../lib/who';
+import type { Entity } from '../../lib/knowledge';
+import type { Post } from '../../lib/posts';
+
+export function getStaticPaths() {
+  return whoList()
+    .filter((x) => x.posts.length >= MIN)
+    .map(({ e, posts }) => ({ params: { slug: e.slug }, props: { e, posts } }));
+}
+const { e, posts } = Astro.props as { e: Entity; posts: Post[] };
+const name = `${e.name_fa} (${e.name_en})`;
+const type = e.kind === 'person' ? 'Person' : e.kind === 'company' ? 'Organization' : e.kind === 'model' ? 'SoftwareApplication' : 'Product';
+const jsonLd = [
+  ...listLd({ name: `اخبار ${e.name_fa}`, path: whoHref(e.slug), posts: posts.slice(0, 30) }).slice(0, 1),
+  { '@context': 'https://schema.org', '@type': type, name: e.name_en, alternateName: e.name_fa, url: abs(whoHref(e.slug)), ...(e.about && { description: e.about }) },
+  breadcrumbs([{ name: 'آدم‌ها و شرکت‌ها', path: 'who/' }, { name: e.name_fa, path: whoHref(e.slug) }]),
+];
+---
+<Base
+  title={`اخبار ${e.name_fa}`}
+  description={`همه‌ی خبرهای ${name} به فارسی: ${posts.slice(0, 3).map((p) => p.short).join('، ')} و ${faNum(Math.max(0, posts.length - 3))} خبر دیگر — ${SITE.name}`}
+  image={posts.find((p) => p.cover)?.cover?.src}
+  jsonLd={jsonLd}
+>
+  <div class="container">
+    <header class="page-head">
+      <div>
+        <h1>{e.name_fa} <small class="muted" dir="ltr" lang="en">{e.name_en}</small></h1>
+        <p>{KIND_ONE[e.kind]} · <span data-num>{faNum(posts.length)}</span> خبر{e.about && ` · ${e.about}`}</p>
+      </div>
+    </header>
+    <div class="layout">
+      <div class="col-main"><Timeline posts={posts.slice(0, 60)} all={posts} title={`خط زمانی ${e.name_fa}`} /></div>
+      <Sidebar />
+    </div>
+  </div>
+</Base>

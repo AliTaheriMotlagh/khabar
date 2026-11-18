@@ -8,6 +8,8 @@ import Icon from '../../components/Icon.astro';
 import SaveButton from '../../components/SaveButton.astro';
 import { SITE } from '../../site';
 import { abs, faNum, fresh, picture, sized, storyItems, url, type Post } from '../../lib/posts';
+import { lexFor } from '../../lib/knowledge';
+import { sayLine } from '../../../server/_say.js';
 
 const items = storyItems();
 const words = (s: string) => s.split(/\s+/).filter(Boolean).length;
@@ -17,13 +19,18 @@ const words = (s: string) => s.split(/\s+/).filter(Boolean).length;
 const SAY_CHARS = 350;
 function sayOf(p: Post) {
   const head = p.article.title.replace(/…$/, '').trim();
-  const out: { i: number; text: string }[] = [];
+  const out: { i: number; text: string; say?: string; map?: number[][] }[] = [];
+  // Latin names the lexicon's way (server/_say.js); the caption shows the text as written.
+  const spoken = (text: string) => {
+    const s = sayLine(text, lexFor([text]));
+    return s.say === text ? {} : { say: s.say, map: s.map };
+  };
   let n = 0;
   p.article.body.forEach((raw, k) => {
     const text = raw.trim();
     if (!text || n >= SAY_CHARS || /https?:\/\//.test(text)) return;
     if (!k && text.length < head.length + 20 && text.startsWith(head.slice(0, 30))) return;
-    out.push({ i: k + 1, text });
+    out.push({ i: k + 1, text, ...spoken(text) });
     n += text.length;
   });
   return out.length ? out : [{ i: 0, text: p.article.title }];
@@ -68,7 +75,7 @@ const jsonLd = [
       <div class="pl-stage" data-pl-stage>
         {
           scenes.map((s, i) => (
-            <article class="pl-scene" data-i={i} data-id={s.p.id} data-gif={s.video?.gif ? '' : undefined} data-date={s.p.date} data-seconds={s.seconds} data-say={JSON.stringify(s.say)} aria-hidden={i ? 'true' : undefined}>
+            <article class="pl-scene" data-i={i} data-id={s.p.id} data-gif={s.video?.gif ? '' : undefined} data-date={s.p.date} data-imp={s.p.importance ?? undefined} data-seconds={s.seconds} data-say={JSON.stringify(s.say)} aria-hidden={i ? 'true' : undefined}>
               <div class="pl-bg">
                 {s.video ? (
                   <video data-src={s.video.src} poster={i < 2 ? s.video.poster || s.image.src || undefined : undefined} data-poster={s.video.poster || s.image.src} data-alt={s.video.fresh} muted playsinline loop preload="none" />
@@ -94,6 +101,7 @@ const jsonLd = [
             </article>
           ))
         }
+        <p class="pl-cap" data-pl-cap hidden aria-hidden="true"></p>
         <div class="pl-end" data-pl-end hidden>
           <div class="pl-end-in">
             <div class="pl-end-head">

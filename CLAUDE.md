@@ -15,6 +15,14 @@ Primary site: https://khabar-ai.vercel.app (canonical). GitHub Pages builds a mi
 - `.github/workflows/site.yml` (checks out `main` as it is now, not the triggering commit): crawl every 20 min → videos → AI headlines (≤5 min, skipped when nothing is pending; never fails the run) → commit `data/` (a failed rebase is aborted before retrying; a conflict is a warning) → build → deploy Pages (build/deploy skipped when the crawl found nothing new); then `notify` (push) and `prune`. Vercel redeploys on each push to main (`ignoreCommand` skips commits touching only docs/tests/pipeline/scripts/.github).
 - Vercel Deployment Storage: Hobby has 10 GB and blocks deploys past it; each deployment is the whole site (~200 MB and growing with the posts), many a day. `scripts/vercel-prune.mjs` (the workflow's `prune` job, secret `VERCEL_TOKEN`, variable `VERCEL_TEAM_ID`) deletes all but the live deployment and the newest 3. Keep the per-page markup lean: it is multiplied by every post.
 
+- `pipeline/ai_more.py` (P2): per post `ai.story` (translation when Gholam is silent), `ai.x` (importance, entities, terms,
+  simple, quiz, 60-s video script, share caption), `ai.speech` (new Latin names → `data/lexicon.json`); grows
+  `data/glossary.json`, `data/entities.json`. `ai.merged` keeps these when a headline is redone. `pipeline/related.py`
+  (embeddings on :8081, vectors in the Actions cache, `data/related.json` only written at ≥95% coverage), `pipeline/daily.py`
+  (`data/daily/`, `--weekly` → `data/weekly/`), `pipeline/comments.py`, `videos.py --summarize`. Site: `src/lib/knowledge.ts`,
+  `src/lib/seo.ts`, `src/lib/who.ts`, `src/scripts/extras.ts`. Spoken form: `server/_say.js` (card.json `lex`).
+- `/api/tts` reads only the site's files: `?id&i`, `?id&k=clip&n`, `?day&k`, `?week&k`, `?vid&i` (`textOf`).
+
 ## Commands
 - `npm run build` (astro + pagefind) · `npm run serve` (built site + API with in-memory store, port 4322)
 - `npm test` (API, dates, and — after a build — the built timeline/stories vs `data/`: `tests/site.test.mjs`) · `.venv/bin/python -m pytest -q pipeline/tests`

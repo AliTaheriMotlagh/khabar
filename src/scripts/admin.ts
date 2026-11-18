@@ -11,7 +11,126 @@ type Data = {
   reports: { post: number; id: string; reports: number; hidden: boolean; comment: Comment | null }[];
   recent: (Comment & { post: number })[];
   crawl?: { token: 'ok' | 'missing' | 'unauthorized' | 'error'; status?: number; expires?: string | null; lastSuccess?: string | null; failing?: number; lastFailure?: string | null };
+  readers?: { day: string; readers: number }[];
+  events?: { days: number; counts: Record<string, number>; today: Record<string, number> };
+  tts?: { free: number; month: string; chars: number; clips: number; last: { month: string; chars: number } };
+  push?: { modes: Record<string, number>; sent7: number };
+  top?: { today: { id: number; views: number }[]; week: { id: number; views: number }[] } | null;
+  engagement?: { comments: number; reactions: { reaction: string; count: number }[]; mostCommented: { id: number; count: number }[]; mostReacted: { id: number; count: number }[] };
+  flags?: { post: number; id: string; why: string; at: string; comment: Comment | null }[];
 };
+type Content = {
+  stories: number; titled: number; failed: number; models: Record<string, number>; types: Record<string, number>;
+  has?: Record<string, number>; posts?: number; listed?: number; newest?: { id: number; date: string } | null;
+  days?: { day: string; listed: number; hidden: number }[]; hidden?: { id: number; date: string; why: string; title: string }[];
+  videos?: number; videoSummaries?: number; glossary?: number; entities?: number;
+};
+
+const EVENT_NAMES: Record<string, string> = {
+  listen: 'گوش دادن به یک خبر', playlist: 'پادکست امروز', 'week-listen': 'گوش دادن به پربازدیدهای هفته', today: 'باز کردن استوری‌ها',
+  share: 'اشتراک‌گذاری', save: 'ذخیره', 'video-made-v': 'ساخت ویدیو (عمودی)', 'video-made-h': 'ساخت ویدیو (افقی)', 'video-made-s': 'ساخت ویدیو (مربع)',
+  'video-shared': 'فرستادن ویدیو', brief60: '«۶۰ ثانیه خبر امروز»', 'quiz-right': 'پاسخ درست به پرسش', 'quiz-wrong': 'پاسخ نادرست به پرسش',
+  'push-on': 'روشن کردن اعلان', install: 'نصب اپ', term: 'باز کردن توضیح یک اصطلاح', simple: 'باز کردن «به زبان ساده»',
+};
+const MODES: Record<string, string> = { all: 'همه‌ی خبرها', topics: 'موضوع‌های دنبال‌شده', daily: 'فقط خلاصه‌ی روزانه' };
+const REACT: Record<string, string> = { like: '👍', love: '❤️', fire: '🔥', wow: '😮', haha: '😂', sad: '😢' };
+const HAS: Record<string, string> = {
+  extras: 'تحلیل کامل (اهمیت، نام‌ها، اصطلاح‌ها…)', importance: 'درجه‌ی اهمیت', entities: 'نام آدم‌ها و شرکت‌ها', terms: 'اصطلاح‌های توضیح‌داده‌شده',
+  simple: '«به زبان ساده»', quiz: 'پرسش', video: 'متن ویدیوی کوتاه', translated: 'ترجمه‌ی خودکار (بدون غلام)', related: 'خبرهای مرتبط با معنا',
+};
+
+/** A story's title for a list, from its small card.json (cached by the browser); the id when it can't be read. */
+const titles = new Map<number, string>();
+async function titleOf(id: number): Promise<string> {
+  if (titles.has(id)) return titles.get(id)!;
+  const t = await fetch(`${BASE}/p/${id}/card.json`).then((r) => (r.ok ? r.json() : null)).then((c) => c?.title as string | undefined, () => undefined);
+  titles.set(id, t ?? `خبر ${fmtNum(id)}`);
+  return titles.get(id)!;
+}
+async function topList(el: HTMLElement | null, rows: { id: number; n: number }[], unit: string) {
+  if (!el) return;
+  if (!rows.length) return void (el.innerHTML = '<li class="muted">هنوز چیزی نیست.</li>');
+  const names = await Promise.all(rows.map((r) => titleOf(r.id)));
+  el.innerHTML = rows.map((r, i) => `<li><a href="${BASE}/p/${r.id}/">${esc(names[i])}</a><b>${fmtNum(r.n)} ${unit}</b></li>`).join('');
+}
+/** Bars, one per day, the last one marked (the same look as /stats/). */
+function dayBars(el: HTMLElement | null, rows: { label: string; n: number; extra?: number }[], unit: string) {
+  if (!el) return;
+  const max = Math.max(1, ...rows.map((r) => r.n + (r.extra ?? 0)));
+  el.innerHTML = rows
+    .map((r, i) => {
+      const label = `${r.label}: ${fmtNum(r.n)} ${unit}${r.extra ? ` (+${fmtNum(r.extra)} پنهان)` : ''}`;
+      return `<div class="st-col${i === rows.length - 1 ? ' today' : ''}" tabindex="0" role="img" aria-label="${esc(label)}">
+        <span class="st-tip" aria-hidden="true">${esc(label)}</span>
+        <span class="st-val" aria-hidden="true">${i === rows.length - 1 || r.n === max ? compact(r.n) : ''}</span>
+        <span class="st-bar" style="height:${Math.max(r.n ? 2 : 0, (r.n / max) * 100)}%" aria-hidden="true"></span>
+        <span class="st-day" aria-hidden="true">${i % Math.ceil(rows.length / 8) === 0 || i === rows.length - 1 ? esc(r.label) : ''}</span>
+      </div>`;
+    })
+    .join('');
+}
+const dayLabel = (d: string) => new Intl.DateTimeFormat('fa-IR-u-ca-persian', { day: 'numeric', month: 'short', timeZone: 'UTC' }).format(new Date(`${d}T12:00:00Z`));
+const rowsHtml = (list: [string, number, string?][]) => {
+  const top = Math.max(1, ...list.map(([, n]) => n));
+  return list.map(([name, n, note]) => `<li><span>${esc(name)}${note ? ` <small class="muted">${esc(note)}</small>` : ''}</span><b>${fmtNum(n)}</b><i style="width:${(n / top) * 100}%"></i></li>`).join('');
+};
+
+function renderMore(d: Data) {
+  dayBars($('[data-adm-days]'), (d.readers ?? []).map((r) => ({ label: dayLabel(r.day), n: r.readers })), 'خواننده');
+  void topList($('[data-adm-top="today"]'), (d.top?.today ?? []).map((r) => ({ id: r.id, n: r.views })), 'بازدید');
+  void topList($('[data-adm-top="week"]'), (d.top?.week ?? []).map((r) => ({ id: r.id, n: r.views })), 'بازدید');
+
+  const ev = Object.entries(d.events?.counts ?? {}).sort((a, b) => b[1] - a[1]);
+  $('[data-adm-events-empty]')!.hidden = ev.length > 0;
+  $('[data-adm-events]')!.innerHTML = rowsHtml(ev.map(([k, n]) => [EVENT_NAMES[k] ?? k, n, d.events?.today[k] ? `امروز ${fmtNum(d.events.today[k])}` : undefined]));
+
+  const t = d.tts;
+  const box = $('[data-adm-tts]')!;
+  if (t) {
+    // The month so far, and where it ends at this pace (Azure F0 stops at the quota; S0 would bill).
+    const now = new Date();
+    const dayOf = now.getUTCDate();
+    const days = new Date(Date.UTC(now.getUTCFullYear(), now.getUTCMonth() + 1, 0)).getUTCDate();
+    const pace = Math.round((t.chars / Math.max(1, dayOf)) * days);
+    const share = Math.min(100, (t.chars / t.free) * 100);
+    box.classList.toggle('bad', pace > t.free * 0.9);
+    box.innerHTML = `<div class="adm-meter-head"><span>صدای ابری (Azure): ${fmtNum(t.chars)} از ${compact(t.free)} نویسه‌ی رایگان این ماه · ${fmtNum(t.clips)} تکه</span><b>${fmtNum(Math.round(share))}٪</b></div>
+      <span class="adm-bar"><i style="width:${share}%"></i><i class="pace" style="width:${Math.min(100, (pace / t.free) * 100)}%"></i></span>
+      <small class="muted">با این روند تا آخر ماه حدود ${compact(pace)} نویسه${pace > t.free ? ' — بیش از سهمیه‌ی رایگان!' : ''} · ماه پیش ${compact(t.last.chars)}</small>`;
+  } else box.innerHTML = '';
+  const modes = Object.entries(d.push?.modes ?? {});
+  $('[data-adm-push]')!.innerHTML = d.push
+    ? `اعلان‌ها: ${modes.length ? modes.map(([m, n]) => `${esc(MODES[m] ?? m)} <b>${fmtNum(n)}</b>`).join('، ') : 'هنوز مشترکی نیست'} · ${fmtNum(d.push.sent7)} خبر در ۷ روز اعلان شد`
+    : '';
+
+  const e = d.engagement;
+  if (e) {
+    $('[data-adm-engage]')!.innerHTML = `کل نظرها <b>${fmtNum(e.comments)}</b> · واکنش‌ها: ${e.reactions.map((r) => `${REACT[r.reaction] ?? r.reaction} ${fmtNum(r.count)}`).join('  ')}`;
+    void topList($('[data-adm-most="comments"]'), e.mostCommented.map((r) => ({ id: r.id, n: r.count })), 'نظر');
+    void topList($('[data-adm-most="reactions"]'), e.mostReacted.map((r) => ({ id: r.id, n: r.count })), 'واکنش');
+  }
+
+  const flags = d.flags ?? [];
+  $('[data-adm-flags-box]')!.hidden = !flags.length;
+  $('[data-adm-flags]')!.innerHTML = flags
+    .map((f) => (f.comment ? commentRow(f.comment, f.post, `<span class="adm-flag">${esc(f.why)}</span>`, [btn('hide', 'پنهان کردن'), btn('unflag', 'مشکلی ندارد'), btn('delete', 'حذف', true)]) : ''))
+    .join('');
+}
+
+function renderContent(a: Content) {
+  dayBars($('[data-adm-posts]'), (a.days ?? []).map((r) => ({ label: dayLabel(r.day), n: r.listed, extra: r.hidden })), 'خبر');
+  const rows: [string, number, string?][] = [
+    ['خبرها با تیتر هوش مصنوعی', a.titled, `از ${fmtNum(a.stories)}${a.failed ? ` · ${fmtNum(a.failed)} ناموفق` : ''}`],
+    ...Object.entries(a.has ?? {}).map(([k, n]): [string, number] => [HAS[k] ?? k, n]),
+    ['اصطلاح‌های واژه‌نامه', a.glossary ?? 0],
+    ['آدم‌ها و شرکت‌ها', a.entities ?? 0],
+    ['ویدیوهای مهرزاد', a.videos ?? 0, a.videoSummaries ? `${fmtNum(a.videoSummaries)} با خلاصه‌ی کامل` : undefined],
+  ];
+  $('[data-adm-content]')!.innerHTML = rowsHtml(rows);
+  const hidden = a.hidden ?? [];
+  $('[data-adm-hidden-box]')!.hidden = !hidden.length;
+  $('[data-adm-hidden]')!.innerHTML = hidden.map((h) => `<li><a href="${BASE}/p/${h.id}/">${fmtNum(h.id)}</a> · ${esc(h.why)} · <span dir="auto">${esc(h.title)}</span></li>`).join('');
+}
 
 const DAY = 864e5;
 /** The crawl's health in one line, red when the owner has something to do. */
@@ -118,6 +237,7 @@ function render(d: Data) {
     )
     .join('');
 
+  renderMore(d);
   $('[data-adm-recent-empty]')!.hidden = d.recent.length > 0;
   $('[data-adm-recent]')!.innerHTML = d.recent.map((c) => commentRow(c, c.post, c.re ? '<span class="adm-flag soft">پاسخ</span>' : '', [btn('hide', 'پنهان کردن'), btn('delete', 'حذف', true)])).join('');
 }
@@ -127,10 +247,12 @@ async function aiLine() {
   const box = $('[data-adm-ai]');
   if (!box) return;
   try {
-    const a = (await (await fetch(`${BASE}/ai.json`, { cache: 'no-store' })).json()) as { stories: number; titled: number; failed: number; models: Record<string, number> };
+    const a = (await (await fetch(`${BASE}/ai.json`, { cache: 'no-store' })).json()) as Content;
     const models = Object.entries(a.models).map(([m, n]) => `${esc(m)}: ${fmtNum(n)}`).join('، ');
-    box.innerHTML = `تیتر هوش مصنوعی: <b>${fmtNum(a.titled)}</b> از ${fmtNum(a.stories)} خبر${a.failed ? ` · ${fmtNum(a.failed)} ناموفق (تیتر قاعده‌ای)` : ''}${models ? ` · ${models}` : ''}`;
+    const newest = a.newest ? ` · تازه‌ترین خبر این نسخه: <a href="${BASE}/p/${a.newest.id}/">${fmtNum(a.newest.id)}</a> (${esc(relTime(a.newest.date))})` : '';
+    box.innerHTML = `تیتر هوش مصنوعی: <b>${fmtNum(a.titled)}</b> از ${fmtNum(a.stories)} خبر${a.failed ? ` · ${fmtNum(a.failed)} ناموفق (تیتر قاعده‌ای)` : ''}${models ? ` · ${models}` : ''}${newest}`;
     box.hidden = false;
+    renderContent(a);
   } catch {
     box.hidden = true;
   }
@@ -183,7 +305,7 @@ export async function initAdmin() {
     b.disabled = true;
     try {
       await api({ method: 'POST', body: { action, post: Number(li.dataset.post), id: li.dataset.cid } });
-      toast(action === 'delete' ? 'حذف شد' : action === 'hide' ? 'پنهان شد' : action === 'unhide' ? 'دوباره نمایش داده می‌شود' : 'از فهرست گزارش‌ها برداشته شد');
+      toast(action === 'delete' ? 'حذف شد' : action === 'hide' ? 'پنهان شد' : action === 'unhide' ? 'دوباره نمایش داده می‌شود' : action === 'unflag' ? 'از فهرست بررسی خودکار برداشته شد' : 'از فهرست گزارش‌ها برداشته شد');
       await load();
     } catch (err) {
       b.disabled = false;

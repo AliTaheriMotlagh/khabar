@@ -14,7 +14,8 @@
 import { SITE } from '../site';
 import { $, $$, BASE, esc, fmtNum, store, toast } from './core';
 import { markSeen } from './game';
-import { cardLines, type Card, type Line } from '../lib/lines';
+import { cardLines, shownAt, type Card, type Line } from '../lib/lines';
+import { toSaid } from '../../server/_say.js';
 import { tehranDay } from '../lib/time';
 import { Speaker, getReady, type SpeechState } from './speech';
 import { voiceStates } from './voice';
@@ -23,7 +24,15 @@ import { timeOf, wordAt } from './words';
 /** What plays: `key` names it for the pages ('story:<id>', 'brief', 'playlist', 'week'). */
 export type Track = { key: string; title: string; href: string; cover?: string; artist?: string; unit?: string };
 /** A story of a queue: its headline is read, then its text (from its card.json). */
-export type QItem = { id: number; t: string; h: string; c?: string };
+export type QItem = {
+  id: number;
+  t: string;
+  h: string;
+  c?: string;
+  /** Said before its headline / after its text: the morning podcast's host lines (src/scripts/playlist.ts). */
+  pre?: Line[];
+  post?: Line[];
+};
 export type Snap = {
   key: string | null;
   state: SpeechState;
@@ -165,12 +174,15 @@ class Player {
     const w = c && wordAt(c);
     const line = this.speaker.lines[this.speaker.at];
     if (!w || !line) return null;
-    return { step: this.queue ? this.at : this.speaker.at, from: w.from, to: w.to, text: line.text };
+    // The clock counts in what the voice says; the page shows the original (src/lib/lines.ts).
+    return { step: this.queue ? this.at : this.speaker.at, from: shownAt(line, w.from), to: Math.max(shownAt(line, w.to), shownAt(line, w.from) + 1), text: line.text };
   }
   /** A tapped word of the paragraph playing: from there (the cloud's or a service's clip by time, the on-device voice by
    *  sentence). False when it can't, and the caller reads the paragraph from its start instead. */
-  seekWord(step: number, char: number): boolean {
+  seekWord(step: number, shown: number): boolean {
     if (this.queue || step !== this.speaker.at || this.held) return false;
+    const line = this.speaker.lines[this.speaker.at];
+    const char = line?.map?.length ? toSaid(line.map, shown) : shown;
     const c = this.speaker.clock();
     if (c?.kind !== 'clip') return false;
     if (char >= c.offset && char <= c.offset + c.text.length) {
@@ -217,7 +229,7 @@ class Player {
     this.at = Math.max(0, Math.min(k, q.length - 1));
     this.phase = 'title';
     const item = q[this.at];
-    this.speaker.start([{ text: item.t, post: item.id, i: 0 }]);
+    this.speaker.start([...(item.pre ?? []), { text: item.t, post: item.id, i: 0 }]);
     this.body(item); // the text, while the headline plays
     if (q[this.at + 1]) this.body(q[this.at + 1]);
     markSeen(item.id);
@@ -252,7 +264,7 @@ class Player {
       const mine = ++this.seq;
       this.between = true;
       this.emit();
-      const lines = await this.body(item);
+      const lines = [...(await this.body(item)), ...(item.post ?? [])];
       if (mine !== this.seq) return; // moved on, or stopped, meanwhile
       if (this.held) {
         this.held = lines; // paused meanwhile: resume() reads it

@@ -4,7 +4,7 @@
 // browser's subscription is the truth; `push` in storage remembers the kind. Hidden where the browser can't do it, or
 // while the server has no keys (501). iPhones and iPads get notifications only from the site added to the home screen.
 import { SITE } from '../site';
-import { $, $$, BASE, guest, store, toast } from './core';
+import { $, $$, BASE, guest, store, toast, track } from './core';
 import { getFollows } from './follow';
 
 type Mode = 'all' | 'topics' | 'daily';
@@ -80,6 +80,7 @@ async function enable(mode: Mode) {
     await navigator.serviceWorker.ready;
     const sub = (await reg.pushManager.getSubscription()) ?? (await reg.pushManager.subscribe({ userVisibleOnly: true, applicationServerKey: key! }));
     await sync(sub, mode);
+    track('push-on');
     toast(mode === 'daily' ? 'هر روز خلاصه‌ی خبرها را با اعلان می‌گیرید' : mode === 'topics' ? 'خبرهای موضوع‌هایی که دنبال می‌کنید را با اعلان می‌گیرید' : 'هر خبر تازه را با اعلان می‌گیرید', 'reward');
   } catch {
     toast('اعلان روشن نشد؛ کمی بعد دوباره امتحان کنید');

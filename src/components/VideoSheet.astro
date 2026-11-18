@@ -17,6 +17,21 @@ import Icon from './Icon.astro';
     <div data-vs-done hidden>
       <video class="vs-video" data-vs-video controls playsinline></video>
       <p class="vs-note" data-vs-meta></p>
+      <div class="vs-choices" role="group" aria-label="شکل و طول ویدیو">
+        <div class="seg sm">
+          <button type="button" data-vs-shape="v" aria-pressed="false">عمودی</button>
+          <button type="button" data-vs-shape="h" aria-pressed="false">افقی</button>
+          <button type="button" data-vs-shape="s" aria-pressed="false">مربع</button>
+        </div>
+        <div class="seg sm">
+          <button type="button" data-vs-mode="short" aria-pressed="false">کوتاه</button>
+          <button type="button" data-vs-mode="full" aria-pressed="false">نسخه‌ی کامل</button>
+        </div>
+      </div>
+      <div class="vs-caption">
+        <p dir="auto" data-vs-caption></p>
+        <button class="btn sm" type="button" data-vs-copy><Icon name="link" /> کپی متن</button>
+      </div>
       <p class="vs-note" data-vs-silent hidden>این ویدیو بدون روایت است: صدای خود دستگاه را نمی‌شود در فایل گذاشت. با یک صدای فارسی دانلودشده، ویدیو روایت هم دارد. <button class="link-btn" type="button" data-vs-voice>انتخاب صدا</button></p>
     </div>
     <div class="sheet-foot">

@@ -9,7 +9,7 @@ const seg = (key: string, choices: Choice[]) => ({ key, choices });
 const sizes = [{ v: 's', l: 'کوچک' }, { v: 'm', l: 'معمولی' }, { v: 'l', l: 'بزرگ' }, { v: 'xl', l: 'خیلی بزرگ' }];
 const spacing = seg('spacing', [{ v: 's', l: 'فشرده' }, { v: 'm', l: 'معمولی' }, { v: 'l', l: 'باز' }]);
 const story = seg('story', [{ v: 'unseen', l: 'فقط ندیده‌ها' }, { v: 'today', l: 'امروز' }, { v: 'all', l: 'هر سه روز' }]);
-const order = seg('order', [{ v: 'new', l: 'تازه‌ترین اول' }, { v: 'old', l: 'قدیمی‌ترین اول' }]);
+const order = seg('order', [{ v: 'new', l: 'تازه‌ترین اول' }, { v: 'old', l: 'قدیمی‌ترین اول' }, { v: 'important', l: 'مهم‌ترین اول' }]);
 const BASE = import.meta.env.BASE_URL.replace(/\/$/, '');
 ---
 <dialog class="sheet settings-sheet" id="settings" aria-labelledby="settings-title">
