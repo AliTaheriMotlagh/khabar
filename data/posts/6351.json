@@ -58,5 +58,17 @@
   "why_label": "حرف آخر",
   "tags": []
  },
- "updated": "2026-11-09T19:05:29+00:00"
+ "updated": "2026-11-09T19:05:29+00:00",
+ "ai": {
+  "title": "Thinking Machines مدل Inkling 2 Small را با نمره ۳۱ در بنچمارک هوش معرفی کرد",
+  "short": "Inkling 2 Small با نمره ۳۱",
+  "topics": [
+   "آنتروپیک",
+   "کدنویسی"
+  ],
+  "type": "ابزار و محصول",
+  "model": "qwen3.5-9b-q4_k_m",
+  "v": 1,
+  "src": "72938ca92ba7"
+ }
 }

@@ -55,5 +55,17 @@
    "صدا و موسیقی"
   ]
  },
- "updated": "2026-11-09T17:00:56+00:00"
+ "updated": "2026-11-09T17:00:56+00:00",
+ "ai": {
+  "title": "ElevenLabs ابزار ElevenAgents Campaign Manager را برای مدیریت کمپین‌های تلفنی و واتس‌اپ معرفی کرد",
+  "short": "ElevenAgents کمپین‌ها",
+  "topics": [
+   "استارتاپ",
+   "کسب‌وکار"
+  ],
+  "type": "ابزار و محصول",
+  "model": "qwen3.5-9b-q4_k_m",
+  "v": 1,
+  "src": "fc5fafdc5147"
+ }
 }
