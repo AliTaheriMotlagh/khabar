@@ -1,0 +1,83 @@
+{
+ "id": 6609,
+ "url": "https://t.me/dlmehr/6609",
+ "date": "2026-11-18T06:18:12+00:00",
+ "text": "https://fxtwitter.com/bensenescu/status/2122862958149812381?a=2SWtSGpBGQwStaIMTGg&s=35",
+ "forwarded_from": null,
+ "digest": false,
+ "hash": "4f56df8067a8",
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/bensenescu/status/2122862958149812381?a=2SWtSGpBGQwStaIMTGg&s=35",
+  "site": "🧵 Thread • FxTwitter",
+  "title": "Ben (@bensenescu)",
+  "description": "Introducing https://oss.new - it makes an open source version of any app, for free.\nEnter any SaaS website, then agents plan, build and test the core features.\nYou then deploy it into your Cloudflare account or add it to Github if you want to customize.",
+  "image": null
+ },
+ "gholam": {
+  "text": "رفیق، یه توسعه‌دهنده به اسم بن سنسکو اومده سرویس رایگانی به اسم «او‌اس‌اس دات نیو» رو معرفی کرده که به گفته خودش می‌تونه نسخه متن‌بازِ هر سرویس تحت وبی رو برات بسازه. طبق توضیحش، آدرس اون سایت رو می‌دی و ایجنت‌های هوش مصنوعی ویژگی‌های اصلیش رو برنامه‌ریزی، کدنویسی و تست می‌کنن؛ یه جورایی مثل اینه که عکس یه غذای رستورانی رو نشون بدی تا نسخه خونگیش رو تو آشپزخونه خودت آماده کنن! 🛠️\n\nبه گفته سازنده‌اش، حتی می‌تونی از روی گوشی استارتش رو بزنی تا وقتی کارش تموم شد برات ایمیل بیاد و بعدش روی اکانت کلادفلر خودت بالا بیاریش یا برای شخصی‌سازی ببری روی گیت‌هاب. این ابزار کنار پروژه «اِوری‌اپ» (EveryApp) کار می‌کنه که به عنوان یه اپ‌استور متن‌باز و رایگان روی کلادفلر خود کاربر معرفی شده؛ الان هم مخزن گیت‌هابش با لایسنس MIT به ۹۲۷ ستاره رسیده و تو سایتش صفی از برنامه‌های در حال ساخت و انتظار دیده می‌شه.",
+  "date": "2026-11-18T06:18:50+00:00"
+ },
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/bensenescu/status/2122862958149812381",
+   "domain": "x.com",
+   "author": {
+    "name": "Ben",
+    "handle": "bensenescu",
+    "avatar": "https://pbs.twimg.com/profile_images/2024583854963429376/wg7pF8Qe_200x200.jpg"
+   },
+   "text": "Introducing https://oss.new - it makes an open source version of any app, for free.\n\nEnter any SaaS website, then agents plan, build and test the core features.\n\nYou then deploy it into your Cloudflare account or add it to Github if you want to customize.",
+   "date": 1794964944,
+   "media": [
+    {
+     "type": "video",
+     "src": "https://video.twimg.com/amplify_video/2122862853531250688/vid/avc1/1280x720/guCFmFHSCVxStF38.mp4?tag=29",
+     "poster": "https://pbs.twimg.com/amplify_video_thumb/2122862853531250688/img/UqnX4vUJyg-a1o86.jpg",
+     "ratio": 0.5625,
+     "duration": 12.583,
+     "gif": false
+    }
+   ],
+   "links": [
+    "https://oss.new"
+   ]
+  },
+  {
+   "kind": "link",
+   "url": "https://oss.new",
+   "domain": "oss.new",
+   "title": "oss.new - Make every app open source",
+   "description": "Make every app open source. Paste any software product’s URL and get its core features as an app on your own EveryApp Gateway.",
+   "image": "https://oss.new/og.png",
+   "site": "oss.new"
+  }
+ ],
+ "article": {
+  "title": "یه توسعه‌دهنده به اسم بن سنسکو اومده سرویس رایگانی به اسم «او‌اس‌اس دات نیو» رو معرفی کرده که به گفته خودش می‌تونه نسخه متن‌بازِ هر سرویس تحت وبی رو برات بسازه",
+  "source_title": "Introducing - it makes an open source version of any app, for free.",
+  "body": [
+   "یه توسعه‌دهنده به اسم بن سنسکو اومده سرویس رایگانی به اسم «او‌اس‌اس دات نیو» رو معرفی کرده که به گفته خودش می‌تونه نسخه متن‌بازِ هر سرویس تحت وبی رو برات بسازه. طبق توضیحش، آدرس اون سایت رو می‌دی و ایجنت‌های هوش مصنوعی ویژگی‌های اصلیش رو برنامه‌ریزی، کدنویسی و تست می‌کنن؛ یه جورایی مثل اینه که عکس یه غذای رستورانی رو نشون بدی تا نسخه خونگیش رو تو آشپزخونه خودت آماده کنن! 🛠️",
+   "به گفته سازنده‌اش، حتی می‌تونی از روی گوشی استارتش رو بزنی تا وقتی کارش تموم شد برات ایمیل بیاد و بعدش روی اکانت کلادفلر خودت بالا بیاریش یا برای شخصی‌سازی ببری روی گیت‌هاب. این ابزار کنار پروژه «اِوری‌اپ» (EveryApp) کار می‌کنه که به عنوان یه اپ‌استور متن‌باز و رایگان روی کلادفلر خود کاربر معرفی شده؛ الان هم مخزن گیت‌هابش با لایسنس MIT به ۹۲۷ ستاره رسیده و تو سایتش صفی از برنامه‌های در حال ساخت و انتظار دیده می‌شه."
+  ],
+  "why": null,
+  "tags": [
+   "متن‌باز",
+   "کدنویسی"
+  ]
+ },
+ "updated": "2026-11-18T06:22:27+00:00",
+ "ai": {
+  "title": "OSS.new نسخه متن‌باز هر اپ تحت وب را رایگان می‌سازد",
+  "short": "OSS.new: نسخه متن‌باز هر اپ",
+  "topics": [
+   "متن‌باز",
+   "استارتاپ"
+  ],
+  "type": "ابزار و محصول",
+  "model": "qwen3.5-9b-q4_k_m",
+  "v": 1,
+  "src": "a8ccab4a01ad"
+ }
+}
