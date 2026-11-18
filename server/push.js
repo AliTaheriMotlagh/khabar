@@ -96,7 +96,7 @@ export function message(posts, origin) {
         : first.kind === 'video'
           ? `ویدیوی تازه‌ی مهرزاد · ${SITE_NAME}`
           : `${first.tags[0] ? `${first.tags[0]} · ` : ''}${SITE_NAME}`
-      : posts.slice(0, 3).map((p) => `• ${p.title}`).join('\n'),
+      : posts.slice(0, 4).map((p) => `• ${p.short || p.title}`).join('\n'),
     url: one ? `${origin}/p/${first.id}/` : `${origin}/`,
     tag: 'news',
   };
@@ -107,7 +107,7 @@ async function send(request, body) {
   if (!secret || request.headers.get('authorization') !== `Bearer ${secret}`) return fail(request, 401, 'unauthorized');
   const posts = (Array.isArray(body.posts) ? body.posts : [])
     .slice(0, 50)
-    .map((p) => ({ id: postId(p?.id), title: cleanText(p?.title, 160).replace(/\n/g, ' '), tags: (Array.isArray(p?.tags) ? p.tags : []).map((t) => cleanText(t, 40)).slice(0, 5), kind: ['digest', 'video'].includes(p?.kind) ? p.kind : 'story' }))
+    .map((p) => ({ id: postId(p?.id), title: cleanText(p?.title, 160).replace(/\n/g, ' '), short: cleanText(p?.short, 60).replace(/\n/g, ' '), tags: (Array.isArray(p?.tags) ? p.tags : []).map((t) => cleanText(t, 40)).slice(0, 5), kind: ['digest', 'video'].includes(p?.kind) ? p.kind : 'story' }))
     .filter((p) => p.id && p.title);
   if (!posts.length) return json(request, { sent: 0, posts: 0 });
 

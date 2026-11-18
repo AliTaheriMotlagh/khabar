@@ -122,12 +122,27 @@ function render(d: Data) {
   $('[data-adm-recent]')!.innerHTML = d.recent.map((c) => commentRow(c, c.post, c.re ? '<span class="adm-flag soft">پاسخ</span>' : '', [btn('hide', 'پنهان کردن'), btn('delete', 'حذف', true)])).join('');
 }
 
+/** The AI headlines of this build (/ai.json, pipeline/ai.py): how many stories have one, the model, what failed. */
+async function aiLine() {
+  const box = $('[data-adm-ai]');
+  if (!box) return;
+  try {
+    const a = (await (await fetch(`${BASE}/ai.json`, { cache: 'no-store' })).json()) as { stories: number; titled: number; failed: number; models: Record<string, number> };
+    const models = Object.entries(a.models).map(([m, n]) => `${esc(m)}: ${fmtNum(n)}`).join('، ');
+    box.innerHTML = `تیتر هوش مصنوعی: <b>${fmtNum(a.titled)}</b> از ${fmtNum(a.stories)} خبر${a.failed ? ` · ${fmtNum(a.failed)} ناموفق (تیتر قاعده‌ای)` : ''}${models ? ` · ${models}` : ''}`;
+    box.hidden = false;
+  } catch {
+    box.hidden = true;
+  }
+}
+
 async function load() {
   const data = await api<Data>();
   $('[data-adm-login]')!.hidden = true;
   $('[data-adm]')!.hidden = false;
   $('[data-adm-tools]')!.hidden = false;
   render(data);
+  void aiLine();
 }
 
 function signedOut(msg = '') {

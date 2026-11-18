@@ -1,10 +1,11 @@
 ---
 // The news as a timeline: days on a vertical rail, each post pinned at its time. A day's pill counts all of its news in
 // `all` (the whole list this is a page of), not only what this page shows; digests are summaries, not news. `filter`
-// (the home page): «همه / موضوع‌های من», shown once the reader follows a topic (src/scripts/follow.ts).
+// (the home page): «همه / موضوع‌های من», shown once the reader follows a topic, and a row of the stories' types
+// («ابزار و محصول», «پژوهش و مقاله»…, from pipeline/ai.py) — src/scripts/follow.ts.
 import Icon from './Icon.astro';
 import StoryCard from './StoryCard.astro';
-import { dayKey, faDate, faNum, type Post } from '../lib/posts';
+import { dayKey, faDate, faNum, STORY_TYPES, type Post } from '../lib/posts';
 import { url } from '../lib/posts';
 interface Props { posts: Post[]; all?: Post[]; nextHref?: string | null; prevHref?: string | null; title?: string; eagerFirst?: boolean; topic?: string; filter?: boolean }
 const { posts, all = posts, nextHref, prevHref, title = 'خط زمانی خبرها', eagerFirst = false, topic, filter = false } = Astro.props;
@@ -28,6 +29,16 @@ for (const p of posts) {
           <label><input type="radio" name="tl-filter" value="mine" /><span>موضوع‌های من</span></label>
         </div>
         <a class="tl-filter-edit" href={url('tags/')}>ویرایش موضوع‌ها</a>
+      </div>
+    )
+  }
+  {
+    filter && (
+      <div class="chips tl-types" data-tl-types role="radiogroup" aria-label="نوع خبر" hidden>
+        <label class="chip"><input type="radio" name="tl-type" value="" checked /><span>همه</span></label>
+        {STORY_TYPES.filter((t) => t !== 'خبر').map((t) => (
+          <label class="chip" data-type-chip={t}><input type="radio" name="tl-type" value={t} /><span>{t}</span></label>
+        ))}
       </div>
     )
   }

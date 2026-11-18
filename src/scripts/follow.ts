@@ -41,26 +41,42 @@ export function applyFollowFilter() {
     const mine = (item.dataset.tags ?? '').split(',').some((t) => follows.has(t));
     item.classList.toggle('is-mine', mine);
   }
-  if (!box) return;
-  box.hidden = !follows.size;
-  const only = follows.size > 0 && store.get<string>(FILTER, 'all') === 'mine';
-  $<HTMLInputElement>(`input[value="${only ? 'mine' : 'all'}"]`, box)!.checked = true;
-  tl.classList.toggle('only-mine', only);
+  const only = !!box && follows.size > 0 && store.get<string>(FILTER, 'all') === 'mine';
+  if (box) {
+    box.hidden = !follows.size;
+    $<HTMLInputElement>(`input[value="${only ? 'mine' : 'all'}"]`, box)!.checked = true;
+  }
+  // The stories' types: a chip for each type this page has (the AI's, pipeline/ai.py), shown once there are two.
+  const types = $('[data-tl-types]');
+  const items = $$('.tl-item', tl);
+  let type = '';
+  if (types) {
+    const present = new Set(items.map((i) => i.dataset.type).filter(Boolean));
+    $$('[data-type-chip]', types).forEach((c) => (c.hidden = !present.has(c.dataset.typeChip)));
+    types.hidden = present.size < 2;
+    type = present.has(store.get<string>(TYPE, '')) ? store.get<string>(TYPE, '') : '';
+    $<HTMLInputElement>(`input[value="${type}"]`, types)!.checked = true;
+  }
+  const shows = (el: HTMLElement) => (!only || el.classList.contains('is-mine')) && (!type || el.dataset.type === type);
+  for (const item of items) item.classList.toggle('is-off', !shows(item));
+  const filtered = only || !!type;
+  tl.classList.toggle('filtered', filtered);
   // A day's pill stays only if one of its stories still shows.
   let day: HTMLElement | null = null;
   let shown = 0;
-  const close = () => day?.classList.toggle('is-empty', only && !shown);
+  const close = () => day?.classList.toggle('is-empty', filtered && !shown);
   for (const el of $$('[data-tl] > li', document)) {
     if (el.matches('[data-day]')) {
       close();
       day = el;
       shown = 0;
-    } else if (!only || el.classList.contains('is-mine')) shown++;
+    } else if (el.matches('.tl-item') && shows(el)) shown++;
   }
   close();
   const empty = $('[data-tl-mine-empty]');
-  if (empty) empty.hidden = !only || $$('.tl-item.is-mine', tl).length > 0;
+  if (empty) empty.hidden = !filtered || items.some(shows);
 }
+const TYPE = 'tl-type';
 
 export function initFollow() {
   paintButtons();
@@ -73,6 +89,10 @@ export function initFollow() {
   });
   $('[data-tl-filter]')?.addEventListener('change', (e) => {
     store.set(FILTER, (e.target as HTMLInputElement).value);
+    applyFollowFilter();
+  });
+  $('[data-tl-types]')?.addEventListener('change', (e) => {
+    store.set(TYPE, (e.target as HTMLInputElement).value);
     applyFollowFilter();
   });
   document.addEventListener('follows-change', () => (paintButtons(), applyFollowFilter()));

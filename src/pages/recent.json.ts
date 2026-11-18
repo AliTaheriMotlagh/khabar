@@ -11,6 +11,8 @@ export function GET() {
     .map((p) => ({
       id: p.id,
       title: p.article.title,
+      // A few words (pipeline/ai.py): a notification listing several stories uses them.
+      ...(p.short !== p.article.title && { short: p.short }),
       href: p.href,
       date: p.date,
       kind: p.kind,
