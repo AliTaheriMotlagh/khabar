@@ -149,6 +149,60 @@
    "name_en": "Unitree G1",
    "name_fa": "یونیتی‌رِی G1",
    "kind": "product"
+  },
+  {
+   "slug": "a16z",
+   "name_en": "a16z",
+   "name_fa": "اِی‌اسی‌تی‌سی‌زد",
+   "kind": "company"
+  },
+  {
+   "slug": "thinking-machines-lab",
+   "name_en": "Thinking Machines Lab",
+   "name_fa": "آزمایشگاه ماشین‌های فکرنده",
+   "kind": "company"
+  },
+  {
+   "slug": "mark-chen",
+   "name_en": "Mark Chen",
+   "name_fa": "مارک چن",
+   "kind": "person"
+  },
+  {
+   "slug": "john-schulman",
+   "name_en": "John Schulman",
+   "name_fa": "جان شولمن",
+   "kind": "person"
+  },
+  {
+   "slug": "self-improving-ai",
+   "name_en": "Self-Improving AI",
+   "name_fa": "هوش مصنوعی خودبهبودبخش",
+   "kind": "product"
+  },
+  {
+   "slug": "nvidia",
+   "name_en": "NVIDIA",
+   "name_fa": "انویدیا",
+   "kind": "company"
+  },
+  {
+   "slug": "jensen-huang",
+   "name_en": "Jensen Huang",
+   "name_fa": "جنسن هوانگ",
+   "kind": "person"
+  },
+  {
+   "slug": "colt-kerr",
+   "name_en": "Colt Kerr",
+   "name_fa": "کولت کرس",
+   "kind": "person"
+  },
+  {
+   "slug": "wired",
+   "name_en": "Wired",
+   "name_fa": "وایرد",
+   "kind": "company"
   }
  ]
 }
