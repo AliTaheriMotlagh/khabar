@@ -1,9 +1,9 @@
 {
  "channel": {
   "url": "https://www.youtube.com/@mehrzad.samadi",
-  "id": null
+  "id": "UCprtwWNkaWcAxcBV44lPHzQ"
  },
- "checked": null,
+ "checked": "2026-11-18T03:32:30+00:00",
  "videos": [
   {
    "id": "7GNR3Ue7QFU",
@@ -12,7 +12,8 @@
    "post": 6543,
    "n": 51,
    "name": "Beni: Camera Robot",
-   "live": false
+   "live": false,
+   "duration": 613
   },
   {
    "id": "vchyxAZZPIo",
@@ -21,7 +22,12 @@
    "post": 6384,
    "n": 50,
    "name": "Reinforcement Learning",
-   "live": false
+   "live": false,
+   "duration": 3648,
+   "description": "https://github.com/mehrzads/RL",
+   "links": [
+    "https://github.com/mehrzads/RL"
+   ]
   },
   {
    "id": "6LwkTvUSwnE",
@@ -30,7 +36,25 @@
    "post": 6236,
    "n": 49,
    "name": "Smarter not Bigger",
-   "live": false
+   "live": false,
+   "duration": 1500,
+   "description": "https://arxiv.org/abs/2610.12582",
+   "links": [
+    "https://arxiv.org/abs/2610.12582"
+   ]
+  },
+  {
+   "id": "C00xjndop5w",
+   "title": "48. Tali AI: Focus on Patients not Paperwork by Hesam Dadafarin [Persian]",
+   "duration": 3878,
+   "date": "2026-10-25",
+   "description": "https://tali.ai\n  / dadafarin  ",
+   "n": 48,
+   "name": "Tali AI: Focus on Patients not Paperwork by Hesam Dadafarin",
+   "live": false,
+   "links": [
+    "https://tali.ai"
+   ]
   },
   {
    "id": "mxijLTA5RTw",
@@ -39,7 +63,13 @@
    "post": 5809,
    "n": 47,
    "name": "Jev: System One Model",
-   "live": false
+   "live": false,
+   "duration": 1766,
+   "description": "https://journals.biologists.com/jcs/a...\n\nhttps://unsloth.ai/docs/new/train-you...",
+   "links": [
+    "https://journals.biologists.com/jcs/a",
+    "https://unsloth.ai/docs/new/train-you"
+   ]
   },
   {
    "id": "z6hFMzmDCSM",
@@ -48,7 +78,12 @@
    "post": 5614,
    "n": 46,
    "name": "How to Read a Scientific Paper",
-   "live": false
+   "live": false,
+   "duration": 2282,
+   "description": "http://ccr.sigcomm.org/online/files/p...",
+   "links": [
+    "http://ccr.sigcomm.org/online/files/p"
+   ]
   },
   {
    "id": "TKgXhyxsLB8",
@@ -57,7 +92,8 @@
    "post": 5272,
    "n": 45,
    "name": "Speculative Decoding",
-   "live": false
+   "live": false,
+   "duration": 1471
   },
   {
    "id": "iqtEvrW0L9s",
@@ -66,7 +102,12 @@
    "post": 5166,
    "n": 44,
    "name": "Designing Beyond the Screen by Mo Sayyar",
-   "live": false
+   "live": false,
+   "duration": 3773,
+   "description": "https://mosayyar.com/\n  / mosayyar  ",
+   "links": [
+    "https://mosayyar.com/"
+   ]
   },
   {
    "id": "y2eq3_lmqlw",
@@ -75,13 +116,29 @@
    "post": 5022,
    "n": 43,
    "name": "HuggingFace Incident",
-   "live": false
+   "live": false,
+   "duration": 1793,
+   "description": "https://openai.com/index/hugging-face...\nhttps://metr.org/blog/2026-08-26-open...\n   • Black Hat USA 2026 | The 'Breaking' News: ...  ",
+   "links": [
+    "https://openai.com/index/hugging-face",
+    "https://metr.org/blog/2026-08-26-open"
+   ]
   },
   {
    "id": "kvXhtwz9du8",
    "title": "Live 1: News and Graph Engineering",
    "date": "2026-08-23",
    "post": 4891,
+   "n": 1,
+   "name": "News and Graph Engineering",
+   "live": true,
+   "duration": 4905
+  },
+  {
+   "id": "NuxDBUhWUuM",
+   "title": "Live 1: News and Graph Engineering",
+   "duration": 4616,
+   "date": "2026-08-23",
    "n": 1,
    "name": "News and Graph Engineering",
    "live": true
@@ -93,6 +150,635 @@
    "post": 4538,
    "n": 42,
    "name": "Rejection Therapy",
+   "live": false,
+   "duration": 1079,
+   "description": "https://www.rejectiontherapy.com/100-...",
+   "links": [
+    "https://www.rejectiontherapy.com/100-"
+   ]
+  },
+  {
+   "id": "xlRgHyjUC8o",
+   "title": "41. meCore: The Taste Layer for AI by Golnaz Abdollahian [Persian]",
+   "duration": 3019,
+   "date": "2026-07-27",
+   "description": "Download: https://mecore.ai/download\n\nTiktok: https://www.tiktok.com/@mecore.ai?_r=...\n\nInstagram:  https://www.instagram.com/mecore.me?i...\n\nLinkedin:   / golnaz-abdollahian-93938a5  ",
+   "n": 41,
+   "name": "meCore: The Taste Layer for AI by Golnaz Abdollahian",
+   "live": false,
+   "links": [
+    "https://mecore.ai/download",
+    "https://www.tiktok.com/@mecore.ai?_r="
+   ]
+  },
+  {
+   "id": "JoRmERbgalc",
+   "title": "40. Artificial Consciousness [Persian]",
+   "duration": 1305,
+   "date": "2026-07-19",
+   "description": "https://www.anthropic.com/research/gl...",
+   "n": 40,
+   "name": "Artificial Consciousness",
+   "live": false,
+   "links": [
+    "https://www.anthropic.com/research/gl"
+   ]
+  },
+  {
+   "id": "WgFHgnnUaN0",
+   "title": "39. Local LLM 2: DGX Spark, Hermes, ComfyUI [Persian]",
+   "duration": 1899,
+   "date": "2026-07-11",
+   "n": 39,
+   "name": "Local LLM 2: DGX Spark, Hermes, ComfyUI",
+   "live": false
+  },
+  {
+   "id": "3JyKypJsFCc",
+   "title": "38. Open Knowledge Format by Amir Hormati [Persian]",
+   "duration": 3396,
+   "date": "2026-07-03",
+   "description": "https://cloud.google.com/blog/product...\n\n  / amir-hormati-972a5524  ",
+   "n": 38,
+   "name": "Open Knowledge Format by Amir Hormati",
+   "live": false,
+   "links": [
+    "https://cloud.google.com/blog/product"
+   ]
+  },
+  {
+   "id": "oLfyX_vTaVc",
+   "title": "Demo 3: Single-User Software Revolution by Parsa Razavi [Persian]",
+   "duration": 1445,
+   "date": "2026-06-28",
+   "description": "rubitech:   / rubitech.school  \n\nLinkedin:   / parsa-razavi  \nCode: https://github.com/parsarazaviam/self...",
+   "name": "Demo 3: Single-User Software Revolution by Parsa Razavi [Persian]",
+   "live": false,
+   "links": [
+    "https://github.com/parsarazaviam/self"
+   ]
+  },
+  {
+   "id": "nlI9I163J-0",
+   "title": "37. Local LLM 1 [Persian]",
+   "duration": 2091,
+   "date": "2026-06-16",
+   "n": 37,
+   "name": "Local LLM 1",
+   "live": false
+  },
+  {
+   "id": "Ne-zbyl4Suc",
+   "title": "36. Fable/Mythos, Loop Engineering  [Persian]",
+   "duration": 1768,
+   "date": "2026-06-11",
+   "description": "https://www.anthropic.com/institute/r...\nhttps://openai.com/index/built-to-ben...\nhttps://www.anthropic.com/news/claude...\nhttps://platform.claude.com/docs/en/b...",
+   "n": 36,
+   "name": "Fable/Mythos, Loop Engineering",
+   "live": false,
+   "links": [
+    "https://www.anthropic.com/institute/r",
+    "https://openai.com/index/built-to-ben",
+    "https://www.anthropic.com/news/claude",
+    "https://platform.claude.com/docs/en/b"
+   ]
+  },
+  {
+   "id": "V9YrTtyRe4U",
+   "title": "35. OpenCode [Persian]",
+   "duration": 1777,
+   "date": "2026-06-07",
+   "n": 35,
+   "name": "OpenCode",
+   "live": false
+  },
+  {
+   "id": "9WwgLyHv1xM",
+   "title": "34. Long Horizon Agentic Framework [Persian]",
+   "duration": 2175,
+   "date": "2026-05-31",
+   "n": 34,
+   "name": "Long Horizon Agentic Framework",
+   "live": false
+  },
+  {
+   "id": "wgnI039H2jg",
+   "title": "Demo 2: SAM Foundation Models and 3D Segmentation by Kasra Derakhshandeh [Persian]",
+   "duration": 1983,
+   "date": "2025-12-21",
+   "description": "  / kderakhs  \nhttps://research.google/blog/titans-m...",
+   "name": "Demo 2: SAM Foundation Models and 3D Segmentation by Kasra Derakhshandeh [Persian]",
+   "live": false,
+   "links": [
+    "https://research.google/blog/titans-m"
+   ]
+  },
+  {
+   "id": "FZc_cvgFN10",
+   "title": "33. NotebookLM Updated [Persian]",
+   "duration": 666,
+   "date": "2025-11-30",
+   "n": 33,
+   "name": "NotebookLM Updated",
+   "live": false
+  },
+  {
+   "id": "rntcn3uF-m8",
+   "title": "32. Gemini, Banana, and Antigravity [Persian]",
+   "duration": 1599,
+   "date": "2025-11-23",
+   "description": "https://gemini.google.com/",
+   "n": 32,
+   "name": "Gemini, Banana, and Antigravity",
+   "live": false,
+   "links": [
+    "https://gemini.google.com/"
+   ]
+  },
+  {
+   "id": "DV5Tv6RAWWM",
+   "title": "31. Diffusion Mystery [Persian]",
+   "duration": 1113,
+   "date": "2025-11-16",
+   "description": "References:\n   • The physics behind diffusion models  \n   • The Breakthrough Behind Modern AI Image Ge...  \n   • But how do AI images and videos actually w...  ",
+   "n": 31,
+   "name": "Diffusion Mystery",
+   "live": false
+  },
+  {
+   "id": "QEUWNzgDujw",
+   "title": "29. AI Browsers and IOI Gold Medal [Persian]",
+   "duration": 1619,
+   "date": "2025-10-26",
+   "n": 29,
+   "name": "AI Browsers and IOI Gold Medal",
+   "live": false
+  },
+  {
+   "id": "SrprLmYEeEE",
+   "title": "28. Why Language Models Hallucinate? [Persian]",
+   "duration": 1291,
+   "date": "2025-09-28",
+   "description": "https://arxiv.org/pdf/2509.04664",
+   "n": 28,
+   "name": "Why Language Models Hallucinate?",
+   "live": false,
+   "links": [
+    "https://arxiv.org/pdf/2509.04664"
+   ]
+  },
+  {
+   "id": "jl4IZIox3uw",
+   "title": "27. Defeating Nondeterminism in LLM Inference [Persian]",
+   "duration": 1505,
+   "date": "2025-09-21",
+   "description": "https://thinkingmachines.ai/blog/defe...",
+   "n": 27,
+   "name": "Defeating Nondeterminism in LLM Inference",
+   "live": false,
+   "links": [
+    "https://thinkingmachines.ai/blog/defe"
+   ]
+  },
+  {
+   "id": "UCD_I-uRsVs",
+   "title": "26. World Models : Genie 3, Nano Banana [Persian]",
+   "duration": 1343,
+   "date": "2025-08-31",
+   "description": "   • One-Minute Time Machine - Original 2013 Di...  \n\n   • Genie 3: An infinite world model | Shlomi ...  ",
+   "n": 26,
+   "name": "World Models : Genie 3, Nano Banana",
+   "live": false
+  },
+  {
+   "id": "Tn-0MGEQY2o",
+   "title": "Startup 1: Aero Gate Connector, AI in Aviation [Persian]",
+   "duration": 3369,
+   "date": "2025-08-15",
+   "description": "  / afsaneh-nasiri-b7a68ba0  \n  / mohammadyoosef-salehi-moorkani  ",
+   "name": "Startup 1: Aero Gate Connector, AI in Aviation [Persian]",
+   "live": false
+  },
+  {
+   "id": "ClmoHlS8u6w",
+   "title": "Demo 1: Learn Language through AI stories by Salman Barani [Persian]",
+   "duration": 1994,
+   "date": "2025-07-19",
+   "description": "Guest:   / salman-barani-564a47190  ",
+   "name": "Demo 1: Learn Language through AI stories by Salman Barani [Persian]",
+   "live": false
+  },
+  {
+   "id": "t-EqvK_g5Zg",
+   "title": "25. Overview of Building Faster with AI by Andrew Ng [Persian]",
+   "duration": 2151,
+   "date": "2025-07-13",
+   "description": "https://www.ycombinator.com/library/M...",
+   "n": 25,
+   "name": "Overview of Building Faster with AI by Andrew Ng",
+   "live": false,
+   "links": [
+    "https://www.ycombinator.com/library/M"
+   ]
+  },
+  {
+   "id": "f4P1dw1dWjY",
+   "title": "24. Terminal Based Coding Agents [Persian]",
+   "duration": 963,
+   "date": "2025-06-29",
+   "description": "Claude Code\nGemini CLI\nAlphaEvolve",
+   "n": 24,
+   "name": "Terminal Based Coding Agents",
+   "live": false
+  },
+  {
+   "id": "UB9DXSGf1j8",
+   "title": "23. Autonomous Coding Agents, Codex and Jules [Persian]",
+   "duration": 1651,
+   "date": "2025-05-21",
+   "description": "I talked about Google I/O and Manus too\n\nSorry I keep saying Julie instead of Jules in the video",
+   "n": 23,
+   "name": "Autonomous Coding Agents, Codex and Jules",
+   "live": false
+  },
+  {
+   "id": "8Hg1uwweP9M",
+   "title": "22. Introduction to CUDA programming: Part 2 [Persian]",
+   "duration": 1754,
+   "date": "2025-05-10",
+   "description": "https://github.com/mehrzads/CUDA",
+   "n": 22,
+   "name": "Introduction to CUDA programming: Part 2",
+   "live": false,
+   "links": [
+    "https://github.com/mehrzads/CUDA"
+   ]
+  },
+  {
+   "id": "FWDOlIOdcxQ",
+   "title": "21. Introduction to CUDA programming: Part 1 [Persian]",
+   "duration": 2084,
+   "date": "2025-05-04",
+   "description": "https://github.com/mehrzads/CUDA",
+   "n": 21,
+   "name": "Introduction to CUDA programming: Part 1",
+   "live": false,
+   "links": [
+    "https://github.com/mehrzads/CUDA"
+   ]
+  },
+  {
+   "id": "nkjq6e8gw-Y",
+   "title": "20. On the Biology of a Large Language Model [Persian]",
+   "duration": 2568,
+   "date": "2025-04-13",
+   "description": "https://transformer-circuits.pub/2025...",
+   "n": 20,
+   "name": "On the Biology of a Large Language Model",
+   "live": false,
+   "links": [
+    "https://transformer-circuits.pub/2025"
+   ]
+  },
+  {
+   "id": "QXT8D5NF2s0",
+   "title": "19. What Is MCP? The Model Context Protocol Explained [Persian]",
+   "duration": 1810,
+   "date": "2025-04-06",
+   "description": "Useful Links:\nhttps://modelcontextprotocol.io/quick...\nhttps://github.com/modelcontextprotoc...\nhttps://github.com/punkpeye/awesome-m...",
+   "n": 19,
+   "name": "What Is MCP? The Model Context Protocol Explained",
+   "live": false,
+   "links": [
+    "https://modelcontextprotocol.io/quick",
+    "https://github.com/modelcontextprotoc",
+    "https://github.com/punkpeye/awesome-m"
+   ]
+  },
+  {
+   "id": "o8sb-yhN6rA",
+   "title": "18. The AI Revolution: Transforming Enterprises with Deep Learning [Persian]",
+   "duration": 2517,
+   "date": "2025-03-08",
+   "n": 18,
+   "name": "The AI Revolution: Transforming Enterprises with Deep Learning",
+   "live": false
+  },
+  {
+   "id": "z34QXEiDs0k",
+   "title": "17. Physics of Language Models: Knowledge [Persian]",
+   "duration": 3144,
+   "date": "2025-02-17",
+   "description": "https://physics.allen-zhu.com/part-3-...",
+   "n": 17,
+   "name": "Physics of Language Models: Knowledge",
+   "live": false,
+   "links": [
+    "https://physics.allen-zhu.com/part-3-"
+   ]
+  },
+  {
+   "id": "lxGUMUl32G8",
+   "title": "16. AI Agents in Action: AutoGen, CrewAI, LangChain, and Swarm Unleashed! [Persian]",
+   "duration": 2305,
+   "date": "2025-02-09",
+   "description": "0:00 Introduction\n10:57 Agents\n18:56 OpenAI Swarm\n23:55 CrewAI\n27:27 AutoGen\n32:12 LangChain\n\nhttps://github.com/NirDiamant/GenAI_A...\nhttps://github.com/mehrzads/agents",
+   "n": 16,
+   "name": "AI Agents in Action: AutoGen, CrewAI, LangChain, and Swarm Unleashed!",
+   "live": false,
+   "chapters": [
+    {
+     "t": 0,
+     "title": "Introduction"
+    },
+    {
+     "t": 657,
+     "title": "Agents"
+    },
+    {
+     "t": 1136,
+     "title": "OpenAI Swarm"
+    },
+    {
+     "t": 1435,
+     "title": "CrewAI"
+    },
+    {
+     "t": 1647,
+     "title": "AutoGen"
+    },
+    {
+     "t": 1932,
+     "title": "LangChain"
+    }
+   ],
+   "links": [
+    "https://github.com/NirDiamant/GenAI_A",
+    "https://github.com/mehrzads/agents"
+   ]
+  },
+  {
+   "id": "viV8aIXeWEQ",
+   "title": "15. Deepseek R1 Explained: Myths and Facts [Persian]",
+   "duration": 5182,
+   "date": "2025-02-01",
+   "description": "References:\n\n1. https://lunar-joke-35b.notion.site/De...\n\n2. https://trite-song-d6a.notion.site/De...\n\n3. https://lifeinthesingularity.com/p/de...\n\n4. https://thelmbook.com/articles/#!./De...\n\n5. https://semianalysis.com/2025/01/31/d...\n\n6.   / kv-caching-explained  \n\n7. https://www.latent.space/p/reasoning-...\n\n8. https://www.fibermall.com/blog/nvidia...\n\n9. https://github.com/deepseek-ai/DeepSe...\n\n10. https://github.com/deepseek-ai/DeepSe...\n\n11.https://www.wired.com/story/deepseek-...",
+   "n": 15,
+   "name": "Deepseek R1 Explained: Myths and Facts",
+   "live": false,
+   "links": [
+    "https://lunar-joke-35b.notion.site/De",
+    "https://trite-song-d6a.notion.site/De",
+    "https://lifeinthesingularity.com/p/de",
+    "https://thelmbook.com/articles/#!./De",
+    "https://semianalysis.com/2025/01/31/d",
+    "https://www.latent.space/p/reasoning-",
+    "https://www.fibermall.com/blog/nvidia",
+    "https://github.com/deepseek-ai/DeepSe",
+    "https://www.wired.com/story/deepseek-"
+   ]
+  },
+  {
+   "id": "XdAr0zPBpOM",
+   "title": "14. FAQs: Study, Job, and Startup [Persian]",
+   "duration": 3086,
+   "date": "2025-01-25",
+   "description": "Pitch Deck\n   • مستر کلاس استارت آپ . چگونه استارت آپ را ب...  \n\nCold Calling\n   • Cold calling - اولین پیام برای نتورکینگ  ",
+   "n": 14,
+   "name": "FAQs: Study, Job, and Startup",
+   "live": false
+  },
+  {
+   "id": "WuqWQ4jRaP8",
+   "title": "13. Fine Tuning: Lora [Persian]",
+   "duration": 2639,
+   "date": "2025-01-20",
+   "description": "unsloth \nhttps://github.com/unslothai/unsloth\n\nnotebooks\nhttps://github.com/unslothai/notebooks",
+   "n": 13,
+   "name": "Fine Tuning: Lora",
+   "live": false,
+   "links": [
+    "https://github.com/unslothai/unsloth",
+    "https://github.com/unslothai/notebooks"
+   ]
+  },
+  {
+   "id": "-soD3YAsx5Q",
+   "title": "12. GPU Architecture Demystified: A Beginner’s Guide [Persian]",
+   "duration": 3843,
+   "date": "2025-01-16",
+   "n": 12,
+   "name": "GPU Architecture Demystified: A Beginner’s Guide",
+   "live": false
+  },
+  {
+   "id": "D8CKEcdHyPs",
+   "title": "11. Red December: The Battle for AGI — OpenAI vs Google [Persian]",
+   "duration": 4928,
+   "date": "2025-01-16",
+   "description": "0:00 Introduction \n14:25 NotbookLM\n15:41 Physics of LLM\n18:00 O1 vs Gemini\n36:46 Sora vs Veo 2\n43:04 Canvas\n54:25 Desktop APP\n59:25 Deep Research\n1:03:48 O3 and AGI",
+   "n": 11,
+   "name": "Red December: The Battle for AGI — OpenAI vs Google",
+   "live": false,
+   "chapters": [
+    {
+     "t": 0,
+     "title": "Introduction"
+    },
+    {
+     "t": 865,
+     "title": "NotbookLM"
+    },
+    {
+     "t": 941,
+     "title": "Physics of LLM"
+    },
+    {
+     "t": 1080,
+     "title": "O1 vs Gemini"
+    },
+    {
+     "t": 2206,
+     "title": "Sora vs Veo 2"
+    },
+    {
+     "t": 2584,
+     "title": "Canvas"
+    },
+    {
+     "t": 3265,
+     "title": "Desktop APP"
+    },
+    {
+     "t": 3565,
+     "title": "Deep Research"
+    },
+    {
+     "t": 3828,
+     "title": "O3 and AGI"
+    }
+   ]
+  },
+  {
+   "id": "VAhlf2m-bfQ",
+   "title": "10. Simple RAG Application: Chromadb, Ollama [Persian]",
+   "duration": 1867,
+   "date": "2024-12-14",
+   "description": "https://github.com/mehrzads/Rag",
+   "n": 10,
+   "name": "Simple RAG Application: Chromadb, Ollama",
+   "live": false,
+   "links": [
+    "https://github.com/mehrzads/Rag"
+   ]
+  },
+  {
+   "id": "T8Y7jZ4q1X0",
+   "title": "9. AI Video Generation Tools: Hailuo, Runway, Luma, Kling & HunyuanVideo [Persian]",
+   "duration": 1337,
+   "date": "2024-12-08",
+   "n": 9,
+   "name": "AI Video Generation Tools: Hailuo, Runway, Luma, Kling & HunyuanVideo",
+   "live": false
+  },
+  {
+   "id": "zHu78PKkics",
+   "title": "8. A Beginner's Guide to Modern Deep Learning [Persian]",
+   "duration": 3089,
+   "date": "2024-11-30",
+   "description": "   / @3blue1brown  ",
+   "n": 8,
+   "name": "A Beginner's Guide to Modern Deep Learning",
+   "live": false
+  },
+  {
+   "id": "Nqxn6DsKMZk",
+   "title": "7. School to Acquisition [Persian]",
+   "duration": 2289,
+   "date": "2024-11-17",
+   "n": 7,
+   "name": "School to Acquisition",
+   "live": false
+  },
+  {
+   "id": "NmaTy9enkyk",
+   "title": "6. AnythingLLM + Open WebUI [Persian]",
+   "duration": 1492,
+   "date": "2024-11-10",
+   "description": "0:00 Introduction\n6:43 AnythingLLM\n14:14 Open WebUI",
+   "n": 6,
+   "name": "AnythingLLM + Open WebUI",
+   "live": false,
+   "chapters": [
+    {
+     "t": 0,
+     "title": "Introduction"
+    },
+    {
+     "t": 403,
+     "title": "AnythingLLM"
+    },
+    {
+     "t": 854,
+     "title": "Open WebUI"
+    }
+   ]
+  },
+  {
+   "id": "gZOAyLlytfc",
+   "title": "5. Create a local chatgpt, Ollama + Gradio  [Persian]",
+   "duration": 1361,
+   "date": "2024-11-03",
+   "description": "0:00 Introduction\n7:49 Ollama\n13:50 Gradio",
+   "n": 5,
+   "name": "Create a local chatgpt, Ollama + Gradio",
+   "live": false,
+   "chapters": [
+    {
+     "t": 0,
+     "title": "Introduction"
+    },
+    {
+     "t": 469,
+     "title": "Ollama"
+    },
+    {
+     "t": 830,
+     "title": "Gradio"
+    }
+   ]
+  },
+  {
+   "id": "pLAA1PlNY8Q",
+   "title": "4. Machines of loving grace, Claude for computer use [Persian]",
+   "duration": 2030,
+   "date": "2024-10-27",
+   "description": "0:00 Introduction\n5:50 Machines of loving grace\n12:50 Biology and physical health\n18:35 Neuroscience and mental health\n21:33 Economic development and poverty\n23:49 Peace and governance\n27:36 Work and meaning\n30:20 Claude computer use",
+   "n": 4,
+   "name": "Machines of loving grace, Claude for computer use",
+   "live": false,
+   "chapters": [
+    {
+     "t": 0,
+     "title": "Introduction"
+    },
+    {
+     "t": 350,
+     "title": "Machines of loving grace"
+    },
+    {
+     "t": 770,
+     "title": "Biology and physical health"
+    },
+    {
+     "t": 1115,
+     "title": "Neuroscience and mental health"
+    },
+    {
+     "t": 1293,
+     "title": "Economic development and poverty"
+    },
+    {
+     "t": 1429,
+     "title": "Peace and governance"
+    },
+    {
+     "t": 1656,
+     "title": "Work and meaning"
+    },
+    {
+     "t": 1820,
+     "title": "Claude computer use"
+    }
+   ]
+  },
+  {
+   "id": "abH9KCxZ3hQ",
+   "title": "3. NotebookLM , Illuminate, and Synthesia [Persian]",
+   "duration": 1105,
+   "date": "2024-10-20",
+   "n": 3,
+   "name": "NotebookLM , Illuminate, and Synthesia",
+   "live": false
+  },
+  {
+   "id": "aRdO45lTies",
+   "title": "2. V0 by Vercel, Cursor, Replit, OpenAI Canvas [Persian]",
+   "duration": 1741,
+   "date": "2024-10-13",
+   "description": "Transform Your Development Workflow with V0, Replit, Cursor, and OpenAI Canvas\nIn this video, explore how V0 by Vercel, Replit, Cursor, and OpenAI Canvas are redefining modern development through the power of deep learning. These tools empower developers to build, deploy, and iterate faster than ever before.\n\nWhat You'll Learn:\nHow deep learning enhances development tools to streamline workflows\nPractical examples of using V0, Replit, Cursor, and OpenAI Canvas for rapid prototyping\nTips for combining these platforms to maximize creativity and productivity\nReal-world strategies for turning ideas into applications with ease\nWho This Video is For:\nDevelopers and engineers seeking efficient ways to build and deploy applications\nEntrepreneurs looking for powerful tools to bring products to market quickly\nStudents and professionals curious about leveraging AI-powered platforms in development\nAnyone passionate about the intersection of deep learning and software innovation",
+   "n": 2,
+   "name": "V0 by Vercel, Cursor, Replit, OpenAI Canvas",
+   "live": false
+  },
+  {
+   "id": "aK_MZljIU5Q",
+   "title": "1. Using Claude as technical co-founder [Persian]",
+   "duration": 1302,
+   "date": "2024-07-28",
+   "description": "This video is your gateway to turning concepts into reality, even without an extensive technical background!\nWhat You'll Learn:\n\nHow to utilize Claude, an advanced AI assistant, to kickstart your technical projects\nStep-by-step process of transforming a vague idea into a structured project outline\nTechniques for asking the right questions to get the most out of AI assistance\nTips for interpreting and expanding on AI-generated suggestions\n\nWho This Video is For:\n\nAspiring entrepreneurs with innovative ideas but limited technical knowledge\nStudents looking to enhance their project planning skills\nProfessionals seeking to leverage AI for efficient project drafting\nAnyone curious about the practical applications of AI in project development",
+   "n": 1,
+   "name": "Using Claude as technical co-founder",
    "live": false
   }
  ]
