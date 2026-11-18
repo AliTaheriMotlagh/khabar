@@ -10,9 +10,10 @@ const TOKEN = process.env.GITHUB_DISPATCH_TOKEN;
 const COOLDOWN = Number(process.env.SYNC_COOLDOWN || 180);
 
 async function status() {
-  const res = await github('/runs?per_page=5');
+  const res = await github('/runs?per_page=10');
   if (!res.ok) throw new Error(`github ${res.status}`);
-  const runs = (await res.json()).workflow_runs ?? [];
+  // A code push's run doesn't crawl (.github/workflows/site.yml).
+  const runs = ((await res.json()).workflow_runs ?? []).filter((r) => r.event !== 'push');
   const done = runs.find((r) => r.status === 'completed' && r.conclusion === 'success');
   return { running: runs.some((r) => r.status !== 'completed'), last: done?.updated_at ?? null };
 }

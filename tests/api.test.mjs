@@ -387,6 +387,13 @@ test('watch: a crawl once the newest post has its comment (or after a grace), an
     assert.deepEqual(await tick(), { queued: true, reason: 'gholam 102' }, 'a comment after the last crawl');
     assert.equal(dispatched.length, 3);
 
+    // A code push's run builds main as it is and crawls nothing: it doesn't count as having seen the post.
+    runs = [{ event: 'push', status: 'in_progress', conclusion: null, created_at: ago(5) }, { event: 'schedule', status: 'completed', conclusion: 'success', created_at: ago(250) }];
+    channel = post(100, ago(7200)) + post(103, ago(60));
+    comments[103] = ago(30);
+    assert.deepEqual(await tick(), { queued: true, reason: 'post 103' }, 'a push run is not a crawl');
+    assert.equal(dispatched.length, 4);
+
     assert.deepEqual(watch.parseChannel(post(7, '2026-10-20T15:31:00+00:00')), [{ id: 7, at: Date.parse('2026-10-20T15:31:00Z') }]);
     assert.equal(watch.parseGholam(discussion(null)), 0);
   } finally {

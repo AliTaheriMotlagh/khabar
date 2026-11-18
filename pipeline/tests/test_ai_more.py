@@ -4,6 +4,8 @@ from __future__ import annotations
 import json
 from datetime import datetime, timezone
 
+import httpx
+
 from pipeline import ai, ai_more, comments, daily, related, videos
 
 
@@ -131,3 +133,31 @@ def test_related_file_waits_for_most_vectors(tmp_path, monkeypatch):
                                                   "items": {"1": {"src": "x", "v": related.pack([1.0] * related.DIMS)}}}))
     assert related.coverage(posts) == 0.1
     assert related.update_file(posts) is False and not (tmp_path / "related.json").exists()
+
+
+def test_a_slow_answer_gets_one_longer_try():
+    calls = []
+
+    def handler(request):
+        calls.append(request.extensions["timeout"]["read"])
+        if len(calls) == 1:
+            raise httpx.ReadTimeout("timed out", request=request)
+        return httpx.Response(200, json={"choices": [{"message": {"content": '{"ok": true}'}}]})
+
+    with httpx.Client(transport=httpx.MockTransport(handler)) as http:
+        assert ai.chat(http, "s", [], "t", {}) == {"ok": True}
+    assert calls == [ai.AI_TIMEOUT, 2 * ai.AI_TIMEOUT]
+
+
+def test_a_gone_server_stops_the_run_without_failing_it(tmp_path, monkeypatch, capsys):
+    monkeypatch.setattr(ai.config, "POSTS_DIR", tmp_path)
+    for i in (1, 2):
+        (tmp_path / f"{i}.json").write_text(json.dumps({"id": i, "date": "2026-11-18T00:00:00+00:00"}))
+    monkeypatch.setattr(ai, "is_due", lambda p: True)
+
+    def gone(http, post):
+        raise httpx.ConnectError("connection refused")
+
+    monkeypatch.setattr(ai, "work_out", gone)
+    assert ai.run(everything=True) == 0
+    assert "::warning::ai: the model server stopped answering" in capsys.readouterr().out

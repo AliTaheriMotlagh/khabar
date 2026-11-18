@@ -562,9 +562,10 @@ def run(everything: bool = False, budget: float = AI_MORE_BUDGET, limit: Optiona
         ("x", x_due, work_x),
         ("speech", lambda p: speech_due(p, lex), lambda h, p: work_speech(h, p, lex)),
     ]
+    gone = False
     with httpx.Client() as http:
         for name, due, work in jobs:
-            if only and name != only:
+            if only and name != only or gone:
                 continue
             queue = [p for p in todo if due(p)][:limit]
             print(f"ai_more {name}: {len(queue)} posts")
@@ -575,8 +576,14 @@ def run(everything: bool = False, budget: float = AI_MORE_BUDGET, limit: Optiona
                 if name == "speech" and not speech_due(post, lex):
                     continue  # an earlier post taught the lexicon these names
                 t = time.monotonic()
+                try:
+                    answer = work(http, post)
+                except httpx.TransportError as exc:
+                    ai.server_gone(f"ai_more {name}", exc, len(queue) - queue.index(post))
+                    gone = True
+                    break
                 post["ai"] = post.get("ai") or {}
-                post["ai"][name] = work(http, post)
+                post["ai"][name] = answer
                 ai.save(post)
                 if name == "speech":
                     LEXICON.write_text(json.dumps(dict(sorted(lex.items(), key=lambda kv: kv[0].lower())), ensure_ascii=False, indent=1) + "\n", "utf-8")

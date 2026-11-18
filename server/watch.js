@@ -47,11 +47,12 @@ export function parseGholam(html) {
 }
 
 /** When the newest crawl that will have (or had) a look at the channel was started (ms), or 0. A cancelled run was a
- *  queued one replaced by a newer one; a failed one is retried by the schedule. */
+ *  queued one replaced by a newer one; a failed one is retried by the schedule. A code push's run doesn't crawl. */
+export const isCrawl = (r) => r.event !== 'push' && r.conclusion !== 'cancelled';
 async function lastCrawl() {
-  const res = await github('/runs?per_page=5');
+  const res = await github('/runs?per_page=10');
   if (!res.ok) throw new Error(`github ${res.status}`);
-  const run = ((await res.json()).workflow_runs ?? []).find((r) => r.conclusion !== 'cancelled');
+  const run = ((await res.json()).workflow_runs ?? []).find(isCrawl);
   return run ? Date.parse(run.created_at) : 0;
 }
 

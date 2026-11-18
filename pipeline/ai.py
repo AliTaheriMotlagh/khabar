@@ -187,19 +187,23 @@ def chat(http: httpx.Client, system: str, examples: list, text: str, schema: dic
     for q, a in examples:
         messages += [{"role": "user", "content": q}, {"role": "assistant", "content": json.dumps(a, ensure_ascii=False)}]
     messages.append({"role": "user", "content": text})
-    resp = http.post(
-        f"{AI_URL}/chat/completions",
-        json={
-            "model": AI_MODEL,
-            "messages": messages,
-            "temperature": temperature,
-            "max_tokens": max_tokens,
-            "response_format": {"type": "json_schema", "json_schema": {"name": name, "strict": True, "schema": schema}},
-            # Qwen3.5 thinks before it answers unless told not to: slower, and nothing to gain here.
-            "chat_template_kwargs": {"enable_thinking": False},
-        },
-        timeout=AI_TIMEOUT,
-    )
+    body = {
+        "model": AI_MODEL,
+        "messages": messages,
+        "temperature": temperature,
+        "max_tokens": max_tokens,
+        "response_format": {"type": "json_schema", "json_schema": {"name": name, "strict": True, "schema": schema}},
+        # Qwen3.5 thinks before it answers unless told not to: slower, and nothing to gain here.
+        "chat_template_kwargs": {"enable_thinking": False},
+    }
+    try:
+        resp = http.post(f"{AI_URL}/chat/completions", json=body, timeout=AI_TIMEOUT)
+    except httpx.TimeoutException:
+        # Slow, not gone: a run's first answer also reads the long shared instructions and examples (60–95 s on the
+        # runner, now and then over AI_TIMEOUT). One more try with twice the time; a second timeout is a TransportError
+        # for the caller (`server_gone`).
+        print(f"  … {name}: no answer in {AI_TIMEOUT:.0f}s, trying once more")
+        resp = http.post(f"{AI_URL}/chat/completions", json=body, timeout=2 * AI_TIMEOUT)
     resp.raise_for_status()
     content = resp.json()["choices"][0]["message"]["content"]
     return json.loads(content)
@@ -296,11 +300,21 @@ def run(everything: bool = False, budget: float = AI_BUDGET, limit: Optional[int
                 print(f"ai: budget of {budget:.0f}s used; {len(todo) - done} left for the next run")
                 break
             t = time.monotonic()
-            post["ai"] = merged(post, work_out(http, post))
+            try:
+                post["ai"] = merged(post, work_out(http, post))
+            except httpx.TransportError as exc:
+                server_gone("ai", exc, len(todo) - done)
+                break
             save(post)
             done += 1
             print(f"  ✓ {post['id']} ({time.monotonic() - t:.1f}s): {post['ai'].get('title', 'failed')}")
     return done
+
+
+def server_gone(what: str, exc: Exception, left: int) -> None:
+    """The model server stopped answering: keep what is saved, leave the rest to the next run, and don't fail the job
+    (a crawl's AI step and every backfill chunk commit what was done; the next run starts a fresh server)."""
+    print(f"::warning::{what}: the model server stopped answering ({type(exc).__name__}: {exc}); {left} left for the next run")
 
 
 # ---- the golden set ----
