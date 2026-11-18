@@ -419,3 +419,20 @@ def test_unreadable_replies_are_not_translations():
         assert not telegram.is_gholam_error(text), text
     post = {"id": 7, "text": "https://x.com/a/status/1", "links": [], "gholam": {"text": "داداش متأسفانه محتوای این پست در دسترس نبود."}}
     assert run.build_article(post)["body"] == []
+
+
+def test_youtube_links_are_known_by_their_address():
+    from pipeline import enrich
+    for url in ("https://youtu.be/7GNR3Ue7QFU?is=sj1I3lQipQYqMA3g",
+                "https://www.youtube.com/watch?is=sj1I3lQipQYqMA3g&v=7GNR3Ue7QFU&feature=youtu.be",
+                "https://www.youtube.com/watch?v=7GNR3Ue7QFU", "https://www.youtube.com/live/7GNR3Ue7QFU?si=x"):
+        assert enrich.YOUTUBE_RE.search(url).group(1) == "7GNR3Ue7QFU", url
+
+
+def test_a_crawler_wall_is_not_a_title():
+    # post 6543: YouTube's page said «- YouTube»; Telegram's preview has the video's title.
+    links = [{"kind": "link", "url": "https://www.youtube.com/watch?v=7GNR3Ue7QFU", "title": "- YouTube"}]
+    preview = {"title": "51. Beni: Camera Robot [Persian]"}
+    assert shape.source_title("https://youtu.be/7GNR3Ue7QFU", links, preview) == "51. Beni: Camera Robot [Persian]"
+    links = [{"kind": "link", "url": "https://www.youtube.com/live/x", "title": "Before you continue to YouTube"}]
+    assert shape.source_title("", links, {"title": "Live 1: News and Graph Engineering"}) == "Live 1: News and Graph Engineering"

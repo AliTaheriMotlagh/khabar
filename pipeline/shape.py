@@ -188,9 +188,15 @@ def headline(gholam_paras: list[str]) -> Optional[str]:
     return sentence if len(sentence) <= HEADLINE_HARD_MAX else clip(sentence, HEADLINE_MAX)
 
 
+# What a site's page says to a crawler instead of its title (YouTube's consent page and bot wall, X's login wall).
+WALL_TITLE = re.compile(r"^\s*(?:-\s*)?YouTube\s*$|^Before you continue|^X - The Everything App$|^(?:X|Twitter)$", re.I)
+
+
 def source_title(post_text: str, links: list[dict], preview: Optional[dict]) -> Optional[str]:
     """Best original-language title for the story (article title, tweet's first line, preview title)."""
     for l in links:
+        if l.get("title") and WALL_TITLE.search(l["title"]):
+            continue
         if l.get("kind") == "tweet":
             if l.get("article", {}).get("title"):
                 return l["article"]["title"]
@@ -199,7 +205,7 @@ def source_title(post_text: str, links: list[dict], preview: Optional[dict]) -> 
                 return clip(re.sub(r"https?://\S+", "", line), 140)
         elif l.get("title"):
             return clip(l["title"], 140)
-    if preview and preview.get("title"):
+    if preview and preview.get("title") and not WALL_TITLE.search(preview["title"]):
         return clip(preview["title"], 140)
     line = next((x for x in post_text.splitlines() if x.strip() and not x.strip().startswith("http")), "")
     return clip(line, 140) if line else None

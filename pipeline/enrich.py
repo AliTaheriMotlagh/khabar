@@ -14,7 +14,10 @@ TWEET_RE = re.compile(
     r"https?://(?:www\.|mobile\.)?(?:x|twitter|fxtwitter|fixupx|vxtwitter|fixvx)\.com/([^/\s]+)/status(?:es)?/(\d+)",
     re.I,
 )
-YOUTUBE_RE = re.compile(r"(?:youtube\.com/(?:watch\?v=|shorts/|live/)|youtu\.be/)([\w-]{11})")
+# «watch?v=…», but also «watch?is=…&v=…» (where youtu.be/…?is= redirects), shorts, live and youtu.be.
+YOUTUBE_RE = re.compile(r"(?:youtube\.com/(?:watch\?(?:[^#\s]*&)?v=|shorts/|live/|embed/)|youtu\.be/)([\w-]{11})")
+# What YouTube's page says to a crawler (a consent page, a bot wall): not the video's title.
+YOUTUBE_JUNK = re.compile(r"^\s*(?:-\s*)?YouTube\s*$|^Before you continue|^Enjoy the videos and music you love", re.I)
 SKIP_HOSTS = ("t.me", "telegram.me")
 # X's web pages are a login wall without JS (an X Article comes with its tweet, from fxtwitter), and its generic
 # share picture is no picture of the news.
@@ -36,7 +39,8 @@ def enrich_links(http: httpx.Client, links: list[str]) -> list[dict]:
             continue
         try:
             m = TWEET_RE.search(url)
-            item = fetch_tweet(http, m.group(1), m.group(2)) if m else fetch_page(http, url)
+            yt = YOUTUBE_RE.search(url)
+            item = fetch_tweet(http, m.group(1), m.group(2)) if m else fetch_youtube(http, url, yt.group(1)) if yt else fetch_page(http, url)
         except Exception as exc:
             print(f"  ! enrich failed for {url}: {exc}")
             item = {"kind": "link", "url": url, "domain": domain(url)}
@@ -123,6 +127,31 @@ def fetch_tweet(http: httpx.Client, user: str, status_id: str) -> dict:
     return item
 
 
+def fetch_youtube(http: httpx.Client, url: str, video_id: str) -> dict:
+    """A YouTube video by its oEmbed (title, channel): the watch page answers a crawler with a consent page or a bot
+    wall. The thumbnail is i.ytimg.com's, which /api/img relays."""
+    item = {
+        "kind": "youtube",
+        "url": url,
+        "domain": "youtube.com",
+        "video_id": video_id,
+        "title": None,
+        "description": None,
+        "image": f"https://i.ytimg.com/vi/{video_id}/hqdefault.jpg",
+        "site": "YouTube",
+    }
+    try:
+        resp = http.get("https://www.youtube.com/oembed", params={"url": f"https://www.youtube.com/watch?v={video_id}", "format": "json"})
+        resp.raise_for_status()
+        data = resp.json()
+        item["title"] = data.get("title") or None
+        if data.get("author_name"):
+            item["channel"] = data["author_name"]
+    except Exception as exc:
+        print(f"  ! youtube oembed failed for {video_id}: {exc}")
+    return item
+
+
 def _meta(soup: BeautifulSoup, *names: str) -> Optional[str]:
     for n in names:
         tag = soup.find("meta", attrs={"property": n}) or soup.find("meta", attrs={"name": n})
@@ -160,6 +189,9 @@ def fetch_page(http: httpx.Client, url: str) -> dict:
         item["image"] = f"{urlparse(final).scheme}://{urlparse(final).netloc}{item['image']}"
     if item.get("description"):
         item["description"] = item["description"][:400]
+    for k in ("title", "description"):
+        if item["kind"] == "youtube" and item.get(k) and YOUTUBE_JUNK.search(item[k]):
+            item[k] = None
     if item["kind"] == "youtube" and not item.get("image"):
         item["image"] = f"https://i.ytimg.com/vi/{item['video_id']}/hqdefault.jpg"
     return item

@@ -156,6 +156,32 @@ const persianShare = (s: string) => {
   return letters.length ? letters.filter((c) => /[؀-ۿ]/.test(c)).length / letters.length : 0;
 };
 
+// A post that only shares a YouTube video (Mehrzad's own episodes are posted as a bare link, and Gholam doesn't always
+// comment on them): listed anyway, its Persian line made from the video's title (Telegram's preview or the oEmbed).
+const YOUTUBE = /(?:youtube\.com\/(?:watch\?(?:[^#\s]*&)?v=|shorts\/|live\/|embed\/)|youtu\.be\/)([\w-]{11})/;
+const WALL_TITLE = /^\s*(?:-\s*)?YouTube\s*$|^Before you continue/i; // YouTube's answer to a crawler, not a title
+export function sharedVideo(raw: RawPost): { id: string; title: string; headline: string; line: string } | null {
+  if ((raw.text.replace(/https?:\/\/\S+/g, '').match(/\p{L}/gu) ?? []).length > 40) return null; // a post with words of its own
+  const urls = [raw.text, ...(raw.links ?? []).map((l) => l.url), raw.preview?.url ?? ''];
+  const id = urls.map((u) => u.match(YOUTUBE)?.[1]).find(Boolean);
+  if (!id) return null;
+  const titles = [...(raw.links ?? []).filter((l) => l.kind === 'youtube' || YOUTUBE.test(l.url)).map((l) => l.title), raw.preview?.title];
+  const title = titles.find((t): t is string => !!t && !WALL_TITLE.test(t))?.trim();
+  if (!title) return null;
+  // «51. Beni: Camera Robot [Persian]» is an episode of Mehrzad's series; «Live 1: …» one of his live streams.
+  const ep = title.match(/^(\d+)\.\s*(.+?)\s*\[Persian\]\s*$/i);
+  if (ep) {
+    const n = faNum(ep[1]);
+    return { id, title, headline: `قسمت ${n} ویدیوهای مهرزاد: ${ep[2]}`, line: `قسمت ${n} از ویدیوهای فارسی مهرزاد صمدی در یوتیوب منتشر شد: «${ep[2]}».` };
+  }
+  const live = title.match(/^Live\s+(\d+)\s*:\s*(.+)$/i);
+  if (live) {
+    const n = faNum(live[1]);
+    return { id, title, headline: `لایو ${n} مهرزاد: ${live[2]}`, line: `لایو ${n} مهرزاد صمدی در یوتیوب: «${live[2]}».` };
+  }
+  return { id, title, headline: `ویدیو: ${title}`, line: `ویدیویی در یوتیوب: «${title}».` };
+}
+
 // The whole channel is about AI: a "هوش مصنوعی" tag would sit on every story and say nothing.
 const HIDDEN_TAGS = new Set(['هوش مصنوعی']);
 
@@ -197,13 +223,17 @@ function shape(raw: RawPost, ids: Set<number>): Post {
   // A story needs Gholam's text in the article too: a reply the pipeline didn't take as a translation leaves it empty.
   const kind: Post['kind'] = raw.digest ? 'digest' : raw.gholam?.text && raw.article.body.length ? 'story' : 'brief';
   const items = kind === 'digest' ? digestItems(raw.text, ids) : [];
-  const body = raw.article.body.length ? raw.article.body : raw.text.split(/\n+/).filter((l) => l.trim() && !/^https?:\/\/\S+$/.test(l.trim()));
+  const video = kind === 'brief' ? sharedVideo(raw) : null;
+  const ownLines = raw.text.split(/\n+/).filter((l) => l.trim() && !/^https?:\/\/\S+$/.test(l.trim()));
+  const body = raw.article.body.length ? raw.article.body : video ? [video.line] : ownLines;
   const title =
     kind === 'digest'
       ? raw.text.split('\n').find((l) => l.trim())?.trim() || 'خلاصه‌ی خبرها'
-      : kind === 'brief'
-        ? firstSentence(body[0] || raw.article.source_title || raw.preview?.title || raw.article.title)
-        : raw.article.title;
+      : video
+        ? video.headline
+        : kind === 'brief'
+          ? firstSentence(body[0] || raw.article.source_title || raw.preview?.title || raw.article.title)
+          : raw.article.title;
   const tags = raw.article.tags.filter((t) => !HIDDEN_TAGS.has(t));
   const words = [...body, raw.article.why ?? ''].join(' ').split(/\s+/).length;
   // The title is the lede's first sentence, so the excerpt picks up where it ends instead of repeating it.
@@ -223,7 +253,7 @@ function shape(raw: RawPost, ids: Set<number>): Post {
     source: links[0] ?? null,
     digestItems: items,
     minutes: Math.max(1, Math.round(words / 200)),
-    listed: kind !== 'brief' || persianShare(body.join(' ')) >= 0.5,
+    listed: kind !== 'brief' || !!video || persianShare(body.join(' ')) >= 0.5,
   };
 }
 
