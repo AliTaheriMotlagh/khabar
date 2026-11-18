@@ -14,6 +14,8 @@ export function GET() {
       href: p.href,
       date: p.date,
       kind: p.kind,
+      // Mehrzad's own video: announced in every notification mode (server/push.js).
+      ...(p.type === 'ویدیوی مهرزاد' && { video: true }),
       tags: p.article.tags,
       thumb: p.cover ? picture(p.cover.src || p.cover.poster, 'small').src : null,
     }));

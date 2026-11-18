@@ -436,3 +436,53 @@ def test_a_crawler_wall_is_not_a_title():
     assert shape.source_title("https://youtu.be/7GNR3Ue7QFU", links, preview) == "51. Beni: Camera Robot [Persian]"
     links = [{"kind": "link", "url": "https://www.youtube.com/live/x", "title": "Before you continue to YouTube"}]
     assert shape.source_title("", links, {"title": "Live 1: News and Graph Engineering"}) == "Live 1: News and Graph Engineering"
+
+
+import json
+
+
+def _ai_client(answers):
+    """An httpx client whose chat endpoint answers with the given JSON objects, in order."""
+    import httpx
+
+    seen = []
+
+    def handler(request):
+        seen.append(json.loads(request.content))
+        return httpx.Response(200, json={"choices": [{"message": {"content": json.dumps(answers.pop(0), ensure_ascii=False)}}]})
+
+    return httpx.Client(transport=httpx.MockTransport(handler)), seen
+
+
+def test_ai_input_is_gholams_text_or_a_shared_video():
+    from pipeline import ai
+    story = {"id": 1, "text": "https://x.com/a/status/1", "links": [{"kind": "tweet", "domain": "x.com"}],
+             "gholam": {"text": "رفقا، اوپن‌ای‌آی یه مدل داده. https://openai.com"}, "article": {"source_title": "New model"}}
+    text = ai.source_input(story)
+    assert "منبع: x.com" in text and "عنوان اصلی: New model" in text and "openai.com" not in text
+    video = {"id": 2, "text": "https://youtu.be/7GNR3Ue7QFU", "links": [{"kind": "link", "url": "https://www.youtube.com/watch?v=7GNR3Ue7QFU", "title": "- YouTube"}],
+             "preview": {"url": "https://youtu.be/7GNR3Ue7QFU", "title": "51. Beni: Camera Robot [Persian]"}, "gholam": None, "article": {}}
+    assert "51. Beni: Camera Robot [Persian]" in ai.source_input(video) and "مهرزاد" in ai.source_input(video)
+    assert ai.source_input({"id": 3, "text": "Hello world", "digest": False, "gholam": None, "article": {}}) is None
+    assert ai.source_input({**story, "digest": True}) is None
+    # Worked out once: again only when the input or the prompt changes.
+    assert ai.is_due(story)
+    story["ai"] = {"v": ai.PROMPT_V, "src": ai.input_hash(text), "title": "…"}
+    assert not ai.is_due(story)
+    story["gholam"]["text"] += " و یه چیز دیگه."
+    assert ai.is_due(story)
+
+
+def test_ai_answers_are_checked_retried_then_left_out():
+    from pipeline import ai
+    post = {"id": 1, "text": "", "links": [], "gholam": {"text": "رفقا، اوپن‌ای‌آی یه مدل تازه داده به اسم GPT-7."}, "article": {}}
+    good = {"title": "اوپن‌ای‌آی مدل تازه‌ی GPT-7 را معرفی کرد.", "short": "مدل GPT-7", "topics": ["اوپن‌ای‌آی", "اوپن‌ای‌آی"], "type": "ابزار و محصول"}
+    chatty = {**good, "title": "رفقا، اوپن‌ای‌آی یه مدل تازه داده به اسم GPT-7"}
+    client, seen = _ai_client([chatty, good])
+    out = ai.work_out(client, post)
+    assert out["title"] == "اوپن‌ای‌آی مدل تازه‌ی GPT-7 را معرفی کرد" and out["topics"] == ["اوپن‌ای‌آی"]
+    assert out["v"] == ai.PROMPT_V and out["src"] == ai.input_hash(ai.source_input(post))
+    assert [r["temperature"] for r in seen] == [0.0, 0.2]
+    assert seen[0]["response_format"]["json_schema"]["schema"]["properties"]["topics"]["items"]["enum"] == ai.TOPICS
+    client, _ = _ai_client([chatty, {**good, "short": ""}])
+    assert ai.work_out(client, post) == {"failed": True, "model": ai.AI_MODEL, "v": ai.PROMPT_V, "src": out["src"]}

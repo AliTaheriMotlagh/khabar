@@ -39,13 +39,21 @@ export type RawPost = {
   preview?: { url?: string; site?: string; title?: string; description?: string; image?: string | null } | null;
   article: { title: string; source_title?: string | null; body: string[]; why?: string | null; why_label?: string | null; tags: string[] };
   updated?: string | null;
+  /** Written by a small LLM (pipeline/ai.py); absent or failed → the rules' headline and topics. */
+  ai?: { title?: string; short?: string; topics?: string[]; type?: StoryType; failed?: boolean; model?: string } | null;
 };
+export const STORY_TYPES = ['خبر', 'ابزار و محصول', 'پژوهش و مقاله', 'آموزش', 'نظر و تحلیل', 'ویدیوی مهرزاد'] as const;
+export type StoryType = (typeof STORY_TYPES)[number];
 
 // ---- shaped for the templates ----
 export type DigestItem = { n: number; text: string; href: string; internal: boolean; id: number };
 export type Post = RawPost & {
   /** story: has Gholam's Persian write-up · digest: the channel's 24-hour summary · brief: a short post without one */
   kind: 'story' | 'digest' | 'brief';
+  /** What sort of story (pipeline/ai.py): news, a tool, a paper…; null without an AI answer. */
+  type: StoryType | null;
+  /** A few words for the story circles and notifications (falls back to the headline). */
+  short: string;
   href: string;
   /** Always a still image (never a video file), for cards, thumbnails and social previews. */
   cover: Media | null;
@@ -224,17 +232,20 @@ function shape(raw: RawPost, ids: Set<number>): Post {
   const kind: Post['kind'] = raw.digest ? 'digest' : raw.gholam?.text && raw.article.body.length ? 'story' : 'brief';
   const items = kind === 'digest' ? digestItems(raw.text, ids) : [];
   const video = kind === 'brief' ? sharedVideo(raw) : null;
+  const ai = kind !== 'digest' && raw.ai?.title && !raw.ai.failed ? raw.ai : null;
   const ownLines = raw.text.split(/\n+/).filter((l) => l.trim() && !/^https?:\/\/\S+$/.test(l.trim()));
   const body = raw.article.body.length ? raw.article.body : video ? [video.line] : ownLines;
   const title =
     kind === 'digest'
       ? raw.text.split('\n').find((l) => l.trim())?.trim() || 'خلاصه‌ی خبرها'
-      : video
+      : ai
+        ? ai.title!
+        : video
         ? video.headline
         : kind === 'brief'
           ? firstSentence(body[0] || raw.article.source_title || raw.preview?.title || raw.article.title)
           : raw.article.title;
-  const tags = raw.article.tags.filter((t) => !HIDDEN_TAGS.has(t));
+  const tags = (ai?.topics ?? raw.article.tags).filter((t) => !HIDDEN_TAGS.has(t));
   const words = [...body, raw.article.why ?? ''].join(' ').split(/\s+/).length;
   // The title is the lede's first sentence, so the excerpt picks up where it ends instead of repeating it.
   const lede = body.join(' ').replace(/\s+/g, ' ').trim();
@@ -245,6 +256,8 @@ function shape(raw: RawPost, ids: Set<number>): Post {
     ...raw,
     links,
     kind,
+    type: ai?.type ?? (video && /^(قسمت|لایو) /.test(video.headline) ? 'ویدیوی مهرزاد' : null),
+    short: ai?.short || clip(title, 48),
     article: { ...raw.article, title, body, tags },
     href: url(`p/${raw.id}/`),
     cover,

@@ -25,7 +25,7 @@ for (;;) {
   await sleep(20_000);
 }
 const since = Date.now() - WINDOW;
-const posts = recent.posts.filter((p) => Date.parse(p.date) >= since).map(({ id, title, tags, kind }) => ({ id, title, tags, kind }));
+const posts = recent.posts.filter((p) => Date.parse(p.date) >= since).map(({ id, title, tags, kind, video }) => ({ id, title, tags, kind: video ? 'video' : kind }));
 if (!posts.length) {
   console.log('Nothing new to announce.');
   process.exit(0);

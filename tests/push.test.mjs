@@ -124,6 +124,12 @@ test('push: subscribe, then each new story announced once, to whom it concerns',
     const later = await send([{ id: 903, title: 'یکی دیگر', tags: [], kind: 'story' }]);
     assert.equal(later.body.subscribers, 3, 'the 410 one is gone');
 
+    // A new video of Mehrzad's reaches every mode, daily and other topics included, with its own line.
+    delivered.clear();
+    await send([{ id: 905, title: 'قسمت ۵۲ ویدیوهای مهرزاد: …', tags: ['کدنویسی'], kind: 'video' }]);
+    assert.equal(delivered.size, 3);
+    assert.equal(daily.read(delivered.get(daily.sub.endpoint)).body, 'ویدیوی تازه‌ی مهرزاد · فیوچر فوکوس');
+
     // Unsubscribe, and the browser's replacement subscription keeps the reader's choice.
     const renewed = browser('https://updates.push.services.mozilla.com/wpush/v2/renewed');
     assert.equal((await call(push.POST, { action: 'renew', old: topics.sub.endpoint, sub: renewed.sub })).status, 200);

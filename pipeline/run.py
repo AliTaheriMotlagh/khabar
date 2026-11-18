@@ -109,8 +109,10 @@ def process(http, tp: telegram.TgPost, refresh_urls: bool = False) -> None:
                 print(f"  ✓ gholam comment for {tp.id}")
             gholam = found
     post["gholam"] = gholam
-    if "gholam_checked" in existing:
-        post["gholam_checked"] = existing["gholam_checked"]
+    # Kept as they are: when their input changes (ai["src"]), pipeline/ai.py works the post out again.
+    for key in ("gholam_checked", "ai"):
+        if key in existing:
+            post[key] = existing[key]
 
     # Linked tweets/pages are only re-read when the post itself changed.
     post["links"] = existing["links"] if not changed and "links" in existing else enrich.enrich_links(http, tp.links)

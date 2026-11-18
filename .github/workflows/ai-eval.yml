@@ -1,0 +1,48 @@
+# The golden set (pipeline/tests/golden.json) on the runner itself: headline rule passes, topic precision/recall next to
+# the keyword rules, type accuracy and seconds per post (python -m pipeline.ai --eval). Run by hand on every prompt or
+# model change. The default model comes from the crawl's Actions cache; another candidate is downloaded uncached, so
+# the cache only ever holds the chosen one (PLAN.md: free-plan guard rails).
+name: ai-eval
+
+on:
+  workflow_dispatch:
+    inputs:
+      candidate:
+        description: 'model'
+        type: choice
+        options: [qwen3.5-4b, qwen3.5-9b]
+        default: qwen3.5-4b
+
+permissions:
+  contents: read
+
+jobs:
+  eval:
+    runs-on: ubuntu-latest
+    timeout-minutes: 90
+    steps:
+      - uses: actions/checkout@v7
+        with:
+          ref: main
+      - uses: actions/setup-python@v7
+        with:
+          python-version: '3.12'
+          cache: pip
+          cache-dependency-path: pipeline/requirements.txt
+      - run: pip install -r pipeline/requirements.txt
+      - uses: actions/cache@v6
+        if: inputs.candidate == 'qwen3.5-4b'
+        with:
+          path: ~/.cache/khabar-ai
+          key: ai-${{ runner.os }}-${{ hashFiles('scripts/ai-server.sh') }}
+      - name: Start the model
+        run: |
+          if [ '${{ inputs.candidate }}' = qwen3.5-9b ]; then
+            export AI_DIR=$RUNNER_TEMP/ai MODEL_REPO=unsloth/Qwen3.5-9B-GGUF MODEL_REV=3885219b6810b007914f3a7950a8d1b469d598a5 \
+              MODEL_FILE=Qwen3.5-9B-Q4_K_M.gguf MODEL_SHA=03b74727a860a56338e042c4420bb3f04b2fec5734175f4cb9fa853daf52b7e8
+          fi
+          AI_MODEL='${{ inputs.candidate }}' scripts/ai-server.sh
+      - run: python -m pipeline.ai --eval | tee "$RUNNER_TEMP/eval.txt"
+        env:
+          AI_MODEL: ${{ inputs.candidate }}
+      - run: tail -8 "$RUNNER_TEMP/eval.txt" >> "$GITHUB_STEP_SUMMARY"

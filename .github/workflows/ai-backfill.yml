@@ -1,0 +1,69 @@
+# AI headlines, topics and types for the older posts (pipeline/ai.py, PLAN.md P1-B): the crawl only does the last few
+# days. Run by hand (Actions → ai-backfill → Run workflow), as often as needed: each run takes the newest posts still
+# without an answer and commits them in chunks, so a crawl in between is never held up and nothing done is lost.
+# Free on a public repo's standard runner; the model comes from the same Actions cache as the crawl's.
+name: ai-backfill
+
+on:
+  workflow_dispatch:
+    inputs:
+      posts:
+        description: 'how many posts at most (≈10–20 s each on the runner)'
+        default: '400'
+      chunk:
+        description: 'posts per commit (each commit redeploys Vercel)'
+        default: '100'
+
+permissions:
+  contents: write
+
+concurrency:
+  group: ai-backfill
+  cancel-in-progress: false
+
+jobs:
+  backfill:
+    runs-on: ubuntu-latest
+    timeout-minutes: 340
+    steps:
+      - uses: actions/checkout@v7
+        with:
+          ref: main
+      - uses: actions/setup-python@v7
+        with:
+          python-version: '3.12'
+          cache: pip
+          cache-dependency-path: pipeline/requirements.txt
+      - run: pip install -r pipeline/requirements.txt
+      - uses: actions/cache@v6
+        with:
+          path: ~/.cache/khabar-ai
+          key: ai-${{ runner.os }}-${{ hashFiles('scripts/ai-server.sh') }}
+      - run: scripts/ai-server.sh
+      - name: Work out and commit, chunk by chunk
+        env:
+          TOTAL: ${{ inputs.posts }}
+          CHUNK: ${{ inputs.chunk }}
+        run: |
+          git config --global user.name 'github-actions[bot]'
+          git config --global user.email '41898283+github-actions[bot]@users.noreply.github.com'
+          left=$TOTAL
+          while [ "$left" -gt 0 ]; do
+            n=$(( left < CHUNK ? left : CHUNK ))
+            # Start from main as it is now: the crawl commits in between.
+            git pull -q --rebase origin main
+            [ "$(python -m pipeline.ai --pending --all)" -gt 0 ] || { echo 'every post has an answer'; break; }
+            python -m pipeline.ai --all --limit=$n
+            git add data
+            git diff --cached --quiet && break
+            git commit -qm "data: AI headlines for $n older posts"
+            pushed=
+            for attempt in 1 2 3 4; do
+              if git pull --rebase -q origin main && git push -q origin HEAD:main; then pushed=1; break; fi
+              git rebase --abort 2>/dev/null || true
+              sleep $((attempt * 5))
+            done
+            # A post the crawl changed meanwhile: drop this chunk, the next run (or chunk) does it again.
+            [ -n "$pushed" ] || { echo "::warning::chunk conflicted with a crawl; skipped"; git reset -q --hard FETCH_HEAD; }
+            left=$(( left - n ))
+          done

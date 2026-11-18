@@ -6,6 +6,7 @@
 // POST /api/push { action: 'test', endpoint }                      a test notification to this (subscribed) browser:
 //      the reader checks it works on their phone; only to a subscription already stored, a few an hour.
 // POST /api/push { action: 'send', posts: [{ id, title, tags, kind }] }   Authorization: Bearer PUSH_SECRET
+//   kind: 'story' | 'digest' | 'video' (a new video of Mehrzad's: every mode hears about it)
 //      Called by the site workflow (scripts/notify.mjs) once the new stories are live. Each post is announced once
 //      (`push:sent`); the very first call only records what is already out, so turning this on announces nothing old.
 // Keys: push:subs (hash: endpoint hash → { sub, mode, topics, at }) · push:sent (zset: post id → when announced)
@@ -75,10 +76,11 @@ export async function POST(request) {
   return fail(request, 400, 'bad action');
 }
 
-/** What one subscriber hears about: everything, the stories of their topics, or the daily summary only. */
+/** What one subscriber hears about: everything, the stories of their topics, or the daily summary only — and in
+ *  every mode, a new video of Mehrzad's (the channel's owner). */
 export function pick(rec, posts) {
-  if (rec.mode === 'daily') return posts.filter((p) => p.kind === 'digest');
-  if (rec.mode === 'topics') return posts.filter((p) => p.kind !== 'digest' && p.tags.some((t) => rec.topics.includes(t)));
+  if (rec.mode === 'daily') return posts.filter((p) => p.kind === 'digest' || p.kind === 'video');
+  if (rec.mode === 'topics') return posts.filter((p) => p.kind === 'video' || (p.kind !== 'digest' && p.tags.some((t) => rec.topics.includes(t))));
   return posts;
 }
 
@@ -88,7 +90,13 @@ export function message(posts, origin) {
   const first = posts[0];
   return {
     title: one ? first.title : `${posts.length.toLocaleString('fa-IR')} خبر تازه در ${SITE_NAME}`,
-    body: one ? (first.kind === 'digest' ? `خلاصه‌ی خبرهای امروز · ${SITE_NAME}` : `${first.tags[0] ? `${first.tags[0]} · ` : ''}${SITE_NAME}`) : posts.slice(0, 3).map((p) => `• ${p.title}`).join('\n'),
+    body: one
+      ? first.kind === 'digest'
+        ? `خلاصه‌ی خبرهای امروز · ${SITE_NAME}`
+        : first.kind === 'video'
+          ? `ویدیوی تازه‌ی مهرزاد · ${SITE_NAME}`
+          : `${first.tags[0] ? `${first.tags[0]} · ` : ''}${SITE_NAME}`
+      : posts.slice(0, 3).map((p) => `• ${p.title}`).join('\n'),
     url: one ? `${origin}/p/${first.id}/` : `${origin}/`,
     tag: 'news',
   };
@@ -99,7 +107,7 @@ async function send(request, body) {
   if (!secret || request.headers.get('authorization') !== `Bearer ${secret}`) return fail(request, 401, 'unauthorized');
   const posts = (Array.isArray(body.posts) ? body.posts : [])
     .slice(0, 50)
-    .map((p) => ({ id: postId(p?.id), title: cleanText(p?.title, 160).replace(/\n/g, ' '), tags: (Array.isArray(p?.tags) ? p.tags : []).map((t) => cleanText(t, 40)).slice(0, 5), kind: p?.kind === 'digest' ? 'digest' : 'story' }))
+    .map((p) => ({ id: postId(p?.id), title: cleanText(p?.title, 160).replace(/\n/g, ' '), tags: (Array.isArray(p?.tags) ? p.tags : []).map((t) => cleanText(t, 40)).slice(0, 5), kind: ['digest', 'video'].includes(p?.kind) ? p.kind : 'story' }))
     .filter((p) => p.id && p.title);
   if (!posts.length) return json(request, { sent: 0, posts: 0 });
 
