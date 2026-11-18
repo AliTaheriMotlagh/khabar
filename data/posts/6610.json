@@ -1,0 +1,86 @@
+{
+ "id": 6610,
+ "url": "https://t.me/dlmehr/6610",
+ "date": "2026-11-18T15:11:04+00:00",
+ "text": "https://fxtwitter.com/kimmonismus/status/2123035118474609101?a=J3QXYbBRz_ScKBfK96U&s=52",
+ "forwarded_from": null,
+ "digest": false,
+ "hash": "31ba72db87dc",
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/kimmonismus/status/2123035118474609101?a=J3QXYbBRz_ScKBfK96U&s=52",
+  "site": "🧵 Thread • FxTwitter",
+  "title": "Chubby ♨️ (@kimmonismus)",
+  "description": "This is a super interesting paper and Recursive self-improvement keeps coming closer. New Google preprint:\nGoogle had AI rewrite an agents harness and keep a log of every change, why it made it and whether it worked. Then they swapped Opus 5.5 for Gemini…",
+  "image": "https://cdn4.telesco.pe/file/uYdHyP1YbmbLiWDazsh6X3BH_z20aURPEl2dfQ3e-sFVs9LflKy4cOw5ft81xdXtjh4v_h8NcPYR1Jb_tmil5wpTV2jo7nqNavi7s1qR3lKU_odk1nY4Q6q5kNiPw946QmxTYH7v6qM13Qzg0wmGx7doyHkXsQ0ynkWHqu2qAe3W93w-bh7IOH_YANzbWKFVPOmf4_zIdpF3MX7sofFoZGivSJ1B80LIjK5WFH3MdwXCh_8Ik25gRV2HuLdWBmHGlk6zqUD8wl-yGYoz-sfdsBJ0cvQW21mQe0gNp5oPUm7dvXHfY_JS8dwQ0n-vHEdQD259pilGopuKAnDufjC6Pw.jpg"
+ },
+ "gholam": {
+  "text": "سلام رفقا، یه پست جالب اومده که یه پیش‌چاپ جدید از پژوهشگرای گوگل و دانشگاه ایالتی پنسیلوانیا (نوامبر ۲۰۲۶) رو معرفی می‌کنه؛ موضوعش اینه که وقتی مدل هوش مصنوعی عوض می‌شه، دیگه لازم نباشه همه‌چیز رو از صفر شروع کنن. تو این مقاله یه «حافظه خودبهبودی» (SIM) طراحی کردن که عین دفترچه تجربه یه اوستاکارِ خوش‌حساب، ثبت می‌کنه هر تغییر تو ساختار کمکیِ عامل (harness) به چه دلیلی انجام شده و نتیجه‌ش چی بوده تا مدل بعدی ادامه کار رو از همون‌جا بگیره. 📝\n\n• طبق نمودار مقاله تو انتقال از مدل Opus 5.5 به Gemini 3.8 Flash، با این حافظه امتیاز بخش Workspace به ۸۴.۷۵ رسیده و بدون اون ۷۳.۴۲ شده؛ تو سه حوزه دیگه مثل کدنویسی، دسته‌بندی متن و مهندسی هم امتیاز نهایی بالاتری گرفته.\n• چکیده مقاله می‌گه تو ۱۰ اجرای کدنویسی، میانگین امتیاز این روش ۲.۳۶ نمره از حالت بدون حافظه بهتر بوده و نویسنده پست هم اشاره کرده تو ۹ مورد از ۱۰ اجرا جلو افتاده.\n• جدول نتایج روی نسل‌های جمینای هم نشون می‌ده این روش روی مدل‌های ۲.۵، ۳.۵ و ۳.۸ فلش از بهینه‌سازیِ از نو بهتر عمل کرده، هرچند روی مدل «۴ آرگون» بهینه‌سازی مستقل کمی بالاتر (۹۵.۶ در برابر ۹۴.۸) ثبت شده.\n\nبه گفته نویسنده این پست، نکته اصلیش اینه که با اومدن مدل جدید، تجربه‌های قبلی دور ریخته نمی‌شن و کم‌کم رو هم جمع می‌شن.",
+  "date": "2026-11-18T15:11:35+00:00"
+ },
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/kimmonismus/status/2123035118474609101",
+   "domain": "x.com",
+   "author": {
+    "name": "Chubby♨️",
+    "handle": "kimmonismus",
+    "avatar": "https://pbs.twimg.com/profile_images/1728327996375719936/RW7VBJfD_200x200.jpg"
+   },
+   "text": "This is a super interesting paper and Recursive self-improvement keeps coming closer. New Google preprint:\n\nGoogle had  AI rewrite an agents harness and keep a log of every change, why it made it and whether it worked. Then they swapped Opus 5.5 for Gemini 3.8 Flash and let it keep going.\n\nWith the log: 84.75 on workplace tasks, without: 73.42. In coding it came out ahead in 9 of 10 runs.\n\ntl;dr a new model no longer means starting from scratch. That's where it compounds.",
+   "date": 1795005990,
+   "media": [
+    {
+     "type": "image",
+     "src": "https://pbs.twimg.com/media/HXaJGS4bkAAw58s.jpg?name=orig",
+     "ratio": 0.785
+    },
+    {
+     "type": "image",
+     "src": "https://pbs.twimg.com/media/HXaJI1waUAAMXhk.jpg?name=orig",
+     "ratio": 0.95
+    },
+    {
+     "type": "image",
+     "src": "https://pbs.twimg.com/media/HXaJKGNaIAA3vPv.jpg?name=orig",
+     "ratio": 0.5483
+    },
+    {
+     "type": "image",
+     "src": "https://pbs.twimg.com/media/HXaJK8WaYAAv42Z.jpg?name=orig",
+     "ratio": 0.2315
+    }
+   ],
+   "links": []
+  }
+ ],
+ "article": {
+  "title": "یه پست جالب اومده که یه پیش‌چاپ جدید از پژوهشگرای گوگل و دانشگاه ایالتی پنسیلوانیا (نوامبر ۲۰۲۶) رو معرفی می‌کنه",
+  "source_title": "This is a super interesting paper and Recursive self-improvement keeps coming closer. New Google preprint:",
+  "body": [
+   "یه پست جالب اومده که یه پیش‌چاپ جدید از پژوهشگرای گوگل و دانشگاه ایالتی پنسیلوانیا (نوامبر ۲۰۲۶) رو معرفی می‌کنه؛ موضوعش اینه که وقتی مدل هوش مصنوعی عوض می‌شه، دیگه لازم نباشه همه‌چیز رو از صفر شروع کنن. تو این مقاله یه «حافظه خودبهبودی» (SIM) طراحی کردن که عین دفترچه تجربه یه اوستاکارِ خوش‌حساب، ثبت می‌کنه هر تغییر تو ساختار کمکیِ عامل (harness) به چه دلیلی انجام شده و نتیجه‌ش چی بوده تا مدل بعدی ادامه کار رو از همون‌جا بگیره. 📝",
+   "• طبق نمودار مقاله تو انتقال از مدل Opus 5.5 به Gemini 3.8 Flash، با این حافظه امتیاز بخش Workspace به ۸۴.۷۵ رسیده و بدون اون ۷۳.۴۲ شده؛ تو سه حوزه دیگه مثل کدنویسی، دسته‌بندی متن و مهندسی هم امتیاز نهایی بالاتری گرفته.",
+   "• چکیده مقاله می‌گه تو ۱۰ اجرای کدنویسی، میانگین امتیاز این روش ۲.۳۶ نمره از حالت بدون حافظه بهتر بوده و نویسنده پست هم اشاره کرده تو ۹ مورد از ۱۰ اجرا جلو افتاده.",
+   "• جدول نتایج روی نسل‌های جمینای هم نشون می‌ده این روش روی مدل‌های ۲.۵، ۳.۵ و ۳.۸ فلش از بهینه‌سازیِ از نو بهتر عمل کرده، هرچند روی مدل «۴ آرگون» بهینه‌سازی مستقل کمی بالاتر (۹۵.۶ در برابر ۹۴.۸) ثبت شده."
+  ],
+  "why": "به گفته نویسنده این پست، نکته اصلیش اینه که با اومدن مدل جدید، تجربه‌های قبلی دور ریخته نمی‌شن و کم‌کم رو هم جمع می‌شن.",
+  "why_label": "حرف آخر",
+  "tags": [
+   "گوگل"
+  ]
+ },
+ "updated": "2026-11-18T15:15:34+00:00",
+ "ai": {
+  "title": "پیش‌چاپ گوگل: حافظه خودبهبودی (SIM) تجربه مدل‌های قبلی را حفظ می‌کند",
+  "short": "حافظه خودبهبودی گوگل",
+  "topics": [
+   "گوگل",
+   "کدنویسی"
+  ],
+  "type": "پژوهش و مقاله",
+  "model": "qwen3.5-9b-q4_k_m",
+  "v": 1,
+  "src": "05933d592f72"
+ }
+}
