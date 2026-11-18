@@ -119,6 +119,36 @@
    "name_en": "Wevolver",
    "name_fa": "ویولور",
    "kind": "company"
+  },
+  {
+   "slug": "google",
+   "name_en": "Google",
+   "name_fa": "گوگل",
+   "kind": "company"
+  },
+  {
+   "slug": "spirit-airlines",
+   "name_en": "Spirit Airlines",
+   "name_fa": "اسپیریت ایرلاینز",
+   "kind": "company"
+  },
+  {
+   "slug": "gemini",
+   "name_en": "Gemini",
+   "name_fa": "جمینای",
+   "kind": "product"
+  },
+  {
+   "slug": "roborock",
+   "name_en": "Roborock",
+   "name_fa": "روبوراک",
+   "kind": "product"
+  },
+  {
+   "slug": "unitree-g1",
+   "name_en": "Unitree G1",
+   "name_fa": "یونیتی‌رِی G1",
+   "kind": "product"
   }
  ]
 }
