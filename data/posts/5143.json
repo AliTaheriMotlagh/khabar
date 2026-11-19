@@ -53,5 +53,16 @@
   ]
  },
  "updated": "2026-10-25T12:27:55+00:00",
- "gholam_checked": "2026-10-25T12:27:55+00:00"
+ "gholam_checked": "2026-10-25T12:27:55+00:00",
+ "ai": {
+  "title": "مدل MAI-Image-2.6-Flash از GPT-Image-2 دو برابر سریع‌تر و با هزینه کمتر",
+  "short": "MAI-Image-2.6-Flash سریع‌تر",
+  "topics": [
+   "تصویر و ویدیو"
+  ],
+  "type": "ابزار و محصول",
+  "model": "qwen3.5-9b-q4_k_m",
+  "v": 2,
+  "src": "a6af24aa0291"
+ }
 }

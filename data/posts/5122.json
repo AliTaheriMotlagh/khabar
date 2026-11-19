@@ -69,5 +69,16 @@
   ]
  },
  "updated": "2026-10-25T12:28:02+00:00",
- "gholam_checked": "2026-10-25T12:28:02+00:00"
+ "gholam_checked": "2026-10-25T12:28:02+00:00",
+ "ai": {
+  "title": "شواهدی از دو مدل جدید GPT-6-Astra و GPT-6-Astra-Aeon در کدهای Codex",
+  "short": "مدل‌های جدید GPT-6",
+  "topics": [
+   "اوپن‌ای‌آی"
+  ],
+  "type": "خبر",
+  "model": "qwen3.5-9b-q4_k_m",
+  "v": 2,
+  "src": "1a68f88d21f5"
+ }
 }
