@@ -497,6 +497,24 @@
    "name_en": "Kathy Himmer",
    "name_fa": "کیسی هندمر",
    "kind": "person"
+  },
+  {
+   "slug": "alljoined",
+   "name_en": "Alljoined",
+   "name_fa": "آل‌جویند",
+   "kind": "company"
+  },
+  {
+   "slug": "air-o",
+   "name_en": "AIR-O",
+   "name_fa": "ای‌آر-او",
+   "kind": "model"
+  },
+  {
+   "slug": "ant",
+   "name_en": "ANT",
+   "name_fa": "آنت",
+   "kind": "product"
   }
  ]
 }
