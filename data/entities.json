@@ -431,6 +431,12 @@
    "name_en": "Ashen One",
    "name_fa": "اشن وان",
    "kind": "person"
+  },
+  {
+   "slug": "gpt-6-astra",
+   "name_en": "GPT-6 Astra",
+   "name_fa": "GPT-6 استرا",
+   "kind": "model"
   }
  ]
 }
