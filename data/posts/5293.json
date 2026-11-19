@@ -52,5 +52,16 @@
   ]
  },
  "updated": "2026-10-25T12:27:00+00:00",
- "gholam_checked": "2026-10-25T12:27:00+00:00"
+ "gholam_checked": "2026-10-25T12:27:00+00:00",
+ "ai": {
+  "title": "Cognichip ابزار ACI Enterprise را برای طراحی چیپ معرفی کرد",
+  "short": "ACI Enterprise از Cognichip",
+  "topics": [
+   "تراشه"
+  ],
+  "type": "ابزار و محصول",
+  "model": "qwen3.5-9b-q4_k_m",
+  "v": 2,
+  "src": "e1ee17590f36"
+ }
 }

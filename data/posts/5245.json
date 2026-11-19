@@ -73,5 +73,16 @@
   ]
  },
  "updated": "2026-10-25T12:27:17+00:00",
- "gholam_checked": "2026-10-25T12:27:17+00:00"
+ "gholam_checked": "2026-10-25T12:27:17+00:00",
+ "ai": {
+  "title": "شرکت Cognition قابلیت Devin Voice را معرفی کرد: کدنویسی با مکالمه تلفنی",
+  "short": "Devin Voice با مکالمه",
+  "topics": [
+   "کدنویسی"
+  ],
+  "type": "ابزار و محصول",
+  "model": "qwen3.5-9b-q4_k_m",
+  "v": 2,
+  "src": "cd8733fcbf7a"
+ }
 }

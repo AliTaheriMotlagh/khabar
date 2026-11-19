@@ -67,5 +67,16 @@
   ]
  },
  "updated": "2026-10-25T12:26:55+00:00",
- "gholam_checked": "2026-10-25T12:26:55+00:00"
+ "gholam_checked": "2026-10-25T12:26:55+00:00",
+ "ai": {
+  "title": "گوگل مدل‌های مکالمه‌ای جدید Gemini 3.8 Live و Extended Thinking را معرفی کرد",
+  "short": "Gemini 3.8 Live گوگل",
+  "topics": [
+   "گوگل"
+  ],
+  "type": "ابزار و محصول",
+  "model": "qwen3.5-9b-q4_k_m",
+  "v": 2,
+  "src": "a46d4528f1aa"
+ }
 }

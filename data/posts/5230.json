@@ -52,5 +52,17 @@
   ]
  },
  "updated": "2026-10-25T12:27:23+00:00",
- "gholam_checked": "2026-10-25T12:27:23+00:00"
+ "gholam_checked": "2026-10-25T12:27:23+00:00",
+ "ai": {
+  "title": "DeepSeek V4.1 Flash با هزینه ۱.۴ درصدی به ۹۸ درصد نمره GPT-6 Astra رسید",
+  "short": "DeepSeek V4.1 Flash",
+  "topics": [
+   "چین",
+   "متن‌باز"
+  ],
+  "type": "پژوهش و مقاله",
+  "model": "qwen3.5-9b-q4_k_m",
+  "v": 2,
+  "src": "fd07e7e6342a"
+ }
 }

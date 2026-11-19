@@ -39,5 +39,14 @@
   "tags": []
  },
  "updated": "2026-10-25T12:27:07+00:00",
- "gholam_checked": "2026-10-25T12:27:07+00:00"
+ "gholam_checked": "2026-10-25T12:27:07+00:00",
+ "ai": {
+  "title": "مهرزاد صمدی در قسمت ۴۵: تکنیک Speculative Decoding برای سرعت بخشیدن به مدل‌ها",
+  "short": "آموزش Speculative Decoding",
+  "topics": [],
+  "type": "ویدیوی مهرزاد",
+  "model": "qwen3.5-9b-q4_k_m",
+  "v": 2,
+  "src": "51b02ca5bfaf"
+ }
 }

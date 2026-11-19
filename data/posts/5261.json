@@ -52,5 +52,16 @@
   ]
  },
  "updated": "2026-10-25T12:27:10+00:00",
- "gholam_checked": "2026-10-25T12:27:10+00:00"
+ "gholam_checked": "2026-10-25T12:27:10+00:00",
+ "ai": {
+  "title": "Cognition قابلیت Fusion را به Devin اضافه کرد: کاهش هزینه تا ۳۹ درصد",
+  "short": "Fusion در Devin",
+  "topics": [
+   "کدنویسی"
+  ],
+  "type": "ابزار و محصول",
+  "model": "qwen3.5-9b-q4_k_m",
+  "v": 2,
+  "src": "33acfb51d5fc"
+ }
 }

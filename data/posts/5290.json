@@ -69,5 +69,14 @@
   ]
  },
  "updated": "2026-10-25T12:27:01+00:00",
- "gholam_checked": "2026-10-25T12:27:01+00:00"
+ "gholam_checked": "2026-10-25T12:27:01+00:00",
+ "ai": {
+  "title": "مدل Atria Dawn Preview: دستیار ایجنتیک برای پژوهش‌های علمی سنگین",
+  "short": "مدل Atria Dawn",
+  "topics": [],
+  "type": "ابزار و محصول",
+  "model": "qwen3.5-9b-q4_k_m",
+  "v": 2,
+  "src": "4a506eef7b9e"
+ }
 }

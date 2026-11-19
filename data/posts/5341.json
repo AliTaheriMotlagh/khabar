@@ -53,5 +53,14 @@
   "tags": []
  },
  "updated": "2026-10-25T12:26:43+00:00",
- "gholam_checked": "2026-10-25T12:26:43+00:00"
+ "gholam_checked": "2026-10-25T12:26:43+00:00",
+ "ai": {
+  "title": "QuiverAI مدل جدید Arrow 2 را معرفی کرد: ساخت وکتور دقیق و سریع",
+  "short": "مدل Arrow 2 از QuiverAI",
+  "topics": [],
+  "type": "ابزار و محصول",
+  "model": "qwen3.5-9b-q4_k_m",
+  "v": 2,
+  "src": "8022eaaa8784"
+ }
 }
