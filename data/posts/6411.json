@@ -59,15 +59,15 @@
  },
  "updated": "2026-11-09T19:05:28+00:00",
  "ai": {
-  "title": "آنتروپیک مدل‌های Claude Fable 5.2 و Mythos 5.2 را برای چالش‌های فنی معرفی کرد",
-  "short": "Claude Fable 5.2 و Mythos",
+  "title": "کلود مدل‌های Claude Fable 5.2 و Mythos 5.2 را برای چالش‌های فنی معرفی کرد",
+  "short": "Claude Fable و Mythos 5.2",
   "topics": [
    "آنتروپیک",
    "کدنویسی"
   ],
   "type": "ابزار و محصول",
   "model": "qwen3.5-9b-q4_k_m",
-  "v": 1,
+  "v": 2,
   "src": "6ac34593d788"
  }
 }

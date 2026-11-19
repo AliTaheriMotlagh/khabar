@@ -63,16 +63,15 @@
  },
  "updated": "2026-11-09T12:46:23+00:00",
  "ai": {
-  "title": "Serve Robotics خط کسب‌وکار Physical AI Services را برای فروش زیرساخت ربات‌ها راه انداخت",
+  "title": "Serve Robotics خط جدید Physical AI Services را برای فروش زیرساخت ربات راه انداخت",
   "short": "Serve Robotics: Physical AI Services",
   "topics": [
-   "استارتاپ",
-   "کسب‌وکار",
-   "رباتیک"
+   "رباتیک",
+   "کسب‌وکار"
   ],
   "type": "خبر",
   "model": "qwen3.5-9b-q4_k_m",
-  "v": 1,
+  "v": 2,
   "src": "4aa77d7db35a"
  }
 }

@@ -68,15 +68,14 @@
  },
  "updated": "2026-11-10T04:17:21+00:00",
  "ai": {
-  "title": "متا با Muse Wonder حافظه و تمرکز مدل‌های Meta AI را تقویت کرد",
-  "short": "Meta AI: Muse Wonder",
+  "title": "متا با Muse Wonder فراموشی چت‌بات‌ها را ۲.۴ برابر کاهش داد",
+  "short": "Muse Wonder در متا",
   "topics": [
-   "متا",
-   "ایجنت"
+   "متا"
   ],
   "type": "ابزار و محصول",
   "model": "qwen3.5-9b-q4_k_m",
-  "v": 1,
+  "v": 2,
   "src": "dd8bab437a8f"
  }
 }

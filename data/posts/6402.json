@@ -55,13 +55,10 @@
  "ai": {
   "title": "اتصال OpenTable به OpenAI در سپتامبر ۱۹۰ هزار رزرو رستوران ایجاد کرد",
   "short": "OpenTable و OpenAI",
-  "topics": [
-   "آنتروپیک",
-   "کسب‌وکار"
-  ],
+  "topics": [],
   "type": "خبر",
   "model": "qwen3.5-9b-q4_k_m",
-  "v": 1,
+  "v": 2,
   "src": "e300e764f3e4"
  }
 }

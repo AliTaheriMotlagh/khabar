@@ -58,5 +58,14 @@
    "تراشه"
   ]
  },
- "updated": "2026-11-05T21:03:23+00:00"
+ "updated": "2026-11-05T21:03:23+00:00",
+ "ai": {
+  "title": "World Labs مدل Atlas را در Frameboy دموی کرد: ۱۵ فریم در ثانیه برای کنترل دوربین",
+  "short": "Frameboy با مدل Atlas",
+  "topics": [],
+  "type": "ابزار و محصول",
+  "model": "qwen3.5-9b-q4_k_m",
+  "v": 2,
+  "src": "1050b4e7cfb0"
+ }
 }

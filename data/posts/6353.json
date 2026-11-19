@@ -67,15 +67,12 @@
  },
  "updated": "2026-11-09T19:05:29+00:00",
  "ai": {
-  "title": "Julius AI بنچمارک DeepFinance را منتشر کرد: بهترین مدل‌ها فقط ۵۴.۶ امتیاز گرفتند",
-  "short": "DeepFinance بنچمارک",
-  "topics": [
-   "آنتروپیک",
-   "کسب‌وکار"
-  ],
-  "type": "پژوهش و مقاله",
+  "title": "Julius AI بنچمارک DeepFinance را آورد تا مدل‌های مالی را در معاملات کلان بسنجد",
+  "short": "بنچمارک DeepFinance",
+  "topics": [],
+  "type": "ابزار و محصول",
   "model": "qwen3.5-9b-q4_k_m",
-  "v": 1,
+  "v": 2,
   "src": "8271c9dfb0ff"
  }
 }
