@@ -551,6 +551,18 @@
    "name_en": "GPT-Synopsys",
    "name_fa": "جی‌پی‌تی-سنوپسیس",
    "kind": "model"
+  },
+  {
+   "slug": "kuroko",
+   "name_en": "Kuroko",
+   "name_fa": "کوروکو",
+   "kind": "model"
+  },
+  {
+   "slug": "sesame",
+   "name_en": "Sesame",
+   "name_fa": "سزیم",
+   "kind": "company"
   }
  ]
 }
