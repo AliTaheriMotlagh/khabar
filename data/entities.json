@@ -377,6 +377,18 @@
    "name_en": "Gestalt",
    "name_fa": "جستالت",
    "kind": "model"
+  },
+  {
+   "slug": "genie-4",
+   "name_en": "Genie 4",
+   "name_fa": "جنی ۴",
+   "kind": "model"
+  },
+  {
+   "slug": "project-genie",
+   "name_en": "Project Genie",
+   "name_fa": "پروژه جنی",
+   "kind": "product"
   }
  ]
 }
