@@ -52,5 +52,16 @@
   ]
  },
  "updated": "2026-10-25T12:25:47+00:00",
- "gholam_checked": "2026-10-25T12:25:47+00:00"
+ "gholam_checked": "2026-10-25T12:25:47+00:00",
+ "ai": {
+  "title": "Cline مدل رایگان Pixel Canary را عرضه کرد که در بنچمارک Next.js Agent Evals به GPT-6 Astra نزدیک شده",
+  "short": "مدل رایگان Pixel Canary در Cline",
+  "topics": [
+   "کدنویسی"
+  ],
+  "type": "ابزار و محصول",
+  "model": "qwen3.5-9b-q4_k_m",
+  "v": 2,
+  "src": "6838f75c78eb"
+ }
 }

@@ -50,5 +50,16 @@
   ]
  },
  "updated": "2026-10-25T12:25:19+00:00",
- "gholam_checked": "2026-10-25T12:25:19+00:00"
+ "gholam_checked": "2026-10-25T12:25:19+00:00",
+ "ai": {
+  "title": "FTC تحقیقات رسمی را علیه OpenAI و Anthropic آغاز کرد",
+  "short": "FTC علیه OpenAI و Anthropic",
+  "topics": [
+   "آنتروپیک"
+  ],
+  "type": "خبر",
+  "model": "qwen3.5-9b-q4_k_m",
+  "v": 2,
+  "src": "7168c4ffa5fa"
+ }
 }

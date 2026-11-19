@@ -70,5 +70,11 @@
   ]
  },
  "updated": "2026-10-25T12:25:40+00:00",
- "gholam_checked": "2026-10-25T12:25:40+00:00"
+ "gholam_checked": "2026-10-25T12:25:40+00:00",
+ "ai": {
+  "failed": true,
+  "model": "qwen3.5-9b-q4_k_m",
+  "v": 2,
+  "src": "7cbfd05bbf98"
+ }
 }

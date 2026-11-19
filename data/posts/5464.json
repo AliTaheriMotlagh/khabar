@@ -55,5 +55,16 @@
   ]
  },
  "updated": "2026-10-25T12:25:56+00:00",
- "gholam_checked": "2026-10-25T12:25:56+00:00"
+ "gholam_checked": "2026-10-25T12:25:56+00:00",
+ "ai": {
+  "title": "Fish Audio مدل Drama 3 را آورد: کنترل صدای هوش مصنوعی با دستور ساده",
+  "short": "مدل Drama 3 از Fish Audio",
+  "topics": [
+   "صدا و موسیقی"
+  ],
+  "type": "ابزار و محصول",
+  "model": "qwen3.5-9b-q4_k_m",
+  "v": 2,
+  "src": "ed1f865c73fa"
+ }
 }

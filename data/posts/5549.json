@@ -44,5 +44,14 @@
   "tags": []
  },
  "updated": "2026-10-25T12:25:27+00:00",
- "gholam_checked": "2026-10-25T12:25:27+00:00"
+ "gholam_checked": "2026-10-25T12:25:27+00:00",
+ "ai": {
+  "title": "Decisions API با موتور لونا: تصمیم‌گیری سریع با ورودی تصویری",
+  "short": "Decisions API با لونا",
+  "topics": [],
+  "type": "ابزار و محصول",
+  "model": "qwen3.5-9b-q4_k_m",
+  "v": 2,
+  "src": "6efdbbe8e1c3"
+ }
 }
