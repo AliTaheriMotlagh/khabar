@@ -62,5 +62,16 @@
    "متن‌باز"
   ]
  },
- "updated": "2026-10-25T11:53:59+00:00"
+ "updated": "2026-10-25T11:53:59+00:00",
+ "ai": {
+  "title": "Together AI سرویس Together Post-Training را راه‌اندازی کرد تا مدل‌های متن‌باز را شخصی‌سازی کنید",
+  "short": "Together Post-Training فعال شد",
+  "topics": [
+   "متن‌باز"
+  ],
+  "type": "ابزار و محصول",
+  "model": "qwen3.5-9b-q4_k_m",
+  "v": 2,
+  "src": "2b2fd748bb79"
+ }
 }
