@@ -1,0 +1,122 @@
+{
+ "id": 6638,
+ "url": "https://t.me/dlmehr/6638",
+ "date": "2026-11-19T15:48:25+00:00",
+ "text": "https://fxtwitter.com/kimmonismus/status/2123431161276015030?a=FuzqyxIkcPAe4uOygaU&s=52",
+ "forwarded_from": null,
+ "digest": false,
+ "hash": "acb7543fd495",
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/kimmonismus/status/2123431161276015030?a=FuzqyxIkcPAe4uOygaU&s=52",
+  "site": "FxTwitter",
+  "title": "Chubby ♨️ (@kimmonismus)",
+  "description": "And so it begins: Anthropic just rang the opening bell at Nasdaq. This is going to be a record IPO.",
+  "image": null
+ },
+ "gholam": {
+  "text": "رفیق، کاربر توئیتری «kimmonismus» توی یه پست کوتاه نوشته شرکت آنتروپیک (Anthropic) زنگ آغاز معاملات بورس نزدک (Nasdaq) رو به صدا درآورده و پیش‌بینی کرده قراره یه عرضه اولیه (IPO) رکوردشکن باشه. 🔔 البته هیچ عدد و رقم، تاریخ یا تصویری از این پست در دسترس نیست و فعلاً همه‌چیز در حد همین ادعا و پیش‌بینی کوتاه از طرف نویسنده‌ست.",
+  "date": "2026-11-19T15:48:42+00:00"
+ },
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/kimmonismus/status/2123431161276015030",
+   "domain": "x.com",
+   "author": {
+    "name": "Chubby♨️",
+    "handle": "kimmonismus",
+    "avatar": "https://pbs.twimg.com/profile_images/1728327996375719936/RW7VBJfD_200x200.jpg"
+   },
+   "text": "And so it begins: Anthropic just rang the opening bell at Nasdaq. This is going to be a record IPO. ",
+   "date": 1795100414,
+   "media": [
+    {
+     "type": "video",
+     "src": "https://video.twimg.com/amplify_video/2123424321250934784/vid/avc1/1180x650/uaduyobHhYAajQWN.mp4?tag=29",
+     "poster": "https://pbs.twimg.com/amplify_video_thumb/2123424321250934784/img/4lzhZ7GX31rDvMAM.jpg",
+     "ratio": 0.5508,
+     "duration": 19.595,
+     "gif": false
+    }
+   ],
+   "links": []
+  }
+ ],
+ "article": {
+  "title": "کاربر توئیتری «kimmonismus» توی یه پست کوتاه نوشته شرکت آنتروپیک (Anthropic) زنگ آغاز معاملات بورس نزدک (Nasdaq) رو به صدا درآورده و پیش‌بینی کرده قراره یه عرضه اولیه (IPO) رکوردشکن باشه",
+  "source_title": "And so it begins: Anthropic just rang the opening bell at Nasdaq. This is going to be a record IPO.",
+  "body": [
+   "کاربر توئیتری «kimmonismus» توی یه پست کوتاه نوشته شرکت آنتروپیک (Anthropic) زنگ آغاز معاملات بورس نزدک (Nasdaq) رو به صدا درآورده و پیش‌بینی کرده قراره یه عرضه اولیه (IPO) رکوردشکن باشه. 🔔 البته هیچ عدد و رقم، تاریخ یا تصویری از این پست در دسترس نیست و فعلاً همه‌چیز در حد همین ادعا و پیش‌بینی کوتاه از طرف نویسنده‌ست."
+  ],
+  "why": null,
+  "tags": [
+   "کسب‌وکار",
+   "آنتروپیک"
+  ]
+ },
+ "updated": "2026-11-19T15:50:36+00:00",
+ "ai": {
+  "title": "آنتروپیک زنگ آغاز معاملات نزدک را زد و IPO رکوردشکن را پیش‌بینی کرد",
+  "short": "آنتروپیک IPO رکوردشکن",
+  "topics": [
+   "آنتروپیک",
+   "کسب‌وکار"
+  ],
+  "type": "خبر",
+  "model": "qwen3.5-9b-q4_k_m",
+  "v": 2,
+  "src": "0e6668f97d93",
+  "x": {
+   "importance": 2,
+   "entities": [
+    {
+     "name_en": "Anthropic",
+     "name_fa": "آنتروپیک",
+     "kind": "company"
+    },
+    {
+     "name_en": "Nasdaq",
+     "name_fa": "نزدک",
+     "kind": "company"
+    }
+   ],
+   "terms": [
+    {
+     "term": "عرضه اولیه (IPO)",
+     "def": "زمانی که یک شرکت سهام خود را برای اولین بار به عموم مردم می‌فروشد."
+    },
+    {
+     "term": "زنگ آغاز معاملات",
+     "def": "مراسم نمادین در بورس که با زدن زنگ، شروع رسمی معاملات روز اعلام می‌شود."
+    }
+   ],
+   "simple": "شرکت آنتروپیک در بورس نزدک شروع به کار کرد و گفته می‌شود قرار است بزرگترین عرضه اولیه سهام تاریخ باشد. اما هنوز عدد دقیقی اعلام نشده است.",
+   "quiz": {
+    "q": "وضعیت اطلاعات عددی و تصویری در این پست چیست؟",
+    "options": [
+     "اعداد دقیق و تصاویر کامل منتشر شده‌اند",
+     "هیچ عدد، تاریخ یا تصویری در دسترس نیست",
+     "فقط قیمت سهام اعلام شده است"
+    ],
+    "answer": 1
+   },
+   "video": {
+    "hook": "آنتروپیک زنگ بورس را زد و IPO رکوردشکن را پیش‌بینی کرد!",
+    "points": [
+     "آنتروپیک در نزدک زنگ آغاز معاملات را زد",
+     "پیش‌بینی می‌شود این یک عرضه اولیه (IPO) رکوردشکن باشد",
+     "هنوز هیچ عدد یا تصویر رسمی از این ادعا وجود ندارد"
+    ],
+    "why": "این خبر نشان‌دهنده ورود بزرگ شرکت‌های هوش مصنوعی به بازار سرمایه است."
+   },
+   "share": "آنتروپیک زنگ بورس نزدک را زد! 🚀\nپیش‌بینی IPO رکوردشکن (هنوز عددی نیست).\n#Anthropic #IPO #هوش_مصنوعی",
+   "status": "شایعه",
+   "models": [],
+   "events": [],
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 2,
+   "src": "7fe326f07760"
+  }
+ }
+}

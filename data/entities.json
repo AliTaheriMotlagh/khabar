@@ -389,6 +389,18 @@
    "name_en": "Project Genie",
    "name_fa": "پروژه جنی",
    "kind": "product"
+  },
+  {
+   "slug": "deepmind-institute",
+   "name_en": "DeepMind Institute",
+   "name_fa": "موسسه دیپ‌مایند",
+   "kind": "company"
+  },
+  {
+   "slug": "shane-legg",
+   "name_en": "Shane Legg",
+   "name_fa": "شین لگ",
+   "kind": "person"
   }
  ]
 }
