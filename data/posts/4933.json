@@ -50,5 +50,17 @@
   ]
  },
  "updated": "2026-10-25T12:29:13+00:00",
- "gholam_checked": "2026-10-25T12:29:13+00:00"
+ "gholam_checked": "2026-10-25T12:29:13+00:00",
+ "ai": {
+  "title": "استارتاپ Accelerated Understanding مدل یک تریلیونی برای شبیه‌سازی فیزیک در چهار بعد راه انداخت",
+  "short": "استارتاپ Accelerated Understanding",
+  "topics": [
+   "استارتاپ",
+   "علم"
+  ],
+  "type": "ابزار و محصول",
+  "model": "qwen3.5-9b-q4_k_m",
+  "v": 2,
+  "src": "f84f9e2ee03e"
+ }
 }

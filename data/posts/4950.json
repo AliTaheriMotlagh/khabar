@@ -68,5 +68,17 @@
   ]
  },
  "updated": "2026-10-25T12:29:06+00:00",
- "gholam_checked": "2026-10-25T12:29:06+00:00"
+ "gholam_checked": "2026-10-25T12:29:06+00:00",
+ "ai": {
+  "title": "استارتاپ OneTriangleAI هزینه اجرای DeepSeek V4 Flash را به ۱۵ سنت برای هر میلیون توکن ورودی رساند",
+  "short": "OneTriangleAI: DeepSeek ارزان شد",
+  "topics": [
+   "چین",
+   "کدنویسی"
+  ],
+  "type": "خبر",
+  "model": "qwen3.5-9b-q4_k_m",
+  "v": 2,
+  "src": "43021f0434c2"
+ }
 }

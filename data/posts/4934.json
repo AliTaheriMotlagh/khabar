@@ -71,5 +71,16 @@
   ]
  },
  "updated": "2026-10-25T12:29:13+00:00",
- "gholam_checked": "2026-10-25T12:29:13+00:00"
+ "gholam_checked": "2026-10-25T12:29:13+00:00",
+ "ai": {
+  "title": "مدل Qwen 3.8 Flash Next با معماری Qwen 4 فردا منتشر می‌شود",
+  "short": "Qwen 3.8 Flash Next",
+  "topics": [
+   "چین"
+  ],
+  "type": "ابزار و محصول",
+  "model": "qwen3.5-9b-q4_k_m",
+  "v": 2,
+  "src": "565bbc6e7bc4"
+ }
 }

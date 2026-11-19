@@ -53,5 +53,17 @@
   ]
  },
  "updated": "2026-10-25T12:28:59+00:00",
- "gholam_checked": "2026-10-25T12:28:59+00:00"
+ "gholam_checked": "2026-10-25T12:28:59+00:00",
+ "ai": {
+  "title": "گوگل مدل Gemini 3.5 Transcribe را با پشتیبانی از ۸۵ زبان معرفی کرد",
+  "short": "Gemini 3.5 Transcribe گوگل",
+  "topics": [
+   "گوگل",
+   "صدا و موسیقی"
+  ],
+  "type": "ابزار و محصول",
+  "model": "qwen3.5-9b-q4_k_m",
+  "v": 2,
+  "src": "b54eda905b25"
+ }
 }
