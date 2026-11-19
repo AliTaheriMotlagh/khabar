@@ -479,6 +479,24 @@
    "name_en": "DeepSeek V4.1 Flash",
    "name_fa": "دیپ‌سیک V4.1 فلش",
    "kind": "model"
+  },
+  {
+   "slug": "valerio-capraro",
+   "name_en": "Valerio Capraro",
+   "name_fa": "والریو کاپرارو",
+   "kind": "person"
+  },
+  {
+   "slug": "university-of-milano-bicocca",
+   "name_en": "University of Milano-Bicocca",
+   "name_fa": "دانشگاه میلانو-بیکوکا",
+   "kind": "company"
+  },
+  {
+   "slug": "kathy-himmer",
+   "name_en": "Kathy Himmer",
+   "name_fa": "کیسی هندمر",
+   "kind": "person"
   }
  ]
 }
