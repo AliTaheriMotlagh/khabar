@@ -515,6 +515,12 @@
    "name_en": "ANT",
    "name_fa": "آنت",
    "kind": "product"
+  },
+  {
+   "slug": "polymarket",
+   "name_en": "Polymarket",
+   "name_fa": "پلی‌مارکت",
+   "kind": "company"
   }
  ]
 }
