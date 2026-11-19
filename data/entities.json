@@ -365,6 +365,18 @@
    "name_en": "Xero",
    "name_fa": "زرو",
    "kind": "product"
+  },
+  {
+   "slug": "contra-labs",
+   "name_en": "Contra Labs",
+   "name_fa": "کانترا لبز",
+   "kind": "company"
+  },
+  {
+   "slug": "gestalt",
+   "name_en": "Gestalt",
+   "name_fa": "جستالت",
+   "kind": "model"
   }
  ]
 }
