@@ -23,12 +23,11 @@
   "title": "OpenAI نسخه Astra for Law را با مدل GPT-6.2 به‌روزرسانی کرد",
   "short": "Astra for Law با GPT-6.2",
   "topics": [
-   "آنتروپیک",
-   "کسب‌وکار"
+   "آنتروپیک"
   ],
   "type": "ابزار و محصول",
   "model": "qwen3.5-9b-q4_k_m",
-  "v": 1,
+  "v": 2,
   "src": "cacb122f9835"
  },
  "links": [
