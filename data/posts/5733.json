@@ -53,5 +53,14 @@
   "tags": []
  },
  "updated": "2026-10-25T12:24:18+00:00",
- "gholam_checked": "2026-10-25T12:24:18+00:00"
+ "gholam_checked": "2026-10-25T12:24:18+00:00",
+ "ai": {
+  "title": "OpenRouter رتبه‌بندی مدل‌های تصمیم‌گیری را منتشر کرد: typesafeai برتر است",
+  "short": "رتبه‌بندی OpenRouter",
+  "topics": [],
+  "type": "ابزار و محصول",
+  "model": "qwen3.5-9b-q4_k_m",
+  "v": 2,
+  "src": "d4553ef5db43"
+ }
 }
