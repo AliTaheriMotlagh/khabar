@@ -461,6 +461,24 @@
    "name_en": "TTS-2",
    "name_fa": "تی‌تی‌اس-۲",
    "kind": "model"
+  },
+  {
+   "slug": "prime-intellect",
+   "name_en": "Prime Intellect",
+   "name_fa": "پرایم اینتلکت",
+   "kind": "company"
+  },
+  {
+   "slug": "openrouter",
+   "name_en": "OpenRouter",
+   "name_fa": "اپن‌روتر",
+   "kind": "company"
+  },
+  {
+   "slug": "deepseek-v41-flash",
+   "name_en": "DeepSeek V4.1 Flash",
+   "name_fa": "دیپ‌سیک V4.1 فلش",
+   "kind": "model"
   }
  ]
 }
