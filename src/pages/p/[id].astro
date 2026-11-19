@@ -4,6 +4,7 @@ import Icon from '../../components/Icon.astro';
 import Media from '../../components/Media.astro';
 import SourceCard from '../../components/SourceCard.astro';
 import SourceChip from '../../components/SourceChip.astro';
+import { cleanUrl, publisherOf } from '../../lib/source';
 import SaveButton from '../../components/SaveButton.astro';
 import Reactions from '../../components/Reactions.astro';
 import Comments from '../../components/Comments.astro';
@@ -198,8 +199,8 @@ const jsonLd = [
           !post.links?.length && post.preview?.title && (
             <section class="source page">
               <div class="body">
-                <span class="site">{post.preview.site}</span>
-                <h3 dir="auto"><a href={post.preview.url} target="_blank" rel="noopener">{post.preview.title}</a></h3>
+                <span class="site"><Icon name="link" /> <b dir="auto">{publisherOf(post.preview.url) || post.preview.site}</b></span>
+                <h3 dir="auto"><a href={cleanUrl(post.preview.url ?? post.url)} target="_blank" rel="noopener">{post.preview.title}</a></h3>
                 {post.preview.description && <p dir="auto">{post.preview.description}</p>}
               </div>
             </section>

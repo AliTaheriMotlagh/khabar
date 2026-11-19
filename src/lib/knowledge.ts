@@ -8,7 +8,9 @@
 
 export type Term = { term: string; fa?: string; def: string; aliases?: string[] };
 export type EntityKind = 'person' | 'company' | 'model' | 'product';
-export type Entity = { slug: string; name_en: string; name_fa: string; kind: EntityKind; aliases?: string[]; about?: string };
+/** `hidden`: a word the model took for a name (GPU, a disease, a concept): kept so the pipeline doesn't add it again,
+ *  never shown. */
+export type Entity = { slug: string; name_en: string; name_fa: string; kind: EntityKind; aliases?: string[]; about?: string; hidden?: boolean };
 export type Related = { v?: number; model?: string; related: Record<string, number[]>; clusters: number[][] };
 export type Daily = { day: string; intro: string; links: Record<string, string>; outro: string; ids: number[] };
 export type Weekly = { week: string; from: string; to: string; title: string; intro: string; items: { id: number; line: string }[]; outro: string };

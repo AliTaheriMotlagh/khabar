@@ -57,6 +57,14 @@ DISCUSSION_HTML = """
 """
 
 
+def test_small_preview_picture_is_marked():
+    # Telegram shows a logo/avatar beside the preview text (link_preview_right_image): never a story's cover.
+    html = CHANNEL_HTML.replace('class="link_preview_image"', 'class="link_preview_right_image"')
+    _, posts = telegram.parse_channel_page(html)
+    assert posts[0].preview["image"].endswith("preview.jpg")
+    assert posts[0].preview["small"] is True
+
+
 def test_channel_page():
     info, posts = telegram.parse_channel_page(CHANNEL_HTML)
     assert info["title"] == "Future Focus with Mehrzad"
@@ -69,6 +77,7 @@ def test_channel_page():
     assert p.links[0].startswith("https://fxtwitter.com/dunyaverse/status/2112586895100449083")
     assert p.preview["title"] == "Dünya Baradari (@dunyaverse)"
     assert p.preview["image"].endswith("preview.jpg")
+    assert "small" not in p.preview  # a picture under the preview, not beside it
 
     q = posts[1]
     assert [m.type for m in q.media] == ["image", "video"]

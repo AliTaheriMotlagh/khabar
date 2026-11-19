@@ -10,7 +10,7 @@
 // lets a video play with its own sound for the video's length. With both on, a video scene is read first (the video
 // silent), then its clip plays once with its sound. Tap the left side for the next story and the right side for the
 // previous one (it's a right-to-left page), swipe sideways for the same, hold to pause, swipe down or Esc to leave.
-import { $, $$, esc, fmtNum, store, toast, track } from './core';
+import { $, $$, esc, fmtNum, listenPart, store, toast, track } from './core';
 import { wordAt } from './words';
 import { shownAt } from '../lib/lines';
 import { markSeen, unreadTest } from './game';
@@ -282,7 +282,14 @@ function init(player: HTMLElement) {
   /** The story's own text, chosen at build time (src/pages/today/index.astro, sayOf). */
   function linesOf(s: HTMLElement): Line[] {
     const say = JSON.parse(s.dataset.say ?? '[]') as { i: number; text: string; say?: string; map?: number[][] }[];
-    return say.map(({ i, text, say, map }) => ({ text, post: Number(s.dataset.id), i, ...(say && { say, map }) }));
+    const post = Number(s.dataset.id);
+    const all = say.map(({ i, text, say, map }) => ({ text, post, i, ...(say && { say, map }) }));
+    // The reader's «گوش دادن» setting: only the headline, or the first paragraph; otherwise the scene's short read.
+    const part = listenPart();
+    const head = { text: $('h2', s)?.textContent?.replace(/…$/, '').trim() ?? '', post, i: 0 };
+    if (part === 'title' && head.text) return [head];
+    if (part === 'lead' && all.length > 1) return all.slice(0, 1);
+    return all;
   }
   function speak() {
     if (voiced() && !paused) speaker.start(lines);

@@ -317,6 +317,14 @@ test('notifications: recent.json gives each story a picture the phone can reach,
     assert.match(p.image, /^https:\/\//);
     assert.doesNotMatch(new URL(p.image).hostname, /(^|\.)(twimg\.com|telesco\.pe|ytimg\.com|t\.me)$/, `${p.id}: ${p.image}`);
   }
+  // The small copy for the notification's icon goes with the big one.
+  for (const p of withImage) assert.match(p.icon ?? '', /^https:\/\//, `${p.id}: icon`);
+  // Never a profile picture or a logo: X's link previews only carry the tweet author's avatar (a 200-px square).
+  const xPreview = (d) => /FxTwitter|Twitter|^X\b/.test(d?.preview?.site ?? '') && !(d.media ?? []).length && !(d.links ?? []).some((l) => (l.media ?? []).length || (l.quote?.media ?? []).length || l.image || l.article?.image);
+  for (const p of list) {
+    if (xPreview(posts[p.id])) assert.equal(p.image, undefined, `${p.id}: the X preview's avatar is not the story's picture`);
+    if (p.image) assert.doesNotMatch(decodeURIComponent(p.image), /profile_images|arxiv-logo|favicon/, `${p.id}: ${p.image}`);
+  }
   // Topics come first (a notification names the first), then who the story is about.
   for (const p of list) {
     const at = p.tags.findIndex((t) => t.startsWith('who:'));

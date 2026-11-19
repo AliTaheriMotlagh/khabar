@@ -89,16 +89,39 @@ document.addEventListener('visibilitychange', () => document.visibilityState ===
 type Engage = Record<string, { r: Record<string, number>; c: number; v: number }>;
 const counts: Record<string, Record<string, number>> = {};
 const mine = () => store.get<Record<string, string[]>>('reacted', {});
+// /api/engage is cached on the CDN (~20 s, served stale for 2 min more), so a page opened right after a reaction would
+// show the count from before it: the reader's own reaction lit, its number missing. The server's answer to the
+// reader's own reaction is kept here a few minutes and wins over an older cached count.
+type Fresh = Record<string, Record<string, [number, number]>>; // post → reaction → [count, when]
+const FRESH_MS = 3 * 60_000;
+const freshCounts = () => store.get<Fresh>('react-fresh', {});
+function keepFresh(id: string, key: string, n: number | null) {
+  const now = Date.now();
+  const all: Fresh = {};
+  for (const [p, r] of Object.entries(freshCounts())) {
+    const kept = Object.fromEntries(Object.entries(r).filter(([k, [, at]]) => now - at < FRESH_MS && !(p === id && k === key)));
+    if (Object.keys(kept).length) all[p] = kept;
+  }
+  if (n != null) all[id] = { ...all[id], [key]: [n, now] };
+  store.set('react-fresh', all);
+}
+function shownCount(id: string, key: string, my: string[]) {
+  const f = freshCounts()[id]?.[key];
+  const n = f && Date.now() - f[1] < FRESH_MS ? f[0] : counts[id]?.[key] ?? 0;
+  // The reader's own reaction is always at least one.
+  return my.includes(key) ? Math.max(n, 1) : n;
+}
 
 function paintReactions(id: string) {
-  const c = counts[id] ?? {};
   const my = mine()[id] ?? [];
   $$(`[data-reactions="${id}"]`).forEach((box) => {
     $$<HTMLButtonElement>('[data-react]', box).forEach((b) => {
       const k = b.dataset.react!;
+      const c = shownCount(id, k, my);
       b.setAttribute('aria-pressed', String(my.includes(k)));
+      b.setAttribute('aria-label', c ? `${b.title} (${fmtNum(c)})` : b.title);
       const n = $('[data-count]', b);
-      if (n) n.textContent = c[k] ? compact(c[k]) : '';
+      if (n) n.textContent = c ? compact(c) : '';
     });
   });
 }
@@ -122,29 +145,58 @@ export async function loadEngage(root: ParentNode = document) {
   } catch {}
 }
 
-async function react(btn: HTMLButtonElement) {
-  const box = btn.closest<HTMLElement>('[data-reactions]')!;
-  const id = box.dataset.reactions!;
-  const key = btn.dataset.react!;
+/** Sets the reader's own choice for a reaction, the count moved by one right away. */
+function wish(id: string, key: string, on: boolean) {
   const all = mine();
   const list = all[id] ?? [];
-  const on = !list.includes(key);
+  if (list.includes(key) === on) return;
+  const was = shownCount(id, key, list);
   all[id] = on ? [...list, key] : list.filter((k) => k !== key);
   store.set('reacted', all);
-  counts[id] = { ...(counts[id] ?? {}), [key]: Math.max(0, (counts[id]?.[key] ?? 0) + (on ? 1 : -1)) };
+  counts[id] = { ...(counts[id] ?? {}), [key]: Math.max(0, was + (on ? 1 : -1)) };
+  keepFresh(id, key, null);
+}
+
+function react(btn: HTMLButtonElement) {
+  const id = btn.closest<HTMLElement>('[data-reactions]')!.dataset.reactions!;
+  const key = btn.dataset.react!;
+  const on = !(mine()[id] ?? []).includes(key);
+  wish(id, key, on);
   paintReactions(id);
   if (on) {
     btn.classList.remove('pop');
     void btn.offsetWidth;
     btn.classList.add('pop');
+    navigator.vibrate?.(8);
     award('react');
   }
+  sendReaction(id, key);
+}
+
+// One request at a time per reaction, so quick taps (on, off, on) can't reach the server out of order: when a request
+// ends, the reader's latest choice is sent if it changed meanwhile. A failure puts the button back as the server has it.
+const sending = new Set<string>();
+async function sendReaction(id: string, key: string) {
+  const slot = `${id}:${key}`;
+  if (sending.has(slot)) return;
+  sending.add(slot);
   try {
-    const { count } = await api<{ count: number }>('react', { method: 'POST', body: { post: id, guest: guest(), reaction: key, on } });
-    counts[id][key] = count;
+    for (;;) {
+      const on = (mine()[id] ?? []).includes(key);
+      try {
+        const { count } = await api<{ count: number }>('react', { method: 'POST', body: { post: id, guest: guest(), reaction: key, on } });
+        counts[id] = { ...(counts[id] ?? {}), [key]: count };
+        keepFresh(id, key, count);
+      } catch (e) {
+        wish(id, key, !on);
+        toast(slowDown(e) ? 'کمی آهسته‌تر 🙂' : 'واکنش ثبت نشد؛ اتصال اینترنت را بررسی کنید');
+        return;
+      }
+      if ((mine()[id] ?? []).includes(key) === on) return;
+    }
+  } finally {
+    sending.delete(slot);
     paintReactions(id);
-  } catch (e) {
-    if (slowDown(e)) toast('کمی آهسته‌تر 🙂');
   }
 }
 

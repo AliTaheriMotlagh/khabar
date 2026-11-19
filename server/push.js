@@ -7,6 +7,8 @@
 //      the reader checks it works on their phone; only to a subscription already stored, a few an hour.
 // POST /api/push { action: 'send', posts: [{ id, title, tags, kind, image? }] }   Authorization: Bearer PUSH_SECRET
 //   image: the story's picture (recent.json, an https address), shown large on Android/Windows; the first story's that has one.
+//   icon: the same picture small (recent.json `icon`), beside the text even while the notification is collapsed.
+//   iOS shows neither: Safari's Web Push only draws the app's own icon.
 //   kind: 'story' | 'digest' | 'video' (a new video of Mehrzad's: every mode hears about it)
 //      Called by the site workflow (scripts/notify.mjs) once the new stories are live. Each post is announced once
 //      (`push:sent`); the very first call only records what is already out, so turning this on announces nothing old.
@@ -46,7 +48,7 @@ export async function POST(request) {
     const [raw] = await redis(['HGET', 'push:subs', subKey(body.endpoint)]);
     if (!raw) return fail(request, 404, 'unknown');
     const origin = (process.env.SITE_URL || new URL(request.url).origin).replace(/\/$/, '');
-    const msg = { title: 'اعلان‌ها کار می‌کنند ✓', body: `خبرهای تازه‌ی ${SITE_NAME} همین‌طور می‌رسند، با تصویر خبر`, url: `${origin}/`, tag: 'test', image: `${origin}/og.png` };
+    const msg = { title: 'اعلان‌ها کار می‌کنند ✓', body: `خبرهای تازه‌ی ${SITE_NAME} همین‌طور می‌رسند، با تصویر خبر`, url: `${origin}/`, tag: 'test', image: `${origin}/og.png`, icon: `${origin}/icon-192.png` };
     try {
       const { status, reason } = await sendPush(JSON.parse(raw).sub, msg, { ttl: 600, urgency: 'high', detail: true });
       if (status === 404 || status === 410) await redis(['HDEL', 'push:subs', subKey(body.endpoint)]);
@@ -107,6 +109,8 @@ export function message(posts, origin) {
     url: one ? (first.kind === 'weekly' ? `${origin}/week/` : `${origin}/p/${first.id}/`) : `${origin}/`,
     tag: 'news',
     ...(picked && { image: picked.image }),
+    // Its small copy beside the text (Android, Windows, macOS Chrome), visible before the notification is opened.
+    ...(picked?.icon && { icon: picked.icon }),
   };
 }
 
@@ -115,7 +119,7 @@ async function send(request, body) {
   if (!secret || request.headers.get('authorization') !== `Bearer ${secret}`) return fail(request, 401, 'unauthorized');
   const posts = (Array.isArray(body.posts) ? body.posts : [])
     .slice(0, 50)
-    .map((p) => ({ id: postId(p?.id), title: cleanText(p?.title, 160).replace(/\n/g, ' '), short: cleanText(p?.short, 60).replace(/\n/g, ' '), tags: (Array.isArray(p?.tags) ? p.tags : []).map((t) => cleanText(t, 60)).slice(0, 8), kind: ['digest', 'video', 'weekly'].includes(p?.kind) ? p.kind : 'story', ...(imageUrl(p?.image) && { image: imageUrl(p.image) }) }))
+    .map((p) => ({ id: postId(p?.id), title: cleanText(p?.title, 160).replace(/\n/g, ' '), short: cleanText(p?.short, 60).replace(/\n/g, ' '), tags: (Array.isArray(p?.tags) ? p.tags : []).map((t) => cleanText(t, 60)).slice(0, 8), kind: ['digest', 'video', 'weekly'].includes(p?.kind) ? p.kind : 'story', ...(imageUrl(p?.image) && { image: imageUrl(p.image) }), ...(imageUrl(p?.image) && imageUrl(p?.icon) && { icon: imageUrl(p.icon) }) }))
     .filter((p) => p.id && p.title);
   if (!posts.length) return json(request, { sent: 0, posts: 0 });
 

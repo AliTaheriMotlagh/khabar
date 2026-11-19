@@ -148,7 +148,9 @@ export function renderProfile() {
   }
   const badges = $('[data-my-badges]');
   if (badges) {
-    badges.innerHTML = BADGES.map((b) => {
+    // Earned ones first.
+    const earned = (b: (typeof BADGES)[number]) => (s.badges.includes(b.id) ? 0 : 1);
+    badges.innerHTML = [...BADGES].sort((a, b) => earned(a) - earned(b)).map((b) => {
       const on = s.badges.includes(b.id);
       return `<div class="badge-card${on ? ' on' : ''}" title="${esc(b.desc)}"><span>${on ? b.emoji : '🔒'}</span><b>${esc(b.name)}</b><small>${esc(b.desc)}</small></div>`;
     }).join('');

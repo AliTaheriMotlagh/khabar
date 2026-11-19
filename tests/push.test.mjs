@@ -127,15 +127,18 @@ test('push: subscribe, then each new story announced once, to whom it concerns',
     // A new video of Mehrzad's reaches every mode, daily and other topics included, with its own line.
     delivered.clear();
     const thumb = 'https://khabar-ai.vercel.app/api/img/?u=https%3A%2F%2Fi.ytimg.com%2Fvi%2Fx%2Fhqdefault.jpg&w=800';
-    await send([{ id: 905, title: 'قسمت ۵۲ ویدیوهای مهرزاد: …', tags: ['کدنویسی'], kind: 'video', image: thumb }]);
+    const small = thumb.replace('w=800', 'w=320');
+    await send([{ id: 905, title: 'قسمت ۵۲ ویدیوهای مهرزاد: …', tags: ['کدنویسی'], kind: 'video', image: thumb, icon: small }]);
     assert.equal(delivered.size, 3);
     const video = daily.read(delivered.get(daily.sub.endpoint));
     assert.equal(video.body, 'ویدیوی تازه‌ی مهرزاد · فیوچر فوکوس');
     // The story's picture goes with it; anything that isn't an https address doesn't.
     assert.equal(video.image, thumb);
+    assert.equal(video.icon, small, 'the small copy beside the text, seen while collapsed');
     delivered.clear();
-    await send([{ id: 906, title: 'بی‌تصویر', tags: [], kind: 'video', image: 'javascript:alert(1)' }]);
+    await send([{ id: 906, title: 'بی‌تصویر', tags: [], kind: 'video', image: 'javascript:alert(1)', icon: 'http://insecure/x.png' }]);
     assert.equal(daily.read(delivered.get(daily.sub.endpoint)).image, undefined);
+    assert.equal(daily.read(delivered.get(daily.sub.endpoint)).icon, undefined);
 
     // Unsubscribe, and the browser's replacement subscription keeps the reader's choice.
     const renewed = browser('https://updates.push.services.mozilla.com/wpush/v2/renewed');

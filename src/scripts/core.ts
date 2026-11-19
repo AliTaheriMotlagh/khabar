@@ -100,6 +100,11 @@ export function guest(): string {
   return id;
 }
 export const myName = () => store.get<string>('name', '');
+/** Which part of a story «گوش دادن» reads (the settings sheet's «چه بخشی خوانده شود»; src/lib/lines.ts Part). */
+export function listenPart(): 'all' | 'title' | 'lead' | 'last' {
+  const v = store.get<{ listen?: string }>('settings', {}).listen;
+  return v === 'title' || v === 'lead' || v === 'last' ? v : 'all';
+}
 export function setMyName(name: string) {
   store.set('name', name.trim().slice(0, 32));
   document.dispatchEvent(new CustomEvent('me-change'));

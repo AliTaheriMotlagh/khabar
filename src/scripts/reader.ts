@@ -1,6 +1,6 @@
 // Reading tools on a story page: listen aloud, text size and line spacing, focus mode,
 // time left, "continue where you left off", and sharing a selected quote.
-import { $, $$, cardNow, fmtNum, store, toast, track } from './core';
+import { $, $$, cardNow, fmtNum, listenPart, store, toast, track } from './core';
 import { award } from './game';
 import type { Line } from './speech';
 import { player, type Snap } from './listen';
@@ -98,8 +98,10 @@ function readLines() {
   const text = (el: Element) => el.textContent!.replace(/\s+/g, ' ').trim();
   const h1 = $('h1', article!)!;
   const els = $$('.prose p, .why p, .digest-list li', article!).filter((el) => text(el));
-  // Latin names the lexicon's way, once the story's card.json is here (fetched on idle by extras.ts).
-  lines = storyLines(id, text(h1), els.map(text), false, cardNow(id)?.lex);
+  const why = els.filter((el) => el.closest('.why')).length;
+  // Latin names the lexicon's way, once the story's card.json is here (fetched on idle by extras.ts); the part of the
+  // story the reader chose in the settings (all of it, the headline, the headline with the first or the last part).
+  lines = storyLines(id, text(h1), els.map(text), false, cardNow(id)?.lex, listenPart(), why);
   paragraphs = lines.map((l) => (l.i ? els[l.i - 1] : h1));
 }
 
@@ -132,8 +134,8 @@ function toggleListen() {
   const p = player();
   if (p.key === key) return p.toggle();
   readLines();
-  // Where the reader stopped last time (a paragraph that is still there), else the top.
-  const from = listenSpot() < paragraphs.length ? listenSpot() : 0;
+  // Where the reader stopped last time (a paragraph that is still there, when the whole story is read), else the top.
+  const from = listenPart() === 'all' && listenSpot() < paragraphs.length ? listenSpot() : 0;
   if (from) toast(`ادامه از بند ${fmtNum(from + 1)}؛ با نوار پایین صفحه به هر بند می‌روید`);
   const d = article!.dataset;
   p.playLines({ key, title: d.title ?? document.title, href: d.href ?? location.pathname, cover: d.cover || undefined, unit: 'بند' }, lines, from);

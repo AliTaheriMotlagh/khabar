@@ -7,12 +7,32 @@ Every channel post becomes a news story. The Persian text is Gholam's first comm
 images and videos are shown straight from the source, and every story links to its original tweet or article.
 
 **Features**
-- Visual timeline grouped by day, a lead section, a full or short (headline list) view; the daily “24-hour summary” links each line to its story.
-- Guest features with no signup: reactions, comments, a live chat, “online now” and visit counters.
-- Gamification: points, levels, badges, daily streaks, a weekly leaderboard; new stories since your last visit are marked until you read them.
-- Reading history and saved stories, offline reading (service worker), installable as an app, light/dark themes, text size.
-- Reading tools on each story: listen aloud, text size and line spacing, a focus mode, time left, “continue where you left off”, sharing a selected quote. Long-press any story link to preview it.
-- SEO: canonical URLs, Open Graph/Twitter cards, NewsArticle structured data, sitemap + Google News sitemap, RSS, search (Pagefind).
+- **News:** a timeline grouped by Tehran day, a lead story, a full or short view, the daily «۲۴ ساعت» summary and a
+  weekly recap. One filter bar on the home page combines the story's *type* (tool/product, research, tutorial, opinion,
+  Mehrzad's videos — written by the AI) with its *topic* (company or field — keyword rules) and «موضوع‌های من».
+- **AI on the runner (free):** Qwen3.5-9B writes a Persian headline, a short line and a type for every story, plus
+  importance, the people/companies it names (/who/), terms explained (/glossary/), «به زبان ساده», a quiz, a video
+  script and a share caption; embeddings give related stories and same-news clusters. Every answer is checked and
+  falls back to the rules (`pipeline/ai.py`, `pipeline/ai_more.py`).
+- **Sources in any language:** each story shows its tweet or article with the publisher's name (Bloomberg, Nikkei,
+  36Kr…), the article a tweet cites, the source's language (Chinese, Japanese, Russian, French…), clean short links
+  without tracking parameters, and a one-tap Persian translation (`src/lib/source.ts`). Avatars and logos are never
+  used as a story's picture.
+- **Listening:** «گوش دادن» on every story, a daily podcast of the day's stories, the week's top stories, Instagram-like
+  stories (/today/) with narration. The reader picks what is read: the whole text, the headline, the headline and first
+  paragraph, or the headline and the last part («چرا مهمه؟»). Voices: the device's Persian voice, Azure (optional),
+  or one of 12 on-device Persian voices (downloaded once); English names are read in Persian letters; each word lights
+  up as it is said.
+- **Video:** a shareable news video (vertical/landscape/square, ≤60 s) made on the phone from any story, a 60-second
+  summary of the day, and teasers for Mehrzad's YouTube episodes (/videos/).
+- **Guests, no signup:** reactions, comments with replies, live chat, “online now” and visit counters; points, levels,
+  badges, streaks and a weekly leaderboard on /me/; history and saved stories (with offline audio).
+- **Notifications (Web Push):** all news, followed topics/people only, or the daily summary; the story's picture
+  large under the text and small beside it (Android, Windows, desktop Chrome — iOS only shows the app's icon).
+- **App-like:** installable, offline reading, light/dark themes, text size and spacing, focus mode, long-press preview.
+- **SEO and feeds:** canonical URLs, Open Graph/Twitter cards, NewsArticle/ItemList/BreadcrumbList structured data,
+  sitemap + Google News sitemap, IndexNow, `llms.txt`, RSS for everything, each topic, the news, daily summaries and
+  videos (/feeds/), search (Pagefind).
 
 ## Run locally
 

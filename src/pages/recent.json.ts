@@ -23,6 +23,8 @@ export function GET() {
       thumb: p.cover ? picture(p.cover.src || p.cover.poster, 'small').src : null,
       // The notification's picture (server/push.js): a lasting address the phone can reach from Iran, never a filtered CDN.
       ...(p.cover && feedPicture(p.cover.src || p.cover.poster, 'medium') && { image: feedPicture(p.cover.src || p.cover.poster, 'medium')!.url }),
+      // The same picture small: the notification's icon, shown beside the text even while it's collapsed.
+      ...(p.cover && feedPicture(p.cover.src || p.cover.poster, 'small') && { icon: feedPicture(p.cover.src || p.cover.poster, 'small')!.url }),
     }));
   return new Response(JSON.stringify({ latest: feedRev().latest, posts }), { headers: { 'Content-Type': 'application/json; charset=utf-8' } });
 }

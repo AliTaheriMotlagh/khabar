@@ -84,6 +84,21 @@ Tick items off here; move anything that becomes a lasting rule into CLAUDE.md.
   word (highlight intact); the cloud voice still reads English itself and its clip addresses don't change (`cloudOf`).
   Open: once the runner writes `data/lexicon.json`, compare its spellings with these rules on 50 names.
 
+## Progress (2026-11-19): UI/UX pass
+
+- [x] **Reactions**: the count vanished after a reload (engage is CDN-cached ~2 min) and quick taps could reach the
+  server out of order. Now one request at a time per button, undone with a toast on failure, own counts kept 3 min.
+- [x] **Covers**: ~250 stories used the tweet author's 200-px avatar (X/FxTwitter link previews) as their picture —
+  stretched on the page, in social cards and in notifications; arXiv's logo on 16 more. Dropped (`posts.ts`).
+- [x] **Notifications**: the story's picture is also the `icon` (seen while collapsed on Android/desktop). iOS Web Push
+  shows neither picture — a platform limit.
+- [x] **Sources**: publisher names, language label, translate link, cited article, clean short links (`src/lib/source.ts`).
+- [x] **Listen setting**: whole text / headline / headline + first paragraph / headline + last part.
+- [x] **Home filter bar**: type and topic chips in one labelled row; **/me/** in tabs, history paged, earned badges first.
+- [x] **/who/ data**: 14 Persian spellings fixed by hand, GPU/disease/concept hidden; accent-safe slugs in the pipeline.
+- [ ] Re-check entity spellings after the backfill adds more (the 9B model misspells rare names); consider a
+  hand-kept override list if it keeps happening.
+
 ## Progress (2026-11-18, late): production hardening
 
 - [x] **Why the 18:27 run failed**: the /videos/ order test read every link on the page; once the runner summarized 7

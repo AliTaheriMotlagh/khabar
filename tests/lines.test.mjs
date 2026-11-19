@@ -19,6 +19,21 @@ test('lines: the text, not the headline; a repeated headline and bare links skip
   assert.deepEqual(cardLines({ id: 6, title: 'تیتر', body: ['یک'], why: 'چون' }).map((l) => [l.i, l.text]), [[1, 'یک'], [2, 'چون']]);
 });
 
+test('lines: the reader picks the part (headline, headline + first, headline + last, all)', () => {
+  const card = { id: 7, title: 'تیتر…', body: ['یک', 'دو', 'سه'], why: 'چون مهم است' };
+  const parts = (part) => cardLines(card, false, part).map((l) => [l.i, l.text]);
+  assert.deepEqual(parts('all'), [[1, 'یک'], [2, 'دو'], [3, 'سه'], [4, 'چون مهم است']]);
+  assert.deepEqual(parts('title'), [[0, 'تیتر']]);
+  assert.deepEqual(parts('lead'), [[0, 'تیتر'], [1, 'یک']]);
+  assert.deepEqual(parts('last'), [[0, 'تیتر'], [4, 'چون مهم است']], '«چرا مهمه؟» is the last part');
+  // Without «چرا مهمه؟», the last paragraph.
+  assert.deepEqual(cardLines({ ...card, why: null }, false, 'last').map((l) => l.i), [0, 3]);
+  // A story with no text beyond its headline reads its headline whatever the part.
+  assert.deepEqual(cardLines({ id: 8, title: 'تنها', body: [] }, false, 'last').map((l) => l.i), [0]);
+  // Two «چرا مهمه؟» paragraphs on the page: both.
+  assert.deepEqual(storyLines(9, 'ت', ['a', 'b', 'w1', 'w2'], false, undefined, 'last', 2).map((l) => l.i), [0, 3, 4]);
+});
+
 const dist = path.resolve('dist');
 const built = fs.existsSync(path.join(dist, 'p'));
 test('lines: a story page and its card.json agree, paragraph by paragraph', { skip: built ? false : 'run `npm run build` first' }, () => {

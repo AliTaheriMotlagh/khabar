@@ -23,6 +23,7 @@ import os
 import re
 import sys
 import time
+import unicodedata
 from datetime import datetime, timedelta, timezone
 from typing import Callable, Optional
 
@@ -262,6 +263,15 @@ def _clean(s: str) -> str:
     return re.sub(r"\s+", " ", s or "").strip()
 
 
+# Words the model sometimes gives as a "product" or "company" that are neither: never a /who/ page.
+GENERIC = {
+    "ai", "a.i.", "artificial intelligence", "llm", "llms", "large language model", "gpu", "gpus", "cpu", "tpu", "npu",
+    "api", "agi", "asi", "cloud", "robot", "robots", "robotics", "chatbot", "chatbots", "ai agent", "ai agents", "agent",
+    "agents", "machine learning", "deep learning", "neural network", "data center", "data centers", "open source",
+    "self-improving ai", "benchmark", "benchmarks", "semiconductor", "chip", "chips", "smartphone", "internet",
+}
+
+
 def tidy_x(a: dict) -> dict:
     """Keep the parts that pass; drop the rest (a bad quiz shouldn't cost the post its names and terms)."""
     out: dict = {"importance": a.get("importance") if a.get("importance") in (1, 2, 3, 4, 5) else None}
@@ -270,7 +280,7 @@ def tidy_x(a: dict) -> dict:
         en, fa, kind = _clean(e.get("name_en")), _clean(e.get("name_fa")), e.get("kind")
         if not en or not fa or kind not in KINDS or len(en) > 50 or len(fa) > 50 or not LATIN.search(en) or fa_share(fa) < 0.5:
             continue
-        if en.lower() in seen:
+        if en.lower() in seen or en.lower() in GENERIC:
             continue
         seen.add(en.lower())
         ents.append({"name_en": en, "name_fa": fa, "kind": kind})
@@ -491,7 +501,9 @@ def norm(s: str) -> str:
 
 
 def slugify(s: str) -> str:
-    s = re.sub(r"[^\w\s-]", "", (s or "").lower(), flags=re.ASCII).strip()
+    # Accents become plain letters first (Jalapeño → jalapeno), as the site's slugify does (src/lib/knowledge.ts).
+    s = "".join(c for c in unicodedata.normalize("NFKD", (s or "").lower()) if not unicodedata.combining(c))
+    s = re.sub(r"[^\w\s-]", "", s, flags=re.ASCII).strip()
     return re.sub(r"[\s_-]+", "-", s)[:60].strip("-")
 
 

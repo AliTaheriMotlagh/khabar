@@ -43,9 +43,28 @@ export const shownAt = (l: Line, i: number) => (l.map?.length ? toShown(l.map, i
 
 const clean = (s: string) => s.replace(/\s+/g, ' ').trim();
 
-/** `paragraphs`: the story's body then «چرا مهمه؟», as shown (empty ones are dropped, as the server does). */
-export function storyLines(post: number, title: string, paragraphs: string[], withTitle = false, lex?: Lex): Line[] {
-  return plainLines(post, title, paragraphs, withTitle).map((l) => spoken(l, lex));
+/** Which part of a story «گوش دادن» reads (the reader's setting `listen`): the whole text (default), the headline
+ *  only, the headline and the first paragraph, or the headline and the last part («چرا مهمه؟», else the last
+ *  paragraph). */
+export type Part = 'all' | 'title' | 'lead' | 'last';
+export const PARTS: Part[] = ['all', 'title', 'lead', 'last'];
+export const isPart = (v: unknown): v is Part => PARTS.includes(v as Part);
+
+/** `paragraphs`: the story's body then «چرا مهمه؟», as shown (empty ones are dropped, as the server does); `why`: how
+ *  many of the last ones are «چرا مهمه؟». */
+export function storyLines(post: number, title: string, paragraphs: string[], withTitle = false, lex?: Lex, part: Part = 'all', why = 0): Line[] {
+  return partLines(plainLines(post, title, paragraphs, withTitle), post, title, paragraphs, part, why).map((l) => spoken(l, lex));
+}
+function partLines(all: Line[], post: number, title: string, paragraphs: string[], part: Part, why: number): Line[] {
+  if (part === 'all') return all;
+  const head: Line = { text: clean(title).replace(/…$/, ''), post, i: 0 };
+  const body = all.filter((l) => l.i > 0);
+  if (part === 'title' || !body.length) return [head];
+  if (part === 'lead') return [head, body[0]];
+  // The last part: «چرا مهمه؟» when the story has it (its paragraphs are the last `why` of `paragraphs`).
+  const kept = paragraphs.map(clean).filter(Boolean).length;
+  const whyLines = why > 0 ? body.filter((l) => l.i > kept - why) : [];
+  return [head, ...(whyLines.length ? whyLines : body.slice(-1))];
 }
 function plainLines(post: number, title: string, paragraphs: string[], withTitle: boolean): Line[] {
   const head = clean(title).replace(/…$/, '');
@@ -58,4 +77,5 @@ function plainLines(post: number, title: string, paragraphs: string[], withTitle
 
 /** The same from a story's card.json. */
 export type Card = { id: number; title: string; body?: string[]; why?: string | null; lex?: Record<string, string> };
-export const cardLines = (card: Card, withTitle = false) => storyLines(card.id, card.title, [...(card.body ?? []), card.why ?? ''], withTitle, card.lex);
+export const cardLines = (card: Card, withTitle = false, part: Part = 'all') =>
+  storyLines(card.id, card.title, [...(card.body ?? []), card.why ?? ''], withTitle, card.lex, part, card.why?.trim() ? 1 : 0);

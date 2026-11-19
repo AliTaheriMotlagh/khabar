@@ -170,6 +170,10 @@ def _parse_message(msg: Tag) -> TgPost:
             else "",
             "image": _bg(lp.select_one(".link_preview_image, .link_preview_right_image")),
         }
+        # Telegram puts a small picture (a logo, an avatar) beside the text instead of under it: the site never uses
+        # that one as a story's cover (src/lib/posts.ts avatarPreview).
+        if preview["image"] and not lp.select_one(".link_preview_image") and lp.select_one(".link_preview_right_image"):
+            preview["small"] = True
         if preview["url"] and preview["url"] not in links:
             links.insert(0, preview["url"])
 

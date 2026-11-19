@@ -12,7 +12,7 @@
 // iOS lets audio start only inside a tap: a page in the frame calls this window's player straight from its tap, nothing
 // awaits on that path, and the audio element here has played before (that is what opened the frame).
 import { SITE } from '../site';
-import { $, $$, BASE, esc, fmtNum, store, toast } from './core';
+import { $, $$, BASE, esc, fmtNum, listenPart, store, toast } from './core';
 import { markSeen } from './game';
 import { cardLines, shownAt, type Card, type Line } from '../lib/lines';
 import { toSaid } from '../../server/_say.js';
@@ -245,7 +245,8 @@ class Player {
         item.id,
         fetch(`${BASE}/p/${item.id}/card.json`)
           .then((r) => (r.ok ? (r.json() as Promise<Card>) : Promise.reject(new Error(String(r.status)))))
-          .then((card) => cardLines(card).filter((l) => l.i > 0))
+          // The part the reader chose (settings); the queue reads the headline before it either way.
+          .then((card) => cardLines(card, false, listenPart()).filter((l) => l.i > 0))
           .catch(() => []),
       );
     }

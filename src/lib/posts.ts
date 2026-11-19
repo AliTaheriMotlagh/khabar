@@ -37,7 +37,7 @@ export type RawPost = {
   gholam?: { text: string; date?: string | null } | null;
   links?: Link[];
   media?: Media[];
-  preview?: { url?: string; site?: string; title?: string; description?: string; image?: string | null } | null;
+  preview?: { url?: string; site?: string; title?: string; description?: string; image?: string | null; small?: boolean } | null;
   article: { title: string; source_title?: string | null; body: string[]; why?: string | null; why_label?: string | null; tags: string[] };
   updated?: string | null;
   /** Written by a small LLM (pipeline/ai.py); absent or failed → the rules' headline and topics. */
@@ -157,7 +157,18 @@ const RELAYED = /^https:\/\/(pbs\.twimg\.com|[\w-]+\.telesco\.pe|i\.ytimg\.com)\
 /** Hosts filtered in Iran: a picture there that the relay doesn't take is left out of the feeds. */
 const FILTERED = /(^|\.)(twimg\.com|telesco\.pe|ytimg\.com)$/;
 /** A site's generic share picture (X's login wall), not a picture of the news. */
+// Generic words the model sometimes gives as a name (pipeline/ai_more.py GENERIC): never a /who/ page.
+const GENERIC_NAME = /^(ai|a\.i\.|artificial intelligence|llms?|large language models?|gpus?|cpus?|tpus?|npus?|apis?|agi|asi|cloud|robots?|robotics|chatbots?|(ai )?agents?|machine learning|deep learning|neural networks?|data centers?|open source|self-improving ai|benchmarks?|semiconductors?|chips?|smartphones?|internet)$/i;
 const PLACEHOLDER = /^https?:\/\/abs\.twimg\.com\//;
+// A profile picture is never a story's picture (it would be a 200-px logo stretched across the page, the feeds and
+// the notification). X's link previews (FxTwitter, «X (formerly Twitter)») always carry the author's avatar, and
+// Telegram shows a small picture beside the preview (`small`, pipeline/telegram.py) for logos and avatars.
+// Logos and site icons aren't either (arXiv's logo is many papers' only picture).
+const AVATAR = /\/profile_images\/|\/profile_banners\/|arxiv-logo|favicon|apple-touch-icon|gravatar\.com\/(avatar|blavatar)|\/logos\/|[/_-]logo[\w-]*\.(png|svg|ico|gif|webp)(\.|\?|$)/i;
+// …unless its name says it's a wide banner (…-logo-…-1920x1080.webp).
+const notAPicture = (u: string) => AVATAR.test(u) && !/\b\d{4}x\d{3,4}\b/.test(u);
+const avatarPreview = (p: RawPost['preview']) =>
+  !!p && (!!p.small || /(^|\W)(FxTwitter|FixupX|vxTwitter|Twitter)(\W|$)|^X(\s|$)/i.test(p.site ?? '') || /^https?:\/\/(www\.)?(x|twitter|fxtwitter|fixupx|vxtwitter)\.com\//.test(p.url ?? ''));
 const absolute = (u: string) => (u.startsWith('/') ? `${SITE.api || SITE.url}${u}` : u);
 const viaProxy = (u: string, size: keyof typeof WIDTH) => `${PROXY}?url=${encodeURIComponent(absolute(u))}&w=${WIDTH[size]}&we&output=webp&q=80`;
 /** The site's own address for a picture from the channel's CDNs (server/img.js), or null for any other picture. */
@@ -265,7 +276,7 @@ function shape(raw: RawPost, ids: Set<number>): Post {
   const gallery = own.length ? own : linked;
   // The cover is always a still picture: the first image, a video's poster, or the linked page's image.
   const firstStill = gallery.map((m) => ({ src: m.type === 'video' ? m.poster : m.src, ratio: m.ratio })).find((m) => m.src);
-  const pageImage = [...links.map((l) => l.article?.image || l.image), raw.preview?.image].find((u) => u && !PLACEHOLDER.test(u)) || null;
+  const pageImage = [...links.map((l) => l.article?.image || l.image), avatarPreview(raw.preview) ? null : raw.preview?.image].find((u) => u && !PLACEHOLDER.test(u) && !notAPicture(u)) || null;
   const cover: Media | null = firstStill ? { type: 'image', ...firstStill } : pageImage ? { type: 'image', src: pageImage } : null;
 
   // A story needs Gholam's text in the article too: a reply the pipeline didn't take as a translation leaves it empty.
@@ -318,6 +329,7 @@ function shape(raw: RawPost, ids: Set<number>): Post {
     importance: x?.importance ?? null,
     entities: (x?.entities ?? []).map((e) => {
       const known = findEntity(e.name_en) ?? findEntity(e.name_fa);
+      if (known?.hidden || GENERIC_NAME.test(e.name_en.trim())) return { ...e, slug: '' };
       return known ? { slug: known.slug, name_en: known.name_en, name_fa: known.name_fa, kind: known.kind } : { ...e, slug: slugify(e.name_en) };
     }).filter((e, i, all) => e.slug && all.findIndex((o) => o.slug === e.slug) === i),
     terms: (x?.terms ?? []).map((t) => findTerm(t.term) ?? t).filter((t, i, all) => all.findIndex((o) => o.term === t.term) === i),

@@ -67,9 +67,9 @@
    "kind": "model"
   },
   {
-   "slug": "jalapeo",
+   "slug": "jalapeno",
    "name_en": "Jalapeño",
-   "name_fa": "خالاپنویو",
+   "name_fa": "هالاپینیو",
    "kind": "product"
   },
   {
@@ -82,25 +82,27 @@
    "slug": "gpu",
    "name_en": "GPU",
    "name_fa": "پردازنده گرافیکی",
-   "kind": "product"
+   "kind": "product",
+   "hidden": true
   },
   {
    "slug": "sellas-life-sciences",
    "name_en": "Sellas Life Sciences",
-   "name_fa": "سلز لایف ساینسز",
+   "name_fa": "سلاس لایف ساینسز",
    "kind": "company"
   },
   {
    "slug": "memorial-sloan-kettering",
    "name_en": "Memorial Sloan Kettering",
-   "name_fa": "مِموریل اسلون کترینگ",
+   "name_fa": "مموریال اسلون کترینگ",
    "kind": "company"
   },
   {
    "slug": "acute-myeloid-leukemia",
    "name_en": "Acute Myeloid Leukemia",
    "name_fa": "لوسمی میلوئید حاد",
-   "kind": "product"
+   "kind": "product",
+   "hidden": true
   },
   {
    "slug": "john-deere",
@@ -111,7 +113,7 @@
   {
    "slug": "science-robotics",
    "name_en": "Science Robotics",
-   "name_fa": "اساینس رباتیکس",
+   "name_fa": "ساینس رباتیکس",
    "kind": "company"
   },
   {
@@ -135,7 +137,7 @@
   {
    "slug": "gemini",
    "name_en": "Gemini",
-   "name_fa": "جمینای",
+   "name_fa": "جمنای",
    "kind": "product"
   },
   {
@@ -147,19 +149,22 @@
   {
    "slug": "unitree-g1",
    "name_en": "Unitree G1",
-   "name_fa": "یونیتی‌رِی G1",
+   "name_fa": "یونیتری G1",
    "kind": "product"
   },
   {
    "slug": "a16z",
    "name_en": "a16z",
-   "name_fa": "اِی‌اسی‌تی‌سی‌زد",
-   "kind": "company"
+   "name_fa": "اندریسن هوروویتز (a16z)",
+   "kind": "company",
+   "aliases": [
+    "Andreessen Horowitz"
+   ]
   },
   {
    "slug": "thinking-machines-lab",
    "name_en": "Thinking Machines Lab",
-   "name_fa": "آزمایشگاه ماشین‌های فکرنده",
+   "name_fa": "تینکینگ ماشینز لب",
    "kind": "company"
   },
   {
@@ -178,7 +183,8 @@
    "slug": "self-improving-ai",
    "name_en": "Self-Improving AI",
    "name_fa": "هوش مصنوعی خودبهبودبخش",
-   "kind": "product"
+   "kind": "product",
+   "hidden": true
   },
   {
    "slug": "nvidia",
@@ -195,7 +201,7 @@
   {
    "slug": "colt-kerr",
    "name_en": "Colt Kerr",
-   "name_fa": "کولت کرس",
+   "name_fa": "کولت کر",
    "kind": "person"
   },
   {
@@ -213,7 +219,7 @@
   {
    "slug": "autoform-hard",
    "name_en": "Autoform-Hard",
-   "name_fa": "اتو‌فرم هارد",
+   "name_fa": "اتوفرم هارد",
    "kind": "product"
   },
   {
@@ -225,7 +231,7 @@
   {
    "slug": "mathlib",
    "name_en": "Mathlib",
-   "name_fa": "مات‌لیب",
+   "name_fa": "مث‌لیب",
    "kind": "product"
   },
   {
@@ -243,13 +249,13 @@
   {
    "slug": "gemini-4-neon",
    "name_en": "Gemini 4 Neon",
-   "name_fa": "جمنی ۴ نیون",
+   "name_fa": "جمنای ۴ نئون",
    "kind": "model"
   },
   {
    "slug": "claude-opus-55",
    "name_en": "Claude Opus 5.5",
-   "name_fa": "کلاد آپوس ۵.۵",
+   "name_fa": "کلود اوپوس ۵.۵",
    "kind": "model"
   },
   {
@@ -267,7 +273,7 @@
   {
    "slug": "oracle-netsuite",
    "name_en": "Oracle NetSuite",
-   "name_fa": "اوراکل نت‌سوت",
+   "name_fa": "اوراکل نت‌سوئیت",
    "kind": "product"
   },
   {

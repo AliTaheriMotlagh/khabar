@@ -1,7 +1,8 @@
 ---
-// Small "where this came from" label: the tweet's author or the article's site.
+// Small "where this came from" label: the tweet's author, or the article's publisher by name (src/lib/source.ts).
 import Icon from './Icon.astro';
 import { pic, type Link } from '../lib/posts';
+import { publisherOf } from '../lib/source';
 interface Props { link: Link | null }
 const { link } = Astro.props;
 ---
@@ -13,9 +14,9 @@ const { link } = Astro.props;
         @{link.author.handle}
       </span>
     ) : (
-      <span class="src-chip ltr" dir="ltr">
+      <span class="src-chip" dir="auto" title={link.domain}>
         <Icon name={link.kind === 'youtube' ? 'youtube' : 'link'} />
-        {link.domain}
+        {publisherOf(link.url) || link.domain}
       </span>
     ))
 }

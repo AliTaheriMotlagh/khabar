@@ -9,6 +9,7 @@ const seg = (key: string, choices: Choice[]) => ({ key, choices });
 const sizes = [{ v: 's', l: 'کوچک' }, { v: 'm', l: 'معمولی' }, { v: 'l', l: 'بزرگ' }, { v: 'xl', l: 'خیلی بزرگ' }];
 const spacing = seg('spacing', [{ v: 's', l: 'فشرده' }, { v: 'm', l: 'معمولی' }, { v: 'l', l: 'باز' }]);
 const story = seg('story', [{ v: 'unseen', l: 'فقط ندیده‌ها' }, { v: 'today', l: 'امروز' }, { v: 'all', l: 'هر سه روز' }]);
+const listen = seg('listen', [{ v: 'all', l: 'همه‌ی متن' }, { v: 'lead', l: 'تیتر و خلاصه' }, { v: 'last', l: 'تیتر و بخش آخر' }, { v: 'title', l: 'فقط تیتر' }]);
 const order = seg('order', [{ v: 'new', l: 'تازه‌ترین اول' }, { v: 'old', l: 'قدیمی‌ترین اول' }, { v: 'important', l: 'مهم‌ترین اول' }]);
 const BASE = import.meta.env.BASE_URL.replace(/\/$/, '');
 ---
@@ -106,6 +107,13 @@ const BASE = import.meta.env.BASE_URL.replace(/\/$/, '');
 
     <section class="set-group" aria-labelledby="set-sound">
       <h3 id="set-sound"><Icon name="headphones" /> صدا</h3>
+      <fieldset class="set-row set-stack">
+        <legend>«گوش دادن» چه بخشی از خبر را بخواند</legend>
+        <div class="seg seg-fill seg-wrap">
+          {listen.choices.map((c) => <label><input type="radio" name={listen.key} value={c.v} /><span>{c.l}</span></label>)}
+        </div>
+        <small class="set-hint">بخش آخر یعنی «چرا مهمه؟»؛ اگر نباشد، بند آخر خبر. برای خبر، پادکست امروز و استوری.</small>
+      </fieldset>
       <div class="set-row" data-voice-settings hidden>
         <span class="set-text"><b>صدای فارسی برای «گوش دادن»</b><small data-voice-status></small></span>
         <button class="btn sm" type="button" data-voice-open>دانلود صدا</button>

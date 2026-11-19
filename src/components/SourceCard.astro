@@ -1,8 +1,12 @@
 ---
-// The original source of a story: the tweet (with all its media) or the linked article.
+// The original source of a story: the tweet (with all its media) or the linked article. In any language: the text keeps
+// its own direction and language (`lang`, `dir=auto`), a label says which language it is, a link opens it translated
+// into Persian, and the article a tweet cites is named by its publisher (src/lib/source.ts). Links are shown short and
+// without tracking parameters.
 import Icon from './Icon.astro';
 import Media from './Media.astro';
 import { pic, type Link } from '../lib/posts';
+import { citedLinks, cleanUrl, isShortener, langOf, publisherOf, shortUrl, translateUrl } from '../lib/source';
 interface Props { link: Link; alt: string; fallbackHref: string; showMedia?: boolean }
 const { link, alt, fallbackHref, showMedia = true } = Astro.props;
 
@@ -11,6 +15,13 @@ const URL_RE = /(https?:\/\/[^\s]+)/g;
 const parts = (text = '') => text.split(URL_RE).map((v, i) => ({ v, url: i % 2 === 1 }));
 const tweetDate = (t?: number) =>
   t ? new Intl.DateTimeFormat('fa-IR-u-ca-persian', { dateStyle: 'medium', timeZone: 'Asia/Tehran' }).format(new Date(t * 1000)) : '';
+
+const text = link.kind === 'tweet' ? [link.text, link.article?.title].filter(Boolean).join('\n') : [link.title, link.description].filter(Boolean).join('\n');
+const lang = langOf(text);
+const translate = translateUrl(text, lang);
+const cited = link.kind === 'tweet' ? citedLinks(link.text).slice(0, 2) : [];
+const site = link.kind === 'tweet' ? '' : link.site && !/^(FxTwitter|X)\b/.test(link.site) ? link.site : publisherOf(link.url) || link.domain;
+const pageUrl = cleanUrl(link.url);
 ---
 {
   link.kind === 'tweet' ? (
@@ -23,34 +34,57 @@ const tweetDate = (t?: number) =>
         </div>
         <Icon name="x-logo" class="logo" label="X" />
       </div>
-      {link.text && <div class="txt" dir="auto">{parts(link.text).map((p) => (p.url ? <a href={p.v} rel="noopener nofollow" target="_blank">{p.v}</a> : p.v))}</div>}
-      {link.article?.title && <p class="txt"><b dir="auto">{link.article.title}</b></p>}
+      {link.text && (
+        <div class="txt" dir="auto" lang={lang?.code}>
+          {parts(link.text).map((p) => (p.url ? <a href={cleanUrl(p.v)} rel="noopener nofollow" target="_blank" dir="ltr" title={cleanUrl(p.v)}>{shortUrl(p.v)}</a> : p.v))}
+        </div>
+      )}
+      {link.article?.title && <p class="txt"><b dir="auto" lang={lang?.code}>{link.article.title}</b></p>}
       {showMedia && link.media && link.media.length > 0 && <Media items={link.media} alt={alt} fallbackHref={fallbackHref} limit={12} size="large" />}
       {link.quote && (
         <div class="quote">
           <div class="who ltr" dir="ltr"><b>{link.quote.author?.name}</b> <span>@{link.quote.author?.handle}</span></div>
-          <div class="txt" dir="auto">{link.quote.text}</div>
+          <div class="txt" dir="auto" lang={langOf(link.quote.text)?.code}>{link.quote.text}</div>
           {showMedia && link.quote.media && link.quote.media.length > 0 && <Media items={link.quote.media} alt={alt} fallbackHref={fallbackHref} />}
         </div>
       )}
+      {cited.map((u) => (
+        <a class="src-cited" href={u} target="_blank" rel="noopener nofollow">
+          <span class="src-cited-label"><Icon name="link" /> منبع اصلی</span>
+          <b dir="auto">{isShortener(u) ? link.author?.name || publisherOf(u) : publisherOf(u)}</b>
+          <span class="src-cited-url ltr" dir="ltr">{shortUrl(u, 44)}</span>
+          <Icon name="external" />
+        </a>
+      ))}
       <div class="foot">
-        {link.date && <span>{tweetDate(link.date)}</span>}
-        <a class="btn sm" href={link.url} target="_blank" rel="noopener">مشاهده در X <Icon name="external" /></a>
+        <span class="src-meta">
+          {link.date && <span>{tweetDate(link.date)}</span>}
+          {lang && <span class="src-lang" title="زبان متن منبع">{lang.fa}</span>}
+          {translate && <a class="src-tr" href={translate} target="_blank" rel="noopener nofollow">ترجمه <Icon name="external" /></a>}
+        </span>
+        <a class="btn sm" href={cleanUrl(link.url)} target="_blank" rel="noopener">مشاهده در X <Icon name="external" /></a>
       </div>
     </section>
   ) : (
-    <section class="source page" aria-label={`منبع: ${link.site ?? link.domain}`}>
+    <section class="source page" aria-label={`منبع: ${site}`}>
       {link.image && (
-        <a class="og" href={link.url} target="_blank" rel="noopener" tabindex="-1" aria-hidden="true">
-          <img {...pic(link.image, 'medium')} alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer" data-fallback={link.url} />
+        <a class="og" href={pageUrl} target="_blank" rel="noopener" tabindex="-1" aria-hidden="true">
+          <img {...pic(link.image, 'medium')} alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer" data-fallback={pageUrl} />
           {link.kind === 'youtube' && <span class="play"><span><Icon name="play" /></span></span>}
         </a>
       )}
       <div class="body">
-        <span class="site ltr" dir="ltr"><Icon name={link.kind === 'youtube' ? 'youtube' : 'link'} /> {link.site ?? link.domain}</span>
-        <h3 dir="auto"><a href={link.url} target="_blank" rel="noopener">{link.title ?? link.url}</a></h3>
-        {link.description && <p dir="auto">{link.description}</p>}
-        <a class="btn sm" href={link.url} target="_blank" rel="noopener">{link.kind === 'youtube' ? 'دیدن در یوتیوب' : 'خواندن در سایت منبع'} <Icon name="external" /></a>
+        <span class="site">
+          <Icon name={link.kind === 'youtube' ? 'youtube' : 'link'} />
+          <b dir="auto">{site}</b>
+          {lang && lang.code !== 'fa' && <span class="src-lang" title="زبان متن منبع">{lang.fa}</span>}
+        </span>
+        <h3 dir="auto" lang={lang?.code}><a href={pageUrl} target="_blank" rel="noopener">{link.title ?? shortUrl(link.url, 60)}</a></h3>
+        {link.description && <p dir="auto" lang={lang?.code}>{link.description}</p>}
+        <span class="src-actions">
+          <a class="btn sm" href={pageUrl} target="_blank" rel="noopener">{link.kind === 'youtube' ? 'دیدن در یوتیوب' : `خواندن در ${site}`} <Icon name="external" /></a>
+          {translate && link.kind !== 'youtube' && <a class="btn sm ghost" href={`https://translate.google.com/translate?sl=auto&tl=fa&u=${encodeURIComponent(pageUrl)}`} target="_blank" rel="noopener nofollow">ترجمه‌ی صفحه</a>}
+        </span>
       </div>
     </section>
   )

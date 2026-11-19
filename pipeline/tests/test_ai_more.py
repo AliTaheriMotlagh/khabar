@@ -161,3 +161,18 @@ def test_a_gone_server_stops_the_run_without_failing_it(tmp_path, monkeypatch, c
     monkeypatch.setattr(ai, "work_out", gone)
     assert ai.run(everything=True) == 0
     assert "::warning::ai: the model server stopped answering" in capsys.readouterr().out
+
+
+def test_slugs_drop_accents_like_the_site():
+    # src/lib/knowledge.ts slugify normalizes (NFKD) first: the two must give the same page address.
+    assert ai_more.slugify("Jalapeño") == "jalapeno"
+    assert ai_more.slugify("Heidrick & Struggles") == "heidrick-struggles"
+    assert ai_more.slugify("Claude Opus 5.5") == "claude-opus-55"
+
+
+def test_generic_words_are_not_entities():
+    x = ai_more.tidy_x({"entities": [
+        {"name_en": "GPU", "name_fa": "پردازنده گرافیکی", "kind": "product"},
+        {"name_en": "NVIDIA", "name_fa": "انویدیا", "kind": "company"},
+    ]})
+    assert [e["name_en"] for e in x["entities"]] == ["NVIDIA"]

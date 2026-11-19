@@ -12,6 +12,21 @@ const { posts, all = posts, nextHref, prevHref, title = 'خط زمانی خبر�
 const perDay = new Map<string, number>();
 for (const p of all) if (p.kind !== 'digest') perDay.set(dayKey(p.date), (perDay.get(dayKey(p.date)) ?? 0) + 1);
 
+// One filter bar (home page): the story's *type* (what kind of item: a tool, a paper… — pipeline/ai.py) and its
+// *topic* (what it's about: a company, a field — the keyword tags), each a group of chips that combine.
+const ICONS: Record<string, [string, string]> = {
+  'ابزار و محصول': ['🛠', 'محصول، ابزار یا قابلیت تازه'],
+  'پژوهش و مقاله': ['📄', 'مقاله، پژوهش یا نتیجه‌ی آزمایش'],
+  آموزش: ['🎓', 'راهنما و آموزش'],
+  'نظر و تحلیل': ['💭', 'دیدگاه، تحلیل یا گفت‌وگو'],
+  'ویدیوی مهرزاد': ['▶', 'ویدیوهای یوتیوب مهرزاد صمدی'],
+};
+const TYPES = STORY_TYPES.filter((t) => t !== 'خبر').map((v) => ({ v, icon: ICONS[v]?.[0] ?? '•', hint: ICONS[v]?.[1] ?? v }));
+// This page's most common topics (a story's first tag is its section).
+const tagCount = new Map<string, number>();
+for (const p of posts) for (const t of p.article.tags.slice(0, 2)) tagCount.set(t, (tagCount.get(t) ?? 0) + 1);
+const topics = [...tagCount].filter(([, n]) => n >= 2).sort((a, b) => b[1] - a[1]).slice(0, 8).map(([t]) => t);
+
 const days: { day: string; iso: string; posts: Post[] }[] = [];
 for (const p of posts) {
   const d = dayKey(p.date);
@@ -23,22 +38,32 @@ for (const p of posts) {
   <h2 class="tl-title" id="tl-title">{title}</h2>
   {
     filter && (
-      <div class="tl-filter" data-tl-filter hidden>
-        <div class="seg" role="radiogroup" aria-label="کدام خبرها">
-          <label><input type="radio" name="tl-filter" value="all" checked /><span>همه‌ی خبرها</span></label>
-          <label><input type="radio" name="tl-filter" value="mine" /><span>موضوع‌های من</span></label>
+      <div class="tl-bar" data-tl-bar>
+        <div class="tl-chips" role="toolbar" aria-label="صافی خبرها">
+          <label class="fchip fchip-all"><input type="radio" name="tl-type" value="" checked data-tl-all /><span>همه</span></label>
+          <label class="fchip fchip-mine" data-tl-filter hidden><input type="checkbox" name="tl-filter" value="mine" /><span>★ موضوع‌های من</span></label>
+          <span class="tl-group" data-tl-types role="radiogroup" aria-label="نوع خبر" hidden>
+            <span class="tl-group-label" aria-hidden="true">نوع</span>
+            {TYPES.map((t) => (
+              <label class="fchip" data-type-chip={t.v} title={t.hint}><input type="radio" name="tl-type" value={t.v} /><span><i aria-hidden="true">{t.icon}</i>{t.v}</span></label>
+            ))}
+          </span>
+          {
+            topics.length > 1 && (
+              <span class="tl-group" data-tl-topics role="radiogroup" aria-label="موضوع">
+                <span class="tl-group-label" aria-hidden="true">موضوع</span>
+                {topics.map((t) => (
+                  <label class="fchip" data-topic-chip={t}><input type="radio" name="tl-topic" value={t} /><span>{t}</span></label>
+                ))}
+                <a class="fchip fchip-more" href={url('tags/')}>همه‌ی موضوع‌ها</a>
+              </span>
+            )
+          }
         </div>
-        <a class="tl-filter-edit" href={url('tags/')}>ویرایش موضوع‌ها</a>
-      </div>
-    )
-  }
-  {
-    filter && (
-      <div class="chips tl-types" data-tl-types role="radiogroup" aria-label="نوع خبر" hidden>
-        <label class="chip"><input type="radio" name="tl-type" value="" checked /><span>همه</span></label>
-        {STORY_TYPES.filter((t) => t !== 'خبر').map((t) => (
-          <label class="chip" data-type-chip={t}><input type="radio" name="tl-type" value={t} /><span>{t}</span></label>
-        ))}
+        <p class="tl-active" data-tl-active hidden>
+          <span data-tl-active-text></span>
+          <button type="button" class="tl-clear" data-tl-clear>پاک کردن صافی</button>
+        </p>
       </div>
     )
   }

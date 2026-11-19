@@ -122,7 +122,8 @@ self.addEventListener('push', (e) => {
   e.waitUntil(
     self.registration.showNotification(title, {
       body: m.body || '',
-      icon: `${SCOPE}icon-192.png`,
+      // The story's picture, small beside the text (Android shows it collapsed too); else the site's icon.
+      icon: typeof m.icon === 'string' && m.icon.startsWith('https://') ? m.icon : `${SCOPE}icon-192.png`,
       // Android's status bar draws the badge's shape only: white on transparent.
       badge: `${SCOPE}badge-96.png`,
       // The story's picture, large under the text (Android, Windows; others ignore it). An https address only.

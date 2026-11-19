@@ -1,65 +1,123 @@
 ---
 // The guest's own corner: name, level, badges, streak and reading history. Everything lives in this browser.
+// Three tabs under the profile (history, badges, the week's most active) instead of one long page: the reading history
+// in pages of 20, the earned badges before the locked ones.
 import Base from '../../layouts/Base.astro';
 import Icon from '../../components/Icon.astro';
 ---
 <Base title="پروفایل من" noindex>
-  <div class="container narrow">
+  <div class="container narrow me-page">
     <section class="profile">
       <span class="avatar xl" data-my-avatar aria-hidden="true">؟</span>
       <div class="profile-main">
         <form class="name-form" data-name-form>
           <label for="my-name" class="sr-only">نام نمایشی</label>
-          <input id="my-name" name="name" maxlength="32" placeholder="یک نام برای خودتان انتخاب کنید" autocomplete="nickname" />
-          <button class="btn sm" type="submit">ذخیره</button>
+          <input id="my-name" name="name" maxlength="32" placeholder="یک نام برای خودتان انتخاب کنید" autocomplete="nickname" enterkeyhint="done" />
+          <button class="btn sm primary" type="submit">ذخیره</button>
         </form>
-        <p class="muted">بدون ثبت‌نام. نام شما فقط کنار نظرها، گفتگو و جدول امتیازها نشان داده می‌شود.</p>
+        <p class="muted small">بدون ثبت‌نام. نام شما فقط کنار نظرها، گفتگو و جدول امتیازها نشان داده می‌شود.</p>
         <div class="level-row">
           <span class="pill accent">سطح <b data-my-level>۱</b></span>
           <b data-my-title>تازه‌وارد</b>
           <span class="streak"><Icon name="flame" /> <b data-my-streak>۰</b> روز پشت‌سرهم</span>
         </div>
-        <div class="xp big"><i data-my-xp style="width:0%"></i></div>
+        <div class="xp big" role="progressbar" aria-label="امتیاز تا سطح بعد"><i data-my-xp style="width:0%"></i></div>
         <small class="muted" data-my-next></small>
       </div>
     </section>
 
     <section class="stat-grid" data-my-stats></section>
 
-    <h2 class="section-title"><Icon name="trophy" /> نشان‌ها</h2>
-    <div class="badges" data-my-badges></div>
+    <div class="me-tabs" role="tablist" aria-label="بخش‌های پروفایل">
+      <button type="button" role="tab" id="tab-history" aria-controls="me-history" aria-selected="true" data-me-tab="history"><Icon name="history" /> خوانده‌ها <small data-history-count></small></button>
+      <button type="button" role="tab" id="tab-badges" aria-controls="me-badges" aria-selected="false" tabindex="-1" data-me-tab="badges"><Icon name="trophy" /> نشان‌ها <small data-badge-count></small></button>
+      <button type="button" role="tab" id="tab-leaders" aria-controls="me-leaders" aria-selected="false" tabindex="-1" data-me-tab="leaders"><Icon name="users" /> فعال‌ها</button>
+    </div>
 
-    <section data-leaders hidden>
-      <h2 class="section-title"><Icon name="users" /> فعال‌ترین‌های این هفته</h2>
-      <ol class="leaders" data-leaders-list></ol>
+    <section id="me-history" role="tabpanel" aria-labelledby="tab-history" class="me-panel" data-me-panel="history">
+      <ul class="row-list" data-history-list></ul>
+      <div class="empty" data-history-empty hidden>
+        <Icon name="history" />
+        <p>هنوز خبری نخوانده‌اید. هر خبری که باز کنید اینجا می‌ماند تا دوباره پیدایش کنید.</p>
+        <a class="btn sm primary" href={`${import.meta.env.BASE_URL.replace(/\/$/, '')}/`}>رفتن به خبرها</a>
+      </div>
+      <p class="center me-actions">
+        <button class="btn sm" type="button" data-history-more hidden>بیشتر</button>
+        <button class="btn sm ghost" type="button" data-clear-history hidden>پاک کردن تاریخچه</button>
+      </p>
     </section>
 
-    <h2 class="section-title"><Icon name="history" /> خبرهایی که خوانده‌اید</h2>
-    <ul class="row-list" data-history-list></ul>
-    <div class="empty" data-history-empty hidden>
-      <Icon name="history" />
-      <p>هنوز خبری نخوانده‌اید. هر خبری که باز کنید اینجا می‌ماند تا دوباره پیدایش کنید.</p>
-    </div>
-    <p class="center"><button class="btn sm" type="button" data-clear-history hidden>پاک کردن تاریخچه</button></p>
+    <section id="me-badges" role="tabpanel" aria-labelledby="tab-badges" class="me-panel" data-me-panel="badges" hidden>
+      <div class="badges" data-my-badges></div>
+    </section>
+
+    <section id="me-leaders" role="tabpanel" aria-labelledby="tab-leaders" class="me-panel" data-me-panel="leaders" hidden>
+      <div data-leaders hidden>
+        <h2 class="section-title"><Icon name="users" /> فعال‌ترین‌های این هفته</h2>
+        <ol class="leaders" data-leaders-list></ol>
+      </div>
+      <p class="muted center" data-leaders-empty>با خواندن، واکنش و نظر امتیاز بگیرید تا نامتان اینجا بیاید.</p>
+    </section>
   </div>
 </Base>
 <script>
-  import { getHistory, rowHtml, store } from '../../scripts/app';
+  import { $, $$, fmtNum, getHistory, rowHtml, store } from '../../scripts/core';
   import { renderProfile } from '../../scripts/game';
-  const list = document.querySelector('[data-history-list]')!;
-  const empty = document.querySelector<HTMLElement>('[data-history-empty]')!;
-  const clear = document.querySelector<HTMLButtonElement>('[data-clear-history]')!;
+  const PAGE = 20;
+  const list = $('[data-history-list]')!;
+  const empty = $('[data-history-empty]')!;
+  const clear = $<HTMLButtonElement>('[data-clear-history]')!;
+  const more = $<HTMLButtonElement>('[data-history-more]')!;
+  let shown = PAGE;
   function render() {
     const items = getHistory();
     empty.hidden = items.length > 0;
     clear.hidden = !items.length;
-    list.innerHTML = items.map((s) => rowHtml(s, false)).join('');
+    more.hidden = items.length <= shown;
+    more.textContent = `بیشتر (${fmtNum(items.length - shown)} خبر دیگر)`;
+    list.innerHTML = items.slice(0, shown).map((s) => rowHtml(s, false)).join('');
+    $('[data-history-count]')!.textContent = items.length ? fmtNum(items.length) : '';
   }
+  more.addEventListener('click', () => {
+    shown += PAGE * 2;
+    render();
+  });
   clear.addEventListener('click', () => {
     if (!confirm('تاریخچه‌ی خواندن پاک شود؟')) return;
     store.set('history', []);
+    shown = PAGE;
     render();
   });
+
+  // Tabs (ARIA tabs pattern: arrows move between them); the chosen one is kept for this visit's back/forward.
+  const tabs = $$<HTMLButtonElement>('[data-me-tab]');
+  function select(name: string, focus = false) {
+    for (const t of tabs) {
+      const on = t.dataset.meTab === name;
+      t.setAttribute('aria-selected', String(on));
+      t.tabIndex = on ? 0 : -1;
+      if (on && focus) t.focus();
+    }
+    $$('[data-me-panel]').forEach((p) => (p.hidden = p.dataset.mePanel !== name));
+    history.replaceState(history.state, '', `#${name}`);
+  }
+  tabs.forEach((t, i) => {
+    t.addEventListener('click', () => select(t.dataset.meTab!));
+    t.addEventListener('keydown', (e) => {
+      // Right-to-left: the next tab is to the left.
+      const step = e.key === 'ArrowLeft' ? 1 : e.key === 'ArrowRight' ? -1 : 0;
+      if (step) select(tabs[(i + step + tabs.length) % tabs.length].dataset.meTab!, true);
+    });
+  });
+  const start = location.hash.slice(1);
+  if (tabs.some((t) => t.dataset.meTab === start)) select(start);
+
+  // The leaderboard fills in from the API (social.ts): the empty line goes once it does.
+  const leaders = $('[data-leaders]');
+  if (leaders) new MutationObserver(() => ($('[data-leaders-empty]')!.hidden = !leaders.hidden)).observe(leaders, { attributes: true, attributeFilter: ['hidden'] });
+
   render();
   renderProfile();
+  const badges = $$('.badge-card');
+  $('[data-badge-count]')!.textContent = `${fmtNum(badges.filter((b) => b.classList.contains('on')).length)}/${fmtNum(badges.length)}`;
 </script>

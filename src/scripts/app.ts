@@ -19,8 +19,8 @@ export { getSaved, getHistory, rowHtml, store } from './core';
 const root = document.documentElement;
 
 // ---------- display settings ----------
-type Settings = { theme: string; size: string; spacing: string; focus: string; view: string; media: string; words: string; story: StoryShow; order: StoryOrder };
-const DEFAULTS: Settings = { theme: 'auto', size: 'm', spacing: 'm', focus: 'off', view: 'cards', media: 'show', words: 'on', story: 'unseen', order: 'new' };
+type Settings = { theme: string; size: string; spacing: string; focus: string; view: string; media: string; words: string; listen: string; story: StoryShow; order: StoryOrder };
+const DEFAULTS: Settings = { theme: 'auto', size: 'm', spacing: 'm', focus: 'off', view: 'cards', media: 'show', words: 'on', listen: 'all', story: 'unseen', order: 'new' };
 let settings: Settings = { ...DEFAULTS, ...store.get<Partial<Settings>>('settings', {}) };
 const darkQuery = matchMedia('(prefers-color-scheme: dark)');
 const resolvedTheme = () => (settings.theme === 'auto' ? (darkQuery.matches ? 'dark' : 'light') : settings.theme);
@@ -70,6 +70,7 @@ form?.addEventListener('input', (e) => {
   if (!(t.name in DEFAULTS)) return;
   saveSettings({ [t.name]: t.type === 'checkbox' ? (t.checked ? t.dataset.on : t.dataset.off) : t.value });
   if (t.name === 'story' || t.name === 'order') storiesChanged();
+  if (t.name === 'listen') document.dispatchEvent(new Event('listen-part'));
 });
 $('[data-reset]')?.addEventListener('click', () => {
   settings = { ...DEFAULTS };

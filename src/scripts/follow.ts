@@ -28,10 +28,14 @@ function paintButtons() {
   $$('[data-follow-count]').forEach((el) => (el.textContent = n ? `${fmtNum(n)} موضوع` : 'هنوز هیچ'));
 }
 
-// ---------- the home timeline: all news, or only the followed topics ----------
+// ---------- the home timeline's filter bar (src/components/Timeline.astro) ----------
+// Three filters that combine: «موضوع‌های من» (the followed topics and people), a story *type* (the AI's, pipeline/ai.py:
+// a tool, a paper, an opinion…) and a *topic* of this page (the keyword tags). «همه» clears them all.
 const FILTER = 'tl-filter';
-/** Marks the stories of followed topics, applies the filter, and hides days left with nothing to show. Run again after
- *  "load more" adds stories. */
+const TYPE = 'tl-type';
+const TOPIC = 'tl-topic';
+/** Marks the stories of followed topics, applies the filters, and hides days left with nothing to show. Run again
+ *  after "load more" adds stories. */
 export function applyFollowFilter() {
   const box = $('[data-tl-filter]');
   const tl = $('[data-tl]');
@@ -44,9 +48,9 @@ export function applyFollowFilter() {
   const only = !!box && follows.size > 0 && store.get<string>(FILTER, 'all') === 'mine';
   if (box) {
     box.hidden = !follows.size;
-    $<HTMLInputElement>(`input[value="${only ? 'mine' : 'all'}"]`, box)!.checked = true;
+    $<HTMLInputElement>('input', box)!.checked = only;
   }
-  // The stories' types: a chip for each type this page has (the AI's, pipeline/ai.py), shown once there are two.
+  // A chip for each type this page has, shown once there are two.
   const types = $('[data-tl-types]');
   const items = $$('.tl-item', tl);
   let type = '';
@@ -55,12 +59,26 @@ export function applyFollowFilter() {
     $$('[data-type-chip]', types).forEach((c) => (c.hidden = !present.has(c.dataset.typeChip)));
     types.hidden = present.size < 2;
     type = present.has(store.get<string>(TYPE, '')) ? store.get<string>(TYPE, '') : '';
-    $<HTMLInputElement>(`input[value="${type}"]`, types)!.checked = true;
   }
-  const shows = (el: HTMLElement) => (!only || el.classList.contains('is-mine')) && (!type || el.dataset.type === type);
+  const topics = $('[data-tl-topics]');
+  const known = new Set($$('[data-topic-chip]').map((c) => c.dataset.topicChip));
+  const topic = topics && known.has(store.get<string>(TOPIC, '')) ? store.get<string>(TOPIC, '') : '';
+  $$<HTMLInputElement>('input[name="tl-type"]').forEach((i) => (i.checked = i.value === type && !(i.hasAttribute('data-tl-all') && (topic || only))));
+  $$<HTMLInputElement>('input[name="tl-topic"]').forEach((i) => (i.checked = i.value === topic));
+  const tagsOf = (el: HTMLElement) => (el.dataset.tags ?? '').split(',');
+  const shows = (el: HTMLElement) =>
+    (!only || el.classList.contains('is-mine')) && (!type || el.dataset.type === type) && (!topic || tagsOf(el).includes(topic));
   for (const item of items) item.classList.toggle('is-off', !shows(item));
-  const filtered = only || !!type;
+  const filtered = only || !!type || !!topic;
   tl.classList.toggle('filtered', filtered);
+  // What's on, in words, with one tap to clear it.
+  const active = $('[data-tl-active]');
+  if (active) {
+    const n = items.filter(shows).length;
+    const what = [only && 'موضوع‌های من', type && `نوع: ${type}`, topic && `موضوع: ${topic}`].filter(Boolean).join(' · ');
+    $('[data-tl-active-text]', active)!.textContent = `${what} — ${fmtNum(n)} خبر`;
+    active.hidden = !filtered;
+  }
   // A day's pill stays only if one of its stories still shows.
   let day: HTMLElement | null = null;
   let shown = 0;
@@ -76,7 +94,6 @@ export function applyFollowFilter() {
   const empty = $('[data-tl-mine-empty]');
   if (empty) empty.hidden = !filtered || items.some(shows);
 }
-const TYPE = 'tl-type';
 
 export function initFollow() {
   paintButtons();
@@ -87,12 +104,26 @@ export function initFollow() {
     e.preventDefault();
     toggleFollow(b.dataset.follow!, b.dataset.followName);
   });
-  $('[data-tl-filter]')?.addEventListener('change', (e) => {
-    store.set(FILTER, (e.target as HTMLInputElement).value);
+  $('[data-tl-bar]')?.addEventListener('change', (e) => {
+    const t = e.target as HTMLInputElement;
+    if (t.name === 'tl-filter') store.set(FILTER, t.checked ? 'mine' : 'all');
+    else if (t.hasAttribute('data-tl-all')) [FILTER, TYPE, TOPIC].forEach((k) => store.set(k, k === FILTER ? 'all' : ''));
+    else if (t.name === 'tl-type') store.set(TYPE, t.value);
+    else if (t.name === 'tl-topic') store.set(TOPIC, t.value);
     applyFollowFilter();
   });
-  $('[data-tl-types]')?.addEventListener('change', (e) => {
-    store.set(TYPE, (e.target as HTMLInputElement).value);
+  // A tap on the chosen type or topic again clears it (radios can't be unticked by hand).
+  $('[data-tl-bar]')?.addEventListener('click', (e) => {
+    const input = (e.target as Element).closest('label')?.querySelector<HTMLInputElement>('input[type="radio"]');
+    if (!input || input.hasAttribute('data-tl-all') || !input.checked) return;
+    const key = input.name === 'tl-topic' ? TOPIC : TYPE;
+    if (store.get<string>(key, '') !== input.value) return;
+    e.preventDefault();
+    store.set(key, '');
+    applyFollowFilter();
+  });
+  $('[data-tl-clear]')?.addEventListener('click', () => {
+    [FILTER, TYPE, TOPIC].forEach((k) => store.set(k, k === FILTER ? 'all' : ''));
     applyFollowFilter();
   });
   document.addEventListener('follows-change', () => (paintButtons(), applyFollowFilter()));
