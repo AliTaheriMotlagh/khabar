@@ -38,5 +38,17 @@
   ]
  },
  "updated": "2026-10-25T12:30:03+00:00",
- "gholam_checked": "2026-10-25T12:30:03+00:00"
+ "gholam_checked": "2026-10-25T12:30:03+00:00",
+ "ai": {
+  "title": "استارتاپ Moving Atoms مدل Atom 1 را ساخت که در بنچمارک Physics IQ از مدل Cosmos 3 انویدیا پیشی گرفت",
+  "short": "Atom 1 از Cosmos 3 پیشی گرفت",
+  "topics": [
+   "استارتاپ",
+   "رباتیک"
+  ],
+  "type": "ابزار و محصول",
+  "model": "qwen3.5-9b-q4_k_m",
+  "v": 2,
+  "src": "ca287eb3c7ad"
+ }
 }

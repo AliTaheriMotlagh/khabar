@@ -81,5 +81,17 @@
   ]
  },
  "updated": "2026-10-25T12:30:02+00:00",
- "gholam_checked": "2026-10-25T12:30:02+00:00"
+ "gholam_checked": "2026-10-25T12:30:02+00:00",
+ "ai": {
+  "title": "DeepSeek V4 Flash با روش خودارزیابی، Claude Fable 5 را در بنچمارک جا زد",
+  "short": "DeepSeek V4 Flash برتر شد",
+  "topics": [
+   "چین",
+   "آنتروپیک"
+  ],
+  "type": "پژوهش و مقاله",
+  "model": "qwen3.5-9b-q4_k_m",
+  "v": 2,
+  "src": "0eb8304e7efa"
+ }
 }
