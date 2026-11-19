@@ -12,7 +12,7 @@
   "site": "🧵 Thread • FxTwitter",
   "title": "NVIDIA Healthcare (@NVIDIAHealth)",
   "description": "🆕\ncuPotential\nA CUDA-X library for computing nonbonded interactions in molecular dynamics. The OpenMM plugin replaces the nonbonded force, integrator, and barostat.\nIn NPT benchmarks on systems from 24K to 400K atoms, it ran over 3x faster than OpenMM on…",
-  "image": "https://cdn4.telesco.pe/file/bCPl6Mya_m3C2CbUlAtCQZJzhcJHWdrVWK5B88UZ56lBAFIwN4crsYWalCYOEAaQ3ZfGbmjgmDM6ofORkPCG9fkq27TbcB-kGoQkwSCr9wdX6Maw-XfuN4_DIDFscoXrZSJ5tLpQ8Jsuq1DxSAVIiAoxOJL9_qva1uZyjo2whcauWARyYH60jzvCr9rrCE867--TplFZFQy3_6p582xfCfiVcntxM9fSotgDyZs1w2gEU0czCcfxzQIHaWtjLaROhXiqFRJaCNCcX8jWm5lVro1n_F9fd0DDSeT7qXwqAbWFbnnh3yRvhuuvs6x0Aq64BunrqdllCRlEYuGyDF8CzA.jpg"
+  "image": "https://cdn4.telesco.pe/file/ikRyr71LaXP8F39yWxriCHaSAaL3CpF81aRAqtKhkR-2dqiuQRnvNyHXTrMsMfmy4iDo--LXLf1bh8CUpnvh8LhJ_8gr7lPExYxNfx8oltvhjIhcC2L0GGRW895OIKHIHOm-cg08FK5Hbl1qMU3eIQ2YecAzKSb5hyxW5bd1Rvb5ZyFDJ5QFBuiOGO1y6R79v2HXpYUfjzcNLajx7-CFxQLbtp1MtwyU5QEBEeq9pSaauAJCAPVk9JwNiBQfwjCO61HBfvA_0HM0xkkVbgISKwBUGnerNQJFL1QMohpNU-mg-QYuPiWDtla1IBNy4ipaIyepmDCs40McKUKYythx-w.jpg"
  },
  "gholam": {
   "text": "سلام رفقا! انویدیا از کتابخونه جدیدی به اسم cuPotential رونمایی کرده که برای شتاب‌دادن به شبیه‌سازی‌های دینامیک مولکولی طراحی شده؛ کاری که تو فیزیک، شیمی، زیست‌شناسی و کشف دارو کاربرد داره. حساب و کتاب برهم‌کنش بین چند صد هزار اتم معمولاً خیلی سنگینه، ولی انویدیا می‌گه با این ابزار و افزونه‌اش برای موتور معروف OpenMM، هم سرعت بالا می‌ره و هم دقت کار حفظ می‌شه. 🧬\n\n• به گفته انویدیا، در تست‌های NPT روی سیستم‌های ۲۴ هزار تا ۴۰۰ هزار اتمی، این ابزار روی RTX PRO 6000 Blackwell بیش از ۳ برابر و روی پردازنده‌هایی مثل B200، H100، A100 و چند مدل دیگه حدود ۲ برابر سریع‌تر از OpenMM عادی کار کرده و انحراف انرژی‌اش هم چند صد برابر کمتر از روش پیش‌فرض PME بوده.\n• تو وبلاگ فنی شرکت توضیح داده شده که این کتابخونه ابزارهای ماژولار با رابط زبان C داره و افزونه OpenMM اون با کمترین تغییر کد، جایگزین بخش‌های محاسبه نیرو، یکپارچه‌ساز و بارواستات می‌شه؛ کد پروژه هم روی گیت‌هاب منتشر شده و پیش‌نیازش لینوکس و CUDA 13.1 هست.\n• قراره دموهای این ابزار تو رویداد SC26 نمایش داده بشه و چهارشنبه ۱۸ نوامبر هم یه سخنرانی ۱۵ دقیقه‌ای درباره کاربردش تو کشف دارو با هوش مصنوعی برگزار بشه.\n\nالبته خب همه این عدد و رقم‌ها فعلاً بر اساس بنچمارک‌ها و اعلام خود انویدیاست و باید دید تو پروژه‌های واقعی محقق‌ها چطور جواب می‌ده.",
@@ -82,5 +82,5 @@
    "علم"
   ]
  },
- "updated": "2026-11-19T04:16:44+00:00"
+ "updated": "2026-11-19T12:54:29+00:00"
 }

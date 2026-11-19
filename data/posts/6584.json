@@ -12,7 +12,7 @@
   "site": "🧵 Thread • FxTwitter",
   "title": "Ethan Mollick (@emollick)",
   "description": "This by Anthropic seems both right & a condemnation of many “agentic solutions” & harnesses being built at companies. Rather than a sprawl of specialized subagents built by different teams, you often get better & cheaper results using one agent to do it all…",
-  "image": "https://cdn4.telesco.pe/file/iK9k00-P-Yx4hLWrKI9oDAzcBwnoGL5ImmyhCrrOZnpoe46dxo3iZRdgfeCxpqksaz_r7FUgGA1JnUuv-uE9jqfn-cijf2Caul6RbwSnaJ7EIrmmhCLkCVMyRSS4GLzTYkwa8SKEslgwDS4pzyCWjnulXzFPYx9U4WCBeospSp22nPz_WhUxkOqjG17I6JK9xIk_TyPWXqgEwsJQNmcu-iZNAJHkl6-qLfi-_E0GXMz1mq4JWSHDkjFAHJnjlz_Y8n_vrZRcbWozmpiexR89KrJT55SKOY7B82Ooqdas8x0J8yExzU7ggGTIfAf0vVET58VE3XcCMjwtg0gZ0gnZIA.jpg"
+  "image": "https://cdn4.telesco.pe/file/W0ZpQJCt7XUfA-IlpRqvH3d19YZrxuobpigdwyu4NNqStgP03fxCjf3zU-i7G4yYZa_KEwLKx_19iDt5aFStmrirjvJSEjT5CuQ9kPZUJuBlldVGAm1PFQcybqcDJwBbL8eWwhJ68Fbng7lT9B_7b6MpCr4C5EyGeMxQXyvoUa21-9LDVcSMcYKTTZJaESQo_5jsp-cwPegdM8sX5L8GiLqx6ByxEXpgYsB0-wM6k5Nx8i9JCQaWCjCTcJRT-pLWskTg_T2QKG14Rah8kLVjVLCSaRodta8tr9V6Ot9m4NmtXBZlDWxg8DZ9WGEw5vH8PsYAY_LolQhRHQenGXwosw.jpg"
  },
  "gholam": {
   "text": "رفقا، ایتن مالیک یه مقاله جدید از آنتروپیک (۲۲ اکتبر ۲۰۲۶) رو به اشتراک گذاشته و می‌گه حرفاش هم کاملاً درسته و هم یه جورایی نقدیه به خیلی از سیستم‌های «ایجنتی» پیچیده‌ای که شرکت‌ها دارن می‌سازن. به گفته مالیک، به جای اینکه هر تیم بیاد یه زیرایجنت جدا سرهم کنه و تهش یه کلاف سردرگم درست بشه، خیلی وقتا سپردن کار به یه ایجنتِ تکی هم نتیجه بهتری می‌ده و هم ارزون‌تر درمیاد. 💡\n\n• آنتروپیک تو این گزارش توضیح می‌ده وقتی هر تیم زیرایجنت خودش رو می‌سازه، معماری سیستم کپیِ چارت سازمانی شرکت می‌شه؛ نتیجه‌ش هم گم‌شدن جزئیات موقع دست‌به‌دست کردن اطلاعات، دستورالعمل‌های تیکه‌دوزی‌شده و متناقض، و افت سرعت کاره (مثلاً یکی از مشتری‌ها با برگردوندن سیستم به یه حلقه واحد، حدود ۲ برابر سرعت بیشتری گرفته).\n• به گفته تیم آنتروپیک، مدل‌های جدید انقدر توانمند شدن که دیگه به اون ساختارهای ۵ لایه و روترهای اضافه نیاز ندارن؛ خیلی از کارها با یه پرامپت اصلی شفاف، ۴ تا ۵ ابزار ساده، حفاظ‌های خروجی محکم و بارگذاری مرحله‌ای مهارت‌ها و ابزارها (فقط وقت نیاز) جمع می‌شه.\n• البته مقاله تاکید می‌کنه که زیرایجنت‌ها هنوز برای کارهای موازی، بررسی‌های جداگانه یا وقتی کانتکست زیادی سنگین و شلوغ می‌شه کاربرد دارن، نه اینکه برای هر موضوعی یه زیرایجنت جدا بسازیم.\n\nمالیک هم تهش با یه کنایه بانمک نوشته که انگار هی باید این درس تلخ رو از نو یاد بگیریم!",
@@ -84,5 +84,5 @@
    "آنتروپیک"
   ]
  },
- "updated": "2026-11-19T04:16:44+00:00"
+ "updated": "2026-11-19T12:54:29+00:00"
 }

@@ -12,7 +12,7 @@
   "site": "🧵 Thread • FxTwitter",
   "title": "Chubby ♨️ (@kimmonismus)",
   "description": "This is a super interesting paper and Recursive self-improvement keeps coming closer. New Google preprint:\nGoogle had AI rewrite an agents harness and keep a log of every change, why it made it and whether it worked. Then they swapped Opus 5.5 for Gemini…",
-  "image": "https://cdn4.telesco.pe/file/OyZcExNUFkaB0I8gxLC2xr6l_yFtGvVhQVfO1Y33XMzt85JERZQopufdRS7IwMRFD4S8MI5t3gw6udL5jqpJhGun1QPMzLrVc-TXrVOnIjW77ZzV9kRuv-wxK99IImrH66vG0WYI8KXbfwz__hCUcEZmBbVY_14BClEYe4kT7OoyF0_310adoltt_EHxBYLE03G3umOirtr5BPDtVn3LmZtVtekHjaZlfu0xqhqZOjuAJoL3SY_qbBMRdPmk2jQUot1ejMdOR689jfAgA0mzgA8fVIjggRi6uo3YF3l9Sg-dFZSCC9kQB4RV7RDmfZBdbZ0Hi1hu-Qt5WiQyZv7SqA.jpg"
+  "image": "https://cdn4.telesco.pe/file/TmECx6k0mJZXz4SgA6H0W1LZyCTdnZUk2OzOJwtdDPaYD6beZ45KkwbskGbgsq3O3f8ieSv0XtjLBzQKQ6U9GK48l1NtonjRVCJslzeDrBlfxl3vyMlNmw48C0ggrF_NQ6TYeQy_qvROztCgnyQzbCcvjRDFLsW4M-l4oFPGS7tsE1-f25LO-YSbdhxgyQyl_7jVFzddiVLd9aKt4yaWKqBxtFwBTplY7HQNFtPNXi6heebp-hizBJkA6nUDfaU3m7qmUsoQJHckdhJsRVKt98A7ba1GZDyagpxihIYAUSnN7uYoulZ1kGTjBnP4cDZiFmVJVq18gRCm4WCKqSkcMA.jpg"
  },
  "gholam": {
   "text": "سلام رفقا، یه پست جالب اومده که یه پیش‌چاپ جدید از پژوهشگرای گوگل و دانشگاه ایالتی پنسیلوانیا (نوامبر ۲۰۲۶) رو معرفی می‌کنه؛ موضوعش اینه که وقتی مدل هوش مصنوعی عوض می‌شه، دیگه لازم نباشه همه‌چیز رو از صفر شروع کنن. تو این مقاله یه «حافظه خودبهبودی» (SIM) طراحی کردن که عین دفترچه تجربه یه اوستاکارِ خوش‌حساب، ثبت می‌کنه هر تغییر تو ساختار کمکیِ عامل (harness) به چه دلیلی انجام شده و نتیجه‌ش چی بوده تا مدل بعدی ادامه کار رو از همون‌جا بگیره. 📝\n\n• طبق نمودار مقاله تو انتقال از مدل Opus 5.5 به Gemini 3.8 Flash، با این حافظه امتیاز بخش Workspace به ۸۴.۷۵ رسیده و بدون اون ۷۳.۴۲ شده؛ تو سه حوزه دیگه مثل کدنویسی، دسته‌بندی متن و مهندسی هم امتیاز نهایی بالاتری گرفته.\n• چکیده مقاله می‌گه تو ۱۰ اجرای کدنویسی، میانگین امتیاز این روش ۲.۳۶ نمره از حالت بدون حافظه بهتر بوده و نویسنده پست هم اشاره کرده تو ۹ مورد از ۱۰ اجرا جلو افتاده.\n• جدول نتایج روی نسل‌های جمینای هم نشون می‌ده این روش روی مدل‌های ۲.۵، ۳.۵ و ۳.۸ فلش از بهینه‌سازیِ از نو بهتر عمل کرده، هرچند روی مدل «۴ آرگون» بهینه‌سازی مستقل کمی بالاتر (۹۵.۶ در برابر ۹۴.۸) ثبت شده.\n\nبه گفته نویسنده این پست، نکته اصلیش اینه که با اومدن مدل جدید، تجربه‌های قبلی دور ریخته نمی‌شن و کم‌کم رو هم جمع می‌شن.",
@@ -81,5 +81,5 @@
    "گوگل"
   ]
  },
- "updated": "2026-11-19T04:16:44+00:00"
+ "updated": "2026-11-19T12:54:28+00:00"
 }

@@ -12,7 +12,7 @@
   "site": "FxTwitter",
   "title": "OpenAI (@OpenAI)",
   "description": "Working with @AMD, our models identified up to 14% PPA improvement on flagship GPU IP in less than five months—building on designs AMD’s engineers had already spent years optimizing.\nThe same approach helped improve Jalapeño, our first custom inference chip…",
-  "image": "https://cdn4.telesco.pe/file/suCh2hW-hdPDhslZeH0aqMZ-797tXZEwjC5ByaKFhDy7wY5yansTMygew4Sivm7Gf_2LMtVDFll70NSCkXb-jBZW14ZBOm1h2dCCjewKDox8szIkRCsma6lnQuaacSlGUWhwdTphNq5O_n9SKXapDPuSGyXIhkG63JJnXA_xqoXiGBCCgBreXxtcql-MfQg_uzXDghFidtGZYh8Wo8Op3aI4zx5qIOdRECxA3VnqvHAVm0BaE6ChKb2wyEGboougxkb7YPa7BWoOtse8rM1prRsjNsEPVB_OQ-poumUND62kURGKj5tz6JlDFNcXzm8-ncZz7PJW2p5jFxLGyQ-STA.jpg"
+  "image": "https://cdn4.telesco.pe/file/jJLl9yv4VjDgwlXewt5XGjINBQYMAWyq9fIDzEpbq1Uz7Glq4o0BEgAVLiNUy1W9VB71YKPz6FkG1a62m7MUBJ__OKrsJpKr30niWXPCjbxR5-Mf9DDUXsq4he4lWefMSDZtkMJTfMPsoBInJxCFVMX7Kl6oLXoOVXNwW_hC1j7qaIxtgaDnzJF4SwvTrk-v1yFMyDrxC2PO947GzJLXytsoFhzNP6EtOOmmRmmqcPiB-r6sEbV6_I1EVXOgCny_GHuSCdCZDK3afDDhXIf8cq7m30b5VpCdHxLMhA9ZcNpdCWOxwslH3V4nJKtfG2xqfOAOrE-kuEzqLAsZUhARBg.jpg"
  },
  "gholam": {
   "text": "سلام رفیق! شرکت OpenAI خبر داده مدل‌های هوش مصنوعی‌اش دیگه فقط تو کار نرم‌افزار نیستن و جدی‌جدی اومدن تو گود طراحی تراشه؛ مثل یه شاگرد تیز که کنار اوستاکارهای سخت‌افزار می‌ایسته تا چیدمان مدارها رو چابک‌تر کنه. 🔧\n\n• به گفته OpenAI، این مدل‌ها تو همکاری با AMD طی کمتر از پنج ماه تونستن با بازنویسی کدهای مدار (RTL)، تا ۱۴ درصد بهبود در مصرف انرژی، عملکرد و مساحت بخش‌های اصلی پردازنده گرافیکی پرچم‌دار AMD پیدا کنن؛ بخشی از این تغییرات همین الان راهی ساخت شده یا تو فایل‌های تولیدی آینده قرار گرفته و روی بلوک‌های کلیدی پردازنده مرکزی نسل بعدی AMD هم بهبودهای تک‌رقمی تایید شده.\n• همین روش روی تراشه اختصاصی خود OpenAI یعنی Jalapeño هم پیاده شده و به گفته این شرکت، مساحت دو بخش محاسباتی اصلیش رو حدود ۱۰ تا ۱۳ درصد کم کرده که روی سیلیکون واقعی هم جواب داده.\n• تو آزمون‌های جدید روی دو هسته پردازشی متن‌باز (PicoRV32 و Ibex) هم نمودارها نشون میده مدل GPT-6.2 Astra از مدل‌های قبلی بهتر عمل کرده؛ البته خود OpenAI یادآوری کرده وقتی مدل از روی مشخصات کتبی طراحی می‌کنه، ممکنه بعضی امکانات جانبی مثل شمارنده‌های عملکردی رو کنار بذاره و برای شبیه‌سازی دقیق‌تر خط تولید واقعی، محدودیت‌های بیشتری لازمه.\n\nبرای قدم بعدی هم OpenAI و شرکت Synopsys دست به یکی کردن تا مدل جدیدی به اسم GPT-Synopsys رو آموزش بدن که بتونه با ابزارهای استاندارد طراحی تراشه مثل یه مهندس کارکشته کار کنه.",
@@ -146,5 +146,5 @@
    "اوپن‌ای‌آی"
   ]
  },
- "updated": "2026-11-19T04:16:44+00:00"
+ "updated": "2026-11-19T12:54:28+00:00"
 }
