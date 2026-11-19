@@ -63,5 +63,14 @@
   ]
  },
  "updated": "2026-10-25T12:24:03+00:00",
- "gholam_checked": "2026-10-25T12:24:03+00:00"
+ "gholam_checked": "2026-10-25T12:24:03+00:00",
+ "ai": {
+  "title": "مدل Celeris-1 Decision با سرعت ۶۷ میلی‌ثانیه و قیمت ارزان، رقبای بزرگ را شکست داد",
+  "short": "Celeris-1 Decision سریع و ارزان",
+  "topics": [],
+  "type": "ابزار و محصول",
+  "model": "qwen3.5-9b-q4_k_m",
+  "v": 2,
+  "src": "42cf1afdf2bd"
+ }
 }

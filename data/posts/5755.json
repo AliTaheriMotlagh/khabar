@@ -46,5 +46,14 @@
   ]
  },
  "updated": "2026-10-25T12:24:07+00:00",
- "gholam_checked": "2026-10-25T12:24:07+00:00"
+ "gholam_checked": "2026-10-25T12:24:07+00:00",
+ "ai": {
+  "title": "OpenCode مدل قدرتمند Step 5 Preview را به مدت یک هفته رایگان کرد",
+  "short": "Step 5 Preview رایگان شد",
+  "topics": [],
+  "type": "ابزار و محصول",
+  "model": "qwen3.5-9b-q4_k_m",
+  "v": 2,
+  "src": "10c063c842c6"
+ }
 }

@@ -70,5 +70,16 @@
   ]
  },
  "updated": "2026-10-25T12:23:49+00:00",
- "gholam_checked": "2026-10-25T12:23:49+00:00"
+ "gholam_checked": "2026-10-25T12:23:49+00:00",
+ "ai": {
+  "title": "مدل Code Video Model: کنترل کامل فیزیک و دوربین با کدنویسی",
+  "short": "مدل Code Video Model",
+  "topics": [
+   "تصویر و ویدیو"
+  ],
+  "type": "ابزار و محصول",
+  "model": "qwen3.5-9b-q4_k_m",
+  "v": 2,
+  "src": "4d40c953d3c3"
+ }
 }

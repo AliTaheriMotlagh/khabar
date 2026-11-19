@@ -39,5 +39,14 @@
   "tags": []
  },
  "updated": "2026-10-25T12:23:52+00:00",
- "gholam_checked": "2026-10-25T12:23:52+00:00"
+ "gholam_checked": "2026-10-25T12:23:52+00:00",
+ "ai": {
+  "title": "قسمت ۴۷ ویدیوهای مهرزاد: آموزش شخصی‌سازی مدل System One با Unsloth",
+  "short": "مهرزاد: مدل System One",
+  "topics": [],
+  "type": "ویدیوی مهرزاد",
+  "model": "qwen3.5-9b-q4_k_m",
+  "v": 2,
+  "src": "e7af092e1da1"
+ }
 }

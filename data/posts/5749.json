@@ -55,5 +55,14 @@
   ]
  },
  "updated": "2026-10-25T12:24:09+00:00",
- "gholam_checked": "2026-10-25T12:24:09+00:00"
+ "gholam_checked": "2026-10-25T12:24:09+00:00",
+ "ai": {
+  "title": "مدل NeuDecide شرکت Neuphonic: تصمیم‌گیری صوتی ۴۳ مگابایتی روی CPU",
+  "short": "مدل NeuDecide",
+  "topics": [],
+  "type": "ابزار و محصول",
+  "model": "qwen3.5-9b-q4_k_m",
+  "v": 2,
+  "src": "68aae0df3629"
+ }
 }
