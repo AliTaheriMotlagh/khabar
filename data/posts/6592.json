@@ -22,7 +22,7 @@
  "ai": {
   "failed": true,
   "model": "qwen3.5-9b-q4_k_m",
-  "v": 1,
+  "v": 2,
   "src": "16516c54bbaa"
  },
  "links": [

@@ -20,14 +20,11 @@
  },
  "ai": {
   "title": "Deletion Tuning با خاموش کردن ۰.۰۵ درصد وزن‌ها، فاین‌تیون کامل را در ریاضی شکست داد",
-  "short": "Deletion Tuning برتری",
-  "topics": [
-   "آنتروپیک",
-   "کدنویسی"
-  ],
+  "short": "Deletion Tuning در ریاضی",
+  "topics": [],
   "type": "پژوهش و مقاله",
   "model": "qwen3.5-9b-q4_k_m",
-  "v": 1,
+  "v": 2,
   "src": "a99d163854fc"
  },
  "links": [

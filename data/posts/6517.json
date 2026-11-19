@@ -57,15 +57,14 @@
  "updated": "2026-11-13T20:30:41+00:00",
  "ai": {
   "title": "گوگل قابلیت Dynamic Workflows را به آنتی‌گرویتی اضافه کرد",
-  "short": "Dynamic Workflows در آنتی‌گرویتی",
+  "short": "Dynamic Workflows در گوگل",
   "topics": [
    "گوگل",
-   "ایجنت",
-   "کدنویسی"
+   "ایجنت"
   ],
   "type": "ابزار و محصول",
   "model": "qwen3.5-9b-q4_k_m",
-  "v": 1,
+  "v": 2,
   "src": "08c76e880793"
  }
 }

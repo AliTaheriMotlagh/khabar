@@ -56,7 +56,7 @@
  "ai": {
   "failed": true,
   "model": "qwen3.5-9b-q4_k_m",
-  "v": 1,
+  "v": 2,
   "src": "29eeb2085c75"
  }
 }

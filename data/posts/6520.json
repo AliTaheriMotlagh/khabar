@@ -63,13 +63,11 @@
   "title": "Thinking Machines مدل Inkling 2 Small را با تراشه‌های GB300 انویدیا آموزش داد",
   "short": "آموزش Inkling 2 Small",
   "topics": [
-   "انویدیا",
-   "آنتروپیک",
-   "کدنویسی"
+   "تراشه"
   ],
   "type": "پژوهش و مقاله",
   "model": "qwen3.5-9b-q4_k_m",
-  "v": 1,
+  "v": 2,
   "src": "42acaf5c5f4b"
  }
 }

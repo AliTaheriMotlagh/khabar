@@ -20,15 +20,14 @@
   "date": "2026-11-17T04:42:18+00:00"
  },
  "ai": {
-  "title": "حمله زنجیره تأمین به Optimizely باعث آلوده شدن سایت‌های Zoom و CNN شد",
+  "title": "حمله زنجیره‌ای به Optimizely باعث آلوده شدن سایت‌های Zoom و CNN شد",
   "short": "حمله به Optimizely",
   "topics": [
-   "امنیت",
-   "استارتاپ"
+   "امنیت"
   ],
   "type": "خبر",
   "model": "qwen3.5-9b-q4_k_m",
-  "v": 1,
+  "v": 2,
   "src": "a85e04bbd6f2"
  },
  "links": [
