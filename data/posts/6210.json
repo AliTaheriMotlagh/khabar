@@ -67,5 +67,16 @@
    "استارتاپ"
   ]
  },
- "updated": "2026-11-03T14:40:41+00:00"
+ "updated": "2026-11-03T14:40:41+00:00",
+ "ai": {
+  "title": "شرکت Cognition استارتاپ امنیتی Corridor را خرید تا امنیت Devin را تقویت کند",
+  "short": "خرید Corridor توسط Cognition",
+  "topics": [
+   "امنیت"
+  ],
+  "type": "خبر",
+  "model": "qwen3.5-9b-q4_k_m",
+  "v": 2,
+  "src": "8d19ba46caec"
+ }
 }
