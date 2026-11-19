@@ -52,5 +52,17 @@
   ]
  },
  "updated": "2026-10-25T12:23:43+00:00",
- "gholam_checked": "2026-10-25T12:23:43+00:00"
+ "gholam_checked": "2026-10-25T12:23:43+00:00",
+ "ai": {
+  "title": "بنچ‌مارک FrontierCode 1.1: Claude Opus 5.5 با ۵۲ درصد امتیاز صدرنشینه",
+  "short": "نتایج FrontierCode 1.1",
+  "topics": [
+   "کدنویسی",
+   "آنتروپیک"
+  ],
+  "type": "پژوهش و مقاله",
+  "model": "qwen3.5-9b-q4_k_m",
+  "v": 2,
+  "src": "cc0afdd64107"
+ }
 }

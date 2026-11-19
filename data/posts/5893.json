@@ -67,5 +67,17 @@
   ]
  },
  "updated": "2026-10-25T12:23:29+00:00",
- "gholam_checked": "2026-10-25T12:23:29+00:00"
+ "gholam_checked": "2026-10-25T12:23:29+00:00",
+ "ai": {
+  "title": "متا با Muse Spark و Muse Wonder سرعت تحقیقات پزشکی را دوچندان کرد",
+  "short": "متا: Muse Spark و Wonder",
+  "topics": [
+   "متا",
+   "سلامت"
+  ],
+  "type": "ابزار و محصول",
+  "model": "qwen3.5-9b-q4_k_m",
+  "v": 2,
+  "src": "4fefd0220d33"
+ }
 }

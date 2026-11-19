@@ -55,5 +55,16 @@
   ]
  },
  "updated": "2026-10-25T12:23:41+00:00",
- "gholam_checked": "2026-10-25T12:23:41+00:00"
+ "gholam_checked": "2026-10-25T12:23:41+00:00",
+ "ai": {
+  "title": "مقایسه Muse Wonder و Opus 5.5: هزینه‌های سنگین و ضعف در بازی‌سازی",
+  "short": "Muse Wonder در برابر Opus",
+  "topics": [
+   "آنتروپیک"
+  ],
+  "type": "پژوهش و مقاله",
+  "model": "qwen3.5-9b-q4_k_m",
+  "v": 2,
+  "src": "ec6bb81c70b9"
+ }
 }

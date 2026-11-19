@@ -57,5 +57,17 @@
   ]
  },
  "updated": "2026-10-25T12:23:34+00:00",
- "gholam_checked": "2026-10-25T12:23:34+00:00"
+ "gholam_checked": "2026-10-25T12:23:34+00:00",
+ "ai": {
+  "title": "شرکت Prime Intellect استارتاپ Moondream را خرید تا مدل‌های چندحالته را سریع‌تر کند",
+  "short": "خرید Moondream توسط Prime Intellect",
+  "topics": [
+   "کسب‌وکار",
+   "متن‌باز"
+  ],
+  "type": "خبر",
+  "model": "qwen3.5-9b-q4_k_m",
+  "v": 2,
+  "src": "812a61c4e5b3"
+ }
 }
