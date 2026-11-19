@@ -68,5 +68,17 @@
   ]
  },
  "updated": "2026-10-25T12:24:59+00:00",
- "gholam_checked": "2026-10-25T12:24:59+00:00"
+ "gholam_checked": "2026-10-25T12:24:59+00:00",
+ "ai": {
+  "title": "Polar Browser با جذب ۵.۷ میلیون دلار ادعا کرد ایجنت‌هایش از OpenAI و Anthropic بهترند",
+  "short": "Polar Browser ۵.۷ میلیون دلار",
+  "topics": [
+   "آنتروپیک",
+   "اوپن‌ای‌آی"
+  ],
+  "type": "خبر",
+  "model": "qwen3.5-9b-q4_k_m",
+  "v": 2,
+  "src": "44223e6d212e"
+ }
 }

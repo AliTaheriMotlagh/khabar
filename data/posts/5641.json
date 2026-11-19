@@ -55,5 +55,17 @@
   ]
  },
  "updated": "2026-10-25T12:24:53+00:00",
- "gholam_checked": "2026-10-25T12:24:53+00:00"
+ "gholam_checked": "2026-10-25T12:24:53+00:00",
+ "ai": {
+  "title": "OpenAI واترمارک textGrain را به ChatGPT و Codex اضافه کرد تا با قانون اتحادیه اروپا هماهنگ شود",
+  "short": "واترمارک textGrain در OpenAI",
+  "topics": [
+   "گوگل",
+   "متن‌باز"
+  ],
+  "type": "ابزار و محصول",
+  "model": "qwen3.5-9b-q4_k_m",
+  "v": 2,
+  "src": "d2f498301ffa"
+ }
 }

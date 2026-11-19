@@ -53,5 +53,14 @@
   "tags": []
  },
  "updated": "2026-10-25T12:25:05+00:00",
- "gholam_checked": "2026-10-25T12:25:05+00:00"
+ "gholam_checked": "2026-10-25T12:25:05+00:00",
+ "ai": {
+  "title": "Meshy AI قابلیت Meshy Edit را آورد: ادیت سه‌بعدی با موس و متن",
+  "short": "Meshy Edit سه‌بعدی",
+  "topics": [],
+  "type": "ابزار و محصول",
+  "model": "qwen3.5-9b-q4_k_m",
+  "v": 2,
+  "src": "0bb578191ba5"
+ }
 }

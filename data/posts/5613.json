@@ -37,5 +37,16 @@
   ]
  },
  "updated": "2026-10-25T12:25:03+00:00",
- "gholam_checked": "2026-10-25T12:25:03+00:00"
+ "gholam_checked": "2026-10-25T12:25:03+00:00",
+ "ai": {
+  "title": "مدل‌های جدید Claude Opus 5.5 و Sonnet 5.5 به پلتفرم Antigravity اضافه شدند",
+  "short": "Claude 5.5 در Antigravity",
+  "topics": [
+   "آنتروپیک"
+  ],
+  "type": "ابزار و محصول",
+  "model": "qwen3.5-9b-q4_k_m",
+  "v": 2,
+  "src": "ef51f0c3cbec"
+ }
 }
