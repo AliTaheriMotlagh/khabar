@@ -46,5 +46,16 @@
   ]
  },
  "updated": "2026-10-25T12:29:37+00:00",
- "gholam_checked": "2026-10-25T12:29:37+00:00"
+ "gholam_checked": "2026-10-25T12:29:37+00:00",
+ "ai": {
+  "title": "تیم Thinking Machines مدل عامل‌محور Inkling را رایگان روی OpenRouter عرضه کرد",
+  "short": "Inkling رایگان شد",
+  "topics": [
+   "ایجنت"
+  ],
+  "type": "ابزار و محصول",
+  "model": "qwen3.5-9b-q4_k_m",
+  "v": 2,
+  "src": "f060d8e41a0c"
+ }
 }
