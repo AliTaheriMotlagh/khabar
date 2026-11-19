@@ -9,6 +9,7 @@ import DailyBrief from '../components/DailyBrief.astro';
 import NotifyAsk from '../components/NotifyAsk.astro';
 import TodayPlaylist from '../components/TodayPlaylist.astro';
 import NewVideo from '../components/NewVideo.astro';
+import HotThreads from '../components/HotThreads.astro';
 import { SITE } from '../site';
 import { dayKey, getFeed, latestDigest, url } from '../lib/posts';
 import { listLd } from '../lib/seo';
@@ -39,6 +40,7 @@ const jsonLd = listLd({ name: `${SITE.name} — ${SITE.tagline}`, path: '', post
               <Lead post={lead} />
               <DailyBrief />
             </div>
+            <HotThreads />
             <TodayPlaylist />
             <NotifyAsk />
             <Timeline posts={rest} all={posts} nextHref={next} filter />

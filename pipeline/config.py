@@ -18,6 +18,9 @@ URL_REFRESH_HOURS = float(os.getenv("URL_REFRESH_HOURS", "6"))
 GHOLAM_POLL_HOURS = float(os.getenv("GHOLAM_POLL_HOURS", "48"))
 # Posts first crawled after that window (a backfill) never got a look: check this many of them per run, once each.
 GHOLAM_BACKFILL = int(os.getenv("GHOLAM_BACKFILL", "40"))
+# A new post without Gholam's comment yet stays off the site this long (he answers in ~16 s, 99% within 6 min), so it
+# is never published — nor announced — as its bare English source. server/watch.js HOLD starts a crawl once it is over.
+GHOLAM_HOLD_MINUTES = float(os.getenv("GHOLAM_HOLD_MINUTES", "10"))
 GHOLAM_NAME = os.getenv("GHOLAM_NAME", "غلام")
 GHOLAM_SIGNATURE = os.getenv("GHOLAM_SIGNATURE", "داش غلام")
 

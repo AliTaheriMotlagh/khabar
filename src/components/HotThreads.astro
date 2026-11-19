@@ -1,0 +1,34 @@
+---
+// «پرونده‌های داغ» on the home page (PLAN.md P3-1): the threads still moving — stories that follow one subject over days
+// (data/related.json threads) whose newest story is from the last few days. Each card opens that newest story at its
+// timeline. Nothing shows without at least two such threads: one card isn't a shelf.
+import Icon from './Icon.astro';
+import { faDate, faNum, pic } from '../lib/posts';
+import { activeThreads, threadName } from '../lib/tracker';
+const items = activeThreads();
+---
+{
+  items.length >= 2 && (
+    <section class="hot" aria-labelledby="hot-h">
+      <h2 class="section-title" id="hot-h"><Icon name="flame" /> پرونده‌های داغ</h2>
+      <ol class="hot-row">
+        {items.map(({ thread, posts, newest }) => {
+          const cover = [...posts].reverse().find((p) => p.cover)?.cover;
+          return (
+            <li>
+              <a class="hot-card" href={`${newest.href}#thread`}>
+                {cover ? <img {...pic(cover.src || cover.poster, 'small')} alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer" /> : <span class="hot-ph" aria-hidden="true"><Icon name="news" /></span>}
+                <span class="hot-n"><b data-num>{faNum(posts.length)}</b> خبر</span>
+                <span class="hot-body">
+                  <b class="hot-title">{threadName(thread, posts)}</b>
+                  <span class="hot-last">{newest.short}</span>
+                  <time datetime={newest.date} data-f="rel">{faDate(newest.date, { day: 'numeric', month: 'long' })}</time>
+                </span>
+              </a>
+            </li>
+          );
+        })}
+      </ol>
+    </section>
+  )
+}

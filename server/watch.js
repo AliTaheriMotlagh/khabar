@@ -1,7 +1,8 @@
 // GET|POST /api/watch/?key=<WATCH_SECRET> → { queued, reason }: starts a crawl as soon as the channel has news, instead
 // of waiting for the 20-minute schedule. Called every minute by an external cron (e.g. cron-job.org); see README.
 // News = a post newer than the newest crawl (once Gholam has commented on it, or GRACE seconds after it appeared: he
-// answers within ~30 s and skips the daily digests), or Gholam's comment on a recent post newer than that crawl.
+// answers within ~30 s and skips the daily digests), or Gholam's comment on a recent post newer than that crawl, or a
+// post that crawl held back waiting for him (HOLD) once the hold is over.
 // Stateless: the channel's page and GitHub's run list are the state, so no Redis. Most minutes cost one t.me fetch.
 // Needs WATCH_SECRET and GITHUB_DISPATCH_TOKEN (see _lib.js); 501 without them.
 import { dispatch, fail, github, githubToken, json, preflight } from './_lib.js';
@@ -10,6 +11,9 @@ const CHANNEL = process.env.TG_CHANNEL || 'dlmehr';
 // Only posts this recent are looked at: older ones are left to the schedule.
 const WINDOW = Number(process.env.WATCH_MINUTES || 60) * 60_000;
 const GRACE = Number(process.env.WATCH_GRACE || 180) * 1000;
+// The crawl holds a new post without Gholam's comment off the site this long (pipeline/config.py GHOLAM_HOLD_MINUTES):
+// a crawl that started within it gets one more after it, so a post he never translates isn't stranded until the schedule.
+const HOLD = Number(process.env.WATCH_HOLD || 600) * 1000;
 const GHOLAM_NAME = 'غلام';
 const GHOLAM_SIGNATURE = 'داش غلام';
 
@@ -70,6 +74,7 @@ async function news(now = Date.now()) {
   for (const [i, p] of recent.entries()) {
     if (p.at > since && (gholam[i] || now - p.at > GRACE)) return `post ${p.id}`;
     if (p.at <= since && gholam[i] > since) return `gholam ${p.id}`;
+    if (p.at <= since && since - p.at < HOLD && now - p.at > HOLD && !gholam[i]) return `held ${p.id}`;
   }
   return null;
 }

@@ -394,6 +394,17 @@ test('watch: a crawl once the newest post has its comment (or after a grace), an
     assert.deepEqual(await tick(), { queued: true, reason: 'post 103' }, 'a push run is not a crawl');
     assert.equal(dispatched.length, 4);
 
+    // A crawl that ran before Gholam commented held the post back (pipeline GHOLAM_HOLD_MINUTES): one more once the
+    // hold is over, so it isn't stranded until the schedule; none while it lasts, none once a later crawl has it.
+    runs = [{ event: 'schedule', status: 'completed', conclusion: 'success', created_at: ago(240) }];
+    channel = post(100, ago(7200)) + post(104, ago(300));
+    assert.deepEqual(await tick(), { queued: false, reason: null }, 'still within the hold');
+    channel = post(100, ago(7200)) + post(104, ago(660));
+    runs = [{ event: 'schedule', status: 'completed', conclusion: 'success', created_at: ago(600) }];
+    assert.deepEqual(await tick(), { queued: true, reason: 'held 104' }, 'the hold is over');
+    assert.deepEqual(await tick(), { queued: false, reason: null }, 'that crawl publishes it');
+    assert.equal(dispatched.length, 5);
+
     assert.deepEqual(watch.parseChannel(post(7, '2026-10-20T15:31:00+00:00')), [{ id: 7, at: Date.parse('2026-10-20T15:31:00Z') }]);
     assert.equal(watch.parseGholam(discussion(null)), 0);
   } finally {

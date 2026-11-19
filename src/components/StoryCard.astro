@@ -6,6 +6,7 @@ import Icon from './Icon.astro';
 import Media from './Media.astro';
 import SaveButton from './SaveButton.astro';
 import DigestCard from './DigestCard.astro';
+import StatusChip from './StatusChip.astro';
 import { faNum, faTime, pic, tagHref, type Post } from '../lib/posts';
 interface Props { post: Post; eager?: boolean; topic?: string }
 const { post, eager = false, topic } = Astro.props;
@@ -15,6 +16,8 @@ const thumb = post.cover ? pic(post.cover.src || post.cover.poster, 'small') : n
 // The same news in several posts (data/related.json): the first says how many updates follow, the later ones say what they are.
 const first = post.cluster.length > 0 && post.cluster.every((id) => id > post.id);
 const update = post.cluster.length > 0 && !first;
+// The newest story of a thread (P3-1) points to the thread's timeline on its page.
+const threadLink = !!post.thread && post.thread.ids.at(-1) === post.id && post.thread.ids.length >= 3;
 ---
 <li class="tl-item" data-id={post.id} data-kind={post.kind} data-tags={[...a.tags, ...post.entities.slice(0, 3).map((e) => `who:${e.slug}`)].join(',')} data-type={post.type ?? undefined}>
   <span class="tl-dot" aria-hidden="true"></span>
@@ -30,8 +33,9 @@ const update = post.cluster.length > 0 && !first;
             {tag && <a class="kicker" href={tagHref(tag)}>{tag}</a>}
             <time class="story-time" datetime={post.date} data-num>{faTime(post.date)}</time>
           </div>
-          <h3 id={`t-${post.id}`}>{(post.importance ?? 0) >= 4 && <span class="must-dot">مهم</span>}{update && <span class="must-dot soft">به‌روزرسانی</span>}<a href={post.href} data-astro-prefetch>{a.title}</a></h3>
+          <h3 id={`t-${post.id}`}><StatusChip status={post.status} compact />{(post.importance ?? 0) >= 4 && <span class="must-dot">مهم</span>}{update && <span class="must-dot soft">به‌روزرسانی</span>}<a href={post.href} data-astro-prefetch>{a.title}</a></h3>
           {first && <a class="tl-updates" href={`${post.href}#updates`}>{faNum(post.cluster.length)} به‌روزرسانی از همین خبر</a>}
+          {threadLink && <a class="tl-updates tl-thread" href={`${post.href}#thread`}>پیگیری ماجرا · {faNum(post.thread!.ids.length)} خبر</a>}
           {post.excerpt && post.excerpt !== a.title && <p class="excerpt" dir="auto">{post.excerpt}</p>}
         </div>
         {post.gallery.length > 0 ? (

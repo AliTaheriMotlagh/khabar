@@ -104,9 +104,10 @@ jobs:
         run: |
           core=$(python -m pipeline.ai --pending)
           more=$(python -m pipeline.ai_more --pending --total)
+          threads=$(python -m pipeline.threads --pending)
           # New stories also need their vectors (related stories) and the podcast's host lines.
           news=$(git status --porcelain data/posts | wc -l)
-          echo "pending=$((core + more + news))" | tee -a "$GITHUB_OUTPUT"
+          echo "pending=$((core + more + threads + news))" | tee -a "$GITHUB_OUTPUT"
       - uses: actions/cache@v6
         if: steps.ai.outputs.pending > 0
         with:
@@ -119,7 +120,7 @@ jobs:
           path: ~/.cache/khabar-vectors
           key: vectors-${{ github.run_id }}
           restore-keys: vectors-
-      - name: AI (headlines, translations, extras, voices' names, related, podcast, video summaries, comment checks)
+      - name: AI (headlines, translations, extras, voices' names, related, threads, podcast, video summaries, comment checks)
         if: steps.ai.outputs.pending > 0
         continue-on-error: true
         timeout-minutes: 20
@@ -137,6 +138,8 @@ jobs:
           step python -m pipeline.ai
           step python -m pipeline.ai_more
           step python -m pipeline.related
+          # Each thread's name and «ماجرا تا اینجا» (pipeline/threads.py): only threads that grew.
+          step python -m pipeline.threads
           step python -m pipeline.daily
           step python -m pipeline.videos --summarize --limit=1
           step python -m pipeline.comments

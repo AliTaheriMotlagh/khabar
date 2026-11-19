@@ -1,6 +1,7 @@
 import { getPosts, getStories, dayKey } from '../lib/posts';
 import { getVideos } from '../lib/videos';
 import { glossary, entities } from '../lib/knowledge';
+import { suspectNumbers } from '../lib/checks';
 
 // This build's content, for /admin/ (src/scripts/admin.ts): the AI's work (pipeline/ai.py) by field and model, posts
 // per Tehran day, the newest post, and the recent posts that aren't on the lists (and why).
@@ -10,7 +11,7 @@ export function GET() {
   const models: Record<string, number> = {};
   const types: Record<string, number> = {};
   let failed = 0;
-  const has = { extras: 0, importance: 0, entities: 0, terms: 0, simple: 0, quiz: 0, video: 0, translated: 0, related: 0 };
+  const has = { extras: 0, importance: 0, entities: 0, terms: 0, simple: 0, quiz: 0, video: 0, status: 0, models: 0, events: 0, thread: 0, translated: 0, related: 0 };
   for (const p of stories) {
     if (p.ai?.failed) failed++;
     else if (p.ai?.title) models[p.ai.model ?? '?'] = (models[p.ai.model ?? '?'] ?? 0) + 1;
@@ -24,9 +25,13 @@ export function GET() {
       if (x.simple) has.simple++;
       if (x.quiz) has.quiz++;
       if (x.video) has.video++;
+      if (p.status) has.status++;
+      if (p.models.length) has.models++;
+      if (p.events.length) has.events++;
     }
     if (p.translated) has.translated++;
     if (p.relatedIds.length) has.related++;
+    if (p.thread) has.thread++;
   }
   const titled = Object.values(models).reduce((a, b) => a + b, 0);
 
@@ -45,6 +50,14 @@ export function GET() {
     .filter((p) => !p.listed && Date.parse(p.date) >= since)
     .map((p) => ({ id: p.id, date: p.date, why: p.digest ? 'خلاصه‌ی انگلیسی' : p.gholam ? 'ترجمه‌ی غلام خوانده نشد' : 'بدون ترجمه‌ی غلام', title: p.article.title.slice(0, 90) }));
 
+  // Gholam's numbers that look like a slip of the English source's (src/lib/checks.ts), the last week: to look at by hand.
+  const english = (p: (typeof all)[number]) =>
+    (p.links ?? []).map((l) => JSON.stringify(l)).join(' ') + ' ' + (p.text ?? '') + ' ' + (p.article.source_title ?? '');
+  const numbers = stories
+    .filter((p) => !p.translated && Date.parse(p.date) >= since - 4 * 864e5)
+    .map((p) => ({ id: p.id, title: p.article.title.slice(0, 90), numbers: suspectNumbers([...p.article.body, p.whyByModel ? '' : p.article.why ?? ''].join(' '), english(p)).map(([his, src]) => `${his} ← ${src}`) }))
+    .filter((c) => c.numbers.length)
+    .slice(0, 40);
   const body = {
     stories: stories.length,
     titled,
@@ -57,6 +70,7 @@ export function GET() {
     newest: all[0] ? { id: all[0].id, date: all[0].date } : null,
     days,
     hidden,
+    numbers,
     videos: getVideos().length,
     videoSummaries: getVideos().filter((v) => v.ai?.summary).length,
     glossary: glossary().length,

@@ -38,10 +38,19 @@ AI_MODEL = os.getenv("AI_MODEL", "qwen3.5-9b-q4_k_m")
 AI_BUDGET = float(os.getenv("AI_BUDGET", "300"))  # seconds of model time per run; the rest waits for the next run
 AI_RECENT_DAYS = float(os.getenv("AI_RECENT_DAYS", "3"))  # a normal run only looks at posts this new
 AI_TIMEOUT = float(os.getenv("AI_TIMEOUT", "180"))
-PROMPT_V = 1  # bump when the prompt or the rules change: every post is worked out again
+PROMPT_V = 2  # bump when the prompt or the rules change: every post is worked out again
+# v2: topics defined one by one, and kept only when the text names them (`grounded`): the site uses them since v2.
 
 TOPICS = [t[0] for t in shape.TOPICS]
 TYPES = ["خبر", "ابزار و محصول", "پژوهش و مقاله", "آموزش", "نظر و تحلیل", "ویدیوی مهرزاد"]
+
+def _topic_line(tag: str, words: tuple) -> str:
+    """«گوگل: Google، Gemini، DeepMind…» — a few of the keywords say what the topic covers."""
+    latin = [w for w in words if w.isascii() and w.lower() != tag.lower()][:5]
+    return f"- {tag}: {'، '.join(latin)}" if latin else f"- {tag}"
+
+
+TOPIC_LIST = "\n".join(_topic_line(tag, words) for tag, words in shape.TOPICS)
 SCHEMA = {
     "type": "object",
     "properties": {
@@ -66,8 +75,12 @@ title (تیتر):
 
 short (تیتر کوتاه برای دایره‌ی استوری و اعلان): حداکثر ۴۰ نویسه، چند کلمه، بدون فعلِ لازم.
 
-topics: از این فهرست و فقط همین‌ها، حداکثر ۳ تا، مهم‌ترین اول. فقط موضوعی که خبر واقعاً درباره‌ی آن است، نه هر نامی که گذرا آمده. اگر هیچ‌کدام نمی‌خورد، فهرست خالی.
-{"، ".join(TOPICS)}
+topics (بخش‌های سایت): از فهرست زیر و فقط همین‌ها، معمولاً ۱ یا ۲ تا (حداکثر ۳)، مهم‌ترین اول؛ اولی بخش اصلی خبر است.
+- فقط موضوعی که خبر درباره‌ی آن است و نامش (یا نام محصولش) در متن آمده. نامی که فقط برای مقایسه یا گذرا آمده («بهتر از GPT»، «پژوهشگر سابق انویدیا») حساب نیست.
+- یک شرکت را فقط وقتی بیاور که خودش یا محصولش موضوع خبر است؛ شرکت یا استارتاپ دیگری که در فهرست نیست، موضوع شرکتی نمی‌گیرد.
+- «کسب‌وکار» فقط برای خبر پول و بازار: درآمد، سود، سهام، خرید شرکت، عرضه‌ی اولیه. معرفی محصول یا ابزار کسب‌وکار نیست.
+- اگر هیچ‌کدام نمی‌خورد، فهرست خالی.
+{TOPIC_LIST}
 
 type (یکی):
 - «خبر»: رویداد، معامله، سرمایه‌گذاری، قانون، اختلال، استعفا، گزارش رسانه‌ها.
@@ -238,10 +251,16 @@ def problems(answer: dict) -> list[str]:
     return out
 
 
-def tidy(answer: dict) -> dict:
+def grounded(topics: list[str], text: str) -> list[str]:
+    """The model's topics that the text names (shape.named): on the golden set this took its precision from 49% to 83%
+    (it put آنتروپیک on Perplexity and Liquid AI stories, ایلان ماسک on Jensen Huang's) and kept the best sections."""
+    return [t for t in topics if shape.named(t, text)]
+
+
+def tidy(answer: dict, text: str = "") -> dict:
     title = re.sub(r"\s+", " ", answer["title"]).strip().rstrip(".。")
     short = re.sub(r"\s+", " ", answer["short"]).strip().rstrip(".")
-    topics = list(dict.fromkeys(t for t in answer.get("topics") or [] if t in TOPICS))[:3]
+    topics = grounded(list(dict.fromkeys(t for t in answer.get("topics") or [] if t in TOPICS))[:3], text)
     return {"title": title, "short": short, "topics": topics, "type": answer["type"]}
 
 
@@ -259,7 +278,7 @@ def work_out(http: httpx.Client, post: dict) -> dict:
             continue
         bad = problems(answer)
         if not bad:
-            return {**tidy(answer), **stamp}
+            return {**tidy(answer, text), **stamp}
         print(f"  ! ai {post['id']}: {', '.join(bad)}: {answer.get('title')!r}")
     return {"failed": True, **stamp}
 
@@ -330,8 +349,9 @@ def _pr(got: list[str], want: list[str]) -> tuple[int, int, int]:
 def evaluate() -> None:
     """Topics and type against hand-checked answers, next to the keyword rules; headline rule passes; seconds per post."""
     golden = json.loads(GOLDEN.read_text("utf-8"))
-    stats = {"ai": [0, 0, 0], "rules": [0, 0, 0]}
-    first = {"ai": 0, "rules": 0}
+    names = ("ai raw", "ai", "rules", "site")  # ai = grounded, as stored; site = what the site shows (ai, else rules)
+    stats = {k: [0, 0, 0] for k in names}
+    first = {k: 0 for k in names}
     types = passes = n = 0
     times = []
     with httpx.Client() as http:
@@ -349,18 +369,21 @@ def evaluate() -> None:
             bad = problems(answer)
             passes += not bad
             rules = [t for t in post["article"]["tags"] if t != "هوش مصنوعی"]
-            for name, got in (("ai", answer.get("topics") or []), ("rules", rules)):
+            raw = [t for t in answer.get("topics") or [] if t in TOPICS]
+            mine = grounded(raw, text)
+            for name, got in (("ai raw", raw), ("ai", mine), ("rules", rules), ("site", mine or rules)):
                 stats[name] = [a + b for a, b in zip(stats[name], _pr(got, item["topics"]))]
                 first[name] += bool(got) == bool(item["topics"]) and (not got or got[0] == item["topics"][0])
             types += answer.get("type") == item["type"]
             print(f"#{item['id']} {times[-1]:.1f}s {'ok' if not bad else bad}\n  ai:    {answer.get('title')} | {answer.get('short')} | {answer.get('topics')} | {answer.get('type')}"
+                  f"{'' if mine == raw else f' → {mine}'}"
                   f"\n  rules: {post['article']['title'][:90]} | {rules}\n  want:  {item.get('title', '')} | {item['topics']} | {item['type']}")
     if not n:
         return
     print(f"\n{n} posts, {sum(times) / n:.1f}s per post (max {max(times):.1f}s), headline rules passed {passes}/{n}")
-    for name in ("ai", "rules"):
+    for name in names:
         hit, got, want = stats[name]
-        print(f"topics {name:5}: precision {hit / max(got, 1):.0%}  recall {hit / max(want, 1):.0%}  section right {first[name]}/{n}")
+        print(f"topics {name:6}: precision {hit / max(got, 1):.0%}  recall {hit / max(want, 1):.0%}  section right {first[name]}/{n}")
     print(f"type: {types}/{n}")
 
 

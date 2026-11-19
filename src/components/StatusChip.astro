@@ -1,0 +1,14 @@
+---
+// Where the news stands (PLAN.md P3-3, the model's `ai.x.status`): the maker said it, someone reports it, or it's a
+// leak. `compact` (timeline cards) shows only a rumour: the other two are the normal case there.
+import type { NewsStatus } from '../lib/posts';
+interface Props { status: NewsStatus | null; compact?: boolean }
+const { status, compact = false } = Astro.props;
+const LOOK: Record<NewsStatus, { cls: string; label: string; title: string }> = {
+  'رسمی': { cls: 'is-official', label: 'رسمی', title: 'خودِ شرکت یا سازنده اعلامش کرده' },
+  'گزارش': { cls: 'is-report', label: 'به گزارش رسانه‌ها', title: 'رسانه یا تحلیلگری خبرش را داده؛ سازنده هنوز چیزی نگفته' },
+  'شایعه': { cls: 'is-rumor', label: 'تأییدنشده', title: 'نشت خبر یا ادعایی که هنوز کسی رسماً تأییدش نکرده' },
+};
+const look = status && (!compact || status === 'شایعه') ? LOOK[status] : null;
+---
+{look && <span class={`status ${look.cls}`} title={look.title}>{look.label}</span>}

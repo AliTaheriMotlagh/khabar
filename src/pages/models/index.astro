@@ -1,0 +1,74 @@
+---
+// «ردیاب مدل‌ها» (PLAN.md P3-2): every AI model the stories are about, with the benchmark scores they gave it. From the
+// model's per-story facts (`ai.x.models`), each name and score checked against the story's text by the pipeline, so a
+// number here is one a source said — linked to that story. Most recently in the news first.
+import Base from '../../layouts/Base.astro';
+import Icon from '../../components/Icon.astro';
+import { SITE } from '../../site';
+import { abs, faDate, faNum } from '../../lib/posts';
+import { breadcrumbs } from '../../lib/seo';
+import { modelIndex } from '../../lib/tracker';
+
+const items = modelIndex();
+const makers = [...new Set(items.map((m) => m.maker).filter(Boolean))].slice(0, 14);
+const fa = (v: string) => faNum(v).replace('.', '٫');
+const jsonLd = [
+  {
+    '@context': 'https://schema.org',
+    '@type': 'ItemList',
+    name: `ردیاب مدل‌های هوش مصنوعی — ${SITE.name}`,
+    url: abs('models/'),
+    numberOfItems: items.length,
+    itemListElement: items.slice(0, 100).map((m, i) => ({ '@type': 'ListItem', position: i + 1, name: m.name, url: `${abs('models/')}#${m.slug}` })),
+  },
+  breadcrumbs([{ name: 'ردیاب مدل‌ها', path: 'models/' }]),
+];
+---
+<Base title="ردیاب مدل‌های هوش مصنوعی" description={`مدل‌های هوش مصنوعی در خبرها، با امتیاز بنچمارک‌ها و خبرهایشان: ${items.slice(0, 6).map((m) => m.name).join('، ') || 'GPT، Claude، Gemini، Qwen'} و بیشتر.`} jsonLd={jsonLd}>
+  <div class="container narrow">
+    <header class="page-head"><div><h1><Icon name="sparkles" /> ردیاب مدل‌ها</h1><p>هر مدل هوش مصنوعی که در خبرها آمده، با امتیازهایی که خودِ خبرها گفته‌اند؛ تازه‌ترین اول.</p></div></header>
+    {items.length === 0 && <p class="muted">هنوز مدلی ثبت نشده؛ با خبرهای تازه پر می‌شود.</p>}
+    {
+      makers.length > 1 && (
+        <nav class="chips wrap md-makers" aria-label="سازنده‌ها" data-md-filter>
+          <button class="chip" type="button" aria-pressed="true" data-maker="">همه <small data-num>{faNum(items.length)}</small></button>
+          {makers.map((mk) => <button class="chip" type="button" aria-pressed="false" data-maker={mk}>{mk}</button>)}
+        </nav>
+      )
+    }
+    <ol class="md-list">
+      {items.map((m) => {
+        const best = new Map<string, (typeof m.scores)[number]>();
+        for (const s of m.scores) if (!best.has(s.bench)) best.set(s.bench, s);
+        return (
+          <li class="md-card" id={m.slug} data-maker={m.maker}>
+            <header>
+              <h2 dir="ltr">{m.name}</h2>
+              {m.maker && <span class="md-maker">{m.maker}</span>}
+              <span class="md-meta"><span data-num>{faNum(m.posts.length)}</span> خبر · آخرین: <time datetime={m.posts[0].date}>{faDate(m.posts[0].date, { day: 'numeric', month: 'long' })}</time></span>
+            </header>
+            {best.size > 0 && (
+              <ul class="md-scores">
+                {[...best.values()].map((s) => (
+                  <li><a href={s.post.href}><span dir="ltr">{s.bench}</span><b>{fa(s.value)}</b></a></li>
+                ))}
+              </ul>
+            )}
+            <ul class="md-posts">{m.posts.slice(0, 3).map((p) => <li><a href={p.href}>{p.article.title}</a></li>)}</ul>
+          </li>
+        );
+      })}
+    </ol>
+  </div>
+  <script>
+    // Maker chips: show one maker's models. Without script every model is listed (the page works the same).
+    const nav = document.querySelector<HTMLElement>('[data-md-filter]');
+    nav?.addEventListener('click', (e) => {
+      const b = (e.target as Element).closest<HTMLButtonElement>('button[data-maker]');
+      if (!b) return;
+      nav.querySelectorAll('button').forEach((x) => x.setAttribute('aria-pressed', String(x === b)));
+      const want = b.dataset.maker;
+      document.querySelectorAll<HTMLElement>('.md-card').forEach((c) => (c.hidden = !!want && c.dataset.maker !== want));
+    });
+  </script>
+</Base>

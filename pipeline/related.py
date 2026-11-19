@@ -38,6 +38,14 @@ TOP = 6
 RELATED_SIM = float(os.getenv("RELATED_SIM", "0.55"))  # below this, "related" is a stretch: shared topics do better
 CLUSTER_SIM = float(os.getenv("CLUSTER_SIM", "0.86"))  # tuned on real pairs (--tune); a wrong merge is worse than none
 CLUSTER_HOURS = 48
+# Threads (P3-1): one story told over days or weeks (Jensen Huang's fall, Anthropic's IPO, Qwen4). Tuned on 1,825
+# stories (2026-11-19): a story joins the thread of its closest earlier one within THREAD_DAYS when they are this
+# similar, share a word rare across all stories (a name: «مگاسپید», "Inkling"), and it's close to the thread's last
+# three too (no drift from Gemini into Google's earnings). Looser settings chained unrelated news into grab-bags.
+THREAD_SIM = float(os.getenv("THREAD_SIM", "0.75"))
+THREAD_DAYS = 14
+THREAD_RARE = 0.01  # a shared word in at most this share of stories (at least 3)
+THREAD_MIN = 3
 EMBED_BUDGET = float(os.getenv("EMBED_BUDGET", "180"))
 V = 1
 
@@ -161,7 +169,54 @@ def build(posts: list[dict]) -> dict:
                 best.append(ids[j])
         if best:
             related[str(ids[i])] = best
-    return {"v": V, "model": EMBED_MODEL, "related": related, "clusters": clusters}
+    return {"v": V, "model": EMBED_MODEL, "related": related, "clusters": clusters, "threads": threads(ids, dates, sim, posts)}
+
+
+WORD = re.compile(r"[A-Za-z؀-ۿ][A-Za-z0-9.\-؀-ۿ‌]{3,}")
+
+
+def words(post: dict) -> set[str]:
+    """The words a story's headline, source title and opening use (names among them)."""
+    a = post.get("article") or {}
+    text = " ".join([(post.get("ai") or {}).get("title") or "", a.get("title") or "", a.get("source_title") or "", " ".join(a.get("body") or [])[:600]])
+    return {w.lower().strip(".-") for w in WORD.findall(ai.URL_RE.sub("", text))}
+
+
+def threads(ids: list[int], dates: list[float], sim, posts: list[dict]) -> list[list[int]]:
+    """Stories that follow one another on one subject, each thread oldest first, newest thread first."""
+    n = len(ids)
+    if not n:
+        return []
+    by_id = {p["id"]: p for p in posts}
+    ws = [words(by_id[i]) for i in ids]
+    # How rare a word is, across every story (not only those with a vector yet).
+    df: dict[str, int] = {}
+    corpus = [p for p in posts if embed_text(p)]
+    for p in corpus:
+        for w in words(p):
+            df[w] = df.get(w, 0) + 1
+    rare_max = max(3, len(corpus) * THREAD_RARE)
+    window = THREAD_DAYS * 86400
+    root = list(range(n))  # index → its thread's first story (ids are newest first, so we walk from the end)
+    members: dict[int, list[int]] = {}
+    for i in reversed(range(n)):
+        best = None
+        for j in range(i + 1, n):
+            if dates[j] < dates[i] - window:
+                break
+            if float(sim[i][j]) >= THREAD_SIM and any(df[w] <= rare_max for w in ws[i] & ws[j]):
+                if best is None or sim[i][j] > sim[i][best]:
+                    best = j
+        if best is not None:
+            r = root[best]
+            last = members[r][-3:]
+            if sum(float(sim[i][k]) for k in last) / len(last) >= THREAD_SIM - 0.05:
+                root[i] = r
+                members[r].append(i)
+                continue
+        members[i] = [i]
+    out = [sorted(ids[k] for k in m) for m in members.values() if len(m) >= THREAD_MIN]
+    return sorted(out, key=lambda t: -t[-1])
 
 
 def write(data: dict) -> bool:

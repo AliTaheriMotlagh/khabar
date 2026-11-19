@@ -516,3 +516,82 @@ def test_videos_merge_keeps_what_a_source_lacks():
     assert [v["id"] for v in merged] == ["b", "a"]
     a = merged[1]
     assert a["post"] == 6384 and a["duration"] == 3600 and a["n"] == 50 and len(a["chapters"]) == 3
+
+
+def test_new_post_waits_for_gholam():
+    from datetime import datetime, timedelta, timezone
+
+    ago = lambda m: (datetime.now(timezone.utc) - timedelta(minutes=m)).isoformat(timespec="seconds")
+    tweet = lambda m: telegram.TgPost(id=9, date=ago(m), text="https://x.com/a/status/1", links=["https://x.com/a/status/1"])
+    post = lambda **kw: {"gholam": None, "digest": False, **kw}
+    assert run.awaits_gholam(tweet(1), post()), "a minute-old tweet waits for his translation"
+    assert not run.awaits_gholam(tweet(run.config.GHOLAM_HOLD_MINUTES + 1), post()), "not past the hold"
+    assert not run.awaits_gholam(tweet(1), post(gholam={"text": "رفقا، …"}))
+    assert not run.awaits_gholam(tweet(1), post(digest=True)), "he skips the digests"
+    video = telegram.TgPost(id=9, date=ago(1), text="https://youtu.be/7GNR3Ue7QFU", links=["https://youtu.be/7GNR3Ue7QFU"])
+    assert not run.awaits_gholam(video, post()), "nor Mehrzad's bare video shares"
+    assert not run.awaits_gholam(telegram.TgPost(id=9, date=ago(1), text="", links=[]), post()), "nothing for him to read"
+
+
+def test_model_topics_must_be_named_in_the_text():
+    from pipeline import ai
+
+    text = "منبع: x.com\nمتن: رفقا، Liquid AI دو تا مدل جدید معرفی کرده که صدا رو هم می‌فهمن؛ از Claude سریع‌ترن."
+    # آنتروپیک is named (Claude), انویدیا isn't: the model can't file the story under a company it never mentions.
+    assert ai.grounded(["انویدیا", "صدا و موسیقی", "آنتروپیک"], text) == ["آنتروپیک"]
+    assert ai.grounded(["کسب‌وکار"], "OpenAI's revenue doubled") == ["کسب‌وکار"]
+    assert ai.tidy({"title": "مدل تازه", "short": "مدل", "topics": ["گوگل"], "type": "خبر"}, "Gemini 4 is out")["topics"] == ["گوگل"]
+
+
+def test_extras_v2_keep_only_what_the_text_says():
+    from datetime import date
+
+    from pipeline import ai_more
+
+    text = ("تاریخ: 2026-11-09\nمتن: مدل GPT-6.2 Astra توی بنچمارک AA-Robotics v0.1 با امتیاز ۷۹ صدرنشین شده و از GPT-6.2 Sol "
+            "(با ۷۸ امتیاز) جلو زده. عرضه از همین سه‌شنبه شروع می‌شه و هفته بعد به نزدک می‌ره؛ رویداد ۲۰ نوامبر هم هست.")
+    models = ai_more.tidy_models([
+        {"name": "GPT-6.2 Astra", "maker": "اوپن‌ای‌آی", "scores": [{"bench": "AA-Robotics v0.1", "value": "78"}]},
+        {"name": "GPT-6.2 Sol", "maker": "اوپن‌ای‌آی", "scores": [{"bench": "AA-Robotics v0.1", "value": "۷۸"}]},
+        {"name": "Gemini 9", "maker": "گوگل", "scores": []},
+    ], text)
+    assert [m["name"] for m in models] == ["GPT-6.2 Astra", "GPT-6.2 Sol"], "a model the text never names is dropped"
+    assert models[0]["scores"] == [], "78 is Sol's score, not Astra's"
+    assert models[1]["scores"] == [{"bench": "AA-Robotics v0.1", "value": "78"}]
+    events = ai_more.tidy_events([
+        {"date": "2026-11-10", "what": "شروع عرضه‌ی سهام"},  # «سه‌شنبه»: 2026-11-09 is a Monday
+        {"date": "2026-11-16", "what": "ورود به بورس نزدک"},  # «هفته بعد»: too vague to date
+        {"date": "2026-11-20", "what": "رویداد سالانه"},
+        {"date": "2026-11-09", "what": "همین امروز"},  # not ahead
+    ], text, "2026-11-09")
+    assert [e["date"] for e in events] == ["2026-11-10", "2026-11-20"]
+    assert ai_more.date_said(date(2026, 11, 20), date(2026, 11, 1), "on Nov 20, 2026")
+    assert ai_more.tidy_x({"importance": 3, "status": "شایعه"}, text, "2026-11-09")["status"] == "شایعه"
+    assert ai_more.tidy_x({"importance": 3, "status": "maybe"}, text, "2026-11-09")["status"] is None
+
+
+def test_threads_follow_one_subject_and_skip_drift():
+    from datetime import datetime, timedelta
+
+    from pipeline import related
+
+    t0 = datetime(2026, 11, 1)
+    post = lambda i, title, day: {"id": i, "date": (t0 + timedelta(days=day)).isoformat() + "+00:00", "article": {"title": title, "body": [title]}}
+    # Newest first, like related.similarities: 4 → 1 are one saga (they share «مگاسپید»), 5 drifts in on looks alone.
+    posts = [post(5, "گزارش مالی گوگل", 6), post(4, "هوانگ و پرونده‌ی مگاسپید در کنگره", 5), post(3, "مگاسپید و انویدیا", 3),
+             post(2, "پرونده‌ی مگاسپید باز شد", 1), post(1, "شرکت مگاسپید زیر ذره‌بین", 0)]
+    filler = [post(100 + i, f"خبر عادی شماره {i}", -30) for i in range(500)]  # so «مگاسپید» (4 stories) counts as rare
+    ids = [p["id"] for p in posts]
+    dates = [datetime.fromisoformat(p["date"]).timestamp() for p in posts]
+    sim = [[1.0 if i == j else (0.9 if max(i, j) >= 1 and min(i, j) >= 1 else 0.8) for j in range(5)] for i in range(5)]
+    assert related.threads(ids, dates, sim, posts + filler) == [[1, 2, 3, 4]]
+
+
+def test_thread_names_and_topic_intros_are_checked():
+    from pipeline import threads, topics
+
+    assert threads.problems({"title": "ماجرای برکناری جنسن هوانگ", "summary": "هیئت‌مدیره‌ی انویدیا پس از گزارش‌ها درباره‌ی مگاسپید جنسن هوانگ را برکنار کرد و حالا از بازگشتش حرف می‌زند."}) == []
+    assert threads.problems({"title": "رفقا ماجرا", "summary": "کوتاه"})
+    post = {"digest": False, "ai": {"v": 2, "topics": ["گوگل"]}, "article": {"tags": ["متا"]}}
+    assert topics.topics_of(post) == ["گوگل"]
+    assert topics.topics_of({**post, "ai": {"v": 1, "topics": ["گوگل"]}}) == ["متا"], "v1 topics aren't used"

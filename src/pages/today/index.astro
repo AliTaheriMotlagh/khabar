@@ -121,7 +121,7 @@ const jsonLd = [
                     <button type="button" data-pl-go={s.p.id}>
                       {s.thumb?.src ? <img src={s.thumb.src} data-alt={s.thumb.alt} alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer" /> : <span class="pl-recap-ph" aria-hidden="true"><Icon name="news" /></span>}
                       <span class="pl-recap-n" data-pl-recap-n></span>
-                      <span class="pl-recap-t" dir="auto">{s.p.article.title}</span>
+                      <span class="pl-recap-t" dir="auto">{s.p.short}</span>
                     </button>
                   </li>
                 ))}

@@ -19,7 +19,7 @@ concurrency:
 jobs:
   recap:
     runs-on: ubuntu-latest
-    timeout-minutes: 30
+    timeout-minutes: 45
     steps:
       - uses: actions/checkout@v7
         with:
@@ -41,17 +41,21 @@ jobs:
           SITE: ${{ vars.API_URL || 'https://khabar-ai.vercel.app' }}
         run: |
           python -m pipeline.daily --weekly
-          git add data/weekly
-          git diff --cached --quiet && { echo 'no recap this week'; exit 0; }
+          # «این روزها در …» on each busy topic's page (pipeline/topics.py): never holds the recap back.
+          python -m pipeline.topics || echo "::warning::topic intros failed"
+          git add data/weekly data/topics.json
+          git diff --cached --quiet && { echo 'nothing new this week'; exit 0; }
+          recap=$(git diff --cached --name-only -- data/weekly)
           git config --global user.name 'github-actions[bot]'
           git config --global user.email '41898283+github-actions[bot]@users.noreply.github.com'
-          git commit -qm "data: weekly recap"
+          git commit -qm "data: weekly recap and topic intros"
           for attempt in 1 2 3 4; do
             if git pull --rebase -q origin main && git push -q origin HEAD:main; then break; fi
             git rebase --abort 2>/dev/null || true
             sleep $((attempt * 5))
           done
-          echo "week=$(ls data/weekly | sort | tail -1 | sed 's/\.json$//')" >> "$GITHUB_OUTPUT"
+          [ -n "$recap" ] && echo "week=$(ls data/weekly | sort | tail -1 | sed 's/\.json$//')" >> "$GITHUB_OUTPUT"
+          true
       - name: Announce it
         if: steps.recap.outputs.week != ''
         continue-on-error: true

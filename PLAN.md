@@ -1,6 +1,6 @@
 # Plan: open tasks and notes
 
-One place for everything unfinished. Last checked 2026-11-17 (data through post 6580, 05:09 UTC).
+One place for everything unfinished. Last checked 2026-11-19 (data through post 6631).
 Tick items off here; move anything that becomes a lasting rule into CLAUDE.md.
 
 ## Progress (2026-11-18)
@@ -18,17 +18,19 @@ Tick items off here; move anything that becomes a lasting rule into CLAUDE.md.
   Bake-off: 9B 38/39 headlines pass, type 30/39, ~21–30 s/post; 4B ~27 s/post and flipped a meaning (6605), cancelled
   at 28/39. **AI topics not used** (precision 49% vs rules 72%). Type filter chips on the home timeline; short lines in
   multi-story pushes; /admin/ AI coverage (`/ai.json`).
-  Open: improve topics (prompt without few-shot bias toward آنتروپیک, «only if named in the text»), re-eval, then
-  maybe `ai.topics` where the rules found none; `ai.short` on the rail/peek; open question 3 (headline everywhere: done
-  as yes).
+  Open (optional, the site doesn't use `ai.topics`): improve topics (prompt without few-shot bias toward آنتروپیک, «only
+  if named in the text»), re-eval, then maybe `ai.topics` where the rules found none — a prompt change bumps `PROMPT_V`
+  and redoes every headline, so not while the backfill runs. `ai.short`: done where space is short (the /today/ end
+  screen's recap tiles, notifications, /week/, /glossary/; the rail is one circle now, the peek has room for the
+  headline). Open question 3 (headline everywhere): done as yes.
 - [x] P1-A: `data/videos.json` (56 videos, ep. 1–51 + lives, via yt-dlp on the runner), `/videos/`, episode pages,
   home card 48 h, red rail circle 7 days, `rss/videos.xml`, push kind `video` in every mode, header/footer links.
   Open: category shelves (needs a video AI call: title + description → category, Persian summary for ep. 1–41);
   a new episode found by yt-dlp before Telegram is listed on /videos/ but not on the home card (newVideo uses dates only — fine).
 - [~] P1-D: story page (gliding pill, muted rest via `::highlight`, tap a word), listen bar caption, setting.
   Open: /today/ player captions, brief items lit inline, labeled timing fixtures + median/p90 test, Playwright test in CI.
-- [ ] P1-C (vertical/short video, share caption, «۶۰ ثانیه خبر امروز», episode teasers, made/shared counters)
-- [ ] P2 (all twelve items)
+- [x] P1-C (done below, 2026-11-18 evening: vertical/short video, share caption, «۶۰ ثانیه خبر امروز», episode teasers, made/shared counters)
+- [x] P2 (all twelve items: done below, 2026-11-18 evening)
 
 ## Progress (2026-11-18, evening): P1-C, P1-D, P2, SEO, admin — code done, not committed yet
 
@@ -50,10 +52,13 @@ Tick items off here; move anything that becomes a lasting rule into CLAUDE.md.
 - [x] **P1-C** vertical/landscape/square, short ≤60 s from `ai.x.video`, no long intro, source credit, share caption + copy,
   made videos kept in Cache Storage `video-v1`, «۶۰ ثانیه خبر امروز», episode teasers, made/shared counters.
 - [x] **P1-D** /today/ captions, brief words lit, median/p90 regression test (made-up clips).
-- [ ] **To do / verify after deploy**: dispatch `ai-backfill` once (it now chains itself until every post is done); check the
-  first runner runs' quality of `ai_more` (9B) by eye on 20 posts; real hand-labeled timing clips (P1-D, needs a person);
-  ~~Playwright video test (P1-C) and UI test in CI~~ (done); ~~follow button on /who/ pages~~ (done); build time 15 s → ~60 s (formatter cache
-  added; profile `tehranDay`/`getFeed` next).
+- [x] ~~dispatch `ai-backfill`~~: the 2026-11-18 21:12 run died on a model timeout (before `chat`'s 2× retry and
+  `server_gone`); re-dispatched 2026-11-19 00:08 UTC (run 44426528494, chains itself). 242/2,120 headlines, 17 extras done then.
+- [x] ~~`ai_more` quality by eye~~ (2026-11-19, the 17 posts that had `ai.x`, 6612–6630): fluent Persian, sensible
+  importance, quiz and share lines; one slip — 6625's «به زبان ساده» calls Alexandr Wang «طراح معروف» (invented role).
+  Look again at ~20 older posts once the backfill has done a few hundred.
+- [x] ~~build time~~: 18 s locally with the formatter cache (2026-11-19) — nothing more to do.
+- [ ] Real hand-labeled timing clips (P1-D, needs a person). ~~Playwright tests~~, ~~follow on /who/~~ (done).
 
 ## Progress (2026-11-18, night)
 
@@ -98,6 +103,51 @@ Tick items off here; move anything that becomes a lasting rule into CLAUDE.md.
 - [x] **/who/ data**: 14 Persian spellings fixed by hand, GPU/disease/concept hidden; accent-safe slugs in the pipeline.
 - [ ] Re-check entity spellings after the backfill adds more (the 9B model misspells rare names); consider a
   hand-kept override list if it keeps happening.
+
+## Progress (2026-11-19, night): P3 — more from the model, all free
+
+Decided: **no Sonnet.** GitHub Models (the free route people mean by "LLM on GitHub") was retired on 2026-07-30; the
+Anthropic API is paid; Claude Code's GitHub Action would spend the owner's own subscription. Qwen on the runner stays.
+
+- [x] **P3-1 Threads** («پیگیری ماجرا»): `related.py` finds them (47 threads / 203 stories on the archive, e.g. Jensen
+  Huang's fall 9, Anthropic's IPO, Qwen4, Fable 5.2, Kimi K3.1); `pipeline/threads.py` names them; story page timeline,
+  home «پرونده‌های داغ», the newest story's card links to its thread.
+- [x] **P3-2 Model tracker** `/models/`: models and benchmark scores from the stories, each checked against the text;
+  maker by family name; maker filter chips; facts card on the story page.
+- [x] **P3-3 Status + number check**: رسمی / به گزارش رسانه‌ها / تأییدنشده on stories (rumours on cards too); Gholam's
+  numbers the source doesn't have, listed on /admin/.
+- [x] **P3-4 Topic intros**: weekly «این روزها» on topic pages (`weekly.yml`).
+- [x] **P3-5 Calendar** `/calendar/` + subscribable `/calendar.ics` (listed on /feeds/).
+- [x] **Uniform stories**: every story has a «چرا مهمه؟» — Gholam's, else the model's one line, labelled.
+- Not done, on purpose: search by meaning in the browser (a 25–30 MB model download fails too often for readers in
+  Iran — Pagefind stays); a personal brief (the home's «موضوع‌های من» already is one); Instagram carousels (later, on
+  the video maker's renderer).
+- [ ] After the push: `ai-backfill` redoes extras for v2 (status/models/events) with the headlines; check `/models/` and
+  `/calendar/` by eye once ~200 posts have them; run `ai-eval` for the topics.
+
+## Progress (2026-11-19, later): Gholam's text always, the model for everything around it
+
+The rule: **the story is always Gholam's translation** (his greeting dropped); the model writes what the site needs around
+it, and translates only when Gholam never commented (`ai.story`, «ترجمه‌ی خودکار», replaced as soon as he does).
+
+| Part of the site | Comes from |
+|---|---|
+| Story text, «چرا مهمه؟» / «حرف آخر» | Gholam (`gholam.text` → `shape.split_gholam`); `ai.story` only without him |
+| Headline, short line, type | model (`ai.title`/`short`/`type`); Gholam's first sentence until the backfill reaches the post |
+| Topics / sections | model since `PROMPT_V` 2, grounded (`ai.grounded`); keyword rules when it names none |
+| English names for the voices | model (`ai.speech` → `data/lexicon.json`), then `server/_latin.js` rules |
+| Related / same news | embeddings (`pipeline/related.py`) |
+| Mehrzad's video summaries, glossary, /who/, quiz, simple, importance, daily/weekly | model (`ai_more`, `videos.py --summarize`, `daily.py`) |
+
+- [x] **Topics from the model** (2026-11-19): prompt v2 defines each topic and limits «کسب‌وکار» to money news; answers keep
+  only topics the text names. Replayed on the last eval's answers: precision 49% → 83% (76% with the rules' fallback),
+  recall 79%, section 29/39 (rules 25/39). The bump redoes every headline (the backfill does it).
+- [x] **Hold for Gholam** (2026-11-19): a new post without his comment stays off the site 10 min
+  (`GHOLAM_HOLD_MINUTES`), so a crawl that runs in his ~16 s never publishes (and pushes) the English source; `watch`
+  starts one more crawl when the hold ends. Gholam's reply is split at 3,900 characters by his bot; his longest so far is
+  1,455, so only the first comment is read.
+- [ ] After pushing: run `ai-eval` once (Actions → ai-eval) to confirm v2's topics on the runner; if precision drops
+  under the rules', set `AI_TOPICS_V` in posts.ts past `PROMPT_V` to go back to the rules.
 
 ## Progress (2026-11-18, late): production hardening
 

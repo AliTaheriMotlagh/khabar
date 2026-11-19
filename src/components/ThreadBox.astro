@@ -1,0 +1,43 @@
+---
+// «پیگیری ماجرا» on a story page (PLAN.md P3-1): the thread this story belongs to, as a timeline oldest → newest with
+// this story marked, the model's name for it and «ماجرا تا اینجا» when it has written them. A long thread folds its
+// older stories away so the page stays short; the newest are what a reader came for.
+import { getPosts, faDate, faNum, type Post } from '../lib/posts';
+import { threadName } from '../lib/tracker';
+interface Props { post: Post }
+const { post } = Astro.props;
+const t = post.thread!;
+const byId = new Map(getPosts().map((p) => [p.id, p]));
+const posts = t.ids.map((id) => byId.get(id)).filter((p): p is Post => !!p && (p.listed || p.id === post.id));
+const SHOW = 6;
+// The newest SHOW, and this story if it's older than those; the rest behind «n خبر قدیمی‌تر».
+const cut = Math.max(0, posts.length - SHOW);
+const hidden = posts.slice(0, cut).filter((p) => p.id !== post.id);
+const shown = posts.filter((p, i) => i >= cut || p.id === post.id);
+const newest = posts.at(-1)!;
+---
+{
+  posts.length >= 3 && (
+    <section class="thread" id="thread" aria-labelledby="thread-h" data-pagefind-ignore>
+      <p class="thread-kicker">پیگیری ماجرا · <span data-num>{faNum(posts.length)}</span> خبر{newest.id !== post.id && <> · <a href={newest.href}>تازه‌ترینش</a></>}</p>
+      <h2 id="thread-h">{threadName(t, posts)}</h2>
+      {t.summary && <p class="thread-sum">{t.summary}</p>}
+      {
+        hidden.length > 0 && (
+          <details class="thread-more">
+            <summary><span data-num>{faNum(hidden.length)}</span> خبر قدیمی‌تر</summary>
+            <ol class="thread-line">{hidden.map((p) => <li><time datetime={p.date}>{faDate(p.date, { day: 'numeric', month: 'short' })}</time><a href={p.href}>{p.article.title}</a></li>)}</ol>
+          </details>
+        )
+      }
+      <ol class="thread-line" start={cut + 1}>
+        {shown.map((p) => (
+          <li class={p.id === post.id ? 'is-here' : undefined} aria-current={p.id === post.id ? 'true' : undefined}>
+            <time datetime={p.date}>{faDate(p.date, { day: 'numeric', month: 'short' })}</time>
+            {p.id === post.id ? <span>{p.article.title} <b class="thread-here">همین خبر</b></span> : <a href={p.href}>{p.article.title}</a>}
+          </li>
+        ))}
+      </ol>
+    </section>
+  )
+}

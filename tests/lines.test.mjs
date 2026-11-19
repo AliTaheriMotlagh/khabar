@@ -46,7 +46,7 @@ test('lines: a story page and its card.json agree, paragraph by paragraph', { sk
     if (card.kind === 'digest') continue; // a digest's items show as links with their number apart: same indices, other text
     const prose = page.match(/<div class="prose"[^>]*>([\s\S]*?)<\/div>/)?.[1] ?? '';
     const paras = [...prose.matchAll(/<p>([\s\S]*?)<\/p>/g)].map((m) => decode(m[1]));
-    const why = page.match(/<aside class="why">[\s\S]*?<p>([\s\S]*?)<\/p>/)?.[1];
+    const why = page.match(/<aside class="why[^"]*">[\s\S]*?<p>([\s\S]*?)<\/p>/)?.[1];
     const title = decode(page.match(/<h1[^>]*>([\s\S]*?)<\/h1>/)[1]);
     const fromPage = storyLines(Number(id), title, [...paras, ...(why ? [decode(why)] : [])]);
     assert.deepEqual(fromPage, cardLines(card), `post ${id}`);

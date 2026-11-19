@@ -2,7 +2,7 @@ import fs from 'node:fs';
 import path from 'node:path';
 import { SITE } from '../site';
 import { dropCompanions, lastDays, tehranDay } from './time';
-import { findEntity, findTerm, relatedFile, slugify, type EntityKind } from './knowledge';
+import { findEntity, findTerm, relatedFile, slugify, threadText, type EntityKind } from './knowledge';
 
 // ---- data written by the crawler (pipeline/run.py) ----
 export type Media = {
@@ -40,7 +40,7 @@ export type RawPost = {
   preview?: { url?: string; site?: string; title?: string; description?: string; image?: string | null; small?: boolean } | null;
   article: { title: string; source_title?: string | null; body: string[]; why?: string | null; why_label?: string | null; tags: string[] };
   updated?: string | null;
-  /** Written by a small LLM (pipeline/ai.py); absent or failed → the rules' headline and topics. */
+  /** Written by a small LLM (pipeline/ai.py); absent or failed → Gholam's first sentence and the rules' topics. */
   ai?: {
     title?: string;
     short?: string;
@@ -48,6 +48,8 @@ export type RawPost = {
     type?: StoryType;
     failed?: boolean;
     model?: string;
+    /** pipeline/ai.py PROMPT_V the answer was made with. */
+    v?: number;
     /** The second call (pipeline/ai_more.py, PLAN.md P2): what the site builds its extras from. */
     x?: AiExtras | null;
     /** A Persian story by the model when Gholam never wrote one (P2-1), shown as «ترجمه‌ی خودکار». */
@@ -68,7 +70,16 @@ export type AiExtras = {
   video?: { hook: string; points: string[]; why: string } | null;
   /** A caption to share the story or its video with. */
   share?: string | null;
+  /** v2+: where the news stands, the AI models it's about (scores checked against the text), dated events ahead. */
+  status?: NewsStatus | null;
+  models?: ModelFact[];
+  events?: { date: string; what: string }[];
+  v?: number;
 };
+export type NewsStatus = 'رسمی' | 'گزارش' | 'شایعه';
+export type ModelFact = { name: string; maker: string; scores: { bench: string; value: string }[] };
+/** A story told over days or weeks (data/related.json threads), oldest first; its name and background by the model. */
+export type Thread = { key: number; ids: number[]; title: string | null; summary: string | null };
 export const STORY_TYPES = ['خبر', 'ابزار و محصول', 'پژوهش و مقاله', 'آموزش', 'نظر و تحلیل', 'ویدیوی مهرزاد'] as const;
 export type StoryType = (typeof STORY_TYPES)[number];
 
@@ -105,6 +116,14 @@ export type Post = RawPost & {
   relatedIds: number[];
   /** Other posts about the same news within ~2 days (data/related.json clusters), this one excluded. */
   cluster: number[];
+  /** The thread this story belongs to (P3-1), or null. */
+  thread: Thread | null;
+  /** «رسمی» / «گزارش» / «شایعه» by the model (P3-3); null without its answer. */
+  status: NewsStatus | null;
+  models: ModelFact[];
+  events: { date: string; what: string }[];
+  /** The «چرا مهمه؟» line is the model's (Gholam wrote none): labelled as such on the page. */
+  whyByModel: boolean;
 };
 
 const BASE = import.meta.env.BASE_URL.replace(/\/$/, '');
@@ -268,6 +287,11 @@ function digestItems(text: string, ids: Set<number>): DigestItem[] {
     });
 }
 
+/** The model's topics count from its prompt v2 on (`grounded`): v1's put آنتروپیک on stories that never named it. */
+export const AI_TOPICS_V = 2;
+export const topicsOf = (raw: RawPost) =>
+  !raw.digest && raw.ai && !raw.ai.failed && (raw.ai.v ?? 0) >= AI_TOPICS_V && raw.ai.topics?.length ? raw.ai.topics : raw.article.tags;
+
 function shape(raw: RawPost, ids: Set<number>): Post {
   noteFresh(raw);
   const links = raw.links ?? [];
@@ -299,8 +323,9 @@ function shape(raw: RawPost, ids: Set<number>): Post {
         : kind === 'brief'
           ? firstSentence(body[0] || raw.article.source_title || raw.preview?.title || raw.article.title)
           : raw.article.title;
-  // Topics stay the keyword rules': the model's were less precise on the golden set (pipeline/ai.py, 2026-11-18).
-  const tags = raw.article.tags.filter((t) => !HIDDEN_TAGS.has(t));
+  // Topics: the model's (pipeline/ai.py v2: each kept only when the text names it), else the keyword rules'. On the
+  // golden set that's precision 76% vs 72%, the right section 29/39 vs 25/39 (2026-11-19).
+  const tags = topicsOf(raw).filter((t) => !HIDDEN_TAGS.has(t));
   const words = [...body, raw.article.why ?? ''].join(' ').split(/\s+/).length;
   // The title is the lede's first sentence, so the excerpt picks up where it ends instead of repeating it.
   const lede = body.join(' ').replace(/\s+/g, ' ').trim();
@@ -309,6 +334,12 @@ function shape(raw: RawPost, ids: Set<number>): Post {
   const x = kind !== 'digest' && raw.ai?.x && !raw.ai.x.failed ? raw.ai.x : null;
   const rel = relatedFile();
   const cluster = rel.clusters.find((c) => c.includes(raw.id))?.filter((id) => id !== raw.id) ?? [];
+  const th = rel.threads?.find((t) => t.includes(raw.id));
+  const thread: Thread | null = th ? { key: th[0], ids: th, title: threadText(th[0]).title ?? null, summary: threadText(th[0]).summary ?? null } : null;
+  const x2 = x && (x.v ?? 1) >= 2 ? x : null;
+  // Gholam closes most stories with «چرا مهمه؟» (or his take); when he didn't, the model's one line keeps every story
+  // shaped the same, marked as the model's on the page.
+  const whyByModel = kind === 'story' && !raw.article.why && !!x?.video?.why;
 
   return {
     ...raw,
@@ -316,7 +347,7 @@ function shape(raw: RawPost, ids: Set<number>): Post {
     kind,
     type: ai?.type ?? (video && /^(قسمت|لایو) /.test(video.headline) ? 'ویدیوی مهرزاد' : null),
     short: ai?.short || clip(title, 48),
-    article: { ...raw.article, title, body, tags },
+    article: { ...raw.article, title, body, tags, ...(whyByModel && { why: x!.video!.why, why_label: null }) },
     href: url(`p/${raw.id}/`),
     cover,
     gallery,
@@ -339,6 +370,11 @@ function shape(raw: RawPost, ids: Set<number>): Post {
     videoAi: x?.video?.points?.length ? x.video : null,
     relatedIds: rel.related[String(raw.id)] ?? [],
     cluster,
+    thread,
+    status: x2?.status ?? null,
+    models: x2?.models ?? [],
+    events: x2?.events ?? [],
+    whyByModel,
   };
 }
 

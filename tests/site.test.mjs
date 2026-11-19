@@ -20,6 +20,9 @@ const posts = Object.fromEntries(
 );
 
 /** The timeline of one page: day pills and the items under them, in order. */
+// The topics a story is filed under, as src/lib/posts.ts topicsOf picks them: the model's (prompt v2+), else the rules'.
+const topicsOf = (p) => (!p.digest && p.ai && !p.ai.failed && (p.ai.v ?? 0) >= 2 && p.ai.topics?.length ? p.ai.topics : p.article.tags);
+
 function timeline(file) {
   const tl = html(file).match(/<ol class="tl" data-tl>([\s\S]*?)<\/ol>\s*(?:<nav|<\/section)/)?.[1] ?? '';
   const rows = [];
@@ -136,7 +139,7 @@ test('tags: a topic page lists only its own stories, each labelled with that top
       const tl = html(f).match(/<ol class="tl" data-tl>([\s\S]*?)<\/ol>/)[1];
       for (const item of tl.split('<li class="tl-item"').slice(1)) {
         const id = Number(item.match(/data-id="(\d+)"/)[1]);
-        assert.ok(posts[id].article.tags.includes(tag), `${f}: #${id} is not about ${tag}`);
+        assert.ok(topicsOf(posts[id]).includes(tag), `${f}: #${id} is not about ${tag}`);
         const kicker = item.match(/<a class="kicker" href="[^"]*">([^<]+)<\/a>/)?.[1];
         assert.equal(kicker, tag, `${f}: #${id} is labelled ${kicker}`);
       }
@@ -340,4 +343,35 @@ test('who: each page can be followed, and its stories carry its key for the home
     assert.match(page, new RegExp(`data-follow="who:${slug}"`), slug);
     assert.match(page, new RegExp(`data-tags="[^"]*who:${slug}`), `${slug}: its stories carry who:${slug}`);
   }
+});
+
+test('threads: a story of a thread shows the thread in order, itself marked, every link one of its stories', { skip }, () => {
+  const threads = JSON.parse(fs.readFileSync('data/related.json', 'utf8')).threads ?? [];
+  let checked = 0;
+  for (const t of threads) {
+    for (const id of t) {
+      const file = `p/${id}/index.html`;
+      if (!fs.existsSync(path.join(dist, file))) continue;
+      const box = html(file).match(/<section class="thread"[\s\S]*?<\/section>/)?.[0];
+      if (!box) continue; // fewer than three of its stories are listed
+      assert.match(box, /aria-current="true"/, `${file}: marks itself`);
+      const lines = [...box.matchAll(/<ol class="thread-line"[^>]*>([\s\S]*?)<\/ol>/g)].map((m) => m[1]).join('');
+      const linked = [...lines.matchAll(/href="[^"]*\/p\/(\d+)\/"/g)].map((m) => Number(m[1]));
+      for (const l of linked) assert.ok(t.includes(l), `${file}: #${l} isn't in its thread`);
+      for (let i = 1; i < linked.length; i++) assert.ok(linked[i] > linked[i - 1], `${file}: oldest first`);
+      checked++;
+    }
+  }
+  assert.ok(!threads.length || checked > 0, 'some thread box was checked');
+});
+
+test('models and calendar: the pages build, each model once, and the calendar file is valid iCalendar', { skip }, () => {
+  const models = html('models/index.html');
+  const ids = [...models.matchAll(/<li class="md-card" id="([^"]+)"/g)].map((m) => m[1]);
+  assert.equal(new Set(ids).size, ids.length, 'each model once');
+  assert.ok(html('calendar/index.html').includes('calendar.ics'));
+  const ics = fs.readFileSync(path.join(dist, 'calendar.ics'), 'utf8');
+  assert.ok(ics.startsWith('BEGIN:VCALENDAR\r\n') && ics.endsWith('END:VCALENDAR\r\n'));
+  for (const line of ics.split('\r\n')) assert.ok(Buffer.byteLength(line) <= 75, `folded: ${line.slice(0, 40)}`);
+  assert.equal((ics.match(/BEGIN:VEVENT/g) ?? []).length, (ics.match(/END:VEVENT/g) ?? []).length);
 });

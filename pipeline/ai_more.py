@@ -32,7 +32,7 @@ import httpx
 from . import ai, config, shape, telegram
 
 STORY_V = 1
-X_V = 1
+X_V = 2  # v2: status, models (with benchmark scores) and upcoming events, each checked against the text
 SPEECH_V = 1
 AI_MORE_BUDGET = float(os.getenv("AI_MORE_BUDGET", "240"))
 TRANSLATE_AFTER_HOURS = float(os.getenv("TRANSLATE_AFTER_HOURS", "6"))
@@ -160,6 +160,8 @@ def work_story(http: httpx.Client, post: dict) -> dict:
 # ---------------------------------------------------------------- 2. the extras
 
 KINDS = ["person", "company", "model", "product"]
+# Where the news stands: the maker said it · someone else reports it · a leak or an unconfirmed claim.
+STATUSES = ["رسمی", "گزارش", "شایعه"]
 X_SCHEMA = {
     "type": "object",
     "properties": {
@@ -206,8 +208,42 @@ X_SCHEMA = {
             "additionalProperties": False,
         },
         "share": {"type": "string"},
+        "status": {"type": "string", "enum": STATUSES},
+        "models": {
+            "type": "array",
+            "maxItems": 3,
+            "items": {
+                "type": "object",
+                "properties": {
+                    "name": {"type": "string"},
+                    "maker": {"type": "string"},
+                    "scores": {
+                        "type": "array",
+                        "maxItems": 3,
+                        "items": {
+                            "type": "object",
+                            "properties": {"bench": {"type": "string"}, "value": {"type": "string"}},
+                            "required": ["bench", "value"],
+                            "additionalProperties": False,
+                        },
+                    },
+                },
+                "required": ["name", "maker", "scores"],
+                "additionalProperties": False,
+            },
+        },
+        "events": {
+            "type": "array",
+            "maxItems": 2,
+            "items": {
+                "type": "object",
+                "properties": {"date": {"type": "string"}, "what": {"type": "string"}},
+                "required": ["date", "what"],
+                "additionalProperties": False,
+            },
+        },
     },
-    "required": ["importance", "entities", "terms", "simple", "quiz", "video", "share"],
+    "required": ["importance", "entities", "terms", "simple", "quiz", "video", "share", "status", "models", "events"],
     "additionalProperties": False,
 }
 X_SYSTEM = """تو دبیر یک سایت فارسی خبرهای هوش مصنوعی هستی. برای خبری که می‌آید این‌ها را بده، فقط JSON و همه به فارسی معیار (نه محاوره):
@@ -219,6 +255,9 @@ simple: اگر خبر فنی است، دو جمله‌ی خیلی ساده که 
 quiz: یک پرسش چهارگزینه‌ای نه، سه‌گزینه‌ای از خودِ متن خبر: q پرسش، options سه گزینه‌ی کوتاه که فقط یکی درست است، answer شماره‌ی گزینه‌ی درست (۰، ۱ یا ۲). گزینه‌ی درست را همیشه اول نگذار.
 video: متن یک ویدیوی ۶۰ ثانیه‌ای: hook یک جمله‌ی کوتاه و گیرا (حداکثر ۷۰ نویسه)، points سه نکته‌ی کوتاه (هر کدام حداکثر ۹۰ نویسه)، why یک جمله که چرا مهم است.
 share: متن کوتاه برای اشتراک در تلگرام و اینستاگرام: دو خط، بعد ۲ یا ۳ هشتگ فارسی یا لاتین.
+status: «رسمی» اگر خودِ شرکت یا سازنده اعلامش کرده (حساب رسمی، وبلاگ، مقاله‌ی نویسندگان)؛ «گزارش» اگر یک رسانه، تحلیلگر یا نفر سومی خبر را می‌دهد؛ «شایعه» اگر نشت خبر، منبع ناشناس، «ظاهراً»، «گفته می‌شود» یا ادعای تأییدنشده است.
+models: مدل‌های هوش مصنوعی (مدل زبانی، تصویری، ویدیویی، صوتی) که این خبر معرفی، به‌روز یا آزمایششان می‌کند، حداکثر ۳. name نام مدل دقیقاً همان‌طور که در متن آمده (لاتین: «GPT-6.2 Astra»)؛ maker سازنده به فارسی؛ scores امتیازهای بنچمارکی که متن برای همین مدل گفته: bench نام بنچمارک همان‌طور که در متن آمده، value عدد همان‌طور که در متن آمده. محصول، اپ یا قابلیت مدل نیست. اگر نیست، فهرست خالی.
+events: رویدادهای آینده که متن تاریخش را گفته (عرضه، رویداد، جلسه‌ی دادگاه، مهلت)، حداکثر ۲: date به شکل YYYY-MM-DD میلادی (از روی «تاریخ» پست، «هفته‌ی بعد» و مانند آن را حساب کن)، what یک عبارت کوتاه فارسی. اگر تاریخی نیامده، فهرست خالی.
 چیزی را که در متن نیست اضافه نکن."""
 X_EXAMPLES = [
     (
@@ -234,6 +273,9 @@ X_EXAMPLES = [
             "quiz": {"q": "Code Mode در Claude Code چه می‌کند؟", "options": ["مدل را روی گوشی اجرا می‌کند", "با یک اسکریپت چند ابزار را با هم اجرا می‌کند", "کد را به زبان فارسی ترجمه می‌کند"], "answer": 1},
             "video": {"hook": "Claude Code حالا با یک اسکریپت چند کار را با هم می‌کند", "points": ["حالت آزمایشی تازه‌ای به اسم Code Mode آمده", "به‌جای صدا زدن ابزارها یکی‌یکی، یک اسکریپت جاوااسکریپت می‌نویسد", "فعلاً پیش‌فرض خاموش است و فقط در ترمینال کار می‌کند"], "why": "ایجنت‌های برنامه‌نویسی با این روش سریع‌تر و کم‌هزینه‌تر کار می‌کنند."},
             "share": "Claude Code حالت تازه‌ای به اسم Code Mode گرفته: چند ابزار با یک اسکریپت.\nسریع‌تر از صدا زدن یکی‌یکی ابزارها.\n#ClaudeCode #هوش_مصنوعی",
+            "status": "رسمی",
+            "models": [],
+            "events": [],
         },
     ),
 ]
@@ -248,7 +290,7 @@ def x_input(post: dict) -> Optional[str]:
         return None
     title = (post.get("ai") or {}).get("title") or (post.get("article") or {}).get("title") or ""
     src = (post.get("article") or {}).get("source_title")
-    lines = [f"تیتر: {title}"] + ([f"عنوان منبع: {shape.clip(src, 200)}"] if src else [])
+    lines = [f"تاریخ: {(post.get('date') or '')[:10]}", f"تیتر: {title}"] + ([f"عنوان منبع: {shape.clip(src, 200)}"] if src else [])
     lines.append("متن: " + shape.clip(re.sub(r"\s+", " ", ai.URL_RE.sub("", text)), 1600))
     return "\n".join(lines)
 
@@ -272,7 +314,94 @@ GENERIC = {
 }
 
 
-def tidy_x(a: dict) -> dict:
+_DIGITS = str.maketrans("۰۱۲۳۴۵۶۷۸۹٠١٢٣٤٥٦٧٨٩٫", "01234567890123456789.")
+
+
+def _flat(s: str) -> str:
+    """For "is it in the text": lower case, Latin digits, no spaces/dashes/ZWNJ («GPT 6.2» = «gpt-6.2»)."""
+    return re.sub(r"[\s\-‌_–—]+", "", (s or "").translate(_DIGITS).lower())
+
+
+def in_text(part: str, text: str) -> bool:
+    return bool(_flat(part)) and _flat(part) in _flat(text)
+
+
+NUM = re.compile(r"\d+(?:[.,]\d+)?")
+
+
+def score_said(name: str, bench: str, value: str, text: str) -> bool:
+    """The number is the first one the text gives after this model's name (its benchmark's own digits skipped): «GPT-6.2
+    Astra … AA-Robotics v0.1 با امتیاز ۷۹» → 79, never the 78 the next model got."""
+    low = (text or "").translate(_DIGITS).lower()
+    want = value.replace(",", ".").rstrip("%")
+    for m in re.finditer(re.escape(name.lower()), low):
+        after = low[m.end() : m.end() + 90].replace(bench.lower(), " ")
+        first = NUM.search(after)
+        if first and first.group().replace(",", ".") == want:
+            return True
+    return False
+
+
+MONTHS = {
+    1: ("ژانویه", "ژانویهٔ", "january", "jan"), 2: ("فوریه", "february", "feb"), 3: ("مارس", "march", "mar"),
+    4: ("آوریل", "april", "apr"), 5: ("مه", "می", "may"), 6: ("ژوئن", "june", "jun"), 7: ("ژوئیه", "جولای", "july", "jul"),
+    8: ("اوت", "آگوست", "august", "aug"), 9: ("سپتامبر", "september", "sep", "sept"), 10: ("اکتبر", "october", "oct"),
+    11: ("نوامبر", "november", "nov"), 12: ("دسامبر", "december", "dec"),
+}
+WEEKDAYS = ("دوشنبه", "سه‌شنبه", "چهارشنبه", "پنجشنبه", "جمعه", "شنبه", "یکشنبه")  # Python's weekday() order
+
+
+def date_said(day, start, text: str) -> bool:
+    """The text names this day: «۲۰ نوامبر», "Nov 20", a weekday in the coming week, or «فردا». A model can't be trusted
+    to count «هفته‌ی بعد» into a date, so a vague one never reaches the calendar."""
+    low = (text or "").translate(_DIGITS).lower().replace("‌", "")
+    d = str(day.day)
+    for month in MONTHS[day.month]:
+        if re.search(rf"(?<!\d){d}\s*(?:ام|th|st|nd|rd)?\s*(?:ماه\s*)?{month}(?![a-z؀-ۿ])", low) or re.search(rf"(?<![a-z؀-ۿ]){month}\.?\s*{d}(?!\d)", low):
+            return True
+    ahead = (day - start).days
+    if ahead == 1 and "فردا" in low:
+        return True
+    name = WEEKDAYS[day.weekday()].replace("‌", "")
+    return 1 <= ahead <= 7 and re.search(rf"(?<![؀-ۿ]){name}", low) is not None
+
+
+def tidy_models(models: list, text: str) -> list:
+    """Models named in the text, with only the scores the text gives them (score_said)."""
+    out, seen = [], set()
+    for m in models or []:
+        name, maker = _clean(m.get("name")), _clean(m.get("maker"))
+        if not (2 <= len(name) <= 40 and LATIN.search(name) and in_text(name, text)) or name.lower() in GENERIC or name.lower() in seen:
+            continue
+        seen.add(name.lower())
+        scores = []
+        for sc in m.get("scores") or []:
+            bench, value = _clean(sc.get("bench")), _clean(sc.get("value")).translate(_DIGITS)
+            if 2 <= len(bench) <= 40 and NUM.fullmatch(value.rstrip("%")) and in_text(bench, text) and score_said(name, bench, value, text):
+                scores.append({"bench": bench, "value": value})
+        out.append({"name": name, "maker": maker[:40], "scores": scores})
+    return out
+
+
+def tidy_events(events: list, text: str, date: str) -> list:
+    """Upcoming events the text dates (date_said): after the post's day, within ~13 months."""
+    try:
+        start = datetime.fromisoformat(date).date()
+    except (TypeError, ValueError):
+        return []
+    out = []
+    for e in events or []:
+        what = _clean(e.get("what"))
+        try:
+            day = datetime.strptime(_clean(e.get("date")).translate(_DIGITS), "%Y-%m-%d").date()
+        except ValueError:
+            continue
+        if start < day <= start + timedelta(days=400) and date_said(day, start, text) and 6 <= len(what) <= 90 and fa_share(what) >= 0.5 and not ai.GREETING.search(what):
+            out.append({"date": day.isoformat(), "what": what})
+    return out
+
+
+def tidy_x(a: dict, text: str = "", date: str = "") -> dict:
     """Keep the parts that pass; drop the rest (a bad quiz shouldn't cost the post its names and terms)."""
     out: dict = {"importance": a.get("importance") if a.get("importance") in (1, 2, 3, 4, 5) else None}
     ents, seen = [], set()
@@ -303,6 +432,9 @@ def tidy_x(a: dict) -> dict:
     out["video"] = {"hook": _clean(v["hook"]), "points": pts, "why": _clean(v["why"])} if ok_video else None
     share = (a.get("share") or "").strip()
     out["share"] = share if 20 <= len(share) <= 320 else None
+    out["status"] = a.get("status") if a.get("status") in STATUSES else None
+    out["models"] = tidy_models(a.get("models"), text)
+    out["events"] = tidy_events(a.get("events"), text, date)
     return out
 
 
@@ -311,13 +443,13 @@ def work_x(http: httpx.Client, post: dict) -> dict:
     stamp = {"model": ai.AI_MODEL, "v": X_V, "src": ai.input_hash(text)}
     for temperature in (0.0, 0.3):
         try:
-            a = ai.chat(http, X_SYSTEM, X_EXAMPLES, text, X_SCHEMA, name="extras", temperature=temperature, max_tokens=900)
+            a = ai.chat(http, X_SYSTEM, X_EXAMPLES, text, X_SCHEMA, name="extras", temperature=temperature, max_tokens=1200)
         except (httpx.HTTPError, ValueError, KeyError) as exc:
             if isinstance(exc, httpx.TransportError):
                 raise
             print(f"  ! x {post['id']}: {exc}")
             continue
-        out = tidy_x(a)
+        out = tidy_x(a, text, (post.get("date") or "")[:10])
         if out["importance"] is not None:
             return {**out, **stamp}
     return {"failed": True, **stamp}

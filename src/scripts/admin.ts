@@ -24,6 +24,7 @@ type Content = {
   has?: Record<string, number>; posts?: number; listed?: number; newest?: { id: number; date: string } | null;
   days?: { day: string; listed: number; hidden: number }[]; hidden?: { id: number; date: string; why: string; title: string }[];
   videos?: number; videoSummaries?: number; glossary?: number; entities?: number;
+  numbers?: { id: number; title: string; numbers: string[] }[];
 };
 
 const EVENT_NAMES: Record<string, string> = {
@@ -37,6 +38,7 @@ const REACT: Record<string, string> = { like: '👍', love: '❤️', fire: '�
 const HAS: Record<string, string> = {
   extras: 'تحلیل کامل (اهمیت، نام‌ها، اصطلاح‌ها…)', importance: 'درجه‌ی اهمیت', entities: 'نام آدم‌ها و شرکت‌ها', terms: 'اصطلاح‌های توضیح‌داده‌شده',
   simple: '«به زبان ساده»', quiz: 'پرسش', video: 'متن ویدیوی کوتاه', translated: 'ترجمه‌ی خودکار (بدون غلام)', related: 'خبرهای مرتبط با معنا',
+  status: 'رسمی / گزارش / شایعه', models: 'مدل‌ها و امتیازها', events: 'رویداد تاریخ‌دار', thread: 'در یک پرونده (ماجرا)',
 };
 
 /** A story's title for a list, from its small card.json (cached by the browser); the id when it can't be read. */
@@ -130,6 +132,11 @@ function renderContent(a: Content) {
   const hidden = a.hidden ?? [];
   $('[data-adm-hidden-box]')!.hidden = !hidden.length;
   $('[data-adm-hidden]')!.innerHTML = hidden.map((h) => `<li><a href="${BASE}/p/${h.id}/">${fmtNum(h.id)}</a> · ${esc(h.why)} · <span dir="auto">${esc(h.title)}</span></li>`).join('');
+  const nums = a.numbers ?? [];
+  $('[data-adm-numbers-box]')!.hidden = !nums.length;
+  $('[data-adm-numbers]')!.innerHTML = nums
+    .map((c) => `<li><a href="${BASE}/p/${c.id}/">${fmtNum(c.id)}</a> · <b dir="ltr">${c.numbers.map((n) => esc(n)).join('، ')}</b> · <span dir="auto">${esc(c.title)}</span></li>`)
+    .join('');
 }
 
 const DAY = 864e5;

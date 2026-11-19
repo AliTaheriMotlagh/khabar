@@ -235,6 +235,13 @@ def _norm(text: str) -> str:
 
 
 _TOPIC_MATCHERS = [(tag, [_matcher(w) for w in words]) for tag, words in TOPICS]
+
+
+def named(tag: str, text: str) -> bool:
+    """Whether the text names the topic at all (any of its keywords): the model's topics must pass this
+    (pipeline/ai.py `grounded`), so it can't hand a story to a company the story never mentions."""
+    body = _norm(text)
+    return any(m(body) for t, ms in _TOPIC_MATCHERS if t == tag for m in ms)
 MAX_TAGS = 3
 TITLE_WEIGHT = 3
 

@@ -53,6 +53,21 @@ def usable_gholam(gholam: Optional[dict]) -> Optional[dict]:
     return gholam if gholam and gholam.get("text") and not telegram.is_gholam_error(gholam["text"]) else None
 
 
+YOUTUBE_RE = re.compile(r"youtu\.?be")
+URL_RE = re.compile(r"https?://\S+")
+
+
+def awaits_gholam(tp: telegram.TgPost, post: dict) -> bool:
+    """A brand-new post Gholam will translate but hasn't yet: not a digest, has words for him to read, isn't a bare
+    YouTube share (he skips Mehrzad's videos), and is younger than GHOLAM_HOLD_MINUTES. Only for a post the site doesn't
+    have yet: one already published is never taken back."""
+    if post["gholam"] or post["digest"] or not tp.text.strip():
+        return False
+    if any(YOUTUBE_RE.search(u) for u in tp.links) and len(re.findall(r"[^\W\d_]", URL_RE.sub("", tp.text))) <= 40:
+        return False
+    return age_hours(tp.date) * 60 < config.GHOLAM_HOLD_MINUTES
+
+
 def build_article(post: dict) -> dict:
     """Persian presentation fields derived from Gholam's comment + the source content."""
     links = post.get("links") or []
@@ -109,6 +124,9 @@ def process(http, tp: telegram.TgPost, refresh_urls: bool = False) -> None:
                 print(f"  ✓ gholam comment for {tp.id}")
             gholam = found
     post["gholam"] = gholam
+    if not existing and awaits_gholam(tp, post):
+        print(f"  … {tp.id}: waiting for Gholam's comment (held {config.GHOLAM_HOLD_MINUTES:.0f} min)")
+        return
     # Kept as they are: when their input changes (ai["src"]), pipeline/ai.py works the post out again.
     for key in ("gholam_checked", "ai"):
         if key in existing:

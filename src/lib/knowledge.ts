@@ -2,7 +2,8 @@
 // - data/glossary.json  technical terms with a one-line Persian explanation (P2-5): tapped on a story page, /glossary/
 // - data/entities.json  people, companies, models and products, one Persian spelling each (P2-6): /who/<slug>/
 // - data/lexicon.json   how a voice should say a Latin name or symbol in Persian (P2-2): the spoken lines in card.json
-// - data/related.json   related stories by meaning and same-story clusters, from embeddings (P2-4)
+// - data/related.json   related stories by meaning, same-story clusters and threads, from embeddings (P2-4, P3-1)
+// - data/threads.json   each thread's name and background (P3-1) · data/topics.json  topic page intros (P3-4)
 // - data/daily/<day>.json, data/weekly/<week>.json  the morning podcast's host lines (P2-7), the weekly recap (P2-11)
 // No imports beyond the files themselves, so the build, feeds and tests share it.
 
@@ -11,7 +12,11 @@ export type EntityKind = 'person' | 'company' | 'model' | 'product';
 /** `hidden`: a word the model took for a name (GPU, a disease, a concept): kept so the pipeline doesn't add it again,
  *  never shown. */
 export type Entity = { slug: string; name_en: string; name_fa: string; kind: EntityKind; aliases?: string[]; about?: string; hidden?: boolean };
-export type Related = { v?: number; model?: string; related: Record<string, number[]>; clusters: number[][] };
+export type Related = { v?: number; model?: string; related: Record<string, number[]>; clusters: number[][]; threads?: number[][] };
+/** A thread's name and «ماجرا تا اینجا» by the model (pipeline/threads.py), keyed by the thread's first story id. */
+export type ThreadText = { title?: string; summary?: string };
+/** «این روزها در …» at the top of a topic page (pipeline/topics.py, weekly). */
+export type TopicIntro = { intro: string; stories?: number };
 export type Daily = { day: string; intro: string; links: Record<string, string>; outro: string; ids: number[] };
 export type Weekly = { week: string; from: string; to: string; title: string; intro: string; items: { id: number; line: string }[]; outro: string };
 
@@ -20,6 +25,8 @@ const G = one(import.meta.glob<{ terms: Term[] }>('../../data/glossary.json', { 
 const E = one(import.meta.glob<{ entities: Entity[] }>('../../data/entities.json', { eager: true, import: 'default' }));
 const L = one(import.meta.glob<Record<string, string>>('../../data/lexicon.json', { eager: true, import: 'default' }));
 const R = one(import.meta.glob<Related>('../../data/related.json', { eager: true, import: 'default' }));
+const TH = one(import.meta.glob<{ items: Record<string, ThreadText> }>('../../data/threads.json', { eager: true, import: 'default' }));
+const TO = one(import.meta.glob<{ items: Record<string, TopicIntro> }>('../../data/topics.json', { eager: true, import: 'default' }));
 const DAILY = import.meta.glob<Daily>('../../data/daily/*.json', { eager: true, import: 'default' });
 const WEEKLY = import.meta.glob<Weekly>('../../data/weekly/*.json', { eager: true, import: 'default' });
 
@@ -27,6 +34,8 @@ export const glossary = (): Term[] => [...(G?.terms ?? [])].sort((a, b) => a.ter
 export const entities = (): Entity[] => E?.entities ?? [];
 export const lexicon = (): Record<string, string> => L ?? {};
 export const relatedFile = (): Related => R ?? { related: {}, clusters: [] };
+export const threadText = (key: number): ThreadText => TH?.items?.[String(key)] ?? {};
+export const topicIntro = (tag: string): TopicIntro | null => TO?.items?.[tag] ?? null;
 export const dailyFor = (day: string): Daily | null => Object.values(DAILY).find((d) => d.day === day) ?? null;
 export const weeklies = (): Weekly[] => Object.values(WEEKLY).sort((a, b) => (a.week < b.week ? 1 : -1));
 

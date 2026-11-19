@@ -1,0 +1,29 @@
+---
+// Under a story's text (PLAN.md P3-2): the AI models it is about, with the benchmark scores the story gives them
+// (checked against the text by the pipeline), and the dated events it announces. Each links to the site-wide page.
+import { faDate, faNum, url, type Post } from '../lib/posts';
+import { slugify } from '../lib/knowledge';
+import { makerOf } from '../lib/tracker';
+interface Props { post: Post }
+const { post } = Astro.props;
+const fa = (v: string) => faNum(v).replace('.', '٫');
+---
+{
+  (post.models.length > 0 || post.events.length > 0) && (
+    <aside class="facts" aria-label="مدل‌ها و تاریخ‌های این خبر" data-pagefind-ignore>
+      {post.models.map((m) => (
+        <a class="fact-model" href={url(`models/#${slugify(m.name)}`)}>
+          <span class="fact-name" dir="ltr">{m.name}</span>
+          {makerOf(m.name, m.maker) && <small>{makerOf(m.name, m.maker)}</small>}
+          {m.scores.map((s) => <span class="fact-score"><span dir="ltr">{s.bench}</span> <b>{fa(s.value)}</b></span>)}
+        </a>
+      ))}
+      {post.events.map((e) => (
+        <a class="fact-event" href={url(`calendar/#d-${e.date}`)}>
+          <span class="fact-date"><b>{faDate(e.date, { day: 'numeric' })}</b>{faDate(e.date, { month: 'short' })}</span>
+          <span>{e.what}</span>
+        </a>
+      ))}
+    </aside>
+  )
+}

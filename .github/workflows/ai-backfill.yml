@@ -83,6 +83,8 @@ jobs:
             [ "$more" -gt 0 ] && AI_MORE_BUDGET=1e9 python -m pipeline.ai_more --all --limit=$n
             # Mehrzad's older episodes: a Persian summary each, from their subtitles, a few per chunk.
             [ "$WHAT" != headlines ] && { python -m pipeline.videos --summarize --limit=3 || true; }
+            # The threads' names and backgrounds (pipeline/threads.py), a few minutes per chunk.
+            [ "$WHAT" != headlines ] && { THREADS_BUDGET=300 python -m pipeline.threads || true; }
             git add data
             git diff --cached --quiet && break
             git commit -qm "data: AI work for $n older posts"

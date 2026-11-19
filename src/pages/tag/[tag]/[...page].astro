@@ -7,6 +7,7 @@ import { SITE } from '../../../site';
 import { getFeed, getTags, tagHref, faNum } from '../../../lib/posts';
 import { listLd } from '../../../lib/seo';
 import { tagFeed } from '../../../lib/feed';
+import { topicIntro } from '../../../lib/knowledge';
 
 // /tag/<tag>/ is the first page, /tag/<tag>/2/ … the older ones (a big topic holds hundreds of posts).
 export function getStaticPaths() {
@@ -24,6 +25,8 @@ const at = (n: number) => tagHref(tag!) + (n > 1 ? `${n}/` : '');
 const prev = page > 1 ? at(page - 1) : null;
 const next = page < total ? at(page + 1) : null;
 const nth = page > 1 ? ` — صفحه‌ی ${faNum(page)}` : '';
+// «این روزها در …» by the model, weekly (pipeline/topics.py): on the first page only.
+const intro = page === 1 ? topicIntro(tag!) : null;
 const jsonLd = listLd({ name: `اخبار ${tag}${nth}`, path: at(page), posts: slice, crumbs: [{ name: 'موضوع‌ها', path: 'tags/' }, { name: tag!, path: `tag/${encodeURIComponent(tag!)}/` }] });
 ---
 <Base title={`اخبار ${tag}${nth}`} description={`اخبار ${tag}${nth} به فارسی: ${slice.slice(0, 3).map((p) => p.short).join('، ')} و ${faNum(Math.max(0, posts.length - 3))} خبر دیگر، با تصویر و پیوند به منبع — ${SITE.name}`} image={slice.find((p) => p.cover)?.cover?.src} feed={tagFeed(tag!)} jsonLd={jsonLd} prev={prev} next={next}>
@@ -32,6 +35,7 @@ const jsonLd = listLd({ name: `اخبار ${tag}${nth}`, path: at(page), posts: 
       <div><h1>اخبار {tag}</h1><p><span data-num>{faNum(posts.length)}</span> خبر{page > 1 && ` · صفحه‌ی ${faNum(page)} از ${faNum(total)}`}</p></div>
       <button class="btn follow-btn" type="button" data-follow={tag} aria-pressed="false"><Icon name="plus" class="when-off" /><Icon name="check" class="when-on" /> <span data-follow-label>دنبال کردن</span></button>
     </header>
+    {intro && <p class="topic-intro"><b>این روزها</b>{intro.intro}</p>}
     <div class="layout">
       <div class="col-main"><Timeline posts={slice} all={posts} nextHref={next} prevHref={prev} title={`خط زمانی ${tag}`} topic={tag} /></div>
       <Sidebar current={tag} />
