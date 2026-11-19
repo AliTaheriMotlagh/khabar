@@ -3,7 +3,7 @@
   "framework": "astro",
   "buildCommand": "npm run build",
   "outputDirectory": "dist",
-  "ignoreCommand": "git diff --quiet HEAD^ HEAD -- . ':(exclude)*.md' ':(exclude).github' ':(exclude)tests' ':(exclude)pipeline' ':(exclude)scripts'",
+  "ignoreCommand": "git log -1 --format=%s | grep -q '^data: AI backfill' || git diff --quiet HEAD^ HEAD -- . ':(exclude)*.md' ':(exclude).github' ':(exclude)tests' ':(exclude)pipeline' ':(exclude)scripts'",
   "trailingSlash": true,
   "rewrites": [
     { "source": "/rss/top.xml", "destination": "/api/router/?route=toprss" },

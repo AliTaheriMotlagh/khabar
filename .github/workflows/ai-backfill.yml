@@ -1,7 +1,7 @@
 # The model's work for every older post (pipeline/ai.py headlines, pipeline/ai_more.py translations, extras and spoken
 # names, pipeline/videos.py episode summaries): the crawl only does the last few days. Start it once (Actions →
-# ai-backfill → Run workflow): each run takes the newest posts still without an answer, commits them in chunks (a crawl
-# in between is never held up, nothing done is lost), stops starting chunks before its time limit, and — `chain` —
+# ai-backfill → Run workflow): each run takes the newest posts still without an answer — headlines for every post first,
+# then the extras —, commits after each step of ≤50 min (a crawl in between is never held up, nothing done is lost), stops starting chunks before its time limit, and — `chain` —
 # dispatches the next run itself until every post has its answers. A run that made no progress doesn't chain (no
 # endless loop on a post the model can't do). Free on a public repo's standard runner; the model comes from the same
 # Actions cache as the crawl's.
@@ -11,10 +11,10 @@ on:
   workflow_dispatch:
     inputs:
       posts:
-        description: 'how many posts at most (≈10–20 s each on the runner)'
-        default: '400'
+        description: 'how many posts at most (a headline ≈30 s on the runner, extras ≈2 min; a run stops by itself at ~5 h)'
+        default: '1000'
       chunk:
-        description: 'posts per commit (each commit redeploys Vercel)'
+        description: 'posts per step (a step also stops after 50 min, then commits)'
         default: '100'
       what:
         description: 'headlines (pipeline/ai.py), more (translations, extras, voices'' names: pipeline/ai_more.py) or both'
@@ -61,41 +61,61 @@ jobs:
           TOTAL: ${{ inputs.posts }}
           CHUNK: ${{ inputs.chunk }}
           WHAT: ${{ inputs.what }}
+          # Print each post as it's done (a pipe makes Python buffer it all until the step ends).
+          PYTHONUNBUFFERED: '1'
         run: |
           git config --global user.name 'github-actions[bot]'
           git config --global user.email '41898283+github-actions[bot]@users.noreply.github.com'
           # Episodes without a summary of the current version (pipeline/videos.py SUMMARY_V).
           videos_left() { python -c "import json; from pipeline.videos import SUMMARY_V; print(sum(1 for v in json.load(open('data/videos.json'))['videos'] if (v.get('ai') or {}).get('v') != SUMMARY_V))" 2>/dev/null || echo 0; }
-          left=$TOTAL
-          # Stop starting chunks after 290 minutes: a chunk takes up to ~40, and the job is killed at 340.
+          # No new post started after 290 minutes (the job is killed at 340, one post takes ≤ 2 × AI_TIMEOUT = 6 min).
           deadline=$((SECONDS + 290 * 60))
+          # Each step gets at most STEP seconds, then commits: what's done is never more than one step from being kept,
+          # and commits stay ~1 per 50 min (Vercel Hobby deploys ≤ 100 a day; the crawl already makes ~45).
+          STEP=3000
+          budget() { local b=$((deadline - SECONDS)); echo $(( b < STEP ? b : STEP )); }
+          # A step past its budget by far (a hung server, a stuck download) is stopped; what it saved is still committed.
+          run_step() { timeout --kill-after=60 $(( $(budget) + 600 )) "$@" || echo "::warning::$* stopped ($?)"; }
           progress=0
-          while [ "$left" -gt 0 ] && [ "$SECONDS" -lt "$deadline" ]; do
-            n=$(( left < CHUNK ? left : CHUNK ))
-            # Start from main as it is now: the crawl commits in between.
-            git pull -q --rebase origin main
-            core=0; more=0
-            [ "$WHAT" != more ] && core=$(python -m pipeline.ai --pending --all)
-            [ "$WHAT" != headlines ] && more=$(python -m pipeline.ai_more --pending --all --total)
-            vids=0; [ "$WHAT" != headlines ] && vids=$(videos_left)
-            [ $((core + more + vids)) -gt 0 ] || { echo 'every post has its answers'; break; }
-            [ "$core" -gt 0 ] && python -m pipeline.ai --all --limit=$n
-            [ "$more" -gt 0 ] && AI_MORE_BUDGET=1e9 python -m pipeline.ai_more --all --limit=$n
-            # Mehrzad's older episodes: a Persian summary each, from their subtitles, a few per chunk.
-            [ "$WHAT" != headlines ] && { python -m pipeline.videos --summarize --limit=3 || true; }
-            # The threads' names and backgrounds (pipeline/threads.py), a few minutes per chunk.
-            [ "$WHAT" != headlines ] && { THREADS_BUDGET=300 python -m pipeline.threads || true; }
+          # Commit data/ and push; a post the crawl changed meanwhile drops this step's work (the next step redoes it).
+          commit() {
             git add data
-            git diff --cached --quiet && break
-            git commit -qm "data: AI work for $n older posts"
-            pushed=
+            git diff --cached --quiet && return 1
+            git commit -qm "data: AI backfill, $1"
             for attempt in 1 2 3 4; do
-              if git pull --rebase -q origin main && git push -q origin HEAD:main; then pushed=1; break; fi
+              if git pull --rebase -q origin main && git push -q origin HEAD:main; then progress=1; return 0; fi
               git rebase --abort 2>/dev/null || true
               sleep $((attempt * 5))
             done
-            # A post the crawl changed meanwhile: drop this chunk, the next run (or chunk) does it again.
-            [ -n "$pushed" ] && progress=1 || { echo "::warning::chunk conflicted with a crawl; skipped"; git reset -q --hard FETCH_HEAD; }
+            echo "::warning::$1 conflicted with a crawl; dropped"
+            git fetch -q origin main && git reset -q --hard FETCH_HEAD
+            return 0
+          }
+          left=$TOTAL
+          while [ "$left" -gt 0 ] && [ "$(budget)" -gt 300 ]; do
+            n=$(( left < CHUNK ? left : CHUNK ))
+            # Start from main as it is now: the crawl commits in between.
+            git pull -q --rebase origin main
+            core=0; more=0; vids=0
+            [ "$WHAT" != more ] && core=$(python -m pipeline.ai --pending --all)
+            [ "$WHAT" != headlines ] && more=$(python -m pipeline.ai_more --pending --all --total) && vids=$(videos_left)
+            echo "::notice::left: $core headlines, $more extras, $vids video summaries; $(( $(budget) / 60 )) min for this step"
+            [ $((core + more + vids)) -gt 0 ] || { echo 'every post has its answers'; break; }
+            changed=
+            if [ "$core" -gt 0 ]; then
+              # Headlines first, for every post: they're what every page shows (~28 s a post, extras take ~2 min).
+              AI_BUDGET=$(budget) run_step python -m pipeline.ai --all --limit=$n
+              commit "headlines" && changed=1
+            else
+              AI_MORE_BUDGET=$(budget) run_step python -m pipeline.ai_more --all --limit=$n
+              # Mehrzad's older episodes: a Persian summary each, from their subtitles, a few per chunk.
+              [ "$vids" -gt 0 ] && [ "$(budget)" -gt 600 ] && run_step python -m pipeline.videos --summarize --limit=3
+              # The threads' names and backgrounds (pipeline/threads.py), a few minutes per chunk.
+              [ "$(budget)" -gt 600 ] && THREADS_BUDGET=300 run_step python -m pipeline.threads
+              commit "extras" && changed=1
+            fi
+            # Nothing came out of a whole step (every answer failed the checks): don't loop on it.
+            [ -n "$changed" ] || break
             left=$(( left - n ))
           done
           echo "progress=$progress" >> "$GITHUB_OUTPUT"

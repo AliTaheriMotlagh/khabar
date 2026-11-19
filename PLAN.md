@@ -146,8 +146,18 @@ it, and translates only when Gholam never commented (`ai.story`, «ترجمه‌
   (`GHOLAM_HOLD_MINUTES`), so a crawl that runs in his ~16 s never publishes (and pushes) the English source; `watch`
   starts one more crawl when the hold ends. Gholam's reply is split at 3,900 characters by his bot; his longest so far is
   1,455, so only the first comment is read.
-- [ ] After pushing: run `ai-eval` once (Actions → ai-eval) to confirm v2's topics on the runner; if precision drops
-  under the rules', set `AI_TOPICS_V` in posts.ts past `PROMPT_V` to go back to the rules.
+- [x] ~~run `ai-eval` for v2~~ (2026-11-19 01:39 UTC, on the runner): topics precision 77% (rules 72%), section 29/39
+  (rules 25/39) → the model's topics stay. Headline rules 36/39, type 29/39 (v1: 38/39, 30/39), 30 s/post.
+
+## Progress (2026-11-19, morning): the backfill got stuck
+
+- Run 44426528494 did 100 headlines (47 min), then ran `ai_more` for 100 posts (~2 min each: ~4 h) with Python's
+  output buffered (an empty log), was killed at 340 min before its commit: nothing kept, no chain. Data then: 38/2,124
+  posts with v2 headlines, 214 v1 (redone for v2), 19 with extras.
+- [x] Fixed `ai-backfill.yml`: `PYTHONUNBUFFERED`, **headlines for every post first**, then extras; each step gets ≤50 min
+  (`AI_BUDGET`/`AI_MORE_BUDGET` from the deadline) and a hard `timeout`, then commits («data: AI backfill, …»); Vercel's
+  `ignoreCommand` skips those commits (the next crawl commit deploys them: ≤100 deploys a day on Hobby). Re-dispatched.
+  Expected: headlines ≈ 16 h of runner time (~4 chained runs), extras ≈ 60–70 h more.
 
 ## Progress (2026-11-18, late): production hardening
 
