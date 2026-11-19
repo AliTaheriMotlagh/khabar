@@ -329,6 +329,30 @@
    "name_en": "SEC",
    "name_fa": "کمیسیون بورس و اوراق بهادار آمریکا",
    "kind": "company"
+  },
+  {
+   "slug": "gpt-62-sol",
+   "name_en": "GPT-6.2 Sol",
+   "name_fa": "جی‌پی‌تی ۶.۲ سول",
+   "kind": "model"
+  },
+  {
+   "slug": "vorflux",
+   "name_en": "Vorflux",
+   "name_fa": "ورفلکس",
+   "kind": "company"
+  },
+  {
+   "slug": "tesla",
+   "name_en": "Tesla",
+   "name_fa": "تسلا",
+   "kind": "company"
+  },
+  {
+   "slug": "y-combinator",
+   "name_en": "Y Combinator",
+   "name_fa": "ای‌سی‌آی‌تی‌ان",
+   "kind": "company"
   }
  ]
 }
