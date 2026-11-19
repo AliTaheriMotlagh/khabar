@@ -56,14 +56,13 @@
  "updated": "2026-11-16T12:39:28+00:00",
  "ai": {
   "title": "گوگل مدل Gemini 4 Hydrogen را با تعرفه‌های جدید عرضه کرد",
-  "short": "Gemini 4 Hydrogen فعال شد",
+  "short": "Gemini 4 Hydrogen آزاد شد",
   "topics": [
-   "گوگل",
-   "رمزارز"
+   "گوگل"
   ],
   "type": "ابزار و محصول",
   "model": "qwen3.5-9b-q4_k_m",
-  "v": 1,
+  "v": 2,
   "src": "ecb56c2892dd"
  }
 }

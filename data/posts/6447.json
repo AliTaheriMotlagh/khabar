@@ -61,12 +61,11 @@
   "title": "اوپن‌ای‌آی قابلیت Businesses in ChatGPT را به صورت بتا معرفی کرد",
   "short": "Businesses in ChatGPT",
   "topics": [
-   "اوپن‌ای‌آی",
-   "کسب‌وکار"
+   "اوپن‌ای‌آی"
   ],
   "type": "ابزار و محصول",
   "model": "qwen3.5-9b-q4_k_m",
-  "v": 1,
+  "v": 2,
   "src": "ac2154c4048f"
  }
 }

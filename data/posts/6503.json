@@ -59,15 +59,14 @@
  },
  "updated": "2026-11-16T18:44:24+00:00",
  "ai": {
-  "title": "Thinking Machines مدل Inkling 2 Small را با مجوز آپاچی منتشر کرد",
-  "short": "Inkling 2 Small آزاد شد",
+  "title": "Thinking Machines مدل Inkling 2 Small را متن‌باز کرد و Lightseek سرعتش را ۷۵ درصد بالا برد",
+  "short": "Inkling 2 Small متن‌باز شد",
   "topics": [
-   "متن‌باز",
-   "آنتروپیک"
+   "متن‌باز"
   ],
   "type": "ابزار و محصول",
   "model": "qwen3.5-9b-q4_k_m",
-  "v": 1,
+  "v": 2,
   "src": "fe29ecb2bfbf"
  }
 }

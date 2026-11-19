@@ -70,9 +70,14 @@
  },
  "updated": "2026-11-13T21:41:23+00:00",
  "ai": {
-  "failed": true,
+  "title": "مدل NovaAtom-Lite: پیش‌بینی ساختار دارو با دقت ۷۹ درصدی",
+  "short": "مدل NovaAtom-Lite",
+  "topics": [
+   "سلامت"
+  ],
+  "type": "ابزار و محصول",
   "model": "qwen3.5-9b-q4_k_m",
-  "v": 1,
+  "v": 2,
   "src": "b67c06e485a4"
  }
 }

@@ -58,7 +58,7 @@
  },
  "updated": "2026-11-11T16:11:21+00:00",
  "ai": {
-  "title": "مدل Claude Mythos آنتروپیک در سه روز روی تراشه‌های AMD MI355X راه‌اندازی شد",
+  "title": "مدل Claude Mythos آنتروپیک کدهای AMD MI355X را در سه روز نوشت",
   "short": "Claude Mythos روی AMD",
   "topics": [
    "آنتروپیک",
@@ -66,7 +66,7 @@
   ],
   "type": "ابزار و محصول",
   "model": "qwen3.5-9b-q4_k_m",
-  "v": 1,
+  "v": 2,
   "src": "ea9f16881259"
  }
 }

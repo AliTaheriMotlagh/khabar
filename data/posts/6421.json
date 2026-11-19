@@ -60,7 +60,7 @@
  "ai": {
   "failed": true,
   "model": "qwen3.5-9b-q4_k_m",
-  "v": 1,
+  "v": 2,
   "src": "7f5e14c98cd8"
  }
 }

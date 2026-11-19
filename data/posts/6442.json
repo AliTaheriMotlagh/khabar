@@ -60,12 +60,12 @@
   "title": "مدل Gemini 4 Carbon به محیط برنامه‌نویسی Cursor اضافه شد",
   "short": "Gemini 4 Carbon در Cursor",
   "topics": [
-   "آنتروپیک",
+   "گوگل",
    "کدنویسی"
   ],
   "type": "ابزار و محصول",
   "model": "qwen3.5-9b-q4_k_m",
-  "v": 1,
+  "v": 2,
   "src": "bf54c3c45a13"
  }
 }

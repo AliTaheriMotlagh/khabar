@@ -62,13 +62,10 @@
  "ai": {
   "title": "تیم Liquid AI کدک صوتی LiquidCodec را با سرعت پردازش بالا معرفی کرد",
   "short": "کدک صوتی LiquidCodec",
-  "topics": [
-   "آنتروپیک",
-   "صدا و موسیقی"
-  ],
+  "topics": [],
   "type": "ابزار و محصول",
   "model": "qwen3.5-9b-q4_k_m",
-  "v": 1,
+  "v": 2,
   "src": "0d0701e7950d"
  }
 }
