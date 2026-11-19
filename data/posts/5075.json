@@ -56,5 +56,17 @@
   ]
  },
  "updated": "2026-10-25T12:28:20+00:00",
- "gholam_checked": "2026-10-25T12:28:20+00:00"
+ "gholam_checked": "2026-10-25T12:28:20+00:00",
+ "ai": {
+  "title": "مارک زاکربرگ مدل Muse Voice Transcribe را برای تبدیل گفتار به متن رونمایی کرد",
+  "short": "Muse Voice Transcribe از ماسک",
+  "topics": [
+   "متا",
+   "صدا و موسیقی"
+  ],
+  "type": "ابزار و محصول",
+  "model": "qwen3.5-9b-q4_k_m",
+  "v": 2,
+  "src": "78c74bad637c"
+ }
 }

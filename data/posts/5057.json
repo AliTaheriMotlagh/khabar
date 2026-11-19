@@ -50,5 +50,11 @@
   "tags": []
  },
  "updated": "2026-10-25T12:28:27+00:00",
- "gholam_checked": "2026-10-25T12:28:27+00:00"
+ "gholam_checked": "2026-10-25T12:28:27+00:00",
+ "ai": {
+  "failed": true,
+  "model": "qwen3.5-9b-q4_k_m",
+  "v": 2,
+  "src": "17c85ab8a25e"
+ }
 }

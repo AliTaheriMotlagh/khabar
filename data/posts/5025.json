@@ -75,5 +75,14 @@
   "tags": []
  },
  "updated": "2026-10-25T12:28:39+00:00",
- "gholam_checked": "2026-10-25T12:28:39+00:00"
+ "gholam_checked": "2026-10-25T12:28:39+00:00",
+ "ai": {
+  "title": "پست جدید infiniteslop.ai با بیش از ۱۷۱ هزار بازدید توجه کاربران را جلب کرد",
+  "short": "پست viral infiniteslop.ai",
+  "topics": [],
+  "type": "خبر",
+  "model": "qwen3.5-9b-q4_k_m",
+  "v": 2,
+  "src": "d475bd795388"
+ }
 }

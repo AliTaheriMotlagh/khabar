@@ -53,5 +53,16 @@
   ]
  },
  "updated": "2026-10-25T12:28:10+00:00",
- "gholam_checked": "2026-10-25T12:28:10+00:00"
+ "gholam_checked": "2026-10-25T12:28:10+00:00",
+ "ai": {
+  "title": "Gemini 3.8 Flash گوگل در بنچمارک‌ها از Opus 5 پیشی گرفت",
+  "short": "Gemini 3.8 Flash قوی‌تر شد",
+  "topics": [
+   "گوگل"
+  ],
+  "type": "پژوهش و مقاله",
+  "model": "qwen3.5-9b-q4_k_m",
+  "v": 2,
+  "src": "aef204ec6d1f"
+ }
 }

@@ -47,5 +47,14 @@
   ]
  },
  "updated": "2026-10-25T12:28:41+00:00",
- "gholam_checked": "2026-10-25T12:28:41+00:00"
+ "gholam_checked": "2026-10-25T12:28:41+00:00",
+ "ai": {
+  "title": "OpenAI دسترسی کاربران Cursor به مدل‌هایش را در سه ماه قطع می‌کند",
+  "short": "قطع دسترسی Cursor به OpenAI",
+  "topics": [],
+  "type": "خبر",
+  "model": "qwen3.5-9b-q4_k_m",
+  "v": 2,
+  "src": "f37d2e8b9439"
+ }
 }
