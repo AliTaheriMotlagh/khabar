@@ -401,6 +401,36 @@
    "name_en": "Shane Legg",
    "name_fa": "شین لگ",
    "kind": "person"
+  },
+  {
+   "slug": "pika",
+   "name_en": "Pika",
+   "name_fa": "پیکا",
+   "kind": "company"
+  },
+  {
+   "slug": "enact",
+   "name_en": "Enact",
+   "name_fa": "اناکت",
+   "kind": "product"
+  },
+  {
+   "slug": "pika-h3-flex",
+   "name_en": "Pika H3 Flex",
+   "name_fa": "پیکا H3 فلکس",
+   "kind": "model"
+  },
+  {
+   "slug": "bennett-reloaded",
+   "name_en": "Bennett Reloaded",
+   "name_fa": "بنیت ریلودد",
+   "kind": "person"
+  },
+  {
+   "slug": "ashen-one",
+   "name_en": "Ashen One",
+   "name_fa": "اشن وان",
+   "kind": "person"
   }
  ]
 }
