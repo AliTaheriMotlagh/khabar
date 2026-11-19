@@ -317,6 +317,12 @@
    "name_en": "Harvard University",
    "name_fa": "دانشگاه هاروارد",
    "kind": "company"
+  },
+  {
+   "slug": "nasdaq",
+   "name_en": "Nasdaq",
+   "name_fa": "نزدک",
+   "kind": "company"
   }
  ]
 }

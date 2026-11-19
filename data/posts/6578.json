@@ -12,7 +12,8 @@
   "site": "🧵 Thread • FxTwitter",
   "title": "Disclose.tv (@disclosetv)",
   "description": "JUST IN - A suspected supply chain attack on Optimizely loaded malware on Zoom, CNN, Fox News, BBC, Salesforce, GitLab, KLM, Air France, Bitly, IG Group, American Eagle and others, exposing visitors to scripts built to steal payment data and exploit iOS devices.",
-  "image": "https://cdn4.telesco.pe/file/BrUpPeGFsl4hfDpkXTBXlL3fmtPWDaY3APU6LQsNVy-Rn0xPfwdMIz3zKpbdvYRZKBpEK2NQk1bCoNpZAeGSYA60slg7FvoknDS4UCerBNOEFgD6j8WibAD0jkSOb6p1N1-0xVphZA64Veg1Wo4VH5iZgeRR5RS-Wytq_5I2RQryNK_FSc9Hl6ZTrr5Go2WlPHYRBjkCci4PHRNzgzisWxBMrhnlIkFjHrKwpA2Nw2NwdQgLdm3oSaO_00UbGxqGwbgfrRzH3WHt94-E3yEpfJxKp0EFOxD1GziVP7SZR4v0zi8WmXAi2OgI7h-S8RhY3GEPDbcEvWy8-4HayPDxDA.jpg"
+  "image": "https://cdn4.telesco.pe/file/BrUpPeGFsl4hfDpkXTBXlL3fmtPWDaY3APU6LQsNVy-Rn0xPfwdMIz3zKpbdvYRZKBpEK2NQk1bCoNpZAeGSYA60slg7FvoknDS4UCerBNOEFgD6j8WibAD0jkSOb6p1N1-0xVphZA64Veg1Wo4VH5iZgeRR5RS-Wytq_5I2RQryNK_FSc9Hl6ZTrr5Go2WlPHYRBjkCci4PHRNzgzisWxBMrhnlIkFjHrKwpA2Nw2NwdQgLdm3oSaO_00UbGxqGwbgfrRzH3WHt94-E3yEpfJxKp0EFOxD1GziVP7SZR4v0zi8WmXAi2OgI7h-S8RhY3GEPDbcEvWy8-4HayPDxDA.jpg",
+  "small": true
  },
  "gholam": {
   "text": "رفقا یه خبر امنیتی مهم درومده؛ به گزارش Disclose.tv و سایت BleepingComputer، یه حمله مشکوک به زنجیره تأمینِ سرویس Optimizely باعث شده بازدیدکننده‌های کلی سایت معروف در معرض کدهای مخرب قرار بگیرن. قضیه یه جورایی شبیه اینه که از یه مسیر مشترک، کد آلوده سر از سایت برندهای بزرگی مثل Zoom، CNN، BBC، Fox News، Salesforce، GitLab، KLM، Air France و چند تا شرکت دیگه درآورده باشه.\n\n• پژوهشگر امنیتی اسکات هِلم گفته ۱۸۸ اسکریپت آلوده متعلق به ۱۷۸ سازمان پیدا شده که هدفشون سرقت اطلاعات پرداخت و رمزارز، سوءاستفاده از آسیب‌پذیری‌های iOS و همین‌طور جمع‌آوری کوکی‌ها، آدرس صفحات و اسکرین‌شات بوده.\n• طبق همین گزارش، کیف‌پول‌های رمزارزیِ داخل این کدها روز دوشنبه حدود ۷ هزار دلار دریافتی داشتن، اما تا آخر وقت همون روز فقط یکی از این ۱۸۸ اسکریپت هنوز کد مخرب رو نگه داشته بوده.\n• اینکه مهاجم‌ها دقیقاً چطور تونستن به سیستم دسترسی پیدا کنن هنوز معلوم نیست.",
@@ -60,5 +61,5 @@
    "امنیت"
   ]
  },
- "updated": "2026-11-18T20:04:28+00:00"
+ "updated": "2026-11-19T00:13:30+00:00"
 }

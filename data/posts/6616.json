@@ -12,7 +12,8 @@
   "site": "FxTwitter · runway.com",
   "title": "Runway (@runwayml)",
   "description": "We cut the GPUs needed to run a 57-billion-parameter video model at 24 fps from eight to four.\nOur latest research post breaks down the optimizations that made it possible and what broke along the way.\nhttps://runway.com/news/research/real-time-video-at…",
-  "image": "https://cdn4.telesco.pe/file/APCRIi6dG9Yy25Jqzudrqm0FEtgnLb0SBEANjqA5o2Q8zxm4bPnyRPc7XkN6F4ilPIZG7g1bI4hRJEex4UVPI_DWE7w4E9xCPUOoJfP073W4g9DMLluggqQRBr6bq-ytdZVbpODEmhmy9Xhy4mDrhfyz9Ti0Zt3ofqSpRtOSbkveC3C_iwn5_DWbDY-WVZ8ieLjKeUTWZP8E7DKJcRxn-xgD9Koc6-14jP4kIEhgu1EGbjYyk-3WYTaOtw7uHyyAo6yuWsxFocwUVP4nBq85yzTps4CuhuQW6GDmw2QTQEC8t2nXfZWMHB6Ai1M2NLltR_-PQ9B3phIVNWh8EEjSfA.jpg"
+  "image": "https://cdn4.telesco.pe/file/APCRIi6dG9Yy25Jqzudrqm0FEtgnLb0SBEANjqA5o2Q8zxm4bPnyRPc7XkN6F4ilPIZG7g1bI4hRJEex4UVPI_DWE7w4E9xCPUOoJfP073W4g9DMLluggqQRBr6bq-ytdZVbpODEmhmy9Xhy4mDrhfyz9Ti0Zt3ofqSpRtOSbkveC3C_iwn5_DWbDY-WVZ8ieLjKeUTWZP8E7DKJcRxn-xgD9Koc6-14jP4kIEhgu1EGbjYyk-3WYTaOtw7uHyyAo6yuWsxFocwUVP4nBq85yzTps4CuhuQW6GDmw2QTQEC8t2nXfZWMHB6Ai1M2NLltR_-PQ9B3phIVNWh8EEjSfA.jpg",
+  "small": true
  },
  "gholam": {
   "text": "رفیق، شرکت رانوی (Runway) اعلام کرده تونسته تعداد پردازنده‌های گرافیکی (GPU) لازم برای اجرای یه مدل ویدیویی ۵۷ میلیارد پارامتری با سرعت ۲۴ فریم بر ثانیه رو از هشت‌تا به چهارتا کاهش بده؛ انگار یه بار سنگین رو به‌جای هشت نفر، با چهار نفر جمع کرده باشن! 🎬\n\nرانوی می‌گه تو مطلب پژوهشی جدیدش (با عنوان Real-Time Video at Batch Size One) توضیح داده چه بهینه‌سازی‌هایی این کار رو شدنی کرده و وسط راه چه چیزهایی خراب شده. البته متن اصلی مقاله اینجا در دسترس نیست، برای همین جزئیات فنی‌تر و اینکه دقیقاً کجای کار به مشکل خورده رو نمی‌شه از همین مقدار اطلاعات فهمید.",
@@ -118,5 +119,5 @@
    "تراشه"
   ]
  },
- "updated": "2026-11-18T20:04:27+00:00"
+ "updated": "2026-11-19T00:13:29+00:00"
 }
