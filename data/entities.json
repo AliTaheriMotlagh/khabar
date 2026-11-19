@@ -545,6 +545,12 @@
    "name_en": "Sarah Wang",
    "name_fa": "سارا وانگ",
    "kind": "person"
+  },
+  {
+   "slug": "gpt-synopsys",
+   "name_en": "GPT-Synopsys",
+   "name_fa": "جی‌پی‌تی-سنوپسیس",
+   "kind": "model"
   }
  ]
 }
