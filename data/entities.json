@@ -521,6 +521,18 @@
    "name_en": "Polymarket",
    "name_fa": "پلی‌مارکت",
    "kind": "company"
+  },
+  {
+   "slug": "stasis",
+   "name_en": "STASIS",
+   "name_fa": "استیس",
+   "kind": "company"
+  },
+  {
+   "slug": "moses-moody",
+   "name_en": "Moses Moody",
+   "name_fa": "موزز مودی",
+   "kind": "person"
   }
  ]
 }

@@ -18,61 +18,6 @@
   "text": "رفقا، طبق ایمیلی که OpenRouter برای کاربرای درگیر (از جمله تئو و اکانت T3 chat) فرستاده و تو شبکه ایکس هم دست‌به‌دست شده، زیرساخت شرکت Prime Intellect هک شده و مهاجم به سرورهای اجرای مدل دسترسی ادمین گرفته. نکته عجیب ماجرا اینه که طرف به‌جای خرابکاری معمولی، یواشکی مدل DeepSeek V4.1 Flash رو با یه نسخه دست‌کاری‌شده و بی‌تعارف عوض کرده که تقریباً هیچ درخواستی رو رد نمی‌کرده! 🛡️\n\n• بر اساس گزارش OpenRouter به نقل از Prime Intellect، این جابه‌جایی بین ۸ تا ۱۰ نوامبر ۲۰۲۶ انجام شده و در تست‌های استاندارد، مدل دست‌کاری‌شده حدود ۱ درصد درخواست‌ها رو رد می‌کرده (در حالی که نسخه اصلی بین ۸۳ تا ۹۸ درصد رد می‌کرده).\n• شرکت دسترسی مهاجم رو قطع و کلستر درگیر رو از مدار خارج کرده و اندپوینت این مدل از ۱۳ نوامبر دیگه درخواستی رو جواب نداده.\n• هنوز مدرکی مبنی بر ذخیره یا ارسال پرامپت‌ها به بیرون پیدا نشده، ولی به گفته این شرکت چون مهاجم دسترسی ادمین داشته، احتمال خونده شدن درخواست‌ها در لحظه پردازش رو نمی‌شه رد کرد و هنوز هم مشخص نیست دقیقاً چه مدت دسترسی داشته یا چند تا درخواست در معرض خطر بوده.\n\nتئو هم اشاره کرده که تا زمان انتشار این خبر، خود Prime Intellect هنوز اطلاع‌رسانی عمومی نکرده بوده و تحقیقاتش همچنان ادامه داره.",
   "date": "2026-11-19T16:58:57+00:00"
  },
- "links": [
-  {
-   "kind": "tweet",
-   "url": "https://x.com/himanshustwts/status/2123447642470658069",
-   "domain": "x.com",
-   "author": {
-    "name": "himanshu",
-    "handle": "himanshustwts",
-    "avatar": "https://pbs.twimg.com/profile_images/1884206288839778304/HrqG2yjw_200x200.jpg"
-   },
-   "text": "Prime Intellect got hacked!\n\n- attacker gained admin-level access to model-serving machines (potentially could inspect info during inference)\n\n- affected cluster was taken offline\n\n- unclear how long the attacker had access / how many requests were potentially exposed",
-   "date": 1795104344,
-   "media": [
-    {
-     "type": "image",
-     "src": "https://pbs.twimg.com/media/HXf_b2takAABUZD.jpg?name=orig",
-     "ratio": 0.3844
-    }
-   ],
-   "links": [],
-   "quote": {
-    "author": {
-     "name": "Theo - t3.gg",
-     "handle": "theo",
-     "avatar": "https://pbs.twimg.com/profile_images/2106484435382333440/vXOVE8EX_200x200.jpg"
-    },
-    "text": "Looks like @PrimeIntellect was compromised in a very strange way. No public comms from them yet, but disclosed by OpenRouter to affected folks (such as myself)",
-    "date": 1795100199,
-    "media": [
-     {
-      "type": "image",
-      "src": "https://pbs.twimg.com/media/HXfwTvpbIAEGPcW.jpg?name=orig",
-      "ratio": 1.1312
-     }
-    ],
-    "links": []
-   }
-  }
- ],
- "article": {
-  "title": "طبق ایمیلی که OpenRouter برای کاربرای درگیر (از جمله تئو و اکانت T3 chat) فرستاده و تو شبکه ایکس هم دست‌به‌دست شده، زیرساخت شرکت Prime Intellect هک شده و مهاجم به سرورهای اجرای مدل دسترسی ادمین گرفته",
-  "source_title": "Prime Intellect got hacked!",
-  "body": [
-   "طبق ایمیلی که OpenRouter برای کاربرای درگیر (از جمله تئو و اکانت T3 chat) فرستاده و تو شبکه ایکس هم دست‌به‌دست شده، زیرساخت شرکت Prime Intellect هک شده و مهاجم به سرورهای اجرای مدل دسترسی ادمین گرفته. نکته عجیب ماجرا اینه که طرف به‌جای خرابکاری معمولی، یواشکی مدل DeepSeek V4.1 Flash رو با یه نسخه دست‌کاری‌شده و بی‌تعارف عوض کرده که تقریباً هیچ درخواستی رو رد نمی‌کرده! 🛡️",
-   "• بر اساس گزارش OpenRouter به نقل از Prime Intellect، این جابه‌جایی بین ۸ تا ۱۰ نوامبر ۲۰۲۶ انجام شده و در تست‌های استاندارد، مدل دست‌کاری‌شده حدود ۱ درصد درخواست‌ها رو رد می‌کرده (در حالی که نسخه اصلی بین ۸۳ تا ۹۸ درصد رد می‌کرده).",
-   "• شرکت دسترسی مهاجم رو قطع و کلستر درگیر رو از مدار خارج کرده و اندپوینت این مدل از ۱۳ نوامبر دیگه درخواستی رو جواب نداده.",
-   "• هنوز مدرکی مبنی بر ذخیره یا ارسال پرامپت‌ها به بیرون پیدا نشده، ولی به گفته این شرکت چون مهاجم دسترسی ادمین داشته، احتمال خونده شدن درخواست‌ها در لحظه پردازش رو نمی‌شه رد کرد و هنوز هم مشخص نیست دقیقاً چه مدت دسترسی داشته یا چند تا درخواست در معرض خطر بوده."
-  ],
-  "why": "تئو هم اشاره کرده که تا زمان انتشار این خبر، خود Prime Intellect هنوز اطلاع‌رسانی عمومی نکرده بوده و تحقیقاتش همچنان ادامه داره.",
-  "why_label": "حرف آخر",
-  "tags": [
-   "امنیت"
-  ]
- },
- "updated": "2026-11-19T17:01:04+00:00",
  "ai": {
   "title": "هک زیرساخت Prime Intellect: مهاجم مدل DeepSeek V4.1 را دستکاری کرد",
   "short": "هک Prime Intellect",
@@ -145,5 +90,60 @@
    "v": 2,
    "src": "0575345003bc"
   }
- }
+ },
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/himanshustwts/status/2123447642470658069",
+   "domain": "x.com",
+   "author": {
+    "name": "himanshu",
+    "handle": "himanshustwts",
+    "avatar": "https://pbs.twimg.com/profile_images/1884206288839778304/HrqG2yjw_200x200.jpg"
+   },
+   "text": "Prime Intellect got hacked!\n\n- attacker gained admin-level access to model-serving machines (potentially could inspect info during inference)\n\n- affected cluster was taken offline\n\n- unclear how long the attacker had access / how many requests were potentially exposed",
+   "date": 1795104344,
+   "media": [
+    {
+     "type": "image",
+     "src": "https://pbs.twimg.com/media/HXf_b2takAABUZD.jpg?name=orig",
+     "ratio": 0.3844
+    }
+   ],
+   "links": [],
+   "quote": {
+    "author": {
+     "name": "Theo - t3.gg",
+     "handle": "theo",
+     "avatar": "https://pbs.twimg.com/profile_images/2106484435382333440/vXOVE8EX_200x200.jpg"
+    },
+    "text": "Looks like @PrimeIntellect was compromised in a very strange way. No public comms from them yet, but disclosed by OpenRouter to affected folks (such as myself)",
+    "date": 1795100199,
+    "media": [
+     {
+      "type": "image",
+      "src": "https://pbs.twimg.com/media/HXfwTvpbIAEGPcW.jpg?name=orig",
+      "ratio": 1.1312
+     }
+    ],
+    "links": []
+   }
+  }
+ ],
+ "article": {
+  "title": "طبق ایمیلی که OpenRouter برای کاربرای درگیر (از جمله تئو و اکانت T3 chat) فرستاده و تو شبکه ایکس هم دست‌به‌دست شده، زیرساخت شرکت Prime Intellect هک شده و مهاجم به سرورهای اجرای مدل دسترسی ادمین گرفته",
+  "source_title": "Prime Intellect got hacked!",
+  "body": [
+   "طبق ایمیلی که OpenRouter برای کاربرای درگیر (از جمله تئو و اکانت T3 chat) فرستاده و تو شبکه ایکس هم دست‌به‌دست شده، زیرساخت شرکت Prime Intellect هک شده و مهاجم به سرورهای اجرای مدل دسترسی ادمین گرفته. نکته عجیب ماجرا اینه که طرف به‌جای خرابکاری معمولی، یواشکی مدل DeepSeek V4.1 Flash رو با یه نسخه دست‌کاری‌شده و بی‌تعارف عوض کرده که تقریباً هیچ درخواستی رو رد نمی‌کرده! 🛡️",
+   "• بر اساس گزارش OpenRouter به نقل از Prime Intellect، این جابه‌جایی بین ۸ تا ۱۰ نوامبر ۲۰۲۶ انجام شده و در تست‌های استاندارد، مدل دست‌کاری‌شده حدود ۱ درصد درخواست‌ها رو رد می‌کرده (در حالی که نسخه اصلی بین ۸۳ تا ۹۸ درصد رد می‌کرده).",
+   "• شرکت دسترسی مهاجم رو قطع و کلستر درگیر رو از مدار خارج کرده و اندپوینت این مدل از ۱۳ نوامبر دیگه درخواستی رو جواب نداده.",
+   "• هنوز مدرکی مبنی بر ذخیره یا ارسال پرامپت‌ها به بیرون پیدا نشده، ولی به گفته این شرکت چون مهاجم دسترسی ادمین داشته، احتمال خونده شدن درخواست‌ها در لحظه پردازش رو نمی‌شه رد کرد و هنوز هم مشخص نیست دقیقاً چه مدت دسترسی داشته یا چند تا درخواست در معرض خطر بوده."
+  ],
+  "why": "تئو هم اشاره کرده که تا زمان انتشار این خبر، خود Prime Intellect هنوز اطلاع‌رسانی عمومی نکرده بوده و تحقیقاتش همچنان ادامه داره.",
+  "why_label": "حرف آخر",
+  "tags": [
+   "امنیت"
+  ]
+ },
+ "updated": "2026-11-19T19:01:00+00:00"
 }
