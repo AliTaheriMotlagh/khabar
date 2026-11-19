@@ -70,5 +70,17 @@
   ]
  },
  "updated": "2026-10-25T12:26:03+00:00",
- "gholam_checked": "2026-10-25T12:26:03+00:00"
+ "gholam_checked": "2026-10-25T12:26:03+00:00",
+ "ai": {
+  "title": "تیم کوئن هوش مصنوعی Qwen Intelligence را روی موبایل آورد",
+  "short": "Qwen Intelligence روی موبایل",
+  "topics": [
+   "چین",
+   "ایجنت"
+  ],
+  "type": "ابزار و محصول",
+  "model": "qwen3.5-9b-q4_k_m",
+  "v": 2,
+  "src": "5f9c108ba27c"
+ }
 }

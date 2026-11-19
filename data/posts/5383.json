@@ -69,5 +69,16 @@
   ]
  },
  "updated": "2026-10-25T12:26:24+00:00",
- "gholam_checked": "2026-10-25T12:26:24+00:00"
+ "gholam_checked": "2026-10-25T12:26:24+00:00",
+ "ai": {
+  "title": "مدل Step 5 Preview با ۶۰۰ میلیارد پارامتر و معماری MoE رونمایی شد",
+  "short": "Step 5 Preview معرفی شد",
+  "topics": [
+   "متن‌باز"
+  ],
+  "type": "ابزار و محصول",
+  "model": "qwen3.5-9b-q4_k_m",
+  "v": 2,
+  "src": "bfdcde6c99fc"
+ }
 }

@@ -50,5 +50,14 @@
   "tags": []
  },
  "updated": "2026-10-25T12:26:16+00:00",
- "gholam_checked": "2026-10-25T12:26:16+00:00"
+ "gholam_checked": "2026-10-25T12:26:16+00:00",
+ "ai": {
+  "title": "مدل Limite 1B از Paradigma: هوش ریاضی سریع با یک میلیارد پارامتر",
+  "short": "Limite 1B از Paradigma",
+  "topics": [],
+  "type": "ابزار و محصول",
+  "model": "qwen3.5-9b-q4_k_m",
+  "v": 2,
+  "src": "6f37b78722b4"
+ }
 }

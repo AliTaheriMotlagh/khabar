@@ -72,5 +72,14 @@
   "tags": []
  },
  "updated": "2026-10-25T12:26:25+00:00",
- "gholam_checked": "2026-10-25T12:26:25+00:00"
+ "gholam_checked": "2026-10-25T12:26:25+00:00",
+ "ai": {
+  "title": "نتایج JevBench: مدل typesafeai با ۷۵٫۳ امتیاز صدر جدول را حفظ کرد",
+  "short": "JevBench: برنده typesafeai",
+  "topics": [],
+  "type": "پژوهش و مقاله",
+  "model": "qwen3.5-9b-q4_k_m",
+  "v": 2,
+  "src": "6ee0046edf6e"
+ }
 }

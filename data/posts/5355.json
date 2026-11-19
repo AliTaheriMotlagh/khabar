@@ -50,5 +50,16 @@
   "tags": []
  },
  "updated": "2026-10-25T12:26:37+00:00",
- "gholam_checked": "2026-10-25T12:26:37+00:00"
+ "gholam_checked": "2026-10-25T12:26:37+00:00",
+ "ai": {
+  "title": "PrismML مدل Ternary Bonsai 2 را با حجم ۵.۹ گیگابایت و بازدهی ۹۸.۲ درصدی منتشر کرد",
+  "short": "مدل Ternary Bonsai 2",
+  "topics": [
+   "متن‌باز"
+  ],
+  "type": "ابزار و محصول",
+  "model": "qwen3.5-9b-q4_k_m",
+  "v": 2,
+  "src": "4a3899aa9242"
+ }
 }

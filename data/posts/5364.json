@@ -49,5 +49,18 @@
   ]
  },
  "updated": "2026-10-25T12:26:32+00:00",
- "gholam_checked": "2026-10-25T12:26:32+00:00"
+ "gholam_checked": "2026-10-25T12:26:32+00:00",
+ "ai": {
+  "title": "سه کاربر با Claude و Codex به توکن‌های OpenAI دستبرد زدند",
+  "short": "هک OpenAI با Claude",
+  "topics": [
+   "آنتروپیک",
+   "اوپن‌ای‌آی",
+   "امنیت"
+  ],
+  "type": "خبر",
+  "model": "qwen3.5-9b-q4_k_m",
+  "v": 2,
+  "src": "8e41a24b1fdc"
+ }
 }
