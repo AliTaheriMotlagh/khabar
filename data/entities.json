@@ -323,6 +323,12 @@
    "name_en": "Nasdaq",
    "name_fa": "نزدک",
    "kind": "company"
+  },
+  {
+   "slug": "sec",
+   "name_en": "SEC",
+   "name_fa": "کمیسیون بورس و اوراق بهادار آمریکا",
+   "kind": "company"
   }
  ]
 }

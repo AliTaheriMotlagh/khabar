@@ -74,7 +74,7 @@
   ],
   "type": "خبر",
   "model": "qwen3.5-9b-q4_k_m",
-  "v": 1,
+  "v": 2,
   "src": "a9ec1d3789f0",
   "x": {
    "importance": 2,
