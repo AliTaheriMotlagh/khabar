@@ -353,6 +353,18 @@
    "name_en": "Y Combinator",
    "name_fa": "ای‌سی‌آی‌تی‌ان",
    "kind": "company"
+  },
+  {
+   "slug": "chatgpt-for-accounting",
+   "name_en": "ChatGPT for Accounting",
+   "name_fa": "چت‌جی‌پی‌تی برای حسابداری",
+   "kind": "product"
+  },
+  {
+   "slug": "xero",
+   "name_en": "Xero",
+   "name_fa": "زرو",
+   "kind": "product"
   }
  ]
 }
