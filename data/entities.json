@@ -437,6 +437,30 @@
    "name_en": "GPT-6 Astra",
    "name_fa": "GPT-6 استرا",
    "kind": "model"
+  },
+  {
+   "slug": "inworld",
+   "name_en": "Inworld",
+   "name_fa": "این‌ورلد",
+   "kind": "company"
+  },
+  {
+   "slug": "voice-isolator",
+   "name_en": "Voice Isolator",
+   "name_fa": "ویس آیزولاتور",
+   "kind": "model"
+  },
+  {
+   "slug": "sava",
+   "name_en": "SAVA",
+   "name_fa": "ساوا",
+   "kind": "model"
+  },
+  {
+   "slug": "tts-2",
+   "name_en": "TTS-2",
+   "name_fa": "تی‌تی‌اس-۲",
+   "kind": "model"
   }
  ]
 }

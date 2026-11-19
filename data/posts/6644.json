@@ -1,0 +1,165 @@
+{
+ "id": 6644,
+ "url": "https://t.me/dlmehr/6644",
+ "date": "2026-11-19T16:35:26+00:00",
+ "text": "https://fxtwitter.com/inworld/status/2123120546908926300?a=mnooQ7_o2e501Oa8IYQ&s=52",
+ "forwarded_from": null,
+ "digest": false,
+ "hash": "4b6b7f8f3d1a",
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/inworld/status/2123120546908926300?a=mnooQ7_o2e501Oa8IYQ&s=52",
+  "site": "FxTwitter",
+  "title": "Inworld AI (@inworld)",
+  "description": "Today we’re open-sourcing Inworld's Voice Isolator and SAVA (Semantic-Acoustic Voice Activity) models, and publishing the technical report behind Realtime TTS-2.\n1/ Voice Isolator: preserve the speaker’s voice.\nIt removes background chatter, music, and…",
+  "image": null
+ },
+ "gholam": {
+  "text": "رفیق، شرکت Inworld اعلام کرده که دو مدل صوتی Voice Isolator و SAVA رو با کد و وزن‌هاشون تحت لایسنس Apache 2.0 متن‌باز کرده تا حتی برای محصولات تجاری هم قابل استفاده باشن، و گزارش فنی مدل TTS-2 رو هم منتشر کرده. 🎙️\n\n• مدل Voice Isolator که هم نسخه‌ی آفلاین داره و هم لحظه‌ای، سر و صدا و موسیقی پس‌زمینه رو با کیفیت ۴۸ کیلوهرتز حذف می‌کنه ولی خنده، نفس و لحن اصلی گوینده رو نگه می‌داره؛ البته به گفته‌ی خودشون فعلاً فقط نویزگیری می‌کنه و کار بازسازی صدا انجام نمی‌ده.\n• مدل SAVA هم صدا و هم معنی حرف رو می‌سنجه تا سیستم بفهمه طرف کی حرفش تموم شده و مثل یه شنونده‌ی عجول وسط جمله‌اش نپره؛ توی آزمایش‌های خود شرکت روی جلسات واقعی، پایان صحبت رو با میانه‌ی ۷۱ میلی‌ثانیه تشخیص داده (در برابر ۲۱۰ میلی‌ثانیه برای مدل متن‌باز دیگه‌ای که تست کردن) و روی یه ترد پردازنده‌ی لپ‌تاپ هم اجرا می‌شه.\n• گزارش فنی TTS-2 روش آموزش، حفظ یه صدای مرجع توی زبان‌های مختلف و درس‌هایی که از شکست‌های مسیر توسعه گرفتن رو توضیح می‌ده؛ توی صفحه‌ی متن‌بازشون هم کد آموزش TTS-1 و یه ابزار ارزیابی آفلاین TTS با لایسنس MIT قرار داده شده.\n\nبه گفته‌ی این شرکت، کدها روی گیت‌هاب و وزن مدل‌ها بدون نیاز به ثبت‌نام روی هاگینگ‌فیس در دسترسه تا توسعه‌دهنده‌ها بتونن روی صدای واقعی پروژه‌هاشون تستشون کنن.",
+  "date": "2026-11-19T16:35:57+00:00"
+ },
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/inworld/status/2123120546908926300",
+   "domain": "x.com",
+   "author": {
+    "name": "Inworld AI",
+    "handle": "inworld",
+    "avatar": "https://pbs.twimg.com/profile_images/1937781707283005441/JfYhihdq_200x200.jpg"
+   },
+   "text": "Today we’re open-sourcing Inworld's Voice Isolator and SAVA (Semantic-Acoustic Voice Activity) models, and publishing the technical report behind Realtime TTS-2.\n\n1/ Voice Isolator: preserve the speaker’s voice.\n\nIt removes background chatter, music, and noise while retaining the laughs, breaths, and character of the original recording. It works at 48 kHz, with an offline model for recordings and a realtime model that streams with 20 ms of lookahead.\n\n2/ SAVA: give people room to finish their thought.\n\nOur Semantic-Acoustic Voice Activity model uses both the sound and meaning of speech to detect when someone is speaking and when their turn is complete. It already runs in our voice products and fits on a single laptop CPU thread. In our tests on real meeting recordings, it detected completed turns in a median of 71 ms, compared with 210 ms for the open-source model we tested against.\n\n3/ TTS-2 technical report: share how we built the voice on the other end.\n\nWe explain how we trained TTS-2 to follow instructions about delivery, use the same reference voice across languages, and generate streaming speech. We also cover the work behind Flash’s faster, more efficient serving, with training methods, evaluation results, and lessons from failures during development.\n\nVoice Isolator and SAVA include code and model weights under Apache 2.0.\n\nExplore the releases and try them on your own audio here: https://inworld.ai/open-source",
+   "date": 1795026358,
+   "media": [
+    {
+     "type": "video",
+     "src": "https://video.twimg.com/ext_tw_video/2123120491275636736/pu/vid/avc1/1280x720/vsA-zpMTIeh2WXWs.mp4?tag=12",
+     "poster": "https://pbs.twimg.com/ext_tw_video_thumb/2123120491275636736/pu/img/mK-lqBdUi6aGQn8a.jpg",
+     "ratio": 0.5625,
+     "duration": 33.1,
+     "gif": false
+    }
+   ],
+   "links": [
+    "https://inworld.ai/open-source"
+   ]
+  },
+  {
+   "kind": "link",
+   "url": "https://inworld.ai/open-source",
+   "domain": "inworld.ai",
+   "title": "Open source from Inworld",
+   "description": "Open models and code from Inworld. Voice Isolator and SAVA ship with code and weights under Apache 2.0, free to run, fine-tune and use commercially.",
+   "image": "https://inworld.ai/opengraph-image.jpg?opengraph-image.3etui4_c_jrz1.jpg",
+   "site": "inworld.ai"
+  }
+ ],
+ "article": {
+  "title": "شرکت Inworld اعلام کرده که دو مدل صوتی Voice Isolator و SAVA رو با کد و وزن‌هاشون تحت لایسنس Apache 2.0 متن‌باز کرده تا حتی برای محصولات تجاری هم قابل استفاده باشن، و گزارش فنی مدل TTS-2 رو هم منتشر کرده",
+  "source_title": "Today we’re open-sourcing Inworld's Voice Isolator and SAVA (Semantic-Acoustic Voice Activity) models, and publishing the technical report…",
+  "body": [
+   "شرکت Inworld اعلام کرده که دو مدل صوتی Voice Isolator و SAVA رو با کد و وزن‌هاشون تحت لایسنس Apache 2.0 متن‌باز کرده تا حتی برای محصولات تجاری هم قابل استفاده باشن، و گزارش فنی مدل TTS-2 رو هم منتشر کرده. 🎙️",
+   "• مدل Voice Isolator که هم نسخه‌ی آفلاین داره و هم لحظه‌ای، سر و صدا و موسیقی پس‌زمینه رو با کیفیت ۴۸ کیلوهرتز حذف می‌کنه ولی خنده، نفس و لحن اصلی گوینده رو نگه می‌داره؛ البته به گفته‌ی خودشون فعلاً فقط نویزگیری می‌کنه و کار بازسازی صدا انجام نمی‌ده.",
+   "• مدل SAVA هم صدا و هم معنی حرف رو می‌سنجه تا سیستم بفهمه طرف کی حرفش تموم شده و مثل یه شنونده‌ی عجول وسط جمله‌اش نپره؛ توی آزمایش‌های خود شرکت روی جلسات واقعی، پایان صحبت رو با میانه‌ی ۷۱ میلی‌ثانیه تشخیص داده (در برابر ۲۱۰ میلی‌ثانیه برای مدل متن‌باز دیگه‌ای که تست کردن) و روی یه ترد پردازنده‌ی لپ‌تاپ هم اجرا می‌شه.",
+   "• گزارش فنی TTS-2 روش آموزش، حفظ یه صدای مرجع توی زبان‌های مختلف و درس‌هایی که از شکست‌های مسیر توسعه گرفتن رو توضیح می‌ده؛ توی صفحه‌ی متن‌بازشون هم کد آموزش TTS-1 و یه ابزار ارزیابی آفلاین TTS با لایسنس MIT قرار داده شده."
+  ],
+  "why": "به گفته‌ی این شرکت، کدها روی گیت‌هاب و وزن مدل‌ها بدون نیاز به ثبت‌نام روی هاگینگ‌فیس در دسترسه تا توسعه‌دهنده‌ها بتونن روی صدای واقعی پروژه‌هاشون تستشون کنن.",
+  "why_label": "حرف آخر",
+  "tags": [
+   "صدا و موسیقی",
+   "متن‌باز"
+  ]
+ },
+ "updated": "2026-11-19T16:42:43+00:00",
+ "ai": {
+  "failed": true,
+  "model": "qwen3.5-9b-q4_k_m",
+  "v": 2,
+  "src": "64a67789cf00",
+  "x": {
+   "importance": 4,
+   "entities": [
+    {
+     "name_en": "Inworld",
+     "name_fa": "این‌ورلد",
+     "kind": "company"
+    },
+    {
+     "name_en": "Voice Isolator",
+     "name_fa": "ویس آیزولاتور",
+     "kind": "model"
+    },
+    {
+     "name_en": "SAVA",
+     "name_fa": "ساوا",
+     "kind": "model"
+    },
+    {
+     "name_en": "TTS-2",
+     "name_fa": "تی‌تی‌اس-۲",
+     "kind": "model"
+    }
+   ],
+   "terms": [
+    {
+     "term": "لایسنس Apache 2.0",
+     "def": "مجوزی متن‌باز که اجازه استفاده تجاری، تغییر و توزیع کد را با ذکر نام سازنده می‌دهد."
+    },
+    {
+     "term": "کیلوهرتز",
+     "def": "واحد اندازه‌گیری فرکانس که نشان‌دهنده تعداد نوسانات در ثانیه است و در کیفیت صدا کاربرد دارد."
+    },
+    {
+     "term": "شنونده‌ی عجول",
+     "def": "سیستمی که قبل از اتمام صحبت طرف مقابل، پاسخ خود را ارسال می‌کند و باعث قطع شدن مکالمه می‌شود."
+    },
+    {
+     "term": "هاگینگ‌فیس",
+     "def": "پلتفرمی برای اشتراک‌گذاری، آموزش و اجرای مدل‌های هوش مصنوعی که امکان دسترسی به وزن‌های مدل را فراهم می‌کند."
+    }
+   ],
+   "simple": "شرکت Inworld دو مدل صوتی جدید را رایگان و متن‌باز کرده است. یکی نویز و موسیقی را از صدا حذف می‌کند و دیگری تشخیص می‌دهد که کی صحبت تمام شده تا مکالمه طبیعی‌تر باشد.",
+   "quiz": {
+    "q": "مدل SAVA چه کاری انجام می‌دهد؟",
+    "options": [
+     "صدای نویز و موسیقی را حذف می‌کند",
+     "تشخیص پایان صحبت را برای مکالمه طبیعی‌تر انجام می‌دهد",
+     "صدای انسان را شبیه‌سازی می‌کند"
+    ],
+    "answer": 1
+   },
+   "video": {
+    "hook": "مدل‌های صوتی جدید Inworld حالا رایگان و متن‌باز شدند",
+    "points": [
+     "مدل Voice Isolator نویز و موسیقی را حذف کرده و لحن گوینده را حفظ می‌کند",
+     "مدل SAVA تشخیص می‌دهد کی صحبت تمام شده تا مکالمه طبیعی‌تر شود",
+     "گزارش فنی TTS-2 و ابزارهای ارزیابی آن نیز منتشر شده‌اند"
+    ],
+    "why": "این مدل‌ها به توسعه‌دهندگان اجازه می‌دهند بدون هزینه، کیفیت مکالمات صوتی محصولات خود را بالا ببرند."
+   },
+   "share": "Inworld دو مدل صوتی Voice Isolator و SAVA را متن‌باز کرد.\nحذف نویز و تشخیص دقیق پایان مکالمه.\n#هوش_مصنوعی #متن_باز",
+   "status": "رسمی",
+   "models": [
+    {
+     "name": "Voice Isolator",
+     "maker": "این‌ورلد",
+     "scores": []
+    },
+    {
+     "name": "SAVA",
+     "maker": "این‌ورلد",
+     "scores": []
+    },
+    {
+     "name": "TTS-2",
+     "maker": "این‌ورلد",
+     "scores": []
+    }
+   ],
+   "events": [],
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 2,
+   "src": "2f7f50aa87cf"
+  }
+ }
+}
