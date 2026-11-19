@@ -64,5 +64,16 @@
    "کوانتوم"
   ]
  },
- "updated": "2026-10-29T10:50:58+00:00"
+ "updated": "2026-10-29T10:50:58+00:00",
+ "ai": {
+  "title": "Physical Superintelligence با ۵۸ میلیون دلار، ۵ مسئله کوانتومی را حل کرد",
+  "short": "Physical Superintelligence",
+  "topics": [
+   "کوانتوم"
+  ],
+  "type": "خبر",
+  "model": "qwen3.5-9b-q4_k_m",
+  "v": 2,
+  "src": "4f2cd6d113d1"
+ }
 }

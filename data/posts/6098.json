@@ -51,5 +51,16 @@
    "چین"
   ]
  },
- "updated": "2026-10-27T19:26:42+00:00"
+ "updated": "2026-10-27T19:26:42+00:00",
+ "ai": {
+  "title": "مدل Kimi K3.1 Pro شرکت Moonshot با رتبه یک در بنچ‌مارک Benchmaxxing",
+  "short": "Kimi K3.1 Pro رتبه یک شد",
+  "topics": [
+   "چین"
+  ],
+  "type": "پژوهش و مقاله",
+  "model": "qwen3.5-9b-q4_k_m",
+  "v": 2,
+  "src": "0a286363eb05"
+ }
 }

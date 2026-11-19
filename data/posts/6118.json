@@ -55,5 +55,16 @@
    "کدنویسی"
   ]
  },
- "updated": "2026-10-26T17:17:06+00:00"
+ "updated": "2026-10-26T17:17:06+00:00",
+ "ai": {
+  "title": "Cognition با Devin Security وارد عصر تاریک امنیت سایبری شد",
+  "short": "Devin Security آمد",
+  "topics": [
+   "امنیت"
+  ],
+  "type": "ابزار و محصول",
+  "model": "qwen3.5-9b-q4_k_m",
+  "v": 2,
+  "src": "100a6bdd1f73"
+ }
 }
