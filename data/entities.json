@@ -539,6 +539,12 @@
    "name_en": "332G",
    "name_fa": "مدل 332G",
    "kind": "product"
+  },
+  {
+   "slug": "sarah-wang",
+   "name_en": "Sarah Wang",
+   "name_fa": "سارا وانگ",
+   "kind": "person"
   }
  ]
 }
