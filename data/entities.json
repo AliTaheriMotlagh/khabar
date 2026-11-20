@@ -2585,6 +2585,210 @@
    "name_en": "PhysX",
    "name_fa": "فیز ایکس",
    "kind": "product"
+  },
+  {
+   "slug": "caliper-research",
+   "name_en": "Caliper Research",
+   "name_fa": "کالپر ریسرچ",
+   "kind": "company"
+  },
+  {
+   "slug": "supermicro",
+   "name_en": "Supermicro",
+   "name_fa": "سوپرمیکرو",
+   "kind": "company"
+  },
+  {
+   "slug": "tpu-8tx",
+   "name_en": "TPU 8tx",
+   "name_fa": "تراشه TPU 8tx",
+   "kind": "product"
+  },
+  {
+   "slug": "amin-vahdat",
+   "name_en": "Amin Vahdat",
+   "name_fa": "امین وحدت",
+   "kind": "person"
+  },
+  {
+   "slug": "boston-dynamics",
+   "name_en": "Boston Dynamics",
+   "name_fa": "بوستون داینامیکس",
+   "kind": "company"
+  },
+  {
+   "slug": "atlas",
+   "name_en": "Atlas",
+   "name_fa": "اتلس",
+   "kind": "product"
+  },
+  {
+   "slug": "fable-55",
+   "name_en": "Fable 5.5",
+   "name_fa": "فبل ۵.۵",
+   "kind": "product"
+  },
+  {
+   "slug": "naceai",
+   "name_en": "NaceAI",
+   "name_fa": "نیس‌آی‌آی",
+   "kind": "company"
+  },
+  {
+   "slug": "drex-max",
+   "name_en": "Drex Max",
+   "name_fa": "درکس مکس",
+   "kind": "model"
+  },
+  {
+   "slug": "gpt-6",
+   "name_en": "GPT-6",
+   "name_fa": "جی‌پی‌تی-۶",
+   "kind": "model"
+  },
+  {
+   "slug": "duolingo",
+   "name_en": "Duolingo",
+   "name_fa": "دولینگو",
+   "kind": "company"
+  },
+  {
+   "slug": "luis-von-ahn",
+   "name_en": "Luis von Ahn",
+   "name_fa": "لوئیس فون آن",
+   "kind": "person"
+  },
+  {
+   "slug": "open-weight-models",
+   "name_en": "Open-weight models",
+   "name_fa": "مدل‌های متن‌باز",
+   "kind": "model"
+  },
+  {
+   "slug": "theseus-robotics",
+   "name_en": "Theseus Robotics",
+   "name_fa": "تسیوس روبوتیکس",
+   "kind": "company"
+  },
+  {
+   "slug": "hark",
+   "name_en": "Hark",
+   "name_fa": "هارک",
+   "kind": "product"
+  },
+  {
+   "slug": "bert-edgell",
+   "name_en": "Bert Edgell",
+   "name_fa": "برت ادکاک",
+   "kind": "person"
+  },
+  {
+   "slug": "opentable",
+   "name_en": "OpenTable",
+   "name_fa": "اپن‌تبل",
+   "kind": "company"
+  },
+  {
+   "slug": "jittests",
+   "name_en": "JiTTests",
+   "name_fa": "جی‌آی‌تی‌تستس",
+   "kind": "product"
+  },
+  {
+   "slug": "elevenlabs",
+   "name_en": "ElevenLabs",
+   "name_fa": "الون‌لابز",
+   "kind": "company"
+  },
+  {
+   "slug": "elevenagents-campaign-manager",
+   "name_en": "ElevenAgents Campaign Manager",
+   "name_fa": "الون‌ایجنتز کمپین منیجر",
+   "kind": "product"
+  },
+  {
+   "slug": "epic-games",
+   "name_en": "Epic Games",
+   "name_fa": "اپیک گیمز",
+   "kind": "company"
+  },
+  {
+   "slug": "unreal-engine-59",
+   "name_en": "Unreal Engine 5.9",
+   "name_fa": "آنریل انجین ۵.۹",
+   "kind": "product"
+  },
+  {
+   "slug": "sam-pasopoulak",
+   "name_en": "Sam Pasopoulak",
+   "name_fa": "سم پاسوپالاک",
+   "kind": "person"
+  },
+  {
+   "slug": "steve",
+   "name_en": "Steve",
+   "name_fa": "استیو",
+   "kind": "product"
+  },
+  {
+   "slug": "se3labs",
+   "name_en": "se3labs",
+   "name_fa": "اسی‌لی‌بلز",
+   "kind": "company"
+  },
+  {
+   "slug": "mark-zuckerberg",
+   "name_en": "Mark Zuckerberg",
+   "name_fa": "مارک زاکربرگ",
+   "kind": "person"
+  },
+  {
+   "slug": "muse-ember",
+   "name_en": "Muse Ember",
+   "name_fa": "موز امبر",
+   "kind": "model"
+  },
+  {
+   "slug": "meta-model-api",
+   "name_en": "Meta Model API",
+   "name_fa": "متا مدل ای‌پی‌آی",
+   "kind": "product"
+  },
+  {
+   "slug": "nuance-ai",
+   "name_en": "Nuance AI",
+   "name_fa": "نویانس ای‌آی",
+   "kind": "company"
+  },
+  {
+   "slug": "claude-mythos-52",
+   "name_en": "Claude Mythos 5.2",
+   "name_fa": "کلود مایثوس ۵.۲",
+   "kind": "model"
+  },
+  {
+   "slug": "modretro",
+   "name_en": "ModRetro",
+   "name_fa": "مدورتر",
+   "kind": "product"
+  },
+  {
+   "slug": "supply-co",
+   "name_en": "Supply Co",
+   "name_fa": "سپلای کو",
+   "kind": "company"
+  },
+  {
+   "slug": "i14labs",
+   "name_en": "i14labs",
+   "name_fa": "ای‌ای‌اف‌ال‌بی‌اس",
+   "kind": "company"
+  },
+  {
+   "slug": "sugar-glider",
+   "name_en": "Sugar Glider",
+   "name_fa": "شگر گلیدر",
+   "kind": "model"
   }
  ]
 }
