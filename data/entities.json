@@ -1181,6 +1181,174 @@
    "name_en": "Department of Justice",
    "name_fa": "وزارت دادگستری آمریکا",
    "kind": "company"
+  },
+  {
+   "slug": "meta",
+   "name_en": "Meta",
+   "name_fa": "متا",
+   "kind": "company"
+  },
+  {
+   "slug": "muse-charm",
+   "name_en": "Muse Charm",
+   "name_fa": "موز چرم",
+   "kind": "product"
+  },
+  {
+   "slug": "noeri",
+   "name_en": "Noeri",
+   "name_fa": "نوئری",
+   "kind": "company"
+  },
+  {
+   "slug": "cisco",
+   "name_en": "Cisco",
+   "name_fa": "سیسکو",
+   "kind": "company"
+  },
+  {
+   "slug": "snowflake",
+   "name_en": "Snowflake",
+   "name_fa": "اسنوفلیک",
+   "kind": "company"
+  },
+  {
+   "slug": "mondo-ventures",
+   "name_en": "Mondo Ventures",
+   "name_fa": "منلو ونچرز",
+   "kind": "company"
+  },
+  {
+   "slug": "jae-young-choi",
+   "name_en": "Jae Young Choi",
+   "name_fa": "یو جین چوی",
+   "kind": "person"
+  },
+  {
+   "slug": "audible",
+   "name_en": "Audible",
+   "name_fa": "آدیبل",
+   "kind": "company"
+  },
+  {
+   "slug": "openevidence",
+   "name_en": "OpenEvidence",
+   "name_fa": "اپن‌ایویدنس",
+   "kind": "company"
+  },
+  {
+   "slug": "ios-26",
+   "name_en": "iOS 26",
+   "name_fa": "آی‌او‌اس ۲۶",
+   "kind": "product"
+  },
+  {
+   "slug": "perplexity",
+   "name_en": "Perplexity",
+   "name_fa": "پرپلکسیتی",
+   "kind": "company"
+  },
+  {
+   "slug": "perplexity-frontier-research",
+   "name_en": "Perplexity Frontier Research",
+   "name_fa": "پروژه فرانتیر ریسرچ پرپلکسیتی",
+   "kind": "product"
+  },
+  {
+   "slug": "patrick-wendel",
+   "name_en": "Patrick Wendel",
+   "name_fa": "پاتریک وندل",
+   "kind": "person"
+  },
+  {
+   "slug": "deepseek",
+   "name_en": "DeepSeek",
+   "name_fa": "دیپ‌سیک",
+   "kind": "model"
+  },
+  {
+   "slug": "unity-gateway",
+   "name_en": "Unity Gateway",
+   "name_fa": "یونیتی گیت‌وی",
+   "kind": "product"
+  },
+  {
+   "slug": "nemotron-labs-sigma",
+   "name_en": "Nemotron-Labs-Sigma",
+   "name_fa": "نموترون-لابز-سیگما",
+   "kind": "model"
+  },
+  {
+   "slug": "nemotron-labs",
+   "name_en": "Nemotron-Labs",
+   "name_fa": "نموترون-لابز",
+   "kind": "company"
+  },
+  {
+   "slug": "paul-cukier",
+   "name_en": "Paul Cukier",
+   "name_fa": "پل کراولی",
+   "kind": "person"
+  },
+  {
+   "slug": "aaron-silverbrook",
+   "name_en": "Aaron Silverbrook",
+   "name_fa": "آرون سیلوربروک",
+   "kind": "person"
+  },
+  {
+   "slug": "rezi-kempel",
+   "name_en": "Rezi Kempel",
+   "name_fa": "رزى كمپل",
+   "kind": "person"
+  },
+  {
+   "slug": "sonia-joseph",
+   "name_en": "Sonia Joseph",
+   "name_fa": "سونيا جوزف",
+   "kind": "person"
+  },
+  {
+   "slug": "john-ventworth",
+   "name_en": "John Ventworth",
+   "name_fa": "جان ونتورث",
+   "kind": "person"
+  },
+  {
+   "slug": "chase",
+   "name_en": "Chase",
+   "name_fa": "چیس",
+   "kind": "company"
+  },
+  {
+   "slug": "bank-of-america",
+   "name_en": "Bank of America",
+   "name_fa": "بنک آو آمریکا",
+   "kind": "company"
+  },
+  {
+   "slug": "wells-fargo",
+   "name_en": "Wells Fargo",
+   "name_fa": "ولز فارگو",
+   "kind": "company"
+  },
+  {
+   "slug": "capital-one",
+   "name_en": "Capital One",
+   "name_fa": "کپیتال وان",
+   "kind": "company"
+  },
+  {
+   "slug": "us-bank",
+   "name_en": "US Bank",
+   "name_fa": "یو‌اس بنک",
+   "kind": "company"
+  },
+  {
+   "slug": "zelle",
+   "name_en": "Zelle",
+   "name_fa": "زل",
+   "kind": "product"
   }
  ]
 }
