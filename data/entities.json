@@ -1349,6 +1349,180 @@
    "name_en": "Zelle",
    "name_fa": "زل",
    "kind": "product"
+  },
+  {
+   "slug": "tiny-voca",
+   "name_en": "tiny-voca",
+   "name_fa": "تاینی-وکا",
+   "kind": "model"
+  },
+  {
+   "slug": "n4ze3m",
+   "name_en": "n4ze3m",
+   "name_fa": "ان‌۴زی‌زم",
+   "kind": "person"
+  },
+  {
+   "slug": "empero",
+   "name_en": "Empero",
+   "name_fa": "امپرو",
+   "kind": "company"
+  },
+  {
+   "slug": "quark",
+   "name_en": "Quark",
+   "name_fa": "کوارک",
+   "kind": "model"
+  },
+  {
+   "slug": "financial-times",
+   "name_en": "Financial Times",
+   "name_fa": "فایننشال تایمز",
+   "kind": "company"
+  },
+  {
+   "slug": "bloomberg",
+   "name_en": "Bloomberg",
+   "name_fa": "بلومبرگ",
+   "kind": "company"
+  },
+  {
+   "slug": "hill",
+   "name_en": "Hill",
+   "name_fa": "هیل",
+   "kind": "company"
+  },
+  {
+   "slug": "unusual-whales",
+   "name_en": "Unusual Whales",
+   "name_fa": "آنسوال ولز",
+   "kind": "company"
+  },
+  {
+   "slug": "nathaniel-craig",
+   "name_en": "Nathaniel Craig",
+   "name_fa": "ناتانیل کریگ",
+   "kind": "person"
+  },
+  {
+   "slug": "standard-model",
+   "name_en": "Standard Model",
+   "name_fa": "مدل استاندارد",
+   "kind": "model"
+  },
+  {
+   "slug": "claude",
+   "name_en": "Claude",
+   "name_fa": "کلاد",
+   "kind": "product"
+  },
+  {
+   "slug": "alibaba",
+   "name_en": "Alibaba",
+   "name_fa": "علی‌بابا",
+   "kind": "company"
+  },
+  {
+   "slug": "qwen4-max",
+   "name_en": "Qwen4-Max",
+   "name_fa": "قوئن ۴-مکس",
+   "kind": "model"
+  },
+  {
+   "slug": "qwen38-max",
+   "name_en": "Qwen3.8-Max",
+   "name_fa": "قوئن ۳.۸-مکس",
+   "kind": "model"
+  },
+  {
+   "slug": "opus55",
+   "name_en": "Opus5.5",
+   "name_fa": "اپوس ۵.۵",
+   "kind": "model"
+  },
+  {
+   "slug": "kimi-k31",
+   "name_en": "Kimi K3.1",
+   "name_fa": "کیمی کی ۳.۱",
+   "kind": "model"
+  },
+  {
+   "slug": "code-arena",
+   "name_en": "Code Arena",
+   "name_fa": "کد آرنه",
+   "kind": "product"
+  },
+  {
+   "slug": "qwen",
+   "name_en": "Qwen",
+   "name_fa": "قوئن",
+   "kind": "company"
+  },
+  {
+   "slug": "apollo-research",
+   "name_en": "Apollo Research",
+   "name_fa": "آپولو ریسرچ",
+   "kind": "company"
+  },
+  {
+   "slug": "metr",
+   "name_en": "METR",
+   "name_fa": "ایم‌تر",
+   "kind": "company"
+  },
+  {
+   "slug": "transluceai",
+   "name_en": "TransluceAI",
+   "name_fa": "ترانسلوک‌ای‌آی",
+   "kind": "company"
+  },
+  {
+   "slug": "goodfireai",
+   "name_en": "GoodfireAI",
+   "name_fa": "گودفایر‌ای‌آی",
+   "kind": "company"
+  },
+  {
+   "slug": "opus-46",
+   "name_en": "Opus 4.6",
+   "name_fa": "اپوس ۴.۶",
+   "kind": "model"
+  },
+  {
+   "slug": "kurt-godel",
+   "name_en": "Kurt Gödel",
+   "name_fa": "کورت گودل",
+   "kind": "person"
+  },
+  {
+   "slug": "coq",
+   "name_en": "Coq",
+   "name_fa": "کوک",
+   "kind": "product"
+  },
+  {
+   "slug": "joel-david-hamkins",
+   "name_en": "Joel David Hamkins",
+   "name_fa": "جوئل دیوید همکینز",
+   "kind": "person"
+  },
+  {
+   "slug": "ncmec",
+   "name_en": "NCMEC",
+   "name_fa": "مرکز ملی کودکان گمشده و استثمارشده",
+   "kind": "company"
+  },
+  {
+   "slug": "tech-coalition",
+   "name_en": "Tech Coalition",
+   "name_fa": "تک کویلیشن",
+   "kind": "company"
+  },
+  {
+   "slug": "roost",
+   "name_en": "ROOST",
+   "name_fa": "روست",
+   "kind": "company"
   }
  ]
 }
