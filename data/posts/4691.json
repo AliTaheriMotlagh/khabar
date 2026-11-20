@@ -35,5 +35,14 @@
   "tags": []
  },
  "updated": "2026-10-25T12:30:32+00:00",
- "gholam_checked": "2026-10-25T12:30:32+00:00"
+ "gholam_checked": "2026-10-25T12:30:32+00:00",
+ "ai": {
+  "title": "مدل Prodigy Research مایکل وانگ در معاملات مالی از تریدرهای جین استریت بهتر عمل کرد",
+  "short": "Prodigy Research برتر شد",
+  "topics": [],
+  "type": "خبر",
+  "model": "qwen3.5-9b-q4_k_m",
+  "v": 2,
+  "src": "15ecda4a9792"
+ }
 }

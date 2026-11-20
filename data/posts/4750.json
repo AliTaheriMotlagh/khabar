@@ -53,5 +53,14 @@
   "tags": []
  },
  "updated": "2026-10-25T12:30:17+00:00",
- "gholam_checked": "2026-10-25T12:30:17+00:00"
+ "gholam_checked": "2026-10-25T12:30:17+00:00",
+ "ai": {
+  "title": "FLORA ابزار Fashion Studio را برای مدیریت کامل فرآیند مد معرفی کرد",
+  "short": "Fashion Studio از FLORA",
+  "topics": [],
+  "type": "ابزار و محصول",
+  "model": "qwen3.5-9b-q4_k_m",
+  "v": 2,
+  "src": "1ab5dd8d952b"
+ }
 }

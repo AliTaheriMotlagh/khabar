@@ -53,5 +53,17 @@
   ]
  },
  "updated": "2026-10-25T12:30:35+00:00",
- "gholam_checked": "2026-10-25T12:30:35+00:00"
+ "gholam_checked": "2026-10-25T12:30:35+00:00",
+ "ai": {
+  "title": "چارچوب Pi Agent در تست‌های DeepSeek V4 Flash برتری و کم‌هزینه‌ترین بود",
+  "short": "پیروزی Pi Agent در DeepSeek",
+  "topics": [
+   "چین",
+   "ایجنت"
+  ],
+  "type": "پژوهش و مقاله",
+  "model": "qwen3.5-9b-q4_k_m",
+  "v": 2,
+  "src": "83c33e21893f"
+ }
 }
