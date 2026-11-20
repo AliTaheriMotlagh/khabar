@@ -52,6 +52,16 @@
  "updated": "2026-10-25T12:30:11+00:00",
  "gholam_checked": "2026-10-25T12:30:11+00:00",
  "ai": {
+  "title": "مدل GPT-5.6 Luna Max در آزمون DeepSWE عملکرد و هزینه بهتری نسبت به Sonnet و Gemini دارد",
+  "short": "Luna Max برتر از Sonnet",
+  "topics": [
+   "اوپن‌ای‌آی",
+   "گوگل"
+  ],
+  "type": "پژوهش و مقاله",
+  "model": "qwen3.5-9b-q4_k_m",
+  "v": 2,
+  "src": "1e5ce3748b5d",
   "story": {
    "body": [
     "مدل هوش مصنوعی GPT-5.6 Luna Max در آزمون DeepSWE عملکردی بهتر از Sonnet 5 Max از خود نشان داد.",
