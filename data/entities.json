@@ -2969,6 +2969,144 @@
    "name_en": "Reinforcement Learning",
    "name_fa": "یادگیری تقویتی",
    "kind": "model"
+  },
+  {
+   "slug": "julius-ai",
+   "name_en": "Julius AI",
+   "name_fa": "یولیوس ای‌آی",
+   "kind": "company"
+  },
+  {
+   "slug": "deepfinance",
+   "name_en": "DeepFinance",
+   "name_fa": "دیپ‌فایننس",
+   "kind": "product"
+  },
+  {
+   "slug": "evercore",
+   "name_en": "Evercore",
+   "name_fa": "ایورکور",
+   "kind": "company"
+  },
+  {
+   "slug": "jp-morgan-2",
+   "name_en": "JP Morgan",
+   "name_fa": "جی‌پی مورگان",
+   "kind": "company"
+  },
+  {
+   "slug": "andy-konwinski",
+   "name_en": "Andy Konwinski",
+   "name_fa": "اندی کانوینسکی",
+   "kind": "person"
+  },
+  {
+   "slug": "moonshots-one",
+   "name_en": "Moonshots // ONE",
+   "name_fa": "مونساتس وان",
+   "kind": "product"
+  },
+  {
+   "slug": "john-hennessy",
+   "name_en": "John Hennessy",
+   "name_fa": "جان هنسی",
+   "kind": "person"
+  },
+  {
+   "slug": "nsf",
+   "name_en": "NSF",
+   "name_fa": "بنیاد ملی علوم آمریکا",
+   "kind": "company"
+  },
+  {
+   "slug": "liquid-energy",
+   "name_en": "Liquid Energy",
+   "name_fa": "لیکید انرژی",
+   "kind": "company"
+  },
+  {
+   "slug": "nanodc",
+   "name_en": "NanoDC",
+   "name_fa": "نانو دی‌سی",
+   "kind": "product"
+  },
+  {
+   "slug": "baidu",
+   "name_en": "Baidu",
+   "name_fa": "بایدو",
+   "kind": "company"
+  },
+  {
+   "slug": "ernie-55-flash",
+   "name_en": "ERNIE-5.5-Flash",
+   "name_fa": "رنی ۵.۵-فلاش",
+   "kind": "model"
+  },
+  {
+   "slug": "deepseek-v4-flash",
+   "name_en": "DeepSeek-V4-Flash",
+   "name_fa": "دیپ‌سیک-۴-فلاش",
+   "kind": "model"
+  },
+  {
+   "slug": "lionbio",
+   "name_en": "LionBio",
+   "name_fa": "لایون‌بیو",
+   "kind": "company"
+  },
+  {
+   "slug": "eli-lilly",
+   "name_en": "Eli Lilly",
+   "name_fa": "الی‌لیلی",
+   "kind": "company"
+  },
+  {
+   "slug": "embodied-ai",
+   "name_en": "Embodied AI",
+   "name_fa": "هوش مصنوعی تجسم‌یافته",
+   "kind": "model"
+  },
+  {
+   "slug": "physical-superintelligence",
+   "name_en": "Physical Superintelligence",
+   "name_fa": "فیزیکال سوپرینتلیجنس",
+   "kind": "company"
+  },
+  {
+   "slug": "claude-4",
+   "name_en": "Claude 4",
+   "name_fa": "کلود ۴",
+   "kind": "model"
+  },
+  {
+   "slug": "aaronson-ambainis-conjecture",
+   "name_en": "Aaronson-Ambainis conjecture",
+   "name_fa": "حدس آرونسون-آمبینیس",
+   "kind": "model"
+  },
+  {
+   "slug": "muse-wonder",
+   "name_en": "Muse Wonder",
+   "name_fa": "موز ووندر",
+   "kind": "model"
+  },
+  {
+   "slug": "meta-ai",
+   "name_en": "Meta AI",
+   "name_fa": "متا ای‌آی",
+   "kind": "product"
+  },
+  {
+   "slug": "vercel",
+   "name_en": "Vercel",
+   "name_fa": "ورسل",
+   "kind": "company"
+  },
+  {
+   "slug": "anthropic-science-blog",
+   "name_en": "Anthropic Science Blog",
+   "name_fa": "وبلاگ علمی آنتروپیک",
+   "kind": "product"
   }
  ]
 }
