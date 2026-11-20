@@ -827,6 +827,24 @@
    "name_en": "Grok Bot",
    "name_fa": "گرک بات",
    "kind": "product"
+  },
+  {
+   "slug": "mai-code-2",
+   "name_en": "MAI Code 2",
+   "name_fa": "مای کد ۲",
+   "kind": "model"
+  },
+  {
+   "slug": "code-2-flash",
+   "name_en": "Code 2 Flash",
+   "name_fa": "کد ۲ فلاش",
+   "kind": "model"
+  },
+  {
+   "slug": "github-copilot",
+   "name_en": "GitHub Copilot",
+   "name_fa": "گیت‌هاب کپی‌لوت",
+   "kind": "product"
   }
  ]
 }

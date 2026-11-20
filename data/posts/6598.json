@@ -65,6 +65,64 @@
   "type": "ابزار و محصول",
   "model": "qwen3.5-9b-q4_k_m",
   "v": 2,
-  "src": "4aba63a6b6b2"
+  "src": "4aba63a6b6b2",
+  "x": {
+   "importance": 2,
+   "entities": [
+    {
+     "name_en": "MAI Code 2",
+     "name_fa": "مای کد ۲",
+     "kind": "model"
+    },
+    {
+     "name_en": "Code 2 Flash",
+     "name_fa": "کد ۲ فلاش",
+     "kind": "model"
+    },
+    {
+     "name_en": "GitHub Copilot",
+     "name_fa": "گیت‌هاب کپی‌لوت",
+     "kind": "product"
+    }
+   ],
+   "terms": [],
+   "simple": "دو مدل جدید برای کدنویسی به نام‌های MAI Code 2 و Code 2 Flash معرفی شدند که می‌توانید آن‌ها را در GitHub Copilot تست کنید. یکی برای کارهای دقیق سازمانی و دیگری برای کارهای سریع و کم‌هزینه طراحی شده است.",
+   "quiz": {
+    "q": "کدام مدل برای کارهای روتین و پرحجم طراحی شده است؟",
+    "options": [
+     "MAI Code 2",
+     "Code 2 Flash",
+     "هر دو مدل با هم"
+    ],
+    "answer": 1
+   },
+   "video": {
+    "hook": "دو مدل جدید کدنویسی برای GitHub Copilot معرفی شدند",
+    "points": [
+     "مدل‌های MAI Code 2 و Code 2 Flash معرفی شدند",
+     "MAI Code 2 برای کارهای سازمانی دقیق طراحی شده",
+     "Code 2 Flash گزینه‌ای سریع و کم‌هزینه برای کارهای تکراری است"
+    ],
+    "why": "این مدل‌ها به توسعه‌دهندگان اجازه می‌دهند بر اساس نیاز خود، بین دقت بالا و سرعت و هزینه تعادل برقرار کنند."
+   },
+   "share": "دو مدل جدید کدنویسی برای GitHub Copilot معرفی شدند: MAI Code 2 و Code 2 Flash.\nیکی برای دقت سازمانی، دیگری برای سرعت و هزینه.\n#کدنویسی #هوش_مصنوعی",
+   "status": "گزارش",
+   "models": [
+    {
+     "name": "MAI Code 2",
+     "maker": "مای",
+     "scores": []
+    },
+    {
+     "name": "Code 2 Flash",
+     "maker": "مای",
+     "scores": []
+    }
+   ],
+   "events": [],
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 2,
+   "src": "e44611d34dd1"
+  }
  }
 }
