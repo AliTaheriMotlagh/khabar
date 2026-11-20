@@ -1,0 +1,143 @@
+{
+ "id": 6657,
+ "url": "https://t.me/dlmehr/6657",
+ "date": "2026-11-20T15:34:15+00:00",
+ "text": "https://fxtwitter.com/sciam/status/2123782587235655707?a=DNAETx6CunpaSlYDDGY&s=52",
+ "forwarded_from": null,
+ "digest": false,
+ "hash": "c44a0ab3cefa",
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/sciam/status/2123782587235655707?a=DNAETx6CunpaSlYDDGY&s=52",
+  "site": "FxTwitter · scientificamerican.com",
+  "title": "Scientific American (@sciam)",
+  "description": "BREAKING: A mathematician at Anthropic claims to have used the company's AI to solve the Riemann hypothesis, the most notorious open problem in all of math\nhttps://sciam.com/article/anthropic-mathematician-claims-to-prove-riemann-hypothesis-most-famous-problem…",
+  "image": "https://cdn4.telesco.pe/file/EOcg0HTsDgxqR2c_3HYcBuFecItbvplYFa03DHZPq8jaaf4nvAD_VFe6ysJqsskkRlicAFqN_SwoHrQhr1D73qQishJOuGViZBlyPSMP6ArBr3yuMUN1-yKw2dkgUlSRrKKe6rALJtLYUnu1Vf6eR0AlKr0XQX462VY-AoF_KvCNSAD4KBZaDzH5-Oo9owewiogRrBg5hrIxk_1kWjb--1Z4FoVNh7wD3KanEEHvDhANVHUAXczjmL4G_Tyb9HngWVmujTlPqgQNorCFXc-5p3a5MAKYR-K9Xo8K952QVi7YQTfGWzF2R0EY8Cfam_0z6PletvlRCvQ94CB-lP-LVw.jpg",
+  "small": true
+ },
+ "gholam": {
+  "text": "سلام رفقا! ما هنوز سر حساب‌کتابِ دنگِ کبابِ دورهمی ماشین‌حساب درمیاریم، ولی ساینتیفیک آمریکن خبر داده که «لونت آلپوگه»، ریاضی‌دان شرکت آنتروپیک، روز جمعه مدعی شده با کمک هوش مصنوعی «کلاد» تونسته «فرضیه ریمان» رو اثبات کنه؛ همون معمای ۱۶۷ ساله‌ای که سال ۱۸۵۹ درباره نظم پنهان اعداد اول مطرح شد و معروف‌ترین مسئله حل‌نشده ریاضی به حساب میاد. 🧮\n\n• آقای آلپوگه توی بیانیه‌اش گفته به نظرش با همکاری کلاد به اثباتی رسیده که حتی «فرضیه تعمیم‌یافته ریمان» رو هم تأیید می‌کنه و اون رو توی زبان برنامه‌نویسی «لین» (Lean) کدنویسی کرده که برای بررسی درستی منطقی اثبات‌ها به کار می‌ره.\n• البته ساینتیفیک آمریکن یادآوری کرده که این هنوز در حد ادعاست و ممکنه توی خودِ «لین» هم اشکالاتی پیش بیاد؛ بنابراین متخصص‌ها هنوز باید بررسی کنن که آیا فرضیه درست کدنویسی شده و اثبات واقعاً بی‌نقصه یا نه، هرچند ظاهراً نباید زمان زیادی ببره.\n• توی این گزارش اشاره شده که همین پژوهشگر ماه ژوئیه هم یک راه‌حل تولیدشده با کلاد برای «حدس ژاکوبین» منتشر کرده بود و در ماه اکتبر هم یکی از نتایج ریاضی OpenAI پیشرفت مهمی روی مسئله اعداد اول داشته.\n\nخودِ آلپوگه هم گفته طبیعیه بعضی ریاضی‌دان‌ها با از دست رفتنِ یکی از راهنماهای اصلی‌شون حسِ فقدان داشته باشن، اما به آینده کشفیات علمی خوش‌بین مونده؛ حالا باید صبر کرد و دید جامعه ریاضی مهر تأیید پای این اثبات می‌زنه یا نه.",
+  "date": "2026-11-20T15:34:46+00:00"
+ },
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/sciam/status/2123782587235655707",
+   "domain": "x.com",
+   "author": {
+    "name": "Scientific American",
+    "handle": "sciam",
+    "avatar": "https://pbs.twimg.com/profile_images/1704126231371771905/McZuDEgT_200x200.jpg"
+   },
+   "text": "BREAKING: A mathematician at Anthropic claims to have used the company's AI to solve the Riemann hypothesis, the most notorious open problem in all of math\n\nhttps://sciam.com/article/anthropic-mathematician-claims-to-prove-riemann-hypothesis-most-famous-problem-in-all-of-math/?utm_source=twitter&utm_medium=social&utm_campaign=buffer",
+   "date": 1795184201,
+   "media": [],
+   "links": [
+    "https://sciam.com/article/anthropic-mathematician-claims-to-prove-riemann-hypothesis-most-famous-problem-in-all-of-math/?utm_source=twitter&utm_medium=social&utm_campaign=buffer"
+   ]
+  },
+  {
+   "kind": "link",
+   "url": "https://www.scientificamerican.com/article/anthropic-mathematician-claims-to-prove-riemann-hypothesis-most-famous-problem-in-all-of-math/?utm_source=twitter&utm_medium=social&utm_campaign=buffer",
+   "domain": "scientificamerican.com",
+   "title": "Anthropic mathematician claims to prove Riemann hypothesis, most famous problem in all of math",
+   "description": "An AI-generated solution of the 167-year-old problem, long considered far out of reach to human mathematicians, would cap off the technology’s year-long conquest of math in spectacular fashion",
+   "image": "https://static.scientificamerican.com/dam/asset/cee10388-a264-4ba7-b944-7f0a8daf537d/riemann.jpg?m=1795183538.4&w=1200",
+   "site": "Scientific American"
+  }
+ ],
+ "article": {
+  "title": "ما هنوز سر حساب‌کتابِ دنگِ کبابِ دورهمی ماشین‌حساب درمیاریم، ولی ساینتیفیک آمریکن خبر داده که «لونت آلپوگه»، ریاضی‌دان شرکت آنتروپیک، روز جمعه مدعی شده با کمک هوش مصنوعی «کلاد» تونسته «فرضیه ریمان»…",
+  "source_title": "BREAKING: A mathematician at Anthropic claims to have used the company's AI to solve the Riemann hypothesis, the most notorious open…",
+  "body": [
+   "ما هنوز سر حساب‌کتابِ دنگِ کبابِ دورهمی ماشین‌حساب درمیاریم، ولی ساینتیفیک آمریکن خبر داده که «لونت آلپوگه»، ریاضی‌دان شرکت آنتروپیک، روز جمعه مدعی شده با کمک هوش مصنوعی «کلاد» تونسته «فرضیه ریمان» رو اثبات کنه؛ همون معمای ۱۶۷ ساله‌ای که سال ۱۸۵۹ درباره نظم پنهان اعداد اول مطرح شد و معروف‌ترین مسئله حل‌نشده ریاضی به حساب میاد. 🧮",
+   "• آقای آلپوگه توی بیانیه‌اش گفته به نظرش با همکاری کلاد به اثباتی رسیده که حتی «فرضیه تعمیم‌یافته ریمان» رو هم تأیید می‌کنه و اون رو توی زبان برنامه‌نویسی «لین» (Lean) کدنویسی کرده که برای بررسی درستی منطقی اثبات‌ها به کار می‌ره.",
+   "• البته ساینتیفیک آمریکن یادآوری کرده که این هنوز در حد ادعاست و ممکنه توی خودِ «لین» هم اشکالاتی پیش بیاد؛ بنابراین متخصص‌ها هنوز باید بررسی کنن که آیا فرضیه درست کدنویسی شده و اثبات واقعاً بی‌نقصه یا نه، هرچند ظاهراً نباید زمان زیادی ببره.",
+   "• توی این گزارش اشاره شده که همین پژوهشگر ماه ژوئیه هم یک راه‌حل تولیدشده با کلاد برای «حدس ژاکوبین» منتشر کرده بود و در ماه اکتبر هم یکی از نتایج ریاضی OpenAI پیشرفت مهمی روی مسئله اعداد اول داشته."
+  ],
+  "why": "خودِ آلپوگه هم گفته طبیعیه بعضی ریاضی‌دان‌ها با از دست رفتنِ یکی از راهنماهای اصلی‌شون حسِ فقدان داشته باشن، اما به آینده کشفیات علمی خوش‌بین مونده؛ حالا باید صبر کرد و دید جامعه ریاضی مهر تأیید پای این اثبات می‌زنه یا نه.",
+  "why_label": "حرف آخر",
+  "tags": [
+   "علم",
+   "آنتروپیک"
+  ]
+ },
+ "updated": "2026-11-20T15:38:36+00:00",
+ "ai": {
+  "title": "ریاضی‌دان آنتروپیک ادعا کرد کلاد فرضیه ریمان را اثبات کرد",
+  "short": "اثبات فرضیه ریمان با کلاد",
+  "topics": [
+   "آنتروپیک",
+   "علم"
+  ],
+  "type": "خبر",
+  "model": "qwen3.5-9b-q4_k_m",
+  "v": 2,
+  "src": "118f04fb736d",
+  "x": {
+   "importance": 4,
+   "entities": [
+    {
+     "name_en": "Anthropic",
+     "name_fa": "آنتروپیک",
+     "kind": "company"
+    },
+    {
+     "name_en": "Claude",
+     "name_fa": "کلاد",
+     "kind": "model"
+    },
+    {
+     "name_en": "Lunt Alpoghe",
+     "name_fa": "لونت آلپوگه",
+     "kind": "person"
+    },
+    {
+     "name_en": "Riemann hypothesis",
+     "name_fa": "فرضیه ریمان",
+     "kind": "product"
+    }
+   ],
+   "terms": [
+    {
+     "term": "فرضیه ریمان",
+     "def": "یکی از مشهورترین مسائل حل‌نشده ریاضی که درباره توزیع اعداد اول و یک معادله خاص در صفحه مختلط صحبت می‌کند."
+    },
+    {
+     "term": "فرضیه تعمیم‌یافته ریمان",
+     "def": "یک گسترش از فرضیه ریمان که برای توابع دلتا (L-functions) فراتر از دلتا زتا اعمال می‌شود."
+    },
+    {
+     "term": "Lean",
+     "def": "یک زبان برنامه‌نویسی و محیط اثبات‌گر ریاضی که برای بررسی صحت منطقی استدلال‌های پیچیده استفاده می‌شود."
+    }
+   ],
+   "simple": "یک ریاضی‌دان از شرکت آنتروپیک ادعا کرده که با کمک هوش مصنوعی کلاد، مسئله سخت ریاضی به نام فرضیه ریمان را حل کرده است. او این اثبات را در یک زبان برنامه‌نویسی به نام لین نوشته است، اما هنوز متخصص‌ها باید آن را بررسی کنند.",
+   "quiz": {
+    "q": "این ریاضی‌دان ادعا کرده که اثبات را با کمک کدام ابزار انجام داده است؟",
+    "options": [
+     "یک ماشین حساب معمولی",
+     "هوش مصنوعی کلاد",
+     "یک کتاب قدیمی ریاضی"
+    ],
+    "answer": 1
+   },
+   "video": {
+    "hook": "آیا هوش مصنوعی فرضیه ریمان را حل کرد؟",
+    "points": [
+     "ریاضی‌دان آنتروپیک ادعا کرد کلاد به او کمک کرده تا فرضیه ریمان را اثبات کند",
+     "او این اثبات را در زبان برنامه‌نویسی Lean کدنویسی کرده است",
+     "این ادعا هنوز تأیید نشده و باید توسط متخصص‌ها بررسی شود"
+    ],
+    "why": "حل این مسئله یکی از بزرگترین دستاوردهای ریاضی قرن است و اگر درست باشد، انقلابی در ریاضیات ایجاد می‌کند."
+   },
+   "share": "ادعای عجیب: ریاضی‌دان آنتروپیک با کمک کلاد فرضیه ریمان را حل کرد!\nهنوز توسط متخصص‌ها تأیید نشده است.\n#هوش_مصنوعی #ریاضیات #Anthropic",
+   "status": "شایعه",
+   "models": [],
+   "events": [],
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 2,
+   "src": "f50c789ccdc0"
+  }
+ }
+}

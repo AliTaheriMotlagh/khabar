@@ -2789,6 +2789,18 @@
    "name_en": "Sugar Glider",
    "name_fa": "شگر گلیدر",
    "kind": "model"
+  },
+  {
+   "slug": "lunt-alpoghe",
+   "name_en": "Lunt Alpoghe",
+   "name_fa": "لونت آلپوگه",
+   "kind": "person"
+  },
+  {
+   "slug": "riemann-hypothesis",
+   "name_en": "Riemann hypothesis",
+   "name_fa": "فرضیه ریمان",
+   "kind": "product"
   }
  ]
 }
