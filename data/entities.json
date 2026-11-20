@@ -899,6 +899,126 @@
    "name_en": "Percy Liang",
    "name_fa": "پرسی لیانگ",
    "kind": "person"
+  },
+  {
+   "slug": "optimizely",
+   "name_en": "Optimizely",
+   "name_fa": "اپتی‌میزایلی",
+   "kind": "company"
+  },
+  {
+   "slug": "zoom",
+   "name_en": "Zoom",
+   "name_fa": "زوم",
+   "kind": "company"
+  },
+  {
+   "slug": "cnn",
+   "name_en": "CNN",
+   "name_fa": "سی‌ان‌ان",
+   "kind": "company"
+  },
+  {
+   "slug": "scott-helm",
+   "name_en": "Scott Helm",
+   "name_fa": "اسکات هلم",
+   "kind": "person"
+  },
+  {
+   "slug": "national-security-agency",
+   "name_en": "National Security Agency",
+   "name_fa": "آژانس امنیت ملی آمریکا",
+   "kind": "company"
+  },
+  {
+   "slug": "sierraplatform",
+   "name_en": "SierraPlatform",
+   "name_fa": "سیرا پلتفرم",
+   "kind": "company"
+  },
+  {
+   "slug": "ethan-mollick",
+   "name_en": "Ethan Mollick",
+   "name_fa": "ایتن مالیک",
+   "kind": "person"
+  },
+  {
+   "slug": "dgx-spark",
+   "name_en": "DGX Spark",
+   "name_fa": "دی‌جی‌ای اسپارک",
+   "kind": "product"
+  },
+  {
+   "slug": "harness",
+   "name_en": "Harness",
+   "name_fa": "هارنس",
+   "kind": "product"
+  },
+  {
+   "slug": "thdxr",
+   "name_en": "thdxr",
+   "name_fa": "تِ‌دی‌ای‌اکس‌آر",
+   "kind": "person"
+  },
+  {
+   "slug": "gemini-4-hydrogen",
+   "name_en": "Gemini 4 Hydrogen",
+   "name_fa": "جمینای ۴ هیدروژن",
+   "kind": "model"
+  },
+  {
+   "slug": "chatgpt-work",
+   "name_en": "ChatGPT Work",
+   "name_fa": "چت‌جی‌پی‌تی ورک",
+   "kind": "product"
+  },
+  {
+   "slug": "codex",
+   "name_en": "Codex",
+   "name_fa": "کدکس",
+   "kind": "product"
+  },
+  {
+   "slug": "nbc-news",
+   "name_en": "NBC News",
+   "name_fa": "ان‌بی‌سی نیوز",
+   "kind": "company"
+  },
+  {
+   "slug": "astra-for-law",
+   "name_en": "Astra for Law",
+   "name_fa": "آسترا برای حقوق",
+   "kind": "product"
+  },
+  {
+   "slug": "chatgpt-enterprise",
+   "name_en": "ChatGPT Enterprise",
+   "name_fa": "چت‌جی‌پی‌تی انترپرایز",
+   "kind": "product"
+  },
+  {
+   "slug": "apple",
+   "name_en": "Apple",
+   "name_fa": "اپل",
+   "kind": "company"
+  },
+  {
+   "slug": "app-store",
+   "name_en": "App Store",
+   "name_fa": "اپ‌استور",
+   "kind": "product"
+  },
+  {
+   "slug": "icloud",
+   "name_en": "iCloud",
+   "name_fa": "آیکلود",
+   "kind": "product"
+  },
+  {
+   "slug": "netblocks",
+   "name_en": "NetBlocks",
+   "name_fa": "نت‌بلاکس",
+   "kind": "company"
   }
  ]
 }

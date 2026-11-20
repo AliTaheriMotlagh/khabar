@@ -3061,7 +3061,51 @@
    "date": "2024-10-20",
    "n": 3,
    "name": "NotebookLM , Illuminate, and Synthesia",
-   "live": false
+   "live": false,
+   "ai": {
+    "title": "معرفی ابزارهای هوش مصنوعی: NotebookLM، Illuminate و Synthesia",
+    "summary": "در این ویدیو، مهرزاد صمدی به بررسی سه ابزار قدرتمند هوش مصنوعی می‌پردازد که برای تولید محتوا و تحلیل داده‌ها مفید هستند. ابتدا قابلیت‌های NotebookLM گوگل برای خلاصه‌سازی و تولید محتوا بر اساس منابع شخصی توضیح داده می‌شود. سپس ابزار Illuminate معرفی می‌شود که به تحلیل عمیق‌تر داده‌ها و استخراج بینش‌های جدید کمک می‌کند. در نهایت، پلتفرم Synthesia برای ساخت ویدیوهای آموزشی با آواتارهای هوش مصنوعی معرفی می‌گردد.",
+    "points": [
+     "NotebookLM ابزاری از گوگل است که با استفاده از منابع کاربر، متن‌های جدید و خلاصه‌های دقیق تولید می‌کند.",
+     "این ابزار قابلیت پاسخگویی به سوالات پیچیده بر اساس مستندات آپلود شده توسط کاربر را دارد.",
+     "ابزار Illuminate برای تحلیل داده‌ها و استخراج الگوهای پنهان در متون طولانی طراحی شده است.",
+     "Synthesia پلتفرمی است که امکان ساخت ویدیوهای حرفه‌ای با آواتارهای هوش مصنوعی را فراهم می‌کند.",
+     "استفاده از این ابزارها می‌تواند فرآیند تولید محتوا را به شدت تسریع و ساده‌سازی کند.",
+     "هر سه ابزار در دسته‌بندی مهارت و مسیر شغلی برای افزایش بهره‌وری قرار می‌گیرند.",
+     "مهرزاد صمدی در این ویدیو نحوه استفاده عملی از این ابزارها را به زبان فارسی آموزش می‌دهد.",
+     "این ویدیو برای کسانی که به دنبال به‌روزرسانی مهارت‌های خود در حوزه هوش مصنوعی هستند مناسب است."
+    ],
+    "chapters": [
+     {
+      "t": 0,
+      "title": "مقدمه و معرفی ابزارها"
+     },
+     {
+      "t": 150,
+      "title": "آشنایی با NotebookLM"
+     },
+     {
+      "t": 450,
+      "title": "قابلیت‌های تحلیل و تولید محتوا"
+     },
+     {
+      "t": 750,
+      "title": "معرفی ابزار Illuminate"
+     },
+     {
+      "t": 950,
+      "title": "بررسی پلتفرم Synthesia"
+     },
+     {
+      "t": 1050,
+      "title": "جمع‌بندی و نتیجه‌گیری"
+     }
+    ],
+    "category": "مهارت و مسیر شغلی",
+    "from": "description",
+    "v": 1,
+    "model": "qwen3.5-9b-q4_k_m"
+   }
   },
   {
    "id": "aRdO45lTies",
@@ -3071,7 +3115,50 @@
    "description": "Transform Your Development Workflow with V0, Replit, Cursor, and OpenAI Canvas\nIn this video, explore how V0 by Vercel, Replit, Cursor, and OpenAI Canvas are redefining modern development through the power of deep learning. These tools empower developers to build, deploy, and iterate faster than ever before.\n\nWhat You'll Learn:\nHow deep learning enhances development tools to streamline workflows\nPractical examples of using V0, Replit, Cursor, and OpenAI Canvas for rapid prototyping\nTips for combining these platforms to maximize creativity and productivity\nReal-world strategies for turning ideas into applications with ease\nWho This Video is For:\nDevelopers and engineers seeking efficient ways to build and deploy applications\nEntrepreneurs looking for powerful tools to bring products to market quickly\nStudents and professionals curious about leveraging AI-powered platforms in development\nAnyone passionate about the intersection of deep learning and software innovation",
    "n": 2,
    "name": "V0 by Vercel, Cursor, Replit, OpenAI Canvas",
-   "live": false
+   "live": false,
+   "ai": {
+    "title": "تبدیل فرآیند توسعه با V0، Cursor و ابزارهای هوش مصنوعی",
+    "summary": "در این ویدیو، مهرزاد صمدی ابزارهای پیشرفته‌ای مانند V0، Replit، Cursor و OpenAI Canvas را بررسی می‌کند که با استفاده از یادگیری عمیق، سرعت توسعه نرم‌افزار را به شدت افزایش می‌دهند. او نشان می‌دهد که چگونه این پلتفرم‌ها به توسعه‌دهندگان اجازه می‌دهند ایده‌ها را سریع‌تر به اپلیکیشن‌های واقعی تبدیل کنند. همچنین راهکارهای عملی برای ترکیب این ابزارها جهت تسهیل فرآیند ساخت و انتشار محصولات معرفی می‌شود.",
+    "points": [
+     "ابزارهای جدیدی مثل V0 و Cursor با هوش مصنوعی، کدنویسی را به گفتگو با مدل‌های زبانی تبدیل کرده‌اند.",
+     "پلتفرم‌هایی مانند Replit و OpenAI Canvas امکان ساخت و تست سریع اپلیکیشن‌ها را بدون پیچیدگی‌های فنی فراهم می‌کنند.",
+     "ترکیب این ابزارها می‌تواند چرخه توسعه از ایده تا محصول نهایی را به طور چشمگیری کوتاه کند.",
+     "توسعه‌دهندگان می‌توانند با استفاده از این ابزارها، تمرکز خود را بر منطق کسب‌وکار و خلاقیت بگذارند نه جزئیات فنی.",
+     "این ابزارها برای استارتاپ‌ها و دانشجویان که به دنبال راه‌حل‌های سریع برای ساخت محصول هستند، بسیار کاربردی‌اند.",
+     "یادگیری عمیق پشت‌پرده این ابزارها، قابلیت‌های آن‌ها را در درک و تولید کد بهینه ارتقا داده است.",
+     "استفاده از این پلتفرم‌ها نیاز به دانش عمیق برنامه‌نویسی سنتی را کاهش داده و یادگیری را تسهیل می‌کند."
+    ],
+    "chapters": [
+     {
+      "t": 0,
+      "title": "معرفی ابزارهای هوش مصنوعی در توسعه"
+     },
+     {
+      "t": 150,
+      "title": "بررسی قابلیت‌های V0 by Vercel"
+     },
+     {
+      "t": 450,
+      "title": "نقش Cursor و Replit در کدنویسی"
+     },
+     {
+      "t": 800,
+      "title": "معرفی OpenAI Canvas"
+     },
+     {
+      "t": 1100,
+      "title": "استراتژی ترکیب ابزارها برای حداکثر بهره‌وری"
+     },
+     {
+      "t": 1400,
+      "title": "نتیجه‌گیری و آینده توسعه با هوش مصنوعی"
+     }
+    ],
+    "category": "تکنیک‌های مدل",
+    "from": "description",
+    "v": 1,
+    "model": "qwen3.5-9b-q4_k_m"
+   }
   },
   {
    "id": "aK_MZljIU5Q",
@@ -3081,7 +3168,52 @@
    "description": "This video is your gateway to turning concepts into reality, even without an extensive technical background!\nWhat You'll Learn:\n\nHow to utilize Claude, an advanced AI assistant, to kickstart your technical projects\nStep-by-step process of transforming a vague idea into a structured project outline\nTechniques for asking the right questions to get the most out of AI assistance\nTips for interpreting and expanding on AI-generated suggestions\n\nWho This Video is For:\n\nAspiring entrepreneurs with innovative ideas but limited technical knowledge\nStudents looking to enhance their project planning skills\nProfessionals seeking to leverage AI for efficient project drafting\nAnyone curious about the practical applications of AI in project development",
    "n": 1,
    "name": "Using Claude as technical co-founder",
-   "live": false
+   "live": false,
+   "ai": {
+    "title": "استفاده از کلود به عنوان هم‌بنیان‌گذار فنی برای شروع پروژه‌های تکنولوژی",
+    "summary": "این ویدیو راهنمای عملی برای تبدیل ایده‌های انتزاعی به پروژه‌های فنی ساختاریافته است، حتی برای کسانی که دانش فنی عمیقی ندارند. مهرزاد صمدی توضیح می‌دهد که چگونه می‌توان از هوش مصنوعی کلود برای تدوین نقشه‌ی راه دقیق، پرسش‌های صحیح و توسعه‌ی پیشنهادهای تولیدشده استفاده کرد. هدف اصلی، توانمندسازی کارآفرینان و دانشجویان برای آغاز سریع‌تر و هوشمندانه‌تر مسیر توسعه‌ی محصولات است.",
+    "points": [
+     "تبدیل ایده‌های مبهم به نقشه‌ی راه فنی ساختاریافته با کمک هوش مصنوعی.",
+     "تکنیک‌های پرسشگری صحیح برای دریافت بهترین خروجی‌ها از مدل‌های زبانی.",
+     "روش‌های تفسیر و بسط دادن پیشنهادهای تولیدشده توسط هوش مصنوعی.",
+     "استفاده از AI برای تسریع فرآیند تدوین و برنامه‌ریزی پروژه‌های نوآورانه.",
+     "مناسب برای کارآفرینان، دانشجویان و متخصصانی که می‌خواهند از هوش مصنوعی بهره‌مند شوند."
+    ],
+    "chapters": [
+     {
+      "t": 0,
+      "title": "معرفی و هدف ویدیو"
+     },
+     {
+      "t": 60,
+      "title": "تبدیل ایده به نقشه‌ی فنی"
+     },
+     {
+      "t": 180,
+      "title": "تکنیک‌های پرسشگری از کلود"
+     },
+     {
+      "t": 360,
+      "title": "تفسیر و بسط پیشنهادهای AI"
+     },
+     {
+      "t": 540,
+      "title": "نمونه‌ی عملی پروژه"
+     },
+     {
+      "t": 720,
+      "title": "نکات کلیدی برای موفقیت"
+     },
+     {
+      "t": 900,
+      "title": "جمع‌بندی و گام‌های بعدی"
+     }
+    ],
+    "category": "مهارت و مسیر شغلی",
+    "from": "description",
+    "v": 1,
+    "model": "qwen3.5-9b-q4_k_m"
+   }
   }
  ]
 }
