@@ -3107,6 +3107,30 @@
    "name_en": "Anthropic Science Blog",
    "name_fa": "وبلاگ علمی آنتروپیک",
    "kind": "product"
+  },
+  {
+   "slug": "medchembench",
+   "name_en": "MedChemBench",
+   "name_fa": "مدک‌کم‌بنچ",
+   "kind": "product"
+  },
+  {
+   "slug": "gpt-61-sol",
+   "name_en": "GPT-6.1 Sol",
+   "name_fa": "جی‌پی‌تی ۶.۱ سول",
+   "kind": "model"
+  },
+  {
+   "slug": "gpt-56-sol",
+   "name_en": "GPT-5.6 Sol",
+   "name_fa": "جی‌پی‌تی ۵.۶ سول",
+   "kind": "model"
+  },
+  {
+   "slug": "novaxcode",
+   "name_en": "NovaXCode",
+   "name_fa": "نووا ایکس کد",
+   "kind": "product"
   }
  ]
 }
