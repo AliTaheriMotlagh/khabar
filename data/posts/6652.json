@@ -1,0 +1,130 @@
+{
+ "id": 6652,
+ "url": "https://t.me/dlmehr/6652",
+ "date": "2026-11-20T04:33:39+00:00",
+ "text": "https://fxtwitter.com/imoe_na/status/2123457087837802569/video/1?a=e8fFiAAYADj0XVv5UHY&s=52",
+ "forwarded_from": null,
+ "digest": false,
+ "hash": "160e87c04b49",
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/imoe_na/status/2123457087837802569/video/1?a=e8fFiAAYADj0XVv5UHY&s=52",
+  "site": "🧵 Thread • FxTwitter",
+  "title": "Elena Shi 🍣 (@imoe_na)",
+  "description": "👓\nControl your AI agents right from your glasses!\nHere’s a little demo\n🥳\nNot just Claude Code or Codex — our open protocol lets you bring your own agents, whether it’s Muse, Grok Bot, or something you’ve built yourself.\nJust Hold and Talk!",
+  "image": null
+ },
+ "gholam": {
+  "text": "رفیق، حساب کاربری imoe_na توی ایکس از یه دمو خبر داده و می‌گه با پروتکل بازشون می‌تونی ایجنت‌های هوش مصنوعی رو مستقیم از روی عینک کنترل کنی. به گفته خودشون، ماجرا فقط به Claude Code و Codex محدود نیست و می‌تونی ایجنت‌هایی مثل Muse، Grok Bot یا حتی چیزی که خودت ساختی رو بیاری و فقط با نگه داشتن و حرف زدن باهاشون کار کنی. 👓 البته اینجا به خود ویدئوی دمو دسترسی نداریم تا ببینیم توی عمل چطوره، ولی توی پست بعدی‌شون دعوت کردن به سرور دیسکورد تازه‌بازشده‌ی SavageTech (که طبق صفحه دعوتش فعلاً ۹۲ تا عضو داره) سر بزنی تا روند ساخت عینک‌های هوش مصنوعی‌شون رو دنبال کنی و نظرت رو بگی.",
+  "date": "2026-11-20T04:34:06+00:00"
+ },
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/imoe_na/status/2123457087837802569",
+   "domain": "x.com",
+   "author": {
+    "name": "Elena Shi🍣",
+    "handle": "imoe_na",
+    "avatar": "https://pbs.twimg.com/profile_images/1867029823643869184/2u1KiF4-_200x200.jpg"
+   },
+   "text": "👓 Control your AI agents right from your glasses!\n\nHere’s a little demo 🥳\n\nNot just Claude Code or Codex — our open protocol lets you bring your own agents, whether it’s Muse, Grok Bot, or something you’ve built yourself.\n\nJust Hold and Talk!",
+   "date": 1795106596,
+   "media": [
+    {
+     "type": "video",
+     "src": "https://video.twimg.com/amplify_video/2123456776347828225/vid/avc1/1280x720/uSKv7VRXmoI4vuGD.mp4?tag=29",
+     "poster": "https://pbs.twimg.com/amplify_video_thumb/2123456776347828225/img/8v69HZooZmy2aBvq.jpg",
+     "ratio": 0.5625,
+     "duration": 117.1,
+     "gif": false
+    }
+   ],
+   "links": []
+  }
+ ],
+ "article": {
+  "title": "حساب کاربری imoe_na توی ایکس از یه دمو خبر داده و می‌گه با پروتکل بازشون می‌تونی ایجنت‌های هوش مصنوعی رو مستقیم از روی عینک کنترل کنی",
+  "source_title": "👓 Control your AI agents right from your glasses!",
+  "body": [
+   "حساب کاربری imoe_na توی ایکس از یه دمو خبر داده و می‌گه با پروتکل بازشون می‌تونی ایجنت‌های هوش مصنوعی رو مستقیم از روی عینک کنترل کنی. به گفته خودشون، ماجرا فقط به Claude Code و Codex محدود نیست و می‌تونی ایجنت‌هایی مثل Muse، Grok Bot یا حتی چیزی که خودت ساختی رو بیاری و فقط با نگه داشتن و حرف زدن باهاشون کار کنی. 👓 البته اینجا به خود ویدئوی دمو دسترسی نداریم تا ببینیم توی عمل چطوره، ولی توی پست بعدی‌شون دعوت کردن به سرور دیسکورد تازه‌بازشده‌ی SavageTech (که طبق صفحه دعوتش فعلاً ۹۲ تا عضو داره) سر بزنی تا روند ساخت عینک‌های هوش مصنوعی‌شون رو دنبال کنی و نظرت رو بگی."
+  ],
+  "why": null,
+  "tags": [
+   "ایجنت"
+  ]
+ },
+ "updated": "2026-11-20T04:37:43+00:00",
+ "ai": {
+  "title": "ایم‌او‌ای‌ای (imoe_na) عینک هوشمند برای کنترل ایجنت‌های هوش مصنوعی ساخت",
+  "short": "عینک کنترل ایجنت",
+  "topics": [
+   "ایجنت"
+  ],
+  "type": "ابزار و محصول",
+  "model": "qwen3.5-9b-q4_k_m",
+  "v": 2,
+  "src": "eb6db6d35521",
+  "x": {
+   "importance": 2,
+   "entities": [
+    {
+     "name_en": "imoe_na",
+     "name_fa": "ایم‌او‌ای‌ای",
+     "kind": "company"
+    },
+    {
+     "name_en": "Claude Code",
+     "name_fa": "کلود کد",
+     "kind": "product"
+    },
+    {
+     "name_en": "Muse",
+     "name_fa": "موز",
+     "kind": "product"
+    },
+    {
+     "name_en": "Grok Bot",
+     "name_fa": "گرک بات",
+     "kind": "product"
+    }
+   ],
+   "terms": [
+    {
+     "term": "ایجنت",
+     "def": "برنامه‌ای هوشمند که می‌تواند به صورت خودکار وظایفی را انجام دهد و با محیط تعامل داشته باشد."
+    },
+    {
+     "term": "پروتکل",
+     "def": "قوانین و استانداردهای فنی که اجازه می‌دهد دستگاه‌ها یا نرم‌افزارها با هم ارتباط برقرار کنند."
+    }
+   ],
+   "simple": "شرکت ایم‌او‌ای‌ای عینکی هوشمند ساخت که با آن می‌توانید ایجنت‌های هوش مصنوعی را کنترل کنید. فقط کافیست عینک را نگه دارید و با آن صحبت کنید تا دستورات را اجرا کند.",
+   "quiz": {
+    "q": "ایم‌او‌ای‌ای برای کنترل ایجنت‌ها از چه وسیله‌ای استفاده می‌کند؟",
+    "options": [
+     "ساعت هوشمند",
+     "عینک هوشمند",
+     "هدفون بلوتوثی"
+    ],
+    "answer": 1
+   },
+   "video": {
+    "hook": "کنترل ایجنت‌های هوش مصنوعی با عینک هوشمند!",
+    "points": [
+     "ایم‌او‌ای‌ای عینکی ساخت که با آن می‌توان ایجنت‌ها را کنترل کرد",
+     "نیاز به نگه داشتن عینک و صحبت کردن با ایجنت‌هاست",
+     "این قابلیت محدود به کلود کد نیست و برای Muse و Grok Bot هم کار می‌کند"
+    ],
+    "why": "این تکنولوژی دسترسی به ابزارهای هوش مصنوعی را بدون نیاز به دست‌زدن و تایپ کردن ساده‌تر می‌کند."
+   },
+   "share": "عینک هوشمند جدید ایم‌او‌ای‌ای: کنترل ایجنت‌های هوش مصنوعی با نگاه و حرف زدن.\nسرعت و راحتی بی‌نظیر برای برنامه‌نویسان.\n#هوش_مصنوعی #عینک_هوشمند",
+   "status": "شایعه",
+   "models": [],
+   "events": [],
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 2,
+   "src": "e3925f238fc0"
+  }
+ }
+}

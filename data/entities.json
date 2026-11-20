@@ -815,6 +815,18 @@
    "name_en": "GitHub",
    "name_fa": "گیت‌هاب",
    "kind": "company"
+  },
+  {
+   "slug": "imoe-na",
+   "name_en": "imoe_na",
+   "name_fa": "ایم‌او‌ای‌ای",
+   "kind": "company"
+  },
+  {
+   "slug": "grok-bot",
+   "name_en": "Grok Bot",
+   "name_fa": "گرک بات",
+   "kind": "product"
   }
  ]
 }
