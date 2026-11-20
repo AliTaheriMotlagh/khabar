@@ -563,6 +563,36 @@
    "name_en": "Sesame",
    "name_fa": "سزیم",
    "kind": "company"
+  },
+  {
+   "slug": "astra",
+   "name_en": "Astra",
+   "name_fa": "آسترا",
+   "kind": "company"
+  },
+  {
+   "slug": "neon",
+   "name_en": "Neon",
+   "name_fa": "نیون",
+   "kind": "model"
+  },
+  {
+   "slug": "fable",
+   "name_en": "Fable",
+   "name_fa": "فبل",
+   "kind": "model"
+  },
+  {
+   "slug": "opus",
+   "name_en": "Opus",
+   "name_fa": "اپوس",
+   "kind": "model"
+  },
+  {
+   "slug": "sol",
+   "name_en": "Sol",
+   "name_fa": "سول",
+   "kind": "model"
   }
  ]
 }

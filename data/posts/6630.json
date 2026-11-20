@@ -12,7 +12,7 @@
   "site": "🧵 Thread • FxTwitter",
   "title": "Sundar Pichai (@sundarpichai)",
   "description": "Gemini 4 Neon: frontier-level intelligence with fast end-to-end task completion across complex software engineering, knowledge work, and science workflows.\nBegins rolling out today in the Gemini API in @GoogleAIStudio, Gemini for business, for paid Google…",
-  "image": "https://cdn4.telesco.pe/file/KbNPezatvS-hk5mnAKyAqrcS9GfLllZRjXbtLUTLHnD-E6_IsTr70KodB4wIeCRzrjDhHt9PKNCBr3STAXqOvWuD0TNa8An8FDc0PlZa65tJaTGDrMUmUmDo4U4LE-vpy8C9TIqDNhJRBbQyy45uOFltjWZyZG_usWUxpCN9ihnW1Pk07NotcSi5uWt4AccJkHXdImDd--pi-F8taKklFg3tb7k2DyTPjJZcF_49bqP9shAQHH-14bGRIvIBzkjGAZ4Kx1JOIFUApLa7lXGYMddd96bpfdXjTN29RcD12SaTZadJkskM9EQUrwgq7PDTP2hDO2K0fjrVo8rTldywyA.jpg"
+  "image": "https://cdn4.telesco.pe/file/Cd3_tJsStrIjaqOaq-B-bek-Kty27KqSmt11B_Q3ran-e9c-XqmgBDvLga2rzmlh0VZHoc67IUPtKd_Lc8FD15ZQLhfAgvV4rNMeGRt31m09j1y48VgzRMO2011Vbr99mAmXc9b3qipVGy4fJygZeZEnVETeRbzhjXdLhxkelqoJgR2NrpXJHxaq8-BTWMhzBlryCuRAissOrgstYLlIaMxVIc8fX2l8M5DpXnwJZfjEQVys3ym-tAj59WnRkQ3B72RljtErK-R3KkQWfehY1Uml9dp8bJDbIyech8kWijenr995gVHAAABx834apG33oEhq7p_nEaIAweLvpBLxeg.jpg"
  },
  "gholam": {
   "text": "رفقا، سوندار پیچای از مدل جدید Gemini 4 Neon رونمایی کرده و گفته این مدل برای انجام سریع و کاملِ کارهای پیچیده برنامه‌نویسی، امور دانشی و جریان‌های علمی ساخته شده؛ یه جورایی مثل این می‌مونه که برای کارهای سنگین یه دستیار فرز و دست‌به‌آچار آورده باشن سر کار. 🤖 صفحه وبلاگی که برای توضیحات بیشتر توی پستش معرفی شده بود در دسترس نبود، برای همین فعلاً فقط اطلاعات همین پست و جدول مقایسه همراهش رو داریم:\n\n• به گفته پیچای، عرضه این مدل هم‌زمان با انتشار پست از طریق Gemini API در Google AI Studio، سرویس Gemini for business و برای مشترکین پولی Google AI Pro و Ultra در اپ Gemini و Google Antigravity شروع شده.\n• در جدولی که همراه پست منتشر شده، Gemini 4 Neon با Claude Opus 5.5 و GPT-6.2 Sol مقایسه شده و در بیشتر بخش‌ها مثل شاخص‌های کلی توانایی، کارهای دانشی، علوم و ریاضی، استدلال، پردازش زمینه طولانی (۹۵.۲ درصد در GraphWalks) و امنیت سایبری بالاترین امتیاز رو گرفته.\n• البته بر اساس همون جدول، در بخش کدنویسی ایجنتی، Claude Opus 5.5 توی دو تست Terminal-bench 4.1 و FrontierCode 2.0 امتیاز بالاتری ثبت کرده و GPT-6.2 Sol هم در تست درک نمودار (Chartography) از بقیه جلوتر بوده.",
@@ -152,5 +152,5 @@
    "گوگل"
   ]
  },
- "updated": "2026-11-19T19:01:00+00:00"
+ "updated": "2026-11-20T02:53:36+00:00"
 }

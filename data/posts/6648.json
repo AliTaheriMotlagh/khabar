@@ -19,43 +19,6 @@
   "text": "رفیق، تک‌کرانچ نوشته که به گفته کارمندها، در بعضی موارد «Muse» پیام‌هایی رو براشون نشون داده که اصلاً مال خودشون نبوده؛ از درخواست نگهداری بچه و مشاوره شغلی که نخواسته بودن گرفته تا سفارش محصولاتی که نداده بودن و حتی موجودی حساب بانکیِ کسای دیگه. 🤔 از اونجایی که متن کامل مقاله همراه این پست در دسترس نبود، فعلاً جزئیات بیشتری درباره اینکه دقیقاً چه اتفاقی افتاده نداریم.",
   "date": "2026-11-19T19:20:54+00:00"
  },
- "links": [
-  {
-   "kind": "tweet",
-   "url": "https://x.com/TechCrunch/status/2123471135895363929",
-   "domain": "x.com",
-   "author": {
-    "name": "TechCrunch",
-    "handle": "TechCrunch",
-    "avatar": "https://pbs.twimg.com/profile_images/1096066608034918401/m8wnTWsX_200x200.png"
-   },
-   "text": "In some of these instances, employees said Muse surfaced messages about childcare requests they never made, career advice they never asked for, product orders they never placed, and bank account balances that didn't belong to them.\nhttps://spr.ly/6017ByZSER",
-   "date": 1795109945,
-   "media": [],
-   "links": [
-    "https://spr.ly/6017ByZSER"
-   ]
-  },
-  {
-   "kind": "link",
-   "url": "https://techcrunch.com/2026/11/19/metas-ai-agent-muse-is-mixing-up-conversations-and-exposing-private-data-report-says/?utm_medium=organic_social&utm_source=TWITTER",
-   "domain": "techcrunch.com",
-   "title": "Meta’s AI agent Muse is mixing up conversations and exposing private data, report says | TechCrunch",
-   "description": "In some of these instances, employees said Muse surfaced messages about childcare requests they never made, career advice they never asked for, product orders they never placed, and bank account balances that didn't belong to them.",
-   "image": "https://techcrunch.com/wp-content/uploads/2026/09/muse-ai-meta.jpg?w=1200",
-   "site": "TechCrunch"
-  }
- ],
- "article": {
-  "title": "تک‌کرانچ نوشته که به گفته کارمندها، در بعضی موارد «Muse» پیام‌هایی رو براشون نشون داده که اصلاً مال خودشون نبوده",
-  "source_title": "In some of these instances, employees said Muse surfaced messages about childcare requests they never made, career advice they never asked…",
-  "body": [
-   "تک‌کرانچ نوشته که به گفته کارمندها، در بعضی موارد «Muse» پیام‌هایی رو براشون نشون داده که اصلاً مال خودشون نبوده؛ از درخواست نگهداری بچه و مشاوره شغلی که نخواسته بودن گرفته تا سفارش محصولاتی که نداده بودن و حتی موجودی حساب بانکیِ کسای دیگه. 🤔 از اونجایی که متن کامل مقاله همراه این پست در دسترس نبود، فعلاً جزئیات بیشتری درباره اینکه دقیقاً چه اتفاقی افتاده نداریم."
-  ],
-  "why": null,
-  "tags": []
- },
- "updated": "2026-11-19T19:36:20+00:00",
  "ai": {
   "title": "کارمندان Muse از نمایش پیام‌های جعلی و اطلاعات شخصی دیگران شکایت کردند",
   "short": "Muse پیام‌های جعلی نشان داد",
@@ -110,5 +73,42 @@
    "v": 2,
    "src": "f0a726d33312"
   }
- }
+ },
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/TechCrunch/status/2123471135895363929",
+   "domain": "x.com",
+   "author": {
+    "name": "TechCrunch",
+    "handle": "TechCrunch",
+    "avatar": "https://pbs.twimg.com/profile_images/1096066608034918401/m8wnTWsX_200x200.png"
+   },
+   "text": "In some of these instances, employees said Muse surfaced messages about childcare requests they never made, career advice they never asked for, product orders they never placed, and bank account balances that didn't belong to them.\nhttps://spr.ly/6017ByZSER",
+   "date": 1795109945,
+   "media": [],
+   "links": [
+    "https://spr.ly/6017ByZSER"
+   ]
+  },
+  {
+   "kind": "link",
+   "url": "https://techcrunch.com/2026/11/19/metas-ai-agent-muse-is-mixing-up-conversations-and-exposing-private-data-report-says/?utm_medium=organic_social&utm_source=TWITTER",
+   "domain": "techcrunch.com",
+   "title": "Meta’s AI agent Muse is mixing up conversations and exposing private data, report says | TechCrunch",
+   "description": "In some of these instances, employees said Muse surfaced messages about childcare requests they never made, career advice they never asked for, product orders they never placed, and bank account balances that didn't belong to them.",
+   "image": "https://techcrunch.com/wp-content/uploads/2026/09/muse-ai-meta.jpg?w=1200",
+   "site": "TechCrunch"
+  }
+ ],
+ "article": {
+  "title": "تک‌کرانچ نوشته که به گفته کارمندها، در بعضی موارد «Muse» پیام‌هایی رو براشون نشون داده که اصلاً مال خودشون نبوده",
+  "source_title": "In some of these instances, employees said Muse surfaced messages about childcare requests they never made, career advice they never asked…",
+  "body": [
+   "تک‌کرانچ نوشته که به گفته کارمندها، در بعضی موارد «Muse» پیام‌هایی رو براشون نشون داده که اصلاً مال خودشون نبوده؛ از درخواست نگهداری بچه و مشاوره شغلی که نخواسته بودن گرفته تا سفارش محصولاتی که نداده بودن و حتی موجودی حساب بانکیِ کسای دیگه. 🤔 از اونجایی که متن کامل مقاله همراه این پست در دسترس نبود، فعلاً جزئیات بیشتری درباره اینکه دقیقاً چه اتفاقی افتاده نداریم."
+  ],
+  "why": null,
+  "tags": []
+ },
+ "updated": "2026-11-20T02:53:36+00:00"
 }

@@ -1,0 +1,132 @@
+{
+ "id": 6651,
+ "url": "https://t.me/dlmehr/6651",
+ "date": "2026-11-20T02:27:53+00:00",
+ "text": "https://fxtwitter.com/tianfuf/status/2123567254646448311?a=WbHGYF263n90TcZ6vUo&s=52",
+ "forwarded_from": null,
+ "digest": false,
+ "hash": "e6f5f8ec3c85",
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/tianfuf/status/2123567254646448311?a=WbHGYF263n90TcZ6vUo&s=52",
+  "site": "FxTwitter",
+  "title": "Tianfu Fu (@TianfuF)",
+  "description": "Neon is actually one of our small models. We’re positioning it in the same tier as Opus and Sol, even though its performance is already approaching latest Fable and Astra. We’d rather be conservative with our claims than overhype it.\nQuoting Jason Lee (@jasondeanlee)…",
+  "image": "https://cdn4.telesco.pe/file/pooy_j2H0hb0AGXhZFftlqfHrNEeomPgOmIU_77C35q60Wy5y4gwaLGhmAe2YIakzolDsQDyfyrjzAj09ZP2RlAkJhtTSvpcI4Bi3zxyoE9FDAmb1zb3FGV5avCDPHR5ww5byyMF1Rxgqd8j8OmSzVqfyY5k4O1tam8usUoXngpFlTSXX5MFUyxjPdATdr6dfoP3MeLXi2zordOisPmRI5wOmJoUt1HCt36tb3Gl6JvBGdH8HbyACq4n1CmKt-cxHgjVVB3_eW1NCVKdQmDfolZMytZoI_okWDJ9S27lvBlSBUTfvkBR6BejY0tS71oj78dxEO4bqIOnEKWmLmAApA.jpg",
+  "small": true
+ },
+ "gholam": {
+  "text": "رفیق، توی این پست یکی از کاربرا سراغ «Astra» و «Fable» رو گرفته و حساب TianfuF در جواب توضیح داده که مدل «Neon» در واقع یکی از مدل‌های کوچیکشونه. به گفته خودش، با اینکه عملکرد Neon داره به آخرین نسخه‌های Fable و Astra نزدیک می‌شه، ولی فعلاً توی همون رده‌ی «Opus» و «Sol» قرارش دادن. خلاصه که ظاهراً ترجیح می‌دن توی ادعاهاشون محتاط باشن و الکی جو و هایپ راه نندازن؛ به‌قول معروف شکسته نفسی می‌کنن تا حرف رو عمل بزنه 😉",
+  "date": "2026-11-20T02:28:09+00:00"
+ },
+ "links": [
+  {
+   "kind": "link",
+   "url": "https://fxtwitter.com/tianfuf/status/2123567254646448311?a=WbHGYF263n90TcZ6vUo&s=52",
+   "domain": "fxtwitter.com"
+  }
+ ],
+ "article": {
+  "title": "توی این پست یکی از کاربرا سراغ «Astra» و «Fable» رو گرفته و حساب TianfuF در جواب توضیح داده که مدل «Neon» در واقع یکی از مدل‌های کوچیکشونه",
+  "source_title": "Tianfu Fu (@TianfuF)",
+  "body": [
+   "توی این پست یکی از کاربرا سراغ «Astra» و «Fable» رو گرفته و حساب TianfuF در جواب توضیح داده که مدل «Neon» در واقع یکی از مدل‌های کوچیکشونه. به گفته خودش، با اینکه عملکرد Neon داره به آخرین نسخه‌های Fable و Astra نزدیک می‌شه، ولی فعلاً توی همون رده‌ی «Opus» و «Sol» قرارش دادن. خلاصه که ظاهراً ترجیح می‌دن توی ادعاهاشون محتاط باشن و الکی جو و هایپ راه نندازن؛ به‌قول معروف شکسته نفسی می‌کنن تا حرف رو عمل بزنه 😉"
+  ],
+  "why": null,
+  "tags": []
+ },
+ "updated": "2026-11-20T02:53:36+00:00",
+ "ai": {
+  "title": "مدل Neon شرکت Astra به عملکرد Fable نزدیک شده اما هنوز در رده Opus است",
+  "short": "مدل Neon Astra",
+  "topics": [
+   "آنتروپیک"
+  ],
+  "type": "پژوهش و مقاله",
+  "model": "qwen3.5-9b-q4_k_m",
+  "v": 2,
+  "src": "906b4e2cc9f0",
+  "x": {
+   "importance": 2,
+   "entities": [
+    {
+     "name_en": "Astra",
+     "name_fa": "آسترا",
+     "kind": "company"
+    },
+    {
+     "name_en": "Neon",
+     "name_fa": "نیون",
+     "kind": "model"
+    },
+    {
+     "name_en": "Fable",
+     "name_fa": "فبل",
+     "kind": "model"
+    },
+    {
+     "name_en": "Opus",
+     "name_fa": "اپوس",
+     "kind": "model"
+    },
+    {
+     "name_en": "Sol",
+     "name_fa": "سول",
+     "kind": "model"
+    }
+   ],
+   "terms": [
+    {
+     "term": "بنچمارک",
+     "def": "آزمون و اندازه‌گیری استاندارد برای سنجش قدرت و دقت مدل‌های هوش مصنوعی."
+    },
+    {
+     "term": "مدل زبانی",
+     "def": "برنامه‌ای هوشمند که متن‌ها را می‌فهمد و تولید می‌کند."
+    }
+   ],
+   "simple": "مدل جدیدی به نام نیون از شرکت آسترا آمده که خیلی قوی است و به مدل‌های فبل و آسترا نزدیک شده، اما هنوز در رده‌ی اپوس و سول قرار دارد. شرکت می‌خواهد ادعای بزرگ نکند تا بعداً شکست نخورد.",
+   "quiz": {
+    "q": "مدل Neon در حال حاضر در کدام رده طبقه‌بندی شده است؟",
+    "options": [
+     "در رده Opus و Sol",
+     "در رده بالاتر از Fable",
+     "به عنوان مدل اصلی Astra معرفی شده"
+    ],
+    "answer": 0
+   },
+   "video": {
+    "hook": "مدل Neon آسترا چقدر به مدل‌های قدرتمند نزدیک شده؟",
+    "points": [
+     "عملکرد مدل Neon به Fable و Astra نزدیک شده است",
+     "با این حال هنوز در رده Opus و Sol طبقه‌بندی می‌شود",
+     "شرکت ترجیح می‌دهد محتاط باشد و هیجان کاذب ایجاد نکند"
+    ],
+    "why": "این موضوع نشان می‌دهد که شرکت‌ها قبل از اعلام رسمی، احتیاط می‌کنند تا اعتبار خود را حفظ کنند."
+   },
+   "share": "مدل Neon آسترا به Fable نزدیک شد اما هنوز در رده Opus است.\nاحتیاط شرکت‌ها در اعلام قدرت مدل‌ها.\n#هوش_مصنوعی #Astra",
+   "status": "گزارش",
+   "models": [
+    {
+     "name": "Neon",
+     "maker": "آسترا",
+     "scores": []
+    },
+    {
+     "name": "Fable",
+     "maker": "آسترا",
+     "scores": []
+    },
+    {
+     "name": "Astra",
+     "maker": "آسترا",
+     "scores": []
+    }
+   ],
+   "events": [],
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 2,
+   "src": "ca67cb1cba33"
+  }
+ }
+}
