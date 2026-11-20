@@ -2849,6 +2849,126 @@
    "name_en": "BBC News",
    "name_fa": "بی‌بی‌سی نیوز",
    "kind": "company"
+  },
+  {
+   "slug": "ligo",
+   "name_en": "Ligo",
+   "name_fa": "لیگو",
+   "kind": "company"
+  },
+  {
+   "slug": "biobasicsbench",
+   "name_en": "BioBasicsBench",
+   "name_fa": "بیوبیسکس‌بنچ",
+   "kind": "product"
+  },
+  {
+   "slug": "rsa",
+   "name_en": "RSA",
+   "name_fa": "آر‌اس‌ای",
+   "kind": "product"
+  },
+  {
+   "slug": "remix",
+   "name_en": "Remix",
+   "name_fa": "ریمیکس",
+   "kind": "product"
+  },
+  {
+   "slug": "robocurve",
+   "name_en": "Robocurve",
+   "name_fa": "روبوکروو",
+   "kind": "company"
+  },
+  {
+   "slug": "gpt",
+   "name_en": "GPT",
+   "name_fa": "جی‌پی‌تی",
+   "kind": "model"
+  },
+  {
+   "slug": "nous-research",
+   "name_en": "Nous Research",
+   "name_fa": "نوس ریسرچ",
+   "kind": "company"
+  },
+  {
+   "slug": "arete-27b",
+   "name_en": "Arete-27B",
+   "name_fa": "آرتی-۲۷ بی",
+   "kind": "model"
+  },
+  {
+   "slug": "eden-ai",
+   "name_en": "Eden AI",
+   "name_fa": "ادکاک",
+   "kind": "company"
+  },
+  {
+   "slug": "trepoai",
+   "name_en": "TrepoAI",
+   "name_fa": "ترپو‌ای‌آی",
+   "kind": "company"
+  },
+  {
+   "slug": "shinkei",
+   "name_en": "Shinkei",
+   "name_fa": "شینکای",
+   "kind": "company"
+  },
+  {
+   "slug": "peter-thiel",
+   "name_en": "Peter Thiel",
+   "name_fa": "پیتر تیله",
+   "kind": "person"
+  },
+  {
+   "slug": "doubleai",
+   "name_en": "doubleAI",
+   "name_fa": "دابل‌ای‌آی",
+   "kind": "company"
+  },
+  {
+   "slug": "woof-tts",
+   "name_en": "Woof TTS",
+   "name_fa": "ووف تی‌تی‌اس",
+   "kind": "model"
+  },
+  {
+   "slug": "victor-mustar",
+   "name_en": "Victor Mustar",
+   "name_fa": "ویکتور موستار",
+   "kind": "person"
+  },
+  {
+   "slug": "maxxbench",
+   "name_en": "MaxxBench",
+   "name_fa": "مکس بنچ",
+   "kind": "company"
+  },
+  {
+   "slug": "deepswe",
+   "name_en": "DeepSWE",
+   "name_fa": "دیپ‌اس‌وی‌ای",
+   "kind": "product"
+  },
+  {
+   "slug": "opus-5",
+   "name_en": "Opus 5",
+   "name_fa": "اپوس ۵",
+   "kind": "model"
+  },
+  {
+   "slug": "ai-2027-tracker",
+   "name_en": "AI 2027 tracker",
+   "name_fa": "ترکر AI 2027",
+   "kind": "product"
+  },
+  {
+   "slug": "reinforcement-learning",
+   "name_en": "Reinforcement Learning",
+   "name_fa": "یادگیری تقویتی",
+   "kind": "model"
   }
  ]
 }
