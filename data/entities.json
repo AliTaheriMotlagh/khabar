@@ -2807,6 +2807,30 @@
    "name_en": "Gemini 4",
    "name_fa": "جمینای ۴",
    "kind": "model"
+  },
+  {
+   "slug": "alphaxiv",
+   "name_en": "AlphaXiv",
+   "name_fa": "آلفا‌اکس‌ای‌وی",
+   "kind": "product"
+  },
+  {
+   "slug": "stanford-university",
+   "name_en": "Stanford University",
+   "name_fa": "دانشگاه استنفورد",
+   "kind": "company"
+  },
+  {
+   "slug": "mit",
+   "name_en": "MIT",
+   "name_fa": "موسسه فناوری ماساچوست",
+   "kind": "company"
+  },
+  {
+   "slug": "journal-of-agent-research",
+   "name_en": "Journal of Agent Research",
+   "name_fa": "نشریه پژوهش ایجنت",
+   "kind": "product"
   }
  ]
 }
