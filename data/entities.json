@@ -3341,6 +3341,228 @@
    "name_en": "Starlight",
    "name_fa": "استارگیت",
    "kind": "product"
+  },
+  {
+   "slug": "ripple-65b",
+   "name_en": "Ripple-65B",
+   "name_fa": "ریپل ۶۵ بی",
+   "kind": "model"
+  },
+  {
+   "slug": "recursive",
+   "name_en": "Recursive",
+   "name_fa": "ریکرسیو",
+   "kind": "company"
+  },
+  {
+   "slug": "shayan-talaei",
+   "name_en": "Shayan Talaei",
+   "name_fa": "شایان طلایی",
+   "kind": "person"
+  },
+  {
+   "slug": "llama-32",
+   "name_en": "Llama-3.2",
+   "name_fa": "لاما ۳.۲",
+   "kind": "model"
+  },
+  {
+   "slug": "moonshot",
+   "name_en": "Moonshot",
+   "name_fa": "مون‌شات",
+   "kind": "company"
+  },
+  {
+   "slug": "longcat",
+   "name_en": "LongCat",
+   "name_fa": "لانگ‌کت",
+   "kind": "model"
+  },
+  {
+   "slug": "meituan",
+   "name_en": "Meituan",
+   "name_fa": "میتوان",
+   "kind": "company"
+  },
+  {
+   "slug": "ilya-strobelf",
+   "name_en": "Ilya Strobelf",
+   "name_fa": "ایلیا استربولائف",
+   "kind": "person"
+  },
+  {
+   "slug": "unicorn",
+   "name_en": "Unicorn",
+   "name_fa": "یونیکورن",
+   "kind": "product"
+  },
+  {
+   "slug": "wall-street-journal",
+   "name_en": "Wall Street Journal",
+   "name_fa": "وال‌استریت ژورنال",
+   "kind": "company"
+  },
+  {
+   "slug": "google-cloud",
+   "name_en": "Google Cloud",
+   "name_fa": "گوگل کلود",
+   "kind": "product"
+  },
+  {
+   "slug": "ai-interface",
+   "name_en": "AI Interface",
+   "name_fa": "اینترفیس اختصاصی هوش مصنوعی",
+   "kind": "product"
+  },
+  {
+   "slug": "alexey-kuchayev",
+   "name_en": "Alexey Kuchayev",
+   "name_fa": "الکسی کوچایف",
+   "kind": "person"
+  },
+  {
+   "slug": "nathan-lambert",
+   "name_en": "Nathan Lambert",
+   "name_fa": "نیتن لمبرت",
+   "kind": "person"
+  },
+  {
+   "slug": "rlhfbookcom",
+   "name_en": "rlhfbook.com",
+   "name_fa": "کتاب رال‌اف‌ای‌بی",
+   "kind": "product"
+  },
+  {
+   "slug": "material-science",
+   "name_en": "Material Science",
+   "name_fa": "علم مواد",
+   "kind": "model"
+  },
+  {
+   "slug": "frontier-models",
+   "name_en": "Frontier Models",
+   "name_fa": "مدل‌های پیشرو",
+   "kind": "model"
+  },
+  {
+   "slug": "google-research",
+   "name_en": "Google Research",
+   "name_fa": "گوگل ریسرچ",
+   "kind": "company"
+  },
+  {
+   "slug": "nature",
+   "name_en": "Nature",
+   "name_fa": "نیچر",
+   "kind": "company"
+  },
+  {
+   "slug": "smartwatch",
+   "name_en": "Smartwatch",
+   "name_fa": "ساعت هوشمند",
+   "kind": "product"
+  },
+  {
+   "slug": "gpt-6-cyber",
+   "name_en": "GPT-6 Cyber",
+   "name_fa": "GPT-6 سایبر",
+   "kind": "product"
+  },
+  {
+   "slug": "linux",
+   "name_en": "Linux",
+   "name_fa": "لینوکس",
+   "kind": "product"
+  },
+  {
+   "slug": "mozilla",
+   "name_en": "Mozilla",
+   "name_fa": "موزیلا",
+   "kind": "company"
+  },
+  {
+   "slug": "palo-alto-networks",
+   "name_en": "Palo Alto Networks",
+   "name_fa": "پالو آلتو",
+   "kind": "company"
+  },
+  {
+   "slug": "gemini-omni-12-flash",
+   "name_en": "Gemini Omni 1.2 Flash",
+   "name_fa": "جمینای امونی ۱.۲ فلش",
+   "kind": "model"
+  },
+  {
+   "slug": "physical-ai",
+   "name_en": "Physical AI",
+   "name_fa": "هوش مصنوعی فیزیکی",
+   "kind": "product"
+  },
+  {
+   "slug": "zipline",
+   "name_en": "Zipline",
+   "name_fa": "زیپ‌لاین",
+   "kind": "company"
+  },
+  {
+   "slug": "walmart",
+   "name_en": "Walmart",
+   "name_fa": "وال‌مارت",
+   "kind": "company"
+  },
+  {
+   "slug": "paradigm",
+   "name_en": "Paradigm",
+   "name_fa": "پارادایم",
+   "kind": "company"
+  },
+  {
+   "slug": "wcm",
+   "name_en": "WCM",
+   "name_fa": "ای‌سی‌ام",
+   "kind": "company"
+  },
+  {
+   "slug": "teammates",
+   "name_en": "Teammates",
+   "name_fa": "تیم‌میتس",
+   "kind": "product"
+  },
+  {
+   "slug": "polemos",
+   "name_en": "Polemos",
+   "name_fa": "پلموس",
+   "kind": "company"
+  },
+  {
+   "slug": "mistral",
+   "name_en": "Mistral",
+   "name_fa": "میسترال",
+   "kind": "company"
+  },
+  {
+   "slug": "le-chonk",
+   "name_en": "Le Chonk",
+   "name_fa": "ل شونک",
+   "kind": "model"
+  },
+  {
+   "slug": "mistral-studio",
+   "name_en": "Mistral Studio",
+   "name_fa": "میسترال استودیو",
+   "kind": "product"
+  },
+  {
+   "slug": "tiktok",
+   "name_en": "TikTok",
+   "name_fa": "تیک‌تاک",
+   "kind": "company"
+  },
+  {
+   "slug": "bytenn",
+   "name_en": "ByteNN",
+   "name_fa": "بایت‌ان",
+   "kind": "model"
   }
  ]
 }
