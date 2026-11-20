@@ -1,0 +1,153 @@
+{
+ "id": 6668,
+ "url": "https://t.me/dlmehr/6668",
+ "date": "2026-11-20T20:31:45+00:00",
+ "text": "https://fxtwitter.com/baseten/status/2123871986862772641?a=ic6M1k5Zc4FzsMAq_8E&s=52",
+ "forwarded_from": null,
+ "digest": false,
+ "hash": "c0728975cfd0",
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/baseten/status/2123871986862772641?a=ic6M1k5Zc4FzsMAq_8E&s=52",
+  "site": "🧵 Thread • FxTwitter",
+  "title": "Baseten (@baseten)",
+  "description": "We just released the #1-ranked decision model, again.\nbison-1 and groundhog-1 are built on an American backbone (Gemma 4). They deliver improved quality and similar speed to mammoth-1 and elephant-1, with a 128k context window and multimodal support (images…",
+  "image": "https://cdn4.telesco.pe/file/kqAGp8zs5zBLc0OXwMwfp5l9T_JTWAZQP8rem_2_wr9fUdtSGiZKuy3__zM4Gas4xuk68vu-62m1GlNJ-0e9A4jVsZzdvwkbk0ZArRZ18jwEVYhZeNPUfNTEUV-McFWKj69Kc2_UYC4Ada8BpoC9Ya3v-JzTQAiL7phBdKZhAMFiUntwDmhkMcxPC-xUxb6HePAofsQqKXKcatp_dUOXXp4im1ctk-ile6WNzmKRbYPZ-bZLjRbUwzda5PYg0Xfri_4dRO1Bel37GyMbmAdhZlO_DbKH6RYc7Sj1qtdS4MjOCeD-_Ce-K6M1jRZI4F23SHlja2OyBm7FjUM1KCe80w.jpg"
+ },
+ "gholam": {
+  "text": "رفقا، شرکت بستن (Baseten) دوتا مدل تصمیم‌گیری جدید به اسم‌های bison-1 و groundhog-1 معرفی کرده که این بار به‌جای پایه‌های قبلی (Qwen)، روی مدل آمریکایی Gemma 4 گوگل ساخته شدن. 🤖 مزیت مهم این مدل‌های جدید اینه که هم ورودی تصویر و متن رو با هم قبول می‌کنن و هم پنجره متنشون هشت برابر شده و به ۱۲۸ هزار توکن رسیده؛ یعنی مدل دیگه فقط تهِ ماجرا رو نمی‌بینه که مثلاً یه فاکتور رو بی‌خبر تأیید کنه، در حالی که چند تا ایمیل قبل‌تر نوشته بودن همون سفارش کنسل شده.\n\n• طبق اعلام بستن و نمودار شاخص Artificial Analysis، مدل ۳۱ میلیارد پارامتری bison-1 با امتیاز ۷۶ بین ۱۹ مدل تصمیم‌گیری اول شده و با امتیاز برایر ۰.۱۴ بهترین کالیبراسیون رو داشته (یعنی میزان اطمینانش به درست بودن جواب، به واقعیت نزدیک‌تره).\n• مدل سبک‌تر groundhog-1 (با ۲۶ میلیارد پارامتر کلی و حدود ۴ میلیارد پارامتر فعال) هنوز تو رده‌بندی رسمی ثبت نشده، ولی شرکت سازنده انتظار داره عملکردش هم‌سطح مدل قبلی‌شون یعنی mammoth-1 (با امتیاز ۷۱) باشه.\n• هر دو مدل از امروز با وزن‌های باز روی هاگینگ‌فیس و از طریق API بستن (به ترتیب با قیمت ۰.۱ و ۰.۰۳۵ دلار به ازای هر میلیون توکن) در دسترس هستن.",
+  "date": "2026-11-20T20:32:24+00:00"
+ },
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/baseten/status/2123871986862772641",
+   "domain": "x.com",
+   "author": {
+    "name": "Baseten",
+    "handle": "baseten",
+    "avatar": "https://pbs.twimg.com/profile_images/1924485072801140736/VyZekL_z_200x200.jpg"
+   },
+   "text": "We just released the #1-ranked decision model, again.\n\nbison-1 and groundhog-1 are built on an American backbone (Gemma 4). They deliver improved quality and similar speed to mammoth-1 and elephant-1, with a 128k context window and multimodal support (images + text).\n\nhttp://baseten.co/blog/meet-bison-1-and-groundhog-1/",
+   "date": 1795205515,
+   "media": [
+    {
+     "type": "image",
+     "src": "https://pbs.twimg.com/media/HXmAEFjbYAAOQdp.png?name=orig",
+     "ratio": 0.5625
+    },
+    {
+     "type": "image",
+     "src": "https://pbs.twimg.com/media/HXmAEGwbgAAK7Jf.png?name=orig",
+     "ratio": 0.5625
+    }
+   ],
+   "links": [
+    "http://baseten.co/blog/meet-bison-1-and-groundhog-1/"
+   ]
+  },
+  {
+   "kind": "link",
+   "url": "https://www.baseten.co/blog/meet-bison-1-and-groundhog-1/",
+   "domain": "baseten.co",
+   "title": "Meet bison-1 and groundhog-1, frontier American decision models",
+   "description": "Meet bison-1 and groundhog-1: open decision models on an American backbone (Gemma 4). bison-1 is the #1-ranked decision model on Artificial Analysis.",
+   "image": "https://www.datocms-assets.com/104802/1795202394-blog-image_bison.png?auto=format&w=1600",
+   "site": "Baseten"
+  }
+ ],
+ "article": {
+  "title": "شرکت بستن (Baseten) دوتا مدل تصمیم‌گیری جدید به اسم‌های bison-1 و groundhog-1 معرفی کرده که این بار به‌جای پایه‌های قبلی (Qwen)، روی مدل آمریکایی Gemma 4 گوگل ساخته شدن",
+  "source_title": "We just released the #1-ranked decision model, again.",
+  "body": [
+   "شرکت بستن (Baseten) دوتا مدل تصمیم‌گیری جدید به اسم‌های bison-1 و groundhog-1 معرفی کرده که این بار به‌جای پایه‌های قبلی (Qwen)، روی مدل آمریکایی Gemma 4 گوگل ساخته شدن. 🤖 مزیت مهم این مدل‌های جدید اینه که هم ورودی تصویر و متن رو با هم قبول می‌کنن و هم پنجره متنشون هشت برابر شده و به ۱۲۸ هزار توکن رسیده؛ یعنی مدل دیگه فقط تهِ ماجرا رو نمی‌بینه که مثلاً یه فاکتور رو بی‌خبر تأیید کنه، در حالی که چند تا ایمیل قبل‌تر نوشته بودن همون سفارش کنسل شده.",
+   "• طبق اعلام بستن و نمودار شاخص Artificial Analysis، مدل ۳۱ میلیارد پارامتری bison-1 با امتیاز ۷۶ بین ۱۹ مدل تصمیم‌گیری اول شده و با امتیاز برایر ۰.۱۴ بهترین کالیبراسیون رو داشته (یعنی میزان اطمینانش به درست بودن جواب، به واقعیت نزدیک‌تره).",
+   "• مدل سبک‌تر groundhog-1 (با ۲۶ میلیارد پارامتر کلی و حدود ۴ میلیارد پارامتر فعال) هنوز تو رده‌بندی رسمی ثبت نشده، ولی شرکت سازنده انتظار داره عملکردش هم‌سطح مدل قبلی‌شون یعنی mammoth-1 (با امتیاز ۷۱) باشه.",
+   "• هر دو مدل از امروز با وزن‌های باز روی هاگینگ‌فیس و از طریق API بستن (به ترتیب با قیمت ۰.۱ و ۰.۰۳۵ دلار به ازای هر میلیون توکن) در دسترس هستن."
+  ],
+  "why": null,
+  "tags": [
+   "گوگل",
+   "چین"
+  ]
+ },
+ "updated": "2026-11-20T20:43:53+00:00",
+ "ai": {
+  "title": "بستن مدل‌های تصمیم‌گیری Bison-1 و Groundhog-1 را با پایه Gemma 4 عرضه کرد",
+  "short": "مدل‌های Bison و Groundhog",
+  "topics": [
+   "متن‌باز"
+  ],
+  "type": "ابزار و محصول",
+  "model": "qwen3.5-9b-q4_k_m",
+  "v": 2,
+  "src": "8a995b9409a4",
+  "x": {
+   "importance": 4,
+   "entities": [
+    {
+     "name_en": "Baseten",
+     "name_fa": "بستن",
+     "kind": "company"
+    },
+    {
+     "name_en": "Bison-1",
+     "name_fa": "بایسون-۱",
+     "kind": "model"
+    },
+    {
+     "name_en": "Groundhog-1",
+     "name_fa": "گراند‌هگ-۱",
+     "kind": "model"
+    },
+    {
+     "name_en": "Gemma 4",
+     "name_fa": "جما ۴",
+     "kind": "model"
+    }
+   ],
+   "terms": [
+    {
+     "term": "کالیبراسیون",
+     "def": "میزان تطابق بین میزان اطمینان مدل از پاسخ و درستی واقعی آن پاسخ."
+    },
+    {
+     "term": "وزن‌های باز",
+     "def": "پارامترهای مدل که به صورت رایگان برای دانلود و استفاده عمومی در دسترس هستند."
+    }
+   ],
+   "simple": "شرکت بستن دو مدل جدید تصمیم‌گیری معرفی کرد که روی مدل گوگل ساخته شده‌اند. این مدل‌ها می‌توانند همزمان عکس و متن را بخوانند و حافظه‌ی بسیار بزرگی دارند تا تمام مکالمات قبلی را فراموش نکنند.",
+   "quiz": {
+    "q": "مزیت اصلی مدل‌های Bison-1 و Groundhog-1 نسبت به مدل‌های قبلی چیست؟",
+    "options": [
+     "فقط متن را پردازش می‌کنند نه تصویر",
+     "پنجره متن آن‌ها هشت برابر شده و ورودی تصویر هم دارند",
+     "فقط روی سیستم‌های قدیمی کار می‌کنند"
+    ],
+    "answer": 1
+   },
+   "video": {
+    "hook": "مدل‌های تصمیم‌گیری جدید با حافظه‌ی ۱۲۸ هزار توکن",
+    "points": [
+     "بستن مدل‌های Bison-1 و Groundhog-1 را با پایه Gemma 4 عرضه کرد",
+     "این مدل‌ها هم تصویر و هم متن را با هم پردازش می‌کنند",
+     "پنجره متن آن‌ها به ۱۲۸ هزار توکن رسیده تا تمام تاریخچه را ببینند"
+    ],
+    "why": "مدل‌های تصمیم‌گیری با دیدن کل تاریخچه، خطاهای ناشی از فراموشی اطلاعات قبلی را کاهش می‌دهند."
+   },
+   "share": "مدل‌های Bison-1 و Groundhog-1 با پایه Gemma 4 عرضه شدند.\nحافظه ۱۲۸ هزار توکنی و پردازش همزمان تصویر و متن.\n#هوش_مصنوعی #مدل_زبان",
+   "status": "رسمی",
+   "models": [
+    {
+     "name": "Bison-1",
+     "maker": "بستن",
+     "scores": []
+    }
+   ],
+   "events": [],
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 2,
+   "src": "02d81978e318"
+  }
+ }
+}

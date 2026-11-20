@@ -3137,6 +3137,24 @@
    "name_en": "Inkling 2 Mini",
    "name_fa": "اینکلینگ ۲ مینی",
    "kind": "model"
+  },
+  {
+   "slug": "bison-1",
+   "name_en": "Bison-1",
+   "name_fa": "بایسون-۱",
+   "kind": "model"
+  },
+  {
+   "slug": "groundhog-1",
+   "name_en": "Groundhog-1",
+   "name_fa": "گراند‌هگ-۱",
+   "kind": "model"
+  },
+  {
+   "slug": "gemma-4",
+   "name_en": "Gemma 4",
+   "name_fa": "جما ۴",
+   "kind": "model"
   }
  ]
 }
