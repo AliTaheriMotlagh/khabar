@@ -12,7 +12,7 @@
   "site": "FxTwitter · microsoft.ai",
   "title": "Microsoft AI (@MicrosoftAI)",
   "description": "MAI Realtime 1 outperforms GPT-Realtime 2.1 and starts at just $0.01 per audio minute. https://msft.it/6018xEmwC",
-  "image": "https://cdn4.telesco.pe/file/R5nZ6J9y1XsWkS78y_9fF3IpK8E0tnDo-cv1rXmaGjek1BzmY3BDx_H4ueCDrS3foUuSyoKBt0prIhTgfpIbLIbDvaVb2ecdSAhg8QSnh0evv8Y27cbX0L6gwPyp60nTyVPHMTsdl4-YKjLeTCVAZZfP9TCc-60UeOaBY5n6rZDIok-lzIOKLVwC42aRsvfaxhZIcu3wRa9Ss-8P960KjrjrIJF1kU84tWyiuaPwVvck2ock8IWqFkxW5cnIVquOnmZrIK4NEDVL8yyB0ctJVo2piQ0CQD2E2FVDq5gMmU7Nx0XljZnqE96xI3uWaGeCFloN2En2RtyiIjT5-ihTKA.jpg",
+  "image": "https://cdn4.telesco.pe/file/PhYspQo5qGP3nhqrHtBVEXam9jEzMK-qcRjt_bqKXfuwHB0lBqy1hFIYNX-RUz4GcxQExMdsUE-ul-N98IiwVHHNSgMho5JiWKRdXu651u5iAm7f9C_fCtztSpTStl51CYY18CT7rJLzReB6YUAhSosVWVlh7v8yk8EDkUEbdacKUjqWsmyijUSKVf6yR0TR6WpzJW3P7l-nEJKYnlWYOm6YRy1chs9EPBpbA3PLhKJy8r0FWgQ0JZXAwUVGZiuc_ZgtiWxJ_9LLQUkpcw3KTkbC6JKVIyQFaCKZFhkb0QL5KQ5gH4su-6awRCq2WzbxVo2rij92oocbkfybQgXL8w.jpg",
   "small": true
  },
  "gholam": {
@@ -101,6 +101,11 @@
    "model": "qwen3.5-9b-q4_k_m",
    "v": 2,
    "src": "f0b9e42e6628"
+  },
+  "speech": {
+   "v": 1,
+   "src": "b87a95ea3578",
+   "added": 8
   }
  },
  "links": [
@@ -147,5 +152,5 @@
    "صدا و موسیقی"
   ]
  },
- "updated": "2026-11-20T11:21:08+00:00"
+ "updated": "2026-11-20T17:21:30+00:00"
 }

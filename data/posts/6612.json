@@ -12,7 +12,7 @@
   "site": "FxTwitter · misanthropicstatement.com",
   "title": "Center for AI Safety (@CAIS)",
   "description": "Ahead of Anthropic’s IPO, a rare coalition across AI safety, open source, e/acc, science, and law has signed the MisAnthropic Statement. Read the statement or sign at: https://misanthropicstatement.com/",
-  "image": "https://cdn4.telesco.pe/file/vT7PvoZrVGJIC4R5vo6L6DHq5YXLc7TRbyx6qDC0VmhSB4yQ7OAa2gcuuLriAkhf-hSsKx3vHsrPvwqVxkVf0tSOxYP8kcz1fQsDzsW7xaU_r0myEdXGQ7jT5T6uVfwxm1-Ll14Yyvkai3H9qgbZXcOyw7CP2_sL6a-Gdm4qDyIidDWqtw358ozqBet6nZlvRpWrnC4csuxaDOWPmOpOiq3JFLLsVKO_E-jV1R6F6XUdY0rpAl6tzggOl2MsSC5OToKiMpjMChA7g3oT5oyIOuDyXLLv4Gm6pmCcbACvjjTxFvtG1tpRv_RtVivLCtTblaAD5d0FGxF5Z6g_GOlXFA.jpg",
+  "image": "https://cdn4.telesco.pe/file/feLAThoQyTgVLkUcndqVHyhFWN2LPpcAM3bbk4qwGASDEccV-FSli5s0pCwB8yR41UfEvxVZ9V0Dg9p_esTX7DsDqIQAB6DfFZ2hveFdN5NX3XGFLDLIdsUpcVSPmIsETzPKRie6RLFQ-ZZgIaQEU-mzu2IkLpBBGxnEeYjukGGLQ0LLcwX-fFb1GUzC5BPXx7j2l2W3Jm6aNBPHZ3wOPLqyFYPrbXoWKCMfr5SoyzCNfW2hHJPoQRy-ClpK7KP2KCDyZfSdW1aaY-185Dg-QTdPwTTnt_eF_SJV8thkK1tYRkOkVpwFfbgChi-I3u2O26i0JTRwNxf9oNDoLR9EMA.jpg",
   "small": true
  },
  "gholam": {
@@ -100,6 +100,11 @@
    "model": "qwen3.5-9b-q4_k_m",
    "v": 2,
    "src": "6a2a31fb176e"
+  },
+  "speech": {
+   "v": 1,
+   "src": "1a186d8a414d",
+   "added": 4
   }
  },
  "links": [
@@ -143,5 +148,5 @@
    "متن‌باز"
   ]
  },
- "updated": "2026-11-20T11:21:08+00:00"
+ "updated": "2026-11-20T17:21:30+00:00"
 }

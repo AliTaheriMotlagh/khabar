@@ -12,7 +12,7 @@
   "site": "FxTwitter",
   "title": "RightNow (YC F26) (@rightnow_co)",
   "description": "RightNow decision model v3 is live\nit makes decisions -- while the input is still arriving\nstream in text, JSON, robot state, a codebase, PDFs, images, voice or video. ask your questions. get an answer with a probability for every option\n~30 ms per decision.…",
-  "image": "https://cdn4.telesco.pe/file/gUv2z9aNRrQ2A3HiljLZb9qHxACiguN9s8uNHzV9U6-QsG4RTsxyaXF5IXiHgx920NS2v3YUqizl586EMax08f9pGbbNchvHiLBV3FnK4N7cKEwvNv0Prg37sxoTiNzwwQWMchK21k-Y6YZ_L63jwgIb2F-o0-Uymf-YgFSSJha42Awy0IWIh2R7t8wlgKyT-kEQhMXyO5w3uNWFTnvfFT1N44ViY-gWJwwcRz9FIAkOmpz_lJt2z3aqoQw6IuMu3FqE0wIxIJpmMLhOpSdCZEG61jX0X4IRPt3GANTnRNUL8IRAWtO1d2wpoBGlnR8T6GhC-60qK4icJs5gTutJog.jpg"
+  "image": "https://cdn4.telesco.pe/file/Z9EgS1cqifzguuD6DJSkfrYnjLRDwXF3FhPyrfo6FQF9BMHxceCgXuI_cOv6igPSv28WL3_8oZqwPVp-LyfGK5XZDGO8d5UWuyMUZTahIYnnrXaive38_nHwGDgE_E54MRL6XpWA_5jX1c_IGN9RrRBdrWxcKnYuHOZMJtme97DlCKnXFK5JhxmnrC2c8Y-c15CLisovqCSUIIB4AjfvU9phDnJeapDTof_-BDkLxyKBA6NJhRfwbom_yXQY8Gld1xVPULN1MhOjnoA2OwbTm9ZG47zHHAZRQUWLbqZt_31I_Yd1_lgcZkceznw5jdQAaK4mafSeBqTgNAtR19A8mA.jpg"
  },
  "gholam": {
   "text": "رفقا، شرکت RightNow نسخه سوم مدل تصمیم‌گیر خودش (RightNow decision model v3) رو منتشر کرده که به گفته خودشون برای کارهای فوری مثل هدایت ربات‌ها، انتخاب ابزار توسط ایجنت‌ها یا مسیریابی تیکت‌های پشتیبانی ساخته شده. ویژگی اصلیش اینه که صبر نمی‌کنه فایل یا حرفتون کامل برسه و هم‌زمان با ورود داده، تصمیمش رو لحظه‌به‌لحظه آپدیت می‌کنه و برای هر گزینه درصد احتمال می‌ده؛ یه جورایی مثل شاگرد مغازه فرزی که هنوز جمله‌ت تموم نشده، دستش می‌ره سمت جنس درست! ⚡\n\n• به ادعای این شرکت، مدل ۸ نوع ورودی (متن، JSON، وضعیت ربات، کد، PDF، تصویر، صدا و پیش‌نمایش ویدیو) رو می‌گیره و هر تصمیمش حدود ۳۰ میلی‌ثانیه زمان می‌بره؛ نرخ پایه هر سؤال هم ۰.۰۰۰۱ دلار اعلام شده که البته با هزینه توکن و کارمزد تماس، تو مثال ۵۰۰ توکنی سایتشون کل هر درخواست حدود ۰.۰۰۰۲۰۵ دلار درمیاد.\n• در حالی که پست معرفی از کانتکست تا ۱ میلیون توکن می‌گه، جدول مشخصات سایت کانتکست استاندارد رو ۳۸ هزار توکن و قابلیت استریم رو فقط به‌صورت سرور به سرور ذکر کرده.\n• تو جدول بنچمارک سایتشون هم امتیاز ۶۳.۲۰ برای این مدل درج شده، اما خود RightNow AI تصریح کرده که این عدد حاصل آزمایش داخلی خودشونه و ارزیابی مستقل Artificial Analysis نیست.",
@@ -84,6 +84,11 @@
    "model": "qwen3.5-9b-q4_k_m",
    "v": 2,
    "src": "79ba4ee56c33"
+  },
+  "speech": {
+   "v": 1,
+   "src": "c9903d4dfe15",
+   "added": 7
   }
  },
  "links": [
@@ -133,5 +138,5 @@
    "ایجنت"
   ]
  },
- "updated": "2026-11-20T11:21:08+00:00"
+ "updated": "2026-11-20T17:21:30+00:00"
 }

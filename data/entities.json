@@ -2831,6 +2831,24 @@
    "name_en": "Journal of Agent Research",
    "name_fa": "نشریه پژوهش ایجنت",
    "kind": "product"
+  },
+  {
+   "slug": "daraksonrasib",
+   "name_en": "Daraksonrasib",
+   "name_fa": "داراکسونراسیب",
+   "kind": "product"
+  },
+  {
+   "slug": "british-institute-of-cancer-research",
+   "name_en": "British Institute of Cancer Research",
+   "name_fa": "مؤسسه تحقیقات سرطان بریتانیا",
+   "kind": "company"
+  },
+  {
+   "slug": "bbc-news",
+   "name_en": "BBC News",
+   "name_fa": "بی‌بی‌سی نیوز",
+   "kind": "company"
   }
  ]
 }

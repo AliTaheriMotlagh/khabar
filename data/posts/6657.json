@@ -19,50 +19,6 @@
   "text": "سلام رفقا! ما هنوز سر حساب‌کتابِ دنگِ کبابِ دورهمی ماشین‌حساب درمیاریم، ولی ساینتیفیک آمریکن خبر داده که «لونت آلپوگه»، ریاضی‌دان شرکت آنتروپیک، روز جمعه مدعی شده با کمک هوش مصنوعی «کلاد» تونسته «فرضیه ریمان» رو اثبات کنه؛ همون معمای ۱۶۷ ساله‌ای که سال ۱۸۵۹ درباره نظم پنهان اعداد اول مطرح شد و معروف‌ترین مسئله حل‌نشده ریاضی به حساب میاد. 🧮\n\n• آقای آلپوگه توی بیانیه‌اش گفته به نظرش با همکاری کلاد به اثباتی رسیده که حتی «فرضیه تعمیم‌یافته ریمان» رو هم تأیید می‌کنه و اون رو توی زبان برنامه‌نویسی «لین» (Lean) کدنویسی کرده که برای بررسی درستی منطقی اثبات‌ها به کار می‌ره.\n• البته ساینتیفیک آمریکن یادآوری کرده که این هنوز در حد ادعاست و ممکنه توی خودِ «لین» هم اشکالاتی پیش بیاد؛ بنابراین متخصص‌ها هنوز باید بررسی کنن که آیا فرضیه درست کدنویسی شده و اثبات واقعاً بی‌نقصه یا نه، هرچند ظاهراً نباید زمان زیادی ببره.\n• توی این گزارش اشاره شده که همین پژوهشگر ماه ژوئیه هم یک راه‌حل تولیدشده با کلاد برای «حدس ژاکوبین» منتشر کرده بود و در ماه اکتبر هم یکی از نتایج ریاضی OpenAI پیشرفت مهمی روی مسئله اعداد اول داشته.\n\nخودِ آلپوگه هم گفته طبیعیه بعضی ریاضی‌دان‌ها با از دست رفتنِ یکی از راهنماهای اصلی‌شون حسِ فقدان داشته باشن، اما به آینده کشفیات علمی خوش‌بین مونده؛ حالا باید صبر کرد و دید جامعه ریاضی مهر تأیید پای این اثبات می‌زنه یا نه.",
   "date": "2026-11-20T15:34:46+00:00"
  },
- "links": [
-  {
-   "kind": "tweet",
-   "url": "https://x.com/sciam/status/2123782587235655707",
-   "domain": "x.com",
-   "author": {
-    "name": "Scientific American",
-    "handle": "sciam",
-    "avatar": "https://pbs.twimg.com/profile_images/1704126231371771905/McZuDEgT_200x200.jpg"
-   },
-   "text": "BREAKING: A mathematician at Anthropic claims to have used the company's AI to solve the Riemann hypothesis, the most notorious open problem in all of math\n\nhttps://sciam.com/article/anthropic-mathematician-claims-to-prove-riemann-hypothesis-most-famous-problem-in-all-of-math/?utm_source=twitter&utm_medium=social&utm_campaign=buffer",
-   "date": 1795184201,
-   "media": [],
-   "links": [
-    "https://sciam.com/article/anthropic-mathematician-claims-to-prove-riemann-hypothesis-most-famous-problem-in-all-of-math/?utm_source=twitter&utm_medium=social&utm_campaign=buffer"
-   ]
-  },
-  {
-   "kind": "link",
-   "url": "https://www.scientificamerican.com/article/anthropic-mathematician-claims-to-prove-riemann-hypothesis-most-famous-problem-in-all-of-math/?utm_source=twitter&utm_medium=social&utm_campaign=buffer",
-   "domain": "scientificamerican.com",
-   "title": "Anthropic mathematician claims to prove Riemann hypothesis, most famous problem in all of math",
-   "description": "An AI-generated solution of the 167-year-old problem, long considered far out of reach to human mathematicians, would cap off the technology’s year-long conquest of math in spectacular fashion",
-   "image": "https://static.scientificamerican.com/dam/asset/cee10388-a264-4ba7-b944-7f0a8daf537d/riemann.jpg?m=1795183538.4&w=1200",
-   "site": "Scientific American"
-  }
- ],
- "article": {
-  "title": "ما هنوز سر حساب‌کتابِ دنگِ کبابِ دورهمی ماشین‌حساب درمیاریم، ولی ساینتیفیک آمریکن خبر داده که «لونت آلپوگه»، ریاضی‌دان شرکت آنتروپیک، روز جمعه مدعی شده با کمک هوش مصنوعی «کلاد» تونسته «فرضیه ریمان»…",
-  "source_title": "BREAKING: A mathematician at Anthropic claims to have used the company's AI to solve the Riemann hypothesis, the most notorious open…",
-  "body": [
-   "ما هنوز سر حساب‌کتابِ دنگِ کبابِ دورهمی ماشین‌حساب درمیاریم، ولی ساینتیفیک آمریکن خبر داده که «لونت آلپوگه»، ریاضی‌دان شرکت آنتروپیک، روز جمعه مدعی شده با کمک هوش مصنوعی «کلاد» تونسته «فرضیه ریمان» رو اثبات کنه؛ همون معمای ۱۶۷ ساله‌ای که سال ۱۸۵۹ درباره نظم پنهان اعداد اول مطرح شد و معروف‌ترین مسئله حل‌نشده ریاضی به حساب میاد. 🧮",
-   "• آقای آلپوگه توی بیانیه‌اش گفته به نظرش با همکاری کلاد به اثباتی رسیده که حتی «فرضیه تعمیم‌یافته ریمان» رو هم تأیید می‌کنه و اون رو توی زبان برنامه‌نویسی «لین» (Lean) کدنویسی کرده که برای بررسی درستی منطقی اثبات‌ها به کار می‌ره.",
-   "• البته ساینتیفیک آمریکن یادآوری کرده که این هنوز در حد ادعاست و ممکنه توی خودِ «لین» هم اشکالاتی پیش بیاد؛ بنابراین متخصص‌ها هنوز باید بررسی کنن که آیا فرضیه درست کدنویسی شده و اثبات واقعاً بی‌نقصه یا نه، هرچند ظاهراً نباید زمان زیادی ببره.",
-   "• توی این گزارش اشاره شده که همین پژوهشگر ماه ژوئیه هم یک راه‌حل تولیدشده با کلاد برای «حدس ژاکوبین» منتشر کرده بود و در ماه اکتبر هم یکی از نتایج ریاضی OpenAI پیشرفت مهمی روی مسئله اعداد اول داشته."
-  ],
-  "why": "خودِ آلپوگه هم گفته طبیعیه بعضی ریاضی‌دان‌ها با از دست رفتنِ یکی از راهنماهای اصلی‌شون حسِ فقدان داشته باشن، اما به آینده کشفیات علمی خوش‌بین مونده؛ حالا باید صبر کرد و دید جامعه ریاضی مهر تأیید پای این اثبات می‌زنه یا نه.",
-  "why_label": "حرف آخر",
-  "tags": [
-   "علم",
-   "آنتروپیک"
-  ]
- },
- "updated": "2026-11-20T15:38:36+00:00",
  "ai": {
   "title": "ریاضی‌دان آنتروپیک ادعا کرد کلاد فرضیه ریمان را اثبات کرد",
   "short": "اثبات فرضیه ریمان با کلاد",
@@ -139,5 +95,49 @@
    "v": 2,
    "src": "f50c789ccdc0"
   }
- }
+ },
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/sciam/status/2123782587235655707",
+   "domain": "x.com",
+   "author": {
+    "name": "Scientific American",
+    "handle": "sciam",
+    "avatar": "https://pbs.twimg.com/profile_images/1704126231371771905/McZuDEgT_200x200.jpg"
+   },
+   "text": "BREAKING: A mathematician at Anthropic claims to have used the company's AI to solve the Riemann hypothesis, the most notorious open problem in all of math\n\nhttps://sciam.com/article/anthropic-mathematician-claims-to-prove-riemann-hypothesis-most-famous-problem-in-all-of-math/?utm_source=twitter&utm_medium=social&utm_campaign=buffer",
+   "date": 1795184201,
+   "media": [],
+   "links": [
+    "https://sciam.com/article/anthropic-mathematician-claims-to-prove-riemann-hypothesis-most-famous-problem-in-all-of-math/?utm_source=twitter&utm_medium=social&utm_campaign=buffer"
+   ]
+  },
+  {
+   "kind": "link",
+   "url": "https://www.scientificamerican.com/article/anthropic-mathematician-claims-to-prove-riemann-hypothesis-most-famous-problem-in-all-of-math/?utm_source=twitter&utm_medium=social&utm_campaign=buffer",
+   "domain": "scientificamerican.com",
+   "title": "Anthropic mathematician claims to prove Riemann hypothesis, most famous problem in all of math",
+   "description": "An AI-generated solution of the 167-year-old problem, long considered far out of reach to human mathematicians, would cap off the technology’s year-long conquest of math in spectacular fashion",
+   "image": "https://static.scientificamerican.com/dam/asset/cee10388-a264-4ba7-b944-7f0a8daf537d/riemann.jpg?m=1795183538.4&w=1200",
+   "site": "Scientific American"
+  }
+ ],
+ "article": {
+  "title": "ما هنوز سر حساب‌کتابِ دنگِ کبابِ دورهمی ماشین‌حساب درمیاریم، ولی ساینتیفیک آمریکن خبر داده که «لونت آلپوگه»، ریاضی‌دان شرکت آنتروپیک، روز جمعه مدعی شده با کمک هوش مصنوعی «کلاد» تونسته «فرضیه ریمان»…",
+  "source_title": "BREAKING: A mathematician at Anthropic claims to have used the company's AI to solve the Riemann hypothesis, the most notorious open…",
+  "body": [
+   "ما هنوز سر حساب‌کتابِ دنگِ کبابِ دورهمی ماشین‌حساب درمیاریم، ولی ساینتیفیک آمریکن خبر داده که «لونت آلپوگه»، ریاضی‌دان شرکت آنتروپیک، روز جمعه مدعی شده با کمک هوش مصنوعی «کلاد» تونسته «فرضیه ریمان» رو اثبات کنه؛ همون معمای ۱۶۷ ساله‌ای که سال ۱۸۵۹ درباره نظم پنهان اعداد اول مطرح شد و معروف‌ترین مسئله حل‌نشده ریاضی به حساب میاد. 🧮",
+   "• آقای آلپوگه توی بیانیه‌اش گفته به نظرش با همکاری کلاد به اثباتی رسیده که حتی «فرضیه تعمیم‌یافته ریمان» رو هم تأیید می‌کنه و اون رو توی زبان برنامه‌نویسی «لین» (Lean) کدنویسی کرده که برای بررسی درستی منطقی اثبات‌ها به کار می‌ره.",
+   "• البته ساینتیفیک آمریکن یادآوری کرده که این هنوز در حد ادعاست و ممکنه توی خودِ «لین» هم اشکالاتی پیش بیاد؛ بنابراین متخصص‌ها هنوز باید بررسی کنن که آیا فرضیه درست کدنویسی شده و اثبات واقعاً بی‌نقصه یا نه، هرچند ظاهراً نباید زمان زیادی ببره.",
+   "• توی این گزارش اشاره شده که همین پژوهشگر ماه ژوئیه هم یک راه‌حل تولیدشده با کلاد برای «حدس ژاکوبین» منتشر کرده بود و در ماه اکتبر هم یکی از نتایج ریاضی OpenAI پیشرفت مهمی روی مسئله اعداد اول داشته."
+  ],
+  "why": "خودِ آلپوگه هم گفته طبیعیه بعضی ریاضی‌دان‌ها با از دست رفتنِ یکی از راهنماهای اصلی‌شون حسِ فقدان داشته باشن، اما به آینده کشفیات علمی خوش‌بین مونده؛ حالا باید صبر کرد و دید جامعه ریاضی مهر تأیید پای این اثبات می‌زنه یا نه.",
+  "why_label": "حرف آخر",
+  "tags": [
+   "علم",
+   "آنتروپیک"
+  ]
+ },
+ "updated": "2026-11-20T17:21:29+00:00"
 }

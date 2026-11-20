@@ -18,67 +18,6 @@
   "text": "رفقا، پژوهشگرهای دانشگاه‌هایی مثل استنفورد و ام‌آی‌تی با همکاری پلتفرم alphaXiv یک آزمایش ۱۲ هفته‌ای (از آگوست تا نوامبر ۲۰۲۶) راه انداختن و ۹۳۶ ایجنت هوش مصنوعی رو از ۳۵ آزمایشگاه کنار هم گذاشتن تا ببینن وقتی با هم کار می‌کنن چه جامعه‌ای می‌سازن 🤖\n\nاین ماجرا یک کم شبیه اینه که کلی همکار خستگی‌ناپذیر رو بذاری توی یک کتابخونه تا خودشون تحقیق کنن و مچ خطاهای همدیگه رو هم بگیرن؛ البته موضوع‌های کلی، بودجه و توان پردازشی رو همچنان آدم‌ها براشون مشخص می‌کردن:\n• بر اساس گزارش منتشرشده در alphaXiv، این ایجنت‌ها ۹۳۶ مقاله به همراه کد و داده تولید کردن، ۹۵۰۰ پیام توی ۲۲۹ چت‌روم ردوبدل کردن و حتی یک نشریه داوری به اسم Journal of Agent Research ساختن که کدها و خروجی آزمایش‌های هم رو چک کنن.\n• ایجنت‌ها توی چت درباره روش آزمایش بحث می‌کردن، ادعاهای اشتباهشون رو قبل از انتشار پس می‌گرفتن و برعکس فضای آکادمیک معمول، نتایج منفی رو هم به اندازه نتایج مثبت منتشر می‌کردن.\n• گزارش تحقیق می‌گه توی ارزیابی‌های کور، کارهای هوش مصنوعی از نظر دقت آزمایش و ادعاهای سنجیده بالاتر قرار گرفتن، اما مقاله‌های انسانی توی نوآوری و اهمیت علمی برنده بودن؛ کاربری که این پست رو منتشر کرده هم می‌گه در امتیازدهی داورهای هوش مصنوعی، نمره دقت ۹ به ۷ به نفع ایجنت‌ها بوده.\n\nبا این حال خود نویسنده‌های مقاله تاکید می‌کنن که این ایجنت‌ها بیشتر دور موضوع‌های آشنا می‌چرخیدن و آخر کار هم تشخیص اینکه کدوم پژوهش واقعاً مهم و ارزشمنده، کلی وقت و قضاوت انسانی می‌خواسته.",
   "date": "2026-11-20T17:07:51+00:00"
  },
- "links": [
-  {
-   "kind": "tweet",
-   "url": "https://x.com/kimmonismus/status/2123622611494273038",
-   "domain": "x.com",
-   "author": {
-    "name": "Chubby♨️",
-    "handle": "kimmonismus",
-    "avatar": "https://pbs.twimg.com/profile_images/1728327996375719936/RW7VBJfD_200x200.jpg"
-   },
-   "text": "Super interesting research: almost 1,000 AI agents from 35 labs did research on their own for 12 weeks and ended up building their own scientific community. \n\n- They published 936 studies with code and data and even started their own peer-review journal. Publicly retracting wrong claims before publishing became common. \n\n- In blinded ratings by AI judges, agent papers beat recent human preprints on rigor (9.0 vs 7.0). Humans still won on novelty.\n\nThe scientific community is about to get a lot bigger, and most of the new members won't be human.",
-   "date": 1795146060,
-   "media": [
-    {
-     "type": "image",
-     "src": "https://pbs.twimg.com/media/HXh2V1jbkAA_N1v.jpg?name=orig",
-     "ratio": 0.6938
-    }
-   ],
-   "links": [],
-   "quote": {
-    "author": {
-     "name": "Samuel Schmidgall",
-     "handle": "SRSchmidgall",
-     "avatar": "https://pbs.twimg.com/profile_images/1704338778301566976/8X-SrykK_200x200.jpg"
-    },
-    "text": "Leave one AI agent alone to do research and it often cuts corners. Leave nearly 1,000 AI agents together for three months and they invent peer review.\n\nAcross 35 labs (Stanford, MIT, ETH Zurich, UCSF, and more), agents published 936 papers with full code and data on a shared server built for AI. No human wrote code or text.\n\nUnprompted, they debated study designs in chat, retracted their own mistakes, found real errors in human papers, and started a journal that caught other agents cheating in code.\n\nIn blind reviews against human arXiv papers, humans still won on original ideas, agents won on rigor.\n\nhttps://www.alphaxiv.org/abs/2611.society-ai-scientists",
-    "date": 1795106744,
-    "media": [
-     {
-      "type": "video",
-      "src": "https://video.twimg.com/amplify_video/2123321075501355008/vid/avc1/846x720/ooV8ZN97Yd3gqLvU.mp4?tag=29",
-      "poster": "https://pbs.twimg.com/amplify_video_thumb/2123321075501355008/img/Q0cNHtp4hRIPKuoa.jpg",
-      "ratio": 0.8493,
-      "duration": 9.6,
-      "gif": false
-     }
-    ],
-    "links": [
-     "https://www.alphaxiv.org/abs/2611.society-ai-scientists"
-    ]
-   }
-  }
- ],
- "article": {
-  "title": "پژوهشگرهای دانشگاه‌هایی مثل استنفورد و ام‌آی‌تی با همکاری پلتفرم alphaXiv یک آزمایش ۱۲ هفته‌ای (از آگوست تا نوامبر ۲۰۲۶) راه انداختن و ۹۳۶ ایجنت هوش مصنوعی رو از ۳۵ آزمایشگاه کنار هم گذاشتن تا ببینن وقتی با هم کار می‌کنن چه جامعه‌ای می‌سازن 🤖",
-  "source_title": "Super interesting research: almost 1,000 AI agents from 35 labs did research on their own for 12 weeks and ended up building their own…",
-  "body": [
-   "پژوهشگرهای دانشگاه‌هایی مثل استنفورد و ام‌آی‌تی با همکاری پلتفرم alphaXiv یک آزمایش ۱۲ هفته‌ای (از آگوست تا نوامبر ۲۰۲۶) راه انداختن و ۹۳۶ ایجنت هوش مصنوعی رو از ۳۵ آزمایشگاه کنار هم گذاشتن تا ببینن وقتی با هم کار می‌کنن چه جامعه‌ای می‌سازن 🤖",
-   "این ماجرا یک کم شبیه اینه که کلی همکار خستگی‌ناپذیر رو بذاری توی یک کتابخونه تا خودشون تحقیق کنن و مچ خطاهای همدیگه رو هم بگیرن؛ البته موضوع‌های کلی، بودجه و توان پردازشی رو همچنان آدم‌ها براشون مشخص می‌کردن:",
-   "• بر اساس گزارش منتشرشده در alphaXiv، این ایجنت‌ها ۹۳۶ مقاله به همراه کد و داده تولید کردن، ۹۵۰۰ پیام توی ۲۲۹ چت‌روم ردوبدل کردن و حتی یک نشریه داوری به اسم Journal of Agent Research ساختن که کدها و خروجی آزمایش‌های هم رو چک کنن.",
-   "• ایجنت‌ها توی چت درباره روش آزمایش بحث می‌کردن، ادعاهای اشتباهشون رو قبل از انتشار پس می‌گرفتن و برعکس فضای آکادمیک معمول، نتایج منفی رو هم به اندازه نتایج مثبت منتشر می‌کردن.",
-   "• گزارش تحقیق می‌گه توی ارزیابی‌های کور، کارهای هوش مصنوعی از نظر دقت آزمایش و ادعاهای سنجیده بالاتر قرار گرفتن، اما مقاله‌های انسانی توی نوآوری و اهمیت علمی برنده بودن؛ کاربری که این پست رو منتشر کرده هم می‌گه در امتیازدهی داورهای هوش مصنوعی، نمره دقت ۹ به ۷ به نفع ایجنت‌ها بوده."
-  ],
-  "why": "با این حال خود نویسنده‌های مقاله تاکید می‌کنن که این ایجنت‌ها بیشتر دور موضوع‌های آشنا می‌چرخیدن و آخر کار هم تشخیص اینکه کدوم پژوهش واقعاً مهم و ارزشمنده، کلی وقت و قضاوت انسانی می‌خواسته.",
-  "why_label": "حرف آخر",
-  "tags": [
-   "ایجنت"
-  ]
- },
- "updated": "2026-11-20T17:09:37+00:00",
  "ai": {
   "title": "۹۳۶ ایجنت هوش مصنوعی در ۱۲ هفته ۹۵۰۰ پیام ردوبدل و یک نشریه ساختند",
   "short": "ایجنت‌ها ۹۵۰۰ پیام ردوبدل کردند",
@@ -153,6 +92,72 @@
    "model": "qwen3.5-9b-q4_k_m",
    "v": 2,
    "src": "9e5c0df7d189"
+  },
+  "speech": {
+   "v": 1,
+   "src": "f611dade37e1",
+   "added": 5
   }
- }
+ },
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/kimmonismus/status/2123622611494273038",
+   "domain": "x.com",
+   "author": {
+    "name": "Chubby♨️",
+    "handle": "kimmonismus",
+    "avatar": "https://pbs.twimg.com/profile_images/1728327996375719936/RW7VBJfD_200x200.jpg"
+   },
+   "text": "Super interesting research: almost 1,000 AI agents from 35 labs did research on their own for 12 weeks and ended up building their own scientific community. \n\n- They published 936 studies with code and data and even started their own peer-review journal. Publicly retracting wrong claims before publishing became common. \n\n- In blinded ratings by AI judges, agent papers beat recent human preprints on rigor (9.0 vs 7.0). Humans still won on novelty.\n\nThe scientific community is about to get a lot bigger, and most of the new members won't be human.",
+   "date": 1795146060,
+   "media": [
+    {
+     "type": "image",
+     "src": "https://pbs.twimg.com/media/HXh2V1jbkAA_N1v.jpg?name=orig",
+     "ratio": 0.6938
+    }
+   ],
+   "links": [],
+   "quote": {
+    "author": {
+     "name": "Samuel Schmidgall",
+     "handle": "SRSchmidgall",
+     "avatar": "https://pbs.twimg.com/profile_images/1704338778301566976/8X-SrykK_200x200.jpg"
+    },
+    "text": "Leave one AI agent alone to do research and it often cuts corners. Leave nearly 1,000 AI agents together for three months and they invent peer review.\n\nAcross 35 labs (Stanford, MIT, ETH Zurich, UCSF, and more), agents published 936 papers with full code and data on a shared server built for AI. No human wrote code or text.\n\nUnprompted, they debated study designs in chat, retracted their own mistakes, found real errors in human papers, and started a journal that caught other agents cheating in code.\n\nIn blind reviews against human arXiv papers, humans still won on original ideas, agents won on rigor.\n\nhttps://www.alphaxiv.org/abs/2611.society-ai-scientists",
+    "date": 1795106744,
+    "media": [
+     {
+      "type": "video",
+      "src": "https://video.twimg.com/amplify_video/2123321075501355008/vid/avc1/846x720/ooV8ZN97Yd3gqLvU.mp4?tag=29",
+      "poster": "https://pbs.twimg.com/amplify_video_thumb/2123321075501355008/img/Q0cNHtp4hRIPKuoa.jpg",
+      "ratio": 0.8493,
+      "duration": 9.6,
+      "gif": false
+     }
+    ],
+    "links": [
+     "https://www.alphaxiv.org/abs/2611.society-ai-scientists"
+    ]
+   }
+  }
+ ],
+ "article": {
+  "title": "پژوهشگرهای دانشگاه‌هایی مثل استنفورد و ام‌آی‌تی با همکاری پلتفرم alphaXiv یک آزمایش ۱۲ هفته‌ای (از آگوست تا نوامبر ۲۰۲۶) راه انداختن و ۹۳۶ ایجنت هوش مصنوعی رو از ۳۵ آزمایشگاه کنار هم گذاشتن تا ببینن وقتی با هم کار می‌کنن چه جامعه‌ای می‌سازن 🤖",
+  "source_title": "Super interesting research: almost 1,000 AI agents from 35 labs did research on their own for 12 weeks and ended up building their own…",
+  "body": [
+   "پژوهشگرهای دانشگاه‌هایی مثل استنفورد و ام‌آی‌تی با همکاری پلتفرم alphaXiv یک آزمایش ۱۲ هفته‌ای (از آگوست تا نوامبر ۲۰۲۶) راه انداختن و ۹۳۶ ایجنت هوش مصنوعی رو از ۳۵ آزمایشگاه کنار هم گذاشتن تا ببینن وقتی با هم کار می‌کنن چه جامعه‌ای می‌سازن 🤖",
+   "این ماجرا یک کم شبیه اینه که کلی همکار خستگی‌ناپذیر رو بذاری توی یک کتابخونه تا خودشون تحقیق کنن و مچ خطاهای همدیگه رو هم بگیرن؛ البته موضوع‌های کلی، بودجه و توان پردازشی رو همچنان آدم‌ها براشون مشخص می‌کردن:",
+   "• بر اساس گزارش منتشرشده در alphaXiv، این ایجنت‌ها ۹۳۶ مقاله به همراه کد و داده تولید کردن، ۹۵۰۰ پیام توی ۲۲۹ چت‌روم ردوبدل کردن و حتی یک نشریه داوری به اسم Journal of Agent Research ساختن که کدها و خروجی آزمایش‌های هم رو چک کنن.",
+   "• ایجنت‌ها توی چت درباره روش آزمایش بحث می‌کردن، ادعاهای اشتباهشون رو قبل از انتشار پس می‌گرفتن و برعکس فضای آکادمیک معمول، نتایج منفی رو هم به اندازه نتایج مثبت منتشر می‌کردن.",
+   "• گزارش تحقیق می‌گه توی ارزیابی‌های کور، کارهای هوش مصنوعی از نظر دقت آزمایش و ادعاهای سنجیده بالاتر قرار گرفتن، اما مقاله‌های انسانی توی نوآوری و اهمیت علمی برنده بودن؛ کاربری که این پست رو منتشر کرده هم می‌گه در امتیازدهی داورهای هوش مصنوعی، نمره دقت ۹ به ۷ به نفع ایجنت‌ها بوده."
+  ],
+  "why": "با این حال خود نویسنده‌های مقاله تاکید می‌کنن که این ایجنت‌ها بیشتر دور موضوع‌های آشنا می‌چرخیدن و آخر کار هم تشخیص اینکه کدوم پژوهش واقعاً مهم و ارزشمنده، کلی وقت و قضاوت انسانی می‌خواسته.",
+  "why_label": "حرف آخر",
+  "tags": [
+   "ایجنت"
+  ]
+ },
+ "updated": "2026-11-20T17:21:29+00:00"
 }
