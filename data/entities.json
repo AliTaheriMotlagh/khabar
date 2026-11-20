@@ -593,6 +593,24 @@
    "name_en": "Sol",
    "name_fa": "سول",
    "kind": "model"
+  },
+  {
+   "slug": "white-house",
+   "name_en": "White House",
+   "name_fa": "کاخ سفید",
+   "kind": "company"
+  },
+  {
+   "slug": "us-treasury",
+   "name_en": "US Treasury",
+   "name_fa": "وزارت خزانه‌داری آمریکا",
+   "kind": "company"
+  },
+  {
+   "slug": "openweigh",
+   "name_en": "OpenWeigh",
+   "name_fa": "اوپن‌ویت",
+   "kind": "product"
   }
  ]
 }
