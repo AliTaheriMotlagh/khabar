@@ -1523,6 +1523,186 @@
    "name_en": "ROOST",
    "name_fa": "روست",
    "kind": "company"
+  },
+  {
+   "slug": "carnegie-mellon-university",
+   "name_en": "Carnegie Mellon University",
+   "name_fa": "دانشگاه کارنگی ملون",
+   "kind": "company"
+  },
+  {
+   "slug": "rohan-paul",
+   "name_en": "Rohan Paul",
+   "name_fa": "روهان پال",
+   "kind": "person"
+  },
+  {
+   "slug": "singularity-bench",
+   "name_en": "Singularity-Bench",
+   "name_fa": "سنگولاریتی بنچ",
+   "kind": "product"
+  },
+  {
+   "slug": "antigravity",
+   "name_en": "Antigravity",
+   "name_fa": "آنتی‌گریتی",
+   "kind": "product"
+  },
+  {
+   "slug": "thinking-machines",
+   "name_en": "Thinking Machines",
+   "name_fa": "تینکینگ ماشینز",
+   "kind": "company"
+  },
+  {
+   "slug": "inkling-2-small",
+   "name_en": "Inkling 2 Small",
+   "name_fa": "اینکلینگ ۲ اسمال",
+   "kind": "model"
+  },
+  {
+   "slug": "gb300",
+   "name_en": "GB300",
+   "name_fa": "جی‌بی‌۳۰۰",
+   "kind": "product"
+  },
+  {
+   "slug": "scott-cory",
+   "name_en": "Scott Cory",
+   "name_fa": "اسکات کوری",
+   "kind": "person"
+  },
+  {
+   "slug": "fireworks",
+   "name_en": "Fireworks",
+   "name_fa": "فایرفورکس",
+   "kind": "company"
+  },
+  {
+   "slug": "cursor",
+   "name_en": "Cursor",
+   "name_fa": "کرسور",
+   "kind": "product"
+  },
+  {
+   "slug": "marco-rubio",
+   "name_en": "Marco Rubio",
+   "name_fa": "مارکو روبیو",
+   "kind": "person"
+  },
+  {
+   "slug": "cia",
+   "name_en": "CIA",
+   "name_fa": "سی‌آی‌ای",
+   "kind": "company"
+  },
+  {
+   "slug": "samfam",
+   "name_en": "SamFam",
+   "name_fa": "سمافور",
+   "kind": "company"
+  },
+  {
+   "slug": "jiangsu-university",
+   "name_en": "Jiangsu University",
+   "name_fa": "دانشگاه ژجیانگ",
+   "kind": "company"
+  },
+  {
+   "slug": "rohan-pal",
+   "name_en": "Rohan Pal",
+   "name_fa": "روهان پال",
+   "kind": "person"
+  },
+  {
+   "slug": "spacex",
+   "name_en": "SpaceX",
+   "name_fa": "اسپیس‌ایکس",
+   "kind": "company"
+  },
+  {
+   "slug": "starship",
+   "name_en": "Starship",
+   "name_fa": "استارشیپ",
+   "kind": "product"
+  },
+  {
+   "slug": "mechazilla",
+   "name_en": "Mechazilla",
+   "name_fa": "مکازیلا",
+   "kind": "product"
+  },
+  {
+   "slug": "tessera",
+   "name_en": "Tessera",
+   "name_fa": "تیسرا",
+   "kind": "company"
+  },
+  {
+   "slug": "tess-45-594b-a17b",
+   "name_en": "Tess-4.5-594B-A17B",
+   "name_fa": "تس-۴.۵-۵۹۴بی-ای۱۷بی",
+   "kind": "model"
+  },
+  {
+   "slug": "andon-labs",
+   "name_en": "Andon Labs",
+   "name_fa": "آندون لابس",
+   "kind": "company"
+  },
+  {
+   "slug": "vending-bench",
+   "name_en": "Vending-Bench",
+   "name_fa": "ویندینگ بنچ",
+   "kind": "product"
+  },
+  {
+   "slug": "carbon",
+   "name_en": "Carbon",
+   "name_fa": "کاربن",
+   "kind": "model"
+  },
+  {
+   "slug": "alon-amit",
+   "name_en": "Alon Amit",
+   "name_fa": "آلون آمیت",
+   "kind": "person"
+  },
+  {
+   "slug": "gemini-carbon",
+   "name_en": "Gemini Carbon",
+   "name_fa": "جمینای کربن",
+   "kind": "model"
+  },
+  {
+   "slug": "arun-abhishek",
+   "name_en": "Arun Abhishek",
+   "name_fa": "آرون آمیت",
+   "kind": "person"
+  },
+  {
+   "slug": "zakaria",
+   "name_en": "Zakaria",
+   "name_fa": "زکریا",
+   "kind": "person"
+  },
+  {
+   "slug": "daniel-sen",
+   "name_en": "Daniel Sen",
+   "name_fa": "دنیل سن",
+   "kind": "person"
+  },
+  {
+   "slug": "zakariaornot",
+   "name_en": "zakariaornot",
+   "name_fa": "زاکاریا اورنات",
+   "kind": "person"
+  },
+  {
+   "slug": "ghulam",
+   "name_en": "Ghulam",
+   "name_fa": "داش غلام",
+   "kind": "person"
   }
  ]
 }
