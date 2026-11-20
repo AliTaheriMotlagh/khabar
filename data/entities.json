@@ -3299,6 +3299,48 @@
    "name_en": "vLLM",
    "name_fa": "وی‌ال‌ال‌ام",
    "kind": "product"
+  },
+  {
+   "slug": "quest",
+   "name_en": "Quest",
+   "name_fa": "کست",
+   "kind": "product"
+  },
+  {
+   "slug": "android",
+   "name_en": "Android",
+   "name_fa": "اندروید",
+   "kind": "product"
+  },
+  {
+   "slug": "wang",
+   "name_en": "Wang",
+   "name_fa": "وانگ",
+   "kind": "person"
+  },
+  {
+   "slug": "visa",
+   "name_en": "Visa",
+   "name_fa": "ویزا",
+   "kind": "company"
+  },
+  {
+   "slug": "model-4",
+   "name_en": "Model 4",
+   "name_fa": "مدل ۴",
+   "kind": "model"
+  },
+  {
+   "slug": "oracle",
+   "name_en": "Oracle",
+   "name_fa": "اوراکل",
+   "kind": "company"
+  },
+  {
+   "slug": "starlight",
+   "name_en": "Starlight",
+   "name_fa": "استارگیت",
+   "kind": "product"
   }
  ]
 }
