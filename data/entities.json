@@ -1889,6 +1889,228 @@
    "name_en": "Dynamic Workflows",
    "name_fa": "داینامیک ورک‌فلو",
    "kind": "product"
+  },
+  {
+   "slug": "bytedance",
+   "name_en": "ByteDance",
+   "name_fa": "بایت‌دنس",
+   "kind": "company"
+  },
+  {
+   "slug": "andrew-corn",
+   "name_en": "Andrew Corn",
+   "name_fa": "اندرو کرن",
+   "kind": "person"
+  },
+  {
+   "slug": "google-labs",
+   "name_en": "Google Labs",
+   "name_fa": "گوگل لبز",
+   "kind": "company"
+  },
+  {
+   "slug": "tabletop",
+   "name_en": "Tabletop",
+   "name_fa": "تبل‌تاپ",
+   "kind": "product"
+  },
+  {
+   "slug": "gemini-decisions-api",
+   "name_en": "Gemini Decisions API",
+   "name_fa": "جمنی دسیژن API",
+   "kind": "product"
+  },
+  {
+   "slug": "gemini-decision-1",
+   "name_en": "Gemini Decision 1",
+   "name_fa": "جمنی دسیژن ۱",
+   "kind": "model"
+  },
+  {
+   "slug": "jason-derulo",
+   "name_en": "Jason Derulo",
+   "name_fa": "جیسون دینتر",
+   "kind": "person"
+  },
+  {
+   "slug": "midjourney",
+   "name_en": "Midjourney",
+   "name_fa": "میدجرنی",
+   "kind": "product"
+  },
+  {
+   "slug": "minimax",
+   "name_en": "MiniMax",
+   "name_fa": "مینیمکس",
+   "kind": "product"
+  },
+  {
+   "slug": "suno",
+   "name_en": "Suno",
+   "name_fa": "سونو",
+   "kind": "product"
+  },
+  {
+   "slug": "davinci-resolve",
+   "name_en": "DaVinci Resolve",
+   "name_fa": "داوینچی ریزالو",
+   "kind": "product"
+  },
+  {
+   "slug": "youart",
+   "name_en": "YouArt",
+   "name_fa": "یوآرت",
+   "kind": "company"
+  },
+  {
+   "slug": "xai",
+   "name_en": "xAI",
+   "name_fa": "ای‌آی‌اکس",
+   "kind": "company"
+  },
+  {
+   "slug": "grok-bot-10",
+   "name_en": "Grok Bot 1.0",
+   "name_fa": "گروک بات ۱.۰",
+   "kind": "product"
+  },
+  {
+   "slug": "slack",
+   "name_en": "Slack",
+   "name_fa": "اسلک",
+   "kind": "product"
+  },
+  {
+   "slug": "microsoft-teams",
+   "name_en": "Microsoft Teams",
+   "name_fa": "مایکروسافت تیمز",
+   "kind": "product"
+  },
+  {
+   "slug": "muse-spark",
+   "name_en": "Muse Spark",
+   "name_fa": "موز اسپارک",
+   "kind": "model"
+  },
+  {
+   "slug": "megakernel",
+   "name_en": "Megakernel",
+   "name_fa": "مگاکرنل",
+   "kind": "product"
+  },
+  {
+   "slug": "copilot",
+   "name_en": "Copilot",
+   "name_fa": "کوپایلت",
+   "kind": "product"
+  },
+  {
+   "slug": "gemini-4-helix",
+   "name_en": "Gemini 4 Helix",
+   "name_fa": "جمینی ۴ هلیکس",
+   "kind": "model"
+  },
+  {
+   "slug": "new-york-times",
+   "name_en": "New York Times",
+   "name_fa": "نیویورک‌تایمز",
+   "kind": "company"
+  },
+  {
+   "slug": "the-wall-street-journal",
+   "name_en": "The Wall Street Journal",
+   "name_fa": "وال‌استریت ژورنال",
+   "kind": "company"
+  },
+  {
+   "slug": "dan-niles",
+   "name_en": "Dan Niles",
+   "name_fa": "دن نایلز",
+   "kind": "person"
+  },
+  {
+   "slug": "georgia",
+   "name_en": "Georgia",
+   "name_fa": "جورجیا",
+   "kind": "company"
+  },
+  {
+   "slug": "donald-trump",
+   "name_en": "Donald Trump",
+   "name_fa": "دونالد ترامپ",
+   "kind": "person"
+  },
+  {
+   "slug": "tim-cook",
+   "name_en": "Tim Cook",
+   "name_fa": "تیم کوک",
+   "kind": "person"
+  },
+  {
+   "slug": "4d-surgical",
+   "name_en": "4D Surgical",
+   "name_fa": "۴دی سرجیکال",
+   "kind": "company"
+  },
+  {
+   "slug": "loren-hoffstetter",
+   "name_en": "Loren Hoffstetter",
+   "name_fa": "لورن هافستتر",
+   "kind": "person"
+  },
+  {
+   "slug": "intuitive-surgical",
+   "name_en": "Intuitive Surgical",
+   "name_fa": "اینچیتیووی سرجیکال",
+   "kind": "company"
+  },
+  {
+   "slug": "mirendil",
+   "name_en": "Mirendil",
+   "name_fa": "مایرندیل",
+   "kind": "company"
+  },
+  {
+   "slug": "kleiner-perkins",
+   "name_en": "Kleiner Perkins",
+   "name_fa": "کلاینر پرکینز",
+   "kind": "company"
+  },
+  {
+   "slug": "clearlake",
+   "name_en": "Clearlake",
+   "name_fa": "کلیرلیک",
+   "kind": "company"
+  },
+  {
+   "slug": "mirendil-base",
+   "name_en": "Mirendil-Base",
+   "name_fa": "مایرندیل-بیس",
+   "kind": "model"
+  },
+  {
+   "slug": "fern",
+   "name_en": "Fern",
+   "name_fa": "فرن",
+   "kind": "model"
+  },
+  {
+   "slug": "lor",
+   "name_en": "Lor",
+   "name_fa": "لور",
+   "kind": "product"
+  },
+  {
+   "slug": "blank-bio",
+   "name_en": "Blank Bio",
+   "name_fa": "بلنک بیو",
+   "kind": "company"
+  },
+  {
+   "slug": "ladon",
+   "name_en": "Ladon",
+   "name_fa": "لادون",
+   "kind": "model"
   }
  ]
 }
