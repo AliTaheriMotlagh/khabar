@@ -863,6 +863,18 @@
    "name_en": "tufazip",
    "name_fa": "توفازپ",
    "kind": "product"
+  },
+  {
+   "slug": "claude-fable-52",
+   "name_en": "Claude Fable 5.2",
+   "name_fa": "کلود فبل 5.2",
+   "kind": "model"
+  },
+  {
+   "slug": "teddywang86",
+   "name_en": "teddywang86",
+   "name_fa": "تدی وانگ ۸۶",
+   "kind": "person"
   }
  ]
 }

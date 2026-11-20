@@ -1,0 +1,102 @@
+{
+ "id": 6654,
+ "url": "https://t.me/dlmehr/6654",
+ "date": "2026-11-20T05:05:52+00:00",
+ "text": "https://fxtwitter.com/teddywang86/status/2123018739272785987/video/1?a=C-YRB5XKNtQszw-NOBA&s=52",
+ "forwarded_from": null,
+ "digest": false,
+ "hash": "7a54ebceac12",
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/teddywang86/status/2123018739272785987/video/1?a=C-YRB5XKNtQszw-NOBA&s=52",
+  "site": "FxTwitter",
+  "title": "teddywang86 (@teddywang86)",
+  "description": "I Showed an AI Her Own Face in a Mirror",
+  "image": null
+ },
+ "gholam": {
+  "text": "رفیق، از این پست فقط یه توضیح کوتاه از کاربر teddywang86 رسیده که نوشته چهرهٔ خودِ یه هوش مصنوعی رو تو آینه بهش نشون داده. منتها چون ویدیوی اصلیش اینجا در دسترس نیست، جزئیات ماجرا و واکنش اون هوش مصنوعی برامون معلوم نیست. 🪞",
+  "date": "2026-11-20T05:06:07+00:00"
+ },
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/teddywang86/status/2123018739272785987",
+   "domain": "x.com",
+   "author": {
+    "name": "teddywang86",
+    "handle": "teddywang86",
+    "avatar": "https://pbs.twimg.com/profile_images/2100053641910779905/LWdEKj_M_200x200.jpg"
+   },
+   "text": "I Showed an AI Her Own Face in a Mirror",
+   "date": 1795002085,
+   "media": [
+    {
+     "type": "video",
+     "src": "https://video.twimg.com/amplify_video/2123017900747620353/vid/avc1/1280x720/hPQ9hEwEdEvxNBOE.mp4?tag=29",
+     "poster": "https://pbs.twimg.com/amplify_video_thumb/2123017900747620353/img/K2gjs859xTJBUFDU.jpg",
+     "ratio": 0.5625,
+     "duration": 228.45,
+     "gif": false
+    }
+   ],
+   "links": []
+  }
+ ],
+ "article": {
+  "title": "از این پست فقط یه توضیح کوتاه از کاربر teddywang86 رسیده که نوشته چهرهٔ خودِ یه هوش مصنوعی رو تو آینه بهش نشون داده",
+  "source_title": "I Showed an AI Her Own Face in a Mirror",
+  "body": [
+   "از این پست فقط یه توضیح کوتاه از کاربر teddywang86 رسیده که نوشته چهرهٔ خودِ یه هوش مصنوعی رو تو آینه بهش نشون داده. منتها چون ویدیوی اصلیش اینجا در دسترس نیست، جزئیات ماجرا و واکنش اون هوش مصنوعی برامون معلوم نیست. 🪞"
+  ],
+  "why": null,
+  "tags": []
+ },
+ "updated": "2026-11-20T05:15:37+00:00",
+ "ai": {
+  "title": "کاربر teddywang86 چهره هوش مصنوعی را در آینه به او نشان داد",
+  "short": "هوش مصنوعی در آینه",
+  "topics": [],
+  "type": "خبر",
+  "model": "qwen3.5-9b-q4_k_m",
+  "v": 2,
+  "src": "5aef597f30dd",
+  "x": {
+   "importance": 1,
+   "entities": [
+    {
+     "name_en": "teddywang86",
+     "name_fa": "تدی وانگ ۸۶",
+     "kind": "person"
+    }
+   ],
+   "terms": [],
+   "simple": "کاربر teddywang86 چهره‌ی خود را در آینه به یک هوش مصنوعی نشان داده است. اما چون ویدیوی اصلی در دسترس نیست، نمی‌دانیم هوش مصنوعی چه واکنشی نشان داده است.",
+   "quiz": {
+    "q": "چرا واکنش هوش مصنوعی معلوم نیست؟",
+    "options": [
+     "چون هوش مصنوعی خراب شده است",
+     "چون ویدیوی اصلی در دسترس نیست",
+     "چون هوش مصنوعی زبان فارسی را نمی‌فهمد"
+    ],
+    "answer": 1
+   },
+   "video": {
+    "hook": "واکنش هوش مصنوعی به دیدن چهره‌ی خودش در آینه",
+    "points": [
+     "کاربر teddywang86 چهره‌ی خود را به هوش مصنوعی نشان داد",
+     "ویدیوی اصلی ماجرا در دسترس نیست",
+     "جزئیات واکنش هوش مصنوعی مشخص نیست"
+    ],
+    "why": "این آزمایش می‌تواند نشان دهد هوش مصنوعی چقدر می‌تواند خودآگاهی یا احساسات را شبیه‌سازی کند."
+   },
+   "share": "آزمایش عجیب: کاربر چهره‌اش را در آینه به هوش مصنوعی نشان داد.\nواکنش هوش مصنوعی معلوم نیست چون ویدیو در دسترس نیست.\n#هوش_مصنوعی #آزمایش",
+   "status": "شایعه",
+   "models": [],
+   "events": [],
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 2,
+   "src": "11d4b685a4da"
+  }
+ }
+}
