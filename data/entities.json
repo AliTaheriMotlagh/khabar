@@ -2381,6 +2381,210 @@
    "name_en": "Stripe",
    "name_fa": "استرایپ",
    "kind": "company"
+  },
+  {
+   "slug": "matthew-brennan",
+   "name_en": "Matthew Brennan",
+   "name_fa": "متیو برمن",
+   "kind": "person"
+  },
+  {
+   "slug": "unreal-engine",
+   "name_en": "Unreal Engine",
+   "name_fa": "آنریل انجین",
+   "kind": "product"
+  },
+  {
+   "slug": "jetson-thor",
+   "name_en": "Jetson Thor",
+   "name_fa": "جتسون تور",
+   "kind": "product"
+  },
+  {
+   "slug": "mythos-52",
+   "name_en": "Mythos 5.2",
+   "name_fa": "مایثوس ۵.۲",
+   "kind": "model"
+  },
+  {
+   "slug": "dot",
+   "name_en": "dot",
+   "name_fa": "داوت",
+   "kind": "product"
+  },
+  {
+   "slug": "opencode",
+   "name_en": "OpenCode",
+   "name_fa": "اپن‌کد",
+   "kind": "product"
+  },
+  {
+   "slug": "harvey",
+   "name_en": "Harvey",
+   "name_fa": "هاروی",
+   "kind": "company"
+  },
+  {
+   "slug": "dario-amodei",
+   "name_en": "Dario Amodei",
+   "name_fa": "داریو آمودی",
+   "kind": "person"
+  },
+  {
+   "slug": "jp-morgan",
+   "name_en": "J.P. Morgan",
+   "name_fa": "جی‌پی‌مورگان",
+   "kind": "company"
+  },
+  {
+   "slug": "jim-dimon",
+   "name_en": "Jim Dimon",
+   "name_fa": "جیمی دایمن",
+   "kind": "person"
+  },
+  {
+   "slug": "d1-2b",
+   "name_en": "d1-2B",
+   "name_fa": "دی‌آی-۲بی",
+   "kind": "model"
+  },
+  {
+   "slug": "roman-khropov",
+   "name_en": "Roman Khropov",
+   "name_fa": "رومن خروپوف",
+   "kind": "person"
+  },
+  {
+   "slug": "signal",
+   "name_en": "Signal",
+   "name_fa": "سیگنال",
+   "kind": "product"
+  },
+  {
+   "slug": "alphaproof-code",
+   "name_en": "AlphaProof Code",
+   "name_fa": "آلفا‌پروف کد",
+   "kind": "model"
+  },
+  {
+   "slug": "gemini-robotics-25",
+   "name_en": "Gemini Robotics 2.5",
+   "name_fa": "جمنی رباتیکس ۲.۵",
+   "kind": "product"
+  },
+  {
+   "slug": "gemini-4-argon",
+   "name_en": "Gemini 4 Argon",
+   "name_fa": "جمنی ۴ آرگون",
+   "kind": "model"
+  },
+  {
+   "slug": "apollo-2",
+   "name_en": "Apollo 2",
+   "name_fa": "آپولو ۲",
+   "kind": "product"
+  },
+  {
+   "slug": "mercedes-benz",
+   "name_en": "Mercedes-Benz",
+   "name_fa": "مرسدس‌بنز",
+   "kind": "company"
+  },
+  {
+   "slug": "apptronik",
+   "name_en": "Apptronik",
+   "name_fa": "آپترونیک",
+   "kind": "company"
+  },
+  {
+   "slug": "gakkuai",
+   "name_en": "Gakku.ai",
+   "name_fa": "گاکو آی‌آی",
+   "kind": "company"
+  },
+  {
+   "slug": "annie-chen",
+   "name_en": "Annie Chen",
+   "name_fa": "آنی چن",
+   "kind": "person"
+  },
+  {
+   "slug": "raku",
+   "name_en": "Raku",
+   "name_fa": "راکو",
+   "kind": "product"
+  },
+  {
+   "slug": "tavus",
+   "name_en": "Tavus",
+   "name_fa": "تَویوس",
+   "kind": "company"
+  },
+  {
+   "slug": "tavus-pal",
+   "name_en": "Tavus PAL",
+   "name_fa": "تَویوس پی‌ال‌ای",
+   "kind": "product"
+  },
+  {
+   "slug": "pi",
+   "name_en": "Pi",
+   "name_fa": "پی",
+   "kind": "product"
+  },
+  {
+   "slug": "julien-chomond",
+   "name_en": "Julien Chomond",
+   "name_fa": "ژولین شوموند",
+   "kind": "person"
+  },
+  {
+   "slug": "qwen-38-27b",
+   "name_en": "Qwen 3.8 27B",
+   "name_fa": "قوئن ۳.۸ ۲۷ بی",
+   "kind": "model"
+  },
+  {
+   "slug": "kimi-k3",
+   "name_en": "Kimi K3",
+   "name_fa": "کیمی کی۳",
+   "kind": "model"
+  },
+  {
+   "slug": "glm-53",
+   "name_en": "GLM 5.3",
+   "name_fa": "گل‌ام ۵.۳",
+   "kind": "model"
+  },
+  {
+   "slug": "ring-robotics",
+   "name_en": "Ring Robotics",
+   "name_fa": "رینگ رباتیکس",
+   "kind": "product"
+  },
+  {
+   "slug": "ring-rover-cam",
+   "name_en": "Ring Rover Cam",
+   "name_fa": "رینگ رور کام",
+   "kind": "product"
+  },
+  {
+   "slug": "skild-ai",
+   "name_en": "Skild AI",
+   "name_fa": "اسکالد آی‌آی",
+   "kind": "company"
+  },
+  {
+   "slug": "steel",
+   "name_en": "Steel",
+   "name_fa": "استیل",
+   "kind": "product"
+  },
+  {
+   "slug": "physx",
+   "name_en": "PhysX",
+   "name_fa": "فیز ایکس",
+   "kind": "product"
   }
  ]
 }
