@@ -49,6 +49,10 @@
  "updated": "2026-10-25T12:31:29+00:00",
  "gholam_checked": "2026-10-25T12:31:29+00:00",
  "ai": {
+  "failed": true,
+  "model": "qwen3.5-9b-q4_k_m",
+  "v": 2,
+  "src": "d299c6fdeac8",
   "story": {
    "body": [
     "مدل هوش مصنوعی DeepSeek V4 Flash 0731 با کسب امتیاز ۵۰ در شاخص هوش مصنوعی، ۶ امتیاز جلوتر از مدل DeepSeek V4 Pro و ۱ امتیاز عقب‌تر از GPT-5.6 Luna قرار گرفت.",
