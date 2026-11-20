@@ -2111,6 +2111,156 @@
    "name_en": "Ladon",
    "name_fa": "لادون",
    "kind": "model"
+  },
+  {
+   "slug": "us-congress",
+   "name_en": "US Congress",
+   "name_fa": "کنگره آمریکا",
+   "kind": "company"
+  },
+  {
+   "slug": "brian-mast",
+   "name_en": "Brian Mast",
+   "name_fa": "برایان ماست",
+   "kind": "person"
+  },
+  {
+   "slug": "robbyant",
+   "name_en": "Robbyant",
+   "name_fa": "رابیانت",
+   "kind": "company"
+  },
+  {
+   "slug": "ant-group",
+   "name_en": "Ant Group",
+   "name_fa": "آنت گروپ",
+   "kind": "company"
+  },
+  {
+   "slug": "lingbot-touch",
+   "name_en": "LingBot-Touch",
+   "name_fa": "لینگ‌بات-تاچ",
+   "kind": "product"
+  },
+  {
+   "slug": "lambda",
+   "name_en": "Lambda",
+   "name_fa": "لمبدا",
+   "kind": "company"
+  },
+  {
+   "slug": "geodesic-intelligence",
+   "name_en": "Geodesic Intelligence",
+   "name_fa": "جئودیسیک اینتلیجنس",
+   "kind": "company"
+  },
+  {
+   "slug": "novaatom-lite",
+   "name_en": "NovaAtom-Lite",
+   "name_fa": "نووا‌اتوم لایت",
+   "kind": "model"
+  },
+  {
+   "slug": "alphafold-3",
+   "name_en": "AlphaFold 3",
+   "name_fa": "آلفافولد ۳",
+   "kind": "model"
+  },
+  {
+   "slug": "isodde",
+   "name_en": "IsoDDE",
+   "name_fa": "ایزوددی",
+   "kind": "model"
+  },
+  {
+   "slug": "qwen4",
+   "name_en": "Qwen4",
+   "name_fa": "کوئن ۴",
+   "kind": "model"
+  },
+  {
+   "slug": "qwenwork",
+   "name_en": "QwenWork",
+   "name_fa": "کوئن ورک",
+   "kind": "product"
+  },
+  {
+   "slug": "qoder",
+   "name_en": "Qoder",
+   "name_fa": "کوودر",
+   "kind": "product"
+  },
+  {
+   "slug": "california-highway-patrol",
+   "name_en": "California Highway Patrol",
+   "name_fa": "پلیس بزرگراه کالیفرنیا",
+   "kind": "company"
+  },
+  {
+   "slug": "kevin-cramer",
+   "name_en": "Kevin Cramer",
+   "name_fa": "کوین کریمر",
+   "kind": "person"
+  },
+  {
+   "slug": "solidworks",
+   "name_en": "SolidWorks",
+   "name_fa": "سالیدورکز",
+   "kind": "product"
+  },
+  {
+   "slug": "claude-mythos",
+   "name_en": "Claude Mythos",
+   "name_fa": "کلود مایثوس",
+   "kind": "model"
+  },
+  {
+   "slug": "mi355x",
+   "name_en": "MI355X",
+   "name_fa": "ام‌آی ۳۵۵‌ایکس",
+   "kind": "product"
+  },
+  {
+   "slug": "alphagenome-2",
+   "name_en": "AlphaGenome 2",
+   "name_fa": "آلفاژنوم ۲",
+   "kind": "model"
+  },
+  {
+   "slug": "praxis-1",
+   "name_en": "Praxis-1",
+   "name_fa": "پراکسیس-۱",
+   "kind": "model"
+  },
+  {
+   "slug": "robolab-120",
+   "name_en": "RoboLab-120",
+   "name_fa": "روبو‌لب-۱۲۰",
+   "kind": "model"
+  },
+  {
+   "slug": "seedance-25",
+   "name_en": "Seedance 2.5",
+   "name_fa": "سیدانس ۲.۵",
+   "kind": "model"
+  },
+  {
+   "slug": "byteplusglobal",
+   "name_en": "BytePlusGlobal",
+   "name_fa": "بایت‌پلاس گلوبال",
+   "kind": "company"
+  },
+  {
+   "slug": "arvind-sriniwas",
+   "name_en": "Arvind Sriniwas",
+   "name_fa": "آرویند سرینیواس",
+   "kind": "person"
+  },
+  {
+   "slug": "teammate",
+   "name_en": "Teammate",
+   "name_fa": "تیم‌میت",
+   "kind": "product"
   }
  ]
 }
