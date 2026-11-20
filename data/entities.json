@@ -1019,6 +1019,168 @@
    "name_en": "NetBlocks",
    "name_fa": "نت‌بلاکس",
    "kind": "company"
+  },
+  {
+   "slug": "inference-providers",
+   "name_en": "Inference Providers",
+   "name_fa": "ارائه‌دهندگان استنتاج",
+   "kind": "product"
+  },
+  {
+   "slug": "liquid-ai",
+   "name_en": "Liquid AI",
+   "name_fa": "لیکوید ای‌آی",
+   "kind": "company"
+  },
+  {
+   "slug": "d12",
+   "name_en": "d1.2",
+   "name_fa": "دی‌اِی-۱-۲",
+   "kind": "model"
+  },
+  {
+   "slug": "d12-ultra",
+   "name_en": "d1.2-ultra",
+   "name_fa": "دی‌اِی-۱-۲-اولترا",
+   "kind": "model"
+  },
+  {
+   "slug": "instagram",
+   "name_en": "Instagram",
+   "name_fa": "اینستاگرام",
+   "kind": "company"
+  },
+  {
+   "slug": "amazon-influencer",
+   "name_en": "Amazon Influencer",
+   "name_fa": "تولیدکننده تأثیرگذار آمازون",
+   "kind": "product"
+  },
+  {
+   "slug": "chatgpt-for-healthcare",
+   "name_en": "ChatGPT for Healthcare",
+   "name_fa": "چت‌جی‌پی‌تی برای سلامت",
+   "kind": "product"
+  },
+  {
+   "slug": "abridge",
+   "name_en": "Abridge",
+   "name_fa": "آبریدج",
+   "kind": "company"
+  },
+  {
+   "slug": "cigna",
+   "name_en": "Cigna",
+   "name_fa": "سایگنا",
+   "kind": "company"
+  },
+  {
+   "slug": "cvs-health",
+   "name_en": "CVS Health",
+   "name_fa": "سی‌وی‌اس هلت",
+   "kind": "company"
+  },
+  {
+   "slug": "nyu",
+   "name_en": "NYU",
+   "name_fa": "دانشگاه نیویورک",
+   "kind": "company"
+  },
+  {
+   "slug": "university-of-calgary",
+   "name_en": "University of Calgary",
+   "name_fa": "دانشگاه کلگری",
+   "kind": "company"
+  },
+  {
+   "slug": "qwen25-7b",
+   "name_en": "Qwen2.5-7B",
+   "name_fa": "قوئن ۲.۵-۷ میلیارد",
+   "kind": "model"
+  },
+  {
+   "slug": "llama",
+   "name_en": "Llama",
+   "name_fa": "لاما",
+   "kind": "model"
+  },
+  {
+   "slug": "baseten",
+   "name_en": "Baseten",
+   "name_fa": "بستن",
+   "kind": "company"
+  },
+  {
+   "slug": "baseten-voice-agent-stack",
+   "name_en": "Baseten Voice Agent Stack",
+   "name_fa": "زیرساخت دستیار صوتی بستن",
+   "kind": "product"
+  },
+  {
+   "slug": "baseten-realtime-voice",
+   "name_en": "Baseten Realtime Voice",
+   "name_fa": "دستیار صوتی بلادرنگ بستن",
+   "kind": "product"
+  },
+  {
+   "slug": "mehdi-allahyari",
+   "name_en": "Mehdi Allahyari",
+   "name_fa": "مهدی اللهیاری",
+   "kind": "person"
+  },
+  {
+   "slug": "cilla-lite",
+   "name_en": "Cilla-Lite",
+   "name_fa": "سیلا لایت",
+   "kind": "model"
+  },
+  {
+   "slug": "cilla-mini",
+   "name_en": "Cilla-Mini",
+   "name_fa": "سیلا مینی",
+   "kind": "model"
+  },
+  {
+   "slug": "pocket-tts",
+   "name_en": "Pocket TTS",
+   "name_fa": "پاکت تی‌تی‌اس",
+   "kind": "model"
+  },
+  {
+   "slug": "cupotential",
+   "name_en": "cuPotential",
+   "name_fa": "سیو پتانسیل",
+   "kind": "product"
+  },
+  {
+   "slug": "openmm",
+   "name_en": "OpenMM",
+   "name_fa": "اوپن‌ام‌ام",
+   "kind": "product"
+  },
+  {
+   "slug": "megaspeed",
+   "name_en": "Megaspeed",
+   "name_fa": "مگاسپید",
+   "kind": "company"
+  },
+  {
+   "slug": "alice-huang",
+   "name_en": "Alice Huang",
+   "name_fa": "آلیس هوانگ",
+   "kind": "person"
+  },
+  {
+   "slug": "department-of-commerce",
+   "name_en": "Department of Commerce",
+   "name_fa": "وزارت بازرگانی آمریکا",
+   "kind": "company"
+  },
+  {
+   "slug": "department-of-justice",
+   "name_en": "Department of Justice",
+   "name_fa": "وزارت دادگستری آمریکا",
+   "kind": "company"
   }
  ]
 }
