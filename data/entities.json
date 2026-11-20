@@ -3131,6 +3131,12 @@
    "name_en": "NovaXCode",
    "name_fa": "نووا ایکس کد",
    "kind": "product"
+  },
+  {
+   "slug": "inkling-2-mini",
+   "name_en": "Inkling 2 Mini",
+   "name_fa": "اینکلینگ ۲ مینی",
+   "kind": "model"
   }
  ]
 }
