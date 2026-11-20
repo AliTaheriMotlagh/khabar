@@ -3167,6 +3167,138 @@
    "name_en": "Chinese AI models",
    "name_fa": "مدل‌های هوش مصنوعی چینی",
    "kind": "product"
+  },
+  {
+   "slug": "world-labs",
+   "name_en": "World Labs",
+   "name_fa": "ورلد لابس",
+   "kind": "company"
+  },
+  {
+   "slug": "frameboy",
+   "name_en": "Frameboy",
+   "name_fa": "فریم‌بوی",
+   "kind": "product"
+  },
+  {
+   "slug": "viewfinder",
+   "name_en": "Viewfinder",
+   "name_fa": "ویو‌فایندر",
+   "kind": "product"
+  },
+  {
+   "slug": "united-states",
+   "name_en": "United States",
+   "name_fa": "ایالات متحده آمریکا",
+   "kind": "company"
+  },
+  {
+   "slug": "supervalu",
+   "name_en": "SuperValu",
+   "name_fa": "سوپروالو",
+   "kind": "product"
+  },
+  {
+   "slug": "silvia",
+   "name_en": "Silvia",
+   "name_fa": "سیلیویا",
+   "kind": "person"
+  },
+  {
+   "slug": "anthony-pompilianno",
+   "name_en": "Anthony Pompilianno",
+   "name_fa": "آنتونی پامپلیانو",
+   "kind": "person"
+  },
+  {
+   "slug": "claude-55",
+   "name_en": "Claude 5.5",
+   "name_fa": "کلود ۵.۵",
+   "kind": "model"
+  },
+  {
+   "slug": "shadowbench",
+   "name_en": "ShadowBench",
+   "name_fa": "شادو‌بنچ",
+   "kind": "product"
+  },
+  {
+   "slug": "dwarak-patel",
+   "name_en": "Dwarak Patel",
+   "name_fa": "دوارکش پاتل",
+   "kind": "person"
+  },
+  {
+   "slug": "blood-on-the-clocktower",
+   "name_en": "Blood on the Clocktower",
+   "name_fa": "بلود آن دی کلک‌تاور",
+   "kind": "product"
+  },
+  {
+   "slug": "erik-brynjolfsson",
+   "name_en": "Erik Brynjolfsson",
+   "name_fa": "اریک برینیولفسون",
+   "kind": "person"
+  },
+  {
+   "slug": "cbo",
+   "name_en": "CBO",
+   "name_fa": "دفتر بودجه کنگره",
+   "kind": "company"
+  },
+  {
+   "slug": "robert-gordon",
+   "name_en": "Robert Gordon",
+   "name_fa": "رابرت گوردون",
+   "kind": "person"
+  },
+  {
+   "slug": "delaware",
+   "name_en": "Delaware",
+   "name_fa": "ایالت دلاور",
+   "kind": "company"
+  },
+  {
+   "slug": "mustafa-suleyman",
+   "name_en": "Mustafa Suleyman",
+   "name_fa": "مصطفی سلیمان",
+   "kind": "person"
+  },
+  {
+   "slug": "wyoming",
+   "name_en": "Wyoming",
+   "name_fa": "وایومینگ",
+   "kind": "company"
+  },
+  {
+   "slug": "serve-robotics",
+   "name_en": "Serve Robotics",
+   "name_fa": "سرور رباتیکس",
+   "kind": "company"
+  },
+  {
+   "slug": "hyperstition",
+   "name_en": "Hyperstition",
+   "name_fa": "هایپرستیشن",
+   "kind": "company"
+  },
+  {
+   "slug": "hyperkernel",
+   "name_en": "Hyperkernel",
+   "name_fa": "هایپرکرنل",
+   "kind": "product"
+  },
+  {
+   "slug": "esmfold",
+   "name_en": "ESMFold",
+   "name_fa": "ایس‌ام‌افولد",
+   "kind": "model"
+  },
+  {
+   "slug": "vllm",
+   "name_en": "vLLM",
+   "name_fa": "وی‌ال‌ال‌ام",
+   "kind": "product"
   }
  ]
 }
