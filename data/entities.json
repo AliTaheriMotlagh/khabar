@@ -611,6 +611,210 @@
    "name_en": "OpenWeigh",
    "name_fa": "اوپن‌ویت",
    "kind": "product"
+  },
+  {
+   "slug": "dropbox",
+   "name_en": "Dropbox",
+   "name_fa": "دراپ‌باکس",
+   "kind": "company"
+  },
+  {
+   "slug": "applovin",
+   "name_en": "AppLovin",
+   "name_fa": "اپ‌لاوین",
+   "kind": "company"
+  },
+  {
+   "slug": "databricks",
+   "name_en": "Databricks",
+   "name_fa": "دیتابریکس",
+   "kind": "company"
+  },
+  {
+   "slug": "hashicorp",
+   "name_en": "HashiCorp",
+   "name_fa": "هاشی‌کورپ",
+   "kind": "company"
+  },
+  {
+   "slug": "soundhound-ai",
+   "name_en": "SoundHound AI",
+   "name_fa": "سوند‌هاوند ای‌آی",
+   "kind": "company"
+  },
+  {
+   "slug": "guardant-health",
+   "name_en": "Guardant Health",
+   "name_fa": "گاردانت هلت",
+   "kind": "company"
+  },
+  {
+   "slug": "california-dmv",
+   "name_en": "California DMV",
+   "name_fa": "اداره وسایل نقلیه کالیفرنیا",
+   "kind": "company"
+  },
+  {
+   "slug": "highway-101",
+   "name_en": "Highway 101",
+   "name_fa": "بزرگراه ۱۰۱",
+   "kind": "product"
+  },
+  {
+   "slug": "claude-code",
+   "name_en": "Claude Code",
+   "name_fa": "کلود کد",
+   "kind": "product"
+  },
+  {
+   "slug": "opus-55",
+   "name_en": "Opus 5.5",
+   "name_fa": "اپوس ۵.۵",
+   "kind": "model"
+  },
+  {
+   "slug": "sonnet-55",
+   "name_en": "Sonnet 5.5",
+   "name_fa": "سونت ۵.۵",
+   "kind": "model"
+  },
+  {
+   "slug": "haiku-55",
+   "name_en": "Haiku 5.5",
+   "name_fa": "هایکو ۵.۵",
+   "kind": "model"
+  },
+  {
+   "slug": "fable-52",
+   "name_en": "Fable 5.2",
+   "name_fa": "فبل ۵.۲",
+   "kind": "model"
+  },
+  {
+   "slug": "chatgpt-for-sales",
+   "name_en": "ChatGPT for Sales",
+   "name_fa": "چت‌جی‌پی‌تی برای فروش",
+   "kind": "product"
+  },
+  {
+   "slug": "salesforce",
+   "name_en": "Salesforce",
+   "name_fa": "سفرسفورس",
+   "kind": "product"
+  },
+  {
+   "slug": "hubspot",
+   "name_en": "HubSpot",
+   "name_fa": "هاب‌اسپات",
+   "kind": "product"
+  },
+  {
+   "slug": "zoominfo",
+   "name_en": "ZoomInfo",
+   "name_fa": "زوم‌اینفو",
+   "kind": "product"
+  },
+  {
+   "slug": "gong",
+   "name_en": "Gong",
+   "name_fa": "گانگ",
+   "kind": "product"
+  },
+  {
+   "slug": "nuance-labs",
+   "name_en": "Nuance Labs",
+   "name_fa": "نویانس لابس",
+   "kind": "company"
+  },
+  {
+   "slug": "nora",
+   "name_en": "Nora",
+   "name_fa": "نورا",
+   "kind": "product"
+  },
+  {
+   "slug": "emma",
+   "name_en": "Emma",
+   "name_fa": "اِما",
+   "kind": "product"
+  },
+  {
+   "slug": "nuplex",
+   "name_en": "Nuplex",
+   "name_fa": "نوپلکس",
+   "kind": "model"
+  },
+  {
+   "slug": "jeff-bezos",
+   "name_en": "Jeff Bezos",
+   "name_fa": "جف بزوس",
+   "kind": "person"
+  },
+  {
+   "slug": "sam-altman",
+   "name_en": "Sam Altman",
+   "name_fa": "سم آلتمن",
+   "kind": "person"
+  },
+  {
+   "slug": "amazon",
+   "name_en": "Amazon",
+   "name_fa": "آمازون",
+   "kind": "company"
+  },
+  {
+   "slug": "microsoft",
+   "name_en": "Microsoft",
+   "name_fa": "مایکروسافت",
+   "kind": "company"
+  },
+  {
+   "slug": "mai-realtime-1",
+   "name_en": "MAI Realtime 1",
+   "name_fa": "مای‌آی رایت‌تایم ۱",
+   "kind": "model"
+  },
+  {
+   "slug": "gpt-realtime-21",
+   "name_en": "GPT-Realtime 2.1",
+   "name_fa": "جی‌پی‌تی-رایت‌تایم ۲.۱",
+   "kind": "model"
+  },
+  {
+   "slug": "dragon-copilot-transcribe",
+   "name_en": "Dragon Copilot Transcribe",
+   "name_fa": "دراگون کاپیلوت ترنسکرایب",
+   "kind": "product"
+  },
+  {
+   "slug": "ossnew",
+   "name_en": "OSS.new",
+   "name_fa": "او‌اس‌اس دات نیو",
+   "kind": "product"
+  },
+  {
+   "slug": "ben-sencosky",
+   "name_en": "Ben Sencosky",
+   "name_fa": "بن سنسکو",
+   "kind": "person"
+  },
+  {
+   "slug": "everyapp",
+   "name_en": "EveryApp",
+   "name_fa": "اِوری‌اپ",
+   "kind": "product"
+  },
+  {
+   "slug": "cloudflare",
+   "name_en": "Cloudflare",
+   "name_fa": "کلادفلر",
+   "kind": "company"
+  },
+  {
+   "slug": "github",
+   "name_en": "GitHub",
+   "name_fa": "گیت‌هاب",
+   "kind": "company"
   }
  ]
 }
