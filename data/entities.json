@@ -2801,6 +2801,12 @@
    "name_en": "Riemann hypothesis",
    "name_fa": "فرضیه ریمان",
    "kind": "product"
+  },
+  {
+   "slug": "gemini-4",
+   "name_en": "Gemini 4",
+   "name_fa": "جمینای ۴",
+   "kind": "model"
   }
  ]
 }
