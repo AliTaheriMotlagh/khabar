@@ -845,6 +845,24 @@
    "name_en": "GitHub Copilot",
    "name_fa": "گیت‌هاب کپی‌لوت",
    "kind": "product"
+  },
+  {
+   "slug": "tofabz",
+   "name_en": "Tofabz",
+   "name_fa": "توفالبز",
+   "kind": "person"
+  },
+  {
+   "slug": "wikipedia",
+   "name_en": "Wikipedia",
+   "name_fa": "ویکی‌پدیا",
+   "kind": "product"
+  },
+  {
+   "slug": "tufazip",
+   "name_en": "tufazip",
+   "name_fa": "توفازپ",
+   "kind": "product"
   }
  ]
 }
