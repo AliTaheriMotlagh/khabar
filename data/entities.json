@@ -875,6 +875,30 @@
    "name_en": "teddywang86",
    "name_fa": "تدی وانگ ۸۶",
    "kind": "person"
+  },
+  {
+   "slug": "first-person-labs",
+   "name_en": "First Person Labs",
+   "name_fa": "فیرست پرسن لابس",
+   "kind": "company"
+  },
+  {
+   "slug": "second",
+   "name_en": "Second",
+   "name_fa": "سکند",
+   "kind": "product"
+  },
+  {
+   "slug": "jeff-dean",
+   "name_en": "Jeff Dean",
+   "name_fa": "جف دین",
+   "kind": "person"
+  },
+  {
+   "slug": "percy-liang",
+   "name_en": "Percy Liang",
+   "name_fa": "پرسی لیانگ",
+   "kind": "person"
   }
  ]
 }
