@@ -1,0 +1,127 @@
+{
+ "id": 6669,
+ "url": "https://t.me/dlmehr/6669",
+ "date": "2026-11-20T21:10:12+00:00",
+ "text": "https://fxtwitter.com/reuters/status/2123865263791628379?a=pZjfCDBuMjLcQC_2lIg&s=52",
+ "forwarded_from": null,
+ "digest": false,
+ "hash": "a01306e79b65",
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/reuters/status/2123865263791628379?a=pZjfCDBuMjLcQC_2lIg&s=52",
+  "site": "FxTwitter · reuters.com",
+  "title": "Reuters (@Reuters)",
+  "description": "SpaceX's Cursor weighs phasing out Chinese AI models over geopolitical risk, CNBC reports https://reut.rs/4f6cAKH",
+  "image": "https://cdn4.telesco.pe/file/LbCTuOZ-SIIt00ZqwSpWpTyqIWRLA_yZDqbepJpSwfDJURVUzwseRYrPBta9Ooxt3kezzaorOha6nCCZUVjszPlCv3qzr8vxebMYF-g8oSNSsi63T7j4bmn7ekIYYSZSRR3o-oIrL3-PUShnXD-d0Zc6d8vj_XMziii_XdOzbfDgijZ5-PLlCLps7DNApWuwp3X7O8VJ-vbxMAMHKyJ_aM_AZkPzMRSTURjJ3C82IFhVWn6i_9KMAKeqO4g-3QoTbjx11yqxbjcKR6xAACbkePUMMOnW67Z1tLo9fvhsCLW6dbl4EKbCNkjI6cLePGFbl1iiwsRQvKq1rYdAFyEE_w.jpg",
+  "small": true
+ },
+ "gholam": {
+  "text": "رفیق، رویترز به نقل از سی‌ان‌بی‌سی خبر داده که «Cursor» اسپیس‌ایکس داره بررسی می‌کنه مدل‌های هوش مصنوعی چینی رو به خاطر ریسک‌های ژئوپلیتیکی کم‌کم کنار بذاره. البته فعلاً موضوع فقط در حد سبک‌سنگین کردن و بررسیه و خبری از تصمیم قطعی نیست؛ چون متن کامل گزارش هم در دسترس نیست، جزئیات بیشتری از این ماجرا مشخص نیست. 🤔",
+  "date": "2026-11-20T21:10:49+00:00"
+ },
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/Reuters/status/2123865263791628379",
+   "domain": "x.com",
+   "author": {
+    "name": "Reuters",
+    "handle": "Reuters",
+    "avatar": "https://pbs.twimg.com/profile_images/1874154135869616128/nJDmubGJ_200x200.jpg"
+   },
+   "text": "SpaceX's Cursor weighs phasing out Chinese AI models over geopolitical risk, CNBC reports https://reut.rs/4f6cAKH",
+   "date": 1795203913,
+   "media": [],
+   "links": [
+    "https://reut.rs/4f6cAKH"
+   ]
+  }
+ ],
+ "article": {
+  "title": "رویترز به نقل از سی‌ان‌بی‌سی خبر داده که «Cursor» اسپیس‌ایکس داره بررسی می‌کنه مدل‌های هوش مصنوعی چینی رو به خاطر ریسک‌های ژئوپلیتیکی کم‌کم کنار بذاره",
+  "source_title": "SpaceX's Cursor weighs phasing out Chinese AI models over geopolitical risk, CNBC reports",
+  "body": [
+   "رویترز به نقل از سی‌ان‌بی‌سی خبر داده که «Cursor» اسپیس‌ایکس داره بررسی می‌کنه مدل‌های هوش مصنوعی چینی رو به خاطر ریسک‌های ژئوپلیتیکی کم‌کم کنار بذاره. البته فعلاً موضوع فقط در حد سبک‌سنگین کردن و بررسیه و خبری از تصمیم قطعی نیست؛ چون متن کامل گزارش هم در دسترس نیست، جزئیات بیشتری از این ماجرا مشخص نیست. 🤔"
+  ],
+  "why": null,
+  "tags": [
+   "ایلان ماسک",
+   "چین",
+   "کدنویسی"
+  ]
+ },
+ "updated": "2026-11-20T21:14:28+00:00",
+ "ai": {
+  "title": "اسپیس‌ایکس مدل‌های هوش مصنوعی چینی را به خاطر ریسک ژئوپلیتیک کنار می‌گذارد",
+  "short": "اسپیس‌ایکس و مدل‌های چینی",
+  "topics": [
+   "ایلان ماسک",
+   "چین"
+  ],
+  "type": "خبر",
+  "model": "qwen3.5-9b-q4_k_m",
+  "v": 2,
+  "src": "0e05c3f99d16",
+  "x": {
+   "importance": 3,
+   "entities": [
+    {
+     "name_en": "SpaceX",
+     "name_fa": "اسپیس‌ایکس",
+     "kind": "company"
+    },
+    {
+     "name_en": "Cursor",
+     "name_fa": "کرسور",
+     "kind": "product"
+    },
+    {
+     "name_en": "Chinese AI models",
+     "name_fa": "مدل‌های هوش مصنوعی چینی",
+     "kind": "product"
+    }
+   ],
+   "terms": [
+    {
+     "term": "ریسک ژئوپلیتیک",
+     "def": "خطراتی که ناشی از رقابت‌ها و تنش‌های سیاسی بین کشورهاست و می‌تواند بر تجارت تأثیر بگذارد."
+    },
+    {
+     "term": "سبک‌سنگین کردن",
+     "def": "فرآیند بررسی و ارزیابی یک موضوع برای تصمیم‌گیری درباره‌ی ادامه یا توقف آن."
+    }
+   ],
+   "simple": "اسپیس‌ایکس دارد بررسی می‌کند که آیا باید از مدل‌های هوش مصنوعی چینی در ابزار کرسور استفاده کند یا نه. دلیل این کار نگرانی‌های سیاسی بین کشورهاست. فعلاً تصمیم قطعی گرفته نشده است.",
+   "quiz": {
+    "q": "وضعیت فعلی تصمیم اسپیس‌ایکس درباره مدل‌های چینی چیست؟",
+    "options": [
+     "تصمیم قطعی برای حذف آن‌ها گرفته شده است",
+     "موضوع فقط در مرحله بررسی و ارزیابی است",
+     "مدل‌های چینی کاملاً مسدود شده‌اند"
+    ],
+    "answer": 1
+   },
+   "video": {
+    "hook": "اسپیس‌ایکس در حال بررسی حذف مدل‌های هوش مصنوعی چینی است",
+    "points": [
+     "خبر از رویترز و سی‌ان‌بی‌سی منتشر شده است",
+     "دلیل اصلی ریسک‌های ژئوپلیتیک و مسائل سیاسی است",
+     "فعلاً تصمیم نهایی گرفته نشده و فقط در مرحله بررسی است"
+    ],
+    "why": "تغییرات در سیاست‌های شرکت‌های بزرگ فناوری می‌تواند دسترسی کاربران به ابزارهای پیشرفته را تغییر دهد."
+   },
+   "share": "اسپیس‌ایکس مدل‌های هوش مصنوعی چینی را به خاطر مسائل سیاسی بررسی می‌کند.\nتصمیم نهایی هنوز گرفته نشده است.\n#SpaceX #هوش_مصنوعی",
+   "status": "شایعه",
+   "models": [],
+   "events": [],
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 2,
+   "src": "518307ed51ae"
+  },
+  "speech": {
+   "v": 1,
+   "src": "2239943c8d0a",
+   "added": 1
+  }
+ }
+}

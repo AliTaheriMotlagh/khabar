@@ -3155,6 +3155,18 @@
    "name_en": "Gemma 4",
    "name_fa": "جما ۴",
    "kind": "model"
+  },
+  {
+   "slug": "andrew-cohan",
+   "name_en": "Andrew Cohan",
+   "name_fa": "اندرو کوران",
+   "kind": "person"
+  },
+  {
+   "slug": "chinese-ai-models",
+   "name_en": "Chinese AI models",
+   "name_fa": "مدل‌های هوش مصنوعی چینی",
+   "kind": "product"
   }
  ]
 }
