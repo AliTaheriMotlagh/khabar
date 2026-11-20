@@ -76,5 +76,17 @@
   ]
  },
  "updated": "2026-10-25T12:30:56+00:00",
- "gholam_checked": "2026-10-25T12:30:56+00:00"
+ "gholam_checked": "2026-10-25T12:30:56+00:00",
+ "ai": {
+  "title": "OpenCode Go به Codex وصل شد: ۱۰ دلار برای ۵ ساعت دسترسی به DeepSeek",
+  "short": "OpenCode Go و DeepSeek",
+  "topics": [
+   "کدنویسی",
+   "چین"
+  ],
+  "type": "ابزار و محصول",
+  "model": "qwen3.5-9b-q4_k_m",
+  "v": 2,
+  "src": "1ee5603a42ad"
+ }
 }

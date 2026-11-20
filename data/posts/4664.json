@@ -71,5 +71,18 @@
   ]
  },
  "updated": "2026-10-25T12:30:38+00:00",
- "gholam_checked": "2026-10-25T12:30:38+00:00"
+ "gholam_checked": "2026-10-25T12:30:38+00:00",
+ "ai": {
+  "title": "OpenAI با GPT-Image 2 در رقابت تصویرسازی جلوی Grok Imagine را گرفت",
+  "short": "GPT-Image 2 بر Grok Imagine",
+  "topics": [
+   "تصویر و ویدیو",
+   "ایلان ماسک",
+   "گوگل"
+  ],
+  "type": "پژوهش و مقاله",
+  "model": "qwen3.5-9b-q4_k_m",
+  "v": 2,
+  "src": "25d5f372613e"
+ }
 }

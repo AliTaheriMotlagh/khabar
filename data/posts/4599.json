@@ -71,5 +71,17 @@
   ]
  },
  "updated": "2026-10-25T12:30:55+00:00",
- "gholam_checked": "2026-10-25T12:30:55+00:00"
+ "gholam_checked": "2026-10-25T12:30:55+00:00",
+ "ai": {
+  "title": "Cursor کرنل متن‌باز Mixture-of-Kittens را منتشر کرد: افزایش ۴۱ درصدی سرعت آموزش",
+  "short": "Cursor: کرنل Mixture-of-Kittens",
+  "topics": [
+   "کدنویسی",
+   "متن‌باز"
+  ],
+  "type": "ابزار و محصول",
+  "model": "qwen3.5-9b-q4_k_m",
+  "v": 2,
+  "src": "49a403155d27"
+ }
 }

@@ -66,5 +66,14 @@
   "tags": []
  },
  "updated": "2026-10-25T12:31:03+00:00",
- "gholam_checked": "2026-10-25T12:31:03+00:00"
+ "gholam_checked": "2026-10-25T12:31:03+00:00",
+ "ai": {
+  "title": "شرکت Bending Spoons با ۲.۲۵ میلیارد دلار استارتاپ Airtable را خرید",
+  "short": "خرید Airtable توسط Bending Spoons",
+  "topics": [],
+  "type": "خبر",
+  "model": "qwen3.5-9b-q4_k_m",
+  "v": 2,
+  "src": "637fb5d85ba2"
+ }
 }

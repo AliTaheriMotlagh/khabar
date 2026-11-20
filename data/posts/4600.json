@@ -58,5 +58,16 @@
   ]
  },
  "updated": "2026-10-25T12:30:55+00:00",
- "gholam_checked": "2026-10-25T12:30:55+00:00"
+ "gholam_checked": "2026-10-25T12:30:55+00:00",
+ "ai": {
+  "title": "کاربران OpenCode Go روزی ۱۳۰ هزار دلار برای DeepSeek خرج می‌کنند",
+  "short": "هزینه روزانه OpenCode Go",
+  "topics": [
+   "چین"
+  ],
+  "type": "خبر",
+  "model": "qwen3.5-9b-q4_k_m",
+  "v": 2,
+  "src": "317ff16e7d4f"
+ }
 }
