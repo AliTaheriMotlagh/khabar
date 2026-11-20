@@ -14,10 +14,8 @@
   "description": "Introducing AIR-O, a model that decodes what a person is attending to directly from brain scans.\nUsing only noninvasive brain data, we can generate an image from scratch in real time that depicts where a person is focusing their attention.\nThis is the first…",
   "image": null
  },
- "gholam": {
-  "text": "",
-  "date": "2026-11-18T18:04:38+00:00"
- },
+ "gholam": null,
+ "gholam_checked": "2026-11-20T18:26:30+00:00",
  "ai": {
   "title": "شرکت Alljoined مدل AIR-O را آورد: تصویرسازی مستقیم افکار از فعالیت مغزی",
   "short": "مدل AIR-O و تصویرسازی افکار",
@@ -133,6 +131,5 @@
   "why": null,
   "tags": []
  },
- "updated": "2026-11-20T18:26:30+00:00",
- "gholam_checked": "2026-11-20T18:26:30+00:00"
+ "updated": "2026-11-20T18:36:20+00:00"
 }
