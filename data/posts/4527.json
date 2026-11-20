@@ -63,5 +63,16 @@
   ]
  },
  "updated": "2026-10-25T12:31:15+00:00",
- "gholam_checked": "2026-10-25T12:31:15+00:00"
+ "gholam_checked": "2026-10-25T12:31:15+00:00",
+ "ai": {
+  "title": "Firecrawl ابزار pdf-inspector را آورد: پردازش PDF بدون OCR در ۲۰ میلی‌ثانیه",
+  "short": "Firecrawl: پردازش PDF سریع",
+  "topics": [
+   "ایجنت"
+  ],
+  "type": "ابزار و محصول",
+  "model": "qwen3.5-9b-q4_k_m",
+  "v": 2,
+  "src": "acea2413b4b1"
+ }
 }
