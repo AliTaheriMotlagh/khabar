@@ -1,0 +1,74 @@
+{
+ "id": 6663,
+ "url": "https://t.me/dlmehr/6663",
+ "date": "2026-11-20T19:47:12+00:00",
+ "text": "https://fxtwitter.com/openai/status/2123856316187975756?a=HzN3EtKZtcNFleJUlDs&s=52",
+ "forwarded_from": null,
+ "digest": false,
+ "hash": "e71ab48ec4be",
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/openai/status/2123856316187975756?a=HzN3EtKZtcNFleJUlDs&s=52",
+  "site": "FxTwitter",
+  "title": "OpenAI (@OpenAI)",
+  "description": "MedChemBench is a new benchmark for AI reasoning in medicinal chemistry.\nIt shows the progress our frontier models have made in their ability to help scientists use AI to identify promising drug candidates.\nhttps://openai.com/index/introducing-medchembench/",
+  "image": null
+ },
+ "gholam": {
+  "text": "رفیق، OpenAI از یه محک تازه به اسم MedChemBench رونمایی کرده که توانایی استدلال هوش مصنوعی رو توی شیمی دارویی می‌سنجه 🧪 توی داروسازی قضیه یه کم شبیه پتوی کوتاهه که یه سرش رو می‌کشی بالا، اون سرش می‌ره؛ یعنی قوی‌تر کردن یه ویژگیِ مولکول ممکنه جذب یا دوامش توی بدن رو خراب کنه و این آزمون می‌بینه مدل‌ها چقدر می‌تونن این تعادل‌ها رو با شواهد آزمایشگاهی تحلیل کنن.\n\n• به گفته OpenAI، این بنچمارک ۹۹ مسئله برگرفته از ۱۱۷ مقاله و ثبت اختراع (با ۷۶۱ ساختار مولکولی) داره و چهار بخش رو می‌سنجه: بازسازی درست ساختار مولکول، توضیح علمی، رتبه‌بندی و انتخاب ترکیب‌ها و پیش‌بینی ویژگی‌های عددی.\n• طبق گزارش خود شرکت در تنظیم استدلال xhigh، مدل GPT-6.2 Astra امتیاز ۸۴.۵ درصد، GPT-6 Astra امتیاز ۸۳.۳ درصد، GPT-6.1 Sol امتیاز ۸۲ درصد و GPT-5.6 Sol امتیاز ۵۸.۲ درصد گرفتن.\n• مدل GPT-6 Astra توی سرهم کردن درست ساختار مولکول‌ها خیلی خوب بوده (۹۵.۴ درصد امتیاز)، اما توی انتخاب ترکیب و پیش‌بینی عدد و رقم‌ها کارش سخت‌تر بوده و حدود نصف امتیاز رو گرفته.\n\nالبته خود OpenAI هم یادآوری کرده این نمره‌ها هنوز ثابت نمی‌کنه هوش مصنوعی بتونه توی آزمایشگاه داروی جدید کشف کنه؛ چون مدل‌ها فقط با یک تلاش و بدون ابزار یا آزمایش تازه جواب دادن و نمی‌شه مطمئن بود قبلاً این مقاله‌های منتشرشده رو ندیده باشن.",
+  "date": "2026-11-20T19:47:36+00:00"
+ },
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/OpenAI/status/2123856316187975756",
+   "domain": "x.com",
+   "author": {
+    "name": "OpenAI",
+    "handle": "OpenAI",
+    "avatar": "https://pbs.twimg.com/profile_images/1885410181409820672/ztsaR0JW_200x200.jpg"
+   },
+   "text": "MedChemBench is a new benchmark for AI reasoning in medicinal chemistry.\n\nIt shows the progress our frontier models have made in their ability to help scientists use AI to identify promising drug candidates.\n\nhttps://openai.com/index/introducing-medchembench/",
+   "date": 1795201779,
+   "media": [
+    {
+     "type": "video",
+     "src": "https://video.twimg.com/amplify_video/2123855630335430656/vid/avc1/1280x720/5QOAuYarj25W0gZC.mp4?tag=29",
+     "poster": "https://pbs.twimg.com/amplify_video_thumb/2123855630335430656/img/4tCLd3eyj5V-Vrdz.jpg",
+     "ratio": 0.5625,
+     "duration": 12.6,
+     "gif": false
+    }
+   ],
+   "links": [
+    "https://openai.com/index/introducing-medchembench/"
+   ]
+  }
+ ],
+ "article": {
+  "title": "OpenAI از یه محک تازه به اسم MedChemBench رونمایی کرده که توانایی استدلال هوش مصنوعی رو توی شیمی دارویی می‌سنجه 🧪 توی داروسازی قضیه یه کم شبیه پتوی کوتاهه که یه سرش رو می‌کشی بالا، اون سرش می‌ره",
+  "source_title": "MedChemBench is a new benchmark for AI reasoning in medicinal chemistry.",
+  "body": [
+   "OpenAI از یه محک تازه به اسم MedChemBench رونمایی کرده که توانایی استدلال هوش مصنوعی رو توی شیمی دارویی می‌سنجه 🧪 توی داروسازی قضیه یه کم شبیه پتوی کوتاهه که یه سرش رو می‌کشی بالا، اون سرش می‌ره؛ یعنی قوی‌تر کردن یه ویژگیِ مولکول ممکنه جذب یا دوامش توی بدن رو خراب کنه و این آزمون می‌بینه مدل‌ها چقدر می‌تونن این تعادل‌ها رو با شواهد آزمایشگاهی تحلیل کنن.",
+   "• به گفته OpenAI، این بنچمارک ۹۹ مسئله برگرفته از ۱۱۷ مقاله و ثبت اختراع (با ۷۶۱ ساختار مولکولی) داره و چهار بخش رو می‌سنجه: بازسازی درست ساختار مولکول، توضیح علمی، رتبه‌بندی و انتخاب ترکیب‌ها و پیش‌بینی ویژگی‌های عددی.",
+   "• طبق گزارش خود شرکت در تنظیم استدلال xhigh، مدل GPT-6.2 Astra امتیاز ۸۴.۵ درصد، GPT-6 Astra امتیاز ۸۳.۳ درصد، GPT-6.1 Sol امتیاز ۸۲ درصد و GPT-5.6 Sol امتیاز ۵۸.۲ درصد گرفتن.",
+   "• مدل GPT-6 Astra توی سرهم کردن درست ساختار مولکول‌ها خیلی خوب بوده (۹۵.۴ درصد امتیاز)، اما توی انتخاب ترکیب و پیش‌بینی عدد و رقم‌ها کارش سخت‌تر بوده و حدود نصف امتیاز رو گرفته."
+  ],
+  "why": "البته خود OpenAI هم یادآوری کرده این نمره‌ها هنوز ثابت نمی‌کنه هوش مصنوعی بتونه توی آزمایشگاه داروی جدید کشف کنه؛ چون مدل‌ها فقط با یک تلاش و بدون ابزار یا آزمایش تازه جواب دادن و نمی‌شه مطمئن بود قبلاً این مقاله‌های منتشرشده رو ندیده باشن.",
+  "why_label": "حرف آخر",
+  "tags": [
+   "اوپن‌ای‌آی",
+   "علم"
+  ]
+ },
+ "updated": "2026-11-20T20:03:30+00:00",
+ "ai": {
+  "title": "OpenAI بنچمارک MedChemBench را آورد تا استدلال هوش مصنوعی در شیمی دارویی را بسنجد",
+  "short": "OpenAI: MedChemBench",
+  "topics": [],
+  "type": "پژوهش و مقاله",
+  "model": "qwen3.5-9b-q4_k_m",
+  "v": 2,
+  "src": "3f401e785f8e"
+ }
+}
