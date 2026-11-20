@@ -2261,6 +2261,126 @@
    "name_en": "Teammate",
    "name_fa": "تیم‌میت",
    "kind": "product"
+  },
+  {
+   "slug": "gemini-4-carbon",
+   "name_en": "Gemini 4 Carbon",
+   "name_fa": "جمینای ۴ کربن",
+   "kind": "model"
+  },
+  {
+   "slug": "gr00t-2",
+   "name_en": "GR00T 2",
+   "name_fa": "گرُوت ۲",
+   "kind": "model"
+  },
+  {
+   "slug": "ring-drone-cam",
+   "name_en": "Ring Drone Cam",
+   "name_fa": "رینگ درون کام",
+   "kind": "product"
+  },
+  {
+   "slug": "pano-panay",
+   "name_en": "Pano Panay",
+   "name_fa": "پانو پانای",
+   "kind": "person"
+  },
+  {
+   "slug": "frontiercode-20",
+   "name_en": "FrontierCode 2.0",
+   "name_fa": "فرانتیرکد ۲.۰",
+   "kind": "product"
+  },
+  {
+   "slug": "greg-brockman",
+   "name_en": "Greg Brockman",
+   "name_fa": "گرگ بروکمن",
+   "kind": "person"
+  },
+  {
+   "slug": "cyber-at-the-frontier",
+   "name_en": "Cyber at the Frontier",
+   "name_fa": "سایبر ات دی فرانتیر",
+   "kind": "product"
+  },
+  {
+   "slug": "claude-whiteboards",
+   "name_en": "Claude Whiteboards",
+   "name_fa": "کلود وایت‌بردها",
+   "kind": "product"
+  },
+  {
+   "slug": "claude-sheets",
+   "name_en": "Claude Sheets",
+   "name_fa": "کلود شیت‌ها",
+   "kind": "product"
+  },
+  {
+   "slug": "claude-data",
+   "name_en": "Claude Data",
+   "name_fa": "کلود دیتا",
+   "kind": "product"
+  },
+  {
+   "slug": "google-antigravity",
+   "name_en": "Google Antigravity",
+   "name_fa": "گوگل آنتی‌گریتی",
+   "kind": "product"
+  },
+  {
+   "slug": "blender",
+   "name_en": "Blender",
+   "name_fa": "بلندر",
+   "kind": "product"
+  },
+  {
+   "slug": "threejs",
+   "name_en": "Three.js",
+   "name_fa": "ترو-جی‌اس",
+   "kind": "product"
+  },
+  {
+   "slug": "ai-futures",
+   "name_en": "AI Futures",
+   "name_fa": "آی فیچرز",
+   "kind": "model"
+  },
+  {
+   "slug": "nasa",
+   "name_en": "NASA",
+   "name_fa": "ناسا",
+   "kind": "company"
+  },
+  {
+   "slug": "maya-civilization",
+   "name_en": "Maya civilization",
+   "name_fa": "تمدن مایا",
+   "kind": "product"
+  },
+  {
+   "slug": "my-ai-agents",
+   "name_en": "My AI agents",
+   "name_fa": "ایجنت‌های من",
+   "kind": "product"
+  },
+  {
+   "slug": "pietro-miotto",
+   "name_en": "Pietro Miotto",
+   "name_fa": "پیترو میوتی",
+   "kind": "person"
+  },
+  {
+   "slug": "national-institute-of-anthropology-and-history",
+   "name_en": "National Institute of Anthropology and History",
+   "name_fa": "مؤسسه ملی انسان‌شناسی و تاریخ مکزیک",
+   "kind": "company"
+  },
+  {
+   "slug": "stripe",
+   "name_en": "Stripe",
+   "name_fa": "استرایپ",
+   "kind": "company"
   }
  ]
 }
