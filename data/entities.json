@@ -1703,6 +1703,192 @@
    "name_en": "Ghulam",
    "name_fa": "داش غلام",
    "kind": "person"
+  },
+  {
+   "slug": "liquidcodec",
+   "name_en": "LiquidCodec",
+   "name_fa": "لیکوید کدک",
+   "kind": "product"
+  },
+  {
+   "slug": "lfm3-audio-2b",
+   "name_en": "LFM3-Audio-2B",
+   "name_fa": "اف‌ام‌اف۳-آودियो-۲بی",
+   "kind": "model"
+  },
+  {
+   "slug": "lfm3-omni-2b",
+   "name_en": "LFM3-Omni-2B",
+   "name_fa": "اف‌ام‌اف۳-امنی-۲بی",
+   "kind": "model"
+  },
+  {
+   "slug": "apple-m4-max",
+   "name_en": "Apple M4 Max",
+   "name_fa": "اپل ام۴ مکس",
+   "kind": "product"
+  },
+  {
+   "slug": "retell-ai",
+   "name_en": "Retell AI",
+   "name_fa": "ریتل",
+   "kind": "company"
+  },
+  {
+   "slug": "lenovo",
+   "name_en": "Lenovo",
+   "name_fa": "لنوو",
+   "kind": "company"
+  },
+  {
+   "slug": "azuri",
+   "name_en": "Azuri",
+   "name_fa": "آزبری",
+   "kind": "company"
+  },
+  {
+   "slug": "san-antonio-spurs",
+   "name_en": "San Antonio Spurs",
+   "name_fa": "سن‌آنتونیو اسپرز",
+   "kind": "company"
+  },
+  {
+   "slug": "tell-1",
+   "name_en": "Tell-1",
+   "name_fa": "تل-۱",
+   "kind": "model"
+  },
+  {
+   "slug": "ali-kashani",
+   "name_en": "Ali Kashani",
+   "name_fa": "علی کاشانی",
+   "kind": "person"
+  },
+  {
+   "slug": "claude-meetings",
+   "name_en": "Claude Meetings",
+   "name_fa": "کلود می‌تینگز",
+   "kind": "product"
+  },
+  {
+   "slug": "google-meet",
+   "name_en": "Google Meet",
+   "name_fa": "گوگل میت",
+   "kind": "product"
+  },
+  {
+   "slug": "lightseek",
+   "name_en": "Lightseek",
+   "name_fa": "لایت‌سیک",
+   "kind": "company"
+  },
+  {
+   "slug": "tokenspeed",
+   "name_en": "TokenSpeed",
+   "name_fa": "توکن‌اسپید",
+   "kind": "product"
+  },
+  {
+   "slug": "exchange-online",
+   "name_en": "Exchange Online",
+   "name_fa": "ایکسچنج آنلاین",
+   "kind": "product"
+  },
+  {
+   "slug": "microsoft-365",
+   "name_en": "Microsoft 365",
+   "name_fa": "مایکروسافت ۳۶۵",
+   "kind": "product"
+  },
+  {
+   "slug": "the-information",
+   "name_en": "The Information",
+   "name_fa": "د اینفورمیشن",
+   "kind": "company"
+  },
+  {
+   "slug": "tsmc",
+   "name_en": "TSMC",
+   "name_fa": "تی‌اس‌ام‌سی",
+   "kind": "company"
+  },
+  {
+   "slug": "google-deepmind",
+   "name_en": "Google DeepMind",
+   "name_fa": "گوگل دیپ‌مایند",
+   "kind": "company"
+  },
+  {
+   "slug": "weathernext-3",
+   "name_en": "WeatherNext 3",
+   "name_fa": "ویذر‌نکست ۳",
+   "kind": "product"
+  },
+  {
+   "slug": "pardig",
+   "name_en": "PARDIG",
+   "name_fa": "پاردیگ",
+   "kind": "product"
+  },
+  {
+   "slug": "satweave",
+   "name_en": "SatWeave",
+   "name_fa": "سات‌ویو",
+   "kind": "product"
+  },
+  {
+   "slug": "chatgpt-wallet",
+   "name_en": "ChatGPT Wallet",
+   "name_fa": "چت‌جی‌پی‌تی ولت",
+   "kind": "product"
+  },
+  {
+   "slug": "eleven-westover",
+   "name_en": "Eleven Westover",
+   "name_fa": "الک وست‌اور",
+   "kind": "person"
+  },
+  {
+   "slug": "redwood-research",
+   "name_en": "Redwood Research",
+   "name_fa": "ردوود ریسرچ",
+   "kind": "company"
+  },
+  {
+   "slug": "dory",
+   "name_en": "Dory",
+   "name_fa": "دوری",
+   "kind": "model"
+  },
+  {
+   "slug": "argon",
+   "name_en": "Argon",
+   "name_fa": "آرگون",
+   "kind": "model"
+  },
+  {
+   "slug": "vexo",
+   "name_en": "Vexo",
+   "name_fa": "وکسو",
+   "kind": "product"
+  },
+  {
+   "slug": "yc",
+   "name_en": "YC",
+   "name_fa": "وای‌کامبینیتور",
+   "kind": "company"
+  },
+  {
+   "slug": "paul-graham",
+   "name_en": "Paul Graham",
+   "name_fa": "پل گراهام",
+   "kind": "person"
+  },
+  {
+   "slug": "dynamic-workflows",
+   "name_en": "Dynamic Workflows",
+   "name_fa": "داینامیک ورک‌فلو",
+   "kind": "product"
   }
  ]
 }
