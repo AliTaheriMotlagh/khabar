@@ -12,7 +12,7 @@
   "site": "X (formerly Twitter)",
   "title": "ClaudeDevs (@ClaudeDevs) on X",
   "description": "Check out Code Mode, a new, experimental way for Claude Code to work with tools. Claude writes scripts that chain your tools together in sophisticated ways, and it can answer you while long comman…",
-  "image": "https://cdn4.telesco.pe/file/LtyjtQytCTz3R6v4SNmmCtQP-xRnO_nZd9o_5-DSnClu8VCDqi96C11zPobrq4yaTrLM0a1HNpbM2Sw4FrVcWbSBYLDbmuTzM4EUsC-GWP0Mo9eTr3SabahFrmGuyLMiOPh9L1htswHvGvlh0eO2pIBIv-7L8Qbn5m-gnaL3XVWZmUGGeR9TIufAspLDIQhg347sPzKqyp2UtwLAMtwH55MPG6xRZE241T7bsVdBChs3m-mLFzqCRC8tLz3xvMC2Y4wUBpL_3MBOKyGsqtc4YWAGCrfNBJ7vkVbbHGe2-kFqj5gb9kcMLbm7nGR5BmpQ_9fMVX0oqSF8CbcCrD6G9g.jpg"
+  "image": "https://cdn4.telesco.pe/file/hnGW599AZDKL20S0AiEzU7WkyXBse8P3YMbIEnCAhVg3R44t35q8MrFhSGJnGECxb0YQao_CavmaEdZgzidU_yxaTAxEJETkai9CsOfZf0MBPjXfID7VWYBU-1WYJ-3kwdjgJR_svq--h1cPISEpY_64-ys8obc_--Sw9GE78CiDb1b5vy4e0USPPUzkEGaA436cmK-GNSRI5IMBHuOYUxWEJ9mksTUrCE7U_L4_wWS15m7RqiKFZdbDA5kQJ-hOSbeTJBwjKd8Ui23di8wBkZFLWyWugZtvDEG21qaxp6d9bOskdYHfET1ub2_hvdDdEJlJmw_iUK4dShopq5wFiw.jpg"
  },
  "gholam": {
   "text": "سلام رفقا، اکانت ClaudeDevs یه قابلیت آزمایشی جدید برای کلود کد (Claude Code) معرفی کرده به اسم Code Mode. تا قبل از این، کلود ابزارها رو دونه دونه صدا می‌زد و منتظر نتیجه هر کدوم می‌موند؛ اما تو این حالت مثل یه دستیار زرنگ که چند تا کار رو با هم ردیف می‌کنه، یه اسکریپت جاوااسکریپت می‌نویسه تا چند تا دستور و ابزار رو هم‌زمان یا پشت سر هم اجرا کنه و حین اجرای دستورات طولانی هم بتونه به شما جواب بده. ⚙️\n\nطبق مستندات کلود کد، چند تا نکته مهم درباره‌ش وجود داره:\n• این قابلیت به‌صورت پیش‌فرض خاموشه، آزمایشیه (ممکنه تغییر کنه یا برداشته بشه) و برای فعال‌سازی باید CLAUDECODEEXPERIMENTALCODEMODE=1 رو تنظیم کنید.\n• بیشتر به درد تغییرات تکراری روی فایل‌های زیاد، فیلتر کردن خروجی جستجوها یا اجرای هم‌زمان چند دستور مستقل می‌خوره و با Ctrl+O می‌تونید کدی که کلود نوشته رو ببینید.\n• فعلاً فقط توی ترمینال (نسخه ۲.۱.۳۲۳ به بالا) با اشتراک کلود یا اکانت کنسول و روی مدل‌های Opus 5.5، Sonnet 5.5، Haiku 5.5 یا Fable 5.2 کار می‌کنه و امکاناتی مثل ریموت کنترل، کلود در کروم، کنترل کامپیوتر (computer use) و انتقال سشن به اپ دسکتاپ تو این حالت در دسترس نیست.",
@@ -160,5 +160,5 @@
    "کدنویسی"
   ]
  },
- "updated": "2026-11-20T02:53:36+00:00"
+ "updated": "2026-11-20T11:21:08+00:00"
 }
