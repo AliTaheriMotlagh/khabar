@@ -6221,6 +6221,138 @@
    "name_en": "Azalia Mirhosseini",
    "name_fa": "آزالیا میرحسینی",
    "kind": "person"
+  },
+  {
+   "slug": "builderio",
+   "name_en": "Builder.io",
+   "name_fa": "بیلدر آی‌او",
+   "kind": "company"
+  },
+  {
+   "slug": "agent-native",
+   "name_en": "Agent-Native",
+   "name_fa": "ایجنت-نیتیو",
+   "kind": "product"
+  },
+  {
+   "slug": "sycamore",
+   "name_en": "Sycamore",
+   "name_fa": "سوچانک",
+   "kind": "company"
+  },
+  {
+   "slug": "expand-fetch",
+   "name_en": "Expand Fetch",
+   "name_fa": "اکسپند فچ",
+   "kind": "product"
+  },
+  {
+   "slug": "iris",
+   "name_en": "Iris",
+   "name_fa": "آیریس",
+   "kind": "model"
+  },
+  {
+   "slug": "x-ray",
+   "name_en": "X-Ray",
+   "name_fa": "اکس‌ری",
+   "kind": "model"
+  },
+  {
+   "slug": "next-concept-models",
+   "name_en": "Next-Concept Models",
+   "name_fa": "مدل‌های مفهوم بعدی",
+   "kind": "model"
+  },
+  {
+   "slug": "felix-riebsam",
+   "name_en": "Felix Riebsam",
+   "name_fa": "فلیکس رایزبرگ",
+   "kind": "person"
+  },
+  {
+   "slug": "nemotron-35-super-vl",
+   "name_en": "Nemotron 3.5 Super VL",
+   "name_fa": "نموترون ۳.۵ سوپر وی‌ال",
+   "kind": "model"
+  },
+  {
+   "slug": "muse-spark-open",
+   "name_en": "Muse Spark Open",
+   "name_fa": "موز اسپارک اوپن",
+   "kind": "model"
+  },
+  {
+   "slug": "roadster",
+   "name_en": "Roadster",
+   "name_fa": "رودستر",
+   "kind": "product"
+  },
+  {
+   "slug": "optimus",
+   "name_en": "Optimus",
+   "name_fa": "آپتیموس",
+   "kind": "product"
+  },
+  {
+   "slug": "f-35",
+   "name_en": "F-35",
+   "name_fa": "اف-۳۵",
+   "kind": "product"
+  },
+  {
+   "slug": "sr-71",
+   "name_en": "SR-71",
+   "name_fa": "اس‌آر-۷۱",
+   "kind": "product"
+  },
+  {
+   "slug": "dogedesigner",
+   "name_en": "DogeDesigner",
+   "name_fa": "دوج دیزاینر",
+   "kind": "product"
+  },
+  {
+   "slug": "tesla-roadster",
+   "name_en": "Tesla Roadster",
+   "name_fa": "تسلا رودستر",
+   "kind": "product"
+  },
+  {
+   "slug": "somewhere",
+   "name_en": "Somewhere",
+   "name_fa": "سام‌ور",
+   "kind": "company"
+  },
+  {
+   "slug": "actual-computer",
+   "name_en": "Actual Computer",
+   "name_fa": "اکتوال کامپیوتر",
+   "kind": "company"
+  },
+  {
+   "slug": "willo",
+   "name_en": "Willo",
+   "name_fa": "ویلو",
+   "kind": "product"
+  },
+  {
+   "slug": "glm-53-flash",
+   "name_en": "GLM 5.3 Flash",
+   "name_fa": "گل‌ام ۵.۳ فلاش",
+   "kind": "model"
+  },
+  {
+   "slug": "deepseek-v4-pro-base",
+   "name_en": "DeepSeek-V4-Pro-Base",
+   "name_fa": "دیپ‌سیک V4 پرو بیس",
+   "kind": "model"
+  },
+  {
+   "slug": "claude-mitos-5",
+   "name_en": "Claude Mitos 5",
+   "name_fa": "کلود میتوس ۵",
+   "kind": "model"
   }
  ]
 }
