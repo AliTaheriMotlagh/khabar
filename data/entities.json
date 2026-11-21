@@ -3797,6 +3797,204 @@
    "name_en": "Neuralink",
    "name_fa": "نورالینک",
    "kind": "company"
+  },
+  {
+   "slug": "creator-mode",
+   "name_en": "Creator Mode",
+   "name_fa": "حالت سازنده",
+   "kind": "product"
+  },
+  {
+   "slug": "tutor-intelligence",
+   "name_en": "Tutor Intelligence",
+   "name_fa": "تاتور اینتلیجنس",
+   "kind": "company"
+  },
+  {
+   "slug": "josh-grossstein",
+   "name_en": "Josh Grossstein",
+   "name_fa": "جاش گرونستاین",
+   "kind": "person"
+  },
+  {
+   "slug": "alon-koussofsky",
+   "name_en": "Alon Koussofsky",
+   "name_fa": "آلون کوسوفسکی",
+   "kind": "person"
+  },
+  {
+   "slug": "lifeval",
+   "name_en": "LifeVal",
+   "name_fa": "لیف‌وال",
+   "kind": "product"
+  },
+  {
+   "slug": "cyclone",
+   "name_en": "Cyclone",
+   "name_fa": "سایکلون",
+   "kind": "company"
+  },
+  {
+   "slug": "adam-zainbi",
+   "name_en": "Adam Zainbi",
+   "name_fa": "آدام زینبی",
+   "kind": "person"
+  },
+  {
+   "slug": "iphone",
+   "name_en": "iPhone",
+   "name_fa": "آیفون",
+   "kind": "product"
+  },
+  {
+   "slug": "ipo",
+   "name_en": "IPO",
+   "name_fa": "عرضه اولیه سهام",
+   "kind": "product"
+  },
+  {
+   "slug": "messages-api",
+   "name_en": "Messages API",
+   "name_fa": "پیام‌های API",
+   "kind": "product"
+  },
+  {
+   "slug": "anthropic-residency",
+   "name_en": "Anthropic Residency",
+   "name_fa": "دوره رزیدنسی آنتروپیک",
+   "kind": "product"
+  },
+  {
+   "slug": "qwen35-08b",
+   "name_en": "Qwen3.5-0.8B",
+   "name_fa": "کیوون ۳.۵-۰.۸ بی",
+   "kind": "model"
+  },
+  {
+   "slug": "pando",
+   "name_en": "Pando",
+   "name_fa": "پاندو",
+   "kind": "product"
+  },
+  {
+   "slug": "git",
+   "name_en": "Git",
+   "name_fa": "گیت",
+   "kind": "product"
+  },
+  {
+   "slug": "zheng-jiajun",
+   "name_en": "Zheng Jiajun",
+   "name_fa": "ژنگ جیاجون",
+   "kind": "person"
+  },
+  {
+   "slug": "qwen35-4b",
+   "name_en": "Qwen3.5-4B",
+   "name_fa": "قوئن ۳.۵-۴B",
+   "kind": "model"
+  },
+  {
+   "slug": "roboarchitect",
+   "name_en": "RoboArchitect",
+   "name_fa": "روبوآرکی‌تکت",
+   "kind": "product"
+  },
+  {
+   "slug": "david-im",
+   "name_en": "David Im",
+   "name_fa": "دیوید ایم",
+   "kind": "person"
+  },
+  {
+   "slug": "heygen",
+   "name_en": "HeyGen",
+   "name_fa": "هی‌جن",
+   "kind": "company"
+  },
+  {
+   "slug": "higgsfield",
+   "name_en": "Higgsfield",
+   "name_fa": "هیگزفیلد",
+   "kind": "company"
+  },
+  {
+   "slug": "alex-krantz",
+   "name_en": "Alex Krantz",
+   "name_fa": "الکس کرنتسل",
+   "kind": "person"
+  },
+  {
+   "slug": "wolfe",
+   "name_en": "Wolfe",
+   "name_fa": "ولف",
+   "kind": "person"
+  },
+  {
+   "slug": "binance",
+   "name_en": "Binance",
+   "name_fa": "بایننس",
+   "kind": "company"
+  },
+  {
+   "slug": "north-korea",
+   "name_en": "North Korea",
+   "name_fa": "کره شمالی",
+   "kind": "company"
+  },
+  {
+   "slug": "state-sponsored-hackers",
+   "name_en": "State-sponsored hackers",
+   "name_fa": "هکرهای دولتی",
+   "kind": "person"
+  },
+  {
+   "slug": "mcp",
+   "name_en": "MCP",
+   "name_fa": "پروتکل MCP",
+   "kind": "product"
+  },
+  {
+   "slug": "andrew-curran",
+   "name_en": "Andrew Curran",
+   "name_fa": "اندرو کوران",
+   "kind": "person"
+  },
+  {
+   "slug": "siri",
+   "name_en": "Siri",
+   "name_fa": "سیری",
+   "kind": "product"
+  },
+  {
+   "slug": "michael-gorbatch",
+   "name_en": "Michael Gorbatch",
+   "name_fa": "مایکل گورباخ",
+   "kind": "person"
+  },
+  {
+   "slug": "flashprove",
+   "name_en": "FlashProve",
+   "name_fa": "فلش پروو",
+   "kind": "product"
+  },
+  {
+   "slug": "gemini-notebook",
+   "name_en": "Gemini Notebook",
+   "name_fa": "جمینای نوت‌بوک",
+   "kind": "product"
+  },
+  {
+   "slug": "reuters",
+   "name_en": "Reuters",
+   "name_fa": "رویترز",
+   "kind": "company"
+  },
+  {
+   "slug": "jacob-loretzen",
+   "name_en": "Jacob Loretzen",
+   "name_fa": "جیکوب لوریتزن",
+   "kind": "person"
   }
  ]
 }
