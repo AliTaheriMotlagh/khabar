@@ -243,7 +243,8 @@ jobs:
   # Off (a no-op) without the CLOUDFLARE_API_TOKEN secret and the CLOUDFLARE_ACCOUNT_ID variable.
   cloudflare:
     needs: build
-    if: needs.build.outputs.deploy == 'true'
+    # Also when the site tests failed: like Vercel, the primary site serves the data that is on main.
+    if: always() && needs.build.outputs.deploy == 'true'
     runs-on: ubuntu-latest
     timeout-minutes: 30
     env:
