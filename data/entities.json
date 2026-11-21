@@ -5447,6 +5447,168 @@
    "name_en": "Standard Chartered",
    "name_fa": "استاندارد چارترد",
    "kind": "company"
+  },
+  {
+   "slug": "orin",
+   "name_en": "Orin",
+   "name_fa": "اورین",
+   "kind": "product"
+  },
+  {
+   "slug": "gtc",
+   "name_en": "GTC",
+   "name_fa": "کنفرانس GTC",
+   "kind": "product"
+  },
+  {
+   "slug": "mark-roberge",
+   "name_en": "Mark Roberge",
+   "name_fa": "مارکز براونلی",
+   "kind": "person"
+  },
+  {
+   "slug": "plato",
+   "name_en": "Plato",
+   "name_fa": "پلاتو",
+   "kind": "product"
+  },
+  {
+   "slug": "recursive-si",
+   "name_en": "Recursive_SI",
+   "name_fa": "ریکرسای‌آی",
+   "kind": "company"
+  },
+  {
+   "slug": "flint",
+   "name_en": "Flint",
+   "name_fa": "فلینت",
+   "kind": "model"
+  },
+  {
+   "slug": "applied-compute",
+   "name_en": "Applied Compute",
+   "name_fa": "آپلاید کامپیوت",
+   "kind": "company"
+  },
+  {
+   "slug": "shift-1",
+   "name_en": "Shift-1",
+   "name_fa": "شیفت-۱",
+   "kind": "product"
+  },
+  {
+   "slug": "ac2",
+   "name_en": "AC2",
+   "name_fa": "ای‌سی-۲",
+   "kind": "model"
+  },
+  {
+   "slug": "underdog-ai",
+   "name_en": "Underdog AI",
+   "name_fa": "آندر‌داگ ای‌آی",
+   "kind": "company"
+  },
+  {
+   "slug": "bark-30",
+   "name_en": "Bark 3.0",
+   "name_fa": "بارک ۳.۰",
+   "kind": "model"
+  },
+  {
+   "slug": "whisper-large-v3",
+   "name_en": "Whisper large-v3",
+   "name_fa": "ویشر لارج-وی۳",
+   "kind": "model"
+  },
+  {
+   "slug": "parakeet",
+   "name_en": "Parakeet",
+   "name_fa": "پاراکیت",
+   "kind": "model"
+  },
+  {
+   "slug": "demis-hassabis",
+   "name_en": "Demis Hassabis",
+   "name_fa": "دمیس هاسابیس",
+   "kind": "person"
+  },
+  {
+   "slug": "deepmind",
+   "name_en": "DeepMind",
+   "name_fa": "دیپ‌مایند",
+   "kind": "company"
+  },
+  {
+   "slug": "zhipu-ai",
+   "name_en": "Zhipu AI",
+   "name_fa": "زپو ای‌آی",
+   "kind": "company"
+  },
+  {
+   "slug": "glm-55",
+   "name_en": "GLM 5.5",
+   "name_fa": "گل‌ام ۵.۵",
+   "kind": "model"
+  },
+  {
+   "slug": "orchestr8-bio",
+   "name_en": "Orchestr8 Bio",
+   "name_fa": "ارکسترا بایو",
+   "kind": "company"
+  },
+  {
+   "slug": "baker-lab",
+   "name_en": "Baker Lab",
+   "name_fa": "آزمایشگاه بیکر",
+   "kind": "company"
+  },
+  {
+   "slug": "omnii-1",
+   "name_en": "Omnii-1",
+   "name_fa": "امنی-۱",
+   "kind": "product"
+  },
+  {
+   "slug": "claude-duet",
+   "name_en": "Claude Duet",
+   "name_fa": "کلود دیووت",
+   "kind": "product"
+  },
+  {
+   "slug": "railway",
+   "name_en": "Railway",
+   "name_fa": "ریل‌وی",
+   "kind": "company"
+  },
+  {
+   "slug": "marathon-fusion",
+   "name_en": "Marathon Fusion",
+   "name_fa": "ماراتن فیوژن",
+   "kind": "company"
+  },
+  {
+   "slug": "cern",
+   "name_en": "CERN",
+   "name_fa": "سرن",
+   "kind": "company"
+  },
+  {
+   "slug": "flapping-airplanes",
+   "name_en": "Flapping Airplanes",
+   "name_fa": "فلپینگ ایرپلینز",
+   "kind": "company"
+  },
+  {
+   "slug": "neolabs",
+   "name_en": "NeoLabs",
+   "name_fa": "نیولابس",
+   "kind": "company"
+  },
+  {
+   "slug": "ampersand",
+   "name_en": "AmperSand",
+   "name_fa": "آمپرسند",
+   "kind": "model"
   }
  ]
 }
