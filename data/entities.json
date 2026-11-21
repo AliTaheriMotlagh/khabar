@@ -5609,6 +5609,132 @@
    "name_en": "AmperSand",
    "name_fa": "آمپرسند",
    "kind": "model"
+  },
+  {
+   "slug": "adobe",
+   "name_en": "Adobe",
+   "name_fa": "ادوبی",
+   "kind": "company"
+  },
+  {
+   "slug": "european-broadcasting-union",
+   "name_en": "European Broadcasting Union",
+   "name_fa": "اتحادیه رادیو و تلویزیون‌های اروپا",
+   "kind": "company"
+  },
+  {
+   "slug": "frameio",
+   "name_en": "Frame.io",
+   "name_fa": "فریم آی‌او",
+   "kind": "product"
+  },
+  {
+   "slug": "alex-dimakis",
+   "name_en": "Alex Dimakis",
+   "name_fa": "الکس دیماکیس",
+   "kind": "person"
+  },
+  {
+   "slug": "autoresearchexam",
+   "name_en": "AutoResearchExam",
+   "name_fa": "اتو ریسرچ اکزام",
+   "kind": "product"
+  },
+  {
+   "slug": "go",
+   "name_en": "Go",
+   "name_fa": "گو",
+   "kind": "product"
+  },
+  {
+   "slug": "certificate-authority",
+   "name_en": "Certificate Authority",
+   "name_fa": "مرجع صدور گواهی",
+   "kind": "product"
+  },
+  {
+   "slug": "unitree",
+   "name_en": "Unitree",
+   "name_fa": "یونیتری",
+   "kind": "company"
+  },
+  {
+   "slug": "gpt-rosalind",
+   "name_en": "GPT-Rosalind",
+   "name_fa": "جی‌پی‌تی-روزالیند",
+   "kind": "model"
+  },
+  {
+   "slug": "scripps-research",
+   "name_en": "Scripps Research",
+   "name_fa": "مؤسسه اسکریپس",
+   "kind": "company"
+  },
+  {
+   "slug": "dctn1",
+   "name_en": "DCTN1",
+   "name_fa": "دی‌سی‌تی‌ان‌۱",
+   "kind": "model"
+  },
+  {
+   "slug": "mistral-ai",
+   "name_en": "Mistral AI",
+   "name_fa": "میسترال",
+   "kind": "company"
+  },
+  {
+   "slug": "torchtpu",
+   "name_en": "TorchTPU",
+   "name_fa": "تورچ‌تی‌پی‌یو",
+   "kind": "product"
+  },
+  {
+   "slug": "llama-3",
+   "name_en": "Llama 3",
+   "name_fa": "لاما ۳",
+   "kind": "model"
+  },
+  {
+   "slug": "grok",
+   "name_en": "Grok",
+   "name_fa": "گروک",
+   "kind": "model"
+  },
+  {
+   "slug": "latin-america",
+   "name_en": "Latin America",
+   "name_fa": "آمریکای لاتین",
+   "kind": "company"
+  },
+  {
+   "slug": "dsx-pod",
+   "name_en": "DSX POD",
+   "name_fa": "دی‌اس‌ای‌پاد",
+   "kind": "product"
+  },
+  {
+   "slug": "patch-the-planet",
+   "name_en": "Patch the Planet",
+   "name_fa": "پچ دی پلنت",
+   "kind": "product"
+  },
+  {
+   "slug": "rfd4-proteina",
+   "name_en": "RFD4-Proteina",
+   "name_fa": "آر‌اف‌دی۴-پروتئینا",
+   "kind": "model"
+  },
+  {
+   "slug": "rfdiffusion3",
+   "name_en": "RFdiffusion3",
+   "name_fa": "آر‌اف‌دیفیوژن ۳",
+   "kind": "model"
+  },
+  {
+   "slug": "university-of-washington",
+   "name_en": "University of Washington",
+   "name_fa": "دانشگاه واشنگتن",
+   "kind": "company"
   }
  ]
 }
