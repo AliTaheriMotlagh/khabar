@@ -3563,6 +3563,234 @@
    "name_en": "ByteNN",
    "name_fa": "بایت‌ان",
    "kind": "model"
+  },
+  {
+   "slug": "flappyairplanes",
+   "name_en": "FlappyAirplanes",
+   "name_fa": "فلپی‌ای‌پلینز",
+   "kind": "company"
+  },
+  {
+   "slug": "arnold-shou",
+   "name_en": "Arnold Shou",
+   "name_fa": "آرنولد شو",
+   "kind": "person"
+  },
+  {
+   "slug": "bob-liu",
+   "name_en": "Bob Liu",
+   "name_fa": "باب لیو",
+   "kind": "person"
+  },
+  {
+   "slug": "doom",
+   "name_en": "Doom",
+   "name_fa": "دوم",
+   "kind": "product"
+  },
+  {
+   "slug": "qualcomm",
+   "name_en": "Qualcomm",
+   "name_fa": "کوالکام",
+   "kind": "company"
+  },
+  {
+   "slug": "elon-musk",
+   "name_en": "Elon Musk",
+   "name_fa": "ایلان ماسک",
+   "kind": "person"
+  },
+  {
+   "slug": "mint-modeler",
+   "name_en": "Mint Modeler",
+   "name_fa": "مینت مدلر",
+   "kind": "product"
+  },
+  {
+   "slug": "pierre",
+   "name_en": "Pierre",
+   "name_fa": "پیر",
+   "kind": "company"
+  },
+  {
+   "slug": "axiom",
+   "name_en": "Axiom",
+   "name_fa": "ایکسایم",
+   "kind": "company"
+  },
+  {
+   "slug": "stacks-project",
+   "name_en": "Stacks Project",
+   "name_fa": "پروژه استکس",
+   "kind": "product"
+  },
+  {
+   "slug": "moonshot-ai",
+   "name_en": "Moonshot AI",
+   "name_fa": "موشن‌آی",
+   "kind": "company"
+  },
+  {
+   "slug": "kimi-k31-pro",
+   "name_en": "Kimi K3.1 Pro",
+   "name_fa": "کیمی کی‌۳.۱ پرو",
+   "kind": "model"
+  },
+  {
+   "slug": "ricursive-intelligence",
+   "name_en": "Ricursive Intelligence",
+   "name_fa": "ریکرسایو اینتلیجنس",
+   "kind": "company"
+  },
+  {
+   "slug": "gemini-api",
+   "name_en": "Gemini API",
+   "name_fa": "جمینای API",
+   "kind": "product"
+  },
+  {
+   "slug": "computer-use",
+   "name_en": "Computer Use",
+   "name_fa": "کار با کامپیوتر",
+   "kind": "product"
+  },
+  {
+   "slug": "conductor",
+   "name_en": "Conductor",
+   "name_fa": "کنداکتور",
+   "kind": "company"
+  },
+  {
+   "slug": "charlie-holtz",
+   "name_en": "Charlie Holtz",
+   "name_fa": "چارلی هولتز",
+   "kind": "person"
+  },
+  {
+   "slug": "nat-friedman",
+   "name_en": "Nat Friedman",
+   "name_fa": "نات فریدمن",
+   "kind": "person"
+  },
+  {
+   "slug": "pangram",
+   "name_en": "Pangram",
+   "name_fa": "پنگرام",
+   "kind": "company"
+  },
+  {
+   "slug": "pangram-image-10",
+   "name_en": "Pangram Image 1.0",
+   "name_fa": "پنگرام امیج ۱.۰",
+   "kind": "product"
+  },
+  {
+   "slug": "google-chrome",
+   "name_en": "Google Chrome",
+   "name_fa": "گوگل کروم",
+   "kind": "product"
+  },
+  {
+   "slug": "claude-opus-45",
+   "name_en": "Claude Opus 4.5",
+   "name_fa": "کلود اوپوس ۴.۵",
+   "kind": "model"
+  },
+  {
+   "slug": "swe-bench",
+   "name_en": "SWE-bench",
+   "name_fa": "اس‌وی‌ای-بنچ",
+   "kind": "model"
+  },
+  {
+   "slug": "agile-deliberation",
+   "name_en": "Agile Deliberation",
+   "name_fa": "ایجایل دلیبریشن",
+   "kind": "product"
+  },
+  {
+   "slug": "vision-language-models",
+   "name_en": "Vision-Language Models",
+   "name_fa": "مدل‌های بینایی-زبانی",
+   "kind": "model"
+  },
+  {
+   "slug": "embeddinggemma-2",
+   "name_en": "EmbeddingGemma 2",
+   "name_fa": "امبدینگ جمی ۲",
+   "kind": "model"
+  },
+  {
+   "slug": "vault-particle",
+   "name_en": "Vault particle",
+   "name_fa": "ذره والت",
+   "kind": "product"
+  },
+  {
+   "slug": "cognition",
+   "name_en": "Cognition",
+   "name_fa": "کاجنشن",
+   "kind": "company"
+  },
+  {
+   "slug": "swe-2-flash",
+   "name_en": "SWE-2 Flash",
+   "name_fa": "اس‌وی‌ای-۲ فلاش",
+   "kind": "model"
+  },
+  {
+   "slug": "chen-ping-yu",
+   "name_en": "Chen-Ping Yu",
+   "name_fa": "چن‌پینگ یو",
+   "kind": "person"
+  },
+  {
+   "slug": "atmee-v2",
+   "name_en": "Atmee v2",
+   "name_fa": "آتمی v2",
+   "kind": "product"
+  },
+  {
+   "slug": "notion",
+   "name_en": "Notion",
+   "name_fa": "نوشن",
+   "kind": "company"
+  },
+  {
+   "slug": "flare",
+   "name_en": "Flare",
+   "name_fa": "فلیر",
+   "kind": "model"
+  },
+  {
+   "slug": "sunburst",
+   "name_en": "Sunburst",
+   "name_fa": "سُن‌بَرسِت",
+   "kind": "model"
+  },
+  {
+   "slug": "yam",
+   "name_en": "Yam",
+   "name_fa": "یام",
+   "kind": "company"
+  },
+  {
+   "slug": "jitengine",
+   "name_en": "JITEngine",
+   "name_fa": "جیت انجین",
+   "kind": "product"
+  },
+  {
+   "slug": "skydiscover",
+   "name_en": "SkyDiscover",
+   "name_fa": "اسکای دیسکاور",
+   "kind": "product"
+  },
+  {
+   "slug": "apple-silicon",
+   "name_en": "Apple Silicon",
+   "name_fa": "اپل سیلیکون",
+   "kind": "product"
   }
  ]
 }
