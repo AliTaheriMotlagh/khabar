@@ -4301,6 +4301,156 @@
    "name_en": "Project Suncatcher",
    "name_fa": "پروژه سان‌کچر",
    "kind": "product"
+  },
+  {
+   "slug": "halobraid",
+   "name_en": "HaloBraid",
+   "name_fa": "هیلوبرید",
+   "kind": "company"
+  },
+  {
+   "slug": "alexis-ohanian",
+   "name_en": "Alexis Ohanian",
+   "name_fa": "الکسیس اوهانیان",
+   "kind": "person"
+  },
+  {
+   "slug": "mirandyl",
+   "name_en": "Mirandyl",
+   "name_fa": "میرندیل",
+   "kind": "company"
+  },
+  {
+   "slug": "simulon",
+   "name_en": "Simulon",
+   "name_fa": "سیمولون",
+   "kind": "product"
+  },
+  {
+   "slug": "devish-naidu",
+   "name_en": "Devish Naidu",
+   "name_fa": "دیویش نایدو",
+   "kind": "person"
+  },
+  {
+   "slug": "alphabet",
+   "name_en": "Alphabet",
+   "name_fa": "آلفابت",
+   "kind": "company"
+  },
+  {
+   "slug": "youtube",
+   "name_en": "YouTube",
+   "name_fa": "یوتیوب",
+   "kind": "product"
+  },
+  {
+   "slug": "albert-gu",
+   "name_en": "Albert Gu",
+   "name_fa": "آلبرت گو",
+   "kind": "person"
+  },
+  {
+   "slug": "h-nets",
+   "name_en": "H-Nets",
+   "name_fa": "شبکه‌های سلسله‌مراتبی",
+   "kind": "model"
+  },
+  {
+   "slug": "the-new-york-times",
+   "name_en": "The New York Times",
+   "name_fa": "نیویورک‌تایمز",
+   "kind": "company"
+  },
+  {
+   "slug": "china",
+   "name_en": "China",
+   "name_fa": "چین",
+   "kind": "company"
+  },
+  {
+   "slug": "crowdstrike",
+   "name_en": "CrowdStrike",
+   "name_fa": "کروداسترایک",
+   "kind": "company"
+  },
+  {
+   "slug": "mistral-forge",
+   "name_en": "Mistral Forge",
+   "name_fa": "میسترال فورج",
+   "kind": "product"
+  },
+  {
+   "slug": "doordash",
+   "name_en": "DoorDash",
+   "name_fa": "دوردش",
+   "kind": "company"
+  },
+  {
+   "slug": "instacart",
+   "name_en": "Instacart",
+   "name_fa": "اینستاکارت",
+   "kind": "company"
+  },
+  {
+   "slug": "ai-for-science",
+   "name_en": "AI for Science",
+   "name_fa": "هوش مصنوعی برای علم",
+   "kind": "product"
+  },
+  {
+   "slug": "alex-imas",
+   "name_en": "Alex Imas",
+   "name_fa": "الکس ایماس",
+   "kind": "person"
+  },
+  {
+   "slug": "andrew-koh",
+   "name_en": "Andrew Koh",
+   "name_fa": "اندرو کو",
+   "kind": "person"
+  },
+  {
+   "slug": "university-of-bonn",
+   "name_en": "University of Bonn",
+   "name_fa": "دانشگاه بون",
+   "kind": "company"
+  },
+  {
+   "slug": "human-cells",
+   "name_en": "Human cells",
+   "name_fa": "سلول‌های انسانی",
+   "kind": "product"
+  },
+  {
+   "slug": "simon-taylor",
+   "name_en": "Simon Taylor",
+   "name_fa": "سایمون تیلور",
+   "kind": "person"
+  },
+  {
+   "slug": "tibu",
+   "name_en": "Tibu",
+   "name_fa": "تیبو",
+   "kind": "company"
+  },
+  {
+   "slug": "tau-robotics",
+   "name_en": "Tau Robotics",
+   "name_fa": "تاو رباتیکس",
+   "kind": "company"
+  },
+  {
+   "slug": "humanoid-cleaner",
+   "name_en": "Humanoid Cleaner",
+   "name_fa": "ربات انسان‌نمای نظافتچی",
+   "kind": "product"
+  },
+  {
+   "slug": "sam-parrish",
+   "name_en": "Sam Parrish",
+   "name_fa": "سم پار",
+   "kind": "person"
   }
  ]
 }
