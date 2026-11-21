@@ -7,7 +7,7 @@
 // there yet; gives up quietly after 10 minutes — the next run announces them then. The push server announces each post
 // once, and IndexNow takes a URL again without harm, so a re-run does no damage.
 // Env: PUSH_SECRET, SITE (the primary site), LATEST, INDEXNOW=0 to skip the engines.
-const SITE = (process.env.SITE || 'https://khabar-ai.vercel.app').replace(/\/$/, '');
+const SITE = (process.env.SITE || 'https://blog.remixt.app').replace(/\/$/, '');
 const SECRET = process.env.PUSH_SECRET?.trim();
 const LATEST = Number(process.env.LATEST) || 0;
 export const INDEXNOW_KEY = 'a2e8b0f25f1440184512d4968ba8125c'; // = SITE.indexNowKey in src/site.ts

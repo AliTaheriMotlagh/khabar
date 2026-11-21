@@ -28,7 +28,7 @@ from . import ai, ai_more, config
 
 DAILY_DIR = config.DATA_DIR / "daily"
 WEEKLY_DIR = config.DATA_DIR / "weekly"
-SITE = os.getenv("SITE", "https://khabar-ai.vercel.app").rstrip("/")
+SITE = os.getenv("SITE", "https://blog.remixt.app").rstrip("/")
 REDO_MIN = float(os.getenv("DAILY_REDO_MIN", "90"))
 TEHRAN = timezone(timedelta(hours=3, minutes=30))
 MAX_ITEMS = 25

@@ -19,10 +19,10 @@ test('IndexNow: one key in the site, the notify script and the key file', () => 
   const site = fs.readFileSync('src/site.ts', 'utf8').match(/indexNowKey: '([0-9a-f]+)'/)?.[1];
   assert.equal(site, INDEXNOW_KEY);
   assert.equal(fs.readFileSync(`public/${INDEXNOW_KEY}.txt`, 'utf8').trim(), INDEXNOW_KEY);
-  const body = indexNowBody('https://khabar-ai.vercel.app', [{ href: '/p/7/' }, { href: '/p/7/' }, { href: '/p/8/' }]);
-  assert.equal(body.host, 'khabar-ai.vercel.app');
-  assert.equal(body.keyLocation, `https://khabar-ai.vercel.app/${INDEXNOW_KEY}.txt`);
-  assert.deepEqual(body.urlList, ['https://khabar-ai.vercel.app/p/7/', 'https://khabar-ai.vercel.app/p/8/', 'https://khabar-ai.vercel.app/', 'https://khabar-ai.vercel.app/today/']);
+  const body = indexNowBody('https://blog.remixt.app', [{ href: '/p/7/' }, { href: '/p/7/' }, { href: '/p/8/' }]);
+  assert.equal(body.host, 'blog.remixt.app');
+  assert.equal(body.keyLocation, `https://blog.remixt.app/${INDEXNOW_KEY}.txt`);
+  assert.deepEqual(body.urlList, ['https://blog.remixt.app/p/7/', 'https://blog.remixt.app/p/8/', 'https://blog.remixt.app/', 'https://blog.remixt.app/today/']);
 });
 
 test('usage events: only known names, whole counts, capped; the browser and server lists agree', async () => {
@@ -61,7 +61,7 @@ test('every page: a description search engines show whole, and valid JSON-LD', {
   assert.ok(article.speakable && article.wordCount > 0 && article.isAccessibleForFree === true);
   const home = [...html('index.html').matchAll(/<script type="application\/ld\+json">([\s\S]*?)<\/script>/g)].map((m) => JSON.parse(m[1]));
   assert.ok(home.find((x) => x.mainEntity?.['@type'] === 'ItemList').mainEntity.itemListElement.length > 5);
-  assert.match(html('page/2/index.html'), /<link rel="prev" href="https:\/\/khabar-ai\.vercel\.app\/"/);
+  assert.match(html('page/2/index.html'), /<link rel="prev" href="https:\/\/blog\.remixt\.app\/"/);
 });
 
 test('sitemap: every story with its last change; robots and llms.txt', { skip }, () => {
@@ -71,6 +71,6 @@ test('sitemap: every story with its last change; robots and llms.txt', { skip },
   assert.ok(stories.every((m) => /<lastmod>/.test(m[1])), 'a story without lastmod');
   assert.ok(stories.some((m) => /<image:image>/.test(m[1])), 'no pictures in the sitemap');
   assert.ok(!/\/admin\/</.test(xml));
-  assert.match(html('robots.txt'), /Sitemap: https:\/\/khabar-ai\.vercel\.app\/sitemap-index\.xml/);
+  assert.match(html('robots.txt'), /Sitemap: https:\/\/blog\.remixt\.app\/sitemap-index\.xml/);
   assert.match(html('llms.txt'), /^# /);
 });

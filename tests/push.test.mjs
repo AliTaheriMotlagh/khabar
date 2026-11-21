@@ -157,7 +157,7 @@ test('push: a VAPID contact Apple accepts', () => {
   assert.equal(vapidSubject(' mailto: me@site.ir\n'), 'mailto:me@site.ir');
   assert.equal(vapidSubject('me@site.ir'), 'mailto:me@site.ir');
   assert.equal(vapidSubject('https://khabar.example/'), 'https://khabar.example/');
-  for (const bad of ['', 'admin', 'http://site.ir', 'https://localhost', 'mailto:nobody']) assert.equal(vapidSubject(bad), 'https://khabar-ai.vercel.app/', bad);
+  for (const bad of ['', 'admin', 'http://site.ir', 'https://localhost', 'mailto:nobody']) assert.equal(vapidSubject(bad), 'https://blog.remixt.app/', bad);
 });
 
 test('push: a test notification, only to a stored subscription; refusals say why', async () => {

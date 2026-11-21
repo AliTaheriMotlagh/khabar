@@ -272,7 +272,7 @@ test('rss: every post on the timeline, newest first; the news, the daily summari
   const head = html('index.html');
   for (const f of ['rss.xml', 'rss/news.xml', 'rss/daily.xml']) assert.ok(head.includes(`type="application/rss+xml"`) && head.includes(`/${f}"`), `home names ${f}`);
   const page = html('feeds/index.html');
-  for (const f of ['rss.xml', 'rss/news.xml', 'rss/daily.xml', `tag/${encodeURIComponent(topics[0])}/rss.xml`]) assert.ok(page.includes(`data-copy="https://khabar-ai.vercel.app/${f}"`), `/feeds/ lists ${f}`);
+  for (const f of ['rss.xml', 'rss/news.xml', 'rss/daily.xml', `tag/${encodeURIComponent(topics[0])}/rss.xml`]) assert.ok(page.includes(`data-copy="https://blog.remixt.app/${f}"`), `/feeds/ lists ${f}`);
 });
 
 test('videos: a page per video of data/videos.json, newest first, and a feed whose pictures come through the relay', { skip }, () => {

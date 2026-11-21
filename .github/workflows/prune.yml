@@ -32,5 +32,5 @@ jobs:
           VERCEL_TOKEN: ${{ secrets.VERCEL_TOKEN }}
           VERCEL_TEAM_ID: ${{ vars.VERCEL_TEAM_ID || secrets.VERCEL_TEAM_ID }}
           VERCEL_PROJECT_ID: ${{ vars.VERCEL_PROJECT_ID || 'khabar-ai' }}
-          SITE: ${{ vars.API_URL || 'https://khabar-ai.vercel.app' }}
+          SITE: https://khabar-ai.vercel.app
           DRY_RUN: ${{ inputs.dry_run && '1' || '' }}

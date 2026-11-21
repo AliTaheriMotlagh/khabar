@@ -38,7 +38,7 @@ jobs:
       - name: Write and commit the recap
         id: recap
         env:
-          SITE: ${{ vars.API_URL || 'https://khabar-ai.vercel.app' }}
+          SITE: ${{ vars.API_URL || 'https://blog.remixt.app' }}
         run: |
           python -m pipeline.daily --weekly
           # «این روزها در …» on each busy topic's page (pipeline/topics.py): never holds the recap back.
@@ -62,5 +62,5 @@ jobs:
         run: node scripts/notify.mjs --weekly
         env:
           PUSH_SECRET: ${{ secrets.PUSH_SECRET }}
-          SITE: ${{ vars.API_URL || 'https://khabar-ai.vercel.app' }}
+          SITE: ${{ vars.API_URL || 'https://blog.remixt.app' }}
           WEEK: ${{ steps.recap.outputs.week }}

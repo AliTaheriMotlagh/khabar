@@ -3,7 +3,7 @@ export const SITE = {
   name: 'فیوچر فوکوس',
   nameLatin: 'Future Focus',
   // Primary address: canonical URLs, sitemap and social cards always point here (the GitHub Pages copy is a mirror).
-  url: 'https://khabar-ai.vercel.app',
+  url: 'https://blog.remixt.app',
   tagline: 'اخبار هوش مصنوعی و فناوری، ساده و خودمونی',
   description:
     'تازه‌ترین اخبار هوش مصنوعی، فناوری و آینده از کانال «Future Focus with Mehrzad» — با ترجمه‌ی فارسی و خودمونی داش غلام، تصویر و ویدیو، و پیوند به منبع اصلی.',

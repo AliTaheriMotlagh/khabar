@@ -167,7 +167,7 @@ self.addEventListener('pushsubscriptionchange', (e) => {
       const sub = e.newSubscription || (old && (await self.registration.pushManager.subscribe(old.options)));
       if (!old || !sub) return;
       const body = JSON.stringify({ action: 'renew', old: old.endpoint, sub: sub.toJSON() });
-      for (const api of [`${SCOPE}api/push/`, 'https://khabar-ai.vercel.app/api/push/']) {
+      for (const api of [`${SCOPE}api/push/`, 'https://blog.remixt.app/api/push/']) {
         const res = await fetch(api, { method: 'POST', headers: { 'Content-Type': 'application/json' }, body }).catch(() => null);
         if (res?.ok) return;
       }

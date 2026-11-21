@@ -1,7 +1,7 @@
 // Web Push without dependencies: VAPID (RFC 8292) to say who sends, and the payload encrypted for the browser
 // (RFC 8291, "aes128gcm"). Keys: VAPID_PUBLIC_KEY (65-byte uncompressed P-256 point) and VAPID_PRIVATE_KEY (its 32-byte
 // secret), both base64url — `node scripts/vapid.mjs` makes a pair; VAPID_SUBJECT is a mailto: or https: contact.
-import { createCipheriv, createECDH, createPrivateKey, hkdfSync, randomBytes, sign } from 'node:crypto';
+import { createCipheriv, createECDH, hkdfSync, randomBytes, sign } from 'node:crypto';
 
 export const b64u = {
   encode: (buf) => Buffer.from(buf).toString('base64url'),
@@ -30,7 +30,7 @@ export function validSubscription(sub) {
  *  signature (a key served with a newline isn't one a browser can subscribe with either). */
 export const env = (name) => (process.env[name] ?? '').trim().replace(/^(["'])(.*)\1$/, '$2');
 export const vapidConfigured = () => Boolean(env('VAPID_PUBLIC_KEY') && env('VAPID_PRIVATE_KEY'));
-const FALLBACK_SUBJECT = 'https://khabar-ai.vercel.app/';
+const FALLBACK_SUBJECT = 'https://blog.remixt.app/';
 /** VAPID's contact: Apple's push service turns away anything but a mailto: or https: URL (403 BadJwtToken), so a
  *  malformed one (a bare address, "mailto: x", a localhost URL) is replaced by the site's own address. */
 export function vapidSubject(raw = env('VAPID_SUBJECT')) {
@@ -47,10 +47,11 @@ export function vapidSubject(raw = env('VAPID_SUBJECT')) {
 /** `Authorization: vapid t=<JWT>, k=<public key>` for one push service (the JWT's audience is its origin). */
 export function vapidHeader(endpoint, { publicKey = env('VAPID_PUBLIC_KEY'), privateKey = env('VAPID_PRIVATE_KEY'), subject = vapidSubject(), now = Date.now() } = {}) {
   const pub = b64u.decode(publicKey);
-  const key = createPrivateKey({ key: { kty: 'EC', crv: 'P-256', d: privateKey, x: b64u.encode(pub.subarray(1, 33)), y: b64u.encode(pub.subarray(33, 65)) }, format: 'jwk' });
+  // The JWK itself, not a createPrivateKey() KeyObject: Cloudflare's runtime (workerd) can't sign with one.
+  const key = { kty: 'EC', crv: 'P-256', d: privateKey, x: b64u.encode(pub.subarray(1, 33)), y: b64u.encode(pub.subarray(33, 65)) };
   const head = b64u.encode(JSON.stringify({ typ: 'JWT', alg: 'ES256' }));
   const claims = b64u.encode(JSON.stringify({ aud: new URL(endpoint).origin, exp: Math.floor(now / 1000) + 12 * 3600, sub: subject }));
-  const sig = sign('sha256', Buffer.from(`${head}.${claims}`), { key, dsaEncoding: 'ieee-p1363' });
+  const sig = sign('sha256', Buffer.from(`${head}.${claims}`), { key, format: 'jwk', dsaEncoding: 'ieee-p1363' });
   return `vapid t=${head}.${claims}.${b64u.encode(sig)}, k=${publicKey}`;
 }
 

@@ -4,9 +4,9 @@ import path from 'node:path';
 import { defineConfig } from 'astro/config';
 import sitemap from '@astrojs/sitemap';
 
-// The primary site is https://khabar-ai.vercel.app (see src/site.ts). The GitHub Pages workflow builds a mirror
+// The primary site is https://blog.remixt.app (see src/site.ts). The GitHub Pages workflow builds a mirror
 // with SITE_URL / BASE_PATH (e.g. https://you.github.io + /khabar); canonical URLs still point at the primary site.
-const PRIMARY = 'https://khabar-ai.vercel.app';
+const PRIMARY = 'https://blog.remixt.app';
 
 // The sitemap tells search engines when each story last changed and shows them its picture (Google Images), read
 // straight from data/ (the config can't use src/lib/posts.ts). Pictures on Telegram's/X's filtered CDNs go through the
