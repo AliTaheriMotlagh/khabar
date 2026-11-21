@@ -6605,6 +6605,138 @@
    "name_en": "Alpöge",
    "name_fa": "آلپوگه",
    "kind": "person"
+  },
+  {
+   "slug": "readme",
+   "name_en": "ReadMe",
+   "name_fa": "ردمی",
+   "kind": "company"
+  },
+  {
+   "slug": "restless",
+   "name_en": "Restless",
+   "name_fa": "رستلس",
+   "kind": "product"
+  },
+  {
+   "slug": "studentsim",
+   "name_en": "StudentSim",
+   "name_fa": "استودنت‌سیم",
+   "kind": "product"
+  },
+  {
+   "slug": "iot",
+   "name_en": "IoT",
+   "name_fa": "اینترنت اشیاء",
+   "kind": "product"
+  },
+  {
+   "slug": "airtable",
+   "name_en": "Airtable",
+   "name_fa": "ایرتیبل",
+   "kind": "company"
+  },
+  {
+   "slug": "federico-simonato",
+   "name_en": "Federico Simonato",
+   "name_fa": "فدریکو سیمیناتو",
+   "kind": "person"
+  },
+  {
+   "slug": "gpt-sol-61",
+   "name_en": "GPT-Sol 6.1",
+   "name_fa": "جی‌پی‌تی-اسول ۶.۱",
+   "kind": "model"
+  },
+  {
+   "slug": "collovlabs",
+   "name_en": "CollovLabs",
+   "name_fa": "کالوول‌لابز",
+   "kind": "company"
+  },
+  {
+   "slug": "neweyes-ai",
+   "name_en": "NewEyes AI",
+   "name_fa": "نیوآیز ای‌آی",
+   "kind": "product"
+  },
+  {
+   "slug": "anthropic-frontier-red-team",
+   "name_en": "Anthropic Frontier Red Team",
+   "name_fa": "تیم قرمز مرز آنتروپیک",
+   "kind": "person"
+  },
+  {
+   "slug": "homeview",
+   "name_en": "HomeView",
+   "name_fa": "هوم‌ویو",
+   "kind": "product"
+  },
+  {
+   "slug": "reason",
+   "name_en": "Reason",
+   "name_fa": "ریزن",
+   "kind": "product"
+  },
+  {
+   "slug": "microsoft-azure",
+   "name_en": "Microsoft Azure",
+   "name_fa": "مایکروسافت آژور",
+   "kind": "product"
+  },
+  {
+   "slug": "litellm",
+   "name_en": "LiteLLM",
+   "name_fa": "لایت‌ال‌ام",
+   "kind": "company"
+  },
+  {
+   "slug": "photoroom",
+   "name_en": "Photoroom",
+   "name_fa": "فوتوروم",
+   "kind": "product"
+  },
+  {
+   "slug": "scaledown",
+   "name_en": "ScaleDown",
+   "name_fa": "اسکیل‌داون",
+   "kind": "company"
+  },
+  {
+   "slug": "logan-kilpatrick",
+   "name_en": "Logan Kilpatrick",
+   "name_fa": "لوگان کیلپاتریک",
+   "kind": "person"
+  },
+  {
+   "slug": "clueso",
+   "name_en": "Clueso",
+   "name_fa": "کلوزو",
+   "kind": "company"
+  },
+  {
+   "slug": "atlasian",
+   "name_en": "Atlasian",
+   "name_fa": "اتلسیان",
+   "kind": "company"
+  },
+  {
+   "slug": "gitlab",
+   "name_en": "GitLab",
+   "name_fa": "گیت‌لب",
+   "kind": "company"
+  },
+  {
+   "slug": "zendesk",
+   "name_en": "Zendesk",
+   "name_fa": "زندسک",
+   "kind": "company"
+  },
+  {
+   "slug": "google-ai-studio",
+   "name_en": "Google AI Studio",
+   "name_fa": "گوگل اِی‌آی استودیو",
+   "kind": "product"
   }
  ]
 }
