@@ -4187,6 +4187,120 @@
    "name_en": "Navier-Stokes Millennium Prize",
    "name_fa": "جایزه‌ی هزاره‌ی ناویر-استوکس",
    "kind": "model"
+  },
+  {
+   "slug": "gene-therapy",
+   "name_en": "Gene Therapy",
+   "name_fa": "درمان ژنی",
+   "kind": "product"
+  },
+  {
+   "slug": "intel",
+   "name_en": "Intel",
+   "name_fa": "اینتل",
+   "kind": "company"
+  },
+  {
+   "slug": "claude-api",
+   "name_en": "Claude API",
+   "name_fa": "کلود ای‌پی‌آی",
+   "kind": "product"
+  },
+  {
+   "slug": "bitcoin",
+   "name_en": "Bitcoin",
+   "name_fa": "بیت‌کوین",
+   "kind": "product"
+  },
+  {
+   "slug": "ethereum",
+   "name_en": "Ethereum",
+   "name_fa": "اتریوم",
+   "kind": "product"
+  },
+  {
+   "slug": "tron",
+   "name_en": "TRON",
+   "name_fa": "ترون",
+   "kind": "product"
+  },
+  {
+   "slug": "servicenow",
+   "name_en": "ServiceNow",
+   "name_fa": "سرویس‌ناو",
+   "kind": "company"
+  },
+  {
+   "slug": "safu",
+   "name_en": "SAFU",
+   "name_fa": "صندوق بیمه امنیتی",
+   "kind": "product"
+  },
+  {
+   "slug": "corridor",
+   "name_en": "Corridor",
+   "name_fa": "کوری‌دور",
+   "kind": "company"
+  },
+  {
+   "slug": "devin",
+   "name_en": "Devin",
+   "name_fa": "دِوین",
+   "kind": "product"
+  },
+  {
+   "slug": "aviern",
+   "name_en": "Aviern",
+   "name_fa": "آویرن",
+   "kind": "company"
+  },
+  {
+   "slug": "kush-agarwal",
+   "name_en": "Kush Agarwal",
+   "name_fa": "کوش آگاروال",
+   "kind": "person"
+  },
+  {
+   "slug": "droid-10",
+   "name_en": "Droid 1.0",
+   "name_fa": "درود ۱.۰",
+   "kind": "product"
+  },
+  {
+   "slug": "telepathy",
+   "name_en": "Telepathy",
+   "name_fa": "تله‌پاتی",
+   "kind": "product"
+  },
+  {
+   "slug": "mischief-1",
+   "name_en": "Mischief 1",
+   "name_fa": "مفسیک ۱",
+   "kind": "model"
+  },
+  {
+   "slug": "alex-kazandzoffski",
+   "name_en": "Alex Kazandzoffski",
+   "name_fa": "الکس کسندزوفسکی",
+   "kind": "person"
+  },
+  {
+   "slug": "reddit",
+   "name_en": "Reddit",
+   "name_fa": "ردیت",
+   "kind": "company"
+  },
+  {
+   "slug": "h1ng",
+   "name_en": "h1ng",
+   "name_fa": "هیوگ",
+   "kind": "person"
+  },
+  {
+   "slug": "project-suncatcher",
+   "name_en": "Project Suncatcher",
+   "name_fa": "پروژه سان‌کچر",
+   "kind": "product"
   }
  ]
 }
