@@ -5903,6 +5903,78 @@
    "name_en": "UniqueHuman",
    "name_fa": "یونیک‌هیومن",
    "kind": "product"
+  },
+  {
+   "slug": "prometheus",
+   "name_en": "Prometheus",
+   "name_fa": "پرومتئوس",
+   "kind": "product"
+  },
+  {
+   "slug": "department-of-homeland-security",
+   "name_en": "Department of Homeland Security",
+   "name_fa": "وزارت امنیت میهن آمریکا",
+   "kind": "company"
+  },
+  {
+   "slug": "saudi-arabia",
+   "name_en": "Saudi Arabia",
+   "name_fa": "عربستان سعودی",
+   "kind": "company"
+  },
+  {
+   "slug": "chatgpt-slides",
+   "name_en": "ChatGPT Slides",
+   "name_fa": "چت‌جی‌پی‌تی اسلایدز",
+   "kind": "product"
+  },
+  {
+   "slug": "tolan",
+   "name_en": "Tolan",
+   "name_fa": "تولان",
+   "kind": "product"
+  },
+  {
+   "slug": "ai-companion",
+   "name_en": "AI companion",
+   "name_fa": "همدم هوش مصنوعی",
+   "kind": "product"
+  },
+  {
+   "slug": "sam-pasopala",
+   "name_en": "Sam Pasopala",
+   "name_fa": "سم پاسوپالاک",
+   "kind": "person"
+  },
+  {
+   "slug": "sky-001",
+   "name_en": "SKY-001",
+   "name_fa": "اسکی-۰۰۱",
+   "kind": "model"
+  },
+  {
+   "slug": "maluba",
+   "name_en": "Maluba",
+   "name_fa": "مالوبا",
+   "kind": "company"
+  },
+  {
+   "slug": "wabi",
+   "name_en": "Wabi",
+   "name_fa": "وابی",
+   "kind": "product"
+  },
+  {
+   "slug": "eugene-kimida",
+   "name_en": "Eugene Kimida",
+   "name_fa": "یوجینیا کویدا",
+   "kind": "person"
+  },
+  {
+   "slug": "torchneuron",
+   "name_en": "TorchNeuron",
+   "name_fa": "تورچ‌نورون",
+   "kind": "product"
   }
  ]
 }
