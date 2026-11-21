@@ -3791,6 +3791,12 @@
    "name_en": "Apple Silicon",
    "name_fa": "اپل سیلیکون",
    "kind": "product"
+  },
+  {
+   "slug": "neuralink",
+   "name_en": "Neuralink",
+   "name_fa": "نورالینک",
+   "kind": "company"
   }
  ]
 }

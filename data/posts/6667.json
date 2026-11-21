@@ -19,48 +19,6 @@
   "text": "رفقا، شرکت Thinking Machines که قبلاً مدل غول‌پیکر ۵۹۴ میلیاردی Inkling 2 Small رو داده بود، این بار یه مدل سبک‌تر و وزن‌باز به اسم Inkling 2 Mini معرفی کرده که توی لپ‌تاپ هم جا می‌شه. 💻 ترفند اصلی این مدل «معماری حلقه‌ای» هست؛ یعنی از ۲۴ لایه‌اش، ۱۲ لایه میانی برای هر توکن سه‌بار تکرار می‌شن—یه جورایی مثل اینکه آدم قبل از جواب دادن، یه دور حرف رو تو ذهنش مزه‌مزه کنه تا با پرحرفی کمتر، دقیق‌تر فکر کنه.\n\n• این مدل با ۲۶.۴ میلیارد پارامتر کل و حجم حدود ۲۰ گیگابایت، به گفته سازنده‌اش روی مک‌های دارای ۳۲ گیگ رم (از طریق Ollama)، سیستم DGX Spark انویدیا و پلتفرم Tinker اجرا می‌شه.\n• طبق آمارهای منتشرشده از طرف خود شرکت، تو کارهای کدنویسی و ایجنتی بین مدل‌های هم‌رده عملکرد بالایی داشته (از جمله امتیاز ۲۰.۱ در AA Index و ۴۸.۲ درصد در DeepSWE v1.1)؛ البته خودشون هم یادآوری کردن که این چرخش لایه‌ها فقط قدرت استدلال رو بالا می‌بره و دانش عمومی مدل رو بیشتر نمی‌کنه، پس برای دسترسی به اطلاعات دقیق به جست‌وجو و ابزارها تکیه داره.\n• چون فکر کردنِ بی‌سروصدا می‌تونه نظارت روی هوش مصنوعی رو سخت کنه، کنارش یه مدل تحقیقاتی با حلقه متغیر هم منتشر کردن؛ به گفته تیم سازنده، در آزمایش‌ها با وجود کوتاه‌تر شدن متنِ استدلال مدل، همچنان قابل‌فهم مونده و نشونه‌ای از رفتار خرابکارانه بیشتر دیده نشده.",
   "date": "2026-11-20T20:28:42+00:00"
  },
- "links": [
-  {
-   "kind": "tweet",
-   "url": "https://x.com/thinkymachines/status/2123871643797995872",
-   "domain": "x.com",
-   "author": {
-    "name": "Thinking Machines",
-    "handle": "thinkymachines",
-    "avatar": "https://pbs.twimg.com/profile_images/2075275500420001792/Q9J4M1DL_200x200.jpg"
-   },
-   "text": "Some of you thought that Inkling 2 Small was too big at 594B parameters. We heard you: Inkling 2 Mini is a looped transformer with just 26B parameters, small enough to run on your laptop, powerful enough for agentic work with a score of 20.1 on AA Index.\nhttps://thinkingmachines.ai/news/inkling-2-mini/",
-   "date": 1795205434,
-   "media": [],
-   "links": [
-    "https://thinkingmachines.ai/news/inkling-2-mini/"
-   ]
-  },
-  {
-   "kind": "link",
-   "url": "https://thinkingmachines.ai/news/inkling-2-mini/",
-   "domain": "thinkingmachines.ai",
-   "title": "Introducing Inkling 2 Mini",
-   "description": "Inkling 2 Mini is an open-weights model small enough to run on your laptop. It loops its middle layers to reason more per token and reach answers in fewer tokens.",
-   "image": "https://thinkingmachines.ai/news/inkling-2-mini/images/cover-social.png",
-   "site": "Thinking Machines Lab"
-  }
- ],
- "article": {
-  "title": "شرکت Thinking Machines که قبلاً مدل غول‌پیکر ۵۹۴ میلیاردی Inkling 2 Small رو داده بود، این بار یه مدل سبک‌تر و وزن‌باز به اسم Inkling 2 Mini معرفی کرده که توی لپ‌تاپ هم جا می‌شه",
-  "source_title": "Some of you thought that Inkling 2 Small was too big at 594B parameters. We heard you: Inkling 2 Mini is a looped transformer with just 26B…",
-  "body": [
-   "شرکت Thinking Machines که قبلاً مدل غول‌پیکر ۵۹۴ میلیاردی Inkling 2 Small رو داده بود، این بار یه مدل سبک‌تر و وزن‌باز به اسم Inkling 2 Mini معرفی کرده که توی لپ‌تاپ هم جا می‌شه. 💻 ترفند اصلی این مدل «معماری حلقه‌ای» هست؛ یعنی از ۲۴ لایه‌اش، ۱۲ لایه میانی برای هر توکن سه‌بار تکرار می‌شن—یه جورایی مثل اینکه آدم قبل از جواب دادن، یه دور حرف رو تو ذهنش مزه‌مزه کنه تا با پرحرفی کمتر، دقیق‌تر فکر کنه.",
-   "• این مدل با ۲۶.۴ میلیارد پارامتر کل و حجم حدود ۲۰ گیگابایت، به گفته سازنده‌اش روی مک‌های دارای ۳۲ گیگ رم (از طریق Ollama)، سیستم DGX Spark انویدیا و پلتفرم Tinker اجرا می‌شه.",
-   "• طبق آمارهای منتشرشده از طرف خود شرکت، تو کارهای کدنویسی و ایجنتی بین مدل‌های هم‌رده عملکرد بالایی داشته (از جمله امتیاز ۲۰.۱ در AA Index و ۴۸.۲ درصد در DeepSWE v1.1)؛ البته خودشون هم یادآوری کردن که این چرخش لایه‌ها فقط قدرت استدلال رو بالا می‌بره و دانش عمومی مدل رو بیشتر نمی‌کنه، پس برای دسترسی به اطلاعات دقیق به جست‌وجو و ابزارها تکیه داره.",
-   "• چون فکر کردنِ بی‌سروصدا می‌تونه نظارت روی هوش مصنوعی رو سخت کنه، کنارش یه مدل تحقیقاتی با حلقه متغیر هم منتشر کردن؛ به گفته تیم سازنده، در آزمایش‌ها با وجود کوتاه‌تر شدن متنِ استدلال مدل، همچنان قابل‌فهم مونده و نشونه‌ای از رفتار خرابکارانه بیشتر دیده نشده."
-  ],
-  "why": null,
-  "tags": [
-   "ایجنت"
-  ]
- },
- "updated": "2026-11-20T20:30:01+00:00",
  "ai": {
   "title": "Thinking Machines مدل Inkling 2 Mini را با معماری حلقه‌ای منتشر کرد",
   "short": "Inkling 2 Mini از Thinking Machines",
@@ -137,5 +95,47 @@
    "src": "5f886c99e76e",
    "added": 9
   }
- }
+ },
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/thinkymachines/status/2123871643797995872",
+   "domain": "x.com",
+   "author": {
+    "name": "Thinking Machines",
+    "handle": "thinkymachines",
+    "avatar": "https://pbs.twimg.com/profile_images/2075275500420001792/Q9J4M1DL_200x200.jpg"
+   },
+   "text": "Some of you thought that Inkling 2 Small was too big at 594B parameters. We heard you: Inkling 2 Mini is a looped transformer with just 26B parameters, small enough to run on your laptop, powerful enough for agentic work with a score of 20.1 on AA Index.\nhttps://thinkingmachines.ai/news/inkling-2-mini/",
+   "date": 1795205434,
+   "media": [],
+   "links": [
+    "https://thinkingmachines.ai/news/inkling-2-mini/"
+   ]
+  },
+  {
+   "kind": "link",
+   "url": "https://thinkingmachines.ai/news/inkling-2-mini/",
+   "domain": "thinkingmachines.ai",
+   "title": "Introducing Inkling 2 Mini",
+   "description": "Inkling 2 Mini is an open-weights model small enough to run on your laptop. It loops its middle layers to reason more per token and reach answers in fewer tokens.",
+   "image": "https://thinkingmachines.ai/news/inkling-2-mini/images/cover-social.png",
+   "site": "Thinking Machines Lab"
+  }
+ ],
+ "article": {
+  "title": "شرکت Thinking Machines که قبلاً مدل غول‌پیکر ۵۹۴ میلیاردی Inkling 2 Small رو داده بود، این بار یه مدل سبک‌تر و وزن‌باز به اسم Inkling 2 Mini معرفی کرده که توی لپ‌تاپ هم جا می‌شه",
+  "source_title": "Some of you thought that Inkling 2 Small was too big at 594B parameters. We heard you: Inkling 2 Mini is a looped transformer with just 26B…",
+  "body": [
+   "شرکت Thinking Machines که قبلاً مدل غول‌پیکر ۵۹۴ میلیاردی Inkling 2 Small رو داده بود، این بار یه مدل سبک‌تر و وزن‌باز به اسم Inkling 2 Mini معرفی کرده که توی لپ‌تاپ هم جا می‌شه. 💻 ترفند اصلی این مدل «معماری حلقه‌ای» هست؛ یعنی از ۲۴ لایه‌اش، ۱۲ لایه میانی برای هر توکن سه‌بار تکرار می‌شن—یه جورایی مثل اینکه آدم قبل از جواب دادن، یه دور حرف رو تو ذهنش مزه‌مزه کنه تا با پرحرفی کمتر، دقیق‌تر فکر کنه.",
+   "• این مدل با ۲۶.۴ میلیارد پارامتر کل و حجم حدود ۲۰ گیگابایت، به گفته سازنده‌اش روی مک‌های دارای ۳۲ گیگ رم (از طریق Ollama)، سیستم DGX Spark انویدیا و پلتفرم Tinker اجرا می‌شه.",
+   "• طبق آمارهای منتشرشده از طرف خود شرکت، تو کارهای کدنویسی و ایجنتی بین مدل‌های هم‌رده عملکرد بالایی داشته (از جمله امتیاز ۲۰.۱ در AA Index و ۴۸.۲ درصد در DeepSWE v1.1)؛ البته خودشون هم یادآوری کردن که این چرخش لایه‌ها فقط قدرت استدلال رو بالا می‌بره و دانش عمومی مدل رو بیشتر نمی‌کنه، پس برای دسترسی به اطلاعات دقیق به جست‌وجو و ابزارها تکیه داره.",
+   "• چون فکر کردنِ بی‌سروصدا می‌تونه نظارت روی هوش مصنوعی رو سخت کنه، کنارش یه مدل تحقیقاتی با حلقه متغیر هم منتشر کردن؛ به گفته تیم سازنده، در آزمایش‌ها با وجود کوتاه‌تر شدن متنِ استدلال مدل، همچنان قابل‌فهم مونده و نشونه‌ای از رفتار خرابکارانه بیشتر دیده نشده."
+  ],
+  "why": null,
+  "tags": [
+   "ایجنت"
+  ]
+ },
+ "updated": "2026-11-21T00:52:55+00:00"
 }

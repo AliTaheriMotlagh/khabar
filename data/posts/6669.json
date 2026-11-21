@@ -19,38 +19,6 @@
   "text": "رفیق، رویترز به نقل از سی‌ان‌بی‌سی خبر داده که «Cursor» اسپیس‌ایکس داره بررسی می‌کنه مدل‌های هوش مصنوعی چینی رو به خاطر ریسک‌های ژئوپلیتیکی کم‌کم کنار بذاره. البته فعلاً موضوع فقط در حد سبک‌سنگین کردن و بررسیه و خبری از تصمیم قطعی نیست؛ چون متن کامل گزارش هم در دسترس نیست، جزئیات بیشتری از این ماجرا مشخص نیست. 🤔",
   "date": "2026-11-20T21:10:49+00:00"
  },
- "links": [
-  {
-   "kind": "tweet",
-   "url": "https://x.com/Reuters/status/2123865263791628379",
-   "domain": "x.com",
-   "author": {
-    "name": "Reuters",
-    "handle": "Reuters",
-    "avatar": "https://pbs.twimg.com/profile_images/1874154135869616128/nJDmubGJ_200x200.jpg"
-   },
-   "text": "SpaceX's Cursor weighs phasing out Chinese AI models over geopolitical risk, CNBC reports https://reut.rs/4f6cAKH",
-   "date": 1795203913,
-   "media": [],
-   "links": [
-    "https://reut.rs/4f6cAKH"
-   ]
-  }
- ],
- "article": {
-  "title": "رویترز به نقل از سی‌ان‌بی‌سی خبر داده که «Cursor» اسپیس‌ایکس داره بررسی می‌کنه مدل‌های هوش مصنوعی چینی رو به خاطر ریسک‌های ژئوپلیتیکی کم‌کم کنار بذاره",
-  "source_title": "SpaceX's Cursor weighs phasing out Chinese AI models over geopolitical risk, CNBC reports",
-  "body": [
-   "رویترز به نقل از سی‌ان‌بی‌سی خبر داده که «Cursor» اسپیس‌ایکس داره بررسی می‌کنه مدل‌های هوش مصنوعی چینی رو به خاطر ریسک‌های ژئوپلیتیکی کم‌کم کنار بذاره. البته فعلاً موضوع فقط در حد سبک‌سنگین کردن و بررسیه و خبری از تصمیم قطعی نیست؛ چون متن کامل گزارش هم در دسترس نیست، جزئیات بیشتری از این ماجرا مشخص نیست. 🤔"
-  ],
-  "why": null,
-  "tags": [
-   "ایلان ماسک",
-   "چین",
-   "کدنویسی"
-  ]
- },
- "updated": "2026-11-20T21:14:28+00:00",
  "ai": {
   "title": "اسپیس‌ایکس مدل‌های هوش مصنوعی چینی را به خاطر ریسک ژئوپلیتیک کنار می‌گذارد",
   "short": "اسپیس‌ایکس و مدل‌های چینی",
@@ -123,5 +91,37 @@
    "src": "2239943c8d0a",
    "added": 1
   }
- }
+ },
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/Reuters/status/2123865263791628379",
+   "domain": "x.com",
+   "author": {
+    "name": "Reuters",
+    "handle": "Reuters",
+    "avatar": "https://pbs.twimg.com/profile_images/1874154135869616128/nJDmubGJ_200x200.jpg"
+   },
+   "text": "SpaceX's Cursor weighs phasing out Chinese AI models over geopolitical risk, CNBC reports https://reut.rs/4f6cAKH",
+   "date": 1795203913,
+   "media": [],
+   "links": [
+    "https://reut.rs/4f6cAKH"
+   ]
+  }
+ ],
+ "article": {
+  "title": "رویترز به نقل از سی‌ان‌بی‌سی خبر داده که «Cursor» اسپیس‌ایکس داره بررسی می‌کنه مدل‌های هوش مصنوعی چینی رو به خاطر ریسک‌های ژئوپلیتیکی کم‌کم کنار بذاره",
+  "source_title": "SpaceX's Cursor weighs phasing out Chinese AI models over geopolitical risk, CNBC reports",
+  "body": [
+   "رویترز به نقل از سی‌ان‌بی‌سی خبر داده که «Cursor» اسپیس‌ایکس داره بررسی می‌کنه مدل‌های هوش مصنوعی چینی رو به خاطر ریسک‌های ژئوپلیتیکی کم‌کم کنار بذاره. البته فعلاً موضوع فقط در حد سبک‌سنگین کردن و بررسیه و خبری از تصمیم قطعی نیست؛ چون متن کامل گزارش هم در دسترس نیست، جزئیات بیشتری از این ماجرا مشخص نیست. 🤔"
+  ],
+  "why": null,
+  "tags": [
+   "ایلان ماسک",
+   "چین",
+   "کدنویسی"
+  ]
+ },
+ "updated": "2026-11-21T00:52:55+00:00"
 }
