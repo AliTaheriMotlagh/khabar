@@ -4619,6 +4619,180 @@
    "name_en": "Intelligence Index",
    "name_fa": "اینتلیجنس ایندکس",
    "kind": "product"
+  },
+  {
+   "slug": "ryan-williams",
+   "name_en": "Ryan Williams",
+   "name_fa": "رایان ویلیامز",
+   "kind": "person"
+  },
+  {
+   "slug": "tenishk-abraham",
+   "name_en": "Tenishk Abraham",
+   "name_fa": "تنیشک آبراهام",
+   "kind": "person"
+  },
+  {
+   "slug": "yasmin-razavi",
+   "name_en": "Yasmin Razavi",
+   "name_fa": "یاسمین رضوی",
+   "kind": "person"
+  },
+  {
+   "slug": "spark-capital",
+   "name_en": "Spark Capital",
+   "name_fa": "اسپارک کپیتال",
+   "kind": "company"
+  },
+  {
+   "slug": "machenta",
+   "name_en": "Machenta",
+   "name_fa": "ماشنتا",
+   "kind": "company"
+  },
+  {
+   "slug": "edward-jones",
+   "name_en": "Edward Jones",
+   "name_fa": "ادوارد جانز",
+   "kind": "person"
+  },
+  {
+   "slug": "creandum",
+   "name_en": "Creandum",
+   "name_fa": "کرندوم",
+   "kind": "company"
+  },
+  {
+   "slug": "usv",
+   "name_en": "USV",
+   "name_fa": "یو‌اس‌وی",
+   "kind": "company"
+  },
+  {
+   "slug": "the-classification-of-finite-simple-groups",
+   "name_en": "The Classification of Finite Simple Groups",
+   "name_fa": "طبقه‌بندی گروه‌های ساده متناهی",
+   "kind": "product"
+  },
+  {
+   "slug": "nevis",
+   "name_en": "Nevis",
+   "name_fa": "نِویس",
+   "kind": "company"
+  },
+  {
+   "slug": "eqt-ventures",
+   "name_en": "EQT Ventures",
+   "name_fa": "ای‌کی‌وی ونتچرز",
+   "kind": "company"
+  },
+  {
+   "slug": "charles-schwab",
+   "name_en": "Charles Schwab",
+   "name_fa": "چارلز شواب",
+   "kind": "company"
+  },
+  {
+   "slug": "quantumlight",
+   "name_en": "QuantumLight",
+   "name_fa": "کوانتوم لایت",
+   "kind": "company"
+  },
+  {
+   "slug": "lfm3",
+   "name_en": "LFM3",
+   "name_fa": "ای‌اف‌ام۳",
+   "kind": "model"
+  },
+  {
+   "slug": "giotto-ai",
+   "name_en": "Giotto AI",
+   "name_fa": "جیوتو ای‌آی",
+   "kind": "company"
+  },
+  {
+   "slug": "giotto-alto",
+   "name_en": "Giotto Alto",
+   "name_fa": "جیوتو آلتو",
+   "kind": "model"
+  },
+  {
+   "slug": "giotto-solo",
+   "name_en": "Giotto Solo",
+   "name_fa": "جیوتو سولو",
+   "kind": "model"
+  },
+  {
+   "slug": "zenova",
+   "name_en": "ZenoVA",
+   "name_fa": "زنووا",
+   "kind": "person"
+  },
+  {
+   "slug": "nemotron",
+   "name_en": "Nemotron",
+   "name_fa": "نموترون",
+   "kind": "model"
+  },
+  {
+   "slug": "wayfair",
+   "name_en": "Wayfair",
+   "name_fa": "وی‌فیر",
+   "kind": "company"
+  },
+  {
+   "slug": "ai-infrastructure",
+   "name_en": "AI Infrastructure",
+   "name_fa": "زیرساخت هوش مصنوعی",
+   "kind": "product"
+  },
+  {
+   "slug": "manu-romero",
+   "name_en": "Manu Romero",
+   "name_fa": "مانو رومرو",
+   "kind": "person"
+  },
+  {
+   "slug": "concurrence",
+   "name_en": "Concurrence",
+   "name_fa": "کانکورنس",
+   "kind": "product"
+  },
+  {
+   "slug": "ali-khokhar",
+   "name_en": "Ali Khokhar",
+   "name_fa": "علی خوخر",
+   "kind": "person"
+  },
+  {
+   "slug": "judgment-labs",
+   "name_en": "Judgment Labs",
+   "name_fa": "جداگمنت لابس",
+   "kind": "company"
+  },
+  {
+   "slug": "alex-chan",
+   "name_en": "Alex Chan",
+   "name_fa": "الکس شان",
+   "kind": "person"
+  },
+  {
+   "slug": "xplore-ai",
+   "name_en": "Xplore AI",
+   "name_fa": "اکسپلور ای‌آی",
+   "kind": "company"
+  },
+  {
+   "slug": "spaitial-ai",
+   "name_en": "SpAItial AI",
+   "name_fa": "اس‌پی‌آی‌تی‌شیال‌آی",
+   "kind": "company"
+  },
+  {
+   "slug": "echo-3",
+   "name_en": "Echo-3",
+   "name_fa": "اکو-۳",
+   "kind": "model"
   }
  ]
 }
