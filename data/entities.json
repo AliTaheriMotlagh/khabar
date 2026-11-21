@@ -6737,6 +6737,150 @@
    "name_en": "Google AI Studio",
    "name_fa": "گوگل اِی‌آی استودیو",
    "kind": "product"
+  },
+  {
+   "slug": "tinygrad",
+   "name_en": "tinygrad",
+   "name_fa": "تاینی‌گراد",
+   "kind": "product"
+  },
+  {
+   "slug": "tiny-corp",
+   "name_en": "Tiny Corp",
+   "name_fa": "تاینی کورپ",
+   "kind": "company"
+  },
+  {
+   "slug": "maya",
+   "name_en": "Maya",
+   "name_fa": "مایا",
+   "kind": "product"
+  },
+  {
+   "slug": "linus-torvalds",
+   "name_en": "Linus Torvalds",
+   "name_fa": "لینوس توروالدز",
+   "kind": "person"
+  },
+  {
+   "slug": "linux-kernel",
+   "name_en": "Linux Kernel",
+   "name_fa": "هسته لینوکس",
+   "kind": "product"
+  },
+  {
+   "slug": "alphaproof-nexus",
+   "name_en": "AlphaProof Nexus",
+   "name_fa": "آلفا‌پروف ناکسوس",
+   "kind": "model"
+  },
+  {
+   "slug": "paul-erdos",
+   "name_en": "Paul Erdős",
+   "name_fa": "پال اردوش",
+   "kind": "person"
+  },
+  {
+   "slug": "alibaba-cloud",
+   "name_en": "Alibaba Cloud",
+   "name_fa": "علی‌بابا کلود",
+   "kind": "company"
+  },
+  {
+   "slug": "qwengyre",
+   "name_en": "QwenGyre",
+   "name_fa": "کیوئن گایر",
+   "kind": "product"
+  },
+  {
+   "slug": "sora",
+   "name_en": "Sora",
+   "name_fa": "سورا",
+   "kind": "model"
+  },
+  {
+   "slug": "jeff-katzberg",
+   "name_en": "Jeff Katzberg",
+   "name_fa": "جفری کاتزنبرگ",
+   "kind": "person"
+  },
+  {
+   "slug": "bill-peabody",
+   "name_en": "Bill Peabody",
+   "name_fa": "بیل پیبلز",
+   "kind": "person"
+  },
+  {
+   "slug": "sujay-joshi",
+   "name_en": "Sujay Joshi",
+   "name_fa": "سوجای جاسوا",
+   "kind": "person"
+  },
+  {
+   "slug": "self-improving-agents",
+   "name_en": "Self-improving agents",
+   "name_fa": "ایجنت‌های خودارتقا",
+   "kind": "product"
+  },
+  {
+   "slug": "music-wonder",
+   "name_en": "Music Wonder",
+   "name_fa": "میوز واندر",
+   "kind": "model"
+  },
+  {
+   "slug": "tingting-liao",
+   "name_en": "Tingting Liao",
+   "name_fa": "تینگ‌تینگ لیائو",
+   "kind": "person"
+  },
+  {
+   "slug": "code-world-model",
+   "name_en": "Code World Model",
+   "name_fa": "مدل کد ورلد",
+   "kind": "model"
+  },
+  {
+   "slug": "subq-snap",
+   "name_en": "SubQ Snap",
+   "name_fa": "ساب‌کیو اسنپ",
+   "kind": "model"
+  },
+  {
+   "slug": "alexander-widon",
+   "name_en": "Alexander Widon",
+   "name_fa": "الکساندر ویدون",
+   "kind": "person"
+  },
+  {
+   "slug": "jev",
+   "name_en": "Jev",
+   "name_fa": "جی‌وی",
+   "kind": "model"
+  },
+  {
+   "slug": "blueprints-ai",
+   "name_en": "Blueprints AI",
+   "name_fa": "بلوپرینتس ای‌آی",
+   "kind": "company"
+  },
+  {
+   "slug": "kled-ai",
+   "name_en": "Kled AI",
+   "name_fa": "کلد ای‌آی",
+   "kind": "company"
+  },
+  {
+   "slug": "kled-labs",
+   "name_en": "Kled Labs",
+   "name_fa": "کلد لابس",
+   "kind": "product"
+  },
+  {
+   "slug": "wang-xingxing",
+   "name_en": "Wang Xingxing",
+   "name_fa": "وانگ شینگ‌شینگ",
+   "kind": "person"
   }
  ]
 }
