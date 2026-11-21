@@ -4901,6 +4901,198 @@
    "name_en": "cpu-chat",
    "name_fa": "سی‌پی‌یو-چت",
    "kind": "product"
+  },
+  {
+   "slug": "john-barron",
+   "name_en": "John Barron",
+   "name_fa": "جان بارون",
+   "kind": "person"
+  },
+  {
+   "slug": "pytorch",
+   "name_en": "PyTorch",
+   "name_fa": "پایتورچ",
+   "kind": "product"
+  },
+  {
+   "slug": "jax",
+   "name_en": "JAX",
+   "name_fa": "جکس",
+   "kind": "product"
+  },
+  {
+   "slug": "softmax",
+   "name_en": "Softmax",
+   "name_fa": "سافت‌مکس",
+   "kind": "model"
+  },
+  {
+   "slug": "cross-entropy",
+   "name_en": "Cross-entropy",
+   "name_fa": "کراس‌انتروپی",
+   "kind": "model"
+  },
+  {
+   "slug": "swati-damodaran",
+   "name_en": "Swati Damodaran",
+   "name_fa": "اسوات داموداران",
+   "kind": "person"
+  },
+  {
+   "slug": "wall-street",
+   "name_en": "Wall Street",
+   "name_fa": "وال‌استریت",
+   "kind": "company"
+  },
+  {
+   "slug": "new-york-university",
+   "name_en": "New York University",
+   "name_fa": "دانشگاه نیویورک",
+   "kind": "company"
+  },
+  {
+   "slug": "claude-for-iphone-duo",
+   "name_en": "Claude for iPhone Duo",
+   "name_fa": "کلود برای آیفون دوئو",
+   "kind": "product"
+  },
+  {
+   "slug": "robert-bai",
+   "name_en": "Robert Bai",
+   "name_fa": "رابرت بای",
+   "kind": "person"
+  },
+  {
+   "slug": "primitive-research",
+   "name_en": "Primitive Research",
+   "name_fa": "پرایمیتیو ریسرچ",
+   "kind": "company"
+  },
+  {
+   "slug": "tess",
+   "name_en": "TESS",
+   "name_fa": "تلسکوپ فضایی تس",
+   "kind": "product"
+  },
+  {
+   "slug": "dessa",
+   "name_en": "Dessa",
+   "name_fa": "دِسا",
+   "kind": "model"
+  },
+  {
+   "slug": "ragavan-tourayaratnam",
+   "name_en": "Ragavan Tourayaratnam",
+   "name_fa": "راگاوان تورایراتنام",
+   "kind": "person"
+  },
+  {
+   "slug": "benchmaxxing",
+   "name_en": "Benchmaxxing",
+   "name_fa": "بنچ‌ماکسینگ",
+   "kind": "product"
+  },
+  {
+   "slug": "ali-saeidi",
+   "name_en": "Ali Saeidi",
+   "name_fa": "علی سایتی",
+   "kind": "person"
+  },
+  {
+   "slug": "future-focus-with-mehrzad",
+   "name_en": "Future Focus with Mehrzad",
+   "name_fa": "فیوچر فوکوس با مهرزاد",
+   "kind": "person"
+  },
+  {
+   "slug": "khabar-ai",
+   "name_en": "khabar-ai",
+   "name_fa": "خبر ای‌آی",
+   "kind": "product"
+  },
+  {
+   "slug": "replit",
+   "name_en": "Replit",
+   "name_fa": "رپلیت",
+   "kind": "company"
+  },
+  {
+   "slug": "eth-zurich",
+   "name_en": "ETH Zurich",
+   "name_fa": "دانشگاه فدرال پلی‌تکنیک زوریخ",
+   "kind": "company"
+  },
+  {
+   "slug": "g1",
+   "name_en": "G1",
+   "name_fa": "جی‌ای‌اچ",
+   "kind": "product"
+  },
+  {
+   "slug": "nanbeige",
+   "name_en": "Nanbeige",
+   "name_fa": "نان‌بیژ",
+   "kind": "company"
+  },
+  {
+   "slug": "nanbeige43-33b",
+   "name_en": "Nanbeige4.3-33B",
+   "name_fa": "نان‌بیژ ۴.۳-۳۳ میلیارد",
+   "kind": "model"
+  },
+  {
+   "slug": "richard-borcherds",
+   "name_en": "Richard Borcherds",
+   "name_fa": "ریچارد بورچردز",
+   "kind": "person"
+  },
+  {
+   "slug": "uc-berkeley",
+   "name_en": "UC Berkeley",
+   "name_fa": "دانشگاه برکلی",
+   "kind": "company"
+  },
+  {
+   "slug": "fields-medal",
+   "name_en": "Fields Medal",
+   "name_fa": "مدال فیلدز",
+   "kind": "product"
+  },
+  {
+   "slug": "tali-ai",
+   "name_en": "Tali AI",
+   "name_fa": "تالی‌آی",
+   "kind": "company"
+  },
+  {
+   "slug": "hosam-dadafarin",
+   "name_en": "Hosam Dadafarin",
+   "name_fa": "حسام دادآفرین",
+   "kind": "person"
+  },
+  {
+   "slug": "dave-kiss",
+   "name_en": "Dave Kiss",
+   "name_fa": "دیو کیس",
+   "kind": "person"
+  },
+  {
+   "slug": "resend",
+   "name_en": "Resend",
+   "name_fa": "رزند",
+   "kind": "company"
+  },
+  {
+   "slug": "pentagon",
+   "name_en": "Pentagon",
+   "name_fa": "پنتاگون",
+   "kind": "company"
+  },
+  {
+   "slug": "us-military",
+   "name_en": "U.S. military",
+   "name_fa": "ارتش آمریکا",
+   "kind": "product"
   }
  ]
 }
