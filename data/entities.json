@@ -7145,6 +7145,120 @@
    "name_en": "NotebookLM",
    "name_fa": "نوت‌بوک‌ال‌ام",
    "kind": "product"
+  },
+  {
+   "slug": "mikael-bohnsack",
+   "name_en": "Mikaël Bohnsack",
+   "name_fa": "میکیتا بالسنی",
+   "kind": "person"
+  },
+  {
+   "slug": "artex",
+   "name_en": "ARTEX",
+   "name_fa": "آرتکس",
+   "kind": "product"
+  },
+  {
+   "slug": "claude-dashboards",
+   "name_en": "Claude Dashboards",
+   "name_fa": "کلود داشبوردها",
+   "kind": "product"
+  },
+  {
+   "slug": "claude-motion",
+   "name_en": "Claude Motion",
+   "name_fa": "کلود موشن",
+   "kind": "product"
+  },
+  {
+   "slug": "starlink",
+   "name_en": "Starlink",
+   "name_fa": "استارلینک",
+   "kind": "product"
+  },
+  {
+   "slug": "brice-menard",
+   "name_en": "Brice Ménard",
+   "name_fa": "بریس منارد",
+   "kind": "person"
+  },
+  {
+   "slug": "claude-science",
+   "name_en": "Claude Science",
+   "name_fa": "کلاد ساینس",
+   "kind": "product"
+  },
+  {
+   "slug": "claude-max",
+   "name_en": "Claude MAX",
+   "name_fa": "کلود مکس",
+   "kind": "product"
+  },
+  {
+   "slug": "jim-prosser",
+   "name_en": "Jim Prosser",
+   "name_fa": "جیم پراسر",
+   "kind": "person"
+  },
+  {
+   "slug": "sergey-brin",
+   "name_en": "Sergey Brin",
+   "name_fa": "سرگی برین",
+   "kind": "person"
+  },
+  {
+   "slug": "lisa-su",
+   "name_en": "Lisa Su",
+   "name_fa": "لیسا سو",
+   "kind": "person"
+  },
+  {
+   "slug": "michael-dell",
+   "name_en": "Michael Dell",
+   "name_fa": "مایکل دل",
+   "kind": "person"
+  },
+  {
+   "slug": "celeris",
+   "name_en": "Celeris",
+   "name_fa": "سلریس",
+   "kind": "company"
+  },
+  {
+   "slug": "celeris-1-decision",
+   "name_en": "Celeris-1 Decision",
+   "name_fa": "سلریس-۱ دسیژن",
+   "kind": "model"
+  },
+  {
+   "slug": "celeris-1",
+   "name_en": "Celeris-1",
+   "name_fa": "سلریس-۱",
+   "kind": "model"
+  },
+  {
+   "slug": "antigen",
+   "name_en": "Antigen",
+   "name_fa": "آنتی‌ژن",
+   "kind": "product"
+  },
+  {
+   "slug": "jasmine",
+   "name_en": "Jasmine",
+   "name_fa": "جاسمین",
+   "kind": "person"
+  },
+  {
+   "slug": "mikita",
+   "name_en": "Mikita",
+   "name_fa": "میکیتا",
+   "kind": "person"
+  },
+  {
+   "slug": "tomak",
+   "name_en": "Tomak",
+   "name_fa": "تومک",
+   "kind": "person"
   }
  ]
 }
