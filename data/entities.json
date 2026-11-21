@@ -7043,6 +7043,108 @@
    "name_en": "Snapchat",
    "name_fa": "اسنپ‌چت",
    "kind": "company"
+  },
+  {
+   "slug": "claude-startups",
+   "name_en": "Claude Startups",
+   "name_fa": "کلود استارتاپ‌ها",
+   "kind": "product"
+  },
+  {
+   "slug": "ai2",
+   "name_en": "Ai2",
+   "name_fa": "آی‌تو",
+   "kind": "company"
+  },
+  {
+   "slug": "mithra-raghu",
+   "name_en": "Mithra Raghu",
+   "name_fa": "مایترا راگو",
+   "kind": "company"
+  },
+  {
+   "slug": "meta-glasses",
+   "name_en": "Meta Glasses",
+   "name_fa": "عینک‌های متا",
+   "kind": "product"
+  },
+  {
+   "slug": "microsoft-decision-1",
+   "name_en": "Microsoft-Decision-1",
+   "name_fa": "مایکروسافت دسیژن ۱",
+   "kind": "model"
+  },
+  {
+   "slug": "claude-managed-agents",
+   "name_en": "Claude Managed Agents",
+   "name_fa": "کلود منیج‌د ایجنت‌ها",
+   "kind": "product"
+  },
+  {
+   "slug": "pat-gelsinger",
+   "name_en": "Pat Gelsinger",
+   "name_fa": "پَت گلسینگر",
+   "kind": "person"
+  },
+  {
+   "slug": "intel-386",
+   "name_en": "Intel 386",
+   "name_fa": "اینتل ۳۸۶",
+   "kind": "product"
+  },
+  {
+   "slug": "intel-486",
+   "name_en": "Intel 486",
+   "name_fa": "اینتل ۴۸۶",
+   "kind": "product"
+  },
+  {
+   "slug": "shayan-oveisgharan",
+   "name_en": "Shayan Oveisgharan",
+   "name_fa": "شایان اویس‌قران",
+   "kind": "person"
+  },
+  {
+   "slug": "composer",
+   "name_en": "Composer",
+   "name_fa": "کامپوزر",
+   "kind": "product"
+  },
+  {
+   "slug": "lumina",
+   "name_en": "Lumina",
+   "name_fa": "لومینا",
+   "kind": "person"
+  },
+  {
+   "slug": "christian-ammon",
+   "name_en": "Christian Ammon",
+   "name_fa": "کریستیانو آمون",
+   "kind": "person"
+  },
+  {
+   "slug": "100-billion-parameter-models",
+   "name_en": "100-billion-parameter models",
+   "name_fa": "مدل‌های ۱۰۰ میلیارد پارامتری",
+   "kind": "model"
+  },
+  {
+   "slug": "huxe",
+   "name_en": "Huxe",
+   "name_fa": "هکس",
+   "kind": "company"
+  },
+  {
+   "slug": "riza-martin",
+   "name_en": "Riza Martin",
+   "name_fa": "ریزا مارتین",
+   "kind": "person"
+  },
+  {
+   "slug": "notebooklm",
+   "name_en": "NotebookLM",
+   "name_fa": "نوت‌بوک‌ال‌ام",
+   "kind": "product"
   }
  ]
 }
