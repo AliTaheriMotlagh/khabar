@@ -3,8 +3,168 @@
   "url": "https://www.youtube.com/@mehrzad.samadi",
   "id": "UCprtwWNkaWcAxcBV44lPHzQ"
  },
- "checked": "2026-11-21T16:16:28+00:00",
+ "checked": "2026-11-21T21:44:19+00:00",
  "videos": [
+  {
+   "id": "GaS7o7UdXeg",
+   "title": "52. Modeling Reality by Ashkan Mirzaei [Persian]",
+   "duration": 2910,
+   "date": "2026-11-21",
+   "description": "Ashkan's links:\n𝕏 / Twitter: https://x.com/ashmrz10\nLinkedIn:   / ashkan-mirzaei-6b9651145  \n\nChapters\n0:00 Introduction to Ashkan | Intro\n1:06 Helli, the olympiad and Sharif\n2:23 Applying abroad and a PhD in Toronto\n4:10 From Snapchat to NVIDIA\n6:00 3D content creation\n7:58 Rasterization vs. ray tracing\n12:31 From generative content to physical AI\n13:09 The real impact: industrial robots\n14:26 What is a world model?\n15:20 Cosmos: an omni-modal world model\n18:24 The world model as a robot's policy\n23:35 Autonomous driving\n25:06 Augmenting datasets with Cosmos\n27:44 Cosmos model sizes and architecture\n28:43 Why diffusion models punch above their size\n29:55 Why no \"ChatGPT moment\" for robotics?\n32:59 Scaling and the future of physical AI\n35:19 Healthcare: the next revolution\n36:43 Will AI take our jobs?\n37:56 Concentration of power and \"AI consciousness\" Concentration of power and \"conscious AI\"\n39:28 Coding isn't what it used to be\n41:30 PhD or industry?\n47:06 Wrap-up\n\n#Artificial_Intelligence #WorldModels #NVIDIA #Cosmos #PhysicalAI #Robotics #AI",
+   "post": 6676,
+   "n": 52,
+   "name": "Modeling Reality by Ashkan Mirzaei",
+   "live": false,
+   "chapters": [
+    {
+     "t": 0,
+     "title": "Introduction to Ashkan | Intro"
+    },
+    {
+     "t": 66,
+     "title": "Helli, the olympiad and Sharif"
+    },
+    {
+     "t": 143,
+     "title": "Applying abroad and a PhD in Toronto"
+    },
+    {
+     "t": 250,
+     "title": "From Snapchat to NVIDIA"
+    },
+    {
+     "t": 360,
+     "title": "3D content creation"
+    },
+    {
+     "t": 478,
+     "title": "Rasterization vs. ray tracing"
+    },
+    {
+     "t": 751,
+     "title": "From generative content to physical AI"
+    },
+    {
+     "t": 789,
+     "title": "The real impact: industrial robots"
+    },
+    {
+     "t": 866,
+     "title": "What is a world model?"
+    },
+    {
+     "t": 920,
+     "title": "Cosmos: an omni-modal world model"
+    },
+    {
+     "t": 1104,
+     "title": "The world model as a robot's policy"
+    },
+    {
+     "t": 1415,
+     "title": "Autonomous driving"
+    },
+    {
+     "t": 1506,
+     "title": "Augmenting datasets with Cosmos"
+    },
+    {
+     "t": 1664,
+     "title": "Cosmos model sizes and architecture"
+    },
+    {
+     "t": 1723,
+     "title": "Why diffusion models punch above their size"
+    },
+    {
+     "t": 1795,
+     "title": "Why no \"ChatGPT moment\" for robotics?"
+    },
+    {
+     "t": 1979,
+     "title": "Scaling and the future of physical AI"
+    },
+    {
+     "t": 2119,
+     "title": "Healthcare: the next revolution"
+    },
+    {
+     "t": 2203,
+     "title": "Will AI take our jobs?"
+    },
+    {
+     "t": 2276,
+     "title": "Concentration of power and \"AI consciousness\" Concentration of power and \"conscious AI\""
+    },
+    {
+     "t": 2368,
+     "title": "Coding isn't what it used to be"
+    },
+    {
+     "t": 2490,
+     "title": "PhD or industry?"
+    },
+    {
+     "t": 2826,
+     "title": "Wrap-up"
+    }
+   ],
+   "links": [
+    "https://x.com/ashmrz10"
+   ],
+   "ai": {
+    "title": "مدل‌سازی واقعیت با هوش مصنوعی: از تولید محتوا تا ربات‌های صنعتی و خودروهای خودران",
+    "summary": "در این ویدیو، اشکان میرزایی درباره‌ی تحول هوش مصنوعی از تولید محتوای دیجیتال به سمت مدل‌سازی فیزیکی جهان صحبت می‌کند. او مفهوم مدل‌های جهان (World Models) مانند مدل Cosmos در شرکت نویدا را توضیح می‌دهد که چگونه به ربات‌ها و خودروهای خودران کمک می‌کنند تا محیط را درک و پیش‌بینی کنند. همچنین به چالش‌های مقیاس‌پذیری، تأثیر هوش مصنوعی بر بازار کار و تفاوت مسیرهای آکادمیک و صنعتی می‌پردازد.",
+    "points": [
+     "هوش مصنوعی در حال گذار از تولید محتوای دیجیتال به مدل‌سازی دقیق فیزیک جهان است.",
+     "مدل‌های جهان (World Models) به ربات‌ها اجازه می‌دهند محیط را شبیه‌سازی کرده و تصمیم بگیرند.",
+     "مدل Cosmos نویدا یک مدل چندوجهی قدرتمند برای درک تعاملات فیزیکی اشیاء است.",
+     "تکنیک‌های دیفیوژن (Diffusion) در مدل‌سازی فیزیکی عملکردی بهتر از انتظار دارند.",
+     "خودروهای خودران با استفاده از مدل‌های جهان می‌توانند سناریوهای پیچیده خیابان را پیش‌بینی کنند.",
+     "هوش مصنوعی در حوزه سلامت و پزشکی می‌تواند انقلابی در تشخیص و درمان ایجاد کند.",
+     "خطر غلبه قدرت در هوش مصنوعی و ظهور هوش مصنوعی آگاه نیازمند توجه است.",
+     "مسیر شغلی در هوش مصنوعی امروزه بیشتر به سمت مهارت‌های عملی و صنعتی متمایل شده است."
+    ],
+    "chapters": [
+     {
+      "t": 0,
+      "title": "معرفی اشکان میرزایی"
+     },
+     {
+      "t": 66,
+      "title": "سوابق تحصیلی و کاری"
+     },
+     {
+      "t": 250,
+      "title": "گذار از تولید محتوا به هوش مصنوعی"
+     },
+     {
+      "t": 751,
+      "title": "مدل‌سازی فیزیکی جهان"
+     },
+     {
+      "t": 866,
+      "title": "معرفی مدل Cosmos نویدا"
+     },
+     {
+      "t": 1415,
+      "title": "کاربرد در خودروهای خودران"
+     },
+     {
+      "t": 1979,
+      "title": "آینده و مقیاس‌پذیری"
+     },
+     {
+      "t": 2203,
+      "title": "تأثیر بر بازار کار و اخلاق"
+     }
+    ],
+    "category": "تکنیک‌های مدل",
+    "from": "description",
+    "v": 1,
+    "model": "qwen3.5-9b-q4_k_m"
+   }
+  },
   {
    "id": "7GNR3Ue7QFU",
    "title": "51. Beni: Camera Robot [Persian]",

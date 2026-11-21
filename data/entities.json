@@ -7031,6 +7031,18 @@
    "name_en": "Brian Armstrong",
    "name_fa": "برایان آرمسترانگ",
    "kind": "person"
+  },
+  {
+   "slug": "ashkan-mirzaei",
+   "name_en": "Ashkan Mirzaei",
+   "name_fa": "اشکان میرزایی",
+   "kind": "person"
+  },
+  {
+   "slug": "snapchat",
+   "name_en": "Snapchat",
+   "name_fa": "اسنپ‌چت",
+   "kind": "company"
   }
  ]
 }
