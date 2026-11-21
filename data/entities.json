@@ -6515,6 +6515,96 @@
    "name_en": "Jeveration",
    "name_fa": "یووریشن",
    "kind": "model"
+  },
+  {
+   "slug": "lfm25-24b-a2b",
+   "name_en": "LFM2.5-24B-A2B",
+   "name_fa": "اف‌ام‌ال ۲.۵-۲۴بی-ای‌آی‌بی",
+   "kind": "model"
+  },
+  {
+   "slug": "blender-mcp",
+   "name_en": "Blender MCP",
+   "name_fa": "بلندر ام‌سی‌پی",
+   "kind": "product"
+  },
+  {
+   "slug": "palantir",
+   "name_en": "Palantir",
+   "name_fa": "پلنتیر",
+   "kind": "company"
+  },
+  {
+   "slug": "cto",
+   "name_en": "CTO",
+   "name_fa": "مدیر ارشد فناوری",
+   "kind": "person"
+  },
+  {
+   "slug": "physical-intelligence",
+   "name_en": "Physical Intelligence",
+   "name_fa": "فیزیکال اینتلیجنس",
+   "kind": "company"
+  },
+  {
+   "slug": "pi-api",
+   "name_en": "Pi API",
+   "name_fa": "پی‌ای‌پی‌آی",
+   "kind": "product"
+  },
+  {
+   "slug": "induction-labs",
+   "name_en": "Induction Labs",
+   "name_fa": "اندکشن لابس",
+   "kind": "company"
+  },
+  {
+   "slug": "cat-jam",
+   "name_en": "Cat Jam",
+   "name_fa": "کت جام",
+   "kind": "model"
+  },
+  {
+   "slug": "facebook",
+   "name_en": "Facebook",
+   "name_fa": "فیس‌بوک",
+   "kind": "product"
+  },
+  {
+   "slug": "your-algorithm",
+   "name_en": "Your algorithm",
+   "name_fa": "الگوریتم تو",
+   "kind": "product"
+  },
+  {
+   "slug": "reroute",
+   "name_en": "ReRoute",
+   "name_fa": "ری‌روت",
+   "kind": "product"
+  },
+  {
+   "slug": "anima-anandkumar",
+   "name_en": "Anima Anandkumar",
+   "name_fa": "آنیما آناندکومار",
+   "kind": "person"
+  },
+  {
+   "slug": "moondream",
+   "name_en": "Moondream",
+   "name_fa": "موندریم",
+   "kind": "company"
+  },
+  {
+   "slug": "multimodal-models",
+   "name_en": "Multimodal Models",
+   "name_fa": "مدل‌های چندحالته",
+   "kind": "product"
+  },
+  {
+   "slug": "alpoge",
+   "name_en": "Alpöge",
+   "name_fa": "آلپوگه",
+   "kind": "person"
   }
  ]
 }
