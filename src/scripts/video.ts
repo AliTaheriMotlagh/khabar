@@ -888,7 +888,8 @@ function painter(ctx: CanvasRenderingContext2D, v: Video) {
  *  frames are mostly still, so the encoder rarely needs all of it. */
 const BITRATE = (seconds: number) =>
   // A long video (the whole 24-hour summary) gets less a second, to stay near 25 MB: still sharp, the frames barely move.
-  Math.max(650_000, Math.min(W * H > 1.5e6 ? 2_200_000 : W * H > 1e6 ? 1_900_000 : 1_400_000, (25e6 * 8) / seconds));
+  // A whole number: WebCodecs refuses a fractional bitrate (25 MB / 97.3 s), and the video failed to start.
+  Math.round(Math.max(650_000, Math.min(W * H > 1.5e6 ? 2_200_000 : W * H > 1e6 ? 1_900_000 : 1_400_000, (25e6 * 8) / (seconds || 1))));
 /** With the browser's encoders, frame by frame, faster than real time. Null when they can't make this video. */
 async function encode(v: Video, canvas: HTMLCanvasElement, draw: (t: number) => void, step: (p: number) => void, stop: AbortSignal): Promise<Blob | null> {
   if (typeof VideoEncoder !== 'function') return null;

@@ -1,15 +1,17 @@
 ---
 // One entry on the timeline: topic, time, headline, a short excerpt and one picture. Reactions live on the story page.
 // In the short "list" view it collapses to a linked headline row. On a topic's page (`topic`) the kicker names that
-// topic: a story filed under several shows the one the reader is browsing, not its main one.
+// topic: a story filed under several shows the one the reader is browsing, not its main one. On a name's page (`who`)
+// its key is in data-tags even when the story names more than the three carried.
 import Icon from './Icon.astro';
 import Media from './Media.astro';
 import SaveButton from './SaveButton.astro';
 import DigestCard from './DigestCard.astro';
 import StatusChip from './StatusChip.astro';
 import { faNum, faTime, pic, tagHref, type Post } from '../lib/posts';
-interface Props { post: Post; eager?: boolean; topic?: string }
-const { post, eager = false, topic } = Astro.props;
+interface Props { post: Post; eager?: boolean; topic?: string; who?: string }
+const { post, eager = false, topic, who } = Astro.props;
+const whoTags = [...new Set([...post.entities.slice(0, 3).map((e) => e.slug), ...(who ? [who] : [])])].map((s) => `who:${s}`);
 const a = post.article;
 const tag = topic && a.tags.includes(topic) ? topic : a.tags[0];
 const thumb = post.cover ? pic(post.cover.src || post.cover.poster, 'small') : null;
@@ -19,7 +21,7 @@ const update = post.cluster.length > 0 && !first;
 // The newest story of a thread (P3-1) points to the thread's timeline on its page.
 const threadLink = !!post.thread && post.thread.ids.at(-1) === post.id && post.thread.ids.length >= 3;
 ---
-<li class="tl-item" data-id={post.id} data-kind={post.kind} data-tags={[...a.tags, ...post.entities.slice(0, 3).map((e) => `who:${e.slug}`)].join(',')} data-type={post.type ?? undefined}>
+<li class="tl-item" data-id={post.id} data-kind={post.kind} data-tags={[...a.tags, ...whoTags].join(',')} data-type={post.type ?? undefined}>
   <span class="tl-dot" aria-hidden="true"></span>
   <time class="tl-time" datetime={post.date} data-num>{faTime(post.date)}</time>
   {

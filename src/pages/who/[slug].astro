@@ -41,7 +41,7 @@ const jsonLd = [
       <button class="btn follow-btn" type="button" data-follow={`who:${e.slug}`} data-follow-name={e.name_fa} aria-pressed="false"><Icon name="plus" class="when-off" /><Icon name="check" class="when-on" /> <span data-follow-label>دنبال کردن</span></button>
     </header>
     <div class="layout">
-      <div class="col-main"><Timeline posts={posts.slice(0, 60)} all={posts} title={`خط زمانی ${e.name_fa}`} /></div>
+      <div class="col-main"><Timeline posts={posts.slice(0, 60)} all={posts} title={`خط زمانی ${e.name_fa}`} who={e.slug} /></div>
       <Sidebar />
     </div>
   </div>
