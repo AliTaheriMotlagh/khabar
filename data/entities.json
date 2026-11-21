@@ -3995,6 +3995,198 @@
    "name_en": "Jacob Loretzen",
    "name_fa": "جیکوب لوریتزن",
    "kind": "person"
+  },
+  {
+   "slug": "jeetu-patel",
+   "name_en": "Jeetu Patel",
+   "name_fa": "جیتو پاتل",
+   "kind": "person"
+  },
+  {
+   "slug": "padmanaban-krishnamurthy",
+   "name_en": "Padmanaban Krishnamurthy",
+   "name_fa": "پادمانابان کریشنامورتی",
+   "kind": "person"
+  },
+  {
+   "slug": "veritas",
+   "name_en": "veritas",
+   "name_fa": "وریتاس",
+   "kind": "person"
+  },
+  {
+   "slug": "chainalysis",
+   "name_en": "Chainalysis",
+   "name_fa": "چین‌آنالیسیس",
+   "kind": "company"
+  },
+  {
+   "slug": "subvocal",
+   "name_en": "SubVocal",
+   "name_fa": "ساب‌ووکل",
+   "kind": "company"
+  },
+  {
+   "slug": "afore-capital",
+   "name_en": "Afore Capital",
+   "name_fa": "اَفور کپیتال",
+   "kind": "company"
+  },
+  {
+   "slug": "glif",
+   "name_en": "Glif",
+   "name_fa": "گلیف",
+   "kind": "company"
+  },
+  {
+   "slug": "red-team",
+   "name_en": "Red Team",
+   "name_fa": "تیم قرمز",
+   "kind": "product"
+  },
+  {
+   "slug": "factory",
+   "name_en": "Factory",
+   "name_fa": "فکتوری",
+   "kind": "company"
+  },
+  {
+   "slug": "typedef",
+   "name_en": "Typedef",
+   "name_fa": "تایپ‌دیف",
+   "kind": "company"
+  },
+  {
+   "slug": "space-apps",
+   "name_en": "Space Apps",
+   "name_fa": "اسپیس اپز",
+   "kind": "product"
+  },
+  {
+   "slug": "planassist",
+   "name_en": "PlanAssist",
+   "name_fa": "پلن‌آسیست",
+   "kind": "product"
+  },
+  {
+   "slug": "fourier",
+   "name_en": "Fourier",
+   "name_fa": "فوریِر",
+   "kind": "company"
+  },
+  {
+   "slug": "max",
+   "name_en": "Max",
+   "name_fa": "مکس",
+   "kind": "product"
+  },
+  {
+   "slug": "mehrzad-samadi",
+   "name_en": "Mehrzad Samadi",
+   "name_fa": "مهرزاد صمدی",
+   "kind": "person"
+  },
+  {
+   "slug": "ibm",
+   "name_en": "IBM",
+   "name_fa": "آی‌بی‌ام",
+   "kind": "company"
+  },
+  {
+   "slug": "jevact",
+   "name_en": "JevAct",
+   "name_fa": "جی‌وی‌آکت",
+   "kind": "product"
+  },
+  {
+   "slug": "fbi",
+   "name_en": "FBI",
+   "name_fa": "اف‌بی‌آی",
+   "kind": "company"
+  },
+  {
+   "slug": "tradertraitor",
+   "name_en": "TraderTraitor",
+   "name_fa": "تریدر تریتور",
+   "kind": "product"
+  },
+  {
+   "slug": "didi",
+   "name_en": "Didi",
+   "name_fa": "دیدی",
+   "kind": "person"
+  },
+  {
+   "slug": "vc",
+   "name_en": "VC",
+   "name_fa": "سرمایه‌گذار خطرپذیر",
+   "kind": "company"
+  },
+  {
+   "slug": "super-agent",
+   "name_en": "Super-agent",
+   "name_fa": "سوپر-ایجنت",
+   "kind": "product"
+  },
+  {
+   "slug": "adi-osmanli",
+   "name_en": "Adi Osmanli",
+   "name_fa": "ادی عثمانی",
+   "kind": "person"
+  },
+  {
+   "slug": "john-sun",
+   "name_en": "John Sun",
+   "name_fa": "جون سانگ",
+   "kind": "person"
+  },
+  {
+   "slug": "gpt-62",
+   "name_en": "GPT-6.2",
+   "name_fa": "جی‌پی‌تی ۶.۲",
+   "kind": "model"
+  },
+  {
+   "slug": "ai-teacher",
+   "name_en": "AI Teacher",
+   "name_fa": "معلم هوش مصنوعی",
+   "kind": "product"
+  },
+  {
+   "slug": "andrej-karpaty",
+   "name_en": "Andrej Karpaty",
+   "name_fa": "آندری کارپاتی",
+   "kind": "person"
+  },
+  {
+   "slug": "claude-opus",
+   "name_en": "Claude Opus",
+   "name_fa": "کلود اوپوس",
+   "kind": "model"
+  },
+  {
+   "slug": "hackertube",
+   "name_en": "HackerTube",
+   "name_fa": "هکرتیوب",
+   "kind": "product"
+  },
+  {
+   "slug": "instinct",
+   "name_en": "Instinct",
+   "name_fa": "اینستینکت",
+   "kind": "product"
+  },
+  {
+   "slug": "whatsapp",
+   "name_en": "WhatsApp",
+   "name_fa": "واتساپ",
+   "kind": "product"
+  },
+  {
+   "slug": "navier-stokes-millennium-prize",
+   "name_en": "Navier-Stokes Millennium Prize",
+   "name_fa": "جایزه‌ی هزاره‌ی ناویر-استوکس",
+   "kind": "model"
   }
  ]
 }
