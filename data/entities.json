@@ -4793,6 +4793,114 @@
    "name_en": "Echo-3",
    "name_fa": "اکو-۳",
    "kind": "model"
+  },
+  {
+   "slug": "gpt-62-astra-cyber",
+   "name_en": "GPT-6.2 Astra Cyber",
+   "name_fa": "جی‌پی‌تی-۶ استرا سایبر",
+   "kind": "model"
+  },
+  {
+   "slug": "hamel-husain",
+   "name_en": "Hamel Husain",
+   "name_fa": "همل حسین",
+   "kind": "person"
+  },
+  {
+   "slug": "ipeak",
+   "name_en": "IPEAK",
+   "name_fa": "ایپاک",
+   "kind": "company"
+  },
+  {
+   "slug": "devin-security",
+   "name_en": "Devin Security",
+   "name_fa": "دوین سکیوریتی",
+   "kind": "product"
+  },
+  {
+   "slug": "eric-bauermann",
+   "name_en": "Eric Bauermann",
+   "name_fa": "اریک بازمَجیان",
+   "kind": "person"
+  },
+  {
+   "slug": "cathedral",
+   "name_en": "Cathedral",
+   "name_fa": "کاتدرال",
+   "kind": "company"
+  },
+  {
+   "slug": "fastlane",
+   "name_en": "Fastlane",
+   "name_fa": "فست‌لاین",
+   "kind": "company"
+  },
+  {
+   "slug": "claude-for-ads",
+   "name_en": "Claude for Ads",
+   "name_fa": "کلود برای تبلیغات",
+   "kind": "product"
+  },
+  {
+   "slug": "cohere",
+   "name_en": "Cohere",
+   "name_fa": "کوهیر",
+   "kind": "company"
+  },
+  {
+   "slug": "circuithub",
+   "name_en": "CircuitHub",
+   "name_fa": "سیرکیت‌هاب",
+   "kind": "company"
+  },
+  {
+   "slug": "the-grid",
+   "name_en": "The Grid",
+   "name_fa": "گرید",
+   "kind": "product"
+  },
+  {
+   "slug": "futureclinic",
+   "name_en": "FutureClinic",
+   "name_fa": "فیوچر کلینیک",
+   "kind": "company"
+  },
+  {
+   "slug": "wayra",
+   "name_en": "Wayra",
+   "name_fa": "وای کامبینیتور",
+   "kind": "company"
+  },
+  {
+   "slug": "grokbot",
+   "name_en": "GrokBot",
+   "name_fa": "گروک‌بات",
+   "kind": "product"
+  },
+  {
+   "slug": "iphone-duo",
+   "name_en": "iPhone Duo",
+   "name_fa": "آیفون دوئو",
+   "kind": "product"
+  },
+  {
+   "slug": "mark-gurman",
+   "name_en": "Mark Gurman",
+   "name_fa": "مارک گورمن",
+   "kind": "person"
+  },
+  {
+   "slug": "gpt-61-terra",
+   "name_en": "GPT-6.1 Terra",
+   "name_fa": "جی‌پی‌تی ۶.۱ تررا",
+   "kind": "model"
+  },
+  {
+   "slug": "cpu-chat",
+   "name_en": "cpu-chat",
+   "name_fa": "سی‌پی‌یو-چت",
+   "kind": "product"
   }
  ]
 }
