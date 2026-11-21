@@ -5093,6 +5093,114 @@
    "name_en": "U.S. military",
    "name_fa": "ارتش آمریکا",
    "kind": "product"
+  },
+  {
+   "slug": "lina-khan",
+   "name_en": "Lina Khan",
+   "name_fa": "لینا خان",
+   "kind": "person"
+  },
+  {
+   "slug": "ftc",
+   "name_en": "FTC",
+   "name_fa": "کمیسیون تجارت فدرال آمریکا",
+   "kind": "company"
+  },
+  {
+   "slug": "claude-mythos-5",
+   "name_en": "Claude Mythos 5",
+   "name_fa": "کلود میتوس ۵",
+   "kind": "model"
+  },
+  {
+   "slug": "uk-ai-safety-institute",
+   "name_en": "UK AI Safety Institute",
+   "name_fa": "موسسه ایمنی هوش مصنوعی بریتانیا",
+   "kind": "company"
+  },
+  {
+   "slug": "fable-51",
+   "name_en": "Fable 5.1",
+   "name_fa": "فبل ۵.۱",
+   "kind": "model"
+  },
+  {
+   "slug": "cbs-news",
+   "name_en": "CBS News",
+   "name_fa": "سی‌بی‌اس نیوز",
+   "kind": "company"
+  },
+  {
+   "slug": "din-bal",
+   "name_en": "Din Bal",
+   "name_fa": "دین بال",
+   "kind": "person"
+  },
+  {
+   "slug": "geoffrey-hinton",
+   "name_en": "Geoffrey Hinton",
+   "name_fa": "جفری هینتون",
+   "kind": "person"
+  },
+  {
+   "slug": "telegraph",
+   "name_en": "Telegraph",
+   "name_fa": "تلگراف",
+   "kind": "company"
+  },
+  {
+   "slug": "kimi-ai",
+   "name_en": "Kimi AI",
+   "name_fa": "کیمی‌آی",
+   "kind": "company"
+  },
+  {
+   "slug": "jack-dorsey",
+   "name_en": "Jack Dorsey",
+   "name_fa": "جک دورسی",
+   "kind": "person"
+  },
+  {
+   "slug": "block",
+   "name_en": "Block",
+   "name_fa": "بلوک",
+   "kind": "company"
+  },
+  {
+   "slug": "brotli",
+   "name_en": "Brotli",
+   "name_fa": "بروتلی",
+   "kind": "product"
+  },
+  {
+   "slug": "nodejs",
+   "name_en": "Node.js",
+   "name_fa": "نود‌جی‌اس",
+   "kind": "product"
+  },
+  {
+   "slug": "bun",
+   "name_en": "Bun",
+   "name_fa": "بون",
+   "kind": "product"
+  },
+  {
+   "slug": "envoy",
+   "name_en": "Envoy",
+   "name_fa": "انووی",
+   "kind": "product"
+  },
+  {
+   "slug": "mirendil-base-large",
+   "name_en": "Mirendil-Base-Large",
+   "name_fa": "میرندیل-بیس-لارج",
+   "kind": "model"
+  },
+  {
+   "slug": "behnam-nishabour",
+   "name_en": "Behnam Nishabour",
+   "name_fa": "بهنام نیشابور",
+   "kind": "person"
   }
  ]
 }
