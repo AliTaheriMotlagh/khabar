@@ -6509,6 +6509,12 @@
    "name_en": "Travel Agent",
    "name_fa": "آژانس مسافرتی",
    "kind": "product"
+  },
+  {
+   "slug": "jeveration",
+   "name_en": "Jeveration",
+   "name_fa": "یووریشن",
+   "kind": "model"
   }
  ]
 }
