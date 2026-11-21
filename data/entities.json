@@ -6881,6 +6881,156 @@
    "name_en": "Wang Xingxing",
    "name_fa": "وانگ شینگ‌شینگ",
    "kind": "person"
+  },
+  {
+   "slug": "terence-tao",
+   "name_en": "Terence Tao",
+   "name_fa": "تری تائو",
+   "kind": "person"
+  },
+  {
+   "slug": "math-20",
+   "name_en": "Math 2.0",
+   "name_fa": "ریاضی ۲.۰",
+   "kind": "product"
+  },
+  {
+   "slug": "alexandr-wang",
+   "name_en": "Alexandr Wang",
+   "name_fa": "الکساندر وانگ",
+   "kind": "person"
+  },
+  {
+   "slug": "leetcode",
+   "name_en": "LeetCode",
+   "name_fa": "لیت‌کد",
+   "kind": "product"
+  },
+  {
+   "slug": "agentic-systems",
+   "name_en": "Agentic Systems",
+   "name_fa": "سیستم‌های ایجنتیک",
+   "kind": "product"
+  },
+  {
+   "slug": "juncheng-yang",
+   "name_en": "Juncheng Yang",
+   "name_fa": "جونچنگ یانگ",
+   "kind": "person"
+  },
+  {
+   "slug": "michael-jordan",
+   "name_en": "Michael Jordan",
+   "name_fa": "مایکل جردن",
+   "kind": "person"
+  },
+  {
+   "slug": "philadelphia-police",
+   "name_en": "Philadelphia Police",
+   "name_fa": "پلیس فیلادلفیا",
+   "kind": "company"
+  },
+  {
+   "slug": "anthropic-ai-agent",
+   "name_en": "Anthropic AI Agent",
+   "name_fa": "عامل هوش مصنوعی آنتروپیک",
+   "kind": "product"
+  },
+  {
+   "slug": "system-one",
+   "name_en": "System One",
+   "name_fa": "سیستم وان",
+   "kind": "model"
+  },
+  {
+   "slug": "unsloth",
+   "name_en": "Unsloth",
+   "name_fa": "آن‌اسلاث",
+   "kind": "product"
+  },
+  {
+   "slug": "andrej-karpathy",
+   "name_en": "Andrej Karpathy",
+   "name_fa": "آندری کارپاتی",
+   "kind": "person"
+  },
+  {
+   "slug": "rohan-aaron",
+   "name_en": "Rohan Aaron",
+   "name_fa": "روهان آرون",
+   "kind": "person"
+  },
+  {
+   "slug": "claude-next",
+   "name_en": "Claude Next",
+   "name_fa": "کلاد نِکست",
+   "kind": "model"
+  },
+  {
+   "slug": "river-ai",
+   "name_en": "River AI",
+   "name_fa": "ریور ای‌آی",
+   "kind": "company"
+  },
+  {
+   "slug": "deepseek-v41",
+   "name_en": "DeepSeek V4.1",
+   "name_fa": "دیپ‌سیک V4.1",
+   "kind": "model"
+  },
+  {
+   "slug": "tibo-shitraj",
+   "name_en": "Tibo Shitraj",
+   "name_fa": "تیبو شیتراژ",
+   "kind": "person"
+  },
+  {
+   "slug": "decision-30",
+   "name_en": "Decision 3.0",
+   "name_fa": "دسیژن ۳.۰",
+   "kind": "model"
+  },
+  {
+   "slug": "gordon-chan",
+   "name_en": "Gordon Chan",
+   "name_fa": "گوردون چیان",
+   "kind": "person"
+  },
+  {
+   "slug": "code-video-model",
+   "name_en": "Code Video Model",
+   "name_fa": "مدل کد ویدیو",
+   "kind": "product"
+  },
+  {
+   "slug": "autodesk",
+   "name_en": "Autodesk",
+   "name_fa": "اتودسک",
+   "kind": "company"
+  },
+  {
+   "slug": "openoffice",
+   "name_en": "OpenOffice",
+   "name_fa": "اپن‌آفیس",
+   "kind": "product"
+  },
+  {
+   "slug": "meta-muse",
+   "name_en": "Meta Muse",
+   "name_fa": "متا میوز",
+   "kind": "product"
+  },
+  {
+   "slug": "coinbase",
+   "name_en": "Coinbase",
+   "name_fa": "کوین‌بیس",
+   "kind": "company"
+  },
+  {
+   "slug": "brian-armstrong",
+   "name_en": "Brian Armstrong",
+   "name_fa": "برایان آرمسترانگ",
+   "kind": "person"
   }
  ]
 }
