@@ -5735,6 +5735,174 @@
    "name_en": "University of Washington",
    "name_fa": "دانشگاه واشنگتن",
    "kind": "company"
+  },
+  {
+   "slug": "together-ai",
+   "name_en": "Together AI",
+   "name_fa": "توگرتر ای‌آی",
+   "kind": "company"
+  },
+  {
+   "slug": "together-post-training",
+   "name_en": "Together Post-Training",
+   "name_fa": "توگرتر پست-ترینینگ",
+   "kind": "product"
+  },
+  {
+   "slug": "sft",
+   "name_en": "SFT",
+   "name_fa": "تنظیم دقیق نظارت‌شده",
+   "kind": "model"
+  },
+  {
+   "slug": "rl",
+   "name_en": "RL",
+   "name_fa": "یادگیری تقویتی",
+   "kind": "model"
+  },
+  {
+   "slug": "cua",
+   "name_en": "Cua",
+   "name_fa": "کوا",
+   "kind": "company"
+  },
+  {
+   "slug": "cua-spaces-sdk",
+   "name_en": "Cua Spaces SDK",
+   "name_fa": "کیت توسعه فضاهای کوا",
+   "kind": "product"
+  },
+  {
+   "slug": "codecox",
+   "name_en": "CodeCox",
+   "name_fa": "کدکس",
+   "kind": "product"
+  },
+  {
+   "slug": "groq",
+   "name_en": "Groq",
+   "name_fa": "گراک",
+   "kind": "company"
+  },
+  {
+   "slug": "deepinfer",
+   "name_en": "DeepInfer",
+   "name_fa": "دیپ‌اینفر",
+   "kind": "product"
+  },
+  {
+   "slug": "orchestra-bio",
+   "name_en": "Orchestra Bio",
+   "name_fa": "اورکسترا بیو",
+   "kind": "company"
+  },
+  {
+   "slug": "rosalind",
+   "name_en": "Rosalind",
+   "name_fa": "راسالند",
+   "kind": "product"
+  },
+  {
+   "slug": "tuesday-labs",
+   "name_en": "Tuesday Labs",
+   "name_fa": "توئزدی لابس",
+   "kind": "company"
+  },
+  {
+   "slug": "voxel",
+   "name_en": "Voxel",
+   "name_fa": "واکسل",
+   "kind": "product"
+  },
+  {
+   "slug": "eric-nguyen",
+   "name_en": "Eric Nguyen",
+   "name_fa": "اریک نگوین",
+   "kind": "person"
+  },
+  {
+   "slug": "introducing-omnii-1",
+   "name_en": "Introducing Omnii-1",
+   "name_fa": "معرفی امینی-۱",
+   "kind": "product"
+  },
+  {
+   "slug": "radical-numerix",
+   "name_en": "Radical Numerix",
+   "name_fa": "ردیکال نیومریکس",
+   "kind": "company"
+  },
+  {
+   "slug": "imf",
+   "name_en": "IMF",
+   "name_fa": "صندوق بین‌المللی پول",
+   "kind": "company"
+  },
+  {
+   "slug": "global-economy",
+   "name_en": "Global Economy",
+   "name_fa": "اقتصاد جهانی",
+   "kind": "product"
+  },
+  {
+   "slug": "holon-s1",
+   "name_en": "Holon-S1",
+   "name_fa": "هولون-اس‌ای‌آی",
+   "kind": "model"
+  },
+  {
+   "slug": "tanishq-abraham",
+   "name_en": "Tanishq Abraham",
+   "name_fa": "تانیشک آبراهام",
+   "kind": "person"
+  },
+  {
+   "slug": "jim-fan",
+   "name_en": "Jim Fan",
+   "name_fa": "جیم فن",
+   "kind": "person"
+  },
+  {
+   "slug": "flora",
+   "name_en": "Flora",
+   "name_fa": "فلورا",
+   "kind": "model"
+  },
+  {
+   "slug": "artificial-societies",
+   "name_en": "Artificial Societies",
+   "name_fa": "جامعه‌های مصنوعی",
+   "kind": "product"
+  },
+  {
+   "slug": "geko-robotics",
+   "name_en": "Geko Robotics",
+   "name_fa": "گکو رباتیکس",
+   "kind": "company"
+  },
+  {
+   "slug": "us-navy",
+   "name_en": "U.S. Navy",
+   "name_fa": "نیروی دریایی آمریکا",
+   "kind": "company"
+  },
+  {
+   "slug": "rubin",
+   "name_en": "Rubin",
+   "name_fa": "ورا روبین",
+   "kind": "product"
+  },
+  {
+   "slug": "pranitha-pujari",
+   "name_en": "Pranitha Pujari",
+   "name_fa": "پرانیثا پوجاری",
+   "kind": "person"
+  },
+  {
+   "slug": "uniquehuman",
+   "name_en": "UniqueHuman",
+   "name_fa": "یونیک‌هیومن",
+   "kind": "product"
   }
  ]
 }
