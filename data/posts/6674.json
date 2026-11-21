@@ -1,0 +1,67 @@
+{
+ "id": 6674,
+ "url": "https://t.me/dlmehr/6674",
+ "date": "2026-11-21T17:12:15+00:00",
+ "text": "مدلی که می‌تونه فقط توی 78 میلی‌ثانیه، یه تصویر با ابعاد 512 × 512 پیکسل تولید کنه!\nیه مدل بینایی-زبانی (Vision-Language) که فریز شده (یعنی پارامترهاش در حین این فرایند تغییر نمی‌کنن)، کل تصویر 512 پیکسلی رو به‌عنوان یک تصمیم واحد و تنها در یک مرحله اجرای مدل (Forward Pass) تولید می‌کنه. Jeveration حالا مدل‌های نسل اول (System One) هم می‌تونن تصویر تولید کنن!\n\nتست آنلاین:\nhuggingface.co/spaces/linlinlinlinsdada/Jeveration\n\nسورس کد که دیروز منتشر شده:\ngithub.com/Carol-lyh/Jeveration\n\n@Linuxor (https://t.me/Linuxor)",
+ "forwarded_from": null,
+ "digest": false,
+ "hash": "3eda7c6f33f7",
+ "media": [
+  {
+   "type": "video",
+   "src": "https://cdn4.telesco.pe/file/50fdedb856.mp4?token=VHSzNlr5UQgHe7MrR0AZK6X5FOMUC0WZvv8fp9_uJr3_QvpdiuA5aUU5io4ojyrVXNwWmzyV2vUfkK-nVAeUe4dEue5Wb8iRN-b85l3wCHsxUYbR_dThekSsxoAEsYh2pW5hoa1CektIWAoQHyc5_zegRah_PdPKyETgMunj9qlMD0Fg7vGvSHvuX3darz8VkAhF6pLpcglk4Eet2qfj5dOKuL-UKdCI4fyauXMthxT5PLsvz4331ZxuZDGpUqpUpJ2srVZntGZGjNmCl6WmsqthGj2hY98kbD5gIw_GUdQELFwQbZJmJQpezsw1WQQ8uxrTAh2ppYO-GZDv1K9BBg",
+   "poster": "https://cdn4.telesco.pe/file/G31lci6B1vbF0Zm02mHB7FxovQ0Tifj37xtKWAdYztYXvNffLIfdQ0lUvN2hB2jYwfBmIBBizLtu6QtXAHZIyZk2_tBdqIJDejvjBBRsLReUbSR1O1MO5980wuRvPn7Qp2QldPKxIBWcZRZXw87dL_VlyRIArojuRBL6LbcAaIjtY6FucvdGvBEW4vJmd7RpyfxD2rdbNVslzYuKSNWamc1w6NcJCnBdXsoGvbncdAaSvrvgWeLOGUDmc9pl65eiHRM1Z_62s3appYxdJAnJP5KlqY8V-N2drolFEbdBD-4i_NgEhEqbHZSvPBkI0MgQB-teSW5Z87Ev_QD8-503yA",
+   "ratio": 0.5625,
+   "duration": "0:15"
+  }
+ ],
+ "preview": null,
+ "gholam": {
+  "text": "رفقا، یه پروژه جدید به اسم Jeveration معرفی شده که به گفته این پست، می‌تونه فقط توی ۷۸ میلی‌ثانیه یه تصویر ۵۱۲ در ۵۱۲ پیکسل بسازه. توی این روش، یه مدل بینایی-زبانی با پارامترهای ثابت (فریز شده) فقط با یک بار اجرا (Forward Pass)، کل تصویر رو به‌عنوان یه تصمیم واحد تحویل می‌ده؛ انگار نقاش بدون مکث و با یه حرکت قلم‌مو کل تابلو رو یک‌جا بکشه! ⚡\n\nنویسنده پست اشاره کرده که با این کار، مدل‌های System One هم دیگه می‌تونن تصویر تولید کنن. ضمناً نسخه تست آنلاینش روی هاگینگ‌فیس و سورس کدش هم (که به نقل از پست، دیروز روی گیت‌هاب گذاشته شده) برای امتحان کردن در دسترس هست.",
+  "date": "2026-11-21T17:12:32+00:00"
+ },
+ "links": [
+  {
+   "kind": "link",
+   "url": "https://huggingface.co/spaces/linlinlinlinsdada/Jeveration",
+   "domain": "huggingface.co",
+   "title": "Jeveration - a Hugging Face Space by linlinlinlinsdada",
+   "description": "Text-to-image, image-to-image, dense in one forward pass",
+   "image": "https://cdn-thumbnails.huggingface.co/social-thumbnails/spaces/linlinlinlinsdada/Jeveration.png",
+   "site": "huggingface.co"
+  },
+  {
+   "kind": "link",
+   "url": "https://github.com/Carol-lyh/Jeveration",
+   "domain": "github.com",
+   "title": "GitHub - Carol-lyh/Jeveration: [arXiv] Jeveration: System One Models Now Generate. https://arxiv.org/abs/2611.24738",
+   "description": "[arXiv] Jeveration: System One Models Now Generate. https://arxiv.org/abs/2611.24738 - Carol-lyh/Jeveration",
+   "image": "https://opengraph.githubassets.com/85b488503161a2eecfd1dbeb3aeb7fa66b4968a759eabe088268023bec1b35a6/Carol-lyh/Jeveration",
+   "site": "GitHub"
+  }
+ ],
+ "article": {
+  "title": "یه پروژه جدید به اسم Jeveration معرفی شده که به گفته این پست، می‌تونه فقط توی ۷۸ میلی‌ثانیه یه تصویر ۵۱۲ در ۵۱۲ پیکسل بسازه",
+  "source_title": "Jeveration - a Hugging Face Space by linlinlinlinsdada",
+  "body": [
+   "یه پروژه جدید به اسم Jeveration معرفی شده که به گفته این پست، می‌تونه فقط توی ۷۸ میلی‌ثانیه یه تصویر ۵۱۲ در ۵۱۲ پیکسل بسازه. توی این روش، یه مدل بینایی-زبانی با پارامترهای ثابت (فریز شده) فقط با یک بار اجرا (Forward Pass)، کل تصویر رو به‌عنوان یه تصمیم واحد تحویل می‌ده؛ انگار نقاش بدون مکث و با یه حرکت قلم‌مو کل تابلو رو یک‌جا بکشه! ⚡",
+   "نویسنده پست اشاره کرده که با این کار، مدل‌های System One هم دیگه می‌تونن تصویر تولید کنن. ضمناً نسخه تست آنلاینش روی هاگینگ‌فیس و سورس کدش هم (که به نقل از پست، دیروز روی گیت‌هاب گذاشته شده) برای امتحان کردن در دسترس هست."
+  ],
+  "why": null,
+  "tags": [
+   "متن‌باز"
+  ]
+ },
+ "updated": "2026-11-21T17:38:14+00:00",
+ "ai": {
+  "title": "پروژه Jeveration: تولید تصویر ۵۱۲ پیکسلی در ۷۸ میلی‌ثانیه با یک بار اجرا",
+  "short": "Jeveration: تصویر در ۷۸ میلی‌ثانیه",
+  "topics": [
+   "متن‌باز"
+  ],
+  "type": "ابزار و محصول",
+  "model": "qwen3.5-9b-q4_k_m",
+  "v": 2,
+  "src": "ad3a134a59bf"
+ }
+}

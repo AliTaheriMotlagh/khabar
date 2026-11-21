@@ -1,0 +1,100 @@
+{
+ "id": 6673,
+ "url": "https://t.me/dlmehr/6673",
+ "date": "2026-11-21T17:08:35+00:00",
+ "text": "https://fxtwitter.com/deedydas/status/2124174335212753208?a=qLEAtI9k1QxoUob73Uc&s=52",
+ "forwarded_from": null,
+ "digest": false,
+ "hash": "2ddb65ab8014",
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/deedydas/status/2124174335212753208?a=qLEAtI9k1QxoUob73Uc&s=52",
+  "site": "FxTwitter",
+  "title": "Deedy (@deedydas)",
+  "description": "“We have full confidence that Alpöge's proof of the Riemann Hypothesis is correct, and we congratulate him on this achievement.”\nThe Lean community has spoken. GRH has fallen. What a historic moment.\nFull read: https://math.mit.edu/~drew/grh/\nQuoting Lean…",
+  "image": "https://cdn4.telesco.pe/file/Obh3gVDnthDRzNYLgzLyboGqXefeHpqDVXBO58HL7AZMq1WwvyA39i8kZz6qwwXN2E1dE_M3mc9noZYr6SIUoouIk2Yp7O-GAYM60om0SXS6ckfovaqjx0GKMytSi-IkmY3xQxAkD_YDTkBwKju9Mueds_lt-3i0EkVG-HIPjzhwOt5YKib4obsLWV15Us2YRtcESADNadeBrQa0_Rctc-ftTRhhcd7LewgG86X3GF3dxLGAtBVi8jWvtTmNvki3cM-AfLY3mB9ZVp0OT_SeJUr2JTZE6kv-cu4iw3lNKXdgo6Fw79GxjCKkQNFiNiBfxZ1V77qV6hYWQBQLZp4FTA.jpg"
+ },
+ "gholam": {
+  "text": "رفقا، توی دنیای ریاضی یه خبر حسابی سر و صدا کرده! 📐 کاربر deedydas با بازنشر بیانیهٔ مشترک Lean FRO و Mathlib Initiative نوشته جامعهٔ Lean اثبات جدیدی برای فرضیهٔ ریمان (و شکل تعمیم‌یافته‌ش یعنی GRH) رو تأیید کرده و از این اتفاق به عنوان یه لحظهٔ تاریخی یاد کرده. ماجرا از این قراره که لونت آلپوگه روز ۲۰ نوامبر ۲۰۲۶ یه پروژهٔ ۱۷ میلیون خطی به زبان Lean منتشر کرده و جامعهٔ Lean و Mathlib هم بعد از حدود یک روز بررسی، کدها رو حسابی انداختن زیر ذره‌بین تا مطمئن شن مو لای درزش نمی‌ره.\n\n• بر اساس بیانیهٔ مشترک Lean FRO و Mathlib، این کتابخانه بدون خطا کامپایل می‌شه، دقیقاً همون صورت استاندارد فرضیهٔ ریمان در Mathlib رو ثابت می‌کنه و خروجی خامش از فیلتر چند بررسی‌کنندهٔ مستقل مثل con-leche، con-ron و هستهٔ رسمی Lean هم رد شده.\n• صفحهٔ گزارش‌های راستی‌آزمایی اندرو ساترلند (از دانشگاه MIT) نشون می‌ده هر ۱۷۵ هزار و ۱۸۷ ماژول این کد فقط به سه اصل بدیهی استاندارد تکیه دارن و ابزارهای مستقلی مثل nanoda و lean4lean پذیرفتنش؛ البته تا زمان آخرین به‌روزرسانی اون صفحه، هنوز یکی دو اجرای سنگین و تک‌رشته‌ای روی خروجی حدود ۶۱ میلیارد بایتیِ این اثبات در حال انجام بود.\n• ساترلند در عین حال یادآوری کرده که «GRH» در این بررسی فقط شامل توابع L دیریکله می‌شه و صورت‌های کلی‌تر مثل توابع زتای ددکیند یا توابع L هکه و اتومورفیک جزو موارد چک‌شده نیستن.\n\nحالا هم به گفتهٔ خود بیانیهٔ مشترک، همه منتظرن ببینن جامعهٔ ریاضی چطور ایده‌های تازهٔ پشت این اثبات غول‌پیکر رو رمزگشایی و تشریح می‌کنه.",
+  "date": "2026-11-21T17:09:08+00:00"
+ },
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/deedydas/status/2124174335212753208",
+   "domain": "x.com",
+   "author": {
+    "name": "Deedy",
+    "handle": "deedydas",
+    "avatar": "https://pbs.twimg.com/profile_images/2016718977960120320/a3F0LOz6_200x200.jpg"
+   },
+   "text": "“We have full confidence that Alpöge's proof of the Riemann Hypothesis is correct, and we congratulate him on this achievement.”\n\nThe Lean community has spoken. GRH has fallen. What a historic moment.\n\nFull read: https://math.mit.edu/~drew/grh/",
+   "date": 1795277601,
+   "media": [
+    {
+     "type": "image",
+     "src": "https://pbs.twimg.com/media/HXqVTP-aYAATUyu.jpg?name=orig",
+     "ratio": 1.9505
+    }
+   ],
+   "links": [
+    "https://math.mit.edu/~drew/grh/"
+   ],
+   "quote": {
+    "author": {
+     "name": "Lean",
+     "handle": "leanprover",
+     "avatar": "https://pbs.twimg.com/profile_images/1942426928256012288/RoZg5VMG_200x200.png"
+    },
+    "text": "The Lean FRO and Mathlib Initiative have released a joint statement on the Lean verification of the Riemann Hypothesis.\n\nOn November 20, Levent Alpöge released a proof of the Riemann Hypothesis as a Lean library of 17 million lines of code. Over the past day, the Lean and Mathlib communities worked together to verify it. The statement certifies the proof as correct and describes how it meets all necessary verification criteria.\n\nCongratulations to Levent on this achievement, and thank you to everyone in the community who contributed to the verification.\n\nFull statement: https://leanprover-community.github.io/blog/posts/riemann-hypothesis/",
+    "date": 1795273974,
+    "media": [
+     {
+      "type": "image",
+      "src": "https://pbs.twimg.com/media/HXqGwBnaUAA8Pvd.png?name=orig",
+      "ratio": 0.5625
+     }
+    ],
+    "links": [
+     "https://leanprover-community.github.io/blog/posts/riemann-hypothesis/"
+    ]
+   }
+  },
+  {
+   "kind": "link",
+   "url": "https://math.mit.edu/~drew/grh/",
+   "domain": "math.mit.edu",
+   "title": "RH Lean proof: verification files",
+   "description": null,
+   "image": null,
+   "site": "math.mit.edu"
+  }
+ ],
+ "article": {
+  "title": "توی دنیای ریاضی یه خبر حسابی سر و صدا کرده",
+  "source_title": "“We have full confidence that Alpöge's proof of the Riemann Hypothesis is correct, and we congratulate him on this achievement.”",
+  "body": [
+   "توی دنیای ریاضی یه خبر حسابی سر و صدا کرده! 📐 کاربر deedydas با بازنشر بیانیهٔ مشترک Lean FRO و Mathlib Initiative نوشته جامعهٔ Lean اثبات جدیدی برای فرضیهٔ ریمان (و شکل تعمیم‌یافته‌ش یعنی GRH) رو تأیید کرده و از این اتفاق به عنوان یه لحظهٔ تاریخی یاد کرده. ماجرا از این قراره که لونت آلپوگه روز ۲۰ نوامبر ۲۰۲۶ یه پروژهٔ ۱۷ میلیون خطی به زبان Lean منتشر کرده و جامعهٔ Lean و Mathlib هم بعد از حدود یک روز بررسی، کدها رو حسابی انداختن زیر ذره‌بین تا مطمئن شن مو لای درزش نمی‌ره.",
+   "• بر اساس بیانیهٔ مشترک Lean FRO و Mathlib، این کتابخانه بدون خطا کامپایل می‌شه، دقیقاً همون صورت استاندارد فرضیهٔ ریمان در Mathlib رو ثابت می‌کنه و خروجی خامش از فیلتر چند بررسی‌کنندهٔ مستقل مثل con-leche، con-ron و هستهٔ رسمی Lean هم رد شده.",
+   "• صفحهٔ گزارش‌های راستی‌آزمایی اندرو ساترلند (از دانشگاه MIT) نشون می‌ده هر ۱۷۵ هزار و ۱۸۷ ماژول این کد فقط به سه اصل بدیهی استاندارد تکیه دارن و ابزارهای مستقلی مثل nanoda و lean4lean پذیرفتنش؛ البته تا زمان آخرین به‌روزرسانی اون صفحه، هنوز یکی دو اجرای سنگین و تک‌رشته‌ای روی خروجی حدود ۶۱ میلیارد بایتیِ این اثبات در حال انجام بود.",
+   "• ساترلند در عین حال یادآوری کرده که «GRH» در این بررسی فقط شامل توابع L دیریکله می‌شه و صورت‌های کلی‌تر مثل توابع زتای ددکیند یا توابع L هکه و اتومورفیک جزو موارد چک‌شده نیستن."
+  ],
+  "why": "حالا هم به گفتهٔ خود بیانیهٔ مشترک، همه منتظرن ببینن جامعهٔ ریاضی چطور ایده‌های تازهٔ پشت این اثبات غول‌پیکر رو رمزگشایی و تشریح می‌کنه.",
+  "why_label": "حرف آخر",
+  "tags": [
+   "علم"
+  ]
+ },
+ "updated": "2026-11-21T17:38:14+00:00",
+ "ai": {
+  "title": "اثبات فرضیه ریمان توسط آلپوگه تایید شد: ۱۷ میلیون خط کد Lean",
+  "short": "اثبات فرضیه ریمان تایید شد",
+  "topics": [
+   "علم"
+  ],
+  "type": "پژوهش و مقاله",
+  "model": "qwen3.5-9b-q4_k_m",
+  "v": 2,
+  "src": "1c0c02bb02f4"
+ }
+}
