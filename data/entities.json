@@ -6107,6 +6107,120 @@
    "name_en": "Hiku 5.5",
    "name_fa": "هایکو ۵.۵",
    "kind": "model"
+  },
+  {
+   "slug": "andrew-dai",
+   "name_en": "Andrew Dai",
+   "name_fa": "اندرو دای",
+   "kind": "person"
+  },
+  {
+   "slug": "glimpse",
+   "name_en": "Glimpse",
+   "name_fa": "گلیمز",
+   "kind": "model"
+  },
+  {
+   "slug": "aspire",
+   "name_en": "ASPIRE",
+   "name_fa": "اسپایر",
+   "kind": "product"
+  },
+  {
+   "slug": "asus-rog-astral-rtx-5090",
+   "name_en": "ASUS ROG Astral RTX 5090",
+   "name_fa": "ایسوس راج استرال اچ‌آر‌تی‌اکس ۵۰۹۰",
+   "kind": "product"
+  },
+  {
+   "slug": "ryan-krishnan",
+   "name_en": "Ryan Krishnan",
+   "name_fa": "رایان کریشنان",
+   "kind": "person"
+  },
+  {
+   "slug": "grant-sanderson",
+   "name_en": "Grant Sanderson",
+   "name_fa": "گرنت سندرسون",
+   "kind": "person"
+  },
+  {
+   "slug": "three-blue-one-brown",
+   "name_en": "Three Blue One Brown",
+   "name_fa": "تری‌بلو‌وان‌براون",
+   "kind": "company"
+  },
+  {
+   "slug": "google-tpu",
+   "name_en": "Google TPU",
+   "name_fa": "TPU گوگل",
+   "kind": "product"
+  },
+  {
+   "slug": "gtc-berlin",
+   "name_en": "GTC Berlin",
+   "name_fa": "GTC برلین",
+   "kind": "product"
+  },
+  {
+   "slug": "dynamic-creatures",
+   "name_en": "Dynamic Creatures",
+   "name_fa": "داینامیک کریچرز",
+   "kind": "company"
+  },
+  {
+   "slug": "hugo",
+   "name_en": "Hugo",
+   "name_fa": "هوگو",
+   "kind": "product"
+  },
+  {
+   "slug": "farhad-farsidian",
+   "name_en": "Farhad Farsidian",
+   "name_fa": "فربد فرشیدیان",
+   "kind": "person"
+  },
+  {
+   "slug": "satya-nadella",
+   "name_en": "Satya Nadella",
+   "name_fa": "ساتیا نادلا",
+   "kind": "person"
+  },
+  {
+   "slug": "terminal-rsi",
+   "name_en": "Terminal-RSI",
+   "name_fa": "ترمینال-آر‌اس‌آی",
+   "kind": "model"
+  },
+  {
+   "slug": "yucheng-shi",
+   "name_en": "Yucheng Shi",
+   "name_fa": "یوچنگ شی",
+   "kind": "person"
+  },
+  {
+   "slug": "hermes",
+   "name_en": "Hermes",
+   "name_fa": "هارنس",
+   "kind": "product"
+  },
+  {
+   "slug": "deepseek-41-1017",
+   "name_en": "DeepSeek 4.1-1017",
+   "name_fa": "دیپ‌سیک ۴.۱-۱۰۱۷",
+   "kind": "model"
+  },
+  {
+   "slug": "boltnew",
+   "name_en": "Bolt.new",
+   "name_fa": "بولت نیو",
+   "kind": "product"
+  },
+  {
+   "slug": "azalia-mirhosseini",
+   "name_en": "Azalia Mirhosseini",
+   "name_fa": "آزالیا میرحسینی",
+   "kind": "person"
   }
  ]
 }
