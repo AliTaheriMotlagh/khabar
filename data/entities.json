@@ -5201,6 +5201,108 @@
    "name_en": "Behnam Nishabour",
    "name_fa": "بهنام نیشابور",
    "kind": "person"
+  },
+  {
+   "slug": "mirandil",
+   "name_en": "Mirandil",
+   "name_fa": "میراندیل",
+   "kind": "company"
+  },
+  {
+   "slug": "ali-hatamizadeh",
+   "name_en": "Ali Hatamizadeh",
+   "name_fa": "علی حاتمی‌زاده",
+   "kind": "person"
+  },
+  {
+   "slug": "calle",
+   "name_en": "Calle",
+   "name_fa": "کاله",
+   "kind": "person"
+  },
+  {
+   "slug": "cashu",
+   "name_en": "Cashu",
+   "name_fa": "کشو",
+   "kind": "product"
+  },
+  {
+   "slug": "java",
+   "name_en": "Java",
+   "name_fa": "جاوا",
+   "kind": "product"
+  },
+  {
+   "slug": "graalvm",
+   "name_en": "GraalVM",
+   "name_fa": "گراول‌وی‌ام",
+   "kind": "product"
+  },
+  {
+   "slug": "cve-2026-91403",
+   "name_en": "CVE-2026-91403",
+   "name_fa": "سی‌وی‌ای-۲۰۲۶-۹۱۴۰۳",
+   "kind": "product"
+  },
+  {
+   "slug": "2fa",
+   "name_en": "2FA",
+   "name_fa": "تایید دو مرحله‌ای",
+   "kind": "product"
+  },
+  {
+   "slug": "jason-clinton",
+   "name_en": "Jason Clinton",
+   "name_fa": "جیسون کلینتون",
+   "kind": "person"
+  },
+  {
+   "slug": "cybersecurity",
+   "name_en": "Cybersecurity",
+   "name_fa": "امنیت سایبری",
+   "kind": "product"
+  },
+  {
+   "slug": "matt-suumer",
+   "name_en": "Matt Suumer",
+   "name_fa": "مت شومر",
+   "kind": "person"
+  },
+  {
+   "slug": "php",
+   "name_en": "PHP",
+   "name_fa": "پی‌اچ‌پی",
+   "kind": "product"
+  },
+  {
+   "slug": "madpot",
+   "name_en": "MadPot",
+   "name_fa": "مدپات",
+   "kind": "product"
+  },
+  {
+   "slug": "matthew-prince",
+   "name_en": "Matthew Prince",
+   "name_fa": "متیو پرینس",
+   "kind": "person"
+  },
+  {
+   "slug": "guest-researcher-program",
+   "name_en": "Guest Researcher Program",
+   "name_fa": "برنامه محقق مهمان",
+   "kind": "product"
+  },
+  {
+   "slug": "aisecurityinst",
+   "name_en": "AISecurityInst",
+   "name_fa": "آی‌اس‌آی‌سیوریتی‌اینست",
+   "kind": "company"
+  },
+  {
+   "slug": "dean-w-ball",
+   "name_en": "Dean W. Ball",
+   "name_fa": "دین بال",
+   "kind": "person"
   }
  ]
 }
