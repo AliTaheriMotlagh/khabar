@@ -5303,6 +5303,150 @@
    "name_en": "Dean W. Ball",
    "name_fa": "دین بال",
    "kind": "person"
+  },
+  {
+   "slug": "san-francisco",
+   "name_en": "San Francisco",
+   "name_fa": "سان‌فرانسیسکو",
+   "kind": "company"
+  },
+  {
+   "slug": "hermes-agent",
+   "name_en": "Hermes Agent",
+   "name_fa": "ایجنت هرمس",
+   "kind": "product"
+  },
+  {
+   "slug": "neutron",
+   "name_en": "Neutron",
+   "name_fa": "نموترون",
+   "kind": "model"
+  },
+  {
+   "slug": "us-banks",
+   "name_en": "U.S. banks",
+   "name_fa": "بانک‌های آمریکا",
+   "kind": "company"
+  },
+  {
+   "slug": "warp-sciences",
+   "name_en": "Warp Sciences",
+   "name_fa": "وارپ ساینسز",
+   "kind": "company"
+  },
+  {
+   "slug": "lightspeed-venture-partners",
+   "name_en": "LightSpeed Venture Partners",
+   "name_fa": "لایت‌اسپید ونچر پارتنرز",
+   "kind": "company"
+  },
+  {
+   "slug": "kevin-weil",
+   "name_en": "Kevin Weil",
+   "name_fa": "کوین ویل",
+   "kind": "person"
+  },
+  {
+   "slug": "carbon-x",
+   "name_en": "Carbon-X",
+   "name_fa": "کربن-ایکس",
+   "kind": "model"
+  },
+  {
+   "slug": "qwen3-14b",
+   "name_en": "Qwen3-14B",
+   "name_fa": "کوئن ۳-۱۴ بیلیون",
+   "kind": "model"
+  },
+  {
+   "slug": "claude-security",
+   "name_en": "Claude Security",
+   "name_fa": "کلود سیکیوریتی",
+   "kind": "product"
+  },
+  {
+   "slug": "claude-enterprise",
+   "name_en": "Claude Enterprise",
+   "name_fa": "کلود انترپرایز",
+   "kind": "product"
+  },
+  {
+   "slug": "science",
+   "name_en": "Science",
+   "name_fa": "ساینس",
+   "kind": "company"
+  },
+  {
+   "slug": "cambridge-university",
+   "name_en": "Cambridge University",
+   "name_fa": "دانشگاه کمبریج",
+   "kind": "company"
+  },
+  {
+   "slug": "busy-beaver",
+   "name_en": "Busy Beaver",
+   "name_fa": "سگ‌جان",
+   "kind": "model"
+  },
+  {
+   "slug": "quest-diagnostics",
+   "name_en": "Quest Diagnostics",
+   "name_fa": "کوئست دایگنوستیکس",
+   "kind": "company"
+  },
+  {
+   "slug": "palmer-luckey",
+   "name_en": "Palmer Luckey",
+   "name_fa": "پالمر لاکی",
+   "kind": "person"
+  },
+  {
+   "slug": "ben-lamm",
+   "name_en": "Ben Lamm",
+   "name_fa": "بن لم",
+   "kind": "person"
+  },
+  {
+   "slug": "warhound",
+   "name_en": "Warhound",
+   "name_fa": "وارهاند",
+   "kind": "company"
+  },
+  {
+   "slug": "techcrunch",
+   "name_en": "TechCrunch",
+   "name_fa": "تک‌کرانچ",
+   "kind": "company"
+  },
+  {
+   "slug": "ai-models",
+   "name_en": "AI models",
+   "name_fa": "مدل‌های هوش مصنوعی",
+   "kind": "product"
+  },
+  {
+   "slug": "warpsciences",
+   "name_en": "Warpsciences",
+   "name_fa": "وارپ ساینسز",
+   "kind": "company"
+  },
+  {
+   "slug": "barclays",
+   "name_en": "Barclays",
+   "name_fa": "بارکلیز",
+   "kind": "company"
+  },
+  {
+   "slug": "hsbc",
+   "name_en": "HSBC",
+   "name_fa": "اچ‌اس‌بی‌سی",
+   "kind": "company"
+  },
+  {
+   "slug": "standard-chartered",
+   "name_en": "Standard Chartered",
+   "name_fa": "استاندارد چارترد",
+   "kind": "company"
   }
  ]
 }
