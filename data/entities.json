@@ -5975,6 +5975,138 @@
    "name_en": "TorchNeuron",
    "name_fa": "تورچ‌نورون",
    "kind": "product"
+  },
+  {
+   "slug": "andrew-courville",
+   "name_en": "Andrew Courville",
+   "name_fa": "اندرو کورویل",
+   "kind": "person"
+  },
+  {
+   "slug": "fortune",
+   "name_en": "Fortune",
+   "name_fa": "فورچون",
+   "kind": "company"
+  },
+  {
+   "slug": "jpmorgan",
+   "name_en": "JPMorgan",
+   "name_fa": "جی‌پی مورگان",
+   "kind": "company"
+  },
+  {
+   "slug": "delta-air-lines",
+   "name_en": "Delta Air Lines",
+   "name_fa": "خط هوایی دلتا",
+   "kind": "company"
+  },
+  {
+   "slug": "yelp",
+   "name_en": "Yelp",
+   "name_fa": "یلپ",
+   "kind": "company"
+  },
+  {
+   "slug": "mac-studio-m5-ultra",
+   "name_en": "Mac Studio M5 Ultra",
+   "name_fa": "مک استودیو M5 Ultra",
+   "kind": "product"
+  },
+  {
+   "slug": "anthropic-public-benefit-fund",
+   "name_en": "Anthropic Public Benefit Fund",
+   "name_fa": "صندوق عام‌المنفعه آنتروپیک",
+   "kind": "product"
+  },
+  {
+   "slug": "yann-lecun",
+   "name_en": "Yann LeCun",
+   "name_fa": "یان لکان",
+   "kind": "person"
+  },
+  {
+   "slug": "vjncapital",
+   "name_en": "VJNCapital",
+   "name_fa": "وی‌ان‌سیپیتال",
+   "kind": "company"
+  },
+  {
+   "slug": "reflection",
+   "name_en": "Reflection",
+   "name_fa": "رفلیکشن",
+   "kind": "company"
+  },
+  {
+   "slug": "beam",
+   "name_en": "Beam",
+   "name_fa": "بیام",
+   "kind": "model"
+  },
+  {
+   "slug": "m31-flash",
+   "name_en": "M3.1 Flash",
+   "name_fa": "ام‌۳.۱ فلاش",
+   "kind": "model"
+  },
+  {
+   "slug": "vera",
+   "name_en": "Vera",
+   "name_fa": "ورا",
+   "kind": "product"
+  },
+  {
+   "slug": "semianalysis",
+   "name_en": "SemiAnalysis",
+   "name_fa": "سمی‌آنالیسیس",
+   "kind": "company"
+  },
+  {
+   "slug": "inferact",
+   "name_en": "Inferact",
+   "name_fa": "اینفراکت",
+   "kind": "company"
+  },
+  {
+   "slug": "samadi-pour",
+   "name_en": "Samadi-Pour",
+   "name_fa": "صمدی‌پور",
+   "kind": "person"
+  },
+  {
+   "slug": "boltz",
+   "name_en": "Boltz",
+   "name_fa": "بولتز",
+   "kind": "company"
+  },
+  {
+   "slug": "foresight",
+   "name_en": "Foresight",
+   "name_fa": "فورسایت",
+   "kind": "company"
+  },
+  {
+   "slug": "stefano-ermon",
+   "name_en": "Stefano Ermon",
+   "name_fa": "استفانو ارمون",
+   "kind": "person"
+  },
+  {
+   "slug": "mercury-3",
+   "name_en": "Mercury 3",
+   "name_fa": "مرکوری ۳",
+   "kind": "model"
+  },
+  {
+   "slug": "gpt-6-luna",
+   "name_en": "GPT-6 Luna",
+   "name_fa": "جی‌پی‌تی-۶ لونا",
+   "kind": "model"
+  },
+  {
+   "slug": "hiku-55",
+   "name_en": "Hiku 5.5",
+   "name_fa": "هایکو ۵.۵",
+   "kind": "model"
   }
  ]
 }
