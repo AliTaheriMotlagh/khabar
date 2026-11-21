@@ -4451,6 +4451,174 @@
    "name_en": "Sam Parrish",
    "name_fa": "سم پار",
    "kind": "person"
+  },
+  {
+   "slug": "parallel-web-systems",
+   "name_en": "Parallel Web Systems",
+   "name_fa": "پارالال وب سیستمز",
+   "kind": "company"
+  },
+  {
+   "slug": "parallel-decisions-api",
+   "name_en": "Parallel Decisions API",
+   "name_fa": "پارالال دسیژنز API",
+   "kind": "product"
+  },
+  {
+   "slug": "federal-election-commission",
+   "name_en": "Federal Election Commission",
+   "name_fa": "کمیسیون فدرال انتخابات آمریکا",
+   "kind": "company"
+  },
+  {
+   "slug": "alexander-holinsky",
+   "name_en": "Alexander Holinsky",
+   "name_fa": "الکساندر هولینسکی",
+   "kind": "person"
+  },
+  {
+   "slug": "mithril-medicine",
+   "name_en": "Mithril Medicine",
+   "name_fa": "میثریل مدیسین",
+   "kind": "company"
+  },
+  {
+   "slug": "gpt-61-soul",
+   "name_en": "GPT-6.1 Soul",
+   "name_fa": "جی‌پی‌تی ۶.۱ سول",
+   "kind": "model"
+  },
+  {
+   "slug": "artificial-analysis",
+   "name_en": "Artificial Analysis",
+   "name_fa": "آرتیفیشل آنالیز",
+   "kind": "company"
+  },
+  {
+   "slug": "samuel-albanie",
+   "name_en": "Samuel Albanie",
+   "name_fa": "ساموئل آلبانی",
+   "kind": "person"
+  },
+  {
+   "slug": "epoch-ai",
+   "name_en": "Epoch AI",
+   "name_fa": "اپوک ای‌آی",
+   "kind": "company"
+  },
+  {
+   "slug": "dex",
+   "name_en": "Dex",
+   "name_fa": "دَکس",
+   "kind": "person"
+  },
+  {
+   "slug": "diffuspace",
+   "name_en": "DiffuSpace",
+   "name_fa": "دی‌فی‌اسپیس",
+   "kind": "company"
+  },
+  {
+   "slug": "clover-35b",
+   "name_en": "Clover-35B",
+   "name_fa": "کلور-۳۵ بی",
+   "kind": "model"
+  },
+  {
+   "slug": "ben-liu",
+   "name_en": "Ben Liu",
+   "name_fa": "بن لیو",
+   "kind": "person"
+  },
+  {
+   "slug": "formation-bio",
+   "name_en": "Formation Bio",
+   "name_fa": "فورمیشن بایو",
+   "kind": "company"
+  },
+  {
+   "slug": "formation-bio-drug-development-accelerator-fund",
+   "name_en": "Formation Bio Drug Development Accelerator Fund",
+   "name_fa": "صندوق تسریع توسعه دارو فورمیشن بایو",
+   "kind": "product"
+  },
+  {
+   "slug": "stack-overflow",
+   "name_en": "Stack Overflow",
+   "name_fa": "استک اورفلو",
+   "kind": "product"
+  },
+  {
+   "slug": "daniel-lacour",
+   "name_en": "Daniel Lacour",
+   "name_fa": "دانیل لاکور",
+   "kind": "person"
+  },
+  {
+   "slug": "lucas-martinik",
+   "name_en": "Lucas Martinik",
+   "name_fa": "لوکاس مارتینیک",
+   "kind": "person"
+  },
+  {
+   "slug": "super-mario-64",
+   "name_en": "Super Mario 64",
+   "name_fa": "سوپر ماریو ۶۴",
+   "kind": "product"
+  },
+  {
+   "slug": "dalet-labs",
+   "name_en": "Dalet Labs",
+   "name_fa": "دالت لبز",
+   "kind": "company"
+  },
+  {
+   "slug": "lightspeed",
+   "name_en": "Lightspeed",
+   "name_fa": "لایت‌اسپید",
+   "kind": "company"
+  },
+  {
+   "slug": "nemotron-35-transcribe",
+   "name_en": "Nemotron 3.5 Transcribe",
+   "name_fa": "نموترون ۳.۵ ترنسکرایب",
+   "kind": "model"
+  },
+  {
+   "slug": "assemblyai",
+   "name_en": "AssemblyAI",
+   "name_fa": "اسمبلی‌ای‌آی",
+   "kind": "company"
+  },
+  {
+   "slug": "assemblyai-tts-1",
+   "name_en": "AssemblyAI-TTS-1",
+   "name_fa": "اسمبلی‌ای‌آی-تی‌تی‌اس-۱",
+   "kind": "product"
+  },
+  {
+   "slug": "sony",
+   "name_en": "Sony",
+   "name_fa": "سونی",
+   "kind": "company"
+  },
+  {
+   "slug": "animates",
+   "name_en": "Animates",
+   "name_fa": "آنی‌میتس",
+   "kind": "product"
+  },
+  {
+   "slug": "sony-xyn",
+   "name_en": "Sony XYN",
+   "name_fa": "سونی ایکس‌ای‌ان",
+   "kind": "product"
+  },
+  {
+   "slug": "intelligence-index",
+   "name_en": "Intelligence Index",
+   "name_fa": "اینتلیجنس ایندکس",
+   "kind": "product"
   }
  ]
 }
