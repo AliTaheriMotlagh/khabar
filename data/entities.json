@@ -8651,6 +8651,90 @@
    "name_en": "Kimi",
    "name_fa": "کیمی",
    "kind": "model"
+  },
+  {
+   "slug": "wondersearch",
+   "name_en": "WonderSearch",
+   "name_fa": "وندر سرچ",
+   "kind": "product"
+  },
+  {
+   "slug": "phd",
+   "name_en": "PhD",
+   "name_fa": "دکتری",
+   "kind": "product"
+  },
+  {
+   "slug": "david-george",
+   "name_en": "David George",
+   "name_fa": "دیوید جورج",
+   "kind": "person"
+  },
+  {
+   "slug": "fei-fei-li",
+   "name_en": "Fei-Fei Li",
+   "name_fa": "فی‌فی لی",
+   "kind": "person"
+  },
+  {
+   "slug": "peter-steinberger",
+   "name_en": "Peter Steinberger",
+   "name_fa": "پیتر استینبرگر",
+   "kind": "person"
+  },
+  {
+   "slug": "aeon",
+   "name_en": "Aeon",
+   "name_fa": "ایئون",
+   "kind": "product"
+  },
+  {
+   "slug": "tumbler-ridge",
+   "name_en": "Tumbler Ridge",
+   "name_fa": "تامبلر ریج",
+   "kind": "person"
+  },
+  {
+   "slug": "jesse-van-rutselaar",
+   "name_en": "Jesse Van Rutselaar",
+   "name_fa": "جسی ون‌روتسلار",
+   "kind": "person"
+  },
+  {
+   "slug": "british-columbia",
+   "name_en": "British Columbia",
+   "name_fa": "بریتیش کلمبیا",
+   "kind": "company"
+  },
+  {
+   "slug": "michael-miniano",
+   "name_en": "Michael Miniano",
+   "name_fa": "مایکل مینیانو",
+   "kind": "person"
+  },
+  {
+   "slug": "supertake",
+   "name_en": "Supertake",
+   "name_fa": "سوپرتیک",
+   "kind": "product"
+  },
+  {
+   "slug": "cme-295",
+   "name_en": "CME 295",
+   "name_fa": "دوره CME 295",
+   "kind": "product"
+  },
+  {
+   "slug": "afshin-emami",
+   "name_en": "Afshin Emami",
+   "name_fa": "افشین عمیدی",
+   "kind": "person"
+  },
+  {
+   "slug": "flourish-1",
+   "name_en": "Flourish 1",
+   "name_fa": "فلوریش وان",
+   "kind": "product"
   }
  ]
 }
