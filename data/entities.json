@@ -10211,6 +10211,192 @@
    "name_en": "Pentagraph",
    "name_fa": "پنتوگراف",
    "kind": "company"
+  },
+  {
+   "slug": "rubygems",
+   "name_en": "RubyGems",
+   "name_fa": "روبی‌جمز",
+   "kind": "product"
+  },
+  {
+   "slug": "kai-fu-lee",
+   "name_en": "Kai-Fu Lee",
+   "name_fa": "کای‌فو لی",
+   "kind": "person"
+  },
+  {
+   "slug": "tom-wolf",
+   "name_en": "Tom Wolf",
+   "name_fa": "تام ولف",
+   "kind": "person"
+  },
+  {
+   "slug": "speculative-decoding",
+   "name_en": "Speculative Decoding",
+   "name_fa": "دکدینگ حدسی",
+   "kind": "model"
+  },
+  {
+   "slug": "anvar-solmaz",
+   "name_en": "Anvar Solmaz",
+   "name_fa": "اونور سولماز",
+   "kind": "person"
+  },
+  {
+   "slug": "sakana-ai",
+   "name_en": "Sakana AI",
+   "name_fa": "ساکانا ای‌آی",
+   "kind": "company"
+  },
+  {
+   "slug": "pc-alm",
+   "name_en": "PC-ALM",
+   "name_fa": "پی‌سی‌ال‌ام",
+   "kind": "model"
+  },
+  {
+   "slug": "atria-asi",
+   "name_en": "Atria ASI",
+   "name_fa": "آتری‌ای‌اس‌آی",
+   "kind": "company"
+  },
+  {
+   "slug": "atria-dawn-preview",
+   "name_en": "Atria Dawn Preview",
+   "name_fa": "آتری‌داون پریویو",
+   "kind": "model"
+  },
+  {
+   "slug": "musespark-13",
+   "name_en": "Musespark-1.3",
+   "name_fa": "موساسپارک-۱-۳",
+   "kind": "model"
+  },
+  {
+   "slug": "siri-ai",
+   "name_en": "Siri AI",
+   "name_fa": "سیری AI",
+   "kind": "product"
+  },
+  {
+   "slug": "apple-intelligence",
+   "name_en": "Apple Intelligence",
+   "name_fa": "هوش مصنوعی اپل",
+   "kind": "model"
+  },
+  {
+   "slug": "cognichip",
+   "name_en": "Cognichip",
+   "name_fa": "کونیچیپ",
+   "kind": "company"
+  },
+  {
+   "slug": "aci-enterprise",
+   "name_en": "ACI Enterprise",
+   "name_fa": "اسی ای انترپرایز",
+   "kind": "product"
+  },
+  {
+   "slug": "renesas",
+   "name_en": "Renesas",
+   "name_fa": "رنیساس",
+   "kind": "company"
+  },
+  {
+   "slug": "sitime",
+   "name_en": "SiTime",
+   "name_fa": "سایتایم",
+   "kind": "company"
+  },
+  {
+   "slug": "all-in-summit",
+   "name_en": "All In Summit",
+   "name_fa": "اجلاس آل‌این",
+   "kind": "product"
+  },
+  {
+   "slug": "bilal",
+   "name_en": "Bilal",
+   "name_fa": "بلال",
+   "kind": "person"
+  },
+  {
+   "slug": "dan-selsam",
+   "name_en": "Dan Selsam",
+   "name_fa": "دان سلسام",
+   "kind": "person"
+  },
+  {
+   "slug": "david-chalmers",
+   "name_en": "David Chalmers",
+   "name_fa": "دیوید چالمرز",
+   "kind": "person"
+  },
+  {
+   "slug": "lateline",
+   "name_en": "Lateline",
+   "name_fa": "لیت‌لاین",
+   "kind": "product"
+  },
+  {
+   "slug": "harvey-lederman",
+   "name_en": "Harvey Lederman",
+   "name_fa": "هاروی لدرمن",
+   "kind": "person"
+  },
+  {
+   "slug": "jonathan-bail",
+   "name_en": "Jonathan Bail",
+   "name_fa": "جاناتان بای",
+   "kind": "person"
+  },
+  {
+   "slug": "nbc",
+   "name_en": "NBC",
+   "name_fa": "شبکه ان‌بی‌سی",
+   "kind": "company"
+  },
+  {
+   "slug": "zuckerberg",
+   "name_en": "Zuckerberg",
+   "name_fa": "زاکربرگ",
+   "kind": "person"
+  },
+  {
+   "slug": "flam",
+   "name_en": "Flam",
+   "name_fa": "فلام",
+   "kind": "company"
+  },
+  {
+   "slug": "rafael-iriziky",
+   "name_en": "Rafael Iriziky",
+   "name_fa": "رافائل ایزبیکی",
+   "kind": "person"
+  },
+  {
+   "slug": "arxiv",
+   "name_en": "arXiv",
+   "name_fa": "آرکایو",
+   "kind": "product"
+  },
+  {
+   "slug": "gemini-38-live",
+   "name_en": "Gemini 3.8 Live",
+   "name_fa": "جمینای ۳.۸ لایو",
+   "kind": "model"
+  },
+  {
+   "slug": "gemini-38-extended-thinking",
+   "name_en": "Gemini 3.8 Extended Thinking",
+   "name_fa": "جمینای ۳.۸ تفکر عمیق",
+   "kind": "model"
+  },
+  {
+   "slug": "wajo",
+   "name_en": "Wajo",
+   "name_fa": "واجو",
+   "kind": "company"
   }
  ]
 }
