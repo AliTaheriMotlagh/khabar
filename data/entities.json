@@ -7535,6 +7535,96 @@
    "name_en": "Jon Stewart",
    "name_fa": "جان استوارت",
    "kind": "person"
+  },
+  {
+   "slug": "antonio-orvieto",
+   "name_en": "Antonio Orvieto",
+   "name_fa": "آنتونیو اورویِتو",
+   "kind": "person"
+  },
+  {
+   "slug": "kakao",
+   "name_en": "Kakao",
+   "name_fa": "کاکائو",
+   "kind": "company"
+  },
+  {
+   "slug": "synthid-detector",
+   "name_en": "SynthID Detector",
+   "name_fa": "سنث‌آی‌دی دتکتور",
+   "kind": "product"
+  },
+  {
+   "slug": "parallel-systems",
+   "name_en": "Parallel Systems",
+   "name_fa": "پارالل سیستمز",
+   "kind": "company"
+  },
+  {
+   "slug": "living-models",
+   "name_en": "Living Models",
+   "name_fa": "لایوینگ مدلز",
+   "kind": "company"
+  },
+  {
+   "slug": "gemma-4-e4b",
+   "name_en": "Gemma 4 E4B",
+   "name_fa": "جمما ۴ ای‌ای‌بی",
+   "kind": "model"
+  },
+  {
+   "slug": "botanic-1",
+   "name_en": "BOTANIC-1",
+   "name_fa": "باتانیک-۱",
+   "kind": "model"
+  },
+  {
+   "slug": "claude-35",
+   "name_en": "Claude 3.5",
+   "name_fa": "کلود ۳.۵",
+   "kind": "model"
+  },
+  {
+   "slug": "open-d1",
+   "name_en": "Open d1",
+   "name_fa": "اوپن دی‌اِی",
+   "kind": "product"
+  },
+  {
+   "slug": "d1-3b",
+   "name_en": "d1-3B",
+   "name_fa": "دی‌اِی-۳ بی",
+   "kind": "model"
+  },
+  {
+   "slug": "d1-omni-600m",
+   "name_en": "d1-omni-600M",
+   "name_fa": "دی‌اِی-امنی-۶۰۰ ام",
+   "kind": "model"
+  },
+  {
+   "slug": "nvidia-dgx",
+   "name_en": "NVIDIA DGX",
+   "name_fa": "انویدیا دی‌جی‌ایکس",
+   "kind": "product"
+  },
+  {
+   "slug": "us-department-of-energy",
+   "name_en": "U.S. Department of Energy",
+   "name_fa": "وزارت انرژی آمریکا",
+   "kind": "company"
+  },
+  {
+   "slug": "national-institutes-of-health",
+   "name_en": "National Institutes of Health",
+   "name_fa": "مؤسسه ملی بهداشت آمریکا",
+   "kind": "company"
+  },
+  {
+   "slug": "biohub",
+   "name_en": "BioHub",
+   "name_fa": "بایوهاب",
+   "kind": "company"
   }
  ]
 }
