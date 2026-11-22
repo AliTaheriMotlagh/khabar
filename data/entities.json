@@ -7337,6 +7337,102 @@
    "name_en": "Intelligence Index v5",
    "name_fa": "شاخص هوش نسخه ۵",
    "kind": "product"
+  },
+  {
+   "slug": "nicolo-cesa-bianchi",
+   "name_en": "Nicolo Cesa-Bianchi",
+   "name_fa": "نیکولو چزا-بیانکی",
+   "kind": "person"
+  },
+  {
+   "slug": "scale-ai",
+   "name_en": "Scale AI",
+   "name_fa": "اسکیل لبز",
+   "kind": "company"
+  },
+  {
+   "slug": "typesafeai",
+   "name_en": "typesafeai",
+   "name_fa": "تایپ‌سیف‌ای‌آی",
+   "kind": "model"
+  },
+  {
+   "slug": "windows",
+   "name_en": "Windows",
+   "name_fa": "ویندوز",
+   "kind": "product"
+  },
+  {
+   "slug": "nvidia-rtx-spark",
+   "name_en": "NVIDIA RTX Spark",
+   "name_fa": "انویدیا آر‌تی‌اکس اسپارک",
+   "kind": "product"
+  },
+  {
+   "slug": "doug-kalkite",
+   "name_en": "Doug Kalkite",
+   "name_fa": "داگ کالکیت",
+   "kind": "person"
+  },
+  {
+   "slug": "paradee",
+   "name_en": "Paradee",
+   "name_fa": "پرادِی",
+   "kind": "model"
+  },
+  {
+   "slug": "kokoro-82m",
+   "name_en": "Kokoro-82M",
+   "name_fa": "کوکورو ۸۲-ام",
+   "kind": "model"
+  },
+  {
+   "slug": "scale-labs",
+   "name_en": "Scale Labs",
+   "name_fa": "اسکیل لابس",
+   "kind": "company"
+  },
+  {
+   "slug": "hugging-apps",
+   "name_en": "Hugging Apps",
+   "name_fa": "هانگینگ اپس",
+   "kind": "company"
+  },
+  {
+   "slug": "jason-block",
+   "name_en": "Jason Block",
+   "name_fa": "جیسون ابلوک",
+   "kind": "person"
+  },
+  {
+   "slug": "david-autor",
+   "name_en": "David Autor",
+   "name_fa": "دیوید اوتور",
+   "kind": "person"
+  },
+  {
+   "slug": "patent-attorneys",
+   "name_en": "Patent Attorneys",
+   "name_fa": "وکلای ثبت اختراع",
+   "kind": "person"
+  },
+  {
+   "slug": "francesco-magli",
+   "name_en": "Francesco Magli",
+   "name_fa": "فرانچسکو ماگی",
+   "kind": "person"
+  },
+  {
+   "slug": "projectdiscovery",
+   "name_en": "ProjectDiscovery",
+   "name_fa": "پروژه دیسکاوری",
+   "kind": "company"
+  },
+  {
+   "slug": "delm",
+   "name_en": "DeLM",
+   "name_fa": "دی‌ال‌ام",
+   "kind": "product"
   }
  ]
 }
