@@ -8153,6 +8153,198 @@
    "name_en": "Kardashev-0.7",
    "name_fa": "کاردازف-۰.۷",
    "kind": "product"
+  },
+  {
+   "slug": "nemotron-35",
+   "name_en": "Nemotron 3.5",
+   "name_fa": "نموترون ۳.۵",
+   "kind": "model"
+  },
+  {
+   "slug": "falcon",
+   "name_en": "Falcon",
+   "name_fa": "فالکون",
+   "kind": "product"
+  },
+  {
+   "slug": "dragon",
+   "name_en": "Dragon",
+   "name_fa": "دراگون",
+   "kind": "product"
+  },
+  {
+   "slug": "iss",
+   "name_en": "ISS",
+   "name_fa": "ایستگاه فضایی بین‌المللی",
+   "kind": "product"
+  },
+  {
+   "slug": "chris-olah",
+   "name_en": "Chris Olah",
+   "name_fa": "کریس اولا",
+   "kind": "person"
+  },
+  {
+   "slug": "pope-leo-xiv",
+   "name_en": "Pope Leo XIV",
+   "name_fa": "پاپ لئو چهاردهم",
+   "kind": "person"
+  },
+  {
+   "slug": "macos",
+   "name_en": "macOS",
+   "name_fa": "مک‌اواس",
+   "kind": "product"
+  },
+  {
+   "slug": "full-disk-access",
+   "name_en": "Full Disk Access",
+   "name_fa": "دسترسی فول دیسک",
+   "kind": "product"
+  },
+  {
+   "slug": "meshy-ai",
+   "name_en": "Meshy AI",
+   "name_fa": "مشی‌ای‌آی",
+   "kind": "company"
+  },
+  {
+   "slug": "meshy-edit",
+   "name_en": "Meshy Edit",
+   "name_fa": "مشی ادیت",
+   "kind": "product"
+  },
+  {
+   "slug": "neuralink-implants",
+   "name_en": "Neuralink Implants",
+   "name_fa": "ایمپلنت‌های نورالینک",
+   "kind": "product"
+  },
+  {
+   "slug": "gemini-flash",
+   "name_en": "Gemini Flash",
+   "name_fa": "جمینای فلش",
+   "kind": "model"
+  },
+  {
+   "slug": "gemini-pro",
+   "name_en": "Gemini Pro",
+   "name_fa": "جمینای پرو",
+   "kind": "model"
+  },
+  {
+   "slug": "claude-sonnet-55",
+   "name_en": "Claude Sonnet 5.5",
+   "name_fa": "کلود سانت ۵.۵",
+   "kind": "model"
+  },
+  {
+   "slug": "s-chasor",
+   "name_en": "S. Chasor",
+   "name_fa": "اس. کشاو",
+   "kind": "person"
+  },
+  {
+   "slug": "alphago",
+   "name_en": "AlphaGo",
+   "name_fa": "آلفاگو",
+   "kind": "model"
+  },
+  {
+   "slug": "grapher",
+   "name_en": "Grapher",
+   "name_fa": "گراپل",
+   "kind": "person"
+  },
+  {
+   "slug": "martin-schwarz",
+   "name_en": "Martin Schwarz",
+   "name_fa": "مارتین شوارتز",
+   "kind": "person"
+  },
+  {
+   "slug": "cell",
+   "name_en": "Cell",
+   "name_fa": "سلول",
+   "kind": "product"
+  },
+  {
+   "slug": "david-robinson",
+   "name_en": "David Robinson",
+   "name_fa": "دیوید رابینسون",
+   "kind": "person"
+  },
+  {
+   "slug": "the-atlantic",
+   "name_en": "The Atlantic",
+   "name_fa": "آتلانتیک",
+   "kind": "company"
+  },
+  {
+   "slug": "christian-sogge",
+   "name_en": "Christian Sogge",
+   "name_fa": "کریستین سگدی",
+   "kind": "person"
+  },
+  {
+   "slug": "quo-vadis-mathematics",
+   "name_en": "Quo Vadis, Mathematics?",
+   "name_fa": "کووادیس ریاضیات؟",
+   "kind": "product"
+  },
+  {
+   "slug": "open-weight-model",
+   "name_en": "Open-weight model",
+   "name_fa": "مدل وزن‌باز",
+   "kind": "product"
+  },
+  {
+   "slug": "ivan-morrison",
+   "name_en": "Ivan Morrison",
+   "name_fa": "ایوان موریسون",
+   "kind": "person"
+  },
+  {
+   "slug": "clef",
+   "name_en": "Clef",
+   "name_fa": "کلیف",
+   "kind": "model"
+  },
+  {
+   "slug": "polar-browser",
+   "name_en": "Polar Browser",
+   "name_fa": "پلار براوزر",
+   "kind": "product"
+  },
+  {
+   "slug": "kevin-jiang",
+   "name_en": "Kevin Jiang",
+   "name_fa": "کِوین جیانگ",
+   "kind": "person"
+  },
+  {
+   "slug": "aleph-alpha",
+   "name_en": "Aleph Alpha",
+   "name_fa": "الف آلفا",
+   "kind": "company"
+  },
+  {
+   "slug": "kolibri",
+   "name_en": "Kolibri",
+   "name_fa": "کولیبری",
+   "kind": "model"
+  },
+  {
+   "slug": "eurekabench",
+   "name_en": "EurekaBench",
+   "name_fa": "یوریکابنچ",
+   "kind": "product"
+  },
+  {
+   "slug": "trans-tao",
+   "name_en": "Trans Tao",
+   "name_fa": "ترنس تائو",
+   "kind": "person"
   }
  ]
 }
