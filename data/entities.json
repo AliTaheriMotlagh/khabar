@@ -9677,6 +9677,222 @@
    "name_en": "Reality View",
    "name_fa": "رالییتی ویو",
    "kind": "product"
+  },
+  {
+   "slug": "tamara",
+   "name_en": "Tamara",
+   "name_fa": "تامارا",
+   "kind": "person"
+  },
+  {
+   "slug": "diogo-almeida",
+   "name_en": "Diogo Almeida",
+   "name_fa": "دیوگو آلمیدا",
+   "kind": "person"
+  },
+  {
+   "slug": "konrad-raczko",
+   "name_en": "Konrad Raczko",
+   "name_fa": "کنراد رچکو",
+   "kind": "person"
+  },
+  {
+   "slug": "typegpu",
+   "name_en": "TypeGPU",
+   "name_fa": "تایپ‌جی‌پی‌یو",
+   "kind": "product"
+  },
+  {
+   "slug": "runntime",
+   "name_en": "ruNNtime",
+   "name_fa": "ران‌تایم",
+   "kind": "product"
+  },
+  {
+   "slug": "moonshine",
+   "name_en": "Moonshine",
+   "name_fa": "مون‌شین",
+   "kind": "model"
+  },
+  {
+   "slug": "yolo26",
+   "name_en": "YOLO26",
+   "name_fa": "یولو ۲۶",
+   "kind": "model"
+  },
+  {
+   "slug": "s1r1us",
+   "name_en": "s1r1us",
+   "name_fa": "اس‌ای‌آی‌آر‌آی‌یو‌اس",
+   "kind": "person"
+  },
+  {
+   "slug": "outlook",
+   "name_en": "Outlook",
+   "name_fa": "اوت‌لوک",
+   "kind": "product"
+  },
+  {
+   "slug": "jifeng-dai",
+   "name_en": "Jifeng Dai",
+   "name_fa": "جی‌فنگ دای",
+   "kind": "person"
+  },
+  {
+   "slug": "zhejiang-university",
+   "name_en": "Zhejiang University",
+   "name_fa": "دانشگاه چینهوا",
+   "kind": "company"
+  },
+  {
+   "slug": "monid",
+   "name_en": "Monid",
+   "name_fa": "مونید",
+   "kind": "company"
+  },
+  {
+   "slug": "tiny-fish",
+   "name_en": "Tiny_Fish",
+   "name_fa": "تاینی‌فیشر",
+   "kind": "company"
+  },
+  {
+   "slug": "exa",
+   "name_en": "Exa",
+   "name_fa": "ایکسا",
+   "kind": "product"
+  },
+  {
+   "slug": "tavily",
+   "name_en": "Tavily",
+   "name_fa": "تاولیلی",
+   "kind": "product"
+  },
+  {
+   "slug": "brave",
+   "name_en": "Brave",
+   "name_fa": "برو",
+   "kind": "product"
+  },
+  {
+   "slug": "mantic",
+   "name_en": "Mantic",
+   "name_fa": "منتیک",
+   "kind": "company"
+  },
+  {
+   "slug": "gpt-oss-120b",
+   "name_en": "gpt-oss-120b",
+   "name_fa": "جی‌پی‌تی اواس اس ۱۲۰ بی",
+   "kind": "model"
+  },
+  {
+   "slug": "metacolossus",
+   "name_en": "MetaColossus",
+   "name_fa": "متاکولوس",
+   "kind": "model"
+  },
+  {
+   "slug": "accenture",
+   "name_en": "Accenture",
+   "name_fa": "اکسنچر",
+   "kind": "company"
+  },
+  {
+   "slug": "cua-s1",
+   "name_en": "CUA-S1",
+   "name_fa": "سی‌وی‌ای-اس-۱",
+   "kind": "model"
+  },
+  {
+   "slug": "cua-s1-forms",
+   "name_en": "CUA-S1-FORMS",
+   "name_fa": "سی‌وی‌ای-اس-۱-فرمز",
+   "kind": "model"
+  },
+  {
+   "slug": "edison-scientific",
+   "name_en": "Edison Scientific",
+   "name_fa": "ادیسون ساینتیفیک",
+   "kind": "company"
+  },
+  {
+   "slug": "futurehouse",
+   "name_en": "FutureHouse",
+   "name_fa": "فیوچرهوس",
+   "kind": "company"
+  },
+  {
+   "slug": "sam-rodriguez",
+   "name_en": "Sam Rodriguez",
+   "name_fa": "سم رودریگز",
+   "kind": "person"
+  },
+  {
+   "slug": "millennium-problems-for-biology",
+   "name_en": "Millennium Problems for Biology",
+   "name_fa": "مسائل هزاره زیست‌شناسی",
+   "kind": "product"
+  },
+  {
+   "slug": "jfpuget",
+   "name_en": "JFPuget",
+   "name_fa": "جی‌اف‌پوژه",
+   "kind": "company"
+  },
+  {
+   "slug": "jevbench",
+   "name_en": "JevBench",
+   "name_fa": "یِو‌بنچ",
+   "kind": "product"
+  },
+  {
+   "slug": "semif",
+   "name_en": "SemIf",
+   "name_fa": "سم‌ایف",
+   "kind": "product"
+  },
+  {
+   "slug": "nucleus-genomics",
+   "name_en": "Nucleus Genomics",
+   "name_fa": "نوکلئوس ژنومیکس",
+   "kind": "company"
+  },
+  {
+   "slug": "vitrovin",
+   "name_en": "Vitrovin",
+   "name_fa": "ویترووین",
+   "kind": "product"
+  },
+  {
+   "slug": "aravind-srinivas",
+   "name_en": "Aravind Srinivas",
+   "name_fa": "آراویند سرینیواس",
+   "kind": "person"
+  },
+  {
+   "slug": "us",
+   "name_en": "US",
+   "name_fa": "آمریکا",
+   "kind": "company"
+  },
+  {
+   "slug": "stepfun",
+   "name_en": "StepFun",
+   "name_fa": "استپ‌فن",
+   "kind": "company"
+  },
+  {
+   "slug": "aaron-francis",
+   "name_en": "Aaron Francis",
+   "name_fa": "آرون فرانسیس",
+   "kind": "person"
+  },
+  {
+   "slug": "robert-yang",
+   "name_en": "Robert Yang",
+   "name_fa": "رابرت یانگ",
+   "kind": "person"
   }
  ]
 }
