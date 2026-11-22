@@ -3,7 +3,7 @@
  "url": "https://t.me/dlmehr/6674",
  "date": "2026-11-21T17:12:15+00:00",
  "text": "مدلی که می‌تونه فقط توی 78 میلی‌ثانیه، یه تصویر با ابعاد 512 × 512 پیکسل تولید کنه!\nیه مدل بینایی-زبانی (Vision-Language) که فریز شده (یعنی پارامترهاش در حین این فرایند تغییر نمی‌کنن)، کل تصویر 512 پیکسلی رو به‌عنوان یک تصمیم واحد و تنها در یک مرحله اجرای مدل (Forward Pass) تولید می‌کنه. Jeveration حالا مدل‌های نسل اول (System One) هم می‌تونن تصویر تولید کنن!\n\nتست آنلاین:\nhuggingface.co/spaces/linlinlinlinsdada/Jeveration\n\nسورس کد که دیروز منتشر شده:\ngithub.com/Carol-lyh/Jeveration\n\n@Linuxor (https://t.me/Linuxor)",
- "forwarded_from": "Linuxor ?",
+ "forwarded_from": null,
  "digest": false,
  "hash": "3eda7c6f33f7",
  "media": [
@@ -86,6 +86,11 @@
    "model": "qwen3.5-9b-q4_k_m",
    "v": 2,
    "src": "03986896ba4b"
+  },
+  "speech": {
+   "v": 1,
+   "src": "33b561fa97ab",
+   "added": 3
   }
  },
  "links": [
@@ -120,5 +125,5 @@
    "متن‌باز"
   ]
  },
- "updated": "2026-11-21T21:43:56+00:00"
+ "updated": "2026-11-22T01:38:20+00:00"
 }

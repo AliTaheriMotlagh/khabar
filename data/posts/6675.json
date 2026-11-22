@@ -19,34 +19,6 @@
   "text": "رفقا، یه خبر خوب برای اونایی که با Antigravity کار می‌کنن: اکانت @_mohansolo اعلام کرده سهمیه (quota) Gemini برای همه روی این پلتفرم ریست شده. به گفته خودش، بهبودهای جدید توی سیستم کشینگ (caching) باعث شده مقدار کاری که می‌شه تو همون سهمیه انجام داد ۲۲ درصد بیشتر بشه؛ انگار هم باک رو پر کردن و هم مصرفش رو بهینه‌تر کردن که مسافت بیشتری رو بتونین برین! 🛠️ آخرش هم گفته آخر هفته از ساختن با Neon لذت ببرید.",
   "date": "2026-11-21T17:22:29+00:00"
  },
- "links": [
-  {
-   "kind": "tweet",
-   "url": "https://x.com/_mohansolo/status/2124070033534161407",
-   "domain": "x.com",
-   "author": {
-    "name": "Varun Mohan",
-    "handle": "_mohansolo",
-    "avatar": "https://pbs.twimg.com/profile_images/1658293192549339138/V0Y7u33__200x200.jpg"
-   },
-   "text": "Reset everyone’s Gemini quota on Antigravity.\n\nThe caching improvements have increased the amount you can get done in quota by 22%. Enjoy building with Neon over the weekend!",
-   "date": 1795252733,
-   "media": [],
-   "links": []
-  }
- ],
- "article": {
-  "title": "یه خبر خوب برای اونایی که با Antigravity کار می‌کنن: اکانت @_mohansolo اعلام کرده سهمیه (quota) Gemini برای همه روی این پلتفرم ریست شده",
-  "source_title": "Reset everyone’s Gemini quota on Antigravity.",
-  "body": [
-   "یه خبر خوب برای اونایی که با Antigravity کار می‌کنن: اکانت @_mohansolo اعلام کرده سهمیه (quota) Gemini برای همه روی این پلتفرم ریست شده. به گفته خودش، بهبودهای جدید توی سیستم کشینگ (caching) باعث شده مقدار کاری که می‌شه تو همون سهمیه انجام داد ۲۲ درصد بیشتر بشه؛ انگار هم باک رو پر کردن و هم مصرفش رو بهینه‌تر کردن که مسافت بیشتری رو بتونین برین! 🛠️ آخرش هم گفته آخر هفته از ساختن با Neon لذت ببرید."
-  ],
-  "why": null,
-  "tags": [
-   "گوگل"
-  ]
- },
- "updated": "2026-11-21T17:38:13+00:00",
  "ai": {
   "title": "سهمیه Gemini در پلتفرم Antigravity با ۲۲ درصد افزایش ریست شد",
   "short": "افزایش سهمیه Gemini",
@@ -118,6 +90,39 @@
    "model": "qwen3.5-9b-q4_k_m",
    "v": 2,
    "src": "ac8188fa77ab"
+  },
+  "speech": {
+   "v": 1,
+   "src": "81c5aff69df5",
+   "added": 2
   }
- }
+ },
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/_mohansolo/status/2124070033534161407",
+   "domain": "x.com",
+   "author": {
+    "name": "Varun Mohan",
+    "handle": "_mohansolo",
+    "avatar": "https://pbs.twimg.com/profile_images/1658293192549339138/V0Y7u33__200x200.jpg"
+   },
+   "text": "Reset everyone’s Gemini quota on Antigravity.\n\nThe caching improvements have increased the amount you can get done in quota by 22%. Enjoy building with Neon over the weekend!",
+   "date": 1795252733,
+   "media": [],
+   "links": []
+  }
+ ],
+ "article": {
+  "title": "یه خبر خوب برای اونایی که با Antigravity کار می‌کنن: اکانت @_mohansolo اعلام کرده سهمیه (quota) Gemini برای همه روی این پلتفرم ریست شده",
+  "source_title": "Reset everyone’s Gemini quota on Antigravity.",
+  "body": [
+   "یه خبر خوب برای اونایی که با Antigravity کار می‌کنن: اکانت @_mohansolo اعلام کرده سهمیه (quota) Gemini برای همه روی این پلتفرم ریست شده. به گفته خودش، بهبودهای جدید توی سیستم کشینگ (caching) باعث شده مقدار کاری که می‌شه تو همون سهمیه انجام داد ۲۲ درصد بیشتر بشه؛ انگار هم باک رو پر کردن و هم مصرفش رو بهینه‌تر کردن که مسافت بیشتری رو بتونین برین! 🛠️ آخرش هم گفته آخر هفته از ساختن با Neon لذت ببرید."
+  ],
+  "why": null,
+  "tags": [
+   "گوگل"
+  ]
+ },
+ "updated": "2026-11-22T01:38:20+00:00"
 }
