@@ -7433,6 +7433,108 @@
    "name_en": "DeLM",
    "name_fa": "دی‌ال‌ام",
    "kind": "product"
+  },
+  {
+   "slug": "ruslan-salakhutdinov",
+   "name_en": "Ruslan Salakhutdinov",
+   "name_fa": "راس سالاخوتدینوف",
+   "kind": "person"
+  },
+  {
+   "slug": "higher-order-extraction",
+   "name_en": "Higher-Order Extraction",
+   "name_fa": "استخراج مرتبه بالاتر",
+   "kind": "product"
+  },
+  {
+   "slug": "claude-haiku-55",
+   "name_en": "Claude Haiku 5.5",
+   "name_fa": "کلود هایکو ۵.۵",
+   "kind": "model"
+  },
+  {
+   "slug": "jaguar",
+   "name_en": "Jaguar",
+   "name_fa": "جگوار",
+   "kind": "company"
+  },
+  {
+   "slug": "jaguar-type-01",
+   "name_en": "Jaguar Type 01",
+   "name_fa": "جگوار تایپ ۰۱",
+   "kind": "product"
+  },
+  {
+   "slug": "nvidia-hyperscale",
+   "name_en": "NVIDIA Hyperscale",
+   "name_fa": "انویدیا هایپرایون",
+   "kind": "product"
+  },
+  {
+   "slug": "hailo",
+   "name_en": "Hailo",
+   "name_fa": "هیلوز",
+   "kind": "product"
+  },
+  {
+   "slug": "bernhard-mueller",
+   "name_en": "Bernhard Mueller",
+   "name_fa": "برنهارد مولر",
+   "kind": "person"
+  },
+  {
+   "slug": "cadence",
+   "name_en": "Cadence",
+   "name_fa": "کِیدِنس",
+   "kind": "product"
+  },
+  {
+   "slug": "xpu-grasshopper",
+   "name_en": "XPU Grasshopper",
+   "name_fa": "تراشه گرس‌هاپر",
+   "kind": "product"
+  },
+  {
+   "slug": "elias",
+   "name_en": "Elias",
+   "name_fa": "الیاس",
+   "kind": "person"
+  },
+  {
+   "slug": "mai-code-11-flash",
+   "name_en": "MAI-Code-1.1 Flash",
+   "name_fa": "مای-کد ۱.۱ فلاش",
+   "kind": "model"
+  },
+  {
+   "slug": "geneva-conventions",
+   "name_en": "Geneva Conventions",
+   "name_fa": "کنوانسیون ژنو",
+   "kind": "model"
+  },
+  {
+   "slug": "francois-chollet",
+   "name_en": "François Chollet",
+   "name_fa": "فرانسوا شوله",
+   "kind": "person"
+  },
+  {
+   "slug": "frontier-labs",
+   "name_en": "Frontier labs",
+   "name_fa": "آزمایشگاه‌های پیشرو",
+   "kind": "company"
+  },
+  {
+   "slug": "jacob-coxon",
+   "name_en": "Jacob Coxon",
+   "name_fa": "جیکوب کاکسون",
+   "kind": "person"
+  },
+  {
+   "slug": "jon-stewart",
+   "name_en": "Jon Stewart",
+   "name_fa": "جان استوارت",
+   "kind": "person"
   }
  ]
 }
