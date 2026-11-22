@@ -8879,6 +8879,90 @@
    "name_en": "Shibani Sankar",
    "name_fa": "شیبانی سانکار",
    "kind": "person"
+  },
+  {
+   "slug": "guy",
+   "name_en": "Guy",
+   "name_fa": "گای",
+   "kind": "person"
+  },
+  {
+   "slug": "scott",
+   "name_en": "Scott",
+   "name_fa": "اسکات",
+   "kind": "person"
+  },
+  {
+   "slug": "linkerbot",
+   "name_en": "LinkerBot",
+   "name_fa": "لینکر‌بات",
+   "kind": "company"
+  },
+  {
+   "slug": "linkerarm-a7",
+   "name_en": "LinkerArm A7",
+   "name_fa": "لینکر‌آرم A7",
+   "kind": "product"
+  },
+  {
+   "slug": "krishna-suresh",
+   "name_en": "Krishna Suresh",
+   "name_fa": "کریشنا سورش",
+   "kind": "person"
+  },
+  {
+   "slug": "lucas-peterson",
+   "name_en": "Lucas Peterson",
+   "name_fa": "لوکاس پیترسون",
+   "kind": "person"
+  },
+  {
+   "slug": "united-nations",
+   "name_en": "United Nations",
+   "name_fa": "سازمان ملل متحد",
+   "kind": "company"
+  },
+  {
+   "slug": "openai-agents",
+   "name_en": "OpenAI Agents",
+   "name_fa": "ایجنت‌های اوپن‌ای‌آی",
+   "kind": "product"
+  },
+  {
+   "slug": "neolab",
+   "name_en": "Neolab",
+   "name_fa": "نیولاب",
+   "kind": "company"
+  },
+  {
+   "slug": "navy",
+   "name_en": "Navy",
+   "name_fa": "نیروی دریایی",
+   "kind": "company"
+  },
+  {
+   "slug": "peter-gernus",
+   "name_en": "Peter Gernus",
+   "name_fa": "پیتر گیرنوس",
+   "kind": "person"
+  },
+  {
+   "slug": "jeffrey-ladish",
+   "name_en": "Jeffrey Ladish",
+   "name_fa": "جفری لادیش",
+   "kind": "person"
+  },
+  {
+   "slug": "apollo",
+   "name_en": "Apollo",
+   "name_fa": "آپولو",
+   "kind": "company"
+  },
+  {
+   "slug": "gary-gensler",
+   "name_en": "Gary Gensler",
+   "name_fa": "گری گنسلر",
+   "kind": "person"
   }
  ]
 }
