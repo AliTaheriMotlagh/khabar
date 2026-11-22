@@ -7625,6 +7625,84 @@
    "name_en": "BioHub",
    "name_fa": "بایوهاب",
    "kind": "company"
+  },
+  {
+   "slug": "one",
+   "name_en": "One",
+   "name_fa": "وان",
+   "kind": "product"
+  },
+  {
+   "slug": "kairos",
+   "name_en": "Kairos",
+   "name_fa": "کایزو",
+   "kind": "person"
+  },
+  {
+   "slug": "apollo-global-management",
+   "name_en": "Apollo Global Management",
+   "name_fa": "آپولو گلوبال منیجمنت",
+   "kind": "company"
+  },
+  {
+   "slug": "institute-for-advanced-study",
+   "name_en": "Institute for Advanced Study",
+   "name_fa": "مؤسسه مطالعات پیشرفته",
+   "kind": "company"
+  },
+  {
+   "slug": "alvaro-lozano-robledo",
+   "name_en": "Alvaro Lozano-Robledo",
+   "name_fa": "آلوارو لوزانو-روبلدو",
+   "kind": "person"
+  },
+  {
+   "slug": "navier-stokes-equations",
+   "name_en": "Navier-Stokes equations",
+   "name_fa": "معادلات ناویر-استوکس",
+   "kind": "model"
+  },
+  {
+   "slug": "decisions-api",
+   "name_en": "Decisions API",
+   "name_fa": "دسیژن‌ز ای‌پی‌آی",
+   "kind": "product"
+  },
+  {
+   "slug": "alex-kontorovich",
+   "name_en": "Alex Kontorovich",
+   "name_fa": "الکس کونتروویچ",
+   "kind": "person"
+  },
+  {
+   "slug": "nicolas-bostrom",
+   "name_en": "Nicolas Boström",
+   "name_fa": "نیکولاس بوستامانته",
+   "kind": "person"
+  },
+  {
+   "slug": "yoshua-bengio",
+   "name_en": "Yoshua Bengio",
+   "name_fa": "یوشوا بنجیو",
+   "kind": "person"
+  },
+  {
+   "slug": "tab",
+   "name_en": "Tab",
+   "name_fa": "تب",
+   "kind": "product"
+  },
+  {
+   "slug": "tab-ai",
+   "name_en": "Tab AI",
+   "name_fa": "تب ای‌آی",
+   "kind": "company"
+  },
+  {
+   "slug": "meetings",
+   "name_en": "Meetings",
+   "name_fa": "میتینگز",
+   "kind": "product"
   }
  ]
 }
