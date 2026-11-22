@@ -9071,6 +9071,120 @@
    "name_en": "Bill Gates",
    "name_fa": "بیل گیتس",
    "kind": "person"
+  },
+  {
+   "slug": "actx486",
+   "name_en": "ACTx486",
+   "name_fa": "اکت‌ای‌اکس۴۸۶",
+   "kind": "product"
+  },
+  {
+   "slug": "karina",
+   "name_en": "Karina",
+   "name_fa": "کارینا",
+   "kind": "person"
+  },
+  {
+   "slug": "jacob",
+   "name_en": "Jacob",
+   "name_fa": "یاکوب",
+   "kind": "person"
+  },
+  {
+   "slug": "higgsfield-ai",
+   "name_en": "Higgsfield AI",
+   "name_fa": "هگزفیلد",
+   "kind": "company"
+  },
+  {
+   "slug": "c5r",
+   "name_en": "C5R",
+   "name_fa": "سی‌آی‌آر",
+   "kind": "company"
+  },
+  {
+   "slug": "sciuniverse",
+   "name_en": "SciUniverse",
+   "name_fa": "سای‌یونیورس",
+   "kind": "product"
+  },
+  {
+   "slug": "stephen-leiva",
+   "name_en": "Stephen Leiva",
+   "name_fa": "استفان لیورا",
+   "kind": "person"
+  },
+  {
+   "slug": "tesla-semi",
+   "name_en": "Tesla Semi",
+   "name_fa": "تسلا سمی",
+   "kind": "product"
+  },
+  {
+   "slug": "xiaomi",
+   "name_en": "Xiaomi",
+   "name_fa": "شیائومی",
+   "kind": "company"
+  },
+  {
+   "slug": "xiaomi-18-pro-max",
+   "name_en": "Xiaomi 18 Pro Max",
+   "name_fa": "شیائومی ۱۸ پرو مکس",
+   "kind": "product"
+  },
+  {
+   "slug": "mkbhd",
+   "name_en": "MKBHD",
+   "name_fa": "مارکز براونلی",
+   "kind": "person"
+  },
+  {
+   "slug": "ando",
+   "name_en": "Ando",
+   "name_fa": "آندو",
+   "kind": "company"
+  },
+  {
+   "slug": "accel",
+   "name_en": "Accel",
+   "name_fa": "اکسل",
+   "kind": "company"
+  },
+  {
+   "slug": "index-fund",
+   "name_en": "Index Fund",
+   "name_fa": "اینکس فاند",
+   "kind": "company"
+  },
+  {
+   "slug": "emergence",
+   "name_en": "Emergence",
+   "name_fa": "امرجنس",
+   "kind": "company"
+  },
+  {
+   "slug": "messinator",
+   "name_en": "Messinator",
+   "name_fa": "مسی‌ناتور",
+   "kind": "product"
+  },
+  {
+   "slug": "feder-robotics",
+   "name_en": "Feder Robotics",
+   "name_fa": "فدر رباتیکس",
+   "kind": "company"
+  },
+  {
+   "slug": "gradient-ventures",
+   "name_en": "Gradient Ventures",
+   "name_fa": "گرادیانت وی‌سی",
+   "kind": "company"
+  },
+  {
+   "slug": "feder",
+   "name_en": "Feder",
+   "name_fa": "فدر",
+   "kind": "product"
   }
  ]
 }
