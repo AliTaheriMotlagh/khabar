@@ -9893,6 +9893,102 @@
    "name_en": "Robert Yang",
    "name_fa": "رابرت یانگ",
    "kind": "person"
+  },
+  {
+   "slug": "mythos",
+   "name_en": "Mythos",
+   "name_fa": "میتوس",
+   "kind": "model"
+  },
+  {
+   "slug": "life-sciences-verification-program",
+   "name_en": "Life Sciences Verification Program",
+   "name_fa": "برنامه تأیید علوم زیستی",
+   "kind": "product"
+  },
+  {
+   "slug": "helix-25",
+   "name_en": "Helix 2.5",
+   "name_fa": "هلیکس ۲.۵",
+   "kind": "product"
+  },
+  {
+   "slug": "duncan",
+   "name_en": "Duncan",
+   "name_fa": "دانکن",
+   "kind": "person"
+  },
+  {
+   "slug": "novam-brown",
+   "name_en": "Novam Brown",
+   "name_fa": "نوام براون",
+   "kind": "person"
+  },
+  {
+   "slug": "cactus-compute",
+   "name_en": "Cactus Compute",
+   "name_fa": "کتاکس کامپیوت",
+   "kind": "company"
+  },
+  {
+   "slug": "needle-3",
+   "name_en": "Needle 3",
+   "name_fa": "نیادل ۳",
+   "kind": "model"
+  },
+  {
+   "slug": "prismml",
+   "name_en": "PrismML",
+   "name_fa": "پریزم‌ام‌ال",
+   "kind": "company"
+  },
+  {
+   "slug": "ternary-bonsai-2",
+   "name_en": "Ternary Bonsai 2",
+   "name_fa": "ترنری بونسای ۲",
+   "kind": "model"
+  },
+  {
+   "slug": "qwen38",
+   "name_en": "Qwen3.8",
+   "name_fa": "کوئن ۳.۸",
+   "kind": "model"
+  },
+  {
+   "slug": "union-alpha",
+   "name_en": "Union Alpha",
+   "name_fa": "یونین آلفا",
+   "kind": "product"
+  },
+  {
+   "slug": "the-unbiased",
+   "name_en": "The Unbiased",
+   "name_fa": "دی بی‌آی‌یوسد",
+   "kind": "company"
+  },
+  {
+   "slug": "pareto-269",
+   "name_en": "Pareto 26.9",
+   "name_fa": "پاراتو ۲۶.۹",
+   "kind": "model"
+  },
+  {
+   "slug": "zaki",
+   "name_en": "Zaki",
+   "name_fa": "زاکی",
+   "kind": "person"
+  },
+  {
+   "slug": "sql",
+   "name_en": "SQL",
+   "name_fa": "اس‌کیو‌ال",
+   "kind": "product"
+  },
+  {
+   "slug": "noam-brown",
+   "name_en": "Noam Brown",
+   "name_fa": "نوآم براون",
+   "kind": "person"
   }
  ]
 }
