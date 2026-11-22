@@ -9185,6 +9185,132 @@
    "name_en": "Feder",
    "name_fa": "فدر",
    "kind": "product"
+  },
+  {
+   "slug": "qwen-intelligence",
+   "name_en": "Qwen Intelligence",
+   "name_fa": "کوئن اینتلیجنس",
+   "kind": "product"
+  },
+  {
+   "slug": "carnegie-china",
+   "name_en": "Carnegie China",
+   "name_fa": "اندیشکده کارنگی چین",
+   "kind": "company"
+  },
+  {
+   "slug": "crispr",
+   "name_en": "CRISPR",
+   "name_fa": "کریسپر",
+   "kind": "product"
+  },
+  {
+   "slug": "claudeai",
+   "name_en": "claude.ai",
+   "name_fa": "کلود آی‌آی",
+   "kind": "product"
+  },
+  {
+   "slug": "agentstar",
+   "name_en": "AgentSTAR",
+   "name_fa": "ایجنت‌استار",
+   "kind": "model"
+  },
+  {
+   "slug": "jacky-kwok",
+   "name_en": "Jacky Kwok",
+   "name_fa": "جکی کواک",
+   "kind": "person"
+  },
+  {
+   "slug": "clm-8b",
+   "name_en": "CLM-8B",
+   "name_fa": "سی‌ال‌ام-۸بی",
+   "kind": "model"
+  },
+  {
+   "slug": "ravid-schwartz",
+   "name_en": "Ravid Schwartz",
+   "name_fa": "راوید شوارتز",
+   "kind": "person"
+  },
+  {
+   "slug": "lucas-harrington",
+   "name_en": "Lucas Harrington",
+   "name_fa": "لوکاس هرینگتون",
+   "kind": "person"
+  },
+  {
+   "slug": "snapdragon",
+   "name_en": "Snapdragon",
+   "name_fa": "اسنپ‌دراگون",
+   "kind": "product"
+  },
+  {
+   "slug": "nemotron-3-diarization",
+   "name_en": "Nemotron 3 Diarization",
+   "name_fa": "نموترون ۳ دیارایزیشن",
+   "kind": "model"
+  },
+  {
+   "slug": "transcend",
+   "name_en": "Transcend",
+   "name_fa": "ترنسلوس",
+   "kind": "company"
+  },
+  {
+   "slug": "australian-government",
+   "name_en": "Australian Government",
+   "name_fa": "دولت استرالیا",
+   "kind": "person"
+  },
+  {
+   "slug": "micro1",
+   "name_en": "Micro1",
+   "name_fa": "مایکرو ۱",
+   "kind": "company"
+  },
+  {
+   "slug": "ali-ansari",
+   "name_en": "Ali Ansari",
+   "name_fa": "علی انصاری",
+   "kind": "person"
+  },
+  {
+   "slug": "muse-realtime-avatar",
+   "name_en": "Muse Realtime Avatar",
+   "name_fa": "میوز ریل‌تایم آواتار",
+   "kind": "product"
+  },
+  {
+   "slug": "falcon-9",
+   "name_en": "Falcon 9",
+   "name_fa": "فالکون ۹",
+   "kind": "product"
+  },
+  {
+   "slug": "agora-2",
+   "name_en": "Agora-2",
+   "name_fa": "آگورا-۲",
+   "kind": "model"
+  },
+  {
+   "slug": "fish-audio",
+   "name_en": "Fish Audio",
+   "name_fa": "فیشر آودियो",
+   "kind": "company"
+  },
+  {
+   "slug": "drama-3",
+   "name_en": "Drama 3",
+   "name_fa": "دراما ۳",
+   "kind": "model"
+  },
+  {
+   "slug": "protein-structure",
+   "name_en": "Protein Structure",
+   "name_fa": "ساختار پروتئین",
+   "kind": "product"
   }
  ]
 }
