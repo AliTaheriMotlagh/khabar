@@ -7871,6 +7871,108 @@
    "name_en": "Wire",
    "name_fa": "وایرد",
    "kind": "company"
+  },
+  {
+   "slug": "core",
+   "name_en": "Core",
+   "name_fa": "کور",
+   "kind": "product"
+  },
+  {
+   "slug": "zin-javid",
+   "name_en": "Zin Javid",
+   "name_fa": "زین جاوید",
+   "kind": "person"
+  },
+  {
+   "slug": "d1",
+   "name_en": "d1",
+   "name_fa": "دی‌۱",
+   "kind": "model"
+  },
+  {
+   "slug": "carl-desmet",
+   "name_en": "Carl DeSmet",
+   "name_fa": "کارل دایسروت",
+   "kind": "person"
+  },
+  {
+   "slug": "flow-1",
+   "name_en": "flow-1",
+   "name_fa": "فلو-۱",
+   "kind": "model"
+  },
+  {
+   "slug": "sharon-lee",
+   "name_en": "Sharon Lee",
+   "name_fa": "شارون لی",
+   "kind": "person"
+  },
+  {
+   "slug": "reason-machines",
+   "name_en": "Reason Machines",
+   "name_fa": "ریزون مچینز",
+   "kind": "company"
+  },
+  {
+   "slug": "reason-v1",
+   "name_en": "Reason v1",
+   "name_fa": "ریزون نسخه ۱",
+   "kind": "model"
+  },
+  {
+   "slug": "kairos-1",
+   "name_en": "Kairos 1",
+   "name_fa": "کایروس ۱",
+   "kind": "model"
+  },
+  {
+   "slug": "reflection-ai",
+   "name_en": "Reflection AI",
+   "name_fa": "رفلیکشن‌ای‌آی",
+   "kind": "company"
+  },
+  {
+   "slug": "lovable",
+   "name_en": "Lovable",
+   "name_fa": "لاوبل",
+   "kind": "product"
+  },
+  {
+   "slug": "semi-analytics",
+   "name_en": "Semi-Analytics",
+   "name_fa": "سمی‌آنالیسیس",
+   "kind": "company"
+  },
+  {
+   "slug": "cua-driver",
+   "name_en": "Cua Driver",
+   "name_fa": "درایور کوا",
+   "kind": "product"
+  },
+  {
+   "slug": "brian-chesky",
+   "name_en": "Brian Chesky",
+   "name_fa": "برایان چسکی",
+   "kind": "person"
+  },
+  {
+   "slug": "airbnb",
+   "name_en": "Airbnb",
+   "name_fa": "ایربی‌ان‌بی",
+   "kind": "company"
+  },
+  {
+   "slug": "ai-tokens",
+   "name_en": "AI tokens",
+   "name_fa": "توکن‌های هوش مصنوعی",
+   "kind": "product"
+  },
+  {
+   "slug": "ghost-ai",
+   "name_en": "Ghost AI",
+   "name_fa": "گوست ای‌آی",
+   "kind": "company"
   }
  ]
 }
