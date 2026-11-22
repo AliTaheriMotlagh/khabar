@@ -10787,6 +10787,156 @@
    "name_en": "OpenDesign",
    "name_fa": "اوپن‌دیزاین",
    "kind": "company"
+  },
+  {
+   "slug": "research-intern",
+   "name_en": "Research Intern",
+   "name_fa": "کارآموز پژوهشی",
+   "kind": "product"
+  },
+  {
+   "slug": "hotels",
+   "name_en": "Hotels",
+   "name_fa": "هتل‌ها",
+   "kind": "company"
+  },
+  {
+   "slug": "yacov-pachocki",
+   "name_en": "Yacov Pachocki",
+   "name_fa": "یاکوب پاچوکی",
+   "kind": "person"
+  },
+  {
+   "slug": "autonomous-ai-researcher",
+   "name_en": "Autonomous AI Researcher",
+   "name_fa": "پژوهشگر خودکار هوش مصنوعی",
+   "kind": "product"
+  },
+  {
+   "slug": "ai-podcast-tools",
+   "name_en": "AI Podcast Tools",
+   "name_fa": "ابزارهای هوش مصنوعی پادکست",
+   "kind": "product"
+  },
+  {
+   "slug": "seedance",
+   "name_en": "Seedance",
+   "name_fa": "سیدنس",
+   "kind": "model"
+  },
+  {
+   "slug": "genie",
+   "name_en": "Genie",
+   "name_fa": "جینی",
+   "kind": "model"
+  },
+  {
+   "slug": "huawei",
+   "name_en": "Huawei",
+   "name_fa": "هواوی",
+   "kind": "company"
+  },
+  {
+   "slug": "mate-xt-2",
+   "name_en": "Mate XT 2",
+   "name_fa": "میت ایکس‌تی ۲",
+   "kind": "product"
+  },
+  {
+   "slug": "kirin-9050-pro",
+   "name_en": "Kirin 9050 Pro",
+   "name_fa": "کیرین ۹۰۵۰ پرو",
+   "kind": "product"
+  },
+  {
+   "slug": "yu-chengdong",
+   "name_en": "Yu Chengdong",
+   "name_fa": "یو چنگ‌دونگ",
+   "kind": "person"
+  },
+  {
+   "slug": "insilico-medicine",
+   "name_en": "Insilico Medicine",
+   "name_fa": "اینسیلیکو مدیسین",
+   "kind": "company"
+  },
+  {
+   "slug": "colin-delong",
+   "name_en": "Colin Delong",
+   "name_fa": "کلم دلنگ",
+   "kind": "person"
+  },
+  {
+   "slug": "alphagenome-atlas",
+   "name_en": "AlphaGenome Atlas",
+   "name_fa": "آلفاژنوم اطلس",
+   "kind": "product"
+  },
+  {
+   "slug": "iit-madras",
+   "name_en": "IIT Madras",
+   "name_fa": "دانشگاه کلتک",
+   "kind": "company"
+  },
+  {
+   "slug": "3d-euler-equations",
+   "name_en": "3D Euler equations",
+   "name_fa": "معادلات اویلر سه‌بعدی",
+   "kind": "model"
+  },
+  {
+   "slug": "physics-informed-neural-networks",
+   "name_en": "Physics-Informed Neural Networks",
+   "name_fa": "شبکه‌های عصبی مبتنی بر فیزیک",
+   "kind": "model"
+  },
+  {
+   "slug": "gemini-enterprise-ai",
+   "name_en": "Gemini Enterprise AI",
+   "name_fa": "جمینای انترپرایز ای‌آی",
+   "kind": "product"
+  },
+  {
+   "slug": "aws",
+   "name_en": "AWS",
+   "name_fa": "آمازون وب سرویس",
+   "kind": "product"
+  },
+  {
+   "slug": "bedrock",
+   "name_en": "Bedrock",
+   "name_fa": "بدراک",
+   "kind": "product"
+  },
+  {
+   "slug": "golden-gate-bridge",
+   "name_en": "Golden Gate Bridge",
+   "name_fa": "پل گلدن‌گیت",
+   "kind": "product"
+  },
+  {
+   "slug": "william-gilpin",
+   "name_en": "William Gilpin",
+   "name_fa": "ویلیام گیلپین",
+   "kind": "person"
+  },
+  {
+   "slug": "magic",
+   "name_en": "Magic",
+   "name_fa": "استارتاپ مجیک",
+   "kind": "company"
+  },
+  {
+   "slug": "deepseek-v4-pro",
+   "name_en": "DeepSeek V4 Pro",
+   "name_fa": "دیپ‌سیک V4 پرو",
+   "kind": "model"
+  },
+  {
+   "slug": "gpt-3",
+   "name_en": "GPT-3",
+   "name_fa": "جی‌پی‌تی-۳",
+   "kind": "model"
   }
  ]
 }
