@@ -7259,6 +7259,84 @@
    "name_en": "Tomak",
    "name_fa": "تومک",
    "kind": "person"
+  },
+  {
+   "slug": "navierstokes",
+   "name_en": "Navier–Stokes",
+   "name_fa": "ناویر-استوکس",
+   "kind": "model"
+  },
+  {
+   "slug": "paul-rabitsch",
+   "name_en": "Paul Rabitsch",
+   "name_fa": "پاول رابتسویچ",
+   "kind": "person"
+  },
+  {
+   "slug": "rad-nezhadadeh",
+   "name_en": "Rad Nezhadadeh",
+   "name_fa": "راد نیازاده",
+   "kind": "person"
+  },
+  {
+   "slug": "honen",
+   "name_en": "Honen",
+   "name_fa": "هونن",
+   "kind": "product"
+  },
+  {
+   "slug": "neuphonic",
+   "name_en": "Neuphonic",
+   "name_fa": "نیوفونیک",
+   "kind": "company"
+  },
+  {
+   "slug": "neudecide",
+   "name_en": "NeuDecide",
+   "name_fa": "نیو دسیاید",
+   "kind": "model"
+  },
+  {
+   "slug": "arena",
+   "name_en": "Arena",
+   "name_fa": "آرِنا",
+   "kind": "company"
+  },
+  {
+   "slug": "arena-alignment-index",
+   "name_en": "Arena Alignment Index",
+   "name_fa": "شاخص هم‌ترازی آرِنا",
+   "kind": "product"
+  },
+  {
+   "slug": "odyssey",
+   "name_en": "Odyssey",
+   "name_fa": "اودیسی",
+   "kind": "company"
+  },
+  {
+   "slug": "odyssey-3",
+   "name_en": "Odyssey-3",
+   "name_fa": "اودیسی-۳",
+   "kind": "model"
+  },
+  {
+   "slug": "odyssey-3-flash",
+   "name_en": "Odyssey-3 Flash",
+   "name_fa": "اودیسی-۳ فلش",
+   "kind": "model"
+  },
+  {
+   "slug": "step-5-preview",
+   "name_en": "Step 5 Preview",
+   "name_fa": "استپ ۵ پرِویو",
+   "kind": "model"
+  },
+  {
+   "slug": "intelligence-index-v5",
+   "name_en": "Intelligence Index v5",
+   "name_fa": "شاخص هوش نسخه ۵",
+   "kind": "product"
   }
  ]
 }
