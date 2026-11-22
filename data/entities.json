@@ -7703,6 +7703,48 @@
    "name_en": "Meetings",
    "name_fa": "میتینگز",
    "kind": "product"
+  },
+  {
+   "slug": "agentmail",
+   "name_en": "AgentMail",
+   "name_fa": "ایجنت‌میل",
+   "kind": "company"
+  },
+  {
+   "slug": "responses-api",
+   "name_en": "Responses API",
+   "name_fa": "ریسپانز‌ز ای‌پی‌آی",
+   "kind": "product"
+  },
+  {
+   "slug": "boris-cherny",
+   "name_en": "Boris Cherny",
+   "name_fa": "بوریس چرنی",
+   "kind": "person"
+  },
+  {
+   "slug": "gpt-5",
+   "name_en": "GPT-5",
+   "name_fa": "جی‌پی‌تی-۵",
+   "kind": "model"
+  },
+  {
+   "slug": "rohan-pandey",
+   "name_en": "Rohan Pandey",
+   "name_fa": "روهان پاندی",
+   "kind": "person"
+  },
+  {
+   "slug": "hang-wang",
+   "name_en": "Hang Wang",
+   "name_fa": "هانگ وانگ",
+   "kind": "person"
+  },
+  {
+   "slug": "kakeya-conjecture",
+   "name_en": "Kakeya Conjecture",
+   "name_fa": "حدس کاکیا",
+   "kind": "model"
   }
  ]
 }
