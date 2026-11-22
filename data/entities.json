@@ -10565,6 +10565,228 @@
    "name_en": "Caltech",
    "name_fa": "کلتک",
    "kind": "company"
+  },
+  {
+   "slug": "scott-bessent",
+   "name_en": "Scott Bessent",
+   "name_fa": "اسکات بسنت",
+   "kind": "person"
+  },
+  {
+   "slug": "iron-dome",
+   "name_en": "Iron Dome",
+   "name_fa": "گنبد آهنین",
+   "kind": "product"
+  },
+  {
+   "slug": "qwen-35-122b",
+   "name_en": "Qwen 3.5 122B",
+   "name_fa": "کوئن ۳.۵ ۱۲۲ بی",
+   "kind": "model"
+  },
+  {
+   "slug": "luca-guadagnino",
+   "name_en": "Luca Guadagnino",
+   "name_fa": "لوکا گوادانینو",
+   "kind": "person"
+  },
+  {
+   "slug": "gradium",
+   "name_en": "Gradium",
+   "name_fa": "گرادیوم",
+   "kind": "company"
+  },
+  {
+   "slug": "state-machines",
+   "name_en": "State Machines",
+   "name_fa": "استیت ماشینز",
+   "kind": "product"
+  },
+  {
+   "slug": "oui-1",
+   "name_en": "OUI-1",
+   "name_fa": "اوی-۱",
+   "kind": "model"
+  },
+  {
+   "slug": "jamba",
+   "name_en": "Jamba",
+   "name_fa": "جمبا",
+   "kind": "model"
+  },
+  {
+   "slug": "navier-stokes",
+   "name_en": "Navier-Stokes",
+   "name_fa": "ناویر-استوکس",
+   "kind": "model"
+  },
+  {
+   "slug": "sharif-university-of-technology",
+   "name_en": "Sharif University of Technology",
+   "name_fa": "دانشگاه شریف",
+   "kind": "company"
+  },
+  {
+   "slug": "levent",
+   "name_en": "Levent",
+   "name_fa": "لِوِنت",
+   "kind": "person"
+  },
+  {
+   "slug": "tristan",
+   "name_en": "Tristan",
+   "name_fa": "تِریستان",
+   "kind": "person"
+  },
+  {
+   "slug": "sebastian-bubeck",
+   "name_en": "Sebastian Bubeck",
+   "name_fa": "سباستین بوبک",
+   "kind": "person"
+  },
+  {
+   "slug": "mike-newell",
+   "name_en": "Mike Newell",
+   "name_fa": "مایک نوپ",
+   "kind": "person"
+  },
+  {
+   "slug": "tristan-backmaster",
+   "name_en": "Tristan Backmaster",
+   "name_fa": "تریستان باکمستر",
+   "kind": "person"
+  },
+  {
+   "slug": "lont-alpooge",
+   "name_en": "Lont Alpooge",
+   "name_fa": "لونت آلپوگه",
+   "kind": "person"
+  },
+  {
+   "slug": "chatgpt-images-25",
+   "name_en": "ChatGPT Images 2.5",
+   "name_fa": "چت‌جی‌پی‌تی امیجز ۲.۵",
+   "kind": "product"
+  },
+  {
+   "slug": "levent-alpoge",
+   "name_en": "Levent Alpoge",
+   "name_fa": "لِوِنت آلپوگه",
+   "kind": "person"
+  },
+  {
+   "slug": "millennium-prize",
+   "name_en": "Millennium Prize",
+   "name_fa": "جایزه هزاره",
+   "kind": "product"
+  },
+  {
+   "slug": "aiden-gomez",
+   "name_en": "Aiden Gomez",
+   "name_fa": "آیدن گومز",
+   "kind": "person"
+  },
+  {
+   "slug": "jacob-kaplan-cook",
+   "name_en": "Jacob Kaplan Cook",
+   "name_fa": "جیکوب کاپلان کوک",
+   "kind": "person"
+  },
+  {
+   "slug": "ivan-hubinger",
+   "name_en": "Ivan Hubinger",
+   "name_fa": "ایوان هوبینگر",
+   "kind": "person"
+  },
+  {
+   "slug": "gpt-image-25",
+   "name_en": "GPT-Image 2.5",
+   "name_fa": "چت‌جی‌پی‌تی امیج ۲.۵",
+   "kind": "product"
+  },
+  {
+   "slug": "charlie-gu",
+   "name_en": "Charlie Gu",
+   "name_fa": "چارلی گو",
+   "kind": "person"
+  },
+  {
+   "slug": "anthropic-economics-team",
+   "name_en": "Anthropic Economics Team",
+   "name_fa": "تیم اقتصاد آنتروپیک",
+   "kind": "person"
+  },
+  {
+   "slug": "ramp",
+   "name_en": "Ramp",
+   "name_fa": "رمپ",
+   "kind": "company"
+  },
+  {
+   "slug": "iphone-18-pro-max",
+   "name_en": "iPhone 18 Pro Max",
+   "name_fa": "آیفون ۱۸ پرو مکس",
+   "kind": "product"
+  },
+  {
+   "slug": "maryam-azimi",
+   "name_en": "Maryam Azimi",
+   "name_fa": "مریم عظیمی",
+   "kind": "person"
+  },
+  {
+   "slug": "pypi",
+   "name_en": "PyPI",
+   "name_fa": "پی‌پی‌آی",
+   "kind": "product"
+  },
+  {
+   "slug": "apple-watch",
+   "name_en": "Apple Watch",
+   "name_fa": "اپل واچ",
+   "kind": "product"
+  },
+  {
+   "slug": "defensive-factory",
+   "name_en": "Defensive Factory",
+   "name_fa": "کارخونه دفاعی",
+   "kind": "product"
+  },
+  {
+   "slug": "andreas-thom",
+   "name_en": "Andreas Thom",
+   "name_fa": "آندریاس توم",
+   "kind": "person"
+  },
+  {
+   "slug": "gabor-kuhn",
+   "name_en": "Gabor Kuhn",
+   "name_fa": "گابور کون",
+   "kind": "person"
+  },
+  {
+   "slug": "lone-alpoeg",
+   "name_en": "Lone Alpoeg",
+   "name_fa": "لون آلپوگه",
+   "kind": "person"
+  },
+  {
+   "slug": "ivan-haberkorn",
+   "name_en": "Ivan Haberkorn",
+   "name_fa": "ایوان هابینگر",
+   "kind": "person"
+  },
+  {
+   "slug": "clement-delang",
+   "name_en": "Clement Delang",
+   "name_fa": "کلمنت دلنگ",
+   "kind": "person"
+  },
+  {
+   "slug": "opendesign",
+   "name_en": "OpenDesign",
+   "name_fa": "اوپن‌دیزاین",
+   "kind": "company"
   }
  ]
 }
