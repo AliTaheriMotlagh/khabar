@@ -8483,6 +8483,60 @@
    "name_en": "Lockheed Martin",
    "name_fa": "لاکهید مارتین",
    "kind": "company"
+  },
+  {
+   "slug": "asbdc",
+   "name_en": "ASBDC",
+   "name_fa": "انجمن مراکز توسعه کسب‌وکارهای کوچک آمریکا",
+   "kind": "company"
+  },
+  {
+   "slug": "firewind",
+   "name_en": "Firewind",
+   "name_fa": "فِیرويند",
+   "kind": "product"
+  },
+  {
+   "slug": "peter-hegseth",
+   "name_en": "Peter Hegseth",
+   "name_fa": "پیتر هگست",
+   "kind": "person"
+  },
+  {
+   "slug": "newt-gingrich",
+   "name_en": "Newt Gingrich",
+   "name_fa": "نیوت گینگریچ",
+   "kind": "person"
+  },
+  {
+   "slug": "irs",
+   "name_en": "IRS",
+   "name_fa": "اداره مالیات آمریکا",
+   "kind": "company"
+  },
+  {
+   "slug": "gemini-40",
+   "name_en": "Gemini 4.0",
+   "name_fa": "جمینای ۴",
+   "kind": "model"
+  },
+  {
+   "slug": "blueprint-bench-2",
+   "name_en": "Blueprint-Bench 2",
+   "name_fa": "بلوپرینت بنچ ۲",
+   "kind": "product"
+  },
+  {
+   "slug": "synthid-bio",
+   "name_en": "SynthID Bio",
+   "name_fa": "سنث‌آی‌دی بیو",
+   "kind": "product"
+  },
+  {
+   "slug": "alphaproteo",
+   "name_en": "AlphaProteo",
+   "name_fa": "آلفا پروتئو",
+   "kind": "product"
   }
  ]
 }
