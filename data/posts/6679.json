@@ -1,0 +1,116 @@
+{
+ "id": 6679,
+ "url": "https://t.me/dlmehr/6679",
+ "date": "2026-11-22T16:40:15+00:00",
+ "text": "https://fxtwitter.com/niccruzpatane/status/2124354639399370872?a=B5c44uvbxEGD4kJT4H8&s=52",
+ "forwarded_from": null,
+ "digest": false,
+ "hash": "db53d6ea8a71",
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/niccruzpatane/status/2124354639399370872?a=B5c44uvbxEGD4kJT4H8&s=52",
+  "site": "FxTwitter",
+  "title": "Nic Cruz Patane (@niccruzpatane)",
+  "description": "This is absolutely INSANE\nTesla FSD V15 Reality View in a busy downtown setting",
+  "image": null
+ },
+ "gholam": {
+  "text": "رفیق، توی این پست کاربر niccruzpatane از نمایش «Reality View» نسخه ۱۵ سیستم FSD تسلا وسط یه مرکز شهر شلوغ حسابی ذوق‌زده شده و تعریفش رو کرده. البته چون تصویر همراه پست اینجا در دسترس نیست و توضیح دیگه‌ای هم ننوشته، دقیقاً معلوم نیست توی این نما چی نشون داده شده. 🚗",
+  "date": "2026-11-22T16:40:35+00:00"
+ },
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/niccruzpatane/status/2124354639399370872",
+   "domain": "x.com",
+   "author": {
+    "name": "Nic Cruz Patane",
+    "handle": "niccruzpatane",
+    "avatar": "https://pbs.twimg.com/profile_images/1805666868071391232/1qAqAOng_200x200.jpg"
+   },
+   "text": "This is absolutely INSANE\n\nTesla FSD V15 Reality View in a busy downtown setting",
+   "date": 1795320589,
+   "media": [
+    {
+     "type": "video",
+     "src": "https://video.twimg.com/amplify_video/2124354330807373824/vid/avc1/1280x720/lzGvnADYdjlJKFO6.mp4?tag=29",
+     "poster": "https://pbs.twimg.com/amplify_video_thumb/2124354330807373824/img/5kXxQ-tBQID4wg9M.jpg",
+     "ratio": 0.5625,
+     "duration": 25.466,
+     "gif": false
+    }
+   ],
+   "links": []
+  }
+ ],
+ "article": {
+  "title": "توی این پست کاربر niccruzpatane از نمایش «Reality View» نسخه ۱۵ سیستم FSD تسلا وسط یه مرکز شهر شلوغ حسابی ذوق‌زده شده و تعریفش رو کرده",
+  "source_title": "This is absolutely INSANE",
+  "body": [
+   "توی این پست کاربر niccruzpatane از نمایش «Reality View» نسخه ۱۵ سیستم FSD تسلا وسط یه مرکز شهر شلوغ حسابی ذوق‌زده شده و تعریفش رو کرده. البته چون تصویر همراه پست اینجا در دسترس نیست و توضیح دیگه‌ای هم ننوشته، دقیقاً معلوم نیست توی این نما چی نشون داده شده. 🚗"
+  ],
+  "why": null,
+  "tags": [
+   "ایلان ماسک"
+  ]
+ },
+ "updated": "2026-11-22T17:03:35+00:00",
+ "ai": {
+  "title": "کاربر niccruzpatane از نمایش Reality View نسخه ۱۵ سیستم FSD تسلا تعریف کرده",
+  "short": "Reality View نسخه ۱۵ تسلا",
+  "topics": [
+   "ایلان ماسک"
+  ],
+  "type": "خبر",
+  "model": "qwen3.5-9b-q4_k_m",
+  "v": 2,
+  "src": "1224d2988964",
+  "x": {
+   "importance": 2,
+   "entities": [
+    {
+     "name_en": "Tesla",
+     "name_fa": "تسلا",
+     "kind": "company"
+    },
+    {
+     "name_en": "FSD",
+     "name_fa": "سیستم FSD",
+     "kind": "product"
+    },
+    {
+     "name_en": "Reality View",
+     "name_fa": "رالییتی ویو",
+     "kind": "product"
+    }
+   ],
+   "terms": [],
+   "simple": "کاربرانی از نسخه جدید نمایش واقعیت در خودروهای تسلا لذت برده‌اند، اما چون عکس همراه پست نبود، دقیقاً مشخص نیست چه چیزی دیده‌اند.",
+   "quiz": {
+    "q": "وضعیت تصویر همراه پست کاربر niccruzpatane چیست؟",
+    "options": [
+     "تصویر بسیار باکیفیت و واضح است",
+     "تصویر همراه پست در دسترس نیست",
+     "تصویر فقط در نسخه پولی قابل مشاهده است"
+    ],
+    "answer": 1
+   },
+   "video": {
+    "hook": "کاربر از نمایش جدید تسلا ذوق‌زده شد، اما عکس کجاست؟",
+    "points": [
+     "کاربر niccruzpatane از Reality View نسخه ۱۵ تعریف کرده",
+     "نمایش در مرکز شهر شلوغ تست شده است",
+     "به دلیل نبود عکس، جزئیات دقیق مشخص نیست"
+    ],
+    "why": "نمایش‌های جدید واقعیت می‌توانند تجربه رانندگی خودران را متحول کنند."
+   },
+   "share": "کاربر از Reality View نسخه ۱۵ تسلا ذوق‌زده شد!\nاما عکس همراه پست نیست و جزئیات معلوم نیست.\n#Tesla #FSD #RealityView",
+   "status": "شایعه",
+   "models": [],
+   "events": [],
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 2,
+   "src": "aad7463cbb9c"
+  }
+ }
+}

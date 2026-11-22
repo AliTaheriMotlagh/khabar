@@ -9665,6 +9665,18 @@
    "name_en": "DeepSeek V4",
    "name_fa": "دیپ‌سیک V4",
    "kind": "model"
+  },
+  {
+   "slug": "fsd",
+   "name_en": "FSD",
+   "name_fa": "سیستم FSD",
+   "kind": "product"
+  },
+  {
+   "slug": "reality-view",
+   "name_en": "Reality View",
+   "name_fa": "رالییتی ویو",
+   "kind": "product"
   }
  ]
 }
