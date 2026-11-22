@@ -7745,6 +7745,132 @@
    "name_en": "Kakeya Conjecture",
    "name_fa": "حدس کاکیا",
    "kind": "model"
+  },
+  {
+   "slug": "thibaut-sottiaux",
+   "name_en": "Thibaut Sottiaux",
+   "name_fa": "تیبو سوتیو",
+   "kind": "person"
+  },
+  {
+   "slug": "mistral-large-4",
+   "name_en": "Mistral Large 4",
+   "name_fa": "میسترال لارج ۴",
+   "kind": "model"
+  },
+  {
+   "slug": "rebalancer",
+   "name_en": "Rebalancer",
+   "name_fa": "ری‌بالانسر",
+   "kind": "product"
+  },
+  {
+   "slug": "spintronics",
+   "name_en": "Spintronics",
+   "name_fa": "اسپین‌ترونیک",
+   "kind": "product"
+  },
+  {
+   "slug": "daron-acemoglu",
+   "name_en": "Daron Acemoglu",
+   "name_fa": "دارون عجم‌اوغلو",
+   "kind": "person"
+  },
+  {
+   "slug": "nano-banana-21",
+   "name_en": "Nano Banana 2.1",
+   "name_fa": "نانو بنانا ۲.۱",
+   "kind": "model"
+  },
+  {
+   "slug": "broadcom",
+   "name_en": "Broadcom",
+   "name_fa": "برودکام",
+   "kind": "company"
+  },
+  {
+   "slug": "cortexai",
+   "name_en": "CortexAI",
+   "name_fa": "کورتکس‌ای‌آی",
+   "kind": "company"
+  },
+  {
+   "slug": "cortex-harness",
+   "name_en": "Cortex Harness",
+   "name_fa": "کورتکس هارنس",
+   "kind": "product"
+  },
+  {
+   "slug": "sonia-bazaz",
+   "name_en": "Sonia Bazaz",
+   "name_fa": "سونیا باشز",
+   "kind": "person"
+  },
+  {
+   "slug": "silicon-valley",
+   "name_en": "Silicon Valley",
+   "name_fa": "سیلیکون ولی",
+   "kind": "company"
+  },
+  {
+   "slug": "oki-home",
+   "name_en": "Oki Home",
+   "name_fa": "اکی هوم",
+   "kind": "product"
+  },
+  {
+   "slug": "loofy",
+   "name_en": "Loofy",
+   "name_fa": "لووفی",
+   "kind": "company"
+  },
+  {
+   "slug": "google-docs",
+   "name_en": "Google Docs",
+   "name_fa": "گوگل داکس",
+   "kind": "product"
+  },
+  {
+   "slug": "google-sheets",
+   "name_en": "Google Sheets",
+   "name_fa": "گوگل شیت",
+   "kind": "product"
+  },
+  {
+   "slug": "google-slides",
+   "name_en": "Google Slides",
+   "name_fa": "گوگل اسلاید",
+   "kind": "product"
+  },
+  {
+   "slug": "minerva-humanoids",
+   "name_en": "Minerva Humanoids",
+   "name_fa": "مینروا هیومنویدز",
+   "kind": "company"
+  },
+  {
+   "slug": "roger",
+   "name_en": "Roger",
+   "name_fa": "راجر",
+   "kind": "product"
+  },
+  {
+   "slug": "sandor-flesher",
+   "name_en": "Sandor Flesher",
+   "name_fa": "ساندور فلبر",
+   "kind": "person"
+  },
+  {
+   "slug": "maurice-rahme",
+   "name_en": "Maurice Rahme",
+   "name_fa": "موریس رحمه",
+   "kind": "person"
+  },
+  {
+   "slug": "wire",
+   "name_en": "Wire",
+   "name_fa": "وایرد",
+   "kind": "company"
   }
  ]
 }
