@@ -7973,6 +7973,186 @@
    "name_en": "Ghost AI",
    "name_fa": "گوست ای‌آی",
    "kind": "company"
+  },
+  {
+   "slug": "alouk-bishoyi",
+   "name_en": "Alouk Bishoyi",
+   "name_fa": "آلوک بیشویی",
+   "kind": "person"
+  },
+  {
+   "slug": "routerplus",
+   "name_en": "routerPlus",
+   "name_fa": "راوتر پلاس",
+   "kind": "product"
+  },
+  {
+   "slug": "denny-chen",
+   "name_en": "Denny Chen",
+   "name_fa": "دنی چن",
+   "kind": "person"
+  },
+  {
+   "slug": "x",
+   "name_en": "X",
+   "name_fa": "ایکس",
+   "kind": "company"
+  },
+  {
+   "slug": "dara-khosrowshahi",
+   "name_en": "Dara Khosrowshahi",
+   "name_fa": "دارا خسروشاهی",
+   "kind": "person"
+  },
+  {
+   "slug": "uber",
+   "name_en": "Uber",
+   "name_fa": "اوبر",
+   "kind": "company"
+  },
+  {
+   "slug": "leana-lopez-lara",
+   "name_en": "Leana Lopéz Lara",
+   "name_fa": "لوانا لوپس لارا",
+   "kind": "person"
+  },
+  {
+   "slug": "calith",
+   "name_en": "Calith",
+   "name_fa": "کالشی",
+   "kind": "company"
+  },
+  {
+   "slug": "tibo",
+   "name_en": "Tibo",
+   "name_fa": "تیبو",
+   "kind": "person"
+  },
+  {
+   "slug": "gemini-38-flash",
+   "name_en": "Gemini 3.8 Flash",
+   "name_fa": "جمینای ۳.۸ فلش",
+   "kind": "model"
+  },
+  {
+   "slug": "cheatbench",
+   "name_en": "CheatBench",
+   "name_fa": "چیت‌بنچ",
+   "kind": "product"
+  },
+  {
+   "slug": "carl-decurtis",
+   "name_en": "Carl Decurtis",
+   "name_fa": "کارل دایسروت",
+   "kind": "person"
+  },
+  {
+   "slug": "peter-hegeman",
+   "name_en": "Peter Hegeman",
+   "name_fa": "پیتر هگمان",
+   "kind": "person"
+  },
+  {
+   "slug": "georg-nagel",
+   "name_en": "Georg Nagel",
+   "name_fa": "گئورگ ناگل",
+   "kind": "person"
+  },
+  {
+   "slug": "nobel-prize-in-physiology-or-medicine",
+   "name_en": "Nobel Prize in Physiology or Medicine",
+   "name_fa": "جایزه نوبل فیزیولوژی یا پزشکی",
+   "kind": "product"
+  },
+  {
+   "slug": "suleyman",
+   "name_en": "Suleyman",
+   "name_fa": "مصطفی سلیمان",
+   "kind": "person"
+  },
+  {
+   "slug": "trl",
+   "name_en": "TRL",
+   "name_fa": "تی‌آر‌ال",
+   "kind": "product"
+  },
+  {
+   "slug": "figure",
+   "name_en": "Figure",
+   "name_fa": "فیگور",
+   "kind": "company"
+  },
+  {
+   "slug": "reka",
+   "name_en": "Reka",
+   "name_fa": "ریکا",
+   "kind": "company"
+  },
+  {
+   "slug": "rho-1",
+   "name_en": "Rho-1",
+   "name_fa": "رو-۱",
+   "kind": "model"
+  },
+  {
+   "slug": "mark-levin",
+   "name_en": "Mark Levin",
+   "name_fa": "مارک لوین",
+   "kind": "person"
+  },
+  {
+   "slug": "new-york-city",
+   "name_en": "New York City",
+   "name_fa": "نیویورک",
+   "kind": "company"
+  },
+  {
+   "slug": "eu-ai-act",
+   "name_en": "EU AI Act",
+   "name_fa": "قانون هوش مصنوعی اتحادیه اروپا",
+   "kind": "product"
+  },
+  {
+   "slug": "artificial",
+   "name_en": "Artificial",
+   "name_fa": "آرتیفیشال",
+   "kind": "product"
+  },
+  {
+   "slug": "andrew-garfield",
+   "name_en": "Andrew Garfield",
+   "name_fa": "اندرو گارفیلد",
+   "kind": "person"
+  },
+  {
+   "slug": "nolla-health",
+   "name_en": "Nolla Health",
+   "name_fa": "نولا هلث",
+   "kind": "company"
+  },
+  {
+   "slug": "fda",
+   "name_en": "FDA",
+   "name_fa": "اداره غذا و داروی آمریکا",
+   "kind": "company"
+  },
+  {
+   "slug": "new-york-city-council",
+   "name_en": "New York City Council",
+   "name_fa": "شورای شهر نیویورک",
+   "kind": "company"
+  },
+  {
+   "slug": "emergency-off-switch",
+   "name_en": "Emergency Off Switch",
+   "name_fa": "کلید خاموشی اضطراری",
+   "kind": "product"
+  },
+  {
+   "slug": "kardashev-07",
+   "name_en": "Kardashev-0.7",
+   "name_fa": "کاردازف-۰.۷",
+   "kind": "product"
   }
  ]
 }
