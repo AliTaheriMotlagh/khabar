@@ -9473,6 +9473,198 @@
    "name_en": "Pocket FM",
    "name_fa": "پاکت اف‌ام",
    "kind": "company"
+  },
+  {
+   "slug": "ali-ghodsi",
+   "name_en": "Ali Ghodsi",
+   "name_fa": "علی قدسی",
+   "kind": "person"
+  },
+  {
+   "slug": "qwen-image-21",
+   "name_en": "Qwen-Image-2.1",
+   "name_fa": "کوئن-ایمج-۲.۱",
+   "kind": "model"
+  },
+  {
+   "slug": "instacart-ceo",
+   "name_en": "Instacart CEO",
+   "name_fa": "مدیرعامل اینستاکارت",
+   "kind": "person"
+  },
+  {
+   "slug": "alpha-school",
+   "name_en": "Alpha School",
+   "name_fa": "مدرسه آلفا",
+   "kind": "product"
+  },
+  {
+   "slug": "docjev",
+   "name_en": "DocJev",
+   "name_fa": "دک جی‌وی",
+   "kind": "product"
+  },
+  {
+   "slug": "liteparse",
+   "name_en": "LiteParse",
+   "name_fa": "لایت‌پارس",
+   "kind": "product"
+  },
+  {
+   "slug": "llamaparse",
+   "name_en": "LlamaParse",
+   "name_fa": "لاما‌پارس",
+   "kind": "product"
+  },
+  {
+   "slug": "hemmingway-1",
+   "name_en": "Hemmingway-1",
+   "name_fa": "همینگوی-۱",
+   "kind": "model"
+  },
+  {
+   "slug": "qwen38-27b",
+   "name_en": "Qwen3.8-27B",
+   "name_fa": "قوئن ۳.۸-۲۷ میلیارد",
+   "kind": "model"
+  },
+  {
+   "slug": "dex5-s",
+   "name_en": "Dex5-S",
+   "name_fa": "دکس ۵-اس",
+   "kind": "product"
+  },
+  {
+   "slug": "grok-47",
+   "name_en": "Grok 4.7",
+   "name_fa": "گرک ۴.۷",
+   "kind": "model"
+  },
+  {
+   "slug": "grok-46",
+   "name_en": "Grok 4.6",
+   "name_fa": "گرک ۴.۶",
+   "kind": "model"
+  },
+  {
+   "slug": "magnitude",
+   "name_en": "Magnitude",
+   "name_fa": "مگنیتود",
+   "kind": "product"
+  },
+  {
+   "slug": "mathematicians",
+   "name_en": "Mathematicians",
+   "name_fa": "ریاضیدان‌ها",
+   "kind": "person"
+  },
+  {
+   "slug": "mimo-v26",
+   "name_en": "MiMo-V2.6",
+   "name_fa": "میمو-وی-۲.۶",
+   "kind": "model"
+  },
+  {
+   "slug": "gpt-56",
+   "name_en": "GPT-5.6",
+   "name_fa": "جی‌پی‌تی ۵.۶",
+   "kind": "model"
+  },
+  {
+   "slug": "frya",
+   "name_en": "Frya",
+   "name_fa": "فریا",
+   "kind": "company"
+  },
+  {
+   "slug": "adam",
+   "name_en": "Adam",
+   "name_fa": "آدم",
+   "kind": "model"
+  },
+  {
+   "slug": "eve",
+   "name_en": "Eve",
+   "name_fa": "حوا",
+   "kind": "model"
+  },
+  {
+   "slug": "white-circle",
+   "name_en": "White Circle",
+   "name_fa": "وایت سیرکل",
+   "kind": "company"
+  },
+  {
+   "slug": "halo",
+   "name_en": "Halo",
+   "name_fa": "هالو",
+   "kind": "product"
+  },
+  {
+   "slug": "paradigma",
+   "name_en": "Paradigma",
+   "name_fa": "پارادigma",
+   "kind": "company"
+  },
+  {
+   "slug": "limite-1b-violetto",
+   "name_en": "Limite 1B - Violetto",
+   "name_fa": "لیمیت ۱ بی - وایولتو",
+   "kind": "model"
+  },
+  {
+   "slug": "edward-witten",
+   "name_en": "Edward Witten",
+   "name_fa": "ادوارد ویتن",
+   "kind": "person"
+  },
+  {
+   "slug": "timothy-gowers",
+   "name_en": "Timothy Gowers",
+   "name_fa": "تیموتی گاورز",
+   "kind": "person"
+  },
+  {
+   "slug": "openclaw",
+   "name_en": "OpenClaw",
+   "name_fa": "اوپن‌کلو",
+   "kind": "product"
+  },
+  {
+   "slug": "petal",
+   "name_en": "Petal",
+   "name_fa": "پتال",
+   "kind": "product"
+  },
+  {
+   "slug": "persian-language",
+   "name_en": "Persian Language",
+   "name_fa": "زبان فارسی",
+   "kind": "model"
+  },
+  {
+   "slug": "wahab-mirrakhimov",
+   "name_en": "Wahab Mirrakhimov",
+   "name_fa": "وهاب میررکنی",
+   "kind": "person"
+  },
+  {
+   "slug": "courtade-kumar-conjecture",
+   "name_en": "Courtade-Kumar conjecture",
+   "name_fa": "حدس کورتاد-کومار",
+   "kind": "model"
+  },
+  {
+   "slug": "mimo-26-pro",
+   "name_en": "Mimo 2.6 Pro",
+   "name_fa": "میمو ۲.۶ پرو",
+   "kind": "model"
+  },
+  {
+   "slug": "deepseek-v4",
+   "name_en": "DeepSeek V4",
+   "name_fa": "دیپ‌سیک V4",
+   "kind": "model"
   }
  ]
 }
