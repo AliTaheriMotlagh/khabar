@@ -8735,6 +8735,150 @@
    "name_en": "Flourish 1",
    "name_fa": "فلوریش وان",
    "kind": "product"
+  },
+  {
+   "slug": "harvard",
+   "name_en": "Harvard",
+   "name_fa": "هاروارد",
+   "kind": "company"
+  },
+  {
+   "slug": "sharparobotics",
+   "name_en": "SharpaRobotics",
+   "name_fa": "شارپا رباتیکس",
+   "kind": "company"
+  },
+  {
+   "slug": "jonathan-stephens",
+   "name_en": "Jonathan Stephens",
+   "name_fa": "جاناتان استفنز",
+   "kind": "person"
+  },
+  {
+   "slug": "sarah-gu",
+   "name_en": "Sarah Gu",
+   "name_fa": "سارا گو",
+   "kind": "person"
+  },
+  {
+   "slug": "deformx",
+   "name_en": "DeformX",
+   "name_fa": "دفرم‌ایکس",
+   "kind": "model"
+  },
+  {
+   "slug": "nvidia-isaac-sim",
+   "name_en": "NVIDIA Isaac Sim",
+   "name_fa": "انویدیا آیزاک سیم",
+   "kind": "product"
+  },
+  {
+   "slug": "iros",
+   "name_en": "IROS",
+   "name_fa": "ای‌آر‌او‌اس",
+   "kind": "product"
+  },
+  {
+   "slug": "open-agent-safety-platform",
+   "name_en": "Open Agent Safety Platform",
+   "name_fa": "پلتفرم ایمنی ایجنت‌های باز انویدیا",
+   "kind": "product"
+  },
+  {
+   "slug": "openshell",
+   "name_en": "OpenShell",
+   "name_fa": "اپن‌شل",
+   "kind": "product"
+  },
+  {
+   "slug": "sentry",
+   "name_en": "Sentry",
+   "name_fa": "سنتری",
+   "kind": "product"
+  },
+  {
+   "slug": "cognitive-divergence",
+   "name_en": "Cognitive Divergence",
+   "name_fa": "واگرایی شناختی",
+   "kind": "model"
+  },
+  {
+   "slug": "agent-wars",
+   "name_en": "AGENT WARS",
+   "name_fa": "ایجنت وارز",
+   "kind": "company"
+  },
+  {
+   "slug": "mongodb",
+   "name_en": "MongoDB",
+   "name_fa": "مانگو‌دی‌بی",
+   "kind": "company"
+  },
+  {
+   "slug": "cj-desai",
+   "name_en": "CJ Desai",
+   "name_fa": "سی‌جی دسای",
+   "kind": "person"
+  },
+  {
+   "slug": "eleven-v4",
+   "name_en": "Eleven v4",
+   "name_fa": "الون v4",
+   "kind": "model"
+  },
+  {
+   "slug": "eleven-v4-turbo",
+   "name_en": "Eleven v4 Turbo",
+   "name_fa": "الون v4 توربو",
+   "kind": "model"
+  },
+  {
+   "slug": "dyna-robotics",
+   "name_en": "Dyna Robotics",
+   "name_fa": "داینا رباتیکس",
+   "kind": "company"
+  },
+  {
+   "slug": "dyna-robot",
+   "name_en": "Dyna Robot",
+   "name_fa": "ربات داینا",
+   "kind": "product"
+  },
+  {
+   "slug": "manus",
+   "name_en": "Manus",
+   "name_fa": "منوس",
+   "kind": "company"
+  },
+  {
+   "slug": "cue",
+   "name_en": "Cue",
+   "name_fa": "کیو",
+   "kind": "product"
+  },
+  {
+   "slug": "mo",
+   "name_en": "Mo",
+   "name_fa": "مو",
+   "kind": "product"
+  },
+  {
+   "slug": "playwright",
+   "name_en": "Playwright",
+   "name_fa": "پلی‌رایت",
+   "kind": "product"
+  },
+  {
+   "slug": "fo",
+   "name_en": "Fo",
+   "name_fa": "فو",
+   "kind": "product"
+  },
+  {
+   "slug": "shibani-sankar",
+   "name_en": "Shibani Sankar",
+   "name_fa": "شیبانی سانکار",
+   "kind": "person"
   }
  ]
 }
