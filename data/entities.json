@@ -8537,6 +8537,120 @@
    "name_en": "AlphaProteo",
    "name_fa": "آلفا پروتئو",
    "kind": "product"
+  },
+  {
+   "slug": "dots",
+   "name_en": "Dots",
+   "name_fa": "داتس",
+   "kind": "product"
+  },
+  {
+   "slug": "astra-ultrafast",
+   "name_en": "Astra Ultrafast",
+   "name_fa": "آسترا اولترا‌فست",
+   "kind": "model"
+  },
+  {
+   "slug": "luna",
+   "name_en": "Luna",
+   "name_fa": "لونا",
+   "kind": "model"
+  },
+  {
+   "slug": "piedmont",
+   "name_en": "Piedmont",
+   "name_fa": "پیدمونت",
+   "kind": "company"
+  },
+  {
+   "slug": "shil-mohnot",
+   "name_en": "Shil Mohnot",
+   "name_fa": "شیل موهنوت",
+   "kind": "person"
+  },
+  {
+   "slug": "huggingface",
+   "name_en": "HuggingFace",
+   "name_fa": "هگینگ‌فیس",
+   "kind": "company"
+  },
+  {
+   "slug": "kit-ivanova",
+   "name_en": "Kit Ivanova",
+   "name_fa": "کیت ایوانوا",
+   "kind": "person"
+  },
+  {
+   "slug": "ai-native-funeral-company",
+   "name_en": "AI-native funeral company",
+   "name_fa": "شرکت ترحیم مبتنی بر هوش مصنوعی",
+   "kind": "product"
+  },
+  {
+   "slug": "ideogram",
+   "name_en": "Ideogram",
+   "name_fa": "آیدیوگرام",
+   "kind": "company"
+  },
+  {
+   "slug": "ideogram-45",
+   "name_en": "Ideogram 4.5",
+   "name_fa": "آیدیوگرام ۴.۵",
+   "kind": "model"
+  },
+  {
+   "slug": "doordash-air",
+   "name_en": "DoorDash Air",
+   "name_fa": "دوردش اِر",
+   "kind": "product"
+  },
+  {
+   "slug": "stanley-tang",
+   "name_en": "Stanley Tang",
+   "name_fa": "استنلی تانگ",
+   "kind": "person"
+  },
+  {
+   "slug": "alpha",
+   "name_en": "Alpha",
+   "name_fa": "آلف",
+   "kind": "product"
+  },
+  {
+   "slug": "ryan-mcguire",
+   "name_en": "Ryan McGuire",
+   "name_fa": "ریان مک‌گیور",
+   "kind": "person"
+  },
+  {
+   "slug": "dylan-mcguire",
+   "name_en": "Dylan McGuire",
+   "name_fa": "دیلان مک‌گیور",
+   "kind": "person"
+  },
+  {
+   "slug": "white-house-accord-on-super-intelligence",
+   "name_en": "White House Accord on Super Intelligence",
+   "name_fa": "پیمان ابرهوش مصنوعی کاخ سفید",
+   "kind": "product"
+  },
+  {
+   "slug": "ant-ling",
+   "name_en": "Ant Ling",
+   "name_fa": "آنت لینگ",
+   "kind": "company"
+  },
+  {
+   "slug": "ling-31-flash",
+   "name_en": "Ling-3.1-flash",
+   "name_fa": "لینگ ۳.۱ فلش",
+   "kind": "model"
+  },
+  {
+   "slug": "kimi",
+   "name_en": "Kimi",
+   "name_fa": "کیمی",
+   "kind": "model"
   }
  ]
 }
