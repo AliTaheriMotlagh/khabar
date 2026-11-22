@@ -8345,6 +8345,144 @@
    "name_en": "Trans Tao",
    "name_fa": "ترنس تائو",
    "kind": "person"
+  },
+  {
+   "slug": "toposbio",
+   "name_en": "ToposBio",
+   "name_fa": "توپوس‌بیو",
+   "kind": "company"
+  },
+  {
+   "slug": "topos-2",
+   "name_en": "Topos-2",
+   "name_fa": "توپوس-۲",
+   "kind": "model"
+  },
+  {
+   "slug": "topos-bind",
+   "name_en": "Topos-Bind",
+   "name_fa": "توپوس-بایند",
+   "kind": "product"
+  },
+  {
+   "slug": "griffin",
+   "name_en": "Griffin",
+   "name_fa": "گریفین",
+   "kind": "model"
+  },
+  {
+   "slug": "wsj",
+   "name_en": "WSJ",
+   "name_fa": "وال‌استریت ژورنال",
+   "kind": "company"
+  },
+  {
+   "slug": "safety-team",
+   "name_en": "Safety Team",
+   "name_fa": "تیم ایمنی",
+   "kind": "product"
+  },
+  {
+   "slug": "matthew-schwartz",
+   "name_en": "Matthew Schwartz",
+   "name_fa": "متیو شوارتز",
+   "kind": "person"
+  },
+  {
+   "slug": "bootloops",
+   "name_en": "BootLoops",
+   "name_fa": "بوت‌لوپس",
+   "kind": "product"
+  },
+  {
+   "slug": "pplx-decider-v1-27b",
+   "name_en": "pplx-decider-v1-27b",
+   "name_fa": "پپلز-دیسایدر-وی-۱-۲۷بی",
+   "kind": "model"
+  },
+  {
+   "slug": "fastin-labs",
+   "name_en": "Fastin Labs",
+   "name_fa": "فستینو لبز",
+   "kind": "company"
+  },
+  {
+   "slug": "alberto-rodriguez",
+   "name_en": "Alberto Rodriguez",
+   "name_fa": "آلبرتو رودریگز",
+   "kind": "person"
+  },
+  {
+   "slug": "niko-boulinger",
+   "name_en": "Niko Boulinger",
+   "name_fa": "نیکو بولینگر",
+   "kind": "person"
+  },
+  {
+   "slug": "gamma-zero",
+   "name_en": "Gamma Zero",
+   "name_fa": "گاما زیرو",
+   "kind": "model"
+  },
+  {
+   "slug": "kulalo",
+   "name_en": "Kulalo",
+   "name_fa": "کالب لو",
+   "kind": "company"
+  },
+  {
+   "slug": "mirai",
+   "name_en": "Mirai",
+   "name_fa": "میرای",
+   "kind": "product"
+  },
+  {
+   "slug": "nicolas-maduro",
+   "name_en": "Nicolás Maduro",
+   "name_fa": "نیکولاس مادورو",
+   "kind": "person"
+  },
+  {
+   "slug": "innate",
+   "name_en": "Innate",
+   "name_fa": "اینیت",
+   "kind": "company"
+  },
+  {
+   "slug": "federated-learning",
+   "name_en": "Federated Learning",
+   "name_fa": "یادگیری فدرال",
+   "kind": "model"
+  },
+  {
+   "slug": "trillium-labs",
+   "name_en": "Trillium Labs",
+   "name_fa": "تریلیوم لبز",
+   "kind": "company"
+  },
+  {
+   "slug": "tom-zick",
+   "name_en": "Tom Zick",
+   "name_fa": "تام زیک",
+   "kind": "person"
+  },
+  {
+   "slug": "schmidt-science",
+   "name_en": "Schmidt Science",
+   "name_fa": "اشمیت ساینسز",
+   "kind": "company"
+  },
+  {
+   "slug": "preload",
+   "name_en": "Preload",
+   "name_fa": "پری‌لود",
+   "kind": "company"
+  },
+  {
+   "slug": "lockheed-martin",
+   "name_en": "Lockheed Martin",
+   "name_fa": "لاکهید مارتین",
+   "kind": "company"
   }
  ]
 }
