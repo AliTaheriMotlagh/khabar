@@ -62,6 +62,83 @@
   "type": "ابزار و محصول",
   "model": "qwen3.5-9b-q4_k_m",
   "v": 2,
-  "src": "6838f75c78eb"
+  "src": "6838f75c78eb",
+  "x": {
+   "importance": 4,
+   "entities": [
+    {
+     "name_en": "Cline",
+     "name_fa": "کلاین",
+     "kind": "product"
+    },
+    {
+     "name_en": "Pixel Canary",
+     "name_fa": "پیکسل کاناری",
+     "kind": "model"
+    },
+    {
+     "name_en": "GPT-6 Astra",
+     "name_fa": "جی‌پی‌تی-۶ آسترا",
+     "kind": "model"
+    },
+    {
+     "name_en": "Kimi K3",
+     "name_fa": "کیمی کی۳",
+     "kind": "model"
+    }
+   ],
+   "terms": [
+    {
+     "term": "بنچمارک",
+     "def": "آزمون استاندارد برای سنجش و مقایسه عملکرد مدل‌ها یا نرم‌افزارها."
+    },
+    {
+     "term": "Next.js Agent Evals",
+     "def": "معیار ارزیابی تخصصی برای سنجش توانایی هوش‌های مصنوعی در مدیریت پروژه‌های واقعی وب و موبایل."
+    }
+   ],
+   "simple": "تیم Cline یک هوش مصنوعی جدید به نام Pixel Canary را کاملاً رایگان منتشر کرد. این مدل در آزمون‌های تخصصی وب و موبایل عملکردی نزدیک به مدل‌های قدرتمند دیگر دارد و برای برنامه‌نویسان بسیار مفید است.",
+   "quiz": {
+    "q": "Pixel Canary در کدام بنچمارک عملکرد خوبی نشان داده است؟",
+    "options": [
+     "Next.js Agent Evals",
+     "Image Quality Test",
+     "Voice Recognition Benchmark"
+    ],
+    "answer": 0
+   },
+   "video": {
+    "hook": "مدل رایگان جدید Pixel Canary قدرت مدل‌های پولی را دارد!",
+    "points": [
+     "تیم Cline مدل Pixel Canary را به صورت رایگان عرضه کرد",
+     "این مدل در بنچمارک Next.js Agent Evals عملکردی نزدیک به GPT-6 Astra دارد",
+     "دسترسی به این ابزار قدرتمند بدون هزینه، سرعت توسعه را افزایش می‌دهد"
+    ],
+    "why": "دسترسی رایگان به ابزارهای سطح بالا، شکاف بین توسعه‌دهندگان و کیفیت پروژه‌ها را پر می‌کند."
+   },
+   "share": "مدل رایگان Pixel Canary توسط Cline عرضه شد!\nعملکردی نزدیک به GPT-6 Astra در پروژه‌های وب.\n#Cline #PixelCanary #هوش_مصنوعی",
+   "status": "گزارش",
+   "models": [
+    {
+     "name": "Pixel Canary",
+     "maker": "تیم Cline",
+     "scores": []
+    },
+    {
+     "name": "GPT-6 Astra",
+     "maker": "نام‌شده",
+     "scores": []
+    },
+    {
+     "name": "Kimi K3",
+     "maker": "نام‌شده",
+     "scores": []
+    }
+   ],
+   "events": [],
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 2,
+   "src": "9882cc1229dc"
+  }
  }
 }

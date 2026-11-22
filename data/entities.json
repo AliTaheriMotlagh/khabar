@@ -8963,6 +8963,114 @@
    "name_en": "Gary Gensler",
    "name_fa": "گری گنسلر",
    "kind": "person"
+  },
+  {
+   "slug": "james-maynard",
+   "name_en": "James Maynard",
+   "name_fa": "جیمز مینارد",
+   "kind": "person"
+  },
+  {
+   "slug": "oxford-university",
+   "name_en": "Oxford University",
+   "name_fa": "دانشگاه آکسفورد",
+   "kind": "company"
+  },
+  {
+   "slug": "xavier-gomez",
+   "name_en": "Xavier Gomez",
+   "name_fa": "خاویر گومز",
+   "kind": "person"
+  },
+  {
+   "slug": "brown-university",
+   "name_en": "Brown University",
+   "name_fa": "دانشگاه براون",
+   "kind": "company"
+  },
+  {
+   "slug": "microagi",
+   "name_en": "microagi",
+   "name_fa": "مایکرو‌اِجی",
+   "kind": "company"
+  },
+  {
+   "slug": "us-government",
+   "name_en": "U.S. government",
+   "name_fa": "دولت آمریکا",
+   "kind": "company"
+  },
+  {
+   "slug": "lens-dixon",
+   "name_en": "Lens Dixon",
+   "name_fa": "لنس دیکسون",
+   "kind": "person"
+  },
+  {
+   "slug": "claude-haiku",
+   "name_en": "Claude Haiku",
+   "name_fa": "کلود هایکو",
+   "kind": "model"
+  },
+  {
+   "slug": "tom-korbak",
+   "name_en": "Tom Korbak",
+   "name_fa": "توم کورباک",
+   "kind": "person"
+  },
+  {
+   "slug": "genjutsu",
+   "name_en": "Genjutsu",
+   "name_fa": "جنجوتسو",
+   "kind": "product"
+  },
+  {
+   "slug": "jiaoran-wang",
+   "name_en": "Jiaoran Wang",
+   "name_fa": "ژائوران وانگ",
+   "kind": "person"
+  },
+  {
+   "slug": "cline",
+   "name_en": "Cline",
+   "name_fa": "کلاین",
+   "kind": "product"
+  },
+  {
+   "slug": "pixel-canary",
+   "name_en": "Pixel Canary",
+   "name_fa": "پیکسل کاناری",
+   "kind": "model"
+  },
+  {
+   "slug": "eyecandy-robotics",
+   "name_en": "Eyecandy Robotics",
+   "name_fa": "ایکندای رباتیکس",
+   "kind": "company"
+  },
+  {
+   "slug": "ukraine",
+   "name_en": "Ukraine",
+   "name_fa": "اوکراین",
+   "kind": "company"
+  },
+  {
+   "slug": "mykhailo-fedorov",
+   "name_en": "Mykhailo Fedorov",
+   "name_fa": "میخائیلو فدوروف",
+   "kind": "person"
+  },
+  {
+   "slug": "army-of-robots",
+   "name_en": "Army of Robots",
+   "name_fa": "ارتش ربات‌ها",
+   "kind": "product"
+  },
+  {
+   "slug": "bill-gates",
+   "name_en": "Bill Gates",
+   "name_fa": "بیل گیتس",
+   "kind": "person"
   }
  ]
 }
