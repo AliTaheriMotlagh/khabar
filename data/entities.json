@@ -9311,6 +9311,168 @@
    "name_en": "Protein Structure",
    "name_fa": "ساختار پروتئین",
    "kind": "product"
+  },
+  {
+   "slug": "mimo-v26-flash",
+   "name_en": "MiMo V2.6 Flash",
+   "name_fa": "می‌مو نسخه ۲.۶ فلش",
+   "kind": "model"
+  },
+  {
+   "slug": "mimo-v26-pro",
+   "name_en": "MiMo V2.6 Pro",
+   "name_fa": "می‌مو نسخه ۲.۶ پرو",
+   "kind": "model"
+  },
+  {
+   "slug": "claude-fable-51",
+   "name_en": "Claude Fable 5.1",
+   "name_fa": "کلود فبل ۵.۱",
+   "kind": "model"
+  },
+  {
+   "slug": "claude-opus-5",
+   "name_en": "Claude Opus 5",
+   "name_fa": "کلود اوپوس ۵",
+   "kind": "model"
+  },
+  {
+   "slug": "christian-alton",
+   "name_en": "Christian Alton",
+   "name_fa": "کریستین التون",
+   "kind": "person"
+  },
+  {
+   "slug": "ming-image-01",
+   "name_en": "Ming Image-0.1",
+   "name_fa": "مینگ امیج ۰.۱",
+   "kind": "model"
+  },
+  {
+   "slug": "c-hd",
+   "name_en": "C-HD",
+   "name_fa": "سی‌ایچ‌دی",
+   "kind": "product"
+  },
+  {
+   "slug": "mckinsey",
+   "name_en": "McKinsey",
+   "name_fa": "موسسه مکنزی",
+   "kind": "company"
+  },
+  {
+   "slug": "swe-bench-pro-v2",
+   "name_en": "SWE-Bench Pro V2",
+   "name_fa": "اس‌وی‌ای-بنچ پرو نسخه دوم",
+   "kind": "product"
+  },
+  {
+   "slug": "ai-benchmarks",
+   "name_en": "AI Benchmarks",
+   "name_fa": "بنچمارک‌های هوش مصنوعی",
+   "kind": "product"
+  },
+  {
+   "slug": "mse-319",
+   "name_en": "MS&E 319",
+   "name_fa": "دوره MS&E 319",
+   "kind": "product"
+  },
+  {
+   "slug": "amin-karbasi",
+   "name_en": "Amin Karbasi",
+   "name_fa": "امین کرباسی",
+   "kind": "person"
+  },
+  {
+   "slug": "openmuse",
+   "name_en": "OpenMuse",
+   "name_fa": "اوپن‌میوز",
+   "kind": "product"
+  },
+  {
+   "slug": "atai-barkai",
+   "name_en": "Atai Barkai",
+   "name_fa": "آتای بارکای",
+   "kind": "person"
+  },
+  {
+   "slug": "copailotkit",
+   "name_en": "Copailotkit",
+   "name_fa": "کوپایلت‌کیت",
+   "kind": "product"
+  },
+  {
+   "slug": "call-center",
+   "name_en": "Call Center",
+   "name_fa": "کال‌سنتر",
+   "kind": "product"
+  },
+  {
+   "slug": "unreal-labs",
+   "name_en": "Unreal Labs",
+   "name_fa": "یونریال لبز",
+   "kind": "company"
+  },
+  {
+   "slug": "unreal-agent",
+   "name_en": "Unreal Agent",
+   "name_fa": "یونریل ایجنت",
+   "kind": "product"
+  },
+  {
+   "slug": "terminal-bench-40",
+   "name_en": "Terminal-Bench 4.0",
+   "name_fa": "ترمینال بنچ ۴",
+   "kind": "product"
+  },
+  {
+   "slug": "qwen-audio-31",
+   "name_en": "Qwen-Audio 3.1",
+   "name_fa": "قوئن-آودियो ۳.۱",
+   "kind": "model"
+  },
+  {
+   "slug": "asr-next",
+   "name_en": "ASR-Next",
+   "name_fa": "ای‌اس‌آر-نکست",
+   "kind": "model"
+  },
+  {
+   "slug": "tts-next",
+   "name_en": "TTS-Next",
+   "name_fa": "تی‌تی‌اس-نکست",
+   "kind": "model"
+  },
+  {
+   "slug": "united-kingdom",
+   "name_en": "United Kingdom",
+   "name_fa": "بریتانیا",
+   "kind": "company"
+  },
+  {
+   "slug": "g20",
+   "name_en": "G20",
+   "name_fa": "گروه ۲۰",
+   "kind": "company"
+  },
+  {
+   "slug": "andy-burnham",
+   "name_en": "Andy Burnham",
+   "name_fa": "اندی برنهام",
+   "kind": "person"
+  },
+  {
+   "slug": "sherpa",
+   "name_en": "Sherpa",
+   "name_fa": "شرپا",
+   "kind": "model"
+  },
+  {
+   "slug": "pocket-fm",
+   "name_en": "Pocket FM",
+   "name_fa": "پاکت اف‌ام",
+   "kind": "company"
   }
  ]
 }
