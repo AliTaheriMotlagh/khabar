@@ -9989,6 +9989,228 @@
    "name_en": "Noam Brown",
    "name_fa": "نوآم براون",
    "kind": "person"
+  },
+  {
+   "slug": "taste-labs",
+   "name_en": "Taste Labs",
+   "name_fa": "تِیست لبز",
+   "kind": "company"
+  },
+  {
+   "slug": "tais-castelo-branco",
+   "name_en": "Taís Castelo Branco",
+   "name_fa": "تائیس کاستلو برانکو",
+   "kind": "person"
+  },
+  {
+   "slug": "amplify-partners",
+   "name_en": "Amplify Partners",
+   "name_fa": "آمپلیفای پارتنرز",
+   "kind": "company"
+  },
+  {
+   "slug": "vidu",
+   "name_en": "Vidu",
+   "name_fa": "وی‌دیو",
+   "kind": "company"
+  },
+  {
+   "slug": "vidu-s2",
+   "name_en": "Vidu S2",
+   "name_fa": "وی‌دیو S2",
+   "kind": "product"
+  },
+  {
+   "slug": "liam-fados",
+   "name_en": "Liam Fados",
+   "name_fa": "لیام فدوس",
+   "kind": "person"
+  },
+  {
+   "slug": "gemini-deepthink-mathematica",
+   "name_en": "Gemini DeepThink Mathematica",
+   "name_fa": "جمینای دیپ‌تینک متمتیکا",
+   "kind": "model"
+  },
+  {
+   "slug": "kaitra",
+   "name_en": "Kaitra",
+   "name_fa": "کایترا",
+   "kind": "person"
+  },
+  {
+   "slug": "fixedsid",
+   "name_en": "FixedSid",
+   "name_fa": "فیکسد‌سید",
+   "kind": "company"
+  },
+  {
+   "slug": "yue2",
+   "name_en": "YuE2",
+   "name_fa": "یو ای دو",
+   "kind": "product"
+  },
+  {
+   "slug": "music",
+   "name_en": "Music",
+   "name_fa": "میوز",
+   "kind": "product"
+  },
+  {
+   "slug": "kevin-bass",
+   "name_en": "Kevin Bass",
+   "name_fa": "کوین باس",
+   "kind": "person"
+  },
+  {
+   "slug": "nils-rogge",
+   "name_en": "Nils Rogge",
+   "name_fa": "نیلز روگه",
+   "kind": "person"
+  },
+  {
+   "slug": "qwen25-rlcd",
+   "name_en": "Qwen2.5-RLCD",
+   "name_fa": "قوئن ۲.۵-آر‌ال‌سی‌دی",
+   "kind": "model"
+  },
+  {
+   "slug": "novo-nordisk",
+   "name_en": "Novo Nordisk",
+   "name_fa": "نووو نوردیسک",
+   "kind": "company"
+  },
+  {
+   "slug": "hersha-gondala",
+   "name_en": "Hersha Gondala",
+   "name_fa": "هرشا گوندالا",
+   "kind": "person"
+  },
+  {
+   "slug": "qwen-25-1b-rlcd",
+   "name_en": "Qwen-2.5-1B-RLCD",
+   "name_fa": "قوئن ۲.۵-۱بی-آر‌ال‌سی‌دی",
+   "kind": "model"
+  },
+  {
+   "slug": "kalypta",
+   "name_en": "Kalypta",
+   "name_fa": "کالیپتا",
+   "kind": "product"
+  },
+  {
+   "slug": "granola",
+   "name_en": "Granola",
+   "name_fa": "گرانولا",
+   "kind": "product"
+  },
+  {
+   "slug": "visperflow",
+   "name_en": "VisperFlow",
+   "name_fa": "ویسپرفلو",
+   "kind": "product"
+  },
+  {
+   "slug": "claude-docs",
+   "name_en": "Claude Docs",
+   "name_fa": "کلود داکس",
+   "kind": "product"
+  },
+  {
+   "slug": "claude-slides",
+   "name_en": "Claude Slides",
+   "name_fa": "کلود اسلایدز",
+   "kind": "product"
+  },
+  {
+   "slug": "claude-design",
+   "name_en": "Claude Design",
+   "name_fa": "کلود دیزاین",
+   "kind": "product"
+  },
+  {
+   "slug": "noah-shin",
+   "name_en": "Noah Shin",
+   "name_fa": "نوآ شین",
+   "kind": "person"
+  },
+  {
+   "slug": "tech-industry",
+   "name_en": "Tech Industry",
+   "name_fa": "صنعت فناوری",
+   "kind": "company"
+  },
+  {
+   "slug": "software-engineering",
+   "name_en": "Software Engineering",
+   "name_fa": "مهندسی نرم‌افزار",
+   "kind": "product"
+  },
+  {
+   "slug": "folly-lu",
+   "name_en": "Folly Lu",
+   "name_fa": "فولی لو",
+   "kind": "company"
+  },
+  {
+   "slug": "flash",
+   "name_en": "Flash",
+   "name_fa": "فلش",
+   "kind": "model"
+  },
+  {
+   "slug": "mark-cuban",
+   "name_en": "Mark Cuban",
+   "name_fa": "مارک کوبان",
+   "kind": "person"
+  },
+  {
+   "slug": "hadi-partovi",
+   "name_en": "Hadi Partovi",
+   "name_fa": "هادی پرتوی",
+   "kind": "person"
+  },
+  {
+   "slug": "piano-music",
+   "name_en": "Piano Music",
+   "name_fa": "پیام موزیک",
+   "kind": "product"
+  },
+  {
+   "slug": "zack-voisey",
+   "name_en": "Zack Voisey",
+   "name_fa": "زک ورهیز",
+   "kind": "person"
+  },
+  {
+   "slug": "andrew-young",
+   "name_en": "Andrew Young",
+   "name_fa": "اندرو یانگ",
+   "kind": "person"
+  },
+  {
+   "slug": "quiverai",
+   "name_en": "QuiverAI",
+   "name_fa": "کوور‌آی‌آی",
+   "kind": "company"
+  },
+  {
+   "slug": "arrow-2",
+   "name_en": "Arrow 2",
+   "name_fa": "آرو ۲",
+   "kind": "product"
+  },
+  {
+   "slug": "snapshot",
+   "name_en": "Snapshot",
+   "name_fa": "اسنپ‌شات",
+   "kind": "product"
+  },
+  {
+   "slug": "pentagraph",
+   "name_en": "Pentagraph",
+   "name_fa": "پنتوگراف",
+   "kind": "company"
   }
  ]
 }
