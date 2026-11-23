@@ -12347,6 +12347,120 @@
    "name_en": "Meteoric",
    "name_fa": "متئوریک",
    "kind": "company"
+  },
+  {
+   "slug": "cosmic-robotics",
+   "name_en": "Cosmic Robotics",
+   "name_fa": "کاسمیک رباتیکس",
+   "kind": "company"
+  },
+  {
+   "slug": "trill",
+   "name_en": "Trill",
+   "name_fa": "تریل",
+   "kind": "company"
+  },
+  {
+   "slug": "generalist",
+   "name_en": "Generalist",
+   "name_fa": "جنرالیست",
+   "kind": "company"
+  },
+  {
+   "slug": "gen-15",
+   "name_en": "GEN-1.5",
+   "name_fa": "جن-۱.۵",
+   "kind": "model"
+  },
+  {
+   "slug": "mark-benioff",
+   "name_en": "Mark Benioff",
+   "name_fa": "مارک بنیوف",
+   "kind": "person"
+  },
+  {
+   "slug": "bartholomew",
+   "name_en": "Bartholomew",
+   "name_fa": "بارت مول",
+   "kind": "person"
+  },
+  {
+   "slug": "umi",
+   "name_en": "UMI",
+   "name_fa": "یو‌ام‌آی",
+   "kind": "product"
+  },
+  {
+   "slug": "waymo-driver",
+   "name_en": "Waymo Driver",
+   "name_fa": "ویمو درایور",
+   "kind": "product"
+  },
+  {
+   "slug": "apple-messages",
+   "name_en": "Apple Messages",
+   "name_fa": "اپل مسیجز",
+   "kind": "product"
+  },
+  {
+   "slug": "google-one",
+   "name_en": "Google One",
+   "name_fa": "گوگل وان",
+   "kind": "product"
+  },
+  {
+   "slug": "chatgpt-sites",
+   "name_en": "ChatGPT Sites",
+   "name_fa": "چت‌جی‌پی‌ت سیتس",
+   "kind": "product"
+  },
+  {
+   "slug": "claude-academy",
+   "name_en": "Claude Academy",
+   "name_fa": "آکادمی کلود",
+   "kind": "product"
+  },
+  {
+   "slug": "gpt-image-2",
+   "name_en": "GPT-Image-2",
+   "name_fa": "جی‌پی‌تی-ایمج-۲",
+   "kind": "model"
+  },
+  {
+   "slug": "muse-spark-12",
+   "name_en": "Muse Spark 1.2",
+   "name_fa": "موس اسپارک ۱.۲",
+   "kind": "model"
+  },
+  {
+   "slug": "angela-strange",
+   "name_en": "Angela Strange",
+   "name_fa": "آنجلا استرینج",
+   "kind": "person"
+  },
+  {
+   "slug": "allia",
+   "name_en": "Allia",
+   "name_fa": "آلیا",
+   "kind": "company"
+  },
+  {
+   "slug": "untangle",
+   "name_en": "Untangle",
+   "name_fa": "انتگل",
+   "kind": "company"
+  },
+  {
+   "slug": "devinai",
+   "name_en": "DevinAI",
+   "name_fa": "دوین‌ای‌آی",
+   "kind": "product"
+  },
+  {
+   "slug": "glm-5x",
+   "name_en": "GLM-5.x",
+   "name_fa": "گل‌ام-۵‌ایکس",
+   "kind": "model"
   }
  ]
 }
