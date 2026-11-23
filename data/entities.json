@@ -13229,6 +13229,78 @@
    "name_en": "Wispr",
    "name_fa": "ویسپر",
    "kind": "company"
+  },
+  {
+   "slug": "nemotron-35-lightning",
+   "name_en": "Nemotron 3.5 Lightning",
+   "name_fa": "نموترون ۳.۵ لایتینگ",
+   "kind": "model"
+  },
+  {
+   "slug": "alexander-panfilov",
+   "name_en": "Alexander Panfilov",
+   "name_fa": "الکساندر پانفیلوف",
+   "kind": "person"
+  },
+  {
+   "slug": "spacexai",
+   "name_en": "SpaceXAI",
+   "name_fa": "اسپیس‌ای‌آی",
+   "kind": "company"
+  },
+  {
+   "slug": "brad-lightcap",
+   "name_en": "Brad Lightcap",
+   "name_fa": "برد لایت‌کپ",
+   "kind": "person"
+  },
+  {
+   "slug": "coo",
+   "name_en": "COO",
+   "name_fa": "مدیر ارشد عملیاتی",
+   "kind": "product"
+  },
+  {
+   "slug": "shopify",
+   "name_en": "Shopify",
+   "name_fa": "شاپیفای",
+   "kind": "product"
+  },
+  {
+   "slug": "calendly",
+   "name_en": "Calendly",
+   "name_fa": "کالندلی",
+   "kind": "product"
+  },
+  {
+   "slug": "jason-zhao",
+   "name_en": "Jason Zhao",
+   "name_fa": "جیسون ژو",
+   "kind": "person"
+  },
+  {
+   "slug": "trump-media",
+   "name_en": "Trump Media",
+   "name_fa": "رسانه ترامپ",
+   "kind": "company"
+  },
+  {
+   "slug": "truth-api",
+   "name_en": "Truth API",
+   "name_fa": "تروث ای‌پی‌ای",
+   "kind": "product"
+  },
+  {
+   "slug": "truth-social",
+   "name_en": "Truth Social",
+   "name_fa": "تروث سوشال",
+   "kind": "product"
+  },
+  {
+   "slug": "hetzner",
+   "name_en": "Hetzner",
+   "name_fa": "هتزنر",
+   "kind": "company"
   }
  ]
 }
