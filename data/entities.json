@@ -11645,6 +11645,126 @@
    "name_en": "Matteo Pellegrini",
    "name_fa": "ماتئو پلگرینی",
    "kind": "person"
+  },
+  {
+   "slug": "audrey",
+   "name_en": "Audrey",
+   "name_fa": "آدری",
+   "kind": "person"
+  },
+  {
+   "slug": "ai-generated-code",
+   "name_en": "AI-generated code",
+   "name_fa": "کد تولید شده توسط هوش مصنوعی",
+   "kind": "product"
+  },
+  {
+   "slug": "double-blind-evaluation",
+   "name_en": "Double-blind evaluation",
+   "name_fa": "ارزیابی دو سو کور",
+   "kind": "product"
+  },
+  {
+   "slug": "microduck",
+   "name_en": "Microduck",
+   "name_fa": "میکروداک",
+   "kind": "product"
+  },
+  {
+   "slug": "klement-dlug",
+   "name_en": "Klement Dlug",
+   "name_fa": "کلمنت دلنگ",
+   "kind": "person"
+  },
+  {
+   "slug": "photon-matrix",
+   "name_en": "Photon Matrix",
+   "name_fa": "فوتون ماتریکس",
+   "kind": "company"
+  },
+  {
+   "slug": "gemini-omni-11-flash",
+   "name_en": "Gemini Omni 1.1 Flash",
+   "name_fa": "جمینی امنی ۱.۱ فلش",
+   "kind": "model"
+  },
+  {
+   "slug": "veo",
+   "name_en": "Veo",
+   "name_fa": "ویئو",
+   "kind": "model"
+  },
+  {
+   "slug": "azalia-mirhoseini",
+   "name_en": "Azalia Mirhoseini",
+   "name_fa": "آزالیا میرحسینی",
+   "kind": "person"
+  },
+  {
+   "slug": "anna-goldie",
+   "name_en": "Anna Goldie",
+   "name_fa": "آنا گلدی",
+   "kind": "person"
+  },
+  {
+   "slug": "recursive-intelligence",
+   "name_en": "Recursive Intelligence",
+   "name_fa": "ریکرسیو اینتلیجنس",
+   "kind": "company"
+  },
+  {
+   "slug": "mhs",
+   "name_en": "MHS",
+   "name_fa": "استاندارد سخت‌افزاری مدل",
+   "kind": "product"
+  },
+  {
+   "slug": "kevin-durant",
+   "name_en": "Kevin Durant",
+   "name_fa": "کوین دورانت",
+   "kind": "person"
+  },
+  {
+   "slug": "rich-kleiman",
+   "name_en": "Rich Kleiman",
+   "name_fa": "ریچ کلاینمن",
+   "kind": "person"
+  },
+  {
+   "slug": "craux",
+   "name_en": "Craux",
+   "name_fa": "کراکس",
+   "kind": "person"
+  },
+  {
+   "slug": "self-portrait",
+   "name_en": "Self-portrait",
+   "name_fa": "خودنگاره",
+   "kind": "product"
+  },
+  {
+   "slug": "reese-hibbert",
+   "name_en": "Reese Hibbert",
+   "name_fa": "ریس هیبرت",
+   "kind": "person"
+  },
+  {
+   "slug": "netflix",
+   "name_en": "Netflix",
+   "name_fa": "نتفلیکس",
+   "kind": "company"
+  },
+  {
+   "slug": "google-global-affairs",
+   "name_en": "Google Global Affairs",
+   "name_fa": "امور جهانی گوگل",
+   "kind": "company"
+  },
+  {
+   "slug": "semaphor",
+   "name_en": "Semaphor",
+   "name_fa": "سمافور",
+   "kind": "company"
   }
  ]
 }
