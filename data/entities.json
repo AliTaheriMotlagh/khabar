@@ -11237,6 +11237,114 @@
    "name_en": "Mixture of Experts",
    "name_fa": "MoE (تخصص‌های ترکیبی)",
    "kind": "model"
+  },
+  {
+   "slug": "david-pantora",
+   "name_en": "David Pantora",
+   "name_fa": "دیوید پانترا",
+   "kind": "person"
+  },
+  {
+   "slug": "heart-aerospace",
+   "name_en": "Heart Aerospace",
+   "name_fa": "هارت ائروسپیس",
+   "kind": "company"
+  },
+  {
+   "slug": "ander-forslund",
+   "name_en": "Ander Forslund",
+   "name_fa": "آندر فورسلوند",
+   "kind": "person"
+  },
+  {
+   "slug": "alex-albert",
+   "name_en": "Alex Albert",
+   "name_fa": "الکس آلبرت",
+   "kind": "person"
+  },
+  {
+   "slug": "google-chat",
+   "name_en": "Google Chat",
+   "name_fa": "گوگل چت",
+   "kind": "product"
+  },
+  {
+   "slug": "mohammad-haghi-aghaei",
+   "name_en": "Mohammad Haghi-Aghaei",
+   "name_fa": "محمد حاجی‌آقایی",
+   "kind": "person"
+  },
+  {
+   "slug": "gyorilovasz-theorem",
+   "name_en": "Győri–Lovász theorem",
+   "name_fa": "قضیه دیوری-لواس",
+   "kind": "model"
+  },
+  {
+   "slug": "parabatic",
+   "name_en": "Parabatic",
+   "name_fa": "پارابریکس",
+   "kind": "company"
+  },
+  {
+   "slug": "gpt-astra",
+   "name_en": "GPT-Astra",
+   "name_fa": "GPT-آسترا",
+   "kind": "model"
+  },
+  {
+   "slug": "daybreak",
+   "name_en": "Daybreak",
+   "name_fa": "دی‌بریک",
+   "kind": "product"
+  },
+  {
+   "slug": "o3",
+   "name_en": "O3",
+   "name_fa": "او-۳",
+   "kind": "model"
+  },
+  {
+   "slug": "gemini-35-pro",
+   "name_en": "Gemini 3.5 Pro",
+   "name_fa": "جمینای ۳.۵ پرو",
+   "kind": "model"
+  },
+  {
+   "slug": "qwen38-max-0902",
+   "name_en": "Qwen3.8-Max-0902",
+   "name_fa": "قوئن ۳.۸-مکس-۰۹۰۲",
+   "kind": "model"
+  },
+  {
+   "slug": "loop-transformers",
+   "name_en": "Loop Transformers",
+   "name_fa": "ترنسفورمرهای حلقه‌ای",
+   "kind": "model"
+  },
+  {
+   "slug": "oli",
+   "name_en": "Oli",
+   "name_fa": "الی",
+   "kind": "person"
+  },
+  {
+   "slug": "fallive",
+   "name_en": "fal.live",
+   "name_fa": "فال لایو",
+   "kind": "product"
+  },
+  {
+   "slug": "robotaxi",
+   "name_en": "Robotaxi",
+   "name_fa": "رباتاکسی",
+   "kind": "product"
+  },
+  {
+   "slug": "jacob-pachocki",
+   "name_en": "Jacob Pachocki",
+   "name_fa": "یاکوب پاچوکی",
+   "kind": "person"
   }
  ]
 }
