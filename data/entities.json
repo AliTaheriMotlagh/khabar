@@ -12461,6 +12461,168 @@
    "name_en": "GLM-5.x",
    "name_fa": "گل‌ام-۵‌ایکس",
    "kind": "model"
+  },
+  {
+   "slug": "delft-university",
+   "name_en": "Delft University",
+   "name_fa": "دانشگاه دلفت",
+   "kind": "company"
+  },
+  {
+   "slug": "radley",
+   "name_en": "Radley",
+   "name_fa": "رَدلی",
+   "kind": "company"
+  },
+  {
+   "slug": "radiology",
+   "name_en": "Radiology",
+   "name_fa": "رادیولوژی",
+   "kind": "product"
+  },
+  {
+   "slug": "moderna",
+   "name_en": "Moderna",
+   "name_fa": "مدرنا",
+   "kind": "company"
+  },
+  {
+   "slug": "merck",
+   "name_en": "Merck",
+   "name_fa": "مِرک",
+   "kind": "company"
+  },
+  {
+   "slug": "keytruda",
+   "name_en": "Keytruda",
+   "name_fa": "کیترودا",
+   "kind": "product"
+  },
+  {
+   "slug": "mrna-vaccine",
+   "name_en": "mRNA vaccine",
+   "name_fa": "واکسن mRNA",
+   "kind": "product"
+  },
+  {
+   "slug": "eric-topol",
+   "name_en": "Eric Topol",
+   "name_fa": "اریک توپول",
+   "kind": "person"
+  },
+  {
+   "slug": "gpt-56-luna",
+   "name_en": "GPT-5.6 Luna",
+   "name_fa": "GPT-5.6 لونا",
+   "kind": "model"
+  },
+  {
+   "slug": "alphafold",
+   "name_en": "AlphaFold",
+   "name_fa": "آلفافولد",
+   "kind": "model"
+  },
+  {
+   "slug": "rf-diffusion",
+   "name_en": "RF Diffusion",
+   "name_fa": "آر‌اف‌دیفیوژن",
+   "kind": "model"
+  },
+  {
+   "slug": "pocket",
+   "name_en": "Pocket",
+   "name_fa": "پاکت",
+   "kind": "company"
+  },
+  {
+   "slug": "apple-vision-pro",
+   "name_en": "Apple Vision Pro",
+   "name_fa": "اپل ویژن پرو",
+   "kind": "product"
+  },
+  {
+   "slug": "joel-selanikio",
+   "name_en": "Joel Selanikio",
+   "name_fa": "جوئل سلانیکیو",
+   "kind": "person"
+  },
+  {
+   "slug": "louis-jones",
+   "name_en": "Louis Jones",
+   "name_fa": "لوئیس جونز",
+   "kind": "person"
+  },
+  {
+   "slug": "grip",
+   "name_en": "Grip",
+   "name_fa": "گریپ",
+   "kind": "company"
+  },
+  {
+   "slug": "zurich",
+   "name_en": "Zurich",
+   "name_fa": "زوریخ",
+   "kind": "company"
+  },
+  {
+   "slug": "paul-nussbaum",
+   "name_en": "Paul Nussbaum",
+   "name_fa": "پل نووساد",
+   "kind": "person"
+  },
+  {
+   "slug": "safe",
+   "name_en": "SAFE",
+   "name_fa": "قرارداد ساده‌ی سرمایه‌گذاری",
+   "kind": "product"
+  },
+  {
+   "slug": "carl-peterson",
+   "name_en": "Carl Peterson",
+   "name_fa": "کارل پیترسون",
+   "kind": "person"
+  },
+  {
+   "slug": "matrix",
+   "name_en": "Matrix",
+   "name_fa": "ماتریکس",
+   "kind": "company"
+  },
+  {
+   "slug": "science-corporation",
+   "name_en": "Science Corporation",
+   "name_fa": "شرکت ساینس",
+   "kind": "company"
+  },
+  {
+   "slug": "aaron-alto",
+   "name_en": "Aaron Alto",
+   "name_fa": "آرون آلتو",
+   "kind": "person"
+  },
+  {
+   "slug": "ash-hart",
+   "name_en": "Ash Hart",
+   "name_fa": "آش هارت",
+   "kind": "person"
+  },
+  {
+   "slug": "alex-chima",
+   "name_en": "Alex Chima",
+   "name_fa": "الکس چیما",
+   "kind": "person"
+  },
+  {
+   "slug": "macbook-m5-max",
+   "name_en": "MacBook M5 Max",
+   "name_fa": "مک‌بوک ام۵ مکس",
+   "kind": "product"
+  },
+  {
+   "slug": "fortell",
+   "name_en": "Fortell",
+   "name_fa": "فورتل",
+   "kind": "company"
   }
  ]
 }
