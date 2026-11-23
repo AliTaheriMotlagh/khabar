@@ -13055,6 +13055,108 @@
    "name_en": "Laguna",
    "name_fa": "لاگونا",
    "kind": "model"
+  },
+  {
+   "slug": "frontier-red-team",
+   "name_en": "Frontier Red Team",
+   "name_fa": "تیم قرمز فرانتیر",
+   "kind": "product"
+  },
+  {
+   "slug": "nova",
+   "name_en": "Nova",
+   "name_fa": "نوآ",
+   "kind": "product"
+  },
+  {
+   "slug": "vesper",
+   "name_en": "Vesper",
+   "name_fa": "ویزپر",
+   "kind": "product"
+  },
+  {
+   "slug": "chrome",
+   "name_en": "Chrome",
+   "name_fa": "کروم",
+   "kind": "product"
+  },
+  {
+   "slug": "deepseek-harness",
+   "name_en": "DeepSeek Harness",
+   "name_fa": "دیپ‌سیک هارنس",
+   "kind": "product"
+  },
+  {
+   "slug": "composio",
+   "name_en": "Composio",
+   "name_fa": "کامپوزیو",
+   "kind": "company"
+  },
+  {
+   "slug": "matic",
+   "name_en": "Matic",
+   "name_fa": "ماتیک",
+   "kind": "company"
+  },
+  {
+   "slug": "cues",
+   "name_en": "Cues",
+   "name_fa": "کیوز",
+   "kind": "product"
+  },
+  {
+   "slug": "connecticut",
+   "name_en": "Connecticut",
+   "name_fa": "ایالت کانتیکت",
+   "kind": "company"
+  },
+  {
+   "slug": "404-media",
+   "name_en": "404 Media",
+   "name_fa": "۴۰۴ مدیا",
+   "kind": "company"
+  },
+  {
+   "slug": "genie-ontology",
+   "name_en": "Genie Ontology",
+   "name_fa": "جنی اونتولوژی",
+   "kind": "product"
+  },
+  {
+   "slug": "lumiere",
+   "name_en": "Lumiere",
+   "name_fa": "لومریا",
+   "kind": "company"
+  },
+  {
+   "slug": "lumoscope",
+   "name_en": "Lumoscope",
+   "name_fa": "لوموسکوپ",
+   "kind": "product"
+  },
+  {
+   "slug": "marian-al-halq",
+   "name_en": "Marian Al-Halq",
+   "name_fa": "ماریان الحلاق",
+   "kind": "person"
+  },
+  {
+   "slug": "antea-go",
+   "name_en": "Antea Go",
+   "name_fa": "آنتیا گو",
+   "kind": "person"
+  },
+  {
+   "slug": "cami-clark",
+   "name_en": "Cami Clark",
+   "name_fa": "کامی کلارک",
+   "kind": "person"
+  },
+  {
+   "slug": "eric-schmidt",
+   "name_en": "Eric Schmidt",
+   "name_fa": "اریک شمیت",
+   "kind": "person"
   }
  ]
 }
