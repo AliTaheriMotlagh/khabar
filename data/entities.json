@@ -10937,6 +10937,96 @@
    "name_en": "GPT-3",
    "name_fa": "جی‌پی‌تی-۳",
    "kind": "model"
+  },
+  {
+   "slug": "qwen38-flash-next",
+   "name_en": "Qwen3.8-Flash-Next",
+   "name_fa": "قوئن ۳.۸-فلاش-نکست",
+   "kind": "model"
+  },
+  {
+   "slug": "alex",
+   "name_en": "Alex",
+   "name_fa": "الکس",
+   "kind": "person"
+  },
+  {
+   "slug": "microsoft-paint",
+   "name_en": "Microsoft Paint",
+   "name_fa": "مایکروسافت پینت",
+   "kind": "product"
+  },
+  {
+   "slug": "devday",
+   "name_en": "DevDay",
+   "name_fa": "دِودی",
+   "kind": "product"
+  },
+  {
+   "slug": "aira3",
+   "name_en": "AIRA₃",
+   "name_fa": "ایرا ۳",
+   "kind": "product"
+  },
+  {
+   "slug": "kaggle",
+   "name_en": "Kaggle",
+   "name_fa": "کگل",
+   "kind": "company"
+  },
+  {
+   "slug": "greg-eisenberg",
+   "name_en": "Greg Eisenberg",
+   "name_fa": "گرگ آیزنبرگ",
+   "kind": "person"
+  },
+  {
+   "slug": "cybercab",
+   "name_en": "CyberCab",
+   "name_fa": "سایبرکب",
+   "kind": "product"
+  },
+  {
+   "slug": "anthony-sanchez",
+   "name_en": "Anthony Sanchez",
+   "name_fa": "آنتونی سانچز",
+   "kind": "person"
+  },
+  {
+   "slug": "gmktec",
+   "name_en": "GMKtec",
+   "name_fa": "جی‌ام‌کی‌تک",
+   "kind": "company"
+  },
+  {
+   "slug": "evo-x5-pro",
+   "name_en": "EVO-X5 Pro",
+   "name_fa": "ای‌وی‌او-ایکس۵ پرو",
+   "kind": "product"
+  },
+  {
+   "slug": "ryzen-ai-max-pro-495",
+   "name_en": "Ryzen AI Max+ PRO 495",
+   "name_fa": "رایزن ای‌آی مکس پلاس پرو ۴۹۵",
+   "kind": "product"
+  },
+  {
+   "slug": "valsai",
+   "name_en": "ValsAI",
+   "name_fa": "وال‌اس‌آی",
+   "kind": "company"
+  },
+  {
+   "slug": "mo-sayyar",
+   "name_en": "Mo Sayyar",
+   "name_fa": "محمد صیار",
+   "kind": "person"
+  },
+  {
+   "slug": "kevin-liu",
+   "name_en": "Kevin Liu",
+   "name_fa": "کوین لیو",
+   "kind": "person"
   }
  ]
 }
