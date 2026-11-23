@@ -13157,6 +13157,78 @@
    "name_en": "Eric Schmidt",
    "name_fa": "اریک شمیت",
    "kind": "person"
+  },
+  {
+   "slug": "mars",
+   "name_en": "Mars",
+   "name_fa": "مریخ",
+   "kind": "product"
+  },
+  {
+   "slug": "elias-masrour",
+   "name_en": "Elias Masrour",
+   "name_fa": "الیاس مسرور",
+   "kind": "person"
+  },
+  {
+   "slug": "spacex-ai",
+   "name_en": "SpaceX AI",
+   "name_fa": "اسپیس‌ای‌آی",
+   "kind": "company"
+  },
+  {
+   "slug": "clement-delang-2",
+   "name_en": "Clément Delang",
+   "name_fa": "کلمنت دلنگ",
+   "kind": "person"
+  },
+  {
+   "slug": "terminal-bench",
+   "name_en": "Terminal Bench",
+   "name_fa": "ترمینال بنچمارک",
+   "kind": "model"
+  },
+  {
+   "slug": "autosana",
+   "name_en": "Autosana",
+   "name_fa": "اتوسانا",
+   "kind": "company"
+  },
+  {
+   "slug": "ods",
+   "name_en": "ODS",
+   "name_fa": "اُ‌دی‌اس",
+   "kind": "product"
+  },
+  {
+   "slug": "ollama",
+   "name_en": "Ollama",
+   "name_fa": "اولاما",
+   "kind": "product"
+  },
+  {
+   "slug": "n8n",
+   "name_en": "n8n",
+   "name_fa": "ان‌اچ‌ان",
+   "kind": "product"
+  },
+  {
+   "slug": "comfyui",
+   "name_en": "ComfyUI",
+   "name_fa": "کامفی‌یو‌آی",
+   "kind": "product"
+  },
+  {
+   "slug": "whisper",
+   "name_en": "Whisper",
+   "name_fa": "ویسپر",
+   "kind": "product"
+  },
+  {
+   "slug": "wispr",
+   "name_en": "Wispr",
+   "name_fa": "ویسپر",
+   "kind": "company"
   }
  ]
 }
