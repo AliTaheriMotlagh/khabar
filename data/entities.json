@@ -12887,6 +12887,120 @@
    "name_en": "Claude Fable 5",
    "name_fa": "کلود فبل ۵",
    "kind": "model"
+  },
+  {
+   "slug": "pax-silica",
+   "name_en": "Pax Silica",
+   "name_fa": "پکس سیلیکا",
+   "kind": "product"
+  },
+  {
+   "slug": "european-union",
+   "name_en": "European Union",
+   "name_fa": "اتحادیه اروپا",
+   "kind": "company"
+  },
+  {
+   "slug": "claude-35-sonnet",
+   "name_en": "Claude 3.5 Sonnet",
+   "name_fa": "کلود ۳.۵ سونیک",
+   "kind": "model"
+  },
+  {
+   "slug": "gpt-4",
+   "name_en": "GPT-4",
+   "name_fa": "جی‌پی‌تی-۴",
+   "kind": "model"
+  },
+  {
+   "slug": "claude-opus-46",
+   "name_en": "Claude Opus 4.6",
+   "name_fa": "کلاد اوپوس ۴.۶",
+   "kind": "model"
+  },
+  {
+   "slug": "aditya-batra",
+   "name_en": "Aditya Batra",
+   "name_fa": "آدیتیا باترا",
+   "kind": "person"
+  },
+  {
+   "slug": "blind-skateboarder",
+   "name_en": "Blind Skateboarder",
+   "name_fa": "اسکیت‌بوردسوار نابینا",
+   "kind": "product"
+  },
+  {
+   "slug": "alouk",
+   "name_en": "Alouk",
+   "name_fa": "آلوک",
+   "kind": "person"
+  },
+  {
+   "slug": "university-of-pennsylvania",
+   "name_en": "University of Pennsylvania",
+   "name_fa": "دانشگاه پنسیلوانیا",
+   "kind": "company"
+  },
+  {
+   "slug": "boston-university",
+   "name_en": "Boston University",
+   "name_fa": "دانشگاه بوستون",
+   "kind": "company"
+  },
+  {
+   "slug": "nanogpt",
+   "name_en": "nanoGPT",
+   "name_fa": "نانو‌جی‌پی‌تی",
+   "kind": "model"
+  },
+  {
+   "slug": "gpt-56-luna-max",
+   "name_en": "GPT-5.6 Luna Max",
+   "name_fa": "جی‌پی‌تی ۵.۶ لونا مکس",
+   "kind": "model"
+  },
+  {
+   "slug": "sonnet-5-max",
+   "name_en": "Sonnet 5 Max",
+   "name_fa": "سونت ۵ مکس",
+   "kind": "model"
+  },
+  {
+   "slug": "gemini-37-flash-medium",
+   "name_en": "Gemini 3.7 Flash Medium",
+   "name_fa": "جیمینی ۳.۷ فلاش مدیوم",
+   "kind": "model"
+  },
+  {
+   "slug": "nightingale",
+   "name_en": "Nightingale",
+   "name_fa": "نایتینگل",
+   "kind": "product"
+  },
+  {
+   "slug": "loulamp",
+   "name_en": "LouLamp",
+   "name_fa": "لو‌لمپ",
+   "kind": "product"
+  },
+  {
+   "slug": "onge",
+   "name_en": "Onge",
+   "name_fa": "اونگو",
+   "kind": "product"
+  },
+  {
+   "slug": "cuddle-fish",
+   "name_en": "Cuddle-Fish",
+   "name_fa": "کدل‌فیش",
+   "kind": "product"
+  },
+  {
+   "slug": "autonomous-agents",
+   "name_en": "Autonomous Agents",
+   "name_fa": "ایجنت‌های خودمختار",
+   "kind": "product"
   }
  ]
 }
