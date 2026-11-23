@@ -12077,6 +12077,102 @@
    "name_en": "World Robot Games 2026",
    "name_fa": "بازی‌های جهانی ربات‌ها ۲۰۲۶",
    "kind": "company"
+  },
+  {
+   "slug": "joseph-younis",
+   "name_en": "Joseph Younis",
+   "name_fa": "جوزف یونیس",
+   "kind": "person"
+  },
+  {
+   "slug": "graph-engineering",
+   "name_en": "Graph Engineering",
+   "name_fa": "مهندسی گراف",
+   "kind": "product"
+  },
+  {
+   "slug": "gavin-baker",
+   "name_en": "Gavin Baker",
+   "name_fa": "گاوین بیکر",
+   "kind": "person"
+  },
+  {
+   "slug": "poolside",
+   "name_en": "Poolside",
+   "name_fa": "پول‌ساید",
+   "kind": "company"
+  },
+  {
+   "slug": "nemotron-4",
+   "name_en": "Nemotron 4",
+   "name_fa": "نموترون ۴",
+   "kind": "model"
+  },
+  {
+   "slug": "model-factory",
+   "name_en": "Model Factory",
+   "name_fa": "مودل فکتوری",
+   "kind": "product"
+  },
+  {
+   "slug": "adrian-zeltzer",
+   "name_en": "Adrian Zeltzer",
+   "name_fa": "آدریان زلتزر",
+   "kind": "person"
+  },
+  {
+   "slug": "tim-jayas",
+   "name_en": "Tim Jayas",
+   "name_fa": "تیم جایاس",
+   "kind": "person"
+  },
+  {
+   "slug": "ai-cube",
+   "name_en": "AI Cube",
+   "name_fa": "آی کیوب",
+   "kind": "product"
+  },
+  {
+   "slug": "xring",
+   "name_en": "Xring",
+   "name_fa": "ایکس‌رینگ",
+   "kind": "product"
+  },
+  {
+   "slug": "groq-3-lpx",
+   "name_en": "Groq 3 LPX",
+   "name_fa": "گرک 3 ال‌پی‌ایکس",
+   "kind": "product"
+  },
+  {
+   "slug": "vera-rubin-nvl72",
+   "name_en": "Vera Rubin NVL72",
+   "name_fa": "ورا روبین ان‌وی‌ال۷۲",
+   "kind": "product"
+  },
+  {
+   "slug": "paloma",
+   "name_en": "Paloma",
+   "name_fa": "پالوما",
+   "kind": "model"
+  },
+  {
+   "slug": "oppo",
+   "name_en": "Oppo",
+   "name_fa": "اوپوس",
+   "kind": "model"
+  },
+  {
+   "slug": "pipette",
+   "name_en": "Pipette",
+   "name_fa": "پیپت",
+   "kind": "product"
+  },
+  {
+   "slug": "vera-rubin",
+   "name_en": "Vera Rubin",
+   "name_fa": "ورا روبین",
+   "kind": "product"
   }
  ]
 }
