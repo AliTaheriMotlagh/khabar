@@ -11495,6 +11495,78 @@
    "name_en": "Claude Mythos 5.1",
    "name_fa": "کلود میتوس ۵.۱",
    "kind": "model"
+  },
+  {
+   "slug": "qwen38-flash",
+   "name_en": "Qwen3.8 Flash",
+   "name_fa": "قوئن ۳.۸ فلاش",
+   "kind": "model"
+  },
+  {
+   "slug": "eric-clapf",
+   "name_en": "Eric Clapf",
+   "name_fa": "اریک کلاپفر",
+   "kind": "person"
+  },
+  {
+   "slug": "samuel-menden",
+   "name_en": "Samuel Menden",
+   "name_fa": "ساموئل مدن",
+   "kind": "person"
+  },
+  {
+   "slug": "composer-3",
+   "name_en": "Composer 3",
+   "name_fa": "کامپوزر ۳",
+   "kind": "model"
+  },
+  {
+   "slug": "mac",
+   "name_en": "Mac",
+   "name_fa": "مک",
+   "kind": "product"
+  },
+  {
+   "slug": "alex-mckeown",
+   "name_en": "Alex McKeown",
+   "name_fa": "الک مک‌گیلیس",
+   "kind": "person"
+  },
+  {
+   "slug": "emad-mostaghim",
+   "name_en": "Emad Mostaghim",
+   "name_fa": "عماد مستاق",
+   "kind": "person"
+  },
+  {
+   "slug": "talas",
+   "name_en": "Talas",
+   "name_fa": "تالاس",
+   "kind": "product"
+  },
+  {
+   "slug": "samsung",
+   "name_en": "Samsung",
+   "name_fa": "سامسونگ",
+   "kind": "company"
+  },
+  {
+   "slug": "sk-hynix",
+   "name_en": "SK Hynix",
+   "name_fa": "اس‌کی هاینیکس",
+   "kind": "company"
+  },
+  {
+   "slug": "mediatek",
+   "name_en": "MediaTek",
+   "name_fa": "مدیاتک",
+   "kind": "company"
+  },
+  {
+   "slug": "gemini-37-flash",
+   "name_en": "Gemini 3.7 Flash",
+   "name_fa": "جمینای ۳.۷ فلش",
+   "kind": "model"
   }
  ]
 }
