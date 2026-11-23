@@ -11141,6 +11141,72 @@
    "name_en": "TinyGPT",
    "name_fa": "تاینی‌جی‌پی‌تی",
    "kind": "model"
+  },
+  {
+   "slug": "claude-cowork",
+   "name_en": "Claude Cowork",
+   "name_fa": "کلود کارک",
+   "kind": "product"
+  },
+  {
+   "slug": "muse-code",
+   "name_en": "Muse Code",
+   "name_fa": "موز کد",
+   "kind": "product"
+  },
+  {
+   "slug": "zeiss",
+   "name_en": "Zeiss",
+   "name_fa": "زایس",
+   "kind": "company"
+  },
+  {
+   "slug": "asml",
+   "name_en": "ASML",
+   "name_fa": "اس‌ام‌اس‌ال",
+   "kind": "company"
+  },
+  {
+   "slug": "euv",
+   "name_en": "EUV",
+   "name_fa": "لیتوگرافی فرابنفش فرین",
+   "kind": "product"
+  },
+  {
+   "slug": "klement-oberg",
+   "name_en": "Klement Oberg",
+   "name_fa": "کلمنت اوبرگ",
+   "kind": "person"
+  },
+  {
+   "slug": "ifm",
+   "name_en": "IFM",
+   "name_fa": "موسسه IFM",
+   "kind": "company"
+  },
+  {
+   "slug": "primeagen",
+   "name_en": "Primeagen",
+   "name_fa": "پرایم‌ایجن",
+   "kind": "person"
+  },
+  {
+   "slug": "all-the-ai",
+   "name_en": "All the AI",
+   "name_fa": "ال‌تی‌ای‌آی",
+   "kind": "company"
+  },
+  {
+   "slug": "calba-foglegran",
+   "name_en": "Calba Foglegran",
+   "name_fa": "کالب فاگلگرن",
+   "kind": "person"
+  },
+  {
+   "slug": "linus-ekenstam",
+   "name_en": "Linus Ekenstam",
+   "name_fa": "لاینوس اکنستام",
+   "kind": "person"
   }
  ]
 }
