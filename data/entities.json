@@ -12737,6 +12737,156 @@
    "name_en": "GLM Coding Plan",
    "name_fa": "پلن کدنویسی گل‌ام",
    "kind": "product"
+  },
+  {
+   "slug": "amjad-masad",
+   "name_en": "Amjad Masad",
+   "name_fa": "امجد مساد",
+   "kind": "person"
+  },
+  {
+   "slug": "evanika-narayan",
+   "name_en": "Evanika Narayan",
+   "name_fa": "اوانیکا نارایان",
+   "kind": "person"
+  },
+  {
+   "slug": "hopto",
+   "name_en": "HopTo",
+   "name_fa": "هپ‌تو",
+   "kind": "company"
+  },
+  {
+   "slug": "hop-1",
+   "name_en": "Hop-1",
+   "name_fa": "هپ-۱",
+   "kind": "product"
+  },
+  {
+   "slug": "bryan-chen",
+   "name_en": "Bryan Chen",
+   "name_fa": "بویان چن",
+   "kind": "person"
+  },
+  {
+   "slug": "sonicfly",
+   "name_en": "SonicFly",
+   "name_fa": "سونیک‌فلای",
+   "kind": "product"
+  },
+  {
+   "slug": "gravis-robotics",
+   "name_en": "Gravis Robotics",
+   "name_fa": "گرویس رباتیکس",
+   "kind": "company"
+  },
+  {
+   "slug": "softbank",
+   "name_en": "SoftBank",
+   "name_fa": "سافت‌بانک",
+   "kind": "company"
+  },
+  {
+   "slug": "uber-eats",
+   "name_en": "Uber Eats",
+   "name_fa": "اوبر ایتس",
+   "kind": "product"
+  },
+  {
+   "slug": "clare-clifton",
+   "name_en": "Clare Clifton",
+   "name_fa": "کلر کلیفتون",
+   "kind": "person"
+  },
+  {
+   "slug": "superman",
+   "name_en": "Superman",
+   "name_fa": "سوپرمن",
+   "kind": "product"
+  },
+  {
+   "slug": "smic",
+   "name_en": "SMIC",
+   "name_fa": "اس‌ام‌آی‌سی",
+   "kind": "company"
+  },
+  {
+   "slug": "mycionics",
+   "name_en": "Mycionics",
+   "name_fa": "مایسیونیکس",
+   "kind": "company"
+  },
+  {
+   "slug": "nathan-klein",
+   "name_en": "Nathan Klein",
+   "name_fa": "نیتن کلوین",
+   "kind": "person"
+  },
+  {
+   "slug": "airpods",
+   "name_en": "AirPods",
+   "name_fa": "ایرپاد",
+   "kind": "product"
+  },
+  {
+   "slug": "visual-intelligence",
+   "name_en": "Visual Intelligence",
+   "name_fa": "هوش مصنوعی تصویری",
+   "kind": "model"
+  },
+  {
+   "slug": "airpods-pro",
+   "name_en": "AirPods Pro",
+   "name_fa": "ایرپاد پرو",
+   "kind": "product"
+  },
+  {
+   "slug": "moving-atoms",
+   "name_en": "Moving Atoms",
+   "name_fa": "مویینگ اتمز",
+   "kind": "company"
+  },
+  {
+   "slug": "atom-1",
+   "name_en": "Atom 1",
+   "name_fa": "اتم ۱",
+   "kind": "model"
+  },
+  {
+   "slug": "cosmos-3",
+   "name_en": "Cosmos 3",
+   "name_fa": "کسموس ۳",
+   "kind": "model"
+  },
+  {
+   "slug": "aryan-nishad",
+   "name_en": "Aryan Nishad",
+   "name_fa": "آرین نیشاد",
+   "kind": "person"
+  },
+  {
+   "slug": "karastun",
+   "name_en": "Karastun",
+   "name_fa": "کارستون",
+   "kind": "product"
+  },
+  {
+   "slug": "carsignal",
+   "name_en": "CarSignal",
+   "name_fa": "کارسیگنال",
+   "kind": "product"
+  },
+  {
+   "slug": "michael-mazin",
+   "name_en": "Michael Mazin",
+   "name_fa": "مایکل مازین",
+   "kind": "person"
+  },
+  {
+   "slug": "claude-fable-5",
+   "name_en": "Claude Fable 5",
+   "name_fa": "کلود فبل ۵",
+   "kind": "model"
   }
  ]
 }
