@@ -11207,6 +11207,36 @@
    "name_en": "Linus Ekenstam",
    "name_fa": "لاینوس اکنستام",
    "kind": "person"
+  },
+  {
+   "slug": "disney",
+   "name_en": "Disney",
+   "name_fa": "دیزنی",
+   "kind": "company"
+  },
+  {
+   "slug": "warner-bros",
+   "name_en": "Warner Bros.",
+   "name_fa": "برادران وارنر",
+   "kind": "company"
+  },
+  {
+   "slug": "universal",
+   "name_en": "Universal",
+   "name_fa": "یونیورسال",
+   "kind": "company"
+  },
+  {
+   "slug": "mor",
+   "name_en": "MoR",
+   "name_fa": "MoR (ترکیب بازگشت‌ها)",
+   "kind": "model"
+  },
+  {
+   "slug": "mixture-of-experts",
+   "name_en": "Mixture of Experts",
+   "name_fa": "MoE (تخصص‌های ترکیبی)",
+   "kind": "model"
   }
  ]
 }
