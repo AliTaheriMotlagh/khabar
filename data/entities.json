@@ -11765,6 +11765,54 @@
    "name_en": "Semaphor",
    "name_fa": "سمافور",
    "kind": "company"
+  },
+  {
+   "slug": "ox-alpha",
+   "name_en": "Ox Alpha",
+   "name_fa": "اکس آلفا",
+   "kind": "model"
+  },
+  {
+   "slug": "ernest-chen",
+   "name_en": "Ernest Chen",
+   "name_fa": "ارن چن",
+   "kind": "person"
+  },
+  {
+   "slug": "gemini-35-transcribe",
+   "name_en": "Gemini 3.5 Transcribe",
+   "name_fa": "جمینی ۳.۵ ترنسکرایب",
+   "kind": "model"
+  },
+  {
+   "slug": "mac-studio",
+   "name_en": "mac Studio",
+   "name_fa": "مک استودیو",
+   "kind": "product"
+  },
+  {
+   "slug": "ghalem",
+   "name_en": "Ghalem",
+   "name_fa": "غلام",
+   "kind": "product"
+  },
+  {
+   "slug": "solana",
+   "name_en": "Solana",
+   "name_fa": "سولانا",
+   "kind": "company"
+  },
+  {
+   "slug": "nvdax",
+   "name_en": "NVDAx",
+   "name_fa": "ان‌وی‌دی‌ای‌اکس",
+   "kind": "product"
+  },
+  {
+   "slug": "glucofm",
+   "name_en": "GlucoFM",
+   "name_fa": "گلوکو‌اف‌ام",
+   "kind": "model"
   }
  ]
 }
