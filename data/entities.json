@@ -12299,6 +12299,54 @@
    "name_en": "Codex CLI",
    "name_fa": "کدکس سی‌ال‌آی",
    "kind": "product"
+  },
+  {
+   "slug": "deepseek-v4-flash-vision-exp",
+   "name_en": "DeepSeek-V4-Flash-Vision-Exp",
+   "name_fa": "دیپ‌سیک وی‌۴-فلاش-ویژن-اکس‌پی",
+   "kind": "model"
+  },
+  {
+   "slug": "opus-48",
+   "name_en": "Opus-4.8",
+   "name_fa": "اپوس-۴.۸",
+   "kind": "model"
+  },
+  {
+   "slug": "nvidia-avo",
+   "name_en": "NVIDIA AVO",
+   "name_fa": "انویدیا ای‌وی‌او",
+   "kind": "product"
+  },
+  {
+   "slug": "arc-agi-3",
+   "name_en": "ARC-AGI-3",
+   "name_fa": "آر‌سی‌ای‌جی‌آی-۳",
+   "kind": "model"
+  },
+  {
+   "slug": "runway-ruby",
+   "name_en": "Runway Ruby",
+   "name_fa": "ران‌وی رابی",
+   "kind": "product"
+  },
+  {
+   "slug": "ws-insights",
+   "name_en": "WS Insights",
+   "name_fa": "وی‌اس اینسایتس",
+   "kind": "company"
+  },
+  {
+   "slug": "inkling",
+   "name_en": "Inkling",
+   "name_fa": "اینکلینگ",
+   "kind": "model"
+  },
+  {
+   "slug": "meteoric",
+   "name_en": "Meteoric",
+   "name_fa": "متئوریک",
+   "kind": "company"
   }
  ]
 }
