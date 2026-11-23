@@ -12173,6 +12173,132 @@
    "name_en": "Vera Rubin",
    "name_fa": "ورا روبین",
    "kind": "product"
+  },
+  {
+   "slug": "temple",
+   "name_en": "Temple",
+   "name_fa": "تمپل",
+   "kind": "product"
+  },
+  {
+   "slug": "deepinder-goyal",
+   "name_en": "Deepinder Goyal",
+   "name_fa": "دیپیندر گویال",
+   "kind": "person"
+  },
+  {
+   "slug": "zomato",
+   "name_en": "Zomato",
+   "name_fa": "زوماتو",
+   "kind": "company"
+  },
+  {
+   "slug": "david-boas",
+   "name_en": "David Boas",
+   "name_fa": "دیوید بوآس",
+   "kind": "person"
+  },
+  {
+   "slug": "lancium",
+   "name_en": "Lancium",
+   "name_fa": "لنسیم",
+   "kind": "company"
+  },
+  {
+   "slug": "enigma",
+   "name_en": "Enigma",
+   "name_fa": "انیگما",
+   "kind": "company"
+  },
+  {
+   "slug": "interactive-robots",
+   "name_en": "Interactive Robots",
+   "name_fa": "ربات‌های تعاملی",
+   "kind": "product"
+  },
+  {
+   "slug": "honor",
+   "name_en": "Honor",
+   "name_fa": "آنر",
+   "kind": "company"
+  },
+  {
+   "slug": "lightning",
+   "name_en": "Lightning",
+   "name_fa": "لایتنینگ",
+   "kind": "product"
+  },
+  {
+   "slug": "usain-bolt",
+   "name_en": "Usain Bolt",
+   "name_fa": "اوسین بولت",
+   "kind": "person"
+  },
+  {
+   "slug": "chinese-rescue-robot",
+   "name_en": "Chinese rescue robot",
+   "name_fa": "ربات نجات چینی",
+   "kind": "product"
+  },
+  {
+   "slug": "humanoid-hub",
+   "name_en": "Humanoid Hub",
+   "name_fa": "هیومنوید هاب",
+   "kind": "company"
+  },
+  {
+   "slug": "claude-opus-48",
+   "name_en": "Claude Opus 4.8",
+   "name_fa": "کلود اوپوس ۴.۸",
+   "kind": "model"
+  },
+  {
+   "slug": "spotify",
+   "name_en": "Spotify",
+   "name_fa": "اسپاتیفای",
+   "kind": "company"
+  },
+  {
+   "slug": "fudan-university",
+   "name_en": "Fudan University",
+   "name_fa": "دانشگاه فودان",
+   "kind": "company"
+  },
+  {
+   "slug": "chinese-institutions",
+   "name_en": "Chinese Institutions",
+   "name_fa": "موسسات چینی",
+   "kind": "company"
+  },
+  {
+   "slug": "natalie-winters",
+   "name_en": "Natalie Winters",
+   "name_fa": "ناتالی وینترز",
+   "kind": "person"
+  },
+  {
+   "slug": "cristiano-ronaldo",
+   "name_en": "Cristiano Ronaldo",
+   "name_fa": "کریستیانو رونالدو",
+   "kind": "person"
+  },
+  {
+   "slug": "amir-salek",
+   "name_en": "Amir Salek",
+   "name_fa": "امیر سالک",
+   "kind": "person"
+  },
+  {
+   "slug": "charlie-marsh",
+   "name_en": "Charlie Marsh",
+   "name_fa": "چارلی مارش",
+   "kind": "person"
+  },
+  {
+   "slug": "codex-cli",
+   "name_en": "Codex CLI",
+   "name_fa": "کدکس سی‌ال‌آی",
+   "kind": "product"
   }
  ]
 }
