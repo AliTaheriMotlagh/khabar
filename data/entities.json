@@ -13001,6 +13001,60 @@
    "name_en": "Autonomous Agents",
    "name_fa": "ایجنت‌های خودمختار",
    "kind": "product"
+  },
+  {
+   "slug": "daybreak-blue",
+   "name_en": "Daybreak Blue",
+   "name_fa": "دِی‌برِیک بلو",
+   "kind": "model"
+  },
+  {
+   "slug": "kamy-clark",
+   "name_en": "Kamy Clark",
+   "name_fa": "کمی کلارک",
+   "kind": "person"
+  },
+  {
+   "slug": "apache-license-20",
+   "name_en": "Apache License 2.0",
+   "name_fa": "مجوز آپاچی ۲.۰",
+   "kind": "product"
+  },
+  {
+   "slug": "nvidia-rtx-pro-6000",
+   "name_en": "NVIDIA RTX PRO 6000",
+   "name_fa": "انویدیا آر‌تی‌ایکس پرو ۶۰۰۰",
+   "kind": "product"
+  },
+  {
+   "slug": "fashion-studio",
+   "name_en": "Fashion Studio",
+   "name_fa": "فشن استودیو",
+   "kind": "product"
+  },
+  {
+   "slug": "model-2",
+   "name_en": "Model 2",
+   "name_fa": "مدل ۲",
+   "kind": "model"
+  },
+  {
+   "slug": "mythos-5",
+   "name_en": "Mythos 5",
+   "name_fa": "میتوس ۵",
+   "kind": "model"
+  },
+  {
+   "slug": "claude-mythos-preview",
+   "name_en": "Claude Mythos Preview",
+   "name_fa": "کلود میتوس پیش‌نمایش",
+   "kind": "model"
+  },
+  {
+   "slug": "laguna",
+   "name_en": "Laguna",
+   "name_fa": "لاگونا",
+   "kind": "model"
   }
  ]
 }
