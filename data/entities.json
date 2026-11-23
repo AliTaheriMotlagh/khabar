@@ -11345,6 +11345,156 @@
    "name_en": "Jacob Pachocki",
    "name_fa": "یاکوب پاچوکی",
    "kind": "person"
+  },
+  {
+   "slug": "zhipu",
+   "name_en": "Zhipu",
+   "name_fa": "شی‌پو",
+   "kind": "company"
+  },
+  {
+   "slug": "solaris",
+   "name_en": "Solaris",
+   "name_fa": "سولاریس",
+   "kind": "product"
+  },
+  {
+   "slug": "cristobal-valenzuela",
+   "name_en": "Cristobal Valenzuela",
+   "name_fa": "کریستوبال والنزوئلا",
+   "kind": "person"
+  },
+  {
+   "slug": "mithos",
+   "name_en": "Mithos",
+   "name_fa": "میتوس",
+   "kind": "model"
+  },
+  {
+   "slug": "chang-liu",
+   "name_en": "Chang Liu",
+   "name_fa": "چانگ لیو",
+   "kind": "person"
+  },
+  {
+   "slug": "abliterationai",
+   "name_en": "Abliteration.ai",
+   "name_fa": "آبلیتریشن‌آی",
+   "kind": "company"
+  },
+  {
+   "slug": "abliterated-model-large-v2",
+   "name_en": "abliterated-model-large-v2",
+   "name_fa": "آبلیتریتد مدل لارج و ۲",
+   "kind": "model"
+  },
+  {
+   "slug": "huffpost",
+   "name_en": "HuffPost",
+   "name_fa": "هافینگ‌پست",
+   "kind": "company"
+  },
+  {
+   "slug": "contextpilot",
+   "name_en": "ContextPilot",
+   "name_fa": "کانکست‌پایلت",
+   "kind": "product"
+  },
+  {
+   "slug": "dyson",
+   "name_en": "Dyson",
+   "name_fa": "دایسون",
+   "kind": "company"
+  },
+  {
+   "slug": "perplexity-computer",
+   "name_en": "Perplexity Computer",
+   "name_fa": "پرپلکسی کامپیوتر",
+   "kind": "product"
+  },
+  {
+   "slug": "solar-energy",
+   "name_en": "Solar energy",
+   "name_fa": "انرژی خورشیدی",
+   "kind": "product"
+  },
+  {
+   "slug": "coal",
+   "name_en": "Coal",
+   "name_fa": "زغال‌سنگ",
+   "kind": "product"
+  },
+  {
+   "slug": "natural-gas",
+   "name_en": "Natural Gas",
+   "name_fa": "گاز طبیعی",
+   "kind": "product"
+  },
+  {
+   "slug": "humanoid-robots",
+   "name_en": "Humanoid Robots",
+   "name_fa": "ربات‌های انسان‌نما",
+   "kind": "product"
+  },
+  {
+   "slug": "academic-researchers",
+   "name_en": "Academic Researchers",
+   "name_fa": "پژوهشگران دانشگاهی",
+   "kind": "person"
+  },
+  {
+   "slug": "reducto-ai",
+   "name_en": "Reducto AI",
+   "name_fa": "رداکتو ای‌آی",
+   "kind": "company"
+  },
+  {
+   "slug": "r-1",
+   "name_en": "r-1",
+   "name_fa": "آر-۱",
+   "kind": "model"
+  },
+  {
+   "slug": "fambot",
+   "name_en": "Fambot",
+   "name_fa": "فام‌بات",
+   "kind": "company"
+  },
+  {
+   "slug": "pics",
+   "name_en": "Pics",
+   "name_fa": "پیکس",
+   "kind": "product"
+  },
+  {
+   "slug": "canva",
+   "name_en": "Canva",
+   "name_fa": "کانوا",
+   "kind": "company"
+  },
+  {
+   "slug": "worldlabs",
+   "name_en": "WorldLabs",
+   "name_fa": "ورلد لبز",
+   "kind": "company"
+  },
+  {
+   "slug": "muse-voice-transcribe",
+   "name_en": "Muse Voice Transcribe",
+   "name_fa": "مایز وویس ترنسکرایب",
+   "kind": "model"
+  },
+  {
+   "slug": "msl",
+   "name_en": "MSL",
+   "name_fa": "تیم MSL",
+   "kind": "product"
+  },
+  {
+   "slug": "claude-mythos-51",
+   "name_en": "Claude Mythos 5.1",
+   "name_fa": "کلود میتوس ۵.۱",
+   "kind": "model"
   }
  ]
 }
