@@ -11087,6 +11087,54 @@
    "name_en": "IOI 2026",
    "name_fa": "المپیاد جهانی کامپیوتر ۲۰۲۶",
    "kind": "company"
+  },
+  {
+   "slug": "gmail",
+   "name_en": "Gmail",
+   "name_fa": "جیمیل",
+   "kind": "product"
+  },
+  {
+   "slug": "google-keep",
+   "name_en": "Google Keep",
+   "name_fa": "گوگل کیپ",
+   "kind": "product"
+  },
+  {
+   "slug": "fruit-fly",
+   "name_en": "Fruit Fly",
+   "name_fa": "مگس سرکه",
+   "kind": "model"
+  },
+  {
+   "slug": "brockman",
+   "name_en": "Brockman",
+   "name_fa": "گرگ براکمن",
+   "kind": "person"
+  },
+  {
+   "slug": "andrew-kurian",
+   "name_en": "Andrew Kurian",
+   "name_fa": "اندرو کوران",
+   "kind": "person"
+  },
+  {
+   "slug": "rtx-spark",
+   "name_en": "RTX Spark",
+   "name_fa": "آرت‌اکس اسپارک",
+   "kind": "product"
+  },
+  {
+   "slug": "claude-51",
+   "name_en": "Claude 5.1",
+   "name_fa": "کلود ۵.۱",
+   "kind": "model"
+  },
+  {
+   "slug": "mirrorcode",
+   "name_en": "MirrorCode",
+   "name_fa": "میرورکد",
+   "kind": "model"
   }
  ]
 }
