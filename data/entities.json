@@ -11945,6 +11945,138 @@
    "name_en": "S1",
    "name_fa": "اس‌ای‌اِی",
    "kind": "model"
+  },
+  {
+   "slug": "magnific",
+   "name_en": "Magnific",
+   "name_fa": "مگنیفیک",
+   "kind": "company"
+  },
+  {
+   "slug": "wan-30",
+   "name_en": "Wan 3.0",
+   "name_fa": "وان ۳.۰",
+   "kind": "model"
+  },
+  {
+   "slug": "tempus",
+   "name_en": "Tempus",
+   "name_fa": "تمپوس",
+   "kind": "company"
+  },
+  {
+   "slug": "tempus-ecg-ph",
+   "name_en": "Tempus ECG-PH",
+   "name_fa": "تمپوس ای‌سی‌جی-پی‌اچ",
+   "kind": "product"
+  },
+  {
+   "slug": "soap-notes",
+   "name_en": "SOAP notes",
+   "name_fa": "یادداشت‌های پزشکی SOAP",
+   "kind": "product"
+  },
+  {
+   "slug": "vitestro",
+   "name_en": "Vitestro",
+   "name_fa": "ویتسترو",
+   "kind": "company"
+  },
+  {
+   "slug": "aletta",
+   "name_en": "Aletta",
+   "name_fa": "التا",
+   "kind": "product"
+  },
+  {
+   "slug": "mrbeast",
+   "name_en": "MrBeast",
+   "name_fa": "مستر بیست",
+   "kind": "person"
+  },
+  {
+   "slug": "mrbeasts-thumbnail-team",
+   "name_en": "MrBeast's thumbnail team",
+   "name_fa": "تیم تامبنیل مستربیست",
+   "kind": "company"
+  },
+  {
+   "slug": "the-economist",
+   "name_en": "The Economist",
+   "name_fa": "مجله اکونومیست",
+   "kind": "company"
+  },
+  {
+   "slug": "zubin-qahramani",
+   "name_en": "Zubin Qahramani",
+   "name_fa": "زوبین قهرمانی",
+   "kind": "person"
+  },
+  {
+   "slug": "h-1b-visa",
+   "name_en": "H-1B visa",
+   "name_fa": "ویزای H-1B",
+   "kind": "product"
+  },
+  {
+   "slug": "forrester",
+   "name_en": "Forrester",
+   "name_fa": "فارستر",
+   "kind": "company"
+  },
+  {
+   "slug": "ford",
+   "name_en": "Ford",
+   "name_fa": "فورد",
+   "kind": "company"
+  },
+  {
+   "slug": "thomson-reuters",
+   "name_en": "Thomson Reuters",
+   "name_fa": "تامسون رویترز",
+   "kind": "company"
+  },
+  {
+   "slug": "agentsky",
+   "name_en": "AgentSky",
+   "name_fa": "ایجنت‌اسکای",
+   "kind": "product"
+  },
+  {
+   "slug": "mac-mini",
+   "name_en": "Mac mini",
+   "name_fa": "مک مینی",
+   "kind": "product"
+  },
+  {
+   "slug": "hatch",
+   "name_en": "Hatch",
+   "name_fa": "هَچ",
+   "kind": "product"
+  },
+  {
+   "slug": "nader-dabit",
+   "name_en": "Nader Dabit",
+   "name_fa": "نادر دابیت",
+   "kind": "person"
+  },
+  {
+   "slug": "rainmaker",
+   "name_en": "Rainmaker",
+   "name_fa": "رین‌میکر",
+   "kind": "company"
+  },
+  {
+   "slug": "augustus-dorico",
+   "name_en": "Augustus Dorico",
+   "name_fa": "آگوستوس دوریکو",
+   "kind": "person"
+  },
+  {
+   "slug": "world-robot-games-2026",
+   "name_en": "World Robot Games 2026",
+   "name_fa": "بازی‌های جهانی ربات‌ها ۲۰۲۶",
+   "kind": "company"
   }
  ]
 }
