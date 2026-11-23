@@ -12623,6 +12623,120 @@
    "name_en": "Fortell",
    "name_fa": "فورتل",
    "kind": "company"
+  },
+  {
+   "slug": "apple-m4-pro",
+   "name_en": "Apple M4 Pro",
+   "name_fa": "اپل ام۴ پرو",
+   "kind": "product"
+  },
+  {
+   "slug": "metal",
+   "name_en": "Metal",
+   "name_fa": "متال",
+   "kind": "product"
+  },
+  {
+   "slug": "cuda",
+   "name_en": "CUDA",
+   "name_fa": "سی‌یو‌دی‌ای",
+   "kind": "product"
+  },
+  {
+   "slug": "adaptive-biotechnologies",
+   "name_en": "Adaptive Biotechnologies",
+   "name_fa": "آداپتیو بایو",
+   "kind": "company"
+  },
+  {
+   "slug": "twist-bioscience",
+   "name_en": "Twist Bioscience",
+   "name_fa": "توئیست بایوساینس",
+   "kind": "company"
+  },
+  {
+   "slug": "irregular",
+   "name_en": "Irregular",
+   "name_fa": "ایرگولار",
+   "kind": "company"
+  },
+  {
+   "slug": "genbio-ai",
+   "name_en": "GenBio AI",
+   "name_fa": "جن‌بایو ای‌آی",
+   "kind": "company"
+  },
+  {
+   "slug": "aido-cell",
+   "name_en": "AIDO Cell",
+   "name_fa": "ای‌آی‌دی‌او سل",
+   "kind": "product"
+  },
+  {
+   "slug": "patrick-ho",
+   "name_en": "Patrick Ho",
+   "name_fa": "پاتریک هسو",
+   "kind": "person"
+  },
+  {
+   "slug": "rfdiffusion",
+   "name_en": "RFdiffusion",
+   "name_fa": "آر‌اف دیفیوژن",
+   "kind": "model"
+  },
+  {
+   "slug": "boltzgen",
+   "name_en": "BoltzGen",
+   "name_fa": "بولتز‌جن",
+   "kind": "model"
+  },
+  {
+   "slug": "nima-alidoust",
+   "name_en": "Nima Alidoust",
+   "name_fa": "نیما علیدوست",
+   "kind": "person"
+  },
+  {
+   "slug": "sam-rohde",
+   "name_en": "Sam Rohde",
+   "name_fa": "سم رودریکس",
+   "kind": "person"
+  },
+  {
+   "slug": "many-diseases",
+   "name_en": "Many diseases",
+   "name_fa": "بیماری‌های سخت",
+   "kind": "product"
+  },
+  {
+   "slug": "tu-delft",
+   "name_en": "TU Delft",
+   "name_fa": "دانشگاه TU دلفت",
+   "kind": "company"
+  },
+  {
+   "slug": "multi-drone-system",
+   "name_en": "multi-drone system",
+   "name_fa": "سیستم چندپهپادی",
+   "kind": "product"
+  },
+  {
+   "slug": "claude-saga-6",
+   "name_en": "Claude Saga 6",
+   "name_fa": "کلود ساگا ۶",
+   "kind": "model"
+  },
+  {
+   "slug": "glm-54",
+   "name_en": "GLM-5.4",
+   "name_fa": "گل‌ام ۵.۴",
+   "kind": "model"
+  },
+  {
+   "slug": "glm-coding-plan",
+   "name_en": "GLM Coding Plan",
+   "name_fa": "پلن کدنویسی گل‌ام",
+   "kind": "product"
   }
  ]
 }
