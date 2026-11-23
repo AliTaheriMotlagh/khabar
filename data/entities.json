@@ -13301,6 +13301,84 @@
    "name_en": "Hetzner",
    "name_fa": "هتزنر",
    "kind": "company"
+  },
+  {
+   "slug": "centaur-20",
+   "name_en": "Centaur 2.0",
+   "name_fa": "سنتر ۲.۰",
+   "kind": "product"
+  },
+  {
+   "slug": "georgeios",
+   "name_en": "Georgeios",
+   "name_fa": "جورجیوس",
+   "kind": "person"
+  },
+  {
+   "slug": "pi-agent",
+   "name_en": "Pi Agent",
+   "name_fa": "پی ایجنت",
+   "kind": "product"
+  },
+  {
+   "slug": "grok-20",
+   "name_en": "Grok-2.0",
+   "name_fa": "گراک ۲.۰",
+   "kind": "model"
+  },
+  {
+   "slug": "lucas-bier",
+   "name_en": "Lucas Bier",
+   "name_fa": "لوکاس بیر",
+   "kind": "person"
+  },
+  {
+   "slug": "blackrock",
+   "name_en": "BlackRock",
+   "name_fa": "بلک‌راک",
+   "kind": "company"
+  },
+  {
+   "slug": "syclops-25",
+   "name_en": "Syclops 2.5",
+   "name_fa": "سایکلپس ۲.۵",
+   "kind": "model"
+  },
+  {
+   "slug": "discovered-material",
+   "name_en": "Discovered Material",
+   "name_fa": "دیسکاورد متریال",
+   "kind": "company"
+  },
+  {
+   "slug": "edward-sridhar",
+   "name_en": "Edward Sridhar",
+   "name_fa": "ادوایث سریدتار",
+   "kind": "person"
+  },
+  {
+   "slug": "lightspeed-india",
+   "name_en": "LightSpeed India",
+   "name_fa": "لایت‌اسپید ایندیا",
+   "kind": "company"
+  },
+  {
+   "slug": "prodigy-research",
+   "name_en": "Prodigy Research",
+   "name_fa": "پروژکتی ریسرچ",
+   "kind": "company"
+  },
+  {
+   "slug": "michael-wang",
+   "name_en": "Michael Wang",
+   "name_fa": "مایکل وانگ",
+   "kind": "person"
+  },
+  {
+   "slug": "jane-street",
+   "name_en": "Jane Street",
+   "name_fa": "جین استریت",
+   "kind": "company"
   }
  ]
 }
