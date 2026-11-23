@@ -11135,6 +11135,12 @@
    "name_en": "MirrorCode",
    "name_fa": "میرورکد",
    "kind": "model"
+  },
+  {
+   "slug": "tinygpt",
+   "name_en": "TinyGPT",
+   "name_fa": "تاینی‌جی‌پی‌تی",
+   "kind": "model"
   }
  ]
 }

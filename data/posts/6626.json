@@ -12,7 +12,7 @@
   "site": "🧵 Thread • FxTwitter",
   "title": "Vals AI (@ValsAI)",
   "description": "GPT-6.2 Astra just produced what we believe is the first Lean proof of Smoktunowicz’s Gap Theorem, and it found its own route to get there.\nIt happened on Autoform-Hard, a verified subset of Meta FAIR’s AutoformBench that we’re releasing results on today.",
-  "image": "https://cdn4.telesco.pe/file/RIYcIT8o_RcYT6BFoWW_bSibN2elV1UXdfl9cBcu2ct3bq0EV58-j5RTzUD9DmTlujwuhczBbw277ZbOlU1rpNr9rBinhmOpomUvjca2j6UgWduap3L2SjzIxi_Xr6FOqsDnjFhYw7tKg_ULGie4_xUhURmEpv4x6AOrgOeD9qr5rxjriysKeBDCP9gGaGjRWzD072du_zQIIiSBnLhFFqcwk8T49aJfDqPkHaLH8VCFZLgTLA0TMk11hcN1xYj7-9lBrrcqmGKvgUcia5SS-7mNdygoiSqiH_rvqukKjQ_sHjlxiB7WJ7aM5-ui2-WZRWqMKTKnKdUT1hR9QGAyFw.jpg"
+  "image": "https://cdn4.telesco.pe/file/Dw4fvXJ897xG89Ynn1qSbPMPcbKQEpWKlbVF2mJ8yFpxfkIV-Y-uQHI6xN2CfC-AIxfRHD6tYYmBTBXFgt8j3mMsCHU6lxV3cP_eX7ce6iZzYSwprynFls37-wsVmiBuHGpzacHOQNA0N5Dr0VnlyGirMlQA9aIfXLplL8E5kMiV-a8VRGVfHdHWKLSBgZAjtgWZ58OOdgPcjmeFVvdVrn9RPviXGSmhQLugWYieUXhxKrwNfdBC0E9GeQbZomN-f5tQhKTBkYgpEKxU_cwmfVtSZzPtL97SbhZ9tanKYzrQJB-ldPrLyz2WaGMlmsOrXDAdiv3XjojX20xNN0oAlw.jpg"
  },
  "gholam": {
   "text": "رفقا، تیم Vals AI امروز خبر داده مدل GPT-6.2 Astra توی بنچمارکِ سنگین Autoform-Hard موفق شده قضیه‌ی پژوهشی «شکاف اسموکتونویچ» رو تو زبان ریاضی Lean اثبات کنه؛ اثباتی که به گفته اون‌ها احتمالاً اولین نمونه رسمی‌شده از این قضیه در Lean به حساب میاد. 💡\n\nقسمت بامزه‌ش اینجاست که استرا دقیقه‌ی ۴۷ خسته شد و گزارش «حل‌نشده» داد، ولی چون قوانین آزمون نمی‌ذاشت قبل از خرج شدن ۲۰ دلار جا بزنه (تا اون لحظه حدود ۸ دلار خرج کرده بود)، سیستم برش گردوند سر کار؛ درست مثل شاگردی که قبل از زنگ تفریح برگه‌شو پس می‌فرستن سر جاش! مدل هم ۹ دقیقه بی‌صدا فکر کرد، مسیرشو عوض کرد و دقیقه‌ی ۹۴ اثبات کامل رو تحویل داد.\n\n• به گزارش Vals AI، استرا به‌جای تکیه بر سه نتیجه عمیقِ اثبات کتابی که تو کتابخونه Mathlib نبوده، خودش یک مفهوم تازه به اسم «ظرفیت» تعریف کرده و قضیه رشد جبرها رو تو ۱۷۹۴ خط کد (با هزینه ۲۱.۵۸ دلار) و بدون دخالت انسان جمع کرده؛ خروجی هم با بازپخش مستقل هسته و بررسی دستی تایید شده.\n• تو این جدول ۵۶ تستی (برگرفته از قضیه‌های حل‌نشده بنچمارک متا با سقف ۳ ساعت و ۲۰۰ دلار)، GPT-6.2 Astra با ۸۷.۵ درصد (۴۹ مورد) اوله و Claude Fable 5.2 و GPT-6.2 Sol هر دو با ۸۵.۷۱ درصد (۴۸ مورد) مشترکاً دوم‌اند؛ البته میانگین هزینه هر تست برای Sol حدود ۸.۰۹ دلار و برای Fable حدود ۲۳.۲۱ دلار ثبت شده.\n• رده‌های چهارم تا ششم جدول هم به Gemini 4 Carbon (۷۱.۴۳ درصد)، Hydrogen (۶۴.۲۹ درصد) و Argon (۴۸.۲۱ درصد) رسیده.",
@@ -144,5 +144,5 @@
    "علم"
   ]
  },
- "updated": "2026-11-22T17:03:36+00:00"
+ "updated": "2026-11-23T02:56:37+00:00"
 }

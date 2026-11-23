@@ -19,37 +19,6 @@
   "text": "رفیق، نویسنده‌ای با شناسه ZeffMax تو پستی از گزارش جدید خودش و دو همکارش درباره خواهر و برادری گفته که شرکت آنتروپیک رو اداره می‌کنن. به گفته این پست، یکی از نکته‌های تازه گزارششون اینه که داریو زمانی که تو OpenAI بوده، این ایده رو مطرح کرده که بازی‌های ویدیوییِ غرق‌کننده می‌تونه راه‌حلی برای تنش‌های سیاسیِ ناشی از بیکاریِ هوش مصنوعی باشه؛ یه جورایی سرگرمیِ دنیای مجازی رو به‌عنوان یه جور مرهم برای اون شرایط پیشنهاد داده. 🎮 البته متن کامل خود مقاله اینجا در دسترس نیست و جزئیات بیشتری ازش نداریم.",
   "date": "2026-11-22T17:29:51+00:00"
  },
- "links": [
-  {
-   "kind": "tweet",
-   "url": "https://x.com/ZeffMax/status/2124251429439512902",
-   "domain": "x.com",
-   "author": {
-    "name": "Max Zeff",
-    "handle": "ZeffMax",
-    "avatar": "https://pbs.twimg.com/profile_images/2002892776808251392/GS3tXpKF_200x200.jpg"
-   },
-   "text": "While at OpenAI, Dario suggested that immersive videogames might be a solution for the political strife caused by AI-induced joblessness.\n\nOne of many new details in our story on the siblings leading Anthropic.\n\nW/ @berber_jin1 and @keachhagey \n\nhttps://www.wsj.com/tech/ai/anthropic-dario-daniela-amodei-siblings-ipo-be84ad11?mod=mhp",
-   "date": 1795295982,
-   "media": [],
-   "links": [
-    "https://www.wsj.com/tech/ai/anthropic-dario-daniela-amodei-siblings-ipo-be84ad11?mod=mhp"
-   ]
-  }
- ],
- "article": {
-  "title": "نویسنده‌ای با شناسه ZeffMax تو پستی از گزارش جدید خودش و دو همکارش درباره خواهر و برادری گفته که شرکت آنتروپیک رو اداره می‌کنن",
-  "source_title": "While at OpenAI, Dario suggested that immersive videogames might be a solution for the political strife caused by AI-induced joblessness.",
-  "body": [
-   "نویسنده‌ای با شناسه ZeffMax تو پستی از گزارش جدید خودش و دو همکارش درباره خواهر و برادری گفته که شرکت آنتروپیک رو اداره می‌کنن. به گفته این پست، یکی از نکته‌های تازه گزارششون اینه که داریو زمانی که تو OpenAI بوده، این ایده رو مطرح کرده که بازی‌های ویدیوییِ غرق‌کننده می‌تونه راه‌حلی برای تنش‌های سیاسیِ ناشی از بیکاریِ هوش مصنوعی باشه؛ یه جورایی سرگرمیِ دنیای مجازی رو به‌عنوان یه جور مرهم برای اون شرایط پیشنهاد داده. 🎮 البته متن کامل خود مقاله اینجا در دسترس نیست و جزئیات بیشتری ازش نداریم."
-  ],
-  "why": null,
-  "tags": [
-   "اوپن‌ای‌آی",
-   "آنتروپیک"
-  ]
- },
- "updated": "2026-11-22T19:34:18+00:00",
  "ai": {
   "title": "داریو آمودای: بازی‌های ویدیویی غرق‌کننده راه‌حل بیکاری هوش مصنوعی",
   "short": "بازی ویدیویی برای بیکاری",
@@ -116,5 +85,36 @@
    "v": 2,
    "src": "8a0dc9a21b89"
   }
- }
+ },
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/ZeffMax/status/2124251429439512902",
+   "domain": "x.com",
+   "author": {
+    "name": "Max Zeff",
+    "handle": "ZeffMax",
+    "avatar": "https://pbs.twimg.com/profile_images/2002892776808251392/GS3tXpKF_200x200.jpg"
+   },
+   "text": "While at OpenAI, Dario suggested that immersive videogames might be a solution for the political strife caused by AI-induced joblessness.\n\nOne of many new details in our story on the siblings leading Anthropic.\n\nW/ @berber_jin1 and @keachhagey \n\nhttps://www.wsj.com/tech/ai/anthropic-dario-daniela-amodei-siblings-ipo-be84ad11?mod=mhp",
+   "date": 1795295982,
+   "media": [],
+   "links": [
+    "https://www.wsj.com/tech/ai/anthropic-dario-daniela-amodei-siblings-ipo-be84ad11?mod=mhp"
+   ]
+  }
+ ],
+ "article": {
+  "title": "نویسنده‌ای با شناسه ZeffMax تو پستی از گزارش جدید خودش و دو همکارش درباره خواهر و برادری گفته که شرکت آنتروپیک رو اداره می‌کنن",
+  "source_title": "While at OpenAI, Dario suggested that immersive videogames might be a solution for the political strife caused by AI-induced joblessness.",
+  "body": [
+   "نویسنده‌ای با شناسه ZeffMax تو پستی از گزارش جدید خودش و دو همکارش درباره خواهر و برادری گفته که شرکت آنتروپیک رو اداره می‌کنن. به گفته این پست، یکی از نکته‌های تازه گزارششون اینه که داریو زمانی که تو OpenAI بوده، این ایده رو مطرح کرده که بازی‌های ویدیوییِ غرق‌کننده می‌تونه راه‌حلی برای تنش‌های سیاسیِ ناشی از بیکاریِ هوش مصنوعی باشه؛ یه جورایی سرگرمیِ دنیای مجازی رو به‌عنوان یه جور مرهم برای اون شرایط پیشنهاد داده. 🎮 البته متن کامل خود مقاله اینجا در دسترس نیست و جزئیات بیشتری ازش نداریم."
+  ],
+  "why": null,
+  "tags": [
+   "اوپن‌ای‌آی",
+   "آنتروپیک"
+  ]
+ },
+ "updated": "2026-11-23T02:56:36+00:00"
 }

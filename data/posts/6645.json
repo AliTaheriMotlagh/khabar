@@ -12,7 +12,7 @@
   "site": "FxTwitter",
   "title": "himanshu (@himanshustwts)",
   "description": "Prime Intellect got hacked!\n- attacker gained admin-level access to model-serving machines (potentially could inspect info during inference)\n- affected cluster was taken offline\n- unclear how long the attacker had access / how many requests were potentially…",
-  "image": "https://cdn4.telesco.pe/file/ehSyyx7tkqP0KMYSOs0i7Jo-QJW8WhvKk8EyzBEM6pa0ubu06TY4Y3ezvmmZA1bOaBH_6lLTAtOV1M01aLRvjGMJTUWmOk3kDVX6vWCWjyDvruXvmgSOBpN1uZWbJRuYZRGseR8aKaUer5U0XaL35-9OSLl_-GJfx7mAEZVh3R3T7RPzfRtI-UojXJ6YrGFtM31MxaIP1BysddaUUsjYNFn2q465u6aLKVrkcCGh3u1A5VdBEswMYz_VN6HFEIk5XYDq5Dv79uyxhDF-C5FfkLFRzQI3dHP_2GjJLJsTXKpR46Kf3-Ld7fQH0b5KMwZBOZvxvSxoXJ8XclQB_ek9CA.jpg"
+  "image": "https://cdn4.telesco.pe/file/ppRNKfGlV8ldE92XkdQsIarVbyHYT9CFnXEtVp6uglftCEZVaY2xFpKomjXC6LlVG9-4pKe0tmwnuN6khJJHiWeSrFl3AU7JDrottJQrP4I6esXWRc79ur6OR81iI4VINaskNwSZ7sAp8E8vzX96rOq3q0J4J9zYTB2Pvd6nWcN6I3kwjgDedRI5kJF8_2a33PicEYyFpv5Fybi0Py_Co3NUgAS6ez0qhxjc7DKRuTaiRHBSL9v5egG_7T63bZSq1lyWE2v5SWTH9NRAsX-ddinZNC0lsPpzg6qkUkmxvdxWf4-cvYm_Fq73L6_bTew5gZPMkBlyLNWSjDqH_N2YQg.jpg"
  },
  "gholam": {
   "text": "رفقا، طبق ایمیلی که OpenRouter برای کاربرای درگیر (از جمله تئو و اکانت T3 chat) فرستاده و تو شبکه ایکس هم دست‌به‌دست شده، زیرساخت شرکت Prime Intellect هک شده و مهاجم به سرورهای اجرای مدل دسترسی ادمین گرفته. نکته عجیب ماجرا اینه که طرف به‌جای خرابکاری معمولی، یواشکی مدل DeepSeek V4.1 Flash رو با یه نسخه دست‌کاری‌شده و بی‌تعارف عوض کرده که تقریباً هیچ درخواستی رو رد نمی‌کرده! 🛡️\n\n• بر اساس گزارش OpenRouter به نقل از Prime Intellect، این جابه‌جایی بین ۸ تا ۱۰ نوامبر ۲۰۲۶ انجام شده و در تست‌های استاندارد، مدل دست‌کاری‌شده حدود ۱ درصد درخواست‌ها رو رد می‌کرده (در حالی که نسخه اصلی بین ۸۳ تا ۹۸ درصد رد می‌کرده).\n• شرکت دسترسی مهاجم رو قطع و کلستر درگیر رو از مدار خارج کرده و اندپوینت این مدل از ۱۳ نوامبر دیگه درخواستی رو جواب نداده.\n• هنوز مدرکی مبنی بر ذخیره یا ارسال پرامپت‌ها به بیرون پیدا نشده، ولی به گفته این شرکت چون مهاجم دسترسی ادمین داشته، احتمال خونده شدن درخواست‌ها در لحظه پردازش رو نمی‌شه رد کرد و هنوز هم مشخص نیست دقیقاً چه مدت دسترسی داشته یا چند تا درخواست در معرض خطر بوده.\n\nتئو هم اشاره کرده که تا زمان انتشار این خبر، خود Prime Intellect هنوز اطلاع‌رسانی عمومی نکرده بوده و تحقیقاتش همچنان ادامه داره.",
@@ -150,5 +150,5 @@
    "امنیت"
   ]
  },
- "updated": "2026-11-22T17:03:36+00:00"
+ "updated": "2026-11-23T02:56:37+00:00"
 }
