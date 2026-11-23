@@ -11567,6 +11567,84 @@
    "name_en": "Gemini 3.7 Flash",
    "name_fa": "جمینای ۳.۷ فلش",
    "kind": "model"
+  },
+  {
+   "slug": "wikiskill",
+   "name_en": "WikiSkill",
+   "name_fa": "ویکی‌اسکیل",
+   "kind": "product"
+  },
+  {
+   "slug": "trump-administration",
+   "name_en": "Trump Administration",
+   "name_fa": "اداره ترامپ",
+   "kind": "company"
+  },
+  {
+   "slug": "hy4-preview",
+   "name_en": "Hy4 Preview",
+   "name_fa": "های ۴ پریویو",
+   "kind": "model"
+  },
+  {
+   "slug": "rosalind-workbench",
+   "name_en": "Rosalind Workbench",
+   "name_fa": "ورک‌بنچ روزالیند",
+   "kind": "product"
+  },
+  {
+   "slug": "earthborne-rangers",
+   "name_en": "Earthborne Rangers",
+   "name_fa": "ارتربورن رینجرز",
+   "kind": "product"
+  },
+  {
+   "slug": "michael-truel",
+   "name_en": "Michael Truel",
+   "name_fa": "مایکل ترول",
+   "kind": "person"
+  },
+  {
+   "slug": "m5-ultra",
+   "name_en": "M5 Ultra",
+   "name_fa": "M5 اولترا",
+   "kind": "product"
+  },
+  {
+   "slug": "minimax-h3-max",
+   "name_en": "Minimax H3 Max",
+   "name_fa": "مینیمکس H3 مکس",
+   "kind": "model"
+  },
+  {
+   "slug": "rihan-sheikh",
+   "name_en": "Rihan Sheikh",
+   "name_fa": "ریهان شیخ",
+   "kind": "person"
+  },
+  {
+   "slug": "twitch",
+   "name_en": "Twitch",
+   "name_fa": "توییچ",
+   "kind": "product"
+  },
+  {
+   "slug": "infiniteslopai",
+   "name_en": "infiniteslop.ai",
+   "name_fa": "اینفینیت‌اسلوپ‌آی",
+   "kind": "product"
+  },
+  {
+   "slug": "markus-boller",
+   "name_en": "Markus Boller",
+   "name_fa": "مارکوس بولر",
+   "kind": "person"
+  },
+  {
+   "slug": "matteo-pellegrini",
+   "name_en": "Matteo Pellegrini",
+   "name_fa": "ماتئو پلگرینی",
+   "kind": "person"
   }
  ]
 }
