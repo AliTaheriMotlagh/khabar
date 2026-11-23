@@ -11867,6 +11867,84 @@
    "name_en": "GLM Flash",
    "name_fa": "گل‌ام فلش",
    "kind": "model"
+  },
+  {
+   "slug": "gb200",
+   "name_en": "GB200",
+   "name_fa": "جی‌بی‌۲۰۰",
+   "kind": "product"
+  },
+  {
+   "slug": "accelerated-understanding",
+   "name_en": "Accelerated Understanding",
+   "name_fa": "آکسلراتد یاندراستندینگ",
+   "kind": "company"
+  },
+  {
+   "slug": "qwen-38-flash-next",
+   "name_en": "Qwen 3.8 Flash Next",
+   "name_fa": "قوئن ۳.۸ فلش نِکست",
+   "kind": "model"
+  },
+  {
+   "slug": "qwen-4",
+   "name_en": "Qwen 4",
+   "name_fa": "قوئن ۴",
+   "kind": "model"
+  },
+  {
+   "slug": "gatik",
+   "name_en": "Gatik",
+   "name_fa": "گاتیک",
+   "kind": "company"
+  },
+  {
+   "slug": "pepsi",
+   "name_en": "Pepsi",
+   "name_fa": "پپسی",
+   "kind": "company"
+  },
+  {
+   "slug": "portable-computer",
+   "name_en": "Portable Computer",
+   "name_fa": "پورتابل کامپیوتر",
+   "kind": "product"
+  },
+  {
+   "slug": "adam-little",
+   "name_en": "Adam Little",
+   "name_fa": "آدام لیتل",
+   "kind": "person"
+  },
+  {
+   "slug": "inflatable-whole-body-robotic-skin",
+   "name_en": "Inflatable Whole-Body Robotic Skin",
+   "name_fa": "پوست بادی ربات",
+   "kind": "product"
+  },
+  {
+   "slug": "chinese-robot",
+   "name_en": "Chinese Robot",
+   "name_fa": "ربات چینی",
+   "kind": "product"
+  },
+  {
+   "slug": "world-humanoid-robot-games",
+   "name_en": "World Humanoid Robot Games",
+   "name_fa": "مسابقات جهانی ربات‌های انسان‌نما",
+   "kind": "company"
+  },
+  {
+   "slug": "starbase",
+   "name_en": "Starbase",
+   "name_fa": "استاربیس",
+   "kind": "product"
+  },
+  {
+   "slug": "s1",
+   "name_en": "S1",
+   "name_fa": "اس‌ای‌اِی",
+   "kind": "model"
   }
  ]
 }
