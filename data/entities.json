@@ -11813,6 +11813,60 @@
    "name_en": "GlucoFM",
    "name_fa": "گلوکو‌اف‌ام",
    "kind": "model"
+  },
+  {
+   "slug": "local-ai",
+   "name_en": "Local AI",
+   "name_fa": "هوش مصنوعی لوکال",
+   "kind": "product"
+  },
+  {
+   "slug": "sagebioscience",
+   "name_en": "SageBioscience",
+   "name_fa": "سیج‌بایو",
+   "kind": "company"
+  },
+  {
+   "slug": "onetriangleai",
+   "name_en": "OneTriangleAI",
+   "name_fa": "وان‌تریانگل‌آی",
+   "kind": "company"
+  },
+  {
+   "slug": "elly-ellis",
+   "name_en": "Elly Ellis",
+   "name_fa": "الی الیس",
+   "kind": "person"
+  },
+  {
+   "slug": "nature-human-behaviour",
+   "name_en": "Nature Human Behaviour",
+   "name_fa": "نیچر هومان بی‌هویور",
+   "kind": "company"
+  },
+  {
+   "slug": "large-language-models",
+   "name_en": "Large Language Models",
+   "name_fa": "مدل‌های زبانی بزرگ",
+   "kind": "product"
+  },
+  {
+   "slug": "reasoning-models",
+   "name_en": "Reasoning Models",
+   "name_fa": "مدل‌های استدلال",
+   "kind": "model"
+  },
+  {
+   "slug": "zai",
+   "name_en": "Zai",
+   "name_fa": "زای",
+   "kind": "company"
+  },
+  {
+   "slug": "glm-flash",
+   "name_en": "GLM Flash",
+   "name_fa": "گل‌ام فلش",
+   "kind": "model"
   }
  ]
 }
