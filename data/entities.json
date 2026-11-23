@@ -13379,6 +13379,84 @@
    "name_en": "Jane Street",
    "name_fa": "جین استریت",
    "kind": "company"
+  },
+  {
+   "slug": "archer-aviation",
+   "name_en": "Archer Aviation",
+   "name_fa": "آرچر اویاسیون",
+   "kind": "company"
+  },
+  {
+   "slug": "boeing",
+   "name_en": "Boeing",
+   "name_fa": "بوئینگ",
+   "kind": "company"
+  },
+  {
+   "slug": "wisk-aero",
+   "name_en": "Wisk Aero",
+   "name_fa": "ویسک ائرو",
+   "kind": "company"
+  },
+  {
+   "slug": "insitu",
+   "name_en": "Insitu",
+   "name_fa": "اینسیتو",
+   "kind": "company"
+  },
+  {
+   "slug": "skygrid-ai",
+   "name_en": "SkyGrid AI",
+   "name_fa": "اسکای‌گرید ای‌آی",
+   "kind": "company"
+  },
+  {
+   "slug": "adam-goldstein",
+   "name_en": "Adam Goldstein",
+   "name_fa": "آدام گلدستین",
+   "kind": "person"
+  },
+  {
+   "slug": "gpt-56-cyber",
+   "name_en": "GPT-5.6-Cyber",
+   "name_fa": "GPT-5.6-سایبر",
+   "kind": "model"
+  },
+  {
+   "slug": "transformer-lab",
+   "name_en": "Transformer Lab",
+   "name_fa": "ترنسفورمر لب",
+   "kind": "company"
+  },
+  {
+   "slug": "primus",
+   "name_en": "Primus",
+   "name_fa": "پرایموس",
+   "kind": "product"
+  },
+  {
+   "slug": "muse-glimmer",
+   "name_en": "Muse Glimmer",
+   "name_fa": "موز گلیمر",
+   "kind": "model"
+  },
+  {
+   "slug": "macsync-stealer",
+   "name_en": "MacSync Stealer",
+   "name_fa": "مک‌سنک استی‌لر",
+   "kind": "product"
+  },
+  {
+   "slug": "prime-agent",
+   "name_en": "Prime Agent",
+   "name_fa": "پرایم ایجنت",
+   "kind": "product"
+  },
+  {
+   "slug": "deep-agents",
+   "name_en": "Deep Agents",
+   "name_fa": "دیپ ایجنت‌ها",
+   "kind": "product"
   }
  ]
 }
