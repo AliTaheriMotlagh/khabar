@@ -11027,6 +11027,66 @@
    "name_en": "Kevin Liu",
    "name_fa": "کوین لیو",
    "kind": "person"
+  },
+  {
+   "slug": "omen-alpha",
+   "name_en": "Omen Alpha",
+   "name_fa": "اومن آلفا",
+   "kind": "model"
+  },
+  {
+   "slug": "mustafa-salem",
+   "name_en": "Mustafa Salem",
+   "name_fa": "مصطفی سلیمان",
+   "kind": "person"
+  },
+  {
+   "slug": "morgan-stanley",
+   "name_en": "Morgan Stanley",
+   "name_fa": "مورگان استنلی",
+   "kind": "company"
+  },
+  {
+   "slug": "goldman-sachs",
+   "name_en": "Goldman Sachs",
+   "name_fa": "گلدمن ساکس",
+   "kind": "company"
+  },
+  {
+   "slug": "andrew-wiles",
+   "name_en": "Andrew Wiles",
+   "name_fa": "اندرو وایلز",
+   "kind": "person"
+  },
+  {
+   "slug": "formal-verification",
+   "name_en": "Formal verification",
+   "name_fa": "تایید رسمی",
+   "kind": "product"
+  },
+  {
+   "slug": "strix-halo",
+   "name_en": "Strix Halo",
+   "name_fa": "استریکس هیلو",
+   "kind": "product"
+  },
+  {
+   "slug": "thinkstation",
+   "name_en": "Thinkstation",
+   "name_fa": "تینک‌استیشن",
+   "kind": "product"
+  },
+  {
+   "slug": "shi-wang",
+   "name_en": "Shi Wang",
+   "name_fa": "شی وانگ",
+   "kind": "person"
+  },
+  {
+   "slug": "ioi-2026",
+   "name_en": "IOI 2026",
+   "name_fa": "المپیاد جهانی کامپیوتر ۲۰۲۶",
+   "kind": "company"
   }
  ]
 }
