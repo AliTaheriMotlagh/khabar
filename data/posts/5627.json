@@ -127,6 +127,11 @@
    "model": "qwen3.5-9b-q4_k_m",
    "v": 2,
    "src": "4c14796dea6f"
+  },
+  "speech": {
+   "v": 1,
+   "src": "ef4336ad6f7d",
+   "added": 1
   }
  }
 }
