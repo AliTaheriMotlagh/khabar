@@ -14009,6 +14009,144 @@
    "name_en": "Superintelligence",
    "name_fa": "ابرهوش",
    "kind": "model"
+  },
+  {
+   "slug": "terra",
+   "name_en": "Terra",
+   "name_fa": "تِرا",
+   "kind": "model"
+  },
+  {
+   "slug": "google-gemini",
+   "name_en": "Google Gemini",
+   "name_fa": "گوگل جمنای",
+   "kind": "model"
+  },
+  {
+   "slug": "procter-and-gamble",
+   "name_en": "Procter and Gamble",
+   "name_fa": "پروکتر اند گمبل",
+   "kind": "company"
+  },
+  {
+   "slug": "barunlm",
+   "name_en": "BarunLM",
+   "name_fa": "بارون‌ال‌ام",
+   "kind": "model"
+  },
+  {
+   "slug": "firecrawl",
+   "name_en": "Firecrawl",
+   "name_fa": "فایرکراول",
+   "kind": "company"
+  },
+  {
+   "slug": "pdf-inspector",
+   "name_en": "pdf-inspector",
+   "name_fa": "پی‌دی‌اف اینسپکتور",
+   "kind": "product"
+  },
+  {
+   "slug": "minimax-3",
+   "name_en": "MiniMax 3",
+   "name_fa": "مینیمکس ۳",
+   "kind": "model"
+  },
+  {
+   "slug": "zaplar",
+   "name_en": "Zaplar",
+   "name_fa": "زپلار",
+   "kind": "company"
+  },
+  {
+   "slug": "yc-s26",
+   "name_en": "YC S26",
+   "name_fa": "یو‌سی اس ۲۶",
+   "kind": "company"
+  },
+  {
+   "slug": "carpathy",
+   "name_en": "Carpathy",
+   "name_fa": "کارپاتی",
+   "kind": "company"
+  },
+  {
+   "slug": "vibe-coding",
+   "name_en": "Vibe Coding",
+   "name_fa": "کدنویسی با حال و هوا",
+   "kind": "product"
+  },
+  {
+   "slug": "rejection-therapy",
+   "name_en": "Rejection Therapy",
+   "name_fa": "درمان رد شدن",
+   "kind": "product"
+  },
+  {
+   "slug": "social-media",
+   "name_en": "Social Media",
+   "name_fa": "شبکه‌های اجتماعی",
+   "kind": "product"
+  },
+  {
+   "slug": "mobile-drone-show-system",
+   "name_en": "Mobile Drone Show System",
+   "name_fa": "سیستم نمایش پهپاد سیار",
+   "kind": "product"
+  },
+  {
+   "slug": "soft-robots",
+   "name_en": "Soft Robots",
+   "name_fa": "ربات‌های نرم",
+   "kind": "product"
+  },
+  {
+   "slug": "human-baseline",
+   "name_en": "Human baseline",
+   "name_fa": "سطح عملکرد انسان",
+   "kind": "model"
+  },
+  {
+   "slug": "genome-intelligence",
+   "name_en": "Genome Intelligence",
+   "name_fa": "ژنوم اینتلیجنس",
+   "kind": "product"
+  },
+  {
+   "slug": "robotics-startup",
+   "name_en": "Robotics Startup",
+   "name_fa": "استارتاپ رباتیک",
+   "kind": "product"
+  },
+  {
+   "slug": "minimax-h3",
+   "name_en": "MiniMax-H3",
+   "name_fa": "مینیمکس-ایچ-۳",
+   "kind": "model"
+  },
+  {
+   "slug": "procore",
+   "name_en": "Procore",
+   "name_fa": "پروکور",
+   "kind": "company"
+  },
+  {
+   "slug": "dronedeploy",
+   "name_en": "DroneDeploy",
+   "name_fa": "درین‌دیپلوی",
+   "kind": "company"
+  },
+  {
+   "slug": "claudefare",
+   "name_en": "Claudefare",
+   "name_fa": "کلودفیر",
+   "kind": "product"
+  },
+  {
+   "slug": "rtx-5090",
+   "name_en": "RTX 5090",
+   "name_fa": "آر‌تی‌ایکس ۵۰۹۰",
+   "kind": "product"
   }
  ]
 }
