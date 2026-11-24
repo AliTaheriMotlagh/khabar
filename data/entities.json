@@ -14381,6 +14381,96 @@
    "name_en": "HungerG",
    "name_fa": "هنگر جی",
    "kind": "model"
+  },
+  {
+   "slug": "kalshi",
+   "name_en": "Kalshi",
+   "name_fa": "کالشی",
+   "kind": "company"
+  },
+  {
+   "slug": "ramtin-nami",
+   "name_en": "Ramtin Nami",
+   "name_fa": "رامتین نامی",
+   "kind": "person"
+  },
+  {
+   "slug": "charles-gasparino",
+   "name_en": "Charles Gasparino",
+   "name_fa": "چارلز گاسپارینو",
+   "kind": "person"
+  },
+  {
+   "slug": "nuvance",
+   "name_en": "Nuvance",
+   "name_fa": "نونواکس",
+   "kind": "company"
+  },
+  {
+   "slug": "vibe-pro",
+   "name_en": "Vibe Pro",
+   "name_fa": "ویب پرو",
+   "kind": "product"
+  },
+  {
+   "slug": "embo",
+   "name_en": "Embo",
+   "name_fa": "امبو",
+   "kind": "company"
+  },
+  {
+   "slug": "daniyar-hoffner",
+   "name_en": "Daniyar Hoffner",
+   "name_fa": "دانیار هافنر",
+   "kind": "person"
+  },
+  {
+   "slug": "embo-model",
+   "name_en": "Embo Model",
+   "name_fa": "مدل امبو",
+   "kind": "product"
+  },
+  {
+   "slug": "vertex-ai",
+   "name_en": "Vertex AI",
+   "name_fa": "ورکس ای‌آی",
+   "kind": "product"
+  },
+  {
+   "slug": "hydrogen",
+   "name_en": "Hydrogen",
+   "name_fa": "هیدروژن",
+   "kind": "product"
+  },
+  {
+   "slug": "university-of-oxford",
+   "name_en": "University of Oxford",
+   "name_fa": "دانشگاه آکسفورد",
+   "kind": "company"
+  },
+  {
+   "slug": "valiants-conjecture",
+   "name_en": "Valiant's conjecture",
+   "name_fa": "فرضیه والیانت",
+   "kind": "product"
+  },
+  {
+   "slug": "daniela-amodei",
+   "name_en": "Daniela Amodei",
+   "name_fa": "دانیلا آمودی",
+   "kind": "person"
+  },
+  {
+   "slug": "tom-brown",
+   "name_en": "Tom Brown",
+   "name_fa": "تام براون",
+   "kind": "person"
+  },
+  {
+   "slug": "jared-kaplan",
+   "name_en": "Jared Kaplan",
+   "name_fa": "جرد کاپلان",
+   "kind": "person"
   }
  ]
 }
