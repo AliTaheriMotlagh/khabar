@@ -1,0 +1,67 @@
+{
+ "id": 6700,
+ "url": "https://t.me/dlmehr/6700",
+ "date": "2026-11-23T19:16:58+00:00",
+ "text": "https://fxtwitter.com/chatgpt/status/2124942186425069836?a=gx2bIgQ_n1rvJ6KIJUg&s=52",
+ "forwarded_from": null,
+ "digest": false,
+ "hash": "2ddbce2f31d6",
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/chatgpt/status/2124942186425069836?a=gx2bIgQ_n1rvJ6KIJUg&s=52",
+  "site": "FxTwitter",
+  "title": "ChatGPT (@ChatGPT)",
+  "description": "We’re rolling out a version of GPT-6.2 Sol in the Chat tab, optimized for everyday conversation.\nIt’s much better at handling complex requests, especially when you give it detailed instructions or ask it to find information online.\nA few improvements you…",
+  "image": null
+ },
+ "gholam": null,
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/ChatGPT/status/2124942186425069836",
+   "domain": "x.com",
+   "author": {
+    "name": "ChatGPT",
+    "handle": "ChatGPT",
+    "avatar": "https://pbs.twimg.com/profile_images/2081980424666935296/qU5G7mQg_200x200.jpg"
+   },
+   "text": "We’re rolling out a version of GPT-6.2 Sol in the Chat tab, optimized for everyday conversation.\n\nIt’s much better at handling complex requests, especially when you give it detailed instructions or ask it to find information online. \n\nA few improvements you might notice in everyday chats:\n- It picks up on finer details in photos, like text on a label or symbols on a sign.\n\n- When you’re comparing options online, it does a better job of narrowing them down based on what matters to you, like price or location.\n\n- It has a better sense of when to offer a follow-up, like asking if you’d like a heads-up when a price drops.\n\nRolling out today to Plus, Pro, Business, and Enterprise users.",
+   "date": 1795460671,
+   "media": [
+    {
+     "type": "video",
+     "src": "https://video.twimg.com/amplify_video/2124940157111738369/vid/avc1/1280x720/cQU_jROfwMLQ2OJb.mp4?tag=29",
+     "poster": "https://pbs.twimg.com/amplify_video_thumb/2124940157111738369/img/LiN99bSHqsb03ZwU.jpg",
+     "ratio": 0.5625,
+     "duration": 27.466,
+     "gif": false
+    }
+   ],
+   "links": []
+  }
+ ],
+ "article": {
+  "title": "We’re rolling out a version of GPT-6.2 Sol in the Chat tab, optimized for everyday conversation.",
+  "source_title": null,
+  "body": [],
+  "why": null,
+  "tags": [
+   "اوپن‌ای‌آی"
+  ]
+ },
+ "updated": "2026-11-24T05:07:40+00:00",
+ "ai": {
+  "story": {
+   "body": [
+    "شرکت OpenAI نسخه جدیدی از مدل هوش مصنوعی GPT-6.2 Sol را در تب چت برای کاربران پلاس، پرو، کسب‌وکار و سازمانی منتشر کرد.",
+    "این نسخه که برای مکالمات روزمره بهینه‌سازی شده، درک بهتری از درخواست‌های پیچیده و جستجوی اطلاعات آنلاین دارد.",
+    "امکانات جدید شامل تشخیص دقیق‌تر جزئیات در تصاویر مانند متن روی برچسب‌ها، مقایسه بهتر گزینه‌ها بر اساس معیارهای کاربر و ارائه هوشمندانه پیشنهادات پیگیری است.",
+    "این ویژگی‌ها از امروز برای کاربران ذکر شده در دسترس قرار گرفته‌اند."
+   ],
+   "why": "این انتشار نشان‌دهنده پیشرفت مدل در تعاملات پیچیده‌تر و کاربردی‌تر با کاربران است.",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "c45221108023"
+  }
+ }
+}

@@ -12,7 +12,7 @@
   "site": "FxTwitter",
   "title": "Deedy (@deedydas)",
   "description": "“We have full confidence that Alpöge's proof of the Riemann Hypothesis is correct, and we congratulate him on this achievement.”\nThe Lean community has spoken. GRH has fallen. What a historic moment.\nFull read: https://math.mit.edu/~drew/grh/\nQuoting Lean…",
-  "image": "https://cdn4.telesco.pe/file/C7t6Re-frTON2cOOckVCDGc3X3tRqMSZJmw1i1Y48GzXmb2vGDrqS640ufNuAMA6wLvY-mYOJfQpFgqPPuPdkKMQCVcPeT14bUtJ1mGPxVKtEF34VMr0SJohgEJPdbXWREgAV75n0qsP_v6t2xr2jqMlLX6EKYh7L3hq9kNYZseFOV3JSPPPwp6DF8DccK8DzuX2SF9LboWQxSozknlZ-WzX2ybYCkMjzDnFBEzNXLwj6CurdEMsK9E45fcxyILkrEX7AB7ckcwzk6fIDW-Xy4PP26NTmAu9z6DHFMeU-LTSmLjTOzyc6lmyOzfZpiLX9G7sTB0UJcdf7WG97ZwT8g.jpg"
+  "image": "https://cdn4.telesco.pe/file/d8lJxR51tyzBRbHDiZ6v3OrUQpetobvA1jL5UzVqpq-rGmXkEgwzQwD4wya6X24NrZ-n0U27OsgkDNuKgEjZt0K29L9ODKo-BSTJ-xBNWbZpbUD51GiK8KPyXZ-BF-ehrs-gnCI6AyQgmgCxEgZve8R9XyrXxwBEVFZapKS_4TwTgpSR0Ff3TuFaHe0wYYMRaWs4cruc5QZ4wZ9GW8giCThG4RK6RjWMl4TZUZSmVLU0Db80do22uvXBqu2qmrYaCwvOjCei0suUm7Xce0_5T83rYAOXXMdw1I0GPgpU__PF1npKs4TmlT2PEgMIHSAnKJabokWwofcRrabUAukH5A.jpg"
  },
  "gholam": {
   "text": "رفقا، توی دنیای ریاضی یه خبر حسابی سر و صدا کرده! 📐 کاربر deedydas با بازنشر بیانیهٔ مشترک Lean FRO و Mathlib Initiative نوشته جامعهٔ Lean اثبات جدیدی برای فرضیهٔ ریمان (و شکل تعمیم‌یافته‌ش یعنی GRH) رو تأیید کرده و از این اتفاق به عنوان یه لحظهٔ تاریخی یاد کرده. ماجرا از این قراره که لونت آلپوگه روز ۲۰ نوامبر ۲۰۲۶ یه پروژهٔ ۱۷ میلیون خطی به زبان Lean منتشر کرده و جامعهٔ Lean و Mathlib هم بعد از حدود یک روز بررسی، کدها رو حسابی انداختن زیر ذره‌بین تا مطمئن شن مو لای درزش نمی‌ره.\n\n• بر اساس بیانیهٔ مشترک Lean FRO و Mathlib، این کتابخانه بدون خطا کامپایل می‌شه، دقیقاً همون صورت استاندارد فرضیهٔ ریمان در Mathlib رو ثابت می‌کنه و خروجی خامش از فیلتر چند بررسی‌کنندهٔ مستقل مثل con-leche، con-ron و هستهٔ رسمی Lean هم رد شده.\n• صفحهٔ گزارش‌های راستی‌آزمایی اندرو ساترلند (از دانشگاه MIT) نشون می‌ده هر ۱۷۵ هزار و ۱۸۷ ماژول این کد فقط به سه اصل بدیهی استاندارد تکیه دارن و ابزارهای مستقلی مثل nanoda و lean4lean پذیرفتنش؛ البته تا زمان آخرین به‌روزرسانی اون صفحه، هنوز یکی دو اجرای سنگین و تک‌رشته‌ای روی خروجی حدود ۶۱ میلیارد بایتیِ این اثبات در حال انجام بود.\n• ساترلند در عین حال یادآوری کرده که «GRH» در این بررسی فقط شامل توابع L دیریکله می‌شه و صورت‌های کلی‌تر مثل توابع زتای ددکیند یا توابع L هکه و اتومورفیک جزو موارد چک‌شده نیستن.\n\nحالا هم به گفتهٔ خود بیانیهٔ مشترک، همه منتظرن ببینن جامعهٔ ریاضی چطور ایده‌های تازهٔ پشت این اثبات غول‌پیکر رو رمزگشایی و تشریح می‌کنه.",
@@ -176,5 +176,5 @@
    "علم"
   ]
  },
- "updated": "2026-11-23T15:37:38+00:00"
+ "updated": "2026-11-24T05:07:43+00:00"
 }

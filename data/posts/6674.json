@@ -3,14 +3,14 @@
  "url": "https://t.me/dlmehr/6674",
  "date": "2026-11-21T17:12:15+00:00",
  "text": "مدلی که می‌تونه فقط توی 78 میلی‌ثانیه، یه تصویر با ابعاد 512 × 512 پیکسل تولید کنه!\nیه مدل بینایی-زبانی (Vision-Language) که فریز شده (یعنی پارامترهاش در حین این فرایند تغییر نمی‌کنن)، کل تصویر 512 پیکسلی رو به‌عنوان یک تصمیم واحد و تنها در یک مرحله اجرای مدل (Forward Pass) تولید می‌کنه. Jeveration حالا مدل‌های نسل اول (System One) هم می‌تونن تصویر تولید کنن!\n\nتست آنلاین:\nhuggingface.co/spaces/linlinlinlinsdada/Jeveration\n\nسورس کد که دیروز منتشر شده:\ngithub.com/Carol-lyh/Jeveration\n\n@Linuxor (https://t.me/Linuxor)",
- "forwarded_from": null,
+ "forwarded_from": "Linuxor ?",
  "digest": false,
  "hash": "3eda7c6f33f7",
  "media": [
   {
    "type": "video",
-   "src": "https://cdn4.telesco.pe/file/50fdedb856.mp4?token=rt7FPeoJHsjIzi2tKRqYJexrb99zknZsqXfXrg5dR_RiMMGCktSKOMDoQT3WwZbkFwcy9re-47MZJLgfPF7LqXoV8n4U2dXTP4pVEyxbpYLWvtVch1Iiklqwr-nwtWHuCTBNEw0p39CO3vb7E67Xu_d1q0znOJ3t5IBFZPVlsT2MzNTVkp_4vf4EzXySTxErljQMKoaTThFUDaBf3nVBUQpLfBPYPEGJ2y84lPuXLZsfR8DttQMseWlfG3yueDi3u0ohAd9XQgqI5tea8OM4RRyiHgMpyC5iAy4qaQuwXySD3TONs_93yK3oMHFQEl4wF7z4_hPO9dL9skc3gCM8rw",
-   "poster": "https://cdn4.telesco.pe/file/GOHUy5poTkj0-2JiLxYWcTt6T5cDIjeS2s7WC-Ccfdb4C_6aXHaLHFW_PRHRnEWleIBGwWWQ9ck0CUm4vtM9YjJxM9Yn1gZxrvd6r9JxnEn8dYtbx9LOIxz4LhboKZpKMWNfJM3f0-YuPX7cbraTNOlHd6l1MkaZpHO8G-fAaLYkAfFci9NcpnDLxTSb7ZdUTUC5j1-94rBVmEWSY4DnM9H5BNm4isqA5LFqQZS1j-OM719ov8N0OTJ5EZwxswnwv6B5QeaQkFqqtE0eRWFtJi7CMA8mQ9RekzbzijZ7lyvXPHDnbo6D4VOtPBEFgg3qZgYqvOe5S6zb6APtja63mg",
+   "src": "https://cdn4.telesco.pe/file/50fdedb856.mp4?token=RfP1087pRQQpVk27bziGYJjVzc1BdIa8qsqSQkdrQ51XNNeGybm1uD8GKB2L9u_jQxkJMJFuwTcB1KZaqJX6y095i5B0ModPw-KPeGUhaDb8TAowHwSuilkCFcW2iIetKp1CVwpawyqDoZUyozDRBGgmRRlaVPNkt8w4PQHrqPH_tlIVMnzfAnfNMEW887TQ2Fvykv0dyqoAoKcJkyp9nx5-SYiYvlxF8XOj-E7dWkvWmRYvvrQiA-MxkpOKvfBpLcy4QhlW8tX1fmtxKzWedi84XZfIOiuaLWacxv5HuYf6wxdyiNseb0ndW8wtZ7Sr8XG6X7IM9M1PHpTh4ZJFbQ",
+   "poster": "https://cdn4.telesco.pe/file/uKDrS_EyG3auaeL5ikl33V_FLnBurEzTGX1fHJdS3XVVwoJlyqtfWbJ-R6EQswwh56hDFPHK-UjVWzGlfmAlfiI0mZ8X0EEEDLYE4VVYOZ6pv2rbJHWY0JOMSndxXHgaFrNsOEuARbOC3mu5kGiCCj7Sr9aRCn5EGZ-5I-mJflK3tiKtYuRBrbqD_5u-RUuhB7p-OvdnVJgra_crBeFAKFl2Sc2Ub26uz605HHFkJXYlkrOih3rG5Fnoahi5LLfY-BvMmgyRdeSvmM-l3EzHrZZ6ARACY-qFzibBJXiiuFMLY5-mWBRzljQOM56Hih3BfeFk5MR0QwoiKu3uMSf0Ow",
    "ratio": 0.5625,
    "duration": "0:15"
   }
@@ -125,5 +125,5 @@
    "متن‌باز"
   ]
  },
- "updated": "2026-11-23T15:37:38+00:00"
+ "updated": "2026-11-24T05:07:43+00:00"
 }

@@ -16,44 +16,6 @@
   "small": true
  },
  "gholam": null,
- "links": [
-  {
-   "kind": "tweet",
-   "url": "https://x.com/Zai_org/status/2124811995912286352",
-   "domain": "x.com",
-   "author": {
-    "name": "Z.ai",
-    "handle": "Zai_org",
-    "avatar": "https://pbs.twimg.com/profile_images/1970775077181411328/W8XKaUIh_200x200.jpg"
-   },
-   "text": "Introducing GLM-5.4: Generalized Coding with Our First Loop Transformer.\n\n- Loops existing layers in the GLM-5 base model for deeper reasoning\n- Pushes beyond traditional coding to video, games, 3D shaders, and CAD modeling\n- Adds vision capabilities for stronger visual coding\n\nAPI access will open after safety evaluation. Model weights will be released responsibly.\n\nTech Blog: http://z.ai/blog/glm-5.4",
-   "date": 1795429631,
-   "media": [],
-   "links": [
-    "http://z.ai/blog/glm-5.4"
-   ]
-  },
-  {
-   "kind": "link",
-   "url": "https://z.ai/blog/glm-5.4",
-   "domain": "z.ai",
-   "title": "Toward Generalized Coding with Our First Loop Transformer",
-   "description": null,
-   "image": "https://z-ai-bj.oss-cn-beijing.aliyuncs.com/prompts-rich-media-resources/5.4-blog/20261123-173242.jpeg?w=1280&h=720&fit=fill",
-   "site": "z.ai"
-  }
- ],
- "article": {
-  "title": "Introducing GLM-5.4: Generalized Coding with Our First Loop Transformer.",
-  "source_title": null,
-  "body": [],
-  "why": null,
-  "tags": [
-   "کدنویسی",
-   "چین"
-  ]
- },
- "updated": "2026-11-23T15:37:36+00:00",
  "ai": {
   "title": "Z.ai مدل GLM-5.4 را با معماری ترنسفورمر حلقوی برای کدنویسی و چندرسانه‌ای معرفی کرد",
   "short": "مدل GLM-5.4 از Z.ai",
@@ -127,5 +89,43 @@
    "src": "0303f05d2ec2",
    "added": 4
   }
- }
+ },
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/Zai_org/status/2124811995912286352",
+   "domain": "x.com",
+   "author": {
+    "name": "Z.ai",
+    "handle": "Zai_org",
+    "avatar": "https://pbs.twimg.com/profile_images/1970775077181411328/W8XKaUIh_200x200.jpg"
+   },
+   "text": "Introducing GLM-5.4: Generalized Coding with Our First Loop Transformer.\n\n- Loops existing layers in the GLM-5 base model for deeper reasoning\n- Pushes beyond traditional coding to video, games, 3D shaders, and CAD modeling\n- Adds vision capabilities for stronger visual coding\n\nAPI access will open after safety evaluation. Model weights will be released responsibly.\n\nTech Blog: http://z.ai/blog/glm-5.4",
+   "date": 1795429631,
+   "media": [],
+   "links": [
+    "http://z.ai/blog/glm-5.4"
+   ]
+  },
+  {
+   "kind": "link",
+   "url": "https://z.ai/blog/glm-5.4",
+   "domain": "z.ai",
+   "title": "Toward Generalized Coding with Our First Loop Transformer",
+   "description": null,
+   "image": "https://z-ai-bj.oss-cn-beijing.aliyuncs.com/prompts-rich-media-resources/5.4-blog/20261123-173242.jpeg?w=1280&h=720&fit=fill",
+   "site": "z.ai"
+  }
+ ],
+ "article": {
+  "title": "Introducing GLM-5.4: Generalized Coding with Our First Loop Transformer.",
+  "source_title": null,
+  "body": [],
+  "why": null,
+  "tags": [
+   "کدنویسی",
+   "چین"
+  ]
+ },
+ "updated": "2026-11-24T05:07:42+00:00"
 }

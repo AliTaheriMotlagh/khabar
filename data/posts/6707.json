@@ -1,0 +1,116 @@
+{
+ "id": 6707,
+ "url": "https://t.me/dlmehr/6707",
+ "date": "2026-11-24T04:11:53+00:00",
+ "text": "https://fxtwitter.com/opencode/status/2125062647846694979?a=XYkhtfcxJWOvqxuVRWc&s=52",
+ "forwarded_from": null,
+ "digest": false,
+ "hash": "e652536b4353",
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/opencode/status/2125062647846694979?a=XYkhtfcxJWOvqxuVRWc&s=52",
+  "site": "FxTwitter",
+  "title": "OpenCode (@opencode)",
+  "description": "HungerG (stealth model) is free for OpenCode Go subscribers this week\n1M context\nMulti-modal\nNo training on data",
+  "image": "https://cdn4.telesco.pe/file/WW6K2Odg8ec_PG-eA0vM8gRtBmR2nHzWyhb7B5e9lnpwKf0SwscvtfTA1UXI4KWy9aGiQYQXd882ub_5xkuiSPdF13BVowl2n9c225cVHS7lGVAwCRSl8UgC2ag-M9CXgNgsl_E-pAVuzP5dvh0HdGTxxgRtGC7MiSzlKbS3SAxmQwOn1Yv4HkRLo1EPRXDq_tBeOZ9lZnxgKkA3YtiV9cOqRH3kjl0U9C2u_Qtq6e-PpH4lMfilpR4dVow4C62rWFxxhaZad1vTLz6q88ssgPnWJxtuv60rCECDTD2LGvoNFHKQegkPGsbYCFFrRmUQdSfyy-x-qM0s130ON2mZhw.jpg",
+  "small": true
+ },
+ "gholam": {
+  "text": "حساب اوپن‌کد (OpenCode) تو یه پست اعلام کرده که یه مدل مخفی به اسم HungerG، طبق گفته‌شون برای این هفته، برای مشترک‌های OpenCode Go رایگان شده. به گفته خودشون این مدل ظرفیت متنی یک میلیونی (1M context) داره، چندوجهیه (Multi-modal) و روی داده‌های کاربرها هم آموزش نمی‌بینه. اسمش یه جورایی یادآور گرسنگیه، ولی حداقل برای مشترک‌های این طرح فعلاً یه ضیافت بی‌خرج حساب می‌شه. ✨",
+  "date": "2026-11-24T04:12:10+00:00"
+ },
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/opencode/status/2125062647846694979",
+   "domain": "x.com",
+   "author": {
+    "name": "OpenCode",
+    "handle": "opencode",
+    "avatar": "https://pbs.twimg.com/profile_images/1973794620233433088/nBn75BTm_200x200.png"
+   },
+   "text": "HungerG (stealth model) is free for OpenCode Go subscribers this week\n\n1M context\nMulti-modal\nNo training on data",
+   "date": 1795489391,
+   "media": [],
+   "links": []
+  }
+ ],
+ "article": {
+  "title": "حساب اوپن‌کد (OpenCode) تو یه پست اعلام کرده که یه مدل مخفی به اسم HungerG، طبق گفته‌شون برای این هفته، برای مشترک‌های OpenCode Go رایگان شده",
+  "source_title": "HungerG (stealth model) is free for OpenCode Go subscribers this week",
+  "body": [
+   "حساب اوپن‌کد (OpenCode) تو یه پست اعلام کرده که یه مدل مخفی به اسم HungerG، طبق گفته‌شون برای این هفته، برای مشترک‌های OpenCode Go رایگان شده. به گفته خودشون این مدل ظرفیت متنی یک میلیونی (1M context) داره، چندوجهیه (Multi-modal) و روی داده‌های کاربرها هم آموزش نمی‌بینه. اسمش یه جورایی یادآور گرسنگیه، ولی حداقل برای مشترک‌های این طرح فعلاً یه ضیافت بی‌خرج حساب می‌شه. ✨"
+  ],
+  "why": null,
+  "tags": [
+   "کدنویسی"
+  ]
+ },
+ "updated": "2026-11-24T05:07:37+00:00",
+ "ai": {
+  "title": "مدل مخفی HungerG برای مشترک‌های OpenCode Go رایگان شد",
+  "short": "HungerG رایگان شد",
+  "topics": [],
+  "type": "ابزار و محصول",
+  "model": "qwen3.5-9b-q4_k_m",
+  "v": 2,
+  "src": "05699ce3c409",
+  "x": {
+   "importance": 2,
+   "entities": [
+    {
+     "name_en": "OpenCode",
+     "name_fa": "اوپن‌کد",
+     "kind": "company"
+    },
+    {
+     "name_en": "HungerG",
+     "name_fa": "هنگر جی",
+     "kind": "model"
+    }
+   ],
+   "terms": [
+    {
+     "term": "چندوجهی",
+     "def": "مدلی که می‌تواند همزمان متن، تصویر، صدا و سایر فرمت‌ها را درک و پردازش کند."
+    },
+    {
+     "term": "ظرفیت متنی",
+     "def": "حداکثر تعداد کلمات یا توکنی که مدل می‌تواند در یک درخواست پردازش کند."
+    }
+   ],
+   "simple": "مدل جدیدی به نام HungerG برای کاربران ویژه سایت OpenCode رایگان شد. این مدل می‌تواند متن‌های بسیار طولانی و چند نوع فایل را بخواند و روی اطلاعات شخصی کاربران آموزش ندیده است.",
+   "quiz": {
+    "q": "مدل HungerG روی چه داده‌هایی آموزش ندیده است؟",
+    "options": [
+     "روی داده‌های عمومی اینترنت",
+     "روی داده‌های کاربران OpenCode",
+     "روی داده‌های شرکت‌های بزرگ"
+    ],
+    "answer": 1
+   },
+   "video": {
+    "hook": "مدل مخفی HungerG برای مشترک‌های ویژه رایگان شد!",
+    "points": [
+     "این مدل یک میلیون کلمه را همزمان می‌فهمد",
+     "چندوجهی است و متن و تصویر را پردازش می‌کند",
+     "برای جلوگیری از نشت اطلاعات، روی داده‌های کاربران آموزش ندیده"
+    ],
+    "why": "دسترسی به مدل‌های قدرتمند و چندوجهی بدون هزینه، فرصتی عالی برای توسعه‌دهندگان است."
+   },
+   "share": "مدل مخفی HungerG برای مشترک‌های OpenCode Go رایگان شد!\nظرفیت ۱ میلیون کلمه و چندوجهی.\n#OpenCode #HungerG #AI",
+   "status": "رسمی",
+   "models": [
+    {
+     "name": "HungerG",
+     "maker": "اوپن‌کد",
+     "scores": []
+    }
+   ],
+   "events": [],
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 2,
+   "src": "ee35119056d7"
+  }
+ }
+}

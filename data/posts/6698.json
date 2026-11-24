@@ -1,0 +1,64 @@
+{
+ "id": 6698,
+ "url": "https://t.me/dlmehr/6698",
+ "date": "2026-11-23T18:50:34+00:00",
+ "text": "https://fxtwitter.com/danijar/status/2124911019562811820?a=tNm2yPMRXCabxQa83Ws&s=52",
+ "forwarded_from": null,
+ "digest": false,
+ "hash": "3347136147a8",
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/danijar/status/2124911019562811820?a=tNm2yPMRXCabxQa83Ws&s=52",
+  "site": "FxTwitter",
+  "title": "Danijar Hafner (@danijar)",
+  "description": "I'm excited to introduce Embo!\nWe are building the brain for intelligent robots to help people around the world.\nWe believe intelligent robots will unlock an era of abundance, making goods and services affordable for everybody. But to deploy them at scale…",
+  "image": null
+ },
+ "gholam": null,
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/danijar/status/2124911019562811820",
+   "domain": "x.com",
+   "author": {
+    "name": "Danijar Hafner",
+    "handle": "danijar",
+    "avatar": "https://pbs.twimg.com/profile_images/2124717744772038656/QRCFX5uj_200x200.jpg"
+   },
+   "text": "I'm excited to introduce Embo!\n\nWe are building the brain for intelligent robots to help people around the world.\n\nWe believe intelligent robots will unlock an era of abundance, making goods and services affordable for everybody. But to deploy them at scale, robots need to work out of the box in unfamiliar scenarios. At Embo, we are building frontier AI models with a deep understanding of physical reality and fine-grained motor skills.\n\nToday's robot skills are fragile. Demonstrations can teach repetitive behaviors, but they cannot cover every object or situation a robot will encounter. We need general pretraining at internet scale to fill the gaps between individual tasks and practice to develop reliable motor skills.\n\nThe world models our team has pioneered unlock a path to general robots. Our robot brain pretrains on massive amounts of internet video to learn about objects, physical interactions, and how tasks unfold. It then practices motor skills in diverse imagined scenarios to become robust to unexpected situations.\n\nOur team is behind seminal work in AI including Dreamer, VideoGPT, and Diffusion Forcing, with experience from DeepMind, Meta Superintelligence Labs, NVIDIA Cosmos, Berkeley, and MIT.\n\nWe have raised a $110M Seed led by @a16z. We are excited to partner with them, @khoslaventures, DST Global, NVentures (@nvidia), @strikervp,  and other strategic investors to bring reliable intelligent robots out into the world.\n\n@EmboAI",
+   "date": 1795453240,
+   "media": [
+    {
+     "type": "video",
+     "src": "https://video.twimg.com/amplify_video/2124909320295124992/vid/avc1/1280x720/neEuJT2jPrNjHbX7.mp4?tag=29",
+     "poster": "https://pbs.twimg.com/amplify_video_thumb/2124909320295124992/img/5pbIS81P1_EXrgR9.jpg",
+     "ratio": 0.5625,
+     "duration": 82.9,
+     "gif": false
+    }
+   ],
+   "links": []
+  }
+ ],
+ "article": {
+  "title": "I'm excited to introduce Embo!",
+  "source_title": null,
+  "body": [],
+  "why": null,
+  "tags": [
+   "رباتیک"
+  ]
+ },
+ "updated": "2026-11-24T05:07:41+00:00",
+ "ai": {
+  "story": {
+   "body": [
+    "دانیار هافنر، بنیان‌گذار شرکت امبو (Embo)، مدل هوش مصنوعی جدیدی به نام امبو را معرفی کرد که به عنوان مغز هوشمند برای ربات‌های هوشمند طراحی شده است."
+   ],
+   "why": "این خبر مهم است زیرا نشان‌دهنده ورود سرمایه‌گذاری ۱۱۰ میلیون دلاری و تیمی با سابقه درخشان به حوزه توسعه ربات‌هایی است که با درک عمیق از واقعیت فیزیکی و مهارت‌های حرکتی دقیق، می‌توانند در موقعیت‌های غیرمنتظره به صورت خودکار و قابل اعتماد عمل کنند.",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "3439614be4b2"
+  }
+ }
+}

@@ -1,0 +1,69 @@
+{
+ "id": 6705,
+ "url": "https://t.me/dlmehr/6705",
+ "date": "2026-11-23T23:48:59+00:00",
+ "text": "https://fxtwitter.com/anthropicai/status/2123822989154369958/video/1?a=CFeIIlezab44GQ-Je2s&s=46",
+ "forwarded_from": "Hossein Zakariaee",
+ "digest": false,
+ "hash": "80b89d84d827",
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/anthropicai/status/2123822989154369958/video/1?a=CFeIIlezab44GQ-Je2s&s=46",
+  "site": "FxTwitter",
+  "title": "Anthropic (@AnthropicAI)",
+  "description": "Anthropic’s co-founders on the story so far. Told by Dario Amodei, Daniela Amodei, Tom Brown, Jack Clark, Jared Kaplan, Sam McCandlish, and Chris Olah",
+  "image": null
+ },
+ "gholam": {
+  "text": "سلام رفیق! حساب آنتروپیک یه پست گذاشته که توش هم‌بنیان‌گذارهاش — یعنی داریو آمودی، دانیلا آمودی، تام براون، جک کلارک، جرد کاپلان، سم مک‌کندلیش و کریس اولا — داستان مسیرشون تا اینجا رو تعریف می‌کنن. البته چون خود محتوای اصلی و متن حرف‌هاشون اینجا در دسترس نیست، جزئیات بیشتری از اینکه دقیقاً چی گفتن نداریم. 🎙️",
+  "date": "2026-11-23T23:49:35+00:00"
+ },
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/AnthropicAI/status/2123822989154369958",
+   "domain": "x.com",
+   "author": {
+    "name": "Anthropic",
+    "handle": "AnthropicAI",
+    "avatar": "https://pbs.twimg.com/profile_images/1798110641414443008/XP8gyBaY_200x200.jpg"
+   },
+   "text": "Anthropic’s co-founders on the story so far. Told by Dario Amodei, Daniela Amodei, Tom Brown, Jack Clark, Jared Kaplan, Sam McCandlish, and Chris Olah",
+   "date": 1795193833,
+   "media": [
+    {
+     "type": "video",
+     "src": "https://video.twimg.com/amplify_video/2123815200075747328/vid/avc1/960x720/TNKiODa1YY4o9qEU.mp4?tag=29",
+     "poster": "https://pbs.twimg.com/media/HXlVce1X0AARumK.jpg",
+     "ratio": 0.75,
+     "duration": 880.546,
+     "gif": false
+    }
+   ],
+   "links": []
+  }
+ ],
+ "article": {
+  "title": "حساب آنتروپیک یه پست گذاشته که توش هم‌بنیان‌گذارهاش — یعنی داریو آمودی، دانیلا آمودی، تام براون، جک کلارک، جرد کاپلان، سم مک‌کندلیش و کریس اولا — داستان مسیرشون تا اینجا رو تعریف می‌کنن",
+  "source_title": "Anthropic’s co-founders on the story so far. Told by Dario Amodei, Daniela Amodei, Tom Brown, Jack Clark, Jared Kaplan, Sam McCandlish, and…",
+  "body": [
+   "حساب آنتروپیک یه پست گذاشته که توش هم‌بنیان‌گذارهاش — یعنی داریو آمودی، دانیلا آمودی، تام براون، جک کلارک، جرد کاپلان، سم مک‌کندلیش و کریس اولا — داستان مسیرشون تا اینجا رو تعریف می‌کنن. البته چون خود محتوای اصلی و متن حرف‌هاشون اینجا در دسترس نیست، جزئیات بیشتری از اینکه دقیقاً چی گفتن نداریم. 🎙️"
+  ],
+  "why": null,
+  "tags": [
+   "آنتروپیک"
+  ]
+ },
+ "updated": "2026-11-24T05:07:38+00:00",
+ "ai": {
+  "title": "هم‌بنیان‌گذاران آنتروپیک داستان مسیر شرکت را تعریف کردند",
+  "short": "داستان آنتروپیک",
+  "topics": [
+   "آنتروپیک"
+  ],
+  "type": "خبر",
+  "model": "qwen3.5-9b-q4_k_m",
+  "v": 2,
+  "src": "f8203cfa737a"
+ }
+}

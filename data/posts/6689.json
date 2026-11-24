@@ -12,42 +12,13 @@
   "site": "🧵 Thread • FxTwitter",
   "title": "Zixuan Li (@ZixuanLi_)",
   "description": "GLM-5.4 is now available to all GLM Coding Plan users.\nNew vision capabilities and stronger all-round coding performance.\nFor users with weekly quotas, GLM-5.4 now comes with 50% more quota compared to GLM-5.3.",
-  "image": "https://cdn4.telesco.pe/file/ih06mbEtLwmGny5bIfVegBPh1amxzlCef9Y4Y_aMEqd6-2Eof_pxirHRwi4_dJhvosVrEdf3SE98BKbnyyToViLhjMMwhwoinMe98XeuZVBUtvZj_DKRs5VR5vWGKxrfKayCcU9O4d2SZTdNprsM0jxr3r5xqvhBOkFWrZ_vli6LlV7VOhprctgHFz_kfZB7BLFyS77M-Zn0oPa6p7T33beDYSURZa-Tpsf0G-wq2zpOjbEVAKvfqVIFGYEzchZLPba5Fl3DRr0QKtB5kxOzMIOBiMPW1v6wG1s2fmdqmnFT6ratkBEFymu1BTun43HKCXaMYnYt-tHofzsbWMbhhA.jpg",
+  "image": "https://cdn4.telesco.pe/file/MZCWOCS0cTsah7PiTLoKQkea9NtEaL0yWrURK6V-E5N_nGKpYvbIT5e7jo7EgGUMlsP61Bm10iIfDsxJluRvqe5tu-qfIo5PeWB9E35E_wQhUwPDAQDltqxVSsorb-l-T1ITuItLWrhf19hyCbwAoQgYxEK9lASveR0OnBymzbWs-VtxJGJ8oo8hiYlaJCMWmrvpuz9io-1g0TtY8E2wT3tigYkxYutZ2pr5qURsi6eE3VJ2tATxfqz89uMfaoTWmws1A7T3Z6T66fc47b6urybXnMMR95cdhAxB7qr2YF4H_nZ9H2GloGdmbp80-WZqoEGiE1eedPXsaJ3C1sUvEg.jpg",
   "small": true
  },
  "gholam": {
   "text": "رفیق، حساب ZixuanLi_ اعلام کرده که مدل GLM-5.4 الان برای همه کاربرهای GLM Coding Plan در دسترس قرار گرفته. به گفته این پست، نسخه جدید قابلیت‌های بینایی تازه و عملکرد قوی‌تر و همه‌جانبه‌تری تو کدنویسی داره و برای کاربرهای با سهمیه هفتگی هم ۵۰ درصد سهمیه بیشتر نسبت به GLM-5.3 میده؛ با این حساب سهمیه‌تون نفس راحت‌تری می‌کشه. 💻 برای استفاده هم کافیه تو Claude Code مدل رو روی glm-5.4[1m] و تو بقیه ابزارها روی glm-5.4 تنظیم کنید.",
   "date": "2026-11-23T05:16:24+00:00"
  },
- "links": [
-  {
-   "kind": "tweet",
-   "url": "https://x.com/ZixuanLi_/status/2124719275864670681",
-   "domain": "x.com",
-   "author": {
-    "name": "Zixuan Li",
-    "handle": "ZixuanLi_",
-    "avatar": "https://pbs.twimg.com/profile_images/2063659642111332353/jaPleXSN_200x200.jpg"
-   },
-   "text": "GLM-5.4 is now available to all GLM Coding Plan users.\n\nNew vision capabilities and stronger all-round coding performance.\n\nFor users with weekly quotas, GLM-5.4 now comes with 50% more quota compared to GLM-5.3.",
-   "date": 1795407525,
-   "media": [],
-   "links": []
-  }
- ],
- "article": {
-  "title": "حساب ZixuanLi_ اعلام کرده که مدل GLM-5.4 الان برای همه کاربرهای GLM Coding Plan در دسترس قرار گرفته",
-  "source_title": "GLM-5.4 is now available to all GLM Coding Plan users.",
-  "body": [
-   "حساب ZixuanLi_ اعلام کرده که مدل GLM-5.4 الان برای همه کاربرهای GLM Coding Plan در دسترس قرار گرفته. به گفته این پست، نسخه جدید قابلیت‌های بینایی تازه و عملکرد قوی‌تر و همه‌جانبه‌تری تو کدنویسی داره و برای کاربرهای با سهمیه هفتگی هم ۵۰ درصد سهمیه بیشتر نسبت به GLM-5.3 میده؛ با این حساب سهمیه‌تون نفس راحت‌تری می‌کشه. 💻 برای استفاده هم کافیه تو Claude Code مدل رو روی glm-5.4[1m] و تو بقیه ابزارها روی glm-5.4 تنظیم کنید."
-  ],
-  "why": null,
-  "tags": [
-   "چین",
-   "کدنویسی"
-  ]
- },
- "updated": "2026-11-23T15:37:37+00:00",
  "ai": {
   "title": "مدل GLM-5.4 با قابلیت‌های کدنویسی و بینایی برای همه فعال شد",
   "short": "GLM-5.4 فعال شد",
@@ -126,5 +97,34 @@
    "src": "affa40796193",
    "added": 3
   }
- }
+ },
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/ZixuanLi_/status/2124719275864670681",
+   "domain": "x.com",
+   "author": {
+    "name": "Zixuan Li",
+    "handle": "ZixuanLi_",
+    "avatar": "https://pbs.twimg.com/profile_images/2063659642111332353/jaPleXSN_200x200.jpg"
+   },
+   "text": "GLM-5.4 is now available to all GLM Coding Plan users.\n\nNew vision capabilities and stronger all-round coding performance.\n\nFor users with weekly quotas, GLM-5.4 now comes with 50% more quota compared to GLM-5.3.",
+   "date": 1795407525,
+   "media": [],
+   "links": []
+  }
+ ],
+ "article": {
+  "title": "حساب ZixuanLi_ اعلام کرده که مدل GLM-5.4 الان برای همه کاربرهای GLM Coding Plan در دسترس قرار گرفته",
+  "source_title": "GLM-5.4 is now available to all GLM Coding Plan users.",
+  "body": [
+   "حساب ZixuanLi_ اعلام کرده که مدل GLM-5.4 الان برای همه کاربرهای GLM Coding Plan در دسترس قرار گرفته. به گفته این پست، نسخه جدید قابلیت‌های بینایی تازه و عملکرد قوی‌تر و همه‌جانبه‌تری تو کدنویسی داره و برای کاربرهای با سهمیه هفتگی هم ۵۰ درصد سهمیه بیشتر نسبت به GLM-5.3 میده؛ با این حساب سهمیه‌تون نفس راحت‌تری می‌کشه. 💻 برای استفاده هم کافیه تو Claude Code مدل رو روی glm-5.4[1m] و تو بقیه ابزارها روی glm-5.4 تنظیم کنید."
+  ],
+  "why": null,
+  "tags": [
+   "چین",
+   "کدنویسی"
+  ]
+ },
+ "updated": "2026-11-24T05:07:42+00:00"
 }

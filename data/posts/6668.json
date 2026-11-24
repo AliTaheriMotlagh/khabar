@@ -12,7 +12,7 @@
   "site": "🧵 Thread • FxTwitter",
   "title": "Baseten (@baseten)",
   "description": "We just released the #1-ranked decision model, again.\nbison-1 and groundhog-1 are built on an American backbone (Gemma 4). They deliver improved quality and similar speed to mammoth-1 and elephant-1, with a 128k context window and multimodal support (images…",
-  "image": "https://cdn4.telesco.pe/file/NutopzdUEVJ-cIRTZWs4G9Ti4DaFAVjQAqvf6-CVo6Zjp766UBe4gKhJ-cn8929EoAG2zEh-2-4AaA80O74_Y7qjv_3Ro2_EvFtI41hTkzx_2qnCtJ38oqobhx-eZsmwxVdegEqc2AtpaqYO16o7C4gXcATRbRiP6Gxcz3psekSagqj5rNdHSoOwNk2XRZUb1kMfsm6aVNOqGlL9lphG5-FqwNjq5k4KF-ezDZ0F2-b3s1_pNgZddeckMNfKg_cB8OmTdpskLEdY9Q8ZiiEBCiEx3NCKSZhj2DWXHJwi-aGWF9VQAi2K5EhIoc6Cs8Az3wProLNNW1eayaamKGflWw.jpg"
+  "image": "https://cdn4.telesco.pe/file/vQIlh8X7vBRZVkLsMisAPPnk3WWfDCI-bOMKByv7HZtCRgoVd6kxTdEpyfswKoN0IxgAUFc_lvCfdgjMGVxRekpUNZMyFecNH-FDR9R8V13MVqTOFi9wsXNzRmMFLjSd6Hk7-S53p_-zIqmL8mRb28SxYGEEFQ1vtmipNvpad6_ltO0aOwRSh5kpIXKyzNW93rqfTqMfLIPG_Yvh_5lZLTsJF4Bl6fUBi40PHg-PqEvScCnshx6Qbqv6jxUMWImsk4beT_T9eCoQ_bYS9fUSXCDcnrRBoZnxsnKwvhSSeFH0-bsIfXcUBlpfzc_cP0IiPiR5HmPWuT01u25CL3Q4Fw.jpg"
  },
  "gholam": {
   "text": "رفقا، شرکت بستن (Baseten) دوتا مدل تصمیم‌گیری جدید به اسم‌های bison-1 و groundhog-1 معرفی کرده که این بار به‌جای پایه‌های قبلی (Qwen)، روی مدل آمریکایی Gemma 4 گوگل ساخته شدن. 🤖 مزیت مهم این مدل‌های جدید اینه که هم ورودی تصویر و متن رو با هم قبول می‌کنن و هم پنجره متنشون هشت برابر شده و به ۱۲۸ هزار توکن رسیده؛ یعنی مدل دیگه فقط تهِ ماجرا رو نمی‌بینه که مثلاً یه فاکتور رو بی‌خبر تأیید کنه، در حالی که چند تا ایمیل قبل‌تر نوشته بودن همون سفارش کنسل شده.\n\n• طبق اعلام بستن و نمودار شاخص Artificial Analysis، مدل ۳۱ میلیارد پارامتری bison-1 با امتیاز ۷۶ بین ۱۹ مدل تصمیم‌گیری اول شده و با امتیاز برایر ۰.۱۴ بهترین کالیبراسیون رو داشته (یعنی میزان اطمینانش به درست بودن جواب، به واقعیت نزدیک‌تره).\n• مدل سبک‌تر groundhog-1 (با ۲۶ میلیارد پارامتر کلی و حدود ۴ میلیارد پارامتر فعال) هنوز تو رده‌بندی رسمی ثبت نشده، ولی شرکت سازنده انتظار داره عملکردش هم‌سطح مدل قبلی‌شون یعنی mammoth-1 (با امتیاز ۷۱) باشه.\n• هر دو مدل از امروز با وزن‌های باز روی هاگینگ‌فیس و از طریق API بستن (به ترتیب با قیمت ۰.۱ و ۰.۰۳۵ دلار به ازای هر میلیون توکن) در دسترس هستن.",
@@ -154,5 +154,5 @@
    "چین"
   ]
  },
- "updated": "2026-11-23T15:37:38+00:00"
+ "updated": "2026-11-24T05:07:43+00:00"
 }

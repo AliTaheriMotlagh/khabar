@@ -1,0 +1,70 @@
+{
+ "id": 6699,
+ "url": "https://t.me/dlmehr/6699",
+ "date": "2026-11-23T18:54:48+00:00",
+ "text": "https://fxtwitter.com/officiallogank/status/2124938672399384681?a=ioiBsUZ9-9ApuxUOvTg&s=52",
+ "forwarded_from": null,
+ "digest": false,
+ "hash": "f48e5e2e5adb",
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/officiallogank/status/2124938672399384681?a=ioiBsUZ9-9ApuxUOvTg&s=52",
+  "site": "FxTwitter · blog.google",
+  "title": "Logan Kilpatrick (@OfficialLoganK)",
+  "description": "Nice Gemini API quality of life update shipping today:\nYou can now pass PDFs, Office files (docs, slides, spreadsheets), audio, and video directly to the Gemini API and request only the pages, spreadsheet cells, media segments, and layers you need.\nRead…",
+  "image": "https://cdn4.telesco.pe/file/YSbVJzywGCqiW-BZuyJbcI5yFtRP9A0chTbNX8t1gAMOrDroShwDSxNAzIgqeulpYJvsQHo7SSJQ8IBYxtoyiFkAx1GdeW1q4WDfhWVwsRAf0eO35YKKhnEPB72OaWl7pPIcVG7zKuV0WoYxG_0Nvx2txgLRKIeNK6nqxhLns7Vgw4aJiumppHFJTnD5BmahiY9Plkt2wZy4nwQlGj_YjopItKZ58qZAxASnbI_lySfOJdAW-LSZOhWAiwzZSDaP3MsfG4UDQIWrGEgXkJVw2lTwjFi3YDRkmJAHdTtT6kkKFbfQ7d1Vu1PbsasvC9U0fhuEx-DP_ZSUAhoNeRLJGA.jpg",
+  "small": true
+ },
+ "gholam": null,
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/OfficialLoganK/status/2124938672399384681",
+   "domain": "x.com",
+   "author": {
+    "name": "Logan Kilpatrick",
+    "handle": "OfficialLoganK",
+    "avatar": "https://pbs.twimg.com/profile_images/1943787288955084800/QOl7OJMc_200x200.jpg"
+   },
+   "text": "Nice Gemini API quality of life update shipping today:\n\nYou can now pass PDFs, Office files (docs, slides, spreadsheets), audio, and video directly to the Gemini API and request only the pages, spreadsheet cells, media segments, and layers you need.\n\nRead more: https://blog.google/innovation-and-ai/technology/developers-tools/file-slicing-controls/",
+   "date": 1795459833,
+   "media": [],
+   "links": [
+    "https://blog.google/innovation-and-ai/technology/developers-tools/file-slicing-controls/"
+   ]
+  },
+  {
+   "kind": "link",
+   "url": "https://blog.google/innovation-and-ai/technology/developers-tools/file-slicing-controls/",
+   "domain": "blog.google",
+   "title": "Introducing file slicing controls in the Gemini API",
+   "description": "New file slicing controls and native Office file support in the Gemini API let agents inspect targeted slices across Google AI Studio and Vertex AI while paying only for…",
+   "image": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/Introducing-File-Slicing-Controls-2784x1566.width-1300.png",
+   "site": "Google"
+  }
+ ],
+ "article": {
+  "title": "Nice Gemini API quality of life update shipping today:",
+  "source_title": null,
+  "body": [],
+  "why": null,
+  "tags": [
+   "گوگل"
+  ]
+ },
+ "updated": "2026-11-24T05:07:41+00:00",
+ "ai": {
+  "story": {
+   "body": [
+    "گوگل قابلیت‌های جدیدی را به رابط برنامه‌نویسی Gemini API اضافه کرد که امکان ارسال مستقیم فایل‌های PDF، آفیس، صوت و ویدیو را فراهم می‌کند.",
+    "کاربران اکنون می‌توانند تنها صفحات، سلول‌های جدول‌های محاسباتی، قطعات مدیا و لایه‌های مورد نیاز خود را از این فایل‌ها درخواست کنند.",
+    "این ویژگی‌های جدید کنترل برش فایل و پشتیبانی بومی از فایل‌های آفیس، امکان بررسی بخش‌های هدفمند را در Google AI Studio و Vertex AI فراهم کرده است.",
+    "با این تغییر، کاربران تنها بابت بخش‌هایی که استفاده می‌کنند هزینه پرداخت خواهند کرد."
+   ],
+   "why": "این بهینه‌سازی کیفیت زندگی برای توسعه‌دهندگان و کاهش هزینه‌ها از طریق پرداخت فقط برای بخش‌های مورد استفاده از فایل‌هاست.",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "58b0bd1457a5"
+  }
+ }
+}

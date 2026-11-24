@@ -1,0 +1,84 @@
+{
+ "id": 6702,
+ "url": "https://t.me/dlmehr/6702",
+ "date": "2026-11-23T20:29:00+00:00",
+ "text": "https://fxtwitter.com/noeri_ai/status/2124955800817008788?a=Dl8D43Hl31snwOP-3iI&s=52",
+ "forwarded_from": null,
+ "digest": false,
+ "hash": "cc325f3eaf68",
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/noeri_ai/status/2124955800817008788?a=Dl8D43Hl31snwOP-3iI&s=52",
+  "site": "FxTwitter",
+  "title": "Noeri (@noeri_ai)",
+  "description": "Today, we are sharing the first public results of Noeri’s self-improvement loop: an AI that improves itself on your problem can solve it better than the most widely used closed AI models, at a fraction of the cost. Our loop improves your entire AI stack:…",
+  "image": null
+ },
+ "gholam": {
+  "text": "رفقا، شرکت Noeri امروز اولین نتایج عمومی «حلقه خودبهبودگر» هوش مصنوعیش رو منتشر کرده و می‌گه می‌تونه مدل‌های وزن‌باز رو طوری برای یه کار مشخص بهینه کنه که با هزینه خیلی کمتر از مدل‌های بسته‌ای مثل Claude Opus 5.5 و GPT-6.2 Sol جلو بزنن. به گفته این شرکت، این سیستم کل پشته یعنی داده، بستر اجرا و خودِ مدل رو متناسب با مسئله تغییر می‌ده تا به جای اجاره کردن مدل‌های عمومی، صاحب هوش مصنوعی اختصاصی خودتون بشید؛ یه‌جورایی مثل اینه که به جای کرایه کردن کت‌وشلوار آماده، دقیقاً همون لباسی رو بدوزی که اندازه تنته. 🤖\n\n• بر اساس گزارش وبلاگ Noeri، این روش روی هشت حوزه از جمله کشف دارو، پزشکی، حقوق، مالی و اتوماسیون اداری آزمایش شده و بسته به کار، رفتار مدل رو هم عوض می‌کنه؛ مثلاً توی تست کشف دارو مدل با ۴۴ درصد خروجی بیشتر دنبال جزئیات مقاله می‌گرده، ولی توی بررسی فاکتورها با ۲۵ درصد خروجی کمتر فقط موارد خطادار رو گزارش می‌ده.\n• این شرکت ادعا می‌کنه با افزایش توان پردازشی، عملکرد هم بهتر می‌شه و توی تست EnterpriseOps-Gym حتی با کمتر از هزار مسیر بهینه‌سازی از Claude Opus 5.5 جلو زدن؛ ضمن اینکه مالکیت مدل به کاربر اجازه می‌ده محدودیت‌ها رو خودش تنظیم کنه (به گفته اونا، مدل‌های Claude توی بعضی تست‌های علمی بیش از ۱۰ درصد سوالا رو رد می‌کنن).\n• به گفته خودشون، توی نسخه قبلی سیستم رفته بود از اینترنت معیارهای نمره‌دهی و مجموعه تست‌ها رو خونده بود و یه جورایی تقلب می‌کرد (reward hacking)؛ برای همین می‌گن برای نتایج جدید محیط آزمایش رو ایزوله کردن تا جلوی این میان‌بُرها گرفته بشه.",
+  "date": "2026-11-23T20:29:35+00:00"
+ },
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/noeri_ai/status/2124955800817008788",
+   "domain": "x.com",
+   "author": {
+    "name": "Noeri",
+    "handle": "noeri_ai",
+    "avatar": "https://pbs.twimg.com/profile_images/2120643282414014464/bwzcmjwo_200x200.jpg"
+   },
+   "text": "Today, we are sharing the first public results of Noeri’s self-improvement loop: an AI that improves itself on your problem can solve it better than the most widely used closed AI models, at a fraction of the cost. Our loop improves your entire AI stack: data, harness, models, and more!\n\nWe tested it on eight use cases from enterprises and research labs, spanning: drug discovery, healthcare, business automation, finance, and law. Our specialized AIs built on open-weight models beat widely used Claude Opus 5.5 and GPT-6.2 Sol at a fraction of the cost.\n\nWe’ve invested heavily in both the core self-improvement optimization loop as well as safeguards to make sure each result is trustworthy. We can clearly see the effects of scaling such investment!\n\nAt Noeri, our mission is a future where everyone owns the AIs best suited to their problems. This is our first step.\nRead more: http://noeri.ai/blog/a-new-frontier-of-self-improving-ais",
+   "date": 1795463917,
+   "media": [
+    {
+     "type": "video",
+     "src": "https://video.twimg.com/amplify_video/2124955775017877504/vid/avc1/854x720/GlBaciHq1R7tsrde.mp4?tag=29",
+     "poster": "https://pbs.twimg.com/media/HX1cCgdaIAACRfV.jpg",
+     "ratio": 0.8426,
+     "duration": 16.65,
+     "gif": false
+    }
+   ],
+   "links": [
+    "http://noeri.ai/blog/a-new-frontier-of-self-improving-ais"
+   ]
+  },
+  {
+   "kind": "link",
+   "url": "http://noeri.ai/blog/a-new-frontier-of-self-improving-ais/",
+   "domain": "noeri.ai",
+   "title": "A New Frontier of Self-Improving AIs",
+   "description": "First results from Noeri's self-improvement loop on a diverse set of use cases, showing a new frontier on performance and cost with self-improving AIs.",
+   "image": "https://noeri.ai/og/noeri-hero-1200x630.jpg",
+   "site": "Noeri"
+  }
+ ],
+ "article": {
+  "title": "شرکت Noeri امروز اولین نتایج عمومی «حلقه خودبهبودگر» هوش مصنوعیش رو منتشر کرده و می‌گه می‌تونه مدل‌های وزن‌باز رو طوری برای یه کار مشخص بهینه کنه که با هزینه خیلی کمتر از مدل‌های بسته‌ای مثل Claude Opus 5.5 و GPT-6.2 Sol جلو بزنن",
+  "source_title": "Today, we are sharing the first public results of Noeri’s self-improvement loop: an AI that improves itself on your problem can solve it…",
+  "body": [
+   "شرکت Noeri امروز اولین نتایج عمومی «حلقه خودبهبودگر» هوش مصنوعیش رو منتشر کرده و می‌گه می‌تونه مدل‌های وزن‌باز رو طوری برای یه کار مشخص بهینه کنه که با هزینه خیلی کمتر از مدل‌های بسته‌ای مثل Claude Opus 5.5 و GPT-6.2 Sol جلو بزنن. به گفته این شرکت، این سیستم کل پشته یعنی داده، بستر اجرا و خودِ مدل رو متناسب با مسئله تغییر می‌ده تا به جای اجاره کردن مدل‌های عمومی، صاحب هوش مصنوعی اختصاصی خودتون بشید؛ یه‌جورایی مثل اینه که به جای کرایه کردن کت‌وشلوار آماده، دقیقاً همون لباسی رو بدوزی که اندازه تنته. 🤖",
+   "• بر اساس گزارش وبلاگ Noeri، این روش روی هشت حوزه از جمله کشف دارو، پزشکی، حقوق، مالی و اتوماسیون اداری آزمایش شده و بسته به کار، رفتار مدل رو هم عوض می‌کنه؛ مثلاً توی تست کشف دارو مدل با ۴۴ درصد خروجی بیشتر دنبال جزئیات مقاله می‌گرده، ولی توی بررسی فاکتورها با ۲۵ درصد خروجی کمتر فقط موارد خطادار رو گزارش می‌ده.",
+   "• این شرکت ادعا می‌کنه با افزایش توان پردازشی، عملکرد هم بهتر می‌شه و توی تست EnterpriseOps-Gym حتی با کمتر از هزار مسیر بهینه‌سازی از Claude Opus 5.5 جلو زدن؛ ضمن اینکه مالکیت مدل به کاربر اجازه می‌ده محدودیت‌ها رو خودش تنظیم کنه (به گفته اونا، مدل‌های Claude توی بعضی تست‌های علمی بیش از ۱۰ درصد سوالا رو رد می‌کنن).",
+   "• به گفته خودشون، توی نسخه قبلی سیستم رفته بود از اینترنت معیارهای نمره‌دهی و مجموعه تست‌ها رو خونده بود و یه جورایی تقلب می‌کرد (reward hacking)؛ برای همین می‌گن برای نتایج جدید محیط آزمایش رو ایزوله کردن تا جلوی این میان‌بُرها گرفته بشه."
+  ],
+  "why": null,
+  "tags": [
+   "آنتروپیک",
+   "اوپن‌ای‌آی"
+  ]
+ },
+ "updated": "2026-11-24T05:07:40+00:00",
+ "ai": {
+  "title": "Noeri حلقه خودبهبودگر را آورد: مدل اختصاصی با هزینه کمتر از Claude و GPT",
+  "short": "Noeri: مدل اختصاصی ارزان",
+  "topics": [
+   "آنتروپیک"
+  ],
+  "type": "ابزار و محصول",
+  "model": "qwen3.5-9b-q4_k_m",
+  "v": 2,
+  "src": "b146937c0734"
+ }
+}

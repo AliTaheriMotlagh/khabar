@@ -1,0 +1,59 @@
+{
+ "id": 6697,
+ "url": "https://t.me/dlmehr/6697",
+ "date": "2026-11-23T18:09:50+00:00",
+ "text": "https://x.com/MistralAI/status/2124905610386780451",
+ "forwarded_from": "Ali Farajnia",
+ "digest": false,
+ "hash": "065019efb285",
+ "media": [],
+ "preview": {
+  "url": "https://x.com/MistralAI/status/2124905610386780451",
+  "site": "X (formerly Twitter)",
+  "title": "Mistral AI (@MistralAI) on X",
+  "description": "Last week, we launched a promo for a free trial of Vibe Pro for builders in Europe.\nWe ran out of capacity in less than an hour. Today, we’re fixing that for good.\nNo more capped drops. If you’…",
+  "image": "https://cdn4.telesco.pe/file/SZzbNBsoVHaRRRRh_JN4nNKeccaz8OeMpi49mAFDl2QbOr9ByvLrqHmivBkPkRx5gMpF9EBE8jNEBM9zE7CX8xhxAeZl-ZwfotESrD3aTiS9D4SnGCxWntFL0JAVP_3v7q07vZztDHxcjqR4Cya2atPeRNACtMULUYvcyXG-aMXSyFcgAkpSB-_koB1ri9yNxesIBHWfeuwKxZajqxJF1-nQxlwKInlvfOUbtPTo0As0_JwSwAw1A59O7oCiz7sh_ojgo6Sb_Z4R4Aa2O5iCNp755hON9RNwljhNRd2SU-ihix-XxoTB1oNUT0DT-4VxkewJ2vJxDcw5o4p2VXpHkQ.jpg"
+ },
+ "gholam": null,
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/MistralAI/status/2124905610386780451",
+   "domain": "x.com",
+   "author": {
+    "name": "Mistral AI",
+    "handle": "MistralAI",
+    "avatar": "https://pbs.twimg.com/profile_images/1996905418065375232/mzwynOLB_200x200.jpg"
+   },
+   "text": "Last week, we launched a promo for a free trial of Vibe Pro for builders in Europe. \n\nWe ran out of capacity in less than an hour. Today, we’re fixing that for good.\n\nNo more capped drops. If you’re in Europe, you get a month of Vibe Pro for free.\n\nEuropean product, European model, European inference. For European builders.\n\nCode: MISTRALVIBE. Link in thread.",
+   "date": 1795451951,
+   "media": [
+    {
+     "type": "image",
+     "src": "https://pbs.twimg.com/media/HX0uY57XMAA-Z1N.jpg?name=orig",
+     "ratio": 0.4292
+    }
+   ],
+   "links": []
+  }
+ ],
+ "article": {
+  "title": "Last week, we launched a promo for a free trial of Vibe Pro for builders in Europe.",
+  "source_title": null,
+  "body": [],
+  "why": null,
+  "tags": []
+ },
+ "updated": "2026-11-24T05:07:41+00:00",
+ "ai": {
+  "story": {
+   "body": [
+    "هوش مصنوعی میسترال (Mistral AI) اعلام کرد که محدودیت‌های قبلی را برای دسترسی به نسخه رایگان سرویس Vibe Pro برای توسعه‌دهندگان اروپایی حذف کرده است."
+   ],
+   "why": "این اقدام نشان‌دهنده افزایش تقاضای بالا برای این مدل هوش مصنوعی و تلاش شرکت برای تسهیل دسترسی گسترده‌تر به آن در بازار اروپا است.",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "c86fc3f5bf90"
+  }
+ }
+}

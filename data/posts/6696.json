@@ -1,0 +1,60 @@
+{
+ "id": 6696,
+ "url": "https://t.me/dlmehr/6696",
+ "date": "2026-11-23T18:09:19+00:00",
+ "text": "https://fxtwitter.com/cgasparino/status/2124899810314437062?a=rJyLS9F1-QCUPq0652Q&s=52",
+ "forwarded_from": null,
+ "digest": false,
+ "hash": "dcc9ec554f4e",
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/cgasparino/status/2124899810314437062?a=rJyLS9F1-QCUPq0652Q&s=52",
+  "site": "FxTwitter",
+  "title": "Charles Gasparino (@CGasparino)",
+  "description": "BREAKING: Major investors were alerting people close to the White House after last week's AI-stock debacle that the probability was near 100% that the country was heading for a recession, given the unwind of the AI trade and how it would impact spending across…",
+  "image": "https://cdn4.telesco.pe/file/FY_9V8CbVgxkYZAvyHzhNd28txACddv6jfdF6G0bTi6k5VOPO-gHXi4Sgkru0LEIRrxzib5q9D_85_d7KhiTdf_XqaJ0JeyjHAvSLalyEExpOZZuGRFrwuybkOr9T-49SWM6TIWJt6Bo70v0_oLxPgS7bz_PPEAeGpF7h-w9QEg3ia5q_MmLtgCAc4K2bfDcS0eiSfaBq2KT6bc57z72ekdkiNy-W7QW0tenS1Jerwnp85qCo71ZhtKcsHIuDwpykAeS-Qio5PvcDEn4S_w09oaIdIf5P5vauh8jjv17_HeuOudp6tDE4l03aGnww8hcGVGcp5QpkZASOpYZOiqZdQ.jpg",
+  "small": true
+ },
+ "gholam": null,
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/CGasparino/status/2124899810314437062",
+   "domain": "x.com",
+   "author": {
+    "name": "Charles Gasparino",
+    "handle": "CGasparino",
+    "avatar": "https://pbs.twimg.com/profile_images/1504155169134727171/h1d-cili_200x200.jpg"
+   },
+   "text": "BREAKING: Major investors were alerting people close to the White House after last week's AI-stock debacle that the probability was near 100% that the country was heading for a recession, given the unwind of the AI trade and how it would impact spending across the tech ecosystem. It's seen as the major reason why @SecScottBessent suddenly joined his boss in calling for @JensenHuang to be reinstated because it would at least temporarily pause the market convulsion, my sources (who have been pretty good on this) tell me. They also think the $NVDA will now have to resign. Now my opinion: There may be a short term gain, but the potential for long term pain is pretty high. Huang coming back doesnt mean he can come back to do biz as usual. How will he sell to China? The investigations from Congress are coming. How will @SecScottBessent and @SecRubio (much less @howardlutnick) rationalize what we will be discovering about chips going to China?",
+   "date": 1795450568,
+   "media": [],
+   "links": []
+  }
+ ],
+ "article": {
+  "title": "BREAKING: Major investors were alerting people close to the White House after last week's AI-stock debacle that the probability was near…",
+  "source_title": null,
+  "body": [],
+  "why": null,
+  "tags": [
+   "سیاست و قانون",
+   "کسب‌وکار"
+  ]
+ },
+ "updated": "2026-11-24T05:07:41+00:00",
+ "ai": {
+  "story": {
+   "body": [
+    "چارلز گاسپارینو اعلام کرد که سرمایه‌گذاران بزرگ پیش از بحران اخیر سهام هوش مصنوعی، احتمال وقوع رکود اقتصادی را نزدیک به صددرصد دانسته‌اند.",
+    "به گفته منابع او، دلیل اصلی این هشدار، تأثیر منفی بازگشت سرمایه‌گذاری‌ها بر اکوسیستم فناوری و فشار بر هزینه‌هاست.",
+    "گاسپارینو معتقد است بازگشت جسن هوآنگ به عنوان مدیر اجرایی نونواکس، تنها می‌تواند نوسانات بازار را موقتاً متوقف کند اما درد بلندمدت را حل نمی‌کند.",
+    "او همچنین نگرانی‌هایی درباره فروش محصولات به چین و چالش‌های احتمالی ناشی از تحقیقات کنگره و فشارهای قانونی مطرح کرد."
+   ],
+   "why": "این خبر اهمیت دارد زیرا نشان می‌دهد نوسانات شدید بازار سهام هوش مصنوعی می‌تواند به عنوان نشانه‌ای قوی برای آغاز یک رکود اقتصادی کلی در کشور تلقی شود.",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "be2343097871"
+  }
+ }
+}

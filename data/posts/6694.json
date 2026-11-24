@@ -1,0 +1,72 @@
+{
+ "id": 6694,
+ "url": "https://t.me/dlmehr/6694",
+ "date": "2026-11-23T17:14:03+00:00",
+ "text": "https://fxtwitter.com/pejmannozad/status/2124902743068545325?a=JKqM2aiMZUN3LxoCxJg&s=52",
+ "forwarded_from": null,
+ "digest": false,
+ "hash": "33f7ec42113f",
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/pejmannozad/status/2124902743068545325?a=JKqM2aiMZUN3LxoCxJg&s=52",
+  "site": "FxTwitter",
+  "title": "Pejman Nozad (@pejmannozad)",
+  "description": "Iranian American VCs are on fire!\n🔥\n@YasminRazavi : Anthropic’s first institutional round.\n@apartovi : Cursor, Kalshi, Applied Compute\n@ramtinnaimi: the dealmaker behind many outliers.\nSmall community. Massive impact. Proud.",
+  "image": "https://cdn4.telesco.pe/file/Mc0QxIipFCgBY49wpkOfZD4wyhOMBmK9eBAxy4uRxPEHai0rfPcNNdToUkUdmHUgq9I6ZC6cEPxvyHOW2-6Iwj7njuvbcl9aTa1ZH9cJQY41b1ZKbN2LsJuvtEYYkbBNzBbQvSOawtQxuMuZB0kAboei7Ona476AYgA8RpnZjI_aSed1Y-zuxWiof-Fhbkl2o-XacwpoUD61w-tj5gxb1B9uEWoQN3lV7gS2CEdrv5BWYjOo3WkR8UOmASa0uQmpdwP63W4jexs_YfHxgVbOnv1BSBXsQQTAZBj5iu6Az89vRsNkHJe1PkexPOec_sxOaDEFu9_saVCnQ1z_O3K4bA.jpg"
+ },
+ "gholam": null,
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/pejmannozad/status/2124902743068545325",
+   "domain": "x.com",
+   "author": {
+    "name": "Pejman Nozad",
+    "handle": "pejmannozad",
+    "avatar": "https://pbs.twimg.com/profile_images/1650708773215027206/MopOs42F_200x200.jpg"
+   },
+   "text": "Iranian American VCs are on fire!🔥\n\n@YasminRazavi : Anthropic’s first institutional round.\n@apartovi : Cursor, Kalshi, Applied Compute\n@ramtinnaimi: the dealmaker behind many outliers.\n\nSmall community. Massive impact. Proud.",
+   "date": 1795451267,
+   "media": [
+    {
+     "type": "image",
+     "src": "https://pbs.twimg.com/media/HX0ra7yaYAMiqUR.jpg?name=orig",
+     "ratio": 0.6667
+    },
+    {
+     "type": "image",
+     "src": "https://pbs.twimg.com/media/HX0ra7waYAcxIan.jpg?name=orig",
+     "ratio": 1.4988
+    },
+    {
+     "type": "image",
+     "src": "https://pbs.twimg.com/media/HX0ra7xa8AAfYZV.jpg?name=orig",
+     "ratio": 0.6667
+    }
+   ],
+   "links": []
+  }
+ ],
+ "article": {
+  "title": "Iranian American VCs are on fire!🔥",
+  "source_title": null,
+  "body": [],
+  "why": null,
+  "tags": []
+ },
+ "updated": "2026-11-24T05:07:42+00:00",
+ "ai": {
+  "story": {
+   "body": [
+    "پیمان نوزاد از فعالیت پرشور سرمایه‌گذاران خطرپذیر ایرانی‌تبار در آمریکا خبر داد و به موفقیت‌های اخیر آن‌ها اشاره کرد.",
+    "این سرمایه‌گذاران در راند سرمایه‌گذاری اولیه شرکت Anthropic، شرکت Cursor، پلتفرم Kalshi و شرکت Applied Compute مشارکت کرده‌اند.",
+    "رامتین نامی، که به عنوان یک معامله‌گر موفق در پشت بسیاری از این خروج‌های بازار شناخته می‌شود، در این میان نقش کلیدی داشته است.",
+    "نوزاد با اشاره به کوچک بودن این جامعه سرمایه‌گذاری، تأثیر گسترده آن را برجسته کرد و از این دستاوردها افتخار کرد."
+   ],
+   "why": "این خبر اهمیت دارد زیرا نشان‌دهنده نفوذ و تأثیرگذاری قابل توجه سرمایه‌گذاران ایرانی‌تبار در اکوسیستم پیشرفته هوش مصنوعی و فناوری‌های مالی است.",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "8a1ebb594e66"
+  }
+ }
+}
