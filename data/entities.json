@@ -13457,6 +13457,36 @@
    "name_en": "Deep Agents",
    "name_fa": "دیپ ایجنت‌ها",
    "kind": "product"
+  },
+  {
+   "slug": "abc",
+   "name_en": "ABC",
+   "name_fa": "شبکه خبری ای‌بی‌سی",
+   "kind": "company"
+  },
+  {
+   "slug": "taco-bell",
+   "name_en": "Taco Bell",
+   "name_fa": "تاکو بل",
+   "kind": "product"
+  },
+  {
+   "slug": "matraix",
+   "name_en": "MatrAIx",
+   "name_fa": "ماترایکس",
+   "kind": "product"
+  },
+  {
+   "slug": "persona-8b",
+   "name_en": "Persona 8B",
+   "name_fa": "پرسونا ۸ میلیارد",
+   "kind": "product"
+  },
+  {
+   "slug": "tribe-v2",
+   "name_en": "TRIBE v2",
+   "name_fa": "تریب v2",
+   "kind": "model"
   }
  ]
 }
