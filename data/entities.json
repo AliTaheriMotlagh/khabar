@@ -14351,6 +14351,30 @@
    "name_en": "GLM",
    "name_fa": "جی‌ال‌ام",
    "kind": "company"
+  },
+  {
+   "slug": "simon-cookstnamacher",
+   "name_en": "Simon Cookstnamacher",
+   "name_fa": "سیمون کوستنماخر",
+   "kind": "person"
+  },
+  {
+   "slug": "our-world-in-data",
+   "name_en": "Our World in Data",
+   "name_fa": "اور ورلد این دیتا",
+   "kind": "company"
+  },
+  {
+   "slug": "kerimio",
+   "name_en": "Kerimio",
+   "name_fa": "کریمیو",
+   "kind": "person"
+  },
+  {
+   "slug": "wonderingapp",
+   "name_en": "WonderingApp",
+   "name_fa": "وندرینگ اپ",
+   "kind": "product"
   }
  ]
 }

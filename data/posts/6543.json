@@ -46,6 +46,11 @@
   "type": "ویدیوی مهرزاد",
   "model": "qwen3.5-9b-q4_k_m",
   "v": 2,
-  "src": "31d81d6644fe"
+  "src": "31d81d6644fe",
+  "speech": {
+   "v": 1,
+   "src": "51220dea09b8",
+   "added": 1
+  }
  }
 }

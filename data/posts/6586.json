@@ -131,6 +131,11 @@
    "model": "qwen3.5-9b-q4_k_m",
    "v": 2,
    "src": "bd90b39e297f"
+  },
+  "speech": {
+   "v": 1,
+   "src": "234b4ced1269",
+   "added": 2
   }
  },
  "gholam_checked": "2026-11-19T17:21:19+00:00"
