@@ -13655,6 +13655,156 @@
    "name_en": "Wireless Communications",
    "name_fa": "ارتباطات بی‌سیم",
    "kind": "product"
+  },
+  {
+   "slug": "mixture-of-kittens",
+   "name_en": "Mixture-of-Kittens",
+   "name_fa": "میکسچر-آف-کیتنز",
+   "kind": "product"
+  },
+  {
+   "slug": "opencode-go",
+   "name_en": "OpenCode Go",
+   "name_fa": "اوپن‌کد گو",
+   "kind": "company"
+  },
+  {
+   "slug": "oregon",
+   "name_en": "Oregon",
+   "name_fa": "اورگان",
+   "kind": "company"
+  },
+  {
+   "slug": "prediction-markets",
+   "name_en": "Prediction Markets",
+   "name_fa": "بازارهای پیش‌بینی",
+   "kind": "product"
+  },
+  {
+   "slug": "shou-zi-chew",
+   "name_en": "Shou Zi Chew",
+   "name_fa": "شو زی چو",
+   "kind": "person"
+  },
+  {
+   "slug": "sanjay-gujjar",
+   "name_en": "Sanjay Gujjar",
+   "name_fa": "سانجای گوجار",
+   "kind": "person"
+  },
+  {
+   "slug": "oriol-vinyals",
+   "name_en": "Oriol Vinyals",
+   "name_fa": "اوریل وینیلز",
+   "kind": "person"
+  },
+  {
+   "slug": "kook-lee",
+   "name_en": "Kook Lee",
+   "name_fa": "کوک لی",
+   "kind": "person"
+  },
+  {
+   "slug": "discovery-loop",
+   "name_en": "Discovery Loop",
+   "name_fa": "دیسکوری لوپ",
+   "kind": "company"
+  },
+  {
+   "slug": "korai-kavoukioglu",
+   "name_en": "Korai Kavoukioglu",
+   "name_fa": "کورای کاووکچواوغلو",
+   "kind": "person"
+  },
+  {
+   "slug": "bert-edgack",
+   "name_en": "Bert Edgack",
+   "name_fa": "برت ادکاک",
+   "kind": "person"
+  },
+  {
+   "slug": "hark-handoff",
+   "name_en": "Hark Handoff",
+   "name_fa": "هارک هنداف",
+   "kind": "product"
+  },
+  {
+   "slug": "chatgpt-54",
+   "name_en": "ChatGPT 5.4",
+   "name_fa": "چت‌جی‌پی‌تی ۵.۴",
+   "kind": "model"
+  },
+  {
+   "slug": "seedrealtime",
+   "name_en": "SeedRealtime",
+   "name_fa": "سید رایتایم",
+   "kind": "model"
+  },
+  {
+   "slug": "xiaomi-robotics-1",
+   "name_en": "Xiaomi-Robotics-1",
+   "name_fa": "شیائومی-رباتیک-۱",
+   "kind": "model"
+  },
+  {
+   "slug": "sanjeev-ghemawat",
+   "name_en": "Sanjeev Ghemawat",
+   "name_fa": "سانجی جماوات",
+   "kind": "person"
+  },
+  {
+   "slug": "quoc-le",
+   "name_en": "Quoc Le",
+   "name_fa": "کوئک له",
+   "kind": "person"
+  },
+  {
+   "slug": "enterprise",
+   "name_en": "Enterprise",
+   "name_fa": "انترپرایک",
+   "kind": "company"
+  },
+  {
+   "slug": "scientists",
+   "name_en": "Scientists",
+   "name_fa": "دانشمندان",
+   "kind": "person"
+  },
+  {
+   "slug": "kitesurf",
+   "name_en": "Kitesurf",
+   "name_fa": "کیت‌اسرف",
+   "kind": "product"
+  },
+  {
+   "slug": "cloudflare-workers",
+   "name_en": "Cloudflare Workers",
+   "name_fa": "کلادفلر ورکرس",
+   "kind": "product"
+  },
+  {
+   "slug": "terafab",
+   "name_en": "Terafab",
+   "name_fa": "ترافب",
+   "kind": "product"
+  },
+  {
+   "slug": "qwen-38-max",
+   "name_en": "Qwen 3.8-Max",
+   "name_fa": "کیوئن ۳.۸-مکس",
+   "kind": "model"
+  },
+  {
+   "slug": "zhaojun-qiu",
+   "name_en": "Zhaojun Qiu",
+   "name_fa": "ژیائوئین قو",
+   "kind": "person"
+  },
+  {
+   "slug": "coding-agent",
+   "name_en": "Coding Agent",
+   "name_fa": "دستیار کدنویسی",
+   "kind": "product"
   }
  ]
 }
