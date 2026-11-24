@@ -1,0 +1,78 @@
+{
+ "id": 6710,
+ "url": "https://t.me/dlmehr/6710",
+ "date": "2026-11-24T15:16:49+00:00",
+ "text": "https://fxtwitter.com/TencentHunyuan/status/2125170622049485093",
+ "forwarded_from": "Mehran",
+ "digest": false,
+ "hash": "c0f0e62a702b",
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/TencentHunyuan/status/2125170622049485093",
+  "site": "FxTwitter",
+  "title": "Tencent Hy (@TencentHunyuan)",
+  "description": "🚀\nHy MT3 is here — third-generation open-source translation models.\nMore accurate, more complete, and better at following user instructions. Language coverage expanded from 38 to 102.\nOptimized for game localization (with Honor of Kings) and image/OCR translation.…",
+  "image": "https://cdn4.telesco.pe/file/WQWPJFy7TDNsXTTDtumlZf3fBvmB8AG06aUZ9Eeakq4hmondbqQn13pSve7pbVjTX2czgvxtWZQPkOUVSiJGaee0N7ghaspHfP_KpV5aWrFH2oEWLnx1DGEFbKXcaEhWYbOIoaIs-e-SCqeY0tuoH1k50VxzBU-i3-Jei37bQK1DXK7HKvD7Exb8tHeZRg_IrticL8yGjz__O0kVmmJyHaAoy5EcwqsRdecAhv3x6GdeafZfHMqu0U1bzQPQDNZ573IOR6MPR3CtcMJBnBFn5W1D_6fQtFt3LgwFtOv3O-FA0F28ddHnAr2LVJzOnySBTj4zxxu6CWKQq8g8D9rROg.jpg"
+ },
+ "gholam": {
+  "text": "سلام رفقا، تیم هوش مصنوعی تنسنت هونیوان از نسل سوم مدل‌های ترجمه متن‌باز خودش با اسم Hy-MT3 رونمایی کرد که کدها و وزن‌هاش روی گیت‌هاب و هاگینگ‌فیس منتشر شده. به گفته این تیم، پوشش زبانی مدل از ۳۸ به ۱۰۲ زبان رسیده؛ زبان فارسی از نسل قبل توی لیست بود و حالا کلی زبان دیگه مثل کردی، آذری، تاجیکی و ارمنی هم بهش اضافه شدن تا کمتر زبونی از قلم بیفته. 🌐\n\n• این خانواده در سه سایز ۱.۸، ۷ و ۳۰ میلیاردی (با ۳ میلیارد پارامتر فعال) و در فرمت‌های مختلف از جمله FP8 و GGUF عرضه شده و هم‌زمان ابزار ارزیابی خودکار ترجمه TransRubric هم متن‌باز شده.\n• طبق گزارش و نمودارهای منتشرشده از طرف تنسنت، مدل ۳۰ میلیاردی در حالت غیرتفکری روی بنچمارک‌هایی مثل WildMTBench و IFMTBench از رقیبانی مثل Qwen3.8-Max و DeepSeek-V4.1-Flash جلو زده و خطاهای ترجمه و جاانداختن عبارت‌ها رو هم نسبت به نسل دوم به شکل محسوسی کم کرده.\n• دو تا تمرکز اصلی این نسخه روی بومی‌سازی بازی‌ها (با همکاری تیم بازی Honor of Kings برای سالم موندن کدها و اصطلاحات بازی) و ترجمه متن روی تصویر بوده تا غلط‌های OCR کار رو خراب نکنن.\n\nالبته خب فعلاً این آمار و ارقام از تست‌ها و گزارش خود سازنده‌ست، ولی برای کسایی که دنبال ترجمه سبک، بومی‌سازی بازی یا خوندن متن عکس‌ها هستن، گزینه خوش‌قولی به نظر میاد.",
+  "date": "2026-11-24T15:17:17+00:00"
+ },
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/TencentHunyuan/status/2125170622049485093",
+   "domain": "x.com",
+   "author": {
+    "name": "Tencent Hy",
+    "handle": "TencentHunyuan",
+    "avatar": "https://pbs.twimg.com/profile_images/1810934469769195520/kKSVenHW_200x200.jpg"
+   },
+   "text": "🚀 Hy MT3 is here — third-generation open-source translation models.\n\nMore accurate, more complete, and better at following user instructions. Language coverage expanded from 38 to 102.\n\nOptimized for game localization (with Honor of Kings) and image/OCR translation.\n\nModels open for download and deployment.\n\n🤗 https://huggingface.co/collections/tencent/hy-mt3\n🔗 https://github.com/Tencent-Hunyuan/Hy-MT3\n📚: https://arxiv.org/pdf/2611.27673",
+   "date": 1795515134,
+   "media": [
+    {
+     "type": "image",
+     "src": "https://pbs.twimg.com/media/HX4fWcgaYAAbaCb.png?name=orig",
+     "ratio": 0.5856
+    },
+    {
+     "type": "image",
+     "src": "https://pbs.twimg.com/media/HX4fYODbYAEbABz.png?name=orig",
+     "ratio": 0.8056
+    }
+   ],
+   "links": [
+    "https://huggingface.co/collections/tencent/hy-mt3",
+    "https://github.com/Tencent-Hunyuan/Hy-MT3",
+    "https://arxiv.org/pdf/2611.27673"
+   ]
+  },
+  {
+   "kind": "link",
+   "url": "https://huggingface.co/collections/tencent/hy-mt3",
+   "domain": "huggingface.co",
+   "title": "Hy-MT3 - a tencent Collection",
+   "description": "Hy multilingual translation model family",
+   "image": "https://cdn-thumbnails.huggingface.co/social-thumbnails/collections/tencent/hy-mt3-6afbaa13eaed980ca91d4ff6.png",
+   "site": "huggingface.co"
+  }
+ ],
+ "article": {
+  "title": "تیم هوش مصنوعی تنسنت هونیوان از نسل سوم مدل‌های ترجمه متن‌باز خودش با اسم Hy-MT3 رونمایی کرد که کدها و وزن‌هاش روی گیت‌هاب و هاگینگ‌فیس منتشر شده",
+  "source_title": "🚀 Hy MT3 is here — third-generation open-source translation models.",
+  "body": [
+   "تیم هوش مصنوعی تنسنت هونیوان از نسل سوم مدل‌های ترجمه متن‌باز خودش با اسم Hy-MT3 رونمایی کرد که کدها و وزن‌هاش روی گیت‌هاب و هاگینگ‌فیس منتشر شده. به گفته این تیم، پوشش زبانی مدل از ۳۸ به ۱۰۲ زبان رسیده؛ زبان فارسی از نسل قبل توی لیست بود و حالا کلی زبان دیگه مثل کردی، آذری، تاجیکی و ارمنی هم بهش اضافه شدن تا کمتر زبونی از قلم بیفته. 🌐",
+   "• این خانواده در سه سایز ۱.۸، ۷ و ۳۰ میلیاردی (با ۳ میلیارد پارامتر فعال) و در فرمت‌های مختلف از جمله FP8 و GGUF عرضه شده و هم‌زمان ابزار ارزیابی خودکار ترجمه TransRubric هم متن‌باز شده.",
+   "• طبق گزارش و نمودارهای منتشرشده از طرف تنسنت، مدل ۳۰ میلیاردی در حالت غیرتفکری روی بنچمارک‌هایی مثل WildMTBench و IFMTBench از رقیبانی مثل Qwen3.8-Max و DeepSeek-V4.1-Flash جلو زده و خطاهای ترجمه و جاانداختن عبارت‌ها رو هم نسبت به نسل دوم به شکل محسوسی کم کرده.",
+   "• دو تا تمرکز اصلی این نسخه روی بومی‌سازی بازی‌ها (با همکاری تیم بازی Honor of Kings برای سالم موندن کدها و اصطلاحات بازی) و ترجمه متن روی تصویر بوده تا غلط‌های OCR کار رو خراب نکنن."
+  ],
+  "why": "البته خب فعلاً این آمار و ارقام از تست‌ها و گزارش خود سازنده‌ست، ولی برای کسایی که دنبال ترجمه سبک، بومی‌سازی بازی یا خوندن متن عکس‌ها هستن، گزینه خوش‌قولی به نظر میاد.",
+  "why_label": "حرف آخر",
+  "tags": [
+   "متن‌باز",
+   "کدنویسی"
+  ]
+ },
+ "updated": "2026-11-24T15:42:44+00:00"
+}
