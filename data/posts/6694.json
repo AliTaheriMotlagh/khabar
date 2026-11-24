@@ -15,46 +15,6 @@
   "image": "https://cdn4.telesco.pe/file/Mc0QxIipFCgBY49wpkOfZD4wyhOMBmK9eBAxy4uRxPEHai0rfPcNNdToUkUdmHUgq9I6ZC6cEPxvyHOW2-6Iwj7njuvbcl9aTa1ZH9cJQY41b1ZKbN2LsJuvtEYYkbBNzBbQvSOawtQxuMuZB0kAboei7Ona476AYgA8RpnZjI_aSed1Y-zuxWiof-Fhbkl2o-XacwpoUD61w-tj5gxb1B9uEWoQN3lV7gS2CEdrv5BWYjOo3WkR8UOmASa0uQmpdwP63W4jexs_YfHxgVbOnv1BSBXsQQTAZBj5iu6Az89vRsNkHJe1PkexPOec_sxOaDEFu9_saVCnQ1z_O3K4bA.jpg"
  },
  "gholam": null,
- "links": [
-  {
-   "kind": "tweet",
-   "url": "https://x.com/pejmannozad/status/2124902743068545325",
-   "domain": "x.com",
-   "author": {
-    "name": "Pejman Nozad",
-    "handle": "pejmannozad",
-    "avatar": "https://pbs.twimg.com/profile_images/1650708773215027206/MopOs42F_200x200.jpg"
-   },
-   "text": "Iranian American VCs are on fire!🔥\n\n@YasminRazavi : Anthropic’s first institutional round.\n@apartovi : Cursor, Kalshi, Applied Compute\n@ramtinnaimi: the dealmaker behind many outliers.\n\nSmall community. Massive impact. Proud.",
-   "date": 1795451267,
-   "media": [
-    {
-     "type": "image",
-     "src": "https://pbs.twimg.com/media/HX0ra7yaYAMiqUR.jpg?name=orig",
-     "ratio": 0.6667
-    },
-    {
-     "type": "image",
-     "src": "https://pbs.twimg.com/media/HX0ra7waYAcxIan.jpg?name=orig",
-     "ratio": 1.4988
-    },
-    {
-     "type": "image",
-     "src": "https://pbs.twimg.com/media/HX0ra7xa8AAfYZV.jpg?name=orig",
-     "ratio": 0.6667
-    }
-   ],
-   "links": []
-  }
- ],
- "article": {
-  "title": "Iranian American VCs are on fire!🔥",
-  "source_title": null,
-  "body": [],
-  "why": null,
-  "tags": []
- },
- "updated": "2026-11-24T05:07:42+00:00",
  "ai": {
   "title": "سرمایه‌گذاران ایرانی‌تبار در راند اولیه Anthropic و Cursor سرمایه‌گذاری کردند",
   "short": "سرمایه‌گذاری روی Anthropic",
@@ -148,5 +108,45 @@
    "src": "8c0144ba2f07",
    "added": 1
   }
- }
+ },
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/pejmannozad/status/2124902743068545325",
+   "domain": "x.com",
+   "author": {
+    "name": "Pejman Nozad",
+    "handle": "pejmannozad",
+    "avatar": "https://pbs.twimg.com/profile_images/1650708773215027206/MopOs42F_200x200.jpg"
+   },
+   "text": "Iranian American VCs are on fire!🔥\n\n@YasminRazavi : Anthropic’s first institutional round.\n@apartovi : Cursor, Kalshi, Applied Compute\n@ramtinnaimi: the dealmaker behind many outliers.\n\nSmall community. Massive impact. Proud.",
+   "date": 1795451267,
+   "media": [
+    {
+     "type": "image",
+     "src": "https://pbs.twimg.com/media/HX0ra7yaYAMiqUR.jpg?name=orig",
+     "ratio": 0.6667
+    },
+    {
+     "type": "image",
+     "src": "https://pbs.twimg.com/media/HX0ra7waYAcxIan.jpg?name=orig",
+     "ratio": 1.4988
+    },
+    {
+     "type": "image",
+     "src": "https://pbs.twimg.com/media/HX0ra7xa8AAfYZV.jpg?name=orig",
+     "ratio": 0.6667
+    }
+   ],
+   "links": []
+  }
+ ],
+ "article": {
+  "title": "Iranian American VCs are on fire!🔥",
+  "source_title": null,
+  "body": [],
+  "why": null,
+  "tags": []
+ },
+ "updated": "2026-11-24T14:46:04+00:00"
 }

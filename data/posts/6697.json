@@ -15,36 +15,6 @@
   "image": "https://cdn4.telesco.pe/file/SZzbNBsoVHaRRRRh_JN4nNKeccaz8OeMpi49mAFDl2QbOr9ByvLrqHmivBkPkRx5gMpF9EBE8jNEBM9zE7CX8xhxAeZl-ZwfotESrD3aTiS9D4SnGCxWntFL0JAVP_3v7q07vZztDHxcjqR4Cya2atPeRNACtMULUYvcyXG-aMXSyFcgAkpSB-_koB1ri9yNxesIBHWfeuwKxZajqxJF1-nQxlwKInlvfOUbtPTo0As0_JwSwAw1A59O7oCiz7sh_ojgo6Sb_Z4R4Aa2O5iCNp755hON9RNwljhNRd2SU-ihix-XxoTB1oNUT0DT-4VxkewJ2vJxDcw5o4p2VXpHkQ.jpg"
  },
  "gholam": null,
- "links": [
-  {
-   "kind": "tweet",
-   "url": "https://x.com/MistralAI/status/2124905610386780451",
-   "domain": "x.com",
-   "author": {
-    "name": "Mistral AI",
-    "handle": "MistralAI",
-    "avatar": "https://pbs.twimg.com/profile_images/1996905418065375232/mzwynOLB_200x200.jpg"
-   },
-   "text": "Last week, we launched a promo for a free trial of Vibe Pro for builders in Europe. \n\nWe ran out of capacity in less than an hour. Today, we’re fixing that for good.\n\nNo more capped drops. If you’re in Europe, you get a month of Vibe Pro for free.\n\nEuropean product, European model, European inference. For European builders.\n\nCode: MISTRALVIBE. Link in thread.",
-   "date": 1795451951,
-   "media": [
-    {
-     "type": "image",
-     "src": "https://pbs.twimg.com/media/HX0uY57XMAA-Z1N.jpg?name=orig",
-     "ratio": 0.4292
-    }
-   ],
-   "links": []
-  }
- ],
- "article": {
-  "title": "Last week, we launched a promo for a free trial of Vibe Pro for builders in Europe.",
-  "source_title": null,
-  "body": [],
-  "why": null,
-  "tags": []
- },
- "updated": "2026-11-24T05:07:41+00:00",
  "ai": {
   "title": "مسترال محدودیت‌های نسخه رایگان Vibe Pro را برای توسعه‌دهندگان اروپایی برداشت",
   "short": "مسترال Vibe Pro رایگان شد",
@@ -109,5 +79,35 @@
    "src": "becbde91a9e5",
    "added": 1
   }
- }
+ },
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/MistralAI/status/2124905610386780451",
+   "domain": "x.com",
+   "author": {
+    "name": "Mistral AI",
+    "handle": "MistralAI",
+    "avatar": "https://pbs.twimg.com/profile_images/1996905418065375232/mzwynOLB_200x200.jpg"
+   },
+   "text": "Last week, we launched a promo for a free trial of Vibe Pro for builders in Europe. \n\nWe ran out of capacity in less than an hour. Today, we’re fixing that for good.\n\nNo more capped drops. If you’re in Europe, you get a month of Vibe Pro for free.\n\nEuropean product, European model, European inference. For European builders.\n\nCode: MISTRALVIBE. Link in thread.",
+   "date": 1795451951,
+   "media": [
+    {
+     "type": "image",
+     "src": "https://pbs.twimg.com/media/HX0uY57XMAA-Z1N.jpg?name=orig",
+     "ratio": 0.4292
+    }
+   ],
+   "links": []
+  }
+ ],
+ "article": {
+  "title": "Last week, we launched a promo for a free trial of Vibe Pro for builders in Europe.",
+  "source_title": null,
+  "body": [],
+  "why": null,
+  "tags": []
+ },
+ "updated": "2026-11-24T14:46:04+00:00"
 }

@@ -16,33 +16,6 @@
   "small": true
  },
  "gholam": null,
- "links": [
-  {
-   "kind": "tweet",
-   "url": "https://x.com/CGasparino/status/2124899810314437062",
-   "domain": "x.com",
-   "author": {
-    "name": "Charles Gasparino",
-    "handle": "CGasparino",
-    "avatar": "https://pbs.twimg.com/profile_images/1504155169134727171/h1d-cili_200x200.jpg"
-   },
-   "text": "BREAKING: Major investors were alerting people close to the White House after last week's AI-stock debacle that the probability was near 100% that the country was heading for a recession, given the unwind of the AI trade and how it would impact spending across the tech ecosystem. It's seen as the major reason why @SecScottBessent suddenly joined his boss in calling for @JensenHuang to be reinstated because it would at least temporarily pause the market convulsion, my sources (who have been pretty good on this) tell me. They also think the $NVDA will now have to resign. Now my opinion: There may be a short term gain, but the potential for long term pain is pretty high. Huang coming back doesnt mean he can come back to do biz as usual. How will he sell to China? The investigations from Congress are coming. How will @SecScottBessent and @SecRubio (much less @howardlutnick) rationalize what we will be discovering about chips going to China?",
-   "date": 1795450568,
-   "media": [],
-   "links": []
-  }
- ],
- "article": {
-  "title": "BREAKING: Major investors were alerting people close to the White House after last week's AI-stock debacle that the probability was near…",
-  "source_title": null,
-  "body": [],
-  "why": null,
-  "tags": [
-   "سیاست و قانون",
-   "کسب‌وکار"
-  ]
- },
- "updated": "2026-11-24T05:07:41+00:00",
  "ai": {
   "title": "چارلز گاسپارینو: نوسانات سهام هوش مصنوعی نشانه‌ی نزدیک شدن به رکود اقتصادی است",
   "short": "گاسپارینو: رکود نزدیک است",
@@ -121,5 +94,32 @@
    "v": 2,
    "src": "5c8f48ee4efb"
   }
- }
+ },
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/CGasparino/status/2124899810314437062",
+   "domain": "x.com",
+   "author": {
+    "name": "Charles Gasparino",
+    "handle": "CGasparino",
+    "avatar": "https://pbs.twimg.com/profile_images/1504155169134727171/h1d-cili_200x200.jpg"
+   },
+   "text": "BREAKING: Major investors were alerting people close to the White House after last week's AI-stock debacle that the probability was near 100% that the country was heading for a recession, given the unwind of the AI trade and how it would impact spending across the tech ecosystem. It's seen as the major reason why @SecScottBessent suddenly joined his boss in calling for @JensenHuang to be reinstated because it would at least temporarily pause the market convulsion, my sources (who have been pretty good on this) tell me. They also think the $NVDA will now have to resign. Now my opinion: There may be a short term gain, but the potential for long term pain is pretty high. Huang coming back doesnt mean he can come back to do biz as usual. How will he sell to China? The investigations from Congress are coming. How will @SecScottBessent and @SecRubio (much less @howardlutnick) rationalize what we will be discovering about chips going to China?",
+   "date": 1795450568,
+   "media": [],
+   "links": []
+  }
+ ],
+ "article": {
+  "title": "BREAKING: Major investors were alerting people close to the White House after last week's AI-stock debacle that the probability was near…",
+  "source_title": null,
+  "body": [],
+  "why": null,
+  "tags": [
+   "سیاست و قانون",
+   "کسب‌وکار"
+  ]
+ },
+ "updated": "2026-11-24T14:46:04+00:00"
 }

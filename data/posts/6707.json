@@ -19,34 +19,6 @@
   "text": "حساب اوپن‌کد (OpenCode) تو یه پست اعلام کرده که یه مدل مخفی به اسم HungerG، طبق گفته‌شون برای این هفته، برای مشترک‌های OpenCode Go رایگان شده. به گفته خودشون این مدل ظرفیت متنی یک میلیونی (1M context) داره، چندوجهیه (Multi-modal) و روی داده‌های کاربرها هم آموزش نمی‌بینه. اسمش یه جورایی یادآور گرسنگیه، ولی حداقل برای مشترک‌های این طرح فعلاً یه ضیافت بی‌خرج حساب می‌شه. ✨",
   "date": "2026-11-24T04:12:10+00:00"
  },
- "links": [
-  {
-   "kind": "tweet",
-   "url": "https://x.com/opencode/status/2125062647846694979",
-   "domain": "x.com",
-   "author": {
-    "name": "OpenCode",
-    "handle": "opencode",
-    "avatar": "https://pbs.twimg.com/profile_images/1973794620233433088/nBn75BTm_200x200.png"
-   },
-   "text": "HungerG (stealth model) is free for OpenCode Go subscribers this week\n\n1M context\nMulti-modal\nNo training on data",
-   "date": 1795489391,
-   "media": [],
-   "links": []
-  }
- ],
- "article": {
-  "title": "حساب اوپن‌کد (OpenCode) تو یه پست اعلام کرده که یه مدل مخفی به اسم HungerG، طبق گفته‌شون برای این هفته، برای مشترک‌های OpenCode Go رایگان شده",
-  "source_title": "HungerG (stealth model) is free for OpenCode Go subscribers this week",
-  "body": [
-   "حساب اوپن‌کد (OpenCode) تو یه پست اعلام کرده که یه مدل مخفی به اسم HungerG، طبق گفته‌شون برای این هفته، برای مشترک‌های OpenCode Go رایگان شده. به گفته خودشون این مدل ظرفیت متنی یک میلیونی (1M context) داره، چندوجهیه (Multi-modal) و روی داده‌های کاربرها هم آموزش نمی‌بینه. اسمش یه جورایی یادآور گرسنگیه، ولی حداقل برای مشترک‌های این طرح فعلاً یه ضیافت بی‌خرج حساب می‌شه. ✨"
-  ],
-  "why": null,
-  "tags": [
-   "کدنویسی"
-  ]
- },
- "updated": "2026-11-24T05:07:37+00:00",
  "ai": {
   "title": "مدل مخفی HungerG برای مشترک‌های OpenCode Go رایگان شد",
   "short": "HungerG رایگان شد",
@@ -117,5 +89,33 @@
    "src": "a07773b2b43b",
    "added": 2
   }
- }
+ },
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/opencode/status/2125062647846694979",
+   "domain": "x.com",
+   "author": {
+    "name": "OpenCode",
+    "handle": "opencode",
+    "avatar": "https://pbs.twimg.com/profile_images/1973794620233433088/nBn75BTm_200x200.png"
+   },
+   "text": "HungerG (stealth model) is free for OpenCode Go subscribers this week\n\n1M context\nMulti-modal\nNo training on data",
+   "date": 1795489391,
+   "media": [],
+   "links": []
+  }
+ ],
+ "article": {
+  "title": "حساب اوپن‌کد (OpenCode) تو یه پست اعلام کرده که یه مدل مخفی به اسم HungerG، طبق گفته‌شون برای این هفته، برای مشترک‌های OpenCode Go رایگان شده",
+  "source_title": "HungerG (stealth model) is free for OpenCode Go subscribers this week",
+  "body": [
+   "حساب اوپن‌کد (OpenCode) تو یه پست اعلام کرده که یه مدل مخفی به اسم HungerG، طبق گفته‌شون برای این هفته، برای مشترک‌های OpenCode Go رایگان شده. به گفته خودشون این مدل ظرفیت متنی یک میلیونی (1M context) داره، چندوجهیه (Multi-modal) و روی داده‌های کاربرها هم آموزش نمی‌بینه. اسمش یه جورایی یادآور گرسنگیه، ولی حداقل برای مشترک‌های این طرح فعلاً یه ضیافت بی‌خرج حساب می‌شه. ✨"
+  ],
+  "why": null,
+  "tags": [
+   "کدنویسی"
+  ]
+ },
+ "updated": "2026-11-24T14:46:03+00:00"
 }

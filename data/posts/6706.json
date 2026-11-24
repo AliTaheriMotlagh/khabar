@@ -19,34 +19,6 @@
   "text": "رفیق، طبق پستی که تک‌میم به نقل از منابع وال‌استریت ژورنال گذاشته، جنسن هوانگ توی جلسه روز یکشنبه‌اش با هیئت‌مدیره انویدیا، علاوه بر دو موردی که قبلاً گزارش شده بود، روابط دیگه‌ای رو هم باهاشون در میون گذاشته و از این بابت ابراز پشیمونی کرده. البته اینجا فقط همین خلاصه کوتاه از خبر اومده و جزئیات بیشتری از متن اصلی گزارش در دسترس نیست.",
   "date": "2026-11-24T03:54:25+00:00"
  },
- "links": [
-  {
-   "kind": "tweet",
-   "url": "https://x.com/Techmeme/status/2125065826143486448",
-   "domain": "x.com",
-   "author": {
-    "name": "Techmeme",
-    "handle": "Techmeme",
-    "avatar": "https://pbs.twimg.com/profile_images/1191943129823399936/ZvfTRAlg_200x200.jpg"
-   },
-   "text": "Sources: Jensen Huang disclosed additional affairs beyond the two already reported during his Sunday meeting with Nvidia's board, but was remorseful about them (Wall Street Journal)\n\n(Visit Techmeme dot com for the link and full context!)",
-   "date": 1795490149,
-   "media": [],
-   "links": []
-  }
- ],
- "article": {
-  "title": "طبق پستی که تک‌میم به نقل از منابع وال‌استریت ژورنال گذاشته، جنسن هوانگ توی جلسه روز یکشنبه‌اش با هیئت‌مدیره انویدیا، علاوه بر دو موردی که قبلاً گزارش شده بود، روابط دیگه‌ای رو هم باهاشون در میون گذاشته و از این بابت ابراز پشیمونی کرده",
-  "source_title": "Sources: Jensen Huang disclosed additional affairs beyond the two already reported during his Sunday meeting with Nvidia's board, but was…",
-  "body": [
-   "طبق پستی که تک‌میم به نقل از منابع وال‌استریت ژورنال گذاشته، جنسن هوانگ توی جلسه روز یکشنبه‌اش با هیئت‌مدیره انویدیا، علاوه بر دو موردی که قبلاً گزارش شده بود، روابط دیگه‌ای رو هم باهاشون در میون گذاشته و از این بابت ابراز پشیمونی کرده. البته اینجا فقط همین خلاصه کوتاه از خبر اومده و جزئیات بیشتری از متن اصلی گزارش در دسترس نیست."
-  ],
-  "why": null,
-  "tags": [
-   "انویدیا"
-  ]
- },
- "updated": "2026-11-24T05:07:37+00:00",
  "ai": {
   "title": "جنسن هوانگ در انویدیا روابط پنهانی دیگر را به هیئت‌مدیره اعتراف کرد",
   "short": "جنسن هوانگ اعتراف کرد",
@@ -99,5 +71,33 @@
    "v": 2,
    "src": "72dddfca0bc5"
   }
- }
+ },
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/Techmeme/status/2125065826143486448",
+   "domain": "x.com",
+   "author": {
+    "name": "Techmeme",
+    "handle": "Techmeme",
+    "avatar": "https://pbs.twimg.com/profile_images/1191943129823399936/ZvfTRAlg_200x200.jpg"
+   },
+   "text": "Sources: Jensen Huang disclosed additional affairs beyond the two already reported during his Sunday meeting with Nvidia's board, but was remorseful about them (Wall Street Journal)\n\n(Visit Techmeme dot com for the link and full context!)",
+   "date": 1795490149,
+   "media": [],
+   "links": []
+  }
+ ],
+ "article": {
+  "title": "طبق پستی که تک‌میم به نقل از منابع وال‌استریت ژورنال گذاشته، جنسن هوانگ توی جلسه روز یکشنبه‌اش با هیئت‌مدیره انویدیا، علاوه بر دو موردی که قبلاً گزارش شده بود، روابط دیگه‌ای رو هم باهاشون در میون گذاشته و از این بابت ابراز پشیمونی کرده",
+  "source_title": "Sources: Jensen Huang disclosed additional affairs beyond the two already reported during his Sunday meeting with Nvidia's board, but was…",
+  "body": [
+   "طبق پستی که تک‌میم به نقل از منابع وال‌استریت ژورنال گذاشته، جنسن هوانگ توی جلسه روز یکشنبه‌اش با هیئت‌مدیره انویدیا، علاوه بر دو موردی که قبلاً گزارش شده بود، روابط دیگه‌ای رو هم باهاشون در میون گذاشته و از این بابت ابراز پشیمونی کرده. البته اینجا فقط همین خلاصه کوتاه از خبر اومده و جزئیات بیشتری از متن اصلی گزارش در دسترس نیست."
+  ],
+  "why": null,
+  "tags": [
+   "انویدیا"
+  ]
+ },
+ "updated": "2026-11-24T14:46:03+00:00"
 }

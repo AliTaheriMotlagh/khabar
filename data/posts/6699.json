@@ -16,43 +16,6 @@
   "small": true
  },
  "gholam": null,
- "links": [
-  {
-   "kind": "tweet",
-   "url": "https://x.com/OfficialLoganK/status/2124938672399384681",
-   "domain": "x.com",
-   "author": {
-    "name": "Logan Kilpatrick",
-    "handle": "OfficialLoganK",
-    "avatar": "https://pbs.twimg.com/profile_images/1943787288955084800/QOl7OJMc_200x200.jpg"
-   },
-   "text": "Nice Gemini API quality of life update shipping today:\n\nYou can now pass PDFs, Office files (docs, slides, spreadsheets), audio, and video directly to the Gemini API and request only the pages, spreadsheet cells, media segments, and layers you need.\n\nRead more: https://blog.google/innovation-and-ai/technology/developers-tools/file-slicing-controls/",
-   "date": 1795459833,
-   "media": [],
-   "links": [
-    "https://blog.google/innovation-and-ai/technology/developers-tools/file-slicing-controls/"
-   ]
-  },
-  {
-   "kind": "link",
-   "url": "https://blog.google/innovation-and-ai/technology/developers-tools/file-slicing-controls/",
-   "domain": "blog.google",
-   "title": "Introducing file slicing controls in the Gemini API",
-   "description": "New file slicing controls and native Office file support in the Gemini API let agents inspect targeted slices across Google AI Studio and Vertex AI while paying only for…",
-   "image": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/Introducing-File-Slicing-Controls-2784x1566.width-1300.png",
-   "site": "Google"
-  }
- ],
- "article": {
-  "title": "Nice Gemini API quality of life update shipping today:",
-  "source_title": null,
-  "body": [],
-  "why": null,
-  "tags": [
-   "گوگل"
-  ]
- },
- "updated": "2026-11-24T05:07:41+00:00",
  "ai": {
   "title": "گوگل قابلیت برش فایل و پرداخت فقط برای بخش‌های استفاده‌شده را به Gemini API اضافه کرد",
   "short": "برش فایل در Gemini API",
@@ -146,5 +109,42 @@
    "src": "e5648eccf2ad",
    "added": 1
   }
- }
+ },
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/OfficialLoganK/status/2124938672399384681",
+   "domain": "x.com",
+   "author": {
+    "name": "Logan Kilpatrick",
+    "handle": "OfficialLoganK",
+    "avatar": "https://pbs.twimg.com/profile_images/1943787288955084800/QOl7OJMc_200x200.jpg"
+   },
+   "text": "Nice Gemini API quality of life update shipping today:\n\nYou can now pass PDFs, Office files (docs, slides, spreadsheets), audio, and video directly to the Gemini API and request only the pages, spreadsheet cells, media segments, and layers you need.\n\nRead more: https://blog.google/innovation-and-ai/technology/developers-tools/file-slicing-controls/",
+   "date": 1795459833,
+   "media": [],
+   "links": [
+    "https://blog.google/innovation-and-ai/technology/developers-tools/file-slicing-controls/"
+   ]
+  },
+  {
+   "kind": "link",
+   "url": "https://blog.google/innovation-and-ai/technology/developers-tools/file-slicing-controls/",
+   "domain": "blog.google",
+   "title": "Introducing file slicing controls in the Gemini API",
+   "description": "New file slicing controls and native Office file support in the Gemini API let agents inspect targeted slices across Google AI Studio and Vertex AI while paying only for…",
+   "image": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/Introducing-File-Slicing-Controls-2784x1566.width-1300.png",
+   "site": "Google"
+  }
+ ],
+ "article": {
+  "title": "Nice Gemini API quality of life update shipping today:",
+  "source_title": null,
+  "body": [],
+  "why": null,
+  "tags": [
+   "گوگل"
+  ]
+ },
+ "updated": "2026-11-24T14:46:03+00:00"
 }

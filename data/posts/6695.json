@@ -15,6 +15,13 @@
  ],
  "preview": null,
  "gholam": null,
+ "ai": {
+  "speech": {
+   "v": 1,
+   "src": "4d0af5ddd8b7",
+   "added": 3
+  }
+ },
  "links": [],
  "article": {
   "title": "Jensen is back in the office",
@@ -23,12 +30,5 @@
   "why": null,
   "tags": []
  },
- "updated": "2026-11-24T05:07:42+00:00",
- "ai": {
-  "speech": {
-   "v": 1,
-   "src": "4d0af5ddd8b7",
-   "added": 3
-  }
- }
+ "updated": "2026-11-24T14:46:04+00:00"
 }
