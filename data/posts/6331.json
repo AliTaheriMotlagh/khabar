@@ -118,6 +118,11 @@
    "model": "qwen3.5-9b-q4_k_m",
    "v": 2,
    "src": "acc720d72cab"
+  },
+  "speech": {
+   "v": 1,
+   "src": "7f918cf4490a",
+   "added": 2
   }
  }
 }
