@@ -13805,6 +13805,210 @@
    "name_en": "Coding Agent",
    "name_fa": "دستیار کدنویسی",
    "kind": "product"
+  },
+  {
+   "slug": "helena",
+   "name_en": "Helena",
+   "name_fa": "هلنا",
+   "kind": "product"
+  },
+  {
+   "slug": "telegram",
+   "name_en": "Telegram",
+   "name_fa": "تلگرام",
+   "kind": "product"
+  },
+  {
+   "slug": "jinspark",
+   "name_en": "JinSpark",
+   "name_fa": "جین‌اسپارک",
+   "kind": "company"
+  },
+  {
+   "slug": "genoffice",
+   "name_en": "GenOffice",
+   "name_fa": "جن آفیس",
+   "kind": "product"
+  },
+  {
+   "slug": "bending-spoons",
+   "name_en": "Bending Spoons",
+   "name_fa": "بندینگ اسپونس",
+   "kind": "company"
+  },
+  {
+   "slug": "the-ai-labs",
+   "name_en": "The AI labs",
+   "name_fa": "آزمایشگاه‌های هوش مصنوعی",
+   "kind": "company"
+  },
+  {
+   "slug": "alpamayo-2-super",
+   "name_en": "Alpamayo 2 Super",
+   "name_fa": "آلپامایو ۲ سوپر",
+   "kind": "model"
+  },
+  {
+   "slug": "ilya-sutskever",
+   "name_en": "Ilya Sutskever",
+   "name_fa": "ایلیا سوتسکور",
+   "kind": "person"
+  },
+  {
+   "slug": "safe-superintelligence",
+   "name_en": "Safe Superintelligence",
+   "name_fa": "سِیف سوپرانتلیجنس",
+   "kind": "company"
+  },
+  {
+   "slug": "flux-3-video",
+   "name_en": "FLUX 3 Video",
+   "name_fa": "فلکس ۳ ویدیو",
+   "kind": "product"
+  },
+  {
+   "slug": "verde",
+   "name_en": "Verde",
+   "name_fa": "ورده",
+   "kind": "product"
+  },
+  {
+   "slug": "lamb-labs",
+   "name_en": "Lamb Labs",
+   "name_fa": "لامب لبز",
+   "kind": "company"
+  },
+  {
+   "slug": "aisi",
+   "name_en": "AISI",
+   "name_fa": "آی‌آی‌اس‌آی",
+   "kind": "company"
+  },
+  {
+   "slug": "boatdev",
+   "name_en": "Boat.dev",
+   "name_fa": "بوت دات دِو",
+   "kind": "company"
+  },
+  {
+   "slug": "open-source-models",
+   "name_en": "Open Source Models",
+   "name_fa": "مدل‌های متن‌باز",
+   "kind": "product"
+  },
+  {
+   "slug": "omanta",
+   "name_en": "Omanta",
+   "name_fa": "اومنتا",
+   "kind": "company"
+  },
+  {
+   "slug": "alfredo-gonzalez",
+   "name_en": "Alfredo Gonzalez",
+   "name_fa": "آلفردو گونزالس",
+   "kind": "person"
+  },
+  {
+   "slug": "renad-hamidi",
+   "name_en": "Renad Hamidi",
+   "name_fa": "رناد حمیدی",
+   "kind": "person"
+  },
+  {
+   "slug": "ben-kaske",
+   "name_en": "Ben Kaske",
+   "name_fa": "بن کاسکا",
+   "kind": "person"
+  },
+  {
+   "slug": "blackwell-b200",
+   "name_en": "Blackwell B200",
+   "name_fa": "بلک‌ول B200",
+   "kind": "product"
+  },
+  {
+   "slug": "ai-in-biology",
+   "name_en": "AI-in-biology",
+   "name_fa": "هوش مصنوعی در زیست‌شناسی",
+   "kind": "model"
+  },
+  {
+   "slug": "daphne-koller",
+   "name_en": "Daphne Koller",
+   "name_fa": "دافنه کولر",
+   "kind": "person"
+  },
+  {
+   "slug": "insitro",
+   "name_en": "Insitro",
+   "name_fa": "اینسیترو",
+   "kind": "company"
+  },
+  {
+   "slug": "gilead",
+   "name_en": "Gilead",
+   "name_fa": "گیلاد",
+   "kind": "company"
+  },
+  {
+   "slug": "tarebio",
+   "name_en": "TareBio",
+   "name_fa": "تارابایو",
+   "kind": "company"
+  },
+  {
+   "slug": "bill-gates-foundation",
+   "name_en": "Bill Gates Foundation",
+   "name_fa": "بنیاد بیل گیتس",
+   "kind": "company"
+  },
+  {
+   "slug": "uci",
+   "name_en": "UCI",
+   "name_fa": "دانشگاه کالیفرنیا، آی‌سی‌آی",
+   "kind": "company"
+  },
+  {
+   "slug": "alex-heath",
+   "name_en": "Alex Heath",
+   "name_fa": "الکس هیث",
+   "kind": "person"
+  },
+  {
+   "slug": "pablo-groisman",
+   "name_en": "Pablo Groisman",
+   "name_fa": "پابلو گرویسمن",
+   "kind": "person"
+  },
+  {
+   "slug": "jasper-lu",
+   "name_en": "Jasper Lu",
+   "name_fa": "جاسپر لو",
+   "kind": "person"
+  },
+  {
+   "slug": "khoy-nagooin",
+   "name_en": "Khoy Nagooin",
+   "name_fa": "خوی نگوین",
+   "kind": "company"
+  },
+  {
+   "slug": "zinley",
+   "name_en": "Zinley",
+   "name_fa": "زینلی",
+   "kind": "product"
+  },
+  {
+   "slug": "ssi",
+   "name_en": "SSI",
+   "name_fa": "شرکت SSI",
+   "kind": "company"
+  },
+  {
+   "slug": "superintelligence",
+   "name_en": "Superintelligence",
+   "name_fa": "ابرهوش",
+   "kind": "model"
   }
  ]
 }
