@@ -14147,6 +14147,210 @@
    "name_en": "RTX 5090",
    "name_fa": "آر‌تی‌ایکس ۵۰۹۰",
    "kind": "product"
+  },
+  {
+   "slug": "black-forest-labs",
+   "name_en": "Black Forest Labs",
+   "name_fa": "بلک فارست لبز",
+   "kind": "company"
+  },
+  {
+   "slug": "flux-3",
+   "name_en": "FLUX 3",
+   "name_fa": "فلکس ۳",
+   "kind": "model"
+  },
+  {
+   "slug": "linkedin",
+   "name_en": "LinkedIn",
+   "name_fa": "لینکدین",
+   "kind": "company"
+  },
+  {
+   "slug": "citadel",
+   "name_en": "Citadel",
+   "name_fa": "سیتادل",
+   "kind": "company"
+  },
+  {
+   "slug": "enron",
+   "name_en": "Enron",
+   "name_fa": "انرون",
+   "kind": "company"
+  },
+  {
+   "slug": "ken-griffin",
+   "name_en": "Ken Griffin",
+   "name_fa": "کن گریفین",
+   "kind": "person"
+  },
+  {
+   "slug": "lucebox",
+   "name_en": "Lucebox",
+   "name_fa": "لوس‌باکس",
+   "kind": "product"
+  },
+  {
+   "slug": "nvidia-dgx-spark",
+   "name_en": "NVIDIA DGX Spark",
+   "name_fa": "دی‌جی‌ایکس اسپارک",
+   "kind": "product"
+  },
+  {
+   "slug": "revoy",
+   "name_en": "Revoy",
+   "name_fa": "رویوی",
+   "kind": "company"
+  },
+  {
+   "slug": "friend",
+   "name_en": "Friend",
+   "name_fa": "فرند",
+   "kind": "product"
+  },
+  {
+   "slug": "luma",
+   "name_en": "Luma",
+   "name_fa": "لوما",
+   "kind": "company"
+  },
+  {
+   "slug": "luma-agents",
+   "name_en": "Luma Agents",
+   "name_fa": "عامل‌های لوما",
+   "kind": "product"
+  },
+  {
+   "slug": "uni-1",
+   "name_en": "Uni-1",
+   "name_fa": "یونی-۱",
+   "kind": "model"
+  },
+  {
+   "slug": "science-one",
+   "name_en": "Science One",
+   "name_fa": "ساینس وان",
+   "kind": "product"
+  },
+  {
+   "slug": "frontier-ai-labs",
+   "name_en": "Frontier AI Labs",
+   "name_fa": "آزمایشگاه‌های پیشرو هوش مصنوعی",
+   "kind": "company"
+  },
+  {
+   "slug": "zoox",
+   "name_en": "Zoox",
+   "name_fa": "زوکس",
+   "kind": "company"
+  },
+  {
+   "slug": "dreamina",
+   "name_en": "Dreamina",
+   "name_fa": "دریمینا",
+   "kind": "company"
+  },
+  {
+   "slug": "mongolia",
+   "name_en": "Mongolia",
+   "name_fa": "مغولستان",
+   "kind": "company"
+  },
+  {
+   "slug": "european-commission",
+   "name_en": "European Commission",
+   "name_fa": "کمیسیون اروپا",
+   "kind": "company"
+  },
+  {
+   "slug": "ursula-von-der-leyen",
+   "name_en": "Ursula von der Leyen",
+   "name_fa": "اورسولا ون در لاین",
+   "kind": "person"
+  },
+  {
+   "slug": "keylars",
+   "name_en": "KeyLars",
+   "name_fa": "کیولایرز",
+   "kind": "company"
+  },
+  {
+   "slug": "deepseek-v4-flash-0731",
+   "name_en": "DeepSeek V4 Flash 0731",
+   "name_fa": "دیپ‌سیک V4 فلش ۰۷۳۱",
+   "kind": "model"
+  },
+  {
+   "slug": "dell",
+   "name_en": "Dell",
+   "name_fa": "دل",
+   "kind": "company"
+  },
+  {
+   "slug": "andrew-ng",
+   "name_en": "Andrew Ng",
+   "name_fa": "اندرو نگ",
+   "kind": "person"
+  },
+  {
+   "slug": "spotlight",
+   "name_en": "Spotlight",
+   "name_fa": "اسپات‌لایت",
+   "kind": "product"
+  },
+  {
+   "slug": "dasha",
+   "name_en": "Dasha",
+   "name_fa": "داشا",
+   "kind": "person"
+  },
+  {
+   "slug": "palette",
+   "name_en": "Palette",
+   "name_fa": "پالت",
+   "kind": "product"
+  },
+  {
+   "slug": "marble",
+   "name_en": "Marble",
+   "name_fa": "ماربل",
+   "kind": "product"
+  },
+  {
+   "slug": "dash-arjoun-chaligha",
+   "name_en": "Dash Arjoun Chaligha",
+   "name_fa": "داش آرجون چالی‌ها",
+   "kind": "person"
+  },
+  {
+   "slug": "nike",
+   "name_en": "Nike",
+   "name_fa": "نایکی",
+   "kind": "company"
+  },
+  {
+   "slug": "hyperslide",
+   "name_en": "Hyperslide",
+   "name_fa": "هایپرسلاید",
+   "kind": "product"
+  },
+  {
+   "slug": "hyperice",
+   "name_en": "Hyperice",
+   "name_fa": "هایپرآیس",
+   "kind": "company"
+  },
+  {
+   "slug": "qm",
+   "name_en": "QM",
+   "name_fa": "کیو ام",
+   "kind": "product"
+  },
+  {
+   "slug": "glm",
+   "name_en": "GLM",
+   "name_fa": "جی‌ال‌ام",
+   "kind": "company"
   }
  ]
 }
