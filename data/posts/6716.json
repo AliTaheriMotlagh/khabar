@@ -1,0 +1,66 @@
+{
+ "id": 6716,
+ "url": "https://t.me/dlmehr/6716",
+ "date": "2026-11-24T16:03:41+00:00",
+ "text": "https://fxtwitter.com/artificialanlys/status/2125069731103453556?a=DK_uXrMiW5GwDBAAoAA&s=52",
+ "forwarded_from": null,
+ "digest": false,
+ "hash": "2ee98eda9113",
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/artificialanlys/status/2125069731103453556?a=DK_uXrMiW5GwDBAAoAA&s=52",
+  "site": "🧵 Thread • FxTwitter",
+  "title": "Artificial Analysis (@ArtificialAnlys)",
+  "description": "↩\n@ArtificialAnlys\nNo single harness is best across models. Performance depends on the harness and model as a pair, and 9 of the 13 harnesses move three or more places between GPT-6 Luna and GLM-5.3-Flash.",
+  "image": "https://cdn4.telesco.pe/file/mU_-axjSRaYc9YCX4GkKSs-Zco4774QzIzXrH0QbLX6wR7--3iDBDatWlL2o-J_uhjgEF7oX7maRYXeKt9KIbGbzzeH7W8pLeYpQmUF97WbAnkc2KqMvbA8BFb-iOMASWflOL1aJc8cQ7LWPiqcgl4rlAia6aMyfK-pLyDcti4_QLixahjBKc-t-_9sKM14Ct2LYlMEhRz3snXR1jzoGtrDkp3s-xKE4x01SNtmrxqILhIuq-iW9BvRZTnBEVIoMDe2-Xr47BA5ezrcvh2sFQiJvY5S3K_pIYvg7s7f5CMGtHJIzXdXAmhPQ3Xk3yZl9dWgggBvT47ll8BNXWOZ9OA.jpg"
+ },
+ "gholam": {
+  "text": "رفیق، مثل این می‌مونه که یه کفش برای یه نفر مثل پرِ قو راحت باشه و پای یه نفر دیگه رو بزنه؛ توی دنیای ایجنت‌های کدنویسی هم ظاهراً همین خبره. 🤖 Artificial Analysis توی بخش جدید مقایسه هارنس‌ها (همون بسترهای اجرای مدل) روی شاخص Coding Agent Index نسخه ۲.۱، دو مدل GPT-6 Luna و GLM-5.3-Flash رو با حداکثر توان استدلال روی ۱۳ تا هارنس مختلف محک زده و می‌گه انتخاب ابزار روی هزینه بیشتر از نمره اثر می‌ذاره:\n\n• هیچ هارنسی همه‌فن‌حریف نیست: رتبه ۹ تا از ۱۳ هارنس بین این دو مدل، ۳ پله یا بیشتر جابه‌جا شده. مثلاً GPT-6 Luna بالاترین نمره‌اش (۲۶) رو توی Codex گرفته، ولی همون Codex برای GLM-5.3-Flash (با نمره ۲۸) رتبه آخر شده و جاش Claude Code و OpenCode با نمره ۳۹ صدر جدول نشستن.\n• اثر هارنس روی جیب بیشتر از نمره‌ست: نمره بیشتر هارنس‌ها توی هر مدل به هم نزدیک بوده، اما هزینه API هر تسک برای GPT-6 Luna از ۰.۱۱ دلار در Pi تا ۰.۶۲ دلار در Muse Code و برای GLM-5.3-Flash از ۰.۳۸ دلار در Mistral Vibe تا ۰.۹۱ دلار در Devin CLI نوسان داشته (البته خود سایت یادآوری کرده این رقم‌ها بر اساس تعرفه API و مصرف توکنه، نه پلن‌های اشتراکی).\n• یه قلق عجیب توی Codex: گزارش می‌گه GLM-5.3-Flash توی ۱۲ هارنس دیگه کامل و روان فکر می‌کنه، اما توی Codex یهو استدلالش تلگرافی و بریده‌بریده می‌شه (۵۲ هزار توکن خروجی در برابر ۹۷ تا ۲۰۲ هزار در بقیه)؛ بررسی‌هاشون نشون داده فقط تعریف ابزار exec_command توی Codex باعث این تغییر سبک در چند مدل دیگه هم می‌شه و احتمالاً به افت نمره‌اش اونجا دامن زده.\n\nخلاصه طبق این یافته‌ها، گرون‌ترین بستر لزوماً بهترین نمره رو نمی‌آره و باید دید مدلِ مورد نظرت با کدوم محیط جفت‌وجورتره.",
+  "date": "2026-11-24T16:04:26+00:00"
+ },
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/ArtificialAnlys/status/2125069731103453556",
+   "domain": "x.com",
+   "author": {
+    "name": "Artificial Analysis",
+    "handle": "ArtificialAnlys",
+    "avatar": "https://pbs.twimg.com/profile_images/2042402069320290304/A8C1lP07_200x200.jpg"
+   },
+   "text": "No single harness is best across models. Performance depends on the harness and model as a pair, and 9 of the 13 harnesses move three or more places between GPT-6 Luna and GLM-5.3-Flash.",
+   "date": 1795491080,
+   "media": [
+    {
+     "type": "image",
+     "src": "https://pbs.twimg.com/media/HX3C1C3aIAEIk0D.jpg?name=orig",
+     "ratio": 0.7435
+    },
+    {
+     "type": "image",
+     "src": "https://pbs.twimg.com/media/HX3C15GaMAA8Pan.png?name=orig",
+     "ratio": 0.7581
+    }
+   ],
+   "links": []
+  }
+ ],
+ "article": {
+  "title": "مثل این می‌مونه که یه کفش برای یه نفر مثل پرِ قو راحت باشه و پای یه نفر دیگه رو بزنه؛ توی دنیای ایجنت‌های کدنویسی هم ظاهراً همین خبره",
+  "source_title": "No single harness is best across models. Performance depends on the harness and model as a pair, and 9 of the 13 harnesses move three or…",
+  "body": [
+   "مثل این می‌مونه که یه کفش برای یه نفر مثل پرِ قو راحت باشه و پای یه نفر دیگه رو بزنه؛ توی دنیای ایجنت‌های کدنویسی هم ظاهراً همین خبره. 🤖 Artificial Analysis توی بخش جدید مقایسه هارنس‌ها (همون بسترهای اجرای مدل) روی شاخص Coding Agent Index نسخه ۲.۱، دو مدل GPT-6 Luna و GLM-5.3-Flash رو با حداکثر توان استدلال روی ۱۳ تا هارنس مختلف محک زده و می‌گه انتخاب ابزار روی هزینه بیشتر از نمره اثر می‌ذاره:",
+   "• هیچ هارنسی همه‌فن‌حریف نیست: رتبه ۹ تا از ۱۳ هارنس بین این دو مدل، ۳ پله یا بیشتر جابه‌جا شده. مثلاً GPT-6 Luna بالاترین نمره‌اش (۲۶) رو توی Codex گرفته، ولی همون Codex برای GLM-5.3-Flash (با نمره ۲۸) رتبه آخر شده و جاش Claude Code و OpenCode با نمره ۳۹ صدر جدول نشستن.",
+   "• اثر هارنس روی جیب بیشتر از نمره‌ست: نمره بیشتر هارنس‌ها توی هر مدل به هم نزدیک بوده، اما هزینه API هر تسک برای GPT-6 Luna از ۰.۱۱ دلار در Pi تا ۰.۶۲ دلار در Muse Code و برای GLM-5.3-Flash از ۰.۳۸ دلار در Mistral Vibe تا ۰.۹۱ دلار در Devin CLI نوسان داشته (البته خود سایت یادآوری کرده این رقم‌ها بر اساس تعرفه API و مصرف توکنه، نه پلن‌های اشتراکی).",
+   "• یه قلق عجیب توی Codex: گزارش می‌گه GLM-5.3-Flash توی ۱۲ هارنس دیگه کامل و روان فکر می‌کنه، اما توی Codex یهو استدلالش تلگرافی و بریده‌بریده می‌شه (۵۲ هزار توکن خروجی در برابر ۹۷ تا ۲۰۲ هزار در بقیه)؛ بررسی‌هاشون نشون داده فقط تعریف ابزار exec_command توی Codex باعث این تغییر سبک در چند مدل دیگه هم می‌شه و احتمالاً به افت نمره‌اش اونجا دامن زده."
+  ],
+  "why": "خلاصه طبق این یافته‌ها، گرون‌ترین بستر لزوماً بهترین نمره رو نمی‌آره و باید دید مدلِ مورد نظرت با کدوم محیط جفت‌وجورتره.",
+  "why_label": "حرف آخر",
+  "tags": [
+   "اوپن‌ای‌آی",
+   "کدنویسی",
+   "ایجنت"
+  ]
+ },
+ "updated": "2026-11-24T20:23:17+00:00"
+}

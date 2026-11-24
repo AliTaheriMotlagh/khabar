@@ -1,0 +1,60 @@
+{
+ "id": 6714,
+ "url": "https://t.me/dlmehr/6714",
+ "date": "2026-11-24T15:48:10+00:00",
+ "text": "https://fxtwitter.com/ahmedmm72234641/status/2124869402634129901?a=j5finyphh7es7oS-oNk&s=52",
+ "forwarded_from": null,
+ "digest": false,
+ "hash": "388e8f3d31b5",
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/ahmedmm72234641/status/2124869402634129901?a=j5finyphh7es7oS-oNk&s=52",
+  "site": "🧵 Thread • FxTwitter",
+  "title": "Ahmed Heakl (@ahmedmm72234641)",
+  "description": "Today we introduce Looped Weight-Space Programming!\n🚀\nWe asked Claude Opus 5.5 to solve hard mazes. It got only 26% right.\nThen we asked it to write a transformer that solves them, setting every weight directly.\nIt took just 39 minutes and $19. No training.…",
+  "image": "https://cdn4.telesco.pe/file/exdGkCq6ZfRIVxuef_NO-539T5PpO-qp7clzet6jKNxuAXISxe6qo5bnNbDDHDs-s614aiwgjosOAOG1R-R1hmdQp84WuwCxCw2buBgNH8qpyIBupiTGDpdGtnchUvE2-KYyC516kJdRVFGDaKNIQtaThot_Yjjc5kpLBeXUfWNvhfTBHkz66tiEgFqs8HcmbhFnI0fYbVBMViK_zkyyLqy2kqvomC-DfZpVFs2BwFtqOAU53NUbKdbtTt3GR7em7M6jy-W06TjLK9G_fpPbFKUUpMNMeWT6YrdX5QTVO3c30G9rFMh1O81Wx0zbIVpiyzpmM6bIlb8KP-knG53kng.jpg"
+ },
+ "gholam": {
+  "text": "سلام رفیق، یه پژوهش تازه از تیم MBZUAI Oryx منتشر شده به اسم «برنامه‌نویسی حلقه‌ای در فضای وزن‌ها»؛ داستانش اینه که وقتی از مدل Claude Opus 5.5 خواستن مازهای سخت رو مستقیم حل کنه فقط ۲۶ درصد درست جواب داد، ولی وقتی بهش گفتن به جاش یه ترنسفورمر کوچیک طراحی کنه و تمام وزن‌هاش رو خودش دستی بنویسه، بدون هیچ آموزشی یه مدل ساخت که به گفته خودشون ۱۰۰ درصد مازهای تست رو حل کرد. 🤖\n\nمثل این می‌مونه که نتونی یه مسیر پیچیده رو تو ذهنت حساب کنی، ولی یه چرخ‌دنده ساده بسازی که یک کار تکراری رو انقدر توی حلقه بچرخونه تا به درِ خروج برسه؛ اینجا هم یه بلوک کوچیک هی تکرار می‌شه و هر دور یک قدم مسیر رو جلو می‌بره.\n\n• به گزارش پژوهشگرها، ساخت این مدل ماز ۳۹ دقیقه و حدود ۱۹ دلار هزینه داشته و حتی نسخه ۹۲۸ وزنی‌ش هم صددرصد مازهای تست (تا ابعاد ۱۰۰ در ۱۰۰) رو حل کرده؛ در حالی که آموزشِ همین معماری با روش معمول صفر درصد جواب داده و مدل‌های آموزش‌دیده مثل LDT با حدود ۱۹۰۰ برابر وزن بیشتر به ۹۹.۸ درصد و EBR در آزمایش‌های این تیم به ۹۳.۵ درصد رسیدن.\n• توی آزمایش برج هانوی هم، کلود ظرف ۲۷ دقیقه و با حدود ۵ دلار یه مدل ۳۶۸۶ وزنی نوشته که پازل ۲۰ دیسکی (بیش از یک میلیون حرکت) رو بی‌غلط می‌ره؛ در حالی که تو نمودار گزارش، مدل‌های استدلالی دوروبر ۷ تا ۸ دیسک کم می‌آرن. این تیم می‌گه روی سودوکو و چند تست سخت دیگه هم به ۱۰۰ درصد رسیده.\n• نکته مهم دیگه‌ای که توی وبلاگشون روش تاکید کردن شفافیت مدله؛ چون وزن‌ها به جای جعبه سیاهِ آموزش، دستی چیده شدن، می‌شه قدم‌به‌قدم حالت‌های میانی‌ش رو خوند و دقیق فهمید چطور به جواب می‌رسه.",
+  "date": "2026-11-24T15:48:50+00:00"
+ },
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/ahmedmm72234641/status/2124869402634129901",
+   "domain": "x.com",
+   "author": {
+    "name": "Ahmed Heakl",
+    "handle": "ahmedmm72234641",
+    "avatar": "https://pbs.twimg.com/profile_images/2105295342665441280/F0C0Tcmn_200x200.jpg"
+   },
+   "text": "Today we introduce Looped Weight-Space Programming! 🚀\n\nWe asked Claude Opus 5.5 to solve hard mazes. It got only 26% right.\n\nThen we asked it to write a transformer that solves them, setting every weight directly.\n\nIt took just 39 minutes and $19. No training.\n\nThe model it wrote solves 100% of our test mazes. 🧵",
+   "date": 1795443318,
+   "media": [
+    {
+     "type": "image",
+     "src": "https://pbs.twimg.com/media/HX0NcgHa4AEx_jT.jpg?name=orig",
+     "ratio": 0.4302
+    }
+   ],
+   "links": []
+  }
+ ],
+ "article": {
+  "title": "یه پژوهش تازه از تیم MBZUAI Oryx منتشر شده به اسم «برنامه‌نویسی حلقه‌ای در فضای وزن‌ها»",
+  "source_title": "Today we introduce Looped Weight-Space Programming! 🚀",
+  "body": [
+   "یه پژوهش تازه از تیم MBZUAI Oryx منتشر شده به اسم «برنامه‌نویسی حلقه‌ای در فضای وزن‌ها»؛ داستانش اینه که وقتی از مدل Claude Opus 5.5 خواستن مازهای سخت رو مستقیم حل کنه فقط ۲۶ درصد درست جواب داد، ولی وقتی بهش گفتن به جاش یه ترنسفورمر کوچیک طراحی کنه و تمام وزن‌هاش رو خودش دستی بنویسه، بدون هیچ آموزشی یه مدل ساخت که به گفته خودشون ۱۰۰ درصد مازهای تست رو حل کرد. 🤖",
+   "مثل این می‌مونه که نتونی یه مسیر پیچیده رو تو ذهنت حساب کنی، ولی یه چرخ‌دنده ساده بسازی که یک کار تکراری رو انقدر توی حلقه بچرخونه تا به درِ خروج برسه؛ اینجا هم یه بلوک کوچیک هی تکرار می‌شه و هر دور یک قدم مسیر رو جلو می‌بره.",
+   "• به گزارش پژوهشگرها، ساخت این مدل ماز ۳۹ دقیقه و حدود ۱۹ دلار هزینه داشته و حتی نسخه ۹۲۸ وزنی‌ش هم صددرصد مازهای تست (تا ابعاد ۱۰۰ در ۱۰۰) رو حل کرده؛ در حالی که آموزشِ همین معماری با روش معمول صفر درصد جواب داده و مدل‌های آموزش‌دیده مثل LDT با حدود ۱۹۰۰ برابر وزن بیشتر به ۹۹.۸ درصد و EBR در آزمایش‌های این تیم به ۹۳.۵ درصد رسیدن.",
+   "• توی آزمایش برج هانوی هم، کلود ظرف ۲۷ دقیقه و با حدود ۵ دلار یه مدل ۳۶۸۶ وزنی نوشته که پازل ۲۰ دیسکی (بیش از یک میلیون حرکت) رو بی‌غلط می‌ره؛ در حالی که تو نمودار گزارش، مدل‌های استدلالی دوروبر ۷ تا ۸ دیسک کم می‌آرن. این تیم می‌گه روی سودوکو و چند تست سخت دیگه هم به ۱۰۰ درصد رسیده.",
+   "• نکته مهم دیگه‌ای که توی وبلاگشون روش تاکید کردن شفافیت مدله؛ چون وزن‌ها به جای جعبه سیاهِ آموزش، دستی چیده شدن، می‌شه قدم‌به‌قدم حالت‌های میانی‌ش رو خوند و دقیق فهمید چطور به جواب می‌رسه."
+  ],
+  "why": null,
+  "tags": [
+   "کدنویسی",
+   "آنتروپیک"
+  ]
+ },
+ "updated": "2026-11-24T20:23:17+00:00"
+}

@@ -1,0 +1,80 @@
+{
+ "id": 6718,
+ "url": "https://t.me/dlmehr/6718",
+ "date": "2026-11-24T17:35:02+00:00",
+ "text": "https://fxtwitter.com/amiruci/status/2125267897606099436?a=YK96CFzQSyK7w4cqGyg&s=52",
+ "forwarded_from": null,
+ "digest": false,
+ "hash": "b98f8c08d23a",
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/amiruci/status/2125267897606099436?a=YK96CFzQSyK7w4cqGyg&s=52",
+  "site": "FxTwitter",
+  "title": "Amir Haghighat (@amiruci)",
+  "description": "We post-trained four US open-weight models with @harvey on multi-step legal tasks. Before this, no model, closed or open, had reached a 30% all-pass rate on Harvey’s Legal Agent Benchmark. Post-trained Muse Spark Open now hits 30.3%, above every closed model…",
+  "image": "https://cdn4.telesco.pe/file/anl6IJxkzbBhoWVrCOxv6H_efAMs9F742w9lIu5tvV3MTOIX3vN1w1ul1-uiUn4IDK1ON9EIEXZ25hMPjitjG79E2-klwsNBrF8Lq3Wz_Ko1W-kwRbkB-VwQiQUffq7rNn8QUgJzVJhcijZyQq4eupH7zZDSvOwAnbO3pctC8nanl8qwc-6_8XDzk94jC9zlbJtOKgfzn2Bnfmkxv2kp4Y6i2JVP0qyuJ-M07pPgD9XU0ygn1K9EzhE1vwHjGDygCgRFsTWOJAnjMfDWayJ0NzJD14gRM5gGRCmU_I_9x_fGcTbSLAyv9Vg9AkbufjExfSQvOrvg5AAiGdW6Eu2_sA.jpg",
+  "small": true
+ },
+ "gholam": {
+  "text": "رفقا، توی دنیای هوش مصنوعی حقوقی یه آمار تازه منتشر شده. صاحب حساب amiruci نوشته با همکاری تیم هاروی (Harvey)، روی چهار مدل اوپن‌ویتِ آمریکایی برای کارهای چندمرحله‌ایِ حقوقی آموزشِ تکمیلی انجام دادن؛ انگار مدل‌ها رو فرستادن کلاس تقویتی و حسابی راه افتادن! ⚖️ به گفته نویسنده، قبلاً هیچ مدل باز یا بسته‌ای توی بنچمارک ایجنت حقوقی هاروی به نرخ قبولیِ کاملِ ۳۰ درصد نرسیده بود، اما مدل Muse Spark Open بعد از این مرحله به ۳۰.۳ درصد رسیده و از همه مدل‌های بسته‌ای که ارزیابی کردن جلو زده.\n\nطبق این پست، بقیه مدل‌ها هم پیشرفت چشمگیری داشتن و هر چهار مدل توی ارزیابیِ این تیم از GPT-6.2 Astra و Claude Fable 5.2 بهتر عمل کردن:\n• مدل Inkling 2 Small از ۱۱.۷ درصد به ۲۳.۳ درصد رسیده.\n• مدل Nemotron 3.5 Super VL از ۱.۳ درصد به ۲۱.۸ درصد جهش داشته.\n• مدل Beam 1.0 هم از ۰.۰ درصد به ۲۰.۸ درصد رسیده.\n\nالبته جزئیاتِ مقاله پیوست‌شده در دسترس نیست و این ارقام بر اساس گزارشِ خودِ نویسنده‌ست.",
+  "date": "2026-11-24T17:35:25+00:00"
+ },
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/amiruci/status/2125267897606099436",
+   "domain": "x.com",
+   "author": {
+    "name": "Amir Haghighat",
+    "handle": "amiruci",
+    "avatar": "https://pbs.twimg.com/profile_images/1950417377084264448/YpPQ2zxf_200x200.jpg"
+   },
+   "text": "We post-trained four US open-weight models with @harvey on multi-step legal tasks. Before this, no model, closed or open, had reached a 30% all-pass rate on Harvey’s Legal Agent Benchmark. Post-trained Muse Spark Open now hits 30.3%, above every closed model we evaluated.\n\nInkling 2 Small went from 11.7% to 23.3%, Nemotron 3.5 Super VL from 1.3% to 21.8%, and Beam 1.0 from 0.0% to 20.8%. All four outperformed GPT-6.2 Astra and Claude Fable 5.2. Special 💚 to the Harvey team.",
+   "date": 1795538327,
+   "media": [],
+   "links": [],
+   "quote": {
+    "author": {
+     "name": "Niko",
+     "handle": "nikogrupen",
+     "avatar": "https://pbs.twimg.com/profile_images/1856491268966363139/LnabJUp5_200x200.jpg"
+    },
+    "text": "https://x.com/i/article/2125019823180554240",
+    "date": 1795536062,
+    "media": [],
+    "links": [
+     "https://x.com/i/article/2125019823180554240"
+    ]
+   }
+  }
+ ],
+ "article": {
+  "title": "توی دنیای هوش مصنوعی حقوقی یه آمار تازه منتشر شده",
+  "source_title": "We post-trained four US open-weight models with @harvey on multi-step legal tasks. Before this, no model, closed or open, had reached a 30%…",
+  "body": [
+   "توی دنیای هوش مصنوعی حقوقی یه آمار تازه منتشر شده. صاحب حساب amiruci نوشته با همکاری تیم هاروی (Harvey)، روی چهار مدل اوپن‌ویتِ آمریکایی برای کارهای چندمرحله‌ایِ حقوقی آموزشِ تکمیلی انجام دادن؛ انگار مدل‌ها رو فرستادن کلاس تقویتی و حسابی راه افتادن! ⚖️ به گفته نویسنده، قبلاً هیچ مدل باز یا بسته‌ای توی بنچمارک ایجنت حقوقی هاروی به نرخ قبولیِ کاملِ ۳۰ درصد نرسیده بود، اما مدل Muse Spark Open بعد از این مرحله به ۳۰.۳ درصد رسیده و از همه مدل‌های بسته‌ای که ارزیابی کردن جلو زده.",
+   "طبق این پست، بقیه مدل‌ها هم پیشرفت چشمگیری داشتن و هر چهار مدل توی ارزیابیِ این تیم از GPT-6.2 Astra و Claude Fable 5.2 بهتر عمل کردن:",
+   "• مدل Inkling 2 Small از ۱۱.۷ درصد به ۲۳.۳ درصد رسیده.",
+   "• مدل Nemotron 3.5 Super VL از ۱.۳ درصد به ۲۱.۸ درصد جهش داشته.",
+   "• مدل Beam 1.0 هم از ۰.۰ درصد به ۲۰.۸ درصد رسیده."
+  ],
+  "why": "البته جزئیاتِ مقاله پیوست‌شده در دسترس نیست و این ارقام بر اساس گزارشِ خودِ نویسنده‌ست.",
+  "why_label": "حرف آخر",
+  "tags": [
+   "متن‌باز"
+  ]
+ },
+ "updated": "2026-11-24T20:23:16+00:00",
+ "ai": {
+  "title": "چهار مدل اوپن‌ویت حقوقی با همکاری هاروی به ۳۰ درصد رسیدند",
+  "short": "مدل‌های حقوقی هاروی",
+  "topics": [
+   "متن‌باز",
+   "آنتروپیک"
+  ],
+  "type": "پژوهش و مقاله",
+  "model": "qwen3.5-9b-q4_k_m",
+  "v": 2,
+  "src": "5a2635b19fe2"
+ }
+}

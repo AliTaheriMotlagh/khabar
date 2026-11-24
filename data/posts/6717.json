@@ -1,0 +1,83 @@
+{
+ "id": 6717,
+ "url": "https://t.me/dlmehr/6717",
+ "date": "2026-11-24T16:30:44+00:00",
+ "text": "https://fxtwitter.com/amasad/status/2124969305674748175?a=Ci6EwMsBl1WOLLwSk9Y&s=52",
+ "forwarded_from": null,
+ "digest": false,
+ "hash": "7055f8b0400a",
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/amasad/status/2124969305674748175?a=Ci6EwMsBl1WOLLwSk9Y&s=52",
+  "site": "FxTwitter",
+  "title": "Amjad Masad (@amasad)",
+  "description": "New research from Replit on scaling laws for agent swarms.\nWe show that scaling the number of agents can yield dramatic performance gains, but unlike traditional scaling laws, more compute doesn't necessarily translate into better results, and how agents…",
+  "image": "https://cdn4.telesco.pe/file/uzM1T3BMWbmA6HQ4_UvxxGjeXEpJKQV2bifBOlJ1ctm29osiJEXjXlXhouSuRNKw2rbGhwKdandXQ7TaMzF_EW2Aj52Jr_XUDdjjm5vGRqR2qO1vdoLH38KYJ8rm3zwbMN2L96THyEOVv4uBXlyb3q6rhLgJDk43Oka5ANJaszLAJBV3YQxkPTYfMYGs8rgsn8RRpWXGV1U6xfAjJjmoFOjvMZ1JpOSVRudw-NAc6v_7XrDFgOF2B3kg_13r1yL37NR5_lc53yFy5OiAFEAVvHUDKVzg83lFgD6Ygr3I2Honf7tTAKYix_kl6I7cPKbNb24zw0WxkWRHN6rry2k35w.jpg"
+ },
+ "gholam": {
+  "text": "رفقا، شرکت ریپلیت تو یه پژوهش تازه (منتشرشده در ۱۹ نوامبر ۲۰۲۶) سراغ قوانین مقیاس‌پذیری تیم‌های ایجنت هوش مصنوعی رفته و می‌گه اینجا دیگه همیشه این‌طوری نیست که با اضافه کردن نیرو، کار بهتر جلو بره. درست مثل یه آشپزخونه شلوغ که اگه هر کاری باید از زیر دست یه سرآشپز رد بشه، با زیاد شدن شاگردها فقط صف دستورات سنگین‌تر می‌شه و دست‌وپای هم رو می‌بندن! ریپلیت همراه این تحقیق، بنچمارک Optimization-Bench رو هم متن‌باز کرده تا بدون امکان تقلب، سرعت‌بخشی واقعی ایجنت‌ها به کدهای متن‌باز رو در بازه دو ساعته بسنجن. 🧑‍💻\n\n• طبق اعلام ریپلیت و نمودار آزمایش روی کتابخونه NumPy، مدل Claude Opus 5.5 از سرعت‌بخشی ۳.۷ برابری با یک ایجنت، با تیم ۳۲ تایی به ۱۸.۹۲ برابر رسیده و مدل Sonnet 5.5 هم با ۳۲ ایجنت به ۸.۶۳ برابر رسیده.\n• در مقابل، مدل GPT-6.2 Astra به‌تنهایی از همه قوی‌تر بوده، اما از ۸ ایجنت به بعد افت کرده و با ۳۲ ایجنت روی NumPy به ۶.۵۳ برابر پایین اومده.\n• نویسنده‌های گزارش می‌گن تیم‌هایی که خودجوش ساختار غیرمتمرکز گرفتن و از تابلوی مشترک استفاده کردن بهتر از تیم‌های متمرکز نتیجه گرفتن، و قابلیت موازی‌سازیِ خود مساله هم خیلی تعیین‌کننده بوده؛ به گفته ریپلیت، هوش بالای تک‌نفره لزوماً نشونه خوبی برای کار تیمی نیست.",
+  "date": "2026-11-24T16:31:22+00:00"
+ },
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/amasad/status/2124969305674748175",
+   "domain": "x.com",
+   "author": {
+    "name": "Amjad Masad",
+    "handle": "amasad",
+    "avatar": "https://pbs.twimg.com/profile_images/1897858917507776512/TRVTyKFk_200x200.jpg"
+   },
+   "text": "New research from Replit on scaling laws for agent swarms. \n\nWe show that scaling the number of agents can yield dramatic performance gains, but unlike traditional scaling laws, more compute doesn't necessarily translate into better results, and how agents organize themselves matters.\n\n- Given a fixed two-hour window, Opus 5.5 went from a 3.7x speedup on NumPy with one agent to 18.9x with 32 agents.\n\n- GPT-6.2 Astra was the strongest solo agent but exhibited negative scaling beyond 8 agents.\n\n- Models spontaneously developed different organizational structures. Decentralized swarms scaled better than those that relied on centralized coordination.\n\n- The parallelizability of the problem was a strong predictor of swarm performance.\n\n- Interestingly, individual model intelligence is a poor predictor of collective intelligence.\n\nWe’re also open-sourcing Optimization-Bench to advance research into this new dimension of inference-time scaling.\n\nhttps://frontier.replit.com/throwing-headcount-at-the-problem/",
+   "date": 1795467137,
+   "media": [
+    {
+     "type": "image",
+     "src": "https://pbs.twimg.com/media/HX1nsaWbEAA-gtY.jpg?name=orig",
+     "ratio": 0.5658
+    }
+   ],
+   "links": [
+    "https://frontier.replit.com/throwing-headcount-at-the-problem/"
+   ]
+  },
+  {
+   "kind": "link",
+   "url": "https://frontier.replit.com/throwing-headcount-at-the-problem/",
+   "domain": "frontier.replit.com",
+   "title": "Throwing Headcount at the Problem",
+   "description": "Early research found multi-agent systems often trailed a single agent once coordination costs were accounted for. On NumPy, one Claude Opus 5.5 agent made the workloads 3.7× faster in two hours, while a swarm of 32 Opus agents reached 18.9×.",
+   "image": "https://frontier.replit.com/article-images/throwing-headcount-at-the-problem/hero.webp",
+   "site": "Replit Engineering"
+  }
+ ],
+ "article": {
+  "title": "شرکت ریپلیت تو یه پژوهش تازه (منتشرشده در ۱۹ نوامبر ۲۰۲۶) سراغ قوانین مقیاس‌پذیری تیم‌های ایجنت هوش مصنوعی رفته و می‌گه اینجا دیگه همیشه این‌طوری نیست که با اضافه کردن نیرو، کار بهتر جلو بره",
+  "source_title": "New research from Replit on scaling laws for agent swarms.",
+  "body": [
+   "شرکت ریپلیت تو یه پژوهش تازه (منتشرشده در ۱۹ نوامبر ۲۰۲۶) سراغ قوانین مقیاس‌پذیری تیم‌های ایجنت هوش مصنوعی رفته و می‌گه اینجا دیگه همیشه این‌طوری نیست که با اضافه کردن نیرو، کار بهتر جلو بره. درست مثل یه آشپزخونه شلوغ که اگه هر کاری باید از زیر دست یه سرآشپز رد بشه، با زیاد شدن شاگردها فقط صف دستورات سنگین‌تر می‌شه و دست‌وپای هم رو می‌بندن! ریپلیت همراه این تحقیق، بنچمارک Optimization-Bench رو هم متن‌باز کرده تا بدون امکان تقلب، سرعت‌بخشی واقعی ایجنت‌ها به کدهای متن‌باز رو در بازه دو ساعته بسنجن. 🧑‍💻",
+   "• طبق اعلام ریپلیت و نمودار آزمایش روی کتابخونه NumPy، مدل Claude Opus 5.5 از سرعت‌بخشی ۳.۷ برابری با یک ایجنت، با تیم ۳۲ تایی به ۱۸.۹۲ برابر رسیده و مدل Sonnet 5.5 هم با ۳۲ ایجنت به ۸.۶۳ برابر رسیده.",
+   "• در مقابل، مدل GPT-6.2 Astra به‌تنهایی از همه قوی‌تر بوده، اما از ۸ ایجنت به بعد افت کرده و با ۳۲ ایجنت روی NumPy به ۶.۵۳ برابر پایین اومده.",
+   "• نویسنده‌های گزارش می‌گن تیم‌هایی که خودجوش ساختار غیرمتمرکز گرفتن و از تابلوی مشترک استفاده کردن بهتر از تیم‌های متمرکز نتیجه گرفتن، و قابلیت موازی‌سازیِ خود مساله هم خیلی تعیین‌کننده بوده؛ به گفته ریپلیت، هوش بالای تک‌نفره لزوماً نشونه خوبی برای کار تیمی نیست."
+  ],
+  "why": null,
+  "tags": [
+   "ایجنت",
+   "کدنویسی"
+  ]
+ },
+ "updated": "2026-11-24T20:23:16+00:00",
+ "ai": {
+  "title": "پژوهش ریپلیت: تیم‌های ایجنت هوشمندتر از مدل‌های تک‌نفره نیستند",
+  "short": "قوانین مقیاس‌پذیری ایجنت",
+  "topics": [
+   "ایجنت",
+   "متن‌باز",
+   "آنتروپیک"
+  ],
+  "type": "پژوهش و مقاله",
+  "model": "qwen3.5-9b-q4_k_m",
+  "v": 2,
+  "src": "8bc679e82df2"
+ }
+}

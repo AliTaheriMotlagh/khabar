@@ -1,0 +1,66 @@
+{
+ "id": 6721,
+ "url": "https://t.me/dlmehr/6721",
+ "date": "2026-11-24T19:36:40+00:00",
+ "text": "https://fxtwitter.com/cognition/status/2125305349414523061?a=kTjcEkVqOfEFK7Hf-Hc&s=52",
+ "forwarded_from": null,
+ "digest": false,
+ "hash": "9166f4b3408c",
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/cognition/status/2125305349414523061?a=kTjcEkVqOfEFK7Hf-Hc&s=52",
+  "site": "🧵 Thread • FxTwitter",
+  "title": "Cognition (@cognition)",
+  "description": "Introducing SWE-2.1, our latest coding model.\nLike its predecessor, SWE-2.1 is trained with pure reinforcement learning on Kimi K3. It delivers large gains over SWE-2 across a wide range of benchmarks.\nSWE-2.1 is free for all Devin Pro, Max, and Teams for…",
+  "image": "https://cdn4.telesco.pe/file/LudIaVeQX223we1X7P4i5j8aYcwnlELZVePYMPY4ABVo_MwGZkqyiRCms8J_JS1JOfhisr0XNUzuKavrgg03Fk684QAZ9rLwFOCLXCrGjQ57sNgeSgux1UYLelWaax2Pmatz-R3V_YXZeuawUana_7v6GPaWs0vLdniqkqxbf9ON2dE01D8xNAG-LzoskSzNQKtNqo3qjsvklNknTkfh065yyeBqTuKzrbm9_BMYr1TPpsKw_s2biMhPBGRG06GUJa94CybSZ7l01SptuaNguoB8v56OrNCcjr_0woqDlEC0k1YK6gXuBqh9jTVzDbAQpYBI1OpYU63J7QVmKwvbfA.jpg"
+ },
+ "gholam": {
+  "text": "رفیق، شرکت Cognition از جدیدترین مدل کدنویسی خودش به اسم SWE-2.1 رونمایی کرده. اون‌طور که خودشون اعلام کردن، این دست‌پخت تازه هم مثل نسخه قبلی با یادگیری تقویتی خالص روی Kimi K3 آموزش دیده و به گفته این شرکت توی طیف وسیعی از بنچمارک‌ها نسبت به SWE-2 جهش بزرگی داشته؛ هرچند توی همین متن کوتاه عدد و رقم دقیقی از تست‌ها نیومده. ضمناً خبر دادن که تا دو هفته آینده، استفاده از SWE-2.1 برای تمام مشترکای Devin Pro، Max و Teams رایگانه. 💻",
+  "date": "2026-11-24T19:37:02+00:00"
+ },
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/cognition/status/2125305349414523061",
+   "domain": "x.com",
+   "author": {
+    "name": "Cognition",
+    "handle": "cognition",
+    "avatar": "https://pbs.twimg.com/profile_images/1765909640364068865/MvH-m0gd_200x200.jpg"
+   },
+   "text": "Introducing SWE-2.1, our latest coding model.\n\nLike its predecessor, SWE-2.1 is trained with pure reinforcement learning on Kimi K3. It delivers large gains over SWE-2 across a wide range of benchmarks.\n\nSWE-2.1 is free for all Devin Pro, Max, and Teams for the next two weeks.",
+   "date": 1795547256,
+   "media": [
+    {
+     "type": "image",
+     "src": "https://pbs.twimg.com/media/HX6Zir5XYAAdQlK.jpg?name=orig",
+     "ratio": 0.4814
+    }
+   ],
+   "links": []
+  }
+ ],
+ "article": {
+  "title": "شرکت Cognition از جدیدترین مدل کدنویسی خودش به اسم SWE-2.1 رونمایی کرده",
+  "source_title": "Introducing SWE-2.1, our latest coding model.",
+  "body": [
+   "شرکت Cognition از جدیدترین مدل کدنویسی خودش به اسم SWE-2.1 رونمایی کرده. اون‌طور که خودشون اعلام کردن، این دست‌پخت تازه هم مثل نسخه قبلی با یادگیری تقویتی خالص روی Kimi K3 آموزش دیده و به گفته این شرکت توی طیف وسیعی از بنچمارک‌ها نسبت به SWE-2 جهش بزرگی داشته؛ هرچند توی همین متن کوتاه عدد و رقم دقیقی از تست‌ها نیومده. ضمناً خبر دادن که تا دو هفته آینده، استفاده از SWE-2.1 برای تمام مشترکای Devin Pro، Max و Teams رایگانه. 💻"
+  ],
+  "why": null,
+  "tags": [
+   "کدنویسی"
+  ]
+ },
+ "updated": "2026-11-24T20:23:12+00:00",
+ "ai": {
+  "title": "شرکت Cognition مدل کدنویسی SWE-2.1 را با آموزش روی Kimi K3 معرفی کرد",
+  "short": "مدل کدنویسی SWE-2.1",
+  "topics": [
+   "کدنویسی"
+  ],
+  "type": "ابزار و محصول",
+  "model": "qwen3.5-9b-q4_k_m",
+  "v": 2,
+  "src": "3b905866dfb7"
+ }
+}

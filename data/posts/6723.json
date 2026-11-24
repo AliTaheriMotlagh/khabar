@@ -1,0 +1,85 @@
+{
+ "id": 6723,
+ "url": "https://t.me/dlmehr/6723",
+ "date": "2026-11-24T19:46:16+00:00",
+ "text": "https://fxtwitter.com/whitecircle/status/2125274360369815717?a=X5fHysO4P2mBqHFp03Y&s=52",
+ "forwarded_from": null,
+ "digest": false,
+ "hash": "8e75b0b8ea18",
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/whitecircle/status/2125274360369815717?a=X5fHysO4P2mBqHFp03Y&s=52",
+  "site": "🧵 Thread • FxTwitter",
+  "title": "White Circle (@whitecircle)",
+  "description": "We’re running the largest post-training competition ever!\nTogether with:\n@OpenAI @GoogleDeepMind @MistralAI @modal @baseten @Lovable @OpenRouter @nebiusai @awscloud @OpenAIDevs @googlegemma\nSign up now at http://whitecircle.com/halo/competition\n- $1.5m…",
+  "image": null
+ },
+ "gholam": {
+  "text": "رفقا، شرکت White Circle با همکاری یه جمع حسابی از اسم‌ورسم‌دارهای هوش مصنوعی مثل OpenAI، گوگل دیپ‌مایند، میسترال، انویدیا و AWS یه مسابقه آنلاین جهانی راه انداخته و خودشون می‌گن بزرگ‌ترین مسابقه پست‌ترینینگ (Post-training) تا امروزه. کل ماجرا هم روی فریم‌ورک متن‌باز Halo می‌چرخه که خود White Circle برای آموزش مدل‌های زبانی و چندوجهی مستقیماً روی مدل‌های Hugging Face ساخته؛ یعنی شرکت‌کننده‌ها هم می‌تونن سرعت و بهینه‌بودن Halo رو بهتر کنن، هم باهاش یه مدل رو برای یه کار دلخواه آموزش بدن. خلاصه بساط پردازش رایگان پهنه تا اهل فنش بدون غصه سخت‌افزار یه خودی نشون بدن 🚀\n\n• طبق اعلام سایت مسابقه، تیم‌های ۱ تا ۴ نفره (پژوهشگرها، مهندس‌ها، دانشمندان هوش مصنوعی و دانشجوهای دکتری) تا ۳۰ نوامبر برای ثبت‌نام رایگان و گرفتن تاییدیه فرصت دارن و خود رقابت از ۱ تا ۱۰ دسامبر به‌صورت آنلاین برگزار می‌شه.\n• تو صفحه مسابقه از ۲۰۰ هزار دلار جایزه نقدی (از جمله ۳۰، ۱۵ و ۱۰ هزار دلار برای سه تیم برتر کلی) و ۱.۵ میلیون دلار اعتبار پردازش و API رایگان برای تیم‌های پذیرفته‌شده خبر داده شده؛ یعنی نیازی نیست حتماً GPU شخصی داشته باشی.\n• کدها و تنظیمات ارسالی باید متن‌باز باشن تا برگزارکننده‌ها بین ۱۱ تا ۱۷ دسامبر همه‌شون رو دوباره روی سخت‌افزار خودشون اجرا و داوری کنن و ۱۸ دسامبر برنده‌ها مشخص بشن.",
+  "date": "2026-11-24T19:46:56+00:00"
+ },
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/whitecircle/status/2125274360369815717",
+   "domain": "x.com",
+   "author": {
+    "name": "White Circle",
+    "handle": "whitecircle",
+    "avatar": "https://pbs.twimg.com/profile_images/2073239756415385601/qVEk4KtH_200x200.jpg"
+   },
+   "text": "We’re running the largest post-training competition ever!\n\nTogether with:\n@OpenAI @GoogleDeepMind @MistralAI @modal @baseten @Lovable @OpenRouter @nebiusai @awscloud @OpenAIDevs @googlegemma\n\nSign up now at http://whitecircle.com/halo/competition\n\n- $1.5m in compute for participants\n- $200k+ in cash prizes\n- Online, worldwide, Dec 1–10",
+   "date": 1795539867,
+   "media": [
+    {
+     "type": "video",
+     "src": "https://video.twimg.com/amplify_video/2125274305885835264/vid/avc1/1280x720/5UpKCXs5bn75s_oT.mp4?tag=29",
+     "poster": "https://pbs.twimg.com/amplify_video_thumb/2125274305885835264/img/ZOdx02nc7gB_SArI.jpg",
+     "ratio": 0.5625,
+     "duration": 47.5,
+     "gif": false
+    }
+   ],
+   "links": [
+    "http://whitecircle.com/halo/competition"
+   ]
+  },
+  {
+   "kind": "link",
+   "url": "https://whitecircle.com/halo/competition",
+   "domain": "whitecircle.com",
+   "title": "Halo competition: the largest post-training competition ever",
+   "description": "Post-train open models with Halo, online Dec 1 – 10. $200k in cash prizes, plus compute and credits from our partners. Apply by Nov 30.",
+   "image": "https://whitecircle.com/halo/competition/opengraph-image?7dc37dc5d4a18cc1",
+   "site": "whitecircle.com"
+  }
+ ],
+ "article": {
+  "title": "شرکت White Circle با همکاری یه جمع حسابی از اسم‌ورسم‌دارهای هوش مصنوعی مثل OpenAI، گوگل دیپ‌مایند، میسترال، انویدیا و AWS یه مسابقه آنلاین جهانی راه انداخته و خودشون می‌گن بزرگ‌ترین مسابقه پست‌ترینینگ (Post-training) تا امروزه",
+  "source_title": "We’re running the largest post-training competition ever!",
+  "body": [
+   "شرکت White Circle با همکاری یه جمع حسابی از اسم‌ورسم‌دارهای هوش مصنوعی مثل OpenAI، گوگل دیپ‌مایند، میسترال، انویدیا و AWS یه مسابقه آنلاین جهانی راه انداخته و خودشون می‌گن بزرگ‌ترین مسابقه پست‌ترینینگ (Post-training) تا امروزه. کل ماجرا هم روی فریم‌ورک متن‌باز Halo می‌چرخه که خود White Circle برای آموزش مدل‌های زبانی و چندوجهی مستقیماً روی مدل‌های Hugging Face ساخته؛ یعنی شرکت‌کننده‌ها هم می‌تونن سرعت و بهینه‌بودن Halo رو بهتر کنن، هم باهاش یه مدل رو برای یه کار دلخواه آموزش بدن. خلاصه بساط پردازش رایگان پهنه تا اهل فنش بدون غصه سخت‌افزار یه خودی نشون بدن 🚀",
+   "• طبق اعلام سایت مسابقه، تیم‌های ۱ تا ۴ نفره (پژوهشگرها، مهندس‌ها، دانشمندان هوش مصنوعی و دانشجوهای دکتری) تا ۳۰ نوامبر برای ثبت‌نام رایگان و گرفتن تاییدیه فرصت دارن و خود رقابت از ۱ تا ۱۰ دسامبر به‌صورت آنلاین برگزار می‌شه.",
+   "• تو صفحه مسابقه از ۲۰۰ هزار دلار جایزه نقدی (از جمله ۳۰، ۱۵ و ۱۰ هزار دلار برای سه تیم برتر کلی) و ۱.۵ میلیون دلار اعتبار پردازش و API رایگان برای تیم‌های پذیرفته‌شده خبر داده شده؛ یعنی نیازی نیست حتماً GPU شخصی داشته باشی.",
+   "• کدها و تنظیمات ارسالی باید متن‌باز باشن تا برگزارکننده‌ها بین ۱۱ تا ۱۷ دسامبر همه‌شون رو دوباره روی سخت‌افزار خودشون اجرا و داوری کنن و ۱۸ دسامبر برنده‌ها مشخص بشن."
+  ],
+  "why": null,
+  "tags": [
+   "اوپن‌ای‌آی",
+   "گوگل",
+   "انویدیا"
+  ]
+ },
+ "updated": "2026-11-24T20:23:11+00:00",
+ "ai": {
+  "title": "مسابقه بزرگ پست‌ترینینگ White Circle با ۲۰۰ هزار دلار جایزه و ۱.۵ میلیون دلار اعتبار رایگان",
+  "short": "مسابقه پست‌ترینینگ White Circle",
+  "topics": [
+   "متن‌باز"
+  ],
+  "type": "خبر",
+  "model": "qwen3.5-9b-q4_k_m",
+  "v": 2,
+  "src": "465726e3f6fb"
+ }
+}
