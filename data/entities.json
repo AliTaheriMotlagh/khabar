@@ -13487,6 +13487,174 @@
    "name_en": "TRIBE v2",
    "name_fa": "تریب v2",
    "kind": "model"
+  },
+  {
+   "slug": "philarchive",
+   "name_en": "PhilArchive",
+   "name_fa": "فیلوآرشیو",
+   "kind": "product"
+  },
+  {
+   "slug": "poetiq",
+   "name_en": "Poetiq",
+   "name_fa": "پوئتیق",
+   "kind": "company"
+  },
+  {
+   "slug": "glm-52",
+   "name_en": "GLM 5.2",
+   "name_fa": "گل‌ام ۵.۲",
+   "kind": "model"
+  },
+  {
+   "slug": "swe-bench-pro",
+   "name_en": "SWE-bench Pro",
+   "name_fa": "اس‌وی‌ای-بنچ پرو",
+   "kind": "model"
+  },
+  {
+   "slug": "iros-2026",
+   "name_en": "IROS 2026",
+   "name_fa": "کنفرانس بین‌المللی رباتیک ۲۰۲۶",
+   "kind": "company"
+  },
+  {
+   "slug": "sharpa",
+   "name_en": "Sharpa",
+   "name_fa": "شارپا",
+   "kind": "product"
+  },
+  {
+   "slug": "darpa",
+   "name_en": "DARPA",
+   "name_fa": "دارپا",
+   "kind": "company"
+  },
+  {
+   "slug": "lift-challenge",
+   "name_en": "Lift Challenge",
+   "name_fa": "چالش لیفت",
+   "kind": "product"
+  },
+  {
+   "slug": "adam-fary",
+   "name_en": "Adam Fary",
+   "name_fa": "آدام فرای",
+   "kind": "person"
+  },
+  {
+   "slug": "t-mobile",
+   "name_en": "T-Mobile",
+   "name_fa": "تی‌موبایل",
+   "kind": "company"
+  },
+  {
+   "slug": "verizon",
+   "name_en": "Verizon",
+   "name_fa": "ورایزن",
+   "kind": "company"
+  },
+  {
+   "slug": "att",
+   "name_en": "AT&T",
+   "name_fa": "ای‌تی‌اندی",
+   "kind": "company"
+  },
+  {
+   "slug": "next-slide",
+   "name_en": "Next Slide",
+   "name_fa": "نکست اسلاید",
+   "kind": "product"
+  },
+  {
+   "slug": "grok-imagine-image-20",
+   "name_en": "Grok Imagine Image 2.0",
+   "name_fa": "گرک امیج اینمجز ۲",
+   "kind": "model"
+  },
+  {
+   "slug": "automode",
+   "name_en": "Automode",
+   "name_fa": "اتومود",
+   "kind": "model"
+  },
+  {
+   "slug": "sidney-runcle",
+   "name_en": "Sidney Runcle",
+   "name_fa": "سیدنی رانکل",
+   "kind": "person"
+  },
+  {
+   "slug": "open-source-long-chain",
+   "name_en": "Open Source Long Chain",
+   "name_fa": "اوپن‌سورس لانگ‌چین",
+   "kind": "company"
+  },
+  {
+   "slug": "rlm",
+   "name_en": "RLM",
+   "name_fa": "مدل زبانی بازگشتی",
+   "kind": "model"
+  },
+  {
+   "slug": "genspark-hardware",
+   "name_en": "Genspark Hardware",
+   "name_fa": "سخت‌افزار جنسپارک",
+   "kind": "product"
+  },
+  {
+   "slug": "source-foundry",
+   "name_en": "Source Foundry",
+   "name_fa": "سورس فاوندری",
+   "kind": "company"
+  },
+  {
+   "slug": "situational-awareness",
+   "name_en": "Situational Awareness",
+   "name_fa": "سیتویشنال آورنس",
+   "kind": "company"
+  },
+  {
+   "slug": "stanford",
+   "name_en": "Stanford",
+   "name_fa": "استنفورد",
+   "kind": "company"
+  },
+  {
+   "slug": "kiss-sorcar",
+   "name_en": "KISS Sorcar",
+   "name_fa": "کیس سورکار",
+   "kind": "product"
+  },
+  {
+   "slug": "sqlite",
+   "name_en": "SQLite",
+   "name_fa": "اس‌کیو‌آی‌تی",
+   "kind": "product"
+  },
+  {
+   "slug": "doug",
+   "name_en": "Doug",
+   "name_fa": "داگ",
+   "kind": "model"
+  },
+  {
+   "slug": "grok-voice",
+   "name_en": "Grok Voice",
+   "name_fa": "گراک وویس",
+   "kind": "product"
+  },
+  {
+   "slug": "brain-computer-interface",
+   "name_en": "Brain-Computer Interface",
+   "name_fa": "رابط مغز و رایانه",
+   "kind": "product"
+  },
+  {
+   "slug": "wireless-communications",
+   "name_en": "Wireless Communications",
+   "name_fa": "ارتباطات بی‌سیم",
+   "kind": "product"
   }
  ]
 }
