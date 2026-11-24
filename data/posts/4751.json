@@ -160,6 +160,11 @@
    "model": "qwen3.5-9b-q4_k_m",
    "v": 2,
    "src": "23f2dfb74525"
+  },
+  "speech": {
+   "v": 1,
+   "src": "8b7249873f0b",
+   "added": 1
   }
  }
 }
