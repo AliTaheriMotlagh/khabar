@@ -1,0 +1,61 @@
+{
+ "id": 6731,
+ "url": "https://t.me/dlmehr/6731",
+ "date": "2026-11-25T02:18:30+00:00",
+ "text": "https://fxtwitter.com/sebastienbubeck/status/2125402576145572334?a=iaqAP0uktk6Ab_xQDd0&s=52",
+ "forwarded_from": null,
+ "digest": false,
+ "hash": "ea40989a3d19",
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/sebastienbubeck/status/2125402576145572334?a=iaqAP0uktk6Ab_xQDd0&s=52",
+  "site": "🧵 Thread • FxTwitter",
+  "title": "Sebastien Bubeck (@SebastienBubeck)",
+  "description": "As part of the October 6 release we had a particularly clean advance on the matrix multiplication exponent, with a new upper bound of 9/4. Since then, the model has been working on a LOWER BOUND for this exponent. This is already pretty crazy since NOTHING…",
+  "image": "https://cdn4.telesco.pe/file/LzoezEiOuEVlYZeC62FDgft22lijM4WLxPsujexOQyiYIVrubDmDhGVSXWEcTE2yU1JzHvVKl8mAoovgj44GKmrZrpCNZRMdDA0D3o1BK018W86cQputpBmaFKD6HXU94tXHeIxIQnmoB1JGYs9LdAUkJQaVF4185x8acssyNNzYH-xSdJI6E0t3hGyKBa6DWmvQ3FThW396X3dUI-6JdlBFnAE5K1dLZvGn1PG-ojLP7srBfWoMJg75c294444ecq00deZzbLmqjkjhUEMXKcS2caBYun5aF7QWz8ksnjjOexnkaJ0-igOgKeY2GGKIHhmat1TG8zjy8e2FZjexgQ.jpg",
+  "small": true
+ },
+ "gholam": {
+  "text": "سلام رفقا! سباستین بوبک تو یه رشته‌توییت خبر خیلی بزرگی از دنیای ریاضی و کامپیوتر اعلام کرده و گفته بعد از اینکه تو نسخهٔ ۶ اکتبر برای «توان ضرب ماتریس‌ها» یه کران بالای ۹/۴ پیدا کرده بودن، مدلشون رفته سراغ کران پایین و حالا اعلام کردن که ۹/۴ دقیقاً کرانِ بسته و دقیق این توانه 🤯 به گفتهٔ بوبک، قبلاً هیچ کران پایینی براش معلوم نبوده و خودشم فکر نمی‌کرده تو طول عمرش ببینه که یه جورایی دست این مسئله رو از بالا و پایین ببندن. اون اضافه کرده بر اساس یه نتیجهٔ قدیمی‌تر از یین تات لی و همکارانش، این یافته یعنی مسائل برنامه‌ریزی خطی هم حالا می‌تونن در زمان n به توان ۹/۴ و به‌صورت «قویاً چندجمله‌ای» حل بشن. البته توی همین دو تا توییت فعلاً فقط خود این اعلامیه اومده و خبری از جزئیات فنی یا متن اثباتش نیست.",
+  "date": "2026-11-25T02:18:53+00:00"
+ },
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/SebastienBubeck/status/2125402576145572334",
+   "domain": "x.com",
+   "author": {
+    "name": "Sebastien Bubeck",
+    "handle": "SebastienBubeck",
+    "avatar": "https://pbs.twimg.com/profile_images/1709609135321583616/6bXuF85D_200x200.jpg"
+   },
+   "text": "As part of the October 6 release we had a particularly clean advance on the matrix multiplication exponent, with a new upper bound of 9/4. Since then, the model has been working on a LOWER BOUND for this exponent. This is already pretty crazy since NOTHING was known for lower bounds! Today we announced that actually 9/4 is tight ... This is really the kind of result that I never thought I would see in my lifetime.\n\n(btw, by an \"old\" result of Yin Tat Lee and collaborators this also implies that linear programs can be solved in time n^{9/4}.)",
+   "date": 1795570436,
+   "media": [],
+   "links": []
+  }
+ ],
+ "article": {
+  "title": "سباستین بوبک تو یه رشته‌توییت خبر خیلی بزرگی از دنیای ریاضی و کامپیوتر اعلام کرده و گفته بعد از اینکه تو نسخهٔ ۶ اکتبر برای «توان ضرب ماتریس‌ها» یه کران بالای ۹/۴ پیدا کرده بودن، مدلشون رفته سراغ…",
+  "source_title": "As part of the October 6 release we had a particularly clean advance on the matrix multiplication exponent, with a new upper bound of 9/4.…",
+  "body": [
+   "سباستین بوبک تو یه رشته‌توییت خبر خیلی بزرگی از دنیای ریاضی و کامپیوتر اعلام کرده و گفته بعد از اینکه تو نسخهٔ ۶ اکتبر برای «توان ضرب ماتریس‌ها» یه کران بالای ۹/۴ پیدا کرده بودن، مدلشون رفته سراغ کران پایین و حالا اعلام کردن که ۹/۴ دقیقاً کرانِ بسته و دقیق این توانه 🤯 به گفتهٔ بوبک، قبلاً هیچ کران پایینی براش معلوم نبوده و خودشم فکر نمی‌کرده تو طول عمرش ببینه که یه جورایی دست این مسئله رو از بالا و پایین ببندن. اون اضافه کرده بر اساس یه نتیجهٔ قدیمی‌تر از یین تات لی و همکارانش، این یافته یعنی مسائل برنامه‌ریزی خطی هم حالا می‌تونن در زمان n به توان ۹/۴ و به‌صورت «قویاً چندجمله‌ای» حل بشن. البته توی همین دو تا توییت فعلاً فقط خود این اعلامیه اومده و خبری از جزئیات فنی یا متن اثباتش نیست."
+  ],
+  "why": null,
+  "tags": [
+   "علم"
+  ]
+ },
+ "updated": "2026-11-25T03:36:52+00:00",
+ "ai": {
+  "title": "سباستین بوبک کران دقیق ۹/۴ برای توان ضرب ماتریس‌ها را اعلام کرد",
+  "short": "کران ۹/۴ ضرب ماتریس",
+  "topics": [
+   "علم"
+  ],
+  "type": "پژوهش و مقاله",
+  "model": "qwen3.5-9b-q4_k_m",
+  "v": 2,
+  "src": "5013df5dac24"
+ }
+}

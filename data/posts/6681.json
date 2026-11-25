@@ -12,7 +12,7 @@
   "site": "FxTwitter",
   "title": "Jakub Pachocki (@merettm)",
   "description": "We decided to provide more transparency into pretraining progress at OpenAI for the sake of moving toward shared safety bars. In “Perplexity and Intelligence” I argue for common limits based on perplexity and other measurements, with progress beyond them…",
-  "image": "https://cdn4.telesco.pe/file/m1rSBFdP08VttiWYSerMY5GQXNtU31IAEYo-yOnwpVt9yF8qWnidXEJh4Sk0JS1QWDz2_mANe8kD5gNp23hWp5rSpXECdKXCrCfGJrpZ9tvZXSHragceUcirTCfwlFXVU8Y67kdPtYbUjbe6ZXvMwGrOe09nmrPusdCiFrZCFGtbvb7pb4LwGraEAIo4CGIUtmut4WsSl2cWGDCu3UZtF7JyT3I_FWOQtTv4lhs182mvLzFXcWuZYZAzkarB6MQU7Wz6qRDFpM9S0ujOD1wtfcFNdfTQfvCJZk5ReAA4PPidPcpQEVm90St5Q5lPjh0QeyLUpNb8keANrRJW0IV6Mw.jpg"
+  "image": "https://cdn4.telesco.pe/file/ZQ8ZiYEStzP04m_QSAW-VEOf4mKB-pd8sU6QxxUPIjbwpJoVhFNvVen_mn60zcvhbSlqqLj_qcvI-haKtWJaoWDuD-LZbLEENCwzCQrsPIahnbBKf_IJOpvQwyqynvdhaU0dI96M0eO7yWgUAkLjLy1AKbXU6h9xrnTOyNvDgFdvzXCsVRUxO1y2rPayjpSjMzzv4BzkM_1EYswqifLO8xoopJk9EIlVXT7w9zmmDsXN6eWM-xV56beTk6oqS4kVSrllIAaVvGhZWMijFJvUds5ZM5q1zBLy3-iMxJ6mENGOATTWUlt1ncE8yRnt6xUyYzClFvvTkto2uDJRH0LRMQ.jpg"
  },
  "gholam": {
   "text": "رفیق، اوپن‌ای‌آی برای اینکه راه برای استانداردهای ایمنی مشترک باز بشه، اومده آمار پیشرفت پیش‌آموزش مدل‌هاش رو با معیار «پرپلکسیتی» (دقت مدل در حدس زدن کلمه بعدی) منتشر کرده؛ یه جورایی می‌گه قبل از اینکه زیر کاپوت موتور قوی‌تری ببندیم، باید روی ترمز و آمپرهای نظارتی هم‌قسم بشیم 🚦. نویسنده این یادداشت پیشنهاد داده شرکت‌های پیشرو روی یک مرز مشترک توافق کنن و تا وقتی ابزارهای فهم و پایش رفتار هوش مصنوعی به یک نقطه مطمئن نرسیده، از اون سقف عبور نکنن.\n\n• طبق نمودار و گزارش اوپن‌ای‌آی، پایین اومدن این عدد از GPT-3.5 تا مدل‌هایی مثل GPT-6.2 Astra و یک مدل داخلی جدید، با قابلیت‌هایی مثل کدنویسی، مهارت امنیت سایبری و طبق برچسب نمودارش، حل یک مسئله ریاضی «جایزه هزاره» در حوالی ۰.۷۶ همراه بوده.\n• نویسنده احتمال می‌ده از سال ۲۰۲۷ کمکِ خود هوش مصنوعی به تحقیقات، پیشرفت پیش‌آموزش رو خیلی سریع‌تر کنه و در بازه ۰.۶۸ تا ۰.۷۰ قابلیت‌های ناشناخته‌ای ظاهر بشه، در حالی که روش‌های فعلی نظارت و ممیزی ممکنه هم‌پاش نیان و حتی ضعیف‌تر بشن.\n• خود مقاله هم اشاره کرده که این معیار بی‌نقص نیست؛ مقایسه بین آزمایشگاه‌ها به خاطر تفاوت داده‌ها سخته، پیشرفت‌های بعد از پیش‌آموزش مثل استدلال زنجیره‌ای رو نشون نمی‌ده و کف نهایی این شاخص هم هنوز مشخص نیست.",
@@ -132,5 +132,5 @@
    "اوپن‌ای‌آی"
   ]
  },
- "updated": "2026-11-24T14:46:04+00:00"
+ "updated": "2026-11-25T03:36:56+00:00"
 }

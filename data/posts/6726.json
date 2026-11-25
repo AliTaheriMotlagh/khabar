@@ -1,0 +1,85 @@
+{
+ "id": 6726,
+ "url": "https://t.me/dlmehr/6726",
+ "date": "2026-11-24T21:04:17+00:00",
+ "text": "https://fxtwitter.com/openai/status/2125334383490105601?a=fxd0USELVTItnH_8x68&s=52",
+ "forwarded_from": null,
+ "digest": false,
+ "hash": "480ab9015bd1",
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/openai/status/2125334383490105601?a=fxd0USELVTItnH_8x68&s=52",
+  "site": "🧵 Thread • FxTwitter",
+  "title": "OpenAI (@OpenAI)",
+  "description": "We’re sharing a new preprint showing wet lab validation of intrinsic protein design capabilities of the GPT-6 family of models.\nOur models can design new protein shapes and sequences using reasoning and code, without calling specialized biology models to…",
+  "image": null
+ },
+ "gholam": {
+  "text": "رفقا، اوپن‌ای‌آی یه پیش‌مقاله و گزارش تازه منتشر کرده و گفته مدل‌های خانواده GPT-6 می‌تونن بدون کمک گرفتن از مدل‌های تخصصیِ زیست‌شناسی، فقط با استدلال و کدنویسی، شکل سه‌بعدی و توالی پروتئین‌های جدید طراحی کنن. به گفته این شرکت، خوبیِ مدل همه‌کاره اینه که پژوهشگر به جای سروکله زدن با چندتا ابزار تخصصی مختلف، می‌تونه با زبان ساده و تغییر پرامپت (مثلاً اینکه پروتئین کجا بچسبه یا چندتا مارپیچ داشته باشه) طراحی رو هدایت کنه؛ یه جورایی مثل اینه که به جای یک جعبه آچار جورواجور، کارت با یه آچار فرانسه راه بیفته. 🧬\n\n• در آزمون‌های کامپیوتری، مدل تحقیقاتی داخلیِ جدیدترشون توی خیلی از بخش‌ها هم‌تراز یا بهتر از مدل‌های تخصصی عمل کرده، ولی به گفته خودشون پیش‌بینی ساختار کامل پروتئین هنوز نقطه ضعف واضح این مدل‌هاست.\n• در آزمایشگاه و با همکاری شرکت Onava، از ۳۲۲ مینی‌پروتئین که شکلشون رو نسخه پیش‌انتشار GPT-6.2 طراحی کرده و مدل‌های تخصصی کار توالی و انتخابشون رو انجام داده بودن، ۳۵ مورد (۱۰٫۹ درصد) به پنج هدف مشخص متصل شدن.\n• توی آزمایش‌های دیگه، از ۱۰۷ پروتئین با توالی‌های جدید پیشنهادی GPT-6.2 روی سه شکل قبلی، ۱۴ مورد اتصال نشون دادن و بخش زیادی از آنتی‌بادی‌های بازطراحی‌شده هم تونستن اتصالشون رو حفظ کنن.\n\nالبته اوپن‌ای‌آی تاکید کرده این پژوهش فعلاً در حد اثبات ایده است؛ هنوز آزمایش نشده که این پروتئین‌ها بعد از اتصال کار مفیدی هم انجام می‌دن یا نه و نرخ موفقیتش هم از گزارش مدل تخصصی RFdiffusion پایین‌تر بوده (هرچند نوع فیلتر کردنِ نمونه‌ها هم روی این عدد تاثیر داره).",
+  "date": "2026-11-24T21:04:41+00:00"
+ },
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/OpenAI/status/2125334383490105601",
+   "domain": "x.com",
+   "author": {
+    "name": "OpenAI",
+    "handle": "OpenAI",
+    "avatar": "https://pbs.twimg.com/profile_images/1885410181409820672/ztsaR0JW_200x200.jpg"
+   },
+   "text": "We’re sharing a new preprint showing wet lab validation of intrinsic protein design capabilities of the GPT-6 family of models. \n\nOur models can design new protein shapes and sequences using reasoning and code, without calling specialized biology models to generate them.\n\nhttps://openai.com/index/gpt-6-models-demonstrate-intrinsic-protein-design-capabilities/",
+   "date": 1795554178,
+   "media": [
+    {
+     "type": "video",
+     "src": "https://video.twimg.com/amplify_video/2125331261908717568/vid/avc1/480x360/C2ZFSTZjWlsQiy6Q.mp4?tag=29",
+     "poster": "https://pbs.twimg.com/amplify_video_thumb/2125331261908717568/img/jrWnfbvTT7Sv4iSN.jpg",
+     "ratio": 0.75,
+     "duration": 6,
+     "gif": false
+    }
+   ],
+   "links": [
+    "https://openai.com/index/gpt-6-models-demonstrate-intrinsic-protein-design-capabilities/"
+   ]
+  },
+  {
+   "kind": "link",
+   "url": "https://openai.com/index/gpt-6-models-demonstrate-intrinsic-protein-design-capabilities/",
+   "domain": "openai.com",
+   "title": "GPT-6 models demonstrate intrinsic protein-design capabilities",
+   "description": "GPT-6 models design protein structures and sequences using reasoning and code. Lab tests found evidence of binding across five targets.",
+   "image": "https://images.ctfassets.net/kftzwdyauwt9/Eg5mCwwaA3KqnznOVCh0n/8e6deaef25fd508d9853ff86a95187c1/gpt-6-models-demonstrate-intrinsic-protein-design-capabilities-social.png?w=1600&h=900&fit=fill",
+   "site": "OpenAI"
+  }
+ ],
+ "article": {
+  "title": "اوپن‌ای‌آی یه پیش‌مقاله و گزارش تازه منتشر کرده و گفته مدل‌های خانواده GPT-6 می‌تونن بدون کمک گرفتن از مدل‌های تخصصیِ زیست‌شناسی، فقط با استدلال و کدنویسی، شکل سه‌بعدی و توالی پروتئین‌های جدید طراحی کنن",
+  "source_title": "We’re sharing a new preprint showing wet lab validation of intrinsic protein design capabilities of the GPT-6 family of models.",
+  "body": [
+   "اوپن‌ای‌آی یه پیش‌مقاله و گزارش تازه منتشر کرده و گفته مدل‌های خانواده GPT-6 می‌تونن بدون کمک گرفتن از مدل‌های تخصصیِ زیست‌شناسی، فقط با استدلال و کدنویسی، شکل سه‌بعدی و توالی پروتئین‌های جدید طراحی کنن. به گفته این شرکت، خوبیِ مدل همه‌کاره اینه که پژوهشگر به جای سروکله زدن با چندتا ابزار تخصصی مختلف، می‌تونه با زبان ساده و تغییر پرامپت (مثلاً اینکه پروتئین کجا بچسبه یا چندتا مارپیچ داشته باشه) طراحی رو هدایت کنه؛ یه جورایی مثل اینه که به جای یک جعبه آچار جورواجور، کارت با یه آچار فرانسه راه بیفته. 🧬",
+   "• در آزمون‌های کامپیوتری، مدل تحقیقاتی داخلیِ جدیدترشون توی خیلی از بخش‌ها هم‌تراز یا بهتر از مدل‌های تخصصی عمل کرده، ولی به گفته خودشون پیش‌بینی ساختار کامل پروتئین هنوز نقطه ضعف واضح این مدل‌هاست.",
+   "• در آزمایشگاه و با همکاری شرکت Onava، از ۳۲۲ مینی‌پروتئین که شکلشون رو نسخه پیش‌انتشار GPT-6.2 طراحی کرده و مدل‌های تخصصی کار توالی و انتخابشون رو انجام داده بودن، ۳۵ مورد (۱۰٫۹ درصد) به پنج هدف مشخص متصل شدن.",
+   "• توی آزمایش‌های دیگه، از ۱۰۷ پروتئین با توالی‌های جدید پیشنهادی GPT-6.2 روی سه شکل قبلی، ۱۴ مورد اتصال نشون دادن و بخش زیادی از آنتی‌بادی‌های بازطراحی‌شده هم تونستن اتصالشون رو حفظ کنن."
+  ],
+  "why": "البته اوپن‌ای‌آی تاکید کرده این پژوهش فعلاً در حد اثبات ایده است؛ هنوز آزمایش نشده که این پروتئین‌ها بعد از اتصال کار مفیدی هم انجام می‌دن یا نه و نرخ موفقیتش هم از گزارش مدل تخصصی RFdiffusion پایین‌تر بوده (هرچند نوع فیلتر کردنِ نمونه‌ها هم روی این عدد تاثیر داره).",
+  "why_label": "حرف آخر",
+  "tags": [
+   "اوپن‌ای‌آی",
+   "علم"
+  ]
+ },
+ "updated": "2026-11-25T03:36:55+00:00",
+ "ai": {
+  "title": "اوپن‌ای‌آی مدل GPT-6 را برای طراحی پروتئین معرفی کرد: ۱۰ درصد موفقیت در آزمایشگاه",
+  "short": "GPT-6 برای طراحی پروتئین",
+  "topics": [
+   "اوپن‌ای‌آی"
+  ],
+  "type": "پژوهش و مقاله",
+  "model": "qwen3.5-9b-q4_k_m",
+  "v": 2,
+  "src": "3676b9a95060"
+ }
+}

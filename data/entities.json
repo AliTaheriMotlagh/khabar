@@ -14477,6 +14477,24 @@
    "name_en": "Adin Adl",
    "name_fa": "اد لادلو",
    "kind": "person"
+  },
+  {
+   "slug": "scout",
+   "name_en": "Scout",
+   "name_fa": "اسکات",
+   "kind": "model"
+  },
+  {
+   "slug": "inkling-2",
+   "name_en": "Inkling 2",
+   "name_fa": "اینکلینگ ۲",
+   "kind": "model"
+  },
+  {
+   "slug": "sp-500",
+   "name_en": "S&P 500",
+   "name_fa": "ایس‌اند‌پی ۵۰۰",
+   "kind": "product"
   }
  ]
 }
