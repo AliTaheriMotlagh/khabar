@@ -102,6 +102,13 @@
    "model": "qwen3.5-9b-q4_k_m",
    "v": 2,
    "src": "0392d892a8ca"
+  },
+  "en": {
+   "title": "Slides uploaded for Math 2.0 lecture at Caltech",
+   "short": "Math 2.0 slides uploaded at Caltech",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "26c23675cd22"
   }
  }
 }

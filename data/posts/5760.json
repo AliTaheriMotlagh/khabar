@@ -126,6 +126,13 @@
    "v": 1,
    "src": "e040db2b7f13",
    "added": 1
+  },
+  "en": {
+   "title": "Claude Dashboards and Claude Motion enter beta today",
+   "short": "Claude Dashboards and Motion enter beta",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "bbdd69740f5e"
   }
  }
 }

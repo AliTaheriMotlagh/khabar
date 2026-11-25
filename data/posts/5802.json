@@ -119,6 +119,13 @@
    "model": "qwen3.5-9b-q4_k_m",
    "v": 2,
    "src": "9c4fe93039ec"
+  },
+  "en": {
+   "title": "Google introduces Code Comprehension round using Gemini in interviews",
+   "short": "Google adds AI round to interviews",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "63169e899064"
   }
  }
 }

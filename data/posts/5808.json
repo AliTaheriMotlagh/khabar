@@ -118,6 +118,13 @@
    "model": "qwen3.5-9b-q4_k_m",
    "v": 2,
    "src": "ad9591d8fa04"
+  },
+  "en": {
+   "title": "Philadelphia police criticise Anthropic over rogue AI fake murder tip",
+   "short": "Police criticise Anthropic over rogue AI tip",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "a003472330ee"
   }
  }
 }

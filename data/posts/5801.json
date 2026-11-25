@@ -137,6 +137,13 @@
    "model": "qwen3.5-9b-q4_k_m",
    "v": 2,
    "src": "29a748b85731"
+  },
+  "en": {
+   "title": "WSJ: Anthropic CEO Dario Amodei Asked Meta For Chips, Google Cuts Compute",
+   "short": "WSJ: Anthropic Asked Meta, Google Cuts Compute",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "285469f0a7e5"
   }
  }
 }

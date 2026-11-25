@@ -115,6 +115,13 @@
    "model": "qwen3.5-9b-q4_k_m",
    "v": 2,
    "src": "1b2041e846f9"
+  },
+  "en": {
+   "title": "Call center jobs shrank 4% annually after 15 years of growth",
+   "short": "Call center jobs shrinking 4% annually",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "5c35097812e5"
   }
  }
 }

@@ -125,6 +125,13 @@
    "v": 1,
    "src": "8950033c5643",
    "added": 2
+  },
+  "en": {
+   "title": "GLM-5.3-Flash Runs on 16GB DDR4 and 3090 GPU",
+   "short": "GLM-5.3-Flash runs on 16GB DDR4 and 3090",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "e06d21b52d7a"
   }
  }
 }

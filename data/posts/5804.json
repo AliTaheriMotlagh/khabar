@@ -125,6 +125,13 @@
    "model": "qwen3.5-9b-q4_k_m",
    "v": 2,
    "src": "3128648973e3"
+  },
+  "en": {
+   "title": "Harvard offers new course on Agentic Systems and LLM infrastructure",
+   "short": "Harvard teaches new Agentic Systems course",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "cf11edd250a3"
   }
  }
 }

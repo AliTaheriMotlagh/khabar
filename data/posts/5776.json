@@ -127,6 +127,13 @@
    "v": 1,
    "src": "0ac81de9d33a",
    "added": 2
+  },
+  "en": {
+   "title": "Ai2 new GPU scheduler cuts queue wait to 24 seconds",
+   "short": "Ai2 GPU scheduler reduces queue wait to 24 seconds",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "21823fed1f38"
   }
  }
 }

@@ -132,6 +132,13 @@
    "v": 1,
    "src": "ede16988c8e2",
    "added": 1
+  },
+  "en": {
+   "title": "Microsoft introduces Decision-1 model for fast decision-making",
+   "short": "Microsoft launches Decision-1 for fast decisions",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "134700ef80e9"
   }
  }
 }

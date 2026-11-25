@@ -122,6 +122,13 @@
    "model": "qwen3.5-9b-q4_k_m",
    "v": 2,
    "src": "6ab93ec336eb"
+  },
+  "en": {
+   "title": "Claude pauses startup program offers due to high demand",
+   "short": "Claude pauses startup offers amid high demand",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "1bf07579219b"
   }
  }
 }

@@ -129,6 +129,13 @@
    "model": "qwen3.5-9b-q4_k_m",
    "v": 2,
    "src": "3517637b1134"
+  },
+  "en": {
+   "title": "SpaceX acquires nationwide low-band spectrum for Starlink mobile carrier",
+   "short": "SpaceX buys spectrum for Starlink mobile service",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "0fd6ebeba67b"
   }
  }
 }

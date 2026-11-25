@@ -91,6 +91,13 @@
    "model": "qwen3.5-9b-q4_k_m",
    "v": 2,
    "src": "3959716e6ab6"
+  },
+  "en": {
+   "title": "Jim Prosser: AI Agents Should Focus On Cost Of Living",
+   "short": "Jim Prosser urges AI focus on cost of living",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "2a941a527d94"
   }
  }
 }

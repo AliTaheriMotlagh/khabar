@@ -152,6 +152,13 @@
    "v": 1,
    "src": "d05946690b70",
    "added": 2
+  },
+  "en": {
+   "title": "Celeris-1 Decision beats Jev, GPT-6 and others on accuracy and speed",
+   "short": "Celeris-1 Decision beats Jev, GPT-6 and others",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "3ba2a306d36d"
   }
  }
 }

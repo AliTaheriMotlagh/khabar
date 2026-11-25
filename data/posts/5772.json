@@ -115,6 +115,13 @@
    "model": "qwen3.5-9b-q4_k_m",
    "v": 2,
    "src": "4de2b5bf6653"
+  },
+  "en": {
+   "title": "OpenAI fires three researchers over sensitive information breach",
+   "short": "OpenAI fires three researchers over policy breach",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "3f8d42f90318"
   }
  }
 }

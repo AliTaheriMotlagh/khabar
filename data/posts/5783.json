@@ -127,6 +127,13 @@
    "model": "qwen3.5-9b-q4_k_m",
    "v": 2,
    "src": "391c6a6dd9a6"
+  },
+  "en": {
+   "title": "Google internally tests Gemini 4 Carbon matching Opus 5.5 in coding",
+   "short": "Google tests Gemini 4 Carbon matching Opus 5.5",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "8beb95617c32"
   }
  }
 }

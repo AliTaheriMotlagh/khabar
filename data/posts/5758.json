@@ -114,6 +114,13 @@
    "model": "qwen3.5-9b-q4_k_m",
    "v": 2,
    "src": "203e7a6daf09"
+  },
+  "en": {
+   "title": "Three safety researchers say they were fired from OpenAI",
+   "short": "Three researchers say they were fired from OpenAI",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "e7a0c79fd7b9"
   }
  }
 }

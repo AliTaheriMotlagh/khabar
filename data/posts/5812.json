@@ -125,6 +125,13 @@
    "model": "qwen3.5-9b-q4_k_m",
    "v": 2,
    "src": "455e41d80359"
+  },
+  "en": {
+   "title": "Apple to announce new smart home hub HomeView on Tuesday",
+   "short": "Apple announces HomeView smart home hub on Tuesday",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "dcfc9361cc69"
   }
  }
 }

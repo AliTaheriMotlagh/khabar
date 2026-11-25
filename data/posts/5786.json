@@ -93,6 +93,13 @@
    "model": "qwen3.5-9b-q4_k_m",
    "v": 2,
    "src": "635b79a8f3cc"
+  },
+  "en": {
+   "title": "Mathematician says AI changing research but not necessarily reducing jobs",
+   "short": "AI changing math research, jobs uncertain",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "b3bb5578f9dc"
   }
  }
 }

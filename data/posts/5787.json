@@ -126,6 +126,13 @@
    "v": 1,
    "src": "261b6cb53ace",
    "added": 2
+  },
+  "en": {
+   "title": "OpenAI adds composer predictions to Codex for Pro users",
+   "short": "OpenAI adds composer predictions to Codex for Pro",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "ffd720076aae"
   }
  }
 }

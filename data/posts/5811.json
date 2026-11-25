@@ -117,6 +117,13 @@
    "model": "qwen3.5-9b-q4_k_m",
    "v": 2,
    "src": "08b0e9933900"
+  },
+  "en": {
+   "title": "Karpathy says gap in LLM understanding is widening sharply",
+   "short": "Karpathy: LLM understanding gap is widening",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "176df241fc81"
   }
  }
 }

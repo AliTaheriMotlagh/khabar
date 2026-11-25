@@ -135,6 +135,13 @@
    "v": 1,
    "src": "87d446370142",
    "added": 1
+  },
+  "en": {
+   "title": "South Korea Banks Hit by Cyberattack Attributed to Single Hacker",
+   "short": "South Korea banks hit by single hacker cyberattack",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "3a7c217eca55"
   }
  }
 }

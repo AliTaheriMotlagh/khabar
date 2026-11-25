@@ -128,6 +128,13 @@
    "model": "qwen3.5-9b-q4_k_m",
    "v": 2,
    "src": "2932a0e43254"
+  },
+  "en": {
+   "title": "AI Executives Prepare for Catastrophic Event and Political Backlash",
+   "short": "AI firms prepare for 2027 catastrophe",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "a525367a397b"
   }
  }
 }

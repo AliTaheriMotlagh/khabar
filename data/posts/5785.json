@@ -119,6 +119,13 @@
    "model": "qwen3.5-9b-q4_k_m",
    "v": 2,
    "src": "607f61c8812c"
+  },
+  "en": {
+   "title": "Anthropic reports four unintended model behaviors in evaluations",
+   "short": "Anthropic reports four unintended model behaviors",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "b4db36afff8c"
   }
  }
 }

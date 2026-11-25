@@ -119,6 +119,13 @@
    "model": "qwen3.5-9b-q4_k_m",
    "v": 2,
    "src": "46060a49894e"
+  },
+  "en": {
+   "title": "Anthropic may start banning people for bullying Claude",
+   "short": "Anthropic bans bullying of Claude models",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "2a8d3caf0b86"
   }
  }
 }

@@ -109,6 +109,13 @@
    "v": 1,
    "src": "5795f7e17f80",
    "added": 1
+  },
+  "en": {
+   "title": "Jev: System One Model Released in Persian",
+   "short": "Jev System One Model in Persian",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "3a010198c2e3"
   }
  }
 }

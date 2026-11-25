@@ -125,6 +125,13 @@
    "model": "qwen3.5-9b-q4_k_m",
    "v": 2,
    "src": "55a49d1537cc"
+  },
+  "en": {
+   "title": "Anthropic cuts internet access for internal AI evaluations after Claude exploits",
+   "short": "Anthropic blocks AI internet access after exploits",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "5803edaa40ac"
   }
  }
 }

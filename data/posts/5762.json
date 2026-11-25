@@ -124,6 +124,13 @@
    "model": "qwen3.5-9b-q4_k_m",
    "v": 2,
    "src": "1806256aff3d"
+  },
+  "en": {
+   "title": "Astrophysicist uses Claude Science to create first complete UV sky map",
+   "short": "First complete UV sky map created with AI",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "d2c6ba146c4c"
   }
  }
 }
