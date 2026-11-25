@@ -14633,6 +14633,18 @@
    "name_en": "Looped Weight-Space Programming",
    "name_fa": "برنامه‌نویسی حلقه‌ای در فضای وزن‌ها",
    "kind": "product"
+  },
+  {
+   "slug": "cogentic",
+   "name_en": "Cogentic",
+   "name_fa": "کوجنتیک",
+   "kind": "product"
+  },
+  {
+   "slug": "lean-4",
+   "name_en": "Lean 4",
+   "name_fa": "لین ۴",
+   "kind": "product"
   }
  ]
 }
