@@ -1,0 +1,58 @@
+{
+ "id": 6748,
+ "url": "https://t.me/dlmehr/6748",
+ "date": "2026-11-25T22:50:30+00:00",
+ "text": "https://fxtwitter.com/kimmonismus/status/2125716316510466238?a=1CfcpDuDSd0nN1vCj-c&s=52",
+ "forwarded_from": null,
+ "digest": false,
+ "hash": "18eeb40d111f",
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/kimmonismus/status/2125716316510466238?a=1CfcpDuDSd0nN1vCj-c&s=52",
+  "site": "🧵 Thread • FxTwitter",
+  "title": "Chubby ♨️ (@kimmonismus)",
+  "description": "Anthropic researchers used Claude to cut the Lean formalization of the Riemann Hypothesis and its generalization by roughly 99.56%. That’s more than 200× smaller.\n17.4 million lines of Lean down to 76,000.",
+  "image": "https://cdn4.telesco.pe/file/Uw8dIScno_Cqrx_LyVALMfOlZ_iclPCe7Vq_iTi7gfoVmyMbYT6mniNpZVEcvQ_IFuF1wfw85eouB0tJ3P3vc5kHvrPCY258Mi7-8-7g1KB3O-xuXEdDMHokuTL7hQ-4LGVwSGHhP7X5-BRJHKKspMx0U_v2tLTr7k7bYa_zS8p_1-w9jt_pClkcRYczjCQGYvO8IQKaV-2s20w77U9y9U0GcR6pojjo25Kx-lPoYewkByI31f61T-eSsOwUj1gTEwpVQiQCd8eB2E0hIxjAesITqMEFiSIVCqYr8SzGEQw86pZ33sY-LJaJH1kDD5mircBIUojFBUjSKehsHx0HaQ.jpg"
+ },
+ "gholam": {
+  "text": "رفیق، توی این پست، کاربر kimmonismus نوشته پژوهشگرای آنتروپیک با کمک هوش مصنوعی کلود، حجم کدِ Lean مربوط به صورت‌بندی فرضیه ریمان و حالت تعمیم‌یافته‌ش رو حدود ۹۹.۵۶ درصد (بیشتر از ۲۰۰ برابر) کم کردن؛ یه جورایی مثل این که یه طومارِ چندمیلیون‌خطی رو خلاصه کنی تو یه جزوهٔ جمع‌وجور. ✂️\n\n• طبق متن پست، تعداد خط‌های کد از ۱۷.۴ میلیون خط به حدود ۷۶ هزار خط رسیده.\n• خودِ لینک گیت‌هاب پروژه مستقیم باز نشد تا جزئیات داخلش رو ببینیم، اما توی اسکرین‌شاتِ صفحه توضیحات (README) اومده که این مخزن نسخهٔ کوتاه‌تر از یه اثبات در Lean 4 برای فرضیه ریمان و فرضیه تعمیم‌یافته ریمان برای توابع L دیریکله است که بر پایه کارِ لونت آلپوگه و با همکاری همکاران نویسنده در آنتروپیک و کلود تولید شده.\n• همین تصویر نشون می‌ده این کار یه «خروجی پژوهشی» هست که دیگه نگهداری نمی‌شه و مشارکت جدید هم نمی‌پذیره، روی کتابخونه Mathlib و فقط با سه اصل propext، Classical.choice و Quot.sound ساخته شده و دو نسخه داره: یه نسخه خواناتر با حدود ۳۰۰ هزار خط و یه نسخه فشرده برای همون پنج قضیه با حدود ۷۶ هزار خط.",
+  "date": "2026-11-25T22:50:54+00:00"
+ },
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/kimmonismus/status/2125716316510466238",
+   "domain": "x.com",
+   "author": {
+    "name": "Chubby♨️",
+    "handle": "kimmonismus",
+    "avatar": "https://pbs.twimg.com/profile_images/1728327996375719936/RW7VBJfD_200x200.jpg"
+   },
+   "text": "Anthropic researchers used Claude to cut the Lean formalization of the Riemann Hypothesis and its generalization by roughly 99.56%. That’s more than 200× smaller.\n\n17.4 million lines of Lean down to 76,000.",
+   "date": 1795645238,
+   "media": [
+    {
+     "type": "image",
+     "src": "https://pbs.twimg.com/media/HYAPuKBWoAE1VMe.jpg?name=orig",
+     "ratio": 1.8755
+    }
+   ],
+   "links": []
+  }
+ ],
+ "article": {
+  "title": "توی این پست، کاربر kimmonismus نوشته پژوهشگرای آنتروپیک با کمک هوش مصنوعی کلود، حجم کدِ Lean مربوط به صورت‌بندی فرضیه ریمان و حالت تعمیم‌یافته‌ش رو حدود ۹۹.۵۶ درصد (بیشتر از ۲۰۰ برابر) کم کردن",
+  "source_title": "Anthropic researchers used Claude to cut the Lean formalization of the Riemann Hypothesis and its generalization by roughly 99.56%. That’s…",
+  "body": [
+   "توی این پست، کاربر kimmonismus نوشته پژوهشگرای آنتروپیک با کمک هوش مصنوعی کلود، حجم کدِ Lean مربوط به صورت‌بندی فرضیه ریمان و حالت تعمیم‌یافته‌ش رو حدود ۹۹.۵۶ درصد (بیشتر از ۲۰۰ برابر) کم کردن؛ یه جورایی مثل این که یه طومارِ چندمیلیون‌خطی رو خلاصه کنی تو یه جزوهٔ جمع‌وجور. ✂️",
+   "• طبق متن پست، تعداد خط‌های کد از ۱۷.۴ میلیون خط به حدود ۷۶ هزار خط رسیده.",
+   "• خودِ لینک گیت‌هاب پروژه مستقیم باز نشد تا جزئیات داخلش رو ببینیم، اما توی اسکرین‌شاتِ صفحه توضیحات (README) اومده که این مخزن نسخهٔ کوتاه‌تر از یه اثبات در Lean 4 برای فرضیه ریمان و فرضیه تعمیم‌یافته ریمان برای توابع L دیریکله است که بر پایه کارِ لونت آلپوگه و با همکاری همکاران نویسنده در آنتروپیک و کلود تولید شده.",
+   "• همین تصویر نشون می‌ده این کار یه «خروجی پژوهشی» هست که دیگه نگهداری نمی‌شه و مشارکت جدید هم نمی‌پذیره، روی کتابخونه Mathlib و فقط با سه اصل propext، Classical.choice و Quot.sound ساخته شده و دو نسخه داره: یه نسخه خواناتر با حدود ۳۰۰ هزار خط و یه نسخه فشرده برای همون پنج قضیه با حدود ۷۶ هزار خط."
+  ],
+  "why": null,
+  "tags": [
+   "آنتروپیک"
+  ]
+ },
+ "updated": "2026-11-25T22:54:21+00:00"
+}
