@@ -1,11 +1,14 @@
 ---
-// The English edition's timeline: days on a rail (Tehran days, as the Persian site), each story at its time.
+// The English edition's timeline: days on a rail (Tehran days, as the Persian site), each story at its time. `ad`: the
+// home ad slot after the fifth story.
 import Icon from './Icon.astro';
 import EnCard from './EnCard.astro';
+import AdSlot from './AdSlot.astro';
 import { dayKey } from '../lib/posts';
 import { enDate, type EnPost } from '../lib/en';
-interface Props { items: EnPost[]; nextHref?: string | null; prevHref?: string | null; title?: string; eagerFirst?: boolean; topic?: string }
-const { items, nextHref, prevHref, title = 'Latest stories', eagerFirst = false, topic } = Astro.props;
+interface Props { items: EnPost[]; nextHref?: string | null; prevHref?: string | null; title?: string; eagerFirst?: boolean; topic?: string; ad?: boolean }
+const { items, nextHref, prevHref, title = 'Latest stories', eagerFirst = false, topic, ad = false } = Astro.props;
+const adAfter = ad ? items[Math.min(5, items.length) - 1]?.id : undefined;
 const days: { day: string; iso: string; items: EnPost[] }[] = [];
 for (const e of items) {
   const d = dayKey(e.date);
@@ -14,7 +17,7 @@ for (const e of items) {
 }
 ---
 <section class="timeline" aria-labelledby="tl-title">
-  <h2 class="tl-title" id="tl-title">{title}</h2>
+  <div class="tl-head"><h2 class="tl-title" id="tl-title">{title}</h2></div>
   <ol class="tl" data-tl>
     {
       days.map((d, di) => (
@@ -25,7 +28,12 @@ for (const e of items) {
               <small>{d.items.length} {d.items.length === 1 ? 'story' : 'stories'}</small>
             </span>
           </li>
-          {d.items.map((e, i) => <EnCard e={e} eager={eagerFirst && di === 0 && i < 2} topic={topic} />)}
+          {d.items.map((e, i) => (
+            <>
+              <EnCard e={e} eager={eagerFirst && di === 0 && i < 2} topic={topic} />
+              {e.id === adAfter && <li class="tl-ad"><AdSlot slot="home" /></li>}
+            </>
+          ))}
         </>
       ))
     }

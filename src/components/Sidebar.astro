@@ -1,5 +1,7 @@
 ---
-// Wide screens only (hidden below 1080px, where the footer and tab bar carry these links).
+// Wide screens only (hidden below 1080px, where the footer and tab bar carry these links). Short on purpose: the home
+// page's own modules first (the slot: threads, the morning summary when a new video took its place), then the channel,
+// the ways in and the topics.
 import Icon from './Icon.astro';
 import AdSlot from './AdSlot.astro';
 import { SITE } from '../site';
@@ -7,20 +9,27 @@ import { getChannel, getTags, tagHref, faNum, pic, url } from '../lib/posts';
 interface Props { current?: string }
 const { current } = Astro.props;
 const channel = getChannel();
-const tags = getTags().slice(0, 14);
+const tags = getTags().slice(0, 10);
 ---
 <aside class="sidebar" aria-label="ستون کناری">
+  <slot />
+
   <section class="side-card channel-card">
     <div class="ch-top">
-      {channel.avatar ? <img {...pic(channel.avatar, 'small')} alt="" width="48" height="48" referrerpolicy="no-referrer" /> : <span class="logo-mark big" aria-hidden="true"></span>}
+      {channel.avatar ? <img {...pic(channel.avatar, 'small')} alt="" width="40" height="40" loading="lazy" referrerpolicy="no-referrer" /> : <span class="logo-mark" aria-hidden="true"></span>}
       <div>
         <b>{channel.title ?? SITE.nameLatin}</b>
         {channel.subscribers && <small><span data-num>{faNum(channel.subscribers)}</span> عضو</small>}
       </div>
+      <a class="btn sm primary" href={`https://t.me/${SITE.channel}`} target="_blank" rel="noopener" referrerpolicy="origin" aria-label="عضویت در کانال تلگرام"><Icon name="telegram" /> عضویت</a>
     </div>
-    <p>هر خبر اول در کانال تلگرام {SITE.owner.name} منتشر می‌شود؛ اینجا با ترجمه‌ی فارسی.</p>
-    <a class="btn primary block" href={`https://t.me/${SITE.channel}`} target="_blank" rel="noopener" referrerpolicy="origin"><Icon name="telegram" /> عضویت در کانال</a>
   </section>
+
+  <nav class="side-links" aria-label="کاوش">
+    <a href={url('investigate/')}><Icon name="compass" /> کاوشگر خبر</a>
+    <a href={url('archive/')}><Icon name="calendar" /> آرشیو روزها</a>
+    <a href={url('week/')}><Icon name="trending" /> پربازدیدهای هفته</a>
+  </nav>
 
   {
     tags.length > 0 && (
@@ -37,16 +46,5 @@ const tags = getTags().slice(0, 14);
     )
   }
 
-  <section class="side-card">
-    <h2 class="side-title"><Icon name="compass" /> کاوش در خبرها</h2>
-    <p>هر شرکت، آدم یا مدل را در همه‌ی خبرها دنبال کنید: از اولین شایعه تا اعلام رسمی، روز به روز.</p>
-    <div class="row"><a class="btn primary sm" href={url('investigate/')}>کاوشگر خبر</a><a class="btn sm" href={url('archive/')}>آرشیو روزها</a></div>
-  </section>
-
   <AdSlot slot="sidebar" />
-
-  <section class="side-card" data-leaders hidden>
-    <h2 class="side-title"><Icon name="trophy" /> فعال‌ترین‌های هفته</h2>
-    <ol class="leaders" data-leaders-list></ol>
-  </section>
 </aside>

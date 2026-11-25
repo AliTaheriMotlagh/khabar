@@ -17,7 +17,7 @@ const next = page < total ? url(`en/page/${page + 1}/`) : null;
 const title = `Archive — page ${page}`;
 ---
 <Base lang="en" title={title} description={`${EN.name} archive, page ${page} of ${total}: ${slice.slice(0, 3).map((e) => e.short).join('; ')}…`} jsonLd={enListLd(title, `en/page/${page}/`, slice)} prev={prev} next={next}>
-  <div class="container">
+  <div class="container narrow">
     <header class="page-head"><h1>Archive</h1><p>Page {page} of {total}</p></header>
     <EnTimeline items={slice} nextHref={next} prevHref={prev} title="Older stories" />
   </div>

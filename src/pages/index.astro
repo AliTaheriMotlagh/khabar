@@ -1,4 +1,7 @@
 ---
+// The home page: the dateline with the stories circle and today's podcast, the lead and the top stories (Masthead),
+// then one timeline. At most one secondary module above it — Mehrzad's new video for 48 hours, else the morning summary
+// folded to one line —; the threads (and the summary, when the video took its place) sit in the wide screens' side column.
 import Base from '../layouts/Base.astro';
 import Timeline from '../components/Timeline.astro';
 import Sidebar from '../components/Sidebar.astro';
@@ -10,42 +13,42 @@ import TodayPlaylist from '../components/TodayPlaylist.astro';
 import NewVideo from '../components/NewVideo.astro';
 import HotThreads from '../components/HotThreads.astro';
 import Masthead from '../components/Masthead.astro';
-import AdSlot from '../components/AdSlot.astro';
 import { SITE } from '../site';
 import { getFeed, latestDigest, url } from '../lib/posts';
+import { newVideo } from '../lib/videos';
 import { frontFa } from '../lib/front';
 import { listLd } from '../lib/seo';
 
 const posts = getFeed();
 const digest = latestDigest();
-// The morning summary sits on top in full, so it isn't repeated on the timeline.
+// The morning summary has its own line on top, so it isn't repeated on the timeline.
 const first = posts.slice(0, SITE.pageSize).filter((p) => p.id !== digest?.id);
 // The front panel (Masthead): the lead story and the top stories beside it (src/lib/front.ts).
 const front = frontFa(first);
 const lead = front.leadPost;
 const rest = first.filter((p) => p !== lead);
 const next = posts.length > SITE.pageSize ? url('page/2/') : null;
+const video = !!newVideo(2);
 const jsonLd = listLd({ name: `${SITE.name} — ${SITE.tagline}`, path: '', posts: posts.slice(0, SITE.pageSize), home: true });
 ---
 <Base image={lead?.cover?.src} jsonLd={jsonLd} next={next} alternates={{ en: url('en/') }}>
-  <div class="container">
-    <Masthead lead={front.lead} top={front.top} />
-    <TodayRail />
+  <div class="container home">
+    <Masthead lead={front.lead} top={front.top}>
+      <TodayPlaylist />
+      <TodayRail />
+    </Masthead>
     {
       posts.length ? (
-        <div class="layout">
+        <div class="layout home-layout">
           <div class="col-main">
-            <NewVideo />
-            <div class="home-top">
-              <DailyBrief />
-            </div>
-            <HotThreads />
-            <TodayPlaylist />
+            {video ? <NewVideo /> : <DailyBrief />}
             <NotifyAsk />
-            <AdSlot slot="home" />
-            <Timeline posts={rest} all={posts} nextHref={next} filter />
+            <Timeline posts={rest} all={posts} nextHref={next} filter ad />
           </div>
-          <Sidebar />
+          <Sidebar>
+            <HotThreads />
+            {video && <DailyBrief open />}
+          </Sidebar>
         </div>
       ) : (
         <div class="empty">

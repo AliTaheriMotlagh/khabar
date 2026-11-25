@@ -1,5 +1,6 @@
 ---
-// The English edition's home: the lead story, the channel's English 24-hour summary, then the timeline.
+// The English edition's home: the dateline, the lead and the top stories, the channel's English 24-hour summary folded
+// to one line, then the timeline; topics and the explorer in the wide screens' side column.
 import Base from '../../layouts/Base.astro';
 import EnTimeline from '../../components/EnTimeline.astro';
 import AdSlot from '../../components/AdSlot.astro';
@@ -16,43 +17,47 @@ const lead = front.leadPost;
 const rest = first.filter((e) => e !== lead);
 const next = all.length > EN_PAGE_SIZE ? url('en/page/2/') : null;
 const digest = enDigest();
-const topics = enTopics().slice(0, 14);
+const items = digest?.items.slice(0, 6) ?? [];
+const topics = enTopics().slice(0, 10);
 ---
 <Base lang="en" alternates={{ fa: url() }} image={lead?.post.cover?.src} jsonLd={enListLd(`${EN.name} — ${EN.tagline}`, 'en/', first, true)} next={next}>
-  <div class="container">
+  <div class="container home">
     <Masthead lang="en" lead={front.lead} top={front.top} />
-    <div class="layout">
+    <div class="layout home-layout">
       <div class="col-main">
-        <div class="home-top">
-          {
-            digest && (
-              <section class="brief" aria-labelledby="brief-title">
-                <header class="brief-head">
-                  <h2 id="brief-title"><Icon name="bolt" /> The last 24 hours</h2>
-                  <small><time datetime={digest.date} data-f="rel"></time></small>
-                </header>
+        {
+          digest && items.length > 0 && (
+            <details class="brief" id="brief">
+              <summary class="brief-sum">
+                <span class="brief-icon" aria-hidden="true"><Icon name="bolt" /></span>
+                <span class="brief-sum-text">
+                  <b id="brief-title">The last 24 hours <small>· {digest.items.length} stories · <time datetime={digest.date} data-f="rel"></time></small></b>
+                  <span class="brief-first">{items[0].text}</span>
+                </span>
+                <span class="chev" aria-hidden="true"></span>
+              </summary>
+              <div class="brief-body">
                 <ol class="brief-list">
-                  {digest.items.slice(0, 7).map((i) => (
+                  {items.map((i) => (
                     <li>{i.href ? <a href={i.href}>{i.text}</a> : <span>{i.text}</span>}</li>
                   ))}
                 </ol>
-              </section>
-            )
-          }
-        </div>
-        <AdSlot slot="home" />
-        <EnTimeline items={rest} nextHref={next} />
+              </div>
+            </details>
+          )
+        }
+        <EnTimeline items={rest} nextHref={next} ad />
       </div>
       <aside class="sidebar" aria-label="Topics">
         <section class="side-card">
-          <h2 class="side-title"><Icon name="hash" /> Topics</h2>
+          <h2 class="side-title">Topics</h2>
           <div class="chips wrap">{topics.map((t) => <a class="chip" href={enTopicHref(t.slug)}>{t.en} <small>{t.count}</small></a>)}</div>
         </section>
-        <section class="side-card">
-          <h2 class="side-title"><Icon name="compass" /> Investigate</h2>
-          <p class="muted">Follow a company, a person or a model through every story, see how a rumour became official, and browse any day of the archive.</p>
-          <div class="row"><a class="btn primary sm" href={url('en/investigate/')}>Open the explorer</a><a class="btn sm" href={url('en/archive/')}>Archive</a></div>
-        </section>
+        <nav class="side-links" aria-label="Explore">
+          <a href={url('en/investigate/')}><Icon name="compass" /> News explorer</a>
+          <a href={url('en/archive/')}><Icon name="calendar" /> Archive by day</a>
+          <a href={url('en/videos/')}><Icon name="youtube" /> Mehrzad's videos</a>
+        </nav>
         <AdSlot slot="sidebar" />
       </aside>
     </div>
