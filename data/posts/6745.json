@@ -1,0 +1,62 @@
+{
+ "id": 6745,
+ "url": "https://t.me/dlmehr/6745",
+ "date": "2026-11-25T20:19:51+00:00",
+ "text": "https://fxtwitter.com/iscienceluvr/status/2125673326160892362?a=uQepE-cdy6jSZf2NTvI&s=52",
+ "forwarded_from": null,
+ "digest": false,
+ "hash": "c6e92526146e",
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/iscienceluvr/status/2125673326160892362?a=uQepE-cdy6jSZf2NTvI&s=52",
+  "site": "🧵 Thread • FxTwitter",
+  "title": "Tanishq Mathew Abraham, Ph.D. (@iScienceLuvr)",
+  "description": "Today we release ReadyNeuro, the largest open fMRI pretraining dataset!\nfMRI lets us watch brain activity in a noninvasive way. Foundation models trained on fMRI could help us better understand neurodegenerative diseases and mental disorders.\nPrevious fMRI…",
+  "image": null
+ },
+ "gholam": {
+  "text": "رفیق، تیم تحقیقاتی «سوفانت» (Sophont) از انتشار دیتاست متن‌باز ReadyNeuro و مدل پایه CortexMAE-ReadyNeuro خبر داده که قراره توی یکی از کارگاه‌های کنفرانس NeurIPS 2026 هم ارائه بشه. به جای اینکه مثل روش‌های سنتی، سال‌ها وقت بذارن و اسکن‌های مغزی (fMRI) رو حسابی اتوکشیده و صاف‌وصوف کنن، این بار داده‌ها رو با حداقل دست‌کاری آماده کردن تا خود مدل مستقیم از دلشون یاد بگیره. 🧠\n\n• دیتاست ReadyNeuro از آرشیو عمومی OpenNeuro ساخته شده و حدود ۱۶ ترابایت حجم داره؛ یعنی بیش از ۲۲ هزار ساعت اسکن مغزی از حدود ۳۰ هزار نفر در ۸۱۷ پژوهش مختلف که کد و وزن مدلش هم عمومی منتشر شده.\n• به گفته این تیم، پیش‌پردازش استاندارد این حجم از داده روی یک سیستم ۶۴ هسته‌ای حدود ۱۰۰۰ روز (نزدیک به سه سال) طول می‌کشید، اما با روش سبک جدیدشون کل کار توی ۶ روز جمع شده.\n• طبق گزارش خودشون، مدل جدید با همین داده‌های تقریباً خام، روی کارهایی مثل پیش‌بینی سن، جنسیت و تشخیص‌های بالینی تقریباً هم‌سطح مدل‌های قبلی عمل کرده و توی ۳ مورد از ۷ آزمون هم از مدل قبلیِ آموزش‌دیده روی دیتاست HCP-YA جلو زده.\n\nالبته خود محقق‌ها هم تأکید کردن که این مدل‌ها برای رسیدن به دقتی که واقعاً توی کارهای بالینی و پزشکی به درد بخوره هنوز راه زیادی دارن و هدف این کار، فقط باز کردن دست پژوهشگرهای دیگه برای ادامه مسیره.",
+  "date": "2026-11-25T20:20:34+00:00"
+ },
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/iScienceLuvr/status/2125673326160892362",
+   "domain": "x.com",
+   "author": {
+    "name": "Tanishq Mathew Abraham, Ph.D.",
+    "handle": "iScienceLuvr",
+    "avatar": "https://pbs.twimg.com/profile_images/2096171283537072128/GoL5700C_200x200.jpg"
+   },
+   "text": "Today we release ReadyNeuro, the largest open fMRI pretraining dataset!\n\nfMRI lets us watch brain activity in a noninvasive way. Foundation models trained on fMRI could help us better understand neurodegenerative diseases and mental disorders.\n\nPrevious fMRI foundation models (including our own CortexMAE) have been data-limited, training on datasets with limited scale and diversity.\n\nWe've turned OpenNeuro, the largest archive of fMRI scans, into a pretraining-ready corpus.\n\nWe pretrained CortexMAE-ReadyNeuro on this dataset, beating HCP-YA pretraining on 3 out of 7 tasks.\n\nWe release all of it open-source to enable further fMRI pretraining research.",
+   "date": 1795634988,
+   "media": [
+    {
+     "type": "video",
+     "src": "https://video.twimg.com/amplify_video/2125669285926227968/vid/avc1/1280x720/wjY8ogIEbXW7V7su.mp4?tag=29",
+     "poster": "https://pbs.twimg.com/amplify_video_thumb/2125669285926227968/img/xJ27xrE4AkENa-PY.jpg",
+     "ratio": 0.5625,
+     "duration": 148.567,
+     "gif": false
+    }
+   ],
+   "links": []
+  }
+ ],
+ "article": {
+  "title": "تیم تحقیقاتی «سوفانت» (Sophont) از انتشار دیتاست متن‌باز ReadyNeuro و مدل پایه CortexMAE-ReadyNeuro خبر داده که قراره توی یکی از کارگاه‌های کنفرانس NeurIPS 2026 هم ارائه بشه",
+  "source_title": "Today we release ReadyNeuro, the largest open fMRI pretraining dataset!",
+  "body": [
+   "تیم تحقیقاتی «سوفانت» (Sophont) از انتشار دیتاست متن‌باز ReadyNeuro و مدل پایه CortexMAE-ReadyNeuro خبر داده که قراره توی یکی از کارگاه‌های کنفرانس NeurIPS 2026 هم ارائه بشه. به جای اینکه مثل روش‌های سنتی، سال‌ها وقت بذارن و اسکن‌های مغزی (fMRI) رو حسابی اتوکشیده و صاف‌وصوف کنن، این بار داده‌ها رو با حداقل دست‌کاری آماده کردن تا خود مدل مستقیم از دلشون یاد بگیره. 🧠",
+   "• دیتاست ReadyNeuro از آرشیو عمومی OpenNeuro ساخته شده و حدود ۱۶ ترابایت حجم داره؛ یعنی بیش از ۲۲ هزار ساعت اسکن مغزی از حدود ۳۰ هزار نفر در ۸۱۷ پژوهش مختلف که کد و وزن مدلش هم عمومی منتشر شده.",
+   "• به گفته این تیم، پیش‌پردازش استاندارد این حجم از داده روی یک سیستم ۶۴ هسته‌ای حدود ۱۰۰۰ روز (نزدیک به سه سال) طول می‌کشید، اما با روش سبک جدیدشون کل کار توی ۶ روز جمع شده.",
+   "• طبق گزارش خودشون، مدل جدید با همین داده‌های تقریباً خام، روی کارهایی مثل پیش‌بینی سن، جنسیت و تشخیص‌های بالینی تقریباً هم‌سطح مدل‌های قبلی عمل کرده و توی ۳ مورد از ۷ آزمون هم از مدل قبلیِ آموزش‌دیده روی دیتاست HCP-YA جلو زده."
+  ],
+  "why": "البته خود محقق‌ها هم تأکید کردن که این مدل‌ها برای رسیدن به دقتی که واقعاً توی کارهای بالینی و پزشکی به درد بخوره هنوز راه زیادی دارن و هدف این کار، فقط باز کردن دست پژوهشگرهای دیگه برای ادامه مسیره.",
+  "why_label": "حرف آخر",
+  "tags": [
+   "متن‌باز"
+  ]
+ },
+ "updated": "2026-11-25T20:24:12+00:00"
+}
