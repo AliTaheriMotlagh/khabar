@@ -1,0 +1,66 @@
+{
+ "id": 6737,
+ "url": "https://t.me/dlmehr/6737",
+ "date": "2026-11-25T16:49:36+00:00",
+ "text": "https://fxtwitter.com/kimmonismus/status/2125574747882704951?a=yFfyLC_lndDvXIXJlDM&s=52",
+ "forwarded_from": null,
+ "digest": false,
+ "hash": "8c4c7271ae85",
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/kimmonismus/status/2125574747882704951?a=yFfyLC_lndDvXIXJlDM&s=52",
+  "site": "🧵 Thread • FxTwitter",
+  "title": "Chubby ♨️ (@kimmonismus)",
+  "description": "WHAT IS HAPPENING?! Google just silently dropped six new math papers, all produced by its AI agent Cogentic running on Gemini 4. Google says no human was involved after the first prompt.\n- Factoring: Splitting huge numbers into primes is the backbone of…",
+  "image": "https://cdn4.telesco.pe/file/tE9TeehYUyhjRp6Cseg4pZHRL2Gv6tI8QsGDTXHwO4e5ZwMJ-ZJ1AQNn01pt6H9Oo0Vlrb0CY1kg5nLYVqznDzRrYG21p8hZoNT30B25zYg4SpKHuJd7AKvH6qjXUTaPXM2XAxjBVI-sn-e0DwtFke4Qk9uA-kmKIQhnO0HPTU4Y2Azqtg6g4YVyNp1-bBE8GFkQmRDV_1-C5VFI1QO-Pnk2FeQzKINvFcAMR6UG2D0u_sASbMJ1XN6yh-5IMpPzWjGaPhtM6X_quQaJ89qGiL0vta0jzTaRfFi8vpB7lqzEGxNrI6rwo0nHJYXcpokpZTb7LfS10z1RL9-Qz5qGIw.jpg"
+ },
+ "gholam": {
+  "text": "رفقا، گوگل تو سکوت خبری ۶ تا مقاله جدید ریاضی و علوم کامپیوتر (با تاریخ ۲۵ نوامبر ۲۰۲۶) تو گیت‌هابش منتشر کرده که به گفته خودشون، همگی توسط ایجنت هوش مصنوعی «Cogentic» و بر پایه مدل Gemini 4 تولید شدن. طبق متنی که تو تصویر یکی از مقالات دیده میشه، پژوهشگران گوگل ریسرچ و دیپ‌مایند میگن بعد از پرامپت اول، هیچ انسانی تو نوشتن اثبات‌ها و کدهای رسمی‌سازیِ زبان Lean 4 دخالت نداشته. 🧮\n\n• نویسنده توییت میگه یکی از مقالات سراغ اثبات سرعت الگوریتم تجزیه اعداد بزرگ (پایه رمزنگاری RSA) رفته که حدود ۳۰ سال کسی نتونسته بود ثابتش کنه، و مقاله دیگه هم روش تجزیه قطعی و بدون تصادفی‌سازی در زمان زیرنمایی رو آورده.\n• تو بقیه عناوین، کارهایی روی شکستن سد ریشه دوم در حدس log-rank (مطرح‌شده از ۱۹۸۸)، بازسازی یال گراف‌های ساده با چگالی خطی (مرتبط با حدس ۱۹۶۴ هاراری)، لگاریتم گسسته در میدان‌های متناهی و تعادل نش دیده میشه.\n• تو مخزن گیت‌هاب این پروژه در مجموع ۱۰ پوشه مقاله هست و نویسنده توییت هم این موضوع رو در ادامه خبرهای چند روز اخیر آنتروپیک و اوپن‌ای‌آی دونسته.\n\nخلاصه ما هنوز سر یه تقسیم دو رقمی گیر می‌کنیم، این مدل‌ها نشستن پای اثبات قضیه‌های چند ده ساله!",
+  "date": "2026-11-25T16:50:15+00:00"
+ },
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/kimmonismus/status/2125574747882704951",
+   "domain": "x.com",
+   "author": {
+    "name": "Chubby♨️",
+    "handle": "kimmonismus",
+    "avatar": "https://pbs.twimg.com/profile_images/1728327996375719936/RW7VBJfD_200x200.jpg"
+   },
+   "text": "WHAT IS HAPPENING?! Google just silently dropped six new math papers, all produced by its AI agent Cogentic running on Gemini 4. Google says no human was involved after the first prompt.\n\n- Factoring: Splitting huge numbers into primes is the backbone of RSA encryption. The fastest method has been around since the 1990s, and for 30 years nobody could prove how fast it really is. An AI just did. \n\n- And it keeps going: the log-rank conjecture (open since 1988), Harary's edge reconstruction conjecture (open since 1964), and the first factoring method without randomness that beats exponential time. Any one of these would make a mathematician's career.\n\nAnthropic, OpenAI, now Google, all within days! This is the new normal!",
+   "date": 1795611485,
+   "media": [
+    {
+     "type": "image",
+     "src": "https://pbs.twimg.com/media/HX-O7vdXwAENOpm.jpg?name=orig",
+     "ratio": 0.4031
+    },
+    {
+     "type": "image",
+     "src": "https://pbs.twimg.com/media/HX-O8ZXWkAAf1sD.jpg?name=orig",
+     "ratio": 0.1901
+    }
+   ],
+   "links": []
+  }
+ ],
+ "article": {
+  "title": "گوگل تو سکوت خبری ۶ تا مقاله جدید ریاضی و علوم کامپیوتر (با تاریخ ۲۵ نوامبر ۲۰۲۶) تو گیت‌هابش منتشر کرده که به گفته خودشون، همگی توسط ایجنت هوش مصنوعی «Cogentic» و بر پایه مدل Gemini 4 تولید شدن",
+  "source_title": "WHAT IS HAPPENING?! Google just silently dropped six new math papers, all produced by its AI agent Cogentic running on Gemini 4. Google…",
+  "body": [
+   "گوگل تو سکوت خبری ۶ تا مقاله جدید ریاضی و علوم کامپیوتر (با تاریخ ۲۵ نوامبر ۲۰۲۶) تو گیت‌هابش منتشر کرده که به گفته خودشون، همگی توسط ایجنت هوش مصنوعی «Cogentic» و بر پایه مدل Gemini 4 تولید شدن. طبق متنی که تو تصویر یکی از مقالات دیده میشه، پژوهشگران گوگل ریسرچ و دیپ‌مایند میگن بعد از پرامپت اول، هیچ انسانی تو نوشتن اثبات‌ها و کدهای رسمی‌سازیِ زبان Lean 4 دخالت نداشته. 🧮",
+   "• نویسنده توییت میگه یکی از مقالات سراغ اثبات سرعت الگوریتم تجزیه اعداد بزرگ (پایه رمزنگاری RSA) رفته که حدود ۳۰ سال کسی نتونسته بود ثابتش کنه، و مقاله دیگه هم روش تجزیه قطعی و بدون تصادفی‌سازی در زمان زیرنمایی رو آورده.",
+   "• تو بقیه عناوین، کارهایی روی شکستن سد ریشه دوم در حدس log-rank (مطرح‌شده از ۱۹۸۸)، بازسازی یال گراف‌های ساده با چگالی خطی (مرتبط با حدس ۱۹۶۴ هاراری)، لگاریتم گسسته در میدان‌های متناهی و تعادل نش دیده میشه.",
+   "• تو مخزن گیت‌هاب این پروژه در مجموع ۱۰ پوشه مقاله هست و نویسنده توییت هم این موضوع رو در ادامه خبرهای چند روز اخیر آنتروپیک و اوپن‌ای‌آی دونسته."
+  ],
+  "why": "خلاصه ما هنوز سر یه تقسیم دو رقمی گیر می‌کنیم، این مدل‌ها نشستن پای اثبات قضیه‌های چند ده ساله!",
+  "why_label": "حرف آخر",
+  "tags": [
+   "گوگل",
+   "ایجنت",
+   "کدنویسی"
+  ]
+ },
+ "updated": "2026-11-25T16:51:00+00:00"
+}

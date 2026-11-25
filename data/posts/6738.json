@@ -1,0 +1,64 @@
+{
+ "id": 6738,
+ "url": "https://t.me/dlmehr/6738",
+ "date": "2026-11-25T16:49:55+00:00",
+ "text": "https://fxtwitter.com/anthropicai/status/2125627317263466739?a=_QvsWp0M7o4F7g_-v1o&s=52",
+ "forwarded_from": null,
+ "digest": false,
+ "hash": "c5ffac185031",
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/anthropicai/status/2125627317263466739?a=_QvsWp0M7o4F7g_-v1o&s=52",
+  "site": "FxTwitter · anthropic.com",
+  "title": "Anthropic (@AnthropicAI)",
+  "description": "We recently migrated our Messages API from Python to Rust.\nOn our engineering blog, we share how we used the existing service to verify the new one, with teams of Claude agents tracking down and fixing differences between the two versions.\nhttps://www.…",
+  "image": "https://cdn4.telesco.pe/file/t-V2g7rB2SA_FiJbRyeUoyg44NbXYTGXcVX76i5h6wIoIFZD2_4WebfWNSm4yrB4XFQuHtvXntkWU6OqtE8yG-UGQU4ndnbbB0cYk2SwePPFXLji6dVEpcc0_Za8WEXc8eVtkNRAG_oOs_743A15N6Q1m4WWIsGI1ACLmTBzLg1wOF-NawkMOvlsLpw3Ekx1fT0FrvVu9DZVmFIUbgK17Ki1Zt3IM1cHcGyiFD5Id1BmK2xOjaZtRjaZAUie9wUPJ5Vmdv8T9MBg2koOuwxR454luZ6lT2jCDca7Uwx4j9kn7UvjjKsQ14GL-aZ9ejB2t4raOmf-JoUrNTsoZQkmMQ.jpg",
+  "small": true
+ },
+ "gholam": {
+  "text": "رفقا، شرکت آنتروپیک تو پست جدید و گزارش مهندسی‌اش توضیح داده که چطور سرویس اصلی پیام‌رسانش (Messages API) رو بدون اینکه کرکره رو بکشه پایین یا توسعه قابلیت‌های جدید رو متوقف کنه، از پایتون به زبان Rust منتقل کرده. به گفته این شرکت، ترافیک این سرویس از اوایل ۲۰۲۴ تا پاییز ۲۰۲۶ حدود ۱۸۰۰ برابر شده و پایتون به خاطر سربارش دیگه برای این حجم از کار جوابگو نبوده. جالب اینجاست که خود کلود کدهای اولیه مسیر اصلی رو توی حدود یه هفته نوشته، ولی چالش بزرگ‌تر این بوده که وسط سیستم زنده و در حال تغییر، مطمئن بشن نسخه جدید دقیقاً مو به مو مثل نسخه قبلی رفتار می‌کنه. 🛠️\n\n• حدود ۷۰۰ تست یکپارچه‌سازی قبلی برای این اطمینان کافی نبوده؛ طوری که نسخه Rust در ماه آوریل حدود ۹۸ درصد تست‌ها رو پاس می‌کرد، اما روی ترافیک واقعی فقط حدود یک‌چهارم ورودی‌ها دقیقاً با نسخه پایتون یکی درمی‌اومد.\n• آنتروپیک میگه برای حل این مشکل، خودِ سرویس پایتونِ در حال کار رو مثل یه ترازو و معیار گذاشته تا اختلاف‌ها رو در ترافیک واقعی شناسایی کنه و بعد تیم‌هایی از ایجنت‌های کلود رو خودکار بفرسته سراغ ردیابی و برطرف کردن این تفاوت‌ها.\n• به گفته این شرکت، نتیجه این مهاجرت حدود ۷۰ درصد مصرف CPU کمتر به ازای هر درخواست و حدود ۲۰ درصد کاهش زمان میانه تا دریافت اولین توکن بوده.",
+  "date": "2026-11-25T16:50:38+00:00"
+ },
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/AnthropicAI/status/2125627317263466739",
+   "domain": "x.com",
+   "author": {
+    "name": "Anthropic",
+    "handle": "AnthropicAI",
+    "avatar": "https://pbs.twimg.com/profile_images/1798110641414443008/XP8gyBaY_200x200.jpg"
+   },
+   "text": "We recently migrated our Messages API from Python to Rust.\n\nOn our engineering blog, we share how we used the existing service to verify the new one, with teams of Claude agents tracking down and fixing differences between the two versions.\n\nhttps://www.anthropic.com/research/migrating-api-to-rust",
+   "date": 1795624019,
+   "media": [],
+   "links": [
+    "https://www.anthropic.com/research/migrating-api-to-rust"
+   ]
+  },
+  {
+   "kind": "link",
+   "url": "https://www.anthropic.com/research/migrating-api-to-rust",
+   "domain": "anthropic.com",
+   "title": "Migrating our Messages API to Rust",
+   "description": "How we used the existing Messages API to verify the new one, with teams of Claude agents tracking down and fixing differences between the Python and Rust versions.",
+   "image": "https://assets.claude.com/faac348155bf01d5c59ab38cbd05294eb2fa8197.jpg",
+   "site": "anthropic.com"
+  }
+ ],
+ "article": {
+  "title": "شرکت آنتروپیک تو پست جدید و گزارش مهندسی‌اش توضیح داده که چطور سرویس اصلی پیام‌رسانش (Messages API) رو بدون اینکه کرکره رو بکشه پایین یا توسعه قابلیت‌های جدید رو متوقف کنه، از پایتون به زبان Rust منتقل کرده",
+  "source_title": "We recently migrated our Messages API from Python to Rust.",
+  "body": [
+   "شرکت آنتروپیک تو پست جدید و گزارش مهندسی‌اش توضیح داده که چطور سرویس اصلی پیام‌رسانش (Messages API) رو بدون اینکه کرکره رو بکشه پایین یا توسعه قابلیت‌های جدید رو متوقف کنه، از پایتون به زبان Rust منتقل کرده. به گفته این شرکت، ترافیک این سرویس از اوایل ۲۰۲۴ تا پاییز ۲۰۲۶ حدود ۱۸۰۰ برابر شده و پایتون به خاطر سربارش دیگه برای این حجم از کار جوابگو نبوده. جالب اینجاست که خود کلود کدهای اولیه مسیر اصلی رو توی حدود یه هفته نوشته، ولی چالش بزرگ‌تر این بوده که وسط سیستم زنده و در حال تغییر، مطمئن بشن نسخه جدید دقیقاً مو به مو مثل نسخه قبلی رفتار می‌کنه. 🛠️",
+   "• حدود ۷۰۰ تست یکپارچه‌سازی قبلی برای این اطمینان کافی نبوده؛ طوری که نسخه Rust در ماه آوریل حدود ۹۸ درصد تست‌ها رو پاس می‌کرد، اما روی ترافیک واقعی فقط حدود یک‌چهارم ورودی‌ها دقیقاً با نسخه پایتون یکی درمی‌اومد.",
+   "• آنتروپیک میگه برای حل این مشکل، خودِ سرویس پایتونِ در حال کار رو مثل یه ترازو و معیار گذاشته تا اختلاف‌ها رو در ترافیک واقعی شناسایی کنه و بعد تیم‌هایی از ایجنت‌های کلود رو خودکار بفرسته سراغ ردیابی و برطرف کردن این تفاوت‌ها.",
+   "• به گفته این شرکت، نتیجه این مهاجرت حدود ۷۰ درصد مصرف CPU کمتر به ازای هر درخواست و حدود ۲۰ درصد کاهش زمان میانه تا دریافت اولین توکن بوده."
+  ],
+  "why": null,
+  "tags": [
+   "آنتروپیک"
+  ]
+ },
+ "updated": "2026-11-25T16:50:59+00:00"
+}
