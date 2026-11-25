@@ -46,5 +46,23 @@
    "اوپن‌ای‌آی"
   ]
  },
- "updated": "2026-11-25T17:31:32+00:00"
+ "updated": "2026-11-25T17:31:32+00:00",
+ "ai": {
+  "title": "اوپن‌ای‌آی قابلیت Private Inference را برای مشتریان خاص تست می‌کند",
+  "short": "Private Inference در اوپن‌ای‌آی",
+  "topics": [
+   "اوپن‌ای‌آی"
+  ],
+  "type": "خبر",
+  "model": "qwen3.5-9b-q4_k_m",
+  "v": 2,
+  "src": "c6bd54778890",
+  "en": {
+   "title": "OpenAI tests Private Inference with small group of customers",
+   "short": "OpenAI tests Private Inference offering",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "310f898246b1"
+  }
+ }
 }
