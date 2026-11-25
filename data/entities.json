@@ -14645,6 +14645,24 @@
    "name_en": "Lean 4",
    "name_fa": "لین ۴",
    "kind": "product"
+  },
+  {
+   "slug": "dimitris",
+   "name_en": "Dimitris",
+   "name_fa": "دیمیتریس",
+   "kind": "person"
+  },
+  {
+   "slug": "qwen3-06b",
+   "name_en": "Qwen3-0.6B",
+   "name_fa": "کوئن ۳-۰.۶ بیلیون",
+   "kind": "model"
+  },
+  {
+   "slug": "qwen25-05b",
+   "name_en": "Qwen2.5-0.5B",
+   "name_fa": "کوئن ۲.۵-۰.۵ بیلیون",
+   "kind": "model"
   }
  ]
 }
