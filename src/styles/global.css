@@ -1722,7 +1722,7 @@ body:has(.player) :is(.site-header, .tabbar, .site-footer, .to-top, .offline-bar
 .mh-stats .is-live dd { color: #7ef0b5; }
 
 .front-grid { display: grid; gap: 18px; grid-template-columns: minmax(0, 1fr); }
-@media (min-width: 900px) { .front-grid { grid-template-columns: minmax(0, 1.6fr) minmax(0, 1fr); gap: 26px; } }
+@media (min-width: 900px) { .front-grid { grid-template-columns: minmax(0, 1.6fr) minmax(0, 1fr); gap: 26px; } .front-top { align-self: start; } }
 .lead-main { position: relative; display: grid; align-content: start; gap: 14px; min-width: 0; color: #fff; }
 .lead-media { position: relative; aspect-ratio: 16 / 9; border-radius: 20px; overflow: hidden; background: rgb(255 255 255 / .06); box-shadow: 0 30px 60px -28px rgb(0 0 0 / .85), 0 0 0 1px rgb(255 255 255 / .1); }
 .lead-media img { display: block; width: 100%; height: 100%; object-fit: cover; transition: transform .9s var(--ease); }

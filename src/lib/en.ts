@@ -70,11 +70,19 @@ const paragraphs = (text: string) =>
 /** A headline from a sentence: the first sentence, joined with the next when it only introduces it («…today:»). */
 function headline(lines: string[]): string {
   const text = lines.join(' ');
-  const sentences = text.split(/(?<=[.!?])\s+(?=[A-Z0-9"“‘'@#$])/);
+  // Tweets are often all lower case («another incredible result from oai. matrix multiplication…»), so a sentence may
+  // start with any letter; a piece that ends in an abbreviation («e.g.», «vs.», «U.S.»), an initial or a list number («1.») is joined back.
+  const sentences: string[] = [];
+  for (const piece of text.split(/(?<=[.!?])\s+(?=\S)/)) {
+    const prev = sentences.at(-1);
+    if (prev && /(?:^|[\s(])(?:e\.g|i\.e|vs|etc|approx|Mr|Ms|Mrs|Dr|Prof|Inc|Corp|Ltd|Jr|Sr|St|No|\d{1,2}|[A-Za-z](?:\.[A-Za-z])*)\.$/.test(prev)) sentences[sentences.length - 1] = `${prev} ${piece}`;
+    else sentences.push(piece);
+  }
   let h = sentences[0] ?? '';
   if (/:\s*$/.test(h) || h.length < 28) h = sentences.slice(0, 2).join(' ');
   h = h.replace(/[.:;,]\s*$/, '').replace(/\s*[🚀🔥👇🧵✨📢🚨⚡️💥🎉]+\s*/gu, ' ').trim();
-  return clip(h, 120);
+  // An all-lower-case first word gets its capital («another» → «Another»; «iPhone», «gpt-5» stay).
+  return clip(h.replace(/^\p{Ll}(?=\p{Ll}*(?:[\s,:;!?]|$))/u, (c) => c.toUpperCase()), 120);
 }
 
 function shapeEn(p: Post): EnPost | null {

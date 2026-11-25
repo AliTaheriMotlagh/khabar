@@ -416,6 +416,20 @@ test('watch: a crawl once the newest post has its comment (or after a grace), an
     assert.equal(t2.body.shared, true, 'the next tick within a minute is the shared answer');
     assert.equal(dispatched.length, 6, 'and starts nothing');
 
+    // A post nobody looked at within the window (cron down, no page open) still starts a crawl, without its discussion.
+    runs = [{ event: 'schedule', status: 'completed', conclusion: 'success', created_at: ago(9000) }];
+    channel = post(100, ago(7200)) + post(106, ago(5000));
+    assert.deepEqual(await tick(), { queued: true, reason: 'post 100' }, 'posts older than the window, newer than the crawl');
+    // A failed crawl counts for a while (no crawl a minute), then it is retried instead of waiting for the schedule.
+    runs = [{ event: 'workflow_dispatch', status: 'completed', conclusion: 'failure', created_at: ago(300), updated_at: ago(200) }];
+    assert.deepEqual(await tick(), { queued: false, reason: null }, 'a crawl that just failed');
+    runs = [
+      { event: 'workflow_dispatch', status: 'completed', conclusion: 'failure', created_at: ago(1500), updated_at: ago(1300) },
+      { event: 'schedule', status: 'completed', conclusion: 'success', created_at: ago(6000) },
+    ];
+    assert.deepEqual(await tick(), { queued: true, reason: 'post 106' }, 'retried after a while');
+    assert.equal(dispatched.length, 8);
+
     assert.deepEqual(watch.parseChannel(post(7, '2026-10-20T15:31:00+00:00')), [{ id: 7, at: Date.parse('2026-10-20T15:31:00Z') }]);
     assert.equal(watch.parseGholam(discussion(null)), 0);
   } finally {

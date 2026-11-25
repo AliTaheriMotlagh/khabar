@@ -1,5 +1,6 @@
 // GET|POST /api/watch/?key=<WATCH_SECRET> → { queued, reason }: starts a crawl as soon as the channel has news, instead
-// of waiting for the 20-minute schedule. Called every minute by an external cron (e.g. cron-job.org); see README.
+// of waiting for the 20-minute schedule. Called every minute by the Worker in workers/watch/ (a Cloudflare cron
+// trigger, without the key: the shared tick below) and by any external cron with the key; see README.
 // News = a post newer than the newest crawl (once Gholam has commented on it, or GRACE seconds after it appeared: he
 // answers within ~30 s and skips the daily digests), or Gholam's comment on a recent post newer than that crawl, or a
 // post that crawl held back waiting for him (HOLD) once the hold is over.
@@ -8,7 +9,9 @@
 import { dispatch, fail, github, githubToken, json, preflight } from './_lib.js';
 
 const CHANNEL = process.env.TG_CHANNEL || 'dlmehr';
-// Only posts this recent are looked at: older ones are left to the schedule.
+// Only posts this recent get their discussion read (Gholam's comment, the hold). Any post newer than the newest crawl
+// starts one, however old: a post that nobody looked at within this window (the cron down, no page open) used to wait
+// for GitHub's schedule, which skips hours at a time (posts 6734–6735 on 11-25 waited 2 h).
 const WINDOW = Number(process.env.WATCH_MINUTES || 60) * 60_000;
 const GRACE = Number(process.env.WATCH_GRACE || 180) * 1000;
 // The crawl holds a new post without Gholam's comment off the site this long (pipeline/config.py GHOLAM_HOLD_MINUTES):
@@ -50,23 +53,32 @@ export function parseGholam(html) {
   return at;
 }
 
+// A failed crawl counts as one for this long after it ended, then another is started (GitHub's schedule is too
+// unreliable to be the retry); a crawl that keeps failing is so retried about as often as the schedule would.
+const RETRY = Number(process.env.WATCH_RETRY || 1200) * 1000;
+
 /** When the newest crawl that will have (or had) a look at the channel was started (ms), or 0. A cancelled run was a
- *  queued one replaced by a newer one; a failed one is retried by the schedule. A code push's run doesn't crawl. */
-export const isCrawl = (r) => r.event !== 'push' && r.conclusion !== 'cancelled';
-async function lastCrawl() {
+ *  queued one replaced by a newer one. A code push's run doesn't crawl. */
+export const isCrawl = (r, now = Date.now()) =>
+  r.event !== 'push' &&
+  r.conclusion !== 'cancelled' &&
+  !(r.conclusion === 'failure' && now - Date.parse(r.updated_at ?? r.created_at) > RETRY);
+async function lastCrawl(now) {
   const res = await github('/runs?per_page=10');
   if (!res.ok) throw new Error(`github ${res.status}`);
-  const run = ((await res.json()).workflow_runs ?? []).find(isCrawl);
+  const run = ((await res.json()).workflow_runs ?? []).find((r) => isCrawl(r, now));
   return run ? Date.parse(run.created_at) : 0;
 }
 
 /** Why a crawl should start now, or null. */
 async function news(now = Date.now()) {
-  const recent = parseChannel(await tme(`s/${CHANNEL}`))
-    .filter((p) => now - p.at < WINDOW)
-    .slice(-5);
-  if (!recent.length) return null;
-  const since = await lastCrawl();
+  const posts = parseChannel(await tme(`s/${CHANNEL}`));
+  if (!posts.length) return null;
+  const since = await lastCrawl(now);
+  // Past the grace a new post needs no look at its discussion.
+  const missed = posts.find((p) => p.at > since && now - p.at > GRACE);
+  if (missed) return `post ${missed.id}`;
+  const recent = posts.filter((p) => now - p.at < WINDOW).slice(-5);
   // A widget that can't be read counts as "no comment yet": GRACE still lets the post through.
   const gholam = await Promise.all(
     recent.map((p) => tme(`${CHANNEL}/${p.id}?embed=1&discussion=1&comments_limit=30`).then(parseGholam, () => 0)),
@@ -96,7 +108,8 @@ async function check(request) {
 // the external cron is down (it called the old Vercel address for days after that was switched off). The answer is
 // shared for TICK seconds — Cloudflare's cache in this data centre, else this instance's memory — so however many
 // readers tick, the channel and GitHub are asked about once a minute.
-const TICK = Number(process.env.WATCH_TICK || 60);
+// 50 s, not 60: the Worker in workers/watch/ calls it every minute, and a 60-s answer would still be fresh a minute later.
+const TICK = Number(process.env.WATCH_TICK || 50);
 let last = { at: 0, body: null };
 async function tick(request) {
   const cache = globalThis.caches?.default;

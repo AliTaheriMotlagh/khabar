@@ -1,4 +1,4 @@
-# Cloudflare Pages (https://blog.remixt.app). Deployed from GitHub Actions (site.yml, job `cloudflare`) with
+# Cloudflare Pages (https://blog.remixt.app). Deployed from GitHub Actions (site.yml, scripts/publish.sh) with
 # `wrangler pages deploy`, not Cloudflare's Git builds (free plan: 500 builds/month, the crawl alone makes ~2,000).
 name = "khabar"
 pages_build_output_dir = "dist"

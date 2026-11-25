@@ -11,6 +11,12 @@ Tick items off here; move anything that becomes a lasting rule into CLAUDE.md.
   the next was GitHub's schedule at 20:22. **Yours:** in cron-job.org change the URL to
   `https://blog.remixt.app/api/watch/?key=<WATCH_SECRET>` (Cloudflare already has `WATCH_SECRET` and the token: it
   answers 401 without the key).
+- **2026-11-25 (later): the cron is now ours.** `workers/watch/` is a Cloudflare Worker with a 1-minute cron trigger
+  (Workers Free) that calls `/api/watch/` without the key (the shared tick, 50 s) — no secret, no cron-job.org.
+  **Yours, once:** `npx wrangler@4 deploy -c workers/watch/wrangler.toml` (then cron-job.org can be deleted).
+  Also fixed in `server/watch.js`: a post older than the 60-min window but newer than the last crawl was ignored
+  (6734–6735 at 05:07 UTC waited for a dispatch at 07:18) — now any such post starts a crawl once past the grace;
+  a failed crawl no longer blocks until GitHub's schedule — it is retried after 20 min (`WATCH_RETRY`).
 - **Backup without the cron:** open pages now tick `/api/watch/` (no key) every 3 min while visible; one answer a minute
   is shared through Cloudflare's cache, so the channel/GitHub are asked ≤1×/min per data centre.
 - **Publishing waited for the model.** A crawl ran ~10–17 min of AI before its commit and deploy. Now: crawl → commit →
@@ -62,7 +68,7 @@ Tick items off here; move anything that becomes a lasting rule into CLAUDE.md.
 - [ ] Persian homographs / ezafe for the on-device voices (needs a Persian G2P or diacritics in the lexicon; listen to
   20 stories per voice first and list the words that go wrong).
 - [ ] After the backfill: check `/en/` headlines by eye (20 stories) and `/videos/` v2 summaries.
-- [ ] Old README/onboarding still mention `khabar-ai.vercel.app` in places that only matter to the dead deployment.
+- [x] README's deploy section is Cloudflare's now (secrets, limits, the watch Worker); Vercel is only named as disabled.
 
 ## Progress (2026-11-18)
 
@@ -556,7 +562,12 @@ For each spoken line it gives `Span[]` (word → start/end in the clip), plus `w
 - Done: `Masthead.astro` is now the **front panel** on both homes: compact head (live line, name, 4 small stats) + the lead story
   (16:9 picture, big headline) + «مهم‌ترین‌ها»/Top stories (4, `src/lib/front.ts` picks lead/top for fa and en) + ways in;
   the lead's picture lights the panel (`--glow`). `Lead.astro` removed. Tests pass (86).
-- Next: screenshot desktop/mobile/dark again and tune (glow strength on white covers, top list on mobile); rerun the leak scan
-  (Playwright: every text node/aria-label on /en/ pages with [؀-ۿ], as a returning reader) incl. /en/p/<id>/;
-  then SEO pass on the home (meta description length, og:image of the lead, NewsArticle/ItemList JSON-LD check, LCP image);
-  remaining Persian strings in scripts that could run on /en/ (follow.ts titles, social.ts comment labels) if they appear there.
+- Done (later the same day): screenshots desktop/mobile/dark on both homes — the top list no longer stretches to the lead's
+  height on desktop (`.front-top { align-self: start }`); leak scan (Playwright, visible text + aria-label/title/placeholder
+  with Persian letters) on /en/, /en/page/2/, two /en/p/<id>/, a topic, /en/topics/, /en/videos/, about, archive,
+  investigate: none besides the intended «فا»/«فارسی» links (`lang="fa"`), no script errors; SEO on the homes: title/description
+  lengths, WebSite + NewsMediaOrganization + WebPage JSON-LD parse, the lead's picture `fetchpriority="high"`.
+- Done: English fallback headline (`en.ts headline`) split only before a capital, so an all-lower-case tweet became a
+  3-sentence «…» headline (6732, the English home's lead): sentences now start with any letter (abbreviations, initials and
+  list numbers joined back), and an all-lower-case first word is capitalised. 146 of 1,903 English headlines changed, all
+  shorter/cleaner.
