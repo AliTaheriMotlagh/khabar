@@ -1,0 +1,73 @@
+{
+ "id": 6739,
+ "url": "https://t.me/dlmehr/6739",
+ "date": "2026-11-25T16:55:14+00:00",
+ "text": "https://fxtwitter.com/dimitrispapail/status/2125617058331160951?a=Y3ABqG-_MkYNrdSXXk8&s=52",
+ "forwarded_from": null,
+ "digest": false,
+ "hash": "ca796f2af241",
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/dimitrispapail/status/2125617058331160951?a=Y3ABqG-_MkYNrdSXXk8&s=52",
+  "site": "🧵 Thread • FxTwitter",
+  "title": "Dimitris Papailiopoulos (@DimitrisPapail)",
+  "description": "Weigh-space Brain Implants for LLMs!\nI had Claude write small machines and bolt them on the weights of LLMs to patch some of their failure modes. On Qwen3-0.6B it added (in weights) a calc, rule checkers, mistake detectors, even...\"eyes\"\nWhen ON, these…",
+  "image": null
+ },
+ "gholam": {
+  "text": "سلام رفیق! یک پژوهشگر هوش مصنوعی به اسم دیمیتریس ایده جالبی به نام «میکروماشین‌های فضای وزن» یا به قول خودش «ایمپلنت مغزی» برای مدل‌های زبانی معرفی کرده. ماجرا اینه که به جای تغییر دادن وزن‌های اصلی مدل یا وصل کردن ابزار بیرونی، داده دست کلود تا خطاهای مدل رو بگرده و مدارهای کوچیکی مثل ماشین‌حساب، غلط‌گیر یا حتی «چشم» بسازه و بغل مغز مدل ببنده؛ درست مثل این که یک دستیار ریزه‌میزه کنار ذهن مدل بذاری که تا کارش نباشه جیکش درنمیاد و صفر مطلق دخالت می‌کنه! 🧠\n\n• به گفته نویسنده، نصب همین ایمپلنت‌ها روی مدل کوچیک Qwen3-0.6B بدون دست زدن به وزن‌های اصلی، دقت بنچمارک BIG-Bench Hard رو از ۴۱٪ به ۵۵٪ و IFEval رو از ۵۸٪ به ۷۲٪ رسونده؛ همراه با یادگیری تقویتی (RL) هم روی ریاضی GSM8K به ۸۰٪ رسیده (در مقایسه با ۶۸٪ در RL معمولی).\n• حتی با یک ایمپلنت بینایی کوچیک به مدل تمام‌متنی Qwen2.5-0.5B «چشم» دادن تا اعداد دست‌نویس رو بخونه و باهاشون حساب‌کتاب کنه؛ کاری که به گزارش نویسنده فقط با ۳۲ مثال آموزشی به دقت ۹۵٪ رسیده، در حالی که فاین‌تیون معمولی حدود ۱۶ هزار مثال می‌خواسته.\n• البته یک گیر بامزه هم داشته: نویسنده می‌گه مدل موقع تمرین با RL زیادی به ایمپلنت ماشین‌حساب تنبل و وابسته می‌شه، طوری که اگه ایمپلنت رو خاموش کنی، دیگه حساب‌کتاب‌هایی رو هم که قبلاً بلد بوده خراب می‌کنه.\n\nبه گفته او این ایمپلنت‌ها با تنظیم دوباره سیم‌کشی‌شون روی بعضی مدل‌های دیگه هم قابل انتقال هستن و کدهای آزمایشش رو هم منتشر کرده.",
+  "date": "2026-11-25T16:56:08+00:00"
+ },
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/DimitrisPapail/status/2125617058331160951",
+   "domain": "x.com",
+   "author": {
+    "name": "Dimitris Papailiopoulos",
+    "handle": "DimitrisPapail",
+    "avatar": "https://pbs.twimg.com/profile_images/2110916500814974976/yITWbXsw_200x200.jpg"
+   },
+   "text": "Weigh-space Brain Implants for LLMs!\n\nI had Claude write small machines and bolt them on the weights of LLMs to patch some of their failure modes. On Qwen3-0.6B it added (in weights) a calc, rule checkers, mistake detectors, even...\"eyes\"\n\nWhen ON, these implants help the model climb evals:\n\nIFEval 58→72%\nBIG-Bench Hard 41→55%\nGSM8K 68→ 83%\n\nI call them.. weight-space micromachines :)\nblog: https://papail.io/papers/wsm/",
+   "date": 1795621573,
+   "media": [
+    {
+     "type": "video",
+     "src": "https://video.twimg.com/amplify_video/2125617045295235072/vid/avc1/720x720/4QSjEtTKF2W8nt_r.mp4?tag=29",
+     "poster": "https://pbs.twimg.com/amplify_video_thumb/2125617045295235072/img/7VebOxQHOddQa5wl.jpg",
+     "ratio": 1.0,
+     "duration": 9,
+     "gif": false
+    }
+   ],
+   "links": [
+    "https://papail.io/papers/wsm/"
+   ]
+  },
+  {
+   "kind": "link",
+   "url": "https://papail.io/papers/wsm/",
+   "domain": "papail.io",
+   "title": "Weight-Space Micromachines",
+   "description": null,
+   "image": null,
+   "site": "papail.io"
+  }
+ ],
+ "article": {
+  "title": "یک پژوهشگر هوش مصنوعی به اسم دیمیتریس ایده جالبی به نام «میکروماشین‌های فضای وزن» یا به قول خودش «ایمپلنت مغزی» برای مدل‌های زبانی معرفی کرده",
+  "source_title": "Weigh-space Brain Implants for LLMs!",
+  "body": [
+   "یک پژوهشگر هوش مصنوعی به اسم دیمیتریس ایده جالبی به نام «میکروماشین‌های فضای وزن» یا به قول خودش «ایمپلنت مغزی» برای مدل‌های زبانی معرفی کرده. ماجرا اینه که به جای تغییر دادن وزن‌های اصلی مدل یا وصل کردن ابزار بیرونی، داده دست کلود تا خطاهای مدل رو بگرده و مدارهای کوچیکی مثل ماشین‌حساب، غلط‌گیر یا حتی «چشم» بسازه و بغل مغز مدل ببنده؛ درست مثل این که یک دستیار ریزه‌میزه کنار ذهن مدل بذاری که تا کارش نباشه جیکش درنمیاد و صفر مطلق دخالت می‌کنه! 🧠",
+   "• به گفته نویسنده، نصب همین ایمپلنت‌ها روی مدل کوچیک Qwen3-0.6B بدون دست زدن به وزن‌های اصلی، دقت بنچمارک BIG-Bench Hard رو از ۴۱٪ به ۵۵٪ و IFEval رو از ۵۸٪ به ۷۲٪ رسونده؛ همراه با یادگیری تقویتی (RL) هم روی ریاضی GSM8K به ۸۰٪ رسیده (در مقایسه با ۶۸٪ در RL معمولی).",
+   "• حتی با یک ایمپلنت بینایی کوچیک به مدل تمام‌متنی Qwen2.5-0.5B «چشم» دادن تا اعداد دست‌نویس رو بخونه و باهاشون حساب‌کتاب کنه؛ کاری که به گزارش نویسنده فقط با ۳۲ مثال آموزشی به دقت ۹۵٪ رسیده، در حالی که فاین‌تیون معمولی حدود ۱۶ هزار مثال می‌خواسته.",
+   "• البته یک گیر بامزه هم داشته: نویسنده می‌گه مدل موقع تمرین با RL زیادی به ایمپلنت ماشین‌حساب تنبل و وابسته می‌شه، طوری که اگه ایمپلنت رو خاموش کنی، دیگه حساب‌کتاب‌هایی رو هم که قبلاً بلد بوده خراب می‌کنه."
+  ],
+  "why": "به گفته او این ایمپلنت‌ها با تنظیم دوباره سیم‌کشی‌شون روی بعضی مدل‌های دیگه هم قابل انتقال هستن و کدهای آزمایشش رو هم منتشر کرده.",
+  "why_label": "حرف آخر",
+  "tags": [
+   "آنتروپیک"
+  ]
+ },
+ "updated": "2026-11-25T17:09:40+00:00"
+}
