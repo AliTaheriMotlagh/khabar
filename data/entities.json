@@ -14675,6 +14675,12 @@
    "name_en": "Private Intelligence",
    "name_fa": "هوش مصنوعی خصوصی",
    "kind": "product"
+  },
+  {
+   "slug": "satyress-robots",
+   "name_en": "Satyress Robots",
+   "name_fa": "ساتریس رباتس",
+   "kind": "company"
   }
  ]
 }
