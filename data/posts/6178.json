@@ -115,6 +115,13 @@
    "model": "qwen3.5-9b-q4_k_m",
    "v": 2,
    "src": "ce7fca90af94"
+  },
+  "en": {
+   "title": "AI Lab Builder Lor Enters Private Beta",
+   "short": "AI Lab Builder Lor Enters Private Beta",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "4a1dc0709931"
   }
  }
 }

@@ -117,6 +117,13 @@
    "model": "qwen3.5-9b-q4_k_m",
    "v": 2,
    "src": "c995400e2b7a"
+  },
+  "en": {
+   "title": "Sam argues local inference wastes scarce DRAM resources",
+   "short": "Local inference wastes scarce DRAM resources",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "6ccd65ee1ff6"
   }
  }
 }

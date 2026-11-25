@@ -98,6 +98,13 @@
    "model": "qwen3.5-9b-q4_k_m",
    "v": 2,
    "src": "cfc8f6195666"
+  },
+  "en": {
+   "title": "Intel stock crashes over 22% after reporting weaker than expected earnings",
+   "short": "Intel stock crashes over 22% after weak earnings",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "489939f9ba57"
   }
  }
 }

@@ -131,6 +131,13 @@
    "v": 1,
    "src": "02d2b8a95c0c",
    "added": 1
+  },
+  "en": {
+   "title": "Google misses earnings estimates as stock trades at lowest P/E ever",
+   "short": "Google misses earnings, trades at lowest P/E",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "edebdef568cb"
   }
  }
 }

@@ -121,6 +121,13 @@
    "v": 1,
    "src": "c54b7d60c670",
    "added": 1
+  },
+  "en": {
+   "title": "Animates partners with Sony XYN to bring AI companions into physical spaces",
+   "short": "Animates AI companions arrive in physical spaces",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "44a06a0b3a91"
   }
  }
 }

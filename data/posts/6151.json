@@ -123,6 +123,13 @@
    "model": "qwen3.5-9b-q4_k_m",
    "v": 2,
    "src": "3fa12b02b3dc"
+  },
+  "en": {
+   "title": "Y Combinator seeks startups building AI hardware and infrastructure",
+   "short": "YC seeks AI hardware and infrastructure startups",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "3fb4bc45399f"
   }
  }
 }

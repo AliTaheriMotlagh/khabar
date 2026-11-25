@@ -115,6 +115,13 @@
    "model": "qwen3.5-9b-q4_k_m",
    "v": 2,
    "src": "c88e833422e6"
+  },
+  "en": {
+   "title": "Claude API raises max request size to 128 MB",
+   "short": "Claude API request limit increased to 128 MB",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "b0674507165e"
   }
  }
 }

@@ -138,6 +138,13 @@
    "model": "qwen3.5-9b-q4_k_m",
    "v": 2,
    "src": "6bdd7ab3b60e"
+  },
+  "en": {
+   "title": "NVIDIA shares five steps to post-train Nemotron with synthetic data and LoRA",
+   "short": "NVIDIA shares five steps to post-train Nemotron",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "83a73038d199"
   }
  }
 }

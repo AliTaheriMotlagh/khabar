@@ -120,6 +120,13 @@
    "v": 1,
    "src": "49303a81b9f3",
    "added": 1
+  },
+  "en": {
+   "title": "Simulon introduces Reality-Aware Rendering for iPhone",
+   "short": "Simulon launches Reality-Aware Rendering on iPhone",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "0197d423d7ed"
   }
  }
 }

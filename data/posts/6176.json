@@ -138,6 +138,13 @@
    "model": "qwen3.5-9b-q4_k_m",
    "v": 2,
    "src": "06d6263a42be"
+  },
+  "en": {
+   "title": "Google releases Gemini 4 Carbon model with improved cybersecurity scores",
+   "short": "Google releases Gemini 4 Carbon model",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "c18a1900f072"
   }
  }
 }

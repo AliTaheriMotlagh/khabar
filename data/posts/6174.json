@@ -134,6 +134,13 @@
    "model": "qwen3.5-9b-q4_k_m",
    "v": 2,
    "src": "d0134677c5e2"
+  },
+  "en": {
+   "title": "Anthropic revenue in first half of 2026 nearly 400x 2023 total",
+   "short": "Anthropic revenue H1 2026 nearly 400x 2023",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "63c8cc2f5bcf"
   }
  }
 }

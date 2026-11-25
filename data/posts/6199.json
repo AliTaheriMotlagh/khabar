@@ -111,6 +111,13 @@
    "model": "qwen3.5-9b-q4_k_m",
    "v": 2,
    "src": "1aa86b61414b"
+  },
+  "en": {
+   "title": "AI Agent Performs Brain Surgery on Mouse to Reduce Seizures",
+   "short": "AI Agent Performs Brain Surgery on Mouse",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "c0f676df5dc1"
   }
  }
 }

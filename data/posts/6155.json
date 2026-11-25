@@ -117,6 +117,13 @@
    "v": 1,
    "src": "518abb011f1e",
    "added": 2
+  },
+  "en": {
+   "title": "Xplore AI Introduces Real World Engineering Bench For Physical AI",
+   "short": "Xplore AI launches RWE-Bench for physical world AI",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "fde20aad2b66"
   }
  }
 }

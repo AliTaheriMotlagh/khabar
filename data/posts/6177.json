@@ -116,6 +116,13 @@
    "v": 1,
    "src": "59a63894af6f",
    "added": 1
+  },
+  "en": {
+   "title": "HaloBraid raises $7 million seed round led by Seven Seven Six",
+   "short": "HaloBraid raises $7M seed round",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "7259024036a1"
   }
  }
 }

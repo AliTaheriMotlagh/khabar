@@ -115,6 +115,13 @@
    "v": 1,
    "src": "60014bf21723",
    "added": 1
+  },
+  "en": {
+   "title": "Concurrence introduces next chapter of Superintelligent Care",
+   "short": "Concurrence launches Superintelligent Care system",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "d4c2f8641b77"
   }
  }
 }

@@ -88,6 +88,13 @@
    "model": "qwen3.5-9b-q4_k_m",
    "v": 2,
    "src": "e538794e82ba"
+  },
+  "en": {
+   "title": "PostHog doubles usage limits for Pro and Business Premium tiers",
+   "short": "PostHog doubles limits for Pro and Business tiers",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "a56573af7c10"
   }
  }
 }

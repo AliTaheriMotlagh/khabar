@@ -119,6 +119,13 @@
    "model": "qwen3.5-9b-q4_k_m",
    "v": 2,
    "src": "c0e98ff6bca0"
+  },
+  "en": {
+   "title": "Google Search Revenue Share Falls Below 50% For First Time",
+   "short": "Google Search revenue share drops below 50%",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "cbfc942a06e5"
   }
  }
 }

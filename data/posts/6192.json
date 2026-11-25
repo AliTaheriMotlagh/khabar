@@ -108,6 +108,13 @@
    "model": "qwen3.5-9b-q4_k_m",
    "v": 2,
    "src": "eeec7ef93d1b"
+  },
+  "en": {
+   "title": "Scientists reverse 60 years of aging in human cells",
+   "short": "Researchers reverse 60 years of cellular aging",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "b9777038c16f"
   }
  }
 }

@@ -127,6 +127,13 @@
    "v": 1,
    "src": "634ccd949bf7",
    "added": 3
+  },
+  "en": {
+   "title": "Parallel Web Systems launches Decisions API for web-grounded insights",
+   "short": "Parallel launches Decisions API for fresh web data",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "47ba09790238"
   }
  }
 }

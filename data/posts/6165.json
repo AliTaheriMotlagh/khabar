@@ -113,6 +113,13 @@
    "v": 1,
    "src": "2c5dd77c7fad",
    "added": 1
+  },
+  "en": {
+   "title": "Samuel Albanie shares graph he calls most important in world",
+   "short": "Samuel Albanie shares important graph",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "49026d95caad"
   }
  }
 }

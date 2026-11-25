@@ -108,6 +108,13 @@
    "model": "qwen3.5-9b-q4_k_m",
    "v": 2,
    "src": "f2051497bebb"
+  },
+  "en": {
+   "title": "Aleksander Holynski Uses Genie 4 to Talk to Younger Self",
+   "short": "Holynski chats with college self via Genie 4",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "5f86354303bb"
   }
  }
 }

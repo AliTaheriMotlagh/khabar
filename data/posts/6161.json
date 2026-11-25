@@ -133,6 +133,13 @@
    "model": "qwen3.5-9b-q4_k_m",
    "v": 2,
    "src": "28a85174ed9d"
+  },
+  "en": {
+   "title": "Anthropic Acquires Mithril Medicine to Launch Drug Discovery",
+   "short": "Anthropic buys Mithril for drug discovery efforts",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "d10447144788"
   }
  }
 }

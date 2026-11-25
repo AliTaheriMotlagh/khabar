@@ -139,6 +139,13 @@
    "v": 1,
    "src": "4e7854b72326",
    "added": 2
+  },
+  "en": {
+   "title": "Nevis Wealth Raises $70 Million Series B Led by EQT Ventures",
+   "short": "Nevis Wealth raises $70M Series B led by EQT",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "08a67a7815af"
   }
  }
 }

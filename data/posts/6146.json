@@ -129,6 +129,13 @@
    "v": 1,
    "src": "c4877b6845cb",
    "added": 1
+  },
+  "en": {
+   "title": "Liquid AI introduces LFM3 family with tri-hybrid architecture and six model instances",
+   "short": "Liquid AI launches LFM3 with six new models",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "427ab582e1d5"
   }
  }
 }

@@ -122,6 +122,13 @@
    "v": 1,
    "src": "4c1b30dd1bc8",
    "added": 2
+  },
+  "en": {
+   "title": "SpAItial AI introduces Echo-3 world model for phones",
+   "short": "SpAItial AI launches Echo-3 world model",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "3cdff7ef23ad"
   }
  }
 }

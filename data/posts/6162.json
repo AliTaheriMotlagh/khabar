@@ -165,6 +165,13 @@
    "model": "qwen3.5-9b-q4_k_m",
    "v": 2,
    "src": "604dba1c7c42"
+  },
+  "en": {
+   "title": "Claude Opus 5.5 leads AI Index v5 with private test scores",
+   "short": "Claude Opus 5.5 leads new AI Index v5",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "d4e558253029"
   }
  }
 }

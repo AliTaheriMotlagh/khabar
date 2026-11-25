@@ -113,6 +113,13 @@
    "model": "qwen3.5-9b-q4_k_m",
    "v": 2,
    "src": "1f95e3ddae3f"
+  },
+  "en": {
+   "title": "Anthropic to make 1,000 employees worth $100m at $2 trillion market cap",
+   "short": "Anthropic to make 1,000 employees worth $100m",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "0a2b4660f19e"
   }
  }
 }

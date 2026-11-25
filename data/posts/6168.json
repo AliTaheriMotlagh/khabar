@@ -131,6 +131,13 @@
    "model": "qwen3.5-9b-q4_k_m",
    "v": 2,
    "src": "8b6ec4fd277c"
+  },
+  "en": {
+   "title": "Formation Bio Announces $600M Drug Development Accelerator Fund",
+   "short": "Formation Bio launches $600M fund to advance drugs",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "fe04948c2095"
   }
  }
 }

@@ -119,6 +119,13 @@
    "model": "qwen3.5-9b-q4_k_m",
    "v": 2,
    "src": "f69e8757a23b"
+  },
+  "en": {
+   "title": "Meta's Muse AI answers questions with fewer words and more sources",
+   "short": "Meta's Muse AI uses fewer words and more sources",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "cbf7caffa916"
   }
  }
 }

@@ -120,6 +120,13 @@
    "v": 1,
    "src": "c6f21307e57f",
    "added": 1
+  },
+  "en": {
+   "title": "JudgmentLabs opens for general access today",
+   "short": "JudgmentLabs opens for general access",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "c96b5192c08d"
   }
  }
 }

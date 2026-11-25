@@ -135,6 +135,13 @@
    "v": 1,
    "src": "88b9878bf384",
    "added": 1
+  },
+  "en": {
+   "title": "Full Mario 64 Runs Natively at 90FPS in Mixed Reality",
+   "short": "Mario 64 runs natively at 90FPS in mixed reality",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "9b533eec2a62"
   }
  }
 }

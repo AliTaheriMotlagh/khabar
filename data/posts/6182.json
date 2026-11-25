@@ -102,6 +102,13 @@
    "model": "qwen3.5-9b-q4_k_m",
    "v": 2,
    "src": "279ae2e9ca0b"
+  },
+  "en": {
+   "title": "Neuralink enables speech to text and voice at conversational rates in ALS participants",
+   "short": "Neuralink enables speech in ALS patients",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "dcb66597da2d"
   }
  }
 }

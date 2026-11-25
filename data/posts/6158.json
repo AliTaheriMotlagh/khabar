@@ -117,6 +117,13 @@
    "model": "qwen3.5-9b-q4_k_m",
    "v": 2,
    "src": "58cec6f3ffd1"
+  },
+  "en": {
+   "title": "US FEC temporarily shuts down services after hacker breach attempt",
+   "short": "US FEC shuts down services after hacker attempt",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "53857d11c851"
   }
  }
 }

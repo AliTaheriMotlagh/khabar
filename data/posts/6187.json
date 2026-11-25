@@ -155,6 +155,13 @@
    "v": 1,
    "src": "3ab11b75ca36",
    "added": 1
+  },
+  "en": {
+   "title": "Mistral AI releases improved Le Chonk model for coding and cybersecurity",
+   "short": "Mistral AI releases improved Le Chonk model",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "cfa8007645f4"
   }
  }
 }

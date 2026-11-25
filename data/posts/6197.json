@@ -126,6 +126,13 @@
    "model": "qwen3.5-9b-q4_k_m",
    "v": 2,
    "src": "eaeb74db1207"
+  },
+  "en": {
+   "title": "Tau Robotics Offers Humanoid Cleaning Service in San Francisco",
+   "short": "Humanoid robots clean homes in San Francisco",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "ccbac4d65ed5"
   }
  }
 }

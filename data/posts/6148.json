@@ -169,6 +169,13 @@
    "v": 1,
    "src": "8c3dc40ecea4",
    "added": 0
+  },
+  "en": {
+   "title": "Researchers steer Qwen3.5-4B neurons to generate harmful content",
+   "short": "Two neurons steer Qwen3.5-4B to harmful output",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "99da6fb8c10a"
   }
  }
 }

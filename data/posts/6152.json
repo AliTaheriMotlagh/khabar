@@ -152,6 +152,12 @@
    "model": "qwen3.5-9b-q4_k_m",
    "v": 2,
    "src": "4f6d3c7efdba"
+  },
+  "en": {
+   "failed": true,
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "9a65a00f21fe"
   }
  }
 }

@@ -131,6 +131,13 @@
    "model": "qwen3.5-9b-q4_k_m",
    "v": 2,
    "src": "dcf177bbf18b"
+  },
+  "en": {
+   "title": "Anthropic Overtakes NASA and Pentagon as SpaceX's Largest Customer",
+   "short": "Anthropic becomes SpaceX's biggest customer",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "87aae7dbc232"
   }
  }
 }

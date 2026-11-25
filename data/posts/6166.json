@@ -111,6 +111,13 @@
    "model": "qwen3.5-9b-q4_k_m",
    "v": 2,
    "src": "1cae1b3126b1"
+  },
+  "en": {
+   "title": "OpenRouter Serves DeepSeek Traffic on Single GB300 Rack",
+   "short": "OpenRouter handles DeepSeek traffic on one rack",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "eb39c29b5661"
   }
  }
 }

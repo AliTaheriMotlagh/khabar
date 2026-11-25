@@ -138,6 +138,13 @@
    "model": "qwen3.5-9b-q4_k_m",
    "v": 2,
    "src": "89dc1a17b875"
+  },
+  "en": {
+   "title": "Google DeepMind releases first project on economics of AGI",
+   "short": "Google DeepMind releases AGI economics project",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "8056c401e6f3"
   }
  }
 }

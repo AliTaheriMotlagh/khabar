@@ -114,6 +114,13 @@
    "model": "qwen3.5-9b-q4_k_m",
    "v": 2,
    "src": "d806ac948d2e"
+  },
+  "en": {
+   "title": "Amazon stock collapses over 12% after weaker Q3 earnings",
+   "short": "Amazon stock drops 12% on weak Q3 earnings",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "d44a95ac31ce"
   }
  }
 }

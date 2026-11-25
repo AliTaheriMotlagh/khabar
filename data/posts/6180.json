@@ -125,6 +125,13 @@
    "model": "qwen3.5-9b-q4_k_m",
    "v": 2,
    "src": "ffd46e4f92db"
+  },
+  "en": {
+   "title": "Alphabet Misses Q3 Earnings Expectations as EPS Drops 26%",
+   "short": "Alphabet Q3 EPS falls to $2.12 vs $3.01 expected",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "e49886a86b6d"
   }
  }
 }

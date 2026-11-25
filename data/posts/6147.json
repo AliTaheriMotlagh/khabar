@@ -142,6 +142,13 @@
    "v": 1,
    "src": "8c6c3e9e8bad",
    "added": 3
+  },
+  "en": {
+   "title": "Giotto AI launches Alto and Solo sovereign European models",
+   "short": "Giotto AI unveils new sovereign European AI models",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "96bcdbeacca9"
   }
  }
 }
