@@ -68,6 +68,12 @@
   "type": "ابزار و محصول",
   "model": "qwen3.5-9b-q4_k_m",
   "v": 2,
-  "src": "5740eeb9c959"
+  "src": "5740eeb9c959",
+  "en": {
+   "failed": true,
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "825a8a7ab359"
+  }
  }
 }

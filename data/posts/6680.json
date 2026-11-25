@@ -75,6 +75,13 @@
    "v": 1,
    "src": "ed8262e0522b",
    "added": 1
+  },
+  "en": {
+   "title": "Tesla FSD v15 navigates around tree blocking road",
+   "short": "Tesla FSD v15 avoids tree on road",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "5aa11857e1b8"
   }
  },
  "links": [

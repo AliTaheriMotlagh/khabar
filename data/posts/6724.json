@@ -27,7 +27,14 @@
   "type": "ابزار و محصول",
   "model": "qwen3.5-9b-q4_k_m",
   "v": 2,
-  "src": "801a2228d794"
+  "src": "801a2228d794",
+  "en": {
+   "title": "PrismML releases Ternary Bonsai 2.5 27B model",
+   "short": "PrismML releases Ternary Bonsai 2.5 27B model",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "c971ac8c8b77"
+  }
  },
  "links": [
   {

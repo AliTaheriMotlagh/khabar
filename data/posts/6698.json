@@ -129,6 +129,13 @@
    "v": 1,
    "src": "b1a48dba7580",
    "added": 1
+  },
+  "en": {
+   "title": "Embo introduces frontier AI models for intelligent robots",
+   "short": "Embo launches robot brain for general AI",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "e7e0ada93c8a"
   }
  }
 }

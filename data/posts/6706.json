@@ -70,6 +70,13 @@
    "model": "qwen3.5-9b-q4_k_m",
    "v": 2,
    "src": "72dddfca0bc5"
+  },
+  "en": {
+   "title": "Jensen Huang Discloses Additional Affairs Beyond Two Reported",
+   "short": "Jensen Huang Discloses Additional Affairs",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "6ea7263da98a"
   }
  },
  "links": [

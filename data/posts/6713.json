@@ -106,6 +106,13 @@
    "model": "qwen3.5-9b-q4_k_m",
    "v": 2,
    "src": "7b26524cb4e6"
+  },
+  "en": {
+   "title": "Elon Musk gets excruciatingly awkward at Tesla Argentina launch",
+   "short": "Elon Musk awkward at Tesla Argentina launch",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "76ce2b3e067e"
   }
  }
 }

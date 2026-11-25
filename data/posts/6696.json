@@ -93,6 +93,13 @@
    "model": "qwen3.5-9b-q4_k_m",
    "v": 2,
    "src": "5c8f48ee4efb"
+  },
+  "en": {
+   "title": "Investors Warn White House of Recession Risk After AI Stock Unwind",
+   "short": "Investors warn White House of recession risk",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "bf3c4a5ef2b5"
   }
  },
  "links": [

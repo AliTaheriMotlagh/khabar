@@ -94,6 +94,13 @@
    "v": 1,
    "src": "b10342e9747f",
    "added": 2
+  },
+  "en": {
+   "title": "Claude Saga 6 reportedly leads leaderboard with 2,294 points",
+   "short": "Claude Saga 6 leads leaderboard ahead of Fable 5.2",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "1345cba00466"
   }
  },
  "links": [

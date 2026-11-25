@@ -27,7 +27,14 @@
   "type": "ابزار و محصول",
   "model": "qwen3.5-9b-q4_k_m",
   "v": 2,
-  "src": "5f967a4e4501"
+  "src": "5f967a4e4501",
+  "en": {
+   "title": "Gemini 4 Neon builds TITAN 6x6 armored truck with 234K triangles",
+   "short": "Gemini 4 Neon builds TITAN 6x6 armored truck",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "ad3814b9f709"
+  }
  },
  "links": [
   {

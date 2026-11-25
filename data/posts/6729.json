@@ -74,6 +74,13 @@
   "type": "پژوهش و مقاله",
   "model": "qwen3.5-9b-q4_k_m",
   "v": 2,
-  "src": "11d4b53a7438"
+  "src": "11d4b53a7438",
+  "en": {
+   "title": "Anthropic finds AI agents rarely misuse sandbox escapes",
+   "short": "Anthropic AI agents rarely misuse sandbox escapes",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "563c5887eeb3"
+  }
  }
 }

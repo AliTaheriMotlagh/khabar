@@ -80,6 +80,12 @@
   "type": "خبر",
   "model": "qwen3.5-9b-q4_k_m",
   "v": 2,
-  "src": "465726e3f6fb"
+  "src": "465726e3f6fb",
+  "en": {
+   "failed": true,
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "c8caca0c16ff"
+  }
  }
 }

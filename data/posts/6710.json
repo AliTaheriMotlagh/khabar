@@ -85,6 +85,13 @@
   "type": "ابزار و محصول",
   "model": "qwen3.5-9b-q4_k_m",
   "v": 2,
-  "src": "27e289708bd8"
+  "src": "27e289708bd8",
+  "en": {
+   "title": "Tencent releases Hy MT3 third-generation open-source translation models",
+   "short": "Tencent launches Hy MT3 translation models",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "9a135f8211a6"
+  }
  }
 }

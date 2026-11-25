@@ -29,7 +29,14 @@
   "type": "پژوهش و مقاله",
   "model": "qwen3.5-9b-q4_k_m",
   "v": 2,
-  "src": "5a2635b19fe2"
+  "src": "5a2635b19fe2",
+  "en": {
+   "title": "Muse Spark Open hits 30.3% on Harvey Legal Agent Benchmark",
+   "short": "Muse Spark Open tops legal benchmark at 30.3%",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "12920a55758c"
+  }
  },
  "links": [
   {

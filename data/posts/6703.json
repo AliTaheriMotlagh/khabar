@@ -86,6 +86,13 @@
    "model": "qwen3.5-9b-q4_k_m",
    "v": 2,
    "src": "c8d92eb055fa"
+  },
+  "en": {
+   "title": "AI Deactivation Reduces Loneliness and Increases Social Interaction",
+   "short": "AI Deactivation Reduces Loneliness",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "4110d58a418e"
   }
  },
  "links": [

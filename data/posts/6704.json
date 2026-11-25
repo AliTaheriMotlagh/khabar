@@ -107,6 +107,13 @@
    "v": 1,
    "src": "4cc467956970",
    "added": 3
+  },
+  "en": {
+   "title": "Claude model claims proof of Valiant's conjecture VP not equal VNP",
+   "short": "Claude claims proof of Valiant's conjecture",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "bd717b2e0c18"
   }
  },
  "links": [

@@ -29,7 +29,13 @@
   "type": "پژوهش و مقاله",
   "model": "qwen3.5-9b-q4_k_m",
   "v": 2,
-  "src": "8bc679e82df2"
+  "src": "8bc679e82df2",
+  "en": {
+   "failed": true,
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "9198cfa19972"
+  }
  },
  "links": [
   {

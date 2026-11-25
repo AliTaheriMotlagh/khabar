@@ -66,6 +66,13 @@
   "type": "ابزار و محصول",
   "model": "qwen3.5-9b-q4_k_m",
   "v": 2,
-  "src": "b3a67b7f37cf"
+  "src": "b3a67b7f37cf",
+  "en": {
+   "title": "Google Antigravity Adds MCP Apps Support for Interactive Charts",
+   "short": "Google Antigravity now supports MCP Apps",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "aaf3730c0d7f"
+  }
  }
 }

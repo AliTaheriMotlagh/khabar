@@ -90,6 +90,13 @@
    "model": "qwen3.5-9b-q4_k_m",
    "v": 2,
    "src": "4ed068a80c62"
+  },
+  "en": {
+   "title": "Nvidia CEO Jensen Huang apologizes to employees for violating code of conduct",
+   "short": "Nvidia CEO Jensen Huang apologizes to employees",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "f0e6ae997752"
   }
  },
  "links": [

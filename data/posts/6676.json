@@ -98,6 +98,13 @@
    "v": 1,
    "src": "a7559cebf623",
    "added": 7
+  },
+  "en": {
+   "title": "Ashkan Mirzaei presents Modeling Reality in Persian",
+   "short": "Ashkan Mirzaei presents Modeling Reality",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "ed52ddb17832"
   }
  },
  "links": [
