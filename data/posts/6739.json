@@ -69,5 +69,23 @@
    "آنتروپیک"
   ]
  },
- "updated": "2026-11-25T17:09:40+00:00"
+ "updated": "2026-11-25T17:09:40+00:00",
+ "ai": {
+  "title": "ایمپلنت مغزی برای مدل‌ها: دیمیتریس روشی برای ارتقای هوش مصنوعی بدون تغییر وزن‌ها",
+  "short": "ایمپلنت مغزی برای LLM",
+  "topics": [
+   "علم"
+  ],
+  "type": "پژوهش و مقاله",
+  "model": "qwen3.5-9b-q4_k_m",
+  "v": 2,
+  "src": "909579476d83",
+  "en": {
+   "title": "Weight-space micromachines improve LLM performance on evals",
+   "short": "Micromachines boost LLM eval scores",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "2e452a0f11b0"
+  }
+ }
 }
