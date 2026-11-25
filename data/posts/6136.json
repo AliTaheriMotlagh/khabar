@@ -138,6 +138,13 @@
    "model": "qwen3.5-9b-q4_k_m",
    "v": 2,
    "src": "38cc101516d0"
+  },
+  "en": {
+   "title": "Tanishq Mathew Abraham Explains OpenAI Discoveries via Claude Video",
+   "short": "Tanishq Mathew Abraham explains OpenAI findings",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "e7b2e61b38f3"
   }
  }
 }

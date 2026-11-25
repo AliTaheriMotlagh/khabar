@@ -104,6 +104,13 @@
    "model": "qwen3.5-9b-q4_k_m",
    "v": 2,
    "src": "e18ceec541d3"
+  },
+  "en": {
+   "title": "Apple investigating iPhone Duo screen-cracking issue",
+   "short": "Apple investigating iPhone Duo screen cracks",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "f01f5ac6c99d"
   }
  }
 }

@@ -111,6 +111,13 @@
    "v": 1,
    "src": "5a65acf02e0a",
    "added": 2
+  },
+  "en": {
+   "title": "Primitive Research identifies 49 exoplanet candidates from TESS data",
+   "short": "Primitive Research finds 49 exoplanet candidates",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "88b007155ebd"
   }
  }
 }

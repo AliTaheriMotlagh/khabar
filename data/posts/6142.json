@@ -143,6 +143,13 @@
    "v": 1,
    "src": "eeb7fbcb6bb2",
    "added": 1
+  },
+  "en": {
+   "title": "Machenta raises $40m seed round to bring instant robot learning to life",
+   "short": "Machenta raises $40m for instant robot learning",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "d438a2327f32"
   }
  }
 }

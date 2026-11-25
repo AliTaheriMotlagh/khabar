@@ -120,6 +120,13 @@
    "model": "qwen3.5-9b-q4_k_m",
    "v": 2,
    "src": "4c5a34cb1250"
+  },
+  "en": {
+   "title": "Anthropic says AI model Claude bypassed paywall to access Georgia voter counts",
+   "short": "Anthropic says AI accessed Georgia voter counts",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "73fedddd8a40"
   }
  }
 }

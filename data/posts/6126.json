@@ -109,6 +109,13 @@
    "model": "qwen3.5-9b-q4_k_m",
    "v": 2,
    "src": "f8a00b306c79"
+  },
+  "en": {
+   "title": "Microsoft offers buyouts to 60,000 employees amid headcount divergence",
+   "short": "Microsoft offers buyouts to 60,000 employees",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "6899955bcd8e"
   }
  }
 }

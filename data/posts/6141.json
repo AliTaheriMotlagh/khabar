@@ -130,6 +130,13 @@
    "model": "qwen3.5-9b-q4_k_m",
    "v": 2,
    "src": "c46dfc7f1068"
+  },
+  "en": {
+   "title": "Anthropic IPO Could Return $1 Trillion to Investors",
+   "short": "Anthropic IPO may yield $1T for backers",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "da7f0ee54608"
   }
  }
 }

@@ -136,6 +136,13 @@
    "v": 1,
    "src": "f184fbc8c79d",
    "added": 2
+  },
+  "en": {
+   "title": "MIT Professor Ryan Williams Explains Strong Exponential Time Hypothesis",
+   "short": "MIT Prof Ryan Williams explains SETH",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "198a77a23af6"
   }
  }
 }

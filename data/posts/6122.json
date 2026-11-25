@@ -128,6 +128,13 @@
    "v": 1,
    "src": "a9a8d890b619",
    "added": 2
+  },
+  "en": {
+   "title": "Fastlane Introduces Claude for Ads to Generate Winning Campaigns",
+   "short": "Fastlane launches Claude for Ads tool",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "cee2d524e756"
   }
  }
 }

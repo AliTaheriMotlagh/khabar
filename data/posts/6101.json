@@ -127,6 +127,13 @@
    "v": 1,
    "src": "8f5d7a29fbfe",
    "added": 1
+  },
+  "en": {
+   "title": "Replit moves AI spend from Anthropic to OpenAI in $100M deal",
+   "short": "Replit switches AI provider to OpenAI",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "c9c74c2fbdb8"
   }
  }
 }

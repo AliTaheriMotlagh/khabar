@@ -124,6 +124,13 @@
    "model": "qwen3.5-9b-q4_k_m",
    "v": 2,
    "src": "7bb3990ffcb0"
+  },
+  "en": {
+   "title": "Anthropic files S-1 with SEC for proposed IPO",
+   "short": "Anthropic files S-1 for proposed IPO",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "77da6db2c699"
   }
  }
 }

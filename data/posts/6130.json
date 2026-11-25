@@ -106,6 +106,13 @@
    "model": "qwen3.5-9b-q4_k_m",
    "v": 2,
    "src": "ff24beb1fbb5"
+  },
+  "en": {
+   "title": "Anthropic Claude Usage Exceeds Monthly Personnel Costs",
+   "short": "Anthropic Claude usage exceeds staff costs",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "bddecce49b52"
   }
  }
 }

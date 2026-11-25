@@ -119,6 +119,13 @@
    "model": "qwen3.5-9b-q4_k_m",
    "v": 2,
    "src": "d21037f7ff3e"
+  },
+  "en": {
+   "title": "Hamel Husain questions quality of public AI benchmarks",
+   "short": "Hamel Husain questions AI benchmark quality",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "607e5c0dba49"
   }
  }
 }

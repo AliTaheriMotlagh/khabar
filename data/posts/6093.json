@@ -143,6 +143,13 @@
    "model": "qwen3.5-9b-q4_k_m",
    "v": 2,
    "src": "1e583bda5962"
+  },
+  "en": {
+   "title": "NYU Professor Warns $15 Trillion AI Market Is Terrifying For White-Collar Jobs",
+   "short": "NYU Prof: $15T AI market fears job loss",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "61d4e78bbcbf"
   }
  }
 }

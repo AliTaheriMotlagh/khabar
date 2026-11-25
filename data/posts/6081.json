@@ -134,6 +134,13 @@
    "model": "qwen3.5-9b-q4_k_m",
    "v": 2,
    "src": "a854e772c10c"
+  },
+  "en": {
+   "title": "Kimi K3.1 Pro Outperforms GPT-6 Astra in Three.js Test",
+   "short": "Kimi K3.1 Pro beats GPT-6 Astra in benchmark test",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "f6404de1ba4c"
   }
  }
 }

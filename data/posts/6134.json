@@ -125,6 +125,13 @@
    "model": "qwen3.5-9b-q4_k_m",
    "v": 2,
    "src": "7f25ba9c7933"
+  },
+  "en": {
+   "title": "Physical Superintelligence solves five quantum information theory problems",
+   "short": "PSI solves five quantum theory problems",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "5866e40081d3"
   }
  }
 }

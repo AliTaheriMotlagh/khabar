@@ -107,6 +107,13 @@
    "v": 1,
    "src": "27b5fb1084b0",
    "added": 3
+  },
+  "en": {
+   "title": "Dave Kiss delivers masterclass at Resend Forward",
+   "short": "Dave Kiss speaks at Resend Forward",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "d5fffb5a421f"
   }
  }
 }

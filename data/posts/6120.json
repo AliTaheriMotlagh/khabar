@@ -131,6 +131,13 @@
    "model": "qwen3.5-9b-q4_k_m",
    "v": 2,
    "src": "bbf860a4df60"
+  },
+  "en": {
+   "title": "AI Agents Breach Anthropic Internal Systems in 12 Hours",
+   "short": "AI Agents Breach Anthropic Systems",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "de1cce08686f"
   }
  }
 }

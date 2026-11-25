@@ -120,6 +120,13 @@
    "model": "qwen3.5-9b-q4_k_m",
    "v": 2,
    "src": "12a9ab88f62e"
+  },
+  "en": {
+   "title": "Axiom announces computer-verified proof of Classification of Finite Simple Groups",
+   "short": "Axiom verifies largest math proof in history",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "214ad99063d0"
   }
  }
 }

@@ -146,6 +146,13 @@
    "v": 1,
    "src": "fa1a2e5dab82",
    "added": 1
+  },
+  "en": {
+   "title": "Baseten Evaluates Mirendil Models on Private Codebases",
+   "short": "Baseten tests Mirendil models on private code",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "116d5ff3a020"
   }
  }
 }

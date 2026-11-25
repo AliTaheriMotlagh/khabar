@@ -119,6 +119,13 @@
    "model": "qwen3.5-9b-q4_k_m",
    "v": 2,
    "src": "ee6c47673e56"
+  },
+  "en": {
+   "title": "Anthropic S-1 filing discloses only one venture capitalist",
+   "short": "Anthropic S-1 lists only one VC backer",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "bc120839e42d"
   }
  }
 }

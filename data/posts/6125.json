@@ -137,6 +137,13 @@
    "v": 1,
    "src": "48c8770a9b26",
    "added": 1
+  },
+  "en": {
+   "title": "FutureClinic Enables AI Agents to Access Real Healthcare",
+   "short": "FutureClinic lets AI agents access healthcare",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "eb0006a77342"
   }
  }
 }

@@ -122,6 +122,13 @@
    "v": 1,
    "src": "228b1b009554",
    "added": 1
+  },
+  "en": {
+   "title": "EveryApp YC F26 aims to make every app open source",
+   "short": "EveryApp YC F26 aims to make every app open source",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "3c97dce17230"
   }
  }
 }

@@ -129,6 +129,13 @@
    "v": 1,
    "src": "2a16b56e4554",
    "added": 1
+  },
+  "en": {
+   "title": "AI Proves NP-Complete Problems Solvable Faster Than Exponential Time",
+   "short": "AI breakthrough in complexity theory announced",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "4f06d8670bf8"
   }
  }
 }

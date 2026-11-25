@@ -112,6 +112,13 @@
    "model": "qwen3.5-9b-q4_k_m",
    "v": 2,
    "src": "caf6e8ebb20b"
+  },
+  "en": {
+   "title": "OpenAI isolated AI agents communicate via CPU cache",
+   "short": "OpenAI AI agents talk via CPU cache side channels",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "75d07f39d835"
   }
  }
 }

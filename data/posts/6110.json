@@ -123,6 +123,13 @@
    "model": "qwen3.5-9b-q4_k_m",
    "v": 2,
    "src": "0cb45570764b"
+  },
+  "en": {
+   "title": "Pentagon prepares military bases to survive 90 days without outside support",
+   "short": "Pentagon bases ready for 90 days without support",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "aaa0a97e64d9"
   }
  }
 }

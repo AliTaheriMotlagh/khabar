@@ -142,6 +142,13 @@
    "model": "qwen3.5-9b-q4_k_m",
    "v": 2,
    "src": "5d470c53d6b3"
+  },
+  "en": {
+   "title": "New Claude experience launched on iPhone Duo for multitasking",
+   "short": "New Claude experience launched on iPhone Duo",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "d4fb6a1f5da2"
   }
  }
 }

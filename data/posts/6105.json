@@ -111,6 +111,13 @@
    "v": 1,
    "src": "18a527e54b6d",
    "added": 1
+  },
+  "en": {
+   "title": "ETH Zurich teaches robot G1 to climb ladders and more",
+   "short": "ETH Zurich robot G1 learns to climb ladders",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "d8e6fe2ed7c2"
   }
  }
 }

@@ -118,6 +118,13 @@
    "model": "qwen3.5-9b-q4_k_m",
    "v": 2,
    "src": "c74a9635b19a"
+  },
+  "en": {
+   "title": "OpenAI announces three new discoveries in mathematics, computer science and physics",
+   "short": "OpenAI announces three new discoveries",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "8a5765d6c5c0"
   }
  }
 }

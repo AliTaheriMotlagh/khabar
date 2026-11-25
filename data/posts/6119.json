@@ -107,6 +107,13 @@
    "model": "qwen3.5-9b-q4_k_m",
    "v": 2,
    "src": "8c3a81e3d017"
+  },
+  "en": {
+   "title": "AI productivity gains show up in only 15 percent of jobs",
+   "short": "AI boosts productivity in just 15 percent of jobs",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "e66cfd502d31"
   }
  }
 }

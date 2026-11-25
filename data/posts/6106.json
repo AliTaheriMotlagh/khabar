@@ -153,6 +153,13 @@
    "v": 1,
    "src": "e46337f27270",
    "added": 1
+  },
+  "en": {
+   "title": "Nanbeige4.3-33B beats Qwen and Gemma on coding benchmarks",
+   "short": "Nanbeige4.3-33B beats Qwen and Gemma on coding",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "4acc2e0d58d4"
   }
  }
 }

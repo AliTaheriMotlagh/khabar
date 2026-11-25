@@ -107,6 +107,13 @@
    "model": "qwen3.5-9b-q4_k_m",
    "v": 2,
    "src": "b057ec27939c"
+  },
+  "en": {
+   "title": "Nobel laureate Geoffrey Hinton says AI is already conscious",
+   "short": "Geoffrey Hinton claims AI is conscious",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "e79240bed72a"
   }
  }
 }

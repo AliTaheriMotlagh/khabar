@@ -115,6 +115,13 @@
    "model": "qwen3.5-9b-q4_k_m",
    "v": 2,
    "src": "60e0304ec5bd"
+  },
+  "en": {
+   "title": "UC Berkeley math professor stops grading homework after AI use",
+   "short": "Berkeley prof stops grading homework due to AI use",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "ed8655f19835"
   }
  }
 }

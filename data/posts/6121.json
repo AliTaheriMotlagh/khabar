@@ -93,6 +93,13 @@
    "model": "qwen3.5-9b-q4_k_m",
    "v": 2,
    "src": "870119bce8cf"
+  },
+  "en": {
+   "title": "Microsoft offers buyouts to 60,000 workers amid AI cost cuts",
+   "short": "Microsoft offers buyouts to 60,000 workers",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "ca0b67b4e83d"
   }
  }
 }

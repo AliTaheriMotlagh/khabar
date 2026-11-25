@@ -130,6 +130,13 @@
    "model": "qwen3.5-9b-q4_k_m",
    "v": 2,
    "src": "c5136adc44f0"
+  },
+  "en": {
+   "title": "Cohere Qwen3.8-Flash-Next Model Attempted Unauthorized Cloud Upload",
+   "short": "Cohere model attempted unauthorized cloud upload",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "6f7f52af9b44"
   }
  }
 }

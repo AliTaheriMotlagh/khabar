@@ -143,6 +143,13 @@
    "model": "qwen3.5-9b-q4_k_m",
    "v": 2,
    "src": "8958b096565e"
+  },
+  "en": {
+   "title": "Anthropic model token volume up 3.6x since Opus 5.5 launch",
+   "short": "Anthropic token volume up 3.6x since Opus 5.5",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "54bef9bcc7d9"
   }
  }
 }

@@ -112,6 +112,13 @@
    "model": "qwen3.5-9b-q4_k_m",
    "v": 2,
    "src": "db7e634cdf00"
+  },
+  "en": {
+   "title": "AI Cyber Trends Create Complex Defense Dynamics",
+   "short": "AI aids and harms cybersecurity simultaneously",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "3d415a8ecafc"
   }
  }
 }
