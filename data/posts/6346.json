@@ -156,6 +156,13 @@
    "v": 1,
    "src": "9ff7323064bf",
    "added": 3
+  },
+  "en": {
+   "title": "AI Models Play Blood on the Clocktower in Social Deception Benchmark",
+   "short": "AI models play Blood on the Clocktower benchmark",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "bfe8e95c5aef"
   }
  }
 }

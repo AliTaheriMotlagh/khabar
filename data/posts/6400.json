@@ -113,6 +113,13 @@
    "v": 1,
    "src": "3f9bf6d02e15",
    "added": 1
+  },
+  "en": {
+   "title": "Theseus Robotics Restocks Supermarket Shelves Overnight",
+   "short": "Theseus Robotics restocks shelves overnight",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "02c9f2a87890"
   }
  }
 }

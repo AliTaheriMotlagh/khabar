@@ -157,6 +157,13 @@
    "v": 1,
    "src": "f68ff68cbd3b",
    "added": 2
+  },
+  "en": {
+   "title": "Physical Superintelligence proves Aaronson-Ambainis conjecture using non-public Anthropic model",
+   "short": "PSI proves quantum computing conjecture",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "59772880bd2f"
   }
  }
 }

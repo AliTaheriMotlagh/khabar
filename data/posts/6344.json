@@ -158,6 +158,13 @@
    "v": 1,
    "src": "49242f43381c",
    "added": 1
+  },
+  "en": {
+   "title": "Anthropic accused of unethical courting of engineering team for secrets",
+   "short": "Anthropic accused of seeking corporate secrets",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "4713458ad4b0"
   }
  }
 }

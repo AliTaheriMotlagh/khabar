@@ -123,6 +123,13 @@
    "model": "qwen3.5-9b-q4_k_m",
    "v": 2,
    "src": "46df4b3849e7"
+  },
+  "en": {
+   "title": "Spaces are live in muse with chat and pin features",
+   "short": "Spaces live in muse with chat and pin features",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "336643509763"
   }
  }
 }

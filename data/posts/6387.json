@@ -120,6 +120,13 @@
    "model": "qwen3.5-9b-q4_k_m",
    "v": 2,
    "src": "d9ce2d3a6b9b"
+  },
+  "en": {
+   "title": "NVIDIA Board Initiates Independent Investigation Into Foreign Intelligence Effort",
+   "short": "NVIDIA Board launches independent investigation",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "1206d4150330"
   }
  }
 }

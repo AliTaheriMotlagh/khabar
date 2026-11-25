@@ -132,6 +132,13 @@
    "v": 1,
    "src": "e28f51fd2203",
    "added": 1
+  },
+  "en": {
+   "title": "Meta deploys AI tool to catch bugs before code lands",
+   "short": "Meta uses AI to catch bugs before they land",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "357de18b1e6c"
   }
  }
 }

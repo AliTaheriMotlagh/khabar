@@ -139,6 +139,13 @@
    "v": 1,
    "src": "c4f103df2a6e",
    "added": 1
+  },
+  "en": {
+   "title": "Inkling 2 Small scores 31 on AA Intelligence Index",
+   "short": "Inkling 2 Small scores 31 on AA Intelligence Index",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "3da96887d803"
   }
  }
 }

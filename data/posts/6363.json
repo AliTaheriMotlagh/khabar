@@ -152,6 +152,13 @@
    "v": 1,
    "src": "259a10b58058",
    "added": 2
+  },
+  "en": {
+   "title": "Meta brings Muse Wonder specialized models to Muse and Meta AI",
+   "short": "Meta adds Muse Wonder models to its platforms",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "4e4759efacfa"
   }
  }
 }

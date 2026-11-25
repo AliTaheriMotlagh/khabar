@@ -119,6 +119,13 @@
    "model": "qwen3.5-9b-q4_k_m",
    "v": 2,
    "src": "c690cea6073d"
+  },
+  "en": {
+   "title": "Anthropic internal models ahead of AI 2027 tracker estimates",
+   "short": "Anthropic models beat AI 2027 tracker",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "5327288ad780"
   }
  }
 }

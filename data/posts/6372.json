@@ -155,6 +155,13 @@
    "v": 1,
    "src": "895ba885c1dd",
    "added": 4
+  },
+  "en": {
+   "title": "Nous Research introduces Arete-27B to reinforce Western values",
+   "short": "Nous Research releases Arete-27B model",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "8887ef38dacb"
   }
  }
 }

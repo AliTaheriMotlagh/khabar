@@ -147,6 +147,13 @@
    "v": 1,
    "src": "72b439663b0b",
    "added": 3
+  },
+  "en": {
+   "title": "One Lab Winners Receive $10 Million Each For Multi-Year Research",
+   "short": "Four One Lab winners get $10M each",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "ef5ec97e8403"
   }
  }
 }

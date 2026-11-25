@@ -142,6 +142,13 @@
    "v": 1,
    "src": "a1acaa13cca2",
    "added": 5
+  },
+  "en": {
+   "title": "World Labs releases Frameboy demo for real-time Atlas world exploration",
+   "short": "World Labs releases Frameboy demo for Atlas",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "c47e788f5361"
   }
  }
 }

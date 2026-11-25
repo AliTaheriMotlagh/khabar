@@ -117,6 +117,13 @@
    "model": "qwen3.5-9b-q4_k_m",
    "v": 2,
    "src": "dee945307f90"
+  },
+  "en": {
+   "title": "US productivity grew at 3.6% annual rate in past quarter",
+   "short": "US productivity grew 3.6% annually last quarter",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "d7b8c168b66c"
   }
  }
 }

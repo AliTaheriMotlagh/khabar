@@ -135,6 +135,13 @@
    "model": "qwen3.5-9b-q4_k_m",
    "v": 2,
    "src": "4c8b9b25e988"
+  },
+  "en": {
+   "title": "Delaware proposal would let AI agents run entire businesses",
+   "short": "Delaware plan lets AI agents run businesses",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "79220da7c019"
   }
  }
 }

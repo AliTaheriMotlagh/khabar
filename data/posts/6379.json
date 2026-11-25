@@ -142,6 +142,13 @@
    "v": 1,
    "src": "8a1d06ed4ffd",
    "added": 4
+  },
+  "en": {
+   "title": "LLM Agents Re-architect Themselves During Training",
+   "short": "LLMs redesign own architecture during training",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "146e7b7d7dab"
   }
  }
 }

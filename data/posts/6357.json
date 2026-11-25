@@ -123,6 +123,13 @@
    "v": 1,
    "src": "94eeeb7aff69",
    "added": 2
+  },
+  "en": {
+   "title": "Liquid Energy launches solar-powered NanoDC for AI inference",
+   "short": "Liquid Energy launches NanoDC for AI inference",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "5ae5f47f412a"
   }
  }
 }

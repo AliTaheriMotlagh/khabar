@@ -118,6 +118,13 @@
    "v": 1,
    "src": "245e9a9c9a8a",
    "added": 1
+  },
+  "en": {
+   "title": "Duolingo CEO says AI video call costs dropped to under $0.01",
+   "short": "Duolingo AI call costs under $0.01",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "515e96dcdbca"
   }
  }
 }

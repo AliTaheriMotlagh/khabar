@@ -122,6 +122,13 @@
    "model": "qwen3.5-9b-q4_k_m",
    "v": 2,
    "src": "6426a5637d6a"
+  },
+  "en": {
+   "title": "AI helps scientists build and revise complex models",
+   "short": "AI aids scientists in building and revising models",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "a22d197ae44c"
   }
  }
 }

@@ -108,6 +108,13 @@
    "v": 1,
    "src": "ad480f64b740",
    "added": 1
+  },
+  "en": {
+   "title": "TrepoAI introduces hardware that shops for households in background",
+   "short": "TrepoAI launches hardware that shops for you",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "469f44c5b21e"
   }
  }
 }

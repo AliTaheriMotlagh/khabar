@@ -117,6 +117,13 @@
    "v": 1,
    "src": "0fe7d82f25a3",
    "added": 1
+  },
+  "en": {
+   "title": "Nvidia CEO Jensen Huang admits affair, board to launch investigation",
+   "short": "Nvidia CEO Jensen Huang admits affair",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "086088697e4a"
   }
  }
 }

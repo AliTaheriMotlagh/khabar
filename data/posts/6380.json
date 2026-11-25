@@ -120,6 +120,13 @@
    "model": "qwen3.5-9b-q4_k_m",
    "v": 2,
    "src": "ce583b8757b2"
+  },
+  "en": {
+   "title": "AI Paints Autumn Tree by Titrating Own Colors Overnight",
+   "short": "AI creates watercolor by mixing its own shades",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "dd54268e7f1f"
   }
  }
 }

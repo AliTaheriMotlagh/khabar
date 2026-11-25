@@ -106,6 +106,13 @@
    "v": 1,
    "src": "1b1d779e6118",
    "added": 1
+  },
+  "en": {
+   "title": "OpenTable OpenAI Integration Drives 190,000 Restaurant Visits in September",
+   "short": "OpenTable OpenAI integration drives 190k visits",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "ec9853e21349"
   }
  }
 }

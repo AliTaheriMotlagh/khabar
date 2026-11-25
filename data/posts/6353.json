@@ -143,6 +143,13 @@
    "v": 1,
    "src": "27ca59f11a1f",
    "added": 4
+  },
+  "en": {
+   "title": "DeepFinance launches as first ultra-long horizon benchmark for high finance work",
+   "short": "DeepFinance benchmark for high finance work",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "b8c09854a2ee"
   }
  }
 }

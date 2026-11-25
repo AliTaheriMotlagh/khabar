@@ -130,6 +130,13 @@
    "model": "qwen3.5-9b-q4_k_m",
    "v": 2,
    "src": "802c4832a0d8"
+  },
+  "en": {
+   "title": "Boston Dynamics adds wheels to Atlas robot to test RL controller",
+   "short": "Boston Dynamics adds wheels to Atlas robot",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "c2415e29c714"
   }
  }
 }

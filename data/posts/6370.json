@@ -130,6 +130,13 @@
    "v": 1,
    "src": "648a4fab3c94",
    "added": 2
+  },
+  "en": {
+   "title": "Remix lets users edit sites with ChatGPT Business and Enterprise",
+   "short": "Remix integrates ChatGPT for site editing",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "900c7e5f3d90"
   }
  }
 }

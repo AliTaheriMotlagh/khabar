@@ -121,6 +121,13 @@
    "v": 1,
    "src": "4d6ed0f16186",
    "added": 4
+  },
+  "en": {
+   "title": "ElevenLabs Introduces ElevenAgents Campaign Manager For Outbound Teams",
+   "short": "ElevenLabs launches ElevenAgents Campaign Manager",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "229d897f55c7"
   }
  }
 }

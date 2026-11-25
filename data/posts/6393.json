@@ -142,6 +142,13 @@
    "model": "qwen3.5-9b-q4_k_m",
    "v": 2,
    "src": "70e7b59e6b4f"
+  },
+  "en": {
+   "title": "Culper Says Nvidia Has Significant China Problem",
+   "short": "Culper warns Nvidia of China problem",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "99863a0d44eb"
   }
  }
 }

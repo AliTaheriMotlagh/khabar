@@ -128,6 +128,13 @@
    "v": 1,
    "src": "1a7da4ec9382",
    "added": 2
+  },
+  "en": {
+   "title": "Hark launches on iMessage and RCS for travel and payments",
+   "short": "Hark launches on iMessage and RCS",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "a08ceeb80685"
   }
  }
 }

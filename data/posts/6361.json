@@ -112,6 +112,13 @@
    "v": 1,
    "src": "6dd856575f23",
    "added": 1
+  },
+  "en": {
+   "title": "Nio Robotics builds vehicle designed to go everywhere",
+   "short": "Nio Robotics builds vehicle for everywhere",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "905e39ddb8cb"
   }
  }
 }

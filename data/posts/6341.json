@@ -118,6 +118,13 @@
    "model": "qwen3.5-9b-q4_k_m",
    "v": 2,
    "src": "e9e152444f6e"
+  },
+  "en": {
+   "title": "Mystery seller dumps $500 million in data center loans including Stargate site",
+   "short": "Mystery seller dumps $500M in data center loans",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "ab12238a7eef"
   }
  }
 }

@@ -138,6 +138,13 @@
    "v": 1,
    "src": "5fd378a1af93",
    "added": 1
+  },
+  "en": {
+   "title": "ShadowBench tests frontier models on recreating shadow puppets",
+   "short": "ShadowBench tests AI on shadow puppet recreation",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "c73665643f1f"
   }
  }
 }

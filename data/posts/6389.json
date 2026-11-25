@@ -138,6 +138,13 @@
    "v": 1,
    "src": "1948bf2dfa8f",
    "added": 1
+  },
+  "en": {
+   "title": "OpenAI Developers Announce Update Coming Tomorrow",
+   "short": "OpenAI Developers Update Tomorrow",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "56917840a56d"
   }
  }
 }
