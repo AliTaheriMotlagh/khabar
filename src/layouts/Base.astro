@@ -1,5 +1,8 @@
 ---
 import '../styles/global.css';
+// The text font's file for this page's script, preloaded: found late (inside the CSS), its swap shifted the first screen.
+import fontFa from '@fontsource-variable/vazirmatn/files/vazirmatn-arabic-wght-normal.woff2?url';
+import fontEn from '@fontsource-variable/vazirmatn/files/vazirmatn-latin-wght-normal.woff2?url';
 import { SITE } from '../site';
 import { abs, feedRev, url } from '../lib/posts';
 import { FEEDS, type FeedDef } from '../lib/feed';
@@ -95,6 +98,7 @@ const ld = [
 <html lang={en ? 'en' : 'fa'} dir={en ? 'ltr' : 'rtl'} data-alt-lang={switchHref} data-build-latest={rev.latest} data-build-count={rev.count} data-theme="light" data-view="cards" data-media="show" data-size="m" data-spacing="m" data-focus="off">
   <head>
     <meta charset="utf-8" />
+    <link rel="preload" as="font" type="font/woff2" href={lang === 'en' ? fontEn : fontFa} crossorigin />
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
     <title>{fullTitle}</title>
     <meta name="description" content={description} />
