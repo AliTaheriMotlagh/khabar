@@ -14729,6 +14729,12 @@
    "name_en": "LINK",
    "name_fa": "لینک",
    "kind": "product"
+  },
+  {
+   "slug": "pavel-durov",
+   "name_en": "Pavel Durov",
+   "name_fa": "پاول دورف",
+   "kind": "person"
   }
  ]
 }
