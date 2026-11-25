@@ -133,4 +133,14 @@ jobs:
         if: inputs.chain && steps.work.outputs.progress == '1' && steps.work.outputs.pending != '0'
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        run: gh workflow run ai-backfill.yml --ref main -f posts='${{ inputs.posts }}' -f chunk='${{ inputs.chunk }}' -f what='${{ inputs.what }}' -f chain=true
+        # GitHub's dispatch API sometimes answers 500 (2026-11-25): one refusal used to end the chain and fail the run.
+        # Retry with backoff (~8 min in all); only an outage that lasts past that fails it.
+        run: |
+          for wait in 15 30 60 120 240 0; do
+            gh workflow run ai-backfill.yml --ref main -f posts='${{ inputs.posts }}' -f chunk='${{ inputs.chunk }}' -f what='${{ inputs.what }}' -f chain=true && exit 0
+            [ "$wait" -gt 0 ] || break
+            echo "::warning::dispatch refused; retrying in ${wait}s"
+            sleep "$wait"
+          done
+          echo "::error::could not start the next backfill run; dispatch ai-backfill.yml again by hand"
+          exit 1
