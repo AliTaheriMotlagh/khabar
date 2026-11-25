@@ -113,6 +113,13 @@
    "model": "qwen3.5-9b-q4_k_m",
    "v": 2,
    "src": "5cedf841b7f9"
+  },
+  "en": {
+   "title": "DeepSeek V4.1-Flash inference engine achieves 2060 TPS on 8x B300",
+   "short": "DeepSeek V4.1-Flash hits 2060 TPS on 8x B300",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "c2297b72ecf0"
   }
  }
 }

@@ -84,6 +84,13 @@
    "v": 1,
    "src": "c9c5826be107",
    "added": 3
+  },
+  "en": {
+   "title": "Audible launches AI audio previews summarizing book themes and reader feedback",
+   "short": "Audible adds AI summaries to audiobook previews",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "77acf8dc8025"
   }
  },
  "links": [

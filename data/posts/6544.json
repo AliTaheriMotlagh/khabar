@@ -123,6 +123,13 @@
    "v": 1,
    "src": "2e4bbddca732",
    "added": 2
+  },
+  "en": {
+   "title": "Quark: 165M-parameter language model with 128K context",
+   "short": "Quark model uses RL only, no SFT or distillation",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "5218966eb86f"
   }
  }
 }

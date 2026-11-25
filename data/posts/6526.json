@@ -180,6 +180,13 @@
    "model": "qwen3.5-9b-q4_k_m",
    "v": 2,
    "src": "668113b96771"
+  },
+  "en": {
+   "title": "Post claims Marco Rubio backed Nvidia CEO ouster",
+   "short": "Post claims Rubio backed Nvidia CEO ouster",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "36d08cd81222"
   }
  }
 }

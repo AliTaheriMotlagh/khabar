@@ -153,6 +153,13 @@
    "v": 1,
    "src": "027a9c4fc3d8",
    "added": 2
+  },
+  "en": {
+   "title": "Yejin Choi and Carlos Guestrin Launch Noeri to Advance Plural Intelligence",
+   "short": "Noeri raises $110M to advance plural intelligence",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "30d8f6bec1ee"
   }
  }
 }

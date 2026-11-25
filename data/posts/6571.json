@@ -83,6 +83,12 @@
    "v": 1,
    "src": "ff9498efbb88",
    "added": 4
+  },
+  "en": {
+   "failed": true,
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "d10f1ee29938"
   }
  },
  "links": [

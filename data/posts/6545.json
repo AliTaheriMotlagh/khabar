@@ -118,6 +118,13 @@
    "model": "qwen3.5-9b-q4_k_m",
    "v": 2,
    "src": "b8003b26acfc"
+  },
+  "en": {
+   "title": "Ousted Nvidia CEO Jensen Huang discusses possible return",
+   "short": "Ousted Nvidia CEO discusses possible return",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "e2b2bfb0333b"
   }
  }
 }

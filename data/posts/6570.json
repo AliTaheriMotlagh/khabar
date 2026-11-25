@@ -101,6 +101,13 @@
    "v": 1,
    "src": "14c538c2b15c",
    "added": 4
+  },
+  "en": {
+   "title": "Liquid AI releases d1.2 and d1.2-ultra omnimodal decision models",
+   "short": "Liquid AI releases d1.2 and d1.2-ultra models",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "f8ff34d1cc5d"
   }
  },
  "links": [

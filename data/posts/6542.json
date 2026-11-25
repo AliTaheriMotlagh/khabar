@@ -153,6 +153,13 @@
    "v": 1,
    "src": "92955c5c090a",
    "added": 2
+  },
+  "en": {
+   "title": "Nazeem trains text-to-speech model without real human voice",
+   "short": "Nazeem trains TTS model without real human voice",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "1f40279441f1"
   }
  }
 }

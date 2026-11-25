@@ -150,6 +150,13 @@
    "v": 1,
    "src": "ae8e64492962",
    "added": 7
+  },
+  "en": {
+   "title": "Rust and CUDA inference engine for DeepSeek V4.1-Flash built from scratch",
+   "short": "Rust CUDA engine for DeepSeek V4.1-Flash",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "207eebc04254"
   }
  }
 }

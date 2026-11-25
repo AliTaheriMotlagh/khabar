@@ -85,6 +85,13 @@
    "v": 1,
    "src": "0e474e995e1f",
    "added": 2
+  },
+  "en": {
+   "title": "Perplexity Announces Frontier Research Initiative",
+   "short": "Perplexity launches Frontier Research",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "a6f302dbf022"
   }
  },
  "links": [

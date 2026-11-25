@@ -119,6 +119,13 @@
    "model": "qwen3.5-9b-q4_k_m",
    "v": 2,
    "src": "da4c2f605bf7"
+  },
+  "en": {
+   "title": "Physicist Nathaniel Craig shares work with GPT-6 Astra",
+   "short": "Physicist shares work with GPT-6 Astra",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "021b40768684"
   }
  }
 }

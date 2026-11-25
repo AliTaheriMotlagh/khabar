@@ -94,6 +94,13 @@
    "v": 1,
    "src": "95ba394704e5",
    "added": 1
+  },
+  "en": {
+   "title": "Multiple US Banks Report Login Issues and ATM Outages",
+   "short": "US Banks Report Login and ATM Issues",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "1a36598acd21"
   }
  },
  "links": [

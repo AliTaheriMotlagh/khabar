@@ -85,6 +85,13 @@
    "v": 1,
    "src": "664ddbca26ac",
    "added": 4
+  },
+  "en": {
+   "title": "Apple launches new app to study how people use AI for health",
+   "short": "Apple launches new app to study AI health use",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "13682eb0f335"
   }
  },
  "links": [

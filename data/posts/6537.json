@@ -119,6 +119,13 @@
    "model": "qwen3.5-9b-q4_k_m",
    "v": 2,
    "src": "5a238c10acf5"
+  },
+  "en": {
+   "title": "Claude Code 2.1.325 adds experimental Code Mode",
+   "short": "Claude Code 2.1.325 adds experimental Code Mode",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "0890a674ac3d"
   }
  }
 }

@@ -122,6 +122,13 @@
    "v": 1,
    "src": "1b6aa76ceca2",
    "added": 5
+  },
+  "en": {
+   "title": "Databricks AI Index shows trends from over 10,000 companies",
+   "short": "Databricks AI Index covers 10,000 companies",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "44ca53c4451b"
   }
  },
  "links": [

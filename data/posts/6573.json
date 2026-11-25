@@ -105,6 +105,13 @@
    "v": 1,
    "src": "6547ba560845",
    "added": 4
+  },
+  "en": {
+   "title": "GRPO matches full fine-tuning on math with fewer than 0.05% weight changes",
+   "short": "GRPO beats base model on math without new weights",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "84dc8971c87d"
   }
  },
  "links": [

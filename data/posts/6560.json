@@ -89,6 +89,13 @@
    "v": 1,
    "src": "6f4c2b66de7f",
    "added": 2
+  },
+  "en": {
+   "title": "Meta opens waitlist for Muse Charm pocket-sized AI device",
+   "short": "Meta opens waitlist for Muse Charm AI device",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "585a916d4883"
   }
  },
  "links": [

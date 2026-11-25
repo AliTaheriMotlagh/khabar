@@ -142,6 +142,13 @@
    "v": 1,
    "src": "0e9b60aa217b",
    "added": 3
+  },
+  "en": {
+   "title": "Cursor security breach exposes customer credentials and AI infrastructure",
+   "short": "Cursor breach exposes credentials and AI tools",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "934dfa314f3a"
   }
  }
 }

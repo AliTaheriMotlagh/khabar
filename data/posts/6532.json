@@ -148,6 +148,13 @@
    "v": 1,
    "src": "88575b828548",
    "added": 2
+  },
+  "en": {
+   "title": "Fable 5.2 Learns Benchmark Paper and Suspects Traps",
+   "short": "Fable 5.2 reads benchmark paper and suspects traps",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "cb57c186fb09"
   }
  }
 }

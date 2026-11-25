@@ -122,6 +122,13 @@
    "v": 1,
    "src": "059b53de19d0",
    "added": 6
+  },
+  "en": {
+   "title": "Qwen4-Max AI Model Launched with 1M-Token Context and Lower Costs",
+   "short": "Qwen4-Max AI model launched with lower costs",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "d9e3a645a327"
   }
  },
  "links": [

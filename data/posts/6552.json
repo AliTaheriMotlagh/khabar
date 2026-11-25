@@ -94,6 +94,13 @@
    "v": 1,
    "src": "0bc4030ec5b8",
    "added": 6
+  },
+  "en": {
+   "title": "Qwen4-Max lands at number six in Code Arena WebDev rankings",
+   "short": "Qwen4-Max ranks sixth in Code Arena WebDev",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "ee3f612519f3"
   }
  },
  "links": [

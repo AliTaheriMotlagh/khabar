@@ -104,6 +104,13 @@
    "v": 1,
    "src": "ab9e2cf53f0b",
    "added": 1
+  },
+  "en": {
+   "title": "Claude AI uncovers hundreds of theorems in Kurt Gödel's notes",
+   "short": "Claude AI finds hundreds of Gödel theorems",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "27f4894ef89d"
   }
  },
  "links": [

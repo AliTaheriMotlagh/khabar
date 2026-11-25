@@ -144,6 +144,13 @@
    "v": 1,
    "src": "4bb969a12287",
    "added": 1
+  },
+  "en": {
+   "title": "AI Model Fits on Floppy Disk and Runs on Pentium",
+   "short": "367K Parameter Model Runs on 1995 Hardware",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "9b66c804a4fe"
   }
  }
 }

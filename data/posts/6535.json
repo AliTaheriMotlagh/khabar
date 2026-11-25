@@ -113,6 +113,13 @@
    "model": "qwen3.5-9b-q4_k_m",
    "v": 2,
    "src": "f22ba9870957"
+  },
+  "en": {
+   "title": "Alon Amit shares Carbon AI math error after low thinking setting",
+   "short": "Alon Amit shares Carbon AI math error",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "02824985d79a"
   }
  }
 }

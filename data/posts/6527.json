@@ -140,6 +140,13 @@
    "v": 1,
    "src": "47757ea49282",
    "added": 4
+  },
+  "en": {
+   "title": "Zhejiang University paper shows bad AI can train another to excel",
+   "short": "Bad AI trains better AI by reviewing moves",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "ad710147b8d7"
   }
  }
 }
