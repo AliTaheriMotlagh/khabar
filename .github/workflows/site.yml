@@ -196,22 +196,25 @@ jobs:
       - name: AI, second pass (extras, voices' names, related, threads, podcast, video summaries, comment checks)
         if: steps.ai.outputs.pending > 0
         continue-on-error: true
-        timeout-minutes: 15
+        timeout-minutes: 22
         env:
           AI_MORE_BUDGET: '240'
+          PYTHONUNBUFFERED: '1'
           KV_REST_API_URL: ${{ secrets.KV_REST_API_URL }}
           KV_REST_API_TOKEN: ${{ secrets.KV_REST_API_TOKEN }}
           KV_PREFIX: ${{ vars.KV_PREFIX }}
         run: |
           curl -sf -m 2 http://127.0.0.1:8080/health >/dev/null || scripts/ai-server.sh
-          step() { "$@" || echo "::warning::$* failed"; }
-          step python -m pipeline.ai_more
-          step python -m pipeline.related
+          # Each tool gets its own cap (SIGINT, then KILL 20 s later), so one slow answer can't starve the ones after it
+          # (11-25: a daily brief ran into the step's limit and the videos and comment checks never ran).
+          step() { s=$1; shift; timeout -s INT -k 20 "$s" "$@" || echo "::warning::$* failed or ran out of time (${s}s)"; }
+          step 420 python -m pipeline.ai_more
+          step 120 python -m pipeline.related
           # Each thread's name and «ماجرا تا اینجا» (pipeline/threads.py): only threads that grew.
-          step python -m pipeline.threads
-          step python -m pipeline.daily
-          step python -m pipeline.videos --summarize --limit=1
-          step python -m pipeline.comments
+          step 180 python -m pipeline.threads
+          step 420 python -m pipeline.daily
+          step 240 python -m pipeline.videos --summarize --limit=1
+          step 120 python -m pipeline.comments
       - name: Commit the extras
         id: commit_more
         if: steps.ai.outputs.pending > 0

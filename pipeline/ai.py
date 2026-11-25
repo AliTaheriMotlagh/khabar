@@ -38,6 +38,8 @@ AI_MODEL = os.getenv("AI_MODEL", "qwen3.5-9b-q4_k_m")
 AI_BUDGET = float(os.getenv("AI_BUDGET", "300"))  # seconds of model time per run; the rest waits for the next run
 AI_RECENT_DAYS = float(os.getenv("AI_RECENT_DAYS", "3"))  # a normal run only looks at posts this new
 AI_TIMEOUT = float(os.getenv("AI_TIMEOUT", "180"))
+# Seconds per answer token on the runner (Qwen3.5-9B on 4 CPU cores ≈ 4–5 tokens/s), for long answers' wait.
+AI_SEC_PER_TOKEN = float(os.getenv("AI_SEC_PER_TOKEN", "0.25"))
 PROMPT_V = 2  # bump when the prompt or the rules change: every post is worked out again
 # v2: topics defined one by one, and kept only when the text names them (`grounded`): the site uses them since v2.
 
@@ -209,14 +211,17 @@ def chat(http: httpx.Client, system: str, examples: list, text: str, schema: dic
         # Qwen3.5 thinks before it answers unless told not to: slower, and nothing to gain here.
         "chat_template_kwargs": {"enable_thinking": False},
     }
+    # A long answer (the daily brief: up to ~1,900 tokens) takes longer than AI_TIMEOUT on the runner's CPU by itself,
+    # so the wait grows with max_tokens — a fixed wait cut it off and the retry started over from nothing.
+    wait = max(AI_TIMEOUT, 90 + AI_SEC_PER_TOKEN * max_tokens)
     try:
-        resp = http.post(f"{AI_URL}/chat/completions", json=body, timeout=AI_TIMEOUT)
+        resp = http.post(f"{AI_URL}/chat/completions", json=body, timeout=wait)
     except httpx.TimeoutException:
         # Slow, not gone: a run's first answer also reads the long shared instructions and examples (60–95 s on the
         # runner, now and then over AI_TIMEOUT). One more try with twice the time; a second timeout is a TransportError
         # for the caller (`server_gone`).
-        print(f"  … {name}: no answer in {AI_TIMEOUT:.0f}s, trying once more")
-        resp = http.post(f"{AI_URL}/chat/completions", json=body, timeout=2 * AI_TIMEOUT)
+        print(f"  … {name}: no answer in {wait:.0f}s, trying once more", flush=True)
+        resp = http.post(f"{AI_URL}/chat/completions", json=body, timeout=2 * wait)
     resp.raise_for_status()
     content = resp.json()["choices"][0]["message"]["content"]
     return json.loads(content)
