@@ -112,6 +112,13 @@
    "model": "qwen3.5-9b-q4_k_m",
    "v": 2,
    "src": "99f187d6cb7d"
+  },
+  "en": {
+   "title": "MIT researchers marooned 13 AIs on a virtual island",
+   "short": "MIT maroons 13 AIs on virtual island",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "eac8702854fd"
   }
  }
 }

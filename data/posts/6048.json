@@ -119,6 +119,13 @@
    "model": "qwen3.5-9b-q4_k_m",
    "v": 2,
    "src": "717b640c54e4"
+  },
+  "en": {
+   "title": "Anthropics CIO warns situation will worsen before improving",
+   "short": "Anthropics CIO warns of worsening situation",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "1f782f6688a1"
   }
  }
 }

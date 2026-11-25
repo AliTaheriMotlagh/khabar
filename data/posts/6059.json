@@ -117,6 +117,13 @@
    "model": "qwen3.5-9b-q4_k_m",
    "v": 2,
    "src": "2a45ac708c00"
+  },
+  "en": {
+   "title": "OpenAI CEO Sam Altman: Models Find Hardware-Level Bugs",
+   "short": "OpenAI CEO warns models find hardware-level bugs",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "8a4a862f6b8c"
   }
  }
 }

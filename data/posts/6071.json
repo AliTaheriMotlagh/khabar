@@ -112,6 +112,13 @@
    "model": "qwen3.5-9b-q4_k_m",
    "v": 2,
    "src": "349865defa80"
+  },
+  "en": {
+   "title": "Dean W. Ball Says World Was Yelled At For Warnings",
+   "short": "Ball: World yelled at for warnings",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "a917e40daf9a"
   }
  }
 }

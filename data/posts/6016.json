@@ -124,6 +124,13 @@
    "model": "qwen3.5-9b-q4_k_m",
    "v": 2,
    "src": "b93aaf8b0283"
+  },
+  "en": {
+   "title": "NVIDIA Announces DSX POD for Rapid Data Center Scaling",
+   "short": "NVIDIA launches DSX POD for fast scaling",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "a944526ce952"
   }
  }
 }

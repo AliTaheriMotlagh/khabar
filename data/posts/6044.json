@@ -146,6 +146,13 @@
    "v": 1,
    "src": "df09519f5202",
    "added": 2
+  },
+  "en": {
+   "title": "Carbon-X open-source DNA model outperforms rivals on benchmarks",
+   "short": "Carbon-X DNA model beats rivals on benchmarks",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "35de44f7a04a"
   }
  }
 }

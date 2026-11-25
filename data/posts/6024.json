@@ -155,6 +155,13 @@
    "v": 1,
    "src": "8d0d8cdde733",
    "added": 2
+  },
+  "en": {
+   "title": "Applied Compute launches Shift-1 coding router to cut costs by 55%",
+   "short": "Applied Compute launches Shift-1 coding router",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "ff5fe8e93fc9"
   }
  }
 }

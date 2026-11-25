@@ -106,6 +106,13 @@
    "model": "qwen3.5-9b-q4_k_m",
    "v": 2,
    "src": "23050928a897"
+  },
+  "en": {
+   "title": "Elon Musk becomes largest individual political donor in US history",
+   "short": "Elon Musk donates $446M to US midterm elections",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "3bc36042a29c"
   }
  }
 }

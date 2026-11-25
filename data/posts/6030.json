@@ -130,6 +130,13 @@
    "v": 1,
    "src": "927dbbfa4fa2",
    "added": 1
+  },
+  "en": {
+   "title": "Anthropic opens research preview of Claude Duet proactive agent app",
+   "short": "Claude Duet app preview opens as proactive agent",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "fa3ecdafb632"
   }
  }
 }

@@ -124,6 +124,13 @@
    "model": "qwen3.5-9b-q4_k_m",
    "v": 2,
    "src": "9aa6e89c5cd9"
+  },
+  "en": {
+   "title": "Claude Security keeps up with code changes in public beta",
+   "short": "Claude Security updates scans as code changes",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "44cf6cb47a07"
   }
  }
 }

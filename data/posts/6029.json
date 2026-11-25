@@ -151,6 +151,13 @@
    "v": 1,
    "src": "79d3164fa518",
    "added": 1
+  },
+  "en": {
+   "title": "AI and Bio firms report major breakthroughs in protein design and drug discovery",
+   "short": "AI and bio firms report major breakthroughs",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "7f3faa4d2303"
   }
  }
 }

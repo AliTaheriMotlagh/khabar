@@ -160,6 +160,13 @@
    "model": "qwen3.5-9b-q4_k_m",
    "v": 2,
    "src": "2043ae7dd63c"
+  },
+  "en": {
+   "title": "Recursive_SI releases Flint local coding model built in four months",
+   "short": "Recursive_SI releases Flint local coding model",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "369a1acc1c80"
   }
  }
 }

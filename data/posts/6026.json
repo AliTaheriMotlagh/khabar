@@ -119,6 +119,13 @@
    "model": "qwen3.5-9b-q4_k_m",
    "v": 2,
    "src": "289d946f8027"
+  },
+  "en": {
+   "title": "Demis Hassabis shortens AGI timeline to two to three years",
+   "short": "Hassabis predicts AGI in two to three years",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "4e197983bb3f"
   }
  }
 }

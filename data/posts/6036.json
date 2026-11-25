@@ -133,6 +133,13 @@
    "v": 1,
    "src": "5ae7581b6955",
    "added": 2
+  },
+  "en": {
+   "title": "Neolabs sees rapid progress with RL, funding and open coding models",
+   "short": "Neolabs advances with RL, funding and open coding",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "bc7127d33a8f"
   }
  }
 }

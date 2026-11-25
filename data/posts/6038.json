@@ -151,6 +151,13 @@
    "model": "qwen3.5-9b-q4_k_m",
    "v": 2,
    "src": "c4053af19b0f"
+  },
+  "en": {
+   "title": "Jensen Huang demos Hermes Agent building simulated training environment",
+   "short": "Jensen Huang demos Hermes Agent",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "149a6301c02d"
   }
  }
 }

@@ -105,6 +105,13 @@
    "model": "qwen3.5-9b-q4_k_m",
    "v": 2,
    "src": "3620d4e57034"
+  },
+  "en": {
+   "title": "SF Dating Pool Dries Up as AI Companies Hire Beautiful Women",
+   "short": "SF hires women to charm investors amid AI boom",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "4d2745413042"
   }
  }
 }

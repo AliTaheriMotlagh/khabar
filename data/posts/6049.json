@@ -105,6 +105,13 @@
    "model": "qwen3.5-9b-q4_k_m",
    "v": 2,
    "src": "8706e79f7e4a"
+  },
+  "en": {
+   "title": "Quest Diagnostics hacked, patient data exposed",
+   "short": "Quest Diagnostics hacked, patient data exposed",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "c8a2cf02305c"
   }
  }
 }

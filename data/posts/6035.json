@@ -124,6 +124,13 @@
    "v": 1,
    "src": "d4940e204540",
    "added": 2
+  },
+  "en": {
+   "title": "Flapping Airplanes develops world's most complete megakernel framework",
+   "short": "Flapping Airplanes develops megakernel framework",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "d01d6a2de2a2"
   }
  }
 }

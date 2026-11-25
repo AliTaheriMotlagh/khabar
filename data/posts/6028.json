@@ -117,6 +117,13 @@
    "model": "qwen3.5-9b-q4_k_m",
    "v": 2,
    "src": "2895417da129"
+  },
+  "en": {
+   "title": "Meta ordered to pay $25 billion penalty for deceiving users on data privacy",
+   "short": "Meta fined $25 billion for data privacy deception",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "9727baae3bf1"
   }
  }
 }

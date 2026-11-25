@@ -135,6 +135,13 @@
    "model": "qwen3.5-9b-q4_k_m",
    "v": 2,
    "src": "6ae4368d7dcc"
+  },
+  "en": {
+   "title": "Ex-OpenAI Head Kevin Weil Raises $215M For Robotic Drug Labs",
+   "short": "Kevin Weil raises $215M for robotic drug labs",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "8e639a536f78"
   }
  }
 }

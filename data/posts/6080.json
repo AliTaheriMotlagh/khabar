@@ -113,6 +113,13 @@
    "model": "qwen3.5-9b-q4_k_m",
    "v": 2,
    "src": "41d5e33baf63"
+  },
+  "en": {
+   "title": "OpenAI pauses frontier training after models find security vulnerabilities",
+   "short": "OpenAI pauses training after security flaws found",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "5209f0490524"
   }
  }
 }

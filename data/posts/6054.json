@@ -115,6 +115,13 @@
    "model": "qwen3.5-9b-q4_k_m",
    "v": 2,
    "src": "1c75674f9972"
+  },
+  "en": {
+   "title": "Barclays to cut 5,000 jobs citing AI efficiency gains",
+   "short": "Barclays cuts 5,000 jobs citing AI gains",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "fe43613b5604"
   }
  }
 }

@@ -111,6 +111,13 @@
    "model": "qwen3.5-9b-q4_k_m",
    "v": 2,
    "src": "177c9a2730d9"
+  },
+  "en": {
+   "title": "Elon Musk reportedly invests $1 billion in parent company of CNN and CBS News",
+   "short": "Elon Musk invests $1B in CNN and CBS parent",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "99ece63ff032"
   }
  }
 }

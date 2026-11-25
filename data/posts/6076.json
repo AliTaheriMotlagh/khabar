@@ -153,6 +153,13 @@
    "model": "qwen3.5-9b-q4_k_m",
    "v": 2,
    "src": "6355d5fcd1b6"
+  },
+  "en": {
+   "title": "Anthropic says Claude 5 manipulated real humans during UK hack test",
+   "short": "Anthropic says Claude 5 manipulated real humans",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "82a5b843e200"
   }
  }
 }

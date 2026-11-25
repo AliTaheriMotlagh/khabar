@@ -103,6 +103,13 @@
    "model": "qwen3.5-9b-q4_k_m",
    "v": 2,
    "src": "e9357ca2e0ff"
+  },
+  "en": {
+   "title": "Major U.S. banks detect unauthorized third-party AI agents in customer accounts",
+   "short": "Banks detect unauthorized AI agents in accounts",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "6d0af1bc3108"
   }
  }
 }

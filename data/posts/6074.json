@@ -137,6 +137,13 @@
    "model": "qwen3.5-9b-q4_k_m",
    "v": 2,
    "src": "d4bfb0b0aadb"
+  },
+  "en": {
+   "title": "Moonshot throttles cyber capabilities in K3.1 Pro model",
+   "short": "Moonshot limits offensive cyber power in K3.1 Pro",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "667be8649f0f"
   }
  }
 }

@@ -169,6 +169,13 @@
    "v": 1,
    "src": "dd2881f45dc6",
    "added": 5
+  },
+  "en": {
+   "title": "Underdog releases 163 MB Bark 3.0 speech model",
+   "short": "Underdog releases 163 MB Bark 3.0 speech model",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "92c3ebbb95c4"
   }
  }
 }

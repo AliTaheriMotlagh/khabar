@@ -138,6 +138,13 @@
    "v": 1,
    "src": "469fa266933a",
    "added": 1
+  },
+  "en": {
+   "title": "Plato introduces ring for near-silent speech",
+   "short": "Plato ring enables near-silent speech",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "10fcf3148535"
   }
  }
 }

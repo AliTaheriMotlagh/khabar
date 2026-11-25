@@ -113,6 +113,13 @@
    "model": "qwen3.5-9b-q4_k_m",
    "v": 2,
    "src": "3a69bbfcb116"
+  },
+  "en": {
+   "title": "Fable 5.1 Intelligence Local Model Released Today",
+   "short": "Fable 5.1 intelligence local model released",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "651c433e58fc"
   }
  }
 }

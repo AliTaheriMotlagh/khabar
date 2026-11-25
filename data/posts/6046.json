@@ -124,6 +124,13 @@
    "model": "qwen3.5-9b-q4_k_m",
    "v": 2,
    "src": "5eb8c6245bed"
+  },
+  "en": {
+   "title": "Microsoft AI diagnostic system beats doctors on hard cases",
+   "short": "Microsoft AI beats doctors on hard cases",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "dc829abe824f"
   }
  }
 }

@@ -160,6 +160,13 @@
    "model": "qwen3.5-9b-q4_k_m",
    "v": 2,
    "src": "b4781da9bc52"
+  },
+  "en": {
+   "title": "Kimi K3.1 Pro beats US frontier models on six benchmarks",
+   "short": "Kimi K3.1 Pro outperforms US models on benchmarks",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "c69fb6f3ba59"
   }
  }
 }

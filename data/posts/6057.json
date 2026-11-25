@@ -125,6 +125,13 @@
    "v": 1,
    "src": "0dc2ce34966b",
    "added": 2
+  },
+  "en": {
+   "title": "Oracle issues emergency alert for critical Java and GraalVM vulnerability",
+   "short": "Oracle warns of critical Java and GraalVM flaw",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "ae4f89609462"
   }
  }
 }

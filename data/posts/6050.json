@@ -117,6 +117,13 @@
    "v": 1,
    "src": "8506736c9ac8",
    "added": 1
+  },
+  "en": {
+   "title": "Palmer Luckey and Ben Lamm launch Warhound with $200M funding",
+   "short": "Warhound launches with $200M funding",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "3ce51bbae842"
   }
  }
 }

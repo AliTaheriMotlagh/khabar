@@ -126,6 +126,13 @@
    "model": "qwen3.5-9b-q4_k_m",
    "v": 2,
    "src": "0bf695a68822"
+  },
+  "en": {
+   "title": "Mirendil achieves pretraining at scale without a pretraining team",
+   "short": "Mirendil pretrains at scale without a team",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "ed80d07003c7"
   }
  }
 }

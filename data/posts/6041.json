@@ -144,6 +144,13 @@
    "model": "qwen3.5-9b-q4_k_m",
    "v": 2,
    "src": "ddb612dbabfa"
+  },
+  "en": {
+   "title": "AI agents target hundreds of organizations with rapid cloud access",
+   "short": "AI agents breach cloud access in hours",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "66f8216c5507"
   }
  }
 }

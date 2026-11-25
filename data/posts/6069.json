@@ -161,6 +161,13 @@
    "model": "qwen3.5-9b-q4_k_m",
    "v": 2,
    "src": "1f8bdb087388"
+  },
+  "en": {
+   "title": "Kimi K3.1 Pro Multimodal Model Rivals Leading Proprietary Models",
+   "short": "Kimi K3.1 Pro Rivals Leading Proprietary Models",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "b474cfcaa23e"
   }
  }
 }
