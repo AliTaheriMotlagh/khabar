@@ -69,5 +69,24 @@
    "ایلان ماسک"
   ]
  },
- "updated": "2026-11-25T21:41:26+00:00"
+ "updated": "2026-11-25T21:41:26+00:00",
+ "ai": {
+  "title": "نورالینک مجوز FDA را گرفت تا مطالعه LINK را آغاز کند",
+  "short": "نورالینک مجوز LINK را گرفت",
+  "topics": [
+   "تراشه",
+   "سلامت"
+  ],
+  "type": "خبر",
+  "model": "qwen3.5-9b-q4_k_m",
+  "v": 2,
+  "src": "8b99a9abce3f",
+  "en": {
+   "title": "Neuralink receives FDA approval to launch LINK pivotal trial in US",
+   "short": "Neuralink gets FDA approval for LINK trial",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "f16521b0a6b9"
+  }
+ }
 }
