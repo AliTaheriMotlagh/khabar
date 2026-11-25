@@ -549,3 +549,14 @@ For each spoken line it gives `Span[]` (word → start/end in the clip), plus `w
 - Which token does the GitHub email name, and its expiry date? (Assumed: `GITHUB_DISPATCH_TOKEN`.)
 - `type` and video categories: OK with the proposed lists?
 - Should AI titles replace Gholam's first sentence everywhere, or only on cards/feeds while the story page keeps his sentence as the headline?
+
+## 2026-11-25 — English digits/words + home front panel (in progress)
+- Done: English pages no longer show Persian numbers/words: `core.ts` `fmtNum`/`compact` follow `<html lang>` (`isEn`, `L(fa, en)`);
+  game.ts «تازه» badge + «seen» divider, app.ts save-button label, CSS counters (`.brief-list`, `.st-top`) decimal on `:root[lang=en]`.
+- Done: `Masthead.astro` is now the **front panel** on both homes: compact head (live line, name, 4 small stats) + the lead story
+  (16:9 picture, big headline) + «مهم‌ترین‌ها»/Top stories (4, `src/lib/front.ts` picks lead/top for fa and en) + ways in;
+  the lead's picture lights the panel (`--glow`). `Lead.astro` removed. Tests pass (86).
+- Next: screenshot desktop/mobile/dark again and tune (glow strength on white covers, top list on mobile); rerun the leak scan
+  (Playwright: every text node/aria-label on /en/ pages with [؀-ۿ], as a returning reader) incl. /en/p/<id>/;
+  then SEO pass on the home (meta description length, og:image of the lead, NewsArticle/ItemList JSON-LD check, LCP image);
+  remaining Persian strings in scripts that could run on /en/ (follow.ts titles, social.ts comment labels) if they appear there.

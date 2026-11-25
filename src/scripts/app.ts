@@ -1,5 +1,5 @@
 // Client behaviour for every page. Everything is progressive: the site works without JS.
-import { $, $$, BASE, PAGE_CACHE, fmtNum, getSaved, relTime, store, tapAudio, toast, track, type Entry } from './core';
+import { $, $$, BASE, L, PAGE_CACHE, fmtNum, getSaved, relTime, store, tapAudio, toast, track, type Entry } from './core';
 import { award, clearSeen, markAllSeen, markNew, recordRead, renderMe, unreadTest } from './game';
 import { STORY_SHOW, TZ, decodeStories, pickStories, tehranDay, type StoryOrder, type StoryShow } from '../lib/time';
 import { SITE } from '../site';
@@ -141,7 +141,7 @@ function renderSaved() {
   $$('[data-save]').forEach((b) => {
     const on = ids.has(Number(b.dataset.id));
     b.setAttribute('aria-pressed', String(on));
-    b.setAttribute('aria-label', on ? 'حذف از ذخیره‌ها' : 'ذخیره برای بعد');
+    b.setAttribute('aria-label', on ? L('حذف از ذخیره‌ها', 'Remove from saved') : L('ذخیره برای بعد', 'Save for later'));
   });
 }
 function toggleSave(btn: HTMLElement) {

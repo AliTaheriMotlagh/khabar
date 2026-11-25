@@ -74,8 +74,13 @@ export function card(id: number): Promise<CardJson | null> {
 }
 export const cardNow = (id: number) => cards.get(id)?.v ?? null;
 
-export const fmtNum = (n: number) => n.toLocaleString('fa-IR');
-export const compact = (n: number) => new Intl.NumberFormat('fa-IR', { notation: 'compact', maximumFractionDigits: 1 }).format(n);
+/** The English edition (/en/) shares these scripts: numbers and words follow the page's language. */
+export const isEn = () => document.documentElement.lang === 'en';
+/** The Persian text, or the English one on an English page. */
+export const L = (fa: string, en: string) => (isEn() ? en : fa);
+const numLocale = () => (isEn() ? 'en-US' : 'fa-IR');
+export const fmtNum = (n: number) => n.toLocaleString(numLocale());
+export const compact = (n: number) => new Intl.NumberFormat(numLocale(), { notation: 'compact', maximumFractionDigits: 1 }).format(n);
 export const esc = (s = '') => s.replace(/[&<>"']/g, (c) => `&#${c.charCodeAt(0)};`);
 
 let toastTimer: number | undefined;
@@ -94,7 +99,7 @@ const TOAST_EN: Record<string, string> = {
 export function toast(msg: string, kind: 'info' | 'reward' = 'info') {
   const el = $('[data-toast]');
   if (!el) return;
-  if (document.documentElement.lang === 'en' && /[\u0600-\u06ff]/.test(msg)) {
+  if (isEn() && /[\u0600-\u06ff]/.test(msg)) {
     if (!TOAST_EN[msg]) return;
     msg = TOAST_EN[msg];
   }

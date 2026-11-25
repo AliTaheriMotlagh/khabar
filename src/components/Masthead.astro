@@ -1,13 +1,16 @@
 ---
-// The home page's banner: the site's name over a slow aurora, a live line (when the newest story came in), today's
-// numbers (stories today and this week, sources this week, readers today — the last filled live by social.ts), the
-// ways in (stories, explorer, archive, the other language) and the newest headline. No image: CSS only.
+// The home page's front panel, both editions: over a slow aurora (lit by the lead's own picture, see the script), a
+// compact head — the live line, the site's name, today's numbers (readers today filled live by social.ts) — then the
+// news itself: the lead story large and the top stories beside it (src/lib/front.ts), then the ways in. The first
+// screen is news, not a banner.
 import Icon from './Icon.astro';
 import { SITE } from '../site';
-import { dayKey, faNum, getStories, url } from '../lib/posts';
+import { dayKey, faNum, faTime, getStories, pic, url } from '../lib/posts';
 import { publisherOf } from '../lib/source';
-import { EN, getEn } from '../lib/en';
-interface Props { lang?: 'fa' | 'en' }
+import { EN, enTime } from '../lib/en';
+import type { FrontItem } from '../lib/front';
+interface Props { lang?: 'fa' | 'en'; lead?: FrontItem; top?: FrontItem[] }
+const { lead, top = [] } = Astro.props;
 const en = Astro.props.lang === 'en';
 const stories = getStories();
 const newest = stories[0];
@@ -16,23 +19,76 @@ const weekAgo = newest ? Date.parse(newest.date) - 7 * 864e5 : 0;
 const week = stories.filter((p) => Date.parse(p.date) > weekAgo);
 const sources = new Set(week.map((p) => p.source?.author?.handle || publisherOf(p.source?.url ?? '')).filter(Boolean)).size;
 const n = (x: number) => (en ? x.toLocaleString('en-US') : faNum(x));
-const top = en ? getEn()[0] : newest;
-const topTitle = en ? (top as ReturnType<typeof getEn>[number] | undefined)?.title : newest?.article.title;
-const topHref = top ? (top as { href: string }).href : null;
+const time = (iso: string) => (en ? enTime(iso) : faTime(iso));
+const T = en
+  ? { live: 'Live', updated: 'updated', tag: 'AI and tech news as it breaks — straight from the source, with where each story stands.', top: 'Top stories', leadLabel: 'Top story', today: 'today', week: 'this week', sources: 'sources', readers: 'readers today', ways: 'Ways in', rumor: 'Unconfirmed', must: 'Key' }
+  : { live: 'زنده', updated: 'به‌روز', tag: 'خبرهای هوش مصنوعی و فناوری، همان لحظه که می‌رسند — با ترجمه‌ی داش غلام و منبع اصلی هر خبر.', top: 'مهم‌ترین‌ها', leadLabel: 'خبر اول', today: 'خبر امروز', week: 'این هفته', sources: 'منبع', readers: 'خواننده‌ی امروز', ways: 'میان‌برها', rumor: 'تأییدنشده', must: 'مهم' };
 ---
-<section class="masthead" aria-labelledby="mh-title">
-  <div>
-    <p class="mh-kicker"><span class="live-dot" aria-hidden="true"></span>{en ? 'Live' : 'زنده'} · {en ? 'updated' : 'به‌روز'} {newest && <time datetime={newest.date} data-f="rel"></time>}</p>
-    <h1 class="mh-title" id="mh-title">{en ? EN.name : SITE.name}{!en && <small lang="en">{SITE.nameLatin}</small>}</h1>
-    <p class="mh-tag">{en ? 'AI and tech news as it breaks — every story with its original source, where it stands (official, reported or unconfirmed), and the whole history behind it.' : 'تازه‌ترین خبرهای هوش مصنوعی و فناوری، همان لحظه که می‌رسند — با ترجمه‌ی خودمونی داش غلام، منبع اصلی، وضعیت خبر (رسمی، گزارش یا تأییدنشده) و کل ماجرای پشتش.'}</p>
-  </div>
-  <dl class="mh-stats">
-    <div><dt>{en ? 'Today' : 'امروز'}</dt><dd>{n(today)}</dd></div>
-    <div><dt>{en ? 'This week' : 'این هفته'}</dt><dd>{n(week.length)}</dd></div>
-    <div><dt>{en ? 'Sources this week' : 'منبع این هفته'}</dt><dd>{n(sources)}</dd></div>
-    <div><dt>{en ? 'Readers today' : 'خواننده‌ی امروز'}</dt><dd data-today>…</dd></div>
-  </dl>
-  <nav class="mh-links" aria-label={en ? 'Ways in' : 'میان‌برها'}>
+<section class="front" aria-labelledby="mh-title">
+  <div class="front-glow" aria-hidden="true"></div>
+  <header class="front-head">
+    <div class="front-brand">
+      <p class="mh-kicker"><span class="live-dot" aria-hidden="true"></span>{T.live} · {T.updated} {newest && <time datetime={newest.date} data-f="rel"></time>}</p>
+      <h1 class="mh-title" id="mh-title">{en ? EN.name : SITE.name}{!en && <small lang="en">{SITE.nameLatin}</small>}</h1>
+      <p class="mh-tag">{T.tag}</p>
+    </div>
+    <dl class="mh-stats">
+      <div><dt>{T.today}</dt><dd>{n(today)}</dd></div>
+      <div><dt>{T.week}</dt><dd>{n(week.length)}</dd></div>
+      <div><dt>{T.sources}</dt><dd>{n(sources)}</dd></div>
+      <div class="is-live"><dt>{T.readers}</dt><dd data-today>…</dd></div>
+    </dl>
+  </header>
+  {
+    lead && (
+      <div class="front-grid">
+        <article class:list={['lead-main', !lead.cover && 'no-img']} data-id={lead.id} aria-label={T.leadLabel}>
+          {lead.cover && (
+            <div class="lead-media">
+              <img {...pic(lead.cover, 'large')} alt="" loading="eager" fetchpriority="high" decoding="async" referrerpolicy="no-referrer" data-fallback={lead.fallback} />
+            </div>
+          )}
+          <div class="lead-body">
+            <p class="lead-meta">
+              {lead.kicker && <a class="kicker on-dark" href={lead.kicker.href}>{lead.kicker.label}</a>}
+              {lead.rumor && <span class="status is-rumor" title={lead.rumor.title}>{lead.rumor.label}</span>}
+              {lead.by && <span class="lead-by">{lead.by}</span>}
+              <time datetime={lead.date} data-f="rel">{time(lead.date)}</time>
+            </p>
+            <h2><a href={lead.href}>{lead.title}</a></h2>
+            {lead.excerpt && <p class="excerpt" dir="auto">{lead.excerpt}</p>}
+          </div>
+        </article>
+        {
+          top.length > 0 && (
+            <section class="front-top" aria-labelledby="front-top-title">
+              <h2 id="front-top-title">{T.top}</h2>
+              <ol>
+                {top.map((t) => {
+                  const thumb = t.cover ? pic(t.cover, 'small') : null;
+                  return (
+                    <li data-id={t.id}>
+                      <div class="ft-text">
+                        <p class="ft-meta">
+                          {t.kicker && <span class="ft-kicker">{t.kicker.label}</span>}
+                          {t.rumor && <span class="status is-rumor" title={t.rumor.title}>{t.rumor.label}</span>}
+                          {t.must && !t.rumor && <span class="ft-must">{T.must}</span>}
+                          <time datetime={t.date} data-f="rel">{time(t.date)}</time>
+                        </p>
+                        <h3><a href={t.href} data-astro-prefetch>{t.title}</a></h3>
+                      </div>
+                      {thumb && <img class="ft-thumb" {...thumb} alt="" width="68" height="68" loading="eager" decoding="async" referrerpolicy="no-referrer" />}
+                    </li>
+                  );
+                })}
+              </ol>
+            </section>
+          )
+        }
+      </div>
+    )
+  }
+  <nav class="mh-links" aria-label={T.ways}>
     {
       en ? (
         <>
@@ -51,5 +107,14 @@ const topHref = top ? (top as { href: string }).href : null;
       )
     }
   </nav>
-  {topTitle && topHref && <p class="mh-ticker"><b>{en ? 'LATEST' : 'تازه'}</b><a href={topHref}>{topTitle}</a></p>}
 </section>
+<script>
+  // The panel takes its light from the lead's picture: the address the browser already loaded (the relay chain in
+  // media.ts may have moved on from `src`), so it costs no request.
+  const img = document.querySelector<HTMLImageElement>('.front .lead-main img');
+  const glow = () => {
+    const src = img?.currentSrc;
+    if (src && !src.startsWith('data:')) img!.closest<HTMLElement>('.front')!.style.setProperty('--glow', `url("${src.replace(/"/g, '%22')}")`);
+  };
+  if (img) img.complete && img.naturalWidth ? glow() : img.addEventListener('load', glow);
+</script>

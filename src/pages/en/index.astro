@@ -5,15 +5,14 @@ import EnTimeline from '../../components/EnTimeline.astro';
 import AdSlot from '../../components/AdSlot.astro';
 import Icon from '../../components/Icon.astro';
 import Masthead from '../../components/Masthead.astro';
-import { dayKey, pic, url } from '../../lib/posts';
+import { url } from '../../lib/posts';
+import { frontEn } from '../../lib/front';
 import { EN, EN_PAGE_SIZE, enDigest, enListLd, enTopicHref, enTopics, getEn } from '../../lib/en';
 
 const all = getEn();
 const first = all.slice(0, EN_PAGE_SIZE);
-const day0 = first[0] ? dayKey(first[0].date) : '';
-const lead =
-  first.filter((e) => e.post.cover && dayKey(e.date) === day0).sort((a, b) => (b.post.importance ?? 0) - (a.post.importance ?? 0) || b.id - a.id)[0] ??
-  first.find((e) => e.post.cover);
+const front = frontEn(first);
+const lead = front.leadPost;
 const rest = first.filter((e) => e !== lead);
 const next = all.length > EN_PAGE_SIZE ? url('en/page/2/') : null;
 const digest = enDigest();
@@ -21,23 +20,10 @@ const topics = enTopics().slice(0, 14);
 ---
 <Base lang="en" alternates={{ fa: url() }} image={lead?.post.cover?.src} jsonLd={enListLd(`${EN.name} — ${EN.tagline}`, 'en/', first, true)} next={next}>
   <div class="container">
-    <Masthead lang="en" />
+    <Masthead lang="en" lead={front.lead} top={front.top} />
     <div class="layout">
       <div class="col-main">
         <div class="home-top">
-          {
-            lead && (
-              <article class:list={['lead-main', !lead.post.cover && 'no-img']} data-id={lead.id} aria-label="Top story">
-                {lead.post.cover && <img {...pic(lead.post.cover.src || lead.post.cover.poster, 'large')} alt="" loading="eager" fetchpriority="high" decoding="async" referrerpolicy="no-referrer" data-fallback={lead.post.url} />}
-                <div class="lead-body">
-                  {lead.topics[0] && <span class="kicker on-dark">{lead.topics[0].en}</span>}
-                  <h2><a href={lead.href}>{lead.title}</a></h2>
-                  {lead.excerpt && <p class="excerpt">{lead.excerpt}</p>}
-                  <time datetime={lead.date} data-f="rel"></time>
-                </div>
-              </article>
-            )
-          }
           {
             digest && (
               <section class="brief" aria-labelledby="brief-title">

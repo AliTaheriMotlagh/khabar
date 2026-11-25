@@ -1,6 +1,5 @@
 ---
 import Base from '../layouts/Base.astro';
-import Lead from '../components/Lead.astro';
 import Timeline from '../components/Timeline.astro';
 import Sidebar from '../components/Sidebar.astro';
 import Icon from '../components/Icon.astro';
@@ -13,25 +12,24 @@ import HotThreads from '../components/HotThreads.astro';
 import Masthead from '../components/Masthead.astro';
 import AdSlot from '../components/AdSlot.astro';
 import { SITE } from '../site';
-import { dayKey, getFeed, latestDigest, url } from '../lib/posts';
+import { getFeed, latestDigest, url } from '../lib/posts';
+import { frontFa } from '../lib/front';
 import { listLd } from '../lib/seo';
 
 const posts = getFeed();
 const digest = latestDigest();
 // The morning summary sits on top in full, so it isn't repeated on the timeline.
 const first = posts.slice(0, SITE.pageSize).filter((p) => p.id !== digest?.id);
-// The hero: the newest day's most important story with a picture (ai.x.importance, PLAN.md P2-8), else the newest.
-const day0 = first[0] ? dayKey(first[0].date) : '';
-const lead =
-  first.filter((p) => p.kind === 'story' && p.cover && dayKey(p.date) === day0).sort((a, b) => (b.importance ?? 0) - (a.importance ?? 0) || b.id - a.id)[0] ??
-  first.find((p) => p.kind === 'story' && p.cover);
+// The front panel (Masthead): the lead story and the top stories beside it (src/lib/front.ts).
+const front = frontFa(first);
+const lead = front.leadPost;
 const rest = first.filter((p) => p !== lead);
 const next = posts.length > SITE.pageSize ? url('page/2/') : null;
 const jsonLd = listLd({ name: `${SITE.name} — ${SITE.tagline}`, path: '', posts: posts.slice(0, SITE.pageSize), home: true });
 ---
 <Base image={lead?.cover?.src} jsonLd={jsonLd} next={next} alternates={{ en: url('en/') }}>
   <div class="container">
-    <Masthead />
+    <Masthead lead={front.lead} top={front.top} />
     <TodayRail />
     {
       posts.length ? (
@@ -39,7 +37,6 @@ const jsonLd = listLd({ name: `${SITE.name} — ${SITE.tagline}`, path: '', post
           <div class="col-main">
             <NewVideo />
             <div class="home-top">
-              <Lead post={lead} />
               <DailyBrief />
             </div>
             <HotThreads />

@@ -1,7 +1,7 @@
 // Gamification without signup: points, levels, badges and daily streaks live in this browser,
 // plus "what's new since your last visit" — unread new stories stay marked during that visit, until they are read.
 import { SITE } from '../site';
-import { $, $$, BASE, esc, fmtNum, getHistory, guest, hue, initial, myName, setMyName, store, toast, type Entry } from './core';
+import { $, $$, BASE, L, esc, fmtNum, getHistory, guest, hue, initial, myName, setMyName, store, toast, type Entry } from './core';
 
 type Stats = {
   xp: number;
@@ -293,7 +293,7 @@ export function markNew() {
     el.classList.toggle('is-new', isNew);
     el.classList.toggle('is-read', read.has(id));
     const head = $('.story-head', el);
-    if (isNew && head && !$('.new-badge', head)) head.insertAdjacentHTML('afterbegin', '<span class="new-badge">تازه</span>');
+    if (isNew && head && !$('.new-badge', head)) head.insertAdjacentHTML('afterbegin', `<span class="new-badge">${L('تازه', 'New')}</span>`);
     const seen = $('[data-seen]', el);
     if (seen) seen.hidden = !read.has(id);
   }
@@ -302,7 +302,7 @@ export function markNew() {
   if (lastSeen && !$('#new-divider')) {
     const firstOld = $$('[data-tl] .tl-item[data-id]').find((el) => Number(el.dataset.id) <= lastSeen);
     if (firstOld && firstOld !== $('[data-tl] .tl-item[data-id]')) {
-      firstOld.insertAdjacentHTML('beforebegin', '<li class="new-divider" id="new-divider" role="separator"><span>تا اینجا تازه بود · از اینجا را قبلاً دیده‌اید</span></li>');
+      firstOld.insertAdjacentHTML('beforebegin', `<li class="new-divider" id="new-divider" role="separator"><span>${L('تا اینجا تازه بود · از اینجا را قبلاً دیده‌اید', 'New above · you’ve seen the rest')}</span></li>`);
     }
   }
 
