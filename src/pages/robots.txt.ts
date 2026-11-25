@@ -14,6 +14,8 @@ export function GET() {
       'Disallow: /recent.json',
       'Disallow: /ai.json',
       'Disallow: /investigate.json',
+      // The English edition (/en/) is content like the rest: its pages are in the same sitemaps, paired by hreflang.
+      'Allow: /en/',
       '',
       `Sitemap: ${abs('sitemap-index.xml')}`,
       `Sitemap: ${abs('news-sitemap.xml')}`,

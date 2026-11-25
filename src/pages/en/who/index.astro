@@ -1,0 +1,41 @@
+---
+// People and companies, English: /who/'s index (src/lib/who.ts) by kind, most covered first, each name opening the
+// explorer on it (/en/investigate/?q=…) — no English page per name (the file budget; the explorer shows more anyway).
+import Base from '../../../layouts/Base.astro';
+import Icon from '../../../components/Icon.astro';
+import { url } from '../../../lib/posts';
+import { breadcrumbs } from '../../../lib/seo';
+import { whoList } from '../../../lib/who';
+import type { EntityKind } from '../../../lib/knowledge';
+import { EN, enOf } from '../../../lib/en';
+
+const KIND_EN: Record<EntityKind, string> = { person: 'People', company: 'Companies and organizations', model: 'Models', product: 'Products and tools' };
+const all = whoList()
+  .filter((x) => x.e.name_en && !x.e.hidden)
+  .map((x) => ({ e: x.e, n: x.posts.filter((p) => enOf(p.id)).length }))
+  .filter((x) => x.n > 0)
+  .sort((a, b) => b.n - a.n || a.e.name_en.localeCompare(b.e.name_en, 'en'));
+const kinds = (Object.keys(KIND_EN) as EntityKind[]).map((k) => ({ k, items: all.filter((x) => x.e.kind === k) })).filter((g) => g.items.length);
+const jsonLd = [breadcrumbs([{ name: 'People and companies', path: 'en/who/' }], 'en')];
+---
+<Base lang="en" title="People and companies" alternates={{ fa: url('who/') }} description={`The people, companies, models and products in the AI news on ${EN.name}: ${all.slice(0, 6).map((x) => x.e.name_en).join(', ')} and more — each followed through every story.`} jsonLd={jsonLd}>
+  <div class="container narrow">
+    <header class="page-head"><div><h1><Icon name="users" /> People and companies</h1><p>Every name in the news, most covered first. Tap one to follow it through every story in the <a href={url('en/investigate/')}>explorer</a>.</p></div></header>
+    {all.length === 0 && <p class="muted">Nothing yet; this fills up with the news.</p>}
+    {
+      kinds.map(({ k, items }) => (
+        <section class="who-group">
+          <h2 class="section-title">{KIND_EN[k]}</h2>
+          <ul class="who-list">
+            {items.map(({ e, n }) => (
+              <li>
+                <a href={url(`en/investigate/?q=${encodeURIComponent(e.name_en)}`)}><b>{e.name_en}</b></a>
+                <span class="muted">{n}</span>
+              </li>
+            ))}
+          </ul>
+        </section>
+      ))
+    }
+  </div>
+</Base>

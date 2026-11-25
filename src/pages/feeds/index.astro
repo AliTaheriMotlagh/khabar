@@ -15,7 +15,7 @@ const topics = tagFeeds();
 const feedly = (f: FeedDef) => `https://feedly.com/i/subscription/feed/${encodeURIComponent(abs(f.path))}`;
 const inoreader = (f: FeedDef) => `https://www.inoreader.com/?add_feed=${encodeURIComponent(abs(f.path))}`;
 ---
-<Base title="خبرخوان (RSS)" description={`خبرهای ${SITE.name} را در خبرخوان خودتان بخوانید: همه‌ی خبرها، فقط خبرها، خلاصه‌ی روزانه و هر موضوع جدا.`}>
+<Base title="خبرخوان (RSS)" alternates={{ en: url('en/feeds/') }} description={`خبرهای ${SITE.name} را در خبرخوان خودتان بخوانید: همه‌ی خبرها، فقط خبرها، خلاصه‌ی روزانه و هر موضوع جدا.`}>
   <div class="container narrow">
     <header class="page-head">
       <h1><Icon name="rss" /> خبرخوان (RSS)</h1>
@@ -61,7 +61,7 @@ const inoreader = (f: FeedDef) => `https://www.inoreader.com/?add_feed=${encodeU
         <code dir="ltr">{abs('en/rss.xml')}</code>
         <div class="row">
           <button class="btn sm primary" type="button" data-copy={abs('en/rss.xml')}><Icon name="link" /> کپی نشانی</button>
-          <a class="btn sm" href={url('en/')} hreflang="en" lang="en">Open</a>
+          <a class="btn sm" href={url('en/feeds/')} hreflang="en" lang="en">All English feeds</a>
         </div>
       </li>
       <li class="feed-card">

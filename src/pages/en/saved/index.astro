@@ -1,0 +1,22 @@
+---
+// Saved stories, English: the same list as /saved/ (kept on this device, pages cached for offline reading; stories
+// saved on either edition), src/scripts/saved.ts in English.
+import Base from '../../../layouts/Base.astro';
+import Icon from '../../../components/Icon.astro';
+import { url } from '../../../lib/posts';
+---
+<Base lang="en" title="Saved" noindex alternates={{ fa: url('saved/') }}>
+  <div class="container narrow">
+    <header class="page-head"><h1>Saved</h1><p>Stories you kept for later — on this device, and even offline.</p></header>
+    <section class="oa" data-oa hidden></section>
+    <ul class="row-list" data-saved-list></ul>
+    <div class="empty" data-saved-empty hidden>
+      <Icon name="bookmark" />
+      <p>Nothing saved yet. Tap the bookmark next to any story.</p>
+    </div>
+  </div>
+</Base>
+<script>
+  import { initSaved } from '../../../scripts/saved';
+  initSaved();
+</script>

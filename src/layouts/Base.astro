@@ -13,6 +13,7 @@ import Peek from '../components/Peek.astro';
 import Icon from '../components/Icon.astro';
 import ListenBar from '../components/ListenBar.astro';
 import { EN } from '../lib/en';
+import { EN_DAILY, EN_FEEDS } from '../lib/en-feed';
 
 interface Props {
   title?: string;
@@ -28,7 +29,7 @@ interface Props {
   noindex?: boolean;
   progress?: boolean;
   /** This page's own feed (a topic's), named before the site's so a reader offers it first. */
-  feed?: FeedDef;
+  feed?: Pick<FeedDef, 'title' | 'path'>;
   /** A paginated list's neighbours (Bing and readers' "next page" keys still use them). */
   prev?: string | null;
   next?: string | null;
@@ -49,7 +50,7 @@ const description = metaCut(fullDescription);
 // Search consoles verify the site by a meta tag: set PUBLIC_GOOGLE_SITE_VERIFICATION / PUBLIC_BING_SITE_VERIFICATION
 // on Vercel (free; no code change needed).
 const verify = { google: import.meta.env.PUBLIC_GOOGLE_SITE_VERIFICATION, bing: import.meta.env.PUBLIC_BING_SITE_VERIFICATION, yandex: import.meta.env.PUBLIC_YANDEX_VERIFICATION };
-const feeds = en ? [...(feed ? [feed] : []), { title: `${EN.name} — all stories (English)`, path: 'en/rss.xml' }] : [...(feed ? [feed] : []), FEEDS.all, FEEDS.news, FEEDS.daily];
+const feeds = en ? [...(feed ? [feed] : []), EN_FEEDS.all, EN_DAILY] : [...(feed ? [feed] : []), FEEDS.all, FEEDS.news, FEEDS.daily];
 
 // Open pages compare this with /build.json to notice newer news (src/scripts/social.ts).
 const rev = feedRev();
@@ -177,7 +178,7 @@ const ld = [
     <main id="main">
       <slot />
     </main>
-    <Footer lang={lang} />
+    <Footer lang={lang} switchHref={switchHref} />
     {
       en ? (
         <Settings lang="en" />

@@ -1,0 +1,25 @@
+---
+// The English counterpart of /today/ (the Persian stories player, whose narration is the Persian voices): the same
+// three days of news (storyItems) that have an English page, on a timeline, and «Listen to all» — every headline and
+// summary back to back in the device's English voice (src/scripts/en-listen.ts).
+import Base from '../../../layouts/Base.astro';
+import Icon from '../../../components/Icon.astro';
+import EnTimeline from '../../../components/EnTimeline.astro';
+import { storyItems, url } from '../../../lib/posts';
+import { EN, enListLd, enOf, type EnPost } from '../../../lib/en';
+
+const items = storyItems().map((x) => enOf(x.id)).filter((e): e is EnPost => !!e);
+const mins = Math.max(1, Math.round(items.reduce((n, e) => n + (e.title + ' ' + e.excerpt).split(/\s+/).length, 0) / 160));
+---
+<Base lang="en" title="Today's stories" alternates={{ fa: url('today/') }} description={`The last three days of AI news on ${EN.name}, ${items.length} stories, to read or to listen to back to back: ${items.slice(0, 3).map((e) => e.short).join('; ')}…`} jsonLd={enListLd("Today's stories", 'en/today/', items)}>
+  <div class="container">
+    <header class="page-head with-action">
+      <div><h1><Icon name="stories" /> Today's stories</h1><p>{items.length} stories from the last three days, newest first.</p></div>
+      <button class="btn primary listen" type="button" data-en-listen data-parts=".tl-item h3 a, .tl-item .excerpt" aria-pressed="false" hidden>
+        <Icon name="headphones" class="when-idle" /><Icon name="pause" class="when-playing" /> <span data-listen-label>Listen to all</span> <small class="muted">~{mins} min</small>
+      </button>
+    </header>
+    <EnTimeline items={items} title="The last three days" eagerFirst />
+    <p class="muted"><a href={url('today/')} hreflang="fa">The stories player <span lang="fa">(استوری خبرها)</span></a> plays the same news full screen, narrated in Persian.</p>
+  </div>
+</Base>

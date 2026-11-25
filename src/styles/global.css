@@ -1657,6 +1657,23 @@ body:has(.player) :is(.site-header, .tabbar, .site-footer, .to-top, .offline-bar
 .cal-day li a { color: var(--text-3); font-size: 13px; }
 .cal-past summary { cursor: pointer; color: var(--text-3); margin: 6px 0 10px; }
 .cal-past .cal-day { opacity: .75; }
+/* «Add to my calendar» (CalendarView.astro, src/scripts/calendar.ts): subscribe + more ways, a «+» and «⋯» per event. */
+.cal-subscribe { display: flex; flex-wrap: wrap; align-items: center; gap: 6px 12px; margin: 0 0 16px; }
+.cal-subscribe .muted { font-size: 13px; }
+.cal-ways { flex-basis: 100%; font-size: 14px; }
+.cal-ways summary { cursor: pointer; color: var(--text-2); width: max-content; }
+.cal-ways ul { margin: 8px 0 0; padding-inline-start: 1.2em; display: grid; gap: 6px; }
+.cal-ev { display: flex; align-items: flex-start; gap: 8px; position: relative; }
+.cal-ev > :first-child { flex: 1 1 auto; min-width: 0; }
+.cal-day .cal-ev a.cal-what { color: var(--text); font-size: 15px; }
+.cal-acts { display: inline-flex; gap: 2px; flex: none; }
+.cal-day .cal-add, .cal-more { display: inline-grid; place-items: center; width: 30px; height: 30px; border-radius: 8px; border: 1px solid var(--border); background: var(--surface); color: var(--accent); font: inherit; font-size: 15px; line-height: 1; cursor: pointer; text-decoration: none; }
+.cal-add .i { width: 16px; height: 16px; }
+.cal-add:hover, .cal-more:hover, .cal-more[aria-expanded='true'] { border-color: var(--accent); background: var(--accent-soft); }
+.cal-menu { position: absolute; inset-inline-end: 0; top: 100%; z-index: 5; display: grid; min-width: 14rem; margin-top: 4px; padding: 4px; border-radius: var(--radius-sm); background: var(--surface); border: 1px solid var(--border); box-shadow: var(--shadow-sm); }
+.cal-menu[hidden] { display: none; }
+.cal-day .cal-menu a, .cal-menu button { padding: 8px 10px; border: 0; border-radius: 6px; background: none; color: var(--text); font: inherit; font-size: 14px; text-align: start; text-decoration: none; cursor: pointer; }
+.cal-menu a:hover, .cal-menu button:hover { background: var(--accent-soft); }
 
 .topic-intro { margin: -4px 0 18px; padding: 12px 16px; border-radius: var(--radius-sm); background: var(--accent-soft); color: var(--text); font-size: 15px; line-height: 1.95; }
 .topic-intro b { margin-inline-end: 8px; color: var(--accent); }

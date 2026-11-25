@@ -1,7 +1,7 @@
 // The saved stories' page: the list (kept on this device, pages cached for offline reading), and «گوش دادن بدون
 // اینترنت» — the sound of every saved story kept too (src/scripts/offline-audio.ts), for the voices that need the
 // network: the site's cloud voice, or a service the reader connected. A voice on the device already works offline.
-import { $, $$, fmtNum, getSaved, rowHtml, toast } from './core';
+import { $, $$, fmtNum, getSaved, isEn, rowHtml, toast } from './core';
 import { dropAll, keepStory, keptBytes, paragraphsOf, storyState, type Kind } from './offline-audio';
 import { hasPersianVoice, persianVoice } from './speech';
 
@@ -31,8 +31,9 @@ function render() {
 }
 
 async function size() {
+  const drop = $<HTMLButtonElement>('[data-oa-drop]', box);
+  if (!drop) return;
   const n = await keptBytes();
-  const drop = $<HTMLButtonElement>('[data-oa-drop]', box)!;
   drop.hidden = !n;
   drop.textContent = `پاک کردن صداها (${fmtNum(Math.max(1, Math.round(n / 1e6)))} مگابایت)`;
 }
@@ -76,6 +77,11 @@ async function keepAll() {
 export async function initSaved() {
   render();
   document.addEventListener('saved-change', render);
+  // The English pages read with the device's English voice, which needs no network: nothing to keep.
+  if (isEn()) {
+    box.dataset.off = '1';
+    return render();
+  }
   const source = await persianVoice();
   const now = hasPersianVoice() ?? source;
   const note = $('[data-oa-note]', box)!;

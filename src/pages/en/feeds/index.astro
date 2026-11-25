@@ -1,0 +1,72 @@
+---
+// The English edition's feeds (src/lib/en-feed.ts) and calendar, as /feeds/ lists the Persian ones.
+import Base from '../../../layouts/Base.astro';
+import Icon from '../../../components/Icon.astro';
+import { abs, url } from '../../../lib/posts';
+import { FULL } from '../../../lib/feed';
+import { EN, englishDigestsEn, getEn } from '../../../lib/en';
+import { EN_DAILY, EN_FEEDS, EN_VIDEOS, enTopicFeeds } from '../../../lib/en-feed';
+import { getVideos } from '../../../lib/videos';
+import { breadcrumbs } from '../../../lib/seo';
+
+const main = [
+  { path: EN_FEEDS.all.path, name: 'All stories', description: EN_FEEDS.all.description, count: `${getEn().length.toLocaleString('en-US')} stories`, page: url('en/') },
+  { path: EN_DAILY.path, name: 'Daily summary', description: EN_DAILY.description, count: `${englishDigestsEn().length} summaries`, page: url('en/') },
+  { path: EN_VIDEOS.path, name: 'Videos', description: EN_VIDEOS.description, count: `${getVideos().length} videos`, page: url('en/videos/') },
+];
+const topics = enTopicFeeds();
+const feedly = (p: string) => `https://feedly.com/i/subscription/feed/${encodeURIComponent(abs(p))}`;
+const inoreader = (p: string) => `https://www.inoreader.com/?add_feed=${encodeURIComponent(abs(p))}`;
+---
+<Base lang="en" title="RSS feeds" alternates={{ fa: url('feeds/') }} description={`Follow ${EN.name} in your feed reader: every story, the daily summary, the videos and each topic on its own — plus a calendar of upcoming AI events.`} jsonLd={[breadcrumbs([{ name: 'RSS feeds', path: 'en/feeds/' }], 'en')]}>
+  <div class="container narrow">
+    <header class="page-head">
+      <h1><Icon name="rss" /> RSS feeds</h1>
+      <p>Put one of these addresses in a feed reader — Feedly, Inoreader, NetNewsWire or a Telegram RSS bot — and every new story arrives by itself.</p>
+    </header>
+    <ul class="feed-list">
+      {
+        main.map((f) => (
+          <li class="feed-card">
+            <div class="feed-head"><b>{f.name}</b><small>{f.count}</small></div>
+            <p>{f.description}</p>
+            <code dir="ltr">{abs(f.path)}</code>
+            <div class="row">
+              <button class="btn sm primary" type="button" data-copy={abs(f.path)}><Icon name="link" /> Copy address</button>
+              <a class="btn sm" href={url(f.path)}><Icon name="rss" /> Open</a>
+              <a class="btn sm" href={feedly(f.path)} target="_blank" rel="noopener">Feedly <Icon name="external" /></a>
+              <a class="btn sm" href={inoreader(f.path)} target="_blank" rel="noopener">Inoreader <Icon name="external" /></a>
+            </div>
+          </li>
+        ))
+      }
+      <li class="feed-card">
+        <div class="feed-head"><b>Events calendar</b><small>iCalendar</small></div>
+        <p>Launches, events and deadlines the stories give a date for, in your phone's calendar or Outlook.</p>
+        <code dir="ltr">{abs('en/calendar.ics')}</code>
+        <div class="row">
+          <button class="btn sm primary" type="button" data-copy={abs('en/calendar.ics')}><Icon name="link" /> Copy address</button>
+          <a class="btn sm" href={url('en/calendar/')}><Icon name="clock" /> Add to my calendar</a>
+        </div>
+      </li>
+      <li class="feed-card">
+        <div class="feed-head"><b>Persian edition</b><small>RSS · Persian</small></div>
+        <p>The Persian feeds: every story with its friendly Persian translation, the news only, the daily summary and each topic.</p>
+        <div class="row"><a class="btn sm" href={url('feeds/')} hreflang="fa"><span lang="fa">خوراک‌های فارسی</span></a></div>
+      </li>
+    </ul>
+    <p class="feed-note">Every feed carries all its items, first to newest; the newest {FULL} in full — text, pictures, the quoted post and the source — older ones with headline, summary and picture. Pictures come through the site itself. The feeds follow the channel within minutes.</p>
+    <h2 class="feed-sub">A feed for each topic</h2>
+    <ul class="feed-topics">
+      {
+        topics.map((t) => (
+          <li>
+            <a href={url(t.feed.path)}><Icon name="rss" /> {t.en}</a>
+            <small>{t.count}</small>
+            <button class="btn sm" type="button" data-copy={abs(t.feed.path)} aria-label={`Copy the ${t.en} feed address`}><Icon name="link" /></button>
+          </li>
+        ))
+      }
+    </ul>
+  </div>
+</Base>

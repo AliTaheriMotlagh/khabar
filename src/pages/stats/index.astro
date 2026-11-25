@@ -4,8 +4,9 @@
 // (src/scripts/stats.ts).
 import Base from '../../layouts/Base.astro';
 import Icon from '../../components/Icon.astro';
+import { url } from '../../lib/posts';
 ---
-<Base title="آمار بازدید" description="چند نفر خبرها را می‌خوانند و کدام خبرها بیشتر خوانده می‌شوند: امروز، این هفته و از اول.">
+<Base title="آمار بازدید" alternates={{ en: url("en/stats/") }} description="چند نفر خبرها را می‌خوانند و کدام خبرها بیشتر خوانده می‌شوند: امروز، این هفته و از اول.">
   <div class="container narrow">
     <header class="page-head">
       <h1><Icon name="eye" /> آمار بازدید</h1>

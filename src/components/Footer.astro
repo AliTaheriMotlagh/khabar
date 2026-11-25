@@ -3,7 +3,7 @@ import Icon from './Icon.astro';
 import { SITE } from '../site';
 import { url } from '../lib/posts';
 import { EN } from '../lib/en';
-interface Props { lang?: 'fa' | 'en' }
+interface Props { lang?: 'fa' | 'en'; switchHref?: string }
 const { lang = 'fa' } = Astro.props;
 ---
 {lang === 'en' ? (
@@ -17,18 +17,23 @@ const { lang = 'fa' } = Astro.props;
       <p>{EN.description}</p>
       <div class="row">
         <a class="btn primary" href={`https://t.me/${SITE.channel}`} target="_blank" rel="noopener" referrerpolicy="origin"><Icon name="telegram" /> Telegram channel</a>
-        <a class="btn" href={url()} hreflang="fa" lang="fa" data-lang-switch="fa">فارسی</a>
+        <a class="btn" href={Astro.props.switchHref ?? url()} hreflang="fa" lang="fa" data-lang-switch="fa">فارسی</a>
       </div>
     </div>
     <nav class="foot-links" aria-label="Links">
       <a href={url('en/investigate/')}>Search</a>
       <a href={url('en/topics/')}>Topics</a>
-      <a href={url('en/archive/')}>Archive</a>
-      <a href={url('en/investigate/')}>Investigate</a>
+      <a href={url('en/today/')}>Today's stories</a>
+      <a href={url('en/week/')}>Most read this week</a>
       <a href={url('en/videos/')}>Mehrzad's videos</a>
-      <a href={url('saved/')}>Saved</a>
+      <a href={url('en/who/')}>People and companies</a>
+      <a href={url('en/models/')}>Model tracker</a>
+      <a href={url('en/calendar/')}>Events calendar</a>
+      <a href={url('en/investigate/')}>Investigate</a>
+      <a href={url('en/archive/')}>Archive</a>
+      <a href={url('en/saved/')}>Saved</a>
       <a href={url('en/about/')}>About</a>
-      <a href={url('en/rss.xml')}><Icon name="rss" /> RSS</a>
+      <a href={url('en/feeds/')}><Icon name="rss" /> RSS</a>
       <a href={SITE.repo} target="_blank" rel="noopener"><Icon name="github" /> Source code</a>
     </nav>
   </div>

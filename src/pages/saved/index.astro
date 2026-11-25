@@ -3,8 +3,9 @@
 // too, for listening without internet.
 import Base from '../../layouts/Base.astro';
 import Icon from '../../components/Icon.astro';
+import { url } from '../../lib/posts';
 ---
-<Base title="ذخیره‌شده‌ها" noindex>
+<Base title="ذخیره‌شده‌ها" noindex alternates={{ en: url("en/saved/") }}>
   <div class="container narrow">
     <header class="page-head"><h1>ذخیره‌شده‌ها</h1><p>خبرهایی که برای بعد نگه داشته‌اید — روی همین دستگاه، و حتی آفلاین.</p></header>
     <section class="oa" data-oa hidden aria-labelledby="oa-title">

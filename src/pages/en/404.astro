@@ -1,0 +1,12 @@
+---
+// "Not found" for /en/… addresses (Cloudflare Pages serves the nearest 404.html up the path).
+import Base from '../../layouts/Base.astro';
+import { url } from '../../lib/posts';
+---
+<Base lang="en" title="Page not found" noindex>
+  <div class="container narrow empty">
+    <p class="big-num">404</p>
+    <p>This page wasn't found. The story may have moved, or it has no English version — try the Persian one.</p>
+    <p class="row center"><a class="btn primary" href={url('en/')}>Back to the home page</a> <a class="btn" href={url('en/investigate/')}>Search</a></p>
+  </div>
+</Base>

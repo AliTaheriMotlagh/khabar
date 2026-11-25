@@ -46,7 +46,7 @@ const videos = fs.existsSync('dist/videos') ? fs.readdirSync('dist/videos').filt
 const who = fs.existsSync('dist/who') ? fs.readdirSync('dist/who').filter((d) => fs.existsSync(`dist/who/${d}/index.html`)) : [];
 const story = `/p/${build.latest}/`;
 
-const PAGES = ['/', '/page/2/', story, '/today/', '/videos/', videos[0] && `/videos/${videos[0]}/`, '/tags/', '/who/', who[0] && `/who/${who[0]}/`, '/saved/', '/search/', '/week/', '/glossary/', '/feeds/', '/about/', '/me/', '/stats/', '/offline/', '/investigate/?q=OpenAI', '/archive/', '/en/', '/en/page/2/', fs.existsSync(`dist/en/p/${build.latest}`) && `/en/p/${build.latest}/`, '/en/topics/', '/en/investigate/?q=NVIDIA&vs=AMD', '/en/archive/', '/en/videos/', '/en/about/'].filter(Boolean);
+const PAGES = ['/', '/page/2/', story, '/today/', '/videos/', videos[0] && `/videos/${videos[0]}/`, '/tags/', '/who/', who[0] && `/who/${who[0]}/`, '/saved/', '/search/', '/week/', '/glossary/', '/feeds/', '/about/', '/me/', '/stats/', '/offline/', '/investigate/?q=OpenAI', '/archive/', '/en/', '/en/page/2/', fs.existsSync(`dist/en/p/${build.latest}`) && `/en/p/${build.latest}/`, '/en/topics/', '/en/investigate/?q=NVIDIA&vs=AMD', '/en/archive/', '/en/videos/', videos[0] && `/en/videos/${videos[0]}/`, '/en/about/', '/en/feeds/', '/en/calendar/', '/calendar/', '/en/models/', '/models/', '/en/who/', '/en/today/', '/en/week/', '/en/stats/', '/en/saved/', '/en/offline/'].filter(Boolean);
 for (const path of PAGES) {
   await check(`page ${path} opens without a script error`, async () => {
     const { p, errors } = await page(path);
@@ -131,6 +131,67 @@ if (videos[0]) {
     await p.waitForSelector('#video-sheet [data-vs-done]:not([hidden])', { timeout: 240000 });
     assert.deepEqual(errors, []);
     await p.close();
+  });
+}
+
+await check('English edition: the new pages are English, client text included, and the switch lands on the twin', async () => {
+  for (const [en, fa] of [['/en/feeds/', '/feeds/'], ['/en/calendar/', '/calendar/'], ['/en/week/', '/week/'], ['/en/stats/', '/stats/'], ['/en/saved/', '/saved/']]) {
+    const { p, errors } = await page(en);
+    await p.waitForTimeout(800); // the week's and the visits' lists fill from the API (none here: their «not available» line)
+    assert.equal(await p.getAttribute('html', 'lang'), 'en');
+    assert.equal(new URL(await p.locator('.site-header [data-lang-switch]').getAttribute('href'), ORIGIN).pathname, fa, `${en}: the switch`);
+    // What the page's scripts wrote: visible text outside the switch, the header's brand and things marked Persian.
+    const persian = await p.evaluate(() => [...document.querySelectorAll('main *')].filter((el) => el.checkVisibility?.() && !el.closest('[lang="fa"]') && [...el.childNodes].some((n) => n.nodeType === 3 && /[\u0600-\u06ff]/.test(n.textContent))).map((el) => el.textContent.slice(0, 60)));
+    assert.deepEqual(persian, [], `${en}: no Persian text`);
+    assert.deepEqual(errors, []);
+    await p.close();
+  }
+  const { p } = await page('/en/saved/');
+  await p.evaluate(() => localStorage.setItem('khabar:saved', JSON.stringify([{ id: 1, title: 'A saved story', href: '/en/', date: new Date().toISOString() }])));
+  await p.reload();
+  await p.waitForSelector('[data-saved-list] .row-item');
+  assert.match(await p.locator('[data-saved-list] .row-item small').first().textContent(), /just now|minute|hour/);
+  assert.equal(await p.locator('[data-saved-list] [data-save]').getAttribute('aria-label'), 'Remove from saved');
+  await p.close();
+});
+
+// «Add to my calendar» the phone's way: webcal:// on iPhone, Google Calendar on Android; one event as .ics on iPhone.
+const IPHONE = 'Mozilla/5.0 (iPhone; CPU iPhone OS 18_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.1 Mobile/15E148 Safari/604.1';
+const ANDROID = 'Mozilla/5.0 (Linux; Android 15; Pixel 9) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Mobile Safari/537.36';
+for (const [name, ua, want] of [['iPhone', IPHONE, /^webcal:\/\//], ['Android', ANDROID, /^https:\/\/calendar\.google\.com\/calendar\/r\?cid=webcal/]]) {
+  await check(`calendar: on ${name} «Add to my calendar» subscribes the phone's way, in both languages`, async () => {
+    for (const path of ['/calendar/', '/en/calendar/']) {
+      const ctx = await browser.newContext({ userAgent: ua, viewport: { width: 390, height: 844 }, hasTouch: true, isMobile: true });
+      const p = await ctx.newPage();
+      const errors = [];
+      p.on('pageerror', (e) => errors.push(e.message));
+      await p.goto(`${ORIGIN}${path}`, { waitUntil: 'domcontentloaded' });
+      await p.waitForSelector('[data-cal][data-platform]');
+      assert.match(await p.locator('[data-cal-sub]').getAttribute('href'), want, `${path}: the primary button`);
+      const add = p.locator('[data-cal-add]').first();
+      if (await add.count()) {
+        if (name === 'iPhone') {
+          // One event: a text/calendar data: URL with a valid VEVENT, opened (Safari's «Add to Calendar»; Chrome
+          // refuses data: pages, so the link the page opens is caught instead).
+          await p.evaluate(() => {
+            HTMLAnchorElement.prototype.click = function () {
+              document.documentElement.dataset.opened = this.href;
+            };
+          });
+          await add.click();
+          const href = await p.getAttribute('html', 'data-opened');
+          assert.match(href ?? '', /^data:text\/calendar;charset=utf-8,/);
+          const ics = decodeURIComponent(href.split(',').slice(1).join(','));
+          assert.match(ics, /^BEGIN:VCALENDAR\r\n[\s\S]*BEGIN:VEVENT\r\nUID:[^\r]+\r\nDTSTAMP:\d{8}T\d{6}Z\r\nDTSTART;VALUE=DATE:\d{8}\r\n/);
+        } else {
+          assert.match(await add.getAttribute('href'), /^https:\/\/calendar\.google\.com\/calendar\/render\?action=TEMPLATE/);
+          await p.locator('[data-cal-more]').first().click();
+          assert.equal(await p.locator('.cal-menu:not([hidden]) [data-cal-ics]').count(), 1, 'the .ics under «more»');
+        }
+      }
+      assert.deepEqual(errors, []);
+      await ctx.close();
+    }
   });
 }
 

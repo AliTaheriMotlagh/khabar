@@ -4,7 +4,7 @@ import Base from '../layouts/Base.astro';
 import Icon from '../components/Icon.astro';
 import { url } from '../lib/posts';
 ---
-<Base title="آفلاین" noindex>
+<Base title="آفلاین" noindex alternates={{ en: url("en/offline/") }}>
   <div class="container narrow empty">
     <Icon name="wifi-off" />
     <p>به اینترنت وصل نیستید و این صفحه هنوز روی دستگاه شما ذخیره نشده.</p>

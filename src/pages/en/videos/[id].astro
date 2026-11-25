@@ -1,0 +1,108 @@
+---
+// One of Mehrzad's episodes, English: its own (English) title, chapters opening YouTube at their time, the links from
+// its description, the description itself and, when the channel's post about it has an English source, that story.
+// The episode is spoken in Persian; the Persian summary is on /videos/<id>/. No embed (YouTube is filtered in Iran).
+import Base from '../../../layouts/Base.astro';
+import Icon from '../../../components/Icon.astro';
+import { abs, pic, url } from '../../../lib/posts';
+import { breadcrumbs } from '../../../lib/seo';
+import { SITE } from '../../../site';
+import { getVideos, ytTime, type Video } from '../../../lib/videos';
+import { EN, enDate, enOf } from '../../../lib/en';
+import { videoTitleEn } from '../../../lib/en-feed';
+
+export function getStaticPaths() {
+  const all = getVideos();
+  return all.map((video, i) => ({ params: { id: video.id }, props: { video, newer: all[i - 1] ?? null, older: all[i + 1] ?? null } }));
+}
+const { video: v, newer, older } = Astro.props as { video: Video; newer: Video | null; older: Video | null };
+const title = videoTitleEn(v.title);
+const label = v.n == null ? '' : v.live ? `Live ${v.n}` : `Episode ${v.n}`;
+const chapters = v.chapters ?? [];
+const story = v.post ? enOf(Number(v.post)) : null;
+const clock = (s: number) => (s >= 3600 ? `${Math.floor(s / 3600)}:${String(Math.floor((s % 3600) / 60)).padStart(2, '0')}:${String(s % 60).padStart(2, '0')}` : `${Math.floor(s / 60)}:${String(s % 60).padStart(2, '0')}`);
+const description = (story?.excerpt || (chapters.length ? `${label ? `${label} of ${SITE.owner.nameLatin}'s AI series (in Persian)` : `${SITE.owner.nameLatin}'s video (in Persian)`}: ${chapters.map((c) => c.title).join('; ')}` : v.description || title)).slice(0, 300);
+const jsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'VideoObject',
+  name: title,
+  description,
+  thumbnailUrl: v.thumb,
+  ...(v.date && { uploadDate: v.date }),
+  ...(v.duration && { duration: `PT${Math.floor(v.duration / 60)}M${v.duration % 60}S` }),
+  embedUrl: `https://www.youtube.com/embed/${v.id}`,
+  url: abs(`en/videos/${v.id}/`),
+  inLanguage: 'fa',
+  isFamilyFriendly: true,
+  author: { '@type': 'Person', name: SITE.owner.nameLatin, url: SITE.owner.url },
+  publisher: { '@id': `${SITE.url}/#org` },
+  ...(chapters.length && {
+    hasPart: chapters.map((c, i) => ({ '@type': 'Clip', name: c.title, startOffset: c.t, ...(chapters[i + 1] && { endOffset: chapters[i + 1].t }), url: ytTime(v, c.t) })),
+  }),
+};
+const crumbs = breadcrumbs([{ name: `${SITE.owner.nameLatin}'s videos`, path: 'en/videos/' }, { name: title.slice(0, 80), path: `en/videos/${v.id}/` }], 'en');
+---
+<Base lang="en" title={title} alternates={{ fa: v.href }} description={description} image={v.thumb} imageAlt={title} jsonLd={[jsonLd, crumbs]}>
+  <article class="container narrow vd-page">
+    <a class="vd-back" href={url('en/videos/')}><Icon name="arrow" /> {SITE.owner.nameLatin}'s videos</a>
+    <header class="article-head">
+      {label && <span class="vd-label">{label}</span>}
+      <h1>{title}</h1>
+      <p class="vd-meta">{[v.date && enDate(`${v.date}T12:00:00Z`, { dateStyle: 'long' }), v.duration && `${clock(v.duration)} min`, 'spoken in Persian'].filter(Boolean).join(' · ')}</p>
+    </header>
+    <a class="vd-watch" href={v.youtube} target="_blank" rel="noopener">
+      <span class="vd-thumb"><img {...pic(v.thumb, 'large')} alt={title} decoding="async" referrerpolicy="no-referrer" /><span class="vd-play"><Icon name="youtube" /></span></span>
+    </a>
+    <p class="row"><a class="btn primary" href={v.youtube} target="_blank" rel="noopener"><Icon name="youtube" /> Watch on YouTube</a><a class="btn" href={v.href} hreflang="fa"><span lang="fa">خلاصه‌ی فارسی</span></a></p>
+    {
+      story && (
+        <section>
+          <h2 class="section-title">The story</h2>
+          <p class="prose">{story.excerpt}</p>
+          <p class="muted"><a href={story.href}>{story.title}</a></p>
+        </section>
+      )
+    }
+    {
+      chapters.length > 0 && (
+        <section>
+          <h2 class="section-title">Chapters</h2>
+          {
+            v.duration && (
+              <div class="vd-map" role="list" aria-label="Chapter map: each part as long as it runs">
+                {chapters.map((c, i) => {
+                  const end = chapters[i + 1]?.t ?? v.duration!;
+                  return <a role="listitem" href={ytTime(v, c.t)} target="_blank" rel="noopener" style={`flex:${Math.max(1, end - c.t)}`} title={`${clock(c.t)} — ${c.title}`}><span>{i + 1}</span></a>;
+                })}
+              </div>
+            )
+          }
+          <ol class="vd-chapters">
+            {chapters.map((c) => <li><a href={ytTime(v, c.t)} target="_blank" rel="noopener"><time>{clock(c.t)}</time> <span dir="auto">{c.title}</span></a></li>)}
+          </ol>
+        </section>
+      )
+    }
+    {
+      v.links && v.links.length > 0 && (
+        <section>
+          <h2 class="section-title">Links from the video</h2>
+          <ul class="vd-links">{v.links.map((l) => <li><a href={l} target="_blank" rel="noopener">{l.replace(/^https?:\/\/(www\.)?/, '')}</a></li>)}</ul>
+        </section>
+      )
+    }
+    {
+      v.description && (
+        <details class="vd-desc">
+          <summary>Description on YouTube</summary>
+          <p dir="auto">{v.description}</p>
+        </details>
+      )
+    }
+    <nav class="pager">
+      {newer && <a href={url(`en/videos/${newer.id}/`)} rel="prev"><small><Icon name="arrow" /> Newer</small>{videoTitleEn(newer.title)}</a>}
+      {older && <a class="next" href={url(`en/videos/${older.id}/`)} rel="next"><small>Older <Icon name="arrow-r" /></small>{videoTitleEn(older.title)}</a>}
+    </nav>
+    <p class="muted">More from {EN.name}: <a href={url('en/')}>the latest AI news</a>.</p>
+  </article>
+</Base>

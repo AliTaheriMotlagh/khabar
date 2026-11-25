@@ -2,7 +2,7 @@
 // the quoted post — never Gholam's Persian. A post whose source has no English text isn't in it. The headline is the
 // model's English one (`ai.en`, pipeline/ai_en.py) when it has written it, else the linked article's own title, else
 // the source's first sentence. Topics, types and statuses keep the Persian site's (the same data), named in English.
-import { englishDigests, getStories, url, type Link, type Post } from './posts';
+import { abs, englishDigests, getStories, url, type Link, type Post } from './posts';
 import { cleanUrl, citedLinks, langOf, publisherOf, sourceKind } from './source';
 import { SITE } from '../site';
 
@@ -156,6 +156,10 @@ export function enDigest() {
   if (!d) return null;
   return { ...d, items: d.items.map((i) => ({ ...i, href: enOf(i.id)?.href ?? null })) };
 }
+
+/** Every English 24-hour summary of the channel, newest first, each item's absolute English page when it has one. */
+export const englishDigestsEn = () =>
+  englishDigests().map((d) => ({ ...d, items: d.items.map((i) => ({ ...i, href: enOf(i.id) ? abs(`en/p/${i.id}/`) : null })) }));
 
 /** Related English stories: the Persian site's related ids that have an English page, else shared topics. */
 export function enRelated(e: EnPost, n = 4): EnPost[] {

@@ -9,11 +9,12 @@ const path = Astro.url.pathname;
 const here = (p: string) => (p === url() ? path === p || /\/page\/\d+\/$/.test(path) : path.startsWith(p)) ? 'page' : undefined;
 const navEn = [
   { href: url('en/'), label: 'Home' },
+  { href: url('en/today/'), label: 'Today' },
   { href: url('en/topics/'), label: 'Topics' },
   { href: url('en/archive/'), label: 'Archive' },
   { href: url('en/investigate/'), label: 'Investigate' },
   { href: url('en/videos/'), label: 'Videos' },
-  { href: url('saved/'), label: 'Saved' },
+  { href: url('en/saved/'), label: 'Saved' },
 ];
 const homeEn = url('en/');
 const hereEn = (p: string) => (p === homeEn ? path === p || /\/en\/page\/\d+\/$/.test(path) : path.startsWith(p)) ? 'page' : undefined;
@@ -85,7 +86,7 @@ const nav = [
   <a href={url('en/topics/')} aria-current={hereEn(url('en/topics/'))}><Icon name="hash" /><span>Topics</span></a>
   <a class="tab-today" href={url('en/investigate/')} aria-current={hereEn(url('en/investigate/'))}><Icon name="search" /><span>Investigate</span></a>
   <a href={url('en/archive/')} aria-current={hereEn(url('en/archive/'))}><Icon name="calendar" /><span>Archive</span></a>
-  <a href={url('saved/')}><Icon name="bookmark" /><span>Saved</span></a>
+  <a href={url('en/saved/')} aria-current={hereEn(url('en/saved/'))}><Icon name="bookmark" /><span>Saved</span></a>
 </nav>
 ) : (
 <nav class="tabbar" aria-label="ناوبری پایین">

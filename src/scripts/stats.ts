@@ -1,7 +1,7 @@
 // The visits page (src/pages/stats/index.astro): readers per day for the last week as bars, and the most viewed
 // stories today, this week and of all time — from /api/stats (cached 10 minutes), titles from each story's card.json.
 import { SITE } from '../site';
-import { $, $$, BASE, compact, esc, fmtNum } from './core';
+import { $, $$, BASE, L, compact, esc, fmtNum, isEn } from './core';
 import { TZ } from '../lib/time';
 
 type Top = { id: number; views: number };
@@ -14,9 +14,17 @@ const card = (id: number) => {
   return cards.get(id)!;
 };
 
-// Noon on the day, so the weekday is right in Tehran whatever the viewer's zone.
-const weekday = (d: string) => new Intl.DateTimeFormat('fa-IR', { weekday: 'long', timeZone: TZ }).format(new Date(`${d}T12:00:00+03:30`));
-const date = (d: string) => new Intl.DateTimeFormat('fa-IR-u-ca-persian', { day: 'numeric', month: 'long', timeZone: TZ }).format(new Date(`${d}T12:00:00+03:30`));
+// Noon on the day, so the weekday is right in Tehran whatever the viewer's zone. The English page (/en/stats/) in English.
+const weekday = (d: string) => new Intl.DateTimeFormat(isEn() ? 'en-US' : 'fa-IR', { weekday: isEn() ? 'short' : 'long', timeZone: TZ }).format(new Date(`${d}T12:00:00+03:30`));
+const date = (d: string) => new Intl.DateTimeFormat(isEn() ? 'en-US' : 'fa-IR-u-ca-persian', { day: 'numeric', month: isEn() ? 'short' : 'long', timeZone: TZ }).format(new Date(`${d}T12:00:00+03:30`));
+const TODAY = () => L('امروز', 'Today');
+
+/** On the English page: the English headline of each story that has an English page (the explorer's file). */
+let enTitles: Promise<Map<number, string>> | null = null;
+const titlesEn = () =>
+  (enTitles ??= fetch(`${BASE}/investigate.json`)
+    .then((r) => (r.ok ? r.json() : null), () => null)
+    .then((raw) => new Map<number, string>((raw?.s ?? []).filter((r: unknown[]) => r[3]).map((r: unknown[]) => [r[0] as number, r[3] as string]))));
 
 function chart(days: Stats['days']) {
   const box = $('[data-st-chart]')!;
@@ -27,35 +35,37 @@ function chart(days: Stats['days']) {
   box.innerHTML = days
     .map((d, i) => {
       const today = i === last;
-      const label = `${today ? 'امروز (تا این لحظه)' : weekday(d.day)} ${date(d.day)}: ${fmtNum(d.readers)} خواننده`;
+      const label = `${today ? L('امروز (تا این لحظه)', 'Today (so far)') : weekday(d.day)} ${date(d.day)}: ${fmtNum(d.readers)} ${L('خواننده', 'readers')}`;
       // Selective labels: the busiest day and today.
       const shown = d === best || today;
       return `<div class="st-col${today ? ' today' : ''}" tabindex="0" role="img" aria-label="${esc(label)}">
         <span class="st-tip" aria-hidden="true">${esc(label)}</span>
         <span class="st-val" aria-hidden="true">${shown ? compact(d.readers) : ''}</span>
         <span class="st-bar" style="height:${Math.max(d.readers ? 2 : 0, (d.readers / max) * 100)}%" aria-hidden="true"></span>
-        <span class="st-day" aria-hidden="true">${today ? 'امروز' : weekday(d.day)}</span>
+        <span class="st-day" aria-hidden="true">${today ? TODAY() : weekday(d.day)}</span>
       </div>`;
     })
     .join('');
   $('[data-st-table]')!.innerHTML = days
-    .map((d, i) => `<tr><td>${esc(i === last ? 'امروز' : weekday(d.day))} ${esc(date(d.day))}</td><td>${fmtNum(d.readers)}</td></tr>`)
+    .map((d, i) => `<tr><td>${esc(i === last ? TODAY() : weekday(d.day))} ${esc(date(d.day))}</td><td>${fmtNum(d.readers)}</td></tr>`)
     .join('');
 }
 
 async function list(top: Top[]) {
   const ol = $('[data-st-top]')!;
   $('[data-st-empty]')!.hidden = top.length > 0;
+  const en = isEn() ? await titlesEn() : null;
+  if (en) top = top.filter((t) => en.has(t.id));
   const got = await Promise.all(top.map((t) => card(t.id)));
   const max = Math.max(1, ...top.map((t) => t.views));
   ol.innerHTML = top
     .map((t, i) => [t, got[i]] as const)
     .filter(([, c]) => c)
     .map(
-      ([t, c]) => `<li><a href="${esc(c!.href)}">
+      ([t, c]) => `<li><a href="${esc(en ? `${BASE}/en/p/${t.id}/` : c!.href)}">
         ${c!.thumb ? `<img src="${esc(c!.thumb)}" alt="" width="48" height="48" loading="lazy" referrerpolicy="no-referrer">` : '<span class="ph"></span>'}
-        <span class="st-title">${esc(c!.title)}</span>
-        <span class="st-views"><b>${compact(t.views)}</b> بازدید<i style="width:${(t.views / max) * 100}%"></i></span>
+        <span class="st-title">${esc(en?.get(t.id) ?? c!.title)}</span>
+        <span class="st-views"><b>${compact(t.views)}</b> ${L('بازدید', 'views')}<i style="width:${(t.views / max) * 100}%"></i></span>
       </a></li>`,
     )
     .join('');

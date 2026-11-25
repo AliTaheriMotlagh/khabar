@@ -5,7 +5,7 @@
 import Base from '../../layouts/Base.astro';
 import Icon from '../../components/Icon.astro';
 import { SITE } from '../../site';
-import { abs, faDate, faNum } from '../../lib/posts';
+import { abs, faDate, faNum, url } from '../../lib/posts';
 import { breadcrumbs } from '../../lib/seo';
 import { modelIndex } from '../../lib/tracker';
 
@@ -24,7 +24,7 @@ const jsonLd = [
   breadcrumbs([{ name: 'ردیاب مدل‌ها', path: 'models/' }]),
 ];
 ---
-<Base title="ردیاب مدل‌های هوش مصنوعی" description={`مدل‌های هوش مصنوعی در خبرها، با امتیاز بنچمارک‌ها و خبرهایشان: ${items.slice(0, 6).map((m) => m.name).join('، ') || 'GPT، Claude، Gemini، Qwen'} و بیشتر.`} jsonLd={jsonLd}>
+<Base title="ردیاب مدل‌های هوش مصنوعی" alternates={{ en: url("en/models/") }} description={`مدل‌های هوش مصنوعی در خبرها، با امتیاز بنچمارک‌ها و خبرهایشان: ${items.slice(0, 6).map((m) => m.name).join('، ') || 'GPT، Claude، Gemini، Qwen'} و بیشتر.`} jsonLd={jsonLd}>
   <div class="container narrow">
     <header class="page-head"><div><h1><Icon name="sparkles" /> ردیاب مدل‌ها</h1><p>هر مدل هوش مصنوعی که در خبرها آمده، با امتیازهایی که خودِ خبرها گفته‌اند؛ تازه‌ترین اول.</p></div></header>
     {items.length === 0 && <p class="muted">هنوز مدلی ثبت نشده؛ با خبرهای تازه پر می‌شود.</p>}

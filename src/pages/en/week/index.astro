@@ -1,0 +1,23 @@
+---
+// The week's most read, English (src/scripts/week.ts): the stories of /week/ that have an English page, by their English
+// headline. The model's weekly recap and the read-aloud queue are Persian, so they stay on /week/.
+import Base from '../../../layouts/Base.astro';
+import Icon from '../../../components/Icon.astro';
+import { url } from '../../../lib/posts';
+import { EN } from '../../../lib/en';
+---
+<Base lang="en" title="Most read this week" alternates={{ fa: url('week/') }} description={`The stories on ${EN.name} that the most readers opened in the last seven days.`}>
+  <div class="container narrow">
+    <header class="page-head"><div><h1><Icon name="trending" /> Most read this week</h1><p>The stories most readers opened in the last seven days; each reader counts once.</p></div></header>
+    <ol class="wk-list" data-wk-list aria-busy="true">
+      {Array.from({ length: 4 }, () => <li class="wk-item skeleton" aria-hidden="true"></li>)}
+    </ol>
+    <p class="muted" data-wk-empty hidden>No views counted for this week yet; check back a little later.</p>
+    <p class="muted" data-wk-off hidden>The list isn't available right now; check back a little later.</p>
+    <p class="st-note"><a href={url('en/stats/')}>Visits in detail</a></p>
+  </div>
+</Base>
+<script>
+  import { initWeek } from '../../../scripts/week';
+  initWeek();
+</script>

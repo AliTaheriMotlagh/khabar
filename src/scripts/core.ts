@@ -34,7 +34,7 @@ export function tapAudio(): AudioContext | null {
 // ---------- usage counts for the owner's page (server/live.js `ev:<day>`) ----------
 // What readers use (listen, share, make a video…): counted here and sent with the next presence beat, so counting never
 // costs a request of its own. No ids, no text: a name from a fixed list and a number.
-export const EVENTS = ['listen', 'playlist', 'share', 'save', 'video-made-v', 'video-made-h', 'video-made-s', 'video-shared', 'quiz-right', 'quiz-wrong', 'push-on', 'install', 'term', 'simple', 'today', 'week-listen', 'brief60', 'ad-view', 'ad-click', 'lang-en', 'investigate'] as const;
+export const EVENTS = ['listen', 'playlist', 'share', 'save', 'video-made-v', 'video-made-h', 'video-made-s', 'video-shared', 'quiz-right', 'quiz-wrong', 'push-on', 'install', 'term', 'simple', 'today', 'week-listen', 'brief60', 'ad-view', 'ad-click', 'lang-en', 'investigate', 'calendar'] as const;
 export type EventName = (typeof EVENTS)[number];
 export function track(name: EventName) {
   const ev = store.get<Record<string, number>>('ev', {});
@@ -139,13 +139,24 @@ export type Entry = { id: number; title: string; href: string; cover?: string; d
 export const getSaved = () => store.get<Entry[]>('saved', []);
 export const getHistory = () => store.get<Entry[]>('history', []);
 
+/** "5 minutes ago", "yesterday", then the date: relTime's English (the English pages' rows). */
+function relTimeEn(when: string | number) {
+  const mins = (Date.now() - new Date(when).getTime()) / 6e4;
+  const rtf = new Intl.RelativeTimeFormat('en', { numeric: 'auto' });
+  if (mins < 1) return 'just now';
+  if (mins < 60) return rtf.format(-Math.round(mins), 'minute');
+  if (mins < 60 * 24) return rtf.format(-Math.round(mins / 60), 'hour');
+  if (mins < 60 * 24 * 7) return rtf.format(-Math.round(mins / 1440), 'day');
+  return new Date(when).toLocaleDateString('en-US', { day: 'numeric', month: 'short', year: 'numeric' });
+}
 export function rowHtml(e: Entry, saved: boolean) {
-  const when = e.at ? `خوانده‌شده ${relTime(e.at)}` : e.date ? relTime(e.date) : '';
+  const en = isEn();
+  const when = e.at ? (en ? `read ${relTimeEn(e.at)}` : `خوانده‌شده ${relTime(e.at)}`) : e.date ? (en ? relTimeEn(e.date) : relTime(e.date)) : '';
   return `<li class="row-item" data-id="${e.id}">
     <a href="${esc(e.href)}">
       ${e.cover ? `<img src="${esc(e.cover)}" alt="" width="64" height="64" loading="lazy" referrerpolicy="no-referrer">` : '<span class="ph"></span>'}
-      <span><b>${esc(e.title)}</b><small>${esc(when)}</small></span>
+      <span><b dir="auto">${esc(e.title)}</b><small>${esc(when)}</small></span>
     </a>
-    ${saved ? `<button class="icon-btn save-btn" type="button" aria-pressed="true" aria-label="حذف از ذخیره‌ها" data-save data-id="${e.id}"><svg class="i on" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M6 4h12v17l-6-4-6 4z"/></svg></button>` : ''}
+    ${saved ? `<button class="icon-btn save-btn" type="button" aria-pressed="true" aria-label="${L('حذف از ذخیره‌ها', 'Remove from saved')}" data-save data-id="${e.id}"><svg class="i on" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M6 4h12v17l-6-4-6 4z"/></svg></button>` : ''}
   </li>`;
 }
