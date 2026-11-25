@@ -123,6 +123,13 @@
    "model": "qwen3.5-9b-q4_k_m",
    "v": 2,
    "src": "9d5ab7a3d2b6"
+  },
+  "en": {
+   "title": "Apple opens Siri AI integration to all developers in new preview",
+   "short": "Apple opens Siri AI to all developers",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "2f3745b96773"
   }
  }
 }

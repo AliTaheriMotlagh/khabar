@@ -143,6 +143,13 @@
    "v": 1,
    "src": "a189c673071a",
    "added": 2
+  },
+  "en": {
+   "title": "Axiom releases formalized Stacks Project in Lean",
+   "short": "Axiom formalizes Stacks Project in Lean",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "03604e6fc331"
   }
  }
 }

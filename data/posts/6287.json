@@ -107,6 +107,13 @@
    "model": "qwen3.5-9b-q4_k_m",
    "v": 2,
    "src": "16cfd27055e9"
+  },
+  "en": {
+   "title": "AMD stock surges over 6% after stronger than expected earnings",
+   "short": "AMD stock jumps 6% on earnings beat",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "1eff3d836838"
   }
  }
 }

@@ -162,6 +162,13 @@
    "v": 1,
    "src": "7d44bc449c2a",
    "added": 1
+  },
+  "en": {
+   "title": "OpenAI introduces GPT-6 Cyber for security research",
+   "short": "OpenAI launches GPT-6 Cyber for security teams",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "88904016c609"
   }
  }
 }

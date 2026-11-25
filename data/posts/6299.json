@@ -136,6 +136,13 @@
    "v": 1,
    "src": "b9310a5871c8",
    "added": 1
+  },
+  "en": {
+   "title": "Conductor joins Meta to build next interface with MSL",
+   "short": "Conductor joins Meta for new interface project",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "a6c0b8b37577"
   }
  }
 }

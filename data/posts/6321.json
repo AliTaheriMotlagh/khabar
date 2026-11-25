@@ -143,6 +143,13 @@
    "model": "qwen3.5-9b-q4_k_m",
    "v": 2,
    "src": "681c3b745879"
+  },
+  "en": {
+   "title": "GPT-6.2 Sol and Astra deployed on Google Cloud",
+   "short": "GPT-6.2 Sol and Astra deployed on Google Cloud",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "c3d41d1b3964"
   }
  }
 }

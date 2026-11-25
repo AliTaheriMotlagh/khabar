@@ -123,6 +123,13 @@
    "model": "qwen3.5-9b-q4_k_m",
    "v": 2,
    "src": "71c28b73823d"
+  },
+  "en": {
+   "title": "Qualcomm signs deal to help SpaceX build nationwide 5G network",
+   "short": "Qualcomm helps SpaceX build 5G network",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "046a07b7068a"
   }
  }
 }

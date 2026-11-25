@@ -123,6 +123,13 @@
    "model": "qwen3.5-9b-q4_k_m",
    "v": 2,
    "src": "5a642d12b1b2"
+  },
+  "en": {
+   "title": "OpenAI staff warned of monorepo security risks for years",
+   "short": "OpenAI staff warned of monorepo risks",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "cc3d87548d05"
   }
  }
 }

@@ -127,6 +127,13 @@
    "v": 1,
    "src": "24c22c52682a",
    "added": 2
+  },
+  "en": {
+   "title": "Aina Ring Predicts Needs and Controls Devices With One Flick",
+   "short": "Aina Ring predicts needs and controls devices",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "99a89a341eb9"
   }
  }
 }

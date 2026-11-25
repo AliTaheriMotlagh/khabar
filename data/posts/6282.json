@@ -126,6 +126,13 @@
    "v": 1,
    "src": "11bf84a38c67",
    "added": 1
+  },
+  "en": {
+   "title": "Anthropic opens FlashProve for verifying large language model responses",
+   "short": "Anthropic releases FlashProve for AI verification",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "8adb3e156f99"
   }
  }
 }

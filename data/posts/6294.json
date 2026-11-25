@@ -120,6 +120,13 @@
    "v": 1,
    "src": "8ce4081e7eea",
    "added": 1
+  },
+  "en": {
+   "title": "OpenAI to acquire Pierre Computer to accelerate Codex vision",
+   "short": "OpenAI acquires Pierre Computer for Codex",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "149ed051b3f4"
   }
  }
 }

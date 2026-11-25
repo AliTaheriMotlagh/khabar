@@ -113,6 +113,13 @@
    "model": "qwen3.5-9b-q4_k_m",
    "v": 2,
    "src": "eff526d62559"
+  },
+  "en": {
+   "title": "Google turns off Gemini and AI features in schools by default",
+   "short": "Google disables AI tools in schools by default",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "bbeaaa0f1231"
   }
  }
 }

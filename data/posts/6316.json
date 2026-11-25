@@ -135,6 +135,13 @@
    "v": 1,
    "src": "8ab106f93aed",
    "added": 1
+  },
+  "en": {
+   "title": "New AI framework measures economic value per joule of energy",
+   "short": "New AI framework measures economic value per joule",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "9240b58a2b43"
   }
  }
 }

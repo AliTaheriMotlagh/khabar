@@ -127,6 +127,13 @@
    "v": 1,
    "src": "0fa096d38864",
    "added": 2
+  },
+  "en": {
+   "title": "Pangram launches Image 1.0 for AI detection with Chrome extension",
+   "short": "Pangram launches Image 1.0 for AI detection",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "f7a4af88da68"
   }
  }
 }

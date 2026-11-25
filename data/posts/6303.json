@@ -130,6 +130,13 @@
    "v": 1,
    "src": "9d09d5734f4b",
    "added": 1
+  },
+  "en": {
+   "title": "Community trains lightweight classifier on EmbeddingGemma 2 for real-time local use",
+   "short": "Community trains classifier on EmbeddingGemma 2",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "e7a0ec8e6c8d"
   }
  }
 }

@@ -130,6 +130,13 @@
    "v": 1,
    "src": "9b19a5a212de",
    "added": 1
+  },
+  "en": {
+   "title": "Claude Adds Personal Finance Beta in US for Read-Only Account Access",
+   "short": "Claude beta offers read-only US finance access",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "28c350093337"
   }
  }
 }

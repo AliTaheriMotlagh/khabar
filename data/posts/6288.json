@@ -97,6 +97,13 @@
    "model": "qwen3.5-9b-q4_k_m",
    "v": 2,
    "src": "4a9d206185f2"
+  },
+  "en": {
+   "title": "Sam Altman: People Must Control Future, Not AI Systems",
+   "short": "Altman: People must control future, not AI",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "cc12ed9b9075"
   }
  }
 }

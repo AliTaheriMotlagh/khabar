@@ -141,6 +141,13 @@
    "v": 1,
    "src": "af99ad3fc72f",
    "added": 2
+  },
+  "en": {
+   "title": "JITEngine delivers LLM inference up to 2.7x faster on Apple Silicon",
+   "short": "JITEngine boosts LLM inference up to 2.7x on Mac",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "07f4faad5555"
   }
  }
 }

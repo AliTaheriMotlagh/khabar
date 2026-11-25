@@ -125,6 +125,13 @@
    "model": "qwen3.5-9b-q4_k_m",
    "v": 2,
    "src": "2e1cd0576d94"
+  },
+  "en": {
+   "title": "Notion lets AI agents share memory and skills",
+   "short": "Notion AI agents now share memory and skills",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "e0231c3f00ec"
   }
  }
 }

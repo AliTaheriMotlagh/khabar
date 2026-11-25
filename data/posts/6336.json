@@ -114,6 +114,13 @@
    "model": "qwen3.5-9b-q4_k_m",
    "v": 2,
    "src": "d6f97422a9a6"
+  },
+  "en": {
+   "title": "Muse voice feature launches for US users with calling and video chat",
+   "short": "Muse voice feature launches for US users",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "aec644c91bde"
   }
  }
 }

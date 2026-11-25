@@ -123,6 +123,13 @@
    "v": 1,
    "src": "a5a9ae86f4a7",
    "added": 1
+  },
+  "en": {
+   "title": "Cognition introduces SWE-2 Flash coding model outperforming larger rivals",
+   "short": "Cognition launches SWE-2 Flash coding model",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "4b8e9c5fca96"
   }
  }
 }

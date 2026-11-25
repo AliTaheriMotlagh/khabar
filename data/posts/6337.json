@@ -128,6 +128,13 @@
    "model": "qwen3.5-9b-q4_k_m",
    "v": 2,
    "src": "ac862267a593"
+  },
+  "en": {
+   "title": "METR says Anthropic may hit 3x Responsible Scaling Policy threshold",
+   "short": "METR: Anthropic may hit 3x scaling threshold",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "1cf0daab25ae"
   }
  }
 }

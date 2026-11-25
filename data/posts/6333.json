@@ -160,6 +160,13 @@
    "v": 1,
    "src": "b5e7ac6e0e3e",
    "added": 1
+  },
+  "en": {
+   "title": "TikTok face model shows bias against darker skin and older faces",
+   "short": "TikTok face model shows bias",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "9486f53cae53"
   }
  }
 }

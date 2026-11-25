@@ -118,6 +118,13 @@
    "v": 1,
    "src": "4ba7e5d08a86",
    "added": 2
+  },
+  "en": {
+   "title": "Mint Modeler Study Shows Apple Headphones With Separate Parts",
+   "short": "Mint Modeler separates headphone parts",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "fef0e0e90128"
   }
  }
 }

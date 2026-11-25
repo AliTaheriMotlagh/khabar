@@ -162,6 +162,13 @@
    "v": 1,
    "src": "6335ca9637b7",
    "added": 3
+  },
+  "en": {
+   "title": "Zipline raises $1.5b at $21.5b valuation",
+   "short": "Zipline raises $1.5b at $21.5b valuation",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "23ab78ba8db6"
   }
  }
 }

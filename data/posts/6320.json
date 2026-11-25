@@ -122,6 +122,13 @@
    "model": "qwen3.5-9b-q4_k_m",
    "v": 2,
    "src": "212785e123dc"
+  },
+  "en": {
+   "title": "OpenAI leaders discuss revising 2027 data center capacity expectations",
+   "short": "OpenAI may revise 2027 data center plans",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "750f2a9fdb4f"
   }
  }
 }

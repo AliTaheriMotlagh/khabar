@@ -134,6 +134,13 @@
    "v": 1,
    "src": "f03977ecb655",
    "added": 1
+  },
+  "en": {
+   "title": "Atmee launches v2 real-time avatar model after Google acquisition",
+   "short": "Atmee launches v2 real-time avatar model",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "1f2390e539dc"
   }
  }
 }

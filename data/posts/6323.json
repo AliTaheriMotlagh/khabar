@@ -147,6 +147,13 @@
    "v": 1,
    "src": "df7a45f83e08",
    "added": 2
+  },
+  "en": {
+   "title": "Nathan's RLHF Book Helps Job Seekers Prepare for Post-Training Interviews",
+   "short": "Nathan's book aids post-training interview prep",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "1d32e796036f"
   }
  }
 }

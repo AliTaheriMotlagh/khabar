@@ -122,6 +122,13 @@
    "model": "qwen3.5-9b-q4_k_m",
    "v": 2,
    "src": "0de16d931114"
+  },
+  "en": {
+   "title": "Survey finds 83% of wearable users check devices daily",
+   "short": "83% of wearable users check devices daily",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "36e4c9d8a151"
   }
  }
 }

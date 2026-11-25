@@ -121,6 +121,13 @@
    "model": "qwen3.5-9b-q4_k_m",
    "v": 2,
    "src": "3e83521a8fd8"
+  },
+  "en": {
+   "title": "Yam AI launches dating sim games for women built by women",
+   "short": "Yam AI dating sims for women built by women",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "9fecfbf4a8d8"
   }
  }
 }

@@ -142,6 +142,13 @@
    "v": 1,
    "src": "b3f03adc7336",
    "added": 1
+  },
+  "en": {
+   "title": "Ripple-65B Preview sets new state-of-the-art for U.S. open-weight models in agentic coding tasks",
+   "short": "Ripple-65B Preview beats larger models in coding",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "4d15c3c67965"
   }
  }
 }

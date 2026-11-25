@@ -130,6 +130,13 @@
    "v": 1,
    "src": "079b7804e966",
    "added": 3
+  },
+  "en": {
+   "title": "Google AI launches Gemini Omni 1.2 Flash with 15-second video generation",
+   "short": "Google AI launches Gemini Omni 1.2 Flash",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "9c05184d658c"
   }
  }
 }

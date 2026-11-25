@@ -136,6 +136,13 @@
    "model": "qwen3.5-9b-q4_k_m",
    "v": 2,
    "src": "bef95b7fe9da"
+  },
+  "en": {
+   "title": "Google AI Studio Gemini API tool now generally available",
+   "short": "Gemini API tool now generally available",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "f1c4000501ae"
   }
  }
 }

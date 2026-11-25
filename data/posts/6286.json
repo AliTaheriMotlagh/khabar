@@ -145,6 +145,13 @@
    "v": 1,
    "src": "76c82090c2b4",
    "added": 2
+  },
+  "en": {
+   "title": "Developers open source Flappy Airplanes megakernel after $1B raise",
+   "short": "Flappy Airplanes megakernel code open sourced",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "c49e80f0714a"
   }
  }
 }

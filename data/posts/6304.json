@@ -130,6 +130,13 @@
    "model": "qwen3.5-9b-q4_k_m",
    "v": 2,
    "src": "5a4f42be315a"
+  },
+  "en": {
+   "title": "Anthropic maps first 3D structure of bacterial vault particle with Claude",
+   "short": "Anthropic maps bacterial vault particle structure",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "dd5b8195658d"
   }
  }
 }

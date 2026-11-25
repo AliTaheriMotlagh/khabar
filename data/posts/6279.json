@@ -117,6 +117,13 @@
    "model": "qwen3.5-9b-q4_k_m",
    "v": 2,
    "src": "4a8bcdd7d910"
+  },
+  "en": {
+   "title": "Andrew Curran says Google search now requires Gemini",
+   "short": "Curran: Old Google search is gone",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "ab30f42af3cd"
   }
  }
 }

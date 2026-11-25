@@ -147,6 +147,13 @@
    "v": 1,
    "src": "1761273d5212",
    "added": 3
+  },
+  "en": {
+   "title": "OpenAI brings GPT-Image-2.6 to Codex and API",
+   "short": "OpenAI launches GPT-Image-2.6 for Codex and API",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "f787fc3cd24e"
   }
  }
 }

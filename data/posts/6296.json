@@ -135,6 +135,13 @@
    "v": 1,
    "src": "fe1d6ae83208",
    "added": 1
+  },
+  "en": {
+   "title": "Moonshot AI releases Kimi K3.1 Pro model weights with 2.8T parameters",
+   "short": "Moonshot AI releases Kimi K3.1 Pro model weights",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "221145142138"
   }
  }
 }
