@@ -52,5 +52,21 @@
   "why": null,
   "tags": []
  },
- "updated": "2026-11-25T23:08:01+00:00"
+ "updated": "2026-11-25T23:08:01+00:00",
+ "ai": {
+  "title": "پاول دورف مدیرعامل تلگرام ارائه‌هایش را این‌گونه آغاز می‌کند",
+  "short": "شروع ارائه دورف",
+  "topics": [],
+  "type": "خبر",
+  "model": "qwen3.5-9b-q4_k_m",
+  "v": 2,
+  "src": "8485b2c6ba13",
+  "en": {
+   "title": "Telegram CEO Pavel Durov starts presentation this way",
+   "short": "Telegram CEO Pavel Durov starts presentation",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "1f761f2797ed"
+  }
+ }
 }
