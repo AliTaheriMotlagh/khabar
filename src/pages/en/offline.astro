@@ -1,0 +1,13 @@
+---
+// Served by the service worker (public/sw.js) when an English page is requested offline and was never cached.
+import Base from '../../layouts/Base.astro';
+import Icon from '../../components/Icon.astro';
+import { url } from '../../lib/posts';
+---
+<Base lang="en" title="Offline" noindex alternates={{ fa: url('offline/') }}>
+  <div class="container narrow empty">
+    <Icon name="wifi-off" />
+    <p>You're not connected, and this page isn't saved on your device yet.</p>
+    <p class="row center"><a class="btn primary" href={url('en/saved/')}>Saved stories</a> <a class="btn" href={url('en/')}>Home</a></p>
+  </div>
+</Base>

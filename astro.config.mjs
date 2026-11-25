@@ -70,9 +70,10 @@ export default defineConfig({
         const post = p.match(/\/p\/(\d+)\/$/)?.[1];
         // An English page's twin: only when it exists (a Persian-only post has none; the plugin pairs by path).
         if (item.links && !EN_PAGES.size) scanEn(enDir, '');
-        // Twins only where the two pages carry the same thing: a story, the home, about, videos, explorer, archive (a
+        // Twins only where the two pages carry the same thing: a story, the home, about, videos and episodes, explorer,
+        // archive, feeds, calendar, models, who, today, week, stats (a
         // list's page 2 holds different stories in each language).
-        const twin = /^\/(en\/)?(p\/\d+\/|about\/|videos\/|investigate\/|archive\/)?$/;
+        const twin = /^\/(en\/)?(p\/\d+\/|about\/|videos\/([\w-]{11}\/)?|investigate\/|archive\/|feeds\/|calendar\/|models\/|who\/|today\/|week\/|stats\/)?$/;
         if (item.links) item.links = twin.test(p.slice(BASE.length)) ? item.links.filter((l) => l.lang !== 'en' || EN_PAGES.has(new URL(l.url).pathname)) : undefined;
         if (item.links && item.links.length < 2) item.links = undefined;
         const video = p.match(/\/videos\/([\w-]{11})\/$/)?.[1];
@@ -93,5 +94,18 @@ export default defineConfig({
         return item;
       },
     }),
+    // Cloudflare Pages (and GitHub Pages' mirror for its own root) serve the nearest 404.html up the path: Astro writes
+    // only the root one as a file, so the English edition's (src/pages/en/404.astro) is moved to /en/404.html.
+    {
+      name: 'en-404',
+      hooks: {
+        'astro:build:done': ({ dir }) => {
+          const from = new URL('en/404/index.html', dir);
+          if (!fs.existsSync(from)) return;
+          fs.renameSync(from, new URL('en/404.html', dir));
+          fs.rmSync(new URL('en/404/', dir), { recursive: true, force: true });
+        },
+      },
+    },
   ],
 });

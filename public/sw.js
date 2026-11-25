@@ -9,13 +9,14 @@ const ASSETS = `assets-${VERSION}`;
 const IMAGES = `images-${VERSION}`;
 const SCOPE = new URL(self.registration.scope).pathname;
 const OFFLINE = `${SCOPE}offline/`;
+const OFFLINE_EN = `${SCOPE}en/offline/`; // the English pages' (/en/…)
 const VOICE = 'voice-v1'; // the downloaded Persian voice (src/scripts/voice.ts): never cleared here
 const AUDIO = 'audio-v1'; // saved stories' sound for listening offline (src/scripts/offline-audio.ts): never cleared here
 const VIDEO = 'video-v1'; // news videos made on the device (src/scripts/video.ts): never cleared here
 const IMAGE_HOSTS = /(^|\.)(twimg\.com|telesco\.pe|ytimg\.com|wsrv\.nl)$/; // wsrv.nl: the image proxy (src/lib/posts.ts)
 
 self.addEventListener('install', (e) => {
-  e.waitUntil(caches.open(PAGES).then((c) => c.addAll([SCOPE, OFFLINE])).then(() => self.skipWaiting()));
+  e.waitUntil(caches.open(PAGES).then((c) => c.addAll([SCOPE, OFFLINE, OFFLINE_EN])).then(() => self.skipWaiting()));
 });
 
 self.addEventListener('activate', (e) => {
@@ -73,7 +74,8 @@ async function networkFirst(req, event) {
   try {
     return await Promise.race([fresh, new Promise((_, rej) => setTimeout(() => rej(new Error('timeout')), 6000))]);
   } catch {
-    return (await cache.match(req, { ignoreSearch: true })) || (await cache.match(OFFLINE)) || Response.error();
+    const en = new URL(req.url).pathname.startsWith(`${SCOPE}en/`);
+    return (await cache.match(req, { ignoreSearch: true })) || (en && (await cache.match(OFFLINE_EN))) || (await cache.match(OFFLINE)) || Response.error();
   }
 }
 

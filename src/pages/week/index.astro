@@ -10,7 +10,7 @@ const recap = weeklies()[0] ?? null;
 const byId = new Map(getPosts().map((p) => [p.id, p]));
 const items = recap ? recap.items.map((it) => ({ ...it, p: byId.get(it.id) })).filter((it) => it.p) : [];
 ---
-<Base title="پربازدیدترین‌های هفته" description={recap ? `هفته‌ای که گذشت: ${recap.title}. ${recap.intro}` : 'خبرهایی که در هفت روز گذشته بیشتر از همه خوانده شده‌اند.'}>
+<Base title="پربازدیدترین‌های هفته" alternates={{ en: url("en/week/") }} description={recap ? `هفته‌ای که گذشت: ${recap.title}. ${recap.intro}` : 'خبرهایی که در هفت روز گذشته بیشتر از همه خوانده شده‌اند.'}>
   <link slot="head" rel="alternate" type="application/rss+xml" title="پربازدیدترین‌های هفته" href={abs('rss/top.xml')} />
   <div class="container narrow">
     <header class="page-head with-action">

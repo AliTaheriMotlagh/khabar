@@ -12,7 +12,7 @@ const all = whoList();
 const kinds = (Object.keys(KIND_FA) as EntityKind[]).map((k) => ({ k, items: all.filter((x) => x.e.kind === k) })).filter((g) => g.items.length);
 const jsonLd = [breadcrumbs([{ name: 'آدم‌ها و شرکت‌ها', path: 'who/' }])];
 ---
-<Base title="آدم‌ها و شرکت‌ها" description={`آدم‌ها، شرکت‌ها، مدل‌ها و محصول‌های دنیای هوش مصنوعی در خبرهای ${SITE.name}: ${all.slice(0, 6).map((x) => x.e.name_fa).join('، ')} و …`} jsonLd={jsonLd}>
+<Base title="آدم‌ها و شرکت‌ها" alternates={{ en: url("en/who/") }} description={`آدم‌ها، شرکت‌ها، مدل‌ها و محصول‌های دنیای هوش مصنوعی در خبرهای ${SITE.name}: ${all.slice(0, 6).map((x) => x.e.name_fa).join('، ')} و …`} jsonLd={jsonLd}>
   <div class="container narrow">
     <header class="page-head"><div><h1><Icon name="users" /> آدم‌ها و شرکت‌ها</h1><p>هر نام، همه‌ی خبرهایش. نام‌ها را هوش مصنوعی سایت از متن خبرها بیرون کشیده.</p></div></header>
     {all.length === 0 && <p class="muted">هنوز چیزی نیست؛ با خبرهای تازه پر می‌شود.</p>}

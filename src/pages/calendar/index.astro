@@ -1,76 +1,26 @@
 ---
 // «تقویم رویدادها» (PLAN.md P3-5): the dated events the stories announce — launches, conferences, hearings, deadlines —
 // each with its story. Only dates a story states (pipeline/ai_more.py `date_said`), never one the model worked out
-// from "next week". Upcoming first; the last month's behind a fold. Subscribable as /calendar.ics.
+// from "next week". Upcoming first; the last month's behind a fold. Subscribable as /calendar.ics; the English twin
+// is /en/calendar/ (src/components/CalendarView.astro, src/lib/calendar.ts).
 import Base from '../../layouts/Base.astro';
 import Icon from '../../components/Icon.astro';
+import CalendarView from '../../components/CalendarView.astro';
 import { SITE } from '../../site';
-import { abs, faDate, faNum, url } from '../../lib/posts';
+import { abs, url } from '../../lib/posts';
 import { breadcrumbs } from '../../lib/seo';
 import { tehranDay } from '../../lib/time';
-import { events, type CalEvent } from '../../lib/tracker';
+import { calEvents, calLinks } from '../../lib/calendar';
+import { eventsLd } from '../../lib/calendar-ld';
 
 const today = tehranDay(Date.now());
-const all = events();
-const upcoming = all.filter((e) => e.date >= today);
-const past = all.filter((e) => e.date < today && Date.parse(today) - Date.parse(e.date) <= 31 * 86_400_000).reverse();
-const byDay = (list: CalEvent[]) => {
-  const days: { date: string; items: CalEvent[] }[] = [];
-  for (const e of list) (days.at(-1)?.date === e.date ? days.at(-1)!.items : (days.push({ date: e.date, items: [] }), days.at(-1)!.items)).push(e);
-  return days;
-};
-const at = (d: string) => `${d}T12:00:00+03:30`; // noon in Tehran: the day never slips across midnight
-const ics = abs('calendar.ics');
-const jsonLd = [
-  {
-    '@context': 'https://schema.org',
-    '@type': 'ItemList',
-    name: `تقویم رویدادهای هوش مصنوعی — ${SITE.name}`,
-    url: abs('calendar/'),
-    itemListElement: upcoming.slice(0, 50).map((e, i) => ({ '@type': 'ListItem', position: i + 1, item: { '@type': 'Event', name: e.what, startDate: e.date, url: abs(`p/${e.post.id}/`), eventAttendanceMode: 'https://schema.org/MixedEventAttendanceMode', location: { '@type': 'VirtualLocation', url: abs(`p/${e.post.id}/`) } } })),
-  },
-  breadcrumbs([{ name: 'تقویم رویدادها', path: 'calendar/' }]),
-];
+const upcoming = calEvents('fa').filter((e) => e.date >= today);
+const jsonLd = [eventsLd(`تقویم رویدادهای هوش مصنوعی — ${SITE.name}`, abs('calendar/'), upcoming, 'fa-IR'), breadcrumbs([{ name: 'تقویم رویدادها', path: 'calendar/' }])];
 ---
-<Base title="تقویم رویدادهای هوش مصنوعی" description={`رویدادها، عرضه‌ها و مهلت‌های پیش روی دنیای هوش مصنوعی، هر کدام با خبرش${upcoming[0] ? `: ${upcoming.slice(0, 3).map((e) => e.what).join('، ')}` : ''}.`} jsonLd={jsonLd}>
+<Base title="تقویم رویدادهای هوش مصنوعی" alternates={{ en: url('en/calendar/') }} description={`رویدادها، عرضه‌ها و مهلت‌های پیش روی دنیای هوش مصنوعی، هر کدام با خبرش${upcoming[0] ? `: ${upcoming.slice(0, 3).map((e) => e.summary).join('، ')}` : ''}.`} jsonLd={jsonLd}>
+  <link slot="head" rel="alternate" type="text/calendar" title={calLinks('fa').name} href={url('calendar.ics')} />
   <div class="container narrow">
-    <header class="page-head with-action">
-      <div><h1><Icon name="clock" /> تقویم رویدادها</h1><p>عرضه‌ها، رویدادها و مهلت‌هایی که خبرها تاریخشان را گفته‌اند.</p></div>
-      <a class="btn" href={ics.replace(/^https:/, 'webcal:')} data-ics={url('calendar.ics')}><Icon name="plus" /> افزودن به تقویم من</a>
-    </header>
-    {upcoming.length === 0 && <p class="muted">فعلاً رویداد تاریخ‌داری در خبرها نیامده.</p>}
-    <ol class="cal">
-      {byDay(upcoming).map((d) => (
-        <li class="cal-day" id={`d-${d.date}`}>
-          <span class="cal-date" aria-hidden="true"><b>{faDate(at(d.date), { day: 'numeric' })}</b>{faDate(at(d.date), { month: 'short' })}</span>
-          <div>
-            <h2 class="cal-h"><time datetime={d.date}>{faDate(at(d.date), { weekday: 'long', day: 'numeric', month: 'long', year: 'numeric' })}</time></h2>
-            <ul>{d.items.map((e) => <li><span>{e.what}</span> <a href={e.post.href}>{e.post.short}</a></li>)}</ul>
-          </div>
-        </li>
-      ))}
-    </ol>
-    {
-      past.length > 0 && (
-        <details class="cal-past">
-          <summary>ماه گذشته <small data-num>{faNum(past.length)}</small></summary>
-          <ol class="cal">
-            {byDay(past).map((d) => (
-              <li class="cal-day" id={`d-${d.date}`}>
-                <span class="cal-date" aria-hidden="true"><b>{faDate(at(d.date), { day: 'numeric' })}</b>{faDate(at(d.date), { month: 'short' })}</span>
-                <div><ul>{d.items.map((e) => <li><span>{e.what}</span> <a href={e.post.href}>{e.post.short}</a></li>)}</ul></div>
-              </li>
-            ))}
-          </ol>
-        </details>
-      )
-    }
+    <header class="page-head"><h1><Icon name="clock" /> تقویم رویدادها</h1><p>عرضه‌ها، رویدادها و مهلت‌هایی که خبرها تاریخشان را گفته‌اند.</p></header>
+    <CalendarView lang="fa" />
   </div>
-  <script>
-    // webcal:// subscribes on Apple/Outlook; where nothing handles it (most Android browsers), fall back to the file.
-    document.querySelector<HTMLAnchorElement>('[data-ics]')?.addEventListener('click', (e) => {
-      const a = e.currentTarget as HTMLAnchorElement;
-      if (!/iPhone|iPad|Macintosh/.test(navigator.userAgent)) { e.preventDefault(); location.href = a.dataset.ics!; }
-    });
-  </script>
 </Base>

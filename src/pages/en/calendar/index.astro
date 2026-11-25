@@ -1,0 +1,24 @@
+---
+// The English events calendar: the events of /calendar/ whose story has an English page, titled by its English
+// headline; subscribable as /en/calendar.ics (src/lib/calendar.ts, src/components/CalendarView.astro).
+import Base from '../../../layouts/Base.astro';
+import Icon from '../../../components/Icon.astro';
+import CalendarView from '../../../components/CalendarView.astro';
+import { abs, url } from '../../../lib/posts';
+import { breadcrumbs } from '../../../lib/seo';
+import { tehranDay } from '../../../lib/time';
+import { calEvents, calLinks } from '../../../lib/calendar';
+import { eventsLd } from '../../../lib/calendar-ld';
+import { EN } from '../../../lib/en';
+
+const today = tehranDay(Date.now());
+const upcoming = calEvents('en').filter((e) => e.date >= today);
+const jsonLd = [eventsLd(`AI events calendar — ${EN.name}`, abs('en/calendar/'), upcoming, 'en'), breadcrumbs([{ name: 'Events calendar', path: 'en/calendar/' }], 'en')];
+---
+<Base lang="en" title="AI events calendar" alternates={{ fa: url('calendar/') }} description={`Upcoming AI launches, events and deadlines, each with the story that dates it${upcoming[0] ? `: ${upcoming.slice(0, 2).map((e) => e.summary).join('; ')}` : ''}.`} jsonLd={jsonLd}>
+  <link slot="head" rel="alternate" type="text/calendar" title={calLinks('en').name} href={url('en/calendar.ics')} />
+  <div class="container narrow">
+    <header class="page-head"><h1><Icon name="clock" /> Events calendar</h1><p>Launches, events and deadlines the stories give a date for — add them to your phone's calendar.</p></header>
+    <CalendarView lang="en" />
+  </div>
+</Base>

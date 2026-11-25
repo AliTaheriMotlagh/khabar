@@ -1,0 +1,87 @@
+---
+// The English model tracker: /models/'s list (src/lib/tracker.ts modelIndex) — each AI model in the news with the
+// benchmark scores the stories gave it — linked to the English stories; the maker named in English.
+import Base from '../../../layouts/Base.astro';
+import Icon from '../../../components/Icon.astro';
+import { abs, url } from '../../../lib/posts';
+import { breadcrumbs } from '../../../lib/seo';
+import { modelIndex } from '../../../lib/tracker';
+import { findEntity } from '../../../lib/knowledge';
+import { EN, enDate, enOf } from '../../../lib/en';
+
+// The makers tracker.ts names (MAKERS) and the common ones the model writes, in English; else the entity file's name.
+const MAKER_EN: Record<string, string> = {
+  'اوپن‌ای‌آی': 'OpenAI', 'آنتروپیک': 'Anthropic', 'گوگل': 'Google', 'گوگل دیپ‌مایند': 'Google DeepMind', 'دیپ‌مایند': 'Google DeepMind', 'علی‌بابا': 'Alibaba',
+  'متا': 'Meta', 'دیپ‌سیک': 'DeepSeek', 'مون‌شات': 'Moonshot AI', 'میسترال': 'Mistral AI', 'مایکروسافت': 'Microsoft', 'انویدیا': 'NVIDIA',
+  'ژیپو': 'Zhipu AI', 'مینی‌مکس': 'MiniMax', 'اپل': 'Apple', 'آمازون': 'Amazon', 'سامسونگ': 'Samsung', 'تسلا': 'Tesla', 'بایت‌دنس': 'ByteDance', 'تنسنت': 'Tencent',
+};
+const makerEn = (m: string) => (!m ? '' : MAKER_EN[m] ?? (/^[\x20-\x7e]+$/.test(m) ? m : findEntity(m)?.name_en ?? ''));
+// Names and benchmarks the model wrote in Persian («توکن بر ثانیه») have no English label: left out here.
+const persian = (s: string) => /[\u0600-\u06ff]/.test(s);
+const items = modelIndex()
+  .filter((m) => !persian(m.name))
+  .map((m) => ({ ...m, maker: makerEn(m.maker), scores: m.scores.filter((s) => !persian(s.bench)), stories: m.posts.map((p) => enOf(p.id)).filter((e) => !!e) }))
+  .filter((m) => m.stories.length || m.scores.some((s) => enOf(s.post.id)));
+const makers = [...new Set(items.map((m) => m.maker).filter(Boolean))].slice(0, 14);
+const jsonLd = [
+  {
+    '@context': 'https://schema.org',
+    '@type': 'ItemList',
+    name: `AI model tracker — ${EN.name}`,
+    url: abs('en/models/'),
+    inLanguage: 'en',
+    numberOfItems: Math.min(items.length, 100),
+    itemListElement: items.slice(0, 100).map((m, i) => ({ '@type': 'ListItem', position: i + 1, name: m.name, url: `${abs('en/models/')}#${m.slug}` })),
+  },
+  breadcrumbs([{ name: 'Model tracker', path: 'en/models/' }], 'en'),
+];
+---
+<Base lang="en" title="AI model tracker" alternates={{ fa: url('models/') }} description={`The AI models in the news, with the benchmark scores the stories reported: ${items.slice(0, 6).map((m) => m.name).join(', ') || 'GPT, Claude, Gemini, Qwen'} and more.`} jsonLd={jsonLd}>
+  <div class="container narrow">
+    <header class="page-head"><div><h1><Icon name="sparkles" /> Model tracker</h1><p>Every AI model the stories are about, with the scores the sources themselves gave; most recently in the news first.</p></div></header>
+    {items.length === 0 && <p class="muted">No models yet; this fills up with the news.</p>}
+    {
+      makers.length > 1 && (
+        <nav class="chips wrap md-makers" aria-label="Makers" data-md-filter>
+          <button class="chip" type="button" aria-pressed="true" data-maker="">All <small>{items.length}</small></button>
+          {makers.map((mk) => <button class="chip" type="button" aria-pressed="false" data-maker={mk}>{mk}</button>)}
+        </nav>
+      )
+    }
+    <ol class="md-list">
+      {items.map((m) => {
+        const best = new Map<string, (typeof m.scores)[number]>();
+        for (const s of m.scores) if (!best.has(s.bench)) best.set(s.bench, s);
+        const last = m.stories[0]?.date ?? m.posts[0].date;
+        return (
+          <li class="md-card" id={m.slug} data-maker={m.maker}>
+            <header>
+              <h2>{m.name}</h2>
+              {m.maker && <span class="md-maker">{m.maker}</span>}
+              <span class="md-meta">{m.posts.length} {m.posts.length === 1 ? 'story' : 'stories'} · latest: <time datetime={last}>{enDate(last, { day: 'numeric', month: 'short' })}</time></span>
+            </header>
+            {best.size > 0 && (
+              <ul class="md-scores">
+                {[...best.values()].map((s) => (
+                  <li><a href={enOf(s.post.id)?.href ?? s.post.href} hreflang={enOf(s.post.id) ? undefined : 'fa'}><span>{s.bench}</span><b>{s.value}</b></a></li>
+                ))}
+              </ul>
+            )}
+            <ul class="md-posts">{m.stories.slice(0, 3).map((e) => <li><a href={e!.href}>{e!.title}</a></li>)}</ul>
+          </li>
+        );
+      })}
+    </ol>
+  </div>
+  <script>
+    // Maker chips: show one maker's models. Without script every model is listed.
+    const nav = document.querySelector<HTMLElement>('[data-md-filter]');
+    nav?.addEventListener('click', (e) => {
+      const b = (e.target as Element).closest<HTMLButtonElement>('button[data-maker]');
+      if (!b) return;
+      nav.querySelectorAll('button').forEach((x) => x.setAttribute('aria-pressed', String(x === b)));
+      const want = b.dataset.maker;
+      document.querySelectorAll<HTMLElement>('.md-card').forEach((c) => (c.hidden = !!want && c.dataset.maker !== want));
+    });
+  </script>
+</Base>

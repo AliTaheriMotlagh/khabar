@@ -1,0 +1,53 @@
+---
+// Visits in detail, English (src/scripts/stats.ts): the live counts every page gets (social.ts), readers of the last
+// 7 days and the most viewed stories that have an English page.
+import Base from '../../../layouts/Base.astro';
+import Icon from '../../../components/Icon.astro';
+import { url } from '../../../lib/posts';
+---
+<Base lang="en" title="Visits" alternates={{ fa: url('stats/') }} description="How many people read the news and which stories they read most: today, this week and all time.">
+  <div class="container narrow">
+    <header class="page-head">
+      <h1><Icon name="eye" /> Visits</h1>
+      <p>How many people read the news, and which stories they read most.</p>
+    </header>
+
+    <div class="st-tiles">
+      <div class="st-tile live"><small><i class="live-dot" aria-hidden="true"></i> Online now</small><b data-online>…</b></div>
+      <div class="st-tile"><small>Readers today</small><b data-today>…</b></div>
+      <div class="st-tile"><small>Yesterday</small><b data-st-yesterday>…</b></div>
+      <div class="st-tile"><small>Daily average this week</small><b data-st-avg>…</b></div>
+      <div class="st-tile wide"><small>All visits since the start</small><b data-total>…</b></div>
+    </div>
+
+    <section class="st-section">
+      <h2 class="section-title">Readers, last 7 days</h2>
+      <div class="st-chart" data-st-chart></div>
+      <details class="st-table">
+        <summary>Show as a table</summary>
+        <table><thead><tr><th>Day</th><th>Readers</th></tr></thead><tbody data-st-table></tbody></table>
+      </details>
+    </section>
+
+    <section class="st-section">
+      <h2 class="section-title with-link">Most viewed stories <a href={url('en/week/')}>The whole week</a></h2>
+      <div class="seg" role="radiogroup" aria-label="Range" data-st-range>
+        <label><input type="radio" name="st-range" value="today" checked /><span>Today</span></label>
+        <label><input type="radio" name="st-range" value="week" /><span>This week</span></label>
+        <label><input type="radio" name="st-range" value="all" /><span>All time</span></label>
+      </div>
+      <ol class="st-top" data-st-top aria-live="polite"></ol>
+      <p class="muted" data-st-empty hidden>No views counted for this range yet.</p>
+    </section>
+
+    <p class="muted st-note" data-st-off hidden>Visits aren't available right now; check back a little later.</p>
+    <p class="st-note">
+      Each reader counts once a day for the site and once for each story (like views on X), however often they open it. "Today" is the calendar day in Tehran, and "online" means someone had a page of the site open in the last two minutes. The chart and lists refresh every ten minutes.
+    </p>
+  </div>
+</Base>
+
+<script>
+  import { initStats } from '../../../scripts/stats';
+  initStats();
+</script>

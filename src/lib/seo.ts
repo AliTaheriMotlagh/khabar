@@ -6,11 +6,12 @@ import { abs, sized, type Post } from './posts';
 
 type Crumb = { name: string; path: string };
 
-export function breadcrumbs(crumbs: Crumb[]) {
+/** `en`: the English edition's trail, from its home (/en/). */
+export function breadcrumbs(crumbs: Crumb[], lang: 'fa' | 'en' = 'fa') {
   return {
     '@context': 'https://schema.org',
     '@type': 'BreadcrumbList',
-    itemListElement: [{ name: SITE.name, path: '' }, ...crumbs].map((c, i) => ({ '@type': 'ListItem', position: i + 1, name: c.name, item: abs(c.path) })),
+    itemListElement: [lang === 'en' ? { name: SITE.nameLatin, path: 'en/' } : { name: SITE.name, path: '' }, ...crumbs].map((c, i) => ({ '@type': 'ListItem', position: i + 1, name: c.name, item: abs(c.path) })),
   };
 }
 

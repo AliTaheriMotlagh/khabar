@@ -1,0 +1,16 @@
+---
+// English search is the explorer (English pages skip Pagefind: the file budget): /en/search/?q=… forwards there, the
+// query kept. Not indexed (the sitemap leaves out /search/ pages too).
+import Base from '../../../layouts/Base.astro';
+import { url } from '../../../lib/posts';
+const to = url('en/investigate/');
+---
+<Base lang="en" title="Search" noindex alternates={{ fa: url('search/') }} description="Search every English story: the explorer finds any company, person, model, topic or words.">
+  <meta slot="head" http-equiv="refresh" content={`0; url=${to}`} />
+  <div class="container narrow">
+    <header class="page-head"><h1>Search</h1><p>Search lives in the <a href={to}>news explorer</a>: type any company, person, model, topic or words.</p></header>
+  </div>
+  <script is:inline define:vars={{ to }}>
+    location.replace(to + location.search + location.hash);
+  </script>
+</Base>

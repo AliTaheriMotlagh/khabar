@@ -39,7 +39,7 @@ const jsonLd = {
 };
 const crumbs = breadcrumbs([{ name: VIDEOS_TITLE, path: 'videos/' }, { name: title.slice(0, 80), path: `videos/${v.id}/` }]);
 ---
-<Base title={title} description={(v.ai?.summary || story?.excerpt || v.description || v.title).slice(0, 300)} image={v.thumb} imageAlt={v.title} jsonLd={[jsonLd, crumbs]}>
+<Base title={title} alternates={{ en: url(`en/videos/${v.id}/`) }} description={(v.ai?.summary || story?.excerpt || v.description || v.title).slice(0, 300)} image={v.thumb} imageAlt={v.title} jsonLd={[jsonLd, crumbs]}>
   <article class="container narrow vd-page" data-video-page={v.id}>
     <a class="vd-back" href={url("videos/")}><Icon name="arrow-r" /> {VIDEOS_TITLE}</a>
     <header class="article-head">

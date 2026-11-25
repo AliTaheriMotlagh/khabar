@@ -32,7 +32,7 @@ const EVENT_NAMES: Record<string, string> = {
   share: 'اشتراک‌گذاری', save: 'ذخیره', 'video-made-v': 'ساخت ویدیو (عمودی)', 'video-made-h': 'ساخت ویدیو (افقی)', 'video-made-s': 'ساخت ویدیو (مربع)',
   'video-shared': 'فرستادن ویدیو', brief60: '«۶۰ ثانیه خبر امروز»', 'quiz-right': 'پاسخ درست به پرسش', 'quiz-wrong': 'پاسخ نادرست به پرسش',
   'push-on': 'روشن کردن اعلان', install: 'نصب اپ', term: 'باز کردن توضیح یک اصطلاح', simple: 'باز کردن «به زبان ساده»',
-  'ad-view': 'دیده شدن تبلیغ', 'ad-click': 'کلیک روی تبلیغ', 'lang-en': 'رفتن به نسخه‌ی انگلیسی', investigate: 'کاوش در خبرها',
+  'ad-view': 'دیده شدن تبلیغ', 'ad-click': 'کلیک روی تبلیغ', 'lang-en': 'رفتن به نسخه‌ی انگلیسی', investigate: 'کاوش در خبرها', calendar: 'افزودن رویداد به تقویم',
 };
 const MODES: Record<string, string> = { all: 'همه‌ی خبرها', topics: 'موضوع‌های دنبال‌شده', daily: 'فقط خلاصه‌ی روزانه' };
 const REACT: Record<string, string> = { like: '👍', love: '❤️', fire: '🔥', wow: '😮', haha: '😂', sad: '😢' };

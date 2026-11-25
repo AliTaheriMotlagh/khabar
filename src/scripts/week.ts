@@ -1,7 +1,7 @@
 // The week's most read (src/pages/week): /api/stats' `top.week`, each story's picture, topic and first lines from its
 // card.json. Pictures go through media.ts like everywhere else (fallback addresses in data-alt).
 import { SITE } from '../site';
-import { $, BASE, compact, esc, fmtNum, track } from './core';
+import { $, BASE, compact, esc, fmtNum, isEn, track } from './core';
 import { watchMedia } from './media';
 import { player, type QItem } from './listen';
 import { canListen, listenOr } from './voice-offer';
@@ -47,6 +47,33 @@ export async function initWeek() {
     list.innerHTML = '';
     list.removeAttribute('aria-busy');
     $('[data-wk-off]')!.hidden = false;
+    return;
+  }
+  // The English page lists the stories that have an English page, by their English headline (from the explorer's
+  // file, which carries both languages' headlines); the picture still comes from the story's card.json.
+  if (isEn()) {
+    const raw = await fetch(`${BASE}/investigate.json`).then((r) => (r.ok ? r.json() : null), () => null);
+    const titles = new Map<number, string>((raw?.s ?? []).filter((r: unknown[]) => r[3]).map((r: unknown[]) => [r[0] as number, r[3] as string]));
+    top = top.filter((t) => titles.has(t.id));
+    const cards = await Promise.all(top.map((t) => card(t.id)));
+    const rows = top.map((t, i) => [t, cards[i]] as const);
+    list.removeAttribute('aria-busy');
+    $('[data-wk-empty]')!.hidden = rows.length > 0;
+    list.innerHTML = rows
+      .map(
+        ([t, c], k) => `<li class="wk-item">
+        <a href="${BASE}/en/p/${t.id}/">
+          <span class="wk-rank" aria-label="Rank ${k + 1}">${k + 1}</span>
+          ${c?.cover ? `<img src="${esc(c.cover)}" ${c.coverAlt ? `data-alt="${esc(c.coverAlt)}"` : ''} alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer">` : '<span class="ph"></span>'}
+          <span class="wk-body">
+            <b>${esc(titles.get(t.id)!)}</b>
+            <small class="wk-views">${compact(t.views)} views this week</small>
+          </span>
+        </a>
+      </li>`,
+      )
+      .join('');
+    watchMedia(list);
     return;
   }
   const cards = await Promise.all(top.map((t) => card(t.id)));

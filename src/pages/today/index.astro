@@ -64,7 +64,7 @@ const jsonLd = [
   },
 ];
 ---
-<Base title="استوری خبرها" description={`خبرهای تازه‌ی ${SITE.name} مثل استوری، تازه‌ترین اول — ${faNum(scenes.length)} خبر، حدود ${faNum(totalMin)} دقیقه.`} image={scenes[0]?.og || null} jsonLd={jsonLd}>
+<Base title="استوری خبرها" alternates={{ en: url("en/today/") }} description={`خبرهای تازه‌ی ${SITE.name} مثل استوری، تازه‌ترین اول — ${faNum(scenes.length)} خبر، حدود ${faNum(totalMin)} دقیقه.`} image={scenes[0]?.og || null} jsonLd={jsonLd}>
   <Fragment slot="head">
     <link rel="preconnect" href="https://video.twimg.com" />
     {first && <link rel="preload" as="image" href={first} fetchpriority="high" />}

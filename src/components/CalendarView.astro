@@ -1,0 +1,85 @@
+---
+// The events calendar, Persian (/calendar/) or English (/en/calendar/): upcoming days first, the last month behind a
+// fold, «add to my calendar» for the whole calendar (subscribe) and for each event (src/scripts/calendar.ts picks the
+// way the reader's phone takes it). Without script: webcal:// subscribes, «+» opens Google Calendar's event page.
+import Icon from './Icon.astro';
+import { calEvents, calLinks, type DayEvent } from '../lib/calendar';
+import { faDate, faNum } from '../lib/posts';
+import { enDate } from '../lib/en';
+import { googleEventUrl, googleSubscribeUrl, outlookSubscribeUrl } from '../lib/ics';
+import { tehranDay } from '../lib/time';
+interface Props { lang?: 'fa' | 'en' }
+const { lang = 'fa' } = Astro.props;
+const en = lang === 'en';
+const T = (fa: string, e: string) => (en ? e : fa);
+const today = tehranDay(Date.now());
+const all = calEvents(lang);
+const upcoming = all.filter((e) => e.date >= today);
+const past = all.filter((e) => e.date < today && Date.parse(today) - Date.parse(e.date) <= 31 * 86_400_000).reverse();
+const byDay = (list: DayEvent[]) => {
+  const days: { date: string; items: DayEvent[] }[] = [];
+  for (const e of list) (days.at(-1)?.date === e.date ? days.at(-1)!.items : (days.push({ date: e.date, items: [] }), days.at(-1)!.items)).push(e);
+  return days;
+};
+const at = (d: string) => `${d}T12:00:00+03:30`; // noon in Tehran: the day never slips across midnight
+const fmt = (d: string, o: Intl.DateTimeFormatOptions) => (en ? enDate(`${d}T12:00:00Z`, o) : faDate(at(d), o));
+const cal = calLinks(lang);
+const webcal = cal.https.replace(/^https:/, 'webcal:');
+---
+<div data-cal>
+  <div class="cal-subscribe">
+    <a class="btn primary" href={webcal} data-cal-sub><Icon name="plus" /> {T('افزودن به تقویم من', 'Add to my calendar')}</a>
+    <small class="muted" data-cal-hint>{T('هر رویداد تازه خودش به تقویمتان می‌آید', 'New events appear in your calendar by themselves')}</small>
+    <details class="cal-ways">
+      <summary>{T('راه‌های دیگر', 'More options')}</summary>
+      <ul>
+        <li><a href={webcal} data-cal-way="webcal">{T('تقویم اپل (آیفون، آیپد، مک) و Outlook', 'Apple Calendar (iPhone, iPad, Mac) and Outlook')}</a></li>
+        <li><a href={googleSubscribeUrl(cal.https)} target="_blank" rel="noopener" data-cal-way="google">{T('تقویم گوگل (اندروید)', 'Google Calendar (Android)')} <Icon name="external" /></a></li>
+        <li><a href={outlookSubscribeUrl(cal.https, cal.name)} target="_blank" rel="noopener">Outlook.com <Icon name="external" /></a></li>
+        <li><a href={cal.local} download>{T('دانلود فایل ‎.ics', 'Download the .ics file')}</a></li>
+        <li><button class="linkish" type="button" data-copy={cal.https}><Icon name="link" /> {T('کپی نشانی تقویم', 'Copy the calendar address')}</button></li>
+      </ul>
+    </details>
+  </div>
+  {upcoming.length === 0 && <p class="muted">{T('فعلاً رویداد تاریخ‌داری در خبرها نیامده.', 'No dated events in the news right now.')}</p>}
+  <ol class="cal">
+    {byDay(upcoming).map((d) => (
+      <li class="cal-day" id={`d-${d.date}`}>
+        <span class="cal-date" aria-hidden="true"><b>{fmt(d.date, { day: 'numeric' })}</b>{fmt(d.date, { month: 'short' })}</span>
+        <div>
+          <h2 class="cal-h"><time datetime={d.date}>{fmt(d.date, { weekday: 'long', day: 'numeric', month: 'long', year: 'numeric' })}</time></h2>
+          <ul>
+            {d.items.map((e) => (
+              <li class="cal-ev" data-uid={e.uid} data-date={e.date} data-url={e.url}>
+                {en ? <a class="cal-what" href={e.href}>{e.summary}</a> : <span><span class="cal-what">{e.summary}</span> <a href={e.href}>{e.story}</a></span>}
+                <span class="cal-acts">
+                  <a class="cal-add" href={googleEventUrl(e)} target="_blank" rel="noopener" data-cal-add aria-label={T(`افزودن «${e.summary}» به تقویم`, `Add “${e.summary}” to your calendar`)} title={T('افزودن به تقویم', 'Add to calendar')}><Icon name="plus" /></a>
+                  <button class="cal-more" type="button" data-cal-more aria-expanded="false" aria-haspopup="menu" aria-label={T('راه‌های دیگر', 'More options')}>⋯</button>
+                </span>
+              </li>
+            ))}
+          </ul>
+        </div>
+      </li>
+    ))}
+  </ol>
+  {
+    past.length > 0 && (
+      <details class="cal-past">
+        <summary>{T('ماه گذشته', 'Last month')} <small data-num>{en ? past.length : faNum(past.length)}</small></summary>
+        <ol class="cal">
+          {byDay(past).map((d) => (
+            <li class="cal-day" id={`d-${d.date}`}>
+              <span class="cal-date" aria-hidden="true"><b>{fmt(d.date, { day: 'numeric' })}</b>{fmt(d.date, { month: 'short' })}</span>
+              <div><ul>{d.items.map((e) => <li>{en ? <a href={e.href}>{e.summary}</a> : <><span>{e.summary}</span> <a href={e.href}>{e.story}</a></>}</li>)}</ul></div>
+            </li>
+          ))}
+        </ol>
+      </details>
+    )
+  }
+</div>
+<script>
+  import { initCalendar } from '../scripts/calendar';
+  initCalendar();
+</script>

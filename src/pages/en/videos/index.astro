@@ -11,7 +11,7 @@ const videos = getVideos();
 const mins = (d?: number | string) => (d ? `${Math.round(Number(d) / 60)} min` : '');
 const ld = [{
   '@context': 'https://schema.org', '@type': 'CollectionPage', name: `${SITE.owner.nameLatin}'s videos`, inLanguage: 'en', url: `${SITE.url}/en/videos/`,
-  mainEntity: { '@type': 'ItemList', itemListElement: videos.slice(0, 30).map((v, i) => ({ '@type': 'ListItem', position: i + 1, url: v.youtube, name: v.title })) },
+  mainEntity: { '@type': 'ItemList', itemListElement: videos.slice(0, 30).map((v, i) => ({ '@type': 'ListItem', position: i + 1, url: `${SITE.url}/en/videos/${v.id}/`, name: v.title.replace(/\s*\[Persian\]\s*$/i, '') })) },
 }];
 ---
 <Base lang="en" alternates={{ fa: url('videos/') }} title={`${SITE.owner.nameLatin}'s videos`} description={`Every episode of ${SITE.owner.nameLatin}'s Persian YouTube series on AI — papers, models, agents, robotics and interviews — with chapters.`} jsonLd={ld}>
@@ -21,13 +21,13 @@ const ld = [{
     <ol class="en-videos">
       {videos.map((v) => (
         <li class="en-video">
-          <a class="en-video-thumb" href={v.youtube} target="_blank" rel="noopener">
+          <a class="en-video-thumb" href={url(`en/videos/${v.id}/`)}>
             <img {...pic(v.thumb, 'small')} alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer" width="320" height="180" />
             {v.duration && <span class="vs-chip">{mins(v.duration)}</span>}
           </a>
           <div>
-            <h2><a href={v.youtube} target="_blank" rel="noopener">{v.title.replace(/\s*\[Persian\]\s*$/i, '')}</a></h2>
-            <p class="muted">{v.date && enDate(v.date)}{v.live ? ' · live' : ''} · <a href={v.href} hreflang="fa" lang="fa">خلاصه‌ی فارسی</a></p>
+            <h2><a href={url(`en/videos/${v.id}/`)}>{v.title.replace(/\s*\[Persian\]\s*$/i, '')}</a></h2>
+            <p class="muted">{v.date && enDate(v.date)}{v.live ? ' · live' : ''} · <a href={v.youtube} target="_blank" rel="noopener">YouTube</a> · <a href={v.href} hreflang="fa" lang="fa">خلاصه‌ی فارسی</a></p>
             {v.chapters && v.chapters.length > 0 && (
               <details class="en-chapters">
                 <summary>{v.chapters.length} chapters</summary>

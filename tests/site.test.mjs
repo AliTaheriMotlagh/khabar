@@ -370,8 +370,155 @@ test('models and calendar: the pages build, each model once, and the calendar fi
   const ids = [...models.matchAll(/<li class="md-card" id="([^"]+)"/g)].map((m) => m[1]);
   assert.equal(new Set(ids).size, ids.length, 'each model once');
   assert.ok(html('calendar/index.html').includes('calendar.ics'));
-  const ics = fs.readFileSync(path.join(dist, 'calendar.ics'), 'utf8');
-  assert.ok(ics.startsWith('BEGIN:VCALENDAR\r\n') && ics.endsWith('END:VCALENDAR\r\n'));
-  for (const line of ics.split('\r\n')) assert.ok(Buffer.byteLength(line) <= 75, `folded: ${line.slice(0, 40)}`);
-  assert.equal((ics.match(/BEGIN:VEVENT/g) ?? []).length, (ics.match(/END:VEVENT/g) ?? []).length);
+  const en = html('en/models/index.html');
+  const enIds = [...en.matchAll(/<li class="md-card" id="([^"]+)"/g)].map((m) => m[1]);
+  assert.equal(new Set(enIds).size, enIds.length, 'English: each model once');
+  assert.ok(enIds.every((id) => ids.includes(id)), 'English: models of /models/');
+});
+
+/** An iCalendar file's checks (RFC 5545): CRLF only, lines ≤75 octets, the calendar's and every event's required
+ *  properties, all-day dates, unique UIDs, text escaped. Returns the unfolded events. */
+function checkIcs(file) {
+  const ics = fs.readFileSync(path.join(dist, file), 'utf8');
+  assert.ok(ics.startsWith('BEGIN:VCALENDAR\r\n') && ics.endsWith('END:VCALENDAR\r\n'), `${file}: one calendar`);
+  assert.doesNotMatch(ics.replace(/\r\n/g, ''), /[\r\n]/, `${file}: every line ends in CRLF`);
+  for (const line of ics.split('\r\n')) assert.ok(Buffer.byteLength(line) <= 75, `${file}: folded: ${line.slice(0, 40)}`);
+  const lines = ics.replace(/\r\n[ \t]/g, '').split('\r\n').filter(Boolean);
+  for (const p of ['VERSION:2.0', 'CALSCALE:GREGORIAN', 'METHOD:PUBLISH', 'REFRESH-INTERVAL;VALUE=DURATION:PT12H', 'X-PUBLISHED-TTL:PT12H']) assert.ok(lines.includes(p), `${file}: ${p}`);
+  assert.ok(lines.some((l) => /^PRODID:\S/.test(l)) && lines.some((l) => /^X-WR-CALNAME:\S/.test(l)), `${file}: PRODID and X-WR-CALNAME`);
+  const events = [];
+  let cur = null;
+  for (const l of lines) {
+    if (l === 'BEGIN:VEVENT') cur = {};
+    else if (l === 'END:VEVENT') (events.push(cur), (cur = null));
+    else if (cur) {
+      const [, name, value] = l.match(/^([A-Z-]+(?:;[^:]+)?):(.*)$/) ?? [];
+      assert.ok(name, `${file}: a property line: ${l.slice(0, 40)}`);
+      cur[name] = value;
+    }
+  }
+  assert.equal(events.length, (ics.match(/BEGIN:VEVENT/g) ?? []).length);
+  const uids = new Set();
+  for (const e of events) {
+    assert.match(e.UID ?? '', /^\S+@\S+$/, `${file}: UID`);
+    assert.ok(!uids.has(e.UID), `${file}: ${e.UID} once`);
+    uids.add(e.UID);
+    assert.match(e.DTSTAMP ?? '', /^\d{8}T\d{6}Z$/, `${file}: DTSTAMP in UTC`);
+    assert.match(e['DTSTART;VALUE=DATE'] ?? '', /^\d{8}$/, `${file}: all-day DTSTART`);
+    assert.match(e['DTEND;VALUE=DATE'] ?? '', /^\d{8}$/, `${file}: all-day DTEND`);
+    assert.ok(e['DTEND;VALUE=DATE'] > e['DTSTART;VALUE=DATE'], `${file}: DTEND the day after`);
+    assert.ok(e.SUMMARY?.trim(), `${file}: SUMMARY`);
+    for (const k of ['SUMMARY', 'DESCRIPTION']) if (e[k]) assert.doesNotMatch(e[k], /(?<!\\)[;,]|(?<!\\)\n/, `${file}: ${k} escaped`);
+    assert.match(e['URL;VALUE=URI'] ?? '', /^https:\/\//, `${file}: the story's address`);
+  }
+  return events;
+}
+
+test('calendar: both calendar files are valid iCalendar, the English one in English and linked to English pages', { skip }, () => {
+  const fa = checkIcs('calendar.ics');
+  const en = checkIcs('en/calendar.ics');
+  assert.ok(en.length <= fa.length, 'the English calendar: the events with an English story');
+  for (const e of en) {
+    assert.doesNotMatch(e.SUMMARY, /[\u0600-\u06ff]/, `${e.UID}: an English title`);
+    const id = e['URL;VALUE=URI'].match(/\/en\/p\/(\d+)\/$/)?.[1];
+    assert.ok(id && fs.existsSync(path.join(dist, `en/p/${id}/index.html`)), `${e.UID}: its English story`);
+  }
+  for (const [page, file, lang] of [['calendar/index.html', 'calendar.ics', 'fa'], ['en/calendar/index.html', 'en/calendar.ics', 'en']]) {
+    const h = html(page);
+    assert.ok(h.includes(`href="webcal://blog.remixt.app/${file}"`), `${page}: subscribes with webcal://`);
+    assert.ok(h.includes(`https://calendar.google.com/calendar/r?cid=${encodeURIComponent(`webcal://blog.remixt.app/${file}`)}`), `${page}: Google Calendar's subscribe link`);
+    assert.ok(h.includes(`data-copy="https://blog.remixt.app/${file}"`), `${page}: the address to copy`);
+    assert.ok(h.includes(`<link rel="alternate" type="text/calendar"`), `${page}: names its calendar`);
+    // Every upcoming event: a Google Calendar template link (Android) and the data the page makes its .ics from (iPhone).
+    for (const [, li] of h.matchAll(/<li class="cal-ev"([^>]*)>/g)) {
+      assert.match(li, /data-uid="[^"]+" data-date="\d{4}-\d{2}-\d{2}" data-url="https:\/\/[^"]+"/, `${page}: an event's data`);
+    }
+    for (const [, u] of h.matchAll(/class="cal-add" href="([^"]+)"/g)) {
+      const q = new URL(u.replace(/&amp;/g, '&'));
+      assert.equal(q.searchParams.get('action'), 'TEMPLATE');
+      assert.match(q.searchParams.get('dates') ?? '', /^\d{8}\/\d{8}$/);
+      assert.ok(q.searchParams.get('text'), `${page}: the event's title`);
+      if (lang === 'en') assert.doesNotMatch(q.searchParams.get('text'), /[\u0600-\u06ff]/);
+    }
+  }
+});
+
+test('calendar: the iCalendar helpers fold by octets without splitting a character, and escape text', async () => {
+  const { fold, icsEscape, icsCalendar, googleEventUrl } = await import('../src/lib/ics.ts');
+  const long = `SUMMARY:${'رویداد هوش مصنوعی 😀 '.repeat(12)}`;
+  const folded = fold(long);
+  for (const l of folded.split('\r\n')) assert.ok(Buffer.byteLength(l) <= 75);
+  assert.equal(folded.replace(/\r\n /g, ''), long, 'unfolds to the same line');
+  assert.equal(icsEscape('a;b,c\\d\ne'), 'a\\;b\\,c\\\\d\\ne');
+  const one = icsCalendar({ name: 'x', lang: 'en', host: 'h', events: [{ uid: '1-2026-01-31', date: '2026-01-31', summary: 'S', url: 'https://h/en/p/1/' }], stamp: new Date('2026-01-01T00:00:00Z') });
+  assert.match(one, /DTSTART;VALUE=DATE:20260131\r\nDTEND;VALUE=DATE:20260201\r\n/);
+  assert.match(one, /UID:1-2026-01-31@h\r\nDTSTAMP:20260101T000000Z\r\n/);
+  assert.match(googleEventUrl({ date: '2026-12-31', summary: 'S' }), /dates=20261231%2F20270101/);
+});
+
+test('English edition: each page with a Persian twin names it, and the language switch lands on the twin', { skip }, () => {
+  const pairs = [['feeds/', 'en/feeds/'], ['calendar/', 'en/calendar/'], ['models/', 'en/models/'], ['who/', 'en/who/'], ['today/', 'en/today/'], ['week/', 'en/week/'], ['stats/', 'en/stats/'], ['saved/', 'en/saved/'], ['offline/', 'en/offline/']];
+  const videos = fs.existsSync(path.join(dist, 'videos')) ? fs.readdirSync(path.join(dist, 'videos')).filter((d) => /^[\w-]{11}$/.test(d)) : [];
+  for (const v of videos) pairs.push([`videos/${v}/`, `en/videos/${v}/`]);
+  for (const [fa, en] of pairs) {
+    const e = html(`${en}index.html`);
+    const f = html(`${fa}index.html`);
+    assert.match(e, /<html lang="en" dir="ltr"/, `${en}: English, left to right`);
+    assert.ok(e.includes(`data-alt-lang="/${fa}"`) && e.includes(`data-lang-switch="fa"`) && e.includes(`class="lang-switch" href="/${fa}"`), `${en}: the switch opens /${fa}`);
+    assert.ok(f.includes(`data-alt-lang="/${en}"`) && f.includes(`class="lang-switch" href="/${en}"`), `${fa}: the switch opens /${en}`);
+    if (/noindex/.test(e.match(/<meta name="robots" content="([^"]+)"/)?.[1] ?? '')) continue;
+    assert.ok(e.includes(`<link rel="alternate" hreflang="fa" href="https://blog.remixt.app/${fa}">`), `${en}: hreflang fa`);
+    assert.ok(f.includes(`<link rel="alternate" hreflang="en" href="https://blog.remixt.app/${en}">`), `${fa}: hreflang en`);
+    assert.ok(e.includes(`<link rel="canonical" href="https://blog.remixt.app/${en}">`), `${en}: canonical`);
+    assert.ok(e.includes('<meta property="og:locale" content="en_US">'), `${en}: og:locale`);
+    assert.ok(e.includes('<link rel="alternate" type="application/rss+xml" title="Future Focus — all stories" href="/en/rss.xml">'), `${en}: names the English feed`);
+    // Each JSON-LD block parses and says its type.
+    for (const [, j] of e.matchAll(/<script type="application\/ld\+json">([\s\S]*?)<\/script>/g)) assert.ok(JSON.parse(j)['@type'], `${en}: JSON-LD`);
+  }
+  assert.ok(fs.existsSync(path.join(dist, 'en/404.html')), "the English 404 where Cloudflare Pages looks for it");
+  assert.match(html('en/search/index.html'), /location\.replace\(/, '/en/search/ forwards to the explorer');
+  // The sitemap pairs the twins.
+  const map = html('sitemap-0.xml');
+  for (const [fa, en] of pairs.filter(([, en]) => !/saved|offline/.test(en))) {
+    const entry = map.match(new RegExp(`<url><loc>https://blog\\.remixt\\.app/${en.replace(/[-/]/g, '\\$&')}</loc>[\\s\\S]*?</url>`))?.[0] ?? '';
+    assert.ok(entry.includes(`hreflang="fa-IR" href="https://blog.remixt.app/${fa}"`), `sitemap: ${en} ↔ ${fa}`);
+  }
+});
+
+test('English feeds: English, absolute links, every story its English page, pictures through the site, listed on /en/feeds/', { skip }, () => {
+  const unesc = (s) => s.replace(/&lt;/g, '<').replace(/&gt;/g, '>').replace(/&quot;/g, '"').replace(/&amp;/g, '&');
+  const tag = (s, t) => s.match(new RegExp(`<${t}[^>]*>([\\s\\S]*?)</${t}>`))?.[1];
+  const enPages = new Set(fs.readdirSync(path.join(dist, 'en/p')).map(Number));
+  const topics = fs.readdirSync(path.join(dist, 'en/topic')).filter((t) => fs.existsSync(path.join(dist, 'en/topic', t, 'rss.xml')));
+  assert.ok(topics.length > 5, 'a feed per English topic');
+  const files = ['en/rss.xml', 'en/rss/daily.xml', 'en/rss/videos.xml', ...topics.map((t) => `en/topic/${t}/rss.xml`)];
+  for (const file of files) {
+    const xml = html(file);
+    assert.doesNotMatch(xml, /[\x00-\x08\x0B\x0C\x0E-\x1F]/, `${file}: no characters XML forbids`);
+    assert.match(xml, /<language>en<\/language>/, `${file}: English`);
+    assert.ok(xml.includes(`<atom:link href="https://blog.remixt.app/${file}" rel="self" type="application/rss+xml"/>`), `${file}: its self link`);
+    const items = [...xml.matchAll(/<item>([\s\S]*?)<\/item>/g)].map((m) => m[1]);
+    for (const it of items) {
+      assert.match(tag(it, 'link') ?? '', /^https:\/\//, `${file}: absolute link`);
+      assert.ok(tag(it, 'title')?.trim(), `${file}: a title`);
+      for (const u of [...it.matchAll(/(?:url|src)="([^"]+)"/g)].map((m) => unesc(m[1]))) assert.doesNotMatch(new URL(u).hostname, /telesco\.pe$|twimg\.com$|ytimg\.com$/, `${file}: ${u} through the site`);
+      const body = unesc(tag(it, 'content:encoded') ?? '');
+      if (body) assert.match(body, /^<div lang="en" dir="ltr">[\s\S]*<\/div>$/, `${file}: left-to-right content`);
+    }
+    if (file === 'en/rss/daily.xml' || file === 'en/rss/videos.xml') continue;
+    const ids = items.map((it) => Number(tag(it, 'link').match(/\/en\/p\/(\d+)\/$/)?.[1]));
+    for (const id of ids) assert.ok(enPages.has(id), `${file}: ${id} has an English page`);
+    for (let i = 1; i < ids.length; i++) assert.ok(ids[i] < ids[i - 1], `${file}: newest first`);
+    if (file === 'en/rss.xml') assert.equal(ids.length, enPages.size, 'every English story');
+    else assert.ok(items.length > 0 && html(file.replace('rss.xml', 'index.html')).includes(`href="/${file}"`), `${file}: its topic page names it`);
+  }
+  const page = html('en/feeds/index.html');
+  for (const f of files) assert.ok(page.includes(`data-copy="https://blog.remixt.app/${f}"`), `/en/feeds/ lists ${f}`);
+  assert.ok(page.includes('data-copy="https://blog.remixt.app/en/calendar.ics"'), '/en/feeds/ lists the calendar');
+  // Google News: the English stories of the last two days beside the Persian ones, each in its language.
+  const news = html('news-sitemap.xml');
+  for (const [, loc, lang] of news.matchAll(/<url><loc>([^<]+)<\/loc>[\s\S]*?<news:language>(\w+)<\/news:language>/g)) {
+    assert.equal(lang, /\/en\/p\//.test(loc) ? 'en' : 'fa', `${loc}: its language`);
+    if (lang === 'en') assert.ok(enPages.has(Number(loc.match(/\/(\d+)\/$/)[1])), `${loc}: built`);
+  }
 });

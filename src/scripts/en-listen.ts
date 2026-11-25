@@ -8,7 +8,10 @@ export function initEnListen() {
   const synth = window.speechSynthesis;
   if (!btn || !synth || typeof SpeechSynthesisUtterance !== 'function') return;
   const label = $('[data-listen-label]', btn);
-  const parts = [$('.article-head h1'), ...$$('.article .prose > p'), $('.article .en-quote p')].filter((el): el is HTMLElement => !!el);
+  // A list page names what it reads (/en/today/: each story's headline and summary, back to back); a story page reads
+  // its headline, then its text.
+  const list = btn.dataset.parts;
+  const parts = (list ? $$(list) : [$('.article-head h1'), ...$$('.article .prose > p'), $('.article .en-quote p')]).filter((el): el is HTMLElement => !!el);
   if (!parts.length) return;
   btn.hidden = false;
   let at = -1;
@@ -22,6 +25,7 @@ export function initEnListen() {
     playing = on;
     btn.setAttribute('aria-pressed', String(on));
     btn.classList.toggle('is-playing', on);
+    btn.dataset.state = on ? 'playing' : 'idle'; // the icons (.listen[data-state])
     if (label) label.textContent = on ? 'Pause' : at > 0 ? 'Resume' : 'Listen';
     if (!on) mark(-1);
   };
@@ -52,7 +56,8 @@ export function initEnListen() {
     track('listen');
     say(Math.max(0, at));
   });
-  parts.forEach((el, i) =>
+  // Tap a paragraph to go on from there (a story page; a list's headlines are links).
+  if (!list) parts.forEach((el, i) =>
     el.addEventListener('click', () => {
       if (!playing) return;
       synth.cancel();
