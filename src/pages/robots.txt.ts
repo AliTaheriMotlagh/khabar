@@ -13,6 +13,7 @@ export function GET() {
       'Disallow: /build.json',
       'Disallow: /recent.json',
       'Disallow: /ai.json',
+      'Disallow: /investigate.json',
       '',
       `Sitemap: ${abs('sitemap-index.xml')}`,
       `Sitemap: ${abs('news-sitemap.xml')}`,

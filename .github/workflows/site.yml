@@ -1,6 +1,7 @@
-# Every 20 minutes: crawl the channel → commit new posts to data/ → build → deploy GitHub Pages.
-# A crawl with nothing new stops after the commit step, so frequent runs cost well under a minute.
-# Cloudflare Pages (the primary site, https://blog.remixt.app) is deployed by the `cloudflare` job below.
+# Crawl the channel → commit new posts → publish the primary site (Cloudflare Pages, https://blog.remixt.app) right
+# away → the model's headlines → publish → notify → the model's extras → publish → the GitHub Pages mirror.
+# A crawl with nothing new stops after the commit step (and the model's backlog), so frequent runs cost little.
+# Vercel (khabar-ai.vercel.app) is no longer deployed: its Hobby deployment is disabled.
 # The data commit is pushed with GITHUB_TOKEN, which GitHub never lets start another run, so one trigger = one run.
 # One-time setup: Settings → Pages → Source: "GitHub Actions".
 name: site
@@ -43,10 +44,9 @@ jobs:
   build:
     runs-on: ubuntu-latest
     # A backfill (workflow_dispatch with many pages) reads hundreds of posts and their links; a normal run takes a minute.
-    timeout-minutes: 45
+    timeout-minutes: 60
     outputs:
-      deploy: ${{ steps.commit.outputs.deploy }}
-      latest: ${{ steps.latest.outputs.latest }}
+      deploy: ${{ steps.deploy.outputs.deploy }}
       # The site tests passed: the Pages artifact was uploaded.
       mirror: ${{ steps.sitetests.outcome == 'success' }}
     steps:
@@ -98,16 +98,46 @@ jobs:
       # 5.7 GB, and a 0.6 GB embedding model) in the Actions cache, keyed on the pins in scripts/ai-server.sh. All of it is
       # written into data/ before the commit, so no extra deploy. Never fails the run: the site falls back to the rules'
       # headline and shared topics, and whatever the time budgets leave is done on the next run, newest first.
+      # Publish first: the crawl's news goes live in a few minutes, before the model's work (which takes up to ~15).
+      # The model's headline replaces Gholam's first sentence a few minutes later, on the next publish below.
+      - name: Commit new posts
+        id: commit
+        if: github.event_name != 'push'
+        run: scripts/commit-data.sh | tee -a "$GITHUB_OUTPUT"
+      - uses: actions/setup-node@v7
+        with:
+          node-version: 24
+          cache: npm
+      - run: for i in 1 2 3; do npm ci --no-audit --no-fund && exit 0; sleep $((i * 15)); done; exit 1
+      - run: npm test
+        if: github.event_name == 'push'
+      - name: Publish (Cloudflare Pages, the primary site)
+        id: publish
+        if: github.event_name == 'push' || steps.commit.outputs.changed == 'true'
+        continue-on-error: true
+        run: scripts/publish.sh
+        env:
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          CLOUDFLARE_ACCOUNT_ID: ${{ vars.CLOUDFLARE_ACCOUNT_ID || secrets.CLOUDFLARE_ACCOUNT_ID }}
+          CLOUDFLARE_PROJECT: ${{ vars.CLOUDFLARE_PROJECT || 'khabar' }}
+
+      # The model's work, on this runner (PLAN.md P1-B, P2): free — public repo, standard runner, the models (Qwen3.5-9B,
+      # 5.7 GB, and a 0.6 GB embedding model) in the Actions cache, keyed on the pins in scripts/ai-server.sh. Never fails
+      # the run: the site falls back to the rules' headline and shared topics, and whatever the time budgets leave is
+      # done on the next run, newest first. In two passes, each published when it changed something: what readers see
+      # first (headlines, translations), then the extras.
       - name: Posts waiting for the model
         id: ai
         if: github.event_name != 'push'
         run: |
           core=$(python -m pipeline.ai --pending)
+          en=$(python -m pipeline.ai_en --pending)
           more=$(python -m pipeline.ai_more --pending --total)
           threads=$(python -m pipeline.threads --pending)
           # New stories also need their vectors (related stories) and the podcast's host lines.
-          news=$(git status --porcelain data/posts | wc -l)
-          echo "pending=$((core + more + threads + news))" | tee -a "$GITHUB_OUTPUT"
+          news=$([ '${{ steps.commit.outputs.changed }}' = true ] && echo 1 || echo 0)
+          echo "core=$core" | tee -a "$GITHUB_OUTPUT"
+          echo "pending=$((core + en + more + threads + news))" | tee -a "$GITHUB_OUTPUT"
       - uses: actions/cache@v6
         if: steps.ai.outputs.pending > 0
         with:
@@ -120,22 +150,61 @@ jobs:
           path: ~/.cache/khabar-vectors
           key: vectors-${{ github.run_id }}
           restore-keys: vectors-
-      - name: AI (headlines, translations, extras, voices' names, related, threads, podcast, video summaries, comment checks)
+      - name: AI, first pass (headlines in both languages, translations)
         if: steps.ai.outputs.pending > 0
         continue-on-error: true
-        timeout-minutes: 20
+        timeout-minutes: 10
         env:
-          AI_BUDGET: '300'
-          AI_MORE_BUDGET: '240'
-          KV_REST_API_URL: ${{ secrets.KV_REST_API_URL }}
-          KV_REST_API_TOKEN: ${{ secrets.KV_REST_API_TOKEN }}
-          KV_PREFIX: ${{ vars.KV_PREFIX }}
+          AI_BUDGET: '240'
         run: |
           scripts/ai-server.sh
           step() { "$@" || echo "::warning::$* failed"; }
           # A post Gholam never translated gets the model's story first: its headline and extras read it.
           step python -m pipeline.ai_more --only=story
           step python -m pipeline.ai
+          # The English edition's headlines (pipeline/ai_en.py): a few seconds a post.
+          AI_EN_BUDGET=90 step python -m pipeline.ai_en
+      - name: Commit the model's headlines
+        id: commit_ai
+        if: steps.ai.outputs.pending > 0
+        run: |
+          scripts/commit-data.sh "data: AI headlines $(date -u +%Y-%m-%dT%H:%MZ)" | tee -a "$GITHUB_OUTPUT"
+      - name: Publish the headlines
+        if: steps.commit_ai.outputs.changed == 'true'
+        continue-on-error: true
+        run: scripts/publish.sh
+        env:
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          CLOUDFLARE_ACCOUNT_ID: ${{ vars.CLOUDFLARE_ACCOUNT_ID || secrets.CLOUDFLARE_ACCOUNT_ID }}
+          CLOUDFLARE_PROJECT: ${{ vars.CLOUDFLARE_PROJECT || 'khabar' }}
+
+      # Readers with notifications on, and search engines (IndexNow), hear about the new stories once the site serves
+      # them (scripts/notify.mjs waits for recent.json to list them), with the model's headlines when it had time.
+      - id: latest
+        if: steps.publish.outcome != '' && steps.publish.outcome != 'skipped' && github.event_name != 'push'
+        run: echo "latest=$(node -p "require('./dist/build.json').latest")" >> "$GITHUB_OUTPUT"
+      - name: Notify
+        if: steps.latest.outputs.latest != ''
+        continue-on-error: true
+        timeout-minutes: 12
+        run: node scripts/notify.mjs
+        env:
+          PUSH_SECRET: ${{ secrets.PUSH_SECRET }}
+          SITE: ${{ vars.API_URL || 'https://blog.remixt.app' }}
+          LATEST: ${{ steps.latest.outputs.latest }}
+
+      - name: AI, second pass (extras, voices' names, related, threads, podcast, video summaries, comment checks)
+        if: steps.ai.outputs.pending > 0
+        continue-on-error: true
+        timeout-minutes: 15
+        env:
+          AI_MORE_BUDGET: '240'
+          KV_REST_API_URL: ${{ secrets.KV_REST_API_URL }}
+          KV_REST_API_TOKEN: ${{ secrets.KV_REST_API_TOKEN }}
+          KV_PREFIX: ${{ vars.KV_PREFIX }}
+        run: |
+          curl -sf -m 2 http://127.0.0.1:8080/health >/dev/null || scripts/ai-server.sh
+          step() { "$@" || echo "::warning::$* failed"; }
           step python -m pipeline.ai_more
           step python -m pipeline.related
           # Each thread's name and «ماجرا تا اینجا» (pipeline/threads.py): only threads that grew.
@@ -143,65 +212,41 @@ jobs:
           step python -m pipeline.daily
           step python -m pipeline.videos --summarize --limit=1
           step python -m pipeline.comments
-
-      - name: Commit new posts
-        id: commit
+      - name: Commit the extras
+        id: commit_more
+        if: steps.ai.outputs.pending > 0
         run: |
-          # A code push always deploys (and has nothing to commit); a crawl only when it brought something new.
-          [ '${{ github.event_name }}' = push ] && { echo deploy=true >> "$GITHUB_OUTPUT"; exit 0; }
-          git config --global user.name 'github-actions[bot]'
-          git config --global user.email '41898283+github-actions[bot]@users.noreply.github.com'
-          git add data
-          git diff --cached --quiet && { echo 'nothing new'; exit 0; }
-          git commit -qm "data: crawl $(date -u +%Y-%m-%dT%H:%MZ)"
-          # A push to main can land mid-run; rebase onto it and try again instead of losing the crawl.
-          # A failed rebase is aborted before the next try, or every later attempt fails on "unmerged files".
-          for attempt in 1 2 3 4; do
-            conflict=
-            if git pull --rebase -q origin main || { conflict=1; false; }; then
-              git push -q origin HEAD:main && { echo deploy=true >> "$GITHUB_OUTPUT"; exit 0; }
-            fi
-            git rebase --abort 2>/dev/null || true
-            sleep $((attempt * 5))
-          done
-          # Still conflicting: another run committed the same posts, so they are on main already and the next crawl
-          # picks up anything left. A push that fails without a conflict (permissions, …) fails the run.
-          [ -n "$conflict" ] || exit 1
-          echo "::warning::this crawl conflicts with posts already on main; leaving it to the next run"
+          scripts/commit-data.sh "data: AI extras $(date -u +%Y-%m-%dT%H:%MZ)" | tee -a "$GITHUB_OUTPUT"
+      - name: Publish the extras
+        if: steps.commit_more.outputs.changed == 'true'
+        continue-on-error: true
+        run: scripts/publish.sh
+        env:
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          CLOUDFLARE_ACCOUNT_ID: ${{ vars.CLOUDFLARE_ACCOUNT_ID || secrets.CLOUDFLARE_ACCOUNT_ID }}
+          CLOUDFLARE_PROJECT: ${{ vars.CLOUDFLARE_PROJECT || 'khabar' }}
 
-      - uses: actions/setup-node@v7
-        if: steps.commit.outputs.deploy == 'true'
-        with:
-          node-version: 24
-          cache: npm
-      - run: for i in 1 2 3; do npm ci --no-audit --no-fund && exit 0; sleep $((i * 15)); done; exit 1
-        if: steps.commit.outputs.deploy == 'true'
-      - run: npm test
-        if: github.event_name == 'push'
-
+      # The GitHub Pages mirror: its own build (its address and base path), checked by the site tests first.
+      - id: deploy
+        run: echo "deploy=${{ github.event_name == 'push' || steps.commit.outputs.changed == 'true' || steps.commit_ai.outputs.changed == 'true' || steps.commit_more.outputs.changed == 'true' }}" >> "$GITHUB_OUTPUT"
       - id: pages
-        if: steps.commit.outputs.deploy == 'true'
+        if: steps.deploy.outputs.deploy == 'true'
         uses: actions/configure-pages@v6
-      - name: Build
-        if: steps.commit.outputs.deploy == 'true'
+      - name: Build the mirror
+        if: steps.deploy.outputs.deploy == 'true'
         env:
           SITE_URL: ${{ steps.pages.outputs.origin }}
           BASE_PATH: ${{ steps.pages.outputs.base_path }}
-          # The mirror has no functions of its own: comments, reactions and chat go to the Vercel API.
+          # The mirror has no functions of its own: comments, reactions and chat go to the primary site's API.
           PUBLIC_API_URL: ${{ vars.API_URL || 'https://blog.remixt.app' }}
         run: npm run build
-      # The newest listed post of this build, for the notify job. Before the tests: the data is on main already, so
-      # Vercel serves it whatever they say, and readers should still hear about it.
-      - id: latest
-        if: steps.commit.outputs.deploy == 'true'
-        run: echo "latest=$(node -p "require('./dist/build.json').latest")" >> "$GITHUB_OUTPUT"
       # The built timeline and stories against the crawled data: order, days, times and counts (tests/site.test.mjs).
       # On a code push a failure fails the run. On a data run it holds the Pages mirror back (it keeps its last good
-      # build; Vercel serves the data regardless) and is reported once, in the site-health issue, which closes itself
-      # when they pass again — not as a red run and an email every 20 minutes.
+      # build; the primary site serves the data regardless) and is reported once, in the site-health issue, which closes
+      # itself when they pass again — not as a red run and an email every 20 minutes.
       - id: sitetests
         name: Site tests
-        if: steps.commit.outputs.deploy == 'true'
+        if: steps.deploy.outputs.deploy == 'true'
         continue-on-error: ${{ github.event_name != 'push' }}
         run: |
           set -o pipefail
@@ -213,7 +258,7 @@ jobs:
         run: node scripts/health-issue.mjs ${{ steps.sitetests.outcome }} site-tests.log
 
       - uses: actions/upload-pages-artifact@v5
-        if: steps.commit.outputs.deploy == 'true' && steps.sitetests.outcome == 'success'
+        if: steps.deploy.outputs.deploy == 'true' && steps.sitetests.outcome == 'success'
         with:
           path: dist
 
@@ -236,77 +281,6 @@ jobs:
       - run: npm run build
       # The runner's own Google Chrome (Playwright's `chrome` channel): no browser download.
       - run: node tests/e2e/smoke.mjs
-
-  # The primary site on Cloudflare Pages (https://blog.remixt.app, wrangler.toml): its own build — the build job's is the
-  # Pages mirror's, with its address and base path — then `wrangler pages deploy` (a direct upload: no Cloudflare Git
-  # build, so the free plan's 500 builds/month don't apply). Like Vercel, it doesn't wait for the site tests.
-  # Off (a no-op) without the CLOUDFLARE_API_TOKEN secret and the CLOUDFLARE_ACCOUNT_ID variable.
-  cloudflare:
-    needs: build
-    # Also when the site tests failed: like Vercel, the primary site serves the data that is on main.
-    if: always() && needs.build.outputs.deploy == 'true'
-    runs-on: ubuntu-latest
-    timeout-minutes: 30
-    env:
-      CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
-      CLOUDFLARE_ACCOUNT_ID: ${{ vars.CLOUDFLARE_ACCOUNT_ID || secrets.CLOUDFLARE_ACCOUNT_ID }}
-    steps:
-      - id: on
-        run: '[ -n "$CLOUDFLARE_API_TOKEN" ] && [ -n "$CLOUDFLARE_ACCOUNT_ID" ] && echo on=true >> "$GITHUB_OUTPUT" || echo "::notice::Cloudflare not configured; skipped"'
-      - uses: actions/checkout@v7
-        if: steps.on.outputs.on
-        with:
-          ref: main
-      - uses: actions/setup-node@v7
-        if: steps.on.outputs.on
-        with:
-          node-version: 24
-          cache: npm
-      - if: steps.on.outputs.on
-        run: for i in 1 2 3; do npm ci --no-audit --no-fund && exit 0; sleep $((i * 15)); done; exit 1
-      - if: steps.on.outputs.on
-        run: npm run build
-      - if: steps.on.outputs.on
-        run: for i in 1 2 3; do npx -y wrangler@4 pages deploy --project-name="${{ vars.CLOUDFLARE_PROJECT || 'khabar' }}" --branch=main --commit-dirty=true && exit 0; sleep $((i * 20)); done; exit 1
-
-  # Readers with notifications on hear about the new stories once Vercel serves them (scripts/notify.mjs). Beside the
-  # Pages deploy, not before it: waiting for Vercel can take minutes. Off (a no-op) without the PUSH_SECRET secret.
-  notify:
-    needs: [build, cloudflare]
-    # Also when the site tests failed: they guard the Pages mirror, and notify.mjs waits for what Vercel serves.
-    if: always() && needs.build.outputs.latest != ''
-    runs-on: ubuntu-latest
-    timeout-minutes: 15
-    continue-on-error: true
-    steps:
-      - uses: actions/checkout@v7
-        with:
-          sparse-checkout: scripts
-      - run: node scripts/notify.mjs
-        env:
-          PUSH_SECRET: ${{ secrets.PUSH_SECRET }}
-          SITE: ${{ vars.API_URL || 'https://blog.remixt.app' }}
-          LATEST: ${{ needs.build.outputs.latest }}
-
-  # Every data commit makes a new ~200 MB Vercel deployment, and the Hobby plan has 10 GB of Deployment Storage (past
-  # it, deploys are blocked): delete the old ones once the new one is live (after notify, which waits for it). Keeps
-  # the live deployment and the newest few (scripts/vercel-prune.mjs). Off (a no-op) without the VERCEL_TOKEN secret.
-  prune:
-    needs: [build, notify]
-    if: always() && needs.build.outputs.deploy == 'true'
-    runs-on: ubuntu-latest
-    timeout-minutes: 10
-    continue-on-error: true
-    steps:
-      - uses: actions/checkout@v7
-        with:
-          sparse-checkout: scripts
-      - run: node scripts/vercel-prune.mjs
-        env:
-          VERCEL_TOKEN: ${{ secrets.VERCEL_TOKEN }}
-          VERCEL_TEAM_ID: ${{ vars.VERCEL_TEAM_ID || secrets.VERCEL_TEAM_ID }}
-          VERCEL_PROJECT_ID: ${{ vars.VERCEL_PROJECT_ID || 'khabar-ai' }}
-          SITE: https://khabar-ai.vercel.app
 
   deploy:
     needs: build

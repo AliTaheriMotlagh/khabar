@@ -1,0 +1,23 @@
+---
+// The day archive's page body (src/scripts/investigate.ts initArchive), Persian or English.
+import Icon from './Icon.astro';
+interface Props { lang?: 'fa' | 'en' }
+const en = Astro.props.lang === 'en';
+const week = en ? ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'] : ['ش', 'ی', 'د', 'س', 'چ', 'پ', 'ج'];
+---
+<section class="archive" data-archive>
+  <div class="ar-cal">
+    <div class="ar-head">
+      <button class="icon-btn" type="button" data-ar-prev aria-label={en ? 'Previous month' : 'ماه قبل'}><Icon name={en ? 'arrow' : 'arrow-r'} /></button>
+      <b data-ar-month>…</b>
+      <button class="icon-btn" type="button" data-ar-next aria-label={en ? 'Next month' : 'ماه بعد'}><Icon name={en ? 'arrow-r' : 'arrow'} /></button>
+    </div>
+    <div class="ar-week" aria-hidden="true">{week.map((d) => <span>{d}</span>)}</div>
+    <div class="ar-grid" data-ar-grid></div>
+  </div>
+  <div class="ar-out" data-ar-out aria-live="polite"></div>
+</section>
+<script>
+  import { initArchive } from '../scripts/investigate';
+  initArchive();
+</script>

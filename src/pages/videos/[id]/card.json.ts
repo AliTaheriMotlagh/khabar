@@ -9,6 +9,8 @@ import { getVideos, type Video } from '../../../lib/videos';
 /** What the teaser says: the model's points, else Gholam's first paragraphs, else — an episode nobody has summarized
  *  yet — what is known for sure: which episode, how long, its chapters' names and its own title. Every video has one. */
 function points(v: Video): string[] {
+  // The model's teaser script (v2): a hook, then three short points.
+  if (v.ai?.teaser?.hook && v.ai.teaser.points.length) return [v.ai.teaser.hook, ...v.ai.teaser.points.slice(0, 3)];
   if (v.ai?.points?.length) return v.ai.points.slice(0, 3);
   const gholam = (v.story?.article.body ?? []).filter((p) => p.length < 260).slice(0, 2);
   if (gholam.length) return gholam;
@@ -24,7 +26,7 @@ export function getStaticPaths() {
 export const GET: APIRoute = ({ props }) => {
   const v = props.v as Video;
   const body = points(v);
-  const why = 'ویدیوی کامل را در کانال یوتیوب مهرزاد صمدی ببینید.';
+  const why = `${v.ai?.teaser?.why ? `${v.ai.teaser.why} ` : ''}ویدیوی کامل را در کانال یوتیوب مهرزاد صمدی ببینید.`;
   const thumb = picture(v.thumb, 'large');
   const pics = [[thumb.src, ...(thumb.alt?.split(' ') ?? [])]];
   const card = {

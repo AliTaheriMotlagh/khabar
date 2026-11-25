@@ -1,0 +1,24 @@
+---
+import Base from '../../../layouts/Base.astro';
+import EnTimeline from '../../../components/EnTimeline.astro';
+import { url } from '../../../lib/posts';
+import { EN, EN_PAGE_SIZE, enListLd, getEn } from '../../../lib/en';
+
+export function getStaticPaths() {
+  const pages = Math.ceil(getEn().length / EN_PAGE_SIZE);
+  return Array.from({ length: Math.max(0, pages - 1) }, (_, i) => ({ params: { page: String(i + 2) } }));
+}
+const page = Number(Astro.params.page);
+const all = getEn();
+const total = Math.ceil(all.length / EN_PAGE_SIZE);
+const slice = all.slice((page - 1) * EN_PAGE_SIZE, page * EN_PAGE_SIZE);
+const prev = page === 2 ? url('en/') : url(`en/page/${page - 1}/`);
+const next = page < total ? url(`en/page/${page + 1}/`) : null;
+const title = `Archive — page ${page}`;
+---
+<Base lang="en" title={title} description={`${EN.name} archive, page ${page} of ${total}: ${slice.slice(0, 3).map((e) => e.short).join('; ')}…`} jsonLd={enListLd(title, `en/page/${page}/`, slice)} prev={prev} next={next}>
+  <div class="container">
+    <header class="page-head"><h1>Archive</h1><p>Page {page} of {total}</p></header>
+    <EnTimeline items={slice} nextHref={next} prevHref={prev} title="Older stories" />
+  </div>
+</Base>

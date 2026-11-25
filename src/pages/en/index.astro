@@ -1,0 +1,74 @@
+---
+// The English edition's home: the lead story, the channel's English 24-hour summary, then the timeline.
+import Base from '../../layouts/Base.astro';
+import EnTimeline from '../../components/EnTimeline.astro';
+import AdSlot from '../../components/AdSlot.astro';
+import Icon from '../../components/Icon.astro';
+import Masthead from '../../components/Masthead.astro';
+import { dayKey, pic, url } from '../../lib/posts';
+import { EN, EN_PAGE_SIZE, enDigest, enListLd, enTopicHref, enTopics, getEn } from '../../lib/en';
+
+const all = getEn();
+const first = all.slice(0, EN_PAGE_SIZE);
+const day0 = first[0] ? dayKey(first[0].date) : '';
+const lead =
+  first.filter((e) => e.post.cover && dayKey(e.date) === day0).sort((a, b) => (b.post.importance ?? 0) - (a.post.importance ?? 0) || b.id - a.id)[0] ??
+  first.find((e) => e.post.cover);
+const rest = first.filter((e) => e !== lead);
+const next = all.length > EN_PAGE_SIZE ? url('en/page/2/') : null;
+const digest = enDigest();
+const topics = enTopics().slice(0, 14);
+---
+<Base lang="en" alternates={{ fa: url() }} image={lead?.post.cover?.src} jsonLd={enListLd(`${EN.name} — ${EN.tagline}`, 'en/', first, true)} next={next}>
+  <div class="container">
+    <Masthead lang="en" />
+    <div class="layout">
+      <div class="col-main">
+        <div class="home-top">
+          {
+            lead && (
+              <article class:list={['lead-main', !lead.post.cover && 'no-img']} data-id={lead.id} aria-label="Top story">
+                {lead.post.cover && <img {...pic(lead.post.cover.src || lead.post.cover.poster, 'large')} alt="" loading="eager" fetchpriority="high" decoding="async" referrerpolicy="no-referrer" data-fallback={lead.post.url} />}
+                <div class="lead-body">
+                  {lead.topics[0] && <span class="kicker on-dark">{lead.topics[0].en}</span>}
+                  <h2><a href={lead.href}>{lead.title}</a></h2>
+                  {lead.excerpt && <p class="excerpt">{lead.excerpt}</p>}
+                  <time datetime={lead.date} data-f="rel"></time>
+                </div>
+              </article>
+            )
+          }
+          {
+            digest && (
+              <section class="brief" aria-labelledby="brief-title">
+                <header class="brief-head">
+                  <h2 id="brief-title"><Icon name="bolt" /> The last 24 hours</h2>
+                  <small><time datetime={digest.date} data-f="rel"></time></small>
+                </header>
+                <ol class="brief-list">
+                  {digest.items.slice(0, 7).map((i) => (
+                    <li>{i.href ? <a href={i.href}>{i.text}</a> : <span>{i.text}</span>}</li>
+                  ))}
+                </ol>
+              </section>
+            )
+          }
+        </div>
+        <AdSlot slot="home" />
+        <EnTimeline items={rest} nextHref={next} />
+      </div>
+      <aside class="sidebar" aria-label="Topics">
+        <section class="side-card">
+          <h2 class="side-title"><Icon name="hash" /> Topics</h2>
+          <div class="chips wrap">{topics.map((t) => <a class="chip" href={enTopicHref(t.slug)}>{t.en} <small>{t.count}</small></a>)}</div>
+        </section>
+        <section class="side-card">
+          <h2 class="side-title"><Icon name="compass" /> Investigate</h2>
+          <p class="muted">Follow a company, a person or a model through every story, see how a rumour became official, and browse any day of the archive.</p>
+          <div class="row"><a class="btn primary sm" href={url('en/investigate/')}>Open the explorer</a><a class="btn sm" href={url('en/archive/')}>Archive</a></div>
+        </section>
+        <AdSlot slot="sidebar" />
+      </aside>
+    </div>
+  </div>
+</Base>

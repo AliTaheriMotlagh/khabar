@@ -1,0 +1,7 @@
+---
+// Where the small ad may go (src/scripts/ads.ts fills it only when the owner turned this slot on in /admin/).
+// Empty and hidden in the HTML: a page without ads carries a few bytes and no gap.
+interface Props { slot: 'home' | 'story' | 'list' | 'sidebar' | 'video' }
+const { slot } = Astro.props;
+---
+<aside class="ad-slot" data-ad={slot} hidden data-pagefind-ignore></aside>

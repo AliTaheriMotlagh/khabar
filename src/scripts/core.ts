@@ -34,7 +34,7 @@ export function tapAudio(): AudioContext | null {
 // ---------- usage counts for the owner's page (server/live.js `ev:<day>`) ----------
 // What readers use (listen, share, make a video…): counted here and sent with the next presence beat, so counting never
 // costs a request of its own. No ids, no text: a name from a fixed list and a number.
-export const EVENTS = ['listen', 'playlist', 'share', 'save', 'video-made-v', 'video-made-h', 'video-made-s', 'video-shared', 'quiz-right', 'quiz-wrong', 'push-on', 'install', 'term', 'simple', 'today', 'week-listen', 'brief60'] as const;
+export const EVENTS = ['listen', 'playlist', 'share', 'save', 'video-made-v', 'video-made-h', 'video-made-s', 'video-shared', 'quiz-right', 'quiz-wrong', 'push-on', 'install', 'term', 'simple', 'today', 'week-listen', 'brief60', 'ad-view', 'ad-click', 'lang-en', 'investigate'] as const;
 export type EventName = (typeof EVENTS)[number];
 export function track(name: EventName) {
   const ev = store.get<Record<string, number>>('ev', {});
@@ -79,9 +79,25 @@ export const compact = (n: number) => new Intl.NumberFormat('fa-IR', { notation:
 export const esc = (s = '') => s.replace(/[&<>"']/g, (c) => `&#${c.charCodeAt(0)};`);
 
 let toastTimer: number | undefined;
+// The English edition (/en/) shares these scripts: their messages in English there. A Persian message with no
+// English one (points, badges: the Persian site's game) isn't shown on an English page.
+const TOAST_EN: Record<string, string> = {
+  'از ذخیره‌ها حذف شد': 'Removed from saved',
+  'ذخیره شد — حتی آفلاین هم در دسترس است': 'Saved — it opens offline too',
+  'پیوند کپی شد': 'Link copied',
+  'دوباره آنلاین شدید': "You're back online",
+  'اتصال اینترنت را بررسی کنید': 'Check your internet connection',
+  'کمی آهسته‌تر 🙂': 'A little slower 🙂',
+  'واکنش ثبت نشد؛ اتصال اینترنت را بررسی کنید': "Your reaction wasn't saved; check your connection",
+  'تنظیمات به حالت پیش‌فرض برگشت': 'Settings are back to default',
+};
 export function toast(msg: string, kind: 'info' | 'reward' = 'info') {
   const el = $('[data-toast]');
   if (!el) return;
+  if (document.documentElement.lang === 'en' && /[\u0600-\u06ff]/.test(msg)) {
+    if (!TOAST_EN[msg]) return;
+    msg = TOAST_EN[msg];
+  }
   el.textContent = msg;
   el.dataset.kind = kind;
   el.classList.add('show');

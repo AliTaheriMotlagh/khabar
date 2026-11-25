@@ -14,6 +14,8 @@ import Quiz from '../../components/Quiz.astro';
 import ThreadBox from '../../components/ThreadBox.astro';
 import StoryFacts from '../../components/StoryFacts.astro';
 import StatusChip from '../../components/StatusChip.astro';
+import AdSlot from '../../components/AdSlot.astro';
+import { enOf } from '../../lib/en';
 
 export function getStaticPaths() {
   // Previous/next walk the listed feed; an unlisted (English-only) page has none.
@@ -109,6 +111,7 @@ const jsonLd = [
   jsonLd={jsonLd}
   noindex={!post.listed}
   progress
+  alternates={{ en: enOf(post.id)?.href }}
 >
   <div class="container narrow">
     <article class="article" data-article data-id={post.id} data-title={a.title} data-href={post.href} data-cover={post.cover ? picture(post.cover.src || post.cover.poster, 'small').src : ''} data-tags={a.tags.join(',')} data-minutes={post.minutes} data-pagefind-body>
@@ -197,6 +200,8 @@ const jsonLd = [
           <a class="icon-btn" href={post.url} target="_blank" rel="noopener" referrerpolicy="origin" aria-label="دیدن در کانال تلگرام" title="دیدن در کانال تلگرام"><Icon name="telegram" /></a>
         </div>
       </div>
+
+      <AdSlot slot="story" />
 
       <div class="article-tail" data-pagefind-ignore>
         {post.links && post.links.length > 0 && <h2 class="section-title">منبع</h2>}

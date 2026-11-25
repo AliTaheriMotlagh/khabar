@@ -1,0 +1,11 @@
+---
+import Base from '../../../layouts/Base.astro';
+import Investigate from '../../../components/Investigate.astro';
+import { url } from '../../../lib/posts';
+---
+<Base lang="en" title="News explorer" alternates={{ fa: url('investigate/') }} description="Follow any company, person, model or topic through every story: week by week, from the first rumour to the official word, who it came with and who published it — and compare two side by side.">
+  <div class="container narrow">
+    <header class="page-head"><h1>News explorer</h1><p>Type a name and see the whole story: when it started, when it peaked, when it became official, and what came with it.</p></header>
+    <Investigate lang="en" />
+  </div>
+</Base>

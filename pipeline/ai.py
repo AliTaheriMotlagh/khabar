@@ -286,7 +286,7 @@ def work_out(http: httpx.Client, post: dict) -> dict:
 # ---- runs ----
 
 # The later calls' answers (pipeline/ai_more.py) live in the same `ai` field and are kept when the headline is redone.
-LATER = ("x", "story", "speech")
+LATER = ("x", "story", "speech", "en")
 
 
 def merged(post: dict, ai: dict) -> dict:

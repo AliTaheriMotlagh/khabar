@@ -2,6 +2,7 @@ import fs from 'node:fs';
 import path from 'node:path';
 import { SITE } from '../site';
 import { dropCompanions, lastDays, tehranDay } from './time';
+import { settleStatus } from './source';
 import { findEntity, findTerm, relatedFile, slugify, threadText, type EntityKind } from './knowledge';
 
 // ---- data written by the crawler (pipeline/run.py) ----
@@ -371,7 +372,7 @@ function shape(raw: RawPost, ids: Set<number>): Post {
     relatedIds: rel.related[String(raw.id)] ?? [],
     cluster,
     thread,
-    status: x2?.status ?? null,
+    status: kind === 'digest' ? null : (settleStatus(x2?.status ?? null, links[0], body[0] ?? '') as NewsStatus | null),
     models: x2?.models ?? [],
     events: x2?.events ?? [],
     whyByModel,
@@ -381,9 +382,26 @@ function shape(raw: RawPost, ids: Set<number>): Post {
 let cache: Post[] | null = null;
 
 /** Every post that gets a page, newest first. English copies of the daily digest are skipped: the Persian one is published. */
+const allRaw = () => Object.values(import.meta.glob<RawPost>('../../data/posts/*.json', { eager: true, import: 'default' }));
+/** The channel's English 24-hour summaries (the English edition's morning brief; the Persian site skips them), newest
+ *  first: each line's text and the post it points to. */
+export function englishDigests(): { id: number; date: string; url: string; title: string; items: { n: number; text: string; id: number }[] }[] {
+  return allRaw()
+    .filter((p) => p?.digest && !Number.isNaN(Date.parse(p.date)) && persianShare(p.text) < 0.5)
+    .sort((a, b) => b.id - a.id)
+    .map((p) => ({
+      id: p.id,
+      date: p.date,
+      url: p.url,
+      title: p.text.split('\n').find((l) => l.trim())?.trim() ?? '',
+      items: p.text.split('\n').map(digestLine).filter((m) => !!m).map((m) => ({ n: Number(toLatin(m.n)), text: m.text, id: Number(m.id) })),
+    }))
+    .filter((d) => d.items.length);
+}
+
 export function getPosts(): Post[] {
   if (cache) return cache;
-  const raws = Object.values(import.meta.glob<RawPost>('../../data/posts/*.json', { eager: true, import: 'default' })).filter(
+  const raws = allRaw().filter(
     // A post without a readable date (Telegram's page had no time tag) can't be placed on the timeline.
     (p) => p?.article && !Number.isNaN(Date.parse(p.date)) && !(p.digest && persianShare(p.text) < 0.5),
   );

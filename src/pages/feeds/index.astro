@@ -54,6 +54,18 @@ const inoreader = (f: FeedDef) => `https://www.inoreader.com/?add_feed=${encodeU
       </li>
       <li class="feed-card">
         <div class="feed-head">
+          <b>English edition</b>
+          <small>RSS · English</small>
+        </div>
+        <p>همه‌ی خبرها به انگلیسی، با متن خود منبع (پست، مقاله) به جای ترجمه.</p>
+        <code dir="ltr">{abs('en/rss.xml')}</code>
+        <div class="row">
+          <button class="btn sm primary" type="button" data-copy={abs('en/rss.xml')}><Icon name="link" /> کپی نشانی</button>
+          <a class="btn sm" href={url('en/')} hreflang="en" lang="en">Open</a>
+        </div>
+      </li>
+      <li class="feed-card">
+        <div class="feed-head">
           <b>تقویم رویدادها</b>
           <small>iCalendar</small>
         </div>

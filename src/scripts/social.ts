@@ -723,9 +723,23 @@ async function requestSync() {
   }
 }
 
+// While a page is open and seen, it helps the site keep up with the channel: every few minutes a tick to /api/watch
+// (one answer a minute is shared by every reader; it starts a crawl when the channel has news — the external cron's
+// job, done here too in case that cron is down) and a look at build.json, so «خبرهای تازه رسید» shows up by itself.
+const TICK_MS = 180_000;
+function keepUp() {
+  if (document.documentElement.hasAttribute('data-framed')) return; // the top window does it
+  window.setInterval(() => {
+    if (document.visibilityState !== 'visible' || fresh) return;
+    api('watch').catch(() => {});
+    checkBuild();
+  }, TICK_MS);
+}
+
 async function initSync() {
   // A page served from the offline cache on a slow connection can be hours old: say so right away.
   checkBuild();
+  keepUp();
   document.addEventListener('visibilitychange', () => document.visibilityState === 'visible' && Date.now() - lastCheck > 120_000 && checkBuild());
   $$('[data-fresh]').forEach((b) => b.addEventListener('click', () => location.reload()));
   if (!syncBtns().length) return;

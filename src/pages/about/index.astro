@@ -4,7 +4,7 @@ import Icon from '../../components/Icon.astro';
 import { SITE } from '../../site';
 import { url } from '../../lib/posts';
 ---
-<Base title="درباره" description={`${SITE.name}: نسخه‌ی وب کانال تلگرام ${SITE.owner.name} با ترجمه‌ی فارسی ${SITE.gholam}.`}>
+<Base alternates={{ en: url('en/about/') }} title="درباره" description={`${SITE.name}: نسخه‌ی وب کانال تلگرام ${SITE.owner.name} با ترجمه‌ی فارسی ${SITE.gholam}.`}>
   <div class="container narrow">
     <article class="article about">
       <h1>درباره‌ی {SITE.name}</h1>

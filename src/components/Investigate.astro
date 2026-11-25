@@ -1,0 +1,20 @@
+---
+// The explorer's page body (src/scripts/investigate.ts fills it from /investigate.json), Persian or English.
+import Icon from './Icon.astro';
+interface Props { lang?: 'fa' | 'en' }
+const en = Astro.props.lang === 'en';
+---
+<section class="investigate" data-investigate>
+  <form class="iv-form" role="search">
+    <label class="iv-field"><Icon name="search" /><input name="q" type="search" list="iv-names" autocomplete="off" placeholder={en ? 'A company, person, model, topic or any words…' : 'شرکت، آدم، مدل، موضوع یا هر کلمه‌ای…'} aria-label={en ? 'Subject' : 'موضوع کاوش'} /></label>
+    <label class="iv-field iv-vs"><span>{en ? 'vs' : 'در برابر'}</span><input name="vs" type="search" list="iv-names" autocomplete="off" placeholder={en ? 'Compare with… (optional)' : 'مقایسه با… (اختیاری)'} aria-label={en ? 'Compare with' : 'مقایسه با'} /></label>
+    <button class="btn primary" type="submit">{en ? 'Explore' : 'کاوش'}</button>
+    <button class="btn" type="button" data-iv-clear>{en ? 'Clear' : 'پاک کردن'}</button>
+    <datalist id="iv-names"></datalist>
+  </form>
+  <div class="iv-out" data-iv-out aria-live="polite"><p class="muted">{en ? 'Loading the archive…' : 'در حال خواندن آرشیو…'}</p></div>
+</section>
+<script>
+  import { initInvestigate } from '../scripts/investigate';
+  initInvestigate();
+</script>

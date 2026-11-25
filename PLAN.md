@@ -1,7 +1,68 @@
 # Plan: open tasks and notes
 
-One place for everything unfinished. Last checked 2026-11-19 (data through post 6631).
+One place for everything unfinished. Last checked 2026-11-25 (data through post 6725).
 Tick items off here; move anything that becomes a lasting rule into CLAUDE.md.
+
+## Progress (2026-11-25): updates, English edition, explorer, ads, speed
+
+### Why the site stopped updating (fixed in code; one step is yours)
+- **The 1-minute cron called a dead address.** README told cron-job.org to call `khabar-ai.vercel.app/api/watch/`; that
+  Vercel deployment now answers `402 DEPLOYMENT_DISABLED`. Posts 6716–6724 (16:03→19:50 UTC on 11-24) started no crawl;
+  the next was GitHub's schedule at 20:22. **Yours:** in cron-job.org change the URL to
+  `https://blog.remixt.app/api/watch/?key=<WATCH_SECRET>` (Cloudflare already has `WATCH_SECRET` and the token: it
+  answers 401 without the key).
+- **Backup without the cron:** open pages now tick `/api/watch/` (no key) every 3 min while visible; one answer a minute
+  is shared through Cloudflare's cache, so the channel/GitHub are asked ≤1×/min per data centre.
+- **Publishing waited for the model.** A crawl ran ~10–17 min of AI before its commit and deploy. Now: crawl → commit →
+  build → Cloudflare deploy (minutes) → AI headlines (fa + en) → deploy → notify → AI extras → deploy → Pages mirror.
+  `scripts/commit-data.sh`, `scripts/publish.sh`. The separate `cloudflare`, `notify` and Vercel `prune` jobs are gone.
+- **Cloudflare didn't cache the API.** Vercel's CDN honoured `s-maxage`; Pages Functions don't. Every cloud-voice clip
+  was re-synthesized by Azure on every listen and every picture re-fetched. `functions/_router.js` now keeps `s-maxage`
+  answers in Cloudflare's cache (ranges served from it).
+
+### Cloudflare stays $0
+- Pages Free never bills: past a limit it refuses. Limits that matter: **20,000 files per deployment** (now 9,500 —
+  `publish.sh` warns at 18,000), 100,000 Function requests/day (`public/_routes.json` limits Functions to `/api/*`,
+  `/rss/top.xml`, `/ads.txt`; static pages never count). **Yours:** don't add a payment method / Workers Paid.
+- File budget: each story = page + card.json + Pagefind fragment (fa) + English page ≈ 4 files → ~80 a day → ~130 days
+  of room. [ ] Before ~18,000: bundle old card.json files or drop old Pagefind fragments.
+
+### Done
+- [x] Timeline filter bar: wraps on desktop (mouse) instead of a sideways strip that widened the page.
+- [x] «تأییدنشده» on official news: `src/lib/source.ts sourceKind/settleStatus` — the maker's own account or site is
+  «رسمی» (e.g. @Tesla 6680, @neuralink 6670), a newsroom's at least «گزارش» (@Reuters 6669, @business 6631), a lede
+  naming «حساب رسمی» too; tests in `tests/source.test.mjs`.
+- [x] Speed: off-screen timeline cards skip layout/paint (`content-visibility`), no blur on phones' sticky bars, navigation
+  preload in `sw.js`, hover/touch prefetch for Safari/Firefox (Chrome already had speculation rules).
+- [x] **English edition** `/en/` (home, pages, story pages, topics, videos, about, explorer, archive, RSS `en/rss.xml`):
+  the real source text (tweet, linked article, quote), never Gholam's; hreflang pairs (page + sitemap), og:locale,
+  NewsArticle `inLanguage: en` with `workTranslation`, English settings sheet, device English voice for «Listen»,
+  header switch remembered (the Persian home opens the English one for a reader who chose it; crawlers always get fa).
+  `src/lib/en.ts`. 1,895 of 2,086 stories have English source text; the rest are Persian-only posts.
+- [x] English headlines by the model: `pipeline/ai_en.py` (`ai.en`, one short call, ≤80 tokens out) in every crawl and in
+  `ai-backfill.yml`; the site falls back to the article's own title or the source's first sentence.
+- [x] **Explorer** `/investigate/` + `/en/investigate/`: any company/person/model/topic/words → stories per week (and vs a
+  second subject), how it was reported, rumour → official inside one running story, named together, publishers, the
+  whole story oldest first. **Archive** `/archive/` + `/en/archive/`: a calendar (Jalali / Gregorian) shaded by news,
+  any day's stories, «همین روز در ماه‌های قبل». One file, `/investigate.json` (~680 KB, ~150 KB compressed).
+- [x] **Ads**: `server/ads.js` + `/admin/` «تبلیغات» (house banner / any network's snippet in a sandboxed frame / AdSense;
+  slots home, story, sidebar, video; per language; `/ads.txt`); views/clicks counted with the presence beat.
+  Vercel Hobby forbade ads; Cloudflare's free plan doesn't.
+- [x] Banner: `Masthead.astro` on both homes (aurora, live line, today/week/sources/readers, ways in, newest headline);
+  a new turning logo mark; a brand-coloured hairline under the header.
+- [x] Mehrzad's videos: summaries v2 (`SUMMARY_V` 2 — whole-episode write-up, 8–12 points, chapter descriptions,
+  quotes, names → explorer, takeaways, a teaser script used by the teaser video), chapter map bar on episode pages.
+  The backfill redoes all 57. **Known gap:** all 57 were summarized from the description only — the runner never got
+  subtitles (YouTube refuses it). [ ] Yours, if wanted: upload/allow captions another way (e.g. the channel's own
+  YouTube Data API OAuth) — not worked around in code.
+- [x] Voices: «-ation» → «یشن», a voiced plural s → «ز» (teams, kings…); the lexicon (model's spellings) still wins.
+- [x] Fixed `tests/lines.test.mjs` (compared a page without the lexicon against card.json with it).
+
+### Still open
+- [ ] Persian homographs / ezafe for the on-device voices (needs a Persian G2P or diacritics in the lexicon; listen to
+  20 stories per voice first and list the words that go wrong).
+- [ ] After the backfill: check `/en/` headlines by eye (20 stories) and `/videos/` v2 summaries.
+- [ ] Old README/onboarding still mention `khabar-ai.vercel.app` in places that only matter to the dead deployment.
 
 ## Progress (2026-11-18)
 

@@ -60,6 +60,51 @@ import Icon from '../../components/Icon.astro';
       </section>
 
       <section class="st-section">
+        <h2 class="section-title">تبلیغات</h2>
+        <p class="muted">یک جای کوچک تبلیغ روی صفحه‌ها؛ بدون انتشار دوباره‌ی سایت. «بنر خودم» را خود سایت می‌کشد (سریع، بدون اسکریپت بیرونی). کد هر شبکه‌ی تبلیغاتی (یکتانت، مدیااد، …) در یک قاب جدا و محدود اجرا می‌شود و به داده‌های خواننده دسترسی ندارد. شمار دیده‌شدن و کلیک در «از چه چیزهایی استفاده می‌شود» می‌آید.</p>
+        <form class="adm-ads" data-adm-ads>
+          <label class="set-row set-switch"><span class="set-text"><b>تبلیغ روشن باشد</b><small data-adm-ads-note></small></span><input type="checkbox" role="switch" name="enabled" /><span class="switch" aria-hidden="true"></span></label>
+          <fieldset class="adm-ads-row"><legend>نوع</legend>
+            <label><input type="radio" name="provider" value="house" checked /> بنر خودم</label>
+            <label><input type="radio" name="provider" value="html" /> کد شبکه‌ی تبلیغاتی</label>
+            <label><input type="radio" name="provider" value="adsense" /> Google AdSense</label>
+          </fieldset>
+          <fieldset class="adm-ads-row"><legend>کجا</legend>
+            <label><input type="checkbox" name="slots" value="home" checked /> صفحه‌ی اول</label>
+            <label><input type="checkbox" name="slots" value="story" checked /> زیر هر خبر</label>
+            <label><input type="checkbox" name="slots" value="sidebar" /> ستون کناری (دسکتاپ)</label>
+            <label><input type="checkbox" name="slots" value="video" /> ویدیوها</label>
+          </fieldset>
+          <fieldset class="adm-ads-row"><legend>نسخه</legend>
+            <label><input type="checkbox" name="langs" value="fa" checked /> فارسی</label>
+            <label><input type="checkbox" name="langs" value="en" checked /> انگلیسی</label>
+          </fieldset>
+          <div class="adm-ads-grid">
+            <label class="vo-label"><span>برچسب (فارسی)</span><input class="vo-field" name="label" placeholder="تبلیغ" /></label>
+            <label class="vo-label"><span>برچسب (انگلیسی)</span><input class="vo-field" name="labelEn" placeholder="Sponsored" dir="ltr" /></label>
+          </div>
+          <div class="adm-ads-grid" data-ad-for="house">
+            <label class="vo-label"><span>عنوان</span><input class="vo-field" name="title" maxlength="80" /></label>
+            <label class="vo-label"><span>دکمه</span><input class="vo-field" name="cta" maxlength="30" placeholder="بیشتر بدانید" /></label>
+            <label class="vo-label wide"><span>یک خط توضیح</span><input class="vo-field" name="text" maxlength="160" /></label>
+            <label class="vo-label"><span>نشانی تصویر (https)</span><input class="vo-field" name="image" dir="ltr" placeholder="https://…" /></label>
+            <label class="vo-label"><span>پیوند (https)</span><input class="vo-field" name="href" dir="ltr" placeholder="https://…" /></label>
+          </div>
+          <div class="adm-ads-grid" data-ad-for="html" hidden>
+            <label class="vo-label wide"><span>کد شبکه‌ی تبلیغاتی (HTML/اسکریپت)</span><textarea class="vo-field" name="html" rows="6" dir="ltr" maxlength="12000"></textarea></label>
+            <label class="vo-label"><span>ارتفاع قاب (پیکسل)</span><input class="vo-field" name="height" type="number" min="60" max="600" value="120" dir="ltr" /></label>
+          </div>
+          <div class="adm-ads-grid" data-ad-for="adsense" hidden>
+            <label class="vo-label"><span>Publisher ID</span><input class="vo-field" name="client" dir="ltr" placeholder="ca-pub-0000000000000000" /></label>
+            <label class="vo-label"><span>Ad slot</span><input class="vo-field" name="slot" dir="ltr" placeholder="1234567890" /></label>
+          </div>
+          <label class="vo-label wide"><span>ads.txt (خطی که شبکه‌ی تبلیغاتی می‌دهد؛ در blog.remixt.app/ads.txt)</span><textarea class="vo-field" name="adsTxt" rows="2" dir="ltr" maxlength="6000"></textarea></label>
+          <div class="adm-ad-preview"><small>پیش‌نمایش</small><div class="ad-slot is-on" data-adm-ad-preview></div></div>
+          <button class="btn primary" type="submit">ذخیره‌ی تبلیغ</button>
+        </form>
+      </section>
+
+      <section class="st-section">
         <h2 class="section-title">سهمیه‌ها و اعلان‌ها</h2>
         <div class="adm-meter" data-adm-tts></div>
         <p class="st-note" data-adm-push></p>

@@ -1,0 +1,177 @@
+---
+// A story in the English edition: the source's own words (the tweet, the article it links, the post it quotes), its
+// pictures and video, where it stands (official / reported / unconfirmed), who it names, related stories, and a link
+// to the Persian page with Gholam's translation. Read aloud by the device's English voice (src/scripts/en-listen.ts).
+import Base from '../../../layouts/Base.astro';
+import Icon from '../../../components/Icon.astro';
+import Media from '../../../components/Media.astro';
+import Reactions from '../../../components/Reactions.astro';
+import AdSlot from '../../../components/AdSlot.astro';
+import { SITE } from '../../../site';
+import { abs, pic, picture, sized, url } from '../../../lib/posts';
+import { shortUrl, translateUrl } from '../../../lib/source';
+import { EN, enDate, enRelated, enTopicHref, getEn, type EnPost } from '../../../lib/en';
+
+export function getStaticPaths() {
+  const all = getEn();
+  return all.map((e, i) => ({ params: { id: String(e.id) }, props: { e, newer: all[i - 1] ?? null, older: all[i + 1] ?? null } }));
+}
+interface Props { e: EnPost; newer: EnPost | null; older: EnPost | null }
+const { e, newer, older } = Astro.props;
+const p = e.post;
+const coverSrc = p.cover ? sized(p.cover.src || p.cover.poster, 'large') : null;
+const shareUrl = abs(`en/p/${e.id}/`);
+const description = [e.excerpt || e.title].join(' ').slice(0, 300);
+const rel = enRelated(e);
+const tr = e.lang !== 'en' ? translateUrl(e.body.join(' '))?.replace('tl=fa', 'tl=en') ?? null : null;
+const mentions = p.entities.map((x) => ({ '@type': x.kind === 'person' ? 'Person' : x.kind === 'company' ? 'Organization' : 'Thing', name: x.name_en }));
+const words = (e.body.join(' ') + ' ' + (e.quote?.text ?? '')).split(/\s+/).filter(Boolean).length;
+const jsonLd = [
+  {
+    '@context': 'https://schema.org',
+    '@type': 'NewsArticle',
+    headline: e.title.slice(0, 110),
+    description,
+    inLanguage: 'en',
+    datePublished: e.date,
+    dateModified: p.updated || e.date,
+    mainEntityOfPage: { '@type': 'WebPage', '@id': shareUrl },
+    url: shareUrl,
+    image: coverSrc ? [coverSrc] : [abs('og.png')],
+    thumbnailUrl: coverSrc || abs('og.png'),
+    keywords: e.topics.map((t) => t.en).join(', '),
+    ...(e.topics[0] && { articleSection: e.topics[0].en }),
+    ...(e.type && { genre: e.type }),
+    wordCount: words,
+    isAccessibleForFree: true,
+    speakable: { '@type': 'SpeakableSpecification', cssSelector: ['.article-head h1', '.prose > p:first-child'] },
+    ...(mentions.length && { mentions }),
+    author: { '@type': 'Person', name: SITE.owner.nameLatin, url: SITE.owner.url },
+    publisher: { '@id': `${SITE.url}/#org` },
+    isBasedOn: e.sourceUrl,
+    workTranslation: { '@type': 'NewsArticle', inLanguage: 'fa-IR', url: abs(`p/${e.id}/`) },
+  },
+  {
+    '@context': 'https://schema.org',
+    '@type': 'BreadcrumbList',
+    itemListElement: [
+      { '@type': 'ListItem', position: 1, name: EN.name, item: abs('en/') },
+      ...(e.topics[0] ? [{ '@type': 'ListItem', position: 2, name: e.topics[0].en, item: abs(`en/topic/${e.topics[0].slug}/`) }] : []),
+      { '@type': 'ListItem', position: e.topics[0] ? 3 : 2, name: e.title.slice(0, 80), item: shareUrl },
+    ],
+  },
+];
+---
+<Base
+  lang="en"
+  alternates={{ fa: p.href }}
+  title={e.title}
+  description={description}
+  image={coverSrc}
+  imageAlt={e.title}
+  type="article"
+  published={e.date}
+  modified={p.updated || e.date}
+  section={e.topics[0]?.en}
+  tags={e.topics.map((t) => t.en)}
+  jsonLd={jsonLd}
+  progress
+>
+  <div class="container narrow">
+    <article class="article" data-article data-id={e.id} data-title={e.title} data-href={e.href} data-cover={p.cover ? picture(p.cover.src || p.cover.poster, 'small').src : ''} data-tags={p.article.tags.join(',')} data-minutes={e.minutes}>
+      <header class="article-head">
+        <div class="story-head" data-pagefind-ignore>
+          {e.topics[0] && <a class="kicker" href={enTopicHref(e.topics[0].slug)}>{e.topics[0].en}</a>}
+          {e.type && <span class="src-name">{e.type}</span>}
+        </div>
+        <h1>{e.title}</h1>
+        <div class="article-meta" data-pagefind-ignore>
+          <span>{e.by}</span>
+          <time datetime={e.date} data-f="rel" title={enDate(e.date, { dateStyle: 'full', timeStyle: 'short' })}>{enDate(e.date, { month: 'long', day: 'numeric' })}</time>
+          <span>{e.minutes} min read</span>
+          {e.status && <span class={`status ${e.status.cls}`} title={e.status.title}>{e.status.label}</span>}
+          {(p.importance ?? 0) >= 4 && <span class="must">Must read</span>}
+          <a class="views-link" href={p.href} hreflang="fa" lang="fa" title="Gholam's Persian translation">فارسی</a>
+        </div>
+      </header>
+
+      <div class="reader-bar" role="toolbar" aria-label="Reading tools" data-pagefind-ignore>
+        <button class="rb-btn listen" type="button" data-en-listen aria-pressed="false" hidden>
+          <Icon name="volume" class="when-idle" /><Icon name="pause" class="when-playing" /><span data-listen-label>Listen</span>
+        </button>
+        <button class="rb-btn" type="button" data-open-settings aria-label="Text size and display" title="Text size (+ / -)"><span class="aa" aria-hidden="true">Aa</span></button>
+        <button class="rb-btn if-focus" type="button" data-theme-toggle aria-label="Light / dark" title="Light / dark (t)"><Icon name="moon" class="if-light" /><Icon name="sun" class="if-dark" /></button>
+        <button class="rb-btn focus-btn" type="button" data-focus-toggle aria-pressed="false" aria-label="Reading mode" title="Reading mode (f)">
+          <Icon name="book" class="when-off" /><Icon name="x" class="when-on" /><span class="when-off">Read</span><span class="when-on lbl-wide">Exit</span>
+        </button>
+        <span class="time-left" data-time-left></span>
+      </div>
+
+      {p.gallery.length > 0 && <div class="article-media"><Media items={p.gallery} alt={e.title} fallbackHref={p.url} limit={12} size="large" eager lang="en" /></div>}
+      {!p.gallery.length && coverSrc && <div class="article-media"><Media items={[{ type: 'image', src: coverSrc }]} alt={e.title} fallbackHref={p.url} size="large" eager lang="en" /></div>}
+
+      <div class="prose" lang={e.lang} dir="auto">{e.body.map((t) => <p>{t}</p>)}</div>
+      {
+        e.quote && (
+          <blockquote class="en-quote" dir="auto">
+            {e.quote.author && <cite>{e.quote.author}</cite>}
+            <p>{e.quote.text}</p>
+          </blockquote>
+        )
+      }
+      {tr && <p class="muted"><a href={tr} target="_blank" rel="noopener">Translate this source into English</a></p>}
+      <section class="en-source" data-pagefind-ignore>
+        <h2 class="section-title">Source</h2>
+        <a class="en-source-main" href={e.sourceUrl} target="_blank" rel="noopener">
+          <Icon name="external" /> <b>{e.by || e.publisher}</b> <span>{shortUrl(e.sourceUrl, 52)}</span>
+        </a>
+        {e.cited.length > 0 && <ul class="en-cited">{e.cited.map((c) => <li><a href={c} target="_blank" rel="noopener">{shortUrl(c, 60)}</a></li>)}</ul>}
+        <p class="muted">First shared on <a href={p.url} target="_blank" rel="noopener" referrerpolicy="origin">@{SITE.channel}</a> · <a href={p.href} hreflang="fa" lang="fa">نسخه‌ی فارسی با ترجمه‌ی داش غلام</a></p>
+      </section>
+
+      {
+        p.entities.length > 0 && (
+          <nav class="who-chips" aria-label="People and companies in this story" data-pagefind-ignore>
+            {p.entities.map((x) => <a href={url(`en/investigate/?q=${encodeURIComponent(x.name_en)}`)}>{x.name_en}</a>)}
+          </nav>
+        )
+      }
+      {e.topics.length > 0 && <nav class="who-chips" aria-label="Topics" data-pagefind-ignore>{e.topics.map((t) => <a href={enTopicHref(t.slug)}>#{t.en}</a>)}</nav>}
+
+      <div class="engage" data-pagefind-ignore>
+        <Reactions id={e.id} lang="en" />
+        <div class="share-bar">
+          <button class="icon-btn save-btn" type="button" aria-pressed="false" aria-label="Save for later" data-save data-id={e.id} data-title={e.title} data-href={e.href} data-cover={p.cover ? picture(p.cover.src || p.cover.poster, 'small').src : ''} data-date={e.date}>
+            <Icon name="bookmark" class="off" /><Icon name="bookmark-fill" class="on" />
+          </button>
+          <button class="icon-btn" type="button" data-share data-url={e.href} data-title={e.title} aria-label="Share"><Icon name="share" /></button>
+          <a class="icon-btn" href={p.url} target="_blank" rel="noopener" referrerpolicy="origin" aria-label="Open on Telegram" title="Open on Telegram"><Icon name="telegram" /></a>
+        </div>
+      </div>
+
+      <AdSlot slot="story" />
+
+      <div class="article-tail" data-pagefind-ignore>
+        {
+          rel.length > 0 && (
+            <section>
+              <h2 class="section-title">Related</h2>
+              <div class="related">
+                {rel.map((r) => (
+                  <a class="rel-card" href={r.href}>
+                    {r.post.cover ? <img {...pic(r.post.cover.src || r.post.cover.poster, 'small')} alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer" /> : <span class="ph"><Icon name="news" /></span>}
+                    <span>{r.title}</span>
+                  </a>
+                ))}
+              </div>
+            </section>
+          )
+        }
+        <nav class="pager" aria-label="Previous and next story">
+          {newer && <a href={newer.href} data-prev rel="prev"><small><Icon name="arrow" /> Newer</small>{newer.title}</a>}
+          {older && <a class="next" href={older.href} data-next rel="next"><small>Older <Icon name="arrow-r" /></small>{older.title}</a>}
+        </nav>
+      </div>
+    </article>
+  </div>
+</Base>

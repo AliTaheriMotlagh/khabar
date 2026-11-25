@@ -1,0 +1,27 @@
+---
+import Base from '../../../../layouts/Base.astro';
+import EnTimeline from '../../../../components/EnTimeline.astro';
+import { tagHref, url } from '../../../../lib/posts';
+import { EN, EN_PAGE_SIZE, enListLd, enTopics, getEn } from '../../../../lib/en';
+
+export function getStaticPaths() {
+  const all = getEn();
+  return enTopics().flatMap((t) => {
+    const items = all.filter((e) => e.topics.some((x) => x.slug === t.slug));
+    const pages = Math.ceil(items.length / EN_PAGE_SIZE);
+    return Array.from({ length: pages }, (_, i) => ({ params: { slug: t.slug, page: i ? String(i + 1) : undefined }, props: { t, items, n: i + 1, pages } }));
+  });
+}
+const { t, items, n, pages } = Astro.props as { t: { fa: string; en: string; slug: string }; items: ReturnType<typeof getEn>; n: number; pages: number };
+const slice = items.slice((n - 1) * EN_PAGE_SIZE, n * EN_PAGE_SIZE);
+const base = `en/topic/${t.slug}/`;
+const prev = n > 1 ? url(n === 2 ? base : `${base}${n - 1}/`) : null;
+const next = n < pages ? url(`${base}${n + 1}/`) : null;
+const title = n > 1 ? `${t.en} — page ${n}` : `${t.en} news`;
+---
+<Base lang="en" alternates={n === 1 ? { fa: tagHref(t.fa) } : {}} title={title} description={`The latest ${t.en} stories on ${EN.name}, each with its original source: ${slice.slice(0, 3).map((e) => e.short).join('; ')}…`} jsonLd={enListLd(title, n > 1 ? `${base}${n}/` : base, slice)} prev={prev} next={next}>
+  <div class="container">
+    <header class="page-head"><h1>{t.en}</h1><p>{items.length} stories{pages > 1 && ` · page ${n} of ${pages}`}</p></header>
+    <EnTimeline items={slice} nextHref={next} prevHref={prev} title={`${t.en}: latest`} topic={t.slug} />
+  </div>
+</Base>

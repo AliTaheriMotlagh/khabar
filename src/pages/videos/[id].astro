@@ -57,8 +57,16 @@ const crumbs = breadcrumbs([{ name: VIDEOS_TITLE, path: 'videos/' }, { name: tit
       v.ai?.summary && (
         <section id="summary">
           <h2 class="section-title">این قسمت درباره‌ی چیست</h2>
-          <p class="prose">{v.ai.summary}</p>
-          {v.ai.points && v.ai.points.length > 0 && <ul class="vd-points">{v.ai.points.map((p) => <li>{p}</li>)}</ul>}
+          <p class="prose vd-lede">{v.ai.summary}</p>
+          {v.ai.story && v.ai.story.length > 0 && <div class="prose">{v.ai.story.map((p) => <p>{p}</p>)}</div>}
+          {v.ai.points && v.ai.points.length > 0 && (<><h3 class="vd-h3">نکته‌های اصلی</h3><ul class="vd-points">{v.ai.points.map((p) => <li>{p}</li>)}</ul></>)}
+          {v.ai.quotes && v.ai.quotes.length > 0 && <div class="vd-quotes">{v.ai.quotes.map((q) => <blockquote><p>«{q}»</p></blockquote>)}</div>}
+          {v.ai.takeaways && v.ai.takeaways.length > 0 && (
+            <aside class="why"><b>با خودتان ببرید</b><ul class="vd-takeaways">{v.ai.takeaways.map((t) => <li>{t}</li>)}</ul></aside>
+          )}
+          {v.ai.names && v.ai.names.length > 0 && (
+            <nav class="who-chips" aria-label="نام‌هایی که در این قسمت آمده">{v.ai.names.map((n) => <a href={url(`investigate/?q=${encodeURIComponent(n)}`)} title="این نام در خبرهای سایت" dir="auto">{n}</a>)}</nav>
+          )}
           {v.ai.category && <p class="muted">دسته: {v.ai.category} · خلاصه از {v.ai.from === 'subtitles' ? 'زیرنویس ویدیو' : 'توضیح ویدیو'}، با هوش مصنوعی سایت</p>}
         </section>
       )
@@ -77,9 +85,19 @@ const crumbs = breadcrumbs([{ name: VIDEOS_TITLE, path: 'videos/' }, { name: tit
       chapters.length > 0 && (
         <section>
           <h2 class="section-title">فصل‌ها</h2>
+          {
+            v.duration && (
+              <div class="vd-map" role="list" aria-label="نقشه‌ی فصل‌ها: هر بخش به اندازه‌ی طولش">
+                {chapters.map((c, i) => {
+                  const end = chapters[i + 1]?.t ?? v.duration!;
+                  return <a role="listitem" href={ytTime(v, c.t)} target="_blank" rel="noopener" style={`flex:${Math.max(1, end - c.t)}`} title={`${clock(c.t)} — ${c.title}`}><span>{i + 1}</span></a>;
+                })}
+              </div>
+            )
+          }
           <ol class="vd-chapters">
             {chapters.map((c) => (
-              <li><a href={ytTime(v, c.t)} target="_blank" rel="noopener"><time>{clock(c.t)}</time> <span dir="auto">{c.title}</span></a></li>
+              <li><a href={ytTime(v, c.t)} target="_blank" rel="noopener"><time>{clock(c.t)}</time> <span dir="auto">{c.title}</span></a>{'about' in c && c.about && <p class="vd-about">{c.about}</p>}</li>
             ))}
           </ol>
         </section>

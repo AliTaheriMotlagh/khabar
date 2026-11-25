@@ -2,7 +2,41 @@
 import Icon from './Icon.astro';
 import { SITE } from '../site';
 import { url } from '../lib/posts';
+import { EN } from '../lib/en';
+interface Props { lang?: 'fa' | 'en' }
+const { lang = 'fa' } = Astro.props;
 ---
+{lang === 'en' ? (
+<footer class="site-footer" lang="en">
+  <div class="container foot-grid">
+    <div class="foot-brand">
+      <a class="brand" href={url('en/')}>
+        <span class="logo-mark" aria-hidden="true"></span>
+        <span class="brand-text"><b>{EN.name}</b><small>AI news, from the source</small></span>
+      </a>
+      <p>{EN.description}</p>
+      <div class="row">
+        <a class="btn primary" href={`https://t.me/${SITE.channel}`} target="_blank" rel="noopener" referrerpolicy="origin"><Icon name="telegram" /> Telegram channel</a>
+        <a class="btn" href={url()} hreflang="fa" lang="fa" data-lang-switch="fa">فارسی</a>
+      </div>
+    </div>
+    <nav class="foot-links" aria-label="Links">
+      <a href={url('en/investigate/')}>Search</a>
+      <a href={url('en/topics/')}>Topics</a>
+      <a href={url('en/archive/')}>Archive</a>
+      <a href={url('en/investigate/')}>Investigate</a>
+      <a href={url('en/videos/')}>Mehrzad's videos</a>
+      <a href={url('saved/')}>Saved</a>
+      <a href={url('en/about/')}>About</a>
+      <a href={url('en/rss.xml')}><Icon name="rss" /> RSS</a>
+      <a href={SITE.repo} target="_blank" rel="noopener"><Icon name="github" /> Source code</a>
+    </nav>
+  </div>
+  <div class="container foot-bottom">
+    <span>Stories from <a href={`https://t.me/${SITE.channel}`} rel="noopener" referrerpolicy="origin">@{SITE.channel}</a> ({SITE.owner.nameLatin}), told with their original sources · built by <a href={SITE.author.url} target="_blank" rel="noopener" referrerpolicy="origin">{SITE.author.nameLatin}</a></span>
+  </div>
+</footer>
+) : (
 <footer class="site-footer">
   <div class="container foot-grid">
     <div class="foot-brand">
@@ -26,6 +60,9 @@ import { url } from '../lib/posts';
       <a href={url('glossary/')}>واژه‌نامه</a>
       <a href={url('models/')}>ردیاب مدل‌ها</a>
       <a href={url('calendar/')}>تقویم رویدادها</a>
+      <a href={url('investigate/')}>کاوش و تاریخچه</a>
+      <a href={url('archive/')}>آرشیو روزها</a>
+      <a href={url('en/')} hreflang="en" lang="en">English edition</a>
       <a href={url('me/')}>پروفایل</a>
       <a href={url('about/')}>درباره</a>
       <a href={url('feeds/')}><Icon name="rss" /> RSS</a>
@@ -37,3 +74,4 @@ import { url } from '../lib/posts';
     <a class="foot-stats" href={url('stats/')} data-site-stats hidden title="آمار بازدید با جزئیات"><Icon name="eye" /> <b data-total>…</b> بازدید · <b data-today>…</b> نفر امروز</a>
   </div>
 </footer>
+)}

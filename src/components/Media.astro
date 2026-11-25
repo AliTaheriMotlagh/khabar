@@ -13,14 +13,16 @@ interface Props {
   eager?: boolean;
   /** Tallest shape allowed for a single item (height / width): cards stay compact, articles show more. */
   maxRatio?: number;
+  lang?: 'fa' | 'en';
 }
-const { items, alt, fallbackHref, href, limit = 4, size = 'medium', eager = false, maxRatio = 1.25 } = Astro.props;
+const { items, alt, fallbackHref, href, limit = 4, size = 'medium', eager = false, maxRatio = 1.25, lang = 'fa' } = Astro.props;
+const en = lang === 'en';
 const shown = items.slice(0, limit);
 const extra = items.length - shown.length;
 const n = shown.length;
 // A single item keeps its own shape (within limits); several share a tidy grid.
 const shape = (m: Media) => (n === 1 ? `aspect-ratio:${(1 / Math.min(Math.max(m.ratio || 0.5625, 0.45), maxRatio)).toFixed(4)}` : undefined);
-const label = (i: number) => (n > 1 ? `${alt} — ${faNum(i + 1)} از ${faNum(items.length)}` : alt);
+const label = (i: number) => (n > 1 ? (en ? `${alt} — ${i + 1} of ${items.length}` : `${alt} — ${faNum(i + 1)} از ${faNum(items.length)}`) : alt);
 ---
 {
   n > 0 && (
@@ -37,7 +39,7 @@ const label = (i: number) => (n > 1 ? `${alt} — ${faNum(i + 1)} از ${faNum(i
               autoplay={m.gif}
               muted={m.gif}
               loop={m.gif}
-              aria-label={`ویدیو: ${label(i)}`}
+              aria-label={en ? `Video: ${label(i)}` : `ویدیو: ${label(i)}`}
               data-fallback={fallbackHref}
               data-alt={fresh(m.src)}
             />
@@ -55,14 +57,14 @@ const label = (i: number) => (n > 1 ? `${alt} — ${faNum(i + 1)} از ${faNum(i
             />
           )}
           {m.type === 'video' && !m.src && (
-            <a class="play" href={fallbackHref} target="_blank" rel="noopener" aria-label="دیدن ویدیو در تلگرام">
+            <a class="play" href={fallbackHref} target="_blank" rel="noopener" aria-label={en ? 'Watch the video on Telegram' : 'دیدن ویدیو در تلگرام'}>
               <span><Icon name="play" /></span>
             </a>
           )}
           {m.type === 'video' && m.duration && !m.gif && <span class="badge" data-num>{duration(m.duration)}</span>}
           {m.gif && <span class="badge">GIF</span>}
           {extra > 0 && i === n - 1 && (
-            <a class="more" href={href ?? fallbackHref} aria-label={`${faNum(extra)} تصویر دیگر`}>+{faNum(extra)}</a>
+            <a class="more" href={href ?? fallbackHref} aria-label={en ? `${extra} more pictures` : `${faNum(extra)} تصویر دیگر`}>+{en ? extra : faNum(extra)}</a>
           )}
         </figure>
       ))}

@@ -23,9 +23,24 @@ self.addEventListener('activate', (e) => {
     caches
       .keys()
       .then((keys) => Promise.all(keys.filter((k) => ![PAGES, ASSETS, IMAGES, VOICE, AUDIO, VIDEO].includes(k)).map((k) => caches.delete(k))))
+      // The page's request starts while this worker wakes up, not after (a slow phone's worker takes 50–500 ms).
+      .then(() => self.registration.navigationPreload?.enable().catch(() => {}))
       .then(() => self.clients.claim()),
   );
 });
+
+// Pages the reader is about to open (src/scripts/app.ts asks on hover or the first touch, `x-prefetch`): kept in PAGES
+// with the time, and a navigation within PREFETCH_MS gets that copy at once instead of waiting for the network.
+const PREFETCH_MS = 60_000;
+const prefetched = new Map();
+async function prefetch(req) {
+  const res = await fetch(req.url, { credentials: 'same-origin' });
+  if (res.ok && (res.headers.get('content-type') || '').includes('text/html')) {
+    await (await caches.open(PAGES)).put(req.url, res.clone());
+    prefetched.set(req.url, Date.now());
+  }
+  return new Response(null, { status: 204 });
+}
 
 async function trim(name, max) {
   const cache = await caches.open(name);
@@ -35,9 +50,19 @@ async function trim(name, max) {
 
 async function networkFirst(req, event) {
   const cache = await caches.open(PAGES);
+  const at = prefetched.get(req.url);
+  if (at) {
+    prefetched.delete(req.url);
+    const hit = Date.now() - at < PREFETCH_MS && (await cache.match(req.url));
+    if (hit) {
+      event.waitUntil(event.preloadResponse?.catch(() => {}) ?? Promise.resolve());
+      return hit;
+    }
+  }
   // Cache the fresh page even when it arrives after the timeout, so a slow connection gets today's news on the next
   // visit instead of the same stale copy again and again.
-  const fresh = fetch(req).then((res) => {
+  const preload = event.preloadResponse ? Promise.resolve(event.preloadResponse).catch(() => null) : Promise.resolve(null);
+  const fresh = preload.then((r) => r || fetch(req)).then((res) => {
     if (res.ok) {
       cache.put(req, res.clone());
       trim(PAGES, 250);
@@ -105,6 +130,7 @@ self.addEventListener('fetch', (e) => {
   if (u.origin === location.origin) {
     if (u.pathname.includes('/api/img/')) return e.respondWith(cacheFirst(req, IMAGES, 400).catch(() => Response.error()));
     if (u.pathname.includes('/api/')) return;
+    if (req.headers.get('x-prefetch') === '1') return e.respondWith(prefetch(req).catch(() => new Response(null, { status: 204 })));
     if (req.mode === 'navigate') return e.respondWith(networkFirst(req, e));
     if (u.pathname.includes('/_astro/') || u.pathname.includes('/pagefind/')) return e.respondWith(cacheFirst(req, ASSETS, 200));
     return;

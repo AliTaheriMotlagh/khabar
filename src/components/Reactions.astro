@@ -1,12 +1,13 @@
 ---
 // Guest reactions (no signup). Counts and the reader's own picks are filled in by src/scripts/social.ts.
 import { REACTIONS } from '../lib/reactions';
-interface Props { id: number }
-const { id } = Astro.props;
+interface Props { id: number; lang?: 'fa' | 'en' }
+const { id, lang = 'fa' } = Astro.props;
+const EN: Record<string, string> = { like: 'Like', love: 'Love it', fire: 'Hot', wow: 'Mind-blowing', haha: 'Funny', sad: 'Sad' };
 ---
-<div class="reactions" data-reactions={id} role="group" aria-label="واکنش شما به این خبر">
+<div class="reactions" data-reactions={id} role="group" aria-label={lang === 'en' ? 'Your reaction to this story' : 'واکنش شما به این خبر'}>
   {REACTIONS.map((r) => (
-    <button type="button" data-react={r.key} aria-pressed="false" title={r.label} aria-label={r.label}>
+    <button type="button" data-react={r.key} aria-pressed="false" title={lang === 'en' ? EN[r.key] : r.label} aria-label={lang === 'en' ? EN[r.key] : r.label}>
       <span class="emo">{r.emoji}</span>
       <b data-count={r.key}></b>
     </button>

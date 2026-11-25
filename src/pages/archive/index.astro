@@ -1,0 +1,11 @@
+---
+import Base from '../../layouts/Base.astro';
+import Archive from '../../components/Archive.astro';
+import { url } from '../../lib/posts';
+---
+<Base title="آرشیو روزها" alternates={{ en: url('en/archive/') }} description="هر روزِ آرشیو خبرهای هوش مصنوعی را باز کنید: تقویمی که نشان می‌دهد هر روز چقدر خبر بود، و «همین روز در ماه‌های قبل».">
+  <div class="container narrow">
+    <header class="page-head"><h1>آرشیو روزها</h1><p>روی هر روز بزنید تا خبرهایش بیاید؛ هرچه رنگ پررنگ‌تر، خبر بیشتر.</p></header>
+    <Archive />
+  </div>
+</Base>

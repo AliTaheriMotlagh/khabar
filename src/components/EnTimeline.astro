@@ -1,0 +1,41 @@
+---
+// The English edition's timeline: days on a rail (Tehran days, as the Persian site), each story at its time.
+import Icon from './Icon.astro';
+import EnCard from './EnCard.astro';
+import { dayKey } from '../lib/posts';
+import { enDate, type EnPost } from '../lib/en';
+interface Props { items: EnPost[]; nextHref?: string | null; prevHref?: string | null; title?: string; eagerFirst?: boolean; topic?: string }
+const { items, nextHref, prevHref, title = 'Latest stories', eagerFirst = false, topic } = Astro.props;
+const days: { day: string; iso: string; items: EnPost[] }[] = [];
+for (const e of items) {
+  const d = dayKey(e.date);
+  if (days.at(-1)?.day !== d) days.push({ day: d, iso: e.date, items: [] });
+  days.at(-1)!.items.push(e);
+}
+---
+<section class="timeline" aria-labelledby="tl-title">
+  <h2 class="tl-title" id="tl-title">{title}</h2>
+  <ol class="tl" data-tl>
+    {
+      days.map((d, di) => (
+        <>
+          <li class="tl-day" data-day={d.day}>
+            <span class="tl-day-pill">
+              <span data-day-label>{enDate(d.iso, { weekday: 'long', month: 'long', day: 'numeric' })}</span>
+              <small>{d.items.length} {d.items.length === 1 ? 'story' : 'stories'}</small>
+            </span>
+          </li>
+          {d.items.map((e, i) => <EnCard e={e} eager={eagerFirst && di === 0 && i < 2} topic={topic} />)}
+        </>
+      ))
+    }
+  </ol>
+  {
+    (nextHref || prevHref) && (
+      <nav class="pager-nav" aria-label="Pages">
+        {prevHref && <a class="btn" href={prevHref} rel="prev"><Icon name="arrow" /> Newer</a>}
+        {nextHref && <a class="btn primary" href={nextHref} rel="next" data-load-more>Older stories <Icon name="arrow-r" /></a>}
+      </nav>
+    )
+  }
+</section>

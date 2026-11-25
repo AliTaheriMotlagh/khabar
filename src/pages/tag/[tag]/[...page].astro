@@ -8,6 +8,8 @@ import { getFeed, getTags, tagHref, faNum } from '../../../lib/posts';
 import { listLd } from '../../../lib/seo';
 import { tagFeed } from '../../../lib/feed';
 import { topicIntro } from '../../../lib/knowledge';
+import { enTopic } from '../../../lib/en';
+import { url } from '../../../lib/posts';
 
 // /tag/<tag>/ is the first page, /tag/<tag>/2/ … the older ones (a big topic holds hundreds of posts).
 export function getStaticPaths() {
@@ -29,7 +31,7 @@ const nth = page > 1 ? ` — صفحه‌ی ${faNum(page)}` : '';
 const intro = page === 1 ? topicIntro(tag!) : null;
 const jsonLd = listLd({ name: `اخبار ${tag}${nth}`, path: at(page), posts: slice, crumbs: [{ name: 'موضوع‌ها', path: 'tags/' }, { name: tag!, path: `tag/${encodeURIComponent(tag!)}/` }] });
 ---
-<Base title={`اخبار ${tag}${nth}`} description={`اخبار ${tag}${nth} به فارسی: ${slice.slice(0, 3).map((p) => p.short).join('، ')} و ${faNum(Math.max(0, posts.length - 3))} خبر دیگر، با تصویر و پیوند به منبع — ${SITE.name}`} image={slice.find((p) => p.cover)?.cover?.src} feed={tagFeed(tag!)} jsonLd={jsonLd} prev={prev} next={next}>
+<Base alternates={page === 1 && enTopic(tag!) ? { en: url(`en/topic/${enTopic(tag!)!.slug}/`) } : {}} title={`اخبار ${tag}${nth}`} description={`اخبار ${tag}${nth} به فارسی: ${slice.slice(0, 3).map((p) => p.short).join('، ')} و ${faNum(Math.max(0, posts.length - 3))} خبر دیگر، با تصویر و پیوند به منبع — ${SITE.name}`} image={slice.find((p) => p.cover)?.cover?.src} feed={tagFeed(tag!)} jsonLd={jsonLd} prev={prev} next={next}>
   <div class="container">
     <header class="page-head with-action">
       <div><h1>اخبار {tag}</h1><p><span data-num>{faNum(posts.length)}</span> خبر{page > 1 && ` · صفحه‌ی ${faNum(page)} از ${faNum(total)}`}</p></div>

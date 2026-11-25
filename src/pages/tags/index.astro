@@ -1,4 +1,5 @@
 ---
+import { url as altUrl } from '../../lib/posts';
 import Base from '../../layouts/Base.astro';
 import Icon from '../../components/Icon.astro';
 import { getFeed, getTags, pic, tagHref, faNum } from '../../lib/posts';
@@ -8,7 +9,7 @@ const topics = getTags().map((t) => {
   return { ...t, latest: items[0], cover: items.find((p) => p.cover)?.cover };
 });
 ---
-<Base title="همه‌ی موضوع‌ها" description="موضوع‌های خبری: هوش مصنوعی، اوپن‌ای‌آی، آنتروپیک، گوگل، امنیت، رباتیک، تراشه، فضا، سلامت و …">
+<Base alternates={{ en: altUrl('en/topics/') }} title="همه‌ی موضوع‌ها" description="موضوع‌های خبری: هوش مصنوعی، اوپن‌ای‌آی، آنتروپیک، گوگل، امنیت، رباتیک، تراشه، فضا، سلامت و …">
   <div class="container">
     <header class="page-head"><h1>موضوع‌ها</h1><p>هر موضوع، یک خط زمانی جدا. موضوع‌هایی را که دنبال می‌کنید، در خانه با «موضوع‌های من» جدا ببینید و برایشان اعلان بگیرید.</p></header>
     <div class="topic-grid">

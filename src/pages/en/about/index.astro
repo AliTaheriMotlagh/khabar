@@ -1,0 +1,18 @@
+---
+import Base from '../../../layouts/Base.astro';
+import { SITE } from '../../../site';
+import { url } from '../../../lib/posts';
+import { EN, getEn } from '../../../lib/en';
+const n = getEn().length;
+const ld = [{ '@context': 'https://schema.org', '@type': 'AboutPage', name: `About ${EN.name}`, inLanguage: 'en', url: `${SITE.url}/en/about/` }];
+---
+<Base lang="en" alternates={{ fa: url('about/') }} title="About" description={`What ${EN.name} is, where its stories come from and how the site is made.`} jsonLd={ld}>
+  <div class="container narrow">
+    <header class="page-head"><h1>About {EN.name}</h1></header>
+    <div class="prose">
+      <p>{EN.name} follows the AI and technology news that <a href={SITE.owner.url} rel="noopener">{SITE.owner.nameLatin}</a> shares on his Telegram channel <a href={`https://t.me/${SITE.channel}`} rel="noopener" referrerpolicy="origin">@{SITE.channel}</a>. The site is Persian first, with a friendly translation of every story; this English edition shows the same {n.toLocaleString('en-US')} stories in the words of their original sources — the post, the article, the paper — with pictures, video and a link to each.</p>
+      <p>Each story says where it stands: <b>Official</b> when the company or maker said it, <b>Reported</b> when a newsroom or analyst did, <b>Unconfirmed</b> for leaks and claims. The <a href={url('en/investigate/')}>explorer</a> follows any company, person or model through the whole archive, and the <a href={url('en/archive/')}>archive</a> opens any day.</p>
+      <p>Headlines, topics and the people and companies named are worked out by a small open model running on GitHub's free runners; nothing is sent to a paid service. The code is open: <a href={SITE.repo} rel="noopener">{SITE.repo.replace('https://', '')}</a>.</p>
+    </div>
+  </div>
+</Base>

@@ -46,7 +46,7 @@ const videos = fs.existsSync('dist/videos') ? fs.readdirSync('dist/videos').filt
 const who = fs.existsSync('dist/who') ? fs.readdirSync('dist/who').filter((d) => fs.existsSync(`dist/who/${d}/index.html`)) : [];
 const story = `/p/${build.latest}/`;
 
-const PAGES = ['/', '/page/2/', story, '/today/', '/videos/', videos[0] && `/videos/${videos[0]}/`, '/tags/', '/who/', who[0] && `/who/${who[0]}/`, '/saved/', '/search/', '/week/', '/glossary/', '/feeds/', '/about/', '/me/', '/stats/', '/offline/'].filter(Boolean);
+const PAGES = ['/', '/page/2/', story, '/today/', '/videos/', videos[0] && `/videos/${videos[0]}/`, '/tags/', '/who/', who[0] && `/who/${who[0]}/`, '/saved/', '/search/', '/week/', '/glossary/', '/feeds/', '/about/', '/me/', '/stats/', '/offline/', '/investigate/?q=OpenAI', '/archive/', '/en/', '/en/page/2/', fs.existsSync(`dist/en/p/${build.latest}`) && `/en/p/${build.latest}/`, '/en/topics/', '/en/investigate/?q=NVIDIA&vs=AMD', '/en/archive/', '/en/videos/', '/en/about/'].filter(Boolean);
 for (const path of PAGES) {
   await check(`page ${path} opens without a script error`, async () => {
     const { p, errors } = await page(path);
@@ -61,6 +61,18 @@ await check('home: the timeline, the stories circle, a story card links to its p
   assert.ok((await p.locator('.tl-item').count()) > 10, 'timeline items');
   const href = await p.locator('.tl-item a[href*="/p/"]').first().getAttribute('href');
   assert.match(href ?? '', /\/p\/\d+\//);
+  await p.close();
+});
+
+await check('English edition: lang, twin links, the explorer draws', async () => {
+  const { p, errors } = await page('/en/');
+  assert.equal(await p.getAttribute('html', 'lang'), 'en');
+  assert.equal(await p.getAttribute('html', 'dir'), 'ltr');
+  assert.equal(await p.locator('link[rel="alternate"][hreflang="fa"]').count(), 1);
+  assert.ok((await p.locator('.tl-item a[href*="/en/p/"]').count()) > 5, 'English story cards');
+  await p.goto(`${ORIGIN}/investigate/?q=OpenAI`, { waitUntil: 'domcontentloaded' });
+  await p.waitForSelector('.iv-chart rect', { timeout: 8000 });
+  assert.deepEqual(errors, []);
   await p.close();
 });
 

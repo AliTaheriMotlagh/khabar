@@ -1,0 +1,42 @@
+---
+// Mehrzad's YouTube episodes for the English edition: the episodes are in Persian, their titles and chapters in English.
+import Base from '../../../layouts/Base.astro';
+import Icon from '../../../components/Icon.astro';
+import AdSlot from '../../../components/AdSlot.astro';
+import { SITE } from '../../../site';
+import { pic, url } from '../../../lib/posts';
+import { channelUrl, getVideos } from '../../../lib/videos';
+import { enDate } from '../../../lib/en';
+const videos = getVideos();
+const mins = (d?: number | string) => (d ? `${Math.round(Number(d) / 60)} min` : '');
+const ld = [{
+  '@context': 'https://schema.org', '@type': 'CollectionPage', name: `${SITE.owner.nameLatin}'s videos`, inLanguage: 'en', url: `${SITE.url}/en/videos/`,
+  mainEntity: { '@type': 'ItemList', itemListElement: videos.slice(0, 30).map((v, i) => ({ '@type': 'ListItem', position: i + 1, url: v.youtube, name: v.title })) },
+}];
+---
+<Base lang="en" alternates={{ fa: url('videos/') }} title={`${SITE.owner.nameLatin}'s videos`} description={`Every episode of ${SITE.owner.nameLatin}'s Persian YouTube series on AI — papers, models, agents, robotics and interviews — with chapters.`} jsonLd={ld}>
+  <div class="container">
+    <header class="page-head"><h1>{SITE.owner.nameLatin}'s videos</h1><p>{videos.length} episodes, spoken in Persian. <a href={channelUrl()} target="_blank" rel="noopener">The YouTube channel <Icon name="external" /></a></p></header>
+    <AdSlot slot="video" />
+    <ol class="en-videos">
+      {videos.map((v) => (
+        <li class="en-video">
+          <a class="en-video-thumb" href={v.youtube} target="_blank" rel="noopener">
+            <img {...pic(v.thumb, 'small')} alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer" width="320" height="180" />
+            {v.duration && <span class="vs-chip">{mins(v.duration)}</span>}
+          </a>
+          <div>
+            <h2><a href={v.youtube} target="_blank" rel="noopener">{v.title.replace(/\s*\[Persian\]\s*$/i, '')}</a></h2>
+            <p class="muted">{v.date && enDate(v.date)}{v.live ? ' · live' : ''} · <a href={v.href} hreflang="fa" lang="fa">خلاصه‌ی فارسی</a></p>
+            {v.chapters && v.chapters.length > 0 && (
+              <details class="en-chapters">
+                <summary>{v.chapters.length} chapters</summary>
+                <ol>{v.chapters.map((c) => <li><a href={`${v.youtube}&t=${c.t}s`} target="_blank" rel="noopener"><code>{Math.floor(c.t / 60)}:{String(c.t % 60).padStart(2, '0')}</code> {c.title}</a></li>)}</ol>
+              </details>
+            )}
+          </div>
+        </li>
+      ))}
+    </ol>
+  </div>
+</Base>

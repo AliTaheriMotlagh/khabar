@@ -1,0 +1,11 @@
+---
+import Base from '../../layouts/Base.astro';
+import Investigate from '../../components/Investigate.astro';
+import { url } from '../../lib/posts';
+---
+<Base title="کاوشگر خبر" alternates={{ en: url('en/investigate/') }} description="هر شرکت، آدم، مدل یا موضوعی را در همه‌ی خبرها دنبال کنید: هفته به هفته، از اولین شایعه تا اعلام رسمی، با چه کسانی و از کدام منبع — و دو موضوع را کنار هم مقایسه کنید.">
+  <div class="container narrow">
+    <header class="page-head"><h1>کاوشگر خبر</h1><p>یک اسم بنویسید و کل ماجرایش را ببینید: کی شروع شد، کی اوج گرفت، کی رسمی شد و با چه کسانی آمد.</p></header>
+    <Investigate />
+  </div>
+</Base>

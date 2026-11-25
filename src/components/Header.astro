@@ -2,17 +2,52 @@
 import Icon from './Icon.astro';
 import { SITE } from '../site';
 import { url } from '../lib/posts';
+interface Props { lang?: 'fa' | 'en'; switchHref?: string }
+const { lang = 'fa', switchHref } = Astro.props;
+const en = lang === 'en';
 const path = Astro.url.pathname;
 const here = (p: string) => (p === url() ? path === p || /\/page\/\d+\/$/.test(path) : path.startsWith(p)) ? 'page' : undefined;
+const navEn = [
+  { href: url('en/'), label: 'Home' },
+  { href: url('en/topics/'), label: 'Topics' },
+  { href: url('en/archive/'), label: 'Archive' },
+  { href: url('en/investigate/'), label: 'Investigate' },
+  { href: url('en/videos/'), label: 'Videos' },
+  { href: url('saved/'), label: 'Saved' },
+];
+const homeEn = url('en/');
+const hereEn = (p: string) => (p === homeEn ? path === p || /\/en\/page\/\d+\/$/.test(path) : path.startsWith(p)) ? 'page' : undefined;
 const nav = [
   { href: url(), label: 'خانه' },
   { href: url('today/'), label: 'استوری خبرها' },
   { href: url('tags/'), label: 'موضوع‌ها' },
   { href: url('models/'), label: 'مدل‌ها' },
+  { href: url('investigate/'), label: 'کاوش' },
   { href: url('videos/'), label: 'ویدیوها' },
   { href: url('saved/'), label: 'ذخیره‌ها' },
 ];
 ---
+{en ? (
+<header class="site-header" data-header>
+  <div class="container bar">
+    <a class="brand" href={homeEn} aria-label={`${SITE.nameLatin} — home`}>
+      <span class="logo-mark" aria-hidden="true"></span>
+      <span class="brand-text"><b>{SITE.nameLatin}</b><small>AI news, from the source</small></span>
+    </a>
+    <nav class="main-nav" aria-label="Main">
+      {navEn.map((n) => <a href={n.href} aria-current={hereEn(n.href)}>{n.label}</a>)}
+    </nav>
+    <div class="tools">
+      <a class="lang-switch" href={switchHref ?? url()} hreflang="fa" lang="fa" data-lang-switch="fa" title="نسخه‌ی فارسی">فا</a>
+      <a class="icon-btn" href={url('en/investigate/')} aria-label="Search" title="Search (/)"><Icon name="search" /></a>
+      <button class="icon-btn hide-sm" type="button" data-theme-toggle aria-label="Light / dark" title="Light / dark (t)">
+        <Icon name="moon" class="if-light" /><Icon name="sun" class="if-dark" />
+      </button>
+      <button class="icon-btn" type="button" data-open-settings aria-label="Settings" title="Settings"><Icon name="settings" /></button>
+    </div>
+  </div>
+</header>
+) : (
 <header class="site-header" data-header>
   <div class="container bar">
     <a class="brand" href={url()} aria-label={`${SITE.name} — صفحه‌ی اصلی`}>
@@ -24,6 +59,7 @@ const nav = [
     </nav>
     <div class="tools">
       <button class="icon-btn" type="button" data-sync hidden aria-label="به‌روزرسانی از کانال" title="به‌روزرسانی از کانال"><Icon name="refresh" /></button>
+      <a class="lang-switch" href={switchHref ?? url('en/')} hreflang="en" lang="en" data-lang-switch="en" title="English edition">EN</a>
       <a class="icon-btn" href={url('search/')} aria-label="جستجو" title="جستجو (/)"><Icon name="search" /></a>
       <button class="icon-btn" type="button" data-open-chat aria-label="گفتگوی زنده" title="گفتگوی زنده">
         <Icon name="chat" />
@@ -41,7 +77,17 @@ const nav = [
     </div>
   </div>
 </header>
+)}
 
+{en ? (
+<nav class="tabbar" aria-label="Bottom">
+  <a href={homeEn} aria-current={hereEn(homeEn)}><Icon name="home" /><span>Home</span></a>
+  <a href={url('en/topics/')} aria-current={hereEn(url('en/topics/'))}><Icon name="hash" /><span>Topics</span></a>
+  <a class="tab-today" href={url('en/investigate/')} aria-current={hereEn(url('en/investigate/'))}><Icon name="search" /><span>Investigate</span></a>
+  <a href={url('en/archive/')} aria-current={hereEn(url('en/archive/'))}><Icon name="calendar" /><span>Archive</span></a>
+  <a href={url('saved/')}><Icon name="bookmark" /><span>Saved</span></a>
+</nav>
+) : (
 <nav class="tabbar" aria-label="ناوبری پایین">
   <a href={url()} aria-current={here(url())}><Icon name="home" /><span>خانه</span></a>
   <a href={url('tags/')} aria-current={here(url('tags/'))}><Icon name="hash" /><span>موضوع‌ها</span></a>
@@ -49,3 +95,4 @@ const nav = [
   <a href={url('saved/')} aria-current={here(url('saved/'))}><Icon name="bookmark" /><span>ذخیره‌ها</span></a>
   <a href={url('me/')} aria-current={here(url('me/'))}><Icon name="user" /><span>من</span></a>
 </nav>
+)}

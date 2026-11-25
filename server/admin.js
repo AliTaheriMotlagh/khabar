@@ -25,7 +25,7 @@ function authorized(request) {
 }
 
 /** 401 for a wrong token (and 429 after too many), null when the caller is the owner. */
-async function guard(request) {
+export async function guard(request) {
   if (!configured() || !process.env.ADMIN_TOKEN) return fail(request, 501, 'not configured');
   if (authorized(request)) return null;
   if (await limited(request, ['admin-fail', 10, 3600])) return fail(request, 429, 'too many tries');

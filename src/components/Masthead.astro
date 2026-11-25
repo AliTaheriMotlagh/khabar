@@ -1,0 +1,55 @@
+---
+// The home page's banner: the site's name over a slow aurora, a live line (when the newest story came in), today's
+// numbers (stories today and this week, sources this week, readers today — the last filled live by social.ts), the
+// ways in (stories, explorer, archive, the other language) and the newest headline. No image: CSS only.
+import Icon from './Icon.astro';
+import { SITE } from '../site';
+import { dayKey, faNum, getStories, url } from '../lib/posts';
+import { publisherOf } from '../lib/source';
+import { EN, getEn } from '../lib/en';
+interface Props { lang?: 'fa' | 'en' }
+const en = Astro.props.lang === 'en';
+const stories = getStories();
+const newest = stories[0];
+const today = newest ? stories.filter((p) => dayKey(p.date) === dayKey(newest.date)).length : 0;
+const weekAgo = newest ? Date.parse(newest.date) - 7 * 864e5 : 0;
+const week = stories.filter((p) => Date.parse(p.date) > weekAgo);
+const sources = new Set(week.map((p) => p.source?.author?.handle || publisherOf(p.source?.url ?? '')).filter(Boolean)).size;
+const n = (x: number) => (en ? x.toLocaleString('en-US') : faNum(x));
+const top = en ? getEn()[0] : newest;
+const topTitle = en ? (top as ReturnType<typeof getEn>[number] | undefined)?.title : newest?.article.title;
+const topHref = top ? (top as { href: string }).href : null;
+---
+<section class="masthead" aria-labelledby="mh-title">
+  <div>
+    <p class="mh-kicker"><span class="live-dot" aria-hidden="true"></span>{en ? 'Live' : 'زنده'} · {en ? 'updated' : 'به‌روز'} {newest && <time datetime={newest.date} data-f="rel"></time>}</p>
+    <h1 class="mh-title" id="mh-title">{en ? EN.name : SITE.name}{!en && <small lang="en">{SITE.nameLatin}</small>}</h1>
+    <p class="mh-tag">{en ? 'AI and tech news as it breaks — every story with its original source, where it stands (official, reported or unconfirmed), and the whole history behind it.' : 'تازه‌ترین خبرهای هوش مصنوعی و فناوری، همان لحظه که می‌رسند — با ترجمه‌ی خودمونی داش غلام، منبع اصلی، وضعیت خبر (رسمی، گزارش یا تأییدنشده) و کل ماجرای پشتش.'}</p>
+  </div>
+  <dl class="mh-stats">
+    <div><dt>{en ? 'Today' : 'امروز'}</dt><dd>{n(today)}</dd></div>
+    <div><dt>{en ? 'This week' : 'این هفته'}</dt><dd>{n(week.length)}</dd></div>
+    <div><dt>{en ? 'Sources this week' : 'منبع این هفته'}</dt><dd>{n(sources)}</dd></div>
+    <div><dt>{en ? 'Readers today' : 'خواننده‌ی امروز'}</dt><dd data-today>…</dd></div>
+  </dl>
+  <nav class="mh-links" aria-label={en ? 'Ways in' : 'میان‌برها'}>
+    {
+      en ? (
+        <>
+          <a class="is-main" href={url('en/investigate/')}><Icon name="compass" /> News explorer</a>
+          <a href={url('en/archive/')}><Icon name="calendar" /> Archive by day</a>
+          <a href={url('en/videos/')}><Icon name="youtube" /> Mehrzad's videos</a>
+          <a href={url()} hreflang="fa" lang="fa" data-lang-switch="fa"><Icon name="globe" /> فارسی</a>
+        </>
+      ) : (
+        <>
+          <a class="is-main" href={url('today/')}><Icon name="stories" /> استوری خبرها</a>
+          <a href={url('investigate/')}><Icon name="compass" /> کاوشگر خبر</a>
+          <a href={url('archive/')}><Icon name="calendar" /> آرشیو روزها</a>
+          <a href={url('en/')} hreflang="en" lang="en" data-lang-switch="en"><Icon name="globe" /> English</a>
+        </>
+      )
+    }
+  </nav>
+  {topTitle && topHref && <p class="mh-ticker"><b>{en ? 'LATEST' : 'تازه'}</b><a href={topHref}>{topTitle}</a></p>}
+</section>

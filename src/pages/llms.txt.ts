@@ -3,6 +3,7 @@
 import { SITE } from '../site';
 import { abs, getFeed, getTags } from '../lib/posts';
 import { getVideos, VIDEOS_TITLE } from '../lib/videos';
+import { getEn } from '../lib/en';
 
 export function GET() {
   const stories = getFeed().filter((p) => p.kind !== 'digest').slice(0, 60);
@@ -20,13 +21,17 @@ export function GET() {
     `- [Most read this week](${abs('week/')})`,
     `- [Glossary of AI terms in Persian](${abs('glossary/')})`,
     `- [People and companies](${abs('who/')})`,
+    `- [News explorer: follow a company, person or model through every story](${abs('investigate/')})`,
+    `- [Archive by day](${abs('archive/')})`,
     `- [About](${abs('about/')})`,
+    `- [English edition: the same stories in their sources' own words](${abs('en/')}) (each story at /en/p/<id>/)`,
     '',
     '## Feeds',
     `- [Every post (RSS)](${abs('rss.xml')})`,
     `- [Stories only (RSS)](${abs('rss/news.xml')})`,
     `- [Daily summary (RSS)](${abs('rss/daily.xml')})`,
     `- [Videos (RSS)](${abs('rss/videos.xml')})`,
+    `- [English edition (RSS)](${abs('en/rss.xml')})`,
     `- [All feeds](${abs('feeds/')})`,
     '',
     '## Topics',
@@ -34,6 +39,9 @@ export function GET() {
     '',
     '## Newest stories',
     ...stories.map((p) => `- [${p.article.title}](${abs(`p/${p.id}/`)}) (${p.date.slice(0, 10)}${p.article.tags[0] ? `, ${p.article.tags[0]}` : ''})`),
+    '',
+    '## Newest stories in English',
+    ...getEn().slice(0, 30).map((e) => `- [${e.title}](${abs(`en/p/${e.id}/`)}) (${e.date.slice(0, 10)})`),
     '',
     '## Newest videos',
     ...getVideos().slice(0, 10).map((v) => `- [${v.headline}](${abs(`videos/${v.id}/`)}) — ${v.title}`),

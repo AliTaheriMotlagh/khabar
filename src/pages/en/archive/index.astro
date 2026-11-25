@@ -1,0 +1,11 @@
+---
+import Base from '../../../layouts/Base.astro';
+import Archive from '../../../components/Archive.astro';
+import { url } from '../../../lib/posts';
+---
+<Base lang="en" title="Archive by day" alternates={{ fa: url('archive/') }} description="Open any day of the AI news archive: a calendar shaded by how much happened, and the same day in earlier months.">
+  <div class="container narrow">
+    <header class="page-head"><h1>Archive by day</h1><p>Tap a day to see its stories; the darker the day, the more happened.</p></header>
+    <Archive lang="en" />
+  </div>
+</Base>

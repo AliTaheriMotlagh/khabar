@@ -12,7 +12,72 @@ const story = seg('story', [{ v: 'unseen', l: 'فقط ندیده‌ها' }, { v:
 const listen = seg('listen', [{ v: 'all', l: 'همه‌ی متن' }, { v: 'lead', l: 'تیتر و خلاصه' }, { v: 'last', l: 'تیتر و بخش آخر' }, { v: 'title', l: 'فقط تیتر' }]);
 const order = seg('order', [{ v: 'new', l: 'تازه‌ترین اول' }, { v: 'old', l: 'قدیمی‌ترین اول' }, { v: 'important', l: 'مهم‌ترین اول' }]);
 const BASE = import.meta.env.BASE_URL.replace(/\/$/, '');
+interface Props { lang?: 'fa' | 'en' }
+const { lang = 'fa' } = Astro.props;
+// The English edition's sheet: the same settings (names and values) for what it has — look, text, reading.
+const sizesEn = [{ v: 's', l: 'Small' }, { v: 'm', l: 'Normal' }, { v: 'l', l: 'Large' }, { v: 'xl', l: 'Huge' }];
 ---
+{lang === 'en' ? (
+<dialog class="sheet settings-sheet" id="settings" aria-labelledby="settings-title">
+  <div class="sheet-head">
+    <h2 id="settings-title"><Icon name="settings" /> Settings</h2>
+    <button class="icon-btn" type="button" data-close aria-label="Close"><Icon name="x" /></button>
+  </div>
+  <form class="sheet-body set-body" data-settings-form>
+    <div class="set-preview" aria-label="Text preview">
+      <small>Preview</small>
+      <p class="sample">NVIDIA unveiled its next generation of chips; stories are shown at this size and line spacing.</p>
+    </div>
+    <section class="set-group" aria-labelledby="set-look">
+      <h3 id="set-look"><Icon name="sun" /> Look and text</h3>
+      <fieldset class="set-row set-stack">
+        <legend>Theme</legend>
+        <div class="set-tiles">
+          {[{ v: 'auto', l: 'Auto' }, { v: 'light', l: 'Light' }, { v: 'dark', l: 'Dark' }].map((c) => (
+            <label class="tile"><input type="radio" name="theme" value={c.v} /><span class="tile-box"><i class={`sw sw-${c.v}`} aria-hidden="true"><b></b><b></b><b></b></i><span>{c.l}</span></span></label>
+          ))}
+        </div>
+      </fieldset>
+      <fieldset class="set-row set-stack">
+        <legend>Text size</legend>
+        <div class="seg seg-fill set-sizes">
+          {sizesEn.map((c) => <label><input type="radio" name="size" value={c.v} /><span><b class={`aa aa-${c.v}`} aria-hidden="true">A</b><small>{c.l}</small></span></label>)}
+        </div>
+      </fieldset>
+      <fieldset class="set-row set-stack">
+        <legend>Line spacing</legend>
+        <div class="seg seg-fill">
+          {[{ v: 's', l: 'Tight' }, { v: 'm', l: 'Normal' }, { v: 'l', l: 'Airy' }].map((c) => <label><input type="radio" name="spacing" value={c.v} /><span>{c.l}</span></label>)}
+        </div>
+      </fieldset>
+    </section>
+    <section class="set-group" aria-labelledby="set-read">
+      <h3 id="set-read"><Icon name="book" /> Reading</h3>
+      <fieldset class="set-row set-stack">
+        <legend>Story list</legend>
+        <div class="set-tiles two">
+          <label class="tile"><input type="radio" name="view" value="cards" /><span class="tile-box"><Icon name="cards" /><span>Cards with pictures</span></span></label>
+          <label class="tile"><input type="radio" name="view" value="list" /><span class="tile-box"><Icon name="list" /><span>Compact list</span></span></label>
+        </div>
+      </fieldset>
+      <label class="set-row set-switch">
+        <span class="set-text"><b>Reading mode</b><small>Only the story on a story page, nothing around it</small></span>
+        <input type="checkbox" role="switch" name="focus" data-on="on" data-off="off" />
+        <span class="switch" aria-hidden="true"></span>
+      </label>
+      <label class="set-row set-switch">
+        <span class="set-text"><b>Data saver</b><small>Pictures and video load only when tapped</small></span>
+        <input type="checkbox" role="switch" name="media" data-on="tap" data-off="show" />
+        <span class="switch" aria-hidden="true"></span>
+      </label>
+    </section>
+    <div class="sheet-foot set-foot">
+      <a class="btn" href={`${BASE}/`} hreflang="fa" lang="fa" data-lang-switch="fa">فارسی</a>
+      <button class="btn primary" type="button" data-close>Done</button>
+    </div>
+  </form>
+</dialog>
+) : (
 <dialog class="sheet settings-sheet" id="settings" aria-labelledby="settings-title">
   <div class="sheet-head">
     <h2 id="settings-title"><Icon name="settings" /> تنظیمات</h2>
@@ -147,8 +212,9 @@ const BASE = import.meta.env.BASE_URL.replace(/\/$/, '');
     </div>
   </form>
 </dialog>
+)}
 
-<dialog class="lightbox" id="lightbox" aria-label="نمایش تصویر">
-  <button class="icon-btn" type="button" data-close aria-label="بستن"><Icon name="x" /></button>
+<dialog class="lightbox" id="lightbox" aria-label={lang === 'en' ? 'Picture' : 'نمایش تصویر'}>
+  <button class="icon-btn" type="button" data-close aria-label={lang === 'en' ? 'Close' : 'بستن'}><Icon name="x" /></button>
   <img alt="" referrerpolicy="no-referrer" data-lightbox-img />
 </dialog>

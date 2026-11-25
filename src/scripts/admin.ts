@@ -32,6 +32,7 @@ const EVENT_NAMES: Record<string, string> = {
   share: 'اشتراک‌گذاری', save: 'ذخیره', 'video-made-v': 'ساخت ویدیو (عمودی)', 'video-made-h': 'ساخت ویدیو (افقی)', 'video-made-s': 'ساخت ویدیو (مربع)',
   'video-shared': 'فرستادن ویدیو', brief60: '«۶۰ ثانیه خبر امروز»', 'quiz-right': 'پاسخ درست به پرسش', 'quiz-wrong': 'پاسخ نادرست به پرسش',
   'push-on': 'روشن کردن اعلان', install: 'نصب اپ', term: 'باز کردن توضیح یک اصطلاح', simple: 'باز کردن «به زبان ساده»',
+  'ad-view': 'دیده شدن تبلیغ', 'ad-click': 'کلیک روی تبلیغ', 'lang-en': 'رفتن به نسخه‌ی انگلیسی', investigate: 'کاوش در خبرها',
 };
 const MODES: Record<string, string> = { all: 'همه‌ی خبرها', topics: 'موضوع‌های دنبال‌شده', daily: 'فقط خلاصه‌ی روزانه' };
 const REACT: Record<string, string> = { like: '👍', love: '❤️', fire: '🔥', wow: '😮', haha: '😂', sad: '😢' };
@@ -265,8 +266,102 @@ async function aiLine() {
   }
 }
 
+// ---------- the ad slot (server/ads.js): a form, a preview, saved for every page within 5 minutes ----------
+type AdConfig = {
+  enabled: boolean; provider: 'house' | 'adsense' | 'html'; label: string; labelEn: string; slots: string[]; langs: string[];
+  house: { title: string; text: string; cta: string; image: string; href: string }; adsense: { client: string; slot: string };
+  html: string; height: number; adsTxt: string; updated?: string;
+};
+async function adsApi<T>(init?: { method: string; body: unknown }): Promise<T> {
+  const res = await fetch(`${SITE.api}/api/ads/${init ? '' : '?admin=1'}`, {
+    method: init?.method ?? 'GET',
+    headers: { Authorization: `Bearer ${token}`, ...(init && { 'Content-Type': 'application/json' }) },
+    body: init ? JSON.stringify(init.body) : undefined,
+    cache: 'no-store',
+  });
+  if (!res.ok) throw Object.assign(new Error(String(res.status)), { status: res.status });
+  return res.json();
+}
+function adForm(): HTMLFormElement | null {
+  return $<HTMLFormElement>('[data-adm-ads]');
+}
+function fillAds(c: AdConfig) {
+  const f = adForm();
+  if (!f) return;
+  const set = (name: string, v: string) => { const el = f.elements.namedItem(name) as HTMLInputElement | null; if (el) el.value = v; };
+  (f.elements.namedItem('enabled') as HTMLInputElement).checked = c.enabled;
+  for (const r of f.querySelectorAll<HTMLInputElement>('[name=provider]')) r.checked = r.value === c.provider;
+  for (const b of f.querySelectorAll<HTMLInputElement>('[name=slots]')) b.checked = c.slots.includes(b.value);
+  for (const b of f.querySelectorAll<HTMLInputElement>('[name=langs]')) b.checked = c.langs.includes(b.value);
+  set('label', c.label); set('labelEn', c.labelEn); set('title', c.house.title); set('text', c.house.text); set('cta', c.house.cta);
+  set('image', c.house.image); set('href', c.house.href); set('client', c.adsense.client); set('slot', c.adsense.slot); set('html', c.html);
+  set('height', String(c.height)); set('adsTxt', c.adsTxt);
+  showProvider();
+  previewAd();
+  const note = $('[data-adm-ads-note]');
+  if (note) note.textContent = c.updated ? `آخرین ذخیره: ${relTime(c.updated)}` : 'هنوز تنظیم نشده.';
+}
+function readAds(): AdConfig {
+  const f = adForm()!;
+  const v = (name: string) => ((f.elements.namedItem(name) as HTMLInputElement | null)?.value ?? '').trim();
+  const all = (name: string) => [...f.querySelectorAll<HTMLInputElement>(`[name=${name}]:checked`)].map((b) => b.value);
+  return {
+    enabled: (f.elements.namedItem('enabled') as HTMLInputElement).checked,
+    provider: (all('provider')[0] as AdConfig['provider']) ?? 'house',
+    label: v('label'), labelEn: v('labelEn'), slots: all('slots'), langs: all('langs'),
+    house: { title: v('title'), text: v('text'), cta: v('cta'), image: v('image'), href: v('href') },
+    adsense: { client: v('client'), slot: v('slot') }, html: v('html'), height: Number(v('height')) || 120, adsTxt: v('adsTxt'),
+  };
+}
+function showProvider() {
+  const p = readAds().provider;
+  for (const el of document.querySelectorAll<HTMLElement>('[data-ad-for]')) el.hidden = el.dataset.adFor !== p;
+}
+function previewAd() {
+  const box = $('[data-adm-ad-preview]');
+  if (!box) return;
+  const c = readAds();
+  if (c.provider === 'house') {
+    box.innerHTML = `<span class="ad-label">${esc(c.label || 'تبلیغ')}</span><a class="ad-house" href="${esc(c.house.href || '#')}" target="_blank" rel="noopener" dir="auto">${c.house.image ? `<img src="${esc(c.house.image)}" alt="" />` : ''}<span class="ad-body"><b>${esc(c.house.title || 'عنوان تبلیغ')}</b><span>${esc(c.house.text)}</span></span>${c.house.cta ? `<span class="ad-cta">${esc(c.house.cta)}</span>` : ''}</a>`;
+  } else if (c.provider === 'html') {
+    box.innerHTML = `<span class="ad-label">${esc(c.label || 'تبلیغ')}</span>`;
+    const fr = document.createElement('iframe');
+    fr.className = 'ad-frame';
+    fr.height = String(c.height);
+    fr.setAttribute('sandbox', 'allow-scripts allow-popups allow-popups-to-escape-sandbox');
+    fr.srcdoc = `<!doctype html><meta charset="utf-8"><base target="_blank">${c.html}`;
+    box.append(fr);
+  } else box.innerHTML = `<span class="ad-label">${esc(c.label || 'تبلیغ')}</span><p class="muted">AdSense فقط روی خود سایت (blog.remixt.app، پس از تأیید گوگل) نمایش داده می‌شود: ${esc(c.adsense.client || '—')} / ${esc(c.adsense.slot || '—')}</p>`;
+}
+async function loadAds() {
+  try {
+    const { config } = await adsApi<{ config: AdConfig }>();
+    fillAds(config);
+  } catch {}
+}
+function initAdsForm() {
+  const f = adForm();
+  if (!f) return;
+  f.addEventListener('input', () => (showProvider(), previewAd()));
+  f.addEventListener('submit', async (e) => {
+    e.preventDefault();
+    const btn = f.querySelector<HTMLButtonElement>('[type=submit]')!;
+    btn.disabled = true;
+    try {
+      const { config } = await adsApi<{ config: AdConfig }>({ method: 'POST', body: { config: readAds() } });
+      fillAds(config);
+      toast(config.enabled ? 'ذخیره شد؛ تا ۵ دقیقه روی همه‌ی صفحه‌ها می‌آید' : 'ذخیره شد؛ تبلیغ خاموش است');
+    } catch (err) {
+      toast(why(err));
+    } finally {
+      btn.disabled = false;
+    }
+  });
+}
+
 async function load() {
   const data = await api<Data>();
+  void loadAds();
   $('[data-adm-login]')!.hidden = true;
   $('[data-adm]')!.hidden = false;
   $('[data-adm-tools]')!.hidden = false;
@@ -302,6 +397,7 @@ export async function initAdmin() {
     }
   });
   $('[data-adm-logout]')!.addEventListener('click', () => (forget(), signedOut()));
+  initAdsForm();
   $('[data-adm-refresh]')!.addEventListener('click', () => load().catch((err) => toast(why(err))));
   document.addEventListener('click', async (e) => {
     const b = (e.target as Element).closest<HTMLButtonElement>('[data-adm-act]');

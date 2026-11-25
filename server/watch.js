@@ -79,11 +79,7 @@ async function news(now = Date.now()) {
   return null;
 }
 
-async function handle(request) {
-  const secret = process.env.WATCH_SECRET;
-  if (!secret || !githubToken()) return fail(request, 501, 'not configured');
-  const key = new URL(request.url).searchParams.get('key') ?? request.headers.get('authorization')?.replace(/^Bearer /, '');
-  if (key !== secret) return fail(request, 401, 'unauthorized');
+async function check(request) {
   try {
     const reason = await news();
     if (reason) {
@@ -94,6 +90,41 @@ async function handle(request) {
   } catch (e) {
     return fail(request, 502, e.message);
   }
+}
+
+// Without the key: a "tick" from an open page (src/scripts/social.ts), so the site keeps up with the channel even when
+// the external cron is down (it called the old Vercel address for days after that was switched off). The answer is
+// shared for TICK seconds — Cloudflare's cache in this data centre, else this instance's memory — so however many
+// readers tick, the channel and GitHub are asked about once a minute.
+const TICK = Number(process.env.WATCH_TICK || 60);
+let last = { at: 0, body: null };
+async function tick(request) {
+  const cache = globalThis.caches?.default;
+  const key = new Request(new URL('/api/watch/?tick=1', request.url).href);
+  if (cache) {
+    const hit = await cache.match(key).catch(() => null);
+    if (hit) return hit;
+  } else if (Date.now() - last.at < TICK * 1000) return json(request, { ...last.body, shared: true });
+  const res = await check(request);
+  const body = await res.clone().json().catch(() => ({}));
+  last = { at: Date.now(), body };
+  if (cache) {
+    const keep = new Response(JSON.stringify({ ...body, shared: true }), {
+      headers: { 'Content-Type': 'application/json; charset=utf-8', 'Cache-Control': `public, max-age=${TICK}` },
+    });
+    await cache.put(key, keep).catch(() => {});
+  }
+  return res;
+}
+
+async function handle(request) {
+  const secret = process.env.WATCH_SECRET;
+  if (!githubToken()) return fail(request, 501, 'not configured');
+  const key = new URL(request.url).searchParams.get('key') ?? request.headers.get('authorization')?.replace(/^Bearer /, '');
+  if (!key) return tick(request);
+  if (!secret) return fail(request, 501, 'not configured');
+  if (key !== secret) return fail(request, 401, 'unauthorized');
+  return check(request);
 }
 
 export const OPTIONS = preflight;

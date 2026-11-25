@@ -1,0 +1,52 @@
+---
+// One story on the English edition's timeline (the Persian StoryCard's look, its text from the source: src/lib/en.ts).
+import Icon from './Icon.astro';
+import Media from './Media.astro';
+import { pic, picture } from '../lib/posts';
+import { enTime, enTopicHref, type EnPost } from '../lib/en';
+interface Props { e: EnPost; eager?: boolean; topic?: string }
+const { e, eager = false, topic } = Astro.props;
+const p = e.post;
+const t = (topic && e.topics.find((x) => x.slug === topic)) || e.topics[0];
+const thumb = p.cover ? pic(p.cover.src || p.cover.poster, 'small') : null;
+const rumor = e.status?.cls === 'is-rumor';
+---
+<li class="tl-item" data-id={e.id} data-kind="story" data-tags={p.article.tags.join(',')} data-type={p.type ?? undefined}>
+  <span class="tl-dot" aria-hidden="true"></span>
+  <time class="tl-time" datetime={e.date}>{enTime(e.date).replace(/\s\w+$/, '')}</time>
+  <article class="story" aria-labelledby={`t-${e.id}`}>
+    {thumb && <img class="row-thumb" {...thumb} alt="" width="72" height="72" loading="lazy" decoding="async" referrerpolicy="no-referrer" />}
+    <div class="story-main">
+      <div class="story-head">
+        {t && <a class="kicker" href={enTopicHref(t.slug)}>{t.en}</a>}
+        {e.publisher && <span class="src-name">{e.publisher}</span>}
+        <time class="story-time" datetime={e.date} data-f="rel" data-lang="en">{enTime(e.date)}</time>
+      </div>
+      <h3 id={`t-${e.id}`}>
+        {rumor && <span class={`status ${e.status!.cls}`} title={e.status!.title}>{e.status!.label}</span>}
+        {(p.importance ?? 0) >= 4 && <span class="must-dot">Key</span>}
+        <a href={e.href}>{e.title}</a>
+      </h3>
+      {e.excerpt && e.excerpt !== e.title && <p class="excerpt">{e.excerpt}</p>}
+    </div>
+    {p.gallery.length > 0 ? (
+      <Media items={p.gallery} alt={e.title} href={e.href} fallbackHref={p.url} limit={1} size="small" eager={eager} maxRatio={0.75} lang="en" />
+    ) : (
+      p.cover && (
+        <a class="story-cover" href={e.href} tabindex="-1" aria-hidden="true">
+          <img {...thumb} alt="" loading={eager ? 'eager' : 'lazy'} decoding="async" referrerpolicy="no-referrer" data-fallback={p.url} />
+        </a>
+      )
+    )}
+    <footer class="story-foot">
+      <a class="meta-btn" href={e.faHref} hreflang="fa" lang="fa" title="Read it in Persian">فا</a>
+      <span class="meta-btn views" data-views={e.id} title="Views (each reader once a day)" hidden><Icon name="eye" /><span></span></span>
+      <div class="actions">
+        <button class="icon-btn save-btn" type="button" aria-pressed="false" aria-label="Save for later" data-save data-id={e.id} data-title={e.title} data-href={e.href} data-cover={p.cover ? picture(p.cover.src || p.cover.poster, 'small').src : ''} data-date={e.date}>
+          <Icon name="bookmark" class="off" /><Icon name="bookmark-fill" class="on" />
+        </button>
+        <button class="icon-btn" type="button" data-share data-url={e.href} data-title={e.title} aria-label="Share"><Icon name="share" /></button>
+      </div>
+    </footer>
+  </article>
+</li>

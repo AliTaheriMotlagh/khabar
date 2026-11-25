@@ -19,7 +19,13 @@ type RawVideo = {
   post?: number;
   /** From the video's subtitles by the model (pipeline/videos.py summarize, PLAN.md P2-3): a Persian summary, key
    *  points, chapter titles in Persian with their times, and a category for the shelves. */
-  ai?: { summary?: string; points?: string[]; chapters?: { t: number; title: string }[]; category?: string; title?: string; model?: string; from?: 'subtitles' | 'description'; v?: number } | null;
+  ai?: {
+    summary?: string; points?: string[]; chapters?: { t: number; title: string; about?: string }[]; category?: string; title?: string; model?: string;
+    from?: 'subtitles' | 'description'; v?: number;
+    /** v2: the whole episode told in a few paragraphs, quotes said in it, the names it mentions, what to take away, and
+     *  a script for its teaser (src/pages/videos/[id]/card.json.ts). */
+    story?: string[]; quotes?: string[]; names?: string[]; takeaways?: string[]; teaser?: { hook: string; points: string[]; why: string } | null;
+  } | null;
 };
 type VideosFile = { channel: { url: string; id: string | null }; checked: string | null; videos: RawVideo[] };
 

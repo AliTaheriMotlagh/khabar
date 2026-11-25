@@ -71,3 +71,23 @@ test('short links: publishers by their own short domain; generic shorteners know
   assert.equal(isShortener('https://bit.ly/x'), true);
   assert.equal(isShortener('https://www.bloomberg.com/x'), false);
 });
+
+test('sourceKind / settleStatus: the maker\'s own post is official, a newsroom\'s at least a report', async () => {
+  const { sourceKind, settleStatus } = await import('../src/lib/source.ts');
+  const tweet = (handle) => ({ url: `https://x.com/${handle}/status/1`, author: { handle } });
+  assert.equal(sourceKind(tweet('Tesla')), 'official');
+  assert.equal(sourceKind(tweet('neuralink')), 'official');
+  assert.equal(sourceKind(tweet('Reuters')), 'news');
+  assert.equal(sourceKind(tweet('business')), 'news');
+  assert.equal(sourceKind(tweet('kimmonismus')), null);
+  assert.equal(sourceKind({ url: 'https://openai.com/index/x' }), 'official');
+  assert.equal(sourceKind({ url: 'https://www.bloomberg.com/news/x' }), 'news');
+  assert.equal(sourceKind({ url: 'https://github.com/x/y' }), null);
+  assert.equal(settleStatus('شایعه', tweet('Tesla')), 'رسمی', 'the model called @Tesla a rumour');
+  assert.equal(settleStatus('شایعه', tweet('Reuters')), 'گزارش');
+  assert.equal(settleStatus('رسمی', tweet('Reuters')), 'رسمی', 'a newsroom quoting the maker stays official');
+  assert.equal(settleStatus('شایعه', tweet('kimmonismus')), 'شایعه');
+  assert.equal(settleStatus('شایعه', tweet('someone'), 'حساب رسمی نورالینک یه پست گذاشته'), 'رسمی');
+  assert.equal(settleStatus('شایعه', tweet('someone'), 'هنوز رسماً تأیید نشده ولی حساب رسمی'), 'شایعه');
+  assert.equal(settleStatus(null, null), null);
+});

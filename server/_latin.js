@@ -79,6 +79,9 @@ function num(d) {
 // Spelling rules, longest first: each English spelling and how it's written in Persian. `^` only at a word's start,
 // `$` only at its end. Vowels in the middle of a word are mostly left out, as Persian writes loanwords.
 const RULES = [
+  // -ation is «یشن» (optimization → اپتیمیزیشن); a final s after a voiced sound is «ز» (teams, kings, models).
+  ['ations$', 'یشنز'], ['ation$', 'یشن'], ['ngs$', 'نگز'], ['ms$', 'مز'], ['ns$', 'نز'], ['ls$', 'لز'], ['rs$', 'رز'], ['ds$', 'دز'],
+  ['gs$', 'گز'], ['bs$', 'بز'], ['vs$', 'وز'],
   ['^ph', 'ف'], ['tion$', 'شن'], ['sion$', 'ژن'], ['ture$', 'چر'], ['ight', 'ایت'], ['ough', 'او'], ['ing$', 'ینگ'],
   ['ous$', 'س'], ['ies$', 'یز'], ['es$', 'ز'], ['ee', 'ی'], ['ea', 'ی'], ['oo', 'و'], ['ou', 'او'], ['ow$', 'او'],
   ['ai', 'ی'], ['ay', 'ی'], ['ei', 'ی'], ['ey$', 'ی'], ['oa', 'و'], ['au', 'ا'], ['ie$', 'ی'], ['ph', 'ف'], ['sh', 'ش'],

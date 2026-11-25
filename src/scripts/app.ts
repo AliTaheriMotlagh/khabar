@@ -99,9 +99,25 @@ const toggleTheme = () => saveSettings({ theme: resolvedTheme() === 'dark' ? 'li
 $$('[data-theme-toggle]').forEach((b) => b.addEventListener('click', toggleTheme));
 
 // ---------- relative times (rendered client-side so they never go stale) ----------
+const EN_PAGE = root.lang === 'en';
+const enRtf = new Intl.RelativeTimeFormat('en', { numeric: 'auto' });
+/** The English edition's relative time («5 minutes ago», «yesterday», «Nov 22»). */
+function relTimeEn(iso: string) {
+  const mins = (Date.now() - Date.parse(iso)) / 6e4;
+  if (mins < 1) return 'just now';
+  if (mins < 60) return enRtf.format(-Math.round(mins), 'minute');
+  if (mins < 60 * 24) return enRtf.format(-Math.round(mins / 60), 'hour');
+  if (mins < 60 * 24 * 7) return enRtf.format(-Math.round(mins / 1440), 'day');
+  return new Intl.DateTimeFormat('en-US', { month: 'short', day: 'numeric' }).format(new Date(iso));
+}
 function renderDates() {
   $$<HTMLTimeElement>('time[data-f]').forEach((el) => {
     const d = new Date(el.dateTime);
+    if (EN_PAGE) {
+      el.textContent = el.dataset.f === 'long' ? d.toLocaleString('en-US', { dateStyle: 'full', timeStyle: 'short' }) : relTimeEn(el.dateTime);
+      el.title = d.toLocaleString('en-US', { dateStyle: 'full', timeStyle: 'short' });
+      return;
+    }
     const full = new Intl.DateTimeFormat('fa-IR-u-ca-persian', { timeZone: TZ, dateStyle: 'full', timeStyle: 'short' }).format(d);
     el.textContent = el.dataset.f === 'long' ? full : relTime(el.dateTime);
     el.title = full;
@@ -113,7 +129,8 @@ function renderDates() {
     if (!label) return;
     label.dataset.orig ??= label.textContent ?? '';
     const day = el.dataset.day;
-    label.textContent = day === today ? `امروز · ${label.dataset.orig}` : day === yesterday ? `دیروز · ${label.dataset.orig}` : label.dataset.orig;
+    const [t, y] = EN_PAGE ? ['Today', 'Yesterday'] : ['امروز', 'دیروز'];
+    label.textContent = day === today ? `${t} · ${label.dataset.orig}` : day === yesterday ? `${y} · ${label.dataset.orig}` : label.dataset.orig;
     el.classList.toggle('is-today', day === today);
   });
 }
@@ -318,7 +335,7 @@ document.addEventListener('keydown', (e) => {
     case 'o': case 'Enter': if (focused) $<HTMLAnchorElement>('h3 a', focused)?.click(); else return; break;
     case 'n': $<HTMLAnchorElement>('[data-next]')?.click(); break;
     case 'p': $<HTMLAnchorElement>('[data-prev]')?.click(); break;
-    case '/': location.href = `${BASE}/search/`; break;
+    case '/': location.href = EN_PAGE ? `${BASE}/en/investigate/` : `${BASE}/search/`; break;
     case 't': toggleTheme(); break;
     case 'v': {
       const link = focused && $<HTMLAnchorElement>('h3 a', focused);
@@ -414,4 +431,40 @@ initPeek();
 initVoiceOffer();
 initReader(() => settings, saveSettings);
 initExtras();
+// The English edition's «Listen» (the device's English voice) and the ad slots: loaded only where a page has them.
+if ($('[data-en-listen]')) import('./en-listen').then((m) => m.initEnListen());
+if ($('[data-ad]')) import('./ads').then((m) => m.initAds());
+// The reader's language: a tap on the header's switch remembers it, and the Persian home then opens the English one
+// (only the home page, only for a reader who chose it — search engines and new readers always get the Persian site).
+$$<HTMLAnchorElement>('[data-lang-switch]').forEach((a) => a.addEventListener('click', () => {
+  store.set('lang', a.dataset.langSwitch);
+  if (a.dataset.langSwitch === 'en') track('lang-en');
+}));
+if (root.lang === 'fa' && location.pathname === `${BASE}/` && store.get<string>('lang', 'fa') === 'en' && !/[?&]fa\b/.test(location.search) && root.dataset.altLang) location.replace(root.dataset.altLang);
 setInterval(renderDates, 60_000);
+
+// ---------- instant pages: fetch a page on hover or the first touch, so the tap opens it at once ----------
+// Chrome does it from the speculation rules in Base.astro; Safari and Firefox don't have them: the service worker keeps
+// the copy for a minute (public/sw.js, x-prefetch). Not on Save-Data or 2G, never the API or other sites.
+(() => {
+  const conn = (navigator as Navigator & { connection?: { saveData?: boolean; effectiveType?: string } }).connection;
+  if (HTMLScriptElement.supports?.('speculationrules') || !navigator.serviceWorker?.controller || conn?.saveData || /2g/.test(conn?.effectiveType ?? '')) return;
+  const done = new Set<string>();
+  let timer = 0;
+  const go = (a: HTMLAnchorElement | null) => {
+    if (!a || a.target || a.hasAttribute('download') || done.size > 40) return;
+    const u = new URL(a.href, location.href);
+    if (u.origin !== location.origin || u.pathname.includes('/api/') || /\.\w+$/.test(u.pathname) || (u.pathname === location.pathname && u.search === location.search)) return;
+    u.hash = '';
+    if (done.has(u.href)) return;
+    done.add(u.href);
+    fetch(u.href, { headers: { 'x-prefetch': '1' }, credentials: 'same-origin' }).catch(() => {});
+  };
+  const link = (e: Event) => (e.target as Element | null)?.closest?.<HTMLAnchorElement>('a[href]') ?? null;
+  document.addEventListener('touchstart', (e) => go(link(e)), { passive: true, capture: true });
+  document.addEventListener('mouseover', (e) => {
+    clearTimeout(timer);
+    const a = link(e);
+    if (a) timer = window.setTimeout(() => go(a), 65);
+  }, { passive: true, capture: true });
+})();

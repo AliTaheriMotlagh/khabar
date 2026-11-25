@@ -10,6 +10,8 @@ import NotifyAsk from '../components/NotifyAsk.astro';
 import TodayPlaylist from '../components/TodayPlaylist.astro';
 import NewVideo from '../components/NewVideo.astro';
 import HotThreads from '../components/HotThreads.astro';
+import Masthead from '../components/Masthead.astro';
+import AdSlot from '../components/AdSlot.astro';
 import { SITE } from '../site';
 import { dayKey, getFeed, latestDigest, url } from '../lib/posts';
 import { listLd } from '../lib/seo';
@@ -27,9 +29,9 @@ const rest = first.filter((p) => p !== lead);
 const next = posts.length > SITE.pageSize ? url('page/2/') : null;
 const jsonLd = listLd({ name: `${SITE.name} — ${SITE.tagline}`, path: '', posts: posts.slice(0, SITE.pageSize), home: true });
 ---
-<Base image={lead?.cover?.src} jsonLd={jsonLd} next={next}>
+<Base image={lead?.cover?.src} jsonLd={jsonLd} next={next} alternates={{ en: url('en/') }}>
   <div class="container">
-    <h1 class="sr-only">{SITE.name} — {SITE.tagline}</h1>
+    <Masthead />
     <TodayRail />
     {
       posts.length ? (
@@ -43,6 +45,7 @@ const jsonLd = listLd({ name: `${SITE.name} — ${SITE.tagline}`, path: '', post
             <HotThreads />
             <TodayPlaylist />
             <NotifyAsk />
+            <AdSlot slot="home" />
             <Timeline posts={rest} all={posts} nextHref={next} filter />
           </div>
           <Sidebar />

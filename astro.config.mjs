@@ -42,6 +42,16 @@ function seoIndex() {
   return { posts, videos, newest };
 }
 const seo = seoIndex();
+// Which English pages exist (the build writes them; listed again here for the sitemap's hreflang pairs).
+const EN_PAGES = new Set();
+const enDir = path.resolve('dist/en');
+/** @param {string} dir @param {string} rel */
+function scanEn(dir, rel) {
+  for (const f of fs.existsSync(dir) ? fs.readdirSync(dir, { withFileTypes: true }) : []) {
+    if (f.isDirectory()) scanEn(path.join(dir, f.name), `${rel}${f.name}/`);
+    else if (f.name === 'index.html') EN_PAGES.add(`${BASE}/en/${rel}`);
+  }
+}
 const BASE = (process.env.BASE_PATH || '/').replace(/\/$/, ''); // the mirror's /khabar prefix, '' on the primary
 
 export default defineConfig({
@@ -53,9 +63,18 @@ export default defineConfig({
   integrations: [
     sitemap({
       filter: (page) => !/\/(saved|search|me|offline|admin)\/$/.test(page),
+      // The English edition's pages sit at /en/<same path>: the sitemap pairs them (hreflang) with their Persian twins.
+      i18n: { defaultLocale: 'fa', locales: { fa: 'fa-IR', en: 'en' } },
       serialize(item) {
         const p = new URL(item.url).pathname;
         const post = p.match(/\/p\/(\d+)\/$/)?.[1];
+        // An English page's twin: only when it exists (a Persian-only post has none; the plugin pairs by path).
+        if (item.links && !EN_PAGES.size) scanEn(enDir, '');
+        // Twins only where the two pages carry the same thing: a story, the home, about, videos, explorer, archive (a
+        // list's page 2 holds different stories in each language).
+        const twin = /^\/(en\/)?(p\/\d+\/|about\/|videos\/|investigate\/|archive\/)?$/;
+        if (item.links) item.links = twin.test(p.slice(BASE.length)) ? item.links.filter((l) => l.lang !== 'en' || EN_PAGES.has(new URL(l.url).pathname)) : undefined;
+        if (item.links && item.links.length < 2) item.links = undefined;
         const video = p.match(/\/videos\/([\w-]{11})\/$/)?.[1];
         const hit = post ? seo.posts.get(post) : video ? seo.videos.get(video) : null;
         if (hit) {
@@ -63,7 +82,7 @@ export default defineConfig({
           // Older stories rarely change; the newest week still gets Gholam's late edits.
           item.changefreq = /** @type {any} */ (Date.now() - hit.at < 7 * 864e5 ? 'daily' : 'monthly');
           if (hit.img) /** @type {any} */ (item).img = [{ url: hit.img }];
-        } else if (/^\/(|today\/|tag\/[^/]+\/|videos\/|week\/|glossary\/|who\/[^/]+\/)$/.test(p.slice(BASE.length))) {
+        } else if (/^\/(en\/)?(|today\/|tag\/[^/]+\/|topic\/[^/]+\/|videos\/|week\/|glossary\/|who\/[^/]+\/)$/.test(p.slice(BASE.length))) {
           // Lists that change with every new story.
           if (seo.newest) item.lastmod = new Date(seo.newest).toISOString();
           item.changefreq = /** @type {any} */ ('hourly');

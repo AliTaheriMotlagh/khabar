@@ -4,6 +4,7 @@
 // bundle per deployment instead of many. Add a route: write server/<name>.js (exports GET/POST/… taking a Request),
 // then list it in `routes` below. Files in server/ starting with `_` are helpers, never routes.
 import * as admin from '../server/admin.js';
+import * as ads from '../server/ads.js';
 import * as chat from '../server/chat.js';
 import * as comments from '../server/comments.js';
 import * as engage from '../server/engage.js';
@@ -19,7 +20,7 @@ import * as toprss from '../server/toprss.js';
 import * as tts from '../server/tts.js';
 import * as watch from '../server/watch.js';
 
-export const routes = { admin, chat, comments, engage, img, leaders, live, media, push, react, stats, sync, toprss, tts, watch };
+export const routes = { admin, ads, chat, comments, engage, img, leaders, live, media, push, react, stats, sync, toprss, tts, watch };
 const METHODS = ['GET', 'POST', 'PUT', 'PATCH', 'DELETE', 'OPTIONS'];
 
 const known = (name) => (name && Object.hasOwn(routes, name) ? routes[name] : null);

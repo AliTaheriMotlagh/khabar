@@ -99,6 +99,7 @@ jobs:
             core=0; more=0; vids=0
             [ "$WHAT" != more ] && core=$(python -m pipeline.ai --pending --all)
             [ "$WHAT" != headlines ] && more=$(python -m pipeline.ai_more --pending --all --total) && vids=$(videos_left)
+            [ "$WHAT" != headlines ] && more=$((more + $(python -m pipeline.ai_en --pending --all)))
             echo "::notice::left: $core headlines, $more extras, $vids video summaries; $(( $(budget) / 60 )) min for this step"
             [ $((core + more + vids)) -gt 0 ] || { echo 'every post has its answers'; break; }
             changed=
@@ -107,6 +108,8 @@ jobs:
               AI_BUDGET=$(budget) run_step python -m pipeline.ai --all --limit=$n
               commit "headlines" && changed=1
             else
+              # The English edition's headlines: a few seconds a post, ≤15 minutes a chunk until every post has one.
+              [ "$(python -m pipeline.ai_en --pending --all)" -gt 0 ] && AI_EN_BUDGET=900 run_step python -m pipeline.ai_en --all && commit "English headlines" && changed=1
               AI_MORE_BUDGET=$(budget) run_step python -m pipeline.ai_more --all --limit=$n
               # Mehrzad's older episodes: a Persian summary each, from their subtitles, a few per chunk.
               [ "$vids" -gt 0 ] && [ "$(budget)" -gt 600 ] && run_step python -m pipeline.videos --summarize --limit=3

@@ -1,0 +1,12 @@
+---
+import Base from '../../../layouts/Base.astro';
+import { url } from '../../../lib/posts';
+import { EN, enTopicHref, enTopics } from '../../../lib/en';
+const topics = enTopics();
+---
+<Base lang="en" alternates={{ fa: url('tags/') }} title="Topics" description={`Every topic on ${EN.name}: ${topics.slice(0, 8).map((t) => t.en).join(', ')} and more — AI and tech news with their original sources.`}>
+  <div class="container narrow">
+    <header class="page-head"><h1>Topics</h1><p>{topics.length} topics across {topics.reduce((n, t) => n + t.count, 0)} tagged stories.</p></header>
+    <div class="chips wrap big-chips">{topics.map((t) => <a class="chip" href={enTopicHref(t.slug)}>{t.en} <small>{t.count}</small></a>)}</div>
+  </div>
+</Base>

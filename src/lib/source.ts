@@ -201,6 +201,71 @@ export function citedLinks(text: string | null | undefined): string[] {
   return out;
 }
 
+// ---- who is speaking: the maker itself, a newsroom, or anyone (the «رسمی / به گزارش رسانه‌ها / تأییدنشده» chip) ----
+// The model guesses the status from the text alone, and called @Tesla's and @neuralink's own posts rumours, and
+// Bloomberg's and Reuters' reports too. Where the source is known, it decides.
+/** Companies' and labs' own domains (their blog, newsroom, docs): what they say there is official. */
+const OFFICIAL_DOMAINS = new Set([
+  'openai.com', 'anthropic.com', 'claude.com', 'claude.ai', 'deepmind.google', 'deepmind.com', 'blog.google', 'research.google',
+  'ai.google.dev', 'developers.googleblog.com', 'cloud.google.com', 'microsoft.com', 'microsoft.ai', 'blogs.microsoft.com',
+  'ai.meta.com', 'about.fb.com', 'meta.com', 'apple.com', 'machinelearning.apple.com', 'nvidia.com', 'nvidianews.nvidia.com',
+  'blogs.nvidia.com', 'aboutamazon.com', 'aws.amazon.com', 'x.ai', 'mistral.ai', 'cohere.com', 'huggingface.co', 'perplexity.ai',
+  'deepseek.com', 'api-docs.deepseek.com', 'qwenlm.github.io', 'qwen.ai', 'alibabacloud.com', 'moonshot.ai', 'kimi.com', 'z.ai',
+  'bytedance.com', 'seed.bytedance.com', 'tesla.com', 'spacex.com', 'neuralink.com', 'waymo.com', 'figure.ai', 'thinkingmachines.ai',
+  'ssi.inc', 'cursor.com', 'github.blog', 'stability.ai', 'runwayml.com', 'elevenlabs.io', 'samsung.com', 'news.samsung.com',
+  'intel.com', 'amd.com', 'qualcomm.com', 'arm.com', 'tsmc.com', 'pr.tsmc.com', 'ibm.com', 'oracle.com', 'salesforce.com',
+  'mehrzad.ai', 'whitehouse.gov', 'europa.eu', 'ec.europa.eu', 'sec.gov', 'ftc.gov', 'justice.gov', 'gov.uk',
+]);
+/** Companies', labs' and their leaders' own X accounts (lower case). */
+const OFFICIAL_HANDLES = new Set([
+  'openai', 'openaidevs', 'chatgptapp', 'sama', 'gdb', 'kevinweil', 'fidjissimo', 'anthropicai', 'claudeai', 'darioamodei',
+  'googledeepmind', 'google', 'googleai', 'geminiapp', 'googlecloud', 'googlelabs', 'sundarpichai', 'demishassabis', 'officiallogank',
+  'jeffdean', 'microsoft', 'microsoftai', 'satyanadella', 'mustafasuleyman', 'github', 'aiatmeta', 'meta', 'metaai', 'finkd',
+  'alexandr_wang', 'apple', 'tim_cook', 'nvidia', 'nvidiaai', 'nvidianewsroom', 'xai', 'grok', 'tesla', 'tesla_ai', 'tesla_optimus',
+  'spacex', 'neuralink', 'starlink', 'mistralai', 'deepseek_ai', 'alibaba_qwen', 'kimi_moonshot', 'zai_org', 'huggingface',
+  'perplexity_ai', 'aravsrinivas', 'cursor_ai', 'waymo', 'figure_robot', 'adcock_brett', 'amazon', 'awscloud', 'ajassy', 'ibm',
+  'intel', 'amd', 'lisasu', 'qualcomm', 'samsung', 'arm', 'cohere', 'stabilityai', 'runwayml', 'elevenlabsio', 'thinkymachines',
+  'miramurati', 'ilyasut', 'bytedanceoss', 'midjourney', 'replit', 'amasad', 'vercel', 'cloudflare', 'whitehouse', 'potus',
+]);
+/** Newsrooms' X accounts (lower case): what they publish is a report, not a rumour. */
+const NEWS_HANDLES = new Set([
+  'business', 'bloomberg', 'technology', 'markets', 'reuters', 'reuterstech', 'wsj', 'wsjtech', 'nytimes', 'nytimestech',
+  'ft', 'ftfirstft', 'theinformation', 'techmeme', 'theverge', 'techcrunch', 'wired', 'arstechnica', 'cnbc', 'cnbctech', 'axios',
+  'semafor', 'bbcnews', 'bbcworld', 'cnn', 'ap', 'washingtonpost', 'guardian', 'theeconomist', 'fortunemagazine', 'forbes',
+  'businessinsider', 'sciam', 'newscientist', 'nature', 'sciencemagazine', 'techreview', 'venturebeat', 'engadget', 'zdnet',
+  'theregister', 'tomshardware', 'nikkei', 'nikkeiasia', 'scmpnews', 'caixin', 'politico', 'npr', 'time', 'theatlantic',
+  'platformer', 'stratechery', 'semianalysis_', 'restofworld', 'decoder_ai', 'heisedc', 'yonhaparirang', 'xhnews',
+]);
+const OFFICIAL_WORDS = /(حساب|وبلاگ|سایت|وب‌سایت|اطلاعیه|بیانیه|کانال|صفحه)(\s|‌)*(ی\s)?رسمی/;
+const linkHandle = (l: { url?: string; author?: { handle?: string } | null }) => {
+  const h = l.author?.handle || l.url?.match(/^https?:\/\/(?:www\.)?(?:x|twitter|fxtwitter|fixupx|vxtwitter)\.com\/(\w+)\/status\//i)?.[1];
+  return (h ?? '').replace(/^@/, '').toLowerCase();
+};
+const inSet = (set: Set<string>, host: string) => {
+  const parts = host.split('.');
+  for (let i = 0; i < parts.length - 1; i++) if (set.has(parts.slice(i).join('.'))) return true;
+  return false;
+};
+/** Who the story's source is: 'official' (the maker's own account or site), 'news' (a newsroom), or null (anyone). */
+export function sourceKind(link: { url?: string; domain?: string; author?: { handle?: string } | null } | null | undefined): 'official' | 'news' | null {
+  if (!link) return null;
+  const handle = linkHandle(link);
+  if (handle) return OFFICIAL_HANDLES.has(handle) ? 'official' : NEWS_HANDLES.has(handle) ? 'news' : null;
+  const host = link.url ? hostOf(link.url) : (link.domain ?? '').toLowerCase();
+  if (!host || SOCIAL.test(host)) return null;
+  if (inSet(OFFICIAL_DOMAINS, host)) return 'official';
+  const name = publisherOf(host);
+  return name && name !== host && !/^(X|YouTube|Threads|LinkedIn|Reddit|Hacker News|Medium|Substack|Wikipedia|arXiv|OpenReview|Papers with Code|GitHub)$/.test(name) ? 'news' : null;
+}
+/** The status the page shows: the source decides where it's known (the maker's own post is official, a newsroom's is
+ *  at least a report), and the Persian text naming an official account counts too; else the model's answer. */
+export function settleStatus<S extends string>(model: S | null, link: Parameters<typeof sourceKind>[0], lede = ''): S | 'رسمی' | 'گزارش' | null {
+  const kind = sourceKind(link);
+  if (kind === 'official' || (OFFICIAL_WORDS.test(lede) && !/(تأیید|تایید)\s*نشده|هنوز\s*رسم/.test(lede))) return 'رسمی';
+  if (kind === 'news' && (model === 'شایعه' || !model)) return 'گزارش';
+  return model;
+}
+
 /** A link that opens the text translated into Persian (Google Translate; null for Persian or too little text). */
 export function translateUrl(text: string | null | undefined, lang = langOf(text)): string | null {
   if (!text || !lang || lang.code === 'fa') return null;

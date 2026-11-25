@@ -48,7 +48,8 @@ test('lines: a story page and its card.json agree, paragraph by paragraph', { sk
     const paras = [...prose.matchAll(/<p>([\s\S]*?)<\/p>/g)].map((m) => decode(m[1]));
     const why = page.match(/<aside class="why[^"]*">[\s\S]*?<p>([\s\S]*?)<\/p>/)?.[1];
     const title = decode(page.match(/<h1[^>]*>([\s\S]*?)<\/h1>/)[1]);
-    const fromPage = storyLines(Number(id), title, [...paras, ...(why ? [decode(why)] : [])]);
+    // The same lexicon on both sides (the page reads it from card.json too): this checks paragraphs and indices.
+    const fromPage = storyLines(Number(id), title, [...paras, ...(why ? [decode(why)] : [])], false, card.lex);
     assert.deepEqual(fromPage, cardLines(card), `post ${id}`);
     checked++;
   }

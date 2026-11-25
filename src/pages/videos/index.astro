@@ -27,7 +27,7 @@ const jsonLd = [
   },
 ];
 ---
-<Base title={VIDEOS_TITLE} description="ویدیوهای فارسی مهرزاد صمدی درباره‌ی هوش مصنوعی، با خلاصه‌ی فارسی هر قسمت." image={hero ? hero.thumb : null} jsonLd={jsonLd}>
+<Base alternates={{ en: url('en/videos/') }} title={VIDEOS_TITLE} description="ویدیوهای فارسی مهرزاد صمدی درباره‌ی هوش مصنوعی، با خلاصه‌ی فارسی هر قسمت." image={hero ? hero.thumb : null} jsonLd={jsonLd}>
   <link slot="head" rel="alternate" type="application/rss+xml" title={VIDEOS_TITLE} href={abs('rss/videos.xml')} />
   <div class="container">
     <header class="page-head with-action">

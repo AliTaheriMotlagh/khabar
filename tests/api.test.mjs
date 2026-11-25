@@ -332,6 +332,7 @@ test('sync: starts one crawl, not while one runs or right after one', async () =
 test('watch: a crawl once the newest post has its comment (or after a grace), and for a late comment', async () => {
   const off = await import('../server/watch.js?off');
   assert.equal((await call(off.GET, 'GET', '/api/watch')).status, 501, 'not configured');
+  assert.equal((await call(off.GET, 'GET', '/api/watch?key=x')).status, 501, 'not configured, with a key too');
 
   process.env.GITHUB_DISPATCH_TOKEN = 'gh-token';
   process.env.WATCH_SECRET = 'watch-secret';
@@ -405,6 +406,16 @@ test('watch: a crawl once the newest post has its comment (or after a grace), an
     assert.deepEqual(await tick(), { queued: false, reason: null }, 'that crawl publishes it');
     assert.equal(dispatched.length, 5);
 
+    // Without the key: an open page's tick, one answer shared for a minute (here: this instance's memory).
+    runs = [{ event: 'schedule', status: 'completed', conclusion: 'success', created_at: ago(600) }];
+    channel = post(100, ago(7200)) + post(105, ago(30));
+    comments[105] = ago(10);
+    const t1 = await call(watch.GET, 'GET', '/api/watch');
+    assert.deepEqual(t1.body, { queued: true, reason: 'post 105' }, 'a reader\'s tick starts the crawl');
+    const t2 = await call(watch.GET, 'GET', '/api/watch');
+    assert.equal(t2.body.shared, true, 'the next tick within a minute is the shared answer');
+    assert.equal(dispatched.length, 6, 'and starts nothing');
+
     assert.deepEqual(watch.parseChannel(post(7, '2026-10-20T15:31:00+00:00')), [{ id: 7, at: Date.parse('2026-10-20T15:31:00Z') }]);
     assert.equal(watch.parseGholam(discussion(null)), 0);
   } finally {
@@ -440,4 +451,29 @@ test('admin: the crawl\'s health — the dispatch token\'s expiry, failures in a
     globalThis.fetch = real;
     delete process.env.GITHUB_DISPATCH_TOKEN;
   }
+});
+
+test('ads: off by default, the owner saves a checked config, readers get only what shows, ads.txt', async () => {
+  const ads = await import('../server/ads.js');
+  assert.deepEqual((await call(ads.GET, 'GET', '/api/ads/')).body, { enabled: false });
+  assert.equal((await call(ads.GET, 'GET', '/api/ads/?admin=1')).status, 401);
+  assert.equal((await call(ads.POST, 'POST', '/api/ads/', { config: { enabled: true } })).status, 401);
+  const auth = { authorization: 'Bearer admin-secret' };
+  const saved = await call(ads.POST, 'POST', '/api/ads/', {
+    config: { enabled: true, provider: 'house', slots: ['home', 'nope'], house: { title: 'Ad', href: 'http://insecure.example', image: 'https://x.example/a.png' }, adsTxt: 'google.com, pub-1, DIRECT', junk: 1 },
+  }, auth);
+  assert.equal(saved.status, 200);
+  assert.deepEqual(saved.body.config.slots, ['home']);
+  assert.equal(saved.body.config.house.href, '', 'only https links');
+  assert.equal(saved.body.config.junk, undefined);
+  // Not ready without a link: readers see it off.
+  assert.deepEqual((await call(ads.GET, 'GET', '/api/ads/')).body, { enabled: false });
+  await call(ads.POST, 'POST', '/api/ads/', { config: { ...saved.body.config, house: { ...saved.body.config.house, href: 'https://shop.example' } } }, auth);
+  const pub = (await call(ads.GET, 'GET', '/api/ads/')).body;
+  assert.equal(pub.enabled, true);
+  assert.equal(pub.house.href, 'https://shop.example');
+  assert.equal(pub.adsTxt, undefined, 'ads.txt is not sent to every page');
+  const txt = await ads.GET(new Request('https://site.test/api/ads/?txt=1'));
+  assert.equal(await txt.text(), 'google.com, pub-1, DIRECT\n');
+  assert.equal(ads.clean({ provider: 'adsense', adsense: { client: 'ca-pub-123', slot: 'x' } }).adsense.client, '', 'malformed ids dropped');
 });

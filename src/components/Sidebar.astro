@@ -1,8 +1,9 @@
 ---
 // Wide screens only (hidden below 1080px, where the footer and tab bar carry these links).
 import Icon from './Icon.astro';
+import AdSlot from './AdSlot.astro';
 import { SITE } from '../site';
-import { getChannel, getTags, tagHref, faNum, pic } from '../lib/posts';
+import { getChannel, getTags, tagHref, faNum, pic, url } from '../lib/posts';
 interface Props { current?: string }
 const { current } = Astro.props;
 const channel = getChannel();
@@ -35,6 +36,14 @@ const tags = getTags().slice(0, 14);
       </section>
     )
   }
+
+  <section class="side-card">
+    <h2 class="side-title"><Icon name="compass" /> کاوش در خبرها</h2>
+    <p>هر شرکت، آدم یا مدل را در همه‌ی خبرها دنبال کنید: از اولین شایعه تا اعلام رسمی، روز به روز.</p>
+    <div class="row"><a class="btn primary sm" href={url('investigate/')}>کاوشگر خبر</a><a class="btn sm" href={url('archive/')}>آرشیو روزها</a></div>
+  </section>
+
+  <AdSlot slot="sidebar" />
 
   <section class="side-card" data-leaders hidden>
     <h2 class="side-title"><Icon name="trophy" /> فعال‌ترین‌های هفته</h2>

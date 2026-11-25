@@ -1,7 +1,7 @@
 # فیوچر فوکوس — Future Focus
 
 A Persian news site built automatically from the Telegram channel [@dlmehr](https://t.me/dlmehr) by [Mehrzad Samadi](https://mehrzad.ai/).
-Live at **https://khabar-ai.vercel.app**.
+Live at **https://blog.remixt.app** (Cloudflare Pages; English edition at /en/). The old Vercel deployment is disabled.
 
 Every channel post becomes a news story. The Persian text is Gholam's first comment under the post (the translation);
 images and videos are shown straight from the source, and every story links to its original tweet or article.
@@ -68,7 +68,7 @@ The mirror uses the Vercel API for comments and chat (repository variable `API_U
 
 GitHub's own schedule is best effort: runs come late or not at all, sometimes for hours. To put each post on the site
 within a few minutes, let a free external cron call **`/api/watch/`** every minute (e.g. cron-job.org:
-`https://khabar-ai.vercel.app/api/watch/?key=<WATCH_SECRET>`, GET). It reads the channel's page and starts a crawl
+`https://blog.remixt.app/api/watch/?key=<WATCH_SECRET>`, GET; open pages also tick it without the key, at most once a minute). It reads the channel's page and starts a crawl
 only when there is news: a new post once Gholam has commented on it (he answers within ~30 s; after 3 minutes it goes
 without, as the daily digests do — `WATCH_GRACE`), or his comment on a post from the last hour (`WATCH_MINUTES`)
 that came after the newest crawl. Needs `GITHUB_DISPATCH_TOKEN` (above) and `WATCH_SECRET` (any long random string)
@@ -76,7 +76,7 @@ in Vercel; 501 without them. No Redis. Keep the `schedule:` block as a fallback:
 nothing new takes well under a minute.
 
 **Moderation:** `/admin/` with `ADMIN_TOKEN` (reported and recent comments, visits by hour, traffic sources), or
-`curl -X DELETE -H "Authorization: Bearer $ADMIN_TOKEN" "https://khabar-ai.vercel.app/api/comments/?post=<post id>&id=<comment id>"`.
+`curl -X DELETE -H "Authorization: Bearer $ADMIN_TOKEN" "https://blog.remixt.app/api/comments/?post=<post id>&id=<comment id>"`.
 
 **Notifications:** `node scripts/vapid.mjs` prints `VAPID_PUBLIC_KEY`, `VAPID_PRIVATE_KEY`, `VAPID_SUBJECT` and
 `PUSH_SECRET` for Vercel; put the same `PUSH_SECRET` in GitHub → Settings → Secrets → Actions.

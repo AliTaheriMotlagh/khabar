@@ -225,7 +225,7 @@ def update(network: bool = True) -> bool:
 # each chunk gives notes; then one call writes the Persian headline, summary, 5–8 points, chapter titles in Persian (the
 # description's own chapters translated when it has them, else from the times in the notes) and a shelf category.
 # Without subtitles, the title and description alone. Stored as the video's `ai`; done again only when SUMMARY_V changes.
-SUMMARY_V = 1
+SUMMARY_V = 2  # 2: a longer write-up, more points, chapter descriptions, quotes, names, takeaways, a teaser script
 CATEGORIES = ["مقاله‌خوانی", "تکنیک‌های مدل", "ایجنت و ابزار", "رباتیک", "گفتگو و مهمان", "لایو", "مهارت و مسیر شغلی", "خبر و تحلیل"]
 CHUNK = 3500
 VTT_TIME = re.compile(r"^(\d{2}):(\d{2}):(\d{2})\.\d{3} --> ")
@@ -271,27 +271,39 @@ def subtitles(vid: str) -> Optional[str]:
 
 NOTES_SCHEMA = {"type": "object", "properties": {"notes": {"type": "array", "items": {"type": "string"}, "maxItems": 8}},
                 "required": ["notes"], "additionalProperties": False}
+_STR_LIST = lambda lo, hi: {"type": "array", "items": {"type": "string"}, "minItems": lo, "maxItems": hi}  # noqa: E731
 SUMMARY_SCHEMA = {
     "type": "object",
     "properties": {
         "title": {"type": "string"},
         "summary": {"type": "string"},
-        "points": {"type": "array", "items": {"type": "string"}, "minItems": 3, "maxItems": 8},
-        "chapters": {"type": "array", "items": {"type": "object", "properties": {"t": {"type": "integer"}, "title": {"type": "string"}},
-                                               "required": ["t", "title"], "additionalProperties": False}, "maxItems": 20},
+        "story": _STR_LIST(2, 5),
+        "points": _STR_LIST(5, 12),
+        "chapters": {"type": "array", "items": {"type": "object", "properties": {"t": {"type": "integer"}, "title": {"type": "string"}, "about": {"type": "string"}},
+                                               "required": ["t", "title", "about"], "additionalProperties": False}, "maxItems": 24},
+        "quotes": _STR_LIST(0, 4),
+        "names": _STR_LIST(0, 12),
+        "takeaways": _STR_LIST(2, 5),
+        "teaser": {"type": "object", "properties": {"hook": {"type": "string"}, "points": _STR_LIST(3, 3), "why": {"type": "string"}},
+                   "required": ["hook", "points", "why"], "additionalProperties": False},
         "category": {"type": "string", "enum": CATEGORIES},
     },
-    "required": ["title", "summary", "points", "chapters", "category"],
+    "required": ["title", "summary", "story", "points", "chapters", "quotes", "names", "takeaways", "teaser", "category"],
     "additionalProperties": False,
 }
-NOTES_SYSTEM = """بخشی از زیرنویس یک ویدیوی فارسی یوتیوب درباره‌ی هوش مصنوعی را می‌گیری (زمان‌ها داخل [ ] آمده). نکته‌های اصلی همین بخش را به فارسی معیار بنویس، هر نکته یک جمله، و زمان شروعش را اول آن بیاور، مثل «[12:30] …». فقط JSON."""
-SUMMARY_SYSTEM = f"""تو خلاصه‌ی فارسی یک ویدیوی یوتیوب مهرزاد صمدی درباره‌ی هوش مصنوعی را می‌نویسی، به فارسی معیار و روان. فقط JSON.
+NOTES_SYSTEM = """بخشی از زیرنویس یک ویدیوی فارسی یوتیوب درباره‌ی هوش مصنوعی را می‌گیری (زمان‌ها داخل [ ] آمده). نکته‌های اصلی همین بخش را با جزئیات (اسم‌ها، عددها، مثال‌ها) به فارسی معیار بنویس، هر نکته یک جمله، و زمان شروعش را اول آن بیاور، مثل «[12:30] …». فقط JSON."""
+SUMMARY_SYSTEM = f"""تو خلاصه‌ی فارسی کامل یک ویدیوی یوتیوب مهرزاد صمدی درباره‌ی هوش مصنوعی را می‌نویسی، به فارسی معیار و روان. فقط JSON.
 title: تیتر فارسی ویدیو (۳۰ تا ۸۰ نویسه)، موضوع اصلی را بگوید.
-summary: ۳ تا ۵ جمله که ویدیو درباره‌ی چیست و چه می‌گوید.
-points: ۵ تا ۸ نکته‌ی اصلی، هر کدام یک جمله‌ی کوتاه.
-chapters: فصل‌های ویدیو با زمان شروع به ثانیه (t) و عنوان فارسی کوتاه. اگر فصل‌های خود ویدیو داده شده، همان زمان‌ها را نگه دار و فقط عنوانشان را به فارسی برگردان. اگر نه، از زمان‌های یادداشت‌ها ۴ تا ۸ فصل بساز که اولی از ۰ شروع شود.
+summary: ۲ تا ۳ جمله که ویدیو درباره‌ی چیست.
+story: ۲ تا ۵ بند، هر بند ۳ تا ۵ جمله: روایت کامل ویدیو به ترتیب، با جزئیات، اسم‌ها، عددها و مثال‌هایی که گفته شده.
+points: ۸ تا ۱۲ نکته‌ی اصلی، هر کدام یک جمله‌ی مشخص (نه کلی).
+chapters: فصل‌های ویدیو با زمان شروع به ثانیه (t)، عنوان فارسی کوتاه (title) و یک جمله درباره‌ی آن فصل (about). اگر فصل‌های خود ویدیو داده شده، همان زمان‌ها را نگه دار و عنوانشان را به فارسی برگردان. اگر نه، از زمان‌های یادداشت‌ها ۴ تا ۸ فصل بساز که اولی از ۰ شروع شود.
+quotes: تا ۴ جمله‌ی به‌یادماندنی که در ویدیو گفته شده (فقط اگر در یادداشت‌ها آمده)، به فارسی.
+names: آدم‌ها، شرکت‌ها، مدل‌ها، مقاله‌ها و ابزارهایی که نامشان آمده، به همان شکل اصلی (انگلیسی اگر انگلیسی است).
+takeaways: ۲ تا ۵ چیزی که بیننده می‌تواند با خودش ببرد یا امتحان کند.
+teaser: برای یک ویدیوی کوتاه معرفی: hook (یک جمله‌ی گیرا که کنجکاو کند)، points (سه نکته‌ی خیلی کوتاه)، why (چرا ارزش دیدن دارد، یک جمله).
 category: یکی از: {"، ".join(CATEGORIES)}.
-فقط از چیزی که در یادداشت‌ها و توضیح آمده بنویس."""
+فقط از چیزی که در یادداشت‌ها و توضیح آمده بنویس؛ چیزی از خودت اضافه نکن."""
 
 
 def summarize_one(http, v: dict) -> Optional[dict]:
@@ -300,7 +312,7 @@ def summarize_one(http, v: dict) -> Optional[dict]:
     text = subtitles(v["id"])
     notes: list[str] = []
     if text:
-        for i in range(0, min(len(text), CHUNK * 8), CHUNK):
+        for i in range(0, min(len(text), CHUNK * 14), CHUNK):
             try:
                 notes += ai.chat(http, NOTES_SYSTEM, [], text[i : i + CHUNK], NOTES_SCHEMA, name="notes", max_tokens=600)["notes"]
             except Exception as exc:  # noqa: BLE001 — a chunk lost is a few notes lost
@@ -312,15 +324,21 @@ def summarize_one(http, v: dict) -> Optional[dict]:
                     *([f"یادداشت‌های زیرنویس:\n" + "\n".join(notes)] if notes else [])])
     for temperature in (0.1, 0.4):
         try:
-            a = ai.chat(http, SUMMARY_SYSTEM, [], q, SUMMARY_SCHEMA, name="summary", temperature=temperature, max_tokens=1600)
+            a = ai.chat(http, SUMMARY_SYSTEM, [], q, SUMMARY_SCHEMA, name="summary", temperature=temperature, max_tokens=3200)
         except Exception as exc:  # noqa: BLE001
             print(f"  ! summary {v['id']}: {exc}")
             continue
         dur = v.get("duration") or 10**6
-        chaps = sorted({c["t"]: c["title"].strip() for c in a.get("chapters") or [] if 0 <= c["t"] < dur and c["title"].strip()}.items())
+        chaps = sorted({c["t"]: (c["title"].strip(), (c.get("about") or "").strip()) for c in a.get("chapters") or [] if 0 <= c["t"] < dur and c["title"].strip()}.items())
+        clean = lambda xs: [x.strip() for x in xs or [] if x and x.strip()]  # noqa: E731
+        story = [p for p in clean(a.get("story")) if ai_more.fa_share(p) >= 0.6]
         if 20 <= len(a.get("title", "")) <= 100 and ai_more.fa_share(a.get("summary", "")) >= 0.6 and len(a.get("points") or []) >= 3:
-            return {"title": a["title"].strip(), "summary": a["summary"].strip(), "points": [p.strip() for p in a["points"] if p.strip()],
-                    "chapters": [{"t": t, "title": title} for t, title in chaps] if len(chaps) >= 2 and chaps[0][0] == 0 else [],
+            teaser = a.get("teaser") or {}
+            return {"title": a["title"].strip(), "summary": a["summary"].strip(), "story": story, "points": clean(a["points"]),
+                    "chapters": [{"t": t, "title": title, **({"about": about} if about else {})} for t, (title, about) in chaps] if len(chaps) >= 2 and chaps[0][0] == 0 else [],
+                    # Quotes only when they came from the words said (the subtitles), never from a description.
+                    "quotes": clean(a.get("quotes")) if notes else [], "names": clean(a.get("names"))[:12], "takeaways": clean(a.get("takeaways")),
+                    "teaser": {"hook": (teaser.get("hook") or "").strip(), "points": clean(teaser.get("points"))[:3], "why": (teaser.get("why") or "").strip()} if teaser.get("hook") else None,
                     "category": a["category"], "from": "subtitles" if notes else "description", "v": SUMMARY_V, "model": ai.AI_MODEL}
     return None
 
