@@ -60,5 +60,23 @@
    "آنتروپیک"
   ]
  },
- "updated": "2026-11-25T16:50:59+00:00"
+ "updated": "2026-11-25T16:50:59+00:00",
+ "ai": {
+  "title": "آنتروپیک سرویس Messages API را از پایتون به Rust منتقل کرد",
+  "short": "مهاجرت API به Rust",
+  "topics": [
+   "آنتروپیک"
+  ],
+  "type": "ابزار و محصول",
+  "model": "qwen3.5-9b-q4_k_m",
+  "v": 2,
+  "src": "85eaf4b9bea4",
+  "en": {
+   "title": "Anthropic migrates Messages API from Python to Rust",
+   "short": "Anthropic moves Messages API from Python to Rust",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "d40ef3f2efd3"
+  }
+ }
 }

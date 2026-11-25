@@ -62,5 +62,24 @@
    "کدنویسی"
   ]
  },
- "updated": "2026-11-25T16:51:00+00:00"
+ "updated": "2026-11-25T16:51:00+00:00",
+ "ai": {
+  "title": "ایجنت Cogentic گوگل با Gemini 4، ۶ مقاله ریاضی بدون دخالت انسان نوشت",
+  "short": "ایجنت Cogentic گوگل",
+  "topics": [
+   "گوگل",
+   "علم"
+  ],
+  "type": "پژوهش و مقاله",
+  "model": "qwen3.5-9b-q4_k_m",
+  "v": 2,
+  "src": "aba55d06f8a0",
+  "en": {
+   "title": "Google AI Agent Cogentic Publishes Six New Math Papers",
+   "short": "Google AI agent publishes six new math papers",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "f8cfe2f157ce"
+  }
+ }
 }
