@@ -87,6 +87,12 @@
   "type": "پژوهش و مقاله",
   "model": "qwen3.5-9b-q4_k_m",
   "v": 2,
-  "src": "d34700de40b2"
+  "src": "d34700de40b2",
+  "en": {
+   "failed": true,
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "02bbabeaba8b"
+  }
  }
 }

@@ -159,6 +159,13 @@
    "model": "qwen3.5-9b-q4_k_m",
    "v": 2,
    "src": "6105abd65c4a"
+  },
+  "en": {
+   "title": "Thinky Machines introduces Scout forecasting agent for S&P 500",
+   "short": "Thinky Machines introduces Scout forecasting agent",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "48af0b4455f9"
   }
  }
 }

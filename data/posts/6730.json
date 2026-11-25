@@ -76,6 +76,13 @@
   "type": "خبر",
   "model": "qwen3.5-9b-q4_k_m",
   "v": 2,
-  "src": "a1ea0a5309a3"
+  "src": "a1ea0a5309a3",
+  "en": {
+   "title": "a16z Frontier compiles 300+ book recommendations from four years",
+   "short": "a16z Frontier shares 300+ book picks",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "029f67d6c0a4"
+  }
  }
 }

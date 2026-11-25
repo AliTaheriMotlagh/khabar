@@ -56,6 +56,13 @@
   "type": "پژوهش و مقاله",
   "model": "qwen3.5-9b-q4_k_m",
   "v": 2,
-  "src": "5013df5dac24"
+  "src": "5013df5dac24",
+  "en": {
+   "title": "Matrix Multiplication Exponent 9/4 Proven Tight",
+   "short": "Matrix multiplication exponent 9/4 proven tight",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "e8d95033913a"
+  }
  }
 }
