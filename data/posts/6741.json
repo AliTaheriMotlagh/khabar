@@ -54,5 +54,23 @@
    "رباتیک"
   ]
  },
- "updated": "2026-11-25T18:06:26+00:00"
+ "updated": "2026-11-25T18:06:26+00:00",
+ "ai": {
+  "title": "شرکت satyressrobots ربات غول‌پیکر جدید برای کارهای داخل خانه معرفی کرد",
+  "short": "ربات satyressrobots برای خانه",
+  "topics": [
+   "رباتیک"
+  ],
+  "type": "ابزار و محصول",
+  "model": "qwen3.5-9b-q4_k_m",
+  "v": 2,
+  "src": "c496b8651ad4",
+  "en": {
+   "title": "Satyress Robotics Defends Outdoor Robot Limitations",
+   "short": "Satyress defends outdoor robot limits",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "ff05d048429e"
+  }
+ }
 }
