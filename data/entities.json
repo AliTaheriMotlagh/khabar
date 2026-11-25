@@ -14591,6 +14591,12 @@
    "name_en": "Yin Tat Lee",
    "name_fa": "یین تات لی",
    "kind": "person"
+  },
+  {
+   "slug": "optimization-bench",
+   "name_en": "Optimization-Bench",
+   "name_fa": "اپتی‌میزیشن بنچ",
+   "kind": "product"
   }
  ]
 }
