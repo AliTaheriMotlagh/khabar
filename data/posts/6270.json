@@ -104,6 +104,13 @@
    "model": "qwen3.5-9b-q4_k_m",
    "v": 2,
    "src": "5a9ee5774426"
+  },
+  "en": {
+   "title": "OpenAI hiring manager offers tips for applicants to stand out",
+   "short": "OpenAI hiring tips for applicants",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "491ca6ea738d"
   }
  }
 }

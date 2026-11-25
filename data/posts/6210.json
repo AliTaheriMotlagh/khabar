@@ -144,6 +144,13 @@
    "v": 1,
    "src": "fee6bc95acee",
    "added": 2
+  },
+  "en": {
+   "title": "Cognition Acquires Corridor to Build Future of Devin Security",
+   "short": "Cognition Acquires Corridor for Devin Security",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "cd903dadf3e8"
   }
  }
 }

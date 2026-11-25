@@ -121,6 +121,13 @@
    "v": 1,
    "src": "892890df81e6",
    "added": 1
+  },
+  "en": {
+   "title": "David Im Partners With Heygen To Kill Higgsfield",
+   "short": "David Im partners with Heygen to kill Higgsfield",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "953712a5e49b"
   }
  }
 }

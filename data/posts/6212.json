@@ -113,6 +113,13 @@
    "v": 1,
    "src": "0e7edcef05a8",
    "added": 1
+  },
+  "en": {
+   "title": "Factory introduces Droid 1.0 engine for agent",
+   "short": "Factory launches Droid 1.0 agent engine",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "c30854c1fbb9"
   }
  }
 }

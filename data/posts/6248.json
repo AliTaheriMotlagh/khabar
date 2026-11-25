@@ -106,6 +106,13 @@
    "v": 1,
    "src": "c1777d8e8486",
    "added": 1
+  },
+  "en": {
+   "title": "Husk Asks AI Teacher How To Spell Seventeen",
+   "short": "Husk Asks AI Teacher How To Spell Seventeen",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "72bcd42e4664"
   }
  }
 }

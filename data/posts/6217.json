@@ -125,6 +125,13 @@
    "model": "qwen3.5-9b-q4_k_m",
    "v": 2,
    "src": "17f5d8863276"
+  },
+  "en": {
+   "title": "Reddit CEO Says AI Mode No Longer Drives Traffic",
+   "short": "Reddit CEO says AI mode no longer drives traffic",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "8a6204b91578"
   }
  }
 }

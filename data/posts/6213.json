@@ -138,6 +138,13 @@
    "v": 1,
    "src": "61560bda6791",
    "added": 1
+  },
+  "en": {
+   "title": "Neuralink first product named Telepathy for thought communication",
+   "short": "Neuralink first product named Telepathy",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "79e732f46635"
   }
  }
 }

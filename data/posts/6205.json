@@ -112,6 +112,13 @@
    "v": 1,
    "src": "290680b062b6",
    "added": 1
+  },
+  "en": {
+   "title": "ServiceNow stock collapses nearly 20% after weaker Q3 earnings",
+   "short": "ServiceNow stock drops 20% on weak Q3 results",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "b745ebd9b873"
   }
  }
 }

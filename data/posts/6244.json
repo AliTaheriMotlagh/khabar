@@ -133,6 +133,13 @@
    "model": "qwen3.5-9b-q4_k_m",
    "v": 2,
    "src": "20aaa0b65e1b"
+  },
+  "en": {
+   "title": "DeepSeek Open-Sources Super-Agent Prototype With Parallel Task Routing",
+   "short": "DeepSeek open-sources Super-agent prototype",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "c88eef40958d"
   }
  }
 }

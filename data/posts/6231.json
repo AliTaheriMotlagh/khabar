@@ -133,6 +133,13 @@
    "model": "qwen3.5-9b-q4_k_m",
    "v": 2,
    "src": "09723ae306a8"
+  },
+  "en": {
+   "title": "AI job loss reports drop 65% as hiring rebounds",
+   "short": "AI job loss reports drop 65%",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "8dc99ae18cdb"
   }
  }
 }

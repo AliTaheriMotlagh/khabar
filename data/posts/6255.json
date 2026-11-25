@@ -144,6 +144,13 @@
    "v": 1,
    "src": "e5d63808342b",
    "added": 1
+  },
+  "en": {
+   "title": "a16z leads Tutor Intelligence Series B for robotics deployment",
+   "short": "a16z leads Tutor Intelligence Series B",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "c1ce2899d0f5"
   }
  }
 }

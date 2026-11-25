@@ -103,6 +103,13 @@
    "model": "qwen3.5-9b-q4_k_m",
    "v": 2,
    "src": "9df460d17a95"
+  },
+  "en": {
+   "title": "Malicious Ad for Homebrew Leads to MacSync Stealer",
+   "short": "Malicious Ad for Homebrew Leads to MacSync Stealer",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "78a0444da045"
   }
  }
 }

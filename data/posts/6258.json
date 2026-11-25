@@ -108,6 +108,13 @@
    "model": "qwen3.5-9b-q4_k_m",
    "v": 2,
    "src": "29783713dcc5"
+  },
+  "en": {
+   "title": "Anthropic reports $17 billion Q3 revenue up 1100% ahead of IPO",
+   "short": "Anthropic reports $17B Q3 revenue up 1100%",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "1cc2b8b6d817"
   }
  }
 }

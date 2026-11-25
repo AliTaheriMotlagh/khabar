@@ -142,6 +142,13 @@
    "v": 1,
    "src": "249a15c86691",
    "added": 2
+  },
+  "en": {
+   "title": "Mischief 1 video model is 5x faster and cheaper than base",
+   "short": "Mischief 1 video model is 5x faster and cheaper",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "4ecc91d5df31"
   }
  }
 }

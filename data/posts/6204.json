@@ -118,6 +118,13 @@
    "model": "qwen3.5-9b-q4_k_m",
    "v": 2,
    "src": "bbe6e7771520"
+  },
+  "en": {
+   "title": "Binance hacked with wallets across Ethereum, Bitcoin, and TRON networks seeing outflows of $5.7 billion",
+   "short": "Binance hacked with $5.7 billion outflows",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "173fe22af3fa"
   }
  }
 }

@@ -127,6 +127,13 @@
    "v": 1,
    "src": "4437977709c3",
    "added": 1
+  },
+  "en": {
+   "title": "OpenAI launches LifeVal benchmark for everyday AI tasks",
+   "short": "OpenAI launches LifeVal benchmark",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "dc606a2e00b5"
   }
  }
 }

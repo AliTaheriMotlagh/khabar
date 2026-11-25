@@ -158,6 +158,13 @@
    "v": 1,
    "src": "8c3dc40ecea4",
    "added": 0
+  },
+  "en": {
+   "title": "Opus 5.5 edits 0.00012% of Qwen3.5-4B weights to improve math",
+   "short": "Opus 5.5 edits 0.00012% of Qwen3.5-4B weights",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "68dfd04483c2"
   }
  }
 }

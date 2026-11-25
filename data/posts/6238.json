@@ -101,6 +101,13 @@
    "model": "qwen3.5-9b-q4_k_m",
    "v": 2,
    "src": "be666c6943c1"
+  },
+  "en": {
+   "title": "OpenAI posts: There are many futures. Which do you want to build?",
+   "short": "OpenAI asks which future you want to build",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "da8888e5c5b7"
   }
  }
 }

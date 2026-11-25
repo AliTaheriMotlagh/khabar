@@ -119,6 +119,13 @@
    "v": 1,
    "src": "d9a36850b7f3",
    "added": 1
+  },
+  "en": {
+   "title": "NASA Space Apps Challenge statements now live for 14 projects",
+   "short": "NASA Space Apps Challenge statements now live",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "48c281c73c67"
   }
  }
 }

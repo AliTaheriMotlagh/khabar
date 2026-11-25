@@ -133,6 +133,13 @@
    "v": 1,
    "src": "47339068f2e5",
    "added": 1
+  },
+  "en": {
+   "title": "GPT-6.2 Release Imminent as New Flagship Model",
+   "short": "GPT-6.2 release expected soon",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "ac04337c7d7c"
   }
  }
 }

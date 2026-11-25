@@ -132,6 +132,13 @@
    "v": 1,
    "src": "9ec6cfbc6e08",
    "added": 1
+  },
+  "en": {
+   "title": "Binance halts deposits and withdrawals after $6.3B security incident",
+   "short": "Binance freezes assets after $6.3B breach",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "4f63b19f8d33"
   }
  }
 }

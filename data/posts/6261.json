@@ -122,6 +122,13 @@
    "model": "qwen3.5-9b-q4_k_m",
    "v": 2,
    "src": "f75d0f5dc234"
+  },
+  "en": {
+   "title": "Anthropic Residency applications open for technical leaders",
+   "short": "Anthropic Residency applications open now",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "b9f49e3011fb"
   }
  }
 }

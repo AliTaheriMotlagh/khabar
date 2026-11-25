@@ -126,6 +126,13 @@
    "model": "qwen3.5-9b-q4_k_m",
    "v": 2,
    "src": "12696f489db3"
+  },
+  "en": {
+   "title": "Google sends command to Project Suncatcher satellite and receives haiku response",
+   "short": "Google satellite receives first haiku response",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "81b20dafc1c0"
   }
  }
 }

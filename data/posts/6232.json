@@ -110,6 +110,13 @@
    "model": "qwen3.5-9b-q4_k_m",
    "v": 2,
    "src": "9ec1f0fc143e"
+  },
+  "en": {
+   "title": "Companies using AI now spend average of $1,024 per employee on it",
+   "short": "AI spending per employee averages $1,024",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "82f5edcd13b4"
   }
  }
 }

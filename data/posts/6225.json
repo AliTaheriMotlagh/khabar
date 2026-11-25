@@ -131,6 +131,13 @@
    "model": "qwen3.5-9b-q4_k_m",
    "v": 2,
    "src": "c9b42c796f6e"
+  },
+  "en": {
+   "title": "Subvocal Raises $1.3M From YC And Afore Capital",
+   "short": "Subvocal Raises $1.3M From YC And Afore Capital",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "9a28ac74331c"
   }
  }
 }

@@ -125,6 +125,13 @@
    "model": "qwen3.5-9b-q4_k_m",
    "v": 2,
    "src": "0c4ff8eb8316"
+  },
+  "en": {
+   "title": "Cyclon builds AI phone to replace iPhone",
+   "short": "Cyclon builds AI phone to replace iPhone",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "463b99ddf387"
   }
  }
 }

@@ -136,6 +136,13 @@
    "v": 1,
    "src": "07ede6973210",
    "added": 1
+  },
+  "en": {
+   "title": "Google DeepMind PlanAssist cuts UK planning assessment time by 58%",
+   "short": "AI tool speeds up UK planning decisions by 58%",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "176377321503"
   }
  }
 }

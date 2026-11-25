@@ -127,6 +127,13 @@
    "model": "qwen3.5-9b-q4_k_m",
    "v": 2,
    "src": "6b452e386b5e"
+  },
+  "en": {
+   "title": "Investigators observe never-seen-before laundering patterns with stolen Binance funds",
+   "short": "Binance exploit funds show new laundering patterns",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "8fcdca3c82c7"
   }
  }
 }

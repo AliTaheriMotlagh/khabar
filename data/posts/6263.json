@@ -132,6 +132,13 @@
    "v": 1,
    "src": "0176bc077abb",
    "added": 1
+  },
+  "en": {
+   "title": "OpenAI builds Pando Git backend to handle more pushes and fetches",
+   "short": "OpenAI launches Pando Git backend for monorepo",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "e991c2f474ea"
   }
  }
 }

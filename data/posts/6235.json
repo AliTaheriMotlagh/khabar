@@ -126,6 +126,13 @@
    "v": 1,
    "src": "def7f7c3e1b8",
    "added": 1
+  },
+  "en": {
+   "title": "Meta reportedly built humanoid robot prototype Max with Fourier",
+   "short": "Meta built robot Max with Fourier in three months",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "6834852b8e76"
   }
  }
 }

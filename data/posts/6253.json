@@ -143,6 +143,13 @@
    "model": "qwen3.5-9b-q4_k_m",
    "v": 2,
    "src": "d7616813d0a6"
+  },
+  "en": {
+   "title": "Sam Altman Says Navier-Stokes Model Will Be Released Soon",
+   "short": "Altman: Navier-Stokes model released soon",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "5ff92de0668d"
   }
  }
 }

@@ -124,6 +124,13 @@
    "model": "qwen3.5-9b-q4_k_m",
    "v": 2,
    "src": "710bc787c081"
+  },
+  "en": {
+   "title": "Instinct reportedly hit wall with WhatsApp, some users say accounts banned",
+   "short": "Instinct faces WhatsApp issues, users report bans",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "8c62d294d107"
   }
  }
 }

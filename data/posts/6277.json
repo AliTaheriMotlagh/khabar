@@ -122,6 +122,13 @@
    "model": "qwen3.5-9b-q4_k_m",
    "v": 2,
    "src": "16d9510931ac"
+  },
+  "en": {
+   "title": "Claude adds auto-connect plugins for MCP servers",
+   "short": "Claude now auto-connects plugins for MCP servers",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "5b27fc051346"
   }
  }
 }

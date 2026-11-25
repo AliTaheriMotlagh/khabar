@@ -134,6 +134,13 @@
    "v": 1,
    "src": "c26c9c437157",
    "added": 1
+  },
+  "en": {
+   "title": "FBI says North Korea stole $6B from Binance in TraderTraitor attack",
+   "short": "FBI says North Korea stole $6B from Binance",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "3427460f6b1f"
   }
  }
 }

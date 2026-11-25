@@ -138,6 +138,13 @@
    "model": "qwen3.5-9b-q4_k_m",
    "v": 2,
    "src": "2069cfffd776"
+  },
+  "en": {
+   "title": "Subvocal YC F26 Glasses Decode Silent Speech at 200 Words Per Minute",
+   "short": "Subvocal Glasses Decode Silent Speech",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "c5d6e8c2fe06"
   }
  }
 }

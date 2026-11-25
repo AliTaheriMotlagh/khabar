@@ -115,6 +115,13 @@
    "model": "qwen3.5-9b-q4_k_m",
    "v": 2,
    "src": "87589dc26621"
+  },
+  "en": {
+   "title": "FT: AI productivity impact study released",
+   "short": "FT: AI productivity impact study released",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "2be16d6e564c"
   }
  }
 }

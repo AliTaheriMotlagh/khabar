@@ -123,6 +123,13 @@
    "model": "qwen3.5-9b-q4_k_m",
    "v": 2,
    "src": "6f5ffd5d1a6e"
+  },
+  "en": {
+   "title": "Claude renames Max plans to Max and Ultra with new pricing",
+   "short": "Claude renames Max plans to Max and Ultra",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "ed6456dbf335"
   }
  }
 }

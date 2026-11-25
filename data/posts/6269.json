@@ -115,6 +115,13 @@
    "v": 1,
    "src": "ed994dcd0e15",
    "added": 2
+  },
+  "en": {
+   "title": "New step-change capability emerges in latest AI models",
+   "short": "New capability emerges in latest AI models",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "c57a3aaf86d3"
   }
  }
 }

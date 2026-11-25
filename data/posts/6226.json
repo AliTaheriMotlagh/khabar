@@ -111,6 +111,13 @@
    "v": 1,
    "src": "17cd904be37d",
    "added": 1
+  },
+  "en": {
+   "title": "Glif launches first AI modeling agency inside platform",
+   "short": "Glif launches first AI modeling agency",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "84d5098d6cfb"
   }
  }
 }

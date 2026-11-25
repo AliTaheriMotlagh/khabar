@@ -127,6 +127,13 @@
    "model": "qwen3.5-9b-q4_k_m",
    "v": 2,
    "src": "a9bfab0cd6af"
+  },
+  "en": {
+   "title": "Andrej Karpathy shares HackerTube tool for better video recommendations",
+   "short": "Karpathy shares HackerTube tool",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "632e132bafa1"
   }
  }
 }

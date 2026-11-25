@@ -125,6 +125,13 @@
    "v": 1,
    "src": "d3436a5c5012",
    "added": 1
+  },
+  "en": {
+   "title": "Aviern developing unmanned cargo planes for autonomous airports",
+   "short": "Aviern builds cargo planes for autonomous airports",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "da0891b5d232"
   }
  }
 }
