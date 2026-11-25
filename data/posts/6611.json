@@ -84,6 +84,13 @@
    "model": "qwen3.5-9b-q4_k_m",
    "v": 2,
    "src": "202a847be890"
+  },
+  "en": {
+   "title": "White House, Treasury discuss proposal requiring US companies to disclose use of Chinese open-weight AI models",
+   "short": "US firms urged to disclose Chinese AI model use",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "29d0961fbffd"
   }
  },
  "links": [

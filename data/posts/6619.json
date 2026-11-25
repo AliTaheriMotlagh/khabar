@@ -146,6 +146,13 @@
    "v": 1,
    "src": "69494f1602a4",
    "added": 3
+  },
+  "en": {
+   "title": "Researchers teach 5-tonne John Deere loader acrobatic moves",
+   "short": "AI teaches John Deere loader acrobatics",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "f5af9d03885d"
   }
  }
 }

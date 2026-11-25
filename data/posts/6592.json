@@ -60,6 +60,13 @@
    "model": "qwen3.5-9b-q4_k_m",
    "v": 2,
    "src": "e31b5527d032"
+  },
+  "en": {
+   "title": "U.S. loses measles elimination status after virus circulates for more than a year",
+   "short": "U.S. loses measles elimination status",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "a0976c2c9a8c"
   }
  },
  "links": [

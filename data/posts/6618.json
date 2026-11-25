@@ -89,6 +89,13 @@
    "v": 1,
    "src": "a5f0f40dbbcd",
    "added": 6
+  },
+  "en": {
+   "title": "First AML vaccine succeeds in Phase 3 trial",
+   "short": "First AML vaccine succeeds in Phase 3 trial",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "a2a1235cc2cc"
   }
  },
  "links": [

@@ -84,6 +84,13 @@
    "v": 1,
    "src": "9bb81c2eccbe",
    "added": 1
+  },
+  "en": {
+   "title": "Highly classified NSA internal communications network goes down",
+   "short": "NSA internal network down, no cyberattack evidence",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "f3ec348a5c44"
   }
  },
  "links": [

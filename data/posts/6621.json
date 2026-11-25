@@ -97,6 +97,13 @@
    "v": 1,
    "src": "b547f140bbdc",
    "added": 1
+  },
+  "en": {
+   "title": "New AIR-O model generates images from brain scans to show attention",
+   "short": "AIR-O model reads attention from brain scans",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "b53256709ca0"
   }
  },
  "links": [

@@ -79,6 +79,13 @@
    "v": 1,
    "src": "e8c1e655ca2a",
    "added": 2
+  },
+  "en": {
+   "title": "Dax Says Distillation Is Private Matter Between Companies",
+   "short": "Dax: Distillation is private, no govt role needed",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "660c1ff9b7a5"
   }
  },
  "links": [

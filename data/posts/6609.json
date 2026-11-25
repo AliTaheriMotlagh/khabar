@@ -152,6 +152,13 @@
    "v": 1,
    "src": "ee3d4b52ec33",
    "added": 2
+  },
+  "en": {
+   "title": "oss.new creates open source versions of any app for free",
+   "short": "oss.new turns any SaaS into open source apps",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "67de093558f4"
   }
  }
 }

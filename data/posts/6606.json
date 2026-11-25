@@ -106,6 +106,13 @@
    "v": 1,
    "src": "b87a95ea3578",
    "added": 8
+  },
+  "en": {
+   "title": "Microsoft MAI Realtime 1 outperforms GPT-Realtime 2.1 at $0.01 per audio minute",
+   "short": "Microsoft MAI Realtime 1 beats GPT-Realtime 2.1",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "46021cf97131"
   }
  },
  "links": [

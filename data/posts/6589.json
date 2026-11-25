@@ -140,6 +140,13 @@
    "v": 1,
    "src": "090ec5f560fc",
    "added": 1
+  },
+  "en": {
+   "title": "Google expands free Tasks in Gemini to hundreds of millions in six countries",
+   "short": "Google expands free Tasks in Gemini to millions",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "da94464c1323"
   }
  }
 }

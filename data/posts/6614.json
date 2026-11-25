@@ -138,6 +138,13 @@
    "v": 1,
    "src": "e6895538a2f4",
    "added": 7
+  },
+  "en": {
+   "title": "Kuroko 14.9M-parameter model ranks first on Sesame TurnBench",
+   "short": "Kuroko model tops Sesame TurnBench rankings",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "92f853b30da9"
   }
  }
 }

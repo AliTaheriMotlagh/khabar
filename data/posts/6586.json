@@ -136,6 +136,12 @@
    "v": 1,
    "src": "234b4ced1269",
    "added": 2
+  },
+  "en": {
+   "failed": true,
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "bad0e55c8edc"
   }
  },
  "gholam_checked": "2026-11-19T17:21:19+00:00"

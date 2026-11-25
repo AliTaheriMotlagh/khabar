@@ -95,6 +95,12 @@
    "v": 1,
    "src": "1a39df130664",
    "added": 11
+  },
+  "en": {
+   "failed": true,
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "9ce7d9dd207e"
   }
  },
  "links": [

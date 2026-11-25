@@ -139,6 +139,13 @@
    "v": 1,
    "src": "8cbe0055aedd",
    "added": 3
+  },
+  "en": {
+   "title": "Ken Liu introduces Second, a $10M seed personal AI infrastructure",
+   "short": "Second builds a personal AI model you own",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "d9d5e080e4b6"
   }
  }
 }

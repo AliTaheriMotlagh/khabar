@@ -89,6 +89,13 @@
    "v": 1,
    "src": "c9903d4dfe15",
    "added": 7
+  },
+  "en": {
+   "title": "RightNow decision model v3 is live",
+   "short": "RightNow decision model v3 is live",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "1aebec7ea988"
   }
  },
  "links": [

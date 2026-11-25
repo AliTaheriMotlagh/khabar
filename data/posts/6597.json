@@ -155,6 +155,13 @@
    "v": 1,
    "src": "18e75bf6be10",
    "added": 2
+  },
+  "en": {
+   "title": "GPT-6.2 Astra leads AA-Robotics v0.1 with 79 score",
+   "short": "GPT-6.2 Astra leads AA-Robotics v0.1",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "ceef3af3f6c3"
   }
  }
 }

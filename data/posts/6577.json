@@ -103,6 +103,13 @@
    "v": 1,
    "src": "337066b05bf9",
    "added": 1
+  },
+  "en": {
+   "title": "Commerce and Justice Departments Investigate Megaspeed",
+   "short": "DOJ and Commerce investigate Megaspeed",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "01991633a7e9"
   }
  },
  "links": [

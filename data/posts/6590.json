@@ -76,6 +76,13 @@
    "model": "qwen3.5-9b-q4_k_m",
    "v": 2,
    "src": "71f018a0acd4"
+  },
+  "en": {
+   "title": "OpenAI announces rollout of GPT-6.2 Astra and GPT-6.2 Sol models",
+   "short": "OpenAI rolls out GPT-6.2 Astra and Sol models",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "1c207883105a"
   }
  },
  "links": [

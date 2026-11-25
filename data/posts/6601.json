@@ -75,6 +75,13 @@
    "model": "qwen3.5-9b-q4_k_m",
    "v": 2,
    "src": "e791ac6910c4"
+  },
+  "en": {
+   "title": "NVIDIA reports Q3 fiscal 2027 revenue of $115.8 billion",
+   "short": "NVIDIA Q3 revenue hits $115.8 billion",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "c1f32fbc1c5c"
   }
  },
  "links": [

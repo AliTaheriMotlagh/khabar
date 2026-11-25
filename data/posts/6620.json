@@ -94,6 +94,13 @@
    "v": 1,
    "src": "be2a404d65cd",
    "added": 2
+  },
+  "en": {
+   "title": "Google buys bankrupt Spirit Airlines data for $10 million to train AI models",
+   "short": "Google buys Spirit Airlines data for $10 million",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "503539f7b3ef"
   }
  },
  "links": [

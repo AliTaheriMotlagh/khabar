@@ -103,6 +103,13 @@
    "v": 1,
    "src": "4ca0a75c2b7f",
    "added": 1
+  },
+  "en": {
+   "title": "Google AI Rewrites Agent Harness, Outperforms Previous Model in Coding Tasks",
+   "short": "Google AI improves agent harness, excels in coding",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "f712b116cc6a"
   }
  },
  "links": [

@@ -89,6 +89,13 @@
    "v": 1,
    "src": "ab3d54dd3421",
    "added": 1
+  },
+  "en": {
+   "title": "California DMV issues operational restrictions on Waymo following incidents",
+   "short": "California DMV restricts Waymo operations",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "74bcef6a2f42"
   }
  },
  "links": [

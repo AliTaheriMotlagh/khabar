@@ -104,6 +104,13 @@
    "v": 1,
    "src": "aa31613d1e74",
    "added": 7
+  },
+  "en": {
+   "title": "OpenAI releases updated Astra for Law model with expanded legal search index",
+   "short": "OpenAI updates Astra for Law model",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "55eb8c37c483"
   }
  },
  "links": [

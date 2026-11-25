@@ -132,6 +132,13 @@
    "v": 1,
    "src": "42c36fb01fd5",
    "added": 4
+  },
+  "en": {
+   "title": "Nuance Labs introduces AI persona Nora in research preview",
+   "short": "Nuance Labs introduces AI persona Nora",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "76eadeb4661b"
   }
  }
 }

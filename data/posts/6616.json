@@ -80,6 +80,13 @@
    "v": 1,
    "src": "6eaf3238ecaf",
    "added": 7
+  },
+  "en": {
+   "title": "Runway cuts GPU count for 57B video model from eight to four",
+   "short": "Runway runs 57B video model on four H100s",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "ecbca829e219"
   }
  },
  "links": [

@@ -115,6 +115,13 @@
    "v": 1,
    "src": "1fd8fbe139cf",
    "added": 3
+  },
+  "en": {
+   "title": "Google launches Call Companion for multimodal phone calls",
+   "short": "Google launches Call Companion for phone calls",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "4507d2c56e81"
   }
  }
 }

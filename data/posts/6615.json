@@ -113,6 +113,13 @@
    "v": 1,
    "src": "e7bff910cffb",
    "added": 5
+  },
+  "en": {
+   "title": "OpenAI models identify up to 14% PPA improvement on AMD flagship GPU IP",
+   "short": "OpenAI models improve AMD GPU IP by 14%",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "ad10a1bf8f78"
   }
  },
  "links": [

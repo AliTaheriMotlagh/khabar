@@ -92,6 +92,13 @@
    "v": 1,
    "src": "f3d6d2516eac",
    "added": 1
+  },
+  "en": {
+   "title": "NVIDIA Unveils DGX Spark HPC Developer Kit at SC26",
+   "short": "NVIDIA launches DGX Spark HPC kit at SC26",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "bd41ec5f1dd6"
   }
  },
  "links": [
