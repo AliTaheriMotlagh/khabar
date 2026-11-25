@@ -54,5 +54,23 @@
    "آنتروپیک"
   ]
  },
- "updated": "2026-11-25T22:54:21+00:00"
+ "updated": "2026-11-25T22:54:21+00:00",
+ "ai": {
+  "title": "پژوهشگران آنتروپیک با کلود کد فرضیه ریمان را ۹۹.۵۶ درصد کوتاه کردند",
+  "short": "کاهش ۹۹ درصدی کد فرضیه ریمان",
+  "topics": [
+   "آنتروپیک"
+  ],
+  "type": "پژوهش و مقاله",
+  "model": "qwen3.5-9b-q4_k_m",
+  "v": 2,
+  "src": "0c5c8c6aed3a",
+  "en": {
+   "title": "Anthropic researchers use Claude to cut Lean formalization of Riemann Hypothesis by 99.56%",
+   "short": "Claude cuts Riemann Hypothesis Lean code by 99.56%",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "123c3f4a8422"
+  }
+ }
 }
