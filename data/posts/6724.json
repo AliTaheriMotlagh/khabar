@@ -12,7 +12,7 @@
   "site": "🧵 Thread • FxTwitter",
   "title": "PrismML (@PrismML)",
   "description": "Today, we’re releasing Ternary Bonsai 2.5 27B.\nAn upgrade to Ternary Bonsai 2 27B, with substantially stronger agentic coding, multi-turn tool use, and long-horizon task execution. All within the same 5.9 GB model footprint.\nBased on Qwen3.8 27B, the model…",
-  "image": "https://cdn4.telesco.pe/file/C4AwM3p867w2rjCE8axgu_tMyJn3sseBXJhMj9kwTZxAc3ALvP2MjVN2omYUnUq-wIai7ljGMK3uPt1wOWlK1TvbDEr4cQdyofOAvED2m0ylJ9mqoWPQW1Z8Scw6jGOVQpCakNPaO57KllD8YfAbdSk3uhNC99xgng4XQiFYmdi3875bGYD7RHQGlAlN1o5-kbh7K9Z6grVFjUkakfHFJkM-hhO-r1E4Vr2-P02BUonzzXkfz86mEl59c2pXgVR1OjtwjR8WdO3TJW3dNgLqCCDgyNinkrzT4hauzHiu3LTIBhcoJAQ84yji38-xm9j9ERAjJcbsvgJnzWNzjL5x-Q.jpg"
+  "image": "https://cdn4.telesco.pe/file/cafeJt0LXrAZvYCpVk7Hav4odAjRoQ_AFxF6XhL4cwghsG6IXHmKPb3DjcIo4pv57oWCCGGe1G3uOsKCrCkzd3bRkFveM-0XiGS8bLiYUswvu04jld3mDq2j62BlquQmXiaBsBPi-4OeN9EiZCY0fge5Ur72Ru7xWkcnK-Oh7xTpfe2YpdTn_b1krJ9gY6GPwaStQYW3CARcoWM4the1g7VZDOM_AYdfVDyZ68vDL18_iMHm4PK-04BnnHu7s3UCdo9BJaldLDjFlHJB67gt3Y2EeVg4MQAweGMJC8XDPrsR3hNAvs-yIew7Icf6ejApnghKBdDhLp5EwpeDu-UEBw.jpg"
  },
  "gholam": {
   "text": "رفقا، شرکت Prism ML امروز نسخه جدید مدل هوش مصنوعی Ternary Bonsai 2.5 27B رو با لایسنس آزاد Apache 2.0 منتشر کرده؛ مدلی که روی پایه Qwen3.8 27B ساخته شده و با حجم فقط ۵.۹ گیگابایت (۹ برابر سبک‌تر از نسخه کامل)، یه جورایی مثل جا دادن یه موتور پرقدرت توی بدنه یه ماشین جمع‌وجوره. 💻\n\nسازنده‌اش توی وبلاگ و رشته‌توییت معرفی گفته این نسخه نسبت به Bonsai 2 مشکل زیاده‌گویی و چرخیدن توی حلقه‌های تکراری رو کمتر کرده و توی کارهای چندمرحله‌ای و ابزارزنی خیلی دقیق‌تر عمل می‌کنه:\n• توی بنچمارک‌هایی که خود شرکت منتشر کرده، امتیاز کدنویسی SWE-bench Verified از ۶۰.۸ به ۷۵.۶ و AppWorld از ۵۱.۲ به ۹۰.۵ رسیده و میانگین ابزارزنیِ ایجنتی به ۷۷.۲ از ۷۷.۷ِ مدل کامل نزدیک شده (البته توی جدول‌ها، معیار پیروی از دستورالعمل نسبت به نسخه قبل کمی افت داشته و از ۸۲.۵۵ به ۸۰.۹۰ اومده).\n• به گفته Prism ML، این مدل روی کارت‌های گرافیک NVIDIA و Intel با llama.cpp و روی دستگاه‌های اپل مثل مک، آیفون و آیپد با MLX به‌صورت محلی اجرا می‌شه و روی یه RTX 4090 به سرعت ۲۰۴ توکن در ثانیه می‌رسه.\n• توی دموهای معرفی هم نشون دادن که مدل به‌صورت کاملاً آفلاین با ۱۸۰ بار فراخوانی ابزار یه باگ pytest رو پیدا و برطرف کرده و با ۴۷ مرحله هم از روی یک اسکرین‌شات صفحه وب ساخته.\n\nبه‌گفته این شرکت، چنین ابعادی دست توسعه‌دهنده‌ها رو باز می‌ذاره تا دستیارهای کدنویسی و تحلیل اسناد رو روی سیستم شخصی کاربر بسازن و داده‌های محرمانه رو بدون نیاز به فضای ابری پردازش کنن.",
@@ -146,5 +146,5 @@
    "ایجنت"
   ]
  },
- "updated": "2026-11-25T13:31:25+00:00"
+ "updated": "2026-11-25T19:38:50+00:00"
 }

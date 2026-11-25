@@ -18,59 +18,6 @@
   "text": "رفیق، یه کاربر به اسم kimmonismus نوشته شایعاتی سر زبون‌ها افتاده که شاید OpenAI یا آنتروپیک روش سریعی برای تجزیه اعداد بزرگ پیدا کرده باشن؛ اتفاقی که به حدس اون، شاید دلیل رو نکردنِ مدل‌های جدیدشون باشه. این کاربر و حساب AndrewCurran_ (که می‌گه این شایعه حدود ده روزه درباره هر دو شرکت شنیده می‌شه) اشاره می‌کنن اگه چنین الگوریتمی روی کلیدهای واقعی جواب بده، رمزنگاری RSA که ستونِ بخش بزرگی از امنیت اینترنت و تایید آپدیت‌های نرم‌افزاریه، حتی بدون کامپیوتر کوانتومی هم می‌تونه بشکنه.\n\nالبته تو اسکرین‌شاتِ کامنت ۲۴ نوامبر خود اسکات آرونسون مشخصه که ماجرا هنوز هیچ قطعیتی نداره؛ او می‌گه با اینکه تقریباً مطمئنه این آزمایشگاه‌ها یک یا چند خبر بمب تو حوزه رمزنگاری دارن، اما نمی‌دونه چقدر می‌شه به شایعه «تجزیه اعداد در P» تکیه کرد و ممکنه اصل خبر مثل بازی «تلفن خراب» تو دهن‌ها چرخیده و عوض شده باشه. خلاصه تا وقتی مدرک و خبر رسمی رو نشده، این ماجرا رو هم باید گذاشت به حسابِ گمانه‌زنی‌ها و حرف‌وحدیث‌های داغ این روزها. 🔐",
   "date": "2026-11-25T16:30:45+00:00"
  },
- "links": [
-  {
-   "kind": "tweet",
-   "url": "https://x.com/kimmonismus/status/2125602411540566221",
-   "domain": "x.com",
-   "author": {
-    "name": "Chubby♨️",
-    "handle": "kimmonismus",
-    "avatar": "https://pbs.twimg.com/profile_images/1728327996375719936/RW7VBJfD_200x200.jpg"
-   },
-   "text": "If this rumors are true, it would explain why OpenAI and Anthropic are holding back their latest models: \n\nScott Aaronson says he's heard OpenAI or Anthropic may have found a way to factor large numbers in polynomial time.\n\nWhy this would be massive? RSA secures a huge chunk of the internet, and its whole security relies on factoring big numbers being impossible on normal computers. If an algorithm like this actually works on real key sizes, you wouldn't even need a quantum computer to break it. Fake software updates could pass signature checks, RSA-encrypted data could be read, and systems across the internet would have to migrate off RSA fast.\n\nSo yeah, something we expected might now actually happening.",
-   "date": 1795618081,
-   "media": [
-    {
-     "type": "image",
-     "src": "https://pbs.twimg.com/media/HX-oHkwXkAAROgB.jpg?name=orig",
-     "ratio": 0.6209
-    }
-   ],
-   "links": [],
-   "quote": {
-    "author": {
-     "name": "Andrew Curran",
-     "handle": "AndrewCurran_",
-     "avatar": "https://pbs.twimg.com/profile_images/1596945208058744833/_X3LT7fb_200x200.jpg"
-    },
-    "text": "Scott Aaronson on his blog. I have also heard this. In fact, this rumor has persisted for about ten days, about both Anthropic and OpenAI.  Considering how closely their recent math results have mirrored each other, if one has it, they probably both do. This would crack RSA.",
-    "date": 1795614995,
-    "media": [
-     {
-      "type": "image",
-      "src": "https://pbs.twimg.com/media/HX-cWrHaoAAjvA-.jpg?name=orig",
-      "ratio": 0.1889
-     }
-    ],
-    "links": []
-   }
-  }
- ],
- "article": {
-  "title": "یه کاربر به اسم kimmonismus نوشته شایعاتی سر زبون‌ها افتاده که شاید OpenAI یا آنتروپیک روش سریعی برای تجزیه اعداد بزرگ پیدا کرده باشن؛ اتفاقی که به حدس اون، شاید دلیل رو نکردنِ مدل‌های جدیدشون باشه",
-  "source_title": "If this rumors are true, it would explain why OpenAI and Anthropic are holding back their latest models:",
-  "body": [
-   "یه کاربر به اسم kimmonismus نوشته شایعاتی سر زبون‌ها افتاده که شاید OpenAI یا آنتروپیک روش سریعی برای تجزیه اعداد بزرگ پیدا کرده باشن؛ اتفاقی که به حدس اون، شاید دلیل رو نکردنِ مدل‌های جدیدشون باشه. این کاربر و حساب AndrewCurran_ (که می‌گه این شایعه حدود ده روزه درباره هر دو شرکت شنیده می‌شه) اشاره می‌کنن اگه چنین الگوریتمی روی کلیدهای واقعی جواب بده، رمزنگاری RSA که ستونِ بخش بزرگی از امنیت اینترنت و تایید آپدیت‌های نرم‌افزاریه، حتی بدون کامپیوتر کوانتومی هم می‌تونه بشکنه.",
-   "البته تو اسکرین‌شاتِ کامنت ۲۴ نوامبر خود اسکات آرونسون مشخصه که ماجرا هنوز هیچ قطعیتی نداره؛ او می‌گه با اینکه تقریباً مطمئنه این آزمایشگاه‌ها یک یا چند خبر بمب تو حوزه رمزنگاری دارن، اما نمی‌دونه چقدر می‌شه به شایعه «تجزیه اعداد در P» تکیه کرد و ممکنه اصل خبر مثل بازی «تلفن خراب» تو دهن‌ها چرخیده و عوض شده باشه. خلاصه تا وقتی مدرک و خبر رسمی رو نشده، این ماجرا رو هم باید گذاشت به حسابِ گمانه‌زنی‌ها و حرف‌وحدیث‌های داغ این روزها. 🔐"
-  ],
-  "why": null,
-  "tags": [
-   "اوپن‌ای‌آی",
-   "آنتروپیک"
-  ]
- },
- "updated": "2026-11-25T16:34:32+00:00",
  "ai": {
   "title": "شایعه: OpenAI و آنتروپیک ممکن است روش تجزیه اعداد برای شکستن رمزنگاری پیدا کرده باشند",
   "short": "شایعه شکستن رمزنگاری",
@@ -149,5 +96,58 @@
    "v": 2,
    "src": "3ab854622896"
   }
- }
+ },
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/kimmonismus/status/2125602411540566221",
+   "domain": "x.com",
+   "author": {
+    "name": "Chubby♨️",
+    "handle": "kimmonismus",
+    "avatar": "https://pbs.twimg.com/profile_images/1728327996375719936/RW7VBJfD_200x200.jpg"
+   },
+   "text": "If this rumors are true, it would explain why OpenAI and Anthropic are holding back their latest models: \n\nScott Aaronson says he's heard OpenAI or Anthropic may have found a way to factor large numbers in polynomial time.\n\nWhy this would be massive? RSA secures a huge chunk of the internet, and its whole security relies on factoring big numbers being impossible on normal computers. If an algorithm like this actually works on real key sizes, you wouldn't even need a quantum computer to break it. Fake software updates could pass signature checks, RSA-encrypted data could be read, and systems across the internet would have to migrate off RSA fast.\n\nSo yeah, something we expected might now actually happening.",
+   "date": 1795618081,
+   "media": [
+    {
+     "type": "image",
+     "src": "https://pbs.twimg.com/media/HX-oHkwXkAAROgB.jpg?name=orig",
+     "ratio": 0.6209
+    }
+   ],
+   "links": [],
+   "quote": {
+    "author": {
+     "name": "Andrew Curran",
+     "handle": "AndrewCurran_",
+     "avatar": "https://pbs.twimg.com/profile_images/1596945208058744833/_X3LT7fb_200x200.jpg"
+    },
+    "text": "Scott Aaronson on his blog. I have also heard this. In fact, this rumor has persisted for about ten days, about both Anthropic and OpenAI.  Considering how closely their recent math results have mirrored each other, if one has it, they probably both do. This would crack RSA.",
+    "date": 1795614995,
+    "media": [
+     {
+      "type": "image",
+      "src": "https://pbs.twimg.com/media/HX-cWrHaoAAjvA-.jpg?name=orig",
+      "ratio": 0.1889
+     }
+    ],
+    "links": []
+   }
+  }
+ ],
+ "article": {
+  "title": "یه کاربر به اسم kimmonismus نوشته شایعاتی سر زبون‌ها افتاده که شاید OpenAI یا آنتروپیک روش سریعی برای تجزیه اعداد بزرگ پیدا کرده باشن؛ اتفاقی که به حدس اون، شاید دلیل رو نکردنِ مدل‌های جدیدشون باشه",
+  "source_title": "If this rumors are true, it would explain why OpenAI and Anthropic are holding back their latest models:",
+  "body": [
+   "یه کاربر به اسم kimmonismus نوشته شایعاتی سر زبون‌ها افتاده که شاید OpenAI یا آنتروپیک روش سریعی برای تجزیه اعداد بزرگ پیدا کرده باشن؛ اتفاقی که به حدس اون، شاید دلیل رو نکردنِ مدل‌های جدیدشون باشه. این کاربر و حساب AndrewCurran_ (که می‌گه این شایعه حدود ده روزه درباره هر دو شرکت شنیده می‌شه) اشاره می‌کنن اگه چنین الگوریتمی روی کلیدهای واقعی جواب بده، رمزنگاری RSA که ستونِ بخش بزرگی از امنیت اینترنت و تایید آپدیت‌های نرم‌افزاریه، حتی بدون کامپیوتر کوانتومی هم می‌تونه بشکنه.",
+   "البته تو اسکرین‌شاتِ کامنت ۲۴ نوامبر خود اسکات آرونسون مشخصه که ماجرا هنوز هیچ قطعیتی نداره؛ او می‌گه با اینکه تقریباً مطمئنه این آزمایشگاه‌ها یک یا چند خبر بمب تو حوزه رمزنگاری دارن، اما نمی‌دونه چقدر می‌شه به شایعه «تجزیه اعداد در P» تکیه کرد و ممکنه اصل خبر مثل بازی «تلفن خراب» تو دهن‌ها چرخیده و عوض شده باشه. خلاصه تا وقتی مدرک و خبر رسمی رو نشده، این ماجرا رو هم باید گذاشت به حسابِ گمانه‌زنی‌ها و حرف‌وحدیث‌های داغ این روزها. 🔐"
+  ],
+  "why": null,
+  "tags": [
+   "اوپن‌ای‌آی",
+   "آنتروپیک"
+  ]
+ },
+ "updated": "2026-11-25T19:38:50+00:00"
 }

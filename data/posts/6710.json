@@ -12,7 +12,7 @@
   "site": "FxTwitter",
   "title": "Tencent Hy (@TencentHunyuan)",
   "description": "🚀\nHy MT3 is here — third-generation open-source translation models.\nMore accurate, more complete, and better at following user instructions. Language coverage expanded from 38 to 102.\nOptimized for game localization (with Honor of Kings) and image/OCR translation.…",
-  "image": "https://cdn4.telesco.pe/file/WQWPJFy7TDNsXTTDtumlZf3fBvmB8AG06aUZ9Eeakq4hmondbqQn13pSve7pbVjTX2czgvxtWZQPkOUVSiJGaee0N7ghaspHfP_KpV5aWrFH2oEWLnx1DGEFbKXcaEhWYbOIoaIs-e-SCqeY0tuoH1k50VxzBU-i3-Jei37bQK1DXK7HKvD7Exb8tHeZRg_IrticL8yGjz__O0kVmmJyHaAoy5EcwqsRdecAhv3x6GdeafZfHMqu0U1bzQPQDNZ573IOR6MPR3CtcMJBnBFn5W1D_6fQtFt3LgwFtOv3O-FA0F28ddHnAr2LVJzOnySBTj4zxxu6CWKQq8g8D9rROg.jpg"
+  "image": "https://cdn4.telesco.pe/file/A6nc20vqywWeQH7_YwF8Zf0eEG1Ba8jK0kt9bNnF_HKUqwIhzYjv8MWfA0KZzukZYXmgsiaqUXMrDGM7XQjsHC3Kf27ctMJYYsxHCzvtLWHLLbyTXqhSnHyzoT5XK6Mhr-48fq_euQ4G0-G1wlam2DgLIdgMAbAOKxrEMH3Kpt7r2rOgT6-URwRHbOgRnzjeI2JUS7KKMMHabLQE0lVj8uRy27AZN2E2pYBIQIg3TY-OIGrkF2I2dHwKaJwY7MKwNxpzFZTBxynywABzIvtN8CJwIh2Crlo1qPrgybUyWSQNTq1TPqMOpE6pp3aFsMhSK0f6TVCkiyD2FnzifGonGw.jpg"
  },
  "gholam": {
   "text": "سلام رفقا، تیم هوش مصنوعی تنسنت هونیوان از نسل سوم مدل‌های ترجمه متن‌باز خودش با اسم Hy-MT3 رونمایی کرد که کدها و وزن‌هاش روی گیت‌هاب و هاگینگ‌فیس منتشر شده. به گفته این تیم، پوشش زبانی مدل از ۳۸ به ۱۰۲ زبان رسیده؛ زبان فارسی از نسل قبل توی لیست بود و حالا کلی زبان دیگه مثل کردی، آذری، تاجیکی و ارمنی هم بهش اضافه شدن تا کمتر زبونی از قلم بیفته. 🌐\n\n• این خانواده در سه سایز ۱.۸، ۷ و ۳۰ میلیاردی (با ۳ میلیارد پارامتر فعال) و در فرمت‌های مختلف از جمله FP8 و GGUF عرضه شده و هم‌زمان ابزار ارزیابی خودکار ترجمه TransRubric هم متن‌باز شده.\n• طبق گزارش و نمودارهای منتشرشده از طرف تنسنت، مدل ۳۰ میلیاردی در حالت غیرتفکری روی بنچمارک‌هایی مثل WildMTBench و IFMTBench از رقیبانی مثل Qwen3.8-Max و DeepSeek-V4.1-Flash جلو زده و خطاهای ترجمه و جاانداختن عبارت‌ها رو هم نسبت به نسل دوم به شکل محسوسی کم کرده.\n• دو تا تمرکز اصلی این نسخه روی بومی‌سازی بازی‌ها (با همکاری تیم بازی Honor of Kings برای سالم موندن کدها و اصطلاحات بازی) و ترجمه متن روی تصویر بوده تا غلط‌های OCR کار رو خراب نکنن.\n\nالبته خب فعلاً این آمار و ارقام از تست‌ها و گزارش خود سازنده‌ست، ولی برای کسایی که دنبال ترجمه سبک، بومی‌سازی بازی یا خوندن متن عکس‌ها هستن، گزینه خوش‌قولی به نظر میاد.",
@@ -168,5 +168,5 @@
    "کدنویسی"
   ]
  },
- "updated": "2026-11-25T13:31:25+00:00"
+ "updated": "2026-11-25T19:38:51+00:00"
 }

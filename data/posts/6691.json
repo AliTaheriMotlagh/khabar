@@ -12,10 +12,11 @@
   "site": "FxTwitter · z.ai",
   "title": "Z.ai (@Zai_org)",
   "description": "Introducing GLM-5.4: Generalized Coding with Our First Loop Transformer.\n- Loops existing layers in the GLM-5 base model for deeper reasoning\n- Pushes beyond traditional coding to video, games, 3D shaders, and CAD modeling\n- Adds vision capabilities for…",
-  "image": "https://cdn4.telesco.pe/file/b1fyKUB586Uu0Sj2W3noMxkOTHhBljKTIFcYAaXeEa5ZZXCe1Cjnf2DJtRfQnS0nK7hEUgvrGYnzTUmbazcNC80oTp3UH1CWsCore_QvO_d0U-DIwDnKHxL83o2suP_11EWOvk8meYmGDQHSod7Eg4Pj0wwFFPecC-zmrEKBukxFcxzwomOHZbmaQSo8veSY8O4mPKuT1D8uwyuciQcLrXkLFxAXrA9EVSFjfLLWn5nLF-UGurW_gmM9VYT_UjlRpu-NIUkT-DZDRDFsnciWtSIJWb5v7d8yaBlnxSNVNMr38Kyv8hDH3fRuQdGiC7xqvmqD9xu-1kd4nYf-KuDWxg.jpg",
+  "image": "https://cdn4.telesco.pe/file/jZVo8jvAF_CwWTz9HhfMiGjeUV9TkY2nRjIjuSPuESJp23QG19BoLyK6wtcdJrowp6If7hvCJLqur7AOWj05GaObG3wtfu685c_olecK4vlL29CZHNt3HRKRw-T3mbU3wp23EJ5Tw5LuPYpBPk0usN6eB9ns-HCv7dQn0h4FXnMoLe5_zbaSZVRjFLoHgWEtFV9BvbuUlUEp8dpY4KUQkQvHZohYXtzXCdgsUi_aWebH7Hgas4AuyQuhyFqvBrL5grhLz7ERcEI3_g5H2jodqcbevyoIzzM75UBgzfVlAgxGEnNrIpE2usDDUF9MK4XYS5FFHuc28X8pog_YOqMfqQ.jpg",
   "small": true
  },
  "gholam": null,
+ "gholam_checked": "2026-11-25T16:34:34+00:00",
  "ai": {
   "title": "Z.ai مدل GLM-5.4 را با معماری ترنسفورمر حلقوی برای کدنویسی و چندرسانه‌ای معرفی کرد",
   "short": "مدل GLM-5.4 از Z.ai",
@@ -133,6 +134,5 @@
    "چین"
   ]
  },
- "updated": "2026-11-25T16:34:34+00:00",
- "gholam_checked": "2026-11-25T16:34:34+00:00"
+ "updated": "2026-11-25T19:38:51+00:00"
 }

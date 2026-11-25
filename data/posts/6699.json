@@ -12,10 +12,11 @@
   "site": "FxTwitter · blog.google",
   "title": "Logan Kilpatrick (@OfficialLoganK)",
   "description": "Nice Gemini API quality of life update shipping today:\nYou can now pass PDFs, Office files (docs, slides, spreadsheets), audio, and video directly to the Gemini API and request only the pages, spreadsheet cells, media segments, and layers you need.\nRead…",
-  "image": "https://cdn4.telesco.pe/file/g0YLMdXHJ1q69hGrq6HE3VzaEz7dRdrs0d6hMQ7iNUxusNBCTdMt4SwLuL5Xit4KlA36maxsL5Zgf7HG3R_Ft7Bm7IacSJ-6KtHYPBdAm7dHvyQhJMahxYa_tPLJfuRJb4egfLwucb9OzmL4aZ_sEw8IiOecnP9OJOOg0ICTRbaUBs7ySJ97xSasJRJoNxMjWm06pTVoAyZYJwZP_x0jG8AK0tEQ89S_5qCtXSXmAk-hFHvfpsUoYKWQXbX30-OVCsGiFpPJyffUxTp85zqz-xNABaxu7lGiWzvbrjpSkCaeiacEaETjh-O_kzK30WHqTthkAatW7lsr9LmwlkPxfA.jpg",
+  "image": "https://cdn4.telesco.pe/file/Ee3XF-bF1Nv0grw-lbpyXT8sVvDKgWb8K5aYOC2tcNYemUlYNtTJfRHkr7SCsNg-BxIPDb1YmbEaYcOf_4SaJ4FaXifG4faofPVFjwpSlCkfN748LLCFb_WXtUQ_WJAzKBIxN2EC89AIa2t2DwJDNnHWIixGWxghr7UsOXOe7H28LOG-QG4MQe8eKlJINhA9JUPRtdNw-xsJqLivsTf-9N33Hc555vz6M1Im-1bxbjf_yTVpJAJnbTjBu1mZQephM9st0qhuSgDpIEy2YCu-wKgKlVWeiLygorIbOF8ZLm_mn6cNwn39SVN_OxpLw6X4EIhuLrdYlMfMNh0w0nw1yg.jpg",
   "small": true
  },
  "gholam": null,
+ "gholam_checked": "2026-11-25T19:25:26+00:00",
  "ai": {
   "title": "گوگل قابلیت برش فایل و پرداخت فقط برای بخش‌های استفاده‌شده را به Gemini API اضافه کرد",
   "short": "برش فایل در Gemini API",
@@ -153,6 +154,5 @@
    "گوگل"
   ]
  },
- "updated": "2026-11-25T19:25:26+00:00",
- "gholam_checked": "2026-11-25T19:25:26+00:00"
+ "updated": "2026-11-25T19:38:51+00:00"
 }

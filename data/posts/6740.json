@@ -19,34 +19,6 @@
   "text": "رفقا، توی پستی از حساب @sama اعلام شده که اوپن‌ای‌آی داره قابلیت جدیدی به اسم Private Inference رو (که بخشی از OpenAI Private Intelligence هست) با یه گروه کوچیک از مشتری‌ها تست می‌کنه. 🔒 نویسنده پست می‌گه حفاظت قوی‌تر از حریم خصوصی باعث می‌شه هوش مصنوعی پیشرفته توی کارهای خیلی بیشتری به کار بیاد و حریم خصوصی کسب‌وکارها برای داشتن یه اکوسیستم سالم مهمه. همچنین گفته شده ZDR در کنار Private Safety Processing این امکان رو می‌ده که بررسی‌های ایمنی به‌صورت خودکار انجام بشه، بدون اینکه پرسنل اوپن‌ای‌آی به اصلِ محتوا دسترسی داشته باشن؛ یه جورایی مثل این می‌مونه که بسته رو دم در بررسی کنن، بی‌اینکه کسی نامه رو بخونه. در آخر هم اشاره کرده که علاقه‌مندها می‌تونن به @shekar4x پیام بدن.",
   "date": "2026-11-25T17:27:36+00:00"
  },
- "links": [
-  {
-   "kind": "tweet",
-   "url": "https://x.com/sama/status/2125638790593274259",
-   "domain": "x.com",
-   "author": {
-    "name": "Sam Altman",
-    "handle": "sama",
-    "avatar": "https://pbs.twimg.com/profile_images/2046764873200394240/r7BxVezs_200x200.jpg"
-   },
-   "text": "We’re now testing Private Inference, our latest offering as part of OpenAI Private Intelligence, with a small group of customers.\n\nStronger privacy protections will make frontier AI useful for a lot more work, and business privacy is important for a healthy ecosystem. Reach out to @shekar4x if interested!\n\n(Also, ZDR with Private Safety Processing enables automated safety reviews without giving OpenAI personnel access to the underlying content.)",
-   "date": 1795626754,
-   "media": [],
-   "links": []
-  }
- ],
- "article": {
-  "title": "توی پستی از حساب @sama اعلام شده که اوپن‌ای‌آی داره قابلیت جدیدی به اسم Private Inference رو (که بخشی از OpenAI Private Intelligence هست) با یه گروه کوچیک از مشتری‌ها تست می‌کنه",
-  "source_title": "We’re now testing Private Inference, our latest offering as part of OpenAI Private Intelligence, with a small group of customers.",
-  "body": [
-   "توی پستی از حساب @sama اعلام شده که اوپن‌ای‌آی داره قابلیت جدیدی به اسم Private Inference رو (که بخشی از OpenAI Private Intelligence هست) با یه گروه کوچیک از مشتری‌ها تست می‌کنه. 🔒 نویسنده پست می‌گه حفاظت قوی‌تر از حریم خصوصی باعث می‌شه هوش مصنوعی پیشرفته توی کارهای خیلی بیشتری به کار بیاد و حریم خصوصی کسب‌وکارها برای داشتن یه اکوسیستم سالم مهمه. همچنین گفته شده ZDR در کنار Private Safety Processing این امکان رو می‌ده که بررسی‌های ایمنی به‌صورت خودکار انجام بشه، بدون اینکه پرسنل اوپن‌ای‌آی به اصلِ محتوا دسترسی داشته باشن؛ یه جورایی مثل این می‌مونه که بسته رو دم در بررسی کنن، بی‌اینکه کسی نامه رو بخونه. در آخر هم اشاره کرده که علاقه‌مندها می‌تونن به @shekar4x پیام بدن."
-  ],
-  "why": null,
-  "tags": [
-   "اوپن‌ای‌آی"
-  ]
- },
- "updated": "2026-11-25T17:31:32+00:00",
  "ai": {
   "title": "اوپن‌ای‌آی قابلیت Private Inference را برای مشتریان خاص تست می‌کند",
   "short": "Private Inference در اوپن‌ای‌آی",
@@ -134,5 +106,33 @@
    "src": "a71749cd83fd",
    "added": 3
   }
- }
+ },
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/sama/status/2125638790593274259",
+   "domain": "x.com",
+   "author": {
+    "name": "Sam Altman",
+    "handle": "sama",
+    "avatar": "https://pbs.twimg.com/profile_images/2046764873200394240/r7BxVezs_200x200.jpg"
+   },
+   "text": "We’re now testing Private Inference, our latest offering as part of OpenAI Private Intelligence, with a small group of customers.\n\nStronger privacy protections will make frontier AI useful for a lot more work, and business privacy is important for a healthy ecosystem. Reach out to @shekar4x if interested!\n\n(Also, ZDR with Private Safety Processing enables automated safety reviews without giving OpenAI personnel access to the underlying content.)",
+   "date": 1795626754,
+   "media": [],
+   "links": []
+  }
+ ],
+ "article": {
+  "title": "توی پستی از حساب @sama اعلام شده که اوپن‌ای‌آی داره قابلیت جدیدی به اسم Private Inference رو (که بخشی از OpenAI Private Intelligence هست) با یه گروه کوچیک از مشتری‌ها تست می‌کنه",
+  "source_title": "We’re now testing Private Inference, our latest offering as part of OpenAI Private Intelligence, with a small group of customers.",
+  "body": [
+   "توی پستی از حساب @sama اعلام شده که اوپن‌ای‌آی داره قابلیت جدیدی به اسم Private Inference رو (که بخشی از OpenAI Private Intelligence هست) با یه گروه کوچیک از مشتری‌ها تست می‌کنه. 🔒 نویسنده پست می‌گه حفاظت قوی‌تر از حریم خصوصی باعث می‌شه هوش مصنوعی پیشرفته توی کارهای خیلی بیشتری به کار بیاد و حریم خصوصی کسب‌وکارها برای داشتن یه اکوسیستم سالم مهمه. همچنین گفته شده ZDR در کنار Private Safety Processing این امکان رو می‌ده که بررسی‌های ایمنی به‌صورت خودکار انجام بشه، بدون اینکه پرسنل اوپن‌ای‌آی به اصلِ محتوا دسترسی داشته باشن؛ یه جورایی مثل این می‌مونه که بسته رو دم در بررسی کنن، بی‌اینکه کسی نامه رو بخونه. در آخر هم اشاره کرده که علاقه‌مندها می‌تونن به @shekar4x پیام بدن."
+  ],
+  "why": null,
+  "tags": [
+   "اوپن‌ای‌آی"
+  ]
+ },
+ "updated": "2026-11-25T19:38:50+00:00"
 }

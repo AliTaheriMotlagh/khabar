@@ -9,12 +9,13 @@
  "media": [
   {
    "type": "image",
-   "src": "https://cdn1.telesco.pe/file/BMutHsymYpN88DWj6TLYztimt9lhnYvcMlBMBXMauHaBgJdKwLNV9bFXENDHng6J32HLNLhKwNDdcgAU5zvovZFestV7ilRoNYQ2Hd_BEx8USUsyXCe7A9XlmXNjV8VNzFgKm9jIZWIontTlsuWGSC0BheWMVKv8KlVZuoZgBl5eadZH5EWFZ0YK4nh_7Hu0Wk17dHH9-TXpAAP_cx3Fyw8X1NVBpjZsnVneSkWB0eDBooZh99ejiFfyxK9w53cexHDtF7mQ0-Irc7G3vUQe2e7aU6O36qQCfxepzi9lc1Uth1qXOZ9sq-pLY26OepTdRLySEqmeSYrtuHNqRwen0Q.jpg",
+   "src": "https://cdn1.telesco.pe/file/CBp30Fzsyl-iF8uRA3tRDwjdmH5U2nxBVzgQ17F4wnBx99KQMn-DpTuZTGhk2t3EYL_0DCX9-xcYdUTLNNKPMFRWy8Md_DzH4hdvuHSwNE3biSjKVbcFlzfU7WMrs9BoozWShlyvfl5UjYVvPBLlvhBu3icWn-6-pGeiv5ZQ4LgQKis-MDrMYypzfp74ZtKxvJC_a0PSIjQGD7CchrUyBW8JRCfXzo4k8Oqup9drx23TP2fKUsu98epnvUvP_4X9s7RvUb68p2ExtuSddzpy0FRqUBzy698tn8C79PPifSvKCx-rUJpslnDckOunyXiRGgihivuv-Jaa99YGGeazxA.jpg",
    "ratio": 1.3333
   }
  ],
  "preview": null,
  "gholam": null,
+ "gholam_checked": "2026-11-25T18:06:28+00:00",
  "ai": {
   "speech": {
    "v": 1,
@@ -30,6 +31,5 @@
   "why": null,
   "tags": []
  },
- "updated": "2026-11-25T18:06:28+00:00",
- "gholam_checked": "2026-11-25T18:06:28+00:00"
+ "updated": "2026-11-25T19:38:51+00:00"
 }
