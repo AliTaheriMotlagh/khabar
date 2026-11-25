@@ -14495,6 +14495,18 @@
    "name_en": "S&P 500",
    "name_fa": "ایس‌اند‌پی ۵۰۰",
    "kind": "product"
+  },
+  {
+   "slug": "strassen",
+   "name_en": "Strassen",
+   "name_fa": "استراسن",
+   "kind": "person"
+  },
+  {
+   "slug": "virginia-williams",
+   "name_en": "Virginia Williams",
+   "name_fa": "ویرجینیا ویلیامز",
+   "kind": "person"
   }
  ]
 }
