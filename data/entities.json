@@ -14699,6 +14699,30 @@
    "name_en": "Gemini Neon",
    "name_fa": "جمنی نئون",
    "kind": "model"
+  },
+  {
+   "slug": "sophont",
+   "name_en": "Sophont",
+   "name_fa": "سوفانت",
+   "kind": "company"
+  },
+  {
+   "slug": "readyneuro",
+   "name_en": "ReadyNeuro",
+   "name_fa": "ری‌دی‌نیورو",
+   "kind": "product"
+  },
+  {
+   "slug": "cortexmae",
+   "name_en": "CortexMAE",
+   "name_fa": "کورتکس‌ام‌ای‌ای",
+   "kind": "product"
+  },
+  {
+   "slug": "neurips",
+   "name_en": "NeurIPS",
+   "name_fa": "نور‌آی‌پی‌اس",
+   "kind": "company"
   }
  ]
 }
