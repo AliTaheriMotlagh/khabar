@@ -30,7 +30,14 @@
   "type": "خبر",
   "model": "qwen3.5-9b-q4_k_m",
   "v": 2,
-  "src": "938121ae5710"
+  "src": "938121ae5710",
+  "en": {
+   "title": "Anthropic and OpenAI employees fear unreleased models are too powerful to release",
+   "short": "AI firms fear unreleased models too powerful",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "b5feceee789c"
+  }
  },
  "links": [
   {

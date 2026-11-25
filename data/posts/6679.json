@@ -116,6 +116,13 @@
    "v": 1,
    "src": "79e9fc2c9784",
    "added": 2
+  },
+  "en": {
+   "title": "Tesla FSD V15 Reality View in busy downtown setting",
+   "short": "Tesla FSD V15 Reality View in downtown",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "155c662709a0"
   }
  }
 }

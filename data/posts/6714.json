@@ -67,6 +67,13 @@
   "type": "پژوهش و مقاله",
   "model": "qwen3.5-9b-q4_k_m",
   "v": 2,
-  "src": "92fd8d7e301b"
+  "src": "92fd8d7e301b",
+  "en": {
+   "title": "Claude Opus 5.5 writes transformer solving 100% of mazes in 39 minutes",
+   "short": "Claude writes maze solver in 39 minutes",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "419d14b40022"
+  }
  }
 }

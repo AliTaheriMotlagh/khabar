@@ -86,6 +86,13 @@
    "v": 1,
    "src": "fe6770a7f840",
    "added": 1
+  },
+  "en": {
+   "title": "Trump argues for Jensen Huang's return at Nvidia board meeting",
+   "short": "Trump urges Nvidia to bring back Jensen Huang",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "b240aec7e588"
   }
  },
  "links": [

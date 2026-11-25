@@ -89,6 +89,13 @@
    "v": 1,
    "src": "a1a9396acb15",
    "added": 1
+  },
+  "en": {
+   "title": "Dario Suggests Immersive Videogames Could Solve AI Job Loss",
+   "short": "Dario suggests games solve AI job loss",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "2059dc071032"
   }
  },
  "links": [

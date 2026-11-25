@@ -144,6 +144,13 @@
    "v": 1,
    "src": "a2449d1a270e",
    "added": 3
+  },
+  "en": {
+   "title": "Noeri AI self-improvement loop beats Claude Opus 5.5 and GPT-6.2 Sol at fraction of cost",
+   "short": "Noeri AI beats top models at lower cost",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "99812ac11670"
   }
  }
 }

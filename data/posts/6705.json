@@ -126,6 +126,13 @@
    "model": "qwen3.5-9b-q4_k_m",
    "v": 2,
    "src": "b1efd4a2ec08"
+  },
+  "en": {
+   "title": "Anthropic co-founders share story so far",
+   "short": "Anthropic co-founders share story so far",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "e21a2b28bf87"
   }
  }
 }

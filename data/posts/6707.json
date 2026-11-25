@@ -88,6 +88,13 @@
    "v": 1,
    "src": "a07773b2b43b",
    "added": 2
+  },
+  "en": {
+   "title": "HungerG stealth model free for OpenCode Go subscribers this week",
+   "short": "HungerG free for OpenCode Go subscribers",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "917c48475e96"
   }
  },
  "links": [

@@ -26,7 +26,14 @@
   "type": "ابزار و محصول",
   "model": "qwen3.5-9b-q4_k_m",
   "v": 2,
-  "src": "25783969c50c"
+  "src": "25783969c50c",
+  "en": {
+   "title": "Microsoft rolls out combined Chat and Work experience to Pro users",
+   "short": "Microsoft tests combined Chat and Work experience",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "dafd50767d69"
+  }
  },
  "links": [
   {

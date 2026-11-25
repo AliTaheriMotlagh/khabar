@@ -74,6 +74,13 @@
   "type": "پژوهش و مقاله",
   "model": "qwen3.5-9b-q4_k_m",
   "v": 2,
-  "src": "255940643821"
+  "src": "255940643821",
+  "en": {
+   "title": "No single harness is best across models",
+   "short": "Harness performance depends on model pair",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "f1332946248a"
+  }
  }
 }

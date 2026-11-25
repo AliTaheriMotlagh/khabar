@@ -56,6 +56,12 @@
   "type": "خبر",
   "model": "qwen3.5-9b-q4_k_m",
   "v": 2,
-  "src": "fe602dc5675b"
+  "src": "fe602dc5675b",
+  "en": {
+   "failed": true,
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "ef3edc8f31f6"
+  }
  }
 }

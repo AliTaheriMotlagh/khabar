@@ -96,6 +96,13 @@
    "v": 1,
    "src": "affa40796193",
    "added": 3
+  },
+  "en": {
+   "title": "GLM-5.4 Available to All Coding Plan Users With Enhanced Vision",
+   "short": "GLM-5.4 now available with 50% more quota",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "ace3440efe7d"
   }
  },
  "links": [

@@ -77,6 +77,13 @@
    "model": "qwen3.5-9b-q4_k_m",
    "v": 1,
    "src": "6940eb1cc10f"
+  },
+  "en": {
+   "title": "NVIDIA Board Reinstates Jensen Huang as President, CEO and Board Director",
+   "short": "NVIDIA reinstates Jensen Huang as CEO",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "809cd4bbaca8"
   }
  },
  "links": [

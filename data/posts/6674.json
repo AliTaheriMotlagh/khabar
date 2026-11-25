@@ -91,6 +91,13 @@
    "v": 1,
    "src": "33b561fa97ab",
    "added": 3
+  },
+  "en": {
+   "title": "Jeveration: System One Models Now Generate",
+   "short": "Jeveration: System One Models Now Generate",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "eaa12e956bf8"
   }
  },
  "links": [

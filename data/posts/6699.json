@@ -108,6 +108,13 @@
    "v": 1,
    "src": "e5648eccf2ad",
    "added": 1
+  },
+  "en": {
+   "title": "Gemini API adds file slicing controls and native Office support",
+   "short": "Gemini API adds file slicing and Office support",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "37cdaf3aaf03"
   }
  },
  "links": [

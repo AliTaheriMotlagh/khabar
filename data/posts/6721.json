@@ -27,7 +27,14 @@
   "type": "ابزار و محصول",
   "model": "qwen3.5-9b-q4_k_m",
   "v": 2,
-  "src": "3b905866dfb7"
+  "src": "3b905866dfb7",
+  "en": {
+   "title": "Cognition introduces SWE-2.1 coding model with pure reinforcement learning",
+   "short": "Cognition launches SWE-2.1 coding model",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "77d905fb7acf"
+  }
  },
  "links": [
   {

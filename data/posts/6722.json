@@ -28,7 +28,14 @@
   "type": "خبر",
   "model": "qwen3.5-9b-q4_k_m",
   "v": 2,
-  "src": "20e40295f47f"
+  "src": "20e40295f47f",
+  "en": {
+   "title": "Toronto engineer wins Ontario human rights case after Amazon dropped him",
+   "short": "Engineer wins human rights case against Amazon",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "2c645c43f05e"
+  }
  },
  "links": [
   {

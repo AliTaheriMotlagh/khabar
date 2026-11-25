@@ -83,6 +83,13 @@
    "model": "qwen3.5-9b-q4_k_m",
    "v": 2,
    "src": "51808241621e"
+  },
+  "en": {
+   "title": "OpenAI shares pretraining progress transparency for shared safety bars",
+   "short": "OpenAI shares pretraining progress for safety",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "5c95a7e62c9a"
   }
  },
  "links": [

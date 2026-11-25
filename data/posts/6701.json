@@ -105,6 +105,13 @@
    "model": "qwen3.5-9b-q4_k_m",
    "v": 2,
    "src": "20ef5775dbfb"
+  },
+  "en": {
+   "title": "Antigravity resets Gemini quotas and expands model access to all users",
+   "short": "Antigravity upgrades models and expands access",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "fe6b7cb2b12f"
   }
  },
  "links": [

@@ -80,6 +80,13 @@
   "type": "پژوهش و مقاله",
   "model": "qwen3.5-9b-q4_k_m",
   "v": 2,
-  "src": "3676b9a95060"
+  "src": "3676b9a95060",
+  "en": {
+   "title": "GPT-6 models design protein structures and sequences using reasoning and code",
+   "short": "GPT-6 models design proteins using code",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "641d75c19f03"
+  }
  }
 }
