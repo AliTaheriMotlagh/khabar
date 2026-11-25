@@ -14597,6 +14597,42 @@
    "name_en": "Optimization-Bench",
    "name_fa": "اپتی‌میزیشن بنچ",
    "kind": "product"
+  },
+  {
+   "slug": "tencent-hunyuan",
+   "name_en": "Tencent Hunyuan",
+   "name_fa": "تنسنت هونیوان",
+   "kind": "company"
+  },
+  {
+   "slug": "hy-mt3",
+   "name_en": "Hy-MT3",
+   "name_fa": "های-ام‌تی۳",
+   "kind": "model"
+  },
+  {
+   "slug": "transrubric",
+   "name_en": "TransRubric",
+   "name_fa": "ترنس‌روبریک",
+   "kind": "product"
+  },
+  {
+   "slug": "axios",
+   "name_en": "Axios",
+   "name_fa": "آکسیوس",
+   "kind": "company"
+  },
+  {
+   "slug": "mbzuai",
+   "name_en": "MBZUAI",
+   "name_fa": "ام‌بی‌زدو‌ای‌آی",
+   "kind": "company"
+  },
+  {
+   "slug": "looped-weight-space-programming",
+   "name_en": "Looped Weight-Space Programming",
+   "name_fa": "برنامه‌نویسی حلقه‌ای در فضای وزن‌ها",
+   "kind": "product"
   }
  ]
 }
