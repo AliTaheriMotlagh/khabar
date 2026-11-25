@@ -125,6 +125,13 @@
    "v": 1,
    "src": "75424442a0a3",
    "added": 1
+  },
+  "en": {
+   "title": "Induction Labs pays agents up to $200 per task",
+   "short": "Induction Labs pays agents up to $200 per task",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "f21438c6d0a6"
   }
  }
 }

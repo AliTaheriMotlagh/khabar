@@ -113,6 +113,13 @@
    "model": "qwen3.5-9b-q4_k_m",
    "v": 2,
    "src": "6e37ce8407e4"
+  },
+  "en": {
+   "title": "Anthropic migrates monorepo from git to in-house source control",
+   "short": "Anthropic replaces git with in-house system",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "ea63e7ddd1a0"
   }
  }
 }

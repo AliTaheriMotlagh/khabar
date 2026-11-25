@@ -138,6 +138,13 @@
    "v": 1,
    "src": "ea44a76dcd28",
    "added": 1
+  },
+  "en": {
+   "title": "ScaleDown releases 3 small models for classify, extract and summarize tasks",
+   "short": "ScaleDown launches 3 small models for simple tasks",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "ea4b5afc8244"
   }
  }
 }

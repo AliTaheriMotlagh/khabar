@@ -118,6 +118,13 @@
    "model": "qwen3.5-9b-q4_k_m",
    "v": 2,
    "src": "e4a42c03e9da"
+  },
+  "en": {
+   "title": "More than half of EU enterprise AI use now involves AI agents",
+   "short": "EU enterprise AI use now involves agents",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "062d137bf3f2"
   }
  }
 }

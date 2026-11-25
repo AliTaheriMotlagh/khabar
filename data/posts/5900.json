@@ -126,6 +126,13 @@
    "model": "qwen3.5-9b-q4_k_m",
    "v": 2,
    "src": "a3e760b9da3a"
+  },
+  "en": {
+   "title": "Anthropic third-quarter revenue rises 45% to $16.8 billion",
+   "short": "Anthropic Q3 revenue hits $16.8 billion",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "f46961c83846"
   }
  }
 }

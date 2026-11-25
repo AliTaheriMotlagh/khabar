@@ -124,6 +124,13 @@
    "model": "qwen3.5-9b-q4_k_m",
    "v": 2,
    "src": "31c711dc643b"
+  },
+  "en": {
+   "title": "Interactive 5-stage visual atlas brings textbook biology to life in browser",
+   "short": "Interactive atlas brings textbook biology to life",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "e4b3f5b4408f"
   }
  }
 }

@@ -115,6 +115,13 @@
    "v": 1,
    "src": "f219cc0614ae",
    "added": 1
+  },
+  "en": {
+   "title": "Reason introduces state-of-the-art harness on cost efficiency for free",
+   "short": "Reason beats Codex+Astra on Terminal-Bench 4.0",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "c3aa517a1af0"
   }
  }
 }

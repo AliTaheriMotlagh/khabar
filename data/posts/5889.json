@@ -106,6 +106,13 @@
    "model": "qwen3.5-9b-q4_k_m",
    "v": 2,
    "src": "f0bd1f1b81c8"
+  },
+  "en": {
+   "title": "Top 1% of U.S. spenders average $903 monthly on prosumer AI tools",
+   "short": "Top 1% spend $903 monthly on prosumer AI",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "cb1a485e1bd9"
   }
  }
 }

@@ -135,6 +135,13 @@
    "v": 1,
    "src": "d8d6c641b20b",
    "added": 3
+  },
+  "en": {
+   "title": "Claude Platform Adds OpenTelemetry Tracing Support In Public Beta",
+   "short": "Claude Platform adds OpenTelemetry tracing support",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "5db242862724"
   }
  }
 }

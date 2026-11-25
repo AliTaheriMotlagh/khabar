@@ -132,6 +132,13 @@
    "v": 1,
    "src": "f069f337752a",
    "added": 1
+  },
+  "en": {
+   "title": "Ultramarine 1 Flash frontier model released as open-source alternative",
+   "short": "Ultramarine 1 Flash model released open-source",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "70ac95662e3f"
   }
  }
 }

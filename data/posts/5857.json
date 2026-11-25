@@ -131,6 +131,13 @@
    "v": 1,
    "src": "ade723dd8d1f",
    "added": 2
+  },
+  "en": {
+   "title": "John Ternus welcomes users to Apple HomeView",
+   "short": "John Ternus welcomes users to Apple HomeView",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "ad1d03ed5236"
   }
  }
 }

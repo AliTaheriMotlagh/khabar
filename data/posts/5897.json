@@ -134,6 +134,13 @@
    "v": 1,
    "src": "b6a4928aa057",
    "added": 1
+  },
+  "en": {
+   "title": "Mirelo launches SFX 2.0 AI video sound design tool",
+   "short": "Mirelo launches SFX 2.0 AI video sound design tool",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "6c450df011d4"
   }
  }
 }

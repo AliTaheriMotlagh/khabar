@@ -118,6 +118,13 @@
    "v": 1,
    "src": "e1d6694fb19e",
    "added": 2
+  },
+  "en": {
+   "title": "Cat Jam stealth model now free in OpenCode",
+   "short": "Cat Jam stealth model free in OpenCode",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "8c3afa37feca"
   }
  }
 }

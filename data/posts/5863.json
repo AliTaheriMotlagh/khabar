@@ -118,6 +118,13 @@
    "model": "qwen3.5-9b-q4_k_m",
    "v": 2,
    "src": "2bc95cd72cd5"
+  },
+  "en": {
+   "title": "Google rolls out Gemini 4 Argon globally to API and apps",
+   "short": "Gemini 4 Argon launched globally for API and apps",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "b9d8ab55f881"
   }
  }
 }

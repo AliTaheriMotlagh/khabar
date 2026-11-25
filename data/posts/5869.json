@@ -137,6 +137,13 @@
    "model": "qwen3.5-9b-q4_k_m",
    "v": 2,
    "src": "c6b75efcc088"
+  },
+  "en": {
+   "title": "Gemini 4 Argon creates animation from raw Pixel CAD file",
+   "short": "Gemini 4 Argon builds animation from CAD file",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "90cdc7b79b8c"
   }
  }
 }

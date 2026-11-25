@@ -165,6 +165,13 @@
    "v": 1,
    "src": "0868f4ae15be",
    "added": 2
+  },
+  "en": {
+   "title": "159 Companies Sell AI Training Data; 38 Programs Pay Businesses",
+   "short": "159 Companies Sell AI Training Data",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "21dce9fc8797"
   }
  }
 }

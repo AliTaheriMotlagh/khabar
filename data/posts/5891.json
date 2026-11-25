@@ -145,6 +145,13 @@
    "model": "qwen3.5-9b-q4_k_m",
    "v": 2,
    "src": "e68a48646270"
+  },
+  "en": {
+   "title": "Anthropic pre-IPO perpetual falls below $2T as financials open",
+   "short": "Anthropic perpetual drops below $2T",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "3e12818aa8f1"
   }
  }
 }

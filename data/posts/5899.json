@@ -116,6 +116,13 @@
    "model": "qwen3.5-9b-q4_k_m",
    "v": 2,
    "src": "fb317a258c4a"
+  },
+  "en": {
+   "title": "a16z lays off most of its executive recruiting team",
+   "short": "a16z cuts most exec recruiting staff",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "601c91353827"
   }
  }
 }

@@ -116,6 +116,13 @@
    "model": "qwen3.5-9b-q4_k_m",
    "v": 2,
    "src": "9e38c7601abf"
+  },
+  "en": {
+   "title": "Physical Intelligence announces beta release of Pi API",
+   "short": "Physical Intelligence launches Pi API beta",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "8ac39b34b66e"
   }
  }
 }

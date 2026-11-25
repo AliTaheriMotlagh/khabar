@@ -125,6 +125,13 @@
    "model": "qwen3.5-9b-q4_k_m",
    "v": 2,
    "src": "ea8bdc30f6fa"
+  },
+  "en": {
+   "title": "SpaceX Unveils Grok Voice 3.0, World's Most Intelligent Speech Model",
+   "short": "SpaceX launches Grok Voice 3.0 speech model",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "b3f8fe27e9df"
   }
  }
 }

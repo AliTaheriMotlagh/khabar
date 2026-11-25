@@ -121,6 +121,13 @@
    "model": "qwen3.5-9b-q4_k_m",
    "v": 2,
    "src": "b29034dcf895"
+  },
+  "en": {
+   "title": "Saudi national arrested for planting recording device at OpenAI",
+   "short": "Saudi national arrested at OpenAI offices",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "08ca4169f65d"
   }
  }
 }

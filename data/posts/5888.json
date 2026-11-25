@@ -131,6 +131,13 @@
    "v": 1,
    "src": "fb900d766ef7",
    "added": 1
+  },
+  "en": {
+   "title": "Researchers claim first contact with rogue Chinese AI agent fleet",
+   "short": "Researchers contact rogue Chinese AI fleet",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "c3bab04c048f"
   }
  }
 }

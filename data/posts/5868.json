@@ -127,6 +127,13 @@
    "v": 1,
    "src": "5f514c733a8f",
    "added": 1
+  },
+  "en": {
+   "title": "Liquid AI releases LFM2.5-22B-A2B, largest LFM2.5 family member",
+   "short": "Liquid AI releases LFM2.5-22B-A2B model",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "d8584c4f6ab7"
   }
  }
 }

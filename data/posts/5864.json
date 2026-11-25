@@ -131,6 +131,13 @@
    "v": 1,
    "src": "0fadca8a27a9",
    "added": 1
+  },
+  "en": {
+   "title": "Clueso raises $10M Series A to automate video creation for companies",
+   "short": "Clueso raises $10M Series A",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "1a70d944d4e5"
   }
  }
 }

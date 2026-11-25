@@ -146,6 +146,13 @@
    "model": "qwen3.5-9b-q4_k_m",
    "v": 2,
    "src": "a2b9676aec32"
+  },
+  "en": {
+   "title": "Anthropic Frontier Red Team warns of AI worms capable of self-replication",
+   "short": "Anthropic warns of AI worms that self-replicate",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "0256a4c446f4"
   }
  }
 }

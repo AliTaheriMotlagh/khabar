@@ -129,6 +129,13 @@
    "model": "qwen3.5-9b-q4_k_m",
    "v": 2,
    "src": "28e28a9aa536"
+  },
+  "en": {
+   "title": "Anthropic pays $3,850 weekly for AI research fellows",
+   "short": "Anthropic offers $3,850 weekly for AI research",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "8e2efecfef03"
   }
  }
 }

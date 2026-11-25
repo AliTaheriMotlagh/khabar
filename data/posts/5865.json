@@ -127,6 +127,13 @@
    "model": "qwen3.5-9b-q4_k_m",
    "v": 2,
    "src": "0e6d36515d1d"
+  },
+  "en": {
+   "title": "Gemini 4 Argon is first model to feel like image, video and language model all at once",
+   "short": "Gemini 4 Argon combines image, video and language",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "25dc525b89e9"
   }
  }
 }

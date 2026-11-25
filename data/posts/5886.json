@@ -125,6 +125,13 @@
    "model": "qwen3.5-9b-q4_k_m",
    "v": 2,
    "src": "5f57998be898"
+  },
+  "en": {
+   "title": "Google DeepMind Gemini 4 Argon unlocks scientific breakthroughs",
+   "short": "Gemini 4 Argon advances science",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "5e02e1fef8f0"
   }
  }
 }

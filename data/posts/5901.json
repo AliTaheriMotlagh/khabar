@@ -129,6 +129,13 @@
    "v": 1,
    "src": "47b6ff6890bb",
    "added": 1
+  },
+  "en": {
+   "title": "TypeSafe AI announces Jev 1.14 with experimental image and context features",
+   "short": "TypeSafe AI updates Jev model with new features",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "c1da34f8a297"
   }
  }
 }

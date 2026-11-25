@@ -143,6 +143,13 @@
    "model": "qwen3.5-9b-q4_k_m",
    "v": 2,
    "src": "39e4123facff"
+  },
+  "en": {
+   "title": "User Asks Gemini 4 Argon To Create 3D City With iPhone Walking POV",
+   "short": "User Asks Gemini 4 Argon To Create 3D City",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "b26c026489c0"
   }
  }
 }

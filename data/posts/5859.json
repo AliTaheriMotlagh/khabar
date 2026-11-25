@@ -149,6 +149,13 @@
    "v": 1,
    "src": "125e6a0e6c1b",
    "added": 1
+  },
+  "en": {
+   "title": "Fable 5.5 Appears in Azure Model Catalog with GenerallyAvailable Status",
+   "short": "Fable 5.5 listed in Azure model catalog",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "69746a02e20c"
   }
  }
 }
