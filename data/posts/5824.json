@@ -118,6 +118,13 @@
    "v": 1,
    "src": "ed80937f0eed",
    "added": 1
+  },
+  "en": {
+   "title": "Tiny Corp Says Future Depends On Trend Direction",
+   "short": "Tiny Corp: Future depends on trend direction",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "03239b496c13"
   }
  }
 }

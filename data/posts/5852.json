@@ -155,6 +155,13 @@
    "v": 1,
    "src": "6a76781fa774",
    "added": 1
+  },
+  "en": {
+   "title": "Muse Wonder scores 52% on senior engineer benchmark, trailing GPT-Sol 6.1",
+   "short": "Muse Wonder lags GPT-Sol 6.1 on engineering test",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "136acb7064ad"
   }
  }
 }

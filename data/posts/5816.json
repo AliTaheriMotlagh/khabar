@@ -123,6 +123,13 @@
    "model": "qwen3.5-9b-q4_k_m",
    "v": 2,
    "src": "dc48eaff2cf6"
+  },
+  "en": {
+   "title": "GPT-6.1 Sol default context length increased to 500k via Codex & Work",
+   "short": "GPT-6.1 Sol default context now 500k",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "2de77a8979f2"
   }
  }
 }

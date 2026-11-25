@@ -122,6 +122,13 @@
    "v": 1,
    "src": "694b4f2b1d46",
    "added": 2
+  },
+  "en": {
+   "title": "NewEyes AI launches personal agent with glasses and earphones",
+   "short": "NewEyes AI introduces personal agent with eyes",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "f8ab9de40edc"
   }
  }
 }

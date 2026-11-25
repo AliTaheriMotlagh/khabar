@@ -130,6 +130,13 @@
    "v": 1,
    "src": "de019a901d1a",
    "added": 1
+  },
+  "en": {
+   "title": "River Inference launches DeepSeek V4.1 Flash and GLM 5.3 Flash at 20% discount",
+   "short": "River Inference launches models at 20% discount",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "a7c14ecfac32"
   }
  }
 }

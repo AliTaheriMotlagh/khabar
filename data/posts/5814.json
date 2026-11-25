@@ -148,6 +148,13 @@
    "model": "qwen3.5-9b-q4_k_m",
    "v": 2,
    "src": "47d4825dabe8"
+  },
+  "en": {
+   "title": "Claude Next Model Tested on Claude Code with Superior Image Generation",
+   "short": "Claude Next Model tested on Claude Code",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "7759cd908be3"
   }
  }
 }

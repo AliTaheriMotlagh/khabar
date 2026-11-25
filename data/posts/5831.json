@@ -142,6 +142,13 @@
    "v": 1,
    "src": "f65e1fa0fb2a",
    "added": 0
+  },
+  "en": {
+   "title": "Filmmaker startup negotiating deep access to OpenAI's shuttered Sora video model",
+   "short": "Startup negotiating access to OpenAI's Sora",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "b4f03bd4c14e"
   }
  }
 }

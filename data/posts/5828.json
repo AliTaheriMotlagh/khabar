@@ -125,6 +125,13 @@
    "model": "qwen3.5-9b-q4_k_m",
    "v": 2,
    "src": "e202ffe398e2"
+  },
+  "en": {
+   "title": "Linus Torvalds Uses Claude Code For Linux Kernel Improvement",
+   "short": "Linus Torvalds uses AI for kernel work",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "a1567dd48d31"
   }
  }
 }

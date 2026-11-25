@@ -139,6 +139,13 @@
    "model": "qwen3.5-9b-q4_k_m",
    "v": 2,
    "src": "36a5c48d9f3e"
+  },
+  "en": {
+   "title": "Researchers release causal streaming code world model",
+   "short": "Streaming code world model released by researchers",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "7aa89f625b7e"
   }
  }
 }

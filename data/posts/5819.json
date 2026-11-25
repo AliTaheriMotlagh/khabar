@@ -130,6 +130,13 @@
    "v": 1,
    "src": "5fbe265b3db1",
    "added": 1
+  },
+  "en": {
+   "title": "Creator of free Adobe clones unveils open-source Microsoft Office Excel, PowerPoint, and Word replications",
+   "short": "Open-source Microsoft Office clones unveiled",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "27ba659afc9f"
   }
  }
 }

@@ -117,6 +117,13 @@
    "v": 1,
    "src": "de6fc216c78a",
    "added": 2
+  },
+  "en": {
+   "title": "Airtable lays off large part of team to focus on smaller groups",
+   "short": "Airtable cuts jobs to prioritize smaller teams",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "dfb3b079b0cc"
   }
  }
 }

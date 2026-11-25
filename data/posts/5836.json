@@ -129,6 +129,13 @@
    "v": 1,
    "src": "96c258b83899",
    "added": 2
+  },
+  "en": {
+   "title": "Z.ai introduces GLM-Legal model for legal workflows",
+   "short": "Z.ai launches GLM-Legal for legal tasks",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "fac1b9c211a3"
   }
  }
 }

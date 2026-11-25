@@ -119,6 +119,13 @@
    "model": "qwen3.5-9b-q4_k_m",
    "v": 2,
    "src": "2ee11d3d57a7"
+  },
+  "en": {
+   "title": "Meta Muse retention outperforms ChatGPT at D7",
+   "short": "Meta Muse retention beats ChatGPT at D7",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "7bd543a9acc6"
   }
  }
 }

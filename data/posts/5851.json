@@ -127,6 +127,13 @@
    "model": "qwen3.5-9b-q4_k_m",
    "v": 2,
    "src": "d1fbcf190227"
+  },
+  "en": {
+   "title": "User claims Muse Wonder full underperforms Opus 5.5 in 3D tasks",
+   "short": "User says Muse failed AAA game prompt",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "4f2dde8e3d96"
   }
  }
 }

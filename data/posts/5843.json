@@ -162,6 +162,13 @@
    "model": "qwen3.5-9b-q4_k_m",
    "v": 2,
    "src": "38d4fc0212d1"
+  },
+  "en": {
+   "title": "Meta claims Muse Wonder model wins consumer agents",
+   "short": "Meta claims Muse Wonder wins consumer agents",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "e8b04c626e7c"
   }
  }
 }
