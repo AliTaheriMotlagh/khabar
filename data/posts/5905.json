@@ -154,6 +154,13 @@
    "model": "qwen3.5-9b-q4_k_m",
    "v": 2,
    "src": "b31ffc8707ba"
+  },
+  "en": {
+   "title": "Next-Concept Models Achieve Up To 31x Faster Generation Than Diffusion",
+   "short": "Next-Concept Models are 31x faster than diffusion",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "49c6099e008c"
   }
  }
 }

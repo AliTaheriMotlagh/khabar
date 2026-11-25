@@ -138,6 +138,13 @@
    "model": "qwen3.5-9b-q4_k_m",
    "v": 2,
    "src": "5a8f8db36e8f"
+  },
+  "en": {
+   "title": "Meta releases Muse Spark Open, most capable US open-weight model",
+   "short": "Meta releases Muse Spark Open model",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "190b6e24677b"
   }
  }
 }

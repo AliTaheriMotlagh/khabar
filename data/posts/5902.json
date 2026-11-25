@@ -157,6 +157,13 @@
    "v": 1,
    "src": "f965f61e000d",
    "added": 1
+  },
+  "en": {
+   "title": "Odessia launches AI concierge that is also accredited travel agent",
+   "short": "Odessia launches AI travel agent with agency rates",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "0ba4a8f27968"
   }
  }
 }

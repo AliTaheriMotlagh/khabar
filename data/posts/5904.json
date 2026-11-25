@@ -152,6 +152,13 @@
    "v": 1,
    "src": "c7d03e2eafb2",
    "added": 2
+  },
+  "en": {
+   "title": "Expand Fetch launches new web scraping tool with vision and JSON models",
+   "short": "Expand Fetch launches new web scraping tool",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "c1a4dd1af9fa"
   }
  }
 }

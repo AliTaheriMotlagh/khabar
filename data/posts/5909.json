@@ -124,6 +124,13 @@
    "model": "qwen3.5-9b-q4_k_m",
    "v": 2,
    "src": "dc8ee354c100"
+  },
+  "en": {
+   "title": "Claude developer shares tutorial on how to be more ambitious",
+   "short": "Claude lead shares ambition tutorial",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "0ccfac1215e8"
   }
  }
 }

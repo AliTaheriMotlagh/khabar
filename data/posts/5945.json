@@ -164,6 +164,13 @@
    "model": "qwen3.5-9b-q4_k_m",
    "v": 2,
    "src": "b4de8c773b10"
+  },
+  "en": {
+   "title": "DeepSeek 4.1-1017 Outperforms GLM5.3 and GPT-5.6 Sol",
+   "short": "DeepSeek 4.1-1017 beats GLM5.3 and GPT-5.6 Sol",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "8cc9ba45e583"
   }
  }
 }

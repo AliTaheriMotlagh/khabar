@@ -130,6 +130,13 @@
    "model": "qwen3.5-9b-q4_k_m",
    "v": 2,
    "src": "f0ff52397d51"
+  },
+  "en": {
+   "title": "Claude Mythos 5 designs more efficient quantum circuits than published versions",
+   "short": "Claude Mythos 5 designs better quantum circuits",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "c5ec56795db8"
   }
  }
 }

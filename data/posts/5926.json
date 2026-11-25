@@ -126,6 +126,13 @@
    "model": "qwen3.5-9b-q4_k_m",
    "v": 2,
    "src": "079a761f47bd"
+  },
+  "en": {
+   "title": "GLM 5.3 Flash now free in OpenCode",
+   "short": "GLM 5.3 Flash free in OpenCode",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "69505437c23b"
   }
  }
 }

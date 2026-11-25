@@ -129,6 +129,13 @@
    "model": "qwen3.5-9b-q4_k_m",
    "v": 2,
    "src": "466a26e61afc"
+  },
+  "en": {
+   "title": "GLM 5.3 Achieves Major Leap Through Post-Training Alone",
+   "short": "GLM 5.3 leap from post-training alone",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "be15373d196c"
   }
  }
 }

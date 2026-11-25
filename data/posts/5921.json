@@ -133,6 +133,13 @@
    "model": "qwen3.5-9b-q4_k_m",
    "v": 2,
    "src": "4ba0094ab368"
+  },
+  "en": {
+   "title": "Tesla Roadster Recharges Its Own Air Tank",
+   "short": "Tesla Roadster recharges air tank",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "c3ccfaf41618"
   }
  }
 }

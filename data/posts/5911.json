@@ -136,6 +136,13 @@
    "model": "qwen3.5-9b-q4_k_m",
    "v": 2,
    "src": "f290f98969f1"
+  },
+  "en": {
+   "title": "NVIDIA launches Nemotron 3.5 Super VL open model",
+   "short": "NVIDIA launches Nemotron 3.5 Super VL open model",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "aea9cffb39ff"
   }
  }
 }

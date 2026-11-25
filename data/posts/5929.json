@@ -135,6 +135,13 @@
    "v": 1,
    "src": "4c1a7039f0c0",
    "added": 1
+  },
+  "en": {
+   "title": "Glimpse launches as first visual thinking model with competitive frontier performance",
+   "short": "Glimpse launches as first visual thinking model",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "ef3e848271e9"
   }
  }
 }

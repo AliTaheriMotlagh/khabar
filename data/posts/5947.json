@@ -130,6 +130,13 @@
    "v": 1,
    "src": "1b81f28b5afb",
    "added": 1
+  },
+  "en": {
+   "title": "OpenCode says security breach impacted 1.4% of Console users",
+   "short": "OpenCode breach affects 1.4% of users",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "9080e859f221"
   }
  }
 }

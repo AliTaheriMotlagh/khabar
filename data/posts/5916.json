@@ -135,6 +135,13 @@
    "model": "qwen3.5-9b-q4_k_m",
    "v": 2,
    "src": "12cc9afd6ae9"
+  },
+  "en": {
+   "title": "Tesla Roadster features ultrawhite interior and lightweight materials",
+   "short": "Tesla Roadster interior uses lightweight materials",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "28117f949d7c"
   }
  }
 }

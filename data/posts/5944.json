@@ -141,6 +141,13 @@
    "model": "qwen3.5-9b-q4_k_m",
    "v": 2,
    "src": "b077cf7f7eeb"
+  },
+  "en": {
+   "title": "DeepSeek launches V4.1-Flash-1017 model with improved performance",
+   "short": "DeepSeek launches V4.1-Flash-1017 model",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "fb4f595534ae"
   }
  }
 }

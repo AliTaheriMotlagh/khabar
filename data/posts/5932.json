@@ -158,6 +158,13 @@
    "v": 1,
    "src": "d05b238a10b2",
    "added": 3
+  },
+  "en": {
+   "title": "Reflection releases Beam model with open weights and 40+ partners",
+   "short": "Reflection releases Beam model with open weights",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "4250c52aeb8d"
   }
  }
 }

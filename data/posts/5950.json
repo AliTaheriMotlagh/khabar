@@ -148,6 +148,13 @@
    "model": "qwen3.5-9b-q4_k_m",
    "v": 2,
    "src": "a3cdf84e609e"
+  },
+  "en": {
+   "title": "Next-Concept Models achieve up to 31x faster language generation than diffusion",
+   "short": "Next-Concept Models are 31x faster than diffusion",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "1589e5e2c64a"
   }
  }
 }

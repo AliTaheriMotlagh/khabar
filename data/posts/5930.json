@@ -165,6 +165,13 @@
    "v": 1,
    "src": "0e5805606ce5",
    "added": 1
+  },
+  "en": {
+   "title": "Jim Fan opensources ASPIRE agentic robotics framework with real robot skill discovery",
+   "short": "Jim Fan opensources ASPIRE robotics framework",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "b04da9263557"
   }
  }
 }

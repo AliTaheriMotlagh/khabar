@@ -135,6 +135,13 @@
    "v": 1,
    "src": "6671253f99f8",
    "added": 3
+  },
+  "en": {
+   "title": "Three mysterious new models appear in OpenAI API",
+   "short": "Three new models appear in OpenAI API",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "d982850b0ec4"
   }
  }
 }

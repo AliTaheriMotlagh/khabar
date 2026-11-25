@@ -128,6 +128,13 @@
    "model": "qwen3.5-9b-q4_k_m",
    "v": 2,
    "src": "ec0c6b61b5f1"
+  },
+  "en": {
+   "title": "Tesla Roadster completes 0-60 mph in 0.81 seconds during SpaceX launch",
+   "short": "Tesla Roadster hits 0-60 in 0.81s",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "30b948ff74e4"
   }
  }
 }

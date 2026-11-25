@@ -135,6 +135,13 @@
    "model": "qwen3.5-9b-q4_k_m",
    "v": 2,
    "src": "12a060d66489"
+  },
+  "en": {
+   "title": "Nvidia Nemotron 3.5 Super VL becomes leading US open weight model",
+   "short": "Nvidia Nemotron 3.5 Super VL leads US open models",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "5643494f3db3"
   }
  }
 }

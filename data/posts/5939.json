@@ -138,6 +138,13 @@
    "v": 1,
    "src": "5e217e1bcfb5",
    "added": 3
+  },
+  "en": {
+   "title": "Claude reveals ECDSA curve origins",
+   "short": "Claude reveals ECDSA curve origins",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "a75e0e0d176e"
   }
  }
 }

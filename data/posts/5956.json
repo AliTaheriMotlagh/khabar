@@ -126,6 +126,13 @@
    "model": "qwen3.5-9b-q4_k_m",
    "v": 2,
    "src": "058a7d76cea5"
+  },
+  "en": {
+   "title": "Anthropic report says humans are bottleneck for AI agents",
+   "short": "Anthropic report: humans bottleneck AI agents",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "fe5b815a20b4"
   }
  }
 }

@@ -111,6 +111,13 @@
    "model": "qwen3.5-9b-q4_k_m",
    "v": 2,
    "src": "ce36a057a832"
+  },
+  "en": {
+   "title": "Tesla next-gen Roadster trim levels and 2028 production start",
+   "short": "Tesla Roadster trims and 2028 start revealed",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "af6df1704949"
   }
  }
 }

@@ -119,6 +119,13 @@
    "v": 1,
    "src": "031fe1c5ef71",
    "added": 3
+  },
+  "en": {
+   "title": "DogeDesigner posts message on social media",
+   "short": "DogeDesigner posts message",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "e39370f04dbe"
   }
  }
 }

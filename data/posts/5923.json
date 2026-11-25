@@ -139,6 +139,13 @@
    "model": "qwen3.5-9b-q4_k_m",
    "v": 2,
    "src": "0505e4f7a66f"
+  },
+  "en": {
+   "title": "Google Quantum AI achieves 99.99% logical fidelity on Willow processor",
+   "short": "Google Quantum AI reaches 99.99% logical fidelity",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "396d9bc4cfbe"
   }
  }
 }

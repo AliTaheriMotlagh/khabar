@@ -134,6 +134,13 @@
    "v": 1,
    "src": "894c0685a243",
    "added": 1
+  },
+  "en": {
+   "title": "Bolt offers free build weekend and $10k prize for builders",
+   "short": "Bolt offers free build weekend and $10k prize",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "4d0b765ee2dc"
   }
  }
 }

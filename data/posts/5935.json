@@ -130,6 +130,13 @@
    "model": "qwen3.5-9b-q4_k_m",
    "v": 2,
    "src": "184579a3fb3f"
+  },
+  "en": {
+   "title": "Grant Sanderson reflects on AI in math and funding",
+   "short": "Grant Sanderson reflects on AI in math",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "9a68248ea905"
   }
  }
 }

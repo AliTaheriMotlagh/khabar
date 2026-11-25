@@ -110,6 +110,13 @@
    "model": "qwen3.5-9b-q4_k_m",
    "v": 2,
    "src": "0249c028bb1d"
+  },
+  "en": {
+   "title": "OpenCode customers report API key breach notices",
+   "short": "OpenCode customers report API key breach",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "5d170e2e07ad"
   }
  }
 }

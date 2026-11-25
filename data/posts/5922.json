@@ -160,6 +160,13 @@
    "v": 1,
    "src": "c87d2f41e39e",
    "added": 5
+  },
+  "en": {
+   "title": "New inference engine e pushes 10,500 tok/s on DGX Station",
+   "short": "New engine e hits 10,500 tok/s on DGX Station",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "f68598d8f2b6"
   }
  }
 }
