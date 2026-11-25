@@ -8,6 +8,10 @@ import { tehranDay } from '../src/lib/time.ts';
 const dist = path.resolve('dist');
 const built = fs.existsSync(path.join(dist, 'index.html'));
 const skip = built ? false : 'run `npm run build` first';
+// The GitHub Pages mirror is built under BASE_PATH (/khabar): its own links carry it, canonical ones don't.
+const B = (process.env.BASE_PATH || '').replace(/\/$/, '');
+// The sitemap is written for the address the build ran with (the mirror's own).
+const SITE_ORIGIN = (process.env.SITE_URL || 'https://blog.remixt.app').replace(/\/$/, '') + B;
 const html = (p) => fs.readFileSync(path.join(dist, p), 'utf8');
 const fa = (n) => n.toLocaleString('fa-IR');
 const faTime = (iso) => new Intl.DateTimeFormat('fa-IR-u-ca-persian', { timeZone: 'Asia/Tehran', hour: '2-digit', minute: '2-digit', hour12: false }).format(new Date(iso));
@@ -464,14 +468,14 @@ test('English edition: each page with a Persian twin names it, and the language 
     const e = html(`${en}index.html`);
     const f = html(`${fa}index.html`);
     assert.match(e, /<html lang="en" dir="ltr"/, `${en}: English, left to right`);
-    assert.ok(e.includes(`data-alt-lang="/${fa}"`) && e.includes(`data-lang-switch="fa"`) && e.includes(`class="lang-switch" href="/${fa}"`), `${en}: the switch opens /${fa}`);
-    assert.ok(f.includes(`data-alt-lang="/${en}"`) && f.includes(`class="lang-switch" href="/${en}"`), `${fa}: the switch opens /${en}`);
+    assert.ok(e.includes(`data-alt-lang="${B}/${fa}"`) && e.includes(`data-lang-switch="fa"`) && e.includes(`class="lang-switch" href="${B}/${fa}"`), `${en}: the switch opens /${fa}`);
+    assert.ok(f.includes(`data-alt-lang="${B}/${en}"`) && f.includes(`class="lang-switch" href="${B}/${en}"`), `${fa}: the switch opens /${en}`);
     if (/noindex/.test(e.match(/<meta name="robots" content="([^"]+)"/)?.[1] ?? '')) continue;
     assert.ok(e.includes(`<link rel="alternate" hreflang="fa" href="https://blog.remixt.app/${fa}">`), `${en}: hreflang fa`);
     assert.ok(f.includes(`<link rel="alternate" hreflang="en" href="https://blog.remixt.app/${en}">`), `${fa}: hreflang en`);
     assert.ok(e.includes(`<link rel="canonical" href="https://blog.remixt.app/${en}">`), `${en}: canonical`);
     assert.ok(e.includes('<meta property="og:locale" content="en_US">'), `${en}: og:locale`);
-    assert.ok(e.includes('<link rel="alternate" type="application/rss+xml" title="Future Focus — all stories" href="/en/rss.xml">'), `${en}: names the English feed`);
+    assert.ok(e.includes(`<link rel="alternate" type="application/rss+xml" title="Future Focus — all stories" href="${B}/en/rss.xml">`), `${en}: names the English feed`);
     // Each JSON-LD block parses and says its type.
     for (const [, j] of e.matchAll(/<script type="application\/ld\+json">([\s\S]*?)<\/script>/g)) assert.ok(JSON.parse(j)['@type'], `${en}: JSON-LD`);
   }
@@ -480,8 +484,8 @@ test('English edition: each page with a Persian twin names it, and the language 
   // The sitemap pairs the twins.
   const map = html('sitemap-0.xml');
   for (const [fa, en] of pairs.filter(([, en]) => !/saved|offline/.test(en))) {
-    const entry = map.match(new RegExp(`<url><loc>https://blog\\.remixt\\.app/${en.replace(/[-/]/g, '\\$&')}</loc>[\\s\\S]*?</url>`))?.[0] ?? '';
-    assert.ok(entry.includes(`hreflang="fa-IR" href="https://blog.remixt.app/${fa}"`), `sitemap: ${en} ↔ ${fa}`);
+    const entry = map.match(new RegExp(`<url><loc>${(SITE_ORIGIN + '/').replace(/[.]/g, '\\.')}${en.replace(/[-/]/g, '\\$&')}</loc>[\\s\\S]*?</url>`))?.[0] ?? '';
+    assert.ok(entry.includes(`hreflang="fa-IR" href="${SITE_ORIGIN}/${fa}"`), `sitemap: ${en} ↔ ${fa}`);
   }
 });
 
@@ -510,7 +514,7 @@ test('English feeds: English, absolute links, every story its English page, pict
     for (const id of ids) assert.ok(enPages.has(id), `${file}: ${id} has an English page`);
     for (let i = 1; i < ids.length; i++) assert.ok(ids[i] < ids[i - 1], `${file}: newest first`);
     if (file === 'en/rss.xml') assert.equal(ids.length, enPages.size, 'every English story');
-    else assert.ok(items.length > 0 && html(file.replace('rss.xml', 'index.html')).includes(`href="/${file}"`), `${file}: its topic page names it`);
+    else assert.ok(items.length > 0 && html(file.replace('rss.xml', 'index.html')).includes(`href="${B}/${file}"`), `${file}: its topic page names it`);
   }
   const page = html('en/feeds/index.html');
   for (const f of files) assert.ok(page.includes(`data-copy="https://blog.remixt.app/${f}"`), `/en/feeds/ lists ${f}`);

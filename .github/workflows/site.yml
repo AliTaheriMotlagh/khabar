@@ -251,6 +251,10 @@ jobs:
         name: Site tests
         if: steps.deploy.outputs.deploy == 'true'
         continue-on-error: ${{ github.event_name != 'push' }}
+        env:
+          # The tests read the mirror's build: its own links and its sitemap carry its address.
+          SITE_URL: ${{ steps.pages.outputs.origin }}
+          BASE_PATH: ${{ steps.pages.outputs.base_path }}
         run: |
           set -o pipefail
           node --test tests/site.test.mjs 2>&1 | tee site-tests.log
