@@ -59,5 +59,25 @@
    "ایجنت"
   ]
  },
- "updated": "2026-11-25T20:08:35+00:00"
+ "updated": "2026-11-25T20:08:35+00:00",
+ "ai": {
+  "title": "Gemini API CLI ابزاری متن‌باز برای اتصال ایجنت‌ها به مدل‌های گوگل شد",
+  "short": "Gemini API CLI متن‌باز",
+  "topics": [
+   "گوگل",
+   "ایجنت",
+   "کدنویسی"
+  ],
+  "type": "ابزار و محصول",
+  "model": "qwen3.5-9b-q4_k_m",
+  "v": 2,
+  "src": "4e9563f13fba",
+  "en": {
+   "title": "Google releases open source CLI for Gemini API access",
+   "short": "Google releases open source CLI for Gemini API",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "dffa0328e816"
+  }
+ }
 }
