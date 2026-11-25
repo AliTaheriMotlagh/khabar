@@ -19,64 +19,6 @@
   "text": "رفقا، یه خبر جالب از دنیای ریاضی و الگوریتم اومده؛ OpenAI امروز (۲۴ نوامبر ۲۰۲۶) یه پیش‌انتشار جدید روی گیت‌هاب گذاشته که می‌گه بالاخره تکلیف یکی از سوال‌های قدیمی ضرب ماتریس‌ها روشن شده.\n\nبه نوشته shiv_kampani در ایکس، سال‌ها بود پژوهشگرا می‌پرسیدن آیا می‌شه ضرب دو ماتریس n در n رو به زمان n به توان ۲ رسوند یا نه، اما حالا OpenAI اعلام کرده کران پایین رو ثابت کرده و نشون داده این کار حداقل به n به توان ۹/۴ (یعنی ۲/۲۵) زمان نیاز داره. حساب کاربری rrwilliams هم که توییتش نقل‌قول شده، اشاره کرده ظاهراً حق با استراسن بوده و توان دقیق همین ۲/۲۵ هست.\n\n• به روایت توییت، سرعت ضرب ماتریس از روش ساده n به توان ۳ با کشف استراسن در سال ۱۹۶۹ به توان ۲/۸۰۷ رسید و طی دهه‌ها با تلاش پژوهشگرایی مثل ویرجینیا واسیلوسکا ویلیامز جلو اومد تا اینکه اکتبر امسال OpenAI به الگوریتمی با توان ۲/۲۵ رسید.\n• در توضیحات مخزن گیت‌هاب OpenAI اومده که این پیش‌انتشار توانِ ۹/۴ رو برای مدارهای حسابی صوری روی هر میدانی اثبات می‌کنه و بخشی از اثبات هم (برای مدارهای بدون تقسیم) با ابزار Lean به شکل صوری پیاده‌سازی شده.\n\nخلاصه طبق ادعای این پیش‌انتشار، انگار تهِ جاده سرعتِ ضرب ماتریس‌ها همین توان ۲/۲۵ بوده و از این تندتر نمیشه رفت! 🧮",
   "date": "2026-11-25T02:21:20+00:00"
  },
- "links": [
-  {
-   "kind": "tweet",
-   "url": "https://x.com/shiv_kampani/status/2125398371745841302",
-   "domain": "x.com",
-   "author": {
-    "name": "Shiv Kampani",
-    "handle": "shiv_kampani",
-    "avatar": "https://pbs.twimg.com/profile_images/1986577429964398592/rorYOcFo_200x200.jpg"
-   },
-   "text": "another incredible result🚨 from oai. matrix multiplication cannot be done in quadratic (n^2) time. it requires n^(9/4) time!!!!! \n\nsome background on why the difference between 2 and 2.25 is significant:\n\nthe naive algorithm for the matrix multiplication of two nxn matrices takes n^3 time. for each of the n^2 entries in the result, you have to do a dot product over n pairs.\n\nin 1969, strassen found a way to multiply matrices in n^2.807 time (!!), which is asymptotically better than n^3 and a very cool part of the undergrad algos course.\n\nthis kicked off a line of research with ever-improving exponents:\n- 1969 Strassen: 2.807\n- 1978–81 Pan, Bini, Schönhage: ~2.52\n- 1990 Coppersmith–Winograd: 2.376\n[stall for many years]\n- 2012 Virginia Vassilevska Williams: 2.3729 (!!)\n- 2026 OpenAI: 2.25 (Oct of this year)\n\nit seemed like we were nearing an exponent of 2, i.e. n^2 or quadratic time. (this is also the bare minimum, since the answer that we need to write has n^2 entries).\n\nthe key open question: can we do quadratic time matrix multiplication?\n\nfinally we have an answer (!!!!). openai just proved that matrix multiplication requires exactly n^2.25 time by proving a lower bound match Oct's algorithm (upper bound).\n\nthis is really cool and really fascinating. why 9/4? the universe is full of mysteries.\n\nrepo: http://github.com/openai/math/tree/main/preprints/The-matrix-multiplication-exponent-is-nine-fourths-November-24-2026",
-   "date": 1795569434,
-   "media": [],
-   "links": [
-    "http://github.com/openai/math/tree/main/preprints/The-matrix-multiplication-exponent-is-nine-fourths-November-24-2026"
-   ],
-   "quote": {
-    "author": {
-     "name": "Ryan Williams @rrwilliams.bsky.social",
-     "handle": "rrwilliams",
-     "avatar": "https://pbs.twimg.com/profile_images/1587257679726133248/En7AKJHO_200x200.jpg"
-    },
-    "text": "Apparently Strassen was right: the matrix mult exponent is (exactly) 2.25 \nhttps://github.com/openai/math/tree/main/preprints/The-matrix-multiplication-exponent-is-nine-fourths-November-24-2026",
-    "date": 1795568345,
-    "media": [],
-    "links": [
-     "https://github.com/openai/math/tree/main/preprints/The-matrix-multiplication-exponent-is-nine-fourths-November-24-2026"
-    ]
-   }
-  },
-  {
-   "kind": "link",
-   "url": "https://github.com/openai/math/tree/main/preprints/The-matrix-multiplication-exponent-is-nine-fourths-November-24-2026",
-   "domain": "github.com",
-   "title": "math/preprints/The-matrix-multiplication-exponent-is-nine-fourths-November-24-2026 at main · openai/math",
-   "description": "Contribute to openai/math development by creating an account on GitHub.",
-   "image": "https://opengraph.githubassets.com/1461f3d30c76745d6936a46f5de186632be981abdca829d68ea4a516446d6adb/openai/math",
-   "site": "GitHub"
-  }
- ],
- "article": {
-  "title": "یه خبر جالب از دنیای ریاضی و الگوریتم اومده؛ OpenAI امروز (۲۴ نوامبر ۲۰۲۶) یه پیش‌انتشار جدید روی گیت‌هاب گذاشته که می‌گه بالاخره تکلیف یکی از سوال‌های قدیمی ضرب ماتریس‌ها روشن شده",
-  "source_title": "another incredible result🚨 from oai. matrix multiplication cannot be done in quadratic (n^2) time. it requires n^(9/4) time!!!!!",
-  "body": [
-   "یه خبر جالب از دنیای ریاضی و الگوریتم اومده؛ OpenAI امروز (۲۴ نوامبر ۲۰۲۶) یه پیش‌انتشار جدید روی گیت‌هاب گذاشته که می‌گه بالاخره تکلیف یکی از سوال‌های قدیمی ضرب ماتریس‌ها روشن شده.",
-   "به نوشته shiv_kampani در ایکس، سال‌ها بود پژوهشگرا می‌پرسیدن آیا می‌شه ضرب دو ماتریس n در n رو به زمان n به توان ۲ رسوند یا نه، اما حالا OpenAI اعلام کرده کران پایین رو ثابت کرده و نشون داده این کار حداقل به n به توان ۹/۴ (یعنی ۲/۲۵) زمان نیاز داره. حساب کاربری rrwilliams هم که توییتش نقل‌قول شده، اشاره کرده ظاهراً حق با استراسن بوده و توان دقیق همین ۲/۲۵ هست.",
-   "• به روایت توییت، سرعت ضرب ماتریس از روش ساده n به توان ۳ با کشف استراسن در سال ۱۹۶۹ به توان ۲/۸۰۷ رسید و طی دهه‌ها با تلاش پژوهشگرایی مثل ویرجینیا واسیلوسکا ویلیامز جلو اومد تا اینکه اکتبر امسال OpenAI به الگوریتمی با توان ۲/۲۵ رسید.",
-   "• در توضیحات مخزن گیت‌هاب OpenAI اومده که این پیش‌انتشار توانِ ۹/۴ رو برای مدارهای حسابی صوری روی هر میدانی اثبات می‌کنه و بخشی از اثبات هم (برای مدارهای بدون تقسیم) با ابزار Lean به شکل صوری پیاده‌سازی شده."
-  ],
-  "why": "خلاصه طبق ادعای این پیش‌انتشار، انگار تهِ جاده سرعتِ ضرب ماتریس‌ها همین توان ۲/۲۵ بوده و از این تندتر نمیشه رفت! 🧮",
-  "why_label": "حرف آخر",
-  "tags": [
-   "اوپن‌ای‌آی",
-   "کدنویسی",
-   "علم"
-  ]
- },
- "updated": "2026-11-25T03:36:52+00:00",
  "ai": {
   "title": "OpenAI ثابت کرد ضرب ماتریس حداقل به n به توان ۲/۲۵ زمان نیاز دارد",
   "short": "OpenAI: ضرب ماتریس",
@@ -154,5 +96,63 @@
    "v": 2,
    "src": "35cc3f619a00"
   }
- }
+ },
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/shiv_kampani/status/2125398371745841302",
+   "domain": "x.com",
+   "author": {
+    "name": "Shiv Kampani",
+    "handle": "shiv_kampani",
+    "avatar": "https://pbs.twimg.com/profile_images/1986577429964398592/rorYOcFo_200x200.jpg"
+   },
+   "text": "another incredible result🚨 from oai. matrix multiplication cannot be done in quadratic (n^2) time. it requires n^(9/4) time!!!!! \n\nsome background on why the difference between 2 and 2.25 is significant:\n\nthe naive algorithm for the matrix multiplication of two nxn matrices takes n^3 time. for each of the n^2 entries in the result, you have to do a dot product over n pairs.\n\nin 1969, strassen found a way to multiply matrices in n^2.807 time (!!), which is asymptotically better than n^3 and a very cool part of the undergrad algos course.\n\nthis kicked off a line of research with ever-improving exponents:\n- 1969 Strassen: 2.807\n- 1978–81 Pan, Bini, Schönhage: ~2.52\n- 1990 Coppersmith–Winograd: 2.376\n[stall for many years]\n- 2012 Virginia Vassilevska Williams: 2.3729 (!!)\n- 2026 OpenAI: 2.25 (Oct of this year)\n\nit seemed like we were nearing an exponent of 2, i.e. n^2 or quadratic time. (this is also the bare minimum, since the answer that we need to write has n^2 entries).\n\nthe key open question: can we do quadratic time matrix multiplication?\n\nfinally we have an answer (!!!!). openai just proved that matrix multiplication requires exactly n^2.25 time by proving a lower bound match Oct's algorithm (upper bound).\n\nthis is really cool and really fascinating. why 9/4? the universe is full of mysteries.\n\nrepo: http://github.com/openai/math/tree/main/preprints/The-matrix-multiplication-exponent-is-nine-fourths-November-24-2026",
+   "date": 1795569434,
+   "media": [],
+   "links": [
+    "http://github.com/openai/math/tree/main/preprints/The-matrix-multiplication-exponent-is-nine-fourths-November-24-2026"
+   ],
+   "quote": {
+    "author": {
+     "name": "Ryan Williams @rrwilliams.bsky.social",
+     "handle": "rrwilliams",
+     "avatar": "https://pbs.twimg.com/profile_images/1587257679726133248/En7AKJHO_200x200.jpg"
+    },
+    "text": "Apparently Strassen was right: the matrix mult exponent is (exactly) 2.25 \nhttps://github.com/openai/math/tree/main/preprints/The-matrix-multiplication-exponent-is-nine-fourths-November-24-2026",
+    "date": 1795568345,
+    "media": [],
+    "links": [
+     "https://github.com/openai/math/tree/main/preprints/The-matrix-multiplication-exponent-is-nine-fourths-November-24-2026"
+    ]
+   }
+  },
+  {
+   "kind": "link",
+   "url": "https://github.com/openai/math/tree/main/preprints/The-matrix-multiplication-exponent-is-nine-fourths-November-24-2026",
+   "domain": "github.com",
+   "title": "math/preprints/The-matrix-multiplication-exponent-is-nine-fourths-November-24-2026 at main · openai/math",
+   "description": "Contribute to openai/math development by creating an account on GitHub.",
+   "image": "https://opengraph.githubassets.com/1461f3d30c76745d6936a46f5de186632be981abdca829d68ea4a516446d6adb/openai/math",
+   "site": "GitHub"
+  }
+ ],
+ "article": {
+  "title": "یه خبر جالب از دنیای ریاضی و الگوریتم اومده؛ OpenAI امروز (۲۴ نوامبر ۲۰۲۶) یه پیش‌انتشار جدید روی گیت‌هاب گذاشته که می‌گه بالاخره تکلیف یکی از سوال‌های قدیمی ضرب ماتریس‌ها روشن شده",
+  "source_title": "another incredible result🚨 from oai. matrix multiplication cannot be done in quadratic (n^2) time. it requires n^(9/4) time!!!!!",
+  "body": [
+   "یه خبر جالب از دنیای ریاضی و الگوریتم اومده؛ OpenAI امروز (۲۴ نوامبر ۲۰۲۶) یه پیش‌انتشار جدید روی گیت‌هاب گذاشته که می‌گه بالاخره تکلیف یکی از سوال‌های قدیمی ضرب ماتریس‌ها روشن شده.",
+   "به نوشته shiv_kampani در ایکس، سال‌ها بود پژوهشگرا می‌پرسیدن آیا می‌شه ضرب دو ماتریس n در n رو به زمان n به توان ۲ رسوند یا نه، اما حالا OpenAI اعلام کرده کران پایین رو ثابت کرده و نشون داده این کار حداقل به n به توان ۹/۴ (یعنی ۲/۲۵) زمان نیاز داره. حساب کاربری rrwilliams هم که توییتش نقل‌قول شده، اشاره کرده ظاهراً حق با استراسن بوده و توان دقیق همین ۲/۲۵ هست.",
+   "• به روایت توییت، سرعت ضرب ماتریس از روش ساده n به توان ۳ با کشف استراسن در سال ۱۹۶۹ به توان ۲/۸۰۷ رسید و طی دهه‌ها با تلاش پژوهشگرایی مثل ویرجینیا واسیلوسکا ویلیامز جلو اومد تا اینکه اکتبر امسال OpenAI به الگوریتمی با توان ۲/۲۵ رسید.",
+   "• در توضیحات مخزن گیت‌هاب OpenAI اومده که این پیش‌انتشار توانِ ۹/۴ رو برای مدارهای حسابی صوری روی هر میدانی اثبات می‌کنه و بخشی از اثبات هم (برای مدارهای بدون تقسیم) با ابزار Lean به شکل صوری پیاده‌سازی شده."
+  ],
+  "why": "خلاصه طبق ادعای این پیش‌انتشار، انگار تهِ جاده سرعتِ ضرب ماتریس‌ها همین توان ۲/۲۵ بوده و از این تندتر نمیشه رفت! 🧮",
+  "why_label": "حرف آخر",
+  "tags": [
+   "اوپن‌ای‌آی",
+   "کدنویسی",
+   "علم"
+  ]
+ },
+ "updated": "2026-11-25T13:31:24+00:00"
 }
