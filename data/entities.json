@@ -14723,6 +14723,12 @@
    "name_en": "NeurIPS",
    "name_fa": "نور‌آی‌پی‌اس",
    "kind": "company"
+  },
+  {
+   "slug": "link",
+   "name_en": "LINK",
+   "name_fa": "لینک",
+   "kind": "product"
   }
  ]
 }
