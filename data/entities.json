@@ -14507,6 +14507,90 @@
    "name_en": "Virginia Williams",
    "name_fa": "ویرجینیا ویلیامز",
    "kind": "person"
+  },
+  {
+   "slug": "beam-10",
+   "name_en": "Beam 1.0",
+   "name_fa": "بیام ۱.۰",
+   "kind": "model"
+  },
+  {
+   "slug": "pro",
+   "name_en": "Pro",
+   "name_fa": "پرو",
+   "kind": "product"
+  },
+  {
+   "slug": "lucid",
+   "name_en": "Lucid",
+   "name_fa": "لوسید",
+   "kind": "company"
+  },
+  {
+   "slug": "nuride",
+   "name_en": "NuRide",
+   "name_fa": "نورو",
+   "kind": "company"
+  },
+  {
+   "slug": "gravity",
+   "name_en": "Gravity",
+   "name_fa": "گرویتی",
+   "kind": "product"
+  },
+  {
+   "slug": "swe-21",
+   "name_en": "SWE-2.1",
+   "name_fa": "اس‌وی‌ای-۲-۱",
+   "kind": "model"
+  },
+  {
+   "slug": "toronto-star",
+   "name_en": "Toronto Star",
+   "name_fa": "تورنتو استار",
+   "kind": "company"
+  },
+  {
+   "slug": "ontario-human-rights-tribunal",
+   "name_en": "Ontario Human Rights Tribunal",
+   "name_fa": "دیوان حقوق بشر انتاریو",
+   "kind": "company"
+  },
+  {
+   "slug": "prism-ml",
+   "name_en": "Prism ML",
+   "name_fa": "پریزم ام‌ال",
+   "kind": "company"
+  },
+  {
+   "slug": "ternary-bonsai-25",
+   "name_en": "Ternary Bonsai 2.5",
+   "name_fa": "ترنری بونسای ۲.۵",
+   "kind": "model"
+  },
+  {
+   "slug": "onava",
+   "name_en": "Onava",
+   "name_fa": "اوناوا",
+   "kind": "company"
+  },
+  {
+   "slug": "mcp-apps",
+   "name_en": "MCP Apps",
+   "name_fa": "اپلیکیشن‌های MCP",
+   "kind": "product"
+  },
+  {
+   "slug": "artifacts",
+   "name_en": "Artifacts",
+   "name_fa": "آرتیفکت‌ها",
+   "kind": "product"
+  },
+  {
+   "slug": "yin-tat-lee",
+   "name_en": "Yin Tat Lee",
+   "name_fa": "یین تات لی",
+   "kind": "person"
   }
  ]
 }
