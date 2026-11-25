@@ -94,6 +94,13 @@
    "v": 1,
    "src": "c6d6bf289016",
    "added": 3
+  },
+  "en": {
+   "title": "Google AI Ultra subscribers can now try Genie 4 world model",
+   "short": "Google AI Ultra subscribers can now try Genie 4",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "9e02a40139f9"
   }
  },
  "links": [

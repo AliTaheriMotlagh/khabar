@@ -141,6 +141,13 @@
    "v": 1,
    "src": "1b2224406b1b",
    "added": 11
+  },
+  "en": {
+   "title": "Robots taught to throw dinner party will run live event",
+   "short": "Robots to run live dinner party event tomorrow",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "93ee2f897959"
   }
  }
 }

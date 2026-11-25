@@ -104,6 +104,13 @@
    "v": 1,
    "src": "069f408e84ac",
    "added": 2
+  },
+  "en": {
+   "title": "User Shares Video for Old School Programmers Who Hate AI",
+   "short": "User shares video for old school programmers",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "68252541e812"
   }
  }
 }

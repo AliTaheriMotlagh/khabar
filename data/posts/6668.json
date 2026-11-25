@@ -99,6 +99,13 @@
    "v": 1,
    "src": "dbeb9074df86",
    "added": 6
+  },
+  "en": {
+   "title": "Baseten releases bison-1 and groundhog-1 decision models on Gemma 4",
+   "short": "Baseten releases bison-1 and groundhog-1 models",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "7ece14defdf5"
   }
  },
  "links": [

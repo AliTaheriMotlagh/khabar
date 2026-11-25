@@ -165,6 +165,13 @@
    "v": 1,
    "src": "a7d09cf2babf",
    "added": 5
+  },
+  "en": {
+   "title": "Inworld AI open-sources Voice Isolator and SAVA models",
+   "short": "Inworld AI releases Voice Isolator and SAVA models",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "2948565d5a76"
   }
  }
 }

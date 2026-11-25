@@ -84,6 +84,13 @@
    "model": "qwen3.5-9b-q4_k_m",
    "v": 2,
    "src": "def9a9ecde5d"
+  },
+  "en": {
+   "title": "Daily pill daraxonrasib shrinks pancreatic cancer tumours",
+   "short": "Pill shrinks pancreatic cancer tumours",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "dc6ca0fb042f"
   }
  },
  "links": [

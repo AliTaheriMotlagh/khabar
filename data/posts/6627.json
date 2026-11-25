@@ -112,6 +112,13 @@
    "model": "qwen3.5-9b-q4_k_m",
    "v": 2,
    "src": "15344dbae1e9"
+  },
+  "en": {
+   "title": "Waymo pauses San Francisco service due to flooded streets",
+   "short": "Waymo pauses SF service due to flooding",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "8b7d288563c3"
   }
  }
 }

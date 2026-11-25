@@ -104,6 +104,13 @@
    "v": 1,
    "src": "93a333251ba7",
    "added": 7
+  },
+  "en": {
+   "title": "GPT-6.2 Astra produces first Lean proof of Smoktunowicz's Gap Theorem",
+   "short": "GPT-6.2 Astra proves Smoktunowicz's Gap Theorem",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "98fff3aac537"
   }
  },
  "links": [

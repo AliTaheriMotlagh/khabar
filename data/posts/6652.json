@@ -130,6 +130,13 @@
    "v": 1,
    "src": "41f192bbbc8a",
    "added": 7
+  },
+  "en": {
+   "title": "New glasses protocol lets users control AI agents with voice",
+   "short": "Glasses protocol controls AI agents via voice",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "a1bce88fce99"
   }
  }
 }

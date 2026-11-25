@@ -117,6 +117,13 @@
    "v": 1,
    "src": "05553da17fb6",
    "added": 10
+  },
+  "en": {
+   "title": "Health available in more ChatGPT places including desktop and Android",
+   "short": "Health now available in more ChatGPT places",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "430d52cc09bd"
   }
  }
 }

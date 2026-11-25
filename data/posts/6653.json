@@ -99,6 +99,13 @@
    "v": 1,
    "src": "216f13fe3b0e",
    "added": 2
+  },
+  "en": {
+   "title": "Tufa Labs shrinks 1 GB of Wikipedia to 105.39 MB losslessly",
+   "short": "Tufa Labs compresses 1 GB Wikipedia to 105.39 MB",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "f80b630330d0"
   }
  },
  "links": [

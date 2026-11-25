@@ -94,6 +94,13 @@
    "v": 1,
    "src": "5f886c99e76e",
    "added": 9
+  },
+  "en": {
+   "title": "Thinking Machines launches 26B parameter Inkling 2 Mini model",
+   "short": "Inkling 2 Mini runs on laptops with 26B parameters",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "e47a4da2fc76"
   }
  },
  "links": [

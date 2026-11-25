@@ -81,6 +81,13 @@
    "v": 1,
    "src": "87f7ac9288d9",
    "added": 2
+  },
+  "en": {
+   "title": "Dean W. Ball challenges silent consensus on AI replacing humans",
+   "short": "Dean W. Ball challenges AI human primacy consensus",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "d2d109344811"
   }
  },
  "links": [

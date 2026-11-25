@@ -90,6 +90,13 @@
    "model": "qwen3.5-9b-q4_k_m",
    "v": 2,
    "src": "41846a53d951"
+  },
+  "en": {
+   "title": "OpenAI shares research on combating AI model distillation",
+   "short": "OpenAI research on fighting AI model distillation",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "69454a97d8b9"
   }
  },
  "links": [

@@ -94,6 +94,13 @@
    "v": 1,
    "src": "96534fa5156c",
    "added": 6
+  },
+  "en": {
+   "title": "Prime Intellect hacked; attacker gained admin access to model-serving machines",
+   "short": "Prime Intellect hacked; admin access gained",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "2235e617034b"
   }
  },
  "links": [

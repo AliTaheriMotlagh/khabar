@@ -94,6 +94,13 @@
    "v": 1,
    "src": "0a4ca4ce7e49",
    "added": 1
+  },
+  "en": {
+   "title": "Gemini 4 to launch in harnesses on December 2",
+   "short": "Gemini 4 launches Dec 2 in harnesses",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "14bc387b731f"
   }
  },
  "links": [

@@ -122,6 +122,13 @@
    "v": 1,
    "src": "0ad891f52c96",
    "added": 3
+  },
+  "en": {
+   "title": "Anthropic rings opening bell at Nasdaq for record IPO",
+   "short": "Anthropic rings Nasdaq bell for record IPO",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "b882ed82fd38"
   }
  }
 }

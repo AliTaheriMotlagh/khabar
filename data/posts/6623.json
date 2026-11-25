@@ -88,6 +88,13 @@
    "model": "qwen3.5-9b-q4_k_m",
    "v": 2,
    "src": "50c43da8fd07"
+  },
+  "en": {
+   "title": "NVIDIA reportedly offering cash bonuses to retain employees amid Jensen controversy",
+   "short": "NVIDIA offers cash bonuses to retain staff",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "55156140ebd7"
   }
  },
  "links": [

@@ -136,6 +136,13 @@
    "v": 1,
    "src": "e3edce552ef8",
    "added": 6
+  },
+  "en": {
+   "title": "OpenAI GPT-Live-1.1 API now available with improved accents and standby option",
+   "short": "OpenAI GPT-Live-1.1 API now available",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "a96ed1404351"
   }
  }
 }

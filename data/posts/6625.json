@@ -102,6 +102,13 @@
    "model": "qwen3.5-9b-q4_k_m",
    "v": 2,
    "src": "e4ace4d41a7d"
+  },
+  "en": {
+   "title": "Muse App Lets Users Try On Clothes Before Buying",
+   "short": "Muse app offers virtual clothing try-on feature",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "a2454b8a6c81"
   }
  }
 }

@@ -98,6 +98,13 @@
    "v": 1,
    "src": "a2c1d0d84b21",
    "added": 6
+  },
+  "en": {
+   "title": "New stealth model Gestalt spotted on Contra Frontier design benchmark",
+   "short": "Stealth model Gestalt mogging benchmarks",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "8799d351fcf8"
   }
  },
  "links": [

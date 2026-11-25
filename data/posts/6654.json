@@ -102,6 +102,13 @@
    "v": 1,
    "src": "9bb531f7742c",
    "added": 1
+  },
+  "en": {
+   "title": "User Shows AI Her Own Face in a Mirror",
+   "short": "User shows AI her own face in a mirror",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "6e7a2428733c"
   }
  }
 }

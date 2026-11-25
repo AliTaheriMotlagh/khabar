@@ -88,6 +88,13 @@
    "model": "qwen3.5-9b-q4_k_m",
    "v": 2,
    "src": "c40f830ee46c"
+  },
+  "en": {
+   "title": "Anthropic prices IPO at $83 per share for Nasdaq debut",
+   "short": "Anthropic IPO priced at $83 per share",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "549a127775b4"
   }
  },
  "links": [

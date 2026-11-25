@@ -90,6 +90,13 @@
    "v": 1,
    "src": "2239943c8d0a",
    "added": 1
+  },
+  "en": {
+   "title": "SpaceX Cursor weighs phasing out Chinese AI models over geopolitical risk",
+   "short": "SpaceX Cursor weighs phasing out Chinese AI models",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "4b689b62a423"
   }
  },
  "links": [

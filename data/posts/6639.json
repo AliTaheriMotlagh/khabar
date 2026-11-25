@@ -74,6 +74,13 @@
    "v": 1,
    "src": "079008eba8e9",
    "added": 7
+  },
+  "en": {
+   "title": "Google Confirms Another Gemini Release Following Neon Success",
+   "short": "Google confirms another Gemini release",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "5d8c6ff80bdc"
   }
  },
  "links": [

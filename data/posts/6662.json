@@ -90,6 +90,13 @@
    "model": "qwen3.5-9b-q4_k_m",
    "v": 2,
    "src": "51370de13bd1"
+  },
+  "en": {
+   "title": "Gemini 4 Neon creates ski simulator on real Mont Blanc terrain",
+   "short": "Gemini 4 Neon builds ski simulator on Mont Blanc",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "64efd6bb97ad"
   }
  },
  "links": [

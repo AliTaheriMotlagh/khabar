@@ -80,6 +80,13 @@
    "model": "qwen3.5-9b-q4_k_m",
    "v": 2,
    "src": "e63630b624b4"
+  },
+  "en": {
+   "title": "Anthropic $ANT IPO Demand Hits $500 Billion",
+   "short": "Anthropic IPO demand reaches $500 billion",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "3fd877ea9120"
   }
  },
  "links": [

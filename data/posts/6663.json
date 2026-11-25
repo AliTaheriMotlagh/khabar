@@ -184,6 +184,13 @@
    "v": 1,
    "src": "3495e23dd11f",
    "added": 2
+  },
+  "en": {
+   "title": "OpenAI launches MedChemBench benchmark for AI reasoning in medicinal chemistry",
+   "short": "OpenAI launches MedChemBench benchmark",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "477e50cad0f0"
   }
  }
 }
