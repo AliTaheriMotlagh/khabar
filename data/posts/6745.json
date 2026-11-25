@@ -58,5 +58,24 @@
    "متن‌باز"
   ]
  },
- "updated": "2026-11-25T20:24:12+00:00"
+ "updated": "2026-11-25T20:24:12+00:00",
+ "ai": {
+  "title": "دیتاست ReadyNeuro و مدل CortexMAE: آموزش مستقیم روی داده‌های خام اسکن مغزی",
+  "short": "دیتاست ReadyNeuro",
+  "topics": [
+   "سلامت",
+   "متن‌باز"
+  ],
+  "type": "پژوهش و مقاله",
+  "model": "qwen3.5-9b-q4_k_m",
+  "v": 2,
+  "src": "921fd5eff6b3",
+  "en": {
+   "title": "Researchers release ReadyNeuro, largest open fMRI pretraining dataset",
+   "short": "ReadyNeuro, largest open fMRI dataset, released",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "d92cd0a13e1b"
+  }
+ }
 }
