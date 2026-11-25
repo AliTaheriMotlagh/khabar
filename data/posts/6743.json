@@ -1,0 +1,71 @@
+{
+ "id": 6743,
+ "url": "https://t.me/dlmehr/6743",
+ "date": "2026-11-25T20:04:25+00:00",
+ "text": "https://fxtwitter.com/viviencheng__/status/2125631050319831474?a=sUbyfzkSyE1dqUG51Y0&s=52",
+ "forwarded_from": null,
+ "digest": false,
+ "hash": "01647b498a82",
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/viviencheng__/status/2125631050319831474?a=sUbyfzkSyE1dqUG51Y0&s=52",
+  "site": "🧵 Thread • FxTwitter",
+  "title": "Vivien Cheng (@viviencheng__)",
+  "description": "🗝️\nIntroducing Plato's Key. A single rotation lets independently trained LLMs use each other’s representations as their own. No gradients required\n✨\nWith @jerrywliu, @MorrisYau, and @HazyResearch.\n🧵\nhttps://hazyresearch.stanford.edu/blog/2026-11-25-platos…",
+  "image": null
+ },
+ "gholam": {
+  "text": "رفقا، پژوهشگرهای گروه Hazy Research استنفورد یه تحقیق تازه به اسم «کلید افلاطون» منتشر کردن که می‌گه مدل‌های زبانیِ جدا از هم، انگار همه‌شون یه نقشهٔ مشترک توی ذهنشون دارن و فقط زاویه‌ش با هم فرق می‌کنه؛ یعنی با یه چرخش ریاضی ساده و تنظیم مقیاس (بدون نیاز به آموزش مجدد)، یه مدل می‌تونه از بازنماییِ ذهنیِ مدل دیگه استفاده کنه 🗝️\n\n• به گفتهٔ نویسنده‌ها، این روش روی ۱۲ مدل پایه (از ۱.۵ تا ۲۷ میلیارد پارامتر) از ۸ خانوادهٔ مختلف روی یادآوری واقعیت‌ها تست شده و به میانهٔ دقت ۴۱ درصد رسیده؛ این در حالیه که اگه خودِ مدل همین جابه‌جایی رو با وضعیت داخلی خودش انجام بده، میانهٔ دقتش ۵۵ درصده.\n• طبق این گزارش، زنجیر کردن چرخش‌ها بین سه مدل (A به B و بعد به C، بدون اجرای خود مدل B) میانهٔ ۹۹ درصد از دقت انتقال مستقیم رو حفظ کرده و با فشرده‌سازی به فقط ۲۵۶ مؤلفهٔ اصلی (بین مدل‌هایی با حداکثر ۵۱۲۰ بُعد) هم میانهٔ ۷۴ درصد از دقت چرخش کامل باقی مونده.\n• پژوهشگرها می‌گن کلیدِ چرخیدهٔ یه مدل دیگه تونسته ۱۸ درصد از «خاطره‌های پنهان» مدل مقصد رو بیدار کنه؛ یعنی اطلاعاتی که مدل توی وزن‌هاش داشته ولی خودش توی یادآوریشون می‌مونده (درست مثل وقتی که یه اسم نوک زبون آدمه و با یه اشارهٔ کوچیک رفیقش یادش میاد).\n\nتیم پژوهش می‌گه این نشونه‌ها خبر از یه هندسهٔ مشترکِ کم‌بُعد بین مدل‌ها می‌ده و قراره در ادامه سراغ انتقال دانش بدون بازآموزش و ارتباط مستقیم مدل‌ها توی فضای پنهان برن، به جای اینکه مجبور باشن به انگلیسی با هم حرف بزنن.",
+  "date": "2026-11-25T20:04:48+00:00"
+ },
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/viviencheng__/status/2125631050319831474",
+   "domain": "x.com",
+   "author": {
+    "name": "Vivien Cheng",
+    "handle": "viviencheng__",
+    "avatar": "https://pbs.twimg.com/profile_images/2085834332162453505/3mvFl1Fr_200x200.jpg"
+   },
+   "text": "🗝️ Introducing Plato's Key. A single rotation lets independently trained LLMs use each other’s representations as their own. No gradients required ✨\n\nWith @jerrywliu, @MorrisYau, and @HazyResearch.\n🧵 https://hazyresearch.stanford.edu/blog/2026-11-25-platos-key",
+   "date": 1795624909,
+   "media": [
+    {
+     "type": "video",
+     "src": "https://video.twimg.com/amplify_video/2125621327088463872/vid/avc1/1280x720/gJNwqrI3J5wa2jXT.mp4?tag=29",
+     "poster": "https://pbs.twimg.com/amplify_video_thumb/2125621327088463872/img/QSXfUZfkC3uwrKi5.jpg",
+     "ratio": 0.5625,
+     "duration": 12,
+     "gif": false
+    }
+   ],
+   "links": [
+    "https://hazyresearch.stanford.edu/blog/2026-11-25-platos-key"
+   ]
+  },
+  {
+   "kind": "link",
+   "url": "https://hazyresearch.stanford.edu/blog/2026-11-25-platos-key",
+   "domain": "hazyresearch.stanford.edu",
+   "title": "Plato’s Key",
+   "description": "A rotation and one global scale, fit in closed form, let one LLM use another’s representations. We test the Platonic Representation Hypothesis on factual recall across 12 LLMs.",
+   "image": "https://hazyresearch.stanford.edu/hazy-logo.png",
+   "site": "hazyresearch.stanford.edu"
+  }
+ ],
+ "article": {
+  "title": "پژوهشگرهای گروه Hazy Research استنفورد یه تحقیق تازه به اسم «کلید افلاطون» منتشر کردن که می‌گه مدل‌های زبانیِ جدا از هم، انگار همه‌شون یه نقشهٔ مشترک توی ذهنشون دارن و فقط زاویه‌ش با هم فرق می‌کنه",
+  "source_title": "🗝️ Introducing Plato's Key. A single rotation lets independently trained LLMs use each other’s representations as their own. No gradients…",
+  "body": [
+   "پژوهشگرهای گروه Hazy Research استنفورد یه تحقیق تازه به اسم «کلید افلاطون» منتشر کردن که می‌گه مدل‌های زبانیِ جدا از هم، انگار همه‌شون یه نقشهٔ مشترک توی ذهنشون دارن و فقط زاویه‌ش با هم فرق می‌کنه؛ یعنی با یه چرخش ریاضی ساده و تنظیم مقیاس (بدون نیاز به آموزش مجدد)، یه مدل می‌تونه از بازنماییِ ذهنیِ مدل دیگه استفاده کنه 🗝️",
+   "• به گفتهٔ نویسنده‌ها، این روش روی ۱۲ مدل پایه (از ۱.۵ تا ۲۷ میلیارد پارامتر) از ۸ خانوادهٔ مختلف روی یادآوری واقعیت‌ها تست شده و به میانهٔ دقت ۴۱ درصد رسیده؛ این در حالیه که اگه خودِ مدل همین جابه‌جایی رو با وضعیت داخلی خودش انجام بده، میانهٔ دقتش ۵۵ درصده.",
+   "• طبق این گزارش، زنجیر کردن چرخش‌ها بین سه مدل (A به B و بعد به C، بدون اجرای خود مدل B) میانهٔ ۹۹ درصد از دقت انتقال مستقیم رو حفظ کرده و با فشرده‌سازی به فقط ۲۵۶ مؤلفهٔ اصلی (بین مدل‌هایی با حداکثر ۵۱۲۰ بُعد) هم میانهٔ ۷۴ درصد از دقت چرخش کامل باقی مونده.",
+   "• پژوهشگرها می‌گن کلیدِ چرخیدهٔ یه مدل دیگه تونسته ۱۸ درصد از «خاطره‌های پنهان» مدل مقصد رو بیدار کنه؛ یعنی اطلاعاتی که مدل توی وزن‌هاش داشته ولی خودش توی یادآوریشون می‌مونده (درست مثل وقتی که یه اسم نوک زبون آدمه و با یه اشارهٔ کوچیک رفیقش یادش میاد)."
+  ],
+  "why": "تیم پژوهش می‌گه این نشونه‌ها خبر از یه هندسهٔ مشترکِ کم‌بُعد بین مدل‌ها می‌ده و قراره در ادامه سراغ انتقال دانش بدون بازآموزش و ارتباط مستقیم مدل‌ها توی فضای پنهان برن، به جای اینکه مجبور باشن به انگلیسی با هم حرف بزنن.",
+  "why_label": "حرف آخر",
+  "tags": []
+ },
+ "updated": "2026-11-25T20:08:36+00:00"
+}
