@@ -141,6 +141,13 @@
    "model": "qwen3.5-9b-q4_k_m",
    "v": 2,
    "src": "1c4c70eb19a0"
+  },
+  "en": {
+   "title": "SKY-001 beats frontier models on CAD and BIM tasks",
+   "short": "SKY-001 beats frontier models on CAD and BIM",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "5ddbd16c0686"
   }
  }
 }

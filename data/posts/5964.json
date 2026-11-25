@@ -111,6 +111,13 @@
    "v": 1,
    "src": "5258e84ed794",
    "added": 1
+  },
+  "en": {
+   "title": "Operating income per employee reported by Vebjørn",
+   "short": "Vebjørn reports operating income per employee",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "2f675ee5c932"
   }
  }
 }

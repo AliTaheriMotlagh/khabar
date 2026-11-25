@@ -163,6 +163,13 @@
    "model": "qwen3.5-9b-q4_k_m",
    "v": 2,
    "src": "6cda57bbe1b2"
+  },
+  "en": {
+   "title": "Meta trains Muse models on Prometheus gigawatt supercluster in Ohio",
+   "short": "Meta trains Muse models on Ohio supercluster",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "54a7c7978988"
   }
  }
 }

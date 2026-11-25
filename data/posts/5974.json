@@ -137,6 +137,13 @@
    "model": "qwen3.5-9b-q4_k_m",
    "v": 2,
    "src": "f43869c73b27"
+  },
+  "en": {
+   "title": "Stefano Ermon releases Mercury 3, claims it outperforms GPT-6 Luna and Haiku 5.5",
+   "short": "Mercury 3 outperforms GPT-6 Luna and Haiku 5.5",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "b3bce3a758a7"
   }
  }
 }

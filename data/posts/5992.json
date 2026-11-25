@@ -134,6 +134,13 @@
    "v": 1,
    "src": "423990f2faf4",
    "added": 2
+  },
+  "en": {
+   "title": "OpenAI acquires Orchestra Bio to streamline drug development",
+   "short": "OpenAI acquires Orchestra Bio for drug development",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "83b05c1d838a"
   }
  }
 }

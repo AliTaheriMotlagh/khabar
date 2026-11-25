@@ -126,6 +126,13 @@
    "model": "qwen3.5-9b-q4_k_m",
    "v": 2,
    "src": "3b4cf538965e"
+  },
+  "en": {
+   "title": "Go issues urgent update blocking eight CA keys over undisclosed security concerns",
+   "short": "Go blocks eight CA keys in urgent security update",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "089ec0c1b6b3"
   }
  }
 }

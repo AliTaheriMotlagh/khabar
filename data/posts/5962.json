@@ -110,6 +110,13 @@
    "model": "qwen3.5-9b-q4_k_m",
    "v": 2,
    "src": "18294cdef994"
+  },
+  "en": {
+   "title": "Elon Musk posts fart emoji in general direction of Yann LeCun",
+   "short": "Elon Musk posts fart emoji at Yann LeCun",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "b6d012661fb9"
   }
  }
 }

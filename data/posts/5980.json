@@ -110,6 +110,13 @@
    "v": 1,
    "src": "7552f806a414",
    "added": 1
+  },
+  "en": {
+   "title": "AI companion app Tolan raises $30M with 250,000 users",
+   "short": "Tolan raises $30M after 250,000 users",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "4d5070f93166"
   }
  }
 }

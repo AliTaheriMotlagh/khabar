@@ -145,6 +145,13 @@
    "v": 1,
    "src": "185d2f4a935b",
    "added": 1
+  },
+  "en": {
+   "title": "Jim Fan opensources Flora robotics data engine with Astra-level performance",
+   "short": "Jim Fan opensources Flora robotics data engine",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "272b11244e0c"
   }
  }
 }

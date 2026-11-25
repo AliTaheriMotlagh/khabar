@@ -134,6 +134,13 @@
    "v": 1,
    "src": "794145f030ff",
    "added": 1
+  },
+  "en": {
+   "title": "Grok Bot becomes available as iPhone Action Button",
+   "short": "Grok Bot now accessible via iPhone Action Button",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "c572d689e0be"
   }
  }
 }

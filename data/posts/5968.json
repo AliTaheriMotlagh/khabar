@@ -159,6 +159,13 @@
    "v": 1,
    "src": "a69248c04939",
    "added": 2
+  },
+  "en": {
+   "title": "MiniMax M3.1 Flash delivers frontier intelligence at one-third the cost",
+   "short": "MiniMax M3.1 Flash offers 3x speed and lower cost",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "1c0187f93393"
   }
  }
 }

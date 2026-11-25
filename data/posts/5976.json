@@ -122,6 +122,13 @@
    "model": "qwen3.5-9b-q4_k_m",
    "v": 2,
    "src": "42eee2e6c926"
+  },
+  "en": {
+   "title": "DHS orders federal agencies to remove DeepSeek products and services",
+   "short": "DHS bans DeepSeek products for federal agencies",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "3e8705dd5274"
   }
  }
 }

@@ -127,6 +127,13 @@
    "v": 1,
    "src": "f3eff5a7b4fd",
    "added": 1
+  },
+  "en": {
+   "title": "Wabi 2.0 Live: Shared AI Agent for Family and Friends",
+   "short": "Wabi 2.0 launches as shared AI agent for groups",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "5642ae862797"
   }
  }
 }

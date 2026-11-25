@@ -139,6 +139,13 @@
    "model": "qwen3.5-9b-q4_k_m",
    "v": 2,
    "src": "6bddf9c4a405"
+  },
+  "en": {
+   "title": "Delta, JPMorgan, Yelp and Amazon block AI agents",
+   "short": "Major companies block AI agents from services",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "97c781b9f4e6"
   }
  }
 }

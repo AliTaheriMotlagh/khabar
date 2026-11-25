@@ -119,6 +119,13 @@
    "v": 1,
    "src": "4ca9405b9906",
    "added": 2
+  },
+  "en": {
+   "title": "Tuesday Labs introduces Voxel droid butler",
+   "short": "Tuesday Labs introduces Voxel droid butler",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "3deb1840a7c6"
   }
  }
 }

@@ -140,6 +140,13 @@
    "v": 1,
    "src": "775b6b1433cb",
    "added": 2
+  },
+  "en": {
+   "title": "GPT-Rosalind identifies cholesterol transport restoration as potential treatment for neurodegeneration",
+   "short": "AI finds new drug target for Perry syndrome",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "e829d9672c9b"
   }
  }
 }

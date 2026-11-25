@@ -120,6 +120,13 @@
    "model": "qwen3.5-9b-q4_k_m",
    "v": 2,
    "src": "04055d60af7b"
+  },
+  "en": {
+   "title": "Gecko Robotics Navy Contract Quadruples to $300 Million",
+   "short": "Gecko Robotics Navy deal reaches $300 million",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "3c9d4a41fb25"
   }
  }
 }

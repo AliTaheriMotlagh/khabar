@@ -147,6 +147,13 @@
    "v": 1,
    "src": "9d58dfe5ad4e",
    "added": 2
+  },
+  "en": {
+   "title": "Cua Spaces SDK lets users bring own compute to AI agents",
+   "short": "Cua Spaces SDK allows custom compute for AI agents",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "6e215b218a88"
   }
  }
 }

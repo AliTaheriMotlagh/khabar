@@ -154,6 +154,13 @@
    "model": "qwen3.5-9b-q4_k_m",
    "v": 2,
    "src": "9393331ab0f7"
+  },
+  "en": {
+   "title": "Nvidia invests over $1bn in five UK startups",
+   "short": "Nvidia invests $1bn in five UK startups",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "e3db7e3a7e8e"
   }
  }
 }

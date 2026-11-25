@@ -61,6 +61,13 @@
    "v": 1,
    "src": "773496e89f76",
    "added": 10
+  },
+  "en": {
+   "title": "Creator Adds English Subtitles To French Slopcore Video",
+   "short": "French slopcore video gets English subtitles",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "1db5836ea245"
   }
  }
 }

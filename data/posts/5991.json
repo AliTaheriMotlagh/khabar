@@ -146,6 +146,13 @@
    "model": "qwen3.5-9b-q4_k_m",
    "v": 2,
    "src": "e7b9784f74a2"
+  },
+  "en": {
+   "title": "DeepSeek claims 80% serving margin on V4.1 Flash inference",
+   "short": "DeepSeek claims 80% serving margin on V4.1 Flash",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "d520af02da2f"
   }
  }
 }

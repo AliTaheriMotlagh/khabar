@@ -132,6 +132,13 @@
    "v": 1,
    "src": "fc138019b00d",
    "added": 2
+  },
+  "en": {
+   "title": "Nvidia Vera CPU delivers up to 2x throughput of x86 in agentic workloads",
+   "short": "Nvidia Vera CPU beats x86 in agentic tests",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "45b526cc7304"
   }
  }
 }

@@ -156,6 +156,13 @@
    "v": 1,
    "src": "383ea0e0bb3e",
    "added": 1
+  },
+  "en": {
+   "title": "Google and Meta launch TorchTPU for native PyTorch support on Google TPUs",
+   "short": "Google and Meta launch TorchTPU for PyTorch",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "2c0a6e54b2b4"
   }
  }
 }

@@ -123,6 +123,13 @@
    "v": 1,
    "src": "0a2dbfc55739",
    "added": 2
+  },
+  "en": {
+   "title": "Reflection launches open model Beam for agentic tool use and coding",
+   "short": "Reflection launches open model Beam",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "ec61b3b841d7"
   }
  }
 }
