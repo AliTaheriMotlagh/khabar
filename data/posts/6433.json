@@ -128,6 +128,13 @@
    "v": 1,
    "src": "841182b8f550",
    "added": 1
+  },
+  "en": {
+   "title": "Tavus deploys PAL on coffee kiosk to block order hijacking attempts",
+   "short": "Tavus PAL blocks hijacking on coffee kiosk",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "9b17c58cda37"
   }
  }
 }

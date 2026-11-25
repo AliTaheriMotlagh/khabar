@@ -150,6 +150,13 @@
    "model": "qwen3.5-9b-q4_k_m",
    "v": 2,
    "src": "e40545d29003"
+  },
+  "en": {
+   "title": "Anthropic bankers plan to raise IPO price after heavy investor demand",
+   "short": "Anthropic bankers plan to raise IPO price",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "37b8fbf95a8b"
   }
  }
 }

@@ -157,6 +157,13 @@
    "v": 1,
    "src": "c5a4f6ebe99c",
    "added": 3
+  },
+  "en": {
+   "title": "Alibaba unveils Qwen4 with enhanced coding and agentic capabilities",
+   "short": "Qwen4 preview available on Alibaba Token Plan",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "401f2243aa76"
   }
  }
 }

@@ -142,6 +142,13 @@
    "model": "qwen3.5-9b-q4_k_m",
    "v": 2,
    "src": "9bc970fca4e9"
+  },
+  "en": {
+   "title": "North Dakota Senator Kevin Cramer Calls For NVIDIA CEO Jensen Huang To Step Down",
+   "short": "Senator Cramer Calls For NVIDIA CEO To Step Down",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "79e7a145b610"
   }
  }
 }

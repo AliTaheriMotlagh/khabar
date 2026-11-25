@@ -135,6 +135,13 @@
    "v": 1,
    "src": "f639ecdd6895",
    "added": 2
+  },
+  "en": {
+   "title": "Fireworks hacked; customer billing records and datasets exposed",
+   "short": "Fireworks hacked exposing customer data",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "accad1b6658b"
   }
  }
 }

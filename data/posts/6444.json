@@ -132,6 +132,13 @@
    "model": "qwen3.5-9b-q4_k_m",
    "v": 2,
    "src": "c1ab6e852f1c"
+  },
+  "en": {
+   "title": "Gemini 4 Carbon now available in Devin Desktop and CLI",
+   "short": "Gemini 4 Carbon scores 40.0% on FrontierCode 2.0",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "3775f33f5754"
   }
  }
 }

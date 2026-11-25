@@ -147,6 +147,13 @@
    "v": 1,
    "src": "3098a4ca9dd2",
    "added": 3
+  },
+  "en": {
+   "title": "MiniMax launches H3-Image text-to-image model with 16MP resolution",
+   "short": "MiniMax launches H3-Image text-to-image model",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "2f1b2e597dee"
   }
  }
 }

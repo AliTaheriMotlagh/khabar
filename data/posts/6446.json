@@ -166,6 +166,13 @@
    "v": 1,
    "src": "19c841e19f9b",
    "added": 6
+  },
+  "en": {
+   "title": "Claude rolls out Whiteboards, Sheets and Data tools today",
+   "short": "Claude launches Whiteboards, Sheets and Data tools",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "61c50d26f549"
   }
  }
 }

@@ -145,6 +145,13 @@
    "model": "qwen3.5-9b-q4_k_m",
    "v": 2,
    "src": "e493d6430b5b"
+  },
+  "en": {
+   "title": "1,000 Fable 5.2 Agents Formalize Fermat's Last Theorem in 30 Hours",
+   "short": "Fable 5.2 agents prove Fermat's Last Theorem",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "794ed9792938"
   }
  }
 }

@@ -131,6 +131,13 @@
    "model": "qwen3.5-9b-q4_k_m",
    "v": 2,
    "src": "fd7af6d51580"
+  },
+  "en": {
+   "title": "Nuance unveils Emma, first full-duplex AI persona reacting while you speak",
+   "short": "Nuance unveils Emma, first full-duplex AI persona",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "80fbce21a660"
   }
  }
 }

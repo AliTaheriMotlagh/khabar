@@ -125,6 +125,13 @@
    "v": 1,
    "src": "294c4fe6bd50",
    "added": 1
+  },
+  "en": {
+   "title": "Anthropic launches roadshow for proposed initial public offering",
+   "short": "Anthropic launches IPO roadshow",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "5b0c8ccc1b81"
   }
  }
 }

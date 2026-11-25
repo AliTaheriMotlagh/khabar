@@ -119,6 +119,13 @@
    "model": "qwen3.5-9b-q4_k_m",
    "v": 2,
    "src": "2794fb5859f6"
+  },
+  "en": {
+   "title": "Anthropic CEO Dario Amodei to discuss IPO with JPMorgan CEO Jamie Dimon",
+   "short": "Anthropic CEO to discuss IPO with JPMorgan CEO",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "b81b81021d2c"
   }
  }
 }

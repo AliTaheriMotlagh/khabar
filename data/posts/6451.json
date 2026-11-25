@@ -136,6 +136,13 @@
    "v": 1,
    "src": "d180e785ac5d",
    "added": 1
+  },
+  "en": {
+   "title": "AI agents find unmapped Maya site in Mexico using NASA LiDAR data",
+   "short": "AI finds unmapped Maya site in Mexico",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "dfb17fc97fa9"
   }
  }
 }

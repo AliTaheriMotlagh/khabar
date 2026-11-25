@@ -150,6 +150,13 @@
    "v": 1,
    "src": "155f65346d5e",
    "added": 2
+  },
+  "en": {
+   "title": "Pi introduces Virtual Models for routing to Qwen 3.8 27B and other AI",
+   "short": "Pi adds Virtual Models for dynamic AI routing",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "67e1b057192c"
   }
  }
 }

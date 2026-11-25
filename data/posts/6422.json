@@ -134,6 +134,13 @@
    "model": "qwen3.5-9b-q4_k_m",
    "v": 2,
    "src": "43f5ee8f7d1f"
+  },
+  "en": {
+   "title": "Claude writes complex organic chemistry route from four images in 30 minutes",
+   "short": "Claude maps complex molecule route in 30 minutes",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "bb5caf0ee649"
   }
  }
 }

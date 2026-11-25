@@ -118,6 +118,13 @@
    "model": "qwen3.5-9b-q4_k_m",
    "v": 2,
    "src": "61e981a26a73"
+  },
+  "en": {
+   "title": "Anthropic Deploys Better Model Internally While Users Get Fable 5.2",
+   "short": "Anthropic keeps better model internal",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "2104ac64d51e"
   }
  }
 }

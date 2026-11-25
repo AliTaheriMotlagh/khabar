@@ -120,6 +120,13 @@
    "v": 1,
    "src": "53e890d5f0ff",
    "added": 1
+  },
+  "en": {
+   "title": "Cursor Agents Can Now Coordinate With Teammates Agents",
+   "short": "Cursor Agents Coordinate With Teammates",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "f18fd9e2d357"
   }
  }
 }

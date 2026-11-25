@@ -117,6 +117,13 @@
    "model": "qwen3.5-9b-q4_k_m",
    "v": 2,
    "src": "b1e20fe1f88f"
+  },
+  "en": {
+   "title": "Waymo pauses freeway rides in San Francisco to improve construction zone response",
+   "short": "Waymo pauses freeway rides in San Francisco",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "35c9449b7988"
   }
  }
 }

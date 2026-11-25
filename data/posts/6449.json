@@ -134,6 +134,13 @@
    "v": 1,
    "src": "965db80f6506",
    "added": 1
+  },
+  "en": {
+   "title": "AI Futures Project predicts fully autonomous R&D by November 2027",
+   "short": "Fully autonomous R&D expected by November 2027",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "1b3365be830d"
   }
  }
 }

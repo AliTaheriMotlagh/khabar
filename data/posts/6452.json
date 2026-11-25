@@ -124,6 +124,13 @@
    "v": 1,
    "src": "4d08ec587433",
    "added": 1
+  },
+  "en": {
+   "title": "OpenRouter officially joins Stripe as part of economic infrastructure for AI",
+   "short": "OpenRouter joins Stripe to build AI infrastructure",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "8514506ebb94"
   }
  }
 }

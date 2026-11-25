@@ -125,6 +125,13 @@
    "model": "qwen3.5-9b-q4_k_m",
    "v": 2,
    "src": "a3549e46a6c0"
+  },
+  "en": {
+   "title": "Matthew Berman Reviews Fable 5.2 As Best Autonomous Model",
+   "short": "Matthew Berman calls Fable 5.2 the best model",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "70a6c7b5e477"
   }
  }
 }

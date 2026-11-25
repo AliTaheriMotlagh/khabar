@@ -151,6 +151,13 @@
    "model": "qwen3.5-9b-q4_k_m",
    "v": 2,
    "src": "e0b2848c8a45"
+  },
+  "en": {
+   "title": "Anthropic Claude Fable 5.2 builds OS in eight days",
+   "short": "Claude Fable 5.2 builds OS in eight days",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "43923cf97266"
   }
  }
 }

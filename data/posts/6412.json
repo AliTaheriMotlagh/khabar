@@ -125,6 +125,13 @@
    "v": 1,
    "src": "dadabd2da66d",
    "added": 4
+  },
+  "en": {
+   "title": "ModRetro Chromatic Plugin Now Available on Supply Co",
+   "short": "ModRetro Chromatic plugin now on Supply Co",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "923f41b6a83a"
   }
  }
 }

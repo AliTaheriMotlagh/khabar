@@ -142,6 +142,13 @@
    "v": 1,
    "src": "44a5d2cd15dc",
    "added": 3
+  },
+  "en": {
+   "title": "Google DeepMind formally verifies Signal machine code in one month",
+   "short": "Google DeepMind verifies Signal code",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "b85fd33fc97e"
   }
  }
 }

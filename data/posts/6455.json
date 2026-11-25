@@ -128,6 +128,13 @@
    "v": 1,
    "src": "cab09d9adb98",
    "added": 1
+  },
+  "en": {
+   "title": "Anthropic can cancel $34.9B GPU contract if Lambda misses facility deadline",
+   "short": "Anthropic may cancel $34.9B GPU deal",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "92e3a34e96d5"
   }
  }
 }

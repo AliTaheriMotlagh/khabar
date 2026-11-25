@@ -122,6 +122,13 @@
    "v": 1,
    "src": "f6e931bf945d",
    "added": 1
+  },
+  "en": {
+   "title": "OpenAI launches ChatGPT Business beta for eligible companies",
+   "short": "OpenAI launches ChatGPT Business beta",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "d2ffdf6c5ff3"
   }
  }
 }

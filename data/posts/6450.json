@@ -103,6 +103,13 @@
    "model": "qwen3.5-9b-q4_k_m",
    "v": 2,
    "src": "ff6cd91d107b"
+  },
+  "en": {
+   "title": "NVIDIA Independent Board Members Retain Joon H. Kim for Investigation",
+   "short": "NVIDIA Board hires Joon H. Kim for investigation",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "b8ccda4e2979"
   }
  }
 }

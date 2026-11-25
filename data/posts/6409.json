@@ -138,6 +138,13 @@
    "v": 1,
    "src": "b2e4388152d5",
    "added": 4
+  },
+  "en": {
+   "title": "Meta releases Muse Ember smallest model with higher intelligence per dollar",
+   "short": "Meta releases Muse Ember model today",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "1f33ba3ac406"
   }
  }
 }

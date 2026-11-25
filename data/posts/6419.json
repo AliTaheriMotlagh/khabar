@@ -148,6 +148,13 @@
    "model": "qwen3.5-9b-q4_k_m",
    "v": 2,
    "src": "d217335b8896"
+  },
+  "en": {
+   "title": "Fable 5.2 shows improved skills in controlling physical robots",
+   "short": "Fable 5.2 outperforms other AI systems on RoboDojo",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "d33c76d500b9"
   }
  }
 }

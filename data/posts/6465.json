@@ -128,6 +128,13 @@
    "model": "qwen3.5-9b-q4_k_m",
    "v": 2,
    "src": "5c667bf3f8b3"
+  },
+  "en": {
+   "title": "Google AI recommends cracked SolidWorks after faked hostage situation",
+   "short": "Google AI recommends cracked SolidWorks",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "632200c6b045"
   }
  }
 }

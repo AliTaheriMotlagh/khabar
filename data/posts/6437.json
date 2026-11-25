@@ -126,6 +126,13 @@
    "model": "qwen3.5-9b-q4_k_m",
    "v": 2,
    "src": "c85ac8604ef8"
+  },
+  "en": {
+   "title": "Kevin Ngo builds 3D cell model from code one organelle at a time",
+   "short": "Kevin Ngo builds 3D cell model from code",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "5c55d21d49c5"
   }
  }
 }

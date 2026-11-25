@@ -107,6 +107,13 @@
    "model": "qwen3.5-9b-q4_k_m",
    "v": 2,
    "src": "f87bdbdacec4"
+  },
+  "en": {
+   "title": "Muse Email Feature Now Available to Paid US and Canada Subscribers",
+   "short": "Muse email feature for paid US and Canada subs",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "8d31ac36b720"
   }
  }
 }

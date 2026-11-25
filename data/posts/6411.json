@@ -144,6 +144,13 @@
    "model": "qwen3.5-9b-q4_k_m",
    "v": 2,
    "src": "30f27e8edc8c"
+  },
+  "en": {
+   "title": "Anthropic introduces Claude Fable 5.2 and Claude Mythos 5.2",
+   "short": "New Claude models tackle technical challenges",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "cf9d32f20d9c"
   }
  }
 }

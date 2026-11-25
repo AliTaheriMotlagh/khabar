@@ -121,6 +121,13 @@
    "v": 1,
    "src": "8c28c359bcc5",
    "added": 1
+  },
+  "en": {
+   "title": "Gakku raises $51 million to rethink how kids learn with AI",
+   "short": "Gakku raises $51M for AI learning coach",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "2f462b7a791c"
   }
  }
 }

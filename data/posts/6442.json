@@ -133,6 +133,13 @@
    "v": 1,
    "src": "aae8015f5ddd",
    "added": 3
+  },
+  "en": {
+   "title": "Gemini 4 Carbon now available in Cursor, tops CursorBench at 60.4%",
+   "short": "Gemini 4 Carbon tops CursorBench at 60.4%",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "68e7e0b8dce5"
   }
  }
 }

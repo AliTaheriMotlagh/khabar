@@ -124,6 +124,13 @@
    "model": "qwen3.5-9b-q4_k_m",
    "v": 2,
    "src": "edee04ad352b"
+  },
+  "en": {
+   "title": "Google rolls out Gemini 4 Carbon for complex software engineering and scientific discovery",
+   "short": "Google launches Gemini 4 Carbon globally today",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "3a6320470238"
   }
  }
 }

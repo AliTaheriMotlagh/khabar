@@ -139,6 +139,13 @@
    "v": 1,
    "src": "a523d874ecd2",
    "added": 2
+  },
+  "en": {
+   "title": "Anthropic Claude Mythos model runs on AMD MI355X GPUs in three days",
+   "short": "Claude Mythos model runs on AMD GPUs in three days",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "2fc5bfe84f69"
   }
  }
 }

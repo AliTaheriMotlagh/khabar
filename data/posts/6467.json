@@ -135,6 +135,13 @@
    "v": 1,
    "src": "d9e439bbbe3f",
    "added": 1
+  },
+  "en": {
+   "title": "Google DeepMind launches AlphaGenome 2 AI model to study cell-specific disease drivers",
+   "short": "Google DeepMind launches AlphaGenome 2 AI model",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "5f5a502f0cdc"
   }
  }
 }

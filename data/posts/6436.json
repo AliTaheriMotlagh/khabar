@@ -142,6 +142,13 @@
    "v": 1,
    "src": "d5c3fd3bc6b5",
    "added": 5
+  },
+  "en": {
+   "title": "NVIDIA open-sources Steel physics solver built with AI",
+   "short": "NVIDIA open-sources Steel physics solver",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "07023de51d32"
   }
  }
 }
