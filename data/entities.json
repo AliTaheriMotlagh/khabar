@@ -14663,6 +14663,18 @@
    "name_en": "Qwen2.5-0.5B",
    "name_fa": "کوئن ۲.۵-۰.۵ بیلیون",
    "kind": "model"
+  },
+  {
+   "slug": "private-inference",
+   "name_en": "Private Inference",
+   "name_fa": "اینفERENCE خصوصی",
+   "kind": "product"
+  },
+  {
+   "slug": "private-intelligence",
+   "name_en": "Private Intelligence",
+   "name_fa": "هوش مصنوعی خصوصی",
+   "kind": "product"
   }
  ]
 }
