@@ -14681,6 +14681,24 @@
    "name_en": "Satyress Robots",
    "name_fa": "ساتریس رباتس",
    "kind": "company"
+  },
+  {
+   "slug": "hazy-research",
+   "name_en": "Hazy Research",
+   "name_fa": "پژوهشگاه هازی",
+   "kind": "company"
+  },
+  {
+   "slug": "gemini-api-cli",
+   "name_en": "Gemini API CLI",
+   "name_fa": "کلاینت خط فرمان Gemini API",
+   "kind": "product"
+  },
+  {
+   "slug": "gemini-neon",
+   "name_en": "Gemini Neon",
+   "name_fa": "جمنی نئون",
+   "kind": "model"
   }
  ]
 }
