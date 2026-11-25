@@ -19,9 +19,9 @@ const next = page < total ? url(`page/${page + 1}/`) : null;
 const jsonLd = listLd({ name: `آرشیو خبرها — صفحه‌ی ${faNum(page)}`, path: `page/${page}/`, posts: slice });
 ---
 <Base title={`آرشیو خبرها — صفحه‌ی ${faNum(page)}`} description={`آرشیو خبرهای هوش مصنوعی و فناوری ${SITE.name}، صفحه‌ی ${faNum(page)} از ${faNum(total)}: ${slice.slice(0, 3).map((p) => p.short).join('، ')} و …`} jsonLd={jsonLd} prev={prev} next={next}>
-  <div class="container">
+  <div class="container home">
     <header class="page-head"><h1>آرشیو خبرها</h1><p>صفحه‌ی {faNum(page)} از {faNum(total)}</p></header>
-    <div class="layout">
+    <div class="layout home-layout">
       <div class="col-main"><Timeline posts={slice} all={posts} nextHref={next} prevHref={prev} title="خبرهای قدیمی‌تر" /></div>
       <Sidebar />
     </div>

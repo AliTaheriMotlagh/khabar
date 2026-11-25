@@ -62,11 +62,13 @@ function toggle() {
 export function initPlaylist() {
   if (!box) return;
   queue = todays(JSON.parse(box.dataset.playlist ?? '[]') as Item[]);
-  if (!queue.length) return;
+  if (!queue.length) return void (box.hidden = true);
   loadHost(queue);
   const p = player();
   const minutes = Math.max(1, Math.round(queue.reduce((s, i) => s + (i.m || 1), 0) * 1.2));
-  $('[data-playlist-meta]', box)!.textContent = `${fmtNum(queue.length)} خبر · حدود ${fmtNum(minutes)} دقیقه · خبرها پشت سر هم خوانده می‌شوند`;
+  const meta = `${fmtNum(queue.length)} خبر · حدود ${fmtNum(minutes)} دقیقه · خبرها پشت سر هم خوانده می‌شوند`;
+  $('[data-playlist-meta]', box)!.textContent = meta;
+  $('[data-playlist-play]', box)!.title = meta;
   canListen().then((ok) => (box.hidden = !ok));
   const label = $('[data-playlist-label]', box)!;
   const off = p.subscribe((s) => {

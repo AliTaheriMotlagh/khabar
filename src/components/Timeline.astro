@@ -2,13 +2,17 @@
 // The news as a timeline: days on a vertical rail, each post pinned at its time. A day's pill counts all of its news in
 // `all` (the whole list this is a page of), not only what this page shows; digests are summaries, not news. `filter`
 // (the home page): «همه / موضوع‌های من», shown once the reader follows a topic, and a row of the stories' types
-// («ابزار و محصول», «پژوهش و مقاله»…, from pipeline/ai.py) — src/scripts/follow.ts.
+// («ابزار و محصول», «پژوهش و مقاله»…, from pipeline/ai.py) — src/scripts/follow.ts. One row beside the title: «همه»,
+// «موضوع‌های من» and «صافی», which opens the type and topic groups. `ad`: the home ad slot after the fifth story.
 import Icon from './Icon.astro';
 import StoryCard from './StoryCard.astro';
+import AdSlot from './AdSlot.astro';
 import { dayKey, faDate, faNum, STORY_TYPES, type Post } from '../lib/posts';
 import { url } from '../lib/posts';
-interface Props { posts: Post[]; all?: Post[]; nextHref?: string | null; prevHref?: string | null; title?: string; eagerFirst?: boolean; topic?: string; filter?: boolean; who?: string }
-const { posts, all = posts, nextHref, prevHref, title = 'خط زمانی خبرها', eagerFirst = false, topic, filter = false, who } = Astro.props;
+interface Props { posts: Post[]; all?: Post[]; nextHref?: string | null; prevHref?: string | null; title?: string; eagerFirst?: boolean; topic?: string; filter?: boolean; who?: string; ad?: boolean }
+const { posts, all = posts, nextHref, prevHref, title = 'خط زمانی خبرها', eagerFirst = false, topic, filter = false, who, ad = false } = Astro.props;
+const AD_AFTER = 5;
+const adAfter = ad ? posts[Math.min(AD_AFTER, posts.length) - 1]?.id : undefined;
 const perDay = new Map<string, number>();
 for (const p of all) if (p.kind !== 'digest') perDay.set(dayKey(p.date), (perDay.get(dayKey(p.date)) ?? 0) + 1);
 
@@ -35,36 +39,47 @@ for (const p of posts) {
 }
 ---
 <section class="timeline" aria-labelledby="tl-title">
-  <h2 class="tl-title" id="tl-title">{title}</h2>
+  <div class="tl-head">
+    <h2 class="tl-title" id="tl-title">{title}</h2>
+    {
+      filter && (
+        <div class="tl-bar" data-tl-bar>
+          <div class="tl-chips" role="toolbar" aria-label="صافی خبرها">
+            <label class="fchip fchip-all"><input type="radio" name="tl-type" value="" checked data-tl-all /><span>همه</span></label>
+            <label class="fchip fchip-mine" data-tl-filter hidden><input type="checkbox" name="tl-filter" value="mine" /><span>★ موضوع‌های من</span></label>
+            <details class="tl-more">
+              <summary class="fchip-sum"><Icon name="settings" /> صافی</summary>
+              <div class="tl-panel">
+                <span class="tl-group" data-tl-types role="radiogroup" aria-label="نوع خبر" hidden>
+                  <span class="tl-group-label" aria-hidden="true">نوع</span>
+                  {TYPES.map((t) => (
+                    <label class="fchip" data-type-chip={t.v} title={t.hint}><input type="radio" name="tl-type" value={t.v} /><span><i aria-hidden="true">{t.icon}</i>{t.v}</span></label>
+                  ))}
+                </span>
+                {
+                  topics.length > 1 && (
+                    <span class="tl-group" data-tl-topics role="radiogroup" aria-label="موضوع">
+                      <span class="tl-group-label" aria-hidden="true">موضوع</span>
+                      {topics.map((t) => (
+                        <label class="fchip" data-topic-chip={t}><input type="radio" name="tl-topic" value={t} /><span>{t}</span></label>
+                      ))}
+                      <a class="fchip fchip-more" href={url('tags/')}>همه‌ی موضوع‌ها</a>
+                    </span>
+                  )
+                }
+              </div>
+            </details>
+          </div>
+        </div>
+      )
+    }
+  </div>
   {
     filter && (
-      <div class="tl-bar" data-tl-bar>
-        <div class="tl-chips" role="toolbar" aria-label="صافی خبرها">
-          <label class="fchip fchip-all"><input type="radio" name="tl-type" value="" checked data-tl-all /><span>همه</span></label>
-          <label class="fchip fchip-mine" data-tl-filter hidden><input type="checkbox" name="tl-filter" value="mine" /><span>★ موضوع‌های من</span></label>
-          <span class="tl-group" data-tl-types role="radiogroup" aria-label="نوع خبر" hidden>
-            <span class="tl-group-label" aria-hidden="true">نوع</span>
-            {TYPES.map((t) => (
-              <label class="fchip" data-type-chip={t.v} title={t.hint}><input type="radio" name="tl-type" value={t.v} /><span><i aria-hidden="true">{t.icon}</i>{t.v}</span></label>
-            ))}
-          </span>
-          {
-            topics.length > 1 && (
-              <span class="tl-group" data-tl-topics role="radiogroup" aria-label="موضوع">
-                <span class="tl-group-label" aria-hidden="true">موضوع</span>
-                {topics.map((t) => (
-                  <label class="fchip" data-topic-chip={t}><input type="radio" name="tl-topic" value={t} /><span>{t}</span></label>
-                ))}
-                <a class="fchip fchip-more" href={url('tags/')}>همه‌ی موضوع‌ها</a>
-              </span>
-            )
-          }
-        </div>
-        <p class="tl-active" data-tl-active hidden>
-          <span data-tl-active-text></span>
-          <button type="button" class="tl-clear" data-tl-clear>پاک کردن صافی</button>
-        </p>
-      </div>
+      <p class="tl-active" data-tl-active hidden>
+        <span data-tl-active-text></span>
+        <button type="button" class="tl-clear" data-tl-clear>پاک کردن صافی</button>
+      </p>
     )
   }
   <ol class="tl" data-tl>
@@ -77,7 +92,12 @@ for (const p of posts) {
               {perDay.get(d.day) ? <small data-num>{faNum(perDay.get(d.day)!)} خبر</small> : null}
             </span>
           </li>
-          {d.posts.map((p, i) => <StoryCard post={p} eager={eagerFirst && di === 0 && i < 2} topic={topic} who={who} />)}
+          {d.posts.map((p, i) => (
+            <>
+              <StoryCard post={p} eager={eagerFirst && di === 0 && i < 2} topic={topic} who={who} />
+              {p.id === adAfter && <li class="tl-ad"><AdSlot slot="home" /></li>}
+            </>
+          ))}
         </>
       ))
     }

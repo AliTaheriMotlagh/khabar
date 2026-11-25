@@ -122,6 +122,18 @@ export function initFollow() {
     store.set(key, '');
     applyFollowFilter();
   });
+  // «صافی» opens over the timeline: a pick, a tap elsewhere or Escape closes it.
+  const more = $<HTMLDetailsElement>('[data-tl-bar] details');
+  if (more) {
+    const close = () => (more.open = false);
+    $('[data-tl-bar]')!.addEventListener('change', (e) => (e.target as Element).closest('details') && close());
+    document.addEventListener('click', (e) => more.open && !more.contains(e.target as Node) && close());
+    document.addEventListener('keydown', (e) => {
+      if (e.key !== 'Escape' || !more.open) return;
+      close();
+      $('summary', more)?.focus();
+    });
+  }
   $('[data-tl-clear]')?.addEventListener('click', () => {
     [FILTER, TYPE, TOPIC].forEach((k) => store.set(k, k === FILTER ? 'all' : ''));
     applyFollowFilter();

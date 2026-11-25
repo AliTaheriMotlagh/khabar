@@ -1,14 +1,17 @@
 ---
-// The channel's own Persian morning summary (posted ~07:36 Tehran; the workflow crawls right after it), top of the home page.
-// Every line links to that story's page here. "Listen" reads the whole summary aloud (src/scripts/reader.ts): the same
-// lines as the digest's card.json, so /api/tts can voice them by index.
+// The channel's own Persian morning summary (posted ~07:36 Tehran; the workflow crawls right after it), on the home page:
+// one line — its name and its first item — that opens into the list (`open`: shown open, in the wide screens' side
+// column). Every line links to that story's page here. "Listen" reads the whole summary aloud (src/scripts/reader.ts):
+// the same lines as the digest's card.json, so /api/tts can voice them by index.
 import Icon from './Icon.astro';
 import { faDate, faNum, faTime, latestDigest } from '../lib/posts';
 import { lexFor } from '../lib/knowledge';
 import { sayLine } from '../../server/_say.js';
+interface Props { open?: boolean }
+const { open = false } = Astro.props;
 const digest = latestDigest();
 const items = digest?.digestItems ?? [];
-const SHOW = 4;
+const SHOW = 5;
 // Latin names the lexicon's way (server/_say.js), as on every other list read aloud.
 const spoken = (l: { text: string; post: number; i: number }) => {
   const s = sayLine(l.text, lexFor([l.text]), true);
@@ -18,25 +21,33 @@ const lines = digest ? [{ text: digest.article.title, post: digest.id, i: 0 }, .
 ---
 {
   digest && items.length > 0 && (
-    <section class="brief" aria-labelledby="brief-title">
-      <header class="brief-head">
-        <h2 id="brief-title"><Icon name="bolt" /> خلاصه‌ی خبرهای صبح</h2>
-        <small>{faDate(digest.date, { weekday: 'long', day: 'numeric', month: 'long' })} · ساعت {faTime(digest.date)}</small>
-        <button class="rb-btn listen brief-listen" type="button" data-brief-listen data-lines={JSON.stringify(lines)} aria-pressed="false" hidden>
-          <Icon name="volume" class="when-idle" /><Icon name="pause" class="when-playing" /><span data-listen-label>گوش دادن</span>
-        </button>
-      </header>
-      <ol class="brief-list">
-        {items.slice(0, SHOW).map((i) => (
-          <li>
-            <a href={i.href} target={i.internal ? undefined : '_blank'} rel={i.internal ? undefined : 'noopener'}>{i.text}</a>
-          </li>
-        ))}
-      </ol>
-      <button class="btn sm brief60" type="button" data-make-video={digest.href} data-video-shape="v" data-video-mode="short" hidden><Icon name="film" /> ۶۰ ثانیه خبر امروز، ویدیوی عمودی</button>
-      <a class="more-link" href={digest.href}>
-        {items.length > SHOW ? <>همه‌ی {faNum(items.length)} خبر خلاصه</> : 'خلاصه‌ی کامل'} <Icon name="arrow" />
-      </a>
-    </section>
+    <details class="brief" id="brief" open={open}>
+      <summary class="brief-sum">
+        <span class="brief-icon" aria-hidden="true"><Icon name="bolt" /></span>
+        <span class="brief-sum-text">
+          <b id="brief-title">خلاصه‌ی صبح <small>{faNum(items.length)} خبر، {faDate(digest.date, { weekday: 'long' })} ساعت {faTime(digest.date)}</small></b>
+          <span class="brief-first">{items[0].text}</span>
+        </span>
+        <span class="chev" aria-hidden="true"></span>
+      </summary>
+      <div class="brief-body">
+        <ol class="brief-list">
+          {items.slice(0, SHOW).map((i) => (
+            <li>
+              <a href={i.href} target={i.internal ? undefined : '_blank'} rel={i.internal ? undefined : 'noopener'}>{i.text}</a>
+            </li>
+          ))}
+        </ol>
+        <div class="brief-acts">
+          <button class="btn sm listen brief-listen" type="button" data-brief-listen data-lines={JSON.stringify(lines)} aria-pressed="false" hidden>
+            <Icon name="volume" class="when-idle" /><Icon name="pause" class="when-playing" /><span data-listen-label>گوش دادن</span>
+          </button>
+          <button class="btn sm brief60" type="button" data-make-video={digest.href} data-video-shape="v" data-video-mode="short" hidden><Icon name="film" /> ۶۰ ثانیه خبر</button>
+          <a class="more-link" href={digest.href}>
+            {items.length > SHOW ? <>همه‌ی {faNum(items.length)} خبر</> : 'خلاصه‌ی کامل'} <Icon name="arrow" />
+          </a>
+        </div>
+      </div>
+    </details>
   )
 }
