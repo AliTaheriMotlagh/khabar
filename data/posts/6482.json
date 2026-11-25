@@ -134,6 +134,13 @@
    "model": "qwen3.5-9b-q4_k_m",
    "v": 2,
    "src": "8edb6ffcd858"
+  },
+  "en": {
+   "title": "WSJ reports NVIDIA board preparing to oust Jensen Huang as CEO",
+   "short": "WSJ reports NVIDIA board may oust Jensen Huang",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "4f98514809c1"
   }
  }
 }

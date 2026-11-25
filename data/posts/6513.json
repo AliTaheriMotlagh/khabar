@@ -153,6 +153,13 @@
    "v": 1,
    "src": "7ecf02be637a",
    "added": 1
+  },
+  "en": {
+   "title": "YC-backed Vexo launches AI bracelet to turn conversations into action",
+   "short": "YC-backed Vexo launches AI bracelet",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "8e5e3d7a9ec7"
   }
  }
 }

@@ -114,6 +114,13 @@
    "model": "qwen3.5-9b-q4_k_m",
    "v": 2,
    "src": "0e8858dcbf60"
+  },
+  "en": {
+   "title": "ByteDance to launch personal AI agent this month",
+   "short": "ByteDance launches personal AI agent this month",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "366df545296e"
   }
  }
 }

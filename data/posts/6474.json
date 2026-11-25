@@ -141,6 +141,13 @@
    "model": "qwen3.5-9b-q4_k_m",
    "v": 2,
    "src": "e37df6e5a2b7"
+  },
+  "en": {
+   "title": "Jason Dainter shares 99% AI generated music video",
+   "short": "Jason Dainter shares 99% AI music video",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "bb404451c2c7"
   }
  }
 }

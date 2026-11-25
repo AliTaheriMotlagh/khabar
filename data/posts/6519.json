@@ -130,6 +130,13 @@
    "v": 1,
    "src": "a36b3c06828f",
    "added": 1
+  },
+  "en": {
+   "title": "Google Research shares Antigravity teamwork multi-agent system breakthroughs",
+   "short": "Google shares Antigravity teamwork system results",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "44c206fccc3d"
   }
  }
 }

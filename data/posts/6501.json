@@ -125,6 +125,13 @@
    "v": 1,
    "src": "1e69f9eab5f4",
    "added": 3
+  },
+  "en": {
+   "title": "Claude Meetings beta adds AI to video calls for real-time docs",
+   "short": "Claude Meetings beta adds AI to video calls",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "3a19e0ce0b4e"
   }
  }
 }

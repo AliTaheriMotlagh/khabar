@@ -145,6 +145,13 @@
    "v": 1,
    "src": "39811b9aa013",
    "added": 1
+  },
+  "en": {
+   "title": "Teammate Runs Fable 5.2 to Build Browser Zombie Shooter",
+   "short": "Fable 5.2 Used to Build Browser Zombie Shooter",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "2218d4787333"
   }
  }
 }

@@ -93,6 +93,13 @@
    "v": 1,
    "src": "4cea3ddcc668",
    "added": 1
+  },
+  "en": {
+   "title": "Meta employees testing prediction market app Takes with credibility bets",
+   "short": "Meta tests Takes prediction market app",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "b2829b32c916"
   }
  }
 }

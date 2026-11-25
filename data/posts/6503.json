@@ -143,6 +143,13 @@
    "v": 1,
    "src": "f31249af5bcc",
    "added": 4
+  },
+  "en": {
+   "title": "Thinking Machines releases Inkling 2 Small weights on Hugging Face",
+   "short": "Inkling 2 Small weights available on Hugging Face",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "629c09ac86bc"
   }
  }
 }

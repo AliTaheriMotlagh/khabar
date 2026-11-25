@@ -130,6 +130,13 @@
    "v": 1,
    "src": "430b38bf6daa",
    "added": 1
+  },
+  "en": {
+   "title": "Grok Bot 1.0 introduces AI teammates for team collaboration",
+   "short": "Grok Bot 1.0 adds AI teammates for teams",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "7a01d202df66"
   }
  }
 }

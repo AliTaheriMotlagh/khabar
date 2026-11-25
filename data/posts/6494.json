@@ -160,6 +160,13 @@
    "v": 1,
    "src": "930fa1560725",
    "added": 8
+  },
+  "en": {
+   "title": "Mirendil announces $1B Series A led by Kleiner Perkins and Clearlake",
+   "short": "Mirendil raises $1B Series A for frontier AI R&D",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "2193b49a06c8"
   }
  }
 }

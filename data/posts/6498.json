@@ -149,6 +149,13 @@
    "v": 1,
    "src": "d96076797e8c",
    "added": 2
+  },
+  "en": {
+   "title": "Retell AI revenue run rate crosses $100M milestone",
+   "short": "Retell AI revenue run rate crosses $100M",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "591f2d84d21b"
   }
  }
 }

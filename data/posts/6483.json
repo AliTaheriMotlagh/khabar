@@ -123,6 +123,13 @@
    "v": 1,
    "src": "e823600dd6e7",
    "added": 1
+  },
+  "en": {
+   "title": "Analyst Says Jensen Huang May Be Replaced At Nvidia",
+   "short": "Analyst predicts Jensen Huang departure at Nvidia",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "f782cd33b5bc"
   }
  }
 }

@@ -130,6 +130,13 @@
    "v": 1,
    "src": "13c7d02f2244",
    "added": 1
+  },
+  "en": {
+   "title": "YouArt launches desktop AI app to automate creative software",
+   "short": "YouArt AI app automates CapCut, Premiere and more",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "ed475a4566ff"
   }
  }
 }

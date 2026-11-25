@@ -127,6 +127,13 @@
    "model": "qwen3.5-9b-q4_k_m",
    "v": 2,
    "src": "8ba367217f13"
+  },
+  "en": {
+   "title": "Cloud provider weighing alternatives to Nvidia chips after Jensen Huang leaves",
+   "short": "Cloud provider considering Google and AMD chips",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "b2f05652a4ad"
   }
  }
 }

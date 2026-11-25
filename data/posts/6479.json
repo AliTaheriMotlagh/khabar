@@ -51,6 +51,13 @@
    "v": 1,
    "src": "695b1cb6d53f",
    "added": 11
+  },
+  "en": {
+   "title": "Richard Davey shares Pong clone after asking Fable 5.2 to make a game",
+   "short": "Richard Davey shares Pong clone",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "222391b9f27c"
   }
  }
 }

@@ -118,6 +118,13 @@
    "model": "qwen3.5-9b-q4_k_m",
    "v": 2,
    "src": "7a03868b7ede"
+  },
+  "en": {
+   "title": "OpenAI Disbands Robotics Team as LLMs Become Robot Brains",
+   "short": "OpenAI Disbands Robotics Team",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "cdefcff3cad3"
   }
  }
 }

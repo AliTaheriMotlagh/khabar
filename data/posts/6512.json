@@ -151,6 +151,13 @@
    "v": 1,
    "src": "d48c17ee3965",
    "added": 3
+  },
+  "en": {
+   "title": "Looping a transformer increases no-CoT capabilities more than other ways of increasing pretrain quality",
+   "short": "Looping transformer boosts no-CoT capabilities",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "35b62d739f08"
   }
  }
 }

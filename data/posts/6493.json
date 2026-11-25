@@ -129,6 +129,13 @@
    "v": 1,
    "src": "8eca68422568",
    "added": 2
+  },
+  "en": {
+   "title": "4DSurgical raises $8M to combine MRI precision with robotics",
+   "short": "4DSurgical raises $8M for MRI-robotic surgery",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "792e53275668"
   }
  }
 }

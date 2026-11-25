@@ -127,6 +127,13 @@
    "v": 1,
    "src": "62e8b0b15af8",
    "added": 1
+  },
+  "en": {
+   "title": "Google Labs introduces Tabletop experiment for shared workspaces",
+   "short": "Google Labs launches Tabletop experiment for teams",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "1fdc66f502fd"
   }
  }
 }

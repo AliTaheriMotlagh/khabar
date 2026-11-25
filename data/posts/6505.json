@@ -104,6 +104,13 @@
    "model": "qwen3.5-9b-q4_k_m",
    "v": 2,
    "src": "3b9c36e16346"
+  },
+  "en": {
+   "title": "Huang castigates himself as piece of sh-- and worries about wife",
+   "short": "Huang regrets actions and fears hurting wife",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "d9e0bec06345"
   }
  }
 }

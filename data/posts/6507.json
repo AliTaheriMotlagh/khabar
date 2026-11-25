@@ -126,6 +126,13 @@
    "v": 1,
    "src": "5abadfca05f6",
    "added": 2
+  },
+  "en": {
+   "title": "TSMC hacked via cloud provider; 46K employee records leaked",
+   "short": "TSMC hacked; 46K employee records leaked",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "fcac761737d8"
   }
  }
 }

@@ -154,6 +154,13 @@
    "v": 1,
    "src": "97fcc0215d51",
    "added": 2
+  },
+  "en": {
+   "title": "Megakernel achieves 1100 toks/s for Muse Spark on Nvidia GB300",
+   "short": "Megakernel boosts Muse Spark to 1100 toks/s",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "ece5ab5f9bb7"
   }
  }
 }

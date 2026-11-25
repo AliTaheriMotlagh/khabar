@@ -157,6 +157,13 @@
    "v": 1,
    "src": "5ee56ec5a9db",
    "added": 1
+  },
+  "en": {
+   "title": "Liquid AI introduces 74M-parameter streaming audio codec LiquidCodec",
+   "short": "Liquid AI unveils LiquidCodec audio codec",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "889c58194ea8"
   }
  }
 }

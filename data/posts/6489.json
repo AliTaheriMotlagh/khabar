@@ -108,6 +108,13 @@
    "model": "qwen3.5-9b-q4_k_m",
    "v": 2,
    "src": "fd736ae8f983"
+  },
+  "en": {
+   "title": "NVIDIA Announces Jensen Huang Resigns As CEO",
+   "short": "NVIDIA CEO Jensen Huang Resigns Immediately",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "a97d77a3985b"
   }
  }
 }

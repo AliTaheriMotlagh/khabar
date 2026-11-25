@@ -99,6 +99,13 @@
    "model": "qwen3.5-9b-q4_k_m",
    "v": 2,
    "src": "b95172e5a956"
+  },
+  "en": {
+   "title": "Nvidia working with outside firm to identify potential replacements for Jensen Huang",
+   "short": "Nvidia seeking CEO replacement for Jensen Huang",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "94de2e461b6d"
   }
  }
 }

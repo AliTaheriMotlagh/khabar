@@ -124,6 +124,13 @@
    "v": 1,
    "src": "a234f5bd1717",
    "added": 3
+  },
+  "en": {
+   "title": "Google employee references Helix as Flash Lite tier model",
+   "short": "Google employee links Helix to Flash Lite tier",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "cf79e632e64a"
   }
  }
 }

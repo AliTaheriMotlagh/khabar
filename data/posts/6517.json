@@ -126,6 +126,13 @@
    "v": 1,
    "src": "49a7851a8b37",
    "added": 3
+  },
+  "en": {
+   "title": "Google Antigravity rolls out Dynamic Workflows with deterministic control",
+   "short": "Google Antigravity launches Dynamic Workflows",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "32caa846b689"
   }
  }
 }
