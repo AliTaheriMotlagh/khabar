@@ -12,7 +12,7 @@
   "site": "🧵 Thread • FxTwitter",
   "title": "Chubby ♨️ (@kimmonismus)",
   "description": "WHAT IS HAPPENING?! Google just silently dropped six new math papers, all produced by its AI agent Cogentic running on Gemini 4. Google says no human was involved after the first prompt.\n- Factoring: Splitting huge numbers into primes is the backbone of…",
-  "image": "https://cdn4.telesco.pe/file/tE9TeehYUyhjRp6Cseg4pZHRL2Gv6tI8QsGDTXHwO4e5ZwMJ-ZJ1AQNn01pt6H9Oo0Vlrb0CY1kg5nLYVqznDzRrYG21p8hZoNT30B25zYg4SpKHuJd7AKvH6qjXUTaPXM2XAxjBVI-sn-e0DwtFke4Qk9uA-kmKIQhnO0HPTU4Y2Azqtg6g4YVyNp1-bBE8GFkQmRDV_1-C5VFI1QO-Pnk2FeQzKINvFcAMR6UG2D0u_sASbMJ1XN6yh-5IMpPzWjGaPhtM6X_quQaJ89qGiL0vta0jzTaRfFi8vpB7lqzEGxNrI6rwo0nHJYXcpokpZTb7LfS10z1RL9-Qz5qGIw.jpg"
+  "image": "https://cdn4.telesco.pe/file/tI7cghsNxY7PK7tz5pkd5F8p7PxIOtt6H22abVyAFPd_1-sPi4evf-Pf1qC5y41h4WXM5jOHuYLCZARGOA8oo9WPdHuYVDN72ELMskivzpdMqmSZ23HTp-SLVce6tW0XRVPL9WXmLJm-XSonBaA_fwDlCA6ECGMVIZ-ly6LMbYhWnoXBQTchnY0K7Sy3jmaNpCl4HDsYBG5XC8JBR96g9XOHchgGZEEaTt2ZhHTdWZYxzXTOoCnaMj5VS33vcHPv2GF-E2mASeOJxsEc8v7klf5M1D1xGYPkFhG4fEoUVs692qKEERu9DpfwBK3oJgSFZoZnF_FI_PVxv2kU9DlwAg.jpg"
  },
  "gholam": {
   "text": "رفقا، گوگل تو سکوت خبری ۶ تا مقاله جدید ریاضی و علوم کامپیوتر (با تاریخ ۲۵ نوامبر ۲۰۲۶) تو گیت‌هابش منتشر کرده که به گفته خودشون، همگی توسط ایجنت هوش مصنوعی «Cogentic» و بر پایه مدل Gemini 4 تولید شدن. طبق متنی که تو تصویر یکی از مقالات دیده میشه، پژوهشگران گوگل ریسرچ و دیپ‌مایند میگن بعد از پرامپت اول، هیچ انسانی تو نوشتن اثبات‌ها و کدهای رسمی‌سازیِ زبان Lean 4 دخالت نداشته. 🧮\n\n• نویسنده توییت میگه یکی از مقالات سراغ اثبات سرعت الگوریتم تجزیه اعداد بزرگ (پایه رمزنگاری RSA) رفته که حدود ۳۰ سال کسی نتونسته بود ثابتش کنه، و مقاله دیگه هم روش تجزیه قطعی و بدون تصادفی‌سازی در زمان زیرنمایی رو آورده.\n• تو بقیه عناوین، کارهایی روی شکستن سد ریشه دوم در حدس log-rank (مطرح‌شده از ۱۹۸۸)، بازسازی یال گراف‌های ساده با چگالی خطی (مرتبط با حدس ۱۹۶۴ هاراری)، لگاریتم گسسته در میدان‌های متناهی و تعادل نش دیده میشه.\n• تو مخزن گیت‌هاب این پروژه در مجموع ۱۰ پوشه مقاله هست و نویسنده توییت هم این موضوع رو در ادامه خبرهای چند روز اخیر آنتروپیک و اوپن‌ای‌آی دونسته.\n\nخلاصه ما هنوز سر یه تقسیم دو رقمی گیر می‌کنیم، این مدل‌ها نشستن پای اثبات قضیه‌های چند ده ساله!",
@@ -157,5 +157,5 @@
    "کدنویسی"
   ]
  },
- "updated": "2026-11-26T13:48:11+00:00"
+ "updated": "2026-11-26T19:53:27+00:00"
 }

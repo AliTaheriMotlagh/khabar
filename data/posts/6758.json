@@ -18,51 +18,6 @@
   "text": "رفقا، طبق اسکرین‌شات‌هایی که از گزارش تازه رویترز (۲۶ نوامبر ۲۰۲۶) منتشر شده، منابع آگاه می‌گن محدودیت‌های تراشه‌ای آمریکا و سخت‌گیری‌های ضد «تقطیر» از طرف شرکت‌هایی مثل OpenAI و Anthropic سرعت توسعه هوش مصنوعی در چین رو حسابی کم کرده ⏳ انگار وقتی هم اجاق پردازش کم‌زورتر می‌شه و هم راه استفاده از خروجی مدل‌های رقیب بسته می‌شه، تیم‌ها مجبورن با دست‌فرمون کندتری جلو برن و دنبال مسیرهای تازه بگردن.\n\n• به گفته منابع رویترز، شرکت Z.AI از برنامه عرضه مدل پرچم‌دار بعدیش عقب افتاده و ممکنه تا ۲۰۲۷ تأخیر بخوره؛ نویسنده پست هم این مدل رو نسخه حدوداً ۳ تریلیون پارامتری GLM-5.5 معرفی کرده.\n• شرکت Moonshot پیش‌بینی کرده اگه دسترسیش به توان پردازشی خارج از چین کاملاً قطع بشه، فاصله بین عرضه‌های بزرگش از ۶ ماه به یک سال یا بیشتر برسه و مدل Kimi K4 تا اواسط ۲۰۲۷ عقب بیفته؛ این شرکت در حال تلاش برای اجاره توان پردازشی در اروپا و مذاکره با تراشه‌سازهای چینیه.\n• طبق همین گزارش، از وقتی گرفتن داده آموزشی از مدل‌های OpenAI و Anthropic سخت‌تر شده، Moonshot سراغ تقطیر از مدل‌های گوگل و متا رفته.\n\nمتن کامل مقاله رویترز در دسترس نبود و این جزئیات بر اساس پست و تصاویر منتشرشده از اون گزارشه، که البته به گفته همون منابع فعلاً از فشار جدی روی زمان‌بندی این شرکت‌ها خبر می‌ده.",
   "date": "2026-11-26T16:37:13+00:00"
  },
- "links": [
-  {
-   "kind": "tweet",
-   "url": "https://x.com/kimmonismus/status/2125899930996740427",
-   "domain": "x.com",
-   "author": {
-    "name": "Chubby♨️",
-    "handle": "kimmonismus",
-    "avatar": "https://pbs.twimg.com/profile_images/1728327996375719936/RW7VBJfD_200x200.jpg"
-   },
-   "text": "Ruters confirms: Cutting off distillation and compute works and slows down Chinese Models like GLM massively:\n\nzAI is behind schedule on its next flagship GLM-5.5 (around 3T parameters), and Moonshot expects the gap between major releases to double from six months to a year or longer if it loses overseas compute, Reuters reports.\n\nSince Anthropic and OpenAI got better at blocking distillation, Moonshot has started distilling from Google and Meta models instead, a source told Reuters. Kimi K4 could slip to mid-2027.",
-   "date": 1795689015,
-   "media": [
-    {
-     "type": "image",
-     "src": "https://pbs.twimg.com/media/HYC2r5QXkAAcRt3.jpg?name=orig",
-     "ratio": 0.8421
-    },
-    {
-     "type": "image",
-     "src": "https://pbs.twimg.com/media/HYC2svwXQAAq-GV.jpg?name=orig",
-     "ratio": 0.4887
-    }
-   ],
-   "links": []
-  }
- ],
- "article": {
-  "title": "طبق اسکرین‌شات‌هایی که از گزارش تازه رویترز (۲۶ نوامبر ۲۰۲۶) منتشر شده، منابع آگاه می‌گن محدودیت‌های تراشه‌ای آمریکا و سخت‌گیری‌های ضد «تقطیر» از طرف شرکت‌هایی مثل OpenAI و Anthropic سرعت توسعه هوش…",
-  "source_title": "Ruters confirms: Cutting off distillation and compute works and slows down Chinese Models like GLM massively:",
-  "body": [
-   "طبق اسکرین‌شات‌هایی که از گزارش تازه رویترز (۲۶ نوامبر ۲۰۲۶) منتشر شده، منابع آگاه می‌گن محدودیت‌های تراشه‌ای آمریکا و سخت‌گیری‌های ضد «تقطیر» از طرف شرکت‌هایی مثل OpenAI و Anthropic سرعت توسعه هوش مصنوعی در چین رو حسابی کم کرده ⏳ انگار وقتی هم اجاق پردازش کم‌زورتر می‌شه و هم راه استفاده از خروجی مدل‌های رقیب بسته می‌شه، تیم‌ها مجبورن با دست‌فرمون کندتری جلو برن و دنبال مسیرهای تازه بگردن.",
-   "• به گفته منابع رویترز، شرکت Z.AI از برنامه عرضه مدل پرچم‌دار بعدیش عقب افتاده و ممکنه تا ۲۰۲۷ تأخیر بخوره؛ نویسنده پست هم این مدل رو نسخه حدوداً ۳ تریلیون پارامتری GLM-5.5 معرفی کرده.",
-   "• شرکت Moonshot پیش‌بینی کرده اگه دسترسیش به توان پردازشی خارج از چین کاملاً قطع بشه، فاصله بین عرضه‌های بزرگش از ۶ ماه به یک سال یا بیشتر برسه و مدل Kimi K4 تا اواسط ۲۰۲۷ عقب بیفته؛ این شرکت در حال تلاش برای اجاره توان پردازشی در اروپا و مذاکره با تراشه‌سازهای چینیه.",
-   "• طبق همین گزارش، از وقتی گرفتن داده آموزشی از مدل‌های OpenAI و Anthropic سخت‌تر شده، Moonshot سراغ تقطیر از مدل‌های گوگل و متا رفته."
-  ],
-  "why": "متن کامل مقاله رویترز در دسترس نبود و این جزئیات بر اساس پست و تصاویر منتشرشده از اون گزارشه، که البته به گفته همون منابع فعلاً از فشار جدی روی زمان‌بندی این شرکت‌ها خبر می‌ده.",
-  "why_label": "حرف آخر",
-  "tags": [
-   "چین",
-   "اوپن‌ای‌آی",
-   "آنتروپیک"
-  ]
- },
- "updated": "2026-11-26T16:40:24+00:00",
  "ai": {
   "title": "محدودیت‌های آمریکا و قطیر مدل‌ها، توسعه هوش مصنوعی چین را کند کرد",
   "short": "توقف تقطیر و تراشه",
@@ -156,5 +111,50 @@
    "v": 2,
    "src": "ab5d032d6d1d"
   }
- }
+ },
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/kimmonismus/status/2125899930996740427",
+   "domain": "x.com",
+   "author": {
+    "name": "Chubby♨️",
+    "handle": "kimmonismus",
+    "avatar": "https://pbs.twimg.com/profile_images/1728327996375719936/RW7VBJfD_200x200.jpg"
+   },
+   "text": "Ruters confirms: Cutting off distillation and compute works and slows down Chinese Models like GLM massively:\n\nzAI is behind schedule on its next flagship GLM-5.5 (around 3T parameters), and Moonshot expects the gap between major releases to double from six months to a year or longer if it loses overseas compute, Reuters reports.\n\nSince Anthropic and OpenAI got better at blocking distillation, Moonshot has started distilling from Google and Meta models instead, a source told Reuters. Kimi K4 could slip to mid-2027.",
+   "date": 1795689015,
+   "media": [
+    {
+     "type": "image",
+     "src": "https://pbs.twimg.com/media/HYC2r5QXkAAcRt3.jpg?name=orig",
+     "ratio": 0.8421
+    },
+    {
+     "type": "image",
+     "src": "https://pbs.twimg.com/media/HYC2svwXQAAq-GV.jpg?name=orig",
+     "ratio": 0.4887
+    }
+   ],
+   "links": []
+  }
+ ],
+ "article": {
+  "title": "طبق اسکرین‌شات‌هایی که از گزارش تازه رویترز (۲۶ نوامبر ۲۰۲۶) منتشر شده، منابع آگاه می‌گن محدودیت‌های تراشه‌ای آمریکا و سخت‌گیری‌های ضد «تقطیر» از طرف شرکت‌هایی مثل OpenAI و Anthropic سرعت توسعه هوش…",
+  "source_title": "Ruters confirms: Cutting off distillation and compute works and slows down Chinese Models like GLM massively:",
+  "body": [
+   "طبق اسکرین‌شات‌هایی که از گزارش تازه رویترز (۲۶ نوامبر ۲۰۲۶) منتشر شده، منابع آگاه می‌گن محدودیت‌های تراشه‌ای آمریکا و سخت‌گیری‌های ضد «تقطیر» از طرف شرکت‌هایی مثل OpenAI و Anthropic سرعت توسعه هوش مصنوعی در چین رو حسابی کم کرده ⏳ انگار وقتی هم اجاق پردازش کم‌زورتر می‌شه و هم راه استفاده از خروجی مدل‌های رقیب بسته می‌شه، تیم‌ها مجبورن با دست‌فرمون کندتری جلو برن و دنبال مسیرهای تازه بگردن.",
+   "• به گفته منابع رویترز، شرکت Z.AI از برنامه عرضه مدل پرچم‌دار بعدیش عقب افتاده و ممکنه تا ۲۰۲۷ تأخیر بخوره؛ نویسنده پست هم این مدل رو نسخه حدوداً ۳ تریلیون پارامتری GLM-5.5 معرفی کرده.",
+   "• شرکت Moonshot پیش‌بینی کرده اگه دسترسیش به توان پردازشی خارج از چین کاملاً قطع بشه، فاصله بین عرضه‌های بزرگش از ۶ ماه به یک سال یا بیشتر برسه و مدل Kimi K4 تا اواسط ۲۰۲۷ عقب بیفته؛ این شرکت در حال تلاش برای اجاره توان پردازشی در اروپا و مذاکره با تراشه‌سازهای چینیه.",
+   "• طبق همین گزارش، از وقتی گرفتن داده آموزشی از مدل‌های OpenAI و Anthropic سخت‌تر شده، Moonshot سراغ تقطیر از مدل‌های گوگل و متا رفته."
+  ],
+  "why": "متن کامل مقاله رویترز در دسترس نبود و این جزئیات بر اساس پست و تصاویر منتشرشده از اون گزارشه، که البته به گفته همون منابع فعلاً از فشار جدی روی زمان‌بندی این شرکت‌ها خبر می‌ده.",
+  "why_label": "حرف آخر",
+  "tags": [
+   "چین",
+   "اوپن‌ای‌آی",
+   "آنتروپیک"
+  ]
+ },
+ "updated": "2026-11-26T19:53:27+00:00"
 }
