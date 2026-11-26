@@ -14783,6 +14783,24 @@
    "name_en": "Venkatesa Chandrasekaran",
    "name_fa": "ونکاتسا چاندراسکاران",
    "kind": "person"
+  },
+  {
+   "slug": "april-robotics",
+   "name_en": "April Robotics",
+   "name_fa": "اپریل رباتیکس",
+   "kind": "company"
+  },
+  {
+   "slug": "april-gloves",
+   "name_en": "April Gloves",
+   "name_fa": "اپریل گلووس",
+   "kind": "product"
+  },
+  {
+   "slug": "april-transfer",
+   "name_en": "April Transfer",
+   "name_fa": "اپریل ترنسفر",
+   "kind": "product"
   }
  ]
 }
