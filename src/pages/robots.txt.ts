@@ -14,6 +14,8 @@ export function GET() {
       'Disallow: /recent.json',
       'Disallow: /ai.json',
       'Disallow: /investigate.json',
+      // The explorer's searches (/investigate/?q=…) are one page each to a crawler, all with the same canonical: not content.
+      'Disallow: /*?q=',
       // The English edition (/en/) is content like the rest: its pages are in the same sitemaps, paired by hreflang.
       'Allow: /en/',
       '',

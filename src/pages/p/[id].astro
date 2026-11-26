@@ -16,6 +16,7 @@ import StoryFacts from '../../components/StoryFacts.astro';
 import StatusChip from '../../components/StatusChip.astro';
 import AdSlot from '../../components/AdSlot.astro';
 import { enOf } from '../../lib/en';
+import { hasWhoPage } from '../../lib/who';
 
 export function getStaticPaths() {
   // Previous/next walk the listed feed; an unlisted (English-only) page has none.
@@ -41,7 +42,7 @@ const count = (t: string) => t.split(/\s+/).filter(Boolean).length;
 // A story whose translation came through empty (a bare link) is its headline: never a word count of 0.
 const words = count([...a.body, a.why ?? ''].join(' ')) || count(a.title);
 // The people, companies and models the story names (pipeline/ai.py, `ai.x.entities`): linked data for search engines.
-const mentions = (post.entities ?? []).map((e) => ({ '@type': e.kind === 'person' ? 'Person' : e.kind === 'company' ? 'Organization' : 'Thing', name: e.name_en, alternateName: e.name_fa, url: abs(`who/${e.slug}/`) }));
+const mentions = (post.entities ?? []).map((e) => ({ '@type': e.kind === 'person' ? 'Person' : e.kind === 'company' ? 'Organization' : 'Thing', name: e.name_en, alternateName: e.name_fa, ...(hasWhoPage(e.slug) && { url: abs(`who/${e.slug}/`) }) }));
 // X's video addresses are stable (Telegram's are signed and expire), so only those are offered to search as a video.
 const video = post.gallery.find((m) => m.type === 'video' && !m.gif && m.src && /^https:\/\/video\.twimg\.com\//.test(m.src));
 const isoDuration = (d: unknown) => {
@@ -178,7 +179,7 @@ const jsonLd = [
       {
         post.entities.length > 0 && (
           <nav class="who-chips" aria-label="آدم‌ها و شرکت‌های این خبر" data-pagefind-ignore>
-            {post.entities.map((e) => <a href={url(`who/${e.slug}/`)}>{e.name_fa}</a>)}
+            {post.entities.map((e) => (hasWhoPage(e.slug) ? <a href={url(`who/${e.slug}/`)}>{e.name_fa}</a> : <span>{e.name_fa}</span>))}
           </nav>
         )
       }

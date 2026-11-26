@@ -42,6 +42,16 @@ function seoIndex() {
   return { posts, videos, newest };
 }
 const seo = seoIndex();
+/** @param {string} page */
+function isNoindex(page) {
+  try {
+    const rel = decodeURIComponent(new URL(page).pathname).slice(BASE.length).replace(/^\//, '');
+    const html = fs.readFileSync(path.resolve('dist', rel, 'index.html'), 'utf8').slice(0, 20000);
+    return /<meta name="robots" content="noindex/.test(html);
+  } catch {
+    return false;
+  }
+}
 // Which English pages exist (the build writes them; listed again here for the sitemap's hreflang pairs).
 const EN_PAGES = new Set();
 const enDir = path.resolve('dist/en');
@@ -62,7 +72,9 @@ export default defineConfig({
   prefetch: { prefetchAll: false, defaultStrategy: 'hover' },
   integrations: [
     sitemap({
-      filter: (page) => !/\/(saved|search|me|offline|admin)\/$/.test(page),
+      // A page that tells search engines not to index it (an unlisted brief, the reader's own pages) stays out of the
+      // sitemap too: listing it is what Search Console reports as "Excluded by 'noindex' tag". Read from the built page.
+      filter: (page) => !/\/(saved|search|me|offline|admin)\/$/.test(page) && !isNoindex(page),
       // The English edition's pages sit at /en/<same path>: the sitemap pairs them (hreflang) with their Persian twins.
       i18n: { defaultLocale: 'fa', locales: { fa: 'fa-IR', en: 'en' } },
       serialize(item) {

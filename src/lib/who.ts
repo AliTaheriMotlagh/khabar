@@ -24,3 +24,11 @@ export function whoList() {
   return cache;
 }
 export const whoHref = (slug: string) => `who/${slug}/`;
+
+let withPage: Set<string> | null = null;
+/** Whether /who/<slug>/ exists (MIN stories or more). Story pages link a name only then: a link to a page that
+ *  was never built is a 404 for readers and for search engines (Search Console: "Not found (404)"). */
+export function hasWhoPage(slug: string) {
+  withPage ??= new Set(whoList().filter((x) => x.posts.length >= MIN).map((x) => x.e.slug));
+  return withPage.has(slug);
+}
