@@ -70,5 +70,22 @@
   "why_label": "حرف آخر",
   "tags": []
  },
- "updated": "2026-11-26T01:39:25+00:00"
+ "updated": "2026-11-26T01:39:25+00:00",
+ "ai": {
+  "title": "روش Model Carving: تراشیدن مدل‌ها برای سرعت و کاهش مصرف تا ۳۴ درصد",
+  "short": "Model Carving سریع‌تر",
+  "topics": [
+   "علم"
+  ],
+  "type": "پژوهش و مقاله",
+  "model": "qwen3.5-9b-q4_k_m",
+  "v": 2,
+  "src": "68e4a7b8772a",
+  "en": {
+   "failed": true,
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "eaa1f9139ad7"
+  }
+ }
 }
