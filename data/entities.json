@@ -14759,6 +14759,24 @@
    "name_en": "superalesha",
    "name_fa": "سوپر‌آلیشا",
    "kind": "person"
+  },
+  {
+   "slug": "modaic",
+   "name_en": "Modaic",
+   "name_fa": "مودایک",
+   "kind": "company"
+  },
+  {
+   "slug": "typesafe",
+   "name_en": "TypeSafe",
+   "name_fa": "تایپ‌سیف",
+   "kind": "company"
+  },
+  {
+   "slug": "qwen35-35b-a3b",
+   "name_en": "Qwen3.5-35B-A3B",
+   "name_fa": "کوئن ۳.۵-۳۵ بی‌آی-اِی-اِی-بی",
+   "kind": "model"
   }
  ]
 }
