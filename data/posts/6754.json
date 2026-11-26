@@ -55,5 +55,21 @@
    "چین"
   ]
  },
- "updated": "2026-11-26T04:15:29+00:00"
+ "updated": "2026-11-26T04:15:29+00:00",
+ "ai": {
+  "title": "تیم Modaic مدل Jev را به Qwen3.5-35B-A3B نسبت داد",
+  "short": "Jev همان Qwen3.5 است",
+  "topics": [],
+  "type": "پژوهش و مقاله",
+  "model": "qwen3.5-9b-q4_k_m",
+  "v": 2,
+  "src": "52d134b92564",
+  "en": {
+   "title": "Jev latency profiled across 9,984 prompts matches Qwen3.5-35B-A3B",
+   "short": "Jev latency matches Qwen3.5-35B-A3B",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "c5fa1efdc257"
+  }
+ }
 }
