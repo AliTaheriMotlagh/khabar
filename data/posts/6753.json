@@ -49,5 +49,23 @@
    "اوپن‌ای‌آی"
   ]
  },
- "updated": "2026-11-26T03:21:48+00:00"
+ "updated": "2026-11-26T03:21:48+00:00",
+ "ai": {
+  "title": "اوپن‌ای‌آی اشتباه محاسباتی GPT-6.2 را اصلاح کرد و سقف مصرف را زودتر می‌رسید",
+  "short": "اصلاح اشتباه GPT-6.2",
+  "topics": [
+   "اوپن‌ای‌آی"
+  ],
+  "type": "خبر",
+  "model": "qwen3.5-9b-q4_k_m",
+  "v": 2,
+  "src": "daae2fcf3cfe",
+  "en": {
+   "title": "OpenAI fixes billing mistake on GPT-6.2 Astra and Sol usage",
+   "short": "OpenAI fixes billing mistake on GPT-6.2 usage",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "a6a94acf051d"
+  }
+ }
 }
