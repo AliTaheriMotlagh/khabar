@@ -136,6 +136,13 @@
    "model": "qwen3.5-9b-q4_k_m",
    "v": 2,
    "src": "3cabcc361de7"
+  },
+  "en": {
+   "title": "Sam Altman admits he was wrong on AI timeline and says society and economy will adapt more slowly",
+   "short": "Sam Altman admits he was wrong on AI timeline",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "00cc9276d88f"
   }
  }
 }

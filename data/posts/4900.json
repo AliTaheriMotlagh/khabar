@@ -116,6 +116,13 @@
    "model": "qwen3.5-9b-q4_k_m",
    "v": 2,
    "src": "8bcf9f5e7b7c"
+  },
+  "en": {
+   "title": "Nvidia Considering Billions to License Perplexity Technology",
+   "short": "Nvidia considering billions for Perplexity tech",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "674a63bff4c3"
   }
  }
 }

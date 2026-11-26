@@ -134,6 +134,13 @@
    "model": "qwen3.5-9b-q4_k_m",
    "v": 2,
    "src": "1130bd9d1fc8"
+  },
+  "en": {
+   "title": "Ox Alpha rocket engine output lags behind Opus 5 performance",
+   "short": "Ox Alpha engine output slower than Opus 5",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "9f9ef82dedab"
   }
  }
 }

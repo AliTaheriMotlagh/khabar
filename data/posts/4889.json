@@ -108,6 +108,13 @@
    "model": "qwen3.5-9b-q4_k_m",
    "v": 2,
    "src": "19651c7c40e4"
+  },
+  "en": {
+   "title": "Study finds LLM diagnostic accuracy drops 60% when patient communicates",
+   "short": "LLM medical accuracy drops 60% with patient input",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "06dce347f196"
   }
  }
 }

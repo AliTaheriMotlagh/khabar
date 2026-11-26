@@ -138,6 +138,13 @@
    "v": 1,
    "src": "5e83789be88e",
    "added": 1
+  },
+  "en": {
+   "title": "Zomato founder Deepinder Goyal builds wearable to measure brain blood flow",
+   "short": "Zomato founder builds brain blood flow wearable",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "f327c1417a45"
   }
  }
 }

@@ -126,6 +126,13 @@
    "model": "qwen3.5-9b-q4_k_m",
    "v": 2,
    "src": "28382ad0f15a"
+  },
+  "en": {
+   "title": "Anthropic hires Google TPU founder Amir Salek for compute team",
+   "short": "Anthropic hires Amir Salek for compute team",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "a77019ce858b"
   }
  }
 }

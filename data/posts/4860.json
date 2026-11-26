@@ -140,6 +140,13 @@
    "model": "qwen3.5-9b-q4_k_m",
    "v": 2,
    "src": "60fba394c447"
+  },
+  "en": {
+   "title": "NVIDIA AVO agent scores 100% on ARC-AGI-3 benchmark",
+   "short": "NVIDIA AVO scores 100% on ARC-AGI-3 benchmark",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "bf647c5610ca"
   }
  }
 }

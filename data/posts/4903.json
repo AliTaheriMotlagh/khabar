@@ -129,6 +129,13 @@
    "model": "qwen3.5-9b-q4_k_m",
    "v": 2,
    "src": "746e51dc9404"
+  },
+  "en": {
+   "title": "NVIDIA Groq 3 LPX Now in Full Production for Agentic AI",
+   "short": "NVIDIA Groq 3 LPX enters full production",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "6e50c40a9647"
   }
  }
 }

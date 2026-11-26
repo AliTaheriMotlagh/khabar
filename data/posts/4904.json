@@ -127,6 +127,13 @@
    "v": 1,
    "src": "90ccc9aa84ef",
    "added": 1
+  },
+  "en": {
+   "title": "Xiaimi Announces AI Cube With O3, O100 And D100 Chips",
+   "short": "Xiaomi unveils AI Cube with triple custom chips",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "a2de2d24dbb9"
   }
  }
 }

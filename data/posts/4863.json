@@ -129,6 +129,13 @@
    "v": 1,
    "src": "660051d15ac6",
    "added": 1
+  },
+  "en": {
+   "title": "Ox Alpha stealth model now free in Cline with marginal improvement",
+   "short": "Ox Alpha stealth model now free in Cline",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "bf5a3705d7d1"
   }
  }
 }

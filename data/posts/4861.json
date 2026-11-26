@@ -131,6 +131,13 @@
    "v": 1,
    "src": "cc8c53e033d5",
    "added": 2
+  },
+  "en": {
+   "title": "Runway introduces Ruby model for SDR to 16-bit HDR video conversion",
+   "short": "Runway launches Ruby for SDR to HDR conversion",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "23fe9cc85c8c"
   }
  }
 }

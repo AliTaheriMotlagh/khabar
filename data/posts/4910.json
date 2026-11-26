@@ -122,6 +122,13 @@
    "model": "qwen3.5-9b-q4_k_m",
    "v": 2,
    "src": "596058d5df75"
+  },
+  "en": {
+   "title": "Pika launches WAN 3.0 with 30-second generations and enhanced realism",
+   "short": "Pika launches WAN 3.0 with 30-second generations",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "527e3219503f"
   }
  }
 }

@@ -130,6 +130,13 @@
    "model": "qwen3.5-9b-q4_k_m",
    "v": 2,
    "src": "830055372015"
+  },
+  "en": {
+   "title": "Open-source AI token share jumps from 28% to 62% in two months",
+   "short": "Open-source AI token share rises to 62%",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "cfb132d29ba3"
   }
  }
 }

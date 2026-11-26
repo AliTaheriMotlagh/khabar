@@ -117,6 +117,13 @@
    "model": "qwen3.5-9b-q4_k_m",
    "v": 2,
    "src": "fafaeb79d344"
+  },
+  "en": {
+   "title": "Anthropic IPO expected to match or exceed SpaceX size",
+   "short": "Anthropic IPO could match SpaceX size",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "3b9fb642d44c"
   }
  }
 }

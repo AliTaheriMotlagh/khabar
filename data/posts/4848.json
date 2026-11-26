@@ -127,6 +127,13 @@
    "model": "qwen3.5-9b-q4_k_m",
    "v": 2,
    "src": "64d349aacf0f"
+  },
+  "en": {
+   "title": "Claude Academy is now live with free AI education",
+   "short": "Claude Academy offers free AI education",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "5e7142ac6376"
   }
  }
 }

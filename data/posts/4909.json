@@ -96,6 +96,13 @@
    "model": "qwen3.5-9b-q4_k_m",
    "v": 2,
    "src": "29019f6ae04e"
+  },
+  "en": {
+   "title": "Robot buckled under weight then started spamming errors",
+   "short": "Robot buckled under weight then spamming errors",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "1ab53c5ba2af"
   }
  }
 }

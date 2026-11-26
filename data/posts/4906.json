@@ -130,6 +130,13 @@
    "v": 1,
    "src": "bb9a4ea59e05",
    "added": 1
+  },
+  "en": {
+   "title": "Qwen newest model named Paloma tested in Arena",
+   "short": "Qwen's new Paloma model tested in Arena",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "7aa1a5e30ea6"
   }
  }
 }

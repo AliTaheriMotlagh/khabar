@@ -126,6 +126,13 @@
    "v": 1,
    "src": "4fb815e8bd3d",
    "added": 1
+  },
+  "en": {
+   "title": "Nvidia to use $6bn Poolside deal for powerful open-weight model",
+   "short": "Nvidia partners with Poolside for Nemotron model",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "b376e6fc1736"
   }
  }
 }

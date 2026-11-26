@@ -135,6 +135,13 @@
    "model": "qwen3.5-9b-q4_k_m",
    "v": 2,
    "src": "0b5aaa088cba"
+  },
+  "en": {
+   "title": "Ox Alpha AI Model Free for One Week with 1M Context",
+   "short": "Ox Alpha AI free this week",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "3b1d92f89d24"
   }
  }
 }

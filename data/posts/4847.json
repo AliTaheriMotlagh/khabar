@@ -126,6 +126,13 @@
    "v": 1,
    "src": "5819778898df",
    "added": 1
+  },
+  "en": {
+   "title": "OpenAI lets users add teammates as editors to ChatGPT Sites",
+   "short": "OpenAI adds team editing to ChatGPT Sites",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "af48f22e48d0"
   }
  }
 }

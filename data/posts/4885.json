@@ -102,6 +102,13 @@
    "model": "qwen3.5-9b-q4_k_m",
    "v": 2,
    "src": "c9333c71f4f4"
+  },
+  "en": {
+   "title": "Robot scores free kick and celebrates with SIUUUU",
+   "short": "Robot scores free kick and celebrates",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "b56475eb8c81"
   }
  }
 }

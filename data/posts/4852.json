@@ -108,6 +108,13 @@
    "model": "qwen3.5-9b-q4_k_m",
    "v": 2,
    "src": "c63ffe7668a5"
+  },
+  "en": {
+   "title": "YC founder ownership drops to 35-45% at Series B",
+   "short": "YC founder equity drops to 35-45% at Series B",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "0e742d0b2c4d"
   }
  }
 }

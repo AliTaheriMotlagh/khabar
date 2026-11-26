@@ -115,6 +115,13 @@
    "model": "qwen3.5-9b-q4_k_m",
    "v": 2,
    "src": "f80602131fee"
+  },
+  "en": {
+   "title": "Ox Alpha stealth model free for next week with 1M context",
+   "short": "Ox Alpha free for a week",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "b26a791410eb"
   }
  }
 }

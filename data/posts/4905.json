@@ -102,6 +102,13 @@
    "model": "qwen3.5-9b-q4_k_m",
    "v": 2,
    "src": "e9acd8964773"
+  },
+  "en": {
+   "title": "Patients urged to use AI before seeing doctors",
+   "short": "Patients urged to use AI before seeing doctors",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "1f06d45fee92"
   }
  }
 }

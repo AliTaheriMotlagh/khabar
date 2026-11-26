@@ -96,6 +96,13 @@
    "v": 1,
    "src": "79771be32e70",
    "added": 1
+  },
+  "en": {
+   "title": "Cold email data shows 8-12% reply rate and 1-2 customers per month",
+   "short": "Cold email math works for B2B founders",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "079c2e590820"
   }
  }
 }

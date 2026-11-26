@@ -125,6 +125,13 @@
    "v": 1,
    "src": "3f925043b0ab",
    "added": 1
+  },
+  "en": {
+   "title": "Nvidia invests in three data center power and land developers",
+   "short": "Nvidia invests in three data center developers",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "931b972b1ac8"
   }
  }
 }

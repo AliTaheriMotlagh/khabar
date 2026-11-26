@@ -100,6 +100,13 @@
    "model": "qwen3.5-9b-q4_k_m",
    "v": 2,
    "src": "3306dc59353e"
+  },
+  "en": {
+   "title": "Hugging Face exploring sale that could value it at $13B+",
+   "short": "Hugging Face exploring $13B sale",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "6ab4ae245601"
   }
  }
 }

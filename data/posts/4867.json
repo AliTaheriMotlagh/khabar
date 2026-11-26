@@ -120,6 +120,13 @@
    "model": "qwen3.5-9b-q4_k_m",
    "v": 2,
    "src": "2dd57e755ddb"
+  },
+  "en": {
+   "title": "Nous Research offers Ox Alpha free via portal with quadrillion token capacity",
+   "short": "Ox Alpha free via Nous Portal",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "11d04305ac8a"
   }
  }
 }

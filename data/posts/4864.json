@@ -117,6 +117,13 @@
    "model": "qwen3.5-9b-q4_k_m",
    "v": 2,
    "src": "80bb3f50a36e"
+  },
+  "en": {
+   "title": "OpenAI drops GPT-5.6 Sol API and credit pricing by over 20%",
+   "short": "OpenAI cuts GPT-5.6 Sol pricing by 20%",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "e2530691f8e9"
   }
  }
 }

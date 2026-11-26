@@ -150,6 +150,13 @@
    "v": 1,
    "src": "ed224750b5ff",
    "added": 1
+  },
+  "en": {
+   "title": "Unknown Model Beats GPT and Fable on DeepSWE Tasks",
+   "short": "Unknown model scores 80% on DeepSWE tasks",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "77b0f496178e"
   }
  }
 }

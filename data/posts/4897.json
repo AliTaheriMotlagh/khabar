@@ -127,6 +127,13 @@
    "model": "qwen3.5-9b-q4_k_m",
    "v": 2,
    "src": "72ca71e8172e"
+  },
+  "en": {
+   "title": "Legal, Sales and Recruiting See Massive AI Adoption Growth",
+   "short": "Legal, Sales and Recruiting AI adoption surges",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "a7bee7858190"
   }
  }
 }

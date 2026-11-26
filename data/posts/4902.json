@@ -140,6 +140,13 @@
    "v": 1,
    "src": "64dd118f3b06",
    "added": 1
+  },
+  "en": {
+   "title": "Xiaomi shows AI Cube prototype with 120B local models",
+   "short": "Xiaomi unveils AI Cube prototype with 120B models",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "39b37b805593"
   }
  }
 }

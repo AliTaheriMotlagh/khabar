@@ -114,6 +114,13 @@
    "v": 1,
    "src": "364267d3d2a4",
    "added": 2
+  },
+  "en": {
+   "title": "HelloUntangle hires engineers using DevinAI and screen recordings",
+   "short": "HelloUntangle uses DevinAI to hire engineers",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "946192a1c628"
   }
  }
 }

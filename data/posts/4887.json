@@ -115,6 +115,13 @@
    "model": "qwen3.5-9b-q4_k_m",
    "v": 2,
    "src": "86e4a4a0e84e"
+  },
+  "en": {
+   "title": "Codex CLI startup speed improved 25x in latest release",
+   "short": "Codex CLI startup now 25x faster",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "4a42fd2d71cd"
   }
  }
 }

@@ -123,6 +123,13 @@
    "model": "qwen3.5-9b-q4_k_m",
    "v": 2,
    "src": "e81b99c1c1d3"
+  },
+  "en": {
+   "title": "Honor Chinese humanoid robot runs 100m in 9.32 seconds",
+   "short": "Honor robot runs 100m in 9.32 seconds",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "1f60dd0202f1"
   }
  }
 }

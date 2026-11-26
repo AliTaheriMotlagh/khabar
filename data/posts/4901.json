@@ -117,6 +117,13 @@
    "model": "qwen3.5-9b-q4_k_m",
    "v": 2,
    "src": "cd898107ecef"
+  },
+  "en": {
+   "title": "Ox Alpha Continual Learning Improves Raptor Engine 3D Model",
+   "short": "Ox Alpha improves Raptor engine model daily",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "303118f87fb8"
   }
  }
 }

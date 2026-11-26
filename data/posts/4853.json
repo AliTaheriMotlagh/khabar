@@ -123,6 +123,13 @@
    "v": 1,
    "src": "f0644daac292",
    "added": 1
+  },
+  "en": {
+   "title": "Allia launches first AI-native mental health medical group",
+   "short": "Allia launches AI-native mental health group",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "6ff31737dd2c"
   }
  }
 }

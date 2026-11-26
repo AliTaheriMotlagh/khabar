@@ -104,6 +104,13 @@
    "model": "qwen3.5-9b-q4_k_m",
    "v": 2,
    "src": "480619688125"
+  },
+  "en": {
+   "title": "Chinese rescue robot flies autonomously to drowning victims",
+   "short": "Chinese robot flies to drowning victims",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "36213780d0bc"
   }
  }
 }

@@ -113,6 +113,13 @@
    "v": 1,
    "src": "2d4012e4dab8",
    "added": 1
+  },
+  "en": {
+   "title": "AI on track to write nearly 1 in 3 medical SOAP notes",
+   "short": "AI to write nearly 1 in 3 medical SOAP notes",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "27242f60be7d"
   }
  }
 }

@@ -131,6 +131,13 @@
    "model": "qwen3.5-9b-q4_k_m",
    "v": 2,
    "src": "840fa5379631"
+  },
+  "en": {
+   "title": "Ed Zitron Criticizes NVIDIA AI Valuation Strategy",
+   "short": "Zitron calls NVIDIA AI deal circular",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "8faa22d81d73"
   }
  }
 }

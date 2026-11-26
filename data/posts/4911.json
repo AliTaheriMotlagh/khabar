@@ -122,6 +122,13 @@
    "model": "qwen3.5-9b-q4_k_m",
    "v": 2,
    "src": "7091df533ec8"
+  },
+  "en": {
+   "title": "Wan 3.0 now on Magnific with story spanning 22 years",
+   "short": "Wan 3.0 on Magnific spans 22 years, 13 scenes",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "893043e4f51c"
   }
  }
 }

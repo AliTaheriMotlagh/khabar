@@ -124,6 +124,13 @@
    "model": "qwen3.5-9b-q4_k_m",
    "v": 2,
    "src": "251c7f4ee6a7"
+  },
+  "en": {
+   "title": "Tempus Receives FDA Clearance for AI ECG Device Detecting Pulmonary Hypertension",
+   "short": "Tempus gets FDA clearance for AI ECG tool",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "b2a1cf981f67"
   }
  }
 }

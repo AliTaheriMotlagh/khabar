@@ -107,6 +107,13 @@
    "v": 1,
    "src": "a38df5fc50fb",
    "added": 1
+  },
+  "en": {
+   "title": "Robot sacrifices itself to win the race",
+   "short": "Robot sacrifices itself to win race",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "ebcb1ef00fbc"
   }
  }
 }

@@ -106,6 +106,13 @@
    "model": "qwen3.5-9b-q4_k_m",
    "v": 2,
    "src": "9cb5786fba36"
+  },
+  "en": {
+   "title": "Fully autonomous vehicle operates 15 feet up and down",
+   "short": "Autonomous vehicle operates 15 feet up and down",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "165e602b7f0c"
   }
  }
 }

@@ -139,6 +139,13 @@
    "v": 1,
    "src": "d04d999fe7b8",
    "added": 1
+  },
+  "en": {
+   "title": "DeepSWE benchmark shows ox-alpha at 58.4% pass rate",
+   "short": "ox-alpha scores 58.4% on DeepSWE benchmark",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "9bf6f8a109f7"
   }
  }
 }

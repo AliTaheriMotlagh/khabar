@@ -136,6 +136,13 @@
    "model": "qwen3.5-9b-q4_k_m",
    "v": 2,
    "src": "94168ade7ef2"
+  },
+  "en": {
+   "title": "Muse Spark 1.2 multimodal model supports visual coding and robotics",
+   "short": "Muse Spark 1.2 supports visual coding and robotics",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "4a6d3c7149bf"
   }
  }
 }

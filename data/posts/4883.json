@@ -149,6 +149,13 @@
    "model": "qwen3.5-9b-q4_k_m",
    "v": 2,
    "src": "c8c8e1c45faa"
+  },
+  "en": {
+   "title": "Spotify gives ChatGPT Sol entire catalogue for playlist",
+   "short": "Spotify gives ChatGPT Sol entire catalogue",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "26f5c8be4aa0"
   }
  }
 }

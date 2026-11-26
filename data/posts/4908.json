@@ -137,6 +137,13 @@
    "v": 1,
    "src": "81cff5df2015",
    "added": 1
+  },
+  "en": {
+   "title": "NVIDIA measures Vera Rubin performance on real-world agent workloads",
+   "short": "NVIDIA tests Vera Rubin on agent workloads",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "4300ab803fe2"
   }
  }
 }
