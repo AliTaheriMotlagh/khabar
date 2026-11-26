@@ -133,6 +133,13 @@
    "model": "qwen3.5-9b-q4_k_m",
    "v": 2,
    "src": "a567973fb747"
+  },
+  "en": {
+   "title": "SpaceX to use best backend models including Claude Opus 5.5 for Grok",
+   "short": "SpaceX to use best backend models for Grok",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "f29b92c7115e"
   }
  }
 }

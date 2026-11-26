@@ -126,6 +126,13 @@
    "v": 1,
    "src": "a45a9ea2fb17",
    "added": 1
+  },
+  "en": {
+   "title": "Scale Labs introduces Humanity's Sixth Sense benchmark",
+   "short": "New benchmark tests intuitive visual reasoning",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "09b46e3ebafd"
   }
  }
 }

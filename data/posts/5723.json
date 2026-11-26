@@ -132,6 +132,13 @@
    "v": 1,
    "src": "b758e4a32ff0",
    "added": 1
+  },
+  "en": {
+   "title": "XPU Grasshopper AI Chip Reaches 816x Speed Increase in 13 Weeks",
+   "short": "XPU Grasshopper AI chip reaches 816x speed boost",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "75468cc3287e"
   }
  }
 }

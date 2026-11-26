@@ -137,6 +137,13 @@
    "model": "qwen3.5-9b-q4_k_m",
    "v": 2,
    "src": "c92604541f63"
+  },
+  "en": {
+   "title": "OpenAI annualized revenue nears $50B, below earlier $70B reports",
+   "short": "OpenAI revenue nears $50B, below $70B reports",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "e1dce12745f7"
   }
  }
 }

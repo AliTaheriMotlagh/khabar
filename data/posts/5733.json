@@ -123,6 +123,13 @@
    "v": 1,
    "src": "d3894dfa4146",
    "added": 1
+  },
+  "en": {
+   "title": "OpenRouter Releases Decision Model Rankings Showing Spend and Token Share",
+   "short": "OpenRouter releases new decision model rankings",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "74816ae36cae"
   }
  }
 }

@@ -119,6 +119,13 @@
    "model": "qwen3.5-9b-q4_k_m",
    "v": 2,
    "src": "2620cafcdd54"
+  },
+  "en": {
+   "title": "Mathematician questions career focus after AI releases new results",
+   "short": "Mathematician questions AI career focus",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "be0dcc3e51b2"
   }
  }
 }

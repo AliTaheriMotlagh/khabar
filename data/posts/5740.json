@@ -102,6 +102,13 @@
    "model": "qwen3.5-9b-q4_k_m",
    "v": 2,
    "src": "3f32b93578f4"
+  },
+  "en": {
+   "title": "Science pipeline suffers from disconnect between theory and applied work",
+   "short": "Theory and applied science remain disconnected",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "4ebd2ea30108"
   }
  }
 }

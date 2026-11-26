@@ -124,6 +124,13 @@
    "model": "qwen3.5-9b-q4_k_m",
    "v": 2,
    "src": "0e16adadb804"
+  },
+  "en": {
+   "title": "OpenAI problem 109 integer multiplication update tightens kappa to 2^-59",
+   "short": "OpenAI problem 109 kappa tightened to 2^-59",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "04321f628946"
   }
  }
 }

@@ -111,6 +111,13 @@
    "model": "qwen3.5-9b-q4_k_m",
    "v": 2,
    "src": "0fb04dfba80a"
+  },
+  "en": {
+   "title": "Maggi questions link between AI math skills and medical research",
+   "short": "Maggi doubts AI math skills cure cancer",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "e46a5bb9e54a"
   }
  }
 }

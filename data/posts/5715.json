@@ -148,6 +148,13 @@
    "v": 1,
    "src": "5b129849fa15",
    "added": 3
+  },
+  "en": {
+   "title": "Liquid AI releases Open d1 multimodal models for real-time decisions",
+   "short": "Liquid AI releases Open d1 multimodal models",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "134069f69eac"
   }
  }
 }

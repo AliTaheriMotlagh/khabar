@@ -142,6 +142,13 @@
    "model": "qwen3.5-9b-q4_k_m",
    "v": 2,
    "src": "8eb0846e1d93"
+  },
+  "en": {
+   "title": "Jaguar Type 01 unveiled with NVIDIA Hyperion platform and Halos safety system",
+   "short": "Jaguar Type 01 powered by NVIDIA",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "7247b8c15e7c"
   }
  }
 }

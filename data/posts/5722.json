@@ -118,6 +118,13 @@
    "model": "qwen3.5-9b-q4_k_m",
    "v": 2,
    "src": "754183662d67"
+  },
+  "en": {
+   "title": "Biological brain compiled into Cadence patch net runs in browser",
+   "short": "Biological brain runs in browser at 26x efficiency",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "af30745a728d"
   }
  }
 }

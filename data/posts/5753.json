@@ -185,6 +185,13 @@
    "v": 1,
    "src": "ab82922f6c8b",
    "added": 2
+  },
+  "en": {
+   "title": "Odyssey-3 Pro sets new Physics-IQ Verified video-to-video score",
+   "short": "Odyssey-3 Pro scores 66.1 on Physics-IQ benchmark",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "a0b25b10b765"
   }
  }
 }

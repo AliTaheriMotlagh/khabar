@@ -118,6 +118,13 @@
    "model": "qwen3.5-9b-q4_k_m",
    "v": 2,
    "src": "ac84224db03a"
+  },
+  "en": {
+   "title": "OpenAI rolls out Ultrafast for GPT-6.1 Sol in API and ChatGPT",
+   "short": "OpenAI launches Ultrafast for GPT-6.1 Sol",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "ccdb82cdca90"
   }
  }
 }

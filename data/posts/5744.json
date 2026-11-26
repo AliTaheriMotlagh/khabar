@@ -157,6 +157,13 @@
    "v": 1,
    "src": "9fcec75eb8e7",
    "added": 2
+  },
+  "en": {
+   "title": "Stanford DeLM beats Claude Code and Codex on coding tasks",
+   "short": "Stanford DeLM beats Claude Code and Codex",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "05e46814dc0f"
   }
  }
 }

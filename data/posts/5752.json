@@ -109,6 +109,13 @@
    "model": "qwen3.5-9b-q4_k_m",
    "v": 2,
    "src": "53af881a99bd"
+  },
+  "en": {
+   "title": "Trump says White House considers AI users enemies",
+   "short": "Trump calls AI users enemies",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "de3247667877"
   }
  }
 }

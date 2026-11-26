@@ -111,6 +111,13 @@
    "model": "qwen3.5-9b-q4_k_m",
    "v": 2,
    "src": "412fb36b02a0"
+  },
+  "en": {
+   "title": "Artificial Analysis Intelligence Index v5 coming in late October",
+   "short": "AI Intelligence Index v5 launches late October",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "9be4d485bef8"
   }
  }
 }

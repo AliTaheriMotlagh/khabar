@@ -122,6 +122,13 @@
    "model": "qwen3.5-9b-q4_k_m",
    "v": 2,
    "src": "32f2d8e3cbd5"
+  },
+  "en": {
+   "title": "Anthropic introduces Claude Haiku 5.5 as cheapest and fastest small model",
+   "short": "Claude Haiku 5.5 costs 75% less than Haiku 4.5",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "d927f6307360"
   }
  }
 }

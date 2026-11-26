@@ -122,6 +122,13 @@
    "v": 1,
    "src": "49cd3fc0ac6e",
    "added": 1
+  },
+  "en": {
+   "title": "ProjectDiscovery shows backdoor in open model costs under $50",
+   "short": "ProjectDiscovery backdoor costs under $50",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "7c20c95281ba"
   }
  }
 }

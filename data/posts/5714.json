@@ -139,6 +139,13 @@
    "v": 1,
    "src": "3e06620b9e05",
    "added": 1
+  },
+  "en": {
+   "title": "Nous Research Raises $90M at $1.5B Valuation for Hermes Agent Expansion",
+   "short": "Nous Research raises $90M for Hermes Agent",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "ffc35de147f1"
   }
  }
 }

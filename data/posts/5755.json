@@ -120,6 +120,13 @@
    "v": 1,
    "src": "56ea87c7f967",
    "added": 3
+  },
+  "en": {
+   "title": "OpenCode offers Step 5 Preview free for one week",
+   "short": "OpenCode Step 5 Preview free for a week",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "18433a03aca4"
   }
  }
 }

@@ -112,6 +112,13 @@
    "v": 1,
    "src": "e7a654eac711",
    "added": 2
+  },
+  "en": {
+   "title": "Aman Launches Higher-Order Extraction Feature",
+   "short": "Aman launches Higher-Order Extraction",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "766def7b4e67"
   }
  }
 }

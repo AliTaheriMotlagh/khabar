@@ -129,6 +129,13 @@
    "model": "qwen3.5-9b-q4_k_m",
    "v": 2,
    "src": "12e0fcdc9391"
+  },
+  "en": {
+   "title": "Frontier labs focus on reinforcement learning as data runs out",
+   "short": "Frontier labs pivot to RL amid data scarcity",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "03d74418f441"
   }
  }
 }

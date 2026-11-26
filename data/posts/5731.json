@@ -94,6 +94,13 @@
    "model": "qwen3.5-9b-q4_k_m",
    "v": 2,
    "src": "8cf1ba06c63e"
+  },
+  "en": {
+   "title": "Mathematician Nicolò Cesa-Bianchi Shares Dream of AI Proving Theorems",
+   "short": "Mathematician dreams of AI proving theorems",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "007c995972d1"
   }
  }
 }

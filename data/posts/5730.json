@@ -111,6 +111,13 @@
    "model": "qwen3.5-9b-q4_k_m",
    "v": 2,
    "src": "e71eef985288"
+  },
+  "en": {
+   "title": "Jon Stewart mocks AI promises citing current surveillance and surge pricing",
+   "short": "Jon Stewart mocks AI promises",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "3afc077024f5"
   }
  }
 }

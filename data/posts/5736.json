@@ -145,6 +145,13 @@
    "v": 1,
    "src": "2afb73323403",
    "added": 1
+  },
+  "en": {
+   "title": "Paradee distills Kokoro-82M into 8M-param TTS",
+   "short": "Paradee distills Kokoro-82M into 8M-param TTS",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "d68de63ac85a"
   }
  }
 }

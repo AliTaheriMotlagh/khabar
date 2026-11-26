@@ -129,6 +129,13 @@
    "model": "qwen3.5-9b-q4_k_m",
    "v": 2,
    "src": "d88f9ad93a01"
+  },
+  "en": {
+   "title": "Google Research tests AI impact on patent attorney expertise",
+   "short": "Google tests AI effects on patent attorneys",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "947708b905b4"
   }
  }
 }

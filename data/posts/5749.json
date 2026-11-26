@@ -129,6 +129,13 @@
    "v": 1,
    "src": "5e3ed4747cd4",
    "added": 3
+  },
+  "en": {
+   "title": "Neuphonic releases 43 MB audio-first decision model NeuDecide",
+   "short": "Neuphonic releases 43 MB NeuDecide audio model",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "ea0733cf129d"
   }
  }
 }

@@ -89,6 +89,13 @@
    "model": "qwen3.5-9b-q4_k_m",
    "v": 2,
    "src": "bafab47ac5de"
+  },
+  "en": {
+   "title": "Senior AI Researchers Claim New Ideas Are Their Own Past Work",
+   "short": "Seniors claim new AI ideas are their past work",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "c268ebf4fe77"
   }
  }
 }
