@@ -135,6 +135,13 @@
    "model": "qwen3.5-9b-q4_k_m",
    "v": 2,
    "src": "f6de3a4854a3"
+  },
+  "en": {
+   "title": "Claude Fable 5.1 cheaper, stronger on agentic benchmarks, Anthropic says",
+   "short": "Claude Fable 5.1 cheaper, stronger",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "735b509f7776"
   }
  }
 }

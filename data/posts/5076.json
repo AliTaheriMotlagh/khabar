@@ -129,6 +129,13 @@
    "model": "qwen3.5-9b-q4_k_m",
    "v": 2,
    "src": "f0576253b21e"
+  },
+  "en": {
+   "title": "Anthropic introduces Claude Fable 5.1 and Claude Mythos 5.1",
+   "short": "New Claude models for coding and knowledge work",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "cb75c64a5003"
   }
  }
 }

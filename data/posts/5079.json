@@ -119,6 +119,13 @@
    "model": "qwen3.5-9b-q4_k_m",
    "v": 2,
    "src": "f9597bf0c685"
+  },
+  "en": {
+   "title": "Atlas AI generates unfilmed scene parts and reframes shots",
+   "short": "Atlas AI creates unfilmed scene parts",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "7ed1bf51856c"
   }
  }
 }

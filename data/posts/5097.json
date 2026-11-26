@@ -119,6 +119,13 @@
    "v": 1,
    "src": "b74f3d765836",
    "added": 1
+  },
+  "en": {
+   "title": "New platform fal.live lets users direct infinite AI livestreams",
+   "short": "Users direct infinite AI livestreams on fal.live",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "6c0825ba55ba"
   }
  }
 }

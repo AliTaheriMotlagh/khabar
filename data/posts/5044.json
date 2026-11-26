@@ -116,6 +116,13 @@
    "model": "qwen3.5-9b-q4_k_m",
    "v": 2,
    "src": "de853f25a709"
+  },
+  "en": {
+   "title": "Emad Mostaque shows Taalas generating at 14,000 tokens per second",
+   "short": "Taalas generates at 14,000 tokens per second",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "adfa67a01afa"
   }
  }
 }

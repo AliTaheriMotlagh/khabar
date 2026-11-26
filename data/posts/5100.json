@@ -139,6 +139,13 @@
    "model": "qwen3.5-9b-q4_k_m",
    "v": 2,
    "src": "a6b290911264"
+  },
+  "en": {
+   "title": "Google reportedly approaches Disney, Warner and Universal with AI licensing offers",
+   "short": "Google seeks AI licenses from major studios",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "473df6deac30"
   }
  }
 }

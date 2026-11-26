@@ -135,6 +135,13 @@
    "v": 1,
    "src": "52003b4a1245",
    "added": 1
+  },
+  "en": {
+   "title": "OpenAI plans to release GPT-Astra soon, possibly Thursday",
+   "short": "OpenAI to release GPT-Astra soon",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "07eccb95b07f"
   }
  }
 }

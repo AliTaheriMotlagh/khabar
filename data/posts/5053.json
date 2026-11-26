@@ -122,6 +122,13 @@
    "model": "qwen3.5-9b-q4_k_m",
    "v": 2,
    "src": "896fadf19b8d"
+  },
+  "en": {
+   "title": "Runway Shares Research on Solaris Interface World Model",
+   "short": "Runway shares Solaris interface model research",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "2739afcad0f4"
   }
  }
 }

@@ -138,6 +138,13 @@
    "v": 1,
    "src": "946902f0a550",
    "added": 2
+  },
+  "en": {
+   "title": "Google launches Pics, an AI-powered Canva rival for Workspace",
+   "short": "Google launches Pics, an AI-powered Canva rival",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "e3e04229d6c6"
   }
  }
 }

@@ -134,6 +134,13 @@
    "v": 1,
    "src": "5ae941edc14e",
    "added": 1
+  },
+  "en": {
+   "title": "Samsung allocates 70% of memory capacity to NVIDIA, Microsoft and Google",
+   "short": "Samsung locks 70% capacity for key AI chipmakers",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "a4fe35147444"
   }
  }
 }

@@ -131,6 +131,13 @@
    "model": "qwen3.5-9b-q4_k_m",
    "v": 2,
    "src": "77183f8d8d53"
+  },
+  "en": {
+   "title": "Google to release Gemini 3.8 Flash this week with coding focus",
+   "short": "Google releases Gemini 3.8 Flash this week",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "6b3595742e59"
   }
  }
 }

@@ -101,6 +101,13 @@
    "model": "qwen3.5-9b-q4_k_m",
    "v": 2,
    "src": "5059e69d6b91"
+  },
+  "en": {
+   "title": "AI advice makes people three times less accurate and twice more confident",
+   "short": "AI advice reduces accuracy and boosts confidence",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "f1c8f237e577"
   }
  }
 }

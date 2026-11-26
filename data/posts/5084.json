@@ -136,6 +136,13 @@
    "v": 1,
    "src": "74ddbc23f603",
    "added": 1
+  },
+  "en": {
+   "title": "First polynomial-time algorithm found for Győri-Lovász theorem",
+   "short": "First poly-time algorithm for Győri-Lovász theorem",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "fb99a6ffed0c"
   }
  }
 }

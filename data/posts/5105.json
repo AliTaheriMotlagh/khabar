@@ -129,6 +129,13 @@
    "model": "qwen3.5-9b-q4_k_m",
    "v": 2,
    "src": "2c5d510d47ca"
+  },
+  "en": {
+   "title": "Trump administration files brief supporting OpenAI against New York Times",
+   "short": "Trump admin supports OpenAI against NYT",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "2372c0fd1959"
   }
  }
 }

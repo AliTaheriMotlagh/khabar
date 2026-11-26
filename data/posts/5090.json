@@ -142,6 +142,13 @@
    "v": 1,
    "src": "f96e17f4eacc",
    "added": 1
+  },
+  "en": {
+   "title": "Qwen3.8-Max-0902 upgraded with 2.4T parameters and 1M context",
+   "short": "Qwen3.8-Max-0902 upgraded with 2.4T parameters",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "50ef7b9666db"
   }
  }
 }

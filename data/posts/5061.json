@@ -133,6 +133,13 @@
    "v": 1,
    "src": "16c3beb072bb",
    "added": 2
+  },
+  "en": {
+   "title": "Abliteration releases abliterated-model-large-v2 based on GLM-5.3",
+   "short": "Abliteration releases new model based on GLM-5.3",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "16a5cad25857"
   }
  }
 }

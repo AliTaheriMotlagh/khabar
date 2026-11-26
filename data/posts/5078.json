@@ -122,6 +122,13 @@
    "model": "qwen3.5-9b-q4_k_m",
    "v": 2,
    "src": "bdce9d74203b"
+  },
+  "en": {
+   "title": "Cybercabs are taking over Austin",
+   "short": "Cybercabs are taking over Austin",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "21c1e06c9892"
   }
  }
 }

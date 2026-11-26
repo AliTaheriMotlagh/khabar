@@ -110,6 +110,13 @@
    "v": 1,
    "src": "96fcead3270a",
    "added": 1
+  },
+  "en": {
+   "title": "Fambot builds AI chief of staff to manage family logistics",
+   "short": "Fambot launches AI chief of staff for families",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "6006509d6ce5"
   }
  }
 }

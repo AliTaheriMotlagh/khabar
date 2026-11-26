@@ -114,6 +114,13 @@
    "model": "qwen3.5-9b-q4_k_m",
    "v": 2,
    "src": "5990affce721"
+  },
+  "en": {
+   "title": "Zhipu reveals next-gen GLM model with day one inference support",
+   "short": "Zhipu unveils GLM model with immediate inference",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "7569afd087ed"
   }
  }
 }

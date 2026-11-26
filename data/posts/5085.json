@@ -127,6 +127,13 @@
    "v": 1,
    "src": "47c1c585052d",
    "added": 1
+  },
+  "en": {
+   "title": "Mehrzad Samadi Leads Generative AI at NVIDIA",
+   "short": "Mehrzad Samadi leads GenAI at NVIDIA",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "e6ce97a47804"
   }
  }
 }

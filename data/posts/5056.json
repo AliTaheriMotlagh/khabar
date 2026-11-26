@@ -146,6 +146,13 @@
    "v": 1,
    "src": "fc519c7ef2d6",
    "added": 1
+  },
+  "en": {
+   "title": "Solaris generates interfaces without code using video models",
+   "short": "Solaris builds UIs via video models, no code",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "81c46089f404"
   }
  }
 }

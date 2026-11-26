@@ -119,6 +119,13 @@
    "model": "qwen3.5-9b-q4_k_m",
    "v": 2,
    "src": "1605b9b25f71"
+  },
+  "en": {
+   "title": "GLM 5.3 Flash Usage Drops Sharply Following Free Model Release",
+   "short": "GLM 5.3 Flash usage falls after free model launch",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "a3131ede93d3"
   }
  }
 }

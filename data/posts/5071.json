@@ -129,6 +129,13 @@
    "v": 1,
    "src": "360bf8469ec2",
    "added": 1
+  },
+  "en": {
+   "title": "Reducto AI announces r-1 document parsing model",
+   "short": "Reducto AI launches r-1 document parser",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "2d7af0ee8204"
   }
  }
 }

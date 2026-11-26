@@ -129,6 +129,13 @@
    "model": "qwen3.5-9b-q4_k_m",
    "v": 2,
    "src": "e7b7197ef01b"
+  },
+  "en": {
+   "title": "Solar now requires less upfront capital than coal or gas for same output",
+   "short": "Solar needs less upfront capital than coal or gas",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "85afb9888da4"
   }
  }
 }

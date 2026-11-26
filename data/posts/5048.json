@@ -115,6 +115,13 @@
    "model": "qwen3.5-9b-q4_k_m",
    "v": 2,
    "src": "f8abb63b39b3"
+  },
+  "en": {
+   "title": "OpenAI advertising biz hits $1 billion annualized revenue run rate",
+   "short": "OpenAI ad biz hits $1B run rate",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "887f0b9ca152"
   }
  }
 }

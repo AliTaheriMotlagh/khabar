@@ -115,6 +115,13 @@
    "model": "qwen3.5-9b-q4_k_m",
    "v": 2,
    "src": "509732501c5a"
+  },
+  "en": {
+   "title": "OpenAI Astra AI uses recurrent depth reasoning approach",
+   "short": "OpenAI Astra AI uses new reasoning approach",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "897f571d04c4"
   }
  }
 }

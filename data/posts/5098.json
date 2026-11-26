@@ -105,6 +105,13 @@
    "model": "qwen3.5-9b-q4_k_m",
    "v": 2,
    "src": "40c43d8d8654"
+  },
+  "en": {
+   "title": "Uber lays off 3,300 employees in restructuring effort",
+   "short": "Uber cuts 3,300 jobs amid restructuring",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "81b73d724da0"
   }
  }
 }

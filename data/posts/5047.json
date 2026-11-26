@@ -42,6 +42,13 @@
    "v": 1,
    "src": "462cbabeb4dd",
    "added": 2
+  },
+  "en": {
+   "title": "Gholam code repository available on GitHub",
+   "short": "Gholam code available on GitHub",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "630a74c044d3"
   }
  }
 }

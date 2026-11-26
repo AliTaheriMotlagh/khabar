@@ -114,6 +114,13 @@
    "model": "qwen3.5-9b-q4_k_m",
    "v": 2,
    "src": "65098bcc37e0"
+  },
+  "en": {
+   "title": "Dyson releases AI toothbrush with 100,000-pixel camera for $499",
+   "short": "Dyson launches AI toothbrush with macro camera",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "fa955a7a46a3"
   }
  }
 }

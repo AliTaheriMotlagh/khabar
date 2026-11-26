@@ -122,6 +122,13 @@
    "model": "qwen3.5-9b-q4_k_m",
    "v": 2,
    "src": "8593d56d0b5c"
+  },
+  "en": {
+   "title": "World Labs introduces Atlas, first multimodal world model",
+   "short": "World Labs launches Atlas world model",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "0c5f5f7d3dc8"
   }
  }
 }

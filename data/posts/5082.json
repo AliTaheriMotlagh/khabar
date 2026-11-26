@@ -122,6 +122,13 @@
    "model": "qwen3.5-9b-q4_k_m",
    "v": 2,
    "src": "afb8d0c9506f"
+  },
+  "en": {
+   "title": "Alex Albert Generates House Design Video From Code",
+   "short": "Alex Albert creates house video from code",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "c5985b4dfa48"
   }
  }
 }

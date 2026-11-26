@@ -143,6 +143,13 @@
    "model": "qwen3.5-9b-q4_k_m",
    "v": 2,
    "src": "91438e683651"
+  },
+  "en": {
+   "title": "Google introduces Gemini 3.8 Flash with improved agentic and coding capabilities",
+   "short": "Gemini 3.8 Flash adds agentic and coding features",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "8098fadfaa77"
   }
  }
 }

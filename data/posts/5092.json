@@ -135,6 +135,13 @@
    "model": "qwen3.5-9b-q4_k_m",
    "v": 2,
    "src": "3709f2b10419"
+  },
+  "en": {
+   "title": "Recurrent depth transformers offer storage advantages over scaling depth",
+   "short": "Recurrent depth saves storage versus scaling depth",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "638c0c704f83"
   }
  }
 }

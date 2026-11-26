@@ -104,6 +104,13 @@
    "model": "qwen3.5-9b-q4_k_m",
    "v": 2,
    "src": "0acb378f6096"
+  },
+  "en": {
+   "title": "China solar capacity overtakes coal for first time",
+   "short": "China solar capacity overtakes coal",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "c319e28b0d01"
   }
  }
 }

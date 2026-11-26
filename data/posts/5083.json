@@ -123,6 +123,13 @@
    "model": "qwen3.5-9b-q4_k_m",
    "v": 2,
    "src": "285ee13323bb"
+  },
+  "en": {
+   "title": "Meta switching from Gchat to Slack as strongest AI platform",
+   "short": "Meta moves from Gchat to Slack for AI agents",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "21b193264585"
   }
  }
 }

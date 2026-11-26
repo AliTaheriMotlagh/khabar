@@ -125,6 +125,13 @@
    "model": "qwen3.5-9b-q4_k_m",
    "v": 2,
    "src": "825bd41d58c1"
+  },
+  "en": {
+   "title": "Anthropic shares update on alignment and security efforts",
+   "short": "Anthropic updates alignment and security practices",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "e47f1699f8bf"
   }
  }
 }

@@ -112,6 +112,13 @@
    "model": "qwen3.5-9b-q4_k_m",
    "v": 2,
    "src": "37282055eae2"
+  },
+  "en": {
+   "title": "Atlas understands spatial structure and world evolution",
+   "short": "Atlas enables bullet time multiview capture studio",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "ce7d572c146f"
   }
  }
 }

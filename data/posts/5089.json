@@ -134,6 +134,13 @@
    "model": "qwen3.5-9b-q4_k_m",
    "v": 2,
    "src": "61962ba01bfc"
+  },
+  "en": {
+   "title": "Google scraps Gemini 3.5 Pro candidates after Flash comparison",
+   "short": "Google scraps Gemini 3.5 Pro candidates",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "2c1e5a0fc871"
   }
  }
 }
