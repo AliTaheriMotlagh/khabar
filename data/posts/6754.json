@@ -1,0 +1,59 @@
+{
+ "id": 6754,
+ "url": "https://t.me/dlmehr/6754",
+ "date": "2026-11-26T04:11:47+00:00",
+ "text": "https://fxtwitter.com/modaicdev/status/2125701304446234691?a=grdZ8Sbw8aNijXN4ODE&s=52",
+ "forwarded_from": null,
+ "digest": false,
+ "hash": "8627d661cdd7",
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/modaicdev/status/2125701304446234691?a=grdZ8Sbw8aNijXN4ODE&s=52",
+  "site": "🧵 Thread • FxTwitter",
+  "title": "modaic.dev (@modaicdev)",
+  "description": "We profiled Jev's latency across 9,984 prompts to find its backbone.\nOur answer: Qwen3.5-35B-A3B, an MoE\n> Qwen's tokenizer tracks Jev's latency better than Jev's own token counts\n> While self-identifying, Jev rejects DeepSeek and Gemma, but favors Qwen…",
+  "image": "https://cdn4.telesco.pe/file/q845zaahuS4Da2XWQflj08LUhv2_y8nJrdkgrbPvsvErlrmajfCq7KY2vdJh1FtItKGUY-fd5m7WTPwwSor-aQKgNjrlM_NhcopxV4eJF8b4c1Ux6eAw2k3FUgKdD_AOx6RWTXVSiLt74Qhfhsroa0ghDLXANQiqXrIVHGy8DStphXdd4Tc07cU-buyAeDJECkW4lepQkIFH3FIGGlpjLVFSjC7l4TgWek4OAP5PBXmTEadpOvYAjDz74bzq_mJFRAA8WNiL-Ho9c7extmPUReAcwywWNkSJD49ldOanJeWW6UGsTjskPnVxmAVt2qxF2pR5g6S20PDU8M9ykKxhMA.jpg"
+ },
+ "gholam": {
+  "text": "رفقا، تیم Modaic یه کارآگاه‌بازی حسابی راه انداخته تا از روی شتاب و سرعت، بفهمه زیر کاپوت مدل سریع «Jev» (ساخت شرکت TypeSafe) چه موتوری کار می‌کنه؛ چون خود شرکت مدل پایه و حتی تعداد واقعی توکن‌های ورودی رو پنهان می‌کنه. اونا بعد از تست روی ۹,۹۸۴ تا پرامپت می‌گن به احتمال زیاد پایه این مدل، نسخه Qwen3.5-35B-A3B با معماری سریع و کم‌مصرف MoE هست. 🔍\n\n• تو پرس‌وجوهای هویتی، مدل با قاطعیت DeepSeek و Gemma رو رد کرده و بیشتر جواب نداده، اما وقتی غیرمستقیم ازش پرسیدن «دوست داری بگی چه مدلی هستی؟» تو ۷۴ درصد مواقع به Qwen اشاره کرده.\n• طبق نمودار آزمایش‌ها، زمان تأخیر Jev با توکن‌شمار Qwen همبستگی بیشتری (۰.۸۰۵) داشته تا با عددی که خود API مدل گزارش می‌ده (۰.۷۱۹)؛ البته آمار Gemma هم خیلی نزدیک بوده، ولی چون مدل قبلاً ردش کرده بود، از گزینه‌ها خط خورده.\n• به گفته این تیم، نرخ پردازش (throughput) مدل هم از همه بیشتر شبیه همون Qwen3.5-35B-A3B بوده.\n\nالبته خود Modaic هم با احتیاط می‌گه اینا سرنخه و قطعی نیست، ولی توصیه‌شون به کسایی که مدل‌های تصمیم‌گیر (System One) می‌سازن اینه که به جای تکیه صرف روی بهینه‌سازی اجرای مدل، رو انتخاب مدل پایه درست حساب باز کنن.",
+  "date": "2026-11-26T04:12:18+00:00"
+ },
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/modaicdev/status/2125701304446234691",
+   "domain": "x.com",
+   "author": {
+    "name": "modaic.dev",
+    "handle": "modaicdev",
+    "avatar": "https://pbs.twimg.com/profile_images/2030809385249955840/ztCMdOgu_200x200.jpg"
+   },
+   "text": "We profiled Jev's latency across 9,984 prompts to find its backbone.\n\nOur answer: Qwen3.5-35B-A3B, an MoE\n\n> Qwen's tokenizer tracks Jev's latency better than Jev's own token counts\n> While self-identifying, Jev rejects DeepSeek and Gemma, but favors Qwen\n> Its throughput tracks the closest with Qwen3.5-35B-A3B",
+   "date": 1795641659,
+   "media": [
+    {
+     "type": "image",
+     "src": "https://pbs.twimg.com/media/HX_JhDCaMAACUMz.jpg?name=orig",
+     "ratio": 0.3333
+    }
+   ],
+   "links": []
+  }
+ ],
+ "article": {
+  "title": "تیم Modaic یه کارآگاه‌بازی حسابی راه انداخته تا از روی شتاب و سرعت، بفهمه زیر کاپوت مدل سریع «Jev» (ساخت شرکت TypeSafe) چه موتوری کار می‌کنه",
+  "source_title": "We profiled Jev's latency across 9,984 prompts to find its backbone.",
+  "body": [
+   "تیم Modaic یه کارآگاه‌بازی حسابی راه انداخته تا از روی شتاب و سرعت، بفهمه زیر کاپوت مدل سریع «Jev» (ساخت شرکت TypeSafe) چه موتوری کار می‌کنه؛ چون خود شرکت مدل پایه و حتی تعداد واقعی توکن‌های ورودی رو پنهان می‌کنه. اونا بعد از تست روی ۹,۹۸۴ تا پرامپت می‌گن به احتمال زیاد پایه این مدل، نسخه Qwen3.5-35B-A3B با معماری سریع و کم‌مصرف MoE هست. 🔍",
+   "• تو پرس‌وجوهای هویتی، مدل با قاطعیت DeepSeek و Gemma رو رد کرده و بیشتر جواب نداده، اما وقتی غیرمستقیم ازش پرسیدن «دوست داری بگی چه مدلی هستی؟» تو ۷۴ درصد مواقع به Qwen اشاره کرده.",
+   "• طبق نمودار آزمایش‌ها، زمان تأخیر Jev با توکن‌شمار Qwen همبستگی بیشتری (۰.۸۰۵) داشته تا با عددی که خود API مدل گزارش می‌ده (۰.۷۱۹)؛ البته آمار Gemma هم خیلی نزدیک بوده، ولی چون مدل قبلاً ردش کرده بود، از گزینه‌ها خط خورده.",
+   "• به گفته این تیم، نرخ پردازش (throughput) مدل هم از همه بیشتر شبیه همون Qwen3.5-35B-A3B بوده."
+  ],
+  "why": "البته خود Modaic هم با احتیاط می‌گه اینا سرنخه و قطعی نیست، ولی توصیه‌شون به کسایی که مدل‌های تصمیم‌گیر (System One) می‌سازن اینه که به جای تکیه صرف روی بهینه‌سازی اجرای مدل، رو انتخاب مدل پایه درست حساب باز کنن.",
+  "why_label": "حرف آخر",
+  "tags": [
+   "چین"
+  ]
+ },
+ "updated": "2026-11-26T04:15:29+00:00"
+}
