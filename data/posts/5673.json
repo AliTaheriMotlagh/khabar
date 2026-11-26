@@ -135,6 +135,13 @@
    "v": 1,
    "src": "d85f2a2d60f7",
    "added": 1
+  },
+  "en": {
+   "title": "Meta open-sources Rebalancer assignment-problem solver for resource allocation",
+   "short": "Meta open-sources Rebalancer solver",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "a0cb4fa75476"
   }
  }
 }

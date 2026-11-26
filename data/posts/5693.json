@@ -146,6 +146,13 @@
    "model": "qwen3.5-9b-q4_k_m",
    "v": 2,
    "src": "68e372ed4bf6"
+  },
+  "en": {
+   "title": "Kakeya conjecture in R3 resolved by Hong Wang",
+   "short": "Kakeya conjecture in R3 resolved",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "524f8b81ac72"
   }
  }
 }

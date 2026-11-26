@@ -121,6 +121,13 @@
    "model": "qwen3.5-9b-q4_k_m",
    "v": 2,
    "src": "2fc958a04d1b"
+  },
+  "en": {
+   "title": "OpenAI plans to release hundreds of newly solved math problems today",
+   "short": "OpenAI to release hundreds of solved math problems",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "5b194f3e9098"
   }
  }
 }

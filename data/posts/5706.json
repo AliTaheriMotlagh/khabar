@@ -123,6 +123,13 @@
    "v": 1,
    "src": "fe06eb6459c8",
    "added": 1
+  },
+  "en": {
+   "title": "Tab AI assistant emerges from stealth with $300M valuation",
+   "short": "Tab AI assistant emerges from stealth",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "50c55097de83"
   }
  }
 }

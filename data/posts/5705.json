@@ -118,6 +118,13 @@
    "model": "qwen3.5-9b-q4_k_m",
    "v": 2,
    "src": "052bae5be58e"
+  },
+  "en": {
+   "title": "Policy paper urges governments to track AI research done by AI",
+   "short": "Experts urge tracking AI research done by AI",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "82bde128cdd0"
   }
  }
 }

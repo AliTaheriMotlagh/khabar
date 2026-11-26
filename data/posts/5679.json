@@ -141,6 +141,13 @@
    "model": "qwen3.5-9b-q4_k_m",
    "v": 2,
    "src": "9d0f1a11247f"
+  },
+  "en": {
+   "title": "Anthropic $518B compute plan includes $413.7B owed regardless of chip use",
+   "short": "Anthropic owes $413.7B regardless of chip use",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "0f6d9bd97aed"
   }
  }
 }

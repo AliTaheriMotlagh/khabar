@@ -133,6 +133,13 @@
    "model": "qwen3.5-9b-q4_k_m",
    "v": 2,
    "src": "ca923444ba1e"
+  },
+  "en": {
+   "title": "Claude integrates with Google Docs, Sheets and Slides",
+   "short": "Claude works inside Google Docs, Sheets and Slides",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "82903f0680cb"
   }
  }
 }

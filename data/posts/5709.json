@@ -119,6 +119,13 @@
    "model": "qwen3.5-9b-q4_k_m",
    "v": 2,
    "src": "985fcc0510bb"
+  },
+  "en": {
+   "title": "Google releases broad range of new mathematical results produced by internal frontier model",
+   "short": "Google releases new math results from AI model",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "0389e65195b4"
   }
  }
 }

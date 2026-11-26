@@ -140,6 +140,13 @@
    "model": "qwen3.5-9b-q4_k_m",
    "v": 2,
    "src": "5b0c6b825849"
+  },
+  "en": {
+   "title": "OpenAI releases 722 AI-written math papers with unconfirmed claims",
+   "short": "OpenAI releases 722 AI math papers",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "aa2adc38a779"
   }
  }
 }

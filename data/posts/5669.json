@@ -103,6 +103,13 @@
    "v": 1,
    "src": "1a021e42b82d",
    "added": 1
+  },
+  "en": {
+   "title": "LLMs Improve Faster Than Tinkerers, Says Dax",
+   "short": "LLMs Outpace Custom Workflows, Says Dax",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "e382f9189c93"
   }
  }
 }

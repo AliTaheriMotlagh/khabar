@@ -103,6 +103,13 @@
    "model": "qwen3.5-9b-q4_k_m",
    "v": 2,
    "src": "a0c1bbd5e9b4"
+  },
+  "en": {
+   "title": "Silicon Valley builds AI husband while user wants AI wife",
+   "short": "User wants AI wife, not AI husband",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "28a9b621152a"
   }
  }
 }

@@ -130,6 +130,13 @@
    "model": "qwen3.5-9b-q4_k_m",
    "v": 2,
    "src": "14c1d593f8be"
+  },
+  "en": {
+   "title": "Boris Cherny Says Prompting Claude Is Like Talking To A Coworker",
+   "short": "Cherny: Prompt Claude like a coworker",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "f2c5739b4ffd"
   }
  }
 }

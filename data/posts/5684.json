@@ -130,6 +130,13 @@
    "model": "qwen3.5-9b-q4_k_m",
    "v": 2,
    "src": "249256bbe616"
+  },
+  "en": {
+   "title": "Anthropic expands Cyber Verification Program to include offensive work tiers",
+   "short": "Anthropic expands Cyber Verification Program",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "d7ef68408fe4"
   }
  }
 }

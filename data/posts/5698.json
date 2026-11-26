@@ -136,6 +136,13 @@
    "model": "qwen3.5-9b-q4_k_m",
    "v": 2,
    "src": "e808f7a3272e"
+  },
+  "en": {
+   "title": "20% of Math Results Are Counterexamples, Challenging Search Theory",
+   "short": "20% of Math Results Disprove Search Theory",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "29b3d54d3798"
   }
  }
 }

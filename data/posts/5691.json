@@ -125,6 +125,13 @@
    "model": "qwen3.5-9b-q4_k_m",
    "v": 2,
    "src": "6344bace7af5"
+  },
+  "en": {
+   "title": "OpenAI releases broad range of new mathematical results produced by internal frontier model",
+   "short": "OpenAI releases new mathematical results",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "28fb62be0955"
   }
  }
 }

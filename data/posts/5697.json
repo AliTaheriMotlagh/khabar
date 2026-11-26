@@ -135,6 +135,13 @@
    "model": "qwen3.5-9b-q4_k_m",
    "v": 2,
    "src": "a83606604715"
+  },
+  "en": {
+   "title": "SpaceX in early talks to borrow $40B for Nvidia chips",
+   "short": "SpaceX seeks $40B loan for Nvidia chips",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "fdcc8b9fbf53"
   }
  }
 }

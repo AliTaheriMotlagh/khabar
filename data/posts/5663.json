@@ -154,6 +154,13 @@
    "model": "qwen3.5-9b-q4_k_m",
    "v": 2,
    "src": "fa666ad5db7d"
+  },
+  "en": {
+   "title": "Airbnb stock jumps 15% after earnings beat",
+   "short": "Airbnb stock jumps 15% after earnings beat",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "9e8032c20e37"
   }
  }
 }

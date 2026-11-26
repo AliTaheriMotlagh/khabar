@@ -116,6 +116,13 @@
    "model": "qwen3.5-9b-q4_k_m",
    "v": 2,
    "src": "6e482f438ce3"
+  },
+  "en": {
+   "title": "Parallel Systems raises $100M to scale autonomous electric rail freight",
+   "short": "Parallel Systems raises $100M for autonomous rail",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "687277187b5b"
   }
  }
 }

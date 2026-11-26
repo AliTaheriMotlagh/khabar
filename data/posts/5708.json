@@ -135,6 +135,13 @@
    "model": "qwen3.5-9b-q4_k_m",
    "v": 2,
    "src": "dd7b8fe627a1"
+  },
+  "en": {
+   "title": "OpenAI internal model shows research taste in math",
+   "short": "OpenAI model invents new math techniques",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "0d36fc21223b"
   }
  }
 }

@@ -118,6 +118,13 @@
    "model": "qwen3.5-9b-q4_k_m",
    "v": 2,
    "src": "af93a362eb07"
+  },
+  "en": {
+   "title": "Claude Startups program expands to more founders",
+   "short": "Claude Startups program expands to more founders",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "b06d690f1089"
   }
  }
 }

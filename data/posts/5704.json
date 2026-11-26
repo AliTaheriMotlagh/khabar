@@ -116,6 +116,13 @@
    "model": "qwen3.5-9b-q4_k_m",
    "v": 2,
    "src": "82cac7f71d62"
+  },
+  "en": {
+   "title": "Nicolas Bustamante urges empathy as AI challenges creative identity",
+   "short": "AI prompts challenge creative identity",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "92e5d8acc720"
   }
  }
 }

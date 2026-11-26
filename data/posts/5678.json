@@ -124,6 +124,13 @@
    "model": "qwen3.5-9b-q4_k_m",
    "v": 2,
    "src": "b0f3e2fa08fe"
+  },
+  "en": {
+   "title": "Google unveils Nano Banana 2.1 image generation and editing model",
+   "short": "Google launches upgraded Nano Banana 2.1 model",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "fdd81ef87673"
   }
  }
 }

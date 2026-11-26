@@ -124,6 +124,13 @@
    "v": 1,
    "src": "feead7e18d0b",
    "added": 2
+  },
+  "en": {
+   "title": "Oki Home Personal AI Computer Ships Mid-December",
+   "short": "Oki Home AI Computer ships mid-December",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "0886b84bc3df"
   }
  }
 }

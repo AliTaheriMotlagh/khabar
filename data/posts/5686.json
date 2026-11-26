@@ -142,6 +142,13 @@
    "model": "qwen3.5-9b-q4_k_m",
    "v": 2,
    "src": "47931f6d21f4"
+  },
+  "en": {
+   "title": "Minerva Humanoids raises $10M pre-seed funding for dangerous job robots",
+   "short": "Minerva Humanoids raises $10M for robot pilots",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "aabe9eaa26c6"
   }
  }
 }
