@@ -113,6 +113,13 @@
    "model": "qwen3.5-9b-q4_k_m",
    "v": 2,
    "src": "0ad5052be200"
+  },
+  "en": {
+   "title": "Bill Gates warns AI could trigger mass unemployment",
+   "short": "Gates warns AI could trigger mass unemployment",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "102eef1e9320"
   }
  }
 }

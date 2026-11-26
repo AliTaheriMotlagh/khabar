@@ -100,6 +100,13 @@
    "model": "qwen3.5-9b-q4_k_m",
    "v": 2,
    "src": "0d93f7f4ef0d"
+  },
+  "en": {
+   "title": "Uber AI costs down 34% since April peak despite usage jump",
+   "short": "Uber AI costs drop 34% as usage rises",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "d9d78c067b27"
   }
  }
 }

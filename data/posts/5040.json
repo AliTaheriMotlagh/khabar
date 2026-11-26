@@ -125,6 +125,13 @@
    "model": "qwen3.5-9b-q4_k_m",
    "v": 2,
    "src": "103e1fb092f6"
+  },
+  "en": {
+   "title": "OpenAI bought tens of thousands of Macs for RL, Anthropic rents them",
+   "short": "OpenAI bought Macs for RL, Anthropic rents them",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "703b62e5191b"
   }
  }
 }

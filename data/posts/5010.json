@@ -173,6 +173,13 @@
    "v": 1,
    "src": "0b9a6c25811a",
    "added": 1
+  },
+  "en": {
+   "title": "Tencent releases 770B-parameter Hy4 open-source model with 1M context window",
+   "short": "Tencent releases 770B Hy4 model",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "6ee0990c5063"
   }
  }
 }

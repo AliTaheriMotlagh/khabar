@@ -110,6 +110,13 @@
    "model": "qwen3.5-9b-q4_k_m",
    "v": 2,
    "src": "5257e00ce79b"
+  },
+  "en": {
+   "title": "HuggingFace Incident",
+   "short": "HuggingFace Incident",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "db2983abd57c"
   }
  }
 }

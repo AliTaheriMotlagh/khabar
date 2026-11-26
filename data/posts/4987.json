@@ -132,6 +132,13 @@
    "model": "qwen3.5-9b-q4_k_m",
    "v": 2,
    "src": "c6f44a8f752c"
+  },
+  "en": {
+   "title": "Azalia Mirhoseini and Anna Goldie named to TIME100 AI 2026 list",
+   "short": "Mirhoseini and Goldie named to TIME100 AI 2026",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "2e654e56ffa5"
   }
  }
 }

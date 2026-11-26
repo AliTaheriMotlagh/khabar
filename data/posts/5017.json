@@ -111,6 +111,13 @@
    "model": "qwen3.5-9b-q4_k_m",
    "v": 2,
    "src": "767d1141dd60"
+  },
+  "en": {
+   "title": "Cursor speaks with OpenAI over planned model access block",
+   "short": "Cursor talks to OpenAI about model access block",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "ba40a89e340a"
   }
  }
 }

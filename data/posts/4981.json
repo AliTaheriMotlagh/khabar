@@ -113,6 +113,13 @@
    "model": "qwen3.5-9b-q4_k_m",
    "v": 2,
    "src": "b6092bb4fcb1"
+  },
+  "en": {
+   "title": "Z.ai launches advanced AI chatbot powered by GLM-5.3-Flash",
+   "short": "Z.ai launches AI chatbot powered by GLM-5.3-Flash",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "5fba63876688"
   }
  }
 }

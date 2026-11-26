@@ -152,6 +152,13 @@
    "model": "qwen3.5-9b-q4_k_m",
    "v": 2,
    "src": "6006163b390a"
+  },
+  "en": {
+   "title": "GPT-Astra Creates Stunning Sci-Fi Spaceship in One Shot",
+   "short": "GPT-Astra builds sci-fi spaceship",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "2fa7c1ab061b"
   }
  }
 }

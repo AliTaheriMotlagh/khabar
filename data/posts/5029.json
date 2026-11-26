@@ -127,6 +127,13 @@
    "model": "qwen3.5-9b-q4_k_m",
    "v": 2,
    "src": "9a1edd761622"
+  },
+  "en": {
+   "title": "DeepSeek V5 leak claims to beat Claude Mythos 5",
+   "short": "DeepSeek V5 leak claims to beat Claude Mythos 5",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "d72b0b7cd141"
   }
  }
 }

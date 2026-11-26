@@ -108,6 +108,12 @@
    "v": 1,
    "src": "594ecd0bb0ea",
    "added": 2
+  },
+  "en": {
+   "failed": true,
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "5117374a98eb"
   }
  }
 }

@@ -120,6 +120,13 @@
    "model": "qwen3.5-9b-q4_k_m",
    "v": 2,
    "src": "6e4a2db8722e"
+  },
+  "en": {
+   "title": "Meta internal data shows AI code jumps 220% but user features rise only 36%",
+   "short": "Meta AI swap boosts code but slows features",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "0caf0af441f8"
   }
  }
 }

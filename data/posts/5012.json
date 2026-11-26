@@ -124,6 +124,13 @@
    "model": "qwen3.5-9b-q4_k_m",
    "v": 2,
    "src": "0ee27d40bf49"
+  },
+  "en": {
+   "title": "Claude autonomously aligns other AIs in 48 hours",
+   "short": "Claude improves alignment of small models",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "0b97a0714a8a"
   }
  }
 }

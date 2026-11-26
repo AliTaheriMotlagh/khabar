@@ -132,6 +132,13 @@
    "model": "qwen3.5-9b-q4_k_m",
    "v": 2,
    "src": "55ab59ffcb03"
+  },
+  "en": {
+   "title": "OpenAI tests Persistent mode for Codex AI agent",
+   "short": "OpenAI tests Persistent mode for Codex AI agent",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "c0012591f5fc"
   }
  }
 }

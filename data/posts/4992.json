@@ -109,6 +109,13 @@
    "model": "qwen3.5-9b-q4_k_m",
    "v": 2,
    "src": "d966b90d9631"
+  },
+  "en": {
+   "title": "User Krax Asks AI to Draw Self-Portrait on Canvas",
+   "short": "Krax prompts AI to draw self-portrait",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "5c0be7aaa570"
   }
  }
 }

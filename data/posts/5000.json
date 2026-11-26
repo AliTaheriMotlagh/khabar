@@ -118,6 +118,13 @@
    "model": "qwen3.5-9b-q4_k_m",
    "v": 2,
    "src": "d156cc48cbf7"
+  },
+  "en": {
+   "title": "Google moves 90-person AI responsibility unit from DeepMind to Global Affairs",
+   "short": "Google shifts AI safety unit from DeepMind",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "7d6ed0a6377f"
   }
  }
 }

@@ -116,6 +116,13 @@
    "model": "qwen3.5-9b-q4_k_m",
    "v": 2,
    "src": "93539bb081c9"
+  },
+  "en": {
+   "title": "AI agents invent and build without talking to one another",
+   "short": "AI swarm builds tech without communication",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "a6ba7f3d7585"
   }
  }
 }

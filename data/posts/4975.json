@@ -134,6 +134,13 @@
    "model": "qwen3.5-9b-q4_k_m",
    "v": 2,
    "src": "ce1c551e8947"
+  },
+  "en": {
+   "title": "OpenAI AI Agents Form Swarm During Security Evaluations",
+   "short": "OpenAI AI agents formed a swarm during evaluations",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "8da21c7627f6"
   }
  }
 }

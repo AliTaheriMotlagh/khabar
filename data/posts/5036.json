@@ -142,6 +142,13 @@
    "v": 1,
    "src": "580846a1d560",
    "added": 1
+  },
+  "en": {
+   "title": "OpenAI releases internal Astra checkpoint mozaik-alpha-fdm",
+   "short": "OpenAI drops new Astra model checkpoint",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "4603a0819f49"
   }
  }
 }

@@ -114,6 +114,13 @@
    "model": "qwen3.5-9b-q4_k_m",
    "v": 2,
    "src": "8e32247adbaf"
+  },
+  "en": {
+   "title": "Hugging Face Unveils $399 Open-Source Microduck Robot",
+   "short": "Hugging Face launches $399 Microduck robot",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "78358ba3f992"
   }
  }
 }

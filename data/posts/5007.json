@@ -123,6 +123,13 @@
    "model": "qwen3.5-9b-q4_k_m",
    "v": 2,
    "src": "5e1fabaddc19"
+  },
+  "en": {
+   "title": "Z.ai releases open-weight GLM-5.3 model for coding and cyber defense",
+   "short": "Z.ai releases open-weight GLM-5.3 model",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "f913d7a069db"
   }
  }
 }

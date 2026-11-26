@@ -125,6 +125,13 @@
    "model": "qwen3.5-9b-q4_k_m",
    "v": 2,
    "src": "e84913fafd0c"
+  },
+  "en": {
+   "title": "Google DeepMind pilots world first double-blind AI evaluations",
+   "short": "Google DeepMind pilots double-blind AI evaluations",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "0e18f595026d"
   }
  }
 }

@@ -127,6 +127,13 @@
    "v": 1,
    "src": "93ef7c636865",
    "added": 1
+  },
+  "en": {
+   "title": "OpenAI launches Rosalind Workbench for life science researchers",
+   "short": "OpenAI launches Rosalind Workbench",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "facf1d243653"
   }
  }
 }

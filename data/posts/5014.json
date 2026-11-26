@@ -114,6 +114,13 @@
    "v": 1,
    "src": "6b7483794495",
    "added": 2
+  },
+  "en": {
+   "title": "Humans master complex board game after five playthroughs while AI fails",
+   "short": "Humans beat AI in complex board game benchmark",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "bad289e8d616"
   }
  }
 }

@@ -132,6 +132,13 @@
    "model": "qwen3.5-9b-q4_k_m",
    "v": 2,
    "src": "904a95dd8741"
+  },
+  "en": {
+   "title": "Local AI models GLM 5.3, Qwen3.8 and DeepSeek v4 run on 2x DGX Sparks",
+   "short": "Local AI models run on 2x DGX Sparks",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "496fa0330d5a"
   }
  }
 }

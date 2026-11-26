@@ -105,6 +105,13 @@
    "model": "qwen3.5-9b-q4_k_m",
    "v": 2,
    "src": "cb2d0064a5d8"
+  },
+  "en": {
+   "title": "Alec MacGillis Expresses Aghast at Young People Habituating to Cheating",
+   "short": "MacGillis aghast at youth cheating habits",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "c7b10e52754d"
   }
  }
 }

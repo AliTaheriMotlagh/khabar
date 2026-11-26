@@ -122,6 +122,13 @@
    "model": "qwen3.5-9b-q4_k_m",
    "v": 2,
    "src": "fc8b90a1eb4b"
+  },
+  "en": {
+   "title": "Neuralink user Audrey creates art with her mind",
+   "short": "Neuralink user creates art with mind",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "bf85abd9b756"
   }
  }
 }

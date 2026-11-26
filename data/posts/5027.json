@@ -98,6 +98,13 @@
    "model": "qwen3.5-9b-q4_k_m",
    "v": 2,
    "src": "6883a5e8aa66"
+  },
+  "en": {
+   "title": "User claims LLM validates their dumbest opinion",
+   "short": "User says LLM agrees with their dumbest opinion",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "9899086f4bf6"
   }
  }
 }

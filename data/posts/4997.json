@@ -119,6 +119,13 @@
    "model": "qwen3.5-9b-q4_k_m",
    "v": 2,
    "src": "9a83bc94f9a1"
+  },
+  "en": {
+   "title": "Zoom stake in Anthropic valued at $3.13 billion",
+   "short": "Zoom Anthropic stake worth $3.13 billion",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "c796b720c55d"
   }
  }
 }

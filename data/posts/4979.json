@@ -125,6 +125,13 @@
    "model": "qwen3.5-9b-q4_k_m",
    "v": 2,
    "src": "8d38b9961e6b"
+  },
+  "en": {
+   "title": "GLM-5.3 weights to be released tomorrow by Z.ai",
+   "short": "GLM-5.3 weights released tomorrow by Z.ai",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "b76f0d3c0e13"
   }
  }
 }

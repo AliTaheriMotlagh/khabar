@@ -116,6 +116,13 @@
    "model": "qwen3.5-9b-q4_k_m",
    "v": 2,
    "src": "831203ef79fb"
+  },
+  "en": {
+   "title": "AI Can Credibly Complete Most Undergraduate Assignments, Committee Says",
+   "short": "AI can complete most undergraduate assignments",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "62f260391778"
   }
  }
 }

@@ -108,6 +108,13 @@
    "model": "qwen3.5-9b-q4_k_m",
    "v": 2,
    "src": "50b82a3602ac"
+  },
+  "en": {
+   "title": "Netflix says AI judges for recommendations need weekly human audits",
+   "short": "Netflix AI judges require weekly human audits",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "e75cbf598156"
   }
  }
 }

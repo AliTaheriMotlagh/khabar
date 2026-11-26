@@ -133,6 +133,13 @@
    "v": 1,
    "src": "ec1575456844",
    "added": 1
+  },
+  "en": {
+   "title": "Lou builds dream kitchen in 3D Blender world using GLM-5.3-Flash",
+   "short": "Lou builds dream kitchen in Blender",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "8da362dac415"
   }
  }
 }

@@ -153,6 +153,13 @@
    "model": "qwen3.5-9b-q4_k_m",
    "v": 2,
    "src": "36adf9b1760a"
+  },
+  "en": {
+   "title": "Tech giants urge governments to fund cyber defense with AI",
+   "short": "Tech firms call for AI-funded cyber defense",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "d6e9844434a0"
   }
  }
 }

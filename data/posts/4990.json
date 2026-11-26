@@ -116,6 +116,13 @@
    "model": "qwen3.5-9b-q4_k_m",
    "v": 2,
    "src": "8bee80bf62d2"
+  },
+  "en": {
+   "title": "Kevin Durant likely made more than $60 million on Nvidia acquisition of Hugging Face",
+   "short": "Kevin Durant made over $60 million on Nvidia deal",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "13e502ae4eba"
   }
  }
 }

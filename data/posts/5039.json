@@ -114,6 +114,13 @@
    "model": "qwen3.5-9b-q4_k_m",
    "v": 2,
    "src": "497735218c9c"
+  },
+  "en": {
+   "title": "Composer 3 leak suggests launch next week with six variants",
+   "short": "Composer 3 leak hints at next week launch",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "0a6385ad0da4"
   }
  }
 }

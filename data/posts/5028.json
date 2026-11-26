@@ -112,6 +112,13 @@
    "model": "qwen3.5-9b-q4_k_m",
    "v": 2,
    "src": "c563d764d0aa"
+  },
+  "en": {
+   "title": "Codex and ChatGPT Work usage reset for paid users",
+   "short": "Codex usage reset for paid users after fixes",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "488e898b4ec4"
   }
  }
 }

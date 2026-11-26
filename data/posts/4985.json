@@ -133,6 +133,13 @@
    "v": 1,
    "src": "43dc48874c2c",
    "added": 1
+  },
+  "en": {
+   "title": "Pollen Robotics unveils Microduck, an accessible open-source biped robot",
+   "short": "Pollen Robotics unveils Microduck robot",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "0e144b9890ee"
   }
  }
 }

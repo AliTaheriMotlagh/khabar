@@ -104,6 +104,13 @@
    "model": "qwen3.5-9b-q4_k_m",
    "v": 2,
    "src": "2950c2f3a0d1"
+  },
+  "en": {
+   "title": "First patient to have brain surgery with real-time AI assistance",
+   "short": "Rhys Hibbert saved from tumour by live AI",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "b5e42bccbc3e"
   }
  }
 }
