@@ -14735,6 +14735,12 @@
    "name_en": "Pavel Durov",
    "name_fa": "پاول دورف",
    "kind": "person"
+  },
+  {
+   "slug": "model-carving",
+   "name_en": "Model Carving",
+   "name_fa": "مدل کاروینگ",
+   "kind": "product"
   }
  ]
 }
