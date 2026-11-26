@@ -109,6 +109,13 @@
    "model": "qwen3.5-9b-q4_k_m",
    "v": 2,
    "src": "56af01ca30e3"
+  },
+  "en": {
+   "title": "Anthropic halts plots by scientists using A.I. models for biological weapons research",
+   "short": "Anthropic stops A.I. use for biological weapons",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "83b77ef65896"
   }
  }
 }

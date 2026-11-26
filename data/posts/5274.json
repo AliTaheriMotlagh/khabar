@@ -132,6 +132,13 @@
    "model": "qwen3.5-9b-q4_k_m",
    "v": 2,
    "src": "94c180d38bae"
+  },
+  "en": {
+   "title": "Sam Altman agrees with Dario on pacing AI frontier",
+   "short": "Altman agrees to pace AI frontier with Dario",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "fff03f02bdbd"
   }
  }
 }

@@ -112,6 +112,13 @@
    "model": "qwen3.5-9b-q4_k_m",
    "v": 2,
    "src": "5ccc03f00bda"
+  },
+  "en": {
+   "title": "David Chalmers discusses recursive self-improvement on Australian TV in 1996",
+   "short": "Chalmers discusses AI on Australian TV in 1996",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "35c729c0f55f"
   }
  }
 }

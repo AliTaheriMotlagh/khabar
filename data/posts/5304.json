@@ -139,6 +139,13 @@
    "model": "qwen3.5-9b-q4_k_m",
    "v": 2,
    "src": "873898610860"
+  },
+  "en": {
+   "title": "Meta plans to roll out two new in-house AI chips in 2027",
+   "short": "Meta to deploy two new AI chips in 2027",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "ad5f3e78d4d3"
   }
  }
 }

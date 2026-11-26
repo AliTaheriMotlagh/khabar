@@ -104,6 +104,13 @@
    "v": 1,
    "src": "736191080ffe",
    "added": 2
+  },
+  "en": {
+   "title": "YouTube Adds Speculative Decoding Feature",
+   "short": "YouTube adds speculative decoding feature",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "a3a946471b2a"
   }
  }
 }

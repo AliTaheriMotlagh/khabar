@@ -109,6 +109,13 @@
    "v": 1,
    "src": "bce9e8a0133b",
    "added": 1
+  },
+  "en": {
+   "title": "Monthly arxiv submissions to Math reach new record",
+   "short": "Math arxiv submissions hit record high",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "202df7ba4c62"
   }
  }
 }

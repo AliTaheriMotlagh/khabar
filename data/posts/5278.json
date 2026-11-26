@@ -98,6 +98,13 @@
    "model": "qwen3.5-9b-q4_k_m",
    "v": 2,
    "src": "16ac9aa3a330"
+  },
+  "en": {
+   "title": "François Chollet: More Capable Models May Be Safer Than Current Ones",
+   "short": "Chollet: AI safety is an intelligence problem",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "f9bb146d1bc6"
   }
  }
 }

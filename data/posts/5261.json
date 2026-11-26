@@ -129,6 +129,13 @@
    "v": 1,
    "src": "cdf2e5fcd33e",
    "added": 1
+  },
+  "en": {
+   "title": "Cognition Introduces Fusion in Devin CLI for Fable and Astra",
+   "short": "Cognition launches Fusion in Devin CLI",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "b5db395b81a8"
   }
  }
 }

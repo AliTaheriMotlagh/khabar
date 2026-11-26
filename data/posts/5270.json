@@ -133,6 +133,13 @@
    "model": "qwen3.5-9b-q4_k_m",
    "v": 2,
    "src": "c6c7c39a3b31"
+  },
+  "en": {
+   "title": "Open Alignment Initiative launches to make AI safer through transparency",
+   "short": "Open Alignment Initiative launches today",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "9b197c9aba21"
   }
  }
 }

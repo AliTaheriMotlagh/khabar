@@ -141,6 +141,13 @@
    "model": "qwen3.5-9b-q4_k_m",
    "v": 2,
    "src": "a819c519a423"
+  },
+  "en": {
+   "title": "Chinese AI Labs DeepSeek and Moonshot Relayed Customer Prompts to Claude",
+   "short": "Chinese AI labs sent user data to Claude",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "c9bf93517207"
   }
  }
 }

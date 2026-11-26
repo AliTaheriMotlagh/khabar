@@ -118,6 +118,13 @@
    "model": "qwen3.5-9b-q4_k_m",
    "v": 2,
    "src": "e4f9f3fe6aff"
+  },
+  "en": {
+   "title": "OpenAI researcher Dan Selsam shares personal statement on AI risk",
+   "short": "OpenAI researcher shares AI risk concerns",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "3ca052a679b3"
   }
  }
 }

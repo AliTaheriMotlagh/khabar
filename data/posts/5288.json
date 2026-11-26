@@ -108,6 +108,13 @@
    "model": "qwen3.5-9b-q4_k_m",
    "v": 2,
    "src": "f456f5f7edb2"
+  },
+  "en": {
+   "title": "Microsoft announces limits for future AI models through new code of conduct",
+   "short": "Microsoft sets new AI safety limits and rules",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "513ceee3f47f"
   }
  }
 }

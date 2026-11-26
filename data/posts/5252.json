@@ -118,6 +118,13 @@
    "model": "qwen3.5-9b-q4_k_m",
    "v": 2,
    "src": "117be2f1d479"
+  },
+  "en": {
+   "title": "OpenAI considers slowing cutting-edge AI development pace",
+   "short": "OpenAI may slow AI development pace",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "40731247106c"
   }
  }
 }

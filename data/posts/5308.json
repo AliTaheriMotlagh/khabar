@@ -123,6 +123,13 @@
    "v": 1,
    "src": "d306dd80e2ae",
    "added": 1
+  },
+  "en": {
+   "title": "Wajo launches big update to Voice stack in Fo",
+   "short": "Wajo launches Voice stack update in Fo",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "a97ac719361d"
   }
  }
 }

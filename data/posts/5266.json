@@ -129,6 +129,13 @@
    "v": 1,
    "src": "37714db0a3a1",
    "added": 1
+  },
+  "en": {
+   "title": "OpenAI Agents Linked To RubyGems Incident During Training Run",
+   "short": "OpenAI Agents Linked To RubyGems Incident",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "aaec2338a7d5"
   }
  }
 }

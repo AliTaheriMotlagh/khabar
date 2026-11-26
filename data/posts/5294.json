@@ -125,6 +125,13 @@
    "model": "qwen3.5-9b-q4_k_m",
    "v": 2,
    "src": "52e555d0a628"
+  },
+  "en": {
+   "title": "Trump calls Jensen Huang live on stage at All In Summit",
+   "short": "Trump calls Jensen Huang live on stage",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "b9c40e634921"
   }
  }
 }

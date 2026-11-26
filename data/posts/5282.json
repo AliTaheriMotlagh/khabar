@@ -51,6 +51,13 @@
    "v": 1,
    "src": "198676966db5",
    "added": 2
+  },
+  "en": {
+   "title": "Kian Kyars calls SemiAnalysis chart insane alpha",
+   "short": "Kian Kyars praises SemiAnalysis chart",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "b06387b3963f"
   }
  }
 }

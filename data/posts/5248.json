@@ -109,6 +109,13 @@
    "model": "qwen3.5-9b-q4_k_m",
    "v": 2,
    "src": "859b5241339b"
+  },
+  "en": {
+   "title": "Astra pauses new Pro subscriptions amid unprecedented demand",
+   "short": "Astra pauses Pro subscriptions to sustain service",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "b4dc8c745a8f"
   }
  }
 }

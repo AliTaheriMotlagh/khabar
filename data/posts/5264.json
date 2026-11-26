@@ -123,6 +123,13 @@
    "v": 1,
    "src": "ec9af3aaa2ea",
    "added": 1
+  },
+  "en": {
+   "title": "Mathathon allocates compute credits to 100 teams for open problem",
+   "short": "Mathathon gives credits to 100 teams",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "b969578eb3e4"
   }
  }
 }

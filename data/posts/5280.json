@@ -129,6 +129,13 @@
    "model": "qwen3.5-9b-q4_k_m",
    "v": 2,
    "src": "fee35726d28f"
+  },
+  "en": {
+   "title": "DeepSeek V4.1 Flash Model Card Shows Contaminated Public Benchmarks",
+   "short": "DeepSeek V4.1 Flash Benchmarks Contaminated",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "199a1285cb54"
   }
  }
 }

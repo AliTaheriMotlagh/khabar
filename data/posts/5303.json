@@ -142,6 +142,13 @@
    "model": "qwen3.5-9b-q4_k_m",
    "v": 2,
    "src": "d4fe8cff624d"
+  },
+  "en": {
+   "title": "Google Opens Anthropic's Claude To Engineers Company-Wide",
+   "short": "Google lets engineers use Claude alongside Gemini",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "e221823a14bf"
   }
  }
 }

@@ -100,6 +100,13 @@
    "model": "qwen3.5-9b-q4_k_m",
    "v": 2,
    "src": "13fc37cb2af5"
+  },
+  "en": {
+   "title": "NBC News interviews AI actress about falling in love with humans",
+   "short": "NBC News asks AI actress about human love",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "d3189d2a8bb4"
   }
  }
 }

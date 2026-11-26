@@ -115,6 +115,13 @@
    "model": "qwen3.5-9b-q4_k_m",
    "v": 2,
    "src": "70aec3fabdd2"
+  },
+  "en": {
+   "title": "Philosopher argues AI ethics must include agent welfare",
+   "short": "New theory says AI deserves moral consideration",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "7f4a1c21cba8"
   }
  }
 }

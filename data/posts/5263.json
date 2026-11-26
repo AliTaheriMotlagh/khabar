@@ -119,6 +119,13 @@
    "model": "qwen3.5-9b-q4_k_m",
    "v": 2,
    "src": "d15cfa0b4087"
+  },
+  "en": {
+   "title": "Caltech to host Mathathon hackathon starting October 30, 2026",
+   "short": "Caltech Mathathon begins Oct 30, 2026",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "d61b4e294ae5"
   }
  }
 }

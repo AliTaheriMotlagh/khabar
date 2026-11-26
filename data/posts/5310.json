@@ -127,6 +127,13 @@
    "v": 1,
    "src": "3b26c6f9be0a",
    "added": 3
+  },
+  "en": {
+   "title": "Taste Labs Ends AI Slop With $18.5M Seed Funding",
+   "short": "Taste Labs raises $18.5M to end AI slop",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "3cc257b71ed0"
   }
  }
 }

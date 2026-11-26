@@ -160,6 +160,13 @@
    "v": 1,
    "src": "6de0fb7bf993",
    "added": 1
+  },
+  "en": {
+   "title": "Cognition introduces Devin Voice powered by SWE-2 model",
+   "short": "Cognition launches Devin Voice with SWE-2 model",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "3ab565bf87fc"
   }
  }
 }

@@ -108,6 +108,13 @@
    "model": "qwen3.5-9b-q4_k_m",
    "v": 2,
    "src": "c9c790ac2a50"
+  },
+  "en": {
+   "title": "Sam Altman Welcomes Federal AI Safety Framework",
+   "short": "Altman supports federal AI safety rules",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "f54a107ec9b3"
   }
  }
 }

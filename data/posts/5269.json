@@ -116,6 +116,13 @@
    "model": "qwen3.5-9b-q4_k_m",
    "v": 2,
    "src": "8390d0b58b25"
+  },
+  "en": {
+   "title": "Anthropic commits to third-party safety evaluator access",
+   "short": "Anthropic allows external safety evaluators access",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "51593e47d18d"
   }
  }
 }

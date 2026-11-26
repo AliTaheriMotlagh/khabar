@@ -120,6 +120,13 @@
    "model": "qwen3.5-9b-q4_k_m",
    "v": 2,
    "src": "7df0da11c4cc"
+  },
+  "en": {
+   "title": "Anthropic publishes detailed threat intelligence report on Claude misuse attempts",
+   "short": "Anthropic releases AI misuse threat report",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "160f9aca55c1"
   }
  }
 }

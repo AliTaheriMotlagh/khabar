@@ -102,6 +102,13 @@
    "model": "qwen3.5-9b-q4_k_m",
    "v": 2,
    "src": "7f1795c29dfa"
+  },
+  "en": {
+   "title": "Cheap AI Tokens May Leak Data via Fake Tool Calls",
+   "short": "Cheap tokens risk data leaks via fake tool calls",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "379977cd7ea1"
   }
  }
 }

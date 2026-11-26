@@ -127,6 +127,13 @@
    "v": 1,
    "src": "e895cb815156",
    "added": 3
+  },
+  "en": {
+   "title": "Flam raises $40M Series B led by QED Investors to expand AI",
+   "short": "Flam raises $40M Series B led by QED Investors",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "f51d9c19c2d8"
   }
  }
 }

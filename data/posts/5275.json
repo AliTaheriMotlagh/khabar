@@ -123,6 +123,13 @@
    "model": "qwen3.5-9b-q4_k_m",
    "v": 2,
    "src": "f0bac9c5db1c"
+  },
+  "en": {
+   "title": "Sam Altman says OpenAI is not going for IPO in 2026",
+   "short": "OpenAI IPO delayed past 2026, says Altman",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "c3a1cb83e878"
   }
  }
 }

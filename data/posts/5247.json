@@ -105,6 +105,13 @@
    "model": "qwen3.5-9b-q4_k_m",
    "v": 2,
    "src": "1403ef92f418"
+  },
+  "en": {
+   "title": "Lossy self-improvement: why AI self-improvement is real but does not lead to fast takeoff",
+   "short": "AI self-improvement real but no fast takeoff",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "db8532f3d7e0"
   }
  }
 }

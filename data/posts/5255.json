@@ -123,6 +123,13 @@
    "model": "qwen3.5-9b-q4_k_m",
    "v": 2,
    "src": "f0ca85a8eac3"
+  },
+  "en": {
+   "title": "Anthropic reveals Iran used Claude to surveil thousands of Iranians",
+   "short": "Iran used Claude to surveil thousands of Iranians",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "dc45d0b232be"
   }
  }
 }

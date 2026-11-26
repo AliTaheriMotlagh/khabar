@@ -120,6 +120,13 @@
    "v": 1,
    "src": "bd91f0161b70",
    "added": 1
+  },
+  "en": {
+   "title": "OpenAI introduces ChatGPT for Financial Services tailored work experience",
+   "short": "OpenAI launches ChatGPT for Financial Services",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "19e1dae370aa"
   }
  }
 }

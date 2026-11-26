@@ -116,6 +116,13 @@
    "model": "qwen3.5-9b-q4_k_m",
    "v": 2,
    "src": "f1eaa210d434"
+  },
+  "en": {
+   "title": "Former Google DeepMind researcher resigns citing AI safety concerns",
+   "short": "Ex-DeepMind worker quits over AI risks",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "196136a90df7"
   }
  }
 }

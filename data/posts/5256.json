@@ -137,6 +137,13 @@
    "model": "qwen3.5-9b-q4_k_m",
    "v": 2,
    "src": "01e6d5daa652"
+  },
+  "en": {
+   "title": "Anthropic publishes detailed threat report on Claude misuse cases",
+   "short": "Anthropic releases report on Claude misuse cases",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "9fe040159cfe"
   }
  }
 }

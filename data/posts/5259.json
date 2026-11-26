@@ -99,6 +99,13 @@
    "model": "qwen3.5-9b-q4_k_m",
    "v": 2,
    "src": "aeb39fc3ade0"
+  },
+  "en": {
+   "title": "Gergely Orosz Asks Industry For Observed Trends",
+   "short": "Gergely Orosz seeks industry trends",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "3f019d65bd3d"
   }
  }
 }
