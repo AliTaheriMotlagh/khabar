@@ -134,6 +134,13 @@
    "model": "qwen3.5-9b-q4_k_m",
    "v": 2,
    "src": "6bf9a961cf9a"
+  },
+  "en": {
+   "title": "Ryan McGuire and Dylan McGuire raise $7.5M pre-seed for robotic surgeon AlephSurgery",
+   "short": "McGuire brothers raise $7.5M for AlephSurgery",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "434efdc8893d"
   }
  }
 }

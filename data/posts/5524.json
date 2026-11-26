@@ -142,6 +142,13 @@
    "v": 1,
    "src": "b4a1b960f53d",
    "added": 1
+  },
+  "en": {
+   "title": "ElevenLabs introduces Eleven v4 and v4 Turbo voice models",
+   "short": "ElevenLabs launches new voice models ranked #1",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "962a069b51b2"
   }
  }
 }

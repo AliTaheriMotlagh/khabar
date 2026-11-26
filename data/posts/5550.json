@@ -102,6 +102,13 @@
    "model": "qwen3.5-9b-q4_k_m",
    "v": 2,
    "src": "6716bb51ce04"
+  },
+  "en": {
+   "title": "Piedmont home built in 1912 sold after owner dies at 101",
+   "short": "1912 Piedmont home sold after owner dies at 101",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "cc19160d2af1"
   }
  }
 }

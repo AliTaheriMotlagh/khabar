@@ -115,6 +115,13 @@
    "model": "qwen3.5-9b-q4_k_m",
    "v": 2,
    "src": "39fa4e428305"
+  },
+  "en": {
+   "title": "Meta claims $3.9 billion in federal research tax credits for AI data centers",
+   "short": "Meta saves $3.9B in tax credits for AI facilities",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "e963a434a8b8"
   }
  }
 }

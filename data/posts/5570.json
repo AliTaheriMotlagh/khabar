@@ -128,6 +128,13 @@
    "model": "qwen3.5-9b-q4_k_m",
    "v": 2,
    "src": "13688199918d"
+  },
+  "en": {
+   "title": "Meta's Muse crosses 5 million downloads and continues its 12-day streak at the top of the US App Store",
+   "short": "Meta's Muse crosses 5 million downloads",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "a7a4cc2e5d22"
   }
  }
 }

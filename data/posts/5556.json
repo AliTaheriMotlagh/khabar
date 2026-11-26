@@ -123,6 +123,13 @@
    "v": 1,
    "src": "9d7bf32b3c3a",
    "added": 1
+  },
+  "en": {
+   "title": "Ideogram 4.5 Eliminates Artifact Buildup for Multi-Turn Editing",
+   "short": "Ideogram 4.5 enables precise multi-turn editing",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "e1e7a2d7e93c"
   }
  }
 }

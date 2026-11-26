@@ -107,6 +107,13 @@
    "model": "qwen3.5-9b-q4_k_m",
    "v": 2,
    "src": "7a462e4bc010"
+  },
+  "en": {
+   "title": "Kate Ivanova introduces AI-native funeral company to modernize industry",
+   "short": "Kate Ivanova launches AI funeral company",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "3bfc6ba89c58"
   }
  }
 }

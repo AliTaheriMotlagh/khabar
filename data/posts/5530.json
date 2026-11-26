@@ -124,6 +124,13 @@
    "model": "qwen3.5-9b-q4_k_m",
    "v": 2,
    "src": "f4e5566c6925"
+  },
+  "en": {
+   "title": "Claude Sonnet 5.5 improves on Sonnet 5 across benchmarks",
+   "short": "Claude Sonnet 5.5 improves on Sonnet 5",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "7deec067474e"
   }
  }
 }

@@ -139,6 +139,13 @@
    "model": "qwen3.5-9b-q4_k_m",
    "v": 2,
    "src": "3569adcf8336"
+  },
+  "en": {
+   "title": "AI Models Compete to Design Heaviest 3D Printed Bridge",
+   "short": "AI models design 3D printed bridge for weight test",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "ab083851aeb1"
   }
  }
 }

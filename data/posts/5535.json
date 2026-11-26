@@ -135,6 +135,13 @@
    "model": "qwen3.5-9b-q4_k_m",
    "v": 2,
    "src": "c07bbe5028b6"
+  },
+  "en": {
+   "title": "AMD welcomes World Labs and Fei-Fei Li to family",
+   "short": "AMD welcomes World Labs and Fei-Fei Li",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "e717f8686033"
   }
  }
 }

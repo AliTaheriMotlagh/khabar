@@ -114,6 +114,13 @@
    "model": "qwen3.5-9b-q4_k_m",
    "v": 2,
    "src": "6b87c9ca45ac"
+  },
+  "en": {
+   "title": "New platform Supertake turns ideas into investment portfolios",
+   "short": "Supertake turns ideas into investment portfolios",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "027d3527a738"
   }
  }
 }

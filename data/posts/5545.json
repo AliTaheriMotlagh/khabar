@@ -117,6 +117,13 @@
    "model": "qwen3.5-9b-q4_k_m",
    "v": 2,
    "src": "edb75a2aa373"
+  },
+  "en": {
+   "title": "OpenAI posts GPT-6.1 Sol near-Astra intelligence for fifth of price",
+   "short": "OpenAI posts GPT-6.1 Sol near-Astra intelligence",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "0ab4b0f9c3d8"
   }
  }
 }

@@ -126,6 +126,13 @@
    "model": "qwen3.5-9b-q4_k_m",
    "v": 2,
    "src": "e1fc1f594621"
+  },
+  "en": {
+   "title": "Google DeepMind introduces Gemini 4 Argon frontier model",
+   "short": "Google DeepMind introduces Gemini 4 Argon",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "c0da6a31ab59"
   }
  }
 }

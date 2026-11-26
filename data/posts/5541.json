@@ -116,6 +116,13 @@
    "model": "qwen3.5-9b-q4_k_m",
    "v": 2,
    "src": "6c772cc76833"
+  },
+  "en": {
+   "title": "Stanford CME 295: Transformers & Large Language Models Lecture 1 on YouTube",
+   "short": "Stanford CME 295 Lecture 1 on YouTube",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "93aa61552db7"
   }
  }
 }

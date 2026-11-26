@@ -125,6 +125,13 @@
    "model": "qwen3.5-9b-q4_k_m",
    "v": 2,
    "src": "476224336e06"
+  },
+  "en": {
+   "title": "Industry Leaders Sign White House Accord on Super Intelligence",
+   "short": "Tech leaders sign White House AI safety accord",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "762bcb63b4b3"
   }
  }
 }

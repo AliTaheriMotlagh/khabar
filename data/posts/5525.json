@@ -107,6 +107,13 @@
    "model": "qwen3.5-9b-q4_k_m",
    "v": 2,
    "src": "048ec7604dd0"
+  },
+  "en": {
+   "title": "Dyna Robotics unveils new robot built for craft and mastery",
+   "short": "Dyna Robotics unveils new robot",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "9f8f70b3b3b7"
   }
  }
 }

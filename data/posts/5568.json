@@ -116,6 +116,13 @@
    "model": "qwen3.5-9b-q4_k_m",
    "v": 2,
    "src": "09db5313e126"
+  },
+  "en": {
+   "title": "FTC investigates Anthropic and OpenAI over AI consumer claims",
+   "short": "FTC probes AI firms on consumer harm claims",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "8259235521a1"
   }
  }
 }

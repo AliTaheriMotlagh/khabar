@@ -122,6 +122,13 @@
    "model": "qwen3.5-9b-q4_k_m",
    "v": 2,
    "src": "96a87f249a0d"
+  },
+  "en": {
+   "title": "Elon Musk and Jensen Huang flank Trump at event",
+   "short": "Elon Musk and Jensen Huang flank Trump",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "5711643cdddd"
   }
  }
 }

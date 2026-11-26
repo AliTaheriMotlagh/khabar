@@ -133,6 +133,13 @@
    "model": "qwen3.5-9b-q4_k_m",
    "v": 2,
    "src": "99d8f91b1c01"
+  },
+  "en": {
+   "title": "Anthropic launches Claude Sonnet 5.5 with high output tokens",
+   "short": "Anthropic launches Claude Sonnet 5.5",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "3ff5b83b573f"
   }
  }
 }

@@ -102,6 +102,13 @@
    "model": "qwen3.5-9b-q4_k_m",
    "v": 2,
    "src": "5abace4c027f"
+  },
+  "en": {
+   "title": "OpenAI announces dot is ready to meet you",
+   "short": "OpenAI dot ready to meet you",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "e034d025ca3d"
   }
  }
 }

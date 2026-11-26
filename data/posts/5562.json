@@ -121,6 +121,13 @@
    "model": "qwen3.5-9b-q4_k_m",
    "v": 2,
    "src": "0dcc48005d87"
+  },
+  "en": {
+   "title": "OpenAI says Moonshot AI linked to model extraction campaign",
+   "short": "OpenAI links Moonshot AI to model extraction",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "e7ec0343af98"
   }
  }
 }

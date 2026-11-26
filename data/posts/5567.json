@@ -141,6 +141,13 @@
    "model": "qwen3.5-9b-q4_k_m",
    "v": 2,
    "src": "4866748a4454"
+  },
+  "en": {
+   "title": "Google Gemini 4 Argon outscores GPT-6 Astra and Claude Opus 5.5 on benchmarks",
+   "short": "Google Gemini 4 Argon beats rivals on benchmarks",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "51dc1fd53422"
   }
  }
 }

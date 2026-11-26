@@ -132,6 +132,13 @@
    "v": 1,
    "src": "de911389046b",
    "added": 3
+  },
+  "en": {
+   "title": "Manus introduces personal agents on Cue",
+   "short": "Manus brings personal agents on Cue",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "ae7016d96c52"
   }
  }
 }

@@ -134,6 +134,13 @@
    "v": 1,
    "src": "d51997ee3fa8",
    "added": 1
+  },
+  "en": {
+   "title": "MongoDB CEO CJ Desai Joins Meta As Chief Enterprise Platform Officer",
+   "short": "MongoDB CEO CJ Desai Joins Meta",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "3e00525aa9b1"
   }
  }
 }

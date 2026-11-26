@@ -96,6 +96,13 @@
    "model": "qwen3.5-9b-q4_k_m",
    "v": 2,
    "src": "a23e2a1396d0"
+  },
+  "en": {
+   "title": "On the Value of Doing a PhD in the Age of AI",
+   "short": "PhD value in age of AI",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "180d06c9d36e"
   }
  }
 }

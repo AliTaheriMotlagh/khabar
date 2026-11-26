@@ -114,6 +114,13 @@
    "model": "qwen3.5-9b-q4_k_m",
    "v": 2,
    "src": "71b97d616451"
+  },
+  "en": {
+   "title": "Anthropic launches public AI study for users to share experiences",
+   "short": "Anthropic launches public AI study for users",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "a90030f62048"
   }
  }
 }

@@ -107,6 +107,13 @@
    "v": 1,
    "src": "9fb8070b3204",
    "added": 1
+  },
+  "en": {
+   "title": "Flourish 1 Robot Chores Assistant Ships December For $3,555",
+   "short": "Flourish 1 Robot Ships December For $3,555",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "022a895daead"
   }
  }
 }

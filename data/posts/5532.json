@@ -116,6 +116,13 @@
    "v": 1,
    "src": "733a175fedc6",
    "added": 1
+  },
+  "en": {
+   "title": "WonderSearch launches to search millions of documents without pre-embedding",
+   "short": "WonderSearch launches without pre-embedding",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "968a735e4ca7"
   }
  }
 }

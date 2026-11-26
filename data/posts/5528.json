@@ -128,6 +128,13 @@
    "v": 1,
    "src": "91e885d8e5af",
    "added": 1
+  },
+  "en": {
+   "title": "Mo introduced as world's first AI QA engineer",
+   "short": "Mo is world's first AI QA engineer",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "6ab622f2e6d7"
   }
  }
 }
