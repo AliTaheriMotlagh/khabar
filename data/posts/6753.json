@@ -19,37 +19,6 @@
   "text": "سلام رفقا، طبق پستی که حساب کاربری thsottiaux منتشر کرده، موقع عرضه‌ی GPT-6.2 یه اشتباه محاسباتی پیش اومده بوده و مصرف مدل‌های GPT-6.2 Astra و Sol برای بیشتر کاربرا با تخفیف و کمتر از حد واقعی حساب می‌شده؛ یه جورایی تا هفته پیش کنتور یواش‌تر می‌چرخیده! 😅\n\n• الان این مشکل رو برطرف کردن و به گفته‌ی این پست، نسبت به هفته‌ی قبل روی GPT-6.2 Astra حدود ۴۰ درصد و روی Sol حدود ۲۵ درصد زودتر به سقف مصرف می‌رسید، هرچند اعلام شده که باز هم نسبت به مدل‌های 6 Astra و 6.1 Sol میزان استفاده‌ی بیشتری براتون دارن.\n• مدل‌های دیگه تغییری نکردن و قرار نیست بابت اختلاف مصرف‌های قبلی هزینه‌ای ازتون بگیرن.\n• به عنوان یه عذرخواهی کوچیک هم یه بار ریستِ ذخیره (banked reset) برای همه‌ی کاربرهای پلن‌های Go، Plus، Pro و Business اضافه می‌کنن.",
   "date": "2026-11-26T03:08:23+00:00"
  },
- "links": [
-  {
-   "kind": "tweet",
-   "url": "https://x.com/thsottiaux/status/2125784147889393806",
-   "domain": "x.com",
-   "author": {
-    "name": "Tibo",
-    "handle": "thsottiaux",
-    "avatar": "https://pbs.twimg.com/profile_images/2093807917833281537/2yBgpwVV_200x200.jpg"
-   },
-   "text": "We made a billing mistake at launch of GPT-6.2 that incorrectly discounted GPT-6.2 Astra and Sol usage for most users. \n\nWe’ve fixed this now, so the same work will use more of your plan’s usage allowance. Comparing to last week, you will reach your limits 40% faster on GPT-6.2 Astra and 25% faster on Sol. You should still see these go further in usage compared to 6 Astra and 6.1 Sol. Other models weren’t affected, and we won’t charge you for the difference on past usage.\n\nAs a small token to apologize for the mistake, we’ll be adding one banked reset for everyone on Go, Plus, Pro, and Business.",
-   "date": 1795661410,
-   "media": [],
-   "links": []
-  }
- ],
- "article": {
-  "title": "طبق پستی که حساب کاربری thsottiaux منتشر کرده، موقع عرضه‌ی GPT-6.2 یه اشتباه محاسباتی پیش اومده بوده و مصرف مدل‌های GPT-6.2 Astra و Sol برای بیشتر کاربرا با تخفیف و کمتر از حد واقعی حساب می‌شده",
-  "source_title": "We made a billing mistake at launch of GPT-6.2 that incorrectly discounted GPT-6.2 Astra and Sol usage for most users.",
-  "body": [
-   "طبق پستی که حساب کاربری thsottiaux منتشر کرده، موقع عرضه‌ی GPT-6.2 یه اشتباه محاسباتی پیش اومده بوده و مصرف مدل‌های GPT-6.2 Astra و Sol برای بیشتر کاربرا با تخفیف و کمتر از حد واقعی حساب می‌شده؛ یه جورایی تا هفته پیش کنتور یواش‌تر می‌چرخیده! 😅",
-   "• الان این مشکل رو برطرف کردن و به گفته‌ی این پست، نسبت به هفته‌ی قبل روی GPT-6.2 Astra حدود ۴۰ درصد و روی Sol حدود ۲۵ درصد زودتر به سقف مصرف می‌رسید، هرچند اعلام شده که باز هم نسبت به مدل‌های 6 Astra و 6.1 Sol میزان استفاده‌ی بیشتری براتون دارن.",
-   "• مدل‌های دیگه تغییری نکردن و قرار نیست بابت اختلاف مصرف‌های قبلی هزینه‌ای ازتون بگیرن.",
-   "• به عنوان یه عذرخواهی کوچیک هم یه بار ریستِ ذخیره (banked reset) برای همه‌ی کاربرهای پلن‌های Go، Plus، Pro و Business اضافه می‌کنن."
-  ],
-  "why": null,
-  "tags": [
-   "اوپن‌ای‌آی"
-  ]
- },
- "updated": "2026-11-26T03:21:48+00:00",
  "ai": {
   "title": "اوپن‌ای‌آی اشتباه محاسباتی GPT-6.2 را اصلاح کرد و سقف مصرف را زودتر می‌رسید",
   "short": "اصلاح اشتباه GPT-6.2",
@@ -138,5 +107,36 @@
    "src": "6dad54210550",
    "added": 3
   }
- }
+ },
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/thsottiaux/status/2125784147889393806",
+   "domain": "x.com",
+   "author": {
+    "name": "Tibo",
+    "handle": "thsottiaux",
+    "avatar": "https://pbs.twimg.com/profile_images/2093807917833281537/2yBgpwVV_200x200.jpg"
+   },
+   "text": "We made a billing mistake at launch of GPT-6.2 that incorrectly discounted GPT-6.2 Astra and Sol usage for most users. \n\nWe’ve fixed this now, so the same work will use more of your plan’s usage allowance. Comparing to last week, you will reach your limits 40% faster on GPT-6.2 Astra and 25% faster on Sol. You should still see these go further in usage compared to 6 Astra and 6.1 Sol. Other models weren’t affected, and we won’t charge you for the difference on past usage.\n\nAs a small token to apologize for the mistake, we’ll be adding one banked reset for everyone on Go, Plus, Pro, and Business.",
+   "date": 1795661410,
+   "media": [],
+   "links": []
+  }
+ ],
+ "article": {
+  "title": "طبق پستی که حساب کاربری thsottiaux منتشر کرده، موقع عرضه‌ی GPT-6.2 یه اشتباه محاسباتی پیش اومده بوده و مصرف مدل‌های GPT-6.2 Astra و Sol برای بیشتر کاربرا با تخفیف و کمتر از حد واقعی حساب می‌شده",
+  "source_title": "We made a billing mistake at launch of GPT-6.2 that incorrectly discounted GPT-6.2 Astra and Sol usage for most users.",
+  "body": [
+   "طبق پستی که حساب کاربری thsottiaux منتشر کرده، موقع عرضه‌ی GPT-6.2 یه اشتباه محاسباتی پیش اومده بوده و مصرف مدل‌های GPT-6.2 Astra و Sol برای بیشتر کاربرا با تخفیف و کمتر از حد واقعی حساب می‌شده؛ یه جورایی تا هفته پیش کنتور یواش‌تر می‌چرخیده! 😅",
+   "• الان این مشکل رو برطرف کردن و به گفته‌ی این پست، نسبت به هفته‌ی قبل روی GPT-6.2 Astra حدود ۴۰ درصد و روی Sol حدود ۲۵ درصد زودتر به سقف مصرف می‌رسید، هرچند اعلام شده که باز هم نسبت به مدل‌های 6 Astra و 6.1 Sol میزان استفاده‌ی بیشتری براتون دارن.",
+   "• مدل‌های دیگه تغییری نکردن و قرار نیست بابت اختلاف مصرف‌های قبلی هزینه‌ای ازتون بگیرن.",
+   "• به عنوان یه عذرخواهی کوچیک هم یه بار ریستِ ذخیره (banked reset) برای همه‌ی کاربرهای پلن‌های Go، Plus، Pro و Business اضافه می‌کنن."
+  ],
+  "why": null,
+  "tags": [
+   "اوپن‌ای‌آی"
+  ]
+ },
+ "updated": "2026-11-26T13:48:10+00:00"
 }

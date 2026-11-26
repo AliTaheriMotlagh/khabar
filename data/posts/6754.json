@@ -18,44 +18,6 @@
   "text": "رفقا، تیم Modaic یه کارآگاه‌بازی حسابی راه انداخته تا از روی شتاب و سرعت، بفهمه زیر کاپوت مدل سریع «Jev» (ساخت شرکت TypeSafe) چه موتوری کار می‌کنه؛ چون خود شرکت مدل پایه و حتی تعداد واقعی توکن‌های ورودی رو پنهان می‌کنه. اونا بعد از تست روی ۹,۹۸۴ تا پرامپت می‌گن به احتمال زیاد پایه این مدل، نسخه Qwen3.5-35B-A3B با معماری سریع و کم‌مصرف MoE هست. 🔍\n\n• تو پرس‌وجوهای هویتی، مدل با قاطعیت DeepSeek و Gemma رو رد کرده و بیشتر جواب نداده، اما وقتی غیرمستقیم ازش پرسیدن «دوست داری بگی چه مدلی هستی؟» تو ۷۴ درصد مواقع به Qwen اشاره کرده.\n• طبق نمودار آزمایش‌ها، زمان تأخیر Jev با توکن‌شمار Qwen همبستگی بیشتری (۰.۸۰۵) داشته تا با عددی که خود API مدل گزارش می‌ده (۰.۷۱۹)؛ البته آمار Gemma هم خیلی نزدیک بوده، ولی چون مدل قبلاً ردش کرده بود، از گزینه‌ها خط خورده.\n• به گفته این تیم، نرخ پردازش (throughput) مدل هم از همه بیشتر شبیه همون Qwen3.5-35B-A3B بوده.\n\nالبته خود Modaic هم با احتیاط می‌گه اینا سرنخه و قطعی نیست، ولی توصیه‌شون به کسایی که مدل‌های تصمیم‌گیر (System One) می‌سازن اینه که به جای تکیه صرف روی بهینه‌سازی اجرای مدل، رو انتخاب مدل پایه درست حساب باز کنن.",
   "date": "2026-11-26T04:12:18+00:00"
  },
- "links": [
-  {
-   "kind": "tweet",
-   "url": "https://x.com/modaicdev/status/2125701304446234691",
-   "domain": "x.com",
-   "author": {
-    "name": "modaic.dev",
-    "handle": "modaicdev",
-    "avatar": "https://pbs.twimg.com/profile_images/2030809385249955840/ztCMdOgu_200x200.jpg"
-   },
-   "text": "We profiled Jev's latency across 9,984 prompts to find its backbone.\n\nOur answer: Qwen3.5-35B-A3B, an MoE\n\n> Qwen's tokenizer tracks Jev's latency better than Jev's own token counts\n> While self-identifying, Jev rejects DeepSeek and Gemma, but favors Qwen\n> Its throughput tracks the closest with Qwen3.5-35B-A3B",
-   "date": 1795641659,
-   "media": [
-    {
-     "type": "image",
-     "src": "https://pbs.twimg.com/media/HX_JhDCaMAACUMz.jpg?name=orig",
-     "ratio": 0.3333
-    }
-   ],
-   "links": []
-  }
- ],
- "article": {
-  "title": "تیم Modaic یه کارآگاه‌بازی حسابی راه انداخته تا از روی شتاب و سرعت، بفهمه زیر کاپوت مدل سریع «Jev» (ساخت شرکت TypeSafe) چه موتوری کار می‌کنه",
-  "source_title": "We profiled Jev's latency across 9,984 prompts to find its backbone.",
-  "body": [
-   "تیم Modaic یه کارآگاه‌بازی حسابی راه انداخته تا از روی شتاب و سرعت، بفهمه زیر کاپوت مدل سریع «Jev» (ساخت شرکت TypeSafe) چه موتوری کار می‌کنه؛ چون خود شرکت مدل پایه و حتی تعداد واقعی توکن‌های ورودی رو پنهان می‌کنه. اونا بعد از تست روی ۹,۹۸۴ تا پرامپت می‌گن به احتمال زیاد پایه این مدل، نسخه Qwen3.5-35B-A3B با معماری سریع و کم‌مصرف MoE هست. 🔍",
-   "• تو پرس‌وجوهای هویتی، مدل با قاطعیت DeepSeek و Gemma رو رد کرده و بیشتر جواب نداده، اما وقتی غیرمستقیم ازش پرسیدن «دوست داری بگی چه مدلی هستی؟» تو ۷۴ درصد مواقع به Qwen اشاره کرده.",
-   "• طبق نمودار آزمایش‌ها، زمان تأخیر Jev با توکن‌شمار Qwen همبستگی بیشتری (۰.۸۰۵) داشته تا با عددی که خود API مدل گزارش می‌ده (۰.۷۱۹)؛ البته آمار Gemma هم خیلی نزدیک بوده، ولی چون مدل قبلاً ردش کرده بود، از گزینه‌ها خط خورده.",
-   "• به گفته این تیم، نرخ پردازش (throughput) مدل هم از همه بیشتر شبیه همون Qwen3.5-35B-A3B بوده."
-  ],
-  "why": "البته خود Modaic هم با احتیاط می‌گه اینا سرنخه و قطعی نیست، ولی توصیه‌شون به کسایی که مدل‌های تصمیم‌گیر (System One) می‌سازن اینه که به جای تکیه صرف روی بهینه‌سازی اجرای مدل، رو انتخاب مدل پایه درست حساب باز کنن.",
-  "why_label": "حرف آخر",
-  "tags": [
-   "چین"
-  ]
- },
- "updated": "2026-11-26T04:15:29+00:00",
  "ai": {
   "title": "تیم Modaic مدل Jev را به Qwen3.5-35B-A3B نسبت داد",
   "short": "Jev همان Qwen3.5 است",
@@ -152,5 +114,43 @@
    "src": "653588482cd1",
    "added": 3
   }
- }
+ },
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/modaicdev/status/2125701304446234691",
+   "domain": "x.com",
+   "author": {
+    "name": "modaic.dev",
+    "handle": "modaicdev",
+    "avatar": "https://pbs.twimg.com/profile_images/2030809385249955840/ztCMdOgu_200x200.jpg"
+   },
+   "text": "We profiled Jev's latency across 9,984 prompts to find its backbone.\n\nOur answer: Qwen3.5-35B-A3B, an MoE\n\n> Qwen's tokenizer tracks Jev's latency better than Jev's own token counts\n> While self-identifying, Jev rejects DeepSeek and Gemma, but favors Qwen\n> Its throughput tracks the closest with Qwen3.5-35B-A3B",
+   "date": 1795641659,
+   "media": [
+    {
+     "type": "image",
+     "src": "https://pbs.twimg.com/media/HX_JhDCaMAACUMz.jpg?name=orig",
+     "ratio": 0.3333
+    }
+   ],
+   "links": []
+  }
+ ],
+ "article": {
+  "title": "تیم Modaic یه کارآگاه‌بازی حسابی راه انداخته تا از روی شتاب و سرعت، بفهمه زیر کاپوت مدل سریع «Jev» (ساخت شرکت TypeSafe) چه موتوری کار می‌کنه",
+  "source_title": "We profiled Jev's latency across 9,984 prompts to find its backbone.",
+  "body": [
+   "تیم Modaic یه کارآگاه‌بازی حسابی راه انداخته تا از روی شتاب و سرعت، بفهمه زیر کاپوت مدل سریع «Jev» (ساخت شرکت TypeSafe) چه موتوری کار می‌کنه؛ چون خود شرکت مدل پایه و حتی تعداد واقعی توکن‌های ورودی رو پنهان می‌کنه. اونا بعد از تست روی ۹,۹۸۴ تا پرامپت می‌گن به احتمال زیاد پایه این مدل، نسخه Qwen3.5-35B-A3B با معماری سریع و کم‌مصرف MoE هست. 🔍",
+   "• تو پرس‌وجوهای هویتی، مدل با قاطعیت DeepSeek و Gemma رو رد کرده و بیشتر جواب نداده، اما وقتی غیرمستقیم ازش پرسیدن «دوست داری بگی چه مدلی هستی؟» تو ۷۴ درصد مواقع به Qwen اشاره کرده.",
+   "• طبق نمودار آزمایش‌ها، زمان تأخیر Jev با توکن‌شمار Qwen همبستگی بیشتری (۰.۸۰۵) داشته تا با عددی که خود API مدل گزارش می‌ده (۰.۷۱۹)؛ البته آمار Gemma هم خیلی نزدیک بوده، ولی چون مدل قبلاً ردش کرده بود، از گزینه‌ها خط خورده.",
+   "• به گفته این تیم، نرخ پردازش (throughput) مدل هم از همه بیشتر شبیه همون Qwen3.5-35B-A3B بوده."
+  ],
+  "why": "البته خود Modaic هم با احتیاط می‌گه اینا سرنخه و قطعی نیست، ولی توصیه‌شون به کسایی که مدل‌های تصمیم‌گیر (System One) می‌سازن اینه که به جای تکیه صرف روی بهینه‌سازی اجرای مدل، رو انتخاب مدل پایه درست حساب باز کنن.",
+  "why_label": "حرف آخر",
+  "tags": [
+   "چین"
+  ]
+ },
+ "updated": "2026-11-26T13:48:10+00:00"
 }

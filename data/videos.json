@@ -3,7 +3,7 @@
   "url": "https://www.youtube.com/@mehrzad.samadi",
   "id": "UCprtwWNkaWcAxcBV44lPHzQ"
  },
- "checked": "2026-11-25T13:31:45+00:00",
+ "checked": "2026-11-26T13:48:30+00:00",
  "videos": [
   {
    "id": "GaS7o7UdXeg",
@@ -271,7 +271,74 @@
     "from": "description",
     "v": 2,
     "model": "qwen3.5-9b-q4_k_m"
-   }
+   },
+   "description": "فصل‌ها | Chapters\n0:00 هوش مصنوعی بیشتر به درد شرکت‌ها خورده | Intro: AI has mostly helped companies\n1:14 محصولات AI برای آدم‌های عادی | AI products for everyday consumers\n2:08 همه‌ی گجت‌های AI مصرفی رو خریدم | I bought every consumer AI gadget\n2:45 آنباکسینگ | Unboxing\n3:06 Beni از شرکت Mondo چیه؟ | What is Beni by Mondo?\n3:56 توی جعبه‌ها چیه | What's in the boxes\n4:29 مشخصات: 4K، سرعت ۱۸ مایل و حافظه | Specs: 4K, 18 mph and storage\n5:05 اولین روشن کردن و پرش | First power-on and jump trick\n5:41 روی چمن و دنبال کردن من | On grass, following me\n6:24 شبیه GoPro | Just like a GoPro\n7:01 دنبال کردن از پشت و کنار و Highlight | Follow from behind, side and highlight mode\n7:46 حالت Orbit | Orbit mode\n7:57 سخت‌افزار داخلش معلوم نیست | No info on the hardware inside\n8:16 تست پایداری | Stability test\n8:40 بالا رفتن از پله | Climbing stairs\n9:42 جمع‌بندی و محصولات بعدی | Wrap-up and what's next\n\n#ربات #هوش_مصنوعی #Beni #CameraRobot #AIGadgets #آنباکس",
+   "chapters": [
+    {
+     "t": 0,
+     "title": "هوش مصنوعی بیشتر به درد شرکت‌ها خورده | Intro: AI has mostly helped companies"
+    },
+    {
+     "t": 74,
+     "title": "محصولات AI برای آدم‌های عادی | AI products for everyday consumers"
+    },
+    {
+     "t": 128,
+     "title": "همه‌ی گجت‌های AI مصرفی رو خریدم | I bought every consumer AI gadget"
+    },
+    {
+     "t": 165,
+     "title": "آنباکسینگ | Unboxing"
+    },
+    {
+     "t": 186,
+     "title": "Beni از شرکت Mondo چیه؟ | What is Beni by Mondo?"
+    },
+    {
+     "t": 236,
+     "title": "توی جعبه‌ها چیه | What's in the boxes"
+    },
+    {
+     "t": 269,
+     "title": "مشخصات: 4K، سرعت ۱۸ مایل و حافظه | Specs: 4K, 18 mph and storage"
+    },
+    {
+     "t": 305,
+     "title": "اولین روشن کردن و پرش | First power-on and jump trick"
+    },
+    {
+     "t": 341,
+     "title": "روی چمن و دنبال کردن من | On grass, following me"
+    },
+    {
+     "t": 384,
+     "title": "شبیه GoPro | Just like a GoPro"
+    },
+    {
+     "t": 421,
+     "title": "دنبال کردن از پشت و کنار و Highlight | Follow from behind, side and highlight mode"
+    },
+    {
+     "t": 466,
+     "title": "حالت Orbit | Orbit mode"
+    },
+    {
+     "t": 477,
+     "title": "سخت‌افزار داخلش معلوم نیست | No info on the hardware inside"
+    },
+    {
+     "t": 496,
+     "title": "تست پایداری | Stability test"
+    },
+    {
+     "t": 520,
+     "title": "بالا رفتن از پله | Climbing stairs"
+    },
+    {
+     "t": 582,
+     "title": "جمع‌بندی و محصولات بعدی | Wrap-up and what's next"
+    }
+   ]
   },
   {
    "id": "vchyxAZZPIo",
@@ -826,7 +893,94 @@
     "from": "description",
     "v": 2,
     "model": "qwen3.5-9b-q4_k_m"
-   }
+   },
+   "description": "فصل‌ها | Chapters\n0:00 مقدمه | Intro\n0:19 بحث ریاضی‌دان‌ها با OpenAI و Anthropic | Mathematicians vs. AI labs debate\n0:52 گزارش Anthropic درباره‌ی سوءاستفاده از Claude | Anthropic's report on Claude misuse\n1:37 هشدارهای ایمنی و بحث انقراض | Safety warnings and the extinction debate\n2:59 آیا agent ها می‌تونن اینترنت رو از کار بندازن؟ | Could AI agents take down the internet?\n4:04 Speculative decoding چیه؟ | What is speculative decoding?\n4:40 inference و تولید کلمه به کلمه | Inference and autoregressive generation\n5:50 چرا سرعت inference مهمه و KV cache | Why inference speed matters, and KV cache\n6:40 مثال ماشین راهنما و تریلی | Analogy: the escort car and the big truck\n7:41 اجرای speculative در کامپایلرها | Speculative execution in compilers\n9:23 Draft and verify با یک مثال | Draft and verify, with an example\n10:15 سه شرط: draft سریع، verify سریع، خطای کم | Three requirements: fast draft, fast verify, few errors\n11:22 بدون افت کیفیت: چرا خروجی عوض نمی‌شه | No quality loss: why the output stays the same\n13:35 مدل draft جدا کنار مدل target | A separate draft model next to the target model\n14:50 Medusa: چند head اضافه | Medusa: extra decoding heads\n16:44 MTP: پیش‌بینی چند توکن | MTP: multi-token prediction\n18:26 EAGLE: استفاده از فیچرهای داخلی مدل | EAGLE: using the model's internal features\n19:40 DFlash: draft با diffusion | DFlash: drafting with diffusion\n20:42 DFlash 2: توکن‌هایی که کنار هم معنی بدن | DFlash 2: picking tokens that fit together\n21:39 DSpark و confidence head | DSpark and the confidence head\n22:56 جمع‌بندی: کِی از اینا استفاده کنیم | Wrap-up: when to use these\n\n#هوش_مصنوعی #SpeculativeDecoding #LLM #یادگیری_عمیق #DeepLearning",
+   "chapters": [
+    {
+     "t": 0,
+     "title": "مقدمه | Intro"
+    },
+    {
+     "t": 19,
+     "title": "بحث ریاضی‌دان‌ها با OpenAI و Anthropic | Mathematicians vs. AI labs debate"
+    },
+    {
+     "t": 52,
+     "title": "گزارش Anthropic درباره‌ی سوءاستفاده از Claude | Anthropic's report on Claude misuse"
+    },
+    {
+     "t": 97,
+     "title": "هشدارهای ایمنی و بحث انقراض | Safety warnings and the extinction debate"
+    },
+    {
+     "t": 179,
+     "title": "آیا agent ها می‌تونن اینترنت رو از کار بندازن؟ | Could AI agents take down the internet?"
+    },
+    {
+     "t": 244,
+     "title": "Speculative decoding چیه؟ | What is speculative decoding?"
+    },
+    {
+     "t": 280,
+     "title": "inference و تولید کلمه به کلمه | Inference and autoregressive generation"
+    },
+    {
+     "t": 350,
+     "title": "چرا سرعت inference مهمه و KV cache | Why inference speed matters, and KV cache"
+    },
+    {
+     "t": 400,
+     "title": "مثال ماشین راهنما و تریلی | Analogy: the escort car and the big truck"
+    },
+    {
+     "t": 461,
+     "title": "اجرای speculative در کامپایلرها | Speculative execution in compilers"
+    },
+    {
+     "t": 563,
+     "title": "Draft and verify با یک مثال | Draft and verify, with an example"
+    },
+    {
+     "t": 615,
+     "title": "سه شرط: draft سریع، verify سریع، خطای کم | Three requirements: fast draft, fast verify, few errors"
+    },
+    {
+     "t": 682,
+     "title": "بدون افت کیفیت: چرا خروجی عوض نمی‌شه | No quality loss: why the output stays the same"
+    },
+    {
+     "t": 815,
+     "title": "مدل draft جدا کنار مدل target | A separate draft model next to the target model"
+    },
+    {
+     "t": 890,
+     "title": "Medusa: چند head اضافه | Medusa: extra decoding heads"
+    },
+    {
+     "t": 1004,
+     "title": "MTP: پیش‌بینی چند توکن | MTP: multi-token prediction"
+    },
+    {
+     "t": 1106,
+     "title": "EAGLE: استفاده از فیچرهای داخلی مدل | EAGLE: using the model's internal features"
+    },
+    {
+     "t": 1180,
+     "title": "DFlash: draft با diffusion | DFlash: drafting with diffusion"
+    },
+    {
+     "t": 1242,
+     "title": "DFlash 2: توکن‌هایی که کنار هم معنی بدن | DFlash 2: picking tokens that fit together"
+    },
+    {
+     "t": 1299,
+     "title": "DSpark و confidence head | DSpark and the confidence head"
+    },
+    {
+     "t": 1376,
+     "title": "جمع‌بندی: کِی از اینا استفاده کنیم | Wrap-up: when to use these"
+    }
+   ]
   },
   {
    "id": "iqtEvrW0L9s",
@@ -1104,11 +1258,11 @@
   },
   {
    "id": "NuxDBUhWUuM",
-   "title": "Live 1: News and Graph Engineering",
+   "title": "Live 1: AI News and Graph Engineering with Claude Code Dynamic Workflows [Persian]",
    "duration": 4616,
    "date": "2026-08-23",
    "n": 1,
-   "name": "News and Graph Engineering",
+   "name": "AI News and Graph Engineering with Claude Code Dynamic Workflows [Persian]",
    "live": true,
    "ai": {
     "title": "پخش زنده ۱: اخبار و مهندسی گراف با مهرزاد صمدی",
@@ -1184,7 +1338,174 @@
     "from": "description",
     "v": 2,
     "model": "qwen3.5-9b-q4_k_m"
-   }
+   },
+   "description": "فصل‌ها | Chapters\n0:00 مقدمه: اولین لایو | Intro: the first live stream\n1:53 کجاها نباید از AI استفاده کنیم؟ | Where shouldn't we use AI?\n3:22 تصمیم نهایی و مسئولیت با انسانه | The final decision and responsibility stay human\n4:14 پزشک و تراپیست | Doctors and therapists\n6:13 ارتباط با آدم‌ها و ماهیچه‌هایی که ضعیف می‌شن | Human connection and the muscles we lose\n7:16 یادگیری عمیق و اعتماد به نفس کاذب | Deep learning and false confidence\n9:21 هنر و خلاقیت | Art and creativity\n10:53 تربیت فرزند، مدیریت، کتاب خوندن و کد زدن | Parenting, management, reading and coding\n12:35 سؤال: دستیار شخصی با داده‌های شخصی | Q: a personal assistant on your own data\n14:24 مدل ناشناس OX Alpha و توکن رایگان | The mystery OX Alpha model and its free tokens\n17:43 Artificial Analysis Intelligence Index و Qwen 27B | The Artificial Analysis index and Qwen 27B\n19:22 واقعاً چند میلیارد پارامتر لازم داریم؟ | How many parameters do we really need?\n20:36 Claude و طراحی پروتئین | Claude for protein engineering\n23:52 واکسن شخصی‌سازی‌شده‌ی سرطان Moderna | Moderna's personalized cancer vaccine\n27:10 چرا خبرها سرطان رو به AI ربط می‌دن؟ | Why the headlines credit AI\n29:18 Generalist GEN-1.5 و in-context learning در رباتیک | Generalist GEN-1.5 and in-context learning for robots\n31:52 مسابقات ربات‌های انسان‌نمای چین | China's humanoid robot games\n33:01 پرسش و پاسخ: مدل بهتر، کار خوب یا بد؟ | Q&A: is a better model good or bad?\n34:28 توصیه برای دانشجوهای پزشکی | Advice for medical students\n35:28 PhD در AI یا علوم اعصاب؟ | A PhD in AI or neuroscience?\n36:45 فاین‌تیون کردن مدل، Unsloth و LoRA | Fine-tuning, Unsloth and LoRA\n37:39 مهم‌ترین مهارت: ساختن محصول | The key skill: building the product\n38:06 AI و آینده‌ی بازار کار | AI and the job market\n40:16 از prompt engineering تا context engineering | From prompt engineering to context engineering\n41:08 harness | The harness\n41:41 loop engineering و /goal در Claude Code | Loop engineering and /goal in Claude Code\n43:35 مشکل loop و context rot | The problem with loops: context rot\n44:00 graph engineering چیه؟ | What is graph engineering?\n45:31 dynamic workflows در Claude Code | Dynamic workflows in Claude Code\n47:47 دمو: ساختن خبرنامه‌ی AI با dynamic workflow | Demo: building an AI newsletter with a dynamic workflow\n50:16 سؤال: چیزی جای Transformer رو می‌گیره؟ | Q: will anything replace the Transformer?\n50:52 ایجنت‌های موازی در workflow | Parallel agents in the workflow\n53:11 پرسش و پاسخ: دکترا برای مهاجرت؟ | Q&A: a PhD for immigration?\n54:46 همگام موندن با مقاله‌ها و خبرها | Keeping up with papers and news\n55:46 فرقش با delegate کردن قبلی | How this differs from plain delegation\n56:41 کجا harness لازمه؟ | When do you need a harness?\n57:25 جایگزین ارزون‌تر Claude | Cheaper alternatives to Claude\n58:13 کدوم مسیر شغلی امن‌تره؟ generalist باشید | Which career is safer? Be a generalist\n59:21 مرحله‌ی curate در workflow | The curate step of the workflow\n1:00:05 انتخاب رشته، Figma و سخت‌افزار | Choosing a major, Figma and hardware\n1:01:36 بازار کار C",
+   "chapters": [
+    {
+     "t": 0,
+     "title": "مقدمه: اولین لایو | Intro: the first live stream"
+    },
+    {
+     "t": 113,
+     "title": "کجاها نباید از AI استفاده کنیم؟ | Where shouldn't we use AI?"
+    },
+    {
+     "t": 202,
+     "title": "تصمیم نهایی و مسئولیت با انسانه | The final decision and responsibility stay human"
+    },
+    {
+     "t": 254,
+     "title": "پزشک و تراپیست | Doctors and therapists"
+    },
+    {
+     "t": 373,
+     "title": "ارتباط با آدم‌ها و ماهیچه‌هایی که ضعیف می‌شن | Human connection and the muscles we lose"
+    },
+    {
+     "t": 436,
+     "title": "یادگیری عمیق و اعتماد به نفس کاذب | Deep learning and false confidence"
+    },
+    {
+     "t": 561,
+     "title": "هنر و خلاقیت | Art and creativity"
+    },
+    {
+     "t": 653,
+     "title": "تربیت فرزند، مدیریت، کتاب خوندن و کد زدن | Parenting, management, reading and coding"
+    },
+    {
+     "t": 755,
+     "title": "سؤال: دستیار شخصی با داده‌های شخصی | Q: a personal assistant on your own data"
+    },
+    {
+     "t": 864,
+     "title": "مدل ناشناس OX Alpha و توکن رایگان | The mystery OX Alpha model and its free tokens"
+    },
+    {
+     "t": 1063,
+     "title": "Artificial Analysis Intelligence Index و Qwen 27B | The Artificial Analysis index and Qwen 27B"
+    },
+    {
+     "t": 1162,
+     "title": "واقعاً چند میلیارد پارامتر لازم داریم؟ | How many parameters do we really need?"
+    },
+    {
+     "t": 1236,
+     "title": "Claude و طراحی پروتئین | Claude for protein engineering"
+    },
+    {
+     "t": 1432,
+     "title": "واکسن شخصی‌سازی‌شده‌ی سرطان Moderna | Moderna's personalized cancer vaccine"
+    },
+    {
+     "t": 1630,
+     "title": "چرا خبرها سرطان رو به AI ربط می‌دن؟ | Why the headlines credit AI"
+    },
+    {
+     "t": 1758,
+     "title": "Generalist GEN-1.5 و in-context learning در رباتیک | Generalist GEN-1.5 and in-context learning for robots"
+    },
+    {
+     "t": 1912,
+     "title": "مسابقات ربات‌های انسان‌نمای چین | China's humanoid robot games"
+    },
+    {
+     "t": 1981,
+     "title": "پرسش و پاسخ: مدل بهتر، کار خوب یا بد؟ | Q&A: is a better model good or bad?"
+    },
+    {
+     "t": 2068,
+     "title": "توصیه برای دانشجوهای پزشکی | Advice for medical students"
+    },
+    {
+     "t": 2128,
+     "title": "PhD در AI یا علوم اعصاب؟ | A PhD in AI or neuroscience?"
+    },
+    {
+     "t": 2205,
+     "title": "فاین‌تیون کردن مدل، Unsloth و LoRA | Fine-tuning, Unsloth and LoRA"
+    },
+    {
+     "t": 2259,
+     "title": "مهم‌ترین مهارت: ساختن محصول | The key skill: building the product"
+    },
+    {
+     "t": 2286,
+     "title": "AI و آینده‌ی بازار کار | AI and the job market"
+    },
+    {
+     "t": 2416,
+     "title": "از prompt engineering تا context engineering | From prompt engineering to context engineering"
+    },
+    {
+     "t": 2468,
+     "title": "harness | The harness"
+    },
+    {
+     "t": 2501,
+     "title": "loop engineering و /goal در Claude Code | Loop engineering and /goal in Claude Code"
+    },
+    {
+     "t": 2615,
+     "title": "مشکل loop و context rot | The problem with loops: context rot"
+    },
+    {
+     "t": 2640,
+     "title": "graph engineering چیه؟ | What is graph engineering?"
+    },
+    {
+     "t": 2731,
+     "title": "dynamic workflows در Claude Code | Dynamic workflows in Claude Code"
+    },
+    {
+     "t": 2867,
+     "title": "دمو: ساختن خبرنامه‌ی AI با dynamic workflow | Demo: building an AI newsletter with a dynamic workflow"
+    },
+    {
+     "t": 3016,
+     "title": "سؤال: چیزی جای Transformer رو می‌گیره؟ | Q: will anything replace the Transformer?"
+    },
+    {
+     "t": 3052,
+     "title": "ایجنت‌های موازی در workflow | Parallel agents in the workflow"
+    },
+    {
+     "t": 3191,
+     "title": "پرسش و پاسخ: دکترا برای مهاجرت؟ | Q&A: a PhD for immigration?"
+    },
+    {
+     "t": 3286,
+     "title": "همگام موندن با مقاله‌ها و خبرها | Keeping up with papers and news"
+    },
+    {
+     "t": 3346,
+     "title": "فرقش با delegate کردن قبلی | How this differs from plain delegation"
+    },
+    {
+     "t": 3401,
+     "title": "کجا harness لازمه؟ | When do you need a harness?"
+    },
+    {
+     "t": 3445,
+     "title": "جایگزین ارزون‌تر Claude | Cheaper alternatives to Claude"
+    },
+    {
+     "t": 3493,
+     "title": "کدوم مسیر شغلی امن‌تره؟ generalist باشید | Which career is safer? Be a generalist"
+    },
+    {
+     "t": 3561,
+     "title": "مرحله‌ی curate در workflow | The curate step of the workflow"
+    },
+    {
+     "t": 3605,
+     "title": "انتخاب رشته، Figma و سخت‌افزار | Choosing a major, Figma and hardware"
+    },
+    {
+     "t": 3696,
+     "title": "بازار کار C"
+    }
+   ]
   },
   {
    "id": "6-SdqFdPVzE",
@@ -1550,16 +1871,135 @@
     "from": "description",
     "v": 2,
     "model": "qwen3.5-9b-q4_k_m"
-   }
+   },
+   "description": "فصل‌ها | Chapters\n0:00 مقدمه | Intro\n0:31 آنباکس DGX Spark | Unboxing the NVIDIA DGX Spark\n1:29 تاریخچه‌ی DGX: از DGX-1 تا GB10 | DGX history: from DGX-1 to GB10\n2:43 nvidia-smi و داشبورد DGX Spark | nvidia-smi and the DGX Spark dashboard\n3:58 حافظه‌ی یکپارچه (unified memory) | Unified memory\n4:52 پهنای باند حافظه: RTX Pro، Mac Studio و DGX Spark | Memory bandwidth: RTX Pro vs. Mac Studio vs. DGX Spark\n5:42 سه معیار برای انتخاب سخت‌افزار | Three things to check when choosing hardware\n6:40 prefill و decode | Prefill vs. decode\n8:20 چرا MoE؟ Qwen 3.6 35B در برابر 27B | Why MoE: Qwen 3.6 35B-A3B vs. the dense 27B\n9:58 کوانتیزیشن به زبان ساده | Quantization explained\n11:08 فرمت NVFP4 در Blackwell | NVFP4 on Blackwell GPUs\n12:40 اجرای مدل با vLLM و Codex | Serving the model with vLLM, set up by Codex\n13:46 سرعت: توکن در ثانیه و درخواست‌های موازی | Speed: tokens per second and concurrent requests\n15:08 Hermes چیه؟ | What is Hermes?\n15:32 از Clawdbot و Moltbook تا OpenClaw | From Clawdbot and Moltbook to OpenClaw\n18:07 Hermes در برابر OpenClaw | Hermes vs. OpenClaw\n19:08 Codex برنامه‌ریزی می‌کنه، مدل لوکال اجرا | Codex plans, the local model does the work\n20:50 تست: پنج وبسایت برای ایرانی‌ها | Test: five websites for Iranians\n22:08 داشبورد Hermes و Skills | The Hermes dashboard and skills\n22:42 کارهای زمان‌بندی‌شده با cron job | Scheduled tasks with cron jobs\n23:14 خلاصه‌ی روزانه‌ی اخبار در تلگرام | A daily news digest on Telegram\n24:10 مرتب کردن فایل‌های شخصی | Organizing personal files\n24:55 هشدار امنیتی | Security warning\n25:25 هر روز یه سؤال مصاحبه‌ی Deep Learning | A daily deep learning interview question\n27:06 حافظه و یادگیری Hermes | Hermes memory and self-learning\n27:49 نتیجه: وبسایت‌هایی که ساخت | Result: the websites it built\n29:14 ساخت تصویر با Z-Image Turbo و ComfyUI | Image generation with Z-Image Turbo and ComfyUI\n30:20 positive و negative prompt | Positive and negative prompts\n31:20 جمع‌بندی | Wrap-up\n\n#هوش_مصنوعی #LocalLLM #DGXSpark #مدل_زبانی #HermesAgent #ComfyUI",
+   "chapters": [
+    {
+     "t": 0,
+     "title": "مقدمه | Intro"
+    },
+    {
+     "t": 31,
+     "title": "آنباکس DGX Spark | Unboxing the NVIDIA DGX Spark"
+    },
+    {
+     "t": 89,
+     "title": "تاریخچه‌ی DGX: از DGX-1 تا GB10 | DGX history: from DGX-1 to GB10"
+    },
+    {
+     "t": 163,
+     "title": "nvidia-smi و داشبورد DGX Spark | nvidia-smi and the DGX Spark dashboard"
+    },
+    {
+     "t": 238,
+     "title": "حافظه‌ی یکپارچه (unified memory) | Unified memory"
+    },
+    {
+     "t": 292,
+     "title": "پهنای باند حافظه: RTX Pro، Mac Studio و DGX Spark | Memory bandwidth: RTX Pro vs. Mac Studio vs. DGX Spark"
+    },
+    {
+     "t": 342,
+     "title": "سه معیار برای انتخاب سخت‌افزار | Three things to check when choosing hardware"
+    },
+    {
+     "t": 400,
+     "title": "prefill و decode | Prefill vs. decode"
+    },
+    {
+     "t": 500,
+     "title": "چرا MoE؟ Qwen 3.6 35B در برابر 27B | Why MoE: Qwen 3.6 35B-A3B vs. the dense 27B"
+    },
+    {
+     "t": 598,
+     "title": "کوانتیزیشن به زبان ساده | Quantization explained"
+    },
+    {
+     "t": 668,
+     "title": "فرمت NVFP4 در Blackwell | NVFP4 on Blackwell GPUs"
+    },
+    {
+     "t": 760,
+     "title": "اجرای مدل با vLLM و Codex | Serving the model with vLLM, set up by Codex"
+    },
+    {
+     "t": 826,
+     "title": "سرعت: توکن در ثانیه و درخواست‌های موازی | Speed: tokens per second and concurrent requests"
+    },
+    {
+     "t": 908,
+     "title": "Hermes چیه؟ | What is Hermes?"
+    },
+    {
+     "t": 932,
+     "title": "از Clawdbot و Moltbook تا OpenClaw | From Clawdbot and Moltbook to OpenClaw"
+    },
+    {
+     "t": 1087,
+     "title": "Hermes در برابر OpenClaw | Hermes vs. OpenClaw"
+    },
+    {
+     "t": 1148,
+     "title": "Codex برنامه‌ریزی می‌کنه، مدل لوکال اجرا | Codex plans, the local model does the work"
+    },
+    {
+     "t": 1250,
+     "title": "تست: پنج وبسایت برای ایرانی‌ها | Test: five websites for Iranians"
+    },
+    {
+     "t": 1328,
+     "title": "داشبورد Hermes و Skills | The Hermes dashboard and skills"
+    },
+    {
+     "t": 1362,
+     "title": "کارهای زمان‌بندی‌شده با cron job | Scheduled tasks with cron jobs"
+    },
+    {
+     "t": 1394,
+     "title": "خلاصه‌ی روزانه‌ی اخبار در تلگرام | A daily news digest on Telegram"
+    },
+    {
+     "t": 1450,
+     "title": "مرتب کردن فایل‌های شخصی | Organizing personal files"
+    },
+    {
+     "t": 1495,
+     "title": "هشدار امنیتی | Security warning"
+    },
+    {
+     "t": 1525,
+     "title": "هر روز یه سؤال مصاحبه‌ی Deep Learning | A daily deep learning interview question"
+    },
+    {
+     "t": 1626,
+     "title": "حافظه و یادگیری Hermes | Hermes memory and self-learning"
+    },
+    {
+     "t": 1669,
+     "title": "نتیجه: وبسایت‌هایی که ساخت | Result: the websites it built"
+    },
+    {
+     "t": 1754,
+     "title": "ساخت تصویر با Z-Image Turbo و ComfyUI | Image generation with Z-Image Turbo and ComfyUI"
+    },
+    {
+     "t": 1820,
+     "title": "positive و negative prompt | Positive and negative prompts"
+    },
+    {
+     "t": 1880,
+     "title": "جمع‌بندی | Wrap-up"
+    }
+   ]
   },
   {
    "id": "3JyKypJsFCc",
-   "title": "38. Open Knowledge Format by Amir Hormati [Persian]",
+   "title": "38. Open Knowledge Format: Business Knowledge for AI Agents by Amir Hormati [Persian]",
    "duration": 3396,
    "date": "2026-07-03",
    "description": "https://cloud.google.com/blog/product...\n\n  / amir-hormati-972a5524  ",
    "n": 38,
-   "name": "Open Knowledge Format by Amir Hormati",
+   "name": "Open Knowledge Format: Business Knowledge for AI Agents by Amir Hormati",
    "live": false,
    "links": [
     "https://cloud.google.com/blog/product"
@@ -1730,11 +2170,11 @@
   },
   {
    "id": "nlI9I163J-0",
-   "title": "37. Local LLM 1 [Persian]",
+   "title": "37. Local LLM 1: Running Qwen 3.5 with llama.cpp [Persian]",
    "duration": 2091,
    "date": "2026-06-16",
    "n": 37,
-   "name": "Local LLM 1",
+   "name": "Local LLM 1: Running Qwen 3.5 with llama.cpp",
    "live": false,
    "ai": {
     "title": "مقدمه‌ای بر هوش مصنوعی محلی: چرا مدل‌های LLM در دستگاه خودتان مهم هستند؟",
@@ -1818,16 +2258,127 @@
     "from": "description",
     "v": 2,
     "model": "qwen3.5-9b-q4_k_m"
-   }
+   },
+   "description": "فصل‌ها | Chapters\n0:00 مقدمه: سری Local LLM | Intro: the Local LLM series\n1:36 کی‌ها دنبال AI ارزون و لوکال هستن و برنامه‌ی سری | Who else is chasing cheap local AI, and the series plan\n3:15 سخت‌افزار من: RTX 4090 با ۲۴ گیگ | My setup: an RTX 4090 with 24 GB\n3:50 خانواده‌ی Qwen 3.5 و سایز مدل‌ها | The Qwen 3.5 family and its model sizes\n4:46 اسم مدل و تعداد پارامترها | Model names and parameter counts\n5:49 حساب سرانگشتی حجم مدل: هر پارامتر دو بایت | Rule of thumb for model size: two bytes per parameter\n7:20 Mixture of Experts و 35B-A3B | Mixture of Experts and 35B-A3B\n8:39 مدل‌ها تو ۲۴ گیگ GPU جا نمی‌شن | When models don't fit in 24 GB of VRAM\n9:31 ابزارهای اجرا: Ollama، llama.cpp، vLLM و MLX | Inference engines: Ollama, llama.cpp, vLLM and MLX\n11:22 r/LocalLLaMA | The r/LocalLLaMA community\n12:07 صفحه‌ی مدل و فایل‌ها در Hugging Face | The model card and files on Hugging Face\n13:56 فرمت GGUF | The GGUF format\n15:14 کوانتیزیشن: Q4 یعنی چی؟ | Quantization: what Q4 means\n16:20 روش‌های کوانتیزیشن: K، I و S/M/L | Quantization types: K-quants, I-quants and S/M/L\n17:54 کدوم کوانت رو انتخاب کنیم؟ | Which quant should you pick?\n18:37 مدل‌های GGUF شرکت Unsloth | Unsloth's GGUF models\n20:13 چک کردن سخت‌افزار در Hugging Face | Checking hardware fit on Hugging Face\n21:53 راهنمای اجرای لوکال Unsloth | Unsloth's run-locally guide\n22:21 سرعت مدل‌ها: llama.cpp در برابر Ollama | Benchmarks: llama.cpp vs. Ollama tokens per second\n23:53 چرا مدل MoE این‌قدر سریعه | Why the MoE model is so fast\n24:37 llama.cpp و Georgi Gerganov | llama.cpp and Georgi Gerganov\n25:27 دمو: تنظیمات llama-cli | Demo: llama-cli settings\n26:44 اجرای Qwen 3.5 4B | Running Qwen 3.5 4B\n28:11 اجرای 27B با Q4_K_M | Running the 27B at Q4_K_M\n29:59 llama-server و llama-swap | llama-server and llama-swap\n31:57 مدل لوکال در OpenCode | Local models in OpenCode\n33:31 جمع‌بندی و کانال تلگرام | Wrap-up and the Telegram channel\n\n#هوش_مصنوعی #LocalLLM #llamacpp #مدل_زبانی #Qwen #GGUF",
+   "chapters": [
+    {
+     "t": 0,
+     "title": "مقدمه: سری Local LLM | Intro: the Local LLM series"
+    },
+    {
+     "t": 96,
+     "title": "کی‌ها دنبال AI ارزون و لوکال هستن و برنامه‌ی سری | Who else is chasing cheap local AI, and the series plan"
+    },
+    {
+     "t": 195,
+     "title": "سخت‌افزار من: RTX 4090 با ۲۴ گیگ | My setup: an RTX 4090 with 24 GB"
+    },
+    {
+     "t": 230,
+     "title": "خانواده‌ی Qwen 3.5 و سایز مدل‌ها | The Qwen 3.5 family and its model sizes"
+    },
+    {
+     "t": 286,
+     "title": "اسم مدل و تعداد پارامترها | Model names and parameter counts"
+    },
+    {
+     "t": 349,
+     "title": "حساب سرانگشتی حجم مدل: هر پارامتر دو بایت | Rule of thumb for model size: two bytes per parameter"
+    },
+    {
+     "t": 440,
+     "title": "Mixture of Experts و 35B-A3B | Mixture of Experts and 35B-A3B"
+    },
+    {
+     "t": 519,
+     "title": "مدل‌ها تو ۲۴ گیگ GPU جا نمی‌شن | When models don't fit in 24 GB of VRAM"
+    },
+    {
+     "t": 571,
+     "title": "ابزارهای اجرا: Ollama، llama.cpp، vLLM و MLX | Inference engines: Ollama, llama.cpp, vLLM and MLX"
+    },
+    {
+     "t": 682,
+     "title": "r/LocalLLaMA | The r/LocalLLaMA community"
+    },
+    {
+     "t": 727,
+     "title": "صفحه‌ی مدل و فایل‌ها در Hugging Face | The model card and files on Hugging Face"
+    },
+    {
+     "t": 836,
+     "title": "فرمت GGUF | The GGUF format"
+    },
+    {
+     "t": 914,
+     "title": "کوانتیزیشن: Q4 یعنی چی؟ | Quantization: what Q4 means"
+    },
+    {
+     "t": 980,
+     "title": "روش‌های کوانتیزیشن: K، I و S/M/L | Quantization types: K-quants, I-quants and S/M/L"
+    },
+    {
+     "t": 1074,
+     "title": "کدوم کوانت رو انتخاب کنیم؟ | Which quant should you pick?"
+    },
+    {
+     "t": 1117,
+     "title": "مدل‌های GGUF شرکت Unsloth | Unsloth's GGUF models"
+    },
+    {
+     "t": 1213,
+     "title": "چک کردن سخت‌افزار در Hugging Face | Checking hardware fit on Hugging Face"
+    },
+    {
+     "t": 1313,
+     "title": "راهنمای اجرای لوکال Unsloth | Unsloth's run-locally guide"
+    },
+    {
+     "t": 1341,
+     "title": "سرعت مدل‌ها: llama.cpp در برابر Ollama | Benchmarks: llama.cpp vs. Ollama tokens per second"
+    },
+    {
+     "t": 1433,
+     "title": "چرا مدل MoE این‌قدر سریعه | Why the MoE model is so fast"
+    },
+    {
+     "t": 1477,
+     "title": "llama.cpp و Georgi Gerganov | llama.cpp and Georgi Gerganov"
+    },
+    {
+     "t": 1527,
+     "title": "دمو: تنظیمات llama-cli | Demo: llama-cli settings"
+    },
+    {
+     "t": 1604,
+     "title": "اجرای Qwen 3.5 4B | Running Qwen 3.5 4B"
+    },
+    {
+     "t": 1691,
+     "title": "اجرای 27B با Q4_K_M | Running the 27B at Q4_K_M"
+    },
+    {
+     "t": 1799,
+     "title": "llama-server و llama-swap | llama-server and llama-swap"
+    },
+    {
+     "t": 1917,
+     "title": "مدل لوکال در OpenCode | Local models in OpenCode"
+    },
+    {
+     "t": 2011,
+     "title": "جمع‌بندی و کانال تلگرام | Wrap-up and the Telegram channel"
+    }
+   ]
   },
   {
    "id": "Ne-zbyl4Suc",
-   "title": "36. Fable/Mythos, Loop Engineering  [Persian]",
+   "title": "36. Claude Fable & Mythos, and Loop Engineering [Persian]",
    "duration": 1768,
    "date": "2026-06-11",
    "description": "https://www.anthropic.com/institute/r...\nhttps://openai.com/index/built-to-ben...\nhttps://www.anthropic.com/news/claude...\nhttps://platform.claude.com/docs/en/b...",
    "n": 36,
-   "name": "Fable/Mythos, Loop Engineering",
+   "name": "Claude Fable & Mythos, and Loop Engineering",
    "live": false,
    "links": [
     "https://www.anthropic.com/institute/r",
@@ -1922,11 +2473,11 @@
   },
   {
    "id": "V9YrTtyRe4U",
-   "title": "35. OpenCode [Persian]",
+   "title": "35. OpenCode: the Open-Source AI Coding Agent [Persian]",
    "duration": 1777,
    "date": "2026-06-07",
    "n": 35,
-   "name": "OpenCode",
+   "name": "OpenCode: the Open-Source AI Coding Agent",
    "live": false,
    "ai": {
     "title": "معرفی OpenCode: انقلاب جدید در کدنویسی با هوش مصنوعی",
@@ -2001,7 +2552,114 @@
     "from": "description",
     "v": 2,
     "model": "qwen3.5-9b-q4_k_m"
-   }
+   },
+   "description": "فصل‌ها | Chapters\n0:00 مقدمه | Intro\n0:14 یادآوری: پیر فرزانه و ابزارهاش | Recap: the wise old sage and his tools\n1:53 هارنس چیه؟ | What is a harness?\n2:22 چرا OpenCode اندرویدِ هارنس‌هاست | Why OpenCode is the Android of harnesses\n4:00 هارنس‌های دیگه و ویدیوهای بعدی | Other harnesses and upcoming videos\n5:32 نصب OpenCode و ریپازیتوری GitHub | Installing OpenCode and its GitHub repo\n6:41 اجرای OpenCode | Running OpenCode\n7:23 وصل کردن مدل‌ها و provider ها | Connecting models and API providers\n9:05 OpenCode Zen و مدل‌های مجانی | OpenCode Zen and free models\n10:30 ابزار خوب داریم، چی بسازیم؟ | Great tools, but what should we build?\n12:32 Jensen: شغلت با کاری که می‌کنی فرق داره | Jensen Huang: your job vs. your daily tasks\n13:52 ایجنت‌های Plan و Build | The Plan and Build agents\n15:30 ساخت یه to-do app | Building a to-do app\n16:48 اضافه کردن skill | Adding a skill (frontend-design)\n19:00 skill ها چطور context و هزینه رو کم می‌کنن | How skills save context and cost\n20:15 توکن، context و هزینه | Tokens, context usage and cost\n20:48 دستور compact | The compact command\n21:36 نتیجه با skill | The result with the skill\n22:52 دادن فایل خاص با @ | Pointing to specific files with @\n23:12 ساختن skill از چیزهایی که یاد گرفته | Turning what it learned into a skill\n24:46 compact در عمل | Compact in action\n25:20 ایجنت‌ها به چه درد می‌خورن | What agents are for\n26:07 ساخت ایجنت شخصی | Creating a custom agent\n27:30 sub-agent ها: explore و general | Sub-agents: explore and general\n28:04 command ها و MCP server | Commands and MCP servers\n28:22 قدم بعدی: خودتون امتحانش کنید | Next steps: try it yourself\n\n#هوش_مصنوعی #OpenCode #AIAgents #ایجنت #برنامه_نویسی #CodingAgent",
+   "chapters": [
+    {
+     "t": 0,
+     "title": "مقدمه | Intro"
+    },
+    {
+     "t": 14,
+     "title": "یادآوری: پیر فرزانه و ابزارهاش | Recap: the wise old sage and his tools"
+    },
+    {
+     "t": 113,
+     "title": "هارنس چیه؟ | What is a harness?"
+    },
+    {
+     "t": 142,
+     "title": "چرا OpenCode اندرویدِ هارنس‌هاست | Why OpenCode is the Android of harnesses"
+    },
+    {
+     "t": 240,
+     "title": "هارنس‌های دیگه و ویدیوهای بعدی | Other harnesses and upcoming videos"
+    },
+    {
+     "t": 332,
+     "title": "نصب OpenCode و ریپازیتوری GitHub | Installing OpenCode and its GitHub repo"
+    },
+    {
+     "t": 401,
+     "title": "اجرای OpenCode | Running OpenCode"
+    },
+    {
+     "t": 443,
+     "title": "وصل کردن مدل‌ها و provider ها | Connecting models and API providers"
+    },
+    {
+     "t": 545,
+     "title": "OpenCode Zen و مدل‌های مجانی | OpenCode Zen and free models"
+    },
+    {
+     "t": 630,
+     "title": "ابزار خوب داریم، چی بسازیم؟ | Great tools, but what should we build?"
+    },
+    {
+     "t": 752,
+     "title": "Jensen: شغلت با کاری که می‌کنی فرق داره | Jensen Huang: your job vs. your daily tasks"
+    },
+    {
+     "t": 832,
+     "title": "ایجنت‌های Plan و Build | The Plan and Build agents"
+    },
+    {
+     "t": 930,
+     "title": "ساخت یه to-do app | Building a to-do app"
+    },
+    {
+     "t": 1008,
+     "title": "اضافه کردن skill | Adding a skill (frontend-design)"
+    },
+    {
+     "t": 1140,
+     "title": "skill ها چطور context و هزینه رو کم می‌کنن | How skills save context and cost"
+    },
+    {
+     "t": 1215,
+     "title": "توکن، context و هزینه | Tokens, context usage and cost"
+    },
+    {
+     "t": 1248,
+     "title": "دستور compact | The compact command"
+    },
+    {
+     "t": 1296,
+     "title": "نتیجه با skill | The result with the skill"
+    },
+    {
+     "t": 1372,
+     "title": "دادن فایل خاص با @ | Pointing to specific files with @"
+    },
+    {
+     "t": 1392,
+     "title": "ساختن skill از چیزهایی که یاد گرفته | Turning what it learned into a skill"
+    },
+    {
+     "t": 1486,
+     "title": "compact در عمل | Compact in action"
+    },
+    {
+     "t": 1520,
+     "title": "ایجنت‌ها به چه درد می‌خورن | What agents are for"
+    },
+    {
+     "t": 1567,
+     "title": "ساخت ایجنت شخصی | Creating a custom agent"
+    },
+    {
+     "t": 1650,
+     "title": "sub-agent ها: explore و general | Sub-agents: explore and general"
+    },
+    {
+     "t": 1684,
+     "title": "command ها و MCP server | Commands and MCP servers"
+    },
+    {
+     "t": 1702,
+     "title": "قدم بعدی: خودتون امتحانش کنید | Next steps: try it yourself"
+    }
+   ]
   },
   {
    "id": "9WwgLyHv1xM",
@@ -2086,7 +2744,118 @@
     "from": "description",
     "v": 2,
     "model": "qwen3.5-9b-q4_k_m"
-   }
+   },
+   "description": "فصل‌ها | Chapters\n0:00 مقدمه: بعد از ۱۶۰ روز | Intro: back after 160 days\n0:57 قطع اینترنت و کنترل AI | Internet shutdowns and control over AI\n2:29 موج AI لوکال | The shift to local AI\n4:53 قرار گفتگو با من در LinkedIn | Book a call with me on LinkedIn\n7:01 آیا به AGI رسیدیم؟ | Have we reached AGI?\n8:18 AI و آینده‌ی شغل‌ها | AI and the future of jobs\n9:59 بعد از AlphaGo انسان‌ها بهتر شدن | After AlphaGo, humans got better\n10:44 سختی ورود تازه‌کارها به بازار کار | Why it's harder for juniors to get in\n11:48 یادگیری برنامه‌نویسی با AI به‌عنوان معلم | Learning to code with AI as a tutor\n13:24 رسیدن مدل‌های اوپن‌سورس چینی | Chinese open-source models catch up\n14:14 رشد نمایی مصرف توکن | Exponential growth in token use\n15:11 افق زمانی کار مستقل مدل‌ها | Task horizon: from seconds to a full day\n17:21 Agentic یعنی چی؟ | What \"agentic\" means\n18:24 دمو: ساخت یک ویکی با Claude Code | Demo: building a wiki with Claude Code\n20:42 پارادوکس میز اینشتین | The Einstein's desk paradox\n22:18 کانتکست و محدودیتش | Context and the context window\n23:46 فشرده‌سازی کانتکست | Context compaction\n24:46 ابزارها و حافظه‌ی بیرونی | Tools and external memory\n25:45 مهارت‌ها (Skills) | Skills\n26:33 مالتی‌ایجنت | Multi-agent\n27:20 دمو: ویکی ایران با چند ایجنت موازی | Demo: an Iran wiki with parallel agents\n29:36 ایجنت‌هایی که از اشتباهشون یاد می‌گیرن | Agents that learn from their mistakes\n30:54 ریسک‌ها: ایمنی و امنیت | Risks: safety and security\n32:42 ابزارهای فشرده‌سازی کانتکست | Context-compression tools\n33:18 از ایده تا پروتوتایپ، نه محصول | From idea to prototype, not product\n34:03 هزینه رو کم کنید: مدل لوکال و DeepSeek | Cut costs: local models and DeepSeek\n34:36 با دوباره‌ساختن یاد بگیرید | Learn by rebuilding existing products\n\n#هوش_مصنوعی #ایجنت_هوش_مصنوعی #AIAgents #AgenticAI #ClaudeCode",
+   "chapters": [
+    {
+     "t": 0,
+     "title": "مقدمه: بعد از ۱۶۰ روز | Intro: back after 160 days"
+    },
+    {
+     "t": 57,
+     "title": "قطع اینترنت و کنترل AI | Internet shutdowns and control over AI"
+    },
+    {
+     "t": 149,
+     "title": "موج AI لوکال | The shift to local AI"
+    },
+    {
+     "t": 293,
+     "title": "قرار گفتگو با من در LinkedIn | Book a call with me on LinkedIn"
+    },
+    {
+     "t": 421,
+     "title": "آیا به AGI رسیدیم؟ | Have we reached AGI?"
+    },
+    {
+     "t": 498,
+     "title": "AI و آینده‌ی شغل‌ها | AI and the future of jobs"
+    },
+    {
+     "t": 599,
+     "title": "بعد از AlphaGo انسان‌ها بهتر شدن | After AlphaGo, humans got better"
+    },
+    {
+     "t": 644,
+     "title": "سختی ورود تازه‌کارها به بازار کار | Why it's harder for juniors to get in"
+    },
+    {
+     "t": 708,
+     "title": "یادگیری برنامه‌نویسی با AI به‌عنوان معلم | Learning to code with AI as a tutor"
+    },
+    {
+     "t": 804,
+     "title": "رسیدن مدل‌های اوپن‌سورس چینی | Chinese open-source models catch up"
+    },
+    {
+     "t": 854,
+     "title": "رشد نمایی مصرف توکن | Exponential growth in token use"
+    },
+    {
+     "t": 911,
+     "title": "افق زمانی کار مستقل مدل‌ها | Task horizon: from seconds to a full day"
+    },
+    {
+     "t": 1041,
+     "title": "Agentic یعنی چی؟ | What \"agentic\" means"
+    },
+    {
+     "t": 1104,
+     "title": "دمو: ساخت یک ویکی با Claude Code | Demo: building a wiki with Claude Code"
+    },
+    {
+     "t": 1242,
+     "title": "پارادوکس میز اینشتین | The Einstein's desk paradox"
+    },
+    {
+     "t": 1338,
+     "title": "کانتکست و محدودیتش | Context and the context window"
+    },
+    {
+     "t": 1426,
+     "title": "فشرده‌سازی کانتکست | Context compaction"
+    },
+    {
+     "t": 1486,
+     "title": "ابزارها و حافظه‌ی بیرونی | Tools and external memory"
+    },
+    {
+     "t": 1545,
+     "title": "مهارت‌ها (Skills) | Skills"
+    },
+    {
+     "t": 1593,
+     "title": "مالتی‌ایجنت | Multi-agent"
+    },
+    {
+     "t": 1640,
+     "title": "دمو: ویکی ایران با چند ایجنت موازی | Demo: an Iran wiki with parallel agents"
+    },
+    {
+     "t": 1776,
+     "title": "ایجنت‌هایی که از اشتباهشون یاد می‌گیرن | Agents that learn from their mistakes"
+    },
+    {
+     "t": 1854,
+     "title": "ریسک‌ها: ایمنی و امنیت | Risks: safety and security"
+    },
+    {
+     "t": 1962,
+     "title": "ابزارهای فشرده‌سازی کانتکست | Context-compression tools"
+    },
+    {
+     "t": 1998,
+     "title": "از ایده تا پروتوتایپ، نه محصول | From idea to prototype, not product"
+    },
+    {
+     "t": 2043,
+     "title": "هزینه رو کم کنید: مدل لوکال و DeepSeek | Cut costs: local models and DeepSeek"
+    },
+    {
+     "t": 2076,
+     "title": "با دوباره‌ساختن یاد بگیرید | Learn by rebuilding existing products"
+    }
+   ]
   },
   {
    "id": "wgnI039H2jg",
@@ -2256,16 +3025,83 @@
     "from": "description",
     "v": 2,
     "model": "qwen3.5-9b-q4_k_m"
-   }
+   },
+   "description": "فصل‌ها | Chapters\n0:00 مقدمه و درخواست آپدیت از کامنت‌ها | Intro: an update viewers asked for\n0:59 از بچه‌ی دبستانی تا استاد دانشگاه | Useful from grade school to professors\n1:33 «برای هشت نفر بفرستید» | \"Send it to eight people\"\n2:15 مثال: یه کتاب سخت فلسفه | The example: a hard philosophy book\n3:12 جای خوندن کتاب رو نمی‌گیره | It won't replace reading the book\n3:37 Audio Overview: پادکست از کتاب | Audio Overview: a podcast from the book\n5:04 ابزارهای جدید و Infographic | New tools and infographics\n5:41 تنظیمات اینفوگرافیک: جهت، زبان و جزئیات | Infographic settings: orientation, language, detail\n6:02 ساده‌ترش کن، برای بچه‌ی پنج‌ساله | Simplify it, explain like I'm five\n6:54 ساخت اسلاید برای هر مخاطبی | Slide decks for any audience\n7:32 کوییز و فلش‌کارت | Quizzes and flashcards\n8:24 Report و بلاگ‌پست | Reports and blog posts\n8:39 پست‌های AI در لینکدین | AI-written posts on LinkedIn\n9:12 Video Overview | Video Overview\n10:25 پیدا کردن منبع درباره‌ی هر موضوعی | Finding sources on any topic\n10:36 جمع‌بندی | Wrap-up\n\n#هوش_مصنوعی #NotebookLM #یادگیری #Google #AIforLearning",
+   "chapters": [
+    {
+     "t": 0,
+     "title": "مقدمه و درخواست آپدیت از کامنت‌ها | Intro: an update viewers asked for"
+    },
+    {
+     "t": 59,
+     "title": "از بچه‌ی دبستانی تا استاد دانشگاه | Useful from grade school to professors"
+    },
+    {
+     "t": 93,
+     "title": "«برای هشت نفر بفرستید» | \"Send it to eight people\""
+    },
+    {
+     "t": 135,
+     "title": "مثال: یه کتاب سخت فلسفه | The example: a hard philosophy book"
+    },
+    {
+     "t": 192,
+     "title": "جای خوندن کتاب رو نمی‌گیره | It won't replace reading the book"
+    },
+    {
+     "t": 217,
+     "title": "Audio Overview: پادکست از کتاب | Audio Overview: a podcast from the book"
+    },
+    {
+     "t": 304,
+     "title": "ابزارهای جدید و Infographic | New tools and infographics"
+    },
+    {
+     "t": 341,
+     "title": "تنظیمات اینفوگرافیک: جهت، زبان و جزئیات | Infographic settings: orientation, language, detail"
+    },
+    {
+     "t": 362,
+     "title": "ساده‌ترش کن، برای بچه‌ی پنج‌ساله | Simplify it, explain like I'm five"
+    },
+    {
+     "t": 414,
+     "title": "ساخت اسلاید برای هر مخاطبی | Slide decks for any audience"
+    },
+    {
+     "t": 452,
+     "title": "کوییز و فلش‌کارت | Quizzes and flashcards"
+    },
+    {
+     "t": 504,
+     "title": "Report و بلاگ‌پست | Reports and blog posts"
+    },
+    {
+     "t": 519,
+     "title": "پست‌های AI در لینکدین | AI-written posts on LinkedIn"
+    },
+    {
+     "t": 552,
+     "title": "Video Overview | Video Overview"
+    },
+    {
+     "t": 625,
+     "title": "پیدا کردن منبع درباره‌ی هر موضوعی | Finding sources on any topic"
+    },
+    {
+     "t": 636,
+     "title": "جمع‌بندی | Wrap-up"
+    }
+   ]
   },
   {
    "id": "rntcn3uF-m8",
-   "title": "32. Gemini, Banana, and Antigravity [Persian]",
+   "title": "32. Gemini 3 Pro, Nano Banana Pro and Antigravity [Persian]",
    "duration": 1599,
    "date": "2025-11-23",
    "description": "https://gemini.google.com/",
    "n": 32,
-   "name": "Gemini, Banana, and Antigravity",
+   "name": "Gemini 3 Pro, Nano Banana Pro and Antigravity",
    "live": false,
    "links": [
     "https://gemini.google.com/"
@@ -2517,7 +3353,86 @@
     "from": "description",
     "v": 2,
     "model": "qwen3.5-9b-q4_k_m"
-   }
+   },
+   "description": "فصل‌ها | Chapters\n0:00 مقدمه | Intro\n0:46 صدام و تست حساسیت | My voice and an allergy test\n1:24 رکورد گینس تشخیص ژنتیکی نوزادان | Guinness record for rapid genetic diagnosis\n3:23 مدال طلای IOI با مدل‌های open-weight | IOI gold medal with open-weight models\n4:59 نگاه اول به Comet و Atlas | First look at Comet and Atlas\n6:12 هزاران راه‌حل از یک مدل | Sampling thousands of solutions\n7:12 ورودی‌های تست و کلاستر کردن راه‌حل‌ها | Test inputs and clustering solutions\n9:08 تورنومنت: مدل داور خودش | Tournament: the model as its own judge\n10:39 چرا تحقیق باز برای NVIDIA مهمه | Why open research matters to NVIDIA\n13:15 DeepSeek-OCR | DeepSeek-OCR\n14:15 کانتکست طولانی و فشرده‌سازی با توکن تصویری | Long context and compression with vision tokens\n16:25 مدل‌هایی که چشم دارن | A paradigm shift: models that see\n17:57 مرورگرهایی با چشم و دست | Browsers with eyes and hands\n18:23 فهمیدن یه ویدیوی فارسی | Understanding a Persian video\n19:46 خلاصه کردن بلاگ در Comet | Summarizing a blog in Comet\n20:16 خرید مواد قرمه‌سبزی از Amazon با Agent | Agent demo: buying ghormeh sabzi ingredients on Amazon\n23:50 این مرورگرها چطور پول درمیارن؟ | How AI browsers make money\n25:04 مثال: جاهای دیدنی کالیفرنیا در Google Maps | Example: California attractions in Google Maps\n26:42 جمع‌بندی | Wrap-up\n\n#هوش_مصنوعی #مرورگر_هوش_مصنوعی #ChatGPTAtlas #PerplexityComet #IOI #DeepSeek",
+   "chapters": [
+    {
+     "t": 0,
+     "title": "مقدمه | Intro"
+    },
+    {
+     "t": 46,
+     "title": "صدام و تست حساسیت | My voice and an allergy test"
+    },
+    {
+     "t": 84,
+     "title": "رکورد گینس تشخیص ژنتیکی نوزادان | Guinness record for rapid genetic diagnosis"
+    },
+    {
+     "t": 203,
+     "title": "مدال طلای IOI با مدل‌های open-weight | IOI gold medal with open-weight models"
+    },
+    {
+     "t": 299,
+     "title": "نگاه اول به Comet و Atlas | First look at Comet and Atlas"
+    },
+    {
+     "t": 372,
+     "title": "هزاران راه‌حل از یک مدل | Sampling thousands of solutions"
+    },
+    {
+     "t": 432,
+     "title": "ورودی‌های تست و کلاستر کردن راه‌حل‌ها | Test inputs and clustering solutions"
+    },
+    {
+     "t": 548,
+     "title": "تورنومنت: مدل داور خودش | Tournament: the model as its own judge"
+    },
+    {
+     "t": 639,
+     "title": "چرا تحقیق باز برای NVIDIA مهمه | Why open research matters to NVIDIA"
+    },
+    {
+     "t": 795,
+     "title": "DeepSeek-OCR | DeepSeek-OCR"
+    },
+    {
+     "t": 855,
+     "title": "کانتکست طولانی و فشرده‌سازی با توکن تصویری | Long context and compression with vision tokens"
+    },
+    {
+     "t": 985,
+     "title": "مدل‌هایی که چشم دارن | A paradigm shift: models that see"
+    },
+    {
+     "t": 1077,
+     "title": "مرورگرهایی با چشم و دست | Browsers with eyes and hands"
+    },
+    {
+     "t": 1103,
+     "title": "فهمیدن یه ویدیوی فارسی | Understanding a Persian video"
+    },
+    {
+     "t": 1186,
+     "title": "خلاصه کردن بلاگ در Comet | Summarizing a blog in Comet"
+    },
+    {
+     "t": 1216,
+     "title": "خرید مواد قرمه‌سبزی از Amazon با Agent | Agent demo: buying ghormeh sabzi ingredients on Amazon"
+    },
+    {
+     "t": 1430,
+     "title": "این مرورگرها چطور پول درمیارن؟ | How AI browsers make money"
+    },
+    {
+     "t": 1504,
+     "title": "مثال: جاهای دیدنی کالیفرنیا در Google Maps | Example: California attractions in Google Maps"
+    },
+    {
+     "t": 1602,
+     "title": "جمع‌بندی | Wrap-up"
+    }
+   ]
   },
   {
    "id": "SrprLmYEeEE",
@@ -3694,16 +4609,151 @@
     "from": "description",
     "v": 2,
     "model": "qwen3.5-9b-q4_k_m"
-   }
+   },
+   "description": "فصل‌ها | Chapters\n0:00 مقدمه و ویدیوهای بعدی (CUDA و Reinforcement Learning) | Intro and upcoming videos (CUDA, reinforcement learning)\n0:58 چرا هنوز درباره‌ی MCP حرف نزدم | Why I haven't covered MCP yet\n1:37 درباره‌ی ارائه در دانشگاه شریف | About the talk at Sharif University\n2:33 انقلاب AI و پیش‌بینی‌های غلط | The AI revolution and predictions that failed\n3:51 شغل‌هایی که اینترنت عوض کرد | Jobs the internet changed\n5:20 چهار دسته تأثیر یادگیری عمیق بر شرکت‌ها | Four ways deep learning is changing companies\n7:47 گزارش McKinsey درباره‌ی استفاده از GenAI | McKinsey report on GenAI adoption\n9:10 منابع انسانی و استخدام | HR and recruiting\n13:05 مارکتینگ و تولید محتوا | Marketing and content creation\n14:01 Customer service | Customer service\n15:47 برنامه‌نویسی با AI: Cursor، Replit و Devin | AI coding: Cursor, Replit and Devin\n16:19 Y Combinator و کدی که AI نوشته | Y Combinator startups with AI-written code\n17:51 ایجنت سطح PhD شرکت OpenAI | OpenAI's PhD-level agent\n19:27 Jensen Huang و ربات‌های انسان‌نما | Jensen Huang and humanoid robots\n21:20 ماراتن پکن و ربات خانگی | Beijing humanoid race and home robots\n21:52 دست رباتیک و دندان‌پزشکی | Robotic hands and dentistry\n23:21 تصمیم‌گیری بهتر: Digital Twin | Better decisions: digital twins\n24:50 NVIDIA Earth-2 و پیش‌بینی آب‌وهوا | NVIDIA Earth-2 and climate prediction\n25:27 شبیه‌سازی رانندگی خودران و داده‌ی مصنوعی | Self-driving simulation and synthetic data\n27:00 سگ رباتیک NVIDIA روی توپ | NVIDIA's robot dog on a ball\n27:56 Predictive maintenance | Predictive maintenance\n29:26 تشخیص آتش‌سوزی جنگل و خرابی خیابان | Wildfire detection and road damage\n30:49 Digital twin شبکه‌های اجتماعی | Digital twins of social networks\n31:46 شخصی‌سازی: پرو مجازی لباس | Hyper-personalization: virtual try-on\n32:27 لوکالیزیشن و ویدیوی اینفلوئنسرها | Localization and influencer videos\n33:22 همسریابی با AI | AI matchmaking\n34:02 پردرآمدترین اپ‌های AI | Top-earning AI apps\n35:04 آموزش و یادگیری زبان | Education and language learning\n36:08 شتاب نوآوری: AI که خودش رو بهتر می‌کنه | Innovation acceleration: self-improving AI\n36:58 Lab in the loop و کشف دارو | Lab in the loop and drug discovery\n38:02 Google AI co-scientist | Google AI co-scientist\n39:15 ایجنت چینی که با کامپیوتر و موبایل کار می‌کنه | A Chinese agent that uses computers and phones\n41:13 جمع‌بندی | Wrap-up\n\n#هوش_مصنوعی #یادگیری_عمیق #DeepLearning #AI #کسب_و_کار #DigitalTwin",
+   "chapters": [
+    {
+     "t": 0,
+     "title": "مقدمه و ویدیوهای بعدی (CUDA و Reinforcement Learning) | Intro and upcoming videos (CUDA, reinforcement learning)"
+    },
+    {
+     "t": 58,
+     "title": "چرا هنوز درباره‌ی MCP حرف نزدم | Why I haven't covered MCP yet"
+    },
+    {
+     "t": 97,
+     "title": "درباره‌ی ارائه در دانشگاه شریف | About the talk at Sharif University"
+    },
+    {
+     "t": 153,
+     "title": "انقلاب AI و پیش‌بینی‌های غلط | The AI revolution and predictions that failed"
+    },
+    {
+     "t": 231,
+     "title": "شغل‌هایی که اینترنت عوض کرد | Jobs the internet changed"
+    },
+    {
+     "t": 320,
+     "title": "چهار دسته تأثیر یادگیری عمیق بر شرکت‌ها | Four ways deep learning is changing companies"
+    },
+    {
+     "t": 467,
+     "title": "گزارش McKinsey درباره‌ی استفاده از GenAI | McKinsey report on GenAI adoption"
+    },
+    {
+     "t": 550,
+     "title": "منابع انسانی و استخدام | HR and recruiting"
+    },
+    {
+     "t": 785,
+     "title": "مارکتینگ و تولید محتوا | Marketing and content creation"
+    },
+    {
+     "t": 841,
+     "title": "Customer service | Customer service"
+    },
+    {
+     "t": 947,
+     "title": "برنامه‌نویسی با AI: Cursor، Replit و Devin | AI coding: Cursor, Replit and Devin"
+    },
+    {
+     "t": 979,
+     "title": "Y Combinator و کدی که AI نوشته | Y Combinator startups with AI-written code"
+    },
+    {
+     "t": 1071,
+     "title": "ایجنت سطح PhD شرکت OpenAI | OpenAI's PhD-level agent"
+    },
+    {
+     "t": 1167,
+     "title": "Jensen Huang و ربات‌های انسان‌نما | Jensen Huang and humanoid robots"
+    },
+    {
+     "t": 1280,
+     "title": "ماراتن پکن و ربات خانگی | Beijing humanoid race and home robots"
+    },
+    {
+     "t": 1312,
+     "title": "دست رباتیک و دندان‌پزشکی | Robotic hands and dentistry"
+    },
+    {
+     "t": 1401,
+     "title": "تصمیم‌گیری بهتر: Digital Twin | Better decisions: digital twins"
+    },
+    {
+     "t": 1490,
+     "title": "NVIDIA Earth-2 و پیش‌بینی آب‌وهوا | NVIDIA Earth-2 and climate prediction"
+    },
+    {
+     "t": 1527,
+     "title": "شبیه‌سازی رانندگی خودران و داده‌ی مصنوعی | Self-driving simulation and synthetic data"
+    },
+    {
+     "t": 1620,
+     "title": "سگ رباتیک NVIDIA روی توپ | NVIDIA's robot dog on a ball"
+    },
+    {
+     "t": 1676,
+     "title": "Predictive maintenance | Predictive maintenance"
+    },
+    {
+     "t": 1766,
+     "title": "تشخیص آتش‌سوزی جنگل و خرابی خیابان | Wildfire detection and road damage"
+    },
+    {
+     "t": 1849,
+     "title": "Digital twin شبکه‌های اجتماعی | Digital twins of social networks"
+    },
+    {
+     "t": 1906,
+     "title": "شخصی‌سازی: پرو مجازی لباس | Hyper-personalization: virtual try-on"
+    },
+    {
+     "t": 1947,
+     "title": "لوکالیزیشن و ویدیوی اینفلوئنسرها | Localization and influencer videos"
+    },
+    {
+     "t": 2002,
+     "title": "همسریابی با AI | AI matchmaking"
+    },
+    {
+     "t": 2042,
+     "title": "پردرآمدترین اپ‌های AI | Top-earning AI apps"
+    },
+    {
+     "t": 2104,
+     "title": "آموزش و یادگیری زبان | Education and language learning"
+    },
+    {
+     "t": 2168,
+     "title": "شتاب نوآوری: AI که خودش رو بهتر می‌کنه | Innovation acceleration: self-improving AI"
+    },
+    {
+     "t": 2218,
+     "title": "Lab in the loop و کشف دارو | Lab in the loop and drug discovery"
+    },
+    {
+     "t": 2282,
+     "title": "Google AI co-scientist | Google AI co-scientist"
+    },
+    {
+     "t": 2355,
+     "title": "ایجنت چینی که با کامپیوتر و موبایل کار می‌کنه | A Chinese agent that uses computers and phones"
+    },
+    {
+     "t": 2473,
+     "title": "جمع‌بندی | Wrap-up"
+    }
+   ]
   },
   {
    "id": "z34QXEiDs0k",
-   "title": "17. Physics of Language Models: Knowledge [Persian]",
+   "title": "17. Physics of Language Models: How LLMs Store Knowledge [Persian]",
    "duration": 3144,
    "date": "2025-02-17",
    "description": "https://physics.allen-zhu.com/part-3-...",
    "n": 17,
-   "name": "Physics of Language Models: Knowledge",
+   "name": "Physics of Language Models: How LLMs Store Knowledge",
    "live": false,
    "links": [
     "https://physics.allen-zhu.com/part-3-"
@@ -4016,12 +5066,12 @@
   },
   {
    "id": "XdAr0zPBpOM",
-   "title": "14. FAQs: Study, Job, and Startup [Persian]",
+   "title": "14. Career FAQs: Your Manager, Resumes, Interviews and Startups [Persian]",
    "duration": 3086,
    "date": "2025-01-25",
    "description": "Pitch Deck\n   • مستر کلاس استارت آپ . چگونه استارت آپ را ب...  \n\nCold Calling\n   • Cold calling - اولین پیام برای نتورکینگ  ",
    "n": 14,
-   "name": "FAQs: Study, Job, and Startup",
+   "name": "Career FAQs: Your Manager, Resumes, Interviews and Startups",
    "live": false,
    "ai": {
     "title": "پاسخ به سوالات رایج درباره تحصیل، شغل و راه‌اندازی استارتاپ با مهرزاد صمدی",
@@ -4637,12 +5687,12 @@
   },
   {
    "id": "zHu78PKkics",
-   "title": "8. A Beginner's Guide to Modern Deep Learning [Persian]",
+   "title": "8. How ChatGPT Works: A Beginner's Guide to Transformers and Deep Learning [Persian]",
    "duration": 3089,
    "date": "2024-11-30",
    "description": "   / @3blue1brown  ",
    "n": 8,
-   "name": "A Beginner's Guide to Modern Deep Learning",
+   "name": "How ChatGPT Works: A Beginner's Guide to Transformers and Deep Learning",
    "live": false,
    "ai": {
     "title": "راهنمای مقدماتی یادگیری عمیق مدرن با ۳بلو۱براون",
@@ -4727,11 +5777,11 @@
   },
   {
    "id": "Nqxn6DsKMZk",
-   "title": "7. School to Acquisition [Persian]",
+   "title": "7. School to Acquisition: Building and Selling a Startup [Persian]",
    "duration": 2289,
    "date": "2024-11-17",
    "n": 7,
-   "name": "School to Acquisition",
+   "name": "School to Acquisition: Building and Selling a Startup",
    "live": false,
    "ai": {
     "title": "مسیر مدرسه تا خرید: چگونه هوش مصنوعی کسب‌وکار شما را می‌خرد؟",
@@ -4809,16 +5859,111 @@
     "from": "description",
     "v": 2,
     "model": "qwen3.5-9b-q4_k_m"
-   }
+   },
+   "description": "فصل‌ها | Chapters\n0:00 مقدمه | Intro\n3:27 شروع تاک و معرفی خودم | The talk starts: about me\n4:47 Parabricks چیه؟ آنالیز ژنوم با GPU | What Parabricks does: GPU genome analysis\n7:54 شروع از دانشگاه با گرنت دولتی | Starting from university with government grants\n9:18 NSF I-Corps و Lean Startup | NSF I-Corps and the Lean Startup\n10:54 صحبت با مشتری‌ها | Customer discovery\n12:02 از ایده‌ی کامپایلر تا ژنومیکس | From a compiler idea to genomics\n13:05 راه‌های مختلف موفقیت | Different paths to success\n14:45 طیف: گرنت NSF تا Y Combinator | The spectrum: NSF grants vs. Y Combinator\n17:55 مسئله و راه‌حل: میخ و چکش | Problem and solution: the hammer and the nail\n19:20 ریسک تکنولوژی یا ریسک بازار | Technology risk vs. market risk\n21:05 رشد و تعداد مشتری | Growth and number of customers\n22:41 مشتری واقعی شما کیه؟ | Who your real customer is\n23:58 اندازه‌ی بازار (Market Size) | Market size\n26:58 بازار کوچک: VC یا Bootstrap | Small market: VC or bootstrapping\n27:45 مزیت رقابتی: چرا تو؟ | Unfair advantage: why you?\n28:18 چرا گوگل خودش این کار رو نکنه؟ | Why won't Google just do it?\n30:13 ده برابر بهتر | 10x better\n31:23 استراتژی خروج: IPO یا فروش | Exit strategy: IPO or acquisition\n32:17 داستان فروش Parabricks به NVIDIA | How Parabricks was sold to NVIDIA\n33:59 موفقیت رو چطور تعریف می‌کنید؟ | How do you define success?\n35:06 کارآفرین یک‌نفره: Pieter Levels | Solo entrepreneurs: Pieter Levels\n37:49 جمع‌بندی | Wrap-up\n\n#استارتاپ #کارآفرینی #Startup #Entrepreneurship #Parabricks #NVIDIA",
+   "chapters": [
+    {
+     "t": 0,
+     "title": "مقدمه | Intro"
+    },
+    {
+     "t": 207,
+     "title": "شروع تاک و معرفی خودم | The talk starts: about me"
+    },
+    {
+     "t": 287,
+     "title": "Parabricks چیه؟ آنالیز ژنوم با GPU | What Parabricks does: GPU genome analysis"
+    },
+    {
+     "t": 474,
+     "title": "شروع از دانشگاه با گرنت دولتی | Starting from university with government grants"
+    },
+    {
+     "t": 558,
+     "title": "NSF I-Corps و Lean Startup | NSF I-Corps and the Lean Startup"
+    },
+    {
+     "t": 654,
+     "title": "صحبت با مشتری‌ها | Customer discovery"
+    },
+    {
+     "t": 722,
+     "title": "از ایده‌ی کامپایلر تا ژنومیکس | From a compiler idea to genomics"
+    },
+    {
+     "t": 785,
+     "title": "راه‌های مختلف موفقیت | Different paths to success"
+    },
+    {
+     "t": 885,
+     "title": "طیف: گرنت NSF تا Y Combinator | The spectrum: NSF grants vs. Y Combinator"
+    },
+    {
+     "t": 1075,
+     "title": "مسئله و راه‌حل: میخ و چکش | Problem and solution: the hammer and the nail"
+    },
+    {
+     "t": 1160,
+     "title": "ریسک تکنولوژی یا ریسک بازار | Technology risk vs. market risk"
+    },
+    {
+     "t": 1265,
+     "title": "رشد و تعداد مشتری | Growth and number of customers"
+    },
+    {
+     "t": 1361,
+     "title": "مشتری واقعی شما کیه؟ | Who your real customer is"
+    },
+    {
+     "t": 1438,
+     "title": "اندازه‌ی بازار (Market Size) | Market size"
+    },
+    {
+     "t": 1618,
+     "title": "بازار کوچک: VC یا Bootstrap | Small market: VC or bootstrapping"
+    },
+    {
+     "t": 1665,
+     "title": "مزیت رقابتی: چرا تو؟ | Unfair advantage: why you?"
+    },
+    {
+     "t": 1698,
+     "title": "چرا گوگل خودش این کار رو نکنه؟ | Why won't Google just do it?"
+    },
+    {
+     "t": 1813,
+     "title": "ده برابر بهتر | 10x better"
+    },
+    {
+     "t": 1883,
+     "title": "استراتژی خروج: IPO یا فروش | Exit strategy: IPO or acquisition"
+    },
+    {
+     "t": 1937,
+     "title": "داستان فروش Parabricks به NVIDIA | How Parabricks was sold to NVIDIA"
+    },
+    {
+     "t": 2039,
+     "title": "موفقیت رو چطور تعریف می‌کنید؟ | How do you define success?"
+    },
+    {
+     "t": 2106,
+     "title": "کارآفرین یک‌نفره: Pieter Levels | Solo entrepreneurs: Pieter Levels"
+    },
+    {
+     "t": 2269,
+     "title": "جمع‌بندی | Wrap-up"
+    }
+   ]
   },
   {
    "id": "NmaTy9enkyk",
-   "title": "6. AnythingLLM + Open WebUI [Persian]",
+   "title": "6. AnythingLLM + Open WebUI: Chat With Your Own Data (RAG) [Persian]",
    "duration": 1492,
    "date": "2024-11-10",
    "description": "0:00 Introduction\n6:43 AnythingLLM\n14:14 Open WebUI",
    "n": 6,
-   "name": "AnythingLLM + Open WebUI",
+   "name": "AnythingLLM + Open WebUI: Chat With Your Own Data (RAG)",
    "live": false,
    "chapters": [
     {
@@ -4990,12 +6135,12 @@
   },
   {
    "id": "pLAA1PlNY8Q",
-   "title": "4. Machines of loving grace, Claude for computer use [Persian]",
+   "title": "4. Machines of Loving Grace: Dario Amodei's AI Future + Claude Computer Use [Persian]",
    "duration": 2030,
    "date": "2024-10-27",
    "description": "0:00 Introduction\n5:50 Machines of loving grace\n12:50 Biology and physical health\n18:35 Neuroscience and mental health\n21:33 Economic development and poverty\n23:49 Peace and governance\n27:36 Work and meaning\n30:20 Claude computer use",
    "n": 4,
-   "name": "Machines of loving grace, Claude for computer use",
+   "name": "Machines of Loving Grace: Dario Amodei's AI Future + Claude Computer Use",
    "live": false,
    "chapters": [
     {
@@ -5122,11 +6267,11 @@
   },
   {
    "id": "abH9KCxZ3hQ",
-   "title": "3. NotebookLM , Illuminate, and Synthesia [Persian]",
+   "title": "3. NotebookLM, Illuminate and Synthesia: AI Podcasts from Your Documents [Persian]",
    "duration": 1105,
    "date": "2024-10-20",
    "n": 3,
-   "name": "NotebookLM , Illuminate, and Synthesia",
+   "name": "NotebookLM, Illuminate and Synthesia: AI Podcasts from Your Documents",
    "live": false,
    "ai": {
     "title": "معرفی ابزارهای هوش مصنوعی NotebookLM، Illuminate و Synthesia در ویدیوی مهرزاد صمدی",
@@ -5208,16 +6353,91 @@
     "from": "description",
     "v": 2,
     "model": "qwen3.5-9b-q4_k_m"
-   }
+   },
+   "description": "فصل‌ها | Chapters\n0:00 مقدمه | Intro\n0:48 فرق محصول و تکنولوژی | Product vs. technology\n2:24 تیم‌های کوچیک و استثنایی گوگل | Google's small exceptional teams\n3:05 NotebookLM چیه و اضافه کردن source | What NotebookLM is and adding sources\n4:21 مثال: یه PDF درباره‌ی شاهنامه | Example: a PDF about the Shahnameh\n4:49 Notebook guide: خلاصه، FAQ و study guide | Notebook guide: summary, FAQ and study guide\n5:16 پادکست دونفره‌ی Audio Overview | The two-host Audio Overview podcast\n6:16 شخصی‌سازی پادکست: رستم و سهراب برای یه نوجوان | Customizing the podcast: Rostam and Sohrab for a teenager\n7:30 FAQ، timeline، briefing doc و study guide | FAQ, timeline, briefing doc and study guide\n9:42 گوش دادن به پادکست شاهنامه | Listening to the Shahnameh podcast\n11:22 کاربردها: رزومه، LinkedIn و مقاله‌ها | Use cases: résumés, LinkedIn and papers\n12:57 Illuminate: پادکست از مقاله‌های arXiv | Illuminate: podcasts from arXiv papers\n13:35 مثال: Attention Is All You Need | Example: Attention Is All You Need\n14:02 تنظیم مخاطب، طول و لحن | Setting audience, length and tone\n14:44 گوش دادن به پادکست Illuminate | Listening to the Illuminate podcast\n15:51 Synthesia: آواتار سخنگو از متن | Synthesia: talking avatars from text\n16:46 پادکست NotebookLM با آواتارهای Synthesia | NotebookLM podcasts with Synthesia avatars\n17:58 جمع‌بندی | Wrap-up\n\n#هوش_مصنوعی #NotebookLM #پادکست #GoogleAI #Synthesia",
+   "chapters": [
+    {
+     "t": 0,
+     "title": "مقدمه | Intro"
+    },
+    {
+     "t": 48,
+     "title": "فرق محصول و تکنولوژی | Product vs. technology"
+    },
+    {
+     "t": 144,
+     "title": "تیم‌های کوچیک و استثنایی گوگل | Google's small exceptional teams"
+    },
+    {
+     "t": 185,
+     "title": "NotebookLM چیه و اضافه کردن source | What NotebookLM is and adding sources"
+    },
+    {
+     "t": 261,
+     "title": "مثال: یه PDF درباره‌ی شاهنامه | Example: a PDF about the Shahnameh"
+    },
+    {
+     "t": 289,
+     "title": "Notebook guide: خلاصه، FAQ و study guide | Notebook guide: summary, FAQ and study guide"
+    },
+    {
+     "t": 316,
+     "title": "پادکست دونفره‌ی Audio Overview | The two-host Audio Overview podcast"
+    },
+    {
+     "t": 376,
+     "title": "شخصی‌سازی پادکست: رستم و سهراب برای یه نوجوان | Customizing the podcast: Rostam and Sohrab for a teenager"
+    },
+    {
+     "t": 450,
+     "title": "FAQ، timeline، briefing doc و study guide | FAQ, timeline, briefing doc and study guide"
+    },
+    {
+     "t": 582,
+     "title": "گوش دادن به پادکست شاهنامه | Listening to the Shahnameh podcast"
+    },
+    {
+     "t": 682,
+     "title": "کاربردها: رزومه، LinkedIn و مقاله‌ها | Use cases: résumés, LinkedIn and papers"
+    },
+    {
+     "t": 777,
+     "title": "Illuminate: پادکست از مقاله‌های arXiv | Illuminate: podcasts from arXiv papers"
+    },
+    {
+     "t": 815,
+     "title": "مثال: Attention Is All You Need | Example: Attention Is All You Need"
+    },
+    {
+     "t": 842,
+     "title": "تنظیم مخاطب، طول و لحن | Setting audience, length and tone"
+    },
+    {
+     "t": 884,
+     "title": "گوش دادن به پادکست Illuminate | Listening to the Illuminate podcast"
+    },
+    {
+     "t": 951,
+     "title": "Synthesia: آواتار سخنگو از متن | Synthesia: talking avatars from text"
+    },
+    {
+     "t": 1006,
+     "title": "پادکست NotebookLM با آواتارهای Synthesia | NotebookLM podcasts with Synthesia avatars"
+    },
+    {
+     "t": 1078,
+     "title": "جمع‌بندی | Wrap-up"
+    }
+   ]
   },
   {
    "id": "aRdO45lTies",
-   "title": "2. V0 by Vercel, Cursor, Replit, OpenAI Canvas [Persian]",
+   "title": "2. AI Coding Tools: V0 by Vercel, Cursor, Replit, OpenAI Canvas [Persian]",
    "duration": 1741,
    "date": "2024-10-13",
    "description": "Transform Your Development Workflow with V0, Replit, Cursor, and OpenAI Canvas\nIn this video, explore how V0 by Vercel, Replit, Cursor, and OpenAI Canvas are redefining modern development through the power of deep learning. These tools empower developers to build, deploy, and iterate faster than ever before.\n\nWhat You'll Learn:\nHow deep learning enhances development tools to streamline workflows\nPractical examples of using V0, Replit, Cursor, and OpenAI Canvas for rapid prototyping\nTips for combining these platforms to maximize creativity and productivity\nReal-world strategies for turning ideas into applications with ease\nWho This Video is For:\nDevelopers and engineers seeking efficient ways to build and deploy applications\nEntrepreneurs looking for powerful tools to bring products to market quickly\nStudents and professionals curious about leveraging AI-powered platforms in development\nAnyone passionate about the intersection of deep learning and software innovation",
    "n": 2,
-   "name": "V0 by Vercel, Cursor, Replit, OpenAI Canvas",
+   "name": "AI Coding Tools: V0 by Vercel, Cursor, Replit, OpenAI Canvas",
    "live": false,
    "ai": {
     "title": "تبدیل فرآیند توسعه با V0، Cursor، Replit و OpenAI Canvas",

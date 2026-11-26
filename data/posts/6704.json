@@ -12,7 +12,7 @@
   "site": "FxTwitter",
   "title": "Leeham (@Liam06972452)",
   "description": "An internal Claude model claims to have found a proof of Valiant’s conjecture that VP ≠ VNP over every field.\nThis is a massive result in theoretical computer science.\nBoth a written and Lean proof is given.\nhttps://github.com/anthropics/formal-math/tree/main/vp…",
-  "image": "https://cdn4.telesco.pe/file/UZop2Oa_Pe1zrypvL1DTNO6StCxCcmBoz6z1keABEB_9hdVyXv4PDYM_CZOrCnwmmHyUQ-iTmj7z5MJ1_SmvBnGN3MCFzgI9HwiFhOgGK-QVYM04G84JZ52_GYrqXrJp25VokfhpYiYnNBstvZyK3BAhk0dNiolsHBvziqvSXJb7RBE3QWscsbyS_oa-Nh-u-6TT0HO-0HmqEKvLYuBvGsMFrC8fDf9gFjhYbKHopmPzj91FLgR8GZ9RcB2EHVyPf4FaFkXUD-BripB7HVaXZ99BIsixtkyBadElHQ-WLk5bbW1wHknJ9UU2_NNC-CtwA0GiD1JYyyWXeJPePvvbnw.jpg"
+  "image": "https://cdn4.telesco.pe/file/IPcCbzCIBoF9l7RqFsspM7TNPK5VE0etY6iVLd5FdroFHejGi6FLD5i99ZcK_Lb7eRJyIoCZaQOHTpgHY0LXvjHXFAEqTLQ4X9cG86wqm_kEhPEB5nCpsLpmZqHntmBC45C129nZoZkBSzCXE1qsfZWvWpVRbg0OdQhID3M3l0e3HV4wLcb16XCjO2nWs4Gb4qZ-oj0fbIY38nYRZlh577w8FtXOu_5ufvSh4P8ajZV-Xhu8XqsdDajcj_bpPGZ0XSzU8biEA55JFVEDJ7HntQYNUEPjDOFfrko3ZKfUpUmgwdsIzVXeY9UJgvhl6WYmuMRSk87E1cvBLcITD5WV8g.jpg"
  },
  "gholam": {
   "text": "رفقا، یه خبرِ علمیِ داغ اومده؛ یه پست تو شبکه‌ی ایکس میگه یه مدل تحقیقاتیِ داخلیِ «کلود» (Claude) از شرکت آنتروپیک ادعا کرده حدس معروفِ «والیانت» یعنی VP ≠ VNP رو برای هر میدانی اثبات کرده. تو مخزن گیت‌هاب آنتروپیک (formal-math) هم به تاریخ ۲۳ نوامبر ۲۰۲۶ فایل‌های این پروژه ثبت شده؛ یه جورایی هم مقاله‌ی متنی رو نوشتن، هم با ترازوی دقیقِ زبان «لین» (Lean) اثباتش رو رسمی‌سازی کردن. 🧮\n\n• طبق چکیده‌ی مقاله که تو تصویرِ پست دیده میشه، نویسنده (کلود / آنتروپیک) میگه هر مدار حسابی برای محاسبه‌ی «پرماننت» یه ماتریس m در m روی اعداد حقیقی یا میدان‌هایی با مشخصه‌ی غیر از ۲، به ازای یه ثابت مثبت c و mهای به اندازه‌ی کافی بزرگ، به بیشتر از m^(c(log m)^(1/3)) گیت نیاز داره و همین کران برای چندجمله‌ایِ دور همیلتونی روی هر میدانی برقراره.\n• تو همین چکیده تاکید شده که گرچه VP ≠ VNP همتای جبریِ حدس معروف P ≠ NP محسوب میشه، ولی این نتیجه مسئله‌ی P ≠ NP رو حل نمیکنه؛ چون مدارهای جبری باید برای همه‌ی ورودی‌های میدان و توسیع‌هاش کار کنن، نه فقط صفر و یکِ مدارهای بولی.",
@@ -162,5 +162,5 @@
    "آنتروپیک"
   ]
  },
- "updated": "2026-11-26T01:39:26+00:00"
+ "updated": "2026-11-26T13:48:11+00:00"
 }

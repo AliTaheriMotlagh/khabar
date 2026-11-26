@@ -12,7 +12,7 @@
   "site": "X (formerly Twitter)",
   "title": "The Bugged Dev (@thebuggeddev) on X",
   "description": "I put Gemini 4 Neon through one of the hardest 3D engineering challenges I've attempted yet.\nTold it to build TITAN 6×6, a futuristic armored monster truck from a single reference image, with act…",
-  "image": "https://cdn4.telesco.pe/file/pzv09bJMh91kFd9NfMNmN-TRsKcGDahqN2nSP19xnVu0y-FmvvJ6u-1vSA_nkKO96AqJvEhsJY2io_-agZpo5AaSqKKFvt5G89ctt2Hp_k4iKtPI2DQl9jvxKCgDsHuWfKHYtfOFg-E7569rW__YFAIWAFmCRA0xnBUwaIeNfOYVlj3UnVltTUEP6ItknRWD8WRB7lEcQYceXkGlXbJRB0VnCdkDVJuWKRdADYriFthwfOs6ZmwQTGiIGZdnb412z5cPDFZzpYUTHeXoQnPUjbAcXNcSK5lfjndsSew1WTAz8vP4-tksbJotrwaStLtsStZkm-7L5SuLXCsXjdpdUw.jpg"
+  "image": "https://cdn4.telesco.pe/file/LRFGG21FS0A7KLrsAFONECQNvO_DXeGhtZDgtvhs5CFElBzMU8zs-v5g8jxBQmRsWJaSnR1PGGtG-8MiGJBljmlvgrZ1IkF5L94TX9_VfBAssxqS4Ut0axpg_0uSHaTzaVLWP5E53IvuOUy6rGvtxr43I_fxk7IF4d-KpukZ9Tq3T1ZY1HC8cgztkb4y2O6unTRrJLa4ivNvaOLbOpMG7N8EKrceS-76Am2MvRanCQx8cHnNH3cKbRBO3uNPaTY1gM5aW-zlWrXzB-oONRIy0YXccezEmJ9hU9MOdxN7pLCs1jz6mPD4ks3bN2SBCvXTD7lUcOqXdw4w25fg_EYuFw.jpg"
  },
  "gholam": {
   "text": "رفقا، یه کاربر توی ایکس به اسم thebuggeddev تعریف کرده که مدل «Gemini 4 Neon» رو انداخته توی یه چالش مهندسی سه‌بعدی و ازش خواسته فقط از روی یه عکس، یه ماشین غول‌پیکر زره‌پوش به اسم «TITAN 6×6» رو با فیزیک رانندگی و سیستم‌های مکانیکی واقعی بسازه. به گفته خودش، تمام کار بدون مدل آماده یا طراحی دستی و صرفاً با کدنویسی (از طریق bpy) و بیش از ۱۰۰ تا swarm انجام شده؛ البته تصاویر پست اینجا قابل مشاهده نیست و هر چی می‌دونیم از توضیحات خود این کاربره. طبق گزارش نویسنده، این خودروی سه‌بعدی ویژگی‌های زیر رو داشته:\n• تولید ۲۳۴ هزار مثلث، ۹۲ مِش و ۵۸ محور مکانیکی مستقل با بررسی خودکار تداخل و خطای قطعات\n• فیزیک ۶ چرخ روی مسیر سنگی، سیستم تعلیق هیدروپنوماتیک با ۱۶ سانتی‌متر تنظیم ارتفاع و وینچ نجات با شبیه‌سازی حدود ۱۱۸ کیلونیوتن نیروی کشش\n• ۶ لایه برش مکانیکی تعاملی، نمای زنده CAD و اشعه ایکس، به همراه گردوخاک لاستیک و صدای تولیدی موتور\n\nنویسنده پست خیلی ذوق‌زده‌ست که شاید به‌زودی بشه خودروهای آینده‌نگر رو این‌طوری طراحی و بعدش وارد دنیای واقعی کرد؛ با این اوصاف فقط مونده مدل بعدی گواهینامه پایه یک هم بگیره و بزنه به دل جاده! 🚙",
@@ -138,5 +138,5 @@
    "علم"
   ]
  },
- "updated": "2026-11-26T01:39:26+00:00"
+ "updated": "2026-11-26T13:48:11+00:00"
 }
