@@ -58,5 +58,24 @@
    "متا"
   ]
  },
- "updated": "2026-11-26T03:04:53+00:00"
+ "updated": "2026-11-26T03:04:53+00:00",
+ "ai": {
+  "title": "توسعه‌دهنده لینوکس را حذف کرد و مدل Qwen3-0.6B را در سیستم‌عامل ۲۴ کیلوبایتی اسمبلی اجرا کرد",
+  "short": "سیستم‌عامل ۲۴ کیلوبایتی",
+  "topics": [
+   "کدنویسی",
+   "تراشه"
+  ],
+  "type": "ابزار و محصول",
+  "model": "qwen3.5-9b-q4_k_m",
+  "v": 2,
+  "src": "ee324dc70b41",
+  "en": {
+   "title": "Developer creates 24 KB x86-64 assembly OS running Qwen faster than Linux",
+   "short": "24 KB assembly OS runs Qwen 54% faster than Linux",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "52ba30121c13"
+  }
+ }
 }
