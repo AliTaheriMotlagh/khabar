@@ -98,6 +98,13 @@
    "model": "qwen3.5-9b-q4_k_m",
    "v": 2,
    "src": "dfd43a45c662"
+  },
+  "en": {
+   "title": "Bill Gates warns AI could drive events causing billion deaths",
+   "short": "Bill Gates warns AI could cause billion deaths",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "c95281155307"
   }
  }
 }

@@ -111,6 +111,13 @@
    "model": "qwen3.5-9b-q4_k_m",
    "v": 2,
    "src": "bf04cd8644d3"
+  },
+  "en": {
+   "title": "Jensen Huang compares AI and climate change to supervillain",
+   "short": "Jensen Huang compares AI to supervillain",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "30b5059d5c7f"
   }
  }
 }

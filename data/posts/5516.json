@@ -98,6 +98,13 @@
    "model": "qwen3.5-9b-q4_k_m",
    "v": 2,
    "src": "8c8c23ae5f93"
+  },
+  "en": {
+   "title": "Sarah Guo Tells Colleagues To Stop Sending AI-Generated Decks",
+   "short": "Sarah Guo rejects AI-generated decks",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "e4471d2f9fad"
   }
  }
 }

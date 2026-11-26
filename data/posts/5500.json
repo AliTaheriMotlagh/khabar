@@ -152,6 +152,13 @@
    "model": "qwen3.5-9b-q4_k_m",
    "v": 2,
    "src": "809713a61bd1"
+  },
+  "en": {
+   "title": "Opus 5.5 performs better than Astra but uses 10x more tokens",
+   "short": "Opus 5.5 beats Astra but uses 10x tokens",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "5a31d49478e3"
   }
  }
 }

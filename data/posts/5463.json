@@ -132,6 +132,13 @@
    "v": 1,
    "src": "44863a9e6493",
    "added": 1
+  },
+  "en": {
+   "title": "Odyssey introduces Agora-2 multi-agent world model supporting 20 humans",
+   "short": "Odyssey launches Agora-2 multi-agent world model",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "c9be18ec58cc"
   }
  }
 }

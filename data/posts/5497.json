@@ -121,6 +121,13 @@
    "v": 1,
    "src": "81ccc7eeb47b",
    "added": 1
+  },
+  "en": {
+   "title": "LinkerBot unveils LinkerArm A7 with seven axes",
+   "short": "LinkerBot unveils LinkerArm A7",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "7db2486bfc2b"
   }
  }
 }

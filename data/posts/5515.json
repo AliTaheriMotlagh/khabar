@@ -122,6 +122,13 @@
    "model": "qwen3.5-9b-q4_k_m",
    "v": 2,
    "src": "35745a693d33"
+  },
+  "en": {
+   "title": "OpenAI to launch new AI model or Muse Agent on Tuesday",
+   "short": "OpenAI launches new AI model Tuesday",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "2ac9edd6621d"
   }
  }
 }

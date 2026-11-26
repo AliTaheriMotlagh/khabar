@@ -130,6 +130,13 @@
    "model": "qwen3.5-9b-q4_k_m",
    "v": 2,
    "src": "5821985b1441"
+  },
+  "en": {
+   "title": "Derek Guy Urges Promoting Math for Rigorous Thinking",
+   "short": "Derek Guy: Math vital for critical thinking",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "c044e89ae57e"
   }
  }
 }

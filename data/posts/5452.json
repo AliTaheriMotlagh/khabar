@@ -117,6 +117,13 @@
    "model": "qwen3.5-9b-q4_k_m",
    "v": 2,
    "src": "b330f6ddff3c"
+  },
+  "en": {
+   "title": "Meta unveils new VR glasses with 5K display and no head straps",
+   "short": "Meta unveils new VR glasses with 5K display",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "b315b1afc0a1"
   }
  }
 }

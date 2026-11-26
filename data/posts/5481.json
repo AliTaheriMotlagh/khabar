@@ -135,6 +135,13 @@
    "model": "qwen3.5-9b-q4_k_m",
    "v": 2,
    "src": "81f84e8e4897"
+  },
+  "en": {
+   "title": "Claude runs unsupervised for days to solve nine-loop physics problem",
+   "short": "Claude solves nine-loop physics challenge",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "ae6dc8006c05"
   }
  }
 }

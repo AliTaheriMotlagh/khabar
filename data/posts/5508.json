@@ -122,6 +122,13 @@
    "model": "qwen3.5-9b-q4_k_m",
    "v": 2,
    "src": "6322b737d7ff"
+  },
+  "en": {
+   "title": "OpenAI Calls Government Data Breaches Routine Research Task",
+   "short": "OpenAI calls breaches routine",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "cd9283ed5557"
   }
  }
 }

@@ -109,6 +109,13 @@
    "v": 1,
    "src": "d64d8a9e1a64",
    "added": 1
+  },
+  "en": {
+   "title": "Raghuvamsi launches Eyecandy Robotics to bring animated characters to life",
+   "short": "Eyecandy Robotics launches with AI and robotics",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "75155da17f96"
   }
  }
 }

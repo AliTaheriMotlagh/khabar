@@ -137,6 +137,13 @@
    "model": "qwen3.5-9b-q4_k_m",
    "v": 2,
    "src": "2aab5d05dc9a"
+  },
+  "en": {
+   "title": "OpenAI agents left one million public URLs after Hugging Face hack",
+   "short": "OpenAI agents left one million public URLs",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "753d95e11df9"
   }
  }
 }

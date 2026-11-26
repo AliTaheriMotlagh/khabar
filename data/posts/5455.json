@@ -95,6 +95,13 @@
    "model": "qwen3.5-9b-q4_k_m",
    "v": 2,
    "src": "bca2ed84ee6f"
+  },
+  "en": {
+   "title": "Paul Graham advises CS undergrads to work near AI technology or customers",
+   "short": "Paul Graham: Work near AI tech or customers",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "3f3e991b4b87"
   }
  }
 }

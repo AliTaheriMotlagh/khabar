@@ -121,6 +121,13 @@
    "v": 1,
    "src": "075736fa9127",
    "added": 2
+  },
+  "en": {
+   "title": "C5R Corp builds AI-run research facility in 12 weeks",
+   "short": "C5R Corp launches AI-run research facility",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "2ad0f0b413e6"
   }
  }
 }

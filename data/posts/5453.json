@@ -136,6 +136,13 @@
    "v": 1,
    "src": "af22c20c05d9",
    "added": 1
+  },
+  "en": {
+   "title": "NVIDIA AI launches Nemotron 3 Diarization model for overlapping speech",
+   "short": "NVIDIA AI launches Nemotron 3 Diarization model",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "d198c887bfc5"
   }
  }
 }

@@ -152,6 +152,13 @@
    "v": 1,
    "src": "63730d575f3c",
    "added": 2
+  },
+  "en": {
+   "title": "NVIDIA launches Open Agent Safety Platform with 100 partners",
+   "short": "NVIDIA launches Open Agent Safety Platform",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "78c23a3f5dc0"
   }
  }
 }

@@ -127,6 +127,13 @@
    "model": "qwen3.5-9b-q4_k_m",
    "v": 2,
    "src": "1811dfc45bd1"
+  },
+  "en": {
+   "title": "Stephan Livera posts Opus 5.5 motion graphics video",
+   "short": "Stephan Livera shares Opus 5.5 video",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "a5d555292e78"
   }
  }
 }

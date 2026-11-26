@@ -133,6 +133,13 @@
    "v": 1,
    "src": "819e55a6f74c",
    "added": 1
+  },
+  "en": {
+   "title": "Google to launch TPUs in space on SpaceX Falcon 9 next week",
+   "short": "Google launches TPUs in space on SpaceX Falcon 9",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "545a20b61aac"
   }
  }
 }

@@ -127,6 +127,13 @@
    "v": 1,
    "src": "b96b7a6ed903",
    "added": 2
+  },
+  "en": {
+   "title": "Fish Audio introduces Drama 3 preview as most controllable TTS model",
+   "short": "Fish Audio introduces Drama 3 preview",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "3df7d157adca"
   }
  }
 }

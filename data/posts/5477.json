@@ -134,6 +134,13 @@
    "model": "qwen3.5-9b-q4_k_m",
    "v": 2,
    "src": "fffeb5673f4f"
+  },
+  "en": {
+   "title": "Feather Robotics launches affordable general-purpose robot platform",
+   "short": "Feather Robotics debuts affordable robot platform",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "f271d1d4696f"
   }
  }
 }

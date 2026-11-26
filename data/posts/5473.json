@@ -124,6 +124,13 @@
    "model": "qwen3.5-9b-q4_k_m",
    "v": 2,
    "src": "ac3f6c0ee194"
+  },
+  "en": {
+   "title": "Xiaomi 18 Pro Max one-ups competition with new features",
+   "short": "Xiaomi 18 Pro Max one-ups competition",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "5f78a8bf338c"
   }
  }
 }

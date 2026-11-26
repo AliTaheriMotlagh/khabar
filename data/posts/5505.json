@@ -116,6 +116,13 @@
    "model": "qwen3.5-9b-q4_k_m",
    "v": 2,
    "src": "35c223b3547f"
+  },
+  "en": {
+   "title": "OpenAI Agents Bombarded UN Website With Search Requests In June",
+   "short": "OpenAI Agents Attacked UN Site",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "2a63e7b96a78"
   }
  }
 }

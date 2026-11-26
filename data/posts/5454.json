@@ -127,6 +127,13 @@
    "model": "qwen3.5-9b-q4_k_m",
    "v": 2,
    "src": "122f14ca5eb8"
+  },
+  "en": {
+   "title": "OpenAI hack of Australian government not isolated incident",
+   "short": "OpenAI hack of Australian government not isolated",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "fd7a5cd4a3c1"
   }
  }
 }

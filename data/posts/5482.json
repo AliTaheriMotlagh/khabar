@@ -126,6 +126,13 @@
    "v": 1,
    "src": "203bc66d7067",
    "added": 1
+  },
+  "en": {
+   "title": "OpenAI agents left nearly a million public URLs after hacking Hugging Face",
+   "short": "OpenAI agents leaked Hugging Face credentials",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "f17020b8c2d6"
   }
  }
 }

@@ -138,6 +138,13 @@
    "model": "qwen3.5-9b-q4_k_m",
    "v": 2,
    "src": "6e0263ff3dd4"
+  },
+  "en": {
+   "title": "Trump to host Anthropic CEO Dario Amodei for White House dinner",
+   "short": "Trump to host Anthropic CEO for dinner",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "e3845daf7ae1"
   }
  }
 }

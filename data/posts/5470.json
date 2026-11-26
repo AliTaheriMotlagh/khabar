@@ -126,6 +126,13 @@
    "v": 1,
    "src": "81a5304544ed",
    "added": 2
+  },
+  "en": {
+   "title": "Tesla launches high volume production of Semi",
+   "short": "Tesla launches high volume Semi production",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "eb02d7d57905"
   }
  }
 }

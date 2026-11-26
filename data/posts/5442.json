@@ -121,6 +121,13 @@
    "v": 1,
    "src": "4476d4318027",
    "added": 1
+  },
+  "en": {
+   "title": "Anthropic makes Claude.ai 3x faster in two weeks",
+   "short": "Claude.ai speed improved 3x in two weeks",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "66f470e9a8b3"
   }
  }
 }

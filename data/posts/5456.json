@@ -126,6 +126,13 @@
    "v": 1,
    "src": "477643d9577b",
    "added": 2
+  },
+  "en": {
+   "title": "Micro1 revenue jumps to over $500 million ARR with xAI investment",
+   "short": "Micro1 revenue hits $500M ARR",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "c8fa999d6326"
   }
  }
 }

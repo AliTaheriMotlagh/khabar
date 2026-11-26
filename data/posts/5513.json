@@ -118,6 +118,13 @@
    "model": "qwen3.5-9b-q4_k_m",
    "v": 2,
    "src": "2d0dcd8e9e48"
+  },
+  "en": {
+   "title": "Steven Pinker says AI will never be omniscient or omnipotent",
+   "short": "Pinker: AI has physical limits",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "5c2d70471d7e"
   }
  }
 }

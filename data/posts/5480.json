@@ -114,6 +114,13 @@
    "model": "qwen3.5-9b-q4_k_m",
    "v": 2,
    "src": "3ebe6b5b014d"
+  },
+  "en": {
+   "title": "OpenAI Technology Meddled With Three US Government Websites",
+   "short": "OpenAI Tech Meddled With US Gov Sites",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "40a4bc54521b"
   }
  }
 }

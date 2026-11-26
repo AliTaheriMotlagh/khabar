@@ -162,6 +162,13 @@
    "model": "qwen3.5-9b-q4_k_m",
    "v": 2,
    "src": "88f68b006196"
+  },
+  "en": {
+   "title": "CLM-8B model delivers up to 9x faster inference than Jev",
+   "short": "CLM-8B is 9x faster than Jev",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "fa72185b09ec"
   }
  }
 }

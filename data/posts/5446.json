@@ -130,6 +130,13 @@
    "model": "qwen3.5-9b-q4_k_m",
    "v": 2,
    "src": "481a7fc01176"
+  },
+  "en": {
+   "title": "Anthropic Announces Discovery of New Genes Near Repeating DNA",
+   "short": "Anthropic finds new genes near repeating DNA",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "82ccdffd728f"
   }
  }
 }

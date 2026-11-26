@@ -117,6 +117,13 @@
    "model": "qwen3.5-9b-q4_k_m",
    "v": 2,
    "src": "408d5ce6f8c2"
+  },
+  "en": {
+   "title": "Geoffrey Hinton calls for strict government AI regulation",
+   "short": "Geoffrey Hinton urges strong AI regulation",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "0c31cfd072d8"
   }
  }
 }

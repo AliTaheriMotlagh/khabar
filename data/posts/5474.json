@@ -136,6 +136,13 @@
    "v": 1,
    "src": "038f6adce596",
    "added": 1
+  },
+  "en": {
+   "title": "Ando raises $20M to build AI-native Slack for agent collaboration",
+   "short": "Ando raises $20M for AI-native Slack",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "797eaeae6065"
   }
  }
 }

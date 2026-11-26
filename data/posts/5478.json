@@ -133,6 +133,13 @@
    "model": "qwen3.5-9b-q4_k_m",
    "v": 2,
    "src": "71883d456733"
+  },
+  "en": {
+   "title": "AI solves Navier-Stokes problem but humans learn little so far",
+   "short": "AI solves Navier-Stokes; humans learn little",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "12633e017fd7"
   }
  }
 }

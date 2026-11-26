@@ -98,6 +98,13 @@
    "model": "qwen3.5-9b-q4_k_m",
    "v": 2,
    "src": "c7b2818f2636"
+  },
+  "en": {
+   "title": "Peter Thiel: Most Business Leaders And Politicians Are Totally Incompetent",
+   "short": "Peter Thiel calls most leaders incompetent",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "b0b1697fd7cc"
   }
  }
 }

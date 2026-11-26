@@ -100,6 +100,13 @@
    "model": "qwen3.5-9b-q4_k_m",
    "v": 2,
    "src": "154ead2954dc"
+  },
+  "en": {
+   "title": "Jensen Huang Says Basic Math Skills Are Being Forgotten",
+   "short": "Jensen Huang: Kids forgetting math basics",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "a969063fa46a"
   }
  }
 }

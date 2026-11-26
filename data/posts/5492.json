@@ -132,6 +132,13 @@
    "model": "qwen3.5-9b-q4_k_m",
    "v": 2,
    "src": "7c36554666ab"
+  },
+  "en": {
+   "title": "Ukraine launches Army of Robots to replace drones in warfare",
+   "short": "Ukraine launches Army of Robots",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "e9294e090faa"
   }
  }
 }

@@ -103,6 +103,13 @@
    "model": "qwen3.5-9b-q4_k_m",
    "v": 2,
    "src": "98f7f825dcd8"
+  },
+  "en": {
+   "title": "Higgsfield AI annualized revenue crosses $1 billion milestone",
+   "short": "Higgsfield AI revenue hits $1 billion",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "c4607ad974e3"
   }
  }
 }

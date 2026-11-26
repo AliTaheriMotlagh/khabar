@@ -118,6 +118,13 @@
    "model": "qwen3.5-9b-q4_k_m",
    "v": 2,
    "src": "ff461b575944"
+  },
+  "en": {
+   "title": "DeepSeek V4 Flash JEVs expected to rival Astra in real-time robotics",
+   "short": "DeepSeek V4 Flash JEVs to rival Astra in robotics",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "0ec53f724eae"
   }
  }
 }

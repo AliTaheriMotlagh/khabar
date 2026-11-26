@@ -123,6 +123,13 @@
    "model": "qwen3.5-9b-q4_k_m",
    "v": 2,
    "src": "13cf66ec890a"
+  },
+  "en": {
+   "title": "Meta unveils Muse Realtime Avatar technology",
+   "short": "Meta unveils Muse Realtime Avatar",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "59461f768fff"
   }
  }
 }

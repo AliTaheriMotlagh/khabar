@@ -142,6 +142,13 @@
    "model": "qwen3.5-9b-q4_k_m",
    "v": 2,
    "src": "60232b6de64c"
+  },
+  "en": {
+   "title": "Claude-led discovery reveals new gene editing mechanism",
+   "short": "Claude discovers new gene editing mechanism",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "6f0464f43185"
   }
  }
 }

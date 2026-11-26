@@ -103,6 +103,13 @@
    "model": "qwen3.5-9b-q4_k_m",
    "v": 2,
    "src": "58ada3275a5b"
+  },
+  "en": {
+   "title": "Scott urges everyone to keep happy memories and focus on reality",
+   "short": "Scott: Keep memories, eyes on reality",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "335517f0c2ff"
   }
  }
 }

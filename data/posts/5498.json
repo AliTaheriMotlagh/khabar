@@ -134,6 +134,13 @@
    "model": "qwen3.5-9b-q4_k_m",
    "v": 2,
    "src": "2398954f19a5"
+  },
+  "en": {
+   "title": "Robot copies human motion to crack whips and lasso cleats",
+   "short": "Robot copies human motion for dynamic tasks",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "843c5c665907"
   }
  }
 }

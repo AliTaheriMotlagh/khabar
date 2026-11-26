@@ -122,6 +122,13 @@
    "v": 1,
    "src": "84a74ca7d1dc",
    "added": 1
+  },
+  "en": {
+   "title": "Researchers introduce ACTx486 interactive video demo",
+   "short": "New system turns podcast into interactive medium",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "f4deafe6590d"
   }
  }
 }

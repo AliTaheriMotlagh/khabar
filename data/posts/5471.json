@@ -135,6 +135,13 @@
    "model": "qwen3.5-9b-q4_k_m",
    "v": 2,
    "src": "7fd4a31029d1"
+  },
+  "en": {
+   "title": "Maria posts Opus 5.5 launch video soundtrack oneshot",
+   "short": "Maria shares Opus 5.5 launch video soundtrack",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "f0cea07d324d"
   }
  }
 }

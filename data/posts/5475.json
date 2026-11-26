@@ -116,6 +116,13 @@
    "model": "qwen3.5-9b-q4_k_m",
    "v": 2,
    "src": "59ac13218191"
+  },
+  "en": {
+   "title": "Robot trained to play football after 140 years of self-play",
+   "short": "Robot plays football after 140 years of self-play",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "cfe0b176cf75"
   }
  }
 }

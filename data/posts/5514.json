@@ -121,6 +121,13 @@
    "v": 1,
    "src": "ef4d82cae8f4",
    "added": 1
+  },
+  "en": {
+   "title": "Jonathan Stephens praises Sharpa Robotics impressive demo",
+   "short": "Jonathan Stephens praises Sharpa Robotics demo",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "8e12c917c1cd"
   }
  }
 }
