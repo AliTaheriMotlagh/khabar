@@ -117,6 +117,13 @@
    "v": 1,
    "src": "2b7c84fd9f33",
    "added": 2
+  },
+  "en": {
+   "title": "MeshyAI unveils new Edit feature for 3D creation",
+   "short": "MeshyAI launches new 3D editing feature",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "712b4ea48e79"
   }
  }
 }

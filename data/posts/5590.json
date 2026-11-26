@@ -115,6 +115,13 @@
    "v": 1,
    "src": "88758454b80a",
    "added": 1
+  },
+  "en": {
+   "title": "Innate team of seven builds capable robots for everyday life",
+   "short": "Innate team of seven builds capable robots",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "20fb7d997684"
   }
  }
 }

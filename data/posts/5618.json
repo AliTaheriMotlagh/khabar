@@ -96,6 +96,13 @@
    "model": "qwen3.5-9b-q4_k_m",
    "v": 2,
    "src": "b154c7f7e12d"
+  },
+  "en": {
+   "title": "Quo Vadis Mathematics",
+   "short": "Quo Vadis Mathematics",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "4b0bd1a439a7"
   }
  }
 }

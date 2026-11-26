@@ -135,6 +135,13 @@
    "model": "qwen3.5-9b-q4_k_m",
    "v": 2,
    "src": "47ee659ac8d3"
+  },
+  "en": {
+   "title": "SpaceX completes three Falcon launches and docks Dragon to space station",
+   "short": "SpaceX launches three Falcons and docks Dragon",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "2130a7af1c08"
   }
  }
 }

@@ -144,6 +144,13 @@
    "v": 1,
    "src": "5054f200d20c",
    "added": 1
+  },
+  "en": {
+   "title": "Gemini 4 Argon Ranks First on Blueprint-Bench 2",
+   "short": "Gemini 4 Argon tops Blueprint-Bench 2",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "4856cb7ef8bc"
   }
  }
 }

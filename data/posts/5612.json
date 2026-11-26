@@ -123,6 +123,13 @@
    "model": "qwen3.5-9b-q4_k_m",
    "v": 2,
    "src": "0d76deb3bc49"
+  },
+  "en": {
+   "title": "Google Gemini Flash and Pro Models Move to Paid Plans",
+   "short": "Gemini Flash and Pro now require payment",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "888fd4b0f821"
   }
  }
 }

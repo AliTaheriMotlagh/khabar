@@ -116,6 +116,13 @@
    "model": "qwen3.5-9b-q4_k_m",
    "v": 2,
    "src": "0e6ffb758fb9"
+  },
+  "en": {
+   "title": "Researchers build generalist RL policy for motion control across 200 robot models",
+   "short": "New RL policy trained on 200 robot models",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "c5e963552fef"
   }
  }
 }

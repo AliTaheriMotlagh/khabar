@@ -129,6 +129,13 @@
    "v": 1,
    "src": "0372163ff12a",
    "added": 1
+  },
+  "en": {
+   "title": "Perplexity Introduces Decisions API Powered by Multimodal Model",
+   "short": "Perplexity launches Decisions API with new model",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "50429cb33acd"
   }
  }
 }

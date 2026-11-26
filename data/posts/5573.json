@@ -113,6 +113,13 @@
    "model": "qwen3.5-9b-q4_k_m",
    "v": 2,
    "src": "21f3744231ff"
+  },
+  "en": {
+   "title": "Gemini 4 Argon introduces 1 million token output limit",
+   "short": "Gemini 4 Argon can output up to 1 million tokens",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "233b0d52c58c"
   }
  }
 }

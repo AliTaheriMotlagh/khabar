@@ -127,6 +127,13 @@
    "model": "qwen3.5-9b-q4_k_m",
    "v": 2,
    "src": "6f5f7f2104f9"
+  },
+  "en": {
+   "title": "Boston Dynamics unveils new Atlas robot hands with 13 degrees of freedom",
+   "short": "Boston Dynamics unveils new Atlas robot hands",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "17d0526bda2a"
   }
  }
 }

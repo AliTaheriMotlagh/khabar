@@ -105,6 +105,13 @@
    "model": "qwen3.5-9b-q4_k_m",
    "v": 2,
    "src": "e8a7d94cb1c3"
+  },
+  "en": {
+   "title": "Sam Altman warns against ascribing religious force to AI models",
+   "short": "Sam Altman warns against religious force in AI",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "5f8c9ba9c33f"
   }
  }
 }

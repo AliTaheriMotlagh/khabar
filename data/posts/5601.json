@@ -127,6 +127,13 @@
    "model": "qwen3.5-9b-q4_k_m",
    "v": 2,
    "src": "bd2187722a8f"
+  },
+  "en": {
+   "title": "AI Chips Could Support Billions of Agents Rivaling Global Workforce",
+   "short": "AI agents could rival global workforce hours",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "ba3b6b4c73bb"
   }
  }
 }

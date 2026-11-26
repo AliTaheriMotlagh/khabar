@@ -146,6 +146,13 @@
    "model": "qwen3.5-9b-q4_k_m",
    "v": 2,
    "src": "34c3fb59f3e9"
+  },
+  "en": {
+   "title": "Gemini 4 Argon Matches GPT-6 Astra on Intelligence Index",
+   "short": "Gemini 4 Argon ties GPT-6 Astra on AI index",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "442008ad2a4a"
   }
  }
 }

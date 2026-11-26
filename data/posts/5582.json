@@ -120,6 +120,13 @@
    "model": "qwen3.5-9b-q4_k_m",
    "v": 2,
    "src": "c5e4986b2c5f"
+  },
+  "en": {
+   "title": "OpenAI fires 3 safety researchers over confidential info leak",
+   "short": "OpenAI fires 3 researchers over info leak",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "a5b9ee7144ce"
   }
  }
 }

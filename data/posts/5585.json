@@ -132,6 +132,13 @@
    "v": 1,
    "src": "6fc705180c6d",
    "added": 1
+  },
+  "en": {
+   "title": "GLiDE leads Jev in Decision Index 0.2.1 scoring",
+   "short": "GLiDE scores 64.81, leading Jev by 6.90 points",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "aa13740e48af"
   }
  }
 }

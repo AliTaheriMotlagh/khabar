@@ -125,6 +125,13 @@
    "model": "qwen3.5-9b-q4_k_m",
    "v": 2,
    "src": "31abc36626b4"
+  },
+  "en": {
+   "title": "Neuralink trial participants use implants for over 50,000 hours",
+   "short": "Neuralink implants used for 50,000 hours in trial",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "cd813b539f9b"
   }
  }
 }

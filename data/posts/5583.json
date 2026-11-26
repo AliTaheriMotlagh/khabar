@@ -139,6 +139,13 @@
    "v": 1,
    "src": "922b9a83b558",
    "added": 1
+  },
+  "en": {
+   "title": "Harvard physicist Matthew Schwartz creates AI toolkit for exact calculations",
+   "short": "Harvard physicist creates AI toolkit for science",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "cc23f910cd23"
   }
  }
 }

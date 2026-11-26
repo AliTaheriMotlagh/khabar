@@ -88,6 +88,13 @@
    "model": "qwen3.5-9b-q4_k_m",
    "v": 2,
    "src": "7dd6758947f1"
+  },
+  "en": {
+   "title": "Guide on How to Read a Scientific Paper Published in Persian",
+   "short": "Guide on How to Read a Scientific Paper",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "2ae3bf0a7f3a"
   }
  }
 }

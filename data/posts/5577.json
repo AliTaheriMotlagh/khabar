@@ -112,6 +112,13 @@
    "model": "qwen3.5-9b-q4_k_m",
    "v": 2,
    "src": "d55c7849af11"
+  },
+  "en": {
+   "title": "Sam Altman says 6.1 Sol was fastest-growing model ever",
+   "short": "Sam Altman: 6.1 Sol fastest-growing model ever",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "c1f628eff9b5"
   }
  }
 }

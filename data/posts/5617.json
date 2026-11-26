@@ -130,6 +130,13 @@
    "model": "qwen3.5-9b-q4_k_m",
    "v": 2,
    "src": "2a85907f34a9"
+  },
+  "en": {
+   "title": "OpenAI safety lead David Robinson quits and warns of catastrophic AI risks",
+   "short": "OpenAI safety lead quits, warns of AI risks",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "ffffbefb449a"
   }
  }
 }

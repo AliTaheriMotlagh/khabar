@@ -133,6 +133,13 @@
    "model": "qwen3.5-9b-q4_k_m",
    "v": 2,
    "src": "879467fd7fcc"
+  },
+  "en": {
+   "title": "Mathematicians and Muse Spark solve six open math problems",
+   "short": "AI and mathematicians solve six open math problems",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "0b3ad86b55e7"
   }
  }
 }

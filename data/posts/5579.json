@@ -153,6 +153,13 @@
    "v": 1,
    "src": "d8a643f878c5",
    "added": 3
+  },
+  "en": {
+   "title": "ToposBio announces Topos-2 and previews Topos-Bind model",
+   "short": "ToposBio announces Topos-2 and previews Topos-Bind",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "771692563b64"
   }
  }
 }

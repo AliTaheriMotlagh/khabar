@@ -109,6 +109,13 @@
    "model": "qwen3.5-9b-q4_k_m",
    "v": 2,
    "src": "46f244efcf70"
+  },
+  "en": {
+   "title": "Language arrived late in evolution, says Ewan Morrison",
+   "short": "Language evolved recently, claims Ewan Morrison",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "b177aea2f99e"
   }
  }
 }
