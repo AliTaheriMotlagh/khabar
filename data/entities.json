@@ -14747,6 +14747,18 @@
    "name_en": "Andrei Karpaty",
    "name_fa": "آندری کارپاتی",
    "kind": "person"
+  },
+  {
+   "slug": "llamacpp",
+   "name_en": "llama.cpp",
+   "name_fa": "لاما سی‌پی‌پی",
+   "kind": "product"
+  },
+  {
+   "slug": "superalesha",
+   "name_en": "superalesha",
+   "name_fa": "سوپر‌آلیشا",
+   "kind": "person"
   }
  ]
 }
