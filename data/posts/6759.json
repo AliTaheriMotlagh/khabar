@@ -55,5 +55,23 @@
    "رباتیک"
   ]
  },
- "updated": "2026-11-26T16:40:24+00:00"
+ "updated": "2026-11-26T16:40:24+00:00",
+ "ai": {
+  "title": "April Robotics با دستکش April Gloves به ربات‌ها مهارت یاد می‌دهد",
+  "short": "دستکش April Gloves",
+  "topics": [
+   "رباتیک"
+  ],
+  "type": "ابزار و محصول",
+  "model": "qwen3.5-9b-q4_k_m",
+  "v": 2,
+  "src": "96bdfe139d9c",
+  "en": {
+   "title": "April Robotics launches April Gloves and April Transfer",
+   "short": "April Robotics unveils new robot teaching tools",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "e627f4548d97"
+  }
+ }
 }

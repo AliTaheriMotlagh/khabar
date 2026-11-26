@@ -62,5 +62,23 @@
    "آنتروپیک"
   ]
  },
- "updated": "2026-11-26T16:40:24+00:00"
+ "updated": "2026-11-26T16:40:24+00:00",
+ "ai": {
+  "title": "محدودیت‌های آمریکا و قطیر مدل‌ها، توسعه هوش مصنوعی چین را کند کرد",
+  "short": "توقف تقطیر و تراشه",
+  "topics": [
+   "چین"
+  ],
+  "type": "خبر",
+  "model": "qwen3.5-9b-q4_k_m",
+  "v": 2,
+  "src": "8c192053c0f2",
+  "en": {
+   "title": "Reuters: Cutting Distillation Slows Chinese AI Models Like GLM",
+   "short": "Reuters: Distillation cuts slow Chinese AI models",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "dc7ed28b31d0"
+  }
+ }
 }
