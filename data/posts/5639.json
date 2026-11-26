@@ -131,6 +131,13 @@
    "v": 1,
    "src": "51bedb6927be",
    "added": 2
+  },
+  "en": {
+   "title": "Reka releases research preview of 19B omni model Rho-1",
+   "short": "Reka releases Rho-1 omni model preview",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "1c9bf1e1f8a4"
   }
  }
 }

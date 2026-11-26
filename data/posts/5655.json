@@ -120,6 +120,13 @@
    "v": 1,
    "src": "a823d0354008",
    "added": 1
+  },
+  "en": {
+   "title": "Kairos 1 introduced as world's first model to simulate individual human behavior",
+   "short": "Kairos 1 beats rivals on 13 simulation benchmarks",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "243e46985ff3"
   }
  }
 }

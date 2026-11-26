@@ -152,6 +152,13 @@
    "model": "qwen3.5-9b-q4_k_m",
    "v": 2,
    "src": "19275101e45a"
+  },
+  "en": {
+   "title": "a16z releases seventh edition of Top 100 Consumer AI Apps with revenue leaderboard",
+   "short": "a16z Top 100 Consumer AI Apps edition 7",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "b89da070d5ee"
   }
  }
 }

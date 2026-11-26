@@ -115,6 +115,13 @@
    "model": "qwen3.5-9b-q4_k_m",
    "v": 2,
    "src": "ba4e647aff4d"
+  },
+  "en": {
+   "title": "OpenAI coding-agent spending doubles monthly since January 2026",
+   "short": "OpenAI coding-agent spending doubles monthly",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "6caa5b4c3d01"
   }
  }
 }

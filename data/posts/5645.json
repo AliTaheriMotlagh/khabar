@@ -128,6 +128,13 @@
    "v": 1,
    "src": "d64aa326b0ca",
    "added": 1
+  },
+  "en": {
+   "title": "Engineer cat introduces Kardashev-0.7, world's first trained swarm of 32 distinct models",
+   "short": "Kardashev-0.7 is a trained swarm of 32 models",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "a1ed0c49a8cb"
   }
  }
 }

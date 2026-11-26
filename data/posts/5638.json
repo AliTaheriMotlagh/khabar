@@ -157,6 +157,13 @@
    "model": "qwen3.5-9b-q4_k_m",
    "v": 2,
    "src": "0e53c79efa57"
+  },
+  "en": {
+   "title": "Figure plans to release proactive AI assistant Hark this week",
+   "short": "Figure to release AI assistant Hark this week",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "d5700c253f93"
   }
  }
 }

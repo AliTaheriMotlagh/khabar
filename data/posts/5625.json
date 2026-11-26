@@ -147,6 +147,13 @@
    "v": 1,
    "src": "cb5df697b340",
    "added": 1
+  },
+  "en": {
+   "title": "Aleph Alpha Kolibri 78B AI Model Scores High on German Benchmarks",
+   "short": "Aleph Alpha Kolibri 78B AI Model Scores High",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "1207aa6a60d2"
   }
  }
 }

@@ -104,6 +104,13 @@
    "model": "qwen3.5-9b-q4_k_m",
    "v": 2,
    "src": "33e45b16bd64"
+  },
+  "en": {
+   "title": "AI Impact Mounts As NYC Entry-Level Job Postings Drop",
+   "short": "NYC entry-level job postings down due to AI",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "e4d75625ec4f"
   }
  }
 }

@@ -118,6 +118,13 @@
    "model": "qwen3.5-9b-q4_k_m",
    "v": 2,
    "src": "5469ea7ef36b"
+  },
+  "en": {
+   "title": "Codex and Work users will receive daily improvements or full resets over next 28 days",
+   "short": "Codex and Work get daily improvements or resets",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "c421ee928e72"
   }
  }
 }

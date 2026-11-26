@@ -126,6 +126,13 @@
    "v": 1,
    "src": "e700f3551b56",
    "added": 2
+  },
+  "en": {
+   "title": "Flow-1 model finds agent errors with 23x cost savings",
+   "short": "Flow-1 finds agent errors 23x cheaper than GPT-6",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "529d3e09ec2e"
   }
  }
 }

@@ -150,6 +150,13 @@
    "v": 1,
    "src": "5b7f589911a5",
    "added": 1
+  },
+  "en": {
+   "title": "Cloudflare Clef beats Jev in two weeks with frozen Qwen",
+   "short": "Clef beats Jev in two weeks with frozen Qwen",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "02147e9a49dc"
   }
  }
 }

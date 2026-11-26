@@ -146,6 +146,13 @@
    "v": 1,
    "src": "2e44e0cba360",
    "added": 1
+  },
+  "en": {
+   "title": "Ali Partovi Starts Confession Podcast With Tech Veterans",
+   "short": "Ali Partovi launches Confession podcast",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "2ce44f1d1143"
   }
  }
 }

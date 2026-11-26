@@ -134,6 +134,13 @@
    "v": 1,
    "src": "b5c7d8b545ea",
    "added": 1
+  },
+  "en": {
+   "title": "Cua Driver introduces six new hand-crafted cursor motions",
+   "short": "Cua Driver adds six new cursor motions",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "5a4b979ebe3e"
   }
  }
 }

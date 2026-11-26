@@ -125,6 +125,13 @@
    "model": "qwen3.5-9b-q4_k_m",
    "v": 2,
    "src": "693e9acf8dfa"
+  },
+  "en": {
+   "title": "ChatGPT Optimizes Default Speed to 50% Faster for GPT-6 Models",
+   "short": "ChatGPT speeds up GPT-6 models by 50%",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "4b03d69f029a"
   }
  }
 }

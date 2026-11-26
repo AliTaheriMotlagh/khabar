@@ -127,6 +127,13 @@
    "model": "qwen3.5-9b-q4_k_m",
    "v": 2,
    "src": "92eefbe06278"
+  },
+  "en": {
+   "title": "Only 2% of US households pay for AI while 98% use free services",
+   "short": "Only 2% of US households pay for AI",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "6fa759319ec9"
   }
  }
 }

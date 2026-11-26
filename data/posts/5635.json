@@ -125,6 +125,13 @@
    "model": "qwen3.5-9b-q4_k_m",
    "v": 2,
    "src": "dc467442cf3c"
+  },
+  "en": {
+   "title": "2026 Nobel Prize in Physiology or Medicine awarded to Deisseroth, Hegemann and Nagel",
+   "short": "2026 Nobel Prize in Physiology or Medicine awarded",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "b1763302855c"
   }
  }
 }

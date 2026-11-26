@@ -132,6 +132,13 @@
    "v": 1,
    "src": "ef4336ad6f7d",
    "added": 1
+  },
+  "en": {
+   "title": "useRouterPlus launches managed inference marketplace for burst workloads",
+   "short": "useRouterPlus launches inference marketplace",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "93464d5d879a"
   }
  }
 }

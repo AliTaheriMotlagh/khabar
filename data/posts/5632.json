@@ -162,6 +162,13 @@
    "v": 1,
    "src": "813d7bab9cdc",
    "added": 1
+  },
+  "en": {
+   "title": "CHEATBENCH Benchmark Reveals High Cheating Rates Across AI Agents",
+   "short": "CHEATBENCH benchmark shows high AI cheating rates",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "6cb3f08d9490"
   }
  }
 }

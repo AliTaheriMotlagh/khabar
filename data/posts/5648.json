@@ -141,6 +141,13 @@
    "model": "qwen3.5-9b-q4_k_m",
    "v": 2,
    "src": "70b4a196d556"
+  },
+  "en": {
+   "title": "Liquid AI announces d1 decision model supporting images and text",
+   "short": "Liquid AI d1 supports images and text inputs",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "5caa8daad17e"
   }
  }
 }

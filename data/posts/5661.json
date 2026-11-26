@@ -102,6 +102,13 @@
    "model": "qwen3.5-9b-q4_k_m",
    "v": 2,
    "src": "1cadcf389e5c"
+  },
+  "en": {
+   "title": "GPU Supplier Raises Prices After Supply Lock and Price Doubling",
+   "short": "GPU Supplier Raises Prices After Supply Lock",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "08edba420e43"
   }
  }
 }

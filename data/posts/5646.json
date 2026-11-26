@@ -123,6 +123,13 @@
    "model": "qwen3.5-9b-q4_k_m",
    "v": 2,
    "src": "12c8a7484832"
+  },
+  "en": {
+   "title": "Ghost AI introduces Core, the personal AI computer",
+   "short": "Ghost AI launches personal AI computer Core",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "b335f49fe1f8"
   }
  }
 }

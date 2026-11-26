@@ -135,6 +135,13 @@
    "model": "qwen3.5-9b-q4_k_m",
    "v": 2,
    "src": "0244c179321b"
+  },
+  "en": {
+   "title": "98% of US households are not paying for AI yet",
+   "short": "98% of US households aren't paying for AI",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "a31322cbcf73"
   }
  }
 }

@@ -133,6 +133,13 @@
    "v": 1,
    "src": "e6ca57202c6e",
    "added": 1
+  },
+  "en": {
+   "title": "Cognition Introduces Dreaming and Agent Memory Repo Standard",
+   "short": "Cognition launches Dreaming and Agent Memory Repo",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "6cdd735423a3"
   }
  }
 }

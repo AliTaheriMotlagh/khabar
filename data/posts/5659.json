@@ -141,6 +141,13 @@
    "model": "qwen3.5-9b-q4_k_m",
    "v": 2,
    "src": "16a664c7eaa2"
+  },
+  "en": {
+   "title": "Anthropic Subscriptions Offer 5x More Value Than OpenAI",
+   "short": "Anthropic offers 5x value over OpenAI",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "33a37f964d00"
   }
  }
 }

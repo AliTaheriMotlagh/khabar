@@ -149,6 +149,13 @@
    "v": 1,
    "src": "d87128860286",
    "added": 2
+  },
+  "en": {
+   "title": "Polar Browser raises $5.7M for AI web agent",
+   "short": "Polar Browser raises $5.7M for AI browser",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "9161ea1e2902"
   }
  }
 }
