@@ -147,6 +147,13 @@
    "model": "qwen3.5-9b-q4_k_m",
    "v": 2,
    "src": "5ee704300fe5"
+  },
+  "en": {
+   "title": "Three users gained write access to OpenAI monorepo via Opus 5",
+   "short": "Three users accessed OpenAI monorepo via Opus 5",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "8fff80f1ab96"
   }
  }
 }

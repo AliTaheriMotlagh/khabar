@@ -103,6 +103,13 @@
    "model": "qwen3.5-9b-q4_k_m",
    "v": 2,
    "src": "d079cd324042"
+  },
+  "en": {
+   "title": "Research Lab Claims All Data Is Synthetic for General AI",
+   "short": "Lab says all data is synthetic for general AI",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "a949424e87f9"
   }
  }
 }

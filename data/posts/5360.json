@@ -141,6 +141,13 @@
    "model": "qwen3.5-9b-q4_k_m",
    "v": 2,
    "src": "5eaf4ead68a9"
+  },
+  "en": {
+   "title": "Jensen Huang says AI shipping rule is same as omelet",
+   "short": "Jensen Huang compares AI shipping to omelet",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "5e5f58fa1b90"
   }
  }
 }

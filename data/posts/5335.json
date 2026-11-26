@@ -132,6 +132,13 @@
    "model": "qwen3.5-9b-q4_k_m",
    "v": 2,
    "src": "1a05ddefe579"
+  },
+  "en": {
+   "title": "MiMo V2.6 RL training costs reach 493k per day at 1T scale",
+   "short": "MiMo V2.6 RL training costs 493k daily at 1T scale",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "76115479dc2f"
   }
  }
 }

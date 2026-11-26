@@ -123,6 +123,13 @@
    "v": 1,
    "src": "28ffb258f0b2",
    "added": 2
+  },
+  "en": {
+   "title": "QuiverAI introduces Arrow 2 for precise vector graphics",
+   "short": "QuiverAI launches Arrow 2 vector graphics model",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "7caa7726d958"
   }
  }
 }

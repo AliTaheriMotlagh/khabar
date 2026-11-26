@@ -127,6 +127,13 @@
    "model": "qwen3.5-9b-q4_k_m",
    "v": 2,
    "src": "9fb498cc8f21"
+  },
+  "en": {
+   "title": "Anthropic shares AI R&D progress and agent safety metrics",
+   "short": "Anthropic reveals AI R&D growth and safety stats",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "f71436dddb88"
   }
  }
 }

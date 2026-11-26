@@ -123,6 +123,13 @@
    "model": "qwen3.5-9b-q4_k_m",
    "v": 2,
    "src": "a11371fd257d"
+  },
+  "en": {
+   "title": "Astra outperforms Fable at robotic control in benchmark",
+   "short": "Astra beats Fable on Pandroid robots",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "6764cb5c0a40"
   }
  }
 }

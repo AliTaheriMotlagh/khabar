@@ -139,6 +139,13 @@
    "v": 1,
    "src": "7b44e1a830b8",
    "added": 1
+  },
+  "en": {
+   "title": "Hackers claim to have taken over OpenAI accounts in under 72 hours",
+   "short": "Hackers claim OpenAI account takeover in 72 hours",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "70feda28abf3"
   }
  }
 }

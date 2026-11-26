@@ -139,6 +139,13 @@
    "v": 1,
    "src": "e498e41203f2",
    "added": 1
+  },
+  "en": {
+   "title": "Kytra completes hum-to-song module training and plans open-source release",
+   "short": "Kytra finishes hum-to-song module training",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "38431e1ce9ca"
   }
  }
 }

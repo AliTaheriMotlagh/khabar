@@ -142,6 +142,13 @@
    "v": 1,
    "src": "9c223db030a7",
    "added": 1
+  },
+  "en": {
+   "title": "Niels Rogge explains Jev visual using Qwen2.5-RLCD model",
+   "short": "Niels Rogge explains Jev visual using Qwen2.5-RLCD",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "ff0a7401cba4"
   }
  }
 }

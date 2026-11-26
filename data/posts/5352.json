@@ -114,6 +114,13 @@
    "model": "qwen3.5-9b-q4_k_m",
    "v": 2,
    "src": "e4502a2e15f5"
+  },
+  "en": {
+   "title": "Anthropic shares three measurements to track AI development progress",
+   "short": "Anthropic publishes AI development metrics",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "a9ccf61a31a0"
   }
  }
 }

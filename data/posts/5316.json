@@ -146,6 +146,13 @@
    "model": "qwen3.5-9b-q4_k_m",
    "v": 2,
    "src": "09588fb63be7"
+  },
+  "en": {
+   "title": "Dario Amodei says AI uses only 5 to 10 percent of possible value",
+   "short": "Amodei: AI value usage is just 5 to 10 percent",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "b8bf7511f74a"
   }
  }
 }

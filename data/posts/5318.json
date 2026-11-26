@@ -147,6 +147,13 @@
    "model": "qwen3.5-9b-q4_k_m",
    "v": 2,
    "src": "8696d89b69a5"
+  },
+  "en": {
+   "title": "Jev AI model achieves insane performance on email classification tasks",
+   "short": "New Jev AI model excels at email classification",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "314900c0cf38"
   }
  }
 }

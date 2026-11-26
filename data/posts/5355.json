@@ -131,6 +131,13 @@
    "v": 1,
    "src": "73239aca3881",
    "added": 3
+  },
+  "en": {
+   "title": "PrismML Announces Ternary Bonsai 2 27B Model",
+   "short": "PrismML releases Bonsai 2 27B model today",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "438fb12a7798"
   }
  }
 }

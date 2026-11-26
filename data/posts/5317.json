@@ -116,6 +116,13 @@
    "model": "qwen3.5-9b-q4_k_m",
    "v": 2,
    "src": "e28ed16571fa"
+  },
+  "en": {
+   "title": "Meta delays shipping Muse following safety concerns",
+   "short": "Meta delays Muse shipping",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "22b07d20870d"
   }
  }
 }

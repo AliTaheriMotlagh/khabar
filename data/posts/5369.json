@@ -126,6 +126,13 @@
    "model": "qwen3.5-9b-q4_k_m",
    "v": 2,
    "src": "51d719546fe1"
+  },
+  "en": {
+   "title": "Tencent-backed Chinese AI startup prepares to release open-weight LLM",
+   "short": "Tencent-backed AI startup to release open LLM",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "7c1a9b14bac5"
   }
  }
 }

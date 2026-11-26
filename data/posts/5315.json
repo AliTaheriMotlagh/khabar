@@ -125,6 +125,13 @@
    "model": "qwen3.5-9b-q4_k_m",
    "v": 2,
    "src": "250a288c92be"
+  },
+  "en": {
+   "title": "Diogo Almeida unveils Jev AI model after co-inventing ChatGPT",
+   "short": "Diogo Almeida releases Jev AI model",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "f31a686f0050"
   }
  }
 }

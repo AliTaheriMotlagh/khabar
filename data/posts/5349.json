@@ -121,6 +121,13 @@
    "model": "qwen3.5-9b-q4_k_m",
    "v": 2,
    "src": "9e3e8bb0d3c0"
+  },
+  "en": {
+   "title": "Duncan builds model router with Jev by @typesafeai",
+   "short": "Duncan builds model router with Jev",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "f4b0bda7aa58"
   }
  }
 }

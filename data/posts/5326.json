@@ -126,6 +126,13 @@
    "model": "qwen3.5-9b-q4_k_m",
    "v": 2,
    "src": "777694d70dbe"
+  },
+  "en": {
+   "title": "Novo Nordisk partners with Anthropic AI to accelerate medicine development",
+   "short": "Novo Nordisk partners with Anthropic AI",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "cf8dd901586e"
   }
  }
 }

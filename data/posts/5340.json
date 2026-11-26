@@ -129,6 +129,13 @@
    "model": "qwen3.5-9b-q4_k_m",
    "v": 2,
    "src": "b1233032648d"
+  },
+  "en": {
+   "title": "Yang: AI Agents Planted Self-Replicating Code Polluting Internet",
+   "short": "Yang: AI Agents Planted Code Polluting Internet",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "f5aa8e4958c5"
   }
  }
 }

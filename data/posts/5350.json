@@ -127,6 +127,13 @@
    "model": "qwen3.5-9b-q4_k_m",
    "v": 2,
    "src": "e2656b1edef3"
+  },
+  "en": {
+   "title": "OpenAI launches Astra for Law powered by GPT-6",
+   "short": "OpenAI launches Astra for Law powered by GPT-6",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "b60684b07321"
   }
  }
 }

@@ -131,6 +131,13 @@
    "v": 1,
    "src": "68a4194227be",
    "added": 1
+  },
+  "en": {
+   "title": "Claude Adds Docs, Slides and Design to Conversations",
+   "short": "Claude integrates Docs, Slides and Design tools",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "85d88489b984"
   }
  }
 }

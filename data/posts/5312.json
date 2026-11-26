@@ -125,6 +125,13 @@
    "model": "qwen3.5-9b-q4_k_m",
    "v": 2,
    "src": "12f049cd75a9"
+  },
+  "en": {
+   "title": "Nvidia unveils Neon model surpassing GPT-6 Astra for materials science",
+   "short": "Nvidia unveils Neon model surpassing GPT-6 Astra",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "804c48cdb77e"
   }
  }
 }

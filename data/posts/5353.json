@@ -150,6 +150,13 @@
    "v": 1,
    "src": "e170f4ad1e8e",
    "added": 2
+  },
+  "en": {
+   "title": "Needle 3: 8-29MB automation model matches DeepSeek V4 Flash",
+   "short": "Needle 3 matches DeepSeek V4 Flash",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "207ab2e76b3d"
   }
  }
 }

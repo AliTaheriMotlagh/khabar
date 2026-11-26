@@ -127,6 +127,13 @@
    "v": 1,
    "src": "5bdd2343d198",
    "added": 1
+  },
+  "en": {
+   "title": "Claude Cowork and chat merging into one Claude",
+   "short": "Claude Cowork and chat merging into one Claude",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "77538748ba26"
   }
  }
 }

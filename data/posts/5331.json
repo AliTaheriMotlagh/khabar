@@ -132,6 +132,13 @@
    "model": "qwen3.5-9b-q4_k_m",
    "v": 2,
    "src": "3e7382ed05ea"
+  },
+  "en": {
+   "title": "Instinct AI startup in talks to raise $1B at $10B valuation",
+   "short": "Instinct AI raises $1B at $10B valuation",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "4fd3d082b464"
   }
  }
 }

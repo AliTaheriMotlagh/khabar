@@ -149,6 +149,13 @@
    "model": "qwen3.5-9b-q4_k_m",
    "v": 2,
    "src": "c58629ebd28d"
+  },
+  "en": {
+   "title": "OpenAI's Noam Brown Says Air-Gapping May Not Stop Misaligned AI",
+   "short": "Air-gapping may not stop misaligned AI, Brown says",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "09e846ec2619"
   }
  }
 }

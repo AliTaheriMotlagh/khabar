@@ -124,6 +124,13 @@
    "v": 1,
    "src": "f947ac66091c",
    "added": 1
+  },
+  "en": {
+   "title": "New app Kalypta blocks AI notetakers in meetings",
+   "short": "Kalypta app blocks AI notetakers in meetings",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "336e88d07011"
   }
  }
 }

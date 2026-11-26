@@ -118,6 +118,13 @@
    "model": "qwen3.5-9b-q4_k_m",
    "v": 2,
    "src": "4a3907b32b12"
+  },
+  "en": {
+   "title": "Court unsealed NYT v OpenAI motions revealing redacted claims",
+   "short": "NYT v OpenAI motions unsealed with redacted claims",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "ead02389e905"
   }
  }
 }

@@ -129,6 +129,13 @@
    "model": "qwen3.5-9b-q4_k_m",
    "v": 2,
    "src": "44ae78074188"
+  },
+  "en": {
+   "title": "MiMo-V2.6 scales reinforcement learning with multi-task agentic runs",
+   "short": "MiMo-V2.6 scales RL with multi-task agentic runs",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "b0ba0c26329d"
   }
  }
 }

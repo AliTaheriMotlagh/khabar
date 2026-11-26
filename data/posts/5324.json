@@ -114,6 +114,13 @@
    "model": "qwen3.5-9b-q4_k_m",
    "v": 2,
    "src": "d05def89cc10"
+  },
+  "en": {
+   "title": "Union Alpha stealth model free for next week",
+   "short": "Union Alpha stealth model free for next week",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "62394155b138"
   }
  }
 }
