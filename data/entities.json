@@ -14777,6 +14777,12 @@
    "name_en": "Qwen3.5-35B-A3B",
    "name_fa": "کوئن ۳.۵-۳۵ بی‌آی-اِی-اِی-بی",
    "kind": "model"
+  },
+  {
+   "slug": "venkatesa-chandrasekaran",
+   "name_en": "Venkatesa Chandrasekaran",
+   "name_fa": "ونکاتسا چاندراسکاران",
+   "kind": "person"
   }
  ]
 }
