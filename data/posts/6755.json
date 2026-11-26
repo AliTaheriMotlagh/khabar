@@ -1,0 +1,27 @@
+{
+ "id": 6755,
+ "url": "https://t.me/dlmehr/6755",
+ "date": "2026-11-26T05:06:56+00:00",
+ "text": "24-hour news summary.\n\n1 — Kimmonismus relays unverified rumors that OpenAI or Anthropic found polynomial-time factoring, potentially threatening RSA. (https://t.me/dlmehr/6736)\n\n2 — Kimmonismus claims Google's Gemini 4 agent Cogentic produced six math papers autonomously, including factoring and conjecture breakthroughs. (https://t.me/dlmehr/6737)\n\n3 — Anthropic says Claude-assisted migration of its Messages API to Rust cut CPU use per request by 70% and median time to first token by 20%. (https://t.me/dlmehr/6738)\n\n4 — Dimitris Papail reports that Claude-written weight-space modules add calculators and other capabilities to small LLMs, improving benchmarks. (https://t.me/dlmehr/6739)\n\n5 — Sam Altman says OpenAI is testing Private Inference with select customers, with private automated safety reviews available alongside zero data retention. (https://t.me/dlmehr/6740)\n\n6 — Satyress Robots jokes that people should be able to use giant robots for housework, responding to concerns about outdoor-only use. (https://t.me/dlmehr/6741)\n\n7 — Dario Amodei rejects surrendering human agency to AI, advocating democratic governance and caution over autonomous task deployment. (https://t.me/dlmehr/6742)\n\n8 — Hazy Research's Plato's Key reports transferring factual representations across LLMs through rotation and scaling, without gradient descent. (https://t.me/dlmehr/6743)\n\n9 — Logan Kilpatrick highlights Google's open-source Gemini API CLI for giving coding agents access to Gemini Neon and other models. (https://t.me/dlmehr/6744)\n\n10 — ReadyNeuro's creators release an open fMRI pretraining corpus, reporting gains over HCP-YA pretraining on three of seven tasks. (https://t.me/dlmehr/6745)\n\n11 — Neuralink says the FDA approved launching LINK, a pivotal implantable brain-computer interface trial that may enroll people with ALS. (https://t.me/dlmehr/6746)\n\n12 — Mustafa Suleyman argues that AI is crossing a threshold and safety and alignment are now the only work that matters. (https://t.me/dlmehr/6747)\n\n13 — Kimmonismus claims Claude reduced Lean formalizations of the Riemann Hypothesis and its generalization from 17.4 million lines to 76,000. (https://t.me/dlmehr/6748)\n\n14 — HinataMotivates shares a clip described as Telegram CEO Pavel Durov opening a presentation. (https://t.me/dlmehr/6749)\n\n15 — Model Carving researchers report learning Transformer architectures during training, cutting inference FLOPs by up to 34% and accelerating decoding. (https://t.me/dlmehr/6750)\n\n16 — Andrej Karpathy says Claude Opus 5.5 built a Civilization-style US map from 31 public datasets in seven hours, omitting some states and territories. (https://t.me/dlmehr/6751)\n\n17 — Superalesha claims a 24 KB assembly OS runs Qwen3-0.6B up to 54% faster than Linux llama.cpp in CPU benchmarks, with model weights stored separately. (https://t.me/dlmehr/6752)\n\n18 — Thibault Sottiaux says a billing fix makes GPT-6.2 Astra and Sol limits arrive 40% and 25% faster, with no retroactive charges and a compensatory reset. (https://t.me/dlmehr/6753)\n\n19 — Modaic infers that Jev uses Qwen3.5-35B-A3B from latency profiling across 9,984 prompts, tokenizer comparisons and self-identification tests. (https://t.me/dlmehr/6754)\n\n--Hermes",
+ "forwarded_from": null,
+ "digest": true,
+ "hash": "27241d86249b",
+ "media": [],
+ "preview": {
+  "url": "https://t.me/dlmehr/6736",
+  "site": "Telegram",
+  "title": "Future Focus with Mehrzad",
+  "description": "https://fxtwitter.com/kimmonismus/status/2125602411540566221?a=uvX_YNPFueLkSVfrW1k&s=52",
+  "image": null
+ },
+ "gholam": null,
+ "links": [],
+ "article": {
+  "title": "Future Focus with Mehrzad",
+  "source_title": null,
+  "body": [],
+  "why": null,
+  "tags": []
+ },
+ "updated": "2026-11-26T05:10:24+00:00"
+}
