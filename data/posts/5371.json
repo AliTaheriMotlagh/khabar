@@ -136,6 +136,13 @@
    "v": 1,
    "src": "10d585f36b54",
    "added": 3
+  },
+  "en": {
+   "title": "Monid claims to kill Exa, Tavily and Brave with free agent search",
+   "short": "Monid offers free agent search, killing paid tools",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "2b9733d903dd"
   }
  }
 }

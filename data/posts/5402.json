@@ -149,6 +149,13 @@
    "v": 1,
    "src": "8e67334ee2cf",
    "added": 1
+  },
+  "en": {
+   "title": "Freya releases Adam and Eve as most human-like AI voices",
+   "short": "Freya releases Adam and Eve AI voices",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "c6a9f9fd7439"
   }
  }
 }

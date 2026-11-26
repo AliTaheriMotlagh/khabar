@@ -111,6 +111,13 @@
    "model": "qwen3.5-9b-q4_k_m",
    "v": 2,
    "src": "8ca0b9d778f5"
+  },
+  "en": {
+   "title": "OpenAI forms independent mathematician advisory group for AI",
+   "short": "OpenAI creates math advisory group",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "cdf7b8487ebc"
   }
  }
 }

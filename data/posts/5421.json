@@ -123,6 +123,13 @@
    "model": "qwen3.5-9b-q4_k_m",
    "v": 2,
    "src": "bf0eb415035a"
+  },
+  "en": {
+   "title": "Opus 5.5 leads Opus 5 in agentic coding and computer use",
+   "short": "Opus 5.5 leads Opus 5 in coding and computer use",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "4d406a3f4237"
   }
  }
 }

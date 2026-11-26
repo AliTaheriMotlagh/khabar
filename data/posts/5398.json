@@ -115,6 +115,13 @@
    "model": "qwen3.5-9b-q4_k_m",
    "v": 2,
    "src": "ba48f41e62ea"
+  },
+  "en": {
+   "title": "SpaceX Unveils Grok 4.7 With Improved Performance",
+   "short": "SpaceX launches Grok 4.7 update",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "afe703457a56"
   }
  }
 }

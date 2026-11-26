@@ -145,6 +145,13 @@
    "v": 1,
    "src": "dee83ca95bbb",
    "added": 1
+  },
+  "en": {
+   "title": "Qwen-Image-2.1 Open Weights Released as Balanced Model",
+   "short": "Qwen-Image-2.1 open weights released now",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "94e75f831aa5"
   }
  }
 }

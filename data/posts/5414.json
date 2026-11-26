@@ -123,6 +123,13 @@
    "model": "qwen3.5-9b-q4_k_m",
    "v": 2,
    "src": "173e7ba78e73"
+  },
+  "en": {
+   "title": "MiMo V2.6 Flash update free for next week",
+   "short": "MiMo V2.6 Flash free for a week",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "9c7ca45eebc5"
   }
  }
 }

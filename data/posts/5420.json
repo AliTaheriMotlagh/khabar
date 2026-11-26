@@ -122,6 +122,13 @@
    "model": "qwen3.5-9b-q4_k_m",
    "v": 2,
    "src": "36cbf748112f"
+  },
+  "en": {
+   "title": "OpenAI launches GPT-6 Sol and Luna with 50% lower API prices",
+   "short": "OpenAI launches GPT-6 Sol and Luna",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "0d9c1cfb4ab6"
   }
  }
 }

@@ -122,6 +122,13 @@
    "v": 1,
    "src": "4032d4fa2180",
    "added": 1
+  },
+  "en": {
+   "title": "Nat Friedman says Muse inspired by OpenClaw",
+   "short": "Friedman: Muse inspired by OpenClaw",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "8d9316942c5c"
   }
  }
 }

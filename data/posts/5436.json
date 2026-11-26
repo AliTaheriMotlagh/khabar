@@ -124,6 +124,13 @@
    "model": "qwen3.5-9b-q4_k_m",
    "v": 2,
    "src": "d1cdb0300b45"
+  },
+  "en": {
+   "title": "UK seeks global AI agreement at G20 under Burnham",
+   "short": "UK aims to broker global AI deal at G20",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "98dcc0e45c96"
   }
  }
 }

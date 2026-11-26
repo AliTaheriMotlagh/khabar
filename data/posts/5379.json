@@ -147,6 +147,13 @@
    "v": 1,
    "src": "7901ba42a6f5",
    "added": 2
+  },
+  "en": {
+   "title": "JevBench results show Jev in lead at 75.3",
+   "short": "Jev leads JevBench at 75.3",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "fdb91a54c393"
   }
  }
 }

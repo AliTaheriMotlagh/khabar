@@ -95,6 +95,13 @@
    "model": "qwen3.5-9b-q4_k_m",
    "v": 2,
    "src": "49112b35b287"
+  },
+  "en": {
+   "title": "Aaron Francis: Doing things isn't enough, you must tell people",
+   "short": "Aaron Francis: You must tell people what you do",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "403510bb2c09"
   }
  }
 }

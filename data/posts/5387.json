@@ -127,6 +127,13 @@
    "model": "qwen3.5-9b-q4_k_m",
    "v": 2,
    "src": "7ab97fb51e11"
+  },
+  "en": {
+   "title": "Yang predicts math AI progress will organically slow down",
+   "short": "Yang predicts math AI progress will slow",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "bfe210a4dc0a"
   }
  }
 }

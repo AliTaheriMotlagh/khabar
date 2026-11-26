@@ -135,6 +135,13 @@
    "v": 1,
    "src": "8220f1520165",
    "added": 1
+  },
+  "en": {
+   "title": "Sherpa by Pocket FM and Seedance 2.5 launch AGI race video",
+   "short": "Sherpa and Seedance 2.5 launch AGI race video",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "0c7b9d79de64"
   }
  }
 }

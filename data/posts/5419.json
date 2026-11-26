@@ -128,6 +128,13 @@
    "v": 1,
    "src": "b42747462762",
    "added": 4
+  },
+  "en": {
+   "title": "Ant Group releases Ming Image-0.1 design model",
+   "short": "Ant Group launches new open-source image model",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "24c2c1dcce2f"
   }
  }
 }

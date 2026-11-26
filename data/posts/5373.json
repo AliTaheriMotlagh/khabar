@@ -118,6 +118,13 @@
    "model": "qwen3.5-9b-q4_k_m",
    "v": 2,
    "src": "73085ff4ccf8"
+  },
+  "en": {
+   "title": "Anthropic partners with Accenture on frontier AI evaluation",
+   "short": "Anthropic and Accenture partner on AI evaluation",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "4fe1fde4f99f"
   }
  }
 }

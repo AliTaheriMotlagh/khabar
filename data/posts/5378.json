@@ -123,6 +123,13 @@
    "v": 1,
    "src": "1151ca339adb",
    "added": 1
+  },
+  "en": {
+   "title": "Developer builds open source alternative to Jev model",
+   "short": "Open source alternative to Jev model built",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "7c8a85240b80"
   }
  }
 }

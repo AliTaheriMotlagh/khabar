@@ -125,6 +125,13 @@
    "model": "qwen3.5-9b-q4_k_m",
    "v": 2,
    "src": "7b1c26999fc4"
+  },
+  "en": {
+   "title": "Unreal Labs introduces open-source Unreal Agent harness",
+   "short": "Unreal Agent is 39% cheaper than Codex+Astra",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "ec493b8531e1"
   }
  }
 }

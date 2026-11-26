@@ -132,6 +132,13 @@
    "v": 1,
    "src": "5d1141f9382e",
    "added": 1
+  },
+  "en": {
+   "title": "Training LLMs to Predict World Events Guest Post with Mantic",
+   "short": "Training LLMs to Predict World Events",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "6f1aafbb77a7"
   }
  }
 }

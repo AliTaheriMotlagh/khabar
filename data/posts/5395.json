@@ -136,6 +136,13 @@
    "v": 1,
    "src": "ecae39c34d10",
    "added": 2
+  },
+  "en": {
+   "title": "Hugging Face launches Hemmingway-1 model based on Qwen3.8-27B",
+   "short": "Hugging Face launches Hemmingway-1 model",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "732b84b549b5"
   }
  }
 }

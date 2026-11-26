@@ -105,6 +105,13 @@
    "model": "qwen3.5-9b-q4_k_m",
    "v": 2,
    "src": "3bb5a29b877b"
+  },
+  "en": {
+   "title": "TypeSafe AI makes Jev available to everyone without waitlist",
+   "short": "TypeSafe AI launches Jev to all users",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "ec04912054c7"
   }
  }
 }

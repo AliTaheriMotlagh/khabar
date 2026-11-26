@@ -140,6 +140,13 @@
    "v": 1,
    "src": "5b87cebf00c1",
    "added": 1
+  },
+  "en": {
+   "title": "Ximi drops Mimo 2.6 Pro open source model",
+   "short": "Xiaomi releases Mimo 2.6 Pro open source model",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "01c9b4c90da3"
   }
  }
 }

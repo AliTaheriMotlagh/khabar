@@ -54,6 +54,13 @@
    "v": 1,
    "src": "c63c8c2228eb",
    "added": 2
+  },
+  "en": {
+   "title": "Kun Chen posts message stating Jev can chat too",
+   "short": "Kun Chen posts message stating Jev can chat too",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "274f67ff3b7b"
   }
  }
 }

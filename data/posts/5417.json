@@ -107,6 +107,13 @@
    "model": "qwen3.5-9b-q4_k_m",
    "v": 2,
    "src": "8bf48d6f4316"
+  },
+  "en": {
+   "title": "AI Model Release Gap Shrinks From 73 Days To 18 Days",
+   "short": "AI Model Releases Now Happen Every 18 Days",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "12e8a4760618"
   }
  }
 }

@@ -122,6 +122,13 @@
    "v": 1,
    "src": "f2c18d4ea2a1",
    "added": 1
+  },
+  "en": {
+   "title": "Fable film made entirely from code without generating a single image",
+   "short": "Fable film created entirely from code",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "5f6197719473"
   }
  }
 }

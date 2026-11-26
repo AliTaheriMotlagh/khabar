@@ -137,6 +137,13 @@
    "model": "qwen3.5-9b-q4_k_m",
    "v": 2,
    "src": "920028b5648a"
+  },
+  "en": {
+   "title": "Google team proves Most Informative Boolean Function conjecture",
+   "short": "Google team proves Boolean Function conjecture",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "243c2567c522"
   }
  }
 }

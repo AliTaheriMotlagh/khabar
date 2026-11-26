@@ -108,6 +108,13 @@
    "model": "qwen3.5-9b-q4_k_m",
    "v": 2,
    "src": "efd0b9976e23"
+  },
+  "en": {
+   "title": "McKinsey research shows AI cuts drug discovery time by 15-80%",
+   "short": "AI cuts drug discovery time by 15-80%",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "d1ba169c2e35"
   }
  }
 }

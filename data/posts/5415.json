@@ -111,6 +111,13 @@
    "model": "qwen3.5-9b-q4_k_m",
    "v": 2,
    "src": "5f84ec0b3dac"
+  },
+  "en": {
+   "title": "Sam Altman Proposes US Lead on AI Safety Standards",
+   "short": "Altman proposes US lead on AI safety standards",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "f67140aeaa4d"
   }
  }
 }

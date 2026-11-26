@@ -107,6 +107,13 @@
    "model": "qwen3.5-9b-q4_k_m",
    "v": 2,
    "src": "647c3f55d155"
+  },
+  "en": {
+   "title": "Scale Labs launches SWE-Bench Pro V2 benchmark",
+   "short": "Scale Labs launches SWE-Bench Pro V2",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "49b244b4e001"
   }
  }
 }

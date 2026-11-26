@@ -112,6 +112,13 @@
    "model": "qwen3.5-9b-q4_k_m",
    "v": 2,
    "src": "2fcac69b9c07"
+  },
+  "en": {
+   "title": "Databricks CEO Ali Ghodsi: Enterprise bottleneck is context, not model intelligence",
+   "short": "Ghodsi: Enterprise bottleneck is context",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "b3d352492574"
   }
  }
 }

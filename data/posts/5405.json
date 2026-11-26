@@ -133,6 +133,13 @@
    "model": "qwen3.5-9b-q4_k_m",
    "v": 2,
    "src": "75c2531187d1"
+  },
+  "en": {
+   "title": "OpenAI internal model solves 100 long-standing math problems in 24 days",
+   "short": "OpenAI model solves 100 math problems",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "f88d47f6dfb4"
   }
  }
 }

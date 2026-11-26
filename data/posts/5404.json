@@ -120,6 +120,13 @@
    "v": 1,
    "src": "6bb0c053f234",
    "added": 3
+  },
+  "en": {
+   "title": "Paradigma Introduces Limite 1B Violetto Model",
+   "short": "Paradigma launches Limite 1B Violetto model",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "30c0274b9980"
   }
  }
 }

@@ -130,6 +130,13 @@
    "model": "qwen3.5-9b-q4_k_m",
    "v": 2,
    "src": "8c0b8c41c51c"
+  },
+  "en": {
+   "title": "Trump Says He Wants Anthropic's Dario Jailed Over Fable Model",
+   "short": "Trump threatens jail for Dario over Fable model",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "d30f662f179d"
   }
  }
 }

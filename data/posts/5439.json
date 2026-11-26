@@ -112,6 +112,13 @@
    "model": "qwen3.5-9b-q4_k_m",
    "v": 2,
    "src": "f180ed171398"
+  },
+  "en": {
+   "title": "China Overtakes US as Top Destination for Elite AI Talent in 2025",
+   "short": "China surpasses US for elite AI talent in 2025",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "d3450f7e5b58"
   }
  }
 }

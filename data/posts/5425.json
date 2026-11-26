@@ -107,6 +107,13 @@
    "model": "qwen3.5-9b-q4_k_m",
    "v": 2,
    "src": "e81879156c6b"
+  },
+  "en": {
+   "title": "Meta's Muse AI tool surpasses 500,000 total users in first week",
+   "short": "Meta's Muse AI reaches 500,000 users",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "e1c25643faf6"
   }
  }
 }

@@ -104,6 +104,13 @@
    "model": "qwen3.5-9b-q4_k_m",
    "v": 2,
    "src": "7f4f39f7e6cc"
+  },
+  "en": {
+   "title": "AI Costs Falling Faster Than Any Transformative Tech In History",
+   "short": "AI costs dropping 47% per quarter since 2023",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "5076b24f6193"
   }
  }
 }

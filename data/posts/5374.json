@@ -140,6 +140,13 @@
    "v": 1,
    "src": "3a01cda4b9a0",
    "added": 1
+  },
+  "en": {
+   "title": "Cua opensources CUA-S1-FORMS system one model family",
+   "short": "Cua opensources CUA-S1-FORMS model",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "8ea7a6fdcabe"
   }
  }
 }

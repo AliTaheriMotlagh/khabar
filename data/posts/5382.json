@@ -156,6 +156,13 @@
    "model": "qwen3.5-9b-q4_k_m",
    "v": 2,
    "src": "d6550bb33bcf"
+  },
+  "en": {
+   "title": "Perplexity CEO says US export controls make China a potent AI competitor",
+   "short": "Perplexity CEO: US controls boost China's AI",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "d975f9a33efe"
   }
  }
 }

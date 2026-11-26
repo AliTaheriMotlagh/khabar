@@ -151,6 +151,13 @@
    "model": "qwen3.5-9b-q4_k_m",
    "v": 2,
    "src": "d89a58c8e06b"
+  },
+  "en": {
+   "title": "Opus 5.5 Creates Procedural Game Inspired by Antikythera Mechanism",
+   "short": "Opus 5.5 makes Antikythera game",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "9e6a895be8f7"
   }
  }
 }

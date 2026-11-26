@@ -142,6 +142,13 @@
    "model": "qwen3.5-9b-q4_k_m",
    "v": 2,
    "src": "61e27c1dfc33"
+  },
+  "en": {
+   "title": "Anthropic introduces Claude Opus 5.5 with 40% lower cost",
+   "short": "Claude Opus 5.5 costs 40% less than Opus 5",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "866ed5ca9c79"
   }
  }
 }

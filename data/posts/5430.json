@@ -134,6 +134,13 @@
    "v": 1,
    "src": "6d76b0a98b98",
    "added": 1
+  },
+  "en": {
+   "title": "Stanford to teach efficient generative language models course this fall",
+   "short": "Stanford offers course on efficient LLMs",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "b54a65d7a14d"
   }
  }
 }

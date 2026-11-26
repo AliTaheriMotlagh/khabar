@@ -150,6 +150,13 @@
    "v": 1,
    "src": "1debb6cd9c90",
    "added": 1
+  },
+  "en": {
+   "title": "Xiaomi launches MiMo-V2.6 Pro and Flash open-source models",
+   "short": "Xiaomi launches MiMo-V2.6 Pro and Flash models",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "7063e5289e03"
   }
  }
 }

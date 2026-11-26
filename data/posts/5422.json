@@ -141,6 +141,13 @@
    "model": "qwen3.5-9b-q4_k_m",
    "v": 2,
    "src": "3066adec236f"
+  },
+  "en": {
+   "title": "Ten Claude Opus 5.5 agents produce formally verified C-HD algorithm",
+   "short": "Claude agents create verified C-HD algorithm",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "04583826aa10"
   }
  }
 }

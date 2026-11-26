@@ -124,6 +124,13 @@
    "model": "qwen3.5-9b-q4_k_m",
    "v": 2,
    "src": "33714438b6be"
+  },
+  "en": {
+   "title": "Meta AI agent Muse routes some business calls to human operators",
+   "short": "Meta AI agent Muse routes some calls to humans",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "058a946d592b"
   }
  }
 }

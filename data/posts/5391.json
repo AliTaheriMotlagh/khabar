@@ -112,6 +112,13 @@
    "model": "qwen3.5-9b-q4_k_m",
    "v": 2,
    "src": "1c7a780a25ee"
+  },
+  "en": {
+   "title": "Fidji Simo moves daughter to Alpha School for AI academics",
+   "short": "Fidji Simo moves daughter to Alpha School",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "c4f249b453f2"
   }
  }
 }
