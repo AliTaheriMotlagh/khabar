@@ -47,5 +47,13 @@
   "why": null,
   "tags": []
  },
- "updated": "2026-11-26T20:00:31+00:00"
+ "updated": "2026-11-26T20:00:31+00:00",
+ "ai": {
+  "en": {
+   "failed": true,
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "d24a3c5a9241"
+  }
+ }
 }
