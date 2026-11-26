@@ -125,6 +125,13 @@
    "model": "qwen3.5-9b-q4_k_m",
    "v": 2,
    "src": "7ccddf218d70"
+  },
+  "en": {
+   "title": "Anthropic plans Fable 5.1 launch before late September IPO",
+   "short": "Anthropic to launch Fable 5.1 before IPO",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "4b4d2432376c"
   }
  }
 }

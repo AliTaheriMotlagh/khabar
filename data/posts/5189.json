@@ -134,6 +134,13 @@
    "model": "qwen3.5-9b-q4_k_m",
    "v": 2,
    "src": "9c9c9586be68"
+  },
+  "en": {
+   "title": "Qualcomm and Amazon Partner on Custom AI Data Center Chips",
+   "short": "Qualcomm and Amazon partner on custom AI chips",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "43817cde6015"
   }
  }
 }

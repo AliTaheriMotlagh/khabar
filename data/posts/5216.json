@@ -147,6 +147,13 @@
    "model": "qwen3.5-9b-q4_k_m",
    "v": 2,
    "src": "723338055ab1"
+  },
+  "en": {
+   "title": "ChatGPT Images 2.5 enables stop motion animation with faster generation",
+   "short": "ChatGPT Images 2.5 enables stop motion animation",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "17011c318a8d"
   }
  }
 }

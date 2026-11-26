@@ -131,6 +131,13 @@
    "model": "qwen3.5-9b-q4_k_m",
    "v": 2,
    "src": "1feff21419cc"
+  },
+  "en": {
+   "title": "Senator Josh Hawley opens Senate probe into OpenAI incident",
+   "short": "Senator Hawley probes OpenAI incident",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "275c8597cb88"
   }
  }
 }

@@ -106,6 +106,13 @@
    "model": "qwen3.5-9b-q4_k_m",
    "v": 2,
    "src": "b3cff0b27fac"
+  },
+  "en": {
+   "title": "AI spend declines among top 1% of businesses in August",
+   "short": "Top 1% AI spend drops 10% to $7.2K per employee",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "9147981b4fde"
   }
  }
 }

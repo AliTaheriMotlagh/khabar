@@ -128,6 +128,13 @@
    "model": "qwen3.5-9b-q4_k_m",
    "v": 2,
    "src": "1854d7b31991"
+  },
+  "en": {
+   "title": "OpenAI confirms de-identified user data improves ChatGPT and Codex models",
+   "short": "OpenAI admits user data improves models",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "46291626b994"
   }
  }
 }

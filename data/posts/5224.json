@@ -123,6 +123,13 @@
    "v": 1,
    "src": "f7b6a2535217",
    "added": 1
+  },
+  "en": {
+   "title": "Apple announces Live Rewind feature for Apple Watch",
+   "short": "Apple adds Live Rewind to Apple Watch",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "da9bb87e8805"
   }
  }
 }

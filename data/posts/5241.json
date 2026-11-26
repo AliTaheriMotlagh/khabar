@@ -140,6 +140,13 @@
    "v": 1,
    "src": "2502bd88ea95",
    "added": 1
+  },
+  "en": {
+   "title": "Fireworks introduces Gen-1 Slides matching Claude Opus 5 performance",
+   "short": "Fireworks launches Gen-1 Slides model today",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "3c812c85c418"
   }
  }
 }

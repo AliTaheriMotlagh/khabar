@@ -129,6 +129,13 @@
    "v": 1,
    "src": "d034eb8e0b8f",
    "added": 1
+  },
+  "en": {
+   "title": "DOJ Investigates NVIDIA Over Antitrust Concerns Regarding Groq LPU Deal",
+   "short": "DOJ probes NVIDIA over Groq LPU antitrust concerns",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "c350a7da5bc7"
   }
  }
 }

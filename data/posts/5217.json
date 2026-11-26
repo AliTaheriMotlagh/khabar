@@ -120,6 +120,13 @@
    "model": "qwen3.5-9b-q4_k_m",
    "v": 2,
    "src": "2424f7df404c"
+  },
+  "en": {
+   "title": "Anthropic shares AI economic impact model for 2030",
+   "short": "Anthropic models AI effects on economy by 2030",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "7ae44bdd52d8"
   }
  }
 }

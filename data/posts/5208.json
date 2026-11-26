@@ -114,6 +114,13 @@
    "model": "qwen3.5-9b-q4_k_m",
    "v": 2,
    "src": "fa6bc2ae65a7"
+  },
+  "en": {
+   "title": "Synthetic data from production user data used for training consumer AI tools",
+   "short": "Synthetic user data trains consumer AI models",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "9a9a825534c2"
   }
  }
 }

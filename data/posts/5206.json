@@ -129,6 +129,13 @@
    "v": 1,
    "src": "09e871c98fef",
    "added": 1
+  },
+  "en": {
+   "title": "OpenAI launches ChatGPT Images 2.5 with faster generation and sharper details",
+   "short": "OpenAI launches ChatGPT Images 2.5",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "209d85239df3"
   }
  }
 }

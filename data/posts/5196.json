@@ -151,6 +151,13 @@
    "model": "qwen3.5-9b-q4_k_m",
    "v": 2,
    "src": "a21a97b456a7"
+  },
+  "en": {
+   "title": "Proteus Generates Specialized GPU Kernels Up To 5.2x Faster Than VLLM",
+   "short": "Proteus kernels 5.2x faster than VLLM",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "5cb180f4731c"
   }
  }
 }

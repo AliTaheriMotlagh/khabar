@@ -141,6 +141,13 @@
    "model": "qwen3.5-9b-q4_k_m",
    "v": 2,
    "src": "2ba949d69724"
+  },
+  "en": {
+   "title": "OpenAI claims 10,000 agents solved Navier-Stokes Millennium Prize",
+   "short": "OpenAI claims 10,000 agents solved Navier-Stokes",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "7c0add35c569"
   }
  }
 }

@@ -89,6 +89,13 @@
    "model": "qwen3.5-9b-q4_k_m",
    "v": 2,
    "src": "f027372eee13"
+  },
+  "en": {
+   "title": "Astra to reset paid subscription usage limits for all users",
+   "short": "Astra resets paid usage limits for all users",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "aad98325a6f9"
   }
  }
 }

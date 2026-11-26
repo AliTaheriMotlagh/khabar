@@ -147,6 +147,13 @@
    "model": "qwen3.5-9b-q4_k_m",
    "v": 2,
    "src": "ffdbb3da4225"
+  },
+  "en": {
+   "title": "OpenAI claims to solve Millennium Prize Navier Stokes problem",
+   "short": "OpenAI claims Navier Stokes solution",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "3e61c8edd67c"
   }
  }
 }

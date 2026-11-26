@@ -140,6 +140,13 @@
    "model": "qwen3.5-9b-q4_k_m",
    "v": 2,
    "src": "7d5318caf254"
+  },
+  "en": {
+   "title": "OpenAI GPT 6 Astra Estimated at 1.2T Active Parameters",
+   "short": "GPT 6 Astra has 1.2T active parameters",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "2c0485100d04"
   }
  }
 }

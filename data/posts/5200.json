@@ -136,6 +136,13 @@
    "v": 1,
    "src": "fc220df9eb35",
    "added": 1
+  },
+  "en": {
+   "title": "OUI-1: First Open-Weights Model for Generative UI",
+   "short": "OUI-1 leads Generative UI Bench at 4B params",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "a561df8a6625"
   }
  }
 }

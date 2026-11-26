@@ -119,6 +119,13 @@
    "model": "qwen3.5-9b-q4_k_m",
    "v": 2,
    "src": "3f02e7ec51ab"
+  },
+  "en": {
+   "title": "ChatGPT Work introduces new Data agent for company data",
+   "short": "ChatGPT Work adds Data agent for company data",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "48fee73af482"
   }
  }
 }

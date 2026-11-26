@@ -113,6 +113,13 @@
    "model": "qwen3.5-9b-q4_k_m",
    "v": 2,
    "src": "61cdfe034106"
+  },
+  "en": {
+   "title": "Nearly 5,000 Sharif University graduates pursue PhDs globally",
+   "short": "5,000 Sharif grads pursue PhDs worldwide",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "1372015c858a"
   }
  }
 }

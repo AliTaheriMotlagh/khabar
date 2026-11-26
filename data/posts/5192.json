@@ -138,6 +138,13 @@
    "model": "qwen3.5-9b-q4_k_m",
    "v": 2,
    "src": "bb5ae82624bc"
+  },
+  "en": {
+   "title": "Astra robot paints Golden Gate Bridge in real life",
+   "short": "Astra robot paints Golden Gate Bridge",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "8138176c27f9"
   }
  }
 }

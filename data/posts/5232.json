@@ -130,6 +130,13 @@
    "model": "qwen3.5-9b-q4_k_m",
    "v": 2,
    "src": "039b71662f36"
+  },
+  "en": {
+   "title": "DeepSeek introduces V4.1-Flash model with visual understanding",
+   "short": "DeepSeek launches V4.1-Flash model",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "4962a8293ee9"
   }
  }
 }

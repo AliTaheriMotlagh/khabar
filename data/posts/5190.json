@@ -102,6 +102,13 @@
    "model": "qwen3.5-9b-q4_k_m",
    "v": 2,
    "src": "000991a541c5"
+  },
+  "en": {
+   "title": "Mistral AI raises €3B Series D, largest European tech equity round",
+   "short": "Mistral AI raises €3B Series D",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "423af5fdba0e"
   }
  }
 }

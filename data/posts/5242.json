@@ -112,6 +112,13 @@
    "model": "qwen3.5-9b-q4_k_m",
    "v": 2,
    "src": "0dd60112c24e"
+  },
+  "en": {
+   "title": "Deepseek compresses KV cache size per token by 54x in nine months",
+   "short": "Deepseek compresses KV cache by 54x",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "2cf7cbeb0251"
   }
  }
 }

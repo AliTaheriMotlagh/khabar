@@ -125,6 +125,13 @@
    "model": "qwen3.5-9b-q4_k_m",
    "v": 2,
    "src": "449d958e7486"
+  },
+  "en": {
+   "title": "DeepSeek V4.1 Flash reaches 98% of GPT-6 Astra score at 1.4% cost",
+   "short": "DeepSeek V4.1 Flash beats GPT-6 Astra on cost",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "986c24a7490d"
   }
  }
 }

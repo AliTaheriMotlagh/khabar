@@ -138,6 +138,13 @@
    "model": "qwen3.5-9b-q4_k_m",
    "v": 2,
    "src": "58988ba1ed88"
+  },
+  "en": {
+   "title": "OpenAI may have stolen proof on Gromov conjecture",
+   "short": "OpenAI may have stolen proof on Gromov conjecture",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "709ed8eac1a4"
   }
  }
 }

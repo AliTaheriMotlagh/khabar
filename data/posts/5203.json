@@ -145,6 +145,13 @@
    "model": "qwen3.5-9b-q4_k_m",
    "v": 2,
    "src": "ce9a072515dc"
+  },
+  "en": {
+   "title": "Author clarifies role in Navier-Stokes proof and release coordination",
+   "short": "Author clarifies role in NS proof",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "a1b0c1b00291"
   }
  }
 }

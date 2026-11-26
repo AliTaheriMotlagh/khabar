@@ -125,6 +125,12 @@
    "model": "qwen3.5-9b-q4_k_m",
    "v": 2,
    "src": "d673ef98641d"
+  },
+  "en": {
+   "failed": true,
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "16d584ab6bd4"
   }
  }
 }

@@ -117,6 +117,13 @@
    "model": "qwen3.5-9b-q4_k_m",
    "v": 2,
    "src": "df6bf21f3eb6"
+  },
+  "en": {
+   "title": "OpenAI shares playbook for building AI-powered Defense Factory",
+   "short": "OpenAI shares Defense Factory playbook",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "f96c44e3ed77"
   }
  }
 }

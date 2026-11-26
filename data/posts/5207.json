@@ -125,6 +125,13 @@
    "model": "qwen3.5-9b-q4_k_m",
    "v": 2,
    "src": "340d2e9192b7"
+  },
+  "en": {
+   "title": "OpenAI admits de-identified user data helped improve models",
+   "short": "OpenAI admits user data improved models",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "6d7f7e4f1397"
   }
  }
 }

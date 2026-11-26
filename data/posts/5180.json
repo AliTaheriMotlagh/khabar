@@ -109,6 +109,13 @@
    "model": "qwen3.5-9b-q4_k_m",
    "v": 2,
    "src": "ff877f3d6291"
+  },
+  "en": {
+   "title": "Clem argues for 100x more AI transparency after cyberattack disclosure",
+   "short": "Clem calls for 100x more AI transparency",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "4afaec5b1134"
   }
  }
 }

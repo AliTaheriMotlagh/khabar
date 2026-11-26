@@ -114,6 +114,13 @@
    "model": "qwen3.5-9b-q4_k_m",
    "v": 2,
    "src": "2454709eb6ae"
+  },
+  "en": {
+   "title": "Anthropic researcher Jacob Coxon resigns over AI safety concerns",
+   "short": "Anthropic researcher resigns over AI safety",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "10fe7354c11a"
   }
  }
 }

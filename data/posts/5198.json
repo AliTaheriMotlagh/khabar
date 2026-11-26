@@ -127,6 +127,13 @@
    "v": 1,
    "src": "db052b21dfe4",
    "added": 1
+  },
+  "en": {
+   "title": "Gradium launches Voice Design tool for custom accents",
+   "short": "Gradium launches Voice Design for custom accents",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "e29a6745d372"
   }
  }
 }

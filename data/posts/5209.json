@@ -119,6 +119,13 @@
    "model": "qwen3.5-9b-q4_k_m",
    "v": 2,
    "src": "5332d11ade55"
+  },
+  "en": {
+   "title": "Anthropic rolls out Muse personal AI assistant",
+   "short": "Anthropic launches new personal AI assistant Muse",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "d254cb6d1741"
   }
  }
 }

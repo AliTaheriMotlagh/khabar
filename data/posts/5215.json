@@ -116,6 +116,13 @@
    "model": "qwen3.5-9b-q4_k_m",
    "v": 2,
    "src": "8f4ad23fdb8f"
+  },
+  "en": {
+   "title": "AI Developer Says Superintelligence Could Kill All Humans",
+   "short": "AI expert warns of existential risk within decade",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "b66373880834"
   }
  }
 }

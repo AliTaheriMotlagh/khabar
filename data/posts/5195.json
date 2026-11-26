@@ -123,6 +123,13 @@
    "model": "qwen3.5-9b-q4_k_m",
    "v": 2,
    "src": "c1ff96f88137"
+  },
+  "en": {
+   "title": "US Treasury Sec Bessent Says Nothing Matters If China Wins AI",
+   "short": "Bessent: China winning AI makes defense irrelevant",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "02e4bc3fe102"
   }
  }
 }

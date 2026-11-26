@@ -130,6 +130,13 @@
    "model": "qwen3.5-9b-q4_k_m",
    "v": 2,
    "src": "f3f9200fd446"
+  },
+  "en": {
+   "title": "OpenAI Shares Solution to Navier-Stokes Millennium Prize Problem",
+   "short": "OpenAI shares Navier-Stokes solution",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "331ee72695b2"
   }
  }
 }
