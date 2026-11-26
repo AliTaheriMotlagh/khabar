@@ -134,6 +134,13 @@
    "v": 1,
    "src": "12926bbfd085",
    "added": 1
+  },
+  "en": {
+   "title": "Ox Alpha is Zai's GLM Flash and coming out tonight",
+   "short": "Ox Alpha is Zai's GLM Flash arriving tonight",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "b0d4d07a1e0e"
   }
  }
 }

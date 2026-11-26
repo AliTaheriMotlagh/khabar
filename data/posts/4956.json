@@ -98,6 +98,13 @@
    "model": "qwen3.5-9b-q4_k_m",
    "v": 2,
    "src": "efe14fbd70ab"
+  },
+  "en": {
+   "title": "AI progress rate changed once in three years with reasoning transition",
+   "short": "AI progress rate changed once in three years",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "1edcb8134c35"
   }
  }
 }

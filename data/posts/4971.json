@@ -114,6 +114,13 @@
    "model": "qwen3.5-9b-q4_k_m",
    "v": 2,
    "src": "ed54d436182e"
+  },
+  "en": {
+   "title": "Nvidia stock falls 4% after reporting record quarterly revenue",
+   "short": "Nvidia stock drops 4% despite record revenue",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "3c70d4d1b8a6"
   }
  }
 }

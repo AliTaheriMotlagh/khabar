@@ -114,6 +114,13 @@
    "model": "qwen3.5-9b-q4_k_m",
    "v": 2,
    "src": "7ceace2fee53"
+  },
+  "en": {
+   "title": "Applied Compute introduces AC2 Agent Cloud for frontier models",
+   "short": "Applied Compute launches AC2 Agent Cloud",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "bc5b0558b4d0"
   }
  }
 }

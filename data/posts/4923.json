@@ -114,6 +114,13 @@
    "model": "qwen3.5-9b-q4_k_m",
    "v": 2,
    "src": "ccc7d0abb627"
+  },
+  "en": {
+   "title": "Apple to launch new Mac mini ahead of September iPhone event",
+   "short": "New Mac mini coming before September iPhone launch",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "724df72ef4c3"
   }
  }
 }

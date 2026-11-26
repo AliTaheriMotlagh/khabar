@@ -138,6 +138,13 @@
    "model": "qwen3.5-9b-q4_k_m",
    "v": 2,
    "src": "6cb904e8b8b7"
+  },
+  "en": {
+   "title": "Anthropic preparing Fable 5.1 release for tomorrow",
+   "short": "Anthropic preparing Fable 5.1 release for tomorrow",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "94229f4920be"
   }
  }
 }

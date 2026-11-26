@@ -139,6 +139,13 @@
    "model": "qwen3.5-9b-q4_k_m",
    "v": 2,
    "src": "34f8442e07ba"
+  },
+  "en": {
+   "title": "SpaceX Announces $100 Billion Starbase Louisiana Spaceport",
+   "short": "SpaceX to build $100B spaceport in Louisiana",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "5fc09614cee7"
   }
  }
 }

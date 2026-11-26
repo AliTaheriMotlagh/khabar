@@ -111,6 +111,13 @@
    "model": "qwen3.5-9b-q4_k_m",
    "v": 2,
    "src": "57b9fbcb5adb"
+  },
+  "en": {
+   "title": "Robot hip joint cooled by removing pants and using fan",
+   "short": "Robot hip cooled by removing pants and using fan",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "3bb53ef13f3d"
   }
  }
 }

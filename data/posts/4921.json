@@ -136,6 +136,13 @@
    "model": "qwen3.5-9b-q4_k_m",
    "v": 2,
    "src": "1f1b0b583f6d"
+  },
+  "en": {
+   "title": "Thomson Reuters builds own AI model off Alibaba's Qwen",
+   "short": "Thomson Reuters builds AI off Alibaba's Qwen",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "690230b1e384"
   }
  }
 }

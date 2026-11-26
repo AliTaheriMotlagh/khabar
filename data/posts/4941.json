@@ -107,6 +107,13 @@
    "v": 1,
    "src": "0b024e727998",
    "added": 3
+  },
+  "en": {
+   "title": "Compilation of failures at World Humanoid Robot Games",
+   "short": "Failures at World Humanoid Robot Games",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "b7319db3fec9"
   }
  }
 }

@@ -158,6 +158,13 @@
    "model": "qwen3.5-9b-q4_k_m",
    "v": 2,
    "src": "8769ff78b40f"
+  },
+  "en": {
+   "title": "OpenAI Jalapeño Chip Beats Nvidia GB200 and GB300 on Speed and Efficiency",
+   "short": "OpenAI Jalapeño beats Nvidia GB200 and GB300",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "bd51c2c33bcb"
   }
  }
 }

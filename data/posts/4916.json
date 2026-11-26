@@ -118,6 +118,13 @@
    "model": "qwen3.5-9b-q4_k_m",
    "v": 2,
    "src": "57360d3f3e30"
+  },
+  "en": {
+   "title": "GPT-5.6 Sol pricing drops 20 to 33 percent",
+   "short": "GPT-5.6 Sol pricing drops 20 to 33 percent",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "e5bc6d86587b"
   }
  }
 }

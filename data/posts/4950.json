@@ -145,6 +145,13 @@
    "v": 1,
    "src": "e24d19aca692",
    "added": 1
+  },
+  "en": {
+   "title": "OneTriangle builds fast, cheap inference for DeepSeek V4 Flash",
+   "short": "OneTriangle optimizes DeepSeek V4 Flash inference",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "0bf9faa32ffd"
   }
  }
 }

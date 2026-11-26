@@ -119,6 +119,13 @@
    "model": "qwen3.5-9b-q4_k_m",
    "v": 2,
    "src": "bd8b8e8991c2"
+  },
+  "en": {
+   "title": "App Store sales drop for first time in a decade",
+   "short": "App Store sales drop for first time in decade",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "2492bb595485"
   }
  }
 }

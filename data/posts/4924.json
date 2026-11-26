@@ -120,6 +120,13 @@
    "v": 1,
    "src": "662f358ecc03",
    "added": 1
+  },
+  "en": {
+   "title": "Meta preparing to launch Hatch AI agent within weeks",
+   "short": "Meta launches Hatch AI agent soon",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "f83d94ab195f"
   }
  }
 }

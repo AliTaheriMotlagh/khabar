@@ -112,6 +112,13 @@
    "model": "qwen3.5-9b-q4_k_m",
    "v": 2,
    "src": "b68268c6ca6c"
+  },
+  "en": {
+   "title": "GLM-5.3-Flash scores 57 on Intelligence Index at $0.09 per task",
+   "short": "GLM-5.3-Flash scores 57 on Intelligence Index",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "eb2733d679f3"
   }
  }
 }

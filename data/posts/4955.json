@@ -109,6 +109,13 @@
    "model": "qwen3.5-9b-q4_k_m",
    "v": 2,
    "src": "778fb857cec9"
+  },
+  "en": {
+   "title": "Jacob Witten Explains siRNA Magic Button to Silence Genes",
+   "short": "Jacob Witten explains siRNA gene silencing",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "97fcd6c0e3fb"
   }
  }
 }

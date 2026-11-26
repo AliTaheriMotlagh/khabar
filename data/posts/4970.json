@@ -128,6 +128,13 @@
    "v": 1,
    "src": "9c26cf7c4184",
    "added": 1
+  },
+  "en": {
+   "title": "NVIDIA Q2 Earnings Beat Estimates on Solana",
+   "short": "NVIDIA Q2 Revenue Hits $96.2B",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "2d3ad2bb6fc2"
   }
  }
 }

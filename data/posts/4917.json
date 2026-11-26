@@ -105,6 +105,13 @@
    "model": "qwen3.5-9b-q4_k_m",
    "v": 2,
    "src": "9fb7341f70d8"
+  },
+  "en": {
+   "title": "Economist places AI consciousness on cover as topic gains relevance",
+   "short": "Economist features AI consciousness on cover",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "c5c6d94c695d"
   }
  }
 }

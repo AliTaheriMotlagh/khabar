@@ -104,6 +104,13 @@
    "model": "qwen3.5-9b-q4_k_m",
    "v": 2,
    "src": "78c6258fd17e"
+  },
+  "en": {
+   "title": "Chinese Robots Pack Themselves for Sleep",
+   "short": "Chinese robots pack themselves for sleep",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "2f7b41c8044e"
   }
  }
 }

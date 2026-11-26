@@ -109,6 +109,13 @@
    "model": "qwen3.5-9b-q4_k_m",
    "v": 2,
    "src": "c34dc9ed6bb3"
+  },
+  "en": {
+   "title": "Trump administration proposes six-figure fee for most new H-1B visa applicants",
+   "short": "Trump admin proposes fee for H-1B visas",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "dd9966ee6174"
   }
  }
 }

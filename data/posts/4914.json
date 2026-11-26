@@ -130,6 +130,13 @@
    "v": 1,
    "src": "5d6dce65e70f",
    "added": 1
+  },
+  "en": {
+   "title": "FDA authorizes first standalone robotic blood draw device Aletta",
+   "short": "FDA approves robotic blood draw device Aletta",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "9d5bba386cbb"
   }
  }
 }

@@ -146,6 +146,13 @@
    "model": "qwen3.5-9b-q4_k_m",
    "v": 2,
    "src": "151087ab8003"
+  },
+  "en": {
+   "title": "Ox Alpha stealth model offers 3x fewer tokens than Fable in Cline benchmarks",
+   "short": "Ox Alpha uses 3x fewer tokens than Fable",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "055c34438a9a"
   }
  }
 }

@@ -139,6 +139,13 @@
    "model": "qwen3.5-9b-q4_k_m",
    "v": 2,
    "src": "94cd9efa659c"
+  },
+  "en": {
+   "title": "AgentSky launches unified API for Claude Code, DeepSeek and other agents",
+   "short": "AgentSky offers unified API for multiple AI agents",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "2712ea94d7ef"
   }
  }
 }

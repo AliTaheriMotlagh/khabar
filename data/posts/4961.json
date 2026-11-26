@@ -146,6 +146,13 @@
    "v": 1,
    "src": "2e792f8dd9df",
    "added": 1
+  },
+  "en": {
+   "title": "Z.ai introduces GLM-5.3-Flash multimodal model with 1M-token context",
+   "short": "Z.ai launches GLM-5.3-Flash model now",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "8e8496a2cf94"
   }
  }
 }

@@ -118,6 +118,13 @@
    "model": "qwen3.5-9b-q4_k_m",
    "v": 2,
    "src": "24785e003a41"
+  },
+  "en": {
+   "title": "Anthropic estimates total addressable market at $30 trillion",
+   "short": "Anthropic estimates TAM at $30 trillion",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "4f24bfaa9af2"
   }
  }
 }

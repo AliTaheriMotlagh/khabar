@@ -145,6 +145,13 @@
    "v": 1,
    "src": "a7659cb345c4",
    "added": 1
+  },
+  "en": {
+   "title": "Google Research introduces GlucoFM foundation model for continuous glucose monitoring",
+   "short": "Google launches GlucoFM for glucose monitoring",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "3f96a1504820"
   }
  }
 }

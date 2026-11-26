@@ -152,6 +152,13 @@
    "model": "qwen3.5-9b-q4_k_m",
    "v": 2,
    "src": "916f65adf645"
+  },
+  "en": {
+   "title": "Qwen 3.8 Flash Next releases tomorrow with 125B parameters",
+   "short": "Qwen 3.8 Flash Next releases tomorrow",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "b3eed6839718"
   }
  }
 }

@@ -111,6 +111,13 @@
    "model": "qwen3.5-9b-q4_k_m",
    "v": 2,
    "src": "5a76610caf29"
+  },
+  "en": {
+   "title": "OpenAI releases technical report on Hugging Face incident",
+   "short": "OpenAI releases report on Hugging Face incident",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "71fb7fd43cb3"
   }
  }
 }

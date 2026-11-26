@@ -151,6 +151,13 @@
    "model": "qwen3.5-9b-q4_k_m",
    "v": 2,
    "src": "9f34bf2e794b"
+  },
+  "en": {
+   "title": "OpenAI says custom Jalapeño chip beats Nvidia GB200 and GB300",
+   "short": "OpenAI chip beats Nvidia on speed and efficiency",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "77c5e5eb3130"
   }
  }
 }

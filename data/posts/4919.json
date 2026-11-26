@@ -123,6 +123,13 @@
    "model": "qwen3.5-9b-q4_k_m",
    "v": 2,
    "src": "bf6ab33bd074"
+  },
+  "en": {
+   "title": "55% of companies regret AI layoffs and are rehiring workers",
+   "short": "55% regret AI layoffs, rehiring workers",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "9d749895b02f"
   }
  }
 }
