@@ -69,5 +69,23 @@
    "کوانتوم"
   ]
  },
- "updated": "2026-11-26T15:47:23+00:00"
+ "updated": "2026-11-26T15:47:23+00:00",
+ "ai": {
+  "title": "فیزیکدان استنفورد گرانش را کوانتومی کرد: GPT-6 Astra در این کار نقش داشته",
+  "short": "کوانتومی کردن گرانش",
+  "topics": [
+   "کوانتوم"
+  ],
+  "type": "پژوهش و مقاله",
+  "model": "qwen3.5-9b-q4_k_m",
+  "v": 2,
+  "src": "69c91a128303",
+  "en": {
+   "title": "Stanford physicist Venkatesa Chandrasekaran has algebraically quantized gravity",
+   "short": "Stanford physicist quantizes gravity",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "142e21c2cd87"
+  }
+ }
 }
