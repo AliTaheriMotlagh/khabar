@@ -19,32 +19,6 @@
   "text": "رفیق، یه پست خیلی کوتاه از حساب @mustafasuleyman منتشر شده که توش نوشته «داریم از یه آستانه عبور می‌کنیم» و گفته الان فقط کار روی ایمنی و هم‌راستایی اهمیت داره. غیر از همین دو جمله، متن یا تصویر دیگه‌ای در دسترس نیست و دقیق‌تر مشخص نیست که دقیقاً به چه موضوع یا اتفاقی اشاره داره.",
   "date": "2026-11-25T22:05:16+00:00"
  },
- "links": [
-  {
-   "kind": "tweet",
-   "url": "https://x.com/mustafasuleyman/status/2125446171909136630",
-   "domain": "x.com",
-   "author": {
-    "name": "Mustafa Suleyman",
-    "handle": "mustafasuleyman",
-    "avatar": "https://pbs.twimg.com/profile_images/1927407622602276864/c_5uOZij_200x200.jpg"
-   },
-   "text": "We are crossing a threshold. Safety and alignment work is the only thing that matters.",
-   "date": 1795580830,
-   "media": [],
-   "links": []
-  }
- ],
- "article": {
-  "title": "یه پست خیلی کوتاه از حساب @mustafasuleyman منتشر شده که توش نوشته «داریم از یه آستانه عبور می‌کنیم» و گفته الان فقط کار روی ایمنی و هم‌راستایی اهمیت داره",
-  "source_title": "We are crossing a threshold. Safety and alignment work is the only thing that matters.",
-  "body": [
-   "یه پست خیلی کوتاه از حساب @mustafasuleyman منتشر شده که توش نوشته «داریم از یه آستانه عبور می‌کنیم» و گفته الان فقط کار روی ایمنی و هم‌راستایی اهمیت داره. غیر از همین دو جمله، متن یا تصویر دیگه‌ای در دسترس نیست و دقیق‌تر مشخص نیست که دقیقاً به چه موضوع یا اتفاقی اشاره داره."
-  ],
-  "why": null,
-  "tags": []
- },
- "updated": "2026-11-25T22:10:09+00:00",
  "ai": {
   "title": "mustafasuleyman: ایمنی و هم‌راستایی تنها چیزی است که اهمیت دارد",
   "short": "ایمنی و هم‌راستایی مهم‌اند",
@@ -106,5 +80,31 @@
    "src": "13eb69916c01",
    "added": 1
   }
- }
+ },
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/mustafasuleyman/status/2125446171909136630",
+   "domain": "x.com",
+   "author": {
+    "name": "Mustafa Suleyman",
+    "handle": "mustafasuleyman",
+    "avatar": "https://pbs.twimg.com/profile_images/1927407622602276864/c_5uOZij_200x200.jpg"
+   },
+   "text": "We are crossing a threshold. Safety and alignment work is the only thing that matters.",
+   "date": 1795580830,
+   "media": [],
+   "links": []
+  }
+ ],
+ "article": {
+  "title": "یه پست خیلی کوتاه از حساب @mustafasuleyman منتشر شده که توش نوشته «داریم از یه آستانه عبور می‌کنیم» و گفته الان فقط کار روی ایمنی و هم‌راستایی اهمیت داره",
+  "source_title": "We are crossing a threshold. Safety and alignment work is the only thing that matters.",
+  "body": [
+   "یه پست خیلی کوتاه از حساب @mustafasuleyman منتشر شده که توش نوشته «داریم از یه آستانه عبور می‌کنیم» و گفته الان فقط کار روی ایمنی و هم‌راستایی اهمیت داره. غیر از همین دو جمله، متن یا تصویر دیگه‌ای در دسترس نیست و دقیق‌تر مشخص نیست که دقیقاً به چه موضوع یا اتفاقی اشاره داره."
+  ],
+  "why": null,
+  "tags": []
+ },
+ "updated": "2026-11-26T01:39:25+00:00"
 }

@@ -1,0 +1,74 @@
+{
+ "id": 6750,
+ "url": "https://t.me/dlmehr/6750",
+ "date": "2026-11-26T01:35:58+00:00",
+ "text": "https://x.com/kadenzheng/status/2125648943971213813",
+ "forwarded_from": "Amirreza",
+ "digest": false,
+ "hash": "ddb7729af251",
+ "media": [],
+ "preview": {
+  "url": "https://x.com/kadenzheng/status/2125648943971213813",
+  "site": "X (formerly Twitter)",
+  "title": "Kaden Zheng (@kadenzheng) on X",
+  "description": "What if inside every Transformer, there was a smaller, faster, and better one?\nWith Model Carving, we let gradient descent find it during training: up to 34% smaller, 1.6× faster decoding, and be…",
+  "image": "https://cdn4.telesco.pe/file/MnwS7ztbyZpAhUNpG96DcKPeBAxduShIK19aacMKOR8Y_M7baJdLyRuekSfQKFYT-d3Fv01S75w3Hy3wxZtfAcXA0zh74FhXxlZv0JoaylTN--rwD8AiQJiHMtiSb8Kpc0K8msLqp7DGrghmCEK-OpgNQX95JO3Su8-qZfm0l9ZKIx_kIMccgbz8Zeq7rwwF6ExkSIhmgZJgEk-RsFyj1T6cw65akpVeJSTpQhyewwPrlAUmiNI-nY89tPlqHpIB9lJFC4EIOt8PU4Vm8uvXeBq1YuF-3TAFHLnlOW-OcAm-ig0WDpCCrmyJixX9XtOqU_4ZxJavgryBSZIaUzodPA.jpg"
+ },
+ "gholam": {
+  "text": "رفقا، کیدن ژنگ و پراتیوشا شارما (پژوهشگرهای هاروارد و دانشگاه نیویورک) یه روش تازه به اسم «Model Carving» معرفی کردن که داستانش اینه: به جای اینکه لباسِ مدل هوش مصنوعی رو از اول ثابت بدوزیم یا آخر کار بیفتیم به جونش برای هرس کردن، خودِ آموزش هم‌زمان با یادگیری، بخش‌های اضافی شبکه رو می‌تراشه و کنار می‌ذاره! 🗿\nتوی این روش به هر زیرلایه یه دریچه یادگیرنده وصل می‌شه که هزینه محاسباتیش هم پایش نوشته می‌شه؛ هر کدوم به‌اندازه خرجش فایده نرسونه، دریچه‌ش صفر می‌شه و کلاً از مدل حذف می‌شه.\n\n• طبق گزارشی که نویسنده‌ها تو پیش‌انتشار مقاله‌شون (در حال داوری برای ICLR 2027) دادن، مدل‌های تراش‌خورده موقع اجرا تا ۳۴ درصد محاسبات کمتری می‌برن و تا ۱.۶ برابر سریع‌تر خروجی می‌دن، در حالی که به کیفیتی می‌رسن که مدل‌های معمولی با تا ۱.۷ برابر توان محاسباتی بیشتر بهش می‌رسیدن.\n• یه مدل ۲.۷ میلیاردی که با این روش به ۱.۷۵ میلیارد پارامتر آب رفته، با بودجه اجرای برابر روی آزمون‌های ریاضی MATH-500 و GSM8K به‌ترتیب ۳۷ و ۳۲ درصد مسائل بیشتری نسبت به نسخه ۲.۷ میلیاردی معمولی حل کرده و مصرف کش KV رو هم ۳۱ درصد پایین آورده.\n• به گفته پژوهشگرها، این روش تا ۳.۷ امتیاز توی معیار CORE-22 از تقطیر و هرسِ بعد از آموزش جلوتره و این برتری حتی بعد از تنظیم دستوری و کوانتیزه‌سازی ۴ بیتی هم سر جاش می‌مونه.\n\nبه قول مجسمه‌سازها، اینجا خودِ سنگ نشون می‌ده کجاش اضافیه؛ البته یادمون باشه این نتایج فعلاً مال یه پیش‌انتشار علمیه و آزمایش‌هاشون هم تا مقیاس ۲.۷ میلیارد پارامتر انجام شده.",
+  "date": "2026-11-26T01:36:42+00:00"
+ },
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/kadenzheng/status/2125648943971213813",
+   "domain": "x.com",
+   "author": {
+    "name": "Kaden Zheng",
+    "handle": "kadenzheng",
+    "avatar": "https://pbs.twimg.com/profile_images/1996373938910502912/JefZSj8I_200x200.jpg"
+   },
+   "text": "What if inside every Transformer, there was a smaller, faster, and better one?\n\nWith Model Carving, we let gradient descent find it during training: up to 34% smaller, 1.6× faster decoding, and better than models trained with up to 1.7× the compute! 🧵\n\n📝 Blog: https://kadenzheng.com/model-carving/\n📄 Paper: https://arxiv.org/abs/2611.27962\n💻 Code: https://github.com/KadenZheng/model-carving\n\nw/ Pratyusha Sharma @pratyusha_PS!",
+   "date": 1795629175,
+   "media": [
+    {
+     "type": "video",
+     "src": "https://video.twimg.com/amplify_video/2125648738836213761/vid/avc1/1280x720/94WzkU6CragQLxs3.mp4?tag=29",
+     "poster": "https://pbs.twimg.com/amplify_video_thumb/2125648738836213761/img/9q0NoKND5EYVJLKS.jpg",
+     "ratio": 0.5625,
+     "duration": 72.766,
+     "gif": false
+    }
+   ],
+   "links": [
+    "https://kadenzheng.com/model-carving/",
+    "https://arxiv.org/abs/2611.27962",
+    "https://github.com/KadenZheng/model-carving"
+   ]
+  },
+  {
+   "kind": "link",
+   "url": "https://kadenzheng.com/model-carving/",
+   "domain": "kadenzheng.com",
+   "title": "Model Carving: Training Transformers That Optimize Their Own Topology",
+   "description": "Model Carving learns a Transformer's topology while it trains: gated sublayers that don't earn their FLOPs are removed, giving lower loss with up to 34% fewer inference FLOPs.",
+   "image": "https://kadenzheng.com/model-carving/static/images/social_preview.png",
+   "site": "Kaden Zheng"
+  }
+ ],
+ "article": {
+  "title": "کیدن ژنگ و پراتیوشا شارما (پژوهشگرهای هاروارد و دانشگاه نیویورک) یه روش تازه به اسم «Model Carving» معرفی کردن که داستانش اینه: به جای اینکه لباسِ مدل هوش مصنوعی رو از اول ثابت بدوزیم یا آخر کار بیفتیم به جونش برای هرس کردن، خودِ آموزش هم‌زمان با یادگیری، بخش‌های اضافی شبکه رو می‌تراشه و کنار می‌ذاره",
+  "source_title": "What if inside every Transformer, there was a smaller, faster, and better one?",
+  "body": [
+   "کیدن ژنگ و پراتیوشا شارما (پژوهشگرهای هاروارد و دانشگاه نیویورک) یه روش تازه به اسم «Model Carving» معرفی کردن که داستانش اینه: به جای اینکه لباسِ مدل هوش مصنوعی رو از اول ثابت بدوزیم یا آخر کار بیفتیم به جونش برای هرس کردن، خودِ آموزش هم‌زمان با یادگیری، بخش‌های اضافی شبکه رو می‌تراشه و کنار می‌ذاره! 🗿",
+   "توی این روش به هر زیرلایه یه دریچه یادگیرنده وصل می‌شه که هزینه محاسباتیش هم پایش نوشته می‌شه؛ هر کدوم به‌اندازه خرجش فایده نرسونه، دریچه‌ش صفر می‌شه و کلاً از مدل حذف می‌شه.",
+   "• طبق گزارشی که نویسنده‌ها تو پیش‌انتشار مقاله‌شون (در حال داوری برای ICLR 2027) دادن، مدل‌های تراش‌خورده موقع اجرا تا ۳۴ درصد محاسبات کمتری می‌برن و تا ۱.۶ برابر سریع‌تر خروجی می‌دن، در حالی که به کیفیتی می‌رسن که مدل‌های معمولی با تا ۱.۷ برابر توان محاسباتی بیشتر بهش می‌رسیدن.",
+   "• یه مدل ۲.۷ میلیاردی که با این روش به ۱.۷۵ میلیارد پارامتر آب رفته، با بودجه اجرای برابر روی آزمون‌های ریاضی MATH-500 و GSM8K به‌ترتیب ۳۷ و ۳۲ درصد مسائل بیشتری نسبت به نسخه ۲.۷ میلیاردی معمولی حل کرده و مصرف کش KV رو هم ۳۱ درصد پایین آورده.",
+   "• به گفته پژوهشگرها، این روش تا ۳.۷ امتیاز توی معیار CORE-22 از تقطیر و هرسِ بعد از آموزش جلوتره و این برتری حتی بعد از تنظیم دستوری و کوانتیزه‌سازی ۴ بیتی هم سر جاش می‌مونه."
+  ],
+  "why": "به قول مجسمه‌سازها، اینجا خودِ سنگ نشون می‌ده کجاش اضافیه؛ البته یادمون باشه این نتایج فعلاً مال یه پیش‌انتشار علمیه و آزمایش‌هاشون هم تا مقیاس ۲.۷ میلیارد پارامتر انجام شده.",
+  "why_label": "حرف آخر",
+  "tags": []
+ },
+ "updated": "2026-11-26T01:39:25+00:00"
+}

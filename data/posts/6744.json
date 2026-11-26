@@ -19,47 +19,6 @@
   "text": "رفقا، اکانت OfficialLoganK تو یه پست یادآوری کرده که چند هفته پیش ابزار خط فرمانِ Gemini API CLI رو منتشر کردن تا ایجنت‌های کدنویسی خیلی راحت بتونن از «Gemini Neon» و بقیه مدل‌هاشون استفاده کنن. به گفته خودش این ابزار متن‌باز کار رو مثل آب خوردن کرده و برای شروع فقط یه کلید API می‌خواد. اون همچنین از LyalinDotCom و تیمش بابت زحمت‌های چند ماه اخیرشون تشکر کرده و گفته استقبال ازش خیلی سریع بالا رفته؛ البته جزئیات صفحه گیت‌هابش اینجا در دسترس نبود که زیر و بمش رو ببینیم. 💻",
   "date": "2026-11-25T20:06:00+00:00"
  },
- "links": [
-  {
-   "kind": "tweet",
-   "url": "https://x.com/OfficialLoganK/status/2125681386388422775",
-   "domain": "x.com",
-   "author": {
-    "name": "Logan Kilpatrick",
-    "handle": "OfficialLoganK",
-    "avatar": "https://pbs.twimg.com/profile_images/1943787288955084800/QOl7OJMc_200x200.jpg"
-   },
-   "text": "PSA, we tried to make it super easy for your coding agent of choice to use Gemini Neon and all of our models via the Gemini API CLI we shipped a few weeks ago! \n\nIt is open source and just requires an API key to get started: https://github.com/google-gemini/gemini-api-cli",
-   "date": 1795636910,
-   "media": [],
-   "links": [
-    "https://github.com/google-gemini/gemini-api-cli"
-   ]
-  },
-  {
-   "kind": "link",
-   "url": "https://github.com/google-gemini/gemini-api-cli",
-   "domain": "github.com",
-   "title": "GitHub - google-gemini/gemini-api-cli: An (experimental) CLI for the Gemini API",
-   "description": "An (experimental) CLI for the Gemini API. Contribute to google-gemini/gemini-api-cli development by creating an account on GitHub.",
-   "image": "https://opengraph.githubassets.com/61babc736d5458d64d533d50dd99d7a52277cdd23b5f6e2787d73900258d8ce7/google-gemini/gemini-api-cli",
-   "site": "GitHub"
-  }
- ],
- "article": {
-  "title": "اکانت OfficialLoganK تو یه پست یادآوری کرده که چند هفته پیش ابزار خط فرمانِ Gemini API CLI رو منتشر کردن تا ایجنت‌های کدنویسی خیلی راحت بتونن از «Gemini Neon» و بقیه مدل‌هاشون استفاده کنن",
-  "source_title": "PSA, we tried to make it super easy for your coding agent of choice to use Gemini Neon and all of our models via the Gemini API CLI we…",
-  "body": [
-   "اکانت OfficialLoganK تو یه پست یادآوری کرده که چند هفته پیش ابزار خط فرمانِ Gemini API CLI رو منتشر کردن تا ایجنت‌های کدنویسی خیلی راحت بتونن از «Gemini Neon» و بقیه مدل‌هاشون استفاده کنن. به گفته خودش این ابزار متن‌باز کار رو مثل آب خوردن کرده و برای شروع فقط یه کلید API می‌خواد. اون همچنین از LyalinDotCom و تیمش بابت زحمت‌های چند ماه اخیرشون تشکر کرده و گفته استقبال ازش خیلی سریع بالا رفته؛ البته جزئیات صفحه گیت‌هابش اینجا در دسترس نبود که زیر و بمش رو ببینیم. 💻"
-  ],
-  "why": null,
-  "tags": [
-   "گوگل",
-   "کدنویسی",
-   "ایجنت"
-  ]
- },
- "updated": "2026-11-25T20:08:35+00:00",
  "ai": {
   "title": "Gemini API CLI ابزاری متن‌باز برای اتصال ایجنت‌ها به مدل‌های گوگل شد",
   "short": "Gemini API CLI متن‌باز",
@@ -150,5 +109,46 @@
    "src": "c98ccd3dc4b7",
    "added": 2
   }
- }
+ },
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/OfficialLoganK/status/2125681386388422775",
+   "domain": "x.com",
+   "author": {
+    "name": "Logan Kilpatrick",
+    "handle": "OfficialLoganK",
+    "avatar": "https://pbs.twimg.com/profile_images/1943787288955084800/QOl7OJMc_200x200.jpg"
+   },
+   "text": "PSA, we tried to make it super easy for your coding agent of choice to use Gemini Neon and all of our models via the Gemini API CLI we shipped a few weeks ago! \n\nIt is open source and just requires an API key to get started: https://github.com/google-gemini/gemini-api-cli",
+   "date": 1795636910,
+   "media": [],
+   "links": [
+    "https://github.com/google-gemini/gemini-api-cli"
+   ]
+  },
+  {
+   "kind": "link",
+   "url": "https://github.com/google-gemini/gemini-api-cli",
+   "domain": "github.com",
+   "title": "GitHub - google-gemini/gemini-api-cli: An (experimental) CLI for the Gemini API",
+   "description": "An (experimental) CLI for the Gemini API. Contribute to google-gemini/gemini-api-cli development by creating an account on GitHub.",
+   "image": "https://opengraph.githubassets.com/61babc736d5458d64d533d50dd99d7a52277cdd23b5f6e2787d73900258d8ce7/google-gemini/gemini-api-cli",
+   "site": "GitHub"
+  }
+ ],
+ "article": {
+  "title": "اکانت OfficialLoganK تو یه پست یادآوری کرده که چند هفته پیش ابزار خط فرمانِ Gemini API CLI رو منتشر کردن تا ایجنت‌های کدنویسی خیلی راحت بتونن از «Gemini Neon» و بقیه مدل‌هاشون استفاده کنن",
+  "source_title": "PSA, we tried to make it super easy for your coding agent of choice to use Gemini Neon and all of our models via the Gemini API CLI we…",
+  "body": [
+   "اکانت OfficialLoganK تو یه پست یادآوری کرده که چند هفته پیش ابزار خط فرمانِ Gemini API CLI رو منتشر کردن تا ایجنت‌های کدنویسی خیلی راحت بتونن از «Gemini Neon» و بقیه مدل‌هاشون استفاده کنن. به گفته خودش این ابزار متن‌باز کار رو مثل آب خوردن کرده و برای شروع فقط یه کلید API می‌خواد. اون همچنین از LyalinDotCom و تیمش بابت زحمت‌های چند ماه اخیرشون تشکر کرده و گفته استقبال ازش خیلی سریع بالا رفته؛ البته جزئیات صفحه گیت‌هابش اینجا در دسترس نبود که زیر و بمش رو ببینیم. 💻"
+  ],
+  "why": null,
+  "tags": [
+   "گوگل",
+   "کدنویسی",
+   "ایجنت"
+  ]
+ },
+ "updated": "2026-11-26T01:39:25+00:00"
 }
