@@ -1,0 +1,62 @@
+{
+ "id": 6752,
+ "url": "https://t.me/dlmehr/6752",
+ "date": "2026-11-26T03:01:18+00:00",
+ "text": "https://fxtwitter.com/superalesha/status/2125682626056839259?a=lrgo8hFDrNPApZ55gvY&s=52",
+ "forwarded_from": null,
+ "digest": false,
+ "hash": "43e2fb99e13e",
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/superalesha/status/2125682626056839259?a=lrgo8hFDrNPApZ55gvY&s=52",
+  "site": "🧵 Thread • FxTwitter",
+  "title": "Alexey Fateev (@superalesha)",
+  "description": "I deleted Linux completely, baked Qwen3-0.6B into a 24 KB pure x86-64 assembly OS, and it runs up to 54% faster than native Linux llama.cpp.\nThe entire Multiboot OS binary (asm-llm-os.elf) is 24,252 bytes, written from scratch without Linux, Windows, C,…",
+  "image": null
+ },
+ "gholam": {
+  "text": "رفقا، یه توسعه‌دهنده با اسم کاربری superalesha یه کار فنیِ حسابی عجیب کرده و کلاً قید سیستم‌عامل‌های معمولی رو زده تا هوش مصنوعی رو مستقیم روی سخت‌افزار بدوونه ⚡ به گفته خودش، لینوکس رو کامل گذاشته کنار و مدل Qwen3-0.6B رو توی یه سیستم‌عامل اختصاصی به حجم حدود ۲۴ کیلوبایت جا داده که از صفر و با زبان اسمبلی x86-64 (بدون C، Rust یا کتابخونه‌های مرسوم) نوشته شده؛ یعنی کل سیستم‌عاملش اندازه یه عکس کم‌حجم هم نیست!\n\n• به روایت سازنده‌اش، این سیستم‌عامل توی ۷۴ تا ۹۴ میلی‌ثانیه بوت می‌شه، فایل ۶۱۴ مگابایتی وزن‌های مدل رو مستقیم توی رم می‌چینه و بلافاصله محیط چت زنده رو میاره بالا.\n• طبق بنچمارک‌هایی که خودش روی پردازنده AMD EPYC 7642 منتشر کرده، سرعت اجراش نسبت به llama.cpp روی لینوکس تا ۵۴ درصد بیشتر بوده؛ مثلاً با ۴ هسته به ۷۸.۸۹ توکن بر ثانیه و با ۱۶ هسته به حدود ۱۳۵ توکن بر ثانیه رسیده.\n• همچنین می‌گه روی یه ماشین مجازیِ بدون هارد با ۲ گیگابایت رم و پردازنده زئون ۲۰۱۴ هم زیر ۵ ثانیه بالا اومده و ۶۴ توکن اول خروجی‌اش با نسخه مرجع PyTorch FP32 تطابق داشته.\n\nنویسنده گفته کد پروژه رو تحت مجوز آزاد MIT منتشر کرده، هرچند چون صفحه گیت‌هابش در دسترس نبود، جزئیات داخل کد و این اعداد رو نمی‌شه مستقل تایید کرد.",
+  "date": "2026-11-26T03:01:41+00:00"
+ },
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/superalesha/status/2125682626056839259",
+   "domain": "x.com",
+   "author": {
+    "name": "Alexey Fateev",
+    "handle": "superalesha",
+    "avatar": "https://pbs.twimg.com/profile_images/2074424168179769344/pBJWRZvX_200x200.jpg"
+   },
+   "text": "I deleted Linux completely, baked Qwen3-0.6B into a 24 KB pure x86-64 assembly OS, and it runs up to 54% faster than native Linux llama.cpp.\n\nThe entire Multiboot OS binary (asm-llm-os.elf) is 24,252 bytes, written from scratch without Linux, Windows, C, Rust, or libc. It boots in 74 to 94 ms straight into 64-bit Long Mode, wakes every CPU core over APIC, maps the 614 MiB Q8_0 weights directly from physical RAM, and drops you into a live multi-turn KV-cache chat over VGA, PS/2 keyboard, and serial.\n\nI ran head-to-head CPU benchmarks against llama.cpp (Q8_0, -ngl 0) on the same AMD EPYC 7642:\n\n- 1 thread hits 23.67 tok/s vs 16.63 (+42%)\n- 4 threads hit 78.89 tok/s vs 51.08 (+54%)\n- 8 threads hit 118.08 tok/s vs 80.79 (+46%)\n- 16 threads hit 134.94 tok/s vs 103.03 (+31%, 136.6 peak)\n\nOn a diskless 0 GB Proxmox VM (2014 12-core Intel Xeon E5-2670 v3, 2 GiB RAM), it boots straight to the prompt in under 5 seconds (95 ms kernel boot) and runs live out of RAM at 78 tok/s decode and up to 111.5 tok/s prefill, with a hybrid BIOS+UEFI ISO builder included too. Output stays bit-exact across thread counts and matches all 64 greedy tokens against PyTorch FP32 (0.99965 cosine).\n\nThe 14.7 KB Linux ELF build (FAST_Q8=1 INT8xINT8 AVX2+F16C) also beats llama.cpp by 18% to 36% from 1 to 40 threads, and booting bare metal with 2 MiB huge pages squeezes out another 10% on top.\n\nRepo, ISO builder, and Proxmox setup guide are in the reply below.",
+   "date": 1795637205,
+   "media": [
+    {
+     "type": "video",
+     "src": "https://video.twimg.com/ext_tw_video/2125681516449550336/pu/vid/avc1/1040x720/efVlOYXFgxkASoc4.mp4?tag=12",
+     "poster": "https://pbs.twimg.com/ext_tw_video_thumb/2125681516449550336/pu/img/HrWdYggoykJJTNeE.jpg",
+     "ratio": 0.6912,
+     "duration": 30.7,
+     "gif": false
+    }
+   ],
+   "links": []
+  }
+ ],
+ "article": {
+  "title": "یه توسعه‌دهنده با اسم کاربری superalesha یه کار فنیِ حسابی عجیب کرده و کلاً قید سیستم‌عامل‌های معمولی رو زده تا هوش مصنوعی رو مستقیم روی سخت‌افزار بدوونه ⚡ به گفته خودش، لینوکس رو کامل گذاشته کنار و…",
+  "source_title": "I deleted Linux completely, baked Qwen3-0.6B into a 24 KB pure x86-64 assembly OS, and it runs up to 54% faster than native Linux llama.cpp.",
+  "body": [
+   "یه توسعه‌دهنده با اسم کاربری superalesha یه کار فنیِ حسابی عجیب کرده و کلاً قید سیستم‌عامل‌های معمولی رو زده تا هوش مصنوعی رو مستقیم روی سخت‌افزار بدوونه ⚡ به گفته خودش، لینوکس رو کامل گذاشته کنار و مدل Qwen3-0.6B رو توی یه سیستم‌عامل اختصاصی به حجم حدود ۲۴ کیلوبایت جا داده که از صفر و با زبان اسمبلی x86-64 (بدون C، Rust یا کتابخونه‌های مرسوم) نوشته شده؛ یعنی کل سیستم‌عاملش اندازه یه عکس کم‌حجم هم نیست!",
+   "• به روایت سازنده‌اش، این سیستم‌عامل توی ۷۴ تا ۹۴ میلی‌ثانیه بوت می‌شه، فایل ۶۱۴ مگابایتی وزن‌های مدل رو مستقیم توی رم می‌چینه و بلافاصله محیط چت زنده رو میاره بالا.",
+   "• طبق بنچمارک‌هایی که خودش روی پردازنده AMD EPYC 7642 منتشر کرده، سرعت اجراش نسبت به llama.cpp روی لینوکس تا ۵۴ درصد بیشتر بوده؛ مثلاً با ۴ هسته به ۷۸.۸۹ توکن بر ثانیه و با ۱۶ هسته به حدود ۱۳۵ توکن بر ثانیه رسیده.",
+   "• همچنین می‌گه روی یه ماشین مجازیِ بدون هارد با ۲ گیگابایت رم و پردازنده زئون ۲۰۱۴ هم زیر ۵ ثانیه بالا اومده و ۶۴ توکن اول خروجی‌اش با نسخه مرجع PyTorch FP32 تطابق داشته."
+  ],
+  "why": "نویسنده گفته کد پروژه رو تحت مجوز آزاد MIT منتشر کرده، هرچند چون صفحه گیت‌هابش در دسترس نبود، جزئیات داخل کد و این اعداد رو نمی‌شه مستقل تایید کرد.",
+  "why_label": "حرف آخر",
+  "tags": [
+   "متا"
+  ]
+ },
+ "updated": "2026-11-26T03:04:53+00:00"
+}
