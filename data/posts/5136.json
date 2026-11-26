@@ -143,6 +143,13 @@
    "model": "qwen3.5-9b-q4_k_m",
    "v": 2,
    "src": "00e871dabbce"
+  },
+  "en": {
+   "title": "Four AI models experience simultaneous service disruptions",
+   "short": "Four AI models face simultaneous outages",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "daf985d1e4d2"
   }
  }
 }

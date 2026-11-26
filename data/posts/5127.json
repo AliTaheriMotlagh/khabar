@@ -114,6 +114,13 @@
    "model": "qwen3.5-9b-q4_k_m",
    "v": 2,
    "src": "8fe39a5cb7ba"
+  },
+  "en": {
+   "title": "GPT-6 benchmarks released by Andrew Curran",
+   "short": "GPT-6 benchmarks released",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "49c713899b29"
   }
  }
 }

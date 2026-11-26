@@ -125,6 +125,13 @@
    "model": "qwen3.5-9b-q4_k_m",
    "v": 2,
    "src": "f252901f453c"
+  },
+  "en": {
+   "title": "Alex Tells Astra To Open Microsoft Paint And Draw",
+   "short": "Alex Asks Astra To Draw In Paint",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "c6ed9fffdd09"
   }
  }
 }

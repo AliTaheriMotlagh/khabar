@@ -139,6 +139,13 @@
    "model": "qwen3.5-9b-q4_k_m",
    "v": 2,
    "src": "04e3669ab156"
+  },
+  "en": {
+   "title": "NVIDIA Nemotron Model Scores Higher Than Humans at IOI 2026",
+   "short": "NVIDIA model beats humans at IOI 2026",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "8868aaca303d"
   }
  }
 }

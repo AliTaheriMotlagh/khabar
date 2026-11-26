@@ -102,6 +102,13 @@
    "model": "qwen3.5-9b-q4_k_m",
    "v": 2,
    "src": "74802be418a5"
+  },
+  "en": {
+   "title": "ThePrimeagen Reports All AI Services Are Down",
+   "short": "ThePrimeagen: All AI down",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "39f6d7d0c660"
   }
  }
 }

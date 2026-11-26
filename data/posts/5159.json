@@ -113,6 +113,13 @@
    "model": "qwen3.5-9b-q4_k_m",
    "v": 2,
    "src": "6b183c37198e"
+  },
+  "en": {
+   "title": "Greg Isenberg shares nine cool GPT 6 Astra prompts worth trying",
+   "short": "Greg Isenberg shares nine cool GPT 6 Astra prompts",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "7de4c63eaf35"
   }
  }
 }

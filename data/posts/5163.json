@@ -129,6 +129,13 @@
    "v": 1,
    "src": "b45337687e77",
    "added": 1
+  },
+  "en": {
+   "title": "GPT saturates ValsAI SRE benchmark measuring binary reverse engineering",
+   "short": "GPT saturates ValsAI SRE benchmark",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "81109d696edc"
   }
  }
 }

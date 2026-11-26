@@ -93,6 +93,13 @@
    "model": "qwen3.5-9b-q4_k_m",
    "v": 2,
    "src": "d48af38d142f"
+  },
+  "en": {
+   "title": "Mo Sayyar discusses designing beyond the screen",
+   "short": "Mo Sayyar discusses designing beyond the screen",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "07a33e86c95a"
   }
  }
 }

@@ -120,6 +120,13 @@
    "model": "qwen3.5-9b-q4_k_m",
    "v": 2,
    "src": "99b8e2a2a017"
+  },
+  "en": {
+   "title": "Claude can now use your computer in the background in Claude Cowork and Claude Code",
+   "short": "Claude can now use your computer in the background",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "50bf6590eb69"
   }
  }
 }

@@ -142,6 +142,13 @@
    "v": 1,
    "src": "b321bf51e2ae",
    "added": 1
+  },
+  "en": {
+   "title": "Meta's AIRA3 AI system places 8th in NVIDIA Kaggle competition",
+   "short": "Meta's AIRA3 wins Gold in NVIDIA AI challenge",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "58f8cd5ca893"
   }
  }
 }

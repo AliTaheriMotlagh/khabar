@@ -118,6 +118,13 @@
    "model": "qwen3.5-9b-q4_k_m",
    "v": 2,
    "src": "d0bc260ba062"
+  },
+  "en": {
+   "title": "Astra team promises banked reset for every day without access",
+   "short": "Astra offers banked reset for lost access days",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "a2bbb931b34c"
   }
  }
 }

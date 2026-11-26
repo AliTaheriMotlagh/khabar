@@ -91,6 +91,13 @@
    "model": "qwen3.5-9b-q4_k_m",
    "v": 2,
    "src": "b0f7a44b564d"
+  },
+  "en": {
+   "title": "Uber cites employee feedback as reason for layoffs",
+   "short": "Uber cites employee feedback for layoffs",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "c8f521d3fe12"
   }
  }
 }

@@ -124,6 +124,13 @@
    "v": 1,
    "src": "f2bb989f4f2b",
    "added": 1
+  },
+  "en": {
+   "title": "Zeiss says China is 15 years from EUV chip machines",
+   "short": "Zeiss says China is 15 years from EUV machines",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "5261803947ea"
   }
  }
 }

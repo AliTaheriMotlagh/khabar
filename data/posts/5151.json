@@ -134,6 +134,13 @@
    "v": 1,
    "src": "d102be39db19",
    "added": 1
+  },
+  "en": {
+   "title": "NVIDIA releases 125B MoE Qwen3.8-Flash-Next model",
+   "short": "NVIDIA releases quantized Qwen3.8-Flash-Next model",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "0833444ee784"
   }
  }
 }

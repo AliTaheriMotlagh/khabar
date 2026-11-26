@@ -131,6 +131,13 @@
    "model": "qwen3.5-9b-q4_k_m",
    "v": 2,
    "src": "a6eb0ddfa576"
+  },
+  "en": {
+   "title": "NVIDIA to Acquire Hugging Face to Scale AI Platform",
+   "short": "NVIDIA agrees to acquire Hugging Face",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "46ec708eb484"
   }
  }
 }

@@ -108,6 +108,13 @@
    "model": "qwen3.5-9b-q4_k_m",
    "v": 2,
    "src": "a91667cec9a6"
+  },
+  "en": {
+   "title": "Astra productivity boost shifts plans to DevDay",
+   "short": "Astra boost shifts plans to DevDay",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "014a462c50d1"
   }
  }
 }

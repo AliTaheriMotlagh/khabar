@@ -154,6 +154,13 @@
    "model": "qwen3.5-9b-q4_k_m",
    "v": 2,
    "src": "b6e5bf663cdf"
+  },
+  "en": {
+   "title": "OpenAI Rolls Out GPT-6 Astra, Says It Could Mark Arrival Of AGI",
+   "short": "OpenAI launches GPT-6 Astra, claims AGI arrival",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "262f67a477f7"
   }
  }
 }

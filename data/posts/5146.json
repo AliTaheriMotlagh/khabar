@@ -145,6 +145,13 @@
    "model": "qwen3.5-9b-q4_k_m",
    "v": 2,
    "src": "c888d6c1555b"
+  },
+  "en": {
+   "title": "Claude completes first formalized proof of Fermat's Last Theorem",
+   "short": "Claude formalizes Fermat's Last Theorem proof",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "f3c269f9ccfa"
   }
  }
 }

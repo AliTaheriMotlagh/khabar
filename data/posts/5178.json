@@ -110,6 +110,13 @@
    "model": "qwen3.5-9b-q4_k_m",
    "v": 2,
    "src": "87b5b61ef15d"
+  },
+  "en": {
+   "title": "AI-developed lung disease drug shows promise in reversing aging signs",
+   "short": "AI drug reverses aging signs",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "50a3be3c4f24"
   }
  }
 }

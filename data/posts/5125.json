@@ -119,6 +119,13 @@
    "model": "qwen3.5-9b-q4_k_m",
    "v": 2,
    "src": "252b0129daee"
+  },
+  "en": {
+   "title": "Scientists map complete brain and nervous system of adult male fruit fly",
+   "short": "Scientists map complete fruit fly brain",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "19460ef4043c"
   }
  }
 }

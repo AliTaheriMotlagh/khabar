@@ -131,6 +131,13 @@
    "v": 1,
    "src": "eda24363a29f",
    "added": 1
+  },
+  "en": {
+   "title": "Institute of Foundation Models launches K2 Horizon connected fleet of six models",
+   "short": "Institute of Foundation Models launches K2 Horizon",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "4d85945a9d0e"
   }
  }
 }

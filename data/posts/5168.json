@@ -141,6 +141,13 @@
    "model": "qwen3.5-9b-q4_k_m",
    "v": 2,
    "src": "900dccc7ef7b"
+  },
+  "en": {
+   "title": "OpenAI reaches automated research intern goal by September",
+   "short": "OpenAI hits automated intern target by September",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "95db4bbe1d5d"
   }
  }
 }

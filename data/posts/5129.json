@@ -126,6 +126,13 @@
    "model": "qwen3.5-9b-q4_k_m",
    "v": 2,
    "src": "fda93915475e"
+  },
+  "en": {
+   "title": "NVIDIA RTX Spark to launch with 18 or 20 CPU-core SKUs",
+   "short": "NVIDIA RTX Spark offers 18 or 20 CPU-core models",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "15ecc6774f95"
   }
  }
 }

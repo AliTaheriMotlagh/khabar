@@ -113,6 +113,13 @@
    "model": "qwen3.5-9b-q4_k_m",
    "v": 2,
    "src": "91c18bffd63f"
+  },
+  "en": {
+   "title": "Paraplegic passenger praises Tesla CyberCab ride experience",
+   "short": "Paraplegic praises Tesla CyberCab ride",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "1b6ccfedd717"
   }
  }
 }

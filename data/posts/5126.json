@@ -124,6 +124,13 @@
    "model": "qwen3.5-9b-q4_k_m",
    "v": 2,
    "src": "0eae613718b2"
+  },
+  "en": {
+   "title": "OpenAI confirms GPT-6 name and limited release today",
+   "short": "OpenAI releases GPT-6, claims AGI achievement",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "81057015ba15"
   }
  }
 }

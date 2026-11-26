@@ -128,6 +128,13 @@
    "model": "qwen3.5-9b-q4_k_m",
    "v": 2,
    "src": "5c6413b96fda"
+  },
+  "en": {
+   "title": "GPT-6 Astra achieves near-perfect ARC-AGI-3 scores with continuous harness",
+   "short": "GPT-6 Astra scores near 100% on ARC-AGI-3",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "214ab3690579"
   }
  }
 }

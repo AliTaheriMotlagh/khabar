@@ -131,6 +131,13 @@
    "model": "qwen3.5-9b-q4_k_m",
    "v": 2,
    "src": "ff43749e35f6"
+  },
+  "en": {
+   "title": "Claude Fable 5.1 Creates 100 Stunning HTML Files",
+   "short": "Claude Fable 5.1 generates 100 unique HTML files",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "180fc0ed3f8a"
   }
  }
 }

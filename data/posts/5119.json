@@ -107,6 +107,13 @@
    "model": "qwen3.5-9b-q4_k_m",
    "v": 2,
    "src": "6659b3cf383a"
+  },
+  "en": {
+   "title": "Stars almost aligned in sky",
+   "short": "Stars almost aligned",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "2ff856b14e63"
   }
  }
 }

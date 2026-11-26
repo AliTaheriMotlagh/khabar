@@ -103,6 +103,13 @@
    "model": "qwen3.5-9b-q4_k_m",
    "v": 2,
    "src": "100c78cc147e"
+  },
+  "en": {
+   "title": "Company seeks 10,000 robotics trainers globally for $50 to $90 per hour",
+   "short": "Hiring 10,000 robotics trainers worldwide",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "fef83f4db1b3"
   }
  }
 }

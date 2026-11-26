@@ -127,6 +127,13 @@
    "v": 1,
    "src": "a5417c89ca45",
    "added": 1
+  },
+  "en": {
+   "title": "OpenCode launches Omen Alpha stealth model for subscribers",
+   "short": "OpenCode launches Omen Alpha stealth model",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "acdf2f1a70a6"
   }
  }
 }

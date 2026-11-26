@@ -119,6 +119,13 @@
    "model": "qwen3.5-9b-q4_k_m",
    "v": 2,
    "src": "5eb72936d0fa"
+  },
+  "en": {
+   "title": "GPT-6 Astra First OpenAI Model With AI Supervision",
+   "short": "GPT-6 Astra uses AI supervision and 100k GPUs",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "e84a62e8c040"
   }
  }
 }

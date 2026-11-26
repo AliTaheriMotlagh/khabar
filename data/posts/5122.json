@@ -137,6 +137,13 @@
    "v": 1,
    "src": "0561e0bd7ba5",
    "added": 1
+  },
+  "en": {
+   "title": "Two new GPT-6 models appear in Codex ahead of release",
+   "short": "Two new GPT-6 models appear in Codex",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "4f3fe2b85674"
   }
  }
 }

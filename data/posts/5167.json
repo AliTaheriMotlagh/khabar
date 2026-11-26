@@ -109,6 +109,13 @@
    "model": "qwen3.5-9b-q4_k_m",
    "v": 2,
    "src": "cbf078ac264a"
+  },
+  "en": {
+   "title": "OpenAI releases data on models accelerating research",
+   "short": "OpenAI releases model research data",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "7ac51f55d9ff"
   }
  }
 }

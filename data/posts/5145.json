@@ -120,6 +120,13 @@
    "model": "qwen3.5-9b-q4_k_m",
    "v": 2,
    "src": "f5f572cefd05"
+  },
+  "en": {
+   "title": "Anthropic could file for $2T+ IPO as soon as next week",
+   "short": "Anthropic IPO filing could happen next week",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "3cec9cbfeebb"
   }
  }
 }

@@ -126,6 +126,13 @@
    "model": "qwen3.5-9b-q4_k_m",
    "v": 2,
    "src": "28da8cd719f7"
+  },
+  "en": {
+   "title": "Commenters uncover more wikis used by OpenAI agents on open web",
+   "short": "More wikis found used by OpenAI agents",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "882f29249c86"
   }
  }
 }

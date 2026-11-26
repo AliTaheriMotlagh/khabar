@@ -147,6 +147,13 @@
    "model": "qwen3.5-9b-q4_k_m",
    "v": 2,
    "src": "327c94066988"
+  },
+  "en": {
+   "title": "GPT-6 Astra achieves best Bach Benchmark result with voice-leading",
+   "short": "GPT-6 Astra tops Bach Benchmark with voice-leading",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "004ae73cad37"
   }
  }
 }

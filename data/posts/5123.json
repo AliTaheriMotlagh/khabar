@@ -128,6 +128,13 @@
    "model": "qwen3.5-9b-q4_k_m",
    "v": 2,
    "src": "ecc798096d73"
+  },
+  "en": {
+   "title": "Google DeepMind unveils WeatherNext 3 AI model with 5x sharper forecasts",
+   "short": "Google DeepMind launches WeatherNext 3 AI model",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "4e9e060495de"
   }
  }
 }

@@ -100,6 +100,13 @@
    "model": "qwen3.5-9b-q4_k_m",
    "v": 2,
    "src": "22de42313856"
+  },
+  "en": {
+   "title": "Caleb says there is always a reason for Linus Ekenstam",
+   "short": "Caleb says there is always a reason",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "bf2a3a36f3a6"
   }
  }
 }

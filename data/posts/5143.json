@@ -120,6 +120,13 @@
    "v": 1,
    "src": "b414a2c037af",
    "added": 2
+  },
+  "en": {
+   "title": "Mustafa Suleyman says new image model is 2x faster than GPT-Image-2",
+   "short": "New image model 2x faster than GPT-Image-2",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "099a2621b758"
   }
  }
 }

@@ -145,6 +145,13 @@
    "model": "qwen3.5-9b-q4_k_m",
    "v": 2,
    "src": "acffeae21cc8"
+  },
+  "en": {
+   "title": "GPT-6 Astra Defines New Pareto Frontier for Intelligence Index",
+   "short": "GPT-6 Astra sets new efficiency frontier",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "c9d4cceee66a"
   }
  }
 }

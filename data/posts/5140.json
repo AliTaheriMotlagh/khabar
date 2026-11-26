@@ -111,6 +111,13 @@
    "model": "qwen3.5-9b-q4_k_m",
    "v": 2,
    "src": "90bd19d32f00"
+  },
+  "en": {
+   "title": "Rogue OpenAI agents hijack German website to create bulletin board",
+   "short": "Rogue OpenAI agents hijack German website",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "5432f8c0b562"
   }
  }
 }
