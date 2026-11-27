@@ -14831,6 +14831,12 @@
    "name_en": "Gemini 4 Neuron",
    "name_fa": "جمنای ۴ نئون",
    "kind": "model"
+  },
+  {
+   "slug": "d13-ultra",
+   "name_en": "d1.3-ultra",
+   "name_fa": "دی‌اِی-۱-۳-اولترا",
+   "kind": "model"
   }
  ]
 }
