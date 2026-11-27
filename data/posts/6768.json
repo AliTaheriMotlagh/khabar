@@ -1,0 +1,67 @@
+{
+ "id": 6768,
+ "url": "https://t.me/dlmehr/6768",
+ "date": "2026-11-27T20:46:39+00:00",
+ "text": "https://fxtwitter.com/liquidai/status/2126374995399975380?a=EXFSKcLbB81lC_Z4G9Y&s=52",
+ "forwarded_from": null,
+ "digest": false,
+ "hash": "df38d2cd7e7b",
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/liquidai/status/2126374995399975380?a=EXFSKcLbB81lC_Z4G9Y&s=52",
+  "site": "🧵 Thread • FxTwitter",
+  "title": "Liquid AI (@liquidai)",
+  "description": "Today we release d1.3-ultra, our most powerful decision model, recursively improved from d1-ultra. #1 on @ArtificialAnlys decision index 2.1. (76.4)\nwhat improved compared to d1.2-ultra:\n> Better decisions overall: improvements across our internal suite…",
+  "image": "https://cdn4.telesco.pe/file/OcFw-y1GPv6vsV7ZQ9u4R90FrmV5If9QScNZPPquP7Su8ikUaU8pBJGCG0vvCZFSQEkTSUt9Y98NXZlnw6p5I_F5iSnTten29qJxg0ySLDJRpKITUrA_rJ86bI8fhLGoxVNq7Lw-ifCypGYXxy3kLXUcUK94MfQPIfU7x6CRgnXpdjyqaOBkpbcifEPCTTj_sBvOK0-aJW9SPOyocSlB8kaVLGBt7VFF1rxoQR-12lExl__pvp4U_YmfJnnaVFzKQTgxdxrS7nk5EmcAKXpUoavlWhlZxWlt88vx5lrUdNzUAfzmpzlgJkebELSzQyZz_rcoXXeGZCoJYUBHBBRabQ.jpg"
+ },
+ "gholam": {
+  "text": "سلام رفقا! شرکت Liquid AI از مدل تصمیم‌گیرنده جدیدش به اسم d1.3-ultra رونمایی کرده و اعلام کرده این نسخه توی شاخص تصمیم‌گیری نسخه ۲.۱ سایت Artificial Analysis با امتیاز ۷۶.۴ رتبه اول رو گرفته (تو نمودار منتشرشده هم با عدد گردِ ۷۶ صدر جدوله، یه کوچولو جلوتر از Bison 31B با ۷۶ و مدل قبلی یعنی d1.2-ultra با ۷۵). 🧠 جالبه که تو این ارزیابی فقط درست جواب دادن شرط نیست و اعتمادبه‌نفس الکی جریمه داره؛ یعنی مدل به جای اینکه رو هوا نظر بده، هر جا مطمئن نباشه خیلی باکلاس دست نگه می‌داره و می‌گه نمی‌دونم.\n\n• به گفته Liquid AI، این مدل طوری بهبود پیدا کرده که بر اساس خط‌مشی یا قرارداد تصمیم بگیره، با سندهای اسکن‌شده، رسیدها، جدول‌ها و تاریخ‌های محلی کار کنه و دستوراتی که لای ورودی کاشته شده رو هم به عنوان داده ببینه نه فرمان.\n• قابلیت‌های تازه‌ای مثل رتبه‌بندی گزینه‌ها، خوندن عدد و تاریخ مستقیم از روی عکس و فایل صوتی و مشخص کردن بازه زمانی دقیقِ صحبت‌ها توی صدا هم بهش اضافه شده.\n• الان توی کنسول خود Liquid (که برای حساب‌های جدید به‌صورت محدود ۲ دلار اعتبار رایگان گذاشته) در دسترسه و به گفته خودشون به‌زودی روی OpenRouter و Vercel هم میاد.",
+  "date": "2026-11-27T20:47:08+00:00"
+ },
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/liquidai/status/2126374995399975380",
+   "domain": "x.com",
+   "author": {
+    "name": "Liquid AI",
+    "handle": "liquidai",
+    "avatar": "https://pbs.twimg.com/profile_images/1702611993327251456/PUUuOA4W_200x200.jpg"
+   },
+   "text": "Today we release d1.3-ultra, our most powerful decision model, recursively improved from d1-ultra. #1 on @ArtificialAnlys decision index 2.1. (76.4)\n\nwhat improved compared to d1.2-ultra:\n\n> Better decisions overall: improvements across our internal suite of 100+ benchmarks\n> Decisions that follow a policy, a guide, or a contract.\n> Knowledge and hard questions refusal when unsure.\n> trained on a much wider range of inputs: real scanned documents, receipts, tables and long reports, dates in local formats, more languages, and planted instructions in the input treated as data.\n\nNew capabilities:\n\n> Rankings: order a set of options, \nor return the top k.\n> Extraction: extended to numbers/dates read straight from pictures and audio (a receipt total, a date heard in a clip).\n> Spans: extended to time spans in audio - where in a clip something is said, with start and end times.\n\navailable today in Liquid console: \nhttps://console.liquid.ai\nOpenrouter: soon \nVercel: soon\n\nHappy thanksgiving! 🍁",
+   "date": 1795802279,
+   "media": [
+    {
+     "type": "image",
+     "src": "https://pbs.twimg.com/media/HYJmjDLXoAAQY5Q.jpg?name=orig",
+     "ratio": 0.38
+    }
+   ],
+   "links": [
+    "https://console.liquid.ai"
+   ]
+  },
+  {
+   "kind": "link",
+   "url": "https://console.liquid.ai",
+   "domain": "console.liquid.ai",
+   "title": "The most cost-efficient model API",
+   "description": "Efficient foundation and decision models from Liquid AI, ready for production. Lower cost on every call, with the tools you already use.",
+   "image": "https://console.liquid.ai/opengraph-image.jpg?opengraph-image.2ax9hctwect4g.jpg?dpl=3061f365b19a6c831c1f6857a13930e91b2ea342",
+   "site": "Liquid AI"
+  }
+ ],
+ "article": {
+  "title": "شرکت Liquid AI از مدل تصمیم‌گیرنده جدیدش به اسم d1.3-ultra رونمایی کرده و اعلام کرده این نسخه توی شاخص تصمیم‌گیری نسخه ۲.۱ سایت Artificial Analysis با امتیاز ۷۶.۴ رتبه اول رو گرفته (تو نمودار منتشرشده هم با عدد گردِ ۷۶ صدر جدوله، یه کوچولو جلوتر از Bison 31B با ۷۶ و مدل قبلی یعنی d1.2-ultra با ۷۵)",
+  "source_title": "Today we release d1.3-ultra, our most powerful decision model, recursively improved from d1-ultra. #1 on @ArtificialAnlys decision index…",
+  "body": [
+   "شرکت Liquid AI از مدل تصمیم‌گیرنده جدیدش به اسم d1.3-ultra رونمایی کرده و اعلام کرده این نسخه توی شاخص تصمیم‌گیری نسخه ۲.۱ سایت Artificial Analysis با امتیاز ۷۶.۴ رتبه اول رو گرفته (تو نمودار منتشرشده هم با عدد گردِ ۷۶ صدر جدوله، یه کوچولو جلوتر از Bison 31B با ۷۶ و مدل قبلی یعنی d1.2-ultra با ۷۵). 🧠 جالبه که تو این ارزیابی فقط درست جواب دادن شرط نیست و اعتمادبه‌نفس الکی جریمه داره؛ یعنی مدل به جای اینکه رو هوا نظر بده، هر جا مطمئن نباشه خیلی باکلاس دست نگه می‌داره و می‌گه نمی‌دونم.",
+   "• به گفته Liquid AI، این مدل طوری بهبود پیدا کرده که بر اساس خط‌مشی یا قرارداد تصمیم بگیره، با سندهای اسکن‌شده، رسیدها، جدول‌ها و تاریخ‌های محلی کار کنه و دستوراتی که لای ورودی کاشته شده رو هم به عنوان داده ببینه نه فرمان.",
+   "• قابلیت‌های تازه‌ای مثل رتبه‌بندی گزینه‌ها، خوندن عدد و تاریخ مستقیم از روی عکس و فایل صوتی و مشخص کردن بازه زمانی دقیقِ صحبت‌ها توی صدا هم بهش اضافه شده.",
+   "• الان توی کنسول خود Liquid (که برای حساب‌های جدید به‌صورت محدود ۲ دلار اعتبار رایگان گذاشته) در دسترسه و به گفته خودشون به‌زودی روی OpenRouter و Vercel هم میاد."
+  ],
+  "why": null,
+  "tags": []
+ },
+ "updated": "2026-11-27T20:50:27+00:00"
+}

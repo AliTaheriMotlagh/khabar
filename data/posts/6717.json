@@ -12,7 +12,7 @@
   "site": "FxTwitter",
   "title": "Amjad Masad (@amasad)",
   "description": "New research from Replit on scaling laws for agent swarms.\nWe show that scaling the number of agents can yield dramatic performance gains, but unlike traditional scaling laws, more compute doesn't necessarily translate into better results, and how agents…",
-  "image": "https://cdn4.telesco.pe/file/AdqXvo1PNdTQBLqi-3nW63-XD4hdHoMV-SfqpoB9bqYdYmuqct6WuLQvYWbFTLf9oSaa2b_O2r5LApYzgwa3ObClmmlCJ30zUWLvLlsiKByttNcPDwK3-FdWdtsZbQOndhPUBMPaJNWLCbjEQHpwF9_vqdlfQHMx02oebqPXwkoZQat94sv45DmwasMsUvkLGhv_B8OVjTyxBa6HJx9T_UhrUS_F_IQ3yCLHgP6OTl7panGiIjBWMpEF1lAGH9K0bdmKMSpNR3sprC_AY1PKUy2it0RGB2DTPK_PIC2O_qTbfHwHQZrUmgxc4hMYNPh_s_LNkjYX40oatEvJOMJP4w.jpg"
+  "image": "https://cdn4.telesco.pe/file/Kawh8tIrlwgNeNB4wSjMN3CijPCejAPR39Em7MLLinVB7fk5sfj6n_8YRxSFbfg6qORalQGhEKXvoI2LHeufV9F6R8CrW5KS-7PQOvfR0NsCFcPTUZEcQYWnJR5AEWxn8lnCUUK248dstcGQw9Qr0Gu-XCCPE6_7-GAFtQLw0PacOhjTmFYOMSOcigkJZ4m5-CMx0VLcSAWwx_IXtnY3mi9wEfhIiTBLCKzmU39QiCHuEv6sd_AHklVA8UJgK2pMDr877kouu-wTPqcHLMCIAsCiC2TR8v83FmO2_fvXpucK_2CxiuwuX6ZONAnu7hEM9lbskJT5CoU3S_4qE_FI2w.jpg"
  },
  "gholam": {
   "text": "رفقا، شرکت ریپلیت تو یه پژوهش تازه (منتشرشده در ۱۹ نوامبر ۲۰۲۶) سراغ قوانین مقیاس‌پذیری تیم‌های ایجنت هوش مصنوعی رفته و می‌گه اینجا دیگه همیشه این‌طوری نیست که با اضافه کردن نیرو، کار بهتر جلو بره. درست مثل یه آشپزخونه شلوغ که اگه هر کاری باید از زیر دست یه سرآشپز رد بشه، با زیاد شدن شاگردها فقط صف دستورات سنگین‌تر می‌شه و دست‌وپای هم رو می‌بندن! ریپلیت همراه این تحقیق، بنچمارک Optimization-Bench رو هم متن‌باز کرده تا بدون امکان تقلب، سرعت‌بخشی واقعی ایجنت‌ها به کدهای متن‌باز رو در بازه دو ساعته بسنجن. 🧑‍💻\n\n• طبق اعلام ریپلیت و نمودار آزمایش روی کتابخونه NumPy، مدل Claude Opus 5.5 از سرعت‌بخشی ۳.۷ برابری با یک ایجنت، با تیم ۳۲ تایی به ۱۸.۹۲ برابر رسیده و مدل Sonnet 5.5 هم با ۳۲ ایجنت به ۸.۶۳ برابر رسیده.\n• در مقابل، مدل GPT-6.2 Astra به‌تنهایی از همه قوی‌تر بوده، اما از ۸ ایجنت به بعد افت کرده و با ۳۲ ایجنت روی NumPy به ۶.۵۳ برابر پایین اومده.\n• نویسنده‌های گزارش می‌گن تیم‌هایی که خودجوش ساختار غیرمتمرکز گرفتن و از تابلوی مشترک استفاده کردن بهتر از تیم‌های متمرکز نتیجه گرفتن، و قابلیت موازی‌سازیِ خود مساله هم خیلی تعیین‌کننده بوده؛ به گفته ریپلیت، هوش بالای تک‌نفره لزوماً نشونه خوبی برای کار تیمی نیست.",
@@ -171,5 +171,5 @@
    "کدنویسی"
   ]
  },
- "updated": "2026-11-27T13:45:31+00:00"
+ "updated": "2026-11-27T20:50:28+00:00"
 }
