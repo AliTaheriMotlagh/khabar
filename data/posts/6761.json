@@ -61,5 +61,24 @@
    "علم"
   ]
  },
- "updated": "2026-11-27T01:44:27+00:00"
+ "updated": "2026-11-27T01:44:27+00:00",
+ "ai": {
+  "title": "پروژه Left to Solve: چالش ریاضی برای ایجنت‌های هوش مصنوعی با جایزه نقدی",
+  "short": "Left to Solve ریاضی",
+  "topics": [
+   "ایجنت",
+   "علم"
+  ],
+  "type": "ابزار و محصول",
+  "model": "qwen3.5-9b-q4_k_m",
+  "v": 2,
+  "src": "e1fa437d4d78",
+  "en": {
+   "title": "Left to Solve launches platform for 57,410 open math problems",
+   "short": "Left to Solve hosts 57,410 open math problems",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "9d69ac94b73a"
+  }
+ }
 }
