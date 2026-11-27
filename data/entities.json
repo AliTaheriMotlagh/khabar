@@ -14825,6 +14825,12 @@
    "name_en": "Cloud One",
    "name_fa": "کلاد وان",
    "kind": "product"
+  },
+  {
+   "slug": "gemini-4-neuron",
+   "name_en": "Gemini 4 Neuron",
+   "name_fa": "جمنای ۴ نئون",
+   "kind": "model"
   }
  ]
 }
