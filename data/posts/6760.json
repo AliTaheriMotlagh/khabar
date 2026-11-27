@@ -16,17 +16,13 @@
  },
  "gholam": null,
  "ai": {
-  "en": {
-   "failed": true,
-   "model": "qwen3.5-9b-q4_k_m",
-   "v": 1,
-   "src": "d24a3c5a9241"
-  },
-  "speech": {
-   "v": 1,
-   "src": "13ed36557c1a",
-   "added": 1
-  },
+  "title": "مدل Mistral Large 4 در نقشه‌خوانی و بومی‌سازی بصری از رقبا بهتر عمل کرد",
+  "short": "برتری Mistral Large 4",
+  "topics": [],
+  "type": "پژوهش و مقاله",
+  "model": "qwen3.5-9b-q4_k_m",
+  "v": 2,
+  "src": "8025db69492c",
   "story": {
    "body": [
     "هوش مصنوعی Mistral Large 4 توانست در وظایف مرتبط با بومی‌سازی بصری، تطابق دقیق را شناسایی و روی نقشه ترسیم کند.",
@@ -37,6 +33,17 @@
    "model": "qwen3.5-9b-q4_k_m",
    "v": 1,
    "src": "7cdad80951a7"
+  },
+  "speech": {
+   "v": 1,
+   "src": "13ed36557c1a",
+   "added": 1
+  },
+  "en": {
+   "failed": true,
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "d24a3c5a9241"
   }
  },
  "links": [
