@@ -60,5 +60,24 @@
    "امنیت"
   ]
  },
- "updated": "2026-11-27T15:31:23+00:00"
+ "updated": "2026-11-27T15:31:23+00:00",
+ "ai": {
+  "title": "هکرها به پلتفرم ابری کلاد وان نیروی هوایی آمریکا نفوذ کردند",
+  "short": "نفوذ به کلاد وان",
+  "topics": [
+   "امنیت",
+   "گوگل"
+  ],
+  "type": "خبر",
+  "model": "qwen3.5-9b-q4_k_m",
+  "v": 2,
+  "src": "f9a8b691ef45",
+  "en": {
+   "title": "Hackers breach US Air Force Cloud One platform",
+   "short": "Hackers breach US Air Force Cloud One",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "1e9a41a5c895"
+  }
+ }
 }
