@@ -14813,6 +14813,18 @@
    "name_en": "Qwen 3.8 Flash",
    "name_fa": "کوئن ۳.۸ فلاش",
    "kind": "model"
+  },
+  {
+   "slug": "us-air-force",
+   "name_en": "US Air Force",
+   "name_fa": "نیروی هوایی آمریکا",
+   "kind": "company"
+  },
+  {
+   "slug": "cloud-one",
+   "name_en": "Cloud One",
+   "name_fa": "کلاد وان",
+   "kind": "product"
   }
  ]
 }
