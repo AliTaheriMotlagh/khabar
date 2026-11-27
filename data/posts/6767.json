@@ -58,5 +58,24 @@
    "گوگل"
   ]
  },
- "updated": "2026-11-27T15:40:17+00:00"
+ "updated": "2026-11-27T15:40:17+00:00",
+ "ai": {
+  "title": "جمنای ۴ نئون تکامل را به آزمایشگاه تعاملی و سه‌بعدی تبدیل کرد",
+  "short": "جمنای ۴ نئون: تکامل تعاملی",
+  "topics": [
+   "آموزش",
+   "گوگل"
+  ],
+  "type": "ابزار و محصول",
+  "model": "qwen3.5-9b-q4_k_m",
+  "v": 2,
+  "src": "05d9ab3f6275",
+  "en": {
+   "title": "Techartist creates interactive field journal for evolution chapter",
+   "short": "Techartist builds tactile evolution lessons",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "70fa35650449"
+  }
+ }
 }
