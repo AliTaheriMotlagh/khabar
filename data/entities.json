@@ -14807,6 +14807,12 @@
    "name_en": "Left to Solve",
    "name_fa": "لفت تو سالو",
    "kind": "product"
+  },
+  {
+   "slug": "qwen-38-flash",
+   "name_en": "Qwen 3.8 Flash",
+   "name_fa": "کوئن ۳.۸ فلاش",
+   "kind": "model"
   }
  ]
 }
