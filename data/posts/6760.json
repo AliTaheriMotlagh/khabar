@@ -12,9 +12,33 @@
   "site": "X (formerly Twitter)",
   "title": "Mistral AI (@MistralAI) on X",
   "description": "Point taken\n📍\nMistral Large 4 finds the exact match and outlines it on the map. On visual grounding tasks, Le Chonk beats even closed frontier models.",
-  "image": "https://cdn4.telesco.pe/file/rdPcIRvCyARJMDR2LDCP5wsVfwDiOnyMgdpgZHR7Rz4C0A1UiVsY33OZGyKTfBRDbNR06eFqugr0xc27iaPnKM3_feepYzZ2j1ArfaDpPdWGSTbgS_KwCG5FuXscNHx5eEdvQxMFxEzXXGY75SAbycYVQuJiLs1JbVY5y5QY3mh2yY3tHlltsJvPGd_J9PZLSGeUOK7JESQNiuxxyJYAkhgvjBk0hwBY71zTFjNOaUfkoGplWv9FPra-0Mc5M2c0qSxcib51ZoaYmlSTUoCcHIDw95mTQGLABbIMHBrz9KwaRNhYV176KdclSofsAfrhvv9QNYPRXD55jZBYj9Nl9A.jpg"
+  "image": "https://cdn4.telesco.pe/file/klmrWZikV28t78u5kbrJguXnSVUMlb0IQH8_i-C4Ops1GxRI19mKR1Jr1kAg_D1HMOUbmnyStgIBslggBKvZy6Yj-SXY2QbgTkrMvNT3NQ0ssOYkEAYYTt_V5ZsoEl6E6Q5TI0IPFHip0vpEWY0XNF_lLVneyZcHC9rSjLyLq1qVpB_Nt16iezU_kEn4XqVnzX1OsoD6-y-5-dxPwfhzJYTgyQ2j9sPgt052dHM15XwtqeBCKj49XFA9y-c_i3yDZR5fBS_Q-z9b0vgl0UKEg6XqvkhgNszI5PA07YTJdytUfK6BL6vDEFz_VjgYRyVis6LINDu7MYNNghqcjV7F0w.jpg"
  },
  "gholam": null,
+ "ai": {
+  "en": {
+   "failed": true,
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "d24a3c5a9241"
+  },
+  "speech": {
+   "v": 1,
+   "src": "13ed36557c1a",
+   "added": 1
+  },
+  "story": {
+   "body": [
+    "هوش مصنوعی Mistral Large 4 توانست در وظایف مرتبط با بومی‌سازی بصری، تطابق دقیق را شناسایی و روی نقشه ترسیم کند.",
+    "در این مقایسه، مدل Le Chonk عملکردی بهتر از حتی مدل‌های پیشرو بسته‌ی دیگر نشان داد.",
+    "این موفقیت نشان‌دهنده برتری مدل Le Chonک در درک و تحلیل محتوای تصویری نسبت به رقباست."
+   ],
+   "why": "این خبر اهمیت دارد زیرا نشان می‌دهد مدل‌های جدید هوش مصنوعی در درک بصری از نقشه‌ها و موقعیت‌ها عملکردی فراتر از مدل‌های پیشرو دارند.",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "7cdad80951a7"
+  }
+ },
  "links": [
   {
    "kind": "tweet",
@@ -47,29 +71,5 @@
   "why": null,
   "tags": []
  },
- "updated": "2026-11-26T20:00:31+00:00",
- "ai": {
-  "en": {
-   "failed": true,
-   "model": "qwen3.5-9b-q4_k_m",
-   "v": 1,
-   "src": "d24a3c5a9241"
-  },
-  "speech": {
-   "v": 1,
-   "src": "13ed36557c1a",
-   "added": 1
-  },
-  "story": {
-   "body": [
-    "هوش مصنوعی Mistral Large 4 توانست در وظایف مرتبط با بومی‌سازی بصری، تطابق دقیق را شناسایی و روی نقشه ترسیم کند.",
-    "در این مقایسه، مدل Le Chonk عملکردی بهتر از حتی مدل‌های پیشرو بسته‌ی دیگر نشان داد.",
-    "این موفقیت نشان‌دهنده برتری مدل Le Chonک در درک و تحلیل محتوای تصویری نسبت به رقباست."
-   ],
-   "why": "این خبر اهمیت دارد زیرا نشان می‌دهد مدل‌های جدید هوش مصنوعی در درک بصری از نقشه‌ها و موقعیت‌ها عملکردی فراتر از مدل‌های پیشرو دارند.",
-   "model": "qwen3.5-9b-q4_k_m",
-   "v": 1,
-   "src": "7cdad80951a7"
-  }
- }
+ "updated": "2026-11-27T01:57:34+00:00"
 }
