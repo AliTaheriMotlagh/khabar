@@ -67,5 +67,23 @@
    "آنتروپیک"
   ]
  },
- "updated": "2026-11-27T21:07:14+00:00"
+ "updated": "2026-11-27T21:07:14+00:00",
+ "ai": {
+  "title": "جک کلارک هم‌بنیان‌گذار آنتروپیک: تکینگی هوش مصنوعی همین الان شروع شده",
+  "short": "جک کلارک: تکینگی شروع شد",
+  "topics": [
+   "آنتروپیک"
+  ],
+  "type": "نظر و تحلیل",
+  "model": "qwen3.5-9b-q4_k_m",
+  "v": 2,
+  "src": "257b0a8eaad6",
+  "en": {
+   "title": "Anthropic co-founder Jack Clark says singularity has already begun",
+   "short": "Jack Clark says singularity has begun",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "2ee825ab4627"
+  }
+ }
 }
