@@ -63,5 +63,21 @@
   "why": null,
   "tags": []
  },
- "updated": "2026-11-27T20:50:27+00:00"
+ "updated": "2026-11-27T20:50:27+00:00",
+ "ai": {
+  "title": "مدل d1.3-ultra شرکت Liquid AI با امتیاز ۷۶.۴ رتبه اول شاخص تصمیم‌گیری شد",
+  "short": "Liquid AI مدل d1.3-ultra",
+  "topics": [],
+  "type": "ابزار و محصول",
+  "model": "qwen3.5-9b-q4_k_m",
+  "v": 2,
+  "src": "e242c134a36d",
+  "en": {
+   "title": "Liquid AI releases d1.3-ultra decision model ranked number one",
+   "short": "Liquid AI releases d1.3-ultra decision model",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "e8e6c07b4091"
+  }
+ }
 }
