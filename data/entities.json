@@ -14801,6 +14801,12 @@
    "name_en": "April Transfer",
    "name_fa": "اپریل ترنسفر",
    "kind": "product"
+  },
+  {
+   "slug": "left-to-solve",
+   "name_en": "Left to Solve",
+   "name_fa": "لفت تو سالو",
+   "kind": "product"
   }
  ]
 }
