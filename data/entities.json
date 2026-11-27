@@ -14837,6 +14837,18 @@
    "name_en": "d1.3-ultra",
    "name_fa": "دی‌اِی-۱-۳-اولترا",
    "kind": "model"
+  },
+  {
+   "slug": "fchollet",
+   "name_en": "fchollet",
+   "name_fa": "اف‌چولت",
+   "kind": "person"
+  },
+  {
+   "slug": "atareh",
+   "name_en": "Atareh",
+   "name_fa": "اتره",
+   "kind": "person"
   }
  ]
 }
