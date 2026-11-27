@@ -65,5 +65,23 @@
    "علم"
   ]
  },
- "updated": "2026-11-27T22:33:24+00:00"
+ "updated": "2026-11-27T22:33:24+00:00",
+ "ai": {
+  "title": "fchollet: ادعای پیشرفت ریاضی در ۲۰۲۶ را نادیده‌گیر و ناآگاهانه می‌دونی",
+  "short": "fchollet: ریاضیات ۲۰۲۶",
+  "topics": [
+   "علم"
+  ],
+  "type": "نظر و تحلیل",
+  "model": "qwen3.5-9b-q4_k_m",
+  "v": 2,
+  "src": "6b352221cbf1",
+  "en": {
+   "title": "Chollet calls math progress in 2026 claim ignorant",
+   "short": "Chollet calls math progress claim ignorant",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "8787eef2fc5d"
+  }
+ }
 }

@@ -49,5 +49,23 @@
   "why": null,
   "tags": []
  },
- "updated": "2026-11-27T22:33:25+00:00"
+ "updated": "2026-11-27T22:33:25+00:00",
+ "ai": {
+  "title": "کاربر جدول بینگوی مسائل حل‌نشده ریاضی و علوم کامپیوتر را منتشر کرد",
+  "short": "جدول بینگوی مسائل ریاضی",
+  "topics": [
+   "علم"
+  ],
+  "type": "خبر",
+  "model": "qwen3.5-9b-q4_k_m",
+  "v": 2,
+  "src": "338adbf5d4d8",
+  "en": {
+   "title": "Someone made a bingo card until the end of the year",
+   "short": "Bingo card made until year end",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "f8391b422c14"
+  }
+ }
 }
