@@ -14849,6 +14849,12 @@
    "name_en": "Atareh",
    "name_fa": "اتره",
    "kind": "person"
+  },
+  {
+   "slug": "bing-card",
+   "name_en": "Bing Card",
+   "name_fa": "جدول بینگو",
+   "kind": "product"
   }
  ]
 }
