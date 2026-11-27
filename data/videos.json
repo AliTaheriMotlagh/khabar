@@ -3,7 +3,7 @@
   "url": "https://www.youtube.com/@mehrzad.samadi",
   "id": "UCprtwWNkaWcAxcBV44lPHzQ"
  },
- "checked": "2026-11-26T13:48:30+00:00",
+ "checked": "2026-11-27T13:45:36+00:00",
  "videos": [
   {
    "id": "GaS7o7UdXeg",
@@ -2079,11 +2079,11 @@
   },
   {
    "id": "oLfyX_vTaVc",
-   "title": "Demo 3: Single-User Software Revolution by Parsa Razavi [Persian]",
+   "title": "Demo 3: Single-User Software Revolution, Building Your Own AI Coding Tutor by Parsa Razavi [Persian]",
    "duration": 1445,
    "date": "2026-06-28",
    "description": "rubitech:   / rubitech.school  \n\nLinkedin:   / parsa-razavi  \nCode: https://github.com/parsarazaviam/self...",
-   "name": "Demo 3: Single-User Software Revolution by Parsa Razavi [Persian]",
+   "name": "Demo 3: Single-User Software Revolution, Building Your Own AI Coding Tutor by Parsa Razavi [Persian]",
    "live": false,
    "links": [
     "https://github.com/parsarazaviam/self"
@@ -3193,12 +3193,12 @@
   },
   {
    "id": "DV5Tv6RAWWM",
-   "title": "31. Diffusion Mystery [Persian]",
+   "title": "31. Diffusion Mystery: How Diffusion Models Turn Noise into Images [Persian]",
    "duration": 1113,
    "date": "2025-11-16",
    "description": "References:\n   • The physics behind diffusion models  \n   • The Breakthrough Behind Modern AI Image Ge...  \n   • But how do AI images and videos actually w...  ",
    "n": 31,
-   "name": "Diffusion Mystery",
+   "name": "Diffusion Mystery: How Diffusion Models Turn Noise into Images",
    "live": false,
    "ai": {
     "title": "راز فیزیکی مدل‌های دیفیوژن و انقلاب هوش مصنوعی در تولید تصویر و ویدیو",
@@ -4345,12 +4345,12 @@
   },
   {
    "id": "nkjq6e8gw-Y",
-   "title": "20. On the Biology of a Large Language Model [Persian]",
+   "title": "20. How LLMs Think: On the Biology of a Large Language Model [Persian]",
    "duration": 2568,
    "date": "2025-04-13",
    "description": "https://transformer-circuits.pub/2025...",
    "n": 20,
-   "name": "On the Biology of a Large Language Model",
+   "name": "How LLMs Think: On the Biology of a Large Language Model",
    "live": false,
    "links": [
     "https://transformer-circuits.pub/2025"
@@ -5333,7 +5333,170 @@
     "from": "description",
     "v": 2,
     "model": "qwen3.5-9b-q4_k_m"
-   }
+   },
+   "description": "فصل‌ها | Chapters\n0:00 مقدمه و پس‌زمینه‌ی جدید | Intro and a new background\n0:17 سؤال‌های شما: فکر کردن طولانی‌تر مدل‌ها | Your questions: letting models think longer\n1:29 شرکت‌ها چطور پابه‌پای هم جلو می‌رن؟ | How AI companies keep pace with each other\n3:35 سؤالی برای سنجیدن هوش فرابشری | A question to test for superhuman intelligence\n4:43 ترس از آینده‌ی AI | Fear of the AI future\n6:03 یادگیری، ترس رو کم می‌کنه؛ سلامتی اول | Learning reduces fear; health comes first\n8:12 اگه AI به دست آدم‌های بد بیفته چی؟ | What if AI falls into the wrong hands?\n10:23 مثال انرژی و بمب اتمی | The atomic energy and atomic bomb analogy\n11:02 امروز: GPU | Today: the GPU\n11:49 تاریخچه‌ی NVIDIA و کارت گرافیک | NVIDIA's history and the graphics card\n13:54 GPU برای شبیه‌سازی و پیش‌بینی هوا | GPUs for simulation and weather forecasting\n15:30 تولد CUDA و Tesla | The birth of CUDA and Tesla\n17:37 AlexNet و ضرب ماتریس | AlexNet and matrix multiplication\n19:43 نسل‌های GPU: از Tesla تا Blackwell | GPU generations: from Tesla to Blackwell\n21:18 اجرای ترتیبی و موازی | Sequential vs. parallel execution\n21:41 باجناق و کباب: اجرای ترتیبی | The brother-in-law's kebab: sequential execution\n24:39 رنگ کردن دیوار و مینیون‌ها | Painting a wall with minions\n26:47 دموی MythBusters در GTC | The MythBusters demo at GTC\n28:23 چرا CPU مثل باجناقه؟ | Why the CPU is like the brother-in-law\n29:03 کامپایلر و instruction ها | Compilers and instructions\n30:35 رجیستر، کلاک و سایکل | Registers, the clock and cycles\n32:55 تأخیر حافظه و bubble ها | Memory latency and pipeline bubbles\n35:11 کش: L1، L2 و L3 | Caches: L1, L2 and L3\n36:29 Prefetcher | Prefetching\n37:51 اجرای خارج از ترتیب | Out-of-order execution\n39:44 CPU چندهسته‌ای و multithreading | Multi-core CPUs and multithreading\n41:24 GPU: کلی پردازنده‌ی ساده | The GPU: lots of simple processors\n42:19 context switch و پنهان کردن تأخیر | Context switching to hide latency\n45:31 برنامه‌های Massively Parallel | Massively parallel applications\n46:22 مقایسه‌ی تراشه‌ی CPU و GPU | CPU vs. GPU on the chip\n48:00 H100 Hopper: SM ها و هسته‌ها | The H100 Hopper: SMs and cores\n49:32 global memory، shared memory و رجیستر | Global memory, shared memory and registers\n49:54 Host و Device: CPU، GPU و PCIe | Host and device: CPU, GPU and PCIe\n52:17 اولین کد CUDA: جمع دو بردار | First CUDA code: vector addition\n54:06 Grid، Block و Thread | Grids, blocks and threads\n55:21 Warp های ۳۲تایی | Warps of 32 threads\n56:59 حافظه‌ها از دید thread ها | Memory from the threads' point of view\n58:22 یک برنامه‌ی کامل CUDA | A complete CUDA program\n1:02:30 Python روی GPU | Python on the GPU\n1:03:30 چرا باجناق و مینیون؟ جمع‌بندی | Why the brother-in-law and minions? Wrap-up\n\n#هوش_مصنوعی #GPU #CUDA #NVIDIA #معماری_کامپیوتر #پردازش_موازی",
+   "chapters": [
+    {
+     "t": 0,
+     "title": "مقدمه و پس‌زمینه‌ی جدید | Intro and a new background"
+    },
+    {
+     "t": 17,
+     "title": "سؤال‌های شما: فکر کردن طولانی‌تر مدل‌ها | Your questions: letting models think longer"
+    },
+    {
+     "t": 89,
+     "title": "شرکت‌ها چطور پابه‌پای هم جلو می‌رن؟ | How AI companies keep pace with each other"
+    },
+    {
+     "t": 215,
+     "title": "سؤالی برای سنجیدن هوش فرابشری | A question to test for superhuman intelligence"
+    },
+    {
+     "t": 283,
+     "title": "ترس از آینده‌ی AI | Fear of the AI future"
+    },
+    {
+     "t": 363,
+     "title": "یادگیری، ترس رو کم می‌کنه؛ سلامتی اول | Learning reduces fear; health comes first"
+    },
+    {
+     "t": 492,
+     "title": "اگه AI به دست آدم‌های بد بیفته چی؟ | What if AI falls into the wrong hands?"
+    },
+    {
+     "t": 623,
+     "title": "مثال انرژی و بمب اتمی | The atomic energy and atomic bomb analogy"
+    },
+    {
+     "t": 662,
+     "title": "امروز: GPU | Today: the GPU"
+    },
+    {
+     "t": 709,
+     "title": "تاریخچه‌ی NVIDIA و کارت گرافیک | NVIDIA's history and the graphics card"
+    },
+    {
+     "t": 834,
+     "title": "GPU برای شبیه‌سازی و پیش‌بینی هوا | GPUs for simulation and weather forecasting"
+    },
+    {
+     "t": 930,
+     "title": "تولد CUDA و Tesla | The birth of CUDA and Tesla"
+    },
+    {
+     "t": 1057,
+     "title": "AlexNet و ضرب ماتریس | AlexNet and matrix multiplication"
+    },
+    {
+     "t": 1183,
+     "title": "نسل‌های GPU: از Tesla تا Blackwell | GPU generations: from Tesla to Blackwell"
+    },
+    {
+     "t": 1278,
+     "title": "اجرای ترتیبی و موازی | Sequential vs. parallel execution"
+    },
+    {
+     "t": 1301,
+     "title": "باجناق و کباب: اجرای ترتیبی | The brother-in-law's kebab: sequential execution"
+    },
+    {
+     "t": 1479,
+     "title": "رنگ کردن دیوار و مینیون‌ها | Painting a wall with minions"
+    },
+    {
+     "t": 1607,
+     "title": "دموی MythBusters در GTC | The MythBusters demo at GTC"
+    },
+    {
+     "t": 1703,
+     "title": "چرا CPU مثل باجناقه؟ | Why the CPU is like the brother-in-law"
+    },
+    {
+     "t": 1743,
+     "title": "کامپایلر و instruction ها | Compilers and instructions"
+    },
+    {
+     "t": 1835,
+     "title": "رجیستر، کلاک و سایکل | Registers, the clock and cycles"
+    },
+    {
+     "t": 1975,
+     "title": "تأخیر حافظه و bubble ها | Memory latency and pipeline bubbles"
+    },
+    {
+     "t": 2111,
+     "title": "کش: L1، L2 و L3 | Caches: L1, L2 and L3"
+    },
+    {
+     "t": 2189,
+     "title": "Prefetcher | Prefetching"
+    },
+    {
+     "t": 2271,
+     "title": "اجرای خارج از ترتیب | Out-of-order execution"
+    },
+    {
+     "t": 2384,
+     "title": "CPU چندهسته‌ای و multithreading | Multi-core CPUs and multithreading"
+    },
+    {
+     "t": 2484,
+     "title": "GPU: کلی پردازنده‌ی ساده | The GPU: lots of simple processors"
+    },
+    {
+     "t": 2539,
+     "title": "context switch و پنهان کردن تأخیر | Context switching to hide latency"
+    },
+    {
+     "t": 2731,
+     "title": "برنامه‌های Massively Parallel | Massively parallel applications"
+    },
+    {
+     "t": 2782,
+     "title": "مقایسه‌ی تراشه‌ی CPU و GPU | CPU vs. GPU on the chip"
+    },
+    {
+     "t": 2880,
+     "title": "H100 Hopper: SM ها و هسته‌ها | The H100 Hopper: SMs and cores"
+    },
+    {
+     "t": 2972,
+     "title": "global memory، shared memory و رجیستر | Global memory, shared memory and registers"
+    },
+    {
+     "t": 2994,
+     "title": "Host و Device: CPU، GPU و PCIe | Host and device: CPU, GPU and PCIe"
+    },
+    {
+     "t": 3137,
+     "title": "اولین کد CUDA: جمع دو بردار | First CUDA code: vector addition"
+    },
+    {
+     "t": 3246,
+     "title": "Grid، Block و Thread | Grids, blocks and threads"
+    },
+    {
+     "t": 3321,
+     "title": "Warp های ۳۲تایی | Warps of 32 threads"
+    },
+    {
+     "t": 3419,
+     "title": "حافظه‌ها از دید thread ها | Memory from the threads' point of view"
+    },
+    {
+     "t": 3502,
+     "title": "یک برنامه‌ی کامل CUDA | A complete CUDA program"
+    },
+    {
+     "t": 3750,
+     "title": "Python روی GPU | Python on the GPU"
+    },
+    {
+     "t": 3810,
+     "title": "چرا باجناق و مینیون؟ جمع‌بندی | Why the brother-in-law and minions? Wrap-up"
+    }
+   ]
   },
   {
    "id": "D8CKEcdHyPs",
@@ -5683,7 +5846,98 @@
     "from": "description",
     "v": 2,
     "model": "qwen3.5-9b-q4_k_m"
-   }
+   },
+   "description": "فصل‌ها | Chapters\n0:00 مقدمه | Intro\n0:47 محقق‌ها از کجا می‌دونن چه بلاکی رو کجا بذارن؟ | How do researchers know which blocks to combine?\n2:14 ترکیب Mamba و Transformer و آزمون و خطا | Mamba–Transformer hybrids and trial and error\n3:28 مشکلاتی که فقط در مقیاس بزرگ پیدا می‌شن | Problems that only show up at scale\n4:10 اگه attention رو برداریم و فقط MLP بمونه؟ | What if we drop attention and keep only the MLP?\n4:59 ویدیوهای بعدی | Upcoming videos\n5:58 ابزارهای ساخت ویدیو و چرا مقایسه سخته | Video generation tools and why comparing them is hard\n7:21 Sora: از دمو تا leak | Sora: from demo to leak\n8:25 رقبای چینی Sora و اشباع benchmark های متنی | Sora's mostly Chinese rivals, and saturated text benchmarks\n9:27 Hailuo AI از MiniMax | Hailuo AI by MiniMax\n11:28 Runway و Gen-3 Alpha | Runway and Gen-3 Alpha\n12:12 انیمیشن کاراکتر با حالت صورت شما | Animating a character with your own face\n12:36 تست Runway با پرامپت گربه | Testing Runway with the cat prompt\n13:34 Luma Labs | Luma Labs\n14:20 آینده: فیلم‌سازی شات به شات با پرامپت | The future: shot-by-shot filmmaking with prompts\n15:09 تست Luma | Testing Luma\n15:41 Kling AI | Kling AI\n17:20 HunyuanVideo از Tencent، اوپن‌سورس | Tencent's open-source HunyuanVideo\n18:12 چقدر GPU لازمه؟ | How much GPU memory you need\n18:59 نصب و اجرای HunyuanVideo | Installing and running HunyuanVideo\n20:01 نتیجه‌ی HunyuanVideo | HunyuanVideo results\n21:04 جمع‌بندی و برنامه‌ی هفته‌های بعد | Wrap-up and what's next\n\n#هوش_مصنوعی #ساخت_ویدیو #AIVideo #VideoGeneration #Sora #HunyuanVideo",
+   "chapters": [
+    {
+     "t": 0,
+     "title": "مقدمه | Intro"
+    },
+    {
+     "t": 47,
+     "title": "محقق‌ها از کجا می‌دونن چه بلاکی رو کجا بذارن؟ | How do researchers know which blocks to combine?"
+    },
+    {
+     "t": 134,
+     "title": "ترکیب Mamba و Transformer و آزمون و خطا | Mamba–Transformer hybrids and trial and error"
+    },
+    {
+     "t": 208,
+     "title": "مشکلاتی که فقط در مقیاس بزرگ پیدا می‌شن | Problems that only show up at scale"
+    },
+    {
+     "t": 250,
+     "title": "اگه attention رو برداریم و فقط MLP بمونه؟ | What if we drop attention and keep only the MLP?"
+    },
+    {
+     "t": 299,
+     "title": "ویدیوهای بعدی | Upcoming videos"
+    },
+    {
+     "t": 358,
+     "title": "ابزارهای ساخت ویدیو و چرا مقایسه سخته | Video generation tools and why comparing them is hard"
+    },
+    {
+     "t": 441,
+     "title": "Sora: از دمو تا leak | Sora: from demo to leak"
+    },
+    {
+     "t": 505,
+     "title": "رقبای چینی Sora و اشباع benchmark های متنی | Sora's mostly Chinese rivals, and saturated text benchmarks"
+    },
+    {
+     "t": 567,
+     "title": "Hailuo AI از MiniMax | Hailuo AI by MiniMax"
+    },
+    {
+     "t": 688,
+     "title": "Runway و Gen-3 Alpha | Runway and Gen-3 Alpha"
+    },
+    {
+     "t": 732,
+     "title": "انیمیشن کاراکتر با حالت صورت شما | Animating a character with your own face"
+    },
+    {
+     "t": 756,
+     "title": "تست Runway با پرامپت گربه | Testing Runway with the cat prompt"
+    },
+    {
+     "t": 814,
+     "title": "Luma Labs | Luma Labs"
+    },
+    {
+     "t": 860,
+     "title": "آینده: فیلم‌سازی شات به شات با پرامپت | The future: shot-by-shot filmmaking with prompts"
+    },
+    {
+     "t": 909,
+     "title": "تست Luma | Testing Luma"
+    },
+    {
+     "t": 941,
+     "title": "Kling AI | Kling AI"
+    },
+    {
+     "t": 1040,
+     "title": "HunyuanVideo از Tencent، اوپن‌سورس | Tencent's open-source HunyuanVideo"
+    },
+    {
+     "t": 1092,
+     "title": "چقدر GPU لازمه؟ | How much GPU memory you need"
+    },
+    {
+     "t": 1139,
+     "title": "نصب و اجرای HunyuanVideo | Installing and running HunyuanVideo"
+    },
+    {
+     "t": 1201,
+     "title": "نتیجه‌ی HunyuanVideo | HunyuanVideo results"
+    },
+    {
+     "t": 1264,
+     "title": "جمع‌بندی و برنامه‌ی هفته‌های بعد | Wrap-up and what's next"
+    }
+   ]
   },
   {
    "id": "zHu78PKkics",
