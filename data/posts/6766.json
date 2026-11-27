@@ -1,0 +1,64 @@
+{
+ "id": 6766,
+ "url": "https://t.me/dlmehr/6766",
+ "date": "2026-11-27T15:27:30+00:00",
+ "text": "https://fxtwitter.com/kimmonismus/status/2126283505264926803?a=T-fP0KDBF8WDxFWD5Qw&s=52",
+ "forwarded_from": null,
+ "digest": false,
+ "hash": "99e9ce3d3c3d",
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/kimmonismus/status/2126283505264926803?a=T-fP0KDBF8WDxFWD5Qw&s=52",
+  "site": "🧵 Thread • FxTwitter",
+  "title": "Chubby ♨️ (@kimmonismus)",
+  "description": "Now its getting serious: Hackers have breached Cloud One, the US Air Force's flagship cloud platform, Reuters reports.\nCloud One runs on Microsoft, Amazon, Oracle and Google. It holds personnel and logistics data and a system that tracks bombs and missiles…",
+  "image": "https://cdn4.telesco.pe/file/MCiFp4yGL_dZioHLWrd8JJ7QUf5ZfadALtx8ZHSwu4zJHnG5Dh1jM1uGJ6kYUu73Qt-5Y2LbYbimLSB8SSH6ONH2L7myPGX5NU2-JRAZG3R9oLHg5rJ5HIIs95WiPJiOT95-EfnmQvOvJd95LE7LtQd8i1hCg4F83MwqbMVTIDf-dwHiicKKQ1P97RyUWB1PrDHi8HFW9yL3PZXoxN7a5DPi7dZcTA_7M81rd_oq2_e_iDGUYcAgihC4T3RmIp3T-bdVRQpr-Fm4TWRJb_XwN_K4ICW6tg-2zruttxWXs_qCrvV4QKFxK3dADYiqhV-vDaaplilaQqXevmY0qq-evQ.jpg"
+ },
+ "gholam": {
+  "text": "رفقا، بر اساس گزارش ۲۷ نوامبر رویترز، هکرها به «کلاد وان» (Cloud One) یعنی پلتفرم ابری اصلی نیروی هوایی آمریکا نفوذ کردن. البته چون کل متن لینک اصلی در دسترس نبود، این خلاصه فقط بر اساس توییت منتشرشده و دو تصویر از متن گزارش رویترزه.\n\n• به گفته منابع مطلع رویترز، این نفوذ حدود یک ماه پیش حین ارتقای سیستم کشف شده و روی کل پلتفرم اختلال انداخته؛ خبر این ماجرا هم هم‌زمان با افزایش نگرانی‌ها از حملات مبتنی بر هوش مصنوعی منتشر شده، چون این مدل‌ها ضعف‌های شبکه‌های ابری رو خیلی سریع پیدا می‌کنن.\n• یه منبع به رویترز گفته مهاجمان از یه آسیب‌پذیری نرم‌افزاری به بخش کنترلی سیستم رسیدن که روی کاغذ مثل یه «کنترل همه‌کاره» برای دیدن وضعیت عملیاتی هواپیماها یا جابه‌جایی قطعات یدکیه؛ نویسنده توییت هم نوشته این پلتفرم روی مایکروسافت، آمازون، اوراکل و گوگل کار می‌کنه، اطلاعات پرسنلی، لجستیکی و سامانه ردیابی بمب و موشک بیش از ۲۰۰ پایگاه رو داره و فرماندهی سایبری آمریکا در حال بررسی خسارته.\n• با این حال، رویترز تاکید کرده هنوز هویت هکرها، حفره امنیتی دقیق، دامنه کامل نفوذ و اینکه اصلاً داده‌ای دزدیده شده یا نه مشخص نیست.\n\nخلاصه فعلاً وضعیت مثل اینه که ردِ پای یه غریبه رو تو اتاق کنترل پیدا کرده باشن، ولی هنوز معلوم نیست به چه چیزهایی دست زده یا اصلاً چیزی برده یا نه.",
+  "date": "2026-11-27T15:28:18+00:00"
+ },
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/kimmonismus/status/2126283505264926803",
+   "domain": "x.com",
+   "author": {
+    "name": "Chubby♨️",
+    "handle": "kimmonismus",
+    "avatar": "https://pbs.twimg.com/profile_images/1728327996375719936/RW7VBJfD_200x200.jpg"
+   },
+   "text": "Now its getting serious: Hackers have breached Cloud One, the US Air Force's flagship cloud platform, Reuters reports.\n\nCloud One runs on Microsoft, Amazon, Oracle and Google. It holds personnel and logistics data and a system that tracks bombs and missiles at more than 200 Air Force sites. \n\nThe intruders reportedly used a software flaw to reach the control plane, which one source compared to a \"universal remote\". Cyber Command is now looking at the damage.",
+   "date": 1795780466,
+   "media": [
+    {
+     "type": "image",
+     "src": "https://pbs.twimg.com/media/HYITCM4WgAACDxx.jpg?name=orig",
+     "ratio": 0.5773
+    },
+    {
+     "type": "image",
+     "src": "https://pbs.twimg.com/media/HYITDmWXAAAd6-E.jpg?name=orig",
+     "ratio": 0.3187
+    }
+   ],
+   "links": []
+  }
+ ],
+ "article": {
+  "title": "بر اساس گزارش ۲۷ نوامبر رویترز، هکرها به «کلاد وان» (Cloud One) یعنی پلتفرم ابری اصلی نیروی هوایی آمریکا نفوذ کردن",
+  "source_title": "Now its getting serious: Hackers have breached Cloud One, the US Air Force's flagship cloud platform, Reuters reports.",
+  "body": [
+   "بر اساس گزارش ۲۷ نوامبر رویترز، هکرها به «کلاد وان» (Cloud One) یعنی پلتفرم ابری اصلی نیروی هوایی آمریکا نفوذ کردن. البته چون کل متن لینک اصلی در دسترس نبود، این خلاصه فقط بر اساس توییت منتشرشده و دو تصویر از متن گزارش رویترزه.",
+   "• به گفته منابع مطلع رویترز، این نفوذ حدود یک ماه پیش حین ارتقای سیستم کشف شده و روی کل پلتفرم اختلال انداخته؛ خبر این ماجرا هم هم‌زمان با افزایش نگرانی‌ها از حملات مبتنی بر هوش مصنوعی منتشر شده، چون این مدل‌ها ضعف‌های شبکه‌های ابری رو خیلی سریع پیدا می‌کنن.",
+   "• یه منبع به رویترز گفته مهاجمان از یه آسیب‌پذیری نرم‌افزاری به بخش کنترلی سیستم رسیدن که روی کاغذ مثل یه «کنترل همه‌کاره» برای دیدن وضعیت عملیاتی هواپیماها یا جابه‌جایی قطعات یدکیه؛ نویسنده توییت هم نوشته این پلتفرم روی مایکروسافت، آمازون، اوراکل و گوگل کار می‌کنه، اطلاعات پرسنلی، لجستیکی و سامانه ردیابی بمب و موشک بیش از ۲۰۰ پایگاه رو داره و فرماندهی سایبری آمریکا در حال بررسی خسارته.",
+   "• با این حال، رویترز تاکید کرده هنوز هویت هکرها، حفره امنیتی دقیق، دامنه کامل نفوذ و اینکه اصلاً داده‌ای دزدیده شده یا نه مشخص نیست."
+  ],
+  "why": "خلاصه فعلاً وضعیت مثل اینه که ردِ پای یه غریبه رو تو اتاق کنترل پیدا کرده باشن، ولی هنوز معلوم نیست به چه چیزهایی دست زده یا اصلاً چیزی برده یا نه.",
+  "why_label": "حرف آخر",
+  "tags": [
+   "امنیت"
+  ]
+ },
+ "updated": "2026-11-27T15:31:23+00:00"
+}
