@@ -47,5 +47,24 @@
    "کدنویسی"
   ]
  },
- "updated": "2026-11-27T05:23:24+00:00"
+ "updated": "2026-11-27T05:23:24+00:00",
+ "ai": {
+  "title": "تست رایگان tinygrad پر شد: مدل‌های Qwen و GLM با سخت‌افزار قدیمی اجرا می‌شوند",
+  "short": "تست رایگان tinygrad پر شد",
+  "topics": [
+   "چین",
+   "کدنویسی"
+  ],
+  "type": "خبر",
+  "model": "qwen3.5-9b-q4_k_m",
+  "v": 2,
+  "src": "f8674d7a5ed4",
+  "en": {
+   "title": "Tiny Corp offers free Qwen 3.8 Flash and GLM 5.3 Flash tokens",
+   "short": "Tiny Corp offers free Qwen and GLM tokens",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "b8393254a746"
+  }
+ }
 }
