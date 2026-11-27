@@ -1,0 +1,65 @@
+{
+ "id": 6761,
+ "url": "https://t.me/dlmehr/6761",
+ "date": "2026-11-27T01:40:30+00:00",
+ "text": "https://fxtwitter.com/guillaumeaiinsf/status/2126025639665033496?a=3MC4bmTVRz22E5qutiU&s=52",
+ "forwarded_from": null,
+ "digest": false,
+ "hash": "e7f95fc9f7a1",
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/guillaumeaiinsf/status/2126025639665033496?a=3MC4bmTVRz22E5qutiU&s=52",
+  "site": "FxTwitter · lefttosolve.com",
+  "title": "Guillaume B (@GuillaumeAIinSF)",
+  "description": "Introducing Left to Solve.\n52,979 open math problems in one place. Point your AI agent at any of them. If it finds a proof, Lean checks it, and you go on record as the first person ever to solve it.\nhttps://lefttosolve.com",
+  "image": "https://cdn4.telesco.pe/file/WMdDROg_fzqo6XeYPf3-qnU67Gv0I0EDtcS16tDcjNyKDHoc6lFrynUfilRTXaASkHhwIivZ6sCWIVXPDaI9AfS936k73LCGSHeERFTpt-3psEZ41PTJEWSP_qitUz-7-LNMBUcHwxTBTrqjlYMINQ5nLII2Dl1Elt-H1p9dXi_3zJ6ThvFgWHsAmETAVC9E09uQBTbZ7pVWQ5fJyBOz14bCCh9Qvhqxcrxxo2DygSM6ZsSLUMuCv_OqwJEvzTJ6yci0GNXM5WlXu9aQFSym41xRbw6OurHHOv0r2vbob5aUVdF8-1MhnVJJ05PCxhTSwpjmnNLJJpWsNAVirS8SYg.jpg",
+  "small": true
+ },
+ "gholam": {
+  "text": "رفقا، یه پروژه تازه به اسم «لفت تو سالو» (Left to Solve) معرفی شده که یه عالمه معمای حل‌نشده ریاضی رو یک‌جا جمع کرده تا ایجنت‌های هوش مصنوعی برن سراغشون. سازنده‌ش تو ایکس از ۵۲٬۹۷۹ مسئله باز گفته، ولی رو خود سایتش عدد ۵۷٬۴۱۰ مسئله باز دیده می‌شه؛ کارشم این‌جوریه که ایجنت روی سیستم خودتون روی معما کلنجار می‌ره و آخرش به جای داور انسانی، سیستم «لین» (Lean) چک می‌کنه اثبات درسته یا نه. 🧮\n\n• سایتش می‌گه فعلاً ۱٬۹۳۹ تا از این معماها به زبان Lean آماده اثباتن و بقیه هنوز باید به این زبان نوشته بشن؛ تا الانم ۱۰۶ تا ایجنت مشغول کار بودن ولی هنوز هیچ مسئله بازِ جدیدی حل نشده و ۷۱۴ اثبات ثبت‌شده عمدتاً مال قضیه‌های شناخته‌شده قبلیه.\n• به گفته این سایت، اگه ایجنت شما اولین بار معمایی رو حل کنه اسمتون تو تاریخچه ثبت می‌شه و اگه جایزه نقدی داشته باشه (مثل ۴ جایزه یک‌میلیون‌دلاری میلنیوم یا ۶۵ جایزه اردوش تا سقف ۱۰ هزار دلار)، خود سایت هیچ سهمی برنمی‌داره.\n\nپس اگه هوش مصنوعی‌تون تو ریاضی ادعاش می‌شه می‌تونید بفرستیدش میدون؛ ولی با این آماری که فعلاً صفر تا معمای باز حل شده، رو اون جایزه یک‌میلیون‌دلاری هنوز حساب و کتاب باز نکنید!",
+  "date": "2026-11-27T01:40:51+00:00"
+ },
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/GuillaumeAIinSF/status/2126025639665033496",
+   "domain": "x.com",
+   "author": {
+    "name": "Guillaume B",
+    "handle": "GuillaumeAIinSF",
+    "avatar": "https://pbs.twimg.com/profile_images/2120987715491475456/qj3ZWxgP_200x200.jpg"
+   },
+   "text": "Introducing Left to Solve.\n\n52,979 open math problems in one place. Point your AI agent at any of them. If it finds a proof, Lean checks it, and you go on record as the first person ever to solve it.\n\nhttps://lefttosolve.com",
+   "date": 1795718986,
+   "media": [],
+   "links": [
+    "https://lefttosolve.com"
+   ]
+  },
+  {
+   "kind": "link",
+   "url": "https://lefttosolve.com",
+   "domain": "lefttosolve.com",
+   "title": "Left to Solve: 57,410 open math problems, attacked by AI agents",
+   "description": "57,410 open math problems in one place, 1,939 already stated in Lean 4. Point your AI agent at one; a proof checker decides what counts.",
+   "image": "https://lefttosolve.com/og.jpg",
+   "site": "Left to Solve"
+  }
+ ],
+ "article": {
+  "title": "یه پروژه تازه به اسم «لفت تو سالو» (Left to Solve) معرفی شده که یه عالمه معمای حل‌نشده ریاضی رو یک‌جا جمع کرده تا ایجنت‌های هوش مصنوعی برن سراغشون",
+  "source_title": "Introducing Left to Solve.",
+  "body": [
+   "یه پروژه تازه به اسم «لفت تو سالو» (Left to Solve) معرفی شده که یه عالمه معمای حل‌نشده ریاضی رو یک‌جا جمع کرده تا ایجنت‌های هوش مصنوعی برن سراغشون. سازنده‌ش تو ایکس از ۵۲٬۹۷۹ مسئله باز گفته، ولی رو خود سایتش عدد ۵۷٬۴۱۰ مسئله باز دیده می‌شه؛ کارشم این‌جوریه که ایجنت روی سیستم خودتون روی معما کلنجار می‌ره و آخرش به جای داور انسانی، سیستم «لین» (Lean) چک می‌کنه اثبات درسته یا نه. 🧮",
+   "• سایتش می‌گه فعلاً ۱٬۹۳۹ تا از این معماها به زبان Lean آماده اثباتن و بقیه هنوز باید به این زبان نوشته بشن؛ تا الانم ۱۰۶ تا ایجنت مشغول کار بودن ولی هنوز هیچ مسئله بازِ جدیدی حل نشده و ۷۱۴ اثبات ثبت‌شده عمدتاً مال قضیه‌های شناخته‌شده قبلیه.",
+   "• به گفته این سایت، اگه ایجنت شما اولین بار معمایی رو حل کنه اسمتون تو تاریخچه ثبت می‌شه و اگه جایزه نقدی داشته باشه (مثل ۴ جایزه یک‌میلیون‌دلاری میلنیوم یا ۶۵ جایزه اردوش تا سقف ۱۰ هزار دلار)، خود سایت هیچ سهمی برنمی‌داره."
+  ],
+  "why": "پس اگه هوش مصنوعی‌تون تو ریاضی ادعاش می‌شه می‌تونید بفرستیدش میدون؛ ولی با این آماری که فعلاً صفر تا معمای باز حل شده، رو اون جایزه یک‌میلیون‌دلاری هنوز حساب و کتاب باز نکنید!",
+  "why_label": "حرف آخر",
+  "tags": [
+   "ایجنت",
+   "علم"
+  ]
+ },
+ "updated": "2026-11-27T01:44:27+00:00"
+}
