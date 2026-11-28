@@ -14861,6 +14861,12 @@
    "name_en": "Markov Robotics",
    "name_fa": "مارکوف روبوتیکس",
    "kind": "company"
+  },
+  {
+   "slug": "petri",
+   "name_en": "Petri",
+   "name_fa": "پتری",
+   "kind": "product"
   }
  ]
 }
