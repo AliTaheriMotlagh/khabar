@@ -14855,6 +14855,12 @@
    "name_en": "Bing Card",
    "name_fa": "جدول بینگو",
    "kind": "product"
+  },
+  {
+   "slug": "markov-robotics",
+   "name_en": "Markov Robotics",
+   "name_fa": "مارکوف روبوتیکس",
+   "kind": "company"
   }
  ]
 }
