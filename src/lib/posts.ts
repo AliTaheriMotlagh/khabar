@@ -470,6 +470,89 @@ export function videoPlan(p: Post): { title: boolean; chapters: VideoChapter[] }
   return { title: !p.article.body[0]?.includes(head.slice(0, 30)), chapters };
 }
 
+/** A story as a short film (src/scripts/film.ts, the video sheet's «فیلم»): shots in a class's order — the hook, the
+ *  real post it comes from, the story told over its own pictures, a list built up item by item, «به زبان ساده» and a
+ *  hard word explained by Gholam the anchor, the numbers as bars, the story so far, «چرا مهمه؟», a quiz — each with
+ *  the lines it says. Everything said or shown is the story's own (Gholam's text, the source post, the model's checked
+ *  extras: simple, terms, models' scores, quiz, thread); the sentences joining them are fixed templates, never the
+ *  model's. Pictures as raw addresses (card.json.ts turns them into the relay's). Null for a digest or a story too thin
+ *  for a film. */
+export type FilmShot = {
+  shot: 'hook' | 'source' | 'picture' | 'points' | 'explain' | 'term' | 'numbers' | 'context' | 'why' | 'quiz';
+  head?: string;
+  say: string[];
+  pics?: string[];
+  /** Seconds of silence before each line (the quiz's countdown before its answer). */
+  pause?: number[];
+  data?: unknown;
+};
+export type FilmSource = { kind: 'tweet' | 'link' | 'youtube'; name: string; handle?: string; avatar?: string | null; text?: string; title?: string; site: string; date?: string | null };
+const speakOf = (s: string) => s.replace(/^\s*[•●▪\-–—*]\s*/, '').replace(/https?:\/\/\S+/g, '').trim();
+export function filmPlan(p: Post): { src: FilmSource | null; shots: FilmShot[] } | null {
+  if (p.kind === 'digest' || !p.article.body.length) return null;
+  const a = p.article;
+  const pics = stills(p, 8);
+  let next = 0;
+  const pic = () => (pics.length ? [pics[next++ % pics.length]] : []);
+  const shots: FilmShot[] = [{ shot: 'hook', head: p.type ?? (a.tags[0] || 'خبر'), say: [a.title], pics: pics.slice(0, 1) }];
+  next = pics.length > 1 ? 1 : 0;
+  // The real post: who said it, in their words (a tweet's text, an article's title).
+  const l = p.source;
+  const src: FilmSource | null =
+    l && (l.text || l.title)
+      ? {
+          kind: l.kind,
+          name: l.author?.name || l.site || l.domain,
+          handle: l.author?.handle,
+          avatar: l.author?.avatar ?? null,
+          text: l.text ? clip(l.text.replace(/https?:\/\/\S+/g, '').trim(), 280) : undefined,
+          title: l.title,
+          site: l.domain.replace(/^www\./, ''),
+          date: l.date ? new Date(l.date * 1000).toISOString() : null,
+        }
+      : null;
+  const body = a.body.map(speakOf).filter((t) => t.length > 1);
+  const bullets = a.body.map((t) => /^\s*[•●▪*]\s/.test(t));
+  let k = 0;
+  while (k < a.body.length) {
+    const text = speakOf(a.body[k]);
+    if (!text) {
+      k++;
+      continue;
+    }
+    if (bullets[k]) {
+      const items: string[] = [];
+      while (k < a.body.length && bullets[k]) items.push(speakOf(a.body[k++]));
+      shots.push({ shot: 'points', head: 'نکته‌ها', say: items, pics: pic(), data: { n: items.length } });
+      continue;
+    }
+    // The first paragraph over the real post, when there is one; the rest over the story's pictures.
+    shots.push(src && shots.length === 1 ? { shot: 'source', say: [text], pics: pic() } : { shot: 'picture', say: [text], pics: pic() });
+    k++;
+  }
+  if (!body.length) return null;
+  if (p.simple) shots.push({ shot: 'explain', head: 'به زبان ساده', say: [p.simple] });
+  const term = p.terms.find((t) => t.def && t.def.length < 200);
+  if (term) shots.push({ shot: 'term', head: 'یک اصطلاح', say: [`${term.term} یعنی ${term.def.replace(/[.؟!]+$/, '')}.`], data: { term: term.term, def: term.def } });
+  // Benchmark scores the text states (pipeline/ai_more.py tidy_models): bars, two said aloud.
+  const bars = p.models.flatMap((m) => m.scores.map((s) => ({ model: m.name, bench: s.bench, value: parseFloat(s.value.replace(/[^\d.]/g, '')), label: s.value }))).filter((b) => Number.isFinite(b.value));
+  if (bars.length >= 2) {
+    const said = bars.slice(0, 2).map((b) => `${b.model} در ${b.bench} ${b.label}`).join(' و ');
+    shots.push({ shot: 'numbers', head: 'عددها', say: [`امتیازها: ${said}.`], data: { bars: bars.slice(0, 6) } });
+  }
+  // The story so far: this story's thread, the ones before it.
+  const t = p.thread;
+  if (t?.title) {
+    const byId = new Map(getPosts().map((x) => [x.id, x]));
+    const before = t.ids.filter((id) => id < p.id).slice(-3).map((id) => byId.get(id)).filter((x): x is Post => !!x);
+    if (before.length) shots.push({ shot: 'context', head: 'ماجرا تا اینجا', say: [`این خبر ادامه‌ی ماجرای «${t.title}» است.`], data: { items: before.map((x) => ({ date: x.date, title: x.short || x.article.title })) } });
+  }
+  if (a.why) shots.push({ shot: 'why', head: whyLabel(a), say: [a.why] });
+  const q = p.quiz;
+  if (q && q.options[q.answer]) shots.push({ shot: 'quiz', head: 'یک سؤال', say: [q.q, `جواب: ${q.options[q.answer]}`], pause: [0, 3], data: q });
+  return { src, shots };
+}
+
 /** The heading over a story's closing paragraph: «چرا مهمه؟», or the pipeline's own label for Gholam's closing take
  *  (`why_label`, pipeline/shape.py split_gholam). */
 export const whyLabel = (a: { why_label?: string | null }) => a.why_label || 'چرا مهمه؟';

@@ -1,7 +1,7 @@
 // Small per-story JSON behind the long-press preview (src/scripts/peek.ts), the cloud voice (server/tts.js) and the
 // story's video (src/scripts/video.ts: `video`, by index into the spoken lines).
 import type { APIRoute } from 'astro';
-import { faNum, getPosts, picture, videoPlan, whyLabel, type Post } from '../../../lib/posts';
+import { faNum, filmPlan, getPosts, picture, videoPlan, whyLabel, type Post } from '../../../lib/posts';
 import { lexFor } from '../../../lib/knowledge';
 
 export function getStaticPaths() {
@@ -12,6 +12,12 @@ export const GET: APIRoute = ({ props }) => {
   const p = props.post as Post;
   const a = p.article;
   const plan = videoPlan(p);
+  const film = filmPlan(p);
+  // Each picture's addresses, best first (src, then the fallbacks).
+  const addrs = (s: string, size: 'small' | 'large' = 'large') => {
+    const x = picture(s, size);
+    return [x.src, ...(x.alt?.split(' ') ?? [])];
+  };
   const body = p.kind === 'digest' ? p.digestItems.map((i) => `${faNum(i.n)} — ${i.text}`) : a.body;
   const lex = lexFor([a.title, ...body, a.why ?? '']);
   const card = {
@@ -40,9 +46,15 @@ export const GET: APIRoute = ({ props }) => {
     ...(p.source?.domain && { source: p.source.domain.replace(/^www\./, '') }),
     video: {
       title: plan.title,
-      // Each picture's addresses, best first (src, then the fallbacks).
-      chapters: plan.chapters.map((c) => ({ ...c, pics: c.pics.map((s) => picture(s, 'large')).map((x) => [x.src, ...(x.alt?.split(' ') ?? [])]) })),
+      chapters: plan.chapters.map((c) => ({ ...c, pics: c.pics.map((s) => addrs(s)) })),
     },
+    // The short film (src/scripts/film.ts): its shots, what each says and shows; the source post's avatar relayed too.
+    ...(film && {
+      film: {
+        ...(film.src && { src: { ...film.src, avatar: film.src.avatar ? addrs(film.src.avatar, 'small') : null } }),
+        shots: film.shots.map((s) => ({ ...s, pics: (s.pics ?? []).map((x) => addrs(x)) })),
+      },
+    }),
   };
   return new Response(JSON.stringify(card), { headers: { 'Content-Type': 'application/json; charset=utf-8' } });
 };

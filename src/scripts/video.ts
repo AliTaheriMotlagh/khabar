@@ -15,9 +15,10 @@ import { $, BASE, fmtNum, store, tapAudio, toast, track } from './core';
 import { SITE } from '../site';
 import { align, pauseAfter, weight, words } from '../lib/align';
 import { lineAudio, persianVoice, recordableVoice, type Line, type Recordable } from './speech';
-import { sayLine } from '../../server/_say.js';
+import { sayLine, toShown } from '../../server/_say.js';
 import { chosenVoice, voiceSupported } from './voice';
 import { openVoice } from './voice-offer';
+import type { FilmScene, FilmShotJson, FilmSrc, FilmVideo } from './film';
 
 const FPS = 30;
 const RATE = 48000;
@@ -30,7 +31,7 @@ const OUTRO = 3.6;
 const LEAD = 0.7;
 const GAP = 0.35;
 const TITLE_SILENT = 3.4;
-const FONT = '"Vazirmatn Variable", system-ui, sans-serif';
+export const FONT = '"Vazirmatn Variable", system-ui, sans-serif';
 const PIC_WAIT = 9000;
 
 // ---------- the frame: three shapes (PLAN.md P1-C) ----------
@@ -81,21 +82,23 @@ function useShape(shape: Shape) {
   TITLE_ROOM = G.titleRoom;
   REEL = shape === 'v';
 }
-const YELLOW = '#ffd166';
-const INK = '#141a33';
+export const YELLOW = '#ffd166';
+export const INK = '#141a33';
 
 type Plan = { title: boolean; chapters: { head: string | null; say: number[]; pics: string[][] }[] };
 type Card = {
   id: number; kind: string; title: string; href: string; date: string; tag: string | null; body: string[]; why: string | null; video: Plan;
-  whyLabel?: string; lex?: Record<string, string>; source?: string; share?: string;
+  whyLabel?: string; lex?: Record<string, string>; source?: string; share?: string; short?: string;
   /** The model's 60-second script (pipeline/ai_more.py ai.x.video). */
   clip?: { hook: string; points: string[]; why: string };
   /** An episode teaser's YouTube address, shown on the closing card instead of the story's (/videos/<id>/card.json). */
   link?: string; vid?: string;
+  /** The short film's shots (src/lib/posts.ts filmPlan, drawn by src/scripts/film.ts). */
+  film?: { src?: FilmSrc; shots: FilmShotJson[] };
 };
 /** A word as shown and said: when it's said, and whether it starts a paragraph. Hidden: said but not shown (the
  *  «۳ —» before a summary item, which its chapter's number shows). */
-type Word = { text: string; from: number; to: number; br: boolean; hidden: boolean };
+export type Word = { text: string; from: number; to: number; br: boolean; hidden: boolean };
 /** silent: a headline that isn't read aloud, shown word by word without the mark that follows the voice. */
 type Scene = { kind: 'title' | 'chapter'; head: string | null; words: Word[]; pics: ImageBitmap[]; from: number; to: number; silent: boolean };
 type Clip = { at: number; pcm: Float32Array };
@@ -188,13 +191,15 @@ async function build(card: Card, pics: Map<string, ImageBitmap | null>, engine: 
         scene.words.push(...ws);
         t = (ws.at(-1)?.to ?? t) + GAP;
       } else {
+        const said: Word[] = [];
         for (const piece of await lineAudio(lineOf(i), engine)) {
           const pcm = (await decoder.decodeAudioData(piece.data)).getChannelData(0);
           const ws = words(piece.texts.join(' '));
-          align(pcm, RATE, ws).forEach((s, k) => scene.words.push({ text: ws[k], from: t + s.from, to: t + s.to, br: false, hidden: false }));
+          align(pcm, RATE, ws).forEach((s, k) => said.push({ text: ws[k], from: t + s.from, to: t + s.to, br: false, hidden: false }));
           clips.push({ at: t, pcm });
           t += pcm.length / RATE;
         }
+        scene.words.push(...shownWords(lineOf(i), said));
         t += GAP;
       }
       if (scene.words[first]) scene.words[first].br = first > 0;
@@ -208,8 +213,106 @@ async function build(card: Card, pics: Map<string, ImageBitmap | null>, engine: 
   return { scenes, clips, outro: t, total: t + OUTRO };
 }
 
+/** The line's words as shown, timed from the words as said: a Latin name said in Persian letters («دی ممیز سه یلتر»)
+ *  is shown as written («d1.3-ultra»), lit from its first spoken word to its last (server/_say.js `map`). */
+function shownWords(l: Line, said: Word[]): Word[] {
+  const shown = words(l.text);
+  if (!l.map?.length || !said.length) return said.length === shown.length ? said : spread(shown, said);
+  const say = l.say ?? l.text;
+  // Each word as said → where it starts in the spoken line → the shown word at that place.
+  const starts: number[] = [];
+  let at = 0;
+  shown.forEach((w) => {
+    const i = l.text.indexOf(w, at);
+    starts.push(i < 0 ? at : i);
+    at = (i < 0 ? at : i) + w.length;
+  });
+  const out: (Word | null)[] = shown.map(() => null);
+  let cur = 0;
+  for (const w of said) {
+    const i = say.indexOf(w.text, cur);
+    if (i < 0) continue;
+    cur = i + w.text.length;
+    const pos = toShown(l.map, i);
+    let k = starts.length - 1;
+    while (k > 0 && starts[k] > pos) k--;
+    const o = out[k];
+    out[k] = o ? { ...o, to: Math.max(o.to, w.to) } : { text: shown[k], from: w.from, to: w.to, br: false, hidden: false };
+  }
+  // A shown word no spoken word landed on (rare): between its neighbours.
+  return out.map((w, k) => w ?? { text: shown[k], from: out[k - 1]?.to ?? said[0].from, to: out[k - 1]?.to ?? said[0].from, br: false, hidden: false });
+}
+/** Shown words over the said ones' time, in proportion (when the two lists don't line up). */
+function spread(shown: string[], said: Word[]): Word[] {
+  const from = said[0]?.from ?? 0;
+  const to = said.at(-1)?.to ?? from;
+  const per = (to - from) / Math.max(1, shown.length);
+  return shown.map((text, k) => ({ text, from: from + k * per, to: from + (k + 1) * per, br: false, hidden: false }));
+}
+
+// ---------- the short film (src/scripts/film.ts) ----------
+/** The film's lines as a card the voices read: its first line the title, every other line in order the body, so
+ *  /api/tts's `k=film&n=` and lineMaker number them alike. */
+function filmCard(card: Card): Card {
+  const all = card.film!.shots.flatMap((s) => s.say);
+  return { ...card, title: all[0] ?? card.title, body: all.slice(1), why: null };
+}
+/** The film's shots on a timeline: each line said in turn (after its pause), every word timed from the voice. */
+async function buildFilm(card: Card, pics: Map<string, ImageBitmap | null>, engine: Recordable | null, step: (p: number) => void, lineOf: (i: number) => Line, intro: number, outroFor: number) {
+  const shots = card.film!.shots;
+  const decoder = new OfflineAudioContext(1, 1, RATE);
+  const clips: Clip[] = [];
+  const scenes: FilmScene[] = [];
+  const todo = shots.reduce((n, s) => n + s.say.length, 0) || 1;
+  let line = 0;
+  let done = 0;
+  let t = intro;
+  for (const shot of shots) {
+    const scene: FilmScene = {
+      shot: shot.shot,
+      head: shot.head ?? null,
+      words: [],
+      pics: shot.pics.map((a) => pics.get(a[0])).filter((b): b is ImageBitmap => !!b),
+      from: t,
+      to: t,
+      lineAt: [],
+      data: shot.shot === 'points' ? { ...shot.data, items: shot.say } : shot.data,
+    };
+    t += shot.shot === 'hook' ? 0.3 : 0.6;
+    for (let j = 0; j < shot.say.length; j++) {
+      t += shot.pause?.[j] ?? 0;
+      scene.lineAt.push(t);
+      const first = scene.words.length;
+      const l = lineOf(line++);
+      if (!engine) {
+        const ws = paced(l.text, t);
+        scene.words.push(...ws);
+        t = (ws.at(-1)?.to ?? t) + GAP;
+      } else {
+        const said: Word[] = [];
+        for (const piece of await lineAudio(l, engine)) {
+          const pcm = (await decoder.decodeAudioData(piece.data)).getChannelData(0);
+          const ws = words(piece.texts.join(' '));
+          align(pcm, RATE, ws).forEach((s, k) => said.push({ text: ws[k], from: t + s.from, to: t + s.to, br: false, hidden: false }));
+          clips.push({ at: t, pcm });
+          t += pcm.length / RATE;
+        }
+        scene.words.push(...shownWords(l, said));
+        t += GAP;
+      }
+      if (scene.words[first]) scene.words[first].br = first > 0;
+      step(++done / todo);
+    }
+    // A beat after each shot (longer after the quiz's answer and the anchor's lines): room to take it in.
+    t += shot.shot === 'quiz' ? 1.6 : ['explain', 'term', 'why', 'numbers', 'context'].includes(shot.shot) ? 0.7 : 0.35;
+    scene.to = t;
+    scenes.push(scene);
+  }
+  return { scenes, clips, outro: t, total: t + outroFor };
+}
+
 // ---------- which lines, in which plan: the full story, or the short one (PLAN.md P1-C) ----------
-export type Mode = 'short' | 'full';
+export type Mode = 'short' | 'full' | 'film';
 /** The lines a video says, as /api/tts reads them: the story's [title, ...body, why] (by index), or the 60-second
  *  script [hook, 3 points, why] (`?id=&k=clip&n=`), or an episode teaser's lines (`?vid=&i=`). */
 function spokenLines(card: Card): string[] {
@@ -288,26 +391,26 @@ function mix(v: Omit<Video, 'sound' | 'card'>, voiced: boolean): AudioBuffer | n
 }
 
 // ---------- drawing ----------
-const ease = (x: number) => 1 - (1 - Math.min(1, Math.max(0, x))) ** 3;
-const back = (x: number) => {
+export const ease = (x: number) => 1 - (1 - Math.min(1, Math.max(0, x))) ** 3;
+export const back = (x: number) => {
   x = Math.min(1, Math.max(0, x));
   return 1 + 2.7 * (x - 1) ** 3 + 1.7 * (x - 1) ** 2;
 };
-const day = (iso: string) => new Intl.DateTimeFormat('fa-IR-u-ca-persian', { timeZone: SITE.timeZone, day: 'numeric', month: 'long', year: 'numeric' }).format(new Date(iso));
-const isLatin = (s: string) => /[A-Za-z]/.test(s) && !/[؀-ۿ]/.test(s);
-const trim = (s: string) => s.replace(/^[«"(\[]+|[»")\],.،؛:!?؟…]+$/g, '');
+export const day = (iso: string) => new Intl.DateTimeFormat('fa-IR-u-ca-persian', { timeZone: SITE.timeZone, day: 'numeric', month: 'long', year: 'numeric' }).format(new Date(iso));
+export const isLatin = (s: string) => /[A-Za-z]/.test(s) && !/[؀-ۿ]/.test(s);
+export const trim = (s: string) => s.replace(/^[«"(\[]+|[»")\],.،؛:!?؟…]+$/g, '');
 
-function rounded(ctx: CanvasRenderingContext2D, x: number, y: number, w: number, h: number, r: number) {
+export function rounded(ctx: CanvasRenderingContext2D, x: number, y: number, w: number, h: number, r: number) {
   ctx.beginPath();
   ctx.roundRect(x, y, w, h, r);
 }
-function cover(ctx: CanvasRenderingContext2D, img: ImageBitmap, x: number, y: number, w: number, h: number, zoom: number, pan: number) {
+export function cover(ctx: CanvasRenderingContext2D, img: ImageBitmap, x: number, y: number, w: number, h: number, zoom: number, pan: number) {
   const s = Math.max(w / img.width, h / img.height) * zoom;
   const dw = img.width * s;
   const dh = img.height * s;
   ctx.drawImage(img, x + (w - dw) / 2 + pan * (dw - w) * 0.5, y + (h - dh) / 2, dw, dh);
 }
-function logo(ctx: CanvasRenderingContext2D, cx: number, cy: number, r: number, ring = 1, dot = 1) {
+export function logo(ctx: CanvasRenderingContext2D, cx: number, cy: number, r: number, ring = 1, dot = 1) {
   const g = ctx.createLinearGradient(cx - r, cy - r, cx + r, cy + r);
   g.addColorStop(0, '#2f4fd8');
   g.addColorStop(1, '#6d4ff0');
@@ -330,8 +433,8 @@ function logo(ctx: CanvasRenderingContext2D, cx: number, cy: number, r: number, 
 
 /** Lines of words fitting `width`, each word placed (x from the column's left edge). Right to left, with runs of
  *  English words (and the numbers between them, «Gemini 4 Argon») kept left to right, as the browser would show them. */
-type Placed = { k: number; x: number; w: number; ltr: boolean };
-function layout(ctx: CanvasRenderingContext2D, ws: Word[], width: number): Placed[][] {
+export type Placed = { k: number; x: number; w: number; ltr: boolean };
+export function layout(ctx: CanvasRenderingContext2D, ws: Word[], width: number): Placed[][] {
   const space = ctx.measureText(' ').width;
   const rows: number[][] = [];
   let row: number[] = [];
@@ -377,7 +480,7 @@ function layout(ctx: CanvasRenderingContext2D, ws: Word[], width: number): Place
 }
 
 /** What a scene shows besides its words: numbers as they're said, English names as tags. */
-function extras(ws: Word[]) {
+export function extras(ws: Word[]) {
   const callouts: { text: string; from: number; to: number }[] = [];
   ws.forEach((w, k) => {
     if (w.hidden || !/[0-9۰-۹]/.test(w.text)) return;
@@ -1027,13 +1130,13 @@ function show(canvas: HTMLCanvasElement, phase: 'preview' | 'frames') {
   showing = canvas;
 }
 /** The video, silent and paced, playing in a loop at half size while the voice is made. */
-function preview(v: Video, stop: AbortSignal) {
+function preview(v: Pick<Video, 'total'>, stop: AbortSignal, make: (ctx: CanvasRenderingContext2D) => (t: number) => void = (ctx) => painter(ctx, v as Video)) {
   const canvas = document.createElement('canvas');
   canvas.width = W / 2;
   canvas.height = H / 2;
   const ctx = canvas.getContext('2d', { alpha: false })!;
   ctx.setTransform(0.5, 0, 0, 0.5, 0, 0);
-  const draw = painter(ctx, v);
+  const draw = make(ctx);
   show(canvas, 'preview');
   const id = ++previewing;
   const t0 = performance.now();
@@ -1076,7 +1179,7 @@ type Choice = { shape?: Shape; mode?: Mode };
 /** The reader's last shape and length; vertical on a phone, landscape on a computer, short when the story has one. */
 const choice = (o?: Choice): Required<Choice> => {
   const pref = store.get<Choice>('video-pref', {});
-  return { shape: o?.shape ?? pref.shape ?? (matchMedia('(pointer: coarse)').matches ? 'v' : 'h'), mode: o?.mode ?? pref.mode ?? 'short' };
+  return { shape: o?.shape ?? pref.shape ?? (matchMedia('(pointer: coarse)').matches ? 'v' : 'h'), mode: o?.mode ?? pref.mode ?? 'film' };
 };
 type Step = 'pics' | 'voice' | 'frames' | 'ready';
 const STEPS: Step[] = ['pics', 'voice', 'frames', 'ready'];
@@ -1169,8 +1272,9 @@ export async function makeVideo(href: string, ac: AudioContext | null = null, as
     store.set('video-pref', want);
     stage.dataset.shape = want.shape;
     const full = (await fetch(`${href}card.json`).then((r) => (r.ok ? r.json() : Promise.reject(new Error(String(r.status)))))) as Card;
-    const short = want.mode === 'short' ? shortCard(full) : null;
-    const mode: Mode = short ? 'short' : 'full';
+    const filmed = want.mode === 'film' && !!full.film?.shots.length;
+    const short = !filmed && want.mode === 'short' ? shortCard(full) : null;
+    const mode: Mode = filmed ? 'film' : short ? 'short' : 'full';
     const key = `${href} ${want.shape} ${mode} ${engine} ${chosenVoice()}`;
     if (made?.key === key) return made.show();
     const hit = await kept(key);
@@ -1178,6 +1282,49 @@ export async function makeVideo(href: string, ac: AudioContext | null = null, as
       made = { key, show: done.bind(null, full, hit, 0, !engine, href, want.shape, mode, true) };
       return made.show();
     }
+    let made1: { blob: Blob; total: number; silent: boolean; card: Card };
+    if (mode === 'film') {
+      const F = await import('./film');
+      const fc = filmCard(full);
+      $('[data-vs-skel]', stage)!.textContent = full.title;
+      useShape(want.shape);
+      await Promise.all([800, 600, 900].map((w) => document.fonts.load(`${w} 40px ${FONT}`))).catch(() => {});
+      say('آوردن تصویرها…', 0.03);
+      const wanted = new Map(full.film!.shots.flatMap((c) => c.pics).map((a) => [a[0], a]));
+      const avatarAt = full.film!.src?.avatar ?? null;
+      let got = 0;
+      const [list, avatar] = await Promise.all([
+        Promise.all([...wanted.values()].map((a) => picture(a).then((b) => (say('آوردن تصویرها…', 0.03 + (0.05 * ++got) / Math.max(1, wanted.size), got / Math.max(1, wanted.size)), b)))),
+        avatarAt ? picture(avatarAt) : Promise.resolve(null),
+      ]);
+      const pics = new Map([...wanted.keys()].map((k, i) => [k, list[i]]));
+      if (stop.aborted) return;
+      const lines = lineMaker(fc, (i) => `id=${full.id}&k=film&n=${i}`);
+      const shell = (b: Awaited<ReturnType<typeof buildFilm>>): FilmVideo => ({ ...b, src: full.film!.src ?? null, avatar, id: full.id, date: full.date, title: full.short ?? full.title });
+      const draft = shell(await buildFilm(fc, pics, null, () => {}, lines, F.FILM_INTRO, F.FILM_OUTRO));
+      preview(draft, stop, (ctx) => F.filmPainter(ctx, W, H, draft));
+      step('voice');
+      say(engine ? 'ساختن روایت…' : 'آماده کردن متن…', 0.08);
+      const film = shell(await buildFilm(fc, pics, engine, (p) => say('ساختن روایت با صدای فارسی…', 0.08 + p * 0.37, p), lines, F.FILM_INTRO, F.FILM_OUTRO));
+      if (stop.aborted) return;
+      const sound = engine ? F.filmSound(film, RATE) : null;
+      const canvas = document.createElement('canvas');
+      canvas.width = W;
+      canvas.height = H;
+      const draw = F.filmPainter(canvas.getContext('2d', { alpha: false })!, W, H, film);
+      previewing++;
+      show(canvas, 'frames');
+      step('frames');
+      const frames = (p: number) => say('ساختن فیلم، فریم به فریم…', 0.45 + p * 0.55, p);
+      const v = { total: film.total, sound } as Video;
+      let blob = await encode(v, canvas, draw, frames, stop);
+      if (!blob) {
+        note.textContent = `این کار ${fmtNum(Math.ceil(film.total))} ثانیه طول می‌کشد؛ این صفحه را باز نگه دارید (خواندن و گوش دادن در همین صفحه آزاد است).`;
+        blob = await record(v, canvas, draw, frames, stop, ac);
+      }
+      if (stop.aborted) return;
+      made1 = { blob, total: film.total, silent: !sound, card: full };
+    } else {
     const card = short?.card ?? full;
     $('[data-vs-skel]', stage)!.textContent = card.title;
     const src = short?.src ?? ((i: number) => (full.vid ? `vid=${full.vid}&i=${i}` : undefined));
@@ -1200,7 +1347,7 @@ export async function makeVideo(href: string, ac: AudioContext | null = null, as
     const lines = lineMaker(card, src);
     // The preview: the same video with the text at a reading pace and no sound, while the voice is made.
     const draft = await build(card, pics, null, () => {}, lines);
-    preview({ card, ...draft, sound: null }, stop);
+    preview({ card, ...draft, sound: null } as Video, stop);
     step('voice');
     say(engine ? 'ساختن روایت…' : 'آماده کردن متن…', 0.08);
     const built = await build(card, pics, engine, (p) => say('ساختن روایت با صدای فارسی…', 0.08 + p * 0.37, p), lines);
@@ -1220,9 +1367,12 @@ export async function makeVideo(href: string, ac: AudioContext | null = null, as
       blob = await record(video, canvas, draw, frames, stop, ac);
     }
     if (stop.aborted) return;
+      made1 = { blob, total: video.total, silent: !video.sound, card };
+    }
+    const { blob, total } = made1;
     track(`video-made-${want.shape}`);
-    void keep(key, blob, video.total);
-    made = { key, show: done.bind(null, full, blob, video.total, !video.sound, href, want.shape, mode, false) };
+    void keep(key, blob, total);
+    made = { key, show: done.bind(null, full, blob, total, made1.silent, href, want.shape, mode, false) };
     made.show();
     step('ready');
     if (!d.open) {
@@ -1287,7 +1437,7 @@ function done(card: Card, blob: Blob, seconds: number, silent: boolean, href: st
   }
   for (const b of d.querySelectorAll<HTMLButtonElement>('[data-vs-mode]')) {
     b.setAttribute('aria-pressed', String(b.dataset.vsMode === mode));
-    b.hidden = b.dataset.vsMode === 'short' && !card.clip && card.kind !== 'digest';
+    b.hidden = (b.dataset.vsMode === 'short' && !card.clip && card.kind !== 'digest') || (b.dataset.vsMode === 'film' && !card.film?.shots.length);
     b.onclick = () => b.dataset.vsMode !== mode && makeVideo(href, tapAudio(), true, { shape, mode: b.dataset.vsMode as Mode });
   }
   // Ready to post: the caption (the model's, else the headline and the address) goes with the file, and can be copied.
