@@ -45,6 +45,8 @@ jobs:
           path: .cache/film-profile
           key: film-profile-v1-${{ github.run_id }}
           restore-keys: film-profile-v1-
+      - name: ffmpeg (no longer on GitHub's runner image)
+        run: command -v ffmpeg || for i in 1 2 3; do (sudo apt-get update -q && sudo apt-get install -y -q --no-install-recommends ffmpeg) && break; sleep $((i * 15)); done
       - name: Make and publish
         env:
           SITE: ${{ vars.API_URL || 'https://blog.remixt.app' }}

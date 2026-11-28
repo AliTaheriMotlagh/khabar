@@ -57,6 +57,8 @@ jobs:
           restore-keys: |
             podcast-profile-v1-
             film-profile-v1-
+      - name: ffmpeg (no longer on GitHub's runner image)
+        run: command -v ffmpeg || for i in 1 2 3; do (sudo apt-get update -q && sudo apt-get install -y -q --no-install-recommends ffmpeg) && break; sleep $((i * 15)); done
       - name: Make the sound and publish it
         id: sound
         env:

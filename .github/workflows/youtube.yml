@@ -32,6 +32,8 @@ jobs:
       - uses: actions/setup-node@v7
         with:
           node-version: 24
+      - name: ffmpeg (no longer on GitHub's runner image)
+        run: command -v ffmpeg || for i in 1 2 3; do (sudo apt-get update -q && sudo apt-get install -y -q --no-install-recommends ffmpeg) && break; sleep $((i * 15)); done
       - name: Upload
         env:
           SITE: ${{ vars.API_URL || 'https://blog.remixt.app' }}
