@@ -13,6 +13,8 @@ import { sayLine } from './_say.js';
 const KEY = process.env.AZURE_SPEECH_KEY;
 const REGION = process.env.AZURE_SPEECH_REGION;
 const VOICE = process.env.TTS_VOICE || 'fa-IR-DilaraNeural';
+// Azure's two Persian voices: Farid (a man's), Dilara (a woman's). TTS_GENDER for any other.
+const GENDER = process.env.TTS_GENDER || (/farid/i.test(VOICE) ? 'male' : 'female');
 const xml = (s) => s.replace(/[&<>"']/g, (c) => `&#${c.charCodeAt(0)};`);
 
 export const OPTIONS = preflight;
@@ -65,7 +67,8 @@ export async function textOf(u) {
 export async function GET(request) {
   const u = new URL(request.url);
   // ?probe=1: is the cloud voice on? The site only offers "listen" where some Persian voice can actually speak.
-  if (u.searchParams.has('probe')) return json(request, { ok: Boolean(KEY && REGION) }, { status: KEY && REGION ? 200 : 501, cache: 300 });
+  // Its gender too: a film's drawn host matches the voice (src/scripts/film.ts — Gholam for a man's, Parisa for a woman's).
+  if (u.searchParams.has('probe')) return json(request, { ok: Boolean(KEY && REGION), gender: GENDER }, { status: KEY && REGION ? 200 : 501, cache: 300 });
   if (!KEY || !REGION) return fail(request, 501, 'not configured');
   const text = await textOf(u);
   if (text === null) return fail(request, 400, 'bad request');

@@ -242,7 +242,9 @@ $$('[data-make-video]').forEach((b) => (b.hidden = !canMakeVideo));
  *  «۶۰ ثانیه خبر امروز» is vertical and short); otherwise the reader's last choice. */
 function makeVideo(href: string, d: DOMStringMap = {}) {
   const ac = tapAudio();
-  const opts = { ...(d.videoShape && { shape: d.videoShape as 'v' | 'h' | 's' }), ...(d.videoMode && { mode: d.videoMode as 'short' | 'full' }) };
+  // A button with its own kind (the brief's «۶۰ ثانیه», the /videos/ teasers) makes it at once; the story's «ویدیو»
+  // opens the sheet's setup (src/scripts/video.ts setupVideo).
+  const opts = { ...(d.videoShape && { shape: d.videoShape as 'v' | 'h' | 's' }), ...(d.videoMode && { mode: d.videoMode as 'short' | 'full' | 'film' }) };
   if (d.videoMode === 'short' && d.videoShape === 'v') track('brief60');
   import('./video').then((m) => m.makeVideo(href, ac, false, opts), () => (ac?.close().catch(() => {}), toast('اتصال اینترنت را بررسی کنید')));
 }
@@ -438,14 +440,11 @@ if ($('[data-en-voice]')) $$('[data-open-settings]').forEach((b) => b.addEventLi
 if ($('[data-ad]')) import('./ads').then((m) => m.initAds());
 if ($('[data-cinema]')) import('./cinema').then((m) => m.initCinema());
 if ($('[data-podcast]')) import('./podcast').then((m) => m.initPodcast());
-// From «سینمای خبر»'s «ساختن فیلم»: point at «ویدیو» (a film is made from a tap on this page: iOS records sound only then).
+// From «سینمای خبر»'s «ساختن فیلم»: the video sheet's setup, on the film (no sound starts before its «ساختن», a tap on
+// this page: iOS records sound only then).
 if (location.hash === '#film') {
   const mv = $<HTMLElement>('.reader-bar [data-make-video]');
-  if (mv && !mv.hidden) {
-    mv.scrollIntoView({ block: 'center' });
-    mv.classList.add('pulse');
-    toast('«ویدیو» را بزنید و «فیلم» را انتخاب کنید');
-  }
+  if (mv && !mv.hidden) import('./video').then((m) => m.setupVideo(mv.dataset.makeVideo!, { mode: 'film' }), () => {});
 }
 // The reader's language: a tap on the header's switch remembers it, and the Persian home then opens the English one
 // (only the home page, only for a reader who chose it — search engines and new readers always get the Persian site).

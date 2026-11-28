@@ -101,3 +101,37 @@ test('/api/img relays pictures from the channel CDNs only, cached for good', asy
     globalThis.fetch = real;
   }
 });
+
+test('/api/clip relays a story\'s own MP4 from the channel CDNs only, readable by the page', async () => {
+  const clip = await import('../server/clip.js');
+  const real = globalThis.fetch;
+  const asked = [];
+  const MP4 = new Uint8Array([0, 0, 0, 24, 0x66, 0x74, 0x79, 0x70, 1, 2, 3, 4]);
+  globalThis.fetch = async (url) => {
+    asked.push(String(url));
+    if (String(url).startsWith('https://t.me/')) return new Response(EMBED);
+    if (String(url).includes('big')) return new Response(MP4, { headers: { 'content-type': 'video/mp4', 'content-length': String(clip.MAX + 1) } });
+    if (String(url).includes('page')) return new Response('<html>', { headers: { 'content-type': 'text/html', 'content-length': '6' } });
+    return new Response(MP4, { headers: { 'content-type': 'video/mp4', 'content-length': String(MP4.length) } });
+  };
+  try {
+    const get = (q) => clip.GET(new Request(`https://site.test/api/clip/?${q}`));
+    let res = await get(`u=${encodeURIComponent('https://video.twimg.com/amplify_video/1/vid/avc1/1280x720/a.mp4?tag=29')}`);
+    assert.equal(res.status, 200);
+    assert.equal(res.headers.get('access-control-allow-origin'), '*');
+    assert.equal(res.headers.get('content-type'), 'video/mp4');
+    assert.match(res.headers.get('cache-control'), /s-maxage=604800/);
+    assert.deepEqual(new Uint8Array(await res.arrayBuffer()), MP4);
+    // A Telegram video by post and index: the current signed URL.
+    res = await get('p=1501&i=1');
+    assert.equal(res.status, 200);
+    assert.equal(asked.at(-1), 'https://cdn4.telesco.pe/file/v1.mp4?token=a&b=1');
+    assert.equal((await get('p=1501&i=1&f=poster')).status, 400, 'only the video itself');
+    assert.equal((await get(`u=${encodeURIComponent('https://evil.example/x.mp4')}`)).status, 403);
+    assert.equal((await get(`u=${encodeURIComponent('https://pbs.twimg.com/media/a.jpg')}`)).status, 403);
+    assert.equal((await get(`u=${encodeURIComponent('https://video.twimg.com/big.mp4')}`)).status, 413);
+    assert.equal((await get(`u=${encodeURIComponent('https://video.twimg.com/page.mp4')}`)).status, 415);
+  } finally {
+    globalThis.fetch = real;
+  }
+});

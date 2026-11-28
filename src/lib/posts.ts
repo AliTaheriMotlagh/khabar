@@ -485,13 +485,54 @@ export type FilmShot = {
   /** Seconds of silence before each line (the quiz's countdown before its answer). */
   pause?: number[];
   data?: unknown;
+  /** Over the source's own video (film.clip) while it lasts, its pictures after. */
+  vid?: true;
 };
 export type FilmSource = { kind: 'tweet' | 'link' | 'youtube'; name: string; handle?: string; avatar?: string | null; text?: string; title?: string; site: string; date?: string | null };
+/** The source's own video for a film: the site's relay (server/clip.js), its still, length (s) and shape (h / w). */
+export type FilmClip = { url: string; poster: string | null; dur: number | null; ratio: number | null };
+/** What a news film shows around the story: its status (رسمی / گزارش / شایعه), importance 1–5, its type, the Latin
+ *  names it's about (the drawn backdrop of a shot with no picture), and the headlines around it (the ticker). */
+export type FilmMeta = { status: NewsStatus | null; importance: number | null; type: string | null; names: string[]; ticker: string[] };
+
+/** The story's first video that a film can show: an MP4 on X's or Telegram's CDN, through the relay. */
+function filmClip(p: Post): FilmClip | null {
+  for (const m of p.gallery) {
+    if (m.type !== 'video' || !m.src) continue;
+    const dur = Number(m.duration) || null;
+    if (dur !== null && dur < 2) continue;
+    const tg = fresh(m.src);
+    const url = tg ? tg.replace('/api/media/', '/api/clip/') : /^https:\/\/video\.twimg\.com\/.+\.mp4(\?|$)/.test(m.src) ? `${SITE.api}/api/clip/?u=${encodeURIComponent(m.src)}` : null;
+    if (url) return { url, poster: m.poster ?? null, dur, ratio: m.ratio ?? null };
+  }
+  return null;
+}
+/** The headlines a film's ticker runs: the stories published nearest to it (before and after), newest first. */
+let tickerList: { all: Post[]; at: Map<number, number> } | null = null;
+function filmTicker(p: Post, n = 6): string[] {
+  if (!tickerList) {
+    const all = getStories().filter((x) => x.kind === 'story' && x.listed);
+    tickerList = { all, at: new Map(all.map((x, i) => [x.id, i])) };
+  }
+  const { all } = tickerList;
+  const at = tickerList.at.get(p.id) ?? -1;
+  const from = Math.max(0, (at < 0 ? 0 : at) - Math.floor(n / 2));
+  return all
+    .slice(from, from + n + 1)
+    .filter((x) => x.id !== p.id)
+    .slice(0, n)
+    .map((x) => clip(x.short || x.article.title, 90));
+}
+export function filmMeta(p: Post): FilmMeta {
+  const names = [...new Set(p.entities.map((e) => e.name_en).filter((n) => n && /[A-Za-z]/.test(n) && n.length <= 24))].slice(0, 4);
+  return { status: p.status, importance: p.importance, type: p.type, names, ticker: filmTicker(p) };
+}
 const speakOf = (s: string) => s.replace(/^\s*[•●▪\-–—*]\s*/, '').replace(/https?:\/\/\S+/g, '').trim();
-export function filmPlan(p: Post): { src: FilmSource | null; shots: FilmShot[] } | null {
+export function filmPlan(p: Post): { src: FilmSource | null; clip: FilmClip | null; meta: FilmMeta; shots: FilmShot[] } | null {
   if (p.kind === 'digest' || !p.article.body.length) return null;
   const a = p.article;
   const pics = stills(p, 8);
+  const footage = filmClip(p);
   let next = 0;
   const pic = () => (pics.length ? [pics[next++ % pics.length]] : []);
   const shots: FilmShot[] = [{ shot: 'hook', head: p.type ?? (a.tags[0] || 'خبر'), say: [a.title], pics: pics.slice(0, 1) }];
@@ -550,7 +591,10 @@ export function filmPlan(p: Post): { src: FilmSource | null; shots: FilmShot[] }
   if (a.why) shots.push({ shot: 'why', head: whyLabel(a), say: [a.why] });
   const q = p.quiz;
   if (q && q.options[q.answer]) shots.push({ shot: 'quiz', head: 'یک سؤال', say: [q.q, `جواب: ${q.options[q.answer]}`], pause: [0, 3], data: q });
-  return { src, shots };
+  // The source's own video under the hook and the story's first pictured shots, as a newscast runs its footage; the
+  // film draws it while the clip lasts (src/scripts/film.ts), the pictures after.
+  if (footage) shots.filter((s) => s.shot === 'hook' || s.shot === 'source' || s.shot === 'picture').slice(0, 3).forEach((s) => (s.vid = true));
+  return { src, clip: footage, meta: filmMeta(p), shots };
 }
 
 /** The heading over a story's closing paragraph: «چرا مهمه؟», or the pipeline's own label for Gholam's closing take

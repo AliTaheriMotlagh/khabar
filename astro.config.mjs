@@ -85,7 +85,7 @@ export default defineConfig({
         // Twins only where the two pages carry the same thing: a story, the home, about, videos and episodes, explorer,
         // archive, feeds, calendar, models, who, today, week, stats (a
         // list's page 2 holds different stories in each language).
-        const twin = /^\/(en\/)?(p\/\d+\/|about\/|videos\/([\w-]{11}\/)?|investigate\/|archive\/|feeds\/|calendar\/|models\/|who\/|today\/|week\/|stats\/)?$/;
+        const twin = /^\/(en\/)?(p\/\d+\/|about\/|videos\/([\w-]{11}\/)?|cinema\/|investigate\/|archive\/|feeds\/|calendar\/|models\/|who\/|today\/|week\/|stats\/)?$/;
         if (item.links) item.links = twin.test(p.slice(BASE.length)) ? item.links.filter((l) => l.lang !== 'en' || EN_PAGES.has(new URL(l.url).pathname)) : undefined;
         if (item.links && item.links.length < 2) item.links = undefined;
         const video = p.match(/\/videos\/([\w-]{11})\/$/)?.[1];

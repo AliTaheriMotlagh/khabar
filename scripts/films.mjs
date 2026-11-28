@@ -63,7 +63,8 @@ async function make(ctx, { id, shape }) {
   page.on('pageerror', (e) => errors.push(String(e)));
   try {
     // The sheet opens in the shape and mode asked for (its remembered choice).
-    await page.addInitScript(([s]) => localStorage.setItem('khabar:video-pref', JSON.stringify({ shape: s, mode: 'film' })), [shape]);
+    // Every part and the whole look: the standard film, the one published.
+    await page.addInitScript(([s]) => localStorage.setItem('khabar:video-pref', JSON.stringify({ shape: s, mode: 'film', off: [], look: { anchor: true, music: true, subs: true, ticker: true } })), [shape]);
     await page.goto(`${SITE}/p/${id}/`, { waitUntil: 'load' });
     await ensureVoice(page);
     await page.reload({ waitUntil: 'load' });
@@ -71,10 +72,22 @@ async function make(ctx, { id, shape }) {
     if (!(await btn.count()) || !(await btn.isVisible())) throw new Error('no video button');
     const started = Date.now();
     await btn.click();
-    // A published film opens instead of a new one: then there's nothing to make.
+    // The sheet opens on its setup (its remembered choices, above) — or on a published film: nothing to make then.
+    await page.waitForSelector('#video-sheet [data-vs-done]:not([hidden]), #video-sheet [data-vs-setup]:not([hidden]):not([data-state="loading"])', { timeout: 60_000 });
+    if (await page.locator('#video-sheet [data-vs-setup]:not([hidden])').count()) await page.click('#video-sheet [data-vs-go]');
     await page.waitForSelector('#video-sheet [data-vs-done]:not([hidden])', { timeout: 20 * 60_000 });
     const meta = await page.locator('[data-vs-meta]').textContent();
     if (/^ساخته شده/.test(meta ?? '')) return console.log(`${id}-${shape}: already published`);
+    const seconds = await page.evaluate(() => document.querySelector('[data-vs-video]').duration || 0);
+    // The film's cover (its opening shot, headline whole: the cinema's poster), made with it on the page.
+    const cover64 = await page.evaluate(async () => {
+      const src = document.querySelector('[data-vs-video]').dataset.cover;
+      if (!src) return null;
+      const u = new Uint8Array(await (await fetch(src)).arrayBuffer());
+      let s = '';
+      for (let i = 0; i < u.length; i += 32768) s += String.fromCharCode(...u.subarray(i, i + 32768));
+      return btoa(s);
+    });
     const b64 = await page.evaluate(async () => {
       const el = document.querySelector('[data-vs-video]');
       const u = new Uint8Array(await (await fetch(el.src)).arrayBuffer());
@@ -92,11 +105,15 @@ async function make(ctx, { id, shape }) {
     if (!KEY) return;
     const res = await fetch(`${SITE}/media/films/${id}-${shape}.mp4`, {
       method: 'POST',
-      headers: { 'content-type': 'video/mp4', 'x-media-key': KEY, 'x-made-by': 'runner' },
+      headers: { 'content-type': 'video/mp4', 'x-media-key': KEY, 'x-made-by': 'runner', ...(seconds && { 'x-seconds': String(seconds) }) },
       body: fs.readFileSync(file),
     });
     console.log(`${id}-${shape}: published ${res.status}`);
     if (!res.ok) process.exitCode = 1;
+    if (res.ok && cover64) {
+      const c = await fetch(`${SITE}/media/films/${id}-${shape}.jpg`, { method: 'POST', headers: { 'content-type': 'image/jpeg', 'x-media-key': KEY }, body: Buffer.from(cover64, 'base64') });
+      console.log(`${id}-${shape}: cover ${c.status}`);
+    }
   } finally {
     await page.close();
   }

@@ -54,6 +54,8 @@ export const GET: APIRoute = ({ props }) => {
     ...(film && {
       film: {
         ...(film.src && { src: { ...film.src, avatar: film.src.avatar ? addrs(film.src.avatar, 'small') : null } }),
+        ...(film.clip && { clip: { ...film.clip, poster: film.clip.poster ? addrs(film.clip.poster) : null } }),
+        meta: film.meta,
         shots: film.shots.map((s) => ({ ...s, pics: (s.pics ?? []).map((x) => addrs(x)) })),
       },
     }),

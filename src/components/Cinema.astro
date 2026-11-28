@@ -1,0 +1,149 @@
+---
+// «سینمای خبر» / News cinema (src/pages/cinema/, src/pages/en/cinema/): the published films (functions/media, R2) of a
+// day's or the week's stories, played back to back like a bulletin by src/scripts/cinema.ts — a theatre with the
+// bulletin's progress film by film, the queue beside it (posters, lengths, what's been watched), a filter by kind of
+// story, and the stories still without a film, each a tap away from being made. The lists are made here (the last
+// three Tehran days, the week's most important); which films exist, how long, with which cover, is asked once on the
+// page. The English twin lists the stories with an English page, by their English headline (the films are Persian).
+import Icon from './Icon.astro';
+import { faDate, getStories, picture, url } from '../lib/posts';
+import { enDate, enOf, TYPE_EN } from '../lib/en';
+import { SITE } from '../site';
+
+interface Props { lang?: 'fa' | 'en' }
+const en = (Astro.props.lang ?? 'fa') === 'en';
+const day = (iso: string) => new Date(iso).toLocaleDateString('en-CA', { timeZone: SITE.timeZone });
+const stories = getStories().filter((p) => p.kind === 'story' && (!en || enOf(p.id)));
+const STATUS_FA: Record<string, string> = { 'رسمی': 'رسمی', 'گزارش': 'به گزارش رسانه‌ها', 'شایعه': 'تأییدنشده' };
+const STATUS_EN: Record<string, string> = { 'رسمی': 'Official', 'گزارش': 'Reported', 'شایعه': 'Unconfirmed' };
+const item = (p: (typeof stories)[number]) => {
+  const e = en ? enOf(p.id) : null;
+  return {
+    id: p.id,
+    title: e?.title ?? p.article.title,
+    short: e?.short ?? p.short,
+    href: e?.href ?? p.href,
+    make: `${p.href}#film`,
+    date: p.date,
+    thumb: p.cover ? picture(p.cover.src || p.cover.poster, 'small').src : '',
+    pic: p.cover ? picture(p.cover.src || p.cover.poster, 'medium').src : '',
+    imp: p.importance ?? 0,
+    type: p.type ? (en ? (TYPE_EN[p.type] ?? p.type) : p.type) : null,
+    status: p.status ? (en ? STATUS_EN[p.status] : STATUS_FA[p.status]) : null,
+    clip: p.gallery.some((m) => m.type === 'video'),
+  };
+};
+type Item = ReturnType<typeof item>;
+const days: { key: string; label: string; items: Item[] }[] = [];
+for (const p of stories) {
+  const k = day(p.date);
+  let d = days.find((x) => x.key === k);
+  if (!d) {
+    if (days.length === 3) break;
+    days.push((d = { key: k, label: en ? enDate(p.date, { weekday: 'long', day: 'numeric', month: 'long' }) : faDate(p.date, { weekday: 'long', day: 'numeric', month: 'long' }), items: [] }));
+  }
+  d.items.push(item(p));
+}
+// A day's bulletin: the most important first, then the newest.
+for (const d of days) d.items.sort((a, b) => b.imp - a.imp || b.id - a.id);
+const weekFrom = Date.now() - 7 * 864e5;
+const week = stories.filter((p) => Date.parse(p.date) >= weekFrom).map(item).sort((a, b) => b.imp - a.imp || b.id - a.id).slice(0, 16);
+const lists = [
+  ...days.map((d, i) => ({ key: d.key, label: i === 0 ? (en ? `Today · ${d.label}` : `امروز · ${d.label}`) : d.label, items: d.items })),
+  { key: 'week', label: en ? 'Best of the week' : 'برترین‌های هفته', items: week },
+];
+const T = en
+  ? {
+      title: 'News cinema', intro: 'Each story as a short film, back to back like a news bulletin: its own video and pictures, the source, a plain-words explainer, the numbers and a quiz. The films are narrated in Persian, with Persian subtitles.',
+      tabs: 'Which stories', kinds: 'Kind of story', all: 'All', play: 'Play all', queue: 'Up next', unseen: 'Unseen only', auto: 'Autoplay',
+      missing: 'Stories without a film yet', missingNote: 'Anyone can make a story\'s film on their own device and publish it for everyone (on the Persian page).', make: 'Make the film',
+      empty: 'No films published for these stories yet.', prev: 'Previous', next: 'Next', toggle: 'Play / pause', mute: 'Sound', speed: 'Speed', shape: 'Shape', h: 'Landscape', v: 'Vertical', full: 'Full screen', pip: 'Picture in picture', share: 'Share', progress: 'Bulletin progress',
+    }
+  : {
+      title: 'سینمای خبر', intro: 'فیلم کوتاه هر خبر، پشت سر هم مثل یک بخش خبری: با ویدیو و تصویرهای خود خبر، منبع اصلی، توضیح ساده، عددها و یک سؤال. هر خواننده‌ای می‌تواند فیلم خبری را که هنوز فیلم ندارد بسازد و برای همه منتشر کند.',
+      tabs: 'کدام خبرها', kinds: 'نوع خبر', all: 'همه', play: 'پخش همه', queue: 'صف پخش', unseen: 'فقط ندیده‌ها', auto: 'پخش خودکار',
+      missing: 'خبرهایی که هنوز فیلم ندارند', missingNote: 'فیلم هر خبر روی دستگاه خودتان ساخته می‌شود و با «انتشار برای همه» این‌جا برای همه پخش می‌شود.', make: 'ساختن فیلم',
+      empty: 'برای این خبرها هنوز فیلمی منتشر نشده.', prev: 'قبلی', next: 'بعدی', toggle: 'پخش / مکث', mute: 'صدا', speed: 'سرعت', shape: 'شکل فیلم', h: 'افقی', v: 'عمودی', full: 'تمام‌صفحه', pip: 'تصویر در تصویر', share: 'اشتراک‌گذاری', progress: 'پیشرفت بخش خبری',
+    };
+const kinds = [...new Set(lists.flatMap((l) => l.items.map((i) => i.type)).filter((t): t is string => !!t))];
+---
+<div class="container cinema" data-cinema data-lang={en ? 'en' : 'fa'}>
+  <header class="page-head cin-head">
+    <div>
+      <h1><Icon name="film" /> {T.title}</h1>
+      <p>{T.intro}</p>
+    </div>
+    <p class="cin-stats" data-cin-stats aria-live="polite"></p>
+  </header>
+
+  <div class="cin-filters">
+    <div class="cin-tabs seg" role="tablist" aria-label={T.tabs}>
+      {lists.map((l, i) => <button type="button" role="tab" data-cin-list={l.key} aria-selected={i === 0 ? 'true' : 'false'}>{l.label}</button>)}
+    </div>
+    {kinds.length > 1 && (
+      <div class="cin-kinds" role="group" aria-label={T.kinds}>
+        <button type="button" class="chip" data-cin-kind="" aria-pressed="true">{T.all}</button>
+        {kinds.map((k) => <button type="button" class="chip" data-cin-kind={k} aria-pressed="false">{k}</button>)}
+      </div>
+    )}
+  </div>
+
+  <div class="cin-layout">
+    <section class="cin-theatre" data-cin-theatre aria-label={T.title}>
+      <div class="cin-stage" data-cin-stage data-shape="h">
+        <video playsinline preload="metadata" data-cin-a></video>
+        <video playsinline preload="auto" data-cin-b hidden></video>
+        <button class="cin-tap" type="button" data-cin-tap aria-label={T.toggle}></button>
+        <span class="cin-onair" data-cin-onair hidden><i></i><b data-cin-onair-text></b></span>
+        <span class="cin-flash" data-cin-flash aria-hidden="true"><Icon name="play" class="when-idle" /><Icon name="pause" class="when-playing" /></span>
+        <div class="cin-lower" data-cin-lower hidden><small data-cin-lower-kicker></small><b data-cin-lower-title></b></div>
+        <div class="cin-card" data-cin-card>
+          <div class="cin-card-bg" data-cin-card-bg></div>
+          <div class="cin-card-body">
+            <small data-cin-card-kicker>{T.title}</small>
+            <b data-cin-card-title></b>
+            <span data-cin-card-sub></span>
+            <div class="cin-card-acts">
+              <button class="btn primary cin-play" type="button" data-cin-start><Icon name="play" /> <span>{T.play}</span></button>
+              <span class="cin-ring" data-cin-ring hidden><svg viewBox="0 0 44 44" aria-hidden="true"><circle cx="22" cy="22" r="20" /><circle cx="22" cy="22" r="20" pathLength="100" data-cin-ring-arc /></svg></span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="cin-segs" data-cin-segs role="progressbar" aria-label={T.progress}></div>
+      <div class="cin-bar">
+        <button class="icon-btn" type="button" data-cin-prev aria-label={T.prev}><Icon name="skip-back" /></button>
+        <button class="icon-btn cin-big" type="button" data-cin-toggle aria-label={T.toggle}><Icon name="play" class="when-idle" /><Icon name="pause" class="when-playing" /></button>
+        <button class="icon-btn" type="button" data-cin-next aria-label={T.next}><Icon name="skip-fwd" /></button>
+        <span class="cin-time" data-cin-time dir="ltr"></span>
+        <span class="cin-now" data-cin-now></span>
+        <button class="cin-pill-btn" type="button" data-cin-rate aria-label={T.speed}>۱×</button>
+        <button class="icon-btn" type="button" data-cin-mute aria-label={T.mute} aria-pressed="false"><Icon name="volume" class="when-on" /><Icon name="volume-off" class="when-off" /></button>
+        <div class="seg sm cin-shape" role="radiogroup" aria-label={T.shape}>
+          <button type="button" data-cin-shape="h" aria-pressed="true">{T.h}</button>
+          <button type="button" data-cin-shape="v" aria-pressed="false">{T.v}</button>
+        </div>
+        <button class="icon-btn" type="button" data-cin-pip aria-label={T.pip} hidden><Icon name="pip" /></button>
+        <button class="icon-btn" type="button" data-cin-share aria-label={T.share}><Icon name="share" /></button>
+        <button class="icon-btn" type="button" data-cin-full aria-label={T.full}><Icon name="expand" /></button>
+      </div>
+    </section>
+
+    <aside class="cin-queue" aria-label={T.queue}>
+      <div class="cin-queue-head">
+        <h2>{T.queue}</h2>
+        <label class="cin-switch"><input type="checkbox" data-cin-unseen /> <span>{T.unseen}</span></label>
+        <label class="cin-switch"><input type="checkbox" data-cin-auto checked /> <span>{T.auto}</span></label>
+      </div>
+      <ol class="cin-list" data-cin-items aria-live="polite"></ol>
+      <p class="muted cin-empty" data-cin-empty hidden>{T.empty}</p>
+    </aside>
+  </div>
+
+  <section class="cin-missing" data-cin-missing hidden>
+    <h2>{T.missing}</h2>
+    <p class="muted">{T.missingNote}</p>
+    <ul class="cin-grid" data-cin-missing-list></ul>
+  </section>
+  <script type="application/json" data-cin-data set:html={JSON.stringify({ lists, t: { make: T.make, play: T.play, title: T.title } })} />
+</div>

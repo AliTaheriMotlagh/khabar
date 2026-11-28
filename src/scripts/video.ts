@@ -14,11 +14,12 @@ import { AudioBufferSource, BufferTarget, CanvasSource, Mp4OutputFormat, Output,
 import { $, BASE, fmtNum, store, tapAudio, toast, track } from './core';
 import { SITE } from '../site';
 import { align, pauseAfter, weight, words } from '../lib/align';
-import { lineAudio, persianVoice, recordableVoice, type Line, type Recordable } from './speech';
+import { lineAudio, persianVoice, recordableVoice, voiceHost, type Line, type Recordable } from './speech';
 import { sayLine, toShown } from '../../server/_say.js';
-import { chosenVoice, voiceSupported } from './voice';
+import { activeVoice, chosenVoice, voiceSupported } from './voice';
 import { openVoice } from './voice-offer';
-import type { FilmScene, FilmShotJson, FilmSrc, FilmVideo } from './film';
+import type { FilmClipJson, FilmMeta, FilmOpts, FilmScene, FilmShotJson, FilmSrc, FilmVideo } from './film';
+import type { Footage } from './footage';
 
 const FPS = 30;
 const RATE = 48000;
@@ -93,8 +94,11 @@ type Card = {
   clip?: { hook: string; points: string[]; why: string };
   /** An episode teaser's YouTube address, shown on the closing card instead of the story's (/videos/<id>/card.json). */
   link?: string; vid?: string;
-  /** The short film's shots (src/lib/posts.ts filmPlan, drawn by src/scripts/film.ts). */
-  film?: { src?: FilmSrc; shots: FilmShotJson[] };
+  /** The short film's shots (src/lib/posts.ts filmPlan, drawn by src/scripts/film.ts), the source's own video, and
+   *  what a newscast shows around the story (status, ticker…). */
+  film?: { src?: FilmSrc; clip?: FilmClipJson; meta?: FilmMeta; shots: FilmShotJson[] };
+  cover?: string | null; coverAlt?: string | null;
+  importance?: number;
 };
 /** A word as shown and said: when it's said, and whether it starts a paragraph. Hidden: said but not shown (the
  *  «۳ —» before a summary item, which its chapter's number shows). */
@@ -257,6 +261,15 @@ function filmCard(card: Card): Card {
   const all = card.film!.shots.flatMap((s) => s.say);
   return { ...card, title: all[0] ?? card.title, body: all.slice(1), why: null };
 }
+/** Each shot's first line's number among all the film's lines: kept when the reader leaves shots out. */
+const numbered = (shots: FilmShotJson[]) => {
+  let n = 0;
+  return shots.map((s) => {
+    const out = { ...s, line: n };
+    n += s.say.length;
+    return out;
+  });
+};
 /** The film's shots on a timeline: each line said in turn (after its pause), every word timed from the voice. */
 async function buildFilm(card: Card, pics: Map<string, ImageBitmap | null>, engine: Recordable | null, step: (p: number) => void, lineOf: (i: number) => Line, intro: number, outroFor: number) {
   const shots = card.film!.shots;
@@ -277,7 +290,10 @@ async function buildFilm(card: Card, pics: Map<string, ImageBitmap | null>, engi
       to: t,
       lineAt: [],
       data: shot.shot === 'points' ? { ...shot.data, items: shot.say } : shot.data,
+      vid: !!shot.vid,
+      clipAt: null,
     };
+    if (shot.line != null) line = shot.line;
     t += shot.shot === 'hook' ? 0.3 : 0.6;
     for (let j = 0; j < shot.say.length; j++) {
       t += shot.pause?.[j] ?? 0;
@@ -404,7 +420,9 @@ export function rounded(ctx: CanvasRenderingContext2D, x: number, y: number, w: 
   ctx.beginPath();
   ctx.roundRect(x, y, w, h, r);
 }
-export function cover(ctx: CanvasRenderingContext2D, img: ImageBitmap, x: number, y: number, w: number, h: number, zoom: number, pan: number) {
+/** Anything drawn as a picture: a fetched one, or a frame of the source's video (src/scripts/footage.ts). */
+export type Img = ImageBitmap | HTMLCanvasElement | OffscreenCanvas;
+export function cover(ctx: CanvasRenderingContext2D, img: Img, x: number, y: number, w: number, h: number, zoom: number, pan: number) {
   const s = Math.max(w / img.width, h / img.height) * zoom;
   const dw = img.width * s;
   const dh = img.height * s;
@@ -484,6 +502,8 @@ export function extras(ws: Word[]) {
   const callouts: { text: string; from: number; to: number }[] = [];
   ws.forEach((w, k) => {
     if (w.hidden || !/[0-9۰-۹]/.test(w.text)) return;
+    // A version after a name («Mistral Large 4», «GPT 5») isn't a figure, nor is a name with a digit in it («d1.3-ultra»).
+    if (isLatin(w.text) || (k > 0 && isLatin(ws[k - 1].text) && /^[0-9.]+$/.test(trim(w.text)))) return;
     const next = ws[k + 1];
     const unit = next && !pauseAfter(w.text) && !/[0-9۰-۹]/.test(next.text) && trim(next.text).length <= 14 ? ` ${trim(next.text)}` : '';
     callouts.push({ text: trim(w.text) + unit, from: w.from, to: w.from + 3.2 });
@@ -994,7 +1014,7 @@ const BITRATE = (seconds: number) =>
   // A whole number: WebCodecs refuses a fractional bitrate (25 MB / 97.3 s), and the video failed to start.
   Math.round(Math.max(650_000, Math.min(W * H > 1.5e6 ? 2_200_000 : W * H > 1e6 ? 1_900_000 : 1_400_000, (25e6 * 8) / (seconds || 1))));
 /** With the browser's encoders, frame by frame, faster than real time. Null when they can't make this video. */
-async function encode(v: Video, canvas: HTMLCanvasElement, draw: (t: number) => void, step: (p: number) => void, stop: AbortSignal): Promise<Blob | null> {
+async function encode(v: Video, canvas: HTMLCanvasElement, draw: (t: number) => void, step: (p: number) => void, stop: AbortSignal, before?: (t: number) => Promise<void>): Promise<Blob | null> {
   if (typeof VideoEncoder !== 'function') return null;
   if (!(await canEncodeVideo('avc', { width: W, height: H }))) return null;
   const codec = v.sound ? await getFirstEncodableAudioCodec(['aac', 'opus'], { numberOfChannels: 1, sampleRate: RATE }) : null;
@@ -1012,6 +1032,7 @@ async function encode(v: Video, canvas: HTMLCanvasElement, draw: (t: number) => 
       await output.cancel();
       throw new DOMException('cancelled', 'AbortError');
     }
+    if (before) await before(f / FPS);
     draw(f / FPS);
     await video.add(f / FPS, 1 / FPS);
     if (f % 10 === 0) step(f / frames);
@@ -1023,7 +1044,7 @@ async function encode(v: Video, canvas: HTMLCanvasElement, draw: (t: number) => 
 }
 
 /** Recording the canvas as it plays, with the sound playing into the recording: as long as the video takes. */
-async function record(v: Video, canvas: HTMLCanvasElement, draw: (t: number) => void, step: (p: number) => void, stop: AbortSignal, ac: AudioContext | null): Promise<Blob> {
+async function record(v: Video, canvas: HTMLCanvasElement, draw: (t: number) => void, step: (p: number) => void, stop: AbortSignal, ac: AudioContext | null, before?: (t: number) => Promise<void>): Promise<Blob> {
   const type = ['video/mp4;codecs=avc1,mp4a.40.2', 'video/mp4', 'video/webm;codecs=vp9,opus', 'video/webm'].find((t) => MediaRecorder.isTypeSupported(t)) ?? '';
   draw(0);
   const stream = canvas.captureStream(FPS);
@@ -1047,6 +1068,8 @@ async function record(v: Video, canvas: HTMLCanvasElement, draw: (t: number) => 
     const frame = () => {
       const t = (performance.now() - t0) / 1000;
       if (stop.aborted || t >= v.total) return resolve();
+      // Real time: the newest footage frame ready, never waited for.
+      void before?.(t);
       draw(t);
       step(t / v.total);
       requestAnimationFrame(frame);
@@ -1130,7 +1153,7 @@ function show(canvas: HTMLCanvasElement, phase: 'preview' | 'frames') {
   showing = canvas;
 }
 /** The video, silent and paced, playing in a loop at half size while the voice is made. */
-function preview(v: Pick<Video, 'total'>, stop: AbortSignal, make: (ctx: CanvasRenderingContext2D) => (t: number) => void = (ctx) => painter(ctx, v as Video)) {
+function preview(v: Pick<Video, 'total'>, stop: AbortSignal, make: (ctx: CanvasRenderingContext2D) => (t: number) => void = (ctx) => painter(ctx, v as Video), before?: (t: number) => Promise<void>) {
   const canvas = document.createElement('canvas');
   canvas.width = W / 2;
   canvas.height = H / 2;
@@ -1146,7 +1169,11 @@ function preview(v: Pick<Video, 'total'>, stop: AbortSignal, make: (ctx: CanvasR
     // ~24 frames a second is plenty for a preview, and leaves the device to the voice.
     if (now - last > 40) {
       last = now;
-      if (!document.hidden && (d.open || !pill.hidden)) draw(((now - t0) / 1000) % v.total);
+      if (!document.hidden && (d.open || !pill.hidden)) {
+        const t = ((now - t0) / 1000) % v.total;
+        void before?.(t);
+        draw(t);
+      }
     }
     requestAnimationFrame(frame);
   };
@@ -1175,18 +1202,178 @@ async function keep(key: string, blob: Blob, seconds: number) {
     for (const k of keys.slice(0, Math.max(0, keys.length - KEEP))) await c.delete(k);
   } catch {}
 }
-type Choice = { shape?: Shape; mode?: Mode };
-/** The reader's last shape and length; vertical on a phone, landscape on a computer, short when the story has one. */
-const choice = (o?: Choice): Required<Choice> => {
+/** What the reader picks before a video is made (the sheet's setup): its shape and kind; for a film, the parts left out
+ *  (`off`, so a part a story has for the first time is in) and what's drawn besides. Remembered only from the setup:
+ *  a button that asks for a shape or kind of its own (the /videos/ teasers, the brief's «۶۰ ثانیه») never changes it. */
+type Choice = { shape?: Shape; mode?: Mode; off?: string[]; look?: Partial<Omit<FilmOpts, 'host'>> };
+type Picked = { shape: Shape; mode: Mode; off: string[]; look: Omit<FilmOpts, 'host'> };
+const LOOK: Omit<FilmOpts, 'host'> = { anchor: true, music: true, subs: true, ticker: true };
+/** The reader's last choices; vertical on a phone, landscape on a computer, the film when the story has one. */
+const choice = (o?: Choice): Picked => {
   const pref = store.get<Choice>('video-pref', {});
-  return { shape: o?.shape ?? pref.shape ?? (matchMedia('(pointer: coarse)').matches ? 'v' : 'h'), mode: o?.mode ?? pref.mode ?? 'film' };
+  return {
+    shape: o?.shape ?? pref.shape ?? (matchMedia('(pointer: coarse)').matches ? 'v' : 'h'),
+    mode: o?.mode ?? pref.mode ?? 'film',
+    off: o?.off ?? pref.off ?? [],
+    look: { ...LOOK, ...pref.look, ...o?.look },
+  };
 };
+/** A film made with every part and the whole look: the one that may be published for everyone. */
+const standard = (c: Picked) => !c.off.length && Object.values(c.look).every(Boolean);
 type Step = 'pics' | 'voice' | 'frames' | 'ready';
 const STEPS: Step[] = ['pics', 'voice', 'frames', 'ready'];
+const cards = new Map<string, Promise<Card>>();
+const cardOf = (href: string) => {
+  let c = cards.get(href);
+  if (!c) {
+    c = fetch(`${href}card.json`).then((r) => (r.ok ? r.json() : Promise.reject(new Error(String(r.status)))));
+    c.catch(() => cards.delete(href));
+    cards.set(href, c);
+  }
+  return c;
+};
+
+/** The sheet's three views: the setup, the making, the video made. */
+function view(name: 'setup' | 'making' | 'done') {
+  $('[data-vs-setup]', d)!.hidden = name !== 'setup';
+  $('[data-vs-making]', d)!.hidden = name !== 'making';
+  $('[data-vs-done]', d)!.hidden = name !== 'done';
+  $('[data-vs-go]', d)!.hidden = name !== 'setup';
+  d.dataset.view = name;
+}
+
+// ---------- the setup: what kind of video, which parts, what's drawn ----------
+const SHAPE_USE: Record<Shape, string> = { v: 'استوری، ریلز، شورتس', h: 'یوتیوب، تلگرام، سایت', s: 'پست اینستاگرام' };
+/** Opens the sheet on its setup for the story at `href` (no sound starts here: «ساختن» is the tap that makes it). A
+ *  film someone already published, in the reader's shape, opens to watch at once. */
+export async function setupVideo(href: string, opts?: Choice, watchPublished = true) {
+  if (busy() && making) {
+    pill.hidden = true;
+    if (!d.open) d.showModal();
+    return;
+  }
+  const sel = choice(opts);
+  view('setup');
+  $('[data-vs-title-text]', d)!.textContent = 'ساخت ویدیوی خبر';
+  pill.hidden = true;
+  if (!d.open) d.showModal();
+  const setup = $('[data-vs-setup]', d)!;
+  setup.dataset.state = 'loading';
+  let card: Card;
+  try {
+    card = await cardOf(href);
+  } catch {
+    toast('اتصال اینترنت را بررسی کنید');
+    return d.close();
+  }
+  const F = await import('./film');
+  if (watchPublished && card.film?.shots.length && sel.mode === 'film') {
+    const pub = await publicFilm(card.id, sel.shape);
+    if (pub) {
+      made = { key: `${href} pub ${sel.shape}`, show: done.bind(null, card, pub, 0, false, href, sel, true, null) };
+      return made.show();
+    }
+  }
+  setup.dataset.state = '';
+  // The story, as the film will open on it.
+  const pic = $('[data-vs-hero-pic]', setup)!;
+  pic.style.backgroundImage = card.cover ? `url("${card.cover}")` : '';
+  pic.classList.toggle('has-clip', !!card.film?.clip);
+  $('[data-vs-hero-kicker]', setup)!.textContent = [card.film?.meta?.type ?? card.tag, card.source].filter(Boolean).join(' · ');
+  $('[data-vs-hero-title]', setup)!.textContent = card.short ?? card.title;
+  const has = (m: Mode) => (m === 'film' ? !!card.film?.shots.length : m === 'short' ? !!card.clip || card.kind === 'digest' : true);
+  if (!has(sel.mode)) sel.mode = has('film') ? 'film' : 'full';
+  // Shapes and kinds.
+  const pickShape = (shape: Shape) => {
+    sel.shape = shape;
+    for (const b of setup.querySelectorAll<HTMLButtonElement>('[data-vs-pick-shape]')) b.setAttribute('aria-checked', String(b.dataset.vsPickShape === shape));
+    refresh();
+  };
+  for (const b of setup.querySelectorAll<HTMLButtonElement>('[data-vs-pick-shape]')) {
+    $('small', b)!.textContent = SHAPE_USE[b.dataset.vsPickShape as Shape];
+    b.onclick = () => pickShape(b.dataset.vsPickShape as Shape);
+  }
+  for (const b of setup.querySelectorAll<HTMLButtonElement>('[data-vs-pick-mode]')) {
+    b.hidden = !has(b.dataset.vsPickMode as Mode);
+    b.onclick = () => {
+      sel.mode = b.dataset.vsPickMode as Mode;
+      refresh();
+    };
+  }
+  // A film's parts: only those this story has (the lead and the hook are always in).
+  const shots = card.film?.shots ?? [];
+  const present = F.FILM_PARTS.filter((p) => (p.key === 'footage' ? !!card.film?.clip : shots.some((s, i) => i > 1 && p.shots.includes(s.shot)) || (p.key === 'source' && shots[1]?.shot === 'source')));
+  const parts = $('[data-vs-parts]', setup)!;
+  parts.innerHTML = '';
+  for (const p of present) {
+    const b = document.createElement('button');
+    b.type = 'button';
+    b.className = 'vs-chip-btn';
+    b.textContent = p.label;
+    b.dataset.part = p.key;
+    b.onclick = () => {
+      sel.off = sel.off.includes(p.key) ? sel.off.filter((x) => x !== p.key) : [...sel.off, p.key];
+      refresh();
+    };
+    parts.append(b);
+  }
+  for (const b of setup.querySelectorAll<HTMLButtonElement>('[data-vs-opt]')) {
+    b.onclick = () => {
+      const k = b.dataset.vsOpt as keyof typeof LOOK;
+      sel.look = { ...sel.look, [k]: !sel.look[k] };
+      refresh();
+    };
+  }
+  // Who narrates, and so who presents.
+  await persianVoice();
+  const engine = recordableVoice();
+  const voiceName = () => {
+    if (engine === 'local') return activeVoice()?.name ?? 'صدای دانلودشده';
+    if (engine === 'cloud') return 'صدای ابری';
+    if (engine === 'remote') return 'سرویس صدای شما';
+    return null;
+  };
+  const host = voiceHost(engine);
+  $('[data-vs-voice-change]', setup)!.onclick = () => {
+    d.close();
+    openVoice(() => setupVideo(href, sel, false));
+  };
+  function refresh() {
+    for (const b of setup.querySelectorAll<HTMLButtonElement>('[data-vs-pick-shape]')) b.setAttribute('aria-checked', String(b.dataset.vsPickShape === sel.shape));
+    for (const b of setup.querySelectorAll<HTMLButtonElement>('[data-vs-pick-mode]')) b.setAttribute('aria-checked', String(b.dataset.vsPickMode === sel.mode));
+    const film = sel.mode === 'film';
+    $('[data-vs-parts-box]', setup)!.hidden = !film || !present.length;
+    $('[data-vs-look-box]', setup)!.hidden = !film;
+    for (const b of parts.querySelectorAll<HTMLButtonElement>('[data-part]')) b.setAttribute('aria-pressed', String(!sel.off.includes(b.dataset.part!)));
+    for (const b of setup.querySelectorAll<HTMLButtonElement>('[data-vs-opt]')) {
+      b.setAttribute('aria-pressed', String(sel.look[b.dataset.vsOpt as keyof typeof LOOK]));
+      // A reel has no ticker (its bottom is the app's buttons).
+      b.hidden = b.dataset.vsOpt === 'ticker' && (sel.shape === 'v' || !card.film?.meta?.ticker.length);
+    }
+    $('[data-vs-hero]', setup)!.dataset.shape = sel.shape;
+    // About how long: the lines it will say, at the voices' pace (~14 characters a second), plus its opening/closing.
+    const said = film ? F.pickShots(shots, new Set(present.map((p) => p.key).filter((k) => !sel.off.includes(k)))).flatMap((s) => s.say).join(' ').length : sel.mode === 'short' && card.clip ? [card.clip.hook, ...card.clip.points, card.clip.why].join(' ').length : [card.title, ...card.body, card.why ?? ''].join(' ').length;
+    const secs = Math.round(said / 14 + (film ? 9 : 6));
+    const length = secs < 60 ? `حدود ${fmtNum(secs)} ثانیه` : `حدود ${fmtNum(Math.round(secs / 60))} دقیقه`;
+    const who = voiceName();
+    $('[data-vs-hero-meta]', setup)!.textContent = `${length} · ${SHAPE_FA[sel.shape]}`;
+    $('[data-vs-voice-name]', setup)!.textContent = who
+      ? `روایت: ${who}${film && sel.look.anchor ? ` · مجری: ${host === 'p' ? 'پریسا' : 'داش غلام'} (هم‌صدا با راوی)` : ''}`
+      : 'صدای فارسی‌ای که در فایل بماند روی این دستگاه نیست: ویدیو بی‌صدا ساخته می‌شود، یا یکی دانلود کنید.';
+    $('[data-vs-go-text]', d)!.textContent = film ? 'ساختن فیلم' : 'ساختن ویدیو';
+  }
+  refresh();
+  $<HTMLButtonElement>('[data-vs-go]', d)!.onclick = () => {
+    // Remembered from here only; the sound may start in this tap (iOS).
+    store.set('video-pref', { shape: sel.shape, mode: sel.mode, off: sel.off, look: sel.look });
+    void makeVideo(href, tapAudio(), false, { ...sel });
+  };
+}
 
 /** Makes the video of the story at `href` (its page's address) and offers it to share or save. `ac`: an audio
  *  context started in the tap, for recording the sound where the encoders can't (iOS only lets audio start there).
- *  `asked`: the voice sheet was already offered, so a reader who chose no downloadable voice gets a silent video. */
+ *  `asked`: the voice sheet was already offered, so a reader who chose no downloadable voice gets a silent video.
+ *  Without a kind asked for (`opts.mode`), the sheet opens on its setup first. */
 export async function makeVideo(href: string, ac: AudioContext | null = null, asked = false, opts?: Choice) {
   // One at a time: a tap on «ویدیو» while another is made in the background shows that one.
   if (busy() && making) {
@@ -1195,6 +1382,10 @@ export async function makeVideo(href: string, ac: AudioContext | null = null, as
     if (making !== href) toast('یک ویدیو در حال ساخت است؛ اول آن آماده شود یا «لغو» را بزنید');
     ac?.close().catch(() => {});
     return;
+  }
+  if (!opts?.mode) {
+    ac?.close().catch(() => {});
+    return setupVideo(href, opts);
   }
   run?.abort();
   const mine = (run = new AbortController());
@@ -1240,8 +1431,8 @@ export async function makeVideo(href: string, ac: AudioContext | null = null, as
       miniFrame();
     }
   };
-  $('[data-vs-making]', d)!.hidden = false;
-  $('[data-vs-done]', d)!.hidden = true;
+  view('making');
+  $('[data-vs-title-text]', d)!.textContent = 'ساخت ویدیوی خبر';
   shareBtn.hidden = save.hidden = true;
   bgBtn.hidden = false;
   cancel.textContent = 'لغو';
@@ -1269,50 +1460,63 @@ export async function makeVideo(href: string, ac: AudioContext | null = null, as
       return void openVoice(() => makeVideo(href, ac, true, opts));
     }
     const want = choice(opts);
-    store.set('video-pref', want);
     stage.dataset.shape = want.shape;
-    const full = (await fetch(`${href}card.json`).then((r) => (r.ok ? r.json() : Promise.reject(new Error(String(r.status)))))) as Card;
+    const full = await cardOf(href);
     const filmed = want.mode === 'film' && !!full.film?.shots.length;
     const short = !filmed && want.mode === 'short' ? shortCard(full) : null;
     const mode: Mode = filmed ? 'film' : short ? 'short' : 'full';
-    const key = `${href} ${want.shape} ${mode} ${engine} ${chosenVoice()}`;
+    const look: FilmOpts = { host: voiceHost(engine), ...want.look };
+    const key = `${href} ${want.shape} ${mode} ${engine} ${chosenVoice()}${mode === 'film' ? ` ${[...want.off].sort().join(',')} ${Object.entries(look).map(([k, v]) => (v === true ? k : v === false ? '' : v)).join('')}` : ''}`;
     if (made?.key === key) return made.show();
-    // A film someone already published: watched at once (made again only from the sheet's buttons).
-    const pub = mode === 'film' && !asked ? await publicFilm(full.id, want.shape) : null;
-    if (pub) {
-      made = { key, show: done.bind(null, full, pub, 0, false, href, want.shape, mode, true) };
-      return made.show();
-    }
     const hit = await kept(key);
     if (hit) {
-      made = { key, show: done.bind(null, full, hit, 0, !engine, href, want.shape, mode, true) };
+      made = { key, show: done.bind(null, full, hit, 0, !engine, href, { ...want, mode }, true, null) };
       return made.show();
     }
-    let made1: { blob: Blob; total: number; silent: boolean; card: Card };
+    let made1: { blob: Blob; total: number; silent: boolean; card: Card; cover: Blob | null };
     if (mode === 'film') {
       const F = await import('./film');
+      const all = numbered(full.film!.shots);
+      const parts = new Set(F.FILM_PARTS.map((p) => p.key).filter((k) => !want.off.includes(k)));
+      const picked = F.pickShots(all, parts);
       const fc = filmCard(full);
       $('[data-vs-skel]', stage)!.textContent = full.title;
       useShape(want.shape);
       await Promise.all([800, 600, 900].map((w) => document.fonts.load(`${w} 40px ${FONT}`))).catch(() => {});
       say('آوردن تصویرها…', 0.03);
-      const wanted = new Map(full.film!.shots.flatMap((c) => c.pics).map((a) => [a[0], a]));
+      const wanted = new Map(picked.flatMap((c) => c.pics).map((a) => [a[0], a]));
       const avatarAt = full.film!.src?.avatar ?? null;
+      const clip = parts.has('footage') && picked.some((s) => s.vid) ? full.film!.clip : undefined;
       let got = 0;
-      const [list, avatar] = await Promise.all([
+      const [list, avatar, footage] = await Promise.all([
         Promise.all([...wanted.values()].map((a) => picture(a).then((b) => (say('آوردن تصویرها…', 0.03 + (0.05 * ++got) / Math.max(1, wanted.size), got / Math.max(1, wanted.size)), b)))),
         avatarAt ? picture(avatarAt) : Promise.resolve(null),
+        clip ? import('./footage').then((m) => m.loadFootage(clip.url, Math.min(1280, Math.max(W, H)), stop)).catch(() => null) : Promise.resolve(null),
       ]);
+      if (clip && !footage) note.textContent = 'ویدیوی خود خبر در دسترس نبود؛ فیلم با تصویرهای خبر ساخته می‌شود.';
       const pics = new Map([...wanted.keys()].map((k, i) => [k, list[i]]));
       if (stop.aborted) return;
       const lines = lineMaker(fc, (i) => `id=${full.id}&k=film&n=${i}`);
-      const shell = (b: Awaited<ReturnType<typeof buildFilm>>): FilmVideo => ({ ...b, src: full.film!.src ?? null, avatar, id: full.id, date: full.date, title: full.short ?? full.title });
-      const draft = shell(await buildFilm(fc, pics, null, () => {}, lines, F.FILM_INTRO, F.FILM_OUTRO));
-      preview(draft, stop, (ctx) => F.filmPainter(ctx, W, H, draft));
+      const shell = (b: Awaited<ReturnType<typeof buildFilm>>): FilmVideo => {
+        const v: FilmVideo = { ...b, nat: [], src: full.film!.src ?? null, avatar, id: full.id, date: full.date, title: full.short ?? full.title, meta: full.film!.meta ?? null, footage, opts: look };
+        placeClip(v, footage);
+        return v;
+      };
+      const before = (v: FilmVideo) => (footage ? async (t: number) => {
+        const ct = F.clipTimeAt(v, t);
+        if (ct != null) await footage.seek(ct);
+      } : undefined);
+      const draft = shell(await buildFilm({ ...fc, film: { ...full.film!, shots: picked } }, pics, null, () => {}, lines, F.FILM_INTRO, F.FILM_OUTRO));
+      preview(draft, stop, (ctx) => F.filmPainter(ctx, W, H, draft), before(draft));
       step('voice');
       say(engine ? 'ساختن روایت…' : 'آماده کردن متن…', 0.08);
-      const film = shell(await buildFilm(fc, pics, engine, (p) => say('ساختن روایت با صدای فارسی…', 0.08 + p * 0.37, p), lines, F.FILM_INTRO, F.FILM_OUTRO));
+      const film = shell(await buildFilm({ ...fc, film: { ...full.film!, shots: picked } }, pics, engine, (p) => say('ساختن روایت با صدای فارسی…', 0.08 + p * 0.37, p), lines, F.FILM_INTRO, F.FILM_OUTRO));
       if (stop.aborted) return;
+      // The clip's own sound, under the shots it plays in.
+      if (footage) for (const s of film.scenes) if (s.clipAt != null) {
+        const pcm = await footage.sound(s.clipAt, Math.min(footage.duration, s.clipAt + (s.to - s.from)), RATE);
+        if (pcm) film.nat.push({ at: s.from, pcm });
+      }
       const sound = engine ? F.filmSound(film, RATE) : null;
       const canvas = document.createElement('canvas');
       canvas.width = W;
@@ -1323,13 +1527,13 @@ export async function makeVideo(href: string, ac: AudioContext | null = null, as
       step('frames');
       const frames = (p: number) => say('ساختن فیلم، فریم به فریم…', 0.45 + p * 0.55, p);
       const v = { total: film.total, sound } as Video;
-      let blob = await encode(v, canvas, draw, frames, stop);
+      let blob = await encode(v, canvas, draw, frames, stop, before(film));
       if (!blob) {
         note.textContent = `این کار ${fmtNum(Math.ceil(film.total))} ثانیه طول می‌کشد؛ این صفحه را باز نگه دارید (خواندن و گوش دادن در همین صفحه آزاد است).`;
-        blob = await record(v, canvas, draw, frames, stop, ac);
+        blob = await record(v, canvas, draw, frames, stop, ac, before(film));
       }
       if (stop.aborted) return;
-      made1 = { blob, total: film.total, silent: !sound, card: full };
+      made1 = { blob, total: film.total, silent: !sound, card: full, cover: await filmCover(F, film) };
     } else {
     const card = short?.card ?? full;
     $('[data-vs-skel]', stage)!.textContent = card.title;
@@ -1373,12 +1577,12 @@ export async function makeVideo(href: string, ac: AudioContext | null = null, as
       blob = await record(video, canvas, draw, frames, stop, ac);
     }
     if (stop.aborted) return;
-      made1 = { blob, total: video.total, silent: !video.sound, card };
+      made1 = { blob, total: video.total, silent: !video.sound, card, cover: null };
     }
     const { blob, total } = made1;
     track(`video-made-${want.shape}`);
     void keep(key, blob, total);
-    made = { key, show: done.bind(null, full, blob, total, made1.silent, href, want.shape, mode, false) };
+    made = { key, show: done.bind(null, full, blob, total, made1.silent, href, { ...want, mode }, false, made1.cover) };
     made.show();
     step('ready');
     if (!d.open) {
@@ -1405,6 +1609,29 @@ export async function makeVideo(href: string, ac: AudioContext | null = null, as
   }
 }
 
+/** Where each of the film's shots starts in the source clip: the shots marked `vid` take it in turn while it lasts. */
+function placeClip(v: FilmVideo, footage: Footage | null) {
+  let at = 0;
+  for (const s of v.scenes) {
+    s.clipAt = footage && s.vid && at < footage.duration - 1 ? at : null;
+    if (s.clipAt != null) at += s.to - s.from;
+  }
+}
+/** The film's cover: its opening shot with the headline whole, as JPEG (the cinema's poster, R2 `<id>-<shape>.jpg`). */
+async function filmCover(F: typeof import('./film'), v: FilmVideo): Promise<Blob | null> {
+  try {
+    const c = document.createElement('canvas');
+    c.width = W;
+    c.height = H;
+    F.filmPainter(c.getContext('2d', { alpha: false })!, W, H, v, { cover: true })(0);
+    for (const q of [0.82, 0.7, 0.55]) {
+      const b = await new Promise<Blob | null>((r) => c.toBlob(r, 'image/jpeg', q));
+      if (b && b.size <= 600 * 1024) return b;
+    }
+  } catch {}
+  return null;
+}
+
 const SHAPE_FA: Record<Shape, string> = { v: 'عمودی', h: 'افقی', s: 'مربع' };
 
 // ---------- films everyone can watch (functions/media/[[path]].js, R2) ----------
@@ -1422,24 +1649,31 @@ async function publicFilm(id: number, shape: Shape): Promise<Blob | null> {
   }
 }
 /** A film made here, with a voice, as MP4, of a story with no public film yet: «انتشار برای همه» puts it on the
- *  story's page and in /cinema/ for every reader. */
-function publishRow(card: Card, blob: Blob, shape: Shape, mode: Mode, silent: boolean) {
+ *  story's page and in /cinema/ for every reader, with its cover and length. Only the film with every part. */
+function publishRow(card: Card, blob: Blob, sel: Picked, silent: boolean, seconds: number, cover: Blob | null) {
   const row = $('[data-vs-public]', d)!;
   const text = $('[data-vs-public-text]', d)!;
   const btn = $<HTMLButtonElement>('[data-vs-publish]', d)!;
   row.hidden = true;
-  if (mode !== 'film' || silent || !card.id || !blob.type.includes('mp4')) return;
+  if (sel.mode !== 'film' || silent || !card.id || !blob.type.includes('mp4')) return;
+  const shape = sel.shape;
   void fetch(`${BASE}/media/films/?ids=${card.id}`)
     .then((r) => (r.ok ? r.json() : null))
     .then((have: Record<string, string[]> | null) => {
       if (!have) return;
       const published = have[card.id]?.includes(shape);
       row.hidden = false;
-      btn.hidden = !!published;
-      text.textContent = published ? 'این فیلم برای همه منتشر شده است: در صفحه‌ی خبر و «سینمای خبر» دیده می‌شود.' : 'هنوز کسی فیلم این خبر را منتشر نکرده: با انتشار، همه آن را می‌بینند.';
+      btn.hidden = !!published || !standard(sel);
+      text.textContent = published
+        ? 'این فیلم برای همه منتشر شده است: در صفحه‌ی خبر و «سینمای خبر» دیده می‌شود.'
+        : standard(sel)
+          ? 'هنوز کسی فیلم این خبر را منتشر نکرده: با انتشار، همه آن را می‌بینند.'
+          : 'فیلمی که همه‌ی بخش‌ها را دارد منتشر می‌شود؛ این نسخه‌ی شخصی شماست.';
       btn.onclick = async () => {
         btn.disabled = true;
-        const res = await fetch(filmUrl(card.id, shape), { method: 'POST', headers: { 'content-type': 'video/mp4' }, body: blob }).catch(() => null);
+        const res = await fetch(filmUrl(card.id, shape), { method: 'POST', headers: { 'content-type': 'video/mp4', ...(seconds && { 'x-seconds': String(seconds) }) }, body: blob }).catch(() => null);
+        if ((res?.status === 201 || res?.status === 409) && cover)
+          await fetch(filmUrl(card.id, shape).replace(/\.mp4$/, '.jpg'), { method: 'POST', headers: { 'content-type': 'image/jpeg' }, body: cover }).catch(() => null);
         btn.disabled = false;
         if (res?.status === 201 || res?.status === 409) {
           btn.hidden = true;
@@ -1450,19 +1684,30 @@ function publishRow(card: Card, blob: Blob, shape: Shape, mode: Mode, silent: bo
     })
     .catch(() => {});
 }
-function done(card: Card, blob: Blob, seconds: number, silent: boolean, href: string, shape: Shape, mode: Mode, fromCache: boolean) {
+let coverUrl = '';
+function done(card: Card, blob: Blob, seconds: number, silent: boolean, href: string, sel: Picked, fromCache: boolean, cover: Blob | null) {
   if (url) URL.revokeObjectURL(url);
+  if (coverUrl) URL.revokeObjectURL(coverUrl);
   url = URL.createObjectURL(blob);
+  coverUrl = cover ? URL.createObjectURL(cover) : '';
+  const { shape, mode } = sel;
   const ext = blob.type.includes('mp4') ? 'mp4' : 'webm';
   const file = new File([blob], `khabar-${card.id || card.vid}-${shape}.${ext}`, { type: blob.type.split(';')[0] });
-  $('[data-vs-making]', d)!.hidden = true;
-  $('[data-vs-done]', d)!.hidden = false;
+  view('done');
+  $('[data-vs-title-text]', d)!.textContent = mode === 'film' ? 'فیلم خبر' : 'ویدیوی خبر';
   $('[data-vs-bg]', d)!.hidden = true;
   stage.querySelector('canvas')?.remove();
   showing = null;
   const player = $<HTMLVideoElement>('[data-vs-video]', d)!;
   player.src = url;
   player.dataset.shape = shape;
+  if (coverUrl) {
+    player.poster = coverUrl;
+    player.dataset.cover = coverUrl;
+  } else {
+    player.removeAttribute('poster');
+    delete player.dataset.cover;
+  }
   // It plays at once, silent (a browser starts sound only from a tap): the controls turn the sound on.
   player.muted = true;
   if (d.open) player.play().catch(() => {});
@@ -1478,19 +1723,11 @@ function done(card: Card, blob: Blob, seconds: number, silent: boolean, href: st
   $('[data-vs-voice]', d)!.onclick = () => {
     d.close();
     // Called in the voice sheet's tap: the remade video's sound can be recorded on iOS too.
-    openVoice(() => makeVideo(href, tapAudio(), true, { shape, mode }));
+    openVoice(() => makeVideo(href, tapAudio(), true, { ...sel }));
   };
-  // Another shape or length: made from this tap (iOS records the sound only from a tap).
-  for (const b of d.querySelectorAll<HTMLButtonElement>('[data-vs-shape]')) {
-    b.setAttribute('aria-pressed', String(b.dataset.vsShape === shape));
-    b.onclick = () => b.dataset.vsShape !== shape && makeVideo(href, tapAudio(), true, { shape: b.dataset.vsShape as Shape, mode });
-  }
-  for (const b of d.querySelectorAll<HTMLButtonElement>('[data-vs-mode]')) {
-    b.setAttribute('aria-pressed', String(b.dataset.vsMode === mode));
-    b.hidden = (b.dataset.vsMode === 'short' && !card.clip && card.kind !== 'digest') || (b.dataset.vsMode === 'film' && !card.film?.shots.length);
-    b.onclick = () => b.dataset.vsMode !== mode && makeVideo(href, tapAudio(), true, { shape, mode: b.dataset.vsMode as Mode });
-  }
-  publishRow(card, blob, shape, mode, silent);
+  // Another shape, kind or set of parts: back to the setup (not the published film again).
+  $('[data-vs-again]', d)!.onclick = () => setupVideo(href, sel, false);
+  publishRow(card, blob, sel, silent, seconds, cover);
   // Ready to post: the caption (the model's, else the headline and the address) goes with the file, and can be copied.
   const page = card.link ?? `${SITE.url}/p/${card.id}/`;
   const caption = card.share ? `${card.share}\n${page}` : `${card.title}\n${page}`;

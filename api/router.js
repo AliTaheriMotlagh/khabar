@@ -6,6 +6,7 @@
 import * as admin from '../server/admin.js';
 import * as ads from '../server/ads.js';
 import * as chat from '../server/chat.js';
+import * as clip from '../server/clip.js';
 import * as comments from '../server/comments.js';
 import * as engage from '../server/engage.js';
 import * as img from '../server/img.js';
@@ -20,7 +21,7 @@ import * as toprss from '../server/toprss.js';
 import * as tts from '../server/tts.js';
 import * as watch from '../server/watch.js';
 
-export const routes = { admin, ads, chat, comments, engage, img, leaders, live, media, push, react, stats, sync, toprss, tts, watch };
+export const routes = { admin, ads, chat, clip, comments, engage, img, leaders, live, media, push, react, stats, sync, toprss, tts, watch };
 const METHODS = ['GET', 'POST', 'PUT', 'PATCH', 'DELETE', 'OPTIONS'];
 
 const known = (name) => (name && Object.hasOwn(routes, name) ? routes[name] : null);

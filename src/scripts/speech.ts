@@ -12,7 +12,7 @@ import { remoteAudio, remoteClip, remoteConfig } from './tts-remote';
 import { cloudSrc, keptRemote } from './offline-audio';
 import { store } from './core';
 import { cloudOf, sayOf, type Line } from '../lib/lines';
-import { chosenVoice, prepareVoice, sentences, voiceClip, voicePreferred, voiceReady, voiceState } from './voice';
+import { activeVoice, chosenVoice, prepareVoice, sentences, voiceClip, voicePreferred, voiceReady, voiceState } from './voice';
 import { learnPace, prepare, type Clock } from './words';
 
 /** One paragraph to read: `i` is its index in the story's card.json (0 = title, then the body, then "why"). */
@@ -66,8 +66,10 @@ export async function persianVoice(): Promise<VoiceSource | null> {
       if (voiceFor('fa')) return void (await local);
     }
     try {
-      cloudOk = (await fetch(`${SITE.api}/api/tts/?probe=1`)).ok;
+      const res = await fetch(`${SITE.api}/api/tts/?probe=1`);
+      cloudOk = res.ok;
       store.set('tts-cloud', cloudOk);
+      if (cloudOk) store.set('tts-cloud-gender', ((await res.json().catch(() => ({}))) as { gender?: string }).gender ?? 'female');
     } catch {
       // Offline: the cloud voice worked last time, and saved stories' clips are kept on the device.
       cloudOk = store.get('tts-cloud', false);
@@ -89,6 +91,16 @@ export const getReady = () => hasPersianVoice() === 'local' && prepareVoice();
 /** A voice whose sound the page can keep (the story's video, src/scripts/video.ts): the downloaded one or the cloud
  *  one — the device's own voice only plays aloud. After persianVoice(). */
 export const recordableVoice = (): Recordable | null => (chosenRemote() ? 'remote' : voicePreferred() ? 'local' : cloudOk ? 'cloud' : voiceReady() ? 'local' : null);
+
+/** Whose voice a film is narrated in, so its drawn host matches: 'p' (Parisa) for a woman's voice, 'g' (Gholam) for a
+ *  man's or one we can't tell. The downloaded voice's catalog says (src/lib/voices.ts `gender`), the cloud's probe
+ *  says (server/tts.js), a reader's own service by its voice's name. After persianVoice(). */
+export function voiceHost(engine: Recordable | null): 'g' | 'p' {
+  if (engine === 'local') return activeVoice()?.gender === 'زن' ? 'p' : 'g';
+  if (engine === 'cloud') return store.get<string>('tts-cloud-gender', 'female') === 'male' ? 'g' : 'p';
+  if (engine === 'remote') return /nova|shimmer|coral|sage|alloy|ballad|dilara|female|woman|zan|rachel|bella|elli|domi|sarah|aria|jenny/i.test(remoteConfig()?.voice ?? '') ? 'p' : 'g';
+  return 'g';
+}
 
 /** One paragraph's sound as audio files (WAV from the downloaded voice, a sentence each; MP3 from the cloud, the whole
  *  paragraph), each with the sentences it says. */

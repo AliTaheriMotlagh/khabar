@@ -1,15 +1,63 @@
 ---
-// The story's video, made on the reader's device (src/scripts/video.ts): progress while it's made, then the video to
-// watch, share or save. Opened by any [data-make-video] button (the story page, the story player).
+// The story's video, made on the reader's device (src/scripts/video.ts): first the setup — the shape (where it'll be
+// posted), the kind (a news film, 60 seconds, the whole text), a film's parts and look, who narrates and presents —
+// then the progress while it's made, then the video to watch, share, save or publish. Opened by any [data-make-video]
+// button (the story page, the story player; a button with its own kind skips the setup).
 import Icon from './Icon.astro';
 ---
-<dialog class="sheet video-sheet" id="video-sheet" aria-labelledby="video-title">
+<dialog class="sheet video-sheet" id="video-sheet" aria-labelledby="video-title" data-view="setup">
   <div class="sheet-head">
-    <h2 id="video-title"><Icon name="film" /> ویدیوی خبر</h2>
+    <h2 id="video-title"><Icon name="film" /> <span data-vs-title-text>ویدیوی خبر</span></h2>
     <button class="icon-btn" type="button" data-close aria-label="بستن"><Icon name="x" /></button>
   </div>
   <div class="sheet-body">
-    <div class="vs-making" data-vs-making>
+    <div class="vs-setup" data-vs-setup hidden>
+      <div class="vs-hero" data-vs-hero data-shape="h">
+        <div class="vs-hero-pic" data-vs-hero-pic aria-hidden="true"><span class="vs-hero-clip"><Icon name="play" /> ویدیوی خبر</span></div>
+        <div class="vs-hero-text">
+          <small data-vs-hero-kicker></small>
+          <b data-vs-hero-title></b>
+          <span class="vs-hero-meta"><Icon name="clock" /> <span data-vs-hero-meta></span></span>
+        </div>
+      </div>
+
+      <fieldset class="vs-field">
+        <legend>کجا منتشرش می‌کنید؟</legend>
+        <div class="vs-shapes" role="radiogroup" aria-label="شکل ویدیو">
+          <button type="button" class="vs-shape" role="radio" aria-checked="false" data-vs-pick-shape="v"><i class="vs-shape-ic" data-s="v" aria-hidden="true"></i><b>عمودی</b><small></small></button>
+          <button type="button" class="vs-shape" role="radio" aria-checked="false" data-vs-pick-shape="h"><i class="vs-shape-ic" data-s="h" aria-hidden="true"></i><b>افقی</b><small></small></button>
+          <button type="button" class="vs-shape" role="radio" aria-checked="false" data-vs-pick-shape="s"><i class="vs-shape-ic" data-s="s" aria-hidden="true"></i><b>مربع</b><small></small></button>
+        </div>
+      </fieldset>
+
+      <fieldset class="vs-field">
+        <legend>چه جور ویدیویی؟</legend>
+        <div class="vs-modes" role="radiogroup" aria-label="نوع ویدیو">
+          <button type="button" class="vs-mode" role="radio" aria-checked="false" data-vs-pick-mode="film"><b><Icon name="film" /> فیلم خبری</b><small>مثل بخش خبر: ویدیو و تصویرهای خود خبر، منبع، مجری، عددها و یک سؤال</small></button>
+          <button type="button" class="vs-mode" role="radio" aria-checked="false" data-vs-pick-mode="short"><b><Icon name="bolt" /> ۶۰ ثانیه</b><small>فقط نکته‌های اصلی، برای استوری</small></button>
+          <button type="button" class="vs-mode" role="radio" aria-checked="false" data-vs-pick-mode="full"><b><Icon name="list" /> متن کامل</b><small>همه‌ی متن خبر، کلمه به کلمه با تصویرها</small></button>
+        </div>
+      </fieldset>
+
+      <fieldset class="vs-field" data-vs-parts-box>
+        <legend>کدام بخش‌ها در فیلم باشد؟ <small>تیتر و پاراگراف اول همیشه هست</small></legend>
+        <div class="vs-chips" data-vs-parts></div>
+      </fieldset>
+
+      <fieldset class="vs-field" data-vs-look-box>
+        <legend>روی تصویر</legend>
+        <div class="vs-chips">
+          <button type="button" class="vs-chip-btn" data-vs-opt="anchor" aria-pressed="true">مجری</button>
+          <button type="button" class="vs-chip-btn" data-vs-opt="subs" aria-pressed="true">زیرنویس</button>
+          <button type="button" class="vs-chip-btn" data-vs-opt="ticker" aria-pressed="true">نوار تیتر خبرها</button>
+          <button type="button" class="vs-chip-btn" data-vs-opt="music" aria-pressed="true">موسیقی</button>
+        </div>
+      </fieldset>
+
+      <p class="vs-voice-row"><Icon name="headphones" /> <span data-vs-voice-name></span> <button class="link-btn" type="button" data-vs-voice-change>تغییر صدا</button></p>
+    </div>
+
+    <div class="vs-making" data-vs-making hidden>
       <!-- The video itself, playing silently while it's made: first a preview with the text paced, then the real
            frames as they're encoded. A shimmer and the headline until the first frame. -->
       <div class="vs-stage" data-vs-stage data-shape="h" data-phase="prep">
@@ -34,20 +82,12 @@ import Icon from './Icon.astro';
       <div class="vs-bar" aria-hidden="true"><i data-vs-bar></i></div>
       <p class="vs-note" data-vs-note></p>
     </div>
+
     <div data-vs-done hidden>
       <video class="vs-video" data-vs-video controls playsinline></video>
-      <p class="vs-note" data-vs-meta></p>
-      <div class="vs-choices" role="group" aria-label="شکل و طول ویدیو">
-        <div class="seg sm">
-          <button type="button" data-vs-shape="v" aria-pressed="false">عمودی</button>
-          <button type="button" data-vs-shape="h" aria-pressed="false">افقی</button>
-          <button type="button" data-vs-shape="s" aria-pressed="false">مربع</button>
-        </div>
-        <div class="seg sm">
-          <button type="button" data-vs-mode="film" aria-pressed="false">فیلم</button>
-          <button type="button" data-vs-mode="short" aria-pressed="false">کوتاه</button>
-          <button type="button" data-vs-mode="full" aria-pressed="false">نسخه‌ی کامل</button>
-        </div>
+      <div class="vs-done-row">
+        <p class="vs-note" data-vs-meta></p>
+        <button class="btn sm" type="button" data-vs-again><Icon name="settings" /> نسخه‌ی دیگر</button>
       </div>
       <div class="vs-caption">
         <p dir="auto" data-vs-caption></p>
@@ -58,6 +98,7 @@ import Icon from './Icon.astro';
     </div>
     <div class="sheet-foot">
       <button class="btn" type="button" data-vs-cancel>لغو</button>
+      <button class="btn primary" type="button" data-vs-go><Icon name="film" /> <span data-vs-go-text>ساختن فیلم</span></button>
       <button class="btn primary" type="button" data-vs-bg hidden><Icon name="down" /> ادامه در پس‌زمینه</button>
       <a class="btn" data-vs-save hidden><Icon name="download" /> ذخیره</a>
       <button class="btn primary" type="button" data-vs-share hidden><Icon name="share" /> اشتراک‌گذاری</button>

@@ -1,0 +1,10 @@
+---
+// News cinema, English: the same films (narrated in Persian) of the stories that have an English page, by their English
+// headline (src/components/Cinema.astro lang="en", src/scripts/cinema.ts).
+import Base from '../../../layouts/Base.astro';
+import Cinema from '../../../components/Cinema.astro';
+import { url } from '../../../lib/posts';
+---
+<Base lang="en" title="News cinema" alternates={{ fa: url('cinema/') }} description="Short films of the day's AI stories, back to back like a news bulletin: each story's own video and pictures, the source, a plain-words explainer and a quiz.">
+  <Cinema lang="en" />
+</Base>

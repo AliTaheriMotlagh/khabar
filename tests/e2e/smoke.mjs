@@ -46,7 +46,7 @@ const videos = fs.existsSync('dist/videos') ? fs.readdirSync('dist/videos').filt
 const who = fs.existsSync('dist/who') ? fs.readdirSync('dist/who').filter((d) => fs.existsSync(`dist/who/${d}/index.html`)) : [];
 const story = `/p/${build.latest}/`;
 
-const PAGES = ['/', '/page/2/', story, '/today/', '/cinema/', '/podcast/', '/videos/', videos[0] && `/videos/${videos[0]}/`, '/tags/', '/who/', who[0] && `/who/${who[0]}/`, '/saved/', '/search/', '/week/', '/glossary/', '/feeds/', '/about/', '/me/', '/stats/', '/offline/', '/investigate/?q=OpenAI', '/archive/', '/en/', '/en/page/2/', fs.existsSync(`dist/en/p/${build.latest}`) && `/en/p/${build.latest}/`, '/en/topics/', '/en/investigate/?q=NVIDIA&vs=AMD', '/en/archive/', '/en/videos/', videos[0] && `/en/videos/${videos[0]}/`, '/en/about/', '/en/feeds/', '/en/calendar/', '/calendar/', '/en/models/', '/models/', '/en/who/', '/en/today/', '/en/week/', '/en/stats/', '/en/saved/', '/en/offline/'].filter(Boolean);
+const PAGES = ['/', '/page/2/', story, '/today/', '/cinema/', '/podcast/', '/videos/', videos[0] && `/videos/${videos[0]}/`, '/tags/', '/who/', who[0] && `/who/${who[0]}/`, '/saved/', '/search/', '/week/', '/glossary/', '/feeds/', '/about/', '/me/', '/stats/', '/offline/', '/investigate/?q=OpenAI', '/archive/', '/en/', '/en/page/2/', fs.existsSync(`dist/en/p/${build.latest}`) && `/en/p/${build.latest}/`, '/en/topics/', '/en/investigate/?q=NVIDIA&vs=AMD', '/en/archive/', '/en/videos/', videos[0] && `/en/videos/${videos[0]}/`, '/en/about/', '/en/feeds/', '/en/calendar/', '/calendar/', '/en/models/', '/models/', '/en/who/', '/en/today/', '/en/cinema/', '/en/week/', '/en/stats/', '/en/saved/', '/en/offline/'].filter(Boolean);
 for (const path of PAGES) {
   await check(`page ${path} opens without a script error`, async () => {
     const { p, errors } = await page(path);
@@ -127,12 +127,32 @@ if (videos[0]) {
   await check('videos: every episode has a teaser button, and a teaser is made', async () => {
     const { p, errors } = await page(`/videos/${videos.at(-1)}/`);
     assert.equal(await p.locator('[data-make-video]').count(), 1);
+    await p.evaluate(() => localStorage.setItem('khabar:video-pref', JSON.stringify({ shape: 'v', mode: 'film' })));
     await makeVideo(p, `/videos/${videos.at(-1)}/`, 's', 'full');
     await p.waitForSelector('#video-sheet [data-vs-done]:not([hidden])', { timeout: 240000 });
+    // A teaser asks for its own shape and kind: the reader's choice for stories stays as it was.
+    assert.deepEqual(JSON.parse(await p.evaluate(() => localStorage.getItem('khabar:video-pref'))), { shape: 'v', mode: 'film' });
     assert.deepEqual(errors, []);
     await p.close();
   });
 }
+
+await check('video: a story\'s «ویدیو» opens the setup — shape, kind, a film\'s parts — and «ساختن» remembers it', async () => {
+  const { p, errors } = await page(story);
+  await p.click('.reader-bar [data-make-video]');
+  await p.waitForSelector('#video-sheet [data-vs-setup]:not([hidden]):not([data-state="loading"])', { timeout: 20000 });
+  assert.equal(await p.locator('#video-sheet [data-vs-pick-shape]').count(), 3);
+  assert.ok(await p.locator('#video-sheet [data-vs-go]').isVisible());
+  await p.click('#video-sheet [data-vs-pick-shape="s"]');
+  assert.equal(await p.locator('#video-sheet [data-vs-pick-shape="s"]').getAttribute('aria-checked'), 'true');
+  await p.click('#video-sheet [data-vs-go]');
+  // Making it, or (no voice to keep on this browser) the voice sheet first.
+  await p.waitForSelector('#video-sheet [data-vs-making]:not([hidden]), dialog[open]:not(#video-sheet)', { timeout: 10000 });
+  assert.equal(JSON.parse(await p.evaluate(() => localStorage.getItem('khabar:video-pref'))).shape, 's');
+  await p.keyboard.press('Escape');
+  assert.deepEqual(errors, []);
+  await p.close();
+});
 
 await check('English edition: the new pages are English, client text included, and the switch lands on the twin', async () => {
   for (const [en, fa] of [['/en/feeds/', '/feeds/'], ['/en/calendar/', '/calendar/'], ['/en/week/', '/week/'], ['/en/stats/', '/stats/'], ['/en/saved/', '/saved/']]) {

@@ -4,16 +4,21 @@
 //   GET  /media/films/?ids=1,2,3               which of these stories have a public film: { "<id>": ["h","v"], … }
 //   POST /media/films/<id>-<shape>.mp4         publish one: the body is the MP4 made on a reader's device (the video
 //                                              sheet's «انتشار برای همه») or by the runner (scripts/films.mjs)
+//   GET  /media/films/?ids=1,2,3&meta=1        the same with each film's length and cover: { "<id>": { "h": { "sec": 74.2,
+//                                              "cover": true } } } (the cinema's list)
+//   POST /media/films/<id>-<shape>.jpg         the film's cover (its designed first frame, JPEG ≤ 600 KB), with the film or
+//                                              after it — only while the film is there; `x-seconds` on the film's POST is kept
 //   DELETE /media/films/<id>-<shape>.mp4       owner only (x-media-key = MEDIA_KEY)
 // A reader's upload is checked as far as a server can without watching it: an MP4 (its `ftyp` box), ≤ 40 MB, for a
 // story the site has, a few an hour per reader, and only where no film is published yet — the runner's (or the
 // owner's) replaces any. Each object keeps who made it (`by`), so the owner can find and remove a reader's.
 import { configured, limited } from '../../server/_lib.js';
 
-const KEY = /^films\/(\d{1,8})-([hvs])\.mp4$/;
+const KEY = /^films\/(\d{1,8})-([hvs])\.(mp4|jpg)$/;
 // The podcast's episodes (scripts/podcast.mjs): the MP3 and its timed lines; only the owner's key publishes them.
 const POD = /^podcast\/(\d{4}-\d{2}-\d{2})\.(mp3|json)$/;
-const TYPES = { mp3: 'audio/mpeg', json: 'application/json; charset=utf-8', mp4: 'video/mp4' };
+const TYPES = { mp3: 'audio/mpeg', json: 'application/json; charset=utf-8', mp4: 'video/mp4', jpg: 'image/jpeg' };
+const COVER_MAX = 600 * 1024;
 const MAX = 40 * 1024 * 1024;
 const SHAPES = ['h', 'v', 's'];
 const json = (body, status = 200, extra = {}) =>
@@ -29,9 +34,19 @@ export async function onRequest(ctx) {
   if (path === 'films/' || path === 'films') {
     if (request.method !== 'GET') return json({ error: 'method' }, 405);
     const ids = (url.searchParams.get('ids') ?? '').split(',').filter((x) => /^\d{1,8}$/.test(x)).slice(0, 60);
-    const heads = await Promise.all(ids.flatMap((id) => SHAPES.map((s) => env.MEDIA.head(`films/${id}-${s}.mp4`).then((o) => (o ? [id, s] : null)))));
+    const meta = url.searchParams.has('meta');
+    const heads = await Promise.all(
+      ids.flatMap((id) =>
+        SHAPES.map(async (s) => {
+          const o = await env.MEDIA.head(`films/${id}-${s}.mp4`);
+          if (!o) return null;
+          const cover = meta ? !!(await env.MEDIA.head(`films/${id}-${s}.jpg`)) : false;
+          return [id, s, { sec: Number(o.customMetadata?.sec) || null, cover }];
+        }),
+      ),
+    );
     const have = {};
-    for (const h of heads) if (h) (have[h[0]] ??= []).push(h[1]);
+    for (const h of heads) if (h) meta ? ((have[h[0]] ??= {})[h[1]] = h[2]) : (have[h[0]] ??= []).push(h[1]);
     return json(have, 200, { 'cache-control': 'public, max-age=30, s-maxage=60' });
   }
 
@@ -72,7 +87,8 @@ export async function onRequest(ctx) {
 
   if (request.method === 'DELETE') {
     if (!owner) return json({ error: 'forbidden' }, 403);
-    await env.MEDIA.delete(path);
+    // A film goes with its cover.
+    await env.MEDIA.delete(m?.[3] === 'mp4' ? [path, path.replace(/\.mp4$/, '.jpg')] : path);
     return json({ ok: true });
   }
 
@@ -81,6 +97,23 @@ export async function onRequest(ctx) {
     const body = new Uint8Array(await request.arrayBuffer());
     if (!body.length || body.length > 80 * 1024 * 1024) return json({ error: 'size' }, 413);
     await env.MEDIA.put(path, body, { httpMetadata: { contentType: type }, customMetadata: { by: 'runner', at: new Date().toISOString() } });
+    await caches.default.delete(new Request(`${url.origin}/media/${path}`)).catch(() => {});
+    return json({ ok: true, url: `/media/${path}` }, 201);
+  }
+
+  if ((request.method === 'POST' || request.method === 'PUT') && m[3] === 'jpg') {
+    const size = Number(request.headers.get('content-length') ?? 0);
+    if (!size || size > COVER_MAX) return json({ error: 'size' }, 413);
+    if (!/^image\/jpeg\b/.test(request.headers.get('content-type') ?? '')) return json({ error: 'type' }, 415);
+    // Only a published film's cover, and a reader's only where none is there yet.
+    if (!(await env.MEDIA.head(`films/${m[1]}-${m[2]}.mp4`))) return json({ error: 'no such film' }, 404);
+    if (!owner) {
+      if (await env.MEDIA.head(path)) return json({ error: 'exists' }, 409);
+      if (configured() && (await limited(request, ['cover', 6, 3600]).catch(() => false))) return json({ error: 'slow down' }, 429);
+    }
+    const body = new Uint8Array(await request.arrayBuffer());
+    if (body.length !== size || body[0] !== 0xff || body[1] !== 0xd8) return json({ error: 'not a jpeg' }, 415);
+    await env.MEDIA.put(path, body, { httpMetadata: { contentType: 'image/jpeg' }, customMetadata: { by: owner ? 'runner' : 'reader', at: new Date().toISOString() } });
     await caches.default.delete(new Request(`${url.origin}/media/${path}`)).catch(() => {});
     return json({ ok: true, url: `/media/${path}` }, 201);
   }
@@ -102,7 +135,11 @@ export async function onRequest(ctx) {
     if (String.fromCharCode(...body.subarray(4, 8)) !== 'ftyp') return json({ error: 'not an mp4' }, 415);
     await env.MEDIA.put(path, body, {
       httpMetadata: { contentType: 'video/mp4' },
-      customMetadata: { by: owner ? request.headers.get('x-made-by') || 'runner' : 'reader', at: new Date().toISOString() },
+      customMetadata: {
+        by: owner ? request.headers.get('x-made-by') || 'runner' : 'reader',
+        at: new Date().toISOString(),
+        ...(Number(request.headers.get('x-seconds')) > 0 && { sec: String(Math.round(Number(request.headers.get('x-seconds')) * 10) / 10) }),
+      },
     });
     await caches.default.delete(new Request(`${url.origin}/media/${path}`)).catch(() => {});
     return json({ ok: true, url: `/media/${path}` }, 201);

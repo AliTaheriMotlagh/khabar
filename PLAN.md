@@ -3,6 +3,19 @@
 One place for everything unfinished. Last checked 2026-11-25 (data through post 6725).
 Tick items off here; move anything that becomes a lasting rule into CLAUDE.md.
 
+## Progress (2026-11-28, evening): films like a newscast, a setup before making, the cinema redesigned
+
+- [x] Films show the story's own video (`/api/clip` relay + `footage.ts`, its sound under the voice), a drawn backdrop when
+  there's no picture, status/importance chips, a ticker, count-up numbers, stingers, subtitle band, a cover JPEG.
+- [x] The host matches the voice: Parisa for a woman's voice (Cilla Parisa/Sila, Khadijah, Azure Dilara), Gholam otherwise.
+- [x] Video sheet: setup first (shape, kind, parts, look); `/videos/` teasers no longer overwrite the reader's choice (the
+  «ویدیو» icon opened the wrong kind after a teaser — e2e test added).
+- [x] `/cinema/` redesigned + `/en/cinema/`; R2 keeps each film's cover and length (`?meta=1`).
+- [ ] Check `/api/clip` on Cloudflare with a real X video (the dev machine can't reach video.twimg.com; tested with a mock
+  clip), and a film with footage on a mid-range phone (decode + encode at once).
+- [ ] Films published before today have no cover/length: the cinema falls back to the story's picture; `films.yml` adds
+  them for new ones.
+
 ## Progress (2026-11-28, later): films, cinema, podcast, YouTube — built
 
 - [x] Story films (`film.ts`), Gholam and Parisa drawn (`anchor.ts`), written names shown as written; tested on 6768/6766/6770
