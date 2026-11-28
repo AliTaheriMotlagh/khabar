@@ -3,6 +3,110 @@
 One place for everything unfinished. Last checked 2026-11-25 (data through post 6725).
 Tick items off here; move anything that becomes a lasting rule into CLAUDE.md.
 
+## Plan (2026-11-28): news videos like a class, Gholam as anchor, a two-host podcast — all at $0
+
+**Goal:** a reader *understands* a story in under two minutes and enjoys it: real material from the source, every
+idea shown (not just read), the same friendly voice the channel has. Measured, not guessed (see "How we know").
+
+### Rules that don't bend
+- **Real material, never fabricated footage.** What's on screen is the source's own media (its video, pictures, the
+  post itself) and things we draw from facts in the text (charts, timelines, diagrams). Generated imagery only as a
+  labelled illustration of an *idea* («یک مدل زبانی چطور کار می‌کند»), never of a real person or a real event.
+- **Gholam is Mehrzad's persona:** his face, look and voice for the anchor need Mehrzad's OK before anything ships.
+  The anchor is an *illustrated character*, not a human-looking face, and always labelled «مجری هوش مصنوعی».
+- **$0:** heavy work runs on the reader's device (WebGPU/WebCodecs, as video.ts does now) or on the GitHub runner
+  (public repo = free minutes, CPU only). Big files never go into Cloudflare Pages (25 MiB per file, 20,000 files).
+- **No new file per story** (file budget): a story's video plan lives inside its card.json, as `video` does today.
+- **Licences:** only voices/models allowed commercially once ads are on (not Cilla Mini, CC BY-NC); source clips
+  short, credited, linked — commentary on the news, not re-uploads of whole videos.
+
+### Where things run and live (all free tiers)
+| What | Made where | Hosted where |
+|---|---|---|
+| A story's video | reader's device, on tap (as now) | not hosted: shared from the device |
+| Daily / weekly video | runner: headless Chrome runs the same renderer | Cloudflare R2 (10 GB, free egress) on a subdomain (`media.`) + YouTube + the Telegram channel; Aparat for readers in Iran if its upload works |
+| Podcast MP3s | runner: sherpa-onnx voices (or Azure's free 500K chars/month for neural voices), ffmpeg mix | R2 + `podcast.xml` on the site → Apple/Spotify/Castbox/YouTube Podcasts |
+| Scene plans, dialogue scripts | runner: Qwen (as ai_more.py) | card.json / data/daily, data/weekly |
+| Anchor animation | reader's device or runner (same code) | inside the videos |
+
+R2 sizes: podcast ~3 MB/day (64 kbps mono), daily video ~15 MB, weekly ~40 MB → ~8 GB/year: prune videos after
+90 days (YouTube keeps them), keep MP3s. Reachability from Iran: R2 on our own domain (as Cloudflare Pages is), never
+`r2.dev`; YouTube/Telegram are filtered there, so the site's own player is the main one.
+
+### 1. The storyboard (runner, Qwen) — the base of everything
+`ai_more.py` v3 adds `ai.x.board`: 6–9 scenes per story, each `{type, say, show}`, chosen from fixed scene types (the
+model picks and fills, it never invents visuals). Every number/name in `say` must be in Gholam's text or the source
+(the `score_said`/`date_said` checks, reused); a failing scene is dropped, not repaired. Scene types, a class's order:
+1. **hook** — the source's own video's first seconds, or its best picture, + the headline (≤5 s, no intro).
+2. **source** — the post itself, drawn as a card from the data we already have (avatar, handle, date, text, its
+   picture), the Persian line under it: «این را @handle نوشته».
+3. **footage** — the source's video clip (muted under the voice, or with its own sound for a quote), «منبع: …».
+4. **explain** — «به زبان ساده» (`ai.x.simple`) with a drawn template: compare bars, before/after, steps with
+   arrows, a timeline; a hard word gets a glossary card (`data/glossary.json`).
+5. **numbers** — benchmark/price/date charts from `ai.x.models`, `events` (already checked against the text).
+6. **context** — the maker's card (entities.json) and «ماجرا تا اینجا»: the thread's earlier stories as a timeline.
+7. **why** — Gholam's closing take (his words, not the model's, when he wrote one).
+8. **quiz** — `ai.x.quiz`: the question, a 3-second pause with a countdown, the answer. The class feeling.
+9. **outro** — the link, «دنبال کن».
+Burned-in captions with the word lit (as now), a «آرام‌تر» speed for learners, and the same plan read by «گوش دادن».
+
+### 2. The renderer (refactor of src/scripts/video.ts, 1,310 lines)
+- Split into `src/lib/scenes/*.ts` (pure canvas drawing per scene type, no DOM) + `render.ts` (timeline, WebCodecs,
+  mediabunny). Same code on a phone, a laptop and the runner's headless Chrome — one look everywhere.
+- Real clips: decode the source's MP4 through the site's relay with WebCodecs `VideoDecoder` (mediabunny reads it),
+  frames drawn into the scene. **Check first:** relaying video through Pages Functions (10 ms CPU per request on the
+  free plan; streaming should pass, measure it) and that X's video CDN answers the relay.
+- Look: Ken Burns on stills, picture cut-outs with soft shadows (background removal on WebGPU via transformers.js,
+  only where `navigator.gpu` exists; plain frame elsewhere), cross-fades, a music bed synthesized with WebAudio
+  (no licence to clear), loudness evened out.
+- Shapes as now: 16:9, 9:16 reel (safe zones), 1:1.
+
+### 3. Gholam, the anchor
+- **Tier 1, every device (ship this):** an illustrated 2D Gholam rig — layers for head, eyes (blink), brows, ~10
+  mouth shapes, two or three hand gestures — drawn on the same canvas. Lips from the sound: `align.ts` already times
+  each word; letters → mouth shapes spread over the word, the jaw from the loudness. Cheap, sharp at any size, the
+  same on a phone. He opens, does «چرا مهمه؟» and the quiz full-frame, sits in a corner (PiP) during footage.
+- **Tier 2, WebGPU experiment:** a neural talking head from one portrait of the illustrated Gholam (LivePortrait
+  ONNX on onnxruntime-web WebGPU), pinned + SHA-256-checked like the voices. Ship only if it runs ≥ real time on a
+  mid-range laptop and the model is ≤ 300 MB; else Tier 1 stays. Phones stay on Tier 1.
+- His voice: one male Persian voice, the same in videos and podcast, allowed commercially; his colloquial register
+  comes from his own text, so it already sounds like him.
+
+### 4. Daily and weekly
+- **«خبر امروز» (daily, ~3 min):** Gholam opens, each story a short block (hook → footage/source → one explain or
+  number → why), a closing recap and a quiz. Chapters = stories (YouTube chapters too). Made at a fixed Tehran hour by
+  a new `media.yml`, rendered on the runner, uploaded to R2/YouTube/Telegram; `/today/` and the home card play it.
+- **«کلاس هفته» (weekly, 8–10 min):** the top 5 stories in depth, *one concept of the week* taught properly (a
+  glossary term, with drawn diagrams), the week's numbers, a 5-question quiz, «هفته‌ی بعد منتظر چه باشیم» from
+  `events`. From the existing weekly recap (`daily.py --weekly`).
+
+### 5. The two-host podcast «پادکست خبر» (daily ~6–8 min, weekly ~15)
+- **Hosts:** Gholam (explains, his tone) and a second host (asks what a beginner would ask; a woman's voice) — the
+  class dynamic in audio. Script = dialogue JSON `[{who, text, story}]` by Qwen from the day's stories, grown from
+  `daily.py`'s host lines; every number checked against the source as above; a line that fails is cut.
+- **Sound:** runner, sherpa-onnx in Node (`scripts/voices.mjs` already runs the voices there) or Azure neural voices
+  within the free 500K chars/month (the daily show ≈ 135K/month — check /admin/'s current use first); ffmpeg: a
+  short jingle (ours), −16 LUFS, MP3 64 kbps mono with chapter marks.
+- **Out:** R2 + `podcast.xml` (iTunes tags) → Apple Podcasts, Spotify, Castbox (big in Iran), YouTube Podcasts (with
+  the daily video as its picture track). On the site: one more queue of listen.ts with the transcript lit word by
+  word, chapters = stories, offline in `audio-v1` (as /saved/).
+- **No download needed on the site:** a reader who has an on-device voice can play the same script live (as
+  playlist.ts does), so the site works even if R2 is unreachable.
+
+### Order of work (each step ships on its own)
+1. [ ] **Prereqs (yours):** Mehrzad's OK for the anchor and the content's use; an R2 bucket + `media.` subdomain;
+   a YouTube channel + OAuth refresh token as a secret; which voices are licensed for an ad-supported site.
+2. [ ] Storyboard v3 + validators + golden-set check (`--eval`), then the scene types source/footage/numbers/quiz.
+3. [ ] Renderer split (`lib/scenes/`), headless render on the runner proven with one daily video.
+4. [ ] Podcast: script → audio → R2 → `podcast.xml` → the site's player. (Audience + sponsor slot.)
+5. [ ] Anchor Tier 1 in every video. 6. [ ] Weekly class. 7. [ ] Tier 2 WebGPU experiment.
+
+### How we know it's better
+Count with the presence beat (no new requests): a video played to its end, quiz answered and right, shared; podcast
+plays and finishes (from R2 logs and the site player). Bars: ≥50% finish the daily video, ≥60% answer its quiz
+right, a story video made on a mid phone in ≤ its own length, files ≤ 25 MB. Five readers watch three videos each and
+explain the story back: that's the real test.
+
 ## Progress (2026-11-28): Gholam's rewrite, an English on-device voice
 
 - [x] Gholam's code was rewritten (github.com/mehrzads/gholam, 2026-11-28: threads, quoted posts, up to 4 tweet photos,
