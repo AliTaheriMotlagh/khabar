@@ -79,3 +79,19 @@ test('voices: Cilla Mini — one model for its three speakers, pinned to the dem
   // The sherpa voices keep their own mirrors.
   assert.equal(basesOf(voiceById(DEFAULT_VOICE))[0], mirrors(DEFAULT_VOICE)[0]);
 });
+
+test('voices: the English edition\'s voice is pinned, shares the Persian runtime, and has a preview per speaker', async () => {
+  const { EN_VOICE, EN_SPEAKERS, ALL_PACKS } = await import('../src/lib/voices.ts');
+  assert.deepEqual(EN_VOICE.files.map((f) => f.name), ORDER);
+  for (const f of EN_VOICE.files) assert.match(f.sha256, /^[0-9a-f]{64}$/, f.name);
+  assert.ok(!VOICES.some((v) => v.id === EN_VOICE.id), 'not offered on the Persian pages');
+  assert.ok(ALL_PACKS().includes(EN_VOICE), 'a Persian voice\'s removal keeps its files');
+  const wasm = VOICES.find((v) => !v.engine).files[2];
+  assert.equal(EN_VOICE.files[2].sha256, wasm.sha256, 'the 12 MB runtime is downloaded once for both languages');
+  assert.equal(EN_VOICE.config.offlineTtsModelConfig.numThreads, 1);
+  assert.ok(EN_VOICE.config.offlineTtsModelConfig.offlineTtsKittenModelConfig);
+  assert.ok(EN_VOICE.rtf > 0);
+  assert.deepEqual(EN_SPEAKERS.map((s) => s.sid), [0, 1, 2, 3, 4, 5, 6, 7]);
+  assert.equal(EN_SPEAKERS.filter((s) => s.recommended).length, 1);
+  for (const s of EN_SPEAKERS) assert.ok(fs.existsSync(`public/voices/en-${s.sid}.mp3`), `preview en-${s.sid} (node scripts/voices.mjs bench-en)`);
+});

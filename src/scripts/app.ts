@@ -431,8 +431,10 @@ initPeek();
 initVoiceOffer();
 initReader(() => settings, saveSettings);
 initExtras();
-// The English edition's «Listen» (the device's English voice) and the ad slots: loaded only where a page has them.
+// The English edition's «Listen» (the device's or the downloaded English voice) and the ad slots: loaded only where a
+// page has them. The English sheet's voice row looks at the store when the sheet first opens, not on every page.
 if ($('[data-en-listen]')) import('./en-listen').then((m) => m.initEnListen());
+if ($('[data-en-voice]')) $$('[data-open-settings]').forEach((b) => b.addEventListener('click', () => void import('./en-voice-row').then((m) => m.initEnVoiceRow()), { once: true }));
 if ($('[data-ad]')) import('./ads').then((m) => m.initAds());
 // The reader's language: a tap on the header's switch remembers it, and the Persian home then opens the English one
 // (only the home page, only for a reader who chose it — search engines and new readers always get the Persian site).

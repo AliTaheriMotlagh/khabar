@@ -1,6 +1,8 @@
 // Tooling for the Persian voices a reader can download (src/lib/voices.ts). Not part of the site.
 //   node scripts/voices.mjs entry <package>...  the files (size + SHA-256) of sherpa-onnx WASM packages at the pinned
 //                                               revision, for a new catalog entry (<package> = the folder without "wasm-")
+//   node scripts/voices.mjs bench-en            the same for the English edition's voice (EN_VOICE): every speaker,
+//                                               previews public/voices/en-<sid>.mp3
 //   node scripts/voices.mjs bench [id...]       downloads each voice into .cache/voices/ (checked against the catalog),
 //                                               speaks a test paragraph in Node (one thread, like the browser worker),
 //                                               prints its speed and pitch, and writes the picker's preview clip to
@@ -13,7 +15,7 @@ import vm from 'node:vm';
 import crypto from 'node:crypto';
 import { createRequire } from 'node:module';
 import { execFileSync, spawnSync } from 'node:child_process';
-import { REPO, REVISION, VOICES, mirrors } from '../src/lib/voices.ts';
+import { EN_SPEAKERS, EN_VOICE, REPO, REVISION, VOICES, mirrors } from '../src/lib/voices.ts';
 
 const CACHE = path.resolve('.cache/voices');
 const ORDER = ['sherpa-onnx-wasm-main-tts.js', 'sherpa-onnx-tts.js', 'sherpa-onnx-wasm-main-tts.wasm', 'sherpa-onnx-wasm-main-tts.data'];
@@ -24,6 +26,14 @@ const BENCH = [
   'ابزاری که اومده تا با هوش مصنوعی بار سنگین کاغذبازی و پرونده‌نویسی رو از دوش پزشکا برداره.',
   'این دستیار صوتی هوشمند مکالمات ویزیت رو تحلیل می‌کنه و مدارک بالینی رو تحویل میده.',
   'خلاصه یه تجربه دست‌اول و واقعی از کاربرد درست هوش مصنوعی تو دنیای پزشکیه.',
+];
+// The English edition's preview and test: its own register (a news story read out), names and numbers in it.
+const SAMPLE_EN = 'Hi! I read the AI news to you. Today, Google released Gemini 4, and OpenAI says GPT-6 is coming in March.';
+const BENCH_EN = [
+  'Anthropic says its new model scored 82 percent on the SWE-bench coding test, up from 74 percent in June.',
+  'The startup raised 40 million dollars to build robot hands that can fold laundry and load a dishwasher.',
+  'Researchers at Stanford found that smaller models trained on better data can match much larger ones.',
+  'The company plans to open the tool to everyone next month, starting with developers in Europe.',
 ];
 const sha256 = (b) => crypto.createHash('sha256').update(b).digest('hex');
 const cached = (f) => path.join(CACHE, f.sha256);
@@ -102,8 +112,10 @@ function wav(samples, rate) {
 }
 
 /** In a child process (one model's memory at a time): loads the voice the way the worker does and speaks. */
-async function speak(id, out) {
-  const voice = VOICES.find((v) => v.id === id);
+async function speak(id, out, sid) {
+  const en = id === EN_VOICE.id;
+  const voice = en ? { ...EN_VOICE, sid: +sid } : VOICES.find((v) => v.id === id);
+  const [bench, sample, name] = en ? [BENCH_EN, SAMPLE_EN, `en-${sid}`] : [BENCH, SAMPLE, id];
   const [main, glue, wasm, data] = voice.files.map((f) => fs.readFileSync(cached(f)));
   const t0 = performance.now();
   await new Promise((resolve, reject) => {
@@ -126,15 +138,15 @@ async function speak(id, out) {
   let work = 0;
   let audio = 0;
   let f0 = 0;
-  for (const text of BENCH) {
+  for (const text of bench) {
     const t = performance.now();
     const a = say(text);
     work += (performance.now() - t) / 1000;
     audio += a.samples.length / a.sampleRate;
-    f0 += pitch(a.samples, a.sampleRate) / BENCH.length;
+    f0 += pitch(a.samples, a.sampleRate) / bench.length;
   }
-  const sample = say(SAMPLE);
-  fs.writeFileSync(path.join(out, `${id}.wav`), wav(sample.samples, sample.sampleRate));
+  const clip = say(sample);
+  fs.writeFileSync(path.join(out, `${name}.wav`), wav(clip.samples, clip.sampleRate));
   console.log(JSON.stringify({ load: +load.toFixed(1), rtf: +(work / audio).toFixed(2), f0: Math.round(f0), rate: tts.sampleRate }));
 }
 
@@ -157,8 +169,25 @@ async function bench(ids) {
   }
 }
 
+async function benchEn() {
+  const out = path.join(CACHE, 'out');
+  fs.mkdirSync(out, { recursive: true });
+  await ensure(EN_VOICE);
+  for (const s of EN_SPEAKERS) {
+    const run = spawnSync(process.execPath, [path.resolve('scripts/voices.mjs'), 'speak', EN_VOICE.id, out, String(s.sid)], { encoding: 'utf8' });
+    if (run.status) {
+      console.log(`${s.sid}: failed\n${run.stderr.slice(-2000)}`);
+      continue;
+    }
+    const r = JSON.parse(run.stdout.trim().split('\n').pop());
+    console.log(`en-${s.sid} ${s.name.padEnd(5)} load ${r.load}s · rtf ${r.rtf} (catalog ${EN_VOICE.rtf}) · pitch ${r.f0} Hz · ${r.rate} Hz`);
+    execFileSync('ffmpeg', ['-v', 'error', '-y', '-i', path.join(out, `en-${s.sid}.wav`), '-ac', '1', '-ar', '22050', '-b:a', '40k', `public/voices/en-${s.sid}.mp3`]);
+  }
+}
+
 const [cmd, ...args] = process.argv.slice(2);
 if (cmd === 'entry') await entry(args);
 else if (cmd === 'bench') await bench(args);
-else if (cmd === 'speak') await speak(args[0], args[1]);
-else console.log('usage: node scripts/voices.mjs entry <package>... | bench [id...]');
+else if (cmd === 'bench-en') await benchEn();
+else if (cmd === 'speak') await speak(args[0], args[1], args[2]);
+else console.log('usage: node scripts/voices.mjs entry <package>... | bench [id...] | bench-en');

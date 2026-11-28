@@ -1000,6 +1000,17 @@ dialog[open] { animation: sheet-in .3s var(--ease); }
 .seg input:checked + span { border-color: var(--accent); background: var(--accent-soft); color: var(--accent); font-weight: 800; }
 .seg input:focus-visible + span { outline: 2.5px solid var(--accent); outline-offset: 2px; }
 .sheet-foot { display: flex; justify-content: space-between; gap: 10px; padding-top: 14px; }
+/* the English sheet's voice row (src/scripts/en-voice-row.ts) */
+.env-speakers { display: grid; grid-template-columns: repeat(4, 1fr); gap: 6px; }
+.env-speakers label { position: relative; }
+.env-speakers input { position: absolute; opacity: 0; inset: 0; cursor: pointer; }
+.env-speakers span { display: grid; place-items: center; padding: 6px 4px; border-radius: 10px; border: 1px solid var(--border); background: var(--bg); font-size: 14px; font-weight: 700; cursor: pointer; }
+.env-speakers small { color: var(--text-3); font-size: 11.5px; font-weight: 400; }
+.env-speakers input:checked + span { border-color: var(--accent); background: var(--accent-soft); color: var(--accent); }
+.env-speakers input:focus-visible + span { outline: 2.5px solid var(--accent); outline-offset: 2px; }
+.env-actions { display: flex; flex-wrap: wrap; gap: 8px; }
+.env progress { width: 100%; height: 6px; accent-color: var(--accent); }
+.env .seg input:disabled + span { opacity: 0.45; cursor: not-allowed; }
 
 /* the settings sheet (src/components/Settings.astro): groups of rows, like a phone's settings */
 dialog.settings-sheet { background: var(--bg); }

@@ -261,6 +261,39 @@ export const VOICES: Voice[] = [
   },
 ];
 
+// ---------- the English edition's voice (src/scripts/en-voice.ts) ----------
+// Kitten TTS nano v0.2 (KittenML, Apache-2.0; fp16, 15M parameters): one 42 MB package, eight speakers, on the same
+// sherpa-onnx runtime and in the same store as the Persian voices — a reader who has one of those downloads only the
+// model's data. For devices whose own English voice is robotic (most Android phones and desktops); the device's voice
+// stays the default. Not in VOICES: the Persian pages never pick it. Speakers' order is the model's voices.bin
+// (expr-voice-2-m, -2-f, … -5-f; each m lower than its f: 203/255, 124/244, 213/235, 214/316 Hz); `name` is the site's.
+// `bench-en` (2026-11-28): rtf 0.43–0.55 on one M-series core — about real time on a phone, so the next sentence is
+// made while one plays; Whisper (large-v3-turbo) heard the preview with 5% words wrong for 0, 4, 5, 6, 7 (the «Hi!»),
+// 14–23% for 1–3 (mostly «four»/«Open AI» spelled out; 2 heard «Gemini for an»).
+export const EN_VOICE: Pick<Voice, 'id' | 'files' | 'config'> & { rtf: number } = {
+  id: 'kitten',
+  rtf: 0.47,
+  files: pack([119772, '42c30ae4e4f42818899b392a784d7e6df136f1b6935f052957035e1d2762e450'], [41817225, 'a47e1c3b83fb831b46f836fded9869e02886b5c4717d281e3077c44a747e4557']),
+  config: tts({ offlineTtsKittenModelConfig: { model: './model.fp16.onnx', voices: './voices.bin', tokens: './tokens.txt', dataDir: './espeak-ng-data', lengthScale: 1 } }),
+};
+export type EnSpeaker = { sid: number; name: string; gender: 'female' | 'male'; recommended?: true };
+export const EN_SPEAKERS: EnSpeaker[] = [
+  { sid: 0, name: 'Leo', gender: 'male', recommended: true },
+  { sid: 1, name: 'Ava', gender: 'female' },
+  { sid: 2, name: 'Max', gender: 'male' },
+  { sid: 3, name: 'Mia', gender: 'female' },
+  { sid: 4, name: 'Sam', gender: 'male' },
+  { sid: 5, name: 'Zoe', gender: 'female' },
+  { sid: 6, name: 'Ben', gender: 'male' },
+  { sid: 7, name: 'Ivy', gender: 'female' },
+];
+/** Cache Storage that holds every downloaded voice, Persian and English (public/sw.js must keep it); each file is
+ *  stored once under voiceKeys() + its SHA-256, in parts (src/scripts/voice-worker.ts). */
+export const VOICE_STORE = 'voice-v1';
+export const voiceKeys = (origin: string) => `${origin}/voice-files/`;
+/** Every package a page may store in the voice cache: what one voice's removal must not take from another. */
+export const ALL_PACKS = () => [...VOICES, EN_VOICE];
+
 /** The voice the site shipped before there was a choice: a reader who downloaded it keeps it. */
 export const DEFAULT_VOICE = 'piper-fa-ganji-medium';
 export const voiceById = (id: string | null | undefined) => VOICES.find((v) => v.id === id);

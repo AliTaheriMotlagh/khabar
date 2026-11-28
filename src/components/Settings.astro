@@ -3,6 +3,7 @@
 // and notifications with topics. Each control's name is a setting of src/scripts/app.ts (radios: the value; switches:
 // data-on / data-off); the rows of sound, notifications and topics are filled by voice-offer.ts, notify.ts and follow.ts.
 import Icon from './Icon.astro';
+import { EN_SPEAKERS } from '../lib/voices';
 
 type Choice = { v: string; l: string };
 const seg = (key: string, choices: Choice[]) => ({ key, choices });
@@ -70,6 +71,24 @@ const sizesEn = [{ v: 's', l: 'Small' }, { v: 'm', l: 'Normal' }, { v: 'l', l: '
         <input type="checkbox" role="switch" name="media" data-on="tap" data-off="show" />
         <span class="switch" aria-hidden="true"></span>
       </label>
+      <div class="set-row set-stack env" data-en-voice hidden>
+        <span class="set-text"><b>Voice for “Listen”</b><small data-env-status>Your device’s own voice.</small></span>
+        <div class="seg seg-fill" role="radiogroup" aria-label="Which voice reads">
+          <label><input type="radio" name="env-src" value="" /><span>Device voice</span></label>
+          <label><input type="radio" name="env-src" value="kitten" /><span>Natural (on device)</span></label>
+        </div>
+        <div class="env-speakers" role="radiogroup" aria-label="Speaker">
+          {EN_SPEAKERS.map((s) => <label><input type="radio" name="env-speaker" value={s.sid} /><span>{s.name}<small>{s.gender}</small></span></label>)}
+        </div>
+        <div class="env-actions">
+          <button class="btn sm" type="button" data-env-preview><Icon name="volume" /> Preview</button>
+          <button class="btn sm primary" type="button" data-env-dl>Download</button>
+          <button class="btn sm" type="button" data-env-cancel hidden>Cancel</button>
+          <button class="btn sm" type="button" data-env-rm hidden>Remove</button>
+        </div>
+        <progress data-env-progress max="1" value="0" hidden></progress>
+        <small class="set-hint">Kitten TTS (Apache-2.0), downloaded once and run on this device: nothing you read is sent anywhere. Works offline once downloaded.</small>
+      </div>
     </section>
     <div class="sheet-foot set-foot">
       <a class="btn" href={`${BASE}/`} hreflang="fa" lang="fa" data-lang-switch="fa">فارسی</a>

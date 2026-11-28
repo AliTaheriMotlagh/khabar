@@ -7,12 +7,12 @@
 // tokens.txt, picked from their files): it is stored next to the others and runs on the runtime and espeak-ng data of
 // a voice already downloaded here (see `custom` below).
 import { store } from './core';
-import { DEFAULT_VOICE, VOICES, basesOf, mirrors, voiceById, type Voice, type VoiceFile } from '../lib/voices';
+import { DEFAULT_VOICE, EN_VOICE, VOICES, VOICE_STORE, basesOf, mirrors, voiceById, voiceKeys, type Voice, type VoiceFile } from '../lib/voices';
 
 /** Cache Storage name: public/sw.js must keep it when it clears old caches. Holds every downloaded voice. */
-export const VOICE_CACHE = 'voice-v1';
+export const VOICE_CACHE = VOICE_STORE;
 // Files are stored by SHA-256 (the same runtime serves every voice), each in parts — see the worker.
-const KEYS = `${location.origin}/voice-files/`;
+const KEYS = voiceKeys(location.origin);
 const done = (sha: string) => `${KEYS}${sha}?done`;
 const part0 = (sha: string) => `${KEYS}${sha}?part=0`;
 
@@ -364,10 +364,13 @@ export async function removeVoice(id: string) {
   // Reading with it: another downloaded voice takes over the sentence, if there is one.
   if (speaker?.id === id || (cillaOn && voiceById(id)?.engine === 'cilla')) stopSpeaker(voiceReady() ? 'dropped' : 'removed');
   try {
+    const cache = await caches.open(VOICE_CACHE);
     const keep = new Set(VOICES.filter((v) => v.id !== id && states.has(v.id)).flatMap((v) => v.files.map((f) => f.sha256)));
+    // The English edition's voice (src/scripts/en-voice.ts) runs on the same runtime: it keeps it, downloaded or not.
+    const en = EN_VOICE.files[3].sha256;
+    if ((await cache.match(done(en))) || (await cache.match(part0(en)))) for (const f of EN_VOICE.files) keep.add(f.sha256);
     // The reader's own model stays (it runs again once a voice is downloaded).
     if (!keep.size && !customHere) return void (await caches.delete(VOICE_CACHE));
-    const cache = await caches.open(VOICE_CACHE);
     const drop = new Set(voiceById(id)!.files.map((f) => f.sha256).filter((s) => !keep.has(s)));
     for (const r of await cache.keys()) if (drop.has(r.url.slice(KEYS.length).split('?')[0])) await cache.delete(r);
   } catch {}

@@ -3,6 +3,21 @@
 One place for everything unfinished. Last checked 2026-11-25 (data through post 6725).
 Tick items off here; move anything that becomes a lasting rule into CLAUDE.md.
 
+## Progress (2026-11-28): Gholam's rewrite, an English on-device voice
+
+- [x] Gholam's code was rewritten (github.com/mehrzads/gholam, 2026-11-28: threads, quoted posts, up to 4 tweet photos,
+  Jina Reader for articles, Gemini `gemini-4-hydrogen`). Effects here: no «چرا مهمه؟» any more (the model's `whyByModel`
+  fills it, already live since ~11-25), «•» lists (handled by `shape.BULLET_RE`), and failures now posted as Persian
+  replies with the raw exception («نتونستم تحلیلش کنم رفیق: …») — unsigned, from his account, so they would have been
+  published as the story: now in `telegram.GHOLAM_ERROR_RE` (tests). None had reached `data/` yet.
+- [x] English «Listen» with a natural voice on the device: Kitten TTS nano v0.2 (Apache-2.0, 42 MB, 8 speakers), picked
+  in the English settings sheet; the device voice stays the default; one tip toast on the first listen. Measured: rtf
+  0.43–0.55 on one M-series core (≈ real time on a phone; read-ahead of one sentence keeps it gap-free on a Mac: first
+  words 2.6 s after the tap, ~100 ms between sentences); Whisper heard 5 of 8 speakers with only the «Hi!» missing.
+  [ ] Check on a real mid-range Android phone: if it stutters, read ahead two sentences or show «slow on this phone».
+- [ ] License, before earning money from the site: Cilla Mini (3 Persian voices) is CC BY-NC 4.0 — non-commercial only.
+  With ads on, drop it from VOICES or ask its author (mehdi-hf) for permission. Kitten, Piper, Matcha voices are fine.
+
 ## Progress (2026-11-25): updates, English edition, explorer, ads, speed
 
 ### Why the site stopped updating (fixed in code; one step is yours)
