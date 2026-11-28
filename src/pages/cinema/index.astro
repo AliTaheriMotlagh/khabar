@@ -1,0 +1,81 @@
+---
+// «سینمای خبر»: the published films (functions/media, R2) of a day's or the week's stories, played back to back like
+// a bulletin — an opening card, «بعدی» between films, the list beside — by src/scripts/cinema.ts. The lists are made
+// here (the last three Tehran days, the week's most important); which films exist is asked once on the page.
+import Base from '../../layouts/Base.astro';
+import Icon from '../../components/Icon.astro';
+import { faDate, getStories, picture } from '../../lib/posts';
+import { SITE } from '../../site';
+
+const day = (iso: string) => new Date(iso).toLocaleDateString('en-CA', { timeZone: SITE.timeZone });
+const stories = getStories().filter((p) => p.kind === 'story');
+const item = (p: (typeof stories)[number]) => ({
+  id: p.id,
+  title: p.article.title,
+  short: p.short,
+  href: p.href,
+  date: p.date,
+  thumb: p.cover ? picture(p.cover.src || p.cover.poster, 'small').src : '',
+  imp: p.importance ?? 0,
+});
+const days: { key: string; label: string; items: ReturnType<typeof item>[] }[] = [];
+for (const p of stories) {
+  const k = day(p.date);
+  let d = days.find((x) => x.key === k);
+  if (!d) {
+    if (days.length === 3) break;
+    days.push((d = { key: k, label: faDate(p.date, { weekday: 'long', day: 'numeric', month: 'long' }), items: [] }));
+  }
+  // The day's bulletin: the most important first, then the newest.
+  d.items.push(item(p));
+}
+for (const d of days) d.items.sort((a, b) => b.imp - a.imp || b.id - a.id);
+const weekFrom = Date.now() - 7 * 864e5;
+const week = stories.filter((p) => Date.parse(p.date) >= weekFrom).map(item).sort((a, b) => b.imp - a.imp || b.id - a.id).slice(0, 14);
+const lists = [...days.map((d, i) => ({ key: d.key, label: i === 0 ? `امروز · ${d.label}` : d.label, items: d.items })), { key: 'week', label: 'برترین‌های هفته', items: week }];
+---
+<Base title="سینمای خبر" description="فیلم‌های کوتاه خبرهای هوش مصنوعی، پشت سر هم: خبرهای امروز و برترین‌های هفته، با روایت و مجری.">
+  <div class="container cinema" data-cinema>
+    <header class="page-head">
+      <div>
+        <h1><Icon name="film" /> سینمای خبر</h1>
+        <p>فیلم کوتاه هر خبر، پشت سر هم مثل یک بخش خبری: با تصویرهای خود خبر، منبع اصلی، توضیح ساده و یک سؤال. هر خواننده‌ای می‌تواند فیلم خبری را که هنوز فیلم ندارد بسازد و برای همه منتشر کند.</p>
+      </div>
+    </header>
+
+    <div class="cin-tabs seg" role="tablist" aria-label="کدام خبرها">
+      {lists.map((l, i) => <button type="button" role="tab" data-cin-list={l.key} aria-selected={i === 0 ? 'true' : 'false'}>{l.label}</button>)}
+    </div>
+
+    <section class="cin-theatre" aria-label="پخش">
+      <div class="cin-stage" data-cin-stage data-shape="h">
+        <video playsinline preload="metadata" data-cin-a></video>
+        <video playsinline preload="auto" data-cin-b hidden></video>
+        <div class="cin-card" data-cin-card>
+          <div class="cin-card-bg" data-cin-card-bg></div>
+          <div class="cin-card-body">
+            <small data-cin-card-kicker>سینمای خبر</small>
+            <b data-cin-card-title>فیلم‌های خبر، پشت سر هم</b>
+            <span data-cin-card-sub></span>
+            <button class="btn primary cin-play" type="button" data-cin-start><Icon name="play" /> <span>پخش همه</span></button>
+            <span class="cin-ring" data-cin-ring hidden><svg viewBox="0 0 44 44" aria-hidden="true"><circle cx="22" cy="22" r="20" /><circle cx="22" cy="22" r="20" pathLength="100" data-cin-ring-arc /></svg></span>
+          </div>
+        </div>
+      </div>
+      <div class="cin-bar">
+        <button class="icon-btn" type="button" data-cin-prev aria-label="قبلی"><Icon name="arrow-r" /></button>
+        <button class="icon-btn" type="button" data-cin-toggle aria-label="پخش / مکث"><Icon name="play" class="when-idle" /><Icon name="pause" class="when-playing" /></button>
+        <button class="icon-btn" type="button" data-cin-next aria-label="بعدی"><Icon name="arrow" /></button>
+        <span class="cin-now" data-cin-now></span>
+        <div class="seg sm cin-shape" role="radiogroup" aria-label="شکل فیلم">
+          <button type="button" data-cin-shape="h" aria-pressed="true">افقی</button>
+          <button type="button" data-cin-shape="v" aria-pressed="false">عمودی</button>
+        </div>
+      </div>
+    </section>
+
+    <ol class="cin-list" data-cin-items aria-live="polite"></ol>
+    <p class="muted cin-empty" data-cin-empty hidden>برای این خبرها هنوز فیلمی منتشر نشده. در صفحه‌ی هر خبر «ویدیو» ← «فیلم» را بزنید و بعد «انتشار برای همه».</p>
+    <script type="application/json" data-cin-data set:html={JSON.stringify(lists)} />
+  </div>
+</Base>

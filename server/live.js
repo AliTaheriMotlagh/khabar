@@ -28,7 +28,7 @@ export function source(ref) {
 }
 // What readers use, counted per Tehran day for the owner's page (`ev:<day>`): a fixed list of names (src/scripts/core.ts
 // EVENTS), at most 50 each per beat. Sent with a beat, so they cost a command each, never a request.
-export const EVENTS = new Set(['listen', 'playlist', 'share', 'save', 'video-made-v', 'video-made-h', 'video-made-s', 'video-shared', 'quiz-right', 'quiz-wrong', 'push-on', 'install', 'term', 'simple', 'today', 'week-listen', 'brief60', 'ad-view', 'ad-click', 'lang-en', 'investigate', 'calendar']);
+export const EVENTS = new Set(['listen', 'playlist', 'share', 'save', 'video-made-v', 'video-made-h', 'video-made-s', 'video-shared', 'quiz-right', 'quiz-wrong', 'push-on', 'install', 'term', 'simple', 'today', 'week-listen', 'brief60', 'ad-view', 'ad-click', 'lang-en', 'investigate', 'calendar', 'film-published', 'cinema']);
 export function eventCmds(ev) {
   if (!ev || typeof ev !== 'object') return [];
   const out = Object.entries(ev)

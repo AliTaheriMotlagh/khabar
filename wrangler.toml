@@ -4,3 +4,8 @@ name = "khabar"
 pages_build_output_dir = "dist"
 compatibility_date = "2025-09-01"
 compatibility_flags = ["nodejs_compat"]
+
+# The films everyone can watch (functions/media/[[path]].js): made on readers' devices or by the runner.
+[[r2_buckets]]
+binding = "MEDIA"
+bucket_name = "khabar-media"

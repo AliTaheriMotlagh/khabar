@@ -1277,6 +1277,12 @@ export async function makeVideo(href: string, ac: AudioContext | null = null, as
     const mode: Mode = filmed ? 'film' : short ? 'short' : 'full';
     const key = `${href} ${want.shape} ${mode} ${engine} ${chosenVoice()}`;
     if (made?.key === key) return made.show();
+    // A film someone already published: watched at once (made again only from the sheet's buttons).
+    const pub = mode === 'film' && !asked ? await publicFilm(full.id, want.shape) : null;
+    if (pub) {
+      made = { key, show: done.bind(null, full, pub, 0, false, href, want.shape, mode, true) };
+      return made.show();
+    }
     const hit = await kept(key);
     if (hit) {
       made = { key, show: done.bind(null, full, hit, 0, !engine, href, want.shape, mode, true) };
@@ -1400,6 +1406,50 @@ export async function makeVideo(href: string, ac: AudioContext | null = null, as
 }
 
 const SHAPE_FA: Record<Shape, string> = { v: 'عمودی', h: 'افقی', s: 'مربع' };
+
+// ---------- films everyone can watch (functions/media/[[path]].js, R2) ----------
+/** Where a story's public film is, by shape. */
+export const filmUrl = (id: number, shape: Shape) => `${BASE}/media/films/${id}-${shape}.mp4`;
+/** The public film of this story in this shape, if one is published (a HEAD; null when there's none or no storage). */
+async function publicFilm(id: number, shape: Shape): Promise<Blob | null> {
+  try {
+    const head = await fetch(filmUrl(id, shape), { method: 'HEAD' });
+    if (!head.ok) return null;
+    const res = await fetch(filmUrl(id, shape));
+    return res.ok ? await res.blob() : null;
+  } catch {
+    return null;
+  }
+}
+/** A film made here, with a voice, as MP4, of a story with no public film yet: «انتشار برای همه» puts it on the
+ *  story's page and in /cinema/ for every reader. */
+function publishRow(card: Card, blob: Blob, shape: Shape, mode: Mode, silent: boolean) {
+  const row = $('[data-vs-public]', d)!;
+  const text = $('[data-vs-public-text]', d)!;
+  const btn = $<HTMLButtonElement>('[data-vs-publish]', d)!;
+  row.hidden = true;
+  if (mode !== 'film' || silent || !card.id || !blob.type.includes('mp4')) return;
+  void fetch(`${BASE}/media/films/?ids=${card.id}`)
+    .then((r) => (r.ok ? r.json() : null))
+    .then((have: Record<string, string[]> | null) => {
+      if (!have) return;
+      const published = have[card.id]?.includes(shape);
+      row.hidden = false;
+      btn.hidden = !!published;
+      text.textContent = published ? 'این فیلم برای همه منتشر شده است: در صفحه‌ی خبر و «سینمای خبر» دیده می‌شود.' : 'هنوز کسی فیلم این خبر را منتشر نکرده: با انتشار، همه آن را می‌بینند.';
+      btn.onclick = async () => {
+        btn.disabled = true;
+        const res = await fetch(filmUrl(card.id, shape), { method: 'POST', headers: { 'content-type': 'video/mp4' }, body: blob }).catch(() => null);
+        btn.disabled = false;
+        if (res?.status === 201 || res?.status === 409) {
+          btn.hidden = true;
+          text.textContent = 'منتشر شد ✓ حالا همه این فیلم را در صفحه‌ی خبر و «سینمای خبر» می‌بینند.';
+          track('film-published');
+        } else toast(res?.status === 429 ? 'کمی بعد دوباره امتحان کنید' : 'انتشار ممکن نشد');
+      };
+    })
+    .catch(() => {});
+}
 function done(card: Card, blob: Blob, seconds: number, silent: boolean, href: string, shape: Shape, mode: Mode, fromCache: boolean) {
   if (url) URL.revokeObjectURL(url);
   url = URL.createObjectURL(blob);
@@ -1440,6 +1490,7 @@ function done(card: Card, blob: Blob, seconds: number, silent: boolean, href: st
     b.hidden = (b.dataset.vsMode === 'short' && !card.clip && card.kind !== 'digest') || (b.dataset.vsMode === 'film' && !card.film?.shots.length);
     b.onclick = () => b.dataset.vsMode !== mode && makeVideo(href, tapAudio(), true, { shape, mode: b.dataset.vsMode as Mode });
   }
+  publishRow(card, blob, shape, mode, silent);
   // Ready to post: the caption (the model's, else the headline and the address) goes with the file, and can be copied.
   const page = card.link ?? `${SITE.url}/p/${card.id}/`;
   const caption = card.share ? `${card.share}\n${page}` : `${card.title}\n${page}`;

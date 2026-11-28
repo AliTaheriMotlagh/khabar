@@ -34,7 +34,7 @@ export function tapAudio(): AudioContext | null {
 // ---------- usage counts for the owner's page (server/live.js `ev:<day>`) ----------
 // What readers use (listen, share, make a video…): counted here and sent with the next presence beat, so counting never
 // costs a request of its own. No ids, no text: a name from a fixed list and a number.
-export const EVENTS = ['listen', 'playlist', 'share', 'save', 'video-made-v', 'video-made-h', 'video-made-s', 'video-shared', 'quiz-right', 'quiz-wrong', 'push-on', 'install', 'term', 'simple', 'today', 'week-listen', 'brief60', 'ad-view', 'ad-click', 'lang-en', 'investigate', 'calendar'] as const;
+export const EVENTS = ['listen', 'playlist', 'share', 'save', 'video-made-v', 'video-made-h', 'video-made-s', 'video-shared', 'quiz-right', 'quiz-wrong', 'push-on', 'install', 'term', 'simple', 'today', 'week-listen', 'brief60', 'ad-view', 'ad-click', 'lang-en', 'investigate', 'calendar', 'film-published', 'cinema'] as const;
 export type EventName = (typeof EVENTS)[number];
 export function track(name: EventName) {
   const ev = store.get<Record<string, number>>('ev', {});
