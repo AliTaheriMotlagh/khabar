@@ -12,7 +12,7 @@
   "site": "FxTwitter · anthropic.com",
   "title": "Anthropic (@AnthropicAI)",
   "description": "We recently migrated our Messages API from Python to Rust.\nOn our engineering blog, we share how we used the existing service to verify the new one, with teams of Claude agents tracking down and fixing differences between the two versions.\nhttps://www.…",
-  "image": "https://cdn4.telesco.pe/file/veRNUSntij8_hRFFwHLy5mEoMQJf0Hqi3DjbBzNX46bjee5ZE5BZJh9EZL6wBgYdyj-TT1X4gJGmNMCdj6HWV3AXihPpqVOtLYhr2ecgiMvIaxNyMxH-Vok1ILPYVtUO_UWo9TjvNOgPxC2qPt5F3MJytsJHgZ9ZNr2a1h3HwF8K-j8fZUFq347QrsKrC8GmKvOV2aAJXonP9gSPPYNJdjvb6nMjNY-Dv5Pyn1J3NLItRMGHQ7S11afLxUE7M1Z9GBnaoN0HMRi0Rf3FI5yxYsGxUZXjP9B0_7QAoFQnt0YNBo91kpTRFD4MVK57QU3s0hEuZCg_DkKLV_NiyjzarQ.jpg",
+  "image": "https://cdn4.telesco.pe/file/UYycUuegS-tblCO0LI2PMrVdLXkvH45KQFXJhBpp3qxpQ9a0iRMCvUIcZO5GHWm5K7hKRn6K0kWsBiiaFltg7u0J1eu1i5uArkgkP0TbbATnxHeEdcGy4B3tiCHalego5yO9Wk0U9TDsaz2AIIduTCwng8b3zyfLWKO6aq0IZNTVnvlQkZwQp9mGxOtkG-28cAbBQ8j8YfXxyoXiYG5QUp267gIJq1OuGsQrQ1UTlp10x-5v3LKlFCFNpcteIjXYexh-JPbAbc77LgY71xsFQ-D09AC5-rIWTJjgDEg8xPEqiUISvsSO-CygMPIKbDV4aOKR8l0zUMTqSCS5we9pqw.jpg",
   "small": true
  },
  "gholam": {
@@ -133,5 +133,5 @@
    "آنتروپیک"
   ]
  },
- "updated": "2026-11-28T12:54:30+00:00"
+ "updated": "2026-11-28T19:04:43+00:00"
 }
