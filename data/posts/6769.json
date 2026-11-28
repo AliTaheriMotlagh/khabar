@@ -18,56 +18,6 @@
   "text": "رفیق، یه کاربر توی ایکس یه تیکه از نوشتهٔ جک کلارک، هم‌بنیان‌گذار آنتروپیک، رو به اشتراک گذاشته و نوشته به نظرش دیگه رسماً وارد «تکینگی» شدیم.\nتوی تصویر این پست، کلارک فهرست الهام‌بخش‌های داستان جدیدش رو نوشته که شامل «تکینگی که همین الان هم شروع شده» و رشد علم هوش مصنوعیه.\nکلارک توی همین برش می‌گه با زیاد شدن مقاله‌های ریاضیِ ماشینی توی امسال، ممکنه آدم‌ها برای فهمیدنشون ده‌ها یا صدها برابرِ زمانی که ماشین صرف تولیدشون کرده وقت بذارن؛ به‌نقل از نویسندهٔ پست هم توی این داستان، بشر برای سردرآوردن از کشف‌های پرسرعت هوش مصنوعی یه رشتهٔ تازه نیاز پیدا می‌کنه.\nالبته متن کامل خودِ نوشتهٔ کلارک اینجا در دسترس نیست که جزئیات بیشترش رو ببینیم، ولی فعلاً این‌طور که پیداست هوش مصنوعی انقدر تندتند مشق می‌نویسه که ما به خوندن و تصحیحش هم نمی‌رسیم! 😅",
   "date": "2026-11-27T21:04:24+00:00"
  },
- "links": [
-  {
-   "kind": "tweet",
-   "url": "https://x.com/kimmonismus/status/2126400704235618815",
-   "domain": "x.com",
-   "author": {
-    "name": "Chubby♨️",
-    "handle": "kimmonismus",
-    "avatar": "https://pbs.twimg.com/profile_images/1728327996375719936/RW7VBJfD_200x200.jpg"
-   },
-   "text": "Holy Its official, Anthropic co-founder Jack Clark: \"The singularity which has already begun.\". There is no denial anymore.\n\nWe are officially in the singularity. \n\nHe lists it as one of the inspirations for his new story. In it, AI makes scientific discoveries so fast that humans need a whole new field, Machine Hermeneutics, just to understand what the machines found.\n\nOn this year's AI math papers, he says we may spend tens or hundreds of times longer understanding them than the machines took to write them.\n\nWhen the people building it say we're already in it, I'd take it seriously.",
-   "date": 1795808409,
-   "media": [
-    {
-     "type": "image",
-     "src": "https://pbs.twimg.com/media/HYJ-HdBW4AA84yQ.jpg?name=orig",
-     "ratio": 0.4017
-    }
-   ],
-   "links": [],
-   "quote": {
-    "author": {
-     "name": "Jack Clark",
-     "handle": "jackclarkSF",
-     "avatar": "https://pbs.twimg.com/profile_images/726446881547517952/ULhSTKxN_200x200.jpg"
-    },
-    "text": "https://x.com/i/article/2126379730517864448",
-    "date": 1795803611,
-    "media": [],
-    "links": [
-     "https://x.com/i/article/2126379730517864448"
-    ]
-   }
-  }
- ],
- "article": {
-  "title": "یه کاربر توی ایکس یه تیکه از نوشتهٔ جک کلارک، هم‌بنیان‌گذار آنتروپیک، رو به اشتراک گذاشته و نوشته به نظرش دیگه رسماً وارد «تکینگی» شدیم",
-  "source_title": "Holy Its official, Anthropic co-founder Jack Clark: \"The singularity which has already begun.\". There is no denial anymore.",
-  "body": [
-   "یه کاربر توی ایکس یه تیکه از نوشتهٔ جک کلارک، هم‌بنیان‌گذار آنتروپیک، رو به اشتراک گذاشته و نوشته به نظرش دیگه رسماً وارد «تکینگی» شدیم.",
-   "توی تصویر این پست، کلارک فهرست الهام‌بخش‌های داستان جدیدش رو نوشته که شامل «تکینگی که همین الان هم شروع شده» و رشد علم هوش مصنوعیه.",
-   "کلارک توی همین برش می‌گه با زیاد شدن مقاله‌های ریاضیِ ماشینی توی امسال، ممکنه آدم‌ها برای فهمیدنشون ده‌ها یا صدها برابرِ زمانی که ماشین صرف تولیدشون کرده وقت بذارن؛ به‌نقل از نویسندهٔ پست هم توی این داستان، بشر برای سردرآوردن از کشف‌های پرسرعت هوش مصنوعی یه رشتهٔ تازه نیاز پیدا می‌کنه.",
-   "البته متن کامل خودِ نوشتهٔ کلارک اینجا در دسترس نیست که جزئیات بیشترش رو ببینیم، ولی فعلاً این‌طور که پیداست هوش مصنوعی انقدر تندتند مشق می‌نویسه که ما به خوندن و تصحیحش هم نمی‌رسیم! 😅"
-  ],
-  "why": null,
-  "tags": [
-   "آنتروپیک"
-  ]
- },
- "updated": "2026-11-27T21:07:14+00:00",
  "ai": {
   "title": "جک کلارک هم‌بنیان‌گذار آنتروپیک: تکینگی هوش مصنوعی همین الان شروع شده",
   "short": "جک کلارک: تکینگی شروع شد",
@@ -136,5 +86,55 @@
    "v": 2,
    "src": "bd484afe1c82"
   }
- }
+ },
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/kimmonismus/status/2126400704235618815",
+   "domain": "x.com",
+   "author": {
+    "name": "Chubby♨️",
+    "handle": "kimmonismus",
+    "avatar": "https://pbs.twimg.com/profile_images/1728327996375719936/RW7VBJfD_200x200.jpg"
+   },
+   "text": "Holy Its official, Anthropic co-founder Jack Clark: \"The singularity which has already begun.\". There is no denial anymore.\n\nWe are officially in the singularity. \n\nHe lists it as one of the inspirations for his new story. In it, AI makes scientific discoveries so fast that humans need a whole new field, Machine Hermeneutics, just to understand what the machines found.\n\nOn this year's AI math papers, he says we may spend tens or hundreds of times longer understanding them than the machines took to write them.\n\nWhen the people building it say we're already in it, I'd take it seriously.",
+   "date": 1795808409,
+   "media": [
+    {
+     "type": "image",
+     "src": "https://pbs.twimg.com/media/HYJ-HdBW4AA84yQ.jpg?name=orig",
+     "ratio": 0.4017
+    }
+   ],
+   "links": [],
+   "quote": {
+    "author": {
+     "name": "Jack Clark",
+     "handle": "jackclarkSF",
+     "avatar": "https://pbs.twimg.com/profile_images/726446881547517952/ULhSTKxN_200x200.jpg"
+    },
+    "text": "https://x.com/i/article/2126379730517864448",
+    "date": 1795803611,
+    "media": [],
+    "links": [
+     "https://x.com/i/article/2126379730517864448"
+    ]
+   }
+  }
+ ],
+ "article": {
+  "title": "یه کاربر توی ایکس یه تیکه از نوشتهٔ جک کلارک، هم‌بنیان‌گذار آنتروپیک، رو به اشتراک گذاشته و نوشته به نظرش دیگه رسماً وارد «تکینگی» شدیم",
+  "source_title": "Holy Its official, Anthropic co-founder Jack Clark: \"The singularity which has already begun.\". There is no denial anymore.",
+  "body": [
+   "یه کاربر توی ایکس یه تیکه از نوشتهٔ جک کلارک، هم‌بنیان‌گذار آنتروپیک، رو به اشتراک گذاشته و نوشته به نظرش دیگه رسماً وارد «تکینگی» شدیم.",
+   "توی تصویر این پست، کلارک فهرست الهام‌بخش‌های داستان جدیدش رو نوشته که شامل «تکینگی که همین الان هم شروع شده» و رشد علم هوش مصنوعیه.",
+   "کلارک توی همین برش می‌گه با زیاد شدن مقاله‌های ریاضیِ ماشینی توی امسال، ممکنه آدم‌ها برای فهمیدنشون ده‌ها یا صدها برابرِ زمانی که ماشین صرف تولیدشون کرده وقت بذارن؛ به‌نقل از نویسندهٔ پست هم توی این داستان، بشر برای سردرآوردن از کشف‌های پرسرعت هوش مصنوعی یه رشتهٔ تازه نیاز پیدا می‌کنه.",
+   "البته متن کامل خودِ نوشتهٔ کلارک اینجا در دسترس نیست که جزئیات بیشترش رو ببینیم، ولی فعلاً این‌طور که پیداست هوش مصنوعی انقدر تندتند مشق می‌نویسه که ما به خوندن و تصحیحش هم نمی‌رسیم! 😅"
+  ],
+  "why": null,
+  "tags": [
+   "آنتروپیک"
+  ]
+ },
+ "updated": "2026-11-28T04:58:25+00:00"
 }

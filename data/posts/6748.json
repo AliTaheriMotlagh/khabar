@@ -12,7 +12,7 @@
   "site": "🧵 Thread • FxTwitter",
   "title": "Chubby ♨️ (@kimmonismus)",
   "description": "Anthropic researchers used Claude to cut the Lean formalization of the Riemann Hypothesis and its generalization by roughly 99.56%. That’s more than 200× smaller.\n17.4 million lines of Lean down to 76,000.",
-  "image": "https://cdn4.telesco.pe/file/JHME6q33RlzdAzfjAI0FrrsLQ4rQ3JuJygNXIDmn28Q8vR4SAD7y9D3Y3CiPSan0Ke_tZkXX0VOff1JhmiUMo84Omgl-OhoXGIVRTP7LU29gO3HTu4d9tHhKrkMmYcBxjd3I2pp-bLe4q3MuRPMSGte9NHfVUAQwBFzQ78xaqoLOy9pX6dd3Kv7A8e1q8EKpM_dx_s9sIMrPIU3AtsS40qP15hNITSltSmtH1CflvRrSvrpdTKiZ4JiZRwZmgLMVoPXfHrVeygLl93rciNl7OlM06xa8eNDj-SBwMNP302tLQ0bUJtcMoaXAM9jLR-uDP90lk_sGppiIaWd8CsAznQ.jpg"
+  "image": "https://cdn4.telesco.pe/file/Bx-Qh3Hve6fhB-eX4yKO9p8SLLh23y2YqfldeM2iTQfbrJiV2vEDovx5iTm38dsJn_1xsFMcdA6_OTLQgdilB0F0lzypiWmzWpyBxM3TmOZ1137PtHkgzvf9QVp9VtxJ9VoRNz8KGga24c2l1wXmEMxF4_sCNzrF8KdkstAwkP8di3VF-LucoQU94nSRVZ_iLFnElPK2pSLTv1bZzeWfO_z8DAhootBh0aynk3vJ2uJgBtK53umDggMlit6Fj4KmdUQOl_23_CO7FuDNjD2d-YpD8GWPS9IDzPM03KB8XLgpsn19AkjmaHGYm7_cSWgS0efPSy4LHOIYvjKnYQVlQg.jpg"
  },
  "gholam": {
   "text": "رفیق، توی این پست، کاربر kimmonismus نوشته پژوهشگرای آنتروپیک با کمک هوش مصنوعی کلود، حجم کدِ Lean مربوط به صورت‌بندی فرضیه ریمان و حالت تعمیم‌یافته‌ش رو حدود ۹۹.۵۶ درصد (بیشتر از ۲۰۰ برابر) کم کردن؛ یه جورایی مثل این که یه طومارِ چندمیلیون‌خطی رو خلاصه کنی تو یه جزوهٔ جمع‌وجور. ✂️\n\n• طبق متن پست، تعداد خط‌های کد از ۱۷.۴ میلیون خط به حدود ۷۶ هزار خط رسیده.\n• خودِ لینک گیت‌هاب پروژه مستقیم باز نشد تا جزئیات داخلش رو ببینیم، اما توی اسکرین‌شاتِ صفحه توضیحات (README) اومده که این مخزن نسخهٔ کوتاه‌تر از یه اثبات در Lean 4 برای فرضیه ریمان و فرضیه تعمیم‌یافته ریمان برای توابع L دیریکله است که بر پایه کارِ لونت آلپوگه و با همکاری همکاران نویسنده در آنتروپیک و کلود تولید شده.\n• همین تصویر نشون می‌ده این کار یه «خروجی پژوهشی» هست که دیگه نگهداری نمی‌شه و مشارکت جدید هم نمی‌پذیره، روی کتابخونه Mathlib و فقط با سه اصل propext، Classical.choice و Quot.sound ساخته شده و دو نسخه داره: یه نسخه خواناتر با حدود ۳۰۰ هزار خط و یه نسخه فشرده برای همون پنج قضیه با حدود ۷۶ هزار خط.",
@@ -148,5 +148,5 @@
    "آنتروپیک"
   ]
  },
- "updated": "2026-11-27T20:50:27+00:00"
+ "updated": "2026-11-28T04:58:25+00:00"
 }

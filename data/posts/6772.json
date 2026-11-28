@@ -19,43 +19,6 @@
   "text": "رفقا، تیم مارکوف روبوتیکس (Markov Robotics) از یه سیستم جدید به اسم X-Ray رونمایی کرده که می‌خواد با یه دوربین تکیِ معمولی—حتی گوشی توی جیبت—ردیابی سه‌بعدیِ حرکت دربیاره تا به ربات‌ها یاد بده مثل آدم‌ها کار کنن 🤖. به گفته خودشون، این ابزار تو شرایط بد مثل نور کم، بخار، تار بودن تصویر، دستکش ضخیم یا وقتی دست‌ها کامل جلوی هم رو می‌گیرن هم کم نمیاره و بدون لرزش و با دقت میلی‌متری کار می‌کنه؛ طوری که دیگه لازم نیست برای این کار، استودیوی چند هزار دلاری علم کنی. این تیم ادعا می‌کنه نرخ دورریز داده‌هاش تو عمل زیر ۱ درصده و قراره به‌زودی قابلیت‌هایی مثل مدل کامل بدن، تشخیص لمس، تخمین نیرو و توضیحات متنی هم زیر یه API واحد بهش اضافه بشه. البته ویدیوهای نمونه‌اش اینجا در دسترس نبود تا عملکردش رو به چشم ببینیم، ولی فعلاً دسترسی زودهنگامش رو برای پژوهشگرها و همکارای منتخب باز گذاشتن و گفتن ویدیوهای سختتون رو بفرستید تا براتون تست و برچسب‌گذاری کنن.",
   "date": "2026-11-28T02:21:07+00:00"
  },
- "links": [
-  {
-   "kind": "tweet",
-   "url": "https://x.com/markovrobotics/status/2126389768267419793",
-   "domain": "x.com",
-   "author": {
-    "name": "Markov Robotics",
-    "handle": "markovrobotics",
-    "avatar": "https://pbs.twimg.com/profile_images/2103020233233686528/tmQZc2xi_200x200.jpg"
-   },
-   "text": "Hello X-Ray! Turn any egocentric video from any monocular camera into 3D pose that never fails.\n\nIt tracks under full occlusion, has no jitter, rivals stereo depth estimation, mm accurate, and works in the worst of conditions.\n\nIt's really good, have a look:",
-   "date": 1795805801,
-   "media": [
-    {
-     "type": "video",
-     "src": "https://video.twimg.com/amplify_video/2126380683325292544/vid/avc1/1280x720/4GX9aG1BIRo-uV89.mp4?tag=29",
-     "poster": "https://pbs.twimg.com/amplify_video_thumb/2126380683325292544/img/bbYHDarw_6zRGAYf.jpg",
-     "ratio": 0.5625,
-     "duration": 24.133,
-     "gif": false
-    }
-   ],
-   "links": []
-  }
- ],
- "article": {
-  "title": "تیم مارکوف روبوتیکس (Markov Robotics) از یه سیستم جدید به اسم X-Ray رونمایی کرده که می‌خواد با یه دوربین تکیِ معمولی—حتی گوشی توی جیبت—ردیابی سه‌بعدیِ حرکت دربیاره تا به ربات‌ها یاد بده مثل آدم‌ها کار کنن 🤖",
-  "source_title": "Hello X-Ray! Turn any egocentric video from any monocular camera into 3D pose that never fails.",
-  "body": [
-   "تیم مارکوف روبوتیکس (Markov Robotics) از یه سیستم جدید به اسم X-Ray رونمایی کرده که می‌خواد با یه دوربین تکیِ معمولی—حتی گوشی توی جیبت—ردیابی سه‌بعدیِ حرکت دربیاره تا به ربات‌ها یاد بده مثل آدم‌ها کار کنن 🤖. به گفته خودشون، این ابزار تو شرایط بد مثل نور کم، بخار، تار بودن تصویر، دستکش ضخیم یا وقتی دست‌ها کامل جلوی هم رو می‌گیرن هم کم نمیاره و بدون لرزش و با دقت میلی‌متری کار می‌کنه؛ طوری که دیگه لازم نیست برای این کار، استودیوی چند هزار دلاری علم کنی. این تیم ادعا می‌کنه نرخ دورریز داده‌هاش تو عمل زیر ۱ درصده و قراره به‌زودی قابلیت‌هایی مثل مدل کامل بدن، تشخیص لمس، تخمین نیرو و توضیحات متنی هم زیر یه API واحد بهش اضافه بشه. البته ویدیوهای نمونه‌اش اینجا در دسترس نبود تا عملکردش رو به چشم ببینیم، ولی فعلاً دسترسی زودهنگامش رو برای پژوهشگرها و همکارای منتخب باز گذاشتن و گفتن ویدیوهای سختتون رو بفرستید تا براتون تست و برچسب‌گذاری کنن."
-  ],
-  "why": null,
-  "tags": [
-   "رباتیک"
-  ]
- },
- "updated": "2026-11-28T02:24:25+00:00",
  "ai": {
   "title": "مارکوف روبوتیکس سیستم X-Ray را آورد: ردیابی سه‌بعدی با یک دوربین معمولی",
   "short": "سیستم X-Ray مارکوف",
@@ -132,5 +95,42 @@
    "src": "d1be45d4ed5e",
    "added": 2
   }
- }
+ },
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/markovrobotics/status/2126389768267419793",
+   "domain": "x.com",
+   "author": {
+    "name": "Markov Robotics",
+    "handle": "markovrobotics",
+    "avatar": "https://pbs.twimg.com/profile_images/2103020233233686528/tmQZc2xi_200x200.jpg"
+   },
+   "text": "Hello X-Ray! Turn any egocentric video from any monocular camera into 3D pose that never fails.\n\nIt tracks under full occlusion, has no jitter, rivals stereo depth estimation, mm accurate, and works in the worst of conditions.\n\nIt's really good, have a look:",
+   "date": 1795805801,
+   "media": [
+    {
+     "type": "video",
+     "src": "https://video.twimg.com/amplify_video/2126380683325292544/vid/avc1/1280x720/4GX9aG1BIRo-uV89.mp4?tag=29",
+     "poster": "https://pbs.twimg.com/amplify_video_thumb/2126380683325292544/img/bbYHDarw_6zRGAYf.jpg",
+     "ratio": 0.5625,
+     "duration": 24.133,
+     "gif": false
+    }
+   ],
+   "links": []
+  }
+ ],
+ "article": {
+  "title": "تیم مارکوف روبوتیکس (Markov Robotics) از یه سیستم جدید به اسم X-Ray رونمایی کرده که می‌خواد با یه دوربین تکیِ معمولی—حتی گوشی توی جیبت—ردیابی سه‌بعدیِ حرکت دربیاره تا به ربات‌ها یاد بده مثل آدم‌ها کار کنن 🤖",
+  "source_title": "Hello X-Ray! Turn any egocentric video from any monocular camera into 3D pose that never fails.",
+  "body": [
+   "تیم مارکوف روبوتیکس (Markov Robotics) از یه سیستم جدید به اسم X-Ray رونمایی کرده که می‌خواد با یه دوربین تکیِ معمولی—حتی گوشی توی جیبت—ردیابی سه‌بعدیِ حرکت دربیاره تا به ربات‌ها یاد بده مثل آدم‌ها کار کنن 🤖. به گفته خودشون، این ابزار تو شرایط بد مثل نور کم، بخار، تار بودن تصویر، دستکش ضخیم یا وقتی دست‌ها کامل جلوی هم رو می‌گیرن هم کم نمیاره و بدون لرزش و با دقت میلی‌متری کار می‌کنه؛ طوری که دیگه لازم نیست برای این کار، استودیوی چند هزار دلاری علم کنی. این تیم ادعا می‌کنه نرخ دورریز داده‌هاش تو عمل زیر ۱ درصده و قراره به‌زودی قابلیت‌هایی مثل مدل کامل بدن، تشخیص لمس، تخمین نیرو و توضیحات متنی هم زیر یه API واحد بهش اضافه بشه. البته ویدیوهای نمونه‌اش اینجا در دسترس نبود تا عملکردش رو به چشم ببینیم، ولی فعلاً دسترسی زودهنگامش رو برای پژوهشگرها و همکارای منتخب باز گذاشتن و گفتن ویدیوهای سختتون رو بفرستید تا براتون تست و برچسب‌گذاری کنن."
+  ],
+  "why": null,
+  "tags": [
+   "رباتیک"
+  ]
+ },
+ "updated": "2026-11-28T04:58:25+00:00"
 }

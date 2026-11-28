@@ -12,7 +12,7 @@
   "site": "🧵 Thread • FxTwitter",
   "title": "Ahmed Heakl (@ahmedmm72234641)",
   "description": "Today we introduce Looped Weight-Space Programming!\n🚀\nWe asked Claude Opus 5.5 to solve hard mazes. It got only 26% right.\nThen we asked it to write a transformer that solves them, setting every weight directly.\nIt took just 39 minutes and $19. No training.…",
-  "image": "https://cdn4.telesco.pe/file/JJonFAKvxbL_78lMZj5RnLIBeNbZwgOHgH1CQdDqdXujrTWX1CkTXbHhgi0MSsW81VoKXd0Zt33aXNOCULzIDRt8wqZyyZdU3ANyZD7dfSicjjIZiY4ON0pntz8R2aAc1zxnoyyx3hJ2tgDg8Li-aAsJpMG97I1R7Tj2dAn85fohUAkYIVyiUA0j56qPgVioJdX3TjE9asQVw-sC8QY5fxWbIXjwil-yJ9aZ_DLfnH9haCgsJXAdIyr7DW00uewr_zvGXi4s-uh8C2Qi73VPsDRqaQlKDEioOIognfgTk9MqwspGC9qKbM4PSDTAXzCaGK76w4vNUkoY2u8JIKCNqA.jpg"
+  "image": "https://cdn4.telesco.pe/file/sfb4yedsM16nc1XHDHKx1TEFnVdMXMiha3f9_uJ0VEa_uboc7eO88525vaX6m63MpXS_HVzn0LKl8Agcwbq9McGkA_GRk5LG9q-64jtat3O_72bQ8cUa6wvwXT-NhnUBLvd46lzLx0cxiWJUXQur4KNIt2sD-775jDcmyG6QRfCAjjS0g5BqPJYbgxx8M53e20wUGsnBVS8DTg8Px5Cg3z1_U0MY89VfSCAI47p3rv2A-QgnsTt1pMPSEr-2OlYsyhSKM1pDw9k0Zb4k_Hw1Db4kMeFHedhXjp4_x6BOmYkhkLDIPTLN8ySmpAB8GRCUo8sb7-2sxJeqUx7x3pZsFw.jpg"
  },
  "gholam": {
   "text": "سلام رفیق، یه پژوهش تازه از تیم MBZUAI Oryx منتشر شده به اسم «برنامه‌نویسی حلقه‌ای در فضای وزن‌ها»؛ داستانش اینه که وقتی از مدل Claude Opus 5.5 خواستن مازهای سخت رو مستقیم حل کنه فقط ۲۶ درصد درست جواب داد، ولی وقتی بهش گفتن به جاش یه ترنسفورمر کوچیک طراحی کنه و تمام وزن‌هاش رو خودش دستی بنویسه، بدون هیچ آموزشی یه مدل ساخت که به گفته خودشون ۱۰۰ درصد مازهای تست رو حل کرد. 🤖\n\nمثل این می‌مونه که نتونی یه مسیر پیچیده رو تو ذهنت حساب کنی، ولی یه چرخ‌دنده ساده بسازی که یک کار تکراری رو انقدر توی حلقه بچرخونه تا به درِ خروج برسه؛ اینجا هم یه بلوک کوچیک هی تکرار می‌شه و هر دور یک قدم مسیر رو جلو می‌بره.\n\n• به گزارش پژوهشگرها، ساخت این مدل ماز ۳۹ دقیقه و حدود ۱۹ دلار هزینه داشته و حتی نسخه ۹۲۸ وزنی‌ش هم صددرصد مازهای تست (تا ابعاد ۱۰۰ در ۱۰۰) رو حل کرده؛ در حالی که آموزشِ همین معماری با روش معمول صفر درصد جواب داده و مدل‌های آموزش‌دیده مثل LDT با حدود ۱۹۰۰ برابر وزن بیشتر به ۹۹.۸ درصد و EBR در آزمایش‌های این تیم به ۹۳.۵ درصد رسیدن.\n• توی آزمایش برج هانوی هم، کلود ظرف ۲۷ دقیقه و با حدود ۵ دلار یه مدل ۳۶۸۶ وزنی نوشته که پازل ۲۰ دیسکی (بیش از یک میلیون حرکت) رو بی‌غلط می‌ره؛ در حالی که تو نمودار گزارش، مدل‌های استدلالی دوروبر ۷ تا ۸ دیسک کم می‌آرن. این تیم می‌گه روی سودوکو و چند تست سخت دیگه هم به ۱۰۰ درصد رسیده.\n• نکته مهم دیگه‌ای که توی وبلاگشون روش تاکید کردن شفافیت مدله؛ چون وزن‌ها به جای جعبه سیاهِ آموزش، دستی چیده شدن، می‌شه قدم‌به‌قدم حالت‌های میانی‌ش رو خوند و دقیق فهمید چطور به جواب می‌رسه.",
@@ -146,5 +146,5 @@
    "آنتروپیک"
   ]
  },
- "updated": "2026-11-27T20:50:28+00:00"
+ "updated": "2026-11-28T04:58:26+00:00"
 }

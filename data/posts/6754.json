@@ -12,7 +12,7 @@
   "site": "🧵 Thread • FxTwitter",
   "title": "modaic.dev (@modaicdev)",
   "description": "We profiled Jev's latency across 9,984 prompts to find its backbone.\nOur answer: Qwen3.5-35B-A3B, an MoE\n> Qwen's tokenizer tracks Jev's latency better than Jev's own token counts\n> While self-identifying, Jev rejects DeepSeek and Gemma, but favors Qwen…",
-  "image": "https://cdn4.telesco.pe/file/gEcocDNKJEmyPjpC9aSEsGfCvWGmidHfGCdwKRA-7k2HiCidn8LD6H6WMm0mxk_saBz1pVvuP0Kq6mcudMAkF1HPTwM3ZMLnT0RTx6UP8SdgqgrtDm-Qt2WGBs0418t54mNURUvq_ybymWDoJMv7-Q7tiUCuCo1Nk6KI3EzFYFLHPXQyVYC1uve1l9PVKsdYrUQrPl511ReDWAAwTiR3PEWm46rKYi6DIoRbDOsf0EXuOe5IQ_CkQ40hRpD3yrR31cle-Co4pzELTk_fKOGk9rezr0bqAvMfW8mJ_UpmnwQmrj1hxlHzbLlGtrnDFnXTzz7iBRNlsfDeASXVWzDpcA.jpg"
+  "image": "https://cdn4.telesco.pe/file/TH6OzMjZ8v-tLUQVUjEf8f6A9i2yqWdoyNmWEVLSSQpaVQCDkH6tIYl--wxPuoLXNcHXjQYzRIaTb9IhhJz8R8jxYtNq7W9VCtNqdHTycqC-3x2_iisq3ndYZrIIYE3NCan4Cjfiot9jr5zgFrteqDySbdzXXDemMj6SJi1_JuFGuu3jD8C2J-pn5ovXrSjF3-oIzW7apr-dzbHQntQiADIu63Iz20VQiqEqEnFW-W0aRzVcC8Oh8g6in6IovP-z35tLLo369x_HVCAyJQGBSPeVppV1N9MVvDiNOkJGXdUohLd40OM69HdSWFPu8-xZhW6nWWah9NF5s0A43uQ7tQ.jpg"
  },
  "gholam": {
   "text": "رفقا، تیم Modaic یه کارآگاه‌بازی حسابی راه انداخته تا از روی شتاب و سرعت، بفهمه زیر کاپوت مدل سریع «Jev» (ساخت شرکت TypeSafe) چه موتوری کار می‌کنه؛ چون خود شرکت مدل پایه و حتی تعداد واقعی توکن‌های ورودی رو پنهان می‌کنه. اونا بعد از تست روی ۹,۹۸۴ تا پرامپت می‌گن به احتمال زیاد پایه این مدل، نسخه Qwen3.5-35B-A3B با معماری سریع و کم‌مصرف MoE هست. 🔍\n\n• تو پرس‌وجوهای هویتی، مدل با قاطعیت DeepSeek و Gemma رو رد کرده و بیشتر جواب نداده، اما وقتی غیرمستقیم ازش پرسیدن «دوست داری بگی چه مدلی هستی؟» تو ۷۴ درصد مواقع به Qwen اشاره کرده.\n• طبق نمودار آزمایش‌ها، زمان تأخیر Jev با توکن‌شمار Qwen همبستگی بیشتری (۰.۸۰۵) داشته تا با عددی که خود API مدل گزارش می‌ده (۰.۷۱۹)؛ البته آمار Gemma هم خیلی نزدیک بوده، ولی چون مدل قبلاً ردش کرده بود، از گزینه‌ها خط خورده.\n• به گفته این تیم، نرخ پردازش (throughput) مدل هم از همه بیشتر شبیه همون Qwen3.5-35B-A3B بوده.\n\nالبته خود Modaic هم با احتیاط می‌گه اینا سرنخه و قطعی نیست، ولی توصیه‌شون به کسایی که مدل‌های تصمیم‌گیر (System One) می‌سازن اینه که به جای تکیه صرف روی بهینه‌سازی اجرای مدل، رو انتخاب مدل پایه درست حساب باز کنن.",
@@ -152,5 +152,5 @@
    "چین"
   ]
  },
- "updated": "2026-11-27T20:50:27+00:00"
+ "updated": "2026-11-28T04:58:25+00:00"
 }
