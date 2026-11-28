@@ -160,6 +160,8 @@ if (fs.existsSync('dist/weekly')) {
       const { p, errors } = await page(path);
       const btn = p.locator(path === '/week/' ? '.recap [data-make-video]' : '.reader-bar [data-make-video]');
       if (!(await btn.count())) continue;
+      // The sheet opens on the reader's last choice (earlier checks saved one): with none, a film.
+      await p.evaluate(() => localStorage.removeItem('khabar:video-pref'));
       await btn.click();
       await p.waitForSelector('#video-sheet [data-vs-setup]:not([hidden]):not([data-state="loading"])', { timeout: 20000 });
       assert.ok(await p.locator('#video-sheet [data-vs-pick-mode="film"]').isVisible(), `${path}: a film`);

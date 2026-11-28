@@ -18,8 +18,8 @@ Tick items off here; move anything that becomes a lasting rule into CLAUDE.md.
   (fragments like «کوانتومی کردن گرانش»); the timeline wraps instead of squeezing; «ماجرای «ماجرای …»» fixed (every
   thread's name starts with «ماجرای»).
 - [x] SEO: R2 `films/index.json` → the story page's player + `VideoObject` (fa and en).
-- [ ] **Yours:** `MEDIA_KEY` is still not a GitHub secret (and `films.yml` has never run): set the same value on Cloudflare
-  Pages and GitHub, then dispatch `films`.
+- [x] `MEDIA_KEY` set (Cloudflare Pages production + GitHub, 2026-11-28). films/podcast/youtube install ffmpeg (gone from
+  GitHub's runner image: the first podcast run failed on it). Podcast 2026-11-27 published.
 
 ## Progress (2026-11-28, evening): films like a newscast, a setup before making, the cinema redesigned
 
