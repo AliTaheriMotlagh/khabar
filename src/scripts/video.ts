@@ -94,6 +94,8 @@ type Card = {
   clip?: { hook: string; points: string[]; why: string };
   /** An episode teaser's YouTube address, shown on the closing card instead of the story's (/videos/<id>/card.json). */
   link?: string; vid?: string;
+  /** The week's recap (/weekly/<week>/card.json): its lines are read by key from /weekly/<week>.json (server/tts.js). */
+  week?: string; weekKeys?: string[];
   /** The short film's shots (src/lib/posts.ts filmPlan, drawn by src/scripts/film.ts), the source's own video, and
    *  what a newscast shows around the story (status, ticker…). */
   film?: { src?: FilmSrc; clip?: FilmClipJson; meta?: FilmMeta; shots: FilmShotJson[] };
@@ -246,12 +248,53 @@ function shownWords(l: Line, said: Word[]): Word[] {
   // A shown word no spoken word landed on (rare): between its neighbours.
   return out.map((w, k) => w ?? { text: shown[k], from: out[k - 1]?.to ?? said[0].from, to: out[k - 1]?.to ?? said[0].from, br: false, hidden: false });
 }
-/** Shown words over the said ones' time, in proportion (when the two lists don't line up). */
+/** A word compared as said and as shown: no punctuation, no half-space, Arabic letters as Persian ones, digits as one. */
+const bare = (w: string) =>
+  w
+    .replace(/[\u200c\u200f\u200e«»"'()\[\].,،؛:!?؟…\-–—]/g, '')
+    .replace(/ي/g, 'ی')
+    .replace(/ك/g, 'ک')
+    .replace(/[۰-۹]/g, (d) => String('۰۱۲۳۴۵۶۷۸۹'.indexOf(d)))
+    .toLowerCase();
+/** Shown words timed from the said ones when the two lists don't line up word for word (a number said as words, a
+ *  sentence split differently): each shown word that's said as it's written takes that word's time (in order, a few
+ *  words ahead at most), and the rest share the time between their matched neighbours by length — so the lit word
+ *  stays on the voice instead of drifting across the line. */
 function spread(shown: string[], said: Word[]): Word[] {
-  const from = said[0]?.from ?? 0;
-  const to = said.at(-1)?.to ?? from;
-  const per = (to - from) / Math.max(1, shown.length);
-  return shown.map((text, k) => ({ text, from: from + k * per, to: from + (k + 1) * per, br: false, hidden: false }));
+  if (!said.length) return shown.map((text) => ({ text, from: 0, to: 0, br: false, hidden: false }));
+  const hit: (number | null)[] = shown.map(() => null);
+  let j = 0;
+  shown.forEach((w, k) => {
+    const b = bare(w);
+    if (!b) return;
+    for (let x = j; x < Math.min(said.length, j + 6); x++)
+      if (bare(said[x].text) === b) {
+        hit[k] = x;
+        j = x + 1;
+        return;
+      }
+  });
+  const out: Word[] = shown.map((text, k) => (hit[k] != null ? { text, from: said[hit[k]!].from, to: said[hit[k]!].to, br: false, hidden: false } : { text, from: 0, to: 0, br: false, hidden: false }));
+  // The unmatched runs: between the matched word before (or the line's start) and the one after (or its end).
+  for (let k = 0; k < shown.length; ) {
+    if (hit[k] != null) {
+      k++;
+      continue;
+    }
+    let e = k;
+    while (e < shown.length && hit[e] == null) e++;
+    const from = k > 0 ? out[k - 1].to : said[0].from;
+    const to = e < shown.length ? out[e].from : said.at(-1)!.to;
+    const len = shown.slice(k, e).reduce((n, w) => n + w.length + 1, 0);
+    let at = from;
+    for (let x = k; x < e; x++) {
+      const d = ((to - from) * (shown[x].length + 1)) / Math.max(1, len);
+      out[x] = { ...out[x], from: at, to: at + d };
+      at += d;
+    }
+    k = e;
+  }
+  return out;
 }
 
 // ---------- the short film (src/scripts/film.ts) ----------
@@ -261,6 +304,8 @@ function filmCard(card: Card): Card {
   const all = card.film!.shots.flatMap((s) => s.say);
   return { ...card, title: all[0] ?? card.title, body: all.slice(1), why: null };
 }
+/** The week's recap's line i (the film's and the video's lines are in the same order: title, intro, stories, outro). */
+const weekLine = (card: Card, i: number) => (card.weekKeys?.[i] ? `week=${card.week}&k=${card.weekKeys[i]}` : undefined);
 /** Each shot's first line's number among all the film's lines: kept when the reader leaves shots out. */
 const numbered = (shots: FilmShotJson[]) => {
   let n = 0;
@@ -292,6 +337,7 @@ async function buildFilm(card: Card, pics: Map<string, ImageBitmap | null>, engi
       data: shot.shot === 'points' ? { ...shot.data, items: shot.say } : shot.data,
       vid: !!shot.vid,
       clipAt: null,
+      ai: !!shot.ai,
     };
     if (shot.line != null) line = shot.line;
     t += shot.shot === 'hook' ? 0.3 : 0.6;
@@ -450,8 +496,14 @@ export function logo(ctx: CanvasRenderingContext2D, cx: number, cy: number, r: n
 }
 
 /** Lines of words fitting `width`, each word placed (x from the column's left edge). Right to left, with runs of
- *  English words (and the numbers between them, «Gemini 4 Argon») kept left to right, as the browser would show them. */
-export type Placed = { k: number; x: number; w: number; ltr: boolean };
+ *  English words kept left to right, as the browser would show them: a number goes with the English before it
+ *  («Mistral Large 4», «GPT 5», also at a row's end) or between two English words («Gemini 4 Argon»), and a word is
+ *  English by its letters, whatever punctuation is stuck to it («OpenAI،», «(beta)», «Claude»). `dir` is how to draw
+ *  the word itself: right to left when Persian punctuation or quotes are stuck to an English word, so they land on the
+ *  side a Persian reader expects; left to right otherwise («C++», «v1.2»). */
+export type Placed = { k: number; x: number; w: number; ltr: boolean; dir: CanvasDirection };
+const EDGE = /^[«»"'()\[\]{}،؛:؟!.,…]+|[«»"'()\[\]{}،؛:؟!.,…]+$/g;
+const NUMBER = /^[0-9][0-9.,%+\-/×x]*$/;
 export function layout(ctx: CanvasRenderingContext2D, ws: Word[], width: number): Placed[][] {
   const space = ctx.measureText(' ').width;
   const rows: number[][] = [];
@@ -470,8 +522,11 @@ export function layout(ctx: CanvasRenderingContext2D, ws: Word[], width: number)
   });
   if (row.length) rows.push(row);
   return rows.map((r) => {
-    const dir = r.map((k) => (isLatin(ws[k].text) ? 'l' : /^[0-9.,%+-]+$/.test(ws[k].text) ? '?' : 'r'));
-    dir.forEach((d, i) => d === '?' && (dir[i] = dir[i - 1] === 'l' && dir.slice(i + 1).find((x) => x !== '?') === 'l' ? 'l' : 'r'));
+    const core = r.map((k) => ws[k].text.replace(EDGE, ''));
+    const dir: string[] = core.map((c) => (isLatin(c) ? 'l' : NUMBER.test(c) ? '?' : 'r'));
+    // A number after English is English (Unicode's rule W7); one after Persian is placed as Persian.
+    let strong = 'r';
+    dir.forEach((d, i) => (d === '?' ? (dir[i] = strong) : (strong = d)));
     const out: Placed[] = [];
     let cursor = width;
     for (let i = 0; i < r.length; ) {
@@ -482,11 +537,12 @@ export function layout(ctx: CanvasRenderingContext2D, ws: Word[], width: number)
       let x = dir[i] === 'l' ? cursor - rw : cursor;
       for (const it of run) {
         if (dir[i] === 'l') {
-          out.push({ ...it, x, ltr: true });
+          const text = ws[it.k].text;
+          out.push({ ...it, x, ltr: true, dir: text !== text.replace(EDGE, '') && /[«»،؛؟]/.test(text) ? 'rtl' : 'ltr' });
           x += it.w + space;
         } else {
           x -= it.w;
-          out.push({ ...it, x, ltr: false });
+          out.push({ ...it, x, ltr: false, dir: 'rtl' });
           x -= space;
         }
       }
@@ -738,7 +794,7 @@ function painter(ctx: CanvasRenderingContext2D, v: Video) {
         // Said words white; the ones to come dim, brightening as they're reached.
         const ahead = 0.34 + 0.2 * ease(1 - (w.from - t) / 0.4);
         ctx.fillStyle = s.silent || said ? '#fff' : now ? INK : `rgb(255 255 255 / ${ahead.toFixed(3)})`;
-        ctx.direction = it.ltr ? 'ltr' : 'rtl';
+        ctx.direction = it.dir;
         ctx.fillText(w.text, x, y + rise);
         if (pop !== 1) ctx.restore();
       }
@@ -967,7 +1023,7 @@ function painter(ctx: CanvasRenderingContext2D, v: Video) {
     ctx.fillText(SITE.name, W / 2, 352);
     ctx.fillStyle = 'rgb(255 255 255 / .75)';
     ctx.font = `500 28px ${FONT}`;
-    ctx.fillText(card.link ? 'ویدیوی کامل در یوتیوب:' : digest ? 'همه‌ی خبرها با منبع:' : 'متن کامل و منبع این خبر:', W / 2, 428);
+    ctx.fillText(card.vid ? 'ویدیوی کامل در یوتیوب:' : digest || card.week ? 'همه‌ی خبرها با منبع:' : 'متن کامل و منبع این خبر:', W / 2, 428);
     ctx.direction = 'ltr';
     ctx.fillStyle = YELLOW;
     ctx.font = `700 32px ${FONT}`;
@@ -1186,20 +1242,29 @@ function preview(v: Pick<Video, 'total'>, stop: AbortSignal, make: (ctx: CanvasR
 const KEPT = 'video-v1';
 const KEEP = 6;
 const keptUrl = (key: string) => `${location.origin}${BASE}/__video/${encodeURIComponent(key)}`;
-async function kept(key: string): Promise<Blob | null> {
+/** A video made here before (its length and, for a film, its cover: what publishing it sends along). */
+async function kept(key: string): Promise<{ blob: Blob; seconds: number; cover: Blob | null } | null> {
   try {
-    const hit = await (await caches.open(KEPT)).match(keptUrl(key));
-    return hit ? await hit.blob() : null;
+    const c = await caches.open(KEPT);
+    const hit = await c.match(keptUrl(key));
+    if (!hit) return null;
+    const cover = await c.match(keptUrl(`${key} cover`));
+    return { blob: await hit.blob(), seconds: Number(hit.headers.get('X-Seconds')) || 0, cover: cover ? await cover.blob() : null };
   } catch {
     return null;
   }
 }
-async function keep(key: string, blob: Blob, seconds: number) {
+async function keep(key: string, blob: Blob, seconds: number, cover: Blob | null) {
   try {
     const c = await caches.open(KEPT);
     await c.put(keptUrl(key), new Response(blob, { headers: { 'Content-Type': blob.type, 'X-Seconds': String(seconds) } }));
-    const keys = await c.keys();
-    for (const k of keys.slice(0, Math.max(0, keys.length - KEEP))) await c.delete(k);
+    if (cover) await c.put(keptUrl(`${key} cover`), new Response(cover, { headers: { 'Content-Type': cover.type } }));
+    // The newest KEEP videos, with their covers.
+    const keys = (await c.keys()).filter((r) => !decodeURIComponent(r.url).endsWith(' cover'));
+    for (const k of keys.slice(0, Math.max(0, keys.length - KEEP))) {
+      await c.delete(k);
+      await c.delete(`${k.url}${encodeURIComponent(' cover')}`);
+    }
   } catch {}
 }
 /** What the reader picks before a video is made (the sheet's setup): its shape and kind; for a film, the parts left out
@@ -1218,8 +1283,14 @@ const choice = (o?: Choice): Picked => {
     look: { ...LOOK, ...pref.look, ...o?.look },
   };
 };
-/** A film made with every part and the whole look: the one that may be published for everyone. */
-const standard = (c: Picked) => !c.off.length && Object.values(c.look).every(Boolean);
+/** A film made with every part this story has and the whole look its shape shows: the one that may be published for
+ *  everyone. Parts the story doesn't have and the ticker a reel never shows don't count (the reader's choices are kept
+ *  across stories and shapes: a quiz left out once, or the ticker turned off in landscape, must not block a reel). */
+const standard = (c: Picked, card: Card, F: typeof import('./film')) => {
+  const parts = F.filmParts(card.film?.shots ?? [], !!card.film?.clip).map((p) => p.key);
+  const ticker = c.shape !== 'v' && !!card.film?.meta?.ticker.length;
+  return !c.off.some((k) => parts.includes(k)) && Object.entries(c.look).every(([k, on]) => on || (k === 'ticker' && !ticker));
+};
 type Step = 'pics' | 'voice' | 'frames' | 'ready';
 const STEPS: Step[] = ['pics', 'voice', 'frames', 'ready'];
 const cards = new Map<string, Promise<Card>>();
@@ -1267,7 +1338,7 @@ export async function setupVideo(href: string, opts?: Choice, watchPublished = t
     return d.close();
   }
   const F = await import('./film');
-  if (watchPublished && card.film?.shots.length && sel.mode === 'film') {
+  if (watchPublished && card.id && card.film?.shots.length && sel.mode === 'film') {
     const pub = await publicFilm(card.id, sel.shape);
     if (pub) {
       made = { key: `${href} pub ${sel.shape}`, show: done.bind(null, card, pub, 0, false, href, sel, true, null) };
@@ -1280,7 +1351,7 @@ export async function setupVideo(href: string, opts?: Choice, watchPublished = t
   pic.style.backgroundImage = card.cover ? `url("${card.cover}")` : '';
   pic.classList.toggle('has-clip', !!card.film?.clip);
   $('[data-vs-hero-kicker]', setup)!.textContent = [card.film?.meta?.type ?? card.tag, card.source].filter(Boolean).join(' · ');
-  $('[data-vs-hero-title]', setup)!.textContent = card.short ?? card.title;
+  $('[data-vs-hero-title]', setup)!.textContent = card.title;
   const has = (m: Mode) => (m === 'film' ? !!card.film?.shots.length : m === 'short' ? !!card.clip || card.kind === 'digest' : true);
   if (!has(sel.mode)) sel.mode = has('film') ? 'film' : 'full';
   // Shapes and kinds.
@@ -1302,7 +1373,7 @@ export async function setupVideo(href: string, opts?: Choice, watchPublished = t
   }
   // A film's parts: only those this story has (the lead and the hook are always in).
   const shots = card.film?.shots ?? [];
-  const present = F.FILM_PARTS.filter((p) => (p.key === 'footage' ? !!card.film?.clip : shots.some((s, i) => i > 1 && p.shots.includes(s.shot)) || (p.key === 'source' && shots[1]?.shot === 'source')));
+  const present = F.filmParts(shots, !!card.film?.clip);
   const parts = $('[data-vs-parts]', setup)!;
   parts.innerHTML = '';
   for (const p of present) {
@@ -1470,7 +1541,7 @@ export async function makeVideo(href: string, ac: AudioContext | null = null, as
     if (made?.key === key) return made.show();
     const hit = await kept(key);
     if (hit) {
-      made = { key, show: done.bind(null, full, hit, 0, !engine, href, { ...want, mode }, true, null) };
+      made = { key, show: done.bind(null, full, hit.blob, hit.seconds, !engine, href, { ...want, mode }, true, hit.cover) };
       return made.show();
     }
     let made1: { blob: Blob; total: number; silent: boolean; card: Card; cover: Blob | null };
@@ -1496,9 +1567,9 @@ export async function makeVideo(href: string, ac: AudioContext | null = null, as
       if (clip && !footage) note.textContent = 'ویدیوی خود خبر در دسترس نبود؛ فیلم با تصویرهای خبر ساخته می‌شود.';
       const pics = new Map([...wanted.keys()].map((k, i) => [k, list[i]]));
       if (stop.aborted) return;
-      const lines = lineMaker(fc, (i) => `id=${full.id}&k=film&n=${i}`);
+      const lines = lineMaker(fc, (i) => (full.week ? weekLine(full, i) : `id=${full.id}&k=film&n=${i}`));
       const shell = (b: Awaited<ReturnType<typeof buildFilm>>): FilmVideo => {
-        const v: FilmVideo = { ...b, nat: [], src: full.film!.src ?? null, avatar, id: full.id, date: full.date, title: full.short ?? full.title, meta: full.film!.meta ?? null, footage, opts: look };
+        const v: FilmVideo = { ...b, nat: [], src: full.film!.src ?? null, avatar, id: full.id, date: full.date, title: full.title, meta: full.film!.meta ?? null, footage, opts: look, kind: full.kind, link: full.link };
         placeClip(v, footage);
         return v;
       };
@@ -1537,7 +1608,7 @@ export async function makeVideo(href: string, ac: AudioContext | null = null, as
     } else {
     const card = short?.card ?? full;
     $('[data-vs-skel]', stage)!.textContent = card.title;
-    const src = short?.src ?? ((i: number) => (full.vid ? `vid=${full.vid}&i=${i}` : undefined));
+    const src = short?.src ?? ((i: number) => (full.vid ? `vid=${full.vid}&i=${i}` : full.week ? weekLine(full, i) : undefined));
     useShape(want.shape);
     INTRO = mode === 'short' ? 0 : FULL_INTRO;
     await Promise.all([800, 500, 900].map((w) => document.fonts.load(`${w} 40px ${FONT}`))).catch(() => {});
@@ -1581,7 +1652,7 @@ export async function makeVideo(href: string, ac: AudioContext | null = null, as
     }
     const { blob, total } = made1;
     track(`video-made-${want.shape}`);
-    void keep(key, blob, total);
+    void keep(key, blob, total, made1.cover);
     made = { key, show: done.bind(null, full, blob, total, made1.silent, href, { ...want, mode }, false, made1.cover) };
     made.show();
     step('ready');
@@ -1657,20 +1728,21 @@ function publishRow(card: Card, blob: Blob, sel: Picked, silent: boolean, second
   row.hidden = true;
   if (sel.mode !== 'film' || silent || !card.id || !blob.type.includes('mp4')) return;
   const shape = sel.shape;
-  void fetch(`${BASE}/media/films/?ids=${card.id}`)
-    .then((r) => (r.ok ? r.json() : null))
-    .then((have: Record<string, string[]> | null) => {
+  void Promise.all([fetch(`${BASE}/media/films/?ids=${card.id}`).then((r) => (r.ok ? r.json() : null)), import('./film')])
+    .then(([have, F]: [Record<string, string[]> | null, typeof import('./film')]) => {
       if (!have) return;
       const published = have[card.id]?.includes(shape);
+      const whole = standard(sel, card, F);
       row.hidden = false;
-      btn.hidden = !!published || !standard(sel);
+      btn.hidden = !!published || !whole;
       text.textContent = published
         ? 'این فیلم برای همه منتشر شده است: در صفحه‌ی خبر و «سینمای خبر» دیده می‌شود.'
-        : standard(sel)
+        : whole
           ? 'هنوز کسی فیلم این خبر را منتشر نکرده: با انتشار، همه آن را می‌بینند.'
           : 'فیلمی که همه‌ی بخش‌ها را دارد منتشر می‌شود؛ این نسخه‌ی شخصی شماست.';
       btn.onclick = async () => {
         btn.disabled = true;
+        text.textContent = `در حال فرستادن فیلم (${fmtNum(Math.max(0.1, Math.round(blob.size / 1e5) / 10))} مگابایت)…`;
         const res = await fetch(filmUrl(card.id, shape), { method: 'POST', headers: { 'content-type': 'video/mp4', ...(seconds && { 'x-seconds': String(seconds) }) }, body: blob }).catch(() => null);
         if ((res?.status === 201 || res?.status === 409) && cover)
           await fetch(filmUrl(card.id, shape).replace(/\.mp4$/, '.jpg'), { method: 'POST', headers: { 'content-type': 'image/jpeg' }, body: cover }).catch(() => null);
@@ -1679,7 +1751,11 @@ function publishRow(card: Card, blob: Blob, sel: Picked, silent: boolean, second
           btn.hidden = true;
           text.textContent = 'منتشر شد ✓ حالا همه این فیلم را در صفحه‌ی خبر و «سینمای خبر» می‌بینند.';
           track('film-published');
-        } else toast(res?.status === 429 ? 'کمی بعد دوباره امتحان کنید' : 'انتشار ممکن نشد');
+        } else {
+          const why: Record<number, string> = { 429: 'امروز از این دستگاه زیاد فیلم منتشر شده؛ کمی بعد دوباره امتحان کنید.', 413: 'این فیلم برای انتشار بزرگ است.', 415: 'این فایل MP4 نیست؛ مرورگر دیگری امتحان کنید.', 404: 'این خبر روی سایت پیدا نشد.', 501: 'انتشار فیلم فعلاً روی سایت فعال نیست.' };
+          text.textContent = why[res?.status ?? 0] ?? 'انتشار ممکن نشد: اتصال را بررسی کنید و دوباره امتحان کنید.';
+          toast('انتشار ممکن نشد');
+        }
       };
     })
     .catch(() => {});

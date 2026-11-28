@@ -17,6 +17,7 @@ import StatusChip from '../../components/StatusChip.astro';
 import AdSlot from '../../components/AdSlot.astro';
 import { enOf } from '../../lib/en';
 import { hasWhoPage } from '../../lib/who';
+import { filmOf } from '../../lib/films';
 
 export function getStaticPaths() {
   // Previous/next walk the listed feed; an unlisted (English-only) page has none.
@@ -45,6 +46,8 @@ const words = count([...a.body, a.why ?? ''].join(' ')) || count(a.title);
 const mentions = (post.entities ?? []).map((e) => ({ '@type': e.kind === 'person' ? 'Person' : e.kind === 'company' ? 'Organization' : 'Thing', name: e.name_en, alternateName: e.name_fa, ...(hasWhoPage(e.slug) && { url: abs(`who/${e.slug}/`) }) }));
 // X's video addresses are stable (Telegram's are signed and expire), so only those are offered to search as a video.
 const video = post.gallery.find((m) => m.type === 'video' && !m.gif && m.src && /^https:\/\/video\.twimg\.com\//.test(m.src));
+// The story's film, when one is published for everyone (src/lib/films.ts: the build reads R2's index once).
+const film = post.listed ? await filmOf(post.id) : null;
 const isoDuration = (d: unknown) => {
   const n = typeof d === 'number' ? d : typeof d === 'string' && /^\d+:\d{2}$/.test(d) ? d.split(':').reduce((t, x) => t * 60 + Number(x), 0) : 0;
   return n > 0 ? `PT${Math.round(n)}S` : undefined;
@@ -75,17 +78,36 @@ const jsonLd = [
     publisher: { '@id': `${SITE.url}/#org` },
     isBasedOn: post.source?.url ?? post.url,
     sameAs: post.url,
-    ...(video && {
-      video: {
-        '@type': 'VideoObject',
-        name: a.title.slice(0, 110),
-        description,
-        thumbnailUrl: [sized(video.poster, 'large') || coverSrc || abs('og.png')],
-        uploadDate: post.date,
-        contentUrl: video.src,
-        duration: isoDuration(video.duration),
-        inLanguage: 'fa-IR',
-      },
+    ...((video || film) && {
+      video: [
+        // The site's own film of the story first (it's on this page), then the source's video.
+        ...(film
+          ? [{
+              '@type': 'VideoObject',
+              name: `فیلم خبر: ${a.title}`.slice(0, 110),
+              description,
+              thumbnailUrl: [film.cover || coverSrc || abs('og.png')],
+              uploadDate: film.at,
+              contentUrl: film.mp4,
+              embedUrl: `${shareUrl}#story-film`,
+              duration: isoDuration(film.sec),
+              inLanguage: 'fa-IR',
+              publisher: { '@id': `${SITE.url}/#org` },
+            }]
+          : []),
+        ...(video
+          ? [{
+              '@type': 'VideoObject',
+              name: a.title.slice(0, 110),
+              description,
+              thumbnailUrl: [sized(video.poster, 'large') || coverSrc || abs('og.png')],
+              uploadDate: post.date,
+              contentUrl: video.src,
+              duration: isoDuration(video.duration),
+              inLanguage: 'fa-IR',
+            }]
+          : []),
+      ],
     }),
   },
   {
@@ -151,6 +173,14 @@ const jsonLd = [
         <div class="article-media"><Media items={[{ type: 'image', src: coverSrc }]} alt={a.title} fallbackHref={post.url} size="large" eager /></div>
       )}
       {coverSrc && <meta data-pagefind-meta={`image:${coverSrc}`} />}
+      {
+        film && (
+          <figure class="story-film" id="story-film" data-shape={film.shape} data-pagefind-ignore>
+            <video controls preload="none" playsinline src={film.mp4} poster={film.cover || coverSrc || undefined} aria-label={`فیلم خبر: ${a.title}`}></video>
+            <figcaption><Icon name="film" /> فیلم این خبر{film.sec ? ` · ${faNum(Math.round(film.sec))} ثانیه` : ''} · <a href={url(`cinema/#${post.id}`)}>در سینمای خبر</a></figcaption>
+          </figure>
+        )
+      }
 
       {
         post.kind === 'digest' ? (

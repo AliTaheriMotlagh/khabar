@@ -7,7 +7,7 @@ const calls = [];
 globalThis.fetch = async (url, init) => {
   calls.push({ url: String(url), init });
   if (String(url).endsWith('/p/7/card.json')) return new Response(JSON.stringify(card));
-  if (String(url).endsWith('/p/18/card.json')) return new Response(JSON.stringify({ title: 'مدل GPT-5 آمد', body: ['OpenAI گفت'], why: null, lex: { 'GPT-5': 'جی پی تی پنج', OpenAI: 'اوپن اِی آی' }, clip: { hook: 'قلاب', points: ['یک', 'دو', 'سه'], why: 'چرا' } }));
+  if (String(url).endsWith('/p/18/card.json')) return new Response(JSON.stringify({ title: 'مدل GPT-5 آمد', body: ['OpenAI گفت'], why: null, lex: { 'GPT-5': 'جی پی تی پنج', OpenAI: 'اوپن اِی آی' }, clip: { hook: 'قلاب', points: ['یک', 'دو', 'سه'], why: 'چرا' }, film: { shots: [{ shot: 'hook', say: ['مدل GPT-5 آمد'] }, { shot: 'picture', say: ['خط دوم'] }, { shot: 'quiz', say: ['سؤال', 'جواب: OpenAI'] }] } }));
   if (String(url).endsWith('/daily/2026-11-18.json')) return new Response(JSON.stringify({ intro: 'صبح بخیر', links: { 7: 'برویم سراغ خبر' }, outro: 'خداحافظ' }));
   if (String(url).endsWith('/weekly/2026-11-20.json')) return new Response(JSON.stringify({ title: 'هفته', intro: 'شروع', items: [{ id: 7, line: 'اولی' }], outro: 'پایان' }));
   if (String(url).endsWith('/videos/7GNR3Ue7QFU/card.json')) return new Response(JSON.stringify({ title: 'تیزر', body: ['نکته'], why: 'ببینید' }));
@@ -54,6 +54,11 @@ test('tts: every line comes from the site\'s own files — spoken names, host li
   assert.equal(await at('?id=18&i=1'), 'اوپن اِی آی گفت');
   assert.equal(await at('?id=18&k=clip&n=0'), 'قلاب');
   assert.equal(await at('?id=18&k=clip&n=4'), 'چرا');
+  // A film's lines: every shot's in order (not paragraph 0 for each).
+  assert.equal(await at('?id=18&k=film&n=0'), 'مدل جی پی تی پنج آمد');
+  assert.equal(await at('?id=18&k=film&n=1'), 'خط دوم');
+  assert.equal(await at('?id=18&k=film&n=3'), 'جواب: اوپن اِی آی');
+  assert.equal(await at('?id=18&k=film&n=4'), '');
   assert.equal(await at('?day=2026-11-18&k=intro'), 'صبح بخیر');
   assert.equal(await at('?day=2026-11-18&k=7'), 'برویم سراغ خبر');
   assert.equal(await at('?day=2026-11-18&k=99'), '');
@@ -61,5 +66,5 @@ test('tts: every line comes from the site\'s own files — spoken names, host li
   assert.equal(await at('?week=2026-11-20&k=outro'), 'پایان');
   assert.equal(await at('?vid=7GNR3Ue7QFU&i=2'), 'ببینید');
   // Anything else is a bad request, never text from the request.
-  for (const bad of ['?day=x&k=intro', '?day=2026-11-18&k=<b>', '?week=2026-11-20&k=title2', '?vid=../../x&i=0', '?id=18&k=clip&n=9', '?id=abc&i=0']) assert.equal(await at(bad), null, bad);
+  for (const bad of ['?day=x&k=intro', '?day=2026-11-18&k=<b>', '?week=2026-11-20&k=title2', '?vid=../../x&i=0', '?id=18&k=clip&n=9', '?id=18&k=film&n=-1', '?id=18&k=film&n=x', '?id=abc&i=0']) assert.equal(await at(bad), null, bad);
 });

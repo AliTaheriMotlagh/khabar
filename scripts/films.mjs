@@ -36,7 +36,8 @@ async function todo() {
   else {
     const recent = await (await fetch(`${SITE}/recent.json`)).json();
     const since = Date.now() - HOURS * 3600_000;
-    ids = recent.posts.filter((p) => p.kind === 'story' && Date.parse(p.date) >= since).map((p) => p.id);
+    // The stories and the channel's 24-hour summary (a bulletin of its items: posts.ts roundupFilm).
+    ids = recent.posts.filter((p) => (p.kind === 'story' || p.kind === 'digest') && Date.parse(p.date) >= since).map((p) => p.id);
   }
   const have = ids.length ? await (await fetch(`${SITE}/media/films/?ids=${ids.join(',')}`)).json().catch(() => ({})) : {};
   const jobs = [];

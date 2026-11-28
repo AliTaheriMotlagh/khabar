@@ -154,6 +154,22 @@ await check('video: a story\'s «ویدیو» opens the setup — shape, kind, a
   await p.close();
 });
 
+if (fs.existsSync('dist/weekly')) {
+  await check('video: the week\'s recap and the 24-hour summary open the setup on a film (their own bulletin)', async () => {
+    for (const path of ['/week/', ...(fs.readdirSync('dist/p').filter((d) => fs.existsSync(`dist/p/${d}/card.json`) && JSON.parse(fs.readFileSync(`dist/p/${d}/card.json`, 'utf8')).kind === 'digest').slice(-1).map((d) => `/p/${d}/`))]) {
+      const { p, errors } = await page(path);
+      const btn = p.locator(path === '/week/' ? '.recap [data-make-video]' : '.reader-bar [data-make-video]');
+      if (!(await btn.count())) continue;
+      await btn.click();
+      await p.waitForSelector('#video-sheet [data-vs-setup]:not([hidden]):not([data-state="loading"])', { timeout: 20000 });
+      assert.ok(await p.locator('#video-sheet [data-vs-pick-mode="film"]').isVisible(), `${path}: a film`);
+      assert.equal(await p.locator('#video-sheet [data-vs-pick-mode="film"]').getAttribute('aria-checked'), 'true', `${path}: the film picked`);
+      assert.deepEqual(errors, []);
+      await p.close();
+    }
+  });
+}
+
 await check('English edition: the new pages are English, client text included, and the switch lands on the twin', async () => {
   for (const [en, fa] of [['/en/feeds/', '/feeds/'], ['/en/calendar/', '/calendar/'], ['/en/week/', '/week/'], ['/en/stats/', '/stats/'], ['/en/saved/', '/saved/']]) {
     const { p, errors } = await page(en);

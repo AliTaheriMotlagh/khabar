@@ -9,6 +9,10 @@
 //   POST /media/films/<id>-<shape>.jpg         the film's cover (its designed first frame, JPEG ≤ 600 KB), with the film or
 //                                              after it — only while the film is there; `x-seconds` on the film's POST is kept
 //   DELETE /media/films/<id>-<shape>.mp4       owner only (x-media-key = MEDIA_KEY)
+//   GET  /media/films/index.json               every published film: { "<id>": { "<shape>": { "sec": 74.2, "at": "<ISO>",
+//                                              "cover": true } } } — one R2 object, kept up to date by each publish and
+//                                              delete, so the site's build can list the films (JSON-LD, the story page's
+//                                              player) with a single read instead of a HEAD per story
 // A reader's upload is checked as far as a server can without watching it: an MP4 (its `ftyp` box), ≤ 40 MB, for a
 // story the site has, a few an hour per reader, and only where no film is published yet — the runner's (or the
 // owner's) replaces any. Each object keeps who made it (`by`), so the owner can find and remove a reader's.
@@ -21,6 +25,17 @@ const TYPES = { mp3: 'audio/mpeg', json: 'application/json; charset=utf-8', mp4:
 const COVER_MAX = 600 * 1024;
 const MAX = 40 * 1024 * 1024;
 const SHAPES = ['h', 'v', 's'];
+const INDEX = 'films/index.json';
+/** The index of published films, changed by `fn` (a read, a change, a write: publishing is rare, a lost race only
+ *  drops a film from the next build's list until the next publish). */
+async function reindex(env, fn) {
+  try {
+    const o = await env.MEDIA.get(INDEX);
+    const all = o ? await o.json() : {};
+    fn(all);
+    await env.MEDIA.put(INDEX, JSON.stringify(all), { httpMetadata: { contentType: 'application/json; charset=utf-8' } });
+  } catch {}
+}
 const json = (body, status = 200, extra = {}) =>
   new Response(JSON.stringify(body), { status, headers: { 'content-type': 'application/json; charset=utf-8', 'access-control-allow-origin': '*', ...extra } });
 
@@ -48,6 +63,12 @@ export async function onRequest(ctx) {
     const have = {};
     for (const h of heads) if (h) meta ? ((have[h[0]] ??= {})[h[1]] = h[2]) : (have[h[0]] ??= []).push(h[1]);
     return json(have, 200, { 'cache-control': 'public, max-age=30, s-maxage=60' });
+  }
+
+  if (path === INDEX) {
+    if (request.method !== 'GET' && request.method !== 'HEAD') return json({ error: 'method' }, 405);
+    const o = await env.MEDIA.get(INDEX);
+    return new Response(request.method === 'HEAD' ? null : (o?.body ?? '{}'), { headers: { 'content-type': 'application/json; charset=utf-8', 'access-control-allow-origin': '*', 'cache-control': 'public, max-age=60, s-maxage=120' } });
   }
 
   const pod = path.match(POD);
@@ -89,6 +110,11 @@ export async function onRequest(ctx) {
     if (!owner) return json({ error: 'forbidden' }, 403);
     // A film goes with its cover.
     await env.MEDIA.delete(m?.[3] === 'mp4' ? [path, path.replace(/\.mp4$/, '.jpg')] : path);
+    if (m) await reindex(env, (all) => {
+      if (m[3] === 'mp4') delete all[m[1]]?.[m[2]];
+      else if (all[m[1]]?.[m[2]]) all[m[1]][m[2]].cover = false;
+      if (all[m[1]] && !Object.keys(all[m[1]]).length) delete all[m[1]];
+    });
     return json({ ok: true });
   }
 
@@ -115,6 +141,7 @@ export async function onRequest(ctx) {
     if (body.length !== size || body[0] !== 0xff || body[1] !== 0xd8) return json({ error: 'not a jpeg' }, 415);
     await env.MEDIA.put(path, body, { httpMetadata: { contentType: 'image/jpeg' }, customMetadata: { by: owner ? 'runner' : 'reader', at: new Date().toISOString() } });
     await caches.default.delete(new Request(`${url.origin}/media/${path}`)).catch(() => {});
+    await reindex(env, (all) => all[m[1]]?.[m[2]] && (all[m[1]][m[2]].cover = true));
     return json({ ok: true, url: `/media/${path}` }, 201);
   }
 
@@ -133,15 +160,15 @@ export async function onRequest(ctx) {
     if (body.length !== size || body.length < 1024) return json({ error: 'size' }, 400);
     // An MP4 starts with its `ftyp` box.
     if (String.fromCharCode(...body.subarray(4, 8)) !== 'ftyp') return json({ error: 'not an mp4' }, 415);
+    const at = new Date().toISOString();
+    const sec = Number(request.headers.get('x-seconds')) > 0 ? Math.round(Number(request.headers.get('x-seconds')) * 10) / 10 : null;
     await env.MEDIA.put(path, body, {
       httpMetadata: { contentType: 'video/mp4' },
-      customMetadata: {
-        by: owner ? request.headers.get('x-made-by') || 'runner' : 'reader',
-        at: new Date().toISOString(),
-        ...(Number(request.headers.get('x-seconds')) > 0 && { sec: String(Math.round(Number(request.headers.get('x-seconds')) * 10) / 10) }),
-      },
+      customMetadata: { by: owner ? request.headers.get('x-made-by') || 'runner' : 'reader', at, ...(sec && { sec: String(sec) }) },
     });
     await caches.default.delete(new Request(`${url.origin}/media/${path}`)).catch(() => {});
+    // A replaced film's old cover no longer matches it: kept only if the uploader sends a new one.
+    await reindex(env, (all) => ((all[m[1]] ??= {})[m[2]] = { sec, at, cover: !!all[m[1]]?.[m[2]]?.cover && !owner }));
     return json({ ok: true, url: `/media/${path}` }, 201);
   }
   return json({ error: 'method' }, 405);

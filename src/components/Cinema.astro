@@ -6,14 +6,16 @@
 // three Tehran days, the week's most important); which films exist, how long, with which cover, is asked once on the
 // page. The English twin lists the stories with an English page, by their English headline (the films are Persian).
 import Icon from './Icon.astro';
-import { faDate, getStories, picture, url } from '../lib/posts';
+import { faDate, getPosts, getStories, picture, url } from '../lib/posts';
 import { enDate, enOf, TYPE_EN } from '../lib/en';
 import { SITE } from '../site';
 
 interface Props { lang?: 'fa' | 'en' }
 const en = (Astro.props.lang ?? 'fa') === 'en';
 const day = (iso: string) => new Date(iso).toLocaleDateString('en-CA', { timeZone: SITE.timeZone });
-const stories = getStories().filter((p) => p.kind === 'story' && (!en || enOf(p.id)));
+// The Persian cinema also runs the channel's 24-hour summary, a bulletin of its own (posts.ts roundupFilm), first in its day.
+const digests = en ? [] : getPosts().filter((p) => p.kind === 'digest' && p.listed);
+const stories = [...getStories().filter((p) => p.kind === 'story' && (!en || enOf(p.id))), ...digests].sort((a, b) => b.id - a.id);
 const STATUS_FA: Record<string, string> = { 'رسمی': 'رسمی', 'گزارش': 'به گزارش رسانه‌ها', 'شایعه': 'تأییدنشده' };
 const STATUS_EN: Record<string, string> = { 'رسمی': 'Official', 'گزارش': 'Reported', 'شایعه': 'Unconfirmed' };
 const item = (p: (typeof stories)[number]) => {
@@ -27,8 +29,8 @@ const item = (p: (typeof stories)[number]) => {
     date: p.date,
     thumb: p.cover ? picture(p.cover.src || p.cover.poster, 'small').src : '',
     pic: p.cover ? picture(p.cover.src || p.cover.poster, 'medium').src : '',
-    imp: p.importance ?? 0,
-    type: p.type ? (en ? (TYPE_EN[p.type] ?? p.type) : p.type) : null,
+    imp: p.kind === 'digest' ? 9 : (p.importance ?? 0),
+    type: p.kind === 'digest' ? 'خلاصه‌ی ۲۴ ساعت' : p.type ? (en ? (TYPE_EN[p.type] ?? p.type) : p.type) : null,
     status: p.status ? (en ? STATUS_EN[p.status] : STATUS_FA[p.status]) : null,
     clip: p.gallery.some((m) => m.type === 'video'),
   };
@@ -47,7 +49,7 @@ for (const p of stories) {
 // A day's bulletin: the most important first, then the newest.
 for (const d of days) d.items.sort((a, b) => b.imp - a.imp || b.id - a.id);
 const weekFrom = Date.now() - 7 * 864e5;
-const week = stories.filter((p) => Date.parse(p.date) >= weekFrom).map(item).sort((a, b) => b.imp - a.imp || b.id - a.id).slice(0, 16);
+const week = stories.filter((p) => p.kind === 'story' && Date.parse(p.date) >= weekFrom).map(item).sort((a, b) => b.imp - a.imp || b.id - a.id).slice(0, 16);
 const lists = [
   ...days.map((d, i) => ({ key: d.key, label: i === 0 ? (en ? `Today · ${d.label}` : `امروز · ${d.label}`) : d.label, items: d.items })),
   { key: 'week', label: en ? 'Best of the week' : 'برترین‌های هفته', items: week },

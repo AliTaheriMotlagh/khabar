@@ -11,6 +11,7 @@ import { SITE } from '../../../site';
 import { abs, pic, picture, sized, url } from '../../../lib/posts';
 import { shortUrl, translateUrl } from '../../../lib/source';
 import { EN, enDate, enRelated, enTopicHref, getEn, type EnPost } from '../../../lib/en';
+import { filmOf } from '../../../lib/films';
 
 export function getStaticPaths() {
   const all = getEn();
@@ -26,6 +27,8 @@ const rel = enRelated(e);
 const tr = e.lang !== 'en' ? translateUrl(e.body.join(' '))?.replace('tl=fa', 'tl=en') ?? null : null;
 const mentions = p.entities.map((x) => ({ '@type': x.kind === 'person' ? 'Person' : x.kind === 'company' ? 'Organization' : 'Thing', name: x.name_en }));
 const words = (e.body.join(' ') + ' ' + (e.quote?.text ?? '')).split(/\s+/).filter(Boolean).length;
+// The story's film, when one is published (narrated in Persian: src/lib/films.ts).
+const film = await filmOf(e.id);
 const jsonLd = [
   {
     '@context': 'https://schema.org',
@@ -50,6 +53,19 @@ const jsonLd = [
     publisher: { '@id': `${SITE.url}/#org` },
     isBasedOn: e.sourceUrl,
     workTranslation: { '@type': 'NewsArticle', inLanguage: 'fa-IR', url: abs(`p/${e.id}/`) },
+    ...(film && {
+      video: {
+        '@type': 'VideoObject',
+        name: `News film: ${e.title}`.slice(0, 110),
+        description,
+        thumbnailUrl: [film.cover || coverSrc || abs('og.png')],
+        uploadDate: film.at,
+        contentUrl: film.mp4,
+        embedUrl: `${shareUrl}#story-film`,
+        ...(film.sec && { duration: `PT${Math.round(film.sec)}S` }),
+        inLanguage: 'fa-IR',
+      },
+    }),
   },
   {
     '@context': 'https://schema.org',
@@ -109,6 +125,14 @@ const jsonLd = [
 
       {p.gallery.length > 0 && <div class="article-media"><Media items={p.gallery} alt={e.title} fallbackHref={p.url} limit={12} size="large" eager lang="en" /></div>}
       {!p.gallery.length && coverSrc && <div class="article-media"><Media items={[{ type: 'image', src: coverSrc }]} alt={e.title} fallbackHref={p.url} size="large" eager lang="en" /></div>}
+      {
+        film && (
+          <figure class="story-film" id="story-film" data-shape={film.shape}>
+            <video controls preload="none" playsinline src={film.mp4} poster={film.cover || coverSrc || undefined} aria-label={`News film: ${e.title}`}></video>
+            <figcaption><Icon name="film" /> This story as a short film (in Persian){film.sec ? ` · ${Math.round(film.sec)} s` : ''} · <a href={url('en/cinema/')}>News cinema</a></figcaption>
+          </figure>
+        )
+      }
 
       <div class="prose" lang={e.lang} dir="auto">{e.body.map((t) => <p>{t}</p>)}</div>
       {

@@ -2157,3 +2157,10 @@ a.fchip.fchip-more { border-style: dashed; color: var(--accent); }
 .pod-line.who-g b { color: #b98a1d; }
 .pod-line.who-p b { color: #1f7a7a; }
 .pod-line.is-now { background: var(--accent-soft); }
+.recap-actions { display: flex; flex-wrap: wrap; gap: 8px; }
+/* A story's published film (src/lib/films.ts): its own shape, a reel no taller than the screen. */
+.story-film { margin: 0 0 18px; }
+.story-film video { display: block; width: 100%; border-radius: var(--radius); background: #000; aspect-ratio: 16 / 9; }
+.story-film[data-shape='s'] video { aspect-ratio: 1; max-width: 520px; margin-inline: auto; }
+.story-film[data-shape='v'] video { aspect-ratio: 9 / 16; max-height: 78vh; width: auto; margin-inline: auto; }
+.story-film figcaption { margin-top: 6px; font-size: 0.85rem; color: var(--muted); display: flex; align-items: center; gap: 6px; flex-wrap: wrap; }

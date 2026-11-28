@@ -478,7 +478,7 @@ export function videoPlan(p: Post): { title: boolean; chapters: VideoChapter[] }
  *  model's. Pictures as raw addresses (card.json.ts turns them into the relay's). Null for a digest or a story too thin
  *  for a film. */
 export type FilmShot = {
-  shot: 'hook' | 'source' | 'picture' | 'points' | 'explain' | 'term' | 'numbers' | 'context' | 'why' | 'quiz';
+  shot: 'hook' | 'source' | 'picture' | 'item' | 'points' | 'explain' | 'term' | 'numbers' | 'context' | 'why' | 'quiz';
   head?: string;
   say: string[];
   pics?: string[];
@@ -487,6 +487,8 @@ export type FilmShot = {
   data?: unknown;
   /** Over the source's own video (film.clip) while it lasts, its pictures after. */
   vid?: true;
+  /** Written by the model, not Gholam («به زبان ساده», a term's definition, the quiz): the film says so on screen. */
+  ai?: true;
 };
 export type FilmSource = { kind: 'tweet' | 'link' | 'youtube'; name: string; handle?: string; avatar?: string | null; text?: string; title?: string; site: string; date?: string | null };
 /** The source's own video for a film: the site's relay (server/clip.js), its still, length (s) and shape (h / w). */
@@ -507,7 +509,8 @@ function filmClip(p: Post): FilmClip | null {
   }
   return null;
 }
-/** The headlines a film's ticker runs: the stories published nearest to it (before and after), newest first. */
+/** The headlines a film's ticker runs: the stories published nearest to it (before and after), newest first — each
+ *  story's real headline whole (not the circles' few-word `short`, which reads as a fragment in a ticker). */
 let tickerList: { all: Post[]; at: Map<number, number> } | null = null;
 function filmTicker(p: Post, n = 6): string[] {
   if (!tickerList) {
@@ -521,15 +524,37 @@ function filmTicker(p: Post, n = 6): string[] {
     .slice(from, from + n + 1)
     .filter((x) => x.id !== p.id)
     .slice(0, n)
-    .map((x) => clip(x.short || x.article.title, 90));
+    .map((x) => clip(x.article.title, 160));
 }
 export function filmMeta(p: Post): FilmMeta {
   const names = [...new Set(p.entities.map((e) => e.name_en).filter((n) => n && /[A-Za-z]/.test(n) && n.length <= 24))].slice(0, 4);
   return { status: p.status, importance: p.importance, type: p.type, names, ticker: filmTicker(p) };
 }
 const speakOf = (s: string) => s.replace(/^\s*[•●▪\-–—*]\s*/, '').replace(/https?:\/\/\S+/g, '').trim();
-export function filmPlan(p: Post): { src: FilmSource | null; clip: FilmClip | null; meta: FilmMeta; shots: FilmShot[] } | null {
-  if (p.kind === 'digest' || !p.article.body.length) return null;
+export type FilmPlan = { src: FilmSource | null; clip: FilmClip | null; meta: FilmMeta; shots: FilmShot[] };
+/** A bulletin of several stories as a film — the channel's 24-hour summary, the week's recap: the headline over the
+ *  first story's picture, an opening line, then each story («خبر ۲ از ۷», shot `item`: always in, whatever parts the
+ *  reader left out) over its own pictures, a closing line. Every line is the summary's own text; the ticker runs the
+ *  stories' headlines. */
+export function roundupFilm(o: { kind: string; title: string; intro?: string | null; items: { say: string; id: number }[]; outro?: string | null; outroHead?: string }): FilmPlan | null {
+  const byId = new Map(getPosts().map((x) => [x.id, x]));
+  const items = o.items.filter((it) => it.say.trim()).slice(0, 12);
+  if (items.length < 2) return null;
+  const linked = items.map((it) => byId.get(it.id) ?? null);
+  const pics = linked.map((x) => (x ? stills(x, 2) : []));
+  const first = pics.find((x) => x.length) ?? [];
+  const shots: FilmShot[] = [{ shot: 'hook', head: o.kind, say: [o.title], pics: first.slice(0, 1) }];
+  if (o.intro?.trim()) shots.push({ shot: 'picture', say: [o.intro.trim()], pics: pics.flatMap((x) => x.slice(0, 1)).slice(1, 3) });
+  items.forEach((it, k) => shots.push({ shot: 'item', head: `خبر ${faNum(k + 1)} از ${faNum(items.length)}`, say: [it.say.trim()], pics: pics[k] }));
+  if (o.outro?.trim()) shots.push({ shot: 'why', head: o.outroHead ?? 'جمع‌بندی', say: [o.outro.trim()] });
+  const stories = linked.filter((x): x is Post => !!x);
+  const names = [...new Set(stories.flatMap((x) => x.entities.map((e) => e.name_en)).filter((n) => n && /[A-Za-z]/.test(n) && n.length <= 24))].slice(0, 6);
+  return { src: null, clip: null, meta: { status: null, importance: null, type: o.kind, names, ticker: stories.map((x) => clip(x.article.title, 160)).slice(0, 8) }, shots };
+}
+export function filmPlan(p: Post): FilmPlan | null {
+  // The 24-hour summary: a bulletin of its items (the number is the shot's heading, not said).
+  if (p.kind === 'digest') return roundupFilm({ kind: 'خلاصه‌ی ۲۴ ساعت', title: p.article.title, items: p.digestItems.map((it) => ({ say: speakOf(it.text), id: it.id })) });
+  if (!p.article.body.length) return null;
   const a = p.article;
   const pics = stills(p, 8);
   const footage = filmClip(p);
@@ -572,9 +597,9 @@ export function filmPlan(p: Post): { src: FilmSource | null; clip: FilmClip | nu
     k++;
   }
   if (!body.length) return null;
-  if (p.simple) shots.push({ shot: 'explain', head: 'به زبان ساده', say: [p.simple] });
+  if (p.simple) shots.push({ shot: 'explain', head: 'به زبان ساده', say: [p.simple], ai: true });
   const term = p.terms.find((t) => t.def && t.def.length < 200);
-  if (term) shots.push({ shot: 'term', head: 'یک اصطلاح', say: [`${term.term} یعنی ${term.def.replace(/[.؟!]+$/, '')}.`], data: { term: term.term, def: term.def } });
+  if (term) shots.push({ shot: 'term', head: 'یک اصطلاح', say: [`${term.term} یعنی ${term.def.replace(/[.؟!]+$/, '')}.`], data: { term: term.term, def: term.def }, ai: true });
   // Benchmark scores the text states (pipeline/ai_more.py tidy_models): bars, two said aloud.
   const bars = p.models.flatMap((m) => m.scores.map((s) => ({ model: m.name, bench: s.bench, value: parseFloat(s.value.replace(/[^\d.]/g, '')), label: s.value }))).filter((b) => Number.isFinite(b.value));
   if (bars.length >= 2) {
@@ -586,11 +611,11 @@ export function filmPlan(p: Post): { src: FilmSource | null; clip: FilmClip | nu
   if (t?.title) {
     const byId = new Map(getPosts().map((x) => [x.id, x]));
     const before = t.ids.filter((id) => id < p.id).slice(-3).map((id) => byId.get(id)).filter((x): x is Post => !!x);
-    if (before.length) shots.push({ shot: 'context', head: 'ماجرا تا اینجا', say: [`این خبر ادامه‌ی ماجرای «${t.title}» است.`], data: { items: before.map((x) => ({ date: x.date, title: x.short || x.article.title })) } });
+    if (before.length) shots.push({ shot: 'context', head: 'ماجرا تا اینجا', say: [`این خبر ادامه‌ی ماجرای «${t.title.replace(/^\s*ماجرای\s+/, '').replace(/[.،؛]+$/, '')}» است.`], data: { items: before.map((x) => ({ date: x.date, title: x.article.title })) } });
   }
   if (a.why) shots.push({ shot: 'why', head: whyLabel(a), say: [a.why] });
   const q = p.quiz;
-  if (q && q.options[q.answer]) shots.push({ shot: 'quiz', head: 'یک سؤال', say: [q.q, `جواب: ${q.options[q.answer]}`], pause: [0, 3], data: q });
+  if (q && q.options[q.answer]) shots.push({ shot: 'quiz', head: 'یک سؤال', say: [q.q, `جواب: ${q.options[q.answer]}`], pause: [0, 3], data: q, ai: true });
   // The source's own video under the hook and the story's first pictured shots, as a newscast runs its footage; the
   // film draws it while the clip lasts (src/scripts/film.ts), the pictures after.
   if (footage) shots.filter((s) => s.shot === 'hook' || s.shot === 'source' || s.shot === 'picture').slice(0, 3).forEach((s) => (s.vid = true));

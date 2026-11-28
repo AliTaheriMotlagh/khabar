@@ -1,6 +1,7 @@
 // GET /api/tts/?id=<post>&i=<paragraph> → MP3 of one paragraph of a story, read by a Persian neural voice.
 // GET /api/tts/?day=<YYYY-MM-DD>&k=intro|outro|<id> → one of the morning podcast's host lines (pipeline/daily.py).
 // GET /api/tts/?id=<post>&k=clip&n=<n> → a line of the story's 60-second video script; ?vid=<youtube id>&i=<n> → a teaser's.
+// GET /api/tts/?id=<post>&k=film&n=<n> → a line of the story's film (card.json `film`, every shot's lines in order).
 // GET /api/tts/?week=<YYYY-MM-DD>&k=title|intro|outro|<n> → a line of that week's recap (pipeline/daily.py --weekly).
 // Phones without a Persian system voice (every iPhone and iPad) listen through this.
 // Needs an Azure Speech resource (free tier: 500K characters a month): AZURE_SPEECH_KEY + AZURE_SPEECH_REGION,
@@ -48,6 +49,14 @@ export async function textOf(u) {
     return sayLine(([t?.title, ...(t?.body ?? []), t?.why].filter(Boolean)[n] ?? '').trim(), t?.lex).say;
   }
   const id = postId(u.searchParams.get('id'));
+  if (u.searchParams.get('k') === 'film') {
+    // A line of the story's (or the 24-hour summary's) film (card.json `film`: every shot's lines in order).
+    const n = Number(u.searchParams.get('n'));
+    if (!id || !Number.isInteger(n) || n < 0 || n > 80) return null;
+    const c = await source(u, `/p/${id}/card.json`);
+    const lines = (c?.film?.shots ?? []).flatMap((s) => s.say ?? []);
+    return sayLine((lines[n] ?? '').trim(), c?.lex).say;
+  }
   if (u.searchParams.get('k') === 'clip') {
     // The 60-second video's script (card.json `clip`: hook, three points, why).
     const n = Number(u.searchParams.get('n'));

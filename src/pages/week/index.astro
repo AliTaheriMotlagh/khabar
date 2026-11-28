@@ -25,7 +25,10 @@ const items = recap ? recap.items.map((it) => ({ ...it, p: byId.get(it.id) })).f
           <p>{recap.intro}</p>
           <ol>{items.map((it) => <li><a href={it.p!.href}>{it.p!.short}</a> {it.line}</li>)}</ol>
           {recap.outro && <p class="muted">{recap.outro}</p>}
-          <button class="btn sm" type="button" data-recap-play hidden><Icon name="headphones" /> <span data-recap-label>گوش دادن به مرور هفته</span></button>
+          <div class="recap-actions">
+            <button class="btn sm" type="button" data-recap-play hidden><Icon name="headphones" /> <span data-recap-label>گوش دادن به مرور هفته</span></button>
+            <button class="btn sm" type="button" data-make-video={url(`weekly/${recap.week}/`)} title="ویدیوی مرور هفته را روی همین دستگاه بسازید" hidden><Icon name="film" /> ویدیوی مرور هفته</button>
+          </div>
           <script type="application/json" data-recap-lines set:html={JSON.stringify([['title', recap.title], ['intro', recap.intro], ...recap.items.map((it, k) => [String(k), it.line]), ...(recap.outro ? [['outro', recap.outro]] : [])])} />
         </section>
       )

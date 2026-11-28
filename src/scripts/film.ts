@@ -18,8 +18,9 @@ import { SITE } from '../site';
 export type FilmSrc = { kind: string; name: string; handle?: string; avatar?: string[] | null; text?: string; title?: string; site: string; date?: string | null };
 export type FilmClipJson = { url: string; poster: string[] | null; dur: number | null; ratio: number | null };
 export type FilmMeta = { status: 'رسمی' | 'گزارش' | 'شایعه' | null; importance: number | null; type: string | null; names: string[]; ticker: string[] };
-export type FilmShotJson = { shot: string; head?: string; say: string[]; pics: string[][]; pause?: number[]; data?: any; vid?: true; /** The first line's number among all the film's lines (video.ts numbered). */ line?: number };
-export type FilmScene = { shot: string; head: string | null; words: Word[]; pics: ImageBitmap[]; from: number; to: number; lineAt: number[]; data?: any; vid: boolean; clipAt: number | null };
+export type FilmShotJson = { shot: string; head?: string; say: string[]; pics: string[][]; pause?: number[]; data?: any; vid?: true; ai?: true; /** The first line's number among all the film's lines (video.ts numbered). */ line?: number };
+/** `ai`: the shot's text is the model's, not Gholam's — labelled «به قلم هوش مصنوعی» on screen. */
+export type FilmScene = { shot: string; head: string | null; words: Word[]; pics: ImageBitmap[]; from: number; to: number; lineAt: number[]; data?: any; vid: boolean; clipAt: number | null; ai?: boolean };
 /** The reader's choices (the video sheet's setup): who presents (by the voice's gender), and what's drawn besides. */
 export type FilmOpts = { host: 'g' | 'p'; anchor: boolean; music: boolean; subs: boolean; ticker: boolean };
 export const FILM_OPTS: FilmOpts = { host: 'g', anchor: true, music: true, subs: true, ticker: true };
@@ -38,6 +39,9 @@ export type FilmVideo = {
   meta: FilmMeta | null;
   footage: Footage | null;
   opts: FilmOpts;
+  /** The card's kind (story, digest = the 24-hour summary, week = the week's recap) and its address when not /p/<id>. */
+  kind?: string;
+  link?: string;
 };
 
 /** The parts of a film a reader can leave out (the sheet's chips): the shot types, and the source's video. The hook
@@ -54,6 +58,11 @@ export const FILM_PARTS: { key: string; label: string; shots: string[] }[] = [
   { key: 'why', label: 'چرا مهمه؟', shots: ['why'] },
   { key: 'quiz', label: 'سؤال', shots: ['quiz'] },
 ];
+/** The parts this story's film has (the setup's chips): the source's video when it has one, a shot type when a shot
+ *  of it comes after the lead, «منبع اصلی» when the lead is the source's card. */
+export function filmParts(shots: FilmShotJson[], hasClip: boolean) {
+  return FILM_PARTS.filter((p) => (p.key === 'footage' ? hasClip : shots.some((s, i) => i > 1 && p.shots.includes(s.shot)) || (p.key === 'source' && shots[1]?.shot === 'source')));
+}
 /** The shots kept with these parts on (the lead — the first shot after the hook — always stays). */
 export function pickShots(shots: FilmShotJson[], parts: Set<string>): FilmShotJson[] {
   const lead = shots.findIndex((s, i) => i > 0 && (s.shot === 'source' || s.shot === 'picture'));
@@ -121,13 +130,14 @@ export function filmPainter(ctx: CanvasRenderingContext2D, W: number, H: number,
   const M = Math.round(56 * k);
   const { scenes, outro, total, opts } = v;
   const lv = levels(v.clips, 48000, total);
-  const link = `${SITE.url.replace(/^https:\/\//, '')}/p/${v.id}`;
+  const link = v.link ?? `${SITE.url.replace(/^https:\/\//, '')}/p/${v.id}`;
+  const roundup = v.kind === 'digest' || v.kind === 'week';
   const tickerItems = v.meta?.ticker ?? [];
   // The ticker runs along the bottom of a landscape or square film (a reel's bottom is the app's buttons).
   const TK = opts.ticker && !REEL && tickerItems.length ? Math.round(42 * k) : 0;
   const SUB = Math.round((REEL ? 46 : 34) * k);
   const SUB_W = W - 2 * M - (REEL ? 0 : 120 * k);
-  const SUB_Y = REEL ? H * 0.74 : H - 92 * k - TK;
+  const SUB_Y = REEL ? H * 0.765 : H - 92 * k - TK;
   const status = v.meta?.status ? STATUS[v.meta.status] : null;
 
   // ---------- once ----------
@@ -161,15 +171,39 @@ export function filmPainter(ctx: CanvasRenderingContext2D, W: number, H: number,
     soft.set(img, c);
     return c;
   };
+  // A footage frame's blur: one canvas, redrawn a few times a second (each decoded frame is a new canvas — kept in
+  // `soft`, every frame of the clip would stay in memory).
+  const live = { tiny: document.createElement('canvas'), out: document.createElement('canvas'), at: -1, src: null as Img | null };
+  live.tiny.width = Math.round(W / 36);
+  live.tiny.height = Math.round(H / 36);
+  live.out.width = Math.round(W / 4);
+  live.out.height = Math.round(H / 4);
+  const blurredFrame = (img: Img, t: number) => {
+    if (live.src && Math.abs(t - live.at) < 0.25) return live.out;
+    const tx = live.tiny.getContext('2d')!;
+    const s = Math.max(live.tiny.width / img.width, live.tiny.height / img.height);
+    tx.drawImage(img, (live.tiny.width - img.width * s) / 2, (live.tiny.height - img.height * s) / 2, img.width * s, img.height * s);
+    const ox = live.out.getContext('2d')!;
+    ox.imageSmoothingQuality = 'high';
+    ox.drawImage(live.tiny, 0, 0, live.out.width, live.out.height);
+    live.src = img;
+    live.at = t;
+    return live.out;
+  };
+  /** Where a reel puts a picture or video of another shape: a slot across the top, the words below it. */
+  const SLOT = { x: M * 0.5, y: H * 0.1, w: W - M, h: H * 0.34 };
+  type Box = { x: number; y: number; w: number; h: number };
   // The story's first picture, kept for the studio shots' backdrop.
   const keyPic = scenes.find((s) => s.pics.length)?.pics[0] ?? null;
 
-  // Subtitles: each line said is its own run of words (a word with `br` starts the next).
+  // Subtitles: each line said is its own run of words (a word with `br` starts the next), and so is each sentence of
+  // a long line — a caption never stops mid-sentence to show the next one's start.
   const runs = scenes.map((s) => {
     const out: [number, number][] = [];
     let start = 0;
     s.words.forEach((w, i) => {
-      if (w.br && i > start) {
+      const prev = s.words[i - 1];
+      if (i > start && (w.br || (i - start >= 5 && prev && /[.!?؟…]["»)]?$/.test(prev.text)))) {
         out.push([start, i]);
         start = i;
       }
@@ -250,7 +284,7 @@ export function filmPainter(ctx: CanvasRenderingContext2D, W: number, H: number,
     rows.slice(0, maxRows).forEach((row, r) => {
       for (const it of row) {
         ctx.fillStyle = color(it.k);
-        ctx.direction = it.ltr ? 'ltr' : 'rtl';
+        ctx.direction = it.dir;
         ctx.fillText(ws[it.k].text, x0 + it.x, y0 + r * lh);
       }
     });
@@ -286,28 +320,52 @@ export function filmPainter(ctx: CanvasRenderingContext2D, W: number, H: number,
     return w;
   }
 
+  /** «به قلم هوش مصنوعی», small at a card's bottom left: this text is the model's, not the story's writer's. */
+  function byModel(x: number, y: number) {
+    ctx.save();
+    ctx.font = `600 ${15 * k}px ${FONT}`;
+    ctx.direction = 'rtl';
+    ctx.textAlign = 'left';
+    ctx.fillStyle = 'rgb(255 255 255 / .55)';
+    ctx.fillText('✦ به قلم هوش مصنوعی', x, y);
+    ctx.restore();
+  }
+
   // ---------- backgrounds ----------
-  function picture(img: Img, n: number, local: number, span: number, still = false) {
+  /** A picture or a footage frame (`still`: the video moves by itself, the camera doesn't). Returns where it went when
+   *  it's boxed (the words go around it in a reel), null when it fills the frame. */
+  function picture(img: Img, n: number, local: number, span: number, still = false, t = 0): Box | null {
     // A slow push in, panning one way or the other by shot: the documentary's camera (footage barely moves: it moves).
     const p = Math.min(1, local / Math.max(1, span));
     const z = still ? 1.02 + 0.02 * p : 1.04 + 0.1 * p;
     const off = Math.abs(Math.log(img.width / img.height / (W / H)));
     if (off > 0.35) {
       // A chart, a screenshot or a video of the other shape: whole, over its own blur, never cropped mid-word.
-      ctx.drawImage(blurred(still && keyPic ? keyPic : img), -W * 0.05, -H * 0.05, W * 1.1, H * 1.1);
-      ctx.fillStyle = 'rgb(6 9 22 / .35)';
+      ctx.drawImage(still ? blurredFrame(img, t) : blurred(img), -W * 0.05, -H * 0.05, W * 1.1, H * 1.1);
+      ctx.fillStyle = 'rgb(6 9 22 / .45)';
       ctx.fillRect(0, 0, W, H);
-      // Above the subtitles and the headline: the lower third stays for words. Footage gets more of the frame.
-      const room = still ? { w: W - 2 * M, h: H * (REEL ? 0.56 : 0.66), y: H * 0.08 } : REEL ? { w: W - 2 * M, h: H * 0.42, y: H * 0.1 } : { w: W * 0.72, h: H * 0.5, y: H * 0.1 };
-      const sc = Math.min(room.w / img.width, room.h / img.height) * (1 + (still ? 0 : 0.04) * p);
+      // A reel: a slot across the top (the headline, the source's card and the subtitles go below it). Otherwise above
+      // the lower third, which stays for words; footage gets more of the frame.
+      const room = REEL ? SLOT : still ? { x: M, w: W - 2 * M, h: H * 0.66, y: H * 0.08 } : { x: W * 0.14, w: W * 0.72, h: H * 0.5, y: H * 0.1 };
+      const sc = Math.min(room.w / img.width, room.h / img.height) * (1 + (still || REEL ? 0 : 0.04) * p);
       const dw = img.width * sc;
       const dh = img.height * sc;
+      const box = { x: (W - dw) / 2, y: room.y + (REEL ? 0 : (room.h - dh) / 2), w: dw, h: dh };
       ctx.save();
       ctx.shadowColor = 'rgb(0 0 0 / .5)';
       ctx.shadowBlur = 40 * k;
-      ctx.drawImage(img, (W - dw) / 2, room.y + (room.h - dh) / 2, dw, dh);
+      if (REEL) {
+        rounded(ctx, box.x, box.y, box.w, box.h, 18 * k);
+        ctx.fill();
+        ctx.shadowColor = 'transparent';
+        ctx.clip();
+      }
+      ctx.drawImage(img, box.x, box.y, dw, dh);
       ctx.restore();
-    } else cover(ctx, img, 0, 0, W, H, z, still ? 0 : (n % 2 ? 1 : -1) * 0.3 * p);
+      return box;
+    }
+    cover(ctx, img, 0, 0, W, H, z, still ? 0 : (n % 2 ? 1 : -1) * 0.3 * p);
+    return null;
   }
   function studio(t: number) {
     ctx.fillStyle = '#080c1c';
@@ -416,7 +474,7 @@ export function filmPainter(ctx: CanvasRenderingContext2D, W: number, H: number,
     ctx.fillRect(0, 0, W, H * 0.2);
   }
   /** «ویدیو: @handle»: whose footage this is, as a newscast credits it. */
-  function footageCredit(a: number) {
+  function footageCredit(a: number, box: Box | null) {
     const who = v.src ? (v.src.handle ? `@${v.src.handle}` : v.src.site) : '';
     const text = who ? `ویدیو: ${who}` : 'ویدیوی منبع';
     ctx.save();
@@ -425,8 +483,8 @@ export function filmPainter(ctx: CanvasRenderingContext2D, W: number, H: number,
     ctx.font = `700 ${size}px ${FONT}`;
     ctx.direction = 'rtl';
     const w = ctx.measureText(text).width + 52 * k;
-    const x = M;
-    const y = REEL ? H * 0.115 : 82 * k;
+    const x = box ? box.x + 12 * k : M;
+    const y = box ? box.y + 12 * k : REEL ? H * 0.115 : 82 * k;
     ctx.fillStyle = 'rgb(0 0 0 / .55)';
     rounded(ctx, x, y, w, 34 * k, 17 * k);
     ctx.fill();
@@ -474,7 +532,7 @@ export function filmPainter(ctx: CanvasRenderingContext2D, W: number, H: number,
       for (const it of row) {
         const w = s.words[it.k];
         ctx.fillStyle = it.k === cur ? YELLOW : it.k < cur ? '#ffffff' : 'rgb(255 255 255 / .62)';
-        ctx.direction = it.ltr ? 'ltr' : 'rtl';
+        ctx.direction = it.dir;
         ctx.textAlign = 'left';
         ctx.fillText(w.text, x0 + it.x, yy);
       }
@@ -482,7 +540,7 @@ export function filmPainter(ctx: CanvasRenderingContext2D, W: number, H: number,
     ctx.restore();
   }
   /** A number popping up large as it's said, counting up, a ring bursting behind it. */
-  function callouts(n: number, t: number, a: number) {
+  function callouts(n: number, t: number, a: number, box: Box | null) {
     const c = extra[n].callouts.find((c) => t >= c.from && t < c.to);
     if (!c) return;
     const p = Math.min(ease((t - c.from) / 0.15), ease((c.to - t) / 0.2));
@@ -491,7 +549,7 @@ export function filmPainter(ctx: CanvasRenderingContext2D, W: number, H: number,
     ctx.globalAlpha *= a * p;
     // Where nothing else is: beside the source card (it's on the right), else top right.
     const left = scenes[n].shot === 'source';
-    ctx.translate(REEL ? W / 2 : left ? M + 170 * k : W - M - 160 * k, REEL ? (left ? H * 0.62 : H * 0.2) : H * 0.26);
+    ctx.translate(REEL ? W / 2 : left ? M + 170 * k : W - M - 160 * k, REEL ? (left && !box ? H * 0.62 : H * 0.24) : H * 0.26);
     const burst = ease((t - c.from) / 0.7);
     if (burst < 1) {
       ctx.strokeStyle = `rgb(255 209 102 / ${(0.6 * (1 - burst)).toFixed(3)})`;
@@ -512,7 +570,7 @@ export function filmPainter(ctx: CanvasRenderingContext2D, W: number, H: number,
   }
 
   // ---------- the shots ----------
-  function sourceCard(s: FilmScene, t: number, a: number) {
+  function sourceCard(s: FilmScene, t: number, a: number, box: Box | null) {
     const src = v.src;
     if (!src) return;
     const p = ease((t - s.from - 0.3) / 0.7);
@@ -521,9 +579,11 @@ export function filmPainter(ctx: CanvasRenderingContext2D, W: number, H: number,
     const body = src.text || src.title || '';
     ctx.font = `500 ${24 * k}px system-ui, sans-serif`;
     const lines = wrapLtr(body, w - 56 * k);
-    const shown = lines.slice(0, REEL ? 9 : 6);
+    // In a reel with the source's video or picture in the slot: under it, a few lines, clear of the subtitles.
+    const under = REEL && !!box;
+    const shown = lines.slice(0, REEL ? (under ? 3 : 9) : 6);
     const h = 130 * k + shown.length * 36 * k + 40 * k;
-    const y = (REEL ? H * 0.16 : H * 0.15) + (1 - p) * 40 * k;
+    const y = (under ? box!.y + box!.h + 34 * k : REEL ? H * 0.16 : H * 0.15) + (1 - p) * 40 * k;
     ctx.save();
     ctx.globalAlpha *= a * p;
     ctx.shadowColor = 'rgb(0 0 0 / .5)';
@@ -680,6 +740,7 @@ export function filmPainter(ctx: CanvasRenderingContext2D, W: number, H: number,
     ctx.translate(0, (1 - pIn) * 30 * k);
     glass(x, y, w, h, 28 * k, 0.72);
     if (title) label(title, x + w - 26 * k, y + 44 * k, 1, 22 * k);
+    if (s.ai) byModel(x + 26 * k, y + h - 12 * k);
     if (big) {
       ctx.font = `900 ${50 * k}px ${FONT}`;
       ctx.direction = isLatin(big) ? 'ltr' : 'rtl';
@@ -736,7 +797,7 @@ export function filmPainter(ctx: CanvasRenderingContext2D, W: number, H: number,
     const items: { date: string; title: string }[] = s.data?.items ?? [];
     const w = REEL ? W - 2 * M : W * 0.6;
     const x = (W - w) / 2;
-    const rowH = (REEL ? 120 : 92) * k;
+    const rowH = (REEL ? 140 : 104) * k;
     const y = REEL ? H * 0.12 : Math.max(90 * k, (H - TK - (items.length + 1) * rowH) / 2 - 40 * k);
     const lineX = x + w - 40 * k;
     const all = [...items, { date: v.date, title: v.title, now: true } as { date: string; title: string; now?: boolean }];
@@ -763,9 +824,12 @@ export function filmPainter(ctx: CanvasRenderingContext2D, W: number, H: number,
       ctx.fillStyle = 'rgb(255 255 255 / .6)';
       ctx.font = `600 ${18 * k}px ${FONT}`;
       ctx.fillText(now ? `امروز · ${day(it.date)}` : day(it.date), lineX - 30 * k, yy - 10 * k);
-      ctx.fillStyle = '#fff';
-      ctx.font = `${now ? 800 : 600} ${(REEL ? 30 : 24) * k}px ${FONT}`;
-      ctx.fillText(it.title, lineX - 30 * k, yy + 24 * k, w - 80 * k);
+      // The whole headline, on two rows at most (squeezed onto one, a full headline is unreadable).
+      let size = Math.round((REEL ? 26 : 21) * k);
+      let t2 = wrap(it.title, w - 80 * k, size, now ? 800 : 600);
+      while (t2.rows.length > 2 && size > 15 * k) t2 = wrap(it.title, w - 80 * k, (size = Math.round(size * 0.9)), now ? 800 : 600);
+      ctx.font = `${now ? 800 : 600} ${size}px ${FONT}`;
+      drawRows(t2.ws, t2.rows, lineX - 30 * k - (w - 80 * k), yy + 22 * k, size * 1.45, () => '#fff', 2);
     });
     ctx.restore();
   }
@@ -788,6 +852,7 @@ export function filmPainter(ctx: CanvasRenderingContext2D, W: number, H: number,
     const ga = ctx.globalAlpha;
     glass(x, y, w, qh, 26 * k, 0.75);
     label('یک سؤال', x + w - 26 * k, y + 2 * k, 1, 20 * k);
+    if (s.ai) byModel(x + 26 * k, y + qh - 12 * k);
     ctx.font = `800 ${size}px ${FONT}`;
     drawRows(ql.ws, ql.rows, x + 30 * k, y + 50 * k + size, size * 1.55, () => '#fff');
     // The options.
@@ -846,14 +911,21 @@ export function filmPainter(ctx: CanvasRenderingContext2D, W: number, H: number,
 
   /** The headline, revealed as it's said: each word rises out of its row, a Latin name gets a yellow marker swept
    *  under it, the kicker and the claim's status above, where it's from and when below. */
-  function hook(n: number, t: number, a: number) {
+  function hook(n: number, t: number, a: number, box: Box | null) {
     const s = scenes[n];
-    const size = Math.round((REEL ? 62 : 54) * k);
-    ctx.font = `900 ${size}px ${FONT}`;
+    let size = Math.round((REEL ? 62 : 54) * k);
     const width = REEL ? W - 2 * M : W * 0.8;
-    const rows = layout(ctx, s.words, width);
+    ctx.font = `900 ${size}px ${FONT}`;
+    let rows = layout(ctx, s.words, width);
+    // A reel with the picture or video in its slot: the headline under it, smaller when it's long.
+    const floor = REEL && box ? box.y + box.h : 0;
+    while (floor && size > 40 * k && floor + size * 2.2 + (rows.length - 1) * size * 1.42 > H * 0.78) {
+      size = Math.round(size * 0.9);
+      ctx.font = `900 ${size}px ${FONT}`;
+      rows = layout(ctx, s.words, width);
+    }
     const lh = size * 1.42;
-    const y0 = (REEL ? H * 0.7 : H * 0.74 - TK * 0.6) - (rows.length - 1) * lh;
+    const y0 = floor ? floor + size * 2.2 : (REEL ? H * 0.7 : H * 0.74 - TK * 0.6) - (rows.length - 1) * lh;
     // A band of shade under the headline, whatever the picture.
     const band = ctx.createLinearGradient(0, y0 - size * 2.6, 0, H);
     band.addColorStop(0, 'rgb(4 6 16 / 0)');
@@ -894,15 +966,16 @@ export function filmPainter(ctx: CanvasRenderingContext2D, W: number, H: number,
         }
         i = j + 1;
       }
+      // The whole headline from the start (it rises in with the shot), each word lit as it's said.
+      const lift = (1 - (look.cover ? 1 : ease((t - s.from - r * 0.08) / 0.55))) * size * 0.9;
       for (const it of row) {
         const w = s.words[it.k];
         const p = look.cover || cur >= it.k ? 1 : ease((t - w.from + 0.3) / 0.3);
-        const lift = (1 - (look.cover ? 1 : ease((t - w.from + 0.35) / 0.35))) * size * 0.9;
-        ctx.globalAlpha = ga * (0.25 + 0.75 * p);
+        ctx.globalAlpha = ga * (0.55 + 0.45 * p);
         ctx.fillStyle = it.ltr && (look.cover || cur >= it.k) ? INK : cur === it.k ? YELLOW : '#fff';
         ctx.shadowColor = it.ltr && (look.cover || cur >= it.k) ? 'transparent' : 'rgb(0 0 0 / .8)';
         ctx.shadowBlur = 24 * k;
-        ctx.direction = it.ltr ? 'ltr' : 'rtl';
+        ctx.direction = it.dir;
         ctx.textAlign = 'left';
         ctx.fillText(w.text, x0 + it.x, yy + lift);
       }
@@ -1005,13 +1078,14 @@ export function filmPainter(ctx: CanvasRenderingContext2D, W: number, H: number,
     ctx.save();
     ctx.globalAlpha = a;
     let drawn = !studioShot;
+    let box: Box | null = null;
     if (studioShot) studio(t);
-    else if (frame && !look.cover) picture(frame, n, local, span, true);
+    else if (frame && !look.cover) box = picture(frame, n, local, span, true, t);
     else if (s.pics.length) {
       const share = span / s.pics.length;
       // Drawn a little before its start (the opening's dissolve) and after its end (the next shot's): clamped.
       const i = Math.max(0, Math.min(s.pics.length - 1, Math.floor(local / share)));
-      picture(s.pics[i], n + i, Math.max(0, local - i * share), share);
+      box = picture(s.pics[i], n + i, Math.max(0, local - i * share), share);
       if (i > 0 && local - i * share < 0.6) {
         ctx.globalAlpha = a * (1 - ease((local - i * share) / 0.6));
         picture(s.pics[i - 1], n + i - 1, share, share);
@@ -1024,16 +1098,16 @@ export function filmPainter(ctx: CanvasRenderingContext2D, W: number, H: number,
     ctx.drawImage(vignette, 0, 0);
     shade(studioShot ? 0.4 : drawn ? 1 : 0.6);
     ctx.restore();
-    if (frame && !look.cover) footageCredit(a * ease(local / 0.5));
+    if (frame && !look.cover) footageCredit(a * ease(local / 0.5), box);
     ctx.save();
     ctx.globalAlpha = a;
     switch (s.shot) {
       case 'hook':
-        hook(n, t, 1);
+        hook(n, t, 1, box);
         ctx.restore();
         return;
       case 'source':
-        sourceCard(s, t, 1);
+        sourceCard(s, t, 1, box);
         break;
       case 'points':
         points(n, t, 1);
@@ -1059,7 +1133,7 @@ export function filmPainter(ctx: CanvasRenderingContext2D, W: number, H: number,
         return;
     }
     if (s.shot !== 'points') {
-      callouts(n, t, 1);
+      callouts(n, t, 1, box);
       subtitles(n, t, 1);
     }
     ctx.restore();
@@ -1120,7 +1194,7 @@ export function filmPainter(ctx: CanvasRenderingContext2D, W: number, H: number,
     ctx.globalAlpha = a2;
     ctx.fillStyle = 'rgb(255 255 255 / .7)';
     ctx.font = `500 ${24 * k}px ${FONT}`;
-    ctx.fillText([v.meta?.type, 'فیلم کوتاه خبری', day(v.date)].filter(Boolean).join(' · '), W / 2, H / 2 + 120 * k);
+    ctx.fillText([v.meta?.type, roundup ? 'بولتن خبری' : 'فیلم کوتاه خبری', day(v.date)].filter(Boolean).join(' · '), W / 2, H / 2 + 120 * k);
     ctx.globalAlpha = 1;
   }
 
@@ -1138,7 +1212,7 @@ export function filmPainter(ctx: CanvasRenderingContext2D, W: number, H: number,
     ctx.fillText(SITE.name, W / 2, H * 0.36 + 110 * k);
     ctx.fillStyle = 'rgb(255 255 255 / .75)';
     ctx.font = `500 ${24 * k}px ${FONT}`;
-    ctx.fillText('متن کامل و منبع این خبر:', W / 2, H * 0.36 + 170 * k);
+    ctx.fillText(roundup ? 'همه‌ی خبرها با منبع:' : 'متن کامل و منبع این خبر:', W / 2, H * 0.36 + 170 * k);
     ctx.direction = 'ltr';
     ctx.fillStyle = YELLOW;
     ctx.font = `700 ${30 * k}px ${FONT}`;
@@ -1147,7 +1221,9 @@ export function filmPainter(ctx: CanvasRenderingContext2D, W: number, H: number,
     ctx.font = `500 ${18 * k}px ${FONT}`;
     ctx.direction = 'rtl';
     const by = opts.host === 'p' ? 'پریسا' : 'داش غلام';
-    ctx.fillText(`روایت و مجری (${by}) با هوش مصنوعی · متن خبر: داش غلام${v.footage ? ' · ویدیو از منبع خبر' : ''}`, W / 2, H * 0.36 + 270 * k, W - 2 * M);
+    // Who wrote what: Gholam the story, the channel its summary, the model the week's recap and the explainers.
+    const text = v.kind === 'week' ? 'متن مرور هفته: هوش مصنوعی از خبرهای سایت' : v.kind === 'digest' ? 'متن: خلاصه‌ی کانال' : 'متن خبر: داش غلام';
+    ctx.fillText(`روایت و مجری (${by}) با هوش مصنوعی · ${text}${v.footage ? ' · ویدیو از منبع خبر' : ''}`, W / 2, H * 0.36 + 270 * k, W - 2 * M);
     ctx.restore();
     letterbox(ease((t - outro) / 0.8));
   }

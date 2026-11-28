@@ -3,6 +3,24 @@
 One place for everything unfinished. Last checked 2026-11-25 (data through post 6725).
 Tick items off here; move anything that becomes a lasting rule into CLAUDE.md.
 
+## Progress (2026-11-28, night): films fixed — reels, publishing, subtitles, bulletins, SEO
+
+- [x] Reels with the source's video and pictures: the video/picture in a slot at the top, headline/card/subtitles below
+  (they covered it); its blurred backdrop is the video itself (was another picture; also no longer keeps every frame).
+- [x] Mixed lines: «Mistral Large 4» (a number after English, at a row's end) and «OpenAI،» kept left to right.
+- [x] Publishing: «انتشار برای همه» was hidden for most films (a part the story doesn't have, or the reel's ticker,
+  counted as "not standard"); upload status and the server's reason shown; a kept film keeps its cover and length.
+- [x] `/api/tts` had no `k=film`: every film line on the cloud voice was the headline. Fixed + tested.
+- [x] Subtitles: the headline whole from the start, captions per sentence, timing matched word by word when the spoken
+  and written words differ (was spread evenly).
+- [x] The 24-hour summary and the week's recap as film bulletins; the runner and the cinema include the summary.
+- [x] Headlines in films are the real ones, whole: the ticker and «ماجرا تا اینجا» used the circles' few-word `short`
+  (fragments like «کوانتومی کردن گرانش»); the timeline wraps instead of squeezing; «ماجرای «ماجرای …»» fixed (every
+  thread's name starts with «ماجرای»).
+- [x] SEO: R2 `films/index.json` → the story page's player + `VideoObject` (fa and en).
+- [ ] **Yours:** `MEDIA_KEY` is still not a GitHub secret (and `films.yml` has never run): set the same value on Cloudflare
+  Pages and GitHub, then dispatch `films`.
+
 ## Progress (2026-11-28, evening): films like a newscast, a setup before making, the cinema redesigned
 
 - [x] Films show the story's own video (`/api/clip` relay + `footage.ts`, its sound under the voice), a drawn backdrop when
