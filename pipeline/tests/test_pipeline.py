@@ -417,6 +417,12 @@ def test_unreadable_replies_are_not_translations():
         # post 6595: no «متأسفانه», just «… در دسترس نیست که بشه خلاصه‌اش کرد»
         "رفیق، توی این پست فقط یه لینک از اکانت theo اومده و خود متن مطلب یا تصویری ازش اینجا در دسترس نیست که بشه "
         "خلاصه‌اش کرد. هر وقت متن اصلیش باشه، با روی باز براتون می‌خونم و خلاصه‌اش رو می‌گم.",
+        # his rewrite (2026-11-28): the failure with the raw exception, his refusals, a leaked digest marker
+        "نتونستم تحلیلش کنم رفیق: 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'Resource has been exhausted'}}",
+        "داش شرمنده، قاطی کردم: Deadline Exceeded",
+        "این کانال جزو لیست مجاز نیست.",
+        "بی‌زحمت یا متنی، یا لینکی یا عکسی بفرست تا ببینیم قضیه چیه.",
+        "SKIP_DAILY_DIGEST",
     ):
         assert telegram.is_gholam_error(text), text
     for text in (
@@ -424,6 +430,7 @@ def test_unreadable_replies_are_not_translations():
         "رفقا، بخش خبری انویدیا اعلام کرده بیانیه داده. البته متن دقیق بیانیه توی این پست مشخص نیست.",
         "متاسفانه متن اصلی این توییت در دسترس نیست. " + "اما ماجرا اینه که " * 60,  # long: a story follows
         "اپل گفته این مدل هنوز در دسترس نیست که بشه ازش استفاده کرد، ولی ماه بعد میاد.",  # news, not about the post
+        "رفقا، مدیر انویدیا گفته نتونستم تحلیلش کنم که چرا سهام افت کرد.",  # the words, not as his opening
     ):
         assert not telegram.is_gholam_error(text), text
     post = {"id": 7, "text": "https://x.com/a/status/1", "links": [], "gholam": {"text": "داداش متأسفانه محتوای این پست در دسترس نبود."}}

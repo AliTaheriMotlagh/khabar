@@ -245,7 +245,17 @@ def fetch_gholam_comment(http: httpx.Client, post_id: int) -> Optional[dict]:
 
 
 # When the translation bot fails it still replies, with its error ("Could not summarize that message: 503 UNAVAILABLE…").
-GHOLAM_ERROR_RE = re.compile(r"^\s*Could not (?:summarize|translate)\b|^\s*(?:Error|Exception)\b[:\s]", re.I)
+# Since his rewrite of 2026-11-28 (github.com/mehrzads/gholam bot.py `handle_message`) the failure is Persian and carries
+# the raw exception: «نتونستم تحلیلش کنم رفیق: <error>», in a private reply «داش شرمنده، قاطی کردم: <error>»; and his
+# refusals: «این کانال جزو لیست مجاز نیست.», «بی‌زحمت یا متنی، یا لینکی یا عکسی بفرست…». None is signed «داش غلام», but
+# they come from his account, so the author check would take them for a translation. Anchored: only as the opening.
+GHOLAM_ERROR_RE = re.compile(
+    r"^\s*Could not (?:summarize|translate)\b|^\s*(?:Error|Exception)\b[:\s]"
+    r"|^\s*نتونستم\s+تحلیلش\s+کنم|^\s*داش\s+شرمنده،?\s*قاطی\s+کردم"
+    r"|^\s*این\s+کانال\s+جزو\s+لیست\s+مجاز\s+نیست|^\s*بی[\u200c\s]?زحمت\s+یا\s+متنی"
+    r"|^\s*SKIP_DAILY_DIGEST\s*$",
+    re.I,
+)
 # … and since November 2026, when he couldn't read the post, an apology in Persian instead of a story («داداش
 # متأسفانه محتوای این پست در دسترس نبود…», «رفقا، متاسفانه متن اصلی این توییت در دسترس نیست…»). Only a short reply
 # that says so about the post itself: «متاسفانه این قابلیت در ایران در دسترس نیست» is news.
