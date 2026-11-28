@@ -12,7 +12,7 @@
   "site": "🧵 Thread • FxTwitter",
   "title": "Artificial Analysis (@ArtificialAnlys)",
   "description": "↩\n@ArtificialAnlys\nNo single harness is best across models. Performance depends on the harness and model as a pair, and 9 of the 13 harnesses move three or more places between GPT-6 Luna and GLM-5.3-Flash.",
-  "image": "https://cdn4.telesco.pe/file/BRbR2kduSXns4dzonxPutOEoq00DmdtzkpY7uSp55lKugLNseTuOwaM612lUbwxhf5olvN01XUxXJlkvqjiYn1_QdVcaVN0kqtuxZnbNuYyQzHkrf3rqlujPiie4Wqag_4SUoouqrRwWgUfegvtks4-okjrLhnMlPzhF6EViAJmRKuPXtBXXEkCI9HI55fYO4TTlHgWWFiUwS5xsrXLC9Tz_gh2NUGP7oQg5AzHn3_Ut0aSxdJyZmurqhY-ry53_Mbuyiy5NVnLhzfxdqEJ0Ufvf_7KU3voYR6kwnmLamA7xt0FppDnzd7ULRUrj85KsU3TY9KCEzlzxiRn2-8ykrA.jpg"
+  "image": "https://cdn4.telesco.pe/file/EYi9g51dx5wHT0zwJkDVdB3Vz4i0mKsjJVyJM3q9nGHeQcElqnSMVRQbHV_usEIQ6AAzTWFIYe8y1osb1hDukRPI3QYGM8gAD4SZx-UDWY_LgDCCBOt7gOlXCLKLGVAxEfYQQOa6S8LFbOZwnsBvGZcd3hEytGrWyUURwJQal1-DEroyMZE0sQdxeAhZkQDjMN94Ci69qR5xVk6jv0JdaEF9C1GRmXKRjJpEl42SQaXJbxSck10KL2pZyOMEjF3AQIeOPck_U-puuxxLADNHsipNfbNlQUn_fOPsbJD6fnu-JTocnvpIEbCf7AOTr2rn2EjXTrNWz-og7CTGjnLFoQ.jpg"
  },
  "gholam": {
   "text": "رفیق، مثل این می‌مونه که یه کفش برای یه نفر مثل پرِ قو راحت باشه و پای یه نفر دیگه رو بزنه؛ توی دنیای ایجنت‌های کدنویسی هم ظاهراً همین خبره. 🤖 Artificial Analysis توی بخش جدید مقایسه هارنس‌ها (همون بسترهای اجرای مدل) روی شاخص Coding Agent Index نسخه ۲.۱، دو مدل GPT-6 Luna و GLM-5.3-Flash رو با حداکثر توان استدلال روی ۱۳ تا هارنس مختلف محک زده و می‌گه انتخاب ابزار روی هزینه بیشتر از نمره اثر می‌ذاره:\n\n• هیچ هارنسی همه‌فن‌حریف نیست: رتبه ۹ تا از ۱۳ هارنس بین این دو مدل، ۳ پله یا بیشتر جابه‌جا شده. مثلاً GPT-6 Luna بالاترین نمره‌اش (۲۶) رو توی Codex گرفته، ولی همون Codex برای GLM-5.3-Flash (با نمره ۲۸) رتبه آخر شده و جاش Claude Code و OpenCode با نمره ۳۹ صدر جدول نشستن.\n• اثر هارنس روی جیب بیشتر از نمره‌ست: نمره بیشتر هارنس‌ها توی هر مدل به هم نزدیک بوده، اما هزینه API هر تسک برای GPT-6 Luna از ۰.۱۱ دلار در Pi تا ۰.۶۲ دلار در Muse Code و برای GLM-5.3-Flash از ۰.۳۸ دلار در Mistral Vibe تا ۰.۹۱ دلار در Devin CLI نوسان داشته (البته خود سایت یادآوری کرده این رقم‌ها بر اساس تعرفه API و مصرف توکنه، نه پلن‌های اشتراکی).\n• یه قلق عجیب توی Codex: گزارش می‌گه GLM-5.3-Flash توی ۱۲ هارنس دیگه کامل و روان فکر می‌کنه، اما توی Codex یهو استدلالش تلگرافی و بریده‌بریده می‌شه (۵۲ هزار توکن خروجی در برابر ۹۷ تا ۲۰۲ هزار در بقیه)؛ بررسی‌هاشون نشون داده فقط تعریف ابزار exec_command توی Codex باعث این تغییر سبک در چند مدل دیگه هم می‌شه و احتمالاً به افت نمره‌اش اونجا دامن زده.\n\nخلاصه طبق این یافته‌ها، گرون‌ترین بستر لزوماً بهترین نمره رو نمی‌آره و باید دید مدلِ مورد نظرت با کدوم محیط جفت‌وجورتره.",
@@ -173,5 +173,5 @@
    "ایجنت"
   ]
  },
- "updated": "2026-11-28T04:58:26+00:00"
+ "updated": "2026-11-28T12:54:31+00:00"
 }

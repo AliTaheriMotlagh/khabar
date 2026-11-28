@@ -12,7 +12,7 @@
   "site": "X (formerly Twitter)",
   "title": "Google Antigravity (@antigravity) on X",
   "description": "MCP Apps are now supported in Google Antigravity. Generate interactive charts, sandboxes, release boards & custom file viewers right into your workspace.",
-  "image": "https://cdn4.telesco.pe/file/qbjPht0so7eptMh60ofINlid_1LuCzX5CoWGe_SKSY40obkL4OvQlX8FaWGuI4KacXezEqFklY5UIKc0dub3azS1gGWK0ex8UAECkVbV0H8KPmmWs5DGhMd3fKBgkH7S2GyTftqkFIv4VEV8_307WVoh_g5cLAGXvxQ79osw7nhnysT4c9f3Fny_MkK4CDuO70j_pL3p-fSTUZuMQQ04Yy7J9iiXOrvLF8vnPYiYhdGwyS60AvbQoV_pF0zAiAHfJPc8ytwncL1BQ7TWXDy6EfM2bTn3gO93DPIMZyV4V2bGW1UMyVYAaYTsInEs_aTpw2Z0KoaO3aVoX0eQ3YO3-g.jpg"
+  "image": "https://cdn4.telesco.pe/file/kK6geO81WieouEWwkallPAn165BAF7RLG4hC6Ztd1rOZ13ZqT7LjMm7nU9W7LNPL50b2ZYEcCydSdROoTtq1SUBoE_hQlXe4m_F5LYaXZ3df5xPSn35fwF7fRD-Yq-C8g6B0sOkZ8DM7AT3LUOzeAwklta-PlN3LCQH8D8TiwLSg_0YcEASDiKU1NySqljUbpwjoRoS0R1jp39nlZKHOvl2DM2gkf-vjPE4Va2N7LMAXeAbiF4lDoNxhu4BekIOPaNKcYVdvDAIeBGGA8Eshlh1PVU5NUdCPWwFfoWNiSHHp5VIg-jCaH5sPUvZwa4CILI7RPfmAHSj-KFgtlYVwzQ.jpg"
  },
  "gholam": {
   "text": "رفقا، Google Antigravity اعلام کرده از این به بعد توی محیط کاریش از MCP Apps پشتیبانی می‌کنه؛ یعنی ابزارهای متصل به ایجنت به جای اینکه فقط متن ساده یا کدهای خام JSON برگردونن، می‌تونن یه رابط کاربری تعاملی رو مستقیم کنار پاسخ خودشون باز کنن. انگار به جای اینکه کسی گزارش سرور رو تلفنی برات بخونه، همون لحظه پنل زنده رو بذاره جلوت که خودت دکمه‌هاش رو بزنی! 😄\n\nطبق توضیح وبلاگ رسمی Antigravity، این قابلیت که روی استاندارد باز SEP-1865 ساخته شده، امکانات زیر رو میاره:\n• ابزارها می‌تونن نمودارهای زنده، سندباکس، بورد کارها یا نمایشگر اختصاصی فایل‌ها رو مستقیم داخل چت، پنل کناری، نمای تمام‌صفحه یا به عنوان نمایشگر فایل‌های خاص نشون بدن.\n• توی تصویری که منتشر کردن هم یه کارت وضعیت سرویس وسط چت دیده می‌شه که دکمه‌های تعاملی مثل Promote و Rollback مستقیم داخلش قرار گرفته.\n• این مجموعه گفته پلاگین سرویس‌هایی مثل Vercel، Datadog، CodeRabbit، Qodo، Better Stack و monday.com هم الان از این قابلیت پشتیبانی می‌کنن تا کارهایی مثل بررسی کد، رصد خطاها، دپلوی و دیدن بورد پروژه‌ها بدون جابه‌جایی بین تب‌های مختلف انجام بشه.",
@@ -139,5 +139,5 @@
    "گوگل"
   ]
  },
- "updated": "2026-11-28T04:58:26+00:00"
+ "updated": "2026-11-28T12:54:30+00:00"
 }
