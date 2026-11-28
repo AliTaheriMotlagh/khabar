@@ -1,0 +1,64 @@
+# The film studio: the short film of every new story (src/scripts/film.ts), made by the live site's own page in headless
+# Chrome with the most natural Persian voice, published for everyone (functions/media → R2) — landscape and vertical —
+# so /cinema/ always has today's bulletin. scripts/films.mjs. Free: public repo, standard runner; the voice is
+# downloaded once into a cached Chrome profile. Needs the secret MEDIA_KEY (the same value as the Cloudflare Pages
+# secret); without it the films are made but not published.
+name: films
+
+on:
+  schedule:
+    - cron: '17 */3 * * *'
+  workflow_dispatch:
+    inputs:
+      ids:
+        description: 'Story ids, comma-separated (empty: the last 48 hours without a film)'
+        required: false
+        default: ''
+      limit:
+        description: 'At most this many films'
+        required: false
+        default: '12'
+
+permissions:
+  contents: read
+
+concurrency:
+  group: films
+  cancel-in-progress: false
+
+jobs:
+  films:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    steps:
+      - uses: actions/checkout@v7
+        with:
+          ref: main
+      - uses: actions/setup-node@v7
+        with:
+          node-version: 24
+          cache: npm
+      - run: for i in 1 2 3; do npm ci --no-audit --no-fund && break; sleep $((i * 20)); done
+      - name: The Chrome profile with the voice
+        uses: actions/cache@v6
+        with:
+          path: .cache/film-profile
+          key: film-profile-v1-${{ github.run_id }}
+          restore-keys: film-profile-v1-
+      - name: Make and publish
+        env:
+          SITE: ${{ vars.API_URL || 'https://blog.remixt.app' }}
+          MEDIA_KEY: ${{ secrets.MEDIA_KEY }}
+          CHROME_PATH: /usr/bin/google-chrome
+          FILM_BUDGET_MIN: '45'
+        run: |
+          [ -n "$MEDIA_KEY" ] || echo "::warning::MEDIA_KEY is not set: films are made but not published"
+          node scripts/films.mjs --limit "${{ inputs.limit || '12' }}" ${{ inputs.ids && format('--ids {0}', inputs.ids) || '' }}
+      - name: Keep the films of this run
+        if: always()
+        uses: actions/upload-artifact@v5
+        with:
+          name: films
+          path: .cache/films/*.mp4
+          retention-days: 3
+          if-no-files-found: ignore

@@ -1996,3 +1996,35 @@ a.fchip.fchip-more { border-style: dashed; color: var(--accent); }
 .vs-public { display: flex; flex-wrap: wrap; align-items: center; gap: 8px; }
 .pulse { animation: pulse 1.2s ease 3; }
 @keyframes pulse { 50% { box-shadow: 0 0 0 8px var(--accent-soft); } }
+
+/* «پادکست خبر» (src/pages/podcast/, src/scripts/podcast.ts) */
+.pod-player { background: #0a0f24; border-radius: var(--radius); overflow: hidden; color: #fff; box-shadow: 0 30px 80px -30px rgb(0 0 0 / .6); }
+.pod-stage { position: relative; }
+.pod-stage canvas { display: block; width: 100%; height: auto; aspect-ratio: 1200 / 560; }
+.pod-caption { margin: 0; padding: 12px 18px; min-height: 3.4em; font-size: clamp(15px, 2vw, 18px); line-height: 1.8; background: #0f1530; border-top: 1px solid rgb(255 255 255 / .08); }
+.pod-caption[data-who="g"] { box-shadow: inset -4px 0 0 #ffd166; }
+.pod-caption[data-who="p"] { box-shadow: inset -4px 0 0 #2a9a98; }
+.pod-controls { display: flex; align-items: center; gap: 12px; padding: 12px 16px; }
+.pod-play { width: 56px; height: 56px; border-radius: 50%; border: 0; background: #ffd166; color: #141a33; display: grid; place-items: center; cursor: pointer; flex: none; }
+.pod-play:disabled { opacity: .4; cursor: default; }
+.pod-play .i { width: 26px; height: 26px; }
+.pod-play .when-playing, .pod-play[data-state="playing"] .when-idle { display: none; }
+.pod-play[data-state="playing"] .when-playing { display: inline; }
+.pod-time { flex: 1; min-width: 0; display: grid; gap: 4px; }
+.pod-time b { font-size: 14.5px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.pod-time input { width: 100%; accent-color: #ffd166; }
+.pod-time small { color: rgb(255 255 255 / .65); font-size: 12.5px; }
+.pod-controls .btn { color: #fff; border-color: rgb(255 255 255 / .25); background: transparent; }
+.pod-soon { padding: 0 16px 12px; color: rgb(255 255 255 / .7); }
+.pod-chapters { display: flex; flex-wrap: wrap; gap: 6px; padding: 0 16px 16px; }
+.pod-chapters .chip { border: 1px solid rgb(255 255 255 / .2); background: rgb(255 255 255 / .06); color: #fff; border-radius: 999px; padding: 5px 12px; font: inherit; font-size: 13px; cursor: pointer; }
+.pod-chapters .chip:disabled { opacity: .5; cursor: default; }
+.pod-eps { margin: 16px 0 10px; }
+.pod-lines { list-style: none; margin: 0; padding: 0; display: grid; gap: 6px; }
+.pod-story { margin-top: 14px; font-weight: 800; }
+.pod-story a { color: var(--text); }
+.pod-line { display: grid; grid-template-columns: 64px 1fr; gap: 10px; padding: 8px 10px; border-radius: 12px; cursor: pointer; line-height: 1.9; }
+.pod-line b { font-size: 13px; color: var(--text-3); padding-top: 3px; }
+.pod-line.who-g b { color: #b98a1d; }
+.pod-line.who-p b { color: #1f7a7a; }
+.pod-line.is-now { background: var(--accent-soft); }

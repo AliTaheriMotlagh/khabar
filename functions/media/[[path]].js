@@ -11,6 +11,9 @@
 import { configured, limited } from '../../server/_lib.js';
 
 const KEY = /^films\/(\d{1,8})-([hvs])\.mp4$/;
+// The podcast's episodes (scripts/podcast.mjs): the MP3 and its timed lines; only the owner's key publishes them.
+const POD = /^podcast\/(\d{4}-\d{2}-\d{2})\.(mp3|json)$/;
+const TYPES = { mp3: 'audio/mpeg', json: 'application/json; charset=utf-8', mp4: 'video/mp4' };
 const MAX = 40 * 1024 * 1024;
 const SHAPES = ['h', 'v', 's'];
 const json = (body, status = 200, extra = {}) =>
@@ -32,8 +35,10 @@ export async function onRequest(ctx) {
     return json(have, 200, { 'cache-control': 'public, max-age=30, s-maxage=60' });
   }
 
+  const pod = path.match(POD);
   const m = path.match(KEY);
-  if (!m) return json({ error: 'not found' }, 404);
+  if (!m && !pod) return json({ error: 'not found' }, 404);
+  const type = TYPES[path.split('.').pop()];
 
   if (request.method === 'GET' || request.method === 'HEAD') {
     const cache = caches.default;
@@ -45,7 +50,7 @@ export async function onRequest(ctx) {
     const obj = await env.MEDIA.get(path, range ? { range: request.headers } : {});
     if (!obj) return json({ error: 'not found' }, 404, { 'cache-control': 'public, max-age=30' });
     const headers = new Headers({
-      'content-type': 'video/mp4',
+      'content-type': type,
       'accept-ranges': 'bytes',
       etag: obj.httpEtag,
       // A film may be replaced by a better one (the runner's): an hour at the edge, revalidated after.
@@ -69,6 +74,15 @@ export async function onRequest(ctx) {
     if (!owner) return json({ error: 'forbidden' }, 403);
     await env.MEDIA.delete(path);
     return json({ ok: true });
+  }
+
+  if ((request.method === 'POST' || request.method === 'PUT') && pod) {
+    if (!owner) return json({ error: 'forbidden' }, 403);
+    const body = new Uint8Array(await request.arrayBuffer());
+    if (!body.length || body.length > 80 * 1024 * 1024) return json({ error: 'size' }, 413);
+    await env.MEDIA.put(path, body, { httpMetadata: { contentType: type }, customMetadata: { by: 'runner', at: new Date().toISOString() } });
+    await caches.default.delete(new Request(`${url.origin}/media/${path}`)).catch(() => {});
+    return json({ ok: true, url: `/media/${path}` }, 201);
   }
 
   if (request.method === 'POST' || request.method === 'PUT') {

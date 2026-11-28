@@ -3,6 +3,20 @@
 One place for everything unfinished. Last checked 2026-11-25 (data through post 6725).
 Tick items off here; move anything that becomes a lasting rule into CLAUDE.md.
 
+## Progress (2026-11-28, later): films, cinema, podcast, YouTube — built
+
+- [x] Story films (`film.ts`), Gholam and Parisa drawn (`anchor.ts`), written names shown as written; tested on 6768/6766/6770
+  (landscape + reel, Ganji and Cilla voices: 42–55 s to make a ~2.5 min film on a Mac).
+- [x] Public films: R2 + `functions/media`, «انتشار برای همه», `/cinema/` (double-buffered players, «بعدی» cards).
+- [x] `films.yml` (every 3 h), `podcast.yml` (07:30 Tehran), `youtube.yml` (09:00 Tehran) — tested locally end to end
+  (wrangler pages dev with local R2; a 4:21 episode, −17 LUFS; a 4:56 bulletin with chapters, dry run).
+- [ ] **Yours:** `MEDIA_KEY` (same value) as a Cloudflare Pages secret and a GitHub secret — then dispatch `films` and
+  `podcast` (day 2026-11-27 has a written episode waiting for its sound). YouTube: a Google Cloud OAuth "Desktop app"
+  client (YouTube Data API v3 on) → `YT_CLIENT_ID`/`YT_CLIENT_SECRET` secrets → `node scripts/youtube.mjs auth` → `YT_REFRESH_TOKEN`.
+- [ ] The podcast's dialogue by the model is untested on the runner's 9B (validated + falls back per story); read the
+  first few episodes. Real source footage (the post's own video) inside films: not yet (stills only).
+- [ ] Cilla Mini (the films' and podcast's voices) is CC BY-NC: fine while non-profit; switch voices before ads/money.
+
 ## Plan (2026-11-28): news videos like a class, Gholam as anchor, a two-host podcast — all at $0
 
 **Goal:** a reader *understands* a story in under two minutes and enjoys it: real material from the source, every

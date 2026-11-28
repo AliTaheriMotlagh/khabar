@@ -602,3 +602,17 @@ def test_thread_names_and_topic_intros_are_checked():
     post = {"digest": False, "ai": {"v": 2, "topics": ["گوگل"]}, "article": {"tags": ["متا"]}}
     assert topics.topics_of(post) == ["گوگل"]
     assert topics.topics_of({**post, "ai": {"v": 1, "topics": ["گوگل"]}}) == ["متا"], "v1 topics aren't used"
+
+
+def test_podcast_lines_are_grounded_in_their_story():
+    from pipeline import podcast
+    src = "مدل Gemini 4 با امتیاز ۷۶.۴ رتبه اول شد. OpenAI هم گفت ۲ مدل تازه می‌دهد."
+    assert podcast.grounded("جمنای با ۷۶.۴ اول شد", src)
+    assert podcast.grounded("Gemini و OpenAI هر دو", src)
+    assert not podcast.grounded("امتیازش ۸۰ بود", src)  # a number the story never says
+    assert not podcast.grounded("Anthropic هم بود", src)  # a name it never says
+    post = {"id": 1, "article": {"title": "تیتر", "body": ["• جمله‌ی اول خبر. جمله‌ی دوم.", "بند دوم."], "why": "چون مهمه."}, "ai": {"short": "کوتاه"}}
+    lines = podcast.fallback(post)
+    assert [l["who"] for l in lines] == ["p", "g", "p", "g", "p", "g"]
+    assert lines[1]["text"].startswith("جمله‌ی اول")  # the bullet is gone
+    assert lines[-1]["text"] == "چون مهمه."

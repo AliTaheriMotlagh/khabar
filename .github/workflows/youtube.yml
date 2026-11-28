@@ -1,0 +1,56 @@
+# The films on YouTube (@Remixt-app) every morning (09:00 Tehran, after the night's films are made): yesterday's most
+# important stories as Shorts (their vertical films) and one landscape «بخش خبری» with chapters — scripts/youtube.mjs.
+# What went up is committed to data/youtube.json. Free: the YouTube Data API's daily quota (~6 uploads). Needs the
+# secrets YT_CLIENT_ID, YT_CLIENT_SECRET and YT_REFRESH_TOKEN (node scripts/youtube.mjs auth); without them it skips.
+name: youtube
+
+on:
+  schedule:
+    - cron: '30 5 * * *' # 09:00 Tehran
+  workflow_dispatch:
+    inputs:
+      day:
+        description: 'Tehran day (YYYY-MM-DD); empty: yesterday'
+        required: false
+        default: ''
+
+permissions:
+  contents: write
+
+concurrency:
+  group: youtube
+  cancel-in-progress: false
+
+jobs:
+  upload:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    steps:
+      - uses: actions/checkout@v7
+        with:
+          ref: main
+      - uses: actions/setup-node@v7
+        with:
+          node-version: 24
+      - name: Upload
+        env:
+          SITE: ${{ vars.API_URL || 'https://blog.remixt.app' }}
+          YT_CLIENT_ID: ${{ secrets.YT_CLIENT_ID }}
+          YT_CLIENT_SECRET: ${{ secrets.YT_CLIENT_SECRET }}
+          YT_REFRESH_TOKEN: ${{ secrets.YT_REFRESH_TOKEN }}
+        run: |
+          [ -n "$YT_REFRESH_TOKEN" ] || { echo "::notice::YouTube isn't connected yet (node scripts/youtube.mjs auth)"; exit 0; }
+          node scripts/youtube.mjs daily ${{ inputs.day && format('--day {0}', inputs.day) || '' }}
+      - name: Commit what went up
+        run: |
+          [ -f data/youtube.json ] || exit 0
+          git add data/youtube.json
+          git diff --cached --quiet && exit 0
+          git config --global user.name 'github-actions[bot]'
+          git config --global user.email '41898283+github-actions[bot]@users.noreply.github.com'
+          git commit -qm "data: YouTube uploads"
+          for attempt in 1 2 3 4; do
+            if git pull --rebase -q origin main && git push -q origin HEAD:main; then break; fi
+            git rebase --abort 2>/dev/null || true
+            sleep $((attempt * 5))
+          done

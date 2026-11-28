@@ -437,6 +437,7 @@ if ($('[data-en-listen]')) import('./en-listen').then((m) => m.initEnListen());
 if ($('[data-en-voice]')) $$('[data-open-settings]').forEach((b) => b.addEventListener('click', () => void import('./en-voice-row').then((m) => m.initEnVoiceRow()), { once: true }));
 if ($('[data-ad]')) import('./ads').then((m) => m.initAds());
 if ($('[data-cinema]')) import('./cinema').then((m) => m.initCinema());
+if ($('[data-podcast]')) import('./podcast').then((m) => m.initPodcast());
 // From «سینمای خبر»'s «ساختن فیلم»: point at «ویدیو» (a film is made from a tap on this page: iOS records sound only then).
 if (location.hash === '#film') {
   const mv = $<HTMLElement>('.reader-bar [data-make-video]');

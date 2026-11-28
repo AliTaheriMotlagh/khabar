@@ -40,6 +40,8 @@ export const GET: APIRoute = ({ props }) => {
     // The technical terms explained (src/scripts/glossary.ts underlines them on the page) and the AI's extras.
     ...(p.terms.length && { terms: p.terms.map((t) => [t.term, t.def]) }),
     ...(p.short !== a.title && { short: p.short }),
+    // 1–5 by the model (the cinema's and YouTube's order: the most important first).
+    ...(p.importance && { importance: p.importance }),
     ...(p.translated && { translated: true }),
     ...(p.share && { share: p.share }),
     ...(p.videoAi && { clip: p.videoAi }),

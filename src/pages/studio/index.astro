@@ -1,0 +1,12 @@
+---
+// The studio: a page for the runner's headless Chrome only (scripts/podcast.mjs), where the podcast's sound is made
+// with the site's own voices (src/scripts/studio.ts). Not linked, not indexed, not in the sitemap.
+import Base from '../../layouts/Base.astro';
+---
+<Base title="استودیو" description="ساخت صدای پادکست با صداهای خود سایت" noindex>
+  <div class="container narrow"><h1>استودیو</h1><p class="muted" data-studio>این صفحه برای ساختن صدای پادکست است.</p></div>
+  <script>
+    import '../../scripts/studio';
+    document.querySelector('[data-studio]')!.setAttribute('data-ready', '');
+  </script>
+</Base>

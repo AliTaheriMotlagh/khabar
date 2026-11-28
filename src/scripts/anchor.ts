@@ -273,14 +273,14 @@ function brows(ctx: CanvasRenderingContext2D, f: Face) {
   }
 }
 
-function mouth(ctx: CanvasRenderingContext2D, f: Face) {
+function mouth(ctx: CanvasRenderingContext2D, f: Face, lips = '#8a3b2e') {
   const cy = 296;
   const open = f.open;
   // Width: narrower for «و», wider for «ی»; a resting smile when shut.
   const w = 30 * (1 - 0.35 * f.round + 0.15 * f.wide);
   const h = 4 + open * (24 - 8 * f.wide + 4 * f.round);
   if (open < 0.06) {
-    ctx.strokeStyle = '#8a3b2e';
+    ctx.strokeStyle = lips;
     ctx.lineWidth = 4.5;
     ctx.lineCap = 'round';
     ctx.beginPath();
@@ -379,6 +379,139 @@ function hat(ctx: CanvasRenderingContext2D) {
   ctx.moveTo(-70, -50);
   ctx.quadraticCurveTo(-60, -76, -20, -80);
   ctx.stroke();
+  ctx.restore();
+}
+
+// ---------- «پریسا», the podcast's second host ----------
+// In the same style: a teal headscarf framing the face, dark manteau, the same eyes and mouth (drawn by the same code,
+// so both hosts move alike). An illustrated character, labelled as Gholam is.
+const SCARF = '#1f7a7a';
+const SCARF_HI = '#2a9a98';
+export function drawCohost(ctx: CanvasRenderingContext2D, x: number, y: number, size: number, f: Face) {
+  const s = size / 512;
+  ctx.save();
+  ctx.translate(x, y);
+  ctx.scale(s, s);
+  // Manteau and the scarf's fall over the shoulders.
+  const g = ctx.createLinearGradient(0, 360, 0, 512);
+  g.addColorStop(0, '#2a2f45');
+  g.addColorStop(1, '#1a1e30');
+  ctx.fillStyle = g;
+  ctx.beginPath();
+  ctx.moveTo(48, 512);
+  ctx.bezierCurveTo(54, 430, 104, 386, 190, 372);
+  ctx.lineTo(322, 372);
+  ctx.bezierCurveTo(408, 386, 458, 430, 464, 512);
+  ctx.closePath();
+  ctx.fill();
+  ctx.save();
+  ctx.translate(256, 330 + f.nod);
+  ctx.rotate(f.tilt);
+  ctx.translate(-256, -330);
+  // The scarf behind the head, down to the shoulders.
+  const sg = ctx.createLinearGradient(140, 120, 380, 420);
+  sg.addColorStop(0, SCARF_HI);
+  sg.addColorStop(1, SCARF);
+  ctx.fillStyle = sg;
+  ctx.beginPath();
+  ctx.moveTo(256, 92);
+  ctx.bezierCurveTo(352, 92, 380, 170, 376, 250);
+  ctx.bezierCurveTo(372, 330, 350, 380, 300, 410);
+  ctx.lineTo(212, 410);
+  ctx.bezierCurveTo(162, 380, 140, 330, 136, 250);
+  ctx.bezierCurveTo(132, 170, 160, 92, 256, 92);
+  ctx.closePath();
+  ctx.fill();
+  // Face.
+  const fg = ctx.createRadialGradient(232, 196, 20, 256, 230, 120);
+  fg.addColorStop(0, '#f9d6b8');
+  fg.addColorStop(0.7, '#f2c6a2');
+  fg.addColorStop(1, '#e0a883');
+  ctx.fillStyle = fg;
+  ctx.beginPath();
+  ctx.moveTo(256, 132);
+  ctx.bezierCurveTo(320, 132, 340, 182, 338, 230);
+  ctx.bezierCurveTo(336, 288, 304, 330, 256, 334);
+  ctx.bezierCurveTo(208, 330, 176, 288, 174, 230);
+  ctx.bezierCurveTo(172, 182, 192, 132, 256, 132);
+  ctx.closePath();
+  ctx.fill();
+  // A little dark hair at the front, swept to the side under the scarf.
+  ctx.fillStyle = '#2b1a14';
+  ctx.beginPath();
+  ctx.moveTo(186, 178);
+  ctx.bezierCurveTo(200, 140, 250, 128, 300, 140);
+  ctx.bezierCurveTo(272, 146, 236, 160, 214, 190);
+  ctx.closePath();
+  ctx.fill();
+  // The scarf's front edge, framing the face.
+  ctx.strokeStyle = SCARF;
+  ctx.lineWidth = 18;
+  ctx.beginPath();
+  ctx.moveTo(176, 300);
+  ctx.bezierCurveTo(158, 220, 176, 128, 256, 120);
+  ctx.bezierCurveTo(336, 128, 354, 220, 336, 300);
+  ctx.stroke();
+  // The scarf wrapped under the chin and draped over the shoulders (it hides the neck).
+  const wrap = ctx.createLinearGradient(160, 280, 360, 480);
+  wrap.addColorStop(0, SCARF_HI);
+  wrap.addColorStop(1, '#17605f');
+  ctx.fillStyle = wrap;
+  ctx.beginPath();
+  ctx.moveTo(172, 270);
+  ctx.bezierCurveTo(190, 330, 222, 350, 256, 352);
+  ctx.bezierCurveTo(290, 350, 322, 330, 340, 270);
+  ctx.bezierCurveTo(372, 330, 396, 400, 404, 470);
+  ctx.bezierCurveTo(330, 492, 182, 492, 108, 470);
+  ctx.bezierCurveTo(116, 400, 140, 330, 172, 270);
+  ctx.closePath();
+  ctx.fill();
+  // A fold.
+  ctx.strokeStyle = 'rgb(0 0 0 / .16)';
+  ctx.lineWidth = 6;
+  ctx.beginPath();
+  ctx.moveTo(214, 372);
+  ctx.quadraticCurveTo(256, 400, 300, 372);
+  ctx.stroke();
+  // Cheeks.
+  ctx.fillStyle = 'rgb(236 120 120 / .2)';
+  for (const side of [-1, 1]) {
+    ctx.beginPath();
+    ctx.ellipse(256 + side * 48, 262, 22, 13, 0, 0, Math.PI * 2);
+    ctx.fill();
+  }
+  eyes(ctx, f);
+  // Lashes.
+  ctx.strokeStyle = '#1d120d';
+  ctx.lineWidth = 3;
+  for (const side of [-1, 1]) {
+    ctx.beginPath();
+    ctx.moveTo(256 + side * 58, 207);
+    ctx.lineTo(256 + side * 66, 200);
+    ctx.stroke();
+  }
+  // Fine brows.
+  ctx.strokeStyle = '#3a2418';
+  ctx.lineWidth = 5;
+  ctx.lineCap = 'round';
+  for (const side of [-1, 1]) {
+    const lift = f.brow * 6;
+    ctx.beginPath();
+    ctx.moveTo(256 + side * 20, 192 - lift * 0.6);
+    ctx.quadraticCurveTo(256 + side * 40, 180 - lift, 256 + side * 60, 188 - lift * 0.8);
+    ctx.stroke();
+  }
+  // Nose.
+  ctx.strokeStyle = 'rgb(160 96 70 / .5)';
+  ctx.lineWidth = 3.5;
+  ctx.beginPath();
+  ctx.moveTo(252, 220);
+  ctx.quadraticCurveTo(244, 250, 252, 258);
+  ctx.quadraticCurveTo(260, 262, 266, 256);
+  ctx.stroke();
+  // Lips: a soft rose, the same shapes as his mouth.
+  mouth(ctx, f, '#b4475a');
+  ctx.restore();
   ctx.restore();
 }
 

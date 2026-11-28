@@ -282,15 +282,17 @@ function cillaModule(_voice: Voice) {
   });
 }
 function cillaClip(voice: Voice, text: string, urgent: boolean): Promise<string> {
-  const known = clips.get(text);
+  // By speaker too: the studio's two hosts may say the same words.
+  const key = `${voice.id}\u0000${text}`;
+  const known = clips.get(key);
   if (known) return known;
   const clip = cillaModule(voice).then((m) => m.cillaClip(voice, text, urgent, storedFile, cillaHere()));
   clip.catch((e: Error) => {
-    if (clips.get(text) === clip) clips.delete(text);
+    if (clips.get(key) === clip) clips.delete(key);
     // The stored files went missing (the browser cleared them): download again.
     if (e.message === 'missing') states.set(voice.id, 'partial');
   });
-  clips.set(text, clip);
+  clips.set(key, clip);
   while (clips.size > CLIPS_MAX) {
     const [oldest, p] = clips.entries().next().value!;
     clips.delete(oldest);
@@ -411,6 +413,17 @@ export function voiceClip(text: string, urgent = false): Promise<string> {
   }
   worker.postMessage({ t: 'say', id, text, urgent });
   return clip;
+}
+
+/** A clip in a given downloaded voice without making it the reader's choice: the studio's two hosts
+ *  (src/scripts/studio.ts). Cilla speakers share one model, so switching between them costs nothing; a sherpa-onnx
+ *  voice speaks only as the active one. */
+export function voiceClipFor(id: string, text: string): Promise<string> {
+  const v = voiceById(id);
+  if (!v || states.get(v.id) !== 'ready') return Promise.reject(new Error('no voice'));
+  if (v.engine === 'cilla') return cillaClip(v, `${text}`, true);
+  if (activeVoice()?.id !== v.id) chooseVoice(v.id);
+  return voiceClip(text, true);
 }
 
 /** Text in pieces of about a sentence: the first one is ready sooner, and the model keeps its pace on short input.

@@ -9,6 +9,7 @@ export function GET() {
       'Allow: /',
       'Disallow: /api/',
       'Disallow: /admin/',
+      'Disallow: /studio/',
       'Disallow: /p/*/card.json',
       'Disallow: /build.json',
       'Disallow: /recent.json',

@@ -1,0 +1,56 @@
+---
+// «پادکست خبر»: the day's stories as a talk between Gholam and Parisa (pipeline/podcast.py; the sound made on the runner
+// with the site's own voices, scripts/podcast.mjs, served from R2). The player (src/scripts/podcast.ts) shows both
+// hosts drawn (src/scripts/anchor.ts), the one speaking moving with the sound, the line being said, the stories as
+// chapters, the whole transcript. Subscribe: /podcast.xml (Apple Podcasts, Spotify, Castbox, any podcast app).
+import Base from '../../layouts/Base.astro';
+import Icon from '../../components/Icon.astro';
+import { podcasts } from '../../lib/knowledge';
+import { abs, faDate, getPosts } from '../../lib/posts';
+
+const eps = podcasts();
+const byId = new Map(getPosts().map((p) => [p.id, p]));
+const data = eps.map((e) => ({
+  ...e,
+  label: faDate(`${e.day}T12:00:00Z`, { weekday: 'long', day: 'numeric', month: 'long' }),
+  stories: e.ids.map((id) => ({ id, title: byId.get(id)?.short ?? byId.get(id)?.article.title ?? '', href: byId.get(id)?.href ?? '#' })),
+}));
+---
+<Base title="پادکست خبر" description="خبرهای هوش مصنوعی هر روز، در گفت‌وگوی غلام و پریسا: توضیح ساده، چرا مهمه، و منبع هر خبر.">
+  <link slot="head" rel="alternate" type="application/rss+xml" title="پادکست خبر" href={abs('podcast.xml')} />
+  <div class="container pod" data-podcast>
+    <header class="page-head with-action">
+      <div>
+        <h1><Icon name="headphones" /> پادکست خبر</h1>
+        <p>هر روز خبرهای هوش مصنوعی در گفت‌وگوی دو مجری: غلام توضیح می‌دهد، پریسا همان سؤالی را می‌پرسد که شما می‌پرسید. همه‌چیز از متن خود خبرها؛ صدا و مجری‌ها با هوش مصنوعی.</p>
+      </div>
+      <a class="btn sm" href={abs('podcast.xml')}><Icon name="rss" /> اشتراک</a>
+    </header>
+    {eps.length === 0 && <p class="muted">اولین قسمت به‌زودی.</p>}
+    {eps.length > 0 && (
+      <section class="pod-player" aria-label="پخش">
+        <div class="pod-stage">
+          <canvas width="1200" height="560" data-pod-canvas aria-label="غلام و پریسا، مجری‌های هوش مصنوعی"></canvas>
+          <p class="pod-caption" data-pod-caption aria-live="polite"></p>
+        </div>
+        <div class="pod-controls">
+          <button class="pod-play" type="button" data-pod-play aria-label="پخش"><Icon name="play" class="when-idle" /><Icon name="pause" class="when-playing" /></button>
+          <div class="pod-time">
+            <b data-pod-title></b>
+            <input type="range" min="0" max="1000" value="0" data-pod-seek aria-label="جای پخش" />
+            <small><span data-pod-at>۰:۰۰</span> / <span data-pod-len></span></small>
+          </div>
+          <button class="btn sm" type="button" data-pod-speed>۱×</button>
+        </div>
+        <audio preload="metadata" data-pod-audio></audio>
+        <p class="muted pod-soon" data-pod-soon hidden>صدای این قسمت هنوز ساخته نشده؛ متنش را این پایین بخوانید.</p>
+        <div class="pod-chapters" data-pod-chapters></div>
+      </section>
+      <div class="pod-eps seg" role="tablist" aria-label="قسمت‌ها">
+        {data.slice(0, 10).map((e, i) => <button type="button" role="tab" data-pod-ep={e.day} aria-selected={i === 0 ? 'true' : 'false'}>{e.label}</button>)}
+      </div>
+      <ol class="pod-lines" data-pod-lines></ol>
+      <script type="application/json" data-pod-data set:html={JSON.stringify(data.slice(0, 10))} />
+    )}
+  </div>
+</Base>

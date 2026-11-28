@@ -86,3 +86,10 @@ export function lexFor(lines: string[]): Record<string, string> {
     }
   return out;
 }
+
+// ---------- «پادکست خبر» (pipeline/podcast.py, scripts/podcast.mjs) ----------
+export type PodcastLine = { who: 'g' | 'p'; text: string; id?: number; at?: number; end?: number };
+export type Podcast = { day: string; title: string; ids: number[]; lines: PodcastLine[]; by_model?: number; audio?: { seconds: number; bytes: number; at: string } };
+const PODS = import.meta.glob<Podcast>('../../data/podcast/*.json', { eager: true, import: 'default' });
+/** The episodes, newest first (one a day). */
+export const podcasts = (): Podcast[] => Object.values(PODS).sort((a, b) => b.day.localeCompare(a.day));
