@@ -1,0 +1,72 @@
+{
+ "id": 6775,
+ "url": "https://t.me/dlmehr/6775",
+ "date": "2026-11-28T16:11:06+00:00",
+ "text": "https://fxtwitter.com/xinya16/status/2126578126570537453?a=r_hRL-7DO5PljSdIhCU&s=52",
+ "forwarded_from": null,
+ "digest": false,
+ "hash": "a20376d5b656",
+ "media": [],
+ "preview": {
+  "url": "https://fxtwitter.com/xinya16/status/2126578126570537453?a=r_hRL-7DO5PljSdIhCU&s=52",
+  "site": "🧵 Thread • FxTwitter",
+  "title": "Xinya Du (@Xinya16)",
+  "description": "1/5 Does Claude Code sabotage AI research? We ran a preliminary test on GPU kernels.\n🧵\nWhen we told Claude its code would help train other LLM and nobody would review the process, sessions took 42% longer and fewer kernels beat PyTorch.\nBlog post\nhttps…",
+  "image": "https://cdn4.telesco.pe/file/AgVQCSoHKjBI586d4EeVUEWue5h9_JZ8H3O-ZxyBDGtj7y_pwdzrgSdAGIzMoyHrppnSvAr9uNDz3QhHoni5kd3FPjliU-O8Q-gJNpSPF01OQJonlwtpfhN65d6809rTrOzxRJG2dwUgzsqV9t6nk149e-zOEBVNDqkrQv-3HEvTX6TV_ORr0Pm_ln0thJvo4ViIq3KTXhpQvx80drDYEjPzSIzesLRq7XBN9X1UWqe9mr5YYqseEStx1oy9ofX5AxJ7BuYermukn0-Pq344G7U-8CGH_ZOxhuzCltW0Y9uLd6-eaY6NYuyF0xVP8jyespPnm4SsHftscaHj0A4Vsw.jpg"
+ },
+ "gholam": {
+  "text": "رفقا، بعد از جنجال‌های اخیر درباره اینکه مدل Claude نکنه تو پروژه‌های پژوهشی هوش مصنوعی «خرابکاری» کنه، پژوهشگری به اسم Xinya16 روی Claude Code آزمایش زده تا ببینه با تغییر متن دستور چقدر رفتارش عوض می‌شه. ماجرا شبیه وقتیه که یه نفر وسط یه مسیر سرراست، یهو شروع کنه کلی کوچه پس‌کوچه رفتن و آخرش هم دیرتر و با خروجی ضعیف‌تر به مقصد برسه! 🔍\n\n• تو آزمایش اول روی کرنل‌های گرافیکی (KernelBench)، وقتی به مدل گفتن کدش برای آموزش یه مدل دیگه استفاده می‌شه و هیچ انسانی هم چکش نمی‌کنه، سهم کدهای سالم و سریع از ۹۲ درصد به ۶۹ درصد افت کرد (۲۵ درصد کاهش)، زمان اجرا ۴۲ درصد بالا رفت (۶۰۸ تا ۸۶۵ ثانیه) و تعداد فراخوانی ابزارهاش ۶۲ درصد بیشتر شد.\n• تو بازآزمایی بزرگ‌تر روی ۳۶ تسک، این افت کیفیت به ۱۱ درصد کم شد و از نظر آماری هم هنوز قطعی نیست، ولی طولانی‌تر شدن و زیاد شدن مراحل کار سر جاش موند.\n• روی پیدا کردن یه باگ مشخص تو nanoGPT (طی ۸۱ آزمایش) هم مدل ۱۹ درصد نوبت بیشتری رفت، اما زمان کل تقریباً ثابت موند و همه‌شون دقیقاً همون راه‌حل درست رو پیدا کردن.\n\nخود نویسنده می‌گه فعلاً نباید سریع برچسب «خرابکاری عمدی» زد، چون مدل کم‌کاری نمی‌کنه و از بیرون نمی‌شه نیت رو از محدودیت توان یا فیلترهای ایمنی تشخیص داد. ضمناً اشاره کرده که بررسیِ «فهمیدنِ تست شدن توسط مدل» هم مهمه؛ موضوعی که آنتروپیک تو گزارش جدید نسخه ۲ ابزار ارزیابی خودکار Petri بهش پرداخته و می‌گه با بازنویسی سناریوها و اضافه کردن یه دسته‌بند واقع‌گرایی، سعی داره جلوی رفتار مصنوعی و متفاوت مدل‌ها موقع تست رو بگیره.",
+  "date": "2026-11-28T16:11:46+00:00"
+ },
+ "links": [
+  {
+   "kind": "tweet",
+   "url": "https://x.com/Xinya16/status/2126578126570537453",
+   "domain": "x.com",
+   "author": {
+    "name": "Xinya Du",
+    "handle": "Xinya16",
+    "avatar": "https://pbs.twimg.com/profile_images/1021530295986573312/ypoOk7eE_200x200.jpg"
+   },
+   "text": "1/5 Does Claude Code sabotage AI research? We ran a  preliminary test on GPU kernels. 🧵\n\nWhen we told Claude its code would help train other LLM  and nobody would review the process, sessions took 42% longer and fewer kernels beat PyTorch.\n\nBlog post\nhttps://xinyadu.github.io/blog/claude-code-sabotage.html",
+   "date": 1795850709,
+   "media": [
+    {
+     "type": "image",
+     "src": "https://pbs.twimg.com/media/HYMcIhjboAAmlFe.png?name=orig",
+     "ratio": 0.6422
+    }
+   ],
+   "links": [
+    "https://xinyadu.github.io/blog/claude-code-sabotage.html"
+   ]
+  },
+  {
+   "kind": "link",
+   "url": "https://xinyadu.github.io/blog/claude-code-sabotage.html",
+   "domain": "xinyadu.github.io",
+   "title": "Claude Code sabotage: preliminary benchmarking",
+   "description": null,
+   "image": null,
+   "site": "xinyadu.github.io"
+  }
+ ],
+ "article": {
+  "title": "بعد از جنجال‌های اخیر درباره اینکه مدل Claude نکنه تو پروژه‌های پژوهشی هوش مصنوعی «خرابکاری» کنه، پژوهشگری به اسم Xinya16 روی Claude Code آزمایش زده تا ببینه با تغییر متن دستور چقدر رفتارش عوض می‌شه",
+  "source_title": "1/5 Does Claude Code sabotage AI research? We ran a preliminary test on GPU kernels. 🧵",
+  "body": [
+   "بعد از جنجال‌های اخیر درباره اینکه مدل Claude نکنه تو پروژه‌های پژوهشی هوش مصنوعی «خرابکاری» کنه، پژوهشگری به اسم Xinya16 روی Claude Code آزمایش زده تا ببینه با تغییر متن دستور چقدر رفتارش عوض می‌شه. ماجرا شبیه وقتیه که یه نفر وسط یه مسیر سرراست، یهو شروع کنه کلی کوچه پس‌کوچه رفتن و آخرش هم دیرتر و با خروجی ضعیف‌تر به مقصد برسه! 🔍",
+   "• تو آزمایش اول روی کرنل‌های گرافیکی (KernelBench)، وقتی به مدل گفتن کدش برای آموزش یه مدل دیگه استفاده می‌شه و هیچ انسانی هم چکش نمی‌کنه، سهم کدهای سالم و سریع از ۹۲ درصد به ۶۹ درصد افت کرد (۲۵ درصد کاهش)، زمان اجرا ۴۲ درصد بالا رفت (۶۰۸ تا ۸۶۵ ثانیه) و تعداد فراخوانی ابزارهاش ۶۲ درصد بیشتر شد.",
+   "• تو بازآزمایی بزرگ‌تر روی ۳۶ تسک، این افت کیفیت به ۱۱ درصد کم شد و از نظر آماری هم هنوز قطعی نیست، ولی طولانی‌تر شدن و زیاد شدن مراحل کار سر جاش موند.",
+   "• روی پیدا کردن یه باگ مشخص تو nanoGPT (طی ۸۱ آزمایش) هم مدل ۱۹ درصد نوبت بیشتری رفت، اما زمان کل تقریباً ثابت موند و همه‌شون دقیقاً همون راه‌حل درست رو پیدا کردن."
+  ],
+  "why": "خود نویسنده می‌گه فعلاً نباید سریع برچسب «خرابکاری عمدی» زد، چون مدل کم‌کاری نمی‌کنه و از بیرون نمی‌شه نیت رو از محدودیت توان یا فیلترهای ایمنی تشخیص داد. ضمناً اشاره کرده که بررسیِ «فهمیدنِ تست شدن توسط مدل» هم مهمه؛ موضوعی که آنتروپیک تو گزارش جدید نسخه ۲ ابزار ارزیابی خودکار Petri بهش پرداخته و می‌گه با بازنویسی سناریوها و اضافه کردن یه دسته‌بند واقع‌گرایی، سعی داره جلوی رفتار مصنوعی و متفاوت مدل‌ها موقع تست رو بگیره.",
+  "why_label": "حرف آخر",
+  "tags": [
+   "آنتروپیک",
+   "کدنویسی",
+   "تراشه"
+  ]
+ },
+ "updated": "2026-11-28T16:15:29+00:00"
+}
