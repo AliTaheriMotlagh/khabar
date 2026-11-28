@@ -1,0 +1,52 @@
+{
+ "id": 6777,
+ "url": "https://t.me/dlmehr/6777",
+ "date": "2026-11-28T19:17:44+00:00",
+ "text": "https://youtu.be/CGhb-luAIIY?is=5wVLe79RKtefrOuD",
+ "forwarded_from": null,
+ "digest": false,
+ "hash": "60754c265bc5",
+ "media": [],
+ "preview": {
+  "url": "https://youtu.be/CGhb-luAIIY?is=5wVLe79RKtefrOuD",
+  "site": "YouTube",
+  "title": "‎53. ⁧کلاد کد چطور کار می‌کنه⁩ | How Claude Code Works [Persian]",
+  "description": "💻\nCode + slides (a ~60-line Claude Code): https://github.com/mehrzads/toy-harness\n📄\nHow Claude Code works (docs): https://code.claude.com/docs/en/how-claude-code-works\n🎬\nقسمت ۳۵: OpenCode | Episode 35: OpenCode: https://youtu.be/V9YrTtyRe4U\nفصل‌ها | Chapters…",
+  "image": "https://cdn4.telesco.pe/file/seGNX0isp0Ao6bACun2sG2ux-pGF5cM7_oHMWaks33QdDzFkBtR9RxEtXSZaL6Ss9NZ2-alegjbz-rb6QNtcrBOuI_qo6JgoSRGUig61WawP5V-EwyUImjoBUR63EGc8I3a2bXuDTxpyuhTds0kx6N5RqcZhOKc_US8CP_hOR9h6DzvpU86_hjJ5dIfT9v53YrdnA8rzl7Osd2UP0ftEHQQf9NjyWCRizG2v_Mr1gFmn11-Fmp829UaZt1OTKwk6dBDh_dnTyyagMUv0-IQVq99FePblXHgop2I72Hq-8JxZaekL9h6K3IcSejl9WiELTJVWc7etX2kE9fT0GWKkhA.jpg",
+  "small": true
+ },
+ "gholam": {
+  "text": "رفیق، مهرزاد صمدی تو قسمت ۵۳ ویدیوهاش سراغ این رفته که «کلاد کد (Claude Code) چطور کار می‌کنه» و به قول یکی از فصل‌هاش، هارنس رو مثل یه «پیر فرزانه با ابزارهاش» تصویر کرده که کل کارش تو یه حلقه ساده می‌چرخه. 💻 چون متن صحبت‌های ویدیو تو صفحه نیست، به جزئیات دقیق توضیحاتش دسترسی نداریم، ولی از سرفصل‌ها پیداست این بخش‌ها رو پوشش میده:\n\n• ساختار هارنس، ذخیره شدن هر قدم تو فایل، و اینکه مدل فقط کانتکست خودش رو می‌بینه و نمی‌دونه طرف حسابش کاربره یا هارنس\n• راه‌های مدیریت و جا باز کردن تو کانتکست؛ از prompt caching و compaction گرفته تا lazy load شدن skillها و استفاده از subagent با کانتکست جدا\n• بحث امنیت و کنترل کار؛ یعنی permissionها، حالت auto mode، اجرا تو sandbox و امکان rewind و checkpoint\n\nدر کنار ویدیو، لینک مستندات کلاد کد و همچنین کد و اسلایدهای یه هارنس حدوداً ۶۰ خطی هم تو توضیحات گذاشته شده؛ انگار کل دم‌ودستگاه رو ریختن رو میز که همه‌چی شفاف باشه.",
+  "date": "2026-11-28T19:18:31+00:00"
+ },
+ "links": [
+  {
+   "kind": "youtube",
+   "url": "https://youtu.be/CGhb-luAIIY?is=5wVLe79RKtefrOuD",
+   "domain": "youtube.com",
+   "video_id": "CGhb-luAIIY",
+   "title": "‎53. ⁧کلاد کد چطور کار می‌کنه⁩ | How Claude Code Works [Persian]",
+   "description": null,
+   "image": "https://i.ytimg.com/vi/CGhb-luAIIY/hqdefault.jpg",
+   "site": "YouTube",
+   "channel": "Mehrzad Samadi"
+  }
+ ],
+ "article": {
+  "title": "مهرزاد صمدی تو قسمت ۵۳ ویدیوهاش سراغ این رفته که «کلاد کد (Claude Code) چطور کار می‌کنه» و به قول یکی از فصل‌هاش، هارنس رو مثل یه «پیر فرزانه با ابزارهاش» تصویر کرده که کل کارش تو یه حلقه ساده می‌چرخه",
+  "source_title": "‎53. ⁧کلاد کد چطور کار می‌کنه⁩ | How Claude Code Works [Persian]",
+  "body": [
+   "مهرزاد صمدی تو قسمت ۵۳ ویدیوهاش سراغ این رفته که «کلاد کد (Claude Code) چطور کار می‌کنه» و به قول یکی از فصل‌هاش، هارنس رو مثل یه «پیر فرزانه با ابزارهاش» تصویر کرده که کل کارش تو یه حلقه ساده می‌چرخه. 💻 چون متن صحبت‌های ویدیو تو صفحه نیست، به جزئیات دقیق توضیحاتش دسترسی نداریم، ولی از سرفصل‌ها پیداست این بخش‌ها رو پوشش میده:",
+   "• ساختار هارنس، ذخیره شدن هر قدم تو فایل، و اینکه مدل فقط کانتکست خودش رو می‌بینه و نمی‌دونه طرف حسابش کاربره یا هارنس",
+   "• راه‌های مدیریت و جا باز کردن تو کانتکست؛ از prompt caching و compaction گرفته تا lazy load شدن skillها و استفاده از subagent با کانتکست جدا",
+   "• بحث امنیت و کنترل کار؛ یعنی permissionها، حالت auto mode، اجرا تو sandbox و امکان rewind و checkpoint"
+  ],
+  "why": "در کنار ویدیو، لینک مستندات کلاد کد و همچنین کد و اسلایدهای یه هارنس حدوداً ۶۰ خطی هم تو توضیحات گذاشته شده؛ انگار کل دم‌ودستگاه رو ریختن رو میز که همه‌چی شفاف باشه.",
+  "why_label": "حرف آخر",
+  "tags": [
+   "آنتروپیک",
+   "کدنویسی"
+  ]
+ },
+ "updated": "2026-11-28T19:21:23+00:00"
+}
