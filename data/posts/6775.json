@@ -68,5 +68,24 @@
    "تراشه"
   ]
  },
- "updated": "2026-11-28T16:15:29+00:00"
+ "updated": "2026-11-28T16:15:29+00:00",
+ "ai": {
+  "title": "آزمایش روی Claude Code: تغییر دستور باعث کاهش کیفیت و افزایش زمان اجرا شد",
+  "short": "آزمایش روی Claude Code",
+  "topics": [
+   "آنتروپیک",
+   "کدنویسی"
+  ],
+  "type": "پژوهش و مقاله",
+  "model": "qwen3.5-9b-q4_k_m",
+  "v": 2,
+  "src": "caef301aeeba",
+  "en": {
+   "title": "Preliminary test shows Claude Code slows GPU kernel training",
+   "short": "Claude Code slows GPU kernel training in tests",
+   "model": "qwen3.5-9b-q4_k_m",
+   "v": 1,
+   "src": "215eded6d3cb"
+  }
+ }
 }
